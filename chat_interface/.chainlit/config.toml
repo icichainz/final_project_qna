@@ -1,6 +1,6 @@
 [project]
 # Whether to enable telemetry (default: true). No personal data is collected.
-enable_telemetry = true
+enable_telemetry = false
 
 
 # List of environment variables to be provided by each user to use the app.
@@ -53,10 +53,10 @@ edit_message = true
 
 [UI]
 # Name of the assistant.
-name = "Assistant"
+name = "QNA chat bot"
 
 # Description of the assistant. This is used for HTML tags.
-# description = ""
+description = "A qna chatbot built by ADD"
 
 # Large size content are by default collapsed for a cleaner ui
 default_collapse_content = true
@@ -87,7 +87,7 @@ cot = "full"
 # custom_build = "./public/build"
 
 [UI.theme]
-    default = "dark"
+    default = "light"
     #layout = "wide"
     #font_family = "Inter, sans-serif"
 # Override default MUI light theme. (Check theme.ts)
