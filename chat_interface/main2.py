@@ -20,8 +20,7 @@ from langchain_huggingface import HuggingFaceEmbeddings
 import chainlit as cl
 from PyPDF2 import PdfReader
 import docxpy
-os.environ["OPENAI_API_KEY"] = "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"
-os.environ["ANTHROPIC_API_KEY"]="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"
+
 
 """ 
 In RecursiveCharacterTextSplitter, the chunk_overlap value specifies 
