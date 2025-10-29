@@ -1,0 +1,2680 @@
+=== DOCUMENT METADATA ===
+/Author: 
+/CreationDate: D:20160921135732+09'00'
+/Creator: PScript5.dll Version 5.2.2
+/ModDate: D:20160927141129+09'00'
+/Producer: Acrobat Distiller 11.0 (Windows)
+/Title: 
+
+
+---
+*Page 1*
+---
+
+Consideration	of	funding	
+proposals	–	Addendum	IV 	
+Funding	proposal	 package	for	FP021GCF/B.14/07/Add.04 
+27	September	 2016	Meeting	of	the	Board	
+12	–	14	October	2016	
+Songdo,	Incheon,	Republic	of	Korea	
+Provisional	agenda	item	11(f) 	
+Summary		
+This	addendum	contains	the	following	three	parts:	
+a)A	funding	proposal	 titled	“Senegal Integrated Urban Flood Management Project ”
+submitted	by Agence Française de Développement (AFD);
+b)A	no‐objection	letter	issued	by	the	national	designated	authori ty	or	focal	point;	and
+c)Environmental	and	social	report(s)	disclosure.
+The	documents	are	presented	as	submitted	by	the	accredited	enti ty,	and	national	designated	
+authority	or	focal	point,	respectively.
+
+
+---
+*Page 2*
+---
+
+GCF/B.14/07/Add.04 	
+Page	b	
+Table	of	Contents 	
+Funding	proposal	submitted	 by	the	acc redited	entity	
+No‐objection	letter	issued	by	th e	national	designated	authorit y	or	focal	point	
+Environmental	and	social	report(s)	disclosure
+
+
+---
+*Page 4*
+---
+
+	
+							
+	
+Contents 
+ 
+ 
+Section A PROJECT / PROGRAMME SUMMARY    
+ Section B 
+FINANCING / COST INFORMATION   
+ 
+Section C DETAILED PROJECT / PROGRAMME DESCRIPTION 
+ Section D 
+RATIONALE FOR GCF INVOLVEMENT 
+ Section E 
+EXPECTED PERFORMANCE AGAIN ST INVESTMENT CRITERIA  
+ 
+Section F APPRAISAL SUMMARY  
+ 
+Section G RISK ASSESSMENT AN D MANAGEMENT 
+ 
+Section H RESULTS MONITORIN G AND REPORTING  
+ 
+Section I  ANNEXES 
+ 
+ 
+ 
+ 
+Note to accredited entities on the use of the funding proposal template     
+ Sections A, B, D, E and H of the funding proposal require detailed inputs from the accre dited entity. For all 
+other sections, including the Appraisal Summary in section F, a ccredited entities have discretion in how they 
+wish to present the information . Accredited entities can either  directly incorporate information into this 
+proposal, or provide summary info rmation in the proposal with c ross-reference to other project documents 
+such as project appraisal document. 
+ The total number of pages for the funding proposal (excluding annexes) is expected not to exceed 50. 
+ 
+ 
+Please submit the completed form to: 
+fundingproposal@gcfund.org  
+ 
+Please use the following name c onvention for the file name: 
+“[FP]-[Agency Short Name]-[ Date]-[Serial Number]”
+
+
+---
+*Page 5*
+---
+
+ 
+PROJECT / PROGRAMME SUMMARY 
+ GREEN CLIMATE FUND FUNDING P ROPOSAL | PAGE 1 OF 47 
+ 
+	
+	A
+A.1.  Brief Project Information 
+A.1.1. Project title Senegal Integrated Urban F lood Management Project 
+A.1.2. Project or programme Project 
+A.1.3. Country(ies) / region                     Republic of Senegal 
+A.1.4. National designated authority(ies) Ministry of Environment a nd Sustainable Development 
+A.1.5. Accredited entity Agence Française de Développement 
+A.1.5.a. Access modality ☐  Direct ☒  International 
+A.1.6. Executing entity / beneficiary Project Sponsor: Republic of Senegal 
+ 
+Executing Entity: MRUHCV; APIX; ONAS; ANACIM; DGPRE 
+(see section C.4. for more details). 
+A.1.7. Project size catego ry (Total investment, million 
+USD) ☐  Micro (≤10) 
+☒  Medium (50<x≤250)  ☐  Small (10<x≤50)  
+☐  Large (>250) 
+A.1.8. Mitigation / adaptation focus ☐  Mitigation ☒  Adaptation ☐  Cross-cutting 
+A.1.9. Date of submission GCF board of October 2016  
+A.1.10. 
+Project 
+contact 
+details Contact person, position Laurent Raspaud, Task Team Leader 
+Organization Agence Française de Développement 
+Email address raspaudl@afd.fr  
+Telephone number +33 (0)1 53 44 34 86 
+Mailing address 5 rue Roland Barthes – 75598 Paris Cedex 12 
+   
+A.1.11. Results areas  (mark all that apply)  
+Reduced emissions from: 
+☐ Energy access and power generation  
+(E.g. on-grid, micro-grid or off-grid solar, wind, geothermal, etc.)   
+☐ Low emission transport  
+(E.g. on-grid, micro-grid or off-grid solar, wind, geothermal, etc.)   
+☐ Buildings, cities and industries and appliances  
+(E.g. new and retrofitted energy-efficient buildings, energy-ef ficient equipment for companies and supply chain management, et c.)   
+☐ Forestry and land use  
+(E.g. forest conservation and ma nagement, agroforestry, agricul tural irrigation, water treatment and management, etc.)  
+ 
+Increased resilience of: 
+☒ Most vulnerable people and communities 
+(E.g. mitigation of operational risk associated with climate ch ange – diversification of supply sources and supply chain manag ement, 
+relocation of manufacturing facilities and warehouses, etc.)  
+☐ Health and well-being, and food and water security 
+(E.g. climate-resilient crops, e fficient irrigation systems, et c.) 
+☒ Infrastructure and built environment 
+(E.g. sea walls, resilient road networks, etc.)  
+Ecosystem and ecosystem services 
+(E.g. ecosystem conservation and management, ecotourism, etc.) ☐ 
+A.2.  Project Executive Summary
+
+
+---
+*Page 6*
+---
+
+ 
+PROJECT / PROGRAMME SUMMARY 
+ GREEN CLIMATE FUND FUNDING P ROPOSAL | PAGE 2 OF 47 
+ 
+	
+	A
+In the past few decades, demographic growth and rural exodus ha ve been the cause of a maj or development of urban 
+population in Senegal. Among other development challenges linke d to fast-growing cities in Africa, damages caused by 
+heavy rainfalls and coastal erosion are of increasing importanc e. Floods have been a major concern for the Government 
+of Senegal since 2005, when rainfa ll began to cause serious flo od problems in major cities. Pro jections on the effects of 
+climate change lead to believe that, in spite of a global decre ase in precipitation, events of  intense rainfalls will be more 
+frequent and might cause heavy damages to most vulnerable areas  and population. 
+Confronted with these challenge s, the Government of Senegal has  set up flood management as one of its top priorities, 
+initiating a major shift in policy-making. The INDC submitted i n September 2015 sets flood management as one of its top 
+priorities, with an estimated investment budget around 2 billio n dollars. As the first stage of emergency response to the 
+growing flood concern has been completed in 2015, Senegal now f aces the medium- to long-term perspective for effective 
+flood management. 
+The Senegal Integrated Urban Flood Management  project will aim at supporting Senegalese policy on flood risk  
+management through a disaster risk reduction perspective. It wi ll participate in the drainage infrastructure investment that 
+is necessary in one of the most vulnerable areas of the capital  city (Pikine Irrégulier Sud) , but will also contribute to 
+establishing a national-scale integrated policy for disaster ri sk management in order to optimize investment at national 
+scale and most importantly deal  with the risk that will never b e cost-efficiently cover ed by infrastructure. 
+The proposed project will be instrumental in making the shift i n policy-making regarding flood management that has been 
+initiated by the Government of Senegal a reality. Through an in tegrated approach, not limited to hard-engineered 
+infrastructure investment but aiming at (i) building knowledge of flood risk at national and local-scale, (ii) reducing 
+vulnerability in existing and fu ture urban centers, (iii) reinf orcing prevention, especially for drainage infrastructure 
+management and (iv) tackling the difficult challenge of trans-s ectorial governance, Senegal has the opportunity to be at 
+the cutting edge of flood-managem ent policy in W est Africa. 
+	
+A.3.  Project Milestone  
+Expected approval from accredited entity’s 
+Board 01/10/2015 
+Expected financial close 02/12/2015  
+Estimated implementation start and end date Start: January 2017 
+End:  December 2021 
+Project lifespan Five (5) years
+
+
+---
+*Page 7*
+---
+
+ 
+FINANCING / COST INFORMATION 
+ GREEN CLIMATE FUND FUNDING P ROPOSAL | PAGE 3 OF 47 
+	
+	B
+B.1. Description of Financial Elements of the Project 
+Based on the feasibility studie s of the Project, the estimated budget breakdown is as follows.  
+Component Sub-component Amount
+ Currency of 
+disbursementAmount 
+ Local 
+currency Funding 
+Component 1 
+Knowing the risk Sub-component 1.1 
+Flood risk mapping 5.15 million euro 
+(€) 3.4 billion XOF GCF 
+Sub-component 1.2 
+Flood risk awareness 0.55 million euro 
+(€) 0.4 billion XOF GCF 
+Component 2 
+Reducing the risk Sub-component 2.1 
+Structural and non-structural 
+measures for flood risk reduction 3.2 million euro 
+(€) 2.1 billion XOF GCF 
+Sub-component 2.2 
+Tools for adequate investment in 
+flood management infrastructure 0.65 million euro 
+(€) 0.4 billion XOF GCF 
+Sub-component 2.3 
+Drainage and sanitation 
+infrastructure in Pikine Irrégulier Sud  50 million euro 
+(€) 32.8 billion XOF AFD 
+6 million euro 
+(€) 3.9 billion XOF Government 
+of Senegal 
+Component 3 
+Preventing the risk Sub-component 3.1 
+Real-time hazard monitoring in 
+Greater Dakar 2.1 million euro 
+(€) 1.4 billion XOF GCF 
+Sub-component 3.2 
+Protocols for infrastructure 
+management under extreme rain 
+events 1.2 million euro 
+(€) 0.8 billion XOF GCF 
+Component 4 
+Governance Sub-component 4.1 
+Support to integrated flood risk 
+management policy-making 0.4 million euro 
+(€) 0.3 billion XOF GCF 
+Sub-component 4.2 
+Institutional st rengthening and 
+capacity building 0.25 million euro 
+(€) 0.2 billion XOF GCF 
+Sub-component 4.3 
+Project Management Assistance 1.5 million euro 
+(€) 1.0 billion XOF GCF 
+Total 71  46.6   
+ 
+AFD will bring 50M€ of concessional loan financing in order to propose soft financing conditions (35% grant-element 
+equivalent) for the non-commercial public service drainage infr astructure to be built in the framework of Sub-component 
+2.3. The Government of Senegal (GoS) will provide the 6M€ neede d for the Resettlement Action Plan linked to the 
+establishment of the drainage infrastructure in Pikine Irréguli er Sud. GCF 15 M€ grant req uested contribution will be 
+focused on the soft activities, which aim at supporting a shift  in policy making and crisis management regarding floods. 
+The grant element is critical to set up the institutional, tech nical and political framework needed to improve flood 
+management from basic hard-engineere d solutions towards integra ted management and crisis reduction. 
+ 
+The budget breakdown by expenditure type for sub-components fin anced by GCF is as follows.
+
+
+---
+*Page 8*
+---
+
+ 
+FINANCING / COST INFORMATION 
+ GREEN CLIMATE FUND FUNDING P ROPOSAL | PAGE 4 OF 47 
+	
+	B
+ 
+Component Sub-component Expenditure 
+type Amount Currency of disbursement 
+Component 1 
+Knowing the risk Sub-component 1.1 
+Flood risk mapping Services 
+5.15 million euro (€) 
+Sub-component 1.2 
+Flood risk awareness Services 
+0.55 million euro (€) 
+Component 2 
+Reducing the risk Sub-component 2.1 
+Structural and non-st ructural measures 
+for flood risk reduction Services 
+3.2 million euro (€) 
+Sub-component 2.2 
+Tools for adequate investment in flood 
+management infrastructure Services 
+0.65 million euro (€) 
+Component 3 
+Preventing the risk Sub-component 3.1 
+Real-time hazard m onitoring in Greater 
+Dakar Supply 1.5 million euro (€) 
+Services 0.6 million euro (€) 
+Sub-component 3.2 
+Protocols for infrastructure management 
+under extreme rain events Services 
+1.2 million euro (€) 
+Component 4 
+Governance Sub-component 4.1 
+Support to integrated flood risk 
+management policy-making Project 
+consultants 0.4 million euro (€) 
+Sub-component 4.2 
+Institutional str engthening and capacity 
+building Project 
+consultants 0.25 million euro (€) 
+Sub-component 4.3 
+Project Management Assistance Project 
+consultants 1.5 million euro (€) 
+Total  15  
+ 
+ 
+          The tentative disbur sement schedule of GCF funds is as follows.
+
+
+---
+*Page 9*
+---
+
+ 
+FINANCING / COST INFORMATION 
+ GREEN CLIMATE FUND FUNDING P ROPOSAL | PAGE 5 OF 47 
+	
+	B
+Year 1 – 4.0 M€ 
+Year 2 – 4.0 M€ 
+Year 3 – 4.0 M€ Year 4 – 2.5 M€ Year 5 – 0.5 M€ 
+ 
+ 
+B.2. Project Financing Information 
+ Financial Instrument Amount Currency Tenor Pricing 
+(a) Total 
+project 
+financing (a) = (b) + (c)  71 million euro (€)  
+(b) 
+Requested 
+GCF amount  
+(i) Senior Loans 
+(ii) Subordinated 
+Loans 
+(iii) Equity 
+(iv) Guarantees 
+(v) Reimbursable 
+grants * 
+(vi) Grants * 
+  
+0 
+0 
+0 
+0 
+0 
+ 
+15  
+  
+ 
+  
+million euro (€)  
+ 
+ 
+  
+ 
+ 
+Total requested 
+(i+ii+iii+iv+v+vi)  15 million euro (€)  
+(c) Co-
+financing 
+ Financial 
+Instrument Amount Currency Name of 
+Institution Tenor Pricing Seniority 
+Senior Loans 
+Equity 50 
+6 million euro (€) 
+million euro (€) AFD 
+Repu 
+blic of Senegal20 years 
+ 1-1.5% 
+ senior 
+ 
+Lead financing institution: Agenc e Française de Développement 
+B.3. Fee Arrangement  
+Fee arrangement for the proposed project is aligned with the GC F Board’s decision number B11/10 about the interim 
+policy on fees for accredited entities.  
+B.4. Financial Market Overview  
+ Not applicable.
+
+
+---
+*Page 10*
+---
+
+ 
+DETAILED PROJECT / PR OGRAMME DESCRIPTION 
+ GREEN CLIMATE FUND FUNDING P ROPOSAL | PAGE 6 OF 47 
+	
+	C
+C.1. Strategic Context 
+Surging flood risk worldwide.  Of all natural disasters, flood is the most frequent and recur ring, and the 
+number of flood events has been st eadily increasing over the pa st 50 years. Recent history has 
+demonstrated the dramatic increase in loss of human lives and e conomic damages caused by urban floods, 
+especially in the most vulnerable developing countries. In 2010 , it is estimated that 178 million people were 
+affected by floods worldwide, and associated economic losses am ount to more than 40 billion USD.  
+This phenomenon can be explained by two combined factors: (i) t he increasing vulnerability of urban zones, 
+caused by uncontrolled demographi c growth and unplanned land us e and (ii) the surging hazard linked to 
+expected climate change, including extreme meteorological event s and sea-level rise. In Senegal, those 
+two factors apply with major intensity.  
+Flood risk in Senegal.  In 2014, urban population was estimated to be 43% of the total  population and is 
+growing at an annual rate of 3.9%1. Greater Dakar region is the main  urban center with almost 25%  of the 
+country’s population concentrated in an area representing less that 1% of the territory. Also, up to 80% of 
+the country’s economic activity i s located in Dakar. Rapid urba n-coastal migration as well as natural 
+population growth induces strong land pressure and often unplan ned urban fabric in the suburbs of the 
+main cities.  
+Climate change in Senegal is predicted to manifest as a decreas e in the amount of rainfall, however with 
+increased intensity, increased temperatures, and sea-level rise . Drought and saline intrusion threaten water 
+supplies, while sea-level rise along with coastal erosion threa ten cities and infrastructure. Different climate 
+models in the ensemble project a wide range of changes in the m ean annual rainfall averaged over the 
+country, from -41 to +48% by the 2090s—but more models show dec reases. It is difficult to draw robust 
+conclusions of changes in precipitation; however, it is likely that a greater proporti on of precipitation will 
+occur in heavy rainfall events. 
+Growing vulnerability and seemingl y increasing hazard pave the way for more frequent disasters. Indeed, 
+major flood events have been witnessed in 2005, 2009 and 2012, in the capital city Dakar, the latter 
+affecting around 500 000 people and caused more than 100 millio n USD worth of damages. Subsequently, 
+floods have been a continuous concern for Senegalese authority,  as flood events now occur almost each 
+year during the rainy season (June to October), leading to some  casualties and affecting first and foremost 
+the most vulnerable people. Dakar is the most heavily touched p art of the country but c ities like Kaolack, 
+Saint-Louis, Diourbel or Bakel also suffer from floods. 
+Flood management strategic framework in Senegal.  Taking action on this observation, the Senegalese 
+Government progressively set Disaster Risk Reduction (DRR) as p art of its national development strategy 
+in accordance first with the Sendai Framework, ultimately throu gh the national development plan (called 
+Plan Sénégal Émergent ). The Sendai Framework for Disaster Risk Reduction for the 201 5-2030, which 
+was adopted by 187 Member States of the United Nations (includi ng Senegal), identifies f our priorities: (i) 
+understanding disaster risk, (ii) strengthening disaster risk g overnance to manage disaster risk, (iii) 
+investing in disaster risk redu ction for resilience and (iv) en hancing disaster preparedness for effective 
+response and to “build back bette r” in recovery, rehabilitation  and reconstruction.  
+Operationally, this led to the elaboration of a 10-year Flood M anagement Program for the 2012-2022-
+period ( Programme Décennal de Gestion des Inondations – PDGI) . This PDGI accounts for structural 
+measures including mainly hard-engineered drainage infrastructu re to reduce the vulnerability to flood risks 
+but also non-structural measures . In September 2015, Senegal su bmitted its Intended Nationally 
+Determined Contributions (INDC),  which estimates at USD 2.136 b illion for the period 2016 to 2035 the 
+amount of investment required to  build resilience to floods. 
+On-going projects on flood management. Since the occurrence of disastr ous floods in Dakar and other 
+major cities, many projects have been launched by the Senegales e government to incre ase resilience and 
+leverage public investment in infrastructure. Among other proje cts, the most important  ones are the Jaxaay 
+																																																													
+1 Source: World Bank Development Indicators, 2015
+
+
+---
+*Page 11*
+---
+
+ 
+DETAILED PROJECT / PR OGRAMME DESCRIPTION 
+ GREEN CLIMATE FUND FUNDING P ROPOSAL | PAGE 7 OF 47 
+	
+	C
+Plan, that aims at resettle people living in low-lying, flood-p rone areas, launched in 2006 and the 
+emergency phase of the PDGI tha t also included 100 million USD worth of investment in infrastructure.  
+In 2010 was also launched the storm water management and climat e change project ( Projet de Gestion 
+des Eaux Pluviales – PROGEP ), financed mainly by the World Bank, that includes investment in drainage 
+infrastructure in priority areas of the suburbs of Dakar but al so institutional strengthening for storm water 
+management. 
+Project strategic consistency. Given the human and economic challenges posed by floods in Sene gal, 
+and given the funds needed to address this problem through infr astructure-only solutions, it appears 
+necessary to support Senegal's transition to an integrated urba n flood management policy to ensure 
+maximum cost-effectiveness of the Government’s investment in th is sector. 
+The present project aims at sup porting the Senegalese governmen t by taking a step back on its risk 
+mitigation strategy and support a transformation of the nationa l policy framework towards an integrated 
+urban flood risk management. It will address each and every str ategic objective of the Sendai Framework 
+for Action to establish a long-term strategy on flood managemen t. 
+The project will act as the neces sary link between local invest ments made in storm water drainage 
+infrastructure and operations (for instance through PROGEP) and  future regional hydrological and 
+meteorological data production (f or instance through an up-comi ng regional Hydromet Program). 
+Overview of the projects mentioned in the Funding Proposal . This present document makes reference 
+to various projects related to flood management in Senegal. To ensure clarity and good understanding of 
+these operations, an overview of each important project mention ed in this Funding Proposal is provided in 
+the box below. 
+Box 1. Overview of relevant projects 
+ 1. Urban Restructuring of Pikin e Irrégulier Sud– GoS, AFD, WB –  41M€ 
+This project has been designed as a component of the large Daka r-Diamniadio Highway Project co-
+financed by the Government of Senegal (7M€), AFD (14M€) and Wor ld Bank (20M€). The highway 
+construction has been seen as an opportunity to contribute to t he urban redevelopment of Pikine 
+Irrégulier Sud, located on the alignment of the highway, which is an informal area gathering around 
+200.000 persons. This project is articulated around three major  components including rehabilitation of 
+primary and secondary roads, construction of social equipments and drainage infrastructure in frequently 
+flooded areas. The part financed by the government was dedicate d to the payment of compensations 
+for persons to be resettled. The project, started in 2010, is p romoted by APIX and is currently under 
+implementation with an end date in September 2018. 
+ 2. Drainage and Wastewater Manag ement in Pikine Irrégulier Sud – GoS, AFD - 56 M€ 
+The design of this project is strongly linked with the componen t dedicated to drainage infrastructure in 
+the above-mentioned project. Taki ng into account the important needs in terms of rainwater and 
+wastewater in the Greater Dakar, this project aims at improving  drainage, wastewater and flood 
+management in Pikine Irrégulier Sud. Financed by the Government  of Senegal (6M€ on compensations) 
+and AFD (50M€), the implementation involves two promoters: APIX  is in charge of the drainage 
+component while ONAS is responsible for the wastewater componen t. Started in 2015, this project has 
+a lifespan of 5 years. 
+The ESIA produced in 2013 for the drainage infrastructure inclu ded in Project 1 covered in its scope of 
+action the drainage infrastructure planned in Project 2. For th is reason, the feasibility study is referring 
+to Project 1 when presenting details of Project 2, which is the  subject of the sub-component 2.3 in this 
+Funding Proposal. 
+ 3. Hann Bay Depollution  – AFD, EIB – 52,5 M€ 
+The depollution project of Hann Bay was launched in 2009 and is  co-financed by AFD (32,5M€) and EIB 
+(20M€). The Hann Bay is known to host approximately 60% of the national manufacturing industry with 
+limited treatment facilities causin g important pollution of the  environment due to a direct discharge of
+
+
+---
+*Page 12*
+---
+
+ 
+DETAILED PROJECT / PR OGRAMME DESCRIPTION 
+ GREEN CLIMATE FUND FUNDING P ROPOSAL | PAGE 8 OF 47 
+	
+	C
+domestic and industrial effluents into the Bay. The objective o f the project is to restore the water quality 
+of the bay by financing the infrastructure to collect (with a 1 5km long collection channel), treat (via a 
+wastewater treatment plant) and discharge using a 3km long subm arine pipeline. The project is under 
+implementation with ONAS as a promoter and is estimated for com pletion in April 2019. 
+After commissioning of the facilit ies, it is expected that the domestic effluents from households located 
+in Pikine Irrégulier Sud will be treated by the treatment plant  located in Hann Bay. 
+ 
+C.2. Project Objective against Baseline 
+Impacts of flood in Senegal.  Between 1980 and 2009, floods have affected around 900 000 peo ple in 
+Senegal, and killed 45 persons. The evaluation of damages to ec onomic assets amounts to 142 million 
+USD2. Given the impact of floods in the past 30 years and the impac t of the last major events, the trend 
+has clearly been accelerating: 
+ In 2009, major flood events have affected between 485 000 and 507 000 people in Senegal. 
+Throughout the national territory, the economic evaluation of d amages amounts to 104 million 
+USD, mainly on the following asse ts: private housing (49%), hea lth (14%), agriculture (11%), 
+education (10%) and transport (10%). Greater Dakar area has suf fered the most from those events, 
+with almost 360 000 people affected and 82 million USD worth of  damages (33 million USD on 
+habitat). 
+ In 2012, floods caused the death of 26 people. Approximately 2 64 000 people were affected; more 
+than 7 700 houses were damaged a nd more than 5 000 families had  to be resettled.  
+The Senegalese coastal area is particularly prone to flood risk . The capital city Dakar is installed in a 
+geographical area characterized by the « Niayes » landscape – f resh water bodies situated in depressions 
+between dunes that spread on a 180 km coastline from the Cap-Ve rt peninsula to the estuary of the 
+Senegal River. Most of Senegal’s population lives in coastal ar eas and almost one quarter of the overall 
+population lives in the Cap-Vert peninsula. 
+The return period of the rain events that caused the 2009 and 2 012 floods are quite short – 1.5 years for 
+the 2009 event. Those events and their impact have been subject  to extensive studies for the Greater 
+Dakar Region. However, knowledge of the actual risk flood risk on the national territo ry still shows some 
+gaps and there is no evaluation of the potential impact of extr eme events, like 100-years return period 
+rains. 
+Impacts of floods in Greater Dakar.  Unplanned urban growth and soil sealing have had a major impac t 
+on the natural hydrographic netwo rk and had provoked the disapp earance of natural talweg and evacuation 
+of rainwater to the sea. Duri ng exceptional droughts in the 70i es, houses were built i n the dry Niayes low-
+lying grounds that should not have been occupied. Groundwater i s heavily polluted by infiltrations from pit 
+latrines and cannot be used for drinking water purposes. As a c onsequence, the piezometrical level of the 
+groundwater table is very high, causing the apparition of lasti ng water bodies polluted by pathogenic 
+bacteria of fecal origin, even in  case of low-intensity precipi tation. 
+Pikine Irrégulier Sud is one of Greater Dakar’s main informal s ettlement zones, with around 300 000 people 
+today. The population of Pikine Irrégulier Sud falls in the low -income category and has little access to public 
+services. Moreover, the neighbo rhood is regularly and heavily a ffected by floods. Polluted and stagnant 
+water surfaces may persist week s or months, causing health prob lems (it is estimated that half of the 
+population is affected by waterborne diseases), damage to exist ing assets and decrease in economic 
+activity. Those problems drive people already living in poverty  to leave their unhealthy habitat. 
+																																																													
+2 Source : Rapport d’évaluation des besoins post-cata strophe – Inondations urbaines à Dakar 2009, Government of Senegal and 
+GFDRR, 2010,
+
+
+---
+*Page 13*
+---
+
+ 
+DETAILED PROJECT / PR OGRAMME DESCRIPTION 
+ GREEN CLIMATE FUND FUNDING P ROPOSAL | PAGE 9 OF 47 
+	
+	C
+Figure	1	–	Evaluation 	of	flood	risk	in	2009	in	Greater	Dakar	region3 
+Projected impacts of climate change. Major uncertainties remain as to the effect of climate change i n 
+Senegal in general and in particular on the amount and frequenc y of rain events. However, models tend to 
+show that there will be a general decrease in rainfall but an i ncrease in heavy rain events. This is actually 
+the worst-case scenario for fl ood risk, as overall dry weather might continue to cause urban migration, 
+mislead on the evaluation of haz ard in low points otherwise pro ne to floods. Subsequent heavy rain events 
+would cause massive damages. 
+While a majority of Senegal has a tropical climate, the country ’s northern regions - located in the Sahel - 
+are arid. The country experiences one long rainy season, which varies along a latitudinal gradient (north-
+south), from June/July to Septem ber/October, and is driven by t he movement of the Inter-Tropical 
+Convergence Zone (ITCZ). While the arid zones receive a rainfal l under 300 mm per year, the forested 
+south receives an average of 1200 mm per year. The average annu al temperature for Senegal was 27.8°C 
+for the period 1960-1990, with mont hly averages in the hottest seasons of up to 35°C. 
+Rainfall in Sahel is characteri zed by high variability on inter ‐annual and inter ‐decadal timescales, which 
+can make long ‐term trends difficult to identify. A period of particularly hig h rainfall occurred in the early 
+1960ies, whilst the period between 1970 and the end of the 1990 ies was very dry. Observers tend to agree 
+on a significant return of high rainfalls since the beginning o f 2000, but this does not c onstitute a consistent 
+scientific trend. 
+																																																													
+3 Source: Préparation à la gestion des périls naturels et des ri sques liés aux changements c limatiques à Dakar, Sénégal , IAGU, 
+2009
+
+
+---
+*Page 14*
+---
+
+ 
+DETAILED PROJECT / PROGRAMME DESCRIPTION 
+ GREEN CLIMATE FUND FUNDING  PROPOSAL | PAGE 10 OF 47 
+	
+	C
+ 
+Figure	2	–	Variation 	index	on	mean	annual	rainfall	in	Senegal, 	1896‐2008	
+As far as global climate change is concerned, General Circulati on Models project a wide range of changes 
+in precipitation for Senegal, but tend towards overall decrease s, particularly in the wet season. However, 
+despite the projected decreases in total rainfall, the proporti on of total annual rainfall that falls in heavy rain 
+events tends towards increases in the ensemble projections.  
+The document “Vulnerability, Ri sk Reduction and Adaptation to C limate Change – Country Profile of 
+Senegal” of 2011 financed by World  Bank, GFDRR and Climate Chan ge team describes Senegal current 
+and future climate profile. 
+The past climate variability is c haracterized by the following patterns:  
+ Mean annual temperature has increased by 0.9°C since 1960, an average rate of 0.20°C per 
+decade. 
+ Available data indicates that the average number of ‘hot’ nigh ts per year increased by 27 (an 
+additional 7.3% of nights) between 1960 and 2003. 
+ A period of particularly high rainfall occurred in the early 1 960s, while the early 1980s were 
+particularly dry. Statistically significant decreases of around  10 to 15 mm per decade have, 
+however, been observed between 1960 and 2006 in the southern re gions of Senegal (during the 
+wet season of June through September). 
+ Some unusually high rainfalls have occurred in the dry season in recent years (2000 ‐2006), but 
+this has not been part o f a consistent trend. 
+ Senegal has experienced a statisti cally significant decrease i n wet season rainfall between 1960 
+and 2006, with the 500 mm isohyet s regressing about 100 km to t he south. 
+The current models that describe  the future of Senegalese clima te project the following trends: 
+ Mean annual temperatures are projected to increase by 1.1 to 3 .1°C by the 2060s, and 1.7 to 4.9°C 
+by the 2090s, with projected rate s of warming faster in the int erior than in areas closer to the coast.
+ All projections indicate substantial increases in the frequenc y of days and nights that 
+are considered ‘hot’ in current c limate, with such increases oc curring more rapidly in the south and 
+east of the country. 
+ All projections indicate decreases in the frequency of days an d nights considered ‘cold’ in current 
+climate. 
+Different models in the ensemble project a wide range of change s in the mean annual rainfall averaged 
+over the country, from ‐41 to +48% by the 2090s – but mor e models show decreases. It is  difficult to draw 
+robust conclusions on changes in precipitation; however, it is likely that a greater proportion of precipitation 
+will occur in heavy rainfall events.
+
+
+---
+*Page 15*
+---
+
+ 
+DETAILED PROJECT / PR OGRAMME DESCRIPTION 
+ GREEN CLIMATE FUND FUNDING P ROPOSAL | PAGE 11 OF 47 
+	
+	C
+Description of baseline scenario.  If the present trend persists, it is expected that in years to  c o m e  
+vulnerability will continue to increase. Indeed, urban populati on will continue to grow at a fast rate. Today, 
+urban growth is estimated to 3.9% per year, which represents ov er 35 years 16.7 million new urban 
+dwellers, and over 2. 3 million new houses. 
+If urban planning still fails to integrate – by lack of knowled ge or adequate tools – flood management 
+concepts, the number of people exposed to flood risk will conti nue to increase faster than population 
+growth. In this case, it is likely that public investment in dr ainage infrastructure will be lagging behind urban 
+expansion leaving most vulnerable  people in a situation of extr eme vulnerability and dramatic sanitary living 
+conditions. 
+Project objectives against baseline.  Against this baseline scenario of increasing urban vulnerabili ty in 
+Senegal and potential risk elevat ion due to climate change, the  general objective of the project will be to 
+initiate the shift from an infrastructure-oriented policy to an  integrated and transversal national policy of 
+flood risk management, with expected benefits tackling the prob lem from a two-fold perspective: (i) optimize 
+investment for resilience in already urbanized areas and (ii) t ake preventive action to include flood-risk in 
+urban planning.  
+Derived from the priorities set by the Sendai Framework for Act ion, the specific objectives of the project 
+are (i) to improve knowledge on floods and flood-prone zones, ( ii) to optimize investment in risk mitigation 
+measures, (iii) to upgrade monitoring and response for better r isk prevention and (iv) to strengthen flood 
+risk governance.  
+C.3. Project Description  
+Following the priorities set out in the Sendai Framework for Ac tion, the project is structured in four 
+components: (i) knowi ng the risk, (ii) reducing the risk, (iii)  preventing the risk and  (iv) governance. Each 
+component is described in the present section. 
+COMPONENT 1 – KNOWING THE RISK 
+This component of the project will aim at enhancing and making available knowledge about flood risk in 
+Senegal. The objective is to make a map of flood risk in Senega l, at national scale and at local scale in six 
+priority urban areas – those most affected by the floods. The k nowledge thus produced can then be 
+disseminated, both towards institutions involved in flood manag ement policy-making as well as towards 
+affected populations in order to create a real risk culture. 
+Sub-component 1.1 – Flood risk mapping . A comprehensive Geographic Information System (GIS) on 
+flood risk will be developed to gather information for adequate  policy-making, land planning and 
+infrastructure design. The GIS will present information at the national scale and – to much finer details – at 
+the local scale, for six pilo t urban areas to be determined. 
+First, based on the compilation of the existing information and  on-going studies, a digital terrain model 
+(DTM) with a 50 meters mesh covering the national territory wil l be developed. This basic topographical 
+data will be processed to establis h a precise knowledge of wate rsheds and their dynamics. This DTM will 
+be the background map of the flood-risk GIS, which would be com posed of two main layers: 
+• Hazard layer. This layer will pinpoint flood-prone areas for ten-year floods (standard design floods 
+protection infrastructure in Senegal) and hundred-year floods ( extreme hazard). This layer will also 
+represent data on watershed limits, aquifers, large linear infr astructure that may alter the response 
+of hydraulic flows, the maximum flow for natural and artificial  outlets. 
+• Vulnerability layer. This laye r will represent the urban fabr ic, highlighting sensitive areas and 
+buildings (hospitals, schools, public places such as bus statio ns or mosques), the population 
+density, business and industrial zones, and an estimation of th e risk to human lives and economic 
+assets.
+
+
+---
+*Page 16*
+---
+
+ 
+DETAILED PROJECT / PR OGRAMME DESCRIPTION 
+ GREEN CLIMATE FUND FUNDING P ROPOSAL | PAGE 12 OF 47 
+	
+	C
+The combination of those two layers within the GIS will allow f or precise knowledge and localization of 
+flood-risk on the Senegalese territory. This nationwide mapping  will be the base for the identification of six 
+pilot urban areas where a similar but more detailed risk mappin g (scale of 1:5000) could be achieved. 
+These urban areas would be selected according to their exposure  to flood risk and representativeness with 
+respect to different types of floods affecting Senegal. Those p ilot areas will be chosen from the 25 urban 
+localities pre-identified by the Government of Senegal in the f ramework of the National Program for 
+Development and Restructuring of Flood Zones ( Programme National d’Aménagement et de 
+Restructuration des Zones Inondables – PNARZI ). Given the stakes in the Dakar region, there is no doubt 
+that it would be among the six pilot areas. 
+The information gathered in the GIS will need to be regularly u pdated to take into account the ever-
+changing situation of flood risk, particularly rapid evolution of vulnerability in the context of rapid 
+urbanization and changing hazard due to climate change. The adm inistration, maintenance and update of 
+the GIS will be implemented by the Ministry of Urban Renewal, H ousing and Living Environment ( Ministère 
+du Renouveau Urbain, de l’Habitat et du Cadre de Vie – MRUHCV ). It will also ensure it s availability to all 
+stakeholders (ministries, local governments, public institution s, firefighter brigades, consulting firms, 
+universities, associations, etc.). The equipment and training f or administrators will be provided under the 
+project. 
+In localities where hydrological  and meteorological historical data is insufficient for the assessment of flood 
+hazard, the project could include the supply and installation o f basic measuring equipment (rain gauges, 
+staff gauges or piezometers). The new equipment will be used to  gather the minimal historical data 
+necessary for the pr oper understan ding of the flood hazard. 
+Outputs: Flood risk GIS 
+Sub-component 1.2 – Flood risk awareness.  Taking advantage of the data made available through the 
+flood risk GIS developed in Sub-component 1.1, communication ac tivities – both institutional and towards 
+the general public – will be funded under the project. A commun ication plan for both aspects would be 
+developed, validated and implemented. 
+As for corporate communications, the objective will be to defin e relevant indicators to serve as a decision-
+making tool in the development of public policies to fight agai nst floods. These indicators could, among 
+other things, include: the ratio of total population subject to  decadal and centennial floods ratio of total 
+economic activities subject to decadal and centennial floods. 
+Awareness- campaigns for the gen eral public will also be arrang ed for the most vulnerable populations in 
+order to create a genuine risk culture in the most flood-prone areas. Indeed, appropriate behavior on the 
+part of the people concerned is the guarantee of a better prepa ration and a significant reduction of negative 
+impacts of flooding. Besides the intrinsic hazard of water, ign orance of the risk may have a negative impact 
+on the protection capacity – including inadequacy of buildings – or a more active vulnerability resulting in 
+risk behaviors, conscious or unconscious. 
+Outputs: Awareness-raising campaign 
+COMPONENT 2 – REDUCING THE RISK  
+This component aims at reducing the vulnerability of the territ ory by (i) making recommendations to improve 
+the resilience of urban areas, ( ii) optimizing the design of dr ainage infrastructure and (iii) developing “no 
+regrets” infrastructure in a particularly vulnerable area of th e outskirts of Dakar ( Pikine Irrégulier Sud ). 
+Sub-component 2.1 – Structural and non-stru ctural measures for flood risk reduction. Based on the 
+information compiled in the GIS and additional field surveys, t he activities under this sub-component will 
+aim at providing the Senegalese authorities with a collection o f measures, other than large drainage 
+infrastructure, that can be impl emented by public or private st akeholders to mitigate flood risk in most 
+vulnerable urban areas.
+
+
+---
+*Page 17*
+---
+
+ 
+DETAILED PROJECT / PR OGRAMME DESCRIPTION 
+ GREEN CLIMATE FUND FUNDING P ROPOSAL | PAGE 13 OF 47 
+	
+	C
+First, a thorough analysis of urban planning practices in force  in Senegal would make recommendations to 
+improve the consideration of fl ood risk in the future urban fab ric. Particular attention would be paid to the 
+protection against the installation of habitat in areas identif ied as flood-prone, in particular through the 
+installation of public facilitie s that are not affected by floo ds (for instance parks, sports fields or ponds). 
+At the plot level, and for each of the major types of risk area s, a diagnostic will be led and recommendations 
+will be issued as to structural and non-structural measures tha t can be implemented locally by residents, 
+businesses or public instituti ons to reduce vulnerability. Thes e would include both measures for the existing 
+urban fabric (for instance threshold increase, cofferdams or sm all pumping stations) as well as for future 
+urban developments (for instanc e regulations for new buildings materials and techniques). 
+These recommendations in terms o f urban planning as well as str uctural and non-struct ural measures will 
+be accompanied by a regulatory and economic analysis to identif y any existing barriers to their 
+implementation and steps required for their effective implement ation: changes in legal framework, 
+economic incentives…   
+Outputs: Regulatory recommendations – Guidebooks – Proposition of incentives 
+Sub-component 2.2 – Tools for adequate investment in flood management infrastructure . 
+Topographical, hydrological and meteorological data collected i n the framework of component 1 will be 
+processed to develop the information needed to enhance effectiv eness of public expenditure in drainage 
+infrastructure. This information will be made broadly available  to policy makers, project sponsors and 
+engineers to ensure maximum app ropriation and diffusion of good  practices.  
+For each watershed, the appropriate tools will be developed for  large scale risk-mitigation infrastructure 
+design. Studies under this co mponent will thus determine adapte d design storm patterns, rainfall-flow and 
+rainfall-runoff models. Those tools need to be updated on a reg ular basis to take into account new hydro-
+meteorological data and topographical data on urban areas, whic h tend to change rapidly. Protocols and 
+trainings will be set up to ensur e that responsible entity will  be capacitated for this task. 
+Information collected in the GIS will be used for setting adequ ate priority, for each watershed, to investment 
+in large-scale drainage infrastructure. This information will b e used to set up a strategic planning for 
+investment at national scale, and will be used on a smaller sca le by entities responsible for the elaboration 
+of local drainage master plans. 
+Outputs; Investment plans – Models – Protocol s – Training programs – Communication program 
+Sub-component 2.3 – Drainage and sanitation infrastructure in Pikine Irrégulier Sud . This sub-
+component will include investment  in infrastructure aiming at b uilding resilience to flood risk of Pikine 
+Irrégulier Sud, one of the most v ulnerable areas of the suburbs  of Dakar, through a “no-regret” approach 
+to adaptation to climate change. 
+In terms of storm water drainage infrastructure, and in accorda nce with the principles identified in the 
+Drainage Master Plan for Pikine and Guediawaye (elaborated in t he framework of t he PROGEP, financed 
+by the World Bank), the wo rks planned  consist of: 
+‐ The transformation of depressions and existing ponds in storm basins that will regulate the flow 
+during rain events, thus significantly reducing the required si zing of spillways. In total, the project 
+involves the construction of 18 pools of rainwater retention ba sins covering a surface of nearly 30 
+hectares. In accordance with the orientations of the Drainage M aster Plan, these ponds should be 
+able to integrate into the urban space, while addressing with f ences the concerns of the people 
+about the risk of drowning due to t he size and dept h of these w orks;
+
+
+---
+*Page 18*
+---
+
+ 
+DETAILED PROJECT / PR OGRAMME DESCRIPTION 
+ GREEN CLIMATE FUND FUNDING P ROPOSAL | PAGE 14 OF 47 
+	
+	C
+‐ The installation of gravity collectors to let the rainwater fl ow to the outlets in the sea and the 
+adjacent forest area. These collectors, installed on a draining  bed and equipped with weep holes 
+at regular intervals in the ra ft, are also designed to reduce t he water table’s piezometrical level. In 
+total, 20 km underground collectors will be built. 
+This infrastructure is designed for a 10-year return period, wh ich corresponds to standards for drainage 
+infrastructure. In the local c ontext of extreme vulnerability, this infrastructure will bring adequate protection 
+against storm events. The drainage system was also designed to be resilient to climate change as the 
+outlet was placed to take into account sea level rise. This sub -component will also tackle the problem of 
+wastewater intrusion in drainage infrastructure through install ation of sewer pipes along the drainage linear 
+infrastructure that will be conne cted to the Hann bay wastewate r treatment plant. 
+This sub-component will also include Information, Education and  Communication (IEC) services aimed at 
+Pikine Irrégulier Sud populations , that will aim at (i) ensurin g acceptance and proper usage of the 
+infrastructure by the population and (ii) adapting retention po nds to enhance their integration in the urban 
+structure. 
+Finally, this sub-component will include the displacement and r esettlement of the people installed in flood-
+prone area that cannot be protected by the drainage infrastruct ure. Although the drainage infrastructure 
+has been designed to minimize impacts on people, the Resettleme nt Action Plan (RAP) will structure the 
+urban fabric to drastically redu ce vulnerability. The number of  People Affected by the Project is estimated 
+to be 700 during the elaboration of the RAP, however as the urb an fabric is rapidly changing in Pikine 
+Irrégulier Sud, this number migh t be slightly revised during ac tual resettlement. 
+Outputs; Drainage infrastructure – Sanitation infrastructure – Training programs – IEC campaign 
+COMPONENT 3 – PREVENTING THE RISK  
+This component aims at enhancing risk detection and prevention with a focus on drainage infrastructure 
+management, with the objective to  maximize its efficiency. 
+Sub-component 3.1 – Real-time hazard monitoring in Greater Dakar.  Rain events in Dakar and its 
+suburbs are characterized by a s trong spatial and temporal vari ability. Moreover, flood risk in this area is 
+strongly linked to the piezometri cal level of the water table w hich has a direct impact on the runoff 
+coefficient. This subcomponent of the project will include supp ly and installation in Greater Dakar of precise 
+meteorological and hydrological monitoring tools to ensure real -time knowledge of local climatic 
+phenomena and quick response capacity.  
+A polarization diversity X-band radar antenna (frequency range 8.0 to 12.0 GHz), less expensive and bulky 
+than standard equipment will be in stalled. This meteorological radar will measure precisely located 
+accumulated rainfall on an 80 kilometers range, covering most o f the Cap Vert peninsula. Coupled through 
+an operating software with a network of rain gauges – new or ex isting –this new equipment will give precise 
+and real-time knowledge of rain events, and predict heavy rainf alls with two or three hours anticipation. 
+According to existing and operational piezometers in Greater Da kar, some equipment will be rehabilitated, 
+replaced or extended to extend knowledge of the water table. Wa ter quality will also be tackled to address 
+the health issues caused by stagnant flood water. 
+This Sub-component will also provide inclusive support to the N ational Agency for Civil Aviation and 
+Meteorology ( Agence Nationale de l’Aviation Civile et de la Météorologie – ANACIM ) and Directorate for 
+Water Resource Planning and Management ( Direction de la Gestion et la Planification des Ressources en 
+Eau – DGPRE ) to enhance their capacities to forecast flood risk and ensure  sustainable use of the new 
+equipment. 
+Outputs: Monitoring equipment and software – Forecasting models – Training programs
+
+
+---
+*Page 19*
+---
+
+ 
+DETAILED PROJECT / PR OGRAMME DESCRIPTION 
+ GREEN CLIMATE FUND FUNDING P ROPOSAL | PAGE 15 OF 47 
+	
+	C
+Sub-component 3.2 – Protocols for infrastructure management under extreme rain events.  The 
+activities financed under this sub-component will aim at increa se preparedness of the drainage 
+infrastructure national operator – the Senegal National Office for Sanitation ( Office National de 
+l’Assainissement du Sénégal, ONAS ) through curative and preventive action. 
+Based on a precise database of existing drainage infrastructure  which is currently being developed in the 
+framework of the PROGEP, and their hydraulic behavior in variou s rain events, the first activity under this 
+sub-component will be to identify bottlenecks and weak points o f the systems. Derived from this 
+identification, preventive acti ons to be implemented by the ope rator in the lead-time in case of predicted 
+heavy rainfall will be determined. For instance, protocols for drainage infrastructure management or flood 
+prevention might include: empty r etention basins, reinforce pum ping stations and close down roads and 
+streets.  
+Capacity building to help the ONAS to acquire the skills necess ary to take the central role in the rainwater 
+drainage infrastructure will also  be financed under this sub-co mponent. 
+Outputs; Protocols – Training programs 
+COMPONENT 4 – GOVERNANCE  
+Transversal governance is a disti nctive characteristic of integ rated flood management. This component 
+aims at helping the Government of Senegal maintain an in-depth communication between all stakeholders 
+of flood management policy-maki ng and its implementation. 
+Sub-component 4.1 – Support to integrated flood risk management policy-making.  The project will 
+bring support to MRUHCV in its role as lead institution in floo d management policy-making and coordination 
+of all the institutions involved in flood management. More prec isely, this support to policy making and 
+coordination will include (i) di alogue and cooperation between all institutions involved in the project 
+implementation scheme to ensure maximum efficiency, coordinatio n and consistency, (ii) a high level policy 
+panel that could be led by the Prime Minister’s office and (iii ) general communication and participative fora 
+with general public, academia and civil society 
+Outputs; Decisions of the Technical Committee – Decisions of the CNGI – Communication strategy 
+Sub-component 4.2 – Institutional consolidation and capacity building. The project will include a 
+participative detailed diagnosti c of the Senegalese institution al framework for integrated urban flood 
+management. This diagnostic will conclude in recommendation in terms of responsibilities of different 
+institutions, coordination betwee n various institutions and cap acity reinforcement that might be needed.  
+Based on the previously mentioned diagnostic, a specific capaci ty building program will be implemented in 
+relation to integrated flood management policy-making. The prop osed strategy aims at increasing 
+Senegal’s resilience to flood disa ster risk by combining hard-e ngineered solutions to reduce vulnerability 
+and non-structural policies and measures to better monitor and respond to flood events.  
+Outputs: Institutional diagnostic – Training program 
+Sub-component 4.3 – Project Management Assistance.  A project management assistance team will be 
+hired to support implementation of the project by MRUHCV and ot her institutions (see section C.7 for 
+details on implementation arrang ement). It will bring support f or precise definition of needs, procurement, 
+follow-up of consultant works and validation. 
+Outputs: Tender documents – Evaluati on reports – Validation of products 
+C.4. Background Information on Project Sponsor
+
+
+---
+*Page 20*
+---
+
+ 
+DETAILED PROJECT / PR OGRAMME DESCRIPTION 
+ GREEN CLIMATE FUND FUNDING P ROPOSAL | PAGE 16 OF 47 
+	
+	C
+The Project Sponsor will be the Government of Senegal. The Gove rnment of Senegal will support the 
+project through partial financi ng of Sub-component 1.3, with a contribution of 6 M€ from the State budget. 
+As a consequence, the Ministry o f Finance will be involved for channeling the funds. 
+The Project Sponsor will distri bute an delegate the implementat ion of the project to five executing entities, 
+while overall coordination will also be ensured (cf.infra) : 
+‐ MRUHCV: The Ministry of Urban Renewal, Housing and Living Envir onment ( Ministère du 
+Renouveau Urbain, de l’Habitat et du Cadre de Vie – MRUHCV ) is responsible for the coordination 
+of all stakeholders involved i n flood management, and has been leader in the advocacy for a shift 
+in policy towards an integrated approach.  
+‐ ONAS: The Senegal National Office for Sanitation ( Office National de l’Assainissement du Sénégal 
+– ONAS ) is the national public institution in charge of urban wastewa ter and storm water collection 
+and treatment. In late 2013, ONAS  has been appointed as the lead entity in charge of drainage 
+infrastructure, from constructi on works to operation and mainte nance.  
+‐ ANACIM: The National Agency for Civil Aviation and Meteorology (Agence Nationale de l’Aviation 
+Civile et de la Météorologie – ANACIM ) is the public agency in charge of producing and processing 
+meteorological data as well as i ts publication. It is also in c harge of civil aviation.  
+‐ DGPRE: The Directorate for Wate r Resource Planning and Manageme nt (Direction de la Gestion 
+et la Planification des Ressources en Eau – DGPRE ) is part of the Ministry of Water and Sanitation 
+(Ministère de l’Hydraulique et de l’Assainissement – MHA) . It is in charge of the National 
+Hydrological System and monitors  groundwater resources as well as rivers.  
+‐ APIX: The Investment Promotion and Large Projects Agency ( Agence de Promotion de 
+l’Investissement et des Grands Travaux – APIX ) is a public company that is in charge of 
+implementing, in the name of the Government of Senegal, major i nvestment project, especially in 
+the framework of public-private partnerships. The involvement o f APIX in the project is the 
+consequence of the project’s hist ory, as the restructuration of  Pikine Irrégulier S ud was originally 
+a mitigation measure from the Dakar-Diamniadio Highway project.  At that date, and in response to 
+flood crisis, numerous projects were launched to deal with the emergency investment plan in the 
+suburbs of Dakar, not necessarily though ONAS.  
+C.5. Market Overview 
+Not applicable. 
+C.6. Regulation, Taxation and Insurance  
+Permits will be obtained, if necessary, by the project sponsors  as public entities according to Senegalese 
+regulation. AFD-financed projects are not subject to taxes in S enegal. Foreign exchange induces no risk 
+as exchange rate between euros and CFA franc is fixed. Insuranc e policies are not standard practice in 
+Senegal for drainage infrastructure. 
+C.7.   Institutional / Implementation Arrangements  
+Executing entities. Each executing entity will be in c harge of the implementation o f part of the project 
+according to its prerogatives. The table below illustrates the implication of each executing agency on the 
+sub-components of the project. 
+Executing Entity Sub-components Funding (M€) Indicative total amount 
+(M€) GCF AFD GoS 
+MRUHCV 1.1 - 1.2 - 2.1 - 2.2 
+4.1 - 4.2 - 4.3 11,7 - - 11,7 
+ONAS 2.3 - 3.2 1,2 11 - 12,2
+
+
+---
+*Page 21*
+---
+
+ 
+DETAILED PROJECT / PR OGRAMME DESCRIPTION 
+ GREEN CLIMATE FUND FUNDING P ROPOSAL | PAGE 17 OF 47 
+	
+	C
+ANACIM 3.1 1,1 - - 1,1 
+DGPRE 3.1 1 - - 1 
+APIX 2.3 - 39 6 45 
+A strong coordination between thes e five executing entities wil l be required to ensure an effective project 
+implementation. Each entity will have a leading role on the imp lementation of activities as per the 
+component breakdown presented above while the overall coordinat ion will be ensured through four 
+mechanisms to maximize interactio ns between the entities as muc h as possible: 
+-  Project Management Assistance (PMA - operational level): a d edicated team will be recruited to assist 
+the MRUHCV, Lead Coordinating Institution, in the management of  the project and appropriate 
+coordination with the executing entities and other stakeholders . This team will bring a day-to-day support 
+to the five entities, facilitat e communication and anticipate p otential issues.  
+- Project Coordinator (oversight):  the Project Coordinator, des ignated within MRUHC V, will act as focal 
+point and work with the Project Management Assistance team to e nsure consistency of actions.  
+- Project Technical Committee (technical level): the Project Te chnical Committee (PTC), a quarterly 
+meeting gathering the five executing entities headed by a MRUHC V’s representant, will  represent an 
+opportunity to discuss transvers al technical issues and enable a dialogue between the entities involved in 
+the project implementation. 
+- Steering Committee (strategic level): the Steering Committee will be in charge of the strategic supervision 
+of the project to ensure a global  coordination between the proj ect implementation by the executing entities 
+and the guidelines and priorities of the government in terms of  integrated flood management.   
+Further details on both commi ttees are provided below.   
+Project Technical Committee. The PTC will be composed by the reunion of all executing agenci es. It will 
+gather on a quarterly basis to monitor progress of the project and ensure coordination between all executing 
+agencies. MRUHCV, as the Lead Coor dinating Institution, will ap point a focal point to represent the Project 
+Technical Committee. The focal point, with the support of the P roject Management Assistance, will 
+coordinate the Project Technical Committee and participate in t he Steering Committee. 
+Steering Committee. In the perspective of ensuring national ownership of the projec t, no specific steering 
+committee shall be set up. Instead, the existing National Commi ttee for Flood Management ( Comité 
+National de Gestion des Inondations – CNGI ) will act as steering committ ee for the project. The CNGI 
+gathers all institutions involved directly or indirectly to flo od management and impacts mitigation. Presently, 
+the CNGI has a focus on crisis m anagement. The project will bri ng more integrated flood management 
+aspect to its consideration 
+Link with regional and local level. The CNGI is also linked with Regional Committees for Flood 
+Management ( Comités Régionaux de Gestion des Inondations – CRGI ) and Departmental Committees for 
+Flood Management ( Comités Départementaux de Gestion des Inondations – CDGI ). This connection will 
+ensure that the results of the project will trickle down to the  local level on the whole national territory. 
+Contractual framework. A loan agreement has been signed on December 2nd 2015 by AFD and the 
+Government of Senegal and part of the amount will be on-granted  to ONAS for the activities under its 
+responsibility. APIX already has a mandate to lead the drainage  works component and resettlement 
+through a decree from the Prime Minister of Senegal. 
+The financial agreement regarding the GCF grant will also be si gned by AFD and the Government of 
+Senegal and on-granted. 
+Procurement plan. Except for the resettlement pl an that will be implemented direc tly by the Senegalese 
+authorities, the project will be implemented through works, sup ply and services contracts procured by the
+
+
+---
+*Page 22*
+---
+
+ 
+DETAILED PROJECT / PR OGRAMME DESCRIPTION 
+ GREEN CLIMATE FUND FUNDING P ROPOSAL | PAGE 18 OF 47 
+	
+	C
+executing agencies. The procurement plan is designed to minimiz e the number of contracts that have to 
+be procured. The following table provides an overview of the pr oject procurement plan. 
+Output Type of Contracts # of 
+contracts 
+Output 1. The knowledge o f flood risk in Senegal has been 
+enhanced, mapped, and made publicly available Services 1 
+Output 2. Risk has been reduc ed in Pikine Irrégulier Sud 
+and tools are available to reduce  the risk at national scale in  
+a cost-effective and efficient manner Works  
+Services 
+Direct implementation 2 
+2 
+N/A 
+Output 3. Hazard monitoring and response have been 
+developed to enhance existing drainage infrastructure 
+operations Supply  
+Services 2 
+1 
+Output 4. Stakeholders of flood management policy-making 
+work together in an efficien t and coordinated manner Project consultants 1 
+Organogram.  The organogram hereafter descri bes the implementation arrangem ent as described in this 
+section.  
+The financial management of the project will rely on a special project account that will be held by the 
+Ministry of Finance. The anticipated disbursement method will b e via renewable advances, which is a 
+classic approach for capital m anagement on AFD-financed project  with established procedures and 
+mecanisms for both disbursement of advances and payment of invo ices.  
+Disbursement process. MRUHCV, a s the lead coordinating institut ion, will prepare in coordination with the 
+other executing entities a deta iled procurement plan that will provide a tentative disbursement schedule 
+with an approximate accuracy at the quarter level. Based on thi s document, the MRUHCV will be able to 
+transfer a request for funds to the Ministry of Finances when a  disbursement is required. After analysis and 
+validation by the Ministry of Finances, this request is transfe rred to AFD for control and final approval. As 
+a last step, an official letter from AFD is sent to the Ministr y of Finances to inform that the disbursement 
+has been processed. The Ministry  of Finance will be in charge o f the special project account and represent 
+the key entity, in coordination with AFD, to manage the effecti ve disbursement of funds from the GCF grant. 
+A couple of management measures are usually set up to ensure th e accuracy of this process: a monthly 
+bank statement should be provided  to the MRUHCV by the Ministry  of Finances to inform on the available 
+balance on the project account; and the detailed procurement pl an will be regularly reviewed and updated 
+by the MRUHCV with the assistance of the PMA to take into accou nt any change on the project schedule.
+Payment process. Two payment methods can be considered for paym ent of invoices: (i) refinancing of 
+expenses paid by the beneficiary and (ii) payment via renewable  advances. In the first scenario, the Ministry 
+of Finance will refinance an expens e directly paid by an execut ing entity after reception of the payment 
+certificate and supporting doc uments. All supporting documents will also be sent to AFD to ensure an 
+appropriate supervision of funds f low. This payment scheme coul d be used for specific provisions planned 
+in the early stage of the projec t to ensure implementation read iness. 
+Under the second scenario: when an invoice is to be paid, the e xecuting entity concerned will transfer this 
+invoice to the Ministry of Finances for treatment and payment, with a copy sent to AFD for supervision. 
+Annual financial audits will be carried out by independent audi ting firms and the AFD approval on the 
+auditing reports will be a conditi on precedent to the next disb ursement. 
+The financial management of the project, including disbursement  methods (number of occurrences per 
+year and maximum amount to be requested) and auditing will be d etailed in the financing agreement.
+
+
+---
+*Page 23*
+---
+
+ 
+DETAILED PROJECT / PROGRAMME DESCRIPTION 
+ GREEN CLIMATE FUND FUNDING  PROPOSAL | PAGE 19 OF 47 
+	
+	C
+
+
+---
+*Page 24*
+---
+
+ 
+DETAILED PROJECT / PR OGRAMME DESCRIPTION 
+ GREEN CLIMATE FUND FUNDING P ROPOSAL | PAGE 20 OF 47 
+	
+	C 
+C.8.  Timetable of Project Implementation  
+ 
+  2017 2018 2019 2020 2021 
+Task Q01 Q02 Q03 Q04 Q05 Q06 Q07 Q08 Q09 Q10 Q11 Q12 Q13 Q14 Q15 Q16 Q17 Q18 Q19 Q2 0 
+Output 1. The knowledge of fl ood risk in Senegal has been enhan ced, mapped, and made publicly 
+available                                         
+Activity 1.1. X X X X X X X X X X                     
+Mapping flood risk at national and local levels 
+Activity 1.2.       X X X X   X   X   X   X   X   X   
+Population and institutio ns awareness raising 
+Output 2. Risk has been reduced in Pikine Irrégulier Sud and to ols are available to reduce the risk at 
+national scale in a cost-eff ective and efficient manner                                         
+Activity 2.1.               X X X X X X X X           
+Recommendations for structural and non-structural measures 
+Activity 2.2.               X X X X X X X X           
+Processing flood risk information for infrastructure planning and design 
+Activity 2.3. X X X X X X X X X X X X X X X X X       
+Construction of drainage and sanitation in frastructure in Pikine Irrégulier Sud 
+Output 3. Hazard monitoring and response have been developed to  enhance existing drainage 
+infrastructure operations                                         
+Activity 3.1.   X X X X X X X X X X                   
+Setting-up real time hazard monitoring in Greater Dakar 
+Activity 3.2.   X X X X X X X X X X                   
+Elaboration of operational protocols and guidelines for preventive action on drainage infrastructure 
+Output 4. Stakeholders of flood  management policy-making work t ogether in an efficient and 
+coordinated manner                                         
+Activity 4.1.   X X X X X X X X X X X X X X X X X X X 
+Support to coordination and policy-making 
+Activity 4.2.       X X X X X X X X X X X             
+Institutional consolidation and capacity building 
+Activity 4.3. 
+  X X X X X X X X X X X X X X X X X X X 
+Supporting executing entities for project implementation
+
+
+---
+*Page 25*
+---
+
+ 
+RATIONALE FOR GCF INVOLVEMENT 
+ GREEN CLIMATE FUND FUNDING P ROPOSAL | PAGE 21 OF 47 
+ 
+	
+	
+	D
+D.1. Value Added for GCF Involvement    
+The GCF contribution is critical for the project in order to fi nance the operationalization and strengthening of an integrated  
+flood management policy at nati onal scale. If hard-engineered v ulnerability reduction is som etimes easier to implement 
+from a political point of view and social infrastructure invest ment usually justifies State indebtedness, paradigm shift in 
+policy making is more difficult to achieve.  
+The grant will provide a strong incentive to go beyond current policy of reduction of vulnerability to flood risk. The GCF 
+grant is expected to drastically  speed-up the process and the s et-up a comprehensive framework for integrated flood 
+management. The implementation of the GCF grant by MRUHCV will also be instrumental in increasing the institution’s 
+legitimacy and comfort its posit ion as the main policy maker on  flood management at the national scale. 
+Though Senegal’s indebtedness is deemed sustainable by the IMF since debt relief plans of mid-2000, investment linked 
+to climate change adaptation is evaluated in Senegal’s INDC at 14 558 million USD, which includes 12 725 million USD 
+from external indebtedness. The concessionality of GCF funding,  in the form of a grant, will permit better efficiency of 
+future investment in flood risk mitigation. 
+D.2. Exit Strategy  
+Project outcome’s sustainability will be sought through three l ines of work: (i) appropriation of integrated flood 
+management principles, (ii) sustainable financial resources and  (iii) capacity building. 
+Country ownership. The project is fully owned by the Government of Senegal and der ives from needs that have been 
+assessed by actors of  the sector. The project document has been  shared with all executing entities, and more broadly 
+with all stakeholders involved in flood management in Senegal. During the implementation of the project, those 
+discussions will continue in the framework of sessions of the C NGI that will serve as steering committee of the project. 
+The sessions of the CNGI will ben efit from inputs from sub-comp onent 4.2 of the project. 
+All those actions aim at ensuring mainstreaming of the concepts  of integrated flood management in the policy-making 
+process in Senegal, to ensure sustainable outcomes of the proje ct. Valorization of the project outcomes is also of utmost 
+importance as higher service quality and effective protection a gainst flood disasters will be a strong motivation for the 
+Government of Senegal to provide sufficient funding for the inv estment and operation in these fields. 
+Sustainable financial resources.  Drainage infrastructures and hydro-meteorological services fal l under government’s 
+responsibility. Public agencies are usually in charge of servic e provision. As these services are non-commercial public 
+services, subsidies are (and will remain) the main financing so urces, both for investment and operation. The main issue 
+is to clearly identify the recurring financial resources needs to comply with standard in service delivery and ensure that 
+related resources are secured ov er the years for the service op erator.  
+The first disbursement of the AFD loan will be conditioned to t he signing of a performance contract between the Republic 
+of Senegal and ONAS allowing adequate financial resource for ma intenance of drainage infrastructure on the 2015-
+2018-period. Both financial agreements for AFD loan and GCF gra nt will include a commitment by the Government of 
+Senegal to allocate annually sufficient funds in the State budg et to provide for the needs of (i) maintenance of the 
+drainage infrastructure and (ii) the integrated flood managemen t system. 
+Capacity building.  Capacity building is a key aspect to address the issue of sust ainability for integrated urban flood 
+management. Most executing agencies of the project will benefit  from capacity building ac tions that will ensure that 
+those entities internalize the pr ocesses initiated by the proje ct. 
+‐ MRUHCV: MRUHCV will be the main b eneficiary of c apacity buildi ng under the project, as the central entity in 
+charge of policy making for flood management. Sub-components 4. 1 and 4.2 will include trainings for MRUHCV 
+personnel to enhance the institut ion’s capability to implement the policy-making process and reinforce the 
+leadership of the ministry in terms of flood risk management. S ub-component 1.1 will ensure that MRUHCV 
+personnel are trained in adminis tration and update of the flood -risk GIS as well as its publicity.
+
+
+---
+*Page 26*
+---
+
+ 
+RATIONALE FOR GCF INVOLVEMENT 
+ GREEN CLIMATE FUND FUNDING P ROPOSAL | PAGE 22 OF 47 
+ 
+	
+	
+	D
+‐ ONAS: ONAS, as the central operator for drainage infrastructur e, will also benefit from capacity building actions. 
+Especially, under sub-component 2.3 financed by AFD, ONAS perso nnel will be trained in all tasks relative to 
+drainage infrastructure construction and operations: technical training sessions for maintenance of drainage 
+infrastructure, asset management and hydraulic modeling. Suppor t for the first maintena nce contract will also 
+be provided. Sub-component 3.2, financed by GCF, will specifica lly include training for the application of new 
+protocols in terms of drainage infrastructure operations in pre vention of major rain events. The capacity building 
+activities financed by GCF and AFD will strengthen ONAS’ role a nd skills in drainage management and 
+operations not only in regular mai ntenance but also in the cont ext of flood management and prevention.   
+‐ ANACIM and DGPRE: Both institut ions, respectively in charge of  meteorological and hydrological data 
+acquisition and monitoring, will benefit from technical capacit y building to ensure operation and maintenance of 
+all new equipment to be set-up in the framework of the project.  Specifically, ANACIM will benefit from (i) 
+enhancement of the meteorological model used for forecasting, g oing to finer detail at local scale, (ii) 
+modernization of measuring and data collection capacities. DGPR E personnel will be trained in terms of 
+hydrological monitoring of the main rivers of Senegal but also potentiometric level measurement in aquifer 
+systems where this element is critical for vulnerability assess ment and tidal gauges operation for coastal zones.
+‐ APIX: APIX is the only executing entity that will not benefit from specific capacity buildi ng, as its role is confined 
+to the drainage infrastructure construction, and that its impli cation in the sector is not structural. However, 
+specific support will be brough t in terms of social and environ mental impact management.
+
+
+---
+*Page 27*
+---
+
+ 
+EXPECTED PERFORMANCE AGAINS T INVESTMENT CRITERIA 
+ GREEN CLIMATE FUND FUNDING P ROPOSAL | PAGE 23 OF 47 
+ 
+	
+	E
+E.1. Impact Potential 
+Potential of the project to cont ribute to the achievement of th e Fund’s objectives and result areas  
+E.1.1. Mitigation / adaptation impact potential  
+The project will deliver signifi cant impacts regarding climate change adaptation, reducing vulnerability to floods caused 
+by expected increase in heavy ra infall events and elevation of sea-level.  
+Infrastructure for reduced vulnerability in existing cities.  Activities in Pikine Irrégulie r Sud will ultimately affect the  
+vulnerability of almost 300 000 people living in poor neighborh oods of the suburbs of Dakar, protecting most of them 
+from the effects of heavy rainfalls and resettling others in a safe and equipped site. The project will also have a high 
+impact on infrastructure planning for the rest of urban centers  in Senegal. Data production, infrastructure design criteria, 
+weather monitoring and will also be instrumental in sizing and operating future drainage infrastructure, or other climate-
+sensitive infrastructure. 
+Flood-resilient urban planning in new developments.  Flood risk assessment for the whole territory and specific 
+urban centers will be achieved and translated into the urban de velopment plans, making sure that most vulnerable 
+sites are declared no-build areas, and are dedicated flood-resi lient land use. For areas that are exposed to moderate 
+flood risk, the project will also ensure that recommendations a nd incentives are available to make housing more 
+resilient. The ultimate impact of these measures is to stop the  present surge in vulnerability of Senegalese urban 
+territory. 
+Flood risk awareness-raising. Developing a culture of risk management within public instituti ons and vulnerable 
+population has a potentially significant impact on vulnerabilit y, reducing casualties, health impacts, decreasing recovery 
+time after flood events. 
+Climate change adaptation of infrastructure.  The effects of climate change in the design of the drainage 
+infrastructure financed under sub-component 2.3 depends on the level of certainty of these effects: 
+‐ On the one hand, the effects of climate change on the sea-leve l rise – based on global data – are rather certain 
+and were taken into account in the design of the infrastructure . Indeed, the outlet was placed to take into account 
+a 50 cm sea-level rise, while t he hydraulic design ensures grav itational flow of collected storm water; 
+‐ On the other hand, the effects on  climate change on rain inten sity and frequency – based  on local data – is poorly 
+documented. The results of General  Circulation Models, describe d in section C.2., bring little information useful for 
+infrastructure design. One of the outputs of the project will b e to build knowledge, especially in Greater Dakar, on 
+the historical evolution of rai nfall and so will bring more inp ut for climate models. As a re sult, the standard 10-year 
+flood design has been chosen. 
+However, the principles of int egrated flood management are base d on the assumption that inf rastructural response to 
+floods is necessary but not sufficient. From this perspective, the 10-years return period design seems adequate for two 
+reasons: 
+‐ It will build resilience in a te rritory of extremely vulnerabi lity, where tremendous damages are caused by frequent 
+rainfall - 1.5-year return period; 
+‐ Whatever the design storm of the drainage infrastructure – and  i t s  c o s t  –  a  m a j o r  r e s i d u a l  r i s k  i s  s t i l l  t o  b e  
+considered. The integrated flood management principles consider  the risk as a whole and, based on the increased 
+knowledge of flood risk that will be produced, recommendations to deal with rain events that are not covered by the 
+drainage infrastructure will be issued: structural and non-stru ctural measures for flood risk reduction, real-time 
+hazard monitoring and response at the infrastructure management  level.	
+	
+E.1.2. Key impact potential indicator
+
+
+---
+*Page 28*
+---
+
+ 
+EXPECTED PERFORMANCE AGAINS T INVESTMENT CRITERIA 
+ GREEN CLIMATE FUND FUNDING P ROPOSAL | PAGE 24 OF 47 
+ 
+	
+	E
+GCF 
+core 
+indicators Expected tons of carbon dioxide equivalent (t 
+CO 2 eq) to be reduced or avoided (Mitigation 
+only) Annual Not applicable. 
+Lifetime Not applicable. 
+Expected total number of direct and indirect 
+beneficiaries (reduced vulnerability or increased 
+resilience); number of beneficiaries relative to 
+total population (adaptation only) Total 2 200 000 people at national scale, of 
+which 700 000 people live in Greater 
+Dakar. 
+Percentage 
+(%) 16% of the country population, 37% of 
+the Dakar Region population.  
+Other 
+relevant 
+indicators  Expected strengthening of institutional and regulatory systems  for climate-responsive planning 
+and development (PMF-A 5.0 and related indicator(s))  
+ Expected increase in  generation and use of climate information  in decision-making (PMF-A 6.0 
+and related indicator(s)) 
+ Expected strengthening of adaptiv e capacity and reduced exposu re to climate risks (PMF-A 7.0 
+and related indicator(s)) 
+ Expected strengthening of awarene ss of climate threats and ris k-reduction processes (PMF-A 
+8.0 and related indicator(s)) 
+Methodology.  The analysis of the project is made for a 35-years horizon. Si nce the project focuses on the floods in 
+cities, the geographical perimeter of the economic analysis inc lude twenty-five cities that were pre-identified by the 
+Senegalese Government as the most  flood-prone. To integrate the  changes over the years, four different periods of 
+nine years each were considered (years 0 to 8, 9 to 17, 18 to 2 6, 27 to 36). The consequences of the urban population 
+growth were included from year 9. The consequences of climate c hange were included from year 18. 		
+Potential damages were estimated  for four different return peri ods: 1.5 year (the estimated return period of the 2009 
+flood), 10 years, 100 years and an infinite return period (for which it was assumed that the project would not avoid any 
+damage).  
+Flooded surface was derived from available data in Dakar (after  the floods in 2005 and 2009) and in Saint Louis – 
+mainly digitalized maps. For other cities, the "flooded surface /urban surface" ratio calculated for Saint-Louis was used. 
+The urban population growth rate was considered equal to 3.9% a nd constant over time. 
+The indicators presented above correspond to an estimate of dir ect beneficiary of the flood risk management policy for 
+a rain event with a return perio d of 100 years (extreme event).  
+E.2.  Paradigm Shift Potential 
+Degree to which the proposed acti vity can catalyze impact beyon d a one-off project investment 
+E.2.1. Potential for scaling up and replication (Provide a nume rical multiple and supporting rationale)  
+The local-scale knowledge base on flood risk that will be devel oped for six pilot urban areas in sub-component 1.1 
+could be scaled-up at least to cov er the 25 urban centers that were identifies by the Government of Senegal as flood-
+prone in the National Program for Development and Restructuring  of Flood Zones ( Programme National 
+d’Aménagement et de Restructuration des Zones Inondables – PNARZI ). 
+In addition, the project is highly replicable at the regional l evel. Setting up an integrated urban flood management in 
+Senegal will be a milestone in the disaster risk management at the regional level and could be replicated in other 
+countries, especially at the regional scale.  
+E.2.2. Potential for knowledge and learning
+
+
+---
+*Page 29*
+---
+
+ 
+EXPECTED PERFORMANCE AGAINS T INVESTMENT CRITERIA 
+ GREEN CLIMATE FUND FUNDING P ROPOSAL | PAGE 25 OF 47 
+ 
+	
+	E
+Presently, the knowledge base on risks and vulnerability of the  Senegalese territory is insufficient and does not allow 
+a rational risk management and investment planning. It is cruci al to build a real database going down to the local scale 
+and based on homogeneous measurement and projection protocols t o promote an integrated flood management 
+policy.  
+Better knowledge of the effects of climate change, as well as t he vulnerability of the population to these effects, is a 
+fundamental part of adaptation. One of the objectives of the pr esent project is to produce additional data and 
+assessments at national and local scale. This knowledge will be  used for operational decision-making in the framework 
+of the project but will also a llow better under standing of the flood risks dynamics linked to  climate change in the short, 
+medium and long-term. GCF contribution to the project is thus a ll the more relevant as the production of climate 
+information is greatly needed at national, but also regional (S enegal River Basin) and global level (IPCC) in order to 
+increase climate change knowledge and climate-sensitive infrast ructure planning. 
+The tools developed in the framework of the project will act as  the link between meteorological and hydrological data 
+production – which can be used for other purposes – and flood r isk mitigation measures at local scale. For instance, 
+the project will greatly benefit  from the implementation of the  Hydromet Program designed by the World Bank to support 
+knowledge acquisition on meteor ological and hydrological phenom ena at national and regional level.  
+Moreover,  an impact evaluation of the project after its completion would certainly be instrumental in diffusing lesson-
+learnt from the implementation of an integrated flood managemen t policy in West Africa, in the perspective of large 
+scale replication. 
+E.2.3. Contribution to the creat ion of an enabling environment  
+The whole project is directed to the creation of an enabling en vironment for cost-efficient public expenditure in drainage 
+infrastructure and flood risk management. For existing urban ce nters, the increase in knowledge about flood-risk, its 
+precise location and potential impact, will have a positive eff ect on the benefits of investment in the sector as well as 
+management of drainage infrastruc ture and eventually on protect ion of human life and economic assets on the territory. 
+However, the main positive imp act will be linked to the limitat ion of increased vulnerabilit y when adequate integration 
+of flood risk in urban planning will limit public and private i nvestment on risk-prone areas.  
+By setting up clear priorities at the national scale, taking in to account projected urban development as well as impacts 
+of climate change, the project will create an enabling environm ent for more efficient public investment in drainage 
+infrastructure, which constitute s a major expense for the State  budget in the coming years. 
+E.2.4. Contribution to regulatory framework and policies 
+In terms of drainage infrastructu re, the project will help in c larifying the institutional fra mework and give to ONAS the 
+means and resources to complete the missions it has newly been assigned as the lead institution in this sector. 
+Whereas multiple actors were inv olved in the construction of dr ainage infrastructure, the road-map endorsed in 2013 
+by the Government of Senegal appoints ONAS as the sole institut ion responsible for drainage works and maintenance. 
+The project will seek complete im plication of ONAS in sub-compo nent 2.3 and will bring tec hnical support to ONAS to 
+reinforce the institution’s ca pacity. In addition, the sectoria l dialogue initiated by AFD under the instruction of this proje ct 
+will strengthen the overall framew ork for action in the field o f storm water management, which still requires 
+consolidation. The condition precedents and commitments of the Government of Senegal linked to the AFD financial 
+agreement will aim to ensure the financial resources dedicated to these activities. 
+In terms of integrated flood management, the project will also support MRUHCV’s position as lead entity in the sector. 
+The political dialogue that will be initiated in the framework of the project, in the Project Technical Committee or the 
+Steering Committee (CNGI) will help to mainstream integrated fl ood management policy-making. 
+Last but not least, in terms of urban planning, the project wil l also see to the provision of tools for climate-sensitive 
+urban planning, most notably a t the local level, through integr ation ex-ante of flood risk as well as tools to enforce no-
+build areas and reinforcement of r esilience in housing in areas  exposed to moderate risk.
+
+
+---
+*Page 30*
+---
+
+ 
+EXPECTED PERFORMANCE AGAINS T INVESTMENT CRITERIA 
+ GREEN CLIMATE FUND FUNDING P ROPOSAL | PAGE 26 OF 47 
+ 
+	
+	E
+E.3.  Sustainable Development Potential  
+Wider benefits and priorities 
+E.3.1. Environmental, social and ec onomic co-benefits, includin g gender-sensitive development impact  
+Floods have direct impact on human life, health, economic asset s and activity, land value and social well-being4. 
+Human life and health. Two-thirds of human life losses related to floods are caused by  drowning whereas other 
+causes (trauma, electrocution, fire, poisoning) account for one  third casualties. Water-borne diseases tend to thrive 
+during flood events, especially where sanitation and solid wast e management services are not efficiently provided to 
+the population. Death caused by these diseases can occur after the event, thus are not recor ded as directly related to 
+the disaster. Poor people are especially vulnerable to these ef fects of flood as they do not benefit from proper civil 
+protection, health services and sanitation. For instance, flood s over the past few years have contributed to cholera 
+resurgence in Senegal. Between 2005 and 2008, more than 35 000 people have been affected by the disease at 
+national scale and almost 500 people died.  
+Economic assets. Floods can have a devastating effect on housing and households,  as well as industrial assets and 
+public infrastructure. Economic assets vulnerability might be d ifficult to measure and monitor, especially when the 
+urban fabric is not stabilized. I n the Greater Dakar Metropolit an Area alone, exposure and vulnerability of economic 
+assets is estimated to reach 44 billion USD5. The 2009 flood has generated the immobilization of 43% of the  public 
+transportation vehicle fleet in Dakar. Approximately 50 bus con nections have been canceled for large periods of time 
+due to heavy rain events. These public transport interruptions have caused an estimated loss of income of 2 billion 
+FCFA. The project, through its vulnerability assessment will ev aluate the potential economic damages caused by floods 
+in Senegalese cities. 	In addition to the reduction of damages, the project will also generate local jobs creation: for 
+instance, GIS engineers are neede d for creating and updating th e GIS layers planned in Component 1.1. Component 
+1.2 may also result in job creat ion to lead awareness campaign.  
+Economic activity. In addition to damages to economic assets, floods tend to freez e economic activity by causing 
+interruption in the supply chain due to transportation problems . Damages to stock and reduced customer visits and 
+sales are also common effects.  
+Land value.  Another positive economic impac t of flood vulnerability reduct ion is land value increase. Special attention 
+needs to be paid to the beneficiary of this gain, in particular  in poor neighborhoods where land property might not be 
+registered. APIX is currently w orking on those issues in the fr amework of the projects it is leading on urban 
+restructuration. 
+Social well-being.  Social benefits are significant, with improved health, safety and living conditions, especially for 
+population in poor settlements, thus contribution to reduction of social inequalities.  In particular, women are the first to 
+be affected by social damages cau sed by disasters as flood even ts. Reducing this risk sha ll contribute to bridging the 
+gender gap. Moreover, floods also affect education, which still  represents a key sector for the achievement of 
+development challenges in Senegal. In 2009, flood affected more  than 250 schools at the national scale. In the Thiaroye 
+locality of Greater Dakar, 57 schools were flooded and 32 were used as shelters for i nhabitants of flooded houses.  
+E.4. Needs of the Recipient  
+Vulnerability and financing needs of the beneficiary country an d population 
+E.4.1. Vulnerability of country and beneficiary groups  
+																																																													
+4 Most of specific data on Senegal are extracted from: Rapport d’évaluation des besoins post- catastrophe – Inondations urbaines à 
+Dakar 2009, Government of Senegal and GFDRR, 2010,  
+5 Source: Senegal Dashboard Natural Hazards, World Bank 
+http://sdwebx.worldbank.org/clim ateportalb/home.cfm?page=countr y_profile&CCode=SEN&ThisTab=NaturalHazards
+
+
+---
+*Page 31*
+---
+
+ 
+EXPECTED PERFORMANCE AGAINS T INVESTMENT CRITERIA 
+ GREEN CLIMATE FUND FUNDING P ROPOSAL | PAGE 27 OF 47 
+ 
+	
+	E
+Senegal is still one of the least developed countries according  to the United Nations. However, poverty rate has 
+decreased: the share of the popul ation living on less than 1.25  USD a day fell from 66% in 1991 to 34 % in 2011, 
+though according to national standards, 46.7% of the population  was still under the poverty line in 20116. Senegal 
+ranks 154 out of 186 in  the Human Development Index classificat ion. 
+Floods affect the poorest residents, those who tend to live in underequipped and low-lying periurban areas. With the 
+projected demographic growth of Senegal (44% of the population is under 15) and the mushrooming urban population, 
+the social problems associated to floods is expected to increas e. 
+Presently, rain events with a 1.5 year return period is causing  major damages. As climate change will most likely 
+increase frequency of major rain events, increased impact on po orest population is to be expected. Sea-level elevation 
+will also aggravate the problem in  coastal cities like Dakar or  Saint Louis.  
+Feasibility of the project identifies the main gaps that need t o be bridged in order to build-up resilience to floods, in a 
+context of climate variability: 
+1. Knowledge of watershed and groundwater tables ; 
+2. Knowledge of land use and  associated stakes ; 
+3. Knowledge of rain events and hazards; 
+4. Integration of flood risk a ssessment in urban planning; 
+5. Drainage infrastructure design and planning; 6. Crisis and post-crisis management; 
+7. Meteorological prevision; 
+8. Inter-institutional cooperation. 
+This analysis concurs with the 2011 WB-GFDRR Senegal country pr ofile identified the information and data 
+gaps. First and foremost, many gaps exist in flood prevention and res ponse, including a lack of detailed forecasts and 
+risk zone maps, and suitable flood vulnerability assessment met hods and data collection systems. Building such a 
+system could offer guidance on co st-effective solutions for res ilience at the national level.  
+E.4.2. Financial, economic, social and institutional needs  
+Financial needs. Needs for investment are high – the INDC that was submitted by the Government of Senegal in 
+September 2015 evaluates the am ount of climate change adaptatio n investment in flood risk mitigation at 2.136 billion 
+USD, of which 1.976 billion USD from external financing. For Gr eater Dakar alone, estim ates from the Drainage 
+Masterplan show that at least 20 0 million USD worth of investme nt are required. Experience in detailed study for 
+drainage in some area s of the suburbs of D akar shows that those  estimates are greatly underestimated. 
+Senegal is still nowadays among t he list of the Least Developed  Countries according the United Nations, but on the 
+middle-income countries according to World Bank criteria. After  retaking a promising trajectory in the first half of the 
+2000s, Senegal's growth has been slowing down since 2006. In th e second part of the decade, growth was reduced 
+to an annual average of 3.3 %, a pace barely above that which p revailed between 1980 and 1994 and that is equal to 
+population growth. The multiple s hocks (energy, food, financial ) that the country has suffe red, and the limited number 
+of growth sectors have prevent ed Senegal’s economy to take-off.  
+There is therefore a strong financ ial need to comply with the c ommitments of the Senegalese Government in terms of 
+investment in infrastructure. One of the objectives of the proj ect is to make sure that each investment is done with 
+maximum efficiency and that every  other possible way to build-u p resilience to floods  have been tried. 
+Social need. In Dakar and other urban center s, people most vulnerable to flo od risk are situated in new and/or informal 
+urban areas where unplanned urban development have not taken in to account the hydrological dynamics of the terrain. 
+They are usually poorest people who (i) have come from rural ar eas or (ii) were progressively pushed from old urban 
+																																																													
+6 Source: World Bank Development Indicators
+
+
+---
+*Page 32*
+---
+
+ 
+EXPECTED PERFORMANCE AGAINS T INVESTMENT CRITERIA 
+ GREEN CLIMATE FUND FUNDING P ROPOSAL | PAGE 28 OF 47 
+ 
+	
+	E
+centers to suburbs. With Senegalese cities growing at a rate of  3.9% per year, there is a significant social need to 
+mainstream flood risk policies in urban management. 
+Institutional need. Floods have been a major issue in Senegal since 2005 and after a phase of emergency response 
+by the Government of Senegal – which involved many institutions  in the development of flood management measures, 
+mainly through infrastructure co nstruction – the flood manageme nt sector is now at a turn ing point. Indeed, floods are 
+now a consistent trend of recurri ng events, especially in urban  centers. There is thus a need to consolidate the 
+institutional framework of fl ood-risk management in Senegal. 
+E.5.   Country Ownership  
+Beneficiary country (ie s) ownership of, and capacity to impleme nt, a funded project 
+E.5.1. Existence of a national c limate strategy and coherence w ith existing plans and polic ies, including NAMAs, 
+NAPAs and NAPs  
+Senegal produced a National Adaptation Program of Action (NAPA)  in 2006, which details the country’s priority 
+adaptation responses. These include: reforestation, restoration  of mangrove swamps, biol ogical stabilization of sand 
+dunes, physical protection against beach erosion and saline int rusion (using ditches, barriers, or other protection 
+means), irrigation projects, restoration of soil fertility, wat er conservation methods, us e of alternative crops, and 
+improved education on adaptation. 
+In 2010, Senegal submitted its second national communication to  the United Nations Framework Convention on 
+Climate Change (UNFCCC). This communication defines an adaptati on strategy in order to foster a more 
+comprehensive management of aspects related to climate change. This strategy is focused on three strategic areas: 
+(i) development of knowledge on the effects of climate change a nd transfer of appropriate technologies, (ii) 
+strengthening prevention and the fight against shocks and (iii)  promoting sustainable management of natural 
+resources. The second area explic itly mentions recommendations for intervention in the housing sector: “ Investments 
+to improve living conditions in areas often affected by flooding is important for vulnerable populations. Therefore, 
+strengthening rainwater drainage networks, effective implement ation of urban plans and social housing strategies are 
+recommended in order to protect people against the flood risks .” (Second national communication). The project 
+addresses both strategic areas regarding development of knowled ge and strengthened prevention. In particular, the 
+recommendation regarding investm ent is fully addressed, through  optimizing cost-effectiveness  
+Senegal has also submitted in September 2015 its Intended Natio nally Determined Contributions (INDC) with the 
+support of Germany (through GIZ) , France (through the INDC Faci lity) and the Global Environment Facility. French 
+support was focused on the economic analysis of adaptation and mitigation measures of the  INDC, in order to ensure 
+their integration in the national development plan ( Plan Sénégal Émergent ). Investment to reduce vulnerability to floods 
+is one key feature of adaptation measures considered in the IND C – the amount of investment needed for the 2016-
+2035 period is 2.136 billion USD, 1.976 billion USD being sough t from external financial resources. The project will 
+directly contribute to these objectives (i) directly through su b-component 2.3 which includes investment in drainage 
+infrastructure and (ii) indirectly though long-term measures th at will help increase cost-effi ciency of investment in 
+infrastructure and lead to long term strategies for vulnerabili ty reduction. 
+  
+E.5.2. Capacity of accredited entit ies and executing entities t o deliver  
+Accredited entity.  AFD has been active in Senegal for more than 70 years and fina nces project in various sectors 
+according to the priorities set by the Government of Senegal. I n the water, sanitation and drainage sector, AFD currently 
+has a 70 M€ living portfolio, that should grow to 200 M€ before  the end of 2016. AFD leads, along with the European 
+Union, the political dialogue between donors and the Government  in the urban water and sanitation sector.
+
+
+---
+*Page 33*
+---
+
+ 
+EXPECTED PERFORMANCE AGAINS T INVESTMENT CRITERIA 
+ GREEN CLIMATE FUND FUNDING P ROPOSAL | PAGE 29 OF 47 
+ 
+	
+	E
+Drainage and integrated flood management one of four areas of o peration in AFD’s sectorial strategy. Across Sub-
+Saharan Africa, AFD has a portfolio of more than one billion eu ros in drainage projects. AFD also has a long track 
+record in assisting Trans-boundary Basin Organizations, such as  OMVS (Senegal), CICOS (Congo), ABN (Niger), with 
+the aim of strengthening operational hydrological monitoring in  a perspective of Integrated Water Resources 
+Management (IWRM) promotion. 
+At a global level, AFD has been accumulating significant climat e finance experience for over 10 years. Since 2005, 
+AFD has allocated more than 17 billion euros (2.9 billion euros  in 2014) for climate-smart development projects and 
+activities. In 2011, AFD formally  reflected the growing importa nce of the fight against climat e change in its activities by 
+adopting a core operational climate strategy: AFD 2012-16 Clima te & Development Action Plan. This strategy is based 
+on three pillars including: (i) an ambitious objective to alloc ate at least 50% of its annual financial commitments to 
+activities that have positive climate co-benefits on mitigation  and/or adaptation, (ii) a systematic portfolio-wide 
+measurement of climate impacts, through carbon footprint and re silience risk assessments, and (iii) project selectivity 
+according to their impacts on climate change. 
+In Senegal, AFD climate change portfolio since 2007 includes 9 projects for a total amount of 104 million Euros : 
+‐ 6 adaptation projects, mainly in the agricultural sector; 
+‐ 2 mitigation projects; 
+‐ 1 project addressing both adaptat ion and mitigation objectives.  
+AFD has a local office in Dakar, which is in charge of ensuring  correct communication and coordination with local 
+project sponsors. 
+Executing entities. The five executing agencies were selected according to (i) the correspondence of their mandate 
+with the activities under their responsibility in the project b ut also (ii) their capacity to deliver.  
+‐ MRUHCV: MRUHCV is composed of var ious Directorates which have d ifferent roles and lead different types 
+of project. In terms of flood ri sk management, two main Directo rates are involved: (ii) the Directorate of Urban 
+Planning and Architecture, for preventive flood-risk reduction actions at urban planning level and (ii) the 
+Directorate of Flood Zones Rest ructuration, for curative flood- risk reduction actions on existing urban fabric. 
+Both Directorates have led si milar projects in the past.  
+‐ ONAS: The core activity of ONAS is building and operation of sa nitation systems, which will be the main activity 
+under its responsibility in the project, along with some capaci ty building activity. As an operational structure, 
+ONAS has teams specialized in p roject management and procuremen t. 
+‐ ANACIM and DGPRE: Both institutions are specifically responsibl e for the operation of respectively the 
+meteorological and hydrological data production and monitoring system. They employ skilled engineers 
+specialized in those domains. They  have led similar projects in  the past.  
+‐ APIX: APIX is an experienced pro ject sponsor that has successfu lly led large scale complex projects (for 
+instance the Dakar-Diamniadio highway).  
+For all of the executing entities, the risk of inefficient impl ementation is mitigated by sub-component 4.3, which purpose 
+is to provide expert support to  project implementation. 
+E.5.3. Engagement with civil societ y organizations and other re levant stakeholders  
+Engagement of the local authorities will also be critical in th e implementation of an integrated urban flood management 
+policy framework and will be sought through Project Management Assistance and communication to CRDI and CDGI7.
+																																																													
+7 See section C.7 for more details on those committees.
+
+
+---
+*Page 34*
+---
+
+ 
+EXPECTED PERFORMANCE AGAINS T INVESTMENT CRITERIA 
+ GREEN CLIMATE FUND FUNDING P ROPOSAL | PAGE 30 OF 47 
+ 
+	
+	E
+Civil society was also engaged in the elaboration of the Enviro nmental and Social Management Plan as well as the 
+Resettlement Action Plan for drainage infrastructure in Pikine Irrégulier Sud. The NGO ENDA is in charge of 
+implementing the resettlement actions directly with the populat ion.  
+Also, sub-component 2.3 will include Information, Education and  Communication (IEC) services aimed at Pikine 
+Irrégulier Sud populations – with a special focus on women and their needs – and will involve other stakeholders, 
+including municipalities and ci vil society. It has the ambition  to deal with two subjects: 
+‐ On the one hand the acceptance a nd protection of drainage infr astructure – the service will include 
+communication efforts with the public to (i) present and explai n the project and its objectives (ii) ensure the 
+protection of infrastructure dr ainage, among others against the  infiltration of wastewater and solid waste. 
+Regarding wastewater, beyond promoting public network connectio n, the provision will also aim to highlight 
+the on-site sanitation solutions  implemented by the Structuring  Fecal Sludge Market Program, funded by the 
+Bill and Melinda Gates Foundation.  
+‐ On the other hand, the service will lead consultations with lo cal population on the development of retention 
+ponds. A consultation will be conducted with residents living n earby projected retention ponds to define the 
+development of the surroundings of these basins that best fits the aspirations of the inhabitants of these 
+neighborhoods. These adjustments can then be made as part of th e works of Sub-component 2.3 of this 
+project. 
+E.6.  Efficiency and Effectiveness  
+Economic and, if appropriate, fi nancial soundness of the  proje ct 
+E.6.1. Cost-effectiveness and efficiency  
+The whole project has been designed to increase cost-efficiency  and effectiveness of future investment in flood risk 
+mitigation in Senegal. Moreover, procurement procedures, based on international open competitive bidding, aim at 
+cost-effectiveness. Through proje ct implementation, and especia lly the regular meeting of the CNGI, duplicates will be 
+avoided. 
+Infrastructure.  Infrastructure under sub-component 2.3 has been engineered to ensure maximum cost-efficiency of 
+the investment in terms of popul ation protection against flood events. Indeed, retention p onds are designed to reduce 
+flow capacity of evacuation c hannels down-stream, by cutting pe ak flows – thus drastically r educing civil works costs. 
+This approach has been subject to a global validation through t he Drainage Master Plan for Dakar Region and to 
+detailed design during project preparation. Moreover, the whole  system has been designed to let water flow 
+gravitationally, thus avoiding pum ping and associated energy co sts. 
+Mapping. Flood risk mapping, as proposed in sub-component 1.1, requires the elaboration of a DTM that might be 
+costly. The proposed technique is based on satellite imaging, w hich is usually cheaper than other techniques, including 
+airborne laser telemetry. 
+Radar.  The real-time monitoring system o f meteorological events in Gr eater Dakar, based on X-band radar and loose 
+network of rain gauges is more efficient and less costly than m ost traditional systems that require greater quantity of 
+rain gauges or larger radars. 
+E.6.2. Co-financing, leveragi ng and mobilized lo ng-term investm ents (mitigation only)  
+The ratio between GCF grant and total amount of the project is 21%.  
+E.6.3. Financial viability  
+Flood risk management is a non-merchant public service that doe s not generate cash-flow for public authorities. As 
+such, there is no financial viab ility to be expected from the p roject.
+
+
+---
+*Page 35*
+---
+
+ 
+EXPECTED PERFORMANCE AGAINS T INVESTMENT CRITERIA 
+ GREEN CLIMATE FUND FUNDING P ROPOSAL | PAGE 31 OF 47 
+ 
+	
+	E
+E.6.4. Application of best practices  
+The project was designed according to good practices in the fie lds of disaster risk management. It follows the 
+recommendations of the Sendai Framework for Action, and the Wor ld Bank “Guide to Integrated Urban Flood Risk 
+Management for the 21st century”. 
+In terms of technical best pract ices, the project will ensure t o provide the best quality-inve stment ratio in a perspective 
+of long term sustainability through: 
+‐ Best available GIS software; 
+‐ Appropriate and up-to-date technologies for hydrological and me teorological data production, processing and 
+transmission. 
+ 
+E.6.5. Key efficiency and effectiveness indicators  
+GCF 
+core 
+indicators Estimated cost per t CO 2 eq, defined as total investmen t cost / expected lifetime emiss ion reductions 
+(mitigation only)  
+Not applicable.  
+Expected volume of finance to be leveraged by the proposed proj ect and as a result of the Fund’s 
+financing, disaggregated by public a nd private sources (mitigat ion only) 
+Not applicable.  
+Other relevant indicators (e.g. e stimated cost per co-benefit 
+generated as a result of the project) Not applicable.
+
+
+---
+*Page 36*
+---
+
+ 
+APPRAISAL SUMMARY 
+ GREEN CLIMATE FUND FUNDING P ROPOSAL | PAGE 32 OF 47 
+ 
+	
+	F
+F.1.  Economic and Financial Analysis  
+Economic Analysis. An economic analysis of the project has been made to evaluate c osts and benefits generated by 
+the implementation of the projec t, compared to a situation with out the project. According to  standard methodology, the 
+benefits are evaluated as avoided damages (now and in the futur e). 
+The economic analysis is made for a 35 years horizon time. 	Since the project focuses on the floods in cities, the 
+geographical perimeter of the economic analysis include 25 urba n centers that were pre-identified by the Senegalese 
+Government as the most flood-pr one areas. Damages caused by flo ods were estimated for four different return periods: 
+1.5 year (the estimated return period of the 2009 flood event),  10 years, 100 years and an infinite return period (for 
+which it was assumed that the project would not avoid any damag e). 
+According to the economic analysis, the project’s breakeven poi nt is reached nine year after the project starting date. 
+This economic efficiency of t he project can be explained by: 
+‐ Significant damages reduction fo r very frequent floods in Pikin e Irrégulier Sud, thanks to the construction of 
+drainage infrastructures; 
+‐ Significant reduction of damages for most of the floods in Sene gal thanks to a better urban planning. Indeed, 
+the urban population growth in Senegal is very important, resul ting in a demographic pressure in cities. Without 
+the project, the urban population increase would lead to an inc rease in population living in flood prone areas, 
+and consequently, to an importa nt increase in damages. 
+The internal economic profitab ility rate is estimated to reach 28%. 
+Financial Analysis.  Flood risk management is a non-merchant public service that do es not generate direct cash-flow 
+for the public authorities. As su ch, there is no financial retu rn on investment to be ex pected from the project.  
+F.2.  Technical Evaluation   
+Technical solutions for hard-engineered drainage infrastructure  in Pikine Irégulier Sud have been designed to fit the 
+guidelines that are laid in the Drainage Master Plan for Greate r Dakar. Those guidelines are based on the principle of 
+systems composed of retention ba sins that cut the peak flows an d drainage canals to evacuate storm water to the outlet 
+(see section E.6.1 for cost-efficiency of this solution). The i nfrastructure’s detailed design has been validated by the 
+Project Sponsor’s executing agency’s technical team (APIX). It has been revised and approved by the Engineer that 
+has been recruited for works su pervision, including revision of  the hydraulic model. 
+The design storm that has been used to elaborate detailed desig n of the infrastructure is based on the data available 
+since 1896 from the Yoff meteorological station (placed next to  Dakar’s airport). From this per spective, the infrastructure 
+was designed for a 10-years return period. This return period i s standard in Senegal and is sufficient to protect most of 
+the population from most flood events, even in the context of c limate change that is expected to increase the frequency 
+of intense rain events. It shoul d be reminded at this point tha t the rain event that caused the disastrous flood events 
+that occurred in 2009 has been ev aluated to have a very short r eturn period: 1.5 year.  
+The outlets have been places 50 centimeters higher than present ly necessary to take into account the elevation of sea 
+level due to climate change. Even with this constraint, the inf rastructure will let storm water flows gravitationally through 
+the channels.  
+  
+ 
+  
+F.3.  Environmental, Social Assessment, including Gender Consideratio ns
+
+
+---
+*Page 37*
+---
+
+ 
+APPRAISAL SUMMARY 
+ GREEN CLIMATE FUND FUNDING P ROPOSAL | PAGE 33 OF 47 
+ 
+	
+	F
+The GCF-funded sub-components of the project will not have any negative impact on environm ental, social and gender 
+aspects, as it consists mainly of capacity building and institu tional work. The main impacts to be expected are related 
+to component 2.3, financed by AF D and the Government of Senegal . 
+Environmental and Social Impact Assessment.  An Environmental and Social Im pact Assessment (ESIA) has been 
+made in 2013 for the drainage infrastructure which is the proje ct activity with major impacts, and that will be financed 
+under sub-component 2.3. The ESIA was carried out as part of th e Pikine Irregulier Sud rest ructuration project, which 
+comprises the drainage project under consideration as well as s treet rehabilitation and social equipment components 
+being currently implemented under a separate World Bank and AFD  financing. The ESIA is included as an annex to 
+the present Funding Proposal. It includes an effective consulta tion process, an ESMP that ensures proper monitoring 
+of E&S issues and mitigation me asures throughou t the process. 
+Impact analysis showed significant positive impacts during the life-cycle of the drainage infrastructure and some 
+negative impacts during the construction phase, which can be mi tigated with the implementation of the proposed 
+mitigation measures. The measures were detailed in the ESMP for  their implementation and monitoring. The ESMP 
+also contains a book of Environmental and Social Clauses that w ill be included in the tendering documents. The 
+application of all the environmental and social measures that w ill be retained in the tendering documents should be 
+systematic for full respect of the principles of preservation a nd protection of the environment.  
+The impacts during construction phase are addressed in the ESMP  which recommends different mitigation measures 
+to minimize impacts on the physical environment (soils, air, wa ter, flora, fauna and wastes) and social-economic 
+environment (health, safety, job creation, transport, business,  housing and livelihood), both during construction and 
+operational phases. The ESMP includes training and awareness pr ogram on health (including STDs such HIV) and 
+safety (security, accident prevention) working conditions for w orkers, contractors and project owner. Adequate safety 
+gear and equipment will be provided to all workers employed by the project. The ESMP also proposes solutions to 
+promote sound resour ces management, especially energy and water . 
+For the wastewater collection infrastructure under the sub-comp onent 2.3, studies will be carried out in the coming 
+months that will also include an E&S impact assessment. The val idation by AFD of the ESIA regarding that part of sub-
+component 2.3. is a condition precedent to the disbursement of the funds relative to the construction of the wastewater 
+collection infrastructure as per AFD-Government of Senegal fina ncing agreement. According to AFD’s procedures the 
+ESIA must meet World Bank’s standards. 
+Wastewater management impact.  Currently, people living in Piki ne Irrégulier Sud are mainly e quipped with latrines 
+or septic tanks, which operation is greatly disturbed by the pr esence of the water table close to the surface. This can 
+cause the pits to overflow. The consequences in terms of pollut ion of the water table and unhealthy conditions of the 
+area are significant. The evacuation of rain water and lowering  of the water table provided under Sub-component 2.3 
+should greatly improve the situation. 
+However, previous experience in storm water drainage in Dakar s how that a significant risk of intrusion of wastewater 
+into storm drains networks must be taken into account especiall y as the majority of outlets of Pikine Irrégulier Sud 
+drainage system bring the water to Hann bay, which is a very fr agile ecosystem that the Government of Senegal is 
+trying to decontaminate.  
+Sub-component 2.3 includes wastewater collection infrastructure  that will essentially protect  drainage infrastructure 
+against illegal connections. It is not intended to finance indi vidual connections, which is usua lly not a problem in Greater 
+Dakar. However, the possibility of arranging for local resident s to access the sewer netwo rks for dumping gray water 
+will be assessed. The wastewater collection infrastructure will  be connected the Hann bay treatment system that is 
+planned to begin operation in 2018. 
+ 
+Social impact.  The Resettlement Action Plan (RAP) for sub-component 2.3 was d eveloped in the framework of the 
+overall urban restructuration project in Pikine Irrégulier Sud (Cf. above). It was developed according to national
+
+
+---
+*Page 38*
+---
+
+ 
+APPRAISAL SUMMARY 
+ GREEN CLIMATE FUND FUNDING P ROPOSAL | PAGE 34 OF 47 
+ 
+	
+	F
+standards and in accordance with the principles of the World Ba nk8. The RAP has also been the subject of consultations 
+with the people concerned. In the c ontext of drainage works in Pikine Irrégulier Sud, people who need to be resettled 
+are mostly people living in the areas to be developed as retent ion ponds. These basins are located on low topographic 
+area, and are the first site to be flooded. They are therefore the most vulnerable population. The first estimate of the 
+number of Project Affected People adds up to 700. This number w as determined through extensive field survey by local 
+authorities during the elaboration of the RAP but might be slig htly modified during implementation. The most probable 
+evolution in the number is a dec rease, as people tend to leave their houses. The execution of the Pikine Irregulier Sud 
+project RAP is currently on-going and is being subject to imple mentation reports el aborated by APIX.  
+Any person affected by the project is entitled to a compensatio n payment of damages incurred on the basis of a 
+compensation matrix by type of  loss, according to the Senegales e and international standards. The compensation 
+process is monitored by the Operational Group of Dakar, whose t asks are information and sensitization of the 
+populations affected by the project, identification, assessment  and payment of compensation, and resettlement of the 
+population. A resettlement zone covering an area of 165 ha has been built in Tivaouane Peulh, in the municipality of 
+Rufisque. This zone of Greater Dakar is currently undergoing ma jor urbanization, with housing being established and 
+several resettlement projects. The plots have connection to the  ele ctri city grid, acce ss to cl e an wate r, wa stewater 
+collection infrastructure as we ll as social facilities (places of worship, schools, health centers). The resettlement process 
+is being monitored by APIX. 
+The RAP’s budget is estimated at 6 million euros for the draina ge infrastructure and will be fully financed by the 
+Government of Senegal. Registration in the State budget of the necessary funds has been set up as a condition 
+precedent to the disbursement o f AFD fund as per the AFD-Govern ment of Senegal financing agreement.  
+Gender issues. Gender equality has been integrated in the appraisal documents,  the Environmental and Social Impact 
+Assessment (ESIA) and especially i n the Resettlement Action Pla n (RAP).  
+The RAP found out that there is an important gender disparity w ith respect to property and land ownership. The 
+identified assets to be lost under the project are mainly owned  by men while women represent a small share of the 
+people directly affected. Woman headed households represent 20%  of the households affected and have been 
+identified as vulnerable. According to World Bank Operating Pro cedure OP 4.12, an elaborat e vulnerability scheme has 
+been set up to identify vulnerable PAPs (women, children, elder ly, people with disabilities, etc .) who are entitled to more 
+comprehensive compensations and assistance throughout the reset tlement process whether  it is for dwellings or 
+commercial activities that are impacted. For example, single wo men headed households are being given priority access 
+to housing as well as commercial concessions. 
+The ESIA takes into account how the project, during its constru ction phase, will affect men and women in a differentiated 
+manner, mostly because of their respective economic activity. F or example, small shops and especially restaurants 
+employ more women, while small i ndustries and craftsmanship mos tly employ men. The ESIA also recognizes gender 
+as a factor contributing to vulnerability and the fact that flo oding problems affect more vulnerable people. Flood events 
+and lack of appropriate sanitation services have significantly more impacts on women, as they bear most of the burden 
+of health problems caused by stagnating unhealthy water. 
+The Environmental and Social Management Plan contains measures such as strengthening working skills of women, 
+aimed at increasing the project positive impacts towards women,  including their access to jobs created by the projects.
+More importantly, gender aspects will be dealt with specificall y during project implementation. Indeed, gender issues 
+will be included in three of the project’s sub-components: 
+‐ Sub-component 1.2: Flood risk awareness campaigns will have a s pecial focus on gender issues, to prevent 
+specific risks on women and children. 	The diagnosis in terms of gender in relation to flood risk will  be realized 
+																																																													
+8 Please refer to the World Bank ’s Operational Policy OP 4.12 Involuntary Resettlement  for further details on RAP methodology.
+
+
+---
+*Page 39*
+---
+
+ 
+APPRAISAL SUMMARY 
+ GREEN CLIMATE FUND FUNDING P ROPOSAL | PAGE 35 OF 47 
+ 
+	
+	F
+as part of the services of flood-risk awareness campaign, based  on extensive field surv eys, and the strategic 
+program of the campaign will be designed ac cordingly. 
+‐ Sub-component 2.1: The role of women will be taken into account  in the non-structural measure 
+recommendation that will be issued in the framework of the proj ect. Gender-specific measures will thus be 
+issued. 
+‐ Sub-component 2.3: The Information, education and communication  (IEC) services that will be financed as part 
+of sub-component 2.3 in Pikine Irrégulier Sud will also specifi cally target women as they have a pivotal role in 
+health risk prevention, waste and wastewater disposal. As descr ibed in detail in section E.5.3., the IEC services 
+will address acceptance of the dr ainage and sanitation infrastr ucture as the options for developments around 
+retention ponds (parks, spor t facilities) that best fits the as pirations of the inhabitant s of these nei ghborhoods. 
+F.4.  Financial Management and Procurement 
+The complete financial resources of the project will be passed on to the Senegalese executing entities, as described in 
+section C.7. The financial management and procurement on the pr oject, including financial accounting, disbursement 
+methods and auditing will be deta iled in the financing agreemen t that will be finaliz ed after the Board’ s approval. It will 
+be consistent with AFD’s inter nal procedures that have been app roved through GCF’s accreditation. 
+Procurement.  All procurement related to the project’s components financed o r co-financed by G CF’s funds will be 
+undertaken in accordance with AFD’s Procurement Guidelines9.	The bidding process is conducted in compliance with 
+local regulations and international good practices under the so le responsibility of the project owner. AFD is particularly 
+vigilant about compliance with the principles of transparency a nd opening to competition. It requires all project 
+stakeholders to have the highest standards in terms of ethics a nd social and environmental responsibility. The 
+publication of general procurement notices by each of the publi c executing entity involved in the Project, as per the 
+requirements of the Public Procu rement Code, will be monitored by AFD. The publication o f these notices is under the 
+responsibility of the executing entities in application of the national legislation.  
+AFD consequently provides projec t owners with model templates a nd conducts controls, under the principle of 
+subsidiarity, to ensure that the procurement process runs smoot hly. In particular, according to AFD procedures, a no-
+objection is given by AFD at each step of the procurement proce dure: procurement process, draft tender documents, 
+technical and financial evaluations, draft contracts. Internati onal competitive bidding procedures will be used for any 
+significant contract (for more  details see accreditation applic ation). 
+All financing allocated by AFD has been untied since 1st January 2002. AFD consequently finances all goods and 
+services regardless of the country of origin of the supplier or  service provider, or o f the amount of the contract. 
+Disbursement methods.  Two main disbursement methods are used in AFD-financed project : (i) direct payments made 
+by AFD to third party contractors as well as refinancing of exp enses paid by the beneficiary and (ii) payment by 
+renewable advances. 	
+Audits.  Mid-term and final technical and financial audits will be carr ied out by a reputable and independent auditing 
+firm, paid on the funds of the project. The auditing firm shall  verify that all amounts drawn on the project funding have 
+been used in accordance with the terms of the financial agreeme nts. Renewable advances will be disbursed on a 
+special project account held by the Ministry of Finance. Annual  financial audits will have to be carried out, and the audit 
+reports will be a condition precedent to each drawdown. 
+																																																													
+9 The Procurement Guidelines are available online at the followin g address: 
+http://www.afd.fr/webdav/site/af d/shared/L_AFD/Opportunites_d_a ffaires/Directives-Passation- Marches-Etats-Etrangers-va.pdf
+
+
+---
+*Page 40*
+---
+
+ 
+RISK ASSESSMENT AND MANAGEMENT 
+ GREEN CLIMATE FUND FUNDING P ROPOSAL | PAGE 36 OF 47 
+ 
+	G
+ 
+G.2. Risk Factors and Mitigation Measures  
+Selected Risk Factor 1  
+Description Risk category Level of risk  Probability of risk 
+occurring  
+An institutional risk was identified in the implementation 
+of the project. Indeed, most of the project is based on 
+institutions that have been newly appointed as the lead 
+in their field: MRUHCV for integrated flood management policy and ONAS for infrastructure construction and maintenance. Their legitimacy is crucial to the implementation of the project and coordination with 
+other stakeholders is critical.
+ 
+ Technical and 
+operational  High (>20% of 
+project value)  Medium  
+Mitigation Measure(s) 
+The project was designed to fit the institutional strategy of t he Government of Senegal in terms of flood management. 
+The central role of ONAS in infrastructure building and mainten ance was validated in the PROGEP Steering 
+Committee that is presided by the Prime Minister’s office. 
+Adequate coordination with all competent authorities will also be sought through the activities financed under 
+component 4.  
+Selected Risk Factor 2  
+Description Risk category Level of risk  Probability of risk 
+occurring  
+ 
+The resettlement of most vulnerable populations of 
+Pikine Irrégulier Sud is critical to reach the expect 
+outcomes of the project and constitutes a socially sensitive activity. The availability of adequate funding is of the essence. 
+ Financial  Medium (5.1-
+20% of project 
+value)  Low 
+Mitigation Measure(s) G.1.  Risk Assessment Summary  
+Five risk factors have been identified for the project, graded medium to low. Appropriate mitigation measures are 
+brought through the project. 
+‐ Risk Factor 1: operational risk on the effective change in the institutional framework of flood management.  
+‐ Risk Factor 2: financial risk on the effective availability of credits from the Government of Senegal for the 
+resettlement sub-component.  
+‐ Risk Factor 3: financia l risk on the reimbursement of the AFD loan for sub-component 2.3. 
+‐ Risk Factor 4: environmental r isk on potential degradation of Hann bay, where outlets of the drainage 
+infrastructure will be set up. 
+‐ Risk Factor 5: social risk on the implementation of the Resettl ement Action Plan.
+
+
+---
+*Page 41*
+---
+
+ 
+RISK ASSESSMENT AND MANAGEMENT 
+ GREEN CLIMATE FUND FUNDING P ROPOSAL | PAGE 37 OF 47 
+ 
+	G
+The entry in the State budget o f the amount needed to proceed t o compensation of resettled population is a 
+condition precedent to the disb ursement of the funds available under the loan facility. 
+Selected Risk Factor 3  
+Description Risk category Level of risk  Probability of risk 
+occurring  
+Sub-component 2.3 will be in part financed by AFD by 
+the means of a loan to the Government of Senegal. The 
+financial risk associated to the sustainability of this debt 
+is to be considered.  Financial  High (>20% of 
+project value)  Low 
+Mitigation Measure(s) 
+Despite an upward trend in external debt in recent years, Seneg al over-indebtedness risk remains low ("green" 
+country) according to the latest debt viability analysis of the  IMF and the World Bank updated in January 2015.The 
+rating agency Standard & Poor's  (S&P) confirmed in December 201 4 the sovereign rating of Senegal to B+/B with a 
+stable outlook, saying that Senegal suffers from low levels of income and a reduced monetary flexibility, and that the 
+reduction of public deficits and the current account will only happen gradually. It considers, however, that the country's 
+institutions are relatively strong compared to other countries in West Africa. Meanwhile, Moody's assesses the same 
+rating to B1, with a stable outlo ok. As a lender to the Republi c of Senegal, AFD will monitor c ontinually its risk rating. 
+Selected Risk Factor 4  
+Description Risk category Level of risk  Probability of risk 
+occurring  
+Sub-component 2.3 has potential negative 
+environmental impact, as the outflow of the drainage infrastructure is bound to be delivered on Hann bay, which is a fragile ecosystem that the Government of 
+Senegal is struggling to decontaminate – with the 
+technical and financial support of AFD. Intrusion of wastewater or solid waste in the outflow would be 
+harmful to the ecological state of the bay.
+ Social and 
+environmental  High (>20% of 
+project value)  Medium  
+Mitigation Measure(s) 
+The Hann bay is situated in Dakar and presently is in a disastr ous ecological state due to disposal of untreated 
+domestic and industrial wastewater. The Government of Senegal h as been working on decontaminating this bay for 
+years and is about start with the technical and financial suppo rt of AFD, works to set up wastewater collection and 
+treatment in Hann bay. 
+The wastewater activity of sub-c omponent 2.3 aims at giving acc ess to the wastewater colle ction infrastructure to the 
+population of Pikine Irrégulier Sud in the most strategic areas  to ensure protection of the rainwater drainage 
+infrastructure. Moreover, solid waste intrusion in the drain ch annels is deemed to be low, because channels are buried 
+and entrances are closed with grates. 
+Selected Risk Factor 5  
+Description Risk category Level of risk  Probability of risk 
+occurring
+
+
+---
+*Page 42*
+---
+
+ 
+RISK ASSESSMENT AND MANAGEMENT 
+ GREEN CLIMATE FUND FUNDING P ROPOSAL | PAGE 38 OF 47 
+ 
+	G
+A risk is identified for Sub-component 2.3 in the field of 
+social safeguards as many poor people have built their houses or conduct their economic activity in the highly 
+vulnerable low-lying areas and they will have to be 
+relocated. The estimate at t his stage of the project is 
+700 Project Affected Persons.
+ Social and 
+environmental  High (>20% of 
+project value)  Medium  
+Mitigation Measure(s) 
+The Resettlement Action Plan (RAP) of the drainage infrastructu re in Pikine is a part of the project in its own right, to 
+protect the inhabitants of the most vulnerable areas. The RAP w as elaborated according to the guidelines of the 
+Operational Policy OP 4.12 Involuntary Resettlement  of the World Bank. It will be financed by the Government of 
+Senegal. The executing agencies APIX is experienced in implemen tation of such RAP and a close monitoring of the 
+advances of the resettlement will be done by AFD. Resettlement action on the field will be led by a NGO, along with 
+Fondation droit à la ville, which is the main operator of curative urban intervention in Se negal. A resettlement zone 
+has been developed in the outskir ts of Dakar to offer a possibl e alternative for displaced populations.
+
+
+---
+*Page 43*
+---
+
+ 
+RESULTS MONITORING AND REPORTING 
+ GREEN CLIMATE FUND FUNDING P ROPOSAL | PAGE 39 OF 47 
+ 
+	
+	H
+H.1.  Logic Framework.    
+ 
+H.1.1. Paradigm Shift Objectives and Impacts at the Fund level 
+Paradigm shift objectives 
+Increased climate-resilient 
+sustainable development The project aims at reducing t he vulnerability of the populatio n of Senegal to flood risks that 
+are expected to rise with the effects of climate change and inc reasing urbanization. While 
+financing most urgent investment in infrastructure, it will hel p the Government of Senegal in 
+flood management policy-making by (i) building knowledge on the  actual and projected risk, 
+(ii) recommending alternative solutions to costly hard-engineer ed solutions and integrating 
+flood risk to urban planning, (iii) optimizing management of ex isting and future infrastructure 
+and (iv) ensuring mainstreaming of integrated flood management in the governance of the 
+sector. 
+Expected Result Indicator Means of 
+Verification 
+(MoV) Baseline Target 
+Assumptions Mid-term  
+(if applicable)  Final  
+Fund-level impacts  
+A1.0 Increased 
+resilience and enhanced 
+livelihoods of the most 
+vulnerable people, 
+communities and 
+regions Change in expected 
+losses of lives and 
+economic assets 
+(US$) due to the 
+impact of extreme 
+climate-related 
+disasters CNGI 
+annual 
+reports 0  apprx
+8 000 
+000 
+$ per 
+year Recommendations 
+as to structural 
+and non-structural 
+measures and 
+protocols are 
+implemented 
+A3.0 Increased 
+resilience of 
+intrastructure and the 
+built environment to 
+climate change Number and value of 
+physical assets 
+made more resilient 
+to climate variability 
+and change, 
+considering human 
+benefits CNGI 
+annual 
+reports 0  apprx
+8 000 
+000 
+$ per 
+year Recommendations 
+as to structural 
+and non-structural 
+measures and 
+protocols are 
+implemented
+
+
+---
+*Page 44*
+---
+
+ 
+RESULTS MONITORING AND REPORTING 
+ GREEN CLIMATE FUND FUNDING P ROPOSAL | PAGE 40 OF 47 
+ 
+	
+	H
+H.1.2. Outcomes, Outputs, Activities and Inputs at Project leve l 
+Expected Result  Indicator  Means of 
+Verification 
+(MoV)  Baseline  Target  
+Assumptions  Mid-term 
+(if applicable)   Final  
+Project outcomes Outcomes that c ontribute to Fund-level impacts 
+A5.0 Strengthened institutional 
+and regulatory systems for 
+climate-responsive planning 
+and development Institutional 
+and regulatory 
+systems that 
+improve 
+incentives for 
+climate 
+resilience and 
+their effective 
+implementation Urban 
+planning 
+documents 
+taking into 
+account 
+flood risk 0  6 Adequate 
+enforcement of the 
+urban planning 
+documents 
+A6.0 Increased generation 
+and use of climate information 
+in decision-making  Use of climate  
+information 
+products/servic
+es in decision-
+making in 
+climate-
+sensitive 
+sectors CNGI 
+annual 
+reports 0  4/year 
+or 20 
+total 
+(CNGI 
+meetin
+gs) Adequate 
+communication 
+and availability of 
+flood risk 
+information and 
+data 
+A7.0 Strengthened adaptive 
+capacity and reduced 
+exposure to climate risks Total 
+geographic 
+coverage of 
+climate-related 
+early warning 
+systems and 
+other risk 
+reduction 
+measures 
+established/str
+engthened ANACIM 
+reports 0  550km2 Coordination 
+between ANACIM 
+and ONAS 
+A8.0 Strengthened awareness 
+of climate threats and risk-
+reduction processes  Number of 
+males and 
+females made 
+aware of 
+climate threats 
+and related 
+appropriate 
+responses  
+Awareness 
+campaign 
+reports 0   
+500000 
+ 
+ 
+ 
+ N/A
+
+
+---
+*Page 45*
+---
+
+ 
+RESULTS MONITORING AND REPORTING 
+ GREEN CLIMATE FUND FUNDING P ROPOSAL | PAGE 41 OF 47 
+ 
+	
+	H
+Including 
+female ratio 50% 
+Project outputs Outputs that contribute to outcomes 
+1. The knowledge of flood risk 
+in Senegal has been 
+enhanced, mapped, and made 
+publicly available. Number of 
+urban centers 
+with publicly 
+accessible 
+detailed GIS 
+on flood risk 
+Number of 
+people that 
+has been 
+made aware of 
+flood risk 
+Including 
+female ratio  
+PMA report 
+ 
+Awareness 
+campaign 
+reports  
+0 
+ 
+0   
+6 
+ 
+500000 
+ 
+50% Adequate 
+communication 
+and availability of 
+flood risk 
+information and 
+data 
+N/A 
+2. Risk has been reduced in 
+Pikine Irrégulier Sud and tools 
+are available to reduce the risk 
+at national scale in a cost-
+effective and efficient manner. Number of 
+people who 
+benefit from 
+risk reduction 
+measures 
+ 
+Female ratio of 
+people that 
+has been 
+consulted 
+through IEC 
+services 
+ 
+Number of 
+flood risk 
+assessment 
+developed and 
+used 
+ 
+ 
+Meters of 
+drainage 
+system 
+installed in 
+Pikine 
+Irrégulier Sud 
+  
+CNGI 
+annual 
+reports 
+ 
+ 
+ONAS 
+evaluation 
+reports 
+ 
+ 
+ 
+APIX 
+evaluation 
+reports 
+ 
+ 
+  
+PMA reports 0   
+200000 
+ 
+ 
+ 
+50% 
+ 
+1.000. 
+000Tot
+al 
+ 
+ 
+ 
+ 
+20000 
+ The infrastructure 
+is respected and 
+duly maintained
+
+
+---
+*Page 46*
+---
+
+ 
+RESULTS MONITORING AND REPORTING 
+ GREEN CLIMATE FUND FUNDING P ROPOSAL | PAGE 42 OF 47 
+ 
+	
+	H
+3. Hazard monitoring and 
+response have been 
+developed to enhance existing 
+drainage infrastructure 
+operations. Surface 
+covered by 
+real-time 
+hazard 
+monitoring 
+Number of 
+preventive 
+actions led by 
+ONAS based 
+on 
+meteorological 
+alert. ANACIM 
+reports 
+ 
+ONAS 
+reports 0 
+ 
+   
+550km2 
+ 
+ 
+25 The equipment is 
+duly installed and 
+maintained 
+ 
+Communication 
+between 
+monitoring and 
+operator is 
+operational 
+4. Stakeholders of flood 
+management policy-making 
+work together in an efficient 
+and coordinated manner Coordination 
+meetings with 
+all 
+stakeholders 
+that take into 
+consideration 
+policy-making 
+decisions on 
+flood 
+management CNGI 
+annual 
+reports 0  4/year 
+(CNGI 
+meetin
+gs) Political support to 
+decision taken in 
+the CNGI 
+Activities Description Outputs Assumptions 
+1.1 Mapping flood risk at 
+national and local levels See section C.3 Flood risk GIS Existing studies and data are 
+made available 
+Funds are sufficient to 
+operate, maintain and make 
+publicly available GIS data 
+1.2. Population and institutions 
+awareness raising See section C.3 Awareness-raising 
+campaign Action is taken on the 
+information provided 
+2.1 Recommendations for 
+structural and non-
+structural measures See section C.3 Regulatory 
+recommendations – 
+Guidebooks – 
+Proposition of 
+incentives Recommendations are 
+followed and incentives are 
+efficiently implemented 
+2.2 Processing flood risk 
+information for infrastructure planning and design See section C.3 Investment plans – 
+Models – Protocols 
+– Training programs 
+– Communication 
+program Tools are made available 
+and used by stakeholders for 
+planning and designing 
+infrastructure
+
+
+---
+*Page 47*
+---
+
+ 
+RESULTS MONITORING AND REPORTING 
+ GREEN CLIMATE FUND FUNDING P ROPOSAL | PAGE 43 OF 47 
+ 
+	
+	H
+ 2.3 Construction of drainage 
+and sanitation infrastructure in Pikine 
+Irrégulier Sud See section C.3 Drainage 
+infrastructure – 
+Sanitation 
+infrastructure – 
+Training programs – 	
+IEC campaign Delivery of necessary 
+permits  
+People accept to be 
+resettled 
+The infrastructure is 
+respected and duly 
+maintained 
+3.1 Setting-up real time 
+hazard monitoring in 
+Greater Dakar See section C.3 Monitoring 
+equipment and 
+software – 
+Forecasting models 
+– Training programs Information on existing 
+equipment and protocols is 
+provided 
+Sufficient resource to 
+operate and maintain the 
+equipment 
+3.2 Elaboration of operational 
+protocols and guidelines 
+for preventive action on 
+drainage infrastructure See section C.3 Protocols – Training 
+programs Information on existing 
+protocols is provided 
+Protocols are followed by the 
+drainage infrastructure 
+operator 
+4.1 Support to c oordination 
+and policy-making See section C.3 Decisions of the 
+Technical 
+Committee – 
+Decisions of the 
+CNGI – 
+Communication 
+strategy Outputs of the project are 
+presented to CNGI 
+4.2 Institutional consolidation 
+and capacity building See section C.3 Institutional 
+diagnostic – Training 
+program  Existing studies and data are 
+made available 
+Recommendations are 
+implemented 
+4.3 Supporting executing 
+entities for project implementation See section C.3 Tender documents – 
+Evaluation reports – 
+Validation of 
+products Conformity of procurement 
+process 
+H.2.  Arrangements for Monitoring, Reporting and Evaluation
+
+
+---
+*Page 48*
+---
+
+ 
+RESULTS MONITORING AND REPORTING 
+ GREEN CLIMATE FUND FUNDING P ROPOSAL | PAGE 44 OF 47 
+ 
+	
+	H
+This section reflects the monitoring and accountability framewo rk that was approved by the Board in the decision B11/10. 
+It is subject to the Accreditation Master Agreement (AMA) that is still on negotiation and to the Funded Activity Agreement 
+(FAA) that will be signed by AFD and the GCF. 
+1. DURING THE PROJECT IMPLEMENTATION PERIOD  
+Continuous monitoring.  To monitor the progress of the Project in achieving the planne d outcome and outputs, the 
+Project Management Assistance (PMA) will establish and maintain  a project performance management framework, which 
+will be designed to permit adequate flexibility to adopt remedi al action regarding project design, schedules, activities, and 
+development impacts.  
+PMA will refine the monitoring framework, confirm achievable ta rgets, firm up monitoring and recording arrangements, 
+and establish systems and procedures no later than six months a fter project implementation begins. Baseline and 
+progress data will be reported at  the requisite time intervals by the executing entities to PMA . PMA will be responsible for 
+analyzing and consolidating the reported data, and for reportin g the outcome to AFD through the quarterly progress 
+reports. Moreover, progress re ports will be presented to the CN DI, which gathers all pertinent authorities on flood risk 
+management in Senegal. Based on this information, the PMA will elaborate on a yearly basis an annual performance 
+report (APR) which will include indicators p rogress reports, im plementation issues, financial management data that 
+include dates and amounts disbursed for each funded activity an d compliance with financial covenants and updates 
+procurement plan. 
+During the whole implementation period, AFD will lead a continu ous monitoring of project act ivities led by the executing 
+agencies. The project will be supervised on day to day basis by  the local AFD Office that is in continuous and close 
+dialogue with the implementing entities. The project manager, b ased at AFD’s Headquarter s, will lead supervision 
+missions at least on a half-year ly basis to monitor progress in  the implementation of the proj ect, compliance with project 
+agreements and financial covenants and make necessary adjustmen ts in its organization, budget or implementing 
+arrangement.  
+Mid-term review. A midterm review will be conducted  within two and half years of  project being effective and shall include 
+a review on institutional, techni cal, environmental, social, ec onomic and financial issues, assessment on the performance 
+of the funded activity against the GCF investment criteria and assess, as the case may be, the need to restructure the 
+project. The outcome of the midt erm review will be incorporated  as recommendations for improving the implementation 
+during the second half of the project’s duration. 
+Final review.  Within 6 months of the closing of the 	project, the Technical Committee will submit a project completi on 
+report to AFD that includes eval uation of outcome an impact ind icators and assessment based on the 6 GCF investment 
+criteria.	
+2. DURING THE POST IMPLEMENTATION PERIOD  
+Two or three years after the closing of the project, an indepen dent evaluation is made by a consultancy firm. If the AFD 
+Evaluation Department selects the  project an impact assessment would be conducted by a consultancy firm with the 
+support of the local agency. 
+3. COMMUNICATION STRATEGY  
+Within the communication strategy  of the project (related to bo th institutional and awareness campaigns issues), AFD 
+shall ensure that the visibility  of the GCF contribution is gua ranteed.
+
+
+---
+*Page 49*
+---
+
+ 
+ANNEXES 
+ GREEN CLIMATE FUND FUNDING P ROPOSAL | PAGE 45 OF 47 
+ 
+	
+	I
+ 
+ I. Supporting Documents for Funding Proposal  
+☐ NDA No-objection Letter (expected) 
+☒ Feasibility Study  
+☐ Integrated Financial Model that p rovides sensitivity analysis of critical elements (xls format)  
+☒ Confirmation letter or letter of commitment for co-financing c ommitment  
+☐ Term Sheet  
+☒ Environmental and Social Impact A ssessment (ESIA) or Environme ntal and Social Management Plan 
+☒ Appraisal Report or Due Diligence Report with recommendations 
+☐ Evaluation Report of the baseline project 
+☒ Map indicating the location of the project 
+☒ Timetable of project implementation 
+☐ Project confirmation (see the temp late in Annex I to the Accred itation Master Agreement)
+
+
+---
+*Page 50*
+---
+
+ 
+ANNEXES 
+ GREEN CLIMATE FUND FUNDING P ROPOSAL | PAGE 46 OF 47 
+ 
+	
+	I
+ 
+ 
+    
+ 
+     
+ 
+     
+ 
+  
+Figure	2‐Map	of	flood‐prone	urban	centers	in	Senegal
+
+
+---
+*Page 51*
+---
+
+ 
+ANNEXES 
+ GREEN CLIMATE FUND FUNDING P ROPOSAL | PAGE 47 OF 47 
+ 
+	
+	I
+ 
+	
+Figure	3‐Situation 	of	Pikine	Irrégulier 	Sud
+
+
+---
+*Page 54*
+---
+
+GCF/B.14/07/Add.04
+Environmental 	and	social	report(s)	 disclosure 	
+Basic	project/programme 	information 	
+Project/programme 	title	SENEGAL	INTEGRATED	URBAN	FLOOD	MANAGEMENT	PROGRAM	
+Accredited 	entity	 AFD	
+Environmental 	and	social	
+safeguards 	(ESS)	category 	Category	A	
+Environmental 	and	Social	Impact	Assessment 	(ESIA)	(if	applicable) 	
+Date	of	disclosure	
+on	accredited	
+entity’s	website	2016‐04‐07	
+Language(s)	of	
+disclosure	FRENCH	(2016‐01‐26)	and	ENGLISH	(2016‐04‐07)	
+Link	to	disclosure	 	http://www.afd.fr/base‐projets/do wnloadDocument.action?idDocum ent=2241	
+Other	link(English)	 http://www.afd.fr/base‐projets/downloadDocument.action?idDocume nt=2311	
+Page	link	 http://www.afd.fr/base‐projets/consulterProjet.action?idProjet=CSN1405	
+Environmental 	and	Social	Impact	Assessment 	(ESMP)	(if	applicable) 	
+Date	of	disclosure	
+on	accredited	
+entity’s	website	2016‐04‐07	
+Language(s)	of	
+disclosure	FRENCH	(2016‐01‐26)	and	ENGLISH	(2016‐04‐07)	
+Link	to	disclosure	 http://www.afd.fr/base‐projets/downloadDocument.action?idDocume nt=2241	
+Other	link(English)	 http://www.afd.fr/base‐projets/downloadDocument.action?idDocume nt=2311	
+Page	link	 http://www.afd.fr/base‐projets/consulterProjet.action?idProjet=CSN1405	
+Resettlement 	Action	Plan	(RAP)	(if	applicable) 	
+Date	of	disclosure	
+on	accredited	
+entity’s	website	2016‐04‐07	
+Language(s)	of	
+disclosure	FRENCH	(2016‐01‐26)	and	ENGLISH	(2016‐04‐07)	
+Link	to	disclosure	 http://www.afd.fr/base‐projets/do wnloadDocument.action?idDocume nt=2240	
+Other	link(English)	 http://www.afd.fr/base‐projets/do wnloadDocument.action?idDocume nt=2312	
+Page	link	 http://www.afd.fr/base‐projets/co nsulterProjet.action?idProjet= CSN1405	
+Any	other	relevant 	ESS	reports	and/or	disclosures 	(if	applicable) 	
+Description	of	
+report/disclosure	The	same	documents	as	above	were	also	published	by	APIX	(Senega l,	one	of	the	
+executing	entities)	at	the	following	links	
+Date	of	disclosure		 2016‐02‐03	
+Language(s)	of	
+disclosure	FRENCH	(2016‐02‐03)	and	ENGLISH	(2016‐06‐16)
+
+
+---
+*Page 55*
+---
+
+GCF/B.14/07/Add.04 	
+	French		http://autoroutedakard iamniadio.net/sites/default/files/downloa d/PAR%20R
+estructuration%20de%20PIS_Studi%200313%201‐2mini.pdf	
+http://autoroutedakard iamniadio.net/sites/default/files/downloa d/PAR%20R
+estructuration%20de%20PIS_Studi%200313%202‐2mini.pdf	http://autoroutedakard iamniadio.net/sites/default/files/downloa d/EIES%20PI
+S%20partie%201.pdf	http://autoroutedakard iamniadio.net/sites/default/files/downloa d/EIES%20PI
+S%20partie%202.pdf	
+	English	 http://autoroutedakard iamniadio.net/sites/default/files/downloa d/20160406_
+CSN1405_esia_pikine_irregulier_sud_en_final_anglais_opt.pdf	
+http://autoroutedakard iamniadio.net/sites/default/files/downloa d/20160406_
+CSN1405_rap_pikine_irregulier_ sud_en_final_anglais_opt.pdf	
+_
+_______

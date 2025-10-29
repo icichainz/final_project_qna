@@ -1,0 +1,3756 @@
+=== DOCUMENT METADATA ===
+format: PDF 1.6
+title: 
+author: Sanghyun Kim
+subject: 
+keywords: 
+creator: Adobe Acrobat Pro 11.0.23
+producer: Adobe Acrobat Pro 11.0.23
+creationDate: D:20180922163517+09'00'
+modDate: D:20180927182753+09'00'
+trapped: 
+
+=== PAGE 1 ===
+Meeting of the Board 
+17 – 20 October 2018 
+Manama, Bahrain 
+Provisional agenda item 17 
+GCF/B.21/10/Add.02/Rev.01 
+27 September 2018 
+Consideration of funding proposals - 
+Addendum II 
+Funding proposal package for FP083 
+Summary  
+This addendum contains the following three parts: 
+a) A funding proposal summary titled “Indonesia Geothermal Resource Risk
+Mitigation Project”;
+b) No-objection letter issued by the national designated authority(ies) or focal
+point(s); and
+c)
+Environmental and social report(s) disclosure;
+The funding proposal package for FP083 is being submitted for the first time for the Board's 
+consideration at its twenty-first meeting.
+
+=== PAGE 2 ===
+Project/Programme Title: Indonesia Geothermal Resource Risk Mitigation Project 
+Country/Region: Indonesia/East Asia and the Pacific________________ 
+Accredited Entity: The World Bank_______________________________ 
+Date of Submission: August 16, 2018_____________________________
+
+=== PAGE 3 ===
+Contents 
+ 
+ 
+Section A 
+PROJECT / PROGRAMME SUMMARY 
+ 
+ 
+Section B 
+FINANCING / COST INFORMATION  
+ 
+ 
+Section C 
+DETAILED PROJECT / PROGRAMME DESCRIPTION 
+ 
+Section D 
+RATIONALE FOR GCF INVOLVEMENT 
+ 
+Section E 
+EXPECTED PERFORMANCE AGAINST INVESTMENT CRITERIA 
+ 
+Section F 
+APPRAISAL SUMMARY 
+ 
+Section G 
+RISK ASSESSMENT AND MANAGEMENT 
+ 
+Section H 
+RESULTS MONITORING AND REPORTING 
+ 
+Section I 
+ANNEXES 
+ 
+ 
+ 
+ 
+Note to accredited entities on the use of the funding proposal template 
+ 
+• 
+Sections A, B, D, E and H of the funding proposal require detailed inputs from the accredited entity. For all 
+other sections, including the Appraisal Summary in section F, accredited entities have discretion in how they 
+wish to present the information. Accredited entities can either directly incorporate information into this 
+proposal, or provide summary information in the proposal with cross-reference to other project documents 
+such as project appraisal document. 
+• 
+The total number of pages for the funding proposal (excluding annexes) is expected not to exceed 50. 
+ 
+ 
+Please submit the completed form to: 
+fundingproposal@gcfund.org 
+ 
+Please use the following name convention for the file name: 
+“[FP]-[Agency Short Name]-[Date]-[Serial Number]”
+
+=== PAGE 4 ===
+PROJECT / PROGRAMME SUMMARY 
+ 
+GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 1 OF 56 
+ 
+ 
+ 
+A 
+A.1. Brief Project / Programme Information 
+A.1.1. Project / programme title 
+Indonesia Geothermal Resource Risk Mitigation Project 
+A.1.2. Project or programme 
+Project 
+A.1.3. Country (ies) / region                     
+Indonesia / South East Asia 
+A.1.4. National designated authority (ies) 
+Fiscal Policy Agency, Ministry of Finance 
+A.1.5. Accredited entity 
+The World Bank 
+A.1.5.a. Access modality 
+☐  Direct 
+☒  International 
+A.1.6. Executing entity / beneficiary 
+Executing Entity: PT Sarana Multi Infrastruktur (Persero) 
+Beneficiary: Geothermal developers (public and private) 
+A.1.7. Project size category (Total investment, million 
+USD) 
+☐  Micro (≤ 10) 
+☐  Medium (50 < x ≤ 250)  
+☐  Small (10 < x ≤ 50)  
+☒  Large (> 250) 
+A.1.8. Mitigation / adaptation focus 
+☒  Mitigation 
+☐  Adaptation ☐  Cross-cutting 
+A.1.9. Date of submission 
+August 16, 2018 
+A.1.10. 
+Project 
+contact 
+details 
+Contact person, position 
+Peter Johansen, Senior Energy Specialist 
+Organization 
+The World Bank 
+Email address 
+pjohansen@worldbank.org 
+Telephone number 
++1.202.458.5578 
+Mailing address 
+1818 H Street NW, Washington DC 20433 
+ 
+A.1.11. Results areas (mark all that apply)  
+Reduced emissions from: 
+☒ 
+Energy access and power generation  
+(E.g. on-grid, micro-grid or off-grid solar, wind, geothermal, etc.)   
+☐ 
+Low emission transport  
+(E.g. high-speed rail, rapid bus system, etc.)   
+☐ 
+Buildings, cities and industries and appliances  
+(E.g. new and retrofitted energy-efficient buildings, energy-efficient equipment for companies and supply chain management, etc.)   
+☐ 
+Forestry and land use  
+(E.g. forest conservation and management, agroforestry, agricultural irrigation, water treatment and management, etc.) 
+ 
+Increased resilience of: 
+☐ 
+Most vulnerable people and communities 
+(E.g. mitigation of operational risk associated with climate change – diversification of supply sources and supply chain management, 
+relocation of manufacturing facilities and warehouses, etc.) 
+☐ 
+Health and well-being, and food and water security 
+(E.g. climate-resilient crops, efficient irrigation system, etc.) 
+☐ 
+Infrastructure and built environment 
+(E.g. sea walls, resilient road networks, etc.) 
+Ecosystem and ecosystem services 
+(E.g. ecosystem conservation and management, ecotourism, etc.) 
+ 
+☐
+
+=== PAGE 5 ===
+PROJECT / PROGRAMME SUMMARY 
+ 
+GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 2 OF 56 
+ 
+ 
+ 
+A 
+ 
+A.2. Project / Programme Executive Summary (max 300 words) 
+Please provide a brief description of the proposed project/programme, including the objectives and primary measurable 
+benefits (see investment criteria in section E). The detailed description can be elaborated in section C. 
+ 
+The national grid in Indonesia has been dominated by fossil-fueled generation. Based on PLN’s RUPTL 2018, the 2017 
+generation mix was 58.3 percent coal, 23.2 percent gas, 6 percent diesel, 12.5 percent renewables. At the 2015 COP21 
+in Paris, Indonesia committed to a Nationally Determined Contribution (NDC) at 29 percent reduction of GHG emissions 
+by 2030. In support of the Indonesian Government’s NDC and plan to increase the share of renewable energy in the 
+power generation mix to 23 percent by 2026, the proposed Project aims to support a scale-up of investment in geothermal 
+energy development. As a result, the Project is expected to contribute to: (i) displacing highly-polluting power supply 
+alternatives and diversifying its generation portfolio; (ii) reducing reliance on fossil fuels and exposure to commodity price 
+volatilities; and (iii) ultimately lowering the energy sector’s emissions compared to the business-as-usual scenario. 
+ 
+The proposed Project supports the GoI in the establishment of a Geothermal Resource Risk Mitigation Facility, under 
+which debt financing will support geothermal developers’ resource confirmation drilling. The Project will be financed by 
+IBRD (US$325 million loan), and GCF (US$25 million soft loan, US$150 million reimbursable grant, and US$10 million 
+grant). Specifically, the GCF reimbursable grant will be used to finance the subscription of convertible bonds issued by 
+private developers for the financing, together with the corresponding portion of the IBRD Loan, of their resource 
+confirmation drilling. Ultimately, the Project is expected to enable reduction of 187 – 281 MtCO2e over the generating 
+assets’ lifetime (to be cross-checked post drilling in a two-step approach to GHG accounting, see Section E6), an 
+additional electric power generation capacity of 1 – 1.5 GW from geothermal resources and US$4 – 5.5 billion of mostly 
+private capital mobilized for investment in geothermal power generation. The Project will be implemented in tranches the 
+impact of the first tranche (a total of US100 million from GCF) is expected to be around 60% of the impact from the total 
+project.  
+ 
+A.3. Project/Programme Milestone 
+Expected approval from accredited entity’s 
+Board (if applicable) 
+15/12/2018 
+Expected financial close (if applicable) 
+N/A (The project intervention takes place prior to financial close of 
+the power plant construction and operation phase) 
+Estimated implementation start and end date 
+Start: 28/02/2019 
+End:  28/02/2029 
+Project/programme lifespan 
+10 years
+
+=== PAGE 6 ===
+FINANCING / COST INFORMATION 
+ 
+GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 3 OF 56 
+ 
+ 
+B 
+B.1. Description of Financial Elements of the Project / Programme 
+ 
+To achieve its objective, the proposed Project will provide financing instruments to mitigate resource risk, which is 
+the key barrier to geothermal development in Indonesia. The Project includes a risk mitigation facility for geothermal 
+resource confirmation (including exploration and delineation/test drilling) and technical assistance. GCF funds will be 
+used to provide soft financing to public developers (GCF soft loan), and to subscribe to convertible bonds issued by 
+private developers (GCF reimbursable grant). Mitigation of the drilling risk is possible because of the level of 
+concessionality and the characteristics of the GCF reimbursable grant. A breakdown by components of the proposed 
+Project’s cost estimates is presented below. 
+ 
+The Project has initially been prepared on the basis of a GCF financing representing in the aggregate the sum of 
+Tranche 1 and Tranche 2: for this reason, this Funding Proposal includes the figures for the overall Project. Then 
+the Project has been sequenced and its GCF financing has been divided into Tranche 1 and Tranche 2. It is 
+estimated that the tranching of the GCF financing remains a viable option for the Project: as a result, only Tranche 
+1 of the GCF proposed financing is submitted for approval by the GCF, and the numbers for Tranche 1 are 
+separately reflected in this Funding Proposal. With respect to the funds which may be allocated at a later stage by 
+GCF as Tranche 2, amounts allocated and dates for disbursements showed in Table 2 are purely tentative, since 
+these funds are not part of this Funding Proposal and will not be approved by the GCF at this stage. A Funding 
+Proposal to GCF for Tranche 2 of the financing of the Project will be prepared to seek approval by the GCF Board 
+after 70% of the aggregate amount of GCF reimbursable funds and non-reimbursable funds extended under 
+Tranche 1 previously disbursed by GCF to the Bank have been disbursed by the Bank or legally committed by SMI 
+It is understood that the funds which may be approved by the GCF Board for Tranche 2, could only become 
+available for the Project after GCF Board approval and satisfaction of the conditions stated in the Board approval, if 
+any. 
+ 
+Table 1: Breakdown of Cost Estimates 
+ 
+Component 
+Sub-component (if 
+applicable) 
+Amount 
+(for entire 
+Project) 
+Currency  GCF funding 
+amount 
+Tranche 
+1 
+Currency of 
+disbursement 
+to recipient 
+Component 1 
+– Geothermal 
+Resource 
+Risk 
+Mitigation 
+1.1. Soft Loan provided through 
+the Public Sector Window 
+for resource confirmation 
+(Senior loan) 
+ 
+125 
+ 
+ 
+ 
+million 
+USD ($) 
+25 (Public 
+Sector 
+Window) 
+ 
+7.5 
+USD 
+1.2. Loan and bonds 
+subscription through the 
+Private Sector Window for 
+resource confirmation 
+375 
+ 
+150 (Private 
+Sector 
+Window) 
+90 
+Component 2 
+– Technical 
+Assistance 
+and Capacity 
+Building 
+2.1. Governance and 
+management support  
+ 
+2.5 
+ 
+ 
+million 
+USD ($) 
+10 
+0.5 
+USD 
+2.2. Technical Assistance and 
+Capacity Building to 
+support MEMR, PLN and 
+Geo Dipa 
+ 
+7.5 
+ 
+2.0 
+Total project financing 
+510 
+ 
+185 
+100 
+ 
+ 
+A breakdown of the main cost categories supported by GCF and tentative disbursement schedule of the GCF funds 
+is provided.
+
+=== PAGE 7 ===
+FINANCING / COST INFORMATION 
+ 
+GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 4 OF 56 
+ 
+ 
+B 
+Table 2: Budget Category Breakdown and Disbursement Schedule   
+ 
+Expenditure Type 
+Budget (US$ million) 
+Disbursement Schedule (US$ million) 
+Component 1 - Geothermal Resource Risk Mitigation 
+Reimbursable Grant for subscription of 
+convertible bonds for Private Sector 
+Resource Confirmation 
+150 
+Year 1: 90 million (Tranche 1) 
+Year 3: 60 million (Tranche 2) 
+Soft Loan for Public Sector Resource 
+Confirmation 
+25 
+Year 1: 7.5 million (Tranche 1) 
+Year 3: 17.5 million (Tranche 2) 
+Component 2 - Technical Assistance and Capacity Building 
+Governance and Management Support, 
+Technical Assistance and Capacity 
+Building Activities 
+10 
+Year 1: 2.5 million (Tranche 1) 
+Year 6: 7.5 million (Tranche 2) 
+ 
+ 
+B.2. Project Financing Information 
+ 
+Financial Instrument 
+Amount 
+Currency 
+Tenor 
+Pricing 
+(a) Total 
+project 
+financing 
+(a) = (b) + (c) 
+510  
+million USD 
+($) 
+ 
+(b) GCF 
+financing to 
+recipient 
+(i)  Senior Loans 
+25 (Tranche 1: 7.5) 
+million 
+USD ($) 
+20 
+years 
+Senior (1.25%) 
+(ii) Subordinated Loans 
+ 
+Options 
+ 
+ 
+(iii) Equity 
+ 
+Options 
+ 
+ 
+ 
+(iv) Guarantees  
+ 
+Options 
+ 
+ 
+ 
+(v) Reimbursable grants* 
+150 (Tranche 1: 90) 
+million 
+USD ($) 
+10 
+years 
+(vi) Grants * 
+10 (Tranche 1: 2.5) 
+million 
+USD ($) 
+ 
+* Please provide economic and financial justification in section F.1 for the concessionality that GCF is 
+expected to provide, particularly in the case of grants. Please specify difference in tenor and price between 
+GCF financing and that of accredited entities. Please note that the level of concessionality should 
+correspond to the level of the project/programme’s expected performance against the investment criteria 
+indicated in section E.
+
+=== PAGE 8 ===
+FINANCING / COST INFORMATION 
+ 
+GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 5 OF 56 
+ 
+ 
+B 
+Total requested 
+(i+ii+iii+iv+v+vi) 
+185 
+million 
+USD ($) 
+ 
+(c) Co-
+financing to 
+recipient 
+ 
+Financial Instrument 
+Amount 
+Currency 
+Name of 
+Institution 
+Tenor 
+Pricing 
+Seniority 
+Senior Loans 
+Options 
+325 
+Options 
+million 
+USD ($) 
+ 
+IBRD 
+IBRD1 
+Terms 
+ 
+IBRD 
+Terms 
+ 
+senior 
+ 
+Lead financing institution: World Bank/IBRD (Co-financing) in the amount of US$325 million. 
+MOF/SMI will provide US$150 million as parallel financing.  The private sector will provide US$100 
+million in leveraged equity financing. 
+* Please provide a confirmation letter or a letter of commitment in section I issued by the co-financing 
+institution. 
+(d) Financial 
+terms between 
+GCF and AE 
+(if applicable) 
+Refer to Terms Sheet to be attached to this Proposal 
+ 
+B.3. Financial Markets Overview (if applicable) 
+How market price or expected commercial rate return was (non-concessional) determined? Please provide an 
+overview of the size of total banking assets, debt capital markets and equity capital markets which could be tapped 
+to finance the proposed project/programme. Please provide an overview of market rates (i.e. 1-year T-Bill, 5-year 
+government bond, 5-year corporate bond (specify credit rating) and 5-year syndicate loan. Provide examples or 
+information on comparable transactions. 
+ 
+Indonesia’s financial markets are considered very shallow, and capital markets smaller and less liquid, compared to 
+the regional and emerging market peers. This is primarily due to low capital market utilization to finance investments 
+and limited intermediation by non-bank financial institutions (NBFIs) with modest hedging and insurance facilities. 
+Securities and equity markets are relatively underdeveloped and market capitalization of Indonesia’s listed 
+companies is lower than that of its regional peers. The country’s banking penetration – both conventional and Islamic 
+– remains at a relatively low level.  
+ 
+Despite relatively stable gross domestic product (GDP) over the past decade, the shallow financial market in 
+Indonesia is characterized by limited-to-nascent development of various key financial instruments, such as corporate 
+bonds, exchange-traded funds (ETFs), real estate investment trusts (REITs), options and futures for index and 
+individual stocks and other money market instruments. For capital users, there is a limited number of equity and debt 
+capital markets issuers at around 20, compared to 116 in Malaysia, due to lack of participation of large state-owned 
+enterprises as major players in the economy. For capital providers, the Indonesian corporate sector is heavily reliant 
+on bank funding, whereas the market is constrained by limited asset base of domestic institutions. While basic 
+building blocks for market infrastructure are in place (such as the establishment of the Indonesian Stock Exchange 
+in 2007, the availability of a resettlement mechanism of over-the-counter (OTC) derivatives for the foreign exchange 
+(FX) market, and the improving coverage and quality of credit information), there remains a lack of clear guidelines 
+on risky asset pricing, as well as a credible benchmark for corporate bond market. Currently, the 5- to 20-year 
+government bond curve is well-established, however, there is no such curve in the less-than-5-year and greater-than-
+20-year windows. To improve financial deepening, the country is undergoing fundamental changes, including 
+developing long-term domestic institutional investors in the market, expanding investor base for bond and equity 
+                                                             
+1 Tenor of pricing of IBRD loan will be as per negotiation between EA and EE. Pricing information and 
+conditions are available on the IBRD webpage
+
+=== PAGE 9 ===
+FINANCING / COST INFORMATION 
+ 
+GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 6 OF 56 
+ 
+ 
+B 
+markets and developing collateralized money market products with non-bank participation, among others (link to 
+source).  
+ 
+The broader financial market structure and infrastructure has presented limited financing instruments and options to 
+address geothermal resource risk in Indonesia. Existing projects were financed by both the public and private sector. 
+Public sector projects were financed by a mix of internal funding and concessional funding from the MDBs. Private 
+sector projects (e.g., Wayang Windu, Star Energy) – once the resource was significantly proven – were financed by 
+expensive, limited-long-term recourse project finance loans from international (offshore) commercial banks. These 
+project finance loans were later refinanced by project bonds, which was only after the assets had been in operation 
+for many years thereby demonstrating commercial viability. In the context of Basel 3 regulatory requirements on 
+banks regarding risk-adjusted capital, long-term commercial bank lending along the lines of 2007 are no longer 
+feasible. Participation of international finance institutions (IFIs) and export credit agencies (ECAs) is necessary to 
+ensure long-term lending can be arranged for the construction phases. 
+ 
+Furthermore, 58% of corporate funding is provided by commercial banks, and not by the bond market as in other 
+regional and more developed markets. In no event could investors in the corporate bond market consider financing 
+the complex risks of a greenfield geothermal project (i.e., before development and construction phases). The ratings 
+on such issuances would be extremely low and therefore cost prohibitively high. This is a worldwide phenomenon 
+with capital markets in the financing of infrastructure. 
+ 
+It is expected that greenfield geothermal projects will be financed by bank lending, and not the capital market. Even 
+in developed countries, the capital market does not take construction risks on greenfield projects. Capital market 
+participation is only possible for refinancing operating assets. The risk sharing facility supported through this Project 
+will help develop database of information on risks and losses, which is how banks will be able to make decisions on 
+how to fund projects and how to price loans to compensate for expected losses. 
+ 
+Under the existing financial market constraints, this proposed Project aims to utilize a combination of financing 
+sources with an innovative risk sharing mechanism to mitigate the uncertainties associated with geothermal resource 
+risk and leverage the initial investment of US$500 million (plus US$100 million in leveraged equity financing from the 
+private sector) to achieve some US$4 – 5.5 billion in downstream investments.
+
+=== PAGE 10 ===
+DETAILED PROJECT / PROGRAMME DESCRIPTION 
+ 
+GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 7 OF 56 
+ 
+ 
+C 
+C.1. Strategic Context 
+Please describe relevant national, sub-national, regional, global, political, and/or economic factors that help to 
+contextualize the proposal, including existing national and sector policies and strategies. 
+ 
+Indonesia is the world’s fourth most populous nation with over 260 million people, the eighth largest economy globally and 
+the largest economy in Southeast Asia with a GDP per capita in terms of purchasing power parity of US$11,612, and a 
+member of the G20. An emerging middle-income country, Indonesia has made enormous gains in poverty reduction, more 
+than halving the poverty rate since 1999 to 10.9 percent in 2016. Indonesia has maintained a real GDP growth of five 
+percent over the past three years, which is expected to maintain at 5.3 percent in 2018. Economic growth has thus far been 
+supported by higher commodity prices, stronger global growth, rebounding international trade, and relatively 
+accommodative monetary and financial conditions. Greater investment has been bolstered by lower financing costs, 
+improved business environment, and stronger public capital investment. 
+ 
+The national grid in Indonesia has been dominated by fossil-fueled generation. The total installed power generation capacity 
+is estimated at 55 gigawatts (GW) at the end of 2017 to meet an estimated demand of 30 GW. The primary energy mix is 
+made up of 34.6 percent coal, 33.8 percent oil, 23.9 percent gas, and 7.7 percent renewable sources. The current 2017 
+electricity generation mix is coal 58.3 percent, gas 23.2 percent, diesel 6 percent, and RE 12.5 percent. According to the 
+state-owned national utility, PT Perusahaan Listrik Negara (PLN) 2017-2026 Business Plan (RUPTL), Indonesia is expected 
+to add about 78 GW capacity: 31.9 GW from coal, 24.4 GW from gas, 14.1 GW from hydro, 5.8 GW from geothermal, and 
+1.2 GW from other renewable sources. By 2027, the generation mix is expected to be as follows: 54.4% coal, 22.2% gas, 
+0.4% diesel, and 23% renewable energy (RE). The sub-project candidates (i.e. the developers) considered for support 
+under the Project have been included in the latest RUPTL, which means that PLN would be the off-taker for the new 
+generation. It should be noted that system redundancy is at acceptable level to ensure n-1 conditions and that dispatch 
+gives priority to RE but due to the rapid expansion PLN is not at risk of signing more PPAs than the off-take potential. Due 
+to the rapid demand expansion, PLN has no current plans to decommission existing plants. 
+ 
+Figure 1: Generation Expansion Plan by 2026 (MW) 
+ 
+   
+ 
+PLN, plans to achieve 99.7 percent national electrification rate by 2025 from a current rate of 93 percent.  The expansion 
+of transmission and distribution will include an additional 63,853 km of high voltage transmission, 278,351 km of medium 
+voltage transmission/distribution, and 247,215 km of distribution. This plan ensures that the necessary power infrastructure 
+will be constructed to allow the planned geothermal generation development. 
+ 
+Constant pressure to keep electricity cost low favors more coal in the generation mix, where new coal plants are expected 
+to lock in several million tons of greenhouse gas (GHG) emissions during their useful life. To maintain a stable economic 
+growth rate and achieve the national access goal, Indonesia is expected to become increasingly dependent on energy 
+imports of up to 25 percent of total demand by 2019. 
+ 
+President Joko Widodo committed Indonesia to a Nationally Determined Contribution (NDC) at 29 percent reduction of 
+national greenhouse gas (GHG) emissions by 2030 at the 2015 COP21 in Paris. For the national energy planning, this is 
+translated into an ambitious target to increase the share of renewable energy in the power generation mix to 23 percent by 
+2,688 
+5,956 
+18,671 
+6,384 
+7,914 
+7,860 
+5,548 
+7,292 
+11,299 
+4,260 
+ -
+ 2,000
+ 4,000
+ 6,000
+ 8,000
+ 10,000
+ 12,000
+ 14,000
+ 16,000
+ 18,000
+ 20,000
+2017
+2018
+2019
+2020
+2021
+2022
+2023
+2024
+2025
+2026
+CFPP
+HEPP
+GeoPP
+CCPP
+GT/GEPP
+Other RE
+
+=== PAGE 11 ===
+DETAILED PROJECT / PROGRAMME DESCRIPTION 
+ 
+GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 8 OF 56 
+ 
+ 
+C 
+2026. Geothermal energy is planned to contribute 7 percentage points of the 23 percent, which is equivalent to adding 5.8 
+GW to the present 1.8 GW geothermal generation capacity. This would require investments in the order of US$ 25 billion 
+(assuming an average cost $4.3 million per MW as per Indonesian experience), most of which would have to come from 
+the private sector.  
+ 
+Indonesia’s geothermal power potential is estimated at around 29 GW, roughly 40 percent of the world’s known reserves. 
+Geothermal resources in Indonesia can be found on islands with large populations, such as Sumatra and Java-Bali, where 
+electricity demand is high and growing, as well as in more remote regions such as Eastern Indonesia, offering an opportunity 
+for poverty alleviation through rural electrification and substitution of expensive diesel-based generation. Despite this 
+tremendous potential, only 1.8 GW, or about six percent, of geothermal resources in Indonesia has been developed to 
+produce power due to the high resource risk coupled with high drilling costs. 
+ 
+Figure 2: Potential Geothermal Resources in Various Islands in Indonesia 
+ 
+ 
+Geothermal power is a baseload generation technology not subject to the same intermittency and variability associated 
+with most renewable energy sources. Under the right conditions, it can be cost-competitive with coal or natural gas, which 
+means that countries with such indigenous resources can depend less on imported fuels and increase their energy security. 
+As a cleaner source of electricity, geothermal energy can play a significant role in decarbonizing the power sector and 
+furthering the country’s climate change agenda. It can also contribute to expanding access to electricity, economic growth, 
+job creation, and boosting prosperity, particularly on the eastern islands where electrification rates are much lower and 
+poverty rates higher than the national average. 
+ 
+Geothermal energy is developed through a multi-stage approach that begins with surface investigations followed by 
+exploration drilling to confirm the availability of the geothermal resource, and by delineation drilling to confirm the extent of 
+the resource. The key parameters of geothermal development – temperature, permeability, and resource size – can be 
+estimated from geoscientific surveys, but can only be confirmed through an exploration drilling program, which in Indonesia 
+is estimated between US$20 – 40 million for a minimum of three wells in a greenfield project. Exploration drilling requires 
+owner’s equity or balance sheet finance, which is put at risk without a chance of recovery if the resource is not adequate. 
+Therefore, even though initial costs for exploration drilling are modest compared to the total cost of developing all stages 
+of a geothermal operation, finding this initial capital can be challenging for developers. 
+ 
+The geothermal tariff system in Indonesia, while underpinned by the need to keep electricity prices low, has not been 
+conducive for geothermal development, particularly for the private developers. The first geothermal power plant in Indonesia 
+was developed in 1983 by Pertamina, the state-owned oil and gas company. Throughout the end of the 1990s, PLN offered 
+competitive tariffs for geothermal of around USc 7-10/kWh (about twice that if converted to 2018 US$) and several projects 
+were implemented through Joint Operation Contracts with private sector companies from the oil and gas industry who were
+
+=== PAGE 12 ===
+DETAILED PROJECT / PROGRAMME DESCRIPTION 
+ 
+GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 9 OF 56 
+ 
+ 
+C 
+willing to take resource risk. The 1998 Asian Financial Crisis caused the Indonesian rupiah (IDR) to fall dramatically against 
+the US dollar and compromised PLN’s financial position. The Government of Indonesia (GoI) was forced to decrease the 
+geothermal tariff to less than USc 5/kWh. Most geothermal projects subsequently became unviable at the new tariff level 
+and all the original private geothermal developers have exited the Indonesian market since the lower tariffs no longer were 
+seen to compensate for the high resource risk. Since then, the GoI has made several attempts to find an optimal geothermal 
+tariff system. Recent regulation that related geothermal tariffs to the average cost of generation (BPP) provides for workable 
+tariffs in eastern Indonesia, whereas workable prices only can be achieved through so-called Business-to-Business (B2B) 
+negotiations with PLN in the country’s main load centers where avoided costs are lower. Whereas the tariff framework 
+needs further improvements, market sounding has demonstrated that an effective exploration risk mitigation scheme would 
+facilitate investments under the existing conditions.  
+ 
+GoI has realized that reaching its ambitious target for scaling-up geothermal-powered generation will require: (i) judicious 
+use of public funds while mobilizing private sector capital at a large scale; (ii) implementation of an effective upstream risk 
+mitigation mechanism; and (iii) ensuring a conducive doing-business environment with transparent and competitive 
+licensing and power purchase agreement (PPA) award procedures, effective cost-competition for drilling services, as well 
+as management of bottlenecks related to drilling in forest areas. GoI sees the present Project as the main vehicle to achieve 
+these goals – thanks to its risk mitigation facility and capacity building and technical assistance program. 
+ 
+Prior to 2017, tariffs were the element of competitiveness for the tendering of geothermal concessions/licenses. At that 
+time, the winning bidder would be awarded the concession and could sign the PPA before conducting the exploration – 
+there are still a number of such “grandfathered” licenses in Indonesia.  Since 2017, tariffs are no longer included in the 
+tender procedure and exploration drilling should be completed and resource confirmed before a PPA can be signed. The 
+Ministry of Energy and Mineral Resources (MEMR) conducts the concession tender, issues the geothermal license, and 
+supervises geothermal development at all stages. Only one entity can be awarded a geothermal license for one geothermal 
+work area. However, it is possible that the entity which engages in the earlier phase of resource confirmation and steam-
+field development be different from the entity which develops the later phase of power plant development. PPAs are signed 
+with PLN as the sole off-taker and the tariff is stated in US dollar; however, the actual payment to the developer will be in 
+Indonesian rupiah using the exchange rate at the payment date, which does not introduce foreign exchange risk. 
+ 
+Effective facilitation of greater investments in the sector investments will also require close coordination among key 
+stakeholders, namely the Ministry of Energy and Mineral Resources (MEMR), Ministry of Finance (MoF), Ministry of 
+Environment and Forestry (MoEF), and the local governments. 
+ 
+C.2. Project / Programme Objective against Baseline 
+Describe the baseline scenario (i.e. emissions baseline, climate vulnerability baseline, key barriers, challenges and/or 
+policies) and the outcomes and the impact that the project/programme will aim to achieve in improving the baseline 
+scenario. 
+ 
+Based on Indonesia’s First Biennial Update Report submitted to the United Nations Framework Convention on Climate 
+Change (UNFCCC) in January 2016, national GHG emissions were 1.453 GtCO2e in 2012. The main contributing sectors 
+were land use change and forestry, including peat fires (47.8%) and energy (34.9%).  For the energy sector, the baseline 
+scenario for Indonesia is rapid fossil-fired generation expansion in Indonesia in the short and medium term. 
+ 
+The persistently low and declining commodity prices will continue to drive cheap coal-fired generation in the major grids of 
+Java, Bali and Sumatra; and diesel-fired generation on the small grids of the poorer Eastern islands. The GoI’s coal-based 
+electricity generation expansion plan poses significant challenges. In addition to increasing Indonesia’s dependence on 
+fossil fuels for power generation for years to come, it will also exacerbate local and global environmental impacts. Over 80 
+percent of the current electricity generation in Indonesia is based on fossil fuels, and environmental conditions will further 
+deteriorate when the planned additional 10 GW of coal-based capacity is fully commissioned (See Figure 1).  
+ 
+In more recent years, the GoI has begun to increase support for renewable energy with geothermal power making up 40 
+percent of the expected renewable energy generation target. This investment in renewable energy will reduce the carbon 
+footprint of the power sector and lower local environmental impacts. Nevertheless, with the increasing power demand, the
+
+=== PAGE 13 ===
+DETAILED PROJECT / PROGRAMME DESCRIPTION 
+ 
+GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 10 OF 56 
+ 
+ 
+C 
+national mandate for universal electrification, and the projected supply gap, Indonesia is expected to resort to fossil fuel 
+sources that will lock in millions of tons of GHG emissions for the long term. 
+ 
+Exploration drilling risk, also known as resource risk, is the biggest barrier to obtain financing as the uncertainties 
+associated with the availability of productive and developable resources increase investors’ requirements for return on 
+equity. In the absence of major developers willing to take on resource risk at a large scale, the World Bank through its 
+Geothermal Energy Upstream Development Project (GEUDP) has begun to support the GoI in addressing this issue. 
+GEUDP provides financing for government-sponsored exploration drilling in unassigned geothermal work areas (Wilayah 
+Kerja Panas Bumi, or WKPs). The Project is financed by US$49 million contribution from the GoI through the Government’s 
+Infrastructure Fund for Geothermal Sector (also known as Pembiayaan Infrastruktur Sektor Panas Bumi, or PISP) matched 
+by a US$49 million contingent grant from the Clean Technology Fund (CTF), as well as a US$6.25 million technical 
+assistance grant from the Global Environment Facility (GEF);it is implemented by PT Sarana Multi Infrastruktur (SMI) (the 
+same entity as the one who would manage the proposed Geothermal Resource Risk Mitigation Project under this Funding 
+Proposal), a state-owned enterprise. The project started in July 2017 and drilling is expected to start in the second half of 
+2018. 
+ 
+The GoI has realized that even though GEUDP can make an important contribution, the capacity of SMI to carry out drilling 
+on its own remains limited (at no more than two projects per year) and this modus operandi will not be sufficient to facilitate 
+the planned scale-up of geothermal development. The GoI therefore wishes to expand the risk mitigation to exploration 
+drilling that can be implemented by SOEs and private developers. This would complement the government-sponsored 
+drilling and crowd in private sector financing.  
+ 
+MEMR has further designated 67 WKPs for development over the next seven years (see Figure 3), even though both the 
+geothermal industry and MEMR assess that it is unrealistic that the pipeline will move without an effective resource risk 
+mitigation mechanism. The proposed Project, including the scope and design of the Facility it supports, aims to address 
+this issue (see Section C.3 below). 
+ 
+Figure 3: Designated Geothermal Work Areas by Ministry of Energy and Mineral Resources
+
+=== PAGE 14 ===
+DETAILED PROJECT / PROGRAMME DESCRIPTION 
+ 
+GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 11 OF 56 
+ 
+ 
+C 
+ 
+Against the baseline identified above, the project interventions are expected to enable reduction of 187 – 281 MtCO2e over 
+the lifetime of the generating assets, an additional electric power generation capacity of 1 – 1.5 GW from geothermal 
+resources and US$4 – 5.5 billion of mostly private capital mobilized for investment in geothermal power generation. 
+C.3. Project / Programme Description 
+Describe the main activities and the planned measures of the project/programme according to each of its components.  
+Provide information on how the activities are linked to objectives, outputs and outcomes that the project/programme 
+intends to achieve. The objectives, outputs and outcomes should be consistent with the information reported in the logic 
+framework in section H. 
+ 
+The objective of the proposed Project is to scale up investment in geothermal energy development and support Indonesia 
+in its efforts to reduce GHG emissions in the country. The Project will contribute to Indonesia’s geothermal development 
+goal of adding 5.8 GW by 2026, and in doing so, contribute to: (i) displacing highly-polluting power supply alternatives and 
+further diversifying its generation portfolio; (ii) reducing reliance on fossil fuels and exposure to commodity price volatilities; 
+and (iii) ultimately lowering emissions from the energy sector in comparison to the business-as-usual (BAU) scenario. 
+ 
+The full Project will have two components:  
+• 
+Component 1, US$500 million, for geothermal resource risk mitigation (with additional US$150 million in parallel 
+financing from SMI/PISP); and  
+• 
+Component 2, US$10 million, for technical assistance and capacity building. 
+ 
+Based on a request from GCF this proposal has been prepared with the understanding that if it is funded, the GCF funding 
+may be divided into two tranches with tranche one being committed immediately and tranche two being subject to separate 
+approval at a later stage. Throughout the proposal, reference has been made to the items where a tranched approach 
+would have effect. This proposal therefore covers the total project as well as a specific focus on Tranche 1 (T1). 
+Under the proposed Project, a new Geothermal Resource Risk Mitigation Facility will be established. The existing 
+government-sponsored exploration drilling program supported by the GEUDP will become the first window under the 
+Facility, and two additional windows will be created: (i) a Public-Sector Window and (ii) a Private-Sector Window. The 
+Facility will be managed by SMI as the financial intermediary.  
+ 
+Under Component 1 (Geothermal Resource Risk Mitigation; US$500 million from IBRD and GCF (with US$150 
+million parallel financing from Government of Indonesia), SMI, through the Facility, will provide to geothermal 
+developers debt financing for their resource confirmation drilling2, through: (i) the extension of soft loans to public sector 
+developers, and (ii) the extension of loans to private developers and the subscription of convertible bonds issued by private 
+sector developers, to be used alongside the private developer’s equity. As explained at the end of Section C.1, it is only 
+after resource has been confirmed that new developers can enter into a PPA and achieve financial close for the 
+development and operation of the corresponding power plant. The proposed Facility will propose support for the exploration 
+and delineation/test drilling - these early phases are considered highest risk (See Figure 5), for which developers can only 
+use corporate finance and no project finance would be possible. The financing support will cover exploration and 
+delineation/test drilling depending on the size of the sub-project, to confirm whether there is sufficient productive steam 
+resource for power generation. After the resource is confirmed, the developer can negotiate (i) a PPA (if the Developer has 
+not benefited from pre-2017 regime grandfathering), and (ii) financing from commercial or other lenders under a project 
+finance structure, for power plant development and exploitation drilling. As such, the support provided under the proposed 
+project is a prerequisite which, if the resource is confirmed, would allow the subsequent phase (power plant development 
+and exploitation drilling) to be financed by commercial and other financiers.  
+ 
+For each sub-project, it is envisaged that the Facility debt support will be capped at US$30 million for both windows.  
+ 
+• 
+For the public-sector window, support will be provided to public entities, such as state-owned enterprises (SOEs), 
+SOE subsidiaries, or public service agencies. It is expected that SMI will provide a soft loan (using funds from IBRD 
+                                                             
+2  
+A resource confirmation program consists of an initial phase of exploration drilling, the successful conclusion of which will 
+be followed by a phase of delineation/test drilling.
+
+=== PAGE 15 ===
+DETAILED PROJECT / PROGRAMME DESCRIPTION 
+ 
+GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 12 OF 56 
+ 
+ 
+C 
+and the GCF soft loan to do so), which would be matched (50/50) by funds from PISP. At the discretion of MoF, 
+the PISP part of the loan could include a contingent feature to allow SMI to forgive and write off up to 50 percent of 
+the loan in case the SOE relinquishes the license for the WKP in question (i.e., the exploration is deemed 
+unsuccessful3). PISP funds with loan forgiveness cannot be used for the private sector window due to the risk of 
+potential inequitable or non-transparent subsidies being delivered. It is expected that SMI will make available to 
+public sector developers 20-year loans with financial terms derived from the financial engineering of the GCF’s soft 
+loan terms, IBRD loan terms and PISP loan terms, plus SMI’s reasonable mark-up and costs. It is expected that 
+one public sector sub-project will be supported under Tranche 1 with additionally up to three public sector sub-
+projects financed under Tranche 2 with the last project financed in the 2020-2021 timeframe.  
+ 
+Flow of Funds under the Public Sector Window 
+ 
+ 
+ 
+• 
+For the private sector window, it is assumed that a project owner (Sponsor) has created a special purpose vehicle 
+(SPV – referred to as the “Developer”4) to develop a geothermal site and has secured a license to explore (which 
+also will confer the right to exploit the geothermal reservoir to the same SPV).  Developers will be required to 
+commit Sponsor Funds equivalent to at least 25 percent of the total cost of the exploration drilling program with the 
+remaining funds coming from SMI (maximum US$30 million). For exploration this support can be funded in equal 
+portions from an SMI Loan financed by IBRD funds and a convertible bond (CB) package financed from the GCF 
+Reimbursable Grant. The Reimbursable Grant would have a tenor of 10 years, with the last sub-project financed 
+by year 4 to accommodate a maturity of the CB of six years which is the maximum time resource confirmation is 
+expected to take up to six years. The SMI Loan will initially be for four years and for exploration only but can be 
+extended through an additional loan for delineation. As the CB will have a maturity of 6 years, new 
+issuances/purchases will stop after Year 4 of project implementation to ensure that all reflows can be captured 
+before the closing date. For the delineation drilling an additional SMI Loan financed from IBRD would be offered 
+without matching funds from GCF – this loan could be of a size up to US$30 million. It is expected that the resulting 
+IBRD financing over a portfolio of deals would be in a proportion of 2:1 with the GCF funds (GCF Reimbursable 
+Grant: US$150 million leveraging a total of US$300 million IBRD funds. 
+ 
+                                                             
+3 A successful sub-project is one that has confirmed the geothermal resource and where this resource is adequate for a financially viable 
+operation. 
+4 The main eligibility criteria to be fulfilled by Developers include: The company has been operating for a minimum of three years, or in the case of 
+a new company, at least one of the founding companies/parent companies/JV partners (Sponsors) have been operating for a minimum of three 
+years; (ii) The company has at least three years of audited financial statement or in the case of a new company, at least one of the Sponsors has 
+three years of historical financial statements, with minimum two years audited financial statements; (iii) The company has a valid Geothermal 
+WKP license; (iv) The company, or in the case of a new company, at least one of its Sponsors, has geothermal exploration expertise (as indicated 
+in project references) and/or engaged consultants (as indicated in the key personnel curriculum vitae) which have such experience; (v) The 
+company, or in the case of a new company, its Sponsors, has/have never been involved in any activities related to money laundering and/or 
+financing of terrorism (assessment of anti-money laundering and prevention of financing of terrorism in application of SMI’s internal financing 
+procedure), and is not under sanction in application of the WB sanction regime with respect to fraud and corruption.; and (vi) The company 
+provides a proper environmental and social impact documentation and policy.
+
+=== PAGE 16 ===
+DETAILED PROJECT / PROGRAMME DESCRIPTION 
+ 
+GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 13 OF 56 
+ 
+ 
+C 
+• 
+The CB is an innovative instrument to mitigate the resource risk of geothermal exploration. GCF funds are used to 
+provide the co-financing (alongside the IBRD Loan), which allow SMI to extend a debt for the financing of the 
+geothermal exploration. In addition, and unlike the funds provided through the IBRD Loan, the proposed instrument 
+allows GCF to participate both in the Sponsor’s possible downside and possible upside resulting from the 
+exploration (as the case may be). GCF’s revenues from sharing of the upside (through monetizing part of the value 
+created through successful exploration) are intended to balance the losses incurred from sharing in the downside 
+(i.e. losses from potentially unsuccessful exploration ventures) at the overall Facility level. The guiding principle is 
+that when a sub-project is successful SMI should be able to flow back to GCF not only the reimbursement of the 
+grant amount used to finance the CB but also a share of the additional value created. 
+ 
+• 
+The mechanics of the CB is that SMI will provide debt through a bond facility under which the amount to be repaid 
+will be calculated at the time of repayment based on the value of the geothermal Developer. The general idea is 
+that the Sponsor can choose to buy back the CB as long as it is willing to pay a premium of 30-50% (the original 
+value of the CB plus the premium is referred to as the Notional Bond Value – NBV) depending on how long time 
+SMI has held the CB. However, if the Sponsor believes the value of the Developer is limited due to inconclusive or 
+unsuccessful exploration and wants to pay less than the NBV, then the Sponsor can have the Developer valuated 
+and will be allowed to pay only a share commensurate with its financial participation level (Share of Participation) 5 
+of the estimated value. This creates a market based price setting of the CB. 
+ 
+• 
+There is a clear strategy for exit of GCF participation to ensure that GCF always gets at least the Share of 
+Participation of any residual value of a partially successful or unsuccessful sub-project based on fair market value 
+at the time of exit from the sub-project. Sub-project exit will happen either due to (i) Sponsor buy-back of the CB, 
+(ii) SMI exercising its conversion option or (iii) project abandonment and handing-back of drilling license.  
+ 
+(i) 
+In case the Sponsor buys back the CB the result is payment either of the NBV or the Share of Participation 
+of the estimated market value of the Developer. The other two cases are briefly described below 
+ 
+(ii) 
+In some events SMI would have to monetize its conversion option because the Sponsor disagrees to buy 
+back the CB for whatever reason. In this case, SMI would first try to sell or auction off the CB (including the 
+conversion option) to a third-party developer. In such case, the exit will be the sale of the conversion option 
+for the best price received through the auction process. In case the CB cannot be sold SMI may consider 
+converting the CB into shares as a way of monetization, whether through a sale of the shares of the 
+Developer or a liquidation of its assets6. However, if SMI is unable to sell the CB into shares of the 
+Developer, it is an indication from the market that the CB lacks value. If, after two unsuccessful attempts, 
+the CB cannot be sold then SMI can either ask permission from IBRD to write off (see point (iii) below) or 
+choose to convert into shares and try to sell those7.  Any funds raised will be returned to GCF.     
+ 
+(iii) SMI will only have the right to write off the CB (i.e. no longer actively seek to monetize a CB for the purpose 
+of returning funds to GCF) provided (i) the Developer hands back his exploration license following proof 
+that exploration drilling was unsuccessful (as per feasibility study and drilling logs verified by independent 
+technical experts which confirms to IBRD that no useful resource is found), and (ii) SMI has demonstrated 
+in a manner acceptable to IBRD (following guidelines specified in the Operations Manual) that the expected 
+value of the residual assets of the Developer is not worth an auctioning. An additional event that can trigger 
+a write-off (depending on IBRD consent) is that there have been no takers in spite of two consecutive 
+attempts to auction off the CB (see point (ii) above). In this context it is worth to note that with the license 
+handed back, the Developer is no longer allowed to carry out geothermal development on the site and will 
+therefore have no residual value related to steam resources on the site. As an antigaming measure, neither 
+the Sponsor nor any associated person or company may take ownership of the right to explore or exploit 
+the same site for geothermal activity for a period of 10 years. 
+ 
+                                                             
+5 This share will be equivalent to the share of the total exploration costs financed from the CB (maximum 37.5%). 
+6 The AE confirms that according to legal due diligence by Indonesian legal expertise SMI will be able to convert the CB into shares 
+and to auction such shares to the public. 
+7 In the case the shares are sold, then due to the nature of the situation, it can be assumed that value of the Developer is lower than 
+the NBV and that a buyer would therefore be able to take control of the Developer. If there is any residual value in the Developer it 
+can therefore be monetized through this sale. If a sale is not feasible it is indication that the value of the Developer is close to zero.
+
+=== PAGE 17 ===
+DETAILED PROJECT / PROGRAMME DESCRIPTION 
+ 
+GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 14 OF 56 
+ 
+ 
+C 
+• 
+This mechanism will ensure that GCF will take resource risk without taking regulatory risk. If, in spite of successful 
+exploration, a project does not move to financial close before year 6, for instance due to protracted off-take price 
+discussions, the CB can still be monetized through auction to third party or through independent valuation.  
+ 
+• 
+If the entire operation is so successful that the reflows received by SMI are in excess of the principal amount 
+disbursed to it by IBRD under the Reimbursable Grant Agreement, such excess funds shall be considered “Surplus 
+Amounts” which are not subject to repayment to GCF. The legal agreement between IBRD and SMI shall provide 
+that the SMI shall only use Surplus Amounts to support the objective of the Project, i.e. to mitigate resource risk for 
+geothermal exploration. The Surplus Amount will be reduced by tax payments by SMI. There will only be taxation 
+of the difference between Facility revenue (reflows) and loss (when CB is not paid back in full) meaning that taxation 
+will never reduce the amount to be reflowed to GCF. 
+ 
+• 
+In conclusion, the CB mechanism will achieve (i) full repayment of the original value of the CB plus an upside to be 
+passed on by SMI to GCF if a Developer’s exploration is successful, and (ii) partial or no repayment of the CB (due 
+to reduced payment received by SMI under the CB) in the cases where the exploration is only partially successful 
+or unsuccessful. The full details of the conversion mechanism are spelled in the Operations Manual. A model of 
+fund flows and reflows using realistic assumptions of the drilling risks has been prepared to estimate facility-level 
+profits/losses under different scenarios. The model has been included with this Funding Proposal package and its 
+key findings are further elaborated in Section E.6.3.  
+ 
+Flow of Funds Under the Private Sector Window 
+ 
+ 
+As necessary, technical assistance will be provided under Component 2 of the Project to support SMI. SMI will need to 
+implement World Bank-compliant financial management system, which will ensure proper use of funds and rigorous due 
+diligence process to ensure that loans are based on benchmarked cost estimates and that the funds are used to finance 
+the intended activities. WB will monitor compliance and, as per the IBRD Loan Agreements, in case non-compliance is not 
+addressed in a timely manner the WB will have the right to exercise its remedies (i.e. principally suspension of 
+disbursements or early repayment of amounts used for ineligible expenditures). For the 10 years of the Facility life, the 
+World Bank will receive and send on to GCF periodic reports on the loan performance and repayments.  
+ 
+In terms of facility uptake, several public and private developers have already expressed interest in the financing support 
+to be made available through the Facility during the earlier rounds of market sounding. The market sounding was conducted 
+with all the state-owned developers and the largest and most active private developers. Among the private developers, 
+established developers such as Medco Power, Supreme Energy, and Energy Development Corporation (EDC) as well as 
+a considerable number of emerging players have expressed interest to step in when risk mitigation facility is in place. Of 
+these, four projects with existing PPA arrangements are the most likely to seek financing from the Facility. Of the public 
+sector developers, Geo Dipa Energi, a geothermal developer mostly owned by MoF, holds licenses for three WKPs and
+
+=== PAGE 18 ===
+DETAILED PROJECT / PROGRAMME DESCRIPTION 
+ 
+GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 15 OF 56 
+ 
+ 
+C 
+has expressed strong interest. Pertamina Geothermal Energy (PGE) has indicated interest for one project, while PLN has 
+indicated that they would be interested in support that could help attract private funding and expertise to implement their 
+large portfolio of recently granted licenses (seven licenses assigned in 2017 with another seven expected to be assigned 
+in near future) as part of its expansion of electricity supply in eastern Indonesia. The market indicated interest in the Facility 
+and confirmed the attractiveness of the proposed financial instruments. 
+ 
+The list of WKPs as indicated by MEMR presents a potential project pipeline (refer to Annex 1) consisting of projects that 
+have already been licensed to private developers or assigned to public developers. There is also a list of unassigned areas 
+where market forces are expected to push developers to move first to sites with highest development potential and bring 
+these into the Facility in a second wave of projects. The potential resources were estimated based on earlier surface 
+investigations and surveys. Based on the sizes of the projects, the Facility is expected to enable drilling of up to 20 projects 
+on a first come-first served basis (subject to due diligence) (this assumes a commitment period of 6 years so that the funds 
+can be paid back to SMI before the initial 10-year project lifespan.  
+ 
+The project pipeline consists of domestic and international developers, many of which have extensive experience in 
+geothermal development and all are well aware of the tight regulatory environment. Nevertheless, one-on-one market 
+sounding have confirmed the interest of several private developers in accessing financing provided through the facility, and 
+in some case, readiness to submit a funding application. Tariff negotiations are in any case expected where the average 
+cost of generations is low and while regulation can be improved (with the support of the technical assistance envisioned 
+under the proposed project), there is consensus among developers that exploration drilling is where support is most needed. 
+Funding support using concessional finance is critical to reducing to overall cost of electricity generation, thereby reducing 
+the tariff requirements to make projects developed by independent power producers (IPPs) viable. 
+ 
+Based on the project sizes and the proposed support to the developers, the funding allocation for each window is expected 
+to be as follows. 
+ 
+Table 2: Funding Allocation by Windows (US$) 
+ 
+ 
+SMI / PISP 
+(parallel financing) 
+World Bank / IBRD 
+Green Climate Fund 
+Total 
+Public Sector Window 
+150 
+25 
+25 (T1: 7.5) 
+200 
+Private Sector Window 
+0 
+300 
+150 (T1: 90) 
+450 
+Facility 
+150 
+325 
+175 (T1: 97.5) 
+650 
+ 
+After exploration drilling, delineation drilling could be financed by SMI using IBRD funds or any other funds from 
+development partners and banks who have an interest in doing so and can offer similar terms such as possibly the 
+International Finance Corporation (IFC), Kreditanstalt fur Wiederaufbau (KfW), Agence Francaise de Developpement (AfD), 
+Asian Development Bank (ADB), and Japan Bank for International Cooperation (JBIC). KfW and AFD in particular have 
+expressed interest in cooperating with SMI and the World Bank on support to geothermal development via parallel financing 
+towards the proposed resource risk mitigation facility. Discussions are ongoing with KfW and AfD on aligning the eligibility 
+criteria and financing terms that would allow a concerted approach to risk mitigation envisaged under the Facility. There is 
+also an option that a soft loan from the Canadian government can be mobilized as parallel financing of the resource 
+confirmation loans in parallel with the IBRD funds, which could serve to further bring down the financing costs. 
+ 
+The outputs for Component 1 will be blended soft loans for exploration and delineation well drilling and auxiliary 
+infrastructure built by public and private developers. The outcomes will be resource risk removed on geothermal greenfield 
+areas through drilling, and therefore financial close achieved for steam-field development and power plant construction. 
+Depending on the project size, this would leverage an additional US$4 – 5.5 billion investments by 2030, an additional 
+geothermal power capacity of 1 – 1.5 GW, and 6.2 – 9.3 MtCO2e/year. The outcome and result indicators are described in 
+more details in Section H.1. The estimated development impact from the first tranche of GCF allocation is expected to be 
+around 60% of the impact from the total project. 
+ 
+Figure 4: Stage-wise Risk Profiles and Capital Requirements for Geothermal Development
+
+=== PAGE 19 ===
+DETAILED PROJECT / PROGRAMME DESCRIPTION 
+ 
+GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 16 OF 56 
+ 
+ 
+C 
+ 
+ 
+ 
+Component 2 (Technical Assistance and Capacity Building; US$10 million from the Green Climate Fund) will finance 
+a multi-year support program to cover for incremental operating costs and enhance SMI’s capacity in managing the Facility, 
+to build capacity within the key sector stakeholders and to provide technical assistance support towards improving the 
+overall sector governance and investment climate for geothermal development in Indonesia. Tranche 1 allocates US$2.5 
+million to support Component 2. 
+ 
+Support will include broad assistance in governance of the Facility and management of the GREM portfolio. This support is 
+expected to cover the implementation/management fees for the duration of the proposed Project. It is expected that a 
+Project Management Unit will be established within SMI to run the Facility. The PMU will be led by the Head of PMU, 
+supported by a Project Manager with two Deputies for Operational and Planning/Administration. The PMU will include a 
+team of specialists responsible for technical, procurement, financial management, and environmental and social 
+safeguards. GCF grants will be used to support around half of the project management and incremental operating costs 
+related to facility management by SMI. 
+ 
+An Exploration Supervision Team (EST) in SMI will be responsible for the Facility’s technical, financial and legal aspects. 
+Support under Component 2 may include further development of eligibility criteria, vetting developers’ proposals, validating 
+complex geoscientific data, and evaluating the quality of environmental and social safeguards due diligence and developers’ 
+financial capability. Furthermore, the EST is expected to review the outcome of the drilling carried out by developers and 
+supervise drilling activities as dictated by the sub-project’s business needs. The EST will leverage in-house knowledge of 
+SMI’s developed under GEUDP on key drilling strategies, critical cost benchmarks, project management timelines and 
+management of project and portfolio risks. Specifically, the support could also cover the following areas: 
+ 
+- 
+Technical Advisory would support SMI in procuring the service of a firm with specialized geothermal expertise in 
+reviewing the geology, geochemistry and geophysics surveys (3G surveys) and topographic mapping for project 
+proposals. Technical assistance will be delivered through strong on-site support and on-the-job training from 
+technical consultants that are world-class experts in the geothermal field.  
+- 
+Financial Advisory would support SMI to carry out financial due diligence of borrowers, which includes but are not 
+limited to integrity due diligence such as anti-money laundering/combating the financing of terrorism (AML/CFT), 
+blacklists and reputational risk searches.
+
+=== PAGE 20 ===
+DETAILED PROJECT / PROGRAMME DESCRIPTION 
+ 
+GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 17 OF 56 
+ 
+ 
+C 
+- 
+Legal Advisory would allow SMI to retain legal services to handle ad-hoc issues related to loan and contract 
+management. 
+ 
+Regulatory support would be targeted at MEMR, with a view to improving the investment climate and doing business 
+environment in the sector and addressing the key sectoral bottlenecks to scaling up geothermal development. This would 
+cover, but not be limited to, support to MEMR in understanding the economics and impacts of the existing (including 
+geothermal) tariff system. MEMR would also benefit from support on geothermal upstream development, with a focus on 
+improving the tender process for unassigned WKPs. 
+ 
+Capacity building could support SMI, PLN and Geo Dipa as key stakeholders of an inclusive geothermal development 
+program in Indonesia. The support could include assistance with: transmission and distribution planning for geothermal 
+development, geothermal geoscientific and resource data management, drilling management expertise, procurement and 
+contract management expertise, preparation and implementation of project-level gender action plan (GAP), and twinning 
+arrangements for better on-the-job learning and sharing of best practice in geothermal sector in Indonesia.  Finally, technical 
+assistance could include research on the feasibility of other geothermal financing instruments, possibly involving the capital 
+markets. 
+ 
+The outputs for Component 2 will be: (i) a well-staffed and competent Project Management Unit to support SMI in 
+managing the Facility; (ii) technical, financial and legal advice and upstream development and regulatory support to MEMR 
+to improve the sector investment climate; (iii) capacity building and training activities provided to key sector stakeholders; 
+and (iv) research on future possible instruments to finance geothermal activities. The outcomes will be improved capacity 
+of SMI in managing a complex geothermal funding facility, better human resources with knowledge of cutting edge 
+geothermal knowledge and drilling management capacity for state-owned entities, and more appropriate tariff-setting 
+mechanisms and transparent license allocation process by policy-makers such as MEMR. The support envisioned would 
+also assist with enhancing SMI’s capability to manage and ensure compliance with the Project’s environmental and social 
+safeguards standards, complementing the support on safeguards management provided under GEUDP. The outcome and 
+result indicators are described in more details in Section H.1. 
+ 
+C.4. Background Information on Project / Programme Sponsor (Executing Entity) 
+Describe the quality of the management team, overall strategy and financial profile of the Sponsor (Executing Entity) and 
+how it will support the project/programme in terms of equity investment, management, operations, production and 
+marketing. 
+ 
+SMI – an accredited entity with GCF – will be the Executing Entity for this Project and owner of the Facility in a financial 
+intermediary function.  This would include vetting process for the pipeline and setting eligibility criteria for developers 
+accessing the Facility’s funds, among others. The Project Management Unit (PMU), which has been established within SMI 
+to manage GEUDP, will also manage the expanded Facility and handle the interfacing with developers. The PMU will be 
+sized up as appropriate and be aided by a world-class specialized geothermal consultant with deep geotechnical and 
+geothermal market expertise to help SMI manage the developers and prepare relevant recommendations to key 
+stakeholders. 
+ 
+With 100 percent ownership by the Indonesian Ministry of Finance, SMI is a non-bank financial institution with a mandate 
+to facilitate the implementation of the GoI’s infrastructure development agenda through partnerships with private and 
+multilateral financial institutions. SMI is expected to transform into Indonesia’s national development bank and is seen as 
+the GoI’s key effort in creating a more open and transparent investment regime and better institutions for infrastructure 
+finance. Under a set of enabling regulatory mandates, SMI has plans to strengthen corporate governance, partnership 
+schemes and investor base to become the facilitator and financier for infrastructure crucial for Indonesia’s continued growth. 
+ 
+Most recently, MoF assigned SMI to be the Fund Manager for the PISP. In August 2017, MoF issued the ministerial 
+regulation (PMK No. 62-08/2017) to provide the legal basis and framework for the use of the PISP funds by SMI. PISP is 
+capitalized with about IDR 3.1 trillion, or US$229 million, to support geothermal exploration drilling through steam-field 
+development and power plant construction. With US$49 million already committed under GEUDP for government-
+sponsored exploration drilling, it is expected that US$150 million will be provided by GoI towards supporting exploration 
+and delineation drilling by public and private developers under the Facility.
+
+=== PAGE 21 ===
+DETAILED PROJECT / PROGRAMME DESCRIPTION 
+ 
+GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 18 OF 56 
+ 
+ 
+C 
+SMI has three primary business areas: investment and financing, advisory, and project development. It has developed or 
+is cultivating strategic partnerships with AFD (renewable energy), United Nations Development Program (wind power), 
+Asian Development Bank and Korea Development Bank (public-private partnerships transaction advisory), World Bank 
+(regional infrastructure development fund and geothermal exploration drilling), ADB and KfW (municipal financing and 
+development of environmental and social management system (ESMS)), and Gesellschaft für Internationale 
+Zusammenarbeit (GIZ) (renewable energy, energy-efficient street lighting, and sustainable urban transport/bus rapid 
+transit). In the medium term, SMI is expected to focus on: (i) structuring financing for electricity, transportation and dam as 
+national strategic priority projects, (ii) supporting local governments and regional development efforts, and (iii) developing 
+cooperation with donors and development partners in renewable energy and energy efficiency projects. This Project fits 
+within SMI’s corporate priorities and national development mandates. 
+ 
+SMI’s continued growth is backed by its prudent financial management. In 2017, it received a AA+(idn) Rating with a 
+Stable outlook by Fitch and IdAAA/Stable by PT Pemeringkat Efek Indonesia (PEFINDO), the oldest and most trusted 
+credit rating agency in Indonesia. SMI has maintained this high credit rating since 2014 (link to source). SMI raised IDR 5 
+trillion (US$ 370 million) and an IDR7 trillion (US$500 million) through bond issues for the First Sustainability Bond Phase 
+1 and 2, respectively. Phase 1 was oversubscribed by 20 percent and Phase 2 by 30 percent thanks to SMI’s high credit 
+rating, investor’s confidence and high interest in infrastructure bond. A summary of SMI’s financial performance during the 
+period of 2011 – 2016 is presented below.  
+ 
+Figure 5: SMI’s Financial Performance in Recent Years 
+ 
+ 
+ 
+In implementation of the Facility, it is expected that SMI will be overseen by a similar (if not the same) Joint Committee (JC) 
+established under GEUDP. The existing JC is made up of key stakeholders, namely MoF and MEMR. MoF and MEMR 
+provide strategic guidance to SMI related to the decision to drill and decision to tender a de-risked geothermal work area, 
+and in doing so, play an important coordination role. MoF is responsible for allocating funds to support sector development 
+through dedicated program (such as PISP), ministerial budgetary allocations, or fiscal incentives for geothermal
+
+=== PAGE 22 ===
+DETAILED PROJECT / PROGRAMME DESCRIPTION 
+ 
+GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 19 OF 56 
+ 
+ 
+C 
+development. MEMR is responsible for tendering and managing the tendered geothermal work areas and regulating 
+geothermal off-take price. Badan Geologi (BG), the Geological Agency of MEMR, supports project implementation through 
+supplying geological data on the candidate projects and providing SMI with technical inputs as relevant for screening 
+developers’ proposals.  
+ 
+Early assessment on environmental and social safeguards, procurement and financial management capacity finds that SMI 
+has the system in place to manage a large-scale lending facility (more in Section F). While GEUDP has supported SMI in 
+building its capacity for managing complex drilling operations, this Project will strengthen SMI’s system and capability for 
+managing a large fund for renewable energy investments. It will further expand SMI’s risk appetite and improve its capacity 
+in managing those risks, as stated as one of the objectives of Component 2.  
+ 
+SMI aims to implement Good Corporate Governance (“GCG”) to achieve the company’s business objectives as well as 
+protect the interests of all stakeholders. The implementation of GCG is based on Ministry of State Owned Enterprises (SOE) 
+Decree No. PER-01/MBU/2011 dated August 1, 2011 on the Implementation of Good Corporate Governance in State 
+Owned Enterprises. A schematic of the Corporate Governance Structure of SMI is presented below. 
+ 
+Figure 6: Corporate Governance Structure of SMI 
+ 
+ 
+ 
+C.5. Market Overview (if applicable) 
+Describe the market for the product(s) or services including the historical data and forecasts. Describe the competitive 
+environment including the list of competitors with market shares and customer base and key differentiating factors (if 
+applicable). Provide pricing structures, price controls, subsidies available and government involvement (if any). 
+ 
+Indonesia is currently the third largest geothermal market in the world with 1,809 MW of installed capacity, after the United 
+States (3,591 MW) and the Philippines (1,868 MW), as of January 2018. With its strategic location in the Pacific Ring of 
+Fire, Indonesia is blessed with high temperature productive resources for the indirect use of electricity generation. 
+Nevertheless, many of the large geothermal fields lie in conservation and protected forest areas. Besides resource risk, 
+land use, particularly in the conservation forest areas, remains a significant bottleneck for geothermal development. While 
+recent regulatory changes have been made to accommodate geothermal development in certain parts of conservation
+
+=== PAGE 23 ===
+DETAILED PROJECT / PROGRAMME DESCRIPTION 
+ 
+GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 20 OF 56 
+ 
+ 
+C 
+forest areas as per Geothermal Law 2014 and Ministry of Environment and Forestry Regulation (MoEF) No. 46/2016, steps 
+will need to be taken to translate the new regulation into clear implementation guidelines agreed by MEMR and MoEF. 
+ 
+The MoEF Regulation No. 46/2016 concerning the Utilization of Environmental Services for Geothermal in the National 
+Park, Grand Forest Park and Natural Recreation Park provides a legal basis to enable geothermal power development in 
+the utilization zones (zona pemanfaatan) of National Parks (Taman Nasional) and the utilization blocks of Grand Forest 
+Parks (Taman Hutan Raya) and Nature Recreational Parks (Taman Wisata Alam) through the Environmental Service Permit 
+(IPJLPB).The laws and implementing regulations prohibit geothermal power development in Nature and Wildlife Reserves 
+(Cagar Alam dan Suaka Margasatwa). Core zones and core blocks of these conservation areas remain legally off-limits for 
+such developments. The Facility will be in compliance with the government regulation and World Bank Policies OP 4.04 for 
+Natural Habitats. Development of geothermal power projects in high-risk conservation areas such as the core zones of 
+national parks will not be financed. 
+ 
+Under Presidential Decree No. 22/1981, Pertamina (the state-owned oil and gas company) was provided the mandate to 
+explore and operate the geothermal fields, sell steam to PLN (the state utility company), and enter into joint ventures with 
+local and international partners. The Joint Operation Contract (JOC) arrangement was introduced under the 1990s mining 
+regulations, when Pertamina was the only entity with the mandate to develop geothermal projects in Indonesia. Under JOC 
+signed between the partner and Pertamina. Pertamina holds the license and manages the geothermal work area, while the 
+private partner (which could be a contractor and/or an investor) operates the area for steam production and power 
+generation. JOCs have been operated under a Build-Own-Operate (BOO) or Build-Own-Transfer (BOT) arrangement (link 
+to source). Through the JOC the partner put in early funding to explore and develop the project on WKPs under Pertamina, 
+where Pertamina would later build and operate the geothermal power plant known as the total project. The subsequent 
+issuance of Geothermal Law No. 27/2003 and Oil & Gas Law No. 22/2001 mandated that Pertamina be required to meet 
+its future contractual obligations to continue to draw investor’s interest in developing geothermal business with Pertamina 
+and later, its subsidiary, Pertamina Geothermal Energy (link to source). 
+ 
+The first geothermal power plant in Indonesia was developed in 1983. Many projects were explored and developed under 
+the Joint Operation Contract (JOC) modality. The private partners involved in the JOCs included Chevron, Unocal, 
+Amoseas, Magma Nusantara, Bali Energy, Karaha Bodas, and Star Energy. All but Star Energy have now exited the 
+Indonesian market. These JOCs have facilitated the exploitation of some of the biggest geothermal fields: Darajat, West 
+Java (270 MW); Katheraha & Talaga Bodas, West Java (30 MW); Salak, West Java (377 MW); Kamojang, West Java (235 
+MW); Sarulla, North Sumatra (220 MW); and Wayang Windu, West Java (227 MW). For Wayang Windu, A 110 MW 
+extension is being planned, which will bring the total capacity up to 330 MW. The remaining fields in operation include: 
+Waypanas Ulubelu, Lampung (220 MW); Lahendong, North Sulawesi (120 MW); Dieng, Central Java (60 MW); Patuha, 
+West Java (55 MW); Sibayak, North Sumatra (12 MW); Ulumbu, East Nusa Tenggara (10 MW); and Mataloko, East Nusa 
+Tenggara (2.5 MW). 
+ 
+There are several public developers in the market. First, PT Geo Dipa was created in 2002 as a subsidiary of PT Pertamina 
+and PT PLN to develop two geothermal working areas of Dieng, Central Java (total potential of 400 MW), and Patuha, West 
+Java (also expected to be 400 MW). In 2011, Geo Dipa was transformed into a state-owned enterprise majority-owned by 
+MoF, and assigned two additional fields Umbul Telomoyo, Central Java and Arjuno Welirang, East Java. Second, Pertamina 
+Geothermal Energy (PGE) was created in 2006 as a wholly owned subsidiary of Pertamina, which has now inherited 
+Pertamina’s geothermal licenses. Third, PLN, the state power utility, has a unit dedicated to geothermal development. State-
+owned enterprises are considered catalytic to the GoI’s infrastructure delivery. Many of the key infrastructure projects and 
+programs have been implemented by SOEs. The challenge lies in developing a risk-sharing model where SOEs can use 
+government-backed lower borrowing costs to deliver public infrastructure cost-effectively without exposing the national 
+budget to undue fiscal burden, while creating a more conducive environment for private sector participation to help close 
+the infrastructure gap. 
+ 
+Through a competitive tender process and licensing procedure for geothermal licenses, MEMR has attracted to the sector 
+a wide range of developers. Medco Power (Indonesia), Supreme Energy (Indonesia), ENEL (Italy), Energy Development 
+Corporation (the Philippines) are all major energy developers and independent power producers. Others include Hitay 
+Energy (Turkey), Sabang Geothermal Energy, Jabar Rekin Geothermal, Vijaya Karya, Sintesa Banten, Giri Indah Aejahtera, 
+and Spring Energy Sentosa (Indonesia). These companies either are looking to expand their geothermal operations in 
+Indonesia or have obtained WKPs to develop geothermal power. The expected sizes of the projects can be found in Annex 
+1.
+
+=== PAGE 24 ===
+DETAILED PROJECT / PROGRAMME DESCRIPTION 
+ 
+GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 21 OF 56 
+ 
+ 
+C 
+The market has also observed active participation by Jacobs (New Zealand), GeothermEx (USA), Schlumberger (USA), 
+Halliburton (USA), and Pertamina Drilling Service, Inc (Indonesia) in providing specialized technical advisory in geotechnical 
+investigations and surface manifestations and development of drilling program, and/or drilling services. 
+C.6. Regulation, Taxation and Insurance (if applicable) 
+Provide details of government licenses or permits required for implementing and operating the project/programme, the 
+issuing authority, and the date of issue or expected date of issue. Describe applicable taxes and foreign exchange 
+regulations. Provide details on insurance policies related to project/programme. 
+ 
+The GoI issued Regulation No. 79/2014 on National Energy Policy (KEN), setting a target for renewable energy of 23 
+percent by 2026, even though the national energy supply is, and remains in the medium term, largely dominated by fossil-
+fuelled sources. Recent regulatory changes related to tariff setting and PPAs reflect the GoI’s efforts to facilitate geothermal 
+investment while keeping electricity costs affordable for consumers. 
+ 
+MEMR has issued several regulations to guide the development of the geothermal sector. The most pertinent to this Project 
+include: 
+(i) Regulation No. 17/2014 which mandates PLN to purchase geothermal steam and electricity produced by geothermal 
+power plants; 
+(ii) Regulation No. 44/2016 concerning the form and procedure of placement and withdrawal of exploration commitment; 
+(iii) Regulation No. 36/2017 which lays out the procedures for assignment of conducting preliminary survey (PSP), and 
+for assignment of conducting preliminary survey and exploration drilling (PSPE); 
+(iv) Regulation No. 37/2017 which lists the 67 WLPs for Indirect Use; 
+(v) Regulation No. 49/2017 (previously No.10/2017 concerning the principles in power sale and purchase agreement) 
+which set the maximum period for Power Purchase Agreement (PPA) to be the same as the concession validity 
+period; 
+(vi) Regulation No. 50/2017 (previous No. 12/2017), which sets the reasonable level of investment returns, or ceiling tariff, 
+at average electricity supply costs (biaya penyediaan pokok, or BPP) defined as PLN’s avoided costs in the local 
+power systems, as well as allowance for a business-to-business (B2B) scheme between PLN and the developer for 
+tariff negotiation. 
+ 
+Most recently, MOF Regulation (PMK No. 62-08/2017) provides the legal and regulatory framework for financing the 
+operationalization of the PISP to support geothermal investment to be managed by SMI. PISP was transformed from the 
+previous Geothermal Fund Facility (GFF). The original design of the GFF was to provide loans to address the high costs 
+and risks incurred during the exploration phase. But this scheme was not successful, since the GFF loans required sufficient 
+collateral from project developers and were to be paid back in full even in the case of unsuccessful drilling. The design of 
+the PISP, which is expected to support exploration drilling (among others), hinges on a more balanced approach to risk 
+allocation in the overall geothermal development process.  
+ 
+In addition, MoF also offers fiscal incentives such as tax holidays and allowances and an income tax facility for the 
+geothermal sector, as well as value-added tax (VAT) and import duty exemption for capital goods. Regulation No. 18/2015 
+provisioned a 30 percent reduction of corporate net income for 6 years for geothermal developers. At this stage there are 
+no tax incentives for the Geothermal Risk Mitigation Facility and this will be explored further with the legal team during 
+Appraisal. 
+ 
+Sub-borrowers will be responsible for obtaining the required licenses and permits, which may be particular to the site 
+proposed for exploration and will need to indicate the nature of the needed permits when seeking to access the Facility. 
+Sub-projects will be accepted only when meeting eligibility criteria specified in the Operations Manual – including ensuring 
+that environmental and social risks can be adequately mitigated. 
+ 
+It will be made clear to EE (SMI) and sub-borrowers that no additional financing will be provided to cover applicable taxes. 
+ 
+C.7.  Institutional / Implementation Arrangements
+
+=== PAGE 25 ===
+DETAILED PROJECT / PROGRAMME DESCRIPTION 
+ 
+GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 22 OF 56 
+ 
+ 
+C 
+Please describe in detail the governance structure of the project/programme, including but not limited to the organization 
+structure, roles and responsibilities of the project/programme management unit, steering committee, executing entities 
+and so on, as well as the flow of funds structure.  Also describe which of these structures are already in place and 
+which are still pending. For the pending ones, please specify the requirements to establish them. Describe 
+construction and supervision methodology with key contractual agreements. Describe operational arrangements with key 
+contractual agreements following the completion of construction. If applicable, provide the credit analysis of key 
+counterparties of key contractual agreements and/or structural mitigants to cover the counterparty risks. 
+SMI will be as the Executing Entity for this Project assuming a financial intermediary role. This would entail managing the 
+vetting process for the project pipeline, setting eligibility criteria for developers accessing the Facility’s funds, and managing 
+the loan portfolio. A PMU will be established to help SMI manage the daily operations of the expanded Facility. The PMU 
+will be aided by a world-class specialized geothermal consultant with deep geotechnical and geothermal market expertise 
+to help SMI manage the developers and prepare relevant recommendations to key stakeholders. 
+ 
+More specifically, SMI and its PMU will be responsible for: 
+• 
+Administering the Facility and managing accounts. 
+• 
+Appraising and approving or rejecting project proposals based on a technical, economic and financial review of 
+applications from developers. 
+• 
+Monitoring and evaluating progress and results at the Facility level and preparing periodic progress and supervision 
+reports as requested by the World Bank (and, through the World Bank, by the Green Climate Fund). This may 
+include developing a system for gathering and maintaining data needed from the developers to track the individual 
+sub-projects and identifying mitigation measures for risks that may affect individual projects and the Facility. 
+• 
+Financial management of the Project and accounting and financial reporting; arranging for the submission of 
+audited financial reports. 
+• 
+Preparing Terms of Reference for consulting services funded with WB/GCF resources to be approved by the WB.  
+• 
+Facilitating external evaluations and ensuring that recommendations are implemented. 
+ 
+SMI will coordinate closely with a Joint Committee which will constitute the key stakeholders in the geothermal sector, 
+namely MoF and MEMR. MoF is responsible for allocating funds to support sector development through dedicated program 
+(such as PISP), budgetary allocations, and fiscal incentives for geothermal development. MEMR is responsible for tendering 
+and overseeing the broad development progress of the tendered geothermal work areas, assessing the market environment 
+and regulating geothermal off-take prices, and deciding if and to what extent the financing support from GREM Facility can 
+be considered in future tendering considerations. BG supports project implementation through providing any necessary 
+inputs related to geotechnical data to support SMI’s technical due diligence in evaluation of the proposed drilling program 
+and validation of the drilling reports submitted by the developers. 
+ 
+Figure 7: Governance Arrangement and Flow of Funds
+
+=== PAGE 26 ===
+DETAILED PROJECT / PROGRAMME DESCRIPTION 
+ 
+GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 23 OF 56 
+ 
+ 
+C 
+  
+ 
+ 
+As the Accredited Entity, the World Bank will provide support to the Executing Entity (EE) in its implementation of the 
+Project. This includes working with the EE in defining the key features of the Facility and supervising compliance with WB 
+requirements and standards, such as the decision-making process and eligibility criteria, fiduciary requirements and 
+safeguards standards, stakeholder management, sub-loan, CB and contractual arrangement, and providing independent 
+advisory support on reviewing drilling results and capacity building for drilling management. As the co-financier for the 
+Facility, GCF will receive periodic reports on overall progress and SMI’s management of the portfolio of sub-projects 
+supported by the Facility, from WB’s bi-annual project supervision missions and as per the reporting arrangement defined 
+in the agreed Project Term Sheet and respective Legal Agreements. Throughout implementation, GCF representatives may 
+be invited to join the World Bank supervision missions. As a standard procedure, the WB will prepare an Implementation 
+Completion Report (ICR) at the end of project implementation to take stock of project achievement and impacts. 
+ 
+In terms of legal agreements, the Bank will enter into a Funded Activity Agreement with GCF for the financing provided by 
+GCF.  In addition, it will enter into (a) a Loan Agreement in the amount of US$7.5 million, (b) a Reimbursable Grant 
+Agreement in the amount of US$90 million, and (c) a Grant Agreement in the amount of US$2.5 million with the Executing 
+Entity for the implementation of the portion of the Project funded by GCF. The Bank will also enter into a Sovereign 
+Guarantee agreement with the Government of Indonesia, pursuant to which the Government of Indonesia will guarantee 
+the Executing Entity’s obligation to repay the GCF Loan to the Bank under the Loan Agreement, up to the amount of US$7.5 
+million. 
+ 
+ 
+Figure 8: Key Stakeholders in Project Implementation
+
+=== PAGE 27 ===
+DETAILED PROJECT / PROGRAMME DESCRIPTION 
+ 
+GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 24 OF 56 
+ 
+ 
+C 
+ 
+In addition to the key stakeholders and their roles, a schematic of the sequencing of key actions for an individual loan or 
+debt package is presented below. 
+ 
+Figure 9: Life Cycle of an Individual Loan
+
+=== PAGE 28 ===
+DETAILED PROJECT / PROGRAMME DESCRIPTION 
+ 
+GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 25 OF 56 
+ 
+ 
+C 
+C.8. Timetable of Project/Programme Implementation 
+Please provide a project/programme implementation timetable in section I (Annexes). The table below is for illustrative purposes. If the table format 
+below is used, please refer to the activities as numbered in Section H. In the case of outputs, please mark when all the required activities will be 
+completed. 
+ 
+ 
+*Note: All outputs are expected to be completed by the project closing date.
+
+=== PAGE 29 ===
+RATIONALE FOR GCF INVOLVEMENT 
+ 
+GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 26 OF 56 
+ 
+ 
+ 
+ 
+D 
+D.1. Value Added for GCF Involvement 
+ 
+ 
+Please specify why the GCF involvement is critical for the project/programme, in consideration of other alternatives. 
+ 
+GCF funds are an integral element of the project design for two main reasons: (i) the risk profile of GCF’s instrument and their 
+catalytic effect in attracting public and private finance towards geothermal development; and therefore (ii) its contribution in helping 
+Indonesia achieve its NDC and fight climate change as one of the Energy Transition countries (besides Brazil, China, India, Mexico 
+and South Africa). 
+ 
+First, GCF instruments have the risk capital profile to match the risk associated with early-stage geothermal exploration drilling 
+supported by this Project. In Indonesia, exploration drilling comes at a hefty price tag of up to US$8 million plus supporting 
+infrastructure, which needs to be put at risk and therefore could be prohibitive for developers to significantly expand their geothermal 
+operations. This is a similar position to the CTF contingent grant contribution of US$49 million under GEUDP. GCF sources will be 
+a crucial element of a blended financing arrangement for public developers and a convertible bond for private developers.  
+Experiences in the past decade have shown that without support for de-risking in the exploration phase, investments -particularly 
+private- have been lacklustre at best. The use of the GCF funding and soft loan as part of the whole project is demonstrated in the 
+attached Integrated Financial Model. 
+ 
+Second, GCF funds plays a critical role in enabling innovative climate solutions to facilitate a low-carbon future for Indonesia 
+through scaling up geothermal investments as a clean source of energy and electricity. The alternatives, as discussed in Section 
+C.2, will be a rapid ramp-up of coal in place of a cleaner solution in the short and medium terms, and therefore the lock-in of millions 
+of tons of GHG emissions for the long term. This Project – underpinned by much needed climate finance from GCF – will help the 
+GoI in reaching its NDC of 29 percent reduction of GHG emissions by 2030 with an annual avoidance rate of 6.2 – 9.3 MtCO2e 
+compared to a business-as-usual scenario with heavy ramp-up of fossil-fuelled electricity generation. The Project has already been 
+highlighted at the 2017 One Planet Summit in Paris by SMI President Director as one of GoI’s priority efforts in reaching the NDC 
+(link to source), as well as the World Bank Group President as one of the flagship Projects that will have a transformational effect 
+in reducing carbon emissions by one of the biggest coal-producing countries in the world (link to source). This showcases the 
+strong commitment from the GoI and the WB for this initiative, and GCF stands to become a pivotal part of that effort. 
+D.2. Exit Strategy
+
+=== PAGE 30 ===
+RATIONALE FOR GCF INVOLVEMENT 
+ 
+GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 27 OF 56 
+ 
+ 
+ 
+ 
+D 
+Please explain how the project/programme sustainability will be ensured in the long run, after the project/programme is 
+implemented with support from the GCF and other sources, taking into consideration the long-term financial viability 
+demonstrated in E.6.3. This should include a description of strategies for longer term maintenance of physical assets (if 
+applicable). 
+ 
+As mentioned above and in Section C.3, the Facility will support public and private developers. The attached Integrated Financial 
+Model provides details on the use of each funding source and the respective reflow schedules. The model has been used to 
+describe some exit scenarios testing sensitivity of key assumptions in terms of GCF non-recovery rate. The results are presented 
+in the table below and show that the non-recovery rate (GCF net loss) would be less than 0% in a base case version and not higher 
+than 7.1% in a 65% development success rate scenario (see model attached to FP). This indicates that the concept is sustainable 
+and that there is a solid exit strategy for GCF. 
+ 
+Base case  
+Alternative 
+Scenario 1  
+Alternative 
+Scenario 2 
+Alternative 
+Scenario 3 
+Alternative 
+Scenario 4 
+Alternative 
+Scenario 5 
+Alternative 
+Scenario 6 
+(13 projects, 
+~75% success, 
+6.5% CB 
+premium, 
+mixed realized 
+potential)  
+(13 projects, 
+~75% success, 
+6.5% CB 
+premium, 100% 
+realized 
+potential) 
+(13 projects, 
+~75% success, 
+6.5% CB 
+premium, 80% 
+realized 
+potential) 
+(13 projects, 
+~85% success, 
+6.5% CB 
+premium, 
+mixed realized 
+potential) 
+(13 projects, 
+~85% success, 
+6.5% CB 
+premium, 100% 
+realized 
+potential) 
+(13 projects, 
+~65% success, 
+6.5% CB 
+premium, 
+mixed realized 
+potential) 
+(13 projects, 
+~65% success, 
+6.5% CB 
+premium, 100% 
+realized 
+potential) 
+-1.2% 
+-12.8% 
+-5.4% 
+-9.9% 
+-21.5% 
+7.1% 
+-4.6% 
+ 
+ 
+It is expected that the funds mobilized will have leveraged an additional US$4 – 5.5 billion investments and catalyze an additional 
+geothermal power capacity of 1 – 1.5 GW – possibly making Indonesia the world’s biggest geothermal market.  The estimated 
+development impact from the first tranche of GCF allocation is expected to be around 60% of the impact from the total project.
+
+=== PAGE 31 ===
+APPRAISAL SUMMARY 
+ 
+GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 28 OF 56 
+ 
+ 
+ 
+F 
+In this section, the accredited entity is expected to provide a brief description of the expected performance of the 
+proposed project/programme against each of the Fund’s six investment criteria. Activity-specific sub-criteria and 
+indicative assessment factors, which can be found in the Fund’s Investment Framework, should be addressed where 
+relevant and applicable. This section should tie into any request for concessionality made in section B.2. 
+ 
+E.1. Impact Potential 
+Potential of the project/programme to contribute to the achievement of the Fund’s objectives and result areas 
+E.1.1. Mitigation / adaptation impact potential 
+Specify the mitigation and/or adaptation impact, taking into account the relevant and applicable sub-criteria and 
+assessment factors in the Fund’s investment framework. When applicable, specify the degree to which the 
+project/programme avoids lock-in of long-lived, high emission or climate-vulnerable infrastructure. 
+ 
+In Indonesia, constant pressure to keep electricity cost low favors more coal in the generation mix, where new coal 
+plants are expected to lock in several million tons of GHG emissions during their useful life. The GoI has plans to add 
+10,000 MW of electricity generation from coal and 6,500 MW from gas by 2019 (See Section C.1). Once successfully 
+implemented, this Project is expected to enable an additional 187-281 MtCO2e over the lifetime of the generating 
+assets, which represents a 18.7-28.1 percent of GCF’s 1,000 MtCO2e avoided from its existing 53 projects to date 
+(link to source). The estimated development impact from the first tranche of GCF allocation is expected to be around 
+60% of the impact from the total project. 
+ 
+E.1.2. Key impact potential indicator 
+GCF 
+core 
+indicators 
+Expected tonnes of carbon dioxide equivalent (t 
+CO2 eq) to be reduced or avoided (Mitigation 
+only) 
+Annual 
+6.2-9.3 MtCO2e 
+Lifetime 
+187-281 MtCO2e 
+• 
+Expected total number of direct and 
+indirect beneficiaries, disaggregated by 
+gender (reduced vulnerability or 
+increased resilience);  
+• 
+Number of beneficiaries relative to total 
+population, disaggregated by gender 
+(adaptation only) 
+Total 
+Not applicable 
+Percentage 
+(%) 
+Not applicable 
+Other 
+relevant 
+indicators 
+• 
+Additional electric power generation capacity enabled (1,000-1,500 megawatt (MW)) 
+• 
+Private capital mobilized for investment in geothermal Exploration (US$0.5 billion) 
+• 
+Private capital expected to be mobilized for investment in geothermal development over time 
+(US$ 3.5 billion) 
+Methodology for calculating the project indicators: 
+• 
+Expected tonnes of carbon dioxide equivalent (tCO2 eq) to be reduced or avoided: The CO2 emissions 
+reduction potential is estimated by subtracting projected lifetime emissions from a given sub-project (Sub-
+Project scenario) from the projected lifetime emissions in the BAU scenario (Baseline).  
+• 
+Additional electric power generation capacity enabled (1,000 megawatt (MW)): The generation capacity 
+enabled is estimated by identifying the number of projects that can be supported by such a facility and the 
+sizes of the pipeline projects that would be available to obtain financing support. 
+• 
+Private capital mobilized for investment in geothermal power generation: The investment required is estimated 
+based on the cost data of the sub-projects being considered for inclusion under the Facility.
+
+=== PAGE 32 ===
+APPRAISAL SUMMARY 
+ 
+GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 29 OF 56 
+ 
+ 
+ 
+F 
+E.2. Paradigm Shift Potential 
+Degree to which the proposed activity can catalyze impact beyond a one-off project/programme investment 
+E.2.1. Potential for scaling up and replication (Provide a numerical multiple and supporting rationale) 
+Describe how the proposed project/programme’s expected contributions to global low-carbon and/or climate-resilient 
+development pathways could be scaled-up and replicated including a description of the steps necessary to 
+accomplish it. 
+ 
+The proposed project expects to contribute to the global low-carbon development pathways by implementing an 
+innovative risk mitigation approach that have the potential to be replicated in other geothermal-rich countries and 
+regions. They may include but are not limited to Chile, Dominica, Mexico, Nicaragua, El Salvador, Costa Rica and 
+Saint Lucia in Latin America; Ethiopia, Tanzania, Kenya and Djibouti in East Africa; Turkey and Armenia in Eastern 
+Europe and the Balkans; and the Philippines and Fiji in the Pacific. The risk mitigation model developed under this 
+Project could be adapted to country contexts to potentially facilitate a rapid world-wide scale-up of geothermal 
+development through demonstration effects.  
+ 
+The approach is underpinned by three key elements: 
+(i) The Project’s approach to geothermal resource risk mitigation by providing financing support to the whole 
+exploration drilling program as a package has been its most innovative feature. Instead of a well-based guarantee 
+program like in Turkey or in Latin America, this Project will finance the whole exploration drilling program, 
+including site infrastructure for eligible developers. This would allow for the developers’ management of the 
+drilling risks on a portfolio basis, spreading the risk cross projects. It will also be expected to reduce the 
+administrative burden and time cost of well-based guarantee programs with long well testing time between wells 
+drilling. 
+ 
+(ii) The proposed Project is expected to enable the establishment of a facility that would provide support to de-risk 
+a large number of geothermal projects. The facility is expected to attract new players with lower costs of funds 
+and present a more equal playing field, while enabling participation of the existing, but lately dormant, private 
+players with a view to take advantage of their drilling expertise and valuable in-house knowledge.  
+ 
+(iii) The Project’s implementation arrangement through a financial intermediary has been adapted to work within the 
+currently underdeveloped financial markets and regulatory constraints in Indonesia. This would allow the Facility 
+to reach a greater number of developers and inducing greater competition, thereby facilitating an expansion and 
+deepening of the geothermal sector in Indonesia. 
+ 
+E.2.2. Potential for knowledge and learning
+
+=== PAGE 33 ===
+APPRAISAL SUMMARY 
+ 
+GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 30 OF 56 
+ 
+ 
+ 
+F 
+Describe how the project/programme contributes to the creation or strengthening of knowledge, collective learning 
+processes, or institutions. 
+ 
+First, the Project will improve knowledge and capacity of key stakeholders in geothermal sector in Indonesia, 
+contributing to achievement of the development objectives of the Project and the wider sector. The Project creates an 
+avenue for key sector stakeholders, such as MEMR, MoF, PLN, and SMI to dialogue and solve challenges collectively 
+– through provision of legal mandates, development of streamlined and more transparent licensing procedures to 
+attract private developers and serving on joint committee to provide strategic guidance to improve the investment 
+climate in the sector. Through the Project, the key stakeholders will also benefit from just-in-time technical assistance 
+to take advantage of the state-of-the-art knowledge on drilling technology, legal advisory on contract management, 
+international roadshow for tendering of geothermal prospects to attract the most technically qualified and financially 
+solid investors and developers.  
+ 
+Second, the Project will contribute to the world’s state of collective knowledge and experience on how to undertake a 
+geothermal resource risk mitigation operation. The successful implementation of the facility for geothermal exploration 
+drilling will showcase the benefits and impacts of such a facility to expand the geothermal market, while revealing how 
+institutional, technical and operational challenges can be addressed. These lessons can be readily applied or adapted 
+for other countries looking to develop a similar process and institution. 
+ 
+Third, the Project is expected to strengthen the link between educational institutions, such as the renowned Bandung 
+Institute of Technology, to develop a cadre of market-ready engineers, scientists and researchers and the geothermal 
+industry, as well as between the professional training institute in Yogyakarta and the government’s technical staff and 
+decision makers to improve the general state of knowledge around the geothermal sector, its most pertinent technical, 
+economic and operational challenges and potential solutions. The link could be fostered through support to internship 
+programs, vocational training and on-the-job learning. 
+ 
+E.2.3. Contribution to the creation of an enabling environment 
+Describe how proposed measures will create conditions that are conducive to effective and sustained participation of 
+private and public sector actors in low-carbon and/or resilient development that go beyond the program. Describe 
+how the proposal contributes to innovation, market development and transformation. Examples include: 
+• 
+Introducing and demonstrating a new market or a new technology in a country or a region 
+• 
+Using innovative funding scheme such as initial public offerings and/or bond markets for projects/programme 
+ 
+The proposed measures are expected to create conditions that are conducive to effective and sustained participation 
+of private and public actors in low-carbon development through improvement of the overall investment climate and 
+provision of tailored financing support for developers in the geothermal sector in Indonesia that could be applied to any 
+other countries rich in geothermal resources. First, the technical assistance and capacity building support made 
+available through Component 2 of the Project is expected to create enabling environment and transform the geothermal 
+sector in Indonesia. Second, given the risk profile of the geothermal sector, the Facility is expected to improve the risk 
+appetite for geothermal development through provision of low-cost financing and risk capital. Financing support will 
+support the project viability, therefore incentivizing the developers to direct more capital towards geothermal 
+development. The Facility’s design also enables management of drilling risk on a portfolio basis, which has not been 
+adopted at a national level anywhere else in the world. The innovative features of Project design have been clearly laid 
+out in Section C.3 and E.2. 
+ 
+E.2.4. Contribution to regulatory framework and policies
+
+=== PAGE 34 ===
+APPRAISAL SUMMARY 
+ 
+GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 31 OF 56 
+ 
+ 
+ 
+F 
+Describe how the project/programme strengthens the national / local regulatory or legal frameworks to systematically 
+drive investment in low-emission technologies or activities, promote development of additional low-emission policies, 
+and/or improve climate-responsive planning and development. 
+ 
+In the past two decades, Indonesia has strengthened the body of national and local regulatory and legal frameworks, 
+underpinned by the first Geothermal Law 2003, to systematically drive investment in the geothermal sector as one of 
+its strategically important low-emission technologies. In supporting the GoI in establishing the resource risk mitigation 
+facility and interacting directly with the private and public developers, it is observed that some of the recent regulatory 
+changes – including a tariff ceiling for geothermal and other renewable sectors – have made geothermal projects not 
+financially viable, hindering sector development at large.  
+ 
+Component 2 of the Project has identified specific interventions to strengthen the legal framework and regulatory 
+environment for the geothermal in the long run. Regulatory support would be targeted at MEMR, with a view to improve 
+the investment climate and doing business environment in the sector and addressing the key sectoral bottlenecks to 
+scaling up geothermal development.  This would cover, but is not limited to, support to MEMR in improving the tender 
+process for unassigned WKPs and understanding of the economics and impacts of the existing RE (including 
+geothermal) tariff system.
+
+=== PAGE 35 ===
+APPRAISAL SUMMARY 
+ 
+GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 32 OF 56 
+ 
+ 
+ 
+F 
+E.3. Sustainable Development Potential 
+Wider benefits and priorities 
+E.3.1. Environmental, social and economic co-benefits, including gender-sensitive development impact 
+Environmental co-benefits: 
+ 
+A significant scale-up of geothermal energy investment through the proposed Project is expected to deliver tremendous 
+environmental benefits to Indonesia, mainly through the magnitude of avoidance of greenhouse gas emissions in 
+Indonesia and beyond. 
+ 
+• 
+First, it can be extracted without burning a fossil fuel such as coal, gas or oil and there is no combustion in the 
+geothermal development process. Geothermal fields produce only about one-sixth of the carbon dioxide that a 
+relatively clean natural gas-fueled power plant produces. Binary plants release essentially no emissions. While 
+direct emissions do exist and are linked to the geology of the underground reservoir and fluids, these are dwarfed 
+by the emissions of thermal power plants. At the local pollution level, geothermal power has negligible emissions 
+of sulfur dioxide (SO2), nitrogen oxide (NOx), and total suspended particulates (TSP). In a closed loop geothermal 
+system, there are no CO2 emissions. With the most advanced technology and drilling techniques, the 
+environmental impact of chemical release from the drilling process can be greatly minimized. Unlike other 
+geothermal markets, GHG emissions from geothermal in Indonesia are negligible based on ongoing testing and 
+measurement from existing and active fields.  
+• 
+Second, geothermal operations have minimal freshwater requirements. For example, a geothermal plant uses on 
+average five gallons of freshwater per megawatt-hour (MWh), while binary air-cooled plants use no fresh water. 
+Coal- and gas-fired facilities in contrast use hundreds of gallons of freshwater.  
+• 
+Third, geothermal drilling has a smaller footprint than conventional energy extraction operations, as a relatively 
+small area of land is needed for reinjection and production wells thanks to minimal equipment. Horizontal drilling 
+techniques and programs will also allow for avoidance of critical conservation or protection forest areas and 
+minimize habitat disturbance issues. The presence of major drilling management firms such as Halliburton and 
+Schlumberger also mean that the most advanced and efficient technologies will be employed to ensure the most 
+sustainable drilling techniques. 
+ 
+Social and economic co-benefits: 
+ 
+The socio-economic benefits brought by this Facility are mainly related to energy security and job creation for both 
+men and women. 
+ 
+• 
+First, the proposed Project will enable drilling activities, thereby contributing to direct job creation for skilled and 
+manual workers engaged in drilling, civil works, infrastructure construction and auxiliary services in up to 20 
+locations throughout Indonesia. According to the Geothermal Energy Association, a typical 50 MW geothermal 
+project could generate employment for approximately 860 people with diverse skills over its full development cycle. 
+Furthermore, as discussed in descriptions of Component 2 in Section C.2, the Project will support efforts in working 
+closely with developers at corporate level and academic institutions in creating and improving the opportunities for 
+female engineers and project managers in the geothermal sector, and to the extent possible, enhance the 
+participation and employment of women in geothermal developers. 
+• 
+Second, geothermal power can have great implications for greening and diversifying the energy mix and increasing 
+energy security of Indonesia and other geothermal-rich countries. Geothermal energy is not affected by price 
+fluctuations and delivery of fuels, as is the case of higher-polluting alternatives. The replenishment of heat from 
+natural processes and modern reservoir management techniques enable sustainable use of geothermal resources 
+– the same cannot be said about fossil fuels. With appropriate resource management, the tapped heat from an 
+active reservoir is continuously restored by natural heat production, conduction and convection from surrounding
+
+=== PAGE 36 ===
+APPRAISAL SUMMARY 
+ 
+GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 33 OF 56 
+ 
+ 
+ 
+F 
+hotter regions, and the extracted geothermal fluids are replenished by natural recharge and by injection of the 
+depleted (cooled) fluids. 
+ 
+E.4. Needs of the Recipient 
+Vulnerability and financing needs of the beneficiary country and population 
+E.4.1. Vulnerability of country and beneficiary groups (Adaptation only) 
+Describe the scale and intensity of vulnerability of the country and beneficiary groups, and elaborate how the 
+project/programme addresses the issue (e.g. the level of exposure to climate risks for beneficiary country and 
+groups, overall income level, etc). 
+ 
+Not applicable 
+ 
+E.4.2. Financial, economic, social and institutional needs 
+Describe how the project/programme addresses the following needs:  
+• 
+Economic and social development level of the country and the affected population 
+• 
+Absence of alternative sources of financing (e.g. fiscal or balance of payment gap that prevents from 
+addressing the needs of the country; and lack of depth and history in the local capital market) 
+• 
+Need for strengthening institutions and implementation capacity. 
+ 
+As discussed extensively in Sections B.3, C.1 and C.4, this proposed Project fill the gap of a shallow local capital 
+market unable to provide adequate and attractive financing terms to geothermal developers. As a key development 
+objective, it also aims to support the GoI in bringing on-line on a mass scale more reliable and cheaper power in the 
+fossil fuel-dominated national grids. Following exploration drilling which will be cost-shared between the Facility and 
+the developers under the proposed Project and where the resources are confirmed, the developers will be able to 
+access project finance from the market. Component 2 sets out to provide the pre-identified technical assistance and 
+capacity building for the implementing entity as well as the broader group of stakeholders in ensuring that the 
+exploration drilling results will constitute an integral part of the geothermal data package that can be used to raise 
+adequate financing for the exploitation of the resources and power plant development. 
+ 
+E.5.  Country Ownership 
+Beneficiary country (ies) ownership of, and capacity to implement, a funded project or programme 
+E.5.1. Existence of a national climate strategy and coherence with existing plans and policies, including NAMAs, 
+NAPAs and NAPs 
+Please describe how the project/programme contributes to country’s identified priorities for low-emission and climate-
+resilient development, and the degree to which the activity is supported by a country’s enabling policy and 
+institutional framework, or includes policy or institutional changes. 
+ 
+The proposed Facility seeks to contribute to Indonesia’s identified priorities for low-emission and climate resilient 
+development as described in Section C.1; and is supported by the country’s enabling policy and institutional framework 
+as outlined in Sections C.6 and E.2.4. 
+ 
+E.5.2. Capacity of accredited entities and executing entities to deliver 
+Please describe experience and track record of the accredited entity and executing entities with respect to the 
+activities that they are expected to undertake in the proposed project/programme. 
+ 
+SMI has extensive experience in managing the World Bank's and other donors' safeguards policies and complying with 
+relevant fiduciary procedures and standards under the Indonesia Investment Guarantee Fund (IIGF), Indonesia 
+Infrastructure Facility Fund (IIFF) and the Regional Infrastructure Development Fund (RIDF). As the Executing Entity
+
+=== PAGE 37 ===
+APPRAISAL SUMMARY 
+ 
+GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 34 OF 56 
+ 
+ 
+ 
+F 
+for the Project, SMI has been screened for capacity under the proposed Project in three main areas: (i) technical and 
+financial due diligence, (ii) environmental and social safeguards management, and (iii) fiduciary management, including 
+procurement and financial management. The detailed assessments are as follows. 
+ 
+Technical and financial due diligence: Refer to Sections C.2, C.3 and G.2. 
+ 
+Environmental and social safeguards management: 
+ 
+SMI has developed a specific Operations Manual and Environmental and Social Management System (ESMS) for use 
+on its programs supporting local government investments through various infrastructure funds. They have a safeguards 
+team in the Environmental Social Safeguard and Business Continuity Management (ESS&BCM) Division under the 
+Risk Management Directorate, with qualified and experienced staff members. This team will be responsible for 
+overseeing the implementation of the Environmental and Social Management Framework (ESMF) to be developed for 
+GREM.  
+ 
+On the geothermal sector, SMI has been engaging with the World Bank on the on-going GEUDP, the first window of 
+the proposed Resource Risk Mitigation Facility, for which the ESMF was developed and duly implemented. This 
+document details the environmental and social safeguard policies, principles, procedures, institutional arrangements, 
+and workflows of SMI to guide the avoidance, minimization, or mitigation of any adverse environmental or social 
+impacts of infrastructure projects supported by the GEUDP. Furthermore, SMI has brought on board one Environmental 
+Specialist and one Social Specialist under the GEUDP’s Project Management Unit (PMU), which is expected to be 
+expanded to support GREM. SMI’s corporate Project Advisory Division has access to a pool of on-call environmental 
+and social expert consultants ready to support the Project. 
+ 
+Fiduciary management:  
+ 
+Financial Management (FM). This financial management of the several World Bank projects implemented by SMI has 
+been rated satisfactory, reflecting SMI’s capacity and their institutional arrangement in place to uphold high fiduciary 
+standards by MDBs. A Financial Management Assessment (FMA) for the proposed Project will be prepared as part of 
+ongoing World Bank’s project preparation process and is expected to be completed by September 2018.  Further 
+detailed financial management arrangements will be fleshed out at the time of Appraisal, including on the use of 
+international financing reporting and auditing standards. 
+ 
+Procurement. The proposed operation envisages on-lending by SMI to (i) public sector developers, including state-
+owned enterprises (SOEs), and joint ventures formed between SOEs and private partners; and (ii) private sector 
+developers. For sub-loans to SOEs, the procurement of goods, works, non-consulting services, and consulting services 
+shall follow the World Bank Procurement Guidelines for Investment Project Financing (IPF) Borrowers dated November 
+2017. For private developers, the Bank guidelines will not apply; and the procurement will be done on a commercial 
+practice basis. Normally, projects implemented by a PPP that is majority-owned by the public partner, would be subject 
+to World Bank procurement guidelines. However, if the PPP is set up in a way to ensure private sector control of all 
+operational decisions it may be more correct to look at this as a private sector entity. This issue will be assessed based 
+on a broader review of the proposed joint ventures structures, which is expected to be finalized in the coming months 
+of project preparation.   
+ 
+E.5.3. Engagement with NDAs, civil society organizations and other relevant stakeholders 
+Please provide a full description of the steps taken to ensure country ownership, including the engagement with 
+NDAs on the funding proposal and the no-objection letter. Please also specify the multi-stakeholder engagement 
+plan and the consultations that were conducted when this proposal was developed.
+
+=== PAGE 38 ===
+APPRAISAL SUMMARY 
+ 
+GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 35 OF 56 
+ 
+ 
+ 
+F 
+The proposed Project has been prepared in close coordination with the Ministry of Finance as the NDA and SMI as 
+the executing entity, as well as the broader stakeholders in the geothermal sector in Indonesia. Their inputs have been 
+duly reflected in the project design and the requested capacity building activities as part of the project design. MoF’s 
+commitment of US$150 million of parallel financing from the government fund for geothermal sector demonstrates 
+strong support from GoI for the proposed project. A draft of this Funding Proposal has also been shared with the NDAs 
+early on for feedback. At the sub-project level, community consultations, including with local governments, will be a 
+requirement as part of the implementation of the Project’s Environmental and Social Management Framework. SMI 
+will review and oversee compliance with the safeguards requirements by the developers. 
+ 
+E.6. Efficiency and Effectiveness 
+Economic and, if appropriate, financial soundness of the  project/programme 
+E.6.1. Cost-effectiveness and efficiency 
+Describe how the financial structure is adequate and reasonable in order to achieve the proposal’s objectives, 
+including addressing existing bottlenecks and/or barriers; providing the least concessionality; and without crowding 
+out private and other public investment. Please describe the efficiency and effectiveness, taking into account the total 
+project financing and the mitigation/ adaptation impact that the project/programme aims to achieve, and explain how 
+this compares to an appropriate benchmark. For mitigation, please make a reference to E.6.5 (core indicator for the 
+cost per tCO2eq). 
+ 
+The proposed Project aims to address resource risk (also known as drilling/exploration risk), which constitutes the 
+biggest barrier to obtaining commercial financing for resource exploitation. Concessional financing from GCF and WB 
+combined with government funds will help developers finance highly risky exploration drilling (mainly due to resource 
+uncertainties) and related infrastructure development. It will bridge the financing gap between equity investors and 
+commercial lenders. In Indonesia, geothermal exploration drilling comes with a hefty price tag of up to US$8 million 
+per full-sized well plus supporting infrastructure, which can be prohibitive for developers not guaranteed downstream 
+returns on their pre-production investments, if sufficient resource is not found or the exploration is deemed 
+unsuccessful. Slim-holes can be used at the cost of about US$2-3 million per well on average, but they would not be 
+able to be converted into production wells if the resource is confirmed. 
+ 
+In the past few years, geothermal exploration activities in Indonesia have been lackluster at best, given the high 
+resource risk, low off-take price environment, and shallow capital market development. Instead of relying on costly 
+equities, the combination of concessional financing and risk capital mobilized through this Project to facilitate up to 5.8 
+GW of geothermal capacity by 2026 is merited. It is expected that an initial capital contribution of US$500 million from 
+GCF and WB for resource risk mitigation will enable development of about 1 GW of geothermal capacity, and in doing 
+so, leveraging at least US$4 billion of total financing for downstream investments – most of which will come from the 
+private sector. The Project is expected to contribute to an annual GHG emission reductions of at least 6.3 MtCO2. 
+More in-depth financial viability and economic analysis of the Facility and sub-projects are provided in Section E.6.3. 
+ 
+E.6.2. Co-financing, leveraging and mobilized long-term investments (mitigation only) 
+Please provide the co-financing ratio (total amount of co-financing divided by the Fund’s investment in the 
+project/programme) and/or the potential to catalyze indirect/long-term low emission investment. Please make a 
+reference to E.6.5 (core indicator for the expected volume of finance to be leveraged). 
+ 
+Co-Financing and Leverage Factor  
+ 
+The GCF funding contribution of US$185 million would be co-financed by a US$325 million IBRD loan.  On top of the 
+IBRD co-financing, US$150 million of parallel financing would be provided by GoI/SMI as loans. With an added US$100 
+million as equity contributions which would be injected by the private developers receiving support through private 
+sector window, it is expected that at least US$4 billion of total investments with more than US$3 billion coming from
+
+=== PAGE 39 ===
+APPRAISAL SUMMARY 
+ 
+GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 36 OF 56 
+ 
+ 
+ 
+F 
+the private sector will be mobilized.  This translates to the following leverage ratios: (i) WB to GCF co-financing: 1.8 to 
+1; (ii) private financing to GCF: 18 to 1; and (iii) total financing to GCF: 22 to 1. 
+ 
+Long-term Investments 
+ 
+The proposed Project is in line with the Government’s intention of strategically putting in government funds in the early 
+stages in order to unlock private sector financing for geothermal development. It is expected that the lion’s share of the 
+investments needed to develop the planned 5.8 GW of geothermal capacity as a low-emission source of electricity 
+over the next eight years would need to come from commercial sources, and that these funds would be leveraged 
+through public-private partnerships. 
+ 
+E.6.3. Financial viability  
+Please specify the expected economic and financial rate of return with and without the Fund’s support, based on the 
+analysis conducted in F.1. Please describe financial viability in the long run beyond the Fund intervention. Please 
+describe the GCF’s financial exit strategy in case of private sector operations (e.g. IPOs, trade sales, etc.). 
+ 
+Financial Viability of Geothermal Development 
+ 
+The viability of geothermal development has been assessed by looking at a typical medium/large project (55 MW) 
+expected to be situated in the major power markets of Sumatra and Java-Bali, and a typical small project (10 MW) in 
+eastern Indonesia. Without the Project, neither the larger 55 MW nor the smaller 10 MW geothermal development will 
+be financially viable due to high equity requirements for exploration phase in combination with an unmitigated resource 
+risk. This fact has constrained geothermal development in Indonesia till now. 
+ 
+With the Project, calculations show that FIRR for a private investor will be adequate to meet or exceed his required 
+return on investment for the 55 MW case - even for low enthalpy scenarios. For the 10 MW plant, high or medium 
+enthalpy resources would, marginally, allow a private developer an adequate return whereas an SOE, due to their 
+lower hurdle rate, would be able to develop the 10 MW plant in all enthalpy scenarios. 
+ 
+Long-Term Sustainability of Facility 
+ 
+The attached Integrated Financial Model provides details on the use of each funding source and demonstrates the 
+long-term financial sustainability of the Facility based on a portfolio approach to geothermal development, where 
+success mitigates the downside of failed drilling campaigns that may prevent a developer from retaining a license and 
+furthering development.  In terms of upside, a success fee has been modelled into the project design and must be paid 
+by the developer to SMI (who will eventually return the funds to GCF), when the project reaches financial closure. The 
+model allows to change the success fee on the “Facility Level Summary” tab, hence allowing real time scenario 
+modeling of the facility outcomes. It is noted that after the project implementation period, the Bank would not be taking 
+on fiduciary and safeguards responsibilities. 
+ 
+E.6.4. Application of best practices 
+Please explain how best available technologies and practices are considered and applied. If applicable, specify the 
+innovations/modifications/adjustments that are made based on industry best practices. 
+ 
+Geothermal is a mature technology that uses the earth’s underground heat to produce electricity. The first attempt to 
+produce electricity out of geothermal resources dates back to over 100 years ago. In 1904, the world’s first geothermal 
+power plant to test the production of electricity out of a dry steam-field was established in Larderello, Italy. After over a 
+century of developments, geothermal technologies have constantly been improved to provide technical solutions to 
+develop projects that were previously considered not feasible. This would include (i) drilling of deeper wells, (ii)
+
+=== PAGE 40 ===
+APPRAISAL SUMMARY 
+ 
+GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 37 OF 56 
+ 
+ 
+ 
+F 
+horizontal drilling to avoid forest or protected areas, (iii) production of fractures to improve resource flow or to create 
+large and sustainable reservoirs, also known as Enhanced Geothermal Systems, and (iv) introduction of efficient binary 
+cycle power plant with lower overall power production costs. For smaller subprojects in the project pipeline, it is 
+expected that some would use slim-holes at the per-well cost of about US$2-3 million, to reduce the cost of the 
+exploration drilling program, though there is a need to consider the disadvantage that they cannot be converted into 
+production wells if the resource is confirmed. 
+Furthermore, the design of the Facility has benefitted from a review of the similar programs such as the World Bank-
+supported Turkey Geothermal Development Project and Armenia Geothermal Exploratory Drilling Project, the African 
+Rift Geothermal Development Program (ARGeo), and KfW’s Geothermal Risk Mitigation Facility for East Africa and 
+Geothermal Development Facility for Latin America. This project’s design is informed by an understanding of the 
+options related to business model, implementation arrangement and flow of funds in these programs and adapt to the 
+Indonesian context.  
+ 
+E.6.5. Key efficiency and effectiveness indicators 
+ 
+GCF 
+core 
+indicators 
+Estimated cost per t CO2 eq, defined as total investment cost / expected lifetime emission reductions 
+(mitigation only) 
+(a) Total project financing 
+US$ 4 billion  
+(b) Requested GCF amount  
+US$ 185 million 
+(c) Expected lifetime emission reductions overtime  
+187 MtCO2eq 
+(d) Estimated cost per tCO2eq (d = a / c) 
+US$ 21.4 / tCO2eq 
+(e) Estimated GCF cost per tCO2eq removed (e = b / c) 
+US$ 1 / tCO2eq 
+ 
+GHG accounting methodology. The project implementation period does not include the construction of 
+power plants. The expected geothermal capacity will be counted at financial closure. Depending on 
+whether SMI will be able to recycle funds beyond the 10-year project period the facility would be able to 
+support more projects resulting in more MWs.  Based on this, a two-phase analysis will be carried out: pre- 
+and post-drilling. The assumptions behind the analysis are: 
+• 
+Pre-Drilling.  The CO2 emissions reduction potential is estimated by subtracting projected lifetime 
+emissions from a given sub-project (Sub-Project scenario) from the projected lifetime emissions in the 
+BAU scenario (Baseline). In the Sub-Project scenario, CO2 emissions are estimated using an average 
+emission factor for geothermal energy facilities of 62.9 tCO2e/GWh. In the Baseline scenario, CO2 
+emissions are estimated based on the combined margin grid emission factor of 838 tCO2e/GWh. The 
+net emission factor is therefore calculated as 838 tCO2e/GWh minus 62.9 tCO2e/GWh, which gives 
+775 tCO2e/GWh. The emission factors assumed are in line with the World Bank GHG guidelines. 
+ 
+• 
+Post-Drilling. A specific requirement for final borrowers to submit evidence on GHG emissions as part 
+of the Project’s monitoring and evaluation framework will be included.  This is in line with the industry 
+practice and the World Bank will encourage geothermal developers benefitting from its financing to 
+collect and share project data that may eventually help reconcile pre-drilling estimates with post-drilling 
+findings. 
+ 
+Emissions from possible deforestation which were derived from emission factors expressed in terms of 
+t/hectare, areas of lands needed for drilling (approximately 2~3 ha/one standard well pad), and expected 
+number of wells to be drilled are calculated as 59,870 ton based on the pre-identified pipeline. This 
+emissions from the deforestation is reflected in the project GHG accounting although it is negligible 
+compared to the GHG emission reduction amount from the project. Emissions from the drilling phase is 
+already considered in the emission factor (62.9 gCO2e/kWh) used in the current calculation and the
+
+=== PAGE 41 ===
+APPRAISAL SUMMARY 
+ 
+GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 38 OF 56 
+ 
+ 
+ 
+F 
+number is country specific. The estimated development impact from the first tranche of GCF allocation is 
+expected to be around 60% of the impact from the total project. 
+ 
+Expected volume of finance to be leveraged by the proposed project/programme and as a result of the 
+Fund’s financing, disaggregated by public and private sources (mitigation only) 
+ 
+The Facility’s two new lending windows are expected to be financed with an initial capital of US$500 million: 
+(i) US$175 (T1:US$97,5) million from GCF; (ii) US$325 million loan from IBRD to SMI8 (co-financing); and 
+in addition (iii) US$150 million from GoI to SMI (parallel financing) as well as leveraged equity contributions 
+from the private sector are expected in the measure of US$100 million.  It is expected that MoF would be 
+providing backstopping in terms of potential partial loan forgiveness for SOEs. 
+ 
+Other relevant indicators (e.g. estimated cost per co-benefit 
+generated as a result of the project/programme) 
+The relevant indicators for the proposed operation 
+have been considered. 
+ The information can be drawn from the project/programme appraisal document.  
+ 
+F.1. Economic and Financial Analysis 
+Economic Analysis 
+ 
+The proposed Project will contribute to Indonesia’s geothermal development goal of adding 5.8 GW by 2026, and by 
+doing so, will contribute to: (i) displacing highly-polluting alternatives; (ii) diversifying Indonesia’s generation portfolio; 
+and (iii) ultimately contributing to lowering emissions from the energy sector in comparison to a BAU scenario.  An 
+economic analysis was carried out to assess the economic viability of two sample sub-project candidates (the full 
+development of a 55 MW and a 10 MW power plant), and the results are presented below. 
+ 
+Cost-benefit analysis 
+ 
+The economic cost estimates were derived based on known or inferred relationships between costs and technical 
+characteristics of geothermal projects, excluding taxes and duties. Investment costs of geothermal development are 
+determined by the following factors: (i) size of the development (MW) determined by both resources availability and 
+demand; (ii) the enthalpy and depth of the resources; (iii) difficulty of access to the concession area; and (iv) cost and 
+efficiency of project management.   
+ 
+In terms of composition, geothermal development comprises four types of costs: (i) drilling costs, a function of the 
+number wells and the cost of each well; (ii) infrastructure costs for construction roads, well pads and other infrastructure 
+facilities; (iii) equipment costs, including power plant and steam field above ground systems (SAGS); and (iv) project 
+management costs.  
+ 
+Drilling cost is a function of the following factors: (i) well productivity; (ii) success rate of drilling; (iii) well depth, and (iv) 
+prevailing services and material cost. Well productivity, in turn, depends largely on the enthalpy of the resources and 
+well permeability (i.e. the ease with which fluids flow into the well).  
+ 
+Three enthalpy scenarios were assumed in the analysis: (i) low enthalpy, i.e., temperature between 180°C and 230°C; 
+(ii) medium enthalpy with temperature above 230°C but relatively low pressure9; and (iii) high enthalpy with both high 
+temperature and high pressure. The base case scenario assumes medium enthalpy for both fields. It was further 
+assumed three wells will be drilled at the exploration phase.  
+ 
+                                                             
+8 Either direct loan or on-lent via MoF. 
+9 Defined as less than 10% excess enthalpy compared to reservoir temperature when measured in a discharging well 
+with at least 5 barg WHP, a definition agreed with MEMR albeit minor insistencies with the international conventions.
+
+=== PAGE 42 ===
+APPRAISAL SUMMARY 
+ 
+GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 39 OF 56 
+ 
+ 
+ 
+F 
+Infrastructure Costs are driven primarily by the difficulty in site access. The analysis laid out three scenarios: (i) easy 
+access with initial access road length ranging between 0 and 7.5 km from existing public access road; (ii) medium with 
+initial access road between 7.5 km and 20 km; and (iii) difficult with initial access road longer than 20 km.  
+ 
+Power Plant Equipment Costs were assumed at US$1,500 per kW for a standard single-unit 55 MW plant, and $1,650 
+per kW for the 10 MW plant. For any other sizes, the plant costs were estimated using an experiential formula derived 
+from actual plant cost data.10   
+ 
+Assuming medium enthalpy and easy access, the total cost of geothermal development under the base case scenario 
+was thus estimated at US$209.3 million for the 55 MW site, and US$41.2 million for the 10 MW site. 
+Table 3 – Total Investment Cost 
+Development 1 
+(US$ million) 
+ Development 2  
+(US$ million) 
+Drilling  
+90.5 
+18 
+Infrastructure   
+7.1 
+3.3 
+Power plant and SAGS 
+101.8 
+18 
+Project management  
+10 
+2 
+Total 
+209.3 
+41.2 
+ 
+ 
+Benefits  
+The economic benefits of each development comprise two parts: (i) the economic value of the power supply from the 
+plant; and (ii) the avoided cost in CO2 emissions vis-à-vis thermal powered generation. 
+ 
+Plant Factor. A plant factor of 92% was assumed based on experience from operations of existing geothermal power 
+plants in Indonesia. 
+ 
+Power supply. The annual power output amounts to 443.3 GWh from the 55 MW plant, and 80.6 GWh from the 10 MW 
+plant. 
+ 
+The economic value of the power supply from each geothermal development is estimated as the weighted average of 
+the cost of diesel-based power supply it substitutes and the willingness-to-pay for the additional power supply it enabled 
+to provide access to un-electrified households. 
+ 
+Table 4 – Economics Analysis, ENPV and EIRR Results 
+ 
+Development 1 
+55 MW 
+Development 2 
+10 MW 
+ENPV @ 6% discount rate 
+US$240.7 million 
+US$166.3 million 
+EIRR  
+16.4% 
+32.4% 
+                                                             
+10 Single unit plant cost = 1.6051 * (MW)-0.316
+
+=== PAGE 43 ===
+APPRAISAL SUMMARY 
+ 
+GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 40 OF 56 
+ 
+ 
+ 
+F 
+ 
+Financial Analysis.   
+ 
+The Financial Analysis (FA) was carried out from two different perspectives: (i) one from the developer’s perspective, 
+assessing the financial viability of the 55 MW and 10 MW developments on a with- and without-project bases; (ii) the 
+other from the implementing agency’s perspective, assessing its cash in- and out-flows related to the Facility. 
+ 
+From a Developer’s Perspective 
+ 
+Financing mix. In Indonesia, the costs of geothermal exploration are typically born by the developer through full equity 
+financing because debt financing is usually not available at this stage of the development due to the high levels of 
+resource uncertainties.  Once resources risks are greatly reduced, developers can access debt financing more easily.  
+Thus, in the without-Project scenario the financing mix is assumed to vary from full equity financing at the exploration 
+stage, to a 70/30 debt-to-equity thereafter.  
+ 
+Financing cost. Each stage of geothermal development is associated with a certain amount of risks and capital 
+requirements. Although the capital requirements are higher in later stages, the resource risks at early exploration stages 
+are often deemed insurmountable from a financial perspective, stalling the sector’s development.  Developers would 
+demand a risk premium commensurate with the high resource uncertainty associated with the exploration stage of the 
+geothermal development.   
+ 
+Cost of capital.   A cost of debt at 8.0% and corporate tax at 25% have been assumed. 
+ 
+Outcome of the financial analysis from a developer’s perspective:   
+ 
+• 
+Without the Project intervention, the 55 MW and 10 MW geothermal developments are unlikely to be pursued 
+due to high equity exploration costs coupled with real and perceived geothermal development-related risks.  A 
+coal baseline for the country’s main load centers and a diesel baseline (with less electrification) for the smaller 
+island grids of Eastern Indonesia would likely be the alternative scenarios; and 
+ 
+• 
+With the Project calculations show that FIRR for a private investor will be adequate to meet or exceed his required 
+return on investment for the 55 MW case - even for low enthalpy scenarios. For the 10 MW plant, high or medium 
+enthalpy resources would, marginally, allow a private developer an adequate return whereas an SOE, due to their 
+lower hurdle rate, would be able to develop the 10 MW plant in all enthalpy scenarios. 
+ 
+From the Implementing Agency’s Perspective 
+ 
+Facility Capitalization.  The proposed Facility would be capitalized with the following contributions: (i) US$175 million 
+through GCF; (ii) US$325 million from IBRD; and (iii) as parallel financing, US$150 million from SMI through PISP. 
+ 
+Investment Mix. The proposed Facility would be supporting public, private and public-private partnership (PPP) 
+investments, based on a pipeline of WKPs designated by MEMR. The pipeline as well as the site specifications, such 
+as ease of access and expected sizes, have been included in the financial model. 
+ 
+Development Success Rate.  For purposes of the financial analysis, the development success rate (including resource 
+risk and downstream development) is assumed to be 75%. This is in line with a development success rate range of 
+75%-80% for Indonesia. It is noted that with a single well success rate, the likelihood that the well can be used for 
+steam production is around 55%-60%, and that a normal site success criteria is two/thirds of the exploration wells being 
+productive. 
+ 
+Funding Considerations.  Funding eligibility and mix for each Facility window are shown in the table below.
+
+=== PAGE 44 ===
+APPRAISAL SUMMARY 
+ 
+GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 41 OF 56 
+ 
+ 
+ 
+F 
+Table 5 - Funding Eligibility and Mix 
+ 
+ 
+PUB 
+PRIV 
+Loan 
+Eligibility 
+Exploration 
+Delineation/Refinancing 
+of Exploration 
+Exploration and 
+Delineation 
+Max facility 
+share of total 
+investment 
+ 
+100% 
+ 
+100% 
+ 
+75% 
+ 
+Outcome of the financial analysis from the implementing agency’s perspective: 
+ 
+• 
+It is expected that at least 1,000 MW of new geothermal capacity could be enabled, thus leveraging at 
+least US$4,000 million and reducing GHG emissions by 6.3 MtC02 annually. 
+ 
+With the first tranche of US$97.5 million, the Project is still considered viable. 
+ 
+F.2. Technical Evaluation  
+Please provide an assessment from the technical perspective. If a particular technological solution has been chosen, 
+describe why it is the most appropriate for this project/programme. 
+Geothermal technologies use hydrothermal resources that have both water (hydro) and heat (thermal). Depending on 
+the site and resource characteristics observed from surface manifestations and various geoscientific studies, there are 
+three main types of technologies for the exploration drilling phase: ground source heat pumps, direct use, and deep 
+and enhanced geothermal systems (EGS). The developers are expected to submit, as part of the sub-project funding 
+proposal, a drilling program that will include considerations for the optimal technology for a given site, which will 
+ultimately be vetted by SMI and its technical expert consultants.   
+F.3. Environmental, Social Assessment, including Gender Considerations 
+Describe the main outcome of the environment and social impact assessment. Specify the Environmental and Social 
+Management Plan, and how the project/programme will avoid or mitigate negative impacts at each stage (e.g. 
+preparation, implementation and operation), in accordance with the Fund’s Environmental and Social Safeguard 
+(ESS) standard. Also describe how the gender aspect is considered in accordance with the Fund’s Gender Policy and 
+Action Plan.  
+The Project will target prospective geothermal work areas across the Indonesian archipelago. Although the project 
+locations are not yet defined, screening of potential sites indicates that they are likely to be remote areas, potentially 
+with agricultural land uses, forests, surface geothermal features and landscapes, and potentially other types of natural 
+habitats within the project area of influence. Infrastructure such as roads and wharfs may be basic and require 
+upgrading to allow rigs to get to site. Indigenous people may be present in the project area of influence. Geothermal 
+developments may not be well understood by the host communities, and there is the potential that host communities 
+are not connected to an electricity grid or have other basic infrastructure. Locations and scope of the environmental 
+and social impacts of projects seeking financing from SMI will be determined during the screening and appraisal of the 
+proposals. 
+The developer’s proposals for financing will consist of the activities for geothermal upstream resource development 
+(exploration and delineation drilling). These activities will result in adverse environmental and social impacts and each 
+proposal could fall as Category A or B. The potential environmental and social impacts might be significant, diverse 
+and irreversible.
+
+=== PAGE 45 ===
+APPRAISAL SUMMARY 
+ 
+GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 42 OF 56 
+ 
+ 
+ 
+F 
+Exploration involves construction of access roads, mobilization and operation of large, heavy drilling rigs, construction 
+of work camps. Potential impacts include: (i) impacts on soils, vegetation, biodiversity and the surface water network 
+due to the construction of access roads and drilling platforms during the exploration phase, and production drillings, 
+steam pipelines, powerhouses, road networks, and transmission lines during the operational phase; (ii) potential 
+damage to, or conversion of natural habitats, as a significant percentage of geothermal resources is located in or near 
+terrain on which forest cover is to be maintained for watershed protection; (iii) temporary and permanent land 
+acquisition, or damage to, or loss of assets or livelihoods; (iv) damage or disturbances to physical cultural resources; 
+(v) damage or disturbances to geothermal features, water supplies, community infrastructure; and (vi) production, 
+handling, storage and disposal of drilling mud and fluids during the exploration phase; (vii) production, storage and 
+handling of brines, noise and visual impacts during the production phase.  
+As part of standard practice for geothermal industry and in Indonesia, developers are required to return the site to prior 
+drilling state in the demobilization process. Compared to most other technologies, geothermal drilling has small and 
+confined footprint. Nevertheless, 60 percent of the geothermal sites in Indonesia tend to be in forest areas. The World 
+Bank will consult with the lawyers in considering a strategy for re-forestation of unsuccessful sites, including the 
+possibility of making it contractually binding. 
+The ESMF has provided three stages of screening: (1) desk review of the long list of potential sites to exclude non-
+starters such as sites within biodiversity reserves; (2) document review/field reconnaissance to identify any fatal flaws 
+in sites proposed for further consideration, such as no way to evacuate power except through a protected area; and (3) 
+undertake screening to determine what level of environmental assessment should be prepared for a site where 
+exploration is planned. The ESMF will include model terms of reference for ESIAs and Environmental and Social 
+Management Plans (ESMPs). In addition to assessment of exploration impacts, sub-project-level ESIAs and ESMPs 
+will identify the key potential impacts of site development and operation along with mitigation requirements and 
+approximate costs, as this information will be relevant to the decision whether or not to explore. The World Bank will 
+review and approve the TORs for TA activities. The ESMF will provide guidelines for assessing environmental and 
+social consequences of proposed reforms, to be applied by the entities conducting the TA, and the team will review the 
+results of such assessments prior to implementation of the reforms. The WBG EHS Guidelines will apply to the Project, 
+both the general guidelines and those for geothermal power generation. 
+Along with the implementation of safeguard for environmental and social issues, careful attentions and considerations 
+will be made for gender aspects in the design and implementation of the project. Gender assessments will be carried 
+out along with the sub-project level ESIAs and ESMPs to identify and resolve gender issues associated with the 
+exploration activities such as female employment etc. This practice will follow the gender related recommendations to 
+be made in the Operations Manual. 
+F.4. Financial Management and Procurement 
+Describe the project/programme’s financial management and procurement, including financial accounting, 
+disbursement methods and auditing. 
+Financial Management (FM). This financial management of the several World Bank projects implemented by SMI has 
+been rated satisfactory, reflecting SMI’s capacity and their institutional arrangement in place to uphold high fiduciary 
+standards by MDBs. A Financial Management Assessment (FMA) for the proposed Project will be prepared as part of 
+ongoing World Bank’s project preparation process and is expected to be completed by early September 2018 prior to 
+the GCF Board decision. SMI will follow World Bank procurement guidelines, including independent auditing 
+arrangements, use of IFRS and quarterly financial reporting. Designated trust fund account will be established for GCF 
+funds by the World Bank and SMI.  
+ 
+Procurement. The proposed operation envisages on-lending by SMI to (i) public sector developers, including state-
+owned enterprises (SOEs), and joint ventures formed between SOEs and private partners; and (ii) private sector 
+developers (i.e., IPPs). For sub-loans to SOEs, the procurement of goods, works, non-consulting services, and
+
+=== PAGE 46 ===
+APPRAISAL SUMMARY 
+ 
+GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 43 OF 56 
+ 
+ 
+ 
+F 
+consulting services shall follow the World Bank Procurement Guidelines for Investment Project Financing (IPF) 
+Borrowers dated November 2017.
+
+=== PAGE 47 ===
+RISK ASSESSMENT AND MANAGEMENT 
+ 
+GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 44 OF 56 
+ 
+ 
+G 
+ 
+ 
+G.2. Risk Factors and Mitigation Measures 
+Please describe financial, technical and operational, social and environmental and other risks that might prevent the 
+project/programme objectives from being achieved. Also describe the proposed risk mitigation measures. 
+Selected Risk Factor 1 
+ 
+Description 
+Risk category 
+Level of impact 
+Probability of risk 
+occurring 
+The GoI has set clear strategies and policies to develop 
+the geothermal sector. There have however been 
+significant and frequent changes in the regulatory 
+framework, which has introduced uncertainties in the 
+sector and deterred investments. First, the most recent 
+tariff policy requiring power price to be competitive with 
+the average cost of generation in a region rather than 
+the marginal economic costs of new supply appears to 
+create an additional barrier to bringing on-line 
+renewable energy more broadly and geothermal energy 
+more specifically. This can become a disincentive for 
+geothermal development in areas with low average 
+costs, including large power markets with rich 
+geothermal resources and large power demand, such 
+as Java and Sumatra. Second, uncertainty related to 
+post-exploration business-to-business negotiations of 
+PPA sales price with PLN may prevent developers from 
+investing in exploration. This uncertainty could be 
+compounded by the new requirement for ministerial 
+approval of PPA sales price, which may be perceived 
+as excessive scrutiny and may further deter investors.  
+Technical and 
+operational 
+Low (<5% of 
+project value) 
+Medium 
+Mitigation Measure(s) 
+Please describe how the identified risk will be mitigated or managed. Do the mitigation measures lower the 
+probability of risk occurring? If so, to what level?  
+ 
+Through the Technical Assistance Component, the project team will continue dialogue with key policy-makers and 
+stakeholders on ameliorating the regulatory barriers to the sector. 
+ 
+Selected Risk Factor 2 
+ 
+Description 
+Risk category 
+Level of impact 
+Probability of risk 
+occurring 
+The Project aims to establish a first-of-its-kind Facility 
+to support exploration drilling by geothermal developers 
+in Indonesia. The Project design is still being tested with 
+key stakeholders and issues related to legal, 
+Technical and 
+operational 
+Low (<5% of 
+project value) 
+Medium 
+G.1. Risk Assessment Summary 
+Please provide a summary of main risk factors. Detailed description of risk factors and mitigation measures can be 
+elaborated in G.2. 
+The Risk factors are described in detail in Section G.2.
+
+=== PAGE 48 ===
+RISK ASSESSMENT AND MANAGEMENT 
+ 
+GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 45 OF 56 
+ 
+ 
+G 
+operational, financial, and commercial risks for different 
+parties will be considered and addressed.  
+Mitigation Measure(s) 
+Please describe how the identified risk will be mitigated or managed. Do the mitigation measures lower the 
+probability of risk occurring? If so, to what level?  
+ 
+The financing terms will need to reflect market conditions and developers’ risk appetite. The team is undertaking 
+extensive market sounding to ensure adequate uptake for the Facility, while working with key government stakeholders 
+to ensure the enabling legal framework for such a Facility is in place. 
+ 
+Selected Risk Factor 3 
+ 
+Description 
+Risk category 
+Level of impact 
+Probability of risk 
+occurring 
+Piloting a new financing facility with a complex modus 
+operandi has inherent risks related to the institutional 
+capacity of the key entities and stakeholders involved in 
+establishing, managing, and overseeing such an 
+innovative mechanism.  
+Technical and 
+operational 
+Low (<5% of 
+project value) 
+Medium 
+Mitigation Measure(s) 
+Please describe how the identified risk will be mitigated or managed. Do the mitigation measures lower the 
+probability of risk occurring? If so, to what level?  
+ 
+There is high-level support and commitment toward this Project among the key stakeholders, which provide 
+momentum to address the main institutional bottlenecks both at the ministries and at SMI. The Technical Assistance 
+Component will be designed to address the capacity issues and will focus on specific policies / regulations / practices 
+to unblock some of the existing constraints and facilitate investment into the geothermal sector. Furthermore, the Bank 
+will build on its ongoing experience of working with SMI, MEMR, and PLN, as well as draw on international experience 
+in supporting efforts to improve the geothermal investment through extensive dialogues and consultations with 
+developers and private sector stakeholders. 
+ 
+Selected Risk Factor 4 
+ 
+Description 
+Risk category 
+Level of impact 
+Probability of risk 
+occurring 
+The major procurement risks currently envisaged are 
+SMI’s capacity for due diligence and oversight of 
+implementation of complex drilling operations by SOEs. 
+The procurement risks will be further assessed during 
+project preparation and mitigation measures agreed. 
+For each sub-project, the SOEs will also be required to 
+develop Project Procurement Strategy for Development 
+(PPSD) with support from the Bank and SMI.  
+Technical and 
+operational 
+Medium (5.1-
+20% of project 
+value) 
+Medium 
+Mitigation Measure(s) 
+Please describe how the identified risk will be mitigated or managed. Do the mitigation measures lower the 
+probability of risk occurring? If so, to what level?  
+ 
+PPSD will include inter alia a market analysis to design the appropriate approaches to the market and to facilitate 
+preparation of the procurement plan. The need for hiring the consultants by SMI for carrying capacity assessment of
+
+=== PAGE 49 ===
+RISK ASSESSMENT AND MANAGEMENT 
+ 
+GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 46 OF 56 
+ 
+ 
+G 
+SOEs with market analysis and preparation of PPSD, and supporting SMI in overseeing the procurement and contract 
+management by SMI will also be discussed during the early stages of project preparation. 
+ 
+Selected Risk Factor 5 
+ 
+Description 
+Risk category 
+Level of impact 
+Probability of risk 
+occurring 
+There are potential direct and negative impacts during 
+project implementation are associated with exploration 
+infrastructure, such as access roads, drilling pads, 
+extraction of geothermal water, and discharges of water 
+and drilling muds. There are also potential long-term 
+impacts from induced development and the benefits of 
+renewable electricity generation.  
+Social and 
+environmental 
+Medium (5.1-
+20% of project 
+value) 
+Medium 
+Mitigation Measure(s) 
+Please describe how the identified risk will be mitigated or managed. Do the mitigation measures lower the 
+probability of risk occurring? If so, to what level?  
+ 
+Some environmental impacts may be considered irreversible or unprecedented without adequate mitigation and 
+management, which is outlined in detail in the accompanying ESMF. With regards to social issues, land acquisition is 
+expected to be willing buyer-willing seller. In previous Bank-financed project implemented by PGE in Lahendong and 
+Ulubelu, land acquisition was conducted through direct negotiation and there was no involuntary resettlement. The 
+infrastructure, access route and drilling program can be adjusted in case land-owners object to releasing their land.   
+ 
+Other Potential Risks in the Horizon 
+Please describe other potential issues which will be monitored as “emerging risks” during the life of the projects (i.e., 
+issues that have not yet raised to the level of “risk factor” but which will need monitoring).  This could include issues 
+related to external stakeholders such as project beneficiaries or the pool of potential contractors. 
+ 
+Not applicable 
+* Please expand this sub-section when needed to address all potential material and relevant risks.
+
+=== PAGE 50 ===
+RESULTS MONITORING AND REPORTING 
+ 
+GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 47 OF 56 
+ 
+ 
+ 
+H 
+H.1. Logic Framework.  
+ 
+Please specify the logic framework in accordance with the GCF’s Performance Measurement Framework under 
+the Results Management Framework. 
+ 
+H.1.1. Paradigm Shift Objectives and Impacts at the Fund level11 
+Paradigm shift objectives 
+Shift to low-emission 
+sustainable development 
+pathways 
+The proposed Project expects to contribute to Indonesia’s shift to low-emission sustainable 
+development pathways by implementing an innovative risk mitigation approach that have the 
+potential to be replicated in other geothermal-rich countries and regions. They may include 
+but are not limited to Chile, Dominica, Mexico, Nicaragua, El Salvador, Costa Rica and Saint 
+Lucia in Latin America; Ethiopia, Tanzania, Kenya and Djibouti in East Africa; Turkey and 
+Armenia in Eastern Europe and the Balkans; and the Philippines and Fiji in the Pacific. The 
+risk mitigation model developed under this Project could be adapted to country contexts to 
+potentially facilitate a rapid world-wide scale-up of geothermal development through 
+demonstration effects.  
+Expected Result 
+Indicator 
+Means of 
+Verification 
+(MoV) 
+Baseline 
+Target 
+Assumptions 
+Mid-term  
+(if applicable) 
+Final 
+Fund-level impacts 
+M1.0 Reduced 
+emissions through 
+increased low-emission 
+energy access and 
+power generation 
+Tonnes of carbon 
+dioxide equivalent (t 
+CO2eq) reduced as 
+a result of Fund 
+funded projects/ 
+programmes   
+SMI’s M&E 
+Function as 
+Implement. 
+Agency  
+0 
+93.5 
+MtCO2eq 
+187 
+MtCO2e
+q 
+Refer to Section 
+E.6.5.  
+M1.0 Reduced 
+emissions through 
+increased low-emission 
+energy access and 
+power generation 
+ 
+ 
+Cost per t CO2eq 
+decreased for all 
+Fund-funded 
+mitigation projects/ 
+programmes 
+ 
+ 
+SMI’s M&E 
+Function as 
+Implement. 
+Agency 
+0 
+US$ 1.2 / 
+tCO2eq 
+US$ 1.2 
+/ 
+tCO2eq 
+Total financing 
+of US$4 billion 
+divided by the 
+GCF amount 
+mobilized of 
+US$185 million. 
+M1.0 Reduced 
+emissions through 
+increased low-emission 
+energy access and 
+power generation 
+MWs of Low-
+emission energy 
+capacity installed, 
+generated and/or 
+rehabilitated as a 
+SMI’s M&E 
+Function as 
+Implement. 
+Agency 
+0 
+500 MW 
+1,000 
+MW 
+Expected values 
+                                                             
+11 Information on the Fund’s expected results and indicators can be found in its Performance Measurement Frameworks 
+available at the following link (Please note that some indicators are under refinement): 
+http://www.greenclimate.fund/documents/20182/239759/5.3_-
+_Performance_Measurement_Frameworks__PMF_.pdf/60941cef-7c87-475f-809e-4ebf1acbb3f4
+
+=== PAGE 51 ===
+RESULTS MONITORING AND REPORTING 
+ 
+GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 48 OF 56 
+ 
+ 
+ 
+H 
+result of the GCF 
+support. 
+ 
+M1.0 Reduced 
+emissions through 
+increased low-emission 
+energy access and 
+power generation 
+ 
+Volume of finance 
+leveraged by Fund 
+funding   
+ 
+SMI’s M&E 
+Function as 
+Implement. 
+Agency 
+0 
+US$2 
+billion 
+US$4 
+billion 
+Full geothermal 
+development 
+cost around 
+US$4 million per 
+MW * 1,000 MW 
+enabled 
+M1.0 Reduced 
+emissions through 
+increased low-emission 
+energy access and 
+power generation 
+Volume of finance 
+leveraged by Fund 
+funding – Sub-
+Element 1: Private 
+capital mobilized for 
+investment in 
+geothermal 
+Exploration 
+SMI’s M&E 
+Function as 
+Implement. 
+Agency 
+0 
+0 
+US$0.5 
+million 
+Expected values 
+M1.0 Reduced 
+emissions through 
+increased low-emission 
+energy access and 
+power generation 
+Volume of finance 
+leveraged by Fund 
+funding – Sub-
+Element 2: Private 
+capital expected to 
+be mobilized for 
+investment in 
+geothermal 
+development over 
+time 
+SMI’s M&E 
+Function as 
+Implement. 
+Agency 
+0 
+0 
+US$ 3.5 
+billion 
+Expected values 
+ 
+H.1.2. Outcomes, Outputs, Activities and Inputs at Project/Programme level 
+Expected Result 
+Indicator 
+Means of 
+Verification 
+(MoV) 
+Baseline 
+Target 
+Assumptions 
+Mid-term 
+(if applicable)  
+Final 
+Project/programme 
+outcomes 
+Outcomes that contribute to Fund-level impacts 
+1. Geothermal projects 
+explored 
+Number of projects 
+explored 
+SMI’s M&E 
+Function as 
+Implementing 
+Agency 
+0 
+10  
+17 (T1: 
+10) 
+Each project will 
+benefit from 
+around US$30 
+million loan from 
+the facility 
+2.  GREM Facility 
+governance and 
+management procedure 
+under SMI adequate 
+PMU established, 
+well-staffed and 
+well-resourced 
+SMI’s M&E 
+Function as 
+Implementing 
+Agency 
+No 
+Yes 
+Yes (T1: 
+Yes) 
+TA activity 
+funded under 
+Component 2
+
+=== PAGE 52 ===
+RESULTS MONITORING AND REPORTING 
+ 
+GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 49 OF 56 
+ 
+ 
+ 
+H 
+3. Geothermal 
+investment climate 
+improved 
+TA support 
+extended to key 
+players, including 
+MEMR, PLN and 
+Geo Dipa 
+SMI’s M&E 
+Function as 
+Implementing 
+Agency 
+No 
+Yes 
+Yes (T1: 
+Yes) 
+TA activity 
+funded under 
+Component 2 
+Project/programme 
+outputs 
+Outputs that contribute to outcomes 
+1. Funding for 
+exploration drilling 
+extended to explore 
+new prospective 
+sites  
+Number of loans 
+for resource 
+confirmation drilling  
+SMI’s M&E 
+Function as 
+Implementing 
+Agency 
+0 
+10  
+17 
+(T1:10) 
+Investment 
+support 
+mobilized 
+through TA 
+support under 
+Component 2 
+2. Appraisal and drilling 
+result evaluation 
+reports prepared by 
+the PMU  
+Number of reports 
+prepared by PMU 
+SMI’s M&E 
+Function as 
+Implementing 
+Agency 
+0 
+20  
+34 
+(T1:20) 
+TA activity 
+funded under 
+Component 2.  It 
+assumes two 
+reports per 
+project. 
+3. Project-level GAP 
+prepared and 
+implemented  
+Number of project-
+level GAPs 
+prepared and 
+supervision 
+provided 
+SMI’s M&E 
+Function as 
+Implementing 
+Agency 
+0 
+10  
+17 (T1: 
+10) 
+TA activity 
+funded under 
+Component 2 
+4. PLN adopts 
+bankable PPA 
+reflective of 
+transmission and 
+distribution planning  
+Geothermal PPA 
+including T&D 
+arrangements 
+SMI’s M&E 
+Function as 
+Implementing 
+Agency 
+No 
+Yes 
+Yes (T1:  
+Improved 
+PPA 
+template 
+agreed) 
+TA activity 
+funded under 
+Component 2 
+5. Proposed tariff report 
+for MEMR 
+Proposed tariff 
+report delivered to 
+MEMR 
+SMI’s M&E 
+Function as 
+Implementing 
+Agency 
+0 
+1 
+1 (T1: 1) 
+TA activity 
+funded under 
+Component 2 
+6. Improved resource 
+data management 
+capacity by Geo Dipa  
+Number of data 
+management 
+software with 
+training (one) 
+delivered to Geo 
+Dipa 
+SMI’s M&E 
+Function as 
+Implementing 
+Agency 
+0 
+1 
+3 (T1: 1) 
+TA activity 
+funded under 
+Component 2 
+7. Geothermal 
+development 
+capacity of Geo Dipa 
+and PLN increased  
+Number of 
+geothermal 
+exploration and 
+exploitation 
+management 
+focused trainings 
+SMI’s M&E 
+Function as 
+Implementing 
+Agency 
+0 
+3 
+6 (T1: 2) 
+TA activity 
+funded under 
+Component 2
+
+=== PAGE 53 ===
+RESULTS MONITORING AND REPORTING 
+ 
+GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 50 OF 56 
+ 
+ 
+ 
+H 
+ 
+Activities 
+Description 
+Inputs 
+Description 
+Output 1 – Number of loans for resource confirmation drilling 
+1.1 Funding for resource 
+confirmation drilling 
+Funding packages provided to 
+developers, and where relevant 
+technical assistance 
+Investment support 
+mobilized through 
+TA support under 
+Component 2 
+Preparation and specialized 
+advisors on retainer basis to 
+provide international 
+expertise to SMI and its 
+PMU 
+1.2 Supervision of 
+drilling loans 
+Supervision of drilling loans 
+Investment support 
+mobilized through 
+TA support under 
+Component 2 
+Preparation and specialized 
+advisors on retainer basis to 
+provide international 
+expertise to SMI and its 
+PMU 
+Output 2 – Number of appraisal and drilling result evaluation reports prepared by PMU 
+2.1 Appraisal and drilling 
+result evaluation 
+Technical reports will be prepared 
+by expert consultants early on in 
+project implementation and by 
+SMI’s in-house staff in later stage 
+ TA support under 
+Component 2 
+TA budget 
+Output 3 – Number of project-level GAPs prepared and supervision provided 
+3.1 Preparation of 
+project-level GAPs and 
+supervision   
+GAPs will be prepared by 
+developers and supported with 
+supervision by PMU to contribute to 
+the gender efforts under the Project 
+TA Component 2 
+GAPs will be in compliance 
+with guidelines laid out in the 
+OM 
+Output 4 – PLN’s geothermal PPA including T&D arrangement  
+4.1 Transmission and 
+distribution planning for 
+geothermal development 
+Delivery of report with 
+recommendations on transmission 
+and distribution planning for 
+geothermal development 
+TA Component 2 
+TA budget 
+Output 5 – Proposed tariff report delivered to MEMR  
+5.1 Preparation of 
+revised geothermal tariff 
+Tariff report considering market 
+conditions building on the previous 
+regulatory TA efforts with a view to 
+provide advice on key topics for 
+greater investment, including 
+private sector participation 
+TA Component 2 
+TA budget 
+Output 6 – Number of data management software with training (one) delivered to Geo Dipa 
+6.1 Data management 
+software with training 
+Delivery of data management 
+software with training based on the 
+private sector experience with data 
+management tools 
+TA Component 2 
+TA budget 
+Output 7 – Number of geothermal exploration and exploitation management focused trainings for Geo Dipa 
+and PLN
+
+=== PAGE 54 ===
+RESULTS MONITORING AND REPORTING 
+ 
+GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 51 OF 56 
+ 
+ 
+ 
+H 
+  
+ 
+7.1 Geothermal 
+exploration and 
+exploitation 
+management focused 
+trainings 
+Delivery of geothermal exploration 
+and exploitation management 
+focused trainings. The focus of the 
+training spans the entire geothermal 
+development process, from 
+development of a conceptual model 
+for exploration to power plant 
+operation and maintenance. The 
+training could be provided by the 
+Bandung Institute of Technology. 
+TA Component 2 
+TA budget 
+H.2. Arrangements for Monitoring, Reporting and Evaluation 
+Besides the arrangements (e.g. semi-annual performance reports) laid out in AMA, please provide project/programme 
+specific institutional setting and implementation arrangements for monitoring and reporting and evaluation. Please 
+indicate how the interim/mid-term and final evaluations will be organized, including the timing. Please provide 
+methodologies for monitoring and reporting of the key outcomes of the project/programme. 
+ 
+Project implementation involves: (i) monitoring of performance indicators in Section H; (ii) periodic progress reports; and 
+(iii) a Mid-Term Review of implementation progress.  This is in line with the monitoring and evaluation (M&E) framework 
+of World Bank projects.  In greater detail: 
+ 
+3. As part of the World Bank project implementation, SMI is expected as the implementing agency through a PMU, to 
+administer the sub-loan portfolio and monitor the project implementation against the performance indicators of the 
+Project results framework. In their M&E function, they will also be supported by experts sourced through the technical 
+assistance component. Data and statistics on actual project outputs and outcomes will be gathered, analyzed, and 
+included in the quarterly progress reports to be submitted to the Bank. 
+ 
+4. The Bank will review standard and ad-hoc progress reports as well as requests submitted by SMI, including no 
+objections.  Procurement and financial management controls will be put in place according to the Bank corporate 
+standards. These will include detailed reviews of costing benchmarks from other geothermal development 
+engagements in Indonesia - first and foremost, the ongoing Geothermal Energy Upstream Development Project 
+(GEUDP) - to ensure reasonableness of costs incurred. 
+ 
+5. These efforts on monitoring progress towards the achievement of the project development objective will be 
+complemented by the World Bank’s Implementation Status and Results Reports (ISRs), which will be submitted at 
+least biannually by the task team following on the ground implementation support missions. Halfway through project 
+implementation, the World Bank will conduct a Mid-Term Review, the results of which will be captured in a dedicated 
+ISR.  At completion, an Implementation Completion and Results (ICR) report will be prepared with inputs from all 
+stakeholders, including WB, the local agencies involved during implementation as well as the project beneficiaries.  
+WB will report on its monitoring exercise to GCF, as required by the project needs.
+
+=== PAGE 55 ===
+ANNEXES 
+ 
+GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 52 OF 56 
+ 
+ 
+ 
+I 
+* Please note that a funding proposal will be considered complete only upon receipt of all the applicable supporting 
+documents. 
+ 
+ 
+ 
+I. SUPPORTING DOCUMENTS FOR FUNDING PROPOSAL 
+☒ 
+NDA No-objection Letter 
+☒ 
+Feasibility Study 
+☒ 
+Integrated Financial Model that provides sensitivity analysis of critical elements (xls format, if applicable)  
+☒ 
+Confirmation letter or letter of commitment for co-financing commitment (If applicable) 
+☐ 
+Project/Programme Confirmation/Term Sheet (including cost/budget breakdown, disbursement schedule, 
+ 
+etc.) – see the Accreditation Master Agreement, Annex I 
+☒ 
+Environmental and Social Impact Assessment (ESIA) or Environmental and Social Management Plan  
+ 
+(If applicable) 
+☐ 
+Appraisal Report or Due Diligence Report with recommendations (An Appraisal Report is currently being 
+prepared and will be submitted at a later stage) 
+☒ 
+Evaluation Report of the baseline project (If applicable) 
+☒ 
+Map indicating the location of the project/programme 
+☒ 
+Timetable of project/programme implementation
+
+=== PAGE 56 ===
+ANNEXES 
+ 
+GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 53 OF 56 
+ 
+ 
+ 
+I 
+Annex 1: List of Potential Pipeline Projects  
+ 
+The following list consists of WKPs where geothermal development is being considered and where the 
+developer either has not started exploration drilling or has only made very early exploration efforts. It also 
+includes projects that have been designated for development, but not yet assigned to a developer. These 
+KPs therefore constitute a potential pipeline of sub-projects for appraisal and investment purposes – not 
+all sub-projects may end up being developed.   
+ 
+No 
+Working Area 
+Developer 
+Plan of 
+Development 
+(MW) 
+Remarks 
+Public 
+Sector 
+Projects 
+1 
+Tangkuban 
+Perahu 
+PLN 
+60 
+West Java, a slim hole exploration 
+program has been started but it failed 
+on technical drilling issue, showing 
+interest to get the facility 
+2 
+Atadei 
+PLN 
+10 
+Lembata Island – East Nusa Tenggara, 
+two shallow wells were drilled early 
+2000s by MEMR, showing interest to 
+get the facility 
+3 
+Songa 
+Wayaua 
+PLN 
+10 
+Bacan Island – North Maluku, no wells 
+drilled yet, showing interest to get the 
+facility 
+4 
+Sembalun 
+PLN 
+20 
+Lombok Island – West Nusa Tenggara, 
+no wells drilled yet, showing interest to 
+get the facility 
+5 
+Ungaran 
+PLN 
+55 
+Central Java, no wells drilled yet, 
+showing interest to get the facility 
+6 
+Kepahiang 
+PLN 
+110 
+Bengkulu – South Sumatera, no wells 
+drilled yet, showing interest to get the 
+facility 
+7 
+Gunung 
+Sirung 
+PLN 
+5 
+Pantar Island – East Nusa Tenggara, 
+no wells drilled yet, showing interest to 
+get the facility 
+8 
+Oka Ile Ange 
+PLN 
+10 
+Flores Island – East Nusa Tenggara, 
+no wells drilled yet, showing interest to 
+get the facility 
+9 
+Danau Ranau 
+PLN 
+55 
+Lampung – South Sumatera, no wells 
+drilled yet, showing interest to get the 
+facility
+
+=== PAGE 57 ===
+ANNEXES 
+ 
+GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 54 OF 56 
+ 
+ 
+ 
+I 
+10 
+Dieng 
+Candradimuka 
+Geo Dipa 
+40 
+Central Java, no wells drilled yet, 
+showing interest to get the facility 
+11 
+Umbul 
+Telomoyo 
+Geo Dipa 
+55 
+Central Java, no wells drilled yet, 
+showing interest to get the facility 
+12 
+Arjuno 
+Welirang 
+Geo Dipa 
+185 
+East Java, no wells drilled yet, showing 
+interest to get the facility 
+13 
+Iyang 
+Argopuro 
+PGE 
+55 
+East Java, no wells drilled yet, showing 
+interest to get the facility 
+14 
+Seulawah 
+Agam 
+PGE 
+110 
+Aceh – Sumatera, no wells drilled yet, 
+showing interest to get the facility 
+Private 
+Sector 
+Projects 
+1 
+Blawan Ijen 
+Medco 
+110 
+East Java, first exploration drilling 
+program has been started, showing 
+interest to get the facility 
+2 
+Gunung 
+Talang – Bukit 
+Kili 
+Hitay 
+Energy 
+20 
+West Sumatera, no wells drilled yet, 
+showing interest to get the facility 
+3 
+Way Ratai 
+ENEL JV 
+55 
+Lampung – Sumatera, no wells drilled 
+yet, showing interest to get the facility 
+4 
+Rajabasa 
+Supreme 
+220 
+Lampung – Sumatera, no wells drilled 
+yet, showing interest to get the facility 
+5 
+Jaboi 
+Sabang 
+Geothermal 
+Energy 
+10 
+Aceh – Sumatera, no wells drilled yet 
+6 
+Cisolok 
+Cisukarame 
+Jabar 
+Rekin 
+Geothermal 
+50 
+West Java, no wells drilled yet 
+7 
+Tampomas 
+Wijaya 
+Karya 
+45 
+West Java, no wells drilled yet 
+8 
+Rawa Dano 
+Sintesa 
+Banten 
+110 
+Banten – West Java, no wells drilled 
+yet 
+9 
+Guci 
+Spring 
+Energy 
+Sentosa 
+55 
+Central Java, no wells drilled yet
+
+=== PAGE 58 ===
+ANNEXES 
+ 
+GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 55 OF 56 
+ 
+ 
+ 
+I 
+10 
+Pentadio 
+- 
+25 
+Gorontalo – North Sulawesi, in process 
+for PSPE (exploration assignment) to 
+an IPP 
+11 
+Hu’u Daha 
+- 
+20 
+West Nusa Tenggara, in process for 
+PSPE (exploration assignment) to an 
+IPP 
+12 
+Graho Nyabu 
+- 
+110 
+Jambi – Sumatera, in process for 
+PSPE (exploration assignment) to an 
+IPP 
+13 
+Suoh 
+Sekincau 
+- 
+220 
+Lampung – Sumatera, in process for 
+PSPE (exploration assignment) to an 
+IPP 
+14 
+Gunung 
+Hamiding 
+- 
+10 
+Halmahera Island - North Maluku, in 
+process for PSPE (exploration 
+assignment) to an IPP 
+15 
+Gunung 
+Geuredong 
+- 
+35 
+Aceh – Sumatera, in process for PSPE 
+(exploration assignment) to an IPP 
+Not Yet 
+Assigned 
+1 
+Sipoholon Ria 
+Ria 
+- 
+20 
+North Sumatera 
+2 
+Simbolon 
+Samosir 
+- 
+110 
+North Sumatera 
+3 
+Tanjung Sakti 
+- 
+55 
+South Sumatera 
+4 
+Gunung Gede 
+Pangrango 
+- 
+85 
+West Java 
+5 
+Gunung 
+Ciremai 
+- 
+110 
+West Java, no wells drilled yet, 
+showing interest to get the facility 
+6 
+Marana 
+- 
+20 
+Central Sulawesi 
+7 
+Bora Pulu 
+- 
+40 
+Central Sulawesi 
+8 
+Gunung 
+Galunggung 
+- 
+110 
+West Java 
+9 
+Lesugolo 
+- 
+5 
+Flores – East Nusa Tenggara 
+10 
+Gunung Endut 
+- 
+40 
+Banten – West Java 
+11 
+Gunung 
+Pandan 
+- 
+60 
+East Java
+
+=== PAGE 59 ===
+ANNEXES 
+ 
+GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 56 OF 56 
+ 
+ 
+ 
+I 
+12 
+Songgoriti 
+- 
+35 
+East Java 
+13 
+Laenia 
+- 
+20 
+Central Sulawesi 
+14 
+Suwawa 
+- 
+20 
+Gorontalo – Sulawesi 
+15 
+Telaga Ranu 
+- 
+5 
+North Maluku 
+16 
+Gunung Wilis 
+- 
+20 
+East Java
+
+=== PAGE 61 ===
+Page 1 
+ 
+ 
+Environmental and social report(s) disclosure 
+Basic project/programme information 
+Project/programme title 
+Indonesia Geothermal Resource Risk Mitigation Project 
+Accredited entity 
+The World Bank 
+Environmental and social 
+safeguards (ESS) category 
+Intermediation 1 (I1) 
+ 
+Environmental and Social Impact Assessment (ESIA) (if applicable)  
+Date of 
+disclosure on 
+accredited 
+entity’s website 
+Not applicable 
+Environmental and Social Impact Assessment (ESMP) (if applicable) 
+Date of 
+disclosure on 
+accredited 
+entity’s website 
+Not applicable 
+Resettlement Action Plan (RAP) (if applicable) 
+Date of 
+disclosure on 
+accredited 
+entity’s website 
+ See below 
+Any other relevant ESS reports and/or disclosures (if applicable) 
+Description of 
+report/disclosur
+e 
+Draft Environmental and Social Management Framework (ESMF) incorporating the 
+Resettlement Policy Framework and Indigenous Peoples’ Planning Framework  
+Date of 
+disclosure on 
+accredited 
+entity’s website 
+15 May 2018 
+Language(s) of 
+disclosure 
+English 
+Link to 
+disclosure 
+http://documents.worldbank.org/curated/en/683141519642635894/pdf/SFG40
+77-EA-REVISED-P166071-PUBLIC-Disclosed-5-15-2018.pdf 
+The Draft ESMF contains an Environmental and Social Management System (ESMS) 
+consistent with the requirements for a category I-1 programme. 
+Other link(s) 
+AE’s web page:  
+http://projects.worldbank.org/P166071?lang=en 
+ 
+Intermediary’s web page: 
+English 
+https://www.ptsmi.co.id/wp-content/uploads/2018/03/ESMF-Indonesia-GREM-
+Draft-ENG.pdf
+
+=== PAGE 62 ===
+Page 2 
+ 
+ 
+Bahasa Indonesia 
+https://www.ptsmi.co.id/wp-content/uploads/2018/03/ESMF-Indonesia-GREM-
+Draft-INA.pdf 
+ 
+________

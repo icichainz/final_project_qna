@@ -1,0 +1,4753 @@
+=== DOCUMENT METADATA ===
+/Author: Sunny Kim
+/CreationDate: D:20170911162251+09'00'
+/Creator: Adobe Acrobat Pro 11.0.0
+/ModDate: D:20170911174611+09'00'
+/Producer: Adobe Acrobat Pro 11.0.0
+/Title: 
+
+
+---
+*Page 1*
+---
+
+Consideration of funding 
+proposals – Addendum I 
+Funding proposal package for FP04 6 GCF/B.1 8/04/Add. 01 
+11 September 2017  Meeting of the Board 
+30 September –2  October 2017 
+Cairo, Arab Republic of Egypt 
+Provisional agenda item 14(g)  
+Summary  
+This addendum contains the following three  parts:  
+a)A funding proposal summary titled “ Renewable Energy Program #1 - Solar ”
+submitted by XacBank  LLC;
+b)No-objection letter issued by the national desig nated authority(ies) or focal point (s);
+and
+c)Environmental and social report(s) disclosure;
+These documents are presented as submitted by the accredited entity and the national 
+designated authority(i es) or focal point(s), respectively. Pursuant to the Comprehensive 
+Information Disclosure Policy of the Fund , the funding proposal titled “Renewable 
+Energy Program #1 - Solar ” submitted  by XacBank  LLC is being circulated on a limited 
+distribution basis only to Board Memb ers and Alternate Board Members  to ensure 
+confidentiality of certain proprietary, legally privileged or commercially sensitive 
+information of the entity.
+
+
+---
+*Page 2*
+---
+
+ 
+GCF/B.18/04/Add.01  
+Page b 
+ 
+ 
+Table of Contents  
+ Funding proposal summary submitted by the accredited entity                                                              1  
+ No-objection letter issued by the national designated authorities  or focal points                           73 
+                Environmental and social report(s) disclosure                                                                                           74
+
+
+---
+*Page 3*
+---
+
+ 
+ 
+Project/Programme Title:  Renewable Energy Program #1 - 
+Solar  
+Country/Region:  Mongolia  
+Accredited Entity:  XacBank LLC  
+Date of Submission:  March 15th, 2017
+
+
+---
+*Page 4*
+---
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Contents  
+ 
+ 
+Section A  PROJECT / PROGRAMME SUMMARY
+   
+ 
+Section B  FINANCING / COST INFORMATION   
+ 
+Section C  DETAILED PROJECT / PROGRAMME DESCRIPTION  
+ 
+Section D  RATIONALE FOR GCF INVOLVEMENT  
+ 
+Section E  EXPECTED PERFORMANCE AGAINST INVESTMENT 
+CRITERIA  
+ 
+Section F  APPRAISAL SUMMARY  
+ 
+Section G  RISK ASSESSMENT AND MANAGEMENT  
+ 
+Section H  RESULTS MONITORING AND REPORTING  
+ 
+Section I  ANNEX ES 
+ 
+ 
+ 
+ 
+Note to accredited entities on the use of the funding proposal template     
+• Sections A, B, D, E  and H of the funding proposal require detailed inputs from the accredited entity. For all 
+other sections, including th e Appraisal Summary in section F , accredited entities have discretion in how they 
+wish to present the information. Accredited entities can eith er directly incorporate information into this 
+proposal, or provide summary information in the proposal with cross -reference to other project documents 
+such  as project appraisal document.  
+• The total number of pages for the funding proposal (excluding annexes ) is expected not to exceed 50.  
+ 
+ 
+Please submit the completed form to:  
+fundingproposal@gcfund.org  
+ 
+Please use the following name convention for the file name:  
+“[FP] -[Agency Short Name] -[Date] -[Serial Number]”
+
+
+---
+*Page 5*
+---
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Abbreviations  
+AE Accredited Entity  
+ASG  Asia Super Grid  
+AuES  Altai-Uliastai Energy System  
+BOM  Bank of Mongolia  
+CAGR  Compound Annual Growth Rate  
+CAPEX  Capital Expenditure  
+CBD  Corporate Banking Department  
+CES Central Energy System  
+CHP  Combined Heat and Power  
+CRMP  Credit Risk Management Policy  
+CSO  Civil Society Organization  
+CSP Concentrated Solar Power  
+CVI Climate Vulnerability Index  
+DES Dalanzadgad Energy System  
+DSCR  Debt Service Cost Ratio  
+DD Due Diligence  
+EBD Eco Banking Department  
+EBRD  European Bank for Reconstruction and Development  
+EE Energy Efficiency  
+EES Eastern Energy System  
+EPC Engineering, Procurement, Construction  
+ERC  Energy Regulatory Committee  
+ESIA  Environmental and  Social Impact Assessment  
+ESM  Environmental and Social Management  
+ESMS  Environmental and Social Management System  
+FDI Foreign Direct Investment  
+FiT Feed -in-Tariff  
+FMO  The Netherlands Development Finance Company  
+FX Foreign Exchange  
+GAP  Gender Action Plan 
+GHG  Green House Gas  
+GL General Ledger  
+GoM  Government of Mongolia  
+HPP Hydropower plant  
+INDC  Intended Nationally Determined Contributions  
+IPCC  Intergovernmental Panel on Climate Change  
+IRENA  International Renewable Energy Agency  
+JCM Joint Crediting Mechanism  
+JICA  Japan International Cooperation Agency
+
+
+---
+*Page 6*
+---
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ KEPCO  Korea Electric Power Corporation  
+LCOE  Levelised Cost of Electricity  
+LLC Limited Liability Company  
+LULUCF  Land -use, Land -use change, and Forestry  
+M&E  Monitoring and Evaluation  
+MARCC  Mongolia’s Second Assessment Report on Climate Change  
+MRV  Monitoring, Reporting and Verification  
+MSME  Micro, Small and Medium Enterprises  
+NAMA  Nationally Appropriate Mitigation Actions  
+NAPCC  National Action Program on Climate Change  
+NDA  National  Designated Authority  
+NDC  National Dispatch Center  
+NOx Nitrogen oxides  
+NPL Non-Performing Loan  
+NREL  National Renewable Energy Laboratory  
+O&M  Operation and Maintenance  
+PM Particulate Matter  
+PP Power Plant  
+PPA Power Purchase Agreement  
+PV Photovoltaic  
+RE Renewable Energy  
+REP Renewable Energy Program  
+Sox Sulphur oxides  
+SPP Solar Power Plant  
+SREP  Scaling Up Renewable Energy Plan  
+STCM  Science and Technology Committee Meeting  
+TNA Technology Need Assessment  
+UNEP  United Nations Environment Program  
+VAT Value Added Tax  
+WES  Western Energy System
+
+
+---
+*Page 7*
+---
+
+ 
+PROJECT / PROGRAMME SUMMARY  
+ GREE N CLIMATE FUND FUNDING PROPOSAL |  PAGE 1 OF 74 
+ 
+ 
+ A 
+A.1.  Brief Project  / Programme Information  
+A.1.1. Project / programme title  Renewable Energy Program #1 - Solar  
+A.1.2. Project or programme  programme  
+A.1.3. Country (ies) / region                     Mongolia, central  region  
+A.1.4. National designated authority (ies)  Batjargal Zamba, Ministry of Environment  
+A.1.5. Accredited entity  XacBank LLC  
+A.1.5.a. Access modality  ☒  Direct  ☐  International  
+A.1.6. Executing entity / beneficiary  Executing Entity: XacBank, project developer  
+Beneficiary: Citizens of Mongolia ; 
+A.1.7. Project size category (Total investment, million 
+USD)  ☐  Micro (≤10)  
+☐  Medium (50<x≤250)  ☒   Small (10<x≤50)  
+☐  Large (>250)  
+A.1.8. Mitigation / adaptation focus  ☒  Mitigation  ☐  Adaptation  ☐  Cross -cutting  
+A.1.9. Date of submission  July 21st, 2017  
+A.1.10.  
+Project 
+contact 
+details  Contact person, position  Tuul Galzagd  
+Organization  XacBank LLC  
+Email address  tuul.g@xacbank.mn  
+Telephone number  +976 -7577 -1888 ext. 701  
+Mailing address  XacBank HQ Bldg, Ulaanbaatar -14200, Post Branch 20A, 
+PO Box -72, MONGOLIA  
+   
+A.1.1 1. Results areas  (mark all that apply)  
+Reduced emissions from:  
+☒ Energy access and power generation  
+(E.g. on -grid, micro -grid or off -grid solar, wind, geothermal, etc.)   
+☐ Low emission transport  
+(E.g. high -speed rail, rapid bus system , etc.)   
+☐ Buildings, cities and industries and appliances  
+(E.g. new and retrofitted energy -efficient buildings, energy -efficient equipment for companies and supply chain management, etc.)   
+☐ Forestry and land use  
+(E.g. forest conservation and management, agroforestry, agricultural irrigation, water treatment and management, etc.)  
+ 
+Increased resilience of:  
+☐ Most vulnerable people and communities  
+(E.g. mitigation of operational risk associated with climate change – diversification of supply sources and  supply chain management, 
+relocation of manufacturing facilities and warehouses, etc.)  
+☐ Health and well -being, and food and water security  
+(E.g. climate -resilient crops, efficient irrigation systems, etc.)  
+☐ Infrastructure and built environment  
+(E.g. sea walls, resilient road networks, etc.)  
+Ecosystem and ecosystem services  
+(E.g. ecosystem conservation and management, ecotourism, etc.)  
+ ☐ 
+ 
+ 
+ 
+  
+A.2.  Project / Programme Executive Summary (max 300 words)
+
+
+---
+*Page 8*
+---
+
+ 
+PROJECT / PROGRAMME SUMMARY  
+ GREE N CLIMATE FUND FUNDING PROPOSAL |  PAGE 2 OF 74 
+ 
+ 
+ A 
+ 
+This program includes the financing of a 10MW plant in Sumber soum of Govisumber province (southern 
+Mongolia) . As part of Mongolia’s Intended Nationally Determined Contributions ( INDC ), the country aims to 
+supply 20% of the country’s energy through renewable energy by 2020, and 30% by 2030. Though 
+Mongolia’s historical contribution to the current level of GHG emissions is small, the annual per capita 
+emission of GHG of 14.5 tons of CO2 (as of 2013) per Mongolian is relatively  high compared to other 
+countries, and is almost three times the wor ld average (4.996 tons per capita as of 2013).  
+ 
+10 MW SPP : reduce greenhouse gas emissions by 12,270 tons annually; net electricity supply of 15,395 
+MWh of electricity annually. Project lifetime is 25 years.  
+ 
+For the project developer, a pre -assessment was  conducted by the Corporate Banking Division (CBD). 
+Currently, a full due dilig ence is being conducted by the C BD and the Risk Management Department (RMD).  
+ 
+The pre -assessment entails analysis of the feasibility studies, client projections, and project as sumptions  
+given by the project developers , with special attention paid to confirming the project assumptions to ensure 
+accuracy of the project.  A full DD includes a more in -depth analysis of the above factors,  as well as further 
+review of all related contracts  and legal documents  among others , to make sure that they are active and 
+binding. Additionally, there are further in depth stress tests on the financial model.  
+ 
+A.3. Project/Programme Milestone  
+Expected approval from accredited entity’s 
+Board (if applicable)  The Bank does not need its Board approval for this program . The 
+projects will be submitted to the Bank’s Credit Committee to be 
+evaluated for approval.  
+Expected financial close (if applicable)  Septe mber , 2017  
+Estimated implementation start and end date  Start: Nov, 2017 
+End:  Nov, 2027 
+Project/programme lifespan  10 years
+
+
+---
+*Page 9*
+---
+
+ 
+FINANCING / COST INFORMATION  
+ GREE N CLIMATE FUND FUNDING PROPOSAL | PAGE 3 OF 74 
+ 
+ B 
+B.1. Description of F inancial Elements of the Project / Programme  
+The financial elements of the program can be seen from the table in Section B.2 below, however, the 
+following is a simplified table outlining the elements:  
+ 
+  
+ 
+A detailed explanation of the necessity for each component can be found in Section B.2 as well as 
+throughout this document. Currently, market interest rates in Mongolia are prohibitively high and tenors are 
+prohibitively short for investments in renewab le energy. Mongolia’s central bank’s  (Bank of Mongolia, BOM)  
+policy rate is 14%, which leads to extremely attractive deposit savings rates (about 15 -16% for local 
+currency), which in turn leads to very expensive loan rates  that also come with very short terms (maximum of 
+5 years, usually less than 3 years). BOM keeps its policy interest rate at 14% to further support 
+macroeconomic external balance (i.e. balance of payments). Monetary policy stance is still extremely tight, 
+having  11.5 percent positive real interest rate as of end -March  2017 . Mongolia’s government domestic bond 
+rate is currently at 18%. Government of Mongolia’s (GOM) MNT denominated bills’ and bonds’ yields have 
+been on the declining trend , reaching 2012 coupon lev els. The yields are defined based on primary dealers’ 
+(banks) auction results of government securities. According to approved budget for 2017, GOM plans to 
+repurchase over 1 trillion MNT securities from domestic banks and restrict new issuances to maintain  debt 
+sustainability, reduce burden on government budget and avoid costly borrowings from domestic market.   
+ 
+BOM is fully committed to flexible exchange rate regime with occasional foreign exchange ( FX) intervention 
+if necessary. Intervention is limited b y smoothing excessive market volatility and is still conducted by FX 
+auctioning mechanism twice a week. There is no change in FX policy, auctioning or intervention 
+mechanisms. FX official reserves stood at US$1048 million as of end February, covering 4 mon ths of 
+imports. Last year , overall balance of payments had US$-18 million deficit , however , this year ’s balance of 
+payments is going to have surplus of over  US $350 million, supported by increased capital inflows and soft 
+loans under IMF package. This mean s that  FX reserves are expected to increase to over $1.6 billion at the 
+end of 2017.  Between February to March 2017 , BOM purchased around $200 million /net/ from domestic 
+banks through auctioning whilst MNT/USD referenc e rate appreciated by over 80 MNT  (3.2%). This is a 
+clear signal that FX market has fully been stabilized and calmed down due to stabilization of market 
+expectation and sentiment. BOM’s long and short -term FX swap facilities with domestic banks are still 
+available and effective to hedge or re duce FX -related risks in foreign funds. There is no dramatic change in 
+regulation expected.  
+ 
+These conditions illustrate the shortcomings of financing options in Mongolia as well as a lack of access to 
+adequate funds for not only large scale projects, but  for the entire country itself. As XacBank is a commercial 
+bank and not a development bank, and despite its efforts to lessen the burden of loans on its customers by 
+attracting sources of funding from international partners, the Bank is still not able to o ffer sufficient low cost, 
+long term financing. Without the GCF’s support, XacBank’s ability to finance renewable energy projects such 
+as the one included in this proposal would be extremely limited.   
+ 
+The GCF provides access to funding at competitive rates , as such, GCF involvement will allow XacBank to 
+provide beneficial financial terms to sustainable development project implementers who have been 
+interested in implementing such projects but discouraged by high loan interest rates and short loan tenors 
+available in Mongolia. With the GCF’s ability to provide concessionary loan support (competitive rates and 
+longer tenures), XacBank will be able to offer loans that allow the project to go forward and not over -burden 
+the developers with debt during the course  of the payback period. Without such concessionary financing, the 
+in US$ SPP
+SPP Project Cost 17,556,920
+GCF Loan 8,650,050    
+GCF Grant 877,846       
+GCF Total 9,527,896    
+Total Financing Amount 18,434,766
+
+
+---
+*Page 10*
+---
+
+ 
+FINANCING / COST INFORMATION  
+ GREE N CLIMATE FUND FUNDING PROPOSAL | PAGE 4 OF 74 
+ 
+ B 
+project would not be able to go forward. The Bank will closely monitor loan proceed usage based on supplier 
+contracts, first hand purchase receipts, etc., which is customary for the Bank to do with regards to unfinished 
+(but on -going) construction projects. Furthermore, the Bank will manage the project ’s cash flow, as 
+customary in project financing situations.  
+ 
+Cost Structure  
+The largest cost component for the project is concentrated mainly in the equipment and materials areas, with 
+the PV panels themselves being the single largest source of costs, followed by other inputs such as 
+inverters, panel conditioners, cables, installation, and mounting frames, etc. Bas ed on the successful 
+construction and operationalization of the recent Darkhan 10 MW solar power plant (SPP), this can be 
+accepted as reasonable for Mongolia. Once the SPP becomes operational, the operating expense is not 
+significant .  
+ 
+Financial Model  
+A detailed financial model for the subproject under the program is attached in the annexes of this funding 
+proposal. The financial model consists of a projection covering the period from financial closing through final 
+maturity of the proposed GCF financing with detailed assumptions and reasoning, as well as sensitivity 
+analyses of critical elements of each subproject. Furth ermore, the model includes the breakdown of cost 
+estimates for total project costs and GCF financing by sub -component in USD, as the project will be financed 
+by and generating revenues in USD.  
+ 
+Although financial models and related calculations and data w ere obtained from the project developer, 
+XacBank’s Corporate Banking Division analysis team built their own financial model from scratch, using 
+above mentioned data while inputting the necessary risk assumptions to generate various possible scenarios 
+for the subproject.  
+ 
+In the below table, the straight -line amortization schedule for the project over the senior debt tenure can be 
+seen. The SPP will be issued 10 year tenure . The sub-borrower will be granted a one  year grace period  from 
+interest payments , whereby the interest will be capitalized until the second  year after disbursement.  At the 
+end of the grace period, the capitalized interest payments will be made by the subproject owner to XacBank. 
+Moreover, the sub -borrower will be given 18 months’ grac e period from principle loan payments. The loan 
+repayment schedule can be seen in Table B.1.1. below.  
+ 
+The grace period will apply to the payments made by the client to XacBank;  however, during this period 
+XacBank will be maki ng interest payments to the GCF.  The grace period is necessary because after the 6 
+months construction period, the Bank expects another 6 month period for the SPP ’s operations to become 
+stabilized.  
+Table B.1.1 : Straight -line Amortization Schedule  
+ 
+ 
+ 
+The subproject under this program will be able to service its debt with different degrees of amplitude 
+depending on various assumptions made in the model’s sensitivity analysis. The following tables show the 
+debt service coverage ratios (DSCR) for each project for the lifetime of t he senior loan provided to each 
+subproject:  
+ 
+Table B.1.2 : DSCR Schedule for the SPP 
+2017 2018 2019 2020 2021 2022 2023 2024 2025 2026 2027
+SPP 0.00% 5.26% 10.53% 10.53% 10.53% 10.53% 10.53% 10.53% 10.53% 10.53% 10.53%
+
+
+---
+*Page 11*
+---
+
+ 
+FINANCING / COST INFORMATION  
+ GREE N CLIMATE FUND FUNDING PROPOSAL | PAGE 5 OF 74 
+ 
+ B 
+ 
+ 
+For further details for the subproject, please refer to the attached financial model in the annexes.  
+B.2. Project Financing Information  
+ Financial Instrument  Amount  Currency  Tenor  Pricing  
+(a) Total 
+project 
+financing  (a) = (b) + (c)  18,434,766 million USD 
+($)  
+(b) GCF 
+financing to 
+recipient   
+(i) Senior Loans  8,650,050  million USD 
+($) 
+ As outlined in the 
+Term Sheet  As outlined in the 
+Term Sheet  
+(ii) Gra nt 877,846 million USD 
+($) 
+   
+* Please provide economic and financial justification in section F.1  for the concessionality that GCF is expected to 
+provide, particularly in the case of grants. Please specify difference in tenor and price between GCF financing and 
+that of accredited entities. Please note that the level of concessionality should correspon d to the level of the 
+project/programme’s expected performance against the investment criteria indicated in section E . 
+Total 
+requested  
+(i+ii+iii+iv+v+
+vi) 9,527,896 million 
+USD ($)   
+(c) Co -
+financing to 
+recipient  
+ Financial 
+Instrument  Amount  Currency  Name of 
+Institution  Tenor  (c) Co -
+financing 
+to 
+recipient  
+ Financial 
+Instrument  
+Equity  
+ 
+Options  
+Options  8,906,870 
+……………  
+……………  million USD 
+($) 
+ 
+Options  
+Options  ………………  
+………………  
+………………  
+………………  10  years  
+ N/A Equity  
+ 
+Lead financing institution: Project developers  
+* Please provide a confirmation letter or a letter of commitment in section I issued by the co -financing institution.  
+(d) Financial 
+terms 
+between 
+GCF and AE 
+(if applicable)   
+2018 2019 2020 2021 2022 2023 2024 2025 2026 2027
+Base Case 2.37 1.62 1.67 1.72 1.78 1.84 1.9 1.98 2.06 2.15
+Low Case 1.76 1.2 1.22 1.24 1.27 1.3 1.33 1.37 1.4 1.45
+High Case 2.64 1.82 1.88 1.94 2.01 2.09 2.18 2.27 2.38 2.49
+
+
+---
+*Page 12*
+---
+
+ 
+FINANCING / COST INFORMATION  
+ GREE N CLIMATE FUND FUNDING PROPOSAL | PAGE 6 OF 74 
+ 
+ B 
+B.3. Financial Market s Overview  (if applicable)  
+In December of 2016, Mongolia’s very first utility  scale solar power plant became operational, after beginning 
+construction in July 2016. The Darkhan solar power plant , which  also has a 10MW capacity, was completed 
+through the cooperation  of domestic Solar Power International with two Japanese partners .  
+The reason that current Mongolian renewable energy projects are unable to scale up to more than 50MW is 
+mainly due to the financing constraints that many such projects face. Renewable energy financing typically 
+requires long term financing with high quality materials and expertise, which means that the projects are more 
+expensive than short -term solutions or traditional coal -fired power plants. Current financing  options in 
+Mongolia are extremely high cost (typically in the 18.00% to 25% interest rate range for domestic currency 
+financing, and 8.00% to 12.00% in USD financing) with relatively short terms (maximum of 5 to 8 years), and 
+other mitigating factors such  as grace periods, guarantees and equity investmen ts are not adequately 
+available, especially for large -scale projects like these.   
+All this adds up to the fact that it is difficult to implement large scale solar power plants in Mongolia at the 
+moment, whi ch makes it challenging to provide a review of comparable transactions due to the fact that this is 
+a brand new field of business in Mongolia. However, through the GCF’s concessional funding and support in 
+addition to the  SPP project ’s international and do mestic co -financing possibilities, it is becoming feasible to 
+construct the plan t.
+
+
+---
+*Page 13*
+---
+
+ 
+DETAILED PROJECT / PROGRAMME DESCRIPTION  
+ GREE N CLIMATE FUND FUNDING PROPOSAL | PAGE 7 OF 74 
+ 
+ C 
+ 
+C.1. Strateg ic Context  
+ 
+Global  
+As global political trends have demonstrated, the initiative of governments on  climate change and invest ment  
+in renewable energy infrastructure is unreliable and subject to the changing views of new administrations.  
+Now more than ever, it is clear that the push to create a green economy must come from the consistent 
+hand of the private sector. Mongolia is natur ally endowed with bountiful opportunities to create bankable 
+green projects. Supported by the national and subnational contexts outlined below, private sector institutions 
+in Mongolia are also bolstered by  the global acknowledgement of their crucial role i n the mainstreaming of 
+renewable energy projects. The Paris Agreement (COP 21) establishes, and the recent Marrakech 
+agreements (COP 22) reaffirmed the private sector ’s participation  in achieving INDCs. The here proposed 
+projects are prime examples of the Mongolian private sector bringing its expertise to be ar in achieving 
+publically -set mitigation goals .  
+ 
+ 
+National  
+Regulatory  
+In order to achieve the Mongolian government’s stated goal of a 14% reduction in total national GHG 
+emissions, the INDC outlined a number of policies across the energy, industrial, agricultural, and waste 
+sectors. The proposed projects  falls under the foll owing INDC goal: “increase the share of renewable 
+electricity capacity of total electricity generation from 7.62% in 2014  to 30% by 2030 .”  The State Policy on 
+the Energy Sector, approved by parliament and published in 2015, determined  short - and mid -term 
+development scenarios and set an ambitious goal of increasing the  contribution of renewable energy to the 
+country’s total install ed power -generation capacity to 20% in 2023 and 30% in 2030.  According to  IRENA  
+(2016)  report , “In parallel, Mongolia has stepped up efforts to improve the conditions for domestic 
+development and deployment of renewables. The Renewable Energy Law, passed in 2007, has provided a 
+fundamental legal basis to regulate the generation and supply of renewable power. Amid changing 
+circumstances, parliament amended the law in June 2015. The improved legislation should strengthen 
+public -private partnerships and create a market oriented framework for the energy sector. ” 
+ 
+The Government of Mongolia  (GoM)  has been working to strengthen renewable energy ( RE) regulations to 
+create an enabling environment for private led renewable energy development and to facilitate policy 
+evolution to mobilize investment in RE projects across Mongolia. For a full summary of key renewable 
+energy regulations  and initia tives by GoM , please see annex I.  
+ 
+Economic  
+ 
+Following the annual economic growth rate of 17.5% in 2011 and 12.3% in 2012, driven by commodities 
+super -upward cycle, FDI influx and expansionary policies, Mongolian economy has been hard -hit by both 
+terms of trade and FDI shocks since 2013 as well as by  overly expansionary fiscal policies for the last 6 
+years. Countercyclical policies toward stabilizing the economy in 2013 -2015 have enabled to maintain low 
+and stable inflation, rebalance current account, and ensure financial sector stability. However, co llapsed but 
+unrecovered yet FDI, continuously low external demand, repressed domestic demand, elevated debt metrics 
+and widened fiscal gap have jointly resulted a slowdown of economic growth from 11.6% in 2013 to 1.0% in 
+2016. Current economic difficulty f aced to Mongolia is definitely not a solvency issue, affirmed by the 
+international community and private investors.  
+ 
+Apparently low GDP growth environment in Mongolia is expected to continue in a short -run due to economic 
+stabilization. However, this is a  completely new environment and a new opportunity, which requires new 
+economic equilibrium after commodity boom -bust cycles and resource -driven exuberances over the past 10 
+years.
+
+
+---
+*Page 14*
+---
+
+ 
+DETAILED PROJECT / PROGRAMME DESCRIPTION  
+ GREE N CLIMATE FUND FUNDING PROPOSAL | PAGE 8 OF 74 
+ 
+ C 
+ 
+Parliament has already ratified the economic recovery program, which has a financing support from 
+international financial institutions and donors. Government and IMF have reached a mutual agreement on 
+implementing Extended Fund Facility program of USD 3.4 billion package for 2017 -2019, which improves 
+certainty and crystalizes c onsistent policy package towards full economic stabilization, gradual recovery and 
+diversification for prosperity. Under the program, fiscal and institutional reforms are expected to ensure fiscal 
+stability and public debt sustainability, foreign exchange reserves shall sufficiently been increased, and these 
+positive macro developments are expected to enable medium -term sustainable economic growth. In 
+addition, Bank of Mongolia and People’s Bank of China have reached a mutual agreement on extending 
+bilatera l currency swap facility of RMB 15 billion until August 2020, positive to bilateral trade and investment 
+relations.  
+ 
+FDI is expected to recover thanks to bottoming -up commodity cycles and implementation of major projects 
+especially in mining, energy and i nfrastructure sectors. Economic partnership agreement, signed with Japan 
+shall definitely bring new private investments, especially in non -mineral sectors.  
+ 
+These developments and expected positive outlook shall support the country’s macroeconomic external and 
+internal balances, which strengthen key fundamentals and cornerstones of a more sustainable long -term 
+expansion of the economy, so they are positive for  the proposed project in renewable energy sector 
+development.   
+ 
+Political  
+In mid -2016, Mongolia held national elections and the incumbent Mongolian Democratic Party was 
+overwhelming replaced by the Mongolian Peoples’ Party. The incoming government has ple dged to 
+introduce more consistent and favorable policies to encourage foreign investment. They have also re -
+affirmed the prior government’s commitment on environmental issues and have acted with increasing 
+urgency to confront the public health risk posed b y air pollution in the capital city of Ulaanbaatar.  It can be 
+concluded that the material political difference is net neutral, if not slightly favorable, to the contents of this 
+proposal .  
+ 
+Subnational/Municipal  
+ 
+Central Energy System  
+The Central Energy System is the largest of the five independent energy systems, covering consumers in 14 
+of the 21 first -level administrative subdivisions known as aimags in the Khangai, Central and South regions. 
+The Central Energy  System represents annu al electric energy demand of over  900 MW and annual 
+electricity consumption of 4 300 GWh, supplied largely by seven power plants. The Central Energy System 
+is connected to the Russian power grid system through a 220 kilovolt (kV) overhead transmission line .1  
+ 
+A feasibility study  conducted by the National Renewable Energy Center in 2011 estimated  that electrical 
+consumption and loading of provinces of southern region of Mongolia such as Dornogovi, Dundgovi, 
+Umnugovi and Govisumber  between 2011 and 2036 will grow significantly. This is shown in the 
+consumption curve below.  
+                                                             
+1 IRENA (2016) Mongolia Renewables Readiness Assessment
+
+
+---
+*Page 15*
+---
+
+ 
+DETAILED PROJECT / PROGRAMME DESCRIPTION  
+ GREE N CLIMATE FUND FUNDING PROPOSAL | PAGE 9 OF 74 
+ 
+ C 
+ 
+ 
+Building solar power  plant in Sumber soum of Govisumber province is significant to implement “Program to 
+develop infrastructure of southern region” which was adopted by the Government of Mongolia, “National 
+Program for Renewable Energy” and “The Integrated Power System”.  It is also important to serving the 
+growing demand largely driven by mining projects in the southern region.  
+ 
+Energy Sector  
+Feed in Tariff (FiT)  
+Feed in Tariffs are a crucial mechanism initiated by the Renewable Energy Law . According to t he IRENA 
+(2016 ) report , “FiTs were introduced to create an enabl ing environment for the private sector to actively 
+engage itself with the development of renewable  energy markets. They were also intended to attract 
+investments in renewable energy project developme nt under seven special licenses issued, for a total 
+installed generating capacity of 534.2 MW. A Power Purchasing Agreement ( PPA) was also developed and 
+used as a legally binding document between the state -owned  National Dispatch Center  and any private 
+renewable energy developers or electricity producers, to make sure the electricity generated from renewable 
+sourc es is sold at favourable prices.”  The renewables FiT acts as a subsidy to encourage the production of 
+renewables. However, it is important to not e that the Mongolian government also heavily subsidized coal -
+generated power to lessen the burden on consumers.  Thus, the FiT for renewables acts to somewhat even 
+the playing field between brown and green energy sources. The tariff amounts can be seen in the table 
+below. The proposed projects take advantage of these incentives.  
+ 
+ 
+ 
+XacBank  
+Although XacBank began as a microfinancing institution in 2001, the Bank has become a fully integrated 
+financial services provider since early in its inception stages. As a result, the Bank’s lending portfolio evenly 
+covers the corporate, SME, and retail s egments of the banking services market, with each segment 
+representing about one -third of the Bank’s portfolio. In this regard, corporate banking activities represent 
+32% of the Bank’s portfolio as of December 2016. Moreover, XacBank has been the only Bank  with a 
+dedicated Eco Banking Department in Mongolia since 2009. Since its inception, the Department has had
+
+
+---
+*Page 16*
+---
+
+ 
+DETAILED PROJECT / PROGRAMME DESCRIPTION  
+ GREE N CLIMATE FUND FUNDING PROPOSAL | PAGE 10 OF 74 
+ 
+ C 
+experience in implementing projects and programs, as well as working with international institutions to 
+finance sustainable energy projects. In the  past, the Department has financed projects in all segments of the 
+market, from micro - to corporate -scale, including both energy efficiency and renewable energy solutions. 
+Since becoming an accredited entity of the GCF in October 2016, the Department has b ecome more 
+focused on supporting larger -scale renewable energy projects, which led to the formation of this funding 
+proposal.  
+C.2. Project  / Programme  Objective  against Baseline  
+ 
+Baseline Scenario: Electricity and Fuel Mix  
+There are five types of energy sources used for the national electricity generation in Mongolia: coal (lignite), 
+diesel, hydro,  wind, solar and imported electricity. The share of the overall electricity generated from 2010 to 
+2016 by the type of fuel used is shown below in Table C.2.1. Majority of the total electricity supply is 
+provided from lignite accounting for 95.7% in 2016. The amount of electricity generation from renewable 
+energy sources accounted only for 4.2%  as of 2016 of which 2.7% came from wind, 1.4% from hydro, 0.11 % 
+from diesel and 0. 01% from solar.  
+Table C.2.1. Electricity production by sources  in Mongolia  (million kWh)  
+Sources  million kWh  % 
+2010  2011  2012  2013  2014  2015  2016  2016  
+Lignite (CHPs)  4256  4450  4775.5  5014  5191.3  5415,6  5551.6  95.7 
+Diesel  21.4 20.2 28.7 5.4 8.2 6.4 6.1 0.11 
+Hydro  35.3 52.6 52.1 59.9 66.3 59.3 84.7 1.46 
+Wind  0 0 0 52.9 125.4  152.5  157.5  2.72 
+Solar  0 0 0 0 0.6 0.6 0.6 0.010  
+Total production  4312.7  4522.8  4856.3  5132.2  5391.8  5634.4  5800.5  100 
+Share of renewables                4.2 
+Source: Ministry of Energy (March 2017)  
+Renewable Energy Sources  
+There are 15 renewable energy sources operating in Mongolia (shown in Table C.2.2). Seven of them are 
+hydro, and another seven are solar. Out of the 7 solar power plants, only one is utility  scale at 10 MW which 
+became operational in Darkhan city in 2016, and started supplying electricity to the Central Grid from 1 Jan 
+2017. Other solar PVs are small scale. The first and only wind farm became operational in 2014 at capacity 
+of 50 MW at Tuv province and supplies electricity to the Central Grid. Out of 7 hydr o power plants (HPPs), 5 
+are small scale. The two big ones are Durgun HPP and Taishir HPP.  
+Table. C.2.2. Installed Capacity of Renewable Energy Sources in Mongolia  
+  Name  Installed Capacity MW  
+1 Tosontsengel HPP  0.375  
+2 Taishir HPP  11 
+3 Guulin HPP  0.2 
+4 Hun HPP  0.11 
+5 Galuutai HPP  0.15 
+6 Bogd river HPP  2 
+7 Durgun HPP  12 
+  hydro  25.835  
+8 Salkhit wind farm  50 
+  wind  50 
+9 Bugat solar power plant  0.14 
+10 Urgamal solar PP  0.15
+
+
+---
+*Page 17*
+---
+
+ 
+DETAILED PROJECT / PROGRAMME DESCRIPTION  
+ GREE N CLIMATE FUND FUNDING PROPOSAL | PAGE 11 OF 74 
+ 
+ C 
+11 Buyantooroi solar PP  0.1 
+12 Altai solar PP  0.3 
+13 Mandakh solar/wind  0.2 
+14 New airport solar PP  0.44 
+15 Darkhan solar PV  (Solar Power Int’)  10 
+  solar  11.33  
+  Total  87.17  
+Source: Ministry of Energy (March 2017)  
+Power Capacity  
+The total installed capacity of Mongolia 1158 MW of which 989 MW or 85% is available for operation (table 
+C.2.3). Share of total installed capacity of renewable energy sources reached 87.17 MW. However, due to 
+operational status of these renewables, 74 -78 MW out of 87.17 MW is available for operation. Therefore 
+share of operational renewable sources make about 7.4%  from 989 MW.  
+Electricity Import  
+Total electricity import of Mongolia was 19.9% of the total consumption in 2016. Electricity import of the 
+Cent ral Energy System was 3.2% in 2015 and 4.3% in 2016.  
+Electric Power Network  
+The electric power network of Mongolia comprises from five main energy systems shown below in Figure 
+C.2.1 . The Central Energy System (CES) is the largest and includes the Dalanz adgad Energy System (DES) 
+in the South Gobi. The smaller energy systems are the Western Energy System (WES), the neighboring  
+Altai-Uliastai Energy System (AuES), and the Eastern Energy System (EES). The WES and CES are 
+interconnected with Russia and are de pendent on imported energy. There are small capacity cross -border 
+inter-connections with China at the border areas of Hovd and Omnogobi (South Gobi) provinces.  
+ 
+The CES is supplied by five Combined Heat and Power (CHP) plants, covering the main cities of U B, 
+Darkhan, Erdenet and 13 provinces. The nominal electric capacity in the CES is 1072.5 MW, however, the 
+power plants are aged and unreliable and the available capacity is only 918 MW.  
+ 
+The national grid imports electricity from Russia and China (19.9% of  all electricity supplied in 2016). 
+Electricity from China is also supplied to the Oyu Tolgoi area in the southern region and areas in the 
+southern, western and eastern region. However, these areas are not connected to the Southern Energy 
+System, Western E nergy System, or Eastern Energy System. Therefore, these areas and their electricity 
+imports from China are excluded from the calculation of the national grid emission factor.  
+Calculation of Emission Factor  
+Calculation of emission factor of SPP is based o n the latest approved methodologies of the JCM. JCM 
+methodologies are based on UNFCCC’s Clean Development Mechanism  (CDM) , and therefore equitable to 
+IPCC’s standards. Furthermore, JCM methodologies of emission factor calculation are more conservative 
+than CDM.  
+The latest calculations of Mongolia’s grid emission factor has been calculated and made publicly available 
+on 9 Feb 2017 on Joint Crediting Mechanism (JCM) website2. Original calculation of national grid emission 
+factor for solar PVs have been calcu lated in Sep 2016 by the Institute of Global Environmental Strategies 
+(IGES) as part of developing solar PV projects for JCM, a bilateral mechanism initiated by Japan to offset its 
+carbon emissions3. The summary of the calculation is shown below:  
+                                                             
+2 https://www.jcm.go.jp/mn -jp  
+3 IGES (Sep 2016) Calculation of Conservative Emission Facto r of Mongolia
+
+
+---
+*Page 18*
+---
+
+ 
+DETAILED PROJECT / PROGRAMME DESCRIPTION  
+ GREE N CLIMATE FUND FUNDING PROPOSAL | PAGE 12 OF 74 
+ 
+ C 
+Name of t he methodology used : approved JCM methodology MN_AM003 “Installation of Solar PV 
+Systems”  
+Emission factor of the national grid : 0.797 tCO2/MWh which applies  the lowest emission factor of coal -
+fired power plant supplying elect ricity to the national grid. This value is lower than the grid emission factor for 
+CES, which is 1.154 tCO2/MWh (combined margin, 2012) published by Mongolian government  and it 
+ensures net emission reductions.   
+ 
+Application : 0.797 tCO2/MWh will be applied in case the PV system in a proposed project activity is 
+connected to the Mongolian national grid (supplied by the Central Energy System (CES), Western Energy 
+System (WES), Altai -Uliastai Energy System (AUES), Eastern Energy System (EES), and/or Southern 
+Energy Systems (SES)) including internal grid which is not connected to a captive power generator.  
+ 
+Calculation : The calculation of each coal -fired CHP plant emission factors was conducted using the specific 
+fuel consumption of each power plant from the nat ional authority and default values (Table 2) determined by 
+the national authority and IPCC guidelines. Detailed calculation of emission factor of coal -fired power plants 
+in Mongolian national grid can be seen from this IGES (2016) calculation.  
+Table. C.2. 7. Constants for calculation of emission factor  
+ 
+Source: IGES (2016) Calculation of Conservative Emission Factor of Mongolia  
+Climate vulnerability baseline  
+Mongolia’s Second Assessment Report on Climate Change (MARCC) conducted in 2014 summarized 
+current observed climate change, future estimation, and impact of climate change on nature, socio -economic 
+sectors, vulnerability, and risk assessment in Mongolia. A ccording to this study, Mongolia is one of the most 
+vulnerable countries to the impacts of climate change due to its geographical and climate conditions as well 
+as the structure and development level of the economic sectors, and the lifestyle of the people . 
+Climate change impacts are visible in Mongolia through the intensification of soil and pasture degradation, 
+drying up of rivers, lakes and springs in the Gobi and steppe regions, and loss of biodiversity (MARCC 
+2009). Mean air temperature of Mongolia inc reased by 2.07 0C between 1940 and 2013 (MARCC 2014) 
+according to records from 48 meteorological stations that are evenly distributed across the country.  
+In the MARCC (2014) climate change risk assessment was conducted on water resources, biodiversity, 
+ecosystem services, forest, agriculture/animal husbandry, arable farming, social health and infrastructure 
+and an integrated assessment of all sectors using multi -criteria analysis.  
+INDC Report (2015) summarized climate change impacts, vulnerability and risk assessment analyzing 
+changes in climate and risk factors, affected areas/sectors, current, past and future impacts in related 
+areas/sectors with their vulnerability and risk assessment as well as actions required to mitigate them. It also 
+describes the ada ptation goals and targets.  
+XacBank’s Renewable Energy Program (REP) of Solar PVs target s a province that stand s on the second 
+level of most vulnerable provinces to water resources. This includes Govisumber province where one of the 
+solar PVs will be estab lished which stand s as one of  the most vulnerable provinces. Therefore, developing
+
+
+---
+*Page 19*
+---
+
+ 
+DETAILED PROJECT / PROGRAMME DESCRIPTION  
+ GREE N CLIMATE FUND FUNDING PROPOSAL | PAGE 13 OF 74 
+ 
+ C 
+renewable energy sources like solar which do not use water resources are critical to mitigate the vulnerability 
+risk.  
+ 
+National Action Program on Climate Change (NAPCC, 2011), endorsed by the Parliament of Mongolia, 
+defined 5 strategic objectives in two phases during  2011 -2021. Action plan for the first phase for 2011 -2016 
+was approved by the Government Resolution No. 317.  Within second strategic objective of the NAPCC, 13 
+actions have been reflected to improve adaptation capacity, ensure environmental sustainability and reduce 
+vulnerability and risks of socio -economic sectors.  
+Emissions Baseline: Sources of GHG Emissions  
+The energy  sector is the most significant source of CO2 emissions in Mongolia. The contribution of different 
+sectors to solid fuel mainly includes energy, manufacturing, transport, agricultural and other industries. The 
+following table illustrates energy a nd carbon intensity in Mongolia.  
+Table C.2.8. Energy and carbon intensity of Mongolia  
+Gross Domestic 
+Product (GDP) 
+(billion 2005 USD)  Total Primary 
+Energy Supply 
+(million toe)  Emissions 
+from fuel 
+combustion 
+(million tCO2)  Energy 
+Intensity 
+(TPES/GDP)  Carbo n 
+Intensity 
+(CO2/GDP  
+5.1 5.2 18.7 1.0 3.6 
+Source: International Energy Agency 2015  
+When comparing GHG emission to other countries, Mongolia’s total GHG emission level is low. But GHG 
+production is high per capita when compared to other developing countries. This can be attributed to 
+Mongolia’s extremely cold climate, the widespread use of fossil fuels for energy, and low efficiency of fuel 
+and energy use.  
+Energy Sector  
+In terms of emissions, the energy sector accounted for 51.9% of all GHG emission s, and the second largest 
+GHG emission is the agricultural sector, accounting for 36.6% in 2012. The contribution of emission from 
+each sector is illustrated in the following table.  
+Table C.2.9. CO2 emissions from solid fuel   
+Year  Sector  
+Energy 
+Industries  Manufacturing 
+Industries  Transport  Commercial  Residential  Agriculture  Other  
+2012  6,751.67  624.90  47.11  12.34  702.17  4.15 629.15  
+ 
+Projections of GHG emission between 2006 and 2030 have been estimated in Mongolia’s Second National 
+Communication in 2010 in the following table.  
+Table C.2.10.  
+Sector  GHG emissions on Gg Co2 -eq. Average annual growth rate %  
+2006  2010  2015  2025  2025  2030  2006 -
+2015  2015 -
+2020  2020 -
+2030  2006 -2030
+
+
+---
+*Page 20*
+---
+
+ 
+DETAILED PROJECT / PROGRAMME DESCRIPTION  
+ GREE N CLIMATE FUND FUNDING PROPOSAL | PAGE 14 OF 74 
+ 
+ C 
+Energy  10,220  14,033  20,233  25,930  32,796  41,81
+5 10.89  5.63 6.13 12.88  
+Industry  891 1,354  1,602  1,836  2,065  2,318  8.87 2.92 2.63 6.67 
+Agricultu
+re 6,462  6,405  6,573  6,657  6,762  6,867  0.19 0.26 0.32 0.26 
+LULUCF*  -2,083  -1,932  -1,785  -1,420  -1,000  -680 -1.59 2.84 4.07 -2.81 
+Waste  138 158 183 209 254 294 3.62 2.84 4.07 4.71 
+Source: MNET, UNEP  
+*LULUCF: Land -use, Land -use change, and Forestry  
+Total GHG emissions are projected to increase 3.25 times from 2006 to 2030. Generally, energy 
+consumption is expected to increase rapidly due to economic and population growth. GHG emission in 
+energy sectors from 2006 to 2030 are expected to increase by 4 times.  
+Technology Needs Assessment/Available Technologies  
+An extensive Technology Needs Assessment  (TNA) report was conducted for the climate change mitigation 
+activities in Mongolia in 2013 by United Nations Environment Programme (UNEP) and the UNEP -Risoe 
+Centre in collaboration wit h the Regional Centre Asian Institute of Technology. It analyzed key mitigation 
+technologies in priority sectors of Mongolia where solar thermal - Concentrated Solar Power (CSP) and solar 
+PV (off grid, grid connected and solar home systems) are among the l ist of priority technologies.  
+National Action Program on Climate Change (NAPCC) approved by the Parliament of Mongolia in 2011set 2 
+phases in mitigating GHG emissions and establishing low carbon economy from 2011 -2016 and from 2017 -
+2021. The second phase which starts from 2017 include measures to use solar, geothermal and biogas in 
+the heating and hot water supply of buildings as well as explore possibilities to build large scale power and 
+thermal plants using solar power in the Gobi region.   
+TNA report s cored all priority technologies based on capital costs, Operation and Maintenance (O&M) cost, 
+cost effectiveness for mitigation (USD per unit of CO2 mitigation), co -benefit impact of reducing air pollution 
+(improving SOx, NOx, PM etc.), as well as improvin g healthcare, energy supply and balance of payment. 
+According to this study, overall weighted score for solar PV ranked at 42 out of 100 (below the average for 
+priority technologies) due to high cost of capital. As the study was done in 2013 when the price  of solar was 
+higher, this rank will change over the years and make solar more attractive.  
+Solar PV technology has witnessed probably the highest cost decrease of all energy technologies. According 
+to SREP (2016), the PV module prices reduced approximately 75% in five years. The PV technology in 
+utility -level applications can be classified roughly by two important technical parameters. One is whether the 
+project uses crystalline -silicon (c -SI) modules or amorphous Si thin film modules. The seco nd dimension is 
+whether or not the modules are mounted at a fixed -tilt or on a tracking system.  
+ 
+According to Renewables 2016 Global Status Report, between 2010 and 2015, the global weighted average 
+Levelised Cost of Electricity (LCOE) of utility -scale (>1  MW) solar PV fell by almost 60%, driven primarily by 
+reductions in module costs of around three quarters during this period4. In 2015, the most competitive utility 
+scale solar PV projects were regularly delivering electricity for just USD 0.08/kWh, withou t financial support, 
+compared to a range of USD 0.045/kWh to USD 0.14/kWh for new fossil fuel power (excluding health and 
+carbon mission costs). But even lower costs are being contracted for 2017 and beyond. Tenders during 2015 
+and 2016 in Dubai (USD 0.06/ kWh),  Peru (USD 0.05/kWh) and Mexico (USD 0.035/kWh) ably demonstrate 
+this shift. Solar PV is now competing head -to head, without financial support, even in regions with abundant 
+                                                             
+4 REN21 (2016) Renewables Global Status Report
+
+
+---
+*Page 21*
+---
+
+ 
+DETAILED PROJECT / PROGRAMME DESCRIPTION  
+ GREE N CLIMATE FUND FUNDING PROPOSAL | PAGE 15 OF 74 
+ 
+ C 
+fossil fuels. Tenders in Brazil, Chile, Jordan and South Africa all have high lighted that solar PV can be 
+competitive.  
+Key Barriers and Challenges  
+Barrier analysis in the UNEP’s TNA report considers financial, economic and technical challenges faced by 
+different prioritized technologies in the energy industry sub -sector. Barriers r elated to solar PVs will be 
+similar to wind energy in terms of system constraints, and have been extracted from the wind project barriers 
+into solar as follows:  
+List of Economic and Financial Barriers  
+- Financing : high interest rates for loans at financial institutions; lack of low -interest rate RE/EE loan 
+programs; lack of knowledge, experience, and expertise in providing, assessing and evaluating 
+RE/EE loan;  
+- Cost : Cost of upfront capital, transaction (conducting feasibility study, due diligence) and resour ce 
+(equipment, labor, construction) is relatively high compared to conventional sources  
+- Financial incentives : Lack of financial incentives to RE solutions and favorable treatment of 
+conventional energy (subsidies and low taxes to CHPs; subsidies in energy sector in 2011 were 14.7 
+billion MNT which is 11 million USD); negative externalities of CHPs have been ignored and not 
+considered in pricing of electricity, subsidies and taxes vs. incentives to RE technologies;  
+- Electricity tariff : Electricity tariff is set below the marginal cost. According to SREP (2015)5 report, 
+international comparison clearly indicates that the electricity tariffs in Mongolia are substantially lower 
+than in other medium -income countries of Asia. In US cents terms, the Mongolian avera ge tariff 
+quoted in the Yearly Statistical Book of ERC was 6.6 c/kWh in 2015 as compared to 9.4 c/kWh in 
+Thailand or 10.5 c/kWh in the Philippines.  
+- Uncertainty:  uncertain electricity tariffs (non -transparent tariff adjustment procedure); uncertain 
+macro -economic environment (volatile inflation rate and high price fluctuations); unstable currency 
+and exchange rates;  
+ 
+List of Non -Financial Barriers  
+- Market conditions : Lack of liberalization in the energy sector; market competition is not fully 
+introduced; ene rgy market is dominated with state -owned suppliers; fair competition is not yet in 
+place; electricity tariff is not liberalized; energy sector is controlled and dominated by state -owned 
+suppliers;  
+- Curtailment : Enforcement of curtailment to RE projects can  be occurred.  RE generation capacity 
+has the lowest marginal cost and should therefore always be dispatched before thermal plant. Whilst 
+there are technical constraints that limit the flexibility of the old Russian -designed CHP plants, 
+engineering analysi s suggests that more could be done by thermal plant operators so that RE 
+generators might be curtailed less frequently than has been observed. Furthermore, as mentioned 
+above, the existing CHP plants are fully depreciated and coal is subsidized, meaning th at the existing 
+plants are low cost in strict financial terms.  
+- Technical issues: System constraints and c apacity limitation with grid system is a challenge for 
+solar and wind projects;  
+- Transparency: The RE law stipulates, on one hand, that the system is obligated to receive the 
+energy supplied by RE generators, but on the other hand, the system dispatcher has the right to 
+dispatch and consequently may refuse such energy. The matter of obligating to compensate for 
+curtailed energy could be managed by a tra nsparent, universal regulation, but instead is managed by 
+stipulations of the Power Purchase Agreements (PPAs). This leads to the potential for unfair and 
+inequitable treatment of RE generators (or at least a perception on the part of investors).  
+ 
+SREP (2015) report has also summarized key barriers and problems of RE development and suggested 
+possible capacity building activities to overcome them.  
+ 
+                                                             
+5 Scaling Up Renewable Energy Investment in Mongolia (2015), Investment Plan for Mongolia
+
+
+---
+*Page 22*
+---
+
+ 
+DETAILED PROJECT / PROGRAMME DESCRIPTION  
+ GREE N CLIMATE FUND FUNDING PROPOSAL | PAGE 16 OF 74 
+ 
+ C 
+Table. C.2.11 Summary of Barriers of RE development in Mongolia with Possible Solutions  
+Key Barrier  Key Problems  Possible solutions/capacity building  
+Existing market  
+regulation and  
+structure  Fundamental issues with 
+regulatory reform and planning 
+processes that leave investments 
+in energy infrastructure projects 
+and market development prone to 
+failure  Focus trainings on system operations, regulatory 
+core functions, energy modelling, system planning 
+and policy making  
+Inadequate  
+financing of the  
+FiT Negative financial impact on the 
+national transmission company  
+Growing concern over long term 
+FiT payments due to a lack of 
+renewable energy surcharge 
+system.  The FiT system has been addressed by recent 
+change of RE law and changes to the 
+administration of the zero balance account; the 
+main change has been the introduction of a “green 
+surcharge” system in July 2015.  
+Going forward, it is essential to build clear and 
+transparent rules to increase level of RE surcharge 
+according to RE capacity addition.  
+RE curtailment  Dispatcher’s right to curtail versus 
+obligation to accept RE generators 
+energy production  Clarify the dispatching principles in the Mongolian 
+Grid Code. Provide training on wide basis in 
+marginal cost dispatch principles, demonstrating 
+the false economy that existing depreciated power 
+generators are more economical than RE 
+generators. Optimize the dispatch of imported 
+electricity in the network from Russia and thermal 
+power generators.  
+Licensing  
+Principle  
+Ambiguity  A lack of criteria for rejecting RE 
+applications for licenses in cases 
+the target levels for RE is 
+exceeded or where technical 
+cons traints in the transmission grid 
+do not allow construction of further 
+RE capacity . Develop suitable criteria for inclusion in the 
+regulatory (and possible legal) framework. Design 
+a ‘statement of opportunities’ process to deliver 
+suitable time -bound increm ental targets for RE, to 
+improve transparency to all RE stakeholders. 
+Develop a study on economic and physical grid 
+absorption capacity for RE in Mongolia.  
+Source: SREP (2015)  
+ 
+Key Policies and Laws  
+ 
+Key Policies and Laws related to energy and RE is summarized in Table.C.2.12.  
+ 
+Table. C.2.12. Key Policies and Laws related to Energy Industry and RE  
+Name of policy &  
+date of enactment  Contents/targets related to solar power  
+The National 
+Renewable Energy  
+Program 2005  Set a target of increasing the share of renewable energies in the country’s total 
+energy production to 20 -25 percent by 2020.  
+Targets related to solar:  
+- Increase the penetration of renewable energy in the energy system of 
+Mongolia, improve the  structure of power supply, and utilize renewable 
+energy in off -grid soums (districts) and settlements to ensure ecological 
+balance and improve the economic efficiency.  
+- Construct small and medium capacity energy generating facilities in 
+Ulaanbaatar and other cities and towns to reduce air pollution using solar, 
+wind, hydrogen and geothermal resources  
+- Implement pilot projects in Gobi region on very large scale PV power 
+generation system.  
+The Renewable 
+Energy Law of 
+Mongolia 2007  
+ In order to stimulate in vestments in renewable energies, the Parliament enacted 
+the Renewable Energy Law, which specified following: i) reference tariffs for 
+renewable energies ; and ii) electricity market access rules for grid connected 
+renewable energy projects.
+
+
+---
+*Page 23*
+---
+
+ 
+DETAILED PROJECT / PROGRAMME DESCRIPTION  
+ GREE N CLIMATE FUND FUNDING PROPOSAL | PAGE 17 OF 74 
+ 
+ C 
+ 
+ 
+The RE Law Amendment of 2015  
+The RE law was amended in 2015 to improve the financial management of the 
+power sector and included the following changes:  
+- responsibility of managing the Zero -Balance Account was transferred to the 
+National Dispatching Centre from the Nat ional Transmission Company  
+- Introduced  a RE green surcharge which recognizes that the existing tariff 
+structure is based on accounting rather than economic principles. In strict 
+financial terms, the existing CHPs are very low cost energy systems 
+compared to  new RE systems. Tariff revenues reflect these conditions and 
+do not support FiT payments. The green surcharge is intended to recover 
+revenues sufficient to pay for new RE systems; in this regard the surcharge 
+is a forward looking tariff component.  
+The En ergy Law  
+2007  Regulates  matters relating to energy generation, transmission, distribution, 
+dispatching and supply activities, construction of energy facilities and energy 
+consumption that involve utilization of energy resources.  
+The Government 
+Program (20 12-
+2016) 2012  Lay down favorable conditions to attract domestic private sector investment in 
+renewable energy sector;  
+Take measures to enable the country to be self -sufficient in terms of power supply 
+and eventually become a power -exporting country.  
+National Action  
+Program on Climate  
+Change (NAPCC)  
+2010  Strategic Objective 3 – “Mitigate GHG emissions and establish a low carbon 
+economy through the introduction of environmentally friendly technologies and 
+improvement in energy effectiveness and efficien cy”: 
+• Establish a renewable energy fund;  
+• Develop wind and solar energy production systems;  
+• Explore possibilities to build large scale combined power and thermal plants using 
+solar power in the Gobi region;  
+State Policy on 
+Energy (2015 -2030)  
+2015  - Deve lop institutional capacity to perform detailed resource assessment of 
+Mongolian renewable energy resources (solar, wind, hydro, geothermal, biomass 
+and etc.), build national renewable energy resource database and perform 
+research and development in field o f renewable energy.  
+- Increase share of renewable energy in national energy capacity to 20% by 2023, 
+30% by 2030.  
+- Build favorable legal, tax environment to increase investment in renewable 
+energy, create financial mechanism to support energy production by renewable 
+energy.  
+Expected Outcome and Impact of the Program  
+ 
+XacBank’s REP  aims to achieve the following outcome and impact shown in Table.C.2.13.
+
+
+---
+*Page 24*
+---
+
+ 
+DETAILED PROJECT / PROGRAMME DESCRIPTION  
+ GREE N CLIMATE FUND FUNDING PROPOSAL | PAGE 18 OF 74 
+ 
+ C 
+Table.C.2.13. Expected Outcome and Impact of the Program  
+Expected Outcome of the Program  Expected Impact of the Program  
+Financing: provide low interest rate loans with 
+longer term; provide guarantees;  Increased finance into RE sources  
+Market condition: support private sectors in 
+developing RE projects; increase market 
+competition and contribute in increasing the share 
+of private sector involvement in the energy sector  Increased share of RE in the total electricity 
+generation (contribution in meeting 20% target by 
+2020);  
+Transparency: increase transparency of RE project 
+development by developing se ries of REP through 
+GCF  Increased awareness about RE project 
+development to be made publicly available  
+Project management capability: capacity of project 
+developers will be improved with development of 
+new RE sources  Improved project management capabilities to meet 
+common international practices  
+Monitoring and Evaluation (M&E): support and 
+oversee M&E; increase the capacity of project 
+developers in calculating, monitoring and evaluating 
+CO2 emissions; increase the capacity of 
+monitoring, reporti ng and verification (MRV)  Increased capacity to carry out M&E to calculate 
+CO2 emission reduction; increased capacity of 
+reporting and conducting verification activities  
+ 
+ 
+C.3. Project / Programme Description  
+ 
+ 
+1) Development, construction, commissioning and operation of a 10MW plant in Sumber soum of 
+Govisumber province (southern Mongolia);  
+ 
+The associated main activities and preliminary timelines are presented in the sections below.  
+ 
+2) The SPP will be connected to the Central Energy System of Mongolia. The SPP will build a 
+substation to connect to the grid . The client has included the cost of building the substation and the 
+required connecting transmission lines in the total financing amount for the power plant.  
+ 
+Please see Section H for the relevant objectives, outputs and outcomes that the program aims to achieve.  
+C.4. Background Information on Project / Programme Sponsor  (Executing Entity ) 
+ 
+XacBank overview  
+ 
+Since its founding in 2001, XacBank has created sustainable growth in the banking and financial sector of 
+Mongolia, with continuously expanding operations. Through this expansion, XacBank has remained true to 
+its original vision of “People, Planet, Profit”  and aims to represent the interests of all its clients, from 
+mainstream customers to traditionally marginalized Mongolians, such as those in the ger district.  
+ 
+The Bank has an extensive reach throughout the project’s host country of Mongolia. It comprise s 86 
+branches, units and business service centers throughout the nation. XacBank employs 1,700 specialized 
+personnel and more than 1,800 merchants who swiftly serve more than 700 thousand customers with 
+complex financial services using latest state -of-art technology. XacBank’s audited yearly financial statements 
+and annual reports for every year since 2001 are readily available on the website at 
+http://www.xacbank.mn/en/96/about -xacbank/report/annual -report . XacBank is hailed as a model for 
+corporate responsibility and social -impact driven business in Mongolia.
+
+
+---
+*Page 25*
+---
+
+ 
+DETAILED PROJECT / PROGRAMME DESCRIPTION  
+ GREE N CLIMATE FUND FUNDING PROPOSAL | PAGE 19 OF 74 
+ 
+ C 
+ 
+As of December 30th, 2016:  
+ 
+Capital Adequacy Ratio : 18.88%  
+Credit Rating : Caa1 (Moody’s)  
+ 
+XacBank relevant experience  
+As the project sponsor, XacBank brings a wealth of past management experience on similar projects in 
+similar areas. XacBank is the market leader in providing business loans for energy efficiency and renewable 
+energy solutions with a portfolio of about US$1 5 million.  
+ 
+Since 2012, XacBank has both directly and indirectly financed a total of US$ 6.4million to renewable energy 
+projects  
+ 
+XacBank’s Corporate Banking Division currently employs 20 professionals, comprising relationship 
+managers and credit analysts , whom have rich experience in analyzing and financing large -scale projects for 
+corporate clients. Between 2013 and 2016, XacBank distributed a total of US$45 million in loans through 
+government funding. Aside from government funded projects, the Corporate Banking Division has disbursed 
+more than US$174 million in project financing to large -scale projec ts. XacBank’s current total portfolio stands 
+at one -third SME, one -third retail, and one -third corporate financing, with the Corporate Banking Division’s 
+portfolio standing at roughly US$214 million. A detailed list of the portfolio can be found attached i n the excel 
+sheet titled “PF List_4.20”. In addition to extensive project financing experience, the Corporate Banking 
+Division portfolio is well diversified in order to reduce risk and over -exposure to any single industry (see table 
+below). For this progra m, the Corporate Banking Division will be handling the financial analysis and 
+disbursement of the funds.  
+ 
+Table 3: Corporate Banking Division portfolio breakdown  
+ 
+ 
+ 
+ 
+C.5. Market Overview  (if applicable)  
+ 
+Historical and forecasted market for the product/service  
+Historical market of solar PV  
+As described in the Section C.2, the majority of the electricity production comes from coal -fired power plants. 
+Lignite accounted for 95.7% of the total electricity production in 2016 (Ministry of Energy, 2017) . Share of 
+Retailer
+Food production
+Manufacturing
+Building 
+materialsEducationEnergy & serviceIT & MediaMining & serviceConstruction 
+& REHorecaCar dealerFMCGRoad 
+construction
+
+
+---
+*Page 26*
+---
+
+ 
+DETAILED PROJECT / PROGRAMME DESCRIPTION  
+ GREE N CLIMATE FUND FUNDING PROPOSAL | PAGE 20 OF 74 
+ 
+ C 
+renewable energy sources from the total electricity production was only 4.2% in 2016 of which solar 
+accounts for only 0. 01%. This share ha s increase since Jan 2017 as the 10 MW Darkhan solar PV started 
+supplying electricity to the Central Energy  System from the beginning of 2017. List of solar power sources 
+are shown in the Table. C.5.1. There are 7 solar power sources in Mongolia as of March 2017 with a total 
+capacity of 11.33 MW.     
+Solar power resources  
+Mongolia has enormous solar resource po tential, particularly in the South Gobi region. According to NREL 
+(National Renewable Energy Laboratory), the solar energy potential of Mongolia is 1,500 GW. According to 
+their estimates, Mongolia can, on average, produce 66 MW/km2 from solar energy for a production of 
+4,774,000 GWh per annum. The number of sunny days averages 270 to 300 days per year, corresponding 
+to 2,250 to 3,300 sunshine hours. Annual solar radiation is estimated to be 1,200 to 1,600 kW per m2 and 
+intensity is estimated at more than 4. 3 to 4.7 kW per hour. More than two -thirds of the country receives high 
+levels of incoming solar radiation in the range of 5.5 to 6.0 kWh/m2 per day. Figure C.5.1 shows solar 
+energy potential in Mongolia. The proposed solar project  is located in the zone  with the most solar radiation.  
+ 
+Forecasted market of solar power  
+Solar power project developers are increasing drastically over the last few years. As of now, the total amount 
+of solar power project planned reached 354 MW as shown in the Table C.5.2. (Newc om, 2017). According to 
+the latest statistics from Energy Regulatory Committee (ERC), in total 13 companies have received special 
+license to construct solar power plants that totals 247 MW6.  
+Construction license to all 13 solar companies have been provide d for 3 years starting from 2014. According 
+to the Energy Law of Mongolia, construction license is provided up to 5 years, and can be extended upon 
+completion of conditions specified in the license. 6 out of 13 solar companies signed Power Purchase 
+Agreeme nt (PPA), and the additional 2 is close to signing the PPA. Electricity production and distribution 
+license is provided from 5 -25 years.  
+ 
+Figure. C.5.1. Solar Energy in Mongolia  
+ 
+ 
+Forecasted market of Renewable Energy Sources in Mongolia  
+                                                             
+6 http://en.erc.mn/licensees.html
+
+
+---
+*Page 27*
+---
+
+ 
+DETAILED PROJECT / PROGRAMME DESCRIPTION  
+ GREE N CLIMATE FUND FUNDING PROPOSAL | PAGE 21 OF 74 
+ 
+ C 
+The total potential of Mongolian renewable energy including wind, solar, geothermal, and hydro resources is 
+estimated by the National Renewable Energy Laboratory (NREL) of the United States Department of Energy 
+to be as high as 2,600 GW. The Gobi Desert in particula r, has tremendous renewable energy potential and 
+has favorable climatic and weather conditions to use these resources effectively.  
+ 
+According to ERC website, 924 MW of renewable energy sources received Special License for construction 
+to generate electrici ty (further referred as construction license). Out of these 924 MW, 552 MW is wind, 247 
+MW is solar, 92 MW is hydro and 32 MW is for other sources.  Out of the 924 MW planned, about 87 MW of 
+installed capacity of renewable energy is already in operation, a nd generating electricity as described in the 
+section C.2 (see Table C.2.2. for more details of breakdown).  
+Existing demand for power  
+ADB report conducted in 2013 includes significant findings on the projected energy market: “As the economy 
+continues to grow, demand for electricity and heat in Mongolia has grown significantly too7. Mongolia is 
+already facing power shortages, with peak power demand in the country amounting to over 1000 MW 
+whereas available supply capacity is only 836 MW. In order to bridge  this demand -supply mismatch, the 
+country imports electricity from Russia which accounted for 19.9% out of total electricity consumption in 2016 
+(described in Section C.2). Electricity import within the Central Energy System is reducing from 6% in 2013 
+to 3% in 2015. Latest 3 month data of electricity import in the CES was described in the section C.2 in table 
+C.2.5.  The current electricity import was 1.4% in Jan 2017 and 1.9% in Feb 2017.   
+ 
+Projected demand for power  
+However, power and heat demand in th e country is expected to grow significantly over the next few years. 
+ADB estimates that power demand in Mongolia, in the medium growth scenario, will more than triple between 
+2011 and 2020 (from 774 MW to 2404 MW), driven primarily by an over 900 MW increa se in power demand 
+from the two large mines (Tavan Tolgoi and Oyu Tolgoi) that are currently under development in the mining 
+region of South Gobi.  In the low (CAGR 9.3%) and high (CAGR 10.5%) growth scenarios estimated in the 
+ADB report, total power deman d by 2030 is 4073 MW and 4961 MW respectively.”  
+Long term electricity load demand forecasting was carried out in 2012 as a part of updating energy sector 
+master plan, which estimated around 9% of annual demand growth as base case. In spite of recent econo mic 
+slow-down, actual electricity load demand growth has been on the long term forecasting trajectory. Given that 
+the demand grows in line with such trajectory, load demand growth will be increasing to 2,617 MW in 2030, 
+and the need install capacity to mee t demand (including 15% of safety reserve margin) will be more than 3,000 
+MW (Figure C.5.1.).  
+Figure. C.5.2. Electricity Load Demand Forecast and Need Capacity  
+                                                             
+7 ADB (2013) Market Assessment for Proposed Financial Intermediary Loan for Clean Energy and 
+Energy Efficiency
+
+
+---
+*Page 28*
+---
+
+ 
+DETAILED PROJECT / PROGRAMME DESCRIPTION  
+ GREE N CLIMATE FUND FUNDING PROPOSAL | PAGE 22 OF 74 
+ 
+ C 
+ 
+Source: SREP (2015)  
+Figure C.5.3: Estimated Growth in Electricity Demand in Mongolia 2011 -2030 (in GWh)  
+ 
+ 
+According to SREP (2015) report, the additional RE capacity required by 2023 is around 75 MW. An 
+additional 450 MW will be required by 2030 for a total of 530 MW to reach to 30% of total capacity. All 
+involved parties recognize that renewables are an area where Mongolia has particular potential and must be 
+harnessed to meet the growing gap between supply and demand. The Ministry of Energy has stated that “In 
+order to meet Mongolia’s energy consumpti on growth for 2015 - 2030 and to export electricity, it is necessary 
+to build power stations near mining deposits and big capacity hydropower, wind parks, and solar systems.”  
+ 
+Latest Forecast for Power Demand  
+In 2016, the experts of ADB re -forecasted the e nergy demand based on the slowdown in economic activities, 
+and revised annual increase in demand to be 4.4% p.a. Under the lowest scenario, projected energy 
+demand will be 4.4% p.a.  
+ 
+Figure C.5.4. Projected Electricity Demand and Supply of Mongolia
+
+
+---
+*Page 29*
+---
+
+ 
+DETAILED PROJECT / PROGRAMME DESCRIPTION  
+ GREE N CLIMATE FUND FUNDING PROPOSAL | PAGE 23 OF 74 
+ 
+ C 
+ 
+Sourc e: ADB (2016)  
+ 
+Secondly, most of the existing coal -fired power plants are aged as can be seen from the following by “Years 
+Installed” and “Efficiency”. This means majority of the country’s energy supply’s reliability can’t be 
+guaranteed and there is risk f or supply disruption. This creates an ultimate need for creation of new 
+generation sources.  
+Thirdly, cost of electricity import is increasing which increased need for local electricity sources. In the past, 
+due to increase in price of import electricity a nd the increase in amount, the total import cost have increased 
+significantly. Between 2011 and 2015, the cost has increased on average by 13%.  
+Pricing structure  
+XacBank’s loan policy states that the Bank shall only disburse loans in the same currency as the business’s 
+income is in. Therefore, if a company’s income is in USD, then they are eligible for USD loans, and the same 
+applies for MNT income businesses. Near ly all of Mongolian business’ incomes are in MNT, so the Bank 
+carries the brunt of the currency exchange risk because the Bank receives large sources of funding in USD, 
+and then converts it to MNT in order to disburse in MNT, which represents a large cost to the Bank and in 
+turn, the customer.  
+ 
+In the case of the subproject under this program, the revenues will be based o n the feed -in tariff, which the 
+Government of Mongolia has set in USD. As such, the loans will also be disbursed in USD. This allows 
+XacB ank to  make best use of the GCF concessionality  of the loans, as neither party will bear the currency 
+exchange costs described above   
+ 
+The proposed loan tenure entails a 10 year term for the project with 1 year’s full grace period  from XacBank 
+interest  payments , with a capitalized interest component , and 18 months’ grace period from principle 
+payment . Capitalized interest will be paid starting in the second  year of the tenure, so as not to burden the 
+project owner in the beginning stages of implementation. During this 1 year period, XacBank will still be 
+making interest payments to the GCF. Therefore, XacBank requests that the GCF to disburse to XacBank 
+with maximal  possible concessionality and a 10 year tenure for the funds.  
+  
+Price controls  16282309
+9871240 1240 1240
+0300600900120015001800210024002700
+2015 2020 2025 2030MW
+YearProjected Electricity Demand and Supply of Mongolia
+Нийт эрэлт МВт Нийт чадал МВтTotal capacity
+MWTotal Demand 
+MW
+
+
+---
+*Page 30*
+---
+
+ 
+DETAILED PROJECT / PROGRAMME DESCRIPTION  
+ GREE N CLIMATE FUND FUNDING PROPOSAL | PAGE 24 OF 74 
+ 
+ C 
+According to the RE Law of Mongolia adopted in 2007, the following Feed -in-Tariff (FiT) will apply to 
+renewable energy projects (Table C.5.4). Tariffs are guaranteed to  investors for a limited period of ten years 
+from the date of the law, i.e. until January 2017.  Solar power FiT was set as the highest tariff compared to 
+wind and hydro power sources between 0.15 -0.18 USD/kWh. As the FiT was set in 2007, the government is  
+considering amending the FiT for future projects. However, this will not affect projects that have signed PPA.  
+ 
+According to the law, any price difference of electricity generated by a renewable energy power source, 
+connected to a transmission network, shall be absorbed in selling prices of other generators connected to 
+the transmission network.  
+ 
+Subsidies  
+The following two Government Resolutions will be considered as the incentive to RE project developers. 
+More information about tax exemption is explain ed in the section C.6.  
+Table.C.5. 8. Government Resolutions of Mongolia  
+# Name of 
+Resolution  Date  Details  Categories  
+303 Exempts from 10% 
+of Corporate Income 
+Tax 23/8/2013  Exempts about 41 
+environmentally friendly 
+technologies & products  Targeted to wind,  solar and 
+hydro power project 
+technologies  
+191 Exempts from 
+15.5% of customs 
+and VAT  14/6/2014  Exempts over 100 
+technologies & products to 
+supports SMEs  Mostly industrial products 
+divided into 25 groups  
+ 
+Table.C.5.9. Investment Law of Mongolia  
+Name of Law  Purpose  Date  Article #  Details  
+Investment 
+Law The purpose of the 
+law is to protect the 
+interests of local 
+investor’s rights, 
+interests, encourage 
+investment, and 
+stabilize the tax 
+environment relating 
+to a certain project.  23/8/2013  11 Article 11 focuses on tax incentives for 
+investors. It indicates that imported 
+construction equipment’s for Energy 
+Production facilities will be exempt 
+from customs and VAT for up to “0”.  
+12 Article 12 focuses on nontax related 
+incentive for investors. It indicates the 
+land can be purchases or used for up 
+to 60 years, with an additional one 
+time extension for another 40 years.  
+ 
+ 
+Government involvement  
+Energy sector of Mongolia is controlled and dominated by state -owned suppliers. PPA, FiT, licenses, 
+approvals and all permits shall be obtained from the government authorities. Once the project is operational, 
+project developers shall operate according to the National Grid Code and supply generated electricity within 
+the grid’s capacity to absorb RE sources. In that sense, role of government involvement in project operation 
+will remain an important factor.  
+ 
+C.6. Regulation, Taxation and Insurance  (if applicable)
+
+
+---
+*Page 31*
+---
+
+ 
+DETAILED PROJECT / PROGRAMME DESCRIPTION  
+ GREE N CLIMATE FUND FUNDING PROPOSAL | PAGE 25 OF 74 
+ 
+ C 
+Government Licenses and Permits  
+XacBank acquired its commercial banking license on December 28th, 2001. A copy of said license can be 
+made available if necessary. XacBank does not need to obtain any additional licenses or permits to carry  out 
+the proposed activities in this program. Project developers will be in charge of obtaining all necessary 
+licenses and permits to carry out the project. The main licenses, permits and documents are described 
+below in Table C.6.1 by each project.   
+Regu lation  
+List of all key regulations that support RE development are described in the section C.2. (Table C.2.12). Brief 
+list of the described regulations are shown below:  
+- The National Renewable Energy Program 2005  
+- The Renewable Energy Law of Mongolia 2007 (amended in 2015)  
+- The Energy Law 2007  
+- The Government Program (2012 -2016) 2012  
+- National Action Program on Climate Change (NAPCC) 2010  
+- State Policy on Energy (2015 -2030) 2015  
+ 
+ 
+ 
+Insurance  
+XacBank holds the following insurance policies:  
+• Corporate Liability Insurance  
+• Bankers Blanket Bond and Electronic & Computer Crime Insurance Policy  
+• Directors & Officers Liability Insurance  
+• Comprehensive Crime Insurance  
+ 
+Sub-project insurance:  
+ 
+XacBank’s holding company, Tenger Financial Group, has an insurance company call ed Tenger Insurance, 
+which provides insurance services to sub -projects financed through XacBank. If necessary, Tenger 
+Insurance provides insurance risk evaluation free -of-charge to sub -projects financed by XacBank. This risk 
+evaluation can be performed during the implementation process of the project as well as at its completion 
+stage. The sub -project under this project will be required to have this insurance risk evaluation performed 
+before the project starts .  The evaluation will outline the necessary insurance arrangements for the sub -
+project. The Bank will require the sub -project to have the necessary insurance arrangements according to 
+the evaluation performed by Tenger Insurance.  
+ 
+Taxation   
+The GCF is aiming to  obtain Privileges and Immunities (P&I) in Mongolia. If successful, XacBank is not 
+required to pay any withholding tax upon receiving funding from the GCF. Otherwise, XacBank will pay the 
+withholding tax.  
+At project level, d uring construction phase, there will be VAT tax, Import Tax, and Customs Duties applicable 
+for procurement of CAPEX; however, certain renewable energy equipment are exempt from Import Tax, 
+VAT, and Customs duties under the Minister’s Decree. In addition, there will be VAT and Withholding  Taxes 
+applicable for any services procured during construction. During operations phase, all other taxes in 
+business as usual case apply.  
+List of applicable government resolutions and laws are described in the Table.C.5. 8 and C.5. 9. 
+Table.C.5. 8. Government Resolutions of Mongolia  
+# Name of 
+Resolution  Date  Details  Categories
+
+
+---
+*Page 32*
+---
+
+ 
+DETAILED PROJECT / PROGRAMME DESCRIPTION  
+ GREE N CLIMATE FUND FUNDING PROPOSAL | PAGE 26 OF 74 
+ 
+ C 
+303 Exempts from 10% 
+of Corporate Income 
+Tax 23/8/2013  Exempts about 41 
+environmentally friendly 
+technologies & products  Targeted to wind, solar and 
+hydro power project 
+technologies  
+191 Exempts from 
+15.5% of customs 
+and VAT  14/6/2014  Exempts over 100 
+technologies & products to 
+supports SMEs  Mostly industrial products 
+divided into 25 groups  
+ 
+Table.C.5. 9. Investment Law of Mongolia  
+Name of Law  Purpose  Date  Article #  Details  
+Investment 
+Law The purpose of the 
+law is to protect the 
+interests of local 
+investor’s rights, 
+interests, encourage 
+investment, and 
+stabilize the tax 
+environment relating 
+to a certain project.  23/8/2013  11 Article 11 focuses on tax incentives for 
+investors. It indicates that imported 
+construction equipment’s for Energy 
+Production facilities will be exempt 
+from customs and VAT for up to “0”.  
+12 Article 12 focuses on nontax related 
+incentive for investors. It indicates the 
+land can be purchases or used for up 
+to 60 years, with an additional one 
+time extension for another 40 years.  
+ 
+C.7.   Institutional / Implementation Arrangements
+
+
+---
+*Page 33*
+---
+
+ 
+DETAILED PROJECT / PROGRAMME DESCRIPTION  
+ GREE N CLIMATE FUND FUNDING PROPOSAL | PAGE 27 OF 74 
+ 
+ C 
+ 
+XacBank (AE) will oversee the program and provide project finance to the project developers at 49% of their 
+total requested loan amount . The project developer shall secure the rest of the project finance and be in 
+charge of project implementation. Project level governance will be managed by each of the project 
+developers while program level governance  will be managed by XacBank. As such, XacBank will manage 
+the facility and provide necessary governance for it.  
+ 
+Roles and responsibilities of the project developer and XacBank are described in the following Figure C.7.1.  
+ 
+Figure C.7.1. Project Structure  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Table.C.7.1. Governance of the Program  
+Roles & 
+Responsibilities  Project Developers  XacBank  
+Governance  Project -level management and 
+implementation  Program -level management and 
+oversight  
+Finance  Secure 5 1% of the total loan amount  Provide remaining 49% of the  
+requested total loan amount  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Figure.C.7.2. Organigram of Project Structure  
+ Loan recipients   
+/solar PV project 
+developers / 
+ 
+(project 
+implementation)  Eco Banking Department  
+(oversight, M&E)  
+Corporate  Banking 
+Division  
+ 
+(loan assessment)  Credit 
+Department  
+ 
+(risk 
+assessment)  Credit  
+Committee  
+ 
+(loan 
+approval)  Credit 
+Administration 
+Department  
+ 
+(disbursement)  XacBank  
+/49%/  Sponsors
+/ Lenders 
+/51%/
+
+
+---
+*Page 34*
+---
+
+ 
+DETAILED PROJECT / PROGRAMME DESCRIPTION  
+ GREE N CLIMATE FUND FUNDING PROPOSAL | PAGE 28 OF 74 
+ 
+ C 
+Governance  Oversight  Implementation  
+   
+ 
+Program Implementation Process  
+The process of providing loans to  the solar PV project will follow the below normal bank disbursement 
+procedures that are applied to large loans to corporate customers (greater than 1.0 billion MNT or USD 
+410k), as well as implementation arrangements specific to the subproject as outlined in this section. 
+Additional steps will be required on monitoring and evaluation (M&E) to evaluate the GHG emission 
+reduction .  
+ 
+Loan assessment and approval process are described in detail below:  
+ 
+1) Loan assessment:  
+As this loan proposal is considered a large loan, it will be assessed by two specialists of XacBank’s 
+Corporate Banking Division at corporate headquarters . The Credit analyst will do the due diligence to 
+the project and provide loan appraisal based on the following “5 -C” analysis and will submit loa n 
+appraisal to the Credit Department. Loan appraisal will covers all necessary due diligence measures, 
+including AML and KYC measures, such as where the organization’s income, original capital, 
+investors, shareholders, etc. all originate from. Credit risk analyst of the Credit department will 
+provide an independent assessment regarding loan risks.  
+ 
+1. Customer behavior /CHARACTER/ : determine business structure, management, employee 
+background, experience, productivity, credit history and purpose of loan etc;  
+2. Business environment /CONDITION/ : explore the business, premise, equipment, 
+product/service and determine the micro element or consumers, suppliers, competitors, legal 
+environment and other impacting factors and reveal their potential impact on loan repaym ent; 
+3. Loan repayment capacity/ CAPACITY/ : analyze loan repayment resources, short and long 
+term objectives of the business, business plan, and determine the loan efficiency of the 
+business;  
+4. Capital for risk coverage capacity/ CAPITAL/ :  based on the financi al analyses define the 
+real value of the legal entity and study the equity fund, secondary investment (loan from the 
+shareholders) and debts held by related companies  
+5. Collateral asset /COLLATERAL/ : define the collateral asset type, quality, structure, 
+owne rship/ occupancy, liquidity, adequacy and insurance. These elements shall be regulated 
+by the “Procedure on Collateral Requirements”  
+ Eco Banking 
+Department  Provide 
+necessary 
+governance  -Receive GCF funds  
+  -Project monitoring  
+Treasury          
+Division  
+ Financial 
+Management 
+Department  
+ Credit 
+Department  
+ 
+Credit 
+Administration 
+Department  
+ Corporate 
+Banking Division
+
+
+---
+*Page 35*
+---
+
+ 
+DETAILED PROJECT / PROGRAMME DESCRIPTION  
+ GREE N CLIMATE FUND FUNDING PROPOSAL | PAGE 29 OF 74 
+ 
+ C 
+2) Additional Documentation for Loan Assessment:  
+1. Although  the loan proposal is greater than 1.0 billion MNT (410k USD) and s ubject to 
+conducting an Environmental and Social Responsibility Risk Evaluation in accordance with 
+XacBank’s Environmental and Social Management System (ESMS), it is a n ew project where  
+activities are not yet started,  so the evaluation would not be made at  the stage of due 
+diligence. However, the project would need to undergo general Environmental Impact 
+Assessment (EIA) , which  need s to be approved by the Ministry of Environment and Tourism 
+of Mongolia. Depending on the result of the general EIA, projects m ay need to undergo 
+Detailed Environmental and Social Impact Assessment (ESIA). The c redit analyst at 
+Corporate Banking Division and Credit risk analyst at Credit Department will review all these 
+assessment documents against the XacBank’s requirements.  
+2. The project developer need s to provide the following information to meet the GHG emission 
+reduction criteria which will be checked and verified by the Eco Banking Department (EBD):  
+1. Estimate of CO2 emission reduction calculation with methodology and formula of its 
+calculation whenever it is updated;   
+2. Calculation of the grid emission factor for the selected grid (i.e. Central Grid Emission 
+Factor for the SPP) whenever it is updated;  
+3. All data used in the calculation of grid emission factor and CO2 emission reduction to 
+verify the data (data needs to be conservative and up to date using the latest 
+methodologies);  
+4. Plans on meter calibration as per national and industry standards to verify  the accuracy 
+of metering equipment.  
+ 
+3) Site Visit : Credit Analyst (and if necessary , Credit risk analyst as well ) will conduct an on -site visit to 
+verify information obtained during the interview process. Information on customer behavior, debt 
+coverage capacity, and collateral assets are may be obtained and verified via interviews with third 
+parties.  
+ 
+4) Loan Proposal : Following the interview and in -person site visits, the loan applicant and Credit 
+Analys t will prepare a loan proposal.  
+ 
+5) Review : The loan pro posal is then reviewed by the Credit Committee. After receiving approval from 
+the Credit Committee, the loan will be disbursed.  Loan disbursements will be made in tranches 
+according to major milestones of the project implementation schedule as outline in t he loan proposal.  
+ 
+6) Monitoring : Following the disbursal, the credit officer conducts scheduled monitoring of the borrower 
+to ensure that the loan is being used for its original purposes.  
+As part of XacBank’s monitoring, the following information will be required from the  project developer 
+at the  mid-point and at the end of the year:  
+i. Financial related information as required by the Corporate  Banking  Department  
+ii. Monthly data of electricity ge neration and supply to the grid with evidences of electricity sale, 
+meter measurement and meter calibration where applied (as required by the EBD). 
+Monitoring of the generated and supplied electricity will be carried out by the project 
+developers on an ong oing basis and to be reported to EBD twice a year (mid -year and at the 
+end of the year) describing the actual electricity supply vs estimated amounts. Aggregated 
+data will be monitored and recorded by EBD to verify CO2 emission reduction. If project 
+develo pers obtained new data to update the grid emission factor and the project’s CO2 
+emission reduction, calculation with evidence of data shall be provided to EBD to update the 
+numbers.  
+ 
+7) Post -Evaluation : Post -evaluation will be conducted once a year (at the e nd of the year) to verify if 
+the anticipated electricity generation and CO2 emission reduction has been achieved as planned. 
+The p roject developer need s to provide evidence of supplied electricity to the grid, evidence of 
+payment made for the sold electric ity, meter results since the date of operation and meter calibration 
+test results among others.
+
+
+---
+*Page 36*
+---
+
+ 
+DETAILED PROJECT / PROGRAMME DESCRIPTION  
+ GREE N CLIMATE FUND FUNDING PROPOSAL | PAGE 30 OF 74 
+ 
+ C 
+Project Implementation Process  
+The p roject developer will follow the process described in Figure.C.7.3. to obtain the key licenses related 
+with obtaining construction license for solar PVs and electricity production license which are issued by the 
+ERC.  
+ 
+Figure.C.7.3. Project Development and  Licensing Process set by the Energy Regulatory Committee  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Abbreviation:  
+STCM – Science and technology committee meeting  
+FS – Feasibility Study  
+ERC – Energy regulatory Commission  
+PPA – Power purchasing agreement  
+ 
+ 
+- Select location of the 
+project and receive 
+authorization to 
+perform basic research 
+from the local 
+administration.  
+- Draft general 
+feasibility study    
+ 
+RESEARCH, 
+ANALYSIS  
+ 
+AGREEMENT, 
+COLLECTION OF 
+DOCUMENT  
+SPECIAL LICENSE, 
+TARIFF, PPA  
+ 
+CONSTRUCTION,  
+PRODUCTION  
+Approval of STCM  
+Prepare draft F S 
+Select location of 
+project, begin 
+research  
+Find investment / 
+financing resources  
+ 
+Collection of required 
+documents  
+ 
+Send soft copy of 
+special license 
+application to ERC  
+Draft PPA contract 
+based on the 
+approved contract  
+Approve tariff 
+proposal based on the 
+methodology  
+Receive and process 
+special license 
+application  
+Mobilize authorized 
+contractors for 
+construction  
+Receive special 
+license for electricity 
+production  
+Begin production  
+- Begin negotiation with 
+projects 
+funders/financiers  
+- Collect all the required 
+document for Energy 
+Facilities Construction 
+License based on the 
+Energy and Renewable 
+energy law frame,  and 
+submit with the 
+application to ERC  
+ 
+ 
+-Special license 
+application will be 
+received electronically 
+in an E -License format. 
+If all the requirements 
+are met the request will 
+be processed and 
+approved within 60 
+days.  
+-The projects tariff will 
+be approved according 
+to the energy and 
+renewable energy law 
+frame.  
+-Draft PPA and other 
+relative contracts with 
+“National Dispatching 
+Center” LLC  
+-Mobilize authorized 
+contractors from 
+construction  
+-Give operation to 
+State committee when 
+construction wo rk ends  
+-Begin electricity 
+(heating) operation 
+after receiving license 
+from ERC
+
+
+---
+*Page 37*
+---
+
+ 
+DETAILED PROJECT / PROGRAMME DESCRIPTION  
+ GREE N CLIMATE FUND FUNDING PROPOSAL | PAGE 31 OF 74 
+ 
+ C 
+C.8. Timetable of Project/Programme  Implementation  
+NB: The outputs and activity numbers in C.8 correspond to the logframe work in H.1, where they are further elaborated upon.  
+Program -wide Implementation Timeline  
+TASK  2017  2018  2019  2020  2021  2022  2023  2024  2025  2026  2027  2028  
+CALENDAR 
+QUARTERS  Q
+1 Q
+2 Q
+3 Q
+4 Q
+5 Q
+6 Q
+7 Q
+8 Q
+9 Q
+1
+0 Q
+1
+1 Q
+1
+2 Q
+1
+3 Q
+1
+4 Q
+1
+5 Q
+1
+6 Q
+1
+7 Q
+1
+8 Q
+1
+9 Q
+2
+0 Q
+2
+1 Q
+2
+2 Q
+2
+3 Q
+2
+4 Q
+2
+5 Q
+2
+6 Q
+2
+7 Q
+2
+8 Q
+2
+9 Q
+3
+0 Q
+3
+1 Q
+3
+2 Q
+3
+3 Q
+3
+4 Q
+3
+5 Q
+3
+6 Q
+3
+7 Q
+3
+8 Q
+3
+9 Q
+4
+0 Q
+4
+1 Q
+4
+2 Q
+4
+3 Q
+4
+4 Q
+4
+5 Q
+4
+6 Q
+4
+7 Q
+4
+8 
+PROGRAM  
+LIFETIME    Q
+1 Q
+2 Q
+3 Q
+4 Q
+5 Q
+6 Q
+7 Q
+8 Q
+9 Q
+1
+0 Q
+1
+1 Q
+1
+2 Q
+1
+3 Q
+1
+4 Q
+1
+5 Q
+1
+6 Q
+1
+7 Q
+1
+8 Q
+1
+9 Q
+2
+0 Q
+2
+1 Q
+2
+2 Q
+2
+3 Q
+2
+4 Q
+2
+5 Q
+2
+6 Q
+2
+7 Q
+2
+8 Q
+2
+9 Q
+3
+0 Q
+3
+1 Q
+3
+2 Q
+3
+3 Q
+3
+4 Q
+3
+5 Q
+3
+6 Q
+3
+7 Q
+3
+8 Q
+3
+9 Q
+4
+0 Q
+4
+1 Q
+4
+2 Q
+4
+3 Q
+4
+4 Q
+4
+5 Q
+4
+6 
+Output 1.  
+Project 
+assessment 
+by XacBank                                                  
+Activity 1.1.  
+Loan 
+assessment 
+and 
+preparation 
+of loan 
+proposal 
+(conducted 
+by 
+Corporate 
+Banking 
+Division)                                                  
+Activity 1.2.  
+Credit risk 
+assessment 
+and 
+providing 
+independent 
+credit risk 
+opinion
+
+
+---
+*Page 38*
+---
+
+ 
+DETAILED PROJECT / PROGRAMME DESCRIPTION  
+ GREE N CLIMATE FUND FUNDING PROPOSAL | PAGE 32 OF 74 
+ 
+ C 
+(conducted 
+by Credit 
+Department)  
+   
+Activity 1.3.  
+Credit 
+Committee 
+approval                                                  
+Activity 1. 4 
+Submit RSF 
+application                                                  
+Output 2.  
+FP 
+Assessment 
+by GCF ; 
+RSF 
+assessment                                                  
+Activity 2.1.  
+FP 
+assessed by 
+GCF                                                  
+Activity 2.2.   
+GCF Board 
+approval                                                  
+Activity 2.3  
+RSF 
+approval                                                  
+Activity 2. 4.   
+Conclusion 
+of FAA and 
+disburseme
+nt of funds 
+to XacBank                                                  
+Output 3.
+
+
+---
+*Page 39*
+---
+
+ 
+DETAILED PROJECT / PROGRAMME DESCRIPTION  
+ GREE N CLIMATE FUND FUNDING PROPOSAL | PAGE 33 OF 74 
+ 
+ C 
+Disburseme
+nt of the 
+sub-loan 
+Activity 3.1.  
+Conclusion 
+of the Sub -
+Loan 
+agreement 
+(conducted 
+by 
+Corporate 
+Banking 
+division and 
+Credit 
+Administrati
+on 
+department)                                                  
+Activity 3.2.  
+Disburseme
+nt of the 
+loan to sub -
+borrower 
+(based on 
+Credit 
+Committee 
+resolution 
+and Sub -
+loan 
+agreement, 
+disburse -
+ment will be 
+made 
+partially)                                                  
+Output 4 .  
+Monitoring  
+and annual 
+performance 
+reports
+
+
+---
+*Page 40*
+---
+
+ 
+DETAILED PROJECT / PROGRAMME DESCRIPTION  
+ GREE N CLIMATE FUND FUNDING PROPOSAL | PAGE 34 OF 74 
+ 
+ C 
+(monitoring 
+schedule is 
+subject to 
+change 
+according  to 
+the Credit 
+Committee 
+resolution . 
+Monitoring 
+reports will 
+be sent as 
+part of the 
+APR. See 
+H.2 for 
+details ) 
+Activity 4.1.  
+Credit 
+monitoring 
+by 
+Corporate 
+Banking 
+division                                                  
+Activity 4.2.  
+Emission 
+reduction 
+monitoring 
+by Eco 
+Banking 
+department                                                  
+Output 5:  
+Interim 
+Evaluation 
+report                                                  
+Output 6:  
+Completion 
+report                                                  
+Output 7:  
+Final
+
+
+---
+*Page 41*
+---
+
+ 
+DETAILED PROJECT / PROGRAMME DESCRIPTION  
+ GREE N CLIMATE FUND FUNDING PROPOSAL | PAGE 35 OF 74 
+ 
+ C 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Evaluation 
+report
+
+
+---
+*Page 42*
+---
+
+ 
+DETAILED PROJECT / PROGRAMME DESCRIPTION  
+ GREE N CLIMATE FUND FUNDING PROPOSAL | PAGE 36 OF 74 
+ 
+ C 
+Grant Implementation Timeline   
+Note: As XacBank is submitting for Q3 approval, activities will not beginning until Q4 of 2017. The section prior to disburse ment is marked in 
+orange shading.  
+ 
+Task
+Calendar quarters Q1 Q2 Q3 Q4 Q1 Q2 Q3 Q4 Q5 Q6 Q7 Q8 Q9 Q10 Q11 Q12 Q13 Q14 Q15 Q16 Q17 Q18 Q19 Q2 0 Q2 1 Q2 2 Q2 3 Q2 4 Q2 5 Q2 6 Q2 7 Q2 8 Q2 9 Q3 0 Q3 1 Q3 2 Q3 3 Q3 4 Q3 5 Q3 6 Q3 7 Q3 8 Q3 9 Q4 0 Q4 1 Q4 2 Q4 3 Q4 4
+Output 1. 
+Strengthen analytical 
+capabilities
+Activity 1.1.
+Announce PF lead and PF 
+analyst jobs, receive 
+applications
+Activity 1.2.
+Select PF specialist 
+  
+Activity 1.3.
+Brief, update, train PF 
+specialists in accordance 
+with XacBank policy
+Activity 1.4
+PF specialists to lead 
+internal trainings, as 
+inclusive in their contract
+Output 2.
+Strengthen internal 
+capabilities
+Activity 2.1.
+XacBank staff secondment 
+at best practice institutions
+Activity 2.2
+PF modeling, designing and 
+assessing
+Activity 2.3
+Legal implementation of 
+PFs
+Activity 2.4
+Measuring and monitoring 
+of the PFs
+Activity 2.5
+Risk analysis  
+Activity 2.6
+Attending to the workshops, 
+forum and conferences to 
+learn and share best 
+practices
+Output 3
+Training and awareness 
+raising of clients
+Activity 3.1.
+General awareness raising 
+to stimulate future clients for 
+REP
+Output 4:  Supporting Risk, 
+audit, and legal needs
+Activity 4.1 Third party risk 
+opinion; Independent social 
+and environmental audit; 
+independent engineer who 
+will be responsible for 
+technical monitoring and 
+issue the certificate of 
+completion
+Activity 4.2 Develop PF 
+agreements; drafting of 
+legal documents related to 
+PFA s needed
+A s neededInternatio nal trainings2023 2024 2025 2026 2027 2028 2017 2018 2019 2020 2021 2022
+
+
+---
+*Page 43*
+---
+
+ 
+DETAILED PROJECT / PROGRAMME DESCRIPTION  
+ GREE N CLIMATE FUND FUNDING PROPOSAL | PAGE 37 OF 74 
+ 
+ C 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Task
+Calendar quarters Q1 Q2 Q3 Q4 Q1 Q2 Q3 Q4 Q5 Q6 Q7 Q8 Q9 Q10 Q11 Q12 Q13 Q14 Q15 Q16 Q17 Q18 Q19 Q2 0 Q2 1 Q2 2 Q2 3 Q2 4 Q2 5 Q2 6 Q2 7 Q2 8 Q2 9 Q3 0 Q3 1 Q3 2 Q3 3 Q3 4 Q3 5 Q3 6 Q3 7 Q3 8 Q3 9 Q4 0 Q4 1 Q4 2 Q4 3 Q4 4
+Output 1. 
+Strengthen analytical 
+capabilities
+Activity 1.1.
+Announce PF lead and PF 
+analyst jobs, receive 
+applications
+Activity 1.2.
+Select PF specialist 
+  
+Activity 1.3.
+Brief, update, train PF 
+specialists in accordance 
+with XacBank policy
+Activity 1.4
+PF specialists to lead 
+internal trainings, as 
+inclusive in their contract
+Output 2.
+Strengthen internal 
+capabilities
+Activity 2.1.
+XacBank staff secondment 
+at best practice institutions
+Activity 2.2
+PF modeling, designing and 
+assessing
+Activity 2.3
+Legal implementation of 
+PFs
+Activity 2.4
+Measuring and monitoring 
+of the PFs
+Activity 2.5
+Risk analysis  
+Activity 2.6
+Attending to the workshops, 
+forum and conferences to 
+learn and share best 
+practices
+Output 3
+Training and awareness 
+raising of clients
+Activity 3.1.
+General awareness raising 
+to stimulate future clients for 
+REP
+Output 4:  Supporting Risk, 
+audit, and legal needs
+Activity 4.1 Third party risk 
+opinion; Independent social 
+and environmental audit; 
+independent engineer who 
+will be responsible for 
+technical monitoring and 
+issue the certificate of 
+completion
+Activity 4.2 Develop PF 
+agreements; drafting of 
+legal documents related to 
+PFA s needed
+A s neededInternatio nal trainings2023 2024 2025 2026 2027 2028 2017 2018 2019 2020 2021 2022
+
+
+---
+*Page 44*
+---
+
+ 
+RATIONALE FOR GCF INVOLVEMENT  
+ GREE N CLIMATE FUND FUNDING PROPOSAL | PAGE 38 OF 74 
+ D 
+D.1.  Value Added for GCF Involvement    
+ 
+Investments in renewable energy involve higher upfront costs and longer pay back periods than 
+both conventional investments and energy efficiency investments.  The costs borne by developers 
+over this payback period need to be minimized to maximize internal  rate of return.  So far, the 
+project develope r has demonstrated the bankability of their projects by sourcing financing for their 
+projects from international investors, in the form of equity. However, to complete their project, they 
+still are in need of l oans. Market interest rates in Mongolia are prohibitively high and tenors are 
+prohibitively short for investments in renewable energy. Mongolia’s Central Bank’s policy rate is 
+14%, which leads to extremely attractive deposit savings rates (about 15 -16% for  local currency), 
+which in turn leads to very expensive loan rates, which also come with very short terms (maximum 
+of 5 years, usually less than 3 years). Mongolia’s government domestic bond rate is currently at 
+18%. These conditions illustrate the shortco mings of financing options in Mongolia as well as a lack 
+of access to adequate funds for not only large scale projects, but for the entire country itself. As 
+XacBank is a commercial bank and not a development bank, and despite its efforts to lessen the 
+burden of loans on its customers by attracting sources of funding from international partners, the 
+Bank is still not able to offer sufficient low cost, long term financing. Without the GCF’s support, 
+XacBank’s ability to finance renewable energy projects such  as the project  included in this proposal 
+would be extremely limited.   
+ 
+The GCF provides access to funding at competitive rates. GCF involvement will allow XacBank to 
+provide beneficial financial terms to sustainable development project implementers who ha ve been 
+interested in implementing such projects but discouraged by high loan interest rates in Mongolia. 
+With the GCF’s ability to provide concessionary loan support (competitive rates and longer tenures), 
+XacBank will be able to offer a loan that allow s the project to go forward while not over -burden ing 
+the developer with debt during the course of the payback period. Without such concessionary 
+financing, the project would not be able to go forward.   
+ 
+In addition to the clear benefits of GCF involvement for XacBank and the project developer, GCF 
+involvement also benefits the end -beneficiaries of this project i.e. the Mongolian people. Access to 
+consistent electricity supply is a much needed public and s ocial good in Mongolia.  See section E.3 
+for further information on the benefits the program’s implementation would provide to end -
+beneficiaries, including health, economic, and social benefits. As mentioned earlier, without the 
+GCF’s support, XacBank’s ab ility to finance renewable energy projects such as the project included 
+in this proposal would be extremely limited. Thus the benefits to end -beneficiaries for GCF 
+involvement are the same as the benefits of the implementation of the project for end -benefi ciaries 
+in general, which can be found in E.3.  
+ 
+In addition, as part of the first batch of large -scale on -grid energy generation, there are certainly 
+risks affiliated with the project. Local financial institutions are wary of taking on such risks and lack  
+expertise. However, the GCF’s extensive experience in this sector and support for the projects will 
+encourage local FI to increase their involvement in RE financing.  Thus, in addition to pure financial 
+needs of the project developers, there is a paradigm -shift value add for GCF involvement in these 
+projects.  The GCF’s involvement in this proposed solar power program would mark the first 
+experience of developing project finance through GCF’s finance in Mongolia to be provided by 
+GCF’s National Implementin g Entity XacBank with direct access to offer concessional financing 
+terms. Currently, the only other renewable energy projects in existence in Mongolia of comparable 
+scope are the Salkhit wind farm (50 MW) and the Darkhan SPP (10MW).
+
+
+---
+*Page 45*
+---
+
+ 
+RATIONALE FOR GCF INVOLVEMENT  
+ GREE N CLIMATE FUND FUNDING PROPOSAL | PAGE 39 OF 74 
+ D 
+Finally, the GCF has great value add ed in being able to support XacBank’s ability to develop the 
+necessary capacities for this program  through grant funding. This program represents a large 
+increase in XacBank’s project financing portfolio.  As such, XacBank recognizes its nee d to on -
+board project financing specialists, a dedicated portfolio manager, as well as general capacity 
+building for existing staff  that would allow XacBank to better implement this renewable energy 
+program . With these capabilities, XacBank will be able to  mitigate first -mover risks and become an 
+industry leader in renewable energy implementation capabilities, technical capacity that is sorely 
+needed if Mongolia is to exploit its renewable energy potential.  
+ 
+ 
+2. Exit Strategy   
+ 
+Once the funding is provided, the GCF does not need to be highly involved in program operations. 
+The Fund's support is initially required to provide an affordable source of financing to the power 
+plant. XacBank will report on the facility’s disbursement to GCF periodically to  describe how 
+funding is being used, including financial statements (balance sheet, income statement), GCF loan 
+portfolio quality report, and emission reduction report together with GCF loan portfolio.  
+The GCF’s exit strategy is quite simple, as XacBank wi ll be paying the GCF back directly, based 
+upon the  terms that the GCF is able to offer. Exit risk is minimal . GCF exit will coincide with 
+XacBank exit, as both the loan from GCF to XacBank and XacBank to the client will identically 
+tenured. If there arises  any NPL during the loan tenure period, XacBank will cover the risk, 
+therefore, it presents no risk to the GCF.
+
+
+---
+*Page 46*
+---
+
+ 
+EXPECTED PERFORMANCE AGAINST INVESTMENT CRITERIA  
+ GREE N CLIMATE FUND FUNDING PROPOSAL | PAGE 40 OF 74 
+ 
+ 
+ E 
+ 
+ 
+E.1. Impact P otential  
+Potential of the project/programme to contribute to the achievement of the Fund’s objectives and result areas  
+E.1.1. Mitigation / adaptation impact  potential  
+ 
+Total CO2 emission reduction from the solar program will be 306,745  tCO2 for  the whole project lifecycle of 
+the solar project  based on the most conservative estimations . This is the most conservative calculation 
+using IPCCC default values in the calculatio n. If the local data will be used emission reduction will be higher 
+as the local data greatly vary from the international values. Calculation of the emissions is show in below 
+Table.E.1.1.   
+ 
+Table.  E. 1.1. Total tons of CO2 equivalent to be avoided or reduced per annum  
+ 
+Projects  Net electricity 
+supply 
+(MWh/y)  Grid 
+Emission 
+Factor 
+(tCO2)  Emission 
+reduction 
+per year 
+(tCO2)  Project 
+Lifetime  Total 
+emission 
+reduction 
+(tCO2)  
+1 SPP            15,395  0.797          12,270  25          306,745  
+ Total  15,395   0.797            
+12,270   25       306,745   
+        
+ 
+Expected total number of direct and indirect beneficiaries and number of beneficiaries relative to 
+total population (e.g. total lives to be saved from disruption due to climate -related disasters)  
+ 10 MW SPP has the following benefits:  
+1) supply electricity to about 20,000 households  based on the average monthly e lectricity consumption 
+of a household at 150 -200 kWh source8.  
+2) create employment of 200-250 people during the construction period  and about 10 people during 
+the operation period.  
+3) save around 171 thousand liters of water per year which totals to around 4.2 million liters of water 
+for the whole project lifetime of 25 years c ompared to conventional CHPs which use water to 
+produce electricity and  heat Based on water consumption  of Thermal Power Plants in the CES, 
+around 9 -10 liters  of water  are used per kWh9.   
+ 
+Table.E.1.2. Water Savings by Solar Power Project  
+  SPP 
+Gross Annual Electricity Generation (MWh)  17,105  
+Annual Water Savings (liter)  171,050,000  
+Project lifetime (year)  25 
+Total water savings for project lifetime (liter)  4,276,250,000  
+ 
+As solar PVs will not use coal, the proposed solar PVs will prevent coal burning that would have been used 
+in power plants to produce the equal amount  of electricity. Based on coal consumption of Thermal power 
+plants in the CES, around 0.899 kgs of coal is burned per kWh10. Therefore, the SPP will reduce coal 
+                                                             
+8 Ulaanbaatar Electricity Distribution Network  
+9  
+10
+
+
+---
+*Page 47*
+---
+
+ 
+EXPECTED PERFORMANCE AGAINST INVESTMENT CRITERIA  
+ GREE N CLIMATE FUND FUNDING PROPOSAL | PAGE 41 OF 74 
+ 
+ 
+ E 
+consumption by about 15 thousand  tonnes per year. For the total program duration, total coal saving will be 
+384 thousand  tonnes (calculation is provided below in table E.1. 3).  
+ 
+Table.E.1.3. Coal Savings by Solar Power Project  
+  SPP 
+Gross Annual Electricity Generation (MWh)              17,105  
+Annual coal saving (tonnes)         15,377.40  
+Project lifetime (year)  25 
+Total coal savings for program lifetime (tonnes)       384,434  
+ 
+E.1.2. Key impact potential indicator  
+Provide specific numerical values for the indicators below.  
+GCF core 
+indicators  Expected tonnes of carbon dioxide equivalent (t 
+CO 2 eq) to be reduced or avoided (Mitigation only)  Annual  12,270  
+Lifetime   306,745  
+• Expected total number of direct and 
+indirect beneficiaries, disaggregated by 
+gender (reduced vulnerability or increased 
+resilience);  
+• Number of beneficiaries relative to total 
+population, disaggregated by gender 
+(adaptation only)  Total  n.a 
+Percentage 
+(%)  
+n.a 
+Other 
+relevant 
+indicators  Examples include:  
+• Expected increase in the number of households with access to low -emission energy  
+• Expected increase in the number of small, medium and large low -emission power suppliers, and 
+installed effective capacity  
+• Expected increase in generation and use of climate information in decision -making  
+• Expected strengthening of adaptive capacity and reduced exposure to climate risks  
+• Others  
+ 
+Emission reduction calculation  
+ 
+Name of the methodology used : approved JCM methodology MN_AM003 “Installation of Solar PV 
+Systems”  
+Emission factor of the national grid : 0.797 tCO2/MWh which applies  the lowest emission factor of coal -
+fired power plant supplying electricity to the national grid. This value is lower t han the grid emission factor 
+for CES, which is 1.154 tCO2/MWh (combined margin, 2012) published by Mongolian government, and it 
+ensures net emission reductions.  
+ 
+Application : 0.797 tCO2/MWh will be applied in case the PV system in a proposed project activity is 
+connected to the Mongolian national grid (supplied by the Central Energy System (CES), Western Energy 
+System (WES), Altai -Uliastai Energy System (AUES), Eastern Energy  System (EES), and/or Southern 
+Energy Systems (SES)) including internal grid which is not connected to a captive power generator.  
+ 
+Calculation : In order to identify the emission factor based on the national grid simplistically and secure net 
+emission reductions, this methodology applies the lowest emission factor of coal -fired power plant 
+supplying electricity to the national grid. T he calculation of each coal -fired CHP plant emission factors was 
+conducted using the specific fuel consumption of each po wer plant from the national authority and default
+
+
+---
+*Page 48*
+---
+
+ 
+EXPECTED PERFORMANCE AGAINST INVESTMENT CRITERIA  
+ GREE N CLIMATE FUND FUNDING PROPOSAL | PAGE 42 OF 74 
+ 
+ 
+ E 
+values (Table 2) determined by the national authority and IPCC guidelines. Detailed calculation of emission 
+factor of coal -fired power plants in Mongolian national grid can be seen from this IGES (2016) cal culation.  
+Table. C.2.7. Constants for calculation of emission factor  
+ 
+Source: IGES (2016) Calculation of Conservat ive Emission Factor of Mongolia  
+Table. E.1. 1. Total tons of CO2 equivalent to be avoided or reduced per annum  
+Projects  Net electricity 
+supply 
+(MWh/y)  Grid 
+Emission 
+Factor 
+(tCO2)  Emission 
+reduction 
+per year 
+(tCO2)  Project 
+Lifetime  Total emission reduction 
+(tCO2)  
+SPP             15,395  0.797     12,270  25             306,745  
+ 
+The same calculation of grid emission factor was done by IGES in Sep 2016 as part of JCM project 
+development11. All data used to calculate the grid emission factor can be seen from IGES (2016) 
+calculation .  
+ 
+E.2.  Paradigm Shift Potential  
+Degree to which the proposed activity can catalyze impact beyond a one -off project/programme investment  
+E.2.1. Potential for scaling up and replication (Provide a numerical multiple and supporting rationale)  
+ 
+Scale -up potential (program level):  
+XacBank will continue its Renewable Energy Program (REP) , bundling  similar solar projects  together , and 
+develop new REPs for other RE sources including wind and other potential projects. Therefore, the 
+possibility of replication and expansion of the REP i s high and highly potential given the abundant RE 
+sources within Mongolia that was described in detail in Section C.5.  
+In addition, with the inclusion of grant funding, XacBank would be able to develop its project financing and 
+large scale renewable technology capabilities in such a way as to make the realization of further iterations 
+of the REP program seamless  
+Scale -up potential (geographical):  
+National  
+The SPP project  has the potential to propel a paradigm shift in Mongolian energy supply. The energy system 
+in Mongolia is divided into five areas. The Central Energy System (CES) is the largest and includes the 
+Dalanzadga d Energy System (DES) in the South Gobi. The smaller energy systems are the Western Energy 
+System (WES), the neighboring  Altai-Uliastai Energy System (AuES), and the Eastern Energy System (EES).  
+                                                             
+11 IGES (2016) Calculating Conservative Emission Factor of Mongolia
+
+
+---
+*Page 49*
+---
+
+ 
+EXPECTED PERFORMANCE AGAINST INVESTMENT CRITERIA  
+ GREE N CLIMATE FUND FUNDING PROPOSAL | PAGE 43 OF 74 
+ 
+ 
+ E 
+The central region is currently powered in overwhelming major ity by coal.  In addition, the Central and 
+Western energy systems are interconnected with and dependent upon energy generation from Russia. The 
+Central Energy System is the largest and most high -profile, due to its service of the capital, Ulaanbaatar. The 
+integration of self -sufficient and renewable -powered energy sources in this high -profile area would be 
+demonstrative of the power of renewables not only in provincial, low -growth settings, but also in serving the 
+high-growth over -taxed central grid  (Weste rn Energy System (WES), the neighboring  Altai-Uliastai Energy 
+System (AuES), and the Eastern Energy System (EES)).  These systems are secondary to the central 
+system, and have the potential, based on natural resources and regional demand, to become renewab le-
+powered at much faster rate than the central energy system. The project here proposed could demonstrate 
+the viability and bankability of solar integration and encourage the other energy systems to expand 
+development of renewables.  
+The expansion of self -sufficient and renewable energy powered energy systems could begin with the two 
+secondary energy systems in the south and east of Mongolia. The other projects would be similar indicators 
+of the viability and bankability of solar throughout the four energy systems.  
+International  
+Even once Mongolia achieves energy independence through the implementation of renewables, there 
+remains further scale -up that could be implemented. The Mongolian market is relatively small, with only 3 
+million people. By comparison, the renewable energy potential is enormous, estimated at 2.6 terawatts. If 
+and once cross -border grid infrastructure is developed to export renewable energy, Mongolia could become 
+a net exporter of energy. IRENA writes “ The notion of exporting renewable power from the Gobi Desert 
+through the Asian Super Grid (ASG) is attracting increasing interest from investors and developers. The 
+grid would connect Mongolia, Russia, China, the Republic of Korea (South Korea) and Japan.”  
+E.2.2. Potential for knowledge a nd learning  
+Experience from the first solar and wind project development in Mongolia are described below with the 
+program’s contribution in strengthening RE project development, knowledge sharing and capacity building.  
+Development of the first wind farm (50 MW Salkhit wind farm) brought significant experience to Mongolia’s 
+renewable energy sector development in terms of negotiating, signing and implementing the very first 
+Power Purchase Agreement (PPA), integrating RE so urce into the Central Grid, and understanding the 
+operation of RE sources within the current National Grid Code. From project developers perspective, it also 
+became the first experience of constructing a RE source, employing over 500 people during construc tion 
+period with about 20 subcontractors. Project finance experience of finalizing financial close with 
+international investors and meeting international best practices of developing and operating a RE source 
+greatly contributed in increasing the capacity of both private sector players and government side from 
+regulatory stand point. All of the next RE projects followed Salkhit wind farm’s experience of developing 
+and integrating a RE source into the national grid.  
+While Salkhit wind farm was developed as a Clean Development Mechanism (CDM) building local capacity 
+from CDM side, development of the first solar PV (10 MW Darkhan solar PV) is bringing great deal of 
+experience not only for developing solar projects in general and integrating it into the Central  Grid, but also 
+on how to develop solar PVs as a Joint Crediting Mechanism (JCM). The project  has project design 
+documents, established monitoring and reporting standards, methodologies and templates, as well as 
+calculations of CO2 emission reduction based  on verifiable data. All of this information are publicly 
+available, and can be used as an example for future projects.  
+In the case of the 10 MW Darkhan solar PV, project development experience of constructing and operating 
+the solar PV into the Central G rid is providing useful benchmark experience to compare the proposed solar 
+project that is pursued in this funding proposal.
+
+
+---
+*Page 50*
+---
+
+ 
+EXPECTED PERFORMANCE AGAINST INVESTMENT CRITERIA  
+ GREE N CLIMATE FUND FUNDING PROPOSAL | PAGE 44 OF 74 
+ 
+ 
+ E 
+Based on the above experience of the first wind and solar projects, XacBank’s REP for the SPP  can 
+contribute to the development an d operation of SPPs  into the national grid for the following reasons:  
+1) Firstly, XacBank’s solar program will be the first experience of developing project finance through 
+GCF’s finance in Mongolia to be provided by GCF’s National Implementing Entity XacBank  with 
+direct access to offer low interest rate loans. In this respect, the first mover risk is certainly present, 
+but as the other side of the coin, so is paradigm shift potential present.  This experience will  
+contribute greatly to the project develop er in resolving financial clos ing for 49% of the total 
+investment cost with affordable interest rate as well as obtaining finance from local entity rather than 
+multilateral banks .  
+2) Secondly, the first mover risk will be mitigated by the inclusion of grant fund ing to develop XacBank 
+capabilities in project financing and renewable energy financing. Thus, the program will be able to 
+capitalize on paradigm shift potential with the means of taking necessary steps to reduce risk and 
+raise the level of expertise and k nowledge in this sector in general.  
+3) Thirdly, XacBank’s solar program will contribute in experience sharing of solar project development 
+as the sanitized version of the full funding proposal will be publicly available. Therefore, future solar 
+projects can b enchmark their projects with the proposed projects, and replicate the project 
+development and implementation experience. This especially applies to the calculation of grid 
+emission factor and CO2 emission reductions so that the capacities of both project d evelopers and 
+the government agencies will further improve in developing data necessary for mitigation projects.  
+4) Fourthly, integration of more solar projects will improve the government’s capacity to better manage 
+RE sources within the grid’s capacity to absorb RE sources. Government agencies would need to 
+further improve their research and management capabilities in integrating the increasing RE 
+sources into the grid, amend the National Grid Code to make it friendly to RE sources, as well to 
+take necessar y measures to increase the share of RE sources in the total electricity generation. 
+This will be directly related to how the government will implement the future PPAs, how it will 
+resolve curtailment issues if occurred as the number of RE sources are likel y to increase. It will also 
+affect the government’s decision in progressing hydro power plants to balance the intermittence of 
+solar and wind energy sources.  
+E.2.3. Contribution to the creation of an enabling environment
+
+
+---
+*Page 51*
+---
+
+ 
+EXPECTED PERFORMANCE AGAINST INVESTMENT CRITERIA  
+ GREE N CLIMATE FUND FUNDING PROPOSAL | PAGE 45 OF 74 
+ 
+ 
+ E 
+Contribution to creation of enabling environment  
+The project  has great  paradigm shift potential as it will serve as proof of concept for the viability of 
+renewables in Mongolia. The implementation of the project will open up the market conditions for the 
+establishment of other simila r projects . Aside from these tangible enabling changes, a successfully 
+implemented project will have intangible enabling effects in terms of demonstrating the financial and 
+environmental viability of such  a project to other interested project developers an d FIs , thus stimulating the 
+supply side of renewables  through their partnership . 
+In addition, the ability of the project to receive financing will send a message that despite high upfront 
+capital costs, renewable energy projects can be bankable with long r epayment tenors and access to proper 
+capital.  
+Innovation :  
+While solar power is one of the more developed renewable technologies worldwide, solar power 
+infrastructure beyond small residential -use cells is certainly “innovative” in Mongolia. Most commonly, solar 
+power is used off -grid in countryside dwellings to po wer simple appliances such as phones and televisions. 
+However, there is currently only one newly -operational 10 MW solar plant in Darkhan city.  Th is project 
+would be  the second utility scale SPP in Mongolia .  
+ 
+Aside from the relative innovation of the project in Mongolia, there are numerous challenges in the 
+Mongolian landscape that would be cause for solar technology innovation at large. The first is the extreme 
+temperatures. For example, few solar plants are designed to withstand -40 degree Celsius te mperatures 
+common throughout the 6 -month Mongolian winter . Finding a cost effective way of operating in this climate 
+will certainly be a Mongolia -specific innovation that will allow for the technology to spread to other regions  
+in the country and in Centra l Asia . On this note, it is important to comment from a technical risk mitigation 
+standpoint that the projects included in this program have undergone thermal cycling tests that have shown 
+the projects’ ability to operate between -40C and +85C temperatures .  
+E.2.4. Contribution to regulatory framework and policies
+
+
+---
+*Page 52*
+---
+
+ 
+EXPECTED PERFORMANCE AGAINST INVESTMENT CRITERIA  
+ GREE N CLIMATE FUND FUNDING PROPOSAL | PAGE 46 OF 74 
+ 
+ 
+ E 
+ 
+Development and implementation of the solar program will affect and strengthen the improvement of 
+National Grid Code which regulates operation of all power sources within the Grid. Since the first RE 
+source (50 MW Salkhit wind farm) became operational in 2 013, a lot regulations related with RE had to 
+change to integrate the new source. RE law was amended in 2015 and made several important 
+amendments to improve the financial management and resolve the issues that were faced by the Salkhit 
+wind farm. Salkhit wind farm project showed importance of implementing PPA to the government officials.  
+ 
+With integration of the 10 MW Darkhan solar project in 2016 and supply of electricity to the Central Grid 
+since 1 Jan 2017, there is currently more experience to absorb electricity from solar power. Therefore, the 
+development of new RE sources will naturally strengthen the national policies and regulations.   
+ 
+As discussed in C.1, the implementation of the Salkhit wind farm has led to the discovery of various 
+regulatory a mbiguities that have the potential to limit the full effectiveness of medium - and large -scale on -
+grid renewable energy projects. In addition, as mentioned above, these projects are innovative in their 
+areas. Undoubtedly, there will be implementation or ope rational challenges. However, as the first in their 
+field, the project itself will clear the way for future projects, thus representing a regulatory paradigm shift. 
+Their smooth implementation will demonstrate the capacity of local and national grid operat ions and energy 
+regulations to accommodate these new energy sources.  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   
+E.3.  Sustainable Development Potential  
+Wider benefits and priorities  
+E.3.1. Environmental, social and economic co -benefits, including gender -sensitive development impact  
+ 
+Economic  
+There are numerous economic benefits to this program. Firstly, the SPP will create employment 
+opportunities (described in the Table.E.3.1). Secondly, it will reduce electricity import (as described in the 
+Table.E. 1.4-E.1.6 ). Thirdly, the project  will add 10MW of new solar power capacity into the Mongolia’s 
+installed power capacity, supplying electricity of about 0.26% of the total country’s electricity generation 
+(described in Table.E.3. 2).  
+Table.E.3.1. Number of people to  be employed by the Solar Project  
+Project  Construction phase  Operation phase  
+SPP 200-250 10-15 
+ 
+Based on the Ministry of Energy’s March 2017 statistics, total electricity imported in the CES was 226.5 
+million kWh which is 4% of the total electricity consumption with the CES.  If this 10 MW SPP supplies 
+15.3 million kWh of net electricity to the CES, it will reduce electricity import of CES by 6. 7%.   
+Social  
+Proposed solar program has the following social benefits:  
+1) 10 MW SPP will supply electri city to about 20,000 households  based on the average monthly 
+electricity consumption of a household at 150 -200 kWh source12.  
+2) The SPP  will create empl oyment of 250-500 people during the construction period, and about 
+10-15 people during the operation period.  
+                                                             
+12 Ulaanbaatar Electricity Distribution Netwo rk
+
+
+---
+*Page 53*
+---
+
+ 
+EXPECTED PERFORMANCE AGAINST INVESTMENT CRITERIA  
+ GREE N CLIMATE FUND FUNDING PROPOSAL | PAGE 47 OF 74 
+ 
+ 
+ E 
+The project has the potential for significant social development improvements in the area of health and 
+safety. For the Central Energy System suppliers, the relevant health and safety concern is Ulaanbaatar 
+and other regional urban centers, where air pollution is a big issue. Health scientists have conservatively 
+estimated that air pollution in Ulaanbaat ar is the major contributor to 10% of mortality in the city 
+(http://www.ncbi.nlm.nih.gov/pubmed/23450113 ), with the same report writing that “air pollution 
+represents a major public health risk to  the residents of Ulaanbaatar.” Pollution in provincial cities can 
+also rise to dangerous levels. The presence of PM2.5 is the result of coal -fired power plants and 
+individual coal -fired stoves used to heat homes. While the impact of these projects might n ot be 
+immediately noticeable, it is anticipated that the paradigm shift they initiate has the potential to 
+significantly reduce to health risk posed by inner -city large scale coal fired plants.  
+Environmental  
+The here p roposed solar program has the following environmental benefits:  
+1) Compared to conventional CHPs which use water to produce electricity and heat, solar PVs will 
+not use any water. In that sense, this project save s water. Based on water usage of Thermal 
+Power Plants in the CES, around 9 -10 liters are used per kWh13. Based on the amount of annual 
+gross electricity generation from each projects , around 171 million liters of water will be saved per 
+year. If to consider the total project lifetime of the  project, the total water savings will be e qual to 
+4.3 billion liters of water for a total duration of 25 years.    
+ 
+Table.E.1.2. Water Savings by the SPP 
+Gross Annual Electricity Generation (MWh)  17,105  
+ Annual Water Savings (liter)  171,050,000  
+Project lifetime (year)  25 
+Total water savings for  project lifetime (liter)  4,276,250,000  
+ 
+As solar PVs will not use coal, the proposed solar PVs will prevent coal burning that would have been 
+used in power plants to produce the equal amount of electricity. Based on coal consumption of Thermal 
+power plants in the CES, around 0.899 kgs of coal is burned per kWh14. Therefore, the project will reduce 
+coal consumption by about 15 thousand  tonnes per year. For the total program duration, total coal saving 
+will be 384 thousand  million tonnes (calculation is provided in table E.1. 3).  
+ 
+Table.E.1.3. Coal Savings by the SPP  
+Gross Annual Electricity Generation (MWh)              17,105  
+Annual coal saving (tonnes)         15,377.40  
+Project lifetime (year)  25 
+Total coal savings for program lifetime (tonnes)       384,434  
+ 
+Mongolia has one of the highest carbon dioxide emissions per capita in the world, at 4.33 tons15. This is 
+mostly due to excessive dependence on coal for electricity and heat generation, old and inefficient 
+infrastructure (characterized by high transmission losses), old energy intensive equipment in industries, 
+and traffic congestions in the capital.  
+                                                             
+13 Newcom (2017) Feasibility Study of 24 MW Salkhit Solar Project  
+14 Newcom (2017) Feasibility Study of 10 MW Salkhit Solar Project (based on Project Design Document 
+and CO2 emission reduction of the 50 MW Salkhit Wind Farm Project)  
+15 OECC. “ Report of the  Cooperation Programme on Developing the JSM Seeds in Mongolia, Feasibility Studies on Joint 
+Crediting Mechanism Projects towards Environmentally Sustainable Cities in Asia”,  The Overseas Environmental 
+Corporation Center, Japan , (2014 ): 1.
+
+
+---
+*Page 54*
+---
+
+ 
+EXPECTED PERFORMANCE AGAINST INVESTMENT CRITERIA  
+ GREE N CLIMATE FUND FUNDING PROPOSAL | PAGE 48 OF 74 
+ 
+ 
+ E 
+All the major energy systems are powered by coal -fired power plants. Replacing coal power plant 
+dependence wit h renewables will improve air quality, and reduce GHG emissions. Reducing coal as the 
+fuel for an economy, while expanding the energy available, is good for business and good for the 
+environment.  
+The poor air quality caused by coal -burning power generation  has an effect beyond the human 
+dimension. The most vulnerable sectors to climate change are “the agricultural, livestock, land use, water 
+resources, energy, tourism and residential sectors”16. Melting of permafrost (covering 60% of Mongolia’s 
+surface) will  affect agricultural practices, water resources and infrastructure. The agricultural and 
+livestock areas are expected to be severely impacted, which will in turn affect the country’s society and 
+economy.  For quantitative analysis on environmental co -benef its, please see section E.1  
+Gender -sensitive development impact  
+Knowledge acquisition of local workforces is a key social and economic benefit of these projects. The 
+project developers will work together with the AE to ensure that these co -benefits are sha red equally 
+across genders.  Stakeholder engagement will actively seek to include representative gender groups so 
+that the needs and impacts of the projects upon these groups are fully analyzed. These proactive efforts 
+will be combined, of course, with dil igent subscription to all relevant gender laws of Mongolia, available in 
+Annex II. The full list of steps taken by the projects to ensure gender mainstreaming and equal access to 
+co-benefits is summarized in the Gender Action Plan (annex 6).  
+It should be noted that Mongolia has very progressive gender environment. Unlike many other 
+developing countries, Mongolia has a strong presence of women in the formal workforce and in particular 
+in managerial positions. A 2013 World Bank report estimates that female p articipation in the Mongolian 
+workforce is 57%.Women are also over -represented in education.  Thus, it should be kept in mind that 
+gender -sensitive analysis looks toward the inclusion of all genders, not exclusively women.  
+ 
+Political  
+Energy independence is a stated political goal and national security priority of the Mongolian 
+government. Th is project would include political co -benefits by moving Mongolia closer to this goal.  
+ 
+E.4. Needs of the R ecipient  
+Vulnerability and financing needs of the beneficia ry country and population  
+E.4.1. Vulnerability of country and beneficiary groups (Adaptation only)  
+ 
+Not applicable as the program is mitigation.  
+E.4.2. Financial, economic, social and institutional needs  
+ 
+Vulnerability of the country  
+Mongolia is at high risk from climate change. The key impacts of climate change in Mongolia as 
+explicated in the INDC of Mongolia are:  
+• 70% of pastoral land degraded; biodiversity compromised  
+• Increased risk of winter dzud (heavy snow, cold fronts, storms); death of livestock; economically 
+forced urban migration, exacerbating the challenges of urban settlements  
+• Declining water resources, with 12% of rivers, 21% of lakes, and 15% of springs having already 
+been depleted, destroyed, or dried up.  
+                                                             
+16 Ibid
+
+
+---
+*Page 55*
+---
+
+ 
+EXPECTED PERFORMANCE AGAINST INVESTMENT CRITERIA  
+ GREE N CLIMATE FUND FUNDING PROPOSAL | PAGE 49 OF 74 
+ 
+ 
+ E 
+• Intensification of dry cl imatic conditions; increased forest sand steppe fire frequency; forest area 
+has been reduced by 0.46% annually due to these conditions  
+• Climate zone shifts; increased outbreaks of new emerging infectious diseases.  
+Mongolian people face many challenges to pr ovide electricity due to the sparsely situated population and 
+the given tough winter condition. Currently the main power suppliers are aging coal fire plants, and the 
+majority of electricity consumption occurs in the Central Energy System. The mining devel opments will 
+require increasing power demand growth, especially in the rural areas where most of the current and 
+potential mines will be located. Therefore new power generation to supply the demand is required to 
+maintain these zones.  
+Economic and social d evelopment level of the country and affected population  
+The power demand is still expected to increase in the years to come. The Government of Mongolia 
+estimates that 500 -600 MW will be added to  existing  demand  by  2020,  corresponding  to  an average  
+annual  growth  rate  of  3.5%,  as  illustrated below : 
+ 
+Opportunities have emerged for renewable energy systems, for wind and solar applications, with the 
+growing demand for domestic and regional electricity.  The Mongolian Government has recently set 
+goals in the Green Development Policy to increase the renewable energy share from the total power 
+generation capacity to reach 20% as of 2020 and 30% in the following decade. These targets may seem 
+highly ambitious, but reachable in absolute terms.  
+ 
+The gove rnment of Mongolia has the following five components of renewable energy policy layout to 
+reach the targets:  
+1) Incentives – covers both supply (producers of renewable energy) and demand side incentives 
+(primary buyers).  
+2) Licensing and permitting guidelines – regulations related policy to issue licenses, approval FiT 
+and Model PPA)  
+3) Renewable energy resource exploitation policy –  refers to the approach to exploit  the 
+opportunities for renewable energy  
+4) Grid integration policy –  the policy covers areas such as  grid codes for interconnection, 
+system operations, and enhancing flexibility of grid  
+5) Public awareness and human resource development – policies to increase public awareness 
+of solar and wind power benefits, and development of human capacity in area of ren ewable 
+energy.
+
+
+---
+*Page 56*
+---
+
+ 
+EXPECTED PERFORMANCE AGAINST INVESTMENT CRITERIA  
+ GREE N CLIMATE FUND FUNDING PROPOSAL | PAGE 50 OF 74 
+ 
+ 
+ E 
+A survey conducted among private sector RE developers, in March 2015, indicated that developers face 
+difficulties in accessing commercial financing in Mongolia (EBRD 2015, Scaling Up Renewable Energy 
+Plan). The project developers for the RE program are pri vate entities, even with the policies at hand, they 
+still face financial barriers, such as high interest rates and high collateral costs. There are no local 
+financial alternative in Mongolia, project developers would have to seek and secure concessional 
+financing from international finance institutes.  
+ 
+Below are listed the scope of these groups, their needs, and the benefits they stand to gain from the 
+program:  
+Stakeholder/beneficiary 
+groups  Needs  Benefits  
+Government of 
+Mongolia:  
+Ministry of Environment 
+and Tourism (MOET)  
+Ministry of Energy 
+(MOE)  
+Ministry of Finance 
+(MOF)  • Burden ease on 
+national power grid  
+• Reduce budget spent 
+on energy imports  
+• Reduce electricity loss  
+• Slow pace of climate 
+change  
+• Private sector 
+cooperation with 
+national energy and 
+climate related 
+priorities including the 
+Energy Conservation 
+Law and stated goals 
+to economic 
+diversification  • Supplying clean energy for upcoming 
+energy demand  
+• Less dependence on imported energy 
+and reduced electricity transmission 
+losses  
+• Promoting energy securit y through 
+diversity of supply  
+• Contribution towards Mongolia’s INDC 
+Renewable energy production of 20% 
+by 2020  
+• Supply power generation to current and 
+upcoming mining  
+• Local job creation at the solar plants  
+• CO2 emission reduction  
+Borrowers – Project 
+developers  • Affordable financing  
+• Technical assistance  
+ • Access to affordable long term 
+financing  
+• Fund that ensures foreseeability, 
+transparency, and fairness.  
+• Access to locally available trained 
+human resources to support and 
+sustain scale up  
+• Technical knowl edge  
+Financial Intermediary 
+– XacBank  • New line of credit at 
+low cost to generate 
+RE investment during 
+trying economic 
+conditions  • Access to affordable long term 
+financing for Solar plants  
+• Marketing opportunity  
+• Promote RE projects  
+Local  • Need of energy supply 
+as demand for energy 
+are increasing  
+• Local employment  • Availability of energy  
+• Short and long term employment  
+• Training local workforce  
+• Consumers awareness ability to 
+integrate renewable energy  
+ 
+ 
+E.5.  Country O wnership  
+Beneficiary country (ies) ownership of, and capacity to implement, a funded project or programme
+
+
+---
+*Page 57*
+---
+
+ 
+EXPECTED PERFORMANCE AGAINST INVESTMENT CRITERIA  
+ GREE N CLIMATE FUND FUNDING PROPOSAL | PAGE 51 OF 74 
+ 
+ 
+ E 
+E.5.1. Existence of a national climate strategy and coherence with existing plans and policies, including NAMAs, 
+NAPAs and NAPs  
+Alignment with the country’s national climate priorities  
+ 
+Due to the national threat that climate change poses, as well as a commitment to multilateral efforts to 
+cap global temperature increases, Mongolia has already adopted a number of climate finance initiatives. 
+Ahead of COP21, Mongolia su bmitted their Intended National Determined Contributions (INDC), which 
+outlines national priorities, goals and approaches to the mitigation of and adaption to climate change. 
+Mongolia’s priorities vis -a-vis climate change can be considered in two categorie s: mitigation and 
+adaptation.  
+ 
+This proposed program is directly in line with a number of explicitly stated policy initiatives on the part of 
+the Mongolian government. In order to achieve the Mongolian government’s stated goal of a 14% 
+reduction in total national GHG emissions, the INDC outlined a number of policies across the energy, 
+industrial, agricultural, and waste sectors. The proposed program is in line with Mongolia’s INDC as it 
+relates to increasing the share of renewable energy production. In add ition to this general alignment, the 
+program falls under the following INDC goal: “increase the share of renewable electricity capacity to 30% 
+of total electricity generation capacity, from 7.62% in 2014.” In addition to the INDC, the SREP IP is part 
+of the government’s comprehensive plan, which is expected to facilitate development of 20% of the 
+renewable energy target for year 2020 and 30% by year 2030.  
+ 
+The other major source for climate finance initiatives are the Nationally Appropriate Mitigation Acti ons 
+(NAMA) submitted by Mongolia. The NAMAs relevant to this project include increasing renewable 
+options, particularly solar power, as well as switching from coal -based heating to electricity -based 
+heating for individual households. In a 2015 presentation , the Ministry of Energy said “coal can be the 
+main resource to develop energy cooperation for Mongolia nowadays, but in the future, renewables can 
+be a leading one.17  
+ 
+In 2007, the government of Mongolia enacted the Renewable Energy Law to stimulate renewable energy 
+development. It was accompanied by a set of regulatory arrangements with a feed -in-tariff (FIT) for 
+renewable energy to increase its share to 20% by 2020 and  30% by 2030.  Renewable energy 
+deployment has made steady progress. The current share of renewable energy in total capacity is 7.92% 
+(84.15 MW). As the IRENA report says “this new piece of policy aims to transform Mongolia into an 
+energy exporter underpin ned by advanced and environmentally friendly energy technologies that can be 
+adopted on a competitive market regime.” 18 As a result of implementing the proposed  project, 
+Mongolia’s renewables share from the installed capacity  will increase from 7.48% to 8.34%.  
+Source: extracted from the Table C.2.3.  Installed Capacity of Power Sources of Mongolia.   Data is from 
+the Ministry of Energy (March 2017).  
+ 
+E.5.2. Ca pacity of accredited entities and  executing entities to deliver  
+Capacity of accredited entities or  executing entities to deliver  
+In addition to being aligned with the national climate priorities, XacBank is confident of the government’s 
+capacity to support the AE in the implementation of this program. In the past, XacBank has had an 
+                                                             
+17 Ministr y of Energy, 2015, http://www.unescap.org/sites/default/files/Mr.%20Yeren -
+Ulzii%20 -%20Mongolia%20Presentation.pdf   
+ 
+18 IRENA, 2016, http://www.irena.org/DocumentDownloads/Publications/IRENA_RRA_Mongolia_2016.pdf
+
+
+---
+*Page 58*
+---
+
+ 
+EXPECTED PERFORMANCE AGAINST INVESTMENT CRITERIA  
+ GREE N CLIMATE FUND FUNDING PROPOSAL | PAGE 52 OF 74 
+ 
+ 
+ E 
+effective working relationship with the National Designated Authority in both a formal capacity and an 
+informal advisory role.  In addition, the implementations of the FiT regulations have been strengthened in 
+recent years. All solar projects are aligned with the national c limate priorities.  
+ 
+Accredited entity: XacBank  
+The AE is also the Executing Entity of this program. See section C.4 for further information on the 
+capacity of XacBank as the accredited entity to implement this proposed program with respect to the 
+activiti es they it is expected to undertake.  
+E.5.3. Engagement with NDAs, civil society organizations and other relevant stakeholders  
+ 
+XacBank (the AE) has well -established processes for engagement with the relevant stakeholders as well 
+as civil authorities so as to ensure both country and private sector ownership. In addition, XacBank has 
+an established relationship with the local NDA. The AE has worked closely with the NDA as well as other 
+civil authorities, such as the Ulaanbaatar Municipality, on the impleme ntation of previous projects. For 
+this program, government entities have been consulted on both a formal level, as in the case of the No 
+Objection Letters, and on an informal level, as valuable consultative assets. The NDA has been 
+consulted on the develop ment of this funding proposal, contributing valuable country -specific knowledge, 
+and has indicated their support for the project through the signing of a No Objection Letter. Lines of 
+communication between the AE and the NDA will continue to be utilized in  later stages of program 
+development, such as during the composition and fine -tuning of this funding proposal.  
+ 
+In addition to the NDA, the AE recognizes the importance of engaging with local stakeholders in the 
+areas where the projects will be implemented , and will develop a full stakeholder engagement plan in 
+order to address this issue. Further, the AE has been constantly engaged with the project owners in the 
+development of this proposal, through information requests as well as in a consultative capacit y. The 
+project is located in Mongolia, owned by Mongolian companies, and the Executing Entity is also 
+Mongolian, it has a strong country ownership claim.  
+ 
+Moreover, XacBank has utilized the GCF’s gender resources and expertise through consultative 
+meetings  in order to develop a strong Gender Action Plan. Crucial to gender -sensitive stakeholder 
+engagement is the engagement of local CSOs who work on the issues of women’s economic 
+empowerment . 
+E.6. Efficiency and E ffectiveness  
+Economic and, if appropriate, financial soundness of the  project/programme  
+E.6.1. Cost -effectiveness and efficiency  
+The financial structure as mentioned below in Section E.6.2 is necessary due to the financial market 
+conditions of Mongolia, which has been explained in detail in previous sections of this document.  
+With regards to this, without support from the GCF, the program would not have access to concessionary 
+funding (competitive interest rate, longer loan tenure), mainly due to the size of the required investments 
+and the high costs associated with financing renewable energy projects in Mongolia through domestic 
+sources of funding. GCF funding does not crowd out any private or public investments, as a shortage of 
+adequate funding exists in Mongolia. Compared to XacBank’s previous MSME proposal, which 
+calculated the core indicator for the cost per tCO2eq based on it s experience in running an emissions 
+reduction program since 2013 and arrived at total cost per tCO2eq reduced of US$ 50.24, with the GCF 
+portion being US$16.74, this program’s corresponding figures of total cost per tCO2eq reduced of 
+US$5 7.24, with GCF po rtion being US$ 2 8.19 seem to be in -line and reasonable. The difference in the 
+GCF portion comes from the larger amount of non-GCF co-financing in the MSME program (66.7%) as 
+compared to this program ( 51%).
+
+
+---
+*Page 59*
+---
+
+ 
+EXPECTED PERFORMANCE AGAINST INVESTMENT CRITERIA  
+ GREE N CLIMATE FUND FUNDING PROPOSAL | PAGE 53 OF 74 
+ 
+ 
+ E 
+E.6.2. Co -financing, leveraging and mobilized long-term investments  (mitigation only)   
+  
+E.6.3. Financial viability  
+ 
+As the funding received from GCF in the form of senior debt will be structured to be the same length as 
+the PPA’s for each subproject, the project’s financial viability beyond the GCF’s intervention is not a risk 
+for neither XacBank nor the GCF. For the du ration of the PPA (and the senior debt), the projects will 
+generate a steady, reliable income based on the electricity generated and the agreed -upon FiT for each 
+subproject. As such, the financial viability during this period is quite solid.  
+Nominal Pre -tax IRR with the GCF’s support : 15.69 % 
+Without the GCF’s support, due to the high cost, short -tenure nature of the other financing options 
+available domestically, the IRR would be negative, thereby rendering the project unable to be 
+implemented.  
+The debt financing will be on -lent to the client from the GCF through XacBank, and XacBank will be 
+making payments directly to the GCF  for the agreed upon period between the two parties.   As such, 
+GCF’s exit strategy is quite simple, with very low risk.  Further details on the exit strategy can be found in 
+the Exit Strategy section of this proposal.  
+E.6.4. Application of best practices  
+Within the XacBank’s Renewable Energy Program (REP), the first selected technology was solar PVs 
+due to its development potential in Mongolia, reach resource and reduced cost. However, other 
+technologies including wind will be considered and added into Xac Bank’s future REP.  
+ 
+E.6.5. Key efficien cy and effectiveness indicators  
+Source of Funding Amount (US$ mln) %
+Equity 8,906,870                 50.73%
+GCF Senior Debt 8,650,050                 49.27%
+Total project cost 17,556,920               100.00%
+
+
+---
+*Page 60*
+---
+
+ 
+EXPECTED PERFORMANCE AGAINST INVESTMENT CRITERIA  
+ GREE N CLIMATE FUND FUNDING PROPOSAL | PAGE 54 OF 74 
+ 
+ 
+ E 
+GCF 
+core 
+indicat
+ors Estimated cost per t CO 2 eq, defined as total investment cost / expected lifetime emission reductions 
+(mitigation only)  
+ 
+(a) Total project financing  US$ 17.56million  
+(b) Requested GCF amount  US$ 8.65 million  
+(c) Expected lifetime emission reductions overtime  306,745  tCO 2eq 
+(d) Estimated cost per tCO 2eq (d = a / c)  US$ 57.24 / tCO 2eq 
+(e) Estimated GCF cost per tCO 2eq removed (e = b / c)  US$ 28.19 / tCO 2eq 
+ 
+Calculation of the  lifetime emission reductions overtime is described in the section H.1.2 (shown in below 
+table).  
+Table. E.1. 1. Total tons of CO2 equivalent to be avoided or reduced per annum  
+Projects  Net electricity 
+supply (MWh/y)  Grid 
+Emission 
+Factor 
+(tCO2)  Emission 
+reduction per 
+year (tCO2)  Project 
+Lifetime  Total emission 
+reduction 
+(tCO2)  
+SPP             15,395  0.797        12,270  25        306,745  
+ 
+ 
+Describe the detailed methodology used for calculating the indicators (d) and (e) above.  
+Estimated cost per tCO 2eq (d = a / c) is calculated by dividing the total project finance cost by the 
+reduced CO2 emissions. The same applies for GCF cost per tCO 2eq removed (e = b / c) . Calculations 
+are shown in below table.  
+Table.6.5.1. Calculation of  cost per tCO 2eq 
+in US$  Loans requested from GCF*  Project total cost  
+SPP           8,650,050  17,556,920  
+ 
+(a) Total project financing  17,556,920  
+(b) Requested GCF amount        8,650,050   
+(c) Expected lifetime emission reductions overtime  306,745  tCO 2eq 
+(d) Estimated cost per tCO 2eq (d = a / c)  US$57.24  / tCO 2eq 
+(e) Estimated GCF cost per tCO 2eq removed (e = b / c)  US$28.19  / tCO 2eq 
+ 
+Expected volume of finance to be leveraged by the proposed project/programme and as a result of the 
+Fund’s financing,  disaggregated by public and private sources (mitigation only)
+
+
+---
+*Page 61*
+---
+
+ 
+EXPECTED PERFORMANCE AGAINST INVESTMENT CRITERIA  
+ GREE N CLIMATE FUND FUNDING PROPOSAL | PAGE 55 OF 74 
+ 
+ 
+ E 
+Describe the detailed methodology used for calculating the indicators above.  
+Described in Table. E.1. 1. Total tons of CO2 equivalent to be avoided or reduced per annum 
+and Table.6.5.1. Calculation of  cost per tCO 2eq (in above section) .  
+Please describe how the indicator values compare to the appropriate benchmarks established in a 
+comparable context.   
+Compared to XacBank’s previous MSME proposal, which calculated the core indicator for the 
+cost per tCO2eq based on its experience in running an emissions reduction program since 
+2013 and arrived at total cost per tCO2eq reduced of US$ 50.24, with the GCF p ortion being 
+US$16.74, this program’s corresponding  figures of total cost per tCO2eq reduced of US$5 7.24, 
+with GCF portion being US$ 2 8.19 seem to be in -line and reasonable. The difference in the 
+GCF portion comes from the larger amount of co -financing in the MSME program (66.7%) as 
+compared to this program ( 51%). 
+ 
+ 
+ 
+The project’s leverage ratio is 0.97:1 between public and private financing for this proposed 
+program .  
+ 
+Source of Funding Amount (US$ mln) %
+Public 8,650,050                 49.27%
+Private 8,906,870                 50.73%
+Total 17,556,920               100.00%
+
+
+---
+*Page 62*
+---
+
+ 
+APPRAISAL SUMMARY  
+ GREEN  CLIMATE FUND FUNDING PROPOSAL | PAGE 56 OF 74 
+ 
+ 
+ F 
+* The information can be drawn from the project/programme ap praisal document.  
+ 
+F.1. Economic and Financial Analysis  
+Loan disbursement structure  
+From GCF to XacBank  
+Tenure of 10 years, with semi -annual repayments.  
+From XacBank to subprojects:  
+If this proposal is successfully approved by the GCF board, and disbursement is made in a timely fashion, 
+the construction for the SPP will begin immediately .  
+Without access to GCF co -financing, the project would have little chance  of success for many reasons. 
+Mainly, there is a lack of sufficient project financing available domestically, and the available funds 
+certainly do not come with long enough tenures (typically less than 5 years) or the same concessionality 
+required to make these large -scale renewable energy projects a success. These factors have been 
+explained in greater detail in other sections of this proposal, mainly E.6.3, B.2, and D.1.  
+For further details regarding economic and financial justifications, please refer to  the financial model for the 
+subproject as attached in the indexes of this proposal.  
+F.2. Technical Evaluation   
+Within XacBank’s Renewable Energy Program (REP), the first selected technology was solar PVs due to 
+its development potential in Mongolia, reach resource and reduced cost. However, other technologies 
+including wind will be considered and added into the Xac Bank’s REP. The choice of solar panel type would 
+have significant impact on electricity production of the solar power plants.   
+F.3.  Environmental, Social Assessment, including Gender Considerations  
+1. Project Development ESMS  
+The project developer has include d as part of their comprehensive feasibility studies, an environmental and 
+social risk assessment survey, as well as a risk management system. These have been attached in the 
+annex for reference.  
+The Bank will require each project owner to provide an ESIA, approved by the Ministry of Environment and 
+Tourism.  
+2. XacBank Internal Social and Environmental Management System (SEMS)  
+In addition to the assessments conducted by the project developer, XacBank plans to follow its own 
+internal SEMS. This will ensure that the sub-project financed through the program will comply fully with all 
+requirements needed to ensure mitigation of environmental and social risks related to the implementation 
+of these projects. XacBank will also define roles and responsibilit y for designated staff members for the 
+oversight and on -going implementation of our SEMS. As this has been the Bank’s practice since the SEMS 
+was internally adopted in 2002, with revisions made in 2008, 2011, and 2014, all of which had to be 
+approved by Xa cBank’s Board of Directors.  
+XacBank provides annual reports on environmental and social practice to the Mongolian Bankers 
+Association (as part of the Sustainable Finance Initiative), EBRD, FMO (Netherlands), MEF and GMF 
+(Luxembourg), Global Climate Partne rship Fund (Luxembourg), DEG (Germany), OeEB (Austria), 
+Proparco (France), in conformity with the respective credit agreements and the Shareholders’ Agreement. 
+Reporting to the GCF will be based on the results of this monitoring.
+
+
+---
+*Page 63*
+---
+
+ 
+APPRAISAL SUMMARY  
+ GREEN  CLIMATE FUND FUNDING PROPOSAL | PAGE 57 OF 74 
+ 
+ 
+ F 
+Environmental and Social Responsibility Risk Evaluation  
+Risk evaluations are carried out for all Bank loans that are more than MNT 50,000,000 (approximately 
+US$25,000) and have tenors more than 12 months, based on a comprehensive scorecard, including 
+sections on environmental issu es, social and labor issues, and compliance issues. Each risk category is 
+rated from 6 to 1, with 6 being the least risk and 1 being the highest. The Bank is determined to 
+demonstrate the utility of its SEMS to its stakeholders, including clients, and clos ely monitors the 
+environmental performance of these borrowers and actively manages any instances of non -compliance to 
+rectify such situations.  
+When evaluating the environmental and social risks associated with a sub -project, the Bank will consider a 
+wide variety of factors, including , but not limited to, the following:  
+1. Nature of the sub -borrower’s business (e.g. micro, small, or medium -sized business sector).  
+2. Does the sub -borrower have any particular current exposures that represent high environmental 
+and social risks?  
+3. Does the sub -borrower have appropriate waste management solutions?  
+4. Does the sub -borrower have any water pollution management?  
+5. Does the sub -borrower’s activities cause any damage or contamination to the local soil or 
+cause excessive dust?  
+6. Does  the sub -borrower’s activity cause any undue air pollution?  
+Also taken into consideration are the sub -borrower’s employee work place safety, health and hygiene 
+practices and whether or not they cause any adverse effect to the local areas and community. 
+Furthermore, all sub -projects financed by the Bank must comply with the Bank’s SEMS List of Excluded 
+Activities and Mongolia’s national environmental, health, safety and labor regulations and standards.  
+Monitoring  
+The project developer will be required by the  Bank to submit environmental and social reports on an 
+annual basis according to the format provided by the Bank. The format will integrate the Environmental and 
+Social Responsibility Risk Evaluation, which is a comprehensive assessment comprising environm ental, 
+social, labor, and compliance issues. The Bank reserves the right to conduct site visits to financed sub -
+projects to monitor the implementation of the Bank’s requirements as necessary.  
+3. Gender Considerations  
+The project will aim to promote gender  equality in the implementation of the program. XacBank has 
+prepared an overall Gender Action Plan, which includes specific activities, expected outputs, outcomes 
+and impacts as well as monitoring indicators. Resources will be allocated to integrate these into the 
+implementation of the program. Further details regarding gender considerations can be found in the 
+Gender Action Plan attached in the annex 6 of this document..  
+F.4.  Financial Management and Procurement
+
+
+---
+*Page 64*
+---
+
+ 
+APPRAISAL SUMMARY  
+ GREEN  CLIMATE FUND FUNDING PROPOSAL | PAGE 58 OF 74 
+ 
+ 
+ F 
+XacBank has implemented a robust Financial Data Management System with world -class certified data -
+secure IT infrastructure. The Bank uses a fully updated version of the FlexCube software developed by 
+Oracle as the Financial Information System.  All reports  produced by FlexCube are then run through an 
+internally developed system called XacBanker, which translates reports and distributes them to the correct 
+departments at the correct intervals. These systems will be used to facilitate the financial management  and 
+reporting of the program. All reporting is done in accordance with International Financial Reporting 
+Standards. The bank is fully audited by internationally recognized auditing firms such as Deloitte and Ernst 
+& Young, in accordance with International  Standards on Auditing.  
+Financial management of the program will be guided by XacBank’s accounting policies and procedures, as 
+well as by procedures related to the financial and operational aspects of project management administration. 
+The Bank will requi re the subproject owners to submit annual audited financial statements within six months 
+of their fiscal yearend. Details regarding the Bank’s financial and operational aspects can be found within 
+the Funding Management Strategy (available in English), as attached in annex 7 of this proposal.  
+GCF funds will be registered following XacBank’s “chart of accounts” under the relevant “GL” (General 
+Ledger) account, which will be opened specifically for GCF –related activities; separate from the Bank’s 
+other sources of funding.   
+XacBank will be the E xecuting Entity of this program. Therefore, t he disbursement will be conducted in 
+accordance with the Credit Risk Management Policy (CRMP); the General Procedure on Loan Operations, 
+the Loan Operations Guideline, the Procedure on Business Loans, and the Gu idelines on 
+Appraisal/Assessment and Monitoring of Business Loans, and all other relevant credit activity guidelines 
+and procedures. These procedures also defined the monitoring methods on loan disbursement and credit 
+monitoring.     
+XacBank has the capacit y to implement variable frequencies of reporting to ensure with the utmost 
+transparency that the funds are being used effectively and appropriately.  
+Financial reporting on the GCF will be provided on a semi -annual basis, as is standard, covering the period  
+of January to December (inclusive). If more frequent financial reporting is required, this will be subject to 
+negotiations at the time of the signing of the relevant funding agreement.  
+XacBank has an Internal Audit Division. Its mission is to add value th rough an independent appraisal of all 
+of XacBank’s operations and activities and governance. The result of such appraisal is improved 
+operational efficiency, risk analysis and management, and internal control systems so as to aid XacBank in 
+achieving its c orporate objectives.   As is stated in XacBank’s Audit Division Charter, the division operates 
+under the principles of “integrity, objectivity and confidentiality.”  
+ 
+Beyond the Internal Audit functions, the regular and on -demand monitoring function also se rves as an 
+Internal Control check at both the branch and headquarters level.  
+ 
+XacBank will use its own procurement policies for operations that receive financing from this program. 
+However, the initial funding from GCF is a facility for lending purposes. T herefore, borrowers’ procurement 
+of the borrowed fund will be regulated by appropriate loan policies and guidelines.  XacBank’s policies on 
+such matters require that funds from XacBank loans be used only for procurement of activities specifically 
+contracte d with borrowers. Furthermore, the AE will require and ensure that its procurement policies and 
+procedures will be applied by the sub -projects of the program.
+
+
+---
+*Page 65*
+---
+
+ 
+RISK ASSESSMENT AND MANAGEMENT  
+ GREE N CLIMATE FUND FUNDING PROPOSAL  | PAGE 59 OF 74 
+ 
+ G 
+ 
+G.2. Risk Factors and Mitigation Measures  
+ 
+Selected Risk Factor 1 -  Operational and maintenance risk  
+Description  Risk category  Level of impact  Probability of risk 
+occurring  
+Operational and maintenance risk  – 
+risk of mismanagement of the PV plant’s 
+operations  Technical and 
+operational  Medium (5.1-20% 
+of project value)  Medium  
+ Mitigation Measure(s)  
+ 
+There is a scarcity of expertise in this field in Mongolia at the moment, with only one similar project in 
+operation ( in December, 2016). As such, the project owner will need to assure that all relevant staff are 
+properly trained and are ready to handle the day -to-day operational and management aspects of the solar 
+power plant.  
+Selected Risk Factor 2 - Political and Regulatory risks  
+Description  Risk category  Level of impact  Probability of risk 
+occurring  
+Lower than expected electricity prices in 
+the long -run. 
+ Financial  Low (<5% of 
+project value)  Medium  
+Mitigation Measure(s)  
+The profitability and stability of  the project relies highly on the electricity price sold to the central grid via 
+the power purchasing agreement (PPA).  
+ G.1.  Risk Assessment Summary  
+Please provide a summary of main risk factors. Detailed description of risk factors and mitigation measures can be 
+elaborated in G .2. 
+1. Operational and maintenance risk – risk of mismanagement of the PV plant’s operations  
+2. Political and Regulatory risks - Lower than expected electricity prices in the long -run. 
+3. Lack of ability to pay from Government for FiT - risk of not being able to claim the full payments of the 
+feed-in tariff (FiT) over the lifetime of th e power purchasing agreement (PPA).  
+4. Currency risk - FiTs set in USD  may pose financial pressure for the government  
+5. Construction Risk – risk of having schedule delays and/or costs overruns in the construction of the 
+PV plant  
+6. Environmental and social risks around the Project  
+7. Lower than expected electricity output/technology risk  
+8. Safety  
+9. Curtailment of renewable energy  
+10. Delayed disbursement of funds  
+ 
+The above risks are further described in section G.2 below.
+
+
+---
+*Page 66*
+---
+
+ 
+RISK ASSESSMENT AND MANAGEMENT  
+ GREE N CLIMATE FUND FUNDING PROPOSAL  | PAGE 60 OF 74 
+ 
+ G 
+The project owner has negotiated PPAs with tenure of 10 years, with a fixed feed -in tariff for the duration 
+of the PPA. As the loan to t he sub -borrower will also be tenured at 10 years, the risk is mitigated 
+sufficiently.  
+Selected Risk Factor 3 - PPA and FIT risks   
+Description  Risk category  Level of impact  Probability of risk 
+occurring  
+FIT risks  - risk of not being able to claim 
+the full payments of the feed -in tariff 
+(FiT) over the lifetime of the power 
+purchasing agreement (PPA).  Financial  Medium (5.1 -20% 
+of project value)  Medium  
+Mitigation Measure(s)  
+Renewable energy (RE) projects are to be compensated for the electricity produced and sold back to the 
+grid according to the agreed upon FiT and time period (minimum 10 years) in the PPA. The compensation 
+is drawn down from a renewable energy fund which is  specially designated to reimburse costs associated 
+with RE projects, mainly the FiT payment. The 50MW Salkhit wind farm ha d some challenges in receiving  
+full compensation according to the signed PPA during the early stage of operation as it was the first case . 
+However, payment issues have been resolved now.  As more and more RE projects come online, it may 
+be the case that the fund does not have enough funds to be able to compensate all projects fully for the 
+minimum of 10 years. This risk has been mitigated by the fact that currently, there is already a built -in cost 
+of MNT 3.95 per kWh of electricity used in Mongolia, payable by all users of power in the country. The 
+moneys collected through this cost (not additional cost, already baked into the electricity prices) are 
+pooled into the designated FiT fund.  
+Selected Risk Factor 4  - Currency risk  
+Description  Risk category  Level of impact  Probability of risk 
+occurring  
+Currency risk - FiTs set in USD may 
+pose financial pressure for the 
+government  
+ Financial  Medium (5.1 -20% 
+of project value)  Low 
+Mitigation Measure(s)  
+The law makes FiTs payable in MNT (calculated on the exchange rate of the central bank on the day of 
+the payment) which greatly encourages foreign investors . However, this effectively passes the currency 
+exchange risk onto the government. When the Mongolian currency depreciates, as it has done 
+dramatically against the US dollar in recent years, the government comes under financial pressure. 
+However, the currency risk for both the borrower and the Bank are mitigated greatly by the fact that the 
+FiT are pegged to the USD FX rate .  
+ 
+Selected Risk Factor 5  - Construction risk  
+Description  Risk category  Level of impact  Probability of risk 
+occurring  
+ 
+Construction Risk – risk of having 
+schedule delays and/or costs overruns 
+in the construction of the PV plant  
+ Technical and 
+operational  Low (<5% of 
+project value)  Low 
+Mitigation Measure(s)
+
+
+---
+*Page 67*
+---
+
+ 
+RISK ASSESSMENT AND MANAGEMENT  
+ GREE N CLIMATE FUND FUNDING PROPOSAL  | PAGE 61 OF 74 
+ 
+ G 
+Based on the example of an almost identical project in Darkhan, which was the first Mongolian large scale 
+(10MW) solar power plant, which became operational in  December 2016, there is minimal risk of any 
+construction delay. Darkhan project’s construction to full operationality was completed in 4 months (from 
+July 2016 to November 2016). These risks can be mitigated and managed through regular monitoring of 
+the p roject ’s pro gress, to ensure that they are moving forward according to the detailed implementation 
+schedule and project schedule established prior to the start of construction. The construction of the solar 
+power plant is planned to be finish construction within 3 -4 months before the start of the winter seasons. 
+Should the construction be unable to finish before this time period, the construction will be postponed to 
+resume in early spring. The EPC contractor will be respo nsible for the timely construction of the solar 
+power plants and will cover any additional costs related to the construction of the SPP.  
+ 
+Selected Risk Factor 6   
+Description  Risk category  Level of impact  Probability of risk 
+occurring  
+ 
+Environmental and social risks 
+around the Project  
+ Social and 
+environmental  Low (<5% of 
+project value)  Low 
+Mitigation Measure(s)  
+Before disbursement loans, XacBank will require each project owner to submit an ESIA that is fully 
+approved by the Ministry of Environment and Tourism.  
+The project has a social and environmental risk assessment conducted during the feasibility study stages. 
+The Bank will also apply its standard SEMS (Social and Environmental Management System) to the 
+project, which does a comprehe nsive assessment of its ESS (environmental and social safeguards) 
+implications, while engaging all relevant stakeholders, including the local community that will be most 
+affected by the project. The Bank does not finance any projects that have higher than a medium -level 
+ESS impact, and in such cases, the Bank requires that the project owner take the necessary steps 
+towards remedying the issues that cause any negative impacts on the local environment and community. 
+Solar power plants in general do not pose a ny significant level environmental or social impacts.  
+ 
+Selected Risk Factor 7  
+Description  Risk category  Level of impact  Probability of risk 
+occurring  
+ 
+Lower than expected electricity 
+output/technology risk - Plant doesn’t 
+match the expected electrical output, 
+either due to lower than expected 
+performance of panels, technical 
+problems with the plant (outages, 
+breakdowns, etc.), adverse weather 
+conditions (rain/snow/sand/dust storms), 
+or solar radiation risk  
+ Technical and 
+operational  Medium (5.1 -20% 
+of project value)  Low 
+Mitigation Measure(s)  
+These factors have been taken into consideration during the feasibility study stage, and have been 
+accounted for. The equipment is studied to be suitable to the local weather conditions (verify this), the
+
+
+---
+*Page 68*
+---
+
+ 
+RISK ASSESSMENT AND MANAGEMENT  
+ GREE N CLIMATE FUND FUNDING PROPOSAL  | PAGE 62 OF 74 
+ 
+ G 
+necessary precautions will be taken to take care of the equipment during its lifetime. Also, the positioning 
+and angling of the panels have been studied extensively to select optimal positioning. Solar PV is more 
+predictable; thus, easier to dispatch compa red to other renewable energy sources such as wind. In 
+addition, as income generation for the projects are mainly dependent on the electricity produced, this is an 
+important factor to consider. To further mitigate this risk, the subproject will be required  to establish a 
+designated ‘debt reserve account’ at the Bank, which will be controlled by XacBank .  
+Selected Risk Factor 8  
+Description  Risk category  Level of impact  Probability of risk 
+occurring  
+Safety  Social and 
+environmentalSocial 
+and 
+environmentalSocial 
+and environmental  Low (<5% of 
+project value)Low 
+(<5% of project 
+value)Low (<5% 
+of project value)  LowLowLow  
+Mitigation Measure(s)  
+Health and safety risk of local people accessing the site and potentially dangerous areas within th e site. 
+Good communication and public awareness via a community liaison officer. Clear identification of and 
+enforcement of safety/exclusion zones. Under EPC contract, international and best industry practice 
+safety and environmental issues will be followe d.  
+Selected Risk Factor 9  
+Description  Risk category  Level of impact  Probability of risk 
+occurring  
+Curtailment of renewable energy  Technical and 
+operational  Low (<5% of 
+project value)  Low 
+Mitigation Measure(s)  
+RE generation capacity has the lowest marginal cost and should therefore always be dispatched before 
+thermal plant. CHP4 is, de facto, acting as the load following generator in the system. However, it has had 
+no formally/contractually designated responsibility to do so, and no financial  incentives to carry out this 
+function.  
+ 
+Compared to wind energy which occurs during night time, solar plants have less risk for curtailment as 
+energy production occurs during peak demand hours.  
+ 
+Selected Risk Factor 10  
+Description  Risk category  Level of impact  Probability of risk 
+occurring  
+Financial Risk - Delayed disbursement 
+of funds  Financial  High (>20% of 
+project value)  Medium  
+Mitigation Measure(s)  
+The project is relying on the GCF’s funding coming through in November , 2017. If the proposal  is 
+approved during B1 8, then XacBank would request that all the relevant agreements (FAA) and 
+disbursements be made in a timely manner. Although the construction season does not begin until April, 
+the project owners would still need to begin procurement o f supplies and conduct pre -ground breaking 
+construction activities prior to that. If the disbursement of funds should take  6 months as it did for 
+XacBank’s previously  approved GCF program (which was approved in December, 2016), then it would be 
+a major roa dblock for the successful implementation of the subproject.
+
+
+---
+*Page 69*
+---
+
+ 
+RISK ASSESSMENT AND MANAGEMENT  
+ GREE N CLIMATE FUND FUNDING PROPOSAL  | PAGE 63 OF 74 
+ 
+ G 
+Other Potential Risks on the Horizon  
+* Please expand this sub -section when needed to address all potential material and relevant risks.
+
+
+---
+*Page 70*
+---
+
+ 
+RESULTS MONITORING AND REPORTING  
+ GREE N CLIMATE FUND FUNDING PROPOSAL | PAGE 64 OF 74 
+ 
+ 
+ H 
+H.1. Logic Framework .   
+Please specify the logic framework in accordance with the GCF’s Performance Measurement Framework  under 
+the Results Management F ramework . 
+ 
+H.1.1. Paradigm Shift Objectives and Impacts at the Fund level19 
+Paradigm shift objectives  
+Shift to low -emission 
+sustainable development 
+pathwaysShift to low -
+emission sustainable 
+development 
+pathwaysShift to low -
+emission sustainable 
+development  pathways  - The proposal  involves a “shovel ready,” private sector -led, solar power plant , 
+which  will result a long term, readily quantifiable, significant and cost -effective CO2 
+emission  savings.  
+- If supported by risk -taking and patient capital, the pr oject has the potential to 
+demonstrate the ability of sound renewable energy projects to be bankable and 
+effective, and promote the shift of a coal -based energy system with enormous 
+renewable energy potential (estimated at 2.6 terawatts) to a renewables sy stem  
+- Project would assist and support the government of Mongolia’s ambitious 
+commitment to  generate 30% of electrical power from renewable energy sources 
+by 2030, despite the  challenging financial and commodity markets impacting 
+Mongolia’s economy.  
+- Following GCF financing, local financial institutions will feel safer to increase their  
+exposure to large -scale renewables, thus help increase Mongolia’s renewable 
+generation  capacity (and associated CO2 displacement).  
+- Grant funding will allow for the addi tion of project financing experts and technical 
+training to staffs and make XacBank the first Mongolian financial institutions with 
+specialized staff dedicated for the implementation and management of renewable 
+energy projects  
+Expected Result  Indicator  Means of 
+Verification 
+(MoV)  Baseli
+ne Target  
+Assumptions  Mid-term  
+(if applicable)  Final  
+Fund -level impacts  
+M1.0 Reduced 
+emissions through 
+increased low -emission 
+energy access and 
+power generationM1.0 
+Reduced emissions 
+through increased low -
+emission  energy access 
+and power 
+generationM1.0 
+Reduced emissions 
+through increased low -
+emission energy access 
+and power generation  Tonnes of carbon  
+dioxide equivalent  
+(t CO2eq) reduced  
+(core indicator)  
+  
+Annual CO2  
+performance  
+monitoring  
+reporting  
+and 
+validation  
+ 
+ 0 153,372 
+tCO2  306,7
+45  
+tCO2  CO2 emission 
+reduction was 
+based on the most 
+conservative 
+calculations and 
+data using 
+international default 
+values. Therefore, 
+CO2 emission 
+reduction can be 
+increased if local 
+data will be 
+available.  
+ 
+ 
+                                                             
+19 Information on the Fund’s expected results and indicators can be found in its Pe rformance Measurement Frameworks 
+available at the following link (Please note that some indicators are under refinement) : 
+http://www.gcfund.org/fileadmin/0 0_customer/documents/Operations/5.3_Initial_PMF.pdf
+
+
+---
+*Page 71*
+---
+
+ 
+RESULTS MONITORING AND REPORTING  
+ GREE N CLIMATE FUND FUNDING PROPOSAL | PAGE 65 OF 74 
+ 
+ 
+ H 
+H.1.2. Outcomes, Outputs, Activities and Inputs at Project/Programme level  
+Expected Result  Indicator  Means of 
+Verification 
+(MoV)  Baseline  Target  
+Assumptions  Mid-term 
+(if applicable)   Final  
+Programme -wide  
+outcomes  Outcomes that contribute to Fund -level impacts  
+M6.0 Increased 
+number of small, 
+medium and 
+large low -
+emission power 
+suppliers  MWs of  
+Low emission  
+energy  
+capacity installed,  
+generated and/or  
+rehabilitated as a  
+result of GCF  
+support:   
+Commissio
+ned and 
+project 
+completion 
+certificates  
+ 0 n/a 10MW  GCF financing 
+approved, 
+projects 
+successfully 
+implemented  
+Grant outputs  Outputs that contribute to outcomes  
+1.Strengthen 
+analytical 
+capabilities  Number of experienced 
+project finance 
+professionals on -
+boarded  Project 
+financing 
+staff CVs to 
+be 
+submitted  0 1 1 Assuming such 
+experts are available 
+for hire and willing to 
+work in Mongolia. 
+Note: mid term in this 
+case is program mid -
+term i.e. 5th year  
+2.Strengthen 
+internal 
+capabilities  Number of staff to 
+develop project finance 
+and large scale 
+renewable energy 
+related trainings  Training 
+completion 
+certification
+s 0 30 30 Trainings to be 
+divided amongst staff 
+as relevant, 
+conducted for first 3 
+years. Assuming 
+interested partner 
+institutions can be 
+found for internship 
+and suitable training 
+programs are able to 
+accommodate 
+XacBank  
+3. Training and 
+awareness 
+raising of clients  Project 
+developers/clients 
+trained  Attendance 
+list, photos  0 800 800 200 attendees per 
+event , event 
+organized annually 
+for 4 years. 
+Assuming an interest 
+of project developers 
+and a growing 
+number of potential 
+projects for REP
+
+
+---
+*Page 72*
+---
+
+ 
+RESULTS MONITORING AND REPORTING  
+ GREE N CLIMATE FUND FUNDING PROPOSAL | PAGE 66 OF 74 
+ 
+ 
+ H 
+4.Supporting 
+risk, audit, legal 
+needs  Third party risk opinion 
+and/or audit and/or 
+engineer consultants 
+engaged  ToRs, 
+opinion 
+documents  0 n/a n/a No targets have been 
+set, these services 
+would be contracted 
+as they arise. 
+Assuming such 
+services will be 
+selectively needed 
+during the project 
+lifetime  
+Project -basis 
+outputs  Outputs that contribute to outcomes  
+1.GoM -related 
+documentation: 
+licenses, tariff 
+agreements  
+ Number of licenses 
+received  Document  
+adverts and  
+outreach   
+1 1  
+1 
+ Assuming 
+successful  
+lease, 
+agreement  
+and construction  
+negotiations 
+between project 
+developers and 
+relevant 
+authorities  
+Tariff/power purchasing 
+agreements signed  Document  
+adverts and  
+outreach   
+1 1  
+1 
+ Assuming 
+successful  
+lease, 
+agreement  
+and construction 
+negotiations 
+between project 
+developers and 
+relevant  
+authorities  
+Dispatch agreements 
+signed   Document  
+adverts and  
+outreach   0 
+(grant
+ed 
+after 
+opera
+tion) 1  
+1 
+ Assuming 
+successful  
+lease, 
+agreement  
+and construction 
+negotiations 
+between project 
+developers and 
+relevant 
+authorities  
+Stakeholder agreements  Document  
+adverts and  
+outreach   0 1  
+1 
+ Assuming 
+successful  
+lease, 
+agreement  
+and construction 
+negotiations
+
+
+---
+*Page 73*
+---
+
+ 
+RESULTS MONITORING AND REPORTING  
+ GREE N CLIMATE FUND FUNDING PROPOSAL | PAGE 67 OF 74 
+ 
+ 
+ H 
+between project 
+developers and 
+relevant 
+authorities  
+2. Construction 
+of plants  Number of plants 
+constructed in compliant 
+fashion  Site visit  
+0 1 1 Assuming 
+successful 
+import of 
+products, lack of 
+defect, standard 
+weather allowing 
+for installation  
+3. Technical 
+Commission 
+review  Number of authorized 
+agreements received  Document  
+adverts and  
+outreach  
+0 1 1 Assuming review 
+conducted by 
+commission in 
+timely manner, 
+review criteria 
+consistent.  
+4. Final 
+documentation 
+received  Sites fit for operation 
+based on final 
+documentation  Document 
+copies 
+provided  
+0 1 1 Assuming 
+cooperation of 
+relevant 
+government and 
+municipal 
+entities, and 
+favorable review 
+of site  
+5. Site enters 
+operation  Number of sites feeding 
+energy into the grid  Purchase of 
+energy bills  0 1 1 Assuming 
+standard 
+weather 
+conditions  
+6. Developed 
+capacity  Number of 
+people/institutions 
+trained  (NB: this is 
+different from grant 
+activities as it relates to 
+the technical capacities 
+of the implementing 
+actors, e.g. construction 
+staff, engineers, etc., 
+rather than of XacBank)  MOUs, list  
+of trained  
+participants  
+0 250 265 Assuming 
+participation by  
+academic and  
+other partners,  
+and employee 
+interest in 
+training  
+7.Completed 
+gender  
+Mainstreaming  Number of gender 
+mainstreaming plans 
+designed and 
+implemented  Policy  
+developed,  
+and report  
+on liaison  
+with relevant  
+stakeholders  0 1 1 Assuming 
+cooperation of 
+GCF experts, 
+and project 
+developer
+
+
+---
+*Page 74*
+---
+
+ 
+RESULTS MONITORING AND REPORTING  
+ GREE N CLIMATE FUND FUNDING PROPOSAL | PAGE 68 OF 74 
+ 
+ 
+ H 
+commitment to 
+the effort  
+8.Transmission 
+line for grid 
+connection built  
+ km of transmission line  Project  
+completion,  
+power sales  
+ 
+0  2.2 km 
+ Assuming 
+successful  
+construction  in 
+standard 
+weather 
+conditions and 
+cooperation of 
+municipal 
+authorities  
+9. Power 
+generation  
+delivered to grid  Annual GW Power 
+delivered  Metering,  
+power sale  
+0  15.3 
+GWh/year  Assuming 
+construction 
+completed by 
+projected date, 
+smooth grid 
+transfer  
+Programme -
+wide Activities  Description  Inputs  Description  
+1.1.  Loan assessment and preparation of 
+loan proposal (conducted by Corporate 
+Banking Division)  1.1.1  Submission of information 
+from external partners; 
+internal data analytics and 
+proposal production  
+1.2.  Credit risk assessment and providing 
+independent credit risk opinion 
+(conducted by Credit Department)  
+ 1.2.1  Evaluation of proposal by 
+relevant internal departments 
+against internal standards 
+and risk capacity  
+1.3.  Credit Committee approval  subsequent 
+to cre dit committee project presentation 
+(Committee comprised of bank 
+leadership)  1.3.1  Presentation at credit 
+committee meeting; internal 
+discussion amongst credit 
+committee members  
+1.4.  Submit RSF application to (conducted 
+by Corporate Banking Division)  1.4.1  Make loan appraisal and 
+proposals in RSF templates, 
+translate to English  
+2.1 FP assessed by GCF  Board in October , 
+2017  2.1.1  GCF advice during drafting 
+process;  
+2.2.   GCF Board approval  2.2.1  Board meeting  
+2.3. RSF approval  2.3.1  RSF committee meeting  
+2.4.   
+ Conclusion of FAA and disbursement of 
+funds to XacBank  2.4.1 Legal inputs from relevant 
+parties; final agreement of 
+XacBank leadership  
+3.1.  Conclusion of the Sub -Loan agreement 
+(conducted by Corporate Banking 3.1.1  Input of Corporate Banking 
+division and Credit 
+Administration department in
+
+
+---
+*Page 75*
+---
+
+ 
+RESULTS MONITORING AND REPORTING  
+ GREE N CLIMATE FUND FUNDING PROPOSAL | PAGE 69 OF 74 
+ 
+ 
+ H 
+division and Credit Administration 
+department)  cooperation with project 
+developer to reach 
+agreement ; Finalize loan 
+agreements with any 
+conditions required by 
+XacBank’s Credit Committee, 
+loan contract to be ma de 
+according to RSF contract 
+templates.  
+3.2.  
+ Disbursement of the loan to sub -
+borrower in the proportions outlined in 
+the model  3.2.1  Based on Credit Committee 
+resolution and Sub -loan 
+agreement, disbursement will 
+be made partially  
+4.1.  
+ Credit monitoring by Corporate Banking 
+division , in accordance with department 
+policies and procedures  4.1.1  Reports from project 
+developer, financial 
+statements  
+4.2.  
+ Emission reduction monitoring by Eco 
+Banking department  4.2.1  Reports from project 
+developer,  relevant 
+documentation, site visit  
+5.1  Produce Interim Evaluation report  5.1.1  Monitoring and evaluation 
+data 
+6.1  Produce Completion reports  in 
+accordance with GCF standards  6.1.1  Monitoring and evaluation 
+data; project closure 
+information  
+7.1  Produce Final Evaluation report  in 
+accordance with GCF standards  7.1.1  Monitoring and evaluation 
+data; program closure 
+information  
+Grant activities  Description  (for further quantifiable 
+activity targets,  see the attached grant 
+budget)  Inputs  Description  
+1.1  
+Announce PF lead and PF analyst jobs, 
+receive applications  1.1.1 Design job terms, engage HR 
+department, international 
+development bank alumni 
+network  
+1.2  
+Select one international  senior PF 
+specialist    
+   1.2.1 Multiple -stage interview 
+process with  candidate 
+selected based on XacBank 
+priority needs with regard to 
+implementation of the GCF 
+project  
+1.3 Brief, update, train PF specialist  in 
+accordance with XacBank onboarding 
+training policy  1.3.1 HR department, Eco Banking 
+department, Corporate 
+depart ment all to be engaged  
+1.4 PF specialist  to lead internal trainings, 
+as inclusive in their contract  1.4.1  Eco Banking department, 
+Corporate department, HR
+
+
+---
+*Page 76*
+---
+
+ 
+RESULTS MONITORING AND REPORTING  
+ GREE N CLIMATE FUND FUNDING PROPOSAL | PAGE 70 OF 74 
+ 
+ 
+ H 
+ 
+  department, and other staff 
+who would benefit from such 
+training all to be engaged  
+2.1 XacBank staff to complete week -long 
+secondment  at best practices 
+institutions .  2.1.1 Recommendations taken 
+from GCF, week -long 
+engagements in relevant 
+departments for skill 
+acquisition and best practices 
+learning  
+2.2 XacBank staff to receive 
+training/develop capacities on PF 
+modeling, designing and assessing   2.2.1  International training, 
+corporate team to be primary 
+beneficiaries  
+2.3 XacBank staff to receive 
+training/develop capacities on l egal 
+implementation of PFs   2.3.1  International training, legal 
+team to be primary 
+beneficiaries  
+2.4 XacBank staff to receive 
+training/develop capacities on 
+measuring and monitoring of the PFs   2.4.1  International training  
+2.5 XacBank staff to receive 
+training/develop capacities on risk 
+analysis    2.5.1  International training , Eco 
+Banking and Risk department 
+to be engaged  
+2.6 Attending to  workshops, forum and 
+conferences to learn and share best 
+practices  2.6.1  Domestic, stimulate 
+knowledge sharing and 
+industry development from 
+grant activities  
+3.1 General awareness raising to stimulate 
+future clients for REP program  (est. 200 
+guests reached annually)  3.1.1  Marketing, 
+NGOs/associations with 
+relevant networks, event 
+spaces, outside trainers  
+4.1 Third party risk opinion; Independent 
+social and environmental audit; 
+independent engineer who will be 
+responsible for technical monitoring and 
+issue the certificate of completion  4.1.1 Contracted as needed  from 
+relevant experts  
+4.2 Develop PF agreements; drafting of 
+legal documen ts related to PF  4.2.1  Contracted as needed from 
+relevant experts  
+H.2.  Arrangements for Monitoring, Reporting and Evaluation  
+Monitoring, Reporting and Evaluation  
+ 
+The project developer will be in charge of the Monitoring and Reporting  of the SPP.  XacBank will provide the 
+developer  with Monitoring and Reporting plans and relevant templates based on the JCM methodology, and 
+they in turn  will provide XacBank with reports based on the agreed upon intervals for the project.
+
+
+---
+*Page 77*
+---
+
+ 
+RESULTS MONITORING AND REPORTING  
+ GREE N CLIMATE FUND FUNDING PROPOSAL | PAGE 71 OF 74 
+ 
+ 
+ H 
+ Once the project will be op erational, the developers  shall monitor the SPP’s electricity generation and supply 
+to the grid on daily, monthly and annual basis, and develop the Monitoring Report  for the first year of 
+operation . The Monitoring Report will be evaluated  by an independent  party hired by XacBank , and will 
+provide XacBank with an evaluation report . The Evaluation  Report will verify both the electricity supply to the 
+grid and emission reduction from the SPP.  
+  
+Monitoring, reporting, and evaluation arrangements shall comply with the relevant GCF policies as appointed 
+in the MAF, AMA  and other relevant documents .  XacBank will report to the GCF on a periodic basis as 
+agreed with the GCF, on the status of GCF funded activities throughout the relevant reporting period  as 
+specifi ed in the following table . These reports will include the disbursements made during the relevant 
+period, the implementation status of the sub -project and the monitoring of results and impacts of the sub-
+project.  
+Table H 2.1. Reporting  milestones from XacB ank to GCF  
+Milestones/Reports  Expected Dates  
+Start of Implementation  upon effectiveness of the FAA  
+Annual Performance 
+Report including the  
+Monitoring Report  On annual basis  for the period ending on 31 December within sixty 
+(60) days after the end of the relevant annual period, with the first 
+APR required to be submitted following the end of the calendar year 
+after the Parties have entered into the relevant FAA, and the last 
+APR required to be submitted within six (6) months of the end of the 
+relevant Reporting Period  (unless otherwise specified in the FAA ). 
+Annual Monitoring Report and Verification Report will be submitted 
+with the APR.  
+Interim Evaluation report  Five years after the effectiveness of the FAA  
+Completion report  1 month after the end of the full loan repayment  
+Final Evaluation report  2 months after the end of the Tenor  
+ 
+PLEASE PROVIDE METHOD OLOGIES FOR MONITORI NG AND REPORTING OF THE KEY OUTCOMES OF THE 
+PROJECT /PROGRAMME . 
+Methodologies to be used for monitoring and reporting of the key outcomes of the solar PV projects will be 
+similar to the existing methodologies used in the 10 MW Darkhan solar PV which made all of its 
+methodologies and templates publicl y available on the following website; therefore all of the forms are 
+readily available:  
+https://www.jcm.go.jp/mn -jp/projects/22
+
+
+---
+*Page 78*
+---
+
+ANNEXE S 
+GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 72 OF 74 I 
+* Please note that a funding proposal will be considered complete only upon receipt of all the applicable
+supporting  documents.  I. Supporting Documents  for Funding Proposal  
+☒ NDA No -objection Letter  
+☒ Feasibility Study  
+☒ Integrated Financial Model that provides sensitivity analysis of critical elements (xls format , if 
+applicable ) 
+☒ Confirmation letter or letter of commitment for co -financing commitment  (If applicable)  
+☒ Project/Programme Confirmation /Term Sheet  (including cost/budget breakdown, disbursement 
+schedule, etc.) – see the Accreditation Master Agreement , Annex I  
+☒ Environmental and  Social Impact Assessment (ESIA)  or Environmental and Social Management Plan  
+(If applicable)  
+☒ Appraisal Report or Due Diligence Report with recommendations  (If applicable)  
+☐ Evaluation Report  of the baseline project  (If applicable)  
+☒ Map indicating the location of the project/programme  
+☒ Timetable of project/programme implementation
+
+
+---
+*Page 79*
+---
+
+ANNEXES 
+GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 73 OF 74 I 
+Annex 10: NDA No Objection Letter
+
+
+---
+*Page 80*
+---
+
+Page 74 
+Env ironmental and social report (s) disclosure  
+Basic project/programme information  
+Project/programme title  Renewable Energy Program #1 - Solar  
+Accredited entity  XacBank  LLC 
+Environmental and social 
+safeguards (ESS) category  Intermediation 2 (I2)  
+Environmental and Social Impact Assessment  (ESIA)  (if applicable)  
+Date of disclosure on 
+accredited entity’s website  Not Applicable  
+Environmental and Social Management Plan  (ESMP)  (if applicable)  
+Date of disclosure on 
+accredited entity’s website  Not Applicable  
+Resettlement Action Plan (RAP) (if applicable)  
+Date of disclosure on 
+accredited entity’s website  Not Applicable  
+Any other relevant ESS reports and/or disclosures (if applicable)  
+Description of 
+report/disclosure  Environmental and Social Management System (ESMS)  
+Date of disclosure on 
+accredited entity’s website  2017 -06-02 
+Language(s) of disclosure  English and Mongolian  
+Link to disclosure  English : 
+https://www.xacbank.mn/en/565/about -xacbank/social -
+responsibility/eco -bank/gcf -news/esms -on-renewable -energy -
+program -solar  
+Mongolian:  
+https://www.xacbank.mn/mn/565/about -xacbank/social -
+responsibility/eco -bank/gcf -news/esms -on-renewable -energy -
+program -solar  
+Other link(s)  - 
+________

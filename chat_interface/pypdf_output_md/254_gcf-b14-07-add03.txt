@@ -1,0 +1,3610 @@
+=== DOCUMENT METADATA ===
+/CreationDate: D:20160922155001+09'00'
+/Creator: Adobe Acrobat Pro 11.0.0
+/ModDate: D:20160927141032+09'00'
+/Producer: Adobe Acrobat Pro 11.0.0
+/Title: 
+
+
+---
+*Page 1*
+---
+
+Consideration	of	funding	
+proposals	–	Addendum	III	
+Funding	proposal	 package	for	FP020GCF/B.14/07/Add.03 
+27	September	 2016	Meeting	of	the	Board	
+12	–	14	October	2016	
+Songdo,	Incheon,	Republic	of	Korea	
+Provisional	agenda	item	11(f) 	
+Summary		
+This	addendum	contains	the	following	three	parts:	
+a)A	funding	proposal	 titled	“Sustainable Energy Facility for the Eastern Caribbean ”
+submitted	by
+	Inter-American Development Bank (IDB);
+b)A	no‐objection	letter	issued	by	the	national	designated	authori ty	or	focal	point;	and
+c)Environmental	and	social	report(s)	disclosure.
+The	documents	are	presented	as	submitted	by	the	accredited	enti ty,	and	national	designated	
+authority	or	focal	point,	respectively.
+
+
+---
+*Page 2*
+---
+
+GCF/B.14/07/Add.03 	
+Page	b	
+Table	of	Contents 	
+Funding	proposal	submitted	 by	the	acc redited	entity	
+No‐objection	letter	issued	by	th e	national	designated	authorit y	or	focal	point	
+Environmental	and	social	report(s)	disclosure
+
+
+---
+*Page 4*
+---
+
+	
+							
+	
+Contents 
+ 
+ 
+Section A PROJECT / PROGRAMME SUMMARY    
+ Section B 
+FINANCING / COST INFORMATION   
+ 
+Section C DETAILED PROJECT / PROGRAMME DESCRIPTION 
+ Section D 
+RATIONALE FOR GCF INVOLVEMENT 
+ Section E 
+EXPECTED PERFORMANCE AGAIN ST INVESTMENT CRITERIA  
+ 
+Section F APPRAISAL SUMMARY  
+ 
+Section G RISK ASSESSMENT AN D MANAGEMENT 
+ 
+Section H RESULTS MONITORIN G AND REPORTING  
+ 
+Section I  ANNEXES 
+ 
+ 
+ 
+ 
+Note to accredited entities on the use of the funding proposal template     
+ Sections A, B, D, E and H of the funding proposal require detailed inputs from the accre dited entity. For all 
+other sections, including the Appraisal Summary in section F, a ccredited entities have discretion in how they 
+wish to present the information . Accredited entities can either  directly incorporate information into this 
+proposal, or provide summary info rmation in the proposal with c ross-reference to other project documents 
+such as project appraisal document. 
+ The total number of pages for the funding proposal (excluding annexes) is expected not to exceed 50. 
+ 
+ 
+Please submit the completed form to: 
+fundingproposal@gcfund.org  
+ 
+Please use the following name c onvention for the file name: 
+“[FP]-[Agency Short Name]-[ Date]-[Serial Number]”
+
+
+---
+*Page 5*
+---
+
+ 
+PROJECT / PROGRAMME SUMMARY 
+ GREEN CLIMATE FUND FUNDING P ROPOSAL | PAGE 1 OF 63 
+ 
+	
+	A
+Abbreviations 
+AFS Audited Financial Statements 
+CDB Caribbean Development Bank CORE Co-financing Mechanism for Renewable Energy and Energy Efficiency CTF Clean Technology Fund DOM Dominica DPSP Dedicated Private Sector Program EA Executing Agency 5ECC Eastern Caribbean Countries (Dominica, Saint Luc ia, Saint Vincent and the Grenadines, Grenada, Saint 
+Kitts and Nevis) 
+ECC Eastern Caribbean Countries (Antigua & Barbuda, Dominica, Saint Lucia, Saint Vincent and the 
+Grenadines , Grenada, Saint Kitts and Nevis) 
+ECERA Eastern Caribbean Energy Regulatory Authority EIRR Economic Internal Rate of Return ENPV Economic Net Present Value ESA Electricity Supply Acts ESA Environmental and Social Due Diligence E&S Environmental and Social ESIA Environmental and Social Impact Assessment ESMR Environmental and Social Management Report FI Financial Intermediary GDP Gross Domestic Product GE Geothermal Energy GEF Global Environmental Facility GRE Grenada IAMC Independent Assessment of Macroeconomic Conditions IPP Independent Power Producers JICA Japan International Cooperation Agency LCOE Levelized Cost of Energy OECS Organization of Eastern Caribbean States OCR Ordinary Capital Resources OM Operating Manual OSF Other Special Funds PBL Policy-Based Loans PCR Project Completion Report  PMU Programme Management Unit PPP Public Private Partnerships PV Photovoltaics RE Renewable Energy SAI Caribbean Strategic Agenda on Integration SEF Sustainable Energy Facility SE Sustainable Energy SEEC Sustainable Energy for the Eastern Caribbean Program 
+SFR Special Funds Resources SKN Saint Kitts and Nevis SL Saint Lucia SSF Safeguard and Screening Form for Screening and Classification of Projects SVG Saint Vincent and the Grenadines 
+A.1.  Brief Project / Programme Information
+
+
+---
+*Page 6*
+---
+
+ 
+PROJECT / PROGRAMME SUMMARY 
+ GREEN CLIMATE FUND FUNDING P ROPOSAL | PAGE 2 OF 63 
+ 
+	
+	A
+A.1.1. Project / p rogramme title Sustainable Energy Facility for the Eastern Caribbean  
+A.1.2. Project or programme programme 
+A.1.3. Country (ies) / region                     Dominica, Grenada, Saint Kit ts and Nevis,  Saint Lucia, 
+Saint Vincent and the Grenadines 
+A.1.4. National designated authority (ies) Dominica, Grenada, Saint Kit ts and Nevis, Saint Lucia, 
+Saint Vincent and the Grenadines 
+A.1.5. Accredited entity Inter-American Development Bank (IDB) 
+A.1.5.a. Access modality ☐  Direct ☒  International 
+A.1.6. Executing entity / beneficiary Executing Entity: Caribbean Development Bank (CDB) 
+Beneficiary: Dominica, Grenada, S aint Kitts and Nevis, Saint 
+Lucia and Saint Vincent and the Grenadines 
+A.1.7. Project size catego ry (Total investment, million 
+USD) ☐  Micro (≤10) 
+x  Medium (50<x≤250)  ☐  Small (10<x≤50)  
+☐  Large (>250) 
+A.1.8. Mitigation / adaptation focus ☒  Mitigation ☐  Adaptation ☐  Cross-cutting 
+A.1.9. Date of submission 31 July 2015 
+A.1.10. 
+Project 
+contact 
+details Contact person, position Gloria Visconti; Christiaan Gischler 
+Organization Inter-American Development Bank (IDB) 
+Email address GloriaV@iadb.org ; christiaang@iadb.org   
+Telephone number +1 (202) 623-3360; +1 (202) 623-3411 
+Mailing address 1300 New York Avenue, N.W. 
+Washington, D.C. 20577; USA 
+   
+A.1.11. Results areas  (mark all that apply)  
+Reduced emissions from: 
+☒ Energy access and power generation  
+(E.g. on-grid, micro-grid or off-grid solar, wind, geothermal, etc.)   
+☐ Low emission transport  
+(E.g. on-grid, micro-grid or off-grid solar, wind, geothermal, etc.)   
+☐ Buildings, cities and industries and appliances  
+(E.g. new and retrofitted energy-efficient buildings, energy-ef ficient equipment for companies and supply chain management, et c.)   
+☐ Forestry and land use  
+(E.g. forest conservation and ma nagement, agroforestry, agricul tural irrigation, water treatment and management, etc.)  
+ 
+Increased resilience of: 
+☐ Most vulnerable people and communities 
+(E.g. mitigation of operational risk associated with climate ch ange – diversification of supply sources and supply chain manag ement, 
+relocation of manufacturing facilities and warehouses, etc.)  
+☐ Health and well-being, and food and water security 
+(E.g. climate-resilient crops, e fficient irrigation systems, et c.) 
+☐ Infrastructure and built environment 
+(E.g. sea walls, resilient road networks, etc.)  
+Ecosystem and ecosystem services 
+(E.g. ecosystem conservation and management, ecotourism, etc.) ☐
+
+
+---
+*Page 7*
+---
+
+ 
+PROJECT / PROGRAMME SUMMARY 
+ GREEN CLIMATE FUND FUNDING P ROPOSAL | PAGE 3 OF 63 
+ 
+	
+	A
+A.2.  Project / Programme Executive Summary (max 300 words)  
+Dominica (DOM), Gren ada (GRE), Saint Kitts  & Nevis (SKN), Saint  Lucia (SL) and Saint Vincent & Grenadines (SVG), 
+are Small Island Developing State s (SIDS) located in the Easter n Caribbean region, with small and isolated electricity 
+markets, highly dependent on impo rted liquid fossil fuels for e lectricity generation. In 2013, t he average electricity tariff 
+was very high, at US$0.39 per kWh . Despite the decrease in worl d oil prices since mid-2014, e lectricity prices in this 
+region remain relatively high compared with those in USA and ot her territories. 
+  Geothermal Energy (GE) presents  the largest available renewable  energy (RE) resource and c ould provide the lowest 
+electricity generation cost in addition to being the most relia ble. To date, there is however  no operating GE plant in any 
+of the five Eastern Caribbean countries (ECC) of DOM,  GRE, SKN , SL, and SVG, due to barriers such as: (i) very high 
+cost of undertaking projects; (ii) lack of access to capital at  appropriate terms;  
+(iii) inadequate legislative, regul atory and policy frameworks;  (iv) limited fiscal space for governments to acquire new 
+public debt; (v) insufficient spe cialized technical skills; (vi ) lack of economies of scale; and  (vii) high uncertainty during  
+early development stages that the private sector is unable to b ear due to GE resource risk. 
+ 
+The Sustainable Energy Facility (SEF) for the Eastern Caribbean  regional programme propo sed to the GCF aims to 
+address the financial, technical a nd institutional barriers whi ch GE encounters in DOM, GRE, SKN, SL and SVG and to 
+provide institutional strengtheni ng and capacity building to th e governments of these Sma ll Island States and to the 
+Caribbean Development Bank (CDB) to develop GE.  
+The proposed GC F regional programme will be part of IDB’s Susta inable Energy Facility ( SEF) for the Eastern 
+Caribbean approved in October, 2015. To differentiate both oper ations, the proposed GCF regional programme will be 
+referred to as the programme and IDB’s Sustainable Energy Facil ity (SEF) for the Eastern Caribbean, hereinafter will 
+be called IDB-SEF. IDB-SEF aims to  address barriers for energy efficiency (EE) and RE, inc luding GE, in the six ECC 
+(including Antigua and Barbuda wh ich does not have GE potential ). However the IDB’s request of funding from the GCF 
+is only for DOM, GRE, SKN, SL and SVG and only for the developm ent of GE projects. 
+ The proposed regional programme  for the GCF includes the follow ing two components: 
+ 
+Component 1: GeoSmart Initiative : This initiative, initiated by  the CDB, is a partnership for s upporting geothermal 
+energy development.. Given the inhe rent risk at each stage of G E development, the programme will offer timely and 
+tailored financial instruments to enable sub-projects to advanc e step by step, through pl ant construction. CDB will 
+mobilize appropriate resources ( price and other terms)   such a s  grants, contingent grants and concessional loan 
+resources to Governments and Special Purpose Vehicles, establis hed as Public Private Part nerships, for the purpose 
+of addressing the specific cha llenges that GE development faces ,.  
+ 
+Component 2: Regulat ory framework, institutional strengthening 
+and capacity building : Technical assistance for 
+strengthening capacity build ing will be provided to the CDB1. Support to improve regulatory fr ameworks and institutional 
+capacity will also be provided  to DOM, GRE, SKN, SL and SVG (5E CC), including to ministries responsible for energy 
+and electric utilities. .  
+ The programme anticipates the following five main impacts in the 5ECC :  
+1. 60MW of Geothermal power gener ation capacity installed in pr ojects facilitated or financed at some stage; 
+2. GHG Emission Reductions o f 313,421 TCO2e/year and 9,402,621 TCO2e during  the lifetime of the 
+programme; 
+3. Reduction of 722 Thousand barrels of oil imported for electr icity generation;  
+4. USD 50 million reduced spending on Oil imports (at a fuel pr ice of US$70 per barrel); 
+5. Reduction of the average electricity generation cost and, if  generation cost reductions are passed on to 
+customers, this should lead to an average decrease in tariffs f rom US$0.35/kWh in 2015 (at a fuel price of 
+US$70 per barrel) to US$0.28/kWh. 
+	
+																																																													
+1 This support will strengthen al so the capacity of CDB to acces s directly GCF resources in a near future 
+as potential regional accredited entity.
+
+
+---
+*Page 8*
+---
+
+ 
+PROJECT / PROGRAMME SUMMARY 
+ GREEN CLIMATE FUND FUNDING P ROPOSAL | PAGE 4 OF 63 
+ 
+	
+	A
+	
+A.3.  Project/Programme Milestone  
+Expected approval from accredited entity’s 
+Board (if applicable) Date: 15/02/2017 (Depending on t he finalization of the negotiat ion of 
+the AMA) 
+Expected financial close (if applicable) NA 
+Estimated implementation start and end date Start: 15/05/2017 
+End:  15/05/2025 
+Project/programme lifespan (execution period) 8 years
+
+
+---
+*Page 9*
+---
+
+ 
+FINANCING / COST INFORMATION 
+ GREEN CLIMATE FUND FUNDING  PROPOSAL | PAGE 5 OF 63 
+	
+	B
+B.1. Description of Financial Elements of the Project / Program me 
+ 
+GE development is hindered by, ( i) high capital costs; (ii) lac k of access to credit at approp riate terms (e.g. affordable 
+rates); (iii) inadequate regulato ry and policy frameworks; (iv)  limited fiscal space for governments to acquire new public 
+debt; (v) lack of economies of sca le; (vi) high resource risk i n early exploration phases fo r GE and (vii) insufficient 
+specialized technical skills like  structuring public private pa rtnerships (PPPs), negotiating PPP structures with private 
+sector counterparts, project  financing, financial modelling and  analysis and managing and coordinating the 
+implementation of GE projects. 
+ These barriers will be addressed by the Progr amme through: (i) contingent grants for drilling ex ploration which will help 
+reducing early exploration risk  and unlocking investments in th e subsequent stages of p roduction drilling, field 
+development and plant construction ; (ii) concessional loans whi ch will help to reduce funding  costs lowering overall 
+capital costs so as to reduce t he cost of energy for final user s; the implementation of GE projects through PPP 
+structures which will help limi t new public debt and bring in t he private sector; and (iv) tech nical assistance to improve 
+the regulatory framewor k and capacity build ing will provide the  necessary base for succe ssful implementation of GE 
+projects. 
+ The following figure shows the co mparative level of progress in  GE project development of th e 5ECC. Not all countries 
+are at the same stage of devel opment. While GRE and SL, are in the early stages of pre-i nvestment studies, SVG and 
+SKN are in the exploratory drilling stage and DOM is ready to a dvance to the plant construction phase. Funding 
+sources under this p rogramme will be used a nd adjusted accordin g to the countries’ specific needs and program 
+development stage   
+Figure 1: Stages of GE de velopment for the 5ECC 
+ 
+ 
+Funding for exploration and pro duction drilling in the form of contingent grants is requir ed for SVG, GRE, SKN and SL. 
+GCF will provide funding for dr illing explorati on and productio n drilling in SL and SKN where  no other funding sources 
+with the required risk profile ( i.e. contingent grants) have be en identified yet. CTF contin gent grants (IDB-SEF was 
+approved in October 2015 and funds are already available to be on-lent to GE projects) will be used to fund drilling 
+exploration and production  drilling in SVG and GRE.
+
+
+---
+*Page 10*
+---
+
+ 
+FINANCING / COST INFORMATION 
+ GREEN CLIMATE FUND FUNDING P ROPOSAL | PAGE 6 OF 63 
+	
+	B
+Funding for field development and plant construction is require d in DOM, the only island to have gone through 
+exploration drilling already and to  have proved its GE resource s can provide enough steam  for a 10MW plant. Hence, 
+GCF funding (senior loans) is required for DOM to continue to t he next stage of GE developmen t: plant construction. 
+Once SVG and GRE have moved pas t exploration drilling and GCF f unding (senior loans) will be used for field 
+development/plant construction.  
+A breakdown of the GCF Funds requested for the Programme is pro vided in Table 1. More details with the breakdown 
+of all assigned funding can be f ound in the attached Excel work sheet “GCF-Geothermal Development Facility-Budget 
+and Timeline-IDB-April2016”. 
+ 
+Table 1. Breakdown of the GCF Funds per output 
+Components Outputs GCF CTF JICA DFID IDB GEF CDB Total 
+Component 1:  Output 1.1: Exploration drilling                 
+-    
+GeoSmart Facility    Slim holes    12         
+12.00  
+     Full size explo ration wells 16 19.05  6         
+41.05  
+  Output 1.2: Production drilling          
+     Production/reinjection wells 28.5  19  9.5        
+57.00  
+   Output 1.3: Power plant, 
+Steam gathering 31.5  21  10.5  10      
+73.00  
+Component 2:  
+Regulatory 
+framework, 
+institutional 
+strengthening, 
+capacity building  Output 2.1: Regulatory 
+framework 3    0.4 1.005 0      
+4.405  
+Output 2.2: Institutional 
+strengthening, capacity 
+building 1  1  0.1 0.913        
+3.013  
+Total 80 19.05 41 18 20.5 1.918 10 190.468 
+ 
+Table 2. Breakdown of the GCF Funds per country 
+Description SVG GRE SKN DOM SL CDB 
+Capacity 
+Building TOTAL 
+IADB Loan 6.883 2.450 2.450 6.067 2.150         
+20.000  
+Grant 0.200 - 0.200 - - 0.100           
+0.500  
+GCF Loan 20.650 7.350 7.350 18.200 6.450         
+60.000  
+Contingent 
+Grant - - 8.000 - 8.000         
+16.000  
+Grant 0.500 0.500 1.000  0.500 0.500 1.000           
+4.000  
+JICA Loan 13.767 4.900 4.900 12.133 4.300         
+40.000  
+Grant 0.500 0.500 - - -            
+1.000  
+DFID Grant 6.000 6.000 - - 6.000         
+18.000  
+CTF Loan - - - - -            
+-
+
+
+---
+*Page 11*
+---
+
+ 
+FINANCING / COST INFORMATION 
+ GREEN CLIMATE FUND FUNDING P ROPOSAL | PAGE 7 OF 63 
+	
+	B
+Contingent 
+Grant 9.525 9.525 - - -         
+19.050  
+CDB Loan - - - 10.000 -         
+10.000  
+G r a n t  -  -  -  -  -             
+-    
+GEF Loan - - - - -            
+-    
+Grant 1.005 0.913 - - -            
+1.918  
+TOTAL 59.030 32.138 23.900 46.900 27.400 1.100 190.468
+ 
+ 
+B.2. Project Financing Information 
+ Financial Instrument Amount Currency Tenor Pricing2 
+(a) Total 
+project 
+financing (a) = (b) + (c)  190.468 million USD ($)  
+(b) 
+Requested 
+GCF amount (i) Senior Loans 
+(ii) Subordinated Loans 
+(iii) Equity (iv) Guarantees 
+(v) Reimbursable Grants * 
+(vi) Grants ** 
+ 60 
+- 
+- - 
+16
+ 
+4.0 million USD ($) 
+Options  
+Options  
+Options  
+Options  
+million USD ($) 20  years 
+ 
+  
+ 
+  0.75% 
+ 
+  
+ 
+  
+* These are essentially  Contingent grants  of (USD16 million) which are req uired to cover the high risk s tage of 
+exploration of GE resources. Thes e grants are essential to trig ger the investments in  GE. These grants would 
+become a loan in case a successf ul GE resource is obtained afte r exploring and certified by a professional third 
+party firm. 
+ After exploratory drilling and during the testing of the wells (production and/or reinjection test), a consulting firm will 
+be hired to conduct the analysis o f well testing results and to  certify final electrical output in MWe “under the ‘well-
+head’ actually achieved by the well(s).  
+ ** USD4 million of grants will also be required to revise the r egulatory framework for PPP and GE and to provide 
+capacity building to CDB.  
+Total requested 
+(i+ii+iii+iv+v+vi)  80 million USD ($)  
+Financial Instrument Amount Currency Name of 
+InstitutionTenor Pricing Seniority 
+																																																													
+2 Pricing is to CDB, the programme Borrower
+
+
+---
+*Page 12*
+---
+
+ 
+FINANCING / COST INFORMATION 
+ GREEN CLIMATE FUND FUNDING P ROPOSAL | PAGE 8 OF 63 
+	
+	B
+(c) Co-
+financing 
+ Senior Loans 
+Reimbursable Grants 
+Senior Loans 
+Senior Loans 
+Grant 
+Grant 
+Grant 
+Grant 20 
+19.05 
+40 
+10 
+1.918 
+0.5 
+1 
+18 million USD ($) 
+million USD ($) 
+million USD ($) 
+million USD ($) 
+million USD ($) 
+million USD ($) 
+million USD ($) 
+million USD ($) IDB 
+IDB-CTF3
+JICA 
+CDB 
+GEF4 
+IDB5 
+JICA6 
+DFID7 22  years 
+30 years 
+40 years 
+20 years LIBOR 
+0.75% 
+0.55% 
+2.97%8 pari passu 
+pari passu 
+pari passu 
+pari passu
+Lead financing institution: IDB  for the GCF, CTF and GEF. 
+ 
+B.3. Fee Arrangement  
+The requested Accredited Entity  Fee is eight per cent (8%) of t he total amount committed by  GCF to this Progremme, 
+subject to finalization of the AM A and FAA between the two part ies. The GCF interim policy on  fees indicates the cap is 
+eight per cent (8%) of the GCF fu nding for {medium} scale publi c sector projects/programmes. 
+B.4. Financial Market Overview (if applicable)  
+																																																													
+3 The CTF Trust Fund Committee endorsed in June 26, 2014 the sca ling up of the Dedicated Pr ivate Sector Program 
+(DPSP) I, utility-scale RE with a  focus on GE. US$19.05 million  DPSP were approved in t andem and as part of the 
+IDB-SEF loan in October 2015. 
+4 CEO Endorsement was obtained on  September 16th, 2015, so that US$1,917,808 will be available for the 
+programme (US$1,004,566 for SVG, and US$913,242 for GRE). These  resources were approved in tandem and as 
+part of the IDB-SEF loan in October 2015. 
+5 IDB technical assistance in ki nd to be provided directly to be neficiary countries 
+6 JICA technical assistance in k ind to be provided directly to b eneficiary countries  
+7 The Department for International  Development (DF ID) has approv ed grant resources to be provided directly to the 
+governments of SL, SVG and GRE. 
+8 As of January 2016
+
+
+---
+*Page 13*
+---
+
+ 
+FINANCING / COST INFORMATION 
+ GREEN CLIMATE FUND FUNDING P ROPOSAL | PAGE 9 OF 63 
+	
+	B
+The countries Anguilla, Antigua an d Barbuda, Dominica, Grenada,  Montserrat, St Kitts-Nevis , St Lucia, and St Vincent 
+and the Grenadines have constitu ted a monetary union, termed th e Eastern Caribbean Curren cy Union (ECCU). These 
+eight countries share a common central bank and a common curren cy. 
+ 
+The Eastern Caribbean Central Ba nk performs an opinion survey w ith commercial banks on conditions in the ECCU 
+(the latest available covers the period July to December 2013).  Expectations are an overall  tightening of lending terms 
+and conditions, based on sluggish e conomic conditions and perce ntage of non-performing loans to total loans and the 
+creditworthiness of c ustomers. In Grenada, N on-performing loans  reached 14.6 percent of to tal loans as of end-2014, 
+up from 13.8 percent in 2013. B ecause of this banks have reduce d credit supply, resulting in a 5.1% contraction in 
+2014. 
+ 
+Credit conditions are reflected in high interest rates from the  commercial banks with an aver age prime rate of 14% in the 
+ECCU.  
+ 
+Table 3. Selected Commercial Bank Interest  
+ 
+(Sept. 2014) 
+Country Prime  
+Rate Average 
+Weighted 
+ Lending Rate Average 
+Weighted  
+Deposit 
+Rate Mortgage 
+Rates  
+(Range) Interbank  
+Rate 
+DOM 10.00 8.76 2.61 6:75 – 12:50  
+GRE             10.00                 9.18            2.25  6:99 - 12:50    
+SKN             14.00                 8.69            2.56  5:50 - 13:00    
+SL 13.00 8.45 2.64 6:00 – 14:00  
+SVG             11.00                 9.35             2.59   7:00 - 14:00    
+ECCU             14.00                 8.96             2.62   5:50 - 15:00            6.13  
+Source: Eastern Caribbean Central Bank  
+ 
+ECCU countries have high debt to GDP ratios , increasing the cos t of finance and creating difficulty to access 
+international capital markets.  
+ 
+Grenada public debt has peaked in 2013 reaching approximately 1 07.5% of the GDP. To restor e debt sustainability the 
+Government has undertaken a debt restructuration process which initiated at the end of 2014.  
+ 
+Saint Vincent and the Grenadines debt-to-GDP ratio increased by  about 15 percent of GDP over 2008-2013, reaching 74 
+percent of GDP in 2013. This rati o is expected to continue to i ncrease until 2017 . In December 2014, a  strong climatic 
+event, causing flooding and massive  economic losses reaching 15 % of the GDP has further exacerbated the country’s 
+economic conditions on top of contraction from the global slowd own, increase in commodities prices as well as two 
+previous climatic events in 2010 and 2011. 
+ 
+St. Kitts and Nevis high public d ebt-to-GDP ratio  of 159.3% in 2010 fell significantly to 103. 1 percent at the end of 2013, 
+after the requirement in 2012 to restructure the sovereign debt  and an event of payments default on government debt. 
+The economy has started to recov er in 2013 with a positive grow th of 3.8% sustained in 2014.
+
+
+---
+*Page 14*
+---
+
+ 
+FINANCING / COST INFORMATION 
+ GREEN CLIMATE FUND FUNDING P ROPOSAL | PAGE 10 OF 63 
+	
+	B
+ St. Lucia economy is starting to  recover after a recession in 2012 and an almost zero growth in 2013. The tourism 
+sector is contributing strong ly to this recovery and in 2014 GD P growth reached 0.5%. Debt-t o-GDP ratio has risen and 
+reached almost 80% in 2014.9 
+ 
+In 2015 the tropical storm Erika hit Dominica resulting in loss  of life and significant economic damage estimated to have 
+reach 96% of the GDP further exa cerbating the fiscal and econom ic situation of the island. D ebt-to-GDP ratio almost 
+reached 80% in 2014.10 
+ 
+ 
+The economic and fiscal situation in the ECCU makes access to i nternational capital marke t costly and the development 
+of renewable energy projects su ch as GE difficult. The limited borrowing capacity as implied by the Debt-to-GDP ratios 
+averaging 86% limits t he governments’ ability to invest in Sust ainable Energy (SE), and parti cularly in GE, technologies 
+thus perpetuating dependency on im ported fossil fuels and its t ightening effect on fiscal space. 
+ 
+ 
+Table 4: The weighted average inte rest rate by ECCU Governments :	
+Weighted Average Interest Rate by ECCU Governments as at 30 Sep tember 2014 
+Issuing 
+Country 91-
+Day  
+T-Bill 180-
+Day 
+T-Bill 365-
+Day 
+T-Bill 2-
+Year 
+Treas
+ury 
+Note 3-
+Year 
+Treas
+ury 
+Note 4-
+Year 
+Treas
+ury 
+Note 5-
+Year 
+Treas
+ury 
+Note 6-
+Year 
+Treas
+ury 
+Note 7-
+Year 
+Treas
+ury 
+Note 8-
+Year 
+Treas
+ury 
+Note 10-
+Year 
+Treas
+ury 
+Note 15-
+Year 
+Treas
+ury 
+Note 
+Antigua and 
+Barbuda    6.00 6.50  6.75  7.32  7.50   7.75  
+Dominica 1.24        6.99        
+Grenada 6.00   6.00            
+Saint Lucia 2.55 4.95   4.50  6.00 6.61 7.10 7.00 7.30 7.36 7.95
+St Vincent 
+and the 
+Grenadines 1.77      5.25    7.74   7.40  
+Source: Eastern Caribbean Central Bank  
+To overcome the barrier of high capital cost external support i s necessary, in particular climate finance, combined with 
+private financing and governmen t funding. Hence, programme fund s for GE projects will be made available to PPPs.  
+The access to concessional financ ing from the GCF and other co- financiers of the programme will crowd in private 
+sector capital to develop and im plement GE initiatives supporte d through the GeoSmart Initiative.  
+																																																													
+9 Source: IMF 
+10 Source: IMF
+
+
+---
+*Page 15*
+---
+
+ 
+DETAILED PROJECT / PR OGRAMME DESCRIPTION 
+ GREEN CLIMATE FUND FUNDING P ROPOSAL | PAGE 11 OF 63 
+	
+	C
+C.1. Strategic Context 
+ 
+The independent ECC, DOM, GRE, S KN, SL and SVG participating in  the Sustainable Energy F acility for the Eastern 
+Caribbean (“The programme), are s mall island developing states with small and isolated elec tricity markets. The fact 
+that these countries have small and isolated grids, lack the sc ale necessary to import cheape r and cleaner fossil fuels, 
+such as natural gas, a nd have not yet fully  developed their RE endowments, makes them dep endent on costly imported 
+liquid fossil fuels for electricity generation and results in h igh electricity costs.  
+ Electricity tariffs in the ECC are indexed to fuel prices, or i nclude a fuel surcharge with a  direct pass through to end 
+consumers. Hence, customers oft en see high electricity tariffs and high volatility in thei r monthly bills. In 2013, the 
+average electricity tariff was U S$0.39/kWh (with lower oil pric es of US$70/barrel the ta riff is estimated at 
+US$0.33/kWh). By comparison, in t he State of Florida in the Uni ted States (US), the averag e tariff was US$0.11/kWh.  
+On average, in 2014 the fuel cost represented 53% of the total cost to end users.  
+ Fiscal implications of liqui d fossil fuel dependency . Ever since the first oil shoc k of 1973, oil dependence has 
+become a heavy burden on the ECC economies. High electricity pr ices both hinder economic growth, and a high public 
+sector energy bill drains public  resources that c ould be used t o provide more social servic es. Governments in the region 
+face fiscal constraints partly due to their fossil fuel import bills. As presented in Table 5 o il imports as a percentage of 
+Gross Domestic Product (GDP) e xceed 7% for all ECC. Limited bor rowing capacity as implied by the Debt-to-GDP 
+ratios averaging 86% limits the governments’ ability to invest in SE technologies thus perpetuating dependency on 
+imported fossil fuels and its ti ghtening effect on fiscal space .  
+ 
+Table 5. Key Information on the Energy Sector in the Eastern Ca ribbean 
+ 
+Sources:  World Bank – World De velopment Indicators; CARILEC fo r DOMLEC (2014), Financial Statem ents and CARILEC  for GRENLEC ( 2014),  CARILEC for 
+LUCELEC (2014); Financial Statistics provided by the General Ma nager of VINLEC in December 2014; Email from General Manager of  NEVLEC on 5 November 2014; 
+Farrell Cartwright (Nevis Geothermal Project and Power Take-off  Presentation 2012); CARILEC and Request for Proposal  Renewabl e Energy Infusion Study 2013 for 
+SKELEC 
+	
+Lessons learned from international experience . Among RE solutions, GE development in particular necessitates  
+significant public sector suppor t to move forward. The factors that enabled GE development in countries such as El 
+Salvador, Costa Rica, Nicaragua , Kenya, US, Iceland and Guadalo upe were analyzed and lessons were extracted to as 
+part of the design of the programme. The main factors are: (i) the existence of high quality GE resources; ( ii) availability 
+of grant support and risk mitigat ion mechanisms for exploratory  activities; (iii) strong government commitment to 
+develop GE; (iv) an enabling legal a nd regulatory framework tha t sets incentives to develop RE technologies and 
+provides clear rules for the development of geothermal resource s; and (v) development of ear ly geothermal projects by 
+government-owned agencies with support of international donors.  Country/
+Island Average Fuel Cost 
+(US$/kWh sold) 
+(2014) Oil Imports as a % 
+of GDP Fossil Fuel Imports 
+(US$ Million) Debt to GDP 
+ratio Fossil fuel used 
+for electricity 
+generation 
+DOM 0.18 7% (2012) 41.5 (2 012) 73.7% (2013) 75% 
+GRE 0.21 10% (2012) 101.1 (2012) 105.5% (2014) 41% 
+St. Kitts  
+9% (2010) 22.6 (2010) 80.0% (2015) 59% 
+Nevis  
+SL 0.18 9% (2011) 116 (2011) 84.8% (2013) 100% 
+SVG 0.20 (2013) 11% (2011) 91 (2011) 74.7% (2013) 34% 
+C.2. Project / Programme Objective against Baseline
+
+
+---
+*Page 16*
+---
+
+ 
+DETAILED PROJECT / PR OGRAMME DESCRIPTION 
+ GREEN CLIMATE FUND FUNDING P ROPOSAL | PAGE 12 OF 63 
+	
+	C
+ 
+The Sustainable Energy Facility  for the Eastern Caribbean regio nal programme proposed to the GCF aims to address 
+the financial barriers which GE  encounter in DOM, GRE, SKN, SL and SVG and to provide institutional strengthening 
+and capacity building  to the governments of t hese three Small I sland States and to the CDB to develop GE. 
+ The proposed GCF r egional programme will be part of IDB-SEF whi ch aims to address barriers for EE and RE, 
+including GE, in the six ECC (A&B, DOM, SL, GRE, SKN, and SVG).  However the IDB’s request of funding from the 
+GCF is only for DOM, GRE, SKN, SL and SVG. 
+ 
+Baseline Scenario.  Until now the ECC have not used a coordinated approach for GE project development. This 
+resulted in very different projec t development stages in each c ountry (e.g. some countries have only done surface 
+studies, while others have alre ady finished exploratory drillin gs) and difficult access to finance, mainly due to lack of 
+economies of scale. There were s ome uncoordinated, nevertheless  important, efforts to pro mote GE, with partial 
+funding for the early stage studi es and exploratory drilling. 
+ Fossil fuel based power generatio n units in the ECC have been i n operation on average for over 13 years, power 
+service is reliable, the ECC hav e almost reached universal elec tricity access and in general, e lectricity tariffs reflect the 
+full cost of service. There are no fossil fuel sources availabl e domestically in any of t he ECC. Although Independent 
+Power Producers (IPP) are allow ed to generate electricity to se ll to the utility, the only RE I PP in operation is the Nevis 
+wind farm with 2.2MW of installe d capacity. Ut ilities have rela tively small customer bases, w hich do not allow for larger 
+and more cost-effective power gene ration plants that use other fuels. The emission baseline o f electricity generation in 
+the ECC is 779,005 tCO
+2/a, see Table 6. 
+ 
+ Table 6. Key Information about P ower Generation in the 5ECC 
+Country/
+Island Utility Govern. 
+Ownership 
+(%) Peak 
+Demand 
+(MW) Installed 
+Capacity 
+(MW) Energy 
+generated 
+(MWh/a) Generation 
+from Fuel 
+Oil/ Diesel 
+(%) GHG 
+emissions 
+(tCO2/a) Tariff 
+(US$/kWh) 
+2013 2014 
+DOM DOMLEC 21% 16.8 26.7 103,018 75 76,320 0.41  
+GRE GRENLEC 21.6% 29.2 48.6 199,909 99 151.431 0.40 0.37 
+St. Kitts SKELEC 100% 24.0 43.0 147,168 100 111,480 0.35 0.32 
+Nevis NEVLEC 100% 9.3 13.9 55,632 85 42,141 0.37 0.32 
+SL LUCELEC 45.4% 59.7 86.2 366,080 100 290,047 0.37  
+SVG VINLEC 100% 25.7 51.4 142,02 9 80 107,587 0.36 0.34 
+ 
+SE potential . All of the 5ECC have available SE resources that could offset  liquid fossil fuel generation and hence 
+create financial savings. SE means  economically viable RE and E E projects that displace foss il fuel-based electricity.  
+      
+  
+Table	7  shows the estimated investm ent requirements for GE only.
+
+
+---
+*Page 17*
+---
+
+ 
+DETAILED PROJECT / PR OGRAMME DESCRIPTION 
+ GREEN CLIMATE FUND FUNDING P ROPOSAL | PAGE 13 OF 63 
+	
+	C
+ 
+    
+  
+Table 7: Estimated total investme nt required for GE in the 5ECC  (in US$ Million) 
+ 
+ 
+Country/Island Stage 1a: 
+Pre-
+Investment Stage 1b: Pre-
+investment Stage 2: 
+Exploration Stage 3:  
+Field Development 
+T&D   
+ 
+Installed 
+capacity 
+(MW) Total 
+(Studies)  Slim 
+hole/ 
+wells  Cost 
+(MUS$) Full 
+scale  
+wells  Cost 
+(MUS$) Produc
+tion /re-
+injectio
+n wells Cost 
+(MUS$) Cost 
+steam 
+gathering 
+system 
+(MUS$)  Total 
+cost 
+Power 
+Plant  
+(MUS$) 
+DOM (done) (done) (done) (done) (done) (done) 7 15 30 15 10 67 
+SVG 3G  (skip)11 2 14 3 21 15 30 16.3 10 96.3 
+GRE 3G 2 6 2 14 3 21 15 30 16.3 10 102.3 
+SL (done) 2 6 2 14 6 42 25 56 16.3 20 159.3 
+SKN 3G  (done) 2 14 3 21 15 30 12.1 10 92.1 
+Total 3G 4 12 8 56 15 112 85 176 76.0 60 517.0 
+ 
+ The following figure shows the  technologies that can be develop ed to seize the region’s SE potential. The figure shows 
+the amount of barrels of oil that each technology would displac e (vertical axis) and their al l-in cost or Levelized Cost of 
+Energy (LCOE) (horizontal axis) . The size of the bubbles shows the potential of the technology in terms of MW of 
+potential installed capacity and  the color indicates whether it  is baseload, intermittent energy or EE. The graph shows 
+that GE, a baseload energy wit h more than 90% capacity factor, the lowest LCOE (around US$0.10/kWh), the largest 
+potential displacement of oil bar rels (more than 2 million barr els) and the largest estimated installed capacity potential 
+(over 160MW), is the largest ava ilable RE resource for the ECC with the possibility in some c ases of exporting power to 
+neighboring islands via undersea cables. 
+          
+																																																													
+11 From 2013 to 2014 private deve lopers in SVG conducted signific ant surface exploration a ctivities that support the 
+argument that the Soufriere volc ano hosts a >200 °C geothermal reservoir. Slimholes are therefore not d eemed necessary.
+
+
+---
+*Page 18*
+---
+
+ 
+DETAILED PROJECT / PROGRAMME DESCRIPTION 
+ GREEN CLIMATE FUND FUNDING  PROPOSAL | PAGE 14 OF 63 
+	
+	C
+ 
+     
+ 
+Figure 2. SE Alternatives for the ECC
+12 
+ 
+ 
+Key barriers for GE development . The potential for RE, however, remains unrealized in the ECC.  Apart from some 
+hydro power (16-20% of gross generation in SVG in 2013), electr ic utilities in these countries use diesel or fuel oil 
+generators. GE development suffers  from special barriers that r equire participation of both the governments and the 
+private sector through PPP arrangem ents. The main barriers to G E in the ECC are: (i) the very high, marginally 
+economical cost of undertaking projects small enough to sell al l their power to the local utilit ies; (ii) lack of access to 
+capital at appropriate terms and limited borrowing capacity of the region’s governments; (iii ) inadequate legislative, 
+regulatory and policy framewor ks that will facilitate the licen sing, permitting or creation of geothermal power sales 
+agreements in the islands; (iv) limited fiscal space for govern ments to acquire new public d ebt; (v) lack of economies of 
+scale given the relative small si ze and isolation of electricit y markets in the ECC; and (vi) h igh uncertainty during early 
+development stages that the privat e sector is unable to bear du e to RE resource risk and finally  (vii) insufficient 
+specialized technical skills like  structuring public private pa rtnerships, negotiating PPP struct ures with priv ate sector 
+counterparts, project financi ng, financial modelling and analys is and managing and coordinati ng the implementation of 
+geothermal projects. 
+ Expected Impact . The programme is expected to r esult in a reduction of GHG emi ssions of approximately 313,421  
+TCO
+2 per year and in displacement of liquid fossil fuel based elect ricity generation which is c ostlier than GE generation. 
+ 
+																																																													
+12 The information to prepare Figur e 1 was obtained from the repo rt Strategy for Developing Geothermal Potential through 
+Public-Private Partnership s in the Eastern Caribbean   
+60 MW100 MW
+23 MW
+12 MW
+38 MW24 MW 13 MW
+9 MW
+-1001003005007009001,1001,3001,500
+0.00 0.05 0.10 0.15 0.20Thousands of Barrels of Oil 
+Displaced
+Levelized Cost of Energy (US$/kWh)0.08
+0.09
+0.16Base Load
+IntermittentEnergy EfficiencyGeothermal 
+(DOM for export)  
+Geothermal 
+domestic 
+(All countries)  
+Wind
+Solar PV  Solar water heating
+Energy EfficiencyWaste to 
+energy  
+HydroSize of the Bubble is Capacity in MW
+
+
+---
+*Page 19*
+---
+
+ 
+DETAILED PROJECT / PR OGRAMME DESCRIPTION 
+ GREEN CLIMATE FUND FUNDING P ROPOSAL | PAGE 15 OF 63 
+	
+	C
+Main Goal. By promoting the development of GE the programme aims to signif icantly reduce the GH G emissions of the 
+energy sector in the 5ECC (GRE, SVG and SKN), the region’s depe ndency on liquid fossil fuels and the cost of power 
+generation and electricity tariffs. 
+ The programme anticipates the following five main impacts in the 5ECC :  
+1. 60MW of Geothermal power gener ation capacity installed in pr ojects facilitated or financed at some stage; 
+2. GHG Emission Reductions of 313,421  TCO2e/year and 9,402,621  TCO2e during  the lifetime of the 
+programme; 
+3. Reduction of 722 Thousand barrels of oil imported for electr icity generation;  
+4. USD 50 million reduced spending on Oil imports (at a fuel pr ice
+13 of US$70 per barrel); 
+5. Reduction of the average electricity generation cost and, if  generation cost reductions are passed on to 
+customers, this should lead to an average decrease in tariffs f rom US$0.35/kWh in 2015 (at a fuel price of 
+US$70 per barrel) to US$0.28/kWh. 
+ 
+C.3. Project / Programme Description  
+ 
+The programme will suppo rt the 5ECC to overcome the barriers me ntioned above by providi ng a line of credit for the 
+Caribbean Development IDB (CDB)  to finance commercially and eco nomically viable GE project s, and grants to support 
+the strengthening of legal and re gulatory frameworks and capaci ty for developing GE potent ial. This program will 
+provide adequate financing mechani sms to unlock investments in GE and mobilize private sector capital and expertise 
+required for developing GE projects in the region. The programm e will provide conc essional financing t hat will crowd in 
+private sector capital to develop and implement GE initiatives.  
+ 
+The proposed GC F regional programme will be part of IDB’s Susta inable Energy Facility for  the Eastern Caribbean (to 
+differentiate from the GCF funde d part, hereinafter will be cal led IDB-SEF) which aims to address barriers for EE and 
+RE, including GE, in the six E CC (including A&B which does not have GE potential). Howev er the IDB’s request of 
+funding from the GCF is only  for DOM, GRE, SKN, SL and SVG. 
+ 
+The proposed regional programme  for the GCF includes the follow ing components: 
+ 
+Component 1: GeoSmart Initiative : Since the risk levels involved  in GE projects are inherent to  each of the 
+development stages, the programme  will offer financial instrume nts tailored for each stage to enable projects to 
+advance to subsequent stages through to plant construction. Fun ds for GE projects will be made available by the CDB 
+through its GeoSmart Initiative , to address the specific challe nges that GE development faces given its risk profile. The 
+GeoSmart Initiative will provi de a range of financial support t o public sector actors and/or  PPP, customized for each 
+stage of geothermal development. 
+ 
+Output 1.1: Exploration Drilling  
+The following pre-investment activ ities necessary to unlock inv estment in subsequent stages will be supported with 
+contingent recovery grants and grants: 
+ Drilling of exploration wells  
+ Feasibility studies: Based on the results of exploration drill ing the geotherma l resource model s will be adapted, 
+and probability for successful p roduction drilling will be esti mated. The feasibility study w ill provide a “go” or ”no 
+go” decision to the developers . Environmental and Social Impact  Assessments (ESIA) will be required prior to 
+production drilling, authorizati on to move to this next phase w ill be provided based on t he results of the ESIA. 
+ 
+Output 1.2: Production Drilling 
+																																																													
+13 Projection of the Energy Info rmation Agency (EIA) of United St ates of America forecasts  that in four years from 
+today, the time would take in av erage to have geothermal plant in operation; the fuel price of oil would be around US$ 
+70 per barrel.
+
+
+---
+*Page 20*
+---
+
+ 
+DETAILED PROJECT / PR OGRAMME DESCRIPTION 
+ GREEN CLIMATE FUND FUNDING P ROPOSAL | PAGE 16 OF 63 
+	
+	C
+The following activities in field development will be supported  with concessional loans:  
+ Drilling of production wells 
+ Drilling of reinjection wells14 
+ 
+Output 1.3: Power plant, Steam gathering 
+The following activities in field and power plant development w ill be supported with c oncessional loans:  
+ Engineering and construction  steam gathering system 
+ Engineering and construction of power plants 
+ Construction of substat ions and transmission lines 
+ 
+Component 2: Regulat ory framework, institutional strengthening and capacity building:  Technical assistance to 
+the CDB, and to the 5ECC, including  their ministries responsibl e for energy and electric u tilities will be provided.  
+  
+Output 2.1: Regulatory framework  
+Technical assistance will be pro vided to support for the 5ECC i n developing an effective l egal, policy and regulatory 
+framework for the implementation of GE projects;  
+ 
+Output 2.2: Instituti onal strengthening and capacity building  
+The following capacity building and technical assistance activi ties will be provided to the CDB in order to strengthen 
+its capacity to implement the programme: 
+1. developing staff capacity to ev aluate and execute sub-loans 
+2. consulting servic es to provide specific  skills and advisory services as and when required for sub-project 
+preparation;  
+3. drafting of legal documents (i .e. loan contracts for GE sub- loans);  
+ 
+The following capacity building activities will be provided to DOM, SVG, GRE SKN, and SL: 
+4. strengthening their technical, institutional, environmental and regulatory capacity;  
+5. transaction advisory suppor t to structure projects and negot iate with private partners;  
+6. providing opportunities for training to acquire the necessar y skills to enable GE development and project 
+execution 
+ 
+C.4. Background Information on Project / Programme Sponsor  
+CDB is the executing entity and t he borrower of this Programme.  The Programme Sponsor wil l be the PPP structured in 
+each of the participating countries as described in this sectio n. 
+  The disbursements w ill occur in the following manner: i) from GCF to IDB. ii) from ID B to CDB (for all funding resources 
+managed through IDB: CTF, GCF, G EF). IDB will document all the disbursements following IDB fiduciary policies which 
+allow IDB to provide an adv ancement of funds to the CDB. When 7 0% of the funds provided are used and justified by 
+CDB, CDB can then request another  tranche or CDB can use their own funds; in that IDB w ill recognize and reimburse 
+those funds. And iii) the disbur sement from CDB to PPPs, which will be based on specific need s for the projects. The 
+disbursement will be done in a s imilar way as from IDB to CDB, that is, advance of funds and/or recognition and 
+reimbursement of resources in ca se the PPP has used its own fun ds. 
+ In all five participating countr ies, GE projects will be struct ured as PPPs, bringing together the public and private 
+sectors with the common goal o f developing GE. The PPP will be majority owned by the priv ate sector company/ies 
+which will bring the managerial and operational expertise in ge othermal. The planned structure for the five countries is 
+presented below. 
+ 
+																																																													
+14 Dry wells, if availabl e, might be use for reinjection. The req uirement of drilling of reinjection well will be done on a 
+case-by-case basis.
+
+
+---
+*Page 21*
+---
+
+ 
+DETAILED PROJECT / PROGRAMME DESCRIPTION 
+ GREEN CLIMATE FUND FUNDING  PROPOSAL | PAGE 17 OF 63 
+	
+	C
+The project team has discussed wi th the developers and the auth orities in the five countries that in addition to having a 
+PPP structured for the geotherma l power product ion, the PPPs wo uld have to procure all g oods and services following 
+CDB procurement rules which are  homologous to IDB procurement p olicies. In essen ce all goods and se rvices using 
+funding from IDB, CDB, JICA, CTF and GCF will be procured throu gh a competitive and tr ansparent process.   
+ In DOM , the Government has advanced co nsiderably in developing its ge othermal resources  compared  to other ECC. 
+It confirmed the geothermal resou rce potential of the Wotten Wa ven-Trafalgar-Laudat geothermal field through 
+exploratory and production we ll drilling and ha s drilled a comm ercial production well with generation capacity of 11MW.  
+The cost of exploratory drilli ng alone was US$1 1.7 million, and  was financed by the Government (44 percent), Agence 
+Francaise de Developpement (AFD)  (40 percent), and the European  Union (17 percent).    
+ The following figure presents a possible project structure in D OM, under which the Government would issue a resource 
+agreement that authorizes a Priva te Developer to exploit the ex isting GE production well as w ell as explore and exploit 
+the geothermal resources availabl e as required to maintain prod uction levels. The Government and the private 
+Developer (which could also inc lude DOMLEC) woul d form an SPV t hat would build, operate, and transfer (BOT) the 
+GE and sell the power to DOMLEC  through a Power Purchase agreem ent (PPA). The government is currently 
+analyzing the best possible struct ures and options to develop G E, therefore the proposed stru cture is only indicative. 
+ 
+Figure 3: Possible Structure for the Geothermal Project in Domi nica 
+ 
+ 
+In GRE  geothermal resources have not been studied extensively. Prelim inary surface explor ation suggests that 
+Grenada’s geothermal re source exceeds 30MW but it has yet to be  confirmed. The Government and GRENLEC (a 
+privately owned and ve rtically-integrated utility) expressed in terest in working together to explore the geothermal 
+resource and develop a 10MW geot hermal plant. The Government re started exploration wor ks in 2014 by conducting 
+surface study with the support of the Government of New Zealand . The result of the study indicates the presence of a 
+considerable high-temperature resource and recommends additiona l geophysical work to ref ine the boundaries of the 
+field and composition of the reservoir. 
+ The following figure presents a possible project structure in G RE, under which the Government would issue a resource 
+agreement that authorizes a Priva te Developer to explore and ex ploit the geothermal resource. The Government and 
+the private Developer (which c ould also include GRENLEC) would form an SPV that would build , operate, and transfer 
+(BOT) the GE and sell the power to  GRENLEC through a Power Purc
+hase agreement (PPA). The government is 
+currently analyzing the best po ssible structures and options to  develop GE, therefore the pr oposed structure is only 
+indicative.
+
+
+---
+*Page 22*
+---
+
+ 
+DETAILED PROJECT / PROGRAMME DESCRIPTION 
+ GREEN CLIMATE FUND FUNDING  PROPOSAL | PAGE 18 OF 63 
+	
+	C
+ 
+  
+ 
+Figure 4. Planned Structure for the Geothermal P roject in Grena da 
+ 
+ 
+ 
+In the case of SKN , with support of the US State Depa rtment, the firm Deloite was  hired to assist t he Government of 
+Nevis (Nevis Island Administra tion –NIA)  to choose a geotherma l partner and developed throu gh a competitive process 
+that would then partner with NI A to form a PPP. Through that co mpetitive process a consor tium form by two US based 
+firms and a Nevis based firm w ere selected. GE potential exists  in Nevis and the Nevis Island Administration (NIA) has 
+made significant progress toward s developing the island’s geoth ermal resources by drilli ng three slim holes. In 
+September 2014, NIA signed a conc ession contract w ith Nevis Ren ewable Energy International Inc. (‘Nevis 
+International’) to begin product ion drilling and construction o f a power plant to s erve Nevis.  In early  2016, a 25 year 
+Power Purchase Agreement was signed between NEVLEC and the deve loper for the purchase o f 9MW of electricity on 
+a take-or-pay basis. It is envisage d that the project would mee t Nevis’ demand for power and excess electricity could be 
+sold to SKELEC on St Kitts via a  3 mile subsea cable. The follo wing figure presents a possi ble project structure in 
+Nevis. 
+   
+Figure 5. Possible Structure for the Geothermal Project in Nevi s 
+ 
+ 
+ 
+In SL, the Government is in the early stages of geothermal deve lopment despite extensive exploration of its geothermal 
+resources. SL has an estimated geothermal potential of 75MW.  I f developed, this geothermal  resource could meet all 
+baseload demand for electricity in Saint Lucia, which is about 35MW. In 2014, the Governmen t restarted efforts to
+
+
+---
+*Page 23*
+---
+
+ 
+DETAILED PROJECT / PROGRAMME DESCRIPTION 
+ GREEN CLIMATE FUND FUNDING  PROPOSAL | PAGE 19 OF 63 
+	
+	C
+explore its geothermal resource s with US$2.8 million in grants from the World Bank and the New Zealand Government. 
+Currently, the Government is in advanced conversations with Orm at Technologies for the development of a power plant 
+at Soufriere 
+ The following figure presents a possible project structure in S LU, under which the Government would issue a resource 
+agreement that authorizes a Priva te Developer to explore and ex ploit the geothermal resource. The Government and 
+the private Developer (which c ould also include LUCELEC) would form an SPV that would build, operate, and transfer 
+(BOT) the GE and sell the power to  LUCELEC through a Power Purc hase agree ment (PPA).  
+  
+Figure 6: Possible Structure for the Geothermal Project in Sain t Lucia 
+ 
+ 
+In SVG , the Government plans to devel op the GE plant on a PPP basis t hrough a special-purpo se company that will be 
+owned by the Government (25 perc ent) and the priv ate sector (75  percent). The SPV is Sai nt Vincent Geothermal 
+Company Limited (SVCL). The priv ate sector companies that will own 75 percent of the spec ial-purpose company are: 
+Light and Power Holdings (also known as Emera Caribbean), and R eykjavik Geothermal, a geothermal development 
+company based in Iceland. Light and Power Holdings, 80.3 percen t of which is owned by t he Canadian based energy 
+company Emera, will be the projec t’s lead and will also lead th e financing. Reykjavik Geothe rmal will be the project’s 
+technical lead. In addition to t he equity contribut ions provide d by the Government, Emera  Caribbean, and Reykjavik 
+Geothermal, the project will als o be financed with debt. In Jan uary 2015, the Government w as granted a US$15 million 
+loan with a 2 percent interest r ate, by the Abu Dhabi Fund for Development (ADFD) and the International Renewable 
+Energy Agency (IRENA) for the development of the geothermal pla nt. Also, the Departme nt for International 
+Development (DFID) will provide grants to suppor t exploratory d rilling. The SPV would have a 25 year concession to 
+design, build, own, operate, and finance the geothermal generat ion plant and would sell elec tricity to VINLEC under a 
+25 year PPA. The following figure presents the planned project structure in SVG.
+
+
+---
+*Page 24*
+---
+
+ 
+DETAILED PROJECT / PROGRAMME DESCRIPTION 
+ GREEN CLIMATE FUND FUNDING  PROPOSAL | PAGE 20 OF 63 
+	
+	C
+Figure 7. Planned Structure for the Geothermal P roject in St. V incent y Grenadines 
+ 
+ 
+ 
+ In all five countries, in case t he PPP decides no t to go forwar d with the subsequent stage of development even though 
+the exploration phase  supported with contingent grant has been positive, the Government would have the authority to 
+offer the geothermal license to another developer  and the gove rnment would have to start the process of engaging 
+with an new geothermal partner a gain. As the disbursement perio d of the project is 8 years , there will be enough time to 
+restructure the sub project in ca se is needed and choose a new developer. The new developer would then have to 
+absorb the financing incurred by the CTF and/or the GCF. In cas e, there is no PPP interest ed in developing the GE 
+project during the lifetime of th is project, the CTF and/or GCF  funding will be assumed as g rant and no repayment will 
+occur. This scenario is unlikel y to happen if the exploration i s successful.  
+C.5. Market Overview (if applicable) 
+ 
+Eastern Caribbean power sector overview . All ECC except for SKN have one vertically integrated electri city utility, 
+responsible for gener ation, transmission, and distribution of e lectricity. In SKN, two vertic ally integrated electricity 
+utilities are responsible for generation, transmission, and dis tribution of electricity, one on the island of St Kitts and 
+another on the island of Nevis. D OM, GRE, and SL have privately  owned utilities while utilit ies in SVG and SKN are 
+entirely state-owned (see  
+Table 8). 	
+Table 8: Market Structure of Electricity Sector in the 5ECC 
+  
+    
+ 
+ 
+ 
+ 
+Note:  G=generation, T=trans mission, D=distribution 
+ In the ECC, the economic regulator y frameworks of the electrici ty sectors, including the tariff setting mechanism, are 
+established in the Electricity Supply Acts (ESAs). The exceptio n to this is Nevis. In SKN, the electricity sectors in each 
+island are governed by separate laws. The Electricity Ordinance  of 1998 governs the electric ity sector in Nevis. The 
+Electricity Supply Act of 2011 gov erns the electricity sector i n Saint Kitts.  Country Utility Jurisdiction Government Ownership Role IPPs 
+Allowed? 
+DOM DOMLEC  21% G, T, & D Yes 
+GRE GRENLEC  21.6% G, T, & D Yes 
+SKN NEVLEC Nevis  100% G, T, & D Yes 
+SKN SKELEC St Kitts  100% G, T, & D Yes 
+SL LUCELEC  45.4% G, T, & D Yes 
+SVG VINLEC  100% G, T, & D Yes
+
+
+---
+*Page 25*
+---
+
+ 
+DETAILED PROJECT / PR OGRAMME DESCRIPTION 
+ GREEN CLIMATE FUND FUNDING P ROPOSAL | PAGE 21 OF 63 
+	
+	C
+     
+Most of the 5ECC have cost-reflect ive tariffs (DOM, GRE, SL, SV G)  ; for these countries the Pr ogram will result in less 
+volatile and lower electricity prices. Less volatile electricit y prices will allow consumers in these countries to better 
+estimate their electricity expendi tures and plan their electric ity consumption more effectively.  
+ In SVG, the Government has provided subsidies in a targeted man ner. For example, the Gove rnment seems to provide 
+subsidies to cover the fuel sur charge of low income households.  There is not public informati on available to verify the 
+details of subsidies offered, and whether these subsidies are o ffered continually or were an ad hoc response to mitigate 
+the effects of the recession. H owever, despite of occasional su bsidies to final consumers, in the past five years, 
+VINLEC’s financial statements sh ow that the average tariff cove rs its cost of service. The only exception was 2014, 
+when a subsidy was offered to con sumers after extreme weather e vents affecting the popul ation.  In 2014, VINLEC 
+offered a short term subsidy to c over a portion of the fuel sur charge to mitigate the effects of increased diesel costs. 
+This increase in diesel costs wa s due to having its hydro plant s out of use, as a result of the heavy rains of December 
+2013. There is also some information that some specific subsidi es were offered in  2009 and in 2012.    
+ For SKN, were tariffs are not c ost-reflective, the Program will  contribute to improve their operational performance and 
+wane the need for subsidies. Since fuel costs make up the major ity of operating expenses, a reduction in fuel costs, 
+promoted by the Program, would re duce the operating costs incur red by utilities and impr ove their operational 
+performance. In addition, the lowe r effective tariffs will make  it more viable to pass on the  full costs of service to the 
+consumer (to charge cost-refle ctive tariffs). Hence, the Progra m will contribute to reduce the costs of generating 
+electricity, and in doing so, to lower tariffs and make it more  feasible to have cost reflectiv e tariffs.  Cost reflective tar iffs, 
+along with more cost-effective generation matrices, would in tu rn set stronger incentives for optimal consumption and 
+would lead to the dismantling of subsidies. 
+C.6. Regulation, Taxation and Insurance  
+ 
+DOM 
+ 
+Policies in the energy sector The Government’s policies in the electricity sector aim to redu ce energy prices, increase env ironmental sustainability, 
+and reduce fossil fuel use. The Lo w Carbon Climate Resilient St rategy, adopted in 2012, sets out many of the 
+Government’s objectives for the energy sector—it envisions a “l ow-carbon, climate-resilient” development strategy. 
+Specifically, it identifies the objectives of developing renewa ble energy projects and pr omoting energy efficiency and 
+energy conservat ion programs. 
+  Laws and regulations governing the electricity sector 
+The ESA establishes the institut ional framework of the electric ity sector as well a s the rights and dutie s of the different 
+bodies in the electricity sector including the procedure for li censing and monitoring utilities. The ESA creates the 
+Independent Regulatory Commission (‘the IRC’), which is respons ible for setting tariffs, licen sing service providers, and 
+setting service standards. In addi tion, it sets the process for  granting electricity license s. The ESA also specifies that 
+renewable resources must be incl uded in Dominica’s electricity generation expansion plans. 
+ 
+The regulation and gover nance of the sector i s further develope d through decisions made by the IRC. The IRC has 
+issued several decisions that furt her develop the legal framewo rk governing the sector. The most important decision 
+issued by the IRC is the IRC’s de cision on Regulatory Policy an d Procedure—Licensing Procedures. This decision sets 
+out the license application proc ess. It also provides DOMLEC an  exclusive license for transmission and distribution, and 
+states that there will be a singl e distribution license granted  for the island.  Another impor tant decision is the IRC’s 
+decision on the Tariff Regime for Dominica Electricity Services  Ltd. 2009/004/D (‘the Tariff R egime’) which establishes 
+the tariff setting mechanism. The Tariff Regime sets a formula for determining tariffs that a llows for DOMLEC to recover 
+costs associated with generati on from renewable energy and elec tricity purchased from IPPs. 
+ 
+A Geothermal Resources Develo pment Bill (2013) was first develo ped in 2012 and has under gone a process of 
+revisions since then. The Geother mal Bill is the final stages o f review before it is ready to  present to Parliament.  The 
+Geothermal Bill “provides for t he regulation of geothermal reso urces with the objective o f ensuring the sustainable 
+development of the resource, and en suring its allocation to the  uses that are most economically beneficial to Dominica”.
+
+
+---
+*Page 26*
+---
+
+ 
+DETAILED PROJECT / PR OGRAMME DESCRIPTION 
+ GREEN CLIMATE FUND FUNDING P ROPOSAL | PAGE 22 OF 63 
+	
+	C
+In particular, the Geothermal Bill: 
+ Establishes procedures for alloca ting geothermal resources in Dominica, including a ‘competitive track’, under 
+which the Government tenders out a  concession an d awards it to the best bidder presenting the best option; 
+and a ‘negotiated track’ for cases where there is no sufficient  information for competition to work  
+ Creates a statutory board to advise the Minister responsible f or energy (who in turn advises the Cabinet) on 
+geothermal resource development 
+ Establishes an approach for se curing approvals to develop geot hermal projects. 
+ 
+GRE 
+ 
+Policies in the energy sector 
+The Energy Policy presents the Go vernment’s objectives of reduc ing electricity prices and i ncreasing energy security. 
+The Energy Policy prioritizes dev eloping RE and reforming the n ational energy market to a chieve its objectives. 
+However, the Government has not y et implemented the measures ca lled for in the Energy Policy.  
+The Energy Policy delineate s the following actions:   
+ Establishing a National Sustainab le Energy Office (NSEO) to pu rsue the objectives of the Energy Policy 
+ Creating a regulator y body for licensing, o versight, regulatio n, and rate setting for the electricity and transport 
+sector (the Government envisage s that the planned Eastern Carib bean Energy Regulatory Authority will fill this 
+role) 
+ Formulating legislation and cont racts consistent with a modern  energy sector that would support the 
+development of hydrocarbons and geothermal resources  
+ Setting the objective of RE sour ces providing 20 percent of al l domestic energy used for electricity and 
+transport by 2020—specifically ta rgeting geothermal, wind energ y, and solar water heaters.  
+ To meet the RE target, the Energy P olicy calls for various meas ures. They include providing fiscal incentives for RE: 
+collecting and publishing data on energy production, energy con sumption, and resource ass essments; and developing 
+local expertise for the insta llation and operation of RE techno logies. For the last measure, t he Energy Policy states that 
+the Government will engage donors  to join geothermal developmen t programs that provide fi nancing for technical 
+assistance. 
+ 
+Laws and regulations governing the electricity sector The ESA—which was passed in 1994 and amended in 1998, 2005, and  2013—governs electric ity supply in Grenada. It 
+grants GRENLEC an exclusive lic ense to generate, transmit, dist ribute, and sell electrici ty until 2073 on all of the 
+islands of Grenada. Any other par ty seeking to generate electri city in Grenada must do so with a sublicense granted by 
+GRENLEC. The Government would ne ed to amend the ESA to implemen t its plans of reducing  the term of GRENLEC’s 
+license to a 30-year period, and allowing for competitive biddi ng in the generation segment.  
+ 
+The ESA establishes a clear ta riff regime for GRENLEC. The ESA sets the tariff structure, a nd establishes electricity 
+rates that GRENLEC can charge i ts customers. The ESA also prese nts a methodology that GRENLEC must use to 
+adjust its tariffs. The current tari ff structure only allows GR ENLEC to recover the cost of s ervice when generating with 
+diesel or heavy fuel oil. The ESA does not establish a mechanis m for GRENLEC to recover the costs of generating 
+electricity with other fossil fuels or renewable energy. Theref ore, if geothermal generation we re introduced in Grenada, 
+the Government would need to a mend the tariff to allow for cost  recovery. 
+  One of the major challenges for g eothermal development is the l ack of legislation gover ning the development of 
+geothermal resources. The Gover nment, in collaboration with the  Organization of American States (OAS), prepared the 
+Geothermal Resources Developm ent Bill (‘the Geothermal Bill’) a nd the Geothermal Resources Environmental and 
+Planning Regulations (“the Geothermal Regulations’), which is i ntended to fill this gap.  
+If the Government passe s the Geothermal B ill and the Geothermal  Regulations, they would establish the regulatory 
+framework for exploring, explo iting, and protecting Grenada’s g eothermal resources. The Ge othermal Bill defines what 
+a geothermal resource is, who ow ns it, and establishes the proc ess for granting rights to explore and exploit geothermal 
+resources. The Geothermal Bill defines two proc edures for grant ing rights on geothermal reso urces; a negotiated track 
+and a competitive track. The negot iated track assigns a develop er a right to explore and ex ploit the resource, and is 
+used when a geothermal resource is not proven and until GRENLEC ’s monopoly license expires. The competitive track 
+awards a concession to develop a geothermal resource through a competitive bidding process. The competitive track is 
+used when a geothermal resource is proven.  The Geothermal Regu lations also establish rules on how the 
+environmental impact assessments must be carried out.
+
+
+---
+*Page 27*
+---
+
+ 
+DETAILED PROJECT / PR OGRAMME DESCRIPTION 
+ GREEN CLIMATE FUND FUNDING P ROPOSAL | PAGE 23 OF 63 
+	
+	C
+ 
+ 
+Saint Kitts 
+ 
+Policies in the Energy Sector 
+The Government prepared the Dr aft Energy Policy and the Draft E nergy Action plan for the Federation. These 
+documents present the Government’s  vision of a more affordable,  reliable, and less polluti ng energy sectors in Saint 
+Kitts and Nevis. However, the Gove rnment has not yet approved t he Draft Energy Policy or  the Draft Energy Action 
+Plan.  
+ 
+The Draft Energy Policy includ es the following objectives: 
+ Exploring alternative energy s ources, particularly renewable e nergy, to decrease depe ndence on imported oil 
+ Interconnecting the electricity grids of Saint Kitts and Nevis , and interconnecting the Federation with other 
+neighboring countries 
+ Improving the efficiency of pow er production, transmission, an d distribution. 
+ 
+The Draft Energy Action Plan comp lements the Draft Energy Polic y and defines steps for achi eving these objectives. 
+However, the actions identified in the Draft Energy Action Plan  are vague and do not have ti melines. The Energy Action 
+Plan needs to be further developed to include specific actions and concrete timeframes for achieving the Government’s 
+policy objectives. 
+ 
+Laws and regulations governing the electricity sector 
+The Government developed the El ectricity Supply Act of 2011 for  the island of Saint K itts. The ESA governs and 
+establishes the structure of the electricity sector in Saint Ki tts. It does so by vesting all o f the Saint Kitts Electricity 
+Department’s assets and liabilities to SKELEC. The ESA also lai d the legal framework to allow the Ministry of Housing 
+to grant SKELEC an exclusive license to transmit, distribute, a nd supply electricity in Sain t Kitts for twenty five years. In 
+2011, the Government granted SKEL EC its license. The ESA allows  IPPs to operate in Saint Kitts by obtaining a 
+license from the Ministry of Hou sing. However, the ESA does not  establish the process that I PPs should follow to obtain 
+a license.   
+ The ESA does not establish a tari ff setting mechanism, but inst ead, stipulates that the Public  Utilities Commission (‘the 
+PUC’) is responsible for review ing and setting tariffs.  Howeve r, the PUC has yet to be appointed. The Governor 
+General is responsible for se tting tariffs and can adjust the t ariff at his discretion by issuing regulations. These 
+regulations must be approved by N ational Assembly to come into effect.  The ESA does not e stablish a formula for 
+calculating tariffs, does not set a minimum rate of return, and  does not establish criteria that the National Assembly 
+should use to evaluate proposed tariff adjustments.  
+ 
+Another key law governing the elec tricity sector is the Public Utilities Commission Act o f 1992 (‘the PUC Act’). The 
+Government develop ed the PUC Act for t he Federation. It mandate s the establishment of the PUC to regulate the 
+electricity sectors in Saint Ki tts and Nevis. However, as menti oned previously, the PUC has not been appointed.  
+ 
+Nevis 
+ 
+Policies in the energy sector 
+The Government of SKN prepared  the Draft Energy Policy and the Draft Energy Action plan for the Federation. These 
+documents present the Government’s  vision of a more affordable,  reliable, and less polluti ng energy sectors in Saint 
+Kitts and Nevis. However, the Gove rnment has not yet approved t he Draft Energy Policy or  the Draft Energy Action 
+Plan.  
+The Draft Energy Policy includ es the following objectives: 
+ Exploring alternative energy s ources, particularly renewable e nergy, to decrease depe ndence on imported oil 
+ Interconnecting the electricity grids of Saint Kitts and Nevis , and interconnecting the Federation with other 
+neighboring countries 
+ Improving the efficiency of pow er production, transmission, an d distribution. 
+ The Draft Energy Action Plan comp lements the Draft Energy Polic y and identifies the steps for achieving the objectives. 
+However, the actions identified in the Draft Energy Action Plan  are vague and do not have ti melines. The Energy Action
+
+
+---
+*Page 28*
+---
+
+ 
+DETAILED PROJECT / PR OGRAMME DESCRIPTION 
+ GREEN CLIMATE FUND FUNDING P ROPOSAL | PAGE 24 OF 63 
+	
+	C
+Plan needs to be further developed to include specific actions and concrete timeframes for achieving the Government’s 
+policy objectives.  Laws and regulations governing the electricity sector 
+The Electricity Ordinance governs  the electricity sector in Nev is. It grants NEVLEC an exclus ive license to transmit and 
+distribute electricity.  NEVLEC’ s license does not have an expi ration date.  The Electricity Ordinance does not establish 
+a tariff setting mechanism, bu t mandates that fair and reasonab le rates be used. The Public  Utilities Commission (‘the 
+PUC) was given the authority o f setting and adjusting tariffs.  But since the PUC has not been appointed, NEVLEC sets 
+its own tariffs.   
+ 
+In addition, the Electricity Ordi nance allows for private indiv iduals or companies to generate electricity for their own 
+consumption from wind and sola r in Nevis.  The Electricity Ordi nance also allows for IPPs  to operate in the sector if 
+they obtain a license from the Mi nistry of Housing, Public Work s, Energy, and Public Utilitie s. However, the legislation 
+does not establish a proce ss for obtaining a license.   
+ 
+The legal and regulatory framewor k of the electricity sector is  further developed by the Pub lic Utilities Commission Act 
+of 1992 (‘the PUC Act’) and the Geothermal Resources Developmen t Ordinance of 2008. The Government developed 
+the PUC Act for the Federati on. It mandates the establishment o f the PUC to regulate the elec tricity sectors in Saint 
+Kitts and Nevis; however, as ment ioned previously, the PUC has not been appointed. The Nevis Administration 
+developed the Geothermal Resource s Development Ordinance of 200 8 (‘the Geothermal Ordinance”) for the island of 
+Nevis. The Geothermal Ordinance d efines what a geothermal resou rce is and establishes the legal framework for 
+exploring and exploit ing geothermal resources in Nevis.  The Ge othermal Ordinance also establishes the Geothermal 
+Resources Advisory Committee, whi ch is led by the Minister resp onsible for Natural Resources, to develop and 
+implement renewable ener gy policies in Nevis.   
+ 
+SL 
+ 
+Policies in the Energy Sector 
+In June 2010, the Cabinet of Saint Lucia approved the National Energy Policy (‘the Policy’ ). The Policy aims to use 
+market forces to lower the cost o f electricity by exploiting re newable energies and reducing Saint Lucia’s dependence 
+on imported oil. The Policy also aims to achieve higher energy security and “minimize negat ive environmental effects 
+from the energy sector”. The Po licy proposes establishing a com mission to regulate the electricity sector. The 
+commission would be responsible  for designing tariff the struct ure, setting tariff levels, moni toring standard s on quality 
+of service, and advising on i ssuing of licenses to IPPs. It wou ld also establish and monito r the tendering processes for 
+IPPs, and act as an arbitrator  for disputes in the sector.   
+ In its 2014 Budget Statement, the Government reaffirms its comm itment to expanding the use of renewable energy in 
+Saint Lucia. Specifically, the Go vernment presents its plan for  reforming the electricity sect or and increasing the use of 
+renewable energy. The 2014 Budget Statement includes the follow ing objectives: 
+ Reforming the energy sector to r educe Saint Lucia’s reliance o n fossil fuels for generating electricity and 
+reducing the cost of electricity to consumers  
+ Unbundling the generation segment and allowing IPPs to enter t he renewable energy sector 
+ Producing 35 percent of total electricity generated from renew able sources by 2020 
+ 
+Laws and regulations governing the electricity sector 
+The most important law in Saint Lucia’s electricity sector is t he ESA of 1994, which was ame nded in 1996, 2001, 2006 
+and 2015. It lays out the structure of the sector and sets out the tariff-setting mechanism. It grants LUCELEC the 
+exclusive right for the generati on, transmission, and distribut ion of electricity from fossil  fuels only until 2045 and allows  
+for the licensing and regulation of the generation of electrici ty from RE sources. The ESA, and its amendments, 
+establish the formula used to determine the tariffs that LUCELE C charges its customers. The goal of the tariff formula is 
+to cover the reasonable cost of p roviding the service while all owing a fair return on the capital invested in the business. 
+ 
+The Government, in collaboration with the Organi zation of Ameri can States, prepared the Geothermal Resources 
+Development Bill (‘the Geothermal Bill’) which is intended to g overn the development of geot hermal resources. This Bill 
+will establish the legal framework needed to develop geothermal  resources by removing geothermal from mineral and 
+water acts, establishing the rule s of obtaining permits, licens es, and concessions, and establishing the Geothermal 
+Resource Authority.
+
+
+---
+*Page 29*
+---
+
+ 
+DETAILED PROJECT / PR OGRAMME DESCRIPTION 
+ GREEN CLIMATE FUND FUNDING P ROPOSAL | PAGE 25 OF 63 
+	
+	C
+ 
+SVG   
+ 
+Policies in the Energy Sector The Energy Policy and the Energy  Action Plan present the Govern ment’s vision of a more economical, reliable, and 
+less polluting energy sector. How ever, the Government has not y et implemented the measures called for in the Energy 
+Policy and Energy Action Plan.    
+ The Energy Policy includes the  following guiding principles for  the energy sector: 
+ Providing clean, reliable, and affordable energy to consumers 
+ Reducing fossil fuel use through expansion of renewable energy  and energy efficiency technology 
+ Liberalizing the energy market a nd encouraging private sector participation in energy development and energy 
+services 
+ Setting electricity tariffs tha t reflect the full cost of serv ice, while providing minimal subsidies for energy services 
+to the lowest income households.  
+ The Energy Action Plan compleme nts the Policy and defines speci fic targets for the period 2009 to 2030, including the 
+following:  
+ Produce 30 percent of electricity from renewable resources (in cluding hydroelectric power) by 2015 and 60 
+percent by 2020 
+ Reduce the projected increase i n peak demand by 5 percent by 2 015 and 10 percent by 2020 
+ Reduce projected electricity generation by 5 percent by 2015 a nd 15 percent by 2020 
+ Reduce electricity losses to  7 percent by 2015 and 5 percent b y 2020. 
+ Additional measures that the Ener gy Action Plan ca lls for (ther e are 40 in total) include:  
+ Requiring the development of utility scale renewable energy pr ojects, either by VINLEC or IPPs   
+ Implementing a net-metering pol icy to increase the supply of p ower from distributed generation.  
+ The Government signaled the im portance of geothermal developmen t in the SVG National Economic and Social 
+Development Plan 2013-2015” (‘the National Development Plan’). In the plan, objective 2 for energy is “to encourage 
+exploration and incr eased utilization of r enewable energy techn ologies” and one of the strate gic interventions for this 
+objective is to “explore the f easibility of geo-thermal energy. ”  
+ 
+Laws and regulations governing the electricity sector 
+The ESA—which was passed in 1973 and amended in 1974, 1976, 197 8, 1980, and 1987 —governs electricity supply 
+in SVG. It grants VINLEC an exclus ive license for supplying ele ctricity and gives it responsib ility for issuing licenses to 
+other parties that wish to generat e, distribute, or transmit el ectricity in the country. This is an important provision 
+because VINLEC does not operate on some of the smaller inhabite d Grenadines. However, VINLEC has not 
+established a procedure that independent power producers can fo llow to obtain a license.  
+The ESA also establishes the tariff setting mechanism. Either t he Prime Minister or VINLEC can suggest a tariff 
+adjustment at any time. If the parties disagree on a suggested tariff, they jointly appoint an arbitrator to determine the 
+tariff. The ESA set the initial ta riffs for VINLEC’s services ( which are no longer the tariffs  used), but did not create a 
+formula for adjustin g tariffs over time.  
+ 
+The legal framework governing the exploration and exploitation of geothermal resources is c ontained in the Geothermal 
+Bill, which was approved by P arliament in August, 2015.     
+C.7.   Institutional / Implementation Arrangements  
+ 
+Executing Agency (EA).  The CDB will be the borrower and  the EA for the programme and will work in close 
+collaboration with IDB and other donors providing financing. Pr imary responsibility over p rogramme implementation 
+rests with CDB’s Renewable Ener gy and Energy Efficiency Unit of  the CDB (REEEU) and more specifically with the 
+Program Manager (PM) of the ID B-SEF. The REEEU will be responsi ble for implementing and administering the 
+programme for all participati ng countries (DOM, GRE, SKN, SL an d SVG) and for administrating the IDB-SEF more 
+broadly which includes A&B in addition to the 5ECC. The PM, wit h the support of the R EEEU and other CDB staff 
+providing technical, financial, environmental, social and legal  assistance, is responsible for implementing and
+
+
+---
+*Page 30*
+---
+
+ 
+DETAILED PROJECT / PROGRAMME DESCRIPTION 
+ GREEN CLIMATE FUND FUNDING  PROPOSAL | PAGE 26 OF 63 
+	
+	C
+administering the programme. A mong other respo nsibilities, the PM, with the support of the REEEU, is responsible for 
+actively engaging the beneficiar y countries to generate demand,  evaluating the eligibility of applications for funds, 
+disbursing funds, and monitoring  the implementation of the proj ects.  
+ 
+ 
+Figure 8: Organizational Chart of the Programme Management Unit  
+ 
+ 
+In addition, the REEEU has the su pport of a consulting firm on retainer (funded by the  IDB) to support with the 
+implementation of the programme, appraising project application s, and evaluating and monito ring project execution. 
+The PM reports to  the head of REEEU.  
+ The PM is in charge of: 
+ Administering the programme, including monitoring accounts, cr eating necessary reque sts for advance of 
+funds, and requesting disbursements  
+ Appraising and approving or r ejecting applications, based on a  technical, economic, and financial review of 
+project applications   
+ Monitoring and evaluating progre ss and results obtained by the  programme and individual projects, gathering 
+information from project devel opers and ECC gov ernments, and pr eparing periodic progress and supervision 
+reports for the Donors includi ng (IDB, the Japan International Cooperation Agency  (JICA), the Clean 
+Technology Fund (CTF), GCF, DFID and Global Environment Facilit y (GEF), among others
+15). This 
+responsibility includes devel oping a system fo r gathering and m aintaining data needed to track the 
+programme’s individual  projects. It also incl udes identifying a nd proposing mitigation me asures for risks that 
+may affect individual projects and the programme. 
+ Financial management of the proj ect and will liaise with CDB’s  Finance Department as it relates to the 
+processing of payment s and accounting and financial reporting o f the project. 
+ Carrying out and over seeing procurement processes. This includ es preparing and updating procurements plans 
+and carrying out the tendering proc esses for any goods and serv ices the PM needs for fu lfilling its role. It also 
+includes supporting ECC governments in preparing Terms of Refer ence and overseeing the tendering process 
+for the selection of projec t suppliers and consultants. 
+																																																													
+15 Other donors such as the Eu ropean Union and UK Department for International Development (DFID) 
+expressed their interest in participating in the programme. 
+IDB  
+(oversi ght)
+
+
+---
+*Page 31*
+---
+
+ 
+DETAILED PROJECT / PROGRAMME DESCRIPTION 
+ GREEN CLIMATE FUND FUNDING  PROPOSAL | PAGE 27 OF 63 
+	
+	C
+ Facilitating external evaluati ons and ensuring that recommenda tions are implemented 
+ Arranging for the submission of audited financial reports, as follows: 
+o Submission of Annual Audited Finan cial Statements of the CDB.  These will be become due for 
+submission within 180 days following the close of CDB’s fiscal year end (December 31st). 
+o Annual Assurance report on the pr ocess of preparation and subm ission of disbursement requests. The 
+engagement will be condu cted by an in dependent audit firm that is eligible to the IDB, and the report 
+submitted within 180 days follo wing the close of CDB’s fiscal y ear end, December 31st. 
+ Preparing Terms of Reference fo r consulting services for the C DB, to be approved by the IDB, that are to be 
+funded with SEF resources 
+ 
+Institutional arrangements 
+ 
+There are distinct actors invo lved in the programme that can be  separated by function: len ders, borrowers, executing 
+agency, and entities with respons ibility for oversight. Some of  these actors have multiple f unctions in the execution of 
+the programme. The following figu re provides an overview of the  institutional arrangements for the programme.  
+ 
+Figure 9: Institutional Arrangements for the programme 
+ 
+ 
+Flow of funds SEF
+
+
+---
+*Page 32*
+---
+
+ 
+DETAILED PROJECT / PROGRAMME DESCRIPTION 
+ GREEN CLIMATE FUND FUNDING  PROPOSAL | PAGE 28 OF 63 
+	
+	C
+	
+Relevant contracts 
+	
+ 
+The actors participating in the programme are: oversight donors , funding donors, one exec uting agency, the REEEU, 
+the PM and the governments of the 5ECC. The donors provide fund ing to the borrower, the CDB. The PM manages 
+and supervises the exec ution of the loans and grants as well as  ensures that the loans are  being disbur sed adequately 
+in order to fulfill the objective s of the programme and the IDB -SEF. The PM liaises  with the individual governments, the 
+project developers thr ough Special Purpose Vehicles (SPVs) and oversees funding and programme implementation. 
+The role of each actor involved in the programme is presented i n table 9. 
+ 
+Table 9: Roles of each actor involved in the SEF 
+Actor Financing SEF Implementing 
+the Program Oversight Implementing 
+Projects 
+Oversight Donors     
+Funding Donors     
+CDB     
+Governments and Project 
+Developers    
+
+
+---
+*Page 33*
+---
+
+ 
+DETAILED PROJECT / PR OGRAMME DESCRIPTION 
+ GREEN CLIMATE FUND FUNDING P ROPOSAL | PAGE 29 OF 63 
+	
+	C
+Financial structure . The Ordinary Capital (OC) reso urces of the IDB (interest rate  1.1%16) will be treated and on-lent 
+by CDB as their own OC resou rces (interest rate 2.97%17). The Clean Technology Fund (CTF), GCF, Japan 
+International Cooperation Agenc y (JICA) and Global Environment Fund (GEF) resources will be managed and 
+accounted for as special funds w ithin the CDB, which means a sp read of 1% would be charged over the interest of 
+each of these funds to cover t he operational costs of CDB.  
+ 
+Disbursements and commitment period . It is expected that the loan will have an 8 year disbursement  period. As 
+operations are executed, the CDB will present disbursement requ ests based on the advance of funds mechanism. 
+Advances will be disbursed based  on the liquidity needs of the project within a 6 month peri od. With the exception of 
+the first advance of funds, the CDB should have presented a jus tification for the use of at 70% of the total cumulative 
+balances pending justification for this purpose, and the IDB ha ving accepted such justification. 
+ 
+Execution and administration . The provisions governing the pr ogramme execution, including t he use of resources 
+and eligibility of each financia l instrument to be used on a pr oject by project bas is, will be establish ed in the Operating 
+Manual (OM) agreed by the IDB and CDB. It is a special contract ual condition prior to the firs t disbursement that: (i) the 
+CDB provides evidence of the ent ry into effect of the operating  manual, including the su b-loan and sub-grant 
+agreement templates of the progra m, in terms previously agreed with the IDB; and that (ii) th e IDB provides its non- 
+objection for the sub-loan and sub-grant model agreements, meet ing the minimum requirement s established in the OM. 
+ The executing mechanism  which is summarized here will be fully described in the OM. To  begin the project cycle, 
+every sub project would require  a 2 page concept note, a checkl ist with the issues to be considered (Technical, 
+Environmental, Social and Financ ial) and a non-objection from t he IDB to move forward. A final non-objection will be 
+requested prior to CDB’s board approval. It is expected that as  part of the execution, t he IDB project team will be 
+continuously monitoring the development of the sub projects and  providing the required supp ort to the CDB to facilitate 
+the execution of the sub-projec ts. In order for the project to be granted with IDB’s Non objec tion the will require that 
+checklist is fully addressed and the Technical, Environmental, Social and Financial issue s are addressed and/or 
+mitigated.  
+ 
+																																																													
+16 Variable Libor-based rate; As of July 31, 2015 
+17 As of January, 2016
+
+
+---
+*Page 34*
+---
+
+ 
+DETAILED PROJECT / PR OGRAMME DESCRIPTION 
+ GREEN CLIMATE FUND FUNDING P ROPOSAL | PAGE 30 OF 63 
+	
+	C 
+C.8.  Timetable of Project/Programme Implementation  
+ 
+A timetable with details of Progr amme implementation can be fou nd in the attached Excel worksheet “ GCF-Geothermal Development Facility-Budget and 
+Timeline-IDBApril2016 ”.
+
+
+---
+*Page 35*
+---
+
+ 
+RATIONALE FOR GCF INVOLVEMENT 
+ GREEN CLIMATE FUND FUNDING P ROPOSAL | PAGE 31 OF 63 
+ 
+	
+	
+	D
+D.1. Value Added for GCF Involvement    
+ 
+ECC face high-energy prices du e to high and volatile cost of li quid fossil fuels and low economic growth and 
+macroeconomic imbalances. Public sector institutions are weak a nd have very limited fiscal space to take on GE 
+project development. Due to very limited market size, the lack of economies of scale, high ca pital cost and high early 
+exploration resource risk, grant and concessional finance are n ecessary in order to reduce project risk and provide an 
+incentive for public and private sector to engage in GE project  development.  
+ 
+The programme will suppo rt GE development in the 5ECC with proj ects at different level s of development; funding 
+from the IDB, CTF and CDB was ap proved in October, 2015 and JIC A is expected to provide additional resources. 
+Even though some resources could al ready be mobilized the estim ated total funding needs are above USD 500 million 
+(see   
+ 
+ 
+ 
+  
+  
+Table	7 ) and as such the GCF c ontribution is crucial.  
+ 
+GCF will provide funding for dr illing exploration and productio n drilling in SL and SKN where no other funding sources 
+with the required risk profile (i.e. contingent grants) have be en identified yet. Without GCF c oncessional grants for SL 
+and SKN viability of drilling expl oration is highly questionabl e due to a lack of funding able  to take on such high risk. 
+GCF funding (senior loans) in GRE, SVG and DOM will be used for  field development/plant construction. Without GCF 
+concessional senior loans for G RE, SVG and DOM the overall proj ect cost would be higher resulting in higher 
+electricity tariffs. Moreover, b y securing funding for both, ea rly stages of development and  the later stages of plant 
+construction, the programme is ensuring an end to end solution which will result in actual G E capacity being installed 
+as the programme provides a more seamless transition from one s tage to the next.  
+ 
+The GCF contribution therefore is essential to transform the en ergy matrix in the 5ECC towa rds a sustainable, low 
+carbon sector while at the same ti me reducing electricity tarif fs for the final consumers. 
+ 
+Furthermore, the execution of t he program by the CDB has the ad ded value of exposing the regional Bank to the 
+procedures that GCF has in place, providing a “on the ground” s trengthening for future direct access to GCF as a 
+potential accredited entity.  
+D.2. Exit Strategy  
+ 
+The programme has a d uration of 8 years an d will be supporting the whole project devel opment cycle from drilling 
+exploration, to production drilli ng, electricity  production and  construction of transmission lines. It is expected that all 
+participating projects will be at their final implementation ph ases (i.e. finishing Plant con struction and/or transmission 
+lines) once the programme ends. The investments, operational an d maintenance costs will be funded through 25 
+years PPA, therefore long term s ustainability of the programme is expected to be assured. 
+ 
+In addition, loans will only be provided to already established  PPPs with all contractual ag reements in place, including 
+financial engagements of the privat e sector and public sector f or different stages of the project.
+
+
+---
+*Page 36*
+---
+
+ 
+RATIONALE FOR GCF INVOLVEMENT 
+ GREEN CLIMATE FUND FUNDING P ROPOSAL | PAGE 32 OF 63 
+ 
+	
+	
+	D
+Long term viability is achieved  through PPA agreements with the  local utility providing constant revenue streams. 
+These will allow the GE developer s to recover their investments , serve its debts as well as cover the operational and 
+maintenance expenses.
+
+
+---
+*Page 37*
+---
+
+ 
+EXPECTED PERFORMANCE AGAINS T INVESTMENT CRITERIA 
+ GREEN CLIMATE FUND FUNDING P ROPOSAL | PAGE 33 OF 63 
+ 
+	
+	E
+In this section, the accredited ent ity is expected to provide a  brief description of the expected performance of the 
+proposed project/programme agains t each of the Fund’s six inves tment criteria. Activity- specific sub-criteria and 
+indicative assessment factors, w hich can be found in the Fund’s  Investment Framework , should be addressed where 
+relevant and applicable. This section should tie into any reque st for concessionality made in section B.2 . 
+ 
+E.1. Impact Potential 
+Potential of the project/progra mme to contribute to the achieve ment of the Fund’s objectives and result areas  
+E.1.1. Mitigation / adaptation impact potential  
+ 
+The programme is expected to res ult in a reduction of GHG emiss ions of approximately 313,421  tCO 2 per year and 
+9,402,621  TCO2e during its lifet ime by displacing liquid fossi l fuel based electricity generation.  
+ By completely transforming the energy matrix of the 5ECC throug h GE, the programme w ill reduce the region’s 
+dependency on imports of liquid fossil fuels. This will generat e important savings, totaling 50 million USD per year, 
+which will allow improving the balance of payments, increasing the fiscal space of DOM , GRE, SL, SVG and SKN, 
+increase the competitiveness of s mall and medium enterprises an d open the path for green growth.  
+ 
+On average, the import of fossil  fuels represents 10% of their GDP. The programme will incr ease the resilience of the 
+five beneficiary countries, by li berating key economic resource s to allow them to be more  prepared to respond to 
+extreme climatic events.  
+ 
+A virtuous circle will arise fr om the transformation of the ene rgy matrix, benefitting the population as a whole and key 
+economic sector such as tourism , not only making it more compet itive in terms of costs thro ugh the reduction of the 
+electricity tariff but also greening the sector and making it m ore sustainable. 
+ 
+Moreover, once the electricit y baseload will be covered by the GE power generation, DOM, GRE, SL, SVG and SKN 
+can aspire to have an electricit y matrix 100% based on RE resou rces, diversifying sources with solar technology and 
+as such become an example of s ustainability and green growth in  the region. 
+ 
+E.1.2. Key impact potential indicator 
+Provide specific numerical values for the indicators below.  
+GCF 
+core 
+indicators Expected tonnes of carbon dioxide equivalent (t 
+CO 2 eq) to be reduced or avoided (Mitigation 
+only) Annual 313,421 
+Lifetime 9,402,621 
+Expected total number of direct and indirect 
+beneficiaries (reduced vulnerability or increased 
+resilience); number of beneficiaries relative to 
+total population (adaptation only) Total 481,65218 
+Percentage 
+(%) 100 
+																																																													
+18 The whole population of DOM ( 72,003), GRE (105,897) , SL (182, 273), SVG (109,373) and SKN 
+(Nevis) (12,106)  will be direct b eneficiaries of the programme  by benefiting from  the access to GE and 
+the reduce cost in tariff.
+
+
+---
+*Page 38*
+---
+
+ 
+EXPECTED PERFORMANCE AGAINS T INVESTMENT CRITERIA 
+ GREEN CLIMATE FUND FUNDING P ROPOSAL | PAGE 34 OF 63 
+ 
+	
+	E
+Other 
+relevant 
+indicators  60 MW of Geothermal power generation capacity installed in pro jects facilitated o r financed at some 
+stage by the Programme in the ECC 
+ Reduction of 722 Thousand barrels of oil imported per year for  electricity generation in ECC with 
+geothermal projects financed at any stage by the program19. 
+ USD 50 million yearly reduced spending on Oil imports (at a fu el price of US$70  per barrel) 
+ Reduction of the average elec tricity generation cost and, if g eneration cost reductions are passed on 
+to customers, this should lead  to an average decrease in tariff s from US$0.35/kWh in 2015 (at a fuel 
+price of US$70 per barrel) to US$0.28/kWh20. 
+It is expected that the installa tion of 10 MW of Geothermal gen eration capacity in 4 parti cipating countries and of 
+20MW of GE generation capacity in another one, totaling 60 MW, will displace the diesel fuel based thermal plants in 
+use for baseload electricity pr oduction. These units will be sh ut down as they will no longer be required to supply 
+baseload electricity nor will be cost effective compared with t he new GE plants.  
+ 
+Emission Reductions will be calcu lated for each country as foll ows: 
+ 
+ܧRc,ܬܲܩܧ	=	ݕc,	ݕ×	ܨܧfuel	–	 Egp,y	
+	
+Where:  
+ܧRc,	=	ݕEmission	reductions	in	country	 c	in	year	 y	(t	CO2)		
+	=	ݕ,ܬܲܩܧQuantity	of	net	electri city	generation	supplied	by	the 	new	geothermal	plant	to	the	grid	in	country	 c	in	year	 y	
+(MWh)		
+ܨܧfuel	=	Emission	factor	of		No.2	Fuel	oil	(t	CO2/MWh)  
+Egp,y	ൌ	Emissions	from	the	operation	 of	geothermal	power	plants	due	 to	the	release	of	non‐condensable	gases	in	year	y	
+ሺt	CO2e/yrሻ	
+	
+Emissions from the operation of g eothermal power plants will be  calculated as follows  (as per CDM 
+methodology ACM0002: Grid-connecte d electricity generation from  renewable sources --- Version 16.0): 
+	
+ܱܥ,݉ܽ݁ݐݏݓ(	=	ݕ,ܲܩܧ2,ܪܥ,݉ܽ݁ݐݏݓ	+	ݕ 4,	ݕ×	ܪܥܹܲܩ4)	×	,݉ܽ݁ݐݏܯ y
+																																																													
+19 The calculation of the reduction of oil barrels imported is bas ed on the oil that will be dis placed by the installation of 
+the 60 MW of GE. The followi ng factors hav e been used: 
+Heat Rate 10,200 kj/kWh 
+Oil enegy content 6,311,532 kj/barrel of oil. 
+ 
+The generation of 446,760 MWh/year  will thus displace 722,004 b arrels of oil. At a fuel price  of US$70 per barrel this 
+is equivalent to USD 50 million yearly re duced spending on Oil imports. 
+ 
+20 For each country, the estimated average tariff when geothermal  generation is introduce d is calculated as the 
+weighted average of the current average tariff (2014) and the e stimated ‘tariff with geothe rmal’. The weights are the 
+contribution of geothermal and diesel (or HFO) generation to th e total projected generat ion in each country when 
+geothermal comes onli ne.  The ‘tariff with  geothermal’ is the s um of two components: the geothermal PPA rate, plus 
+the portion of the current tari ff, that is not generation cost,  that will still be charged to  customers when geothermal 
+comes online. The geothermal PPA ra te is the rate at which the geothermal projects need to sell each kwh of 
+electricity to be able to servi ce their debts and provide equit y investors with a 15 percent  real return. The portion of 
+the current tariff that is added to the PPA rate is an estimate  of the costs not related to gen eration, which are charged 
+to customers via tariff regardle ss of the generation technology  used. 4 Such costs include an estimate of transmission 
+and distribution costs, adminis trative and othe r non-generation  OpEx, and other costs.
+
+
+---
+*Page 39*
+---
+
+ 
+EXPECTED PERFORMANCE AGAINS T INVESTMENT CRITERIA 
+ GREEN CLIMATE FUND FUNDING P ROPOSAL | PAGE 35 OF 63 
+ 
+	
+	E
+	
+Where: 
+	ݕ,ܲܩܧܲൌ	Project	emissions	from	 the	operation	of 	geothermal	pow er	plants	due	to	the	release 	of	non‐condensable	gases	
+in	year	y	ሺt	CO2e/yrሻ	
+ܱܥ,݉ܽ݁ݐݏݓ2,	ݕൌ	Average	mass	frac tion	of	CO2	in	the	produced	ste am	in	year	y	ሺt	CO2/t	steamሻ	
+ܪܥ,݉ܽ݁ݐݏݓ4,	ݕൌ	Average	mass	fraction	of	CH4	in	the	produced	ste am	in	year	y	ሺt	CH4/t	steamሻ	
+ܪܥܹܲܩ4	ൌ	Globa l	warming	potential	of 	CH4	ሺt	CO2e/t	CH4ሻ	
+	ݕ,݉ܽ݁ݐݏܯൌ	Quantity	of	steam	pr oduced	in	year	y	ሺt	steam/yrሻ	
+	
+Considering the small size of the Geothermal plants (10MW) it i s considered that emissions from fossil fuel and 
+leakage are negligible and thus  will not be accounted and is no t included in the ex-ante calculation of emission 
+reduction. However, once a geothermal plant is in operation fos sil fuel consumption for t he operation of the plant will 
+be monitored as well as electrici ty consumed from the electrici ty grid. 
+Moreover as per CDM methodology ACM0002 Fugitive CO2 and CH4 em issions due to well testing and well 
+bleeding are not considered, as they are negligible. 
+ 
+The total Emission Reductions of the programme will be calculat ed as follow: 
+	
+෍Eܴܿଷ
+௖ୀଵ 
+ 
+Where: 
+ܧRc = Emission	reductions	in	country	 c	in	year	 y	(t	CO2)		
+ 
+Ex-Ante Calculation of Emission Reductions: 
+(DOM, GRE, SKN, SVG) 
+ܧRc,	=	ݕ 74,460× 0.7575– 5000 = 51403 (TCO2e/y) 
+(SL) 
+ܧRc,	=	ݕ 148,920× 0.7575– 5000 = 107,807 (TCO2e/y) 
+ 
+Where:	
+	
+	=	,ܬܲܩܧ 74,460 MWh Considering Geotherma l power plant with plant namepl ate capacity of 10MW and a 85% 
+capacity factor. 
+	=	,ܬܲܩܧ 148,920 MWh Considering Geotherma l power plant with plant namep late capacity of 20MW and a 85% 
+capacity factor.  
+ 
+ 
+ܨܧfuel	=	 Emission factor of No.2 Fuel oil  is of 0.7575TCO2e/MWh (Referen ce: US Energy Information 
+Administration)
+
+
+---
+*Page 40*
+---
+
+ 
+EXPECTED PERFORMANCE AGAINS T INVESTMENT CRITERIA 
+ GREEN CLIMATE FUND FUNDING P ROPOSAL | PAGE 36 OF 63 
+ 
+	
+	E
+Egp,y	ൌ	5000 TCO2e. At this stage, it is cu rrently not possible to have  a specific value for 	Egp,y	,	however to be 
+conservative with the estimation of ex-ante emission reductions  of the programme a conservative value of 5000 
+TC02e from the geothermal plant operation21. This value will be adjusted when  more precise data is availab le.  
+ 
+Ex-Ante Calculation of Emission Reductions of the Programme  
+ 
+∑Eܴܿହ
+௖ୀଵ  = 313,421 TCO2e 
+ 
+Benchmark against other projects  
+The only project in a comparabl e context is in Guadeloupe which  has an installed capacity of 15MW of geothermal 
+generation consisting of a 4.7MW  plant, Bouillante 1, and a 10M W plant, Bouillante 2. Geot hermie Bouillante S.A. 
+(‘Geothermie Bouillante’), the plant operator and project devel oper, is planning to increase Guadeloupe’s geothermal 
+generation capacity by building a third plant in the near futur e. The geothermal project in Guadeloupe has been 
+developed in two phases, which each had a different project str ucture. The first phase included private sector 
+participation, whereas the second  phase only included participa tion from government-owned companies. This 
+second power plant has generated €60 million in savings to cust omers in nine years. No emission data is available 
+for the plant.  
+E.2.  Paradigm Shift Potential 
+Degree to which the proposed acti vity can catalyze impact beyon d a one-off project/pro gramme investment 
+E.2.1. Potential for scaling up and replication (Provide a nume rical multiple and supporting rationale)  
+This programme  will have a trans formational effect for the ECC  by replacing power gener ation currently based on 
+liquid fossil fuels with geothermal power, a renewable energy s ource. Not only will carbon emissions be reduced, but 
+the electricity cost for final u sers will be reduced boosting t he region’s competitiveness.  
+ In addition to the GE developm ent that will be supported by the  programme in these five countries, the ECC have the 
+potential to develop an additional  GE plant in DOM to export to  neighboring islands. Dependi ng on the results of 
+SVG’s exploration, if successful, more GE could be developed to  export to Barbados.  
+  In SKN the programme also has the potential to scale up to a se cond phase, to add additi onal 25MW in order to 
+supply St Kitts from Nevis throu gh a subsea cable. SKN could al so develop more GE to e xport to the neighboring 
+islands (Saba and Montserrat). 
+ The successful imple mentation of the GeoSmart Initiative will g enerate a wealth of experience that can be shared 
+through south-south cooperation between SIDS from the Caribbean  and the Pacific. Facing similar conditions and 
+barriers than the ECC, the Pacifi c islands have an important un tapped geothermal resource potential, in particular 
+Papua New Guinea, Vanuatu, Samoa, Tonga, N. Marianas Islands. F iji, Solomon Islands and New Caledonia. The 
+potential for replication is ill ustrated in the figure 9 below.  
+ 
+																																																													
+21 A survey of CO2 emissions from geothermal power plants has been  performed by the International Geothermal 
+Association (IGA) This survey f ound a wide spread in emission r ate in the 6,648 MWe of pl ant surveyed and found 
+that “4858 MW (73%) o f the plants surveyed  had a MW w eighted av erage of 55g/kWh.”. Applying this average to the 
+expected 74,460 MWh to be generat ed by the 10MW GE plants per y ear, give an expect ed emissions of 4095 
+TCO2e per year. Thus we consider  that the value of 5000 TC02e f rom the geothermal plant operation applied is 
+conservative. Reference: Bert ani, R., and I. Thain (2002). Geot hermal power generating plant CO2 emission survey. 
+International Geothermal Associat ion (IGA) News, 49, pp. 1-3 (I SSN: 0160-7782). Available at: www.geothermal-
+energy.org/308,iga_newsletter.html.
+
+
+---
+*Page 41*
+---
+
+ 
+EXPECTED PERFORMANCE AGAINS T INVESTMENT CRITERIA 
+ GREEN CLIMATE FUND FUNDING  PROPOSAL | PAGE 37 OF 63 
+ 
+	
+	E
+ 
+ 
+ 
+  
+ 
+  
+ 
+    
+Figure 10: Geothermal Power Operating and Developing Capacity b y Developing Region 
+ 
+Source: Geothermal Energ y Association, 2014 
+ 
+ 
+E.2.2. Potential for kn owledge and learning 
+An action plan for Capacity Bu ilding and Institutional Strength ening has been designed for the programme which 
+identifies the tasks and institutional arr angements that will e nsure that Governments in the 5ECC have the 
+institutional capacities needed to  develop their GE resources.  
+ The expected result of this capac ity building action plan is th at local authorities have t he capacities and skillsets 
+necessary for implementing the re spective geothermal project in  their country as well as  future renewable energy 
+projects. This specifically refers to:  
+ project management 
+ design, negotiation  and implem entation of commercial agreemen ts with private count erparts and PPP GE 
+projects   
+ project financing, financial mode lling of geothermal and renew able
+
+
+---
+*Page 42*
+---
+
+ 
+EXPECTED PERFORMANCE AGAINS T INVESTMENT CRITERIA 
+ GREEN CLIMATE FUND FUNDING P ROPOSAL | PAGE 38 OF 63 
+ 
+	
+	E
+ 
+In order to achieve the expected results the following tasks ar e indicative of possible assistance for each country:  
+ 
+DOM 
+ Carry out trainings to strengt hen the Ministry of Public Works , Energy, and Ports, and in particular its 
+Geothermal Project Management Uni t’s ability to execute GE proj ects 
+ Carry out trainings to strengt hen the IRC’s capacity to develo p regulation for GE 
+ Hire a full time staff member to  support the Geot hermal Projec t Management Unit. 
+   GRE  
+ Carry out trainings to strengt hen the Energy Division’s abilit y to execute GE projects 
+ Hire a full time staff member to  support the Energy Division. 
+ 
+SKN 
+ Prepare an Integrated Resource P lan for electricity sector in Saint Kitts 
+o Prepare the bidding documents for the consultancy 
+o Publishing and reviewing Expressions of Interest and select Sh ort List 
+o Review proposals, make selection, and sign contract 
+o Prepare the Integrated Resource Plan 
+ Provide transaction advisory  support for geother mal energy pro ject in Nevis 
+o Prepare the bidding documents for the consultancy 
+o Publishing and review ing Expressions of Interest and select th e short list 
+o Review proposals, make selection, and sign contract 
+o Carry out transaction advisory support 
+ Hire a full time staff member to  support the Mi nistry of energ y in Nevis 
+ SL 
+ Carry out trainings to strengt hen the Ministry of Sustainable Development, Energy, Science, and 
+Technology’s ability to execute GE projects 
+ Hire a full time staff member to  support the Ministry or the N ational Utilities Regulatory Commission if 
+created. 
+ 
+SVG 
+ 
+ Carry out trainings to strengt hen local capaciti es for the GE project 
+ Hire a full time staff member  to support the Energy Unit 
+ Provide transaction advisory for GE project 
+o Prepare the bidding documents for the consultancy 
+o Publishing and review ing Expressions of Interest and select th e short list 
+o Review proposals, make selection, and sign contract 
+o Carry out transaction advisory support 
+ 
+ Once implementation of the prog ramme starts in the 5ECC, the ar eas included in the trainings and the technical 
+assistance offered may be expand ed to address other areas ident ified by the respective Governments as needed. 
+The specific topics included in  the training will be agreed upo n with the local authorities, the PMU, and the Donors.
+
+
+---
+*Page 43*
+---
+
+ 
+EXPECTED PERFORMANCE AGAINS T INVESTMENT CRITERIA 
+ GREEN CLIMATE FUND FUNDING P ROPOSAL | PAGE 39 OF 63 
+ 
+	
+	E
+Monitoring of capacity buildi ng and institutional strengthening  will be done via semi-annual progress reports which 
+will also include lessons learne d. The Eastern Caribbean Donor coordination meetings ( already existing on a  
+semiannual basis) and side events at regional annual energy eve nts such as the Caribbean Renewable Energy 
+Forum (CREF) will be used as pl atform to share lessons learned and donor coord ination. In case more donor 
+coordination meetings are require d, these can be programmed by the PM as required. 
+ Technical support and capacity building will be provided to the  CDB during the implementa tion of this programme to 
+strengthen its capacity as a pot ential GCF Regional Implementin g entity for the Caribbean. 
+ 
+ 
+E.2.3. Contribution to the creat ion of an enabling environment  
+ 
+The programme introdu ces a new financial instrument for early e xploration drillings – contingent grants – which has 
+not been available in the region before, with the objective of reducing the barriers for pr ivate sector investment in 
+early stage of GE development. Onc e the first stage of explorat ion drilling is overcome, pri vate sector investments 
+are more likely to be secured. 
+ 
+Sustained participation of publ ic and private sector will be as sured by implementing the programme through PPP 
+structures in the three partici pating ECC. The pr ogramme will o nly provide loans to alrea dy established PPPs with all 
+contractual agreements includi ng financial engagement of the pr ivate sector and public sector in place.  
+ 
+CDB may decide on a case by case basis how the contingent grant s will be used, either as a Grant Convertible to Loan 
+(GrCL) or as a Loan Convertible to Grant (LCGr). 
+- In the case of a GrCL funding,  the PPP will receive a grant and  in the case that the exploration is unsuccessful, 
+the GrCL remains as a grant. In c ase the exploration is success ful the grant will be converted into a loan and the 
+loan conditions for CTF or GCF for GrCL will apply. This case i s recommended when the uncertainty of the 
+geothermal source is very high. 
+- In the case of the LCGr, a loan is provided from CDB to the PPP  using a combination of IDB, JICA and GCF 
+(concessional loan) funding to fund the exploration phase. If t he exploration is unsuccessful the CTF or GCF (grant) 
+will repay the loan. In case the exploration is successful, the  CTF or GCF resources remain untouched and can 
+be used for another exploration phase of another GE project of any of the five beneficiary countries. This case is 
+recommended when the uncertainty of the geothermal source is le ss than in the previous case. 
+E.2.4. Contribution to regulatory framework and policies
+
+
+---
+*Page 44*
+---
+
+ 
+EXPECTED PERFORMANCE AGAINS T INVESTMENT CRITERIA 
+ GREEN CLIMATE FUND FUNDING P ROPOSAL | PAGE 40 OF 63 
+ 
+	
+	E
+ 
+The successful implementation o f projects financed by the progr amme requires that an enabling regulatory 
+framework be in place in the 5E CC. Building on the already exis ting regulatory framework the programme will 
+support the 5ECC governments in the following tasks:  
+ 
+DOM 
+ Set tariffs that reflect the cos t of producing electricity wit h geothermal generation 
+ Development of GE regulation. 
+ 
+GRE 
+ Set tariffs that reflect the cos t of producing electricity wit h geothermal generation 
+ Development of GE law. 
+ 
+ 
+Saint Kitts 
+ Establish a clear process for I PPs to sell their electricity t o SKELEC.  
+ Set tariffs that reflect the cos t of producing electricity wit h geothermal generation 
+ 
+Nevis  
+ Establish a process for geother mal developers to obtain a lice nse that is consistent a cross all relevant laws 
+ Assign responsibility for monito ring the geothermal resource t o prevent overexploitation.  
+ Set tariffs that reflect the cos t of producing electricity wit h geothermal generation.  
+ 
+SL 
+ Set tariffs that reflect the cos t of producing electricity wit h geothermal generation 
+ Development of GE law. 
+ Establishing a regulatory body. 
+ 
+SVG  
+ Establish a clear framework gov erning geothermal resources.  
+ Improve process to obtain a license for a geothermal power pla nt 
+ Set tariffs that reflect the cos t of producing electricity wit h geothermal generation  
+  
+E.3.  Sustainable Development Potential  
+Wider benefits and priorities 
+E.3.1. Environmental, social and ec onomic co-benefits, includin g gender-sensitive development impact  
+Economic co-benefits:  
+ 120 construction and 51 operati on and maintenance jobs will be  created. 
+ The programme will lead to a r eduction in oil import of approx imately 722,000 barrels per year for electricity 
+generation in the 5 targeted countries, implying total savings of 550 million USD on oil imports per year (at a 
+fuel price of 70 USD per barrel).  
+ As a result, the region’s depend ency on fossil fuels for power  generation will be r educed by around 40% 
+through the exploitation of geothermal resources, leading to an  increased energy security.  
+ Reduction of the average electr icity generation cost, which if  passed on to consu mers, will lead to an 
+average decrease in tariffs from U SD 0.33/kWh in 2015 (at fuel price of 70 USD per barrel) to USD 
+0.28/kWh. 
+ Upon implementation of the prog ramme, the diesel fuel based el ectricity generation that is currently 
+dominant in DOM, GRE, SKN, SL and SVG will be largely and gradu ally displaced for baseload electricity
+
+
+---
+*Page 45*
+---
+
+ 
+EXPECTED PERFORMANCE AGAINS T INVESTMENT CRITERIA 
+ GREEN CLIMATE FUND FUNDING P ROPOSAL | PAGE 41 OF 63 
+ 
+	
+	E
+generation as it will no longer be cost-effective in comparison  with the new geothermal plant energy 
+production.  
+Socio-economic/environmental: 
+ The programme will benefit the t ourism sector, which is the ma in economic sector for the five countries, not 
+only by making it more competit ive in terms of costs through th e reduction of the electricity tariff but also by 
+greening the sector and making it more environmentally friendly . 
+ The programme will improve the air quality in the five islands  by significantly reduc ing the burning of fossil 
+fuels. 
+ 
+Gender-sensitive perspective: 
+ The programme targets 30% of wom en trained in construction, op eration and/or maintenance of energy 
+infrastructure and projects and 35 % of women participating in the programme consultations. The companies 
+will be encouraged to adopt practices such as hiring under equa l conditions, review of hiring requirements to 
+detect criteria that potentially  exclude women, and the possibi lity of setting targets related to women 
+participation. Besides, the proj ect will promote the inclusion of local women in training activities for the 
+construction, operation and main tenance work that does not requ ire specific qualifications.  
+ 
+E.4. Needs of the Recipient  
+Vulnerability and financing needs of the beneficiary country an d population 
+E.4.1. Vulnerability of countr y and beneficiary groups (Adaptat ion only)  
+Vulnerability of the countries: 
+ DOM, SL, SVG, SKN and GRE belong  to the group of the small isl ands developing states (SIDS), which are 
+especially vulnerable to the climate change and sea-level rises  also due to their isolation and small size (in 
+economic and demographic terms).  
+ Energy supply diversification is  of great importance for the p opulation which is vulnerable to the tariff 
+changes linked to the fluctuati on of fuel prices. Since the ele ctricity matrix of the 5ECC mainly depends on 
+one imported fuel source (80 to 100% based on imported liquid f ossil fuels; see section C.2.), they are 
+extremely vulnerable to any c hanges related to this fuel. Elect ricity tariffs for example are indexed to fuel 
+prices, or include a fuel surchar ge with a direct pass through to end consumers and therefore exposed 
+consumers to oil price volatilit y. In case of an extreme event supply shortages could occur and affect 
+electricity supply and lead to b lackouts. Diversification of en ergy supply is therefore urgently needed and GE 
+can play an important role in a chieving it.  Therefore replacin g fossil fuel power generation with GE, will 
+provide energy security which in turn translates in savings tha t can be used for emergencies in extreme 
+weather conditions (very common in the region).  
+Economic and social devel opment of the countries: 
+ DOM debt-to-GDP ratio has rea ched almost 80% in 2014. In 2015 Tropical Storm Erika has significantly 
+affected the island with a loss  estimated to 96% of the GDP. Do minica has a population of 71,293 (2011) and 
+a 2014 GDP of USD 524 million. 
+ GRE public debt has peaked in 2013 reaching approximately 107. 5% of the GDP. 2014 GDP of Grenada is 
+of USD882.2 million and GNI per capi ta is of USD 7850. GRE has a population of 106,300.  
+ SVG debt-to-GDP ratio increas ed by about 15 percent of GDP ove r 2008-2013, reaching 74 percent of GDP 
+in 2013. This ratio is expected  to continue to increase until 2 017. In December 2014, a s trong climatic event, 
+causing flooding and massive econ omic losses reaching 15% of th e GDP has further exacerbated the 
+country’s economic conditions on top of contraction from the gl obal slowdown, increase in commodities price 
+as well as two previous climati c events in 2010 and 2011. 2014 GDP of SVG is of USD 728.7 million and 
+GNI per capita is USD 6560. SVG  has a population of 109,400 peo ple.
+
+
+---
+*Page 46*
+---
+
+ 
+EXPECTED PERFORMANCE AGAINS T INVESTMENT CRITERIA 
+ GREEN CLIMATE FUND FUNDING P ROPOSAL | PAGE 42 OF 63 
+ 
+	
+	E
+ SKN high public debt to GDP r atio of 159.3% in 2010 fell signi ficantly to 103.1 perce nt at the end of 2013. 
+2014 GDP of SKN is of USD 833.3 million and GNI per capita is U SD 14450. SKN has a population of 
+54,790. 
+ SL debt-to-GDP reached almos t 80% in 2013. The island has a po pulation of 169,115. In 2012, St Lucia 
+faced a recession and a rate o f growth close to zero in 2013 an d had a 2014 GDP of US$ 1,404 million. 
+Because of the small size and is olation of the is lands, there i s no economy of scale in the electricity markets. 
+ Because of the small size and is olation of the islands, there is no economy of scale in the electricity markets. 
+ The economies of the three Small  Island Development States are  highly vulnerable to climate change, in 
+particular to extreme climatic  events and sea level rise. 
+ 
+Absence of alternative funding: 
+ The economic and fiscal situation of the five countries makes it costly for them to access international capital 
+markets for the development of geothermal/ renewable energy pro jects. High amount of capital is needed for 
+the development of geothermal pro jects in ECC. The borrowing ca pacity of the islands at appropriate terms 
+is limited.  
+ 
+E.4.2. Financial, economic, social and institutional needs  
+The economic and fiscal situation in the ECC makes access to in ternational capital marke t costly and poses obstacles 
+for the development of renewable energy projects such as GE. Th e limited borrowing capacity as implied by the Debt-
+to-GDP ratios averaging 86% lim its the governments’ ability to invest in Sustainable Energy (SE), and particularly in 
+GE technologies thus perpetuati ng dependency on imported fossil  fuels and its tightening effect on fiscal space. 
+ 
+The programme addresses fiscal c onstraints of the countries to take additional debt and the lack of private capital 
+with a similar risk profiles for GE development by providing gr ants and concessional financing.  
+ The programme will lead to an aver age decrease in tariffs from US$0.35/kWh in 2015 (at a fuel price of US$70 per 
+barrel) to US$0.28/kWh which woul d result in significant reduct ions in electricity bills and cost savings for customers. 
+ The only island with a geothermal bill approved is Nevis. This bill has been approved in 2008 and requires some 
+revision under the current G E development context. In addition the bill only covers Nevis, and requires to be 
+expanded to the Federation of SKN. In addition some regulatory aspects must be defined fo r the GE interconnection 
+between the two islands.  
+ 
+DOM, SLSVG and GRE have an init ial draft bill, but both countri es require additional suppo rt to revise and finalize 
+these bills. 
+Eligible activities for Capacity  Building in the 5 countries wi ll be the following: 
+- Funding  for consultants tha t will support the implementation  of GE projects 
+- Studies to establish strategies  and plans for the energy sect or 
+- Training and study tours to build skills among local authorit ies on GE technologies and projects and designing and 
+implementing Public Private Partnerships (PPPs) 
+- Transaction advisories for stru cturing and negotiating GE pro jects with private sponsors 
+- Legal, regulatory, and policy re form of the energy sector 
+ 
+These Institutional strengthening and capacity building activit ies will be implemented to address lack of local 
+capacities and lack of implementation capacity.  
+ 
+ 
+ 
+E.5.   Country Ownership  
+Beneficiary country (ie s) ownership of, and capacity to impleme nt, a funded project or programme
+
+
+---
+*Page 47*
+---
+
+ 
+EXPECTED PERFORMANCE AGAINS T INVESTMENT CRITERIA 
+ GREEN CLIMATE FUND FUNDING P ROPOSAL | PAGE 43 OF 63 
+ 
+	
+	E
+E.5.1. Existence of a national c limate strategy and coherence w ith existing plans and polic ies, including NAMAs, 
+NAPAs and NAPs  
+In 2012, the representative of the Alliance of Small Island Sta tes (AOSIS), issued the Barbados Declaration on 
+Achieving Sustainable Energy for All, in which among others the  countries expressed their concern that “[…] most 
+SIDS are highly dependent on imported oil and other fossil fuel s for transport and electricity generation and this is a 
+major source of economic vulner ability for SIDS. This leaves SI DS highly exposed to oil-price volatility. The increasing 
+cost of imported fossil fuels represent a major impediment to t he achievement of sustainable development and poverty 
+eradication in SIDS as scarce financial resources are diverted from efforts to promote social and economic 
+development and ensure environmental protection. Furthermore, m any remote and rural SIDS communities have little 
+or no access to modern and affordable energy services. “ And al so underscored that “[…] while SIDS contribute the 
+least to global emissions and have limited human, financial and  technical resources, our nations continue to take 
+significant actions towards the reduction of our own emissions including through regional and inter-regional energy 
+initiatives as our contribution to resolving global climate cha nge and as a demonstration of our moral leadership in the 
+fight against climate change.”  
+In the framework of this declara tion the SIDS adopted voluntary  commitment to transform th eir energy matrix, in 
+particular GRE and SVG: 
+GRE: “Grenada is committed to transition to a low carbon develo pment path through increasing the efficiency of energy 
+usage and the further deployment of indigenous sources of renew able energy. Grenada voluntarily commits to a 
+minimum target of reducing its total GHG emissions by 20% below  Business As Usual by 2020."  
+SVG: “(i) Reduce projected increase in peak demand by 5% by 201 5 and 10% by 2010 an strive to reduce power 
+losses down to a total of 7% by 2015 and 5% by 2020; (ii) Deliv er 30% of projected total electricity output from 
+Renewable Energy Sources (RES) by 2015 and 60% by 2020; (iii) I ncrease energy security and diversify the energy 
+portfolio; (iv) Reduce projected consumption of fossil fuels in  the transport sector by 10% by 2015 and 15 % by 2020; 
+and (v) Reduce projected electric ity generation by 5% by 2012 a nd 15% by 2020.” 
+This program will contribute to the achievement of these object ives. It is also in line with Caribbean Community 
+Secretariat (CARICOM’s) Caribbean Sustainable Energy Roadmap an d Strategy (C-SERMS) framework which is part 
+of the Regional Energy Policy establishing targets for the cont ribution of RE to total electricity generation. The ministers 
+of Energy of CARICOMs member states approved it in March 2013.  
+Moreover, the programme will c ontribute to the implementation o f the national energy policy of DOM, GRE, SKN, SL 
+and SVG (see section C.6 for more details on these policies) an d the development of geothermal resource bills. SKN 
+is the only country in the ECC wh ich has already adopted the Ge othermal Resource Development ordinance.  
+During the preparation of this pr ogramme, the IDB has worked ve ry closely with the CDB and the governments of 
+DOM, GRE, SKN, SL and SVG. Between May 28 and June 10, 2015, th e IDB carried out a mission in the ECC together 
+with the CDB for the preparat ion of the SEF. The mission includ ed: 
+a) Meetings with high government authorities (Prime Ministers, Minsters of Energy and Permanent Secretaries) as well 
+as GE developers to confirm the   demand for this programme 
+b) Identify a potential pi peline of projects. 
+The mission met with government representatives in St. Lucia on  June 1, St. Vincent & the Grenadines on June 2, in 
+Grenada on June 3, in St. Kitts and Nevis on June 5 and in DOM on June 8, to present the SEF and this programme 
+and identify potential projec ts, in particular with: 
+SL: Ms. Tracy Polius, Permanent Secretary, Department of Planni ng & National Development; Mr. John Calixte, Deputy 
+Permanent Secretary, Department of Planning & National Developm ent; Mr. Sylvester Clauzel,  Permanent Secretary 
+Ministry of Sustainable Development, Science & Technology; Mr. Barrymore Felicien --- Chief Public Utilities Officer 
+Ministry of Sustainable Development, Science & Technology
+
+
+---
+*Page 48*
+---
+
+ 
+EXPECTED PERFORMANCE AGAINS T INVESTMENT CRITERIA 
+ GREEN CLIMATE FUND FUNDING P ROPOSAL | PAGE 44 OF 63 
+ 
+	
+	E
+SVG: Hon. Ralph Gonsalves, Prime Minister Saint Vincent and the  Grenadines; Mrs. Laura Anthony Browne, Director 
+of Planning, Central Planning Di vision; and Mr. Ellsworth Dacon , Director Energy Unit. 
+GRE: Mr. Timothy Antoine, Perm anent Secretary — Finance, Energy ; and Mr. Mike Sylvester, Deputy Permanent 
+Secretary Ministry of Finance ; Mr. John Auguste, Snr. Energy Of ficer. 
+SKN: Hon. Ian Liburd, Minister o f Public Infrastructure, Post, Urban Development & Transport;  Ms. Lavem Queeley, 
+Director, Economic Affairs and PSI P, Ministry of Sustainable De velopment; Hon. Alexis Jeffers, Minister of 
+Communications, Works, Public Ut ilities, Posts, Physical Planni ng, Natural Resources and Environment, Agriculture, 
+Lands, Housing, Cooperatives and Fi sheries, Nevis Island Admini stration; and Hon. Troy Libu rd, Junior Minister with 
+responsibility for Communication s, Public Works, Public Utiliti es, Posts, Physical Planning , Natural Resources and 
+Environment.  
+DOM: Mrs. Rosamund Edwards, Financial Secretary; 	Ms. Careen Prevost, Permanent Sec retary,  Ministry of Foreign 
+Affairs & Caricom Affairs, & t he Ministry of Trade, Energy &  E mployment      
+  
+This programme has received support at the highest level of gov ernmental authorities in thefive participating 
+countries and is fully aligned with their national development priorities as confirmed by the No-Objection letters 
+issued for the GCF. 
+ 
+E.5.2. Capacity of accredited entit ies and executing entities t o deliver  
+ 
+The IDB is the main source of m ultilateral financing for Latin America and the Caribbean (L AC). Since 1961, the IDB 
+has provided almost US$246 billi on for projects to reduce pover ty, raise standards of livi ng, spur economic growth, 
+protect natural resources, fost er integration and trade, and re ach other agreed goals. IDB’ s operations approvals in 
+2014 totaled US$13.8 billion and av erage annual approvals have increased consistently from  US$9.8 billion in 2005–
+2009 to US$12.6 billion in 2010–2014 . The IDB is a global partn ership of 48 member countries in which the 26 
+borrowing countries of LAC hold t he majority of shares. The IDB  holds a credit rating of AAA/aaa. The IDB has 
+developed and is curr ently developing GE projects in Mexico, Ni caragua, Bolivia, Chile, Colombia, Ecuador and El 
+Salvador. 
+ The CDB is a regional financial in stitution established by an A greement signed in Kingst on, Jamaica, in 1969. It has 
+a membership of 27 countries consisting of 19 regional borrowin g members, 3 regional non-borrowing members and 
+5 non-regional non- borrowing members. In  2014, CDB assisted th e development agenda of Borrowing Member 
+Countries (BMCs) by providing US$270 million in l oans, grants, equity investments, and gu arantees. The adoption of 
+renewable energy (RE ) and energy efficiency (EE) solutions is a n imperative for CDB, as articulated in the new 
+Energy Sector Policy and Strat egy, which was endorsed by the Bo ard in December 2014. 
+ 
+In its 45 years of existence, t he CDB has been continuously inv olved in the development of the power sector, leading 
+on the transformation (through te chnical assistance and advice)  of several government departments, with 
+responsibility for electricity, i nto electric utility corporati ons. Lending over the period has largely supported 
+investments in generation and tran smission and distribution by public and private utilities . CDB’s involvement with the 
+sustainable energy sub-secto r began in the 1980s when, with dev elopment partners, a regional energy project was 
+executed by CDB. For the last 4 y ears, small-scale solar Photov oltaics (PV) installations are routinely included in 
+social infrastructure projects i n off-grid rural and hinterland  locations, such as schools, clinics and for water pumps. 
+Sustainable energy considerati ons have been mainstreamed in CDB ’s operations, so that routine screening for 
+opportunities for the inclusion o f SE components across sectors  is now normal. Loans to the private sector supported 
+generation from bio-mass by an independent power producer and m ore recently a utility-scale solar PV plant. The 
+Sustainable Energy Technical Assistance Project was implemented  through a grant to the OECS Commission in 
+2011 for the development of approp riate frameworks and strategi es for 9 OECS countries along with programs to 
+build awareness in the sub-regi on. Since 2014, the CDB has rene wed its focus on the energy  sector, with particular 
+emphasis on sustainable energy, th rough the establishment of ap propriate internal structures and staffing, policy and 
+strategy, partnership s and appropriate reso urce mobilization.
+
+
+---
+*Page 49*
+---
+
+ 
+EXPECTED PERFORMANCE AGAINS T INVESTMENT CRITERIA 
+ GREEN CLIMATE FUND FUNDING P ROPOSAL | PAGE 45 OF 63 
+ 
+	
+	E
+On January 27, 1977, the IDB Char ter was amended to allow it to  provide financial resources to the CDB to support 
+the development of its members. O n September 28, 1977, the IDB and the CDB entered into  an agreement setting 
+forth the general standards applic able to operating relations b etween both institutions . Since then, the IDB has 
+financed five global loan programs to the CDB totaling US$114 m illion where resour ces were on-len t by the CDB to 
+projects in its member countries. 
+ 
+ 
+E.5.3. Engagement with civil societ y organizations and other re levant stakeholders  
+ 
+IDB and CDB will require that a ll beneficiary countries develop  multistakeholder engagement plans and 
+consultations. Nevis and DOM alr eady performed mulitstakeholder  engagements. SVG implemented 
+multistakeholder meetings on Ju ly 15-July 19 2015. All other co unties will need to comply at the relevant project 
+development stage. Refere to the Environmental and Social Manag ement Report for more det ails on Stakeholder 
+Engagement Plans and stakeholder and community consultations. 
+ 
+E.6.  Efficiency and Effectiveness  
+Economic and, if appropriate, fi nancial soundness of the  proje ct/programme 
+E.6.1. Cost-effectiveness and efficiency  
+ 
+The programme address es the barriers discussed in C.2. and allo ws the countries to access different types of 
+support and funding based on t he stage of geothermal developmen t that they are in. The Programme will allow for a 
+tailored support based on the sp ecific needs of each country. A ll funding would be channeled through the CDB to the 
+projects and governments. By supporting the geothermal projects  that are already underway in the countries, the 
+programme will allow to build on the work that has already been  done in each country. 
+As mentioned the programme will provide funding to PPP structur es which involve the Government, a specialized 
+private firm, and in some cases could involve also the vertical ly-integrated electricity ut ility, thus crowding in public 
+and private investment. 
+Considering an expected lifetime  of emission reductions of 30 y ears (most likely the impacts will continue beyond 
+that period) the abatement cost o f the programme for the GCF is  of US$8.51 per tCO2e.  
+E.6.2. Co-financing, leveragi ng and mobilized lo ng-term investm ents (mitigation only)  
+ 
+The GCF will provide 44% of the  total programme funding of US$ 	USD190.468 million. The co -financing ratio of the 
+programme is therefor e 1:1.27.1. In addition the programme will  mobilize an additional estimated investments from 
+the private sector 0 f US$ 340 million. For more details please refer to the attached E xcel worksheet “GCF-
+Geothermal Development Facility-Budget and Timeline-IDB-April20 16. 
+Geothermal plants provide baseloa d electricity thus do not put pressure on the grid due to variability as solar and 
+wind energy do. The programme w ill replace existing baseload ge neration plants which could be adapted to provide 
+peaking capacity. This would enable future integration of varia ble solar and wind energy and thus catalyze long term 
+clean energy investment.  
+E.6.3. Financial viability  
+A Cost Benefit Analysis (‘CBA’) wa s developed estimating the ec onomic costs and benefits of the three GE projects 
+for a period of 40 years, as follows: 
+ Economic costs include the capital investments needed to compl ete the stages that are pending for the 
+geothermal projects in each country.
+
+
+---
+*Page 50*
+---
+
+ 
+EXPECTED PERFORMANCE AGAINS T INVESTMENT CRITERIA 
+ GREEN CLIMATE FUND FUNDING P ROPOSAL | PAGE 46 OF 63 
+ 
+	
+	E
+ Economic benefits include the savings in generation costs and the benefits from reductions in CO2 
+emissions. Generating electricit y from geothermal resources cos t less than generating electricity from fuel 
+oil. Therefore, the countries will save in generation costs by replacing fuel oil generation with geothermal 
+generation. In addition, geothermal generation produces less CO 2 emissions than fuel oil generation. 
+Therefore, the countries will benef it from reductions in CO2 em issions by replacing fuel oil generation with 
+geothermal generation.  
+The results are presented in the following table which shows th e net present value of the benefits, costs, and net 
+benefits of the GE project in eac h of the 5ECC as well as the i nternal rate of return (I RR) as shown in table 10. 
+ 
+Table 10: Economic Costs and Benefits of the Geothermal Project s (US$ millions) 
+Project Present Value 
+(PV) of 
+Benefits (US$) PV of Costs 
+(US$) PV of net 
+benefits (US$) IRR 
+DOM 110.6 60.6 50.0 20.4% 
+GRE 100.7 78.9 21.8 14.7% 
+Nevis 97.4 78.3 19.2 14.5% 
+SL 178.6 121.8 57.4 16.7% 
+SVG 99.1 80.1 19.0 14.4% 
+Total 586.4 419.1 167.3  
+ 
+The most important effect of having GCF funding for the 5ECC is  the enhancement of GE project feasibility as the 
+average cost of financing for GE projects is reduced and ensuri ng, that by providing an end to end solution, these 
+projects will reach GE plant c onstruction and generate the expe cted benefits. Also, GCF funding leads to a higher 
+reduction in average tariffs for final users as compared to the  expected reduction without GCF. The reduction in the 
+average tariff to customers is h igher due to the availability o f GCF funding. Below, as shown in table 11, the average 
+electricity tariff for the 5ECC is  0.28US$/kWh with GCF funding  and US$0.29/kWh without GCF funding.   
+More importantly, GCF will contribute to assure that funding fo r end to end investments (from exploration until 
+transmission lines and substatio ns) will occur, and therefore p ower will be generated in the shortest time possible, 
+hence oil power generation will be displaced faster than with G CF funding. Before the SEF, funding was scattered, 
+obtained is small quantities and had no clear planning of fundi ng and its activities. The SEF, with the GCF funding, will 
+contribute to help governments plan carefully their GE developm ents, expedite GE investments, harnesses the benefits 
+of concessional lending, and translate these into lower electri city tariffs, making their c ountries more competitive.  
+The table below compares the estimated all in cost of project d ebt, including both concessional debt made available 
+through this programme and IDB-SEF and commercial debt. GCF fun ding helps reduce the all in cost of debt further 
+for GE projects in the region thus translating into even lower electricity tariffs. GCF funding reduces average all in cost 
+of debt from 5.16% to 4.15% thus r educing average electricity t ariffs from 0.29 to 0.28 US$/Kwh.  
+ Table 11:Value added of GCF (all in cost and tariff) 
+  All in cost of total project debt Est. Avg. tariff in country with 
+geothermal
+
+
+---
+*Page 51*
+---
+
+ 
+EXPECTED PERFORMANCE AGAINS T INVESTMENT CRITERIA 
+ GREEN CLIMATE FUND FUNDING P ROPOSAL | PAGE 47 OF 63 
+ 
+	
+	E
+  (annual %) 
+Avg. tariff 
+(2014) 
+(US$/kwh) (US$/kwh) 
+Country With GCF Without G CF With GCF Without GCF 
+DOM 2.09% 4.03% 0.36 0.24 0.26
+GRE 4.57% 5.09% 0.37 0.34 0.35
+Nevis 4.59% 6.06% 0.32 0.26 0.28
+SL 5.57% 6.50% 0.32 0.29 0.30
+SVG 3.12% 4.10% 0.35 0.28 0.29
+Average 4.15% 5.16% 0.35 0.28 0.29
+ 
+E.6.4. Application of best practices  
+ 
+Technical, Environmental and Pr ocurement best practices will ap ply in this programme.  
+ 
+From a technical point of view, t he high-risk cost of drilling to confirm the existence of a  viable geothermal resource 
+remains one of the key challeng es facing the industry. However,  following best practices in the exploration stage will 
+reduce the uncertainty of the reso urce’s location, size, and pr oductivity characteristics, w hich in turn will lower the 
+risk during the drilling phase. The International Finance Corpo ration (IFC) and the International Geothermal 
+Association in 2014 published a “B est Practices Guide for Geoth ermal Development”22 which can be used by 
+developers and contractors to i dentify the most appropriate too ls and techniques to define the resource, and by 
+investors to ensure that projects have made all reasonable effo rts to reduce risks. Whenever  applicable to the project 
+and country specific context, th is document will be used as a r esource to ensure best pract ices are applied. IDB will 
+therefore contract specialized consultants who will accompany C DB in the programme imp lementation process and 
+ensure best practices projects are applied during all project d evelopment phases. 
+ 
+Environmental and social best practices are applied by requirin g all projects funded by t he programme to follow IDBs 
+and CDBs best environmental and so cial safeguard policies, stan dards and guidelines which follow best international 
+practices, which follow Internatio nal Finance Corporation (IFC)  environmental and social performance standards.  
+ From a procurement point of view, the programme will ensure tha t competitive biddi ng process will oc cur for all GE 
+stages in all beneficiary countries following CDB procurement r ules that are compatible with IDB procurement 
+policies.  
+ 
+ 
+E.6.5. Key efficiency and effectiveness indicators  
+ Estimated cost per t CO 2 eq, defined as total investmen t cost / expected lifetime emiss ion reductions 
+(mitigation only)  
+																																																													
+22 http://goo.gl/Am9W4i
+
+
+---
+*Page 52*
+---
+
+ 
+EXPECTED PERFORMANCE AGAINS T INVESTMENT CRITERIA 
+ GREEN CLIMATE FUND FUNDING P ROPOSAL | PAGE 48 OF 63 
+ 
+	
+	E
+ 
+GCF 
+core 
+indicators  
+(a) Total project financing US$ USD190.468 million million   
+(b) Requested GCF amount  US$ 80  million  
+(c) Expected lifetime emission re ductions overtime  9,402,621 t CO 2eq 
+(d) Estimated cost per tCO 2eq (d = a / c) US$ 20.3  / tCO 2eq 
+(e) Estimated GCF cost per tCO 2eq removed (e = b / c) US$ 8.5  / tCO 2eq 
+ 
+Methodology used for calculating the indicators (d) and (e) abo ve. 
+The “Total project financing” is the whole amount of funding ma de available through the programme 
+which includes IDB, CTF, JICA, GEF, CDB and GFC.  
+For emission reduction calculations, please refer to chapter E. 1.2.  
+ 
+ 
+Expected volume of finance to be leveraged by the proposed proj ect/programme and as a result of the 
+Fund’s financing, disaggregated by  public and private sources ( mitigation only) 
+ 
+The total funding including the Programme and other donors and private sector is cu rrently estimated at 
+US$ 530 million. For more details please refer to the attached Excel worksheet “ GCF-Geothermal 
+Development Facility-Budget and Timeline-IDB-April2016 
+  
+ 
+   
+Other relevant indicators (e.g. e stimated cost per co-benefit 
+generated as a result of t he project/programme)
+
+
+---
+*Page 53*
+---
+
+ 
+APPRAISAL SUMMARY 
+ GREEN CLIMATE FUND FUNDING  PROPOSAL | PAGE 49 OF 63 
+ 
+	
+	F
+* The information can be drawn from the project/programme appraisal document.  
+ 
+F.1.  Economic and Financial Analysis  
+ 
+A financial analysis of GE projec ts is presented below for each  of the participating countri es. Please note that the IRR 
+is Internal Rate of Return of t he cash flows to equity investor s and we assume a 12% real d iscount rate, as shown in 
+table 12.  
+ 
+Table 12: NPV and IRR to  equity investors of GE  
+Country NPV 
+(US$ Millions) IRR to equity 
+investors (real)  PPA (US$/kWh) 
+DOM 1.9 15% 0.096 
+Grenada 5.6 18% 0.187 
+Nevis 5.3 15% 0.172 
+SL 10.1 15% 0.163 
+SVG 3.5 15% 0.145 
+ 
+Justification for concessionality:  Calculations were made to estimat e the impact of financing cost on the indicative 
+PPA price for small scale GE. O nly with the co ncessional funds from the GCF and the blending of funds will 
+concessionality be enough to make projects feasible and result in electricity tariff reducti on as presented in the figure 
+8 below. The analysis of figure 8 sh ows that blended rate of co ncessional loans at 2.7% or below will translate in tariff 
+reduction, any rate above, will have an increment in tariff, he nce the need for concessional funding.  
+Figure 8: Effect of Concc esional loans in Tariff
+
+
+---
+*Page 54*
+---
+
+ 
+APPRAISAL SUMMARY 
+ GREEN CLIMATE FUND FUNDING P ROPOSAL | PAGE 50 OF 63 
+ 
+	
+	F
+Using SVG as an example, the fo llowing figure shows how the ava ilability of concessional funding as offered through 
+IDB-SEF and this programme, would allow for the reduction of el ectricity tariffs in the country. In the absence of 
+concessional funding, GE projects would rely on a higher share of equity contributions from private developers in 
+order to prove the geothermal res ources and undertake capital i ntensive investments in these small electricity 
+markets. This would increase t he average cost of capital for GE  projects leading to an increase instead of a decrease 
+of electricity tariffs.  
+As the following figure shows, in a scenario without concession al funding (see bar labeled Geothermal Without SEF) 
+tariffs could incre ase around 30% with respect to the 2015 aver age. With concessional funding (see bar labeled 
+Geothermal With SEF) allocated  to SVG so that 100% of drilling needs (exploratrory, production, reinjection) and 70% 
+of field development and plant c onstruction fi nancing needs are  met by IDB-SEF the prog ramme, the estimated PPA 
+would be 0.186 US$/KWh leading to  a 18% reduction in electricit y tariffs with respect to t he 2015 average in SVG.  
+This is meant only as an exampl e of the effect of concessional funding on electricity ta riffs. It does not reflect the 
+allocation of IDB-SEF and programm e funds used to evaluate the programme and to elaborate this funding proposal.  
+Figure 11: SVG - Concessional terms make tariff reductions poss ible 
+ 
+ 
+F.2.  Technical Evaluation   0.18 0.18
+0.10 0.100.20
+0.12
+0.06 0.060.20
+0.06‐
+0.080.38
+0.300.36
+0.22
+2013:	Oil
+US$97/Bl2015:	Oil
+US$50/BlGeothermal
+Without	SEFGeothermal
+With	SEFElectricity 	tariff	(US$/KWh)
+Max	additional	Geothermal	contribution	to	tariff Geothermal	contribution	to	tariff
+Diesel:	fuel	cost	contribution	to	tariff Diesel:	plant	cost	con tribution	to	tariff
+TOTALGeothermal  PPA rate 
+US$0.129/kwh                 
+46% of total generation26% reduction21% increase
+MAX Geothermal  PPA rate 
+US$0.3/kwh
+
+
+---
+*Page 55*
+---
+
+ 
+APPRAISAL SUMMARY 
+ GREEN CLIMATE FUND FUNDING P ROPOSAL | PAGE 51 OF 63 
+ 
+	
+	F
+As shown in figure 1, GE has the lowest levelized cost of energ y, largest potential and displaces more oil than any 
+other technology.  GE is therefore  the best technical solution for the 5ECC because it c an provide baseload energy 
+with more than 90% capacity fa ctor, at the lowest cost and can therefore fully replace liquid fossil based generation 
+and doesn’t generate grid integrat ion issues (such as back up c apacity and intermittency is sues) as wind and solar 
+do.  
+F.3.  Environmental, Social Assessment, including Gender Consideratio ns 
+IDB Policies and management programs related to Environmental a nd Social Assessment, as we ll as gender policies, 
+are fully consistent with GCF requirements. IDB has gone throug h an in-depth assessment by the GCF Secretariat 
+and the Independent Accreditati on Panel and a full accreditatio n with no conditions has been awarded.  
+As reference, the conclusion of the Independent Panel on IDB ap plication, as included in the GCF Board document 
+“Consideration of Accreditation Proposals” endorsed by the GCF 10th Board: “The applicant fully meets the 
+requirements of the Fund’s interim ESS in relation to t he high E&S risk Category A/I- 1; and (c) The applicant has 
+demonstrated that it has policies, procedures and competen cies by which to implement its gender policy, which is 
+found to be consistent with the Fund’s gender policy, and has also demonstrated that it has experience with gender 
+consideration in the context of climate change activities” 
+All the steps required by the ID B in relation to the ESS and Ge nder are described in deta il in the IDB accreditation 
+application sections 6 and 7, respectively. 
+Environmental and Social Impacts : The exploration phase of each project will include possible n egative 
+environmental impacts and risks , though the more significant im pacts are expected during construction. Each of the 
+projects will involve drilling and  testing of new production we lls, reinjection wells, construction of the power plants 
+buildings, installation of equipm ent and, potential new access roads and electrical transmiss ion associated facilities. 
+Main construction impacts expecte d are: (i) potential contamina tion of soil and ground water by drilling mud 
+(essentially a suspension of a natural clay material - bentonit e - with some additives added), drilling mud with 
+cuttings, or through the reinjection of the geothermal fluid (e ssentially a mixture of hot water and steam, at 
+temperatures that can reach 290°C , with dissolved salts and gas es); (ii) incre ased water demand  from wells drilling 
+and testing and for the cooling system; (iii) potential land co ntamination due to the dispos al of drilling mud and solid 
+wastes; (iv) noise and vibrati ons generated during drilling; an d (v) effects of drilling on groundwater aquifers, nearby 
+hot springs, natural thermal features, and induced micro-seismi city and/ground subsidence; (vi) increased heavy 
+traffic and potential traffic a ccidents in the vicinity of the project site; (vii) noise and  dust emissions; and (viii) soil 
+erosion and loss of vegetation.  
+ Most of these construction impac ts and risks can be adequately mitigated through the implementation of appropriate 
+environmental, health and safety management plans and standard operating procedures (SOPs). Once in operation, 
+main impacts and risks are: (i) an increased level of micro-sei smicity in the region; (ii) lan d subsidence; (iii) surface 
+and underground water contamination due to accidental spills; ( iv) mud contamination; (v) air emissions of hydrogen 
+sulfide; (vi) health and occupat ional accidents; and (vii) incr eased exposure of community and workers to explosions, 
+well blowouts and pipeline failures. 
+ 
+As of now Environmental and Soci al Impact Assessments (ESIA) ha ve been done for DOM, Nevis (exploration 
+phase), and SVG (exploration pha se); the latter financed by IDB . Further ESIAs will be fi nanced by the programme 
+and/or IDB-SEF as required.  
+ 
+Management of Environmental and Social Aspects:  CDB’s current Environmental and Social Policies and Review 
+Procedures (ESRP) were approv ed at the end of June 2015. Their procedures include a set of nine environmental 
+and social performance standards  (PS) that reflect the principl es, core policies, standards and best practice 
+approaches adopted and used in the treatment of sensitive envir onmental and social issues by the multilateral
+
+
+---
+*Page 56*
+---
+
+ 
+APPRAISAL SUMMARY 
+ GREEN CLIMATE FUND FUNDING P ROPOSAL | PAGE 52 OF 63 
+ 
+	
+	F
+financial and development community. As a matter of practice, u nder this Facilit y, sub-projects will be reviewed 
+against the IFC Performance Standa rds and World B ank Environmen tal, Health and Safety (EHS) Guidelines. 
+IDB and CDB have agreed that for a ll Geothermal hi gh risk sub-p rojects (Category A and B+), IDB will undertake 
+Environmental and Social Due D iligence (“ESDD”) alongside CDB’s  team throughout the project preparation, 
+appraisal, and monitoring phases. The objective of this hand-in -hand due diligence is to help build environmental and 
+social (E&S) capacity in CDB’s a nalysis of high risk geothermal  projects, and ensure that project impacts are 
+adequately mitigated according to  the IFC Performance Standards  and WB EHS Guidelines.  
+ 
+The ESSD will specifically addr ess the following aspects: 
+a. Confirmation that the Projec t has been designed and carried out in compliance with environmental law and 
+regulations of the specific count ry, any applicable IDB Environ mental and Social Safeguards and IFC EHS 
+Guidelines; 
+b. An assessment of the Project' s Environmental, Health and Saf ety Management System, including plans and 
+procedures, to assess  their adequacy in term s of responsibiliti es, training, auditing, repo rting, and resources to 
+be made available to ensure adequate implementation; 
+c. Detailed review of the drillin g program and storage faciliti es for the drilling mud; Evaluation of management of 
+drilling fluids and mud cuttings (treatment on-site and disposa l); Assessment of the monitoring framework of the 
+drilling fluids and post-treatment techniques; 
+d. Verification if public consult ations have been conducted acc ording to Bank’s requirements and in accordance 
+with OP-765; especially in terms of good faith negotiation; 
+e. Assess if sufficient social baseline efforts have been done by the company to obtain an accurate socio-
+economic portray of the Indigenous communities; 
+f. Assessment of potential adverse socio-economic impacts of la nd acquisition, construction activities, temporary 
+loss of access to agricultural land required for the installati on of the transmission line; Evaluation of mitigation 
+and compensation framework and measures for the current land ow ners along planned transmission lines; 
+g. Assess impacts related to the presence of the workers camp a nd if management plans are adequate, 
+especially in terms of waste w ater storage and treatment; Evalu ation of the social impacts associated with the 
+presence of a people workers camp (in migration, substances-abu sed problems, acceptance from host 
+communities, retrenc hment management, etc.); 
+h. Assess health and safety pra ctices for workers and if the Pr oject is meeting best industry standards in terms or 
+working at high altitude and in remote region; 
+i. Evaluation of potential impa cts and risks on seismicity and subsidence, as well as measures considered to 
+monitor and mitigate these risks; 
+ 
+Due to the high risk nature of G E projects, the IDB will engage  the CDB in a “hand-in -hand” E&S due diligence 
+process on all geothermal sub-projects, providing final sign of f and closely monitoring project implementation with the 
+support of an external consult ant.  In addition to this agreed due diligence process require ment, the IDB will require 
+as part of the loan agreement t hat the CDB comply with all appl icable local environmental, social, health and safety, 
+and labor regulatory requirements, and in relation to the finan cing of sub-projects with ID B’s proceeds ensure that 
+each sub-project complies with : (i) CDB´s E&S policies and revi ew procedures; (ii) in-cou ntry regulations; (iii) IDB’s 
+list of excluded activities; (iv ) fundamental principles of the  rights at work; and (v) the International Finance 
+Corporation (IFC) performance standards and applicable WB envir onmental, health and safety guidelines. For further 
+details on the possible risks and impacts, due diligence proces s stages and risk management mechanisms, and 
+contractual requirements, pleas e refer to the Environmental and  Social Management Repor t (ESMR) for the IDB-
+SEF. 
+ Gender: The programme will incorporate in its components elements which  will contribute to the achievement of the 
+first strategic gender objective  in the Implementation Guidelin es for the Operational Policy on Gender Equality in
+
+
+---
+*Page 57*
+---
+
+ 
+APPRAISAL SUMMARY 
+ GREEN CLIMATE FUND FUNDING P ROPOSAL | PAGE 53 OF 63 
+ 
+	
+	F
+Development that is empowering wo men economically by facilitati ng women’s access to economic opportunities and 
+promoting women’s entrepreneurship. 
+ 
+The programme will encourage gend er equality in hiring. The com panies will be encouraged to adopt practices such 
+as hiring under equal conditions , review of hiring requirements  to detect criteria that pot entially exclude women, and 
+the possibility of setting target s related to women participati on. Besides, the project will prom ote the inclusion of local 
+women in training activities for the construction, operation an d maintenance work that does not require specific 
+qualifications.  
+ 
+When possible the project will support a shift from the informa l to the formal sector for women’s businesses that 
+provide services suc h as cleaning, food services, textile produ ction for uniforms, etc. to the geothermal facility. To 
+secure the working environment of women employed in the plant t here will be exclusive bathrooms for women, and 
+appropriate uniforms for females.  
+ 
+F.4.  Financial Management and Procurement 
+Procurement:  Given the consistency of CDB procurement policies with those o f the IDB, CDB will use its own 
+procurement policies for operations receiving financing from th is programme. IDB policies require that funds from Bank 
+loans be used only for procurement of activities contracted wit h firms or individuals of IDB member countries. Therefore, 
+an exception will be requested fo r approval by the Board of Exe cutive Directors so that g oods, works and services 
+providers from CDB member countries, which are not members of t he IDB, may participate in the procurement 
+processes for ac tivities to be financed wi th resources of the S EF.  
+ 
+Financial Management:  The CDB’s financial management electronic system, which includ e s  a  B a n k  E n t e r p r i s e  
+System (Infor’s SmartStream) and a Loan, Borrowing and Grant Ma nagement System (Flexcube) will be used to 
+facilitate the financial management and reporting of the projec t. The financial reports are prepared in accordance with 
+International Financial Reporting Standards under the historica l cost basis except as modified by the revaluation of debt 
+securities at fair value through profit and loss and derivative  financial instruments are reflected at fair value. Financial 
+management of the project will be i) guided by the CDB’s accoun ting policies and procedures, and procedures related 
+to the financial and operational aspects related to the managem ent of projects under their administration; and ii) in 
+accordance with requirements as per IDB’s Financial Management Guidelines ; Disbursement Handbook and Financial 
+Reports and External Audit Handbook.  
+ 
+External Control and Reporting Requirememts of the project.  
+o Submission of Annual Audited Finan cial Statements of the CDB.  These will be become due for 
+submission within 180 days following the close of CDB’s fiscal year end (December 31st). 
+o Annual Assurance report on the pr ocess of preparation and subm ission of disbursement requests. 
+The engagement will be conducted by an independent audit firm t hat is eligible to the IDB, and the 
+report submitted within 180 day s following the close of CDB’s f iscal year end, December 31st. 
+ 
+Financial structure : The CDB has two sources of funding for its borrowing members:  (i) OCR financed from equity 
+contributions, market borrowings and income; and (ii) Special F unds Resources (SFR). The SFR comprises a number 
+of funds, the largest of which is the Unified Special Developme nt Fund, while all others funds  together are referred to 
+as the Other Special Funds (OSF). The Ordinary Capital (OC) res ources of the IDB will be treated and on-lent by CDB 
+as its OCR resources; the CTF, G CF, and GEF resources will be m anaged and accounted for as special funds within 
+the OSF. More information is a vailable in the financial terms s heet.
+
+
+---
+*Page 58*
+---
+
+ 
+APPRAISAL SUMMARY 
+ GREEN CLIMATE FUND FUNDING P ROPOSAL | PAGE 54 OF 63 
+ 
+	
+	F
+Disbursements and commitment period . It is expected that the loan will have an 8 year disbursement  period. As 
+operations are executed, the CDB  will present disbursement requ ests based on the advance of the programme. 
+Advances will be disbursed based on the liquidity needs of the project within a 6 month period. With the exception of 
+the first advance of funds, the CDB should have presented a jus tification for the use of at 70% of the total cumulative 
+balances pending justification for this purpose, and the Bank h aving accepted such justification. 
+The satisfactory delivery of relevant Environmental and Social Impact Assessments (ESIA) will be a precondition to 
+disbursement for the programme fr om CDB to each sub- project. 
+Execution and administration . The provisions governing progra m execution, including the use  of SEF resources 
+and eligibility of each financia l instrument to be used on a pr oject by project bas is, will be establish ed in the Operating 
+Manual (OM) agreed by the IDB and CDB. It is a special contract ual condition prior to the  first disbursement of the 
+IDB-SEF that: (i) the CDB provide s evidence of the entry into e ffect of the OM, including the Credit Regulations of the 
+program, in terms previously agreed with the Bank; and that (ii ) the Bank provides its non-objection for the sub-loans 
+model agreements, meeting the mini mum requirements established in the OM .
+
+
+---
+*Page 59*
+---
+
+ 
+RISK ASSESSMENT AND MANAGEMENT 
+ GREEN CLIMATE FUND FUNDING P ROPOSAL | PAGE 55 OF 63 
+ 
+	G
+ 
+G.2. Risk Factors and Mitigation Measures  
+Please describe financial, technical and operational, social a nd environmental and other ri sks that might prevent the 
+project/programme objectives from being achieved. Al so describe the proposed risk mitigation measures.  
+Selected Risk Factor 1  
+Description Risk category Level of risk  Probability of risk 
+occurring  
+Environmental and Social Safeguard Risks:  The 
+construction impacts for GE projects can include: (i) 
+potential contamination of soil and ground water by drilling mud; (ii) increased water demand from wells 
+drilling and testing and for t he cooling system; (iii) 
+potential land contamination due to the disposal of drilling mud and solid wastes; (iv) noise and vibrations 
+generated during drilling; (v) effects of drilling on 
+groundwater aquifers, nearby hot springs, natural thermal features, and induced micro-seismicity 
+and/ground subsidence; (vi) increased heavy traffic and 
+potential traffic accidents in the vicinity of the project 
+site; (vii) noise and dust emissions; (viii) soil erosion and 
+loss of vegetation; (ix) potential impacts to thermal features; and potential impacts to marine habitat and 
+fauna. 
+ Social and 
+environmental  High (>20% of 
+project value)  Medium  
+Mitigation Measure(s) 
+Most of these construction impacts and risks can be adequately mitigated through the implementation of appropriate 
+environmental, health and safety management plans and standard operating procedures.   
+Due to the high risk nature of t hese sub-projects, the IDB will  engage the CDB in a “hand-in-hand” E&S due 
+diligence process on each Catego ry A and B+ GE project (accordi ng to IDB policies A is the highest risk 
+classification; C the lowest), p roviding final sign off and clo sely monitoring project impl ementation with the support of 
+an external consultant. In additi on to this agreed due diligenc e process requirement, the  IDB will require as part of 
+the loan agreement t hat the CDB comply with all applicable loca l environmental, social, heal th and safety, and labor 
+regulatory requirements, and in relation to the financing of su b-projects with IDB’s proceeds ensure that each sub-
+project complies with: (i) CDB´s  E&S policies and review proced ures; (ii) in-country regulations; (iii) IDB’s list of 
+excluded activities; (iv) fundam ental principles of the rights at work; and (v) the International Finance Corporation 
+performance standards and applicable World Bank environmental, health and safety guidelines.  
+ 
+Selected Risk Factor 2  
+Description Risk category Level of risk  Probability of risk 
+occurring  G.1.  Risk Assessment Summary  
+ 
+The main risks identified for th is programme are Environmental and Social Safeguard Ri sks, Fiduciary Risk and 
+Institutional capabilities risk .
+
+
+---
+*Page 60*
+---
+
+ 
+RISK ASSESSMENT AND MANAGEMENT 
+ GREEN CLIMATE FUND FUNDING P ROPOSAL | PAGE 56 OF 63 
+ 
+	G
+Fiduciary risk:  The fiduciary risk has been assessed 
+as low risk mainly due to the adequacy of the CDB’s 
+organization structure and procedures for fiduciary 
+management, its demonstrated capacity in the fiduciary management of projects, and, the overall low risk of the 
+CDB operational performance.  
+The CDB is an AA rated financial institution that, 
+according to recent reports is based on (i) its strong 
+business profile which is refl ected in its role as “the 
+cornerstone lender” to Car ibbean governments and its 
+“extremely strong financial profile”, reflected through its strengthening capital ad equacy, its less diversified 
+funding profile, and its solid liquidity. It should also be noted that the CDB has als o continued to strengthen 
+its governance structure thr ough the consolidation of 
+its risk management and m onitoring framework, as 
+well as through the introduction of new institutional checks and balances”.
+ 
+ Financial  Low (<5% of 
+project value)  Low 
+Mitigation Measure(s) 
+A financial due diligence of CDB was undertaken by the ID B for the preparation of the Programme confirming the 
+conclusions reached by the Standard & Poor's assessment. 
+ 
+Selected Risk Factor 3  
+Description Risk category Level of risk  Probability of risk 
+occurring  
+Institutional capabilities of  executing sub-projects 
+through PPP . PPP are relatively new in the Caribbean 
+and both the CDB and count ry governments have a 
+limited track record structuring and financing this type of projects and sub-loans.
+ Technical and 
+operational  Medium (5.1-
+20% of project 
+value)  Low 
+Mitigation Measure(s) 
+For this not to affect the exec ution and effect iveness of the P rogramme, technical assistan ce activities both to the 
+EA and country governments to stren gthen their capacity to impl ement the Programme have been included, 
+considering among othe r aspects, the capa city of lending to pri vate sponsors. In additi on to this, the CDB, in 
+cooperation with its development partners, including the IDB an d its Multilateral Investment Fund, has established a 
+US$1.2 million regional  PPP support program d esigned to assist its borrowing member count ries in the development 
+and implementation of PPP. Compon ent 2 of this programme is des igned to specifically mitig ate this risk, providing 
+technical assistance and capaci ty building to both the EA and b eneficiary countries. Addi tionally, the IDB will be 
+funding a consulting firm that will provide technical support t o the EA during the entire loan preparation and approval 
+of at least one GE project.  
+Selected Risk Factor 4  
+Description Risk category Level of risk  Probability of risk 
+occurring
+
+
+---
+*Page 61*
+---
+
+ 
+RISK ASSESSMENT AND MANAGEMENT 
+ GREEN CLIMATE FUND FUNDING P ROPOSAL | PAGE 57 OF 63 
+ 
+	G
+Institutional capabilities of  executing agencies of 
+sub-projects . Given the small size of the countries 
+and the consequent scarcity of management 
+resources for projects, weak in stitutional capabilities of 
+executing agencies could a ffect the effectiveness of 
+projects.  
+ Technical and 
+operational  Medium (5.1-
+20% of project 
+value)  Low 
+Mitigation Measure(s) 
+To mitigate this risk the Progra mme will ensure th rough Compone nt 2 the transfer from  third party technical 
+expertise to develop local compet encies as well as the availabi lity of specific training and advisory services as 
+required by the EA and the projects.
+
+
+---
+*Page 62*
+---
+
+ 
+RESULTS MONITORING AND REPORTING 
+ GREEN CLIMATE FUND FUNDING P ROPOSAL | PAGE 58 OF 63 
+ 
+	
+	H
+H.1.  Logic Framework.    
+Please specify the logic framewor k in accordance with the GCF’s  Results Management Framework  and 
+Performance Measurement Framework . 
+ 
+H.1.1. Paradigm Shift Objectives and Impacts at the Fund level23 
+Paradigm shift objectives 
+Shift to low-emission 
+sustainable development 
+pathways This project will have a transfor mational effect for the ECC by  replacing power generation 
+currently based on liquid fossil  fuels with geothermal power, a  renewable energy source. 
+Not only will carbon emissions be reduced, but the electricity cost for final users will be 
+reduced boosting the r egion’s competitiveness.  
+ In addition to the GE developm ent that will be supported by the  programme in these five 
+countries, the ECC have the pot ential to develop an additional GE plant in DOM to export 
+to neighboring islands. Depending on the results of SVG’s explo ration, if successful, more 
+GE could be developed to expor t to Barbados. Also, in SKN the p rogramme has the 
+potential to scale up to a sec ond phase, to add additional 25MW  in order to supply St Kitts 
+from Nevis through a subsea cabl e. SKN could also develop more GE to export to the 
+neighboring islands (S aba and Montserrat). 
+ 
+The successful imple mentation of the GeoSmart Initiative will g enerate a wealth of 
+experience that can be shared thr ough south-sout h cooperation b etween SIDS from the 
+Caribbean and the Pacific. Facin g similar conditions and barrie rs than the ECC, the Pacific 
+islands have an important untapp ed geothermal resource potentia l, in particular Papua 
+New Guinea, Vanuatu, Samoa, Tonga , N. Marianas Islands. Fiji, S olomon Islands and New 
+Caledonia.  
+Expected Result Indicator Means of 
+Verification 
+(MoV) Baseline Target 
+Assumptions Mid-term  
+(if applicable)  Final  
+Fund-level impacts  
+M1.0 Reduced 
+emissions through 
+increased low-emission 
+energy access and 
+power generation Tonnes of carbon 
+dioxide equivalent (t 
+CO2 eq) to be 
+reduced or avoided  
+per year   
+Reporting of 
+annual energy produced in MWh per year from 
+each 
+supported 
+GE plant 
+ 0 1,542,1
+04 9,402,621 This targets are 
+based on the 
+assumption that 60 MW of GE capacity are 
+installed 
+  
+																																																													
+23 Information on the Fund’s expect ed results and indicators can be found in its Performance Measurement Frameworks 
+available at the following link ( Please note that some indicato rs are under refinement): 
+http://www.gcfund.org/fileadmin/ 00_customer/documents/Operation s/5.3_Initial_PMF.pdf
+
+
+---
+*Page 63*
+---
+
+ 
+RESULTS MONITORING AND REPORTING 
+ GREEN CLIMATE FUND FUNDING P ROPOSAL | PAGE 59 OF 63 
+ 
+	
+	H
+H.1.2. Outcomes, Outputs, Activities and Inputs at Project/Prog ramme level 
+Expected Result  Indicator  Means of 
+Verification 
+(MoV)  Baseline  Target  
+Assumptions  Mid-
+term (if 
+applicable)  Final  
+Project/programme 
+outcomes Outcomes that c ontribute to Fund-level impacts 
+M6.0 Increased number 
+of small, medium and 
+large low-emission 
+power suppliers MWs of low-
+emission energy 
+capacity installed, 
+generated and/or 
+rehabilitated as a 
+result of GCF 
+support  Report from 
+CDB with 
+information 
+from 5ECC 
+and private 
+project 
+sponsors. 0 7.5 60 MW Field Development 
+(plant) will be 
+financed by the 
+Programme in 5 
+countries 
+(10MW/country in 
+DOM, GRE, Nevis, 
+SVG and 20MW in 
+SL) 
+M5.0 Strengthened 
+institutional and 
+regulatory systems  # of low-emission 
+policies, laws, 
+strategies and plans 
+supported by the 
+fund  Cabinet 
+approval of 
+GE 
+developmen
+t bills 1 (Nevis) 1 4 Countries will 
+prepare 
+geothermal 
+development bills 
+and present them 
+to parliament for 
+approval 
+Project/programme 
+outputs Outputs that contribute to outcomes 
+1.1	Drilling Exploration # of drilling 
+exploration 
+campaigns Report from 
+CDB with information from 5ECC 
+and private 
+project 
+sponsors. 0 1 2 Drilling Exploration 
+campaign will be 
+financed by the 
+Programme in at 
+least 2 countries  
+1.2	Production Drilling # of production 
+drilling campaigns Report from 
+CDB with information from 5ECC and private project sponsors. 0 1 4 Production Drilling 
+campaign will be 
+financed by the 
+Programme in 4 
+countries 
+1.3: Electricity 
+production MW of geothermal 
+capacity. Report from 
+CDB with information 
+from 5ECC 
+and private 0 7.5 60 MW Field Development 
+(plant) will be 
+financed by the 
+Programme in 5 
+countries 
+(10MW/country in
+
+
+---
+*Page 64*
+---
+
+ 
+RESULTS MONITORING AND REPORTING 
+ GREEN CLIMATE FUND FUNDING P ROPOSAL | PAGE 60 OF 63 
+ 
+	
+	H
+																																																													
+24 For each country, the estimated average tariff when geothermal  generation is introduced is  calculated as the weighted 
+average of the current average  tariff (2014) and the estimated ‘tariff with geothermal’. The wei ghts are the c ontribution of 
+geothermal and diesel (or HFO) generation to the total projecte d generation in each coun try when geothermal comes 
+online.  The ‘tariff with geothe rmal’ is the sum of two compone nts: the geothermal PPA rate , plus the portion of the 
+current tariff, that is not generat ion cost, that will still be  charged to custome rs when geothermal comes online. The 
+geothermal PPA rate is the rate a t which the geothermal project s need to sell each kwh of elec tricity to be able to service 
+their debts and provide equity in vestors with a 15 percent real  return. The portion of the cu rrent tariff that i s added to the  
+PPA rate is an estimate  of the costs not rel ated to generation,  which are charged  to customers via ta riff regardless of the 
+generation technology used. 4 Suc h costs include an estimate of  transmission and distribution costs, administrative and 
+other non-generation OpEx, and other costs.  
+ project 
+sponsors. DOM, GRE, 
+Nevis, SVG and 
+20MW in SL) 
+Reduction of the 
+average electricity tariffs, as a result of generation costs 
+reduction  (US$/kwh ) Information 
+on electricity tariffs from 
+the utility US$0.35/
+kWh NA US$0.28
+/kWh Reduction of the 
+average electricity 
+generation cost 
+and, if generation 
+cost reductions 
+are passed on to 
+customers, this 
+should lead to an 
+average decrease 
+in tariffs from 
+US$0.35/kWh in 
+2015 (at a fuel 
+price of US$70 per 
+barrel) to 
+US$0.28/kWh24. 
+2.1 	Regulatory 
+framework   # of countries that 
+have GE legal and regulatory 
+frameworks. Cabinet 
+approval 1 1 4 4 countries will 
+receive support 
+from the 
+Programme to 
+develop and adopt 
+Geothermal 
+development bills 
+and PPP 
+structure. 
+2.2: Institutional 
+strengthening and capacity building # of  public 
+institutions and/or private sector geothermal developers trained 
+in GE development Report from 
+CDB with information 
+from 5ECC 
+0 2 10 Capacity building 
+and technical 
+assistance 
+activities will be 
+provided to the 
+CDB and to DOM, 
+SL, SVG, GRE 
+and SKN  in order 
+to strengthen their 
+capacity to
+
+
+---
+*Page 65*
+---
+
+ 
+RESULTS MONITORING AND REPORTING 
+ GREEN CLIMATE FUND FUNDING P ROPOSAL | PAGE 61 OF 63 
+ 
+	
+	H
+ 
+ implement the 
+programme 
+Activities Description Inputs Description 
+Activity 1.1.1 Drilling of full size exploration 
+wells  Drilling contract 
+ Drilling campaign 
+designed/defined Based on surface studies and 
+technical information, the developer selects drilling 
+sites and procures 
+specialized drilling services  
+Activity 1.1.2 Feasibility studies and 
+Environmental and Social 
+Impact Assessments (ESIA) 
+for production drilling  Consulting services 
+to define drilling site 
+ Pre-feasibility studies 
+(3G) 
+ Pre-feasibility studies (3G) 
+will serve as a basis to 
+conduct feasibility studies 
+and environmental and social assessments on selected 
+sites. 
+ 
+Activity 1.2.1  Drilling of production wells  Feasibility studies  
+ Environmental and 
+Social Impact 
+Assessments (ESIA) 
+ Procurement 
+process and 
+contracts for drilling 
+companies Based on feasibility studies 
+and ESIA, contract will be 
+executed to conduct well 
+drilling. 
+Activity 1.2.2  Drilling of reinjection wells  Feasibility studies  
+ Environmental and 
+Social Impact 
+Assessments (ESIA) 
+ Procurement 
+process and contract 
+for well reinjection Contract execution for well 
+reinjection. 
+Activity 1.3.1 Engineering and construction 
+of steam gathering system  Proven resource and 
+resource data 
+collection 
+ Procurement 
+process and contract 
+to construct  steam 
+gathering system Based on resource data, 
+developers will construct 
+steam gathering system 
+Activity 1.3.2 Engineering and construction 
+of power plants  Process to select 
+Engineering, Procurement and 
+Construction (EPC) 
+contractor  Based on proven and tested 
+resource, engineering 
+contractor will  design, procure, construct, commission and handover 
+power plants
+
+
+---
+*Page 66*
+---
+
+ 
+RESULTS MONITORING AND REPORTING 
+ GREEN CLIMATE FUND FUNDING P ROPOSAL | PAGE 62 OF 63 
+ 
+	
+	H
+ 
+   Activity 1.3.3 Construction of substations 
+and transmission lines  EPC Contractor EPC Contractor will provide 
+detailed engineering of substations and  transmission 
+lines 
+Activity 2.1.1 Technical assistance will be 
+provided to support for the 5ECC in developing an effective legal, policy, 
+regulatory, and 
+environmental framework for the implementation of GE 
+projects  Consulting services 
+to review and 
+upgrade current legal, policy, and regulatory frameworks, as well 
+as environmental 
+requirements, in the 
+ECC 	It is expected that all the 
+participating countries develop and adopt geothermal development 
+bills. 
+	Currently the only 
+country of the 5ECC which has a Geothermal Bill approved is SVG. The other countries are at different stage of development and 
+approval of the regulatory 
+framework for exploration and other phases of GE 
+development 
+Activity 2.2.1 Training on GE technology 
+development.  Workshops and 
+training Training to be provided to all 
+personnel that may be involved with GE development 
+Activity 2.2.2 Training on project 
+management and execution  Software, as needed 
+ Training personnel System readiness and 
+personnel assessment will be carried out to target training 
+Activity 2.2.3  Training on sub-loan 
+evaluation and execution.  Capacity building 
+and transactional 
+advisory services for 
+the Executing 
+Agency (EA) This will assist staff in 
+successfully evaluating and executing sub-loans  
+Activity 2.2.4 Consulting services to 
+provide specific skills and advisory services as and when required for sub-project 
+preparation  Consulting services 
+to provide support to 
+EA Consulting services to 
+provide support to EA 
+Activity 2.2.5 Drafting of legal documents 
+(i.e. loan contracts for GE 
+sub-loans)  Specialized legal 
+support This support may be 
+necessary and will assist 
+ECC institutions in 
+developing legally sound documents 
+Activity 2.2.6 Transaction advisory support 
+to structure projects and negotiate with private 
+partners  PPP and innovative 
+financing 
+mechanisms training Personnel in relevant ECC 
+public institutions and CDB will be trained in PPP and 
+innovative financial 
+mechanisms, as necessary.
+
+
+---
+*Page 67*
+---
+
+RES
+ULTS MONITORING AND REPORTING 
+GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 63 OF 63 H
+H.2.  Arrangements for Monitoring, Reporting and Evaluation  
+The CDB will 
+monitor and supervise operations based on their po licies and procedures a nd provide IDB with the 
+necessary information for IDB to  monitor and evaluate the progr am as well as to comply with i ts reporting obligations to 
+the GCF and CTF. 
+Progress reports. The results of CDB’s monitoring and supervision will be repor ted to the IDB through semi-annual 
+progress reports submitted no la ter than 60 days after the end of each semester. These rep orts will be used to provide 
+the GCF with the required inform ation to submit the Annual Perf ormance Report annual performance reporting 
+requirements. These reports w ill indicate the degree of fulfillment of the output indicators and progress toward the 
+outcomes of the Results Matrix, m aking it possible for the IDB to monitor these indicators  using the IDB’s Project 
+Monitoring Report. They will also i nclude for each individual o peration: (i) a report on its co nsistency with the sub-loans 
+eligibility criteria, environmental and social safeguards crite ria as detailed in the operating manual; (ii) CDB financial 
+statements of the individual operat ion and summary updates on i ts situation, the problems encountered and measures 
+taken to address them; and (iii)  data on the outcome and outputs of the results matrix of the individual operation. The 
+latter will be based on information in the CDB’s Project Supervision Reports, copies of which will be annexed to the 
+reports.  External control and reporting . In accordance with the IDB’s Fi nancial Management Guidelines, external audit 
+requirements will be met through : (i) submission of the Annual Audited Financial Statem ents (AFS) of the CDB. These 
+reports are to be presented to t he IDB within 180 days followin g the end of CDB’s fiscal year  end; (ii) submission of an 
+assurance report on the process of preparation and submission o f disbursement requests. These reports will be 
+conducted by an independent audit firm that is eligible to the IDB, and the report submitted within 180 days following 
+the end of CDB’s fiscal year end. The CDB may utilize the servi ces of its auditors, once they are eligible to the IDB; and 
+(iii) submission of semi ‐annual unaudited financial reports of the Programme including f inancial status reports on sub ‐
+loans. These statements should be  submitted within 60 days afte r the close of each semester. These statements are 
+intended to supplement the informat ion in CDB’s AFS since the AFS do not include project specific information. 
+Midterm project review . Once 50% of loan resources are disbursed, or after 4 years fr om the initiation of program 
+execution, whichever is earlier , a midterm review will be jointly conducted by the CDB and  the IDB by an independent 
+evaluator.  
+Project Completion Report (PCR) . A PCR will be prepared evaluati ng the impact and results obta ined by the program 
+and each sub-project completed. As part of the PCR an ex post c ost benefit analysis of the program will be developed. It 
+is recommended that the PCR be conducted once 100% of the progr am is completed. The PCR will include the progress 
+in meeting the project results as defined in the results matrix , information on the execution of the program and lessons 
+learned.  
+Final Evaluation. A final evaluation will be carried out six months after the closing date of the program. Both evaluations 
+will be contracted by independe nt consultants hired by IDB.
+
+
+---
+*Page 68*
+---
+
+ANNEXE
+S 
+GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 64 OF 64 I
+* Please n ote that a funding proposal will be considered com plete only upon receipt of all the applicable supporting
+documents. I. Supporting Documents for Funding Proposal  
+☒ NDA No-objection Letter (St Vincent & Grenadines; other letter s are being processed) 
+☒ Feasibility Study 
+☒ Integrated Financial Model that p rovides sensitivity analysis of critical elements (xls format) ☒
+Confirmation letter or letter of commitment for co-financing c ommitment 
+. 
+☒ Term Sheet  
+☒ Environmental and Social Impact Assessment (ESIA) 
+☒ Appraisal Report or Due Diligence Report with recommendations 
+☒ Evaluation Report of the baseline project 
+☒ Map indicating the location of the project/programme 
+☒ Timetable of project/programme implementation 
+☐ Project/programme confirmation (see the template in Annex I to the Accreditation Master Agreement)
+
+
+---
+*Page 71*
+---
+
+SUPPLIED TO ADRIA LLACH, GREEN CLIMATE FUND (GCF) ON 24 JUL 16 04:02:13 GMT
+SUPPLIED TO ADRIA LLACH, GREEN CLIMATE FUND (GCF) ON 24 JUL 16 04:02:13 GMT
+
+
+---
+*Page 72*
+---
+
+SUPPLIED TO ADRIA LLACH, GREEN CLIMATE FUND (GCF) ON 24 JUL 16 04:02:13 GMT
+SUPPLIED TO ADRIA LLACH, GREEN CLIMATE FUND (GCF) ON 24 JUL 16 04:02:13 GMT
+
+
+---
+*Page 73*
+---
+
+SUPPLIED TO ADRIA LLACH, GREEN CLIMATE FUND (GCF) ON 24 JUL 16 04:02:21 GMT
+SUPPLIED TO ADRIA LLACH, GREEN CLIMATE FUND (GCF) ON 24 JUL 16 04:02:21 GMT
+
+
+---
+*Page 74*
+---
+
+SUPPLIED TO ADRIA LLACH, GREEN CLIMATE FUND (GCF) ON 24 JUL 16 04:02:21 GMT
+SUPPLIED TO ADRIA LLACH, GREEN CLIMATE FUND (GCF) ON 24 JUL 16 04:02:21 GMT
+
+
+---
+*Page 75*
+---
+
+GOVERNMENT OF SAINT LUCIA 
+ Ministry of Economic Development, Transport and Civil Aviation
+Communication on this subject   7th Level, Conway Business Center 
+should be addressed to:  Waterfront 
+   Castries, Saint Lucia 
+  The Permanent Secretary   Tel: (758) 468-2180  
+Fax (758) 451-9706 
+July 13, 2016 
+To: The Green Climate Fund (“GCF”)  
+Ms. Héla Cheikhrouhou  
+Executive Director  
+Secretariat of the Green Climate Fund 
+175, Art center-daero 
+Yeonsu-gu, Incheon 406-840 
+Republic of Korea  
+August 22, 2016 
+Re: Funding proposal for the GCF by the Inter-American Development Bank 
+(IDB)regarding the Caribbean Development Bank’s  Sustainable Energy Facility for the 
+Eastern Caribbean 
+Dear Ms Cheikhrouhou, 
+We refer to the programme “Sustainable Energy Facility for the Eastern Caribbean ” in relation 
+to St Lucia as included in the funding proposal submitted by the Caribbean Development Bank 
+and the Inter American Development Bank to the Government of Saint Lucia on July 31, 2015. 
+Pursuant to GCF decision B.08/10, the Government of Saint Lucia acknowledges that we have 
+reviewed the contents of the programme and hereby communicate its no-objection as included 
+in the funding proposal.   By communicating our no-objection, it is implied that: 
+(a) The Government of St Lucia has no-objection to the programme as included in the 
+funding proposal; 
+(b) The programme as included in the funding proposal is in conformity with the national 
+priorities, strategies and plans of Government of St Lucia; and 
+(c) In accordance with the GCF’s environmental and social safeguards, t he programme as 
+included in the funding proposal is in conformity with relevant national laws and 
+regulations.
+
+
+---
+*Page 76*
+---
+
+The Government of Saint Lucia acknowledge that this letter can be made publicly available on 
+the website of the Green Climate Fund. 
+Kind regards, 
+_________________ 
+D. Tracy Polius 
+Permanent Secretary 
+..…………..……….………….  
+TRACY POLIUS (MS.) 
+PERMANENT SECRETARY
+
+
+---
+*Page 79*
+---
+
+G
+CF/B.14/07/Add.03 	
+Environmental 	and	social	report(s)	 disclosure 	
+Basic	project/programme 	information 	
+Project/programme 	title	Sustainable	Energy	Facility	for	the	Eastern	Caribbean	
+Accredited 	entity	 Inter‐American	Development	Bank	(IDB)	
+Environmental 	and	social	
+safeguards 	(ESS)	category 	Intermediation	1	(I1)	
+Environmental 	and	Social	Impact	Assessment 	(ESIA)	(if	applicable) 	
+Date	of	disclosure	
+on	accredited	
+entity’s	website	Click	here	to	enter	a	date. 	
+Language(s)	of	
+disclosure	
+Link	to	disclosure	
+Other	link(English)	
+Page	link	
+Environmental 	and	Social	Impact	Assessment 	(ESMP)	 (if	applicable) 	
+Date	of	disclosure	
+on	accredited	
+entity’s	website	Click	here	to	enter	a	date. 	
+Language(s)	of	
+disclosure	
+Link	to	disclosure	
+Other	link(English)	
+Page	link	
+Resettlement 	Action	Plan	(RAP)	(if	applicable) 	
+Date	of	disclosure	
+on	accredited	
+entity’s	website	Click	here	to	enter	a	date. 	
+Language(s)	of	
+disclosure	
+Link	to	disclosure	
+Other	link(English)	
+Page	link	
+Any	other	relevant 	ESS	reports	and/or	disclosures 	(if	applicable) 	
+Description	of	
+report/disclosure	Environmental	and	Social	Management	Report	(ESMR)	
+Date	of	disclosure	
+on	accredited	
+entity’s	website	2015‐10‐01	
+Language(s)	of	
+disclosure	ENGLISH	(2015‐10‐01)
+
+
+---
+*Page 80*
+---
+
+G
+CF/B.14/07/Add.03 	
+	English		 http://www.iadb.org/Document.cfm?id=39683428 	
+________

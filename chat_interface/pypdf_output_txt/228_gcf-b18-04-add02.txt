@@ -1,0 +1,3381 @@
+=== DOCUMENT METADATA ===
+/Author: Sunny Kim
+/CreationDate: D:20170911134603+09'00'
+/Creator: Adobe Acrobat Pro 11.0.22
+/ModDate: D:20170911175103+09'00'
+/Producer: Adobe Acrobat Pro 11.0.22
+/Title: 
+
+
+---
+*Page 1*
+---
+
+Consideration of funding 
+proposals  – Addendum II 
+Funding proposal package for FP047  GCF/B.1 8/04/Add. 02 
+11 September  2017  Meeting of th e Board 
+30 September –2 October 2017 
+Cairo, Arab Republic of 
+Egypt 
+Provisional agenda item 14(g) 
+Summary  
+This addendum contains the following three  parts:  
+a)A funding proposal summary titled “ GCF -EBRD Kazakhstan Renewables Framework ”
+submitted by European Bank for Reconstruction and Development ;
+b)No-objection letter issued by the national desig nated authority(ies)  or focal point (s);
+and
+c)Environmental and social report(s) disclosure;
+These documents are presented as submitted by the accredited entity and the national  
+designated authority(i es) or focal point(s), respectively. Pursuant to the Comprehensive 
+Information Disclosure Policy of the Fund , the funding proposal titled “GCF -EBRD 
+Kazakhstan Renewables Framework ” submitted by European Bank for Reconstruction 
+and Development  is being circulated on a limited distribution basis only to Board 
+Memb ers and Alternate Board Members  to ensure confidentiality of certain proprietary, 
+legally privileged or commercially sensitive information of the entity.
+
+
+---
+*Page 2*
+---
+
+ 
+GCF/B.18/04/Add.02  
+Page b 
+ 
+ 
+Table of Contents  
+ Funding proposal summary submitted by the accredited entity                                                              1 
+ No-objection letter issued by t he national designated authorities  or focal point s                           58           
+ Environmental and social report(s) disclosure                                                                                            59
+
+
+---
+*Page 3*
+---
+
+PUBLIC  
+ 
+PUBLIC  
+Project/Programme Title:  GCF-EBRD Kazakhstan Renewables Framework  
+Country/Region:  Kazakhstan / ECA  
+Accredited Entity:  European Bank for Reconstruction and Development (EBRD)  
+Date of Submission:  December  21, 201 6
+
+
+---
+*Page 4*
+---
+
+PUBLIC  
+ 
+PUBLIC  Contents  
+ 
+ 
+Section A  PROJECT / PROGRAMME SUMMARY    
+ 
+Section B  FINANCING / COST INFORMATION   
+ 
+Section C  DETAILED PROJECT / PROGRAMME DESCRIPTION  
+ 
+Section D  RATIONALE FOR GCF INVOLVEMENT  
+ 
+Section E  EXPECTED PERFORMANCE AGAINST INVESTMENT CRITERIA  
+ 
+Section F  APPRAISAL SUMMARY  
+ 
+Section G  RISK ASSESSMENT AND MANAGEMENT  
+ 
+Section H  RESULTS MONITORING AND REPORTING  
+ 
+Section I  ANNEX ES 
+ 
+ 
+ 
+ 
+Note to accredited entities on the use of the funding proposal template  
+ • Sections A, B, D, E  and H of the funding proposal require detailed inputs from the accredited entity. For all other 
+sections, including th e Appraisal Summary in section F , accredited entities have discretion in how they wish to 
+present the information. Accredited entities can eith er directly incorporate information into this proposal, or provide 
+summary information in the proposal with cross -reference to other project documents such  as project appraisal 
+document.  
+• The total number of pages for the funding proposal (excluding annexes ) is expected not to exceed 50.  
+ 
+ 
+Please submit the completed form to:  
+fundingproposal@gcfund.org  
+ 
+Please use the following name convention for the file name:  
+“[FP] -[Agency Short Name] -[Date] -[Serial Number]”
+
+
+---
+*Page 5*
+---
+
+PUBLIC PROJECT / PROGRAMME SUMMARY  
+ GREE N CLIMATE FUND FUNDING PROPOSAL |  PAGE 1 OF 57 
+ 
+PUBLIC  Section A: PROJECT / PROGRAMME SUMMARY  
+ 
+ 
+A.1.  Brief Project / Programme Information  
+A.1.1. Project / programme title  GCF-EBRD Kazakhstan Renewables Framework  (the 
+Framework /the Programme)  
+A.1.2. Project or programme  programme  
+A.1.3. Country (ies) / region                     Kazakhstan / ECA  
+A.1.4. National designated authority (ies)  Ministry of Energy of the Republic of Kazakhstan  
+A.1.5. Accredited entity  European Bank for Reconstruction and Development (EBRD)  
+A.1.5.a. Access modality  ☐  Direct  ☒  International  
+A.1.6. Executing entity / beneficiary  Executing Entity:  EBRD  
+Beneficiary:  Eligible entities will be 1) local or international private 
+or institutional companies or in exceptional cases local public 
+investors developing renewable energy projects  
+2) electricity distribution and transmission companies.  
+A.1.7. Project size category (Total investment, million USD)  ☐  Micro (≤10)  
+☐  Medium (50<x≤250)  ☐  Small (10<x≤50)  
+☒ Large (>250)   
+A.1.8. Mitigation / adaptation focus  ☒  Mitigation  ☐  Adaptation  ☐  Cross -cutting  
+A.1.9. Date of submission  December  21, 201 6 
+A.1.10.  
+Project 
+contact 
+details  Contact person, position  Jan-Willem van de Ven , Associate Director , Energy Efficiency and 
+Climate Change team  
+George Holroyd, Head Multilaterals , Donor Co -Finance  
+Organization  EBRD  
+Email address  vandevej@ebrd.com   
+ holroydg@ebrd.com  
+Telephone number  +44 (0)20 73387 821 
++44 (0)20 7338 8594  
+Mailing address  European Bank for Reconstruction and Development,  
+One Exchange Square,  
+London,  
+United Kingdom,  
+EC2A 2JN  
+A.1.11. Results areas  (mark all that apply)  
+Reduced emissions from:  
+☒ Energy access and power generation  
+(E.g. on -grid, micro -grid or off -grid solar, wind, geothermal, etc.)   
+☐ Low emission transport  
+(E.g. high -speed rail, rapid bus system, etc.)   
+☐ Buildings, cities and industries and appliances  
+(E.g. new and retrofitted energy -efficient buildings, energy -efficient equipment for companies and supply chain management, etc.)   
+☐ Forestry and land use  
+(E.g. forest conservation and management, agroforestry, agricultural irrigation, water treatment  and management, etc.)  
+ 
+Increased resilience of:
+
+
+---
+*Page 6*
+---
+
+PUBLIC PROJECT / PROGRAMME SUMMARY  
+ GREE N CLIMATE FUND FUNDING PROPOSAL |  PAGE 2 OF 57 
+ 
+PUBLIC  ☐ Most vulnerable people and communities  
+(E.g. mitigation of operational risk associated with climate change – diversification of supply sources and supply chain management, relocation 
+of manufacturing facilities and warehouses, etc.)  
+☐ Health and well -being, and food and water security  
+(E.g. climate -resilient crops, efficient irrigation systems, etc.)  
+☐ Infrastructure and built environment  
+(E.g. sea walls, resilient road networks, etc.)  
+Ecosystem and ecosystem services  
+(E.g. ecosystem conservation and management, ecotourism, etc.)  
+ ☐ 
+A.2.  Project / Programme Executive Summary (max 300 words)  
+Kazakhstan is one of the largest emitters of greenhouse gas es (“GHG ”) in Central Asia, with ca. 72% of  its electricity generated 
+from coal . GHG emissions hav e increased by 40% since 2006 due to the economy’s overdependence on fossil fuels. At the same 
+time, Kazakhstan possesses significant resources of renewable energy, such as wind, solar and hydro. Access to a reliable source 
+of energy is of fundamental impor tance for the economic development and improving living standards in Kazakhstan.  
+Consequently, the diversification of energy sources and decarbonisation of the economy are  priorit ies of the Government of 
+Kazakhstan.  To achieve the renewable energy target s, the Government of Kazakhstan adopted renewable energy regulation that 
+includes the introduction of feed -in tariffs  (“FiT”) and work  in progress auction scheme . 
+ 
+The EBRD proposes to the GCF to implement an investment framework programme with a  5 year duration lead ing to the total 
+investments of  USD 550 million from the EBRD,  private sector investors, other financial institutions  along with the proposed 
+investment from the GCF. The investments  will be in the form of loans to renewable energy sources ( “RES”) developers to finance 
+the construction, connection to the grid, commissioning and launch of the RES projects (solar, wind, small hydropower and 
+biogas) and to electricity distribution and transmission companies to finance modernisation and strengthen ing of the electricity 
+grid to enhance the integration of RES into the electricity grid . Under the investment Programme , financing of small hydropower 
+projects will not constitute more than 20% of the total Programme costs and will be limited to only financing of small  hydropower 
+projects with a capacity up to 35MW1. Biogas will constitute a very small portion of the Programme and is unlikely to exceed 20 
+MW on a cumulative basis.  
+ 
+The total investment amount of USD 550 million is estimated based on the projected pipeline of up to 3 30 MW RES project s. The 
+total requested contribution from the GCF is USD 110 million  - for concessional loans (USD 10 6 million) and technical assistance 
+(USD 4 million).  
+ 
+The main objectives of the Programme are  the following :  
+- to facilitate competitive entry of low -carbon investors into the market currently dominated by  conventional fossil fuel  
+power producers  and kick -start renewable investments which have been stagnant due to market barriers ; 
+- to support the construction of an estimated 330 MW of new RES capacity ( ca. 18% of the Government’s RES target by 
+2020)  under the FiT scheme and the auction scheme (no more than 35% of the total GCF financing ), in combination with 
+the power network upgrades to facilitate this RE S uptake ; 
+- to support further regulatory reforms  in the energy and carbon market  of Kazakhstan , including the development of the 
+auction system which is expected to lead to costs reduction  ensur ing long -term sustainability of RES projects ; and 
+- to provide capacity building support to RES sector  to promote gender equality through equal opportunities policies and 
+practices within their operations.  
+ 
+Based on the experience with the current portfolio, the expected direct CO 2 emissions reductions by the new RES generation are 
+ca. 0.64 million tons CO 2 equivalent per year once all sub-projects are operational  (with the expected project lifetime  of 20 years ). 
+ 
+A.3.  Project/Programme Milestone  
+Expected approval from accredited entity’s Board (if 
+applicable)  Approved on December 14, 2016  
+                                                             
+1 In accordance with the Kazakh RES law, hydro power plant projects with capacity of up to 35 MW are considered as small 
+hydro projects.
+
+
+---
+*Page 7*
+---
+
+PUBLIC PROJECT / PROGRAMME SUMMARY  
+ GREE N CLIMATE FUND FUNDING PROPOSAL |  PAGE 3 OF 57 
+ 
+PUBLIC  Expected financial close (if applicable)  4Q 2017 (first sub-project)  
+Estimated implementation start and end date  Start:  4Q 2017 (estimated signing date of the first sub -operation)  
+End:  3Q 2022 (estimated expiry date of the investment period )  
+Programme lifespan  The investment period of the Programme is expected to be up to 20 years 
+for Component #1 and up to 5 years for Component #2. The lifespan of the 
+Programme is up to 20 years from the signing of the last loan agreement, 
+making for a total lifetime of 2 5 years.
+
+
+---
+*Page 8*
+---
+
+PUBLIC  
+FINANCING / COST INFORMATION  
+ GREE N CLIMATE FUND FUNDING PROPOSAL | PAGE 4 OF 57 
+ 
+PUBLIC  B  
+ 
+Section B: FINANCING / COST INFORMATION  
+ 
+B.1. Description of Financial Elements of the Project / Programme  
+ 
+The GCF -EBRD Kazakhstan Renewables Energy Framework will support Kazakhstan  to develop capacity aggregating  ca. 330MW 
+RES projects, which will help Kazakhstan to  achiev e ca. 18% of its 2020 RE S goals via the following two components:  Component 
+#1 – scaling up renewable energy investments, by blending EBRD and GCF financing  and leveraging additional debt financing from 
+international and development financial institutions and in the future from commercial banks, as well as private sector 
+investments , and  Component #2 – enhancing renewable energy integration, policies and plan ning through a comprehensive 
+technical assistance  and policy dialogue  programme . Indicative information regarding the expected use of the funds for 
+Component #1 and the budget for Competent #2 is presented in Section C.3. Project / Programme Description . 
+ 
+1) Component #1 – Scaling up renewable energy investments  
+The Programme  will support the development and construction of 8-11 sub-projects with the total investment of up to  USD 550 
+million  within the next 5 years . The Programme  will consist of the EBRD debt financing of up to EUR 200 million  (USD 214 million  
+in equivalent ), the GCF financing of up to USD 106 million , other lenders co -financing  and private sector invest ments  of USD 230 
+million in predominantly private and in exceptional cases public developers to finance the construction, connection to the 
+electricity grid, commissioning and launch of renewable energy projects and in electricity distribution and transmission companies 
+to finance th e modernisation and strengthening of the electricity grid in order to enhance the integration of renewable energy 
+sources into the electricity grid.  The focus of the Framework is on the renewables projects  developed under  the FiT scheme, 
+although projects under the competitive tendering  would also be eligible up to a maximum of 35% of the total GCF financing 
+under Component #1. The proposed Programme will provide project sponsors access to a source of long -term debt financing 
+requ ired for financially viable renewable energy projects in Kazakhstan at competitive pricing. Appropriately structured, long -term 
+debt financing is essential for the successful construction and implementation of RES projects as such  financing source is limited in 
+the domestic Kazakh market.  
+ 
+The provision of concessional financ ing from the GCF will help overcome risk and cost barriers for the development of RES 
+projects in Kazakhstan, which are not sufficiently addressed by the FiT and/or other forms of the G overnment support, due to the 
+nascent  development of the sector.  
+ 
+ 
+2) Component #2 – Enhancing renewable energy integration, policies and planning  
+The provision of grant in the amount of USD 4 million  for technical assistance by the GCF will enable the EBRD to work with the 
+Government and key public sector  stakeholders in further refining and developing the legal and regulatory framework, and 
+build ing the national capacity necessary for promoting the development of RES  projects.  
+ 
+The provision of GCF support  is expected to have a transformational impact at a sector  and country level, and will build upon the 
+basis  set by  the Clean Technology Fund in Kazakhstan.  
+ 
+Component  Sub-component (if 
+applicable)  Amount (for 
+entire 
+programme)  Currency  GCF funding 
+amount  Currency of 
+disbursement to 
+recipient  
+Component 1.   
+Financing of sub-
+projects   
+ 
+N/A 550 million 
+USD ($)  USD 106 
+million  USD  
+Component 2.  
+Technical assistance and 
+policy engagement  Sub-component 2.1 
+Technical assistance 
+and capacity building  3.5  million 
+USD ($)  USD 3.5 
+million  USD
+
+
+---
+*Page 9*
+---
+
+PUBLIC  
+FINANCING / COST INFORMATION  
+ GREE N CLIMATE FUND FUNDING PROPOSAL | PAGE 5 OF 57 
+ 
+PUBLIC  B 
+ Sub-component 2.2 
+Policy engagement  3.5  million 
+USD ($)  USD 0.5 
+million   
+USD  
+Total  557  million 
+USD ($)  
+ USD 110 
+million   
+ 
+ 
+B.2. Project Financing Information  
+ Financial Instrument  Amount  Currency  Tenor  Pricing  
+(a) Total 
+project 
+financing   557 million USD 
+($)  
+(b) GCF 
+financing to 
+recipient   
+(i) Senior Loans  
+ (vi) Grants  106 
+4  
+million USD 
+($) 
+million USD 
+($) As defined in the term 
+sheet  Not applicable   As defined in 
+the term sheet   
+Not applicable  
+ 
+Total requested  
+(i+ii+iii+iv+v+vi)  110 million USD 
+($)  
+(c) Co -
+financing to 
+recipient  
+ Financial 
+Instrument  Amount  Currency  Name of 
+Institution  Tenor  Pricing  Seniority  
+Senior 
+Loans  
+Senior 
+Loans  
+Equity  
+Grant  2142 
+93  
+137  
+3 million USD ($)  
+million USD ($)  
+million USD ($)  
+million USD ($)   
+EBRD  
+Other lenders  
+Sponsors  
+EBRD / other 
+donors  TBD based on 
+market and 
+project 
+conditions.  
+TBD 
+N/A 
+N/A 
+ TBD based 
+on market 
+and 
+project 
+conditions.  
+ TBD 
+N/A 
+      N/A  
+ senior  
+senior  
+junior  
+Options  
+Lead financing institution: EBRD  
+Each GCF loan under the Framework will be provided alongside a loan from EBRD and other co -financiers loans 
+on a pari passu basis .   
+(d) Financial 
+terms 
+between GCF Special Fund  (See the details in Section C.7)  
+In line with the Article 10 of the Agreement Establishing the EBRD ( “AEB”), the GCF resources are ‘special 
+resources’ of the EBRD. The ‘special resources’ from the GCF and EBRD’s ‘ordinary capital resources’ shall at all 
+                                                             
+2 The amount of USD 214 million is based on the EBRD’s Board approved Framework for renewables in Kazakhstan in the 
+amount of EUR 200 million. EUR/USD exchange rate 1.07 is used.
+
+
+---
+*Page 10*
+---
+
+PUBLIC  
+FINANCING / COST INFORMATION  
+ GREE N CLIMATE FUND FUNDING PROPOSAL | PAGE 6 OF 57 
+ 
+PUBLIC  B 
+GCF and AE 
+(if applicable)  times and in all respects, be held, used, committed, invested or otherwise disposed of entirely separately from 
+each other. In this regard, the EBRD has establish ed the GCF Special Fund (the “Special Fund ”) through which all 
+payments from the GCF and repayments to the GCF will pass. The GCF resources in the Special Fund will not be 
+comingled with the EBRD’s ordinary capital resources or other donor resourc es as far as financial flows are 
+concerned. The EBRD will treat the resources from the Special Fund as assets of the EBRD for the purposes of 
+the privileges and immunities provisions of the AEB .  
+  
+ 
+B.3. Financial Markets Overview (if applicable)  
+Commercial financing for long tenors and for structured project finance transactions is currently limited  for renewable energy 
+projects in Kazakhstan. Based on the studies carried out for the Burnoye solar project, l ong-term financing of renewable energy at 
+the maturities required is not available from local commercial banks or from the domestic bond market.
+
+
+---
+*Page 11*
+---
+
+PUBLIC  
+DETAILED PROJECT / PROGRAMME DESCRIPTION  
+ GREE N CLIMATE FUND FUNDING PROPOSAL | PAGE 7 OF 57 
+ 
+PUBLIC  C  
+Section C: DETAILED PROJECT / PROGRAMME DESCRIPTION  
+ 
+C.1. Strategic Context  
+ 
+Kazakhstan has been an early and enthusiastic proponent of sustainable development, aligning national strategic plans and 
+programs with the green economy objectives. These are underpinned by ambitious low carbon and sustainability targets defined 
+by the national legislation and international agreements. The ambitious targets established by these policy commitments require 
+a significant scaling  up of financ ing from the public and private sources.  
+ 
+Kazakhstan possesses significant renewable energy resources , such as wind, solar and hydropower. The country’s hydro potential 
+is estimated as 27 TWh per year and wind potential at 18 TWh per year while solar potential is estimated at 3.9 -5.4 TWh as 
+compared to the total annual electricity consumption of 91 TWh , out of which ca. 72% is met mainly by coal -fired power plants.  
+The leading  coal- and gas -fired power plants in Kazakhstan representing 80% of the fossil fuel -based installed capacity are built in 
+the Soviet era and  are more than 30 years old. Since the Government of Kazakhstan estimates that 73% of the  existing  power 
+generation facilities are obsolete and require mode rnisation  on the back of the forecasted  increasing electricity demand at ca. 
+3.2% p.a. over 2010 -2025 , an overwhelming amount of investment is needed to restore  and expand the power generation 
+syste m. The levelised cost s of electricity for  supercritical coal (meeting the EU standard s on pollutant emissions ), wind and solar 
+power plants are USD  52-59/MWh, USD  70-75/MWh and USD  86-96/MWh , respectively . When the environmental , health  and 
+climate externality cost s of emissions are taken into consideration, together with the  anticipated  cost reduction in power 
+generation from wind and solar on the back of  the steep learning curve (e.g. IRENA e stimates that LCOE for solar and wind 
+between 2015 and 2025 could fall by up to 59% and 35%, respectively), it is expected that the difference in the leveli sed cost of 
+electricity between coal and renewables will significantly narrow. As an example if the Kazakh Emissions Trading Scheme ( “ETS”) 
+price costs be USD 5 per tonne of CO 2, then t his equates in a n additional electricity price of about USD 5 per MWh for  high 
+efficiency  coal based power plants , which will cover 33% of the gap between RE S and new coal. Based on the mentioned trends 
+there is a strong additionality case for the GCF to sponsor and leverage the paradigm shift to renewable energy in Kazakhstan . The  
+investment  results under the F ramework will encourage the Government  of Kazakhstan and the sector  to achieve  the RES targets 
+between 2020 and 2050, FiT scheme and carbon market . As the market grows over time, it will become attractive to the private 
+sector.  
+ 
+Recogni sing climate change and environmental challenges associated  with the coal -fired generation , and seeing the need to 
+diversify the country’s economy  due to its over dependency on the natural resources sector , the Kazakh Government launched a 
+strategic initiative called the Green Economy in 2013 under which a number of actions have been planned including the 
+development of renewable energy sources. The initiative became the platform for Kazakhstan’s commitment during the UNFCCC 
+Conference of Parties in Paris as was communicated by the Kazakh Government in its Intended  Nationally Determined 
+Contribution (INDC) to reduce GHG  emissions. The INDC , and now NDC as Kazakhstan ratified the Paris Agreement,  calls for an 
+economy -wide target of 15% reduction in GHG  emissions by 2030 compared to 1990 . This reduction target  reflec ts a reduction of 
+at least 22% below projected business as usual emissions. On 27th of October 2016, the Kazakh Senate adopted the Law “On 
+ratification of the Paris Agreement”. See the table below for the Kazakh key green economy targets.  
+Summary of key Green Economy targets  
+Sector  Indicator  2020  2030  2050  
+GHG Emissions  
+ Reduction in GHG emissions (1990 
+baseline)  N/A -15%  N/A 
+Electricity  Share of alternative source of 
+electricity   3% (renewables 
+only)  10% (renewables wind and solar)  
+20% (other alternative sources)  50%  
+Energy 
+Efficiency  Reduction in energy intensity of 
+GDP (2008 baseline)  -25%  -30%  -50%
+
+
+---
+*Page 12*
+---
+
+PUBLIC  
+DETAILED PROJECT / PROGRAMME DESCRIPTION  
+ GREE N CLIMATE FUND FUNDING PROPOSAL | PAGE 8 OF 57 
+ 
+PUBLIC  C 
+ 
+The current renewable energy policy framework was introduced in Kazakhstan, with the support of the EBRD technical assistance , 
+in June 2013 and assumes support of renewable projects through the FiT. Due to the introduction of th e RES support mechanism , 
+Kazakhstan’s RES market has seen continued growth of the overall generation volume coming from wind, solar and small 
+hydropower plants. Power generated from these sources increased by 32% in 2016 as compared to 2015, though in absolute 
+terms it continues to remain relatively insignificant at less than 1% of the overall power generation.   
+ 
+The EBRD has been supporting the Government of Kazakhstan in developing the Green Economy legislation over the last 8 years, 
+which includes the work on the development o f commercially viable renewable energy legislation, the development of an 
+emission trading system  (Kazakh Emissions Trading Scheme) , the development of the domestic carbon credit  project, and the 
+development of Kazakhstan’s INDC to the Paris Agreement in 2015. The EBRD is currently work ing with the Astana International 
+Finance Centre on the consideration of a Green Financial System, which would help to align capital  flows with the green economic 
+development.  
+ 
+Achieving Kazakhstan’s vision of the green economy transition and closing the green investment gap will require a significant 
+mobili sation of the private sector. There is a growing base of knowledge which demonstrates that pr ivate sector investment can 
+be leveraged and barriers overcome through a range of proven measures and interventions. The Kazakhstan’s financial sector is 
+currently unable to support the private sector in opening up the innovative and technically demanding niche of RES projects. 
+According to the recent EBRD research  entitled “Green Financial System in Kazakhstan”3, the current potential of the financial 
+sector to support the Paris Agreement is limited. The f inancial sector is currently shallow in both absolute and relative terms , and 
+is in need for financial instruments that can help to develop this nascent market . The EBRD proposes to scale up investment in 
+RES in Kazakhstan by establishing the proposed Programme  that will, with the support from the GC F, finance independent RES 
+projects and scale up the RES investments in Kazakhstan.  
+ 
+C.2. Project / Programme Objective against Baseline  
+ 
+Emissions baseline  
+Between 2000 and 2012, Kazakhstan almost doubled its GHG emissions, i.e. from 157 mt CO 2e to 291 mtCO 2e (WRI -CAIT, 2014). 
+Compared to other countries in Central Asia, Kazakhstan is the largest GHG emitter in absolute terms, of which 85% is from th e 
+energy sector. In relative terms, Kazakhstan has the highest emissions growth rate  in Central Asia  durin g this period (Figure 1) . As 
+Kazakhstan generates 72% of its electricity from coal, this translates into a relativel y high grid emission factor at 0.844  tCO 2/MWh.  
+  
+Figure 1 GHG emissions indexed to 2000 level  
+                                                             
+3 www.greenfinance.kz
+
+
+---
+*Page 13*
+---
+
+PUBLIC  
+DETAILED PROJECT / PROGRAMME DESCRIPTION  
+ GREE N CLIMATE FUND FUNDING PROPOSAL | PAGE 9 OF 57 
+ 
+PUBLIC  C 
+ 
+ 
+Barriers  
+Renewable energy production in Kazakhstan is insignificant at less than  1%. This has been the case due to the following barriers:  
+- Financial barriers: the lack of availability of long -term financing f rom the local and international banks in Kazakhstan to 
+fund RES projects, particularly given the long tenors these projects typically require. Availability of equity also 
+constrained project development given that the macroeconomic risk perception is relatively hi gh. Absence of full 
+indexation of FiT for foreign currency fluctuations also constrains the development of RES as long -term local currency 
+financing  at affordable rates are limited in the country.  
+- High real and perceived risk for the first movers:  the lack of private sector participation in RES projects as well as high 
+transaction costs pose challenges in initiating investments.   
+- Infrastructure constraints: the current infrastructure needs to be assessed and enhanced to integrate RES into the grid.  
+- Constraints  of institutional capacity: the regulatory bodies have constraints in  the capacity in man aging grid balancing, 
+integrating RES projects into the domestic emissio ns trading system, reviewing and further develop ing and administering 
+the RES tenders .  
+- Externality cost : with an abundant and cheap power generation source of coal, as well as  a lack of an appropriate carbon 
+price, it has been challenging for private sector project developer s to compete with coal fired power plants in terms of 
+costs given absence of internalis ation of  the environmental cost of using carbon -intensive energy sources.  
+ 
+Framework impact on baseline  
+The Framework will help to facilitate systemic change in the country’s power generation sector where coal remains the dominant 
+fuel by supporting the development of private renewable energy projects and moving towards sustainability of the power market . 
+Furthermore, the Framework will have a demonstration effect of new ways of financing and new technologies , and will assi st with 
+the reduction of Kazakhstan’s carbon intensity, with the expected GHG emission reductions of ca. 640,000  tonnes of CO 2 annually 
+once all sub-projects are operational. The EBRD has developed a methodology to assess CO 2 reductions driven by the proposed 
+Framework. For details, please refer to section E1.   
+ 
+The Framework will contribute towards  the country’s target on the share of renewable s accounting for 3% of country’s total  
+power  generation by 2020 . No installed capacity target  has been announced but, based on a certain assumptions related to the 
+average load factor of various technologies and the future power generation , it is estimated to be ca. 1,800MW . In addition to
+
+
+---
+*Page 14*
+---
+
+PUBLIC  
+DETAILED PROJECT / PROGRAMME DESCRIPTION  
+ GREE N CLIMATE FUND FUNDING PROPOSAL | PAGE 10 OF 57 
+ 
+PUBLIC  C 
+substitute carbon -intensive power generation at a country level, the increased installed renewable capacity supported by this 
+Framework being in the south ern regions of Kazakhstan  would help reduce the power deficit in those areas.  While the 3% RE S 
+target by 2020 may seem modest, the Framework is expected to have a demonstration effect in Kazakhstan’s RES industry further 
+contributing  towards the Government ’s 30% alternative energy target by 2030.  
+ 
+C.3. Project / Programme Description  
+Proposed Operation  
+The EBRD proposes to the GCF to implement an investment Programme with  a 5-year duration  leading to the total investments of 
+USD 550 million from the EBRD, private sector, other financial institutions along with the proposed investment from the GCF. The 
+investments will be in the form of loans to RES developers to finance the construction, connection to the grid, commissioning and 
+launch of the RES projects (solar, wind, sma ll hydropower4 and biogas) . 
+ 
+The proposed Programme builds on the following milestone achievements and experience of the Bank : 
+i) Implement ation of  the Ukraine Sustainable Energy Lending Facility  (USELF, see Annex 1);  
+ii) Successful development and operation of the largest solar power plant  in Kazakhstan -  the 50MW Burnoye SPP  (see 
+Annex 2); and  
+iii) Policy dialogue of up to 8 years with the Government of Kazakhstan on the green economy transition , including 
+renewable energy legislation . 
+ 
+The benefit of the Programme for Kazakhstan is to develop  the market of independent RES developers by creating a large pool of 
+projects and project sponsor s, attracting attention from both local and international banks , increasing the integration of  RES into 
+the energy market and enabling access to the carbon market, altogether  ensuring long -term sustainability  and competitiveness of 
+the RES market .  It will contribute towards  the achievement of the 3% target share of renewable power generation at a country 
+level by 2020, substitute carbon intensive power generation in the north and reduc e the power deficit in the southern regions of 
+Kazakhstan.  
+ 
+Furthermore, the Programme will contribute considerably to Kazakhsta n’s climate mitigation efforts.  Kazakhstan is a country with 
+very high emissions of CO 2 from power generation, and the RES financed by the Programme  will therefore have a substantial 
+impact on Kazakhstan’s GHG emissions by adding clean energy i nto the power generation mix. Based on the experience with the 
+current portfolio, the expected direct CO 2 emissions reductions by new and additional RES generation are ca. 0.64 million tons 
+CO 2 equivalent per year once all sub-projects are operational, with an estimated lifetime of 20 years.   
+ 
+GCF Contribution  
+The total requested contribution from the GCF is USD 110 million for concessional loans and technical assistance.  
+ 
+Component #1: Scaling up renewable energy investments  
+The GCF is requested to provide  concessional financing  of up to USD 10 6 million, or ca. 19% of the total projects costs of USD 550 
+million  to address the real and perceived risks and cost disadvantages as well as the lack of availability of long -term financing from 
+the local and international banks in Kazakhstan.  Eligible projects are the sub-projects either (i) awarded a PPA under the FiT 
+Scheme or a competitive tender, in each case in terms acceptable to the EBRD, or (ii) electricity distribution and transmission 
+companies to fi nance the electricity grid  connection  to enhance the RES integration into the electricity grid.  The latter part of the 
+sub-projects on  the modernisation and expansion of the transmission and distribution network s aims  to remove 
+technical/technology and system operation barriers that currently hinder the efficient integration of RES, especially small - and 
+medium -size wind and PV projects. Typical projects on the electricity distribution and transmission networks  involve  
+modernization and expansion of  substations and lines modernisation, installation of Supervisory Control and Data Acquisition  
+(SCADA ) systems , automatic control and communication systems, energy management systems and smart metering systems.  
+Financing of electricity distribution and transmission companies will not constitute more than 20% of total Programme costs and 
+will be limited with the network modernization necessary for renewables integration into the grid. The total GCF financing of sub-
+                                                             
+4 Under the  Kazakh FiT scheme, small hydropower is defined as an installed capacity below 35MW.
+
+
+---
+*Page 15*
+---
+
+PUBLIC  
+DETAILED PROJECT / PROGRAMME DESCRIPTION  
+ GREE N CLIMATE FUND FUNDING PROPOSAL | PAGE 11 OF 57 
+ 
+PUBLIC  C 
+projects developed under a competitive tender will not exceed 35% of the total GCF financing under Component #1 of the 
+Programme.   
+ 
+ 
+Pricing of the GCF co -financing will be determined based on detailed due diligence of the sub-projects individually and on the 
+principles  specified in the Term  Sheet  agreed with the GCF Secretariat.  The concessional financ ing from the GCF  is critical as it will 
+reduce the financial risk for the project sponsors in a relatively untested market, address the cost disadvantages s uffered by 
+renewable technologies in Kazakhstan, and bridge a capital gap that would otherwise remain within the financial structure of the 
+sub-projects, in the absence of commercial lending for renewable energy projects from local  and international banks.   
+ 
+ 
+The EBRD anticipates that all solar and transmission and distribution sub -projects under the Programme  will go under  Category B 
+and the wind, small hydropower, and potentially biogas projects will go under  a combination of Category A and B. Hence  each 
+sub-project will be individually reviewed and categorised and a due diligence will be undertaken accordingly.    
+ 
+Component #2: Enhancing renewable energy integration, policies and planning  
+ 
+The Programme will be supported by a technical assistance  and policy dialogue  programme that will  further unlock the 
+renewable energy market potential in Kazakhstan and is  estimated to amount USD 7 million.  The GCF is requested to provide USD 
+4 million or 5 7% of this component  to public entities and regulatory authorities to support regulatory reform and institutional  
+capacity -building  programme . Technical assistance to private developers will be source d from the EBRD and/ or other donors , but 
+not from the GCF .  
+ 
+The following s pecific goals  for the regulatory reform s have been set in consultation with the Kazakh authorities and other 
+donors:  
+i) conduct systemic change in the sector ; 
+ii) achieve critical mass of private RES projects ; and 
+iii) enable high -level development of RES.  
+ 
+Further support of the regulatory reform programme financed by the Framework will target improvement of the  three major 
+instruments of the  RES market development in Kazakhstan : FiT, introduction of the auction system and carbon price.  The policy  
+dialogue and technical assistance  initiatives  will include, inter alia  the following aspects : 
+- Further review of the FiT system, and the mechanism of FiT calculation ; 
+- Design and introduction of the auction based system for RES projects, in close coordination with other donors -sponsored  
+projects ; 
+- Development of the domestic energy and carbon market and integration of the RES projects/programmes in that market, 
+and explor ing the use of Paris Agreement article 6  instruments to further leverage the RE S developments beyond the 
+GCF sponsored programme to ensure a long -term  sustainability ; and 
+- Addressing barriers restricting women’s access to employment and skills in the high -value energy sector.  
+ 
+All resources used for C omponent #2 will be used for the procurement of consultancy services according to the EBRD 
+Procurement Policies and Rules.  
+C.4. Background Information on Project / Programme Sponsor (Executing Entity)  
+Since its inception, the EBRD has in total invested EUR 22.2 billion over 1,267 climate mitigation and adaptation projects to 
+promote efficiency and innovation investments in energy for its countries of operation which resulted in 83.6 mt CO 2 emissions 
+reductions. The EBRD has been financing renewable energy projects since 2006 and has as of 31 December 2016 financed more 
+than 4.54GW of renewable energy capacity for total investments of EUR 2.4 billion. These investments in renewable energy al one 
+led to 12.4 mt CO 2 emissions reductions. The projects financed by the EBRD include all technologies and in particular wind, hydro 
+and solar.  
+ 
+The EBRD is committed to increase the share of renewable energy projects financed on an annual basis as part o f its Green 
+Economy Transition (GET) Approach to deliver the mandate of transition impact.  GET aims to reduce GHG emissions, increasing
+
+
+---
+*Page 16*
+---
+
+PUBLIC  
+DETAILED PROJECT / PROGRAMME DESCRIPTION  
+ GREE N CLIMATE FUND FUNDING PROPOSAL | PAGE 12 OF 57 
+ 
+PUBLIC  C 
+the role of cleaner fuels and renewable energy, supporting reform and commercialisation of the power sector including t hrough 
+the mobilisation of private sector infrastructure investment. Please refer  to the link to EBRD’s GET Approach 
+http://www.ebrd.com/what -we-do/strategies -and-policies.html.  
+ 
+All projects are subject to appraisal under the EBRD’s Environmental & Social Policy (ESP) to ensure sustainable development of all 
+operations receiving the EBRD financing.  
+ 
+The EBRD also ha s a solid experience in working closely as a trusted partner to g overnments in promoting renewable and 
+sustainable energy through policy dialogue. The EBRD has contributed towards the implementation  of a number of frameworks 
+for renewables in its countries of operation such as in Romania, Bulgaria, Ukraine, Poland, Mong olia, Serbia and more recently 
+Jordan  and Egypt , and intends to accelerate the initiative in Kazakhstan  along with the GCF.  
+ 
+In 2016, the EBRD consolidated its proven record helping countries in their transition towards clean energy by financing 10 
+renewab le projects amounting  EUR 238 million and more than 300 MW.  In Kazakhstan,  as of 31 July 2017, the EBRD  signed loan 
+agreements for three  renewable energy projects  in Kazakhstan:  Yereymentau wind farm (50MW) , Burnoye solar (50MW)  and 
+Burnoye solar extension (50MW) .    
+ 
+C.5. Market Overview (if applicable)  
+Electricity Market Overview  
+The country’s power sector was shaped during the Soviet era and predominantly relies on coal -fired power plants concentrated in 
+the North (c a. 72% of generation), next to large open pit coal deposits.  Approximately 1 7% of electricity is generated by gas fired 
+power plants and only about 10% comes from non -fossil fuel – five hydropower plants built several decades ago.  
+As most of the capacity is loc ated in the North, the Southern Kazakhstan has historically experienced a power deficit and relies on 
+high voltage transmission lines delivering electricity from the North as well as from the neighbouring Kyrgyz Republic. In to tal, 
+there are 118 power stations in Kazakhstan with the installed electric capacity of 2 2GW and available capacity of ca. 19GW.  At 
+the same time, there are 41 power companies of which the five largest account for c a. 58% of generation, while the ten largest 
+account for c a. 80% of the total electricity output.  
+Electricity production and consumption was growing steadily in Kazakhstan over the past 10 years apart from minor reductions  in 
+2009 and 2013.  Overall, the Kazakh economy remains energy intensive with oil & gas, mining and  industrial companies being the 
+major consumers of electricity, followed by households and the transport sector. Up until 2013, the country had an electricit y 
+deficit which was covered through imports from Russia and the Kyrgyz Republic. However, in 2013 K azakhstan became a net 
+exporter of electricity supplying excess capacity from the northern plants to Russia but that was suspended in 2015 due to th e 
+unfavourable KZT/RUB exchange rate. In 2016 exports to Russia were resumed supporting electricity generati on in the country.  
+At the same time, the country’s power system lacks manoeuvrable balancing capacity and has to rely on Kyrgyz hydropower 
+plants for balancing.   
+Electricity output and consumption in Kazakhstan, million kWh
+
+
+---
+*Page 17*
+---
+
+PUBLIC  
+DETAILED PROJECT / PROGRAMME DESCRIPTION  
+ GREE N CLIMATE FUND FUNDING PROPOSAL | PAGE 13 OF 57 
+ 
+PUBLIC  C 
+ 
+Source: The Kazakh Operator of Electric Power and Capacity Market  
+ 
+RES Market Overview  
+- The market for renewable energy generation in Kazakhstan is nascent, while technical potential is high. The country’s 
+hydro potential is estimated as 27 TWh per year and wind potential at 18 TWh per year while the solar potential is 
+estimated at 3.9 -5.4 TW h as compared to the total annual electricity consumption of 91 TWh currently dominated by 
+coal fired power plants. As of 1Q2017  Kazakhstan has a cumulative installed RES capacity of 2 96 MW ( or 1.3% of the total 
+power generation capacity of  22 GW), of which 50 MW is represented by the Burnoye SPP project sponsored by a JV 
+between United Green Energy Ltd with Samruk -Kazyna Invest LLP and financed by the EBRD.  
+- The Government of Kazakhstan has set a target to increase the share of energy generation fr om the RES  in the country’s 
+energy balance up to 3% by 2020  (versus  the current share of energy generation from the RES at less than 1% ). This is 
+part of the country’s NDC target of reducing GHG  emissions by 15% below 1990 levels by 2030.  
+Cumulative instal led capacity by fuel type in 2015 
+Fuel type  Cumulative installed capacity, 2015  
+Coal  65.9%  
+Gas  20.4%  
+Oil  0.3%  
+Hydropower  12.8%  
+Non -hydro renewables  0.6%  
+Source: GlobalData  
+ 
+Legal/Regulatory Overview  
+- The Kazakh Government commenced the development of the renewables regulations in 2009 and subsequently the 
+Renewable Energy Law in June 2013 by setting the Framework for renewable energy development via introduction of the 
+FiT.  
+- As p er the renewables law,  RES ha s priority of dispatch and sell electricity to a single off -taker – the Financial Settlement 
+Centre ( “FSC”), a wholly owned subsidiary of the National Grid Operator, KEGOC.  
+- Upon the commencement of the commercial operation of a plant, the tariff is set fixed for 15 years subject to annual 
+adjustments for the Kazakh CPI and differentiated by the types the RES in the following way:  
+RES technology  KZT USD  equivalent*  
+Solar  KZT 34.61/kWh  USD  11 cents/kWh  
+Wind  KZT 22.68/kWh  USD  7.2 cents/kWh  
+Small hydro  KZT 16.71/kWh  USD  5.3 cents/kWh  
+Bio energy  KZT 32.23/kWh  USD  10.2  cents/kWh  
+2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 1H16 1H17
+Output 71,553 76,365 80,074 78,434 82,296 86,203 90,248 91,973 93,935 90,797  94,077  46,042  50,787  
+Change % 6% 7% 5% -2% 5% 5% 5% 2% 2% -3% 4% 10%
+By fuel
+TPPs 63,813 68,217 68,495 71,574 74,306 78,354 82,640 84,268 85,689 81,371  82,110  40,394  44,494  
+HPPs 7,740   8,148   7,437   6,859   7,990   7,849   7,608   7,701   8,236   9,250    11,606  5,469    6,081    
+By zones
+North 55,420 57,873 59,081 59,724 65,204 68,314 70,970 71,916 72,676 69,258  70,968  34,935  39,256  
+South 7,636   9,224   10,914 8,161   8,229   8,484   9,487   9,915   10,469 10,810  11,731  5,594    5,498    
+West 8,498   9,268   10,079 10,549 8,862   9,405   9,790   10,141 10,790 10,729  11,377  5,513    6,033    
+Consumption 71,916 76,440 80,620 77,960 83,767 88,136 91,444 89,641 91,661 90,847  92,312  45,217  48,549  
+Change % 6% 6% 5% -3% 7% 5% 4% -2% 2% -1% 2% 7%
+By zones
+North 47,207 49,695 52,237 50,814 58,327 60,589 62,554 60,786 60,865 60,399  61,768  30,308  32,538  
+South 14,332 15,523 16,426 15,016 16,176 17,966 19,005 18,623 19,856 19,393  19,013  9,313    9,921    
+West 10,378 11,222 11,957 12,130 9,264   9,582   9,885   10,232 10,940 11,055  11,530  5,596    6,089    
+Net export (363)     (75)       (545)     474      (1,472)  (1,933)  (1,197)  2,332   2,274   (51)       1,765    825       2,238
+
+
+---
+*Page 18*
+---
+
+PUBLIC  
+DETAILED PROJECT / PROGRAMME DESCRIPTION  
+ GREE N CLIMATE FUND FUNDING PROPOSAL | PAGE 14 OF 57 
+ 
+PUBLIC  C 
+* USD /KZT Exchange Rate is 314.5, as of 2 8 April , 2017.  
+ 
+- In early 2017 the Ministry of Energy introduced amendments to the Renewable Energy Law including amendments on the 
+FX indexation , an introduction of  reserve fund  and a siting plan on the recommended allocation of RES facilities . 
+According to the amendments, a RES developer is entitled to indexation of the FiT provided that the project costs include 
+liabilities in hard currencies in case of at least 25% devaluation  or appreciation  of tenge against USD. The FX indexation 
+formula is presented below, where T t +1 is the FIT effective during tim e t+1 , CPI t is the consumer price index accumulated 
+for 12 months, USD t + 1 = current rate of tenge to US dollar and USD t is average KZT / USD exchange rate calculated for 
+the preceding 12 month period:  
+Tt+1= Tt∗(1+0.7∗(CPI t−100% )
+100%+0.3∗USD t+1−USD t
+USD t) 
+- In the absence of more than 25% depreciation per year against USD, the FiT is adjusted only for annual CPI.  
+- The Ministry of Energy in January 2017 has introduced the reserve fund within the FSC to cover the short -term liquidity 
+needs. The size of the reserve fund is to amount 3% of the total annual RES payments. The FSC is to accumulate the 
+required amount of the reserves via additional  surcharges in the RES support tariffs to the conditional consumers.  
+- Changes in the RES Law also provided for the need for a siting plan on the recommended allocation of RES facilities (the 
+“Siting Plan”). This Siting Plan considers  the RES development targets and its purpose is to identify the most suitable 
+areas where RES should be implemented. The Siting Plan shall be established and approved by the Ministry of Energy at 
+least once a year. In addition to the country -level targets, the Siting Plan provides a summary of all RES projects that can 
+be connected to the network within a defined area.  
+- On 24  July 2017 the Government of Kazakhstan adopted a primary legislation which envisages an introduction of auction 
+based system for further development of RES in Kazakhstan. It is expected that over the next year the Government  of 
+Kazakhstan  would adopt a se condary legislation on an introduction of auction based system to be followed with a first 
+auction on RES capacity conducted in 2018.  
+C.6. Regulation, Taxation and Insurance (if applicable)  
+EBRD  
+Not applicable . 
+ 
+C.7.   Institutional / Implementation Arrangements  
+Component 1  
+The Framework focuses on financing of the RES  projects under the FiT scheme. Under the Program me each Borrower  planning to 
+develop a sub -project concludes a PPA, based on the Ministry Energy approved template, with the FSC.  The key elements of the 
+PPA are the following:  
+- Each Borrower  (the “Seller”) sells electricity generated at the relevant power plant (the “Facility”) in accordance with 
+and in the manner contemplated by the PPA.   
+- Seller’s obligations will include designing, procuring, constructing, erecting, installing, testing, commissioning, owning, 
+operating and maintaining the network assets necessary to interconnect the Facility to the transmission network in 
+accordance with t he relevant network connection directives. The Seller is required to install an electric meter on the site 
+and comply with KEGOC’s standards and instructions for the network operation.  
+- The FSC (the “Buyer”) is required to buy all electricity generated by e ach Facility and recorded by the commercial meter 
+at the point of delivery  dispatch on a priority basis. No curtailment is allowed. The electricity generated by each Facility 
+is then procured to the thermal electricity generators in proportion to their ele ctricity output. Interest of 0.1% is charged 
+on overdue amounts of payments from the Buyer per overdue calendar day. The total overdue interest is capped at 10% 
+of the overdue amount. The term of the PPA is 15 years starting from the commercial operation d ate. 
+- In disputed occasions, the final source of amounts to be paid will be actual amounts generated/consumed in the 
+wholesale electricity market provided by the National Dispatching Centre within KEGOC.  
+ 
+In addition to the PPA, t he Connection Agreement  is concluded between the regional electricity distribution company or KEGOC 
+and each developer , set ting out the terms of interaction between the parties relevant to the connection of and the delivery of 
+electricity by each Facility to the network.
+
+
+---
+*Page 19*
+---
+
+PUBLIC  
+DETAILED PROJECT / PROGRAMME DESCRIPTION  
+ GREE N CLIMATE FUND FUNDING PROPOSAL | PAGE 15 OF 57 
+ 
+PUBLIC  C 
+ 
+Under the Renewable Energy Law, t he FSC sells  the purchased electricity from the RES to the obligated purchasers (thermal 
+generators) proportionately to their output at the tariff set by the FSC. The obligated  purchaser s are obliged to purchase 
+electricity from the FSC at the tariff set monthly by the FSC, which includes the costs of purchasing the electricity from re newable 
+energy sources. In accordance with the Renewable Energy Law, the obligated purchaser in turn sell s the renewables electricity to 
+large consumers and energy supply ing companies along with the internal generated energy . There are currently 41 thermal 
+generators of which 10 account for ca. 75% of the country’s electricity generation.   
+ 
+Component 2  
+The EBRD will be directly involved in all aspects of the implementation of the grant component of the Program me. All 
+procurement will be done in accordance with EBRD’s Procurement Policies and Rules, which stipulate a strong involvement in 
+working with cli ents on all related documents and processes.
+
+
+---
+*Page 20*
+---
+
+PUBLIC  
+DETAILED PROJECT / PROGRAMME DESCRIPTION  
+ GREE N CLIMATE FUND FUNDING PROPOSAL | PAGE 16 OF 57 
+ 
+PUBLIC  C C.8. Timetable of Project/Programme  Implementation5 
+ 
+ 
+ 
+                                                             
+5 The information is preliminary and depends on actual implementation of the Programme.  
+ 
+Component / Subcomponent / Activity Q1 Q2 Q3 Q4 Q1 Q2 Q3 Q4 Q1 Q2 Q3 Q4 Q1 Q2 Q3 Q4 Q1 Q2 Q3 Q4 Q1 Q2 Q3 Q4
+Component 1 (loan for project finance)
+1.1 Scaling up renewable energy
+investments* x x x x x x x x x x x x x x x x x x x c
+Component 2 (grant for technical assistance)
+2.1 Technical assistance and capacity
+building**
+2.1.a. Institutional capacity building
+(including implementation support for
+auctions and tenders, and project preparation
+for public entities) x x x x x x x x x x x x x x x x x x x c
+        2.1.b. Vocational training development x x x x x x x x x x x x x x x x x x c
+        2.1.c. Promote gender equality x x x x x x x x x x x x x x x x x x c
+2.1.d. Capacity building toFSC (MRV and
+telemetry requirements/rules) x x x x x x x x x x x x x x c
+   2.2 Policy engagement***
+2.2.a. Design and introduction ofthe
+auction based system x x x x x x x x x x x x x x x x x x c
+2.2.b. Further review ofFiT system,
+elaboration of the mechanism of FiT
+calculation x x x x c
+        2.2.c. Strategies for carbon market x x x x x x x x x x x x x x x x c
+Subtotal of component 2
+TOTAL x: ongoing
+c: complete
+* related to output 1 in the logic framework in the funding proposal
+** related to output 2 in the logic framework in the funding proposal
+*** related to output 3 in the logic framework in the funding proposal2022 2017 2018 2019 2020 2021
+
+
+---
+*Page 21*
+---
+
+PUBLIC  
+RATIONALE FOR GCF INVOLVEMENT  
+ GREE N CLIMATE FUND FUNDING PROPOSAL | PAGE 17 OF 57 
+ 
+PUBLIC  D 
+SECTION D: RATIONALE  FOR  GCF  INVOLVEMENT  
+ 
+ 
+ D.1. Value Added for GCF Involvement    
+The GCF involvement in the proposed Programme is critical as it will:  
+i) address real and perceived risks and cost disadvantages as well as the lack of availability of long -term financing from 
+local and international banks in Kazakhstan ; 
+ii) attract international and domestic private sector investors to participate in the Kazakh RES market ; 
+iii) reduce the financial risk s of the project sponsors in an untested market  through decreased interest rate sensitivity and 
+lower medium term cash flow pressure through longer term financing ; and 
+iv) provide for bridging of a capital gap that would otherwise remain within the financial st ructure of the project.  
+ 
+Furthermore, through the proposed Programme, the GCF will facilitate achievement of the target on the share of renewable 
+power generation at a country level (3% of total generation by 2020), reduce power deficit in the southern regions of Kazakhs tan 
+by increasing installed renewable capacit y in the South and assist in the further development of the Kazakh Emissions Trading 
+Scheme  by the potential supply of domestic carbon credits. This supply of carbon credits is an essential part for the working of 
+the Kazakh ETS, and hereby underwrites the  paradigm shift towards pricing carbon  for the emitters, and incentivising the carbon 
+neutral technologies such as renewable energy . The RE S projects may register for a domestic carbon credits status, which under 
+the current rules may use international accepted methodologies, such as the Clean Development Mechanism. Finally, the 
+successful implementation of the various sub -projects is expected  to encourage the development of similar projects by other 
+private investors, who have several concerns related to technical and operational challenges associated with severe climate 
+conditions as well as commercial and regulatory risks related to the nove l nature of the country’s renewable energy market.  
+ 
+D.2. Exit Strategy   
+Sub-project Level  
+The exit strategy for development finance is through repayment of the EBRD/GCF loan at maturity.  
+ 
+Renewable Sector Level  
+Following the PPA expiration the  individual sub-projects become price -taker s in the electricity market.  At a sector level, 
+providing the financ ing and technical assistance will contribute to the development of a self -sustaining market for renewable 
+energy projects in Kazakhstan, as outl ined above.
+
+
+---
+*Page 22*
+---
+
+PUBLIC  
+EXPECTED PERFORMANCE AGAINST INVESTMENT CRITERIA  
+ GREE N CLIMATE FUND FUNDING PROPOSAL | PAGE 18 OF 57 
+ 
+PUBLIC  E 
+Section E: EXPECTED PERFORMANCE AGAINST INVESTMENT CRITERIA  
+ 
+In this section, the accredited entity is expected to provide a brief description of the expected performance of the proposed 
+project/programme against each of the Fund’s six investment criteria. Activity -specific sub -criteria and indicative assessment 
+factors, wh ich can be found in the Fund’s Investment Framework , should be addressed where relevant and applicable.  This 
+section should tie into any request for concessionality made in section B.2 . 
+ 
+E.1. Impact P otential  
+Potential of the project/programme to contribute to the achievement of the Fund’s objectives and result areas  
+E.1.1. Mitigation / adaptation impact  potential  
+The economy of the Republic of Kazakhstan is the largest economy in Central Asia. In 2015, the World Economic Forum ranked 
+Kazakhstan the 50th out of 144 countries in its Global Competitiveness Ranking, which considers multiple macroeconomic and 
+financial factors, such as market size, GDP, and tax rates, among others. The power industry  is represented by more than 5 .4% of 
+total industrial output of the country in 201 6. Most of Kazakhstan’s electricity ( ca. 72%) is produced by coal -fired power plants.  
+ 
+With respect to climate change, Kazakhstan ranks among the top 10 energy -intensive economies in the world about double the 
+energy intensity of the USA or Canada.  Mirroring the high -energy  intensity, the country is the fourth most GHG  intensive country 
+in the world.   Kazakhstan is more than twice as GHG intensive as the European and Central Asian regional average, and more than 
+three times as intensive as the OECD average.  
+ 
+The CO 2 emissions of the electricity sector in Kazakhstan are substantial, at 0.844 tCO 2/MWh of electricity generated. Adding 
+zero -emissions renewable energy capacity therefore has an immediate and substantial impact. In some locations, especially in 
+the south of the country, adding power capacity will also help to balance the grid, and there by reduce transmission system losses.  
+Without taking the latter part into account, the introduction of the Programme will help to initialize the process of replacement 
+of the outdate d and polluting electricity generating technologies and is expected to ac hieve CO 2 reduction of  at least  0.64 million 
+tons CO 2 equivalent per year once all sub-projects are operational , for a lifetime of 20 years . 
+ 
+E.1.2. Key impact potential indicator  
+Provide specific numerical values for the indicators below.  
+GCF core 
+indicators  Expected tonnes of carbon dioxide equivalent (t CO 2 
+eq) to be reduced or avoided (Mitigation only)  Annual   
+643,229  tCO 2e (once all sub-projects will be in 
+operation)  
+Lifetime   
+12.86  mtCO 2e 
+• Expected total number of direct and 
+indirect beneficiaries, disaggregated by 
+gender (reduced vulnerability or increased 
+resilience);  
+• Number of beneficiaries relative to total 
+population, disaggregated by gender 
+(adaptation only)  Total   
+3,000 short -term jo bs (during construction) 
+and 150 long -term jobs (during operation)  
+Percentage 
+(%)  
+N/A 
+Other 
+relevant 
+indicators  Examples include:  
+• Expected increase in the number of households with access to low -emission energy  
+• Expected increase in the number of small, medium and large low -emission power suppliers, and installed 
+effective capacity
+
+
+---
+*Page 23*
+---
+
+PUBLIC  
+EXPECTED PERFORMANCE AGAINST INVESTMENT CRITERIA  
+ GREE N CLIMATE FUND FUNDING PROPOSAL | PAGE 19 OF 57 
+ 
+PUBLIC  E 
+• Expected increase in generation and use of climate information in decision -making  
+• Expected strengthening of adaptive capacity and reduced exposure to climate risks  
+• Other s 
+ 
+The EBRD developed a standardised baseline methodology based  on a CDM approach to conservatively assess CO 2 reductions 
+driven by the Programme . The methodology calculates the CO 2 savings based on the total estimated  installed capacity of wind,  
+PV, hydro , bioenergy power plants to be deployed by the Programme in Kazakhstan. The grid emission factor ( “EF”) takes into 
+account the current energy mix supplied in Kazakhstan and was estimate d at 0.844  tCO 2/MWh  based on the Project Design 
+Document prepared for Yereymentau wind project . It is assumed that total RES capacity under the Framework to be developed 
+will be ca. 330 MW in total consisting mainly of PV, wind and small hydro. With a conservative assumption of the load factor s for 
+these 3 main types of  technologies,  the estimated electricity production is 762,120 MWh, c orresponding to 643,229  tons CO 2 per 
+annum . The total CO 2 emissions reduction over lifetime of the sub-projects of 20 years is estimated at 1 2.86 million CO 2. The 
+detailed calculation  is set out below . 
+ 
+  
+ 
+Estimated cost for carbon reduction (total investment cost/expecte d lifetime emission reductions  tCO 2eq) 
+- USD 106 million /tCO 2 for GCF contribution = 8.2 USD /tCO 2 
+- USD 550 million /tCO 2 for total Programme  cost = 42.8 USD /tCO 2 
+ 
+The Programme’s investment costs and the mitigation costs ( USD per ton CO 2 mitigated over 20 years) are in line with those of 
+the similar RES projects in other countries of the EBRD’s operation such as Ukraine and Russia.  
+ 
+E.2.  Paradigm Shift Potential  
+Degree to which the proposed activity can catalyze  impact beyond a one -off project/programme investment  
+E.2.1. Potential for scaling up and replication (Provide a numerical multiple and supporting rationale)  
+The paradigm shift is envisaged to take place along three phases from short to long -term. In its  current phase, the RE S 
+development is triggered by a FiT system and further leveraged by optional carbon credits for the Kazakh ETS as per legislati on. 
+The incentives provided will help to establish a beachhead capacity of renewable energy in Kazakhstan, enabling the 
+development of national skills and a suppliers / services infrastructure. In a second phase within  2-3 years, Kazakhstan would fully 
+switch to an auctioning system for additional RE S capacity and generation, which would help to bring down the investment costs 
+through competition. In a third phase the further decarbonisation of the power sector would be carried in full by the energy and 
+the carbon market (Kazakh ETS), and by an increased demand for electricity through the electrification of othe r sectors (e.g. 
+transport).  
+ 
+This Programme would focus its technical assistance activities across three different timelines, short, medium and long term . The 
+long -term  perspective is required to drive the transformational change, whilst short term the fo cus is on issues like implementing 
+regulations and training and the medium term on the enabling of an auctioning system for renewable energy.  
+ 
+The Programme  will enable the development of a scaled -up and viable RES market in Kazakhstan.  By demonstrating the 
+Unit 
+installed 
+capacityCapacity 
+factor
+(MW)
+Solar PV 150 0.12 157,680 0.844 133,082 20 2,661,638
+Wind 120 0.35 367,920 0.844 310,524 20 6,210,490
+Hydro/ bioenergy 60 0.45 236,520 0.844 199,623 20 3,992,458
+Total 330 762,120 643,229 12,864,586Lifetime 
+emissions 
+avoided (tCO2)TechnologyAnnual 
+electricity 
+Generatio
+n (MWh)Grid EF 
+(tCO2/M
+Wh)Annual 
+emissions 
+avoided 
+(tCO2)Lifetime 
+(yr)
+
+
+---
+*Page 24*
+---
+
+PUBLIC  
+EXPECTED PERFORMANCE AGAINST INVESTMENT CRITERIA  
+ GREE N CLIMATE FUND FUNDING PROPOSAL | PAGE 20 OF 57 
+ 
+PUBLIC  E 
+commercial viability of the RES projects,  it will encourage commercial lending in the future.   The Programme  will provide a highly 
+visible demonstration to other potential developers that projects can be successfully implemented in thi s market.  By supporting 
+the development of RES projects in accordance with best international practices, the Programme  will help establish standards 
+that can be replicated and will further encourage other developers to enter the market.   It is essential f or suppliers to see a 
+growing RE S market uptake, for those to undertake upfront investments in setting up their development and services 
+infrastructure. A well working suppliers network established in Kazakhstan is essential to reduce risks to operations a nd bring 
+down transaction costs.  
+ 
+Furthermore, the Programme  will support and facilitate financing structures which are not widely available for these types of 
+projects from local banks but which may be expected to enter the market once precedents are established.   As long -term,  limited 
+recourse financing is essential to enable increased levels of investment for renewable energy projects in Kazakhstan , the 
+Programme  could have a fundamental role in establishing this market.  
+ 
+The Programme  will enable th e involvement of private sector resources to design and implement RES projects taking full risk for 
+long -term finance. This will allow bring ing optimal private sector technical and financial expertise in diversification of energy 
+sector in Kazakhstan.  
+ 
+A Theory of Change model for the Programme  is provided in Annex 5. 
+ 
+E.2.2. Potential for knowledge and learning  
+The Programme  is building on multi -annual and multi -donor engagement in the regulatory aspects of the Kazakh renewable 
+energy sector. The EBRD has throughout been the lead donor agency in this field, and the results from the investment and 
+tracking of the Programme  will be fed back into the regulatory development process. This will also be a key element of the 
+technical support and capacity building  which  will be provided to the Ministry of Energy, KEGOC (national transmission company), 
+RES developers in order to strengthen local capacities to develop (project design, financing, construction, operation and 
+maintenance) and integrate renewable s into the grid.   
+ 
+ 
+These activities will result in the build -up of valuable lessons learnt and the enhancement of linkages between authorities, 
+sponsors, financiers, suppliers and construction and consulting companies, and consequently the adequate strengthening of local 
+governance and institutional knowledge required for successful and sustainable implementation of RES projects . 
+ 
+ 
+E.2.3. Contribution to the creation of an enabling environment
+
+
+---
+*Page 25*
+---
+
+PUBLIC  
+EXPECTED PERFORMANCE AGAINST INVESTMENT CRITERIA  
+ GREE N CLIMATE FUND FUNDING PROPOSAL | PAGE 21 OF 57 
+ 
+PUBLIC  E 
+The fundamental purpose of the Programme is to enhance the long -term viability of private sector participation in harnessing 
+Kazakhstan's renewable energy potential, thus enabling the scale necessary to bring the generation sector, and so the economy  as a 
+whole, onto a lower -carbon development path.  
+ 
+The Programme builds on the ambitious efforts of the Kazakh Government to encourage the renewable generation market via the 
+Renewable Energy Law, and the FiT / auction  scheme. In the long -term, the involvement of the private sector at scale is necessary to 
+bring in the financing, the skills and the technology necessary to decarbonize Kazakhstan's carbon -intensive power sector to a level in 
+line with the country’s overall clean energy potential. The Programme bri ngs together the necessary capacity enhancement and the 
+provision of adequately blended financing in order to overcome the barriers, and to demonstrate and pave the way for sustaine d 
+private sector participation in the long -term.  
+ 
+Concretely, the following activities will create conditions conducive to sustained private investments in the sector  by the following 
+activities : 
+• design and introduce the auction based system for RES projects ; 
+• develop the integration of the RES projects in domestic energy  and carbon market, and explore the use of Paris Agreement 
+article 6 instruments to further leverage the RES developments beyond the GCF sponsored programme to ensure a long -
+term sustainability ; 
+• training and capacity building for FSC, KEGOC and regi onal di stribution companies.  
+ 
+The purpose of the Programme is to enhance emission reductions and low -carbon development, by supporting the market for private 
+sector investments in power generation from renewables in Kazakhstan. As such, the current proposal:  
+• Contributes to demonstrating the viability of a new market supports the uptake of low -carbon technologies with low market 
+penetration rates.  
+• Makes use of funding support mechanisms which are relatively new for the Kazakh power sector and the blending of 
+multi lateral climate finance into project finance packages as proposed by the current Programme. Some of the capacity 
+strengthening activities will target the enhanced management of the FiT scheme so as to make it sustainable, flexible and 
+attractive for contin uous investments.  
+ 
+The Programme will introduce and demonstrate viability and attractiveness of the new modern technologies, as well as project 
+implementation and financing practices, resulting in facilitating competitive entry of low carbon players into a market curre ntly 
+dominated by their higher -carbon counterparts.  Overall, the Programme will help unlocking the renewable potential of Kazakhstan 
+and facilitate investments in the sector which would essentially create a new ind ustry and bring in new players  thus contributin g to 
+the competitiveness in the country’s economy.  
+E.2.4. Contribution to regulatory framework and policies
+
+
+---
+*Page 26*
+---
+
+PUBLIC  
+EXPECTED PERFORMANCE AGAINST INVESTMENT CRITERIA  
+ GREE N CLIMATE FUND FUNDING PROPOSAL | PAGE 22 OF 57 
+ 
+PUBLIC  E 
+The sub-projects under the Framework will seek to identify any remaining gaps in regulation drawing upon previous substantial work 
+in consultations with the Kazakh authorities and other donors , and include regulatory support program that will help to  
+- conduct systemic changes in the sector ; 
+- achieve the critical mass of private renewable projects ; and 
+- enable  high -level developments of the RES.   
+ 
+The planned program  will provide support to the regulatory reform including carbon market related policy engagement, on best  
+strategies to integrate the RES projects/programmes under domestic and/or Paris Agreement flexible mechanism; reviewing how the 
+RES sector will be dealt with under the Kazakh Emissions Trading System carbon budget; supporting development of the MRV syst em; 
+introduction of the auction based system for the RES projects.   Framework will enable the  policy shift that supports the move 
+towards sustainability of RES market by creating a large pool of projects and project sponsor interest; and international int egration of 
+RES market development and enabling carbon market access, by this ensuring longer term sustainability of the framework regulatory 
+outcomes.   
+ 
+The Program me will also contribute to ongoing national efforts to coordinate with the G overnment and support private sector actors 
+to implement the first 3 year Action Plan for the Concept on the Family and Gender in the Republic of Kazakhstan to 2030 , in 
+partnership with the National Commission for Women, Family and Demographic Policy .  In particular, the Programme  will help  
+facilitate clients to review and inform ongoing policy dialogue processes  led by EBRD , with the long -term  objectives of reducing legal 
+and regulatory barriers affecting priority recruitment areas, expanding legal awareness for women’s equal access to the labou r 
+market . 
+ 
+ 
+ E.3.  Sustainable Development Potential  
+Wider benefits and priorities  
+E.3.1. Environmental, social and economic co -benefits, including gender -sensitive development impact  
+The Programme will bring:  
+- Socio -economic benefits through employment from construction and operation ; 
+- Socio -economic benefits from sustainable energy supply ; 
+- Socio -economic benefits from end -user costs reduction resulted from more efficient competitive tendering scheme;  
+- Cumulative effects on climate through reduction in GHG emissions ; 
+- Decrease of air pollutant emissions and other types of environmental pollution associated with traditional energy 
+production, leading to improved air quality and reduced health risks ; 
+- Penetration of modern construction/production patterns and technologies, demand in high skilled personnel ; 
+- Enhanced a ccess to employment opportunities for women in the high -value, high -growth energy sector . 
+ 
+Gender Impact  
+While the RES market is vital to Kazakhstan’s economy, women are not equally sharing in increased employment opportunities in  the 
+Power and Energy sector, and are thus not well positioned to benefit from opportunities connected to the development of renewable 
+energy sources.  The Government’s sectoral employment forecasts show that skills -related challenges are particularly pronounced in 
+the natural resources and power & energy sectors. Based on employer surveys, the Ministry of Healthcare and Social Developmen t 
+anticipates that mor e than 10,000 vacancies will appear in the electricity supply sector over the next five years, across almost all 
+levels and occupations. This corresponds to a 14 % increase from a baseline of 279,941 jobs in 2015. Existing legal regulations that bar 
+women f rom certain types of occupations will limit the extent to which these employment opportunities will be open to the widest 
+possible talent pool. This creates challenges for employers as well as inclusion barriers.  Women are currently only minimally 
+represen ted in the Energy sector ( ca. 31% of total Industry Employment) and are particularly absent from the higher paying jobs (with 
+average ~20% pay gap across all salary levels – the third largest gap by sector in Kazakhstan. Not only are there legal prohibitio ns 
+against women working in certain jobs but also few women possess the university and vocational skills training that would qua lify 
+them for positions in RES engineering, industrial management and core operations.   Without attention to strengthening equal ity of 
+opportunity in th e Framework, existing legal exclusions to women working in specific roles are expected to spill -over and discourage 
+women from applying their talents or seeking training opportunities in RES sectors.
+
+
+---
+*Page 27*
+---
+
+PUBLIC  
+EXPECTED PERFORMANCE AGAINST INVESTMENT CRITERIA  
+ GREE N CLIMATE FUND FUNDING PROPOSAL | PAGE 23 OF 57 
+ 
+PUBLIC  E 
+ 
+Strengthening of women’s participation in the high value RES sectors:  Given the scale of the proposed Programme , it would create 
+an opportunity to work closely with eligible RES project developers to develop and implement a comprehensive plan to ensure 
+women and men are able to equally access opportunities connected to operations in terms of direct technical and operations skil ls 
+and employment. For example, it will be  ensure d that appropriate infrastructure for women (e.g. separate bath rooms) and security  
+measures will be put  in place to accommodate female workers in the otherwise male dominated energy sector. The implementation 
+of additional measures  will be sought in line with EBRD Environment and Social Policy ( “ESP”) Performance Requirements ( “PR”), 
+safeguarding  ‘decent and fair workplace’ principles and core labour standards: for example, equal pay for work of equal value, labour 
+rights, occupational health -care services, enhanced safety standards, childcare services for women with children, and on –site 
+kindergartens for children of working parents . The EBRD will also develop partnerships with vocational education and training 
+(“TVET ”) institutions and Kasipkor Holding (public authority responsible for the quality assurance of colleges and universities) , to 
+enhance young women’s access to developing relevant technical skills  through training  unskilled or low -skilled women to ensure their 
+recruitment in companies that will execute sub -projects . This intervention can potentially benefit the local female labour force, as 
+many more women – who otherwise might have been unemployed – will have access to economic opportunities in the energy sector 
+through training and placement programs offered.   Sub-projects under the framework will aim to strengthen equal op portunities  
+(“EO”) for women to compete on equal footing with men. Progress strengthening EO in the sub -projects will inform and be reflected 
+in on -going national policy dialogue with the Government of Kazakhstan on addressing legal and regulatory barriers  to women’s 
+employment.  An overview of strengthening equality of opportunity and gender equality through Kazakhstan Renewables Framework 
+is outlined in Annex 3. RES project developers will  also aim to promote workplace equality and a culture of diversity by supporting the 
+move of women workers from semi -skilled to skilled and managerial/leadership positions through training/reskilling, mentoring, and 
+employing ‘buddy’ sys tems and other programs/systems. RES project developers  will also aim to raise awarene ss of gender issues 
+within public and private entities working in the energy sector in Kazakhstan by conducting a series of gender awareness work shops, 
+especially in relation to the topic of gender in the workplace, to enable concerned entities get a bette r sense of what it takes to 
+achieve gender equality in the work environment.    
+ 
+Addressing gender and household consumption practices: At sub -project level, a consumers’ survey will be undertaken before the 
+commencement of activities as well as after the provision of services to assess both men and women consumers’ satisfaction levels 
+with energy provision.   This will enhance the client’s knowledge of consumers’ preferences and further improve the services provided 
+through identifying and addressing consum ers’ different needs in terms of access to and use of electricity, ultimately leading to 
+improved customer satisfaction and efficient corporate practices.  
+E.4. Needs of the R ecipient  
+Vulnerability and financing needs of the beneficiary country and population  
+E.4.1. Vulnerability of country and beneficiary groups (Adaptation only)  
+n/a 
+E.4.2. Financial, economic, social and institutional needs  
+Economic Impact  
+There is very limited local experience and knowledge in the area of RES in Kazakhstan.   The continuing high inertia in the sector of 
+renewable energy leads to lack of risk appetite of investors and needs to be mitigated by the success story of RES projects.  
+ 
+ 
+Concessional financ ing provided  to the  RES projects will address the remaining market barriers of limited availability of commercial 
+financing for renewable energy projects, and prohibitive lending conditions of local financial institutions for innovative ty pes of 
+investments such as RES proje cts. 
+ 
+Social Impact  
+At the request of the Government of Kazakhstan in 2012 the EBRD has commissioned a study on the affordability and potential s ocial 
+impact of RES for Kazakhstan that demonstrated that electricity cost increases are not a significant port ion of residential expenditure 
+even with relatively high penetrations of RES investments in need of FiT support.
+
+
+---
+*Page 28*
+---
+
+PUBLIC  
+EXPECTED PERFORMANCE AGAINST INVESTMENT CRITERIA  
+ GREE N CLIMATE FUND FUNDING PROPOSAL | PAGE 24 OF 57 
+ 
+PUBLIC  E 
+Overall, renewables are not expected to create affordability issues in the near future  for several  reasons. Reaching the 3% target 
+would require about 1.5 to 2GW of renewable capacity to be built over the next four years requiring investment of ca. EUR 2 -3 billion.   
+One of the main constraints to achieve this would be the lack of long -term debt financi ng, particularly in local currency .   
+Furthermore, even if the target is achieved renewables would still represent a relatively small portion of the sector cash fl ows. In the 
+long run, once the PPA expires after 15 years the energy production at such plant  is likely to continue and it would become a price 
+taker. Finally, the cost of renewable energy projects has been decreasing steadily, which is likely to lead to reduced tariff  levels for 
+new projects, while at the same time the cost of thermal generation will continue to increase with inflation and thus the gap between 
+renewable tariff and thermal will become smaller.  
+ 
+The EBRD also  commissioned a study to analyse the social impact of renewable energy feed -in-tariffs in Kazakhstan with the objective 
+of add ressing concerns of governmental agencies that inflation and a rapid build -up of renewables capacity will become 
+unsustainable in social terms due to the added electricity tariff. Though the findings of the study show that electricity is not a 
+significant proportion of residential expenditure even with relatively high penetrations of renewable energy investments, the Bank 
+will work with clients and appropriate regulatory authorities to ensure that renewable energy feed -in-tariffs do not adversely affect 
+the coverage of electricity, especially among poor households and those headed by women, widows, persons with disabilities, and 
+elderly persons. Tariff levels that do not properly reflect women’s lower incomes or their use of energy – related appliances will 
+constrain women’s energy access. For that purpose,  gender -sensitive public consultations will be  undertaken to assess communities’ 
+willingness to pay. In this context, it is important for the AE to note that connections or user -fee requirements that do not  integrate 
+affordable options – such as revolving funds, grants, and affordable credit facilities to improve household connectivity – will neglect 
+the needs of poor households, vulnerable persons (including the disabled, elderly, widows) and female –headed households. To note, 
+the country gender profile states that women in Kazakhstan typically make decisions related to household energy consumption, 
+therefore changes in the costs and source for electricity generation may fall disproportionately on women.
+
+
+---
+*Page 29*
+---
+
+PUBLIC  
+EXPECTED PERFORMANCE AGAINST INVESTMENT CRITERIA  
+ GREE N CLIMATE FUND FUNDING PROPOSAL | PAGE 25 OF 57 
+ 
+PUBLIC  E 
+E.5.  Country O wnership  
+Beneficiary country (ies) ownership of, and capacity to implement, a funded project or programme  
+E.5.1. Existence of a national climate strategy and coherence with existing plans and policies, including NAMAs, NAPAs and NAP s 
+The Kazakh Government launched a strategic initiative called the Green Economy in 2013 under which several  actions have been 
+planned including the development of renewable energy sources. The objective is to bring the share of new renewable energy in  
+electricit y generation from nearly zero to 3% by 2020, and then to increase  it further to 30% by 2030 and 50% by 2050.  
+ 
+The initiative became the platform for Kazakhstan’s commitment during the UNFCCC Conference of Parties in Paris as was 
+communicated by the Kazakh Government in its INDC to reduce GHG  emissions.  On 16th of November 2016, the President of 
+Kazakhstan signed the Law “On ratification of the Paris Agreement”.  The INDC , and now NDC as Kazakhstan ratified the Paris 
+Agreement, calls for an economy -wide target of 15% reduction in GHG  emissions by 2030 compared to 1990 reflecting a reduction of 
+at least 22% below pro jected business as usual emissions.   
+E.5.2. Ca pacity of accredited entities and  executing entities to deliver  
+The EBRD was established in 1991 to nurture a new private sector in a democratic environment. The EBRD provides project financing 
+for banks, industries, and businesses, both new ventures and investments in existing companies.  It also works with publicly owned 
+companies, to support privatization, restructuring state -owned firms and improvement of municipal services. The Bank uses its close 
+relat ionship with governments in the region to promote policies that will support the business environment. The Bank also has a 
+strong environmental mandate and is committed to financing projects that are environmentally sound and sustainable.  
+ 
+The EBRD’s activities in the area of green finance are driven by its Green Economy Transition (GET) Approach. This approach consists 
+of providing finance, supporting policy reform and providing technical assistance. Under the GET, the EBRD has committed over  EUR 
+1,464 million  (USD 1,566 million equivalent)  in green finance in Kazakhstan since 2006. The supported projects cover such areas as 
+cleaner energy and renewables. These account for around half of the total volume.  The EBRD has been the lead in Kazakhstan’s 
+participation in the Clean Technology Fund, which provide s USD 200 million of concessional climate finance to Kazakhstan, and which 
+has enabled a range of high -priority projects supporting the move towards a Green Economy in Kazakhstan.  
+ 
+The Bank signed loan agreements for three  renewable energy projects  in Kazakhstan:  Yereymentau wind farm (50MW) Burnoye solar 
+(50MW) and Burnoye solar extension (50MW) .  
+ 
+Beyond finance, the EBRD has been working with the Government of Kazakhstan on improving the regulatory framework for green 
+finance by supporting policy reform in areas  such  as renewable energy, energy efficiency and carbon markets.  The Bank’s activities in 
+the Kazakh power sector have delivered major impacts in terms of energy efficiency, renewable energy a nd decarboni sation of the 
+country’s economy.  The EBRD has a long history of engagement with the government on sustainable energy, dating back to 2008, 
+and has been close involved in the Renewable Energy and Green Economy Laws, and the Kazakh Carbon Market  development.  
+ 
+The Bank has a strong, well -established presence in the ECA region and is therefore uniquely well placed to contribute to the 
+challenge of climate change adaptation in the region. It has a network of around 200 professional staff located across the region to 
+support project development, implementation and monitoring, together with sustained policy dialogue and business relationship s 
+with governments, local institutions, industry, banks, utilities and investors.  The EBRD currently operates in 36 countries within the 
+region and has at least one resident office within each of these. Some larger countries, such as Kazakhstan and Turkey, also have sub -
+regional offices to bring EBRD staff closer to the business needs.  Regional offices are typically staffed by a mixture of international 
+and national staff and provide an in -depth knowledge of the social, economic, and political conditions within the country and help to 
+generate and implement new projects as well as monitor existing operations , and facilitate dialogue and business relationships with 
+governments, local institutions, industry, banks, utilities, and investors.
+
+
+---
+*Page 30*
+---
+
+PUBLIC  
+EXPECTED PERFORMANCE AGAINST INVESTMENT CRITERIA  
+ GREE N CLIMATE FUND FUNDING PROPOSAL | PAGE 26 OF 57 
+ 
+PUBLIC  E 
+E.5.3. Engagement with NDAs, civil society organizations and other relevant stakeholders  
+Engagement with NDA  
+The EBRD has several  meetings  with Ministry of Energy ( NDA ) with regards to this Programme through face -to-face meetings, 
+presentations and email correspondence. The Programme inputs were included in the National Plan of Kazakhstan for the GCF. 
+Ministry of Energy p rovided its no-objection letter for the Programme on 24 February 2017 .  
+ 
+The Strategic Environmental Review ( “SER”) conducted by the EBRD in 2014 -2015 included two -tier public consultations campaign. As 
+required by the EU SEA Directive, all relevant stakeholders were identified (central and local authorities, professional comm unity, 
+NGOs and general public) and consul ted on the scope of the assessment, and then were given the possibility to review and comment 
+the SER report. Consultations were hold in Almaty and Astana. The s takeholder engagement plan as well as the consultations minutes 
+are available at the SER websit e:  http://kazreff -ser.com/index.html  
+ 
+Engagement with stakeholders including Civil Society Organisations ( “CSOs ”) 
+The EBRD recognises the important role of CSOs in raising awareness and stimulating behavioural change and has engaged with a 
+wide range of stakeholders including local CSOs.  
+ 
+The Programme's design and implementation are consistent with the Fund's requirements for stakeholder engagement and 
+disclosure, as well as the GCF's Criteria for Programme and Project Funding. A Stakeholder Engagement Framework , developed 
+according to the principles of the  EBRD’s ESP PR10 will guide communication with and participation of stakeholders  to continue to 
+engage throughout the course of the project. This will have two tiers: on the project level, developers wi ll be requested to fully 
+comply with the above -mentioned PR 10; on the Programme level, targeted measures will be designed, including, but not limited to, 
+regular monitoring of public awareness of the programme progress , public disclosure of information, w here relevant going beyond 
+the requirements of national/local legislation, as well as developing meaningful customized  consultation mechanisms. By this, the 
+Stakeholder Engagement  Framework will ensure that the views and concerns of local stakeholders are adequately reflected and that 
+the Programme objectives, risks, and results are communicated effectively, ensuring local ownership of this Programme.  
+ 
+The Programme will ensure that careful stakeholder mapping is undertaken, that consultations are designed in a gender responsive 
+way and that women have an equal opportunity to participate in project related discussions and initiatives.  
+ 
+The EBRD requires its clients to be aware of and respond to stakeholders’ concerns related to the project in a timely manner . For this 
+purpose, the client will establish an effective grievance mechanism, process, or procedure to receive and facilitate resoluti on of 
+stakeholders’ concerns and grievances, in particular, about the client’s environmental and social performance. EBR D requires a 
+Grievance Mechanism to be developed as an integral part of the Stakeholder Engagement Plan during the ES due diligence for al l sub -
+projects.  
+ 
+EBRD also has its own Project Complaint Mechanism that has also established its own accountability m echanism, the Project 
+Complaint Mechanism ( “PCM ”), that has been established to assess and review complaints about Bank -financed projects. It provides 
+individual(s) and local groups that may be directly or adversely affected by an EBRD project, as well as CSO’s , a means of raising 
+complaints or grievances with the Bank, independently from banking operations.  
+ 
+PCM has two functions:  
+• a Compliance Review function which seeks to assess whether a Bank approved project complies with relevant the 
+EBRD’s policies, specifically relevant environmental policies and project -specific provisions of the Public Information 
+Policy, and  
+• a Problem -solving Initiative which has the objective of restoring dialogue between the parties, where possible, to trying 
+to resolve the underlying issues giving rise to the complaint or grievance. A problem -solving initiative might include 
+independent fact -finding, me diation, conciliation, dialogue facilitat ion, investigation or reporting .
+
+
+---
+*Page 31*
+---
+
+PUBLIC  
+EXPECTED PERFORMANCE AGAINST INVESTMENT CRITERIA  
+ GREE N CLIMATE FUND FUNDING PROPOSAL | PAGE 27 OF 57 
+ 
+PUBLIC  E 
+E.6. Efficiency and E ffectiveness  
+Economic and, if appropriate, financial soundness of the project/programme  
+E.6.1. Cost -effectiveness and efficiency  
+The Programme will address  the barriers discussed earlier and facilitate private sector participation in a sector that has a limited 
+private sector engagement . The Programme will introduce and demonstrate viability and attractiveness of the new modern 
+technologies, as well as proje ct implementation and financing practices, such as limited recourse -based finance, project finance, etc.  
+Implementation of the Programme will demonstrate that projects containing green energy components, RES in particular, can be 
+replicated in the long -term.   
+ 
+The financial structure is adequate and reasonable in order to achieve the proposal’s objectives, including addressing existi ng barriers 
+for scaling up of renewable energy sources, providing the least concessionality and without crowding out private  investment.  From a 
+risk-return and contribution perspective, this is the least concessionality that was identified based on the EBRD’s experience.  The 
+amount of the GCF financing for each sub -project will be calibrated  on a project by project basis in accordance with the EBRD’s 
+guidelines on the use of concessional finance.   
+ 
+The impact the GCF’s contribution goes beyond supporting crucial infrastructure investment needs and mobilises technical assi stance 
+programmes wi th a transformative impact on the Kazakhstan’s energy sector through promoting development of renewable energy 
+resources.  Key to cost efficiency will be the size of the programme, as well the fact that both the GCF and the EBRD would sponsor 
+this Programme . The size would help to give comfort to the technology suppliers that face costs to establish and market themselves. 
+Size and presence of the international organisations, may help to create the investors comfort needed to price more competiti vely. In 
+turn  it may also attract a larger number of market players. Eventually market size and growth will be the key basis for cost effic iency, 
+which can be augmented by increasing standardisation, procedures established and demonstration effects from the project  
+ 
+The estimated cost of carbon emissions reduction (total investment cost/expected lifetime emission reductions  tCO 2 eq), assuming 
+project lifetime to be 20 years are the following:  
+- USD 106 million /tCO 2 for GCF contribution = 8.2  USD  /tCO 2 
+- USD 550 million / tCO 2 for total Programme  cost = 42.8 USD  / tCO 2 
+ 
+This compares well to the estimations for social cost of CO 2 emissions.  
+E.6.2. Co -financing, leveraging and mobilized long -term investments  (mitigation only)  
+ 
+The Programme will support the development and construction of renewable energy projects totaling USD 550 million (i.e. estimated 
+total investment cost under this framework). The projects are expected to have a minimum equity of 25% and be financed with a 
+maximum leverage of 75%, co rresponding to maximum total debt financing needs of USD 413 million. The GCF aggregate 
+contributions of USD 106 million for subprojects financing will account for ca. 19% of the total projects costs . The EBRD will provide 
+co-financing of USD 214 million f rom its own resources, representing up to c.3 9% of the project costs. Other co -financers are 
+expected to contribute  with loans representing up to 17% of the total project s cost.  
+ 
+The programme will enable the GCF to leverage a significant amount of co -financing, approximately USD 444 million compared to 
+USD 106 million requested from the GCF (the co -financing ratio - total amount of co -financing divided by the Fund’s investment in the 
+programme – equals 4.2x). Regarding the technical assistance component, the total estimated budget for the various assignments is 
+USD 7 million , of which the GCF is expected to contribute USD 4 million  and USD 3 million will be contributed by EBRD  and/ or its 
+donors.   
+ 
+The impact the GCF’s contribution goes beyond supporting crucial infrastructure investment needs and mobilises technical assi stance 
+programmes with a transformative impact on the Kazakhstan’s energy sector through promoting development of  renewable energy 
+resources.
+
+
+---
+*Page 32*
+---
+
+PUBLIC  
+EXPECTED PERFORMANCE AGAINST INVESTMENT CRITERIA  
+ GREE N CLIMATE FUND FUNDING PROPOSAL | PAGE 28 OF 57 
+ 
+PUBLIC  E 
+E.6.3. Financial viability   
+ 
+ 
+The Programme  will enable the development of a scaled -up and viable RES market in Kazakhstan. By demonstrating the commercial 
+viability of the RES projects it will encourage commercial lending in the future. The Facility will provide a highly visible demonstration 
+to ot her potential developers that projects can be successfully implemented in this market. By supporting the development of RES 
+projects in accordance with best international practices, the Programme  will help establish standards that can be replicated and wil l 
+further encourage other developers to enter the market. The significant renewable energy resource conditions in Kazakhstan an d the 
+continued decrease in technology cost should ensure financial viability of investments once the sectorial and general inves tment 
+challenges are overcome. The exit strategy for development finance is through repayment of the EBRD/GCF loan at maturity.  
+E.6.4. Application of best practices  
+The proposed programme will bring the best international practices as well as well -adjusted technologies to the renewable energy 
+sector in Kazakhstan. The sub-project c ompany will hire a reputable international advisor  who will complete the necessary 
+measurement s, energy yield assessment and financial  feasibility studies.   Also the EBRD may provide a T echnical Cooperation  
+assignment under a cost sharing arrangement with the company in order to assist both the company and the EBRD in project 
+preparation and confirm technical as well as technological appropriateness, thus ensuring that the best avai lable technologies are 
+applied.  
+E.6.5. Key efficiency and effectiveness indicators   
+GCF core 
+indicators  Estimated cost per t CO 2 eq, defined as total investment cost / expected lifetime emission reductions (mitigation only)  
+ 
+(a) Total Programme  financing  USD 550 million  
+(b) Requested  GCF amount  USD 10 6 million  
+(c) Expected lifetime emissi on reductions overtime  12.86 mtCO 2eq 
+(d) Estimated cost per tCO 2eq (d = a / c)  USD 42.8 / tCO 2eq 
+(e) Estimated GCF cost per tCO 2eq removed  (e = b / c)  USD 8.2 / tCO 2eq 
+ 
+It is assumed that total RES capacity to be developed will be ca. 330 MW in total consisting mainly of wind, PV and small 
+hydro. Based on EBRD’s in -house methodology,  the estimated electricity production is 762,120 MWh, corresponding to 
+643,229 tons CO 2 per annum. The total CO 2 emissions reduction over lifetime of the sub-projects of 20 years is 
+estimated at 1 2.86 mtCO 2eq. The detailed methodology is presented in Section E1.2.  
+ 
+The Programme’s investment costs and the mitigation costs ( USD per ton CO 2 mitigated over 20 years) are in line with 
+those of the similar RES projects in other countries of the EBRD’s operation such as Ukraine and Russia.  
+Expected volume of finance to be leveraged by the proposed project/programme and as a result of the Fund’s  financing, 
+disaggregated by public and private sources (mitigation only)  
+Expected total leverage: at least USD 444 million, of which:  
+- EBRD: EUR 200 million  (ca. USD 214 million  equivalent ); 
+- Sub-project sponsors/ equity investors:  USD 137 million ; 
+- Other co -lenders (commercial banks and other IFIs): at least  USD 93 million.  
+ 
+The EBRD amount of EUR 200 million is based on the EBRD’s Board approved Framework for renewables in Kazakhstan.
+
+
+---
+*Page 33*
+---
+
+PUBLIC  
+EXPECTED PERFORMANCE AGAINST INVESTMENT CRITERIA  
+ GREE N CLIMATE FUND FUNDING PROPOSAL | PAGE 29 OF 57 
+ 
+PUBLIC  E 
+Other relevant indicators (e.g. estimated cost per co -benefit 
+generated as a result of the project/programme)  N/a
+
+
+---
+*Page 34*
+---
+
+PUBLIC  
+APPRAISAL SUMMARY  
+ GREEN  CLIMATE FUND FUNDING PROPOSAL | PAGE 30 OF 57 
+ 
+PUBLIC  F 
+Section F: APPRAISAL SUMMARY  
+ 
+* The information can be drawn from the project/programme ap praisal document.  
+ 
+F.1. Economic and Financial Analysis  
+A detailed economic and financial analysis will be conducted at project level  for investments that meet the F ramework’s 
+eligibility criteria. The financial analysis of a typical project to be financed under this Framework  has been provided to the GCF 
+Secretariat. A sector, as well as a regulatory  and market analysis , has also been p rovided to the GCF Secretariat.  
+As mentioned throughout this funding proposal, there are currently financial barriers hampering the mobilization and scaling up 
+of renewable energy in Kazakhstan . These barriers manifest themselves either in non -availability of finance or in inflexible loan 
+tenors that are not adapted to the charac teristics of such investments.   
+A comparison has been provided to the GCF Secretariat  between several  financing scenarios for the finan cing of a typical 
+project under the FiT Scheme, which is the focus of the Framework. Such analysis has showed that there is currently no  
+commercial lending  available at terms which  would ensure  the bankability of the projects and attract private investors . The 
+analysis also highlighted  the importance of the GCF funding to unlock the financial feasibility of the first wave of private sector 
+renewable energy projects through the blending of concessional financing with financing from EBRD and other internation al 
+and development financial institutions.   
+The demonstration effect of the feasibility of the first wave of private renewable energy projects in Kazakhstan  will show the 
+viability of the sector which will then attract new private investors, local and inte rnational commercial banks which will be able 
+to propose adequate long -term financing  with no concessionality needs.  
+Further economic benefits can also be added as de scribed earlier in the document, such as benefits from the GHG emissions 
+avoided  and the s uccessful implementation of the FiT Scheme , which would set the basis for further renewable energy support 
+mechanism s, namely through the launch of competitive tenders (that this Framework will also support  via Component 2) . 
+Overall, t hrough this Framework , GCF and EBRD financing will demonstrate and scale up commercially viable renewable energy 
+projects in Kazakhstan  while catalysing a paradigm shift not only within the electricity sector in the country  but also within the 
+local and international financial markets.  
+ 
+ 
+F.2. Technical Evaluation   
+The technical evaluation will be analysed at the sub -project level.  
+F.3. Environmental, Social Assessment, including Gender Considerations  
+The SER findings are summarized in Annex 4.  The SER resulted in developing an assessment kit for developers, bankers, and 
+environmental professionals working on RES projects in Kazakhstan. This includes customized templates for all RES 
+technologies, based on the identified potential significant environmental and social impacts, for the ESAP, NTS, and SEP for RES 
+projects in Ukraine.  
+ 
+Environmental  
+In 2014 t he EBRD has already undertaken a SER (modelled after the EU practice of Strategic Environmental Assessment, SEA). 
+The SER included two rounds of public consultations; reports are available at:  http://kazreff -ser.com/index.html  The results are 
+to our best knowledge still valid.  
+ 
+The Framework could consider financing Category A sub -projects. Therefore, the Framework’s overall environmental and social 
+risk category is I1, defined by the GCF as, “When an intermediary’s existing or proposed portfolio includes, or is expected t o 
+inclu de, substantial financial exposure to activities with potential significant adverse environmental and/or social risks and/or
+
+
+---
+*Page 35*
+---
+
+PUBLIC  
+APPRAISAL SUMMARY  
+ GREEN  CLIMATE FUND FUNDING PROPOSAL | PAGE 31 OF 57 
+ 
+PUBLIC  F 
+impacts that are diverse, irreversible, or unprecedented.” All sub -projects under the Framework will be implemented in 
+compliance w ith the Bank’s stringent Environmental and Social Sustainability Framework.  
+ 
+Categorisation  
+EBRD categorises each project to determine the nature and level of environmental and social investigations, information 
+disclosure and stakeholder engagement required. This will be commensurate with the nature, location, sensitivity and scale of 
+the project, and the significance of its potential adverse future environmental and social impacts. Past and present 
+environmental and social issues and risks associate d with project -related existing facilities will be subject to environmental and 
+social appraisal regardless of the categorisation.  
+ 
+A project is categorised as:  
+- A when it could result in potentially significant adverse future environmental and/or social impacts which, at the time of 
+categorisation, cannot readily  be identified or assessed, and which, therefore, require a formalised and participatory 
+environmental and social impact assessment process.  
+- B when its potential adverse future environmental and/or social impacts are typically site -specific, and/or readily identified 
+and addressed through mitigation measures. Environmental and social appraisal requirements may vary depending on the 
+project and will be determined by EBRD on a case -by-case basis . 
+- C when it is likely to have minimal or no potential adverse future environmental and/or social impacts, and can readily be 
+addressed through limited environmental and social appraisal.  
+ 
+Initial Environmental and Social Examinations are carried out wher e insufficient information is available at the time of 
+categorisation to determine the appropriate category and scope of appraisal.  
+ 
+Category A Projects  
+Within the Kazakhstan Renewables Framework, sub-projects which may be categorised as A include: medium size wind farms  
+and small hydropower,  which typically are category B projects, but may be categorised as A, if they are located in a sensitive 
+location.  
+ 
+Sub-projects categorised as A will adhere to a multi -tiered approval process within the EBRD, require  120-day disclosure and 
+consultation period prior to consideration of EBRD ’s Board of Directors and will be required to meet EBRD’s Performance 
+Requirements.  
+ 
+Category B and C Projects  
+Sub-projects categorised as B or C will be approved through  the EBRD’s established processes and implemented in compliance 
+with the Bank’s stringent Environmental and Social Sustainability Framework and will be required to meet the Bank’s 
+Performance Requirements.  
+ 
+Some sub -projects may involve resettlement or economic displacement of communities; however, typically land is leased or 
+acquired on a voluntary basis through negotiated contracts. Most if not all projects are expected to be developed and 
+implemented by private sec tor companies and public expropriation procedures cannot be applied to the land acquisition 
+arrangements.  
+ 
+The Bank  require s Resettlement Policy Framework  or Livelihood Restoration Framework  for a sub -project if environmental and 
+social  due diligence identifies it could have resettlement or economic displacement impacts.  
+ 
+There will be no impact on indigenous people’s  communities (as there are no indigenous peoples groups in Kazakhstan).  
+ 
+A stakeholder engagement plan will be required for all sub -proje cts to be developed in compliance with EBRD Performance 
+Requirement 10 on Information Disclosure and Stakeholder Engagement. PR 10 sets out a framework for good international 
+practice relating to stakeholder engagement recognises the importance of an open and transparent engagement between the
+
+
+---
+*Page 36*
+---
+
+PUBLIC  
+APPRAISAL SUMMARY  
+ GREEN  CLIMATE FUND FUNDING PROPOSAL | PAGE 32 OF 57 
+ 
+PUBLIC  F 
+client, its workers, local communities directly affected by the project and, where appropriate, other stakeholders. The EBRD 
+requires stakeholder engagement as an on -going process which involves (i) public disclosure of appropriate information, (ii) 
+meaningful consultation with stakeholders, and (iii) an effective procedure or mechanism by which people can make comments 
+or raise grievances. The process of stakeholder engagement should begin at the earliest stage of pro ject planning and continue 
+throughout the life of the project. It is an integral part of the assessment, management and monitoring of environmental and 
+social impacts and issues of the project.  
+ 
+Gender  
+The Programme will ensure that all consultations with stakeholders will be designed in a gender responsive way and women 
+will be equally consulted and participate in all discussions related to the Program me. This approach will be incremental and 
+would set a proper bench mark for other projects to follow.  
+ 
+The Programme is accompanied by a Gender Action Plan template for subprojects.  
+F.4. Financial Management and Procurement  
+Financial  resources from  the GCF will be managed according to the general provisions of the AMA between the GCF and the 
+EBRD. The EBRD has establish ed the GCF Special Fund internally, through which all payments from the GCF and repayments to 
+the GCF will pass.  
+In using the resources of the GCF  (‘Special Fund resources’) for this Programme, the EBRD will apply the same internal financial 
+management policies and procedures as are applied when administering technical assistance or making a loan, from its ordinary  
+capital resources. The EBRD will e xercise the same amount of care and diligence to ‘Special Fund resources’ as for its own 
+capital resources. Compliance to the EBRD policies and requirements will be monitored and reported by the EBRD Office of the 
+Chief Compliance Officer (OCCO).  
+PROCUREME NT 
+1. EBRD’s Procurement Policies and Rules ( “PP&R ”) 
+The EBRD aims to help create reliable and stable markets for climate technologies in its regions and thus puts strong emphasi s 
+on procurement of relevant goods and services.  
+The EBRD's Procurement Policies and Rules  are designed to promote efficiency and effectiveness and to minimise credit risk in 
+the implementation of the EBRD's lending an d investment operations.  
+Among the EBRD’s PP&R6, three are of particular relevance to this Programme.  
+Relevant PP&R with regards to the Programme are as follows:  
+- 3. Procurement Rules for Public Sector Operations  
+- 4. Procurement in the Private Sector  
+- 5. Procurement Rules for Consultant Services  
+ 
+2. Event of violation of procurement policies and EBRD Enforcement Policy and Procedures  
+The EBRD requires that clients, including beneficiaries of Bank -financed operations, as well as tenderers, suppliers, contractors, 
+concessionaires and consultants under EBRD -financed contracts, observe the highest standard of transparency and integrity 
+during the procurement, execution and implementation of such contracts. In pursuance of this policy, The EBRD defines 
+prohibited practices, namely coercive practice, collusive practice, corrupt practice, fraudulent practice and theft (PP&R Sec tion 
+                                                             
+6 http://www.ebrd.com/news/publications/policies/procurement -policies -and-rules.html
+
+
+---
+*Page 37*
+---
+
+PUBLIC  
+APPRAISAL SUMMARY  
+ GREEN  CLIMATE FUND FUNDING PROPOSAL | PAGE 33 OF 57 
+ 
+PUBLIC  F 
+2.9).  
+Any occurrence, or suspected occurrence, of a Prohibited Practice in the procurement, award, or implementation of a Bank -
+financed contract in the context of a sub-project shall be dealt with in accordance with the provisions of the EBRD’s 
+Enforcement Policy as  defined in the EBRD’s Enforcement Policy and Procedures.
+
+
+---
+*Page 38*
+---
+
+PUBLIC  
+RISK ASSESSMENT AND MANAGEMENT  
+ GREE N CLIMATE FUND FUNDING PROPOSAL  | PAGE 34 OF 57 
+ 
+PUBLIC  G 
+SECTION G: RISK  ASSESSMENT  AND  MANAGEMENT  
+ 
+G.1.  Risk Assessment Summary  
+The Programme is exposed to several risks that can have a considerable impact on the success of the sub-projects. The 
+identified two main risks are regulatory and project implementation. The EBRD’s experience in the country mitigates risks 
+related to the implementation. The regulatory risks are mitigated through sub -projects’ structure. The occurrence of  
+environmental and social risks is covered and mitigated by the application of the EBRD’s rigorous environmental and social 
+standards as set out in its 2014 Environmental and Social Policy linked below:  
+http://www.ebrd.com/news/publications/policies/environmental -and-social -policy -esp.html   
+ 
+G.2. Risk Factors and Mitigation Measures  
+Please describe financial, technical and operational, social and environmental and other risks that might prevent the 
+project/programme objectives from being achieved. Also describe the proposed risk mitigation measures.  
+Selected Risk Factor 1   
+Description  Risk category  Level of impact  Probability of risk 
+occurring  
+Regulatory risk/reliance on feed -in tariff  Other  High (>20% of 
+project value)  Low  
+Mitigation Measure(s)  
+This risk is mitigated by the strong institutional commitment to renewable energy . The Government expects that t he cost of 
+renewable energy projects would continue to decrease  further , that in turn would lead to reduced tariff levels for new 
+projects, while at the same time the cost of thermal generation will continue to increase with inflation and thus the gap 
+betw een renewable tariff and thermal would  become smaller.  Conversely, renewables plays favourably for the country in the 
+context of global carbon reduction efforts and especially in the light of the emissions reduction target set by the climate 
+change discuss ions in Paris.   
+Selected Risk Factor 2   
+Description  Risk category  Level of impact  Probability of risk 
+occurring  
+Completion risk and cost overruns  Technical and 
+operational  Medium (5.1 -20% 
+of project value)  Low  
+Mitigation Measure(s)  
+Completion risk and cost overruns is expected to be mitigated through an EPC contract with a reputable company for each 
+sub-project. In addition the sponsors are expected to provide completion and cost -overrun guarantees for each sub -project.  
+Selected Risk Factor 3   
+Description  Risk category  Level of impact  Probability of risk 
+occurring  
+Forex risk  - GCF financing will be provided in USD while the 
+sub-projects tariffs are set in KZT.  
+ 
+ Financial  Medium (5.1 -20% 
+of project value)  Low  
+Mitigation Measure(s)  
+Recently the Government of Kazakhstan  approved  the rules for the determination of the FiT  which stipulate the partial  (30%)  
+indexation of the FiT  for USD/KZT fluctuations  in the case a local currency depreciates by more than 25% per year  against USD, 
+whereas the remaining 70% of the FiT is adjusted for CPI . In the absence of more than  25% depreciation per year against USD , 
+the FiT is adjusted only for annual CPI.  This risk is expected to be mitigated by additional credit enhancement instr uments,
+
+
+---
+*Page 39*
+---
+
+PUBLIC  
+RISK ASSESSMENT AND MANAGEMENT  
+ GREE N CLIMATE FUND FUNDING PROPOSAL  | PAGE 35 OF 57 
+ 
+PUBLIC  G 
+such as a DSRA account, to be structured in each sub -project subject to financial  due diligence results.  The EBRD  will conduct 
+a sensitivity analysis to assess magnitude of the risk for each sub -project individually.  
+Selected Risk Factor 4   
+Description  Risk category  Level of impact  Probability of risk 
+occurring  
+Creditworthiness of the off -taker  Technical and 
+operational  Medium (5.1 -20% 
+of project value)  Low  
+Mitigation Measure(s)  
+The renewables legal framework sets a 15 -day gap between due dates for payments to the off -taker and by the off -taker , thus , 
+mitigating the cash gaps risk. The new amendments to the Renewable Energy Law stipulates an establishment of reserve fund 
+in the amount of 3% of the FSC’s annual RES payments that cover the FSC liquidity issues.  The reserve fund is accumulated  and 
+replenished from the additionally surcharge s to the electricity consumers  (the obligated purchasers)  and is subject to 
+adjustment on a monthly basis.  KEGOC is the national transmission grid operator of Kazakhstan owned 90% by SWF Samruk -
+Kazyna, the sovereign wealth fund.  KEGOC is rated ВВ (negative), Baa3 (negative), BBB - (stable) by S&P, Moody’s and Fitch 
+respectively.  
+Selected Risk Factor 5   
+Description  Risk category  Level of impact  Probability of risk 
+occurring  
+Interest Rate risk  Financial  Medium (5.1 -20% 
+of project value)  Medium  
+Mitigation Measure(s)  
+The EBRD financing will be provided under floating rate which is volatile and may increase in the future. The Bank will conduct 
+a sensitivity analysis in order to assess the magnitude of the risk for each sub -project.  
+Selected Risk Factor 6   
+Description  Risk category  Level of impact  Probability of risk 
+occurring  
+Operation/technology risk Technical and 
+operational  Medium (5.1 -20% 
+of project value)  Low  
+Mitigation Measure(s)  
+For each sub -project the irradiation/ wind/ hydro/ bioenergy resources may be insufficient to service the debt and the 
+technology employed may fail to deliver the expected electricity generation. This will be mitigated by reviewing the 
+assumptions and technology chosen by independent consultants during the technical due diligence for each sub -project.  
+Selected Risk Factor 7   
+Description  Risk category  Level of impact  Probability of risk 
+occurring  
+Connection & curtailment risk Technical and 
+operational  Medium (5.1 -20% 
+of project value)  Low  
+Mitigation Measure(s)  
+Connection & curtailment might be a risk due to lack of technical regulations and standards for renewable sources as well as 
+the aged grid infrastructure. Each sub -project’s grid authorization  (including a connection agreement with a network 
+company)  as well as load -flow of the network will be reviewed as part of the technical due dilig ence for each sub -project.  
+Selected Risk Factor 8   
+Description  Risk category  Level of impact  Probability of risk 
+occurring
+
+
+---
+*Page 40*
+---
+
+PUBLIC  
+RISK ASSESSMENT AND MANAGEMENT  
+ GREE N CLIMATE FUND FUNDING PROPOSAL  | PAGE 36 OF 57 
+ 
+PUBLIC  G 
+Environmental & Social risk  Technical and 
+operational  Medium (5.1 -20% 
+of project value)  Low  
+Mitigation Measure(s)  
+The programme is submitted with an ESMS as required by the GCF rules. The sub-projects will be assessed according to EBRD 
+policies. A comprehensive Environmental and Social Action Plan (“ESAP”) will be developed during the preparation of each 
+sub-project capitalising on the outcomes of the Strategic Environmental Review implement ed by the Bank for the RES projects 
+in Kazakhstan in 2012 – 2014. The project -level ESAP will be an integral part of the financing agreements between the EBRD 
+and project developers.  
+Other Potential Risks in the Horizon  
+Specific emerging or idiosyncratic  risks will be identified on a sub -project basis.
+
+
+---
+*Page 41*
+---
+
+PUBLIC  
+RESULTS MONITORING AND REPORTING  
+ GREE N CLIMATE FUND FUNDING PROPOSAL  | PAGE 37 OF 57 
+ 
+PUBLIC  H 
+Section H: RESULTS MONITORING AND REPORTING  
+ 
+H.1. Logic Framework .   
+Please specify the logic framework in accordance with the GCF’s Performance Measurement Framework  under the Results 
+Management F ramework . 
+ 
+H.1.1. Paradigm Shift Objectives and Impacts at the Fund level7 
+Paradigm shift objectives  
+Shift to low -emission 
+sustainable development 
+pathways  The fundamental purpose of the Framework  is to support  the efforts towards low -carbon growth 
+in Kazakhstan through achieving sustainability of the RES market by creating a large pool of 
+projects and project sponsor s interest; and providing international integration of the RES market 
+development and enabling ca rbon market access , thus enabling the scale necessary to bring the 
+energy  sector, and so the economy as a whole, onto a lower -carbon development path .   
+ 
+The paradigm shift objectives are therefore the following:  
+• To provide a transformational impact at a sector/country level  by a number of capacity 
+building initiatives that would address caveats in institutional capacity  in managing grid 
+balancing, integrating RES projects into the domestic emissions trading system, reviewing 
+and further develop ing the cal culation mechanism for the FiT; and t o address barriers 
+restricting women’s access to employment and skills in the high -value energy sector  
+• To support clarity and eliminate policy ambiguity and regulatory uncertainty, which in turn 
+deters private sector involvement in the RES projects, and  address perceived high risk of 
+the RES projects  
+• To shar e knowledge and best practices to improve  first movers experience  by bringing in 
+best practice in  project management, tender processes, and environmental and social  
+practices  
+• To help finance and bring to financial close a critical number of first projects  in RES to 
+demonstrate the sector’s viability and success stories to improve investments 
+attractiveness and potentially make the RES projects attractive to local financiers  
+ 
+The multi -level approach to encouraging the development of a private sector -led in vestment 
+market  of RES projects  in Kazakhstan will provide durable context for the country to continue 
+decarbonizing its power sector over the long -term. Directly, the impact indicator for the 
+Framework contribution to this development is represented by th e estimated emission reductions 
+to be achieved via the generation of clean energy throughout the lifetime of the assets. This will be 
+around 12.8 million tonnes of CO 2 (with the expected project lifetime  of 20 years).  
+ 
+Finally, by serving as a successful and practical example of low -carbon development approach, the 
+Framework has the potential to influence planning in other countries in Central Asia and 
+elsewhere.  
+ 
+ 
+Expected Result  Indicator  Means of 
+Verification 
+(MoV)  Baseline  Target  
+Assumptions  Mid-term  
+(if applicable)  Final  
+Fund -level impacts  
+M1.0 Reduced emissions 
+through increased low -
+emission energy access and 
+power generation   M1.1 Tonnes of carbon 
+dioxide equivalent (t 
+CO2eq) reduced or 
+avoided   
+ 
+EBRD project 
+monitoring 
+reports and if  
+ 
+ 
+ 
+  
+ 
+ 
+ 
+  
+ 
+ 
+ 
+12.8mt  
+No projects 
+implemented at 
+present under this 
+framework.  
+                                                             
+7 Information on the Fund’s expected results and indicators can be found in its Performance Measurement Frameworks 
+available at the following link (Please note that some indicators are under refinement) : 
+http://www.gcfund.org/fileadmin/00_customer/documents/Operations/5.3_Initial_PMF.pdf
+
+
+---
+*Page 42*
+---
+
+PUBLIC  
+RESULTS MONITORING AND REPORTING  
+ GREE N CLIMATE FUND FUNDING PROPOSAL  | PAGE 38 OF 57 
+ 
+PUBLIC  H 
+applicable 
+independently 
+verified MRV 
+reports for 
+domestic 
+carbon credits.  
+ 
+ 
+ N/a 4 – 5 mt 
+CO 2e CO 2e Over the first five 
+years , monitoring  will 
+be conducted against 
+an average CO 2 
+reduction number of 
+643ktCO eq/year, 
+taking into account:  
+i) the 
+investment period,  
+ii) the final 
+amount of MW 
+installed; and  
+iii) relevant 
+climatic changes; and  
+iv) other factors 
+beyond the 
+reasonable control of 
+the AE/EE
+
+
+---
+*Page 43*
+---
+
+PUBLIC  
+RESULTS MONITORING AND REPORTING  
+ GREE N CLIMATE FUND FUNDING PROPOSAL  | PAGE 39 OF 57 
+ 
+PUBLIC  H 
+H.1.2. Outcomes, Outputs, Activities and Inputs at Project/Programme level  
+Expected Result  Indicator  Means of 
+Verification 
+(MoV)  Baseline  Target  
+Assumptions  Mid-term 
+(if 
+applicable
+)  Final  
+Project/programme  
+outcomes  Outcomes that contribute to Fund -level impacts  
+M6.0 Increased number of 
+small, medium and large low -
+emission power suppliers  6.1 Proportion of low -
+emission power supply 
+in a jurisdiction or 
+market.  EBRD board 
+document, 
+reports from 
+the recipients   
+ 
+Low 
+emission 
+power  
+supplies 
+represent 
+less than  
+1% of 
+electricity 
+supply   
+ 
+ 
+N/a  
+ 
+3%  
+national 
+target 
+for 2020.  The Government is 
+ready to accept EBRD 
+advice; political 
+environment is 
+favourable towards 
+improvement of 
+regulatory framework 
+for RES development; 
+market forces  such as 
+fossil fuel prices and 
+equipment/technologi
+es prices a re 
+conducive for RES 
+development in 
+Kazakhstan.  
+Current share of about 
+1% new renewables, 
+monitoring over the 
+first five years against 
+target of 330 MW 
+taking  into account:  
+i) the investment 
+period;  
+ii) financing 
+conditions in the 
+market;  
+iii) the final amount 
+of MW installed; 
+and/or  
+iv) other factors 
+beyond the 
+reasonable 
+control  
+ 
+M6.0 Increased number of 
+small, medium and large low -
+emission power suppliers  6.3 MWs of low -
+emission energy  
+capacity installed,  
+generated and/or  
+rehabilitated as a  
+result of GCF support  EBRD board 
+document, 
+reports from 
+the recipients   
+0  
+ 
+Monitoring 
+over the 
+first three 
+years 
+against 
+target of 
+330 MW 
+taking into 
+account: 
+the 
+investment  
+ 
+330MW
+
+
+---
+*Page 44*
+---
+
+PUBLIC  
+RESULTS MONITORING AND REPORTING  
+ GREE N CLIMATE FUND FUNDING PROPOSAL  | PAGE 40 OF 57 
+ 
+PUBLIC  H 
+period; 
+financing 
+conditions 
+in the 
+market; the 
+final 
+amount of 
+MW 
+installed; 
+and/or 
+other 
+factors 
+beyond the 
+AE/EE’s 
+reasonable 
+control  
+P10.0 Jobs  
+created by  
+projects  supported by  
+Programme  10.1 Women and  
+men employed in  
+construction and  
+installation,  
+and operation and  
+maintenance  
+in the projects  Reports from 
+the recipients   
+0  
+n/a 
+  
+3,000 
+short -
+term 
+jobs 
+(during 
+construc
+tion) and  
+150 
+long -
+term 
+jobs 
+(during 
+operatio
+n)  Data  related to gender 
+to be collected where 
+feasible  
+Project/programme 
+outputs  Outputs  that contribute to outcomes  
+1.Commercially viable 
+renewables projects are 
+identified, financed and 
+implemented  Number of p rojects 
+(depending on project 
+size)  EBRD project 
+monitoring 
+reports, in 
+particular at the 
+end of the 
+investment 
+period.   
+no projects  
+implement
+ed under 
+the 
+Framework 
+currently   
+4-5  
+8-11 
+  
+ Volume of financing    
+no projects 
+implement
+ed under 
+the 
+Framework 
+currently   
+N/A; 
+proportional 
+to the above 
+number of 
+the projects;   
+Up to 
+USD 550 
+million  
+2.Capacity building for 
+public institutions on RE S 
+project implementation 
+support, MRV system, 
+vocational training and 
+promote gender equality  Number of capacity 
+building workshop 
+held; number of 
+attendants  
+ EBRD monitoring 
+report, 
+consultant 
+report   
+N/A  
+N/A  
+To be 
+provided 
+before 
+first 
+disburse
+ment   
+with the
+
+
+---
+*Page 45*
+---
+
+PUBLIC  
+RESULTS MONITORING AND REPORTING  
+ GREE N CLIMATE FUND FUNDING PROPOSAL  | PAGE 41 OF 57 
+ 
+PUBLIC  H 
+ 
+  procurem
+ent plan  
+ 
+3. Policy dialogue activities 
+on the introduction of 
+auction -based system, 
+review of FiT system and 
+strategies for carbon 
+market  tbc EBRD monitoring 
+report, 
+consultant 
+report   
+N/A  
+N/A  
+To be 
+provided 
+before 
+first 
+disburse
+ment   
+with the 
+procurem
+ent plan   
+Activities  Description  Inputs  Description  
+Regarding output 1 • Conduct technical, financial, 
+environmental and social due 
+diligence  
+• Assist throughout the procurement 
+and implementation of technologies  
+• Ensure the procurement processes 
+are in line with EBRD and the GCF 
+policies and rules  
+• Monitor the performance of 
+technologies post implementation  
+ Financial resources  and 
+technical expertise 
+deployed  to develop, 
+assess, finance  and report 
+on projects  
+ 
+ Specific plans to be prepared , 
+capitalizing  on the EBRD 
+experience with Ukraine 
+Sustainable Energy lensing Facility 
+(operational),  and Egypt RES 
+Framework (under development)  
+Regarding output 2 • Provide t raining  to relevant  
+authorities  on R ES project 
+implementation support  for auction 
+and tenders, project preparation for 
+public entities.  
+• Promote vocational training in RE S 
+industry.  
+• Promote gender equality in the 
+employment in RE S industry   
+• Provide training to relevant 
+authorities on MRV   and telemetry 
+requirements/rules.  Expertise and skills transfer  
+ Specific plans to be prepared ; 
+capacity building programs will be 
+designed to cover needs 
+assessment, methodology 
+identification, trainings curricula 
+development, capacity building 
+monitori ng system design; and 
+guidances and other 
+methodological documents 
+developed to ensure 
+multiplication effect  
+Regarding output 3  • Design and introduction of the 
+auction based system  
+• Further review of FiT system, 
+elaboration of the mechanism of FiT 
+calculation  
+• Develop Strategies for carbon 
+market  Expertise and skills transfer  
+ Specific plans to be prepared ; 
+subject to the relevant regulatory 
+development. Activities under 
+this category will only be 
+designed with consideration of 
+the projects of other  IFIs and 
+donor organization, acting in the 
+field of RE S in Kazakhstan; this 
+will build on the EBRD experience 
+of donor coordination in policy 
+filed, to achieve synergy and 
+avoid duplication
+
+
+---
+*Page 46*
+---
+
+PUBLIC  
+RESULTS MONITORING AND REPORTING  
+ GREE N CLIMATE FUND FUNDING PROPOSAL  | PAGE 42 OF 57 
+ 
+PUBLIC  H 
+ 
+ 
+H.2.  Arrangements for Monitoring, Reporting and Evaluation  
+ 
+I. MONITORING  
+Monitoring, arrangements will comply with the relevant GCF policies (MAF, AMA, etc)  
+Implementation of each project under this Framework will be managed and monitored at project and Framework level by EBRD’s 
+in-house staff and procured consultants. The EBRD has dedicated staff in its sectors  team, risk departments and regional offices 
+that will conduct due diligence and monitor project risks and prepare mitigation measures throughout the Framework lifecycle.  
+II. REPORTING  
+Reporting and evaluation arrangements will comply with  the relevant GCF policies (MAF, AMA, etc)  
+As specified in Loan Agreements between project companies and EBRD, project companies are obliged to report on the use of 
+proceeds of the Programme and the enviro nmental and social performance of the project to the EBRD on annual basis.   
+The implementation consultants of Comp onent 2 will officially report progress on a periodic basis to EBRD staff throughout the 
+Framework lifetime.  The subprojects of Component 1  will be required to provide financial  and the environmental and social 
+reporting, among other .   
+Reporting of EBRD to the GCF  
+The EBRD will provide to the GCF a) semi -annual activity performance reports on the status of GCF funded activities throughout 
+the relevant reporting period, and b) final evaluation reports at the end of the implementation period of the Framewor k:   
+a. Semi -annual Performance Reports, including the disbursements made during the relevant period, the implementation status 
+of the Funded Activity and the monitoring of results and impacts of such Funded Activity.  
+b. Upon completion, projects will be subject  to the EBRD formal evaluation process. A final report prepared by the independent 
+Evaluation Department (EvD) sets out the results and impacts achieved, as well as their sustainability, scalability and lesso ns 
+learned, during the relevant period.   
+The monitoring and reporting procedure guiding the Programme will be agreed between the GCF Secretariat and GCF prior to 
+signing the financing contract for the first sub -project. The monitoring and reporting report will be submitted to the GCF  on an 
+annua l basis.  
+III. EVALUATION  
+Evaluation arrangements will comply with the relevant GCF policies (MAF, AMA, etc)  
+1. According to the GCF requirements, both an independent mid -term and final evaluation will be carried out.  
+ 
+2. Project evaluation by EBRD in -hous e staff   and its independent advisors  
+Throughout the Framework lifecycle, the EBRD in -house staff its independent advisors  (such as technical and environmental and 
+social advisors  will evaluate the success and risks of projects. A final report of each project will include review and evaluation of 
+the financial and technical performance of projects, capacity building results, climate mitigation and adaptation impact, as well as 
+donor  visibility and marketing outreach. Final report will be prepared by the EBRD in -house staff.  
+3. Project or Framework level evaluation by the independent EBRD Evaluation department  
+The independent Evaluation Department evaluates the performance of the EBRD’s completed projects and Framework . The 
+Evaluation Department  is a department independent of the EBRD’s vari ous banking divisions (and hence of the developers and 
+managers of the projects they evaluate); therefore, EvD reports solely to the Board of Directors (i.e. to the representations  of the 
+shareholding governments). The EvD evaluates the effectiveness, rele vance and input efficiency of projects and provides the Board 
+with important insights  into the implementation of projects, impacts, success stories and lessons learnt. Under the EBRD’s Public 
+Information Policy, EvD publishes summaries of its independent p roject evaluations.
+
+
+---
+*Page 47*
+---
+
+PUBLIC  
+ANNEXES  
+ GREE N CLIMATE FUND FUNDING PROPOSAL | PAGE 43 OF 57 
+ 
+PUBLIC  I 
+Section I: ANNEXES  
+ 
+* Please note that a funding proposal will be considered complete only upon receipt of all the applicable supporting documents.  
+ 
+ 
+  I. Supporting Documents for Funding Proposal  
+☒ NDA No -objection Letter  
+☒ Market study ( based on publicly available information)  
+☒ Integrated Financial Model that provides sensitivity analysis of critical elements (xls format, if applicable)  
+☐ Confirmation letter or letter of commitment for co -financing commitment (If applicable)  
+☒ Project/Programme Confirmation/ Term Sheet (including cost/budget breakdown, disbursement schedule, 
+ etc.) – see the Accreditation Master Agreement, Annex I  
+☒ Environmental and Social Impact Assessment (ESIA) or Environmental and Social Management Plan  
+ (If applicable)  
+☐ Appraisal Report or Due Diligence Report with recommendations (If applicable)  
+☐ Evaluation Report of the baseline project (If applicable)  
+☒ Map indicating the location of the project/programme  
+☒ Timetable of project/programme implementation  
+☒ Gender Annex  
+ 
+EBRD case study for Kazakhstan Renewable Energy Engagement  
+EBRD project case study – Burnoye  SPP
+
+
+---
+*Page 48*
+---
+
+PUBLIC  
+ANNEXES  
+ GREE N CLIMATE FUND FUNDING PROPOSAL | PAGE 44 OF 57 
+ 
+PUBLIC  I 
+Annex 1: UKRAINE SUSTAINABLE ENERGY LENDING FACILITY   (www.uself.com.ua )  
+In 2009, the EBRD launched a financing facility, initially called the Ukraine Renewable Energy Direct Lending Facility and 
+later renamed as the Ukraine Sustainable Energy Lending Facility ( “USELF ”). 
+ 
+USELF accelerated the development of the renewable energy sector in Ukraine, through an innovative combination of 
+EBRD commercial financing, dedicated technical assistance support , and concessional grant co -financing (climate 
+finance).  USELF was initially approved in 2009 for up to EUR 100 million.   The Facility consisted of EUR  50 million in 
+EBRD commercial financing, EUR 20 million in climate finance from the Clean Technology Fund ( “CTF”) and  EUR 30 
+million of sponsor equity.   This was supported by technical assistance of US D 8.45 million ( EUR 6.62 million equivalent) 
+from the Global Environment Facility ( “GEF”).  USELF has combined effective policy dialogue and financing supp ort for 
+the nascent renewable energy sector in Ukraine, supporting the efforts of the Ukrainian government to reduce the 
+country’s dependence on imported fossil fuels.  
+ 
+In the context of Ukraine’s critical need for increased renewable energy production, US ELF was designed to:  
+- provide financing and technical assistance for renewable energy projects to demonstrate the benefits of such 
+investments ; 
+- encourage and support policy dialogue and institutional capacity building that foster a favourable environment 
+for the development of renewable energy ; 
+- build capacity among project developers and encourage a vibrant private sector for renewable energy 
+investment.  
+ 
+Through USELF, the EBRD aimed to provide non -recourse debt financing directly to domestic enterprises to fund small 
+and medium -sized renewable energy projects, including solar, wind, small hydro and biogas.  
+ 
+To ensure effective implementation of the Facility, the EBRD applied its proven business model for sustainable energy 
+businesses, which combines inves tment with technical assistance and policy dialogue.  
+ 
+A grant of US D 8.45 million provided by the GEF for technical assistance was used to support work on:  
+- addressing regulatory issues ; 
+- conducting environmental assessments ; 
+- delivering capacity building and  project support.  
+ 
+The Facility marked the first implementation of non -recourse finance or project finance in Ukraine for smaller -scale 
+renewable energy projects, further supported in a fully -integrated package by policy dialogue, institutional capacity 
+building, and project preparation.  These support activities were essential to the success of USELF and would not have 
+been possible without generous contributions from the CTF and GEF.  Through these activities USELF has strengthened 
+the business environmen t for private sector renewable energy, and fostered the development of related projects.  
+ 
+After a slow start,  due to the under -developed nature of the country’s renewable energy sector, the Facility signed first 
+seven renewable energy projects by the end o f 2013.   These use biogas, small hydro, wind, or solar energy to generate 
+heat and power. USELF fully committed its initial allocation, and was replenished with another USD 50 million in 2014.   
+With a robust project pipeline remaining, and ongoing weakness in the commercial financing sector for renewable 
+energy, Phase II replenishment is now well developed. Using further leverage from this replenishment, USELF continues 
+strengthening the long -term sustainability of the sector. Second replenishment is under consideration potentially for 
+2017.  
+  Table 2: USELF in figures   
+Total CO 2eq emission reductions as a result of the use of renewable electricity  5.2 million tons (over 20 year lifetimes)  
+Total  electricity generated from renewables  216 GWh annually  
+Investment facilitated into renewable energy projects reached  USD 120 million  
+New renewable power generation capacity installed  60.45 MW
+
+
+---
+*Page 49*
+---
+
+PUBLIC  
+ANNEXES  
+ GREE N CLIMATE FUND FUNDING PROPOSAL | PAGE 45 OF 57 
+ 
+PUBLIC  I 
+ 
+Annex  2: BURNOYE SPP PROJECT  
+ 
+ The financing was extended to Burnoye Solar -1 LLP, a project company founded by a joint Kazakh -UK venture, Samruk -
+Kazyna United Green LLP.  The EBRD len t KZT 14.06 billion ( USD  75 million equivalent), and the CTF len t EUR 13.8 million  
+(USD 14.8 million equivalent)  to the project which is pioneering the use of a non -recourse project finance structure.  
+   
+The venture is owned by UK -based United Green Energy Limited and Samruk Kazyna Invest LLP, the investment arm of 
+Kazakhstan’s sovereign wealth fund.  
+  
+Work on the B urnoye Solar project started following the adoption in 2014 of the Renewables Law on which the EBRD 
+cooperated closely with the Kazakh government.   Burnoye Solar is located in the energy -deficit Zhambyl region in south 
+Kazakhstan, in an area close to Weste rn Europe -Western China highway.  The project was implemented jointly by local 
+and European contractors, with the advantage of ensuring a transfer of technology into the country. Taxes from the 
+plant will be paid into the local budget.  
+  
+Graph: MAP INDICATING THE L OCATION OF BURNOE PROJECT
+
+
+---
+*Page 50*
+---
+
+PUBLIC  
+ANNEX ES 
+ GREE N CLIMATE FUND FUNDING PROPOSAL | PAGE 46 OF 57 
+ 
+PUBLIC  I 
+ 
+ 
+ 
+ 
+ANNEX 3: GENDER ANNEX  
+A. Kazakhstan Country Gender Profile  
+Purpose and scope : This is a short summary of a gender profile prepared in 2015 for  the EBRD and updated in 
+2016, using publicly available sources. It is not intended to be an exhaustive overview of all gender -related issues 
+in this country.  
+Key points  The population of the Republic of Kazakhstan is highly diverse, comprised of over 100 ethnic 
+groups.  
+There is a supportive legal framework for gender equality, although in practice women’s 
+access to finance, employment and services remains influenced by t raditional norms and 
+stereotypes regarding gender roles, according to which women are expected to retain 
+primary responsibility for family care and unpaid domestic work.  
+Women in southern Kazakhstan and rural areas tend to face greater obstacles in acquir ing 
+land and property or in accessing public services compared to their urban counterparts.  
+Access to services  Rural/urban divide  
+Kazakhstan’s economic growth has not translated into a better socio -economic situation for 
+women and men outside Almaty and A stana. As such, the rural/urban divide is a major 
+determinant of living standards and access to services. Women in rural areas contend with 
+fewer opportunities for paid employment, a greater burden of domestic work and a lack of 
+infrastructure and access t o services. Poverty incidence is twice as high in rural areas, 
+although it is also particularly high in households with large numbers of children, and 
+increasing in female -headed households.  
+Transport  
+Women tend to use public transport more than men in Ka zakhstan, and they travel more 
+often with children (ADB, 2012).  Access to transport is more difficult in rural areas compared 
+to urban areas, where some municipal governments – including Almaty – have started 
+investing in more robust systems of public tran sport. Nevertheless, urban infrastructure still 
+suffers from the after -effects of underinvestment for more than 20 years. Field research for 
+one of the EBRD -supported projects revealed no issues regarding sexual harassment on 
+public transport amongst passe ngers or drivers; however, sexual harassment is a difficult 
+issue to broach in Kazakhstan or elsewhere and requires further research.  
+Water and sanitation  
+According to ADB (2012) study, access to water is a particularly acute problem in rural areas, 
+where  households have far less access to piped water and collecting water for household 
+use is predominantly a female responsibility. Same study found that women in rural areas 
+spend a significant amount of time transporting and treating water (i.e. for cleanin g, 
+bathing, cooking, drinking and livestock). This was particularly the case in remote areas, 
+where access to water is most limited.  
+Energy  
+Women tend to be the ‘frontline users’ of electricity (given that they are more bear primary 
+responsibility for hous ehold chores and child care and therefore spend more time in the 
+home), but men are most often responsible for paying the bills (ADB, 2012). In rural areas, 
+women tend to be responsible for – and spend a significant amount of time on – fuel 
+collection (i.e . wood or dried animal dung).  
+Kazakhstan’s district heating systems are considered inefficient and outdated , resulting in up 
+to 30% heat loss annually (UNDP, 2012). In urban areas, experts estimate that 65% of the 
+total municipal heating system is in need of replacement or repair, and those residential 
+buildings, in particular, experience considerable heat loss  (ADB, 2012). This is true of old and
+
+
+---
+*Page 51*
+---
+
+PUBLIC  
+ANNEX ES 
+ GREE N CLIMATE FUND FUNDING PROPOSAL | PAGE 47 OF 57 
+ 
+PUBLIC  I 
+new buildings: women have raised concerns that new housing is built quickly and cheaply, 
+resulting in heating deficiencies.   
+A gender assessment of three district heating projects in Kazakhstan (Grontmij 2014) found 
+that there are important differences between men and women in terms of their heating 
+priorities and choices. For example, women tend to place a higher priority on safety issues 
+(and therefore tend to prefer district heating rather than gas) and are also mor e likely to 
+submit complaints regarding heating issues (as a consequence of the fact that women tend 
+to be more affected by heating issues).  
+Waste management  
+Kazakhstan is in the process of implementing a number of projects for processing solid 
+waste in A lmaty, Aktau, Astana, Zhambyl, Karaganda, Shymkent, Petropavlovsk and Ust -
+Kamenogorsk (Babkina, 2012). There was no information available about gendered patterns 
+of household waste management in Kazakhstan.  
+Education  
+Primary and secondary enrolment rates are the same for boys and girls. Strong gender 
+patterns persist in tertiary education that contribute to labour market segregation: women 
+remain concentrated in traditionally “female” fields of study (humanities, education, health) 
+and are less likely than  men to study in technical fields that would lead to higher wages 
+(energy, transport, construction).  
+ 
+Health  
+Women generally make their own decisions about health care, but some women, especially 
+adolescent girls, face obstacles in access to sexual and rep roductive health services. Older 
+women, women with disabilities and rural women have more limited access to health care. 
+Men’s health is significantly poorer than women’s.  
+ 
+Childcare  
+During the Soviet period, childcare services were widely available in the  form of public 
+kindergartens, crèches and nurseries. Today, there are fewer childcare services in operation 
+and they have become more expensive, making it increasingly difficult for working women 
+to combine their paid work and domestic responsibilities. T his ‘double burden’ is considered 
+a barrier to advancement at work. According to ILO (2013), most women prefer to return to 
+work after their children reach 1 to 3 years of age.  
+Access to 
+employment  Labour force participation  
+Women’s labour force participation reaches 68%, compared to 78% for men, which is higher 
+compared to the regional average for Europe and Central Asia (World Bank Gender 
+Indicators). The gap between women and men’s labour force participation narrowed slightly 
+over the 2000s. Un til now, lower levels of participation for women have been partly 
+accounted for by a lower retirement age for women. As such, recent reforms to introduce 
+equalised retirement ages for women and men could result in slightly higher rates of labour 
+force part icipation for women (ADB, 2013).  
+Horizontal segregation  
+Women remain concentrated in lower -paid sectors and occupations. To some extent, 
+women are excluded from working in a number of occupations in traditionally male -
+dominated sectors (e.g. extractives, construction, and transport) as a result of the long list of 
+jobs that are prohibited for women by legislation (women are prohibited from working in 
+299 occupations , including in mining, construction, metalworking and the booming oil and 
+gas sector ). Most working women are concentrated in services, such as, education and 
+health care, many of which are public sector jobs and typically offer lower salaries than 
+male -dominated occupations in extractives, construction and industry.   
+Vertical segregation
+
+
+---
+*Page 52*
+---
+
+PUBLIC  
+ANNEX ES 
+ GREE N CLIMATE FUND FUNDING PROPOSAL | PAGE 48 OF 57 
+ 
+PUBLIC  I 
+Women remain disadvantaged when it comes to seeking promotion in the workplace. In 
+2013, only 18.8% of Kazakh firms had a woman as a top manager (WB World Development 
+Indicators). Traditional beliefs and stereotypes about men and women’s abilities often 
+hamper w omen’s access to higher hierarchical positions in the workplace. Men are generally 
+perceived as being more ‘natural’ leaders than women (ADB, 2012).  
+Informal employment  
+ 
+Informal employment is heavily concentrated in agriculture. In non -agricultural secto rs, men 
+and women are equally likely to be informally employed (Rutkowski, 2011), but women are 
+more likely to be informally employed in agriculture. In 2009, the proportion of women 
+among rural informal workers reached 59% (ADB, 2012).  
+ 
+Wages  
+Women earn on average 69.5% of men’s wages (KAS, 2013). This gap can partly be explained 
+by the horizontal segregation of the labour force (women are more prominently 
+represented in the fields of education, health care, social services, hotels and restaura nts), 
+as well as forms of direct and indirect discrimination against women.  
+Access to 
+finance/property  
+ Access to credit  
+Women enjoy equal access to finance in terms of legal rights and loan procedures; however, 
+in practice, women’s access to credit is more limited than men’s. One of the main issues is 
+the fact that most banks require collateral as a condition for loans, whi ch is more likely to 
+present difficulties for women, who are less likely to own property or assets than men (ADB, 
+2012).  
+Ownership of land and other assets  
+Women have equal rights under law to own, use and administer property. In practice, 
+however, women are less likely than men to own land and other assets. Property acquired 
+during marriage is often registered in the name of the husband or male head of household, 
+especially in rural areas. This can act as a barrier to finance. As a result, only 9% of the total 
+number of farms is registered in women’s names (ADB, 2013).  
+A lack of business literacy, skills and experience can also present a barrier. Reasons cited by 
+women for not seeking bank loans include the difficulty, time, and cost involved in drawing 
+up and notarising documents necessary for loan applications. Also, women generally have 
+limited experience in developing the business plans required for business loan applications 
+(ADB, 2012).  
+Decision -making  Representation in national parliaments  
+There a re no voluntary or obligatory quotas for women’s representation in Parliament. 
+Share of women in national parliament is currently 23.8% (KAS 2012).  
+Patriarchal norms and values related to the sexual division of labour  
+A 2012 survey indicated that 53.6% o f Kazakhs believe that the husband / father should be 
+the family’s primary income -earner, and 36.3% believe that the husband / father should be 
+the “leader, defender and protector” of the family. Respondents from the city of Almaty 
+tended to give more gend er-equal responses than respondents from other areas 
+(Tengrinews, 2012).  
+Nevertheless, as noted by ILO (2013), these ideas are out of step with the reality in many 
+homes in Kazakhstan, where women and men often share income -earning responsibilities, 
+as reflected by high levels of women’s labour market participation.
+
+
+---
+*Page 53*
+---
+
+PUBLIC  
+ANNEX ES 
+ GREE N CLIMATE FUND FUNDING PROPOSAL | PAGE 49 OF 57 
+ 
+PUBLIC  I 
+Key indicators: Women and men in the economy  
+ Female  Male  Female & 
+Male  
+Labour force  Labour force participation  
+(% of women, men and total population aged 15 -64 who 
+are economically active) World Bank 2014  68 78 73 
+Self-employment  
+(% of female, male and combined employed population 
+who are self -employed) WB World Development 
+Indicators, 2012  31.6  31.8  31.7  
+Unpaid family workers amongst the self -employed  
+(% of self -employed workers who are unpaid family 
+workers) Estimates by UN Women based on 2011 data 
+from KAS  2.5 2.4 2.5 
+Informal employment  
+(% of workers who do not contribute to a pension 
+scheme and do not have an employment contract) 
+Rutkowski 2011, using 2009 figures  N/A N/A 33.28 
+Unemployment rate (15+ years)  
+(% of female, male and combined population aged 15+ 
+years who are unemployed) KAS, 2013  6.5 4.1 5.3 
+Public sector employment  
+(% of workforce that is employed by government) LFS 
+(2010 data) via ILOSTAT  13.8  9.5 23.3  
+Child labour  
+(% of girls & boys that are child labourers – i.e. those 
+aged 5 -17 working in contravention of ILO C138 or 182) 
+UNICEF database, 2012  2.1 2.4 2.2 
+Gender pay gap  
+(Women’s average monthly earnings as a % of men’s) 
+KAS, 2013  69.5  
+Business  
+ Firms with female participation in ownership  
+(% of all firms) WB World Development Indicators, 2013  28.3  
+Bank account at formal financial institution  
+(% female and male population aged 15+) WB Gender 
+Statistics, 2011  43.7  40.2  N/A 
+Loans in the past year from  a financial institution  
+(% female and male population aged 15+)  WB Gender 
+Statistics, 2011  14.4  11.5  N/A 
+Government  Representation in national parliaments (% of seats in a 
+lower chamber held by women/men) KAS, 2012  23.8  76.2  [100]
+
+
+---
+*Page 54*
+---
+
+PUBLIC  
+ANNEX ES 
+ GREE N CLIMATE FUND FUNDING PROPOSAL | PAGE 50 OF 57 
+ 
+PUBLIC  I 
+References  
+Statistics  
+• ILOSTAT, Kazakhstan  : www.ilo.org/ilostat/faces/home/statisticaldata/data_by_country/c ountry -
+details?_adf.ctrl -state=10u2gojsez_167&_afrLoop=1908314462958296   
+• Kazakhstan Agency of Statistics (KAS):  
+o “Dynamics of gender equality for the years 2000 – 2012, by oblast/sex/type”: 
+www.stat.gov.kz/faces/wcnav_externalId/homeGenderInd6?_afrLoop=277901986494054#%40%3F_afr
+Loop%3D277901986494054%26_adf.ctrl -state%3D6712ta6z1_246   
+o “Gender Equality in the Economy”, 2012: 
+www.stat.gov.kz/faces/wcnav_externalId/homeG enderInd3?_afrLoop=277398782856249#%40%3F_afr
+Loop%3D277398782856249%26_adf.ctrl -state%3D6712ta6z1_183   
+o “Goal 3: Promote gender equality and empower women”: 
+www.stat.gov.kz/faces/wcnav_externalId/homeGenderCel3?_afrLoop=277038329504826#%40%3F_afrL
+oop%3D277038329504826%26_adf.ctrl -state%3D6712ta6z1_120   
+o Women and men in Kazakhstan 2008 -2012, 2013: 
+www.stat.gov.kz/faces/wcnav_externalId/publicationsCompilations?_afrLoop=129413339330892#%40
+%3F_afrLoop%3D129413339330892%26_adf.ctrl -state%3D5g2gbf9v9_98   
+o Kazakhstan in figures , 2014: 
+www.stat.gov.kz/faces/wcnav_externalId/publicationsCompilations?_adf.ctrl -
+state=5g2gbf9v9_98&_afrLoop=98351413078219#% 40%3F_afrLoop%3D98351413078219%26_adf.ctrl -
+state%3D2u3khoewo_4   
+• OECD SIGI Index 2012, Kazakhstan: http://genderindex.org/country/kazakhstan    
+• UNDP, Human Development Report 2013: http://hdr.undp.org/en/2013 -report  
+• UNECE Statistical Database: http://w3.unece.org/pxweb/   
+• UNESCO Institute for Statistics database, Kazakhstan: http://www.uis.unesco.org/DataCentre/Pages/country -
+profile.aspx?code=KAZ&regioncode=40505   
+• UNICEF Statistical Database, Kazakhstan: http://www.unicef.org/infobycountry/kazakhstan_statistics.html   
+• World Bank, Gender Statistics Database: 
+http://databank.worldbank.org/data/views/variableselection/selectvariables.aspx?source=gender -statistics   
+• World Bank, Women, Business and the Law – Kazakhstan, 2014: 
+http://wbl.worldbank.org/data/exploreeconomies/kazakhstan/2013   
+ 
+• World Bank, World Development Indicators Database: http://data.worldbank.org/country/kazakhstan   
+• World Economic Forum (WEF) Global  Gender Gap Report 2013: http://reports.weforum.org/global -gender -
+gap-report -2013/   
+• Asian Development Bank (ADB), Kazakhstan: Country Gender Assessment , 2012: 
+www.adb.org/sites/default/files/projdocs/2012/44067 -012-reg-tacr.pdf  
+Reports, Articles, books, websites  
+• Asian Development Bank (ADB), Gender equality and the labor  market: Cambodia, Kazakhstan and the 
+Philippines , 2013: www.adb.org/sites/default/files/pub/2013/gender -equality -cambodia -philippines -
+kazak hstan.pdf   
+• Babkina, Alexandra, “Kazakhstan implements waste -management pilot projects”, Central Asia Online , 17 April 
+2012: http://centralasiaonline.com/en _GB/articles/caii/features/main/2012/04/17/feature -01.   
+• Grontmij, 2014, Gender Assessment of District Heating Projects in Kazakhstan financed by the Clean 
+Technology Fund (CTF): not available online  
+• International Labour Organisation (ILO), Work and Family  Responsibilities: The Republic of Kazakhstan, 2013: 
+www.ilo.org/public/english/region/eurpro/moscow/info/publ/waf_resp_kaz_en.pdf   
+• Rutkowski, Jan, Promoti ng Formal Employment in Kazakhstan , working paper for the World Bank, 2011: 
+www.iza.org/conference_files/InfoETE2011/rutkowski_j1928.pdf .
+
+
+---
+*Page 55*
+---
+
+PUBLIC  
+ANNEX ES 
+ GREE N CLIMATE FUND FUNDING PROPOSAL | PAGE 51 OF 57 
+ 
+PUBLIC  I 
+• Tengrinews, “Almaty citizens wish  to be gender equal more than other Kazakhstan residents”, 2012: 
+http://en.tengrinews.kz/people/Almaty -citizens -wish -to-be-gender-equal -more -than -other -Kazakhstan -
+residents -9702/   
+• Tengrinews, “Almaty citizens wish to be gender equal more than other Kazakhstan residents”, 2012: 
+http://en.tengrinews.kz/people/Almaty -citizens -wish -to-be-gender -equal -more -than -other -Kazakhstan -
+residents -9702/
+
+
+---
+*Page 56*
+---
+
+PUBLIC  
+ANNEX ES 
+ GREE N CLIMATE FUND FUNDING PROPOSAL | PAGE 52 OF 57 
+ 
+PUBLIC  I 
+Disclaimer: This summary was prepared, using publicly available sources. EBRD does not guarantee the accuracy or  
+completeness of the information provided in the Briefing. The text is copyrighted, and to the extent that it reflects 
+opinions, they are the opinions of the individual authors and do not necessarily reflect the views of the EBRD, its 
+staff or Directors. N othing in this summary should be taken as legal advice.  No part of the text may be copied, 
+reproduced or transmitted in any form or by any means without the prior written consent of EBRD.   
+ 
+B. Gender Action Plan on Strengthening Equal opportunities in Projec ts 
+ 
+Activities  Indicators and Targets  Timeline  Responsible 
+organisations 
+(excluding the FP)  
+Impact: Increased number of low carbon investors and RES developers promoting women’s economic 
+empowerment   
+Outcome : Improved access to energy efficiency and renewable energy skills and employment by women and men.  
+Means of verification: Gender disaggregated data assessed against appropriate indicator s to measure enhanced 
+access for women to energy efficiency and rene wable energy skills and employment  
+Output 1: 75% of loan clients fund -wide contribute to strengthening women’s access to energy efficiency and 
+renewable energy employment  
+• Measures to 
+increase workforce diversity 
+by strengthening RES 
+develop Equal Opportunities 
+(EO) polic ies and practice s  
+• Measures to 
+increase workforce diversity 
+by reducing legal and 
+regulatory barriers and 
+promoting women’s equal 
+access to employment via 
+focused policy dialogue  
+• Implement 
+knowledge -sharing practices 
+with RES devel opers and 
+local women’s Economic 
+empowerment NGOs  
+• Develop EO policies 
+and practices to sign up to 
+the UN Women’s 
+Empowerment Principles 
+(WEPs)  
+• Establish gender 
+equity in local supply -chain 
+talent identification and 
+recruitment  Data of Res developer IEs 
+disaggregated by gender 
+and classified as 
+strengthening Equal 
+Opportunities based 
+upon achieving one of 
+the three  
+criteria below:  
+1. At least 30% women 
+on RES developer 
+company board or in 
+senior management 
+positions  
+2. At leas t 30% of RES 
+developer employees are 
+women  
+3. At least 3 0% of RES 
+interns/ on -the-job 
+trainees are women  
+ 
+b. Contribute with 
+employers’ or industry  
+organisations (eg., 
+Kazenergy ; National 
+Chamber of 
+Entrepreneurs) to the 
+development of policy 
+brief or guidance note to 
+Ministry of Labour, 
+Mining Association and 
+high level stakeholders to 
+remove discriminatory a. Gender ratio 
+achieved by third 
+year of 
+programme 
+operation and 
+until programme 
+completion  
+b. By end 2020  
+ 
+c. By end 2020  
+ 
+d. By end 2020  
+ 
+e. e. By end 2020  
+ IE reporting
+
+
+---
+*Page 57*
+---
+
+PUBLIC  
+ANNEX ES 
+ GREE N CLIMATE FUND FUNDING PROPOSAL | PAGE 53 OF 57 
+ 
+PUBLIC  I 
+Activities  Indicators and Targets  Timeline  Responsible 
+organisations 
+(excluding the FP)  
+clause from Labour code, 
+Article 16 as they pertain 
+to prohibitions on 
+women working in 
+Energy  
+ 
+c. Number of knowledge 
+products produced by 
+RES of own research & 
+lessons learned  
+to reducing existing 
+knowledge gaps on 
+reducing  
+formal and informal 
+barriers faced by women 
+and men as economic 
+actors in renewable 
+energy sector  
+ 
+d. Number of RES s igned 
+up to the UN Women’s 
+Empowerment Principles 
+(WEPs)  
+ 
+e. Number of RES 
+adopting contracting 
+requirement/ 
+procurement policy 
+mandating  primary 
+contractor to adopt EO 
+policy and practices  
+  
+ 
+Output 2: Promote gender equality in energy efficiency and renewable energy vocational training  skills and 
+accreditation  
+• Develop outreach 
+programmes targeted at 
+women to promote 
+vocational training system in 
+partnership with technical 
+and vocational education • Data on 
+potential technical and 
+vocational education and 
+training (TVET) inquiries 
+disaggregated by sex  
+• Aim for 35% of Throughout the 
+programme operation  
+ IE HR departments
+
+
+---
+*Page 58*
+---
+
+PUBLIC  
+ANNEX ES 
+ GREE N CLIMATE FUND FUNDING PROPOSAL | PAGE 54 OF 57 
+ 
+PUBLIC  I 
+Activities  Indicators and Targets  Timeline  Responsible 
+organisations 
+(excluding the FP)  
+and training (TVET) 
+institutions and Kasipkor 
+Holding (public authority 
+responsible for th e quality 
+assurance of colleges and 
+universities)  
+• Support for women 
+workers to move from semi -
+skilled to skilled and 
+managerial/leadership 
+positions through 
+development of targeted 
+training/ reskilling, 
+mentoring, ‘buddy systems’ 
+etc 
+• Undertake targeted 
+advertising in women 
+employment forums and 
+organisations.  
+• Undertake 
+knowledge -sharing with local 
+women’s economic 
+empowerment NGOs.  
+• Spread awareness 
+on the gender diversity 
+dimensions of the RES sector 
+through marketing and 
+publicity strategies  
+ internship/ on -the-job 
+training inquiries from 
+women  
+ 
+ 
+Output 3: Households and individuals (males and females) with improved  access to low ‐emission energy 
+sources  
+• Undertake gender 
+sensitive public 
+consultations to assess 
+women’s willingness to pay 
+for improved  access to 
+low‐emission  energy 
+sources  
+ • Number of 
+households, and 
+individuals (males and 
+females) with  
+improved access to  
+low‐emission  energy  
+sources  
+•              Percentage of 
+sub-projects that have 
+applied gender -equitable 
+stakeholder 
+consultations  
+•    (Female -headed) 
+household expenses on Throughout the programme 
+operation  Consultant, AEs; 
+Assumes that it will 
+typically not be possible 
+to measure improved 
+access from large‐grid 
+systems; therefore,  the 
+data will be linked to 
+off‐grid access (e.g., 
+solar panels) and 
+mini‐grid systems.
+
+
+---
+*Page 59*
+---
+
+PUBLIC  
+ANNEX ES 
+ GREE N CLIMATE FUND FUNDING PROPOSAL | PAGE 55 OF 57 
+ 
+PUBLIC  I 
+Activities  Indicators and Targets  Timeline  Responsible 
+organisations 
+(excluding the FP)  
+energy (electricity) / 
+percentage change in 
+expenditure for 
+household energy needs 
+by women.  
+ 
+ 
+Output 4: Knowledge management products and gender awareness workshops highlighting equal gender access 
+to RES skills and employment  to be prepared and disseminated  
+• Highlight gender 
+goal achievement status and 
+report on gender 
+disaggregated statistics in 
+progress report  
+• Publish case studies 
+to represent gender diversity 
+of the programme and 
+disseminate these on public 
+forums  
+• Conduct workshops 
+highlighting equal gender 
+access to climate finance 
+programmes  One time each year  of programme operation  
+ AEs
+
+
+---
+*Page 60*
+---
+
+PUBLIC  
+ANNEX ES 
+ GREE N CLIMATE FUND FUNDING PROPOSAL | PAGE 56 OF 57 
+ 
+PUBLIC  I 
+ANNEX 4: STRATEGIC ENVIRONMENTAL REVIEW FOR KAZAKHSTAN RENEWABLE 
+ENERGY SOURCES (SUMMARY) http://kazreff -ser.com/index.html   
+The EBRD commissioned a Strategic Environmental Review focusing on renewable energy technologies in optimal 
+areas of Kazakhstan.  The renewable energy technologies specifically reviewed in this SER include hydropower, on -
+shore wind, solar, biogas and geothermal technologies.  The SER complies with the EBRD’s Environmental and 
+Social Policy and its Public Information Policy.   
+The purpose of the SER process was to review the key environmental issues associated with the impl ementation of 
+specific renewable energy development on a national basis.  When specific projects are proposed to the Bank, a 
+project -level environmental review is still required. The outcomes of the SER help to focus the scope and provide 
+relevant guidance  for subsequent environmental reviews of specific renewable energy projects within Kazakhstan. 
+A subsequent project -level environmental review conducted by the EBRD team for each specific project proposal 
+uses the information in the SER report to identify mitigation strategies and adapt them for implementation at the 
+project level.   
+The EBRD’s environmental and social policy requires compliance with both European Union (EU) directives and 
+national law for projects and programmes funded through EBRD.  Therefore, the SER was guided by the EU 
+Directive 2001/42/EC on the assessment of the effects of certain plans and programmes on the environment 
+(usually known as the SEA Directive).  The SER provides a high level overview of potential environmental effect s 
+along with recommendations and guidance for renewable energy development in Kazakhstan.  The key stages of 
+the SER were as follows:  
+- Stage A (Scoping)  - Setting the context and objectives, establishing the bas eline, and deciding the scope;  
+- Stage B: Devel oping and refining alternatives and assessing effects;  
+- Stage C: Preparing the SER report; and  
+- Stage D: Consulting on the draft SER report.  
+ 
+Renewable Energy Scenarios   
+Areas with good potential for renewable energy development in Kazakhstan have been identified at the scoping 
+stage. The renewable energy technologies specifically reviewed in this SER include hydropower, on -shore wind, 
+solar, biogas and geothermal technolo gies.  Further analysis of potential locations, technologies and operating 
+conditions of the renewable energy resource scenarios have been undertaken as part of the SER and detailed in 
+the environmental and/or social high sensitivity areas are discussed in  detail in the SER report. Environmental and 
+social factors that could significantly impact the effectiveness, economic feasibility, and therefore, the siting of 
+these facilities are addressed in technical reports (RPERs) for each technology.   
+Stakeholder  Engagement  
+The SER was developed in compliance with the EBRD’s Environmental and Social Policy and its Public Information 
+Policy as well as being guided by the EU SEA Directive.   Stakeholder consultation were been on -going during 
+scoping, and continued t hroughout the SER process.  In line with EBRD requirements, a Stakeholder Engagement 
+Plan (SEP) was being developed and implemented, setting the scope and timescales for consultation throughout 
+the SER and beyond.  
+ 
+SER resulted in:  
+- Assessment instruments for specific investment projects and their appraisal and permitting. This has two 
+components: the first one is an annotated list of areas/locations most suitable for development of mini -
+hydro, wind, solar, biogas and geothermal facilities (to provide an in dication for future development). The 
+second one is a recommendation for a focused environmental and social due diligence process for 
+individual projects which takes account of the findings and recommendations of the SER and the 
+requirements of the Bank’s Environmental and Social Policy and associated Performance Requirements.  
+- Identification and (where possible, determined in consultation with the Bank) quantification of 
+environmental, social or technical obstacles to be encountered or benefits arising whe n developing the 
+indicated facilities.  
+- Capacity building for consultants and developers in environmental and social compliance with the Bank 
+Environmental, Social, and Public Information Policy; and for  regulators in SEA procedures and processes
+
+
+---
+*Page 61*
+---
+
+PUBLIC  
+ANNEX ES 
+ GREE N CLIMATE FUND FUNDING PROPOSAL | PAGE 57 OF 57 
+ 
+PUBLIC  I 
+ANNEX 5: THEORY OF CHANGE MODEL  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Activities  
+1. Concessional finance  
+• Investment in building  generation capacity from 
+renewable energy source  and modernising 
+transmissions network.  
+2.1 Technical assistance and capacity building  
+• Provide project -level assistan ce to public entities.  
+• Support the development of MRV system, the 
+introduction of the auction -based system for RES 
+projects, and the development of telemetry 
+requirements  for remote monitoring of RES 
+projects.   
+2.2 Policy dialogue  
+• Support regulatory reforms to address  market 
+barriers for RES investment.  
+• Review and further develop the domestic carbon 
+market to integrate RES projects.  
+Results  
+•Enhance access to 
+finance for RES -related 
+projects.  
+•Build at least 330MW 
+RES capacity 
+contributing to at least 
+18% of the national RES 
+target by 2020.  
+•Modernise 
+transmission network 
+to facilitate higher 
+penetration of 
+renewables in the grid 
+and reduce network 
+losses.  
+Impacts  
+•Demonstrate new 
+replicable RES projects 
+and instigate appetite  for 
+investment in the 
+industry resulting in an 
+increased share of RES in 
+the country’s energy mix.  
+•Strengthen institutional 
+and regulatory system for 
+RES projects resulting in 
+competitive entry of RES.  
+•Reduce  carbon 
+emissions of 12.86mt 
+CO2e over the pro ject 
+lifetime (GHG emissions 
+reduction due to network 
+loss is not included).  
+Assumptions  
+• RES projects are not financially viable in the absence of the programmes components; given access to finance, 
+potential investors will invest in RES projects.  
+• Dome stic RES project developers lack the capacity to initiate and develop RES investment; given technical support, 
+potential investors will improve the ability to identify, evaluate and implement RES projects.  
+• Given support in policy dialogue, an enabling and  lasting regulatory environment will be created for RES projects.
+
+
+---
+*Page 62*
+---
+
+Page 58
+
+
+---
+*Page 63*
+---
+
+Page 59 
+Env ironmental and social report (s) disclosure  
+Basic project/programme information  
+Project/programme title  GCF – EBRD Kazakhstan Renewables Energy Framework  
+Accredited entity  European Bank for Reconstruction and Development  
+Environmental and social 
+safeguards (ESS) category  Category A  
+Environmental and Social Impact Assessment  (ESIA)  (if applicable)  
+Date of disclosure on 
+accredited entity’s website  2017 -03-06 
+Language(s) of  disclosure  English and Russian  
+Link to disclosure  Strategic Environmental Review (SER)  Report  
+Renewable Project Environmental Review Report – Wind  
+Appendix A – Receptor ‘value’, ‘vulnerability’ and ‘sensitivity’  
+Website:  http://www.ebrd.com/what -we-do/get/knowledge -
+hub.html        
+The SER and the related  documents are equivalent to the ESIA.  
+Other link(s)  http://  
+Environmental and Social Management Plan  (ESMP)  (if applicable)  
+Date of disclosure on 
+accredited entity’s website  2017 -03-06 
+Language(s) of disclosure  English, Kazakh and Russian  
+Link to disclosure  Environmental and Social Management Framework and System 
+(ESMFS)  
+Website: http://www.ebrd.com/what -we-do/get/knowledge -
+hub.html     
+The ESMFS is equivalent to the ESMP.  
+Other link(s)  http://  
+Resettlement Action Plan (RAP) (if applicable)  
+Date of disclosure on 
+accredited entity’s website  Not Applicable  
+Any other relevant ESS reports and/or disclosures (if applicable)  
+Description of 
+report/disclosure  Not Applicable  
+________

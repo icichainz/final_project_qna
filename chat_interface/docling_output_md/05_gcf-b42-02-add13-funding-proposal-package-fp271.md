@@ -1,0 +1,3365 @@
+<!-- image -->
+
+Meeting of the Board 30 June - 3 July 2025 Port Moresby, Papua New Guinea Provisional agenda item 11
+
+GCF/B.42/02/Add.13
+
+9 June 2025
+
+## Consideration of funding proposals -
+
+## Addendum XIII Funding proposal package for FP271
+
+## Summary
+
+This addendum contains the following seven parts:
+
+- a) A funding proposal titled 'India Green Finance Facility (IGFF)';
+- b) No-objection letter issued by the national designated authority(ies) or focal point(s);
+- c) Environmental and social report(s) disclosure;
+- d) Secretariat ' s assessment;
+- e) Independent Technical Advisory Panel ' s assessment;
+- f) Response from the accredited entity to the independent Technical Advisory Panel's assessment; and
+- g) Gender documentation.
+
+<!-- image -->
+
+## Table of Contents
+
+| Funding proposal submitted by the accredited entity                                          |   3 |
+|----------------------------------------------------------------------------------------------|-----|
+| No-objection letter issued by the national designated authority(ies) or focal point(s)       |  91 |
+| Environmental and social report(s) disclosure                                                |  92 |
+| Secretariat's assessment                                                                     |  94 |
+| Independent Technical Advisory Panel's assessment                                            | 111 |
+| Response from the accredited entity to the independent Technical Advisory Panel's assessment | 126 |
+
+Gender documentation
+
+## Disclaimer:
+
+The designations and the presentation of the materials used in this document, including their respective citations, maps and references, have been included by the relevant Accredited Entity and do not imply the expression of any opinion whatsoever on the part of the Green Climate Fund concerning the legal status of any country, territory, city or area or of its authorities, or concerning the delimitation of its frontiers or boundaries. Also, the boundaries and names shown, and the designations used in this document have been included by the relevant Accredited Entity and do not imply official endorsement or acceptance by the Green Climate Fund.
+
+3
+
+128
+
+.
+
+Project/Programme title:
+
+India Green Finance Facility (IGFF)
+
+Country:
+
+The Republic of India
+
+Accredited Entity:
+
+Asian Development Bank
+
+Date of first submission:
+
+2025/01/15
+
+Date of current submission
+
+2025/06/02
+
+Version number
+
+[V.10]
+
+<!-- image -->
+
+<!-- image -->
+
+## Contents
+
+Section A
+
+PROJECT / PROGRAMME SUMMARY
+
+Section B
+
+PROJECT / PROGRAMME INFORMATION
+
+Section C
+
+FINANCING INFORMATION
+
+Section D
+
+EXPECTED PERFORMANCE AGAINST INVESTMENT CRITERIA
+
+Section E
+
+LOGICAL FRAMEWORK
+
+Section F
+
+RISK ASSESSMENT AND MANAGEMENT
+
+Section G
+
+GCF POLICIES AND STANDARDS
+
+Section H
+
+ANNEXES
+
+## Note to Accredited Entities on the use of the funding proposal template
+
+- Accredited Entities should provide summary information in the proposal with cross-reference to annexes such as feasibility studies, gender action plan, term sheet, etc.
+- Accredited  Entities  should  ensure  that  annexes  provided  are  consistent  with  the  details provided in the funding proposal. Updates to the funding proposal and/or annexes must be reflected in all relevant documents.
+- The total number of pages for the funding proposal (excluding annexes) should not exceed 60 . Proposals exceeding the prescribed length will not be assessed within the usual service standard time.
+- The recommended font is Arial, size 11.
+- Under the GCF Information Disclosure Policy, project and programme funding proposals will be disclosed on the GCF website, simultaneous with the submission to the Board, subject to the redaction of any information that may not be disclosed pursuant to the IDP. Accredited Entities are asked to fill out information on disclosure in section G.4.
+
+Please submit the completed proposal to:
+
+fundingproposal@gcfund.org
+
+Please use the following name convention for the file name:
+
+'FP-[Accredited Entity Short Name]-[Country/Region]-[YYYY/MM/DD]'
+
+<!-- image -->
+
+## ABBREVIATIONS
+
+| ADB    | Asian Development Bank                              |
+|--------|-----------------------------------------------------|
+| AE     | Accredited Entity                                   |
+| AQI    | Air Quality Index                                   |
+| ARA    | Adaptation Results Area                             |
+| ASEAN  | Association of Southeast Asian Nations              |
+| BAU    | Business as Usual                                   |
+| CNG    | Compressed Natural Gas                              |
+| CO2    | Carbon Dioxide                                      |
+| DRE    | Decentralized Renewable Energy                      |
+| DFI    | Development Financial Institution                   |
+| ENSS   | Energy Storage Systems                              |
+| ESCO   | Energy Service Company                              |
+| ESMF   | Environmental and Social Management Framework       |
+| ESS    | Environmental and Social Safeguard                  |
+| GBI    | Generation Based Incentive                          |
+| GCF    | Green Climate Fund                                  |
+| GDP    | Gross Domestic Product                              |
+| GFF    | Green Finance Facility                              |
+| GGC    | Green Guarantee Company                             |
+| GHG    | Greenhouse Gas                                      |
+| GW     | Giga Watt                                           |
+| HDI    | Human Development Index                             |
+| ICAP   | India Cooling Action                                |
+| IDP    | Information Disclosure Policy                       |
+| IEA    | International Energy Agency                         |
+| IIFCL  | India Infrastructure Finance Company Limited        |
+| ISSB   | International Sustainability Standards Board        |
+| MoPNG  | Ministry of Petroleum and Natural Gas               |
+| MNRE   | Ministry of New and Renewable Energy                |
+| MRA    | Mitigation Results Area                             |
+| MSMEs  | Micro, Small and Medium Enterprises                 |
+| MT     | Metric Ton                                          |
+| NAPCC  | National Action Plans on Climate Change             |
+| NABARD | National Bank for Agriculture and Rural Development |
+| NDC    | Nationally Determined Contribution                  |
+| NISE   | National Institute of Solar Energy                  |
+| NIWE   | The Nodal Agency                                    |
+| NSGM   | National Smart Grid Mission                         |
+| OMCs   | Oil Marketing Companies                             |
+
+<!-- image -->
+
+| PAT   | Perform, Achieve and Trade                           |
+|-------|------------------------------------------------------|
+| PM    | Particulate Matter                                   |
+| PPP   | Public-Private Partnership                           |
+| PV    | Photovoltaic                                         |
+| RE    | Renewable Energy                                     |
+| REC   | Rural Electrification Corporation                    |
+| RRB   | Regional Rural Bank                                  |
+| RPO   | Renewable Purchase Obligation                        |
+| SATAT | Sustainable Alternative Towards Affordable Transport |
+| SDGs  | Sustainable Development Goals                        |
+| SECI  | Solar Energy Corporation of India                    |
+| SHG   | Self-Help Group                                      |
+| SHIP  | Strategic Hydrogen Innovation Partnership            |
+| SIDBI | Small Industries Development Bank                    |
+| SME's | Small and Medium Enterprises                         |
+| SST   | Sea Surface Temperature                              |
+| TCFD  | Climate Related Financial Disclosure Frameworks      |
+
+<!-- image -->
+
+<!-- image -->
+
+| PROJECT/PROGRAMME SUMMARY                               | PROJECT/PROGRAMME SUMMARY                                                                                                                                                                                                                                                                                                               | PROJECT/PROGRAMME SUMMARY                                                                                                                                                                                                                                                                                                               | PROJECT/PROGRAMME SUMMARY                                                                                                                                                                                                                                                                                                               | PROJECT/PROGRAMME SUMMARY                                                                                                                                                                                                                                                                                                               |
+|---------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| A.1. Project or programme                               | Programme                                                                                                                                                                                                                                                                                                                               | A.2. Public private sector                                                                                                                                                                                                                                                                                                              | Public                                                                                                                                                                                                                                                                                                                                  | Public                                                                                                                                                                                                                                                                                                                                  |
+| A.3. Request for Proposals (RFP)                        | If the funding proposal is being submitted in response to a specific GCF Request for Proposals, indicate which RFP it is targeted for. Please note that there is a separate template for the Simplified Approval Process and REDD+. Not applicable                                                                                      | If the funding proposal is being submitted in response to a specific GCF Request for Proposals, indicate which RFP it is targeted for. Please note that there is a separate template for the Simplified Approval Process and REDD+. Not applicable                                                                                      | If the funding proposal is being submitted in response to a specific GCF Request for Proposals, indicate which RFP it is targeted for. Please note that there is a separate template for the Simplified Approval Process and REDD+. Not applicable                                                                                      | If the funding proposal is being submitted in response to a specific GCF Request for Proposals, indicate which RFP it is targeted for. Please note that there is a separate template for the Simplified Approval Process and REDD+. Not applicable                                                                                      |
+| A.4. Result area(s)                                     | Check the applicable GCF result area(s) that the overall proposed project/programme targets below. For each checked result area(s), indicate the estimated percentage of GCF and Co-financers' contribution devoted to it. The total of the percentages when summed should be 100% for GCF and Co-financers' contribution respectively. | Check the applicable GCF result area(s) that the overall proposed project/programme targets below. For each checked result area(s), indicate the estimated percentage of GCF and Co-financers' contribution devoted to it. The total of the percentages when summed should be 100% for GCF and Co-financers' contribution respectively. | Check the applicable GCF result area(s) that the overall proposed project/programme targets below. For each checked result area(s), indicate the estimated percentage of GCF and Co-financers' contribution devoted to it. The total of the percentages when summed should be 100% for GCF and Co-financers' contribution respectively. | Check the applicable GCF result area(s) that the overall proposed project/programme targets below. For each checked result area(s), indicate the estimated percentage of GCF and Co-financers' contribution devoted to it. The total of the percentages when summed should be 100% for GCF and Co-financers' contribution respectively. |
+| A.4. Result area(s)                                     |                                                                                                                                                                                                                                                                                                                                         |                                                                                                                                                                                                                                                                                                                                         | GCF contribution                                                                                                                                                                                                                                                                                                                        | Co-financers' contribution 1                                                                                                                                                                                                                                                                                                            |
+| A.4. Result area(s)                                     | Mitigation total                                                                                                                                                                                                                                                                                                                        | Mitigation total                                                                                                                                                                                                                                                                                                                        | 100%                                                                                                                                                                                                                                                                                                                                    | 100%                                                                                                                                                                                                                                                                                                                                    |
+| A.4. Result area(s)                                     | ☒ Energy generation and access                                                                                                                                                                                                                                                                                                          | ☒ Energy generation and access                                                                                                                                                                                                                                                                                                          | 82%                                                                                                                                                                                                                                                                                                                                     | 83%                                                                                                                                                                                                                                                                                                                                     |
+| A.4. Result area(s)                                     | ☒ Low-emission transport                                                                                                                                                                                                                                                                                                                | ☒ Low-emission transport                                                                                                                                                                                                                                                                                                                | 18%                                                                                                                                                                                                                                                                                                                                     | 17%                                                                                                                                                                                                                                                                                                                                     |
+| A.4. Result area(s)                                     | ☐ Buildings, cities, industries and appliances                                                                                                                                                                                                                                                                                          | ☐ Buildings, cities, industries and appliances                                                                                                                                                                                                                                                                                          | Enter number                                                                                                                                                                                                                                                                                                                            | Enter number                                                                                                                                                                                                                                                                                                                            |
+| A.4. Result area(s)                                     | ☐ Forestry and land use                                                                                                                                                                                                                                                                                                                 | ☐ Forestry and land use                                                                                                                                                                                                                                                                                                                 | Enter number                                                                                                                                                                                                                                                                                                                            | Enter number                                                                                                                                                                                                                                                                                                                            |
+| A.4. Result area(s)                                     | Adaptation total                                                                                                                                                                                                                                                                                                                        | Adaptation total                                                                                                                                                                                                                                                                                                                        | %                                                                                                                                                                                                                                                                                                                                       | %                                                                                                                                                                                                                                                                                                                                       |
+| A.4. Result area(s)                                     | ☐ Most vulnerable people and communities                                                                                                                                                                                                                                                                                                | ☐ Most vulnerable people and communities                                                                                                                                                                                                                                                                                                | Enter number                                                                                                                                                                                                                                                                                                                            | Enter number                                                                                                                                                                                                                                                                                                                            |
+| A.4. Result area(s)                                     | ☐ Health and well-being, and food and water security                                                                                                                                                                                                                                                                                    | ☐ Health and well-being, and food and water security                                                                                                                                                                                                                                                                                    | Enter number%                                                                                                                                                                                                                                                                                                                           | Enter number%                                                                                                                                                                                                                                                                                                                           |
+| A.4. Result area(s)                                     | ☐ Infrastructure and built environment                                                                                                                                                                                                                                                                                                  | ☐ Infrastructure and built environment                                                                                                                                                                                                                                                                                                  | Enter number%                                                                                                                                                                                                                                                                                                                           | Enter number%                                                                                                                                                                                                                                                                                                                           |
+| A.4. Result area(s)                                     | ☐ Ecosystems and ecosystem services                                                                                                                                                                                                                                                                                                     | ☐ Ecosystems and ecosystem services                                                                                                                                                                                                                                                                                                     | Enter number%                                                                                                                                                                                                                                                                                                                           | Enter number%                                                                                                                                                                                                                                                                                                                           |
+| A.5. Expected mitigation outcome (Core indicator 1: GHG | 50 million metric tonne CO2 e over the lifetime of the facility 2                                                                                                                                                                                                                                                                       | A.6. Expected adaptation outcome (Core indicator 2:                                                                                                                                                                                                                                                                                     | Indicate total number of direct and indirect beneficiaries                                                                                                                                                                                                                                                                              | Indicate total number of direct and indirect beneficiaries                                                                                                                                                                                                                                                                              |
+| A.5. Expected mitigation outcome (Core indicator 1: GHG | 50 million metric tonne CO2 e over the lifetime of the facility 2                                                                                                                                                                                                                                                                       | A.6. Expected adaptation outcome (Core indicator 2:                                                                                                                                                                                                                                                                                     |                                                                                                                                                                                                                                                                                                                                         | Indicate number of indirect beneficiaries                                                                                                                                                                                                                                                                                               |
+| emissions reduced, avoided or removed / sequestered)    | 50 million metric tonne CO2 e over the lifetime of the facility 2                                                                                                                                                                                                                                                                       | direct and indirect beneficiaries reached)                                                                                                                                                                                                                                                                                              |                                                                                                                                                                                                                                                                                                                                         | Indicate %of indirect beneficiaries vis-à- vis total population                                                                                                                                                                                                                                                                         |
+| A.7. Total financing (GCF + co-finance 3 )              | 993 million USD                                                                                                                                                                                                                                                                                                                         | A.9. Project size                                                                                                                                                                                                                                                                                                                       |                                                                                                                                                                                                                                                                                                                                         |                                                                                                                                                                                                                                                                                                                                         |
+| A.8. Total GCF funding requested                        | 200 million USD                                                                                                                                                                                                                                                                                                                         | A.9. Project size                                                                                                                                                                                                                                                                                                                       | Large (Over USD 250 million)                                                                                                                                                                                                                                                                                                            | Large (Over USD 250 million)                                                                                                                                                                                                                                                                                                            |
+
+A
+
+1 Co-financer's  contribution  means  the  financial  resources  required,  whether  Public  Finance  or  Private  Finance,  in  addition  to  the  GCF contribution (i.e.  GCF financial resources requested by the Accredited Entity) to implement the project or programme described in the funding proposal.
+
+2  The GHG emission reductions/mitigation potential assessment has been conducted using the UNFCCC approved CDM methodologies. Project boundary and baseline have been defined using the applied CDM methodology. Further, IPCC emission factors for fuels and national grid emission factors defined by the CEA, Government of India has been used for estimation of GHG emissions from each project/sub-project 3 Refer to the Policy of Co-financing of the GCF.
+
+<!-- image -->
+
+## GREEN CLIMATE FUND FUNDING PROPOSAL V.9.0 | PAGE 2
+
+<!-- image -->
+
+A
+
+- A.10. Financial instrument(s) requested for the GCF funding
+
+Mark all that apply and provide total amounts. The sum of all total amounts should be consistent with A.8.
+
+- [x] ☒ Grant
+
+13
+
+- [x] ☒ Loan 187
+
+- [ ] ☐
+
+- [ ] Guarantee 0
+
+- [ ] ☐ Equity
+
+Enter number
+
+- [ ] ☐ Results-based payment    Enter number
+
+A.11. Implementation period
+
+- [x] 10 years
+
+A.12. Total lifespan
+
+27 years
+
+A.13. Expected date of AE internal approval
+
+Date of approval (program-level) *: 9/30/2025
+
+*Note individual sub-projects approval dates will vary over implementation period, subject to FAA effectiveness date.
+
+A.14. ESS category
+
+I-2
+
+A.15. Has this FP been submitted as a CN before?
+
+Yes ☒
+
+- [ ] No ☐
+
+A.16. Has Readiness or PPF support been used to prepare this FP?
+
+- [ ] Yes ☐
+
+- [x] No ☒
+
+A.17. Is this FP included in the entity work programme?
+
+- [ ] Yes ☐
+
+- [x] No ☒
+
+A.18.  Is  this  FP  included  in the country programme?
+
+- [ ] Yes ☐
+
+- [x] No ☒ *
+
+*India does not have a formal Country Program; however, it is prioritized by the country through the issuance of a No- Objection Letter (NOL).
+
+- A.19. Complementarity and coherence
+
+Yes ☒
+
+- [ ] No ☐
+
+- A.20. Executing Entity information
+
+Throughout the Funding Proposal, Executing Entity (EE) refers to:
+
+- (a)  any entity that signs a subsidiary loan agreement with ADB to execute, carry out, or implement  a  part  of  the  Funded  Activity  and  which  is  responsible  for  channeling reimbursable  resources  provided  by  ADB  (funded  by  GCF  and/or  ADB).  This  may include (but not be limited to):
+
+- National Bank for Agriculture and Rural Development (NABARD)
+
+- Rural Electrification Corporation (REC)
+
+- India Infrastructure Finance Company Limited (IIFCL); and
+
+ADB,  in  administering  technical  assistance  (TA)  grant  resources  funded  by  GCF  under component 2, in accordance with the ADB's policies and procedures.
+
+## A.21. Executive summary (max. 750 words, approximately 1.5 pages)
+
+## India's energy transition challenge
+
+1. India is the world's third-largest CO ₂ emitter, with over 94% of its primary energy supply in 2023 still derived from fossil  fuels.  This  heavy  reliance  not  only  drives  greenhouse  gas  emissions  but  also contributes  to  severe  air pollution-most  cities  exceed  WHO  air  quality  standards-and  exacerbates  public  health  and  climate-related vulnerabilities.  As  climate  impacts  intensify,  including  more  frequent  heatwaves  and  grid  disruptions,  fossil  fuel dependence continues to undermine energy security and environmental sustainability.
+
+2. India's clean energy transition is at a critical juncture. India has committed to 500 GW of non-fossil energy capacity by 2030 and net-zero emissions by 2070. While significant strides have been made in scaling utility-scale solar and wind, the country's climate goals demand much broader and deeper decarbonization across multiple sectors. India now needs to turn its attention to more complex sectors that are harder to decarbonize - namely the industrial sector, agriculture and transportation - and which consume nearly two-thirds of the country's energy, and underserved regions which have not yet benefited from the growth in renewables.
+
+<!-- image -->
+
+A
+
+<!-- image -->
+
+India's energy transition will not continue at the pace needed without technologies critical to deep decarbonization and  inclusive  development -such  as  Round-the-Clock  (RTC)  renewables,  green  hydrogen,  compressed  biogas (CBG), decentralized renewable energy (DRE), and electric mobility. As India's share of variable renewable energy (VRE)  grows,  new  challenges  have  emerged-grid  curtailment,  weak  transmission,  and  limited  storage  have constrained integration. Without affordable RTC, dependence on coal for baseload power will continue. RTC solutions, along with green hydrogen and compressed biogas (CBG), are essential for industrial decarbonization but remain underfunded  due  to  high  capital  costs,  fragmented  supply  chains,  and  uncertain  offtake  arrangements.  At  the decentralized level,  technologies like solar-powered irrigation and cold storage are vital for rural electrification and climate resilience. Yet they face barriers including limited consumer creditworthiness, weak banking infrastructure, and a  lack  of  customized  financial  products  to  support  small-scale  developers  (MSMEs).  Likewise,  the  electric  mobility transition  is  slow  in  rural  areas  due  to  high  upfront  costs,  poor  charging  infrastructure,  and  constrained  consumer financing.
+
+3. The high initial cost of technologies, lack of long-term in use experience, high risk premiums, and borrowers that cannot furnish collateral or need credit enhancement, together also make the above solutions ' hard-to-finance ' by making capital, inadequate, expensive and short-term (Annex 2, Section 2.3). These sectors are held back by the absence of affordable, long-tenure, and risk-tolerant  capital .  Financial  institutions  remain  focused  on  low-risk, utility-scale  renewables, leaving smaller borrowers and emerging technologies underserved. To close this gap and accelerate  India's  clean  energy  transition,  targeted  financial  instruments,  risk-sharing  facilities,  and  institutional capacity-building are essential. The India Green Finance Facility (IGFF) is designed to deliver precisely this shiftunlocking investment in high-impact, underfunded technologies and regions.
+4. Without  strategic  interventions, India  risks  being  locked  into  a  carbon-intensive  trajectory ,  with  rising energy demand outpacing clean energy deployment. By 2030, the country's energy demand is expected to increase by nearly 35%, requiring bold, targeted investments to scale emerging solutions beyond their current niche markets. India is poised to play a pivotal role in the global clean energy transition. Building on the momentum of earlier international commitments,  India's  COP29  commitments  focus  on  accelerating  green  hydrogen  deployment,  expanding  energy storage solutions, and enhancing grid resilience to support large-scale renewable integration
+
+## Proposed Intervention
+
+5. IGFF, proposed by the Asian Development Bank (ADB) in partnership with India's leading development finance institutions (DFIs), seeks to catalyze a systemic shift in this landscape. It will leverage $200 million in concessional financing from GCF to leverage $1.9 billion from ADB and leading Indian development financial institutions (DFIs), catalyzing $2.9 billion in financing for clean energy from private and public sources. By doing so, the program  aims  to  accelerate  low-carbon  development,  enhance  energy  access,  and  mainstream  climate-aligned financial practices within India's banking system.
+6. The facility will deploy GCF resources in conjunction with ADB financing to extend lines of credit to leading Development Finance Institutions (DFIs) such as NABARD, REC, and IIFCL. These funds will be directed towards the accelerated deployment of high-impact clean energy solutions, including:
+- RTC renewable energy systems with integrated storage to provide reliable, 24/7 clean power;
+- Decentralized solar energy applications to enhance rural livelihoods and climate resilience;
+- Electric mobility solutions (two-and three wheelers) targeting rural and peri-urban areas to support lowcarbon transport;
+- Green hydrogen production for industrial use, enabling the decarbonization of hard-to-abate sectors; and
+- CBG for sustainable waste management
+7. A $65 million risk sharing facility (RSF) will be established under the IGFF to provide partial credit guarantees and promote financing for MSME developers for the deployment of CBG. Additionally, technical assistance will be provided to build capacities of DFIs, MSME developers, and other financial institutions to institutionalize green lending practices within their operations.
+
+<!-- image -->
+
+## 8. Key highlights of IGFF include:
+
+- Targeting underserved technologies and geographies: IGFF is uniquely positioned to direct capital toward clean energy technologies that remain underfinanced despite their mitigation potential-such as RTC  renewables,  green  hydrogen,  CBG,  decentralized  renewables,  and  e-mobility.  It  also  prioritizes investments in underserved geographies, including India's North-Eastern and low-income states.
+- Empowering DFIs as climate finance leaders: Anchored in global recognition of development banks' pivotal  role-including  under  the  G20  framework-IGFF  strengthens  the  institutional  and  operational capacities of Indian DFIs. It equips them with long-tenure, lower-cost capital and practical tools to embed climate considerations into their lending operations, enabling them to take leadership in financing India's energy transition.
+- Deploying tailored, catalytic financial instruments: The facility combines concessional lending with a RSF that provides targeted credit guarantees, especially for MSME developers in high-risk, early-stage markets such as CBG. These instruments are designed to reduce capital costs, address credit access constraints, and overcome first-mover disincentives.
+- Mobilizing  large-scale  private  and  public  capital: By  de-risking  investments  and  demonstrating commercially viable models, IGFF is expected to crowd in over USD 2.8 billion in total investments. This multiplier effect ensures IGFF's financing structure delivers high-leverage, system-level transformation of clean energy markets.
+- Institutionalizing green finance practices: IGFF mainstreams climate risk management within India's financial architecture by developing green lending taxonomies, credit appraisal frameworks, and disclosure tools  aligned  with  India's  Business  Responsibility  and  Sustainability  Reporting  (BRSR)  standards.  This systemic shift is consistent with the global agenda led by the Network for Greening the Financial System (NGFS), which emphasizes steering capital toward sustainable outcomes and managing climate-related financial risks. (Annex 2, Section 3.1, Para 43).
+
+## Climate Results/Benefits
+
+9. The IGFF is designed to deliver transformative climate impacts by addressing mitigation needs and supporting adaptation as a co-benefit. A key outcome of the facility is the mitigation of greenhouse gas emissions , with support for 836 MW of new renewable energy capacity expected to reduce 50 million metric tons of CO2e over its lifetime. By expanding clean energy access to underserved regions, the program will also enhance energy security , reducing reliance on imported fossil fuels and stabilizing power supply for critical sectors. Beyond environmental benefits, IGFF is  set  to  generate over  139,234  green  jobs ,  fostering  economic  growth  while  improving  air  quality  and  reducing respiratory  diseases,  ultimately  lowering  healthcare  costs.  Furthermore,  IGFF  will  help  build  internal  systems  and capacities for 5 DFIs and improve uptake of green lending and climate risk management across another 10 DFIs, promoting the greening of India DFIs. IGFF financing will accelerate the scaling of five emerging clean energy technologies ,  enabling economies of scale that drive cost reductions and enhance long-term commercial viability. Through these efforts, IGFF will play a vital role in strengthening climate resilience and advancing the clean energy transition.
+
+## Paradigm Shift
+
+10. Catalyzing Financial System Transformation: IGFF is designed to address deep-rooted structural barriers in  India's clean energy finance landscape by introducing catalytic financial instruments and mainstreaming climatealigned practices across DFIs. Through concessional capital, long-tenure loans, and a dedicated RSF, the program unlocks private sector financing for high-risk sectors like RTC renewables, green hydrogen, and MSME-scale CBG. Technical assistance further equips DFIs with the tools and frameworks needed to assess, structure, and manage climate-aligned investments, institutionalizing green lending and setting the stage for long-term capital flows. By aligning DFI operations with India's Business Responsibility and Sustainability Reporting (BRSR) framework, IGFF helps embed sustainability into the core of India's financial system.
+
+<!-- image -->
+
+A
+
+<!-- image -->
+
+A
+
+<!-- image -->
+
+11. Driving Scalable, Inclusive Market Transitions: IGFF serves as a demonstration platform for replicable, bankable models in emerging sectors that are otherwise seen as too risky-spurring commercial participation and reducing reliance on concessional finance over time. The facility's gender-responsive design actively supports womenled energy enterprises and inclusive product development, ensuring the benefits of the clean energy transition reach underserved groups. By bridging viability gaps, crowding in private finance, and enabling systemic change across energy, transport, and agriculture, IGFF contributes directly to India's 2070 net-zero target and 2030 NDCs. With a projected mitigation impact of 50 MtCO ₂ e and a lasting shift in how green finance is deployed, IGFF positions itself as a foundational intervention in India's low-carbon, climate-resilient development pathway.
+12. The core intent is not to create long-term dependence on concessional finance but rather to de-risk markets, build  institutional  capacity,  and  catalyze  private  investment  in  currently  underfunded  and high-impact  clean  energy segments.  In  sum,  IGFF's  exit  is  premised  on  transformation-both  of  the  financial  sector  and  the  clean  energy ecosystem.  GCF  support  is  catalytic,  not  permanent.  By  shifting  DFIs'  lending  norms,  expanding  financing  to underserved regions and sectors, and crowding in private capital,  the  facility  will  lay  the  institutional  and  financial foundations for sustained, market-driven climate investment across India.
+
+<!-- image -->
+
+## PROJECT/PROGRAMME INFORMATION
+
+- B.1. Climate context (max. 1000 words, approximately 2 pages)
+
+## Emissions context for the energy transition
+
+13. India's rapid economic growth has led to a substantial increase in greenhouse gas emissions, with net emissions nearly doubling between 1994 and 2020, driven by the energy sector. Between 1994 and 2020, total CO2e emissions rose by 144%, while net emissions, including the land use, land use change, and forestry sector as a carbon sink, increased by 98%. Between 1850 and 2019, India accounted for only 4% of global emissions, and its per capita emissions, at 2.48 tCO ₂ per person, are the lowest in the G20. The energy sector, including fossil fuel consumption and fugitive emissions, is the largest source of GHG emissions in India. Within this, electricity production alone accounts for 40% of national emissions, making it the highestemitting category, followed by road transportation at 9%. While emissions are growing, India's historical per capita emissions are among the lowest globally, highlighting its minimal contribution to climate change.
+14. Energy sector emissions are driven by a heavy dependence on fossil fuels. India's energy supply relies on three primary fuels: coal, oil, and solid biomass, which collectively account for over 80% of the country's energy demand. Coal plays a dominant role in electricity generation and industrial expansion, maintaining its position as the largest single energy source. Oil  consumption  and  oil  imports  have  also  surged  due  to  increased  vehicle  ownership  and  road  transportation  demands. Dominated by road transport, with significant contributions from railways, aviation, and maritime transport, the transport sector contributes about 13% of the total GHG emissions.  Industry contributes approximately 15% of overall emissions, primarily driven by energy-intensive processes in sectors such as cement, steel, chemicals, and other manufacturing industries. Although the use of biomass, primarily fuelwood, is decreasing as a share in the energy mix, it remains a prevalent fuel for cooking. Despite efforts to expand the use alternatives in rural areas, a significant portion of the population, approximately 660 million people, still rely on traditional cooking fuels, as reported by the International Energy Agency. 4
+15. India's  energy  transition  is  increasingly  challenged  by  climate  change,  with  rising  temperatures,  erratic monsoons, and extreme weather events disrupting power generation, agriculture, and water security. The increasing unpredictability of the monsoons in India due to climate change poses a serious risk to food security and water availability. 5 Floods represent the largest source of annual disaster-related losses in India, with an estimated impact of USD 7 billion on the GDP annually. India's extensive coastline, spanning over 8,000 km, is characterized by flat coastal terrain, a shallow continental shelf, and high population density, making it highly susceptible to the adverse impacts of cyclones and related hazards. These events also significantly impact power generation and related infrastructure, and agricultural yield. For instance, the rising trend of increasing temperatures and heat stress can significantly lower the efficiency of solar cells, thereby reducing the overall power
+
+<!-- image -->
+
+4 Energy in India today (IEA, 2021)
+
+5  The Hindu: Energy and Environment (2023)
+
+<!-- image -->
+
+B
+
+<!-- image -->
+
+B
+
+<!-- image -->
+
+output of solar panels, and reduce the lifecycle of batteries. 6  Extreme weather conditions like droughts can severely limit the availability of biomass feedstock (such as agricultural waste), which is essential for biogas production. With increasing climate change, energy requirements in the residential, commercial, and agricultural sectors in India are expected to undergo significant changes- with a large, forecasted increase in the need for space cooling and heating, as well as for water pumping.
+
+16. Critical air pollution levels in India call for urgent deployment of cleaner energy. Emissions from thermal power plants, tail pipe emissions from vehicles, industrial emissions, and the burning of wood and dirty fuels (e.g. dung) for cooking and heating are some of the main causes of toxic levels of air pollutants such as ground-level ozone, particle pollution (also known as particulate matter, including PM2.5 and PM10), carbon monoxide, sulfur dioxide and nitrogen dioxide. The capital city, Delhi, ranks as one of the most polluted capital cities in the world. Further, another 62 Indian cities are in the top 100 most polluted cities list on a regular basis. 7
+17. Summary of physical climate risks in India. India faces significant climate risks driven by rising temperatures, shifting precipitation patterns, hydrological variability, and extreme weather events, leading to disruptions in livelihoods, infrastructure, and economic stability.
+- Temperatures are rising rapidly, with average annual mean temperatures increasing by 0.62°C per century since 1901, and maximum temperatures rising even faster at 0.99°C per century. The northern, central, and eastern regions have experienced the sharpest warming over the past three decades, and projections indicate temperatures could rise by up to 4.5°C by 2090 (RCP8.5 scenario).
+- Shifting precipitation patterns pose additional risks. While total monsoon rainfall has remained stable over the long term, recent decades have seen a 27% increase in dry spells (1981-2011 vs. 1951-1980) and a 75% rise in extreme rainfall events over central India (1950-2015). Certain states-Bihar, Meghalaya, Nagaland, West Bengal, and Uttar Pradesh-have seen significant declines in monsoon rainfall, contributing to drought risks and agricultural stress.
+- India ranks among the highest disaster-prone countries globally (32nd out of 191 in the INFORM Risk Index), with high exposure to floods, cyclones, and droughts. Extreme floods that were once 1-in-100-year events are now expected to occur every 25-50 years, with the Indo-Gangetic Basin-especially Bihar, Uttar Pradesh, and West Bengalfacing the highest projected population impact. Rising temperatures are also intensifying heatwaves, with frequency projected to increase to 2.5-3 events per season by late century (RCP4.5 scenario), particularly along India's west coast. Droughts are becoming more frequent, especially in the Indo-Gangetic Plain, where what was previously a 1-in-100-year drought is expected to occur every 40-50 years under 1.5°C-2°C warming and every 20 years under 3°C warming. Similarly, cyclones along India's east coast are increasing in frequency and intensity, with Tamil Nadu, Andhra Pradesh, Odisha, and West Bengal most affected (refer to Annex 2, Appendix 1 for a detailed discussion on India's physical climate risk profile and Section 1.3 for a synthesis of climate risk in relation to India's energy security).
+
+## Sector outlook
+
+18. Recognizing  the  importance  of  the  energy  transition,  India  has  made  ambitious  commitments  to  reduce emissions and scale up clean energy deployment. India's NDCs commit to reduce the emissions intensity of its GDP by 45% by 2030 and ensure that 50% of installed electricity capacity is from non-fossil fuel sources. In its Long-Term Strategy, India targets net-zero emissions by 2070, and the National Electricity Plan aims to install 500 GW of non-fossil fuel power capacity by 2030 (refer to Annex 2, Appendix 2 for further details on India's climate strategies, action plan, and relevant sectoral programs). These commitments have been accompanied by notable progress in expanding renewable energy capacity and advancing policy frameworks. These include:
+- Rapid expansion of renewable energy. Since 2017, renewable capacity additions have outpaced those from coal, signaling a strong shift towards clean energy adoption. Solar energy has led this transformation, growing from less than 1 GW in 2011-12 to over 81 GW by 2023, with a compounded annual growth rate (CAGR) of approximately 50%. 8
+
+6
+
+According to a Solar PV manufacturer's datasheet, for every degree above 25°C, the maximum power of the solar panel falls by 0.258%. Source: https://www.greentechrenewables.com/article/how-does-heat-affect-solar-panel-efficiencies and https://www.greentechrenewables.com/article/how-does-temperature-affect-battery-performance
+
+7 Projected air quality and health benefits from future policy interventions in India. (Chen, K. et al., 2019)
+
+8  Bloomberg NEF, 'Financing India's 2030 renewables ambition', 2022.
+
+<!-- image -->
+
+B
+
+<!-- image -->
+
+- Government programs and policy tools have been adopted to scale up renewable energy , such as waivers of interstate  transmission  charges  for  solar  and  wind  energy,  Uniform  Renewable  Energy  Tariff  (URET),  and  Renewable Purchase Obligations (RPO) &amp; Renewable Consumption Obligations (RCO), resulting in scale up of renewables.
+- Schemes to improve industry, transport and agriculture emissions. Efforts  are  being  made  to  increase  energy efficiency in the industrial sector (e.g. Perform, Achieve and Trade (PAT) scheme), promote renewables deployment in the agriculture sector (e.g. PM-KUSUM)) and scale up e-mobility to reduce emissions in the transport sector (e.g. Faster Adoption and Manufacturing of Hybrid and Electric Vehicles (FAME) scheme).
+19. India's energy needs are expected to substantially increase to meet its developmental priorities. As a developing nation with low per capita energy consumption, expanding energy access is needed to power rural and urban infrastructure, support industries, and meet the growing energy demand of a rapidly modernizing population. The middle-income class is a major consumer of energy, and constitutes a substantial 31% of the population, with projections indicating it could reach 38% by 2031 and 60% by 2047. 9  With per capita energy consumption increasing as incomes grow, India's total energy demand is rising rapidly. For the IEA, this growth in demand positions the country as a major driver in global energy consumption. 10  Under current policies, India's overall emissions are projected to rise beyond 2030, peaking between 2035 and 2040. According to BloombergNEF's baseline assessment, aligned with a 2.6°C global warming scenario, India's energy-related emissions are projected to increase by 21% between 2022 and 2050, driven primarily by rising energy demand in the industrial sector. While power sector emissions are projected to reduce, this is based on the assumption of increasing energy transition at the speed and scale envisioned in India's policies and targets, which will only be realized if financing for emerging clean energy technologies and hard-to-abate sectors is accelerated.
+20. The current momentum on the energy transition will not keep pace with demand. India initially set a goal of reaching 175 GW of renewable energy capacity by 2022 and 450 GW by 2030 as part of its climate commitments. By February 28, 2023, the country had reached 169 GW. In 2022, this target was revised to 50% renewable power and 500 GW of renewable energy on the system by 2030. Renewable energy capacity installations have been increasing, with 2023-24 marking a record addition of 18.48 GW-a 21% rise from the previous year-driven primarily by solar, which contributed 12.78 GW. 11  Despite this ambition, India remains behind schedule. A further 82 GW of renewables are under construction, and 41 GW in the process of tendering. 12 To achieve the target, currently installed capacity and capacity under construction would need to more than double over six years, and to achieve the 2040 target, it would have to more than double again over the following decade. 13
+21. While  utility-scale  RE  installations  continue  to  play  a  crucial  role  in  meeting  India's  2070  net-zero  target, achieving broader clean energy access and economy-wide decarbonization requires complementary solutions that enhance grid stability, improve reliability, and reduce fossil fuel dependence in high-emitting sectors. RTC renewables are essential for electrifying industrial sectors, ensuring that energy-intensive manufacturing and processing units can shift away from coal and other fossil-based power sources. They also provide firm, dispatchable power in rural and underserved areas, expanding reliable energy access where grid infrastructure is weak. Scaling green hydrogen production is needed to decarbonize emissions-intensive, hard-to-abate industries, such as steel, cement, and chemicals, where direct electrification is not feasible, helping these sectors transition away from fossil fuels. CBG and electric vehicle (EV) expansion offer low-carbon alternatives to oil-based transportation.  CBG provides a greener alternative to natural gas, supporting both industrial applications and heavy transport  decarbonization.  Simultaneously,  these  advancements  must  address  vulnerabilities  in  regions  and  sectors  where energy access and climate risks intersect most critically with livelihood security. For instance, rural areas face persistent energy access challenges, with unreliable electricity, voltage fluctuations, and weak last-mile connectivity, especially in North-Eastern regions  with  limited  renewable  potential.  Hence,  expanding  the  scope  of  India's  clean  energy  transition  requires  targeted interventions that can address these challenges while broadening access to clean energy for industrial applications and rural livelihoods in agriculture and allied sectors. (for more details, please refer to Annex 2, Section 2.1). 14
+
+9 How the middle class will play the hero in India's rise as world power (The Economic Times, 2023)
+
+10 Energy in India today (IEA, 2021)
+
+11  Business Standard, 'India adds record 18 GW renewable energy capacity in FY24, shows data', 2024.
+
+12 Renewable Energy (Invest India, 2023)
+
+13 Government declares plan to add 50 GW of renewable energy capacity annually for next 5 years to achieve the target of 500 GW by 2030 (Ministry of New and Renewable Energy, 2023).
+
+14  CEEW, 'India Residential Energy Survey (IRES) 2020', 2020.
+
+<!-- image -->
+
+## GREEN CLIMATE FUND FUNDING PROPOSAL V.8.0 | PAGE 9
+
+<!-- image -->
+
+B
+
+22. Key sectors and technologies must be targeted to accelerate the energy transition. Supporting India's clean energy transition  requires  a  dual  focus  on  diversification  and  deep  decarbonization  interventions,  while  simultaneously  leveraging opportunities  to  promote  job  creation,  livelihood  security,  and  an  improved  quality  of  life. The  following  are  key  sectoral opportunities and areas for intervention to enable this transition:
+- Electricity  production ,  accounting  for  approximately  40%  of  national  emissions,  represents  the  highest  priority  for intervention. Accelerating the transition to renewable energy technologies and expanding energy storage capacity are critical. 15
+- Road  transportation ,  contributing  9%  of  total  emissions,  also  offers  significant  opportunities  for  decarbonization. Widespread vehicle electrification and robust power sector decarbonization could prevent 13,300 premature deaths in 2030 and 16,700 in 2040, saving India USD 10.3 billion and USD 19.1 billion, respectively, in avoided costs. 16
+- Hard-to-abate industries such as iron, steel, and cement-which rely heavily on fossil fuels for high-temperature heatdemand tailored decarbonization strategies. For these sectors, solutions like green hydrogen production, carbon capture and storage, and electrification where feasible must be prioritized to reduce emissions without compromising industrial output.
+- Agriculture sector , with 98% of its energy consumption from electricity to power various applications in agriculture and allied sectors, coupled with its significant role in the rural and national economy, presents a crucial opportunity for targeted clean energy interventions. This includes clean energy generation from diverse sources such as solar, wind, and biomass to power on- and off-farm applications in agriculture and allied sectors.
+23. India's  technology  needs assessment (Section 2.2 and 4 in Annex 2) identified key areas where renewable energy solutions could have the highest impact for the four sectors above. Following an extensive evaluation process as part of this funding proposal, ADB prioritized six key technologies based on their market potential, alignment with India's climate goals, and ability to address existing barriers: RTC renewable energy, compressed biogas, green hydrogen, EV infrastructure, off-grid solar pumps, and DRE systems . The selection process was validated through consultations with DFIs, who provided insights into sectoral financing gaps and policy challenges. The key rationale for selection of these technologies are as follows:
+- RTC renewable energy combines solar/wind with energy storage (typically battery or pumped hydro) to provide 24/7 clean energy and mitigate intermittency challenges inherent in solar and wind power. It is aligned with the National Solar Mission and supported by policy frameworks such as the Electricity Rules of 2021 , which recognize solar  as  must-run,  and  competitive  bidding  guidelines  issued  in  2020  for  RTC  procurement.  Despite  commercial availability, it still requires concessional support to offset high storage costs and bridge the tariff gap with coal.
+- CBG offers a solution for both clean energy generation and waste management. Under the SATAT initiative and National Biofuels Policy , India targets 5,000 CBG plants by 2024. However, uptake has been low due to weak market structures, unguaranteed offtake, and limited financing. The GCF-funded facility will support risk-sharing mechanisms and infrastructure to scale up deployment, particularly by supporting MSME developers and ensuring financial viability. Guarantees are particularly critical to address volatile prices and implementation risks that inhibit private financing.
+- Green hydrogen is in the demonstration and early commercialization phase in India, with production costs still significantly higher than fossil-based alternatives. The National Green Hydrogen Mission, launched in 2023 , lays the foundation for making India a global hub for green hydrogen, including support for electrolyser manufacturing and renewable energy use in production. However, current subsidies remain insufficient to make it competitive (USD 3.5-5 per kg vs. breakeven below USD 2 per kg). GCF's concessional finance is essential to bridge this viability gap and support infrastructure development, supply chains, and policy alignment necessary for early market formation.
+- India  has  strong  policy  backing  for  EV  adoption  through  the  FAME  scheme  and  the  National  Mission  on Transformative  Mobility. However,  consumer  finance  for  EVs  remains  limited  due  to  high  perceived  risks,  higher interest rates, and short loan tenors from banks and non-banking financial companies (NBFCs). Charging infrastructure also faces low investor interest due to demand uncertainty. The GCF's concessional loans will reduce borrowing costs
+
+15  Ministry of Power, 'National Framework for Promoting Energy Storage Systems', 2023.
+
+16 The International Council on Clean Transportation, 'Understanding the air quality and health impacts of large-scale vehicle electrification in India', 2021.
+
+<!-- image -->
+
+B
+
+<!-- image -->
+
+and support EV infrastructure build-out, accelerating adoption in high-potential but underserved markets such as twoand three-wheelers in peri-urban and rural areas.
+
+- Despite schemes such PM-KUSUM, solar pump adoption remains low due to limited access to finance and high repayment risk among smallholder farmers. Weak rural banking infrastructure further impedes credit delivery. GCF's concessional finance will be deployed to target these barriers through low-cost capital and technical assistance, enabling DFIs to develop products tailored for underserved rural borrowers. Concessional finance allows solar irrigation solutions to be deployed in energy-poor regions where private capital remains hesitant.
+- DRE systems are key to reaching rural and underserved regions that lack reliable grid access. Despite their maturity, DRE projects remain 'hard-to-finance' due to small scale, limited credit histories of borrowers, and perceived revenue risks. The IGFF, with GCF support, offers tailored instruments to overcome these financial challenges and operational barriers. It will fund aggregator models, improve DFIs' capacity to assess small-scale investments, and offer concessional debt to catalyze DRE solutions where market financing has not reached.
+
+## Financing context
+
+24. Financing  remains  a  critical  barrier  to  the  scale-up  of renewables. The  BloombergNEF estimates  that  India  requires  an annual  investment  of  USD  293  billion  to  meet  its  solar  and  wind targets  including  storage  and  transmission  between  2020  and 2030. 17  In 2023, India invested only USD 22.6 billion in renewables, which is one-third of the annual investment needed to align with the Net Zero Scenario.
+25. Costs of renewable energy generation in India have dropped , financing flows for renewable energy have increased, and there is increasing private sector participation and investment in the sector. India stands out globally with some of the lowest levelized costs of electricity for solar energy, ranging from USD 25-43 per MWh, and onshore wind energy, ranging from USD 32-51 per MWh, making them significantly cheaper than in most other countries, while at the same time, the risk profiles for utility-scale projects have improved dramatically , with 90% of solar projects achieving investment-grade
+
+<!-- image -->
+
+ratings in 2020. 18  Despite this, a financing gap exists, with solar and wind projects alone requiring USD 28 billion annually, but only securing USD 17.4 billion in asset financing between 2020 and 2021. 19
+
+26. Clean energy financing must expand beyond large-scale, viable projects to emerging clean energy technologies. In 2021-22, clean energy attracted almost half of the total tracked green finance flows for India at USD 23.8 billion, followed by energy efficiency and clean transportation. Most of these funds-54% (USD 13 billion)-were allocated to solar projects, including both solar PV and rooftop PV, largely driven by growing demand from commercial and industrial consumers. While this represents a 75% increase compared to 2019-20, the growth has been primarily fueled by investments in large-scale solar projects that have already achieved commercial maturity. On-shore wind and hydro projects accounted for 17% and 16% of clean energy financing respectively. In contrast, integrated renewable energy technologies such as RTC solutions received only 13% of total clean energy flows, while biofuels, offshore wind, and other emerging technologies, including energy storage, accounted for merely 1% (INR 15 billion or USD 0.2 billion). 20  This imbalance highlights a critical gap-while utility-scale technologies continue to attract significant investment, underfunded sectors such as battery storage, essential for grid stability, and integrated DRE solutions, crucial for rural electrification and climate resilience, remain largely overlooked. Research and development across all sectors
+
+17 BloombergNEF. (2023). $223bn investment needed for India to meet 2030 wind and solar goals. BloombergNEF.
+
+18  India Renewables Financing (bbhub.io)
+
+19  Optimal\_mix\_report\_2029-30\_FINAL.pdf (cea.nic.in)
+
+20 Landscape of Green Finance in India 2024 - CPI
+
+Figure 3: Financing Renewables in India, 2011-2022
+
+<!-- image -->
+
+B
+
+<!-- image -->
+
+remain minimal, even though it is essential for fostering innovation and scaling next-generation technologies. 21  (Annex 2, Section 2.3)
+
+27. Financing is also affected by the range of interrelated challenges that slow progress on clean energy despite ambitious targets.  For  instance,  delays  in  finalizing  Power  Purchase  Agreements  (PPAs)  (Annex  2,  #25)  create  significant  financial uncertainty and impede project execution.  S uch delays have led to 34.5 GW of projects remaining uncommissioned as of June 2024,  with  approximately  12.5 GW  of  solar  projects  stalled  due  to  domestic  manufacturing  bottlenecks. Grid  stress  further complicates the picture, with existing transmission infrastructure struggling to manage the variable output of renewable sources and resulting in regional imbalances that affect reliability. Additionally, the sector faces financing hurdles, including short loan tenors  and  rising  lending  rates,  which  are  misaligned  with  the  long-term  capital  requirements  of  renewable  projects.  These barriers, compounded by operational and policy challenges that limit the deployment of complementary technologies such as energy storage,  underscore  the  urgent  need  for  innovative  financing  mechanisms  and  regulatory  reforms  to  accelerate  the renewable energy transition (Annex 2, Section 2.3 and Section 2.4).
+28. A diversified approach to clean energy financing is especially critical for regions with limited renewable potential. While Rajasthan,  Gujarat,  and  Tamil  Nadu account  for  over  70%  of  India's  solar installations and 93% of wind capacity, other regions-particularly the Northeastern  and  Eastern  states-lag significantly. As per MNRE report 22 , the Northeast  contributes  just  0.21%  of total installed renewable capacity, and the  East  is  only  1.43%,  compared  to 26.7%  in  the  North,  32.66%  in  the West,  and  38.92%  in  the  South.  This uneven distribution has led to disparities in electrification and subsidy uptake,  with  RE-rich  states  benefiting
+
+<!-- image -->
+
+disproportionately. Punjab, for instance, has implemented equitable subsidy distribution models, while lower-performing states have prioritized grid connections for middle- and high-income areas, leaving rural regions in Bihar, Jharkhand, and Odisha among the most energy-poor in the country. Inconsistent power supply remains a major challenge, with many households still dependent on traditional fuels for cooking and productive uses. In the Northeastern states, power supply is further disrupted by frequent natural disasters-floods, earthquakes, and landslides-which damage infrastructure and increase energy costs. Even where grid infrastructure exists, high transmission and maintenance costs drive up electricity prices, making energy access unaffordable for many (ref. Annex 2, Section 2.1, para 24). Hence, expanding the role of decentralized renewables, storage, and cleaner fuel alternatives is essential to improving energy reliability, affordability, and access in these regions aligned with India's clean energy and development priorities.
+
+29. DFIs are a critical, but underutilized source of financing for emerging technologies. While  domestic financing makes up a lion's share of India's green finance for the energy sector- 85% in 2019 and 2020 - public sector financing constituted only 19% of these flows, with DFIs contributing no more than 10%.23 And yet DFIs remain a critical actor, especially for financing of emerging clean energy technologies which may not be viable with market rate financing.  DFIs are essential because they have  a  higher  risk  tolerance  than  commercial  banks,  access  to  long-term  capital,  a  public  mandate  to  support  national development goals, and the ability to blend concessional and market-based finance, making them uniquely positioned to finance
+
+21  Renewables Investment Trends in India-June\_2022.pdf
+
+22  Ministry of New and Renewable Energy (MNRE), India. State-wise (location based) installed capacity of Renewable Power as on 31 Dec 2024
+
+23 Climate Policy Initiative, 'Landscape of Green Finance in India 2022' , 2022.
+
+<!-- image -->
+
+B
+
+<!-- image -->
+
+early-stage, high-impact clean energy investments that private lenders find too risky (refer to Annex 2, Section 3.2, para #48 for further details on their unique advantage compared to other financing channels). Debt financing remains the dominant instrument for financing clean energy, with DFIs participation is confined to balance sheet financing and low-cost project debt, whereas commercial  financial  institutions  remain  dominant  for  project-level  market-rate  debt.  DFIs  already  offer  some  of  the  lowest financing rates for renewable energy projects compared to private banks. Improving access to concessional financing can enable them to increase their green lending, and to further reduce rates for technologies that have yet to achieve commercial viability.
+
+30. Limited  technical  expertise,  awareness,  and  inadequate  systems  within  DFIs  hinder  their  ability  to  identify, appraise and finance projects that involve emerging clean energy technologies. A recent market 'roadshow' by RMI found that banks' traditional project finance frameworks are generally too rigid to fund first-of-a-kind hydrogen facilities. Developers complained that credit committees demand analogies to past projects. In the absence of proven models, lenders struggle with assessing  offtake  risk,  technology  performance,  and  revenue  stability  for  hydrogen  ventures. 24 USAID's  SAREP  program identified barriers to financing off-grid rural RE projects, citing small ticket sizes, high transaction costs, and unfamiliar risk profiles that  deter  traditional  financiers. 25 Similar issues are seen with other emerging sectors: electric mobility and battery storage financing  in  rural  or  peri-urban  contexts,  compressed  biogas  projects,  which  involve  feedstock  supply  risks  and  complex technology - areas outside most DFIs' prior experience. Financial institutions remain hesitant to lend to emerging technologies (e.g. solar mini-grids and off-grid clean energy projects) due to a rigid credit appraisal templates and inadequate risk assessment methodologies which results in delays or rejection of innovative projects. Most DFIs employ standardized project finance criteria (debt service coverage ratios, proven cash flows, sponsor track record requirements, etc.) that don't fit innovative projects.
+31. DFIs have fragmented pipelines and fewer projects for emerging clean energy technologies. The disaggregated and fragmented nature of DRE initiatives which are small scale and distrusted widely across the country complicates due diligence costs and processes and makes it harder for DFIs to aggregate and bundle these into a coherent portfolio. CBG projects face similar issues, especially due to variability in feedstock being a major challenge, which means there is little performance data on such projects further exacerbating the perception of risks within the financial sector. Green hydrogen projects are at a very early stage of development, and there is significant variability in maturity, scale and regulations which makes it challenging for DFIs to assess and aggregate. Without dedicated technical assistance, these gaps will continue to constrain the speed, scale, and costeffectiveness of India's clean energy transition.
+32. A lack of standardized green finance taxonomies and evolving climate risk disclosure requirements further hinders DFIs ability to scale up green lending. The absence of a unified green taxonomy and evolving climate risk disclosure requirements have created ambiguity for DFIs in structuring and scaling clean energy investments. IIFCL, for instance, lacks formal policies and targets to evaluate and mitigate its environmental footprint across energy, waste, water, and biodiversityboth in operations and its lending portfolio-despite its net-zero target for 2030 (currently limited to Scope 1 and 2). It also does not  adhere  to  any  sustainability  framework  yet  and  lacks  environmental  and  social  governance  (ESG)  considerations  in procurement, primarily due to reliance on the Government e-Marketplace (GEM) portal 26  NABARD lacks the internal capacity to fully implement its internal green taxonomy, as it is still in the process of tagging its portfolio. It faces challenges in effectively monitoring the impact of its current investments for accurate tagging and lacks the capacity to conduct due diligence to develop a pipeline of projects in emerging sectors that align with its green taxonomy. 27  Some other barriers which were highlighted by DFIs during discussions with ADB include, fragmented decision-making, lack of coordination across stakeholders, and limited exposure to international best practices and frameworks. This gap in knowledge can hinder their ability to support sustainable projects adequately (For a detailed analysis of the target DFIs' current portfolios, targets, capacity gaps, and expressed needs for capacity strengthening, refer to Annex 2, Sections 3.3 and 3.4.)
+33. India's work on climate finance taxonomy is still underway (only in 2024-25 did the government initiate a taxonomy for climate finance, and RBI in 2024 introduced draft guidelines on climate-related risk disclosure for banks and FIs) but when it is approved, DFIs will need capacity building to implement it. RBI's draft Climate Risk Disclosure framework (2024) will mandate large banks, NABARD, National Bank for Financing Infrastructure and Development (NaBFID), Small Industries Development
+
+24 https://rmi.org/four-ways-to-jump-start-clean-hydrogen-finance-in-2025
+
+25  https://sarepenergy.net/wp-content/uploads/2022/06/RE-Finance-Report.pdf#:~:text=,RE%20projects%20in%20India
+
+26 ICRA ESG Ratings Limited, 'India Infrastructure Finance Company Limited (IIFCL): Rating assigned', January 2025.
+
+27  from-the-chairman-message.pdf; Stakeholder consultations
+
+<!-- image -->
+
+B
+
+<!-- image -->
+
+Bank of India (SIDBI), etc., to report climate-related risks in governance, strategy, and risk management. (detailed information on current policies in Annex 2 #44, #45). This is a major shift - for the first time, DFIs must internalize climate risk assessment, including physical risks (like projects' exposure to extreme weather) and transition risks. Previously, such analysis was absent from credit appraisals. The regulatory gap meant DFIs didn't price climate risks or integrate resilience. As these guidelines become operational, DFIs will need new skillsets (climate scenario analysis, GHG accounting, etc.). Without capacity building, compliance and the real benefit - improved risk management leading to more sustainable lending - might not materialize.
+
+## Complementarity and coherence with GCF programs
+
+34. Complementing GCF's clean energy programs in India. From a sector and thematic perspective, IGFF complements and builds on existing programs targeting clean energy and low-carbon transport. The Green Guarantee Company (FP197) supports the de-risking of climate investments through guarantees; IGFF complements this by offering risk-sharing tools tailored specifically for India's domestic market with a focus on compressed biogas (CBG) and MSME developers, a market segment constrained by high perception of risk by financial institutions despite significant potential. IGFF also reinforces the objectives of the India E-Mobility Financing Program (FP186) by addressing financing and infrastructure gaps in rural and peri-urban areas. While FP186 focuses on building out India's urban EV ecosystem, IGFF enables electric mobility solutions for smaller operators and underserved regions, expanding the reach of transport decarbonization efforts. In the area of infrastructure, IGFF aligns with Climate Investor One (FP099) and Climate Investor Two (FP190), which mobilize private investment into renewable energy. IGFF's support for decentralized solar and RTC renewable energy systems contributes to the reliability and sustainability of energy infrastructure.
+35. Enhancing GCF's engagement with DFIs. IGFF focuses on strengthening climate finance systems by expanding the role  and  capacity  of  DFIs.  While  previous  GCF  programs  such  as  FP084  (implemented  with  NABARD)  focused  on  rural decentralized energy and livelihood support, IGFF broadens this engagement to include a network of DFIs, such as REC, IIFCL, and NABARD itself, each with specialized mandates in infrastructure and rural finance. It will work directly with DFIs to channel long-term concessional finance, build internal systems for climate risk assessment, and strengthen the pipeline of investable clean energy projects.
+36. Supporting GCF's priorities in India. IGFF is fully aligned with GCF's India Country Programme. It will support the mainstreaming of emerging clean energy technologies that remain underserved by current programs such as RTC renewable energy with storage, green hydrogen for industrial use, and compressed biogas for sustainable waste management. The facility aims  to  crowd  in  $2.8  billion  in  private  and  public  capital  and  is  well  aligned  with  GCF's  priority  to  catalyze  private  sector engagement, especially in high-impact, underfinanced sectors. At a systems level, IGFF supports institutional reform and capacity development across five DFIs, while promoting the adoption of green lending standards and climate risk frameworks throughout India's broader financial ecosystem. It also prioritizes inclusivity by targeting regions such as Northeast India that are currently underserved  by  energy  finance,  and  by  integrating  gender-responsive  financing  to  ensure  women-led  enterprises  and communities can participate meaningfully in the clean energy transition.
+37. ADB's continued engagement in India. ADB has a strong and long-standing energy sector engagement in India, aligned with the Government's priorities for sustainable, inclusive, and climate-resilient growth. Under its 2023-2027 Country Partnership Strategy (CPS), ADB supports structural transformation through clean energy investments, power sector reforms, and targeted assistance to lagging states. Over the past five years, ADB has committed over US$ 2.5 billion in sovereign energy sector lending, spanning generation, transmission, energy access, and energy reforms. Together, these efforts reflect ADB's dual-track approach of combining infrastructure finance with institutional and regulatory strengthening, an approach that directly complements the objectives of the IGFF.
+38. ADB's PBL programs play a catalytic role in unlocking structural reforms essential for scaling clean energy and mobilizing private capital. The ongoing Power Sector Reform Policy Based Lending (PBL) targets two key reform pillars: (i) enabling deeper integration  of  VRE,  including  RTC  power  and  energy  storage,  into  national  and  state  grids;  and  (ii)  improving  the  financial performance,  corporate  governance  and  consumer  service  quality  of  distribution  companies.  The  PBL  also  supports  the implementation of the Revamped Distribution Sector Scheme (RDSS), including smart metering, loss reduction, and resultslinked  fiscal  support,  the  scale-up  of  PM-KUSUM,  through  solarization  of  agricultural  feeders  and  incentive  frameworks  for distributed  RE.  Complementary ADB technical assistance supports MNRE and state agencies in developing national green
+
+<!-- image -->
+
+B
+
+<!-- image -->
+
+hydrogen standards, establishing hydrogen hubs in Gujarat and Maharashtra, and designing policy roadmaps for green steel, battery storage, and solar irrigation. These upstream reforms help create bankable policy frameworks for technologies directly supported by IGFF.
+
+39. The IGFF builds on this strong policy foundation by translating upstream reforms into institutionalized climate finance systems through Output 2.3. Specifically, IGFF supports DFIs in adopting green lending taxonomies, climate risk disclosure frameworks, and gender-responsive financing standards, initiatives directly aligned with national regulatory developments such as India's emerging climate finance taxonomy and the RBI's draft climate risk guidelines. By anchoring these practices within DFI operations and enabling inter-agency coordination, IGFF contributes to a green finance architecture that is scalable, credible, and private-sector ready. The facility also creates a feedback loop between practice and policy: lessons learned from IGFF implementation will inform ongoing policy dialogue and regulatory refinement, helping government and financial institutions adapt frameworks based on real-time evidence from subproject implementation. Through targeted policy dialogue, technical toolkits, and embedded TA support, Output 2.3 serves as a key delivery mechanism for translating ADB's broader reforms, such as those supported under the PBL into long-term institutional transformation within India's financial system.
+
+## B.2 (a). Theory of change narrative and diagram (max. 1500 words, approximately 3 pages plus diagram)
+
+40. The high-level vision of the program is to accelerate India's clean energy transition by institutionalizing green lending practices within DFIs and broader financial institutions. By expanding access to concessional finance, risk-sharing mechanisms, and  key  financial  and  risk  management  tools  and  methodologies,  IGFF  aims  to  catalyze  large-scale,  gender-responsive investments in emerging clean energy technologies, while transforming the financial ecosystem to support long-term sustainability and inclusion.
+41. Building on this vision, the program's impact can be articulated as follows: IF India's DFIs have access to concessional finance and enhanced technical capacities to design and implement financing products for emerging clean energy technologies, and if project developers  and private/public financial institutions are equipped to access climate finance, THEN the India Green Finance Facility (IGFF) will catalyze large-scale investments in clean energy, mobilizing public and private capital that contributes to the reduction of 50 million metric tons of CO ₂ eq. BECAUSE systemic financing barriers are minimized or eliminated, transforming India's financial ecosystem to support a sustainable and inclusive clean energy transition
+42. To realize this vision, IGFF is designed to drive key systemic changes, through two outcomes :
+
+Outcome 1: DFIs deploy concessional finance and risk-sharing mechanisms, enabling them to expand their investment portfolios in emerging clean energy technologies
+
+43. IGFF  enables  DFIs  to  expand  their  green  financing  portfolios  and  scale  up  investments  in  emerging  clean  energy technologies by providing concessional finance and operationalizing a risk-sharing facility (RSF). These mechanisms de-risk investments, enhance the bankability of innovative clean energy projects, and enable DFIs to mobilize greater private sector participation in climate finance. By reducing credit risks and improving access to long-term financing, IGFF strengthens the ability of DFIs to channel capital into emerging clean energy sectors, including RTC renewables, green hydrogen, compressed biogas (CBG), distributed renewable energy (DRE), and electric mobility in rural and peri-urban areas. This is achieved through following two outputs :
+- Output 1.1: DFIs have secured concessional loans to finance emerging clean energy technologies
+3. o Activity 1.1.1: Design and provide concessional loans to DFIs to finance emerging clean energy technologies. This includes structuring affordable financial products tailored to overcome the high capital costs and extended payback periods associated with emerging clean energy technologies such as RTC renewables with storage, green hydrogen, CBG and DRA in rural areas, ensuring accessibility and scalability for DFIs (see Annex 3 Economic and Financial Analysis).
+- Output 1.2: Risk-sharing facility (RSF) is established to de-risk investments in CBG projects
+5. o Activity 1.2.1: Create RSF to de-risk investments in CBG projects. The RSF provides partial credit guarantees to PFIs to mitigate the high-risk perception of CBG investments, encouraging PFIs to extend credit. By covering a portion of
+
+<!-- image -->
+
+B
+
+<!-- image -->
+
+potential losses, the facility mobilizes private sector investment and facilitates increased capital flow into clean energy ventures.
+
+44. These activities directly respond to systemic financial barriers that hinders investments in clean energy:
+- High capital costs and risk perception: Emerging clean energy technologies, such as CBG, green hydrogen, and energy  storage,  require  significant  upfront  capital  but  face  uncertain  revenue  models  and  technology  risks.  Private lenders  and  commercial  banks  perceive  these  projects  as  high-risk  and  are  reluctant  to  finance  them  without  risk mitigation instruments. By offering concessional finance, IGFF reduces borrowing costs, making clean energy projects more viable and attractive for developers and investors. (refer to Annex 2, Section 2.4, para #36)
+- Limited access to long-term, low-cost finance: India's financial ecosystem is constrained by high interest rates and short loan tenures, making it difficult for DFIs to provide affordable, long-duration loans. Concessional lines of credit inject patient capital, allowing DFIs to extend longer-term financing to projects that require long payback periods. By addressing these financial barriers, IGFF enables DFIs to mobilize private capital, expand lending to clean energy projects, and accelerate India's transition to a low-carbon economy. (refer to Annex 2, Section 2.3)
+
+## Outcome 2:  Project  developers  and  public/private FIs  have  access  to  inclusive  finance  for  emerging  clean  energy technologies
+
+45. To scale up clean energy financing, IGFF will build the institutional capacity of DFIs and PFIs across the country to finance emerging technologies such as green hydrogen, distributed renewable energy (DRE), and compressed biogas (CBG). Through embedded technical assistance, capacity-building, and policy engagement, IGFF will help these institutions originate, structure,  and  monitor  climate-aligned  investments  and  scale  up  the  use  of  risk-sharing  instruments  like  the  RSF.  Through technical  assistance,  policy  engagement,  and  capacity-building,  IGFF  will  enable  these  institutions  to  originate,  structure, appraise, and monitor investments in emerging clean energy technologies, and scale up the use of risk sharing instruments like the RSF.  including those eligible for IGFF's Risk Sharing Facility (RSF).
+46. Support will include tailored technical assistance packages for at least 5 DFIs, over 35 trainings for PFIs and MSMEs, 10 gender-responsive financial frameworks, and the introduction of standardized green lending and climate risk tools across the sector. These efforts aim to embed climate finance principles into institutional practices and financial regulation, catalyzing a broader transformation in India's financial ecosystem. By strengthening the broader financial ecosystem, IGFF ensures that concessional finance mechanisms translate into real-world investments that accelerate India's clean energy transition. This is achieved through the following three outputs and corresponding activities:
+- Output 2.1:  DFIs have enhanced technical capacities to finance emerging clean energy technologies
+4. o Activity 2.1.1: Strengthen DFI capabilities in project preparation, appraisal, and monitoring of IGFF-aligned investments. This  activity  is  central  to  the  effective  implementation  of  IGFF's  credit  lines.  IGFF  will  deliver  long-term  technical assistance to at least 5 DFIs engaged in subprojects, ensuring they can originate, appraise, and monitor emerging clean energy investments in line with IGFF's requirements. Support will include tailored assistance packages delivered by embedded experts, the development of internal appraisal toolkits, safeguards and gender frameworks, M&amp;E systems, and at least 10 structured trainings per DFI. DFIs will also benefit from market assessments and stakeholder workshops to  support  project  pipeline  identification,  risk  management,  and  impact  reporting,  enabling  efficient  and  scalable deployment of concessional finance.
+- Output 2.2:  MSMEs and PFIs have enhanced technical capacities to access credit guarantees through RSF
+6. o Activity 2.2.1: Build capacities of PFIs and MSME project developers in structuring bankable projects and accessing credit guarantees through RSF. PFIs and MSMEs need training to navigate financial structuring, risk assessment, and credit guarantee mechanisms under the RSF. This activity is essential to the effective operationalization of the RSF. It will ensure that participating FIs can utilize the RSF and MSME developers can structure projects that meet financing requirements. IGFF will support the development of risk assessment tools, loan performance monitoring systems, and institutional systems for guarantee issuance. At least 35 training sessions and 5 market assessments will be conducted,
+
+<!-- image -->
+
+B
+
+<!-- image -->
+
+alongside 10 matchmaking events to connect MSMEs with PFIs. These efforts will bridge technical and institutional gaps, build robust project pipelines, and enable credit guarantee-backed lending for CBG.
+
+- Output  2.3:    Public/private  FIs  adopt  tools  and  frameworks  to  scale  up  financing  for  emerging  clean  energy technologies
+- o Activity 2.3.1: Build financial institutions' capacity and internal systems on climate risk management, green lending, and gender-responsive financing. IGFF  will  support  at  least  10  DFIs  with  gap  assessments,  advisory  support,  and develop 5 gender action plans and climate finance toolkits. Over 40 dialogues and workshops will facilitate peer learning, and  2,500  women  will  be  trained  on  accessing  and  managing  green  finance.  Through  targeted  training  sessions, institutions will enhance their capacity for climate risk assessment, standardized green lending, and gender-inclusive financing. Multi-stakeholder dialogues will raise awareness among policymakers, regulators, and financial institutions on aligning financial policies with climate objectives.
+- o Activity 2.3.2 Support dialogues between policy makers and financial institutions on enabling policies on climate risk management, green lending and gender-responsive financing . This activity will enhance awareness among financial regulators, policymakers, DFIs, commercial banks, and industry associations on developing and implementing tools and frameworks that promote green lending and gender-inclusive financing for clean energy projects . IGFF will convene at least two annual policy roundtables with regulators and FIs, publish policy briefs on green finance, and lead consultations to inform regulatory approaches to climate risk and gender-inclusive financing, supporting a system-wide shift in financial practices.
+47. These activities directly address key institutional and social barriers hindering the adoption of green finance:
+48. Institutional  barrier:  Limited  technical  capacity  within  DFIs,  PFIs,  and  MSME  project  developers  on  green financing products and financial practices: Many financial institutions lack expertise in climate risk analysis, concessional finance structuring, and green lending frameworks. Without standardized tools, DFIs and PFIs struggle to assess, manage, and mitigate risks in clean energy projects. IGFF will support to build institutional capacity through technical training, workshops and policy dialogues. (refer to Annex 2, Section 3.1, para #44 and Section 3.4, para #665)
+49. Institutional  barrier:  Fragmented  policy  landscape  and  lack  of  coordination  among  stakeholders: The  clean energy financing ecosystem in India is shaped by multiple regulatory bodies, financial institutions, and government agencies, each with distinct mandates. Overlapping policies, misaligned incentives, and lack of coordination among key stakeholders create inefficiencies, slow policy adoption, and hinder the scalability of green finance solutions. Additionally, the absence of a centralized mechanism  to  harmonize  regulatory  frameworks  results  in  inconsistent  implementation  across  states  and  sectors.  These challenges limit the effectiveness of adoption of standardized tools and frameworks, particularly in gender-responsive financing and green lending space. (refer to Annex 2, Appendix 2)
+50. Social  barrier:  Limited  institutional  focus  on  gender-responsive  finance  and  weak  representation  of  gender considerations  in  financial  sector  policies: Women-led  clean  energy  enterprises  in  India  face  significant  challenges  in accessing finance, often due to unconscious biases in lending practices and a lack of dedicated financial products. Despite women constituting approximately 50% of the population, only about 20% of micro, small, and medium enterprises (MSMEs) are female owned. Additionally, financial institutions often lack sex-disaggregated data, hindering their ability to assess the impact of financing decisions on women and marginalized communities. These barriers limit women's participation in the clean energy sector and impede the growth of women-led enterprises. (refer to Annex 8)
+51. These  institutional  and  social  barriers  are  further  compounded  by  technology-specific  challenges  that  hinder  the scalability and financing of clean energy solutions. While IGFF's interventions aim to address broader financial and policy gaps, each clean energy technology presents unique constraints related to cost, risk perception, infrastructure readiness, and policy alignment. The table below summarizes the key barriers for each technology and the corresponding solutions that IGFF will implement to unlock investment and accelerate deployment.
+
+<!-- image -->
+
+Table 1:  Technology-specific barriers and IGFF's solutions
+
+| Technology                                                                                                                                                                                                         | Key barriers                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             | IGFF's solutions                                                                                                                                                                                                                                                                                                                                            |
+|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Round-the- Clock (RTC) Renewable Energy                                                                                                                                                                            | High capital costs due to integration of battery storage and pumped hydro; weak grid infrastructure affecting power evacuation; limited ancillary service markets; financial institutions hesitant due to uncertain revenue models and DISCOM financial distress. IGFF provides concessional capital to bridge the viability gap and reduce project cost, enabling RTC renewables to compete with conventional power. Long-tenure financing helps align repayment with project cash flows, and institutional capacity- building enhances financial institutions' ability to appraise RTC RE investments. |                                                                                                                                                                                                                                                                                                                                                             |
+| Green Hydrogen High production costs break-even below USD large-scale commercial underdeveloped regulatory limited hydrogen storage and infrastructure; insufficient assessment capacity institutions.             | Concessional capital lowers the cost of early projects and supports infrastructure Technical assistance builds DFI capacity to and structure hydrogen investments. IGFF facilitates knowledge sharing on frameworks and pricing mechanisms, policy alignment and early market development.                                                                                                                                                                                                                                                                                                               | (USD 5-6/kg vs. 2/kg); lack of deployments; frameworks; transport technical among financial stage development. assess also subsidy supporting                                                                                                                                                                                                               |
+| Compressed Biogas (CBG) High interest rates stringent collateral MSME developers; structures with volatile prices uncertainty; banks' project economics lending; logistical feedstock collection limited financial | (12-14%) and requirements for weak market unguaranteed offtake; leading to financial lack of familiarity with causing conservative inefficiencies in and transportation; products tailored for IGFF supports a dedicated $65 million Risk Sharing Facility (RSF) that provides credit guarantees to mobilize lending to MSME CBG developers. The RSF reduces collateral barriers and catalyzes private sector co-financing. Targeted TA also strengthens financial institutions' understanding of CBG lending risks and opportunities.                                                                   |                                                                                                                                                                                                                                                                                                                                                             |
+| Electric Mobility (EVs and Charging Infrastructure)                                                                                                                                                                | Inadequate rural and peri-urban EV charging infrastructure; high upfront vehicle costs; limited consumer access to affordable financing; financial institutions reluctant to lend due to technology unfamiliarity and resale concerns.                                                                                                                                                                                                                                                                                                                                                                   | IGFF expands financing liquidity for DFIs to enter underserved geographies and support EV lending, particularly in rural areas. TA helps design financial products for rural EV users and small fleet operators. Facility resources are used to catalyze investment in charging infrastructure where demand uncertainty has constrained private investment. |
+| Decentralized Renewable Energy (DRE)                                                                                                                                                                               | High upfront costs for smallholder farmers and micro-enterprises; weak rural banking infrastructure; irregular income flows create perceived credit risks; limited awareness of productive- use DRE solutions. of                                                                                                                                                                                                                                                                                                                                                                                        | IGFF improves financing availability for rural DRE sub-projects, enabling DFIs to extend lending into underserved segments. TA supports rural banks and MFIs in structuring DREloans, and strengthens outreach to rural enterprises, enabling scale-up solar-powered irrigation, agro-processing, and other productive-use applications.                    |
+
+52. Beyond these outcomes, IGFF's interventions also generate broader environmental, economic, and social co-benefits. Increased  financing  for  clean  energy  projects  mitigates  air  pollution  and  reduces  carbon  emissions  (co-benefit  1),  directly improving environmental quality. Strengthened channels of financing facilitate greater investment, leading to job creation and economic opportunities (co-benefit 2) in clean energy sectors. The expansion of concessional finance and risk-sharing facilities further  enhances  affordable  access  to  clean  energy  (co-benefit  3),  particularly  for  MSMEs  and  rural  communities,  driving adaptation  co-benefits.  Moreover,  by  embedding  gender-responsive  financing  principles  into  DFI  operations  and  lending practices,  IGFF  promotes women's  leadership  and  participation  within  the  clean  energy  value  chain  (co-benefit  4) , fostering inclusivity in climate finance.
+53. Crucially, these linkages demonstrate interdependencies across activities, outputs, and outcomes, where financial, institutional,  and  policy  interventions  mutually  reinforce  each  other .  Building  capacities  of  DFIs (Activity  2.1.1) and
+
+<!-- image -->
+
+B
+
+<!-- image -->
+
+B
+
+<!-- image -->
+
+providing technical assistance strengthens their ability to manage concessional finance (Output 2.1) and effectively implement RSF (Output 1.2) . This also enhances their overall technical capacity in green lending (Output 2.1) - enabling DFIs to better structure  financial  products,  conduct  due  diligence,  and  monitor  climate  impacts-ultimately  leading  to  more  efficient  and sustainable  green  finance  operations.  Furthermore,  training  programs  on  climate  risk  assessment,  financial  disclosure frameworks, and gender-responsive lending equip FIs in the ecosystem with the necessary tools and methodologies (Activity 2.3.1) to mainstream climate considerations into their decision-making. This, in turn, enhances their operational effectiveness and strengthens their role in shaping policy frameworks.
+
+54. Engaging with regulators, financial institutions, and industry stakeholders ensures that emerging learnings from IGFF's technical and financial interventions are integrated into national discussions on climate finance. Similarly, standardizing green lending criteria and developing policy briefs not only support DFIs in structuring their portfolios but also contribute to regulatory discussions on integrating climate risk and gender considerations into financial decision-making. These interwoven linkages illustrate how IGFF's structured approach strategically addresses financial, institutional, and social barriers, ensuring long-term resilience, scalability, and sustainability in India's green finance ecosystem.
+55. The successful implementation of IGFF's interventions relies on mitigating key risks that could hinder the scaling of green finance. One  major  risk  is  the  limited  participation  of  private  sector  developers  due  to  the  high-risk  perception  of emerging clean energy technologies. Many  financial  institutions  hesitate  to  invest  in  clean  energy  due  to  concerns  over unproven revenue models, long payback periods, and policy uncertainty. This risk is mitigated through concessional lines of credit (Activity 1.1.1) and the risk-sharing facility (Activity 1.2.1) , which reduce the financial exposure of lenders by de-risking their investments. Additionally, training financial institutions (Activity 2.1.1) helps DFIs better evaluate and price clean energy project risks, increasing investor confidence.
+56. Another critical risk is the limited scalability of green financing practices by DFIs , which could hinder the long-term sustainability of concessional lending. If DFIs do not fully integrate climate finance principles into their internal processes, green lending may remain a niche rather than a mainstream financing approach . This risk is mitigated through building capacities of DFIs (Activity 2.1.1) , ensuring that green finance practices become embedded in institutional structures (Activity 2.3.1)
+
+| Assumptions                                                                                                                                                                            | Outputs                        |
+|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------|
+| Stable macroeconomic and financial conditions in India                                                                                                                                 | Output 1.1, 1.2                |
+| Governments, regulators (e.g., RBI), and policymakers maintain supportive policies, streamline regulatory processes, and provide incentives for clean energy transition                | Output 2.1, 2.2, 2.3           |
+| Sustained demand for clean energy technologies and projects, as well as for skilled female professionals and entrepreneurs, ensuring a viable pipeline for financing and participation | Output 1.1, 1.2, 2.1, 2.2, 2.3 |
+| Societal norms and cultural environments support women's participation in technical roles, leadership positions, and entrepreneurial ventures within the clean energy sector           | Output 2.1, 2.2, 2.3           |
+| Private sector stakeholders actively collaborate with DFIs to co-finance clean energy projects                                                                                         | Output 1.1, 1.2, 2.1           |
+
+<!-- image -->
+
+<!-- image -->
+
+B
+
+<!-- image -->
+
+|                                                                                                      | GCF Mitigation Results Area (MRA 1-4)   | GCF Mitigation Results Area (MRA 1-4)   | GCF Mitigation Results Area (MRA 1-4)          | GCF Mitigation Results Area (MRA 1-4)   | GCF Adaptation Results Area (ARA 1-4)        | GCF Adaptation Results Area (ARA 1-4)              | GCF Adaptation Results Area (ARA 1-4)      | GCF Adaptation Results Area (ARA 1-4)   |
+|------------------------------------------------------------------------------------------------------|-----------------------------------------|-----------------------------------------|------------------------------------------------|-----------------------------------------|----------------------------------------------|----------------------------------------------------|--------------------------------------------|-----------------------------------------|
+| Outcome number                                                                                       | MRA 1 Energy generation and access      | MRA 2 Low-emission transport            | MRA 3 Building, cities, industries, appliances | MRA 4 Forestry and land use             | ARA 1 Most vulnerable people and communities | ARA 2 Health, well- being, food and water security | ARA 3 Infrastructure and built environment | ARA 4 Ecosystems and ecosystem services |
+| Outcome 1: Increased deployment of financing for emerging clean energy technologies by DFIs in India | ☒                                       | ☒                                       | ☐                                              | ☐                                       | ☐                                            | ☐                                                  | ☐                                          | ☐                                       |
+| Outcome 2: Enhanced institutional capacity of DFIs to catalyze lending for clean energy technologies | ☒                                       | ☒                                       | ☐                                              | ☐                                       | ☐                                            | ☐                                                  | ☐                                          | ☐                                       |
+
+If any co-benefits have been identified in section B.2(a), fill in the Co-benefit table below to map each co-benefit to the corresponding category as defined in the FP guidance note.
+
+| Co-benefit number   | Co-benefit    | Co-benefit   | Co-benefit   | Co-benefit   | Co-benefit   | Co-benefit   |
+|---------------------|---------------|--------------|--------------|--------------|--------------|--------------|
+| Co-benefit number   | Environmental | Social       | Economic     | Gender       | Adaptation   | Mitigation   |
+| Co-benefit 1        | ☒             | ☐            | ☐            | ☐            | ☐            | ☐            |
+| Co-benefit 2        | ☐             | ☐            | ☒            | ☐            | ☐            | ☐            |
+| Co-benefit 3        | ☐             | ☐            | ☐            | ☐            | ☒            | ☐            |
+| Co-benefit 4        | ☐             | ☐            | ☐            | ☒            | ☐            | ☐            |
+
+## B.3. Project/programme description (max. 2500 words, approximately 5 pages)
+
+## Overview
+
+57. The IGFF is a blended finance facility designed to accelerate India's energy transition through targeted financing to scale up  emerging  clean  energy  technologies  in  the  country.  It  leverages  concessional  capital  from  the  GCF,  complemented  by resources from the ADB, to provide lines of credit to participating public DFIs in India to address bankability and financing gaps for these technologies. Additionally, the IGFF will deploy technical assistance to strengthen project pipelines, address market barriers, and build the capacity of DFIs to institutionalize green lending practices within their operations, including the adoption of domestic climate-related financial disclosure frameworks while advancing gender-responsive financing practices to promote women's participation in the clean energy value chain.
+58. For the purposes of the IGFF, a subproject is defined as an ADB-financed operation that will provide financial intermediary loans to one or more DFIs. Such loans include those with GCF resources (GCF loans) and with ADB resources (ADB loans). Each subproject will enable DFIs to provide loans (DFI loans) or de-risking to support investments in eligible clean energy technologies. A single subproject may include one or multiple DFIs, and each ADB loan or GCF loan could in turn also support either a single technology or multiple technologies. Each subproject will be presented for approval to the ADB Board and/or other applicable ADB approving authorities on a transaction-by-transaction basis.
+
+## Key design principles
+
+<!-- image -->
+
+B
+
+<!-- image -->
+
+1. Programmatic approach :  The  facility  takes  a  programmatic  approach  to  financing,  enabling  the  development  of  a portfolio  of  clean  energy  subprojects  with  common  criteria  and  themes.  This  ensures  efficiency  in  financing administration, scalability, and alignment with India's long-term climate goals.
+2. Focus on low-carbon subprojects : The facility prioritizes transformational subprojects with the potential to accelerate India's energy transition, focusing on emerging technologies critical for reducing emissions while also supporting climate resilience. Technical assistance will focus on building robust project pipelines, integrating innovative financial models, and supporting the bankability of clean energy projects early in their lifecycle.
+3. Prioritizing underserved areas : The facility prioritizes investments in clean energy projects in underserved areas of India, where financing for renewables is still low.
+4. Emphasis on leverage and catalytic financing : By utilizing GCF concessional financing, the facility will mobilize high shares of ADB and DFI resources while catalysing private sector capital. Using low-interest rate, long-tenor loans, and a guarantee facility, the IGFF will de-risk investments in emerging clean energy technologies, creating the confidence needed to attract commercial banks and private investors to scale these investments.
+5. Greening India's DFIs : The facility emphasizes strengthening the climate finance capabilities and systems of India's DFIs. This includes institutionalizing green lending practices, aligning portfolios with Paris Agreement goals, and adopting domestic climate-related financial disclosure frameworks.
+6. Focus on gender-responsive financing : IGFF strengthens DFI capacities to integrate gender-informed practices into their  operations,  supporting  sex-disaggregated  data  systems,  preferential  financing  for  women-led  projects,  and capacity-building programs. These efforts aim to enable women's active participation across the clean energy value chain, fostering greater inclusion and equity within the sector.
+
+## Structure
+
+59. Through IGFF, GCF financing of $200 million will be used to support 5 subprojects, with the following breakdown: $187 million loans (including $65 million deployed as a loan with special conditions to support a risk-sharing facility) and $13 million grant for technical assistance. ADB expects to mobilize up to $793 million of financing from its own resources, with the potential for co-financing from other development partners for these subprojects. Additionally, $1.178 billion in financing is expected to be leveraged  from  participating  DFIs.  A  further  $754  million  is  expected  to  be  catalyzed  from  the  private  sector  and  project developers through IGFF. Table 1 outlines the IGFF financing structure.
+
+Table 2: IGFF financing structure
+
+| India Green Finance Facility (IGFF)   | India Green Finance Facility (IGFF)   | India Green Finance Facility (IGFF)   | India Green Finance Facility (IGFF)                             | India Green Finance Facility (IGFF)   | India Green Finance Facility (IGFF)   | India Green Finance Facility (IGFF)   | Mobilized financing for investments   | Mobilized financing for investments   | Mobilized financing for investments       |
+|---------------------------------------|---------------------------------------|---------------------------------------|-----------------------------------------------------------------|---------------------------------------|---------------------------------------|---------------------------------------|---------------------------------------|---------------------------------------|-------------------------------------------|
+| Comp onent                            | Sub-projects                          | DFI                                   | Financing instrument                                            | GCF ($ million)                       | ADB ($ million)                       | Total IGFF financing                  | DFI                                   | Project proponents                    | Total financing mobilized for investments |
+| Compo nent 1                          | SP 1: RTC Renewables                  | DFI 1                                 | Loan                                                            | 32                                    | 128                                   | 160                                   | 128                                   | 72                                    | 360                                       |
+| Compo nent 1                          | SP 2: E- mobility                     | DFI 2                                 | Loan                                                            | 34                                    | 136                                   | 170                                   | 136                                   | 102                                   | 408                                       |
+| Compo nent 1                          | SP 3: Green hydrogen                  | DFI 3                                 | Loan                                                            | 30                                    | 120                                   | 150                                   | 120                                   | 68                                    | 338                                       |
+| Compo nent 1                          | SP 4: CBG                             | DFI 4                                 | Loan (with special conditions to support risk sharing facility) | 65                                    | 0                                     | 65                                    | 390                                   | 167                                   | 622                                       |
+| Compo nent 1                          |                                       | DFI 4                                 | Loan                                                            | 0                                     | 300                                   | 300                                   | 300                                   | 257                                   | 857                                       |
+| Compo nent 1                          | SP 5: DRE                             | DFI 5                                 | Loan                                                            | 26                                    | 104                                   | 130                                   | 104                                   | 88                                    | 322                                       |
+
+<!-- image -->
+
+<!-- image -->
+
+|              | Technical assistance for Output 1.1   |       |   0 |   5 |   5 |    0 |   0 |    5 |
+|--------------|---------------------------------------|-------|-----|-----|-----|------|-----|------|
+| Compo nent 2 | Technical assistance                  | Grant |  13 |   0 |  13 |    0 |   0 |   13 |
+|              | Total                                 |       | 200 | 793 | 993 | 1178 | 754 | 2925 |
+
+B
+
+## Component 1: Financing for DFIs to scale up the deployment of emerging clean energy technologies
+
+60. The IGFF will leverage GCF financing for loans and guarantees to complement ADB financing and attract additional resources from DFIs, supporting emerging clean energy technologies critical to India's energy transition. Under Component 1 , GCF resources will (i) provide dedicated concessional lines of credit for subprojects, through ADB, to participating DFIs for onlending to both public and private sector borrowers and (ii) provide a loan to a DFI with special conditions for repayment, as part of  a  subproject,  to  establish  a  Risk  Sharing  Facility  (RSF).  Initially,  IGFF  will  target  subprojects  with  three  DFIs  with  whom discussions are currently ongoing - NABARD, IIFCL, and REC - though participation remains open to additional DFIs interested in engaging with the facility.
+
+## Technology focus
+
+61. The prioritization of technologies for IGFF was guided by India's clean energy transition goals, and the need to address critical gaps in technology deployment, financing, and international technology transfer. Technologies were chosen based on their alignment with national priorities, sectoral needs, and their potential to reduce emissions, enhance climate resilience, and support economic growth (for more details please refer to Annex 2, Section 4. Assessment of priority technologies for IGFF).
+62. India's clean energy transition demands a strategic, sector-specific approach that expands renewable energy deployment while addressing grid stability and integration challenges across power, industry, transport, and rural energy access. In the power sector,  RTC renewables, integrating solar, wind, and storage, are essential to stabilize the grid, provide dispatchable clean electricity,  and  facilitate  the  seamless  integration  of  intermittent  renewable  sources.  By  ensuring  round-the-clock  power availability, RTC renewables reduce dependence on coal and enhance overall energy security. Green hydrogen is crucial for industries such as steel, cement, and aluminum, where high-temperature processes cannot be easily electrified, offering a viable pathway to lower emissions. The transport sector, responsible for 9% of national emissions, requires widespread electrification to curb pollution and fossil fuel use. Scaling up EV infrastructure, particularly in underserved regions, and expanding financing options for two- and three-wheelers will accelerate adoption and drive a shift toward sustainable mobility. Compressed Biogas (CBG) plays a pivotal role in diversifying the energy mix, providing a renewable substitute for natural gas in industries and transport  while  simultaneously  creating  value  from  agricultural  and  organic  waste,  thereby  reducing  methane  emissions. Decentralized renewable energy (DRE) solutions, including off-grid solar pumps and biogas systems, are vital for improving energy reliability in rural areas, supporting agricultural productivity, and fostering economic resilience
+63. Financing support will be provided to subprojects that support the following objectives:
+
+Table 3: Objectives and technologies to be supported by IGFF (based on Annex 2)
+
+| Objective                                                                                                                                                                                                                  | Type of technologies                                                                                          |
+|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
+| Powering India's Energy Transition - Projects which accelerate the large-scale deployment of renewable energy technologies and infrastructure to facilitate the shift from fossil fuels to cleaner energy sources.         | • Round-the-clock renewable energy (renewable energy with energy storage systems) • Green hydrogen production |
+| Modernizing Energy Access for Cleaner Living - Projects which expand sustainable energy solutions to underserved regions to reduce dependence on traditional fuels, enhance air quality, and drive economic opportunities. | • E-mobility (2, 3, and related infrastructure) • Compressed Biogas                                           |
+
+<!-- image -->
+
+Resilient and Reliable Energy Systems for Rural and Urban Communities - Projects which strengthen energy systems to withstand climate risks while improving agricultural productivity and supporting sustainable livelihoods.
+
+## DFI focus
+
+64. As part of the project design, consultations were held with several DFIs tasked with supporting clean energy and related interventions  (Annex 7). These discussions served four key objectives: (i) to identify market, financial,  policy, and technical barriers hindering the scale-up of critical sectors and technologies from the perspective of DFIs, (ii) to validate insights from the findings in Annex 2, (iii) to preliminarily identify interventions that align with India's clean energy transition goals and DFIs' broader development mandates, and (iv) to shortlist DFIs for potential collaboration under IGFF's initial implementation phase. These engagements  reinforced  the  focus  on  designing  interventions  that  maximize  impact  while  ensuring  alignment  with  India's nationally determined contributions (NDCs) and long-term low-carbon strategies.
+
+## Portfolio performance targets
+
+65. The following portfolio-level targets will help measure impact, track financial performance, and ensure alignment with India's clean energy transition goals:
+- Total Financing Mobilized
+3. o Total amount of concessional capital deployed: $200 million
+4. o Total financing leveraged from DFIs, private sector, and ADB: $ 2842 million
+- GHG Emissions Mitigation
+6. o Estimated total CO ₂ equivalent mitigated over the lifetime of projects: 50 million tons CO ₂ e
+
+## Output 1.1: DFIs have secured concessional loans to finance emerging clean energy technologies
+
+Executing entities: DFIs
+
+## Activity 1.1.1:  Design and provide concessional loans to DFIs to finance emerging clean energy technologies
+
+66. GCF resources will be used to provide sovereign-guaranteed concessional loans to DFIs, alongside ADB sovereign and/or sovereign-guaranteed loans for on-lending to private and public sector borrowers for clean energy investments. GCF and ADB loans - channeled through subprojects - aim to address financing barriers associated investments in emerging clean energy technologies  with  limited  availability  of  affordable  long-term  capital,  and  the  high  upfront  costs  of  emerging  clean  energy technologies (for detailed assessment please refer to Annex 2, Section 4).  Loans are designed to direct DFI financing towards underserved sectors and help lower the weighted average cost of capital (WACC) for subprojects depending on their risk profiles, making them financially viable and attractive to private sector investors. By bridging the financing gap, these loans will unlock cofinancing from DFIs and commercial lenders and accelerate the deployment of transformative clean energy technologies critical to India's energy transition.
+67. Proposed terms for GCF loans to DFIs are provided in Table 4. The concessionality of GCF loans will be passed on through subprojects to project proponents in the form of reduced interest rates, extended loan tenors, or longer grace periods, with the level of concessionality to be commensurate with the financial needs of investments in specific technologies and designed in a manner to limit the risk of market distortion. These terms will be determined based on specific analysis to be conducted during preparation of each subproject. ADB will conduct (i) economic and financial analysis that considers investment-specific cash flow projections and viability for a selection of target investments (ii) assessment of the cost of funds to DFIs taking into account the conversion of ADB and GCF funds to national currency and inclusion of any applicable sovereign guarantee fees. 28
+
+28 Note that the risk of the DFIs absorbing the concessionality of GCF funds is considered low. With an assumed 80/20 ratio of ADB / GCF funds and considering the conversion of ADB and GCF funds to national currency and inclusion of any applicable sovereign guarantee fees, the likely cost of funds to GCF will be higher than current DFI borrowing costs (see Annex 3a).
+
+<!-- image -->
+
+B
+
+- Decentralized RE supporting energy access and agricultural applications to power livelihood applications, such as off-grid solar-powered water pumps and solar-powered cold-storages.
+
+<!-- image -->
+
+B
+
+<!-- image -->
+
+The outcomes of this analysis will then be discussed with DFIs to determine the optimal level of concessionality to be provided to  borrowers  to  address  financing  gaps,  lower  perceived  risks,  and  improve  the  bankability  of  emerging  technologies  while avoiding market distortion. ADB will work with DFIs during the finalization process to identify and implement possible measures that can lower the effective borrowing cost for technologies where this concessionality is needed, without distorting the market. Considering the cost of funds to DFIs through the facility are likely to be similar to their current cost of funding, the transmission of concessionality may be modest. Finally, terms agreed will be embedded in subproject specific project documents and loan agreements.
+
+Table 4: Proposed lending terms for GCF funds under Output 1.1
+
+| Currency   |   Interest Rate (i) |   Commitment fee |   Tenor (years) |   Grace Period (years) |
+|------------|---------------------|------------------|-----------------|------------------------|
+| USD        |                1.25 |             0.75 |              20 |                      5 |
+
+(i) This includes interest rate (0.75%) and GCF service fee (0.5%);
+
+## Eligibility criteria
+
+68. The following criteria will be applicable to all subprojects supported under Output 1.1:
+- Eligible borrowing entities : Sovereign-guaranteed financing institutions that meet the following eligibility criteria:
+- Be at least 50% government-owned, either at the central or state level.
+- Have a stated mandate and/or operational focus to support developmental goals, including infrastructure development, renewable energy, climate resilience, or rural development.
+- Eligible  technologies : Subprojects  will  target  six  emerging  clean  energy  technologies  aligned  with  India's  energy transition goals:
+- Round-the-Clock renewable energy systems that combine intermittent renewable sources with energy storage to ensure continuous supply
+- Green hydrogen production and infrastructure, with (i) green hydrogen production powered by renewable energy sources, (ii) potential to scale up and or integrate in existing energy systems and (iii) excluding investments related to export of green hydrogen.
+- Compressed biogas projects using organic waste (e.g. municipal or agricultural waste)
+- Electric mobility solutions focusing on two- and three-wheeler vehicles and related charging infrastructure, as applied to rural and peri-urban areas
+- Decentralized renewable energy solutions designed to improve energy access in rural areas and support agricultural applications with priority for (i) solar irrigation pumps by small holder farmers and cooperatives, and (ii) other decentralized renewable energy solutions designed to improve energy access in rural areas and support agricultural applications.
+- Underserved areas : Subprojects to be designed to target at least 30% of financing for states in the country with either (i) high potential and low deployment of each RE technology, 29  (ii) over dependence on one type of RE technology, or (iii) low electricity access. 30  The list of underserved areas will be identified for each technology using national and state government datasets as part of the IGFF Program Implementation Guidelines and updated annually.
+- GCF financing share : At least 8% of the subproject financing amount, up to a limit of 20% subproject financing amount
+- Leverage : At least 80% cofinancing from ADB and / or other cofinanciers to be leveraged for each sub-project.
+
+29 For example, states with high solar potential but low installed capacity, or states with agriculture sectors but low CBG deployment.
+
+30 For RTC renewables, in addition to underserved areas, this technology is most suited to areas with high installed capacity but significant grid stability issues. As this criteria is at least 30% of financing, it should not hinder financing for RTC RE in other states.
+
+<!-- image -->
+
+B
+
+<!-- image -->
+
+- Concessionality : Financing terms and conditions for subprojects to demonstrate pass down of concessional terms (e.g. interest rate reduction, change to tenor or grace period etc.) to borrowers as appropriate for the given technology and region. 31
+- Gender mainstreaming : All subprojects will advance women's participation in the clean energy sector and work towards narrowing existing gender gaps. 32
+69. In addition, the following requirements will apply to all subprojects:
+- Due diligence: Prior  to  approval,  full  due  diligence  will  be  conducted  on  all  subprojects  and  borrowing  entities  in accordance with ADB's policies, internal rules and usual practice.
+- Environmental and social safeguards: All subprojects must adhere to the environmental and social safeguard policies of ADB as outlined in Annex 6, ensuring no adverse impacts on vulnerable communities or ecosystems.
+- Risk assessment: Each qualified subproject will be screened as per ADB's standard operational and due diligence guidelines including legal, financial and integrity risks.
+70. ADB will originate, design and develop subprojects with DFIs and allocate GCF and ADB resources for subprojects that meet the eligibility criteria above.  This will include assessing technologies to be supported, developing financing terms and conditions,  identifying  potential  pipelines  of  investments,  understanding  capacity  gaps  within  the  DFIs  and  conducting  due diligence of the subproject. Under each subproject, DFIs could be supported to build on existing or establish new financing products  to  support  eligible  investments. 33 At  a  facility  level,  a  governance  arrangement  will  be  established  within  ADB  to administer the program and oversee allocation of funding (see B4) comprising a steering committee, a program management unit in ADB and project implementation units in DFIs for each subproject.
+
+## Output 1.2 Risk-sharing facility (RSF) is established to de-risk investments in compressed biogas (CBG) projects Executing entity: DFI who will manage the RSF
+
+71. India's CBG sector faces significant financing hurdles, particularly for small-scale developers, despite its estimated USD 1.5 billion market potential and government support through the SATAT scheme. MSMEs, which drive decentralized production and rural economic growth, struggle with high interest rates, stringent collateral requirements, and limited access to credit (see Annex 2, Section 4.2). Financial institutions remain cautious due to perceived risks and lack of sector awareness, leading to conservative lending policies and slow loan approvals. In response, under Output 1.2, a Risk Sharing Facility (RSF) will be established to address two critical challenges:
+- High perception of risk : MSME-led CBG projects face a high-risk perception due to their nascent track record and the limited number of operational plants. Banks and other financial institutions are hesitant to lend, as the market remains fragmented and many projects involve small-scale plants with uncertain cash flows.
+- Unaffordable  financing  terms: Even  when  loans  are  available,  MSMEs  struggle  with  high  interest  rates  (often exceeding 12-14%) and stringent collateral requirements-sometimes demanding collateral equal to 50% or more of the loan amount. These factors limit the scalability of MSME projects despite significant market potential.
+
+## Overview of the RSF
+
+72. The Risk Sharing Facility (RSF) will be established as part of a subproject under the IGFF to provide credit guarantees and promote financing for MSME developers for the deployment of CBG. US$65 million GCF reimbursable funds will be provided as a concessional loan to a DFI (RSF Manager) to establish and manage the RSF corpus, which in turn is expected to enable
+
+31 The concessionality in the financing offered by DFIs under each subproject will also be monitored during subproject implementation.
+
+32  All loans will be categorized as Effective Gender Mainstreaming (EGM) according to ADB's Gender and Development Framework.
+
+33 As part of the design of subprojects, reflows of funds by DFIs from borrowers will be considered. These could be repaid back to ADB, or used to support further loans under the same conditions that the original loans were made.
+
+<!-- image -->
+
+B
+
+<!-- image -->
+
+total project investments of $557 million. 34   35  This will be provided alongside a sovereign-guaranteed ADB loan to the same DFI, with ADB and GCF loans covering separate activities. 36   37  The RSF would be required to make PCG payouts to PFIs if MSME borrowers default in payment on PFI Loans which are covered by RSF PCGs.
+
+73. The RSF structure includes the following parameters:
+- Guarantee Structure: The RSF includes a pool of funding (i.e. the RSF corpus) which will support the issuance of guarantees and is available to cover claims in case of defaults, thereby reducing uncertainty and encouraging better lending terms. This is required for a nascent CBG market with a high perception of risk.
+- Coverage: The facility is designed to cover 50% of payment defaults (covering both principal and interest on a paripassu basis). This is lower than typical MSME guarantees in India (which often cover 60-85%) but is justified by the financial returns expected from CBG projects.
+- Term and duration: Each credit guarantee will have a 12-year term. This long duration accommodates the high-risk phases during construction and early operations, ensuring that banks do not require additional collateral post-guarantee expiry.
+- Overall RSF duration: The  RSF will  be  operational  for  20  years-the  first  five  years  focusing  on  active  guarantee issuance and portfolio build-up, followed by ten years of claim reimbursement and financial monitoring, and the final three years of loan repayments to GCF.
+- Leverage: The  RSF  will start  with  a  leverage  of  3,  meaning  the  US$65 million  guarantee  fund  can  mobilize  up  to US$390 million in PFI loans, potentially supporting a total project investment of around US$557 million.
+
+## Impacts and benefits of the RSF
+
+74. The  RSF  includes targeted  credit  enhancement  and  risk  sharing .  It  specifically  targets  loans  to  MSME  CBG developers, reducing risk for PFIs by guaranteeing 50% of each loan's exposure on a pari-passu basis. This mechanism directly lowers the cost of borrowing and collateral burdens on small-scale projects. In the event of defaults, losses are shared between the RSF and the PFIs, ensuring that the financial burden does not fall solely on the lender.
+75. The RSF design builds on precedents from existing MSME-focused guarantee schemes in  India and enhances these with a clear focus on CBG projects. Existing schemes such as the Credit Guarantee Fund Trust for Micro and Small Enterprises (CGTMSE) and the National Credit Guarantee Trustee Company both demonstrate how targeted guarantees can increase lender willingness and reduce borrower interest rates and collateral burdens. When backed by credible institutions, including NABARD or multilateral financial institutions, such guarantees can further mobilize private finance for CBG and promote faster growth of India's CBG sector.
+76. With  improved  financing  terms-lower  interest  rates  (from  about  13%  to  roughly  11.9%)  and  reduced  collateral requirements (even after the payment of a guarantee fee)-the RSF makes CBG projects more viable . In addition to mobilizing significant  PFI  lending,  the  RSF  is  anticipated  to  facilitate  broader  market  confidence,  encouraging  further  private  sector participation. Beyond direct financial support, the RSF serves as a market-making tool. As banks gain confidence from successful guarantee-backed lending, the overall risk perception  of  the  MSME  CBG  sector  is  expected  to  decline,  paving  the  way  for additional financing avenues in the future.
+
+## RSF mechanics
+
+77. The RSF mechanics will be as follows. The GCF loan for the RSF will be provided to the RSF Manager, which will in turn establish a trust to manage the funds. Funds will be disbursed from GCF over 5 years, in annual tranches, to gradually build up
+
+34 The RSF corpus is the capital invested in the RSF to be used to support issuances of guarantees.
+
+35 DFI's obligation to repay the loan will be limited to remaining corpus at the end of the RSF duration. In case this is less than the principal amount, recoveries made thereafter until the end of the loan term will also be repaid (up to the $65 million).
+
+36 While the GCF and ADB loans will support the same sector (i.e. CBG) and contribute to the same outcome i.e. increased CBG deployment in India, the two loans will cover separate activities and market segments.
+
+37  ADB is in advanced stages of discussion with NABARD as the potential Guaranteeing DFI, with RSF operations to be managed under NABARD or a wholly owned subsidiary of NABARD, under a trust.
+
+<!-- image -->
+
+B
+
+<!-- image -->
+
+guarantee operations. Corpus funds will earn interest and based on the corpus and a leverage ratio of 3, the RSF Manager will issue PCGs to PFIs for PFI loans. In line with this objective, the RSF corpus may be invested in high-quality public securities, primarily government securities and treasury bills, subject to applicable RBI and FEMA regulations. Annual guarantee fees will be charged to the PFIs which in turn will be passed on to MSME borrowers. The enhancement of the credit quality of the borrower due to the PCG is expected to reduce the potential interest rate of PFI loans, and the fees charged for PCG guarantees will be recouped from the gain that accrues to the MSME. The concessionality of the GCF contribution will enable the guarantee fees to be kept at a level that is affordable by MSME borrowers.
+
+78. Guarantee fee revenues, and interest earnings on the RSF corpus from the initial years of operations will be used to establish an appropriate loss reserve. Any recoveries made in case of a default and a claim being filed will also be channeled back into the corpus. At the same time, the RSF Manager will pay an interest rate on the GCF loan and will support annual administration costs. A foreign exchange fluctuation reserve (FEFR) will be maintained within the RSF to absorb potential foreign exchange risk. 38  Based on the assumptions in the financing model of the RSF (see Annex 2, Appendix 3), w ith an expected leverage of 3, assumed expected losses based on an expectation of supporting a mix of MSMEs with 'BBB' and 'A' risk profiles, the RSF is estimated to absorb potential losses and have adequate capital to return GCF funds by the end of its life.
+
+Figure 6: Fund flow arrangement in Risk-Sharing Facility
+
+<!-- image -->
+
+<!-- image -->
+
+## Operating arrangements and criteria
+
+79. The RSF Manager will manage the PCG approvals and payouts in case of defaults. PFIs will be selected based on eligibility criteria to be set out in a guarantee operations manual (GOM) (see B4). The eligibility criteria will include minimum requirements on capital adequacy ratio, non-performing loans, liquidity and efficiency, in particular compliance with RBI prudential norms. Participating PFIs will also need to show evidence of a robust mechanism for the selection, appraisal, evaluation and issuance of loans to MSMEs undertaking Investments.  After loan sanction and prior to disbursement, the PFI shall seek approval for guarantee cover from the RSF Manager on submission of the required documents. TA support under Output 2.2 will support this process. In addition, for the initial phase of RSF operations ADB will also assess individual proposals to ensure they meet the GOM and RSF criteria, with this role shifting to monitoring after the initial phase.
+80. In case of defaults, PFIs will initiate recovery proceedings and then lodge a claim with the RSF Manager.   A loan account would be considered in default based on RBI norms-currently, accounts that are overdue by more than 180 days are classified as  Non-Performing  Assets  (NPAs).  The  mechanics  of  guarantee  recovery  process  are  aligned  with  applicable  regulatory guidelines issued by the RBI. An independent Measurement and Verification Agency will be contracted to verify risk claims submitted by the PFI.  Subrogation rights will be shared between the PFI (which bears 50% of the risk) and RSF Manager, with the PFI taking primary responsibility for recoveries as they are engaged in lending and best placed to manage the recovery process effectively. Recovered funds will be reflowed to the RSF corpus.
+81. The following terms and conditions will apply to the RSF:
+- The RSF leverage ratio 39  will  initially  be  3,  and  will  be  reassessed  annually,  with  the  potential  to  increase  (up  to  a maximum of 5) or reduce (up to a minimum of 2) based on performance of the portfolio in the preceding year.
+- The RSF Manager may issue PCGs under the RSF up to the leverage ratio.
+- The DFI will serve as guarantor of record for the PCGs issued.
+- With the guarantee, PFIs will extend a 12-year loan with a 2-year principal payment grace period, with reduced interest rates reflecting the risk reduced as a result of the PCG.
+- PFIs will be charged with respect to each PCG (i) an upfront fee of 0.50% and (ii) an annual guarantee fee of 1.50%. 40
+- PFIs will be required to demonstrate reduced pricing and lower collateral requirements for guaranteed loans.
+82. The term of the GCF loan is as per Table 5.
+
+Table 5: Proposed lending terms for GCF funds under Output 1.2
+
+| Currency   |   Interest Rate (i) |   Commitment fee |   Tenor (years) |   Grace Period (years) |
+|------------|---------------------|------------------|-----------------|------------------------|
+| USD        |                1.25 |             0.75 |              20 |                     17 |
+
+(i) This includes interest rate (0.75%) and GCF service fee (0.5%);
+
+## 83. Specific eligibility criteria for the RSF include:
+
+- Eligible DFI to manage the RSF: Financing institutions that meet the following eligibility criteria:
+- Be at least 50% government-owned, either at the central or state level.
+- Have a stated mandate and/or operational focus to support developmental goals, including infrastructure development, renewable energy, climate resilience, or rural development.
+- Be able to serve as guarantor of record for RSF-supported PCGs.
+- Have experience in managing guarantee schemes / funds or issuing guarantees.
+- Eligible investments
+
+39 Calculated as value of loans covered by the PCGs provided divided by RSF corpus.
+
+40 Upfront fee will apply to overall loan amount, and annual guarantee fee will apply to outstanding principal. The guarantee fee will carry a rebate of 0.5% for the first five years for each PCG to reduce the entry barriers for this product in the market.
+
+<!-- image -->
+
+B
+
+<!-- image -->
+
+B
+
+<!-- image -->
+
+- Scope: Only CBG projects developed by MSMEs are eligible, with a specific focus on small-scale plants that face conventional financing challenges. 41
+- Definition: of borrowers as a MSME in accordance with the Government of India's MSME Development Act.
+- Debt-Equity Structure: Projects must adhere to a debt-to-equity ratio of 70:30, ensuring that MSME developers contribute at least 30% equity.
+- Technical and Economic Viability: Projects need to meet technical, financial, and economic criteria, which are documented and evaluated using standardized appraisal guidelines.
+
+## · Eligible PFIs
+
+- PFIs must have licensing and registration as a Financial Institution: Commercial banks, regional rural banks, NonBanking Financial Companies, and government-backed financial institutions, all of which are approved and registered with the Reserve Bank of India
+- PFIs must have compliance with RBI prudential norms, including minimum requirements on capital adequacy ratio, non-performing loans, liquidity and efficiency
+- PFIs must have a proven track record in financing relevant business areas, or technical assessment capabilities for such sectors; PFIs must have project evaluation capabilities, such as possessing specialized team capable of evaluating relevant projects or willingness to undergo training
+- PFIs must have reporting and monitoring capabilities: PFIs should be able to regularly report data regarding its loan portfolio and monitor the performance of projects in line with ADB/GCF as applicable.
+
+## Component 2: Technical support for institutionalizing green lending practices and strengthening DFI capacities
+
+84. India's clean energy transition hinges not just on mobilizing finance but on ensuring that DFIs are equipped to channel capital effectively into emerging clean energy technologies. While DFIs have historically played a key role in financing large-scale solar and wind projects 42 , emerging areas like energy storage, energy efficiency, green fuels (e.g. green hydrogen), off-grid solutions remain underfunded. The limited DFI exposure in scaling up these technologies is largely due to three broad sets of technical and institutional constraints. First, limited technical expertise, awareness, and inadequate systems within DFIs hinder  their  ability  to  identify,  appraise  and  finance  projects  that  involve  emerging  clean  energy  technologies.  Second, fragmented pipelines and fewer projects for emerging clean energy technologies makes it harder for DFIs to find and finance such projects. Finally, across the financial sector in India, the lack of standardized green finance taxonomies and evolving climate risk disclosure requirements further hinders DFIs ability to scale up green lending.
+85. Outputs and activities under Component 2 will complement investments and de-risking under Component 1, and will address the above institutional and capacity gaps, by working with DFIs, project proponents,  participating financial institutions (PFIs) and MSME developers. Component 2 includes three outputs:
+- Output 2.1:  DFIs have enhanced technical capacities to finance emerging clean energy technologies
+- Output 2.2: MSMEs and PFIs have enhanced technical capacities to access credit guarantees through RSF
+- Output 2.3: Public/private FIs adopt tools and frameworks to scale up financing for emerging clean energy technologies
+86. Together  these  outputs  contribute  to  ensuring  that  DFIs  deploy  concessional  finance  and  expand  their  portfolio  in emerging clean energy technologies (outcome 1) and project developers and public/private FIs have access to finance (including gender-responsive financing) for these technologies.
+
+## Output 2.1:  DFIs have enhanced technical capacities to finance emerging clean energy technologies Executing entity: ADB
+
+41 Projects supported by ADB funds under the same subproject under Output 1.1 will not be eligible for support under the RSF under
+
+Output 1.2.
+
+42 https://www.climatepolicyinitiative.org/wp-content/uploads/2024/12/Landscape-of-Green-Finance-in-India
+
+<!-- image -->
+
+B
+
+<!-- image -->
+
+## Activity 2.1.1: Strengthen DFI capabilities in project preparation, appraisal, and monitoring of IGFF-aligned investments
+
+87. This activity aims to enhance the technical and institutional capacity of DFIs receiving IGFF support under Output 1.1, enabling them to effectively structure, appraise, and monitor emerging clean energy projects. Through technical assistance, this activity  will strengthen  the  technical  and  institutional  capabilities  of  at  least  5  DFIs  engaged  in  IGFF-supported subprojects . This support will ensure that DFIs can efficiently deploy concessional financing, mitigate project risks, and track investment impacts. Through technical assistance and structured training, DFIs will be equipped to assess, originate, and monitor clean energy investments (e.g., green hydrogen, DRE, CBG). By embedding long-term technical assistance within DFIs and developing standardized frameworks, this output will enable DFIs to scale investments in emerging clean energy technologies efficiently and sustainably.
+88. The following activities and deliverables will be supported under this activity:
+- Conduct needs assessment and develop technical assistance package for each IGFF subproject , including :
+4. o Assess capacity and institutional needs: Needs assessments will be carried out for each DFI to be engaged in subprojects and potential proponents during preparation of each subproject. This will focus on capacity to (i) effectively implement IGFF subprojects and (ii) identify project pipelines, with a specific focus on emerging clean energy technologies targeted by IGFF.
+5. o Design technical assistance support packages: Each package will be executed over five years, aligned with the implementation of IGFF-funded subprojects. This support will be implemented by ADB-engaged consultants embedded within  Project  Implementation  Units  (PIUs)  established  within  DFIs  for  each  subproject,  and  will provide support across the full project lifecycle, from origination and pipeline development to implementation, impact  tracking,  and  reporting  back  to  IGFF.  Capacity-building  workshops  and  advisory  support  will  be sequenced based on DFI needs and market maturity levels for each technology.
+- Strengthen internal DFI capacities and systems to implement IGFF subprojects and finance clean energy projects, including:
+7. o Strengthen  DFI  systems  for  implementation  of  credit  lines  for  clean  energy: PIUs  in  at  least  5  DFIs strengthened with additional capacity to originate, identify and implement clean energy lending.
+8. o Support clean energy investment appraisal: At least 5 internal DFI toolkits and/or frameworks to standardize project  appraisal  and  risk  assessment  will  be  developed  and  institutionalized,  and  investment  appraisal  for emerging technologies will be supported to support disbursement of loans to project proponents.
+9. o Strengthen  safeguards  implementation: At  least  5  DFI-level  safeguards  frameworks  and/or  screening approaches  will  be  enhanced,  and  support  provided  on  safeguards  screening  and  assessment  including environmental and social impacts of investments.
+10. o Strengthen  gender-responsive  financing: At  least  5  DFI-level  gender  policies  and/or  frameworks  will  be developed  and  institutionalized,  including  through  training  on  gender-responsive  lending  practices  for  clean energy. Data templates for capturing sex-disaggregated data will be created for all DFIs.
+11. o Build DFI staff capacity: At  least 15 structured training sessions will be conducted for each DFI on project structuring, risk evaluation, financial due diligence, and monitoring of clean energy investments, as well as on gender-sensitive lending and safeguards. This will target DFI staff in headquarters and regional offices and cover both business development and loan operations teams. Trainings and seminars will be conducted for DFI officers on gender and financing.
+12. o Establish monitoring and evaluation systems: At least 5 DFI-level monitoring frameworks and data collection systems will be established or strengthened to track baseline, mid-term, and final project performance, ensuring alignment with GCF reporting requirements.
+13. o Develop knowledge products and training programs: To facilitate broader adoption of best practices across financial  institutions,  knowledge  products,  guidelines,  and/or  toolkits  will  be  developed  based  on  IGFF's experience.
+- Supporting DFIs in identifying bankable pipelines for emerging clean energy technology projects including:
+15. o Conduct market assessments :  At least five market assessments will be conducted to provide critical market intelligence on sectoral trends, infrastructure readiness, financial viability, and policy developments, ensuring
+
+<!-- image -->
+
+B
+
+<!-- image -->
+
+sub-projects are well-structured and aligned with IGFF financing criteria. These assessments will support DFIs in identifying high-potential clean energy projects, evaluating risks, and integrating best practices. Additionally, annual policy research updates will be conducted for each sub-project to facilitate engagement with state and national  ministries,  regulators,  and  financing  agencies,  ensuring  that  project  selection  and  financing  remain aligned with evolving clean energy policies.
+
+- o Facilitate industry engagement and market outreach: For each subproject, at least 10 industry stakeholder workshops and awareness sessions will be organized to educate developers and DFIs on financing mechanisms and  investment  readiness  requirements  and  facilitate  stakeholder  engagements  and  site  visits  for  each subproject across multiple states to assess project viability and developer capacity and local market conditions. Furthermore,  knowledge-sharing  sessions  and  training  programs  will  be  held  for  financial  institutions  to disseminate  learnings,  best  practices,  and  developed  toolkits  from  IGFF-supported  projects,  including  RSF ensuring broader adoption and scalability of clean energy financing beyond IGFF's immediate partners.
+
+## Output 2.2: MSMEs and participating financial institutions (PFIs) have enhanced technical capacities to access credit guarantees through RSF
+
+Executing entity: ADB
+
+## Activity 2.2.1:  Build capacities of PFIs and MSME project developers in structuring bankable projects, and accessing credit guarantees through RSF
+
+89. This activity ensures that PFIs and MSME project developers can effectively access and utilize the RSF established under Output 1.2. Since CBG projects face high perceived risks, financing remains constrained by limited institutional expertise, fragmented pipelines, and the absence of standardized risk assessment frameworks. Technical assistance will be provided to: (i) DFIs managing the RSF to establish operational systems, risk assessment models, and performance tracking mechanisms and (ii) participating FIs in the RSF to build appraisal capacity and enable efficient guarantee-backed lending and MSME project developers to enhance access to financing from PFIs.  By bridging knowledge and technical gaps, this activity will increase RSF uptake and unlock additional financing for clean energy MSMEs, ensuring greater private sector participation in CBG sector.
+90. To achieve this, the following activities will be implemented:
+- Provide  assistance  to  establish  RSF  systems  and  frameworks  and  strengthen  DFI  capacity  to  issue  credit guarantees . This will include providing support to the DFI managing RSF for the following activities:
+4. o Develop risk assessment tools and credit scoring methodologies for CBG projects to guide PFI decision-making and implement a digital system to track guaranteed loan performance and enable data-driven reporting to ADB and GCF.
+5. o Facilitate at least 5 regional outreach campaigns annually to raise awareness about the RSF, its benefits, and eligibility requirements among PFIs and MSMEs.
+- Assist PFIs to identify pipelines of CBG investments and for MSME developers to access credit guaranteesupported loans , including for the following activities:
+7. o Institutional needs assessments (2) of PFIs and MSMEs to identify capacity gaps in loan application processes, credit risk assessment, and project structuring
+8. o Delivery of 35 training sessions (7 per year for 5 years) on project bankability, financial structuring, and credit risk assessment for PFIs and MSME developers. Hands-on training will be carried out for PFIs on leveraging RSF mechanisms, including guidance on guarantee issuance, risk-sharing agreements, and financial reporting obligations, as well as support to set up mechanisms to screen and appraise MSME CBG projects.
+9. o Annual market assessments (5) will be conducted to identify emerging MSME-led CBG projects across different states  and  provide  critical  market  intelligence  for  PFIs.  These  assessments  will  analyze  demand  centers  in industrial,  transport,  and  commercial  sectors,  develop  risk  profiles  evaluating  feedstock  supply,  technology viability,  and  financial  risks,  and  study  market  landscapes  in  new  regions  where  PFIs  seek  to  expand. Additionally, they will map financing needs, policy incentives, regulatory frameworks, and subsidy mechanisms, ensuring that CBG investments align with market conditions and support sectoral growth.
+
+<!-- image -->
+
+B
+
+<!-- image -->
+
+- o Support targeted marketing and matchmaking initiatives to link MSMEs with financiers:  In each state where MSME-led CBG projects are implemented, at least 2 matchmaking events will be organized to connect MSME developers with PFIs and other financiers.
+
+## Output 2.3: Public/private FIs adopt tools and frameworks to scale up financing for emerging clean energy technologies Executing entity: ADB
+
+91. This output will mainstream green lending and climate risk management across India's financial sector by equipping public and private financial institutions with standardized tools and methodologies on encouraging green lending and managing climate and environmental risks and ensuring evolving policies around these areas are based on strong sector experience. This output  includes  two  activities,  with  the  Activity  2.3.1  focused  on  facilitating  broader  awareness  and  adoption  of  tools  and methodologies across FIs, and Activity 2.3.2 supporting dialogue between FIs and policymakers. Support under this output will focus on strengthening / introducing tools and frameworks that support two categories of actions that banks can take:
+- Measures to encourage green lending : This includes adopting green bonds frameworks to issue bonds that support climate  and  environmental  projects,  developing  green  lending  products  and  lending  facilities  (e.g.  lending  targeting energy efficiency, or specific RE technologies), and adopting climate / sustainable finance taxonomies to better track and define green financing provided by the bank.
+- Measures to manage climate risk : This would include using scenario analysis and stress tests (based on international and Indian standards and frameworks) to evaluate how physical and transition risks could impact portfolios, incorporating tools to measure the carbon footprint of lending portfolios and assess exposure to high-emission sectors, embedding climate risk in credit risk assessment, and initiating climate disclosure and reporting based on voluntary Indian standards or regulatory requirements in the future.
+
+## Activity  2.3.1:  Strengthen  financial  institutions'  capacity  on  climate  risk  management,  green  lending,  and  gender-responsive financing
+
+92. Shifting  India's  financial  sector  towards  climate-aligned  lending  and  gender-responsive  financing  requires  equipping financial institutions with standardized risk assessment frameworks, ESG screening tools, and climate disclosure approaches. This activity will complement support provided to DFIs and PFIs engaged under Outputs 1.1 and 1.2. by engaging a broader group of DFIs and strengthening dialogue across public and private financial institutions (FIs).
+93. To achieve this, the following activities will be conducted:
+- Organize financial sector dialogues and roundtables: Facilitate,  design  and  organize at least 40 financial sector dialogues  (8  per  year,  across  the  country)  on  green  lending,  climate  risk  management,  and  disclosure  frameworks engaging DFIs, PFIs, and commercial banks.
+- Conduct institutional gap assessments for DFIs: Through the financial sector dialogues, at least 11 DFIs will be identified for further support, beyond the DFIs already receiving support under Output 2.1 and Output 2.2. For each DFI, institutional gap assessments will be conducted to identify barriers and opportunities for integrating gender indicators, climate risk assessment, standardized ESG screening, and financial disclosure frameworks (aligned with India's BRSR standards). Based on these, tailored advisory support and training will be given to each DFI to further develop internal green lending policies, climate risk assessment tools, and gender-responsive financial frameworks. Post assessment insights, a set of proposed gender indicators with an intersectional lens can be drafted for DFIs, aligned with IGFF's criteria, focusing on measurable impacts.
+- Strengthen gender mainstreaming: Develop 5 gender mainstreaming action plans or tools to promote women-led clean energy enterprises and increase gender-responsive lending within financial institutions.
+
+## Activity  2.3.2    Support  dialogues  between  policy  makers  and  financial  institutions  on  enabling  policies  on  climate  risk management, green lending and gender-responsive financing
+
+94. Strengthening policy coherence and financial regulations is crucial for aligning India's banking sector with climate finance objectives. However, the regulatory framework for green lending is evolving, with recent developments including initiation of work to develop a taxonomy for climate finance, and draft guidelines on climate-related risk disclosure for banks and FIs being issued by RBI. When approved, these policies will require a major shift in practice among DFIs and FIs more broadly. This activity will
+
+<!-- image -->
+
+B
+
+<!-- image -->
+
+facilitate dialogues with policymakers to enhance the discussion on emerging policies and their implications for the financial sector, as well as ensure that policymakers remain aware of DFI challenges and opportunities in rolling these out.
+
+95. To this end, this activity will support at least two annual green finance policy roundtables with RBI, SEBI and other financial policy makers with leading DFIs and other banks and FIs. To inform each dialogue, at least two annual evidencebased policy briefs will be commissioned to assess state of play among FIs and provide policy recommendations on green finance. These roundtables will also focus on gender-inclusive financing mechanisms and scaling up financing for women-led energy investments.
+96. In  parallel,  targeted  gender-responsive activities  will  be  carried  out,  including  structured  consultations  with  women's groups and gender experts, the organization of four workshops engaging at least 200 stakeholders (with 40% women), and the publication  of  a  dedicated  gender  policy  brief.  Additionally,  skill  development  programs  will  train  at  least  2,500  female entrepreneurs in accessing and managing green finance, equipping them to lead in India's clean energy economy.
+
+## Project pipeline
+
+97. The indicative project pipeline for the Program is presented in the table below. This pipeline was used to design the program structure, calculate GHG reductions, and assess sustainable development and financial frameworks. While these initial projects have informed the program's design, they remain indicative and subject to change. Projects may be adjusted in size, scope, or replaced based on further design and structuring.
+
+Table 6: Indicative Project Pipeline
+
+| Project                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         | Readiness and Status                                                             |
+|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------|
+| Green Fuel Development Project The project aims to accelerate the adoption of compressed biogas (CBG) across India by addressing financial and operational barriers in the sector. The project aims to establish a robust business market forCBG across India by utilizing municipal solid waste and agricultural residue. The project will be implemented by NABARD (relevant to IGFF) and the State Bank of India (SBI) and is structured around two financial mechanisms: a $300 million credit line to provide low-cost financing for established large-scale CBG developers and a $65 million credit guarantee facility to de-risk investments, particularly for MSME borrowers. To facilitate financing for private MSME players in the sector, a credit guarantee mechanism will be implemented through NABARD and its participating financial institutions (PFIs). These PFIs specialized in state and local financing operations in collaboration with NABARD. This initiative addresses critical challenges such as weak credit profiles and high collateral requirements, enabling broader participation in the CBG sector. The initiative aligns with India's National Policy on Biofuels (2018) and the SATAT Initiative, which targets the development of 5,000 CBG plants. The project will support at least 200 CBG plants. At least 100 CBG plants are expected to be supported by the guarantee mechanism and an additional 100 CBG projects are supported by the proposed credit line. Additionally, the project promotes gender-inclusive workforce development and aims to enhance waste management systems through digital trading platforms for feedstock supply chains. | Advanced discussions, ADB loan approval is expected in Q3 2025.                  |
+| Expansion of Financing Environmentally Sustainable Growth in Infrastructure Project Building on an established and ongoing financing relationship with IIFCL, this subproject is being developed to expand the access to concessional financing to emerging technologies proposed by IGFF. The project will strengthens IIFCL's institutional capacity by integrating climate risk assessments, ESG criteria, and sustainability frameworks into its lending operations. The project will also promotes gender-inclusive financing. Additionally, it will leverage concessional finance to mobilize private sector investment through blended finance.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          | Preliminary discussions with IIFCL for a follow-up additional financing in 2026. |
+
+<!-- image -->
+
+<!-- image -->
+
+| By implementing sustainability frameworks and innovative financial instruments, the project will support India's net-zero commitments.                                                                                               |                                               |
+|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------|
+| New project with NABARD Under IGFF, discussions are ongoing with NABARD to develop DRE-based interventions targeting, dairy industry, cold storage, and off-grid solar water pumps.                                                  | Preliminary (initial) discussions with NABARD |
+| New subproject with REC Under IGFF, discussions are ongoing with REC to develop energy transition and energy access interventions targeting, RTC-renewables, green hydrogen production, and E-mobility with charging infrastructure. | Preliminary (initial) discussions with REC    |
+
+B
+
+<!-- image -->
+
+## B.4. Implementation arrangements (max. 1500 words, approximately 3 pages plus diagrams)
+
+98. As accredited entity (AE) for this proposal, ADB will be responsible for the overall Facility (Funded Activity), which includes two components (a TA/grant component and a concessional loan component).
+
+## Overview
+
+99. Following the GCF Board approval, ADB and GCF will, based on the AMA, enter into a program-specific legal agreement  (the  'Funded  Activity  Agreement'  or  the  'FAA').  The  FAA  will  outline,  among  other,  the  sectoral  and geographical scope of the proposed ADB/GCF Co-financing Program. The GCF funds will be placed in a dedicated ADB GCF Trust Fund and ADB's privileges and immunities will be considered applicable to the GCF funds disbursed to and held by ADB for the IGFF and other GCF funds held in the Trust Fund. ADB (acting as AE) will be solely responsible for the management and administration of GCF proceeds and other GCF funds and will carry out such management and administration in accordance with its own policies and procedures, and with the same degree of care as it uses in the administration of its own funds or other donor funds for which it has management or investment responsibility, taking into account the provisions of the AMA.
+100. Usage of GCF funds will be based on criteria outlined in this proposal which will be included in dedicated Program Implementation Guidelines to be developed following FAA effectiveness and prior to first disbursement for GCF funds for the IGFF. These guidelines will complement the program Term Sheet and FAA, and include further guidance on implementation arrangements, sub-project selection and prioritization, monitoring and evaluation, and reporting.
+101. During the implementation period, following the entry into effect of the FAA for this Program, GCF resources will be  allocated  by  ADB  for  specific  sub-projects.  Each  potential  sub-project  will  be  identified  during  ADB's  country programming process, prepared in accordance with ADB's internal policies and procedures, and evaluated against the criteria presented in this proposal and agreed with GCF, to determine eligibility for funding under the program.
+
+## Due diligence and subproject preparation
+
+102. Subprojects will be prepared by ADB based on requirements in the FAA and in line with GoI and ADB's Country Partnership Strategy. The assessment of the institutional capacity and eligibility of DFIs will be individually undertaken as part of the preparation process, and will follow ADB policies, procedures, and due diligence standards. The share of GCF financing under the IGFF to be allocated to each subproject, scope of the subproject, and terms and conditions of the blended financing package will be confirmed during preparation.
+103. In accordance with ADB's policies and procedures for preparation of sovereign and non-sovereign projects, due diligence will be conducted as part of preparation of each subproject. The scope of due diligence includes technical due diligence,  economic  and  financial  analyses,  gender  assessment,  and  categorization,  sector  assessment.  As  part  of technical due diligence, ADB will support feasibility studies and market assessments, as needed, to identify specific technologies  to  be  supported  under  each  subproject  and  assess  potential  pipelines  for  DFI  lending.  The  design  of subprojects under Output 1.1 will include a careful assessment of the cost of funds to DFIs, and final pricing to borrowers. ADB will conduct economic and financial analysis that considers investment-specific cash flow projections and viability for a selection of target investments and also assess the financial management systems and situation of DFIs. Subproject design will also consider implementing arrangements, monitoring and reporting arrangements, and measures to support capacity gaps in DFIs.
+104. On safeguards, screening will be done which will inform due diligence to prepare safeguards documents on environment, involuntary resettlement and/or indigenous people (as relevant), summary poverty reduction and social strategy will be prepared. Furthermore, procurement risk assessment and financial management assessment will be conducted on the implementing agency. As subprojects will include DFIs, ADB will also conduct Integrity Due Diligence to  ensure  that  integrity-related  risks  are  addressed  in  the  course  of  project  processing,  measures  put  in  place  to
+
+<!-- image -->
+
+B
+
+<!-- image -->
+
+B
+
+<!-- image -->
+
+strengthen borrowers' financial accounting, and auditing arrangements are in place to prevent misuse of ADB and GCF funds.
+
+105. For each subproject to be supported under Output 1, a Project Preparatory Report (PPR) will be submitted to the Department of Economic Affairs (DEA) under the Ministry of Finance, GoI. This PPR serves as a techno-commercial evaluation of the proposed project. The DEA is required to review and approve the project based on the PPR before ADB can proceed with lending to the respective DFI.
+106. Upon completion of the due diligence process and the negotiation of loan terms with the client, subprojects will be considered for approval by ADB.
+
+Figure 7: Overview of fund flows for loans and TA
+
+<!-- image -->
+
+## Legal agreements
+
+## Component 1 (Loans)
+
+107. ADB will provide sovereign-guaranteed loans - using GCF and ADB resources - to borrowers or executing entities  (EEs)  in  accordance  with  ADB  policies  for  sovereign  loans.  Borrowers  will  be  public  financing  institutions (referred to as DFIs in this proposal). ADB, as AE, will enter into (i) sovereign-guaranteed loan agreements with the DFI (with separate loan agreements for ADB resources and GCF resources), and (ii) guarantee agreements with India for each subproject for both ADB and GCF-financed loans.
+108. EEs will be responsible for channeling resources provided by ADB via sovereign loans (funded with GCF and/or ADB resources) to eligible sub-borrowers for eligible investments, in accordance with the loan agreement between the EE  and  ADB.  Detailed  arrangements  for  the  implementation  of  each  subproject,  including  criteria  for  eligible  sub-
+
+<!-- image -->
+
+B
+
+<!-- image -->
+
+borrowers and eligible investments as aligned with the FAA, will be set out in a Project Administration Manual for each subproject.  The  execution  and  administration  of  any  of  the  above-mentioned  operations,  including  reporting requirements, will follow ADB policies and procedures.
+
+Figure 8: Overview of legal agreements
+
+<!-- image -->
+
+## Component 1 (RSF)
+
+109. ADB will provide a conditional loan (using GCF reimbursable resources) to a selected EE/DFI (RSF Manager) to establish the RSF as part of a subproject. ADB, as AE, will enter into a loan agreement with the RSF Manager (RSF Loan Agreement) on terms reflecting the bespoke structure of the loan including but not limited to (i) repayment of the loan only to the extent of the unused/reimbursed principal and recoveries through instalments beginning at the end of year 18 of the tenor till the end of year 20 and (ii) payment of periodic interest. Further details of the proposed commercial terms for the RSF can be found in Annex 2. The RSF loan will not be guaranteed by the Government of India, however, a cross default provision will be included in the complementary ADB sovereign-guaranteed loan agreement to the DFI under the same subproject. This will help mitigate the risk of non-performance on the RSF loan agreement.
+110. The DFI/EE will be responsible for establishing the RSF under a separate trust (subject to further due diligence) in accordance with the RSF Loan Agreement signed with ADB. A guarantee operations manual (GOM) will be prepared detailing roles and responsibilities of the RSF stakeholders, eligibility criteria and approval processes, funds flow and cash management procedures, procedures for PCG issuance and claims, and a risk management framework. The GOM will also include templates for RSF documentation, such as a model RSF master guarantee agreement and reporting templates. The GOM will be finalized, subject to the ADB's no-objection, as a condition for the first disbursement of the funds allocated to the RSF by ADB to the RSF Manager. Compliance with the GOM by RSF Manager will be covenanted in the loan agreement.
+111. The RSF Manager will provide guarantees to eligible PFIs for loans to support eligible investments. For each guarantee, the RSF Manager will sign a guarantee agreement with the PFI. PFIs will provide lending for investments based on their own processes and policies and will monitor and report on these to the DFI (see Annex 2, Appendix 4 for more details on proposed implementing arrangements for RSF).
+
+## Component 2
+
+<!-- image -->
+
+B
+
+<!-- image -->
+
+112. For Component 2, ADB will serve as the EE for technical assistance grant resources. When acting as EE, ADB would apply its own policies and procedures for the hiring of individual consultants and/or procurement of consulting firms and other services, ensuring the fulfilment of applicable AMA and FAA requirements.
+
+## Program management and governance
+
+113. In its capacity as AE, ADB will administer loans, grants and technical assistance funds from GCF under the IGFF as follows:
+- Administer GCF financing as per GCF terms and requirements as set out in the FAA and AMA, and provide financing from ADB's own resources and other ADB-administered financing (if applicable), applying the same duty of care and due diligence for all sources.
+- Carry  out  such  management  and  administration  of  the  GCF  funds  for  loans  and  technical  assistance  in accordance with ADB's policies, procedures and practices, and with at least the same degree of care as it uses in the administration of its own funds or other donor funds, in accordance with the provisions of the FAA and AMA.
+- Assign ADB staff to support the program management and implementation.
+114. The following arrangements will be put in place to guide program implementation (see Figure 9):
+- ADB will establish a program steering group to provide strategic direction for the program including (a) allocation of  loans  and  technical  assistance  funds  to  subprojects;  (b)  subproject  selection,  (c)  approving  the  program implementation  guidelines  (PIG)  and  any  updates  thereto,  and  (d)  ensuring  compliance  of  the  program's implementation with the FAA and applicable ADB policies.  The group will include representatives from ADB's South  Asia  Regional  Department,  India  Resident  Mission  and  relevant  Sector  Departments  (e.g.  covering energy, financial sector etc.).
+- An ADB program management unit (PMU) will be established, with a dedicated fund manager, and supported by  staff  and  consultants  to  help  manage  the  program.  The  PMU  will  serve  the  focal  point  for  day-to-day operations  of  the  program,  approve  allocation  of  program  resources  in  accordance  with  the  program implementation guidelines, conduct monitoring and evaluation, and collate reports to be provided to GCF. The PMU will take its strategic direction from the program steering group. It will guide implementation of subprojects by engaging with and supporting subproject-level project implementation unit (PIUs). The PIG will serve as the manual for implementation of the program, outlining processes to implement the program in accordance with the provisions in the FAA. The PMU will also implement TA activities under Component 2, including overseeing procurement  of  consulting  services,  design  and  delivery  of  TA  activities,  overseeing  events  and  training, developing knowledge products etc.
+- For each subproject, DFIs will establish a PIU to oversee operations of the subproject. The PIU will include full time staff from DFI to manage and implement the subproject, supplemented with technical support provided under Output 2.1. The PIU will serve the focal point for day-to-day operations of the subproject, screen and select investments  that  meet  subproject  eligibility  criteria,  carry  out  financial  management  processes  (e.g.  audits, reporting), conduct monitoring and evaluation, and collate reports to be provided to the PMU.  The consultants engaged under Output 2.1 will focus on developing frameworks and tools, demonstrating their use, supporting policy  rollout,  building  capacity  within  bank  teams  and  branches,  and  facilitating  data  collection  to  enable monitoring and reporting as required by ADB and GCF . The subproject-specific project administration manual (PAM) will outline implanting arrangements and processes for each subproject.  The PIUs will also support delivery of TA activities under Component 2 such as trainings and events, market studies and assessments etc.
+115. For  the  RSF  specifically,  the  RSF  Manager  will  be  responsible  for  (i)  identification  of  PFIs  and  pipeline development, (ii) PCG review, approval and issuance, (iii) risk management and monitoring and (iv) cash management. It will operate under the oversight of ADB and will provide regular reports to ADB on the performance of the RSF. A PIU will be established for the RSF to support implementation. The RSF operations will be guided by the GOM. In the first two years of RSF operation, ADB - through the PMU - will take an active role. Proposals for guarantees  submitted by
+
+<!-- image -->
+
+B
+
+<!-- image -->
+
+PFIs and evaluated by the RSF Manager, will be further validated and reviewed by ADB. The GOM will developed by the RSF Manager and the PMU. TA consultants will also support the appraisal and fund management process. From the third year of operations. ADB's role will shift to monitoring and compliance checks as per the GOM.
+
+Figure 9: IGFF governance arrangements
+
+<!-- image -->
+
+## B.5. Justification for GCF funding request (max. 1000 words, approximately 2 pages)
+
+116. IGFF is anchored in the urgent need to accelerate deep decarbonization across India's economy by broadening the range of clean energy solutions that can drive this transformation. As outlined in Section B.1 of the funding proposalwhile utility-scale renewable energy projects continue to play a central role in achieving India's 2070 net-zero target, complementary investments are required to strengthen grid reliability, decarbonize high-emitting sectors, and extend clean  energy  access  to  underserved  regions.  However,  as  detailed  in  Annex  2  (#33  to  #35),  the  current  financing landscape remains disproportionately concentrated in utility-scale solar and wind, which together accounted for 65% of all tracked clean energy investments in 2021/22, while sectors like biofuels received only 1%.
+117. Financing is also heavily skewed toward domestic sources (83%) and debt instruments (50%), with 64% of domestic debt raised via direct balance sheet issuances and only 24% through concessional project loans. As shown in Table 6 of Annex 2, the average cost of lending for emerging technologies-such as RTC renewables, green hydrogen, and compressed biogas-ranges between 9.6% and 13.5% (Table 6 of FP Annex 02), with typical loan tenors capped at 10 years (except for RTC solar, which can extend to 19 years). In contrast, the average cost of borrowing for domestic financial institutions is approximately 7.5%. The higher cost of financing for emerging technologies reflects prevailing market barriers, including greater perceived risk, limited commercial maturity, and the absence of standardized revenue models.
+118. GCF funds will enable DFIs to scale lending for emerging clean energy technologies by providing concessional and long-term capital, de-risking investments in high impact but underfunded technologies, and strengthening financial institutions' capacity to assess and structure clean energy projects, ultimately reducing the cost of capital and catalyzing private sector participation.
+
+<!-- image -->
+
+## GCF support is critical for scaling emerging clean energy technologies
+
+119. RTC projects in India face considerable financial and structural challenges. While integrating solar, wind, and battery storage offers a stable supply of clean power, the investment required is nearly double that of standalone solar or wind installations. This high capital intensity, compounded by weak grid infrastructure and underdeveloped ancillary markets, limits project viability. Distribution companies (DISCOMs), which are the main off takers, are often financially distressed, further weakening revenue certainty for investors. According to Annex 3 EFA, projects remain only marginally viable with concessional support, with a financial internal rate of return (FIRR) of 7.8% at par with the weighted average cost of capital (WACC) of 7.8%. GCF concessional loans, alongside ADB loans, improves the financial case by lowering the WACC, extending tenors, and mitigating risks-transforming an otherwise commercially marginal project into a more investible opportunity.
+120. Green  hydrogen ,  though  pivotal  to  decarbonizing  hard-to-abate  sectors  like  steel  and  chemicals,  remains economically uncompetitive. Production costs are still significantly higher than grey hydrogen and achieving price parity requires renewable electricity prices as low as INR 2,000/MWh- below current market averages. The market is also hindered  by  a  lack  of  large-scale  commercial  deployment,  limited  infrastructure  for  transport  and  storage,  and underdeveloped regulatory frameworks. The EFA shows that, under standard DFI lending terms, the financial viability is insufficient to justify investment. However, with GCF and ADB blended financing under IGFF, WACC drops from 10.4% to 9.3%, improving viability with a FIRR of 9.9%. Despite these tight margins, the economic internal rate of return (EIRR) is robust at 22.8%, suggesting that GCF concessional loans are not only necessary but well justified to facilitate early investments in the sector.
+121. The CBG sector , particularly among MSME developers, faces persistent structural and financial barriers. High interest rates of 12-14%, stringent collateral requirements, and limited lender familiarity with biogas economics deter lending. Even where letters of intent (LoIs) exist under the government's SATAT initiative, the transition from intention to implementation remains slow. The EFA highlights how guarantees through the GCF-supported Risk Sharing Facility (RSF) can address these challenges. By partially guaranteeing loans and lowering capital reserve requirement of banks, lower interest rates and decreased collateral requirements can be passed on to end-borrowers. With FIRR of 14.2% or even 16% when combined with capital subsidies available, and a WACC of 11.6%, the investment case becomes more stringent. The economic returns (EIRR 20.5%) further underscore the importance of public de-risking mechanisms to catalyze lending and unlock MSME participation in this underdeveloped market.
+122. Electric mobility, especially two and three-wheelers in rural and peri-urban India, faces a different but equally critical set of challenges. Despite being economically attractive-with a strong FIRR of 19.3%-EV adoption is limited by inadequate charging infrastructure, high upfront vehicle costs, and limited consumer access to financing. Rural users face  a  dual  burden:  poor  credit  history  and  unfamiliarity  with  EV  technologies,  while  banks  hesitate  to  lend  due  to uncertain resale values and technological risks. The EFA finds that IGFF loans, by reducing borrowing costs together with training to financial institutions, can unlock scale and enable cleaner, more accessible mobility solutions outside of India's  urban  cores.  The  EIRR  of  15.3%  reinforces  the  economic  rationale  for  concessional  support  to  expand  EV adoption in underserved markets.
+123. DRE ,  including rooftop solar and productive-use systems like cold storage, remains severely under-financed despite its potential to transform rural livelihoods. High upfront costs and low fixed tariff structures reduce financial viability for DRE systems. Moreover, banks remain hesitant to lend due to the small scale of investments and weak credit histories of rural consumers. The EFA indicates that without GCF and ADB loans, most DRE systems would be financially unviable, with FIRRs below WACC. Only through concessional loans can the WACC be reduced to match the FIRR at 9.1%, enabling investments in energy access for agriculture and small businesses. Notably, the economic benefits are substantial,  with  an  EIRR  of  25.5%,  pointing  to  the  broader  developmental  and  climate  co-benefits  of  scaling  DRE solutions.
+124. Finally, off-grid  solar-powered  irrigation  pumps offer  one  of  the  most  economically  viable  clean  energy interventions in rural India. Yet, adoption is stalled by low awareness, limited credit access, and lender reluctance due
+
+<!-- image -->
+
+B
+
+<!-- image -->
+
+B
+
+<!-- image -->
+
+to small loan sizes and informal borrower profiles (also explained in Annex 2 #25). According to the EFA, even without subsidies, these systems yield a FIRR of 46%, increasing to 63.6% with government subsidies. However, the high WACC of  15.6% under commercial lending conditions makes them inaccessible to most farmers. GCF concessional loans, alongside ADB loans, reduce this barrier by bringing down the WACC to 14.2%, making these high-impact, climateresilient technologies scalable through aggregated delivery and de-risking strategies.
+
+## GCF financing instruments and technical assistance are designed to target specific market barriers
+
+125. IGFF utilizes a combination of concessional loans, risk-sharing mechanisms, and technical assistance to address the barriers described above.
+- Concessional loans (80% ADB, 20% GCF contribution): GCF concessional loans will be provided alongside ADB loans, reducing the Weighted Average Cost of Capital (WACC) from 11.1% to 10.2%, making clean energy projects bankable (refer to Annex 3).  GCF loans will provide long-tenure, affordable capital to DFIs enabling them to support high-impact but underfinanced technologies. A mix of 80% ADB and 20% GCF reduces the landed cost of financing to DFIs to 8%, and 20 year tenor of funds is considerably longer than the funds DFIs typically raise in the domestic market. GCF and ADB loans will also target specific technologies, and through IGFF subprojects, DFIs will also invest their own funds (alongside GCF and ADB) enabling a larger pool of funding to be mobilized for such projects.
+126. RSF for CBG MSMEs ($65M GCF loan to support PCG issuance): With a proposed corpus of $65 million, the RSF is structured to guarantee $195 million in loans and catalyze $390 million in PFI lending, ultimately mobilizing approximately $557 million in total project financing when accounting for a 30% contribution from MSME developers. This scale is targeted to support 110-150 small-scale CBG plants-roughly 10% of the letters of intent received under the SATAT program as of December 2024.
+127. According to the analysis in Annex 2 and 3, a 50% partial credit guarantee coverage would be associated with an up to 250-basis point reduction in PFI interest rates for the guaranteed portion of the loan. This translates into a drop in the cost of funds for MSME project developers from DFIs from 13% to 11.9% and a reduction in the weighted average cost of capital (WACC) of project proponents from 12.1% to 11.6%. Although the project rate of return remains similar, the  improved  financing  terms  enhance  overall  project  viability  and  affordability.  As  a  result  of  successful  lending experiences, the most significant indirect impact of the RSF would be the market making aspect.
+128. Compared to a direct loan to PFIs, structuring the RSF as a guarantee mechanism is significantly more efficient and  specifically  targets  the  issue  of  high  perception  of  risk  and  high  collateral  requirements.  From  an  efficiency perspective, while a loan will require full disbursement to a PFI, a guarantee allows the same capital to mobilize nearly three times more private sector lending by de-risking PFI exposure to MSME-led CBG projects. Guarantees are also critically needed for MSME CBG projects to bring down the high-risk perception by PFIs for these projects, which may not be achieved through a loan (which does not alter the risk associated with the project).
+129. Technical  assistance  to  support  targeted  capacity  building  of  DFIs  and  strengthen  the  enabling environment. Financing support alone is not enough to address the barriers above, especially in changing the lending behavior of DFIs to target emerging clean energy technologies. GCF technical assistance under Output 2.1 will be key in building the capacity of DFIs to initiate and scale up lending for new technologies. This assistance will train DFI officers in the PIUs as well as teams engaged in lending, corporate issues, risk management etc. while also investing in systems needed to strengthen green lending. For example, technical assistance will be provided to develop tools and frameworks to appraise specific technologies, and for supporting markets assessments to enable DFI teams better understand the financing environment in different states for specific technologies. Technical support under Output 2.2. will be critical in implementing the RSF and enabling rollout of PCGs amongst PFIs. Subproject-level assistance will be complemented by support under Output 2.3 which focuses on the enabling environment for DFIs to scale up green lending and adopt climate risk assessments. Together GCF grants through technical assistance will enable GCF loans to achieve the impact of the program in terms of shifting the financing for emerging clean energy technologies.
+
+<!-- image -->
+
+## B.6. Exit strategy (max. 500 words, approximately 1 page)
+
+130. IGFF has been designed with a strong orientation toward long-term sustainability and a clear, structured exit strategy. The core intent is not to create long-term dependence on concessional finance but rather to de-risk markets, build  institutional  capacity,  and  catalyze  private  investment  in  currently  underfunded  and  high-impact  clean  energy segments.
+131. GCF concessional support enables DFIs-India's largest public financing institutions with nationwide presenceto expand their climate portfolios into frontier markets and underserved geographies. Through the facility, DFIs will be supported  to  pilot  and  expand  clean  energy  projects  in  these  regions-laying  the  groundwork  for  private  sector replication. Over time, as risks are better understood and project track records are built, DFIs will be able to progressively lend to such markets without reliance on concessionality.
+132. Parallel to geographic expansion, IGFF also aims to mainstream green lending practices within the institutional architecture of DFIs. The facility's technical assistance components will institutionalize risk assessment tools, climate disclosure frameworks, and standardized credit enhancement mechanisms. DFIs will receive tailored support to develop internal green taxonomies, enhance ESG integration, and embed climate criteria within their project appraisal and credit processes. This systemic change ensures that the impact of GCF support endures well beyond the project timeline, fostering a sustained pipeline of green investments aligned with national and global decarbonization goals.
+133. The facility's financing structure reinforces this long-term sustainability. Concessional loans provided through DFIs will be blended with ADB co-financing, reducing the weighted average cost of capital and extending loan tenorsessential conditions for scaling capital-intensive technologies like RTC renewables and green hydrogen. In addition, the $65 million RSF will leverage a 3:1 ratio, unlocking ~$390 million in loans and catalyzing ~$557 million in total financing for MSME-led CBG projects, thus building a new market segment that can eventually transition to commercial viability.
+134. As  markets  mature,  the  role  of  concessional  finance  will  taper  off.  Financing  instruments  developed  under IGFF-such as credit guarantees, concessional term lending, and project structuring models-will be absorbed into DFIs' regular operations and gradually replaced by market-based products. E-mobility, off-grid solar, and DRE technologies, which have shorter asset lives and faster loan recycling potential, will transition even faster to commercial models.
+135. IGFF's sustainability is also underpinned by its efforts in knowledge dissemination and market development. The facility  will  invest  in  toolkits,  policy  guidance,  stakeholder  platforms,  and  replicable  delivery  models-ensuring  that lessons  from  subprojects  are  institutionalized  and  inform  future  financing  decisions.  In  this  way,  the  exit  from concessional support will coincide with the emergence of more robust, resilient, and responsive domestic green finance systems.
+136. In sum, IGFF's exit is premised on transformation-both of the financial sector and the clean energy ecosystem. GCF support is catalytic, not permanent. By shifting DFIs' lending norms, expanding financing to underserved regions and sectors, and crowding in private capital, the facility will lay the institutional and financial foundations for sustained, market-driven climate investment across India.
+
+<!-- image -->
+
+B
+
+<!-- image -->
+
+C
+
+<!-- image -->
+
+| FINANCING INFORMATION                                        | FINANCING INFORMATION                                                                                                                                                                                                     | FINANCING INFORMATION                                                                                                                                                                                                     | FINANCING INFORMATION                                                                                                                                                                                                     | FINANCING INFORMATION                                                                                                                                                                                                     | FINANCING INFORMATION                                                                                                                                                                                                     | FINANCING INFORMATION                                                                                                                                                                                                     | FINANCING INFORMATION                                                                                                                                                                                                     |
+|--------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| (a) Requested GCF funding (i + ii + iii + iv + v + vi + vii) | Total amount (in USD million)                                                                                                                                                                                             | Total amount (in USD million)                                                                                                                                                                                             | Total amount (in USD million)                                                                                                                                                                                             | Currency                                                                                                                                                                                                                  | Currency                                                                                                                                                                                                                  | Currency                                                                                                                                                                                                                  | Currency                                                                                                                                                                                                                  |
+| (a) Requested GCF funding (i + ii + iii + iv + v + vi + vii) | 200                                                                                                                                                                                                                       | 200                                                                                                                                                                                                                       | 200                                                                                                                                                                                                                       | USD                                                                                                                                                                                                                       | USD                                                                                                                                                                                                                       | USD                                                                                                                                                                                                                       | USD                                                                                                                                                                                                                       |
+| GCF financial instrument                                     | Amount                                                                                                                                                                                                                    | Amount                                                                                                                                                                                                                    | Tenor                                                                                                                                                                                                                     | Grace period                                                                                                                                                                                                              | Grace period                                                                                                                                                                                                              | Pricing                                                                                                                                                                                                                   | Pricing                                                                                                                                                                                                                   |
+| (i) Senior loans                                             | 187                                                                                                                                                                                                                       | 187                                                                                                                                                                                                                       | 20 years                                                                                                                                                                                                                  | 5 years (Output 1.1) 17 years (Output 1.2)                                                                                                                                                                                | 5 years (Output 1.1) 17 years (Output 1.2)                                                                                                                                                                                | 1.25%                                                                                                                                                                                                                     | 1.25%                                                                                                                                                                                                                     |
+| (iii) Grants                                                 | 13                                                                                                                                                                                                                        | 13                                                                                                                                                                                                                        | n/a                                                                                                                                                                                                                       |                                                                                                                                                                                                                           |                                                                                                                                                                                                                           |                                                                                                                                                                                                                           |                                                                                                                                                                                                                           |
+| (b)Co-financing information                                  | Total amount                                                                                                                                                                                                              | Total amount                                                                                                                                                                                                              | Total amount                                                                                                                                                                                                              | Currency                                                                                                                                                                                                                  | Currency                                                                                                                                                                                                                  | Currency                                                                                                                                                                                                                  | Currency                                                                                                                                                                                                                  |
+| (b)Co-financing information                                  | 793                                                                                                                                                                                                                       | 793                                                                                                                                                                                                                       | 793                                                                                                                                                                                                                       | million USD ($)                                                                                                                                                                                                           | million USD ($)                                                                                                                                                                                                           | million USD ($)                                                                                                                                                                                                           | million USD ($)                                                                                                                                                                                                           |
+| Name of institution                                          | Financia l instrume nt                                                                                                                                                                                                    | Amount                                                                                                                                                                                                                    | Currency                                                                                                                                                                                                                  | Tenor & grace                                                                                                                                                                                                             | Pricing                                                                                                                                                                                                                   | Pricing                                                                                                                                                                                                                   | Seni ority                                                                                                                                                                                                                |
+| Asian Development Bank                                       | Senior Loans                                                                                                                                                                                                              | 788                                                                                                                                                                                                                       | million USD ($)                                                                                                                                                                                                           | 20 years with 5 years grace period                                                                                                                                                                                        | Flexible: SOFR+net spread (currently 87-167 bps) 43                                                                                                                                                                       | Flexible: SOFR+net spread (currently 87-167 bps) 43                                                                                                                                                                       | pari pass u                                                                                                                                                                                                               |
+|                                                              | Grant                                                                                                                                                                                                                     | 5                                                                                                                                                                                                                         | million USD ($)                                                                                                                                                                                                           |                                                                                                                                                                                                                           |                                                                                                                                                                                                                           |                                                                                                                                                                                                                           |                                                                                                                                                                                                                           |
+| (c) Total financing (c) = (a)+(b)                            | Amount                                                                                                                                                                                                                    | Amount                                                                                                                                                                                                                    | Amount                                                                                                                                                                                                                    | Currency                                                                                                                                                                                                                  | Currency                                                                                                                                                                                                                  | Currency                                                                                                                                                                                                                  | Currency                                                                                                                                                                                                                  |
+| (c) Total financing (c) = (a)+(b)                            | 993                                                                                                                                                                                                                       | 993                                                                                                                                                                                                                       | 993                                                                                                                                                                                                                       | million USD ($)                                                                                                                                                                                                           | million USD ($)                                                                                                                                                                                                           | million USD ($)                                                                                                                                                                                                           | million USD ($)                                                                                                                                                                                                           |
+| (d) Other financing arrangements and contributions           | The above financing is expected to mobilize a further $1.178 billion from DFIs and $754 million in equity from project proponents, bringing the total financing for investments supported by the program to $2.8 billion. | The above financing is expected to mobilize a further $1.178 billion from DFIs and $754 million in equity from project proponents, bringing the total financing for investments supported by the program to $2.8 billion. | The above financing is expected to mobilize a further $1.178 billion from DFIs and $754 million in equity from project proponents, bringing the total financing for investments supported by the program to $2.8 billion. | The above financing is expected to mobilize a further $1.178 billion from DFIs and $754 million in equity from project proponents, bringing the total financing for investments supported by the program to $2.8 billion. | The above financing is expected to mobilize a further $1.178 billion from DFIs and $754 million in equity from project proponents, bringing the total financing for investments supported by the program to $2.8 billion. | The above financing is expected to mobilize a further $1.178 billion from DFIs and $754 million in equity from project proponents, bringing the total financing for investments supported by the program to $2.8 billion. | The above financing is expected to mobilize a further $1.178 billion from DFIs and $754 million in equity from project proponents, bringing the total financing for investments supported by the program to $2.8 billion. |
+
+## C.2. Financing by component
+
+| Component   | Output   | Indicative cost million USD ($)   | GCF financing       |                        | Co-financing           |                       |                       |
+|-------------|----------|-----------------------------------|---------------------|------------------------|------------------------|-----------------------|-----------------------|
+|             |          |                                   | Amoun t million USD | Financia l Instrum ent | Amount million USD ($) | Financial Instrume nt | Name of Institution s |
+|             |          |                                   | ($)                 |                        |                        |                       |                       |
+
+43 ADB's pricing includes a reference rate (SOFR) plus a net spread over the reference rate including effective contractual spread of 50bps, surcharge on funding cost margin and maturity premium.. See https://www.adb.org/what-we-do/public-sector-financing/lending-policiesrates.
+
+<!-- image -->
+
+<!-- image -->
+
+| Component 1 Financing for DFIs to scale up emerging clean energy technologies                               | Output 1.1 DFIs have secured concessional loans to finance emerging clean energy                                                            | 915.0               | 122.0               | Senior Loans        | 788.0               | Senior Loans        | ADB                 |
+|-------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|---------------------|---------------------|---------------------|---------------------|---------------------|---------------------|
+| Component 1 Financing for DFIs to scale up emerging clean energy technologies                               | technologies                                                                                                                                |                     |                     |                     | 5.0                 | Grant               | ADB                 |
+| Component 1 Financing for DFIs to scale up emerging clean energy technologies                               | Output 1.2 Risk-sharing facility (RSF) is established to de-risk investments in compressed biogas (CBG) projects                            | 65.0                | 65.0                | Senior Loan*        |                     |                     |                     |
+| Component 2 Institutional capacity building for DFIs, Public/Private FIs, PFIs, and MSME project developers | Output 2.1 DFIs have enhanced technical capacities to finance emerging clean energy technologies                                            | 6.0                 | 6.0                 | Grants              |                     |                     |                     |
+| Component 2 Institutional capacity building for DFIs, Public/Private FIs, PFIs, and MSME project developers | Output 2.2 MSMEs and participating financial institutions (PFIs) have enhanced technical capacities to access credit guarantees through RSF | 3.0                 | 3.0                 | Grants              |                     |                     |                     |
+| Component 2 Institutional capacity building for DFIs, Public/Private FIs, PFIs, and MSME project developers | Output 2.3 Public/private FIs adopt tools and frameworks to scale up financing for emerging clean energy technologies                       | 2.85                | 2.85                | Grants              |                     |                     |                     |
+| Monitoring & Evaluation**                                                                                   | -                                                                                                                                           | 1.15                | 1.15                | Grant               |                     |                     |                     |
+| Indicative total cost (USD)                                                                                 | Indicative total cost (USD)                                                                                                                 | 993 million USD ($) | 200 million USD ($) | 200 million USD ($) | 793 million USD ($) | 793 million USD ($) | 793 million USD ($) |
+
+C
+
+* Principal repayments under this loan would be contingent on capital remaining in the RSF corpus at the end of its duration.
+
+**  M&amp;E  costs  are  embedded  within  sub-project  design  activities  managed  by  ADB,  and  ADB  will  assume  the  associated responsibilities and costs
+
+## C.3 Capacity building and technology development/transfer (max. 250 words, approximately 0.5 page)
+
+- C .3.1  Does GCF funding finance capacity building activities?
+
+- [x] Yes ☒
+
+- [ ] No ☐
+
+C.3.2. Does GCF
+
+funding
+
+finance
+
+technology
+
+development/transfer?
+
+- [ ] Yes ☐
+
+- [x] No ☒
+
+137. Under  Component  2,  the  program  will  provide  technical  assistance  to  DFIs  to  integrate  climate  risk assessment tools, develop standardized project evaluation methodologies, and improve sectoral understanding to enhance pipeline development for green investments. The program will also institutionalize green lending practices, including the adoption of climate-related financial disclosure frameworks and risk screening tools, ensuring long-term sustainability. Key activities include training sessions on climate risk management, development of climate finance taxonomies, and establishment of Project Implementation Units (PIUs) within DFIs to enhance project monitoring and safeguard compliance.
+138. Additionally, the program will support policy dialogues with financial regulators such as the RBI and the SEBI to  promote  the  widespread  adoption  of  green  finance  practices.  To  further  support  market  transformation,  peer learning initiatives among DFIs and commercial banks will be organized to disseminate best practices in green finance innovations.
+
+<!-- image -->
+
+C
+
+<!-- image -->
+
+139. The total requested GCF funding for these capacity-building activities is approximately USD 10.90 million, which  will  unlock  significant  private  sector  investments  by  reducing  financial  barriers  and  improving  institutional capabilities to scale clean energy solutions across India.
+
+<!-- image -->
+
+## EXPECTED PERFORMANCE AGAINST INVESTMENT CRITERIA
+
+This section refers to the performance of the project/programme against the investment criteria as set out in the GCF's Initial Investment Framework.
+
+## D.1. Impact potential (max. 500 words, approximately 1 page)
+
+140. IGFF is designed to accelerate  India's  clean  energy  transition  by  de-risking  investments  in  emerging  clean energy technologies, expanding access to concessional finance, and strengthening the financial ecosystem to support low-carbon growth. By integrating concessional capital, risk-sharing mechanisms, and technical assistance, IGFF will increase the scale, speed, and commercial viability of clean energy investments.
+141. IGFF is expected to mobilize USD 2.8 billion in clean energy investments and facilitate the deployment of the following technologies:
+- Solar &amp; RTC renewables: Installation of 363 MW of decentralized solar projects and 473 MW of RTC renewable energy capacity (578 MWh BESS), improving grid reliability and reducing fossil fuel dependency.
+- Decentralized Renewable Energy: Deployment of ~46,000 3HP solar-powered pumps and ~17,000 5HP solarpowered pumps
+- Compressed Biogas: 194 CBG plants, 111 5-TPD plants, 82 10-TPD plants, and 1 30-TPD plants, reducing methane emissions
+- E-mobility: Financing for ~100,000 electric two-wheelers and ~30,000 electric three-wheelers, supporting the transition to low-emission transport.
+- Green  Hydrogen: 451  MW  of  electrolyzer  capacity,  enabling  the  production  of  ~43,000  tonnes  of  green hydrogen, reducing reliance on fossil-based hydrogen in industrial applications.
+142. IGFF aims to unlock investment in clean energy technologies that remain largely underserved or are advancing too slowly under current market conditions. For instance, while battery storage deployment remains minimal at just 219 MWh nationwide, IGFF will increase this by 578 MWh-representing a 164% boost and directly enabling more reliable Round-the-Clock (RTC) renewable energy (Table 7). In green hydrogen, where India's current production is negligible, IGFF will catalyze a substantial scale-up by deploying 451 MW of electrolyzer capacity, producing ~43,000 tonnes of green hydrogen annually.
+143. In rural e-mobility, where uptake remains limited outside urban hubs, IGFF will support the deployment of over 131,000 electric 2/3-wheelers-facilitating inclusive electrification. Similarly, for decentralized renewable energy (DRE), IGFF will expand access to solar-powered dairy units and add ~63,000 solar irrigation pumps, contributing to more resilient rural livelihoods. These investments provide early proof points and financial viability for technologies that are otherwise unlikely to scale under current market conditions, helping shift India's clean energy trajectory toward broader inclusion and deep decarbonization.
+144. IGFF will result in a projected reduction of 50 million tCO ₂ e over the lifetime of supported projects, contributing directly to India's NDC target of reducing emissions intensity by 45% by 2030 compared to 2005 levels.
+
+Table 7: Mitigation Potential - GHG Emission Reduction
+
+| Project                          | GHG Reduction (over lifetime)   | Other co-benefit(s)                                                                                   |
+|----------------------------------|---------------------------------|-------------------------------------------------------------------------------------------------------|
+| Round-The-Clock Renewable Energy | 10,750,300 tCO2e                | Enhances grid reliability, enables 24/7 renewable power, and reduces fossil fuel dependency.          |
+| Green Hydrogen                   | 7,563,731 tCO2e                 | Supports industrial decarbonization, reduces reliance on grey hydrogen, and enhances energy security. |
+
+<!-- image -->
+
+D
+
+<!-- image -->
+
+<!-- image -->
+
+| CBG                                                   | 22,840,576 tCO2e   | Converts agricultural and organic waste into clean energy, reduces methane emissions, and boosts rural incomes.   |
+|-------------------------------------------------------|--------------------|-------------------------------------------------------------------------------------------------------------------|
+| E-mobility (2, 3-electric wheelers and related infra) | 1,584,998 tCO2e    | Reduces vehicular emissions, cuts urban air pollution, and lowers fuel costs for users.                           |
+| DRE based applications                                | 7,326,970 tCO2e    | Reduces reliance on diesel, supports rural electrification, and improves agricultural productivity.               |
+
+D
+
+145. The transition to a green economy under IGFF is expected to generate approximately 139,234 jobs across manufacturing,  installation,  operations,  and  maintenance,  contributing  to  inclusive  economic  growth  and  workforce development. A strong focus will be placed on rural employment, particularly in bioenergy, decentralized renewable energy (DRE), and sustainable agriculture.
+146. IGFF is projected to abate 50 million tCO ₂ e over the lifetime of its projects, making a substantial contribution to India's decarbonization efforts. To put this into perspective, India's energy-related CO ₂ emissions were approximately 2516 MtCO ₂ e in 2022 44 , with the power sector alone accounting for 33% of total greenhouse gas emissions. The transport sector, another key focus of IGFF, contributed about 14% of energy-related emissions, with road transport responsible for nearly 90% of that share. IGFF's interventions-spanning renewable energy deployment, energy efficiency, clean transportation, green hydrogen, and bioenergy-will help mitigate emissions at scale, aligning with India's Nationally Determined Contributions (NDCs) and net-zero ambition.
+147. Relative to India's energy and transport emissions, IGFF's 50 MtCO ₂ e mitigation impact represents 1.99% of India's total annual energy-related emissions. Given that these reductions are distributed over the lifetime of the projects, IGFF will provide a sustained annual mitigation impact, reducing reliance on fossil fuels while strengthening India's clean energy transition. Additionally, by catalyzing financing for emerging technologies, IGFF is expected to drive systemic market  shifts,  de-risk  private  sector  participation,  and  ensure  long-term  sustainability,  making  it  a  transformative intervention for India's low-carbon future.
+
+## D.2. Paradigm shift potential (max. 500 words, approximately 1 page)
+
+148. IGFF is designed to catalyze structural change in India's clean energy finance landscape by institutionalizing green  lending  within  DFIs.  Through  a  strategic  blend  of  concessional  loans,  technical  assistance,  and  risk-sharing instruments, IGFF enables DFIs to expand their portfolios toward emerging clean energy technologies such as RTC renewables,  green  hydrogen,  CBG,  and  DRE-sectors  typically  considered  too  risky  or  premature  by  commercial lenders. By embedding climate-aligned financing frameworks, appraisal tools, and disclosure standards within partner DFIs, IGFF creates a lasting foundation for climate finance that will continue beyond the programme's implementation period. DFIs-central actors in India's financial system-will emerge as climate finance champions, facilitating private sector participation and anchoring long-term investment flows.
+
+## Enabling scale and market demonstration
+
+149. The RSF plays a critical role in demonstrating how innovative financial structuring can unlock credit to MSMEs in the CBG sector, where traditional bank lending remains severely constrained.  Supported by a $65 million GCF loan, it plays a pivotal role in enabling MSME participation in the CBG sector, one of the most underdeveloped clean energy markets in India despite its high mitigation potential under the SATAT initiative. By offering 50% partial credit guarantees and reducing the cost of capital, the RSF addresses high interest rates and stringent collateral requirements that currently prevent MSMEs from accessing commercial loans. Its leverage ratio of 1:3 ensures significant crowding-in of PFI lending,
+
+44 https://www.iea.org/countries/india/emissions
+
+<!-- image -->
+
+D
+
+<!-- image -->
+
+enabling approximately $557 million in total project financing. This creates a scalable model that can be expanded across other sectors, while also addressing geographic equity by supporting high-impact projects in underserved areas.
+
+150. Beyond CBG, IGFF supports large-scale deployment of RTC RE, where battery storage integration is critical for grid reliability but remains commercially marginal. These pilot investments will demonstrate the viability of RTC business models and provide market signals to commercial lenders and developers, encouraging replication.
+
+## IGFF's contribution against current deployment level
+
+Table 8:  IGFF's contribution against current deployment level
+
+| Technology                 | Current Deployment (2025)                                                                                                                                                               | Business-as-usual (BAU) projection                                                                                                                                                                                     | IGFF Deployment                                                                 | %Increase from IGFF                 |
+|----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------|-------------------------------------|
+| RTC renewables             | ~64.7 GWhybrid RE under planning 45 ~111 MW(219 MWh) BESS installed 46                                                                                                                  | - Large RE capacity (~500+ GWby 2050) but intermittent; significant reliance on coal/gas for baseload - Renewables ~60% of electricity; storage deployment limited, many areas still face outages or use diesel backup | +473 MWRTC Solar +578 MWh BESS                                                  | 164% increase (for battery storage) |
+| Green hydrogen             | <0.1 MTPA production A few tens ofMW electrolyzers 47                                                                                                                                   | ~25-27 MTPA by 2050 48                                                                                                                                                                                                 | +451 MWelectrolyser capacity ~43,000 tonnes of annual green hydrogen production | Massive scale-up                    |
+| Compressed biogas          | ~75 operational plants 49                                                                                                                                                               | ~5,000 plants under SATAT by 2030 may not be met                                                                                                                                                                       | +194 new CBG plants of size ranging between 5TPD-30 TPD                         | 158% increase                       |
+| E-Mobility (2/3- Wheelers) | 50%+ EV share in urban three-wheelers/ ~4% of new two-wheeler sales were electric 50 Low rural adoption                                                                                 | - Significant EV uptake but not complete: perhaps ~50- 60% of 2/3-wheeler fleet electric by 2050. - Urban areas lead EV adoption                                                                                       | ~+131,000 EVs (rural/peri- urban focus)                                         | Significant rural penetration       |
+| DRE (e.g.: dairy sector )  | Few hundred units in pilot stage (Most of India's ~75 million rural microenterprises (tailor shops, mills, agro- processing units, etc.) still rely on erratic grid power or diesel) 51 | <10% of rural dairy operations have solar- based cooling                                                                                                                                                               | ~+11,00 solar dairy PV units                                                    | Substantial new coverage            |
+
+45 https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2100603
+
+46  https://www.pv-magazine-india.com/2024/07/09/indias-installed-battery-storage-capacity-reached-219-1-mwh-as-of-march-end-mercom/
+
+47 https://www.adb.org/publications/india-s-green-hydrogen-review-and-perspective
+
+48 https://www.ceew.in/sites/default/files/how-can-india-boost-investments-for-financing-domestic-green-hydrogen-production.pdf
+
+49  https://www.worldbiogasassociation.org/wp-content/uploads/2024/10/WBA-India-Policy-and-Market-Briefing-2024.pdf
+
+50  https://iea.blob.core.windows.net/assets/06ad8de6-52c6-4be3-96fc-2bdc3510617d/TransitioningIndiasRoadTransportSector.pdf
+
+51 https://www.ceew.in/publications/decentralised-renewable-energy-technologies-market-impact-potential-for-sustainable-livelihoods-india
+
+<!-- image -->
+
+<!-- image -->
+
+| Solar irrigation pumps   | ~540,000 installed under PM-KUSUM 52   | - DRE livelihood solutions grow slowly; by 2050 only limited adoption (thousands of systems). - Most rural MSMEs still use grid/diesel. Minor improvements in income and productivity for a small subset with solar appliances.   | +~64,000 new pumps   | ~12% increase   |
+|--------------------------|----------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------|-----------------|
+
+D
+
+151. The IGFF delivers a targeted boost to clean technologies that are either nascent or under-deployed under BAU trajectories. While large-scale renewables are growing rapidly, technologies critical for grid stability, rural inclusion, and industrial decarbonization-such as RTC renewables, green hydrogen, CBG, decentralized renewables and e-mobilityremain underfunded. IGFF's concessional support results in a 164% increase in battery storage deployment, supports one of the first commercial-scale green hydrogen deployments in India (451 MW of electrolyzer capacity producing approximately  43,000  tonnes  of  green  hydrogen  annually)  and  facilitates  the  installation  of  194  new  CBG  plantsrepresenting a 158% increase over the current 75 operational plants-contributing directly to methane abatement and rural income generation.
+152. Further, the program catalyzes e-mobility expansion in underserved geographies, financing 131,000 electric 2and 3-wheelers focused on rural and peri-urban areas, addressing the current urban bias in EV adoption. In the DRE sector, IGFF supports deployment of 11,000 new solar PV units in rural dairy applications, scaling a solution currently present only at pilot scale. Additionally, it will add over 64,000 solar irrigation pumps, representing a ~12% increase over the 540,000 currently deployed under PM-KUSUM, enhancing rural livelihoods and reducing diesel dependency. These interventions shift the BAU pathway by catalyzing early-stage markets, de-risking technologies, lowering financing costs for DFIs and MSME developers, and unlocking private capital. Collectively, they accelerate both mitigation outcomes and inclusive development while building India's long-term clean energy ecosystem.
+
+## GCF support is an incentive for DFIs - key players in the Indian financial system - to scale up energy transition financing and address underserved regions
+
+153. Indian DFIs are central to scaling up climate-aligned investments, particularly in segments where commercial financial institutions remain hesitant to lend due to high perceived risks and nascent market conditions. These institutions are strategically positioned to serve as financial intermediaries for deploying concessional capital in emerging clean energy sectors, leveraging their existing networks, policy mandates, and experience with infrastructure and priority sector lending.
+4. However, as highlighted in section 3 of the feasibility study (Annex 2), DFIs face structural financing constraints that limit their ability to support longer-tenure, capital-intensive clean energy investments. Their typical cost of borrowing remains elevated-averaging around 7.5%-and average loan tenors remain between 10-15 years, far short of the 2025 years ideally required for financing projects such as RTC renewables, green hydrogen, and DRE systems. REC, for example, has committed to expanding its green finance portfolio and has raised a little more than USD 1 billion through green bonds, yet its current financing remains concentrated in conventional renewables, with limited exposure to RTC renewables, battery storage, and industrial decarbonization solutions. One of the constraints is also the lack of a strong pipeline of bankable projects in emerging clean energy areas, compounded by the need for support in structuring financial instruments tailored to these technologies that are low-cost and offer longer tenor periods. GCF's concessional financeblended with ADB's lending-serves as a catalytic incentive to redirect DFI lending portfolios towards clean energy subprojects that are otherwise underfunded due to high risk and uncertain returns.
+
+52  https://www.mercomindia.com/solar-pumps-pradhan-mantri-kisan-urja
+
+<!-- image -->
+
+D
+
+<!-- image -->
+
+155. DFIs are uniquely positioned to channel investments into India's most underserved regions, particularly in the North-Eastern and Eastern states. Despite their considerable renewable energy potential-including solar, hydro, and biomass-these states account for only 0.21% of India's total installed renewable energy capacity. Structural barriers including limited access to finance, high perceived risks, and inadequate energy infrastructure have historically deterred investment. Rural districts in these regions continue to experience prolonged power outages (up to 8-10 hours daily), dependence on traditional fuels, and limited access to clean energy solutions.
+156. By offering blended finance at concessional terms, GCF can play a catalytic role in incentivizing DFIs to expand their clean energy portfolios into high priority yet underfunded geographies. Concessional capital will help lower the cost of lending, mitigate project-level risks, and improve the commercial viability of clean energy interventions. In doing so, GCF funding will not only unlock the renewable energy potential of these regions but also promote equitable energy access and inclusive development.
+
+## GCF support through IGFF will unlock systemic change across the financial system
+
+157. Beyond mobilizing capital, GCF support will play a transformative role in institutionalizing green lending practices within  DFIs.  While  DFIs  have  been  instrumental  in  financing  conventional  infrastructure,  many  lack  dedicated frameworks, toolkits, or disclosure systems to evaluate climate-related risks or align with climate taxonomies. Under the IGFF program, GCF-financed technical assistance (component 2) will help develop standardized investment appraisal frameworks,  environmental  and  social  safeguards,  and  gender-responsive  financing  practices  within  at  least  5 participating DFIs. DFIs will also be equipped with monitoring and reporting tools aligned with GCF's results framework, improving long-term accountability and transparency.
+
+Capacity-building  efforts  will  include  structured  training  on  climate  risk  management,  domestic  climate  disclosure frameworks,  credit  evaluation  for  low-carbon  technologies,  pipeline  development  and  ESG  due  diligence-thereby embedding  climate  considerations  into  lending  operations.  These  reforms  will  not  only  strengthen  the  operational capacity of DFIs but also signal market confidence, thereby encouraging greater participation from commercial banks and private investors. Furthermore, IGFF's engagement with regulators, policymakers, and financial institutions will drive broader reforms in green finance taxonomies, disclosure requirements, and risk assessment methodologies, reinforcing long-term climate-aligned lending. By mainstreaming these practices across DFIs, the IGFF will contribute to building a more climate-resilient financial ecosystem capable of supporting India's net-zero transition over the long term.
+
+## D.3. Sustainable development (max. 500 words, approximately 1 page)
+
+158. IGFF advances climate-resilient development by scaling clean energy deployment across energy, transport, and agriculture  sectors.  In  doing  so,  the  facility  contributes  directly  to  multiple  sustainable  development  goals  (SDGs) including:
+- SDG 13 (Climate Action): through significant mitigation outcomes-over 50 million tCO ₂ e avoided-and longterm adaptation co-benefits.
+- SDG 5 (Gender Equality) : by embedding gender-responsive financing instruments and offering dedicated capacity-building for women-led enterprises.
+- SDG 7 (Affordable and Clean Energy) by expanding clean energy access and scaling decentralized and innovative technologies.
+- SDG 8 (Decent Work and Economic Growth) through green job creation in emerging clean energy technologies and energy-driven rural livelihoods.
+- SDG 9 (Industry, Innovation, and Infrastructure) by strengthening climate-aligned financial systems and mainstreaming green lending.
+- SDG 11 (Sustainable Cities and Communities) by fostering low-carbon transport and off-grid energy solutions for per-urban and rural areas.
+- SDG 15 (Life on Land) by supporting bioenergy solutions (e.g., CBG) which improves waste management and promotes sustainable agricultural practices.
+159. The facility aims to generate inclusive and sustainable development benefits, across the following dimensions:
+
+<!-- image -->
+
+Table 9: Sustainability Dimensions of the IGFF
+
+| Sustainability Dimension   | Sustainability Attributes                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+|----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Environmental              | • IGFF is expected to result in 50 million tonnes of CO ₂ equivalent emissions reductions over its lifetime. Projects in compressed biogas and solar irrigation will reduce local air pollution and improve soil and water outcomes by replacing diesel-based energy. The programme's support for clean energy assets (solar, hydrogen, bioenergy) also contributes to long-term climate resilience by reducing dependence on fossil fuel imports and enabling climate- adaptive infrastructure.                                                            |
+| Economic                   | • The facility will support the creation of over 139,000 direct and indirect jobs in clean energy manufacturing, installation, and services. By reducing fossil fuel dependency, IGFF facilitates national savings on imports and fuel subsidies. For example, cumulative avoided costs include INR 14 million annually for CBG, INR 7.1 million for e-mobility, and INR 8.4 million for solar irrigation (Annex 3). Through DRE solutions, the programme also unlocks income- generating opportunities for small-scale farmers and rural microenterprises. |
+| Social                     | • IGFF promotes inclusive development by enhancing energy access in underserved rural and peri-urban areas, supporting agricultural productivity and food security through solar irrigation, and improving health outcomes by reducing indoor and ambient air pollution from biomass and diesel use. It strengthens water access and reliability, particularly in climate- vulnerable areas, and provides targeted support for low-income communities, improving the quality of life through reliable, clean energy.                                        |
+| Knowledge                  | transformation. Through codified case studies and toolkits-particularly from early deployments in RTC renewables, green hydrogen, DRE, and the Risk Sharing Facility-the facility will enable replication of successful models across geographies and sectors. Capacity- building efforts will establish communities of practice and expert networks within DFIs and partner institutions, ensuring that technical expertise in climate risk assessment, financial                                                                                          |
+
+D .4. Needs of recipient (max. 500 words, approximately 1 page)
+
+<!-- image -->
+
+D
+
+<!-- image -->
+
+## Needs of the country
+
+160. India's clean energy transition is central to its commitment to achieve net-zero emissions by 2070 and reduce emissions intensity by 45% by 2030, as outlined in its NDCs. Achieving these targets requires a systemic scale-up of emerging climate technologies-such as RTC renewable energy, green hydrogen, CBG, and DRE-that are essential to  decarbonize  hard-to-abate  sectors  and  ensure  energy  access  in  underserved  regions.  Despite  strong  national commitments, the country faces a significant climate finance gap, requiring USD 170 billion annually and over USD 2.5 trillion by 2030 across mitigation and adaptation needs.
+161. However,  macroeconomic  conditions  significantly  constrain  India's  fiscal  ability  to  meet  these  needs.  The Government of India's 2023-24 Union Budget estimates a fiscal deficit of 5.9% of GDP, and public debt is projected to average 56% of GDP between 2025-29. With subsidies on food, fertilizer, and fuel absorbing a large share of public expenditure, there is limited fiscal space for public investment in emerging clean energy technologies. Private investment, meanwhile, is skewed toward established utility-scale solar and wind, where returns are predictable and risk perception is low. Newer technologies face prohibitive financing costs and underdeveloped enabling ecosystems. Key underfunded clean energy sectors include:
+- Round-the-clock renewable energy (RTC-RE): Higher capital costs for battery storage in comparison to standard solar PV and limited long-tenor debt makes RTC-RE financially unviable without concessional support.
+- Green hydrogen: Production costs remain USD 3.5-5 per kg, while breakeven is below USD 2 per kg. Existing subsidies remain insufficient to close this gap.
+- Compressed biogas (CBG): High capital costs, inefficient biomass supply chains, and long payback periods deter investment.
+6. EV infrastructure: High financing costs, interest rates 1-9% higher than ICE vehicles, and shorter loan tenures
+- limit consumer adoption. Adoption concentrated in urban areas.
+8. Solar pumps and DRE: Limited private financing, weak revenue models, and high perceived risks hinder scaleup.
+
+## Needs of DFIs
+
+162. DFIs are essential to bridging this financing gap but are limited by structural lending constraints. Currently, most DFIs offer loans at interest rates ranging from 9.6% to 11.5%, with tenors typically capped at 10-15 years-insufficient for capital-intensive clean energy projects that require 20-25-year loan horizons. High cost of capital (~7.5%) further inhibits their ability to offer affordable financing. DFIs also face capacity gaps in climate risk assessment, structuring blended finance instruments, and aligning with disclosure frameworks such as BRSR-critical for accessing international climate capital. Without concessional co-financing and technical support, DFIs cannot scale investments in early-stage technologies or underserved geographies.
+
+## Needs of project proponents (private sector and MSMEs)
+
+163. For  project  proponents-particularly  MSMEs  and  women-led  enterprises-barriers  are  more  acute.  These include  high  interest  rates,  stringent  collateral  requirements,  and  limited  access  to  credit  guarantees  or  project development support. Sectors like CBG, rural e-mobility, and DRE remain excluded from mainstream financing due to fragmented  markets  and  a  lack  of  bankable  project  pipelines.  Gender  disparities  exacerbate  exclusion,  as  women entrepreneurs face lower financial literacy and weaker access to networks and finance.
+
+## How IGFF addresses these needs
+
+164. IGFF  is  structured  to  systematically  address  these  barriers  through  a  blend  of  financial,  institutional,  and regulatory interventions:
+1. Blended concessional finance (80:20 ADB:GCF) lowers the cost of capital, improves tenors, and enhances bankability for high-impact, low-carbon technologies, supporting the creation of USD 2.8 billion in clean energy investments.
+2. Risk-sharing mechanisms , such as the USD 65 million RSF for CBG, catalyze lending to MSMEs by offering partial credit guarantees and lowering collateral requirements, with a projected leverage ratio of over 1:3.
+
+<!-- image -->
+
+D
+
+<!-- image -->
+
+D
+
+<!-- image -->
+
+3. Technical assistance equips DFIs with tools for climate risk analysis, project appraisal, ESG compliance, and gender-responsive finance.
+4. Institutional support helps align DFI operations with India's evolving green finance architecture-including BRSR and RBI/SEBI guidelines-to unlock commercial and concessional capital.
+165. By catalyzing investments in frontier technologies and underserved geographies, IGFF will help redirect financial flows from conventional to climate-aligned investments, enabling India to meet its NDCs and net-zero ambition while building an inclusive and resilient green finance ecosystem.
+
+## D.5. Country ownership (max. 500 words, approximately 1 page)
+
+India  has  demonstrated  a  strong  political  commitment,  backed  up  by  policies  and  regulations,  that  are underpinning the development of the Facility.
+
+166. In its latest revised Nationally Determined Contribution, India has made a commitment to reduce its emissions intensity by one-third by 2030, compared to 2005 levels. This can only be achieved through a substantial increase in the country's renewable energy capacity; and through the creation of a carbon sink of 2.5 to 3 GtCO2e created by additional forest and tree cover by 2030. At COP26 in November 2021, India furthermore committed to reaching a share of 50% of the total electric power capacity to come from non-fossil-fuel-based energy sources by 2030; and achieving net zero emissions by 2070.  Lastly, India also formally requested more concessional climate finance to catalyze the low-carbon transition.
+
+## India's National Action Plan on Climate Change and the National Missions 53
+
+167. The  Government  of  India  launched  National  Action  Plan  on  Climate  Change  (NAPCC)  on  30 th   June,  2008 outlining eight National Missions on climate change. Missions directly relevant to the facility are the following:
+
+- National Solar Mission
+- National Mission for Enhanced Energy Efficiency
+- National Mission for a Green India
+- National Mission for Sustainable Agriculture
+
+## India's Updated NDC (2022)
+
+168. India's updated NDC under the Paris Agreement reflects the country's commitment to addressing climate change and promoting climate justice. The strategic areas of intervention include promotion of sustainable living, adopting a cleaner  development  path,  emissions  intensity  reduction  (reducing  emissions  intensity  of  GDP  by  45%  by  2030, compared to 2005 levels), renewable energy deployment (50% of capacity installed from non-fossil fuels based energy resources by 2030), carbon sink creation (additional carbon sink of 2.5 to 3 billion tons of CO2 equivalent by increasing forest and tree cover by 2030), climate adaptation investments (including in agriculture, water resources, mountain and coastal regions, health, disaster management), mobilizing funds and development of future technologies. 54
+
+Additional  national-level  policy  frameworks  related  to  enabling  this  facility  (sector  and  sub-sector  level frameworks). For more details, refer to Annex 2 (Feasibility Study)
+
+## RTC Renewable Energy (RE)
+
+169. By combining solar power with an energy storage facility (typically a battery or pumped storage), RTC can mitigate intermittency issues associated with non-dispatched renewable energy (solar and wind). The National Solar Mission aims to position India as a global leader in solar energy by creating favorable policy conditions for rapid diffusion across the country. RTC RE is supported by favorable Electricity Rules of 2021 55 , specifying that solar power plants are must-run power plants, i.e. must be compensated in case of curtailment. Further, Tariff-Based Competitive Bidding Process for Procurement of RTC Power was issued in 2020, anticipating RTC power. 56
+
+## Battery Storage
+
+53  Indian Government
+
+54 India's Updated First Nationally Determined Contribution Under Paris Agreement (2021)
+
+55  https://powermin.gov.in/sites/default/files/National\_Framework\_for\_promoting\_Energy\_Storage\_Systems\_August\_2023.pdf
+
+56 https://mnre.gov.in/policies-and-regulations/schemes-and-guidelines/guidelines/
+
+<!-- image -->
+
+D
+
+<!-- image -->
+
+170. The ministry of Power released the National Framework on Energy Storage Systems (ESS), including battery storage, in August 2023 57 . ESS are proposed as a solution to store excess energy from renewable sources for later use, addressing grid balancing issues and enabling peak shifting. Amongst the objectives of the ESS policy is the achievement of  24x7  dispatchable  Renewable  Energy  (RE)  power,  enhancing  grid  stability  and  reliability,  promoting  energy independence  and  resilience  in  remote  areas,  redesigning  energy  markets  to  encourage  ESS  participation,  and establishing technical standards for ESS to ensure safety, reliability and interoperability.  58  Comprehensive guidelines for  the  procurement  and  utilization  of  Battery  Energy  Storage  Systems  (BESS)  as  part  of  generation,  transmission, distribution assets, or ancillary services have further been issued. 59
+
+## Electric Vehicles and Related Infrastructure
+
+171. To achieve ambitious targets in EV growth, the Indian government has implemented various policy interventions. The Faster Adoption and Manufacturing of (Hybrid &amp;) Electric Vehicles in India ( FAME India) Scheme , launched in 2015, aims  to  reduce  fossil  fuel  dependency.  The National  Mission  on  Transformative  Mobility  and  Battery  Storage , launched by the Indian government in 2019, focuses on establishing large-scale, export-competitive integrated batteries and cell-manufacturing plants in the country.
+
+## Green Hydrogen
+
+172. The National Green Hydrogen Mission was approved in 2023 by the Indian Union Cabinet and aims to make India the international center for the production, usage, and export of green hydrogen and seeks for India to be energy independent.  There  are  two  strategic  interventions  for  the  green  hydrogen  transition:  1)  supports  the  domestic manufacturing of electrolysers, and 2) offers incentives for the production of green hydrogen. Pilot projects will begin in 2025 with shipping pilot projects and mobility pilot projects and in 2029 with low-carbon steel projects. 60  Various policy provisions  were  introduced,  including  waiving  interstate  transmission  charges  for  renewable  energy  used  in  Green Hydrogen  production,  facilitating  renewable  energy  banking,  and  ensuring  the  timely  grant  of  Open  Access  and connectivity for Green Hydrogen projects. The mission also supports the development of efficient supply chains for transporting and distributing hydrogen. A framework for regulations and standards is being established to facilitate sector growth and engagement with international norms. 61
+
+## Compressed Biogas
+
+173. The Government of India introduced the National Policy on Biofuels in 2018 to increase their use in the energy and transportation sectors over the next decade. The Sustainable Alternative Towards Affordable Transportation (SATAT) initiative aims to produce 15 million metric tons of CBG by 2023-24 from 5000 CBG plants. 62  The process involves generating CBG from waste and biomass sources through anaerobic decomposition. The Biogas Program (Phase-I) for FY 2021-22 to 2025-26 in India aims to leverage the country's substantial livestock population for setting up biogas plants to promote clean cooking fuel lighting and meeting power needs. 63
+
+## Off-grid Solar Water Pumps
+
+174. Off-grid Solar PV Applications Program is a longstanding initiative by the Ministry designed to provide solar PVbased solutions in areas without reliable grid power. Standalone solar pumps were initially part of the program until March 2017. A new scheme, Pradhan Mantri Kisan Urja Suraksha Utthan Mahabhiyan ( PM KUSUM ), has been launched by the  government  to  install  standalone  solar  pumps  in  off-grid  areas  and  solarize  existing  grid-connected  agricultural pumps. Solar home lights are also part of this initiative, implemented under the Saubhagya Scheme of the Ministry of Power. 64
+
+## Solar Feeders for Rural Areas
+
+57  https://powermin.gov.in/sites/default/files/National\_Framework\_for\_promoting\_Energy\_Storage\_Systems\_August\_2023.pdf
+
+58 Ibid.
+
+59 Ibid.
+
+60  National Green Hydrogen Mission (Government of India, 2024)
+
+61 Ibid.
+
+62 Jumpstart Biogas in India (GERMI, 2022)
+
+63 Ibid.
+
+64 Off-grid Solar Pumps (Government of India, 2023)
+
+<!-- image -->
+
+D
+
+<!-- image -->
+
+175. PM-KUSUM is  a  plan  that  ensures  energy  security  for  Indian  farmers  through  solar  power.  States  such  as Maharashtra and Bihar are pushing for solar-powered agricultural feeders to maintain energy security but there is no policy in place for such. 65
+
+## Solar Power Cold Storage
+
+176. The National Horticulture Board created a capital investment subsidy scheme for the development of cold storage. This component of the assistance program focuses on credit-linked projects related to Cold Storage, specifically those involving Controlled Atmosphere (CA) and modernization. The eligible projects include the setting up of new Cold Storage  infrastructure,  limited  to  multi-chamber  units  with  energy-efficient  technologies,  thermal  insulation,  humidity control, advanced cooling systems, and automation. 66
+
+## Engagement With the National Designated Authority
+
+177. ADB has ensured consistent dialogue and coordination among the relevant ministries and departments, thereby facilitating smooth governance and fostering ownership of the IGFF proposal. In August 2023, ADB fielded a mission in India and convened meetings with top-tier leadership, including the Managing Directors of several financial institutions, at their headquarters in Mumbai. The primary objective of these meetings was to understand the needs of these financial institutions  and  align  the  proposal.  The  institutions  in  attendance  included  the  REC,  SIDBI,  IIFCL,  NABARD,  Indian Renewable Energy Development Agency Limited (IREDA), State Bank of India (SBI), and National Bank for Financing Infrastructure and Development (NABFID).
+178. Furthermore,  separate  meetings  were  convened  with  the  Secretary  of  the  Ministry  of  Power  and  the  Joint Secretary of the Department of Economic Affairs (DEA) for alignment on the needs, objective of the proposal. ADB has consistently engaged with the Ministry of Environment, Forest and Climate Change (MoEFCC) to develop the concept and agree on the scope of the facility. The discussions also focused on the timing of the proposal submission for GCF and the potential availability of resources to the country.
+179. On December 8, 2023, ADB organized a panel session, titled 'Scaling Up Climate Finance to Meet India's Energy Transition  Goals,'  which  took  place  at  the  ADB  Pavilion  during  COP28  summit  in  Dubai,  UAE.  The  panel  featured esteemed participants from NABARD, IREDA, and SIDBI as panelists, with REC and the IIFCL among the audience. Notably,  representatives  from  the  MoEFCC  were  also  present  at  the  panel  session  and  delivered  special  remarks addressed to all the financial institutions in attendance. Furthermore, during COP28 in December 2023, ADB's climate envoy, Warren Evans, engaged in a meeting with Mr. Henry Gonzalez, Deputy Executive Director of the Green Climate Fund, on the sidelines of the event, on the proposed facility.
+180. During the period March-May 2024, ADB has also led in-country consultations with each of the DFIs in order to discuss their needs, building green pipelines and screening the alignment between their corporate policies and desired trajectories to boost climate interventions and align with the target of the Paris Agreement. The consultations resulted to narrow down the scope with specific sub project alignment with the participating DFIs. The consultations with the DFIs continued  during  Funding  Proposal  review  (last  meetings  were  held  in  February  2025),  to  prepare  comprehensive categories of program interventions that align with the GCF MRAs and ARAs.
+181. Further, India's NDA provided no objection to the proposal in September 2024.
+6. D.6. Efficiency and effectiveness (max`. 500 words, approximately 1 page)
+
+The facility represents an economically attractive and cost-effective approach to realizing India's NDC targets and contributing to global climate goals, considering GHG abatement per dollar of capital investment and per dollar of lifecycle cost.
+
+65 Solar Feeders (SAUR International, 2022)
+
+66 Cool Storage (Government of India, 2022)
+
+<!-- image -->
+
+## Additionality and Effectiveness of Concessional Loans and Guarantees
+
+182. Despite  systemic  de-risking  measures  such  as  policy  reforms,  regulatory  enhancements,  and institutional support, residual risks remain that deter private capital from investing in clean energy technologies. Financial de-risking instruments, such as concessional loans and guarantees, play a crucial role in addressing these risks by improving the risk-return profile of emerging clean energy projects.
+183. Blended  finance  mechanisms  help  redistribute  these  residual  risks  between  risk-averse  private investors and public institutions with a higher risk tolerance. Concessional capital lowers financing costs, making projects  more  bankable,  while  guarantees  provide  critical  protection  against  uncertainties  related  to  performance, revenue, and regulatory environments. The effectiveness of these instruments depends on the nature of the residual risks that persist after systemic interventions. Concessional loans are best suited for overcoming market risks, such as missing markets and cost competitiveness, while guarantees address risks related to regulatory uncertainties, revenue volatility,  and access to capital. By strategically deploying these financial tools, development finance institutions can unlock private investment and accelerate India's clean energy transition.
+184. Concessional  loans  are  essential  to  overcoming  market  and  financial  barriers  for  emerging  clean  energy technologies, particularly missing markets, cost competitiveness, and access to capital. RTC RE requires concessional finance to offset high storage costs and bridge the gap between required tariffs and market rates. This is particularly true as the market share of RE increases, when increasing storage plays a pivotal role in limiting the dependency on thermal generation in India. Green hydrogen remains uncompetitive, requiring low-cost capital to scale. E-mobility adoption is hindered by high upfront costs and interest rates, which concessional loans can reduce. DRE solutions, despite their many benefits, are only viable when they offset a sufficiently high electricity price paid to Discoms. Both DRE and offgrid solar pumps face weak financial infrastructure and credit constraints in rural areas, making long-tenor concessional debt critical for market expansion.
+185. Guarantees will unlock financing for CBG. They allow mitigating perceived risks of DFIs and PFIs due to revenue and operational risks observed in the sector. Regulatory uncertainties and volatile offtake prices deter lenders, while guarantees provide risk-sharing mechanisms to improve bankability. Insecure implementation arrangements, potential
+
+Figure 9: De-risking effect of systemic instruments on the financing cost of clean energy projects
+
+<!-- image -->
+
+<!-- image -->
+
+D
+
+<!-- image -->
+
+D
+
+<!-- image -->
+
+construction delays and operational inefficiencies threaten project viability. But also the typical investor profile of rural MSMEs with a limited credit history reduce access to finance for proponents of such investments, often resulting in banks not providing credit at all, or only with high collateral demands and interest rates. Guarantees de-risk lending, reducing collateral requirements and improving financing terms for MSME developers.
+
+## Cost Effectiveness of IGFF and Value for Money
+
+186. With an estimated cost per tonne of CO2 abated of USD 55 (including the entire investment size of USD 2.8bn  expected  to  be  raised  by  IGFF),  the  proposed  interventions  are  competitive  compared  to  global benchmarks . While technologies such as simple utility scale solar PV would be available at lower costs (around USD 40 per tonne of CO2 abated 67 ), IGFF focuses on currently expensive technologies that are critical for scaling up more affordable  renewable  energy  in  the  future,  such  as  green  hydrogen  and  round-the  clock  renewables.  This  further excludes the wider mitigation and adaptation/resilience benefits compared to business as usual that will materialize as the targeted financial institutions embark on low-GHG emissions and climate-resilient corporate pathways aligned with the  goals  of  the  Paris  Agreement.  The  facility  aims  to  mobilize  significant  co-financing  by  strategically  crowding  in commercial capital. The financial architecture combines GCF's concessional financing with market-based resources in an optimal structure considering specific needs of each sub-project.
+187. The cost of capital for clean energy in India is high, but for key emerging technologies targeted by the IGFF, it is even higher. A benchmarking analysis of 10 DFIs found that interest rates for clean technology financing range from 7% to 13.5%, with an average of 9.4% (see Table 6 of the FP Annex 02 - Feasibility Study). In addition, a targeted assessment of RTC RE, E-Mobility, CBG, Decentralized Solar PV, Off-Grid Solar Pumps, and Green Hydrogen showed that these technologies face an even greater average financing interest rate of 11.18%, reflecting their higher perceived risk and capital intensity. These sectors require concessionality due to large upfront costs, long payback periods, and limited commercial viability in the absence of de-risking mechanisms.
+188. The  Facility  will  support  the  DFIs  to  finance  suitable  projects  that  are  economically  viable  but  that  require concessional financing and/or innovative lending models to be financially viable. ADB's economic internal rate of return (EIRR) hurdle rate of 9% will be adopted by the DFIs for initial screening of projects. Additional project effectiveness metrics will also be screened for by DFIs, including GHG abatement per dollar of capital investment and per dollar of lifecycle cost, with benchmarks set on for each sub-sector supported by the Facility, so that DFIs are encouraged to diversify, and for each DFI's overall Facility-supported investment portfolio, to underpin the Facility's climate mitigation
+
+Figure 10: DFI rates
+
+<!-- image -->
+
+<!-- image -->
+
+D
+
+<!-- image -->
+
+objectives.  Technical  assistance  provided  to  DFIs  will  include  training  on  economic  and  climate-change  related assessment and screening of potential projects.
+
+189. A  preliminary  assessment  of  Facility's  economic  performance  was  undertaken  using  a  portfolio  of  generic projects of the type that will be eligible for inclusion (refer to Annex 03, Economic and Financial Analysis). It shows that all  chosen clean energy technologies display a high economic internal rate of return. In addition to GHG emissions reductions, the economic analysis includes cost savings from lower fuel and maintenance expenses, improved energy security by reducing reliance on imported fossil fuels, and enhanced resource efficiency. E-mobility lowers operating costs, compressed biogas repurposes waste while displacing LNG imports, and off-grid solar irrigation reduces fuel and maintenance costs for farmers.
+190. The project types are all easily scalable to reflect the overall size of the Facility and the desired portfolio mix and performance . On the basis of preliminary analysis, the aggregate EIRR of the Facility has been estimated at 22.8%, easily surpassing the assumed hurdle rate of 9%. A range of downside sensitivities was examined to confirm an expectation of robust economic performance for the Facility, even if the assumed economic value of avoided GHG emissions is significantly reduced or excluded entirely.
+191. Financial analysis furthermore demonstrates that all clean energy technologies are at least marginally financially viable but also need concessional financial support to be further promoted - either in order to increase viability of emerging technologies, or in order to incentivize the provision of loans and the removal of barriers in access to finance, tackling information asymmetry, and reaching underserved beneficiaries.
+192. The IGFF's concessional financing mechanism strengthens the financial viability of key clean energy technologies by addressing high financing costs that currently hinder investment. The Financial Internal Rate of Return (FIRR) for RTC RE (7.8%), Decentralized Solar PV (9.1%), and Green Hydrogen (9.9%) remains below their Weighted Average Cost of Capital (WACC) under standard DFI financing, making them financially unattractive. With IGFF support, WACC for these technologies is reduced to 7.8%, 9.1%, and 9.3%, respectively, improving their investment potential  while  cost-effectively  using  GCF  concessional  funding.  However,  concessional  capital  alone  is  insufficient. Dedicated credit lines incentivizing DFIs to finance clean energy technologies combined with technical assistance are necessary to further improve financial sustainability by strengthening financial institutions' climate investment frameworks and screening approaches.
+193. On the other hand, despite stronger financial viability, E-Mobility, CBG, and Off-Grid Solar Pumps remain underfinanced due to risk perception, limited technical expertise, and rigid lending criteria among DFIs . CBG, despite a FIRR of 14.2%, struggles with financing due to MSME-led investments facing high collateral requirements of up to 50%. EV adoption is constrained by high interest rates that are 1-7% higher than for internal combustion engine vehicles, while financiers remain hesitant due to uncertain borrower credit histories and the absence of a secondary market for repossessed EVs (see Annex 2, pp. 63-65). Off-grid solar pumps also face limited financing access due to supply chain inefficiencies and repayment risks from smallholder farmers. These clean energy technologies face access to finance issues due to perceived high risks by banks, stemming from a combination of volatile and/or unknown return profiles of investments and typically small or medium sized investors with uncertain credit profiles.
+
+|                        |   FIRR |   WACC DFI Only |   WACC IGFF |
+|------------------------|--------|-----------------|-------------|
+| RTC Renewable Energy   |    7.8 |             8.2 |         7.8 |
+| Decentralized Solar PV |    9.1 |            10.1 |         9.1 |
+| Green Hydrogen         |    9.9 |            10.4 |         9.3 |
+| E-Mobility             |   19.3 |            11.6 |        10.2 |
+| CBG (MSME)             |   14.2 |            12.1 |        11.6 |
+| CBG (Others)           |   13.8 |            11.3 |        10.5 |
+| Off-Grid Solar Pumps   |   46   |            15.6 |        14.2 |
+
+<!-- image -->
+
+D
+
+<!-- image -->
+
+194. To overcome these barriers, IGFF combines concessional finance with risk-sharing mechanisms and targeted technical assistance. A risk-sharing facility,  initially  designed  for  CBG  projects,  will  help  leverage  private sector financing by covering end-borrower credit risks, with every dollar in guarantees mobilizing up to six times its lending volume. Once proven successful, a further graduation in leveraging could be considered, depending on first experiences with the instrument (refer to Annex 3, EFA, and Annex 2, Feasibility Study, Appendix 4). In addition, targeted concessional  financing  towards  underfunded  clean  energy  technologies  ensures  DFI's  focus  on  those  areas  of investments as well as on rural and small/medium-sized investors. Dedicated technical support will strengthen financial institutions' ability to assess and finance climate projects, ensuring greater private sector participation in the clean energy transition and crowding in significant private investments.
+195. The IGFF facility will not crowd out private capital but will catalyze future private sector participation by targeting clean energy technologies currently too risky for commercial financing. IGFF bridges this financing gap through DFIs until risks decrease and private lenders can step in. Strict eligibility criteria and screening mechanisms in line with IGFF's program description and ADB's operations manual on financial intermediation lending and ADB's staff instructions  for  processing  financial  intermediation  lending  ensure  concessional  finance  is  only  used  where  market failures persist, preventing overlap with commercially bankable projects. With India's clean energy transition requiring $170 billion annually-far beyond IGFF's $993 million mobilization-the facility is designed to lower barriers, establish viable financial models, and de-risk early-stage investments, paving the way for private sector scale-up.
+196. In accordance with ADB's policies and procedures on financial intermediation, projects financed under this facility will  be  designed  to  address  situations  where  effective  demand  for  credit  by  potential  sub-borrowers  exists,  but  the demand is not being adequately met through the domestic financial system due to market failure or structural problems. Relending rates and on-lending conditions will be designed during project diligence and set out in each project proposal. While on-lending rates for sub-borrowers should be designed to limit the risk of market distortion, such rates will be designed to ensure efficient use of GCF proceeds and optimal benefits to ultimate beneficiaries.
+
+<!-- image -->
+
+## E. LOGICAL FRAMEWORK
+
+## E.1. Project/Programme Focus
+
+☒
+
+Reduced emissions (mitigation)
+
+- [ ] ☐ Increased resilience (adaptation)
+
+## E.2. GCF Impact level: Paradigm shift potential (max 600 words, approximately 1-2 pages)
+
+| Assessment Dimension   | Current state (baseline)                                                                                                                                                                                                                                                                                                                 | Current state (baseline)   | Potential target scenario (Description)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             | How the project/programme will contribute (Description)                                                                                                                                                                                                                                                                                                                                                                                                                |
+|------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|                        | Description                                                                                                                                                                                                                                                                                                                              | Rating                     |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| Scale                  | DFIs in India predominantly finance large-scale renewable projects (solar, wind), with limited exposure to emerging clean energy technologies such as battery storage, green hydrogen, decentralized renewable energy (DRE), CBG and round-the-clock (RTC) solutions. High perceived risks, lack of concessional capital, and absence of | Low                        | By the end of IGFF, DFIs will have significantly increased financing for emerging clean energy technologies, mobilizing at least $1.2 billion in investments. Total financing mobilized for IGFF-supported investments including from project proponents will be $1.9 billion, with $557 million specifically mobilized for CBG projects through the RSF. The private sector will have greater participation in high-impact but currently underfunded sectors, supported by risk-sharing mechanisms and concessional capital. Beyond the implementation period, these investments are expected to drive long-term reductions in CO ₂ emissions by 50 million tonnes. Green lending portfolios will be diversified, and financial institutions will routinely integrate standardized climate risk assessments. This transformation will contribute to a long-term shift in India's clean energy financing landscape. | IGFF will provide concessional capital, risk- sharing mechanisms, and technical assistance to enable DFIs to scale investments beyond utility- scale renewables. By institutionalizing new financing instruments and improving credit risk assessment, IGFF will de- risk emerging clean energy investments, attract commercial capital, and drive long-term CO ₂ reductions. The RSF will play a critical role in enhancing financing for CBG projects, ensuring that |
+
+E
+
+<!-- image -->
+
+|               |                                                                                                                                                                                                                                                                                                                                                                                                                                                        |     |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  | E                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+|---------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|               | tailored financing instruments constrain private sector participation. As a result, green finance flows remain insufficient to meet India's clean energy targets.                                                                                                                                                                                                                                                                                      |     |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  | MSMEs and PFIs have access to structured guarantees that lower perceived risks and unlock additional capital.                                                                                                                                                                                                                                                                                                                       |
+| Replicability | DFIs and financial institutions lack standardized green finance taxonomies, risk assessment frameworks, and methodologies for evaluating emerging technologies. Traditional lending models do not accommodate the unique risk-return profiles of battery storage, green hydrogen, or decentralized renewable solutions. Limited coordination between financial institutions and knowledge-sharing gaps hinders the replication of successful financing | Low | By the end of IGFF, standardized financing tools, methodologies, and climate risk assessment frameworks will be embedded into DFI operations, enabling broader adoption of green finance practices. DFIs will have institutionalized green lending policies, and knowledge- sharing mechanisms will facilitate the transfer of best practices across institutions and geographies. The financing models pioneered through IGFF will provide a replicable blueprint for scaling clean energy investments in other markets, both within India and internationally. | IGFF will integrate green finance taxonomies, climate risk models, and blended finance structures into DFIs' core lending operations. Through training, technical assistance, and policy engagement, the facility will establish financing approaches that can be adapted and replicated by other financial institutions, sectors, and regions, creating a sustainable framework for green investments beyond the program duration. |
+
+<!-- image -->
+
+|                | E                                                                                                                                                                                                                                                                                                                                                                                        | E   | E                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        | E                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+|----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|                | mechanisms across markets and regions.                                                                                                                                                                                                                                                                                                                                                   |     |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| Sustainability | While DFIs are increasingly focusing on climate finance, there is no structured mechanism to ensure sustained financing for emerging clean energy sectors. Green lending efforts rely on ad hoc concessional funding, and financial institutions lack permanent frameworks for integrating climate risk considerations into decision-making. ESG policies and risk disclosure frameworks | Low | By the end of IGFF, DFIs will have embedded structured risk-sharing mechanisms, standardized climate finance policies, and internal expertise to sustain green lending beyond the program period. Climate-aligned investment strategies will be institutionalized, and financial institutions will integrate ESG and climate risk assessments into core lending processes. The facility will contribute to long-term financial market confidence, sustaining clean energy investment flows beyond IGFF's implementation. | IGFF will strengthen DFIs' capacity to assess and structure green finance transactions, ensuring long- term sustainability through dedicated policy engagement, regulatory alignment, and technical support. By mainstreaming green lending practices, developing permanent risk- mitigation mechanisms, and fostering private sector participation, IGFF will create a self-sustaining financing ecosystem that continues to drive clean energy investments well beyond its implementation period. |
+
+<!-- image -->
+
+|                                                                                                  | E   |
+|--------------------------------------------------------------------------------------------------|-----|
+| remain inconsistent, limiting long-term institutional alignment with climate finance priorities. |     |
+
+## E.3.  GCF  Outcome  level:  Reduced  emissions  and  increased  resilience  (IRMF  core  indicators  1-4,  quantitative indicators)
+
+| GCF Result Area   | IRMF Indicator                                                 | Means of Verification (MoV)                                                                                            | Baseline                                   | Target                                    | Target                    | Assumptions / Note                                                                                                                                                                                                                         |
+|-------------------|----------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|--------------------------------------------|-------------------------------------------|---------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|                   |                                                                |                                                                                                                        |                                            | Mid-term (5 years)                        | Final (10 years) 68       |                                                                                                                                                                                                                                            |
+| TOTAL             | Core 1: GHG emissions reduced, avoided or removed/s equestered | Project-level monitoring reports, IGFF Monitoring, reporting & verification systems, national GHG inventories, reports | 209 million tonnes of CO2e (as on 2020) 69 | 1.9 million tCO2e (at the end of 3 years) | Final: 12.7 million tCO2e | For mid-term target calculation: Assuming that by year 5- CBG project + DRE projects are commissioned. By year 5 - CBG: 1 year of operation; DRE/pumps: 2 years of operation. For final target calculation: Assuming that by year 10 - all |
+
+68 The final target means the target at the end of project/programme implementation period. However, for core indicator 1 (GHG emission reduction), please also provide the target value at the end of the total lifespan period which is defined as the maximum number of years over which the impacts of the investment are expected to be effective.
+
+69 ] https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2089589#:~:text=India's%204th%20Biennial%20Update,inventory%20for%20the%20year%202020.
+
+<!-- image -->
+
+|                                   | E GREEN CLIMATE FUND FUNDING PROPOSAL V.8.0 | PAGE 64          | E GREEN CLIMATE FUND FUNDING PROPOSAL V.8.0 | PAGE 64                                                                                                                                                         | E GREEN CLIMATE FUND FUNDING PROPOSAL V.8.0 | PAGE 64                                  | E GREEN CLIMATE FUND FUNDING PROPOSAL V.8.0 | PAGE 64   | E GREEN CLIMATE FUND FUNDING PROPOSAL V.8.0 | PAGE 64   | E GREEN CLIMATE FUND FUNDING PROPOSAL V.8.0 | PAGE 64                                                                                                                                                                                                                                                                                                                                                                                               |
+|-----------------------------------|----------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------|---------------------------------------------------------|---------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|                                   |                                                                | from DFIs and project developers                                                                                                                                                                              |                                                                                        |                                                         |                                                         | projects would have commissioned but with different active years of operation. CBG: 6 years; DRE: 7 years; RTC: 4 years; Green Hydrogen: 2 years; E-mobility: 2 years Lifetime target (20 years): 50 million tCO2e                                                                                                                                                                                                                                  |
+| MRA1 Energy generation and access | Core 1: GHG emissions reduced, avoided or removed/s equestered | Project-level monitoring reports, IGFF Monitoring, reporting & verification systems, national GHG inventories, reports from DFIs and project developers                                                       | 209 million tonnes of CO2e (as on 2020) 70                                             | 1.9 million tCO2e (at the end of 3 years)               | Final: 12.5 million tCO2e                               | Lifetime target (20 years): 48.48 million tCO2e                                                                                                                                                                                                                                                                                                                                                                                                     |
+| MRA1 Energy generation and access | Supplemen tary 1.2: Installed energy stoarage capacity         | Primary Data Sources: - National statistics, government reports (e.g., censuses, surveys, asset registers) - International organizations (IRENA, IEA, World Bank, UN) and credible GIS data (e.g., NASA, ESA) | 219.1 MWh of battery storage, plus 4,745 MWof pumped storage capacity (as of Mar 2024) | 0                                                       | 578 MWh                                                 | It is anticipated that RTCproject will not be commissioned (only financially approved) within the initial five years of implementation. Consequently, setting a mid-term target value will not reflect the project's operational reality. Lifetime Target (over 20 years): 578 MWh Ministry of Power / CEA: India's cumulative Battery Energy Storage System (BESS) capacity is 219.1 MWh as of March 2024. India also has about 4,745 MW of pumped |
+
+70 ] https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2089589#:~:text=India's%204th%20Biennial%20Update,inventory%20for%20the%20year%202020.
+
+<!-- image -->
+
+|                                   | E GREEN CLIMATE FUND FUNDING PROPOSAL V.8.0 | PAGE      | E GREEN CLIMATE FUND FUNDING PROPOSAL V.8.0 | PAGE                                                                                                               | E GREEN CLIMATE FUND FUNDING PROPOSAL V.8.0 | PAGE                                   | E GREEN CLIMATE FUND FUNDING PROPOSAL V.8.0 | PAGE   | E GREEN CLIMATE FUND FUNDING PROPOSAL V.8.0 | PAGE   | E GREEN CLIMATE FUND FUNDING PROPOSAL V.8.0 | PAGE                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+|-----------------------------------|---------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|------------------------------------------------------|------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|                                   |                                                         | Secondary Data Sources : - GFF Annual Reports - Facility- commissioned surveys or studies - Expert validation, including external assessments facilitated by ADB |                                                                                      |                                                      |                                                      | hydro storage installed (with ~3,305 MWoperational)                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| MRA1 Energy generation and access | Supplemen tary 1.3: Installed renewable energy capacity |                                                                                                                                                                  | 209,440 MW (209.44 GW) - total renewable capacity (incl. large hydro) as of Dec 2024 | 363MW                                                | 836MW                                                | For mid-term target calculation: Assuming that by year 5- CBG project + DRE project is commissioned. Lifetime Target (over 20 years): 836MW Ministry of New & Renewable Energy (MNRE): India's total installed renewable energy capacity reached 209.44 GW as of Dec 31, 2024. This includes major contributions from solar (~97.86 GW) and wind (~48.16 GW) Figure includes all renewables including large hydro (in line with updated definition of RE capacity). Data as per official year-end 2024 reporting |
+| MRA1 Energy generation and access | Supplemen tary 1.4: Renewable                           |                                                                                                                                                                  | ~3.6559× 10^8 MWh                                                                    | 12,949,045 MWh                                       | 2,955,259,798 MWh                                    | Lifetime Target (over 20 years): 2,91,440,138,746 MWh                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+
+<!-- image -->
+
+|                             | energy generated                                               | per year (≈365.6 TWh in FY2022- 23)   |                 |                          | E Central Electricity Authority (CEA): In FY 2022-23, India's total electricity generation from renewables (including large hydro) was about 365.59 billion kWh. (For reference, non-hydro RE alone contributed ~203.55 billion units that year Value given is for the full fiscal year 2022-23. 'Billion units' (BU) are converted to MWh (1 BU = 1e9 kWh = 1e6 MWh). Figure includes large hydro generation for consistency with capacity above   |
+|-----------------------------|----------------------------------------------------------------|---------------------------------------|-----------------|--------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| MRA2 Low-emission transport | Core 1: GHG emissions reduced, avoided or removed/s equestered |                                       | 0 million tCO2e | Final: 0.2 million tCO2e | Lifetime Target: 1.58 million tCO2e                                                                                                                                                                                                                                                                                                                                                                                                                 |
+
+<!-- image -->
+
+|                             | E GREEN CLIMATE FUND FUNDING PROPOSAL V.8.0 | PAGE 67          | E GREEN CLIMATE FUND FUNDING PROPOSAL V.8.0 | PAGE 67   | E GREEN CLIMATE FUND FUNDING PROPOSAL V.8.0 | PAGE 67                                                                                   | E GREEN CLIMATE FUND FUNDING PROPOSAL V.8.0 | PAGE 67                                                                                                                                                                                                         | E GREEN CLIMATE FUND FUNDING PROPOSAL V.8.0 | PAGE 67   | E GREEN CLIMATE FUND FUNDING PROPOSAL V.8.0 | PAGE 67   |
+|-----------------------------|----------------------------------------------------------------|---------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------|---------------------------------------------------------|
+| MRA2 Low-emission transport | Supplemen tary 1.5 Improved low- emission vehicle fuel economy | 0.0456 litre of petrol per km                           | 0.0347 net change in fuel consumptio n per km travelled (volume of fuel per km travelled by fuel type and equivalent energy unit/joule) | Lifetime Target (over 20 years): 0.0347 litre of petrol per km New passenger cars in India averaged about 121.3 g CO ₂ /km in FY2020-21, equivalent to roughly 5.0 L/100 km (≈0.05 L/km) fuel consumption. Upcoming 2022-23 standards target ~4.89 L/100 km71 |                                                         |                                                         |
+
+## E.4. GCF Outcome level: Enabling environment (IRMF core indicators 5-8 as applicable)
+
+| Core Indicator                                                                                                                               | Baseline context (description)                                                                                                                                                                                                       | Rating for current state (baseline)   | Target scenario (description)                                                                                                                                                                                                                                           | How the project will contribute                                                                                                                                | Coverage                     |
+|----------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------|
+| Core Indicator 6: Degree to which GCF investments contribute to technology deployment, dissemination, development or transfer and innovation | India has made significant progress in deploying renewable energy, but financing for emerging technologies remains limited. Key clean energy solutions- including RTC renewables, green hydrogen, CBG, and battery storage-face high | low                                   | IGFF will accelerate the deployment of high-impact, underfinanced clean energy technologies, expanding financing across RTC-RE, green hydrogen, CBG, and battery storage, along with decentralized renewables for MSME-driven applications. This will enhance renewable | IGFF will provide concessional finance, risk-sharing mechanisms (through RSF), and DFI capacity-building to scale clean energy deployment. By enabling broader | National level (one country) |
+
+71 https://www.climatepolicydatabase.org/policies/corporate-average-fuel-economy-norms-passenger-cars-india-
+
+2015#:~:text=force%20from%202022,89%20l%2F100%20Kms
+
+<!-- image -->
+
+|                                                                                                                                                                                                                                                     |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |                                                                                                                               | E   |
+|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|-----|
+| upfront costs, limited risk capital, and lack of proven financing models. Additionally, decentralized renewable energy (DRE) applications for MSMEs remain underdeveloped due to fragmented supply chains and lack of access to affordable finance. | capacity, reduce GHG emissions, and provide sustainable alternatives to fossil fuels. IGFF is expected to mobilize USD 2.8 billion in clean energy investments and facilitate the deployment of the following technologies: • Solar & RTC renewables: Installation of 363MW of decentralized solar projects and 473 MW of RTC renewable energy capacity, improving grid reliability and reducing fossil fuel dependency. • Decentralized renewable energy: Deployment of 46,450 3HP solar-powered pumps and 17,765 5HP solar-powered pumps, enhancing energy access and supporting agricultural resilience. • Compressed biogas (CBG): Establishment of 223 CBG plants, including 111 5-TPD plants, 82 10-TPD plants, and 1 30-TPD | participation of private sector financiers and MSME developers, IGFF will drive commercial adoption of emerging technologies. |     |
+
+<!-- image -->
+
+|                                                                                                                                              |                                                                                                                                                                                                                                                                                                    |     | plant, significantly reducing methane emissions and supporting waste-to- energy solutions. • E-mobility: Financing for 100,900 electric two-wheelers and 30,270 electric three- wheelers, accelerating the shift to low-emission transport. • Green hydrogen: Deployment of 451 MW of electrolyzer capacity, enabling the production of 119 TPD of green hydrogen, reducing reliance on fossil-based hydrogen in industrial applications.   |                                                                                                                                                                                                                                | E                            |
+|----------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------|
+| Core indicator 7: Degree to which GCF Investments contribute to market development/transformati on at the sectoral, local, or national level | High capital costs and risk perceptions continue to constrain investment in India's clean energy sector, limiting financing for technologies such as green hydrogen, RTC- renewables, and CBG. Private sector participation remains suboptimal due to credit access barriers and unstructured risk | low | IGFF will reduce financing barriers by introducing concessional lending, de- risking investments, and integrating risk-sharing through the RSF. The facility will enhance private sector participation by demonstrating bankability through structured credit guarantees. The RSF                                                                                                                                                           | IGFF will mobilize DFIs to offer lower-cost, long- tenor financing for clean energy. The RSF will incentivize PFIs to lend to MSMEs in the CBG sector by providing partial credit guarantees, reducing collateral burdens, and | National level (one country) |
+
+<!-- image -->
+
+E
+
+|                                                                                                                                                                               | mitigation tools. MSME-led projects in the CBG sector, despite having strong market potential, struggle with high interest rates, stringent collateral requirements, and limited lender confidence. Gender-responsive financing remains weak, with financial products rarely tailored for                                                                                                                                                                                                                  |     | will support MSME-led CBG projects by mobilizing $390 million in PFI loans, unlocking $557 million in total financing. Gender-responsive lending frameworks will be mainstreamed into credit appraisal processes.                                                                                                                                                                                                                                                                                                             | lowering interest rates. By strengthening financial institutions' climate-aligned lending and risk assessment capabilities, IGFF will create a more resilient financial ecosystem for green investments.                                                                                                                                                                                                                                                                                     |                              |
+|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------|
+| Core indicator 8: Degree to which GCF investments contribute to effective knowledge generation and learning processes, and use of good practices, methodologies and standards | DFIs in India have demonstrated intent to integrate climate risk considerations but lack standardized green lending criteria, climate risk management frameworks, and ESG-aligned financial reporting. There is limited institutional capacity to assess the financial viability of emerging clean energy projects, and inadequate technical expertise in evaluating blended finance models. PFIs lack familiarity with risk-sharing instruments such as the RSF, limiting their ability to finance MSMEs. | low | IGFF will institutionalize knowledge-sharing on climate-aligned finance by embedding standardized ESG integration, risk assessment methodologies, and climate- related financial disclosures into DFI operations. The RSF will provide a structured mechanism to enhance creditworthiness for MSME developers, encouraging PFIs to develop long-term lending models for the CBGsector. By the end of implementation, DFIs and PFIs will have the capacity to scale clean energy financing in line with global best practices. | IGFF will deliver targeted training for DFIs and PFIs on green finance methodologies, risk assessment, and gender-responsive lending. The RSF will provide a real-world demonstration of risk- sharing mechanisms, allowing financial institutions to gain experience with structured credit enhancement. Policy dialogues will further ensure the integration of standardized green finance taxonomies into financial sector regulations, contributing to long-term market transformation . | National level (one country) |
+
+<!-- image -->
+
+E
+
+<!-- image -->
+
+| Project/programme results (outcomes/outputs)                                                                                                                                 | Project/programme specific Indicator                                    | Means of Verification (MoV)                                      | Baseli ne   | Target    | Target   | Assumptions / Note                                                                                                                                 |
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------|------------------------------------------------------------------|-------------|-----------|----------|----------------------------------------------------------------------------------------------------------------------------------------------------|
+| Project/programme results (outcomes/outputs)                                                                                                                                 | Project/programme specific Indicator                                    | Means of Verification (MoV)                                      | Baseli ne   | Mid- term | Final    | Assumptions / Note                                                                                                                                 |
+| Outcome 1 DFIs deploy concessional finance and risk-sharing mechanisms, enabling them to expand their investment portfolios in emerging clean energy technologies Output 1.1 | GCF financing disbursed to DFIs for IGFF subprojects (USD million)      | ADB financial monitoring reports                                 | 0           | 91        | 122      | GCF financing disbursed by ADB to DFIs to support investments.                                                                                     |
+| Outcome 1 DFIs deploy concessional finance and risk-sharing mechanisms, enabling them to expand their investment portfolios in emerging clean energy technologies Output 1.1 | ADB financing disbursed to DFIs for IGFF subprojects (USD million)      | ADB financial monitoring reports                                 | 0           | 404       | 788      | ADB financing disbursed to DFI to support investments.                                                                                             |
+| DFIs have secured concessional loans to finance emerging clean energy technologies                                                                                           | No. of GCF loan agreements signed with DFIs                             | IGFF annual performance reports (APRs), ADB website              | 0           | 1         | 5        | GCF loan agreements signed by ADB (as AE) with DFIs                                                                                                |
+| DFIs have secured concessional loans to finance emerging clean energy technologies                                                                                           | IGFF financing committed to DFIs (USD million)                          | IGFF annual performance reports (APRs), ADB website              | 0           | 975       | 975      | This would include commitment in the ADB system of ADB financing and GCF financing for each subproject, which occurs upon loan effectiveness.      |
+| Output 1.2 Risk-sharing facility (RSF) is established to de-risk investments in compressed biogas (CBG) projects                                                             | GCF financing committed for RSF (USD million)                           | IGFF annual performance reports (APRs), ADB website              | 0           | 65        | 65       | This would include commitment in the ADB system of GCF financing for RSF, which occurs upon loan effectiveness.                                    |
+| Output 1.2 Risk-sharing facility (RSF) is established to de-risk investments in compressed biogas (CBG) projects                                                             | RSF becomes operational (y/n)                                           | RSF operational manual, and signed guarantee agreements          | 0           | y         | y        |                                                                                                                                                    |
+| Outcome 2: Project developers and public/private FIs have access to inclusive finance for emerging clean energy technologies                                                 | Total financing mobilized for IGFF- supported investments (USD billion) | IGFF annual performance reports (APRs), ADB website, DFI reports | 0           | 0.8       | 2.8      | This includes ADB+GCF financing, DFI financing and project proponent equity; and also includes financing mobilized under the RSF for CBG projects. |
+| Output 2.1                                                                                                                                                                   | No. of DFIs reporting adequate tools,                                   | IGFF APRs, ADB project completion reports                        | 0           | 2         | 5        | Change in DFI tools and processes measured through needs assessment during project design,                                                         |
+
+<!-- image -->
+
+E
+
+|                                                                                                                                             |                                                                                                                                                      |                                                                            |    |     |     |                                                                                       | E   |
+|---------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------|----|-----|-----|---------------------------------------------------------------------------------------|-----|
+| DFIs have enhanced technical capacities to finance emerging clean energy technologies                                                       | processes and standards in place to guide project origination, appraisal and management                                                              |                                                                            |    |     |     | and DFI consultation during development of subproject completion report.              |     |
+| DFIs have enhanced technical capacities to finance emerging clean energy technologies                                                       | No. of DFIs reporting improved capacity to use the tools, processes and standards in project origination, appraisal and management.                  | IGFF APRs, ADB project completion reports                                  | 0  | 2   | 5   | Change in DFI capacity as measured through pre- and post- event assessments.          |     |
+| DFIs have enhanced technical capacities to finance emerging clean energy technologies                                                       | No. of DFIs confirmed as having adequate capacity to integrate gender consideration in project origination, appraisal and management.                | IGFF APRs, ADB project completion reports                                  | 0  | 2   | 5   | Change in DFI capacity as measured through pre- and post- event assessments.          |     |
+| Output 2.2 MSMEs and participating financial institutions (PFIs) have enhanced technical capacities to access credit guarantees through RSF | Total value of financing mobilized for CBG projects through the risk-sharing facility (USD million)                                                  | Reporting by DFI to IGFF PMU, RSF annual reports, RSF guarantee agreements | 0  | 390 | 557 | Assuming a corpus size of $65 million, a fund leverage of 3 and 50% coverage of PCGs. |     |
+| Output 2.2 MSMEs and participating financial institutions (PFIs) have enhanced technical capacities to access credit guarantees through RSF | Number of RSF participating financial institutions confirmed having the capacity to prepare and submit loan and credit guarantee applications to RSF | RSF annual reports                                                         | 0  | 1   | 3   |                                                                                       |     |
+| Output 2.2 MSMEs and participating financial institutions (PFIs) have enhanced technical capacities to access credit guarantees through RSF | Number of MSME developers confirmed having the capacity to prepare and submit loan applications to PFIs 1                                            | RSF annual reports                                                         | 0  | 30  | 75  |                                                                                       |     |
+
+<!-- image -->
+
+| Output 2.3 Public/private FIs adopt tools and frameworks to scale up financing for emerging clean energy technologies   | No. of DFIs reporting adoption of tools and frameworks for                                        | IGFF APRs                                                                                                | 0                                       | 1                                       | 5                                       |                                                                             |                                                                             |
+|-------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|-----------------------------------------|-----------------------------------------|-----------------------------------------|-----------------------------------------------------------------------------|-----------------------------------------------------------------------------|
+|                                                                                                                         | No. of DFIs reporting improved understanding of gender integration in lending                     | IGFF APRs                                                                                                | 0                                       | 1                                       | 5                                       |                                                                             |                                                                             |
+|                                                                                                                         | No. of evidence-based policy briefs published                                                     | ADB website                                                                                              | 0                                       | 4                                       | 10                                      |                                                                             |                                                                             |
+| Project/programme co-benefit indicators                                                                                 | Project/programme co-benefit indicators                                                           | Project/programme co-benefit indicators                                                                  | Project/programme co-benefit indicators | Project/programme co-benefit indicators | Project/programme co-benefit indicators | Project/programme co-benefit indicators                                     | Project/programme co-benefit indicators                                     |
+| Co-Benefit 1 : (Environmental) Mitigated air pollution from adopting clean energy technologies                          | Reduction in PM2.5 concentration or NOx or SOx                                                    | Environmental impact assessment reports of DFIs or project developers/ IGFF APRs                         | 0                                       | TBD                                     | TBD                                     | Baselining and target setting will be conducted in year 1 of implementation | Baselining and target setting will be conducted in year 1 of implementation |
+| Co-Benefit 2 : (Economic) Improved employment opportunities in communities                                              | Number of direct jobs created in clean energy sectors (construction, operations, and maintenance) | Employment tracking reports from DFIs or project developers/ IGFF commissioned surveys and field studies | 0                                       | 101,775                                 | 139,234                                 | Calculations are in Annex 22                                                | Calculations are in Annex 22                                                |
+| Co-Benefit 3 : (Adaptation) Expanded affordable access to clean energy                                                  | Number of people provided with clean energy solutions                                             | DFI or project developer's project impact reports/ IGFF APRs                                             | 0                                       | 614,250                                 | 903,218                                 | Calculations are in Annex 22                                                | Calculations are in Annex 22                                                |
+| Co-Benefit 4: (Gender) Increased leadership of women within clean energy value chain                                    | X% increase in women- led enterprises accessing clean energy financing                            | Loan disbursement data from DFIs/ IGFF APRs                                                              | 0                                       | TBD                                     | TBD                                     | Baselining and target setting will be conducted in year 1 of implementation | Baselining and target setting will be conducted in year 1 of implementation |
+
+## E.6. Project/programme activities and deliverables
+
+E
+
+<!-- image -->
+
+E All project activities should be listed here with a description and sub-activities. Significant deliverables should be reflected in annex 5 implementation timetable. Add rows as needed.
+
+<!-- image -->
+
+Please number the activities as shown below to indicate association of activities to the related outputs provided above in section E.5. Similarly, please number sub-activities as shown below to associate to the related activity.
+
+| Activities                                                                                                                                        | Description                                                                                                                                                                                    | Sub-activities                                                                                                                                                                                                                                                                           | Deliverables                                                                                                                                                                                                                                              |
+|---------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Activity 1.1.1: Design and provide concessional loans to DFIs to finance emerging clean energy technologies                                       | GCF and ADB resources will be used to provide concessional loans to DFIs for on-lending to public and private sector borrowers to support the deployment of emerging clean energy technologies | • Engage with DFIs to originate IGFF subprojects and build pipeline • Design subprojects and conduct due diligence • Finalize loan agreements, financial terms, and operational modalities before disbursement.                                                                          | Loan agreements                                                                                                                                                                                                                                           |
+| Activity 1.1.2: Create RSF to de- risk investments in CBG projects                                                                                | GCF and ADB resources will be used to provide partial credit guarantees to enhance the bankability of CBG projects, mitigating risks and unlocking private capital                             | • Engage with DFI to finalize RSF structure • Finalize loan agreements, financial terms, and operational modalities before disbursement                                                                                                                                                  | Loan agreement (RSF) Guarantee issuance documents                                                                                                                                                                                                         |
+| Activity 2.1.1: Strengthen DFI capabilities in project preparation, appraisal, and monitoring of IGFF- aligned investments                        | GCF and ADB resources will be used to provide technical assistance to DFIs to strengthen their project preparation, appraisal, and monitoring capacities for IGFF aligned investments          | • Conduct needs assessment and develop technical assistance package for each IGFF subproject • Strengthen internal DFI capacities and systems to implement IGFF subprojects and finance clean energy projects • Develop bankable pipelines for emerging clean energy technology projects | Needs assessment report, project appraisal and risk assessment toolkit/framework, DFI-level safeguards policy, DFI-level gender policies, DFI-level data collection and monitoring frameworks, market assessments, training sessions and workshop reports |
+| Activity 2.2.1: Build capacities of PFIs and MSME project developers in structuring bankable projects and accessing credit guarantees through RSF | GCF and ADB resources will be used to train PFIs and MSME developers on tools and processes to effectively leverage credit guarantees through RSF                                              | • Provide support to establish RSF systems and frameworks and strengthen DFI capacity to issue credit guarantees.                                                                                                                                                                        | RSF operations manual, needs assessment reports, market assessments, risk assessment tool and credit scoring methodology, outreach campaigns, training sessions                                                                                           |
+
+<!-- image -->
+
+|                                                                                                                                                                                   |                                                                                                                                                                                                                                                  | • Support PFIs to identify pipelines of CBG investments and for MSME developers to access credit guarantee- supported loans                                            | E                                                                                  |
+|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
+| Activity 2.3.1: Build financial institutions' capacity and internal systems on climate risk management, green lending, and gender-responsive financing                            | GCF and ADB resources will be used to support participating DFIs and other public/private FIs on developing frameworks and tools to institutionalize green lending practices, and gender-responsive lending practices in their operations        | • Organize financial sector dialogues and roundtables • Conduct institutional gap assessments for DFIs: • Strengthen gender mainstreaming                              | Institutional gap analysis, Gender action plans, financial sector dialogue reports |
+| Activity 2.3.2: Support dialogues between policy makers and financial institutions on enabling policies on climate risk management, green lending and gender-responsive financing | GCF and ADB resources will be used to facilitate multi-stakeholder roundtables to increase awareness on development and implementation of tools and frameworks that promote green lending and gender equality in financing clean energy projects | • Organize annual green finance policy roundtables with policymakers • Develop evidence-based policy briefs on industry uptake of green lending and climate disclosure | Policy briefs                                                                      |
+
+## E.7. Monitoring, reporting and evaluation arrangements (max. 500 words, approximately 1 page)
+
+197. Purpose of the M&amp;E Plan : The M&amp;E plan for IGFF aims to support the Program Management Unit (PMU) and DFIs, with assistance from Project Implementation Units (PIUs), in establishing an M&amp;E structure, data management system, and reporting framework. It seeks to generate evidence on fundlevel impact and outcome indicators, along with environmental, economic, adaptation, and gender co-benefits. Additionally, the IGFF will track programspecific outcome and output indicators at the facility level by consolidating DFI-reported data, leveraging their existing data collection and management systems.
+198. M&amp;E Structure, Data Management, and Reporting : The AE, through the PMU, oversees the consolidation and submission of reports to the GCF, with support from DFIs as the executing entities. DFIs are responsible for tracking progress against fund-level and program-specific indicators. At the facility level, the PMU reviews DFI-submitted reports, providing feedback on quality and compliance status. DFIs, in coordination with PIUs, conduct primary due diligence using their management information systems (MIS), ensuring consistency with PMU standards. The reporting framework includes the following:
+- Monitoring Tool Development: Once sub-projects are approved for funding, a monitoring tool will be developed in consultation with PFIs and Micro, Small, and Medium Enterprises (MSMEs). This tool will outline contributions to logical framework indicators, disaggregated targets (e.g., location,
+
+<!-- image -->
+
+E gender, direct/indirect beneficiaries), and compliance with environmental, social safeguards, and gender action plans. The same monitoring tool will be developed for TA-related indicators and will be prepared by DFIs with guidance from PIUs.
+
+<!-- image -->
+
+- Quarterly and Annual Reporting: PFIs/MSMEs will submit progress reports to DFIs based on agreed targets. Reports will be stored in the DFIs' MIS.
+- Data Quality Assessment: DFIs and PIUs will conduct data quality assessments of the submitted reports to ensure compliance with data requirements and standards. Feedback will be provided to PFIs/MSMEs for corrections.
+- DFI-Level Submission: PIUs and DFIs will submit vetted reports to the PMU quarterly and annually.
+- PMU  Consolidation:  The  PMU  will  review  and  integrate  reports,  ensuring  alignment  with  logical  framework  indicators  and  compliance  with environmental and gender safeguards, as well as the established data requirements and standards. Feedback will be shared with DFIs/PIUs for continuous improvements.
+- Annual Reporting to GCF: The AE, through the PMU, will submit an annual consolidated progress report to GCF, highlighting accomplishments against targets in the logical framework indicators, implementation challenges, lessons learned, and best practices.
+
+<!-- image -->
+
+## RISK ASSESSMENT AND MANAGEMENT
+
+## F.1. Risk factors and mitigations measures (max. 3 pages)
+
+Please describe financial, technical, operational, macroeconomic/political, money laundering/terrorist financing (ML/TF), sanctions, prohibited practices, and other risks that might prevent the project/programme objectives from being achieved. Also describe the proposed risk mitigation measures. Insert additional rows if necessary.
+
+For probability: High has significant probability, Medium has moderate probability, Low has negligible probability
+
+For impact: High has significant impact, Medium has moderate impact, Low has negligible impact
+
+Prohibited  practices  include  abuse,  conflict  of  interest,  corruption,  retaliation  against  whistleblowers  or  witnesses,  as  well  as fraudulent, coercive, collusive, and obstructive practices
+
+## Selected Risk Factor 1 - Forex risk
+
+| Category   | Probability   | Impact   |
+|------------|---------------|----------|
+| Financial  | Medium        | Medium   |
+
+## Description
+
+199. GCF and ADB's loan financing to the DFIs is extended in hard currency (USD). DFIs will on-lend in local currency (INR) to their clients, which include SMEs and corporates. For the Risk-sharing facility, the DFI or its subsidiary will provide the partial risk guarantees in local currency (INR) and receive guarantee fee in INR, while payments to ADB/GCF will be in USD. A devaluation of INR against the USD will therefore increase DFIs' debt service costs or decrease amounts left in the RSF at the end of its term, and will result in foreign exchange losses. For example, the Indian Rupee depreciated by around 10% against the USD and was the worst-performing Asian currency in 2022. It has continued to depreciate into 2023 (https://www.xe.com/currencycharts/?from=USD&amp;to=INR&amp;view=2Y).
+
+## Mitigation Measure(s)
+
+200. For ADB, in most sovereign loan projects, the sovereign government assumes currency risks before passing on loans to projects in local currency. This also provides adequate comfort on this risk, with sovereigns better able to match currency outflows and inflows. For the RSF, we propose setting up a Foreign Exchange Fluctuation Reserve (FEFR) to mitigate the currency risks within the RSF corpus. Each year, the FEFR will accumulate up to a 'maximum reserve amount,' defined as the difference between the outstanding amount of the GCF loan at prevailing exchange rates and the amount adjusted to the base year exchange rates. The FEFR will allow the DFI to capture residual cash (e.g., guarantee fee revenues) from the guarantee operations-up to 75% of the foreign exchange fluctuation loss realized  in  the  preceding  year.  Even  in  years  with  a  foreign  exchange  fluctuation  gain,  25%  of  that  gain  shall  be transferred to the FEFR in the following year. This cumulative reserve fund will effectively mitigate the foreign exchange risks associated with the repayment of the foreign currency funds from the GCF.
+
+## Selected Risk Factor 2 - Risk to realized co-financing and mobilization of resources
+
+| Category   | Probability   | Impact   |
+|------------|---------------|----------|
+| Financial  | Low           | Low      |
+
+## Description
+
+201. This  risk  covers  the  possibility  of  ADB  partners  contributing  less  than  the  anticipated  co-financing  that  is calculated for this Facility.
+
+## Mitigation Measure(s)
+
+202. During the development of the Facility, ADB has been in close and continuous dialogue with the selected banks, with which it has negotiated current projects and future pipelines, gaps and needs. The banks have expressed the need as well as a commitment to work with ADB and GCF to blend their resources and contribute to climate finance.
+
+<!-- image -->
+
+E
+
+<!-- image -->
+
+<!-- image -->
+
+| Selected Risk Factor 3   | - Risk to potential to realize climate pipeline   | - Risk to potential to realize climate pipeline   |
+|--------------------------|---------------------------------------------------|---------------------------------------------------|
+| Category                 | Probability                                       | Impact                                            |
+| Operational              | Low                                               | Low                                               |
+
+## Description
+
+203. Not all DFIs have an equal understanding of climate finance, green taxonomies, climate risks and what is entailed in building a low-carbon and climate-resilient pipeline of projects.
+
+## Mitigation Measure(s)
+
+204. During the development of the Facility, ADB has been in close and continuous dialogue with the selected banks, with which it has negotiated current projects and future pipelines, gaps and needs. Furthermore, the Facility includes a grant component that will specifically tackle the issue of aligning operations with the Paris Agreement and climate risk frameworks, therefore contributing to enhancing the technical knowledge and skills of the bank officers to structure climate projects.
+
+## Selected Risk Factor 4 - Lack of implementation of policy &amp; regulatory framework
+
+Category
+
+Policy
+
+## Description
+
+205. India has a rich and comprehensive policy and regulatory framework that informs and guides the sectors and subsectors that are the target areas for the investments by the Facility. The policies on paper may not always translate into project pipelines, although there have not been instances of policies or laws obstructing renewables or renewables technologies.
+
+## Mitigation Measure(s)
+
+206. The ADB and partner DFIs will ensure continuous policy dialogue with the relevant ministries and national institutions tasked with policy guidance and/or implementation.
+
+## Selected Risk Factor 5 -Mismatch  between  national policy and state-level interventions and implementation
+
+| Category   | Probability   | Impact   |
+|------------|---------------|----------|
+| Policy     | Medium        | Medium   |
+
+## Description
+
+207. There are potential regional policymaking issues that can arise from implementing national policy at the local (State) level. For example, the National Green Hydrogen Mission utilises various policy provisions to produce green hydrogen, facilitate banking, and transport/distribute the hydrogen. Despite the project being proposed in January 2023, there has yet to be regions identified that can support production. This is due to regional policy issues of land availability. States must create land banks for renewable green hydrogen deployment at national request for the project to be successful in choosing regions for development. It has proven difficult to do so. The administrative fragmentation of the system can create such policy implementation risks.
+
+## Mitigation Measure(s)
+
+208. Through this program's implementation unit and through the partner DFIs, the ADB can support continuous policy dialogue to ensure that the relevant regulation is followed through at the State level, so that the pipeline is not affected.
+
+Probability
+
+Medium
+
+Impact
+
+Low
+
+E
+
+<!-- image -->
+
+## Selected Risk Factor 6 - Money laundering, terrorist financing and prohibited practices
+
+| Category   | Probability   | Impact   |
+|------------|---------------|----------|
+| AML/CTF    | Low           | High     |
+
+## Description
+
+209. This risk refers to the probability that GCF financing through GFF to the DFIs results in money laundering, terrorist financing or financing of prohibited practices.
+
+## Mitigation Measure(s)
+
+210. As GCF funds will be provided alongside co-financing from ADB, ADB Integrity Principles and associated due diligence will apply at sub-project level, which will also mitigate this risk. Furthermore, two of the DFIs are already GCF accredited and have passed the ethics and fiduciary requirements of GCF. The remaining two DFIs will be required to comply with the same requirements, for example, in applying know-your-customer (KYC) as a key AML measure to avoid financial crimes.
+
+<!-- image -->
+
+E
+
+<!-- image -->
+
+## GCF POLICIES AND STANDARDS
+
+## G.1. Environmental and social risk assessment (max. 750 words, approximately 1.5 pages)
+
+211. The IGFFs overall approach to Environmental and Social risk assessment is guided by the Green Climate Fund Revised Environmental and Social Policy and all other relevant GCF E&amp;S policies and commitments that have been recognized as established good international practices by GCF and ADB's E&amp;S framework and policies, including the GCF's IP Policy. Due to the nature of the proposed sectors and activities, and the level of accreditation of ADB, a category I-2 is proposed for IGFF. Activities which imply resettlement and/or other irreversible E&amp;S impacts will not be funded as they will fall under category I-1.
+212. IGFF will finance climate-related projects or interventions through DFIs. For each, an assessment procedure of  Environmental and Social (E&amp;S) safeguards of the proposed projects is required and will be embedded in their investment cycle. Project proponents/DFI will develop documentation to present to the DFI E&amp;S team, including an E&amp;S checklist and establishing mitigation plans and processes for any adverse impacts identified. Following this, DFI E&amp;S teams will conduct an initial screening according to a predefined exclusion list, and a categorisation procedure, based on the significance of potential impacts and risks in compliance with GCF Revised Environmental and Social Policy (2021). The purpose of this initial screening is to ensure that the project does not fall within exclusion criteria and has an appropriate understanding of E&amp;S impacts (including Safeguarding Against Sexual Exploitation and Abuse and Harassment (SEAH) and indigenous peoples) as well as appropriate mitigation measures in place which will form the basis of the Environment and Social Management System (ESMS)/Environment and Social Management Framework (ESMF) moving forward. Following this screening, a decision will be made, either approval for continuation, requesting clarification of issues/further documentation being required, or a screening out. Projects will be categorised by DFIs according to GCF/ADB categories, which can be considered equivalent. Only projects meeting the criteria for either category C or B (or substantial, moderate, and low risk under the new ADB's Environment and Social Framework [ESF] starting in 2026) will be approved under the IGFF. All projects assessed as being category A (or high risk under the new ADB's ESF starting in 2026) will be excluded.
+213. Once a project has passed this initial screening stage, it will move on to a full proposal assessment, still at the DFI level. Part of this will include a second E&amp;S screening, with requirements varying depending on the categorisation of the project. If the project is category C, an Environmental and Social Policy appropriate to the size and nature of the risks and activities involved in the project, along with an Environmental and Social Action Plan (ESAP), and a Gender Equality Assessment and Action Plan (GAP) will be required. Category B projects will require, in addition to the outlined above, an Environmental and Social Health Impact Assessment (ESHIA) to mitigate any residual impacts identified, an ESMS based on the mitigation measures identified earlier in the process, and Environmental and Social Management Plan(s)  (ESMP(s))  to  mitigate  any  residual  impacts  identified  following  the  ESHIA.  The  ESMS  and  ESMP  will  be performed instead of an ESAP for category B projects.
+214. IGFF, through its PIU will then review the proposal, checking the relevant documentation created (e.g., ESMS, ESHIA), perform random checks and sample screenings to confirm categorisations of projects, and ensure that all proposals meet IGFF requirements and are aligned with IGFF objectives and priorities. Once these have been ensured, final approval for a project will be given, and the project will be approved for funding. The first two sub-projects assessed and categorised for each DFI, and the first category B project if this does not fall within the first two sub-projects, will be reviewed and screened by the PMU to ensure correct categorisation. The Facility is also responsible for oversight and implementation of the IGFF ESMF.
+215. Projects  will  be  periodically  monitored  and  evaluated  by  the  DFIs  to  ensure  that  E&amp;S  policies  are  being complied with, and risks and impacts are being identified and mitigated appropriately. The extent of the monitoring, including scope and frequency, will be based on the type and level of risks identified. DFIs will ensure that projects will appoint a person responsible for this monitoring, who will ensure participatory monitoring of individuals impacted by the project. Reports on these will be prepared by DFI E&amp;S teams and sent to the Facility, which in turn is responsible for regularly updating GCF at a cadence consistent with the categorisation and disclosure requirements.
+
+<!-- image -->
+
+F
+
+<!-- image -->
+
+## G.2. Gender assessment and action plan (max. 500 words, approximately 1 page)
+
+216. Women are critical stakeholders in India's shift to renewable energy and require greater financial inclusion. While women hold 32% of renewable energy jobs globally, in India, their participation is lower-for example they represent only 11% of the workforce in rooftop solar companies. Like other countries in the region, there is a growing number of women participating in the renewable energy sector in India, including in decentralized solar PV systems, where they have the highest participation rate (21%). Despite this progress, persistent gender biases and women's limited access to finance remain key challenges. Women are primarily employed in administrative roles, with limited presence in technical and leadership positions. However, decentralized renewable energy projects have seen higher female engagement, especially in rural areas. This indicates a need for targeted policies and better access to finance for women to support their greater participation and leadership as energy entrepreneurs.
+217. According to Government of India data, female entrepreneurs own about 20% of businesses and only about 6% of tech startups have women-only founders, but only a fraction operate in the energy sector. While data specific to energy entrepreneurship are scarce, the broader trend shows that women entrepreneurs are few in number relative to men. Significant barriers include lack of collateral, bias in lending, and limited access to financial information. Female representation in leadership and technical roles also remains limited. While according to IRENA, globally women hold about 17% of senior management roles in the solar industry, in a survey of Indian rooftop solar firms, only one-third had even a single woman on their board, and none had more than one. Women rarely head engineering, project management, or operations teams in energy companies.
+218. Despite challenges, women are participating in the energy transition by founding startups and social enterprises - from solar solutions companies to clean cooking ventures - but often face more significant hurdles in scaling up and access to finance remains one of their biggest barriers. Women also play an essential role as micro-entrepreneurs in the renewable energy value chain (for example, as distributors of solar lamps or operators of local energy kiosks), though these roles are often informal and not captured fully in official data. The potential is significant: studies estimate India's renewable energy goals (500 GW by 2030) could create over 3 million new jobs, which presents an opportunity to increase women's participation if supportive measures are in place.
+219. ADB's Country Partnership Strategy for India (2023), notes that while substantial progress has been made on education  and  health,  there  are  still  significant  gender  gaps  in  the  country.  50From  2022-23,  per  data  from  the Government of India Periodic Labor Force Survey indicated that women's participation in labour force has increased to 37%. Approximately 33.6% of women surveyed women reporting that they wanted to continue their studies, while 44.5% cited childcare/ care commitments as reasons for not participating in the labour force. Other contributing factors include societal prejudices against women working outside the home and concerns about safety and security.
+220. Narrowing existing gender gaps in the renewable energy sector is an important component of the Facility, aligning with GCF requirements under the gender policy and action plan, and reflecting ADB's policies and institutional priorities  on  gender  equality  as  articulated  under  ADB's  Strategy  2030.  This  strategy  requires  ADB  operations  to contribute  to  gender  equality  across  five  pillars:  women's  economic  empowerment,  gender  equality  in  human development,  gender  equality  in  decision-making  and  leadership,  reduced  women's  time  poverty,  and  women's resilience to external shocks. The IGFF gender action plan identifies specific objectives, activities, targets and timebound KPIs to ensure that women benefit from IGFF funded projects and programs.
+221. The governance of this Facility is overseen by the ADB, which will provide the management of the Facility through a PIU. Gender guidelines for the IGFF follow the gender mainstreaming framework and policy guidelines of the ADB, in alignment with GCF gender policy. The Facility will channel funding through selected Indian DFIs, two of which are GCF accredited national entities. IGFF will review the GCF-approved gender assessments (GAs) and gender action plans (GAPs) for the accredited entities and may request clarification or supplementation thereof if required. For the unaccredited DFIs, the IGFF will conduct a gender assessment including a review of their existing Gender and ESS policies and formulation of a GAP to address and support remediation of any identified shortcomings with respect to IGFF requirements. Additionally, the IGFF will require preparation of a GA &amp; GAP for all projects and programs, direct
+
+<!-- image -->
+
+F
+
+<!-- image -->
+
+F
+
+<!-- image -->
+
+or indirect, to be funded by the Facility. The full documentation related to the requirements on gender are provided as Annex 8.
+
+## G.3. Financial management and procurement (max. 500 words, approximately 1 page)
+
+ADB  systems  for  financial  management,  audit,  integrity  and  procurement  will  apply  for  all  sub-projects supported by GCF funds under the IGFF.
+
+222. Financial Management and Audit. Details of every project's financial accounting, disbursement procedures and auditing requirements will be developed during preparation of each project, in accordance with ADB's policies on Financial Management and Analysis of Projects and will be included in their respective project administration manuals. Financial management systems of the DFIs will be assessed on the adequacy and the ability for timely reporting. The loan proceeds for all IGFF projects will be disbursed in accordance with ADB's Loan Disbursement Handbook (2017, as amended from time to time), and detailed arrangements agreed upon between the respective DFIs, government, and  ADB.  Public  disclosure  of  the  audited  project's  financial  statements,  including  the  auditor's  opinion  on  the subproject financial statements, will be guided by ADB's Access to Information Policy 2018. DFIs financial management and audit performance will be regularly supervised through quarterly progress reports, annual audited reports, and compliance with financial covenants.
+223. Integrity and anticorruption policy. ADB will conduct integrity due diligence on DFIs, the members of their board of directors, and their management teams, in accordance with ADB's Anticorruption Policy (1998, as amended from time to time), and relevant guidelines and procedures.
+224. Procurement. Procurement of consulting services to support the execution of the technical assistance grant will be in accordance with ADB's Procurement Guidelines (2017, as amended from time to time). All procurement for IGFF projects will also be done in accordance with ADB's Procurement Guidelines and Procurement Regulations for ADB Borrowers (2017, as amended from time to time), and will be done by the Implementing Agencies for each project. To the extent possible, ADB staff will support procurement processes and offer procurement training. Procurement plans for the respective projects shall be in accordance with their respective project administration manuals. A detailed procurement  plan  for  use  of  GCF  grants  for  technical  assistance  is  included  in  Annex  10.  Implementation  of  the program, particularly on the projects, shall conform to all applicable ADB policies, as amended from time to time, including those concerning anticorruption measures, anti-money laundering, counter terrorist financing, safeguards, gender, procurement, consulting services, and disbursement.
+
+## G.4. Disclosure of funding proposal
+
+- ☒ No confidential information: The accredited entity confirms that the funding proposal, including its annexes, may be disclosed in full by the GCF, as no information is being provided in confidence.
+
+- [ ] ☐ With confidential information: The accredited entity declares that the funding proposal, including its annexes, may not be disclosed in full by the GCF, as certain information is being provided in confidence. Accordingly, the accredited entity is providing to the Secretariat the following two copies of the funding proposal, including all annexes:
+
+- full copy for internal use of the GCF in which the confidential portions are marked accordingly, together with an explanatory  note  regarding  the  said  portions  and  the  corresponding  reason  for  confidentiality  under  the accredited entity's disclosure policy, and
+- redacted copy for disclosure on the GCF website.
+
+The  funding  proposal  can  only  be  processed  upon  receipt  of  the  two  copies  above,  if  containing  confidential information.
+
+<!-- image -->
+
+## ANNEXES
+
+## H.1. Mandatory annexes
+
+- [x] ☒ Annex 1 NDA no-objection letter(s) (template provided)
+
+- [x] ☒ Annex 2 Feasibility study - and a market study, if applicable
+
+- [x] ☒ Annex 3 Economic and/or financial analyses in spreadsheet format
+
+- [x] ☒ Annex 4 Detailed budget plan (template provided)
+
+- ☒ Annex 5 Implementation timetable including key project/programme milestones (template provided)
+
+- ☒ Annex 6 E&amp;S document corresponding to the E&amp;S category (A, B or C; or I1, I2 or I3):
+
+## (ESS disclosure form provided)
+
+- [ ] ☐ Environmental and Social Impact Assessment (ESIA) or
+
+- [ ] ☐ Environmental and Social Management Plan (ESMP) or
+
+- [ ] ☐ Environmental and Social Management System (ESMS)
+
+- [ ] ☐ Others  (please  specify  -  e.g.    Resettlement  Action  Plan,  Resettlement  Policy  Framework, Indigenous People's Plan, Land Acquisition Plan, etc.)
+
+- [x] ☒ Annex 7 Summary of consultations and stakeholder engagement plan
+
+- [x] ☒ Annex 8 Gender assessment and project/programme-level action plan (template provided)
+
+- [x] ☒ Annex 9 Legal due diligence (regulation, taxation and insurance)
+
+- [x] ☒ Annex 10 Procurement plan (template provided)
+
+- [x] ☒ Annex 11 Monitoring and evaluation plan (template provided)
+
+- [x] ☒ Annex 12 AE fee request (template provided)
+
+- [ ] ☐ Annex 13 Co-financing commitment letter, if applicable (template provided)
+
+n/a
+
+- [x] ☒ Annex 14 Term sheet including a detailed disbursement schedule and, if applicable, repayment schedule
+
+## H.2. Other annexes as applicable
+
+- [ ] ☐ Annex 15 Evidence of internal approval (template provided)
+
+- [ ] ☐ Annex 16 Map(s) indicating the location of proposed interventions
+
+- [ ] ☐ Annex 17 Multi-country project/programme information (template provided) n/a
+
+- [ ] ☐ Annex 18 Appraisal, due diligence or evaluation report for proposals based on up-scaling or replicating a pilot project n/a
+
+- [ ] ☐ Annex 19 Procedures for controlling procurement by third parties or executing entities undertaking projects financed by the entity
+
+- [ ] ☐ Annex 20 First level AML/CFT (KYC) assessment
+
+- [ ] ☐ Annex 21 Operations manual (Operations and maintenance)
+
+- [x] ☒ Annex 22 Assessment of GHG emission reductions and their monitoring and reporting (for mitigation and cross cutting-projects) 72
+
+- [ ] ☐ Annex X Other references
+
+72 Annex 22 is mandatory for mitigation and cross-cutting projects.
+
+<!-- image -->
+
+H
+
+<!-- image -->
+
+<!-- image -->
+
+* Please note that a funding proposal will be considered complete only upon receipt of all the applicable supporting documents.
+
+H
+
+## No-objection letter issued by the national designated authority(ies) or focal point(s)
+
+<!-- image -->
+
+DONo.CC-13008/146/2024-CC
+
+To
+
+TheGreenClimateFund("GCF") SongdoBusinessDistrict 175Artcenter-daero Yeonsu-gu,Incheon22004(Republicof Korea)
+
+Sub:Funding proposal for the GCFby ADBregarding"ADB-GCFGreenFinanceFacility(GFF) for India".
+
+DearMadam/Sir,
+
+Werefer to theprogramme titled"ADB-GCFGreen Finance Facility(GFF)forIndia"inIndia as S
+
+Change,theNationalDesignatedAuthorityofIndia.
+
+PursuanttoGCFdecisionB.o8/10,thecontentofwhichweacknowledgetohavereviewed,we s
+
+- (a) TheGovernmentofIndiahasno-objectiontotheprogrammeasincludedinthefunding proposal;
+- (b) The programme as included in the funding proposal is in conformity with the national priorities, strategies andplans of India;
+- (C) InaccordancewiththeGCF'senvironmentalandsocialsafeguards,theprogrammeasincluded in thefundingproposal is in conformitywithrelevant national lawsandregulations.
+
+We alsoconfirm thatournationalprocessfor ascertainingno-objectionto theprogramme as included inthefundingproposal hasbeendulyfollowed.
+
+Wealsoconfirmthatourno-objectionappliestoallprojectsoractivitiestobeimplementedwithinthe scopeoftheprogramme.
+
+WeacknowledgethatthisletterwillbemadepubliclyavailableontheGCFwebsite.
+
+<!-- image -->
+
+Yours sincerely
+
+(RajasreeRay) EconomicAdvisertotheGovernmentofIndia MinistryofEnvironment,ForestandClimateChange GCFFocalPointforIndia
+
+<!-- image -->
+
+<!-- image -->
+
+<!-- image -->
+
+fa HTRGRR ECONOMICADVISER MINISTRYOFENVIRONMENT,FOREST ANDCLIMATECHANGE GOVERNMENEOEIN2U24
+
+## Environmental and social safeguards report form pursuant to para. 17 of the IDP
+
+| Basic project or programme information                                                   | Basic project or programme information                                                                                                                                                                |
+|------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Project or programme title                                                               | India Green Finance Facility (IGFF)                                                                                                                                                                   |
+| Existence of subproject(s) to be identified after GCF Board approval                     | Yes                                                                                                                                                                                                   |
+| Sector (public or private)                                                               | Public                                                                                                                                                                                                |
+| Accredited entity                                                                        | Asian Development Bank (ADB)                                                                                                                                                                          |
+| Environmental and social safeguards (ESS) category                                       | Category I-2                                                                                                                                                                                          |
+| Location - specific location(s) of project or target country or location(s) of programme | India                                                                                                                                                                                                 |
+| Environmental and Social Impact Assessment (ESIA) (if applicable)                        | Environmental and Social Impact Assessment (ESIA) (if applicable)                                                                                                                                     |
+| Date of disclosure on accredited entity's website                                        | N/A                                                                                                                                                                                                   |
+| Language(s) of disclosure                                                                | N/A                                                                                                                                                                                                   |
+| Explanation on language                                                                  | N/A                                                                                                                                                                                                   |
+| Link to disclosure                                                                       | N/A                                                                                                                                                                                                   |
+| Other link(s)                                                                            | N/A                                                                                                                                                                                                   |
+| Remarks                                                                                  | N/A                                                                                                                                                                                                   |
+| Environmental and Social Management Plan (ESMP) (if applicable)                          | Environmental and Social Management Plan (ESMP) (if applicable)                                                                                                                                       |
+| Date of disclosure on accredited entity's website                                        | N/A                                                                                                                                                                                                   |
+| Language(s) of disclosure                                                                | N/A                                                                                                                                                                                                   |
+| Explanation on language                                                                  | N/A                                                                                                                                                                                                   |
+| Link to disclosure                                                                       | N/A                                                                                                                                                                                                   |
+| Other link(s)                                                                            | N/A                                                                                                                                                                                                   |
+| Remarks                                                                                  | N/A                                                                                                                                                                                                   |
+| Environmental and Social Management System (ESMS) (if applicable)                        | Environmental and Social Management System (ESMS) (if applicable)                                                                                                                                     |
+| Date of disclosure on accredited entity's website                                        | Thursday, May 15, 2025                                                                                                                                                                                |
+| Language(s) of disclosure                                                                | English and Hindi                                                                                                                                                                                     |
+| Explanation on language                                                                  | These are the official languages of the target country.                                                                                                                                               |
+| Link to disclosure                                                                       | English: https://www.adb.org/documents/igff-annex-6- environmental-social-management-framework Hindi: https://www.adb.org/sites/default/files/institutional- document/1054581/igff-annex-6-esf-hi.pdf |
+| Other link(s)                                                                            | N/A                                                                                                                                                                                                   |
+| Remarks                                                                                  | An ESMS consistent with the requirements for a Category I- 2 project is contained in the 'Environmental and Social                                                                                    |
+
+Management Framework'.
+
+| Any other relevant ESS reports, e.g. Resettlement Action Plan (RAP), Resettlement Policy Framework (RPF), Indigenous Peoples Plan (IPP), Indigenous Peoples Planning Framework (IPPF) (if applicable)   | Any other relevant ESS reports, e.g. Resettlement Action Plan (RAP), Resettlement Policy Framework (RPF), Indigenous Peoples Plan (IPP), Indigenous Peoples Planning Framework (IPPF) (if applicable)                        |
+|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Description of report                                                                                                                                                                                   | N/A                                                                                                                                                                                                                          |
+| Date of disclosure on accredited entity's website                                                                                                                                                       | N/A                                                                                                                                                                                                                          |
+| Language(s) of disclosure                                                                                                                                                                               | N/A                                                                                                                                                                                                                          |
+| Explanation on language                                                                                                                                                                                 | N/A                                                                                                                                                                                                                          |
+| Link to disclosure                                                                                                                                                                                      | N/A                                                                                                                                                                                                                          |
+| Other link(s)                                                                                                                                                                                           | N/A                                                                                                                                                                                                                          |
+| Remarks                                                                                                                                                                                                 | N/A                                                                                                                                                                                                                          |
+| Disclosure in locations convenient to affected peoples (stakeholders)                                                                                                                                   | Disclosure in locations convenient to affected peoples (stakeholders)                                                                                                                                                        |
+| Date                                                                                                                                                                                                    | Friday, May 23, 2025                                                                                                                                                                                                         |
+| Place                                                                                                                                                                                                   | Asian Development Bank India Resident Mission 4 San Martin Marg, Chanakyapuri,New Delhi 110021, India Contact Information Mr. Suhail Mircha, Senior Safeguards Officer (Social) Email: smircha@adb.org Tel: +91 11 66145 200 |
+| Date of Board meeting in which the FP is intended to be considered                                                                                                                                      | Date of Board meeting in which the FP is intended to be considered                                                                                                                                                           |
+| Date of accredited entity's Board meeting                                                                                                                                                               | N/A                                                                                                                                                                                                                          |
+| Date of GCF's Board meeting                                                                                                                                                                             | Monday, June 30, 2025                                                                                                                                                                                                        |
+
+Note: This form was prepared by the accredited entity stated above.
+
+<!-- image -->
+
+## Secretariat's assessment of FP271
+
+Proposal name:
+
+India Green Finance Facility (IGFF)
+
+Accredited entity:
+
+Asian Development Bank
+
+Country:
+
+The Republic of India
+
+Programme size:
+
+Large
+
+## I. Overall assessment of the Secretariat
+
+1. The funding proposal is presented to the Board for consideration with the following remarks:
+
+| Strengths                                                                                                                                                                                                                                                                                                                                                                                           | Points of caution                                                                                                                                 |
+|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
+| The India Green Finance Facility (IGFF) programme focuses on accelerating solutions for India's energy transition, aiming to decarbonize the power, transport, agriculture and industrial sectors - an urgent step in avoiding long-term lock-in of fossil fuels, while directly delivering large-scale mitigation of greenhouse gas emissions.                                                     | Potential delays in the approval of subprojects, including the Risk Sharing Facility (RSF), could delay programme impacts.                        |
+| The programme opens the path for large- scale commercial investments by addressing initial market barriers for the emerging clean energy technologies and solutions by derisking investments at scale and expanding deployment in underserved areas. It also demonstrates the impact and viability of innovative financing structures, such as the RSF, to enable further scale-up and replication. | IGFF may focus too heavily on a few sectors and thereby potentially underfund others.                                                             |
+| The programme partners with national development finance institutions to deliver climate finance, strengthen their capacity to invest in emerging clean energy solutions, integrate long-term climate risks into decision-making, and align them with global green finance frameworks to enhance access to and delivery of climate finance over the long term.                                      | There is a possibility that the private sector might lack interest in certain sectors in the initial years due to an evolving policy environment. |
+
+<!-- image -->
+
+GCF/B.42/02/Add.13 Page 95
+
+| While addressing long-term energy transition challenges, the solutions supported by the programme also aim to enhance climate resilience and deliver broader developmental co-benefits, such as improved public health, the creation of green jobs, increased access to clean energy, and the greater participation of womenin the clean energy sector.   |
+|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+2. The Board may wish to consider approving this funding proposal in accordance with the terms listed in the term sheet agreed between the Secretariat and the accredited entity (AE), and, if considered appropriate, subject to the conditions set out in annex II to document GCF/B.42/02.
+
+## II. Summary of the Secretariat's assessment
+
+## 2.1 Programme background
+
+3. The India Green Finance Facility (IGFF) is a large-scale initiative designed to accelerate India's transition toward its net-zero commitments by enhancing the role and capacity of development finance institutions (DFIs). The programme aims to unlock funding at scale for emerging clean energy technologies and expansion into underserved areas. Its core objective is to mobilize climate finance, institutionalize green lending practices within public DFIs, and drive large-scale, gender-responsive investments in clean energy.
+4. India is the world's third-largest emitter of carbon dioxide (CO2), with its energy supply heavily dependent on fossil fuels. Over the past decade, India has made significant progress and achieved rapid growth in renewable energy capacity. However, the country faces the risk of remaining locked into a carbon-intensive trajectory, as rising energy demand - driven by rapid industrialization and urban expansion - continues to outpace the deployment of clean energy solutions. New solutions to drive decarbonization of sectors like industries and transport is required, while solutions to address intermittency are needed to support further scale-up of renewable energy in the power sector. Climate change further complicates this transition, with extreme weather events disrupting power supply and heatwaves increasing demand for fossilfuel based energy.
+5. The programme will address these challenges by supporting DFIs in scaling up emerging clean energy technologies through the provision of concessional lines of credit for clean energy subprojects. It will enable participating DFIs to offer loans to both public and private sector borrowers to finance initiatives that promote deployment of technologies/solutions facilitating the long-term decarbonization of the energy, transport, industry and agriculture sectors. Additionally, the project will establish a Risk Sharing Facility (RSF) to provide guarantees for small-scale projects, facilitating investments by local participating financial institutions. The IGFF aims to collaborate with multiple DFIs, including the National Bank for Agriculture and Rural Development (NABARD), India Infrastructure Finance Company Limited (IIFCL) and the Rural Electrification Corporation (REC), among other entities. The USD 993 million IGFF is expected to mobilize an additional USD 1.85 billion and deliver an emissions reduction impact of up to 50 million tonnes of carbon dioxide equivalent (t CO₂ eq) over the project's 27-year lifespan.
+
+<!-- image -->
+
+6. The IGFF will also provide technical support to institutionalize green and genderresponsive lending practices and strengthen the capacity of DFIs to align the DFIs to globally accepted frameworks to enhance their capacity to access climate finance in future. This will involve targeting technical assistance to equip DFIs with the skills to assess, structure and finance climate-aligned projects effectively; embedding climate risk management frameworks within DFIs' credit evaluation processes, thereby aligning them with global standards; and enhancing DFIs' ability to attract domestic and international investment for climate action.
+7. The programme is requesting USD 200 million in GCF financing, structured into USD 13 million in grant financing and USD 187 million in loan financing. The total cost of the programme, including co-financing, is USD 993 million, with co-financing in the form of grants and loans from the AE, the Asian Development Bank (ADB).
+8. In terms of environmental and social safeguards (ESS), this proposal has been categorized as environmental and social (E&amp;S) risk category I-2. The review by the Secretariat confirms the E&amp;S risk category assigned by the AE.
+
+## 2.2 Component-by-component analysis
+
+## Outcome 1: Financing for DFIs to scale up emerging clean energy technologies (total cost: USD 980 million; GCF cost: USD 187 million)
+
+9. Outcome 1 will provide the DFIs with dedicated concessional lines of credit for onlending to both public and private sector borrowers and establish the RSF, which will de-risk investments of public and private sector participating financial institutions (PFIs) and guarantee investments for supporting emerging technologies critical for India's energy transition. This component will promote investment in sectors aligned with India's clean energy transition goals and national programmes and in ways that will contribute to addressing the critical gaps in technology deployment, financing and capacity of DFIs with a particular focus on addressing the energy needs of the energy, transport, industry and agriculture sectors. The component will focus on improving clean energy access by supporting the development of capacity for the provision of round-the-clock renewable energy with energy storage systems; promoting e-mobility and related infrastructure, compressed biogas (CBG), and green hydrogen production; and promoting the decentralized provision of agricultural applications to power livelihood applications such as off-grid solar-powered water pumps and distributed renewable energy (DRE) solutions for rural areas.
+2. Outcome 2: Institutional capacity-building for DFIs, public/private financial institutions, PFIs, and micro, small and medium-sized enterprise (MSME) project developers (total cost: USD 11.85 million; GCF cost: USD 11.85 million)
+10. Outcome 2 of the IGFF programme focuses on addressing technical and institutional barriers that limit the capacity of financial institutions in India to finance emerging clean energy technologies such as green hydrogen, DRE and CBG. Through targeted technical assistance, policy engagement, and capacity-building initiatives, this component will enhance the ability of DFIs, PFIs and MSMEs to originate, appraise, structure, and monitor climate-aligned investments. The component will build institutional capabilities to utilize concessional finance and risk-sharing instruments - such as the RSF - while embedding climate finance principles and gender-responsive approaches into institutional practices. IGFF will support at least five DFIs with long-term technical assistance, deliver over 35 training sessions for PFIs and MSMEs, introduce standardized tools for green lending and climate risk management, and develop gender-responsive financial frameworks. By addressing gaps in technical capacity, policy alignment, and gender inclusion, this component aims to catalyse systemic change in India's
+
+<!-- image -->
+
+- financial ecosystem, unlocking inclusive and scalable finance for the country's clean energy transition.
+
+## Project management and monitoring and evaluation (total cost: USD 1.15 million; GCF cost: USD 1.15 million)
+
+11. Programme implementation and monitoring and evaluation costs have been adequately provided for, and specific activities have been planned and integrated within the design of the programme to ensure that project implementation and monitoring and evaluation processes will be effectively coordinated.
+2. Gender, environmental and social management framework
+12. An environmental and social management framework (ESMF) and a gender action plan have been developed to align the programme's subprojects with GCF's ESS polices and requirements, outlining specific activities that will ensure that ESS are put in place and observed throughout the programme's lifespan, as described in section IV of this Secretariat assessment.
+
+## III. Assessment of performance against investment criteria
+
+## 3.1 Impact potential Scale: High
+
+13. IGFF is a transformative initiative designed to unlock large-scale investment in emerging clean energy technologies through an innovative blend of concessional finance, risk-sharing mechanisms, and embedded technical assistance. By catalysing finance for underdeveloped sectors such as green hydrogen, storage, CBG, DRE and electric mobility for peri-urban and rural areas, the programme will address critical market gaps and accelerate India's clean energy transition. IGFF is projected to mobilize USD 2.8 billion in clean energy investments, including the deployment of 451 megawatts of electrolyzer capacity for green hydrogen, 578 megawatthours of battery energy storage, over 63,000 solar irrigation pumps, and more than 131,000 electric two- and three-wheelers. These interventions are expected to collectively reduce greenhouse gas (GHG) emissions by up to 50 million t CO₂ eq over the 27-year project lifespan, contributing significantly toward India's nationally determined contributions (NDCs) and its broader net-zero ambitions. The IGFF investments are also aligned with COP29 Energy Pledges and Declarations.
+14. Beyond mitigation, IGFF will deliver adaptation and socioeconomic co-benefits by enabling cleaner, more resilient energy access for rural and urban communities. The initiative will strengthen climate resilience in critical sectors such as transport, agriculture and industry by supporting the adoption of efficient low-carbon technologies. For example, CBG projects will reduce methane emissions while converting agricultural waste into energy, and DRE applications will improve rural livelihoods and energy security. IGFF's inclusive approach is also expected to generate over 139,000 green jobs across the clean energy value chain, with a particular emphasis on rural employment and gender-responsive financing.
+
+## 3.2 Paradigm shift potential Scale: High
+
+15. IGFF advances India's net-zero ambitions and accelerates progress toward its 2030 NDC targets by prioritizing investment in sectors that are pivotal to deep decarbonization, such as round-the-clock (RTC) renewables, green hydrogen and bioenergy. For example, RTC renewable energy solutions are critical to further scale solar and wind sectors by providing a stable power
+
+<!-- image -->
+
+- supply to meet demand and enhance the confidence of power utilities in such technologies. Similarly, green hydrogen will be essential for hard to abate industrial and transport sectors. These sectors have been identified as critical enablers of low-carbon transformation across energy, industry and transport. By addressing early-stage market barriers, enabling the development of ecosystems for the implementation of targeted technologies/solutions, and demonstrating scalable deployment models, IGFF plays a catalytic role in unlocking these markets for private investment at scale.
+16. By embedding standardized green finance practices into institutional systems and facilitating coordination between financial institutions and policymakers, IGFF aims to catalyse a systemic transformation in India's financial ecosystem. The result will be a more robust, inclusive, and scalable pathway for clean energy investment, ensuring long-term impact well beyond the lifespan of the programme. The adoption of innovative financing structures such as the RSF will provide successful frameworks for replication for other climate investments and upscaling. By creating robust financial models and institutional mechanisms, IGFF ensures the sustainability of these outcomes well beyond its lifetime, contributing to a climate-resilient, lowcarbon economic transition.
+17. The RSF's rural and MSME-focused interventions - including solar irrigation, electric vehicles in peri-urban areas, and DRE for microenterprises - advance inclusive development, climate resilience and energy access.
+18. The programme will adopt and foster a strategic approach to enhancing emissions reduction in both the energy sector and sectors such as transport, industry and agriculture which rely heavily on energy use - by focusing on promoting clean and renewable energy technologies, which both increase efficiency in addressing the energy access gaps and needs and promote emissions reduction. This can help to ensure the long-term security and sustainability of energy access by fostering energy systems that can cushion communities and businesses from the current and future climate shocks such as increasing temperatures and impacts that affect their energy security.
+19. The programme further promotes a transformation in India's climate finance landscape by building capacity in the finance sector for the acceleration of clean energy adoption and by assisting the finance sector in the country aligned with the Paris Agreement and that meet transparency and accountability standards and requirements. The paradigm shift potential is well embedded across the two components of the project and is designed to deliver long-term impacts beyond the life of the IGFF.
+
+## 3.3 Sustainable development potential Scale: High
+
+20. The sustainable development potential is embedded in both components of the programme and places emerging technologies at the centre of efforts to strengthen India's contribution towards emissions reduction while enhancing livelihoods, creating green jobs, enhancing environmental benefits and promoting a gender-responsive clean energy transition.
+21. It supports progress on multiple Sustainable Development Goals (SDGs), particularly SDG 13 (Climate action), SDG 7 (Affordable and clean energy) and SDG 8 (Decent work and economic growth), while also advancing gender equality (SDG 5), innovation and infrastructure (SDG 9), and life on land (SDG 15). IGFF will result in over 50 million t CO₂e q in emissions reductions, while simultaneously enhancing adaptive capacity across sectors such as agriculture, transport and energy.
+22. By embedding gender-responsive financing tools and providing targeted capacitybuilding for women-led enterprises, the project promotes inclusive growth and strengthens the
+
+<!-- image -->
+
+- role of women in clean energy transitions. Additionally, the project will create over 139,000 green jobs and foster rural entrepreneurship by expanding DRE technologies, thus catalysing economic opportunities across India's rural and peri-urban communities.
+23. IGFF's environmental, economic and social co-benefits reflect its integrated, long-term approach to climate-resilient development. Interventions in solar irrigation and CBG production will reduce diesel reliance, improve air and soil quality, and strengthen water access, particularly in climate-vulnerable regions. The expansion of clean energy infrastructure supports national savings through reduced fuel imports and subsidies while unlocking new income streams for farmers and microenterprises. Socially, the project improves quality of life through reliable, low-emission energy services and enhanced food and energy security. Furthermore, IGFF's knowledge-sharing and institutional capacity-building components will ensure that innovations in green finance, climate risk management, and project structuring are replicated across DFIs and other financial actors.
+24. By creating an enabling environment for inclusive, climate-aligned investments, IGFF supports a systemic shift toward sustainable development pathways that can scale across India and the broader South Asian region.
+
+## 3.4 Needs of the recipient Scale: High
+
+25. The programme targets the world's third-largest carbon emitter, whose energy supply is still heavily dependent on fossil fuels, with an ever-heightening energy consumption that is propelled by a growing population and development.
+26. While India has made significant progress, with rapid growth in renewable energy capacity, it still faces the risk of remaining locked into a carbon-intensive trajectory, as rising energy demand - driven by rapid industrialization and urban expansion - continues to outpace the deployment of clean energy solutions. Climate change further complicates this transition, with extreme weather events disrupting power supply and heatwaves increasing demand for fossil-fuel based energy. To accelerate the shift to clean energy, India needs investments in solutions that address challenges in large-scale variable renewable energy technologies, decarbonize hard-to-abate sectors, and promote rural development.
+27. The Government of India has launched several ambitious climate change missions and programmes, however, progress in some areas remains slower than anticipated. The technologies and solutions targeted under IGFF are strategically aligned with these national initiatives, focusing on segments where deployment has lagged. For instance, under the Pradhan Mantri Kisan Urja Suraksha evam Utthaan Mahabhiyan (PM-KUSUM) scheme launched in 2019, the goal was to install 1.5 million off-grid and 3.5 million grid-connected solar irrigation pumps by 2022. Despite extended timelines, only around 200,000 pumps have been deployed, mostly concentrated in just three states. Similarly, achieving India's NDC target of 500 gigawatts of renewable energy under the National Solar Mission will require a massive scale-up of solar and wind capacity. This goal could be significantly constrained without enabling solutions like RTC renewables, which are essential to manage variability and close the demand-supply gap in the power sector.
+28. DFIs have played an important role in several development areas, however their role in the clean energy transition had been limited. The proposed interventions, through the mobilization of climate finance and strengthening of public DFIs by institutionalizing green lending practices and providing credit lines, guarantees and equity mechanisms, will drive large-scale, gender-responsive investments to support emerging clean energy technologies.
+
+<!-- image -->
+
+29. India is heavily indebted, and hence its ability to fund the investments required for an effective energy transition is constrained. The country is currently struggling to access finance to support the transition that it needs to safeguard the energy security of its population and economy. Without access to finance and investments, India's clean energy transition will remain slow, and the country's dependency on fossil fuels will continue to increase, thereby undermining its national climate action and targets and its potential to contribute to global climate goals. The project will fill an important gap through working with key national and local institutions in both the public and private sectors and will help to foster long-term solutions through financial innovation and building access for public and private sector actors.
+
+## 3.5 Country ownership Scale: High
+
+30. Country ownership is well embedded in the project, which is fully aligned with the climate change and broader development aspirations, strategies and policies of India. The programme will promote the development of capacity and structuring of clean energy investments and systems in the country. IGFF also places an important focus on ensuring synergy with ongoing regional and national strategies and actions being implemented in the country.
+31. The programme is aligned with the updated NDCs, national adaptation plans, national action plan on climate change and other climate change and environmental policies and plans, and the GCF country programme of India. Furthermore, the programme has been developed with the strong participation and commitment of the Government of India, as well as the participation and commitment of other national and local-level stakeholders in the country, involving both high-level and grassroot-level stakeholder groups, including women and youth.
+32. The architecture of the programme consists of NABARD, REC and IIFCL, which are all publicly owned DFIs potentially acting as the potential executing entities (EEs). This will bolster the integration of local contexts and ownership into the project's activities and outputs.
+33. The programme is built on well-designed stakeholder consultations that were conducted throughout the project development process, ensuring local knowledge, innovation, sustainability and participation is fully embedded in the design of the programme.
+
+## 3.6 Efficiency and effectiveness Scale: Medium to high
+
+34. In terms of effectiveness, the IGFF is designed to maximize economic and climate value for money. With an estimated cost of USD 55 per tonne of CO₂ eq abated, the programme targets harder-to-finance and more expensive but strategically essential technologies that are critical for long-term renewable energy scale-up, justifying this initial higher abatement costs. A preliminary economic analysis shows a strong aggregate economic internal rate of return (EIRR) of 22.8 per cent, confirming IGFF's strong economic performance even under conservative assumptions. Technologies such as CBG, electric vehicles and off-grid solar irrigation show robust EIRRs in the range of 15-45 per cent, reinforcing the project's value from a cost-benefit standpoint. While financial viability varies across technologies, IGFF support reduces their weighted average cost of capital (WACC), thereby improving investment attractiveness. By addressing credit constraints, particularly for rural and small-scale developers, and ensuring that concessional finance is used only where market gaps exist, IGFF provides a scalable and replicable model that strengthens institutional capacity and facilitates private sector engagement. Several components, including solar irrigation, electric vehicles and CBG, demonstrate good financial returns, and there is a role for GCF concessional finance to
+
+<!-- image -->
+
+- address persistent access-to-finance barriers, de-risk new market entrants and support underserved geographies. And as such, it should be clear, targeted, time-bound and preferably structured to transition toward commercial terms as market mature. In contrast, technologies such as RTC solar and decentralized solar remain only marginally financially viable. For RTC solar in particular, the financial internal rate of return (FIRR) barely exceeds the WACC, and the project's bankability depends on assumptions around battery price reductions and off-take tariffs that remain unproven. There is a risk that the demand for financing in this segment may be overestimated, given the lack of confirmed off-takers and low returns to private investors. The AE cites ongoing power sector reforms to support renewable energy markets, which, however, are long-term changes. There is a need for near-term mitigation if pricing assumptions fail, such as the policy backstop.
+35. The funding amount is well justified to provide the support needed to unlock the urgent energy transition that India needs to achieve and develop innovative approaches and lessons for transforming energy systems in the South Asia region. The IGFF presents a cost-effective strategy to support India's clean energy transition and NDC goals by using concessional loans and guarantees to reduce financial barriers in high-impact but underfinanced sectors. These instruments are tailored to address risks that persist even after systemic reforms, helping to make emerging clean technologies more attractive to private investors. Concessional loans reduce the cost of capital and improve access to financing for sectors like round-the-clock renewables, green hydrogen, electric mobility, and decentralized solar. Guarantees play a complementary role by mitigating risks linked to CBG projects by MSMEs, where MSME investors often face steep collateral demands. This blend of financial tools, combined with technical assistance and capacity-building for DFIs, enables a strategic de-risking approach that crowds in private capital and unlocks new markets for clean energy deployment.
+36. The programme also has an exit strategy that will enable its approach to finance to be scaled up across India. It will also facilitate access and partnership between public and private actors and stakeholders for rolling out investments into emerging energy technologies, establishing innovative approaches for promoting them, and further improved ecosystem leading to lower costs.
+37. The programme has a proposed budget of USD 993 million, with GCF funding representing 20 per cent of the estimated cost at USD 200 million and co-financing at 80 per cent or USD 793 million. The GCF financing includes a USD 13 million grant (1.3 per cent of the total funding) and a USD 187 million senior loan (18.8 per cent of total funding). ADB will provide USD 788 million in senior loans with a 20-year tenor and a 5-year grace period (79.3 per cent of the total funding) and will support the project with a USD 5 million grant (0.5 per cent of total funding). The project will mobilize USD 1.8 billion from the participating DFIs and a further USD 754 million in equity from project proponents.
+38. Of the GCF's total loan of USD 187 million, USD 122 million will be provided under the financial terms and conditions set by the GCF Board for public sector concessional loans and will benefit from a sovereign guarantee from the Government of India. The remaining USD 65 million, intended to establish the RSF, will not be covered by a sovereign guarantee and will be structured as a non-recourse loan.
+39. Given the unique and innovative nature of the RSF, initial consideration was given to using grant funding and a potential GCF guarantee. However, both options had limitations: grants would not demonstrate a viable business case, while the GCF guarantee was constrained by a 1:1 leverage ratio - resulting in lower efficiency - and faced regulatory challenges within the current framework. Consequently, a concessional loan structure with a 1:3 leverage ratio was selected as the most efficient and feasible option.
+
+<!-- image -->
+
+40. To ensure the long-term sustainability of the RSF and provide adequate coverage for all loans guaranteed under it, the USD 65 million loan will require differentiated payment terms, including a grace period of 17 years.
+
+## IV. Assessment of consistency with GCF safeguards and policies
+
+## 4.1 Environmental and social safeguards
+
+41. IGFF background . The IGFF will leverage concessional financing from GCF to catalyse financing for clean energy investments in India which aim to scale up emerging clean energy technologies, including round-the-clock renewable energy, decentralized solar energy, electric mobility solutions, green hydrogen, and CBG. The key E&amp;S risks and/or impacts will mainly come from component 1, particularly on DFIs' financing of various subprojects such as: (i) Renewable energy technologies (e.g. round-the-clock renewable energy solutions and green hydrogen/ammonia production); (ii) Energy access modernization (e.g. e-mobility infrastructure, charging stations and CBG plants utilizing municipal solid waste and agricultural residues; and (iii) Resilient energy systems for communities (e.g. DRE applications supporting livelihoods such as solar-powered cold storage, off-grid solar water pumps, flour mills, and dairy farms). The E&amp;S co-benefits include improved air quality and reduced air pollution and carbon emissions. Providing accessible concessional finance and risk-sharing facilities also enhances access to clean energy supply and improves the resilience of communities.
+42. E&amp;S risk category and safeguard instruments . The E&amp;S risk category of the IGFF is category I-2 (medium level of intermediation) given that the IGFF's proposed portfolio is expected to include substantial financial exposure to activities with potential limited adverse environmental or social risks and impacts that are few, generally site-specific, largely reversible, and readily addressed through mitigation measures. The IGFF will likewise not support activities with potential significant adverse environmental and social risks and impacts that, individually or cumulatively, are diverse, irreversible or unprecedented (equivalent to category A). The Secretariat agrees with this categorization and it is within the AE's accreditation level. The AE has prepared an ESMF for the IGFF.
+43. Compliance with GCF's ESS standards . The paragraphs below describe the IGFF's compliance with GCF's interim ESS standards.
+44. ESS 1: Assessment and management of environmental and social risks and impacts . The AE has developed an ESMF for the IGFF. This framework defines eligible subproject types, assigns roles and responsibilities to key institutions, and establishes environmental and social policies, standards, and procedures throughout the investment cycle. It also provides guidelines for information disclosure, stakeholder consultation, participation, grievance redress, and accountability mechanisms. Additionally, the ESMF includes templates and checklists for environmental and social impact assessments (ESIA) and action plans, while addressing supply chain human rights and cultural heritage considerations. The ESMF also provided a programme-level assessment of E&amp;S risks and impacts, which identified potential E&amp;S risks, impacts, or mitigation measures based on the types and scale of subprojects anticipated under the programme. It also outlined the process and requirements for assessing, vetting and monitoring individual subprojects. Under the framework, each funded subproject must develop and implement an environmental and social management system based on an ESIA and an environmental and social management plan. All subprojects are required to establish grievance redress mechanisms (GRMs) and conduct meaningful stakeholder consultations.
+
+<!-- image -->
+
+45. ESS 2: Labour and working conditions. Many subprojects under the programme would likely involve the hiring of workers. The ESMF proposes mitigating issues related to ESS 2 through compliance with legislation and international standards, carrying out screenings and using checklists relevant to occupational health and safety, non-discrimination, forced and child labour, types of workers and origin of workers (taking the ADB Prohibited Investment Activities List (e.g. harmful and exploitative labour, child and forced labour) into account); and assessing labour risk in the supply chain, as relevant. It shall also include in contracts with civil works contractors, subcontractors and other providers of goods and services provisions to employ local labour wherever possible and ensure compliance with ADB's social safeguards requirements and international core labour standards, as defined in ADB's Core Labor Standards Handbook. 46. ESS 3: Resource efficiency and pollution prevention. The programme is designed to contribute to energy conservation through the utilization of solid waste and agricultural residue in the production of biogas and the use of solar power and other decentralized renewable energy applications. However, some of the subprojects to be supported may also involve the generation of solid waste (e.g. used batteries, discarded solar panels, other wastes), air emissions (e.g. dusts from construction activities and odour and fugitive gases from compressed biogas plants and ammonia production) and wastewater and other effluents (e.g. dairy farms and other applications). These pollution issues require ESIAs and the implementation of mitigation measures to ensure compliance with national and international environmental standards. The ESMF provides for conducting sustainability assessments of water supply and demand; integrating good practice environmental, health and safety guidelines and conducting environmental and social compliance audits; and developing environmental and social action plans to implement appropriate pollution prevention and management measures. 47. ESS 4: Community health, safety and security. The programme will exclude subprojects that involve the construction, maintenance, and rehabilitation of critical infrastructure that would require further technical assessment and safety studies as they would have significant adverse risks/impacts (equivalent to category A). However, some subprojects would potentially expose local communities and workers to sexual exploitation, abuse and harassment (SEAH) risk (e.g. when influx of labourers occur) and potentially generate hazardous wastes and pollutants. This would require further studies on management, minimization and control, and compliance with the country's and applicable international environmental quality standards. The potential impacts of the programme on community health and safety would include exposure to construction site hazards, product (e.g. battery) safety hazards, exposure to hazardous materials and wastes, and safety risks from construction and operation of energy infrastructure. These community health and safety issues require thorough assessment during subproject preparation and implementation. The ESMF provides for community health and safety risk assessments (e.g. construction site risks, infrastructure safety, product safety, hazardous materials, etc.) to be covered and addressed with mitigation measures in accordance with the mitigation hierarchy. As much as possible, the IGFF facilities or will require rights of way (e.g. for temporary access roads) during construction and
+48. ESS 5: Land acquisition and involuntary resettlement. will avoid activities that will potentially involve resettlement and dispossession, land acquisition, and economic displacement of persons and communities. However, some of the proposed investments under the IGFF will potentially need to acquire lands to set up physical operation stages. Approaches such as voluntary land donation, prioritizing 'degraded sites' (brownfield sites) and avoiding areas subject to natural hazards will be employed. Should subproject construction and operation require the preparation of a land acquisition and resettlement plan (LARP), the ESMF includes guidance to prepare a LARP.
+
+<!-- image -->
+
+GCF/B.42/02/Add.13
+
+49. ESS 6: Biodiversity conservation and sustainable management of living natural resources . The ESMF's pre-screening of the programme impacts using the E&amp;S screening form indicates that the possibility of subprojects being located within or in the vicinity of protected areas and areas of ecological significance, including in natural habitats, key biodiversity areas and internationally recognized conservation sites, is low but cannot be ruled out. Nevertheless, at the concept stage, subprojects that are anticipated to pose significant adverse impacts and risk on biodiversity and natural resources that will impair biodiversity values or ability of ecosystems to function effectively will be screened out. Subprojects that may have limited potential impacts on biodiversity and natural resources will be assessed and, if needed, a biodiversity management plan will be developed.
+50. GCF Indigenous Peoples Policy &amp; ESS7 (Indigenous Peoples) . Indigenous Peoples are involved in this project. The project requires project proponents to engage with Indigenous Peoples through meaningful consultation processes. This includes performing consultations in a language and manner that is understandable and accessible to the affected Indigenous Peoples, ensuring that their views are incorporated into decision-making processes such as project design, mitigation measures, and implementation issues. The consultations should also take place in an environment free of intimidation and coercion and must be gender-responsive and tailored to the needs of vulnerable and disadvantaged groups. The AE has agreed to apply its new Indigenous Peoples standard for this project. The AE has also agreed that for any differences between ESS 7 and the Indigenous Peoples requirements of the GCF Indigenous Peoples Policy, the most stringent will apply. In line with their roles and functions, the Indigenous Peoples Advisory Group is available to provide advice to the AE and EEs. In line with the GCF Indigenous Peoples Policy, the GCF Indigenous Peoples focal point will be available for assistance at any stage, including before a claim has been made.
+51. ESS8: Cultural heritage. Given the potential for physical works involved (e.g. some subprojects will involve the construction and/or expansion of land area or right of way), physical cultural resources may be encountered in such activities. These will need to be identified and highlighted during the screening, assessment, review and due diligence of proposed subprojects. A cultural heritage procedure has been developed, which defines cultural heritage as resources that reflect and express evolving values, beliefs, knowledge and traditions, encompassing both tangible and intangible heritage. The procedure focuses on potential cultural heritage discoveries during small-scale construction and renovation activities and requires subprojects to establish a chance find procedure, as needed.
+52. Implementation arrangements. A programme management unit (PMU), which will be established by the AE, will be responsible for the overall implementation of the ESMF, including continuous improvement, and provide due diligence on, coordination and oversight of, and technical assistance to DFIs to ensure compliance with E&amp;S policies and standards. Project implementing units (PIUs) will also be established at each participating DFIs. These units will be responsible for overseeing and managing of DFI-specific operations, thereby ensuring effective implementation of the ESMF at the subproject level. The PIUs will be staffed/supported by international and national consultants (E&amp;S specialists), who will conduct screenings, checks and reviews of relevant safeguards instruments.
+53. Stakeholder engagement and information disclosure . The IGFF underwent extensive stakeholder consultations, including initial discussions with key government agencies in India, focusing on concessional financing and capacity-building for green investments. Further consultations refined the IGFF scope and subproject selection criteria. The process culminated with stakeholder consultations engaging think tanks, private sector banks, DFIs, research organizations, and venture capital funds. A stakeholder engagement plan (SEP) has also been prepared to document past consultations and outline ongoing stakeholder engagement during
+
+<!-- image -->
+
+GCF/B.42/02/Add.13
+
+- implementation. During IGFF implementation, stakeholders will be engaged through structured consultations, capacity-building workshops and collaborative partnerships. The Government of India will ensure policy alignment through high-level consultations, while DFIs will execute subprojects, integrate climate risk assessments, and pilot financial products. Private sector institutions will co-finance projects, test innovative financial instruments, and participate in investment roadshows. Civil society and local communities will contribute insights, co-design projects, and join localized public consultations. To ensure transparency and accountability, the programme will establish regular updates, participatory decision-making platforms, and GRMs. The programme commits to the principle of transparency, accountability and disclosure of information. IGFF-funded subprojects will disclose E&amp;S risks, impacts, and management plans in a timely and accessible format to stakeholders, including affected communities, who will have
+- access to meaningful consultation processes. 54. Grievance redress mechanism (GRM). The SEP recognizes GRMs as a vital component of community and civil society engagement. Each subproject funded under the IGFF is required to establish its own grievance mechanism in accordance with best practice. The ESMF outlines the desirable design features of an effective GRM. The GRM must be transparent, accessible and culturally appropriate, with clear steps for grievance reception, response and monitoring. It must be legitimate, accessible, gender-sensitive and free of cost. The ESMF defines the roles of the PMU and the grievance redress officer (GRO) at the PIU and executing entity levels in documenting, processing and resolving grievances. A GRO will be engaged to handle grievances and ensure they are handled in a transparent, accessible and culturally appropriate manner. In addition to the GRM that will be established by each subproject, affected individuals may directly submit complaints to ADB's Accountability Mechanism and GCF's Independent Redress Mechanism, which provide an independent avenue for addressing grievances. 55. Sexual exploitation, abuse and harassment (SEAH) safeguarding. The revised GCF Environmental and Social Policy adopted by decision B.BM-2021/18 requires safeguarding from SEAH in GCF-financed activities. The AE provided SEAH safeguarding in its submission for this funding proposal. The ESMF outlines the screening phase requirements that SEAH risks and impacts will also form part of this project's screening and E&amp;S categorization. SEAH assessments will be carried out in order to improve environmental and social outcomes and to generate inclusive benefits to the communities. They further provide guidance on how in cases of SEAH instances, the AEs grievance redress mechanism has already embedded gender, GBV and SEAH accountability framework. Confidentiality, responsiveness, survivor centered, nonretaliation, safety and welfare will form the core standards for SEAH and reporting and GRM. The AE has zero tolerance approach to SEAH and in alignment with GCFs SEAH provisions of the RESP.
+
+## 4.2 Gender policy
+
+56. The AE has provided a gender analysis and action plan and therefore complies with the GCF Gender Policy. Women in India face significant systemic and structural challenges that limit their participation and leadership in the clean energy and finance sectors. These challenges are shaped by deeply rooted social norms, gender inequalities in access to resources, and intersectional vulnerabilities related to caste, class, location, age and disability. In the energy sector, rural women bear a disproportionate burden in managing household energy needs, often spending 20-40 hours a week collecting traditional fuels, leading to adverse health outcomes from indoor air pollution and limiting time for education and income-generating activities. Women face additional barriers in accessing modern energy solutions due to lower asset ownership, limited access to finance, and entrenched economic dependency on male family
+
+<!-- image -->
+
+- members. In the workforce, women's participation in India's renewable energy sector is extremely low (11%), with significant underrepresentation in technical and leadership roles despite high graduation rates in science, technology, engineering and mathematics among of gender-inclusive workplace policies further constrain women's participation across the energy value chain. Additionally, intersectional disparities affect Dalit women, Adivasi women, elderly women, and women with disabilities, who face compounded barriers to education,
+
+women. Sociocultural barriers, safety concerns, limited vocational training, wage gaps, and lack employment, energy access, and leadership roles.
+
+57. The gender action plan (GAP) defines activities, indicators and targets for women's participation and benefit with corresponding timelines, budget and gender expertise. The GAP adopts an approach to mainstreaming gender equality across its operations, with a focus on institutional strengthening, capacity-building, and promoting women's participation in clean energy value chains. The GAP provides targeted technical assistance to DFIs to develop genderresponsive workplace policies, collect and utilize sex-disaggregated data, and embed gender criteria in project selection processes. It establishes mandatory gender assessments and gender action plans for all projects, aiming to provide financing for women-led businesses at a level of 10 per cent in the DRE and e-mobility sectors. The GAP includes specific activities such as training 2,500 female entrepreneurs in green business development, organizing 30 gender awareness programmes for DFIs, and establishing internal gender task forces within all participating DFIs. It also promotes stakeholder dialogues to integrate gender equity into clean energy financing policy frameworks, supports the development of gender-sensitive loan products, and fosters inclusive consultation processes to ensure women's needs are reflected in project design. These measures aim to reduce gender disparities in access to finance, create safer and more inclusive workplaces, and enhance women's technical and leadership capacities, enabling their active engagement across the clean energy ecosystem in India.
+
+## 4.3 Risks
+
+## 4.3.1. Overall programme assessment (medium-high risk)
+
+58. The Secretariat considers the overall programme as medium-high risk.
+
+## 4.3.2. Accredited entity/executing entity capability to execute the current programme (medium risk)
+
+59. The ADB is the AE for this project. The AE has committed 655 public sector loans, grants, and technical assistance totalling US$59.5 billion to India. The executing entities (EEs) will be selected by the AE in accordance with the eligibility criteria for each Subproject for Output 1.1 and for the RSF facility for Output 1.2. NABARD, REC and IIFCL, which are all publicly owned DFIs potentially acting as the potential EE for Output 1.1.
+
+## 4.3.3. Programme-specific execution risks (medium-high risk)
+
+60. Sovereign Credit Risk: The borrower of the GCF loan amounting to USD 122 million for Output 1.1 is a development financial institution (DFIs) backed by a sovereign guarantee. Consequently, GCF is exposed to the sovereign credit risk of India, rated Baa3 by Moody's. Although the country has a high general government debt, it is anticipated that the budget deficit and debt levels will be continuously reduced according to forecasts by the central government and rating agencies. Additional comfort is provided by the fact that the GCF loans will rank pari-passu with ADB loans, including cross-default provisions.
+
+<!-- image -->
+
+61. Performance Risk for RSF: The borrower of the GCF loan amounting to USD 65 million for Output 1.2 will be the RSF manager. This entity will manage the RSF and issue guarantees to participating financial institutions (PFIs), which will, in turn, lend to MSMEs investing in compressed biogas. Any default by these MSMEs (guaranteed borrowers) will be covered by the guarantee up to 50%. Losses will be shared proportionately between the RSF borrower and PFIs. Unlike Output 1.1, GCF is the sole investor for this output without a sovereign guarantee, exposing it to the performance risk of the RSF, which will depend on underlying guarantee losses and recoveries.
+62. The AE has provided a financial model with various scenarios, aiming to preserve capital under several assumptions such as the composition and profiles of guaranteed borrowers, recovery rates, and expected losses. It is projected that the guarantee fee will be sufficient to cover expected losses, although actual claims and losses will only be determined during implementation. The loans and guarantees will be provided in INR, while GCF disbursement and repayment will be in USD. The RSF will establish a Foreign Exchange Fluctuation Reserve (FEFR), funded by managed contributions from RSF revenues on an annual basis to mitigate the FX risk for GCF. Further details on procedures for claims, the establishment of the FEFR, and fees will be outlined in the RSF Operations Manual (ROM), which will be a condition precedent to disbursement. GCF relies on the RSF manager's ability to efficiently manage the facility.
+63. Project Viability and Concessionality: The program has a proposed budget of USD 993 million, with GCF funding accounting for 20% of the estimated cost, at USD 200 million, and cofinancing covering 80% or USD 793 million.
+64. The full concessionality of the GCF grant (USD 13 million) will benefit DFIs, PFIs, and MSMEs by facilitating the origination, appraisal, and structuring of investments in targeted sectors through technical assistance.
+65. The GCF portion in Output 1.1 accounts for approximately 13% (USD 122 million out of USD 910 million). Given GCF's relatively small stake in Output 1.1, the extent to which the concessionality is passed down to the end borrower is expected to be moderate.  A question was raised by the Secretariat that how the AE can ensure that DFIs are not using concessional funds to improve their own balance sheet rather than passing on the benefits to the end-borrowers. The AE has analyzed that the cost of funds to DFIs is close to, or in some cases even slightly higher than, their current funding costs. In this respect, DFIs primarily benefit from access to additional resources that enable them to expand their lending capacity to high-risk perceived or underserved sectors, rather than significantly from pricing due to concessionality. To ensure that the concessionality is not absorbed by DFIs and is effectively passed down, the term sheet mandates periodic monitoring to demonstrate how GCF concessionality is passed down in terms of pricing or tenor to the end borrowers at the Subproject level, compared to other deals that do not benefit from GCF concessionality.
+
+## 4.3.4. Compliance risk (medium risk)
+
+66. The proposal presents inherently high-impact but low-probability compliance risks related to money laundering, terrorist financing, and prohibited practices. These risks arise from the structure of the project, which channels GCF resources through multiple Development Finance Institutions (DFIs). While the proposed DFIs operate under India's AML/CFT framework, residual risks remain due to variations in institutional maturity and enforcement. These are mitigated somewhat by ADB's Integrity Principles and due diligence applied at the sub-project level. Two DFIs are already GCF accredited, and the others must meet equivalent standards, including KYC measures, ensuring consistent compliance across all institutions.
+
+<!-- image -->
+
+67. ADB intends for its institutional AML/CFT framework to provide the foundations for mitigation mechanisms. This includes enhanced integrity due diligence, know-your-customer (KYC) checks, sanctions screening, and anti-corruption procedures. ADB's established mechanisms-such as the Office of Anticorruption and Integrity, integrity checklists, whistleblower protections, and grievance redress procedures-offer layered controls throughout the project lifecycle. The mandatory application of these safeguards across all DFIs, including those not yet accredited by GCF, ensures uniform compliance expectations and contributes to higher institutional accountability.
+68. Given the project's operating structure, ADB integrity standards, and embedded compliance safeguards, the residual compliance risk is assessed as medium.
+
+## 4.3.5. GCF portfolio concentration risk
+
+69. In case of approval, the impact of this proposal on the GCF portfolio risk remains nonmaterial and within the risk appetite in terms of concentration levels, results area, single proposal or AE concentration.
+
+## 4.3.6. Recommendation
+
+70. It is recommended that the Board consider the above factors in its decision.
+
+| Summary risk assessment                       | Summary risk assessment          |
+|-----------------------------------------------|----------------------------------|
+| Overall programme                             | Medium-High                      |
+| Accredited entity/executing entity capability | Medium                           |
+| Project-specific execution                    | Medium-High                      |
+| Compliance                                    | Medium                           |
+| GCF portfolio concentration                   | Within the monitoring thresholds |
+
+## 4.4 Fiduciary
+
+71. ADB will play the dual role of AE and EE in the programme. As EE for the IGFF, ADB will be responsible for the overall programme, including deployment of technical assistance (component 2).
+72. For the lending and RSF, ADB will partner with national DFIs as the EEs. ADB has identified three such entities (listed below), but will finalize them at the subproject design stage:
+3. (a) National Bank for Agriculture and Rural Development (NABARD);
+4. (b) Rural Electrification Corporation (REC); and
+5. (c) India Infrastructure Finance Company Limited (IIFCL).
+73. For the execution of sovereign investment loans and grants, each EE will be responsible for the full execution of the sovereign investment loans and non-sovereign loans in accordance with the subsidiary loan/grant agreements.
+74. Financial accounting, disbursement procedures and auditing requirements will be developed during the preparation of each project, in accordance with ADB's policies on financial management and the analysis of projects, and will be included in their respective project administration manuals. The financial management systems of the DFIs will be assessed based on the adequacy and ability for timely reporting. The loan proceeds for all IGFF projects will be
+
+<!-- image -->
+
+- disbursed in accordance with ADB's Loan Disbursement Handbook, and detailed arrangements will be agreed upon by the respective DFIs, government authoritiest and ADB. Public disclosure of the audited project's financial statements, including the auditor's opinion on the subproject financial statements, will be guided by ADB's Access to Information Policy 2018. DFIs financial management and audit performance will be regularly supervised through quarterly progress reports, annual audited reports, and compliance with financial covenants.
+
+## 4.5 Results monitoring and reporting
+
+75. This is a mitigation programme that will contribute to GCF Mitigation Result Area MRA1 (Energy generation and access) and MRA2 (Low-emission transport). The project is expected to contribute to the reduction of 12.7 million t CO2 eq by the complete date of the programme (10 years from the effective date) and 50 million t CO2 eq for the whole lifetime of the programme's proposed technologies (20 years), helps improve access to clean energy for almost 24 million people and creates 139,000 jobs through the implementation of the technologies.
+76. The AE has produced a quite comprehensive annex 22 explaining how the GHG emissions reduction was calculated per proposed technology with reference to specific clean development mechanism (CDM) methodologies. Baseline and additionality were also clearly defined in accordance with the process and tools prescribed in relevant CDM methodologies and tools. Even though this is a mitigation programme, people in communities will have also cobenefits in relation to better access to clean renewable energy as well as jobs created along the clean renewable energy development value chain.
+77. The results management arrangements proposed under the project were refined over five rounds of review and engagement with the AE. Specifically, changes were made to the project theory of change to ensure that it was clear, logically coherent, and linked to the climate rationale and activities proposed under the project. The project logical framework was also refined over multiple rounds to ensure that the proposed indicators and targets were realistic and linked to the proposed theory of change.
+78. The AE was also provided with advice for refining the supporting annexes, including the implementation timetable, monitoring and evaluation plan, and GHG emission reduction calculation.
+79. The AE has responded positively to guidance provided and refined the funding proposal accordingly.
+
+## 4.6 Legal assessment
+
+80. The Accreditation Master Agreement was signed with the Accredited Entity on 17 August 2017, and became effective on 6 September 2017, which was amended and restated pursuant to a first amendment and restatement agreement dated 13 July 2023, and which became effective on 20 September 2023 (the 'AMA').
+81. The Accredited Entity has not provided a legal opinion/certificate confirming that it has obtained all internal approvals and it has the capacity and authority to implement the programme.
+82. The proposed programme will be implemented in the Republic of India, a country in which GCF is not provided with privileges and immunities. This means that, amongst other things, GCF is not protected against litigation or expropriation in this country, which risks need
+
+<!-- image -->
+
+- to be further assessed. Moreover, the ability of GCF to undertake redress activities and/or investigations in the country may be hindered due to the absence of privileges and immunities for relevant GCF personnel.
+83. Therefore, it is recommended that the Board considers whether disbursements of GCF proceeds should only be made after GCF has obtained satisfactory protection against litigation and expropriation in the country, or has been provided with appropriate privileges and immunities for GCF and its personnel.
+84. Pursuant to clause 4.05(b) of the AMA, the Accredited Entity is required to carry out, among other things, legal due diligence on the proposed programme. Although the Accredited Entity has submitted its legal due diligence for the programme, the Accredited Entity is not currently able to complete its legal due diligence on the proposed structure of the risk sharing facility under Output 1.2 of the programme (the 'RSF') as the exact Indian legal regime applicable to the RSF would depend on the identity of the development finance institution ('DFI') selected by the Accredited Entity to house the RSF. Consequently, the Accredited Entity will need to conduct further due diligence following the selection of the relevant DFI during programme implementation to confirm the exact structure of the RSF and how it will be operationalized.
+85. The Secretariat is therefore not able, at this point, to fully assess the legal risks that may be associated with the final legal structure of the RSF. To mitigate this uncertainty relating to the RSF, it has been agreed in the term sheet, and the Secretariat will reflect in the subsequent legal arrangements, that the final RSF structure will need to be satisfactory to the Secretariat, and any necessary risk mitigants put in place prior to the Accredited Entity's approval of the RSF and prior to any disbursements being made by the GCF for the RSF-related activities.
+86. To address the matters raised in this section, it is recommended that any approval by the Board is made subject to the following conditions:
+- (a) Submission by the Accredited Entity to the Fund of a certificate or legal opinion, in form and substance satisfactory to the GCF Secretariat, within 120 days after Board approval (or as otherwise provided for in Clause 4.21 of the AMA), confirming that the Accredited Entity has obtained all final internal approvals needed by it and has the capacity and authority to implement the proposed programme;
+- (b) Signature of the funded activity agreement in a form and substance satisfactory to the GCF Secretariat within 180 days from the date of Board approval, or the date the Accredited Entity has provided a certificate or legal opinion confirming that it has obtained all final internal approvals, whichever is later; and
+- (c) Completion of the legal due diligence to the satisfaction of the GCF Secretariat.
+
+<!-- image -->
+
+## Independent Technical Advisory Panel's assessment of FP271
+
+Proposal name:
+
+India Green Finance Facility (IGFF)
+
+Accredited entity:
+
+Asian Development Bank
+
+Country:
+
+The Republic of India
+
+Pprogramme size:
+
+Large
+
+## I. Assessment of the independent Technical Advisory Panel
+
+## 1.1 Overview
+
+1. The India Green Finance Facility (IGFF) proposal, submitted by the Asian Development Bank (ADB) to GCF, represents a strategic intervention designed to accelerate a clean energy transition for India by addressing critical financing gaps for emerging technologies that remain underserved by traditional financing channels. This comprehensive funding proposal seeks GCF support of USD 200 million to catalyse a total financing package of USD 993 million, with the potential to mobilize approximately USD 2.9 billion in total investments for clean energy development in India.
+
+## 1.2 Programme structure and components
+
+2. The IGFF is structured around two primary components, each with specific outputs and activities:
+
+Component 1: Financing for development finance institutions (DFIs) to scale up emerging clean energy technologies (USD 980 million)
+
+3. This component provides financial support through two distinct outputs:
+
+Output 1.1: DFIs have secured concessional loans to finance emerging clean energy technologies (USD 915 million)
+
+4. This output will provide concessional financing to DFIs for on-lending to both public and private sector borrowers investing in emerging clean energy technologies.
+5. The financing will target five key technologies: round-the-clock (RTC) renewable energy with storage, green hydrogen production, electric mobility, and decentralized renewable energy solutions including solar irrigation pumps.
+6. The financing structure includes USD 122 million in GCF loans blended with USD 788 million in ADB loans and USD 5 million in ADB grants.
+
+Output 1.2: Risk-sharing facility (RSF) is established to de-risk investments in compressed biogas (CBG) projects (USD 65 million)
+
+7. This output establishes a dedicated USD 65 million RSF funded entirely by GCF loans to provide partial credit guarantees for micro, small and medium-sized enterprises (MSME) developers in the CBG sector.
+
+<!-- image -->
+
+8. The RSF aims to address high-risk perception and stringent collateral requirements currently limiting financing for small-scale CBG projects.
+9. With a leverage ratio of 3, the RSF is expected to mobilize approximately USD 390 million in loans from participating financial institutions and support total project investments of USD 557 million.
+
+## Component 2: Technical support for institutionalizing green lending practices (USD 13 million)
+
+10. This component focuses on capacity-building and technical assistance through three outputs:
+2. Output 2.1: DFIs have enhanced technical capacities to finance emerging clean energy technologies (USD 6 million)
+11. This output will strengthen the institutional capacity of at least five DFIs to appraise, structure and monitor investments in emerging clean energy technologies.
+12. Activities include developing appraisal toolkits, establishing monitoring systems, and training DFI staff on technical assessment of clean energy projects.
+5. Output 2.2: MSMEs and participating financial institutions have enhanced technical capacities to access credit guarantees through RSF (USD 3 million)
+13. This output will build the capacity of participating financial institutions and MSME developers to structure bankable CBG projects and utilize the RSF effectively.
+14. Activities include developing risk assessment tools, training on project structuring, and establishing portfolio monitoring systems.
+8. Output 2.3: Public/private financial institutions adopt tools and frameworks to scale up financing for emerging clean energy technologies (USD 2.85 million)
+15. This output will support broader adoption of green finance practices across the financial sector in India.
+16. Activities include organizing financial sector dialogues, developing climate risk assessment tools, and supporting policy engagement on enabling frameworks for green finance.
+17. An additional USD 1.15 million is allocated for monitoring and evaluation activities across the programme.
+
+## 1.3 Financial instruments and terms
+
+18. The IGFF employs a blended finance approach with the following instruments: 19. GCF concessional loans (USD 187 million) : (a) USD 122 million for on-lending to DFIs under Output 1.1; (b) USD 65 million for the RSF under Output 1.2; (c) Loan terms include 1.25 per cent interest rate (including 0.5 per cent service fee), 0.75 per cent commitment fee, 20-year tenor, and 5-year grace period for Output 1.1 loans; and (d) For the RSF loan, an extended grace period of 17 years is proposed to allow for guarantee operations and potential claim payouts. 20. GCF grants (USD 13 million):
+2. (a) USD 6 million for capacity-building of DFIs (Output 2.1);
+
+<!-- image -->
+
+- (b) USD 3 million for capacity-building related to the RSF (Output 2.2);
+- (c) USD 2.85 million for broader financial sector capacity-building (Output 2.3); and
+- (d) USD 1.15 million for monitoring and evaluation.
+21. ADB co-financing (USD 793 million):
+- (a) USD 788 million in senior loans; and
+- (b) USD 5 million in technical assistance grants.
+
+## 1.4 Expected impact and results
+
+22. The IGFF aims to deliver significant climate and development benefits:
+2. (a) Climate impact: Target mitigation of 50 million metric tonnes of carbon dioxide (t CO₂ eq) over the 27-year lifespan of the facility;
+3. (b) Energy transition: Target support for 836 megawatts (MW) of new renewable energy capacity, including 451 MW of electrolyser capacity for green hydrogen and 578 megawatt-hour of battery energy storage:
+4. (c) Rural development: Target deployment of over 63,000 solar irrigation pumps and other decentralized renewable energy solutions;
+5. (d) Sustainable transport: Target financing for more than 131,000 electric two- and threewheelers;
+6. (e) Job creation: Target over 139,000 green jobs across the clean energy value chain; and
+7. (f) Gender empowerment: Targeted support for women-led enterprises and genderresponsive financing.
+
+## 1.5 Implementation arrangements
+
+23. The programme will be implemented over a 10-year period, with a total lifespan of 27 years. ADB, as the accredited entity (AE), will be responsible for overall programme management, while selected DFIs will serve as executing entities. These include the National Bank for Agriculture and Rural Development, Rural Electrification Corporation, and India Infrastructure Finance Company Limited.
+24. The IGFF represents a comprehensive approach to addressing financing barriers for emerging clean energy technologies in India, combining concessional finance with technical assistance to transform the financial ecosystem for climate investments and accelerate progress towards the climate goals and nationally determined contributions (NDCs) of India.
+
+## II. Overall assessment
+
+25. The IGFF represents a strategic intervention to accelerate a clean energy transition for India by addressing critical financing gaps for emerging technologies that remain underserved by traditional financing channels. The facility demonstrates strong alignment with the country's climate commitments and has potential for significant climate impact, with USD 200 million in GCF funding expected to mobilize USD 2.9 billion in total investments and deliver 50 million t CO₂ eq in emissions reductions over its 27-year lifespan.
+26. A key potential strength of the IGFF is its integration with the broader ADB policy and reform initiatives in the energy sector in India. The programme builds upon and complements
+
+<!-- image -->
+
+- ADB's substantial engagement in India, including over USD 2.5 billion in sovereign energy sector lending over the past five years. The IGFF will leverage synergies with ADB's ongoing PolicyBased Lending (PBL) for Power Sector Reform, which focuses on enabling deeper integration of variable renewable energy and improving the financial performance of distribution companies. While the ADB PBL programmes catalyse structural reforms that are essential for scaling clean energy, the IGFF translates these upstream reforms into institutionalized climate finance systems through its technical assistance components, particularly Output 2.3.
+27. While the leverage of PBL instruments in terms of enforcing conditionality remains contested (experience across multiple operations suggests that disbursement-linked conditions are often relaxed or waived when deadlines approach), this general set-up has the potential to create a powerful feedback loop between practice and policy: reforms supported by the ADB policy programmes - such as the PBL - create an enabling environment for IGFF investments, while lessons from IGFF implementation inform future policy dialogue and regulatory refinement. Through this approach, the IGFF may extend beyond a one-off programme to become a transformative mechanism that embeds green finance practices within the financial architecture of India, creating lasting pathways for institutional change and private sector participation in clean energy financing.
+28. While the proposal presents a compelling case for GCF support, several areas require further clarification and refinement, particularly regarding the structure of the RSF, the financial viability of some technologies, implementation arrangements, and monitoring frameworks.
+
+## III. Assessment against investment criteria
+
+## 3.1 Impact potential Scale: High
+
+## 3.1.1 Contribution to GCF mitigation and adaptation results areas
+
+29. The IGFF directly contributes to GCF mitigation results areas 1 (Energy generation and access) and 2 (Low-emission transport), with 82 per cent and 18 per cent of GCF contribution allocated to these areas respectively. The proposal targets an impressive mitigation impact of 50 million metric t CO₂ eq over the facility's lifetime through the installation of 836 MW of new renewable energy capacity. This includes investments in RTC renewables, green hydrogen production, CBG, distributed renewable energy, and electric mobility solutions.
+30. The scale of the anticipated impact is substantial, with the programme planning to deploy 451 MW of electrolyser capacity for green hydrogen, 578 megawatt-hour of battery energy storage, over 63,000 solar irrigation pumps, and more than 131,000 electric two- and three-wheel vehicles. These investments align strategically with the NDCs and targets for energy transition in India.
+
+## 3.1.2 Scale of expected mitigation impact and departure from business-as-usual
+
+31. The programme represents a significant departure from business-as-usual by targeting high-impact but underfunded sectors that are currently not receiving adequate commercial financing. The economic analysis shows robust economic returns across technologies with an aggregate economic internal rate of return of 22.8 per cent.
+32. The IGFF focuses strategically on technologies that remain underfinanced despite their critical role in the country's energy transition, including RTC renewables with storage, green hydrogen for industrial decarbonization, and CBG for waste management. As highlighted in the funding proposal, these technologies are essential for avoiding carbon lock-in in sectors like
+
+<!-- image -->
+
+- power generation, transport and industry, which collectively account for the majority of emissions in India.
+33. In response to a written question from the independent Technical Advisory Panel (iTAP) regarding the necessity of concessional support for RTC renewables, ADB clarified that despite progress made by India in renewable energy investment, the regulatory framework for battery monetization is still immature, and RTC renewables face significant bankability challenges. The concessional finance is necessary to unlock investments in this area until the regulatory environment matures. While the role of domestic DFIs remains central to the IGFF's design, it may be prudent to consider greater and more systematic engagement with commercial banks particularly for technologies such as RTC and stand-alone battery energy storage systems where risk aversion may be less pronounced and operational efficiency potentially higher.
+
+## 3.1.3 Addressing needs of vulnerable communities and populations
+
+34. The IGFF specifically targets underserved regions and vulnerable communities. The programme will direct at least 30 per cent of financing to states with either high potential but low deployment of renewable energy technology, overreliance on a single type of renewable energy technology, or low electricity access.
+35. The focus on rural and decentralized applications will particularly benefit vulnerable communities through improved energy access and livelihoods. The programme expects to create over 139,000 green jobs across the clean energy value chain, with particular attention to rural employment opportunities. Women and MSMEs are specifically targeted as beneficiaries, with a gender action plan aiming to promote women's participation in the clean energy sector.
+36. In response to iTAP question #48 regarding benefits to rural and peri-urban communities, ADB detailed how the programme will ensure financing reaches beyond urban areas through specific targets for rural lending in DFI agreements and through technologies like off-grid solar pumps and mini-grids that are inherently focused on rural areas.
+
+## 3.2 Paradigm shift potential Scale: Medium
+
+## 3.2.1 Potential to catalyse impact beyond the programme
+
+37. The IGFF is designed to catalyse long-term systemic change in the clean energy financing landscape of India by fundamentally transforming how DFIs approach climate finance. As noted in the Secretariat assessment, the programme "advances India's net-zero ambitions and accelerates progress towards its 2030 NDC targets by prioritizing investment in sectors that are pivotal to deep decarbonization".
+38. The programme's holistic approach combines concessional finance with technical assistance to address both supply and demand barriers to climate finance. The institutionalization of climate risk management practices within DFIs will ensure lasting impact beyond the programme duration. By embedding standardized green finance practices into institutional systems and facilitating coordination between financial institutions and policymakers, IGFF aims to catalyse a systemic transformation in the financial ecosystem in India.
+39. In response to the iTAP's written question on paradigm shift potential, ADB explained that IGFF will catalyse change beyond immediate beneficiaries by mainstreaming climate finance within DFIs through three key channels: capacity-building that transforms credit assessment methodologies; demonstration effects that show the commercial viability of climate investments; and knowledge-sharing that enables replication by other institutions.
+
+<!-- image -->
+
+40. The iTAP welcomes the programme's intent to build institutional capacity across Indian DFIs and embed climate finance as a core function. However, we note a missed opportunity to more fully leverage GCF concessionality to elevate the climate ambition of the participating DFIs themselves. In other comparable financial intermediation programmes, concessional access has been conditioned not only on climate screening of the end-use investments but also on the strategic alignment of intermediary institutions. This includes requiring DFIs to articulate their own climate strategies, disclose transition plans, and commit to phasing out support for carbonintensive activities.
+41. In the case of IGFF, no such conditionalities appear to apply. As a result, concessional resources could inadvertently support institutions whose broader portfolios are not aligned with low-carbon development objectives, undermining the overall coherence of the programme. The iTAP believes this represents a missed opportunity to drive a deeper paradigm shift - one that influences not only the allocation of capital but also the governance, risk frameworks and institutional direction of key financial actors in India. Given the scale and systemic influence of DFIs in the Indian financial ecosystem, such alignment could have significant catalytic spillover effects.
+
+## 3.2.2 Approach to scaling up and replication
+
+42. The proposal presents a clear framework for scaling and replication through the development of standardized assessment tools, financing approaches and risk management frameworks that can be adopted by other financial institutions. The RSF for CBG projects provides a potentially replicable model for de-risking early-stage technologies in other sectors.
+43. By demonstrating successful financing models and building institutional capacity within DFIs, the programme creates the foundation for continued scaling of climate finance beyond GCF support. The technical assistance component will produce knowledge products and standardized tools that can be replicated by other financial institutions, fostering wider adoption of climate finance practices.
+44. In response to the iTAP question #33 on involving the commercial banking sector in India, ADB detailed how the programme actively aims to promote replication by involving commercial banks through knowledge-sharing activities, creating demonstration projects, and helping DFIs develop products that commercial banks can later adopt. The programme will document and share successful financing models that can be replicated by private sector financial institutions. The initiative would have been more paradigm-shifting had it directly engaged commercial banks - particularly for more established technologies such as RTC and stand-alone battery energy storage systems - where general market readiness as well as support from federal and state programmes is higher and the potential for mainstreaming green finance through existing channels is more immediate.
+
+## 3.2.3 Innovation in approach and financial instruments
+
+45. The IGFF introduces several innovative elements, particularly in its approach to fostering transition planning by selected DFIs. The RSF for CBG represents an innovative approach to addressing market barriers in a nascent sector, combining guarantee mechanisms with technical assistance to build market confidence.
+46. In response to an iTAP written question on why the RSF was only designed for CBG, ADB explained this strategic choice was based on the unique challenges facing the CBG sector, including the early stage of market development and the predominantly MSME-based developer landscape. These factors create higher perceived credit risks requiring a dedicated de-risking mechanism beyond what is needed for more established technologies.
+
+<!-- image -->
+
+## 3.2.4 Contribution to regulatory frameworks and policies
+
+47. The IGFF contributes significantly to improving the regulatory and policy environment for climate finance in India. Component 2 of the programme includes technical assistance for policy engagement, with ADB facilitating at least two annual green finance policy roundtables with the Reserve Bank of India, the Securities and Exchange Board of India and other financial policymakers along with DFIs and financial institutions.
+48. The programme will support the development of standardized green lending criteria, climate risk disclosure frameworks, and transition planning methodologies that align with emerging national and global standards. These activities will strengthen the overall enabling environment for climate finance in India.
+49. In response to iTAP question #28 on alignment with emerging green finance taxonomies and disclosure requirements, ADB confirmed that the programme is designed to align with and support the implementation of green finance taxonomies and disclosure frameworks being developed by the Reserve Bank of India and the Securities and Exchange Board of India. The technical assistance component includes specific activities to help DFIs adopt these frameworks as they emerge.
+
+## 3.3 Sustainable development potential Scale: Low-Medium
+
+## 3.3.1 Environmental, social, economic, and gender-sensitive development impacts
+
+50. The IGFF provides a comprehensive assessment of its sustainable development benefits across multiple dimensions.
+51. Environmental co-benefits include improved air quality from reduced fossil-fuel combustion, enhanced water-use efficiency through solar irrigation systems and other technologies, and better waste management through CBG projects. The Secretariat notes that the programme "will result in over 50 million t CO₂ eq emissions reductions, while simultaneously enhancing adaptive capacity across sectors such as agriculture, transport, and energy".
+52. Social co-benefits include enhanced energy security, improved health outcomes from reduced air pollution, and greater access to clean energy services, particularly in rural and underserved areas. The programme is expected to create 139,234 green jobs across the clean energy value chain, with a focus on inclusive employment opportunities.
+53. Economic co-benefits include reduced energy import dependency, new income streams for farmers through the CBG value chain, cost savings for energy consumers, and the development of domestic manufacturing capacity for clean energy technologies. The Secretariat notes that "sectors prioritized by the programme - such as energy, manufacturing and agriculture - are both major contributors to GHG [greenhouse gas] emissions and vulnerable to climate change impacts."
+54. Gender-sensitive development impacts are addressed through a comprehensive gender action plan that includes targets for women's participation in programme activities, dedicated financing for women-led businesses, and capacity-building initiatives targeting women entrepreneurs. The gender action plan aims for 10 per cent of financing to go to women-led businesses in decentralized renewable energy and e-mobility sectors.
+
+## 3.3.2 Environmental and social risk management
+
+55. The IGFF includes an Environmental and Social Management Framework (ESMF) to identify, assess and manage environmental and social risks associated with programme
+
+GCF/B.42/02/Add.13
+
+<!-- image -->
+
+GCF/B.42/02/Add.13
+
+- activities. The Secretariat's assessment notes that "a costed environmental and social management framework (ESMF) was developed to align programme's sub-projects with GCF's ESS [environmental and social safeguards] polices and requirements, outlining specific activities that will sufficiently ensure that ESS are put in place and observed throughout the programme's lifespan."
+56. The ESMF includes screening criteria for subprojects, risk management procedures and monitoring protocols. Subprojects will be categorized according to their environmental and social risk levels, with high-risk (Category A) projects excluded from programme financing.
+57. While the ESMF does acknowledge water scarcity as a risk for hydrogen production noting that approximately nine litres of water are needed per kilogram of hydrogen, and warning about potential impacts on local communities - this recognition appears largely confined to the technical appendices. The ESMF correctly identifies that water-intensive hydrogen production could exacerbate existing water shortages, threaten food production, and impact lives and livelihoods, particularly in already water-stressed regions. It even proposes mitigation measures such as 'assessing the sustainability of freshwater demand' and implementing awareness campaigns on sustainable water management.
+58. However, a critical disconnect exists between this risk identification and the actual investment framework. The main funding proposal fails to integrate these water concerns into its hydrogen component description or financial analysis, suggesting that while the technical teams understand the risks, these considerations haven't been elevated to the decision-making level. The proposed mitigation measures remain vague and procedural, stating that water sustainability "shall be assessed" without specifying methodologies, thresholds, or timing requirements. Most concerning is the absence of any requirement to complete water availability assessments before approving hydrogen projects, or to exclude such projects from waterstressed areas despite acknowledging the potentially severe impacts.
+59. This gap between risk recognition and risk management exemplifies a broader pattern in climate finance proposals where technical appendices identify critical constraints, but these insights fail to meaningfully influence project design or investment criteria. For GCF to ensure responsible investment, the water scarcity concerns identified in the ESMF must be elevated from a technical checkbox to a core criterion in the hydrogen project selection process, with mandatory water stress assessments required before any financing approval and clear exclusion criteria for water-stressed regions.
+
+## 3.4 Needs of the recipient Scale: Medium-High
+
+## 3.4.1 Addressing country and group vulnerabilities
+
+60. The IGFF directly addresses the vulnerability of India to climate change impacts and energy security challenges. The Secretariat assessment strongly validates the country's position as "the world's third-largest carbon emitter, whose energy supply is still heavily dependent on fossil fuels, with an ever-heightening energy consumption that is propelled by a growing population."
+61. The programme targets technologies that enhance climate resilience in vulnerable sectors such as agriculture through solar irrigation pumps and decentralized renewable energy solutions. These interventions will help reduce dependency on rainfall-dependent energy sources and improve resilience to climate impacts on water availability and agricultural productivity.
+62. By focusing financing on underserved regions, including the north-eastern and eastern states of India that have lower renewable energy deployment and electricity access, the
+
+<!-- image -->
+
+GCF/B.42/02/Add.13
+
+- programme addresses geographical inequalities in climate vulnerability. The Secretariat notes that "despite extended timelines, only around 200,000 pumps have been deployed - mostly concentrated in just three states", highlighting the need for more equitable distribution of clean energy resources.
+
+## 3.4.2 Addressing financial, economic, social and institutional needs
+
+63. The IGFF comprehensively addresses the financial, economic, social and institutional barriers to scaling clean energy investments in India. The Secretariat notes that "India is heavily indebted and hence its ability to fund the investments required for an effective energy transition is constrained", highlighting the critical need for concessional finance.
+64. Financially, the programme provides affordable long-term capital for technologies that face financing constraints due to high upfront costs, perceived risks, or limited track records. The blended finance approach, combining GCF concessional loans with ADB financing, addresses the affordability gap for emerging clean energy technologies.
+65. Economically, the programme supports job creation, clean energy access, and the development of domestic manufacturing capabilities in strategic sectors like green hydrogen and energy storage. These outcomes align with the economic development priorities of India.
+66. Institutionally, the programme addresses significant capacity gaps within DFIs through comprehensive technical assistance. As noted in the Secretariat assessment, "DFIs have played an important role in several development areas, however their role in clean energy transition had been limited." The programme will strengthen DFI capacity to assess, structure, and monitor climate investments.
+67. In response to iTAP question #9 on the availability of long-tenure green financing in India, ADB confirmed that commercial banks and non-banking financial companies currently offer limited long-term green financing, typically providing loans with tenors of 5 to 7 years compared to the 10 to 15 years needed for many clean energy technologies. This gap particularly affects MSMEs and underscores the need for an IGFF intervention.
+
+## 3.5 Country ownership Scale: High
+
+## 3.5.1 Alignment with national strategies and plans
+
+68. The IGFF demonstrates exceptional alignment with the climate and development strategies of India. The Secretariat assessment confirms that "the project is aligned with the updated Nationally Determined Contributions (NDCs), National Adaptation Plans (NAPs), National Action Plan on Climate Change (NAPCC) and other climate change and environmental policies and plans."
+69. The programme directly supports the country's NDC target of 500 gigawatt of non-fossil energy capacity by 2030 through its focus on RTC renewables, green hydrogen and decentralized renewable energy. It also addresses the energy efficiency targets in the NDC through investments in efficient technologies across multiple sectors.
+70. The technologies supported align with key national initiatives, including the National Hydrogen Mission, the National Smart Grid Mission, and the Pradhan Mantri Kisan Urja Suraksha evam Utthaan Mahabhiyan scheme for solar irrigation. The programme's focus on decentralized renewable energy and electric mobility also supports the country's goals for energy access and sustainable transportation.
+71. In response to iTAP question #30 on policy alignment for green hydrogen, ADB detailed its engagement strategy with government agencies, including regular consultations with the
+
+<!-- image -->
+
+- Ministry of New and Renewable Energy and the Ministry of Power, to ensure alignment with the National Green Hydrogen Mission. ADB will also facilitate cross-sectoral planning for industrial applications of green hydrogen through industry working groups and policy dialogues.
+
+## 3.5.2 Demonstration of country and beneficiary ownership
+
+72. The IGFF demonstrates strong country ownership through the involvement of major Indian DFIs (National Bank for Agriculture and Rural Development, India Infrastructure Finance Company Limited, Rural Electrification Corporation) as executing entities. These institutions are central to the financial infrastructure of India and have established relationships with local financial institutions and other stakeholders. The programme has secured a no-objection letter from the government, confirming national endorsement.
+73. Stakeholder consultations were conducted throughout the project development process, ensuring local knowledge, innovation and sustainability, and participation is fully embedded in the design of the project. The programme design reflects extensive consultations with government agencies, DFIs, private sector entities and civil society organizations.
+74. ADB has a long-standing presence in India and has developed considerable expertise in the country's energy and financial sectors. The programme builds on ADB's experience with similar initiatives and its established relationships with key stakeholders.
+75. In response to iTAP question #31 on alignment with the National Programme for Dairy Development, ADB explained how it will ensure coordination through formal agreements with the National Bank for Agriculture and Rural Development that reference national policies, and by engaging with relevant ministries during implementation. Regular policy dialogues and coordination mechanisms will ensure alignment between IGFF-supported activities and national programmes.
+
+## 3.5.3 Engagement of appropriate partners
+
+76. The IGFF engages appropriate partners at multiple levels. The selection of DFIs as implementing entities is strategic given their mandate to support development objectives and their established networks with local financial institutions. As argued in the section on paradigm shift, the programme would have nonetheless been stronger if the commercial banks that have skills and experience in climate finance were also encouraged to invest in the more innovative sectors targeted by the funding proposal. Their involvement would have ensured that, on implementation of the programme, the commercial banks would have been well placed to scale up the more successful technologies.
+77. The programme's governance arrangements include a multi-stakeholder approach, with ADB establishing a programme steering group to provide strategic direction and ensure compliance with the funded activity agreement and applicable policies. For each subproject, DFIs will establish a Project Implementation Unit to oversee operations and manage implementation.
+78. In response to an iTAP question on considering the National Infrastructure Investment Fund (NIIF) as a DFI partner, ADB explained that while the current definition of a DFI in the programme requires at least 50 per cent state ownership (which excludes NIIF at 49 per cent state ownership), the programme's implementation flexibility would allow for engagement with NIIF if it demonstrates strong alignment with the programme's objectives and meets other eligibility criteria.
+
+## 3.5.4 Implementation by organizations with relevant country experience
+
+<!-- image -->
+
+79. The programme will be implemented by ADB in partnership with national DFIs. ADB has extensive experience in the energy and financial sectors of India, and maintains a country office with technical staff who understand the local context. The DFIs that will act as executing entities are national institutions with deep roots in the country', financial system as well as experience supporting development objectives.
+
+## 3.6 Efficiency and effectiveness Scale: Medium-High
+
+80. The IGFF presents strong economic rationale, with the Secretariat noting that the programme has a "cost of USD 55 per tonne of CO₂ abated" , which is "considered reasonable in international comparison". The economic analysis shows robust aggregate economic internal rate of return of 22.8 per cent across technologies, indicating good value for money.
+81. The financial structure is sound, with concessional GCF financing strategically deployed to address specific market barriers while catalysing additional investment from other sources. The blended finance approach ensures that concessionality is used only where necessary to address market failures and viability gaps.
+82. However, there are some concerns about the financial viability of specific technologies. The Secretariat notes that "For RTC solar in particular, the FIRR [financial internal rate of return] barely exceeds the WACC [weighted average cost of capital], and the project's bankability depends on assumptions around battery price reductions and off-take tariffs that remain unproven." This highlights implementation risks that will need careful management.
+83. In response to iTAP question #38 on the cost per t CO₂ abated, ADB justified the USD 55 figure by explaining that while this is higher than some conventional mitigation options, it reflects the programme's strategic focus on technologies that are essential for long-term decarbonization but currently face higher costs due to their emerging nature. The programme aims to drive down these costs over time through market development.
+84. The financial structure of the IGFF is appropriately tailored to address the specific barriers facing clean energy investments in India. The programme combines concessional loans for on-lending to DFIs with a dedicated RSF for CBG projects and grant funding for technical assistance.
+85. The total GCF funding request of USD 200 million includes USD 187 million in loans and USD 13 million in grants. This is expected to leverage USD 793 million in co-financing from ADB, along with additional resources from DFIs and private sector entities, for a total programme size of USD 993 million.
+86. The concessionality level is calibrated to address market barriers without creating distortions. As explained in response to iTAP question #16 on ensuring concessionality passthrough to end borrowers, ADB will implement several mechanisms including contractual requirements for DFIs to maintain interest rate spreads within agreed limits, regular monitoring and reporting on lending rates, and in some cases direct financing for end borrowers where needed to ensure affordability.
+87. The use of GCF resources is efficient compared to alternative funding sources. The GCF concessionality is used strategically to address specific market barriers and viability gaps that cannot be addressed through commercial financing alone. The blended finance approach leverages significant co-financing, with each dollar of GCF funding expected to mobilize approximately USD 14.6 in total investments.
+88. In response to iTAP question #19 on indicative pricing terms, ADB provided detailed information on how the GCF concessional terms will translate into financing terms for DFIs and end borrowers. For GCF loans to DFIs, the terms include a 1.25 per cent interest rate (including
+
+<!-- image -->
+
+GCF/B.42/02/Add.13 Page 122
+
+- a 0.5 per cent service fee), a 0.75 per cent commitment fee, a 20-year tenor, and a 5-year grace period. These terms enable DFIs to offer financing at rates of 2 to 3 per cent below market rates while still maintaining financial sustainability.
+89. The IGFF demonstrates strong potential for mobilizing additional financing. The programme is expected to mobilize USD 2.9 billion in total investments, including USD 1.178 billion from DFIs and USD 754 million from private sector project developers.
+90. The programme incorporates specific mechanisms to catalyse private sector investment, including the RSF for CBG projects which addresses credit risk concerns that currently limit private financing for this sector. The technical assistance component will also support pipeline development and project structuring to enhance bankability and attract additional investment.
+91. In response to iTAP question #26 on leveraging private sector participation, ADB detailed specific measures including setting portfolio-level targets for private sector cofinancing, providing technical assistance for pipeline development and project structuring, implementing a results-based financing mechanism to incentivize private investment, and developing standardized transaction templates to reduce costs for private investors.
+92. The IGFF sustainability strategy focuses on institutional transformation within DFIs and market development for emerging clean energy technologies. By building the capacity of DFI to assess, structure and finance clean energy projects, the programme creates lasting institutional capability that will continue beyond GCF support.
+93. The programme includes a clear exit strategy based on gradual reduction of concessionality as markets mature and technologies reach commercial viability. The iTAP would have wanted to see initial analysis of where that price point of commercial viability for each technology would have been. This would have implied an understanding from the AE of the process of scaling up innovative technologies to become fully commercial and reach scale. That understanding is missing from the funding proposal. The technical assistance component will develop standardized tools and methodologies that can be maintained and updated by DFIs after programme completion.
+94. In response to iTAP question #25, ADB outlined its exit strategy for ensuring the sustainability of IGFF mechanisms and capacities. This includes phased reduction of concessionality based on market maturity, institutionalizing climate finance practices within DFIs through policy changes and operational procedures, developing standardized tools that remain available after programme completion, and establishing knowledge-management systems to preserve and disseminate lessons learned.
+
+## 3.6.1 Market analysis and alignment with regulatory frameworks
+
+95. The IGFF is built on comprehensive market analysis that establishes clear demand for the proposed interventions. The funding proposal and its annexes provide detailed information on the market potential for each target technology, barriers to investment and existing financing gaps.
+96. The market study (annex 2) includes thorough assessments of local financial institutions, their current climate finance activities, and institutional barriers to scaling up green lending. It also analyses the policy landscape and identifies opportunities for alignment with emerging regulatory frameworks.
+97. The programme's focus technologies were selected based on extensive market analysis and stakeholder consultations, as explained in response to iTAP question #3. ADB conducted a rigorous comparative analysis of technologies based on alignment with the climate goals, market potential, financing gaps and barriers to deployment in India. This analysis determined that RTC renewables, green hydrogen, CBG, distributed renewable energy, and e-mobility
+
+<!-- image -->
+
+GCF/B.42/02/Add.13
+
+Page 123
+
+- presented the highest climate impact potential while facing the most significant financing barrier.
+
+## IV. Key Issues and recommendations
+
+## 4.1 Risk-sharing facility structure and management
+
+98. The Secretariat's legal assessment notes that "the Accredited Entity is not currently able to complete its legal due diligence on the proposed structure of the risk sharing facility under Output 1.2 of the programme (the "RSF") as the exact Indian legal regime applicable to the RSF would depend on the identity of the development finance institution ("DFI") selected by the Accredited Entity to house the RSF."
+99. In response to iTAP question #21 on RSF management, ADB confirmed that the RSF will be managed by a dedicated team within the selected DFI, with expertise in credit risk assessment, guarantee operations, and CBG sector knowledge. This team will be supported by external consultants with experience in operating similar facilities internationally. The RSF will be governed by a detailed operations manual with clear eligibility criteria, approval processes, and monitoring requirements.
+100. To address uncertainty around the legal structure, ADB should finalize the RSF design and complete legal due diligence prior to any disbursements for this component. The AE should provide the GCF Secretariat with detailed governance arrangements, including selection criteria for the managing entity, risk management protocols, and reporting mechanisms.
+
+## 4.2 Technology selection and financial viability
+
+101. The Secretariat notes concerns about the financial viability of some technologies, particularly RTC renewables where "the FIRR [[financial internal rate of return] barely exceeds the WACC [weighted average cost of capital], and the project's bankability depends on assumptions around battery price reductions and off-take tariffs that remain unproven."
+102. In response to iTAP question #7, ADB acknowledged these challenges but emphasized that concessional support is necessary precisely because the regulatory framework for battery monetization is still maturing. Without concessionality, these projects would not be viable, yet they are critical for enabling higher shares of renewable energy in the grid.
+103. While the IGFF proposal's inclusion of green hydrogen as a target technology demonstrates alignment with the energy transition priorities of India, the hydrogen component would benefit from further development to ensure successful implementation. The proposed deployment of 451 MW of electrolyser capacity lacks supporting detail regarding project selection criteria, implementation timelines, and technical specifications, particularly given the global trend where only 7 per cent of announced green hydrogen projects achieved on-schedule completion in 2023. Furthermore, the proposal does not adequately address fundamental constraints identified in recent analyses of the hydrogen landscape in India, including water availability requirements of up to nine litres per kilogram of hydrogen production, infrastructure gaps in less densely populated production areas, and the current cost differential of USD 2-3 per kilogram compared to grey hydrogen. The proposal would be strengthened by explicitly demonstrating how IGFF will complement the existing National Green Hydrogen Mission core allocation of 19,744 rupees and its Strategic Interventions for Green Hydrogen Transition programme, while also providing evidence of confirmed demand through off-take agreements or letters of intent from industrial users willing to pay green premiums, as the
+
+<!-- image -->
+
+- absence of such market validation has been identified as a key barrier to hydrogen project implementation globally.
+104. The programme should adopt a phased implementation approach for higher-risk technologies like RTC renewables and green hydrogen, starting with pilot projects to validate commercial models before scaling. Regular reassessment of technology-specific financing terms should be conducted to adjust concessionality based on evolving market conditions and technology costs.
+
+## 4.3 Policy coordination and regulatory dependencies
+
+105. The iTAP questions highlighted concerns about the programme's dependency on evolving regulatory frameworks. The Secretariat notes that "ongoing power sector reforms to support RE markets ... however are long-term" and recommends "near-term mitigation if pricing assumptions fail such as policy backstop". It is unclear from the funding proposal how appropriate and advanced are the policy-enabling reforms for the five chosen technologies, only that there are gaps and GCF concessionally is required to fill the near-term needs.
+106. In response to iTAP question #32 on regulatory reform for battery monetization, ADB outlined its strategy for policy engagement, which includes technical assistance for regulatory agencies on ancillary services market design, capacity-building for grid operators, and facilitating stakeholder dialogues on battery monetization frameworks. These activities will be coordinated with ongoing policy initiatives to ensure alignment.
+107. A key strength of the IGFF is its integration with the broader ADB policy and reform initiatives in the energy sector of India. The programme builds upon and complements the substantial engagement of ADB in India, including over USD 2.5 billion in sovereign energy sector lending over the past five years. The IGFF will leverage synergies with the ongoing ADB PBL for Power Sector Reform, which focuses on enabling deeper integration of variable renewable energy and improving the financial performance of distribution companies. While ADB PBL programmes catalyse structural reforms essential for scaling clean energy, the IGFF translates these upstream reforms into institutionalized climate finance systems through its technical assistance components.
+108. Nonetheless, the programme should develop a detailed risk mitigation strategy for policy delays, including potential contingency measures such as temporary financial incentives to bridge gaps until enabling regulations are in place. Regular coordination with relevant ministries and regulatory agencies will be essential to ensure alignment between programme activities and policy developments.
+
+## V. Overall remarks from the independent Technical Advisory Panel
+
+109. The IGFF presents a well-structured, strategic intervention to accelerate a clean energy transition for India by addressing critical financing gaps for emerging technologies. The proposal demonstrates strong alignment with GCF investment criteria, particularly on country ownership, needs of the recipient and paradigm shift potential.
+110. The expected outcomes of 50 million t CO₂ eq emissions reductions and 139,000 green jobs represent significant climate and sustainable development benefits. The combination of financial instruments with technical assistance creates a solid foundation for transformative impact.
+111. However, the iTAP encourages ADB to strengthen certain implementation arrangements to maximize the programme's transformative potential. While the programme demonstrates strong climate impact potential and country ownership, several areas would benefit from
+
+<!-- image -->
+
+- further refinement during early implementation. GCF may wish to request that ADB provide updates on progress in addressing these recommendations within the first year of implementation.
+112. The iTAP recommends that the AE undertake the following measures:
+
+## (a) Strengthen institutional climate alignment
+
+113. The AE should encourage participating Indian DFIs to develop and publicly disclose comprehensive climate strategies as part of their engagement with GCF concessional financing. This would enhance the programme's transformative impact by leveraging GCF resources for deeper institutional change. The programme would benefit from encouraging DFIs to: (i) articulate transition pathways for their overall portfolios; (ii) consider establishing targets for phasing out fossil-fuel financing; (iii) implement climate risk disclosure frameworks aligned with emerging standards; and (iv) report on portfolio climate alignment progress. Such measures would help ensure that GCF resources support institutions moving towards comprehensive low-carbon development pathways.
+
+## (b) Enhance technology-specific implementation strategies
+
+114. Given the varying maturity levels and risk profiles of the five target technologies, the programme would benefit from developing more detailed technology-specific implementation road maps with clear milestones and adaptive management frameworks. For the hydrogen component, ADB should consider incorporating water stress assessments, seeking confirmed off-take agreements where feasible, and strengthening coordination mechanisms with the National Green Hydrogen Mission. For RTC renewables, given marginal financial viability, a phased approach, starting with demonstration projects, could help validate commercial models. The development of clear criteria for adjusting concessionality levels as technologies mature would enhance programme efficiency.
+2. (c) Broaden financial sector engagement
+115. While recognizing the strategic value of working through DFIs, the programme could enhance its transformative impact by developing complementary mechanisms for engaging commercial banks, particularly for more mature technologies like stand-alone battery storage and established renewable energy projects. This could include: (i) co-financing arrangements that gradually transition leadership from DFIs to commercial institutions; and (ii) standardized transaction structures that reduce due diligence costs for private sector financiers. Such engagement would enhance the programme's paradigm shift potential and create clearer pathways for market-based scaling.
+
+## (d) Strengthen monitoring and adaptive management
+
+116. The programme would benefit from establishing an enhanced monitoring framework that goes beyond traditional output tracking to assess market transformation indicators. The AE should require: (i) regular assessments of technology cost curves and market conditions; (ii) systematic tracking of policy and regulatory developments affecting each technology; (iii) periodic evaluation of concessionality requirements with pre-defined triggers for adjustment; and (iv) comprehensive documentation of lessons learned for replication. The framework would enable responsive adaptation to changing market conditions and ensure efficient use of concessional resources. Special attention to monitoring the effectiveness of the RSF would be valuable, given current uncertainties about its operational framework.
+117. The iTAP recommends that the Board approve this funding proposal.
+
+<!-- image -->
+
+## Response from the accredited entity to the independent Technical Advisory Panel's assessment (FP271)
+
+Proposal name:
+
+India Green Financing Facility (IGFF)
+
+Accredited entity:
+
+Asian Development Bank
+
+Country:
+
+The Republic of India
+
+Programme size:
+
+Large
+
+## Impact potential
+
+ADB extends its appreciation to the Independent Technical Advisory Panel (iTAP) for its comprehensive review and recommendations. We are pleased that the iTAP assesses the mitigation impact potential and the potential to depart from business-as-usual of our funding proposal as high. We are further pleased that the iTAP recognizes the proposal's intended benefit to underserved and vulnerable communities.
+
+## Paradigm shift potential
+
+We are pleased to note iTAP's recognition of the funding proposal's potential to catalyse longterm systemic change in clean energy financing in India through the transformation of DFI's climate finance approaches. We further note the iTAPs's recommendation to encourage DFIs to more clearly articulate and commit to their own climate strategies and will consider and address this accordingly. In addition, we appreciate the iTAP for its recognition of the funding proposal's innovative elements, such as the proposed Risk-sharing facility, its approach to scaling up and replication throughout the banking industry, and its contribution to improving the regulatory and policy environment for climate finance in India.
+
+We also acknowledge iTAP's recommendation to strengthen direct engagement with commercial banks, particularly in relation to technologies like RTC and stand-alone battery energy storage systems. We will explore an approach that actively involves commercial banks through our TA activities.
+
+## Sustainable development potential
+
+ADB appreciates iTAPs acknowledgement of the environmental, social, economic and gendersensitive development impacts pursued by IGFF. ADB further takes note of the recommended water scarcity considerations for green hydrogen project and will incorporate them into subproject design.
+
+## Needs of the recipient
+
+ADB appreciates the iTAPs assessment that the funding proposal comprehensively addresses vulnerabilities as well as financial, economic, social and institutional needs of the recipient (medium-high).
+
+## Country ownership
+
+<!-- image -->
+
+ADB is pleased that the iTAP assesses the alignment with national strategies and plans, the demonstration of country and beneficiary ownership and the engagement of appropriate partners as high. ADB further extends its sincere gratitude to the iTAP for recognising ADB's relevant country experience and understanding of local context, as well as executing entities' deep roots in the country's financial system and long-term experience in supporting development objectives.
+
+## Efficiency and effectiveness
+
+ADB highly appreciates the iTAP's assessment of the funding proposal's medium to high efficiency and effectiveness, underlined by its strong economic rationale, the blended finance approach leveraging significant co-financing, and the strategic deployment of concessional GCF financing to address market barriers and to catalyse investments. ADB is pleased that the iTAP recognizes the proposals sustainability focus on institutional transformation within DFIs and notes that the exit strategy, despite being comprehensive, could have been benefitted from a more detailed commercial viability pricing for each technology supported.
+
+The AE thanks the ITAP for its positive assessment of the AE's comprehensive market analysis and assessment.
+
+## Overall remarks from the independent Technical Advisory Panel:
+
+ADB appreciates the iTAP for its comprehensive review and high assessment of the funding proposal. ADB highly appreciate iTAP's endorsement and recommendation to the Board for approval of the funding proposal.
+
+ADB values the iTAP recommendations and will integrate them during implementation phase.
+
+<!-- image -->
+
+## Gender Assessment and Gender Action Plan Annex 8
+
+2 June 2025
+
+| 1.                                                                                                                                                    | BACKGROUND...........................................................................................................4                                |
+|-------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 2.                                                                                                                                                    | INTRODUCTION TO THE INDIA GREEN FINANCE FACILITY ...........................................4                                                         |
+| 2.1. Background and Rationale .................................................................................................4                      | 2.1. Background and Rationale .................................................................................................4                      |
+| 3.                                                                                                                                                    | APPROACH................................................................................................................6                             |
+| 3.1. Gender Frameworks, Policies and Guidelines....................................................................10                                 | 3.1. Gender Frameworks, Policies and Guidelines....................................................................10                                 |
+| 3.2. IGFF Methodology ...........................................................................................................12                   | 3.2. IGFF Methodology ...........................................................................................................12                   |
+| 3.2.1. Gender Requirements at IGFF and Operational (projects/programs) ...............................................12                              | 3.2.1. Gender Requirements at IGFF and Operational (projects/programs) ...............................................12                              |
+| 3.2.2. Roles and Responsibilities..................................................................................................................13 | 3.2.2. Roles and Responsibilities..................................................................................................................13 |
+| 4.                                                                                                                                                    | GENDER ASSESSMENT.............................................................................................14                                      |
+| 4.1. National Laws and Policy Frameworks of India on Gender.................................................14                                        | 4.1. National Laws and Policy Frameworks of India on Gender.................................................14                                        |
+| 4.2. The role of energy in women's daily lives, health, productivity, and livelihoods.................17                                              | 4.2. The role of energy in women's daily lives, health, productivity, and livelihoods.................17                                              |
+| 4.3. Gendered Disparities in Energy Access in India: Challenges and Opportunities ..................18                                                | 4.3. Gendered Disparities in Energy Access in India: Challenges and Opportunities ..................18                                                |
+| 4.3.1. Intersectional and Regional Disparities .............................................................................................18        | 4.3.1. Intersectional and Regional Disparities .............................................................................................18        |
+| 4.3.2. Opportunities for Transformative Change.........................................................................................19             | 4.3.2. Opportunities for Transformative Change.........................................................................................19             |
+| 4.4. Womenin the renewable energy workforce in India.........................................................20                                       | 4.4. Womenin the renewable energy workforce in India.........................................................20                                       |
+| 4.5. Gendered dynamics across the IGFF focus areas. ..............................................................23                                  | 4.5. Gendered dynamics across the IGFF focus areas. ..............................................................23                                  |
+| 4.5.1.                                                                                                                                                | Women and powering India's energy transition........................................................23                                                |
+| 4.5.2.                                                                                                                                                | Women and energy access for cleaner living.............................................................25                                             |
+| 4.5.3.                                                                                                                                                | Women and resilient energy systems for rural and urban areas. ...............................27                                                       |
+| 5. GENDER ACTION PLAN ............................................................................................28                                  | 5. GENDER ACTION PLAN ............................................................................................28                                  |
+
+<!-- image -->
+
+| ABBREVIATIONS   | ABBREVIATIONS   |                                                     |
+|-----------------|-----------------|-----------------------------------------------------|
+| AE              | _               | Accredited Entity                                   |
+| ADB             | _               | Asian Development Bank                              |
+| ARA             | _               | Adaptation Results Area                             |
+| DFI             | _               | Development Financial Institutions                  |
+| DRE             | _               | Decentralized Renewable Energy                      |
+| E&S             | _               | Environmental and Social                            |
+| ESMF            | _               | Environmental and Social Management Framework       |
+| FWP             | _               | Female Workforce Participation                      |
+| GESI            | _               | Gender Equality and Social Inclusion                |
+| GAP             | _               | Gender Action Plan                                  |
+| GA              | _               | Gender Assessment                                   |
+| GHG             | _               | Greenhouse gas                                      |
+| GCF             | _               | Green Climate Fund                                  |
+| IGFF            | _               | India Green Finance Facility                        |
+| HDI             | _               | Human Development Index                             |
+| IIFCL           | _               | India Infrastructure Finance Company Limited        |
+| IRMF            | _               | Integrated Results Management Framework             |
+| NABARD          | _               | National Bank for Agriculture and Rural Development |
+| NDCSs           | _               | Nationally Determined Contributions                 |
+| REC             | _               | Rural Electrification Corporation Ltd.              |
+| SIDBI           | _               | Small Industries Development Bank of India          |
+
+TA \_ Technical assistance
+
+## 1.  BACKGROUND
+
+1. This Annex contains the Gender Assessment and Action Plan (GAAP) for the India Green Finance Facility (hereafter referred to  as  "IGFF"  or  'Facility').  Annex  8  outlines  the Facility's approach to mainstreaming gender in its operations, the proposed governance, and guiding principles, which are based on the existing policies of both the Green Climate Fund (GCF)  and  the  Asian  Development  Bank  (ADB).  The  Gender  Assessment  also  briefly examines the role of women (as consumers, employees, and entrepreneurs) in each of the identified thematic pillars as laid out in the Funding Proposal. The facility will accelerate the deployment of key clean energy solutions, including:
+
+- Round-the-clock (RTC) renewable energy with storage to ensure 24/7 clean power supply.
+- Decentralized  renewable  energy  for  rural  applications,  improving  livelihoods  and resilience.
+- Electric mobility solutions for rural and peri-urban transport to decarbonize mobility.
+- Green hydrogen for industrial applications to transition hard-to-abate sectors.
+- Compressed biogas (CBG) for sustainable waste management.
+
+2. This  annex  also  includes  the  Gender  Action  Plan  (GAP),  which  outlines  specific activities,  targets,  and  Key  Performance Indicators (KPIs) for the IGFF along with the two components of Technical Assistance (TA) and Investment Package. The GAP aligns with the facility-level  Integrated  Results  Management  Framework  (IRMF).  As  such,  indicators  and targets listed in the GAP will help the Facility monitor progress against the gender targets in the selected Mitigation and Adaption Results Area of the IRMF.
+
+## 2.  INTRODUCTION TO THE INDIA GREEN FINANCE FACILITY
+
+## 2.1. Background and Rationale
+
+3. The ADB-GCF India Green Finance Facility (IGFF or 'Facility') is a blended finance facility designed to accelerate India's energy transition through targeted financing to scale up emerging clean energy technologies with  a focus  on  underserved  areas  in  the  country.  It leverages concessional capital from the GCF, complemented by resources from the ADB, to provide  lines  of  credit  and  guarantees  to  participating  public  DFIs  in  India  to  address bankability  and  financing  gaps  for  these  technologies.  Additionally,  the  IGFF  will  deploy technical assistance to strengthen project pipelines, address market barriers, and build the capacity of DFIs to institutionalize green lending practices within their operations, including the  adoption  of  domestic  climate-related  financial  disclosure  frameworks  while  advancing gender-responsive financing practices to promote women's participation in the clean energy value chain.  The Facility's objectives are:
+
+- i. Powering India' Energy Transition including RTC renewable energy with storage and Green Hydrogen/Green Ammonia production
+
+- ii. Modernising Energy Access for Cleaner Living including Electric mobility solutions for rural and peri-urban transport, and CBG for sustainable waste management
+- iii. Resilient  and  reliable  energy  systems  for  rural  and  urban  communities  including Decentralized Renewable energy (DRE) to power livelihood applications e.g. off-grid solar power water pumps and cold storages
+
+4. One of the key design principles of IGFF is the focus on gender-responsive financing. IGFF  strengthens  DFI  capacities  to  integrate  practices  into  their  operations  that  support women's  participation,  supporting  sex-disaggregated  data  systems,  targeted  financing  for women-led projects, and capacity-building programs. These efforts aim to enable women's active participation across the clean energy value chain, fostering greater inclusion and equity within the sector. The program will increase gender responsive financing by 10% from the baseline for relevant clean energy solutions. The relevant clean energy solutions are DRE and e-mobility. This assessment   aims to ensure that the Facility's design, implementation, and outcomes are gender-responsive and aligned with the GCF Gender Policy and Action Plan 1 and ADB's gender equality policies and procedures. It aims to address gender gaps, empower women in the financial and renewable energy sectors, and enhance equitable participation in climate resilience efforts.
+
+5. The Facility is structured in two components - Component 1 is the Financing for DFIs to scale up emerging clean energy technologies, Component 2 includes technical support for insititutionalising green lending practices and strengthening DFI capacities. Component 2 will strengthen capacity in DFIs to adopt inclusive gender-responsive green lending principles. This is an integral component to achieving mitigation and adaptation co-benefits to support the  green  and  sustainable  transition  of  India's  DFIs,  ensuring  their  alignment  with  Paris Agreement  goals,  climate-related  financial  disclosure  frameworks  and  other  sustainability targets.
+
+6. By providing this integrated package of TA and low-cost financing, the Facility supports the  government  of  India  in  its  energy  transition  efforts,  reducing  carbon  intensity  and decoupling economic growth from (GHG) emissions.
+
+7. While the IGFF is primarily focused on climate goals, it also promises inclusive and sustainable development benefits. By placing an emphasis on ensuring that women, marginalized communities,  and  climate-vulnerable  regions  directly  benefit  from its initiatives,  it  has  the  potential  to  deliver  on  improved  gender  equality  and  social  inclusion. These  benefits  can  be realized  through  increased  participation  of  women  in the energy workforce, improved access to skills development for women, and increased access to finance for women-led green enterprises.
+
+1  https://www.greenclimate.fund/document/gcf-b24-15
+
+## 3.  APPROACH
+
+8. The success of gender mainstreaming in the IGFF hinges on the active involvement of the DFIs. ADB's approach is based on a) understanding the DFIs existing approach to gender mainstreaming and their internal capacity to integrate gender responsiveness into the design and  implementation  of  climate  projects;  and  b)  identifying  systemic  gender  issues  and constraints,  as  well  as  the  risks  and  opportunities  in  the  sub-projects  under  the  selected thematic pillars. The DFIs selected for the IGFF will play a pivotal role in providing long term finance for capital intensive sectors. By adopting a gender-responsive approach-such as including  gender  objectives  and  criteria  in  directing  support  to  the  specific  sectors  where women-led and -owned companies operate-they can lead the way in ensuring an inclusive decarbonisation journey for India.
+
+9. The  Technical  Assistance  (TA)  provided  by  ADB  under  component  2  will  be instrumental  in  advancing  gender-responsive  financing  and  workforce  development  by building capacity of DFIs to mainstream gender considerations and support policy reforms for a gender-responsive clean energy financing. Specific areas of support will include:
+
+1. Delivering TA  to support DFIs  mainstream  gender considerations, including monitoring and financing for women-led activities in the clean energy sector.
+- a. Capacity building for gender-disaggregated data utilisation: Conduct 30 training programs for DFIs to design gender-disaggregated data collection frameworks,  including  tools  to  monitor  financing  flows,  employment trends, and entrepreneurial outcomes specific to women-led initiatives.
+- b. Establish preferential financing criteria: Collaborate with DFIs and other financial institutions to develop and adopt preferential financing criteria for projects that prioritize the employment or support of women in the clean energy value chain.
+- c. Training  programs  for  women  in  rural  communities:  Organize  tailored technical  and  entrepreneurial  training  programs  aimed  at  equipping women in rural areas with the skills required to actively participate in the clean energy sector, fostering their inclusion in the value chain
+2. Support dialogues to advocate for policy frameworks that integrate gender considerations into clean energy financing.
+- a. Stakeholder  engagement  for  policy  advocacy:  Facilitate  1  structured dialogues  between  government  agencies,  DFIs,  and  private  sector stakeholders to advocate for the integration of gender considerations into clean energy financing policies.
+- b. Promote regulatory alignment: Work alongside key institutions such as RBI  and  SEBI  to  encourage  the  adoption  of  policy  frameworks  that prioritize gender equity in green finance.
+
+10. By  equipping  DFIs  with  the  necessary  tools,  knowledge,  and  systems,  the  TA  will ensure  that  gender  mainstreaming  is  not  only  adopted  but  also  embedded  within  their operations. Further details on the specific roles and responsibilities of the PIU, including due diligence, oversight, and reporting, are provided in the Roles and Responsibilities section of this document.
+11. The  table  below  provides  a  high-level  overview  of  the  selected  DFIs 2 including  a summary of their existing gender policies, products and services targeting women, as well as their current GCF accreditation status. This overview highlights the potential to enhance their efforts through capacity building activities within the IGFF.
+
+Table 1.  Overview of DFIs.
+
+| Potential entry points                                 | National Bank for Agriculture and Rural Development (NABARD)                                                                                                                                                                                                                                                                                                                                                              | Rural Electrification Corporation Ltd (REC)                                                                                                                                                                                                                                                                                            | India Infrastructure Finance Company Limited (IIFCL)                                                                                                                                                                                                                                                       |
+|--------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Gender mainstreaming and related policies              | The Gender Policy of NABARD stipulates that all activities and projects shall be gender transformative, and requires adequate resource allocation and institutional accountability. NABARD further integrates gender considerations into operations, mandates gender-responsive budgeting, monitors progress with gender- disaggregated data, and advocates for women's empowerment in agriculture and rural development. | REC does not have a specific gender mainstreaming policy, but it implements CSR initiatives specifically on women empowerment. The activities focus on skills development and livelihood projects for youth and underprivileged women, maternal care, awareness raising against child marriage, and rural infrastructural development. | While IIFCL does not have a specific gender policy, it has projects that promote gender equality and support vulnerable groups by providing renewable energy, water and sanitation, vocational training, and livelihood opportunities for women, children, the elderly, and differently abled individuals. |
+| Experience promoting female-focused financial products | Actively promotes financial inclusion for rural women through initiatives such as Self- help Groups (SHGs) and Bank Linkage                                                                                                                                                                                                                                                                                               | No financial products identified, but initiatives focused on skills, training, and safe spaces for                                                                                                                                                                                                                                     | No financial products identified, but skill development and cluster-based entrepreneurship projects were                                                                                                                                                                                                   |
+
+2  For information on DFIs and their work please refer to the IGFF Funding Proposal, and Annex 2
+
+|                                           | Programme, where 84% taking up these initiatives are women. NABARD also collaborates with Women's World Banking (WWB) to enhance the utilization of basic financial services such as savings, microinsurance, pensions, and access to credit for women and SHGs. NABARD and WWB further collaborate on developing a Gender intentional Index (GIIN) to promote the gender-focused financial inclusion strategies of Regional Rural Banks.   | women were identified.                                                                                                                                                                                                                                               | identified including artisanal skill development.                                                                                                                                                                                                                                    |
+|-------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Percentage of female staff                | ~25% (776 out of 3,134 as of March 31,2024)                                                                                                                                                                                                                                                                                                                                                                                                 | ~15% (78 of 513) of staff are women (2023/4 Annual Report)                                                                                                                                                                                                           | One-third women representation among its Key Managerial Personnel (KMPs)                                                                                                                                                                                                             |
+| Women on board or leadership              | 1 woman on the board (8%)                                                                                                                                                                                                                                                                                                                                                                                                                   | 1 woman on board (14%), and female representation on the board is required by company policy                                                                                                                                                                         | 1 woman on the board (14%), as a government nominee director                                                                                                                                                                                                                         |
+| Gender inclusive human resources policies | NABARD has a specific gender policy, which promotes gender-inclusive HR policies to ensure equal opportunities, career advancement, and work-life balance for women. The organization fosters gender diversity in leadership and integrates gender sensitivity into its                                                                                                                                                                     | Their equal Opportunity Policy stipulates non- discrimination on the grounds of sex, and the safety of women is included in its ESG Policy. The corporation upholds dignity and a harassment-free workplace, enforcing a zero-tolerance stance on sexual harassment. | IIFCL includes the promotion of gender equality and the empowerment of women in its CSR policy, including female participation in resettlement activities and income restoration programs. In compliance with the Maternity Benefit Act, 2017, IIFCL supports maternity benefits and |
+
+|                                                  | workplace culture. Since 2019-20, NABARD also implemented a differentiated strategy under the Financial Inclusion Fund (FIF) to address regional financial gaps and promote inclusive financial access, reinforcing its commitment to gender empowerment within and beyond the organization.   | An Internal Complaints Committee (ICC) conducts fair investigations and takes action against sexual misconduct, reinforcing commitment to the well-being and protection of women employees.                                                                                                                                                                                                                       | is exploring partnerships with nearby creches due to space constraints at its rented headquarters. Female employees are entitled to two daily nursing breaks or a one-hour alternative until their child reaches 15 months.                                                                                                                                                                                         |
+|--------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| AE status                                        | Accredited to GCF for up to Category B/I-2. Initially accredited in 2015 and re- accredited in 2022, it can submit large-scale proposals over USD 250 million and utilize various funding windows.                                                                                             | Not accredited, will develop projects for this facility up to Cat B/I-2 in alignment with ESMF                                                                                                                                                                                                                                                                                                                    | Not accredited, will develop projects for this facility up to Cat B/I-2 in alignment with ESMF                                                                                                                                                                                                                                                                                                                      |
+| Potential capacity building support through IGFF | As an AE, NABARD will currently have processes and policies in place to be IGFF compliant. TA will be provided by the IGFF to strengthen the ability of DFIs to collect and monitor sex disaggregated data                                                                                     | TA support will be provided to i) ensure RECis able to become compliant with IGFF prescribed gender requirements. embed IGFF ii) ensure sub- project selection is gender responsive. TA will also be provided to strengthen ability to collect and monitor sex disaggregated data. Sex disaggregated data will be used to design and launch new gendered financial products and to track impact of such products. | TA support will be provided to i) ensure IIFCL is able to become compliant with IGFF prescribed gender requirements. embed IGFF ii) ensure sub-project selection is gender responsive. TA will also be provided to strengthen ability to collect and monitor sex disaggregated data. Sex-disaggregated data will be used to design and launch new gendered financial products and to track impact of such products. |
+
+## 3.1. Gender Frameworks, Policies and Guidelines
+
+12. Managed  by  ADB,  this  Facility  will  receive  co-financing  from  GCF,  implemented through selected DFIs as discussed above. The gender assessment and action plan (GAAP) guiding the Facility builds on a) existing ADB policies, guidelines and procedures on gender mainstreaming,  b)  GCF  guidelines,  and  c)  the  existing  gender-related  practices  and institutional structures systems of the DFIs.
+
+13. While  gender  mainstreaming  within  the  DFIs  is  still  nascent,  the  Facility  seeks  to leverage and harmonize the existing elements of gender-related systems or processes. These include existing policies, emerging practices, and sex-disaggregated data collection methods. Where gaps exist, the TA will provide the necessary support to strengthen institutional capacity and fully  integrate  gender-responsive  approaches.  Stakeholder  engagement with the DFIs (NABARD, IIFCL, REC) and desk research of the DFI's gender-related documents - including their internal practices, capacities, and views on gender mainstreaming - has informed the GAAP.
+
+14. One of the key operational priorities of ADB's Strategy 2030 3 is gender equality in Asia, measured  across  5  outcomes:  economic  empowerment,  human  development,  decisionmaking and leadership, time poverty reduction, and resilience to external shocks. The ADB South  Asia  Department  (SARD)  has  developed  a  gender  and  social  inclusion  (GESI) framework to guide the implementation of the two operational priority pillars of Strategy 2030, 2 (OP2). OP2 refers to 'accelerating progress on gender equality', whereby ADB commits to support targeted operations to empower women and girls, and gender mainstreaming that directly narrows gender gaps.
+
+15. ADB's guidelines for Design and Monitoring Framework 4  (DMF) and Corporate Results Framework (CRF) provides the basis for reporting on ADB's operational and organisational performance,  and  communication  with  ADB  stakeholders  about  achievement  of  expected results.
+
+16. Under the ADB gender categorisation framework 5 , a project is classified as one of the following:
+
+- a. Gender Equity Theme ('GEN') where the project explicitly includes gender equality outcomes or empowerment outcomes. A project is assigned GEN if the project outcome  directly  addresses  gender  equality  and/or  women's  empowerment  by narrowing gender disparities through access to social services; and/or economic and financial resources and opportunities etc.
+
+3  https://www.adb.org/documents/strategy-2030-operational-plans-overview
+
+4  https://www.adb.org/documents/guidelines-preparing-design-and-monitoring-framework
+
+5  Guidelines for Gender Mainstreaming Categories of ADB Projects (ADB, 2021)
+
+- b. Effective Gender Mainstreaming (EGM): A project is assigned EGM if the project outcome is not gender equality or women's empowerment, but project outputs are designed to directly improve women's access.
+- c. Some Gender Elements (SGE): A project is assigned SGE if by its nature it is likely to  directly  improve  women's  access  to  social  services;  financial  resources  and opportunities,  basic  rural  and  urban  infrastructure,  included  little,  if  any  gender analysis
+- d. No Gender Elements (NGE): the project is assigned NGE if it is not expected to provide direct/tangible benefits to women, although there may be indirect benefits for women.
+
+17. The Facility's approach to gender mainstreaming and integration also closely aligns with the GCF's gender policy. These policies will guide IGFF investments and ensure gender equality is embedded  throughout the project lifecycle. These are reflected in the operationalization of these principles in the GAP (Section 5), which include the following key elements that will contribute to women's empowerment to guide IGFF Investments:
+
+- Support the growth of green jobs through relevant upskilling efforts for diverse groups of women to ensure equitable participation in sustainable development, with relevant upskilling efforts for women.
+- Ensure  an  inclusive  stakeholder  participation  and  gender-responsive  consultation process to incorporate women's needs and priorities and empower them to participate in decision-making.
+
+18. Share  learnings  on  gender  mainstreaming  within  green  projects  within  the  IGFF portfolio and more broadly in India. At the Facility level, the gender-related objectives below are articulated so that they can be replicated across a diversity of sub-projects that will be funded.
+
+- Encourage women's economic participation as leaders, employees, and suppliers by promoting the adoption of gender-inclusive practices in workplaces and supply chains.
+- Promote access to gender-responsive products, services, and approaches in clean energy,  climate-smart  agriculture,  and  food  systems,  with  innovative  solutions  for women customers and end-users so that  they can  access  and  benefit  from  these resources more equally.
+- Support  reforms  in  regulation  to  encourage  adoption  of  policy  frameworks  that priortitise  gender  equity  in  green  finance  and  disseminate  best  practices  in  gender mainstreaming within the financial ecosystem
+
+19. Aligned with the above, specific facility level and DFI outcomes are included in the GAP.
+
+## 3.2. IGFF Methodology
+
+20. IGFF will finance climate-related projects or interventions (through DFIs) that provide gender-  responsive  solutions  to  low-GHG  emissions  and  climate-resilient  development. Projects will address the targeted Mitigation Results Areas (MRA). Approved projects must integrate  gender  and  social  inclusion  criteria,  address  stated  GHG  emissions  reductions priorities and targets, along with resilience priorities and provide an indication of impact cobenefits applicable to women.
+
+21. All projects must meet specific gender and social inclusion criteria as outlined in the Funding  Proposal.  These  criteria  include  incorporating  GAPs  and  logical  frameworks  with quantitative and qualitative gender KPIs that contribute to narrowing existing gender gaps and women's empowerment. Contributions to gender objectives will vary across thematic sectors, with gender priorities identified in collaboration with DFIs.
+
+## 3.2.1. Gender Requirements at IGFF and Operational (projects/programs)
+
+22. Gender guidelines for the IGFF follow the gender mainstreaming framework and policy guidelines of the ADB, in alignment with GCF gender policy. The Facility will channel funding through selected DFIs, where one is a GCF accredited national entity. IGFF will review the GCF-approved gender assessments (GAs) and gender action plans (GAPs) for the accredited entities  and  may  request  clarification  or  supplementation  thereof  if  required.  For  the unaccredited DFIs, the IGFF will conduct a gender assessment including a review of their existing  Gender  and  ESS  policies  and  formulation  of  a  GAP  to  address  and  support remediation of any identified shortcomings with respect to IGFF requirements. Additionally, the  IGFF  will  require  preparation  of  a  GA  &amp;  GAP  for  all  projects  and  programs,  direct  or indirect, to be funded by the Facility. Gender assessments will incorporate sex disaggregated data,  as  well  as  include  other  relevant  factors,  to  enable  setting  of  targets  that  integrate intersectinality.  This  further  includes  the  development  of  GAAP  by  each  of  the  financial institution in alignment with the program level GAAP.
+
+## Pipeline Generation
+
+23. Gender and social inclusion criteria must guide the selection of pipeline projects at the DFI  level.  DFIs  are  required  to  conduct  a  gender  analysis/assessment  relevant  to  the proposed projects during this phase.
+
+## Gender Categorization and GAPs
+
+24. All subprojects will advance gender considerations to promote inclusive participation in the clean energy sector and will be assigned a gender category based on ADB's gender categorisation system (e.g., EGM, GEN) 6 . DFIs must prepare a detailed GAP for each project, including:  (a)  quantitative  and  qualitative  baseline  data;  (b)  gender  KPIs  with  specific,
+
+6  All  loans will be categorized as Effective Gender Mainstreaming (EGM) according to ADB's Gender and Development Framework Each project
+
+measurable and time bound targets; and (c) alignment with IGFF's overarching gender goals. The PMU will review and validate all GAPs and gender categorization during the due diligence process.
+
+## Approval Process
+
+25. The GAPs and gender categorization will undergo validation at both the DFI and IGFF levels and the PMU will ensure that GAPs align with IGFF strategic objectives before project approval.
+
+## Implementation and Monitoring
+
+26. Approved projects must adhere to their GAPs and submit regular reports, including sex-disaggregated  data  and  progress  on  GAP  implementation.  DFIs  are  responsible  for reporting progress on gender KPIs and GAP implementation to the IGFF. These reports will be compiled and submitted as gender performance reports to ADB and GCF, in accordance with ADB reporting requirements.
+27. It  is  important  to  note  that  not  all  IGFF  projects  will  contribute  to  all  the  gender objectives. The degree to which a project or program contributes to these goals will vary across thematic sectors.  The  identification  of  which  gender  objectives  that  are  most  relevant  and appropriate for each project will be done in collaboration with the DFI in accordance with the ADB gender categorization system and requirements for the project. Additionally, process evaluation at the DFI-level will be conducted, which will assess implementation challenges and compliance with gender standards.
+
+## Capacity Building and Technical Assistance
+
+28. To ensure that DFIs have the necessary capacity to support gender work at the project and program levels, the IGFF will provide TA funding related to preparation of their Gender Assessment and Gender Action Plans, as well as for the implementation of specific GAP activities.  The  IGFF  will  hire  an  international  gender  consultant  and  a  national  gender consultants to strengthen the Facility's capacity for gender mainstreaming and support DFIs in achieving gender goals.
+
+## 3.2.2. Roles and Responsibilities
+
+29. The IGFF will  establish  a  Program  Management  Unit  (PMU)  at  the  facility  level  to oversee implementation, ensuring strategic alignment, technical support, and guidance across DFIs to ensure is gender is incorporated .
+30. At the project level, each DFI will establish a Project Implementation Unit (PIU), also consisting of international and national consultants, to manage DFI-specific operations while coordinating  with  the  PMU  both  in  data  generation  and  reporting  of  progress.  To  foster knowledge-sharing and capacity-building, the facility-level team  will organize regular knowledge exchange sessions, facilitating best practice sharing and continuous improvement
+
+31. DFIs: DFIs will be formally responsible for the preparation of projects and programs Gender  Assessments  and  Action  Plans.  They  are  also  responsible  for  ensuring  project compliance  with  gender  requirements  and  reporting  on  GAP  to  IGFF  throughout  project implementation.  Should  a  new  DFI  join  the  IGFF,  a  due  diligence  assessment  will  be conducted by the PMU in line with the initial process at the launch of the facility.
+
+32. ADB as the Accredited Entity will be responsible for implementing and overseeing a governance mechanism to manage the Facility via PMU. ADB will require quarterly reports on project and program gender activities including implementation of the Gender Action Plans, together with other information required on E&amp;S and impact, which will be provided by the Facility. Please refer to Annex 11 of the Funding Proposal (Monitoring &amp; Evaluation) for more details.  ADB will hire the international and a national gender consultants mentioned above, to oversee this process.
+
+33. The PMU, staffed and overseen by ADB, will provide TA to build gender mainstreaming capacity of DFIs. ADB PMU will be responsible for initial level Due Diligence of all DFIs (preproject  level);  reviewing  the  GA  and  GAP  for  projects  submitted  by  DFIs;  Monitoring  and Reporting sex-disaggregated data to GCF (project and facility level).
+
+## 4.  GENDER ASSESSMENT
+
+34. This  section  provides  a  comprehensive  analysis  on  the  national  laws  and  policy frameworks of India in relation to gender, as well as the gender disparities in the country, disaggregated according to the thematic pillars identified by the IGFF. The Facility will draw upon this baseline analysis of the existing gender inequalities, differences in vulnerability and adaptive capacity to climate change, and the current differences in access to resources and training between men and women in India to inform the gender considerations of the IGFF. Conducting  a  gender  analysis  from  the  very  beginning  of  the  planning  process  allows  an understanding of gender power relations and roles to be built into the overall operations of the Facility from its inception to delivery.
+
+## 4.1. National Laws and Policy Frameworks of India on Gender
+
+35. The government of India has demonstrated its commitment to building an enabling environment  for  gender  equality  through  the  adoption  of  key  international  agreements, operationalized through the enactment of national laws and policies. A foundational step was India's ratification of the Convention on the Elimination of all forms of Discrimination Against Women (CEDAW) in 1993, which legally binds the country to end gender-based discrimination across all sectors. The country further strengthened its commitment by being one the first countries  to  adopt  the  Beijing  Declaration  and  Platform  for  Action  (BPFA)  in  1995,  a comprehensive policy framework identifying 12 critical areas for achieving gender equality. Additionally,  India  is  a  party  to  international  agreements  that  further  protect  the  rights  of women and vulnerable groups, such as the Convention on the Political Rights of Women, International  Covenant  on  Civil  and  Political  Rights,  International  Covenant  on  Economic, Social and Cultural Rights, Convention on the Rights of the Child, and Convention on the
+
+Rights of Persons with Disabilities, among others 7 . These further guide the gender-inclusive commitments of India towards the 2030 Agenda for Sustainable Development.
+
+36. These  international  agreements  are  operationalized  in  the  country  through  the formulation  of  numerous  laws,  policies,  and  governing  bodies.  In  1992,  the  National Commission for Women was founded as a statutory body mandated to safeguard the rights of women  in  the  country.  At  the  state  level,  State  Commissions  for  Women  have  been established in 29 states and 7 union territories to address women's rights issues within their respective jurisdiction 8 . The effective implementation of gender-related policies further relies on appropriate funding allocation, which is why the first Gender Budget Statement (GBS) of India was published in 2005-2006 as a fiscal tool to align budgetary commitments with gender equality  goals.  Since  then,  a  GBS  is  published  annually  to  provide  an  overview  of  public expenditure for women and girls through the review of gender components in government programs of various ministries 9 .
+37. In  terms  of  leadership,  India  has  undertaken  significant  legislative  measures  to institutionalize  women's representation  in the  government.  In  1993, the 73 rd Constitutional Amendment Act mandated that at least one-third or 33% of seats in Panchayati Raj Institutions or village councils are reserved for women. The quota laid the foundation for women's active political participation in India for over 30 years, further influencing the passage of the Women's Reservation Bill in 2023 at the national level. This stipulates that at least 33% of the seats in state legislative assemblies and the Lok Sabha, the lower house of Parliament, are occupied by female candidates. These laws institutionalize the greater participation of women in the policymaking and governance of India 10 .
+38. The CEDAW Committee's Concluding Observations on the fourth and fifth periodic reports of India also recognized further legislative reforms to advance gender equality in the country. Notable laws include the Criminal Law (Amendment) Act, 2013; Sexual Harassment of Women at Workplace (Prevention, Prohibition, and Redressal) Act, 2013; The Protection of Women from Domestic Violence Act, 2006; Protection of Children from Sexual Offences Act, 2012; and the Right of Children to Free and Compulsory Education Act, 2009. The Committee also acknowledged the establishment of a financial services banking company for women in 2013 as a step toward enhancing women's economic empowerment.
+
+7   UN Women. (2024). India: Beijing+30 national report on progress in gender equality and women's empowerment . https://www.unwomen.org/sites/default/files/2024-09/b30\_report\_india\_en.pdf.
+
+8  National Commission for Women. List of State Women Commissions . Government of India. Retrieved February 26, 2025, from http://ncw.nic.in/important-links/list-state-women-commissions
+
+9   Observer  Research  Foundation.  (n.d.). Gender-responsive  budgeting  in  India:  A  stocktaking . Retrieved February 26, 2025, from https://www.orfonline.org/research/gender-responsive-budgeting-inindia-a-stocktaking.
+
+10   UN Women. (2023, October). India passes law to reserve seats for women legislators .  Retrieved February 26, 2025, from https://www.unwomen.org/en/news-stories/feature-story/2023/10/indiapasses-law-to-reserve-seats-for-women-legislators.
+
+39. Indeed, India has made significant progress in building an enabling environment for gender  equality  through  comprehensive  legal  and  policy  frameworks.  However,  gaps  and opportunities remain to further strengthen the implementation of these policies. The National Human  Rights  Commission  (NHRC)  has  observed  that  the  effectiveness  of  the  GenderResponsive Budgeting of India can be amplified by enhancing fiscal policies, transparency in fund utilization, and budget allocations directly linked to measurable outcomes in women's welfare. It has also noted that along with the passage of the 73 rd  Constitutional Amendment on the increased participation of women in national governance, capacity development and mentoring programs can further empower the elected female representatives 11 . Among the principal areas of recommendations in the CEDAW Committtee's Concluding Observations on India is the adoption of a comprehensive anti-discrimination legislation to protect women from intersectional forms of inequality. This recommendation on an intersectional lens specifically includes mainstreaming the rights of women with disabilities within the national strategies and, facilitating advocacies and regularly collecting disaggregated data on persons with disabilities based on sex, age, type of disability, and region.
+40. On violence  against  women,  the  CEDAW  Committee  also  noted  the  efforts  of  the Indian government to enact policies and legal frameworks to prevent and respond to genderbased violence.  However,  the  Committee  is  still  concerned  about  the  status  of  increasing cases of violence against women in the country, the escalation of caste-based violence, and the persistence of 'honor crimes' against women and girls, among others. The National Crime Records Bureau reported a 4% increase of crimes against women in India from 2021 to 2022, which translates to approximately 51 cases per hour 12 . Disparity between states was also observed, as the NCRB report highlighted that 12 states and Union Territories recorded crime rates  higher  than  the  national  average,  led  by  New  Delhi  and  followed  by  the  states  of Haryana, and Telangana.
+41. Within the finance and energy sectors, women are also affected by a less discussed dimension of violence: economic abuse. Traditional gender norms and conservative social expectations can deter women from pursuing employment opportunities, limiting their ability to own assets and to access finance, which can further limit their access to energy. These experiences often result in economic dependence on their husbands and can diminish their autonomy,  particularly  in  situations  involving  gender-based  violence.  Economic  abuse marginalizes women from household financial decision-marking, restricts their ability to earn,
+
+11  National Human Rights Commission. (n.d.). Women's rights in India: An analytical study . Retrieved https://nhrc.nic.in/sites/default/files/Women%E2%80%99s%20Rights%20in%20India%20complete\_co mpressed.pdf
+
+12  Times of India. (2024, January 5). India records 51 cases of crime against women every hour, over 4.4 lakh cases in 2022: NCRB report . https://timesofindia.indiatimes.com/india/india-records-51-casesof-crime-against-women-every-hour-over-4-4-lakh-cases-in-2022-ncrbreport/articleshow/105731269.cms
+
+and exposes them to financial exploitation  by their  husbands 13 .  The  lack  of  entitlement  to property  and  financial  assets  reduce  women's  access  to  finance,  and  reinforces  their dependence on male family members to avail credit from financial institutions. To date, some banks even require husbands or fathers to sign loan application forms for women borrowers 14 .
+
+42. The program is designed to mitigate these gender-related risks in access to finance by embedding gender-responsive approaches within the institutional and operational frameworks of the DFIs. It aims to strengthen anti-sexual harassment policies to foster safer and more inclusive  work  environments  and  processes,  ensuring  that  women  in  finance  and  energy sectors  are  protected  from  discrimination  and  violence.  The  program  also  enhances  the collection and utilization of sex-disaggregated data, enabling DFIs to develop more targeted and effective financial solutions for women-led businesses in the renewable energy sector. It further provides capacity-building initiatives to equip women with the necessary skills, financial literacy, and technical knowledge to succeed in green energy ventures. To promote gender inclusivity  in  the  sector,  the  program  facilitates  multi-stakeholder  dialogues  with  DFIs, policymakers, and industry leaders to advance gender-responsive policies and investments that empower women in finance and renewable energy.
+
+## 4.2. The role of energy in women's daily lives, health, productivity, and livelihoods
+
+43. Energy poverty disproportionately exacerbates vulnerabilities among women, particularly  for  economically  disadvantaged  women,  where  traditional  roles  often  involve managing household energy needs such as cooking and lighting. Globally, nearly 3 billion people rely on polluting energy sources like firewood for cooking, with over 680 million residing in India. This reliance exposes women to significant health risks, including respiratory illnesses caused by indoor air pollution, and perpetuates socio-economic inequalities by limiting their access to education, entrepreneurship, and community development opportunities. Furthermore, women's vulnerability to climate change is heightened by their dependence on traditional energy sources, restricted mobility, and exclusion from decision-making processes. Socio-economic  inequalities,  cultural  barriers,  and  limited  access  to  financial  and  natural resources further constrain their adaptive capacity. Expanding access to clean, affordable, and  reliable  energy  is  crucial  for  advancing  gender  equality,  reducing  health  risks,  and fostering  inclusive  development.  Reliable  energy  access  empowers  women  by  enabling educational attainment, improving health outcomes, and unlocking opportunities for income generation  and  community  participation,  thus  addressing  critical  gendered  disparities  in energy poverty.
+
+13  Raj, A., McDougal, L., &amp; Silverman, J. G. (2023). Economic abuse and intimate partner violence in India: The role of women's employment and financial inclusion .  BMJ Global Health, 8(10), e012576. Retrieved from https://gh.bmj.com/content/8/10/e012576
+
+14   World  Bank. Improving access to finance for women-owned businesses in India .  Retrieved  from https://openknowledge.worldbank.org/server/api/core/bitstreams/61a1f630-279f-5fda-bd4fe6c0395b4a33/content.
+
+## 4.3. Gendered Disparities in Energy Access in India: Challenges and Opportunities
+
+44. Energy access in India continues to exhibit significant gender disparities, particularly between rural and urban areas and among marginalized populations. Rural women bear the disproportionate burden of managing household energy needs, often spending an estimated 20-40 hours per week collecting firewood and other traditional fuels (IEA, 2021) 15 . This task is both physically demanding and time-consuming, limiting opportunities for education, income generation, and leisure. In urban areas, women have better access to modern energy sources such as LPG and electricity. However, challenges related to affordability, reliability, and safety persist. For instance, only 50% of households using LPG as their primary cooking fuel have consistent supply due to cost barriers 16 .
+45. Despite significant progress in electrification through initiatives such as the Saubhagya Scheme, approximately 680 million people in India-predominantly in rural areas-still rely on traditional  biomass  for  cooking.  The  reliance  on  traditional  fuels  disproportionately  affects women's health, increasing exposure to indoor air pollution, which contributes to approximately 500,000 premature deaths annually 17 . Limited access to electricity also impacts essential tasks such as lighting, cooking, and food preservation, further amplifying gender inequalities in health, education, and productivity.
+46. Men typically have greater access to financial and resources, which allows for more adaptive flexibility in energy use. In contrast, women face heightened constraints due to limited resource ownership, cultural norms, and disproportionate responsibilities in household energy management. Studies indicate that women own only 13% of land in India 18 , which restricts their ability to secure financing for clean energy technologies such as solar home systems or biogas units.
+
+## 4.3.1. Intersectional and Regional Disparities
+
+47. Generally, the intersectionality of gender with factors such as caste, economic status, age, disability, and geography influence women's access to opportunities and resources in India,  including  energy.  The  CEDAW  Committee's latest  concluding  observations  on India expressed concerns over marginalized groups, such as Dalit and Adivasi women who continue to face caste and gender-based discrimination. The female literacy rates among Dalits (57%) and Adivasis (49.35%) remain below the national average (65%). Additionally, these women face substantial challenges in accessing medical care due to caste-based discrimination 19 .
+
+15  International Energy Agency (IEA), 2021. "World Energy Outlook."
+
+16  Ministry of Petroleum and Natural Gas (MoPNG), Government of India, 2023. "Pradhan Mantri Ujjwala Yojana."
+
+17  World Health Organization (WHO), 2022. "Air Pollution and Health Impacts."
+
+18  Food and Agriculture Organization (FAO), 2020. "Gender and Land Rights in India."
+
+19   Rao,  M.  (2023,  January 26). Caste out .  Think  Global  Health.  Retrieved February 26, 2025, from https://www.thinkglobalhealth.org/article/caste-out.
+
+48. About 14.5% in India are female-headed households, among which single mothers are the  most  economically  disadvantaged  with  42%  belonging  to  the  the  lowest  wealth  index quintile. Due to the gender gap in education, 60% of female heads have not gone to school, and are also less likely to own land in comparison to male household heads (40% vs. 70%) 20 . Women entrepreneurs also  struggle,  owning  just  20%  of  businesses  in  India,  primarily  in lower-revenue sectors. Safety concerns, lack of professional networks, and societal biases further restrict their progress.
+
+49. Concerns over the low enrolment of girls  with disabilities  and  minorities  were  also expressed in CEDAW Committee's observations. The school dropout rate for adolescent girls reaches 64%, and the retention and completion rates of girls at secondary level remain low, especially  in  rural  areas.  Among  the  reasons  include  early  marriage,  poverty,  and  poor sanitation particularly during menstruation. The Committee is also concerned that women with disabilities  face  high  poverty  rates  and  limited  access  to  education,  employment,  and healthcare, particularly in rural areas. They encounter multiple barriers, including inaccessible public spaces and utilities, frequent harassment in public, and exclusion from decision-making processes. Elderly women and persons with disabilities also face systemic disadvantages. Over 70% of elderly women suffer from chronic illnesses, and only 28% receive pension and financial support. Low literacy rates further limit their access to services, and social isolation affects 35% of elderly women. For persons with disabilities, employment is a major issue: only 0.28% is employed in the private sector and 0.05% in multinational companies.
+
+50. Gender  inequalities  in  energy  access  further  intersect  with  social  and  regional disparities.  In  northern  India,  cultural  and  religious  norms  significantly  limit  women's participation in the labor force, with female labor force participation rates as low as 9% in some states 21 . This constrains their ability to afford modern energy solutions. In contrast, in southern and western India, socio-economic factors such as lower household incomes and education levels act as primary barriers. Rural women are particularly affected by energy poverty, which limits their resilience to climate shocks and increases dependence on traditional fuels. Climate change exacerbates these vulnerabilities, as prolonged droughts and deforestation reduce the availability of biomass fuels, forcing women and girls to travel longer distances for fuelwood collection.
+
+## 4.3.2. Opportunities for Transformative Change
+
+51. Despite  these  challenges,  women  hold  immense  potential  to  drive  clean  energy transitions.  Evidence  shows  that  empowering  women  through  targeted  interventions  can significantly  enhance  energy  access  outcomes.  For  example,  women-led  initiatives  in decentralized renewable energy systems, such as solar micro-grids and biogas plants, have
+
+20   Licart, T. (2020). Rethinking female-headed households in India: Diversity of household structure, contrasting socioeconomic status . European Population Conference 2020. Retrieved from https://epc2020.eaps.nl/uploads/200909
+
+21  International Labour Organization (ILO), 2023. "India Labor Market Statistics."
+
+successfully improved energy access in rural areas of states like Rajasthan and Odisha 22 . Women's involvement in clean cooking programs has also demonstrated notable health and economic benefits. However, these roles often require substantial investments in capacity building and infrastructure support.
+
+52. ADB's  operational  priorities  align  with  these  opportunities,  emphasizing  genderresponsive energy planning and investments in clean energy solutions. Targeted policies and programs, such as subsidized financing for women entrepreneurs in renewable energy and awareness campaigns addressing cultural norms, are critical to reducing the gender gap in energy access. Scaling up initiatives such as the Pradhan Mantri Ujjwala Yojana (PMUY), which has already benefited over 80 million women by providing subsidized LPG connections, can further improve outcomes 23 .
+
+53. Relevant to the approaches of this project in addressing gender disparities in energy access in India, the gender assessment provides recommendations for targeted interventions..  These  include  specific  activities  on  strengthening  gender  awareness  and existing institutional measures of DFIs, while enhancing their utilization of sex-disaggregated data and gender indicators. Upskilling female entrepreneurs in green economy, strengthening their access to finance, and supporting their participation in energy decision-making through capacity-building programs can amplify their influence in local energy planning. Supporting women entrepreneurs with tailored financial assistance and technical training can enable their leadership in renewable energy solutions, particularly in decentralized systems. Additionally, investing in gender-disaggregated data collection and research is crucial to inform targeted interventions, track progress, and ensure equitable access to energy resources, empowering women as key agents in sustainable energy transitions.
+
+## 4.4. Women in the renewable energy workforce in India
+
+54. Women  in  India's  energy  sector  face  significant  challenges  that  hinder  their  full participation and advancement, including in renewable energy. Cultural and patriarchal norms often restrict women's employment opportunities, particularly in traditionally male-dominated industries like  energy.  Safety  concerns and lack of human resources policies that support women's  participation  in  the  sector  further  limit  their  workforce  participation,  as  societal perceptions and inadequate infrastructure deter women from pursuing careers in this field. Additionally, limited access to education and training in science, technology, engineering, and mathematics (STEM) disciplines reduces the pool of qualified female candidates for green jobs,  including  energy  sector  roles.  Addressing  these  challenges  requires  comprehensive strategies, including promoting gender-inclusive policies in the workplace, enhancing safety measures, and encouraging women's education and training in relevant fields.
+
+22  Self Employed Women's Association (SEWA), 2022. "Empowering Women in Renewable Energy."
+
+23  Ministry of Petroleum and Natural Gas (MoPNG), Government of India, 2023. "Pradhan Mantri Ujjwala Yojana."
+
+55. As  per  the  latest  government  data,  female  Labour  Force  Participation  Rate  in  the country  has  improved  significantly  by  4.2  percentage  points  (in  2012)  to  37%  in  2023 24 attributed mostly to policy initiatives around skills development, entrepreneurship facilitation and  safety  in  the  workplace. Table  1 below  reflects  the  type  of  high-level  data  available, through which there are significant differences across industries and sub-sectors.
+
+Table 2. Percentage distribution of work Participation by Sector by gender
+
+| Broad Industry division           | Broad Industry division      | RURAL   | RURAL   | URBAN   | URBAN   |
+|-----------------------------------|------------------------------|---------|---------|---------|---------|
+|                                   |                              | Male    | Female  | Male    | Female  |
+| Agriculture                       | Agriculture                  | 51.0    | 75.9    | 5.4     | 11.1    |
+| Mining and Quarrying              | Mining and Quarrying         | 0.4     | 0.1     | 0.4     | 0.1     |
+| Manufacturing                     | Manufacturing                | 7.9     | 7.9     | 21.5    | 24.3    |
+| Electricity, Water                | Electricity, Water           | 0.5     | 0.1     | 1.4     | 0.5     |
+| Construction                      | Construction                 | 16.6    | 5.3     | 12.9    | 3.9     |
+| Trade, Hotel and restaurants      | Trade, Hotel and restaurants | 10.6    | 3.7     | 25.2    | 14.8    |
+| Transport, Storage Communications | &                            | 5.6     | 0.3     | 12.5    | 4.6     |
+| Other services                    | Other services               | 7.5     | 6.8     | 20.7    | 40.7    |
+
+Source: (PLFS- 2022, NSO, MOSPI)
+
+56. Almost 80% (79%) of India's female labour force is situated in rural areas ( ADB 2023, Statistical  portrait  of  Indian  Female  Labour  Force ),  hence  distribution  of  jobs  is  skewed towards agriculture in the rural economy. Low-earning, unpaid family work and own account work constitute the highest proportion of female employment in rural India, while urban areas have mostly higher-paid regular salaried jobs. At the urban level, the female workforce is more broadly  distributed  across  various  sectors.  Manufacturing  and  related  industries  make  up roughly  25%  of  female  employment,  closely  followed  by  service  industries  like  education
+
+24 Ministry of Women and Child Development, India, 2023.
+
+(12%);  trade,  retail  and  wholesale  (12%);  household  services  (10%);  and  business  and professional services (9%) 25 .
+
+57. Difference in female labour force participation across regions within India is marked and must be taken into consideration while designing programs and projects. The low female labour market participation in the North seems to reflect strong cultural and religious factors and less the socioeconomic status concerns which are stronger in the more developed and educated South and West 26 . The implementing DFIs are aware of these differences and factor this  information  into  program  planning  in  such  a  way  that  pilot  projects  take  place  where conditions for success are in place. These successful pilots are then adapted and replicated in other regions.
+58. India's renewable energy sector is expanding rapidly, presenting significant opportunities for women's economic empowerment. However, women's participation in this field remains disproportionately low, highlighting critical barriers that must be addressed to ensure  an  inclusive  transition  to  green  energy.  Below,  key  issues  concerning  women's involvement in the renewable energy workforce, their participation in STEM education, and the challenges they face are outlined.
+59. Women's  participation  in  STEM  education .  Enrolment  rates:  women  make  up approximately  43%  of  STEM  graduates  in  India,  the  highest  percentage  globally.  This indicates significant potential for women to contribute to the renewable energy sector, which demands technical expertise.
+60. Transition from education to workforce . Despite high STEM graduation rates, only about 14%  of STEM-qualified women  secure  positions as scientists, engineers, or technologists  in  research  and  development  institutions.  Female  representation  declines significantly at higher organisational levels,  with  women  largely  underrepresented  in leadership and decision-making roles within energy and STEM-related industries.
+61. Women's participation  in the renewable  energy  sector .  Women  constitute  less than 11% of India's solar energy workforce, compared to the global average of 32% in the renewable energy sector. While women's representation is higher in specific segments, such as solar PV manufacturing, where they account for 40% of the workforce, their participation decreases sharply in areas like construction, commissioning, and maintenance roles.
+62. Barriers to participation . Women face limited access to industry-aligned education and  vocational  training  programs  in  renewable  energy,  with  low  participation  in  technical trades at Industrial Training Institutes (ITIs) further hindering their entry into technical roles. In the workplace, women in the renewable energy sector encounter unequal company policies, inadequate safety measures, and a significant gender wage gap, even when their skill levels are  comparable  to  their  male  counterparts.  Additionally,  cultural  and  societal  norms  often
+
+25  ADB, Policy Brief, 2023.
+
+26  OECD, Determinants of low female labour force participation in India, Working Paper, 2015.
+
+discourage women from pursuing careers in traditionally male-dominated fields like energy, further limiting their opportunities.
+
+63. Addressing  barriers  and  promoting  inclusion .  The  Indian  government  and  key organisations  have  introduced  various  programs  to  enhance  women's  participation  in  the workforce. The Ministry of New and Renewable Energy (MNRE) offers initiatives aimed at increasing  women's  involvement  in  renewable  energy  projects  through  skill  development programs. Similarly,  the  Skill  Council  for  Green  Jobs  (SCGJ)  and  the  Council  on  Energy, Environment, and Water (CEEW) provide training for women in areas such as solar panel installation, maintenance, and energy entrepreneurship.
+
+64. Private  sector  companies  are  also  taking  steps  to  improve  workplace  conditions through gender-sensitive policies, including quotas for female recruitment, gender-responsive workplaces, and tailored safety measures such as PPE designed for women's body shapes and the provision of separate facilities at worksites. Additionally, some firms are promoting flexible work arrangements, enabling women to better balance their professional and personal responsibilities.
+
+## 4.5. Gendered dynamics across the IGFF focus areas.
+
+65. In this section we look at gender dynamics across the three broad objectives of IGFF outlined in the Funding Proposal:
+
+## 4.5.1. Women and powering India's energy transition
+
+66. Women can play transformative roles in energy transition projects in India, contributing to various aspects such as project planning, technical implementation, policy development, and community engagement.
+
+67. Renewable energies are already a more diverse sector than traditional energy and fossil  fuel  sectors;  solar  tops  the  charts  with  40%  FTEs  occupied  by  women  worldwide 27 . Women represent a mere 11 percent of the workforce in India's renewable energy sector, significantly  lower  than  the  global  average  of  32  percent 28 .  But  this  is  higher  than  the percentage of women in other energy sectors in India, such as coal, oil and gas companies, and electricity utilities.
+
+68. Women working on projects in this sector need a range of skills to contribute effectively. On the technical  side,  expertise  in  electrical  engineering,  renewable  energy  technologies, project management, and data analysis are essential. Knowledge of grid integration, energy storage systems, and renewable energy policy frameworks are also crucial, particularly as India moves towards more complex grid-scale systems that require seamless integration of
+
+27  IRENA's report 'Renewable Energy: A Gender Perspective', 2019
+
+28 McKinsey global institute study.
+
+renewable sources. Additionally, skills in software development for smart grid technologies, operation and maintenance of renewable installations, and financial modelling for large-scale energy investments are becoming increasingly important 29 .
+
+69. Non-technical  skills  such  as  leadership,  communication,  stakeholder  management, and the ability to navigate regulatory and compliance frameworks are equally vital to ensure that women can hold decision-making and managerial positions in energy projects.
+
+70. There is  currently  a  low  level  of  skills  among  women  in  India's  large-scale  energy transition  sector,  especially  in  technical  and  leadership  roles.  This  gap  is  often  due  to  a combination of gender biases in science, technology, engineering and mathematics (STEM) education, limited access to technical training, and societal norms that discourage women from  pursuing  careers  in  traditionally  male-dominated  industries  like  energy. 30   However, efforts  are  being  made  to  address  this  skills  gap  through  various  upskilling  and  capacitybuilding initiatives.  For  example, the Ministry of New and Renewable Energy (MNRE) has launched programs aimed at enhancing women's participation in renewable energy projects. Additionally, organizations like the Council on Energy, Environment and Water (CEEW) and the  Skill  Council  for  Green  Jobs  (SCGJ)  offer  vocational  training  programs  specifically targeting women. These initiatives focus on upskilling women in areas such as solar panel installation, maintenance, and energy entrepreneurship. Partnerships between the government, NGOs, and the private sector are key to scaling these efforts and ensuring that women  are  equipped  with  the  skills  needed  to  participate  meaningfully  in  India's  energy transition.
+
+71. Potential IGFF sub-projects in this pillar include round-the-clock solar projects, green hydrogen production. Gender dynamics in energy transition projects, such as round-the-clock (RTC)  solar  and  energy  storage  solutions,  are  critical  to  ensuring  equitable  and  inclusive development. These projects are essential for transitioning to a sustainable energy future, and the participation of women can significantly influence their success and impact.
+
+72. Women's participation varies across the value chain of rooftop solar companies 31 . The design and pre-construction phase, and the corporate segment - which offer mostly officebased  positions  -  have  a  relatively  high  share  of  female  employees  at  18%  and  34%, respectively. In the area of construction and commissioning, women constitute 3%, and, in operations and maintenance, a mere 1%. Both areas involve frequent site visits or onsite work. Factors governing the low representation of women include a lack of access to opportunities for women due to safety and security concerns at project sites and misperceptions of women's
+
+29  A just transition or just a transition: Making the case for women in energy, RES4Africa Foundation, 2024
+
+30  Women working in the rooftop solar sector, IEA and CEEW, 2019
+
+31 International Energy Agency, 2019.
+
+physical capabilities in some roles, as well as insufficient human resource policies beyond legally mandated requirements.
+
+73. Large scale renewable energy projects provide opportunities for direct employment for women. Quotas for female recruitment, together with gender sensitive workplaces including part time work, separate male and female toilets, and PPE designed for women's body shapes all  contribute  to  a  gender  responsive  workplace  and  successful  retention  of  female  staff. Women  can  be  employed  in  various  roles  within  RTC  solar  projects,  including  technical positions (such as engineers and technicians), administrative roles, and project management. Women's involvement in community engagement activities can help address local concerns, promote project acceptance, and ensure that the benefits of solar projects reach all community members. Women entrepreneurs can establish businesses in the solar supply chain, including manufacturing, installation, and maintenance service. Sale of solar panels or energy efficient appliances is an area of opportunity for women's entrepreneurship.
+
+74. Renew, one of India's leading renewable energy companies is launching a first-of-itskind round-the-clock renewable project in India. For green hydrogen, a very new segment within the renewable energy space, there is not yet much information available on women's participation. This information will be gained through information on knowledge sharing, more projects, lessons learnt.
+
+## 4.5.2.  Women and energy access for cleaner living
+
+75. Providing greater access to alternative sources of fuel for cooking and have a direct impact on women's health, productivity, access to education and participation in the workforce. Potential  IGFF  sub-projects  in  this  objective  include  e-mobility  (2-3-wheeler  and  related infrastructure) and compressed biogas.
+
+76. Clean energy access has a direct correlation with the improved health of women. For example,  switching  from  firewood  to  clean  stoves  reduces  indoor  air  pollution,  which  is responsible for nearly 600,000 premature deaths annually in India, most of them women and children. 32 This shift also boosts productivity by freeing up time previously spent on unpaid chores (gathering of firewood), allowing women to participate in paid work. The clean cooking value chain presents significant opportunities for  women's  economic  empowerment. According to a World Bank study, around 13% of enterprises in the clean cooking sector are female-owned, and women remain underrepresented in leadership roles. 33  However, they can contribute as entrepreneurs, technicians, and sales agents, creating pathways for women to shape and benefit from this growing global industry. Improved access to finance for womenlead enterprises in the clean cooking value chain can lead to greater female participation.
+
+32  The health and economic impact of air pollution in the states of India: Global Burden of Disease Study 2019
+
+33  Advancing Gender-Equal Benefits in Clean Cooking Operations, ESMAP, 2022
+
+Women's involvement in agriculture, which provides feedstock for biogas production, such as crop  residues,  animal  manure,  and  organic  waste,  is  another  key  opportunity.  Their participation in collecting and segregating organic waste from households, markets, and farms is critical to biogas production, offering a way for women to participate in and lead localized clean energy initiatives.
+
+77. Despite these opportunities, there are significant barriers. Gender norms often limit women's access to education, particularly in STEM fields, which are critical for advancing in the clean energy sector. A report by the International Renewable Energy Agency (IRENA) found  that  women  make  up  only  32%  of  the  global  renewable  energy  workforce,  and  in technical  roles,  this  percentage  drops  even  lower. 34 Cultural  and  social  barriers,  including safety concerns and limited mobility in rural areas, also hinder women's participation in energy projects. However, various enablers can support women's involvement in this sector. Targeted capacity-building programs, financial incentives, and mentorship initiatives can equip women with the skills and confidence to enter and excel in the clean energy industry. Programs like the UN's Clean Cooking Alliance and India's "Ujjwala Yojana," which provides subsidized LPG connections to women below the poverty line, are already making a difference. 35 Scaling these initiatives while addressing structural barriers can accelerate women's participation in India's clean energy transition.
+
+78. The biogas industry presents a powerful opportunity for women to play an active role in renewable energy projects. Unlike traditional energy sectors that are often male-dominated, the biogas sector is more inclusive and offers multiple entry points for women's participation across the value chain. Women can contribute significantly to feedstock collection, operation and maintenance, research and development, and project management. As noted above, a study by the International Renewable Energy Agency (IRENA) notes that women comprise about 32% of the renewable energy workforce, higher than in traditional energy sectors, but there is room for more targeted interventions. By enabling women to become entrepreneurs who establish small-scale biogas plants, they can serve local communities while producing clean energy and bio-fertilizers for agriculture. Successful examples can be found in India's 'Biogas Support Program,' which encourages women to take leadership roles in setting up and  operating  biogas  plants. 36 Women  in  the  biogas  industry  are  not  only  challenging traditional  gender  norms  but  are  also  driving  sustainable  development  by  contributing  to energy access and food security, creating a more diverse and equitable renewable energy industry.
+
+34  Renewable Energy: A Gender Perspective. IRENA, 2019
+
+35   Global  Subsidies  Initiative-IISD  and  Integrated  Research  and  Action  for  Development  (IRADe). (2019).
+
+36  Biogas as sustainable approach for social uplift in South East Asian Region, 2023
+
+79. In transportation, empowering women through green mobility systems can be equally transformative. Safe, accessible, and gender-sensitive transport systems allow women and girls to better participate in the workforce and education. Mapping the distinct mobility patterns of men and women, as well as individuals with disabilities, can provide invaluable insights into how they engage with public transport and how new systems can be tailored to meet their needs. According to UN Women, a lack of safe and reliable transport is one of the biggest barriers  to  women's  participation  in  the  economy. 37 Integrating  women  into  transportation planning,  both  as  users  and  as  part  of  the  workforce,  can  significantly  boost  female empowerment. The GCF can play a role in supporting green mass transit projects that not only  reduce  GHG  emissions  but  also  promote  health  co-benefits  through  reduced  air pollution. 38 Moreover, initiatives like the Small Industries Development Bank of India's (SIDBI) "C to  D  to  E"  electric  vehicle  program  exemplify  good  practice  by  encouraging  women  to become EV users, drivers, and even entrepreneurs in the electric vehicle sector. This focus on women as both consumers and leaders in the transport and mobility sector can catalyse a more inclusive transition to green transportation, with broader economic and social benefits.
+
+80. Consultative  process  is  key  to  designing  urban  transport  systems  in  a  way  that  it addresses women's' travel needs. Inclusive design features such as ramps, rest benches and secure lighting to enhance security, and ticketing systems that provide low-cost multiple short trips will go a long way. The nascent electric vehicles industry is leading the field in terms of women empowerment-both as customers and decision makers. 25 % of EV buyers in India are women, which is double the industry average of 12% of women buyers of petrol and diesel cars.  Women  already  account  for  37%  of  its  workforce,  managing  multiple  roles  and responsibilities across engineering, manufacturing, field, HR, IT, finance, and other functions. The reasons for higher inclusion could be that the EV segment is less mechanical and more electrical/electronic-oriented  thereby  lending  well  to  the  inclusion  of  more  women  across functions. Representation of women is seen in all levels of hierarchy.
+
+## 4.5.3. Women and resilient energy systems for rural and urban areas.
+
+81. IGFF goals of working at the food, agriculture, energy nexus inevitably mean attention must be paid to the agricultural sector. According to the UN Food and Agriculture Organisation (FAO),  60-80%  of  farmers  in  non-industrialised  countries  are  female. 39   Women  farmers perform a wide set of critical activities throughout the crop cycle, from sowing to harvesting and post-harvesting. Only 13 percent of rural women who are engaged in agriculture own land and absence of land rights for women has been a critical barrier for them in accessing their rights and entitlements, such as credit, agriculture input subsidies, technology, information
+
+37  Closing Gender Gaps in Transport, World Bank, 2024
+
+38  Adaptation: Accelerating action towards a climate resilient future, GCF, 2019
+
+39  Women and sustainable food security, FAO https://www.fao.org/4/x0171e/x0171e02.htm
+
+and extension 40 . Consequently, women's adaptive capacities are significantly more limited as compared to  men-  with  limited  access  to  assets,  resources,  credit  facilities,  markets,  and information and technology. Women's increased vulnerability to climate change and reduced access  to  climate  smart  agricultural  (CSA)  practices  can  be  attributed  to  limited  land ownership, poor access to credit, reduced access to information and formal extension, and time  pressures  from  multiple  domestic  and  productive  demands  on  their  time 41 Given  the differences in the resilience capacities and response options of men and women farmers, with the  latter  more  vulnerable  to  climate  shocks,  it  is  imperative  to  understand  the  gendered adoption of CSA practices and the associated constraints, especially related to information and extension, to help facilitate better adoption of improved practices and technologies.
+
+82. Potential IGFF sub-projects in this pillar include Decentralised RE to power livelihood applications,  off  grid  solar  water  pumps,  rooftop  solar  for  MSMEs.  These  projects  will collectively lead to not only enhanced agricultural productivity using renewable energy sources but will also build climate resilience of women in this sector and increase their employment and entrepreneurship opportunities.
+
+83. While women constitute a third of the total workforce in the renewable energy industry, they appear to have a higher representation in the solar PV sector, with a 40% share 42 . This is  also  the  case  in  decentralised  renewable  energy  (DRE),  where  solar  technologies  are prominently deployed.
+
+84. The solar targets (40 GW of rooftop solar installations sanctioned by 2026) are a major opportunity for sustainable development and for women's employment. It has the potential to create a considerable number of jobs attractive to high skilled women, largely untapped pool in India.
+
+## 5. GENDER ACTION PLAN
+
+85. The  Gender  Action  Plan  (GAP)  is  ADB's  key  gender  mainstreaming  tool  and mechanism for ensuring gender-inclusive design and implementation of projects. The Gender Action Plan is aligned with the Facility level IMRF (Section E of the Funding Proposal) which outlines  the  theory  of  change  along  the  2  components.  The  objective  of  the  TA  support (component 2) is to support institutionalizing green lending and advancing gender responsive
+
+40 Indian Council for Research on International Economic Relations, Gulati, A., Sharma, P., Samantara,
+
+A.,&amp; Terway, P, 2018, Agriculture extension system in India: Review of current status, trends and the way forward.
+
+41 Gender, agriculture policies and climate smart agriculture in India, iFRI, 2022.
+
+42  Solar PV: A gender perspective, IRENA 2022.
+
+financing  and  worksforce  development.  Consultations  with  women's  groups  and  relevant institutions will take place during the conduct of due diligence process.
+
+Impact Statement: IF India's Development Financial Institutions (DFIs) have access to concessional finance and enhanced technical capacities to design and implement financing products for emerging clean energy technologies, and if project developers (incl. MSMEs) and private/public FIs are equipped to access climate finance, THEN the India Green Finance Facility (IGFF) will catalyze large-scale investments in clean energy, mobilizing public and private capital that contributes to the reduction of 50 million metric  tons  of  CO ₂ eq.  BECAUSE IF India's  Development  Financial  Institutions  (DFIs)  integrate  gender-responsive  financing  practices  into  their  lending operations-by applying gender criteria, collecting sex-disaggregated data, and designing financial products tailored to the needs of women entrepreneurs and workers in the clean energy sector, THEN the IGFF will catalyze financing towards projects that actively promote women's participation and leadership in clean energy value chains, BECAUSE this will address existing gender disparities in access to finance and opportunities, enabling more women to engage meaningfully across the clean energy ecosystem.
+
+Outcome Statement: Project developers and public/private FIs have access to inclusive finance for emerging clean energy technologies Participating DFIs demonstrate increased institutional capacity to deploy financing to women, track sex-disaggregated outcomes, and design inclusive clean energy investments.
+
+Output 1: Policy and regulatory frameworks strengthened to support green lending practices and gender responsive clean energy financing
+
+| Activities                                                                                                                                    | Indicators and Targets                                                                                                                                                                                                                 | Timeline                                                 | Responsibilities   | Cost (US$)   |
+|-----------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------|--------------------|--------------|
+| 1. Conduct targeted gender awareness programs at DFIs to support the development and adoption of policies aligned with 2X Challenge criteria. | 1.1 Conduct 30 Training programs in at least 3 DFIs delivered within 12 months of launch of the Facility. 1.2 At least two seminars on gender and renewable energy conducted for all DFIs, with a minimum of 70% of participants (sex- | 1.1: Year 1 1.2: Year 2 1.3: End of project. 1.4: Year 2 | IGFF PMU and DFIs  | 431,000      |
+
+| 1.1 1.2 1.3   | gender awareness training materials tailored to the specific operational contexts of DFIs. Organize interactive workshops for management and staff, including one-on- one support if needed, focusing on the importance of gender equality, the business case for 2X compliance, and best practices for implementation.   | disaggregated) reporting increased knowledge of gender-responsive interventions to enhance women's participation, including from marginalized populations, across the energy sector value chain. 1.3 At least 3 gender-responsive human resources policies in at least 3 DFIs adopted by the end of the project. 1.4 100% of participating DFIs establish internal gender task force. 1.5 At least 3 GA & GAP in at least 3 DFIs   | 1.5: Year 3   | Develop and customize     |
+|---------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------|---------------------------|
+|               | Facilitate technical sessions to support DFIs in developing and implementing gender-responsive workplace policies and processes (e.g., parental leave, flexible working, and anti-harassment policies). Support DFIs in establishing internal task forces to monitor and evaluate gender                                  | developed.                                                                                                                                                                                                                                                                                                                                                                                                                         |               | 1.4 integration progress. |
+| 1.5           | Support DFIs to prepare gender action plans at project and institutional levels.                                                                                                                                                                                                                                          |                                                                                                                                                                                                                                                                                                                                                                                                                                    |               |                           |
+
+| 2. Build the capacity of DFI loan officers to collect, analyze, and utilize sex- disaggregated data for the IGFF Monitoring and Reporting. 2.1 Develop and distribute standardized templates and tools for collecting sex- disaggregated data. 2.2 Conduct capacity-building workshops for DFI loan officers, focusing on data collection methodologies, gender-sensitive client engagement, and using data for decision- making. 2.3 Establish guidelines for incorporating sex disaggregated data into loan documentation and reporting systems.   | 2.1 Train at least 100 loan officers across all DFIs 2.2 Achieve at least 90% compliance in collecting sex-disaggregated data for new loan applications within participating DFIs. 2.3 Generate and analyze sex- disaggregated data reports from all DFIs to contribute to IGFF Monitoring and Reporting and at least one knowledge products/case study.   | 2.1: Year 2 2.2: End of project 2.3: End of project.                                                                                              | IGFF PMU and DFIs                                                                                                                                 | $278,000                                                                                                                                          |
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
+| Output 2: DFIs will gain competence on institutionalising gender responsive green lending practices by adopting standardised tools and frameworks                                                                                                                                                                                                                                                                                                                                                                                                    | Output 2: DFIs will gain competence on institutionalising gender responsive green lending practices by adopting standardised tools and frameworks                                                                                                                                                                                                          | Output 2: DFIs will gain competence on institutionalising gender responsive green lending practices by adopting standardised tools and frameworks | Output 2: DFIs will gain competence on institutionalising gender responsive green lending practices by adopting standardised tools and frameworks | Output 2: DFIs will gain competence on institutionalising gender responsive green lending practices by adopting standardised tools and frameworks |
+| Activities                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           | Indicators and Targets                                                                                                                                                                                                                                                                                                                                     | Timeline                                                                                                                                          | Responsibilities                                                                                                                                  | Cost                                                                                                                                              |
+
+| 3. Identify and align gender indicators to be included in sub-project selection criteria across all DFIs, ensuring alignment with IGFF's project selection criteria . 3.1 Conduct consultations with DFIs to review existing sub-project selection criteria and identify gaps in gender considerations. 3.2 Facilitate and draft a set of proposed gender indicators with an intersectional lens, aligned with IGFF's criteria, focusing on measurable impacts such as women's economic participation, leadership roles, and access to resources. 3.3 Provide technical support to integrate the agreed gender indicators into the sub- project selection criteria of all three DFIs. 3.4 Establish a reporting framework for DFIs to monitor and evaluate gender-related outcomes in sub-projects.   | 3.1 Conduct consultation to identify gender gaps in all participating DFIs 3.2 100% of participating DFIs approve a common set of at least 5 gender indicators aligned with IGFF criteria for use by all DFIs in the sub-project selection 3.3 At least 75% of sub- projects technologies include gender indicators in their selection criteria. 3.4 At least 10% of the women-led businesses in DRE solutions and e-mobility receiving financing.   | 3.1: Year 1 3.2: Year 2 3.3: Year 2 3.4: End of project   | IGFF PMU and DFIs   | $273,000   |
+|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------|---------------------|------------|
+
+| Output 3: Support dialogues knowledge exchange and collaboration to advocate and promote gender inclusion in the green economy in India                                                                                                                                                                                                                                                              | Output 3: Support dialogues knowledge exchange and collaboration to advocate and promote gender inclusion in the green economy in India                                                                                                                                                                                                                                                                                                                                                                                                                                                            | Output 3: Support dialogues knowledge exchange and collaboration to advocate and promote gender inclusion in the green economy in India   | Output 3: Support dialogues knowledge exchange and collaboration to advocate and promote gender inclusion in the green economy in India   | Output 3: Support dialogues knowledge exchange and collaboration to advocate and promote gender inclusion in the green economy in India   |
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|
+| Activities                                                                                                                                                                                                                                                                                                                                                                                           | Indicators and Targets                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             | Timeline                                                                                                                                  | Responsibilities                                                                                                                          | Cost                                                                                                                                      |
+| 4. Conduct targeted research, capacity- building workshops and facilitate dialogues to promote gender responsiveness with an intersectional lens 4.1 Consultation with women's groups, gender experts, and relevant institutions / ministries with focus on gender equity during the due diligence process 4.2 Develop case studies and knowledge products for gender responsive energy investments. | 4.1a Conduct consultation with women's groups, gender experts, and relevant institutions/ministries with focus on gender equity. 4.1b Organize four workshops with participation from at least 200 stakeholders (40% women) from public and private sectors, focusing on integrating gender into climate investment frameworks. 4.2a Develop at least three country-specific case studies showcasing successful gender- responsive energy investments. 4.2b Publish a policy brief summarizing key recommendations and disseminate it to 1,000 stakeholders through webinars and online platforms. | 4.1: Year 2 4.2: Year 4                                                                                                                   | IGFF PMU                                                                                                                                  | $308,000                                                                                                                                  |
+
+| 5. Upskilling of female entrepreneurs in green economy in India 5.1 Design a modular training program covering green business development, access to finance, and climate-resilient practices, with at least three modules developed   | 5.1 Provide skill development programs for at least 2500 female entrepreneurs in the green economy in India, including training to help women access green loans, grants, and finance schemes, and prepare business plans tailored to green investments.   | 5.1: Year 3   | IGFF PMU   | .   |
+|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------|------------|-----|
+
+Total Budget for GAP implementation - US$ 1,290,000
+
+## \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_

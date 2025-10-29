@@ -1,0 +1,4048 @@
+=== DOCUMENT METADATA ===
+format: PDF 1.6
+title: 
+author: Sunny Kim
+subject: 
+keywords: 
+creator: Adobe Acrobat Pro 11.0.10
+producer: Adobe Acrobat Pro 11.0.10
+creationDate: D:20151009193414+09'00'
+modDate: D:20151015170005+09'00'
+trapped: 
+
+=== PAGE 1 ===
+ The agenda item number will be determined when the final sequence of items in the provisional agenda is 
+confirmed by the Co-Chairs. 
+Consideration of funding 
+proposals – Addendum 
+Funding proposal package for FP008 
+GCF/B.11/04/Add.08 
+15 October 2015 
+Meeting of the Board 
+2 – 5 November 2015 
+Livingstone, Republic of Zambia 
+Provisional Agenda Item 14 
+Summary 
+This addendum contains the following two parts: 
+(a) 
+A funding proposal entitled “Urban Water Supply and Wastewater Management 
+Project in Fiji” submitted by the Asian Development Bank; and 
+(b) 
+A no-objection letter issued by the national designated authority or focal point. 
+These documents are presented as submitted by the accredited entity and the national 
+designated authority or focal point, respectively.
+
+=== PAGE 2 ===
+GCF/B.11/04/Add.08 
+Page b 
+Table of Contents 
+Funding proposal submitted by the accredited entity 
+No-objection letter issued by the national designated authority
+
+=== PAGE 3 ===
+r
+
+=== PAGE 4 ===
+Contents 
+ 
+ 
+Section A 
+PROJECT / PROGRAMME SUMMARY 
+ 
+ 
+Section B 
+FINANCING / COST INFORMATION  
+ 
+ 
+Section C 
+DETAILED PROJECT / PROGRAMME DESCRIPTION 
+ 
+Section D 
+RATIONALE FOR GCF INVOLVEMENT 
+ 
+Section E 
+EXPECTED PERFORMANCE AGAINST INVESTMENT CRITERIA 
+ 
+Section F 
+APPRAISAL SUMMARY 
+ 
+Section G 
+RISK ASSESSMENT AND MANAGEMENT 
+ 
+Section H 
+RESULTS MONITORING AND REPORTING 
+ 
+Section I 
+ANNEXES 
+ 
+ 
+ 
+Note to accredited entities on the use of the funding proposal template 
+ 
+ 
+Sections A, B, D, E and H of the funding proposal require detailed inputs from the accredited entity. For all 
+other sections, including the Appraisal Summary in section F, accredited entities have discretion in how they 
+wish to present the information. Accredited entities can either directly incorporate information into this 
+proposal, or provide summary information in the proposal with cross-reference to other project documents 
+such as project appraisal document. 
+ 
+The total number of pages for the funding proposal (excluding annexes) is expected not to exceed 50. 
+ 
+Please submit the completed form to: 
+fundingproposal@gcfund.org 
+ 
+Please use the following name convention for the file name: 
+“FP-ADB-31/07/2015-1”
+
+=== PAGE 5 ===
+PROJECT / PROGRAMME SUMMARY 
+GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 1 OF 48 A 
+A 
+A 
+A 
+A 
+A.1. Brief Project / Programme Information 
+A.1.1. Project / programme title 
+Fiji Urban Water Supply and Wastewater Management Project 
+A.1.2. Project or programme 
+Project 
+A.1.3. Country (ies) / region    
+Republic of Fiji 
+A.1.4. National designated authority (ies) 
+Mr. Esala Nayasi, Acting Permanent Secretary, Ministry of 
+Foreign Affairs 
+A.1.5. Accredited entity 
+Asian Development Bank 
+A.1.5.a. Access modality 
+☐  Direct 
+☒  International 
+A.1.6. Executing entity / beneficiary 
+Executing Entity: Ministry of Finance 
+Beneficiary: Government of Fiji 
+A.1.7. Project size category (Total investment, 
+million USD) 
+☐  Micro (≤10) 
+☒  Medium (50<x≤250) 
+☐  Small (10<x≤50) 
+☐  Large (>250) 
+A.1.8. Mitigation / adaptation focus 
+☐  Mitigation 
+☒  Adaptation ☐  Cross-cutting 
+A.1.9. Date of submission 
+31/July/2015 
+A.1.10. 
+Project 
+contact 
+details 
+Contact person, position 
+Ms Maria Paniagua, Unit Head, Project Administration Unit, 
+Pacific Department / Ms Hanna Uusimaa, Climate Change 
+Specialist, Pacific Department 
+Organization 
+Asian Development Bank 
+Email address 
+mppaniagua@adb.org / huusimaa@adb.org 
+Telephone number 
+(+679) 3318101 / (+63 2) 632 4840 
+Mailing address 
+6 ADB Av, Mandaluyong, 1550 Metro Manila, Philippines 
+A.1.11. Results areas (mark all that apply) 
+Reduced emissions from: 
+☐ 
+Energy access and power generation 
+(E.g. on-grid, micro-grid or off-grid solar, wind, geothermal, etc.) 
+☐ 
+Low emission transport 
+(E.g. on-grid, micro-grid or off-grid solar, wind, geothermal, etc.) 
+☐ 
+Buildings, cities and industries and appliances 
+(E.g. new and retrofitted energy-efficient buildings, energy-efficient equipment for companies and supply chain management, etc.) 
+☐ 
+Forestry and land use 
+(E.g. forest conservation and management, agroforestry, agricultural irrigation, water treatment and management, etc.) 
+Increased resilience of: 
+☒ 
+Most vulnerable people and communities 
+(E.g. mitigation of operational risk associated with climate change – diversification of supply sources and supply chain management, 
+relocation of manufacturing facilities and warehouses, etc.) 
+☒ 
+Health and well-being, and food and water security 
+(E.g. climate-resilient crops, efficient irrigation systems, etc.) 
+☒ 
+Infrastructure and built environment 
+(E.g. sea walls, resilient road networks, etc.) 
+Ecosystem and ecosystem services 
+(E.g. ecosystem conservation and management, ecotourism, etc.) 
+☒
+
+=== PAGE 6 ===
+PROJECT / PROGRAMME SUMMARY 
+ 
+GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 2 OF 48 
+ 
+ 
+A 
+A 
+A 
+A 
+A 
+A.2. Project / Programme Executive Summary (max 300 words) 
+Please provide a brief description of the proposed project/programme, including the objectives and primary measurable 
+benefits (see investment criteria in section E). The detailed description can be elaborated in section C. 
+1. 
+The project will improve access to safe water and sewerage services by building infrastructure to increase 
+water production by 20% and wastewater treatment (WWT) by 200% in the greater Suva area (GSA), and supporting 
+government to develop and implement policy and regulatory reforms in water and sewerage. A capacity development 
+technical assistance was provided by the ADB to prepare the project.1   
+2. 
+The project features a strong focus on climate change adaptation and mitigation measures, critical to resilience 
+and sustainability of the infrastructure. Climate change considerations have been included in the design of the project, 
+particularly in adaptation to floods, droughts, and salinity intrusion due to sea level rise, as well as ecosystem 
+conservation through the increase of sewerage coverage and improvement of wastewater processes and mitigation 
+through use of energy efficient technologies and the increase of sewerage coverage.  Only water supply adaptation 
+measures in this submission are to be considered by the GCF Board Meeting in November 2015.  
+3. 
+Water Supply. The project will design and construct a new water intake by the Rewa River, with a pumping 
+station, water treatment plant, and clear water reservoir and a pipeline to increase water production by 30,000 m3 per 
+day; and will reduce non-revenue water (NRW) due to technical and non-technical losses. The project will improve 
+resilience through appropriate siting of the intake higher up the river catchment, away from the projected salinity wedge 
+moving up the river system due to sea-level rise, and lower river flows during pronounced droughts. While the water 
+sources are still all reliant on surface water systems, the impacts on stream flows associated with future climate change 
+are less likely in the much larger Rewa river system. The proposed water supply scheme will also be designed to allow 
+future flexibility for demand increases and/or changing supply source yields. 
+4. 
+Wastewater Management. The project will increase sewer coverage and reliability of wastewater treatment 
+(WWT) processes in the GSA through increasing WWT capacity of the Kinoya plant. The project will design and build 
+new treatment facilities, upgrade existing wastewater pumping stations, replace wastewater infrastructure; and expand 
+sewerage network to service an additional 15% of households. This will improve overall effluent quality and minimize 
+the incidents of wastewater bypass, thereby improving water quality downstream in receiving waters and reducing 
+pollution levels affecting Laucala Bay; as well as enable the servicing of backlog areas and allow future growth within 
+the Suva-Nausori wastewater system. 
+5. 
+Institutional Framework. The project will improve sector management and sustainable service delivery 
+capacity by supporting implementation of a water demand management program; strengthening the NRW reduction 
+program; supporting the approval and implementation of the National Liquid Waste Trade Program; supporting the 
+institutional strengthening of WAF; and supporting WAF to develop a decentralization strategy to reduce number of 
+sewer pumping stations and increase efficiency in the remaining pumping stations. 
+6. 
+The proposed financing structure combines a maximum debt financing and a minimum grant financing, taking 
+into account the country's debt burden, the project's revenue-generating capacity at completion, and the urgent need to 
+adopt least-cost climate change solutions. Current debt levels constrain Fiji’s ability to borrow for investments in water 
+and sewerage. The additional costs of adaptation and mitigation measures will substantially increase the cost of 
+providing such infrastructure. While investments in water and wastewater treatment have a strong social, economic, 
+and environmental return to Fiji, the financial returns are limited. Grant funding by GCF will allow Fiji, a small island 
+developing state (SIDS), to undertake vital adaptation measures without either reducing funding for other high priority 
+development needs or increasing its risk of debt distress.  
+ 
+ 
+                                                             
+1 ADB. 2013. Technical Assistance to Fiji for Urban Development Planning and Institutional Capacity Building. 
+Manila.
+
+=== PAGE 7 ===
+PROJECT / PROGRAMME SUMMARY 
+ 
+GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 3 OF 48 
+ 
+ 
+A 
+A 
+A 
+A 
+A 
+A.3. Project/Programme Milestone 
+Expected approval from accredited entity’s 
+Board (if applicable) 
+Project Design Advance Loan: 17 December 2015 
+Project Loan: 15 September 2016 
+Expected financial close (if applicable) 
+Project Design Advance Loan: 31 July 2016 
+Project Loan: 30 June 2023 
+Estimated implementation start and end date 
+Project Design Advance Loan 
+Start:  7 January 2016 
+End:  31 January 2017 
+ 
+Project Loan  
+Start: 1 February 2017 
+End: 31 December 2022 
+Project lifespan 
+7 years
+
+=== PAGE 8 ===
+FINANCING / COST INFORMATION 
+ 
+GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 4 OF 48 
+ 
+ 
+B 
+B 
+B 
+B 
+B 
+B.1. Description of Financial Elements of the Project / Programme 
+7. 
+A detailed financial analysis for the project is provided as a linked document to the Project Appraisal Report 
+and the financial analysis model together with detailed estimated cost by component, output, financier, cost category 
+and year is included as a supporting document to this proposal.   
+Indicative Cost Estimates Summary Table by Component and Financier (million USD) 
+Component 
+Sub-component (if applicable) 
+Total 
+ADB 
+EIB 
+GCF 
+GoFiji 
+1. Water Supply  
+1.1 Rewa Water Treatment Plant 
+63.88 
+15.91 
+10.61 
+26.99 
+10.37 
+1.2 Non Revenue Water Production 
+10.01 
+1.55 
+1.03 
+0.00 
+7.42 
+2. Wastewater 
+2.1 Kinoya Wastewater Treatment Plant Upgrade 
+29.10 
+12.69 
+8.46 
+0.00 
+7.95 
+2.2. Pump Station Upgrades 
+10.56 
+5.35 
+3.56 
+0.00 
+1.65 
+2.3. Sewer Mains Upgrade 
+12.71 
+3.00 
+2.00 
+0.00 
+7.70 
+2.4 Sewer Extension 
+31.68 
+3.93 
+2.62 
+0.00 
+25.12 
+3. Capacity Building 
+4.50 
+3.47 
+0.00 
+0.00 
+1.04 
+4. Project Management 
+4.50 
+4.50 
+0.00 
+0.00 
+0.00 
+5. Recurrent Costs (O&M) 
+12.88 
+0.00 
+0.00 
+0.00 
+12.88 
+6. Contingencies 
+Physical 
+14.20 
+3.98 
+2.24 
+2.13 
+5.86 
+Price 
+12.81 
+3.59 
+2.02 
+1.92 
+5.28 
+7. Interest during Construction 
+14.94 
+9.57 
+5.37 
+0.00 
+0.00 
+8. Commitment Charges 
+0.24 
+0.15 
+0.09 
+0.00 
+0.00 
+Total 
+222.00 
+67.70 
+38.00 
+31.04 
+85.26 
+B.2. Project Financing Information 
+Indicative Project Financing Plan 
+Source 
+Amount 
+  
+Share of Total 
+(%) 
+($ million) 
+ADB (OCR Loan) 
+67.70 
+30% 
+EIB (Loan) 
+38.00 
+18% 
+GCF Grant 
+31.04 
+14% 
+Governmenta 
+85.26 
+38% 
+  
+Total 
+  
+222.00 
+  
+100% 
+a Government will make a submission to the GCF in time to be considered for the March 2016 Board 
+Meeting for the financing of climate change related activities under Component 2: Wastewater.  The 
+estimated cost of climate change related activities under this component amount to $39 million and 
+funding source will be subject to confirmation of funding from GCF in March 2016. 
+Source: ADB estimates.  
+ADB = Asian Development Bank; GCF = Green Climate Fund; EIB = European Investment Bank; 
+OCR = Ordinary Capital Resources.
+
+=== PAGE 9 ===
+FINANCING / COST INFORMATION 
+ 
+GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 5 OF 48 
+ 
+ 
+B 
+B 
+B 
+B 
+B 
+8. 
+ADB will provide a loan of $67.70 million from its ordinary capital resources (OCR) to help finance the project. 
+The loan will have a 20-year term, including a grace period of 5 years, an annual interest rate determined in accordance 
+with ADB’s London interbank offered rate (LIBOR)-based lending facility, and a commitment charge of 0.15% per year. 
+The interest and other charges during construction will be capitalized in the loan. The EIB has indicated intent in 
+principle2 to provide a loan with similar terms and conditions to ADB loan to cofinance the project. The proposed grant 
+from the GCF will finance the cost of adaptation measures of the project. The Government will finance taxes and duties, 
+land acquisition, and operation and maintenance cost included in the Design-Build Operate (DBO) contracts as well as 
+mitigation and ecosystem conservation activities under component 2.  
+ 
+Financial Instrument 
+Amount 
+Currency 
+Tenor 
+Pricing 
+(a) Total 
+project 
+financing 
+(a) = (b) + (c) 
+220.00 
+million USD 
+($) 
+ 
+(b) 
+Requested 
+GCF 
+amount 
+ (vi) Grants * 
+ 
+31.04 
+million USD 
+($) 
+ 
+ 
+ 
+ 
+ 
+ 
+* Please provide economic and financial justification in section F.1 for the concessionality that GCF is expected to 
+provide, particularly in the case of grants. Please specify difference in tenor and price between GCF financing and 
+that of accredited entities. Please note that the level of concessionality should correspond to the level of the 
+project/programme’s expected performance against the investment criteria indicated in section E. 
+Total requested 
+(i+ii+iii+iv+v+vi) 
+31.04 
+million USD 
+($) 
+ 
+(c) Co-
+financing 
+ 
+Financial 
+Instrument 
+Amount 
+Currency 
+Name of 
+Institution 
+Tenor 
+Pricing 
+Seniority 
+Loan 
+Loan 
+Government 
+contribution 
+ 
+67.70 
+38.00 
+………… 
+85.26 
+ 
+million USD 
+($) 
+million USD 
+($) 
+million USD 
+($) 
+ADB 
+EIB 
+Government 
+of Fiji 
+ 
+20  years 
+ 
+See above 
+ 
+pari passu 
+pari passu 
+ 
+ 
+Lead financing institution: Asian Development Bank 
+* Please provide a confirmation letter or a letter of commitment in section I issued by the co-financing institution. 
+B.3. Fee Arrangement 
+9. 
+Fee arrangement for the proposed project is to be aligned with the GCF Board’s decision on fees, which is 
+expected to be taken at the 11th meeting of the Board. In the absence of a GCF Board decision ADB will submit a fee 
+proposal as requested by the GCF. 
+B.4. Financial Market Overview (if applicable) Not Applicable 
+                                                             
+2 The project is in an advanced stage of appraisal, awaiting presentation to EIB decision making bodies.
+
+=== PAGE 10 ===
+DETAILED PROJECT / PROGRAMME DESCRIPTION 
+ 
+GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 6 OF 48 
+ 
+ 
+C 
+C 
+C 
+C 
+C 
+C.1. Strategic Context  
+10. 
+Fiji has a population of approximately 868,000, of which 53% is urban. By 2030, it is estimated that two in 
+three Fijians will be living in the country’s urban centers. While poverty rates in Fiji are highest in rural areas, the rapid 
+growth of peri-urban squatter settlements implies that the majority of poor people in Fiji now live in and around urban 
+areas. Fiji’s urban sector accounts for 60%, and only the GSA accounts 40%, of the country’s gross domestic product 
+(GDP). The GSA, which consists of Suva City—the national capital—as well as the towns of Lami, Nasinu, and 
+Nausori and their surrounding peri-urban areas, accounts for 57% of Fiji’s urban population. By 2023, the population 
+of the GSA is expected to grow by 12.8%. 
+11. 
+Despite the economic importance of the country’s cities and towns, urban infrastructure and services have not 
+kept pace with rapid urban growth. Extreme drought and flooding events as well as sea level rise result in higher cost 
+in the provision of these services by the Government. Inevitably this is contributing to environmental degradation and 
+increased health risks, and acts as a binding constraint on social and economic development. The improved delivery 
+of urban water supply and sanitation services is thus essential for ongoing economic development and is a high 
+priority of government. The investments to be financed by the project have been identified based on the WAF draft 
+Water Supply and Sewerage Master Plan 2013-2033 and the WAF 2014 corporate plan and through consultation with 
+stakeholders in Fiji.   
+12. 
+Fiji’s development plan, entitled the Government of Fiji: Roadmap for Democracy and Sustainable Socio-
+Economic Development 2010–2014 3, aligned to the Millennium Development Goals, has prioritized water and 
+sanitation services in Fiji’s socio economic development. The Green Growth Framework for Fiji: Restoring the 
+Balance in Development that is Sustainable for Our Future4 reiterates a similar commitment to enhancing accessibility 
+to safe drinking water and sanitation in Fiji, and has recognized increased population growth, water consumption and 
+climate change impacts as an impediment to efforts to achieving sustainable development. 
+13. 
+Fiji has developed its National Climate Change Policy in 20125 to provide a policy framework which guides 
+government’s strategic direction on issues relating to climate change. A strategy identified for adaptation is the 
+inclusion of vulnerability assessments and climate change impact projections into resource management planning, 
+such as integrated coastal and watershed management plans. In addition, the draft National Climate Change 
+Adaptation Strategy provides detailed and specific actions for implementation of adaptation measures per sector 
+including the water sector.  
+14. 
+The SIDS have adopted the Barbados Programme of Action (BPoA, 1994), the Mauritius Strategy (2005), and 
+the SAMOA Pathway (2014), which all include climate change as a significant issue for the SIDS. Fiji also supports 
+the Strategy for Climate and Disaster Resilient Development in the Pacific6, aligning itself with the view that the cross-
+cutting issues of climate change and disaster risk management should be implemented through the policies of other 
+sectors, such as those of agriculture, water resources, health, land use, environment, energy, infrastructure 
+development and finance and planning. 
+C.2. Project Objective against Baseline 
+15. 
+For the Overall Project Objective against Baseline, please refer to the Project  Design and Monitoring 
+Framework included as Annex I of the Project Appraisal Report and Section H.1.2. of this proposal. 
+ 
+ 
+                                                             
+3 Government of Fiji, 2009. Suva. 
+4 Government of Fiji. 2014. Suva. 
+5 Government of Fiji, 2012. Suva. 
+6 Secretariat of the Pacific Community. 2015. Draft Strategy for Climate and Disaster Resilient Development in the 
+Pacific (Version 17). Suva.
+
+=== PAGE 11 ===
+DETAILED PROJECT / PROGRAMME DESCRIPTION 
+ 
+GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 7 OF 48 
+ 
+ 
+C 
+C 
+C 
+C 
+C 
+C.3. Project Description 
+16. 
+The project will ensure that residents of some of Fiji’s most densely populated areas have improved access to 
+safe piped water and an environmentally friendly sewerage system. The project’s impact is aligned with the 
+government’s policy to improve delivery of water supply and sanitation services as articulated in the Roadmap for 
+Democracy and Sustainable Socio-Economic Development, 2010–2014. The outcome will be improved access to 
+sustainable water supply and sewerage services. The project has three main components: (i) increasing access to 
+reliable and safe water supply in the GSA; (ii) increasing sewer coverage capacity and reliability of WWT processes in 
+the GSA; and (iii) improving management and sustainable delivery of water and sewerage services. 
+17. 
+The Project meets the requirements to access financing from the Green Climate Fund (GCF). Climate change 
+considerations have been included in the design of the Project, particularly in adaptation to floods and droughts due to 
+changes in rainfall patterns, salinity intrusion due to sea level rise; and mitigation through use of energy efficient 
+technologies in pumping stations, and the increase of sewerage coverage for further reduction of greenhouse gas 
+emissions.  The project will also contribute to protection of Laucala Bay and surrounding coral reefs by reducing 
+sewage spills and improving Kinoya wastewater treatment processes.   
+18. 
+Water Supply. The Waimanu River is the only raw water source for the Waila and Tamavua water treatment 
+plants which currently serve the GSA. Both water treatment plants are running 24 hours per day at full capacity and at 
+times cannot meet peak demands. With NRW estimated at 46% by WAF, WAF has no capacity to extend the network 
+to peri-urban areas or new growth areas. As a consequence, some of the served areas suffer intermittent service. 
+Service interruptions are more pronounced during drought periods, when the Waimanu River flow is insufficient to 
+operate the plants at their full production capacity and during periods of high rainfall, when the Waimanu waters 
+become highly turbid, reducing the output of both plants as the filters require more frequent backwashing. The 
+situation is compounded with the predicted onset of climate change and the expected changes in rainfall patterns and 
+increase in extreme rainfall events, forecasting more frequent interruptions to supply into the future. The reduction of 
+NRW is a parallel priority but even if the 25% target is achieved, current production will still not be sufficient to cater 
+for growing demand.  
+19. 
+The project will increase access to reliable and safe water supply in the GSA through: (i) increasing 
+production by 30,000 m3 per day by designing and constructing a new water supply source in the Rewa river, with a 
+water treatment plant, pumping station and reservoir to serve the GSA water supply system; and (ii) reducing non-
+revenue water due to technical losses and non-technical losses by replacing meters; improving leak detection and 
+repairs; establishing district metering and demand management areas and pressure management systems. This will 
+address the existing shortfall in bulk water supply and water treatment during peak dry weather periods, therefore 
+improving water supply reliability and continuity across the GSA water supply system; and provide additional bulk 
+water supply and water treatment capacity to allow the servicing of areas not currently supplied by the system as well 
+as to service future growth in GSA. 
+20. 
+The new raw water intake at the Rewa River will result in a more resilient water supply system by reducing 
+the risk posed by dependency solely on the Waimanu River system, as is the case currently. While the water sources 
+are still all reliant on surface water based systems, the Rewa River is a much larger river system and any impact on 
+stream flows associated with future climate change impacts are not likely to impact extractions for urban water supply. 
+In addition, the new location of the new intake takes into account new insights concerning the impact of climate 
+change on sea water levels and decreased river flows during extended drought periods and provides as such 
+additional security against salinity impacts that are likely caused by climate change in the near future.  
+21. 
+Wastewater Management. Current planning regulations ban high-density urban development in unsewered 
+areas. Existing sewerage infrastructure covers only 36% of the GSA and the lack of adequate wastewater 
+infrastructure has constrained high density development. This is directly contributing to urban sprawl and 
+environmental degradation. To address this problem, the government intends to increase sewerage coverage in the 
+GSA to 90% by 2023. The main WWT facility in the GSA, the Kinoya WWT plant, is currently working at full capacity 
+and needs to be upgraded and expanded before additional flows can be treated. Wastewater modeling has also 
+revealed major deficiencies in the pump stations and gravity and rising mains. 
+22. 
+The project will increase WAF sewer coverage capacity and reliability of WWT processes in the GSA through: 
+(i) increasing WWT capacity of Kinoya to approximately 277,000 population equivalent (PE) by designing and building 
+new treatment facilities, namely two primary sedimentation tanks, a carbon and nutrient removal facility, a new
+
+=== PAGE 12 ===
+DETAILED PROJECT / PROGRAMME DESCRIPTION 
+ 
+GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 8 OF 48 
+ 
+ 
+C 
+C 
+C 
+C 
+C 
+digester and upgrade of sludge dewatering plant, and a new combined heat and power (CHP) equipment for power 
+production; (ii) upgrading around 31 existing wastewater pumping stations to allow more wastewater to flow efficiently 
+to the treatment plant; (iii) replacing of around 18km of wastewater trunk mains and relining of around 18km of 
+wastewater reticulation and trunk mains that are reaching the end of their asset life; and (iv) the design and 
+construction of new wastewater infrastructure to service additional 15% of the households in backlog areas (4,500 
+households currently equipped with septic tanks causing uncontrolled biogas emissions) and new development areas 
+(approximately servicing 6,500 new lots). This will improve overall effluent quality and help to minimize the incidents of 
+wastewater bypassing treatment, thereby improving water quality downstream in receiving waters. More importantly, it 
+will enable the servicing of sewerage backlog areas and allow future growth within the Suva-Nausori wastewater 
+system. 
+23. 
+Institutional Framework. WAF is a commercial statutory authority promulgated under the ambit of the Public 
+Enterprise Act 1996 and manages both water and wastewater services across Fiji in accordance with the functions 
+and powers of the Promulgation reporting to the Ministry of Infrastructure and Transport (MoIT). Since becoming a 
+statutory authority in 2010, WAF has been focusing on operational improvements to both the supply of water and 
+wastewater systems. For WAF to be able to improve its financial sustainability and to be more accountable to 
+regulatory bodies, government is tasked with tackling water and sewerage tariff reform, introducing and enforcing 
+liquid waste trade regulations, and reviewing regulations that affect municipal waste water management. 
+24. 
+Sector management and sustainable service delivery capacity will be improved through: (i) supporting 
+WAF with the implementation of a water demand management program, NRW reduction program7 and the National 
+Liquid Waste Trade Program; (ii) supporting the Department of Environment with the review of the environmental 
+regulatory framework for municipal wastewater treatment discharge as well as sludge treatment and disposal 
+practices and standards, and with monitoring and enforcement of these regulations; (iii) assisting the government and 
+WAF with completing the corporatization of WAF, including transfer of assets, governance arrangements, greater 
+financial sustainability and the retention of revenue within WAF; (iv) assisting the Ministry of Local Government, 
+Housing and Environment and WAF with formulating water safety plans to protect the quantity and quality of the water 
+at the intakes for all the water sources in the project area (this should consist of developing land use plans and 
+ensuring required protective measures are in place for all water source locations); (v) reviewing policies used by WAF 
+in financial reporting and supporting the implementation of changes to WAF accounting policies and financial 
+management, including the provision of accounting training; (vi) supporting the promotion of gender equity within WAF 
+business practices; and (vii) carrying a study on options long terms alternatives to reduce energy consumption of the 
+GSA wastewater treatment system. 
+25. 
+Non-Revenue Water. ADB has been supporting WAF to reduce NRW since 2007. The project will finance an 
+international NRW specialist and an international water demand management specialist (see their TORs in Project 
+Appraisal Link Document 1: Project Administration Manual).  In addition to the support to be provided by the project, 
+ADB is financing twining arrangements between WAF and Hunter Water and WAF and Sydney Water to provide 
+advice in NRW and water demand management.  NRW is a priority for WAF who is also receiving training and 
+technical assistance from the Government of Japan and from the Government of New Zealand.  Supporting 
+Document 14 - WAF Non Revenue Water Reduction Strategy and on-going Technical Assistance on NRW and Water 
+Demand Management provides further details of WAF strategy to reduce NRW and its high priority within WAF.    
+26. 
+Water and Sewage Tariff Review.  A water and sewerage tariff review has been recommended by ADB to 
+support water demand management efforts and to improve the financial sustainability of WAF. Such review is 
+currently being undertaken by Government who has requested KPMG to revise a tariff review study that was carried 
+out in 2012.  In addition, the Pacific Regional Investment Facility has financed a tariff review study which is now on-
+going.  The result of these two studies will be the basis for WAF to submit a proposal to its Board..  Supporting 
+Document 15 – Water and Sewage Tariff Review Studies and Government Commitment to Tariff Review includes a 
+copy of the Memorandum of Understanding signed between ADB and the Government of Fiji committing “WAF to 
+complete by December 2015 the water and wastewater tariff review study that will allow WAF to recover its 
+operational cost and maintenance (O&M) and asset depreciation. Based on this tariff study, the government to commit 
+by December 2016 to approve a tariff increase to allow WAF to recover its O&M cost, and/or to subsidize O&M and
+
+=== PAGE 13 ===
+DETAILED PROJECT / PROGRAMME DESCRIPTION 
+ 
+GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 9 OF 48 
+ 
+ 
+C 
+C 
+C 
+C 
+C 
+capital budget necessary for WAF to implement any social and community obligations agreed to with government for 
+access to services by vulnerable groups, particularly in informal settlements.”  The Supporting Document also 
+includes a summary of on-going initiatives and action plan,  the TORs of the tariff review financed by the Pacific 
+Infrastructure Regional Facility, and  the tariff review undertaken by KPMG in 2012.   
+27. 
+In addition to the support provided under the project, which includes an international State Own Enterprise 
+reforms expert and an international financial management expert, ADB is providing financial assistance to WAF to 
+undertake an independent review of its service quality, efficiency in planning and execution of investments, operating 
+efficiency, business management efficiency, financial sustainability, access to service and corporate governance.  The 
+assessment will be carried out using Aquarating which is a methodology developed by the International Water 
+Association with financing by the Inter-American Development Bank.  The results are audited by international team of 
+experts which provide a report with detailed recommendations to improve processes. Supporting Document 16 – 
+Aquarating Assessment includes a copy of the Memorandum of Understanding between ADB and the International 
+Water Association to support WAF to undertake this assessment and a description of Aquarating Methodology. 
+C.4.  Background Information on Project Sponsor 
+28. 
+The Asian Development Bank (ADB) has been working with the Government of Fiji since 1970. As of 31 
+December 2014, $417.26 million in loans and $30.72 million in technical assistance have been provided to the 
+country. National elections—held on 17 September 2014 and endorsed by an observer group of 14 nations as a 
+“credible reflection of the will of the Fijian people”—have resulted in Fiji’s full re-engagement with the international 
+community. ADB and the government have since formulated a new country partnership strategy (CPS), 2014–2018. 
+The CPS provides the foundation for higher, more inclusive growth, and assists Fiji in achieving its Millennium 
+Development Goals. Consistent with the priorities of successive governments, ADB engagement in Fiji has focused 
+on promoting inclusive economic growth and poverty reduction. Strides have been made toward these goals through 
+direct investments in transport and urban water and sanitation infrastructure, and improved public sector 
+management. 
+29. 
+ADB road transport investments in Fiji over a 20-year period have helped disadvantaged groups participate in 
+the cash economy by reducing transport costs and traveling times. This has increased access to employment 
+opportunities and social services. An improved transport system in Fiji has helped to bolster market efficiencies, and 
+to broaden access to education, health, and business services.  
+30. 
+In 2005, ADB commenced its Water Supply and Sewerage Project concentrated in the Suva–Nausori 
+corridor. This has delivered improved water supply to about 150,000 people, representing almost half the population 
+living in the project area. Supplementary financing to complete the roads and urban water and sanitation projects was 
+provided in 2009. ADB also provided emergency assistance in 2009 and 2012 to help meet humanitarian and relief 
+expenses following devastating floods in the Western Division. This allowed the retroactive financing of unforeseen 
+government spending, and improved the government’s fiscal position.  
+31. 
+In December 2014, ADB built on its commitment to infrastructure development through the approval of a $100 
+million investment in the transport sector. This project, which will receive additional cofinancing from the World Bank, 
+will upgrade and rehabilitate roads, wharves, and jetties in line with priorities identified in the Government’s draft 20-
+year National Transport Sector Plan. ADB has also provided technical assistance to support the reform of state-
+owned enterprises in Fiji, to develop the national 20-year transport strategy, and to formulate an urban water and 
+sanitation master plan. Fiji also continues to participate in ADB technical assistance projects in the region, covering 
+areas such as climate change, public sector management, information and communication technology, and trade 
+facilitation.  
+32. 
+ADB’s presence in Fiji has been enhanced by the location of its Pacific Subregional Office in Suva, strong 
+coordination and harmonization with other development partners, and significant analytical work—including an 
+ongoing country diagnostic study and a private sector assessment—on behalf of the country. 
+33. 
+The Ministry of Finance (MOF) will be the executing agency for the project. MOF has extensive experience as 
+executing agency for infrastructure projects and has been executing agency for the following ADB’s financed projects:  
+Transport Infrastructure Investment Sector Project, approved in Dec 2014; Fiji Roads Upgrading Project III 
+(Supplementary) approved in Mar 2009; Suva-Nausori Water Supply and Sewerage Project (Supplementary) 
+approved in Dec 2009; Suva-Nausori Water Supply and Sewerage Project approved in Dec 2003; and Fiji Roads
+
+=== PAGE 14 ===
+DETAILED PROJECT / PROGRAMME DESCRIPTION 
+ 
+GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 10 OF 48 
+ 
+ 
+C 
+C 
+C 
+C 
+C 
+Upgrading Project approved in Nov 2005.   
+34. 
+The main tasks of the MOF are to cause WAF to implement the project as agreed in the project documents, 
+submit withdrawal applications to ADB and disbursement requests to EIB, and to submit required annual audit reports 
+and financial statements of project account to ADB and EIB. MOF will also coordinate appropriate government 
+representation for loan negotiations, loan signing, and loan effectiveness and will chair the Project Coordination 
+Comittee. The role of the MOF and overall project implementation structure is described in Appraisal Report, Link 1: 
+Project Administration Manual. 
+35. 
+The Water Authority of Fiji is the Implementing agency for the project. A risk assessment of WAF was 
+undertaken and included in the project appraisal report, Link 8: Risk Assessment. Specific measures have been built 
+within the project to mitigate the risks identified, including financing consulting services to strengthened WAF financial 
+management and procurement processes among others.   
+C.5. Market Overview (if applicable)  Not Applicable 
+Not applicable 
+C.6. Regulation, Taxation and Insurance 
+36. 
+To carry out the project activities, WAF will be required to obtain the necessary operating and environmental 
+licenses and permits required to comply with Fiji policies and regulations as well as with ADB guidelines on 
+environmental and social safeguards.  
+37. 
+The government will finance all taxes and duties for the project – no exchange regulations are applicable. 
+38. 
+Firms contracted by WAF will be required to have the necessary insurances. The Government has agreed to 
+follow ADB Procurement Guidelines.  ADB standard contract templates will be used for the contracting of goods and 
+services. 
+C.7.  Institutional / Implementation Arrangements 
+39. 
+The key organizations involved in the project include the Ministry of Finance (MOF) that will represent Fiji 
+as the Client and within ADB terminology is considered the executing agency. WAF will be the agency 
+responsible for the day-to-day implementation of the project and under ADB terminology is considered the 
+Implementing Agency. The project management unit (PMU) will be established within WAF. ADB as the 
+accredited entity will monitor project implementation activities. 
+40. 
+A Project Steering Committee will be established and chaired by MOF. Members of the Project Steering 
+Committee will include Ministry of Foreign Affairs (MOFA) as the National Designated Authority for the GCF; the 
+Ministry of Infrastructure and Transport (MOIT); the Ministry of Local Government, Housing and Environment 
+(MLGHE), the Ministry of Lands and Mineral Resources (MLMR), the iTaukei Land Trust Board (TLTB) and WAF. 
+Details of the implementation organizations’ key roles and responsibilities are indicated in the table and figure 
+below:
+
+=== PAGE 15 ===
+DETAILED PROJECT / PROGRAMME DESCRIPTION 
+ 
+GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 11 OF 48 
+ 
+ 
+C 
+C 
+C 
+C 
+C 
+Project implementation 
+organizations 
+Management Roles and Responsibilities 
+ 
+MOF 
+ Client and Executing Agency (as per ADB terminology) 
+ Cause WAF to implement the project 
+ Submit withdrawal applications to ADB 
+ Submit required annual audit reports and financial statements of 
+project account to ADB 
+ Coordinate appropriate government representation for project 
+negotiations, project signing, and project effectiveness 
+ 
+Project steering committee (PSC) 
+ The PSC will include representatives from MOF (chair); MOFA, WAF; 
+MOIT, MLGHE, MLMR, TLTB.  
+ Oversee implementation of the project and its consistency with 
+national government policies (Green Growth Framework, Roadmap to 
+Democracy and Sustainable Socioeconomic Development, Public 
+Sector Investment Program, Updated National Infrastructure Policies 
+and Plan) 
+ Monitor project progress and cooperatively resolve issues hindering 
+progress 
+ Guide the executing and implementing agencies 
+ 
+ 
+WAF 
+ Implementing agency (as per  ADB terminology) – tasked with the 
+delivery of the project outputs. 
+ Assist MOF in recruitment of project management and design and 
+supervision consultants in accordance with Guidelines on Use of 
+Consultants by ADB and its Clients 
+ Establish a Project Management Unit which will be responsible for 
+day to day implementation of the project 
+ Prepare overall implementation plan and annual budgets 
+ Supervise project management and design and supervision 
+consultants 
+ Oversee detailed design of subprojects 
+ Ensure timely bidding and award of civil works contracts in 
+accordance with ADB Procurement Guidelines 
+ Safeguards implementation and monitoring 
+ Monitoring and evaluation of project performance in accordance with 
+project design and monitoring framework 
+ Review of withdrawal applications before submission to executing 
+agency 
+ 
+ADB 
+ Project financier and overall project administrator of the project on 
+behalf of GCF  
+ Lead on conducting regular joint project reviews 
+ Monitor and support project implementation and compliance with ADB 
+policies and procedures in relation to technical, economic, financial, 
+procurement, safeguards, governance, and anticorruption policies 
+and procedures 
+ Overall coordination and advisory support
+
+=== PAGE 16 ===
+DETAILED PROJECT / PROGRAMME DESCRIPTION 
+ 
+GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 12 OF 48 
+ 
+ 
+C 
+C 
+C 
+C 
+C 
+Project Organization Structure 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+41. 
+The Loan proceeds including ADB administered co-financier funds will be disbursed in accordance with 
+ADB’s Loan Disbursement Handbook (2007, as amended from time to time), and detailed arrangements agreed upon 
+between the Government and ADB. Pursuant to ADB's Safeguard Policy Statement (2009) (SPS),8 ADB funds may 
+not be applied to the activities described on the ADB Prohibited Investment Activities List set forth at Appendix 5 of 
+the SPS. All financial institutions will ensure that their investments are in compliance with applicable national laws and 
+regulations and will apply the prohibited investment activities list (Appendix 5) to subprojects financed by ADB. 
+42. 
+In addition, a financial management assessment was conducted for WAF as the IA and the MOF in its 
+capacity of EA. No major country level financial management issues are apparent, since Fiji has a well-developed and 
+functioning public sector. However, due to the recent nature of the restoration of democracy, overall inherent risk has 
+been assessed as moderate. The overall control risk has been assessed as significant due to: (i) lack of financial 
+autonomy of IA; (ii) audit issues arising from the external audit of the IA; and (iii) weak information systems and 
+reporting issues of the IA. The project will address the control risk associated with the IA through long term financial 
+management capacity building of WAF. The project will also support WAF to complete its corporatization, including 
+                                                             
+8 Available at: http://www.adb.org/Documents/Policies/Safeguards/Safeguard-Policy-Statement-June2009.pdf 
+Works Delivery Unit  
+Capacity Building Unit 
+Finance and Administration 
+Unit 
+ADB/EIB/GCF 
+Government of Fiji 
+Ministry of Finance and Strategic Planning 
+(Executing Agency) 
+Project Steering 
+Committee 
+(MFSP; WAF; MOFA; 
+MOIT; MLGHE; MLMR; 
+TLTB) 
+Water Authority of Fiji 
+(Implementing Agency) 
+Project Management Unit 
+Design Build & Operate 
+Consulting firm 
+Technical Assistance 
+Consultants 
+Project Management 
+Consultants
+
+=== PAGE 17 ===
+DETAILED PROJECT / PROGRAMME DESCRIPTION 
+ 
+GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 13 OF 48 
+ 
+ 
+C 
+C 
+C 
+C 
+C 
+achieving financial autonomy. In addition, the capacity of WAF’s financing and accounting staff will be strengthened 
+through training programs conducted under the project and the placement of an accountant within the PMU. WAF has 
+adequate capacity for procuring goods, works, and consulting services in accordance with ADB procedures and 
+requirements. The PMU will have one procurement officer and will be supported by consultants in bid preparation and 
+evaluation, particularly for the complex design–build contracts. 
+43. 
+Before the submission of the first withdrawal application, MOF will submit to ADB sufficient evidence of the 
+authority of the person(s) who will sign the withdrawal applications on behalf of the borrower, together with the 
+authenticated specimen signatures of each authorized person.  Withdrawal applications and supporting documents 
+will demonstrate, among other things that the goods, and/or services were produced in or from ADB members, and 
+are eligible for ADB financing. All disbursements under government financing will be carried out in accordance with 
+regulations of the government and prevailing ADB guidelines. The WAF will maintain separate project accounts and 
+records by funding source for all expenditures incurred on the project. Project accounts will follow international 
+accounting principles and practices or the national equivalent, acceptable to ADB9. 
+44. 
+WAF will (i) prepare the annual financial statements for the project, in accordance with accounting principles 
+acceptable to ADB; (ii) have such financial statements audited annually by independent auditors whose qualifications, 
+experience, and terms of reference are acceptable to ADB, in accordance with international standards for auditing or 
+the national equivalent acceptable to ADB10; and (iii) furnish to ADB, not later than 6 months after the end of each 
+related fiscal year, copies of the audited financial statements, audit report and management letter, all in the English 
+language, and other information concerning these documents and the audit thereof as ADB shall from time to time 
+reasonably request. 
+45. 
+Public disclosure of the project financial statements, including the audit report on the project financial 
+statements, will be guided by ADB’s Public Communications Policy (2011).11 After review, ADB will disclose the 
+annual audited financial statements for the project and the opinion of the auditors on the financial statements within 
+30 days of the date of their receipt, by posting them on ADB’s website. The audit management letter will not be 
+disclosed. 
+46. 
+All advance contracting and retroactive financing will be undertaken in conformity with ADB’s Procurement 
+Guidelines (February 2007, as amended from time to time) (ADB’s Procurement Guidelines)12 and ADB’s Guidelines 
+on the Use of Consultants (2007, as amended from time to time) (ADB’s Guidelines on the Use of Consultants).13 The 
+issuance of invitations to bid under advance contracting and retroactive financing will be subject to ADB approval. The 
+borrower, MOF and WAF have been advised that approval of advance contracting and retroactive financing does not 
+commit ADB to finance the Project.  Information on all procurement notices and contract awards financed under the 
+project will be made public in ADB website. 
+47. 
+MOF will provide ADB with (i) quarterly progress reports in a format consistent with ADB's project 
+performance reporting system; (ii) consolidated annual reports including: (a) progress achieved by output as 
+measured through the indicator's performance targets, (b) key implementation issues and solutions; (c) updated 
+procurement plan; and (d) updated implementation plan for next 12 months; and (iii) a project completion report within 
+6 months of physical completion of the Project.14 To ensure projects continue to be both viable and sustainable, 
+project accounts and the executing agency audited financial statements, together with the associated auditor's report, 
+should be adequately reviewed. 
+                                                             
+9 WAF follows the International Financial Reporting Standards.   
+10 OAG follows the International Standards on Auditing. 
+11 Available at: http://www.adb.org/documents/pcp-2011. 
+12  Available at: http://www.adb.org/Documents/Guidelines/Procurement/Guidelines-Procurement.pdf 
+13  Available at: http://www.adb.org/Documents/Guidelines/Consulting/Guidelines-Consultants.pdf 
+14 Project completion report format is available at: http://www.adb.org/Consulting/consultants-toolkits/PCR-Public-
+Sector-Landscape.rar
+
+=== PAGE 18 ===
+DETAILED PROJECT / PROGRAMME DESCRIPTION 
+ 
+GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 14 OF 48 
+ 
+ 
+C 
+C 
+C 
+C 
+C 
+48. 
+ADB will undertake 2 project reviews a year to (i) discuss progress of project implementation activities, 
+compliance with covenants and project agreements, (ii) monitor progress in achieving project outputs; and (iii) agree 
+on any required changes to the project implementation arrangements. A mid-term review will be undertaken within 3 
+years of project being effective or at any time that ADB and Government consider it necessary. The midterm review 
+mission will carry out: (i) a review of institutional, administrative, organizational, technical, environmental, social, 
+economic, and financial aspects of the project based on the assumptions and risks included in the design and 
+monitoring framework and updated project performance reports; (ii) a review of covenants to assess whether they are 
+still relevant or need to be changed, or waived due to changing circumstances; (iii) an assessment of need to 
+restructure or reformulate the project and the effects of this on the immediate objectives (purpose) and long-term 
+goals of the project; and (iv) an updating of the project’s design and monitoring framework where restructuring or 
+reformulation is necessary or its immediate objectives will change. ADB will also carry out a Project Completion 
+Report after approximately one year after physical completion of the project.  The Independent Evaluation Department 
+will review the findings of the Project Completion Report.  Both reports will be made publicly available.    
+49. 
+The key contractual agreements under the project will be procured in full compliance with the ADB 
+Procurement Guidelines (April 2015, as amended from time to time), and the conditions of contract shall be the 
+Conditions of Contract for Construction for Building and Engineering Works Designed by the Employer, Multilateral 
+Development Bank Harmonized Edition, prepared by the Fédération Internationale des Ingénieurs-Conseil, or FIDIC 
+(FIDIC MDB Harmonized Construction Contract) available at  FIDIC MDB June 2010. Two construction packages will 
+follow the FIDIC Conditions of Contract for Design, Build and Operate Projects, Edition 2008. 
+50. 
+Prior to construction contracts procurement, the project will finance consulting services to design each 
+construction package and provide support to WAF to supervise the construction works and do the construction 
+contract management. During the construction contractual implementation, the consultancy firm recruited will provide 
+the day to day construction works supervision, to ensure compliance with the quality and technical specification 
+requirements, compliance with all relevant administrative regulation, monitor works progress to ensure construction 
+implementation within the projected time frame, and record all works completed in compliance with the Bill of 
+Quantities under the contract. Upon works completion, the supervision consultant will perform all the required 
+technical tests necessary to declare the acceptance of the works and will establish all the monthly progress 
+certificates to be approved by WAF for issuance of Progress Claims by the contractor and related payment by WAF. 
+The contractor will produce weekly reports on progress of its Construction Environment Management Plan (CEMP) 
+implementation, and the supervision consultant will also produce monthly progress reports reflecting on contract 
+implementation status, works progress, financial disbursement and implementation time monitoring. When necessary, 
+the consultant will coordinate with WAF to prepare and issue all necessary Variation Order under the contract. 
+51. 
+All the works completed under the project will be transferred to WAF after the satisfactory commissioning 
+period and issuance of the Completion Certificate. The facilities will be operated by WAF in accordance with WAF 
+Standard Operation Procedures (SOP) to ensure adequate operation and maintenance, but will remain under the 
+contractor's warranty during the defect liability period. For the two works contracts that include operational period 
+under the construction contract, the contractor will perform the operation and maintenance duties of the constructed 
+facilities over the contractual operation period (5 years) and in compliance with the contractual requirements defined 
+by WAF and following the WAF SOP for operation and maintenance of treatment facilities. 
+52. 
+Regarding credit analysis and eligibility criteria, in accordance with the ADB Procurement Guidelines (April 
+2015, as amended from time to time), all contractors will be required to meet minimum average annual construction 
+turnover and minimum financial resources to ensure it has the capability and resources to effectively carry out the 
+contract as offered in the bid. Performance security shall be required from all contractors, based on the size and 
+complexity of each particular contract.
+
+=== PAGE 19 ===
+DETAILED PROJECT / PROGRAMME DESCRIPTION 
+ 
+GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 15 OF 48 
+ 
+ 
+C 
+C 
+C 
+C 
+C 
+C.8. Timetable of Project Implementation 
+Task 
+Q1 
+Q2 
+Q3 
+Q4 
+Q5 
+Q6 
+Q7 
+Q8 
+Q9 
+Q1
+0 
+Q1
+1 
+Q1
+2 
+Q1
+3 
+Q1
+4 
+Q1
+5 
+Q1
+6 
+Q1
+7 
+Q1
+8 
+Q1
+9 
+Q2
+0 
+Q2
+1 
+Q2
+2 
+Q2
+3 
+Q2
+4 
+Q2
+5 
+Q2
+6 
+Q2
+7 
+Q2
+8 
+1.Improved access 
+to reliable and safe 
+water supply in 
+GSA 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+1.1. Design-Build 
+and Operate Rewa 
+river new water 
+supply systems  
+ 
+ 
+D 
+D 
+T 
+T 
+B 
+B 
+B 
+B 
+B 
+B 
+O 
+O 
+O 
+O 
+O 
+O 
+O 
+O 
+O 
+O 
+O 
+O 
+O 
+O 
+O 
+O 
+1.2.  Reduce NRW 
+in GSA  
+ 
+ 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+2.Improved 
+wastewater 
+Management in 
+GSA 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+2.1 Increasing 
+WWT capacity of 
+Kinoya to 
+approximately 
+277,000 
+ 
+ 
+D 
+D 
+T 
+T 
+B 
+B 
+B 
+B 
+B 
+B 
+B 
+O 
+O 
+O 
+O 
+O 
+O 
+O 
+O 
+O 
+O 
+O 
+O 
+O 
+O 
+O 
+2.2 Upgrading 
+around 31 existing 
+wastewater 
+pumping stations 
+ 
+ 
+D 
+D 
+T 
+B 
+B 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+2.3 Replacing of 
+around 18km of 
+wastewater trunk 
+mains 
+ 
+ 
+D 
+D 
+T 
+B 
+B 
+B 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+2.4 Relining of 
+around 18km of 
+ 
+ 
+D 
+D 
+T 
+B 
+B 
+B
+
+=== PAGE 20 ===
+DETAILED PROJECT / PROGRAMME DESCRIPTION 
+ 
+GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 16 OF 48 
+ 
+ 
+C 
+C 
+C 
+C 
+C 
+wastewater trunk 
+mains 
+2.5 Sewer network 
+extension  
+ 
+ 
+D 
+D 
+ 
+ 
+ 
+ 
+ 
+ 
+T 
+T 
+B 
+B 
+B 
+B 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+3.Sector Capacity 
+Building  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+3.1 Water demand 
+management and 
+NRW reduction 
+ 
+ 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+3.2 Environmental 
+regulations for 
+municipal 
+discharge 
+ 
+ 
+X 
+X 
+X 
+X 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+3.3 National Trade 
+Waste Program 
+ 
+ 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+3.4 Corporatization 
+of WAF 
+ 
+ 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+3.5 Catchment 
+Protection Plans 
+ 
+ 
+ 
+X 
+X 
+X 
+X 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+3.6 Strengthening 
+WAF Financial 
+Management 
+Systems 
+ 
+ 
+X 
+X 
+X 
+X 
+X 
+ 
+ 
+ 
+X 
+ 
+ 
+ 
+X 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+3.7 Promotion of 
+gender equity 
+within WAF 
+business practices 
+ 
+ 
+X 
+ 
+ 
+ 
+X 
+ 
+ 
+ 
+X 
+ 
+ 
+ 
+X 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+3.8 WAF carries 
+out a study on 
+options and 
+alternatives to 
+reduce energy 
+consumption of the 
+GSA wastewater 
+treatment system 
+ 
+ 
+ 
+X 
+X 
+ 
+ 
+X
+
+=== PAGE 21 ===
+DETAILED PROJECT / PROGRAMME DESCRIPTION 
+ 
+GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 17 OF 48 
+ 
+ 
+C 
+C 
+C 
+C 
+C 
+ 
+4. Project 
+Management 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+4.1 Recruitment of 
+consultants 
+X 
+X 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+4.2 
+Implementation of 
+communication 
+and consultation 
+plan 
+ 
+ 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+4.3 
+Implementation of 
+Social and 
+Environmental 
+Management 
+Plans 
+ 
+ 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+4.4 Project 
+Supervision and 
+Monitoring 
+ 
+ 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+ 
+ 
+4.5 Financial 
+Closing and 
+Project Completion 
+Report 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+X 
+X 
+ 
+D = Detailed Design/Concept Design; T = Tendering of Works; B = Building of works; O = Operation period for DBO contracts
+
+=== PAGE 22 ===
+EXPECTED PERFORMANCE AGAINST INVESTMENT CRITERIA 
+ 
+GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 18 OF 48 
+ 
+ 
+ 
+F 
+F 
+D 
+                                                             
+15 Output 1is estimated at $102.92 million of which the GCF would finance $31.05 million.  See Cost Table 
+by Output in Supporting Document Integrated Financial Model (under tab PAM Cost Tables). 
+D.1. Value Added for GCF Involvement 
+53. 
+GCF involvement will provide approximately 30% of the financing required to deliver Output 1, which will 
+significantly increase water supply in the greater Suva area, the main metropolitan center of Fiji, and ensure that 
+Fiji’s water supply system is increasingly resilient to anticipated climate change impacts.15 
+54. 
+Critically, grant funding by GCF will allow Fiji, small island developing country, to undertake vital adaptation 
+measures without further increasing external debt. The Fiji Government is committed to reducing total debt from 
+49% to 45% of GDP. The Government is also committed to ensuring that external debt is capped at 30% of total 
+debt. Current debt levels potentially constrain Fiji’s ability to borrow for investments in water and sewerage. The 
+additional costs of adaptation and mitigation measures will substantially increase the cost of providing such 
+infrastructure.  While this investment will have a strong social, economic, and environmental return to Fiji, the 
+financial returns from such investments are limited.  Without grant funding from GCF, Fiji would potentially not be in 
+a position to be able to fund additional adaptation and mitigation costs, or could only do so by diverting constrained 
+resources from other development needs.  
+55. 
+GCF financing for the water supply component will finance adaptation measures for building a new water 
+intake by the Rewa River, a new pumping station, a new water treatment plant, a new clear water reservoir and a 
+pipeline to increase production by 30,000 m3 per day and supplement water supply for the GSA.  
+56. 
+GCF financing will cover the additional costs associated with moving the facility from 29 km to 49km from 
+the river mouth to avoid projected climate change impacts: (i) 19.6 km of DN750 mm transmission mains; (ii) 50% 
+of site access costs; (iii) costs of bringing electricity to the site and (iv) 50% of land acquisition and resettlement 
+costs. All other costs are assumed to be identical for both sites, including capital costs of the river intake, raw water 
+pumping station, WTP and balance reservoirs. These are not included as costs of adaptation. Please see cost 
+tables in the project administration manual (PAM, Link 1). The contingency costs associated to the GCF activities 
+are calculated to be 15% of the base cost to take into account the high risk of currency exchange and the difficulty 
+to arrive to accurate cost estimates in the Pacific due to high dependence on imports for materials and equipment, 
+need to recruit international experts and limited number of qualified contractors with experience in similar projects 
+in Fiji.    
+57. 
+The project will improve adaptive capacity and resilience of these activities through appropriate siting of the 
+intake higher up the river catchment, away from the projected salinity wedge moving up the river system due to 
+expected sea-level rise and lower river flows during pronounced droughts expected in future. In addition, by 
+constructing a new raw water intake at the Rewa River an additional water supply source will be established, which 
+will provide a more resilient water supply system that is not just dependent on the Waimanu River system, as it is 
+currently the case. While the water sources are still all reliant on surface water based systems, the Rewa River is a 
+much larger river system and any impact on stream flows associated with future climate change impacts are less 
+likely to impact extractions for urban water supply. The proposed Rewa water supply scheme will also be designed 
+to be upgradable to allow future flexibility for demand increases and/or changing supply source yields. In this 
+regard it is highlighted that during extended dry periods and based on historical performance and yield 
+assessments the Waimanu River is not capable of supplying the full 150 million liters/day (ML/d) calculated year 
+2013 demand during low flow periods. Therefore, it becomes clear that, until a new source is operational, 
+additional demand can actually only be covered by reductions in NRW.
+
+=== PAGE 23 ===
+EXPECTED PERFORMANCE AGAINST INVESTMENT CRITERIA 
+ 
+GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 19 OF 48 
+ 
+ 
+ 
+F 
+F 
+D 
+ 
+D.2. Exit Strategy 
+ 
+58. 
+Since becoming a statutory authority in 2010, WAF has been focusing on operational improvements to both 
+the supply of water and wastewater systems. Some key achievements have included improvement of water treatment 
+quality and the reduction of intermittent zones from 64 to 24 in the GSA. WAF however has yet to be fully corporatized 
+and key areas such as financial autonomy, human resources management, procurement process and role and 
+governance of the board need to be strengthened. The capacity building aspect of this project which looks to fully 
+corporatize WAF and give it financial viability is crucial for the ongoing success of this intervention.   
+59. 
+Currently the government provides an operation and maintenance budget for WAF– although there is a need 
+to strengthen WAF asset management strategies, WAF has the capacity to maintain and operate the assets financed 
+by the project.  Fiji’s 2015 budget, delivered in November 2014, prioritized water and sanitation, increasing funding for 
+WAF by almost $50 million to just over $120 million – equivalent to over 7% of total public spending. In addition, 
+government is committed to introducing the National Liquid Tradewaste Policy which will introduce fees based on 
+discharge volumes and pollution levels and to review the water and sewerage tariff for commercial customers and 
+domestic customers exceeding basic consumption levels.   
+60. 
+The use of design-build and operate contracts for the Rewa Water Treatment Plant and Kinoya Wastewater 
+Treatment Plant expansion aims at ensuring high quality design and construction of the assets and providing WAF a 
+period to build capacity to operate and maintain the assets in the long term.  
+61. 
+A detailed analysis of WAF financial capacity and sustainability of the project is included in Linked Document 1 
+(the Project Administration Manual, PAM) of the Project Appraisal Report.
+
+=== PAGE 24 ===
+EXPECTED PERFORMANCE AGAINST INVESTMENT CRITERIA 
+ 
+GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 20 OF 48 
+ 
+ 
+ 
+F 
+F E 
+E.1. Impact Potential 
+Potential of the project/programme to contribute to the achievement of the Fund’s objectives and result areas 
+E.1.1. Mitigation / adaptation impact potential 
+62. 
+Adaptation impact – Contribution to increased climate-resilient sustainable development: 
+- 
+Expected total number of direct and indirect beneficiaries: 
+o 
+290,854 people (projected population in service area in 2018) 
+- 
+Number of beneficiaries relative to total population: 
+o 
+32 % of Fiji Population 
+o 
+Of which 15 % are of the most vulnerable groups 
+- 
+Degree to which the activity avoids lock-in of long-lived, climate-vulnerable infrastructure: 
+o 
+16.6% of GSA water supply will be constructed in a climate-resilient way instead of locking in 
+alternative long-lived, climate-vulnerable infrastructure 
+- 
+Expected strengthening of adaptive capacity and reduced exposure to climate risks: 
+o 
+The new water source in Rewa river will allow WAF to serve areas (Korovou-Nausori corridor) that 
+are prone to severe drought and currently rely on on-site ground water sources.   
+o 
+The new water treatment plant in Rewa river will prevent future incidences by diversifying the source 
+of bulk water and increase resilience to flooding or other climate related events; as well as sea level 
+rise and associated salt water intrusion. 
+o 
+The capacity of WAF will be strengthened through development of catchment protection plans and 
+other institutional strengthening. 
+E.1.2. Key impact potential indicator 
+GCF 
+core 
+indicators 
+Expected tonnes of carbon dioxide equivalent (t 
+CO2 eq) to be reduced or avoided (Mitigation 
+only) 
+Annual 
+ 
+Lifetime 
+ 
+Expected total number of direct and indirect 
+beneficiaries (reduced vulnerability or increased 
+resilience); number of beneficiaries relative to 
+total population (adaptation only) 
+Total 
+290,854 
+Percentage 
+(%) 
+32% of Fiji Population 
+Other 
+relevant 
+indicators 
+ 
+See E.1.1. and Project Design and Monitoring Framework (Annex I of Project Appraisal 
+Report)
+
+=== PAGE 25 ===
+EXPECTED PERFORMANCE AGAINST INVESTMENT CRITERIA 
+ 
+GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 21 OF 48 
+ 
+ 
+ 
+F 
+F E 
+Methodology for adaptation impact indicators 
+63. 
+More resilient water supply system: The construction of a new intake at the Rewa River will lead to a 
+direct improvement of the complete existing water supply system in GSA, since the new system is foreseen to be 
+connected to the existing reticulation system. Current connection rates in GSA to the water supply system are some 
+95% and the project will allow 50,000 people to benefit from new connections. Therefore, 98% of the population will 
+benefit. The total number of beneficiaries was assumed to be equal to the projected population in the service area in 
+2022. 
+64. 
+Although the addition of the Rewa River offtake and WTP will result in a municipal water system for GSA that 
+is more resilient to the impacts of present and future climate variability, only the incremental cost of climate change 
+adaptation are included in the financial request to the GCF. 
+E.2. Paradigm Shift Potential 
+Degree to which the proposed activity can catalyze impact beyond a one-off project investment 
+E.2.1. Potential for scaling up and replication (Provide a numerical multiple and supporting rationale) 
+65. 
+It is critical that climate change mitigation and adaptation measures are integrated into WAF’s normal 
+operating procedures and in particular any new water and sewerage infrastructure investments. Successful and 
+measureable demonstration of these proposed climate investments in the GSA will have a genuine potential to drive 
+a social change initiative within WAF, government and relevant sector agencies to use this as a basis for future 
+strategic planning and decision-making in water and wastewater sector investments. Through this project, WAF will 
+acquire knowledge and experience in developing long-term investment strategies that integrate adaptation and 
+mitigation considerations. These practices can then be replicated in other urban centers around the country such as 
+Nadi, Lautoka and Lambasa by WAF. Fiji is at the forefront of the Pacific Island countries in experience in water and 
+wastewater management, and lessons can be shared at the Pacific Water Association, of which Fiji is an active 
+member. This will enhance the replication of the best practices in urban areas in the Pacific with similar geophysical 
+characteristics, economic fragility, limited technical capacities and climate vulnerabilities. 
+E.2.2. Potential for knowledge and learning 
+66. 
+The project will support WAF in better addressing key knowledge issues and gaps related to adaptation 
+which include inadequate integration of climate change adaptation and mitigation measures into urban water supply 
+and wastewater planning and investment strategies. The project emphasis in optimizing investments taking into 
+account longer term implications for operation and maintenance is expected to change WAF’s approach and learn by 
+doing.  In addition, it will provide the appropriate mechanisms to address the difficult issue of measuring, reporting, 
+and verifying actions related to adaptation and mitigation, such as technology transfer and capacity building. It will 
+more importantly address the lack of tools, guidelines, and document good practices and lessons learned, especially 
+those related to mainstreaming adaptation and mitigation into national and sector policies, planning processes, and 
+regulations in order to change the status quo.  
+67. 
+The Appendix 1 of the Project Appraisal Report contains a design and monitoring framework with 
+performance targets and indicators as well as a clear indication of potential data sources and clear responsibilities for 
+reporting.
+
+=== PAGE 26 ===
+EXPECTED PERFORMANCE AGAINST INVESTMENT CRITERIA 
+ 
+GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 22 OF 48 
+ 
+ 
+ 
+F 
+F E 
+E.2.4. Contribution to regulatory framework and policies 
+70. 
+Fiji is presently embarking on a strategic long-term development plan for low carbon emission and climate 
+resilient development. In the absence of such a strategic development plan, the implementation of the proposed 
+project will support Fiji’s Green Growth Framework (2014) in achieving its overall objective of supporting and 
+complementing actions which contribute to development that is sustainable for “A Better Fiji for All”. The project in this 
+context will be fundamental to advancing the national legal and regulatory framework to systematically promote 
+investment in low-emission and climate resilient development through addressing the environment pillar of building 
+resilience to climate change and disasters, waste management and the social pillar of freshwater resources and 
+sanitation management. In doing so, this will promote integrated and inclusive sustainable development, strengthen 
+environmental resilience, drive social improvement and reduce poverty enhancing economic growth and also building 
+necessary capacity to withstand and manage adverse effects of climate change. 
+71. 
+Current policies, strategies and plans that will guide this activity in meeting low-emission and climate resilient 
+development and achieving the objective of the Green Growth Framework: 
+1. Developed/Existing 
+- National Climate Change Policy 2012 
+- National Disaster Management Act 1998 
+- Clean Development Mechanism Policy Guidelines 2012 
+2. Under Development/Draft 
+- National Climate Change Adaptation Strategy (NCCAS) 
+- Nationally Appropriate Mitigation Action (NAMA) 
+- Intended Nationally Determined Contribution (INDC) 
+- Energy Policy 
+- Energy Strategic Action Plan 
+3. Yet to be developed – It must be highlighted that Fiji is committed to the development of the following to 
+enhance resilience;  
+- Climate Change Act 
+- National Adaptation Plan 
+ 
+E.2.3. Contribution to the creation of an enabling environment 
+68. 
+For adaptation, proposed project investments will demonstrate how long term planning through appropriate 
+siting of the water supply investment at a distance up the Rewa river catchment can ensure sustainability in light of 
+expected salinity migration due to potential sea level rise. In addition it can demonstrate climate resiliency in 
+diversifying water supply through the provision of a second source of bulk water to address current shortfalls in the 
+GSA brought on from employing only one river system as opposed to two. 
+69. 
+The project will introduce to WAF the use of Design, Build and Operate contracts for major infrastructural 
+investments..  One of the objectives of opting for this type of contract is to ensure that the O&M cost is factored in the 
+proposed technology which should encourage the use of more energy efficient technologies. Combined these 
+proposed initiatives will create conditions conducive to low carbon development through offering capacity building 
+and staged incentives to the private and public sector to change from conventional designs and their present reliance 
+on inefficient conventional methods to implement more efficient energy solutions. This will be integral to mitigating 
+GHG emissions, providing the technical assistance is made available to improve project performance, enable local 
+maintenance of new technologies, and to disseminate good practices and lessons.
+
+=== PAGE 27 ===
+EXPECTED PERFORMANCE AGAINST INVESTMENT CRITERIA 
+ 
+GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 23 OF 48 
+ 
+ 
+ 
+F 
+F E 
+E.3. Sustainable Development Potential 
+Wider benefits and priorities 
+E.3.1. Environmental, social and economic co-benefits, including gender-sensitive development impact 
+72. 
+Key poverty and social issues. Rural poverty has risen across the main ethnic groups of indigenous 
+iTaukei and Indo-Fijians, now standing at 44% (2013), leading to a steady migration to urban areas. The Suva 
+Greater Area (GSA) contains 50% of the urban population of Fiji and is the fastest growing urban area with the 
+urban growth rate of over 2% in the GSA, (with Nausori being 2.7%) against the national urban rate of 1.5%. In 
+addition, the area has a high susceptibility to climate change, the type and scale of the works required to upgrade 
+the water supply and sewerage network are more technically challenging than for other networks. With 49% of the 
+population living in rural areas, the rural–urban gap is widening, associated mainly with lack of income-earning 
+opportunities, poor access to services, and isolation. Overall, 22% of people still rely on subsistence agriculture for 
+their livelihoods and many more combine growing food for home consumption with cash sales of surplus produce. 
+The extra produce is mostly brought by the women to Suva for sale. In the GSA, where subproject sites were 
+studied, a large number of informal settlements have come up with little access to clean water or sewage.  
+73. 
+Beneficiaries. Primary project beneficiaries are people living in the GSA and peri-urban areas—(i) 
+squatter colonies will benefit from  a regular supply of clean and adequate water for their daily needs and 
+reduction of time spent in collecting and storing water , (ii) women will be freed from drudgery to avail of economic 
+activities (iii)  connection to piped sewers will  result in better living conditions, cleaner environment and costs 
+saved of having septic tanks cleaned at regular intervals (iv) there will be a reduction of water borne diseases 
+leading to reduced  costs due to less  expenditure on health. Specifically, beneficiaries will have a better quality of 
+life  
+3. Impact channels. The main channel for impacts on the poor and vulnerable is through better access to basic 
+human necessities such as clean water and sanitation, clean environment, economic opportunities such as jobs 
+openings during project implementation and through maintaining the expanded infrastructure.  
+74. 
+Design features. The project will prioritize rehabilitation, replacement, and construction of infrastructure 
+based on agreed criteria of need of the urban and peri-urban population to efficient and adequate supply of water 
+and sanitation services. It will help reduce poverty by building/replacing old, leaking pipes with new, bigger pipes, 
+both for waste water treatment and providing additional sewer pipes for new connections. The project aims to 
+provide better and more effective delivery of services by improving water and sanitation infrastructure, and by 
+strengthening project management capacity in planning, executing  implementing the project and incorporating 
+gender mainstreaming in every aspect of the project design, during  implementation, monitoring  and  evaluation.  . 
+Poorly built septic tanks and pit latrines over flow during heavy rainy season and are a main source of pollution of 
+creeks and rivers and major threat to health, particularly in informal settlements which lack suitable drainage or 
+concrete paths for pedestrians. 
+75. 
+See Annex I of the Project Appraisal Report for the Design and Monitoring Framework, including 
+expected benefits and target indicators.  For detailed discussion of project benefits, see Economic Analysis and 
+the Summary Poverty Assessment included as a Link documents to the Project Appraisal Report or RRP.
+
+=== PAGE 28 ===
+EXPECTED PERFORMANCE AGAINST INVESTMENT CRITERIA 
+ 
+GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 24 OF 48 
+ 
+ 
+ 
+F 
+F E 
+E.4. Needs of the Recipient 
+Vulnerability and financing needs of the beneficiary country and population 
+E.4.1. Vulnerability of country and beneficiary groups (Adaptation only) 
+76. 
+The GermanWatch (Kreft & Ecstein, 2013)16 released the Climate Risk Index (CRI) for 2012 citing Fiji as 
+fifth of the top ten countries with high CRI, with their averaged and weighted ranking CRI score. The risk indicators 
+used in the analyses are: death toll, deaths per 100,000 inhabitants, absolute losses in millions US $ PPP and 
+losses in GDP (%). The Human Development Index (HDI)17 is included for purpose of comparing the level of 
+development across countries. The HDI is also a measure of adaptive capacity. The results are presented in the 
+table below. Using the same indicators but averaged over the period 1993 to 2012, the overall ranking of Fiji as 
+countries most at risk to climate and weather events is 27, with a total CRI score of 43.5.  
+Table: The GermanWatch Climate Risk Index for 2012 
+Ranking 
+2012 
+(2011) 
+Country 
+CRI 
+score 
+Death 
+toll 
+Deaths per 
+100,000 
+inhabitants 
+Absolute losses 
+(millions $ PPP) 
+Losses 
+in GDP 
+(%) 
+Human 
+Development 
+Index 
+1 (37)  
+Haiti  
+6.83  
+128  
+1.23  
+1220.66  
+9.53  
+161  
+2 (4)  
+Philippines  
+10.33  
+1408  
+1.47  
+1205.48  
+0.29  
+114  
+3 (3)  
+Pakistan  
+12.67  
+662  
+0.37  
+6087.82  
+1.11  
+146  
+4 (22)  
+Madagascar  
+15.67  
+113  
+0.50  
+356.98  
+1.69  
+151  
+5 (131)  
+Fiji  
+17.00  
+17  
+1.89  
+135.55  
+3.18  
+96  
+6 (36)  
+Serbia  
+17.67  
+28  
+0.39  
+1325.06  
+1.70  
+64  
+7 (131)  
+Samoa  
+18.33  
+6  
+3.28  
+220.91  
+19.57  
+96  
+8 (49)  
+Bosnia and 
+Herzegovina  
+21.67  
+13  
+0.33  
+920.21  
+2.92  
+81  
+9 (95)  
+Russia  
+22.17  
+716  
+0.50  
+1365.20  
+0.05  
+55  
+10 (29)  
+Nigeria  
+22.33  
+405  
+0.25  
+837.45  
+0.19  
+153  
+77. 
+Fiji’s mean sea level is projected to continue to rise over the course of the 21st century. Global models 
+simulate a rise of between approximately 5-15cm by 2030, with increase of 20- 60cm indicated by 2090 under the 
+high emissions scenarios 18. Ocean acidification is expected to continue, and the risk of coral bleaching will 
+increase in the future. By destroying natural coastal barriers, these changes will increase the country’s exposure to 
+disasters brought about by such climatic events as tropical cyclones and storm surges. Tropical cyclones are one 
+of the most severe extreme events to affect Fiji on numerous occasions in the past four decades. They usually 
+                                                             
+16 Kreft, S. and Eckstein D., 2013: Briefing Paper, Global Climate Risk Index 2014: “Who Suffers Most from Extreme 
+Weather Events? Weather-Related Loss Events in 2012 and 1993 to 2012”.GermanWatch. 
+17 HDI is a composite index that uses 4 indicators to represent the level of development: Life expectancy, Income, per 
+capita GDP and average number of years schooling. The lower the HDI is, the higher is the development of the 
+country. (Source:http://hdr.undp.org/en/content/table-1-human-development-index-and-its-components) 
+18 Pacific Climate Change Science Program, Climate Change in the Pacific: Scientific Assessment and New Research, 
+Volume 2: Country Report.
+
+=== PAGE 29 ===
+EXPECTED PERFORMANCE AGAINST INVESTMENT CRITERIA 
+ 
+GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 25 OF 48 
+ 
+ 
+ 
+F 
+F E 
+affect Fiji from November to April but have occurred in October and May. On average, one or two cyclones affect 
+some part of Fiji every season, with the greatest risk during the El Nino season. Major droughts in Fiji have been 
+associated with El Nino events, the annual rainfall is reduced by as much as 20-50% over most parts of Fiji, as 
+experienced during the 1982/83, 1986/87, 1992/93 and 1997/98.  
+78. 
+Large-scale flooding in Fiji is mostly associated with prolonged heavy rainfall during the passage of a 
+tropical cyclone, tropical depression and/or enhanced, slow moving convergence zone. Localised flash flooding 
+during the wet season (November to April) is quite common19. The intensity and frequency of days of extreme 
+rainfall are projected to increase over the course of the 21st century. Past flooding events in Fiji have resulted in 
+water contamination, overflow of dams, damages to water supply infrastructure and disruptions in water treatment 
+and distribution.  
+79. 
+The Pacific-Australia Climate Change Science and Adaptation Planning Program20 (PACCSAP) reports 
+reflect the results of Coupled Model Intercomparison Project (Phase 5) (CMIP5)-based global climate model 
+(GCM) projections for individual countries. The CMIP5 models and scenarios are the most recent and scientifically 
+credible model projections available, and they also provide the basis for the IPCC Fifth Assessment Report (2013), 
+Working Group I on Physical Science.  
+80. 
+Among key findings described in the PACCSAP report Chapter 5 on Fiji Islands, there is very high 
+confidence in the direction of long-term change in a number of key climate variables, specifically an increase in 
+mean and extremely high temperatures, sea level and ocean acidification. There is high confidence that the 
+frequency and intensity of extreme rainfall will increase. However, it is unclear whether average annual rainfall and 
+drought frequency will increase, decrease or remain similar to the current climate. With respect to El Niño and La 
+Niña, these events will continue to occur in the future (very high confidence), but there is little consensus on 
+whether these events will change in intensity or frequency, and there is no agreement on the direction of annual 
+average rainfall change in the models. In general, historical data is limited.  
+81. 
+Previous studies in Suva City, Lami Town and Nausori Town point to their physical vulnerability to natural 
+hazards, such as cyclones, coastal and riverine erosion, landslides, floods and projected mean sea level rise. This 
+vulnerability is largely linked to the physical geography of the GSA. Also, mangrove deforestation and coral reef 
+extraction in order to accommodate urban development and for reasons of income generation are increasing the 
+vulnerability of urban areas to coastal hazards. Both mangrove forests and coral reefs provide effective barriers 
+against storm surges and cyclones. Of particularly critical concern are the residents of informal settlements in 
+towns and cities as many such settlements are located in highly vulnerable areas, such as riverbanks and pockets 
+of coastal land. In 2007, it was estimated that upwards of 140,000 people (15% of Fiji population) were living in 200 
+informal settlements. The majority of these settlements are located along the Lami-Suva-Nausori corridor, Nadi-
+Lautoka-Ba corridor, and Labasa.21 
+82. 
+Fiji’s vulnerability to natural disasters comes at a big economic cost. Among the Pacific countries, Fiji tops 
+                                                             
+19 National Climate Change Policy 2012 
+20 Australian Bureau of Meteorology and CSIRO. 2014. Climate Variability, Extremes and Change in the Western 
+Tropical Pacific: New Science and Updated Country Reports. Melbourne 
+21 McKinnon. J, Whitehead, S. Chung, M. and Taylor, L. 2007. Report of the Informal Settlements Scoping Mission. 
+NZAID. Wellington
+
+=== PAGE 30 ===
+EXPECTED PERFORMANCE AGAINST INVESTMENT CRITERIA 
+ 
+GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 26 OF 48 
+ 
+ 
+ 
+F 
+F E 
+the highest damage and losses from natural disasters in the Pacific with a sum of $1.2 billion, a record for the last 
+30 years22. However, town planning schemes elaborated by the municipalities contain very limited consideration of 
+climate change or disaster risk management (UN-Habitat, 2012a)23. Due to projected increases in climate-related 
+hazards and extreme events, as well as the increased size and density of urban areas, such costs are likely to 
+increase unless municipalities consider climate change and disaster risk in urban planning and development 
+operations. In the case of the GSA, in Lami town alone, the risk of flooding is substantial24 . These include coastal 
+flooding from high waves in the Suva harbor, flash flooding from rivers, and surface flooding in low lying areas 
+during intense rainfall. Overall, disasters that occurred in Fiji from 1995 to 2012 are largely weather and climate 
+related events. Tropical cyclones-related disasters topped the frequency, list with floods coming as a poor second. 
+However, as mentioned earlier, tropical disturbances are the major cause of flooding in the GSA. We can simply 
+assume that floods, whether due to heavy rainfall events or tropical cyclone passage will be a major threat to the 
+GSA’s Urban Growth. 
+83. 
+Climate change can prevent Fiji from attaining its Millennium Development Goals and poses a particular 
+threat to infrastructure and water resources, which will inevitably result in economic losses, particularly critical in 
+the GSA which is estimated that accounts for 40% of Fiji GDP.25 Any increase in frequency and severity of floods, 
+drought, and saline water intrusion will jeopardize WAF capacity to provide safe water supply in the GSA and might 
+result in the more widespread and frequent occurrences of vector-borne diseases. Sea level rise increases the cost 
+of providing water and sewerage services in GSA through seawater intrusion into low lying coastal areas.  Higher 
+frequency of drought events would increase pressure in WAF to increase their services to peri-urban populations 
+currently relying in ground water. Flash flooding has damaged WAF critical infrastructure, with an event in 
+December 2013 that damaged the water intake of Waila water treatment plant, which resulted in intermittent water 
+supply for over one week in major areas of GSA. The project will provide an alternative source in a location less 
+prone to flush flooding and which takes into account longer term risk of salinity intrusion.  
+84. 
+As climate change continues to threaten people’s livelihoods, infrastructure and ecosystems, it is 
+imperative that proposed development investments develop, implement, replicate, and upscale adaptation and 
+mitigation strategies that are technically, financially and economically achievable. The project seeks to incorporate 
+climate proofing measures into the water and sewerage infrastructure, and to integrate climate change 
+considerations into national development plans and sector development plans. The adaptation measures proposed 
+for GCF financing intend to respond to the increased salt water intrusion due to sea-level rise and increased risk of 
+flooding due to increased frequency and intensity of extreme rainfall; and to increase the resilience of the "locked-
+in" investments in water supply systems to any future changes in rainfall variability and average rainfall. 
+ 
+ 
+                                                             
+22 Quoted from the Minister for Works and Transport TimociNatuva while speaking at the opening of the Fiji National 
+Platform for Disaster Risk Management and Climate Change conference in August 19, 2014. http://fijione.tv/  
+23 UN-Habitat, 2012a: Fiji’s National Urban Profile; ISBN Number (Series): 978-92-1-132023-7 
+24 Rao N.S., Carruthers T.J.B., Anderson P., Sivo L., Saxby T., Durbin, T., Jungblut V., Hills T., Chape S., 2013: An  
+economic analysis of ecosystem-based adaptation and engineering options for climate change adaptation in Lami 
+Town, Republic of the Fiji Islands. A technical report by the Secretariat of the Pacific Regional Environment 
+Programme. – Apia, Samoa : SPREP 2013, 62 pp. ; 978-982-04-0473-1 (print) 978-982-04-0474-8 (online)  
+25 Cities Development Initiative for Asia. 2012. Pre-Feasibility Study for GSA Sustainable Urban Transport Project. Volume 1. 
+Manila.
+
+=== PAGE 31 ===
+EXPECTED PERFORMANCE AGAINST INVESTMENT CRITERIA 
+ 
+GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 27 OF 48 
+ 
+ 
+ 
+F 
+F E 
+E.4.2. Financial, economic, social and institutional needs 
+85. 
+Although Fiji has achieved its Millennium Development Goal 7 targets for water supply and sanitation,26 
+piped water supply in some urban areas is still intermittent, with demand for new connections growing faster than 
+supply. The social dimensions of clean water and sanitation problems in the rapidly growing urban areas are 
+exceeding the government’s capacity to finance services. Fiji’s urban population of around 457,900 is equivalent to 
+53% of the total population. While poverty rates in Fiji are highest in rural areas, the rapid growth of peri-urban 
+squatter settlements27 means that the majority of poor people in Fiji live in and around urban areas.   
+86. 
+In the Greater Suva Area (GSA), the efficiency of urban infrastructure is adversely affected by low 
+population densities, which in some areas are due to low coverage of sewerage services as regulations for septic 
+tanks limit the land occupancy ratio. In middle income residential areas, provision of piped water supply and 
+sewerage might reduce urban sprawl and unlock potential for private investment in housing development and lower 
+the cost and efficiency of other urban infrastructure and services.28 With tourism becoming one of the key drivers of 
+growth, proper wastewater management and conservation of fresh water is key to ensuring environmentally 
+sustainable urban growth and subsequent economic growth.  
+87. 
+Water and other urban infrastructure have been identified as critical infrastructure for ongoing economic 
+development by the Fiji Government. The project will focus on the GSA where approximately 224,000 (30% of Fiji’s 
+population) live.29 GSA includes Suva City and Lami, Nausori, and Nasinu town councils with Nausori and Nasinu 
+being the fastest growing urban areas in GSA. Because of the size of GSA population and the geography of the 
+city, the type and scale of works required to upgrade the water supply and sewerage network is technically more 
+challenging than in other Fiji urban areas. Fiji’s 2015 budget, delivered in November 2014, prioritized water and 
+sanitation, increasing funding for this sector by almost $50 million to just over $120 million – equivalent to over 7% 
+of total public spending. Experience in urban water supply and sanitation and good knowledge of the implementing 
+agency was also considered when prioritizing water and sanitation as first investment in urban development sector 
+after re-engagement (the Asian Development Bank (ADB) engagement in the water and sanitation sector in Fiji 
+had been substantial, particularly through the $70 million Suva-Nausori Water Supply and Sewerage Project30 and 
+facilitated a utility twining partnership31 between Water Authority of Fiji (WAF) and Hunter Water Australia). After 
+                                                             
+26  By 2012 Fiji’s urban population with access to safe water rose to 100% and access to improved sanitation to 92% 
+(WHO and UNICEF. 2014. Progress on Drinking Water and Sanitation 2014 Update. WHO. Geneva) 
+27  In 2007, it was estimated that upwards of 140,000 people (15% of Fiji population) were living in 200 informal 
+settlements. The majority of these settlements are located along the Lami-Suva-Nausori corridor, Nadi-Lautoka-Ba 
+corridor, and Labasa (McKinnon. J, Whitehead, S. Chung, M. and Taylor, L. 2007. Report of the Informal Settlements 
+Scoping Mission. NZAID. Wellington). 
+28  Inclusive Urban Development in the GSA Prefeasibility Study RETA: 6293 – FIJI: Drainage & Flood Management 
+Project Final Report May 2012 
+29 World Bank and Fiji Bureau of Statistics. 2011. Republic of Fiji: Poverty Trends, Profiles and Small Area Estimation 
+(Poverty Maps) in Republic of Fiji (2003-2009). World Bank. Washington DC. 
+30  ADB. 2003. Report and Recommendation of the President to the Board of Directors: Proposed Loan to Fiji for Suva-
+Nausori Water Supply and Sanitation Project. Manila and ADB. 2009. Report and Recommendation of the President 
+to the Board of Directors: Proposed Loan to Fiji for Suva-Nausori Water Supply and Sanitation Project – 
+Supplementary. Manila. The project, which was completed in June 2014, expanded water supply and sewerage 
+services benefiting an estimated 250,000. 
+31  ADB. 2007.Technical Assistance for Knowledge and Innovation Support to ADB’s Water Financing Program  
+   (TA6498-REG). Manila.
+
+=== PAGE 32 ===
+EXPECTED PERFORMANCE AGAINST INVESTMENT CRITERIA 
+ 
+GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 28 OF 48 
+ 
+ 
+ 
+F 
+F E 
+assessment of the sector and government discussions, the Fiji Country Partnership Strategy 2014-2018 and the 
+Fiji Country Operations Business Plan 2015-2017 identified water and sanitation in urban centers as key areas for 
+ADB assistance.32  
+88. 
+WAF is a commercial statutory authority promulgated under the ambit of the Public Enterprise Act 1996. 
+WAF took over responsibilities, functions and operations previously carried out by the water and sewerage 
+department in January 2010. WAF manages both water and wastewater services across Fiji in accordance with the 
+functions and powers of the Promulgation reporting to the Ministry of Infrastructure and Transport (MoIT). Since 
+becoming a statutory authority in 2010, WAF has been focusing on operational improvements to both the supply of 
+water and wastewater systems. Some key achievements have included improvement of water treatment quality 
+and the reduction of intermittent water supply zones from 64 to 24 in the GSA. While established as a commercial 
+statutory authority, in practice WAF continues to operate through grants provided under the national government 
+budget, and revenues collected are paid into the consolidated fund. The tariff for water and sewerage services is 
+controlled directly by the Government, with no independent regulator involved. 
+89. 
+WAF however has yet to be fully corporatized and key areas such as financial autonomy, human 
+resources management, procurement process and role and governance of the board need to be strengthened.33 
+For WAF to be able to improve its financial sustainability and to be more accountable to regulatory bodies, 
+government is tasked with tackling water and sewerage tariff reform, introducing and enforcing liquid waste trade 
+regulations and reviewing regulations that affect municipal waste water management. Key support areas under the 
+project are to (i) implement the recently developed liquid trade waste policy to ensure processes at main 
+wastewater treatment plant are not affected by sludge from commercial and industrial customers; and (ii) lower 
+average water consumption of residential customers from the current 200 liters per day per person, translating to a 
+reduction in capital investment needed. WAF has signed a twinning program with Sydney Water to advise WAF on 
+a strategy on water demand management and trade waste, the project will provide support for its implementation. 
+MOF has formally requested technical assistance on financial management planning and tariff review from the 
+Pacific Regional Infrastructure Fund. Supporting document 14 provides further information on on-going activities in 
+the area of Non-Revenue Water and water demand management; and Supporting document 15 provides 
+information on tariff review activities and commitment of Government to review water and sewage tariffs.  In 
+addition, the project will finance consulting services to support WAF with detailed design and supervision of all 
+major works and with monitoring and reporting of the project activities. 
+                                                             
+32 ADB. 2014. Country Partnership Strategy: Fiji, 2014-2018. Manila; ADB. 2014. Country Operations Business Plan: 
+Fiji, 2015-2017. Manila. 
+33 WAF is undergoing an assessment using Aqua Rating, which is a tool developed by the International Water 
+Association to assess water utilities’ performance. The assessment covers all areas, including quality of service, 
+asset management, operation and maintenance, customer service, financial sustainability, corporate governance, 
+etc. The assessment is then audited by an independent technical team certified by the International Water 
+Association and its recommendations will allow WAF to prepare a road map to implement key reforms.
+
+=== PAGE 33 ===
+EXPECTED PERFORMANCE AGAINST INVESTMENT CRITERIA 
+ 
+GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 29 OF 48 
+ 
+ 
+ 
+F 
+F E 
+E.5.  Country Ownership 
+Beneficiary country (ies) ownership of, and capacity to implement, a funded project 
+E.5.1. Existence of a national climate strategy and coherence with existing plans and policies, including NAMAs, 
+NAPAs and NAPs 
+90. 
+Fiji is currently in the development of a draft National Climate Change Adaptation Strategy (NCCAS). The 
+draft NCCAS lays out an approach to identify and implement efficient and effective activities to manage the existing 
+and anticipated consequences of climate change for all land-based resources sectors in Fiji, namely, agriculture, 
+biodiversity, forestry, land and water. These sectors play dominant and essential roles in the economy of Fiji and 
+contribute to livelihoods and the general well-being of the people and the country as a whole. In addition to the 
+NCCAS, Fiji is currently formulating its Nationally Appropriate Mitigation Action (NAMA) in collaboration with 
+UNDP, and will submit its Intended Nationally Determined Contribution (INDC) to the UNFCCC in September 2015. 
+Fiji also has a ready-made commitment to develop a Climate Change Act and a NAP in the immediate future. 
+91. 
+The proposed adaptation and mitigation actions of the draft NCCAS are aligned with proposed project 
+activities and directly linked to the policy objectives and strategies of the existing Fiji National Climate Change 
+Policy (NCCP, 2012). This inter linkage between the two documents allows the NCCAS and the NCCP to directly 
+support the implementation of proposed mitigation and adaptation project activities. In addition, the project will be 
+timely in piloting and demonstrating on-the-ground mitigation and adaptation infrastructure measures with 
+complementary supporting institutional changes that Fiji can replicate elsewhere in the country.  
+E.5.2. Capacity of accredited entities and executing entities to deliver 
+92. 
+The Fiji Government has extensive experience implementing investments by ADB and other partners.  
+Since 1970, and ADB has committed over $417 million in investments in Fiji with a successful track record. 
+93. 
+The Ministry of Finance (MOF) will be the executing agency for the project.  MOF has extensive 
+experience as executing agency for infrastructure projects and is currently the executing agency for a $100 million 
+Transport Infrastructure Investment Sector Project (approved in Dec 2014).  MOF has also been the executing 
+agency for a range of other recent ADB investments that have now been successfully completed, including: a $68 
+million third Fiji Roads Upgrading Project (approved in 1997 with supplementary financing in 2009); and a $70 
+million Suva-Nausori Water Supply and Sewerage Project (approved in 2003 with supplementary financing in 
+2009).  MoF is very knowledgeable of ADB process and project cycle and has ensured all covenants in the loan 
+agreements of previous projects financed by ADB, including complex policy reforms, have been complied with.   
+94. 
+As executing agency, the functions of the Ministry of Finance are to work with line agencies (in this case 
+the Water Authority of Fiji) to implement the project as agreed in the project documents, submit withdrawal 
+applications to ADB, and submit required annual audit reports and financial statements of project account.  MOF 
+will also coordinate appropriate government representation for loan negotiations, loan signing, and loan 
+effectiveness and will chair the Project Coordination Committee. The role of the MOF and overall project 
+implementation structure is described in Appraisal Report, Link 1: Project Administration Manual. 
+95. 
+The Water Authority of Fiji (WAF) is the implementing agency for the project. ADB is confident in 
+continuing to provide financing to investments with WAF as the implementing agency. WAF is a commercial 
+statutory authority promulgated under the ambit of the Public Enterprise Act 1996. WAF took over responsibilities, 
+functions and operations previously carried out by the water and sewerage department in January 2010. WAF 
+manages both water and wastewater services across Fiji in accordance with the functions and powers of the 
+Promulgation reporting to the Ministry of Infrastructure and Transport (MOIT). Since becoming a statutory authority 
+in 2010, WAF has been focusing on operational improvements to both the supply of water and wastewater 
+systems.  WAF has been the implementing agency for ADB’s $70 million Suva-Nausori water supply and sanitation 
+project (approved 2003 with supplementary financing in 2009, and which completed in 2014) and one of the 
+implementing agencies for the Emergency Flood Recovery Sector Project (approved in August 2009).  A risk 
+assessment of WAF was undertaken and included in the project appraisal report, Link 8: Risk Assessment.
+
+=== PAGE 34 ===
+EXPECTED PERFORMANCE AGAINST INVESTMENT CRITERIA 
+ 
+GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 30 OF 48 
+ 
+ 
+ 
+F 
+F E 
+Specific measures have been built within the project to mitigate the risks identified, including financing consulting 
+services to strengthened WAF financial management and procurement processes among others.   
+E.5.3. Engagement with NDAs, civil society organizations and other relevant stakeholders 
+96. 
+ADB and the Government of Fiji identified the proposed project during the discussions on Fiji's Country 
+Partnership Strategy 2014-2018 and it was included in Fiji Operations Business Plan 2014-2018. In 2013 ADB 
+approved financing of a Technical Assistance to Fiji for Urban Development Planning and Institutional Capacity 
+Building and since April 2014, it has been working in close collaboration with the Ministry of Local Government, 
+Housing and Environment, the Ministry of Infrastructure and the Ministry of Finance to identify water and sanitation 
+sector priorities and to support the Water Authority in prioritizing the sector investments and defining the project 
+scope, addressing critical policy and sector issues and carrying out the required project due diligence. Discussions 
+and consultations took place with the Climate Change Division in the Ministry of Foreign Affairs to ensure that the 
+project was in line with national policy and that climate change considerations were integrated within the project. 
+ADB has also carried out consultations with local government, affected communities and other key stakeholders as 
+part of the project due diligence. All discussions and agreements reached at each stage of project preparation 
+have been reflected in the project Aide Memoirs and Memorandum of Understandings.  Consultations with 
+communities and civil society are reflected in the Poverty and Social Analysis and the environmental and social 
+safeguards documents. 
+97. 
+A combined Poverty and Social Analysis and Survey was conducted during Project Preparation Due 
+Diligence. Consultations conducted were designed to cover family composition; indicators of economic status; 
+water source(s), usage and problems encountered; drainage arrangements and flooding; sewage arrangements 
+and problems encountered; current expenditures for water and sewer; and willingness to pay for new or improved 
+services. Questions were included to identify women-headed households, sex-differentiated water usage patterns, 
+and recent diarrheal and febrile infections. The key findings are summarized below: 
+98. 
+Participation and Empowering the Poor. The project has been prepared in consultation with key sector 
+stakeholders including communities where the project will be implemented. Consultations will continue to be 
+conducted throughout the project cycle and this will strengthen participation of the poor and vulnerable in project 
+implementation. Affected people will be consulted through village meetings, social surveys, and informant 
+interviews at (i) planning phase of subprojects; (ii) during detailed feasibility studies and design; (iii) before and 
+during construction; and (iv) during operation, maintenance, and monitoring. At each subproject site, a focal point 
+for more detailed information sharing, and community development activities will be established, usually through an 
+existing village committee. Poverty and socioeconomic assessments at subproject sites will also identify local civil 
+society organizations and ensure that they are included in consultation activities. NGOs, churches, leaders, and 
+youth groups will provide channels for communication with the affected community to ensure that they understand 
+the subproject, delivery process, schedule, potential impacts, and opportunities. Information gathering and sharing 
+will include consultations, collaboration with NGOs working on poverty and partnership with village communities 
+where possible.  Finally, a project level participation plan will be prepared to strengthen participation of civil society 
+as interest holders for affected  persons particularly the poor and vulnerable mostly living in squatter settlements.
+
+=== PAGE 35 ===
+EXPECTED PERFORMANCE AGAINST INVESTMENT CRITERIA 
+ 
+GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 31 OF 48 
+ 
+ 
+ 
+F 
+F E 
+E.6. Efficiency and Effectiveness 
+Economic and, if appropriate, financial soundness of the  project/programme 
+E.6.1. Cost-effectiveness and efficiency 
+99. 
+The net economic benefits and costs in the analysis of the overall project were derived by comparing the 
+'with' and 'without' project scenarios. The project benefits from the water supply investments comprise: (i) 
+reduction in economic cost of water supply as a result of displacing higher cost supply alternatives, such as tanker 
+trucks, in unserved areas; (ii) costs savings from a reduction in NRW. Savings in the economic costs of supply by 
+reducing NRW, taking into account the avoided costs of producing, treating and distributing water; (iii) elimination 
+of current and future potential suppressed demand for water supply by adding additional water supply production 
+capacity to the system;34and (iv) benefits that accrue from households with illegal or unmetered connections from 
+improved water supply services. The project benefits from the sewerage investments comprise: (i) avoided costs 
+of septic tanks for new connections; (ii) increase in urban land values associated with allowance for higher density 
+development; (iii) avoided decline in sewerage connections due to reduction WWTP capacity in the near future; 
+and energy generation from production of biogas at Kinoya WWTP. The economic internal rate of return for the 
+project is 13.8% and the sensitivity analysis confirms the project is viable under adverse conditions. A detailed 
+economic analysis and financial analysis for the project are included as link documents to the project appraisal 
+report. An economic analysis of only GCF contribution could not be carried out as it would not be feasible without 
+the rest of the investments. 
+E.6.2. Co-financing, leveraging and mobilized long-term investments (mitigation only) 
+100. 
+In due course, a submission for GCF financing of the mitigation and adaptation activities under component 2: 
+Wastewater will be submitted to the GCF Secretariat for consideration in the March 2016 Board Meeting. 
+E.6.3. Financial viability  
+101. 
+The financial viability was carried out for the overall project.  The WACC of the project exceeds the FIRR for 
+the project which is currently negative. However the project is economically viable with an internal rate of return for 
+the overall project of 13.8%. A detailed analysis of the financial viability of the project is included as a link document 
+to the Project Appraisal Report. 
+E.6.4. Application of best practices 
+Please refer to project description and feasibility studies included in the supporting documents. 
+ 
+ 
+                                                             
+34 Average willingness to pay for improved water supply among domestic customers was based on the results of a 
+contingent valuation survey carried out as part of the Project Preparatory Technical Assistance. Average willingness to 
+pay for improved water supply among commercial users was estimated at the cost of investing in alternative supply 
+arrangements. There are a range of accepted methodologies to assess willingness to pay for basic services, including 
+survey of potential customers. The avoided cost scenario was not considered appropriate in this case since the 
+majority of households have already a piped water supply connection; the majority therefore do not invest in 
+alternatives.  The willingness to pay values were calculated to be low since household already receive a good service 
+for which they are used to paying a very subsidized price. Any increase in willingness to pay would improve the EIRR 
+of the project.
+
+=== PAGE 36 ===
+EXPECTED PERFORMANCE AGAINST INVESTMENT CRITERIA 
+ 
+GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 32 OF 48 
+ 
+ 
+ 
+F 
+F E 
+E.6.5. Key efficiency and effectiveness indicators 
+ 
+GCF 
+core 
+indicators 
+Estimated cost per t CO2 eq, defined as total investment cost / expected lifetime emission reductions 
+(mitigation only) 
+ 
+Not applicable 
+Expected volume of finance to be leveraged by the proposed project and as a result of the Fund’s 
+financing, disaggregated by public and private sources (mitigation only) 
+Not applicable 
+Other relevant indicators (e.g. estimated cost per co-benefit generated as a result of the project)
+
+=== PAGE 37 ===
+APPRAISAL SUMMARY 
+ 
+GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 33 OF 48 
+ 
+ 
+ 
+F 
+F 
+F 
+F 
+F.1. Economic and Financial Analysis 
+102. 
+Access to piped water supply services among the GSA’s population has reached 95%.  However current 
+water supply capacity is 151 ML/day, while current peak day demand is estimated to be around 168 ML/d, resulting 
+in a significant shortfall in bulk water supply and water treatment plant (WTP) capacity. This contributes to water 
+shortages and low pressure in some areas during peak demand dry periods.  The short fall is around 18 ML/d, which 
+can be expected to increase to 27 ML/d by 2033.  In absence of the project, the water supply gap can be expected 
+to continue to increase with growing urbanization and climate change which might reduce production from these 
+intakes. In addition, current water production facilities are running at full capacity for 24 hours per.  The lack of 
+redundancies in the system poses a significant risk to water supply security in the GSA, in the event of equipment 
+failure or other event such as damage to the intakes due to flash flooding. Without investments to upgrade the 
+system, a 30% reduction in production capacity by 2033 is expected.  
+103. 
+Around 36% of the GSA population is connected to the reticulated sewerage system. There are five 
+wastewater treatment plants (WWTP) servicing the GSA. The major plant at Kinoya has a capacity of 105,000 
+equivalent persons (EP) and serves over 90% of connected customers. However, the current capacity of Kinoya 
+WWTP is overloaded, and the asset is deteriorating. This is compounded by increasing sea water intrusion in the 
+sewerage system and lack off a trade waste program. The limited capacity of the sewerage network and the high 
+reliance on septic tank can result in overflows to nearby creeks particularly during wet weather. The limited coverage 
+of the sewerage network also contributes to urban sprawl in the GSA. This is because the Local Authority Act 
+restricts high density development in unsewered areas. In absence of the investments, it is projected that WWTP 
+capacity will decline and service connections will decline by 10%. 
+104. 
+Economic analysis. The economic analysis was carried out for the water and sewerage components and 
+for the project as a whole35 and in accordance with the Asian Development Bank’s Guidelines for the Economic 
+Analysis of Projects36 and Guidelines for the Economic Analysis of Water Supply Projects.37 All prices are expressed 
+in the domestic price numeraire at constant 2015 prices. Transfers such as taxes and duties, are excluded from the 
+analysis. Traded components are converted into economic prices using a shadow exchange rate factor (SERF) of 
+1.014.  A shadow wage rate factor (SWRF) of 0.86 is used to convert financial into economic wage rates for 
+unskilled labor.  The period covered by the analysis is 40 years. 
+105. 
+A least-cost analysis of water supply and sewerage options for the GSA was carried out to determine 
+whether the project investments represent the least cost means of addressing the water supply and sewerage needs 
+of the GSA over the period of analysis. Proposed project investments described above were compared with 
+technically feasible alternatives. The alternative water supply investment considered was the development of an 
+intake on the Rewa River with an expansion in the treatment capacity of the existing Waila WTP. Alternative 
+sewerage investments considered include the implementation of a ‘decentralized’ sewerage strategy with new 
+WWTPs located in growth areas at the extremities of the sewerage network in Waila and Lami. The present value of 
+life-cycle costs of each option was compared, including capital investment, operation and maintenance costs, over 
+the period of the analysis. In the case of sewerage investments, only alternative treatment options were considered, 
+since in both cases wastewater trunk mains would need to be upgraded and expanded. The present values of the 
+costs associated with each option were compared, and the project investments are estimated to be the least-cost 
+option compared with the feasible alternatives, even when a discount rate of 16% is applied.  
+106. 
+The net economic benefits and costs in the analysis were derived by comparing the 'with' and 'without' 
+                                                             
+35 Although the economic analysis was carried out for the overall project, separate EIRRs were calculated for the water 
+supply and sewerage investments.  The Project Appraisal Report Link Document 2 provides the detailed economic 
+analysis.  
+36 ADB. 1997. Guidelines for the Economic Analysis of Projects, Manila. 
+37 ADB. 1998. Guidelines for the Economic Analysis of Water Supply Projects, Manila.
+
+=== PAGE 38 ===
+APPRAISAL SUMMARY 
+ 
+GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 34 OF 48 
+ 
+ 
+ 
+F 
+F 
+F 
+F 
+project scenarios. The project benefits from the water supply investments comprise: (i) Reduction in economic cost 
+of water supply as a result of displacing higher cost supply alternatives, such as tanker trucks, in unserved areas. 
+This benefit is valued at F$30.0038 per cubic meter, which is the cost of supplying water by tanker truck; (ii) costs 
+savings from a reduction in NRW. Savings in the economic costs of supply by reducing NRW, taking into account 
+the avoided costs of producing, treating and distributing water. The average cost of producing water is F$1.81 per 
+cubic meter; (iii) Elimination of current and future potential suppressed demand for water supply by adding 
+additional water supply production capacity to the system, and by avoiding decline in service levels. Suppressed 
+demand is valued at average willingness to pay (WTP) of F$0.41 per cubic meter for domestic customers, and 
+F$10.00 per cubic meter for non-domestic users;39 and (iv) Non-technical NRW. The benefits that accrue to 
+households with illegal or unmetered connections from improved water supply services. The value of non-technical 
+NRW is valued at average willingness to pay for domestic users.  
+107. 
+The project benefits from the sewerage investments comprise: (i) avoided costs of septic tanks for new 
+connections. In absence of an expansion in the sewerage network, and increased wastewater treatment capacity, 
+it is assumed that households would instead need to investment constructing and operating septic tanks. The 
+annualized cost of onsite treatment and pump out is estimated to be F$487.(ii) Increase in urban land values 
+associated with allowance for higher density development. Once a land plot is connected to the sewerage 
+network, it can be fully developed without the restrictions that apply to unsewered plots. Holding other factors 
+constant, land values are estimated to increase by F$16,000 for a 800 cubic meter plot in a new subdivision 
+developments, and by 50% in developed areas once connected to the sewerage network based on average land 
+values of $40,000;40 (iii) Avoided decline in sewerage connections due to reduction in WWTP capacity. In absence 
+of investments to substantially upgrade WWTP capacity, it is projected that capacity will continue to decline 
+resulting in 10% decrease in service connections. It is assumed that this would require some existing sewerage 
+users to invest in onsite sanitation alternatives to collect and treat wastewater; (iv) Biogas production. In absence 
+of the investment, methane gas produced at Kinoya will be burned. Production of biogas at Kinoya WWTP is 
+estimated to save 50 percent of the electricity costs at the plant. This avoided cost is valued at the estimated cost 
+of diesel generated electricity production for the power utility41, on the assumption that incremental demand is met 
+from this source; and (v) CO2 abatement. Biogas production replacing diesel generated electricity production by 
+the power utility is associated with CO2 abatement, which is valued at international market rates42. 
+108. 
+The proposed investments are also expected to result in reduction of CO2 emissions from septic tanks 
+and increase resilience to climate change, particularly flooding and draught.  Substantial public health and 
+environmental benefits will also be achieved by reducing the incidence of water-borne disease and abating 
+pollution. Due to the difficulty in estimating and quantifying the values in monetary terms, these benefits were 
+excluded from the analysis.  
+109. 
+Economic internal rate of return (EIRR) was estimated by calculating the discount rate at which the total 
+present value of benefits and the total present value of costs are equalized. The EIRR was calculated for: (i) water 
+                                                             
+38 1 Fiji dollar (F$) = 0.489 US$ 
+39 Average willingness to pay for improved water supply among domestic customers was based on the results of a contingent 
+valuation survey carried out as part of the Project Preparatory Technical Assistance. Average willingness to pay for improved 
+water supply among commercial users was estimated at the cost of investing in alternative supply arrangements. 
+40 Land value estimates were derived from expert advice provided by real-estate agencies and property value assessors 
+operating in the GSA. The Housing Authority of Fiji provided expert advice on land values for new subdivision developments. 
+41 Refer Table 1 in Dornan, Matthew and Jotzo, Frank, Electricity Generation in Fiji: Assessing the Impact of Renewable 
+Technologies on Costs and Financial Risks, Resource Management in Asia-Pacific Program, Crawford School of Economics 
+and Government, The Australian National University, February 2011, for estimates of electricity generation costs in Fiji for 
+different technologies. 
+42 Using the rate for carbon emissions futures in the European market, which stood at just over €8 per tonne in late July 2015.
+
+=== PAGE 39 ===
+APPRAISAL SUMMARY 
+ 
+GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 35 OF 48 
+ 
+ 
+ 
+F 
+F 
+F 
+F 
+supply investments, (ii) wastewater investments, and (iii) water supply and wastewater investments combined. The 
+results presented in Table A4 indicate that in all three cases, the EIRR is 12% or higher. 
+110. 
+Sensitivity Analysis. Analysis was undertaken to test the sensitivity of the estimated EIRRs of the 
+proposed investments are to adverse changes in key variables and to confirm their economic viability under 
+unfavorable conditions.  Major risks considered are: (i) an increase of 10% in capital costs; (ii) an increase of 10% 
+in operating and maintenance (O&M) costs; and (iii) a 10% decrease in benefits. A summary of the results of 
+sensitivity analysis due to changes in the major parameters is included in Table A3.  
+Table A3: Sensitivity Analysis of Economic Internal Rate of Return 
+Sensitivity Case Scenario 
+EIRR 
+Water Supply 
+Sewerage 
+Water Supply and 
+Sewerage 
+Base Case 
+12.0% 
+14.6% 
+12.8% 
+1. Increase in capital cost by 10% 
+11.0% 
+12.0% 
+11.3% 
+2. Increase in operating costs by 10% 
+11.8% 
+14.6% 
+12.6% 
+3. Decrease in benefits by 10% 
+10.7% 
+11.7% 
+11.0% 
+EIRR=economic internal rate of return. 
+111. 
+Financial analysis has been prepared in accordance with Asian Development Bank (ADB) Financial 
+Management and Analysis of Projects.43 The financial analysis was conducted to determine the financial viability and 
+sustainability of the overall project consisting of; (i) Output 1: Increasing water supply and reliability of services within 
+the Greater Suva Area (GSA) by reducing non-revenue water by meter replacement, improved leak detection and 
+pressure management, building a new intake and water treatment plant by the Rewa river and increasing production 
+by 30m3/day; (ii) Output 2: increasing sewerage coverage in the GSA and improving the treatment of wastewater 
+through upgrading of the capacity of the Kinoya wastewater treatment plant by 100,000 E.P  (iii) Output 3: institutional 
+strengthening of WAF through the demand management program and liquid waste program (iv) Output 4: effective 
+project management during implementation. The implementation of these activities is expected to be carried out by 
+the state-owned water utility, Water Authority of Fiji (WAF). 
+112. 
+The last WAF audited financial statements are available only up to 31/12/2011. A team at WAF is looking into 
+account reconciliation and other issues highlighted by the auditor - hence the delay in submission of financial 
+statements for audit. WAF expects to finalize audited financial statements for period of 2012-2014 by end of 2015, at 
+that time, after the financing plan of the project is confirmed the project financial analysis will be finalized.  As regards 
+DSCR, liquidity management etc. at WAF, these are not applicable to WAF since at present cash and debt 
+management is entirely by the government and not the institution. The government advances funds from the national 
+budget for WAF as an operational grant for salaries and operational costs and a capital grant for capital expenses. In 
+turn, the government retains all WAF tariff revenues which it shows as national budget income.  
+113. 
+The financial analysis was conducted separately for the water and wastewater components and the project 
+as a whole. The analysis was carried out using a cashflow analysis by projecting future revenue and cost streams 
+from the project based on certain assumptions. Two streams of cashflows were developed, “with” and “without” 
+project and the incremental cashflow determined. This stream of incremental cashflow is then discounted to its 
+present value and financial indicators such as the Financial Internal Rate of Return (FIRR) and Financial Net Present 
+Value (FNPV) calculated.   
+114. 
+The WACC has been calculated in real terms for the project. The funding sources would be the ADB, EIB, 
+                                                             
+43 ADB. 2005. Financial Management and Analysis of Projects. Manila.
+
+=== PAGE 40 ===
+APPRAISAL SUMMARY 
+ 
+GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 36 OF 48 
+ 
+ 
+ 
+F 
+F 
+F 
+F 
+GCF and Government / WAF Funds. Funding from the ADB will be from its commercial lending window, Ordinary 
+Capital Resources (OCR). The OCR loan will be at the 15-year LIBOR USD swap rate, currently at 2.51%44 to which 
+the ADB will add a spread of 0.5% and a maturity based premium of 0.2%45, and the resultant cost to the borrower 
+will be 3.21%. The loan funds will not be on-lent to WAF. ADB forecasts a long term annual local inflation rate of 2.7% 
+and foreign inflation of 1.8%. The EIB loan will be on broadly similar terms to the ADB loan. The GoF funding is based 
+on the cost of long term government borrowing of 5%46 funding. The GCF funds are assumed to have an opportunity 
+cost equivalent to government funding.  
+115. 
+The FIRR of the water component (Output 1) is a negative 3.8% and the FNPV is a negative F$ 383.5 m.  
+The WACC is 1.8%.   The Average Incremental Financial Cost (AIFC) of Output 1, discounted at the WACC is F$ 
+0.76/m3. The AIFC represents the incremental capital and recurrent cost in the production of a unit of water and is 
+compared to the average tariff to demonstrate the extent the customer is subsidized and the basis for any potential 
+future tariff increase. The FIRR of the wastewater component (Output 2) is a heavily negative and the FNPV is a 
+negative F$ 645 million.  The WACC is 1.4%.   The Average Incremental Financial Cost (AIFC) of Output 2, 
+discounted at the WACC is F$ 1.11/m3. The AIFC represents the incremental capital and recurrent cost in treatment 
+of wastewater and is compared to the average tariff to demonstrate the extent the customer is subsidized and the 
+basis for any potential future tariff increase. The FIRR of the overall project is the summation of the water and 
+wastewater FIRR/FNPV.  The FIRR of the overall project is negative and the FNPV a negative F$ 1039 million.  
+116. 
+Project Risks and Sensitivity:  One major project risk is that customer will not be willing to connect to the 
+system, especially for wastewater. The average cost for a water connection is about F$ 500 and the cost of 
+connecting to the sewer maybe in the region of F$1,000-2,000 depending on the location of the premises. This is a 
+very significant cost and although the law requires connection to the sewer if it is within 30m of the premises, it is 
+difficult to implement this for customers with septic tanks who are required to make a substantial investment for 
+connection. The availability of output-based aid 47  (OBA) to finance the cost of service connections must be 
+investigated. Under OBA, the subsidy is given to the service provider, i.e. WAF, based on independently verified 
+performance who is expected to pre-finance connections.  
+117. 
+At the request of the GCF, the project has included a provision of 7% for physical contingencies.  This 
+contingency is considered low given the difficulty to estimate pricing by contractors for complex civil works which have 
+not been undertaken recently in Fiji.  This contingency also accounts for unpredicted cost overruns during 
+construction.  However, a reduction in cost does not have a major impact in the financial viability of the project which 
+would remain to be negative.  Only with a very substantial increase in water and sewerage tariffs would WAF 
+revenues increase sufficiently for the investment to have a positive FIRR.  
+Project FIRR and FNPV Base Case and Sensitivity Analysis 
+Scenario 
+FIRR (%) 
+FNPV ($mn) 
+Base Case 
+-7.5 
+-1,048.5 
+10% reduction in costs 
+-7.4 
+-981.0 
+Increase in WAF revenues  through tariff increase 
+0.3 
+-358 
+Source: ADB Estimates  
+ 
+ 
+                                                             
+44 As at 25 May 2015, ADB Treasury Department 
+45 Based on the tenor of the loan 
+46 Based on Fiji 10 year Viti Bond rate 
+47OBA is a strategy for using subsidies to deliver basic service to poor households and is used for water and sanitation, 
+electricity, transport, telecommunications, education and health care.
+
+=== PAGE 41 ===
+APPRAISAL SUMMARY 
+ 
+GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 37 OF 48 
+ 
+ 
+ 
+F 
+F 
+F 
+F 
+F.2. Technical Evaluation  
+118. 
+The technical evaluation has been prepared for the overall project.  The project will utilize the biogas 
+produced in the digesters for the production of electric and/or thermal energy, in their combined form also called 
+combined heat and power (CHP) production. Prior to its utilization, the gas is balanced in a gas holder and purified, 
+as required. A flare is typically used to burn gas that cannot be utilized and for emergency situations. 
+119. 
+Cost efficiency in the operation and maintenance (O&M) of treatment plants is essential. One important 
+aspect to achieve this is by selecting appropriate treatment technologies that are generally low-energy consumers. If 
+these technologies are properly chosen and designed they do not have higher investment costs than straight forward 
+technologies such as conventional activated sludge processes but are characterized by significantly lower needs for 
+operational expenditure, which have a big impact on the long term economic sustainability of the investments. At 
+Kinoya WWTP it is foreseen that WAF reinstates the existing but currently nonoperational conventional activated 
+sludge technology and it remains to be seen which technology will be proposed for the extension of the plant. 
+However, above described aspects will be brought to their attention and followed up during project implementation. 
+With WAF being aware of these possibilities they will be able to consider them in case of new WWTP are 
+implemented in Fiji in future.   
+120. 
+The project will introduce to WAF the use of Design, Build and Operate contracts for major infrastructural 
+investments..  One of the objectives of opting for this type of contract is to ensure that the O&M cost is factored in the 
+proposed technology which should encourage the use of more energy efficient technologies.  
+121. 
+The wastewater system in the GSA consists of 86 sewage pump stations, 44km of sewer rising main and 
+trunk gravity mains, and over 330km of sewerage reticulation. In addition, there are 5 WWTP servicing the area. 
+However, in fact only Kinoya WWTP is of real importance as it services about 97% of connected customers. 
+Currently, Kinoya is foreseen to be further extended and be the central WWTP for GSA, since the other 4 small 
+WWTP have limited scope for extension. This wastewater system, however, may have potential for being optimized. 
+The number of 86 sewage pump stations seems to be high for a catchment area of the size of GSA, even though it is 
+recognized that the topography is rather hilly and varied. The aim of an optimization would be to reduce the number 
+of pump stations, and, eventually, increase the capacity of the remaining ones, which would improve the overall 
+efficiency of sewage pumping. At the same time the need for sewage pumping may be reduced by introducing one or 
+more additional WWTP in other parts of GSA area rather than centrally treat the vast majority of wastewater in the 
+Kinoya WWTP only. Apart from other considerations, the preparation of a hydraulic model, which needs to be 
+calibrated by using real flow and pressure measurements taken in the field, will contribute to define an optimized 
+sewage reticulation system. A comprehensive evaluation of pros and cons including a cost benefit analysis should 
+define whether a central or decentralized approach for wastewater treatment will be the preferred one. In this context 
+it needs to be noted that independently of the outcome of the latter analysis the envisaged treatment capacity in 
+Kinoya will not be below the 277,000 EP envisaged under the project, if the backlog areas continue to be connected 
+and the sewer connection rate reaches 90% as targeted by WAF. 
+F.3. Environmental, Social Assessment, including Gender Considerations 
+122. 
+Environment and Social Impact Assessment. ADB’s Safeguard Policy Statement 2009 is aligned to the 
+GCF’s ESS and is generally understood to be operational policies that seek to avoid, minimize, or mitigate adverse 
+environmental and social impacts, including protecting the rights of those likely to be affected or marginalized by the 
+development process. It provides guidelines for conducting an environmental and social impact assessment and 
+some of these features include guidance on the environmental assessment process such as (i) project screening and 
+categorization; (ii) scoping for environmental assessment; (iii) analysis of alternatives; (iv) applicable policy, legal and 
+administrative framework and standards; (v) baseline environment (vi) impact and risk analysis; (vii) mitigation 
+measures and residual impacts; and an (viii) environmental management plan (EMP).  
+123. 
+The EMP prescribes actions to be taken to implement the mitigation measures, monitoring and reporting,
+
+=== PAGE 42 ===
+APPRAISAL SUMMARY 
+ 
+GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 38 OF 48 
+ 
+ 
+ 
+F 
+F 
+F 
+F 
+institutional arrangements, and EMP implementation schedule and cost estimates. Supporting these critical 
+assessments are (i) consultation and participation requirements for information disclosure, meaningful consultation 
+and participation; (ii) a grievance redress mechanism; (iii) occupational and community health and safety 
+requirements –  which includes impacts on workers and communities involved in both construction and operation; and 
+(iv) pre identification of physical cultural resources – protection through environmental assessment and management 
+via screening, consultation, management, chance find and removal (Refer to supporting documents and link 
+documents of the Project Appraisal Report for detailed assessment). 
+124. 
+Gender. The project is classified as ‘effective gender mainstreaming’. (i) Key issues identified: In the labor 
+force, the incidence of poverty is higher among women (40%) than men (32%). This figure rises to 75% if unpaid 
+household workers are included. Rural women with little education have the highest incidence of poverty. Fiji is 
+ranked 120 out of 136 countries for women’s economic participation by the Global Gender Gap Index, reflecting 
+women’s low rates in formal employment, although they play significant roles on smallholder farms and in marketing 
+of fresh produce. Women are concentrated in informal employment, unpaid domestic work, and in low-paying and 
+less secure occupations that have been hit hard by declines in tourism and the garment industry but where they 
+constitute the majority of workers. Women have full legal ownership rights in access to land and property, but limited 
+knowledge of these rights, and in practice they are often not recorded as co-owners of family assets or allowed to 
+decide on the use of communal land. In village organizations, men dominate. Women are also poorly represented in 
+provincial and local governments and institutions. According to the 2010 Committee on the Elimination of 
+Discrimination again Women report, gender-based violence against women is widespread in Fiji, and cultural 
+attitudes make it difficult for women to gain justice in cases of rape or sexual assault. 
+125. 
+A gender action plan (GAP) has been prepared to ensure that women are consulted, and that their priorities 
+are reflected when planning activities for construction of the upgraded and expanded infrastructure. The designs will 
+factor in women’s needs for regular and clean water and safe sewage disposal. Sewerage coverage encourages 
+indoor sanitation facilities, as opposed to outdoor facilities which in peri-urban areas in the GSA can be unsafe for 
+women. Whenever possible, pipes are to be laid, the designs will reflect women’s needs including stairs to the water 
+and concrete laundry tubs. The GAP will encourage women’s participation in labor and maintenance, provide equal 
+pay for equal work to men and women, and ensure income restoration measures to assist those who have lost assets 
+or access to land. There will be representation of women and men in any community consultations, on decision-
+making committees, and in awareness training to mitigate the potential spread of sexually transmitted infections and 
+HIV by encouraging contractor to hire local labor during construction work. At least 20-30 % of the workers should be 
+women (Refer to the GAP included as a linked document of the Project Appraisal Report for more details). 
+F.4. Financial Management and Procurement 
+126. 
+A financial management assessment (FMA) for the proposed project was carried out in accordance with 
+ADB’s Financial Management Guidelines 48  and Financial Due Diligence Methodology Note, under a project 
+preparatory technical assistance. The FMA considered the MOF as the proposed executing agency (EA) and the 
+Water Authority of Fiji (WAF) as the proposed implementing agency (IA). The FMA consisted of (i) completing the 
+FMA Questionnaire; (ii) assessing the FM Internal Control and Risk; and (iii) evaluating the implementing agency’s 
+FM personnel, accounting policies and procedures, internal and external audit, and information systems for financial 
+reporting. Interviews were conducted with WAF’s finance division and senior management, officers of MOF’s Debt 
+and Cash Flow Management Unit, and staff of the Office of the Auditor General (OAG). 
+127. 
+All advance contracting and retroactive financing will be undertaken in conformity with ADB’s Procurement 
+Guidelines (February 2007, as amended from time to time) (ADB’s Procurement Guidelines)49 and ADB’s Guidelines 
+                                                             
+48  ADB. 2005. 2010. Guidelines for the Financial Management and Analysis of Projects. Manila. 
+49  Available at: http://www.adb.org/Documents/Guidelines/Procurement/Guidelines-Procurement.pdf.
+
+=== PAGE 43 ===
+APPRAISAL SUMMARY 
+ 
+GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 39 OF 48 
+ 
+ 
+ 
+F 
+F 
+F 
+F 
+on the Use of Consultants (2007, as amended from time to time) (ADB’s Guidelines on the Use of Consultants).50 The 
+issuance of invitations to bid under advance contracting and retroactive financing will be subject to ADB approval. 
+The borrower, MOF and WAF have been advised that approval of advance contracting and retroactive financing does 
+not commit ADB to finance the Project.  International competitive bidding procedures will be used for civil works 
+contracts estimated to cost $5 million or more, and supply contracts valued at $400,000 or higher. Shopping will be 
+used for contracts for procurement of works and equipment worth less than $100,000   Before the start of any 
+procurement ADB and the Government will review the public procurement laws of the central and state governments 
+to ensure consistency with ADB’s Procurement Guidelines.  
+128. 
+See Section V and VI of the Project Administration Manual for the detailed financial management 
+assessment and procurement plan  
+                                                             
+50  Available at: http://www.adb.org/Documents/Guidelines/Consulting/Guidelines-Consultants.pdf.
+
+=== PAGE 44 ===
+RISK ASSESSMENT AND MANAGEMENT 
+ 
+GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 40 OF 48 
+ 
+ 
+G 
+G 
+G 
+G 
+G 
+G.2. Risk Factors and Mitigation Measures 
+130. 
+Project risks and assumptions are included in the Design and Monitoring Framework – Annex I of the 
+Project Appraisal Report.  Financial management risks are detailed Section V of the Project Administration Manual.   
+Details on the social and environmental risks and mitigation measures are included in the social and environmental 
+assessments attached to Section I. 
+ 
+G.1. Risk Assessment Summary 
+ 
+ 
+Risks 
+Mitigating Measures 
+Insufficient funding is allocated to WAF for 
+operation and maintenance  
+WAF, with support from the Pacific Regional Infrastructure Facility is 
+carrying out a water and sewerage tariff study to support a tariff 
+review.  
+ADB will provide assistance to establish an independent multisector 
+regulator who will be responsible for setting water and sewerage 
+tariffs. (to be confirmed) 
+ADB is providing assistance to MOIT to strengthen its capacity to 
+assess and support proper asset management plans in the water 
+sector. 
+Households not willing to connect to the 
+water supply system and/or the sewerage 
+system 
+WAF has agreed to review its connection fee policy to introduce 
+payment schemes and a flat rate.  
+A technical working group has been established to coordinate with 
+the activities under the informal upgrade program lead by the MLGHE 
+and assistance provided by the Department of Social Welfare to 
+vulnerable groups. 
+Government does not support the 
+implementation of the National Liquid Waste 
+Trade Program  
+ 
+The project includes technical assistance to support WAF with its 
+implementation.  
+The commitment to approve the policy and regulations has been 
+covenanted 
+MLCHE = Ministry of Local Government, Housing and Environment; WAF = Water Authority of Fiji  
+Source: ADB  
+129. 
+For more details, refer to Risk Assessment and Risk Management Plan included as a linked document of the 
+Project Appraisal Report.
+
+=== PAGE 45 ===
+RESULTS MONITORING AND REPORTING 
+ 
+GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 41 OF 48 
+ 
+ 
+ 
+H 
+H 
+H 
+H 
+H 
+H.1. Logic Framework.  
+ 
+H.1.1. Paradigm Shift Objectives and Impacts at the Fund level51 
+Paradigm shift objectives 
+Shift to low-emission 
+sustainable development 
+pathways 
+Not applicable in this submission 
+Increased climate-resilient 
+sustainable development 
+Climate change adaptation measures promoted in the project support scaling up of 
+adaptation measures in the urban water sector. This is accomplished through climate 
+proofing of existing and proposed infrastructure investments and through building the 
+necessary capacity to strengthen adaptation knowledge, skills and practices of 
+government and relevant sector agencies. The objective is to effectively integrate and 
+replicate climate change adaptation considerations into national development initiatives. 
+ 
+Expected Result 
+Indicator 
+Means of 
+Verification (MoV) 
+Baseline 
+Target 
+Assumptions 
+Mid-
+term  
+ 
+Final 
+Fund-level impacts (Submitted for GCF Funding) 
+A2.0 Increased 
+resilience of health and 
+well-being, and food and 
+water security 
+2.3 Number of 
+males and 
+females with 
+year round 
+access to 
+reliable and 
+safe water 
+supply 
+despite 
+climate 
+shocks and 
+stresses 
+WAF annual 
+reports, project 
+monitoring reports 
+174,512 
+ 
+290,854 
+Households willing 
+to connect to the 
+water supply 
+system  
+ 
+ 
+                                                             
+51 Information on the Fund’s expected results and indicators can be found in its Performance Measurement Frameworks 
+available at the following link (Please note that some indicators are under refinement): 
+http://www.gcfund.org/fileadmin/00_customer/documents/Operations/5.3_Initial_PMF.pdf
+
+=== PAGE 46 ===
+RESULTS MONITORING AND REPORTING 
+ 
+GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 42 OF 48 
+ 
+ 
+ 
+H 
+H 
+H 
+H 
+H 
+ 
+ 
+H.1.2. Outcomes, Outputs, Activities and Inputs at Project level 
+Expected Result 
+Indicator 
+Means of 
+Verification 
+(MoV) 
+Baseline 
+Target 
+Assumptions 
+Mid-term 
+(if applicable)  
+Final 
+Project outcomes 
+Outcomes that contribute to Fund-level impacts (Submitted for GCF Funding) 
+M5.0 Strengthened 
+institutional and 
+regulatory systems 
+5.1 Institutional 
+and regulatory 
+systems that 
+improve incentives 
+for low emissions 
+planning and 
+development and 
+their effective 
+implementation. 
+Government 
+Gazette and 
+WAF annual 
+reports 
+ 
+0 
+ 
+NA 
+3 
+Recommendations 
+are accepted by 
+policy makers 
+A5.0 Strengthened 
+institutional and 
+regulatory systems for 
+climate-responsive 
+planning and 
+development 
+5.1 Institutional 
+and regulatory 
+systems that 
+improve incentives 
+for climate 
+resilience and their 
+effective 
+implementation. 
+Government 
+Gazette and 
+WAF annual 
+reports 
+ 
+0 
+NA 
+2 
+Political will to 
+enforce the plans 
+and regulations  
+A7.0 Strengthened 
+adaptive capacity and 
+reduced exposure to 
+climate risks 
+7.1: Use by 
+vulnerable public-
+sector services of 
+Fund-supported 
+tools, instruments, 
+strategies and 
+activities to 
+respond to climate 
+change and 
+variability 
+Project 
+progress 
+reports 
+0 
+NA 
+1
+
+=== PAGE 47 ===
+RESULTS MONITORING AND REPORTING 
+ 
+GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 43 OF 48 
+ 
+ 
+ 
+H 
+H 
+H 
+H 
+H 
+Project outputs 
+Outputs that contribute to outcomes (Submitted for GCF Funding) 
+Expected Result 
+Indicator 
+Means of 
+Verification (MoV) 
+Baseline 
+Target 
+Assumptions 
+1. 
+WAF increases 
+access to reliable and 
+safe water supply in 
+the GSA  
+1a. Quantity of water 
+production and 
+treatment capacity of 
+GSA water supply 
+system increased 
+1a.WAF and MoIT 
+Reporting 
+ 
+150 
+Ml/day in 
+2014 
+180 
+Ml/day 
+by 
+2019 
+WAF allocates 
+sufficient budget 
+to carry out proper 
+asset 
+management 
+ 
+1b. % of NRW in GSA 
+reduced  
+1b.WAF and MoIT 
+Reporting 
+from 50% 
+in 2014 
+36% by 
+2022 
+ 
+ 
+1c. Number of new 
+connections in GSA 
+peri-urban areas and 
+informal settlements 
+increased 
+1c.WAF and 
+Department of 
+Social Services 
+Reports and 
+Department of 
+Town and Country 
+Planning Reports 
+0 
+1000 of 
+which 
+10% 
+benefit 
+women 
+headed 
+HH by 
+2020 
+HH willing to 
+connect to the 
+water supply 
+system 
+3.1.a. WAF 
+management and 
+sustainable service 
+delivery  capacity for 
+water supply improved 
+3.1.a. Percentage of 
+uncollected tariff in 
+GSA reduced  
+ 
+3a. WAF Annual 
+Reports 
+ 
+ 
+12% in 
+2014  
+6% by 
+2022 
+WAF management 
+supports 
+Customer  Team 
+in their initiatives 
+to reduce 
+uncollected tariff 
+ 
+3.1.b. Water demand 
+management program 
+implemented  
+3c. WAF Annual 
+Reports and 
+Department of 
+Environment 
+Reports 
+0 
+1 by 
+2020 
+Sufficient political 
+willingness to 
+enforce water 
+demand program  
+ 
+3.1.c. Percentage of 
+new WAF technical 
+recruits that are 
+women  
+3c. WAF Annual 
+Reports 
+3%2014 
+10% by 
+2022 
+WAF leadership 
+supportive of 
+increasing 
+women’s 
+opportunities in 
+WAF – women 
+interested in 
+working for WAF 
+ 
+3.1.d Percentage of 
+female WAF staff 
+participating in  
+training opportunities 
+3d. WAF Annual 
+Reports 
+10% in 
+2014 
+20% in 
+2022 
+WAF leadership 
+supportive of 
+increasing 
+women’s 
+opportunities in 
+WAF
+
+=== PAGE 48 ===
+RESULTS MONITORING AND REPORTING 
+ 
+GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 44 OF 48 
+ 
+ 
+ 
+H 
+H 
+H 
+H 
+H 
+ 
+Climate change related activities to be considered for funding by GCF in November 2015 Board Meeting* 
+Activity 
+Description 
+Inputs 
+Description 
+Design and construction 
+of Rewa river intake, 
+water treatment plant, 
+pumping 
+station 
+and 
+water reservoir 
+This 
+adaptation 
+activity 
+will 
+address the existing shortfall in 
+bulk water supply and water 
+treatment 
+during 
+peak 
+dry 
+weather 
+periods, 
+therefore 
+improving water supply reliability 
+and continuity across the GSA 
+water supply system. This will 
+allow WAF to meet growing GSA 
+population demand. In addition 
+the siting of the proposed site on 
+the river ensures its sustainability 
+in the long term due to projected 
+rising sea levels and salinity 
+migration concerns in the Rewa 
+river. 
+$74.6 million of 
+which $31.04 million 
+to be financed from 
+GCF 
+ 
+ 
+GCF financing will cover the 
+additional costs associated 
+with moving the facility from 
+29 km to 49km from the river 
+mouth to avoid projected 
+climate change impacts: (i) 
+19.6 km of DN750 mm 
+transmission mains; (ii) 50% 
+of site access costs; (iii) 
+costs of bringing electricity to 
+the site and (iv) 50% of land 
+acquisition and resettlement 
+costs. 
+Expected Result 
+Indicator 
+Means of 
+Verification 
+(MoV) 
+Baseline 
+Target 
+Assumptions 
+Mid-
+term (if 
+applicabl
+e)  
+Final 
+Project outcomes 
+Outcomes that contribute to Fund-level impacts (not submitted for funding by GCF 
+in November 2015 Board Meeting) 
+M5.0 Strengthened 
+institutional and 
+regulatory systems 
+5.1 Institutional 
+and regulatory 
+systems that 
+improve incentives 
+for low emissions 
+planning and 
+development and 
+their effective 
+implementation. 
+Government 
+Gazette and 
+WAF annual 
+reports 
+ 
+0 
+ 
+ 
+3 
+Recommendations 
+are accepted by 
+policy makers 
+M7.0 Lower energy 
+intensity of buildings, 
+cities, industries and 
+appliances 
+7.1 Energy 
+intensity/improved 
+efficiency of 
+buildings, cities, 
+industries and 
+appliances as a 
+result of Fund 
+support. 
+WAF annual 
+reports 
+(progress on 
+NRW reduction 
+and energy 
+production at 
+Kinoya WWTP) 
+0 kWh 
+ 
+5,088.4 
+MWh 
+Sufficient funding 
+is allocated to WAF 
+for operation and 
+maintenance
+
+=== PAGE 49 ===
+RESULTS MONITORING AND REPORTING 
+ 
+GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 45 OF 48 
+ 
+ 
+ 
+H 
+H 
+H 
+H 
+H 
+Project outputs 
+Outputs that contribute to outcomes (Not submitted for GCF Funding) 
+Expected Result 
+Indicator 
+Means of 
+Verification (MoV) 
+Baseline 
+Target 
+Assumptions 
+2. 
+WAF increases 
+sewer coverage, 
+capacity and reliability of 
+WWT processes in the 
+GSA 
+2a. Treatment capacity 
+of Kinoya WWTP 
+increased  
+2a. WAF and MoIT 
+reporting 
+128,000 
+in 2014 
+277,000 
+EP by 
+2022 
+ 
+ 
+2b. Number of HH 
+connect to the 
+sewerage network in 
+GSA 
+2b. WAF and Town 
+and Country 
+Planning Reports 
+ 
+29,000 
+HH in 
+2014 
+39,000 
+HH by 
+2022 
+HH willing to 
+connect to the 
+sewerage 
+system and 
+connection is 
+affordable 
+ 
+2c. WAF capacity to 
+pre-treat industrial 
+waste increased 
+ 
+2c. WAF and MoIT 
+reporting, 
+Department of 
+Environment 
+Reports 
+0 ML/yr 
+in 2014 
+37 Ml/yr 
+by 2022 
+ 
+ 
+2d. Compliance with 
+Kinoya Environmental 
+Permit  discharge 
+standards of effluent 
+flows discharged from 
+Kinoya WWTP during 
+dry weather  
+2d. WAF and 
+Department of 
+Environment 
+reports 
+ 
+Generally 
+not 
+compliant 
+80% 
+complian
+ce  by 
+2022  
+Government 
+supports 
+implementation 
+of the waste 
+trade program  
+ 
+ 
+2e. Number of women 
+that participate in 
+WASH programs 
+delivered in peri-urban 
+and informal 
+settlements under the 
+project 
+2e. Project Reports 
+0 in 2015 
+1,500 
+women 
+by 2022 
+ 
+3.2. WAF management 
+and sustainable service 
+delivery  capacity for 
+wastewater 
+management improved 
+3.2.a Percentage of 
+customers meeting 
+BOD discharge 
+standards approved 
+under  trade waste 
+program increased 
+3.2.a. WAF Annual 
+Reports 
+Department of 
+Environment 
+Reports 
+0 
+80% of 
+commerc
+ial 
+customer 
+by 2022 
+Sufficient 
+political 
+willingness to 
+enforce waste 
+trade program 
+and technical 
+capacity to 
+monitor 
+discharges 
+ 
+3.2.b Environmental 
+regulatory framework 
+for municipal 
+wastewater treatment 
+discharge standards is 
+reviewed and enforced  
+3.2.b Department 
+of Environment and 
+MoIT reports 
+ 
+0 
+1 by 
+2020 
+Sufficient 
+technical 
+capacity to 
+monitor 
+discharges
+
+=== PAGE 50 ===
+RESULTS MONITORING AND REPORTING 
+ 
+GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 46 OF 48 
+ 
+ 
+ 
+H 
+H 
+H 
+H 
+H 
+*Only includes activities related to climate change mitigation and adaptation; please refer to the Project 
+Design and Monitoring Framework in the Project Appraisal Report for overall project outcome, outputs and 
+activities. 
+ 
+ 
+Climate change related activities  
+(not submitted for funding by GCF in November 2015 Board Meeting) 
+Activities 
+Description 
+Inputs 
+Description 
+2.2. Sewer Extension 
+into GSA backlog areas  
+This mitigation activity will 
+reduce GHG emissions 
+from GSA households 
+that currently operate with 
+septic tanks and will 
+reduce pollutions levels in 
+Laucala Bay negatively 
+impacting the coral reef 
+ecosystem. 
+$31.7 million from ADB, EIB 
+and Government, of which 
+$18.5 million contribute to 
+mitigation. 
+ 
+ 
+ 
+Cost of extension of the 
+sewerage reticulation 
+network (not including pump 
+stations or trunk mains for 
+future growth) 
+2.3. Kinoya Wastewater 
+treatment plant biogas 
+initiative 
+This mitigation activity will 
+refine current biogas 
+production in Kinoya to 
+reduce energy 
+consumption of the plant. 
+$3.4 million from ADB, EIB 
+and Government.  
+Cost of retrofitting Kinoya 
+WWTP with technology to 
+allow it to produce energy 
+from biogas production 
+3.1 Wastewater 
+treatment optimization/ 
+decentralization study 
+This mitigation activity will 
+explore options and long 
+term alternatives to 
+reduce energy 
+consumption of the GSA 
+wastewater treatment 
+system  
+$1.32 million from 
+Government 
+Cost of technical assistance 
+to WAF to undertake this 
+study
+
+=== PAGE 51 ===
+RESULTS MONITORING AND REPORTING 
+ 
+GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 47 OF 48 
+ 
+ 
+ 
+H 
+H 
+H 
+H 
+H 
+ 
+ 
+                                                             
+52  
+Project completion report format is available at: http://www.adb.org/Consulting/consultants-
+toolkits/PCR-Public-Sector-Landscape.rar 
+H.2. Arrangements for Monitoring, Reporting and Evaluation 
+3. 
+ADB will undertake 2 project reviews a year to assess progress of project implementation activities, compliance 
+with covenants and project agreements, monitor progress in achieving project outputs and agree on any required.  ADB 
+will undertake a mid-term review within 3 years of project being effective or at any time that ADB and Government 
+consider it necessary. The midterm review mission will (i) review institutional, administrative, organizational, technical, 
+environmental, social, economic, and financial aspects of the project based on the assumptions and risks included in 
+the design and monitoring framework and updated PPR; (ii) review covenants to assess whether they are still relevant 
+or need to be changed, or waived due to changing circumstances; (iii) assess the need to restructure or reformulate the 
+project and the effects of this on the immediate objectives (purpose) and long-term goals of the project; and (iv) update 
+the project’s design and monitoring framework if restructuring or reformulation is necessary or its immediate objectives 
+will change. Within 6 months of physical completion of the Project the MOF will submit a project completion report to 
+ADB.52 
+4. 
+The MOF will provide ADB with (i) quarterly progress reports in a format consistent with ADB's project 
+performance reporting system; (ii) consolidated annual reports including (a) progress achieved by output as measured 
+through the indicator's performance targets, (b) key implementation issues and solutions; (c) updated procurement plan 
+and (d) updated implementation plan for next 12 months; and (iii) a project completion report within 6 months of 
+physical completion of the Project. To ensure projects continue to be both viable and sustainable, project accounts and 
+the executing agency AFSs, together with the associated auditor's report, will be adequately reviewed. 
+5. 
+See Project Administration Manual for further details on reporting, monitoring and evaluation.
+
+=== PAGE 52 ===
+ANNEXES 
+ 
+GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 48 OF 48 
+ 
+ 
+ 
+I I I I I 
+* Please note that a funding proposal will be considered complete only upon receipt of all the applicable supporting 
+documents. 
+ 
+ 
+I. Supporting Documents for Funding Proposal 
+☒ 
+1 - NDA No-objection Letter 
+☒ 
+2 - Feasibility Study 
+☒ 
+3 - Integrated Financial Model that provides sensitivity analysis of critical elements (xls format)  
+☐ 
+4 - Confirmation letter or letter of commitment for co-financing commitment  
+☐ 
+5 - Term Sheet  
+☒ 
+6 - Environmental and Social Impact Assessment (ESIA) or Environmental and Social Management Plan 
+☒ 
+7 - Appraisal Report or Due Diligence Report with recommendations 
+☐ 
+8 - Evaluation Report of the baseline project 
+☒ 
+9 - Map indicating the location of the project 
+☒ 
+10 - Timetable of project implementation 
+☒ 
+11 - Project confirmation (see the template in Annex I to the Accreditation Master Agreement) 
+☒ 
+12 - Results of AWARE Assessment of the Project 
+☒ 
+13 - Map indicating the location of the proposed Namosi Mine and location of Intake 
+☒ 
+14 - WAF Non-Revenue Water Reduction strategy and on-going technical assistance on NRW and water 
+Demand Management 
+☒ 
+15 - Water and Sewage Tariff Review Studies and Government Commitments to Tariff Reform 
+☒ 
+16 - Aquarating Assessment
+
+=== PAGE 53 ===
+GCF/B.11/04/Add.08 
+No-objection letter issued by the national designated authority 
+________

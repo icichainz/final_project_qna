@@ -1,0 +1,3397 @@
+=== DOCUMENT METADATA ===
+/Author: Adria Llach
+/Company: 
+/ContentTypeId: 0x01010000979F12F22C9E4F9273E32F354CEDB7
+/CreationDate: D:20230116155316+09'00'
+/Creator: Acrobat PDFMaker 22 for Word
+/ModDate: D:20230116155342+09'00'
+/Producer: Adobe PDF Library 22.3.86
+/SourceModified: D:20230116065138
+/Title: 
+
+
+---
+*Page 1*
+---
+
+  
+ 
+Meeting of the Board  
+27 February  – 1 March 2018  
+Songdo, Republic of Korea  
+Provisional agenda item 15 GCF/B.19 /22/Add.08 /Rev .01 
+22 February 2018  
+ 
+ 
+ 
+ 
+ 
+ 
+Consideration o f funding 
+proposals – Addendum VIII  
+Funding proposal package for FP066  
+ 
+ 
+  
+Summary  
+This addendum contains the following three parts:  
+a) A funding proposal summary titled “Pacific Resilience Project Phase II  for 
+RMI”;  
+b) No-objection letter  issued by the national designated authority(ies) or focal  
+point(s); and  
+c) Environmental and social report(s)  disclosure;
+
+
+---
+*Page 2*
+---
+
+ 
+ 
+ 
+     
+ 
+     
+ 
+     
+ 
+    
+ 
+     
+ 
+     
+ 
+    
+ 
+ 
+Project/Programme Title:   Pacific Resilience Project Phase II for RMI  
+ 
+ 
+Country/Region:   Republic of the Marshall Islands  
+ 
+ 
+Accredited Entity:   The World Bank Group  
+ 
+ 
+Date of  Submission:  30 December 2016_(revised March 24, 2017)   _
+
+
+---
+*Page 3*
+---
+
+ 
+ 
+   
+ 
+Contents7 
+ 
+ 
+Section A PROJECT / PROGRAMME  SUMMARY  
+ 
+Section B FINANCING / COST  INFORMATION  
+ 
+Section C DETAILED PROJECT / PROGRAMME  DESCRIPTION 
+ 
+Section D RATIONALE FOR GCF  INVOLVEMENT  
+ 
+Section E EXPECTED PERFORMANCE AGAINST INVESTMENT  CRITERIA  
+ 
+Section F APPRAISAL  SUMMARY  
+ 
+Section G RISK ASSESSMENT AND  MANAGEMENT  
+ 
+Section H RESULTS MONITORING AND REPORTING  
+ 
+Section I ANNEXES  
+ 
+  
+ 
+Note to accredited entities on the use of the funding proposal template  
+• Sections A, B, D, E and H of the funding proposal require detailed inputs from the accredited entity. For all 
+other sections, including the Appraisal Summary in section F, accredited entities have discretion in how they wish to present the information. Accredited entities can either directly incorporate information into this proposal, or  provide summary information in the proposal with cross -reference to other project documents 
+such as project appraisal  document.  
+• The total number  of pages  for the funding proposal  (excluding annexes)  is expected not to exceed 50.  
+ 
+ 
+Please submit the completed form to: 
+fundingproposal@gcfund.org 
+ 
+Please use the following name convention for the file name: 
+“[FP] -[Agency Short Name] -[Date] -[Serial Number]”
+
+
+---
+*Page 4*
+---
+
+A GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 1 OF 60   
+PROJECT / PROGRAMME SUMMARY  
+ 
+ 
+ 
+A.1. Brief Project / Programme Information  
+A.1.1. Project / programme title  Pacific Resilience Project Phase II for RMI  
+A.1.2. Project or programme Project  
+A.1.3. Country (ies) / region  Republic of the Marshall Islands  
+A.1.4. National designated authority (ies)  Office of Environmental Planning & Policy Coordination 
+Mr. Lowell Alik, Director  
+A.1.5. Accredited entity  International Bank for Reconstruction and Development  
+and International Development Association (World Bank)  
+A.1.5.a. Access modality  □ Direct  ☒ International  
+ 
+ 
+ 
+ 
+A.1.6. Executing entity / beneficiary  Executing Entities: Ministry of Finance, Ministry of Public 
+Works  
+ 
+Beneficiaries: National Disaster Management Office (NDMO), National Weather Service (NWS), Environmental 
+Protection Authority (EPA) and Kwajalein Local Government  
+ 
+Total number of beneficiaries: 16,000 direct beneficiaries  
+from Ebeye and outer islands; 23,800 indirect beneficiaries in 
+Majuro and Ebeye  
+A.1.7. Project size category (Total investment, million 
+US$)  □  Micro (≤10)  
+□  Medium (50<x≤250)  ☒ Small (10<x≤50)  
+□  Large (>250)  
+A.1.8. Mitigation / adaptation focus  □ Mitigation  ☒ Adaptation   ☐ Cross -cutting  
+A.1.9. Date of submission  December 30, 2016  
+ 
+ 
+ 
+A.1.10.  
+Project 
+contact 
+details  Contact person, position  Denis Jordy, Senior Environmental Specialist  
+Organization  The World Bank  
+Email address  djordy@worldbank.org  
+Telephone number  61-2- 9235- 6531  
+ 
+Mailing address  World Bank Group 
+14 Martin Place  
+Sydney NSW 2000 
+AUSTRALIA  
+ 
+A.1.11. Results areas (mark all that apply)  
+Reduced emissions from:  
+□ Energy access and power  generation  
+(E.g. on- grid, micro -grid or off -grid solar, wind, geothermal, etc.)  
+□ Low emission transport  
+(E.g. high- speed rail, rapid bus system, etc.)  
+□ Buildings, cities and industries and appliances  
+(E.g. new and retrofitted energy -efficient buildings, energy -efficient equipment for companies and supply chain management, etc.)  
+□ Forestry and land use 
+(E.g. forest conservation and management, agroforestry, agricultural irrigation, water treatment and management, etc.)  
+ 
+Increased resilience of:
+
+
+---
+*Page 5*
+---
+
+A GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 2 OF 60   
+PROJECT / PROGRAMME SUMMARY  
+ 
+ 
+ 
+Most vulnerable people and communities  
+☒ (E.g.  mitigation of operational  risk associated with climate  change – diversification of supply  sources and supply  chain management,  
+relocation of manufacturing facilities and warehouses, etc.)  
+□ Health and well -being, and food and water  security  
+(E.g. climate -resilient crops, efficient irrigation systems, etc.) 
+☒ Infrastructure and built  environment  
+(E.g. sea walls, resilient road networks, etc.)  
+□ Ecosystem and ecosystem services 
+(E.g. ecosystem conservation and management, ecotourism, etc.)  
+  
+A.2. Project / Programme Executive Summary (max 300 words)  
+The Republic of the Marshall Islands (RMI) is one of the world’s smallest, most isolated, and low -lying 
+nations, and is highly vulnerable to climate change. The project, to be co- financed by the GCF and 
+International  Development  Association (IDA),  will provide transformational  change  to RMI by supporting the 
+government of RMI to: improve resilience to the increasing risk from sea- level rise and changes in waves 
+and storm surge;  strengthen preparedness  of its population to disaster  events;  and provide financial  support 
+for climate- related and other  disaster  responses.  The project  promotes  a systematic  transformation of RMI’s 
+coastal  management  through innovative  solutions  in the densely  populated areas  of Ebeye  and Majuro.  The 
+project will draw on innovative and highly technical modelling of the RMI coastline to inform investments in coastal protection. It will also seek out new means for sourcing sustainable aggregate from atoll islands for use in construction, which will have wider benefits for other atoll nations. In addition, the project will strengthen enabling environments for investments in resilience, through improved planning, effective ecosystem  management  and prioritization  of investments  in climate and disaster  resilient  development.  
+The coastal  protection  works  are designed to respond  to RMI’s  challenges  as an atoll nation  subject  to active 
+erosion and flooding, with the added constraint of limited aggregate sources and construction market capacity. The project includes co- funded support from the Pacific Community (SPC) to bring economies of 
+scale,  extensive  knowledge,  and regional  collaboration in  disaster  risk management  and climate  resilience.  
+    The project beneficiaries include communities living in the coastal areas as well as national and local 
+government agencies with strengthened capacity  to address climate and disaster risks.  
+    The main part of the project will be executed by national institutions with a regional technical assistance 
+component executed by SPC, co- funded by  IDA. 
+    The project has been endorsed by the NDA, and is fully aligned with the National Determined Contribution 
+as well as the Joint National Action Plan for Climate Change Adaptation and Disaster Risk Management in 
+RMI.  
+ 
+A.3. Project/Programme Milestone  
+ 
+Expected approval from accredited entity’s 
+Board (if applicable)   
+9/05/2017  
+ 
+Expected financial close (if applicable)   
+November 2022  
+ 
+Estimated implementation start and end date   
+Start: 01/10/2017  
+End: 30/11/2022  
+Project/programme lifespan  5 years
+
+
+---
+*Page 6*
+---
+
+A GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 3 OF 60   
+PROJECT / PROGRAMME SUMMARY  
+ 
+ 
+ 
+Investment lifespan  
+ 30 years
+
+
+---
+*Page 7*
+---
+
+B GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 4 OF 60   
+FINANCING / COST INFORMATION 
+ 
+ 
+ 
+B.1. Description of Financial Elements of the Project / Programme  
+    The proposed financial instrument is an Investment Project Financing, funded by a combination of a grant 
+from the International Development Association (IDA) through the World Bank and a gr ant from the GCF. 
+The GCF grant and national IDA would finance activities implemented by RMI, whereas regional IDA funds will be used to finance activities implemented by SPC or  PIFS.  
+A grant is requested from the GCF to finance the strengthened resilience of the coastal areas of Marshall 
+Islands to the adverse impacts of climate change specifically through sea- level rise, changes in waves and 
+storm patterns, coastal inundation as well as modification of the precipitation patterns resulting in seasonal droughts and changes in wind conditions. The component on coastal protection will be dedicated to the 
+coastlines  of the most  densely  populated island  (Ebeye)  where critical infrastructure such  as the power  plant, 
+houses, and other important social and economic assets are located. Given the limited availability of 
+solutions for coastal protection in atolls, this project will inform investments in other atoll islands within RMI and elsewhere.  
+    Despite the recognized increasing needs to protect the infrastructures and the population, the high upfront 
+costs to build the needed solutions have prevented the government of the RMI from planning and investing in coastal protection in a systematic and strategic way. Most of the past and current protection has been 
+designed and implemented as fragmented and standalone projects, often through individual initiatives to 
+address urgent needs, without consideration of increasing impacts of climate change along all of the coast 
+line. The lack of a comprehensive, systematic and coordinated approach has led to poor outcomes, and, in some cases,  to increased risks from climate -related factors  as well as environmental  degradation.  Dedicated 
+financial and technical resources are essential for improved and resilient  outcomes . 
+    Solutions that are resilient to climate change tend to be non- revenue generating investments, and often, 
+have low economic rates of return, making them less attractive from an economic perspective when 
+compared to meeting  other  development  needs.  In combination  with the IDA grant,  the GCF  grant  will allow 
+the government of RMI to access the critical funding to implement a truly transformational and 
+comprehensive approach to build the climate resilience of the atoll  islands.  
+  A breakdown of the project cost estimates is presented below. There is a contingency of 17.5% built into the 
+project budget (US$ 7.15 million), which allows for price and physical contingencies related to construction of the coastal protection works.  
+ 
+Component  Sub-component (if 
+applicable)  Amount (for 
+entire  
+project)   
+Local Currency  GCF  
+funding 
+amount  Currency of 
+disbursement to 
+recipient   
+ 
+ 
+Component 1  
+Institutional 
+Strengthening, Early Warning, and Preparedness  1.1 
+Institutional strengthening, early warning & preparedness   
+3.10  
+million USD ($)   
+1.95  
+million USD ($)  
+1.2 
+Impact forecasting, NDMO capacity building & post disaster needs assessment   
+1.06  
+million USD ($)   
+0  
+million USD ($)  
+ 
+ 
+Component 2  
+Strengthening Coastal Resilience  2.1 
+Coastal protection investments   
+38.44   
+million USD ($)   
+22.31   
+million USD ($)  
+2.2 
+Strengthen integrated coastal risk management   
+2.33  
+million USD ($)   
+0  
+million USD ($)  
+Component 3  
+Contingency Emergency Response   
+0.50 million USD ($)   
+0 million USD ($)
+
+
+---
+*Page 8*
+---
+
+B GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 5 OF 60   
+FINANCING / COST INFORMATION 
+ 
+ 
+ 
+ Component 4  
+Project Management, Monitoring & Evaluation   
+3.21 million USD ($)   
+0.74 million USD ($)   
+Total project financing  48.6 million USD ($)  25.0 million USD ($)  
+NB: the local currency in Marshall Islands is the United States dollar (USD)  
+ Expenditure type  Amount (million $US)   
+• Services  6.22 
+• Consultants  5.66 
+• Good  0.50 
+• Works  27.35  
+• Incremental operating  cost 1.19 
+• Contingency emergency 
+response fund  provision  0.50 
+• Contingencies  7.18 
+B.2. Project Financing Information  
+ Financial Instrument  Amount Currency  Tenor  Pricing  
+(a) Total 
+project 
+financing   
+(a) = (b) + (c)   
+48.6 million USD  
+($)  
+  
+(i) Senior  Loans  
+(ii) Subordinated 
+Loans   
+………………… 
+…………………  
+Options  
+Options   
+( ) years 
+(  ) years     
+ 
+(   ) % 
+(   ) %  
+ (iii) Equity  ………………… Options    ( ) % IRR  
+ (iv) Guarantees  ………………… Options      
+(b) GCF 
+financing to 
+recipient  (v) Reimbursable 
+grants  * 
+(vi) Grants  * ………………… 
+25.0 Options  
+million USD  
+($)     
+ * Please provide economic and financial justification in section F.1 for the concessionality that GCF is expected to 
+provide, particularly in the case of grants. Please specify difference in tenor and price between GCF financing and 
+that of accredited entities. Please note that the level of concessionality shoul d correspond to the level of the 
+project/programme’s expected performance against the investment criteria indicated in section E . 
+ Total requested 
+(i+ii+iii+iv+v+vi)   
+25.0 million USD  
+($)  
+ 
+ 
+ 
+(c) Co - 
+financing to 
+recipient  Financial 
+Instrument  Amount Currency  Name of 
+Institution  Tenor  Pricing  Seniority  
+ 
+Grant  
+Options  
+Options   
+23.60  
+…………… 
+…………… million USD  
+($) 
+Options  
+Options   
+IDA 
+………………  
+………………   
+ 
+( )  years 
+(  ) years   
+(   ) %  
+(   ) %  
+(   ) % IRR   
+Options  
+Options  
+Options  
+Options  ……………  Options  ………………    Options
+
+
+---
+*Page 9*
+---
+
+B GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 6 OF 60   
+FINANCING / COST INFORMATION 
+ 
+ 
+ 
+ Lead financing institution: …IDA……  
+The total cost of the PREP Phase II is currently estimated to amount to US$48.6 million over 5 years. This includes:  
+(i) US$19.6 million in IDA Grant for RMI; (ii) US$4 million in Regional IDA Grant for SPC; (iii) US$25 million from 
+GCF for RMI  
+(d) Financial 
+terms 
+between 
+GCF and AE 
+(if applicable)  Not Applicable  
+B.3. Financial Markets Overview (if applicable)  
+Not applicable, coastal resilience (coastal protection, risk preparedness and long- term planning) is considered a non- 
+revenue generating public good, with no available market.
+
+
+---
+*Page 10*
+---
+
+C GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 7 OF 60   
+DETAILED PROJECT / PROGRAMME DESCRIPTION  
+ 
+   
+ 
+C.1. Strategic Context  
+The Pacific  Island  Countries  (PICs)  include  some  of the world’s  smallest  nations  located in the world’s  largest 
+ocean. PICs are among the most physically vulnerable nations in the world. They are highly exposed to adverse effects from climate change and 
+natural hazards (including floods, droughts, tropical 
+cyclones/typhoons,  earthquakes,  volcanic  eruptions,  and tsunamis),  which  can result  in disasters  that affect 
+their entire economic, human, and physical environment, and impact their long- term development. Since the 
+1950s, natural disasters have affected roughly 9.2 million people in the Pacific region, causing around 10,000 deaths.
+1 This has cost the PICs around USD 4.6 billion (in nominal terms) in associated damage costs (EM-
+DAT 2010, and World Bank).2 
+The Republic of the Marshall Islands (RMI) is one of the world’s smallest, most isolated and vulnerable nations. The country consists of 29 atolls and five isolated islands (24 of which are inhabited) with a total 
+land mass of just 181 km
+2 set in an ocean area of over 1.9 million km2. RMI’s population is estimated to be 
+53,000, of which around 75% are concentrated in the urban areas (Majuro and Ebeye).  
+  RMI is a lower middle- income country with a 2015 GDP of USD 179 million, and a per capita GDP of USD 
+3,325. GDP has grown at an average rate of 1.2% per annum in real per capita terms since independence 
+in 1979. The size and remoteness of RMI increases the cost of economic activity and makes it unable to 
+achieve economies  of scale.  Remoteness  also imposes  transport  expenses  that increase the costs of trade, 
+and fundamentally constrains the competitiveness of exports of goods and services internationally. These 
+factors also increase also the cost and complexity of providing public services and fulfilling the basic 
+functions  of Government.  Exports  are low, and the shallow  domestic  economy  has brought  high dependence 
+on imports, which are funded largely by the sale of offshore fishing rights and high levels of foreign aid. Foreign aid funds support a very large public sector that dominates the economy.  
+The population  of RMI is concentrated on small,  low-lying atolls,  with a mean  altitude  around 2 m above sea- 
+level. This makes RMI particularly vulnerable to climate change, especially to sea -level rise. The country is 
+exposed to occasional typhoons. Like other low -lying Pacific nations, its 370 km coastline (which is home to 
+99% of the population), renders it particularly susceptible to extreme water levels, waves and high tides and is alr eady beginning to feel the effects of climate  change.  
+  RMI is exposed to a variety of disaster risks, including recurrent droughts, coastal hazards (e.g. wave- 
+induced erosion and flooding linked to king tides and storm surge), tropical storms, and, to a lesser extent, 
+typhoons. The Average Annual Loss related to typhoons and tsunami/earthquake, computed through catastrophic risk modelling, is estimated to be around 1.7 % of GDP (i.e. USD 3 million per year).
+3 Based on 
+this calculation, in the next 50 years, RMI has a 50% chance of experiencing a loss exceeding US$53 million, and a 10% chance of experiencing a loss exceeding USD 160 million.
+4 Typhoon Paka in 1997 caused an 
+estimated USD 70 million of losses and damages. More detailed simulations for Ebeye done for the preparation of this project indicate that these figures reflect only a small portion of the costs of natural 
+disasters. When also considering inundations due to storm surges and king tides, the average annual loss 
+goes up to around USD 2 million for Ebeye alone.  
+  These estimates do not take climate change into account and thus are an underestimate in terms of 
+exacerbate risks to livelihoods, coastal settlements, infrastructure, ecosystems and economic stability.
+5 
+Climate  change  will lead to more damaging  storm  surges  and coastal  inundation,  increased intensity  of 
+tropical storms, and more extreme events such as droughts and flooding. Increases in sea level will  
+ 
+ 
+ 
+1 SPC Pocket Handbook, 2010  
+2 Pacific Catastrophe Risk Assessment and Financing Initiative (PRCRAFI). Countries covered by PRCAFI are Cook Islands, 
+Federated States of Micronesia, Fiji, Kiribati, RMI, Nauru, Papua New Guinea, Samoa, Solomon Islands, Tonga, Tuvalu, Vanuatu,  
+and Timor- Leste.  
+3 RMI Country Risk Profile, PCRAFI (2011)  
+4 PCRAFI Country Risk Profiles, September 2011 
+5 IPCC, 2014: Climate Change 2014: Synthesis Report. Contribution of Working Groups I, II and III to the Fifth Assessment Repor t 
+of the Intergovernmental Panel on Climate Change [Core Writing Team, R.K. Pachauri and L.A. Meyer (eds.)]. IPCC, Geneva, 
+Switzerland.
+
+
+---
+*Page 11*
+---
+
+C GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 8 OF 60   
+DETAILED PROJECT / PROGRAMME DESCRIPTION  
+ 
+ 
+ 
+accelerate coastal erosion, increase coastal inundation, and increase salinization of freshwater resources. 
+A state of emergency was declared on February 3, 2016, due to a prolonged drought which affected the country. El Nino events currently contribute towards recurrent droughts in RMI but, at this stage, the relationship between climate change and El Nino events is unclear. However, El -Nino like events are 
+expected to increase affecting land and water resources as well as coral reefs. Coral reefs, which offer a natural protection of the shorelines, are also likely to be affected by ocean acidification and higher temperatures. Experience in RMI shows that coral reefs are already being damaged by human waste, garbage, and debris being washed onto the reefs during the ebb tide and is likely to make them more 
+sensitive to changing climatic factors.  
+The natural hazard risks are particularly high in Majuro and Ebeye due to their large populations and extensive public infrastructure. Majuro has a population of about 27,000 and Ebeye some 11,000 people. The impacts of coastal erosion and inundations are evident along the shorelines of both islands. The 
+shoreline  erosion  has left public  infrastructure  (e.g. sections  of the roads  on both the ocean  and lagoon  side 
+of the two atolls, and the hospital in Majuro) highly exposed and vulnerable. Other vulnerable infrastructure 
+includes the water reservoir close to the airport in Majuro, the airstrip, and private houses. Several schools are reportedly  highly  affected  by erosion.  The need for coastal  protection around Ebeye is particularly  critical 
+because of its small size, high population density,
+6 the exposure of existing infrastructure to wave action, 
+and the settlement of people immediately adjacent to the coastline without the option of retreating due to constrained land availability.  
+  While disasters impact whole societies when they strike, the poor and vulnerable are hit the hardest. This 
+was the case following recent disaster events in the Pacific and RMI (e.g. in the aftermath of tropical storm Nangka  in July 2015)  where  poorer  people  were  affected to a greater  degree  as they were  less likely  to have 
+insurance,  cash  reserves,  and alternative  income sources  that provide a means  for them to recover  quickly). 
+There  is very limited  sex-disaggregated  data on the impacts  of climate  change  and natural  disasters  for RMI. 
+However, as the underlying causes of vulnerability to climate change risks are related to lack of human 
+endowments such as health, education and social protection, low economic opportunities and lack of voice 
+and agency, it is valid to assume that women are more vulnerable than men to climate and disaster risks in RMI.  
+  Recognizing  these  challenges,  the Government  has developed  strategic  priorities  for disaster  management 
+and climate adaptation  which  are spelled  out in the Joint  National  Action  Plan on Climate  Change  Adaptation 
+and Disaster Risk Management (JNAP) adopted in 2013. The five JNAP goals for the 2014– 18 period 
+relevant to this project  are: 
+i. Establish a nd support an enabling environment for improved coordination of disaster risk 
+management/climate change adaptation in the Marshall  Islands;  
+ii. Public education and awareness of effective CCA and DRM from local to national  level;  
+iii. Enhanced emergency preparedness and response at all levels within the Marshall  Islands;  
+v. Enhanced local livelihoods  and community  resilience for all Marshall  Islands  people;  
+vi. Integrated approach to development  planning including  consideration of climate change and disaster  risks.  
+  This action plan aims to combine the Disaster Risk Management National Action Plan, developed in 2007 
+and reviewed in 2010, and the National Climate Change Policy Framework, formally endorsed in 2011 for “building the resilience of the people of the Marshall Islands to climate change”. Indeed, as most of the 
+hazards impacting RMI are climatic related, the government decided to harmonize both strategies and 
+policies  and to set up a unique  mechanism to  deal with disaster  risk and climate change adaptation.  
+C.2. Project / Programme Objective against Baseline  
+Baseline scenario:  
+ 
+ 
+ 
+6 Ebeye has a population density of more than 30,000 people/km2, and is in the top ten most densely populated islands in the world.
+
+
+---
+*Page 12*
+---
+
+C GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 9 OF 60   
+DETAILED PROJECT / PROGRAMME DESCRIPTION  
+ 
+ 
+ 
+Some climate change trends have already been observed in RMI as reported in the Climate Change in the 
+Pacific: Scientific Assessment and New Research report.7 
+Annual  maximum and minimum temperatures  have increased in both Majuro and Kwajalein since  mid-20th 
+century,  with increasing rates  consistent  with global  trend (between 0.12°C  and 0.20°C  per decade  in Majuro 
+and Kwajalein,  respectively).  
+  Satellite  data indicate  the sea level  has risen  near RMI by about  7 mm per year since  1993 (see  Figure 1). 
+This is larger than the global average of 2.8 –3.6 mm per year. This higher rate of rise may be partly related 
+to natural fluctuations that take place year to year or decade to decade caused by phenomena such as the 
+El Niño -Southern Oscillation.  
+Rainfall data since 1950 for Kwajalein show a decreasing trend in annual and seasonal rainfall. In Majuro, 
+since  1950,  there  is a decreasing  trend  in annual  and dry season  rainfall  but no trend in wet season  rainfall. 
+A high inter -annual variability is observed in both islands.  
+  Observed  data show  that since  the 18th century  the level of ocean  acidification  has been  slowly  increasing 
+in Marshall Islands’  waters.  
+  Over  the 21st century,  based on the climate  projections  from different  climate  models,  some  of these trends 
+are expected  to continue while  others  might  even exacerbate  the threat  caused by  Climate change  to RMI:  
+Land and ocean Temperatures are projected  to continue to increase.  Projections  for all emissions  scenarios 
+indicate  that the annual  average air temperature  and sea surface  temperature will continue to increase also 
+likely to result in a rise in the number of hot days and warm nights, and a decline in cooler weather. Models 
+project an increase in the intensity and frequency in days of extreme heat. 
+  Sea level is expected to continue 
+to rise in the Marshall Islands. By 2030, under a high emissions 
+scenario, this rise in sea level is 
+projected to be in the range of 3– 16 
+cm. Acidification of ocean will 
+continue to increase and keep threatening  the coral  reef ecosystem.  
+  A
+lmost all the global climate models 
+project an increase in average annual and seasonal mean rainfall over the course of the 21st century. Wet season increases are particularly due to the expected intensification of the West Pacific 
+Mons oon and the Intertropical 
+Convergence Zone. However, as 
+with global studies, rainfall projections  are  less  certain and not  
+all models  show consistent  results.        
+Figure 1 : Observed and projected sea level rise for Republic of Marshall  
+Droughts  are  projected  to  become        Islands (CSIRO, 2014) 
+less frequent throughout this century.  
+Model  projections  show  extreme rainfall  days  are likely  to occur  more often and be more intense (“very  high 
+confidence”).  
+  The Marshall Islands is in a region where projections tend to show a decrease in typhoon frequency by 
+the late 21st century,  and a decrease  in the proportion  of the more  intense  storms . 
+ 
+ 
+ 
+ 
+7 Australian Bureau of Meteorology and CSIRO, 2011. Climate Change in the Pacific: Scientific Assessment and New Research. 
+Volume 2: Country Reports
+
+
+---
+*Page 13*
+---
+
+C GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 10 OF 60   
+DETAILED PROJECT / PROGRAMME DESCRIPTION  
+ 
+ 
+ 
+ 
+  The   effects   of   climate   change   are Table 1 : Percentage of maximum inundation in Ebeye with  return  periods  
+already being observed in RMI,  and they of 5, 10, 30 and 50 years.  The percentage relative to the island area is 
+will  only  be  exacerbated  in the future.  given for a minimum inundation depth of 50 cm. (Deltares,  2016) 
+Without any significant investment and transformative approach to coastal protection, the whole habitability of the atoll nation over the coming decades is at risk. Based on simulations performed by Deltares in preparation of this 
+application (see annex II), the area in 
+Ebeye severely inundated (i.e. with water depth more than 0.5m) during important,  but quite  frequent,  events  (i.e. 
+occurring on average every 5 years) will 
+increase by multiples of six (RCP 4.5 
+scenario) to 10 (RCP 8.5) in 2100 compared with the current period. At  the 
+end of the XXI
+st century, extreme events, with return period above 50 years, will flood Ebeye to depths 
+greater than 50 cm in both scenarios (see Table 1).
+
+
+---
+*Page 14*
+---
+
+C GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 11 OF 60   
+DETAILED PROJECT / PROGRAMME DESCRIPTION  
+ 
+ 
+ 
+   These  evolutions  would  have  direct  repercussions  on the population  and built environments  they are facing. 
+Assuming the exposure  and the vulnerability  would  remain  the same,  the expected  annual  damage for Ebeye 
+would go from around $US 2 million to 4– 6 million, based on the different sea level scenarios (see Figure 
+2). As Ebeye is likely to develop further, with, among others, the planned construction of new water and 
+energy  infrastructures,  these evolutions  of future damages  are likely  to be underestimated.  
+ 
+Figure 2 : Evolution of the coastal hazard risks in Ebeye for different time horizons for the RCP  
+8.5 scenarios, expressed as the expected annual damages per m2 (Deltares, 2016)  
+ 
+ 
+ 
+ 
+Ongoing Initiatives in RMI  
+  Donor partners are also supporting RMI address to disaster and climate change issues. These initiatives 
+cover for example: (i) upgrading the water supply and sewerage system in Ebeye (supported by the Asian 
+Development  Bank);  (ii) a water  and waste  managem ent program  for the Majuro  Water  & Sewage  Company 
+(supported by Japan); (iii) implementation support for the RMI drought response plan (supported by 
+Thailand, the People’s Republic of China, India, Australia, and the USA); (iv) agriculture and food security 
+(supported by Taiwan,  China1); (v) National Disaster Management Office (NDMO) support to finalize the 
+JNAP Strategic framework and response to the drought (supported by the European Union); (vi) upgrading 
+climate stations and meteorological equip ment (supported by Finland, through Secretariat of the Pacific 
+Regional  Environment  Programme,  SPREP);  and (vii) technical  assistance  in emergency  preparedness  and 
+water resources management (Supported by the Secretariat of the Pacific Community). Potentia l future 
+projects include an integrated water resource management in Majuro and outer islands project (supported 
+by the United Nations Development Programme, with a financing proposal to GCF under preparation), and 
+strengthening the building code and establishing a resource center through which all disaster and climate 
+policy and project documents can be shared (supported by Italy through  SPREP).  
+ 
+1 Amended on 10 November 2022  to ensure adequate terminology use.
+
+
+---
+*Page 15*
+---
+
+C GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 12 OF 60   
+DETAILED PROJECT / PROGRAMME DESCRIPTION  
+ 
+ 
+ 
+ 
+Existing coastal protection works  
+  A range of coastal  protection  works  have  been built to enclose  the areas  reclaimed from the sea in the most 
+populated islands (Majuro and Ebeye). Most of this is in urban areas. However, existing coastal protection infrastructure is insufficient  to protect  the shorelines  of RMI under  the current  conditions,  and it is envisaged 
+that as the impacts of climate change increase, the gap between the current standard of protection and th e 
+required level of protection will increase. In addition, lack of planning and uncontrolled reclamation has devastated the natural integrity of the coast. Nearly 100% of the high value shoreline in Majuro is already protected by some form of coastal barrier, but the coastal protection solutions are very heterogeneous, including riprap boulders extracted from the ocean- side reef flats, engineered vertical concrete seawalls, 
+and piles of vegetation and trash as pseudo barriers. Most of the constructions are private initiatives, rarely 
+adopting best practices. The situation is different in Ebeye, with very limited protection on the ocean- side, 
+which  faces  the most  intense hazards.  A revetment  has been built in the northern part of the island  to protect 
+the causeway leading to Gugeegue. However, due to insufficient funding, only the first portion of the 
+causeway is protected by a new, well- constructed revetment. The differences in height and construction 
+standards are reflected in the protection performance, with higher water overtopping observed in the north 
+part of the causeway.  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Figure 3 : Inventories of the current materials and 
+coastal defense types along the coastlines of 
+Ebeye  
+ 
+Related Projects  
+  Some government -led initiatives to increase the resilience of the coastlines of RMI have been completed in 
+places, but they are mostly oriented either towards the protection of the main infrastructure in Majuro or for 
+outer islands using lower -technology  solutions.  
+  RMI Port Authority Runway Safety Area Project : As part of the improvement of the safety of the Amata 
+Kabua International Airport in Majuro, started in 2011, some land reclamation has been constructed to 
+extend the length of the runway. The works involved land filling of 109,000 m3 and 610 m of rock revetment 
+(sloped wall shaped from various  rocks).  
+  Micronesia Challenge: Sustainable Finance Systems for Island Protected Area Management . The sub-
+regional  initiative  aims  to promote traditional  knowledge and ecosystem  based  approaches  to conserve 
+coastal resources. The objective of this initiative is to protect at least 30% and 20% of the near shore and 
+terrestrial resources, respectively, by  2020.
+
+
+---
+*Page 16*
+---
+
+C GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 13 OF 60   
+DETAILED PROJECT / PROGRAMME DESCRIPTION  
+ 
+ 
+ 
+  The Reimaanlok Process 2010 –20 “looking to the future”: As part of RMI’s commitment to the Micronesia 
+challenge, the Reimaalok process has been built as a planning framework to provide guidance on the 
+creation of conservation area and ecosystem based solutions. The process support the efforts of 
+communities  to use sustainable  resources,  reduce the impacts  of changing  conditions  and climate  to secure 
+the area for future generations to get access to the coastal resource. The World Bank is supporting this initiative through the Pacific Oceanscape Program (PROP).  
+Key Barriers to resilience building in RMI which will be addressed by this project: 
+  Certain barriers have prevented implementation of necessary policies and investments to overcome the 
+threats posed by the coastal hazards and the sea- level rise. These barriers include those listed below and 
+will be addressed by the project:  
+  Lack  of clear  implementation mechanism  for disaster  risk management,  reduction  and preparedness 
+and lack of human resources in key organizations. The design and implementation of efficient coastal 
+resilience strategies requires strong coordination and implementation mechanisms. The JNAP has defined 
+the framework  to do so, but still needs  to be fully operationalized.  The National  Disaster  Management  Office 
+is its implementing agency, but its human resources are insufficient to fulfill the tasks and mainstream disaster risk and climate change adaptation into the different national policies. The NDMO is also in charge of disaster preparedness and response, with the support of the National Disaster Committee. However the lack of human resources and clear roadmap for the NDMO prevents training for preparedness in outer 
+islands. There are no clear disaster response plans or protocols for the different governmental agencies 
+involved in disaster  response.  
+Lack of capital to invest in coastal protection, fragmented international support and constrained 
+national resources. Construction of coastal protection works which adhere to good practice, use 
+sustainable materials,  and which  are able to be adapted  for future conditions,  requires  massive  investment. 
+As coastal  protection investments  are not revenue generating,  they tend not to attract  private investors,  and 
+given the high costs, there is little prospect that they could be financed by the government with its own 
+resources.  
+  Lack  of long  term  strategy to build  resilience over  time.  Because  of the barriers  described  above,  most 
+of the disaster risk reduction and climate change adaptation investments and operations have so far addressed the short term, most urgent needs, through ad- hoc approaches. This means  that there is no 
+systematic approach to enhancing resilience.  
+   The  proposed  project  is designed  to overcome the identified  barriers.  The project  will provide  sufficient 
+resources for the government to invest in a coherent and comprehensive way to build its resilience. Government’s  capacity  within  central  agencies  such  as the Chief  Secretary’s  Office, Ministry  of Finance (and 
+possibly EPPSO and OEPPC) will benefit through policy reforms, governance arrangements and capacity 
+building.  This will enhance  RMI’s  capability  in pursuing  its strategic  and longer -term resilience agenda.  
+The Project  will invest  significantly  in strengthening capacity of existing  institutions  in charge of early  warning, 
+preparedness and response to natural hazard events (e.g. National Disaster Management Office and the 
+National Weather Service) and climate resilience planning and implementation. Technical staff including meteorologists and hydrologists will be trained to ensure that staff skills and knowledge is current, and to 
+introduce new techniques to improve forecast warnings and communications. Tools will be developed to 
+monitor  and observe,  analyse  and forecast,  and to communicate  and disseminate  information.  The capacity 
+of staff at the MPW,  and EPA will also be strengthened,  through  participation  in the design,  , environmental 
+risk management,  environmental  licensing,  and construction of coastal  protection measures,  as well as long 
+term coastal resilience planning.  
+C.3. Project / Programme Description  
+  The Project will comprise a combination of nationally implemented activities and co- funded regionally 
+implemented activities (implemented by SPC), as described in the matrix below. These activities will overcome the barriers described above and reach the overall objective of the project, to “ strengthen 
+resilience to climate  change and natural  hazards  in RMI through improved early  warning systems,  climate
+
+
+---
+*Page 17*
+---
+
+C GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 14 OF 60   
+DETAILED PROJECT / PROGRAMME DESCRIPTION  
+ 
+ 
+ 
+resilient  investments  in shoreline  protection,  and to provide  immediate  and effective  response  to an Eligible 
+Crisis or  Emergency..”  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  The design of the project  ensures  an integrated  approach to resilience  for the population of RMI.  Ebeye  and 
+targeted risk prone areas  in Majuro will be better  protected from coastal  inundation through coastal  protection 
+works. This new infrastructure will be complimented with improvements to land use planning and the enabling environment for resilient development. Improved early warning measures will also be introduced to the population of RMI, with remote areas receiving strengthened em
+ergency communication 
+infrastructure/equipment under the Project, and the agencies responsible for early warning and 
+preparedness undergoing institutional strengthening (including strengthened Standard Operating 
+Procedures). This will be coupled with financial resilience tools (including the CERC and Disaster Risk Financing Insurance – financed under Phase I of the PREP) to provide a full and comprehensive package 
+of adaptation measures.  
+ 
+Component 1: Institutional strengthening, early warning and preparedness  
+This component  will strengthen the effectiveness  of the RMI institutions  responsible for climate  and disaster 
+resilience, and disaster early warning and preparedness, and will support the implementation of the JNAP. This component  1 has two sub-components:  (i) institutional  strengthening,  early  warning,  and preparedness 
+(implemented by RMI and funded by a combination of National IDA and a proposed GCF grant); and (ii) NDMO capacity building and post disaster needs assessment (implemented by SPC, and funded by 
+Regional  IDA).  
+  This component will improve the effectiveness of the RMI institutions/departments responsible for climate 
+and disaster  resilience,  as well as disaster  early  warning  and preparedness.  The JNAP  provides  a great  
+ Nationally Implemented Activities (Funded 
+by combination of National IDA and  
+proposed GCF grant)  Pacific Community 
+Implemented Activities (Funded by  
+Regional IDA)  
+Component 1: 
+Institutional strengthening, early 
+warning and preparedness (Funded by  
+combination of IDA and 
+proposed GCF Grant)  • Strengthen integrated governance  of 
+disaster and climate change 
+• Improve early warning communication 
+systems for outer  islands  
+• Develop a roadmap and implement 
+priority improvements to modernize the NDMO’s  facilities  • Institutional strengthening of the 
+NDMO and disaster management 
+capacity  
+• Post Disaster Needs  Assessments  
+Component 2: 
+Strengthening coastal 
+resilience  
+(Funded by combination of IDA and 
+proposed GCF Grant)  • Improve and expand the coastal 
+vulnerability assessment for Ebeye and 
+Majuro  
+• Priority coastal protection works 
+investments including investigations,  
+design, and construction supervision  • Strengthen integrated coastal  risk 
+management  
+• Investigate sustainable sources of aggregates in Majuro and Kwajalein 
+atolls  
+Component 3: 
+Contingency 
+Emergency Response  
+(Funded by National 
+IDA) • Contingency Emergency  Response 
+Component  (CERC)  N/A 
+Component 4: Project 
+management  
+(Funded by combination of IDA and 
+proposed GCF Grant)  • Project management for all nationally 
+implemented activities, and oversight  of 
+the Pacific Communities’  activities  Support from regional PREP:  
+• Program Support Unit (housed in SPC) to provide operational TA,  M&E, 
+procurement, and financial 
+management  support  
+• Regional Coordination Unit (PIFS) to provide high level strategic vision  and 
+support oversight and some technical 
+assistance
+
+
+---
+*Page 18*
+---
+
+C GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 15 OF 60   
+DETAILED PROJECT / PROGRAMME DESCRIPTION  
+ 
+ 
+ 
+basis to better integrate disaster risk management and climate change adaptation. However, governance 
+mechanisms need to be clarified, including the roles and responsibilities of the National Climate Change Committee chaired by the Office of Environmental Planning and Policy Coordination (OEPPC), and the National Disaster Committee chaired by the Office of the Chief Secretary. Major issues to be addressed 
+include  accelerating  implementation of the JNAP  priorities  and improving capacity  to make evidence- based 
+planning  for disaster  and climate  resilient  investments  in sectors  and at the community  level.  
+  While detecting, forecasting, and warning of natural hazard events is relatively well established in RMI with 
+NOAA support, dissemination of warnings to the population, including “last mile” communication to outer 
+islands and Ebeye, is less well established. Little information exists on how women and men receive and respond to early warning messages in RMI. The development of emergency preparedness and response mechanisms,  and their implementation on the ground,  particularly  at community  level,  needs  to be improved 
+as it is important for early warning systems efforts to understand and address women and men’s priorities 
+and needs at the community level to be fully effective. Experience with conflict early warning
+8 for example 
+has shown that women’s contributions in information and response have been overlooked. The project will 
+therefore ensure that the dissemination of warnings are gender -informed.  
+Component 1.1: Institutional strengthening, early warning and preparedness (funded by a combination of 
+National IDA and proposed GCF Grant)  
+Budget:  Total: 3.1 million USD ($) – G CF: 1.95 million USD ($) 
+Expected outcomes:  
+  Increased t he coverage of hazard forecast  and warning messages  to women and men  at risk by up to 70 
+% 
+  NDMO modernized and operating in accordance with pre- agreed performance standards  
+  Multi Hazard Early  warning systems are established and operating,  and women and men knows  how to react 
+through gender -informed dissemination of  warnings.  
+JNAP objectives  sup ported are:  
+  Objective 1.2: Adequately resource key administrations for DRM/CCA at national and local government 
+levels, including securing avenues for sustainable financing  
+  Objective 1.3: Strengthen  human resource capacity  of women and men of key organizations  for DRM/CCA 
+including at the national and local governments  levels  
+  Objective 2.1: Plan for the development of human resources to provide, improve and retain the technical, 
+scientific, management skills and expertise  in-country  
+  Three activities are proposed under Component  1.1: 
+i. Institutional  strengthening.  This will support  the government  to integrate climate change adaptation (with  a 1.5- 
+2oC outlook) with disaster risk management, as panned under the JNAP, and to operationalize working 
+groups at central and local government levels. Also, institutional strengthening of the agencies responsible 
+for implementing the JNAP will be undertaken.  
+ii. Improved  Early  Warning  Communication  Systems.  This will include  better  multi- hazard  early  warning systems, 
+preparation of a systems and technology roadmap for outer island communications, a nd upgrading of 
+communications systems (e.g. FM radio, Chatty Beetle) in remote locations and training of women and men 
+to use them (including community awareness/training/drills). This work will be harmonized with preliminary 
+work underway by others (e.g.  IOM). The project will ensure that the trainees include women and youth in 
+the trainees’  pool.  
+iii. Strengthened NDMO Facilities.  This will develop a roadmap and implement priority investments to modernize  
+the NDMO’s facilities. This may include accommodation upgrades, interior fit -out, systems improvements, 
+the final scope of which will be determined during project implementation.  The modernization of the NDMO  
+ 
+ 
+ 
+ 
+8 UNWOMEN (2012) Gender -Responsive Early Warning: Overview and How -to-Guide
+
+
+---
+*Page 19*
+---
+
+C GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 16 OF 60   
+DETAILED PROJECT / PROGRAMME DESCRIPTION  
+ 
+ 
+ 
+will ensure  that the facility  is operating  in accordance  with standards  which  account  for future  climate  change 
+scenarios (rather than business as usual DRR  activities).  
+ 
+Component 1.2: NDMO capacity building, and Post Disaster Needs Assessment (funded by Regional IDA)  
+Budget:  T otal: 1.06 million USD ($) – GCF: 0 million USD ($) 
+Expected outcomes:  
+  W omen and men understand and are prepared to respond to impact  based forecasting  
+  NDMO staff is reinforced and better qualified to fulfill its  mandate  
+Outputs:  
+  Post-Disaster Need Assessment would be delivered quickly, in case a disaster  happens  
+  The PDNA Guidelines on Gender will be applied in case a disaster  happens  
+  Collection  of sex-disaggregated data and gender -specific  disaster  impact  data will be promoted  
+JNAP objectives  s upported are:  
+  Objective  2.5: Inform  and train women  and men about  emergency  communication  and emergency  response 
+procedures,  giving  priority  to the needs  to selected  institutions  and the needs  of vulnerable groups.  
+  Objective 3.1 : Strengthen preparedness and response capacity amongst relevant ministries and agencies 
+at national  and local levels,  in particular  a focus  addressing the needs  of the most  vulnerable groups  
+  This sub-component  will be implemented  by SPC.  It will provide  TA to support:  (i) institutional  strengthening 
+of the NDMO and its preparedness for response to disasters; and (ii) provision for post disaster needs assessment.  This sub-component  will contribute  to the regional  platform which  is being  developed under  the 
+PREP Phase I for strengthening early warning and preparedness systems in the pacific region, 
+harmonization and building common approaches for DRM and climate resilience, and knowledge sharing 
+with other Pacific Islands  countries.  
+Sub-component 1.2.1: National Disaster Management Office capacity building  
+  Under this sub- component, extensive support will be provided to institutionally strengthen the NDMO, 
+building its capacity to prepare for and respond to disasters consistent with the direction provided under Component  1.1. Extensive  training,  coaching,  and support  will be provided for existing  and new staff (being 
+recruited),  including:  
+i. Undertake a disaster management skills capacity assessment, and gap analysis of the NDMO and, if 
+required, other key government and provincial agencies involved in disaster management. An action plan, 
+with well -designed activities, training programs, terms of reference for additional human resources, and so 
+forth, will be developed to improve long- term institutional  capacity.  
+ii. Help prepare position  descriptions,  operating procedures,  training  records,  drills,  response plans,  community 
+awareness and outreach programs, and the like. Help the NDMO fully implement all aspects of operations and responsibilities.  
+iii. Document  and further  develop best practice in emergency  coordination,  preparedness,  and response for all 
+emergency services (fire and rescue, ambulance, police, armed services, etc., and relevant government 
+departments such as the NDMO). Lessons and methodologies will be introduced from the Pacific Islands 
+Emerg ency Management Alliance (PIEMA)  program.  
+iv. Introduce impact forecasting using hazard models to forecast the impacts of extreme events, including typhoon,  storm surges,  and flooding  
+9 . The tools  will make use of the coastal  hazard analysis  under  
+Component 2, and be incorporated into RMI’s multi -hazard warning platforms. The tools will need to be 
+simple, determined from a needs assessment, and be within the NDMO’s capacity to use consistently.  
+ 
+ 
+ 
+10 Action 2.10.7: ‘ Strengthened capacity to anticipate, resist, plan and prepare for, respond to and recover from the consequences of 
+disasters and climate change’.
+
+
+---
+*Page 20*
+---
+
+C GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 17 OF 60   
+DETAILED PROJECT / PROGRAMME DESCRIPTION  
+ 
+ 
+ 
+Community awareness raising and educational programs will also be developed to summarize the most 
+important points about hazard and risks. Advice will be given on practical interventions that best reduce risks.  
+Sub-component 1.2.2: Scholarship program  
+  As a further means of building the longer term national capacity for climate and disaster resilience and 
+coastal risk management, this sub- component will provide targeted support for selected students involving 
+academic or vocational scholarships.  Twinning arrangements will also be offered.  
+Sub-component 1.2.3: Post Disaster Needs Assessment (PDNA)  
+Provision is included in the project to carry out a post disaster needs assessment through the auspices of the Pacific  Community  should  disaster  arise  where a PDNA or a rapid  damage assessment  is warranted during  the 
+life of the project.  Implementation of priority  recommendations  arising out of the 2016 Drought  PDNA specifically 
+in relation to its DRM recommendations will also be undertaken within this sub- component. The priorities for 
+support will be determined by the  NDC.  
+Component 2: Strengthening coastal resilience  
+  This component will strengthen coastal planning, increase understanding of current and future risks, help 
+the government to prioritize future investments, and deliver targeted coastal protection investments. 
+Component 2 is divided into two sub- components: (i) coastal protection investments (which will be 
+implemented by RMI, and funded by a combination of IDA and proposed GCF grants); and (ii) strengthen 
+integrated coastal risk management (which wi ll be implemented by SPC and funded by  IDA) 
+ 
+ 
+Component 2.1: Coastal  protection investments (funded by a combination of National  IDA and proposed GCF 
+grant)  
+Budget:  Total: 38.4 million USD ($) – GCF: 22.31 million USD ($),  
+Expected outcomes:  
+90 % of the population (of which 50 % are women) protected in Ebeye 
+Reduction of 0.70 million USD in expected annual damages  
+Outputs:  
+  1.5km of coast with reduced vulnerabilty to flooding and storm surges  
+  Training on inspection and maintenance of coastal protection works  
+JNAP objectives  supported are:  
+  Objective 5.4: Strengthen policy and technical capacity for Integrated Coastal Management (ICM) to 
+improve environmental management and reduce vulnerability to climate change and natural hazards, 
+including monitoring and enforcement of  regulations  
+Objective 5.8: Address the issue of loss of land in the RMI  
+Objective 6.1: Strengthen land use and settlement planning processes and systems (including lease arrangements) at all levels from community, local to national  
+  Objective 6.2: Ensure planning and policy development at all levels reflects an understanding of climate 
+change and disaster  risk. 
+Objective 6.3: Develop sound and accurate baseline information to support adaptation and risk reduction 
+planning via an integrated approach for data management  
+  This sub- component aims to strengthen coastal protection and resilience in Ebeye, and subsequently in 
+Majuro (with Majuro coastal protection investments to be financed by IDA). Coastal protection works will 
+start on Ebeye  (financed  by a combination of IDA and proposed  GCF  grants)  because of the high population 
+density, concentration of public assets, and the already evident erosion impacts.  
+Sub-component 2.1.1: Coastal Vulnerability Assessment (to be funded by National IDA)
+
+
+---
+*Page 21*
+---
+
+C GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 18 OF 60   
+DETAILED PROJECT / PROGRAMME DESCRIPTION  
+ 
+ 
+ 
+   As part of project preparation, Deltares were commissioned to undertake a Coastal Vulnerability 
+Assessment  (CVA)  to quantify  coastal  hazards  and their effects  around Majuro and Ebeye,  and quantitatively 
+assess coastal risks on the Ebeye coastline, considering effects on people, housing, and infrastructure. From this, Deltares recommended priority areas for coastal protection in Ebeye, and prepared robust concept 
+designs and cost estimates (see para 172 for further details and Annex 2-  feasibility study). This work has 
+been shared with stakeholders and screened for environmental and social risks. Under this sub-  component, 
+the CVA will be expanded to key coastal ar eas of Majuro. The methodologies and details of the previous 
+analysis will be reviewed and, if appropriate, may be improved (e.g. by using higher resolution databases or 
+new calibration/validation data, or introducing refinements to the analysis techniques , where these provide 
+a worthwhile improvement to the prediction accuracy of the models).  
+Sub-component 2.1.2: Priority Coastal Protection investments (to be funded by National IDA and proposed GCF grant)  
+A coastal  design and supervision firm will be appointed  to refine and build  on Deltares’  analysis  and designs 
+for Ebeye and undertake  the final engineering design of coastal  works.  For the high- energy  ocean  coastline, 
+analysis has shown that rock rip- rap, or concrete armour units, or a combination, are likely to be the only 
+effective, and therefore preferred, structural solutions. Robust concept designs were prepared as part of project preparation, and will be developed into engineering designs, after further analysis and modelling, 
+during project  implementation (as is typical  with World  Bank  funded projects  – the cost of preparing detailed 
+designs  during project  preparation can be prohibitive for governments  – and in this case,  the detailed designs 
+are estimated to cost in the vicinity of USD2 million -  and is often combined with supervision to reduce 
+transaction costs). The Deltares’ analysis has compared risks for periods of up to 50 years in the future, 
+considering sea level rise and hazards  such  as storms,  typhoons,  and water  level fluctuations.  Works  for all 
+the Ebeye and Majuro coastlines cannot be considered within the available budget so a risk based process 
+of prioritization will be undertaken.  
+  The coastal protection investments will complement existing coastal protec tion. In Ebeye, these existing 
+protection works  are limited  to roughly  one kilometer  of the Guggegue causeway  (north of Ebeye),  or are ad 
+hoc, low capacity, and poorly constructed structures. Existing structures provide no real protection to the 
+residential, commercial, or industrial areas of Ebeye. The CVA identifies key, high risk hotspots in Ebeye 
+(wave inundation and erosion risk sites) based on: (i) current climate and conditions (i.e., taking existing 
+coastal protection infrastructure into c onsideration); and (ii) future, changed climate, and the ability of existing 
+coastal protection infrastructure and the proposed future coastal protection infrastructure to withstand the 
+changing impacts from climate- related risks conditions for periods of up to 50 years in the future (i.e. 
+increased sea levels and higher intensity typhoons). The proposed investments will first and foremost seek 
+to reduce the risk of inundation and shoreline erosion in these hotspots. Such investments will  help bring  a 
+syste matic  approach to coastal  protection based  on detailed analysis  of the natural  hazards and climate 
+change, their effects, and engineering treatments designed to deliver prescribed levels of performance over 
+the next 50 years or more. Different potential solutions have been analyzed for the different locations where the risks are higher, and the effectiveness of these interventions in reducing the hazards have been tested by means of identical modelling simulations. The design options have incorporated a crest  level of 
+approximately  1.5 metres  above ground level.  The type of material  used  for the options considered will be 
+either rock or concrete tubes. Consideration has been given to revetments with, or without berms, and also with or without breakwaters.  The potential intervention schemes for Ebeye that have been considered as 
+part of the project  design all aim at reducing the effects  of hazards  from the ocean side, which will lead to the 
+highest risk reduction compared to hazards from the lagoon. The considered options included: (i) an extreme 
+case solution where all the ocean side of Ebeye is protected (costing between US$32- 37 million depending 
+on the revetment type, standard or berm); (ii) interventions aimed at protecting  the coastline  at hot spot 
+locations  only (costing  between US$3 -5 million  depending on the hotspots and revetment type); (iii) options 
+which extend the existing seawall and protect key hotspots and areas in between (costing approximately 
+US$20 million); and (iv) options which aim at  extending the existing revetment  next to the causeway  all the 
+way to Gugeege (costing between US$83 -99 million).  The estimated costs  have a good degree  of accuracy  
+and have been  developed by a process  akin to the development  of a bill of quantities, based on estimated 
+quantities for the different components (e.g. rock, concrete armour units, backfill, capping walls,  etc). 
+  The cost -effectiveness of these different options, which feature revetments at different locations and with 
+different  lengths  have been assessed,  to inform the final decisions  and design of the project.  Cost- 
+effectiveness is defined as the ratio between construction costs and reduction in expected annual damage.
+
+
+---
+*Page 22*
+---
+
+C GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 19 OF 60   
+DETAILED PROJECT / PROGRAMME DESCRIPTION  
+ 
+ 
+ 
+This process  has resulted  in the identification  of two preferred  rigorous  conceptual  designs  which  were  found 
+to be the most cost effective - one which includes a standard revetment and a second which includes a 
+revetment and berm. Both of these preferred options aim at extending the existing seawalls in Ebeye and 
+protecting key “hotspots” of higher risk and areas in between. Of these two options, it is envisaged that the 
+option including the berm will be adopted, although this will be confirmed during project implementation 
+following further consultations with relevant stakeholders, including community groups, landowners and government.  The cost estimate  for the preferred  option  including  the berm is US$ 20 million.  The remaining 
+US$ 6 milli on allocated for coastal protection would be used for coastal protection investments either to 
+protect a longer part of the ocean side or the lagoon side of Ebeye or in Majuro.  
+  Given that the current availability of locally sourced aggregate is limited,  and that the extraction methods 
+have high, negative environmental and social impacts, it is assumed that all aggregates will be imported from sustainable  sources  in other  countries.  This contributes  substantially  to the cost of the investments.  
+  While the coastal geography and wave properties on the ocean side of Ebeye will necessitate hard 
+engineering coastal protection solutions, a wider range of “softer” or ecosystem based solutions may be available for the the lagoon and the Majuro coastline and will also be promoted as part of the integrated coastal protection approach under component 2.2. Ecosystem- based approaches may include options for 
+(re)vegetation, creation of shoreline berms (a nourishment approach currently being explored by the RMI Coastal  Management  Advisory  Committee),  and improving coral  growth to  allow  them to buffer  some of the 
+wave actions. Mangroves plantation at this stage may be a limited solution, as mangroves do not occur 
+naturally in Majuro or Ebeye. For both Majuro and Ebeye, attention will be given to landscaping, shade and 
+screen tree planting,  marine  habitat  restoration,  and creating recreational  spaces  as part of any works.  Some 
+of these activities use simple and appropriate labor -based methods that are gender -sensitive and suitable 
+in the context of RMI. A decision would be made on the suitability and specifics of such approaches during the implementation of the project,  following completion of a CVA for Majuro.  
+  The capacity  of local contractors  to construct  and maintain coastal  protection  works  has been reviewed.  The 
+conclusions  are that the large scale  works  likely  required for the coastal  protection component  will be beyond 
+the capabilities of Ministry of Public Works, and the smaller local contractors, who have low capacity to manage environmental and social impacts. Large contracts may be required to attract international competition.  
+  The project  will work  closely  with contractors  to ensure that the local communities,  and women  and youth in 
+particular,  are employed  in construction  activities  when  possible.  The project  will promote  an inclusive  work 
+environment with the contractors, especially because policies, laws and mechanisms to protect the employment of labor rights have not been established throughout RMI  yet. 
+Component 2.2: Strengthen integrated coastal risk management (funded by Regional IDA)  
+Budget:  T
+otal: 2.33 million USD ($) – GCF: 0 million USD ($)  
+Expected outcomes:  
+  A long -term coastal security strategy is developed and adopted by the key central and atoll government 
+agencies  
+Outputs:  
+  Sustainable sources of aggregate, and methods of extraction, are identied and quantified in Kwajalein and 
+Majuro atolls  
+  Knowledge sharing on study for alternative aggregate and developemnet and implementation of efficient 
+long term planning strategies.  
+  JNAP objectives supported are: 
+  Objective 1.5: establish a visible and coordinated approach to mainstreaming natural hazard risk 
+considerations into development planning, macroeconomic policy, fiscal management and national 
+budgetary processes which allows for clear entry points for international  support.  
+  Objective 2.3: build the knowledge base for decision makers at all levels regarding the link between land- 
+use and settlement planning and vulnerability to climate change an  disasters.
+
+
+---
+*Page 23*
+---
+
+C GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 20 OF 60   
+DETAILED PROJECT / PROGRAMME DESCRIPTION  
+ 
+ 
+ 
+  Objective 5.4 : Strengthen policy and technical capacity for Integrated Coastal Management (ICM) to 
+improve environmental management and reduce vulnerability to climate change and natural hazards, 
+including monitoring and enforcement of  regulations  
+  This sub- component  will be financed with Regional IDA funding, and will be regionally implemented by the 
+Pacific Community in close parternship with the RMI Environment Protection Agency and the Coastal 
+Management Advisory Committee (CMAC). The objective of this component is to strengthen the coastal 
+planning capacity of the Government of RMI, increase understanding of current and future risks, and help 
+prioritize  future investments.  This sub-component  combined with concrete investments  planned  under  Sub- 
+Component 2.1 and institutional changes promoted under Component 1 aims to promote an uptake of risk - 
+informed  coastal  planning in the RMI  government.  Support  will be provided  to develop capacity  in using  risk 
+information in land planning, infrastructure development, environmental management and the like. Risk 
+information will be made available using open source decision making tolls to strengthening the capacities 
+and promote  behavior  changes  of the development  planning  institutions  such  as EPA,  MPW,  and the NDMO. 
+The activities  undertaken under  this sub-component  will have  application for improving capacity  for disaster 
+risk information and decision support tools in other Pacific islands  countries.  
+  The sub- component involves two activities: (i) Strengthen integrated coastal risk management; and (ii) 
+identification of sustainable sources of  aggregates.  
+Strengthen the coastal risk management and long term planning. Improved coastal risk information, 
+essential for land use planning, development of coastal resilience policies and action plans, and future design 
+of coastal protection works, will be developed as follows:  
+  Expand and improve the Coastal Vulnerability Assessment (CVA) conducted by Deltares.  Improvements will 
+be introduced if appropriate using better topographical information, more accurate water level datums, and more refined wave run- up/overtopping assessments. A coastal risk index will be calculated spatially, 
+providing a semi -quantitative measure of the probability -based impacts due to coastal hazards on people 
+and infrastructure for different time periods.  
+  The risk analysis will be developed and presented in forms that can be integrated by multiple agencies in 
+their risk management tools such as EPA (Coastal Management Framework; building code improvements under SPREP), MPW (National Infrastructure Management Plan), and NDMO (impact forecasting and 
+disaster management). Support will be provided to develop capacity including in using risk information for 
+land planning, infrastructure development and environmental  management.  
+Sustainable source of aggregates. Building on previous work by SPC/SOPAC, investigation work will be carried out to identify and quantify sustainable sources aggregates in the Majuro and Kwajalein atolls. The suitability  of the aggregates  for various  uses  will be evaluated,  as well as methods  of extraction  and commercial 
+distribution to wholesale and retail markets. State- Owned Enterprise method of extraction may be considered, 
+and south- south knowledge sharing with Kiribati could be organized to examine a State- Owned Enterprise 
+aggregate mining operation in a lagoon.  
+  It is hoped  that some of  this work  can be integrated  with wider,  international  research  programs  undertaken 
+separately from the project but sponsored, to some extent, by the Bank and others. The results of these aggregate studies will have application, and be of interest, to other Pacific, Indian Ocean, and Caribbean atoll countries.  
+Componen t 3: Contingency Emergency Response (funded by National IDA)  
+ 
+Budget:  Total: 0.5 million USD ($) – GCF: 0.0 million USD ($)  
+Expected outcomes:  
+  Time taken to commit funds from the contingency emergency response component (CERC) requested by 
+Government for an eligible emergency below 4 weeks  
+JNAP objectives  supported are:
+
+
+---
+*Page 24*
+---
+
+C GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 21 OF 60   
+DETAILED PROJECT / PROGRAMME DESCRIPTION  
+ 
+ 
+ 
+  Objective 3.1 Strengthen preparedness and response capacity amongst relevant ministries and agencies 
+at national and local levels to ensure in particular a focus on addressing the needs of the most vulnerable  
+groups  such  as women,  children,  the elderly  and those  with special  needs  
+  The Contingency Emergency Response Component (CERC) will be fully funded by IDA financing, and will 
+strengthen RMI’s preparedness and capacity to immediately respond to low and medium scale disasters and would  complement  the disaster  risk insurance scheme  financed under  Phase  I of the PREP.  In particular 
+it would finance response efforts for disasters that are not covered by the insurance scheme (e.g. drought and flooding,  as well  low and medium  size disasters  that would  not trigger  a payout).  The CERC  provides  a 
+mechanism to: (i) quickly disburse funds to meet the immediate needs of RMI to finance critical imports following the proclamation of a state of emergency; or (ii) finance emergency recovery or reconstruction works and associated services. The specific details of the proposed implementation arrangements and procedures governing the use of the CERC funds will be detailed in a standalone CERC annex within the 
+Project Operations Manual (POM). Further CERC funds might be reassigned (from IDA financing) for 
+another  component  of the project  if necessary  after an event.  If the CERC  is not triggered,  the funds  may be 
+deployed elsewhere in the  project.  
+Component 4: Project management  
+  The objective of this component is to provide efficient and effective implementation support to PREP II, 
+including  staff,  operating costs,  monitoring and evaluation,  and the cost of audits.  It will also provide regional 
+support from the PSU that was established under the PREP Phase  I. 
+Component 4.1:  Project Management (funded by National IDA and proposed GCF grant)  
+Budget:  Total: 2.58 million US$ – GCF: 0.74 million US$  
+ 
+Expected outcomes:  
+       The National Disaster Committee acting as the Steering Committee of the project is meeting once per 
+year and provides  oversight  to the project;  and Project  is managed and monitored effectively  
+ 
+              This sub-component  will be implemented by RMI and will include carrying out a program of activities  designed to 
+strengthen the capacity of RMI for Project management, coordination, communications and outreach, monitoring, 
+evaluation, and reporting. It will also support Project procurement, financial management, auditing, and social and 
+environmental  safeguard oversight.  A Project  Implementation Unit (PIU)  will be established which  will include:  (i) a Project 
+Manager; (ii) a Project Accountant; and (iii) a Safeguards Advisor. Support will be provided by the PIU for procurement, financial management,  contract,  and project  management,  as well as social  and environmental  safeguards  oversight.  
+ 
+Component 4.2: Regional Program Management (funded by Regional IDA)  
+ 
+Budget:  Total: 6.12 million US$ – GCF: 0.0 million US$ 
+ 
+Expected outcomes:  
+       Strengthened capability of RMI to manage and implement the Project, including procurement, financial 
+management, monitoring and evaluation.  
+ 
+              This sub- component will be regionally implemented by SPC and will include carrying out a program of activities 
+through the Program Support Unit (PSU) to support the Republic of the Marshall Islands to manage and implement the 
+Project, including procurement, financial management, monitoring and evaluation, and operational technical assistance. 
+The PSU was established  under  PREP Phase  I, and is housed  in SPC.  The PSU will support  the efficient  implementation 
+of the broader PREP (both Phase I and Phase II), through the provision of technical and fiduciary support for the implementation of regional activities as well as operational, technical, fiduciary and reporting, monitoring and evaluation for the implementation of nationally implemented PREP Phase II  activi ties.
+
+
+---
+*Page 25*
+---
+
+C GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 22 OF 60   
+DETAILED PROJECT / PROGRAMME DESCRIPTION  
+ 
+ 
+ 
+C.4. Background Information on Project / Programme Sponsor (Executing Entity)  
+       The project will be a part of the regional Pacific Resilience Program (PREP), a ‘Series of Projects’ 
+implemented in two phases at this stage, with the potential for more phases in the future. Marshall Islands is currently  one of the four countries  participating  in the PREP Phase  I. Along  with Vanuatu,  RMI is involved 
+in a single component of the PREP Phase I involving disaster financing – PCRAFI. The other two 
+participating countries, Samoa and Tonga, have a wide involvement across all four components of the PREP. The Secretariat of the Pacific Community (SPC) and the Pacific Islands Forum Secretariat (PIFS) are also involved,  providing technical  and implementation support  and coordination between the participating 
+countries.  The proposed project will be a Phase II of PREP, dedicated only to RMI.  
+       The high level objective of Phases I and II of the PREP is to improve the resilient and sustainable 
+economic  and social  development  of the participating countries  and the region.  The Program is aligned with 
+the strategic direction and frameworks that identify needs and priorities to respond to the effects of climate change and natural hazards identified by the participating country Governments, the World Bank, and regional  bodies.  
+       The PREP is in line with regional strategies, and will help achieve the Sendai Framework for Disaster 
+Risk Reduction.  It addresses  key priorities  of the Framework  for Climate and Disaster  Resilient  Development 
+in the Pacific (FRDP),
+10 as well as key priorities of the Pacific Islands Meteorological Strategy 2012– 2021 on 
+‘Improved End-to-End Multi -Hazard Early  Warning  Systems ’. Pacific  leaders,  recognizing  the importance of 
+early warning and preparedness, developed a Regional Early Warning Strategy in 2007, to which the PREP also contributes.  
+       The project is consistent with the RMI’s Joint National Action Plan on Climate Change Adaptation 
+Disaster Risk Management (JNAP), as well as with the Country Partnership Strategy (CPS) between the 
+government of RMI and the World Bank Group. The CPS highlighted that the World Bank would: (i) play a 
+greater role in addressing the threats that RMI faces from natural hazards, including the effects of climate 
+change and sea level rise; (ii) look for opportunities to strengthen the disaster risk management capaci ty of 
+RMI;  and (iii) help to build  resilience to external  shocks,  including natural  and other  disasters.  Strengthening 
+the physical resilience of atoll islands using, for instance, coastal defense structures and ecosystem- based 
+approaches, is also a recognized priority in the recently published Systematic Country Diagnostic of Eight 
+PICs  ,
+11 including  RMI,  and will be included in the PIC 9 Regional  Partnership  Framework  which  is currently 
+under preparation. PREP Phase II is also aligned with the World Bank’s Regional Partnership Framework 
+(RPF), which covers  RMI.  
+       The project  is in line with the World  Bank’s  planning  and policy  documents,  including:  “Pacific  Possible: 
+Report on Climate and Disaster Resilience” (July 2016); the Engagement Note for “Disaster and Climate Resilient  Development  Programming in the Pacific  Islands  Region”  (April  2014);  and the Policy  and Practice 
+Note “Acting Today for Tomorrow” (2012). The project will be a practical means to fulfill these plans and policies, developed in close collaboration with donors and regional organizations, which have been well 
+received.  
+       Small Island States Resilience Initiatives (SISRI): The challenges of Small Island States are distinct 
+and complex, calling for specialized expertise. To address this, the World Bank established, in November 2014,  a SISRI  Support  Team.  It currently  includes  about  50 operational  and technical  staff concentrating  on 
+the needs of Small Island States, with specializations covering the SISRI Building Blocks. The Support Team  
+meets  regularly  around  a subject  of global  interest  – for example,  links between  climate  resilience  and social 
+protection, or measuring resilience in Small Island States. Capturing and disseminating global knowledge 
+across disciplinary and geographic teams is proving to be important to enhance the quality of World Bank  
+operations,  as well as the support  received by countries.  The SISRI  Support  team  has: (a) built 
+a community of practice amongst practitioners from Small Island States; and (b) produced a series of best  
+ 
+ 
+ 
+ 
+10 Action 2.10.7: ‘ Strengthened capacity to anticipate, resist, plan and prepare for, respond to and recover from the consequences of 
+disasters and climate change’.  
+11 World Bank, Systematic Country Diagnostic for Eight Small Pacific Island Countries: Kiribati, RMI, Federated States of 
+Micronesia, Palau, Tonga, Tuvalu, and Vanuatu. Report 102803- EAP, January 20, 2016.
+
+
+---
+*Page 26*
+---
+
+C GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 23 OF 60   
+DETAILED PROJECT / PROGRAMME DESCRIPTION  
+ 
+ 
+ 
+practices knowledge notes, aimed at disseminating south -south learning. It also provides support for design 
+and implementation of projects in various small island states, including in RMI  
+C.5. Market Overview (if applicable)  
+       Not applicable, coastal resilience (coastal protection, risk preparedness and long- term planning) is 
+considered a non- revenue generating public good, with no available market.  
+C.6. Regulation, Taxation and Insurance (if applicable)  
+Land Acquisition and Involuntary Resettlement: Land can be acquired for public use under a lease 
+arrangement  (such  as for quarrying,  laydown areas,  ramps  etc.) or land can be voluntarily  donated (through 
+MoU’s). The Land Acquisition Act 1996 makes ‘provision for the acquisition of lands and servitudes for public use including payment of compensation. In practice, the Government does not compulsorily acquire land because the Iroij hold customary power which is highly respected. Land is considered ‘anything of the earth’ 
+and extends into the lagoon and ocean.  
+On Ebeye islet there are no land disputes and land ownership is clear. There are three senior land 
+owners that are responsible for all land use permissions following customary traditions enshrined in the Constitution. Community consultation and engagement is also an integral part of development. Particularly 
+in Ebeye, all the governmental and non- governmental stakeholders during the mission emphasized tha t 
+ongoing and meaningful community consultations is very important.  
+       A long term ‘Master Lease’ for Ebeye has recently been negotiated and finalized between the government 
+and the land owners. The lease has been signed by all the parties. The lease will be fully executed by the 
+time the project becomes  effective.  
+Environmental  impact  assessments  will be submitted  and all permits  will be obtained  before  starting  any 
+coastal protection works. Applicable legislation includes the National Environmental Protection Act (1984), the Earthmoving Regulations (1989), and the Historic Preservation Act (1991). The World Bank’s 
+environmental and social safeguard processes will also apply  concurrently.  
+       It is proposed that GCF financing will fund taxes for the project. This will be consistent with the IDA co- 
+financing, which will also be used to fund  taxes.  
+C.7.  Institutional / Implementation Arrangements  
+       Although both the approach and coordination of the broader PREP is regional, PREP Phase II will be 
+implemented mainly at the national level via the relevant implementing agencies, with technical and 
+implementation support  and coordination from the Program Support  Unit (PSU)  housed in SPC as required.  
+National Arrangements  
+National Steering Committee: RMI will be responsible for implementing activities under each 
+component of the Project. The institutional framework will include the National Steering Committ ee (NSC), 
+headed by a Chairperson, which will comprise the National Disaster Committee (NDC) and representatives 
+from the National  Climate Change Committee (NC3).  The NSC  will also have representatives  from Kwajalein 
+atoll. The NSC will govern the Project at the national level and will provide the oversight and guidance for the project implementation. The Chief Secretary Office (CSO) will act as the secretariat to the NSC. The 
+NDC and CSO will be responsible for ensuring strategic coordination between the key implementing 
+agencies.  
+       Implementation Agencies: Ministry of Finance (MoF) will be responsible for the overall coordination of 
+project activities, along with the implementation of activities under Components 1, 3 and 4. Ministry of Public  
+Work  (MPW)  will be responsible for implementing activities  under  Component  2. Both MoF and MPW will 
+liaise  closely  with the Chief  Secretary  Office. Other  key line agencies  include the National  Disaster  
+Management Office (which is part of the CSO), the National Weather Service, the Environmental Protection
+
+
+---
+*Page 27*
+---
+
+C GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 24 OF 60   
+DETAILED PROJECT / PROGRAMME DESCRIPTION  
+ 
+ 
+ 
+Authority, the Kwajalein Local Government, and the Kwajalein Atoll Development Agency, with potential for 
+others to be added in the future.  
+       Project Management: A Project Implementation Unit (PIU) will be established within MoF/Division of 
+International Development Assistance (DIDA) and include a Project Manager, a Safeguards Advisor, a Project Accountant and a PIU Liaison Offic er who will be based in Ebeye. The Project Manager will assist 
+the MoF project coordination and manage the day -to-day implementation of the PREP activities for RMI, 
+including  procurement  activities  for Component  1, 3, and 4 with support  from the Regional  Program Support 
+(PSU) in SPC. The Environmental and Social Safeguards Advisor will oversee and independently audit implementation of the ESMF and RPF. Technical staff will be recruited, as necessary, to support implementation of Components 1 and 2. In particular, a specialized Coastal Engineering Design and 
+Supervision (D&S)  Firm,  will be recruited by MPW  for Component  2. The D&S Firm will work  closely  with the 
+both the PIU (particularly the PIU Liaison Officer) and MPW, and will be responsible for  planning, capacity 
+building, design, environmental and social impact assessment, land access due diligence and 
+documentation, procurement, contract management and supervision of coastal protection works and 
+investments (including the implementation of the Environmental and Social Management Plan). A Civil 
+Engineering Advisor will help MPW procure and oversee the D&S Firm and the CVA activities, review the 
+outputs, audit the construction activities, and help/advise MPW in other matters. Construction of coas tal 
+protection works,  and any work on the NMDO  facilities  will be outsourced to appropriate contractors.  
+Arrangements for Regional Organizations  
+       The general  institutional  framework  for the overall  program (Phase I and Phase  II) comprises  a Regional 
+Steering Committee (RSC), a Regional Coordination Unit (RCU) that has been established within PIFS under 
+Phase I, and a Program Support Unit (PSU) that has been created within  SPC.  
+       Regional Steering Committee: The RSC is responsible for ov erseeing the overall regional Program 
+and will provide overall oversight and advice, as well as guidance towards achieving Project and Program 
+objectives  and better  regional  integration.  It also allows  the “resilience  agenda”  to be dealt  with at the highest 
+level of the decision- making process.  The composition of the RSC  includes  representatives  from the highest 
+level of decision making for PREP Phase I and it is proposed for Phase II, both at the country and regional level. The Chair of the PREP Phas e II National Steering Committees (NSC) will be a member  of RSC.  
+Regional Coordination Unit: Phase I established a RCU within the PIFS. The RCU ensures strategic 
+alignment between the PREP and the preeminent organization for Pacific leaders to facilitate h igh level 
+strategic guidance and coordination by PIFS for Program implementation. The RCU includes a Regional 
+Coordinator  (RC)  who is housed at PIFS,  and a small  unit that deals  will the coordination  aspects  of climate 
+and disaster resilience initiatives and projects in the Pacific (among which the PREP, and Disaster Risk 
+Financing are included). This RCU acts as the Secretariat to the  RSC.  
+       Program  Support Unit:  A Program Support  Unit (PSU)  was established within  SPC under  PREP Phase 
+I and will provide  operational,  technical  and fiduciary  support  to the PIU of PREP  Phase  II. The PSU will also 
+be responsible for the implementation of the regionally implemented technical assistance activities set out 
+in Component  1.2 and 2.2 of the Project.  A “Service  Agreement”  will be prepared  and maintained  throughout 
+the Project implementation period that clearly sets out the roles and responsibilities between SPC and RMI 
+during the project. The PSU includes: (i) a Project Manager; (ii) an international Procurement Advisor; (iii) a 
+Program Accountant; (iv) Monitoring and Evaluation expertise; and (v) part -time procurement quality 
+assurance.  Organization chart of the project
+
+
+---
+*Page 28*
+---
+
+C GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 25 OF 60   
+DETAILED PROJECT / PROGRAMME DESCRIPTION  
+ 
+ 
+ 
+Organizational Chart
+
+
+---
+*Page 29*
+---
+
+C GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 26 OF 60   
+DETAILED PROJECT / PROGRAMME DESCRIPTION  
+ 
+ 
+ 
+ 
+Flow of funds  
+ 
+ 
+ 
+Role of World Bank  
+The World Bank will work closely with both the Government of RMI and SPC, and will be represented by a Task Team 
+Leader, who leads a team of people (known as the “Task Team”) with different technical specializations who each 
+contribute in their area of expertise. World Bank responsibilities and tasks include:  
+• Administering of National IDA, Regional IDA, and GCF  funds  
+• Overall administrat ion of the project and implementation support  
+• Supervision of all procurement financed under the IDA and GCF  Grants  
+• Overseeing  the implementation  of the Bank’s  environmental  and social  safeguards  measures.  
+The Task  Team will also conduct  regular  supervision and implementation support  missions  to assist  with resolving issues 
+that might be causing delays in achieving the project objectives and to check that the project is being implemented according to the agreed financial, legal and procurement processes. During these missions the Task Team may meet 
+with key stakeholders (both within and outside government) and with project beneficiaries. The Task Team may review 
+legal,  financial  and procurement  records  and make suggestions  on improvements  to procedures.
+
+
+---
+*Page 30*
+---
+
+ 
+ 
+ 
+DETAILED PROJECT / PROGRAMME DESCRIPTION  
+GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 27 OF 60  
+ 
+C.8. Timetable of  Project/Programme Implementation  
+Please provide a project/programme implementation timetable in section I (Annexes) . The table below is for illustrative purposes. If the table format 
+below is used, please refer to the activities as numbered in Section H. In the case of outputs, please mark when all the required activities will be 
+completed.  
+ 
+TASK Year 1  Year 2  Year 3  Year 4  Year 5  
+Q1 Q2 Q3 Q4 Q1 Q2 Q3 Q4 Q1 Q2 Q3 Q4 Q1 Q2 Q3 Q4 Q1 Q2 Q3 Q4 
+C1 Institutonal Strengthening, Early Warning, and  Preparedness                     
+ 
+C1.1  Institutional Strengthening of DRM and CCA                      
+Improve early warning communications systems                      
+Roadmap and investments for NDMO modernization                      
+ 
+C1.2  Impact forecasting                      
+NDMO capacity building               
+Post disaster needs assessment                      
+                   
+C2 Strengthening  Coastal Resilience                      
+C2.1  Coastal protection investments                      
+C2.2  Strengthen integrated coastal risk management                      
+Sustainable sources of aggregate                      
+C3 Contingency Emergency Response                     
+                    
+C4 Project Management, Monitoring & Evaluation                      
+ 
+ 
+Mid- term and final independent reviews  
+C
+
+
+---
+*Page 31*
+---
+
+E GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 28 OF 60   
+EXPECTED PERFORMANCE AGAINST INVESTMENT CRITERIA 
+ 
+ 
+ 
+D.1. Value Added for GCF Involvement  
+The project  aims  to address  one of the most  pressing  financing gaps  for Small  Island  States:  their 
+capacity to invest in climate and disaster resilience. As these investments do not generate revenue, they do not attract  private  investors  and are unlikely  to be financed  through market  mechanisms.  Therefore, 
+without support from the Green Climate Fund, small island states such as RMI will not be able to allocate 
+a sufficient part of their budget to invest in climate resilience, even if such investments would provide 
+significant,  non-financial  return  on investment  and social  benefits  over the long term,  and reduce the future 
+burden of climate risks.  These countries  are also increasingly  using limited  amounts  of development  finance 
+for address the current risks of climate  change.  
+       Scaling -up and mainstreaming investments in coastal resilience. The co -financing from the GCF 
+will allow climate change considerations to be fully integrated into this proposed coastal protection and disaster risk management project co- financed by IDA. Co- funding allows a significant, worthwhile project 
+to be delivered, thus avoiding the limitations of small scale operations  and a piecemeal approach. 
+Economies of scale will be thus attained, with local capacities being improved, the private sector will be engaged, and incentives for future investments will be improved. The GCF co- financing of technical 
+assistance, provided alongside the investment support, will allow climate resilience to be incorporated into the long -term development  planning of  RMI. The regional  technical  assistance,  carried  out by SPC as part 
+of the project will also benefit the other Pacific Island countries, with studies, tools and guidelines, to be replicated in other  PICs.  
+       Addressing financial and technical barrier for adaptation to climate change . GCF will provide 
+opportunities  for RMI to develop and invest  in innovative solutions,  to overcome the current  problems,  such 
+as the lack of local building  materials  and capacity  of contractors.  Local  contractors  will have an opportunity 
+to deliver  the works,  supported by international  experts.  Coastal  adaptation solutions  will benefit  the current 
+population and following generations. The solutions, the development of a coastal risk information system and the outcomes of the aggregate studies, are expected to set a new standard for coastal risk mitigation 
+in RMI, with direct, cross -over benefits for other atoll countries. Without significant and certain sources of 
+financing, approaches such as the one proposed for RMI under this proposal will always be difficult. The 
+upfront  costs are too high for a country  such  as RMI to finance it on its own.  However,  with external  funding, 
+solutions and support as described in this proposal are cost effective in the long- term after including 
+operational and maintenance costs and the cost of environmental and social  degradation.  
+Building the enabling environment for additional financing. Even though the coastal resilience 
+component  of project  will target  mainly  Ebeye,  and to a lesser  extent  Majuro,  the whole country  will benefit 
+from the improved dissemination of the early warning systems and strengthened preparedness. The most vulnerable will benefit as currently they have less access to such services because of remoteness and limited  access to communication  systems.  The approach  in the long term will cover  the whole  country  and, 
+therefore,  will set a pathway  for the next set of investments  in which  coastal  infrastructure,  improved  spatial 
+planning and ecosystem- based solutions will be promoted as  appropriate.  
+       Strengthening the knowledge basis to develop long term strategy for climate adaptation. W
+ ithout 
+the proper understanding of future impacts of disaster risks and climate change, it is not possible to envisage long term resilient strategies. However, this information doesn’t exist yet in RMI to allow the 
+government  to plan for the longer  term.  This project  will rely on the existing data and past studies,  but also 
+fill the gaps and  provide the scientific support for decision making over the longer  term.  
+       Transforming adaptation approaches  for RMI.  RMI,  as any other  small  islands  state,  can not follow 
+traditional approaches to build its resilience. GCF will provide RMI through the project with the means to 
+shift paradigms, to go from the current ad- hoc solutions, to an adaptive approach. Starting from an overall 
+analysis  of the needs  for adaptation,  RMI will be able to have a result -driven  vision  to determine its  needs, 
+and define its own priorities.  The proposed options  to be financed  by GCF  would  provide  RMI the flexibility 
+to expand them more if needed in a future, if climate scenario would be more impacting than currently thought,  with neither  locking  the shoreline  in a dead- end path nor preventing  the use of the environment.  
+D.2. Exit Strategy
+
+
+---
+*Page 32*
+---
+
+E GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 29 OF 60   
+EXPECTED PERFORMANCE AGAINST INVESTMENT CRITERIA 
+ 
+  
+ 
+       The project  will invest  significantly  in strengthening  capacity  and existing  institutions  in charge of early 
+warning, preparedness and response to hydro- meteorological and geophysical hazards (e.g. National 
+Disaster Management Office and the National Weather Service). Technical operations staff including meteorologists, hydrologists and emergency response specialist will be trained to ensure that staff skills and knowledge is current, and to introduce new techniques to improve forecast warnings and communications. Tools will be developed to monitor and observe,  analyse and forecast, and to 
+communicate and disseminate information. The capacity of staff at the Ministry of Public Work, and EPA 
+will also be strengthened in terms of enhanced knowledge of the design, location engineering and 
+construction  of coastal  protection  measures,  as well as long term coastal  resilience planning.  
+       Maintenance  of existing  coastal  protection infrastructure and early  warning  and forecasting equipment 
+is currently  limited  (e.g. lack of spare parts,  inadequate  maintenance for operations  and maintenance etc.). 
+The investments in coastal protection will be designed for a lifetime of 30 years and are not anticipated to have significant maintenance requirements. The rock rip rap can also be maintained without the need for heavy equipment and thus can be done locally if necessary. The project will ensure that there is adequate training for regular inspection. In addition, the project will provide guidance to the key Ministries (Finance, Public works) to ensure budget allocation for the maintenance of early warning and forecasting systems 
+and for existing coastal protection  infrastructure.  
+       Exploring, and if deemed sustainable, developing alternative local sources of aggregates would allow 
+to reduce th e costs of  maintenance of the proposed infrastructure,  yet already  designed to  withhold strong 
+events,  but also facilitate  future coastal  protection works  by both the  government  and partners.  
+       The broader PREP (including Phase I and Phase II) will also strengthen regional cooperation, and 
+create a pool of expertise, that will be critical to ensure the sustainability of the PREP. SPC, in close 
+collaboration with  other  regional  organizations  (e.g. US National  Atmospheric  and Oceanic  administration, 
+Fiji Tropical  Cyclone  Warning Center,  the Pacific  Tsunami  Warning Center  in Hawaii,  Secretariat  of Pacific 
+Regional Environment Program, the Oceania Regional Seismic Monitoring Network, and the UN Office for the Coordination  of Humanitarian Affairs  etc.), will provide technical  and policy  guidance.
+
+
+---
+*Page 33*
+---
+
+F GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 30 OF 60   
+APPRAISAL SUMMARY  
+ 
+ 
+ 
+In this section, the accredited entity is expected to provide a brief description of the expected performance of the 
+proposed project/programme against each of the Fund’s six investment criteria. Activity -specific sub -criteria and 
+indicative assessment factors, which can be found in the Fund’s Investment Framework , should be addressed where 
+relevant and applicable. This section should tie into any request for concessionality made in section B.2. 
+ 
+E.1. Impact Potential  
+Potential of the project/programme to contribute to the achievement of the Fund’s objectives and result areas  
+E.1.1. Adaptation impact potential  
+       The project will contribute to the achievement of climate- resilient sustainable development of RMI. 
+Construction of coastal  protection works  in the most  vulnerable coastlines  of the country  along high value 
+zones will reduce the vulnerability of women and men to future impacts of climate change including 
+typhoon and heightened wave actions that have caused significant damages to lives, livelihoods and 
+economic assets in the past.  
+       The project development objective is to strengthen resilience to climate change and natural hazards 
+in RMI through improved early warning systems and preparedness, climate resilient investments in 
+shoreline protection, and financial protection.  
+       The proposed  option for coastal  protections  is selected partly  because it is flexible  and easy  to modify 
+and upgrade with changes  in climate  within  the 30 year lifetime  of the infrastructure,  but also maintenance 
+through local contractors. It is envisaged that the coastal protection works will result in a reduction of 
+annual damages in the amount of USD 700,000 per  year.  
+       The focus  on longer  term climate  resilient  sector  and development  strategies  will ensure that the 
+limited  areas  available  for development  and population  expansion are used  effectively  and there  is a move  
+away  from high risk areas  and/or  within  the zones  protected by the investments  and/or  on the lagoon side.  
+       The investment solutions, the maintenance budget allocation, and the longer -term changes in planning 
+will contribute to lessons  for other  islands  within  RMI and other  atoll nations.  
+       The feasibility studies with engagement of international and regional knowledge hubs and experts 
+has already generated lessons and data that has not existed before. This itself will be the basis of knowledge sharing for small islands such as the through the Small Island States Resilience Initiative 
+(SISRI).  
+E.1.2. Key impact potential indicator  
+Provide specific numerical values for the indicators below.  
+ 
+ 
+ 
+ 
+ 
+ 
+GCF  
+core 
+indicators  Expected tonnes of carbon dioxide equivalent (t 
+CO 2 eq) to be reduced or avoided (Mitigation 
+only)  Annual  N/A 
+Lifetime  N/A 
+ 
+ 
+• Expected total number of direct and 
+indirect beneficiaries, disaggregated by 
+gender (reduced vulnerability or 
+increased resilience);  
+• Number of beneficiaries relative to total 
+population, disaggregated by gender 
+(adaptation only)   
+ 
+ 
+ 
+ 
+Total  10,000 (at least 6,000 females) people 
+will be protected by the coastal 
+protection investments  
+6,000 (at least 3,000 females) will have access to improved early warning 
+communication systems  
+23,800 (at least 11,900 females) will 
+indirectly benefit from the improvement 
+in preparedness and early warning systems
+
+
+---
+*Page 34*
+---
+
+F GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 31 OF 60   
+APPRAISAL SUMMARY  
+ 
+ 
+ 
+   
+Percentage 
+(%) At least 22% of the total population 
+directly, with at least 50% of the women 
+and an additional 70% indirectly,  
+ 
+ 
+ 
+Other 
+relevant 
+indicators   
+ 
+• Improved status of disaster communication network  
+• JNAP activities are  implemented 
+• Multi Hazard Early warning systems are established and operating  
+• Length of coast with reduced vulnerability to natural hazards and climate change impact  
+ 
+E.2. Paradigm Shift Potential  
+Degree to which the proposed activity can catalyze impact beyond a one- off project/programme investment  
+E.2.1. Potential for scaling up and replication (Provide a numerical multiple and supporting rationale)  
+       The Project will support a paradigm shift for resilience in RMI, through the provision of transformational 
+change to increase resilience and reduce risk. The project promotes a systematic transformation of RMI’s  
+coastal  management  through innovative solutions  in the densely  populated areas of Ebeye and Majuro. 
+The project will draw on innovative and highly technical modelling of the RMI coastline to inform 
+investments in coastal protection. It will also seek out new means for sourcing sustainable aggregate from 
+atoll islands for use in construction, which will have wider benefits for other atoll nations. In addition, the 
+project will strengthen enabling environments for investments in resilience, through improved  planning,  
+effective  ecosystem  management  and prioritization  of investments  in climate and disaster resilient  
+development.  
+       The scale of the proposed GCF/IDA project allows to address coastal resilience in a systematic 
+manner within a programmatic approach that combines national and regional support and address barriers (e.g. local capacity including private sector, land use planning challenges, lack of supply of aggregates) which past interventions have not been able to do. 
+Risk-based management  approaches  can deliver  real benefits,  in reducing risks from extreme events, 
+coastal inundation, and sea- level rise, to populations in Ebeye and Majuro. Basing the future 
+developments of both islands on risk assessment, as developed for the preparation of the project and expanded during its implementation, allows to reduce future risks, while not preventing future development. Such an overall, comprehensive approach to think ahead, could be replicated in other 
+countries, in the region, but also globally.  
+       The proposed coastal protection solutions would be innovative in the design, and would be the first 
+of its type to be built in low-lying atoll islands  in the Pacific.  The solution  provides  the advantages  of being 
+adaptive to  the potential  changes  in sea level and will require relatively  low cost maintenance and repair. 
+This project could therefore be efficiently scaled -up and replicated to also cover additional coastlines of 
+Majuro and RMI.  
+E.2.2. Potential for knowledge and learning
+
+
+---
+*Page 35*
+---
+
+F GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 32 OF 60   
+APPRAISAL SUMMARY  
+ 
+ 
+ 
+The project preparation activities have already provided new knowledge on the actual coastal risks 
+Ebeye is and will be facing. This knowledge production and dissemination will be continued during the 
+implementation  of the project  to expand  the assessment  to all of RMI’s  urbanized areas.  This process  will 
+rely on existing  data and i nformation,  collection of new information,  and modeling  to evaluate current  and 
+future impacts. Results will be presented via a unique system, developed and managed by SPC, easily 
+accessible and useable by the different stakeholders and decision- makers.  
+       An additional  benefit  of SPC’s  involvement  in the project  will be to facilitate  the sharing  of knowledge 
+and experiences of the countries from the region, which are facing similar challenges. The different solutions developed under  the project would help to improve coastal protection practices in the region 
+through the opportunity  to share the experience and the results  of the proposed project  with other  partner 
+countries. The analysis of the coastal vulnerability of RMI could be extended to other Pacific Islands Countries, which would improve the general knowledge on climate and disaster resilience in different sectors across PICs.  
+       The study on local sustainable sources of aggregate, combined with the analysis of the marin e and 
+biological conditions of coastal reefs and ecosystems would also improve the overall knowledge of the islands and their health and environmental and social  conditions.  
+Reinforcing preparedness, especially in outer islands, will support learning and awareness raising, 
+dissemination of risk information,  and best  practices  to reduce the risk  and prepare  the individual  houses 
+and assets for extreme events.  
+E.2.3. Contribution to the creation of an enabling environment
+
+
+---
+*Page 36*
+---
+
+F GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 33 OF 60   
+APPRAISAL SUMMARY  
+ 
+ 
+ 
+       The lack of effective mechanisms and institutions to provide guidance, and to develop strategies for 
+climate change adaptation and mainstreaming has so far prevented the adoption of effective short and long term solutions  for climate  change and disaster  risk management  in RMI.  The refinement  of the JNAP 
+framework and its operationalization, will provide the required structure to support the resilient development in all sectors. This new structure will also support decision and policy -makers with 
+comprehensive perspectives of climate related issues, and in turn allow them to take informed decisions 
+(such as on the issue of constrained and legally binding land- use planning, to prevent the installation of 
+future assets and activities in high risk  areas).  
+       The project will support the development of capacity in climate change adaptation and disaster risk 
+management,  and build  the capacity  of institutions  such  as the NDMO  and EPA.  This will be done  through 
+in-depth training, including long- term, on- the-job training and mentorship. It will provide the required 
+capacity (both human and materials) for effective collaboration mechanisms for disaster preparedness and response, and long- term strategy  plann ing. 
+       The analysis  of alternative sources  of aggregate aims  to identify  access to possible  local sustainable 
+sources of aggregates, allowing contractors (in the event of suitable outcomes) to further construct and 
+maintain infrastructure with lower cost, enabling the reduction of the marginal cost of resilience 
+investments in the future. This analysis will also contribute to the knowledge of the regulatory agency, in this case EPA, to develop, adopt and enforce regulation to prevent the use of harmful techniques or 
+inadequate locations for the extraction of sand and rocks. In addition, regulatory capacity building and 
+support for the EPA will also be strengthened through the  project.  
+       The investigation of a new design and construction of an artificial berm in front of the revetment to 
+better manage the increasing risk from changing climate, would test innovative solutions to support the 
+protection of the coastlines, and by doing so, the whole land. Such risk reduction would allow the installation  of new activities  and infrastructure,  and protect  lives and livelihoods.  
+E.2.4. Contribution to regulatory framework and policies  
+Describe how  the project/programme strengthens  the national  / local regulatory  or legal  frameworks  to systematically 
+drive investment in low -emission technologies or activities, promote development of additional low -emission policies, 
+and/or improve climate- responsive planning and development.  
+ 
+       The project seeks to strengthen the enabling environment of RMI in a number of ways. A project 
+implementation unit will be integrated into the Ministry of Finance (DIDA) which will include a project manager, project accountant, safeguards officer, and other support as needed. Training on procure ment 
+will be made  available to government  agency  staff by SPC under  Component  4.2. In addition,  Component  
+1 is targeted at strengthening the institutional capacity of key agencies responsible for disaster preparedness and response, in particular the National Disaster Management Office. Furthermore, the government successfully implementing the project will enable strengthened financial management and 
+safeguards, and in particular will result in improved and systematic approach to coastal protection. The 
+linkages between the national and local governments will enable institutional strengthening at various level and increase the information flow.  
+ 
+E.3. Sustainable Development Potential
+
+
+---
+*Page 37*
+---
+
+F GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 34 OF 60   
+APPRAISAL SUMMARY  
+ 
+ 
+ 
+Wider benefits and priorities  
+E.3.1. Environmental, social and economic co- benefits, including gender -sensitive development impact  
+       This project  lies at the heart  of sustainable  development  and poverty  reduction  by: (i) serving the most 
+vulnerable women and men by supporting the provision of early warning mechanisms and improving disaster  risk awareness;  (ii) supporting  risk-informed  planning  and investments  to reduce disaster  impacts 
+on societies,  managing residual  risks and uncertainties;  and, (iii) strengthening the capacity  of people and 
+institutions to prepare for and respond to disasters and climate change.  
+Environment 
+       The study of sustainable sources for aggregates, with the associated regulations to ban negative 
+practices, would help promote sustainable, and low -environmental impacts, building practices, reducing 
+the pressure on the coral reef and on the marine  ecosyst em. 
+       Ecosystem -based approaches  and reinforcement  of marine protected areas  would  be part of the long 
+term strategy, built on the coastal management framework and the coastal risk assessment, ensuring both the prevention of increase of human assets in exposed areas and reducing the risk through natural solutions. These would have the benefit of reinforcing marine and coastal ecosystems. For both Majuro and Ebeye, landscaping, shade and screen tree planting, marine habitat restoration, and creating 
+recreational spaces will be included as part of any coastal protection works. Some of these activities use 
+simple and appropriate labor -based methods  that are gender -sensitive  and suitable  in the context  of RMI. 
+A decision would be made on the suitability and specifics of such approaches during the implementation of the project, following completion of a CVA for Majuro. More extensive ecosystem based approaches will not be suitable  for coastal  protection  on the ocean side of Ebeye  due to  coastal  geography  and wave 
+properties.  However,  additional  ecosystem  based solutions  will be supported for the lagoon side of Ebeye 
+and the Majuro coastline, and may include options for (re)vegetation, creation of shoreline berms (a nourishment approach currently being explored by the RMI Coastal Management Advisory Committee), and improving coral growth to allow them to buffer some of the wave actions. Mangroves plantation at this stage  may be a limited  solution,  as mangroves do not occur  naturally  in Majuro or Ebeye.  
+       The reinforcement and capacity building of the EPA would also provide a co- benefit in terms of 
+strengthened capacity  for the assessment  of ESIA for coastal  protection works  and general  environmental 
+supervision of  works.  
+Social  
+       The construction of coastal protection works will be combined with revegetation for landscaping and 
+improved efficiency of the risk reduction, bringing additional green spaces in Ebeye which will also contribute to socio- economic  outcomes.  
+       The inclusion of the CERC (Component 3) in the project will reduce the burden of disasters, particularly 
+for the most vulnerable households, by supporting the government with the provision of emergency  relief  
+needs.  This would reduce  the poverty  trapping  effect  form natural  disasters,  as described in the shock 
+waves report. As women’s burdens often increase in the event of a disaster and they are often expected to do unremunerated work in recovery (for example, caring for injured, children etc,), the CERC would 
+contribute to reducing women’s burden if a disaster were to strike.  
+Economic  
+       The identification of sustainable aggregate sources would provide opportunity for cost reduction in 
+construction and maintenance activities and also engage the local  private  sector.  
+       T
+esting of the innovative solutions would provide locally -tested solutions for atoll islands that are 
+increasingly  impacted  by climate  change,  and this could have wider  benefits  for other  atoll nations.  
+Gender Equality and Women’s empowerment  
+        Women typically outnumber men among people dying from natural disasters. This is often because 
+of cultural and behavioral restrictions on women’s mobility and social ascribed roles and  responsibilities
+
+
+---
+*Page 38*
+---
+
+F GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 35 OF 60   
+APPRAISAL SUMMARY  
+ 
+ 
+ 
+such  as taking  care of children  and elderly.  Research  has identified  that women’s  empowerment  is key to 
+build community  resilience.  In order  to achieve the development  outcomes  of the project,  ensuring gender 
+equality and women’s empowerment will be key. As informed by the Gender analysis undertaken for the project, women in RMI, have overall lower access to human endowments and economic opportunities. The female participation in decision -making processes  are low and gender -based v iolence  is high.  These 
+inequalities  increase women’s  risk of being negatively  impacted by climate  change  and natural  disasters, 
+as evidence show  that inequalities  in a society  are often amplified  at the time of a disaster..  
+        Taking these vulnerabilities  into account,  gender  equality  will be promoted in the project.  The project 
+has identified several actions to reduce the gender gaps addressed above related to mitigation of 
+unanticipated consequences and/or risks that the project creates, ensuring equal opportunities and 
+avoiding potential  impact  of project  activities  such  as increasing women’s  work  load,  access to income  or 
+assets and risk of gender -based violence.  
+ 
+ 
+E.4. Needs of the Recipient  
+Vulnerability and financing needs of the beneficiary country and population  
+E.4.1. Vulnerability of country and beneficiary groups (Adaptation only)  
+       RMI is categorized as being a highly vulnerable nation according to the Environmental Vulnerability 
+Index. Climate change poses a serious threat as rainfall patters change, frequency of droughts increase, 
+intensity and frequency of storms increase and sea levels rise. Women and children remain the most 
+vulnerable groups  to climate change and natural  disasters  and in Ebeye 40% of the population is between 
+the ages of 0- 14 years  old. 
+       As a highly vulnerable and low -lying island nation with no major points of elevation above 2 meters, 
+RMI already experiences frequent and serious climate impacts, as well as natural hazard events. These impacts  will continue to pose serious  challenges  across the full spectrum of RMI’s  development  prospects 
+and priorities.  
+       99% of RMI population is  living  in coastal  areas,  so is directly  exposed to coastal  hazard and climate 
+risks. The population has no proper place to retreat to safer areas, and are therefore obliged to face the continuous  threats  coming  from the ocean.  Inundation events  cause overflow  of raw sewage in  streets  of 
+Ebeye resulting in several  areas  with high prevalence of waterborne disease particularly  amongst  children 
+who play in the flooded roads.  
+       Like most  atolls  systems,  islands  tend to be only a few meters  above sea level at most,  and often less 
+than a few hundred  meters  wide,  sometimes  considerably  narrower.  Urbanized atolls  such  as Ebeye  can 
+attain high densities  of populations.  Anthropogenic  developments  on these islands  ‘pin’ natural  atoll island 
+evolution. Unpopulated atolls, in areas where carbonate sediment is plentiful, change shape over time, and island centers may grow higher if affected by major storms or tsunamis. Once roads, buildings, 
+houses, and so forth, are constructed, islands cannot change shape easily, and beach erosion can pose a threat to constructed infrastructure. Tidal changes pose a significant threat, particularly when the sun, moon and earth are aligned in such a manner as to cause the highest (King) tides, due to the strongest 
+gravitational attraction at that moment in time. Such high tides can be further exacerbated by large sea 
+swells which may coincide with times of King tide: at such times the atolls will experience periods of high 
+seawater  inundation.  
+       Limited and / or weakly enforced urban planning can result in people settling in some of the lowest - 
+lying and historically frequently flooded areas of atolls. Vari able efforts at building sea defenses and a 
+range of qualities of seawater defense construction have had mixed results with respect to people and building protection in RMI. Sometimes sea defenses can protect certain areas of coastline, but can also 
+increase coastal impacts in adjacent geographical areas. Atoll beaches or offshore reef may be used  for 
+aggregate extraction for the built environment, increasing vulnerability to the impacts of sea inundation.
+
+
+---
+*Page 39*
+---
+
+F GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 36 OF 60   
+APPRAISAL SUMMARY  
+ 
+ 
+ 
+Sea level rise poses additional increased risks of coastal and atoll flooding and inundation in Ebeye and 
+Majuro, as well as loss of land and coastline.  
+E.4.2. Financial, economic, social and institutional needs  
+       RMI faces many of the challenges common to small remote economies. Its size and remoteness 
+increase the costs of economic activity and make it unable to achieve economies of scale. Remoteness 
+also imposes transport expenses that increase the costs of trade, and fundamentally constrain the 
+competitiveness of exports of goods and services internationally. These same factors also push up the cost and complexity  of providing public  services and fulfilling  the basic  functions  of Government.  
+       These barriers have led to an undiversified economic base and persistent current account deficits. 
+With limited export and domestic production opportunities, public administration and social services constitute the largest share of the economy – 40 percent of Gross Domestic Product (GDP). The current 
+account deficit excluding grants has averaged 47 percent of GDP since  2007.  
+       The 2015 GDP  per capita figure  of US$3,325 classifies  the country  as “lower  middle- income”  although 
+there  are substantial  disparities  in cash  incomes,  which  are high in Majuro  and Kwajalein  (due to a greater 
+concentration of highly paid public servants) relative to outer atolls. Although the incidence of absolute poverty is low, data indicate high levels of inequality, evidence of malnutrition in urban areas, and limited access to  cash  incomes  in rural areas.  Incomes  in communities  affected  by nuclear  testing and receiving 
+compensation are significantly higher than those in other islands. Elsewhere, lack of income- earning 
+opportunities has led to concerns over rising unemployment, financial hardship (including declining real incomes and higher levels of consumer debt), and hunger. These factors provide powerful incentives for migration  from outer  atolls  to the two major  urban centers,  as well as externally  to the United  States.  
+The Honolulu District U.S. Army Corps of Engineers conducted a field engineering survey of the civil 
+infrastructure on Ebeye  and reported that  infrastructure  is extremely  poor and deteriorating rapidly  due to 
+a highly corrosive salt environment, lack of consistent maintenance, and deprivation of improvement investment. While electricity is meeting the current needs of the population, all other systems are unable to fully support  the community's  needs,  present  significant  health risks or are completely  non-functioning. 
+The sewer treatment plant has not been in operation in over five years and the water production and distribution systems provide inadequate service. Water rationing has  been ongoing for many years with 
+distribution occurring only twice a week for only 45 minutes a  day. 
+Rates  of Non-communicable disease in Marshall  Islands  are some of the highest  in the world  and are 
+the second leading cause of death. Roughly 62.5% of the population is suffering from diabetes, heart 
+disease and/or obesity and related health complications. NCDs cause a substantial drain on economic 
+potential by adversely affecting the four main factors of economic growth: labour supply, productivity, investment, and education. Majuro and Ebeye are two of three tuberculosis hotspots in the Pacific. The 
+Center for Disease Control reported a TB prevalence rate of 466/100,000 population - the highest in the 
+Pacific and one of the highest in the  world.  
+E.5.  Country Ownership  
+Beneficiary country (ies) ownership of, and capacity to implement, a funded project or programme  
+E.5.1. Existence of a national climate strategy and coherence with existing plans and policies, including NAMAs, 
+NAPAs and NAPs  
+       Building climate resilience, especially in coastal areas, is a critical priority of the Government of RMI 
+as highlighted in the Joint National Action Plan on Climate Change and Adaptation Disaster Risk Management (JNAP) which covers the period 2014- 2018. This action plan has been developed by the 
+government,  with the support  and contribution  form partners,  with SPC playing  a key role. This action  plan 
+has been built upon the well-established Disaster  Risk Management  National  Action  Plan (DRM  NAP)  as 
+well  as  National  Climate  Change  Policy  Framework  (NCCPF).  These  documents  encompass  the
+
+
+---
+*Page 40*
+---
+
+F GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 37 OF 60   
+APPRAISAL SUMMARY  
+ 
+ 
+ 
+adaptation part of the RMI’s Intended Nationally Determined Contribution made in 2015 in preparation of 
+the COP22.  
+GCF funds will also help build the long- term capacity of the Government of RMI to address the 
+challenging issues  related  to climate  change,  and therefore,  enable RMI to implement  the priority  actions 
+enshrined in its National Climate Change Policy and Joint National Action Plan.  
+       Based on discussions with the government (senior government Secretaries and Nitijela Cabinet 
+members), the Project is designed to: 
+i. fill a clear gap and critical need in donor supported activities by concentrating on strengthening early warning and preparedness for communities, and coastal protection in vulnerable areas starting in Ebeye 
+(supporting JNAP goals 1, 2, 3, and 5) 
+ii. strengthen disaster preparedness and response in RMI, particularly supporting the government’s recent 
+initiative to restructure the NDMO (supporting JNAP goal  1) 
+iii. provide capacity and financial support for disaster response, providing PDNA assistance if required, and 
+access to funds, with different eligibility requirements, that supplements emergency funding from the 
+Pacific Catastrophe Risk Assessment and Financing Initiative (PCRAFI) insurance program and USAID 
+under the Compact of Free Association (supporting JNAP goal  3) 
+iv. integrate governance of, and improve planning for, disaster  and climate  change management  (supporting 
+JNAP goals 1 and  6) 
+allow RMI to more directly benefit from the established arrangements under PREP I, and thereby the 
+knowledge and resources of SPC and PIFS in disaster and natural hazard risk management (supporting 
+JNAP goals 1, 2, 3, and 5).  
+       Community  engagement  and consultation  will be paramount  throughout  this project,  and communities 
+will be involved in planning,  implementation and evaluation of activities  to improve early  warning capacity, 
+as well as coastal protection works. Community and land owner consultation and engagement will be an 
+integral part of project implementation in regards to coastal protection works to inform the vulnerability 
+assessments,  inform  the identi fication and selection of technologies  and sites,  inform concept  and detailed 
+design,  to identify  the potential  social  impacts  from the works  and suitable  mitigation options,  and to plan 
+for lease arrangements, involuntary resettlement and / or compensation for lost assets. Citizen engagement will also assist with identifying and mainstreaming gender issues into the project. The 
+Safeguards Advisor will be responsible for preparing a Stakeholder Engagement Plan (SEP) and 
+coordinating the implement ation. The SEP will document the approach to citizen engagement, 
+consultation, engagement with land owners throughout the project and how the information will flow to 
+and from the community and stakeholders to the PIU and the design/construction team. This  will also 
+include how this project will coordinate with citizen engagement programs on Ebeye for other infrastructure and disaster  resilience projects  (such  as water  and sanitation,  energy),  to avoid consultation 
+fatigue and mixed messages. While the PIU will coordinate the SEP, there will be roles and responsibilities 
+for many of the project stakeholders, such as the Kwajalien local government agencies, the PIU, MPWU 
+and the design team. This SEP process will show how the citizen engagement will be integrated into the 
+project implementation process and identify key milestones where information flow is necessary to inform 
+the project outputs. The objective is to ensure that the beneficiaries and affected people are fully informed 
+and have the ability to contribute to the project on their  terms.  
+The ESIA process will identify potentially affected people and a more targeted and specific 
+consultation plan will be developed to engage with this group. This targeted process will identify people 
+or groups of people who may be adversely affected by the project, despite best efforts to avoid impacts 
+in design and identify suitable mitigation measures, which may include compensation or other types of 
+support. A Resettlement Action Plan will be prepared to manage the specific impacts on people as a result 
+of temporary or permanent resettlement and / or the loss of assets as a result of land acquisition, as per the Resettlement Policy Framework.
+
+
+---
+*Page 41*
+---
+
+F GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 38 OF 60   
+APPRAISAL SUMMARY  
+ 
+ 
+ 
+E.5.2. Capacity of accredited entities and executing entities to deliver  
+       The World Bank Group Engagement in Resilience in Small Island States is significant. During the 
+period of Fiscal  Year  (FY) 2011  to 2015,  the World  Bank’s  assistance  to climate  and disaster  resilience  in 
+Small Island States averaged approximately US$180 million in annual commitments. IDA credits and grants made up the bulk of resilience financing, often complemented by trust fund grants. Climate and 
+disaster resilience investments have expanded considerably in recent years. Starting with disaster 
+response operations  in the 1970s,  the World  Bank  became engaged in ex-ante disaster  risk management 
+and adaptation investments  in the Caribbean and Pacific,  with initial operations  in Kiribati,  Samoa  and St. 
+Lucia in the early 2000s. These investments expanded quickly and now comprise 25 percent the World Bank assistance to Small Island States. This expansion was enabled by three main factors: (a) technical 
+assistance provided through the Global Facility for Disaster Reduction and Recovery (GFDRR), allowing 
+for intensive technical and fiduciary assistance to clients; (b) concentrating program coordination and fiduciary management under a single Government unit, often located in Ministries of Finance or Offices of the President;  and (c) developing programmatic  operations  which  combined several  sources  of funding 
+such as IDA, IBRD or the Pilot Program for Climate Resilience (PPCR) as a core, often complemented by trust funds. Countries benefit from using a single set of procedures and a single coordinating unit, resulting 
+in lower overhead costs and an ability to manage larger sums of funding (thereby also helping to pave the 
+way for direct access). It also has progressively shifted the focus of assistance from ex -post disaster 
+reconstruction to proactive climate and disaster  resilience.  
+E.5.3. Engagement with NDAs, civil society organizations and other relevant stakeholders  
+       The National Designated Agency, the Office of Environmental Planning & Policy Coordination 
+(OEPPC)  has been involved and consulted from the scoping mission  (February  2016)  to the pre-appraisal 
+of the project (November 2016). During those missions, including the identification mission in August 2016, stakeholders have been consulted both at the national level and at the atoll level for Kwajeiilen, where Ebeye is located. The following institutions and organisms were consulted and their feedbacks have been incorporated in the design of the proposed project:  
+- Ministry of Finance  (MoF)  
+- Chief Secretary Office (CS) 
+- Ministry of Public  Works  
+- National Disaster  Committee 
+- Environmental Protection Authority  
+- Coastal Management Advisory  Committee  
+- Office of Environmental Planning and Policy Coordination (OEPPC)  
+- National Disaster Management  Office  
+- National Weather  Service  
+- Kwajalein Atoll Local Government  (Ebeye)  
+- Kwajalein Atoll Development Authority  (KADA).  
+       Senior government leaders have been closely involved in the project design in the course of four 
+missions and numerous exchanges of the project design documents. The project has been discussed, involving presentations and feedback, with the Nitijela Cabinet members on several occasions, and in more  detail with the Minister  in Assistance,  the Minister  of Public  Works,  the Minister  of Finance,  and the 
+Senator for  Kwajalein.  
+       The mission also had meetings with development partners and representatives of the civil society, 
+including the International  Organization for Migration (IOM),  Asian  Development  Bank  and JICA.  
+E.6. Efficiency and Effectiveness  
+Economic and, if appropriate, financial soundness of the project/programme
+
+
+---
+*Page 42*
+---
+
+F GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 39 OF 60   
+APPRAISAL SUMMARY  
+ 
+ 
+ 
+E.6.1. Cost -effectiveness and efficiency  
+       Affordable engineering hazard risk reduction interventions across the whole atoll archipelago are 
+unrealistic. Instead, a focus on the more highly populated island of Ebeye (Kwajeiilen atoll) is proposed. This will ensure that the 10,000 people in the high density area benefit from the coastal protection but 
+there  is also longer -term strategic  planning  to avoid increased  pressure  in other  high risk areas  by focusing 
+on development in safer  areas.  
+       The effectiveness  of the different  solutions  have been tested  using different  coastal  defense schemes. 
+In addition, the cost -effectiveness of different alternatives has been assessed by comparing the ratio 
+between construction costs and benefits derived from each alternative (i.e. benefits are here descri bed 
+as reduction in Expected Annual Damage EAD) as illustrated below.  
+       Constructing a revetment  at “hotspot”  locations  is proven to be the most  cost-effective solution  (Figure 
+4). This will result in a decrease in damages due to inundation and land loss due to erosion at locations 
+where  risks are the highest  (Figure  5). Protecting  the causeway  is the least  cost-effective  due to the high 
+construction costs compared to the decrease in risk, but could provide interesting options for long-term 
+planning of the island.  
+       However,  there has to be a trade- off between protecting only the hotspot  areas  (1&2)  and addressing 
+the increased potential risk of erosion at the extremities of the proposed works. The simulations thus 
+suggest a larger area for protection than just the  hotspots.  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Figure 4: Different envisaged locations of the protection solutions, with 
+their costs and expected benefits
+
+
+---
+*Page 43*
+---
+
+F GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 40 OF 60   
+APPRAISAL SUMMARY  
+ 
+ 
+ 
+ 
+Figure 5: Inundation with a return period of 1/10 years for the current situation (left figure) and after the proposed construction of 
+revetment alternative 8 with the current sea level (right figure).  
+E.6.2. Co- financing, leveraging and mobilized long- term investments (mitigation only)  
+N/A as the project is adaptation only  
+E.6.3. Financial viability  
+       The project will not generate incomes, as neither the population nor the infrastructures operators 
+would pay for the services provided by the different components of the project  
+E.6.4. Application of best practices
+
+
+---
+*Page 44*
+---
+
+F GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 41 OF 60   
+APPRAISAL SUMMARY  
+ 
+ 
+ 
+       Regarding coastal protection works, the best available design will be implemented. The construction 
+of the artificial berm in front of the revetment is a design which has never been used in atolls or low -lying 
+islands, but which has been successfully built  in several places and which has the advantages of 
+addressing  the  challenges  of 
+climate  change.  The solution,  
+yet to be tested through 
+physical modelling to the 
+specific local conditions, would be further refined with detailed design, and 
+informed by 
+stakeholder consultation.  
+       In a PRIF/Tonkin & Taylor 
+report (2016) on affordable 
+coastal protection, a study is 
+presented where possible 
+solutions are put forward, and 
+in which the use of local 
+materials and labour is 
+maximized. Different solutions 
+are discussed, in particular, 
+ecological based approaches 
+and low cost -solutions, vertical 
+structures and revetments. 
+Revetments constructed of 
+conventional materials are the 
+most effective at protecting 
+land, and typically have long design liv es. Alternatively, low 
+cost-solutions often have a low 
+durability  and poor 
+environmental effects, as  these 
+solutions deteriorate and fail, 
+and material is then released 
+into the marine environment. 
+Solutions with geotubes for 
+instance, are not durable and 
+are difficult  to be replaced  once 
+damaged. Solutions with sheet 
+piles  require  drilling  which  is 
+very costly in hard rock.   Steel  Table 2: Performance of the different adaptation options for the different 
+selection criteria (Deltares 2016)  
+ 
+solutions suffer from corrosion  
+which results in either high maintenance or low durability. Pitched block revetments, a solution typically 
+applied in the Netherlands, require strict installation specifications with very strict gravel specifications and  
+are therefore also not recommended for Ebeye  Island.  Vertical  block  works  are also difficult  to install and 
+are not flexible to adapt to updated wave climates of higher  standards.  
+ 
+ 
+ 
+       An improved and climate- change resilient version of the previous design has been developed by using 
+a berm on the reef that will promote wave breaking. The energy dissipation will result here in a solution with a lower crest level than for a standard revet ment alternative. The reduction in overtopping discharge 
+can be up to a factor  of 10 as physical  model  tests  have  shown.  Also,  smaller  material  for both 
+rock and concrete cubes can be used by applying a berm on the seaward side of the structure. Moreover,
+
+
+---
+*Page 45*
+---
+
+F GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 42 OF 60   
+APPRAISAL SUMMARY  
+ 
+ 
+ 
+it is to be expected that sea level rise will result in higher water levels on the reef and therefore in higher 
+wave conditions. This improved design, even when these more critical conditions will occur, will still 
+promote wave breaking. Therefore, the solution can be considered best practice, flexible and easily adaptable, with minimal effort, to these more severe condi tions  
+ 
+ 
+Figure 6: Durable berm type solutions, adaptable to conditions in case of sea level rise  
+E.6.5. Key efficiency and effectiveness indicators  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+GCF  
+core 
+indicators  Estimated cost per t CO 2 eq, defined as total investment cost / expected lifetime emission reductions 
+(mitigation only)  
+(a) Total  project  financing  US$_   _ 
+(b) Requested  GCF  amount  US$_   _ 
+(c) Expected lifetime emission reductions  overtime   tCO 2eq 
+(d) Estimated cost per tCO 2eq (d = a  / c) US$_  _ / tCO 2eq 
+(e) Estimated GCF cost per tCO 2eq removed (e = b  / c) US$_  _ / tCO 2eq 
+Not applicable (project only on adaptation)  
+Expected volume of finance to be leveraged by the proposed project/programme and as a result of the 
+Fund’s financing, disaggregated by public and private sources (mitigation only)  
+Describe the detailed methodology used for calculating the indicators above.  
+Please describe how the indicator values compare to the appropriate benchmarks established in a 
+comparable context.  
+Not applicable (project only on adaptation)  
+Other relevant indicators (e.g. estimated cost per co- benefit 
+generated as a result of the project/programme)   
+* The information can be drawn from the project/programme appraisal document.  
+ 
+F.1. Economic and Financial Analysis
+
+
+---
+*Page 46*
+---
+
+F GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 43 OF 60   
+APPRAISAL SUMMARY  
+ 
+ 
+ 
+       Economic  Analysis:  The economic  benefits  of the project  will comprise avoided losses  and damages 
+thanks to the protection effected by investments supported, while the project costs  will consist mainly of 
+capital investment costs. Avoided expected damages for large urban assets were estimated using data from PCRAFI (2015) and used to calculate the internal rate of return (IRR) and benefit cost (B/C) ratios. 
+Additionally, the reduction in the expected number of persons affected was also estimated. This metric 
+also serves as a proxy for indirect tangible and intangible damages that are caused by large inundations but are difficult  to value in economic  terms,  as well as the psychological  impact  of living  with the persistent 
+threat of  inundation.  
+       Component 1 (Institutional strengthening, early warning and preparedness) will enhance the 
+government’s  ability  to saves lives and reduce economic  damage and losses  when natural  disasters  strike. 
+As such,  the component  will benefit  the entire  population of the Republic  of Marshall  Islands  (RMI).  These 
+benefits are mostly qualitative due to the incremental nature of the interventions and the multiplicity of other factors that help bring about these benefits.  
+       Component 2 (Strengthening Coastal Resilience) has undergone conventional deterministic cost 
+benefit  analysis  of ten options  under  the current  conditions  (without  climate  change  induced sea level rise), 
+which  showed  that a 1,060m  long revetment  with or without  a berm,  along the ocean side,  covering  hotspot 
+areas and in between, would yield not only an acceptable economic internal rate of return (EIRR) for the 
+Marshall Islands (4.1% and 2.6%), but also the highest reduction in the number of expected annual 
+persons  affected  on Ebeye.  A scenario  analysis  was carried  out to examine the impact  on the investment’s 
+feasibility of deep uncertain variables, notably sea level rise due to climate change, cost of m aterials, as 
+well as interest rate. This results of the analysis are summarized as  follows:  
+• Option 7 - standard revetment. The net present value (NPV) is positive if the cost of aggregates does not exceed 
+170% of the baseline estimate and the discount rate is lower than 10%.  
+• Option  8- revetment  with berm.  The NPV is positive if the cost of aggregates  does  not exceed 170%  of the baseline 
+estimate and the discount rate is lower than 9%. 
+• These conditions hold regardless of the values the other the other uncertain variables, including deeply uncertain 
+sea level rise level and avoided indirect tangible and intangible damages, take on. 
+• Given that the standard discount rate used to evaluate investment operation for RMI is 2% and the baseline cost estimates  are conservative,  there is little risk of a negative NPV and the option is  robust.  
+• The fact that both options meet the feasibility criteria in the no sea level rise scenario indicating that they are no 
+regret  investments.  
+       Fiscal Impacts: The key impact will be in the form of avoided expenditures to remediate damaged 
+infrastructure and public buildings. The government’s annual budget for such expenditures is $200,000, 
+which is matched by a US government disaster response budget support of an equal amount. Currently, 
+this amount is used to cover post -disaster expenditures and to a lesser extent, to build and repair coastal 
+protection structures prior to strong whether events that are likely to lead to inundations. To the extent such activities currently take place on Ebeye, they will no longer be necessary after the revetment is construc ted. As no maintenance is expected to be needed for the revetment, there will be no additional 
+public  expenditures.  
+       Conclusions: The economic analysis indicates that the project is economically feasible considering 
+RMI’s limited growth prospects during the next 30 years. The selected coastal protection option in 
+Component 2 is economically feasible at the chosen discount rate of 2% (Table 3).
+
+
+---
+*Page 47*
+---
+
+F GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 44 OF 60   
+APPRAISAL SUMMARY  
+ 
+   
+ 
+     
+ 
+# 
+ 
+Loca tion 
+ 
+Revetm ent type 
+Leng th 
+[meter] 
+Estimated 
+Costs [M  $]  
+Reduce d EAD 
+[M$/year] 
+(2016 p rices) 
+B/C 
+(d=2%) 
+NPV 
+[M$] 
+(d=2%) 
+IRR 
+Reduced 
+Expec ted annual 
+affected persons  
+Preferred 1  Hotspot 
+location 1 +2 
+(and in  
+between)   
+Standard   
+1,060   
+14.8  
+0.77  
+0.88  
+4.55  
+4.1%   
+2,192  
+Preferred 2  Hotspot 
+location 1 +2 
+(and in  
+between)   
+Berm   
+1,060   
+17.3  
+0.74  
+0.72  
+1.48  
+2.6%   
+2,089  
+    
+ 
+     
+ 
+     
+ 
+     
+ 
+ 
+ 
+Re
+d
+uc
+e
+d
+ 
+E
+A
+D 
+[
+m
+i
+ll
+i
+on
+ 
+$
+U
+S
+/
+yea
+r]
+
+
+---
+*Page 48*
+---
+
+F GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 45 OF 60   
+APPRAISAL SUMMARY  
+ 
+ 
+ 
+disruption of economic activities. Lack of available data on possible losses due to delayed and absent 
+emergency response has limited this analysis to a qualitative benefits.  
+F.2. Technical Evaluation  
+ 
+       The outer island communication technologies expected to be adopted under Component 1 are standard 
+and are already used in RMI. However, systems adopted to- date are ad hoc . Therefore, developing a 
+roadmap is vital to ensure the systems deployed are appropriate, and allow for important issues such as power consumption, usability, maintenance, an d training.  
+       In preparing Component 2 of the project, a detailed Coastal Vulnerability Assessment and Management  
+Plan has been conducted.  This has been used to quantify  the natural  hazard risks,  including climate change 
+impacts, in Majuro and Ebeye, and develop concept designs and costs for coastal protection works in Ebeye. This work will be used to define the priority areas for coastal investment in Ebeye, from which final engineering designs will be developed during the implementation phase of the project.  Stakeholder 
+engagement and impact assessment will inform the final  designs.  
+       The wave climate for Ebeye Island coastal defence is mild to moderate due to the wave breaking on 
+top of the flat reef. It is recommended to develop solutions with a cross -section that has a good hydraulic 
+performance for this specific wave climate. Moreover, because of local contractor capacity for 
+maintenance, it should be durable, easily repairable, and also installation should not be too complex. Finally , in case the wave climate will change (i.e. due to climate change) or the functional requirements 
+will modify over time, the structure should be (easily) upgradable. Rock armour and concrete units score 
+in this respect  high.  
+       The proposed coastal works will therefore involve heavy civil engineering construction using, largely, 
+imported aggregates and rock armour (rip- rap). Although there may be scope for a local contractor to be 
+able to carry out the works, it will be essential  to attract wider interest. Because of challenges with 
+remoteness, site access, aggregate handling facilities, and storage, a constructability review has been 
+carried out to ensure that construction issues and constraints have been fully considered. Because of 
+remoteness  and difficult  site conditions,  an approach that allows  early  contractors  involvement  before the 
+designs are completed will be explored as part of the preparation of the Project Procurement Strategy for 
+Development, to optimize costs and allow for construction  constraints.  
+       There are no currently known, proven, sustainable aggregate sources in the Kwajalein atoll. Limited 
+aggregate sources may be available in the Majuro atoll. Therefore, further work will be undertaken to investigate aggregate sources suitable for construction works. However, for the purposes of the project design, it has been assumed that all aggregates will be imported from sustainable sources in countries 
+such as Guam, Hawaii, Nauru, Fiji, or, possibly,  China.  
+F.3. Environmental, Social Assessment, including Gender Considerations  
+Environment 
+       The proposed coastal resilience investments involve coastal protection works that will have potential 
+impacts on the foreshore and marine environments of Ebeye and Majuro. There are no mangrove 
+environments  on either  atoll,  and the reef systems are degraded from urbanization,  untreated waste water 
+discharges, reef rock mining, waste dumping and ad hoc reclamation and sea walls. Small scale coastal 
+protection works  are likely  to have  minor  cumulative  impacts  in addition  to these baseline  threats,  however 
+larger scale coastal protection works may have wider geographical impacts. World Bank Safeguard Policies OP4.01 Environmental Assessment and OP4.04 Natural Habitats are triggered and an Environmental  and Social Management  Framework  has been prepare d which  sets out the processes  that 
+the MPW will go through to identify impacts and suitable mitigation measures. The project is classified as Category  B as the impacts  are not irreversible  or unprecedented and can be mitigated  and remedied.  
+       An Environmental and Social Impact Assessment and Environmental and Social Management Plan 
+will be required for any coastal  protection works.  The scoping of the area of influence will also identify  and 
+assess the impacts of any mining or quarrying that wil l occur as a result of the demand for aggregates on
+
+
+---
+*Page 49*
+---
+
+F GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 46 OF 60   
+APPRAISAL SUMMARY  
+ 
+ 
+ 
+this project. Where rock will be imported, due diligence will be undertaken on the source. The ESIA and 
+ESMP will inform the detailed design. Contractors will be required to prepare and implement Contractor’s 
+ESMP, which will detail how the Contractor will achieve the requirements of the Project ESMP.  
+           The ESMF  also outlines  how social and environmental  safeguards  will be integrated  into any technical  advisory 
+funded by the project,  such  as vulnerability  assessments,  and capacity  building / technical  training.  
+Social  
+       The project is expected to have long term social benefits from improving the resilience of the 
+communities  across  RMI to natural  hazards  and climate  change.  Due diligence during project  preparation 
+has identified that access to land is complex because of the hierarchical customary land tenure system 
+and the inability  to buy and sell land.  Customary  traditions  relating to land ownership are enshrined in the 
+Constitution,  with a hierarchy  of ‘Iroij’ ‘Alap’ and ‘Dri Jerbal’  (the Iroij being the paramount  chief  and highest 
+power  within  the Marshallese land owning hierarchy).  The Land Acquisition  Act 1996 makes  ‘provision  for 
+the acquisition of lands and servitudes for public use’ including payment of compensation, but in practice 
+the Government  does  not compulsorily  acquire land because the Iroij hold customary  power  which  is highly 
+respected.  The Government  and land owners  instead engage in leases  and Memoranda of Understanding 
+for public infrastructure. Many public infrastructure projects are delayed or abandoned because the 
+Government cannot secure the rights to occupy land or create encumbrances or  easements.  
+       On Ebeye islet there are no land disputes and land ownership is clear. There are three senior land 
+owners  that are responsible  for all permissions  of land use, each representing one  layer  of the customary 
+land owning hierarchy. A Master Lease between the Government and the land owners was finalized in January 2017. It covers a wide variety of land requirements for public infrastructure (school buildings, health clinics, water supply and waste water) on the atoll and this lease will be an opportunity to engage with land owners to secure the rights to undertake the coastal protection works.  
+       In addition  to the land owner  approvals,  there  are tenants  and informal  land users  that may be affected 
+and will require extensive consultation and engagement  during project  implementation.  In some instances, 
+households or businesses may require temporary relocation or may lose small areas of gardens, yards, fences or other assets as a result of civil works.  
+       W
+orld Bank Safeguard Policy OP4.12 Involuntary Resettlement is triggered due to the requirement 
+for land and the potential for involuntary resettlement and compensation for lost assets as a result of the coastal protection works. In accordance with the Resettlement Policy due diligence assessment of land ownership and land use will be carried out by the MPW and an Action Plan will be prepared, if required, to document the plan for lease arrangements, involuntary resettlement and / or compensation for lost assets. Community and land owner consultation and engagement will therefore be an integral part of 
+project  implementation.  
+       World  Bank  Safeguard Policy  OP4.09 Physical  Cultural  Resources  (PCR)  has been  triggered  as there 
+are a number of grave sites on or near the foreshore that may be affected by coastal protection works. Under the ESIA process, more PCR may be identified at specific locations. Under each ESMP there will be a plan for the avoidance,  removal  or relocation  of PCR that will be based on  extensive  community  and 
+stakeholder  consultation.  
+F.4. Financial Management and Procurement  
+ 
+       Budgeting Arrangements. RMI has a Budget Coordinating Committee which develop, formulate, 
+and coordinate the government budget process. This committee is made up primarily of Ministry of Finance staff who have strong skills  in budget  preparation and monitoring of the budget.  Project  funds  will be  
+included  in the estimates  and in-year reporting  subject  to the timely  notification to the government.  The 
+budget section of the Ministry of Finance is responsible for the monitoring of the government budget 
+throughout the year  and will be requested to also assist in the budget preparation and monitoring of this 
+project.  The government  accounting  system  will be able to compare budgeted  to actual  costs to assist  the 
+monitoring of the budget.
+
+
+---
+*Page 50*
+---
+
+F GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 47 OF 60   
+APPRAISAL SUMMARY  
+ 
+ 
+ 
+Budgeting will be on an activity basis summarized by component and category, and should be 
+reviewed at least every six months by both the budget section of the MOF and the project team.  
+Accounting  Arrangements . The Republic  of the Marshall  Islan ds uses  the accounting system  4Gov 
+developed by iDC, a US based Software Company. The system has an extensive chart of accounts, and transactions or line items can be further classified by cost center, organization (department/division) and geography if required. This system is capable of maintaining accounting records that meet the Bank’s 
+reporting requirements  for this project.  The project  accounts  will be maintained on the government  system. 
+It is possible  the current package may be replaced;  if that occurs,  interim  project  accounting  arrangements 
+may be needed during the transition. It is yet to be established if the Project Accountant will be able to 
+input directly into 4gov and what access this officer will be provided. As the capacity within MOF is quite limited,  with a relatively  small  number  of staff (less  than 100),  the project  will finance a Project  Accountant 
+for the life of the project to avoid additional strain on the current  resources.  
+       Internal Controls. A Standard Operations Procedure Manual outlines the internal controls and 
+procedures. However, compliance within agencies has often been poor. This risk should be mitigated by 
+ensuring the Project Accountant is aware of the manual’s requirements, and that compliance is included 
+in the terms of reference of the position. To enhance the controls, all project Purchase Orders will be approved by the Secretary of Finance prior to release. There is currently no Internal Audit Service within 
+the MOF . 
+Flow of Funds. Funds will flow from the World Bank directly into the (the designated account or DA 
+to be opened at a commercial bank. This will be subject to additional assurances from the Ministry of 
+Finance. This will enable expenditure payment s to be tracked through government accounting system. For 
+larger payments, Direct Payments can be used where funds will flow directly from the World Bank to the 
+supplier. Where direct payments are used as the disbursement method, the transactions must be incorporated into the project accounts.  
+       Financial Reporting. Financial reporting will be fully integrated into the government accounting 
+system.  The project  will be allocated a cost center,  and sub accounts  will be created to reflect  the specific 
+activities.  Reports will be generated from the 4Gov accounting  system.  
+       The project  will prepare  semester  Interim Financial  Reports  (IFRs) in a format  agreed to with the Bank. 
+They  will be required  to be submitted  not later than 45 days  after the end of the reporting  period.  The IFRs 
+will be prepared by the Project Accountant in consultation with MOF.  
+External Audit. The audit of project funds will be incorporated in the National Accounts and hence 
+will be disclosed as a note to the accounts of the  National Accounts, with submission due nine months 
+after the end of the fiscal  year.  Currently  the audit  of the National  Accounts  is subcontracted  by the Public 
+Auditor to a private contractor. MFR, the Public Auditor and the Bank will negotiate the information required 
+to be  disclosed.  
+       That National Accounts will be published on the Office of the Auditor General’s web site. 
+       Procurement: Procurement of this project will be implemented by DIDA (Components 1, 3, and 4), 
+and the Ministry of Public Works (MPW, Component 2), coordinated by MOF in close collaboration with 
+the Chief Secretary Office, and the PSU within Pacific Community. The terms of reference for the RMI 
+Project Manager set out that Procurement experience is a requirement for  the position. The Project 
+Manager will be responsible for procurement activities under Component 1, 3 and 4, and the Design and 
+Supervision firm recruited under Component 2 will be responsible for procurement activities under 
+Component 2. A Procurement Advisor is already in place in the Regional PSU, and will provide 
+procurement support and advice to the Project Implementation Unit in RMI. As the project proceeds, a procurement consultant may be hired by DIDA if  needed.
+
+
+---
+*Page 51*
+---
+
+G GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 48 OF 60   
+RISK ASSESSMENT AND MANAGEMENT  
+ 
+  
+ 
+G.1. Risk Assessment Summary  
+       The overall  risk rating is Substantial.  More information on specific  key risks that have been identified 
+for the project is provided below.  
+Technical and Operational  
+Sector Strategies and Policies  
+       While climate and disaster resilience is being increasingly recognized as a key development challenge 
+in PICs, integration of risk sensitive approaches into sectoral policies and coastal zone management and protection measures (particularly greener/softer options) is still widely lacking in RMI. The sectoral context is complex because: (i) the resilience agenda cuts across multiple sectors; (ii) coordination across  sectors  
+is in early  stages;  and (iii) the capacity  of DRM/climate  resilience  institutions is generally weak and lacks 
+political support. To manage this risk, the Program recognizes the key role of  the Office  of the Chief  
+Secretary  and aims  to strengthen the interface between  the Ministry  of Finance, the Ministry of Works and 
+the key DRM/climate resilience agencies.  
+Technical Design of Project  
+PREP II is technically and operationally complex, with many stakeholders, including technically 
+specialized agencies. To manage the technical risks, the Project design: (i) adopts three components 
+involving activities that can proceed substantially independently, each involving a smaller group of 
+stakeholders, although the NSC maintains oversight and agencies will carry out their normal regulatory or leadership functions; (ii) involves SPC in leading activities that utilize its core strengths and builds on other  SPC activities  in RMI;  (iii) uses  the results  of a detailed Coastal  Vulnerability  Assessment  (CVA)  for 
+Ebeye, carried out by the consulting firm Deltares during project preparation, from which the scope of 
+Component 2 has been substantially based giving a good understanding of risks and technical  issues
+12; 
+(iv) includes appointment of two, key technical appointments under a project preparation advance (i.e. 
+Construction Risk Advisor and Civil Engineering Advisor) who will further identify and help develop management actions for technical and procurement risks and uncertainties early in the Project; (v) includes  appointment  of a specialized,  multi- disciplinary  coastal  engineering and construction supervision 
+firm to manage and help deliver the technically complex coastal protection works covering more than 
+60% of the project  costs;  and (vi) draws  in lessons  and experience from PREP Phase  I and other  projects, 
+packaging activities together in larger contracts wherever  feasible.  
+Institutional Capacity for Implementation and Sustainability  
+       Implementation  capacity  in RMI is relatively  weak,  particularly  due to limited  human  resources.  There 
+are several other large projects in progress or in the pipeline that will stretch the government of RMI’s 
+capacity. The capacity and implementation risks will be managed by: (i) Creating the Project Implementation Unit (PIU) attached to DIDA with personnel dedicated to the PREP II Project, supported 
+by other  dedicated resources,  including the Civil Engineering Advisor  based in MPW  and the SPC-based 
+PSU; (ii) Maintaining and applying a detailed Project Procurement Strategy for Development (PPSD), which  includes  risk management  actions  for procurement  and implementation;  (iii) Involving  SPC to lead 
+procurement and delivery of several, substantial activities under Components 1 and 2. Also, the SPC - 
+based  PSU (created under  PREP I) will support  the Project  Manager  and PIU, providing  guidance,  direct 
+assistance, training, and capacity development to relevant staff for various aspects of the project; (iv) Hiring a Coastal Engineering Design and Supervision (D&S) Firm to provide specialized implementation support  for Component  2; (v) Involving  the RCU,  created and housed in PIFS during PREP Phase  I, to 
+ensure strategic alignment between Project and Pacific Leaders’ priorities; and (vi) Ensuring the World  
+ 
+ 
+ 
+12 The CVA will be improved and expanded under the Project. Deltares will be sole sourced to carry out this expanded 
+scope, thereby building on the approach already adopted, which has been well received by the RMI government, using 
+the same team.
+
+
+---
+*Page 52*
+---
+
+G GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 49 OF 60   
+RISK ASSESSMENT AND MANAGEMENT  
+ 
+ 
+Bank  team  maintains  a close  dialogue with the regional  coordinator,  program manager,  and country  level 
+Project Manager. The Bank will conduct regular implementation support missions to oversee progress of  
+PREP II and identify  what  is working well and what  could  be improved,  providing  or arranging additional 
+capacity building or support if  warranted.  
+ 
+ 
+Financial  
+Primary  fiduciary  functions will  need to  be performed by  each implementing agency.  However,  there 
+is relatively weak fiduciary capacity in RMI. Mitigation measures agreed from a financial management 
+(FM) and procurement assessment will be implemented, including provision of technical assistance, 
+recruitment of a Project Accountant to the PMU, and compliance with World Bank Procurement and FM requirements,  with strong internal  financial controls  and regular  independent  audits.  The World  Bank  will 
+monitor this through implementation support missions which will include reviewing the effectiveness and compliance with internal  financial controls,  reviewing interim  financial reports  for accuracy,  and following 
+up on issues raised in audit reports. One full- time Project Manager (with procurement experience) is in 
+the process of being hired under the Project Preparation Advance, and a procurement expert will be included in the team of consultants selected to work with the MPW of Public  Works.  
+ 
+Social and Environmental  
+       Land ownership in RMI is a hierarchical, customary system enshrined by the Constitution. Land 
+owners  hold customary  power  which  is highly  respected.  In theory  the Government  Land  Acquisition  Act 
+1996 makes ‘provision for the acquisition of lands and servitudes for public use’ including payment of compensation,  but in practice the Government  does  not compulsorily  acquire land because of the respect 
+for the customary land tenure system. Some public infrastructure projects are delayed or abandoned because the Government  cannot  secure the rights  to occupy  land or create encumbrances  or easements. 
+To mitigate this the Ministry of Finance and PWD will engage with land owners early in the process, including them in the assessment of  priority areas for development and concept design. Coastal 
+protection works will only be prioritized and implemented in areas where land owner agreements have been secured. There are clear benefits to land owners of coastal protection works, and this is another mitigating factor. Coastal protection works will have potential negative impacts on the foreshore and marine environments of Ebeye and Majuro which will be carefully assessed and appropriate mitigation measures included in the design and construction phase.  
+ 
+Other  
+       RMI is hazard- prone and disasters  occur  frequently.  Should a significant  disaster  event  occur  during 
+implementation of the PREP Phase II, the attention of the implementing agencies  could easily  be diverted 
+from the requirements of the project to the immediate disaster response and recovery needs of the country.  In order  to mitigate  this, a Contingency  Emergency  Response  Component  (CERC – Component  
+3) has been incorporated into the Project in addition to the ex -ante disaster risk financing and insurance 
+mechanism supported by the PREP Phase I. This should provide flexibility and minimize disruption to the Project in the event of a disaster occurring.  
+G.2. Risk Factors and Mitigation Measures  
+ 
+Selected Risk Factor 1  
+Description  Risk category  Level of impact  Probability of risk  
+occurring  
+Reluctance from sectors to integrate disaster risk and  
+climate change adaptation approaches into their 
+sector development  Technical and 
+operational  Medium (5.1 - 
+20% of project 
+value)   
+Low
+
+
+---
+*Page 53*
+---
+
+G GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 50 OF 60   
+RISK ASSESSMENT AND MANAGEMENT  
+ 
+ 
+ 
+Mitigation Measure(s)  
+The Office of the Chief Secretary has been recognized as a key supporter to move this agenda forward, and will act as the interface between the key ministries and agencies (e.g: Ministry of Finance, Ministry of Public Work and the 
+agencies  in charge of Disaster  risk reduction and climate change adaptation)  in support  to the objective of the JNAP.  
+Selected Risk Factor 2  
+Description  Risk category  Level of impact  Probability of risk  
+occurring  
+The project will be complex both from a technical and 
+operational perspective, with involvement of multiple 
+stakeholders, and might cause difficulties during 
+implementation.   
+Technical and 
+operational   
+High (>20% of 
+project value)   
+Low 
+Mitigation Measure(s)  
+To manage this risk, technical support will be provided at a regional level by SPC, and will focus on a core set of 
+activities that will include: (i) institutional and systems strengthening for early warning and preparedness; and (ii) technical assistance in coastal resilience planning. In addition, the consulting firm Deltares was hired to conduct a 
+Coastal  Vulnerability  Assessment  of Ebeye which  will contribute to coastal  planning  and future investments  based on 
+a good understanding of risks.  Where possible, activities will draw from lessons and experience from PREP Phase 
+I, and activities  will be packaged together  in larger  contracts  wherever  it is feasible to  do so. 
+Selected Risk Factor 3  
+Description  Risk category  Level of impact  Probability of risk  
+occurring  
+Limited capacity of DIDA and MPW for implementation  Technical and  
+operational  High (>20% of  
+project value)  Low 
+Mitigation Measure(s)  
+This risk will be mitigated through the recruitment of a full time Project Manager by MoF/DIDA, who will manage the 
+day-to-day implementation,  including procurement  activities  for Component  1, 3 and 4. The Project  Manager  will also 
+be supported by the PSU,  and significant  training  and capacity  development  will be provided to relevant  staff through 
+various aspects of the project. Technical staff will also be recruited to support implementation of Components 1 and 
+3. A consulting firm will be recruited by the MPW to implement Component 2. The World Bank will maintain a close dialogue with the PSU and Project Manager, and will conduct regular implementation support missions to oversee 
+progress.  
+Selected Risk Factor 4  
+Description  Risk category  Level of impact  Probability of risk 
+occurring  
+Limited capacity of local market for the design and 
+construction of coastal protection works  Technical and operational  High (>20% of project value)   
+Low 
+Mitigation Measure(s)  
+The project  will target  international  consultants  and contractors  so as to achieve  an acceptable quality  of investment. 
+The national contractors can also participate in bidding (as contractor or sub- contractor subject to meeting the 
+qualification requirements) so that their capac ity will also be  strengthened.  
+Selected Risk Factor 5
+
+
+---
+*Page 54*
+---
+
+G GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 51 OF 60   
+RISK ASSESSMENT AND MANAGEMENT  
+ 
+ 
+ 
+Description  Risk category  Level of impact  Probability of risk 
+occurring  
+Weak coordination between DIDA and MPW.  Technical and operational  High (>20% of project value)   
+Low 
+Mitigation Measure(s)  
+The Office  of the Chief  Secretary  will act as the interface between DIDA  and Public  Work  and the agencies  in charge 
+of Disaster risk reduction and climate change adaptation. In addition, the project manager in DIDA will coordinate and 
+monitor all the procurement activities under the whole project, including consolidation of the procurement plans and 
+using the Systematic Tracking of Exchanges in Procurement  (STEP).  
+Selected Risk Factor 6  
+ 
+Description   
+Risk category   
+Level of impact  Probability of risk 
+occurring  
+Uncertainty regarding source of construction 
+materials and design  Technical and 
+operational  
+Social and 
+environmenta
+l  
+High (>20% of project value)   
+ 
+High 
+Mitigation Measure(s)  
+Clear specifications in line with the recommendation of the ESMF/ESIA will be included in the bidding document 
+regarding technical requirements of aggregates so that bidders can be involved in the procurement process to propose technical solutions. In addition, SPC will undertake a study to identify appropriate and sustainable sources of aggregate for future works.  
+Selected Risk Factor 7  
+Description  Risk category  Level of impact  Probability of risk  
+occurring  
+Weak fiduciary capacity in RMI  Financial  Low (<5% of  
+project value)  Medium  
+Mitigation Measure(s)  
+Mitigation measures agreed as a result of financial management (FM) and procurement assessments will be implemented, including provision of technical assistance, and compliance with World Bank Procurement and FM requirements,  including strong internal  financial  controls  and regular  independent  audits.  The World  Bank  will monitor 
+this through implementation support missions which will include reviewing the effectiveness and compliance with 
+internal financial controls, reviewing interim financial reports for accuracy, and following up on issues raised in audit 
+reports.  The World  Bank  Procurement  Regulations  for IPF Borrowers  and related guidance notes  will be disseminated 
+to concerned agencies early on in project  preparation.  
+One full -time Project Manager (with procurement experience) will be hired under the Project Preparation Advance, 
+who will work with DIDA t o: 
+• conduct  procurement  processes  under  Components  1, 3 and 4 as well as procurement  of consulting 
+services (including those under  PPA);  
+• update the PPSD and procurement plan when necessary;  
+• provide procurement training to DIDA  staff;
+
+
+---
+*Page 55*
+---
+
+G GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 52 OF 60   
+RISK ASSESSMENT AND MANAGEMENT  
+ 
+ 
+ 
+• prepare a detailed procurement manual as a part of the POM;  and 
+• Provide support to MPW when necessary.  
+A procurement  expert  will be included  in the team  of consultants  selected  to work  with the MPW  of Public  Works,  and 
+the main tasks are the same as  above.  
+Selected Risk Factor 8  
+Description  Risk category  Level of impact  Probability of risk  
+occurring  
+Difficulties to secure the rights to occupy land or 
+create encumbrances or easements and potential 
+adverse effects of protection works on the coastal  
+environment   
+Social and 
+environmental   
+High (>20% of 
+project value)   
+Low 
+Mitigation Measure(s)  
+To mitigate this the Ministry of Finance and PWD will engage with land owners early in the process, including them 
+in the assessment of priority areas for development and concept design. Coastal protection works can be prioritized in areas where land owner agreements are secured. The land owners will receive clear benefits from the coastal protection works, and this is another mitigating factor. Coastal protection works will have potential negative impacts on the foreshore and marine environments of Ebeye and Majuro which will be carefully assessed as part of the ESMF/EIA process and appropriate mitigation measures included in the design and construction phase.  
+Selected Risk Factor 9  
+Description  Risk category  Level of impact  Probability of risk  
+occurring  
+A significant disaster event occurs during 
+implementation of the PREP Phase II, diverting 
+attention and resources of the implementing agencies 
+to the immediate disaster response and recovery  
+needs of the country   
+ 
+Other   
+High (>20% of 
+project value)   
+ 
+Low 
+Mitigation Measure(s)  
+In order to mitigate this, a Contingency Emergency Response Component (CERC) has been incorporated into the 
+Project in addition to the ex -ante disaster risk financing and insurance mechanism supported by the PREP Phase I. 
+This should provide flexibility and minimize disruption to the Project in the event of a disaster occurring, by providing 
+funds to assist the government with their response and recovery needs.  
+Other Potential Risks in the Horizon  
+None not already included above.  
+* Please expand this sub-section when needed to address all potential material and relevant risks.
+
+
+---
+*Page 56*
+---
+
+H GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 53 OF 60   
+RESULTS MONITORING AND REPORTING  
+ 
+  
+ 
+H.1. Logic Framework.  
+Please specify the logic framework in accordance with the GCF’s Performance Measurement Framework  under 
+the Results Management Framework . 
+ 
+H.1.1. Paradigm Shift Objectives and Impacts at the Fund level13 
+Paradigm shift objectives  
+ 
+Increased climate -resilient 
+sustainable development  The project  development  objective is to strengthen early  warning systems,  climate resilient 
+investments in shoreline protection, and to provide immediate and effective response to an Eligible Crisis or  Emergency.  
+ 
+Expected Result   
+Indicator  Means of 
+Verification 
+(MoV)  
+Baseline   
+End 
+Target   
+Assumptions  
+Fund- level impacts  
+     The reduced expected  
+     average annual damage  
+     (EAD) will be generated by  
+     the risk model developed for  
+     the coastal vulnerability  
+     assessment  
+     Assuming the assets and  
+ 
+ 
+A1.0 Increased 
+resilience and  enhanced 
+livelihoods of the most 
+vulnerable people, 
+communities and 
+regions  1.1 Reduced 
+expected annual damage due to 
+coastal protection 
+works   
+Coastal risk assessment 
+Modeling   
+ 
+0.0  
+700,000  
+USD/  
+year their value would remain 
+identic as in the inventory 
+from the PCRAFI  inventory.  
+Assuming that no event with a 
+return period above the design period occurs, which 
+would result in potential  
+damage to the coastal  
+     protection works, and that the  
+     design has been properly  
+     followed during the  
+     construction works  
+ 1.2 Length of coast     This indicator relates to the  
+ with reduced  
+vulnerability to 
+flooding and storm  Project 
+reports   
+0.0 1500.00  
+m length of coastline protected  
+by coastal protection works 
+and does not include  
+ surges     ecosystem based measures.  
+ 
+ 
+ 
+ 
+13 Information on the Fund’s expected results and indicators can be found in its Performance Measurement Frameworks 
+available at the following link (Please note that some indicators are under refinement): 
+http://www.gcfund.org/fileadmin/00_customer/documents/Operations/5.3_Initial_PMF.pdf
+
+
+---
+*Page 57*
+---
+
+H GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 54 OF 60   
+RESULTS MONITORING AND REPORTING  
+ 
+ 
+ 
+     The final Environmental and 
+social impact assessment is 
+approved on time to allow the 
+completion of the work.  
+    Data for this indicator will be  
+    disaggregated by gender.  
+    Target for female  
+    beneficiaries will be 50% of  
+    total.  
+1.3 Number of     The population remain identic  
+people with reduced     in Ebeye.  
+risks to coastal 
+hazards and the 
+effects of climate 
+change  Annual 
+Survey  0.0 10,000  Assuming that no event with a 
+return period above the 
+design period occurs,  which  
+would result in potential  
+    damage to the coastal  
+    protection works, and that the  
+    design has been properly  
+    followed during the  
+    construction works
+
+
+---
+*Page 58*
+---
+
+H GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 55 OF 60   
+RESULTS MONITORING AND REPORTING  
+ 
+   
+ 
+H.1.2. Outcomes, Outputs, Activities and Inputs at Project/Programme level  
+ 
+Expected Result   
+Indicator  Means of 
+Verification (MoV)   
+Baseline   
+Target   
+Assumptions  
+Project/program 
+me 
+Outcomes   
+Outcomes that contribute to Fund -level impacts  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+A5.0 
+Strengthened 
+institutional and 
+regulatory 
+systems for 
+climate - 
+responsive planning and development  5.1 The 
+government has developed and adopted 
+procedures to 
+clarify the governance mechanisms of the JNAP (including role of NC3, NDC 
+and working group)   
+Project 
+Reports, 
+surveys and 
+interviews with 
+key government 
+stakeholders  Procedures 
+have not yet been 
+developed and/or 
+adopted to 
+clarify the governance 
+mechanisms 
+of the JNAP   
+Procedures 
+have been developed 
+and adopted 
+to clarify the 
+governance 
+mechanisms of the JNAP   
+ 
+The government of 
+RMI would continue 
+its engagement 
+towards the 
+implementation of the 
+JNAP  
+ 
+5.2 Women and 
+men understand and are prepared to respond to impact based forecasting (financed by IDA)   
+ 
+ 
+Annual survey   
+No impact 
+based 
+forecasting 
+exists People reached by 
+Impact based 
+forecasting know how to 
+react  Impact based 
+forecasting models are developed soon 
+enough in the project 
+so that people can be 
+taught how to use their results  
+ 
+5.3 NDMO facilities 
+modernized and operating in accordance with 
+pre-agreed 
+performance 
+standards (Regional IDA)   
+ 
+ 
+Annual Survey   
+ 
+ 
+No  
+ 
+ 
+Yes  
+ 
+Equipment procured 
+for NDMO is only 
+used by NDMO  
+ 
+ 
+ 
+5.4 NDMO staff is 
+reinforced and better qualified to fulfill its mandate (Regional IDA)   
+ 
+ 
+ 
+Annual report   
+ 
+ 
+ 
+Only 2 staffs 
+at NDMO   
+ 
+NDMO is staffed 
+accordingly 
+to the 
+roadmap   
+ 
+Skill staff remain at 
+NDMO (turnover is not 
+too high)
+
+
+---
+*Page 59*
+---
+
+H GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 56 OF 60   
+RESULTS MONITORING AND REPORTING  
+ 
+ 
+ 
+  
+5.5 Post-Disaster 
+Need Assessment would be delivered quickly, in case a disaster happens 
+(regional IDA)   
+ 
+PDNA delivered 
+after an event   
+ 
+No 
+procedure 
+exists  
+PDNA  
+procedure 
+exists and 
+staff is 
+trained   
+Possibility to monitor 
+only if a disaster occur  
+Trained persons are 
+available after the disaster  
+A 6.0 Increased 
+generation and 
+use of climate 
+information in 
+decision making  6.1 A long- term 
+coastal security 
+strategy is 
+developed and 
+adopted by the key 
+central and atoll  
+government   
+ 
+ 
+Strategy 
+document 
+adopted   
+ 
+ 
+No long- term 
+coastal strategy   
+ 
+ 
+A long- term 
+coastal strategy 
+exists  
+ 
+ 
+The government will coordinate the 
+perspective of each 
+sector  
+ agencies      
+ (funded by regional      
+ IDA)     
+   Gender -data Disaster   
+ 6.2 Collection of   are poorly  impact  Importance of gender  
+ sex-disaggregated 
+data and gender - 
+specific disaster 
+impact data  Report of disaster 
+impacts  collected in 
+disaster 
+impact 
+assessment  assessment 
+contain gender 
+specific data  aspects in disaster 
+impact to be 
+understood  
+A7.0 
+Strengthened adaptive capacity 
+and reduced 
+exposure to 
+climate risks  7.1 % of 
+communication 
+stations operating 
+in line with 
+Standard operating 
+procedures (SOPs)  
+in outer island   
+ 
+ 
+Annual survey  0% 60.0 %  Equipment is properly 
+maintained and don’t suffer any irreversible 
+damage.  
+ network
+
+
+---
+*Page 60*
+---
+
+H GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 57 OF 60   
+RESULTS MONITORING AND REPORTING  
+ 
+ 
+ 
+   30% 70% Data for this indicator  
+    will be disaggregated  
+    by gender. Target for  
+    female beneficiaries  
+    will be 50% of total.  
+7.2 Number of 
+people who can 
+receive timely and 
+actionable hazard 
+forecast and warning messages   
+ 
+ 
+Annual Surveys    Coverage refers to the 
+people who can receive hazard forecast and warning 
+messages through an 
+improved warning 
+system  
+    Equipment is well  
+    maintained, and with  
+    enough energy to  
+    function correctly  
+   No Staff follow  Additional staff is  
+  procedure for  the recruited and trained  
+  inspection of  inspection  to inspect and  
+  work  procedure  maintain coastal  
+    protection work  
+    Trained staff remained  
+    (turnover not too high)  
+7.3 Inspection and 
+maintenance of 
+coastal protection work is improved   
+Regular 
+inspection reports    Maintenance 
+continues to be part of 
+the government budget  
+ 
+ 
+Project/program 
+me outputs  Outputs that contribute to outcomes  
+1. A framework for governing 
+disaster and 
+climate change 
+management is  Integrated NDC 
+and NC3 
+framework is 
+approved by 
+Cabinet  Project reports  No Yes
+
+
+---
+*Page 61*
+---
+
+H GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 58 OF 60   
+RESULTS MONITORING AND REPORTING  
+ 
+ 
+ 
+established and  Integrated  Project reports  No Yes Members of the  
+operating  committee and     groups have  
+ working groups     availability in their  
+ have terms of     work program to  
+ reference and are     attend the meetings  
+ operating      
+ Annual government 
+activities are 
+overseen by the 
+committee and 
+working groups 
+under the 
+framework  Project reports  No Yes  
+ Communications  Project reports  No Yes An agreement  
+ roadmap is     between the different  
+ prepared and     actors of their  
+ adopted     respective  
+     responsibilities is  
+     reached.  
+ Communications  Project reports/  No Yes  
+2. Increased 
+coverage of 
+forecast and 
+warning 
+messages to 
+Outer Island 
+populations at  risk equipment is 
+procured and 
+operating, with 
+maintenance 
+arrangements in place, and users 
+are trained  contracts    
+ User communities  Drills  No Yes Instruments are  
+ receive timely early     properly maintained,  
+ warning messages     or didn’t suffer un  
+ and advice     reversible damage.  
+     Communities listen to  
+     the warning  
+3. Sources of  Sustainable  Reports and  No local  Potential  Such sources might  
+aggregates are  sources of  maps  sources of  sources are  not exist, so the study  
+identified  aggregate, and   aggregates  studied and  might only give the  
+(financed by IDA)  methods of   are identified  sustainability  reason why not to  
+ extraction, are   for is assessed  exploit the local  
+ identified and   sustainable   sources  
+ quantified in   exploitation    
+ Kwajalein and      
+ Majuro atolls      
+4. Project  The National  Annual progress  0 per year  1 per year  Members of the NSC  
+management and  Steering Committee  report    are not overloaded  
+governance is  (NSC) meetings     with other activities,  
+effective  and provides     and have dedicated
+
+
+---
+*Page 62*
+---
+
+H GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 59 OF 60   
+RESULTS MONITORING AND REPORTING  
+ 
+ 
+ 
+ effective oversight 
+and governance.     time for the NSC 
+meeting  
+ 
+H.2. Arrangements for Monitoring, Reporting and Evaluation  
+The monitoring and evaluation (M&E) plan of PREP Phase II is based on the key indicators detailed in 
+the Results  Framework  presented  in section  H 1.2. The key indicators  have  been  chosen  taking  into account 
+the information they provide, as well as the costs and feasibility for any additional data gathering. The baselines for these indicators have been established on the best available data, but will in some cases be re- refined over the first two years  of implementation.  Results  indicators  will be gender  disaggregated when 
+feasible.  
+       Responsibility for monitoring and evaluation of progress towards the objectives and outcomes will be 
+the responsibility of the implementing agencies of the different component, (with support from the PSU). The PREP Phase II will support monitoring and evaluation training and expertise as part of the implementation,  
+ensuring that a focal  point  is assigned to oversee and be responsible for M&E.  Furthermore, the PREP Phase 
+II will directly support the actual costs of data collection and analysis, as part of each of the three technical  
+components.  
+       A midterm,  independent,  review  will be carried out within  24 months  after the effectiveness  of the PREP 
+Phase II and no later than December 31, 2019, to assess: (i) progress under Phase II of the Program; (ii) coherence in the implementation of Phase II and progress with preparation of subsequent phases; (iii) 
+achievement of overall  objectives; (iv) the role of the different partners; and (v) reorientation of the PREP 
+Phase II if necessary to ensure that it achieves its  objectives.  
+       At the same time, it will allow the incorporation of lessons learned in the design of subsequent phases. 
+The Regional Steering Committee through the RCU will be responsible for preparing the necessary 
+documentation for the review and for planning the midterm review  meeting.
+
+
+---
+*Page 63*
+---
+
+ 
+ANNEXES  
+GREEN CLIMATE FUND FUNDING PROPOSAL | PAGE 60 OF 60  
+ 
+ 
+ 
+ 
+I. Supporting Documents for Funding  Proposal  
+☒ NDA No -objection Letter ( NDA_No- objection  Letter)  
+☒ Feasibility  Study  ( Annex  B_Deltares_2016_Feasibility_study_Coastal_risk_assessment_RMI)  
+☒ Integrated  Financial  Model  that provides  sensitivity  analysis of critical elements  (xls 
+format,  if applicable)  ( Annex_C_CB  Analysis1_GCF)  
+□ Confirmation  letter  or letter  of commitment  for co-financing  commitment  (If applicable)  
+□ Project/Programme Confirmation/Term Sheet  (including cost/budget  breakdown,  
+disbursement  schedule, etc.)  – see the Accreditation Master  Agreement,  Annex  I 
+(Annex  E) 
+□ Environmental  and Social  Management  Framework.  Including  the stakeholder  
+engagement  framework (section 9.) (Annex F)(annex  F) 
+□ Appraisal  Report  or Due Diligence  Report  with recommendations  (If applicable)  (Annex  G) 
+□ Evaluation Report of the baseline project (Non applicable - Phase I  of the PREP 
+Phase I was only launched  during June 2016,  and as such,  is still approximately  18 months  
+away  from the mid-term review ) 
+☒ Map indicating the location of the project/programme (Annex  H) 
+☒ Timetable of project/programme implementation (Annex  I) 
+☒ Budget (Annex  J) 
+☒ Procurement Plan (Annex  K) 
+ 
+ 
+ 
+* Please note that a funding proposal will be considered complete only upon receipt of all the 
+applicable supporting documents.  
+ 
+  
+ 
+  
+ 
+  
+ 
+  
+ 
+  
+ 
+  
+ 
+  
+ 
+  
+ 
+  
+ 
+ 
+I
+
+
+---
+*Page 64*
+---
+
+GCF/B.19/ 22/Add. 08/Rev.01      
+No objection letter issued by the national designated authority
+
+
+---
+*Page 65*
+---
+
+GCF/B.19/ 22/Add. 08/Rev.01      
+Environmental and social report(s) disclosure   
+Basic project/programme information  
+Project/programme title  Pacific Resilience Project Phase II for RMI  
+Accredited entity  The World Bank Group  
+Environmental and social 
+safeguards (ESS) category  Category B  
+  
+Environmental and Social Impact Assessment (ESIA)  
+Date of 
+disclosure on 
+accredited 
+entity’s website  2017 -01-29 
+Language(s) of 
+disclosure  English and Marshallese.  
+Link to 
+disclosure  http://documents.worldbank.org/curated/en/506521485865590886/Environmental -
+and-social -management -framework  
+Other link(s)  The Government of the Republic of Marshall Islands disclosed a hard copy of the final draft 
+English version of the ESMF on 13 January 2017, using a disclosure notice in the newspaper.  The Marshallese and English final version was disclosed on the Ministry of Finance website on April 28, 2017.  https://www.facebook.com/groups/717674658383569/?ref=bookmarks
+  
+The Env ironmental and Social Management Framework contains an impact assessment 
+(ESIA) consistent with the requirements of PS1 for a category B project.  
+Environmental and Social Impact Assessment (ESMP) (if applicable)  
+Date of 
+disclosure on 
+accredited 
+entity’s website  2017 -01-29 
+Language(s) of 
+disclosure  English and Marshallese.  
+Link to 
+disclosure  http://documents.worldbank.org/curated/en/506521485865590886/Environmental -
+and-social -management -framework  
+The Environmental and Social Management Framework contains a management plan 
+(ESMP) consistent with the requirements of PS1 for a category B project.  
+Resettlement Policy Framework (RPF)  
+Date of 
+disclosure on 
+accredited 
+entity’s website  2017 -01-29 
+Language(s) of 
+disclosure  English and Marshallese  Page 1
+
+
+---
+*Page 66*
+---
+
+GCF/B.19/ 22/Add.08 /Rev.01      
+ 
+ 
+ 
+Link to  
+disclosure  http://documents.worldbank.org/curated/en/976881485847567684/Resettlement - 
+policy -framework -RPF  
+Other link(s)  The Government of the Republic of Marshall Islands disclosed a hard copy of the final draft 
+English version of the RPF on 13 January 2017, using a disclosure notice in the newspaper. The 
+Marshallese and English final version was disclosed on the Ministry o f Finance website on April 
+28, 2017. https:// www.facebook.com/groups/717674658383569/?ref=bookmarks
