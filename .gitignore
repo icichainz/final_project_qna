@@ -1,4 +1,22 @@
-.venv/*
+# Python virtual environments
 .venv/
+venv/
+
+# Environment variables
 .env
-pdfs_20
+
+# PDF data folders
+pdfs_20/
+pdfs_20_2/
+
+# Python cache filesn cache files
+__pycache__/che__/
+*.pycc
+
+# IDE and system files system files
+.ipynb_checkpoints/nb_checkpoints/
+.DS_Store
+
+# Data and logs
+data/
+logs/
