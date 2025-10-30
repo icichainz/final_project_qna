@@ -4,6 +4,7 @@ venv/
 
 # Environment variables
 .env
+venv
 
 # PDF data folders
 pdfs_20/
@@ -20,3 +21,6 @@ __pycache__/che__/
 # Data and logs
 data/
 logs/
+*.pkl
+
+*.pdf
