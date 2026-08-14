@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gcf-qna"
+version = "0.1.0"
+description = "GCF funding-proposal extraction, indexing, and Q&A chat"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy",
+    "faiss-cpu",
+    "sentence-transformers",
+]
+
+[project.optional-dependencies]
+extraction = ["aiohttp", "aiofiles", "pymupdf", "pillow", "pypdf"]
+app = ["chainlit", "anthropic"]
+
+[tool.setuptools.packages.find]
+where = ["src"]

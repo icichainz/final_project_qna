@@ -1,11 +1,9 @@
 services:
-  rag-chatbot:
-    build:
-      context: .
-      dockerfile: Dockerfile
+  qna:
+    build: .
     ports:
       - "8000:8000"
+    env_file: .env
     volumes:
-      - .:/app:cached
-    # Override the CMD to ensure the file exists
-    command: ["sh", "-c", "ls -la /app && chainlit run main2.py --port 8000 --host 0.0.0.0"]
+      # the index is built on the host; the container only reads it
+      - ./data:/app/data
