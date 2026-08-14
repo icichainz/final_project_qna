@@ -1,0 +1,9 @@
+services:
+  qna:
+    build: .
+    ports:
+      - "8000:8000"
+    env_file: .env
+    volumes:
+      # the index is built on the host; the container only reads it
+      - ./data:/app/data
