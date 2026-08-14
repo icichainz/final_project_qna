@@ -29,8 +29,8 @@ from pdf2image import convert_from_path
 from PIL import Image
 
 # ---------- Config ----------
-MODEL_ID = "qwen/qwen3-vl-8b"
-#MODEL_ID = "qwen/qwen2.5-vl-7b"
+#MODEL_ID = "qwen/qwen3-vl-8b"
+MODEL_ID = "qwen/qwen2.5-vl-7b"
 class OutputRoot(Enum):
     BASE = "output_qwen_vl_markdown"
 
