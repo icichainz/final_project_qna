@@ -2,6 +2,10 @@
 """
 PDF -> page image -> VLM -> Markdown per page -> merged <pdf>.md
 
+Run:  python scripts/extract_corpus.py   (or python -m gcf_qna.extraction.vlm)
+Paths come from gcf_qna.config: pdfs in data/raw/pdfs, page cache in
+data/cache/pages, output under data/extracted/vlm/<model>/.
+
 Optimised rewrite of qwen_vlm_image_processing.py.
 
 Key differences vs. the original:
@@ -51,19 +55,22 @@ import aiohttp
 import pymupdf
 from PIL import Image
 
+from gcf_qna import config
+
 # ---------------------------------------------------------------- config ----
 
-FOLDER_PATH = os.getenv("FOLDER_PATH", "pdfs_20_2")
-OUTPUT_ROOT = Path(os.getenv("OUTPUT_ROOT", "output_qwen_vl_markdown"))
-CACHE_ROOT = Path(os.getenv("CACHE_ROOT", ".page_cache"))
+FOLDER_PATH = os.getenv("FOLDER_PATH", str(config.RAW_PDF_DIR))
+OUTPUT_ROOT = Path(os.getenv("OUTPUT_ROOT", str(config.EXTRACTED_DIR / "vlm")))
+CACHE_ROOT = Path(os.getenv("CACHE_ROOT", str(config.PAGE_CACHE_DIR)))
 
-MODEL_IDS = [
+# comma-separated env override, e.g. VLM_MODELS="qwen/qwen3-vl-8b,pixtral-12b"
+_env_models = [m.strip() for m in os.getenv("VLM_MODELS", "").split(",") if m.strip()]
+MODEL_IDS = _env_models or [
     "qwen/qwen3-vl-8b",
-  
 ]
 
-LMSTUDIO_BASE_URL = os.getenv("LMSTUDIO_BASE_URL", "http://192.168.56.1:12345/v1").rstrip("/")
-LMSTUDIO_API_KEY = os.getenv("LMSTUDIO_API_KEY", "")
+LMSTUDIO_BASE_URL = config.LMSTUDIO_BASE_URL
+LMSTUDIO_API_KEY = config.LMSTUDIO_API_KEY
 
 PAGE_MEGAPIXELS = float(os.getenv("PAGE_MEGAPIXELS", "2.0"))
 JPEG_QUALITY = int(os.getenv("JPEG_QUALITY", "92"))
