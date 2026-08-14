@@ -1,0 +1,31 @@
+# environments & runtime
+venv/
+__pycache__/
+*.pyc
+.env
+.ipynb_checkpoints/
+.files/
+.chainlit/translations/
+.DS_Store
+.vscode/
+
+# data & regenerable artifacts — see data/README.md for how to rebuild each layer
+data/**
+!data/README.md
+!data/raw/
+!data/raw/funding/
+!data/raw/funding/*.csv
+
+# index artifacts wherever they sit
+*.faiss
+*.pkl
+
+# pre-reorg locations (as staged in the baseline commit)
+final_project_qna/chat_interface/.image_cache/
+final_project_qna/chat_interface/.page_cache/
+final_project_qna/chat_interface/pdfs_20_2/
+final_project_qna/chat_interface/*output*/
+final_project_qna/chat_interface/txt_cache/
+final_project_qna/chat_interface/emb_cache/
+final_project_qna/chat_interface/embedding_cache/
+final_project_qna/lmstudio_output_md/

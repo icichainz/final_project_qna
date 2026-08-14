@@ -1,0 +1,10 @@
+chainlit
+sentence-transformers
+faiss-cpu
+torch
+pdfplumber
+langchain
+langchain-community
+langchain-anthropic
+aiofiles
+numpy
