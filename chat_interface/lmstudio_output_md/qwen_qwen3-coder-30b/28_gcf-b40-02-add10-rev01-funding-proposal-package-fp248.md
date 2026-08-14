@@ -1,0 +1,6325 @@
+---
+*Chunk pages 1–1*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=312 (sys=94, user=218), max_out=1024, ctx=8192
+---
+
+# Meeting of the Board  
+## 21 – 24 October 2024  
+### Songdo, Incheon, Republic of Korea  
+
+## Provisional agenda item 10  
+
+### GCF/B.40/02/Add.10/Rev.01  
+#### 19 October 2024  
+
+## Consideration of funding proposals –  
+### Addendum X  
+
+## Funding proposal package for FP248  
+
+## Summary  
+
+This addendum contains the following seven parts:  
+
+1. A funding proposal titled "Land-based Mitigation and Adaptation through a Jurisdictional Approach in West Kalimantan";  
+2. No-objection letter issued by the national designated authority(ies) or focal point(s);  
+3. Environmental and social report(s) disclosure;  
+4. Secretariat’s assessment;  
+5. Independent Technical Advisory Panel’s assessment;  
+6. Response from the accredited entity to the independent Technical Advisory Panel's assessment; and  
+7. Gender documentation.  
+
+---  
+
+*Note: Page 1 is included in this extract.*
+
+
+---
+*Chunk pages 2–2*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=234 (sys=94, user=140), max_out=1024, ctx=8192
+---
+
+# Table of Content
+
+- Funding proposal submitted by the accredited entity 3
+- No-objection letter issued by the national designated authority(ies) or focal point(s) 76
+- Environmental and social report(s) disclosure 77
+- Secretariat's assessment 81
+- Independent Technical Advisory Panel's assessment 96
+- Response from the accredited entity to the independent Technical Advisory Panel's assessment 109
+- Gender documentation 111
+
+[Page 1]
+
+
+---
+*Chunk pages 3–3*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=212 (sys=94, user=118), max_out=1024, ctx=8192
+---
+
+# Project/Programme title: Land-based Mitigation and Adaptation through a Jurisdictional Approach in West Kalimantan
+
+## Country(ies): Indonesia
+
+## Accredited Entity: Deutsche Gesellschaft für Internationale Zusammenarbeit (GIZ) GmbH
+
+## Date of first submission: 2024/03/26
+
+## Date of current submission: 2024/09/24
+
+## Version number V.8
+
+--- 
+
+*Note: The provided text appears to be a header or title page from a PDF document, likely containing metadata about a project or programme. It does not contain any content that would typically be converted into markdown format.*
+
+
+---
+*Chunk pages 4–4*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=492 (sys=94, user=398), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 0
+
+## Contents
+
+- Section A PROJECT / PROGRAMME SUMMARY
+- Section B PROJECT / PROGRAMME INFORMATION
+- Section C FINANCING INFORMATION
+- Section D EXPECTED PERFORMANCE AGAINST INVESTMENT CRITERIA  
+- Section E LOGICAL FRAMEWORK
+- Section F RISK ASSESSMENT AND MANAGEMENT
+- Section G GCF POLICIES AND STANDARDS
+- Section H ANNEXES  
+
+## Note to Accredited Entities on the use of the funding proposal template
+
+- Accredited Entities should provide summary information in the proposal with cross-reference to annexes such as feasibility studies, gender action plan, term sheet, etc.
+- Accredited Entities should ensure that annexes provided are consistent with the details provided in the funding proposal. Updates to the funding proposal and/or annexes must be reflected in all relevant documents.
+- The total number of pages for the funding proposal (excluding annexes) should not exceed 60. Proposals exceeding the prescribed length will not be assessed within the usual service standard time.
+- The recommended font is Arial, size 11.
+- Under the GCF Information Disclosure Policy, project and programme funding proposals will be disclosed on the GCF website, simultaneous with the submission to the Board, subject to the redaction of any information that may not be disclosed pursuant to the IDP. Accredited Entities are asked to fill out information on disclosure in section G.4.
+
+## Please submit the completed proposal to:
+
+fundingproposal@gcfund.org
+
+## Please use the following name convention for the file name:
+
+"FP-[Accredited Entity Short Name]-[Country/Region]-[YYYY/MM/DD]"
+
+
+---
+*Chunk pages 5–5*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=820 (sys=94, user=726), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 1
+
+## PROJECT/PROGRAMME SUMMARY
+
+### A.1. Project or programme
+Project
+
+### A.2. Public or private sector
+Public
+
+### A.3. Request for Proposals (RFP)
+Not applicable
+
+### A.4. Result area(s)
+
+Check the applicable GCF result area(s) that the overall proposed project/programme targets below. For each checked result area(s), indicate the estimated percentage of GCF and Co-financers’ contribution devoted to it. The total of the percentages when summed should be 100% for GCF and Co-financers’ contribution respectively.
+
+| GCF contribution | Co-financers' contribution | Mitigation total |
+|------------------|----------------------------|------------------|
+| ☐ Energy generation and access | ☐ Low-emission transport | ☐ Buildings, cities, industries and appliances |
+| ☒ Forestry and land use (50%) 50 % | 50 % | 50 % |
+| Adaptation total | | |
+| ☒ Most vulnerable people and communities | 20 % | 20 % |
+| ☐ Health and well-being, and food and water security | ☐ Infrastructure and built environment | ☒ Ecosystems and ecosystem services |
+| ☐ 30 % | ☐ 30 % | |
+
+### A.5. Expected mitigation outcome
+
+(Core indicator 1: GHG emissions reduced, avoided or removed / sequestered)  
+16.05 million tCO2eq (expected over 7-year project duration)  
+43.5 million tCO2eq expected over project lifespan period of 20 years)*  
+
+* Indicative figure based on simplified linear trend considering the current project effectiveness and an adjusted FRL for future periods, which will be lower when updated every 10 years.
+
+### A.6. Expected adaptation outcome
+
+(Core indicator 2: direct and indirect beneficiaries reached)  
+5,541,376 (direct + indirect beneficiaries); see Annex 2d  
+
+Direct beneficiaries:  
+- 680,108 (at least 50% women)  
+  - Women: 340,054 approximately  
+  - Men: 340,054 approximately  
+
+Indirect beneficiaries:  
+- 4,861,269  
+  - Women: 2,356,209  
+  - Men: 2,505,060  
+
+0.25% of the national population or 11.2% of total population of West Kalimantan  
+1.7% of the national population or 100% of total population of West Kalimantan  
+
+### A.7. Total financing (GCF + co-finance2)  
+100,194,751 Euros  
+
+### A.9. Project size  
+Medium (Upto USD 250 million)
+
+### A.8. Total GCF funding requested  
+59,484,751 Euros  
+
+1 Co-financer’s contribution means the financial resources required, whether Public Finance or Private Finance, in addition to the GCF contribution (i.e. GCF financial resources requested by the Accredited Entity) to implement the project or programme described in the funding proposal.  
+2 Refer to the Policy of Co-financing of the GCF.
+
+
+---
+*Chunk pages 6–6*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1236 (sys=94, user=1142), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 2
+
+## A.10. Financial instrument(s) requested for the GCF funding
+
+- ☒ Grant: 59,484,751
+- ☐ Loan
+- ☐ Guarantee
+- ☐ Equity
+- ☐ Results-based payment
+
+## A.11. Implementation period
+
+- 7 years
+
+## A.12. Total lifespan
+
+- 20 years
+
+## A.13. Expected date of AE internal approval
+
+- 9/4/2024
+
+## A.14. ESS category B
+
+## A.15. Has this FP been submitted as a CN before?
+
+- Yes ☒
+- No ☐
+
+## A.16. Has Readiness or PPF support been used to prepare this FP?
+
+- Yes ☐
+- No ☒
+
+## A.17. Is this FP included in the entity work programme?
+
+- Yes ☒
+- No ☐
+
+## A.18. Is this FP included in the country programme?
+
+- Yes ☒
+- No ☐
+
+## A.19. Complementarity and coherence
+
+- Yes ☐
+- No ☒ 
+
+## A.20. Executing Entity information
+
+The Deutsche Gesellschaft für Internationale Zusammenarbeit (GIZ) GmbH, besides being the Accredited Entity (AE) of the project, will also act as an Executing Entity (EE). GIZ is registered in Germany, and its sole shareholder is the Federal Republic of Germany, represented within Germany by the Federal Ministry for Economic Cooperation and Development (BMZ) and the Federal Ministry of Finance (BMF).
+
+In addition, there will be three other Executing Entities:
+
+1. The Indonesian Environment Fund (IEF) (Badan Pengelola Dana Lingkungan Hidup or BPDLH), which is a public service agency, a non-echelon unit accountable to the Ministry of Finance (MoF) (hereinafter referred to as “IEF” or “BPDLH”).
+2. Solidaridad Network Asia Limited (SNAL)
+3. Ministry of Environment and Forestry (MoEF), representing the Host Country
+
+## A.21. Executive summary (max. 750 words, approximately 1.5 pages)
+
+### Climate change problem
+
+The forests of West Kalimantan are globally acknowledged for their biodiversity importance and are essential for achieving the objectives of the global climate agenda. Due to the large above- and below-ground carbon pools, the province alone harbours an estimated 6.4% of the tropical forest carbon stocks of Indonesia and was declared a REDD+ priority region by the Ministry of Environment and Forestry (MoEF). Despite government efforts at the national and provincial levels, deforestation and forest degradation remain a major threat to the last intact ecosystems of West Kalimantan.
+
+West Kalimantan is the 3rd largest province in Indonesia, with an area of 14.6 million hectares and located at the Indonesian part of the island of Borneo. It is one of the country's deforestation hotspots.
+
+Since 1990, the forests in West Kalimantan declined by 27%, from 7.5 million hectares to 5.4 million hectares in 2020. During the same period, an average deforestation rate of 80,247 ha/year was observed. However, it increased over the decades, from 70,922 ha/year in 1990 – 2000 period, to 74,366 ha/year in 2000 – 2010 to 95,452 ha/year in 2010 - 2020.
+
+The coastal peat lands are particularly vulnerable. The forests in the five priority project regencies are severely threatened by deforestation and forest degradation, with annual deforestation rates of 5.9 thousand hectares in Kapuas Hulu, 27.1 thousand hectares in Ketapang, 8.8 thousand hectares in Kubu Raya, 2.9 thousand hectares in Sanggau and 4.7 thousand hectares in Sintang Regency between 1991 and 2020.
+
+West Kalimantan is exposed to multiple climate hazards, including increased temperatures, changes in precipitation patterns, rising sea levels, and increased frequency and intensity of extreme weather events such as floods, droughts, and forest fires. The Climate Risk Assessment (Annex 2c) highlights the province's vulnerability to the impacts of climate change. Based on the analysis, the areas with the highest potential impact are located in the interior, where large areas of forests and agricultural land are predominating. Currently, most villages in the five target regencies are exposed to high
+
+
+---
+*Chunk pages 7–7*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1549 (sys=94, user=1455), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 3
+
+## Indonesia's Climate Challenges and Agricultural Impact
+
+Indonesia, especially in Kalimantan, Sulawesi, and Sumatra, over the last four decades .4 Floods in agricultural areas led to various setbacks, including damage to farmlands, decreased crop yields, and challenges in accessing food due to disrupted transport systems and roads. The impact of flood and waterlogging on crop yield has been well documented. The average reduction in crop yields due to waterlogging generally reached 32.9%, depending on the crop type. Notably, waterlogging during the reproductive growth stage (41.90%) resulted in a more substantial yield reduction than the vegetative growth stage (34.75%).
+
+According to spatial analysis of MoEF forest land cover maps 1990 – 2020, in the last decade, estate crop (including palm oil) development has become the largest driver of deforestation with approx. 43% of contribution to forest cover change in 2020. Unproductive land due to excessive timber extraction remains with 29.7% in second place, mainly due to severe droughts during El Nino years. The development of small-scale agriculture is relatively constant throughout the decades with approx. 23% in 2020.
+
+## Proposed Interventions
+
+Against this background, the project aims to support the Government and people of West Kalimantan in the transition to sustainable and climate resilient management of forests and landscapes at scale. The overall objective is to reduce GHG emissions from deforestation and degradation, enhance forest carbon stocks through reforestation and forest land rehabilitation, improved good agriculture practices and ultimately strengthen the resilience of forest and peat landscapes in West Kalimantan.
+
+Activities will address the two main climate risks of (a) increased forest and peat fire due to increased temperatures and droughts and (b) reduced agricultural production due to increased drought. This will enable a paradigm shift towards climate-resilient and low-emission pathways.
+
+The Project is comprised of three Components: (i) Component 1 - Institutional and Regulatory Frameworks, (ii) Component 2. Sustainable commodity production and social forestry and (iii) Component 3 - Management, protection and rehabilitation of forest and peatland ecosystems.
+
+The implementation period will be of seven years. The first 1-2 years will focus on strengthening enabling conditions, preparing for implementation in the selected regencies and enhancing the institutional frameworks for sustainable landscape planning and management (Component 1). This will form a strong foundation for an efficient and effective implementation and upscaling of sustainable land and forest management and agriculture-based commodities investments in the field under Components 2 and 3. Outputs and respective activities build on proven approaches including lessons learned for successful implementation at scale from the Executing Entities (EE) of the project.
+
+The project activities will cover the province of West Kalimantan and implementation on the ground will focus specifically on five priority regencies: Kapuas Hulu, Ketapang, Kubu Raya, Sanggau, and Sintang. The proposed project location includes the priority area defined by the REDD+ working group and the FOLU Net Sink 2030 Operational Plan6, which developed a Location Priority Index (IPL) as part of their REDD+ strategy.
+
+The five Regencies are covering 69.21% of total West Kalimantan area (10.5 million ha), 82% (4.45 million ha) of the forested area of West Kalimantan and 71.2% (49.714 ha) of the contribution of annual deforestation in West Kalimantan.
+
+## Climate Results and Benefits
+
+The project overall impact is expected to result in annual emission reductions of 2.3 million tCO2eq from deforestation, forest degradation and enhancement of forest carbon stock in West Kalimantan. Over the project life span of 7 years a total of 16.05 million tCO2eq will be targeted.
+
+The project is expected to result in adaptation benefits through increased resilience of approx. 680,000 people (at least 50% women) who reside in the target villages by strengthening their awareness of climate change risk and risk reduction practices. In addition, direct beneficiaries will be supported to implement climate-resilient and low-emission agriculture and forestry practices. An estimated 14,000 smallholder farmers will adopt low-emission climate resilient agricultural practices under Component 2 (contribution to USP-2 target 3 Food), at least 78,000 households will directly benefit from sustainable forest management under the social forestry schemes supported under Component 3.
+
+Additional 23.000 households will be directly involved and benefit from climate resilient land use planning and approximately 10,000 households in
+
+
+---
+*Chunk pages 8–8*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1762 (sys=94, user=1668), max_out=1024, ctx=8192
+---
+
+# B.1. Climate context (max. 1000 words, approximately 2 pages)
+
+## B.1.1 Context
+
+1. Deforestation and forest degradation remain a major threat to the last intact ecosystems on the island of Borneo.  
+The Indonesian part of the Borneo, Kalimantan, has seen particularly high deforestation rates over the last decades.7 West Kalimantan (WK) is Indonesia’s third largest province, with a land area of 14.6 million ha (see Annex 16). WK is amongst the most vulnerable provinces in terms of fires in Indonesia,8 and is one of the poorest provinces in Indonesia.9 Poor rural communities are increasingly threatened by the impacts of climate change. WK remains one of the top deforestation hotspots in the country.10 In the period from 1991-2020, forests in WK declined by 27%, from 7.5 million ha to 5.4 million ha. Average deforestation and forest degradation rates of 80,247 ha per year were observed during this period. This includes large areas of peat forests, where approximately 42,000 ha of these forests were lost annually.11  
+
+2. In total, 55.5% of WK’s land area, equalling 8.2 million hectares, is designated as forest area. The largest part of the forest area is allocated for production forest (4.4 million hectares), which further categorized into permanent production forest (2.1 million hectares), limited production forest (2.1 million hectares), and convertible production forest (0.2 million hectares) .12 Protection forests, nature conservation areas and strict nature reserves cover 2.3 million hectares, 1.2 million hectares and 0.3 million hectares, respectively.13 Based on a forest and land cover map from 2020, 5.5 million hectares of WK are still covered with natural forest (37.5% of total land area). These remnant forest areas are mostly located in the focus Regencies Kapuas Hulu (2.22 Mha), Ketapang (0.95 Mha) and Sintang (0.91 Mha).14 In addition, WK has over 1.5 million hectares of peatland and approximately 120,000 ha of mangrove forests.  
+
+3. Forests are critical for communities who depend on natural resources for their livelihoods.15 Although the forestry sector only contributes around 2% of regional income15 – it is indispensable for the communities residing in and around forest areas. Local communities have been managing land and forest resources using their own customary tenure systems in a large proportion of the statutory forest zone (state forest) for generations. WK has the highest social forestry coverage16 with 572,199 hectares covered by 224 licenses as of September 2023.17  
+
+4. Forest ecosystems provide vital ecosystem services including carbon sequestration, the provision of food and water, and nutrient cycling, among others, and support the livelihoods of approximately 2.1 million people (50% female) living in 1,277 villages in WK. Forest-dependent communities comprise 62% of all villages in WK, and are mainly inhabited by local indigenous Dayak. Around 7% of the people in WK are experiencing poverty18, of which approximately half are located in and around the forest.19 Still 40% of all 2,031 villages in WK are categorized as developing and 5% as disadvantaged, mostly located inside or in the vicinity of forest areas. They are often dependent on forest resources for their livelihoods19. Deforestation and forest degradation not only threaten the livelihoods of local communities in WK, but also exacerbate the vulnerability of communities and ecosystems to climate change (see B.1.2).  
+
+5. Indonesia has been a strong advocate for REDD+ at the international level, committed to enhancing national and jurisdictional policy frameworks for forest and land management to foster green growth. The Government of Indonesia, through its NDC, aims to surpass its existing emission reduction commitments post-2020. Recent emissions assessments have led Indonesia to set an unconditional reduction target of 31.89% and a conditional target of up to 43.20% below the business-as-usual scenario by 2030, with REDD+ playing a crucial role in these targets from the land use sector.  
+
+6. The Government of West Kalimantan (GoWK) has set an ambitious goal to achieve a 60% reduction in greenhouse gas emissions, equivalent to 8.84 million tCO2 per year from deforestation and 0.5 million tCO2 per year from forest degradation.
+
+
+---
+*Chunk pages 9–9*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1549 (sys=94, user=1455), max_out=1024, ctx=8192
+---
+
+# B.1.2 Climate Change context ( historic climate trends and future scenarios )
+
+20 The information provided is based on primary data analysis conducted for the project . For more information on climate risk and vulnerability, refer to Annex 2c  
+
+21 Peat fires are often anthropogenically induced, mainly to clear land for production, but the impacts of climate change will increase the risk of more and severe peat fire events.  
+
+22 http://sipongi.menlhk.go.id/pdf/luas_kebakaran  
+
+degradation, as per the Forest Reference Level (FRL) to contribute to the NDC target. Despite these targets being established in 2012 and reinforced in 2017 through the SRAP, assessing the impact of these regulatory frameworks on emission reductions remains challenging. In 2022, West Kalimantan introduced a provincial FOLU Net Sink 2030 Action Plan, fully align4ed to the national FOLU Net Sink 2030 Strategy, to further these efforts.  
+
+7. In addition to the GoWK targets, the Ministry of Environment and Forestry (MoEF) has allocated emission baselines for reducing deforestation and forest degradation for each province, based on the FREL. For West Kalimantan, the national emission baseline al locations are 7.5 million tCO2 per year from deforestation and 0.8 million tCO2 per year from forest degradation.  
+
+B.1.2 Climate Change context ( historic climate trends and future scenarios ) 20  
+
+8. WK is affected by climate change due to changes in both temperature and rainfall. Generally, rainfall changes across Indonesia show an increase in rainfall, particularly during the wet season, and a decrease in rainfall intensity, especially during the dry se ason. This has led to an increase in the potential for both floods and droughts. With these changes to the climate, especially drought, there has been an increase in the intensity of forest and land fires, becoming annual disasters. In WK, plantation an d secondary swamp forest areas are highly vulnerable to drought and fires, especially in peat areas with depths of 50 -200 cm. Forest and land fires also cause land degradation and changes in forest and ecosystem functions, negatively impacting the local ec onomy.  
+
+9. Historical temperature conditions in West Kalimantan generally show that the areas with the highest temperatures are in the western coastal region and the lowest temperatures occur in the mountainous regions in the eastern region. Apart from being influenced by altitude, temperature conditions in WK are also greatly influenced by the latitude at equator. The minimum temperature ranges from 18 ℃ - 23℃ and the maximum temperature ranges from 29 ℃ - 32℃ with the average ranging from 24 ℃ to 28℃. The period from 1981 to 2015, all regions in WK experienced an increasing trend of up to 0.6℃. The highest temperature increase trend occurs in the minimum temperature, while the maximum temperature tends to experience a lower increase trend. The temperature anomaly in WK shows an increasing trend until now.  
+
+10. Temperatures are projected to increase significantly in the future, as a result of increased greenhouse gas emissions. The analysis for WK region shows the minimum air temperature is projected to increase up to 2.8 ℃ while the maximum temperature is projected to increase up to 3.4 ℃. The mean temperature will increase by up to 3.2 ℃ in extreme scenarios. Analysis of the maximum temperature of hot extremes shows that the number of days with maximum temperatures greater than the 99th percentile will increase by 70% from current conditions. The increase in extreme temperatures mainly occurs in the southern region and around the west coast of WK.  
+
+11. The spatial distribution of average annual precipitation in WK shows distinct patterns across the region, particularly when divided into four time periods: 1981-1990, 1991-2000, 2001-2010, and 2011-2022. Generally, the eastern areas of WK tend to exhibit higher average annual precipitation, while the western regions experience relatively lower average annual precipitation. However, the intensity level of annual precipitation varies across different time periods. From 1991-2010, the intensity of annual precipitation was not particularly high, while during the period from 2011-2022, there was an overall increase in average annual precipitation across all regions.  
+
+12. Annual rainfall in WK is expected to rise in almost all locations, only certain locations in the Ketapang and Sambas regencies are expected to have a decrease in annual rainfall. The annual rainfall rise in Kapuas Hulu Regency is 15% greater than the baseline condition. An increase in rainfall tends to
+
+
+---
+*Chunk pages 10–10*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1073 (sys=94, user=979), max_out=1024, ctx=8192
+---
+
+# [Page 1]
+
+## GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 6
+
+23 GFDRR. No Date. Kalimantan Barat. Available online: https://thinkhazard.org/en/report/1522-indonesia-kalimantan-barat/DG  
+24 https://apo.org.au/sites/default/files/resource-files/2020-02/apo-nid276271.pdf  
+
+For example, communities still apply rotational agriculture and land clearing using burning methods to reduce the use of chemical fertilizer. Other suitable methods are needed, so that land clearing through burning or shifting agriculture methods will be gradually reduced. Land clearing will not only contribute to deforestation and degradation but also exacerbates the vulnerability of local ecosystems, e.g. when fire will get out of control and spread into other areas due to droughts.
+
+26 MoEF began its climate village programme (PROKLIM) in 2011, identifying how many villages have sufficient capacities to implement interventions related to climate change adaptation and mitigation. These statistics reflect villages PROKLIM status in 2022.  
+2022 show that floods, strong winds, and land fires were the most common hazards that occurred in many locations in WK. Landslides and droughts also occurred but not as often as the other three hazards.
+
+16. Overall, the climate risk assessment (see chapter 6 of annex 2c) reveals that extreme low rainfall and hot weather during dry season causes more prolonged droughts, which will impact agricultural productivity and increase the risk of forest and land fires. On the hand, increased extreme rainfall, especially during the rainy season, will increase the probability of floods. Like drought, floods damage crops and forests and reduce productivity, which can cause economic losses for farmers and landowners. In addition, floods also cause landslides and erosion, which can lead to damages to land and the environment.
+
+Climate change risk in WK:  
+
+17. Climate change is projected to strongly impact WK, where it will have a disproportionate impact on particularly vulnerable groups including poor households, agricultural and forest dependent communities, indigenous peoples, women, and disabled persons, among others. Rural farming communities in WK rely heavily on climate-sensitive sectors and ecosystems, making them particularly vulnerable to the rapid acceleration of climate-related hazards and associated risks. Agro-ecosystems and agricultural producers are affected by changes in rainfall, evaporation, run-off water and soil moisture. This will have negative impacts on local incomes and water security. In addition, rising temperatures are projected to lead to an increase in the incidence and range of pests and diseases, which can lead to agricultural losses. When combined with decreased rainfall and increased demand, higher temperatures will also present new challenges related to water storage. It is estimated that in total agricultural productivity will decrease by 17.9% due to climate change by 2080. Increasing forest fires will lead to damages and losses of infrastructure, productive assets, and human lives. Large scale fires also result in the loss of ecosystem services and generate negative health impacts on the local population due to smoke and haze.
+
+18. As local populations are increasingly at risk to climate change, there is a need to strengthen the resilience of vulnerable communities and the ecosystems upon which they depend. Strengthening the resilience of the most vulnerable communities against different types of risk (climatic, geophysical, economic or health-related) and developing and implementing adaptation strategies is therefore of utmost importance. Traditional coping strategies such as traditional planting patterns or hunting used by communities and households to adapt to shocks and threats have been proven to be inadequate, due to climate change.
+
+19. The interplay between deforestation and climate change adaptation underscores the need to acknowledge their interconnected nature. Addressing these issues separately overlooks their intertwined dynamics and limits effective solutions. There is a need to address accelerating deforestation and forest degradation, which exacerbates the vulnerability of local ecosystems (e.g. soil degradation and erosion, loss of protective forests that protect ecosystems and communities against flooding). In WK, only 108 out of 2,142 villages have capacities to implement activities related to adaptation and mitigation. These figures are clearly showing the need and challenge to increase resilience of vulnerable communities and ecosystems while tackling forest loss.
+
+Figure 11: Summary impact chain of the climate risk assessment in West Kalimantan
+
+
+---
+*Chunk pages 11–11*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1396 (sys=94, user=1302), max_out=1024, ctx=8192
+---
+
+# B.1.3 Mitigation context and needs
+
+20. The forests of WK are globally acknowledged for their biodiversity importance and are essential for achieving the objectives of the global climate agenda, and the UNFCCC Paris Agreement. Due to the large above- and below-ground carbon pools, the province alone harbours an estimated 6.4% of the tropical forest carbon stocks of Indonesia²⁷ and is a REDD+ prioritized region by the Indonesian Ministry of Environment and Forestry (MoEF).²⁸  
+
+21. WK has seen particularly high deforestation rates and heavy logging followed by conversion to timber or oil palm plantations over the last decades.²⁹  
+
+22. A deforestation analysis based on the MoEF forest and land cover map from 1990 to 2020 shows an annual deforestation of 80.2 thousand hectares. The province shows a distinct trend in annual deforestation compared to national trends. Peak deforestation occurred in 2013 in WK, closely linked with an increase in palm oil expansion during that period. The annual deforestation in WK from 1990 -2000 was around 71 thousand hectares per year, then increased to 74 thousand hectares from 2000-2010, and further increased to 95 thousand hectares during the period from 2010-2020. Overall, forests in WK declined by 27%, from 7.5 million hectares in 1990 to 5.4 million hectares in 2020 (see chapter 2.1.2 in the feasibility study, Annex 2b).  
+
+23. The forests in the five project regencies are severely threatened by deforestation and forest degradation, with annual deforestation rates of 5.9 thousand hectares in Kapuas Hulu, 27.1 thousand hectares in Ketapang, 8.8 thousand hectares in Kubu Raya, 2.9 thousand hectares in Sanggau and 4.7 thousand hectares in Sintang Regency.  
+
+24. The world’s forests store approximately 861 gigatons of carbon, with 44 percent in soil (to one-meter depth), 42 percent in live biomass (above- and belowground), 8 percent in dead wood, and 5 percent in litter. Although, tropical rainforests account for only 30 percent of global tree cover, they contain 50 percent of the world’s carbon stored in trees.³⁰ This may illustrate the importance of Indonesian forests as carbon storage which is even more pronounced with the abundance of peatland. Warren et al. (2017) estimate Indonesia’s total peat carbon store to be between 13.6 and 40.5 gigatons³¹, which is estimated 30% more carbon than the biomass of all Indonesian forests. However, Indonesia has also contributed to considerable carbon and other GHG emissions through large-scale deforestation, and forest and peatland fires.  
+
+25. Emissions from deforestation and forest degradation in WK occurs on both mineral and peat soils. Out of 38 provinces in Indonesia WK has the fifth largest area of forest emissions on mineral soils and the third largest area for emissions from peat soils³². Due to the extensive peatlands in WK, reduction of fires and peat degradation are highly relevant for achieving the national NDC goals. In addition, forest loss in WK’s watersheds increase the vulnerability of peatlands due to changing water-provision.  
+
+26. Based on the revised reference level of WK (2nd FRL)³³, the reference level from the period of 2006-2020 was 29.6 million tCO₂eq per year, which is higher than the previous FREL. However, the reference level from the 1st FREL and the 2nd FREL is not fully comparable, due to different scope (notably emissions sources) and emission factors used for the calculation. Deforestation contributed most significantly to the FRL with emission of 29.4 million tCO₂eq per year, which include emissions from biomass loss due to conversion, biomass burning, peat fires, and peat decomposition. Emission from forest degradation was only 0.8 million tCO₂eq per year, which include emissions from biomass loss, biomass burning and peat decomposition. The annual removal from enhancement of forest carbon stock was -0.6 million tCO₂eq per year, which was derived from biomass gain deducted by the emission from peat decomposition. This baseline is expected to be the level of emissions with business-as-usual scenario and will be used as the reference level for estimating the emission reduction from the period of 2020 to 2030.  
+
+# B.
+
+
+---
+*Chunk pages 12–12*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=942 (sys=94, user=848), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 8
+
+## Figure 2: Scenario without project
+
+28. Without the project, the following challenges for the adoption and scaling up of sustainable, low emission and climate resilient agricultural practices and forest landscape management persist:
+
+### Table 1: Overview of challenges for the adoption and scaling of cross-cutting climate action in WK
+
+| Institutional and regulatory frameworks at provincial and regency level cannot be timely amended | Gender-responsive climate change adaptation action is not included in mid-term spatial plans and regional development plans, awareness of stakeholders at province, regency and village level is weak, implementation tools are missing due to a lack of funding availability. |
+|--------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| FOLU Net Sink 2030 targets have no legal basis at the provincial level, provincial REDD+ policies are not aligned with national mitigation policies and regulations and mitigation policies are not included into provincial development plans. | REDD+ Task Force for West Kalimantan (Pokja REDD+) is not strengthened and continues to coordinate gender-responsive mitigation and adaptation actions as an ad-hoc organization with scarce resources, unclear mandate and overlaps with other working groups. |
+| Regulatory framework for forests with HCV/HCS in non-state forest areas (APL) is not strengthened and remaining forest are at risk to be converted to agricultural use. Primary forest and peatland areas are inconsistently mapped and field -identified moratorium areas are not included in regional land use plans. | Climate finance facilities and regulatory framework for innovative and gender-responsive sustainable funding mechanisms for private sector and IP are missing, hampering the unlocking of private sector investments for climate-resilient and low emission forest and landscape management. |
+| Existing, unsustainable land and forest business models are not replaced because investors are not willing to invest in improved agricultural practice and smallholder farmers and IP are lacking capacities to implement resilient and sustainable farming and community-based forest management | Investors continue to invest in concessions rather than in innovative smallholder land and forest business models. |
+| Smallholder farmers, including women, continue to be dependent on unsustainable practices and few commodities, mainly uncertified palm oil production and exposed and vulnerable to climate change. | Nearly 50% of social forestry permit holders received the license, yet had no further developments (e.g. social forestry business groups (KUPS), business plans). In addition, efforts to strengthen (Gender Equality and Social Inclusion) GESI remain largely untapped. |
+| Market access with climate-resilient commodities for smallholder farmers and Social Forestry permit holders, including women, remains very limited. | Traceability systems cannot be upscaled to smallholder farmers, including women, which disqualifies them from participating in sustainable value chains. |
+| Forest Management Units (FMU) do not have the resources and capacity to fully implement sustainable forest management, including Social Forestry | Mid-term management plans of FMU units do not reflect current national and provincial climate mitigation strategies and action plans and do not integrate adaptation measures. |
+| Most FMUs cannot fulfil the criteria of "effective FMU organizations" and do not receive the authority to utilize again forests in unlicensed Production or Protection forests to develop business models through cooperation partnerships with PBPH or Social Forestry permit holders and/or self-managed. | Human resources, infrastructure and equipment remain too limited for the mandate, resulting in insufficient: |
+| i. securing of FMU area from illegal logging, forest and land fires, wildlife poaching, and other activities which lead to deforestation and degradation, including to oversee the implementation of moratorium policies at the field level | ii. fire management |
+| iii. information and data exchange with other government offices at provincial and central level | iv. facilitation and support of IP, including women, on social forestry |
+| v. empowerment of women and social inclusion | |
+
+---
+
+
+---
+*Chunk pages 13–13*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1303 (sys=94, user=1209), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 9
+
+## 34 Kapuas Hulu, Ketapang, Kubu Raya, Sanggau, and Sintang
+
+35 see chapter 5.7 in the feasibility study (Annex 2a) on project location selection.
+
+29. The project aims to reduce GHG emissions from deforestation and degradation, enhance forest carbon stocks and ultimately strengthen the resilience of forest and peat landscapes and local communities to climate change. The following table shows that implementing key cross-cutting measures in the AFOLU sector will help reduce present and future climate impacts in WK, while generating crucial adaptation and mitigation benefits. An overview table of key climate risks, impacts and proposed interventions as well as adaptation and mitigation benefits can be found in section 7 of Annex 2c – Climate Rationale.
+
+30. Policy and institutional interventions will be implemented at the provincial and local level, whereas on the ground interventions (e.g. climate-resilient agriculture, social forestry etc.) will be implemented five priority regencies that have significant forest endowment and deforestation pressure. The five regencies are covering 69% of total WK area (10.5 m ha), 82% (4.45 m ha) of the forested area of WK and 71% of the contribution of annual deforestation. They also comprise 76% of the total peatland area of WK of 1.2 million ha. Over 2.35 million people reside in these regencies, of which 50% are female. There are 1,207 villages located in these regencies, of which 65% are considered developing villages or disadvantaged villages, majority of which are dependent on forests and agriculture for their livelihoods and are vulnerable to climate change.
+
+### B.1.5 Related ongoing and forthcoming projects with synergies
+
+31. Indonesia has received substantial bi- and multilateral support for the readiness and implementation of REDD+ over the last two decades, which was instrumental in building the enabling framework for reducing deforestation and forest degradation. The country has made substantial progress in developing the necessary frameworks, policies, and capacities to implement REDD+ programs. Key milestones are already in place including an updated REDD+ strategy for the period 2021-2030, updated FREL and a Safeguards Information System (SIS) for REDD+. In addition to the successful provincial programmes in East Kalimantan (FCPF Carbon Fund) and Jambi (Bio Carbon Fund), Indonesia recently received Results-based Payments (RbP) from Norway as well as from the GCF. The RbP will be channelled through BPDLH. Out of the total budget of USD 103 million under GCF RbP, only USD 2.3 million will be allocated for activities in WK based on performance criteria and the national benefit sharing plan. The provincial REDD+ task force has already started to harmonize different funding streams to successfully implement the provincial FOLU Net Sink 2030 strategy and action plan. The financial and technical support will help to achieve the envisioned NDC targets and overcome the current lack of finance, specifically for the forest sector with only 2.2% of the budget designated to forest management, equalling EUR 1.36 per ha/yr. Providing additional funding to scale up best practices and fill funding gaps could accelerate the overall positive trend in reducing deforestation during the last years and contribute to preserving remaining biodiversity hotspots and critical carbon sinks. At the same time, additional funding is needed for the adaptation of ecosystems and communities to increasing climate risks, for example by supporting smallholder farmers in the adoption of climate resilient farming practices, and to fulfil international sustainability and traceability requirements (see B5 for more details regarding the justification for the GCF funding request).
+
+32. For a comprehensive summary, including recently completed projects, on complementarities with other development initiatives please see chapter 4.1.3. and table 20 of the feasibility study (Annex 2a). Specifically highlighted should be the joint planning efforts with KfW's social forestry support programme focusing on Sanggau regency.
+
+## B.2 (a). Theory of change narrative and diagram (max. 1500 words, approximately 3 pages plus diagram)
+
+### Barrier Analysis
+
+33. The barriers that the project will address in the WK region, are clustered into four categories including governance, technical and institutional capacities, financial and markets. Table 2 provides an overview and brief description of the main barriers and also summarizes the project's approach to address it. A comprehensive description of each barrier category can be found in the feasibility study (Annex 2a) under section 4.2.
+
+#### Barrier Category 1: Governance
+
+• Climate change issues lack integration into Regional Development Plans at provincial and
+
+
+---
+*Chunk pages 14–14*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1248 (sys=94, user=1154), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 10
+
+## 36 Actions to strengthen GESI, and ensure social safeguards are cross-cutting throughout the Activities listed in this table. More detailed information on these measures are provided in the Gender Action Plan (Annex 8b), Environmental and Social Management Plan (Annex 6b), and the Indigenous Peoples Plan (Annex 6c).
+
+- Complex land tenure and use rights result in overlapping claims and challenges in protecting High Conservation Value and High Carbon Stock areas within concessions. Inconsistent policies exacerbate the issue, allowing deforestation and development within these areas.
+- Despite the establishment of multistakeholder forums, coordination among them remains weak, hindering effective management of disaster risks. Regulatory frameworks need strengthening to support adaptation policies at the provincial and regency levels. At the same time, attention needs to be paid to ensure policies, strategies and regulatory frameworks reflect the differentiated impacts of climate change on IPs, especially women, and strengthen Gender Equality and Social Inclusion (GESI).
+- Sub-national governments lack institutional capacities and regulatory frameworks for REDD+ implementation, adaptation mainstreaming and GESI, leading to delays in urgent actions. Responsibilities for sustainable land and forest management have shifted to provincial levels, but enforcement of regulations is challenging due to overlapping claims and weak governance.
+- IPs, including women, are insufficiently included in sustainable land and forest management, leading to social conflicts and inadequate recognition of their rights. Technical and financial support is needed to empower them and develop inclusive business models.
+
+## Barrier Category 2: Institutional and Technical Capacities
+
+- Insufficient institutional capacities hinder the implementation of sustainable practices, particularly at the local government level. The current coordinating institution faces challenges due to authority barriers, lack of capacity, budget, and gaps in the legal framework.
+- Lack of technical capacities and support for communities hamper the implementation of social forestry initiatives. Community support in obtaining land titles, accessing inclusive and gender-responsive technical assistance, and access to finance is essential for implementing sustainable business models.
+
+## Barrier Category 3: Financial
+
+- Limited sustainable financial mechanisms impede the mobilization of investments for sustainable forest and land management. Operational challenges exist within the national climate change funding mechanism, while investment cases and ready pipelines for green investment are lacking.
+- Insufficient finance hinders the implementation of social forestry, with limitations on private sector contributions and access to funding for smallholders and local communities, including women. Financial inclusion and technology need expansion to close the access gap and channel funding towards sustainable practices. Targeted measures are needed to strengthen GESI, as women face additional barriers to access finance.
+- Inadequate institutional budgets for forest management organizations limit their capacity to oversee forest land use effectively. Budget constraints, exacerbated by the COVID-19 pandemic, hinder their ability to implement mandates and support sustainable forest management.
+
+## Barrier Category 4: Markets
+
+- Lack of sustainable business models and value chain linkages hinder the adoption of sustainable agricultural practices. Limited incentives and access to financing perpetuate unsustainable practices among male and female smallholders and SMEs, including women-led SMEs, highlighting the need for proven and scalable business models to balance production and protection activities, while strengthening GESI.
+
+## Alignment of proposed outcomes, outputs and activities with identified barriers
+
+34. The identified barriers will be addressed by the three project outcomes and related outputs and activities. Table 2 provides a summary of the linkages between barriers addressed and corresponding activities.
+
+### Table 2: Alignment of proposed outcomes, output and activities with identified barriers
+
+#### Project Barrier related to Mitigation and Adaptation Needs
+
+#### Project's approach to address the barrier
+
+- Inclusion of climate change adaptation in mid-term, spatial, and other regional development plans (Activity 1.1.1)
+- Strengthening mitigation actions through improved REDD+ implementation towards achievement of sub-national FOLU Net Sink 2030 targets (Activity 1.1.2)
+- Strengthening the institutional framework for coordination of mitigation and adaptation activities across relevant stakeholders (Activity 1.1.3)
+- Strengthening the regulatory framework and implementation of High Biodiversity and Carbon Areas (i.e., HCV, HCS) on non-state forests land. (Activity 1.2.1)
+- Advancing social forestry implementation including building awareness of local communities of climate risks and risk-reduction practices (Activity 3.2.1)
+- Capacity development of civil servants and local communities in corruption prevention and awareness raising (Sub-Activity 3.1.1.3 and 1.1.1.2); establishing
+
+---
+
+
+---
+*Chunk pages 15–15*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1104 (sys=94, user=1010), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 11
+
+## Direct funding mechanisms to IP (Activity 1.3.1); using financial mechanisms with sound due diligence procedures (Activity 1.3.1); strengthen multistakeholder platform (Activity 2.1.3); engage the private sector in traceability efforts (Activity 2.1.2)
+
+### Institutional & Technical Capacities
+
+- Insufficient institutional capacities for implementing and scaling up sustainable AFOLU practices and, 
+- Lack of technical capacities and support for communities
+
+### Inclusion of climate change adaptation in mid-term, spatial, and other regional development plans (Activity 1.1.1)
+
+### Strengthening mitigation actions through improved REDD+ implementation towards achievement of sub-national FOLU Net Sink 2030 targets (Activity 1.1.2)
+
+### Strengthening the institutional framework for coordination of mitigation and adaptation activities across relevant stakeholders (Activity 1.1.3)
+
+### Advancing social forestry implementation including building awareness of local communities of climate risks and risk-reduction practices (Activity 3.2.1)
+
+## Financial
+
+- Insufficient sustainable financial mechanisms, 
+- Lack of finance to advance the implementation of social forestry and, 
+- Insufficient institutional budgets for FMUs mandated with overseeing forest land use
+
+### Developing sustainable financial mechanisms to ensure meaningful engagement of IPs and support climate-resilient and low emission forest and landscape management in West Kalimantan (Activity 1.3.1)
+
+### Supporting Forest Management Units (FMU) in the development and implementation of climate-informed forest management plans, including fire management (Activity 3.1.1)
+
+## Markets
+
+- Lack of sustainable business models for farmers and local communities, and functioning value chain linkages to markets
+
+### Scaling up a sustainable land and forest-based investment business model for West Kalimantan (Activity 2.1.1)
+
+### Implementing and up scaling the adoption of proven approaches for ER and enhancing the sustainability and climate resilience of smallholders in key commodity supply chains (incl. agroforestry) (Activity 2.1.2)
+
+### Enhancing multi-stakeholder dialogue and platform for low-emission and climate-resilient agriculture and private sector investment (Activity 2.1.3)
+
+### GRASS: Greening Agricultural Smallholder Supply Chains in Kapuas Hulu (Activity 2.1.4)
+
+### Improving sustainable landscape management and smallholder palm oil market inclusion - NISCOPS (Activity 2.1.5)
+
+## Project Goal and Theory of Change
+
+### Goal: This project's overall objective is to reduce GHG emissions from deforestation and degradation, enhance forest carbon stocks through reforestation and forest land rehabilitation, improve good agriculture practices and ultimately strengthen the resilience of forest and peat landscapes in WK by addressing two main climate risks (a) increased forest and peat fire due to increased temperatures and droughts and b) reduced agricultural production due to increased drought. This will enable a paradigm shift towards gender-responsive climate-resilient and low-emission pathways at the province level. Mitigation and adaptation measures are synergetic, where the sustainability of mitigation benefits depends on successfully strengthening the long-term resilience of vulnerable small-scale rural producers and smallholders and forest-ecosystems, considering the differentiated impacts of climate change on men and women and ensuring the mainstreaming of measures to strengthen GESI.
+
+### Goal Statement: IF the regulatory framework and capacities are strengthened, and access to highly regulated markets improved, THEN vulnerable indigenous peoples (IPs), including women, and private sector businesses will shift to sustainable, climate resilient forest landscape management, BECAUSE the increasing demand for sustainable products will attract public and private investments and provide incentives for sustainable practices while protecting local livelihoods from negative climate impacts.
+
+### The ToC diagram, goal and goal statement respond to a series of activities, outputs and outcomes (described in detail in section B.3) that addresses the barriers and risks described below.
+
+### The following diagram (Figure 3) shows the ToC for the project, which illustrates the change pathway and interactions of different elements of the intervention logic proposed by the project. As shown in the theory of change diagram, the project has established an integrated self-supporting approach, addressing the identified barriers.
+
+
+---
+*Chunk pages 16–16*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=817 (sys=94, user=723), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 12
+
+## 37  
+The EU and other economies, including the UK and US, are currently implementing or exploring regulatory demand side measures to limit their deforestation footprint on forest countries. China, a key market for Indonesian palm oil, has made international commitments including signing the Glasgow Forest Declaration, and releasing joint statements with the EU, US and Brazil recognizing the need to tackle global deforestation. There are barriers limiting current action (e.g. destabilization of prices, and foreign policy focused on non-interference), but lessons generated from international sustainability requirements implementation could make it easier for other countries to follow suit and implement similar technologies/ systems (considering the three main forest-risk commodities are the same for the EU and China, namely: soy, beef and palm oil). Indonesia has implemented the Indonesia Sustainable Palm Oil certification across the country. It could be informed by international sustainability requirements implementation in the coming years. Thus, specific international sustainability requirements could potentially inform technologies, policies and mechanisms in other countries (Vasconcelos, 2024). As countries are looking into understanding the implementation and impact of international sustainability discussions, it is important to support preparations and ensure that smallholders are not left behind. With smallholders accounting for 41% of total palm planted areas in Indonesia (and 54% of palm planted in West Kalimantan), it is imperative that smallholders are supported and are not excluded from markets (Solidaridad 2023). The project includes a suite of tailored activities and support, aimed at overcoming the aforementioned barriers, to de-risk smallholder sourcing and supports and empowers smallholders to implement climate smart and sustainable practices, and sustainably manage forests, while ensuring a conducive and lasting enabling environment is in place (see also B.6. below).
+
+## Figure 3: Project Theory of Change
+
+## Project co-benefits  
+### 39. The project will generate several co-benefits, the main co-benefits can be resumed to:  
+- Improved food security and increased income  
+- Enhanced conservation of biodiversity and water resources  
+
+### 40. See section D.3 (sustainable development potential) for further details on all the identified co-benefits, and section E.5 for the co-benefit indicators.
+
+## Assumptions and Risks  
+### 41. Assumptions. The project design is based on the following assumptions (assumptions are further described in sections E.3 and E.5 for each relevant project indicator):  
+- The demand for sustainably sourced agricultural products will incentivize the private sector actors to shift their business practices.
+
+### 42. These assumptions are considered to be well founded, as they have been informed through detailed feasibility and market assessments (Annex 2a), a cooperative project development process together with the Government of Indonesia and WK province and other project partners, as well as extensive stakeholder consultations conducted for the project development, (see the Documentation of stakeholder consultations (Annex 7 b) and Stakeholder Engagement Plan (Annex 7a).
+
+
+---
+*Chunk pages 17–17*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1120 (sys=94, user=1026), max_out=1024, ctx=8192
+---
+
+# B.2 (b). Outcome mapping to GCF results areas and co-benefit categorization
+
+| Outcome number | GCF Mitigation Results Area (MRA 1-4) | GCF Adaptation Results Area (ARA 1-4) |
+|---------------|---------------------------------------|----------------------------------------|
+| Outcome 1     | ☐ ☐ ☐ ☒ ☒ ☐ ☐ ☒                       | ☐ ☐ ☐ ☒ ☒ ☐ ☐ ☐                        |
+| Outcome 2     | ☐ ☐ ☐ ☒ ☒ ☐ ☐ ☐                       | ☐ ☐ ☐ ☒ ☒ ☐ ☐ ☐                        |
+| Outcome 3     | ☐ ☐ ☐ ☒ ☐ ☐ ☐ ☒                       | ☐ ☐ ☐ ☒ ☐ ☐ ☐ ☒                        |
+
+| Co-benefit number | Co-benefit Environmental | Co-benefit Social | Co-benefit Economic | Co-benefit Gender | Adaptation Mitigation |
+|-------------------|--------------------------|-------------------|---------------------|-------------------|-----------------------|
+| Co-benefit 1      | ☐ ☒ ☒ ☒ ☐ ☐              | ☐ ☐ ☐ ☐ ☐ ☐       | ☐ ☐ ☐ ☐ ☐ ☐         | ☐ ☐ ☐ ☐ ☐ ☐       | ☐ ☐ ☐ ☐ ☐ ☐           |
+| Co-benefit 2      | ☒ ☐ ☐ ☐ ☐ ☐              | ☐ ☐ ☐ ☐ ☐ ☐       | ☐ ☐ ☐ ☐ ☐ ☐         | ☐ ☐ ☐ ☐ ☐ ☐       | ☐ ☐ ☐ ☐ ☐ ☐           |
+
+# B.3. Project/programme description (max. 2500 words, approximately 5 pages)
+
+## 44. The Project aims to support the Government and people of WK in the transition to sustainable and climate resilient management of forests and landscapes at scale.
+
+The Project is comprised of three components.
+
+## 45. The implementation period will be of seven years and consists of a phased approach.
+
+The first 1-2 years will focus on strengthening enabling conditions and enhancing the institutional frameworks for sustainable landscape planning and management in the selected regencies, (Component 1). This will form a strong foundation for efficient and effective implementation and upscaling of sustainable land and forest management and agriculture-based commodities investments in the field under Components 2 and 3.
+
+Outputs and respective activities build on proven approaches including lessons learned for successful implementation at scale from the Executing Entities (EE) of the project, namely: GIZ, Solidaridad and MoEF, all being active in WK for many years.
+
+Gender Mainstreaming will be practiced across all three components, building on the experiences and established best practices of GIZ Indonesia (esp. FORCLIME and SASCI projects). Some measures are mentioned below and in Chapter G2, while the detailed action plan is provided in Annex 8b.
+
+Additional measures to strengthen the impact of the project on IPs are presented in the Indigenous Peoples Plan in Annex 6c.
+
+## Component 1: Institutional & Regulatory Frameworks
+
+### Outcome 1: Institutional regulatory frameworks able to attract investments into sustainable and climate resilient agricultural and agroforestry value chains are strengthened.
+
+## 46. This outcome will enhance institutional regulatory frameworks, which is expected to trigger investments for sustainable and climate resilient agricultural and agroforestry value chains that also strengthen GESI.
+
+### Output 1.1: Strengthened regulatory and institutional framework for the implementation of policies on sustainable and climate resilient forest management.
+
+## 47. This output focuses on enhancing and developing policies related to the mitigation and adaptation to climate change.
+
+Currently, climate change adaptation and fostering climate resilience is not sufficiently considered in the official government development plans and in REDD+ and FOLU Net Sink policies, since the major focus is on climate change mitigation.
+
+The output re-shapes and transform the REDD+ Task Force as Provincial Body on
+
+[Page 1]
+
+
+---
+*Chunk pages 18–18*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1694 (sys=94, user=1600), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 14
+
+## 38 Specific measures are outlined in the GAP in Annex 8c. A ESGI Specialist will be hired to oversee the mainstreaming of these measures, and will ensure the GAP is implemented, monitored and reported on.
+
+Climate Change. As it is a cross-sectoral institution, it is well placed to coordinate cross-cutting climate change measures across sectors and the new Provincial Body on Climate Change will take over a leading role.
+
+Transformational change to enable companies and communities to legally protect and sustainable managed their High Biodiversity and Carbon Areas is also addressed by this output. Existing entities, such as provincial working groups (e.g. Pok ja REDD+ and Pok ja Gender Mainstreaming), will also be strengthened to facilitate gender mainstreaming into adaptation and forest management plans (see Gender Action Plan, Annex 8b – GAP).
+
+## 48 The output also addresses insufficient public and private funding for climate-resilient and low-emission forest and land use practices. A dedicated grant mechanism will be set up for IP to address lack finance and technical capacities to implement climate-smart agricultural practices and sustainable forest management, including gender-responsive screening criteria. Finally, this output supports creation of mechanisms that extend beyond the project's lifespan, ensuring continued funding flows even after the project is completed.
+
+The activities included in this output are the following:
+
+## 49 Activity 1.1.1: Inclusion of climate change adaptation in mid-term, spatial, and other regional development plans. (fully co-financed by BMZ)
+
+To strengthen the institutional regulatory framework for the adaptation to climate change, the (sub-)activities will focus on the concrete development of adaptation policies that are not in place yet. Capacity building measures will support the development of policies and ensure the adaptation mainstreaming in development or land use plans up to the village level. To ensure the implementation of adaptation measures, tools like multistakeholder forums or the further enhancement of the existing early disaster warning system and the monitoring and reporting of such adaptation measures will be supported.
+
+The expected results of this activities are: (i) clear and comprehensive pathway of GoWK towards climate-resilience development which accommodates province-specific characteristics, (ii) climate-resilience development adoption across GoWK policies and regulations, (iii) advanced tools and capacities for climate-resilience development across key stakeholders in the province and (iv) robust adaptation monitoring system towards transparency and accountability of climate-resilience development.
+
+The following sub-activities are included:
+
+### Sub-activity 1.1.1.1: Development of adaptation policies at provincial level in line with national adaptation policies (EE: GIZ). This sub-activity includes several approaches to develop adaptation policies in the province and five target regencies This supports the development of one Provincial (RAP API) and five Regency (RAK API) Action Plans on Climate Change Adaptation during the first two years of implementation. These documents will outline specific adaptation targets, list and priority activities, ensure GESI mainstreaming, and specify how the activities will be monitored and reported. These action plans will be legalized through regulatory frameworks to ensure the inclusion of adaptation policies in the provincial and regency development plans.
+
+### Sub-activity 1.1.1.2: Capacity building and implementation support related to climate change adaptation for government agencies at provincial, regency and village level (EE: GIZ). This sub-activity includes several approaches to enhance the capacity of stakeholders on how to design and implement adaptation activities at the province and five target regencies. This sub-activity also supports the revision and development of climate-resilience land-use plans, considering the differentiated impacts of climate change on men and women, in the province and five target regencies, including support in 50 villages in the five targeted regencies with the development of climate-resilience land-use plans during Y3 to Y7. Support at the village level will also be provided to improve the capacity of village governments to design and implement joint adaptation and mitigation activities, as well as to identify the existing mitigation and adaptation activities under the PROKLIM program in Y4 to Y7.
+
+### Sub-activity 1.1.1.3: Development of tools for the implementation of adaptation measures (EE: GIZ). This sub-activity will support the development of tools to facilitate the implementation of adaptation activities for stakeholders, in this context the following actions will be implemented: (i) Development of new or strengthening of existing regulatory frameworks for the working group as a legal basis to implement gender-responsive adaptation policies at province and regency levels during Y2, (ii) Establishment of Disaster Management Data Centres (DMDC) infrastructures at five target regencies in Y3 as adaptation information and disaster early warning systems (link to the monitoring system developed under 1.1.1.4 and 1.1.2.4), (iii) Support of one capital cities in the target regency
+
+
+---
+*Chunk pages 19–19*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1722 (sys=94, user=1628), max_out=1024, ctx=8192
+---
+
+# [Page 1]
+
+## GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 15
+
+### 39 REDD+ KalBar (kalbarprov.go.id)
+
+Climate risk and vulnerability will be taken into consideration throughout this process, which will be further complemented through the use of participatory and inclusive processes, capacity building and promoting good governance. The Stakeholder engagement plan, available in Annex 7a, further outlines how two-way communication will be implemented throughout the process identifying space for providing input, feedback and supporting learning on various topics, including the effectiveness of adaptation measures and alignment with local priorities. Chapter 5.6.3 of the Feasibility Study (Annex 2a) provides more detailed information on the specific actions for each sub-activity.
+
+The contribution of the provincial targets to the ENDC, the GHG emissions accounting method used at the sub-national level, and alignment between sub-national mitigation action plans with national mitigation strategies and action plans. At the end of this sub-activity, it is expected that the SRAP and FRL will be revised and legalized through the regulatory framework at provincial level, as a legal basis for inclusion in the development plans.
+
+### Sub-activity 1.1.2.2: Inclusion of mitigation policies into provincial development plans (EE: GIZ)
+
+This sub-activity will ensure that mitigation targets, programs, and activities are set in the provincial development plans. Support will also be provided to provincial government agencies to set mitigation targets, programs, and activities in the development plans in Y2 to Y7. It is expected that at the end of this sub-activity REDD+ and FOLU Net Sink targets, programs and activities are set in the provincial development plans.
+
+### Sub-activity 1.1.2.3: Support implementation of enabling conditions for mitigation activities (EE: GIZ)
+
+This sub-activity will implement the following actions: (i) policy advice in AFOLU methodologies for GHG emission accounting under the SRN, where the project will also be registered, (ii) support development of regulatory frameworks, (iii) technical assistance to design and implement and register mitigation activities (iv) establish interdisciplinary climate change research center (v) develop a model for REDD+ and FOLU Net Sink 2030 mitigation implementation (vi) identify and map agricultural land allocated to slash-and-burn practices by IP for further awareness raising (vii) identify and map peat soils for updating the national peat inventory to update the national peat map, published by MoEF about the Peat Hydrological Unit.
+
+### Sub-activity 1.1.2.4: Monitoring and reporting of mitigation activities (EE: GIZ)
+
+This sub-activity supports the development and implementation of a transparent and accountable monitoring system for mitigation activities (linked to 1.1.1.4). The monitoring system will consist of an online platform where all required information for monitoring can be inserted and all required information for reporting on the mitigation activities. In addition, key stakeholders of REDD+ and FOLU Net Sink 2030 will be capacitated to use the system and technical assistance will be provided on how to report mitigation activities to the online platform and to respective monitoring systems managed by MoEF.
+
+### 51. Activity 1.1.3: Strengthening the institutional framework for coordination of mitigation and adaptation activities across relevant stakeholders (fully co-financed by BMZ)
+
+The activity seeks to re-shape the provincial governance architecture, including the REDD+ Task Force as Provincial Body on Climate Change and its legal framework. While REDD+ is often closely associated with climate change mitigation, the REDD+ Task Force in WK has the mandate for coordinating both climate change mitigation and adaptation activities. As it is a cross-sectoral institution, it is well placed to coordinate cross-cutting climate change measures across sectors and the new Provincial Body on Climate Change will take over a leading role.
+
+The expected result is to have a clear and permanent institutional arrangement of a Provincial Body on Climate Change with a strong legal support that goes beyond leadership changes in the province, strengthens the authority of the institution and allows a substantial allocation of GoWK budgets to manage the climate change agenda in WK. The following sub-activities will be implemented.
+
+#### Sub-activity 1.1.3.1: Enhance institutional arrangements for the Provincial Body on Climate Change, including stakeholder consultation and amendment of the supporting legal framework (EE: GIZ)
+
+This sub-activity will assess the current institutional arrangements of existing working groups related to climate change mitigation and adaptation in WK will and discuss the result with provincial and Regency stakeholders to inform institutional arrangements of a new provincial body of climate change as a multi-stakeholder forum for coordination and communication of adaptation and mitigation activities.
+
+#### Sub-activity 1.1.3.2: Support activities of provincial body for climate change with capacity building measures, absorption of operational costs and outreach (EE
+
+
+---
+*Chunk pages 20–20*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1766 (sys=94, user=1672), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 16
+
+## 41 "Hutan adat" refers to traditional or customary forests in Indonesia, which are managed by indigenous communities according to their ancient laws and customs. These forests are recognized for their ecological, cultural, and social significance, and the management practices often emphasize sustainable use and conservation.
+
+## Wildlife Corridor (Koridor Hidupan Liar, KHL) or High Conservation Area (Areal Bernilai Konservasi Tinggi, ABKT) across WK
+
+(3) BMPs, SOPs, and safeguard frameworks with more than 50% stakeholders demonstrate increased understanding and skills in monitoring and implementation of the management plan (with 50% stakeholder being women), and (4) Commitment letters from at least five companies to financially support the activities in management plan implementation (beyond project time), and also statement on the Provincial’s and Regencies budgets to support the protection of High Biodiversity and Carbon Areas across WK. In this context, the following sub-activities will be implemented:
+
+### Sub-activity 1.2.1.1: Identify areas and develop management plans for High Biodiversity and Carbon Areas within non-state forest land across West Kalimantan Province (EE: GIZ, BPDLH)
+
+This sub-activity aims to identify areas with high biodiversity and carbon values. Together with the Provincial Government ( e.q. Environment and Forestry Agency), GIZ will form a team to conduct the HCV -HCS identification, in collaboration with the HCV and HCS secretariats to legitimate the process. Support will be provided to strengthen capacities on GESI and support mainstreaming (cf. Annex 8b). In addition, a public consultation will be conducted to present the result, to ensure a transparent, legal process, and full approval. Afterwards, a management plan for high biodiversity and carbon areas will be developed, considering the Presidential Instruction (INPRES 1/2023) on the needs for Provincial and Regency Governments to develop a Biodiversity Management Plan (RPKH). The RPKH will be developed at two levels: (i) the Provincial RPKH, and (ii) the Regency RPKH, both in Y2 in parallel, as part of their HCV/HCS management plan.
+
+### Sub-activity 1.2.1.2: Develop and strengthen regulations at provincial and Regency levels, to govern the protection and sustainable management of the High Biodiversity and Carbon Areas (EE: GIZ, BPDLH)
+
+This activity will help non-state forest-lands managers (i.e. concessions holders) to develop the legal foundation on protecting the high biodiversity and carbon areas in their concessions, based on the Governor Regulation No 60/2019, through the following actions: (i) assist the governments to form the policies teams at provincial and Regency levels, legalized by Governor and Bupati’s decision in developing the policies, (ii) engage with the provincial government to develop a provincial regulation (PERDA), (iii) engage with the Regency government to develop Regency regulations (PERDA) in at least five target-Regencies in WK, and (iv) support non-state forest-lands managers (concession holders) to protect existing forest standing on their land concession by providing assistance to the companies in delineating the areas as Wildlife Corridor (Koridor Hidupan Liar, KHL) or High Conservation Area (Areal Bernilai Konservasi Tinggi, ABKT) or other similar terminology that align with the government’s policy and regulation. Finally, one KHL/ABKT will be formed and covering a total of 100,000 ha forested land across WK.
+
+### Sub-activity 1.2.1.3: Increase stakeholders’ capacities (i.e. companies, communities, provincial and Regencies governments) in implementing the management plan for High Biodiversity and Carbon Areas within non-state forest land (EE: GIZ, BPDLH)
+
+This activity will help stakeholders in implementing the management plan for high biodiversity and carbon areas by providing trainings, generating technical guidance, Best Management Practices (BMPs) for concessions, and SOPs in management plan implementation, including GESI considerations and safeguards documents to prevent negative impacts and enhance positive benefits due to the management plan implementation. This project will also develop a framework of grievance redress mechanism, including a survivor-centered protocol for SEAH, in implementing the management plan to capture and provide a transparent and accountable process in implementing the management plan.
+
+### Sub-activity 1.2.1.4: Support and monitor the management plan implementation for High Biodiversity and Carbon Areas (EE: GIZ, BPD LH)
+
+This sub-activity will support monitoring of the management plan implementation for High Biodiversity and Carbon Areas. The
+
+
+---
+*Chunk pages 21–21*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1774 (sys=94, user=1680), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 17
+
+## 42 An "adat community" refers to an indigenous community in Indonesia that follows traditional laws and customs known as " adat." These communities have their own social structures, cultural practices, and customary laws that govern various aspects of life, including land management, conflict resolution, and social organization. Adat communities often have a strong connection to their ancestral lands and natural resources, managing them in ways that are sustainable and in harmony with their cultural values.
+
+## 43 https://bpdlh.id/program/63d13b33-488e-4fa8-a5f9-377d4e8da1f3
+
+## 44 Gaveau, D. L., Locatelli, B., Salim, M. A., Husnayaen, Manurung, T., Descals, A., ... & Sheil, D. (2022). Slowing deforestation in Indonesia follows declining oil palm expansion and lower oil prices. PloS one, 17(3), e0266178.
+
+## 45 Li, T. M. (2024). Securing oil palm smallholder livelihoods without more deforestation in Indonesia. Nature Sustainability, 1-7.
+
+## The creation of mechanisms that extend beyond the project's lifespan, ensuring continued funding flows even after the project is completed. In this context, the following sub-activities will be implemented:
+
+### Sub-activity 1.3.1.1: Implement an on-granting mechanism focusing on Indigenous Peoples (IPs) in West Kalimantan (EE: BPDLH, GIZ). This sub-activity aims to support the indigenous peoples of WK, including women, in their efforts to protect and sustainably manage forest resources by promoting land tenure, the official recognition of adat communities and good local forest governance. It will provide IPs with funding to secure tenure rights, strengthen their capacity to participate in decision-making processes related to sustainable and climate-smart natural resource management, and promote sustainable forest management practices including the documentation, promotion and valorisation of traditional knowledge on sustainable forest management and biodiversity conservation. It is designed to be flexible and responsive to indigenous communities' needs and will focus, amongst others, on hutan adat, complementing the project's objectives to ensure long term sustainable resource management.
+
+Eligible entities include IP communities or domestic CSOs, research institutions, and business organizations, representing IPs (with priority given to most vulnerable groups and women-led households as target group of the proposed interventions). Initial eligible criteria include for example supporting the indigenous peoples of West Kalimantan in their efforts to protect and sustainably manage forest resources by promoting land tenure, the official recognition of adat communities and good local forest governance. Final criteria will be developed during implementation. Each applicant can request up to EUR 120,000 with a project duration of 6 months to 1 year. Up to five calls for proposals will be made over up to five years, totaling up to EUR 4,500,000.
+
+BPDLH will act as fund manager for the grants and will make use of standard operational procedures (SOP) established for the TERRA Fund43 funding window. These will be adapted to GIZ and GCF rules and regulations within BPDLH, while ensuring SOPs are inclusive and gender-responsive (see also measures in the GAP Annex 8b and IPP Annex 6c). The on-granting mechanism will follow a call for proposals process sequencing outreach activities for targeted beneficiaries, their application, the eligibility check for applicants, the screening of applicant's proposals based on scoring criteria, the final selection through a selection committee followed by grant award, the concluding of the grant agreement between the BPDLH and the selected final beneficiary, the disbursement(s) and subsequent financial and technical monitoring.
+
+While the selection of final beneficiaries will be managed centrally, the implementation of beneficiary projects will be closely accompanied in the field with monitoring of progress and use of funds. BPDLH is solely responsible to carry out the eligibility check. In order to ensure the selected projects support interests of IPs, the selection committee will also include representatives of IPs. The final decision will be made by BPDLH. It is envisaged that year 1 will focus on developing suitable outreach activities as well as operationalizing the call for proposal process including design of templates and formats for processing the grants. Calls for proposals itself are envisaged to start as of year 2 with subsequent calls up to year 5.
+
+### Sub-activity 1.3.1.2: Elaborate strategies, policies, and procedures for one or several financing mechanisms for climate resilient agriculture and forestry (EE: GIZ, BPDLH). This sub-activity aims to set up and implement strategies, policies, and procedures for one
+
+
+---
+*Chunk pages 22–22*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1338 (sys=94, user=1244), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 18
+
+## 57. The jurisdictional REDD+ strategy highlights the demand to incorporate sustainable agriculture production, forest land rehabilitation, and sustainable value chains for key commodities that target smallholders, producers, mills, and traders. Hence, scaling sustainable practices like agroforestry directly supports the implementation of the FOLU Net Sink 2030 Operational Plan and contributes to the achievement of Indonesia’s NDC. At the same time, there is a need to strengthen ecosystem resilience and ensure that ecosystems are healthy and continue to provide essential ecological services.
+
+This output will focus on cooperation with the private sector and smallholders in agriculture (e.g., key commodities such as oil palm and rubber) and the forestry sector. This output will also improve smallholder farmers' capacities to implement sustainable land-based investments. The initiative will draw upon experiences from established traceability systems and partnerships with the private sector. It strives to facilitate national and international market access for sustainably produced agricultural commodities and other relevant products (e.g., crabs, aquaculture, and local fruits) from the selected jurisdictions.
+
+This output also encourages value chain actors to invest in production/ conservation/ restoration / resilience, reward conservation, resilience, and intensification accomplishments, smallholders’ service delivery, and local commercial facilities leveraged for business advancement (see Table below).
+
+### Table 3: Incentives for private sector and smallholder producers
+
+| Private sector | Smallholder producers |
+|----------------|-----------------------|
+| • Compliance with national policies and international sustainability standards | • Secure sourcing area |
+| • Market-demand for sustainable products (alignment with shifting markets) | • Access to market with the implementation of no deforestation, no peat, no exploitation (NDPE) policies, while sustainably increasing productivity, and enabling them to receive premium prices |
+| • Access to innovative green investment | • Access to Markets and Finance |
+| • Increased ecosystem resilience and reduced GHG emissions Corporate Social Responsibility (CSR) | • Incentives from Mills and Markets such as continuous support to implement good agricultural practices (GAP) |
+| • Access to Markets and Finance | • Improved smallholder legality status |
+| • Increased ecosystem resilience and reduced deforestation | • Improved cooperation with private sector |
+| • Productivity improvements | • Increased ecosystem resilience and reduced deforestation |
+
+## 58. Activity 2.1.1. Scaling up sustainable land and forest-based investment business model for West Kalimantan
+
+This Activity provides support in designing and expanding a sustainable land and forest-based business model, to overcome barriers that impede the widespread adoption of sustainable agricultural practices. This activity aims to facilitate and promote the engagement of investors, developers, and companies in purchasing from and investing in sustainable supply chains. This support will enable land managers to adopt and implement sustainable practices by providing them with the necessary assistance and resources.
+
+By creating an environment that encourages such investments and collaborations, the activity strives to enhance the sustainability of agricultural activities and foster the adoption of environmentally friendly practices by land managers. At the end of the project it is expected to achieve the following results:
+
+- (1) 10,000 / 70,000 direct and indirect beneficiaries reached, including 40,000 members of the direct beneficiaries’ families (4 per direct beneficiary) and 30,000 members of their communities (3 per direct beneficiary), including
+  - (a) 10,000 beneficiaries (including at least 3,000 women) adopting innovations that strengthen climate change resilience,
+  - (b) 10,000 beneficiaries (including at least 3,000 women) adopting improved and/or new climate-resilient livelihood options
+- 25,000 ha of natural resource areas (in average 2.5 hectares per direct beneficiary, including HCV for forest and biodiversity) brought under improved low-emission and/or climate-resilient management practices
+
+This activity includes one sub-activity:
+
+### Sub-activity 2.1.1.1: Design of a sustainable land and forest-based business model (EE: GIZ, BPDLH)
+
+This sub-activity aims to identify and support development or scaling up of sustainable and gender-responsive land and forest-based business models. Moreover, it will provide support to enterprises as the key actor (project developer), ensuring they have a viable business model and comply with investment requirements and link the model to financing instruments developed under sub-activity 1.3.1.2.
+
+## 59. Activity 2.1.2. Implementing and up-scaling the adoption of proven approaches for reducing emissions and enhancing the sustainability and climate resilience of smallholders in key commodity supply chains (incl. agroforestry)
+
+The activity promotes the implementation of measures to reduce the drivers of deforestation and forest degradation, reduce CO2eq emissions and to protect natural resources, by introducing
+
+
+---
+*Chunk pages 23–23*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1529 (sys=94, user=1435), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 19
+
+## 46 This approach aims to ensure that the solutions and trainings provided will suit the needs and capacities of male and female farmers. The GAP (Annex 8b) includes measures to identify gender issues in the community to support gender-mainstreaming and create a more supportive enabling environment among participants (e.g. Providing trainings on household level to identify gender issues in the community and support gender sensi­zation for men and women, raising gender awareness among agricultural extension workers and champion farmers, providing training and technical assistance to Women’s Farmer Groups in climate smart agriculture, providing tailored technical assistance to women farmers to get STDB registration, 2 providing technical a ssistance related to agr oforestry business, including marketing and processing of agroforestry products for MSMEs / women farmers.  
+that finally only 10,000 farmers (including at least 3,000 women) will directly benefit in full extend from the project . The beneficiaries of this activity will be targeted across the following commodities:
+
+### Table 4: Benefiting farmers categorised by commodity
+| Commodity | # of farmers targeted |
+|-----------|----------------------|
+| Palm oil  | 6,000                |
+| Rubber    | 2,400                |
+| Coffee    | 600                  |
+| Cocoa     | 600                  |
+| Tengkawang, Coconut | 1,200        |
+| Pepper, Bamboo, Rattan, Sugar palm, ecosystem services (water) | 1,200 |
+
+## 60. This activity will be conducted through the following sub-activities:
+
+### Sub-activity 2.1.2.1: Improved capacities to implement resilient and sustainable smallholder farming (EE: Solidaridad, BPDLH). This sub-activity will implement measures to increase the resilience of 10,000 smallholder farmers (and additional 70,000 indirect beneficiaries) and to avoid deforestation on 25,000 ha of smallholders’ agricultural land in WK. It will be conducted through the following steps:  
+(i) Step 2.1.2.1.1: Map and analyze the target groups (smallholder farmers and farmer groups), and the physical conditions (incl. forests and agricultural area) and local level climate risk and vulnerabilities of farmers in the target Regencies,  
+(ii) Step 2.1.2.1.2: Climate resilient and gender-responsive business cases for smallholders will be co-developed with smallholder farmers, aiming to diversify their farm income and introduce resilient building practices,  
+(iii) Step 2.1.2.1.3: training program, building on Solidaridad’s approaches and track record, will be rolled out to 12,000 farmers and community groups, using Farmer Field School approach. Additional targeted measures to strengthen the capacities of female farmers are outlined in the GAP (Annex 8b).
+
+### Sub-activity 2.1.2.2: Climate-resilient commodity and agroforestry scaled with improved market access (EE: Solidaridad, BPDLH). This to improve market access and establish a supportive business ecosystem (incl. needed services and inputs, marketing and processing support units), to the target farmers and local small and medium enterprises, 25 cooperatives and 10 support units (to be established). The supportive business ecosystem will benefit the businesses of at least 10,000 farmers as well as 25 cooperatives, who will be supported to achieve certification under common standards to ensure sustainable practices and to access regulated sales markets. This activity will be implemented in close combination with step 2.1.3.1.2 national and international networks and partnerships with companies to ensure farmer access to markets, including access by female farmers.
+
+### Sub-activity 2.1.2.3: Digital systems for value chain traceability and certification, and improved access to services (EE: Solidaridad, BPDLH). Gender-inclusive product traceability systems for agricultural products from WK will be implemented for different commodities (coffee, cocoa, palm oil, rubber, pepper, etc.) to strengthen the evidence base for sustainable production, support agricultural supply chains to comply with regulatory frameworks of consumer countries (e.g. international sustainability requirements) and additional market requirements (e.g. GHG protocol, Science based target Initiative (SBT), anti-corruption principles, human rights and labour conditions). New traceability systems will be scaled up among 10,000 farmers in WK.
+
+## 61. Activity 2.1.3 Enhancing multi-stakeholder dialogue and platform for low-emission and climate-resilient agriculture and private sector investment.  
+This activity seeks to establish multi-stakeholder
+
+
+---
+*Chunk pages 24–24*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1839 (sys=94, user=1745), max_out=1024, ctx=8192
+---
+
+# [Page 1]
+
+## GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 20
+
+### 47 Arifin, N., Sulistyowati, H., Ruliyansyah, A., & Pramulya, M. (2023, April). The Portrait of Agronomic activity of Oil Palm Independent Small Holder in West Kalimantan Province, Indonesia. In IOP Conference Series: Earth and Environmental Science (Vol. 1165, No. 1, p. 012028). IOP Publishing.
+
+### 62. Activity 2.1.4 GRASS - Greening Agricultural Smallholder Supply Chains in Kapuas Hulu . (co-financed by BMZ)
+
+This activity promotes sustainable agriculture based on a jurisdictional approach in the Kapuas Hulu biosphere reserve, which combines improved agricultural production methods with participatory land use planning. The integrated cultivation methods contribute to the build-up of organic soil matter, the binding of carbon, and the diversification of crops and field structures. Protected natural areas are identified in planning processes and excluded from economic use. An expected result is to have improved the economic, ecological and climate resilience of smallholder farmers at the base of global supply chains in Kapuas Hulu Regency. In addition, it is expected that 600 smallholder farmers, 150 of them women, adopt two resilient and climate-smart farming practices (as a result of 1,100 smallholders, including 30% women, trained) and that the agricultural area, on which sustainable farming practices are applied, will increase by 600 ha. This activity includes the following sub-activities:
+
+- **Sub-activity 2.1.4.1**: GRASS - Greening Agricultural Smallholder Supply Chains in Kapuas Hulu (EE: GIZ). The following steps will be implemented: (i) Step 1 Building Capacities for resilient farming amongst smallholders, including both male and female farmers (ii) Step 2 Providing Regency and province level authorities with proven methods of sustainable supply chains and resilient smallholder farming for spatial and development planning (in alignment with activity 1.1.1, 1.1.2, 1.1.3 & 2.1.3), and (iii) Step 3 Dissemination of proven methods for the improvement of smallholders’ resilience (in alignment with activity 2.1.1).
+
+### 63. Activity 2.1.5 Improving sustainable landscape management and smallholder palm oil market inclusion (NISCOPS). (fully co-financed by Solidaridad)
+
+The National Initiatives for Sustainable and Climate-Smart Oil-Palm Smallholders (NI-SCOPS II) facilitates joint action by governments, the private sector and civil society in developing climate-smart palm-oil landscapes that are capable of improving the lives of the smallholder farmers who work those lands. The development of these key partnerships is based on mutually agreed frameworks of sustainability. The most likely route to achieving significant growth in international sustainability requirements compliant palm-oil supply, is by working with all smallholder farmers through engagement with the national standards in Indonesia as well as with key consuming regions, such as Europe. With smallholders already providing one-third of the global oil supply – NI-SCOPS Phase II has the potential to make significant and lasting sustainability improvements in palm oil production globally. In West Kalimantan 54.7% (1,456,534 ha) of the total oil palm plantation area are smallholder plantations. This highlights that their impact on land use and land-use change has been significant, while engaging with large r concessions (see HCV/HCS activities under Activity 1.2.1 and Activity 2.1.1 and the establishment of a multistakeholder platform for sustainable commodities under Activity 2.1.3) is equally important to turn the tide on deforestation. This activity seeks to achieve 15,000 ha of SHF oil-palm plantations to be under climate-adaptive practices in Indonesia by the end of the project.
+
+This activity includes the following sub-activities:
+
+- **Sub-activity 2.1.5.1a**: Sustainable palm MSP’s delivering on their commitments in key forest rich landscapes (EE: Solidaridad). Under this sub-activity the following actions will be implemented: (i) Work with the Forest Management Units (FMUs) to map and monitor forest encroachment and implement national policy (also on forest restoration), (ii) Support farmers in production forest areas to convert to agroforestry, (iii) Train farmers on sustainable, climate smart and resilient oil palm production, (iv) Support farmers with replanting oil palm with certified seedlings, (v) Help farmers with farm registration to obtain land legality, (vi) Work with MSP
+
+
+---
+*Chunk pages 25–25*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1689 (sys=94, user=1595), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 21
+
+This project supports the FMU (KPHP, KPHL, and KPHK) system and develops their capacity for implementing diverse activities, including: SFM, Forest Land Rehabilitation, Ecosystem-based Adaptation (EbA), protected area management, biodiversity conservation, fire prevention and social forestry. The implementation of good practices will support the sustained provision or improvement of key ecosystem services including carbon sequestration, and water regulation functions that reduce flood and fire risks. This outcome supports the development of frameworks for performance-based payments for community forestry groups to benefit from Payments for Environmental Services (PES). Special emphasis will be given to peat and mangrove areas due to the high importance of their protection and rehabilitation to reduce emissions and enhance environmental services.
+
+## Output 3.1 Capacitated FMUs and private sector actors incentivized to engage in implementing climate informed protection and sustainable management of forest and peat ecosystems
+
+64. This Output focuses on overcoming the new regulatory challenge with the enaction of UUCK 2020 (now UU 6/2023). With the Law in force, the role of FMU organizations is limited to organizational management, namely planning, organizing, monitoring and controlling. Forest utilization activities can only be carried out by forest managers (PBPH and SF permit holders).
+
+The following activity and sub-activities will be implemented.
+
+### Activity 3.1.1 Supporting Forest Management Units (FMU) in the development and implementation of climate-informed forest management plans, including fire management
+
+This activity focuses on building capacities in FMU organizations to ensure the sustainable management of 6.5 ha in FMUs. The FMU organizations are a crucial facilitator for enabling forest managers to manage their business models moving forward towards sustainable and climate-resilient forest and landscape management of WK.
+
+Through the provision of support for FMU organizations, the envisaged results of this activity include several key outcomes: (i) establish the alignment between forest management plans at site level with mitigation and adaptation policies of WK, (ii) enable FMU organizations to effectively manage the forest towards improved forest management at site level with various community livelihood empowerment interventions, conflict resolution, integrated area development and enhanced forest protection activities and infrastructures, (iii) FMU organizations will contribute to regional income by better supporting implementation of improved business models of forest managers which will lead to an increase in payment of non-tax revenues.
+
+The following sub-activities are included:
+
+#### Sub-activity 3.1.1.1: Development of climate-informed management plans of FMU units (EE: GIZ, BPDLH)
+
+The sub-activity will support FMU organizations to transform the existing forest management plans (RPHJP) of FMU units towards climate-informed management plans by reflecting national and provincial action plans on climate change mitigation and adaptation, including fire management. Responsible staff for management planning from DLHK and all 17 FMU organizations of WK will be trained and supported with technical assistance during the revision of the management plans. Their training will also cover GESI, including how to support GESI mainstreaming within the plans.
+
+The sub-activity will start with the development of a template for climate-informed management plans and annual plans (RPHJP and RPHJPd) by DLHK in collaboration with FMU organizations.
+
+#### Sub-activity 3.1.1.2: Supporting FMU Organizations in 5 target Regencies to receive the status of "Effective FMU Organization" (EE: GIZ, BPDLH)
+
+The sub-activity will support 9 Forest Management Units (FMU) in the five target Regencies to receive the status of “Effective FMU Organization”. FMUs are the local forest authority under the control of the province government. They are mandated with the implementation of sustainable forest management in production (hutan produksi) and protection forest (hutan lindung) and are composed of 15-20 forestry civil servants per FMU on average. In West Kalimantan there are a total of 17 FMUs in the whole province.
+
+Through this sub-activity, FMU Organizations will receive capacity building and technical assistance during the self-assessment of criteria and indicators and planning and implementation of necessary amendments requested by the verification team. FMU organizations stipulated as “Effective FMU Organization” will then be supported under sub-activity 3.1.1.3 to improve the capacity to co-design viable business models implemented by PBPH and social forestry towards improved forest management at site level.
+
+#### Sub-activity 3.1.1.3: Capacity building for FMUs to implement climate-informed RPHJP and RPHJPd (EE: GIZ, BPDLH)
+
+Under this sub-activity the technical capacities of the FMUs and Technical Implementation Unit under MoEF, implementing forest management, will be further strengthened on thematic aspects related to organization development and
+
+
+---
+*Chunk pages 26–26*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1997 (sys=94, user=1903), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 22
+
+## Activity 3.2.1 Advancing social forestry implementation including building awareness of local communities of climate risks and risk-reduction practices
+
+This activity aims at developing implementable activities on the ground that will restore degraded ecosystem, increase stakeholder capacities in adapting to the changing climate, and ensure access to different finance sources that can be used to support the long-term operational activities by the community groups.
+
+### Sub-activity 3.2.1.1: Develop and implement SF management plans and support new SF permit proposals for local communities (EE: GIZ, BPDLH)
+
+In this sub-activity, GIZ will harness FPIC principles in getting community consents on the social forestry (SF) scheme by providing sufficient and balanced information about SF scheme and permit, facilitating processes for the community to represent themselves and how to make a communal decision, and giving space for community whether they want to pursue an SF permit and the SF scheme they selected. Attention will be paid to ensure women’s and IPs’ representation.
+
+ Afterwards, this project will assist the development of SF application, participatory mapping and land use plans (ensuring GESI mainstreaming) and facilitate technical verification from the government to ensure the SF permit approval. This sub-activity will also assist local communities who already hold an SF permit, in developing and implementing their SF management plan (RKPS). Up to 100,000 ha of new SF permit will be supported from this project and another 100,000 ha of existing SF permit holders are being assisted, totaling 200,000 ha of improved forest management by local communities. It is planned that up to EUR 1.6 million will be made available for CSOs accredited under BPDLH to facilitate the development and implementation of social forestry management plans.
+
+### Sub-activity 3.2.1.2: Develop and strengthen SF business unit (KUPS) to establish, improve, and escalate market, supply chain, and value-added communities' products, including the creation of KUPS models and capital supports (EE: GIZ, BPDLH)
+
+This sub-activity seeks to assist and improve communities’ capacities and capabilities, to understand and establish an investable social forest business unit. Therefore, the sub-activity will facilitate and technically assist KUPS to submit proposals for access to public finance under the Social Forestry program, managed by BUPSHA (transferred directly to village fund) and develop markets to support the production of climate-resilient and sustainable produced forest products. In addition, the project will be working with the same thematic KUPS and transform it to become an aggregated KUPS-group with the same (or similar) business model.
+
+To strengthen GESI, there will be trainings on gender-responsive planning and budgeting, targeted trainings and mentoring for women, and support provided to women's groups to increase their role in governance structures.
+
+### Sub-activity 3.2.1.3: Capacity building for SF permit holders (EE: GIZ, BPDLH)
+
+This activity will enable at least 70 villages to have similar capacities in SF management through trainings, and comparative studies from local community to local community through Training of Trainers (ToT) sessions, including:
+
+(i) gender mainstreaming focusing on promoting equal participation and decision-making for both women and men in SF activities,
+
+(ii) training on SMART (Spatial Monitoring and Reporting Tool) Patrol,
+
+(iii) training on business development and management will be provided. Trainers will be trained on GESI, including how to respect and strengthen traditional knowledge through such processes.
+
+### Sub-activity 3.2.1.4: Forest restoration and rehabilitation of mangrove and peat forest ecosystems (EE: GIZ, BPDLH)
+
+Two main activities will be implemented:
+
+(i) improve the coordination of key stakeholders to accelerate mangrove and peat rehabilitation in WK,
+
+(ii) rehabilitate the degraded peat and mangrove areas following the latest regulation and guidance on mangrove and peat rehabilitation, including the use of multipurpose tree species.
+
+This sub-activity seeks to target the restoration of 5,000 ha of peatland and 5,000 ha of mangrove across WK and outside the area restored by BRGM during the project period.
+
+### Sub-activity 3.2.1.5: Developing climate-resilient aquaculture infrastructure for coastal communities (EE: GIZ, BPDLH)
+
+The sub-activity will apply a mangrove approach to develop innovative gender-responsive adaptation models for resilient aquaculture system in coastal areas, reducing of vulnerabilities of local communities, restoring ecosystems health and mainstreaming climate change adaptation into plans and policies.
+
+### Sub-activity 3.2.1.6: Accelerate and enable access to potential financial streams for climate change mitigation (e.g. REDD+) and adaptation strategy, including
+
+
+---
+*Chunk pages 27–27*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=834 (sys=94, user=740), max_out=1024, ctx=8192
+---
+
+# B.4. Implementation arrangements (max. 1500 words, approximately 3 pages plus diagrams)
+
+## B.4.1 Project management, implementation and execution structure
+
+### Role of GIZ as Accredited Entity (AE)
+
+68. The Deutsche Gesellschaft für Internationale Zusammenarbeit (GIZ) GmbH is a German-based private, limited liability, non-profit company owned by the Federal Republic of Germany; it is the Accredited Entity (AE) of this project, while the same GIZ with its management structure in Indonesia will operate as an Executing Entity (see next section). To avoid conflicts of interest, these two functions - accreditation and implementation function - are strictly separated, with different management structures within GIZ.
+
+69. In its capacity as AE, GIZ will assume oversight responsibility of the project, as defined in the Accreditation Master Agreement (AMA) between GCF and GIZ. As AE, GIZ will administer project proceeds on behalf of the GCF and will provide oversight, guidance, and quality assurance of Badan Pengelola Dana Lingkungan Hidup (BPDLH) and SNAL as EEs receiving GCF funds through its relevant head office units as well as accompany monitoring and ensure regular reporting. In addition, GIZ will also be member of the project steering committee.
+
+70. In order to implement the Project, GIZ will enter into the following legal arrangements (see Figure 5):
+
+- The commission s by the German Federal Ministry for Economic Cooperation and Development (BMZ) to implement and co-fund the GCF project.
+- The Funded Activity Agreement (FAA) between GCF and GIZ as basis for the transfer of GCF proceeds to GIZ.
+- The implementation agreement with MoEF as the political partner and Executing Entity of the project and to secure the co-financing of the Government of Indonesia.
+- The grant agreements (i.e., subsidiary agreements) with BPDLH and SNAL as Executing Entities based on GIZ's standard operating procedures for grant agreements. The grant agreement with SNAL will also include its co-financing. Furthermore, the grant agreements with BPDLH as well as SNAL will include sub-grants to a yet to be defined entity as well as to Yayasan Solidaridad Network Indonesia (YSNI) respectively. The sub-grants will be concluded compliant with the grant agreement between GIZ and the two EEs and as such be based on the budget and activities already agreed between GIZ and the two EEs. YSNI and the yet-to-be-defined entity do not have any discretion in implementing the funded activities, including the selection of final beneficiaries and usage of budget; all such discretion lie with SNAL and BPDLH, respectively. The yet-to-be-defined entity/ies by BPDLH are NGOs or foundations.
+
+- A legal arrangement with KfW (providing funds to MoEF) to secure additional co-financing to the GCF project.
+
+71. Additionally, there will be an internal task assignment from GIZ AE to GIZ EE for the implementation of the project.
+
+### Figure 5: Legal Arrangements
+
+[Page 27]
+
+
+---
+*Chunk pages 28–28*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1216 (sys=94, user=1122), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 24
+
+## 48 https://bpdlh.id/program/63d13b33-488e-4fa8-a5f9-377d4e8da1f3
+
+### GIZ as Executing Entity (EE)
+
+72. GIZ has been operating in Indonesia since 1975 and currently employs approximately 410 staff members, most of them Indonesian nationals. Specifically, GIZ Indonesia has been working on climate change, forestry, and agricultural supply chains in Indonesia since the 1980s and current technical assistance in the green sector amounts to approx. EUR 45 million while GIZ’s total portfolio in Indonesia is currently at approx. EUR 200 million.
+
+73. In its capacity as EE, GIZ will implement its assigned activities with due diligence and efficiency. It will be responsible for:
+- Managing the project budget assigned to GIZ as EE.
+- Monitoring and evaluating implementation.
+- Liaising with GIZ country office in Indonesia regarding budget and finances, records management, human resources, and procurement.
+- Reporting to the BMZ regarding Germany’s financial contribution to the project, as well as the overall progress of project implementation.
+- Coordinating project implementation with the other EE, co-financing partners, counterparts, other relevant donors, and projects operating in the same technical and/or geographical area, as applicable.
+- Liaising with and reporting to the Project Steering Committee (PSC).
+- Liaising with and reporting to national line ministries involved in the project, as well as the NDA.
+- Supporting the establishment and management of the Project Management Unit (PMU).
+
+74. GIZ as an EE will be responsible for GCF proceeds of EUR 28,651,436.
+
+## B 4.2 Other Executing Entities
+
+75. GIZ, as the AE, conducted a thorough enhanced due diligence assessment with all Executing Entities which will receive GCF proceeds. The enhanced due diligence also assessed and ensured the legal personality of the Executing Entities to enter into a legally binding agreement with GIZ and their ability to receive and properly manage funds.
+
+76. Besides GIZ, the Project will have three additional Executing Entities:
+- Badan Pengelola Dana Lingkungan Hidup (BPDLH),
+- Indonesian Ministry of Environment and Forestry (MoEF)
+- Solidaridad Network Asia Limited (SNAL).
+
+### Executing Entity – Badan Pengelola Dana Lingkungan Hidup (BPDLH)
+
+77. The Indonesia Environment Fund (Badan Pengelola Dana Lingkungan Hidup or BPDLH) is a public service agency (a BLU in Indonesia), a non-echelon unit accountable to the Ministry of Finance (MoF) which was established in October 2019 via MoF Decree No. 779/2019. As a BLU, BPDLH has the legal flexibility and autonomous authority to manage its operations and is not dependent on the state budget (APBN) although it can source funds from it.
+
+The BPDLH was established with the aim of developing a coherent vision and strategy for all funding streams to align with, overtime. As a public service agency, the BPDLH is mandated to provide services to the public instead of prioritising profit-seeking and conducting their activities following the principles of efficiency and productivity. This is specifically set out in Presidential Regulation No. 23/2005 - Financial Management of Public Service Agencies.
+
+In addition to the public benefitting from BPDLH's support to the achievement of the Indonesian Government's environmental and climate commitments, the specific benefits include: BPDLH will act as the main financing vehicle for channelling and distributing the GCF funds to the beneficiaries (i.e. provincial government institutions responsible to implement parts of the funded activity such as Dinas LHK, Dinas Perkebunan, Dinas Pertanian, Forest Management Units (FMUs), NGOs/CSOs, and village communities through grants either directly, or through implementing agencies.
+
+78. In addition, BPDLH will manage the dedicated grant mechanism for IPs which will follow standard operational procedures of the T ERRA Fund (in line with GIZ and GCF regulations) already in place within BPDLH. The mechanism will follow a Call for Proposal approach.
+
+79. BPDLH will act as a key Executing Entity to provide finance to all relevant stakeholders of the project and in this function it will:
+- Coordinate with the project implementation partners (provincial government institutions, NGO/CSOs, and village communities) to guarantee the integral fulfilment of the expected results of the project.
+- Participate in both the Steering Committee and the Project Management Unit (PMU).
+
+80. With respect to the dedicated grant mechanisms for IPs BPDL
+
+
+---
+*Chunk pages 29–29*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1299 (sys=94, user=1205), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 25
+
+• Ensure submission of information to the Project Management Unit in case any modifications or updates are required at the operational or strategic level of the dedicated grant mechanism for IPs.
+• Develop the terms of reference for the calls for proposals jointly with GIZ EE.
+• BPDLH will set up and chair a technical advisory board to the dedicated grant mechanism.
+
+## 81. Under the supervision of GIZ AE, BPDLH will ensure that all GCF and GIZ fiduciary standards are followed, complying with the stipulations of the Grant Agreement, always within the legal framework of the project (AMA, FAA).
+
+## 82. BPDLH as an EE will be responsible for GCF proceeds of EUR 23,973,176.
+
+### Executing Entity – Solidaridad Network Asia Limited (SNAL)
+
+83. SNAL is part of the global network Solidaridad International (SI). SI, founded in 1969, is an international civil society organisation that facilitates the development of fair and profitable supply chains for small scale and family farmers.
+
+It provides scalable and economically effective sustainability solutions in agriculture and mining sectors in four integrally interconnected result areas:
+
+- Training producers in good practices (farm or producer level)
+- Building supportive business ecosystems (business level)
+- Advocating for an enabling policy environment (policy level)
+- Stimulate demand for sustainably produced goods (market level)
+
+84. SI currently operates in over 40 countries, across five continents, through seven independently supervised regional expertise centres (RECs). The Asia REC (SAREC) located in India oversees the operations of SI in 8 countries in Asia, including Indonesia.
+
+SNAL as Executing Entity for this project is the legal entity for SAREC.
+
+85. SNAL, through its director and legal representative, Dr. Shatadru Chattopadhayay, founded and registered a Social Foundation in Indonesia called “Yayasan Solidaridad Network Indonesia” (YSNI) to implement projects in Indonesia initiated by SNAL.
+
+86. YSNI works together with palm oil mills to help palm oil smallholders organise in well-governed farmer groups and trains these groups to improve efficiency, yield and market access while reducing negative social and environmental impacts.
+
+The palm oil sector in Indonesia has seen the adoption of sustainable commitments by larger companies in the form of various pledges around No Deforestation, No Peat, and No Exploitation (NDPE). YSNI has been supporting the implementation of scalable and economically effective sustainability solutions in agriculture within WK, Indonesia over the previous decade.
+
+87. The grant agreement for the GCF project would be concluded between GIZ (AE) and SNAL (EE). Funds would subsequently be disbursed to YSNI from SNAL on the basis of a sub-grant. The implementation of the GCF project would therefore be carried out by YSNI.
+
+General tasks such as financial management, monitoring and reporting would be provided by SNAL.
+
+88. SNAL via a sub-grant to YSNI will be responsible for the implementation of activity 2.1.2 “Implementing and up-scaling the adoption of proven approaches for reducing emissions and enhancing the sustainability and climate resilience of smallholders in key commodity supply chains (including agroforestry)”, activity 2.1.3 “Enhancing multi-stakeholder dialogue and platform for low-emission and climate-resilient agriculture and private sector investment”, and the solely own financed activity 2.1.5. “NISCOPS: improving sustainable landscape management and smallholder palm oil market inclusion”.
+
+89. Under the supervision of GIZ AE, SNAL will ensure that all GCF and GIZ fiduciary standards are followed, complying with the stipulations of the Grant Agreement, always within the legal framework of the project (AMA, FAA). SNAL via YSNI will also participate in the Project Management Unit (PMU) to guide implementation with local partners.
+
+In addition, SNAL via YSNI will liaise and coordinate with other project partners to guarantee the integral fulfilment of the expected results of the project.
+
+90. SNAL as an EE will be responsible for GCF proceeds of EUR 6,860,139.
+
+### Executing Entity – Indonesian Ministry of Environment and Forestry (MoEF) representing the Host Country
+
+91. MoEF is the Indonesian ministry responsible for managing and conserving Indonesia’s forests and the environment.
+
+MoEF Directorate Generals of high relevance to this project are:
+
+- Sustainable Forest Management (Pengelolaan Hutan Lestari, PHL)
+- Forestry Planning and Environmental Management (Direktorat Jenderal Planologi Kehutanan dan Tata Lingkungan, PKTL)
+- Climate Change Controlling (Direktorat Jenderal Pengendalian Perubahan Ik
+
+
+---
+*Chunk pages 30–30*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1121 (sys=94, user=1027), max_out=1024, ctx=8192
+---
+
+# B.4.3 Other Project Stakeholders
+
+94. In addition to the Executing Entities, the Project will mobilise and closely collaborate with a large number of project partners, spanning the public sector, the private sector and civil society, including women’s groups and organizations and representatives of other vulnerable groups. Table 15 (chapter 3.1) of the feasibility study (Annex 2a) outlines the expected contributions of political partners and other key stakeholders.
+
+# B.4.4. Project Governance and Management
+
+95. The project will follow a governance structure as shown in Figure 6. The highest-level governance will be overseen by a Project Steering Committee (PSC), which will serve as the principal governing body for the project. Decisions of the PSC will be based on consensus. The PSC will meet at least once a year and will consist of representatives of the Indonesian national ministries and departments as well as BPDLH, BMZ and GIZ. The PSC will be responsible for political oversight and coordinating partner cooperation. The specific functions of the PSC will be to:
+
+- Provide overall guidance for project implementation.
+- Provide feedback and validation of annual work plans in consideration of annual reports and project evaluations.
+- Ensure project progress and coherence with the (evolving) international and national policy context.
+- Stay informed of project adherence with E&S Safeguards, Gender Action Plan, and IPP objectives.
+- Support the coordination of project activities across different line ministries and between the private and public sectors and civil society.
+
+96. In addition to the PSC a Project Technical Committee (PTC) will be established, which will serve as the principal technical advisory body to the project. The PTC will meet once year and will consist of representatives of the Indonesian national ministries and departments, representatives of the EEs and the subnational authorities of West Kalimantan. The PSC will be responsible for political oversight and coordinating partner cooperation. The specific functions of the Project Technical Committee (PTC) will be to:
+
+- Provide technical input and advice to the project
+- Review the Strategic Plan (RENSTRA) and Annual Working Plan (AWP) prepared by the project;
+- Discuss the preparation and implementation of activities with the project;
+- Carry out other tasks carried out by the PSC.
+
+97. The Project Management Unit (PMU) will be responsible for day-to-day implementation of the project based on PSC guidance and decisions. The PMU will be headed by a Dinas LHK director on behalf of the government of WK and members of the PMU will include staff from the four Executing Entities – BPDLH, SNAL, MoEF and GIZ. The PMU will meet regularly with the following tasks:
+
+- Enhance common understanding among Executing Entities on the theory of change and how transformation in the sector shall evolve.
+- Discuss, monitor, and promote best possible alignment of implementation between the Executing Entities and third-party actors.
+- Ensure overall project planning, implementation, monitoring, reporting and evaluation.
+- Define, monitor and coordinate work plans.
+- Ensure that budgets and work plans are on track.
+- Identify and resolve bottlenecks and implementation challenges relevant at the project level.
+- Facilitate biannual exchanges with the IP, gender, youth advisory council.
+- Monitor adherence to environmental, social, gender and fiduciary safeguards.
+- Identify issues required to be brought to the attention of the PSC, including advice received from the IP, gender and youth advisory council.
+
+98. A number of project working groups will be established with different mandates and meeting frequencies, appropriate to their tasks. The working groups will be supported by GIZ and will each contain a representative from the PMU. The working groups are intended to provide objective, technically strong, strategic monitoring of defined project activities, semi-detached from the PMU and unaffected by the day-to-day management tasks that the PMU will be required to engage in. The working groups will involve stakeholders beyond the direct project stakeholders including from different sectors as well as private sector and civil society to ensure climate change mitigation and adaptation mainstreaming across relevant sectors.
+
+
+---
+*Chunk pages 31–31*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=612 (sys=94, user=518), max_out=1024, ctx=8192
+---
+
+# B.4.5 Flow of Funds
+
+100. Figure 7 below depicts the overall flow of funds for the project. Funds from GCF will be transferred to GIZ as AE, who will then transfer funds to the BPDLH. The BPDLH operates through two modes of delivery: a) sub-grants to final beneficiaries (e.g., social forestry groups and PROKLIM certificate holders) and b) sub-grant(s) to other organizations e.g. intermediary agencies ( lembaga perantara) which successfully completed the due diligence in line with BPDLH regulations . The intermediate agency will provide technic al assistance to beneficiaries (i.e. local government institutions incl. FMUs in West Kalimantan) Further funds will be implemented directly by GIZ Indonesia or transferred to SNAL (in their respective role as EE). The Government of Indonesia through MoEF will provide co-financing.
+
+101. Additional funds either from public sources or private sector actors (e.g., direct investors or RSPO RaCP) as a result from the provided TA within the activities under component 1 and 2 will be mobilized or leveraged. These funds will either flow directly to the project beneficiaries or through the financial mechanism planned under activity 1.3.1.
+
+
+---
+*Chunk pages 32–32*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=557 (sys=94, user=463), max_out=1024, ctx=8192
+---
+
+# B.4.6 Regulation, taxation and insurance
+
+[Please note that this information is also part of Annex 9 - Legal due diligence (regulation, taxation and insurance)]
+
+## Privileges, immunities and taxation
+
+102. The Federal Republic of Germany has concluded a Framework Agreement on Technical Cooperation under international public law with the Government of Indonesia (dated April 9th, 1984), which provides for certain privileges and immunities to be applied in projects and programmes of technical cooperation, including exemptions for certain taxes, customs, duties and fees. GIZ will endeavour to reach arrangements to have these privileges and immunities also applied to the Project, including GCF proceeds. However, formal agreements will only be entered into after the project has been approved.
+
+## Approvals, permits, licenses and land
+
+103. At the time of submitting this Funding Proposal, GIZ is not aware of the project requiring specific approvals, permits, licences or land to allow for the implementation of planned activities.
+
+## Currency
+
+104. The local currency in Indonesia is the Indonesian Rupiah (code: IDR). The project's local transactions will use Rupiah. The AE will manage GCF proceeds in Euro. GIZ will apply its standard rates 50 for the conversion of currency.
+
+## Insurance
+
+105. GIZ, as the AE, will ensure that project activities are adequately insured as per GIZ standard operating procedures and common practices. GIZ standard operating procedures require contractors to ensure required insurance cover. GIZ policies provide insurance cover for GIZ staff. At the time of submitting the Funding Proposal, GIZ does not anticipate additional insurance to cover special risks in this project.
+
+[Page 1]  
+B  
+GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 28  
+
+Figure 7: Overall flow of funds for the project  
+
+https://commission.europa.eu/funding-tenders/procedures-guidelines-tenders/information-contractors-and-beneficiaries/exchange-rate-inforeuro_en  
+
+[Page 1]  
+B  
+GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 28  
+
+Figure 7: Overall flow of funds for the project  
+
+https://commission.europa.eu/funding-tenders/procedures-guidelines-tenders/information-contractors-and-beneficiaries/exchange-rate-inforeuro_en  
+
+[Page 1]  
+B  
+GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 28  
+
+Figure 7: Overall flow of funds for the project  
+
+https://commission.europa.eu/funding-tenders/procedures-guidelines-tenders/information-contractors-and-beneficiaries/exchange-rate-inforeuro_en  
+
+[Page 1]  
+B  
+GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 28  
+
+Figure 7: Overall flow of funds for the project  
+
+https://commission.europa.eu/funding-tenders/procedures-guidelines-tenders/information-contractors-and-beneficiaries/exchange-rate-inforeuro_en  
+
+[Page 1]  
+B  
+GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 28  
+
+Figure 7: Overall flow of funds for the project  
+
+https://commission.europa.eu/funding-tenders/procedures-guidelines-tenders/information-contractors-and-beneficiaries/exchange-rate-inforeuro_en  
+
+[Page 1]  
+B  
+GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 28  
+
+Figure 7: Overall flow of funds for the project  
+
+https://commission.europa.eu/funding-tenders/procedures-guidelines-tenders/information-contractors-and-beneficiaries/exchange-rate-inforeuro_en  
+
+[Page 1]  
+B  
+GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 28  
+
+Figure 7: Overall flow of funds for the project  
+
+https://commission.europa.eu/funding-tenders/procedures-guidelines-tenders/information-contractors-and-beneficiaries/exchange-rate-inforeuro_en  
+
+[Page 1]  
+B  
+GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 28  
+
+Figure 7: Overall flow of funds for the project  
+
+https://commission.europa.eu/funding-tenders/procedures-guidelines-tenders/information-contractors-and-beneficiaries/exchange-rate-inforeuro_en  
+
+[Page 1]  
+B  
+GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 28  
+
+Figure 7: Overall flow of funds for the project  
+
+https://commission.europa.eu/funding-tenders/procedures-guidelines-tenders/information-contractors-and-beneficiaries
+
+
+---
+*Chunk pages 33–33*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1774 (sys=94, user=1680), max_out=1024, ctx=8192
+---
+
+# B.5. Justification for GCF funding request (max. 1000 words, approximately 2 pages)
+
+## 106. Why GCF Funds are required - consideration of alternative funding options and justification of grant finance:
+
+WK requires GCF funding to implement this project, which will be instrumental in achieving Indonesia’s NDC targets and the national FOLU Net sink 2030 strategy. The enhanced NDC (2022) has increased the national target on emission reduction from 29% to 31.89% unconditionally and from 41% to 43.20% conditionally. Among these targets, forestry and land use contribute 17.4% to 25.4% by enhancing land rehabilitation (afforestation, reforestation, rehabilitation) and peat water management.
+
+The project aims to reduce deforestation in a hotspot with a large area of remaining natural forest cover. Over 3.8 million ha of forests were lost from 2001-2022, making WK the Province with the 2nd highest forest loss in the country, 51 yet is still comprises 5.5 million ha of natural forests and there is an urgency to reduce deforestation and strengthen the resilience of forest and agricultural ecosystems in the province. WK is amongst the most vulnerable provinces in terms of fires in Indonesia, 52 and is one of the poorest provinces in Indonesia. 53 Over the last five years WK has lost a total of 330,000 ha due to wildfires.54 In 2023 it was even the province most affected by forest and land fires with over 108,000 ha burned. 55 In the intense fire season of 2019, the entire population of WK suffered from heavy haze pollution and 10% of the total population were infected with severe respiratory infections. 56 Forest and land fires also caused land degradation and changes of forest functions and have generated negative impacts on the local economy.57,58 There are incremental costs of inaction, and the slower vital adaptation and mitigation measures are implemented, the higher toll climate change will have on ecosystems, infrastructure and people's livelihoods, health and overall wellbeing.59 Projections estimate that climate change impacts on agriculture, health and sea levels could lead to costs exceeding IDR 132 trillion (USD 8.4 billion) in 2050 alone.60
+
+## 107. The proposed project and its interventions in WK play an important role in assisting the country to achieve its NDC and other national strategies by scaling up successful approaches in forest and land governance through a holistic, cross-cutting, and integrated approach.
+
+However, as highlighted above, a major barrier to reducing emissions and strengthening climate resilience is the lack of sustainable financing for mitigation and adaptation efforts.61 It has been estimated that Indonesia alone requires more than IDR 4,000 trillion (USD 285 billion) to achieve its climate change mitigation targets, of which only 34% is expected to come from the national budget. 62 This leaves a gap of at least USD 145 billion,63 where the rest of the funds are expected to come through collaboration with regional governments, the private sector, multi-lateral and bilateral donors, and the public.
+
+Similarly, the funding gap for the implementation of the FOLU Net Sink 2030 strategy 64 was estimated at around USD 4.6 billion (out of a total cost of USD 12.7 billion). These funding needs are currently not being matched with available funding sources, which jeopardizes the achievement of Indonesia's climate targets. Despite the urgent need for action, there is a lack of suitable financing alternatives for climate action in the AFOLU sector in general, including the cross-cutting measures outlined in this project.
+
+The following alternatives to GCF funds were assessed:
+
+### • Public finance:
+Overall, the GoWK has insufficient resources, funding, and technical capacities to implement its jurisdictional strategy interventions and green development objectives. In 2022 the annual budget for the Ministry of Environment and Forestry (MoEF or Anggaran Pendapatan dan Belanja Negara, APBN) was IDR 6.5 trillion (USD 413 million), of which approximately 60% is dedicated to the FOLU sector (for the entire country, covering 96 million ha of forests). Focusing on the province of WK, in 2023 the WK Environment and Forestry services budget amounted to IDR 42.07 billion (USD 2.67 million), which provides annual funding for FMUs, service units responsible for forest inventory and mapping, forest and land fire mitigation, forest park management, wetland ecosystem management, forestry museum, and nurseries. Considering WK covers over
+
+
+---
+*Chunk pages 34–34*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1479 (sys=94, user=1385), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 30
+
+## 66 See Chapter 3.5 of the feasibility study for detailed information on national and sub-national budgets for the FOLU sector.
+
+67 https://jdih.menlhk.go.id/new2/uploads/files/P.59%20(4).pdf  
+
+and represent an increase from previous years,66 it still remains far below needed levels to establish the necessary enabling conditions and implement urgently needed cross-cutting AFOLU measures. Overall, the fiscal transfer (e.g. from taxes, fees, and other revenues) from the national government is lo w. At the sub-national level in WK, there are insufficient funds from the public sector.
+
+• GoWK lacks a robust jurisdictional financing mechanism and requires further investments to establish credible investment frameworks. Since the 2012-commitment for REDD+, there was no dedicated funding at the national or provincial level that comprehensively supports REDD+ at the WK jurisdictional level. While overall public finance is insufficient to fund the full program, the Government of Indonesia is nonetheless committed to the Project, providing EUR 25.81 million in co-finance.
+
+• REDD+ results-based payments: Even with results-based payments of $103.8 million for REDD+ in Indonesia from the Green Climate Fund for the results period from 2014-2016, only $2.3 million will be allocated for WK (cf. Decree SK.673/MENLHK/PPI/PPI.3/6/2023 about Investment Plan Results Based Payment), as funds will be distributed throughout the entire country, including other Provinces that have had more investment in jurisdictional REDD+ initiatives. Overall, RBP funds earmarked for WK are insufficient to implement the necessary actions to overcome the barriers and facilitate a transformation towards more climate-resilient and low-emission development pathways, as described in Section B.2. Without investments to overcome the identified barriers, WK will lik ely not manage to achieve substantial RBP in the future. The proposed project could help unlock additional RBP in the future, however funds are needed to support WK to implement investments that reduce emissions from deforestation and forest degradation and strengthen the resilience of local communities and ecosystems (see Section B.6. below).
+
+• Grants from other development partners: Several other development partners are active in other parts of Indonesia, including Central and East Kalimantan. However, as indicated in B.1, WK has attracted comparatively less donor funds. Despite the tendency to overlook WK, there is an urgent need t o support the province. At the same time, previous activities focusing on REDD+ have had a strong focus on mitigation, and there is an urgent need to implement cross-cutting measures, strengthening the focus on adapta tion to support the regional government and local communities to build their resilience and the resilience of the ecosystems upon which their livelihoods and wellbeing depends. Bilateral donor finance alone is insufficient to cover the full project cost, however significant co-finance has been secured to complement GCF funds. Building on their past support for Indonesia, and in particular WK’s Forest and Climate Change Programme (FORCLIME), the German Federal Ministry for Economic Cooperation and Developmen t commits EUR 10 million in grants as co-finance for the Project. Additional co-finance is anticipated to be provided by KfW (EUR 2.9 million) as contribution to activity 3.2.1 “Advancing social forestry implementation including building awareness of local communities of climate risks and risk-reduction practices”.
+
+• Concessional loans: Conventional domestic investments provide less room for REDD+ or adaptation activities as they are focusing more on production activities. Also, interest rates are high (up to 7% for public financial institutions, and 10-25% for private financial institu tions) with a short grace period. Much of the project activities are focused on generating non-financial benefits (i.e. activities that are not revenue generating), and instead focuses on setting up the necessary enabling conditions to facilitate future investments for replication and scaling. A loan scheme under the BPDLH targets forestry companies, Social Forestry Communities, and individuals that manage forestry businesses. It is regulated under PermenLHK P.59/MenLHK -Setjen/2015.67 The facility aims to distribute funds to beneficiaries as low-interest loans for business activities that support, for example, community forest management, industrial plantation forests, or community plantation forests. However, it is challenging for communities to receive such a loan due to the collateral requirements. The SF permit cannot be used as collateral as is the case for a plantation permit (HGU, see Feasibility Study for further information on different forestry permits). Debtors usually need to provide cash from other sources to be used as collateral. Also, the loan scheme does not include
+
+
+---
+*Chunk pages 35–35*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1874 (sys=94, user=1780), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 31
+
+## 68 The use of grants allows smallholders to alleviates the pressure among small holders for immediate returns of their investmen ts. In particular for adaptation measures the use of grants is considered as more effective for a risk adverse target group. It , e nabling enables them to focus on implementing sustainable practices and investing in restoration without the burden of debt and. thus It further provides space allows them to build up capacities.
+
+Loans, even with concessional loan terms, would put additional risks on the target group in terms of planning and debt burden capacities. Since access to finance is restricted for the target group and any form of institutionalizing the provision of loans will lead to increased interest rates (i.e. instit utional mar k-up) and hence reduced occasionality, the provision of concessional loans could lead to credit rationing and hence restricting (financially excludin g) the target group, namely smallholder farmers and local forest -dependent communities, to participate in t he project.
+
+This is particularly important in a time where market access is changing, with new regulations in EU, where it is important t o provide producers support to help them to connect to markets and benefit from sustainable production and markets, in stead of excluding them. The Project will also help producers to strengthen their resilience through the implementation of more intentional planning and the implementation of more resilient practices ( aligned with climate risk and vulnerability analyses), helping to diversify their incomes and help reduce their vulnerability to climate change.
+
+Given the long -term nature and developmental focus of these activities, relying on loan financing may impose undue financial burdens and hinder the project's effectiv eness in achieving sustainable outcomes. Overall, the absence of supportive policies, infrastructure, and market mechanisms in many rural areas undermines the financi al viability of sustainable land and forest-based investments.
+
+Without an enabling environ ment that facilitates access to markets, technical assistance, and fair prices for sustainable products, smallholders may struggle to generate sufficient income to repay loans (which is already challenging in the BAU scenario with high upfront costs and break even periods in the range from 4 -21 years, which could put producers in even more precarious situations where they are pressured to deforest or implement unsustainable practices to repay loans). These risks are exacerbated considering we are working in one of the provinces with the lowest HDI, with one of the most climate-affected sectors (where the impacts of climate change can lead to adverse impacts on farmers and the agro ecosystems and forests upon which their livelihoods depend).
+
+## The Project has a strong focus on building capacities of farmers, farmer cooperatives, local government staff, including through farmer field schools covering a range of topics including good agricultural practices/ climate smart agriculture, introduction of high conservat ion value areas, local value adding practices (e.g. harvesting and storing, post harvest processing to improve product quality, business management and financial literacy, among others. It also will support farmers to better understand and meet certificati on requirements, develop and implement traceability systems for different agricultural supply chains, in alignment with specific international sustainability requirements, that will strengthen market access.
+
+These activities and actions are not well suited for financing through a loan (detailed information on the specific actions are provided in the Feasibility Study (Annex 2a) in Chapter 5.6.6).
+
+## 69 https://www.bpdp.or.id/bpdpks-pastikan-tindak-lanjut-usulan-dana-replanting-petani-sawit-naik-jadi-rp-60-jutaha
+
+## 70 The Indonesia Oil Palm Estate Fund (Badan Pengelola Dana Perkebunan Kelapa Sawit, BPDPKS) distributes financial assistance to smallholders participating in Palm Oil Replanting program for smallholders (PSR) of IDR 30 million (equivalent to EUR 1,737 per ha / planters). There are three models of financing schemes that can be applied in this program based on the ability of smallholders.
+
+The first scheme is that the cost needs are met from the BPDPKS assistance fund of IDR 30 million/ha/grower plus t he savings fund owned by the smallholders. The second scheme, the financing needs are met from two sources, namely utilizing BPDPKS assistance funds and "Kredit Usaha Rakyat" / Business Credit (KUR) from the bank. Meanwhile, in the third scheme, financing funds are obtained from three sources, namely BPDPKS assistance, smallholder savings, and KUR.
+
+For KUR's interest itself is around 6 -7%/year.
+
+## would put local populations at risk of indebtedness, given the lack of an enabling environment for cross -cutting investments in the AFOLU sector, as well as the high interest rates, short grace periods and longer -term returns associated with sustainable land and forest -based investments.
+
+##
+
+
+---
+*Chunk pages 36–36*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1396 (sys=94, user=1302), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 32
+
+## 71 https://previous.rspo.org/certification/remediation-and-compensation
+
+The project will support the provincial government under Sub-Activity 1.2.1.2 to develop a provincial regulation (PERDA) to reinforce and advance developed frameworks for HCV-HCS protection in private sector concessions, particularly on non-state forests.
+
+## 72 https://tirto.id/ksp-perdagangan-karbon-harus-berjalan-optimal-sebelum-oktober-gXYV
+
+The Government of West Kalimantan is working on a regulation where companies should pay their liabilities within the province where they operate. This would enable a share of these funds to be channelled into social forestry implementation. Different mechanisms for the channelling of these funds are being explored, including through BPDLH.
+
+(BPDLH). These investments will be accompanied with tailored technical assistance and support to intermediate beneficiaries such as universities, government institutions etc., through inclusive and participatory processes, to the amount of approx. EUR 35.5 million of GCF proceeds.
+
+## 112. In the absence of GCF support, the region would be unable to undertake such ambitious measures. Ensuring clear alignment with the green growth plan in WK, this project is an opportunity to demonstrate an integrated approach to climate change mitigation and adaptation in the remaining vast forested landscape of WK. Indirectly, the project will benefit over 4.8 million beneficiaries (at least 50% women) as a result of the adaptation co-benefits including reduced impacts of forests fires, clean air, and water supply, among others. The strengthening of institutional and landscape level planning systems to strengthen climate-informed planning and increasing the adoption of measures for REDD+ will also benefit the broader population of WK. It will enable increased use and generation of climate information in planning and monitoring, and a strengthened enabling environment for investments in low-emission AFOLU and REDD+ in WK.
+
+## B.6. Exit strategy (max. 500 words, approximately 1 page)
+
+## 113. The project has been designed to address key barriers limiting transformation towards low-carbon and climate-resilient development pathways, with a focus on enabling technical, financial, institutional, and social sustainability in the long run. The following paragraphs outline the key elements comprising the project’s exit strategy:
+
+## 114. Financial sustainability: Financial sustainability will be ensured through i) establishing a robust sub-national financing structure and investment framework that unlocks additional public and private funds and effectively channels them into needed climate investments in the AFOLU sector, ii) strengthening financial management capacities at the sub-national level, and iii) developing viable business models for low-carbon and climate-resilient investments that generate diverse sustainable development benefits that improve the livelihoods of local communities. It will further consider differentiated barriers faced by IPs and smallholders, including women, to access finance. GESI considerations have been mainstreamed throughout the activities described in Chapter B.3, while additional targeted measures for women and IPs to overcome barriers will be implemented as outlined in the GAP (Annex 8b) and IPP (Annex 6c).
+
+## 115. Overall, a cornerstone of the establishment of a sub-national financing structure will be the modification of the remediation and compensation procedure 71 to support the province of West Kalimantan in managing the funds for implementing the provincial FOLU Net Sink strategy. Currently these funds are not being collected and invested in a coordinated and strategic manner.
+
+## 116. The GCF project will help establish a robust sub-national financing structure that facilitates the diversification of funding sources (unlocking additional public and private funds for financing urgent climate action in the AFOLU sector). This includes (Figure 9):
+
+## 117. Increasing public domestic finance: The GoWK commits to gradually increase their contributions to the sector, in alignment with progressive policies such as the Provincial FOLU Net Sink Strategy, among others. Additional funds would be mobilized from diverse sources, considering increasing returns from fees, private sector concession liability funds72, taxes and non-tax revenue due to project interventions (from, for instance: sustainable forest management, domestic carbon trading, and social forestry, among others). The regulatory framework for domestic carbon markets has been developing rapidly, but it was not yet fully operationalized. According to latest announcements by the national government, this shall be achieved by October 2024, before the change of the current administration73. Some project activities (esp. Activity 1.1.2.3 and Activity 3.2.1.6) will contribute to piloting innovative approaches and methodologies to enable holders of social forestry licenses, including women, to participate in this market through reforestation and increasing forest carbon stocks. This will create an additional source of funds that will be invested
+
+
+---
+*Chunk pages 37–37*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1564 (sys=94, user=1470), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 33
+
+75 https://jdih.menlhk.go.id/new2/uploads/files/P.59%20(4).pdf  
+76 Projects within the domestic carbon market can be counted towards the country’s NDC.  
+Note: If RBP and voluntary or compliance schemes operate in parallel in the same timeframe and area, nesting will need to be done ( i.e. subtracting local project results form jurisdictional level results).  
+
+This amount was estimated considering the projects projected emission reductions (16.05 million tCO2eq) and assuming a price of USD $5 per tCO2eq (the price offered by Norway, based on the bilateral MRB protocol for emission reductions until the end of 2020, as well as the GCF RBP pilot). For emission reductions after 2020, a new bilateral MRV protocol still needs to be negotiated with Norway. If the ART/TREES standard would be utilized and confirmed in the new MRV bilateral protocol, then the price offered could reach USD $10 per tCO2eq, and the project could potentially leverage USD $154 million from RBP. While additional indicators will be considered with future RBP programs (e.g. forthcoming GCF RBP rules, including indicators and a revised results management framework), WK would be a good candidate as it would be based on performance within the province, which has one of the highest rates of deforestation and largest areas of standing forest in the country.   
+
+79 https://www.continental.com/en/press/press-releases/20220824-natural-rubber-indonesia/ (see letter of intent in Annex 13)   
+80 https://www.admcapital.com/adm-capital-launches-first-impact-fund/(see letter of intent in Annex 13)   
+
+for social forestry efforts. Additionally, a loan scheme of the BPDLH 75 will be interesting for capacitated forest communities to access further funding for the implementation of social forestry (see B5). Support is outlined in the Gender Action Plan (Annex 8b) that also describes how women’s engagement in FMUs will be strengthened, and additional gender benefits will be generated through this support.  
+
+• Accessing carbon markets : Through the strengthening of the enabling framework, capacity building and technical support, this project empowers stakeholders at province level to engage in forest carbon trading (emerging national voluntary and compliance carbon market) after the project end within the emerging domestic carbon market and in line with the national regulations.76 This will help to mobilize additional private sector funding and create a sustainable incentive for entitled stakeholders to conserve forests and corresponding carbon stocks. The support for the development of new methodologies for issuing carbon credits will enable forest farmer groups (KTHs / KUPS , including women members ) to access carbon financing, which will provide an incentive for afforestation, reforestation, and agroforestry after the end of the project. This will be achieved through a combination of local pilot activities that shall inform policy making at national level. In the long term, these efforts will make participation in the national carbon market more inclusive and contribute to a fair distribution of financial benefits from this market.77 Despite persisting uncertainties regarding the exact design and timeline for achieving operability of the national carbon market , the Government of Indonesia has shown high political willingness to realize it. One example of this ambition is that the complete architecture for a functioning carbon market (laws and regulations, carbon registry, carbon exchange, etc.) has already been established and trading of carbon credits has already been taking place since 2023. The uncertainties regarding the emerging carbon market are considered manageable, because there is high political will, an advanced legal framework, and considerable opportunities to mobilize private climate finance, which can contribute to the realization of Indonesia’s policy goals. For more information see FS Chapter 3.5.4 Domestic Carbon Market.  
+
+• Unlocking results-based payments : The expected emission reductions from the impact of the project could attract further donor funding from multilateral or bilateral channels in accordance with Article 6.2. of the Paris Agreement, which encourages parties to engage in policy approaches and positive incentives for emission reductions from deforestation. However, the AE ensures that ERs resulting directly from the funded activities will not be traded but solely counted towards the Indonesian NDC. Recent discussions with donor representatives from Germany and Norway showed continued willingness to remunerate future low deforestation rates. By providing essential technical and financial support to overcome key barriers plaguing the sector, the project could help WK to potentially unlock USD 77 million in additional RBPs.78 If successfully leveraged, these funds would be channeled back into the AFOLU sector, building on the improved capacities to plan, implement and monitor investments whilst contributing to GESI through channeling funds as per benefit sharing agreements
+
+
+---
+*Chunk pages 38–38*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1321 (sys=94, user=1227), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 34
+
+## 81 Treeo Is an initiative by the company Fairventures offering certified carbon sinks; for more information see: https://treeo.one/en/.(see letter of intent in Annex 13)
+
+Currently, SME’s in WK are rarely able to access attractive finance schemes such as ACLF. The project will support and strengthen SME’s capacities and business opportunities in the AFOLU sector to access sustainable finance.
+
+• The project will also support and strengthen community businesses through KUPS social forestry business groups for certain commodities and, consequently, distributing revenues among members. Currently, social forestry licensed business groups have limited resources to manage their areas well. The project will offer capacity building for management to improve social forestry business opportunities and generate benefits for the community (financial and non-financial) that continue to incentivize the sustainable management of forests and generate positive social impacts for communities beyond project end. Additional opportunities to diversify incomes for social forestry groups will be explored to leverage additional funds for conservation and sustainable management (e.g. ecotourism, RBP, carbon markets). Targeted support will be provided to strengthen GESI within these groups (e.g. increasing women’s leadership roles and capacities), generating additional gender and social inclusion benefits in the long-term.
+
+One example is the foreseen collaboration with TREEO 81 to promote a sustainable business model for social forestry permit holders by enabling farmer groups to generate income from carbon sequestration via reforestation/afforestation and biochar production without transfer of ER titles.
+
+• Together, these diversified funding sources and the additional funding unlocked by the GCF project will ensure sufficient funds to sustain, replicate and scale sustainable investments. This will be further aided by strengthened capacities (technical and financial), demonstrated and scalable business models, as well as strengthened monitoring and regulatory frameworks, among other factors outlined below. GESI-specific considerations will be implemented that ensure that financial benefits reach both male and female beneficiaries, and through the anchoring of key measures into enabling frameworks (e.g. gender-responsive monitoring provisions, gender-specific funding criteria, among others), there will also be lasting GESI impact that ensures women and indigenous peoples continue to benefit from these systems.
+
+## 119. Technical sustainability
+
+The project builds on the lessons learned and experiences of the GoWK, GIZ, Solidaridad and KfW. This helps ensure that best practices, tailored to the local context, are implemented. In concessions, the project will establish SOPs for management plan implementation, which will include both technical requirements and safeguard requirements to prevent adverse environmental and social impacts. These SOPs will be institutionalized and continued to be followed beyond the project lifespan.
+
+With smallholder farmers, the project will conduct detailed analyses to ensure promoted measures are fully tailored to the communities, and climate resilient business cases will be co-developed with farmers, aiming to diversify their farm income and introduce resilient building practices that are well suited to their needs for the short-, medium- and long-term.
+
+Project support for climate-informed forest management plans will not only improve sustainable forest management but will ensure climate change adaptation is considered in the development, implementation and monitoring of the plans – ultimately enabling longer visions for management. Targeted technical support will be provided for FMUs, social forestry groups, and community-based conservation groups, which will also ensure targeted measures for GESI are implemented that benefit women, indigenous peoples and vulnerable groups (see GAP in Annex 8b and IPP in Annex 6c).
+
+Project efforts will also supported by improved monitoring systems and capacities, which will enable GoWK to more effectively plan, implement and monitor nature-based climate solutions (e.g. sustainable forest management, agroforestry, conservation efforts, support social forestry with new and existing licenses to provide benefits to local communities from sustainable forest management etc.), including those outlined in provincial and regency level plans and policies.
+
+In addition, improved traceability systems implemented for different commodities (coffee, cocoa, palm oil, rubber, and others) will support the government, communities and private sector actors to demonstrate and monitor sustainability claims, helping to facilitate access to markets given upcoming regulations (e.g. international sustainability requirements ) and increasing market requirements (e.g. GHG protocols, SBTi). Such trends are growing, and the project is well placed to enhance and operationalize tools that meet market demands while remaining user friendly to facilitate sustained uptake and scaling of these tools beyond project end.
+
+Stakeholder engagement, as outlined in Annex 7b, will be key to ensure tools consider the needs of users while ensuring compliance with market demands.
+
+Long term sustainability of the project’s measures will be supported by ensuring trainings are fully embedded in institutions (including trainings on best practices for inclusive technical assistance/ GESI, as well as technical topics), and that knowledge and trainings can be replicated. It will ensure capacity development and the institutionalization of knowledge, limiting one-off trainings in favor for the development of more system
+
+
+---
+*Chunk pages 39–39*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1011 (sys=94, user=917), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 35
+
+## Institutional sustainability
+
+Overall, the project has been designed to ensure close alignment with national priorities (see Section D.5). The project will strengthen regulatory frameworks to attract investments into sustainable and climate-resilient agriculture and agroforestry value chains and create a more integrated planning understanding the urgent need for both adaptation and mitigation measures, while reflecting key GESI considerations. This includes the integration of climate change, low-emission and climate-resilient AFOLU and REDD+ into landscape-level and provincial and regency planning (e.g. provincial development plans, provincial and regency level adaptation action plans), as well as sectoral regulations and plans (e.g. aligning provincial REDD+ policies with national mitigation policies – FOLU Net Sink 2030). In addition, the Project will strengthen institutional capacities (e.g. MoEF) and coordination bodies (e.g. Provincial Body on Climate Change, multi-stakeholder forums). The engagement of youth (e.g. IFSA) throughout the project, including within the Provincial Body on Climate Change, will also ensure there is a future generation of capacitated professionals with the tools to scale climate action. By effectively building institutional capacities and strengthening the regulatory framework, in close alignment with government visions and strategies, the project will ensure the measures promoted by the project (including measures to strengthen GESI) are fully integrated into governance structures that create an enabling environment for replication and scaling throughout the project and beyond project closure.
+
+## Social sustainability
+
+Additionally, to the technical assistance provided through the project in order to trigger behavioral change and support the local population to address key gaps that limit the adoption of gender-responsive and cross-cutting climate solutions in the AFOLU sector, EUR 15.2 million of investments (29% of GCF proceeds for comp. 1-3) are directly dedicated to final beneficiaries such as indigenous peoples and EUR 7.1 million (13% of GCF proceeds for comp. 1-3) to relevant partner institutions such as FMUs. Implemented measures will generate additional economic (e.g. increasing incomes through increasing yields), social (e.g. health benefits from reducing forest fires) and environmental benefits (e.g. soil protection from agroforestry, see Section D.3.). A grant of EUR 3 million will be dedicated to IPs which will help finance activities that improve tenure security (e.g. hutan adat licenses that can improve long term land security and can be used to demonstrate land ownership), and ensure free, prior and informed consent, among others (see Annex 6c for the Indigenous Peoples Plan). The project has been designed through a participatory and inclusive process, and its Stakeholder Engagement Plan (Annex 7a), Indigenous Peoples Plan (Annex 6c) and GAP (Annex 8b) further outline the measures that will be implemented to sustain a high level of stakeholder engagement and inclusion throughout project implementation, ensuring a high level of ownership and also contributing to the long-term social acceptability and ultimately the sustainability of the project and its impact (see also Section D3 and D4). Social forestry, supported by the project under Output 3.2, will also promote more equitable natural resource management, where communities directly participate from early stage through an FPIC process to determine which practices they prefer, and inform the benefit sharing plan and RKPS Social Forestry Work Plan.
+
+
+---
+*Chunk pages 40–40*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=837 (sys=94, user=743), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 36
+
+## FINANCING INFORMATION
+
+### C.1. Total financing
+
+#### (a) Requested GCF funding  
+(i + ii + iii + iv + v + vi + vii)  
+Total amount Currency: 59,484,751 euro (€)  
+GCF financial instrument Amount Tenor Grace period Pricing  
+(vi) Grants 59,484,751  
+
+#### (b) Co-financing information  
+Total amount Currency: 40,710,000 euro (€)  
+Name of institution Financial instrument Amount Currency Tenor & grace Pricing Seniority  
+MoEF In-kind 25,810,000 euro (€)  
+BMZ Grant 7,000,000 euro (€)  
+BMZ (GRASS) Grant 4,000,000 euro (€)  
+KfW Grant 2,900,000 euro (€)  
+Solidaridad In-kind 1,000,000 euro (€)  
+
+#### (c) Total financing  
+(c) = (a)+(b)  
+Amount Currency: 100,194,751 euro (€)  
+
+#### (d) Other financing arrangements and contributions  
+N/A  
+
+### C.2. Financing by component  
+
+| Component | Output Indicative cost (euro (€)) | GCF financing Co-financing Amount (euro (€)) | Financial Instrument | Amount (euro (€)) | Financial Instrument | Name of Institutions |
+|-----------|----------------------------------|----------------------------------------------|----------------------|-------------------|----------------------|----------------------|
+| 1. Institutional & Regulatory Frameworks | 1.1 | 17,586,721 - n/a | 17,586,721 Grants | BMZ, MoEF | 1.2 | 2,661,213 | 2,661,213 Grants | - | Grants | - |
+| 1.3 | 10,678,789 | 10,433,689 Grants | 245,099 Grants | MoEF | 2. Sustainable commodity production and social forestry | 2.1 | 19,781,506 | 12,084,394 Grants | 7,697,112 Grants | Solidaridad, BMZ-GRASS, MoEF |
+| 3. Management, protection and rehabilitation of forest and peatland ecosystems | 3.1 | 16,219,437 | 9,571,893 Grants | 6,647,543 Grants | MoEF | 3.2 | 21,659,076 | 18,268,877 Grants | 3,390,199 Grants | KfW, MoEF, M&E |
+| 4. Contingency | 1,071,422 | 1,071,422 Grants | - | n/a | PMC | 6,225,388 | 2,814,117 Grants | 3,411,271 Grants | BMZ, MoEF, Solidaridad, BMZ GRASS |
+
+Indicative total cost (EUR) 100,194,751 59,484,751 40,710,000  
+
+### C.3 Capacity building and technology development/transfer (max. 250 words, approximately 0.5 page)
+
+#### C.3.1 Does GCF funding finance capacity building activities?  
+Yes ☒ No ☐
+
+
+---
+*Chunk pages 41–41*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=512 (sys=94, user=418), max_out=1024, ctx=8192
+---
+
+# C.3.2. Does GCF funding finance technology development/transfer?
+
+**Yes ☐** **No ☒**
+
+## 122. 
+The project will implement a capacity development strategy that builds on the successful approach applied by GIZ projects in the region and its trustful collaboration with governmental institutions involved in Technical and Vocational Education and Training (TVET) in the agricultural and forest sector. It aims to support human-resource capacity development both at the national and the sub-national level in order to improve natural resource management that benefits local communities and contributes to their welfare, while contributing to the conservation of forests. A key feature of these interventions will be digitalization including e-learning to facilitate and scale the impact of all trainings. Drawing on several years of experience in strengthening the e-learning infrastructure in the forestry sector at national level, this project will focus these efforts on WK, considering the specific skills and needs in terms of capacity development for the design of tailor-made interventions that will create lasting positive impacts.
+
+## 123. 
+The project will prioritize capacity building for the implementation of climate-resilient and sustainable farming to ensure sustainable food production systems and climate resilient agricultural practices. In this context, the traceability system developed under this project ensures the proper functioning of food commodity markets and their derivatives and facilitates timely access to market information. Agricultural research, extension services, and technology development will be enhanced as part of the climate-resilient and sustainable farming.
+
+## 124. 
+In addition, to support SDG 12 "Sustainable Production and Consumption" the project will enhance collaborations with universities to increase research subjects on climate change and applied technology development for IP.
+
+
+---
+*Chunk pages 42–42*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1158 (sys=94, user=1064), max_out=1024, ctx=8192
+---
+
+# D.1. Impact Potential (max. 500 words, approximately 1 page)
+
+## D.1.1 Impact Potential – Mitigation
+
+125. The estimation applies WK's 2nd Forest Reference Level (FRL). It is aligned with the national 2nd FRL of Indonesia in terms of the methodology, including the activity data and emission factors. It estimates the annual net emissions for REDD+ baseline at 29.6 million tCO2eq, which derived from deforestation (29.4 million tCO2eq), forest degradation (0.8 million tCO2eq), and enhancement of forest carbon stock (-0.6 million tCO2eq per year). This project targets emission reductions of 2.3 million tCO2eq of annual GHG emissions or 16.05 million tCO2eq for the whole project duration until 2030. Further estimation of GHG impact to a longer project lifespan expects total of 43.5 million tCO2eq of emission reduction until 2045.
+
+### Table 5: Overview of mitigation potential attributes
+
+| Project Duration (2025-2032) | Project lifespan (2025-2045) |
+|-----------------------------|------------------------------|
+| Total                       | 16.05 million tCO2eq         |
+| 43.5 million tCO2eq         | (considering the current project effectiveness and an adjusted FRL for future periods, which will be lower when updated every 10 years) |
+| Annual (baseline)           | 2.2 million tCO2eq per year  |
+
+126. The assumptions used for these estimates involve the potential scope of each program activity that cover the targeted forests and peatlands, as well as the potential impact of each program activity to contribute to direct or indirect mitigation efforts (see Annex 22a/b). These assumptions resulted in 52% of effectiveness in reducing the emissions in seven years and reduction of 8.7% annual baseline for the next reference period. Estimation of emission reduction on 20-years project lifespan (2023-2045) used the similar ratio of annual emission reduction against the baseline and reduction of baseline emissions for the next update of the baseline.
+
+## D.1.2 Impact Potential - Adaptation
+
+127. The project is expected to increase the resilience of 680,000 villagers (50% women) who reside in target villages by strengthening their awareness of climate change risk and risk reduction practices. In addition, these direct beneficiaries will be supported to implement social forestry schemes, various measures of ecosystem-based adaptation including the rehabilitation of peat and mangrove areas, and climate-resilient and low-emission agriculture and forestry practices. Of the total direct beneficiaries, an estimated 14,000 smallholder farmers will be involved in sustainable agricultural practices under Component 2 and the rest in sustainable forest management under the social forestry schemes in Component 3 and climate informed land use planning including the establishment of HCV/HCS areas. In addition, under Component 3 ecosystem functions will be ensured through social forestry measures on at least 200,000 ha, the establishment of wildlife corridors and HCV/HCS (High Conservation Value / High Carbon Stock) areas of 100,000 ha on non-forest land (APL), which is covered by forest, mangrove and peat restoration on 10,000 ha and further large peat areas of approx. 420,000 ha will be protected.
+
+## D.1.3: Direct and indirect beneficiaries
+
+128. Direct beneficiaries will benefit through:
+
+- Direct technical and financial support to implement suitable climate-resilient and low-emission AFOLU measures that contribute to REDD+ and strengthen the resilience of vulnerable communities and ecosystems;
+- Development of alternative livelihood sources based on low-emission and climate-resilient sustainable land- and forest-based investments, supported by technical assistance and improved access to finance, markets and networking;
+- Establishment of an enabling environment that incentivizes sustainable planning and investments, and increases transparency in monitoring REDD+, and climate change adaptation and mitigation in WK;
+- Strengthened awareness of climate change and the importance of REDD+, as well as suitable low-emission and climate-resilient land- and forest-based investments;
+- Targeted measures will enable female beneficiaries and indigenous peoples, who are particularly vulnerable to climate change, to actively participate in and benefit from sustainable and resilient land- and forest-based investments;
+- Additional targeted support to enable conflict resolution, strengthen tenure security, and safeguard food, health, and income security.
+
+
+---
+*Chunk pages 43–43*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1291 (sys=94, user=1197), max_out=1024, ctx=8192
+---
+
+# D.2. Paradigm shift potential (max. 500 words, approximately 1 page)
+
+## D.2.1 Paradigm shift in the forestry and land use sector
+
+130. The project will facilitate a paradigm shift in the forestry and land use sector in WK that will be sustained by unlocking additional sources of results-based payments, as well as public and private finance managed through national funds and institutions with strengthened capacities for mobilizing and channeling climate finance. A recent World Bank report, once again, highlighted the importance of integrated land use initiatives for achieving complex social and environmental challenges. This GCF project covers a broad range of topics that have been identified to be essential for achieving this: multistakeholder engagement; environmental focus; economic focus; boundary setting; land tenure; financing strategies; monitoring, evaluation, and learning; and cross-sectoral coordination.
+
+131. Jurisdictional Approaches are seen as a way to address challenges faced to implement corporate commitments to sustainable supply chains. It should align government-led, multi-stakeholder processes to external and market incentives. Private sector companies consider these approaches e.g. to meet their NDPE commitments. WK is among a few provinces in Indonesia where such approaches have already been piloted and the concept has already been mainstreamed into the Indonesia’s 2020-2024 Medium Term Development Plan.
+
+132. This project will further strengthen the sub-national regulatory frameworks and policies for jurisdictional approaches to ensure the project results and outcomes will sustain beyond the project duration. The provincial regulation will provide the legal framework for all Regencies. The five most important Regencies in term of both existing forest and peatlands as well as deforestation were selected to implement jurisdictional approaches to sustainable agriculture and forest value chains. This project is expected to drive investment from private sector and business practices that aim for sustainable commodities and low-emission activities and provide sufficient finance to expand the proposal's impact beyond the boundaries of the intervention area. By promoting collective learning and capturing generated knowledge along the project implementation process, this project can strengthen the knowledge of climate actions and provide lessons learned for other provinces in Indonesia. This will enable the project being replicated elsewhere and create greater impact in the long run.
+
+133. The demand for a paradigm shift for the WK provincial socio-economic development pathway is linked with the province's commitments towards climate mitigation and the role LULUCF plays to achieve this. The paradigm shift consists of developing sustainable business and livelihoods models while creating an effective institutional framework which enforces and substantiates existing policies and legislation (Figure 10 below).
+
+134. This needs to take into account that WK is still in the transition to sustainable development pathways, and forest governance and management are now administered directly by the province under UU 23/2014 on Local Government. Private sector commitments to conservation and sustainable supply chains are still insufficient in dimension but are notably growing under the GGP framework. Devolution under the social forestry regulatory framework promotes forest-dependent communities as key actors for change. Hereafter, ensuring the adoption of sustainable development pathways in this transition stage is possible.
+
+135. To overcome path dependencies, the project will:
+- Support the clarification of legal frameworks, where there are inconsistencies or uncertainties (activities 1.1.2 and 1.2.1);
+- Build institutional capacities on best practices for planning, implementation, monitoring and stakeholder engagement (including gender equality and social inclusion; cross-cutting in all activities);
+- Promote participatory and inclusive processes (cross-cutting in all activities, but especially critical under land use planning processes in activity 1.1.1, and the implementation of sustainable land- and forest-based investments under Components 2 and 3);
+- Develop financial mechanisms and mobilize private and public funds for sustainable land-based investments (activity 1.3.1, and Components 2 and 3 during the project period and beyond. This includes setup and implementation of a grant mechanism for IP and mobilization of private and public investment for: i) productive commercial activities that are coupled with positive social and environmental impacts, ii) for large conservation and
+
+[Page 39]
+
+
+---
+*Chunk pages 44–44*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=878 (sys=94, user=784), max_out=1024, ctx=8192
+---
+
+# D.2.2 Potential for scaling up and replication
+
+137. The proposed project is a role model on sub-national jurisdictional approaches to shape new development pathways to ensure forest and land-based investments are managed in a sustainable manner to stimulate regional development is high for Indonesia's overall provinces. The success of jurisdictional models developed in WK provides a foundation and robust model for scaling-up and replicating REDD+ implementation blended with GGP to the other 10 priority REDD+ provinces in Indonesia. Therefore, the concept of matching co-funding between government funds with potential funding opportunities for jurisdictional implementation strategies and private investments can be replicated in the other 10 REDD+ prioritized provinces – in particular strengthening the FMUs is a cornerstone for implementing social forestry and supporting private sector involvement.
+
+138. The new financial streams and opportunities built and mobilized in this project will benefit beyond GCF project areas within the province and become a new nationwide model. This effort has been embedded in this project output and activity intervention. The financial model can be built upon from the previous models developed by the Executive Entities GIZ and Solidaridad or other models which the Government of Indonesia has recognized, such as:
+
+- GIZ in bridging communities to access the market for a commodity (Public-Private Partnership with Continental AG to support sustainable rubber production) in Kapuas Hulu and Sintang. Biosphere reserve initiative in which GIZ has designed a fundraising framework to fund long-term conservation activity for the reserve.
+- GIZ aims to give social forestry license holders an incentive to increase carbon stocks in their areas through a collaboration with TREEO. Pilot measurements of biomass and carbon will be conducted using a new methodology, which will be submitted to the government for official recognition. If successful, so-called contribution claims may be sold to private sector actors, without any transfer of carbon titles.
+
+> **Note:** The text above appears to be extracted from page 44 of a PDF document. The original page number is preserved in the markdown format as shown.
+
+
+---
+*Chunk pages 45–45*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1228 (sys=94, user=1134), max_out=1024, ctx=8192
+---
+
+# D.2.3 Potential for knowledge and learning
+
+139. The project creates institutional learning and strengthening of knowledge, including traditional knowledge of IPs, collective learning processes and institutions. Knowledge and learning management seek to improve project performance by leveraging and maintaining the value of the present and future knowledge assets. The key concepts adopted in this project include converting data, organizational insights, experience, and expertise into reusable and useful information for people who need it. The most important aspects of knowledge and learning are project documentation and dissemination. This project develops systems to document and disseminate information, lessons learned, and challenges during the process. A special unit under the Project Management Unit (see B.4) will be created for knowledge and learning management. In this context, this project can build up knowledge and learning process from the past GIZ FORCLIME project. The interventions have embedded and changed the behaviour of local government organizations and have embedded in the regulatory framework, such as promoting transparency on budgeting in forest governance, capacity improvement of ASN, conflict resolution desk, and the Biosphere Reserve initiative in Kapuas Hulu. This project will draw upon experience in embedding conservation efforts to company’s operational plan and budgeting that has been successfully implemented in WK.
+
+# D.2.4 Contribution to the creation of an enabling environment
+
+140. The project aims to create an enabling environment in which there is a balance between protection and production within a sustainably managed and resilient landscape. The balance ensures that the project’s long-term impacts continue after its completion. To ensure this balance, the project addresses: (i) Forest protection and conservation, (ii) Increased production scale of sustainably produced commodities and (iii) active stakeholders’ involvement across different levels of government, and (iv) mainstreaming of climate change adaptation. Through this, the project improves the enabling environment needed for attracting and growing private sector commitments to conservation and low-emission sustainable supply chains in WK. The enabling environment is enhanced by: (i) developing transparent and credible financial mechanisms to mobilize funding from the private sector, local financial institutions, or global green investment vehicles at the jurisdictional level and (ii) support to enforce the national policies on permit reform to accelerate the execution of REDD+ and related sustainable and resilient land- and forest-based investments.
+
+# D.2.5 Contribution to the regulatory framework and policies
+
+141. This project has a substantial contribution to the regulatory framework and policies at the regional level. Activity 1.1.1 integrates climate change adaptation into regional development and sectoral agencies plans; activity 1.1.2 strengthens mitigation actions through improved REDD+ implementation towards achievement of sub-national FOLU Net Sink 2030 targets; activity 1.1.3 enhances the institutional framework for coordination of mitigation and adaptation activities, activity 1.2.1 strengthens the regulatory framework on HCVF/HCS protection in the non-state forest; and, activity 1.3.1 develops local, sustainable public and private financing mechanism for long-term funding security for sustainable land- and forest-based investments which should, at the same time, reduce vulnerabilities of local communities to climate change. The regulatory framework and policies will be developed through an effective and socially inclusive process as mandated by UU 15/2019 on Law Establishment by also engaging private sector actors and civil society organizations to fully understand their role and contribution in designing and implementing the overarching policy framework.
+
+142. In addition, the project also supports the national BPDLH in designing a robust framework for channeling domestic and international climate finance. BPDLH is channeling GCF Results-based Payments (RbP) to sub-national levels but is also anticipated to establish specific windows for grant mechanisms to local beneficiaries. Consultations on Fund management have already begun, and this project has been introduced to the MoEF as a role-model to establish sub-national fund structures to successfully channel funds to local beneficiaries. Hence, the project will work closely with the national-level BPDLH.
+
+# D.3. Sustainable development (max. 500 words, approximately 1 page)
+
+## D.3.1 Environmental co-benefit
+
+[Page 1]  
+D  
+GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 41  
+
+• Solidaridad in facilitating sustainable agriculture farming for around 20,000 farmers on 40,000 hectares and built alternative sources of income for around 3,000 villagers.  
+• The project and its activities can be scaled up and replicated in Regencies located outside this project priority area and in other regions in Indonesia. The innovative business models in the forest and land-based sectors developed under activity 2.1.1 can be replicated by other private sector actors outside the project target areas, thus extending the contributions of the private sector and communities to adaptation and REDD+ mitigation actions.  
+• GCF funding ensures a paradigm shift in government budget management for more effective, efficient,
+
+
+---
+*Chunk pages 46–46*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1070 (sys=94, user=976), max_out=1024, ctx=8192
+---
+
+# D.3.2 Social co-benefits
+
+## 147. Enhancement of Social Safety Nets:
+- Focus on improving social safety nets, especially for women in agriculture and forestry, by enhancing smallholder productivity, income, and access to health and education, and securing long-term benefits through social forestry and CBFM schemes.
+
+## 148. Health Benefits:
+- Reducing deforestation and forest degradation minimizes risks from extreme weather and environmental hazards, improving community resilience and respiratory health by preventing forest fires and their transboundary impacts.
+
+## 149. Inclusion of Indigenous Community Groups:
+- The project supports indigenous peoples through a dedicated grant mechanism, enhancing their land rights, resilience to climate vulnerability, and integrating them into sustainable land management, with a special focus on gender-responsive initiatives and aiding marginalized groups.
+
+## 150. Improved Food Security:
+- Implementing climate-resilient farming and a supportive business ecosystem aims to double agricultural productivity and incomes for small-scale producers, ensuring sustainable food production and market access through secure land and resource rights and improved traceability systems.
+
+## 151. Enhanced Business, Entrepreneurial, and Vocational Skills:
+- Capacity building initiatives targeting women and youth will empower communities to innovate and systematically develop their businesses, fostering local economic growth and job creation through enhanced skills and new business opportunities.
+
+# D.3.3 Economic benefits
+
+## 152. Increased productivity and income of smallholders:
+- Through climate-resilient and sustainable farming and a supportive business ecosystem. This will increase productivity of commodities incl. palm oil, rubber and coffee. Increased productivity increases income and benefits 14,000 farmers (direct). Indirect beneficiaries cover 77,000 members of the direct beneficiaries' families and 42,000 members of their communities. Climate-resilient and sustainable farming will be promoted through capacity improvement, climate-resilient business case development, and access to the market and financial mechanisms.
+
+## 153. Sustainable livelihoods and the creation of alternative livelihoods of forest-dependent communities:
+- The dedicated IP grant mechanism will benefit at least 100 business KUPS of social forestry license holders and 100 indigenous community groups. The grant allows IP to maintain and improve their existing livelihood while creating alternative livelihoods for those still employed in unsustainable activities to generate income in the targeted landscape. The selection criteria for the grant proposals will include gender responsiveness, focusing on support for marginalized groups like indigenous women and women led households. Capacity building, support for business plans, supply chain development and traceability, adding product values, and market expansion support will be provided throughout the project. This will also comprise targeted support to enable women groups / women organisations to submit competitive proposals to the dedicated IP grant mechanism.
+
+
+---
+*Chunk pages 47–47*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1287 (sys=94, user=1193), max_out=1024, ctx=8192
+---
+
+# D.3.4 Gender sensitive development benefit
+
+157. All project activities will proactively involve empowerment elements for vulnerable village women, including promoting their leadership roles in local structures. The project will include training on business skills development for women to help address common participation gaps and barriers, including financial support. The project will seek economic opportunities for vulnerable women related to agroforestry, forest management and climate-resilient agricultural activities. It will also strengthen awareness for women and men within the project area on climate risks and best practices to reduce these risks and strengthen the resilience of local communities and ecosystems.
+
+The project will prioritize on identifying and targeting vulnerable women to participate in activities such as trainings, economic activities, and climate awareness raising. The project pursues a zero-tolerance approach to sexual exploitation, abuse and sexual harassment (SEAH), which includes training, awareness raising and a distinct grievance redress protocol for SEAH issues (see section G.2 below and Annexes 6b (ESMP) and 8b (GAP) for more information).
+
+# D.4. Needs of recipient (max. 500 words, approximately 1 page)
+
+## D.4.1 Climate risk and vulnerability
+
+158. In 2019, Indonesia ranked 14th out of 180 countries on German Watch's Climate Risk Index, where Indonesia experienced a high number of fatalities due to climate-related hazards (ranking 3rd in terms of fatalities; Eckstein et al. 2021). As described in Section B1., Indonesia is exposed to diverse climate-related hazards, particularly related to wildfires, river and coastal floods, droughts, and sea level rise. Climate change will have disproportionate impacts on particularly vulnerable households and communities, including women, indigenous peoples, disabled persons, and poor households, among others. Annex 2c (Climate Risk Assessment for West Kalimantan) provides detailed analysis on climate risks and vulnerabilities in the project region. The project will support them to strengthen their resilience, as well as the resilience of the ecosystems upon which they depend (see adaptation impacts under D.1.2).
+
+## D.4.2 Economic and social needs of the beneficiaries
+
+159. Sustainable forest management in WK faces different capacity constraints at various levels. Among governmental agencies such as the provincial forestry service (Dinas Kehutanan), FMUs (Forest Management Units), and UPTs (Unit Pelaksana Teknis), the level of individual capacity of forestry staff in carrying out the tasks under their mandate is still limited. These limitations range from forest planning and technical capacity in GIS and remote sensing to management and leadership skills. Local communities, as another key stakeholder in sustainable forest management at local level, also need capacity building, especially to implement the national social forestry policy and the related use of non-timber forest products. They also need to increase their organizational skills as part of forest farmer groups and business groups such as Social Forestry Business Groups (Kelompok Usaha Perhutanan Sosial - KUPS).
+
+160. In addition, the agricultural sector in WK faces various challenges in achieving sustainable commodity production in the landscape. Nevertheless, the economic structure of WK in the first quarter of 2023 was dominated by the agriculture, forestry, and fishery sector (22.09%) 84 and WK is the province with the fourth largest palm oil industry after Riau, Central Kalimantan, and North Sumatera 85. This shows the importance of palm oil and its contribution to economic growth in WK. However, sustainable practices in WK are still not mainstreamed, which is
+
+84 https://kalbarprov.go.id/berita/ekonomi-kalimantan-barat-secara-year-on-year-tumbuh-sebesar-465-persen.html  
+85 https://databoks.katadata.co.id/datapublish/2023/05/11/ini-provinsi-penghasil-kelapa-sawit-terbesar-pada-2022
+
+
+---
+*Chunk pages 48–48*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1442 (sys=94, user=1348), max_out=1024, ctx=8192
+---
+
+# D.4.3 Financial needs
+
+161. WK is a developing province, and natural resources exploitation has been a primary development pathway to grow regional income and economic growth. However, still 40% of the villages in WK are categorized as developing and 5% (94 villages) as disadvantaged, mostly located inside or in the vicinity of forest areas. The forestry sector's contribution to total regional income is only 2.2% and plantations are 4.5%. Only 2% of the WK government budget is allocated for the forestry sector out of a total of USD 411,476,122. This amounts to USD 1.5 per hectare of forest. Meanwhile, the local revenue was only USD 164 million with a poverty rate of 6.73%. GDP per capita in 2020 was IDR 39,631,760 (EUR 2,331) at current market prices, relatively low compared to the national average of IDR 57,269,800 (EUR 3,369), placing WK 23rd out of 38 provinces.87 Individual expenditure per capita in WK was only USD 540, below the national average of USD 789. The Farmer Exchange Rate (FER) was 93.76 (below 100). With the current figures, funding from GCF can increase WK's budget for sustainable forest management significantly.
+
+162. Therefore, some part of the GCF funding will mobilize co-funding from the private sector, including financiers, through: (i) co-designing and co-implementing field level interventions with the private sector to improve their sustainability practices, (ii) providing pre and post investment technical assistance for commercial investments, (iii) developing sustainable business models for smallholder producers and forest-dependent communities to implement sustainable land use activities that strengthen their livelihoods.
+
+163. Specifically, these approaches aim to i) de-risk investments for the companies and financiers so they can increase their confidence in sustainable business models and invest in low-carbon and climate-resilient investments, ii) attract more significant commercial investments and co-funding for low-emission and climate-resilient AFOLU investments and iii) design climate-resilient-, low-emission and sustainable plans for the private sector to unlock their conservation commitments and related green finance; mainly those that are already committed to funding conservation activities in the field within and outside their concessions. Without GCF funding, WK Province has limited capacity and insufficient resources to provide a strong enabling environment and investment ready business cases for investors, which will limit the much-needed mobilization of private sector finance into climate change mitigation and adaptation. Those funds leverage through cash and in-kind so that the project can work in a more significant scope with more involvement of the private sector including land managers/landowners for field-level interventions. Any co-funding will be audited and reported. For the co-funding scheme on field level interventions and any technical assistance, a strict rule is that companies need to cover at least 50-70% of the costs.
+
+164. In addition, GCF funding also will be used to engage with (local) financial institutions to explore the possibility of them taking part in the project by providing other instruments (e.g., concessional loans, micro-financing, and guarantees). It has high potential to be scaled and replicated through the project intervention.
+
+# D.4.4 Institutional needs
+
+165. At the institutional level, FMUs and the provincial forestry service often face budgetary and organizational constraints, which limit the resources they can allocate for training. They also often do not have a capacity development plan for their personnel. As a result, long-term forest management plans (RPHJP) that have been prepared often cannot be implemented optimally due to limited human resources and budgets. Hence, current capacities are inadequate to comply with the responsibilities of these institutions. In addition, at the policy level, there is a lack of clarity regarding the role and duties of FMUs after the Job Creation Law (No. 11 of 2020 on Job Creation). This also affects the unclear working relationship between FMUs and the provincial forestry service, UPTs, and other stakeholders. Besides, the policy framework regarding capacity building needs adjustments to reflect the government's ambition to reduce GHG emissions in the forestry sector policies, protocols, and standards need to be developed or updated to reflect the need to build the needed capacity for GHG mitigation in the forestry sector.
+
+166. Also, the lack of socialization of the Regulation of the Minister of Agriculture no. 38 of 2020 about the implementation of the Certification of Sustainable Indonesian Palm Oil Plantations and the related obligations of palm oil growers by 2025 is one of the reasons the adoption of ISPO certification in
+
+
+---
+*Chunk pages 49–49*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1377 (sys=94, user=1283), max_out=1024, ctx=8192
+---
+
+# D.5. Country ownership (max. 500 words, approximately 1 page)
+
+## D.5.1 Coherence with existing National Climate Strategy, policies and commitments
+
+169. The GoWK is member of the Governors’ Climate & Forests (GCF) Task Force. The GCF Task Force offers a unique vehicle for advancing jurisdiction-wide approaches to protecting forests, reducing emissions, and enhancing livelihoods across tropical forest states and provinces. In 2019 GCF Task Force members in Indonesia launched a Steering Committee on Sustainable Agriculture in Indonesia (SCAI), a multi-stakeholder partnership that seeks to advance sustainable agricultural commodity production at a jurisdictional scale. In WK SCAI is expanding the recognition of smallholder rights by formally recognizing productions with Plantation Business Registration Certificates for Cultivation.
+
+170. The REDD+ Working Group formed West Kalimantan's jurisdictional REDD+ strategy in cooperation with GIZ and other stakeholders under the governor's guidance and MoEF supervision and coordination. Key pillars of the REDD+ Strategy in West Kalimantan link it to the national components of REDD+. WK is one of the REDD+ prioritized target regions by MoEF. MoEF has given emissions reduction targets for the forestry sector to WK as the province’s contribution to the national NDC. REDD+ plays a crucial role in achieving the forestry mitigation target of the NDC. Over the last couple of years Indonesia established most REDD+ Readiness measures. The approved GCF FP 130 provides RbP to Indonesia. The FCPF Carbon Fund has just signed the ERPA for East Kalimantan REDD+. The Government of Indonesia is taking REDD+ implementation serious and this project will substantially contribute to REDD+ in Indonesia to finally be a success.
+
+171. This project follows the Indonesian Safeguard Information System SIS-REDD+ and develops a Stakeholder Engagement Strategy (SES). It ensures well-organized coordination with all stakeholder groups during the project design, implementation, reporting, monitoring, and evaluation. The strategy shall be inclusive to ensure all actors' involvement from government, academia, civil society, private sectors, targeted communities, and any other relevant stakeholders at the national, sub-national, or local level.
+
+172. The current National Medium Term Development Plan 2025-2029 aims to transform Indonesia into a high middle class income country with a fair and sustainable development. In the AFOLU sector, this RPJMN focuses on (i) permanent termination of licensing in primary forest and peatlands; (ii) forest restoration; (iii) increasing participation of business sector in forest rehabilitation; (iv) rehabilitation of 637,000 hectares of mangrove; (v) corridors for connecting fragmented habitat; (vi) maintaining conservation areas; (vii) scaling up best practices in research and education; and (viii) establishment of 1.02 million hectares of high conservation value forest. As per the RPJMN, areas requiring protection for forest ecosystem services increased from 51.8 to 65.3 million hectares, and include both forest and non-forest areas which has to be considered in the land use planning process at sub-national level.
+
+173. The government of Indonesia considers climate mitigation and adaptation efforts as an integrated concept that is essential for building resilience in safeguarding natural resources. The GoI has made significant efforts towards developing and implementing a National Action Plan on Climate Change Adaptation (RAN-API) or (NAP) which provides a framework for adaptation initiatives that have been mainstreamed into the National Development Plan. The NDC highlights forestry and land use in general as key areas to increase ecosystem and landscape resilience. Areas of action include ecosystem conservation and restoration (EbA), social forestry (reduce vulnerability) and integrated watershed management, amongst others.
+
+174. Of the 2030 ENDC targets, forestry and land use are to contribute a substantial 17.4% to 25.4% by enhancing land rehabilitation (afforestation, reforestation, rehabilitation) and peat water management. Forestry and land use (140 million tCO2eq emission level) are to become a net-sink by 2030 as per Indonesia's FOLU Net Sink (2030) strategy and operational plan prepared by MoEF.
+
+175. The province of WK is one of a few provinces in Indonesia being identified to implement jurisdictional approaches to land and forest management. With support of development partners such as Solidaridad or GIZ several Regency level approaches have already been piloted.
+
+## D.5.2 Capacity of AE and EEs to deliver
+
+176. GIZ as AE already developed and submitted several funding proposals to GCF. Two GIZ GCF funding proposals to implement REDD+ in the Lao PDR (FP117 & FP20
+
+
+---
+*Chunk pages 50–50*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1376 (sys=94, user=1282), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 46
+
+## D.5.3 Role of NDA
+
+177. GIZ supports the forestry and agriculture sector in Indonesia for many years. The GIZ FORCLIME project is already active in WK, supporting REDD+ structures, and especially Kapuas Hulu in strengthening FMUs and implementing SFM. FORCLIME also trained FMUs and local communities in active fire prevention measures.
+
+Another BMZ commissioned GIZ project (SASCI) is also active in WK to pilot sustainable agricultural supply chains (e.g. rubber and palm oil). Under SASCI a public private partnership with a large German tire manufacturer (Continental AG) has been set -up with potential for replication. The same holds true for a recently established partnership on an innovative rattan products value chain. With GCF proceeds these innovative and successful pilots could be up-scaled.
+
+178. Solidaridad is well established and trusted partner by government agencies, local smallholders and the private sector. Solidaridad as an executing entity of this project has a sound expertise in agricultural capacity development for sustainable farming practices at smallholder level and certification of agricultural commodities. Solidaridad is active in WK for several years, e.g. with the NI-SCOPS project and also initiated partnerships with international and national private sector actors.
+
+179. Additional information on the AE and EEs’ capacities to implement the project are provided in Section B.4.
+
+## D.5.4 Engagement with civil society organizations and other relevant stakeholders
+
+182. The project development team has meticulously identified various stakeholder groups at different levels to guide the development of effective and inclusive communication and engagement strategies for the project design phase. This includes government agencies at all levels, spanning national, provincial, and regency governments, private sector actors to design the project according to the needs and, most importantly, indigenous peoples and local communities including their representatives (civil society organizations).
+
+183. Consultations have been carefully documented (see Annex 7b Documentation of Stakeholder consultations; Annex 7a Stakeholder Engagement Plan, Annex 6c Indigenous Peoples Plan which was developed by the umbrella organization of Indigenous Peoples AMAN/Kalbar Chapter ( Aliansi Masyarakat Adat Nusantara (AMAN): Indigenous Peoples Alliance of the Archipelago) and the documentation of stakeholder consultations during the development of the Gender Assessment and Gender Action Plan (Annex 8a/b) and the Environmental and Social Impact Assessment (ESIA) and Environmental and Social Management Plan (ESMP) (Annex 6a/b).
+
+## D.6. Efficiency and effectiveness (max`. 500 words, approximately 1 page)
+
+## D.6.1 Efficiency and effectiveness
+
+184. This project will result in at least 16.05 million tCO2eq of emission reduction over the 7-year project implementation period. It is estimated that this pre-investment project has the following cost for mitigation per tCO2eq:
+
+- For the project term to the GCF = EUR 59,484,751 /16.05 million tCO2eq = EUR 3.71 per tCO2eq.
+- For the project term to the GCF (mitigation share 50%) = EUR 29.74 m/16.05 million tCO2eq = EUR 1.85 per tCO2eq.
+- For the overall project (GCF + co-funding) = EUR 100,194,751 /16.05 million tCO2eq = EUR 6.24 per tCO2eq.
+
+185. The estimation applies WK's 2nd Forest Reference Level (FREL). It is aligned with the national 2nd FREL of Indonesia in terms of the methodology, including the activity data and emission factors. It estimates the annual net emissions for REDD+ baseline at 29.6 million tCO2eq, which derived from deforestation (29.4 million tCO2eq), forest degradation (0.8 million tCO2eq), and enhancement of forest carbon stock (-0.6 million tCO2eq per year). This project targets emission reductions of 2.3 million tCO2eq of annual GHG emissions or 16.05 million tCO2eq for the whole
+
+[Page 1]
+
+
+---
+*Chunk pages 51–51*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=672 (sys=94, user=578), max_out=1024, ctx=8192
+---
+
+# D.6.2 Financial viability
+
+187. The project will directly leverage/mobilize at least EUR 100 million public and private finance for conservation purposes, commercial investments from the private sector of at least EUR 2 million, and mobilize up to EUR 16 million e.g. for oil palm re-planting purposes (see Annex 2f).
+
+188. The indicative ratio of co-financing is 1:0.7 between requested GCF financing and co-financing, with detail as follows: The co-financing of the project is EUR 40,710,000 (41%) of the total budget. GCF financing is EUR 59,484,751 (59%).
+
+189. For the in-depth justification of the GCF grant, please refer to section B.5. As noted in Annex 3, the financial IRR of the different value chains are positive even without external support, mainly due to currently unsustainable land use practices. GCF support further increases the financial IRR. GCF grant funding remains however essential for the implementation of the program as it focuses on investments and technical assistance to establish an enabling environment (e.g. improved planning, supporting local communities and producers to formalize land use rights, monitoring and traceability systems, mainstreaming adaptation, and building capacities on good agricultural practices and sustainable forest management, among others), and because beneficiaries are small producers and local communities, including indigenous peoples, who are vulnerable to climate change.
+
+Concessionality is reduced by the fact that GCF funding will be provided as technical assistance to the beneficiaries in form of trainings, coachings and to a small part in form of grants to the indigenous population. The project will help facilitate access to dedicated financial service providers and creating sustainable business models. The activities supported by the program will be financially self-sustaining in the medium and long-term, with no need for further concessionality. This will make smallholders more bankable in the eyes of lenders.
+
+
+---
+*Chunk pages 52–52*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=848 (sys=94, user=754), max_out=1024, ctx=8192
+---
+
+# E.1. Project/Programme Focus
+
+- **Reduced emissions (mitigation)**
+- **Increased resilience (adaptation)**
+
+# E.2. GCF Impact level: Paradigm shift potential (max 600 words, approximately 1 -2 pages)
+
+## Assessment
+
+### Dimension
+
+| Current state (baseline) | Potential target scenario (Description) | How the project/programme will contribute (Description) | Description Rating Scale |
+|--------------------------|-----------------------------------------|--------------------------------------------------------|--------------------------|
+| Between 1990 and 2020 the forest area in WK declined by 2.1 million ha (27%), from 7.5 million ha to 5.4 million ha, releasing over 23.3 million tCO2eq per year. At the time of this FP formulation (2022-2024) deforestation and forest degradation remain a major threat in the province due to its role as an important hub for producing soft commodities like palm oil. Smallholder farmers in the 5 target regencies are vulnerable to the impacts of climate change as business-as-usual practices put their livelihoods, food security and the ecosystem at risk (see FS Chapter 2.1 for further information). | Medium The transformational changes triggered by the project will involve a move away from unsustainable expansion of agricultural production and exploitation of natural resources. Strengthened law enforcement and the sector wide adoption of conservation agriculture and social forestry will trigger the shift towards a low emission and climate resilient development pathway in WK. | The intervention is projected to reduce emissions of around 16.05 million tCO2eq over 7 years, with continued future impacts through a paradigm shift in the management of natural resources. The project will trigger policy and institutional transformations to support climate change adaptation and mitigation (e.g. within development plans and adaptation and mitigation strategies/plans, and through developing institutional capacities), incentivize sustainable forest management, support and incentivize community and social forestry groups to sustainably manage and benefit from forests, and scale up the sustainable production of soft commodities while also contributing to the transparency and traceability of the value chain through the provision of inclusive technical assistance, supporting the development of sustainable business cases, working with smallholders to strengthen market access and through supporting the development of a traceability system that improves monitoring and transparency. Scaling will also be facilitated through the engagement, capacity building and empowerment of diverse actors throughout project design and implementation, working with IPs, private sector companies (including MSMEs and larger companies), and public sector actors, among others. For more information see Chapters D.2.2 and B.6, as well as FS (Annex 2a) Chapter 5.3 and Appendix 10.1.88 |
+
+## Notes
+
+This project builds on best practices and lessons learned from projects and programs in the AFOLU sector over the last decades, both within Indonesia, West Kalimantan, and the broader region. Appendix 10.1 of the Feasibility Study provides more detailed information about the baseline projects their objectives, and the main areas of alignment and lessons learned for this GCF Project.
+
+--- 
+
+*Page 48*
+
+
+---
+*Chunk pages 53–53*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1342 (sys=94, user=1248), max_out=1024, ctx=8192
+---
+
+# E.3. GCF Outcome level: Reduced emissions and increased resilience (IRMF core indicators 1-4, quantitative indicators)
+
+## Replicability
+
+At the time of this FP formulation (2022-2024), good examples of sustainable practices in the AFOLU sector are available in the province. However, these are isolated, lack coordination, and are often limited by NGO funding. The limited scale of these initiatives, pilot activities, and approaches prevents the achievement of impact at province level.
+
+To fully reach the paradigm shift towards low-emission and climate resilient forest and land use practices, additional technical and financial support is needed to replicate and scale-up investments in climate resilient and sustainable land management in 5 regencies.
+
+## Medium
+
+By working closely with government agencies and the private sector, best practices in conservation agriculture and social forestry will set new standards and will be scaled across five regencies to contribute to sustainable rural development at landscape level. Through improved policies, skills and profitability of sustainable production, there will be spillover effects to other regencies in the whole province.
+
+As soon as the positive impacts of the measures are recognized in WK, the province will serve as a role model for sustainable soft commodity production across all provinces of Indonesia.
+
+The project will improve the institutional framework at the province level, which will facilitate the adoption of low emission and climate resilient practices across all regencies. It will ensure alignment with national priorities, while creating a more holistic planning mechanism and incentivizing low-carbon and climate-resilient investments in the AFOLU sector.
+
+As the project is led by the provincial government, where institutional strengthening will be supported, it will be more easily replicated in other provinces. Lessons learnt and best practices, including sustainable business and livelihood models, can be taken up by the government, the private sector and implementing agencies to replicate them in other provinces.
+
+For more information see Chapters D.2. and B.6., as well as FS (Annex 2a) Chapter 5.3.
+
+## Sustainability
+
+The provincial government of WK has a high ambition and commitment to implement the project to transform the AFOLU sector and contribute to the national climate targets. The relevant agencies for the AFOLU sector are operational and have made important progress in promoting on Climate Change and sustainable land use.
+
+Limited financial and human resources of relevant actors resulted in slow progress towards achieving AFOLU targets and engaging the private sector. Private sector finance for climate action is considered critical to help fill financing gaps, however current investment in climate action is low.
+
+## Medium
+
+A paradigm shift would entail improved capacities of governmental institutions and the REDD+ taskforce to regulate and engage the private sector and local communities in forest protection and sustainable commodity production. Smallholders have the knowledge and capacity to produce sustainably, access premium markets and access financing mechanisms.
+
+Persisting policy gaps for climate change mitigation and adaptation in the land-use sector are filled. Alternative income opportunities for local communities (e.g. NTFP production) and sustainable business cases are institutionalized and give incentives to harmonize land use with nature protection. Financial mechanisms are developed that leverage funding from the government, the private sector, and international donors (e.g. results-based payments).
+
+The project aims to strengthen the capacity of governmental and non-governmental stakeholders, including smallholder producers, IPs, and private sector actors, among others, trigger institutional learning, and foster the institutional framework for mainstreaming climate change adaptation and mitigation into the land-use sector.
+
+Good Agricultural Practices (GAP) and access to finance, which will be promoted by the project, will lead to productivity gains and improved market access for smallholders and will give an incentive for forest protection and low emission agriculture even after the project end. An improved enabling environment will be a strong foundation for the future implementation of forest and land-based programs.
+
+Financial mechanisms developed or used by the project will contribute to closing persisting funding gaps.
+
+For more information see the exit strategy in Chapter B.6., and the FS (Annex 2a) Chapter 5.5.
+
+## E.3. GCF Outcome level: Reduced emissions and increased resilience (IRMF core indicators 1-4, quantitative indicators)
+
+89 This includes, for example, the integration of climate change, low-emission and climate-resilient AFOLU and REDD+ into landscape-level and provincial and regency planning (e.g. provincial development plans, provincial and regency level adaptation action plans), as well as sectoral regulations and plans (e.g. aligning provincial REDD+ policies with national mitigation policies – FOLU Net Sink 2030).
+
+90 The Project will strengthen institutional capacities (e.g. MoEF) and coordination bodies (e.g. Provincial Body on Climate Change, multi-stakeholder forums). The engagement of youth (e.g. IFSA) throughout the project, including within the Provincial Body on Climate Change, will also ensure there is a future generation of capacitated professionals with the tools to scale climate action.
+
+By effectively building institutional capacities
+
+
+---
+*Chunk pages 54–54*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=826 (sys=94, user=732), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 50
+
+## GCF Result Area
+
+### IRMF Indicator
+
+#### Means of Verification (MoV)
+
+- **Baseline**: 
+  - Government sources:
+    - Annual deforestation monitoring by MoEF
+    - Reports from province level monitoring system (reporting of measured ER against province FREL)
+  - Project sources:  
+    - Project M&E system (satellite based and accounting for policy documents and plans)
+    - Mid-term evaluation report with information on CO2eq emission reductions / sequestration
+
+- **Target**: 
+  - 29.6 million tCO2eq per year (based on 2nd FRL West Kalimantan; see Annex 22a)
+  - 3.6 million tCO2eq of avoided emissions and removals as compared to the baseline scenario
+  - 16.05 million tCO2eq of avoided emissions and removals as compared to the baseline scenario
+
+- **Final Target**: 
+  - 43.5 million tCO2eq expected over project lifespan period of 20 years*
+
+* Indicative figure based on simplified linear trend considering the current project effectiveness and an adjusted FRL for future periods, which will be lower when updated every 10 years.
+
+### Core 1: GHG emissions reduced, avoided or removed/sequestered
+
+#### Government sources:
+- Annual deforestation monitoring by MoEF
+- Reports from province level monitoring system (reporting of measured ER against province FREL)
+
+#### Project sources:
+- Project M&E system (satellite based and accounting for policy documents and plans)
+- Mid-term evaluation report with information on CO2eq emission reductions / sequestration
+
+### Core 2: Direct and indirect beneficiaries reached
+
+#### Project M&E; annual project reporting
+- Evaluation reports to have information on adaptation impacts
+
+#### Direct beneficiaries:
+- 0 beneficiaries
+- 200,000 direct beneficiaries (100,000 men; 100,000 women)
+- 680,000 direct beneficiaries (340,000 men; 340,000 women) through:
+  - Social forestry
+  - Conservation agriculture
+  - Climate resilient land use plans
+
+#### Indirect beneficiaries:
+- 4,800,000 indirect beneficiaries (2,400,000 men; 2,400,000 women) through:
+  - Climate resilient land use plans
+  - Adaptation policies
+  - Trainings
+  - Adaptation monitoring
+
+#### Assumptions / Note:
+- The population of all five target regencies will benefit from adaptation measures through climate resilient land use plans; adaptation policies; trainings; and adaptation monitoring.
+- Direct beneficiaries: Numbers are obtained by multiplying the number of targeted villages with the average population of villages according to the regency. The average population numbers per village are taken from the national statistical office (BPS, 2022). The average family size in WK is 5.5.
+- Trainings to strengthen resilience will have an impact on household level.
+
+#### ENSO / El Niño could increase wildfire risk and related emissions.
+
+####ARA1 Most vulnerable people and communities
+
+#### Core 2: Direct and indirect beneficiaries reached
+
+#### Project M&E; annual project reporting
+- Evaluation reports to have information on adaptation impacts
+
+#### Direct beneficiaries:
+- 0 beneficiaries
+- 200,000 direct beneficiaries (100,000 men; 100,000 women)
+- 680,000 direct beneficiaries (340,000 men; 340,000 women) through:
+  - Social forestry
+  - Conservation agriculture
+  - Climate resilient land use plans
+
+#### Indirect beneficiaries:
+- 4,800,000 indirect beneficiaries (2,400,000 men; 2,400,000 women) through:
+  - Climate resilient land use plans
+  - Adaptation policies
+  - Trainings
+  - Adaptation monitoring
+
+#### Assumptions / Note:
+- The population of all five target regencies will benefit from adaptation measures through climate resilient land use plans; adaptation policies; trainings; and adaptation monitoring.
+- Direct beneficiaries: Numbers are obtained by multiplying the number of targeted villages with the average population of villages according to the regency. The average population numbers per village are taken from the national statistical office (BPS, 2022). The average family size in WK is 5.5.
+- Trainings to strengthen resilience will have an impact on household level.
+
+#### ENSO / El Niño could increase wildfire risk and related emissions.
+
+####ARA1 Most vulnerable people and communities
+
+#### Core 2
+
+
+---
+*Chunk pages 55–55*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1001 (sys=94, user=907), max_out=1024, ctx=8192
+---
+
+# E GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 51
+
+## Core 4: Hectares of natural resources brought under improved low-emission and/or climate-resilient management practice
+
+- Long-term forest management plans (RPHJP) elaborated by FMUs; participatory land use plans; Social Forestry licence documents (SK - Surat Keputusan)
+- Project M&E
+- Mid-term evaluation report to have dedicated section on adaptation impacts
+
+### 0 ha under improved management
+
+2,000,000 ha 6,700,000 ha will be under sustainable forest management based on long term forest management plans developed by Forest Management Units.
+
+- The capacity building measures for Forest Management Units will directly improve their services and the quality of long-term forest management plans (RPHJP), which will strengthen sustainable forest management.
+- The promotion of social forestry (pre- and post- license support) will engage local communities in sustainable forest management, contributing to reducing deforestation.
+- As the area under Sustainable Forest Management and under Social Forestry might be overlapping, the latter areas were subtracted from the total area.
+
+##ARA4 Ecosystems and ecosystem services
+
+### Supplementary 4.1: Hectares of terrestrial forest, terrestrial non-forest, freshwater and coastal marine areas brought under resoration and/or improved ecosystems
+
+- Project M&E
+- Local regulations on HCV / HCS areas
+- Updated Peat Hydrological Unit map
+
+### 0 h under restored or improved ecosystems
+
+150,000 ha 530,000 ha of forests and other ecosystems will be improved through the expansion of HCV / HCS areas and the expansion of the peat inventory, which will lead to its protection.
+
+- The creation of wildlife corridors will effectively restore and improve ecosystems in APL areas (forest and non- forest land outside forest estate)
+- The expansion of the peat inventory will be the main input for the update of the Peat Hydrological Unit Map, which indicates peat areas protected by law. Hence, the inventory contributes to the conservation and restoration of peat ecosystems. The same approach was very successful in GIZ's ProPeat Project.
+
+## E.4. GCF Outcome level: Enabling environment (IRMF core indicators 5-8 as applicable)
+
+### Core Indicator Baseline context (description) Rating for current state (baseline) Target scenario (description) How the project will contribute Coverag
+
+#### Core Indicator 5: Degree to which GCF investments contribute to strengthening institutional and regulatory
+
+The Government of Indonesia has established ambitious climate targets for the land use sector that aim to turn the land sector into a net carbon sink (FOLU Net Sink 2030). The provincial Government of WK has already elaborated the provincial plan for achieving their provincial FOLU Net Sink target. However, the institutional capacities and financial resources are currently insufficient to implement low
+
+The regulatory framework at province and regency level including planning documents have integrated climate change mitigation and adaptation harmonizing economic development with WK's ambitious climate and biodiversity agenda, while considering
+
+The project will support the development of policies, planning documents and monitoring systems that strengthen the institutional framework for climate change adaptation and mitigation in the land use sector, including also key considerations for GESI (see Annex 8b). It will also develop Single sub - national area within a country
+
+
+---
+*Chunk pages 56–56*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=981 (sys=94, user=887), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 52
+
+## Frameworks for low emission climate-resilient development pathways in a country-driven manner
+
+This plan. The subnational forest administration at province, regency, and FMU level needs to be strengthened to realize the targets outlined in the plan. The same is true for the provincial REDD+ Task Force (Pokja REDD+). While there was more progress on mitigation policies, regulations on adaptation and gender mainstreaming are still missing. In addition, there is a lack of monitoring systems for mitigation and adaptation that hinders monitoring and evaluation of climate action.
+
+Regarding low-emission policies, there is a lack of clarity regarding the role and duties of FMUs after the Job Creation Law (No. 11 of 2020 on Job Creation). This also affects the unclear working relationship between FMUs and the provincial forestry service, UPTs, and other stakeholders. Policies, protocols, and standards need to be developed or updated to reflect the need to build the needed capacity for GHG mitigation in the forestry sector.
+
+## The differentiated impacts of climate change on men and women
+
+The relevant institutions for the land sector have the capacity and knowledge to implement gender-responsive climate change and environmental regulations and policies. These institutions are informed by operational monitoring systems that improve decision making.
+
+## The necessary capacities among government officials and local communities for improved climate resilient and low emission land stewardship
+
+For more information see FS Chapter 5.3
+
+### Core indicator 7: Degree to which GCF Investments contribute to market development/transformation at the sectoral, local, or national level
+
+Poverty and a lack of alternative livelihood opportunities (e.g. off-farm employment) have resulted in a high dependence on agriculture and natural resources for household income in the project area. Smallholders lack capacities and financial means to adopt sustainable business models and access markets for certified products. Price premiums for sustainable production are not yet the norm.
+
+Further engagement of the private sector to support the development of sustainable value chains is required. While examples for sustainable production exist, the minority of companies is currently certified (e.g. ISPO or RSPO for palm oil or other). At the same time, regulatory measures from consumer countries are demanding higher transparency and traceability of forest risk products, which risks the exclusion of smallholders from the value chain.
+
+### Medium
+
+The increasing national and international demand in sustainable soft commodities (including NTFPs) is matched with local certified products from WK and creates incentives for forest protection. The transparency and traceability of soft commodities is improved to access market segments with high sustainability requirements. Strong participation and engagement of the private sector triggers a competition for accessing price premiums.
+
+Trainings on Good Agricultural Practices and agroforestry build capacities on sustainable agriculture and social forestry across stakeholders. Tools and procedures are developed to increase transparency and traceability of the value chain of key commodities.
+
+### Multi-stakeholder coordination platforms at the province level will be established or strengthened to engage the private sector in sustainable sourcing and production.
+
+### The certification of key commodities will be promoted at regency level through a jurisdictional approach.
+
+For more information see FS Chapter 5.3 and 5.4
+
+## Single sub-national area within a country
+
+### E.5. Project/programme specific indicators (project outcomes and outputs)
+
+#### Project/programme results (outcomes/ outputs)
+
+#### Project/programme specific Indicator
+
+##### Means of Verification (MoV) Baseline Target Assumptions / Note Mid-term Final
+
+---
+
+
+---
+*Chunk pages 57–57*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=876 (sys=94, user=782), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 53
+
+## Outcome 1: Institutional regulatory frameworks able to attract investments into sustainable, and climate resilient agricultural and agroforestry value chains are strengthened
+
+### A Provincial Body on Climate Change (PBCC) is legally established
+
+Evidence of legal establishment and approved ToR of the PBCC
+
+- 0 0 1
+
+### A permanent institutional arrangement of the Provincial Body on Climate Change (PBCC) with a strong legal foundation strengthens the authority of the institution and allows mainstreaming of climate change adaptation and mitigation into all relevant sectors and attract public and private finance in the province to address climate change.
+
+## Output 1.1: Strengthening institutional regulatory frameworks for sustainable and climate-resilient landscape management
+
+### Number (#) of villages eligible to receive PROKLIM status
+
+- Documentation for PROKLIM application
+- Project M&E
+
+- 5 new PROKLIM villages
+- 50 new PROKLIM villages
+
+Desa Proklim (the "Climate Change Village") as a national but village-led programme to respond to climate change at the local level will be further promoted.
+
+### Number (#) regulatory frameworks established or revised to support the implementation of REDD+ and FOLU Net Sink 2030
+
+- Project M&E
+- Documentation of revised or new regulatory framework documents
+
+- 0 1 3 Province SRAP and FRL need to be updated and a transparent provincial MRV system needs to be established and aligned with the national monitoring system.
+
+### Number (#) of Climate Adaptation Actions Plans (RAK API/RAP API) legalized
+
+- Project M&E
+- Subnational regulations enacted by governor / bupati
+
+- 0 2 6 (1 provincial adaptation action plan - RAP API; 5 regency adaptation action plan - RAK API)
+
+The governor and bupatis (head of regency) show political will to comply with the requirement to enact subnational mitigation and adaptation plans as mandated by Presidential Regulation 98 / 2021
+
+## Output 1.2: Developed land use plans which consider climate change and identified HCV/HCS areas
+
+### Number (#) of subnational regulations on the protection of HCV / HCS areas
+
+- Provincial and regency decrees on HCV / HCS areas
+
+- 0 2 6 (one governor and 5 regency decrees on HCV / HCS areas)
+
+The subnational governments (i.e. governor and bupati show political will to establish HCV / HCS areas on non-state forest lands)
+
+### Extent (ha) of HCV/HCS areas accurately identified and integrated into land use plans
+
+- Approved participatory land use plans that feature HCV / HCS areas
+- HCV / HCS area documents
+
+- 0 30,000 ha 100,000 ha of forested land identified, integrated into land use plans and
+
+Application for the HCV / HCS areas on non-state forest land will be legally endorsed.
+
+Concessionaries agree to protect a part of their
+
+
+---
+*Chunk pages 58–58*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=786 (sys=94, user=692), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 54
+
+## Output 1.3: Established and implemented dedicated grant mechanism provides adequate financing and meaningful engagement for IPs involved in climate-resilient, low-emission forest and landscape management and further financing mechanisms have been assessed
+
+Roadmap for a provincial financing mechanism developed.
+
+- Project monitoring and evaluation reports
+- Documentation of relevant supporting documents of the roadmap
+
+0 0 1 The roadmap will comprise several supporting documents including draft regulations for the official establishment of the provincial financing mechanism, an assessment of potential financing sources.
+
+## Number (#) of call for proposals under the dedicated IP grant mechanism
+
+Call for proposal documentation:
+
+- Implementation and monitoring reports
+- Closure reports
+
+0 2 5 Five calls for proposals published and implemented over a time span of approximately five years, along with detailed documentation for each proposal supported
+
+## Outcome 2: Vulnerable local communities’ climate resilience and capacities to engage in sustainable commodity production and social forestry are increased
+
+Number (#) of smallholder farmers practicing climate resilient agriculture
+
+- Field survey results
+- Project M&E
+
+0 4,000 (of which at least 1,200 are women)
+
+10,000 (of which at least 3,200 are women)
+
+10,000 smallholder farmers will adopt new climate resilient, low emission agricultural and agroforestry practices.
+
+## Output 2.1: Benefitting local communities produce sustainable agricultural and agroforestry commodities, accessing new markets for sustainable products, while an M&E framework is established that measures environmental compliance and ensures the scalability as well as replicability of sustainable practices
+
+Number (#) of farmer organizations supported to improve market access for sustainably produced, climate resilient, low-emission agricultural commodities
+
+- Field survey results
+- Project M&E
+
+0 5 25 A market for sustainably produced agricultural products exists.
+
+Area (ha) under climate resilient agriculture (e.g. agroforestry or climate smart agriculture)
+
+- Project M&E; mid-term and end of the project evaluation   
+- Annual monitoring reports
+
+0 7,500 ha 20,000 ha Smallholders in WK cultivate on average 2,5 ha. We assume that around 80% of the smallholder agricultural area will be under climate resilient agriculture after capacity building measures (80% of 25.000ha).
+
+There is an incentive for smallholders to get product certification due to premium prices paid by buyers.
+
+
+---
+*Chunk pages 59–59*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=854 (sys=94, user=760), max_out=1024, ctx=8192
+---
+
+# E.6. Project/programme activities and deliverables
+
+## Activities Description Sub-activities Deliverables
+
+| Activity | Description | Sub-activities | Deliverables |
+|----------|-------------|----------------|--------------|
+| Output 3.1 | Capacitated FMUs and private sector actors incentivized to engage in implementing climate informed protection and sustainable management of forest and peat ecosystems | • Project M&E<br>• Documentation of trainings (attendance sheets, materials) | 0 5 17 FMUs in WK have limited capacities to comply with their responsibilities in forest administration and sustainable forest management. |
+| Output 3.2 | Supported Local Communities able to receive land use rights and implement different social forestry schemes | • Baseline and endline survey<br>• Project M&E<br>• Mid-term review and final evaluation report<br>• Social Forestry licenses (SK - Surat Keputusan) for KTHs (Forest Farmer Groups) and KUPS (Social Forestry Business Units) | 0 30 120 Capacity building, pre-license facilitation support and post-license business development support will enable forest farmer groups and social forestry business units to grow economically and manage forest resources sustainably. |
+| Area (ha) of new and strengthened community forest licenses | • Social Forestry licenses (SK - Surat Keputusan) for KTHs (Forest Farmer Groups) and KUPS (Social Forestry Business Units) | 0 60,000 ha 200,000 ha Local communities see social forestry as a desirable endeavor | Government agencies process and release social forestry permits and continue to provide financial support through government funds. |
+| Area (ha) of degraded peatland and mangrove rehabilitated and restored to protect and enhance carbon stocks | • Peat and mangrove restoration plan including feasibility study<br>• Annual monitoring reports on implementation of the restoration plan | 0 3,000 ha 10,000 ha Communities are willing to engage in peat and mangrove restoration. There are no land use conflicts on the degraded areas to be restored. | Project/programme co-benefit indicators |
+| Co-benefit 1: Improved food security and increased income | • Food-security index score increased<br>• Poverty-gap index decreased<br>• Project M&E | Baseline will be assessed at project start<br>Food-security index = baseline<br>Poverty-gap index = baseline<br>Food-security index > baseline<br>Poverty-gap index < baseline<br>Food-security index (IKP) is available online.<br>Index Kedalaman Kemiskinan (P1) and information will be available sex-disaggregated | |
+| Co-benefit 2: Enhanced conservation of biodiversity and water resources | • Additional peat and forest area (ha) under protection<br>• Project M&E | 0 150,000 ha 500,000 ha Mapped peat area and approved HCV/HCS area legally protected | |
+
+---
+
+**Note:** The original page numbers are preserved as requested. Page 59 is referenced in the text above.
+
+
+---
+*Chunk pages 60–60*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1322 (sys=94, user=1228), max_out=1024, ctx=8192
+---
+
+# Activity 1.1.1: Inclusion of climate change adaptation in mid-term, spatial, and other regional development plans
+
+This activity focuses on enhancing and developing policies related to the adaptation to climate change. Capacity building measures will support the development of policies and ensure the adaptation mainstreaming in development or land use plans up to the village level. To ensure the implementation of adaptation measures, tools like a multistakeholder forums or the further enhancement of the existing early disaster warning system and the monitoring and reporting of such adaptation measures will be supported.
+
+- **Sub-activity 1.1.1.1:** Develop adaptation policies at provincial level in line with national adaptation policies.
+- **Sub-activity 1.1.1.2:** Build capacity and support implementation related to climate change adaptation for government agencies at provincial, Regency and village level.
+- **Sub-activity 1.1.1.3:** Develop tools for the implementation of adaptation.
+
+## Indicators
+
+1.1.1.1:
+(1) Provincial Action Plan on Climate Change Adaptation (RAP API) and 5 Regency Action Plans on Climate Change (RAK API) developed and legalized.
+
+1.1.1.2:
+(2) Up to 50 villages in five target Regencies received PROKLIM status and climate-resilience land use plans developed in these villages.
+
+1.1.1.3:
+(3) An adaptation working group developed and attached to the PBCC and legalized.
+
+# Activity 1.1.2: Strengthening mitigation actions through improved REDD+ implementation towards achievement of sub-national FOLU Net Sink 2030 targets
+
+This activity is targeting the mitigation side of enabling conditions and institutional frameworks for sustainable and climate-resilient forest and landscape management of WK. It focuses on strengthening the implementation of existing provincial mitigation policies of REDD+ and FOLU Net Sink 2030.
+
+- **Sub-activity 1.1.2.1:** Align the provincial REDD+ policies with the current national mitigation policies and regulations.
+- **Sub-activity 1.1.2.2:** Include mitigation policies into provincial development plans.
+- **Sub-activity 1.1.2.3:** Support implementation of enabling conditions for mitigation activities.
+- **Sub-activity 1.1.2.4:** Monitor and report on mitigation activities.
+
+## Indicators
+
+1.1.2.1:
+(1) The provincial REDD+ documents (SRAP – Provincial Strategic Action Plan and FRL – Forest Reference Level) are revised  
+
+1.1.2.2.:
+(2) REDD+ and FOLU Net Sink targets, programs and activities are set in the provincial development plans  
+
+1.1.2.3:
+(3) At least 3 regulatory frameworks are established to support the implementation of REDD+ and FOLU Net Sink 2030  
+
+(4) up to 420,000 ha of peat areas mapped for the national inventory.
+
+1.1.2.4:
+(5) Provincial monitoring system is developed and aligned with the national monitoring system.
+
+(6) One greenhouse gas / and forest monitoring report (GHG / MRV) developed annually (y2-7, 6 in total)
+
+# Activity 1.1.3: Strengthening the institutional framework for coordination of mitigation and adaptation activities across relevant stakeholders
+
+The activity seeks to re-shape the provincial governance architecture, including the REDD+ Task Force as Provincial Body on Climate Change and its legal framework.
+
+- **Sub-activity 1.1.3.1:** Enhance institutional arrangements for the Provincial Body on Climate Change, including stakeholder consultation and amendment of the supporting legal framework.
+- **Sub-activity 1.1.3.2:** Support of activities of provincial body for climate change with capacity building measures, absorption of operational costs and outreach.
+
+## Indicators
+
+1.1.3.1:
+(1) Amended regulation of REDD+ Task Force endorsed by Governor.
+
+(2) Operational procedures developed for the new structure of a Provincial Body on Climate Change.
+
+1.1.3.2:
+(3) Up to 10 professional staff hired for daily management of Provincial Body on Climate Change.
+
+# Activity 1.2.1: Strengthening the legal and regulatory framework and implementation of High
+
+This activity is designed to protect remnant forests on non-state forest land (where forest conversion to non-forest is legal) through Regency's and Provincial's Regulations.
+
+- **Sub-activity 1.2.1.1:** Identify areas and develop management plans for High Biodiversity and Carbon Areas within non-state forest land across West Kalimantan Province.
+
+## Indicators
+
+1.2.1.1:
+(1) Five Regencies Heads' decisions (SK Bupati) and one Provincial Governor's decision (SK Gubernur
+
+
+---
+*Chunk pages 61–61*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1325 (sys=94, user=1231), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 57
+
+## Biodiversity and Carbon Areas Management Plan (i.e., HCV/HCS) on non-state forest land
+
+This activity aims to ensure:  
+(i) identification of High Biodiversity and Carbon Areas;  
+(ii) stakeholders legal standing on protecting and sustainable management of the areas by ensuring the process are procedural, gain support from the government (through Governor’s and Bupati’s Decisions) and secure support from the parliament (through Regency’s and Provincial’s Regulations) to enable permanence impact in regulatory framework;  
+(iii) increased capacities of stakeholders in implementing the management plan for protecting and sustainable management of the High Biodiversity and Carbon Areas for mitigating and adapting to the changing climate;  
+(iv) good governance for the implementation, and monitoring of the management plan  
+
+### Sub-activity 1.2.1.2: Develop and strengthen regulations at provincial and regency levels, to govern the protection and sustainable management of the High Biodiversity and Carbon Areas.
+
+### Sub-activity 1.2.1.3: Increase stakeholders’ capacities (i.e. companies, communities, provincial and regency governments) in implementing the management plan for High Biodiversity and Carbon Areas within non-state forest land.
+
+### Sub-activity 1.2.1.4: Support and monitor the management plan implementation for High Biodiversity and Carbon Areas.
+
+### Sub-activity 1.2.1.5: Enable Jurisdictional Approach (JA) certification for one Regency as a replicable model to other regencies in West Kalimantan Province
+
+(2) 100,000 ha of High Biodiversity and Carbon Areas designated as OECM (Other Effective Conservation Measure) under the Indonesia’s Government terminology of Wildlife Corridor (Koridor Hidupan Liar, KHL) and/or High Conservation Areas (Areal Bernilai Konservasi Tinggi, ABKT) across WK
+
+1.2.1.3:  
+(3) BMPs, SOPs, and safeguard framework guidelines on high biodiversity and carbon areas management plan implementation for stakeholders (i.e., communities and companies) developed.
+
+1.2.1.4:  
+(4) Commitment letters from at least five companies to financially support the activities set under the management plan, beyond the project time.
+
+1.2.1.5:  
+(5) A landscape Jurisdictional Approach (JA) assessment is conducted and RSPO JA requirements (including internal controlling system) are fulfilled, as a prerequisite for RSPO JA certification
+
+## Activity 1.3.1: Developing sustainable financial mechanisms to ensure meaningful engagement of IPs and support climate-resilient and low emission forest and landscape management in West Kalimantan
+
+The activity seeks to emphasize and guarantee the inclusion and active participation of Indigenous Peoples (IPs), recognizing their vital role in decision-making processes and promoting their engagement in sustainable development efforts. Additionally, this activity will improve the project portfolios of WK as the funding will allow the province to increase the quantity, quality and diversity of initiatives and activities.
+
+### Sub-activity 1.3.1.1: Implement an on-granting mechanism focusing on Indigenous Peoples (IPs) in West Kalimantan
+
+### Sub-activity 1.3.1.2: Elaborate strategies, policies, and procedures for one or several financing mechanisms for climate resilient agriculture and forestry
+
+### Sub-activity 1.3.1.3: Implementation of the Environmental and Social Management Plan (ESMP), Indigenous Peoples Plan (IPP) and Gender Action Plan (GAP) ensuring compliance with FPIC and safeguards
+
+1.3.1.1:  
+(1) 5 calls for proposals published and implemented  
+
+1.3.1.2:  
+(2) A roadmap on the design option of a potential provincial financing mechanism developed  
+
+1.3.1.3:  
+(3) ESS, Gender and IPP implemented  
+
+## Activity 2.1.1: Scaling up sustainable land and forest-based investment business model for West Kalimantan
+
+Activity 2.1.1 provides support in designing and expanding a sustainable land and forest-based business model, to overcome barriers that impede the widespread adoption of sustainable agricultural practices. Through the provision of support in designing and expanding a sustainable land and forest-based business model, this activity aims to facilitate and promote the engagement of investors, developers, and companies in purchasing from and investing in sustainable supply chains.
+
+### Sub-activity 2.1.1.1: Design of a sustainable land and forest-based business model
+
+2.1.1.1:  
+(1) At least 1 sustainable land and forest-based business model explored  
+
+## Activity 2.1.2: Implementing and up scaling the adoption of
+
+The activity promotes the implementation of measures to reduce the drivers of deforestation
+
+
+---
+*Chunk pages 62–62*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1195 (sys=94, user=1101), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 58
+
+## Proven approaches for reducing emissions and enhancing the sustainability and climate resilience of smallholders in key commodity supply chains (incl. agroforestry).
+
+### Sub-activity 2.1.2.2: Scale climate-resilient commodity and agroforestry with improved market access.
+
+- (1) 25,000 ha of agricultural and forest land (farmland of direct beneficiaries) spatially analysed;
+- (2) Development of one specific climate resilient and agroforestry model per commodity;
+- (3) Training program designed and implemented for approximately 10,000 local farmers (at least 3,200 are women).
+
+### Sub-activity 2.1.2.3: Digital systems for value chain traceability and certification established, and improved access to services
+
+- (1) 10,000 local farmers included (at least 3,200 are women).
+- (2) 5 local marketing support units and SOPs for agricultural products to strengthen local trade of sustainably produced commodities established.
+- (3) up to 25 farmer organizations are provided with technical and legal assistance.
+
+### Activity 2.1.3: Enhancing multi-stakeholder dialogue and platform for low-emission and climate-resilient agriculture and private sector investment
+
+This activity seeks to establish multi-stakeholder Forum platforms (MSFs) on Regency level to promote investments into low-emission and climate-resilient agriculture of the Regencies' private sector.
+
+#### Sub-activity 2.1.3.1: Establish a commodity-based platform at Regency level and engage with provincial, national and international MSPs to promote dialogue on sustainable forestry & agriculture practices, investment into sustainable supply chains and sustainable sourcing practices
+
+- (1) One action plan for collaboration between the private and public sector in sustainable agriculture developed.
+- (2) 10 multistakeholder forums for sustainable commodities established on regency level (at least 15% of the participants are women).
+- (3) up to 10 public private partnerships (PPP) for sustainable sourcing are established.
+
+### Activity 2.1.4: Grass-greening Agricultural Smallholder Supply Chains in Kapuas Hulu
+
+This activity promotes sustainable agriculture based on a jurisdictional approach in the Kapuas Hulu biosphere reserve, which combines improved agricultural production methods with participatory land use planning. The integrated cultivation methods contribute to the build-up of organic soil matter, the binding of carbon, and the diversification of crops and field structures.
+
+#### Sub-activity 2.1.4.1: Promotion of Sustainable Agricultural Smallholder Supply Chains in Kapuas Hulu
+
+- (1) Training of 1,100 smallholder farmers and 100 agricultural extension workers in climate resilient farming conducted (at least 330 are women).
+- (2) 250 independent smallholder palm oil farms have been ISPO and/or RSPO certified.
+
+### Activity 2.1.5: Improving sustainable landscape management and smallholder palm oil market inclusion (NISCOPS)
+
+This activity seeks to achieve 8,000 ha of SHF oil-palm plantations to be under climate-adaptive practices in Indonesia by the end of the project
+
+#### Sub-activity 2.1.5.1a: Sustainable MSP’s delivering on their commitments in key forest rich landscapes.
+
+#### Sub-activity 2.1.5.1b: Investment and sourcing secured from partner companies in sustainable agriculture and forest restoration.
+
+#### Sub-activity 2.1.5.2: Farmer empowerment and training to increase yields, climate resilience and gender inclusivity.
+
+#### Sub-activity 2.1.5.3: Dialogue, brokering and de-risking of SH sourcing by international companies, in Europe and Asia.
+
+##### 2.1.5.1:
+
+- (1) Partnerships with a least 2 (international) supply chain actors established.
+
+##### 2.1.5.2:
+
+- (2) up to 24,000 smallholder farmers trained on GAP, CSA, ISPO-RSPO, and agroforestry business models (at least 7,200 are women).
+
+##### 2.1.5.3:
+
+- (3) Partnerships with at least 2 mills established.
+
+##### 2.1.5.4:
+
+- (4) traceability tool developed and functioning.
+
+
+---
+*Chunk pages 63–63*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1190 (sys=94, user=1096), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 59
+
+## Activity 3.1.1: Supporting Forest Management Units (FMU) in the development and implementation of climate-informed forest management plans, including fire management
+
+This activity focuses on building capacities in FMU organizations to ensure the sustainable management of 6.5 Mio. Ha in FMUs.
+
+### Sub-activity 3.1.1.1: Develop climate-informed management plans of FMU units.
+### Sub-activity 3.1.1.2: Support FMU Organizations in 5 target Regencies to receive the status of “Effective FMU Organization”.
+### Sub-activity 3.1.1.3: Build capacity for FMUs to implement climate-informed RPHJP and RPHJPd.
+### Sub-activity 3.1.1.4: Support FMU Organizations in 5 target Regencies in implementing climate-informed RPHJP and RPHJPd through the development of information systems and enhanced forest management practices.
+
+#### 3.1.1.1:
+(1) 34 revised FMUs management plans (RPHJP) with climate informed for management of production and protection areas and implementation of adaptation and mitigation activities developed.
+
+#### 3.1.1.2:
+(2) 9 Effective FMUs within 5 target regencies established.
+
+#### 3.1.1.3:
+(3) 17 FMUs staff from all regencies trained on technical and organizational topics of forest management.
+(4) 50 staff of DLHK and FMUs licensed as civil servant investigators (at least 15 are women).
+(5) FMUs forest patrol system integrated with SMART Patrol
+
+#### 3.1.1.4:
+(6) At least, 20 agroforestry plots developed in ten FMUs within FMU managed areas.
+(7) At least, 5,000 seeds per FMU/year (total 250,000 seeds) planted in non-state forest areas adjacent to FMU managed areas.
+(8) At least, 20 business units of SF permit are registered in OSS system and non-tax revenue is paid annually.
+
+## Activity 3.2.1: Advancing social forestry implementation including building awareness of local communities of climate risks and risk-reduction practices
+
+This activity aims at developing implementable activities on the ground that will restore degraded ecosystem, increase stakeholder capacities in adapting to the changing climate, and ensure access to different finance sources that can be used to support the long-term operational activities by the community groups.
+
+### Sub-activity 3.2.1.1: Develop and implement SF management plans and support new SF permit proposals for local communities.
+### Sub-activity 3.2.1.2: Develop and strengthen SF business unit (KUPS) to establish, improve, and escalate market, supply chain, and value-added communities' products, including the creation of KUPS models and capital supports.
+### Sub-activity 3.2.1.3: Build capacity for SF permit holders.
+### Sub-activity 3.2.1.4: Conduct forest restoration and rehabilitation of mangrove and peat forest ecosystems.
+### Sub-activity 3.2.1.5: Develop climate-resilient aquaculture infrastructure for coastal communities.
+### Sub-activity 3.2.1.6: Accelerate and enable access to potential financial
+
+### 3.2.1.1:
+(1) 100,000 ha of forest are secured for local communities under the social forestry scheme
+(2) 100,000 ha of social forests have an approved management plan
+(3) 10,000 ha of degraded peatlands and mangroves are rehabilitated and restored
+
+### 3.2.1.2:
+(4) 100 SF business unit (KUPS) are established with investable business plans
+
+### 3.2.1.3
+(5) 600 people ( at least 300 are women) of local communities are trained in designing and operating KUPS
+
+### 3.2.1.4:
+(6) At least ten peat dams will be established and monitored.
+
+### 3.2.1.5:
+(7) One sustainable aquaculture pond is established as community adaptation strategy demonstration plot
+
+### 3.2.1.6:
+
+
+---
+*Chunk pages 64–64*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=908 (sys=94, user=814), max_out=1024, ctx=8192
+---
+
+# E.7. Monitoring, reporting and evaluation arrangements (max. 500 words, approximately 1 page)
+
+## E.7.1. Monitoring, reporting and evaluation arrangements
+
+190. Monitoring, reporting and evaluation arrangements (in addition to the ESMP, IPP and GAP) will comply with the relevant GCF policies, as stipulated in the AMA, FAA and project-related Financing Agreements and Implementation Agreements with Executing Entities and Implementation Partners, which EEs will extend to sub-grantees. The project will apply a customized results-based monitoring and evaluation (M&E) system. The M&E system will track project inputs, activities and sub-activities. Outputs and impact, as well as associated financial flows across all outputs in all project provinces and regencies. This system will be based on:
+
+- GIZ Standard Operating Procedures ("GIZ's evaluation policy – principles, guidelines and requirements")
+- Monitoring and evaluation plan (Annex 11)
+- Integrated results management framework and logical framework
+- Implementation timetable (Annex 5)
+- Requirements of GCF's Annual Performance Report
+- Local and national monitoring systems
+- Procedures and requirements of project partners and stakeholders in WK and at national level
+
+191. The oversight for M&E and reporting lies with the GIZ GCF AE. On the other hand, GIZ EE will ensure that appropriate monitoring and evaluation procedures are implemented. Additionally, BPDLH as EE will supervise implementation and prepare periodic reports on the status of disbursements to government agencies and through the dedicated IP grant mechanism, as input to the project M&E. The information collected at the local level will be integrated into the monitoring systems of the different institutions at the national level, in order to improve long-term national monitoring and evaluation systems from the different government entities. The project management committee (PMC) will be the body responsible for leading the preparation, monitoring and coordination of the Annual Operational Plans and the annual project budget, ensuring and coordinating the functioning of the project's monitoring and evaluation system, and discussing monitoring processes and results.
+
+## E.7.2. Recruitment of M&E staff
+
+192. Immediately when the project commences, GIZ's GCF AE will make available one expert to oversee and coordinate the project M&E and reporting routines. As soon as GCF project proceeds become available in WK, the project will recruit M&E specialists. The specialist will work closely together and support the
+
+
+---
+*Chunk pages 65–65*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=911 (sys=94, user=817), max_out=1024, ctx=8192
+---
+
+# E.7.3. Independent monitoring and evaluation studies
+
+193. Mid-term and final evaluation  
+GIZ AE will initiate a mid-term evaluation and a final evaluation of the project. GIZ evaluations are carried out by GIZ’s independent evaluation unit. This unit is steered by a corporate unit that is separate from operational business and reports directly to the Management Board. Moreover, evaluations are conducted with the support of external evaluators. GIZ applies the ‘Evaluation criteria for German bilateral development cooperation’ (2006, revised 2020) on a standard basis in project evaluations. These are based on the six evaluation criteria agreed by the Development Assistance Committee (DAC) of the Organisation for Economic Co-operation and Development (OECD): relevance, effectiveness, efficiency, overarching development results (impact), coherence and sustainability. Additionally to the six OECD DAC evaluation criteria, the following five GCF criteria will be evaluated: Gender equity, country ownership, innovativeness in results areas, replication and scalability as well as unexpected results.
+
+194. GCF’s Evaluation Principle of Impartial, objective and unbiased and relevance, use and participation: All provisions for upholding the GCF evaluation principles described in Chapter V (a-d) of the Evaluation Policy are followed (see DAC standards and DeGEval evaluation standards). In line with the UNEG norms, evaluation team members selected by GIZ must not be directly responsible for the policy setting, design or management of an evaluation project. An Interim Independent Evaluation Report and a Final Independent Evaluation Report will be submitted to the GCF as per timeline agreed in the funded activity agreement (FAA).
+
+195. GCF’s Evaluation Principle of Credibility and Robustness: As a matter of principle, GIZ takes care to use an appropriate combination of quantitative and qualitative methods of empirical social research in evaluations. The mix of methods is adapted to the object of the evaluation and the evaluation questions. To ensure robust evidence, GIZ uses a theory-based approach as a minimum standard for its central project evaluations. The contribution analysis has proven to be a suitable design. The aim of contribution analyses is to collect empirical evidence on whether and to what extent contributions to observed changes can be associated with a project. Furthermore, the analyses should increase the understanding and knowledge of what works, what does not work and why.
+
+196. Projects will be rated based on the six OECD/DAC and on the GCF evaluation criteria. Each of the OECD/DAC and GCF criteria is rated on a scale of 1 to 100. Using a points system serve to increase the transparency of ratings, whilst enabling better comparability between individual projects.
+
+197. Results from the mid-term evaluation should be reflected within the project design, to influence upscaling, and improve overall project implementation (adaptive management).
+
+# E.7.4. Data collection and frequency
+
+198. GIZ will coordinate data collection for implemented activities through responsible executing partner in charge of leading the monitoring activities at local level. The PMU will supervise and guide the monitoring and evaluation. The PMU will aggregate monitoring reports based on local partner inputs at least every six months and make a summary report available to GIZ’s AE unit at head office, again at least every six months.
+
+
+---
+*Chunk pages 66–66*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1027 (sys=94, user=933), max_out=1024, ctx=8192
+---
+
+# F.1. Risk factors and mitigations measures (max. 3 pages)
+
+## Selected Risk Factor 1: Changes in political circumstances due to regime and bureaucracy changes at the national and provincial levels
+
+### Category: Governance  
+**Probability:** High  
+**Impact:** Medium  
+
+### Description  
+Political changes during project implementation and beyond may affect the paradigm shift towards and commitments to sustainable development.
+
+### Mitigation Measure(s)  
+- The project has been designed in close coordination with the government of Indonesia and the provincial government of WK and is aligned with key national development strategies and climate change policies, including short-, medium- and long-term strategies.  
+- In addition, activities in Component 1 will support the strengthening of the institutional framework, where activities have been designed to adapt to any political circumstance, and support mainstreaming of climate risk and vulnerability and climate-resilient and low-emission AFOLU throughout policies, addressing gaps and inconsistencies in the policy and institutional framework.
+
+---
+
+## Selected Risk Factor 2: Gaps in coordination between key ministries and agencies
+
+### Category: Governance  
+**Probability:** High  
+**Impact:** Medium  
+
+### Description  
+Misaligned coordination or different agendas of ministries and agencies could limit the effectiveness of the project to meet its goals, as the project’s landscape level approach requires cross-sectoral coordination.
+
+### Mitigation Measure(s)  
+- The project supports inter-sectoral coordination through its cooperation with the provincial government, including the strengthening of specific task forces/committees in Component 1 (e.g. REDD+ Task Force to become the provincial body on climate change) to promote coordinated and holistic planning at the landscape level. Such support will be further institutionalized, and policies revised to enable more coordinated planning for climate-resilient and low-emission AFOLU at the landscape level.  
+- Consultations with public and private actors across sectors have been conducted during the project development process, and their feedback informed the project design.
+
+---
+
+## Selected Risk Factor 3: Unclear or complex land tenure and/ or land use rights could lead to conflicts
+
+### Category: Governance  
+**Probability:** High  
+**Impact:** Medium  
+
+### Description  
+Land tenure and land use rights are often complex and unclear (e.g. overlapping concessions with protected areas or customary land) could result in land grabbing, land use conflicts or expansion of agri-business or forest plantations into protected areas or customary areas.
+
+### Mitigation Measure(s)  
+- Participatory land use planning processes under sub-activity 1.1.1.2 will help clarify land tenure and land use rights. Support to strengthen the regulatory framework and institutional capacities under Component 1 will further help to mitigate this risk.  
+- The project will establish conflict resolution desks in each of the regencies of the intervention area, based on the successful example of Kapuas Hulu (see IPP - Annex 6c). These desks will support local communities in solving land conflicts in collaboration with government entities and other stakeholders.  
+- Components 2 and 3 will develop approaches that provide opportunities for businesses and local communities to benefit from sustainable land- and forest-based investments.  
+- The project will ensure FPIC procedures are closely followed during project planning and implementation. The project’s ESIA and ESMP further describe the project’s complaints and grievance redress mechanism (GRM), while ensuring both to be accessible and culturally appropriate.  
+- The dedicated small grants mechanism for Indigenous Peoples is supporting clarifying land tenure, addressing Gender and Adat rights and conflicts.
+
+---
+
+## Selected Risk Factor 4: Human resources and capacity to support project implementation are insufficient
+
+### Category: Technical and operational  
+**Probability:** High  
+**Impact:** Low  
+
+### Description  
+High turnover, and insufficient capacities and human resources could limit the efficiency and effectiveness of project implementation and monitoring.
+
+### Mitigation Measure(s)  
+(No specific mitigation measures provided in this section.)
+
+
+---
+*Chunk pages 67–67*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1257 (sys=94, user=1163), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 63
+
+## Selected Risk Factor 5: Misuse of Funds
+
+### Category: Governance  
+**Probability:** Medium  
+**Impact:** Medium  
+
+### Description  
+Corruption or the misuse of funds are a potential risk to resources available under this project.
+
+### Mitigation Measure(s)  
+- Enhanced due diligence process has been carried out with BPDLH and under the project funding will be provided to hire further staff at BPDLH that can support transparent financial management at different levels to enhance accountability and transparency.
+- A new financial mechanism (IP on-granting mechanism) will be developed to directly channel funds to the local level in a transparent manner. This will decentralize decision making to the local level, preventing corruption on higher levels, and making the distribution of financial benefits more inclusive.
+- Monitoring of the use of funding will be regularly conducted to recipients or sub-recipients of award funds. Recipients of funds need to regularly report on financial disbursements and progress of implemented activities, proving transparency and accountability.
+- Rigorous GIZ international financial management rules and regulations and procedures will be used for the project.
+- Capacity development for civil servants in transparency and accountability
+- Synergies will be sought with the ongoing GIZ project “Corruption Prevention in the Forestry Sector” 92, which is closely working with the national corruption prevention agency (KPK). Training modules for corruption prevention trainings with FMUs, private sector, and local communities will be shared, building on the knowledge and experiences of this project.
+
+---
+
+## Selected Risk Factor 6: Low demand for sustainably produced commodities on (global) markets or market fluctuations affect the financial viability of investments and sustainable practices
+
+### Category: Technical and operational  
+**Probability:** High  
+**Impact:** Medium  
+
+### Description  
+Investments in sustainably produced commodities might not occur due to a lack of demand on global markets or. Also, different investments and financiers ask for different set of requirements. Without sufficient capacity and a good strategy, the project may not be able to leverage much needed investment to scale up the impact. At local level, the lack of (global) demand for sustainable agricultural commodities, and resulting low prices, reduces the financial viability of sustainable practices.
+
+### Mitigation Measure(s)  
+- Under Component 2 a robust strategy has been developed to engage the private sector (financiers, mills, traders, growers, concessions, smallholders, etc).
+- The project will benefit from the knowledge and the capacity from previous GIZ projects and their experiences with private sector cooperations (e.g. GIZ FORCLIME that is in active cooperation with the company ‘continental’ for rubber production).
+- Prepare investment pipelines development toolkit as part of Activity 1.3.1.
+- Traceability of sustainably produced commodities will improve access to premium markets for local communities.
+- Match making between producers and sellers through dialogue platforms (activity 2.1.3) will ensure price stability and market access for sustainably produced agricultural commodities.
+- Product diversification through agroforestry will reduce the exposure of farmers to price volatility and market fluctuations (activities 2.1.3 and 3.2.1).
+
+---
+
+## Selected Risk Factor 7: Natural hazards slow-down or halt project implementation
+
+### Category: Other  
+**Probability:** Medium  
+**Impact:** Medium  
+
+### Description  
+Floods, storms, landslides or forest and peat fires have been significant natural hazards in the past and can even be aggravated by climate change.
+
+### Mitigation Measure(s)  
+- Climate-risk and vulnerability assessments, including the risk of climate-related natural hazards (e.g. floods), have been conducted at the landscape level and within the project area to facilitate climate-informed land use planning, enabling the adoption of suitable low-emission and climate-resilient practices. Thus, the project will help to increase the resilience of vulnerable communities and the ecosystems upon which they depend.
+- Forest fire prevention and rewetting of peat areas will increase climate resilience and is part of the overall design of the project.
+
+---
+
+92 https://www.giz.de/en/worldwide/110940.html
+
+
+---
+*Chunk pages 68–68*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1242 (sys=94, user=1148), max_out=1024, ctx=8192
+---
+
+# Selected Risk Factor 8: Profitable investments may create adverse impacts and incentivize further expansion and clearing of forest
+
+## Category
+- Probability: Low
+- Impact: Medium
+
+## Description
+If sufficient safeguards, monitoring and enforcement are not in place there may be increased clearing of forest (or mangroves for aquaculture).
+
+## Mitigation Measure(s)
+- Climate-informed land use planning will help clarify implementation boundaries, as well as monitoring and enforcement of land use plans.
+- Capacity building and institutional strengthening will build the capacities of key stakeholders in WK on climate action, and best practices to reduce deforestation and promote sustainable climate-resilient and low-emission investments.
+- Project support to strengthening monitoring under Component 1 will improve the monitoring of investments, which will help clo sely monitor, mitigate and manage risks (e.g. landowners need to develop plans and report to a monitoring portal that allows the provincial government to monitor activities).
+- Support to the regulatory framework and institutional strengthening under Component 1 will ensure a robust framework is in place, as well as improved capacities for planning, implementation and monitoring.
+- The Environmental and Social Impact Assessment (ESIA) and Management Plan (ESMP) identified potential impacts and risks, and elaborates clear strategies to avoid, mitigate or manage these risks.
+- Awareness raising on the importance of forest protection for climate change mitigation and adaption is a cross-cutting topic throughout project activities.
+- Support of forest tenure clarity for local communities including IPs will secure tenure rights and reduce the risk.
+- Traceability and monitoring mechanisms supported by the project will help increase transparency and accountability.
+
+# Selected Risk Factor 9: Risk of money laundering, terrorist financing, prohibited practices and sanctions
+
+## Category
+- Probability: Prohibited practices
+- Impact: Low High
+
+## Description
+Potentially the project funds could be used for money laundering, terrorist financing, or other prohibited practices.
+
+## Mitigation Measure(s)
+- The UN sanction list will be screened to ensure that no EE, implementation partner or other beneficiary is listed.
+- GIZ as AE will determine the Procurement and Consultant Guidelines, which have been reviewed and accepted by GCF during the accreditation process. GIZ´s guidelines will ensure high standards to mitigate potential risks.
+- Project procurement will be transparently documented, as per the Procurement Plan in Annex 10a to the FP. A Procurement Operational Manual, with guidelines and templates to provide guidance for the implementation of the procurement plan, will be developed.
+
+# Selected Risk Factor 10: Risk of social conflicts due to discrimination of certain groups (e.g. gender inequality/exclusion of indigenous peoples)
+
+## Category
+- Probability: Other
+- Impact: Medium Medium
+
+## Description
+The project may create social conflicts if certain groups of society do not have equal opportunities to benefit from project activities, for example due to gender inequality the access of women could be limited or indigenous peoples not adequately integrated.
+
+## Mitigation Measure(s)
+- The project has been designed through participatory practices, including with feedback from women and IPs, including indigenous women (see Stakeholder Engagement Plan in Annex 7a). Participatory processes will continue to be implemented throughout the project (e.g. participatory development of management plans), and spaces for providing feedback will be provided to reflect on project implementation.
+- Specific targeted activities to strengthen gender equality and social inclusion, while safeguarding the rights of women and IPs, are included within the ESMP (Annex 6b), GAP (Annex 8b) and the IPP (Annex 6c).
+- To support IPs, the project will set up and implement an on-granting mechanism specifically for IPs, which will support targeted measures for these groups (see Activity 1.3.1 in Chapter B.3.). All project activities will proactively involve empowerment elements for village women, including promoting their leadership roles in local structures. (More detailed activities are outlined in the Gender Action Plan of the project).
+- The project's GRM will be communicated to all beneficiaries in culturally appropriate ways, and in local languages, and those who have a grievance or complaint may file it through the GRM (more detailed information on the GRM is provided in Chapter 5 of the ESMP in Annex 6b).
+
+# Selected Risk Factor 11: Corruption and collusion between private sector (e.g. plantations) and public authorities
+
+## Category
+- Probability: Prohibited practices
+- Impact: Medium Medium
+
+## Description
+Corruption and collusion between private sector companies like oil palm plantations and public authorities at various levels have been an underlying driver of deforestation in the past. Private actors have been successful in bending legislation with illegal financial contributions (e.g. to receive licenses or to avoid legal consequences due to violations of the law).
+
+## Mitigation Measure(s)
+- The project will conduct capacity development with public servants and local communities in dedicated corruption prevention trainings (see Activity 3.1.1.3). This aims to raise awareness, educate stakeholders about their rights and responsibilities,
+
+
+---
+*Chunk pages 69–69*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=920 (sys=94, user=826), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 65
+
+## Corruption Measures and Safe Communication Channels
+
+In the long term, this will also foster a culture of integrity and ethical behaviour.
+
+## Supply Chain Transparency
+
+Support on supply chain transparency will increase the corporate social responsibility profile of commodity producers and hold them accountable for their environmental impact on ecosystems. At the same time, this will provide an opportunity to access premium markets for sustainable products (i.e., the EU).
+
+## Synergies with GIZ Project
+
+Synergies will be sought with the ongoing GIZ project “Corruption Prevention in the Forestry Sector”, which is closely working with the national corruption prevention agency (KPK). Training modules for corruption prevention trainings with FMUs, private sector, and local communities will be shared, building on the knowledge and experiences of this project.
+
+## Selected Risk Factor 12: Community Resistance to New Practices
+
+### Category: Probability Impact
+
+- **Technical and operational**: Low Medium
+
+### Description
+
+Different circumstances lead to a low adoption of new sustainable practices. The traditional practices may be preferred due to various reasons, for example they are accustomed to BAU practices, lower workload or lower costs (especially up-front or in the short term). Also, the price premiums for sustainably produced commodities might be low, and enforcement of sustainable practices may be weak.
+
+### Mitigation Measures
+
+- The project has been developed through participatory processes, engaging with diverse stakeholders. Stakeholders expressed interest and support in the project, as outlined in the Stakeholder Engagement Plan and Consultation Records (Annexes 7a and 7b). Thus, the proposed approach and practices are expected to be aligned with stakeholders' interests. Participatory approaches, including ensuring space for feedback (as described in Annex 7a), will be maintained throughout project implementation.
+- Support will be made to strengthen regulatory and policy frameworks (e.g., under Component 1) and build institutional capacities. This will be aligned with national policy directions, but will also help create an enabling environment to create a more permanent shift, including with supportive regulations, strategies and public sector support.
+- The project builds on good practices implemented by GIZ and Solidaridad, as well as other key stakeholders in WK, Indonesia and the region (see Annex 2a Feasibility Study, Appendix 10.1). The targets set build on experiences implementing similar activities and projects, and are considered realistic yet ambitious – considering also the challenges to build capacities and support a transition to more sustainable practices.
+- Model farms will be used to encourage reluctant farmers to change towards sustainable practices and certification ("seeing is believing"). In the past, the premium prices obtained through certification alone (e.g., RSPO) constituted an effective incentive. The project will also communicate diverse benefits through the project, including increasing productivity, diversifying incomes/production systems, strengthening resilience to climate change, and finding alternatives to costly inputs (e.g., circular practices).
+- Supply chain approach: Mills will ask suppliers to produce sustainably due changes in demand (market pressure towards sustainability). Support for improved monitoring and traceability systems will also provide additional support to farmers to strengthen market access and increase overall transparency and monitoring in the sector (e.g., helping to demonstrate whether agricultural goods are deforestation-free). The project will also strengthen business case development, ensuring more robust and profitable sustainable businesses.
+- Previous training need assessments will be conducted prior to the implementation of trainings in good agricultural practices.
+- Chapter B.6 provides additional information on how sustainability will be supported, including additional measures that focus on social sustainability (e.g., work with IPs and communities), among other factors.
+
+
+---
+*Chunk pages 70–70*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1292 (sys=94, user=1198), max_out=1024, ctx=8192
+---
+
+# GCF Policies and Standards  
+## G.1. Environmental and social risk assessment (max. 750 words, approximately 1.5 pages)  
+
+200. The Environmental and Social Impact Assessment (ESIA) of the project is provided in Annex 6a. The ESIA rates the risks of the project as category B (medium risk). In general, the project will have a positive environmental and social impact on the beneficiaries in WK. Nevertheless, potential adverse environmental and social impacts of the project will mostly be site-specific, but due to the nature of the interventions these impacts will not be irreversible or complex in nature and will be easily remediable through preventive and mitigation measures.  
+
+The project area represents a diverse set of socio-economic, cultural and environmental conditions. The high percentage of indigenous peoples in the project area also requires a higher degree of risk management as per the GCF Indigenous Peoples Policy to ensure they equitably benefit from the project and their livelihoods are adequately safeguarded. Therefore, respective plans including an Environmental and Social Management Plan (ESMP) (Annex 6b) and an Indigenous Peoples Plan (Annex 6c) were developed on thorough stakeholder consultations with various groups at all levels (see Annex 7b).  
+
+The project will operate a grievance redress mechanism (GRM) (Annex 6b) and, in addition, specific protocols for issues concerning SEAH (Annex 6b) and customary communities (Annex 6c). The project is expected to generate primarily positive impacts and is well aligned with the country’s context as well as the overarching policy and regulatory framework, as outlined in Chapters D.1–D.5.  
+
+201. Free, prior and informed consent (FPIC) is at the core of the project’s approach. All activities, especially under component 2 and 3 are oriented around FPIC. Approaches on meaningful FPIC and other participatory approaches have been implemented by the responsible EEs in WK already.  
+
+### Table 6: Summary of ESS risks and proposed mitigation measures  
+
+| ESS ESS Risk and impacts | Mitigation measures |
+|--------------------------|---------------------|
+| ESS 1 Assessment and Management of Environmental and Social Risks and Impacts | Social Concerns: Inadequate understanding of the cultural, tenure, and religious values of IPs, coupled with poor communication and consultation skills, may result in misunderstandings and social conflicts. Environmental Risks: The promotion of agriculture could lead to heightened use of herbicides and pesticides, as well as increased forest clearance, posing environmental risks. |
+| | • Initiate FPIC process prior to implementation and continuation throughout the project with all affected customary communities, villages, and other stakeholders.  
+• Continue consultations, dialogues and public awareness raising on project with relevant stakeholders (mainly IPs and vulnerable groups), about benefits and possible emerging problems.  
+• Ensure necessary skills for field facilitators through trainings  
+• Provide and ensure project grievance mechanism  
+• Implement conflict resolution desk |
+| ESS 2 Labour and Working Conditions | Infringement of decent working conditions. Confrontative physical exposure to Occupational Health and Safety (OHS) risks might occur during law enforcement measures against illegal logging, forest and land fires, and wildlife poaching by FMU Forest Rangers. |
+| | • Capacity building for project staff on roles & responsibilities as well as safety procedures.  
+• Provide accessible information on rights under national labour and employment policies including maximum working hours, wages, overtime, compensation, and benefits.  
+• Provision of drinking water and sanitation facilities whenever possible.  
+• Require medical certificate to ensure staff are fit to work in various work conditions of the project.  
+• Strictly forbid child labor  
+• Provision of safety equipment for partners and other stakeholders  
+• Train FMU staff supporting the implementation activities related to law enforcement in civil servant investigation practices and protocols  
+• Support the procurement of forest patrolling equipment such as radio, GPS device, cameras, batteries, walkie-talkies, and drones.  
+• Always make available First Aid Kits  
+• Provide and make mandatory use of personal protection equipment. |
+| ESS 3 Resource Efficiency and Pollution Prevention | Project activities might lead to environmental risks through:  
+• Use of pesticides and other chemical products in community or smallholder farming and agriculture  
+• Chemical waste from fish food production |
+| | • The project will not support the direct procurement of agrochemicals.  
+• Provide blacklisting support to selected crops where extensive negative impacts from agrochemicals are widely documented (oil palm).  
+• Provide capacity building and awareness raising for smallholders and extension staff  
+• If agrochemicals will be used by third-parties as part of the project, despite not being foreseen:  
+• Develop a pesticide management plan for the prevention, evaluation, and mitigation of occurrences of pesticides or pesticide breakdown products in groundwaters and surface waters.  
+• Conduct a thorough risk assessment, and the identification of adequate measures to reduce health and
+
+
+---
+*Chunk pages 71–71*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1407 (sys=94, user=1313), max_out=1024, ctx=8192
+---
+
+# ESS 4 Community Health, Safety and Security
+
+Potential social conflict and jealousy might arise between villages and communities as not all will receive assistance from the project.
+
+- Conduct community consultation during the design of business models.
+- FPIC processes to be initiated and maintained throughout the project with all participating villages, affected vulnerable groups and other stakeholders prior to the implementation
+- Continue consultation and dissemination to relevant stakeholders to avoid misinformation about the project.
+
+# ESS 5 Land acquisition and involuntary resettlement
+
+The loss of livelihood through rehabilitation of degraded areas in APL and peat and mangrove areas might aggravate the socio-economic conditions of local impoverished communities and provoke social conflicts in the project areas.
+
+- Upscaling of conflict resolution desk from Kapuas Hulu to the other four target regencies
+- FPIC processes to be initiated and maintained throughout the lifetime of the project with all participating villages, affected vulnerable groups and other stakeholders.
+- Continuous consultations with communities on forest management plan under social forestry
+- Land-use planning as well as developing or changing management plans to be conducted in participatory manner with local stakeholders always, considering the inclusion of vulnerable groups and gender-balance, with a special focus on indigenous women-led households.
+- Regular dialogues and meaningful consultations at local level to identify emerging problems.
+- Improve communication skills for field facilitators so that conflict and misunderstanding on tenurial issues can be avoided.
+- Provide and ensure project grievance mechanism to deal with any complaints and issues that may arise as a result of the project.
+
+# ESS 6 Biodiversity
+
+The promotion of agriculture may cause impacts on the habitats of endemic species of West Kalimantan (such as Orangutan, Proboscis Monkey) which might lead to reduced biodiversity.
+
+Increased revenues from estate crops products may lead to potential forest encroachment by farmers and risk to biodiversity.
+
+- The project will not promote the expansion of agriculture, monocultures, or timber plantations.
+- Instead, all project activities will happen on land that is already under agricultural use or heavily degraded production forest.
+- Ensure during the participatory land use planning that the existing biodiversity and ecosystem services are safeguarded.
+- Develop and apply guidelines in consultative processes together with potential investors, farmers and communities to ensure conservation and recovery of biodiversity.
+- Conduct continued consultations and monitoring at village and landscape level throughout the project.
+- Provide capacity building and awareness raising for villagers, farmers, partners, and trainers/ extension staffs on the impacts of monoculture system on biodiversity and habitats of endemic species of West Kalimantan as well as ecosystem services, to be aware of sensitive flora and fauna and how to apply best practices for their protection and production.
+- Conduct monitoring of land-use changes.
+
+# ESS 7 Indigenous Peoples
+
+Social conflicts may arise among relevant stakeholders in FMU areas and indigenous peoples’ land and forest land under social forestry program (for example participatory land-use planning and management plans for different forest types), furthermore potentially resulting in unintended negative livelihood impacts.
+
+Due to insufficient recognition of adat communities, the involvement of indigenous people might be limited.
+
+- Ensure the compliance with existing national laws related to customary communities by providing capacity building to project staff, regency, and provincial service officers especially FMUs staff in recognition of the indigenous people's rights inside State Forests under social forestry scheme.
+- Develop Indigenous Peoples Plan (IPP) and Stakeholder Engagement Plan
+- Establish a Grievance Redress Mechanism and procedures that take into account the needs of indigenous peoples.
+- Establish institutional arrangements that reflect the representation of IP, in particular indigenous women.
+- FPIC processes to be initiated and maintained throughout the lifetime of the project.
+- Ensure financing measures that specifically enable customary communities and their most vulnerable members to have better access to land, technical support for implementing good agriculture practices, sustainable land management (SFM, FLR, etc.), and green finance measures.
+- Ensure eligibility criteria of the on-granting mechanism exclude project proposals with potentially negative impacts (following the ESS policies of BPDLH's TERRA Fund).
+
+# ESS 8 Cultural Heritage
+
+The integrity of any culturally, historically, archeologically significant item or structure encountered during work done for project activities might be at risk.
+
+In some areas peoples' access to areas for the exercise of cultural heritage, especially of an intangible nature, might potentially be affected if there is a change in land use or if any of their lands overlap with the social forestry licenses.
+
+- Protect and safeguard the integrity of any culturally, historically, archeologically significant item or structure encountered during work done for project activities.
+- FPIC conducted prior to designation of HCV/HCS areas and maintained throughout the lifetime of the project.
+- National, regional and/or local museums will be consulted on any historical, indigenous, or cultural heritage areas.
+- Ensure existing national and sub-national laws/regulations related to cultural heritage are fully respected in recognition of the indigenous people's rights and cultural heritages and values inside state forests under social forestry scheme.
+- Conduct regular dialogues and consultations and monitoring at village and landscape
+
+
+---
+*Chunk pages 72–72*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1410 (sys=94, user=1316), max_out=1024, ctx=8192
+---
+
+# G.2. Gender assessment and action plan (max. 500 words, approximately 1 page)
+
+## 202. 
+A Gender Assessment (GA) and Gender Action Plan (GAP) was conducted and developed based on thorough consultations at various levels and is available in Annex 8a/b.
+
+## 203. 
+Indonesia's global gender equality score is 0.697, ranking 87th globally and 7th in ASEAN. Despite progress, gender gaps persist, limiting women's access to education, health, finances, and career development due to entrenched gender norms. Gender-based violence stems from socio-cultural factors and patriarchal structures. Awareness can help combat it, including domestic violence. Gender mainstreaming commitments exist at various levels, with efforts to integrate gender into planning and budgeting. However, gender has not been integrated into climate change mitigation and adaptation regulations, nor in environmental and forestry sector policies due to a lack of priority.
+
+## 204. 
+As mentioned in Section D.3, (indigenous) women in the project area are disproportionately vulnerable to climate change. At the same time, they still face discrimination in many aspects of their lives despite government policy to promote gender equality and protect women's and children's rights (see also the IPP in Annex 6c). This discrimination, in turn, results in ongoing barriers for them to participate in public life and to access many of the services to which they have a right, and further exacerbates their vulnerability to climate change.
+
+## 205. 
+The project design addresses the identified gender gaps, amongst others, through:
+
+- Implementing measures that help women overcome barriers to participation (e.g. planning trainings in community spaces and/or accessible venues that are convenient for women, ensuring inclusive/ flexible scheduling at times that are convenient for women, considering their domestic responsibilities, and ensuring effective and clear
+
+--- 
+
+**Note:** The text appears to be incomplete or truncated at the end. The last sentence begins with "Implementing measures that help women overcome barriers to participation (e.g. planning trainings in community spaces..." but ends abruptly without completing the thought. This may be due to OCR issues or incomplete extraction from the PDF.
+
+
+---
+*Chunk pages 73–73*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1256 (sys=94, user=1162), max_out=1024, ctx=8192
+---
+
+# G.3. Financial management and procurement (max. 500 words, approximately 1 page)  
+## G.3.1 Financial Management  
+
+206. The financial management of the project will follow GIZ’s internal rules and regulations. GIZ has bank accounts with Deutsche Bundesbank and Commerzbank. GIZ will not open a specific bank account for the GCF project but will ensure that all funds provided are clearly identifiable and distinguishable from GIZ’s other funds by setting up separate cost units exclusively for the funds disbursed by the GCF for each funded activity (ledger accounts). Funds received and expenditures incurred will be booked to the respective cost unit according to generally accepted accounting principles and procedures accepted by the German Government. As a general principle, GIZ disburses funds to recipients in accordance with the progress of the project. The EEs (GIZ, BPDLH and SNAL) have to report on the proper use of funds and defined progress as a prerequisite for any further disbursement. Independent external auditors will perform annual financial audits of the project in line with International Auditing Standards. At the beginning of each year, an annual plan is prepared, which expresses which activities are to be implemented in the coming year. These annual plans need to be approved by the PMU with the leading coordination function and are divided into quarterly plans at the beginning of each quarter. From these quarterly plans, a quarterly budget is then prepared for each implementation partner, which is paid after PMU approval by BPDLH. Each implementation partner reports on the use of these quarterly budgets to the BPDLH on a monthly basis. This reporting is then read into BPDLH's central accounting system. In addition, these monthly financial reports form the basis of BPDLH’s financial reporting to GIZ.  
+
+In addition to the disbursement of budgets to the implementation partners, funds are disbursed annually to the target communities to implement their respective village forest licenses. For this purpose, each partner village prepares an annual budget based on the management plan, which is transferred to the villages by the BPDLH. Finally, the dedicated IP grant mechanism will follow BPDLH’s established procedures under the TERRA Fund.  
+
+## G.3.2 Procurement  
+
+207. In the case of procurement by GIZ, GIZ will follow its own procurement guidelines. GIZ is required to comply with the relevant contracting rules as established in the German Act against Restraints of Competition (GWB), the German Regulation on the Award of Public Contracts (VgV) and, if applicable, the Contracting Rules for the Award of Public Service Contracts (VOB, VOL/B and UVgO) when procuring services, construction work and supplies.  
+
+When awarding contracts for supplies and services (including consultancy services) to be financed in full or in part from the financing contract, the external Executing Entities will observe their own national regulation for public procurement and will in any case comply with the provisions mentioned in the Procurement Guidelines for projects funded by GCF/GIZ. The Procurement Guidelines shall not contradict the applicable national procurement law and/or regulations for public procurement, which apply in the EE’s country. In principle, the regulations of the Executing Entities country are to be observed; the procurement procedures mentioned in the Guidelines are obligatory minimum standards (an overview of these minimum standards is available under Annex 10b). While implementing a project with public funds the Executing Entities should take reasonable account of economic efficiency as well as ecological and social aspects.  
+
+GIZ in its function as AE will have monitoring and oversight responsibility on the procurement activities carried out by the third parties. The monitoring and oversight procedures will follow GIZ’s internal rules and regulations to ensure compliance with GIZ procurement guidelines which are contractually agreed and reviewed externally via annual audits. The project’s procurement plan is available in Annex 10a and GIZ’s procurement guidelines in Annex 10b.  
+
+---  
+*Page 69*
+
+
+---
+*Chunk pages 74–74*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=355 (sys=94, user=261), max_out=1024, ctx=8192
+---
+
+# G.4. Disclosure of funding proposal
+
+☒ No confidential information: The accredited entity confirms that the funding proposal, including its annexes, may be disclosed in full by the GCF, as no information is being provided in confidence.
+
+☐ With confidential information: The accredited entity declares that the funding proposal, including its annexes, may not be disclosed in full by the GCF, as certain information is being provided in confidence. Accordingly, the accredited entity is providing to the Secretariat the following two copies of the funding proposal, including all annexes:
+
+- full copy for internal use of the GCF in which the confidential portions are marked accordingly, together with an explanatory note regarding the said portions and the corresponding reason for confidentiality under the accredited entity’s disclosure policy, and
+- redacted copy for disclosure on the GCF website.
+
+The funding proposal can only be processed upon receipt of the two copies above, if containing confidential information.
+
+
+---
+*Chunk pages 75–75*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=704 (sys=94, user=610), max_out=1024, ctx=8192
+---
+
+# Annexes
+
+## H.1. Mandatory annexes
+
+- **Annex 1** NDA no-objection letter(s) (template provided)
+- **Annex 2** Feasibility study - and a market study, if applicable
+- **Annex 3** Economic and/or financial analyses in spreadsheet format
+- **Annex 4** Detailed budget plan (template provided)
+- **Annex 5** Implementation timetable including key project/programme milestones (template provided)
+- **Annex 6** E&S document corresponding to the E&S category (A, B or C; or I1, I2 or I3):  
+  (ESS disclosure form provided)
+- **Annex 7** Summary of consultations and stakeholder engagement plan
+- **Annex 8** Gender assessment and project/programme-level action plan (template provided)
+- **Annex 9** Legal due diligence (regulation, taxation and insurance)
+- **Annex 10** Procurement plan (template provided)
+- **Annex 11** Monitoring and evaluation plan (template provided)
+- **Annex 12** AE fee request (template provided)
+- **Annex 13** Co-financing commitment letter, if applicable (template provided)
+- **Annex 14** Term sheet including a detailed disbursement schedule and, if applicable, repayment schedule
+
+## H.2. Other annexes as applicable
+
+- **Annex 15** Evidence of internal approval (template provided)
+- **Annex 16** Map(s) indicating the location of proposed interventions
+- **Annex 17** Multi-country project/programme information (template provided)
+- **Annex 18** Appraisal, due diligence or evaluation report for proposals based on up-scaling or replicating a pilot project
+- **Annex 19** Procedures for controlling procurement by third parties or executing entities undertaking projects financed by the entity
+- **Annex 20** First level AML/CFT (KYC) assessment
+- **Annex 21** Operations manual (Operations and maintenance)
+- **Annex 22** Assessment of GHG emission reductions and their monitoring and reporting (for mitigation and cross-cutting projects)
+
+> *Please note that a funding proposal will be considered complete only upon receipt of all the applicable supporting documents.*
+
+> **93 Annex 22 is mandatory for mitigation and cross-cutting projects.**
+
+## Other references
+
+- **Annex X** Other references
+
+
+---
+*Chunk pages 76–76*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=750 (sys=94, user=656), max_out=1024, ctx=8192
+---
+
+# MINISTRY OF FINANCE OF THE REPUBLIC OF INDONESIA
+
+## Fiscal Policy Agency
+
+### R.M. NOTOHAMIPRODJO BUILDING 2ND FLOOR JALAN DR. WAHIDIN RAYA NOMOR 1 JAKARTA 10710
+TELEPHONE (+62 21) 3441484; FACSIMILE (+62 21) 3848049; WEBSITE www.fiskal.kemenkeu.go.id
+
+---
+
+### Ref. : S-34/KF/2024 25 Maret 2024
+
+#### Ms Mafalda Duarte  
+Executive Director  
+Secretariat of the Green Climate Fund (GCF)  
+175, Art center-daero  
+Yeonsu-gu, Incheon 406-840  
+Republic of Korea  
+
+---
+
+### Subject: Funding Proposal for the GCF by the GIZ regarding Land-based Mitigation and Adaptation through a Jurisdictional Approach in West Kalimantan
+
+Dear Ms Duarte,
+
+We refer to the project titled the Land-based Mitigation and Adaptation through a Jurisdictional Approach in West Kalimantan in Indonesia as included in the Funding Proposal submitted by the GIZ to us on February 19th, 2024.
+
+The undersigned is the Chairman of Fiscal Policy Agency, Ministry of Finance, the National Designated Authority of Indonesia.
+
+Pursuant to GCF decision B.08/10, the content of which we acknowledge to have reviewed, we hereby communicate our no-objection to the project as included in the Funding Proposal.
+
+By communicating our no-objection, it is implied that:
+
+(a) The government of Indonesia has no-objection to the project as included in the Funding Proposal;  
+(b) The project as included in the Funding Proposal is in conformity with Indonesia’s national priorities, strategies and plans;  
+(c) In accordance with the GCF’s environmental and social safeguards, the project as included in the Funding Proposal is in conformity with relevant national laws and regulations.
+
+We also confirm that our national process for ascertaining no objection to the project as included in the Funding Proposal has been duly followed.
+
+We acknowledge that this letter will be made publicly available on the GCF website.
+
+Yours faithfully,  
+Ditandatangani secara elektronik  
+
+Febrio Nathan Kacaribu  
+Chairman  
+
+---
+
+### Dokumen ini telah ditandatangani menggunakan sertifikat elektronik yang diterbitkan oleh Balai Sertfikat Elektronik (BSrE), BSSN. Untuk memastikan keaslian tanda tangan elektronik, silakan pindai QR Code pada laman https://office.kemenkeu.go.id atau unggah dokumen pada laman https://tte.kominfo.go.id/verifyPDF
+
+---
+
+### No-objection letter issued by the national designated authority(ies) or focal point(s)
+
+
+---
+*Chunk pages 77–77*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=613 (sys=94, user=519), max_out=1024, ctx=8192
+---
+
+# Environmental and Social Safeguard Report Form
+
+## Basic project or programme information
+
+- **Project or programme title:** Land-based Mitigation and Adaptation through a Jurisdictional Approach in West Kalimantan
+- **Existence of subproject(s) to be identified after GCF Board approval:** Yes
+- **Sector (public or private):** Public
+- **Accredited entity:** Deutsche Gesellschaft für Internationale Zusammenarbeit (GIZ) GmbH
+- **Environmental and social safeguards (ESS) category:** Category B
+- **Location – specific location(s) of project or target country or location(s) of programme:** Republic of Indonesia
+
+## Environmental and Social Impact Assessment (ESIA) (if applicable)
+
+- **Date of disclosure on accredited entity’s website:** Friday, September 6, 2024
+- **Language(s) of disclosure:** English and Bahasa Indonesia
+- **Explanation on language:** Bahasa Indonesia is the official language of the Republic of Indonesia
+
+### Link to disclosure
+
+- **English:**  
+  [ESIA_Env and Social Impact Assessment_Landbased_mitigation-adapt_Jurisd_approach_in_WK.pdf](https://www.forclime.org/index.php/en/publications) (forclime.org)
+
+- **Bahasa Indonesia:**  
+  [Penilaian dampak link dan sosial_Landbased_mitigation-adapt_Jurisd_approach_in_WK.pdf](https://www.forclime.org/index.php/en/publications) (forclime.org)
+
+## Remarks
+
+An ESIA consistent with the requirements for a Category B project is contained in the “Environmental and Social Impact Assessment (ESIA) and recommendations for the Environmental and Social Management Plan (ESMP).”
+
+## Environmental and Social Management Plan (ESMP) (if applicable)
+
+- **Date of disclosure on accredited entity’s website:** Friday, September 6, 2024
+- **Language(s) of disclosure:** English and Bahasa Indonesia
+- **Explanation on language:** Bahasa Indonesia is the official language of the Republic of Indonesia
+
+### Link to disclosure
+
+- **English:**  
+  [ESMP_Environment and social mgt plan_Landbased_mitigation-adapt_Jurisd_approach_in_WK.pdf](https://www.forclime.org/index.php/en/publications) (forclime.org)
+
+- **Bahasa Indonesia:**  
+  [Rencana Pengelolaan Lingk dan Sosial_Landbased_mitigation-adapt_Jurisd_approach_in_WK.pdf](https://www.forclime.org/index.php/en/publications) (forclime.org)
+
+
+---
+*Chunk pages 78–78*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=673 (sys=94, user=579), max_out=1024, ctx=8192
+---
+
+# [Page 1]
+
+## Other link(s)  
+https://www.forclime.org/index.php/en/publications  
+
+## Remarks  
+An ESMP consistent with the requirements for a Category B project is contained in the Environmental and Social Management Plan (ESMP).  
+
+## Environmental and Social Management System (ESMS) (if applicable)  
+- **Date of disclosure on accredited entity’s website**: [N/A]  
+- **Language(s) of disclosure**: [N/A]  
+- **Explanation on language**: [N/A]  
+- **Link to disclosure**: [N/A]  
+- **Other link(s)**: [N/A]  
+- **Remarks**: [N/A]  
+
+## Any other relevant ESS reports, e.g. Resettlement Action Plan (RAP), Resettlement Policy Framework (RPF), Indigenous Peoples Plan (IPP), Indigenous Peoples Planning Framework (IPPF) (if applicable)  
+- **Description of report/date of disclosure on accredited entity’s website**: Indigenous Peoples Plan (IPP) and Gender Action Plan (GAP)  
+
+### Friday, September 6, 2024  
+
+#### Language(s) of disclosure: English and Bahasa Indonesia  
+#### Explanation on language: Bahasa Indonesia is the official language of the Republic of Indonesia  
+
+#### Link to disclosure  
+- **Indigenous Peoples Plan (IPP)**  
+  - English:  
+    IPP_Indigenous people's plan_Landbased_mitigation-adapt_Jurisd_approach_in_WK.pdf (forclime.org)  
+  - Bahasa Indonesia:  
+    Rencana Masy Adat_Landbased_mitigation-adapt_Jurisd_approach_in_WK.pdf (forclime.org)  
+
+- **Gender Action Plan (GAP)**  
+  - English:  
+    Gender Action Plan_Landbased_mitigation-adapt_Jurisd_approach_in_WK.pdf (forclime.org)  
+  - Bahasa Indonesia:  
+    Rencana Aksi Gender_Landbased_mitigation-adapt_Jurisd_approach_in_WK.pdf (forclime.org)  
+
+## Other link(s)  
+https://www.forclime.org/index.php/en/publications  
+
+## Remarks  
+[N/A]  
+
+## Disclosure in locations convenient to affected peoples (stakeholders)  
+- **Date**: Friday, September 6, 2024  
+- **Place**:  
+  - 5 regency level planning offices in the intervention area  
+    - Planning Agency of Kapuas Hulu District, Jalan D.I Panjaitan No. 22 A Putussibau, Kabupaten Kapuas Hulu – 78716, bappeda@kapuashulukab.go.id  
+    - Planning Agency of Sintang District, Jl. M. Saad Sintang Kabupaten Sintang – 78611, bappeda@sintang.go.id  
+
+---
+
+
+---
+*Chunk pages 79–79*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=923 (sys=94, user=829), max_out=1024, ctx=8192
+---
+
+# Planning Agency of Sanggau District
+
+- Jl. Jenderal Sudirman No.9, Kabupaten Sanggau 78512, bappeda@mail.sanggau.go.id
+
+# Planning Agency of Ketapang District
+
+- Jalan Jenderal Sudirman No 15, Ketapang, bappeda@ketapang.go.id
+
+# Planning Agency of Kubu Raya District
+
+- Jalan Supadio, Kompleks Kantor Bupati Kubu Raya, Kec. Sungai Raya, Kabupaten Kubu Raya – 78391, bappeda@kuburayakab.go.id
+
+# FMUs in the intervention area
+
+## FMU of Kapuas Hulu Utara
+
+- Jalan Lintas Utara, Desa Pala Pulau, Kec Putussibau Utara Kab Kapuas Hulu – 78711, kphl.kapuashuluutara@gmail.com
+
+## FMU of Kapuas Hulu Timur
+
+- Jalan Banin No 54 RT. 008 RW 002 Kelurahan Kedamin Hilir, Kecamatan Putussibau Selatan, Kphkapuashulutimur1@gmail.com
+
+## FMU of Kapuas Hulu Selatan
+
+- Desa Bika Kecamatan Bika, Kab. Kapuas Hulu, kphkhs21@gmail.com
+
+## FMU of Sintang Utara
+
+- Jl. Dr. Wahidin Sudirohusodo, Nomor: 37 Desa Baning Kota, Kecamatan Sintang, Kabupaten Sintang – 78612, kphstgutara17@gmail.com
+
+## FMU of SIntang Timur
+
+- Jalan MT. Haryono KM 5 Sintang, sintangtimurkph@gmail.com
+
+## FMU of Sanggau Barat
+
+- Jl.Tayan Sosok, Desa Cempedak, Kec Tayan Hilir di Tengayong, kphsanggaubarat@gmai.com
+
+## FMU of Sanggau Timur
+
+- Jalan Anggrek, Kelurahan Ilir Kota, Kec. Kapuas, Kab. Sanggau – 78513, kphsgutimur@gmail.com
+
+## FMU of Ketapang Utara
+
+- Jl. Trans Kalimantan No. 888, Kecamatan Sandai 78871, kphketapangutara@gmail.com
+
+## FMU of Ketapang Selatan
+
+- Jl. Letkol M. Tohir No 11B, Kec. Delta Pawan, Kabupaten Ketapang – 78811, kphketapangselatan@gmail.com
+
+## FMU of Kubu Raya
+
+- Jl. Parit Derabak, Desa Parit Baru, Kec. Sungai Raya, Kab. Kubu Raya 78391, kphkuburaya@gmail.com
+
+# University
+
+## Forestry Faculty of Tanjungpura University
+
+- Jalan Imam Bonjol, Pontianak 78124, fahutan@untan.ac.id
+
+# Local CSOs
+
+## Indigenous Peoples Alliance of the Archipelago, West Kalimantan Chapter (AMAN KALBAR)
+
+- Jln. Budi Utomo Komp. Bumi Indah Khatulistiwa No 3 Kelurahan Siantan Hulu Kec. Pontianak Utara, Kota Pontianak, Kalimantan Barat 78241, pwaman.kalbar@aman.or.id
+
+
+---
+*Chunk pages 80–80*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=448 (sys=94, user=354), max_out=1024, ctx=8192
+---
+
+# Customary Area Registration Agency (BRWA KALBAR)
+
+- **Address:** Jl. Budi Utomo, Komplek Bumi Indah Khatulistiwa No.3, Siantan Hulu, Kec. Pontianak Utara, Kalimantan Barat 78241
+- **Email:** agus.kalbarbrwa@gmail.com
+
+# Institute of Dayakologi
+
+- **Address:** Jalan Budi Utomo, kompek Bumi Indah Khatulistiwa, Blok A 1 - 4, Siantan Hulu, Kec. Pontianak Utara
+- **Email:** institutdayakologi@gmail.com
+
+# Provincial government offices
+
+## Environment and Forestry Office
+
+- **Address:** Jalan Sultan Abdurahman No.137 Kota Pontianak Kalimantan Barat – 78116
+- **Email:** dlhk@kalbar.go.id
+
+## Planning and Development Agency
+
+- **Address:** Jalan Ahmad Yani, Kota Pontianak Kalimantan Barat – 78124
+- **Email:** bappeda@kalbarprov.go.id
+
+## Estate Crops and Livestock Office
+
+- **Address:** Jalan M. Hambal No.3, Kota Pontianak, Kalimantan Barat
+- **Email:** disbunnak@kalbarprov.go.id
+
+# Date of Board meeting in which the FP is intended to be considered
+
+- **Date of accredited entity’s Board meeting:** N/A
+- **Date of GCF’s Board meeting:** Monday, October 21, 2024
+
+> Note: This form was prepared by the accredited entity stated above.
+
+
+---
+*Chunk pages 81–81*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=642 (sys=94, user=548), max_out=1024, ctx=8192
+---
+
+# GCF/B.40/02/Add.10/Rev.01  
+## Page 81  
+
+### Secretariat’s assessment of FP248  
+
+#### Proposal name:  
+Land-based Mitigation and Adaptation through a Jurisdictional Approach in West Kalimantan  
+
+#### Accredited entity:  
+Deutsche Gesellschaft für Internationale Zusammenarbeit (GIZ) GmbH  
+
+#### Country:  
+Indonesia  
+
+#### Project/programme size:  
+Medium  
+
+### I. Overall assessment of the Secretariat  
+
+#### 1. The funding proposal is presented to the Board for consideration with the following remarks:  
+
+##### Strengths  
+- The project focuses on West Kalimantan, a province rich in peatland forests (holding a massive amount of below-ground carbon) and under significant pressure from commodity production given its geographical proximity to global shipping lanes.  
+- It includes a dedicated financing mechanism for Indigenous Peoples to support some of the country’s most vulnerable populations, who are also some of the strongest partners in the sustainable management of the province’s ecosystems.  
+- It champions a holistic jurisdictional approach covering West Kalimantan, one of the largest provinces in Indonesia. It combines protection, rehabilitation, sustainable management, and livelihoods as well as a deforestation-free commodity supply chain, with strong potential for replication.  
+
+##### Points of caution  
+- Care is needed during the implementation phase to retain the project’s close coordination with the range of forest and REDD+-related interventions at local, provincial, and national levels in Indonesia.  
+- It is crucial to continuously and iteratively strengthen regulatory and institutional frameworks to adapt to political changes and ensure consistent support for climate-resilient and low-emission agricultural and forestry practices throughout the project's lifespan.  
+- The project will need to pay special attention to proactively address land tenure complexities. Implementing meaningful participatory land-use planning processes and conflict resolution mechanisms are built in, but will nevertheless be essential to address issues of complex land tenure and land-use rights, preventing potential conflicts and ensuring community engagement and support.  
+
+#### 2. The Board may wish to consider approving this funding proposal in accordance with the term sheet agreed between the Secretariat and the accredited entity (AE), and, if considered appropriate, subject to the conditions set out in annex II of document GCF/B.40/02.  
+
+### II. Summary of the Secretariat’s assessment  
+
+---
+
+
+---
+*Chunk pages 82–82*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=930 (sys=94, user=836), max_out=1024, ctx=8192
+---
+
+# GCF/B.40/02/Add.10/Rev.01  
+## Page 82  
+
+### 2.1 Project background  
+
+Indonesia, particularly West Kalimantan, faces significant vulnerability to climate change, leading to challenges such as deforestation, forest degradation, increased temperatures, changes in precipitation patterns, rising sea levels, and extreme weather events like floods, droughts, and forest fires.  
+
+The "Land-based mitigation and adaptation through a jurisdictional approach in West Kalimantan" project, developed in partnership with Deutsche Gesellschaft für Internationale Zusammenarbeit (GIZ) GmbH and the Government of Indonesia, aims to enhance the climate resilience of local communities and forest ecosystems across five targeted regencies.  
+
+These regencies face severe climate sensitivity and vulnerability, with coastal areas particularly exposed to climate change and interior regions characterized by high deforestation rates and biodiversity loss. This project will focus on five priority regencies: Kapuas Hulu, Ketapang, Kubu Raya, Sanggau, and Sintang.  
+
+### 4.  
+
+The initiative will directly benefit approximately 680,107 people and indirectly assist an additional 4,861,269 individuals by implementing sustainable land and forest management practices over 6.75 million hectares, improving livelihoods, and enhancing ecosystem services.  
+
+It is expected to generate a reduction, avoidance, or sequestration of approximately 16.05 million tonnes of carbon dioxide equivalent (Mt CO₂ eq) over the project duration.  
+
+### 5.  
+
+The project focuses on strengthening the enabling environment for climate change adaptation, promoting sustainable forest management strategies, and developing climate-resilient agricultural practices and value chains.  
+
+The project is structured into three components that align with GCF strategic priorities: T4, T5, T10, and T11.  
+
+### 6.  
+
+With a total budget of EUR 100.19 million, including EUR 59.48 million requested as a grant from GCF and co-financing from various Indonesian ministries and GIZ, the project endeavours to establish West Kalimantan as a model for climate change resilience, ecosystem conservation, and sustainable agricultural practices.  
+
+The budget allocation across the project components is detailed as follows:  
+
+- (a) EUR 30.93 million is dedicated to Component 1, aimed at institutional and regulatory frameworks to strengthen sustainable and climate-resilient forest management;  
+- (b) EUR 19.78 million is allocated to Component 2, focusing on sustainable commodity production and social forestry to enhance livelihoods and food systems;  
+- (c) EUR 37.88 million is designated for Component 3, which seeks to manage, protect and rehabilitate forest and peatland ecosystems;  
+- (d) Additional allocations include EUR 11.61 million for monitoring and evaluation (M&E), contingency, and project management.  
+
+### 7.  
+
+The project's exit strategy is crucial for sustaining its impacts beyond its lifetime. This strategy ensures integration of initiatives into local and national frameworks, emphasizing local planning, institutional strengthening and community engagement.  
+
+Key elements include policy advocacy, financial sustainability through innovative financing and private-sector engagement, and robust monitoring systems. By embedding these practices into West Kalimantan's development efforts, the project aims to mobilize additional resources and support long-term resilience of ecosystems and communities.  
+
+### 8.  
+
+The project's risk assessment identifies several key risks, including political challenges such as changes in government priorities and collaboration issues between different government stakeholders.  
+
+Environmental risks include extreme weather events and their impacts on agricultural productivity and forest health.  
+
+Social risks involve potential conflicts over land use and inadequate inclusion of Indigenous and local communities.  
+
+Financial risks pertain to securing sustained funding and private sector engagement.  
+
+To mitigate these risks, the project involves key governmental actors, strengthens policy frameworks, incorporates...
+
+
+---
+*Chunk pages 83–83*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=845 (sys=94, user=751), max_out=1024, ctx=8192
+---
+
+# GCF/B.40/02/Add.10/Rev.01  
+## Page 83  
+
+### Component 1. Institutional and regulatory frameworks (total cost: EUR 30.93 million; GCF cost: EUR 13.09 million)  
+
+9. Component 1 of the project aims to strengthen the institutional and regulatory frameworks for sustainable and climate-resilient forest management in West Kalimantan – serving as a foundation for the project’s activities. The technical merits of this component include enhancing policies related to climate change adaptation, which can be better considered in government plans, and transforming the REDD+ Task Force into a Provincial Body on Climate Change to better coordinate cross-sectoral climate measures with greater institutional authority. The project also aims to establish dedicated grant mechanisms to support Indigenous Peoples and local communities in implementing climate-smart agricultural practices.  
+
+10. Project risks include potential changes in political circumstances that could affect commitments to sustainable development, gaps in coordination between key ministries and agencies that could limit project effectiveness, and complex land tenure issues that could lead to conflicts. These risks are mitigated through several strategies: the project employs participatory land-use planning and conflict resolution mechanisms to address land tenure complexities, strengthens regulatory and institutional frameworks to adapt to political changes, and establishes robust intersectoral coordination mechanisms to ensure alignment and integration of efforts across different levels of government.  
+
+### Component 2. Sustainable commodity production and social forestry (total cost: EUR 19.78 million; GCF cost: EUR 12.08 million)  
+
+11. In collaboration with BMZ¹ and Solidaridad Network Asia Limited (SNAL), Component 2 focuses on sustainable agricultural supply chains and social forestry, aiming to enhance the climate resilience and economic stability of smallholder farmers in West Kalimantan. Social forestry in Indonesia includes schemes like Village Forest and Community-based Forestry, which empower local communities to manage state forest areas, thereby promoting self-directed sustainability, improving livelihoods, and conserving biodiversity. The meaningful inclusion of the community in forest management is central to these efforts.  
+
+The technical merits include promoting sustainable agricultural practices, such as agroforestry, and improving market access through the establishment of traceability systems and marketing support units. Additionally, the project enhances multi-stakeholder dialogue to foster low-emission and climate-resilient agriculture.  
+
+12. Project risks include limited knowledge and access to finance for smallholders, potential market fluctuations, and challenges in achieving certification for sustainable practices. These risks are mitigated through capacity-building initiatives, including training programmes for farmers and agricultural extension workers, the development of resilient business models, and the establishment of public-private partnerships to support sustainable sourcing and investments.  
+
+By strengthening these aspects, the project aims to create a supportive business ecosystem that encourages sustainable practices and improves the livelihoods of local communities.  
+
+13. Component 2 complements Component 1 by building on the strengthened institutional and regulatory frameworks to ensure that sustainable practices and policies are effectively  
+
+>¹ BMZ stands for the Federal Ministry for Economic Cooperation and Development of Germany (Bundesministerium für wirtschaftliche Zusammenarbeit und Entwicklung in German).  
+
+---  
+**End of page 83**
+
+
+---
+*Chunk pages 84–84*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=924 (sys=94, user=830), max_out=1024, ctx=8192
+---
+
+# GCF/B.40/02/Add.10/Rev.01  
+## Page 84  
+
+### Component 3. Management, protection and rehabilitation of forest and peatland ecosystems (total cost: EUR 37.88 million; GCF cost: EUR 27.84 million)  
+
+14. Component 3 of the project focuses on the management, protection and rehabilitation of forest and peatland ecosystems, with a strong emphasis on strengthening social forestry schemes and building the capacity of Forest Management Units (FMUs) to implement sustainable forest management and ecosystem-based adaptation. Peatland ecosystems receive particular attention due to their critical role in carbon sequestration, storing considerably more carbon per hectare than non-peat tropical forests.  
+
+This component aims to enhance key ecosystem services, such as carbon sequestration and water regulation, while reducing flood and fire risks through best practices in forest management. It also supports local communities in obtaining and managing social forestry permits and developing management plans, ensuring access to necessary funding streams.  
+
+### Project risks include regulatory challenges posed by the UUCK 2020 law,2 which limits the role of FMUs, and the complexities of coordinating among a diverse set of stakeholders. These risks are mitigated by developing climate-informed forest management plans, providing extensive training to FMU staff, and fostering public-private partnerships for ecosystem protection.  
+
+### This component complements Component 1 by reinforcing institutional frameworks for forest management and aligns with Component 2 by supporting sustainable agricultural practices, thus creating an integrated approach to forest and land management.  
+
+### Additional allocation: Gender, environmental and social management framework, M&E components (total cost: EUR 4.31 million; GCF cost: EUR 2.58 million)  
+
+17. The project is classified as category B (moderate risk). The institutional arrangements involve various legal and organizational frameworks, including agreements between Deutsche Gesellschaft für Internationale Zusammenarbeit (GIZ) GmbH and multiple entities, including Badan Pengelola Dana Lingkungan Hidup (Indonesian Environment Fund, BPDLH), SNAL and the Government of Indonesia via the Indonesian Ministry of Environment and Forestry (MoEF), to implement and monitor the project, ensuring coordinated efforts for climate resilience and sustainable land management in West Kalimantan.  
+
+### The environmental and social management plan (see funding proposal annex 6b) includes a zero-tolerance policy for sexual exploitation, abuse and harassment (SEAH), with specific procedures for risk mitigation integrated into project management, and a grievance redress mechanism to address any concerns arising during implementation.  
+
+The project also emphasizes the importance of free prior and informed consent and robust stakeholder engagement to ensure inclusive participation and address potential risks such as land tenure conflicts and adverse impacts on Indigenous communities. More information is provided in the relevant sections below. The costs for the safeguards are embedded in the components discussed in the previous sections.  
+
+### The project's M&E system will comply with relevant GCF policies and agreements, using a customized results-based approach to track inputs, activities, output, impact and financial flows, based on GIZ’s standard operating procedures, project specific plans (see funding proposal annexes 5 and 11), GCF requirements, and local and national monitoring systems and procedures.  
+
+Oversight will be provided by GIZ as AE and, with GIZ as EE ensuring implementation, while BPDLH supervises and reports on disbursements, integrating local data  
+
+2 Undang-Undang Cipta Kerja (UUCK) 2020 Law, or omnibus job creation act.  
+
+---  
+**Note:** Page numbers are preserved for reference.
+
+
+---
+*Chunk pages 85–85*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=821 (sys=94, user=727), max_out=1024, ctx=8192
+---
+
+# GCF/B.40/02/Add.10/Rev.01  
+## Page 85  
+
+### Additional allocation: Project management and contingency (total cost: EUR 7.3 million; GCF cost: EUR 3.41 million)  
+
+20. This project will be managed by the project management unit (PMU) led by a director of the Indonesian provincial Department of Environment and Forestry (Dinas LHK) on behalf of the government of the province of West Kalimantan, supported by staff from the four executing entities (EEs) – BPDLH, SNAL, the Indonesian MoEF and GIZ – handling daily operations and local coordination. The PMU includes finance, operations, human resources, procurement, contracting officers, and technical specialists in areas such as ecosystem-based adaptation, agroecology, and gender inclusion. M&E is integrated within the PMU to oversee project progress and ensure goals are met effectively. More information is provided in the sections below.
+
+### III. Assessment of performance against investment criteria  
+
+#### 3.1 Impact potential              Scale: High  
+
+21. The project is expected to generate substantial impact by addressing the environmental and social vulnerabilities of rural communities in West Kalimantan through integrated interventions.  
+
+22. The project, structured as a cross-cutting initiative with equal emphasis on mitigation and adaptation (50 per cent each), is designed to achieve significant outcomes in both areas over a seven-year implementation period. The project aims to avoid or reduce 16.05 Mt CO2 eq emissions over seven years (project duration) and 43.5 million Mt CO2 eq over twenty years (lifespan).  
+
+#### 3.2 Paradigm shift potential          Scale: High  
+
+25. The project is innovative and potentially transformative for several reasons:  
+(a) The provincial jurisdictional level selected, through extensive collaboration with regency-level governments (kabupaten), allows for replication across the archipelago. This strategy integrates government-led multi-stakeholder processes with external  
+
+> **Note:** The text appears to be incomplete or cut off at this point. The rest of the content seems to continue with a discussion about the project's approach and potential impact, but it ends abruptly without further details.
+
+---  
+**Page 85**
+
+
+---
+*Chunk pages 86–86*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=789 (sys=94, user=695), max_out=1024, ctx=8192
+---
+
+# GCF/B.40/02/Add.10/Rev.01  
+## Page 86  
+
+### (b) The project adopts a holistic approach, encompassing sustainable production, including in key areas such as carbon-rich peatlands and support to Indigenous and other local communities. It includes the creation of capacity-development programmes and key partnerships which facilitate active and meaningful participation of local communities; and developing sustainable value chains for global commodities.
+
+### (c) The exit strategy is robust, aligning with national REDD+ processes and enhancing the country’s capacity to secure results-based payments. It focuses on creating sustainable financial mechanisms to attract private and public investments, ensuring a steady flow of funds for climate initiatives. The strategy includes developing business models for low-carbon investments and establishing a subnational financing structure to support long-term climate action. This involves training local financial managers, implementing transparent financial systems, and collaborating with local financial institutions to maintain ongoing funding for climate resilience and mitigation efforts, ensuring sustainability beyond the project's duration.
+
+## 3.3 Sustainable development potential           Scale: High  
+
+26. As a cross-cutting proposal combining forests and land use, ecosystems and ecosystem services, most vulnerable people and communities and health and well-being, and food and water security, this project delivers highly on co-benefits, including biodiversity and other ecological services as well as livelihoods and the forest-related economy. These include improving soil quality, water retention, avoiding erosion, wildlife habitat and excessive sedimentation due to reduced deforestation and degradation, reducing threats of fires, especially in peatland ecosystems, biodiversity, adoption of sustainable agricultural practices which support food security and sustainable production practices, enhanced health and food security for local communities including Indigenous Peoples, enhanced business, entrepreneurial and vocational skills, increased productivity and livelihoods, and a range of elements empowering women beneficiaries.  
+
+## 3.4 Needs of the recipient            Scale: High  
+
+27. While located in a middle-income country, West Kalimantan is classified as one of the poorer provinces of Indonesia, partly due to its remoteness and difficulty of access to the interior of Kalimantan. In addition, a large proportion of the targeted beneficiaries are Indigenous Dayak peoples who have historically been economically and socially marginalized, despite the fact that they have helped conserve and sustainably manage the province’s exceptional natural ecosystems. In order to address the specific needs of Indigenous Peoples, the project includes a dedicated Indigenous Peoples mechanism.  
+
+## 3.5 Country ownership           Scale: High  
+
+28. In addition to the national designated authority indicating this proposal as high priority and providing a no-objection letter, alignment with the national REDD+ strategy of Indonesia further strengthens country ownership as the strategy was developed by national institutions and builds on the institutions and financial mechanisms developed as part of Indonesia’s REDD+ readiness process. Accordingly, the project includes two national EEs, namely MoEF and BPDLH.  
+
+## 3.6 Efficiency and effectiveness              Scale: Medium to high
+
+
+---
+*Chunk pages 87–87*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=990 (sys=94, user=896), max_out=1024, ctx=8192
+---
+
+# GCF/B.40/02/Add.10/Rev.01  
+## Page 87  
+
+### 29.  
+The proposal demonstrates the efficiency and effectiveness of the project by presenting a detailed economic and financial analysis (EFA). The EFA assesses the economic and financial viability of forest land-use changes and commodity production on a total of 335,000 hectares of land targeted by the project, which is aligned with the description in the funding proposal. The EFA compares the business-as-usual scenario with the project scenario, transitioning from unsustainable agricultural activities and unmanaged forests to sustainable agriculture and community forests. The data and assumptions used in the model are from a mixture of literature review, sources from the Indonesian government and stakeholder consultations on the ground.
+
+### 30.  
+Economic viability in the long run is demonstrated through the results against economic indicators for the two types of activities mentioned above, including different land uses and commodities such as community forests, high-level forest conservation, coffee, rubber, and palm oil. The valuation of economic benefits has been primarily derived from the value of greenhouse gas (GHG) emissions reduced, using the World Bank data on the shadow price of carbon. Using a cost of carbon of EUR 40 per t CO2eq, the model generates an incremental net present value of EUR 723 million, with a benefit-to-cost ratio of 3.1 in the with-project scenario, demonstrating the project's economic viability in the 20 years of lifetime.  
+
+Valuation of other potential economic and social benefits has not been conducted due to data unavailability, but are described in the EFA narrative (see funding proposal package, annex 3).
+
+### 31.  
+Financial viability in the long run and the need for the highest concessionality are demonstrated through the profitability indicators for the same two types of activities. For the commodity production, the project scenario generates returns above the financial discount rate of 12 percent, with the overall financial internal rate of return of 20 percent and net present value of USD 30 million. The results are robust to the sensitivity analysis conducted on the decrease in revenues and increase in costs, and will generate negative net present value only when it reaches 50 percent reduction in revenues.  
+
+The model tests profitability using concessional (with GCF) and commercial loans with 15 percent and 25 percent interest rates respectively, with 3 years tenor. Results are negative for some forestry activities and break-even points are at least from four years for the commodities, proving that commercial loans are not the viable option in this project.
+
+### 32.  
+The project’s mitigation cost is EUR 1.85 per t CO2 eq, and the adaptation cost is EUR 44 per direct beneficiary and EUR 5 per total beneficiary over the 7-year project implementation period (GCF cost). These costs are on the lower end of the GCF portfolio in forestry and land-use projects. The co-financing ratio is 0.68.  
+
+The project references the application of best practices to reduce deforestation and promote sustainable climate-resilient and low-emission investments. Moreover, the potential for catalysing and leveraging public and private sector investments has been analysed and presented in detail in annex 2f, including an analysis of the domestic carbon market, other funds, and impact investors.
+
+## IV. Assessment of consistency with GCF safeguards and policies  
+
+### 4.1 Environmental and social safeguards  
+
+### 33.  
+Project overview. As regards safeguards, the project aims to reduce GHG emissions from deforestation and degradation, enhance forest carbon stocks through reforestation and forest land rehabilitation, improve good agriculture practices and ultimately strengthen the resilience of forest and peat landscapes in West Kalimantan. It will also provide small grants to Indigenous Peoples and local communities.  
+
+The project’s environmental and social co-benefits include enhanced conservation of biodiversity and water resources through adoption of sustainable agricultural practices and biodiversity conservation measures that avoid soil...  
+
+> Internal rate of return was not calculated due to non-conventional cash flows.
+
+
+---
+*Chunk pages 88–88*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1000 (sys=94, user=906), max_out=1024, ctx=8192
+---
+
+# GCF/B.40/02/Add.10/Rev.01  
+## Page 88  
+
+### Environmental and Social (E&S) risk category and safeguard instruments  
+The project is classified as Category B by the AE which the Secretariat confirms, and it is within the AE’s accreditation level. The activities of the project will have potential limited adverse environmental and/or social risks and impact that individually or cumulatively, are few, generally site-specific, largely reversible, and can be readily addressed through implementation of mitigation measures. An Environmental and Social Impact Assessment (ESIA) has been conducted and based on it, an Environmental and Social Management Plan (ESMP) has been prepared. The project consists of various activities and subactivities that generate several site-specific activities with various EEs, including government units and communities. These site-specific activities will be identified and developed during the project implementation with the respective EEs.
+
+### Compliance with GCF Environmental and Social Safeguards (ESS) standards  
+The following paragraphs describe how the project complies with the standards.
+
+### ESS1 (Assessment and Management of Environmental and Social Risks and Impacts)  
+The AE conducted an ESIA and prepared an ESMP for the project. The project will provide technical assistance, capacity-building, and linkages to services for various government and private sector entities, including local communities and individual smallholders, to help them develop, adopt and implement policies, plans and best practices. The ESIA offers an assessment of the general risks and/or impacts, and the ESMP provides the measures to be implemented on the ground. The specific interventions that will be developed during implementation will be assessed and vetted on their impacts and risks by subjecting them to environmental and social (E&S) screening and the use of exclusion lists. The ESS Team shall ensure that the ESMP is followed in the implementation of the activities implemented by the PMU and the activities under the on-grant mechanism managed by BPDLH will be processed through the Environmental and Social Management System of BPDLH.
+
+### ESS2 (Labour and Working Conditions)  
+The ESIA has assessed that the risk regarding labour and working conditions is low particularly among direct project workers. It has highlighted the risk of infringement of "decent work" standards and physical harm to government Forest Management Unit (FMU) staff with violators and other physical hazards during the enforcement of forestry regulations. The ESMP has provided measures including capacity-building of project staff, an information campaign on labour rights, medical screening of workers, prohibition of child labour, and provisions of safety equipment. For the risk of physical harm during enforcement of regulations, measures proposed include training of FMU staff involved in enforcement, procurement of forest patrolling equipment, first-aid kits, and mandatory use of personal protective equipment.
+
+### ESS3 (Resource Efficiency and Pollution Prevention)  
+The ESIA has identified the use of pesticides and other chemical products in community or smallholder farming and agriculture and waste from the production of fish feeds as potential pollution sources. These would come from the pursuit of agricultural and forest production and the aquaculture industry for coastal communities. The measures being proposed include: not supporting the direct procurement of agrochemicals; providing support to blacklist selected crops where extensive negative impacts from agrochemicals are widely documented (e.g. oil palms); and provide capacity-building and awareness-raising for villagers, farmers, partners and trainers/extension staff on the hazards and responsible use of agrochemicals/pesticides. The project will also support an integrated pest management approach. It is recommended that the project consider the potential for soil erosion and sedimentation of water bodies from agricultural production, forestry production activities and other earth-moving works as necessary. The project should also consider the
+
+
+---
+*Chunk pages 89–89*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1028 (sys=94, user=934), max_out=1024, ctx=8192
+---
+
+# GCF/B.40/02/Add.10/Rev.01  
+## Page 89  
+
+### 39. ESS4 (Community Health, Safety and Security)  
+The ESIA has identified (a) the risk of social conflict arising from misunderstanding due to "insufficient human capacities, knowledge and experiences of culture, tenure, and religious values of the Indigenous Peoples and local communities," as well as "insufficient communication and consultation skills"; and (b) the risk associated with possible increased use of pesticides in agriculture. Misunderstanding may occur between and within communities due to perceived unfairness in the allocation of project benefits/assistance.  
+
+The management measures being proposed include:  
+- (i) the hiring of a dedicated ESS team;  
+- (ii) initiation of the free, prior and informed consent (FPIC) process prior to implementation of the project and continuing throughout the project with all affected customary communities, villages, and other stakeholders;  
+- (iii) continued consultations, conduct of dialogues and public awareness-raising campaign among Indigenous Peoples, local communities and vulnerable groups, about benefits and possible emerging problems;  
+- (iv) skills training of field facilitators;  
+- (v) provision of grievance mechanism; and  
+- (vi) provision of a conflict resolution desk.  
+
+The management for the risk of pesticide use is addressed under ESS3 above.  
+
+### 40. ESS5 (Land Acquisition and Involuntary Resettlement)  
+The ESIA has identified possible economic displacement (loss of livelihood) as one of the impacts of the planned rehabilitation of degraded areas in the APL and peat and mangrove areas as the activity might aggravate the socioeconomic conditions of local impoverished communities in the project areas. However, the mitigation measures proposed in the ESMP enumerate the strategies and approaches that have been planned under the project to ensure that such potential impacts are avoided. These include activities such as the Participatory Land Use Planning, the conduct of FPIC, and the provision of a grievance mechanism.  
+
+Overall, the project will also not engage in any activities that would trigger compensation rights, and if a potential loss of livelihood is expected, identified or claimed, the project will not intervene in the respective area. The FPIC process will also be initiated and maintained throughout the lifetime of the project with all participating villages, affected vulnerable groups and other stakeholders prior to the implementation of any activities.  
+
+### 41. ESS6 (Biodiversity Conservation and Sustainable Management of Living Natural Resources)  
+The climate mitigation part of the project also conserves biodiversity as it is generally aimed at reducing the rate of deforestation. However, the ESIA has identified the risk of expansion of agricultural production into primary forest and natural habitat in the implementation of the climate adaptation policies which rely on the development of resilient production forestry and an agriculture value chain.  
+
+The ESMP has enumerated strategies and approaches already embedded in the project design such as non-promotion of agricultural land expansion, monoculture farming systems, or timber plantations; the use of lands that are already used for agriculture or production forests that are highly degraded; participatory land-use planning; capacity-building and awareness campaign on impacts of monoculture systems on biodiversity, natural habitat of endemic species and ecosystem services; and development and adoption of guidelines on conservation and biodiversity.  
+
+In general, any project activity that could have the potential to negatively impact areas of ecological value or result in the conversion/degradation of natural habitats will be prohibited under the project.  
+
+### 42. GCF Indigenous Peoples Policy and ESS7 (Indigenous Peoples)  
+With the presence of Indigenous Peoples in the project area, the AE has prepared an Indigenous Peoples Plan. The AE notes that the Indigenous Peoples Plan has been prepared with the West Kalimantan chapter of the Indigenous Peoples Alliance of the Nusantara.  
+
+The funding proposal envisages an on-granting mechanism including both financing and technical support to Indigenous Peoples. Stakeholder engagement both with Indigenous Peoples and local communities in the project area was undertaken in the development of the funding proposal. Free, prior and informed consent (FPIC) process is being implemented.
+
+
+---
+*Chunk pages 90–90*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=990 (sys=94, user=896), max_out=1024, ctx=8192
+---
+
+# Page 90
+
+## GCF/B.40/02/Add.10/Rev.01
+
+## 43. ESS8 (Cultural Heritage)
+
+The ESIA identified two key risks posed by the project: (i) project activities could potentially damage the integrity of culturally or archaeologically significant items or structures encountered during implementation; and (ii) forest management plans that involve changes in land use or tenure may restrict access to areas traditionally used for cultural purposes. To address these risks, the ESMP includes several measures, such as consulting with national, regional, and local museums regarding historical, Indigenous, or cultural heritage areas; building the capacity of regency and provincial services to recognize Indigenous Peoples' rights and cultural heritage sites within State Forests; and conducting consultations with authorities and local communities to identify cultural heritage areas, among other actions. The ESMP also included the preparation of a chance find procedure and management plan to identify and avoid impacts on physical cultural resources during implementation.
+
+## 44. Implementation Arrangements
+
+As related to safeguards, the project will engage a team of experts in various fields to make up an ESS team that will support the development, capacity-building, training, implementation, monitoring and reporting needed to carry out the ESMP. At the national level, the project will engage an adviser on ESS, Indigenous Peoples and gender who will ensure that safeguards are implemented and monitored. Other advisers and staff at the national level who have safeguards-related functions include the Stakeholder Engagement/Liaison Adviser, High Conservation Value- High Carbon Stock Area staff, Social Assessment staff, Gender Expert staff, and Community Livelihoods staff. At each regency, the team will be supported by a Regency Adviser who is charged with ensuring that project implementation at the district level is in line with its objective and goals, including on E&S safeguards. There will also be a Regency Facilitator who will support and facilitate the process of safeguards implementation including liaising with relevant stakeholders at district level. Additional ad hoc specialists will be hired on a needs basis, such as training specialist, biodiversity specialist, gender specialist, land tenure specialist, grievance redress mechanism (GRM) specialist, and village facilitators. The E&S safeguards system will be mainstreamed into the project’s operations. The main function of the ESS team will be to conduct and oversee the ESMP integration into the project operations and its implementation over the lifecycle of the project. The detailed functions of the ESS team are also described in the ESMP.
+
+## 45. Stakeholder engagement and grievance redress mechanism (GRM)
+
+The project concept and design benefited from extensive consultations with key stakeholders involving key national government agencies such as the MoEF, the Ministry of Finance, the BPDLH, various government bodies of the province of West Kalimantan as well as in the target districts and villages. The project has also consulted the local communities, including representatives from the Indigenous Dayak communities, civil society organizations, non-governmental organizations, universities, representatives from the private sector and development partners, and members of the relevant multi-stakeholders’ fora including the REDD+ Working Group, Working Group of Social Forestry, Forum of Forest Management Units, Working Group on Watershed Management, and Tengkawang Network. These consultations were documented in annex 7b of the funding proposal, and feedback and suggestions were addressed in the programme design. A Stakeholder Engagement Plan has been prepared and submitted as part of the funding proposal (annex 7a). The Stakeholder Engagement Plan document discusses the process of stakeholder identification, the principles of engagement, and the plan for the consultations and engagements during the project implementation including on FPIC procedures, consultations, capacity-building and workshops, as well as disclosure procedures and protocols.
+
+
+---
+*Chunk pages 91–91*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=932 (sys=94, user=838), max_out=1024, ctx=8192
+---
+
+# GCF/B.40/02/Add.10/Rev.01  
+## Page 91  
+
+### 46. The ESMP requires the establishment of a grievance redress mechanism (GRM) and a Conflict Resolution Desk. The ESS team is tasked to develop, operationalize and establish the GRM and inform stakeholders on how to use it. The GRM will be disseminated early in the stakeholder engagement process in a manner that can be easily understood by the diverse stakeholders, including vulnerable people. The project also provides access to the AE’s GRM and the GCF Independent Redress Mechanism. In line with the GCF Indigenous Peoples Policy, the GCF Indigenous Peoples focal point will be available for assistance at any stage, including before a claim has been made.
+
+### 47. Sexual exploitation, sexual abuse and sexual harassment (SEAH) safeguarding.  
+The SEAH safeguarding approach proposed by the AE is considered by the Secretariat to be compliant with the SEAH provisions pursuant to the GCF revised Environmental and Social Policy. The AE has triggered its own safeguards standard on SEAH and identified in the ESIA the potential SEAH risks related to training and capacity building activities and the implementation of community-based peatland management systems in targeted areas, where small holder farmers, service provider staff, and community members interact. The AE also identifies mitigation and management measures, as part of the ESIA and ESMP, which include the establishment of a distinct protocol for addressing SEAH grievances as part of the project's GRMs. The AE will also ensure that grievances from communities and stakeholders will be responded to and managed in a survivor-centered and gender-responsive manner.
+
+### 4.2 Gender policy  
+### 48. The AE has provided a gender assessment and action plan, therefore complies with the GCF gender policy.
+
+### 49. Despite Indonesia’s commitment to women’s empowerment and gender equality, the distribution of development benefits – particularly in climate change adaptation and mitigation – remains uneven between women and men. Women face several barriers to participating in activities related to climate resilience and forestry. They are often reluctant to engage in initiatives that do not guarantee additional income and are constrained by heavy domestic workloads, with little role-sharing between men and women. Their contributions and ideas are frequently overlooked, and their limited market access hinders their ability to promote climate resilient value chains. Additionally, societal perceptions that women cannot perform heavy work or work independently, along with a lack of digital literacy, further restrict their involvement. Specific assistance programmes for women’s groups are lacking, and gender issues are not prioritized as an indicator in forestry sector initiatives, leading to the absence of sustainable gender mainstreaming activities.
+
+### 50. Based on the findings of the gender assessment, the project will focus on creating an enabling environment that increases women's engagement. This will be achieved through awareness-raising, training, and the development of gender-responsive systems and resources for various stakeholders, including duty bearers and communities. These resources include gender-responsive operational guides, regulatory frameworks, gender mainstreaming guides, minimum quotas for women's representation in local management institutions, and collaboration platforms that include institutions focused on gender issues. The project will also create opportunities for women by enhancing their skills and providing access to information and knowledge on topics such as natural resource management, forest utilization and protection, marketing, and agro-processing. Additionally, the project will develop financial instruments to ensure women have access to the financial resources necessary to engage in and benefit from land- and forest-based businesses. These interventions are expected to bring about changes that will increase women’s engagement, providing them opportunities to benefit more equitably while gaining relevant skills and information to sustain their involvement. Systems
+
+
+---
+*Chunk pages 92–92*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=967 (sys=94, user=873), max_out=1024, ctx=8192
+---
+
+# Page 92
+
+## 4.3 Risks
+
+### 4.3.1. Overall programme assessment (low risk)
+
+52. The project aims to support the Government of Indonesia and people of West Kalimantan in the transition to sustainable and climate-resilient management of forests and landscapes at scale. The overall objective is to reduce GHG emissions from deforestation and degradation, enhance forest carbon stocks through reforestation and forest land rehabilitation, improve good agriculture practices and ultimately strengthen the resilience of forest and peat landscapes in West Kalimantan.
+
+Activities will address the two main climate risks of (i) increased forest and peat fire due to increased temperatures and droughts; and ii) reduced agricultural production due to increased drought. This will enable a paradigm shift towards climate-resilient and low-emission pathways.
+
+The project is comprised of three components: (i) Component 1 - Institutional and regulatory frameworks; (ii) Component 2 - Sustainable commodity production and social forestry; and (iii) Component 3 - Management, protection and rehabilitation of forest and peatland ecosystems.
+
+With a total cost of EUR 100.19 million, the project will be funded by EUR 59.48 million from GCF as grant, with additional co-financing totalling EUR 40.71 million grant from BMZ, MoEF, SNAL, BMZ (as GRASS [Greening Agricultural Smallholder Supply Chains in Kapuas Hulu] commissioning agreement) and the KfW development bank for a co-financing ratio of 1:0.68.
+
+### 4.3.2. Accredited entity/executing entity capability to execute the current programme (low risk)
+
+53. GIZ, will serve as the accredited entity. GIZ has eight approved GCF projects across Asia, Latin America and the Caribbean, with a strong track record in Indonesia, where it has operated since 1975, working on climate change, forestry and agricultural supply chains.
+
+GIZ Indonesia currently provides EUR 45 million in technical assistance in the green sector and has a total portfolio of EUR 200 million. The AE is also acting as the EE and will co-execute the project with three other EEs namely, BPDLH, MoEF and SNAL.
+
+The AE will provide oversight, guidance and quality assurance to the EEs per accreditation master agreement and requirements of the funded activity agreement (FAA), which is still under development. The AE has also provided adequate assurance that the three EEs have the necessary capacity to undertake the role as EE.
+
+### 4.3.3. Programme-specific execution risks (low risk)
+
+54. Co-financing: We acknowledge the substantial co-financing totalling EUR 40.71 million (grants and in-kind), resulting in a co-financing ratio of 1:0.68. If this co-financing does not materialize, it could significantly impact the project's intended outcomes, including reducing GHG emissions from deforestation and degradation, enhancing forest carbon stocks, improving agricultural practices, and strengthening the resilience of forest and peat landscapes in West Kalimantan.
+
+To mitigate this risk, clauses and covenants in the FAA are considered adequate to ensure the reporting and realization of the co-financing per GCF requirements, though the FAA for the proposed project has not yet been finalized.
+
+
+---
+*Chunk pages 93–93*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=877 (sys=94, user=783), max_out=1024, ctx=8192
+---
+
+# GCF/B.40/02/Add.10/Rev.01  
+## Page 93  
+
+### 55. Project viability (and concessionality)  
+The use of grants (i.e. 100 per cent concessionality) is considered reasonable based on the context highlighted in the funding proposal, which underscores the urgent need for comprehensive climate action in West Kalimantan, Indonesia. The funding proposal outlines the severe forest loss, frequent wildfires, and significant funding gaps for climate mitigation and adaptation efforts that the province faces. Given the limited public finance available for West Kalimantan, inadequate REDD+ results-based payments, and challenges in attracting private sector investment, the funding proposal emphasizes that grant funding is essential to implement necessary cross-cutting measures. The GCF grant will therefore support the establishment of vital enabling conditions, including regulatory improvements and investment frameworks, that are critical for effective forest and land management.
+
+### 4.3.4. Compliance risk (medium risk)  
+56. The Secretariat has conducted a comprehensive compliance risk assessment of the proposal, concluding that there is a medium level of inherent risk due to potential governance issues, specifically relating to the misuse of funds and the risk of money laundering (ML), terrorist financing (TF), and prohibited practices (PP). These risks are particularly sensitive in the context of large-scale development projects, where transparency, accountability, and ethical governance are essential to ensure that resources are utilized for their intended purposes.  
+
+57. The primary risks identified include the potential for corruption, particularly in the misuse of funds due to weak governance structures at various levels. The probability of misuse of funds is rated as medium, while its impact is deemed significant. Similarly, while the risk of money laundering and terrorist financing is categorized as low probability, the potential impact is high, particularly due to the global sanctions regime. Other key vulnerabilities identified include corruption and collusion between private sector entities and public authorities, which has been a historical driver of issues such as deforestation.  
+
+58. To address these risks, the proposal outlines several mitigation measures. For the misuse of funds, enhanced due diligence processes have been applied, and additional personnel will be engaged to support financial management and transparency at the local level. The decentralization of financial decision-making through the Indigenous Peoples and Local Communities (IPLC) mechanism and regular monitoring of financial disbursements further ensures transparency. To prevent ML/TF risks, thorough screenings of the UN sanctions list will be conducted for all entities, and GIZ’s rigorous procurement and financial management rules will be applied. Additionally, synergies with existing anti-corruption initiatives, such as those in the forestry sector, will further strengthen the integrity framework.  
+
+59. Given the comprehensive nature of these mitigation measures, the residual risk is significantly reduced. However, due to the complexity and scope of the project, risks of financial misuse and governance failures cannot be entirely eliminated. Nevertheless, with consistent application of the proposed safeguards, ongoing capacity development, and transparent procurement practices, the residual risks are expected to remain within acceptable limits, with a rating of medium. Continuous monitoring and adaptive measures will be essential to maintaining compliance integrity throughout the project's lifecycle.  
+
+### 4.3.5. GCF portfolio concentration risk (low risk)  
+60. In case of approval, the impact of this proposal on GCF portfolio concentration in terms of result area and single proposal is immaterial.  
+
+### 4.3.6. Recommendation  
+61. It is recommended that the Board consider the above factors in its decision.
+
+
+---
+*Chunk pages 94–94*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=795 (sys=94, user=701), max_out=1024, ctx=8192
+---
+
+# GCF/B.40/02/Add.10/Rev.01  
+## Page 94  
+
+### 4.4 Fiduciary  
+
+62. The financial management of the project will follow GIZ’s internal rules and regulations. GIZ will use its existing bank accounts at Deutsche Bundesbank and Commerzbank, setting up separate cost units to track GCF funds clearly and distinctly. All transactions will adhere to generally accepted accounting principles and procedures approved by the German Government. Funds will be disbursed based on project progress, and further disbursements will require proper use of funds and progress reports from the executing entities (GIZ, BPDLH and SNAL). Independent external auditors will conduct annual financial audits in line with International Auditing Standards.  
+
+63. At the start of each year, an annual plan will outline the activities for the year, which will be approved by the Project Management Unit (PMU). This plan is broken down into quarterly plans and budgets, approved and disbursed by BPDLH. Each implementation partner reports monthly on budget use, with these reports integrated into BPDLH’s central accounting system, forming the basis for financial reporting to GIZ.  
+
+64. Funds are also disbursed annually to target communities for implementing village forest licences. Each village prepares an annual budget based on their management plan, which is then transferred by BPDLH. The Indigenous Peoples and local communities grant mechanism follows BPDLH’s procedures under the Terra Fund.  
+
+65. GIZ’s financial management system ensures transparent and accountable use of funds, while the use of separate cost units, adherence to accepted accounting principles, and regular audits provide a strong framework for financial oversight. Monthly and annual reporting requirements allow for an effective financial control and ensure efficient use of project funds.  
+
+### 4.5 Results monitoring and reporting  
+
+66. The project uses a result-based M&E system grounded in GIZ standard operating procedures and a comprehensive monitoring plan to track inputs, activities, output, impact, and financial flows (section E.7.1). The Project Management Committee oversees the annual plans, budgets and M&E system (section B.4.4). Key results focus on reducing GHG emissions, enhancing community resilience and promoting sustainable land and forest management. Indicators include GHG emissions reduction, beneficiaries adopting climate-resilient practices, and new regulatory frameworks. Outputs and indicators are:  
+
+(a) Hectares of natural resources under improved management;  
+(b) Smallholder farmers practising climate-resilient agriculture; and  
+(c) Improvement in food security and poverty-gap indices.  
+
+67. These align with the theory of change and logical framework for sustainable, climate-resilient outcomes (section B.2(a)). The theory of change outlines a shift towards sustainable management practices.  
+
+## Summary risk assessment Rationale  
+
+Overall programme: Low  
+The funding proposal has an overall risk assessment of ‘medium’ based on the issues highlighted. It is recommended that the Board consider the above factors in its decision.  
+
+Accredited entity (AE)/executing entity (EE) capability: Low  
+Project-specific execution: Low  
+GCF portfolio concentration: Low  
+Compliance: Medium
+
+
+---
+*Chunk pages 95–95*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=729 (sys=94, user=635), max_out=1024, ctx=8192
+---
+
+# GCF/B.40/02/Add.10/Rev.01  
+## Page 95  
+
+### 4.6 Legal assessment  
+
+68. The Accreditation Master Agreement was signed with the Accredited Entity on 15 November 2017, and became effective on 18 January 2019, which was amended and restated pursuant to a first amendment and restatement agreement dated 3 December 2023, and which became effective on 18 January 2024 (the “AMA”).  
+
+69. The Accredited Entity has provided a legal opinion or certificate confirming that it has obtained all internal approvals and it has the capacity and authority to implement the project.  
+
+70. The proposed project will be implemented in the Republic of Indonesia (“Indonesia”), a country in which GCF is not provided with privileges and immunities. This means that, amongst other things, GCF is not protected against litigation or expropriation in this country, which risks need to be further assessed. The GCF Secretariat provided a draft agreement on privileges and immunities (P&I) and a background note to the Government of Indonesia on 7 December 2015. It further submitted an updated P&I agreement and a background note to the Government of Indonesia on 2 April 2019.  
+
+71. The Heads of the Independent Redress Mechanism (IRM) and Independent Integrity Unit (IIU) have both expressed that it would not be legally feasible to undertake their redress activities and/or investigations, as appropriate, in countries where the GCF is not provided with relevant privileges and immunities. Therefore, it is recommended that disbursements by the GCF are made only after the GCF has obtained satisfactory protection against litigation and expropriation in the country, or has been provided with appropriate privileges and immunities.  
+
+72. To address the matters raised in this section, it is recommended that any approval by the Board is made subject to the following conditions:  
+(a) Signature of the funded activity agreement in a form and substance satisfactory to the GCF Secretariat within 180 days from the date of Board approval; and  
+(b) Completion of the legal due diligence to the satisfaction of the GCF Secretariat.
+
+
+---
+*Chunk pages 96–96*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=752 (sys=94, user=658), max_out=1024, ctx=8192
+---
+
+# GCF/B.40/02/Add.10/Rev.01  
+## Page 96  
+
+### Independent Technical Advisory Panel’s assessment of  
+#### FP248  
+##### Proposal name: Land-based Mitigation and Adaptation through a Jurisdictional Approach in West Kalimantan  
+###### Accredited entity: Deutsche Gesellschaft für Internationale Zusammenarbeit (GIZ) GmbH  
+###### Country: Indonesia  
+###### Project/programme size: Medium  
+
+### I. Assessment of the independent Technical Advisory Panel  
+
+#### 1.1 Overview  
+
+1. This is the first submission of the funding proposal titled “Land-based Mitigation and Adaptation through a Jurisdictional Approach in West Kalimantan” submitted to the independent Technical Advisory Panel (iTAP) under the standard proposal approval process.  
+2. The accredited entity (AE) is the Deutsche Gesellschaft für Internationale Zusammenarbeit GmbH (GIZ). GIZ will also act as executing entity (EE), together with the Indonesian Environment Fund (IEF) (Badan Pengelola Dana Lingkungan Hidup or BPDLH), Solidaridad Network Asia Limited (SNAL) and the Ministry of Environmental and Forestry (MoEF), representing the Government of Indonesia.  
+3. The overall objective of this cross-cutting project is to reduce greenhouse gas (GHG) emissions from deforestation and forest degradation, enhance forest carbon stocks through reforestation and forest land rehabilitation, improve good agricultural practices and ultimately strengthen the resilience of forest and peat landscapes in West Kalimantan, specifically in the following five regencies: Kapuas Hulu, Ketapang, Kubu Raya, Sanggau and Sintang.  
+4. The expected mitigation outcome is 16.05 million tonnes of carbon dioxide equivalent (Mt CO2 eq) from mitigation results area 4, forestry and land use, and over the seven-year implementation period of the project.  
+5. The expected adaptation outcome encompasses 680,107 direct and 4,861,269 indirect beneficiaries, with the project focusing on three adaptation results areas (ARAs): most vulnerable people and communities (ARA 1), health and well-being, and food and water security (ARA 2) and ecosystem and ecosystems services (ARA 4).  
+6. The project will achieve the mitigation and adaptation outcomes by using a holistic approach structured around three components:  
+
+##### (a) Component 1: Institutional and regulatory frameworks. This is intended to attract investments into sustainable and climate-resilient agricultural and agroforestry value chains. The component focuses on strengthening institutional and regulatory frameworks to implement policies on sustainable and climate-resilient forest management, developing land-use plans that account for climate change, identifying high conservation value (HCV) and high carbon standard (HCS) areas and creating a dedicated grant mechanism to ensure the active engagement and participation of Indigenous Peoples (IPs) in sustainable land management practices;
+
+
+---
+*Chunk pages 97–97*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=805 (sys=94, user=711), max_out=1024, ctx=8192
+---
+
+# GCF/B.40/02/Add.10/Rev.01  
+## Page 97  
+
+### (b) Component 2: Sustainable agricultural supply chains production and social forestry  
+This component will increase the climate resilience of vulnerable local communities as well as their capacities to engage in sustainable commodity production and social forestry. This will be achieved by producing sustainable agricultural and agroforestry commodities and facilitating the access to new markets for these sustainable products, while establishing a monitoring and evaluation (M&E) framework that measures environmental compliance and ensures the scalability and replicability of sustainable practices;  
+
+### (c) Component 3: Management, protection and rehabilitation of forest and peatland ecosystems  
+This component will focus on improving the capacity of forest management units (FMUs) and private sector actors to engage in implementing climate-informed protection and sustainable management of forest and peatland ecosystems, as well as in supporting local communities in obtaining land-use rights and implementing various social forestry schemes.  
+
+## 6. The overall budget for this funding proposal is EUR 100.12 million, with a funding request to GCF of EUR 59.48 million as a grant.  
+
+## 7. In its assessment, the iTAP considered all documents as submitted on 25 July 2024 as well as the answers to questions of the iTAP received on 13 August and during the online meeting on 14 August 2024.  
+
+### 1.2 Impact potential                Scale: Medium to high  
+
+## 8. The iTAP assessment of the climate impact potential is guided by decision B.33/12, which explains the principles for demonstrating the mitigation and the adaptation impact potential of GCF-supported activities, as well as by other appraisal and assessment guidance that considers the relevant investment criteria and is endorsed by the Board.  
+
+### Mitigation  
+
+## 9. West Kalimantan is the third largest province in Indonesia and one of the country’s deforestation hotspots. According to the funding proposal, since 1990, the forests in West Kalimantan have declined by 27 per cent, from 7.5 million hectares (ha) to 5.4 million ha in 2020 and the deforestation rate increased from 70,911 ha/year in 1990–2000 to 95,452 ha/year in 2010–2020.  
+
+## 10. More specifically, the five priority project regencies are severely threatened by deforestation and forest degradation, with annual deforestation rates of 5,900 ha in Kapuas Hulu, 27,000 ha in Ketapang, 8,800 thousand ha in Kubu Raya, 2,900 ha in Sanggau and 4,700 ha in Sintang Regency between 1991 and 2020.  
+
+## 11. The implementation of the activities in the three project components mentioned above are expected to reduce GHG emissions from deforestation and forest degradation and enhance forest carbon stocks (table 1).  
+
+### Table 1: Cumulative greenhouse gas emission reduction by project component  
+
+| Total expected greenhouse gas emission reductions and removals (t CO2 eq) | Component |
+|--------------------------------------------------------------------------|-----------|
+| 7,620,237                                                                | 1         |
+
+---
+
+
+---
+*Chunk pages 98–98*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=842 (sys=94, user=748), max_out=1024, ctx=8192
+---
+
+# GCF/B.40/02/Add.10/Rev.01  
+Page 98  
+
+## Component 2  
+- **Component 3**  
+  - **Total**: 16,045,956  
+
+### Source: Funding proposal, annex 22a, table 3, and annex 22a, modified.  
+
+## 12. Annex 22a to the funding proposal explains the methodological approach in detail, including how the project applies the second Forest Reference Level (FRL) for West Kalimantan, which is aligned with the national FRL. It also explains the methodologies for quantifying the mitigation impact potential of the specific activities, including a clarification of how key emission factors were derived. Annex 22b, as provided in the funding proposal summarizes the results of the expected mitigation outcome (table 2).  
+
+### Table 2: Summary of the estimated greenhouse gas emission reductions and removals in West Kalimantan  
+
+| Greenhouse gas source | Reference level | Projected emissions | Expected net mitigation benefit (tCO₂/year) | Total net mitigation benefit (tCO₂/year) |
+|-----------------------|------------------|---------------------|---------------------------------------------|------------------------------------------|
+| Deforestation         | 29,423,698       | 27,237,069          | 2,186,629                                   | 15,306,401                               |
+| Forest Degradation    | 825,041          | 765,850             | 59,191                                      | 414,336                                  |
+| Enhance forest carbon stocks (removal) | 639,758       | 684,616             | 44,858                                      | 314,005                                  |
+| Enhance forest carbon stocks (peat emission) | 22,070     | 20,468              | 1,602                                       | 11,213                                   |
+| Total Emission (FREL) | 30,270,809       | 28,002,919          | 2,245,820                                   | 15,731,950                               |
+| Total removal (FRL)   | 639,758          | 684,616             | 44,858                                      | 314,005                                  |
+| Total net emission (FREL/FRL) | 29,631,051    | 27,318,303          | 2,290,678                                   | 16,045,955                               |
+
+### Source: Funding proposal, annex 22a, table 1, and 22b.  
+
+## 13. Subactivity 1.1.2.4 in the funding proposal deals with the development and implementation of a provincial monitoring system for mitigation activities that will be aligned with the national measurement, reporting and verification (MRV) system of Indonesia. The monitoring system will use an online platform where all required information for monitoring and reporting the project’s mitigation progress will be inserted. During the question and answer process the AE explained the MRV approach of the project in more detail and clarified how this will provide information to national monitoring systems like the national GHG inventory system (https://signsmart.menlhk.go.id/)¹ and the national carbon registry (https://srn.menlhk.go.id/)². In addition, the AE explained that key stakeholders will receive capacity-building and technical support for securing a proper use of the monitoring system and the contribution to the national monitoring systems managed by the MoEF.
+
+### Notes:
+- ¹ Website available in Indonesian language  
+- ² Ibid.
+
+
+---
+*Chunk pages 99–99*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=961 (sys=94, user=867), max_out=1024, ctx=8192
+---
+
+# GCF/B.40/02/Add.10/Rev.01  
+## Page 99  
+
+### 14. Understanding of the level of alignment of the funding proposal to the national policies on REDD+ requires recognition that Indonesia has been one of the early movers in REDD+. In 2012 Indonesia published its first National REDD+ strategy for 2012–2020 and in 2016 the country submitted its first FRL. Indonesia submitted its first REDD+ results in 2018 and the National Strategy and Safeguard Information Summary in 2019. In 2022 Indonesia presented its REDD+ national strategy 2021–2030 and successfully completed both the technical assessment process for its second FRL and the technical analysis process for its second REDD+ results.
+
+### 15. At the subnational level, the Government of West Kalimantan has set an ambitious goal to achieve a 60 per cent reduction in GHG emissions, equivalent to 8.84 Mt CO2 eq per year from deforestation and 0.5 Mt CO2 eq per year from forest degradation, as per the FRL, to contribute to the nationally determined contribution target.
+
+### 16. The iTAP considers this funding proposal as fully aligned with Indonesia’s national and subnational plans and strategies on REDD+, acknowledges the completeness and transparency of the methodological approach and methodologies used for quantifying the mitigation impact potential and recognizes the level of alignment of activities aimed at supporting an MRV system for the project that is aligned with the national MRV system.
+
+### 17. The iTAP identified three aspects that, combined, can result in an overestimation of the mitigation impact potential:  
+(a) The funding proposal outlines several risks with a high probability of occurrence, including changes in political circumstances, coordination gaps between ministries and agencies, conflicts due to unclear or complex land tenure and use rights, insufficient human resources and capacity, low demand for locally and sustainably produced commodities and market fluctuations that affect the financial viability of investments in sustainable practices. Although the funding proposal foresees relevant mitigation strategies, any of these risks can lead to a reduction in the project’s mitigation impact, particularly because several of them may affect the implementation of component 1, where the highest mitigation impact potential is expected to be achieved;  
+(b) Potential reversals during the project lifespan were not considered in the calculations of the mitigation impact potential (e.g. forest or peat fires); and  
+(c) Currently, there is no clarity on how the local demand for forest products linked to forest degradation (e.g. firewood or wood as building material) will be met during the project implementation and without imposing additional costs on local communities. This uncertainty poses a risk of either reversing efforts to reduce emissions or displacing emissions from forest degradation instead of reducing them.
+
+### Adaptation potential  
+
+### 18. The Vulnerability Sourcebook (GIZ, 2014)³ and the Risk Supplement (GIZ, 2017) were used as a methodological approach for preparing climate impact chains and understanding the related climate change adaptation activities (funding proposal, annex 2c).  
+
+### 19. The funding proposal identifies three key current and future climate hazards in West Kalimantan: extreme rainfall events, higher temperatures and long dry spells. These climate hazards affect the biophysical systems by increasing the occurrence of floods, peat and forest fires, drought, loss of biodiversity, land degradation and soil erosion and reducing soil moisture in the cultivation areas.
+
+### 20. At the level of plantations and forest ecosystems, the increasing climate hazards cause tree and crop damage, decrease soil fertility, increase water stress and the occurrence of pests and diseases. Combined, these reduce the yield of forest and agricultural products and services,  
+
+³ See https://www.adaptationcommunity.net/download/va/vulnerability-guides-manuals-reports/vuln_source_2017_EN.pdf
+
+
+---
+*Chunk pages 100–100*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=943 (sys=94, user=849), max_out=1024, ctx=8192
+---
+
+# GCF/B.40/02/Add.10/Rev.01  
+## Page 100  
+
+Both qualitatively and quantitatively, and induce a reduction in forest area and a migration of some crop systems to a higher altitude.  
+
+21. Smallholders and Indigenous Peoples are exposed to these climate hazards and suffer from the decreasing provision of goods and ecosystem services from agricultural and forest areas, reducing income generation and food security. In addition, several factors increase the vulnerability of local communities: low capacity and lack of coordination in the public sector; unclear or complex land tenure and use rights; insufficient integration of Indigenous and local communities in sustainable land planning; lack of finance and lack of sustainable business models; and inadequate consideration of climate change in land planning.  
+
+22. The consequence is a high climate risk for institutional, social and ecological systems that requires a systemic and multi-stakeholder approach towards adaptation to climate change. Without the project, vulnerability to climate change will increase owing to the combined effects of increasing climate hazards, deforestation, forest resilience being undermined through forest degradation and the low adaptation capacity of an increasing population.  
+
+23. As a response, the project will facilitate the integration of climate change adaptation into medium-term regional development plans, promote an institutional framework for adaptation and mitigation activities, create a grant mechanism that secures the engagement of Indigenous Peoples in climate-resilient activities, and promote climate-resilient agriculture, forestry and agroforestry systems (annex 2a). These activities will lead to increasing the adaptation capacity of 680,107 direct and 4,861,269 indirect beneficiaries.  
+
+24. In order to monitor and evaluate progress in adapting to climate change the project will support the development of a monitoring system at the province and regency levels (subactivity 1.1.1.4). It will integrate an online platform where all required information can be uploaded for monitoring and extracted for reporting purposes. The system will be linked with the national monitoring system and will be developed together with the provincial monitoring system for mitigation activities. The project will provide technical assistance to government agencies on monitoring and evaluating adaptation results and outcomes.  
+
+25. According to further clarification provided by the AE during the question and answer process, the Indonesian Government has devised a vulnerability Index Data Information System (SIDIK), a specialized data tool tailored towards measuring and monitoring the vulnerability of Indonesian communities. The project will collect information for calculating the values for the five participating regencies and will use these as a baseline to track future changes in adaptation capacity and sensitivity. In addition, the SIDIK data will inform tailored village-level interventions. Data collection and assessment at the beginning (baseline) and at the end of the project will allow evaluating changes in climate vulnerability and resilience attributable to the project.  
+
+26. The iTAP considers the information on climate risk as clear and the proposed response is generally sound. It also acknowledges that the funding proposal is aligned with the provisions in the National Action Plan on Climate Change Adaptation (RAN-API) and Indonesia’s enhanced nationally determined contribution (2022). Additionally, the iTAP wishes to highlight the clarity and transparency of the methodology for quantifying the project’s beneficiaries (annex 2d), particularly regarding the calculation of direct beneficiaries.  
+
+27. However, concerns remain about how to develop the specific design of the climate-resilient agroforestry, agricultural or forestry systems, and how to ensure the timely provision of plant materials and technological tools for each of the selected systems. The iTAP recognizes that the AE is aware of these challenges.  
+
+28. In view of the above, the iTAP assesses the climate impact potential of the funding proposal as medium to high, mainly because of the (potential) overestimation of the mitigation impact potential.
+
+
+---
+*Chunk pages 101–101*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=947 (sys=94, user=853), max_out=1024, ctx=8192
+---
+
+# GCF/B.40/02/Add.10/Rev.01  
+## Page 101  
+
+### 1.3 Paradigm shift potential              Scale: Medium to high  
+
+29. There are two caveats to bear in mind when assessing the paradigm shift potential of this funding proposal. First, as explained above, Indonesia is one of the early movers in REDD+ and as such it has already developed a strong national framework. Thus, more than upscaling, what is required in Indonesia is to secure the implementation of concrete REDD+ activities at a lower scale, namely at the province and regency level.  
+
+Second, the replicability and scalability of REDD+ activities implemented at the local level are limited owing to their context-specific nature.  
+
+30. Owing to its high level of alignment with the national policies, the project can clearly contribute to Indonesia’s mitigation and adaptation targets. More importantly, component 1 of the project is aimed at improving the enabling conditions at the province and regency level for climate-resilient REDD+ activities and components 2 and 3 both entail financial mechanisms and concrete field activities that are complementary. In addition, these components have been designed as a response to the categories of barriers identified in the funding proposal: governance; institutional and technical capacity; financial barriers; and market barriers.  
+
+### 1.4 Sustainable development potential          Scale: High  
+
+34. In addition to its contribution to Sustainable Development Goal (SDG) 13 (Climate action), implementation of this project will directly contribute to achieving SDG 2 (Zero hunger), SDG 5 (Gender equality), SDG 12 (Responsible consumption and production) and SDG 15 (Life on land).  
+
+35. This project can provide important institutional, social and economic co-benefits. This includes improvements in food security due to the promotion of agroforestry systems, as well as improvements in access to land-use rights and improving and diversifying income through climate-resilient agricultural, agroforestry and community forestry practices. In addition, the project will create a financing mechanism to secure the engagement of Indigenous Peoples.  
+
+36. With regard to environmental benefits, the project will identify high biodiversity hotspots and reduce deforestation and forest degradation. These activities will contribute to
+
+
+---
+*Chunk pages 102–102*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1034 (sys=94, user=940), max_out=1024, ctx=8192
+---
+
+# GCF/B.40/02/Add.10/Rev.01  
+## Page 102  
+
+### securing the rich biological diversity in West Kalimantan and maintaining multiple environmental goods and services.  
+
+37. In terms of the potential impact of the project on gender transformative development, the gender action plan (annex 8b) clarifies the gender approach and indicators at the level of the project’s subactivities. The gender action plan was developed in response to the detailed gender assessment completed in June 2023 (annex 8a).  
+
+38. In view of the above, the iTAP assesses the sustainable development potential of the funding proposal as high.  
+1.5 Needs of the recipient              Scale: High  
+
+39. The funding proposal includes all relevant information explaining the vulnerability and financing needs of the targeted population and ecosystems (annexes 2a–22e and 6a–6c).  
+
+40. According to the World Bank, Indonesia is the largest economy in South-East Asia and regained upper-middle group status in July 2023. The gross domestic product growth for the same year was projected at 5.0 per cent over the medium term 2024–2026.4 The archipelagic country counts more than 17,000 islands and a population of 270.2 million as at 2020. The climate is predominantly humid tropical, with low seasonal variation. The country is divided into 38 provinces, which are further subdivided into regencies. The Human Development Index (HDI) for Indonesia was 72.91 in 2022. In recent years, Indonesia has reduced its fiscal deficit to 2.38 per cent of the gross domestic product. Although the government's debt is considered safe, the country remains vulnerable to shifts in investor perceptions.  
+
+41. Located on the island of Borneo, West Kalimantan is the third largest province of Indonesia, covering an area of 147,307 km². In 2020, the province had a population of 5.41 million, with nearly 70 per cent residing in rural areas. According to the Central Bureau of Statistics of Indonesia, the poverty rate in West Kalimantan was 6.73 per cent in 2022, with 350,250 people living below the poverty line, and no villages classified as least developed. In 2019, the Gini index for West Kalimantan was 0.33.  
+
+42. West Kalimantan is culturally diverse. The main ethnic groups are the Dayak (35 per cent), Malay (34 per cent), Javanese (10 per cent), Chinese (8 per cent), Madurese (6 per cent) and Bugis (3 per cent). The Dayak and Malay ethnic groups are considered the two Indigenous Peoples of West Kalimantan.  
+
+43. West Kalimantan’s gross regional domestic product (GRDP) grew steadily from 2010 to 2021 and the province ranked 17 out of 34 provinces in terms of its GRDP in 2021. Although its GRDP growth rate is relatively high compared with other provinces, the gross domestic product per capita in 2020 was relatively low compared with the national average, placing West Kalimantan twenty-third out of 34 provinces.  
+
+44. The agriculture sector is the second contributor to the GRDP (21.24 per cent). The relative contribution of the forestry subsector has decreased recently, although it remained significantly higher in 2021 (1.12 per cent) in relation to the national average (0.7 per cent in 2020). Conversely, the plantation (estate crop) subsector's contribution has been rising. A significant portion of the primary commodities produced in the province is exported, with the total export value reaching EUR 1.71 billion in 2021.  
+
+45. Fifty-five per cent of West Kalimantan's area is designated as forest area, covering 8.2 million ha. Production forest totals 4.4 million ha, and is further divided into permanent production forest (2.1 million ha), convertible production forest (0.2 million ha) and limited  
+
+---  
+4 See https://www.worldbank.org/en/country/indonesia/overview.
+
+
+---
+*Chunk pages 103–103*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=891 (sys=94, user=797), max_out=1024, ctx=8192
+---
+
+# GCF/B.40/02/Add.10/Rev.01  
+## Page 103  
+
+### 46. Almost 80 per cent of the remaining forest and peatlands in West Kalimantan are in the five priority regencies to be addressed by the project, where forest ecosystems provide climate, food and water, and income services for around 2.1 million people living in 1,277 villages. Forest-dependent communities constitute 62 per cent of all villages in West Kalimantan.
+
+### 47. Multiple barriers make it difficult to secure a sustainable use of these ecosystems:  
+(a) Although social forestry (similar to community forestry) has a long-standing customary tradition in West Kalimantan and has seen improvements in political and legal recognition in recent years, only 39 per cent of the target social forestry licences have been issued;  
+(b) Limited budget support and insufficient capacities remain two key barriers that must be overcome to make forest management units effective in achieving sustainable forest management on the ground;  
+(c) The complex land tenure and use rights legislation for forest land increasingly affects the access to land and land use for the most vulnerable communities, including Indigenous Peoples; and  
+(d) The production of agricultural commodities for international markets, such as palm oil and rubber, is a major driver of deforestation and forest degradation. While these commodities generate higher economic benefits, they tend to concentrate such benefits in a small number of actors owing to the need for advanced technological support and trading capacities.
+
+### 48. As climate change will increase the overall vulnerability of social and ecological systems (as explained in section 1.1 above), overcoming the barriers to the sustainable use of these ecosystems becomes even more challenging.
+
+### 49. The iTAP considers that the systemic approach used in the design of this funding proposal is an adequate response to promote a climate-resilient and low-carbon pathway that attends the needs of the population, governments and ecosystems in the regencies included in the project. Thus the iTAP assesses the needs of the recipient as high.
+
+### 1.6 Country ownership             Scale: High  
+
+### 50. As clarified in section 1 above on impact potential, the funding proposal is fully aligned with the national climate change strategies of Indonesia and, where available, those of West Kalimantan. Therefore, it is plausible to expect that the project’s implementation will significantly contribute to the country’s mitigation and adaptation priorities.
+
+### 51. The iTAP acknowledges the capacities of the AE and the three EEs included in the governance structure of the project (see figure below, as provided in the funding proposal). The previous experience of GIZ in supporting the planning and implementation of climate change related activities, as well as its recognition by key actors in the institutional climate change framework of Indonesia, are indicators of the high capacity of GIZ as AE and EE for this funding proposal.
+
+### 52. IEF is a public service agency, a non-echelon unit accountable to the Ministry of Finance, which was established in 2019. IEF was established with the aim of developing a coherent vision and strategy for all funding streams to align with over time. IEF supports the Government of Indonesia towards achieving its environmental and climate commitments, and will act as the main financing vehicle for channelling and distributing the GCF funds to the beneficiaries and manage the dedicated grant mechanism for Indigenous Peoples. IEF will coordinate with the
+
+---  
+**Note:** The text ends here, and no further content is available from this page.
+
+
+---
+*Chunk pages 104–104*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=654 (sys=94, user=560), max_out=1024, ctx=8192
+---
+
+# GCF/B.40/02/Add.10/Rev.01  
+## Page 104  
+
+### project implementation partners (provincial government institutions, non-governmental organizations/civil society organizations and village communities) to guarantee the integral fulfillment of the expected results of the project, and participate in both the Steering Committee and the Project Management Unit. IEF will be responsible for GCF proceeds of EUR 23,97 million.
+
+### Governance structure  
+Source: Funding proposal  
+
+#### 53. Solidaridad Network Asia Limited is part of the global network Solidaridad International, which is an international civil society organization founded in 1969 that facilitates the development of fair and profitable supply chains for small-scale and family farmers. It provides scalable and economically effective sustainability solutions in agriculture and mining sectors at four levels: farm or producer, business, policy and market. Solidaridad is registered in Indonesia, where it has a track record of working with governments and local communities since 2012, including work with local governments in West Kalimantan and farmers on a variety of projects, reaching 23,540 farmers through its Farmer Field Schools and financial literacy programmes covering 27,858 ha. Additionally, Solidaridad has been involved in social forestry as well as in collaboration with the private sector.  
+
+#### 54. MoEF is the ministry responsible for managing and conserving forests and the environment in Indonesia and the support of several of its Directorates General is necessary for implementing this funding proposal. Furthermore, in 2015, MoEF was appointed by the President of Indonesia as the national focal point to coordinate climate change efforts, including the climate change negotiation process at the UNFCCC. All organizations dealing with climate change, including the National Council on Climate Change and the REDD+ Agency, were merged within a Directorate General on Climate Change in MoEF. The Directorate General on Climate Change has issued a national GHG inventory system and a national registry system for all climate actions. It oversees REDD+ and GCF implementation.  
+
+#### 55. The funding proposal includes five annexes detailing the circumstances of and engagement with national, regional and local stakeholders, including Indigenous Peoples, as well as the consultation processes (annexes 6a–6c, 7a and 7b). Additionally, the annexes outline the strategies and specific activities required to implement the project in an inclusive manner, respecting the priorities, rights and customs of Indigenous Peoples and local communities.
+
+
+---
+*Chunk pages 105–105*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=931 (sys=94, user=837), max_out=1024, ctx=8192
+---
+
+# GCF/B.40/02/Add.10/Rev.01  
+## Page 105  
+
+### 56. In view of the above, the iTAP assesses the level of country ownership of this funding proposal as high.
+
+### 1.7 Efficiency and effectiveness       Scale: Medium  
+
+### 57. The total budget for this funding proposal is EUR 100.12 million (see table 3), with a funding request to GCF of EUR 59.48 million as a grant. The co-funding is made up of in-kind contributions from MoEF (EUR 25.81 million) and from Solidaridad (EUR 1 million) and grants from the German Government through the Bundesministerium für wirtschaftliche Zusammenarbeit und Entwicklung– BMZ – (EUR 11 million) and the german Kreditanstalt für Wiederaufbau (EUR 2.9 million). That means a co-funding ratio of 0.68, with over 60 per cent being in-kind co-funding.
+
+#### Table 3: Budget distribution per component  
+
+| Component | Output Indicative cost (million euro) (€) | GCF financing | Co-financing | Amount (million euro) (€) | Financial instrument | Name of institutions |
+|-----------|------------------------------------------|---------------|--------------|---------------------------|----------------------|----------------------|
+| 1. Institutional and regulatory frameworks | 1.1 | 17.59 | 0 n/a | 17,59 | Grants | BMZ, MoEF |
+| 1.2 | 2.66 | 2.66 | Grants | – | Grants | - |
+| 1.3 | 10.68 | 10.43 | Grants | 0,25 | Grants | MoEF |
+| 2. Sustainable commodity production and social forestry | 2.1 | 19.78 | 12.08 | Grants | 7,7 | Grants Solidaridad, BMZ GRASS, MoEF |
+| 3. Management, protection and rehabilitation of forest and peatland ecosystems | 3.1 | 16.22 | 9.57 | Grants | 6,65 | Grants MoEF |
+| 3.2 | 21.66 | 18.27 | Grants | 3,39 | Grants | KfW, MoEF |
+| Monitoring and evaluation | 4.31 | 2.58 | Grants | 1,73 | Grants | MoEF, BMZ, BMZ GRASS |
+| Contingency | 1.07 | 1,07 | Grants | - | n/a |  |
+| PMC | 6.23 | 2.81 | Grants | 3,41 | Grants | BMZ, MoEF, Solidaridad, BMZ GRASS |
+
+#### Indicative total cost (EUR)  
+- 100.19  
+- 59.48  
+- 40.71  
+
+##### BMZ: Bundesministerium für wirtschaftliche Zusammenarbeit und Entwicklung  
+##### MoEF: Ministry of Environmental and Forestry of Indonesia  
+##### BMZ GRASS: BMZ funded project called Greenen Agricultural Smallholder Supply Chains  
+
+Source: Funding proposal, section C.
+
+### 58. The iTAP considers that as Indonesia is an upper-middle group country, budget co-financing beyond an in-kind contribution could have been expected. However, the iTAP recognizes that the co-funding policy adopted by the Board in decision B.24/14 does not include any requirement in this regard.
+
+### 59. The funding proposal includes a detailed economic and financial analysis (EFA) in annexes 3a and 3b, covering the EFA methodology, assumptions, results and sensitivity analysis. The EFA assumes a transition to sustainable agricultural land uses or sustainable forest management within four years and demonstrates higher revenue per hectare per year for all productive activities in the project scenario. It also presents the results per hectare cash flow models (see table 4).
+
+#### Table 4: Results per hectare cashflow models  
+
+---
+
+
+---
+*Chunk pages 106–106*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=564 (sys=94, user=470), max_out=1024, ctx=8192
+---
+
+# GCF/B.40/02/Add.10/Rev.01  
+## Page 106  
+
+| Model | NPV (EUR) | IRR (%) | BC Ratio | Break-even Point (Years) |
+|-------|-----------|---------|----------|--------------------------|
+| Unsustainable land use | Coffee BAU 1 417 | n.a. | 3.2 | 0 |
+|  | Rubber BAU 2 170 | n.a. | 1.3 | 0 |
+|  | Palm oil BAU 838 | n.a. | 1.1 | 0 |
+|  | Licensed forest BAU 1 011 | n.a. | 0 |
+|  | Forest BAU 320 | n.a. | 5.2 | 0 |
+|  | Peatland BAU – | n.a. | 0 |
+|  | Mangroves BAU – | 0 |
+| Sustainable land use | Coffee 5 990 | 34 | 1.7 | 4 |
+|  | Rubber 2 680 | 21 | 7 |
+|  | Coconut –333 | 10 | 0.4 | 11 |
+|  | Palm Oil 1 661 | 39 | 3 |
+|  | Pepper 1 926 | 18 | 1.1 | 7 |
+|  | Community forest 1 149 | 5.7 | 0 |
+|  | High-level conservation 847 | 11.3 | 0 |
+|  | Peatland –1 452 | 0.0 | 21 |
+|  | Mangroves –3 540 | 0.0 | 21 |
+
+> Note: This assumes that the transition to the sustainable land-use management was self-funded by smallholders.
+> Source: Funding proposal, annexes 3a and 3b.
+
+60. The long-term financial viability of this project assumes increasing public domestic finance, increasing revenues owing to sustainable practices in community forestry, accessing carbon markets (both the emerging domestic market and the compliance carbon market), unlocking results-based payments and creating attractive conditions for investments from the private sector.
+
+61. The iTAP recognizes the quality of the EFA and acknowledges the transparency in the assumptions for both the EFA and the long-term economic and financial sustainability of the project.
+
+
+---
+*Chunk pages 107–107*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=790 (sys=94, user=696), max_out=1024, ctx=8192
+---
+
+# GCF/B.40/02/Add.10/Rev.01  
+## Page 107  
+
+### Project Assessment  
+
+The iTAP considers some assumptions to be overly optimistic. Firstly, it appears challenging for local stakeholders to self-finance the transition phase, especially when the break-even point for sustainably produced commodities is 3–11 years. This could significantly reduce the adoption rate of sustainable practices, thereby diminishing the adaptation and mitigation outcomes of the project.
+
+### Second Concern  
+
+A second concern is that the long-term financial viability of the activities relies on mechanisms that are not yet in place or on significant participation from the private sector. The iTAP acknowledges the analysis included in annex 2f, “Potential Leveraging of Private and Public Sector Finance,” as well as the letters of intent included in annex 13. However, it remains challenging to secure the private sector's participation in time for the end of the 7-year implementation phase and for the 20-year lifespan of the project.
+
+### Assessment  
+
+In view of the above, the iTAP assesses the efficiency and effectiveness of the project as medium.
+
+## Overall Remarks from the Independent Technical Advisory Panel  
+
+The iTAP wishes to underscore the completeness, clarity, and high quality of the documents included in this funding proposal. Furthermore, the iTAP considers that the methodology adopted in this project for quantifying direct beneficiaries has the potential to enhance transparency and clarity regarding adaptation outcomes and can be used in other funding proposals in the future.
+
+### Recommendations  
+
+The iTAP makes the following recommendations to the AE:  
+
+1. Prepare, in a participative manner, a prioritization strategy for the high conservation value (HCV)/high carbon standard (HCS) areas considering potential trade-offs between conservation and climate objectives;  
+2. Prepare guidelines for designing context-specific climate-resilient agroforestry systems, including necessary methodologies and design tools, and make these available;  
+3. Seek opportunities to enhance the capacity of local actors to transform products from the project areas to meet national and international market requirements;  
+4. Identify sources to secure the budget for establishing and utilizing additional monitoring sampling plots;  
+5. The EFA states that by the end of the third year of implementation, the project will finalize the transformation to sustainable agriculture and sustainable forest management. The mid-term evaluation should assess progress and provide recommendations either to finalize the transition (if not yet completed) and/or to identify lessons learned from regions where the transformation was completed first, to accelerate progress in regions that started later;  
+6. Consider whether the mitigation impact potential may have been overestimated, owing to the reasons explained in this assessment, and adjust accordingly; and  
+7. During the second half of the implementation phase, and taking into consideration the results achieved so far, prepare a strategy to facilitate the participation of the private sector beyond the project implementation phase and initiate negotiations with relevant actors.
+
+### Funding Proposal Approval  
+
+The iTAP recommends that the Board approve this funding proposal with the following conditions:  
+
+#### Conditions precedent to the second disbursement of the GCF Proceeds:  
+---
+
+
+---
+*Chunk pages 108–108*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=338 (sys=94, user=244), max_out=1024, ctx=8192
+---
+
+# GCF/B.40/02/Add.10/Rev.01  
+## Page 108  
+
+### (i) The Accredited Entity shall, in form and substance satisfactory to the Secretariat, submit the updated Monitoring and Evaluation Plan that includes the methodologies for assessing whether or not the degradation of forests or peatlands is declining in the regions included in the Project.
+
+### (b) Covenant to be included in the funded activity agreement  
+
+#### (i) Following the submission of the Monitoring and Evaluation Plan, as required pursuant to the conditions precedent to the second disbursement of the GCF Proceeds, the Accredited Entity shall conduct the corresponding measurements at least every other year, according to the specific indicators and methodologies included in the Monitoring and Evaluation Plan.  
+
+The Accredited Entity shall report the assessment of progress in reducing forest degradation as part of the Annual Performance Report (APR), with a view to providing evidence for adaptive management that ensures meeting the objective of reducing emissions from forest degradation.
+
+
+---
+*Chunk pages 109–109*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=359 (sys=94, user=265), max_out=1024, ctx=8192
+---
+
+# GCF/B.40/02/Add.10/Rev.01  
+## Page 109  
+
+### Response from the accredited entity to the independent Technical Advisory Panel's assessment (FP248)  
+
+#### Proposal name: Land-based Mitigation and Adaptation through a Jurisdictional Approach in West Kalimantan  
+
+#### Accredited entity: Deutsche Gesellschaft für Internationale Zusammenarbeit (GIZ) GmbH  
+
+#### Country: Indonesia  
+
+#### Project/programme size: Medium  
+
+### Impact potential  
+
+Thank you very much for the positive assessment. The AE fully agree to the identified risks, especially in terms of long-term emission reductions. Fire prevention and management will be key to secure permanence.  
+
+### Paradigm shift potential  
+
+Thank you for the positive assessment. Indeed, private sector engagement will play a leading role for transformational change.  
+
+### Sustainable development potential  
+
+Thank you for the positive assessment. No further comments.  
+
+### Needs of the recipient  
+
+Thank you for the positive assessment. No further comments.  
+
+### Country ownership  
+
+Thank you for the positive assessment. No further comments.  
+
+### Efficiency and effectiveness  
+
+---
+
+
+---
+*Chunk pages 110–110*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=306 (sys=94, user=212), max_out=1024, ctx=8192
+---
+
+# GCF/B.40/02/Add.10/Rev.01
+## Page 110
+
+Thank you very much for the positive assessment. The AE just would like to highlight that the contributions of the Indonesian Ministry are long term public investments dedicated to the sector in the target regencies.
+
+Overall remarks from the independent Technical Advisory Panel:
+
+GIZ as AE appreciates the overall remarks from iTAP including the proposed condition. In its function as Accredited Entity GIZ can submit an updated Monitoring and Evaluation Plan precedent to the second disbursement of GCF proceeds for assessment methodologies of degradation of forests and peatlands at least every other year in the understanding that it would have to be satisfactory in form and substance to the Secretariat but also be aligned with the budget of the Monitoring and Evaluation Plan approved with the Funding Proposal.
+
+
+---
+*Chunk pages 111–111*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=210 (sys=94, user=116), max_out=1024, ctx=8192
+---
+
+# Annex 8a: Gender Assessment to the GCF Funding Proposal
+
+## Land-based Mitigation and Adaptation through a Jurisdictional Approach in West Kalimantan
+
+### Date: 05/09/2024
+
+### Version 3.0
+
+### Submitted by:
+Deutsche Gesellschaft für internationale Zusammenarbeit (GIZ) GmbH
+
+### Gender documentation for FP248
+
+---
+
+[Page 1]
+
+
+---
+*Chunk pages 112–112*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=624 (sys=94, user=530), max_out=1024, ctx=8192
+---
+
+# [Page 1]
+
+## Title of the project: 
+
+Land-based Mitigation and Adaptation through a Jurisdictional Approach in West Kalimantan
+
+## Country/countries: 
+Indonesia
+
+## Sector: 
+Forestry
+
+## Commissioning party: 
+BMZ
+
+## Recommendation for gender policy marker:
+
+If the marker has already been determined, this should be stated here. In case the recommendation based on the gender analysis deviates from the previously assigned marker, this should also be noted.
+
+## Purpose for conducting the gender analysis 
+
+- ☐ for a new project
+- ☐ for a follow-on project
+- ☐ for a modification offer
+- ☐ for the GIZ portfolio in a country
+- ☐ other: Click here to enter text.
+
+## Status of the gender analysis 
+
+- ☒ Provisional gender analysis
+- ☐ Finalised gender analysis
+
+## Method conducting the gender analysis 
+
+- ☐ Desk study
+- ☒ Desk study + data collection (e.g. on-site appraisal mission, interviews etc)
+
+## Involved Gender FP:
+
+More than one option can be selected:
+
+- ☐ at the project level: Enter name
+- ☐ *at the country level: Enter name
+- ☐ *at the level of the department or regional division: Enter name
+- ☐ *of the responsible unit in GloBe: Enter name and unit
+- ☐ of the sectoral department: Enter name and unit
+
+* Please note: The Gender FP must be copied into all emails sent to the S+G Desk. For bilateral projects, the Gender FP of the country office should be involved; for regional projects, either the Gender FP of the country or area where the project has its headquarters, or the Gender FP of the department; for sectoral and global projects, the Gender FP of the responsible unit in GloBe.
+
+## Other persons involved 
+
+- ☐ officer responsible for the commission
+- ☐ project member
+- ☐ appraisal mission team member
+- ☐ planning officer
+- ☒ external consultant
+
+## Author(s) of the gender analysis 
+
+Ismi Dwi Astuti Nurhaeni (external consultant)
+
+## Date 
+
+June, 2023
+
+---
+
+1 According to the OECD DAC, all ODA-financed projects should be assigned a marker. The gender marker is requested for BMZ projects and EU co-financing arrangements. Other public German commission parties do not currently request it.
+
+
+---
+*Chunk pages 113–113*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=794 (sys=94, user=700), max_out=1024, ctx=8192
+---
+
+# Table of Contents
+
+## List of tables
+..........................................................................................................................................1 
+
+## 1. Introduction
+....................................................................................................................................2 
+
+### 1.1 Overview of the project
+................................................................................................................2 
+
+### 1.2 Objectives and structure of the Gender Assessment
+..................................................................2 
+
+### 1.3 Methodology
+.................................................................................................................................2 
+
+#### 1.3.1 Research Location
+........................................................................................................... 2 
+
+#### 1.3.2 Data Sources
+................................................................................................................... 2 
+
+#### 1.3.3 Key Informants
+................................................................................................................. 2 
+
+#### 1.3.4 Data Analysis
+................................................................................................................... 4 
+
+## 2. Information on gender dimensions in the country or the region
+............................................................................................................................4 
+
+### 2.1 Meta level (norms)
+.......................................................................................................................4 
+
+#### 2.1.1 The Gender Gap in Indonesia
+......................................................................................... 4 
+
+#### 2.1.2 Women in Politics
+............................................................................................................ 5 
+
+#### 2.1.3 Mobility, discrimination, and wage gap in the workforce
+................................................. 6 
+
+#### 2.1.4 Gender-based Violence in Indonesia
+.............................................................................. 8 
+
+### 2.2 Macro level (policies and laws)
+....................................................................................................9 
+
+#### 2.2.1 International Commitments
+.............................................................................................. 9 
+
+#### 2.2.2 National Regulations
+....................................................................................................... 9 
+
+#### 2.2.3 Regulations in West Kalimantan
+...................................................................................... 9 
+
+#### 2.2.4 Ensure Men and Women equality participate in and benefit from the project
+............... 11 
+
+## 3. Gender dimensions in the sector
+..............................................................................................12 
+
+### 3.1 Meta level
+...................................................................................................................................12 
+
+#### 3.1.1 Women’s and Men’s Division of Labor and Access to and Control over Resources
+.........................................................................................................................12 
+
+#### 3.1.2 Potential Barriers to Women’s Participation
+..................................................................12 
+
+#### 3.1.3 Prevent gender-based violence and discrimination
+.......................................................12 
+
+#### 3.1.4 Vulnerabilities faced by women and men in the context of climate change impacts
+.........................................................................................................................13 
+
+#### 3.1.5 Vulnerability faced by Dayak women in the context of climate change
+.................................14 
+
+### 3.2 Macro level (policies and laws in sectors)
+.................................................................................14 
+
+### 3.3 Meso level (Institutions in the sector)
+.........................................................................................16 
+
+#### 3.3.1 District level initiatives to empower women
+................................................................... 16 
+
+#### 3.3.2 Initiative to involve women in forest management and social forestry programs
+.......... 17 
+
+#### 3.3.3 Actors or initiators in the target area who promote gender equality
+.............................. 17 
+
+### 3.4 Micro level (target group)
+...........................................................................................................18 
+
+#### 3.4.1 The situation of women and men in project target areas
+.............................................. 19 
+
+## 4. Gender responsiveness and expertise, as well as gender equality in the partner organisation(s)
+.....................................................................................................................................23 
+
+### 4.1 Political Partners
+........................................................................................................................23 
+
+### 4.2 Implementing partners
+...............................................................................................................24 
+
+### 4.3 Strategic partners
+.......................................................................................................................25 
+
+## 5. Gender responsiveness and expertise in the project/ among project staff in the country
+.....................................................................................................................................27 
+
+### 5.1 Equal opportunities in the team
+.................................................................................................27 
+
+### 5.2 Gender expertise of the team members
+....................................................................................27 
+
+## References
+...........................................................................................................................................29
+
+
+---
+*Chunk pages 114–114*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=255 (sys=94, user=161), max_out=1024, ctx=8192
+---
+
+# List of tables
+
+| Table | Title |
+|-------|-------|
+| Table 1 | The number of Informants at village and district level |
+| Table 2 | Global Gender Gap Index (GGGI) of Southeast Asian Countries, 2023 |
+| Table 3 | Indonesia's Gender Development Index, Year 2021-2022 |
+| Table 4 | GDI West Kalimantan Province & 5 Districts Project Locations Year 2022 |
+| Table 5 | GEM of West Kalimantan Province and 5 Project Districts in 2022 |
+
+[Page 1]
+
+
+---
+*Chunk pages 115–115*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=924 (sys=94, user=830), max_out=1024, ctx=8192
+---
+
+# 1. Introduction
+
+## 1.1 Overview of the project
+
+Gender issues are often ignored in designing development programs, including land-based mitigation and adaptation, even though women and men often get different impacts. Therefore, the use of gender analysis needs to be carried out so that development programs provide fair and equal benefits for women, men, and other marginal groups. Therefore, a Gender Assessment (GA) and a Gender Action Plan (GAP) are needed to highlight the participation and impact of land-based mitigation and adaptation through a jurisdictional approach for men and women in 5 (five) districts in West Kalimantan namely Kabupaten Kapuas Hulu, Kabupaten Sintang, Kabupaten Sanggau, Kabupaten Ketapang and Kabupaten Kubu Raya.
+
+## 1.2 Objectives and structure of the Gender Assessment
+
+The objective is to conduct a GA which can be used to devise the GAP for the project "Land-based Mitigation and Adaptation through a Jurisdictional Approach in West Kalimantan."
+
+Chapter 2 examines gender equality in Indonesia and the project's target regions (Kapuas Hulu, Sintang, Sanggau, Ketapang, Kubu Raya). In the gender analysis, we chose two Kubu Raya to represent coastal/mangrove/peat forest types and Malay communities and Sintang to represent the lowland forest type and the dominant Dayak community.
+
+Chapter 3 elaborates on the gender dimensions to achieve gender equality in land use, management, and governance in the forestry sector.
+
+Chapter 4 explains the gender expertise of the project partners, while Chapter 5 reveals the gender expertise of the project teams.
+
+This GA serves as a basis for the GAP and informs gender markers, gender indicators, and gender mainstreaming approaches of the funding proposal (FP) package including the FP itself, the stakeholder engagement plan (SEP, Annex 7a), and the feasibility study (FS, Annex 2).
+
+## 1.3 Methodology
+
+### 1.3.1 Research Location
+
+The project location covers five West Kalimantan districts: Kapuas Hulu, Sintang, Sanggau, Ketapang, and Kubu Raya. However, due to limited access and for the sake of resource efficiency, the location of this research is focused on two representative sample districts, namely Kubu Raya and Sintang.
+
+Kubu Raya was chosen to have a coastal/mangrove/peat forest type and a dominant Malay community. In contrast, the Sintang District was chosen as a representative area with a lowland forest type and the Dayak community as the dominant.
+
+### 1.3.2 Data Sources
+
+The data source of this research is primary data and secondary data. Primary data are obtained in three ways, namely:
+
+a. In-depth interviews with key informants, especially key informants at the village and district level.
+
+b. Focus group discussion (FGD) with key informants at the district and provincial level.
+
+c. Questionnaires were distributed to selected respondents at both the village and district levels.
+
+Secondary data are obtained through documentation, such as regulations related to gender mainstreaming and land-based mitigation and adaptation.
+
+### 1.3.3 Key Informants
+
+At the village level, the informants are village officials involved in the Land-based mitigation and adaptation, Community Leaders (namely Lembaga Pengelolaan Hutan Desa (LPDH), Kelompok Usaha Perhutanan Sosial (KUPS), Kelompok Wanita Tani (KWT), Kepala Desa, and
+
+[Page 1]
+
+
+---
+*Chunk pages 116–116*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=892 (sys=94, user=798), max_out=1024, ctx=8192
+---
+
+# Traditional Leaders
+
+## The number of informants at the district and provincial level
+
+The number of informants at the district and provincial level is 240 respondents, consisting of 156 Males and 84 Females.
+
+### Table 1: The number of Informants at village and district level
+
+| No | Location/ Activities | Key informants/ Respondents | Male | Female | Total |
+|----|----------------------|-----------------------------|------|--------|-------|
+| 1 | District Level       |                             |      |        |       |
+|   | Kubu Raya District   | 247                         | 26   | 73     |       |
+|   | Sintang District day | 13                          | 42   | 15     |       |
+|   | Sintang District day | 24                          | 20   | 11     |       |
+| 2 | Site Visit at Village Level |                      |      |        |       |
+|   | Village at Kubu Raya | 5                           | 26   | 9      |       |
+|   | Village at Sintang   | 6                           | 20   | 11     |       |
+| 3 | Focus Group Discussions with female leaders at the Deputy Regent's official residence | - | 9    | 9      |       |
+| 4 | Questionnaire from the Gender Mainstreaming Working Group | 1 | 3    | 4      |       |
+| Total |                      |                             | 156  | 84     | 240   |
+
+## At the district level
+
+Research informants were the participants of focus group discussions (FGD) with stakeholders from the project region (Regional Development Planning Agency (namely Bappeda), the Agency of Women's Empowerment and Child Protection (namely Dinas Pemberdayaan Perempuan dan Perlindungan Anak), Department of the Environment (namely Dinas Ling-kungan Hidup), and Forest Management Unit (namely Kesatuan Pengelolaan Hutan (KPH)), Non-Government Organization (NGOs), Kelommpok Wanita Tani (KWT).
+
+In addition to informants participating in stakeholder consultations at the district level, the researchers also conducted a focus group discussion with women leaders under the coordination of the deputy head of the Sintang Regency PKK, which was held on May 22, 2023, 19.00-22.00 local time at the official residence of the Deputy Regent of Sintang Regency. The total number of female informants was 9, coming from representatives of Gender Figures from Higher Education, the Office of Industry, Trade and Cooperatives (the name is Disperindag op), the Regional National Crafts Council (the name is Dekranasda), Bio-Industry Assistant Staff, and Family Welfare Development (PKK).
+
+Apart from the abovementioned informants, the researchers also asked several key informants to complete the questionnaire. They were not part of the stakeholder consultation forums but seen from their primary duties and functions in carrying out their role in gender integration in the regions, especially as a gender mainstreaming working group and Forest Stakeholder Units (KPH) of four people, consisting of three women, and one man.
+
+## At the national level
+
+The informants came from the Ministry of Environment and Forestry (KLHK), the Ministry of Women's Empowerment and Child Protection (KPPPA), and others involved in land-based mitigation and adaptation through a jurisdictional approach.
+
+---
+
+**Note:** The following are the dates of stakeholder consultations:
+- 2 Stakeholders Consultations at Kubu Raya district conducted on 19 May, 2023
+- 3 Stakeholders Consultations at Sintang conducted on 22 & 23 May, 2023
+- 4 Stakeholders Consultations at Sintang conducted on 22 & 23 May, 2023
+- 5 Site Visit at Kubu Raya Village (namely Teluk Bakung Village) conducted on 20 May, 2023
+- 6 Site Visit at Sintang Village (namely Sungai Tebelian Village) conducted on 23 May, 2023
+
+
+---
+*Chunk pages 117–117*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=545 (sys=94, user=451), max_out=1024, ctx=8192
+---
+
+# 1.3.4 Data Analysis
+
+The data analysis used the Harvard model of gender analysis. The Harvard gender analysis model is used to identify "who does what" according to gender and "who has access and control" over resources.
+
+## 2. Information on gender dimensions in the country or the region
+
+### 2.1 Meta level (norms)
+
+#### 2.1.1 The Gender Gap in Indonesia
+
+Development in Indonesia has succeeded in increasing justice and gender equality in various areas of society. However, in 2023, Indonesia's gender equality at the global level (Gender Global Gap Index/GGGI) has only been achieved a score of 0.697 and is ranked 87th place out of 146 countries. When compared with ASEAN countries, Indonesia is in seventh position out of 10 ASEAN countries. Even though Indonesia's GGGI score has increased, the benefits of this development have been felt unevenly throughout Indonesia.
+
+Table 2: Global Gender Gap Index (GGGI) of Southeast Asian Countries, 2023
+
+Source: Global Gap Report, 2023. Figure taken from World Economic Forum (2023)
+
+_______________________________________________________________________________________________________________
+
+7 The GGGI consists of four sub-indices: Participation and Opportunity in the Economic Sector, Educational Attainment, Health and Survival, and Political Empowerment. In general, Indonesia's ranking compared to 156 countries in the world on the GGGI sub-index is still in a lower position, namely ranking 99th on the participation and opportunity sub-index of the economic sector, ranking 107th on the educational attainment sub-index, ranking 107th on 76th on the health and survival sub-index, and ranks 92 on the political empowerment sub-index. (KPPPA, 2022. Gender-Based Human Development). (https://www.kemenpppa.go.id/lib/uploads/list/3bdad-pmbg-2022.pdf)
+
+
+---
+*Chunk pages 118–118*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1129 (sys=94, user=1035), max_out=1024, ctx=8192
+---
+
+# [Page 1]
+
+## Table 3: Indonesia's Gender Development Index, Year 2021-2022
+
+| Year | GDI Life expectancy (in years) | Expected length of school (in years) | Average length of school (in years) | Per capita expenditure (in mio Rp. / IDR) |
+|------|-------------------------------|-------------------------------------|------------------------------------|-------------------------------------------|
+|      | M                             | F                                   | M                                  | F                                         |
+| 2021 | 91.27                         | 69.67                               | 73.55                              | 12.95                                     |
+|      | 13.22                         | 8.92                                | 8.17                               | 15.770                                    |
+|      | 9.050                         |                                     |                                    |                                           |
+| 2022 | 91.63                         | 69.93                               | 73.83                              | 12.96                                     |
+|      | 13.28                         | 8.99                                | 8.39                               | 16.215                                    |
+|      | 9.281                         |                                     |                                    |                                           |
+
+Source: KPPPA, 2023
+
+Apart from using the Global Gender Gap Index indicator, gender justice and gender equality can also be explained based on the Gender Development Index (GDI). The GDI is an index that measures the differences between men and women across three aspects, life expectancy, education, and decent standard of living (measured by the average per capita expenditure per year). Hence, it indicates the ratio between women's Human Development Index (HDI) and men's. This means the closer this ratio is to 100, the closer the society is to gender equality.
+
+The data depicted in Table 3, which is based on the KPPPA Report 2023, illustrates a positive development in Indonesia's GDI, which increased from 91.27% in 2021 to 91.63% in 2022.
+
+Gender inequality occurs across various dimensions. While men had a lower life expectancy than women in 2021 and 2022, the average duration of schooling shows that on average women spend slightly less time in school than men. Most importantly, men's per capita expenditure is consistently much higher than women's 2021 and 2022 (in 2022: Rp. 16,215 million vs. Rp. 9,281 million). This means that the average annual expenditure of women is only 57.24% of that of men.
+
+## 2.1.2 Women in Politics
+
+Women's representation in politics can be seen in the Gender Empowerment Measure (GEM) dimension. GEM is an index that shows the active role of women in economic and political life, which is measured in three dimensions: women's representation in parliament, decision-making, and income distribution.
+
+Indonesia's Gender Empowerment Measure (GEM) in 2021 is 75.57. The constituent components of GEM include 1) Women's involvement in parliament at 21.09%; 2) Women as professionals at 48.76%; and 3) Women's income contribution at 37.26% (KPPPA, 2021). Meanwhile, for 2022, Indonesia's GEM increased to 76.26 with the following components: 1) Women's involvement in parliament will increase to 21.89% from 2021; 2) Women as professionals at 49.99% (increase from 2021); and 3) Women's income contribution of 37.22% (decreased from 2021) (KPPPA, 2022).
+
+Even though women's involvement in parliament increased in 2022, more is needed to guarantee that women can actively contribute to parliament. This is also shown by the number of women who became members of the People's Legislative Assembly of the Republic of Indonesia for the 2014-2019 period, which decreased from 101 people or 17.86% (in the previous period) to 79 people or 14% of the total of 560 elected members.
+
+Women's participation in politics is fully guaranteed by Law Number 2 of 2008 concerning Political Parties, which states that the formation and management of political parties at the central level must include 30% for women's representation,
+
+
+---
+*Chunk pages 119–119*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=851 (sys=94, user=757), max_out=1024, ctx=8192
+---
+
+# 6
+
+Through political parties; namely, women can be government officials (bureaucrats), members of the Regional Representative Council (namely Dewan Perwakilan Daerah/ DPD), and members of government commissions or bodies (Wahyudi, 2020).9
+
+On the Global Gender Index, Indonesia's low score is burdened by the shallow index of women's empowerment in the political field, which is 0.169 in 2022, below the global average. Then, Indonesia's score is 0.674, or is in the global average range in participation and economic opportunities. Meanwhile, in the education and health sectors, Indonesia received a high score of up to 0.97 but is still in the global average range.
+
+## Factors causing the not optimal participation of women in politics:
+
+### 1. Human Factors
+- Lack of awareness of women being active and involved in political activities;
+- Women are less conditioned to be involved in politics because they are used to being placed in domestic activities;
+- A sense of responsibility to the family so that they are reluctant to participate in politics and sacrifice their family.
+
+### 2. Social-Cultural Factors
+- People's views are influenced by patriarchal culture, placing men in positions of leaders and decision-makers with superior positions, which results in positions that determine public policy in representative institutions and governments are dominated by men.
+- Women's entry into the world of politics stems from a normative division between the public and private worlds;
+- Patriarchal culture and social values that exist in society;
+- There is a perception that politics is dirty.
+
+### 3. Institutional Factors
+- Political education and voter education have not been given optimally, especially in political parties;
+- Limited training and strengthening of women's political skills;
+- institutions and organizations in the public sector lack gender awareness and technical capacity related to gender (Wahyudi, 2020).
+
+## 2.1.3 Mobility, discrimination, and wage gap in the workforce
+
+In Indonesia, women's roles are determined by formal and informal institutions and are enshrined by gender norms. In many cases, these norms severely limit women from exploiting their rights and opportunities in various dimensions, including education, health, and finances.
+
+In the 2022 Gender Global Gap report, it is stated that although Indonesia has achieved significant progress in overcoming the gender gap, the gender gap remains high. Indonesia (like most other countries) is experiencing a decline in labor force participation: women leaving the labor force in Indonesia amount to 2.3%. However, in a country with a population of 135 million women and a female participation rate of 56% (aged 15-64 years), this still impacts around 1.3 million women. Both men and women experienced a decline in estimated earnings, although men's scores fell disproportionately, increasing equality. In addition, the number of women working in professional and technical professions has reached parity, while women in legislative, senior, and managerial positions have also increased from 29.7% to 32.4% (Global Gender Gap Report, 2022).
+
+_______________________________________________________________________________________________________________  
+9 Wahyudi, V. (2020). Peran Politik Perempuan dalam Perspektif Gender. Politea: Jurnal Politik Islam, 1(1), 63-68.
+
+
+---
+*Chunk pages 120–120*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1069 (sys=94, user=975), max_out=1024, ctx=8192
+---
+
+# [Page 1]
+
+## ILO (2020) stated that based on the main findings of the Indonesia brief, it recognizes that women in Indonesia are outpacing men in educational attainment and broadening their skills in STEM disciplines. They are getting better trained and more involved in the work force.
+
+Indonesia is the largest economy in Southeast Asia, characterized by high economic growth driven by strong domestic demand. The service and manufacturing sectors provide 47 percent and 13 percent of wage employment, respectively. The labor force numbers nearly 134 million people, and the share of working-age women participating in the workforce is 51 percent, compared to 78 percent of working-age men. Between 1991 and 2018, women's employment as a share of the working-age population increased from 45 percent to 51 percent.
+
+However, women's career development is affected by gender-biased attitudes, which impact recruitment and promotion, work assignments, training, and mobility. Promoting gender diversity in the workplace has proven effective. It presents an opportunity for businesses to embrace gender diversity as part of their core strategy: to increase productivity and profits, retain talent, creativity, innovation, and greater openness. Empowering women with skills demanded in growing industries will lead them to success in business and management.
+
+## Indonesia is facing several challenges due to the COVID-19 pandemic.
+
+In 2020, the government introduced measures to reduce the risk of transmission, including locking down parts of affected areas, restricting travel, and banning mass gatherings. These measures have reduced domestic demand, altered work arrangements, and disrupted supply chains. As a result, economic growth declined, especially in critical sectors, including tourism, manufacturing, retail and sales, and services.
+
+In Indonesia, the impact of the COVID-19 pandemic is gendered. Women are more widely represented in temporary or part-time jobs and are at greater risk of losing their jobs than men. Women also make up the majority of workers in the service sector, which has been hit hard by restrictions to curb the spread of the virus. While this crisis has highlighted the importance of flexible work arrangements and remote work, it has also exacerbated women's double burden in balancing family and work responsibilities.
+
+## Creating a gender-inclusive corporate culture and increasing business competitiveness requires eliminating the gender bias within the economy.
+
+The gender bias between women and men is often the result of the education they receive from an early age, learned behaviors, and expectations about gender roles from their families, schools, and society. The gender bias influences the way women and men perceive gender equality in the workplace, as well as recruitment and promotion, work assignments, pay, training, and mobility. However, human resource systems and advocacy messages from senior and top management can help foster a gender-inclusive organizational culture.
+
+## The results of a survey of companies in Indonesia found that most of these companies agree that gender diversity provides several benefits for their business.
+
+Among companies in Indonesia reporting business results, 66 percent reported increased profitability and productivity as well as greater creativity, innovation, and openness, 61 percent reported increased ability to attract and retain talent, 53 percent said their company's reputation had improved, and 46 percent reported better ability to gauge consumer interest and demand.
+
+Having equal employment opportunities or diversity and inclusion policies, a gender-balanced workforce, and a female chief executive officer (CEO) are positively associated with achieving better business results. Companies in Indonesia with equal employment opportunities or diversity and inclusion policies are 14 percent more likely to achieve better business results. (ILO, 2020).
+
+Of Indonesian companies, 50 percent said their culture was male-dominated, 34 percent said it was inclusive, and 15 percent said it was female-dominated. Analysis of the survey by gender of the respondents reveals exciting insights. Only 9 percent of men surveyed think their company culture is inclusive, compared to 26 percent of women surveyed. Most men (57 percent) and a considerable part of women (38 percent) report a male-dominated corporate culture (ILO, 2020).
+
+_______________________________________________________________________________________________________________  
+10 ILO. (2020). Keberagaman gender di tempat kerja. Retrieved from: https://www.ilo.org/jakarta/info/public/pr/WCMS_753493/lang--en/index.htm
+
+
+---
+*Chunk pages 121–121*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=978 (sys=94, user=884), max_out=1024, ctx=8192
+---
+
+# 2.1.4 Gender-based Violence and SEAH in Indonesia
+
+Building public legal awareness and being aware of Domestic Violence, which is considered taboo by most people, can be a driving force in eliminating domestic violence and social control efforts in eradicating domestic violence.
+
+Violence against women causes suffering and misery for victims and their families and burdens communities worldwide. Most violence occurs in intimate relationships or between people known to each other. Violence against women is a social construction based on community consensus about the roles and rights of men and women. The depiction of cases of sexual violence is like an iceberg phenomenon, where the number of reported cases is not proportional to the actual cases. The problem of violence is a significant social problem that is rooted in cultural traditions. The pattern of violence that is quite prominent from year to year is violence which is divided into three domains, namely family or personal relationships, community, and the state (Asman, 2021).
+
+Several single factors that cause violence against women are socio-cultural factors due to unequal power relations and gender inequality between men and women. This gender inequality can occur in several forms, such as the role of men being more dominant than women in making family decisions, social life, and work matters. Gender inequality can also be caused by the solid patriarchal culture that weakens women's status and strengthens men's position. Men are characterized by aggressiveness and independence, while women are characterized by gentleness, obedience, and love to beautify themselves. The result of this habit is manifested in the form of everyday life; if men are strong, women are weak. If men have to act as leaders, then women are people who are led. This kind of understanding gives rise to the actions of male authority and leads to attempts to dominate women. In their creation, women are considered the weakest creatures (Mishra, 2021; Asman, 2021; Tohirin & Zamahsari, 2021; Angus, 2021). In the public sector, there is often exploitation of women. Meanwhile, men often get privileges (such as having the right to be leaders) (Asman, 2021; Israpil, 2021).
+
+Sexual exploitation, abuse, and harassment (SEAH) can occur in any project or workplace, regardless of the location or industry. For the proposed project, risks of sexual abuse, exploitation and harassment (SEAH) exist in the context of project-supported training and capacity building support, agricultural service provider activities (regarding both potentially exploitative relationships with small holder farmers and contacts between service provider staff and members of the public), and Forest Management Unit (FMU) staff supporting communities in implementing social forestry (see also Gender Assessment in Annex 8a). The project is not expected to exacerbate or worsen SEAH, however it is important to include targeted measures to avoid SEAH risks, ensure a SEAH-protocol within the GRM, and ensure adequate monitoring and reporting on SEAH risk mitigation measures and any incidences/grievances. Examples of good practices are:
+
+• Developing a survivor-centered GRM protocol  
+• Ensuring consistent monitoring and reporting on SEAH incidences/grievances  
+• Ensuring Project staff is assigned to oversee the implementation of SEAH risk avoidance measures and monitoring  
+• Develop a code of conduct for all staff, with zero tolerance for SEAH  
+• Train staff on the code of conduct, SEAH and other important considerations for GESI and social safeguards  
+• Raise awareness of beneficiaries on SEAH and GRM-protocol  
+
+For more detailed information on the avoidance/risk mitigation measures and monitoring framework, please refer to the Environmental and Social Impact Assessment (Annex 6a), Environmental and Social Management Plan (Annex 6b), and Gender Action Plan (Annex 8a).
+
+
+---
+*Chunk pages 122–122*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=940 (sys=94, user=846), max_out=1024, ctx=8192
+---
+
+# 2.2 Macro level (policies and laws)
+
+## 2.2.1 International Commitments
+
+Gender mainstreaming commitments have been voiced globally through the Convention on the Elimination of All Forms of Discrimination Against Women (CEDAW), the Beijing Platform for Action, and Sustainable Development Goals (SDGs). CEDAW establishes universal principles of equal rights between men and women in all areas of life. Meanwhile, the Beijing Platform for Action is a women's empowerment agenda to remove all obstacles to women's active participation in all public and private life areas in economic, social, cultural, and political decision-making.
+
+The global commitment to gender mainstreaming is outlined in the SDG 5, which is to achieve gender equality and empower all women and girls. The aim at this point is to end violence and discrimination against women and ensure that they have equal opportunities in all aspects of life.
+
+## 2.2.2 National Regulations
+
+The Indonesian government has issued regulations related to gender integration in national development. It began with the adoption of the CEDAW, which emphasized the principles of women's human rights, norms and standards of obligation, and the responsibility of the state in eliminating all forms of discrimination against women.
+
+The Government of Indonesia ratified CEDAW through Law Number 7 of 1984, in which Indonesia must implement all women's human rights as stated in this convention.
+
+In 2000, the Indonesian government issued Presidential Instruction Number 9 of 2000 concerning Gender Mainstreaming in National Development. Under this provision, every Minister, Head of a Non-Departmental Government Institution, Secretariat Leader of the Highest/Highest State Institution, Commander of the Indonesian National Armed Forces, Head of the Republic of Indonesia Police, Attorney General of the Republic of Indonesia, Governors, Regents/Mayors have to carry out gender mainstreaming in national development.
+
+Integrating gender in development programs, among others, aims to realize gender equality in various fields of development and realize a democratic political system, decentralized government, sustainable development, and participatory community empowerment.
+
+To accelerate gender mainstreaming in national development, the Indonesian government issued a Circular Letter from four Ministers regarding the National Strategy for Accelerating Gender Mainstreaming (PUG) through Gender Responsive Planning and Budgeting (PPRG). The four ministers are the Minister of National Development Planning (National Development Planning Agency (abbreviated as BAPPENAS)), the Minister of Finance, the Minister of Home Affairs, and the Minister of Child Empowerment and Protection.
+
+In addition, gender mainstreaming has been included in the national development plan through Presidential Decree Number 18 2020 concerning the National Medium Term Development Plan (RPJMN) for 2020-2024, which is carried out by accelerating the implementation of gender mainstreaming in various development fields at the central, regional and village levels, as well as increasing the role and quality of life of women in various development fields.
+
+The Presidential Instruction Number 9 of 2000 encourages every Ministry, Governor, regent/mayor to issue regulations implementing Gender Mainstreaming in their respective scopes of work.
+
+## 2.2.3 Regulations in West Kalimantan
+
+At the provincial level, gender mainstreaming in West Kalimantan has been included in four policies:
+
+1. West Kalimantan Provincial Medium Term Development Plan for 2018-2023
+2. Governor of West Kalimantan Regulation Number 53 of 2015 concerning guidelines for implementing gender mainstreaming in the development of West Kalimantan Province
+3. Governor of West Kalimantan Regulation Number 15 of 2016 concerning amendments to Implementing Gender Mainstreaming in the Development of West Kalimantan Province
+
+[Page 122]
+
+
+---
+*Chunk pages 123–123*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=902 (sys=94, user=808), max_out=1024, ctx=8192
+---
+
+# 10
+
+4. Regulation of the Governor of West Kalimantan Number 61 of 2019 concerning Regional Action Plans for West Kalimantan Province SDGs for 2019-2023.
+
+Meanwhile, policies related to mitigation and adaptation in West Kalimantan are manifested in six policies.
+
+1. Regional Regulation of West Kalimantan Province Number 7 of 2019 concerning Plans for Environmental Protection and Management of West Kalimantan Province;
+2. Governor of West Kalimantan Regulation Number 125 of 2020 concerning Regional Action Plans for Reducing Greenhouse Gas Emissions in West Kalimantar Province for 2020-2030;
+3. Decree of the Governor of West Kalimantan Number 1215/DLHK/2020 concerning Targets for Reducing and Allocation of Emissions from Deforestation and Forest Degradation in West Kalimantan for 2020-2030;
+4. Regulation of the Governor of West Kalimantan Number 201 of 2021 concerning Guidelines for the Implementation of Measurement, Monitoring and Reporting and Mechanisms for Data Exchange for Reducing Emission from Deforestation and Forest Degradation (REDD+) Activities;
+5. Regional Regulation of West Kalimantan Province Number 8 of 2021 concerning the Protection and Management of Peat and Mangrove Ecosystems; and
+6. Decree of the Governor of West Kalimantan Number 928/DLHK/2022 concerning the Formation of a Working Group on Reducing Emissions from Deforestation and Forest Degradation Plus (REDD+) in West Kalimantan Province.
+
+Unfortunately, the regulations on mitigation and adaptation do not specifically integrate a gender perspective.
+
+The following gender mainstreamed policies exist in the project areas:
+
+- Kapuas Hulu District does not yet have regulations related to gender mainstreaming
+- Sintang District has one gender-related regulation, namely Sintang District Head Regulation Number 9 of 2013, concerning the Integrated Service Center for the Empowerment of Women and Children in Sintang District
+- Sanggau Regency has two gender-related regulations, namely a) Sanggau Regency Government's Medium Term Development Plan for 2019-2024 and b) Sanggau Regent Regulation Number 26 of 2018 concerning Technical Guidelines for the Preparation of Gender Responsive Planning and Budgeting.
+- Ketapang Regency has one gender-related regulation, namely the Ketapang Regency Government Medium Term Development Plan for 2021-2026
+- Kubu Raya Regency is the district that has the most gender mainstreaming regulations, namely four regulations, including: a) Kubu Raya Regency Regional Long Term Development Plan 2009-2029; b) Regulation of the Regent of Kubu Raya Regency Number 28 of 2018 concerning Implementation of Gender Mainstreaming; c) Regulation of the Regent of Kubu Raya Regency Number 104 of 2019 concerning the Regional Action Plan for Gender Mainstreaming for 2019-2024; and d) Regulation of the Regent of Kubu Raya Regency Number 50 of 2021 concerning Synchronized and Integrated Gender Data Information Systems.
+
+For mitigation and adaptation policies, five project locations have six policies, including:
+
+- Kapuas Hulu Regency has one regulation, namely Kapuas Hulu Regent Regulation Number 87 of 2021, concerning the Development of the Embau Green Metropolitan Area in Kapuas Hulu Regency.
+
+
+---
+*Chunk pages 124–124*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=749 (sys=94, user=655), max_out=1024, ctx=8192
+---
+
+# [Page 1]
+## 11
+
+- Sintang Regency has two regulations, namely a) Sintang Regency Regional Regulation Number 1 of 2016 concerning Environmental Protection and Management in Sintang Regency; and b) Sintang Regent Regulation Number 31 of 2020 concerning Amendments to Sintang Regent Regulation Number 18 of 2020 concerning Procedures for Land Clearing for Communities in Sintang Regency.
+- Sanggau Regency has two regulations, namely a) Sanggau Regent Regulation Number 2 of 2017 concerning Guidelines for the Formation of the Environmental Impact Assessment Commission for Sanggau Regency and b) Sanggau Regent Regulation Number 8 of 2013 concerning Environmental Protection and Management
+- Ketapang Regency does not yet have regulations related to mitigation and adaptation in its regulatory system
+- Kubu Raya Regency has one regulation, namely Kubu Raya Regent Regulation Number 11 of 2020, concerning Types of Business Plans and or Activities that document environmental management efforts and environmental monitoring efforts must accompany them.
+
+## 2.2.4 Ensure Men and Women equality participate in and benefit from the project
+
+Increasing community resilience to climate change in project areas is very helpful, especially for women, because women have control even in household activities. For this reason, improvements are needed in terms of women's involvement by inviting them to actively participate in activities. Gender issues can be integrated into land-based mitigation and adaptation by looking at women's rights that need to be guaranteed so that women's capacity can significantly increase and provide support for meeting family needs (questionnaire by respondents at the district level 2023).
+
+## Conclusions for the Project
+
+- Indonesia's gender equality at global level has only achieved a GGGI score of 0.697, ranking it 87th globally and 7th among ASEAN countries. Despite some significant progress, the gender gap persists. Gender norms severely limit women from exploiting rights and opportunities including education, health, and finances and career development.
+- Gender based violence (GBV) is a significant problem that is rooted in socio-cultural factors and the solid patriachical structures. Building awareness can be a driving factor to eliminate GBV, including domestic violence.
+- Gender mainstreaming commitments have been made at international, national and provincial (West Kalimantan) level. The Indonesian government makes efforts to accelerate gender mainstreaming through gender responsive planning and budgeting (PPRG), however, gender has not been integrated into regulations governing mitigation and adaptation to climate change at national and regional level. Likewise, it has also not been included in policies, programs or activities in the environmental and forestry sector at the DLHK because it has not been considered a priority.
+
+
+---
+*Chunk pages 125–125*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1043 (sys=94, user=949), max_out=1024, ctx=8192
+---
+
+# 12
+
+## 3. Gender dimensions in the sector
+
+### 3.1 Meta level  
+
+#### 3.1.1 Women’s and Men’s Division of Labor and Access to and Control over Resources
+
+Women and men perform different parts in agriculture and plantation activities. Men perform work such as preparing land, preparing irrigation, and harvesting. Meanwhile, women perform work such as preparing seeds, planting, spraying, and harvesting. The harvest is sold to collectors for profit. However, regarding decision-making in agriculture and plantation work, it is done by men and women just following along (a result of discussion with Subur Makmur Farmers Group & Makmur Women Farmers Group in Sintang, 23 May 2023).
+
+Even though women are allowed to participate in agriculture and plantation activities, inequalities remain. Access to information and training for the program will only be obtained by people with higher education and those who are financially stable. Meanwhile, women are expected to take care of too much domestic affairs thereby impeding access to information and education. Accordingly, the roles taken in activities outside the household still need to be improved and expanded. Even though women's access to activities related to environmental management has been opened, control is still in the hands of men. Reluctance to get involved due to ignorance is one of the reasons why women at the grassroots level do not participate in environmental management (questionnaire by respondents at the district level, 2023).
+
+Since women are expected to fulfil additional tasks in the household, they are impeded from increasing their capacity for forest utilization. Women are given a role in processing, marketing, and managing finances. Meanwhile, men play a role in land preparation and cultivation. In forest protection, women are rarely involved in decision-making because they are considered too busy and have to bear a lot of domestic activities (questionnaire by respondents at the district level, 2023).
+
+#### 3.1.2 Potential Barriers to Women’s Participation
+
+Other obstacles that prevent women from developing their potential include:  
+1) women are reluctant to be involved in activities that are not certain to provide additional income;  
+2) do not have free time to get involved in activities because there are too many domestic affairs;  
+3) there is no division of roles in managing domestic affairs between women and men who are already married;  
+4) ideas given by women are often ignored;  
+5) the lack of women's relations with the market thereby hindering women's access to promoting climate-resilient value chains;  
+6) the mindset that exists in society that women cannot do heavy work and cannot work alone;  
+7) lack of knowledge about digital so that access to product promotion is not maximized;  
+8) there is no specific assistance for programs or activities for women's groups (Source: 1 to 8 abstracted from the answers to the questionnaire in the working group at the district level, May 23 2023);  
+9) Catholic women's groups were facilitated to form groups for activities in agriculture, but the lack of intensive assistance, and the domestic workload made them leave the garden without harvesting (results of interviews with women and village leaders in Kubu Raya, May 20 2023);  
+10) gender has not been determined as a priority indicator from the institution responsible for integrating gender in the forestry sector so there are no planned and sustainable gender mainstreaming activities in the micro sector;  
+11) there are certain activities that do not involve women because they require extra energy, for example loading fruit, so women are placed in administrative activities (Presented by representatives of Plantation Companies at the Sintang District FGD, May 23, 2023).
+
+#### 3.1.3 Prevent gender-based violence and discrimination
+
+West Kalimantan already has Regional Regulation Number 3 of 2015 concerning implementing the Protection of Women from Violence in the target area. Until now, accurate and updated data on violence against women in West Kalimantan is still challenging to obtain. However, that does not mean any violence against women in West Kalimantan. The mass media covers several severe cases, which often end in fatalities. Data on case records at the Commission
+
+---
+
+
+---
+*Chunk pages 126–126*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=988 (sys=94, user=894), max_out=1024, ctx=8192
+---
+
+# 13
+
+The Protection of Women and Children in 2019 shows 1,300 violence cases against women. Most of the data was obtained from data on cases or issues handled by 359 Religious Courts at the district or city level. In West Kalimantan, the figure reaches 90%.
+
+One of the villages in Kubu Raya District already has a Village Regulation related to Sexual Violence. There have been seven cases related to sexual violence reported to the team or task force that handles explicitly sexual violence in the village. The assistance has reached the Court. Encouragement for women who are victim of sexual violence and members of the public who see incidents related to sexual violence to report to the team or task force continues, one of which is by picking up the ball if the team knows that a member of the public has been affected by sexual violence.
+
+The obstacle experienced by the team was the fear of victims and witnesses reporting because there was a fee being collected, even though there was no charge at the time of reporting until handling took place, which was borne by the victims and witnesses. In addition, the feeling of shame and worry about the views of the surrounding community makes victims reluctant to report (source: result of interviews with representatives of community leaders and LPHD Kubu Raya, 20 May 2023).
+
+Preventing and dealing with gender-based violence and discrimination that occurs in villages can be done by:
+
+- increasing the sensitivity of stakeholders, including project implementers;
+- making SOPs with a gender perspective;
+- dissemination of justice and gender equality and the impact on people's lives;
+- involving young people from villages that are pilot projects to participate in campaigning for justice and gender equality (source: result of questionnaires at the district level, 2023, 2023) and
+- carrying out actions or methods of following up with victim and witnesses related to allegations of gender-based violence and discrimination (source: result of interviews with representatives of community leaders and LPHD Kubu Raya, 20 May 2023).
+
+## 3.1.4 Vulnerabilities faced by women and men in the context of climate change impacts
+
+There is an inequality of access to and opportunities for knowledge entering the village. This inequality reduces the speed of women's adaptation to climate change. Opportunities to obtain different information from women and men make vulnerability visible when implementing mitigation and adaptation projects. This is also exacerbated by the impact of climate change in the site area, where there are fewer and fewer sources of livelihood from nature, forcing men to return to logging. For example, in Kubu village, coconut farmers are starting to be affected by flooding due to mangrove logging activities.
+
+Women in vulnerable communities are usually only initially involved but tend to be listeners rather than positioning themselves as negotiators or participating in decision-making. Women will only express their opinions if asked (Source: results of filling in the questionnaire at the district level, 2023).
+
+Global climate efforts are gradually shifting towards a more balanced approach to adaptation and mitigation. Gender-responsive actions are recognized as necessary in the climate change agenda, particularly adaptation and mitigation. Gender equality and women's empowerment are the keys to the success of all multilateral agendas, including the 2030 agenda and all future climate action (UNDP, 2022). On the other hand, vulnerability is a function of socioeconomic, geographical, demographic, cultural, political, and environmental factors. Therefore, different groups have different vulnerabilities based, in part or in whole, on their sex, age, social status, health, wealth/poverty, and other sociocultural characteristics.
+
+Climate change disproportionately affects vulnerable groups, especially women in rural communities. Women are often poorer, receive less education, and are excluded from the political, community, and household decision-making processes that affect their lives. Such economic and social inequalities mean that women have fewer assets and fewer means to deal with the effects of climate change.
+
+
+---
+*Chunk pages 127–127*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1050 (sys=94, user=956), max_out=1024, ctx=8192
+---
+
+# 14
+
+Negative impacts of climate change. The tendency of women and girls to depend more on natural resources for their livelihoods also increases their vulnerability. Cultural norms regarding gender roles sometimes limit women's ability to make quick decisions in disaster situations. Women's individual and collective knowledge and experiences in natural resource management and other social activities at the household and community level equip them with unique skills beneficial for adaptation.
+
+## 3.1.5 Vulnerability faced by Dayak women in the context of climate change
+
+The position and role of Dayak women in the social structure is in the domestic sector. Apart from caring for domestic affairs, they also still help earn a living, for example, after preparing food for their husbands and children and then leaving for the forest and fields to work for a living or going to the rice fields and rubber plantations before sunrise. And then to the areas to look for wooden branches to bring home as material for making a fire for cooking. For Dayak women, this is not considered a burden, but it is a woman's or wife's duty. According to customs, women do not have a voice in decision-making in the household. Women are not allowed to argue or fight against their husband's decisions. This shows that the culture of the Dayak tribe is still thick with a patriarchal system. The legitimacy of the Benawan Dayak community has yet to place women in an equal position with men in policy making; this has been proven in the last ten years. There has never been a woman running for village head. Because women in the Dayak community are only seen in the construction of roles and status in the household, community structure, and traditional structures, in another case, related to oil palm development in West Kalimantan, Dayak women are very vulnerable to being disproportionately affected by palm oil management because Dayak women have unequal access to land, resources, and opportunities. Women's workforce still needs to be belittled and paid low wages, including not being given access to play a role as a leader and make decisions in public forums, so women's interests are often underrepresented in public spaces (Bowman, 2022; Niko, 2020).
+
+## 3.2 Macro level (policies and laws in sectors)
+
+Through the Ministerial regulation, the Ministry of Environment and Forestry No. 31 of 2017 on gender mainstreaming, the institution is abode with the national regulations on gender mainstreaming. Gender-responsive strategic planning of the Ministry of Env ironment and Forestry 2020-2024 has been established. All thirteen of its echelons have had a gender focal point under one coordination (Source: GIZ, 2020). Meanwhile, West Kalimantan Province already has regulations related to Gender Mainstreaming and integrating them into the regional medium-term development plan but does not yet have operational regulations relating to the integration of gender in the environmental and forestry fields. As a result, the implementation of Regulations related to g ender mainstreaming and the implementation of environmental and forestry management regulations are still running separately and are not yet related to each other.
+
+Indonesia's commitment to mainstreaming gender is carried out in the social, economic, political, health, education, environmental and forestry sectors. In the forestry sector, Minister of Forestry Decree Number 528/MENHUT-II/PEG/2004 concerning Guidelines for Implementation of Gender Mainstreaming in Forestry Development and Minister of Forestry Regulation Number P.65/MENHUT-II/2011 concerning Guidelines for Gender Responsive Planning and Budgeting have been issued. The purpose of this regulation is to provide direction for leaders and ranks of work units within the Ministry of Forestry in preparing gender-responsive planning and budgeting. Along with the merger of 2 (two) ministries of Forestry and the Ministry of Environment in 2014, in 2017, a Regulation of the Minister of Environment and Forestry of the Republic of Indonesia Number P.31/MENLHK/SETJEN/SET.1/5/2017 concerning Implemen- tation Guidelines was issued Gender Mainstreaming in the Environment and Forestry Sector. This regulation was issued to encourage, make effective, and optimize gender mainstreaming
+
+
+---
+*Chunk pages 128–128*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=971 (sys=94, user=877), max_out=1024, ctx=8192
+---
+
+# [Page 1]
+## 15
+
+efforts in every planning, formulation, implementation, monitoring, and evaluation of policies, programs, and activities in the environmental and forestry sector.  
+The implementation and acceleration of gender mainstreaming is an integral part of all activi-
+ties—work units within the scope of the Ministry of Environment and Forestry. In addition, this 
+regulation is a refinement of the two previous regulations mentioned above. 
+In addition to making gender mainstreaming policies, the Ministry of Environment and Forestry 
+has created a gender mainstreaming roadmap so that the implementation of gender main-
+streaming in the Ministry  of Environment and Forestry is more focused and systematic. The 
+Ministry of Environment and Forestry's Gender Mainstreaming Roadmap for 2020-2024 has 
+the following objectives: 
+• Map the progress of PUG implementation at the Ministry of Environment and Forestry. 
+• Identify strategic gender issues in order to accelerate PUG implementation. 
+• Arranging stages of PUG implementation at the Ministry of Environment and Forestry. 
+Meanwhile, the regulations of the Ministry of Environment and Forestry related to climate 
+change include: 
+1. Regulation of the Minister of Environment and Forestry of the Republic of Indonesia 
+Number P.32/MenLHK/Setjen/Kum.1/3/2016 concerning Forest and Land Fire Control, 
+which aims to standardise norms, criteria, and guidelines for planning, organizing, op-
+erational implementation, monitoring, and evaluation in the implementation of ‘dal-
+karhutla’ (stands for Forest and Land Fire Control) businesses/activities/actions for re-
+lated parties, so that the effectiveness and efficiency of forest and land fire control is 
+guaranteed; 
+2. Decree of the Director General of Climate Change Control Number 
+SK.3/PPI/SET.8/OTL.0/1/2021 concerning the Action Plan for Bureaucratic Reform of 
+the Directorate General of Climate Change Control for 2020- 2024, which aims to pro-
+vide direction in implementing bureaucratic reform of the Directorate of Control Climate 
+Change to run effectively and efficiently, measurable, consistent, integrated and sus-
+tainable; 
+3. Regulation of the Director General of Climate Change Control concerning the Organi-
+zation and Work Area of Manggala Agni, which aims to provide guidelines regarding 
+the organization and work area of Manggala Agni so that the implementation of forest 
+and land fire control activities can run effectively and efficiently; and 
+4. Regulation of the Director General of Climate Change Control Number 
+P.4/PPI/API/PPI.6.3/2021 concerning Guidelines for Implementing the Climate Village 
+Program, which aims to serve as directions and guidelines in implementing the climate 
+village program. 
+
+This data shows that the Legal Foundation for promoting justice and gender equality through 
+the Gender Mainstreaming strategy in Indonesia is very strong. Even the Indonesian Ministry 
+of Environment and Forestry received the Parahita Ekapraya Award in two consecutive periods 
+in the highest category. Unfortunately, based on interviews with government staff at the district 
+level, it was stated that gender was not yet the main performance indicator for the department 
+dealing with forestry issues, so that gender integration was not a top priority in the development 
+of policies or programs related to forestry. Therefore, the Green Climate Fund (GCF) project 
+needs to substantially support the formulation of a gender -responsive legal framework in the 
+forestry sector in the regions in accordance with existing regulations at the national level. In 
+addition, it is necessary to facilitate the preparation of a Roadmap for Gender Mainstreaming 
+in the field of environment and forestry as a guideline for related agencies (D inas Lingkungan 
+Hidup dan Kehutanan) in integrating a gender perspective in policies, programs or activities 
+with measurable performance indicator targets every year. 
+
+The ministry responsible for gender in Indonesia is the Ministry of Women's Empowerment 
+and Child Protection. Under the mandate of Presidential Instruction Number 9 of 2000 con-
+
+
+---
+*Chunk pages 129–129*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=896 (sys=94, user=802), max_out=1024, ctx=8192
+---
+
+# 16
+
+In the context of Gender Mainstreaming in National Development, this ministry must encourage all ministries in Indonesia (including regional heads at the provincial and district/city levels according to their main tasks and functions) to implement Gender Mainstreaming. To accelerate the implementation of gender mainstreaming in Indonesia, the Gender Mainstreaming Driver Institutions, namely the Ministry of Women's Empowerment and Child Protection, the Ministry of the National Development Planning Agency (Bappenas), the Ministry of Finance, and the Ministry of Home Affairs, issued a circular letter of four Ministers concerning the National Strategy for Accelerating Gender Mainstreaming through Planning and Gender responsive budgeting (namely PPRG) in 2012.
+
+Each Minister/Governor/Regent must implement PUG according to their authority. In the environmental and forestry sector, the Ministry of Environment and Forestry is responsible for integrating gender into its policies/programs and activities. This ministry issued a Regulation of the Minister of Environment and Forestry of the Republic of Indonesia in 2017 concerning Guidelines for Implementing Gender Mainstreaming in the Environment and Forestry Sector.
+
+This institution was very innovative and finally received the highest award in implementing Gender Mainstreaming, namely the Parahita Eka Praya award for the highest category, namely Mentor.
+
+International funding institutions have activities, among others:
+
+1. GIZ FORCLIME (Forest and Climate Change Programme)
+The program's overall objective is to reduce greenhouse gas emissions from the forest sector while improving the livelihoods of Indonesia's poor rural communities. In order to achieve this goal, the program team will support the Indonesian Government in the design and implementation of various legal, policy-related, and institutional reforms aimed at the conservation and sustainable management of forests at the local, provincial, and national levels.
+
+2. CIWT UNDP (Combatting Illegal Wildlife Trade (CWT))
+Is the project to help the Government reduce the volume of unsustainable wildlife trade and the rate of loss of globally significant biodiversity in Indonesia and East and South-east Asia
+
+3. MFP4 (Multi-stakeholder Forestry Programme Fase 4)
+A program of cooperation between the Indonesian Government through the Ministry of Environment and Forestry (KLHK) and the UK's Department for International Development (DFID) to strengthen forest governance and market reforms to reduce the illegal use of forest resources.
+
+4. FIP (Forest Investment Program)
+The Forest Investment Program (FIP) supports developing countries' readiness efforts in implementing REDD+ by providing financing to improve infrastructure and institutional readiness to assist adaptation to the impacts of climate change on forests, improved sustainable forest management or Sustainable Forest Management (SFM), which reduces emissions and protects carbon stores, as well as contributes to increasing access to the multiple benefits of forest resources, including conservation, biodiversity, protection of local community rights, poverty reduction, and increasing the welfare of rural communities.
+
+## 3.3 Meso level (Institutions in the sector)
+
+### 3.3.1 District level initiatives to empower women
+The pilot project districts have implemented gender mainstreaming, including gender-responsive planning and budgeting. One form of the district has carried out gender mainstreaming, namely forming LPHD. For example, Sintang Regency has increased farmers' welfare by 325% by forming several clusters, for example, farmer clusters, fish clusters, etc. Communities are encouraged to maximize the processing of agricultural products in order to provide benefits
+
+[Page 1]
+
+
+---
+*Chunk pages 130–130*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1095 (sys=94, user=1001), max_out=1024, ctx=8192
+---
+
+# 17
+
+to the broader community. Most of the women involved in programs in Sintang are in the envi-
+ronmental sector. The Sintang District Government emphasizes the involvement of women in 
+environment-based activities, including cooperation with NGOs. NGOs collabor ating with the 
+Sintang District Government always emphasize involving women in every activity, including 
+women encouraged to participate in coordination activities in village areas. One of the obsta-
+cles encountered in activities carried out at the village level is cultivating.  
+In addition, the district government has collaborated with universities to compile academic pa-
+pers and district heads' regulations related to protecting forests and the environment in village 
+areas. The district government and universities also collaborated to form assisted villages and 
+sent students to carry out activities and research related to the environment and forestry in the 
+assisted villages. Other activities the local government gives to farmer groups in the village are 
+related to rubber. Since 2006, assistance has been given to superior rubber seeds, and it can 
+be carried out until 2023 by generating good income. In addition, there is also an agroforestry 
+program that combines forests with plantations (Abstracted from the remarks of the Regional 
+Secretary of Sintang Regency, 22 May 2023). 
+
+## 3.3.2 Initiative to involve women in forest management and social forestry programs 
+
+Based on the results of FGDs in Sintang District, information was obtained that women's in-
+volvement in forest management in three villages in Sintang District was greater than that of 
+men, especially after the Village Forest Management Agency (LDPH) was suspended due to 
+the pandemic. It happens because men work more outside to earn money, so women manage 
+forests, especially in farming activities. The representation of women in LDPH management, 
+which previously did not exist, decreased from 14 to eight peopl e. In additionout of 30 KUPS, 
+27 KUPS are specifically for women, and three other KUPS are for men. This is to support the 
+management of forest products, done mainly by women. This includes protecting the forest, 
+and women are more reliable than men. Men mo stly cut wood and then sell it, while women 
+look after and care for it so that the forest can indeed be maintained by women (LDPH, Sintang 
+District FGD, May 23, 2023). 
+
+Another example that the involvement of women and men in work is similar can be seen in an 
+oil palm plantation in the Sintang District. More women are working in oil palm plantations 
+because women are considered to work better and are more detailed in nurseries and treat-
+ments. Likewise, women who occupy managerial positions also exist in the management of oil 
+palm plantations, including those related to fulfilling the leave rights of women working in oil 
+palm plantation companies (Plantation Companies, Sintang District FGD, May 23, 2023). 
+
+However, between the central government, regional governments, and NGOs there is no 
+synchronization regarding the provision of assistance needed at the site level. The institutions 
+that arrived at the site level only arrived at the question of what was needed, but there was no 
+continuity and monitoring for the implementation of the programs/activities/training provided. 
+This happened due to limited available resources, lack of socialization related to activities or 
+programs, especially those related to Gender Mainstreaming. In addition, there are inadequate 
+regulations, only a few are related to regulations regarding g ender mainstreaming, the 
+structure of working groups has not been formed much, some have been formed but have not 
+run as they should. In addition, reporting and monitoring that are not yet integrated with gender 
+result in programs or activities that are not optimally integrated with gender. Local governments 
+do not yet have disaggregated data related to land-based mitigation and adaptation, making it 
+difficult for women's groups to be detected and receive assistance (Abstracted from the an-
+swers to the questionnaire in the working group, 2023). 
+
+## 3.3.3 Actors or initiators in the target area who promote gender equality 
+
+Concerning the projects being carried out, there are extensive opportunities for collaboration 
+involving several actors. The actors invited to the FGDs conducted in Kubu Raya and Sintang 
+Districts came from representatives of the Regional Secretaries, Repr esentatives of the Re-
+gional People's Representative Council (DPRD), Regional Development Planning Agency, Re-
+search and Development (abbreviated as Bappedalitbang), Women's Empower -ment Office,
+
+
+---
+*Chunk pages 131–131*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1222 (sys=94, user=1128), max_out=1024, ctx=8192
+---
+
+# 18
+
+## Child Protection and Family Planning (abbreviated as DP3AKB), Food and Agriculture Security Service (abbreviated as DKPP), Environment and Forestry Service (abbreviated as DLHK), Forest Management Unit (abbreviated as KPH), Forest Farmers Group (abbreviated as KTH), Investment and Licensing (abbreviated as DPMP), BKT, Regional Disaster Management Agency (abbreviated as BPBD), Village Head Representative, Working Group on Prevention and Eradication of Forest Destruction (abbreviated as P3H), Gender Mainstreaming Working Group (abbreviated as Pokja PUG), REDD+ Working Group, Working Partners (owners of venture capital such as PT), Representatives of Forestry Village Management Institutions (abbreviated as LPHD), Representatives of Social Forestry Business Groups (abbreviated as KUPS), Representatives of Women Farmers Groups (abbreviated as KWT), Representatives of Village Women, Experts, GIZ, Planet Indonesia Foundation, Foundation National Kapital Indonesia, Blue Forest, USAID, and Canopy Sintang.
+
+### 3.4 Micro level (target group)
+
+The West Kalimantan Province's Gender Development Index (GDI) is 86.95, lower than Indonesia's GDI of 94.26.
+
+#### Table 4: GDI West Kalimantan Province & 5 Districts Project Locations Year 2022
+
+| Province/District | Life Expectancy (M/F) | Expected Years of Schooling (M/F) | Mean Years of Schooling (M/F) | Expenditure per Capita (M/F) | GDI |
+|-------------------|----------------------|----------------------------------|------------------------------|------------------------------|-----|
+| Sanggau           | 69,46 / 73,30        | 11,61 / 11,57                    | 7,89 / 6,89                  | 12.705 / 4.400               | 81,19 |
+| Ketapang          | 69,05 / 73,05        | 11,83 / 11,77                    | 7,97 / 6,92                  | 12.868 / 6.914               | 88,60 |
+| Sintang           | 69,87 / 73,73        | 11,93 / 12,24                    | 7,49 / 6,51                  | 12.615 / 5.846               | 86,73 |
+| Kapuas Hulu       | 70,63 / 74,34        | 12,71 / 12,08                    | 7,97 / 6,95                  | 10.243 / 4.935               | 84,95 |
+| Kubu Raya         | 68,60 / 72,64        | 13,83 / 13,88                    | 7,72 / 6,81                  | 13.522 / 5.298               | 84,30 |
+| Kalimantan Barat  | 68,87 / 72,74        | 12,62 / 12,94                    | 7,94 / 6,93                  | 13.391 / 6.165               | 86,95 |
+
+Source: KPPA, 2022
+
+Based on the data in Table 2.2, it can be seen that only Ketapang Regency has a higher GDI than the GDI of West Kalimantan Province and the GDI in four other districts. Regarding the components of life expectancy for men and women, four districts, namely Sanggau, Ketapang, Sintang, and Kapuas Hulu, are higher than the provinces of West Kalimantan and Kubu Raya.
+
+For boys, the longevity of schooling for boys in Kapuas Hulu and Kubu Raya districts is higher than that of West Kalimantan Province and three other regencies, while the longevity of schooling for girls in Kubu Raya district is the highest of other regencies and West Kalimantan province. The average length of schooling is the highest for both boys and girls compared to the districts and provinces of West Kalimantan, namely Kapuas Hulu District.
+
+As for the share of expenditure per capita, especially women, the highest is in Ketapang Regency, and the lowest is in Sanggau Regency
+
+
+---
+*Chunk pages 132–132*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1118 (sys=94, user=1024), max_out=1024, ctx=8192
+---
+
+# 19
+
+Kubu Raya 20,00 47,11 34,83 73,04  
+Kalimantan Barat 16,92 46,89 35,19 71,14  
+
+Source: KPPPA, 2022  
+
+Table 2.3 shows that the highest Gender Empowerment Measurement is in Kubu Raya Re-  
+gency, 73.04, exceeding West Kalimantan Province. The highest gender disparity occurs in  
+the involvement of women in Parliament, which has not yet reached 30%. The lowest number  
+of women's involvement in Parliament was in Kapuas Hulu (6.67%), followed by Ketapang  
+(8.89%). Sintang (12.50%), Sanggau (17.50%) and the highest in Kubu Raya (reaching 20%).  
+Only Sanggau District has higher women's political participation than the average in West Ka-  
+limantan. Another gender inequality occurs in women's income contribution. In the five project  
+location districts, women's income contribution was consistently lower than men's, ranging  
+from 25.42% (in Ketapang district) to 41% in the Kapuas Hulu district.  
+
+## 3.4.1 The situation of women and men in project target areas  
+
+Based on group discussions with several community members in the village, information was  
+obtained that women and men share roles in forest and land use. Women's groups in land use  
+carry out activities to plant ginger, basil, and commodities, which are carried out on an ongoing  
+basis (Source: results of the questionnaire at district level, 2023). In one Women Farmer s  
+Group, there are seven farmer groups (abbreviated as poktan), and each poktan has 140  
+female members. Jaya Bersama Women Farmers Group is one of the Women Farmers  
+Groups that empowers female members for agroforestry activities. The Women Farmers  
+Group has been working with Forest Stakeholders Units (abbreviated as KPH), the Department  
+of Agriculture, NGOs, and facilitators. The forms of cooperation that are often carried out  
+between the Women Farmers Group and partners include seed assistance with agricultural  
+equipment, and some are related to agroforestry programs, including working with the Peat  
+and Mangrove Restoration Agency (called BRGM). The accessibility of women's groups to  
+obtain tools and assistance that are useful for agroforestry activities is high. However, even  
+though they receive assistance, it is undeniable that all this assistance comes from more than  
+just the government. The government can provide little assistance related to agroforestry. One  
+of the activities that have been carried out to strengthen the role of women is through training  
+for women's groups related to increasing the creative economy. For example, basket weaving  
+training, making delivery goods creations, and packing home industry goods so they are ready  
+to sell. Usually, the training activities are carried out in c ollaboration with Dekranasda, the  
+Office of Cooperatives, Industry, and Trade, and the Women's Bridal Makeup Organization  
+(result of discussion with Subur Makmur Farmers Group & Makmur Women Farmers Group in  
+Sintang, 23 May 2023).  
+
+In addition to KWT, the village government has recently formed KUPS (Social Forestry  
+Business Group) under the Village Forest Management Agency (LPHD). The LPHD will later  
+collaborate with the Forest Management Unit (KPH), the Forestry Service, and the Ministry of  
+Environment and Forestry. KUPS aims to ensure that programs owned by districts under LPHD  
+can be implemented and are right on target with the community. Meanwhile, there are only  
+three KUPS, where each KUPS must include a gender perspective in the programs/activities  
+being carried out. Because it had just been formed, the management structure in KUPS still  
+needed to represent women. Women can become part of the management structure in the  
+future because the KUPS must still represent justice and gender equality. It is hoped that in  
+the future, women can be involved in activities carried out by KUPS, bearing in mind that  
+women have many skills that can be explored according to the needs of the program/activity  
+itself (Abstracted from the results of di scussions with LPHD in Kubu Raya Regency, 20 May  
+2023).  
+
+This data shows that women play a role in carrying out various forestry activities but have yet  
+to be substantively involved in institutions at the village level, namely the Village Forest  
+Management Institution (LPHD). Women have not been involved as LPDH managers because  
+there is
+
+
+---
+*Chunk pages 133–133*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=262 (sys=94, user=168), max_out=1024, ctx=8192
+---
+
+# 20
+
+responsibility to be domestic affairs. Increasing gender sensitivity at the village level, both for 
+village officials, LPHD, and KUPS, needs to be done so that every activity they carry out always 
+takes gender sensitivity into account, both when identifying needs, designing 
+programs/activities, planning, designing budgets, implementing and monitoring and evaluating 
+them. In addition, it is necessary to conduct leadership training for women at the village level 
+to be significantly involved in organizations at the village site level (Abstracted from the results 
+of discussions with LPHD in Kubu Raya Regency, 20 May 2023).
+
+
+---
+*Chunk pages 134–134*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=807 (sys=94, user=713), max_out=1024, ctx=8192
+---
+
+# Conclusions for the project
+
+- Women play a significant role in carrying out various forestry activities, but inequalities remain with regard to access to information and training. It is important to ensure active involvement of women in capacity-building activities for forest utilization and forest protection so that women's rights significantly increase.
+- Women's individual and collective knowledge and experience in natural resource management and other social activities (both at the household and community levels) equip women with unique skills to engage in land-based mitigation and adaptation activities. However, women are rarely involved in making forest management decisions. For this reason, it is necessary to increase the active involvement of women in forest management and decision-making, starting from designing, planning, and implementing to monitoring and evaluating the benefits of land-based mitigation and adaptation activities.
+- At the provincial level, West Kalimantan does not yet have operational regulations related to gender integration in the environmental and forestry sector. Therefore, regulations related to gender mainstreaming and the implementation of environmental and forestry management regulations are still running separately and are not yet related to each other. It is important to review the regulatory framework and to develop gender mainstreaming material for KLHK/DLHK.
+- Inequality of access and opportunities to acquire knowledge at the village level reduces the speed of women's adaptation in dealing with climate change. Opportunities to obtain information that are not the same between women and men make vulnerability visible when implementing mitigation and adaptation projects.
+- There are potential actors/agencies involved in adaptation and mitigation actions. However, there is no synchronization regarding providing assistance needed at the site level, particularly concerning Gender Mainstreaming. It is essential to strengthen and develop collaboration between related actors and institutions in integrating gender mainstreaming in land-based mitigation and adaptation actions.
+- Cases of sexual violence occur in the field, but their handling is not optimal because they are still considered taboo. For this reason, it is necessary to strengthen gender sensitivity, especially in handling victims to stakeholders, including project implementers. It is necessary to develop SOPs with a gender perspective by taking sides with victims and using young people to campaign against sexual violence based on justice and gender equality.
+- No affirmative action regulation requires women's involvement in land-based adaptation and mitigation activities. Therefore, the determination of the minimum percentage of women's representation in the Forest Management Village Institution (LDPH) will increase fairness and gender equality in the utilization of forest products.
+- The most significant contributor to the gender gap is the economic aspect. Meanwhile, important contributor to gender views are legislative membership and the income distribution of women in the family. Accordingly, efforts need to be made to create job opportunities for women in Social Forestry Enterprises through minimum policy affirmations, to provide leadership training for women who are KWT (Women Farmers Group) members they can manage the organization more professionally, and to encourage women's representation ad administrators in formal institutions such as Village Owned Enterprises (BUMDES), as well as other institutions related to land-based mitigation and adaptation such as Village Forest Management
+
+[Page 134]
+
+
+---
+*Chunk pages 135–135*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=224 (sys=94, user=130), max_out=1024, ctx=8192
+---
+
+# Groups (KPHD), Social Forestry Business Groups (KUPS), LPHD (Village Forest Management Institute)
+
+• The project should improve collaboration between organizations responsible for integrating a gender perspective and technical institutions directly accountable for development in the environmental and forestry regarding the same vision regarding gender mainstreaming so that policies, programs, and activities can run well and are carried out with the principles of justice and gender equality.
+
+[Page 1]
+
+
+---
+*Chunk pages 136–136*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=977 (sys=94, user=883), max_out=1024, ctx=8192
+---
+
+# 4. Gender responsiveness and expertise, as well as gender equality in the part-ner organisation(s)
+
+## 4.1 Political Partners
+
+Following the Presidential Decree Number 9 of 2000 on gender mainstreaming in national planning, The Ministry of Environment and Forestry has imposed gender-responsive planning, implementation, monitoring, and evaluation of its policies, programs, and activities. In order to ensure gender mainstreaming in the organization.
+
+MoEF issued Decree of the Minister of Forestry Number 528/MENHUT-II/PEG/2004 concerning Guidelines for Implementation of Gender Mainstreaming in Forestry Development and Minister of Fores try Regulation Number P.65/MENHUT-II/2011 concerning Guidelines for Gender Responsive Planning and Budgeting to provide direction for leaders and ranks of work units within the Ministry of Forestry in pre-paring gender responsive planning and budgeting.
+
+In 2017, the Regulation of the Minister of Environment and Forestry of the Republic of Indonesia Number P.31/MENLHK/SET-JEN/SET.1/5/2017 concerning Guidelines for Implementing Gender Mainstreaming in the Environment and Forestry Sector was issued. This regulation was issued to encourage, make effective, and optimize gender mainstreaming efforts in every planning, formulation, implemen- tation, monitoring, and evaluation of policies, programs, and activities in the environmental and forestry sector.
+
+Implementing and accelerating gender mainstreaming is an integral part of all activities. Work units within the scope of the Ministry of Environment and Forestry. The Ministry of Environment and Forestry has also created a roadmap on gender mainstreaming with the intention that implementing gender mainstreaming in the Ministry of Environment and Forestry is more focused and systematic.
+
+The Ministry of Environment and Forestry Gender Main- streaming Roadmap 2020-2024 has the following objectives:
+
+• Map the progress of PUG implementation at the Ministry of Environment and Forestry;
+• Identify strategic gender issues in order to accelerate PUG implementation and
+• Arrange phases of PUG implementation at the Ministry of Environment and Forestry.
+
+The Ministry of Environment and Forestry (KLHK) is holding a Gender Mainstreaming Competition for Echelon I and Echelon II Units in 2020 and 2021, developing a market for ide-as by training new State Civil Apparatus continuously (4 periods have been carried out) so that the State Civil Apparatus of the Ministry of Environment and Forestry un derstands gender and makes gender justice and equality a guideline for attitude, behavior, and work naturally; The Ministry of Environment and Forestry (KLHK) received the award of 'Anugrah Prahita Eka Praya' with status 'mentor'.
+
+Nevertheless, horizontal and vertical coordination with regional governments at the provincial and district levels, especially in integrating gender in the development of the environmental and forestry sector, has not yet been implemented, so gender mainstreaming (PUG has not been carried out in an integrated manner in environmental and forestry development at the regional and regional levels) footprint.
+
+The availability of data disaggregated by sex in the scope of environment and forestry is not yet available in an up-to-date and adequate manner, even though this data is very much needed in designing a project to monitor and evaluate its results to provide fair and equal benefits for women and men and groups. . Externally, there are still sociocultural values that prevent women from being able to play a strategic role in decision-making.
+
+## Kubu Raya District and Sintang District
+
+Kubu Raya district has the most gender mainstreaming regulations, 4 (four) regulations, including:
+
+1. Kubu Raya Regency Regional Long-Term Development Plan (2009).-2029
+2. Regulation of the Regent of Kubu Raya Regency Number 28 of 2018 concerning the Implementation of Gender Mainstreaming
+
+---
+
+
+---
+*Chunk pages 137–137*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1075 (sys=94, user=981), max_out=1024, ctx=8192
+---
+
+# 24
+
+## 3. Regulation of the Regent of Kubu Raya Regency Number 104 of 2019 concerning the Regional Action Plan for Gender Mainstreaming for 2019-2024
+
+## 4. Regulation of the Regent of Kubu Raya Regency Number 50 of 2021 concerning Synchronized and Integrated Gender Data Information Systems
+
+Sintang District has one gender-related regulation, namely Sintang District Head Regulation Number 9 of 2013 concerning the Integrated Service Center for the Empowerment of Women and Children in Sintang District). However, both Kubu Raya and Sintang do not yet have gender mainstreaming regulations in the environmental and forestry sectors.
+
+## 4.2 Implementing partners
+
+Although the policy regarding Gender Mainstreaming in the environmental and forestry spheres has been established, the implementation stage is still experiencing internal and external obstacles. Regarding internal barriers, the institutions responsible for integrating gender in planning, budgeting, implementing, monitoring, and evaluating environmental and forestry policies, programs, or activities are not yet gender sensitive. The availability of gender-sensitive human resources does not yet support them. In addition, gender mainstreaming regulations in the environment and forestry sector are not yet been operationalized in regional rules of a similar nature as a reference for related agencies in carrying out gender mainstreaming in the environmental and forestry sector in the regions. The availability of sex-disaggregated data in the ecological and forestry scope is also not available in an up-to-date and adequate manner. Meanwhile, externally, socio-cultural values still prevent women from being able to play a strategic role in decision-making.
+
+Understanding of the gender concept is growing at the community and government levels. Such a concept is emerging, although capacity improvement is still needed in a general sense of gender equality and gender mainstreaming. Kubu Raya District, which is a pilot project, has carried out gender mainstreaming, one of which is forming a Social Forestry Business Group (KUPS) under the Village Forest Management Agency (LPHD), where the LPHD collaborates with Forest Management Units (KPH), the Forestry Service, and the Ministry of Environment and Forestry. The establishment of KUPS is intended so that programs owned by the Regency can be implemented right on target in the community where planned programs must incorporate a gender perspective. However, the representation of women in KUPS management in Kubu Raya Regency does not yet exist because the KUPS has not yet been formed, so the core board is 2 (two) male representatives from each village.
+
+In addition to creating the KUPS, Kubu Raya Regency also has a Women Farmers Group (KWT). Every KWT has seven farmer groups, each consisting of 140 (one hundred and forty) women. KWT Jaya Bersama is one of the KWTs that empowers female members for agroforestry activities. KWT has collaborated with KPH, Agriculture Office, NGOs, and facilitators. The form of cooperation that is often carried out between KWT and partners is in the form of seed assistance and assistance with agricultural equipment, and some are also related to programs related to agroforestry, including working with BRGM (stands for Peat and Mangrove Restoration Agency). One of the activities that have been carried out to strengthen the role of women is conducting training for women's groups related to increasing the creative economy. For example, basket weaving training, making delivery goods creations, and packing home industry goods so they are ready to sell. Usually, the training activities are carried out in collaboration with the Department of Industry and Trade Micro Business Cooperations (Dekranasda), the Office of Cooperatives, Industry, and Trade, and the Women's Bridal Makeup Organization.
+
+The Sintang district government emphasizes the need for women's involvement in environment-based activities, including cooperation with NGOs. NGOs working with the Sintang District Government always try to involve women in every activity, including proposing that women participate in coordination activities in village areas. Another activity that has been given by the local government to farmer groups in the village is related to rubber. Since 2006, the local government has assisted with superior rubber seeds, which will be carried out until 2023 by
+
+--- END EXTRACTED TEXT ---
+
+
+---
+*Chunk pages 138–138*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=955 (sys=94, user=861), max_out=1024, ctx=8192
+---
+
+# [Page 1]
+
+## 25
+
+generating good income. (Abstracted based on remarks by the Regional Secretary of Sintang Regency, 22 May 2023.
+
+### 4.3 Strategic partners
+
+Many funding institutions want to come to Kubu Raya or Sintang to reduce emissions. In addition, many profit-making institutions, especially farmers, are already actively supporting the community's welfare. The district government emphasizes the involvement of women in environment-based activities, including i f funding agencies or for -profit institutions want to work with the district government. Therefore, multi-stakeholder collaboration must be built and enhanced to provide optimal benefits for regional progress and people's welfare. Gender issues must always be considered an integral part by opening access to and participation of women in all project interventions, including providing space for women to be involved in decision-making. Thus, national and international commitment to "no one will be left behind" can be realized, and the benefits of forestry sector development can provide fair and equal benefits for women and other marginal groups (Abstracted from the regional secretary's speech and presentation by Bappeda of Sintang Regency, 22 May 2023).
+
+### 4.4 Executing Entities
+
+This chapter aims to give an overview of the Executing Entities’ strategies and capacities on promoting gender equity and gender mainstreaming. The project also aims to enhance existing capacities of field facilitators, GIZ project staff, and independent assistants through trainings (see cross cutting activity # 8 in Annex 8b - GAP). Besides, a Technical Advisor for Environmental and Social Safeguards, Gender, and Indigenous Peoples (ESGI Advisor) will be recruited by GIZ to make sure that the project follows a gender sensitive approach and that gender measures are implemented according to the GAP, which will mainstream gender positive action across all project activities. In addition, a M&E system that includes all GAP indicators will be developed.
+
+#### 4.4.1 BPDLH
+
+BPDLH is committed to monitoring and reporting on gender results and impact which is part of safeguards implementation monitoring
+
+11. Gender outcomes and impact of programs are to be reported annually. Beneficiaries and benefit intermediaries are required to report on gender outcomes and impact overall during the design (expected impacts), implementation and at program closure. In addition, they need to provide gender disaggregated data where relevant (that is where benefits or results accrue to individuals directly; or where there is a possibility to collect outcome or output data that can be disaggregated by gender).
+
+According to ist Environmental and Social Management System (ESMS) Guidelines, BPDLH ratifies environmental and social policies as stated in the BPDLH Environmental and Social Protection Charter No. 3/2022 (Appendix A7) which contains BPDLH top management's commitment to gender equality and protection of vulnerable groups - as part of the commitment to provide access to open information, participation and justice, as well as non-discriminatory treatment to all employees and work partners by not tolerating discriminatory behavior, harassment bullying, bullying, violence and/or intimidation based on differences whether physical, written, verbal or virtual, BPDLH provides the following supporting tools:
+
+i. Policies and regulations/agreements;
+ii. Monitoring and evaluation mechanisms;
+iii. Complaint and handling mechanisms for gender-based violence;
+iv. Gender-friendly facilities to support the needs and interests of vulnerable groups in the
+v. Implementation of BPDLH institutions as well as programs and/or activities that receive funding support from BPDLH.
+
+_______________________________________________________________________________________________________________
+11 Decree of the Minister of Finance No. 807/2018 on the Guidelines for Gender Mainstreaming Implementation at the Ministry of Finance; Executive Instruction No.9/2000 on Gender Mainstreaming
+
+
+---
+*Chunk pages 139–139*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=943 (sys=94, user=849), max_out=1024, ctx=8192
+---
+
+# 26
+
+BPDLH’s ESMS Guidelines also demand a social and gender impact assessment study if there is potential for direct, indirect or cumulative impacts on vulnerable communities, including women (Principle 12 – Social quality of society, gender mainstreaming and protection of vulnerable groups). This principle is also closely related with the EMNS Principles 7 and 10. When consulting with local communities, especially women and other vulnerable groups need to be involved (Principle 7 – Protection and participation/involvement of customary law communities). Stakeholder engagement plans are developed, which includes strategies and steps that will be implemented to capture all stakeholder participation, attention and needs especially women, vulnerable groups and communities that have the potential to be harmed by the implementation of the activity (Principle 10 – Involvement of stakeholders and disclosure of information).
+
+In addition, the BPDLH recently recruited a Gender Safeguards Specialist to lead and provide assistance on gender safeguards to the BPDLH, including to provide assistance to effectively developing and operationalizing related gender mainstreaming mechanism of the organization, ensuring that these comply with both national and international requirements.
+
+## 4.4.2 Solidaridad
+
+Solidaridad has a gender policy and strategy12, which provides guidance in a continuing effort to integrate gender into their work. They have developed a practical implementation framework called the Gender ABC, which consists of the following three main elements:
+
+1. Analyzing and addressing barriers to participation
+2. Balancing power relations
+3. Creating togetherness based on shared experiences
+
+Solidaridad is committed to social development, including gender inclusion, ensuring transformational systemic change. Most importantly, Solidaridad recognises that reducing all forms of inequality (SDG 10) and gender equality (SDG 5) can only become a reality when comprehensive measures to support the transformation of power relations and dismantling of underlying barriers to inclusion are put in force. Therefore, Solidaridad proactively ensures that those who are often marginalised or excluded have equal opportunity to participate in and benefit from Solidaridad Network’s work. This requires that power imbalances are addressed and that local communities have genuine ownership, through established participation, influence, and the ability to affect change in their respective contexts.
+
+To achieve this, Solidaridad prioritises a rights-based approach to economic development across the Solidaridad Network – particularly with vulnerable civil society actors. In practice, this means that Solidaridad first identifies different forms of intersectional inequality resulting from power imbalances through a localised analysis, which is followed by locally-led design of interventions to address these barriers and inequalities in their programme. Solidaridad then implements, in partnership with programme stakeholders (both rights-holders and duty-bearers), with the aim of transforming existing norms and unequal power relations to ensure a level playing field and equal benefits for all. Additionally, inclusivity-specific indicators (especially on strengthening women’s economic empowerment) are used to monitor and measure progress against the programme’s commitments to addressing issues of exclusion. This serves the purpose of implementing programmes that help make systems and supply chains more inclusive, and therefore sustainable, for all.
+
+At the network level, Solidaridad has a Gender and Social Inclusion Thematic Learning Group, gender focal points within regional excellence centers and countries who help drive gender equality and social inclusion. In the Asia region, Solidaridad is focusing on implementing a feminization of supply chains model. This model promotes creating an enabling environment
+
+_______________________________________________________________________________________________________________  
+12 https://www.solidaridadnetwork.org/wp-content/uploads/migrated-files/publications/SOL_GENDER_booklet%20FINAL-SPREAD.pdf
+
+
+---
+*Chunk pages 140–140*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=932 (sys=94, user=838), max_out=1024, ctx=8192
+---
+
+# [Page 1] 27
+
+and enacting structural and policy changes to make supply chains more inclusive. Solidaridad has a dedicated gender team, led by Neha, Senior Manager of Gender, who oversees Asia operations. With over fifteen years of experience in gender issues related to agriculture, climate change, and supply chains, Neha brings invaluable expertise to the team. Additionally, Suksma Ratri, Solidaridad’s Gender Focal person in Indonesia, supports the project's implementation in the country. As Solidaridad is expanding their gender-focused portfolio, the organisation plans to increase their country's capacity within the next year.
+
+## Conclusions for the project
+
+- Horizontal and vertical coordination with regional governments at the provincial and district levels, especially in integrating gender in the development of the environmental and warehouse sectors, has not yet been implemented, so gender mainstreaming (PUG) has not been carried out in an integrated manner in the development of the environment and bases at the regional level and the site level.
+- The availability of data disaggregated by sex in the scope of environment and forestry is not yet available in an up-to-date and adequate manner, even though this data is very much needed in designing a project to monitor and evaluate the results to provide fair and equal benefits for women and and other marginalized groups. Meanwhile, externally, there are still sociocultural values that prevent women from being able to play a strategic role in decision-making.
+
+## 5. Gender responsiveness and expertise in the project/ among project staff in the country
+
+### 5.1 Equal opportunities in the team
+
+There are no particular barriers between male and female staff to advance their career in GIZ. However, the gender composition in the team was instead an imbalance in GIZ. In addition, this project is a new project. No staff can be assessed. GIZ Indonesia has a clear statement on gender e quality, as does the project. Everybody benefits equally from benefits, and the principle of equal pay for equal work is binding. A National employee committee exists, which, among other things, is defending the interests of employees in case of complaints. (GIZ, 2020). Besides supporting the partners in proactive and improved recruitment and promotion processes of female staff, the GIZ project should emphasize the importance of gender mainstreaming clearly and from the design stage to the evaluation of activities. Knowing that partners do particularly well in response to quantified analysis of the costs of gender inequality, the GIZ project could benefit substantially from a commissioned study used for partner communication and capacity development measures.
+
+### 5.2 Gender expertise of the team members
+
+To promote sustainable development, gender equality must be an integral part of the GIZ approach. Following national and international standards, GIZ has committed itself to considering gender equality in the design of all projects. Promoting gender equality is a stated goal of German and international development cooperation. It is a requirement of the Development Assistance Committee (DAC) of the Organisation for Economic Cooperation and Development (OECD) to conduct a gender analysis for all measures of the so-called Official Development Assistance (ODA) to determine what effects these measures might have on gender equality and to assign a gender equality policy marker. According to the political guidelines of the German Federal Ministry for Economic Cooperation and Development (BMZ, 2001), gender analyses for BMZ-financed projects must be carried out in the very early stages of designing a project or follow-on measure. The results of a gender analysis must be plausibly reflected in the project proposals under the cross-sectoral strategy of the BMZ on gender equality in German development policy from 2014 and with the second Gender Action Plan, 2016 to 2020.
+
+
+---
+*Chunk pages 141–141*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=506 (sys=94, user=412), max_out=1024, ctx=8192
+---
+
+# 28
+
+Other commissioning parties, such as the Green Climate Fund (GCF) and the European Union (EU), also require a gender analysis. Everyone who works for GIZ must participate in gender training. However, there needs to be more specific training offered by GIZ Indonesia. Even though all staff has passed the training, it is still necessary to keep reminding and discussing gender issues in the environment and forestry sector, including its business processes. Currently, GIZ Indonesia is not giving much orientation on implementing and improving gender relations in the project activities. It would be necessary to support projects in implementing the gender mainstreaming policy of GIZ on the ground. This includes adequate knowledge management based on the experience of the different projects in the country. (GIZ, 2020)
+
+## Conclusions for the project
+
+- An expert needs to be recruited for the project that provides technical support to ensure women participation in capacity-building activities and mainstream gender across all project activities (see ESGI expert in GAP).
+- GIZ Indonesia has a clear statement on gender equality, as does the project. As well as supporting partners in a better and more proactive recruitment and promotion process of female staff, GIZ projects must clearly emphasize the importance of gender mainstreaming from the design stage to the monitoring and evaluation of activities.
+- Special importance should be given to preventing, detecting, and responding effectively to incidents of SEAH in line with GCF's Revised Environmental and Social Policy (RESP).
+- Gender training for all levels of staff needs to be conducted. Regular gender training for all levels – from management to field staff – is needed. Project staff need to be trained to identify gender issues in the field and how to monitor gender equality in projects.
+
+
+---
+*Chunk pages 142–142*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=694 (sys=94, user=600), max_out=1024, ctx=8192
+---
+
+# References
+
+- Angus, L. (2021). Incel violence as a reclamation of masculinity and defence of patriarchy on three distinct levels. *New Zealand Sociology*, 36(1), 25-49.
+- Asman, A. (2021). Inequality of gender relations during the COVID-19 pandemic: a study of violence against women in Sambas West Kalimantan. *SAWWA Jurnal Studi Gender*, 16(2), 213-232.
+- Farid, M.R.A. (2019). Kekerasan terhadap perempuan dalam ketimpangan relasi kuasa: studi kasus di rifka annisa women’s crisis center. *SAWWA: Jurnal Studi Gender*, 14(2), 175-190.
+- Fiscal Policy Agency Ministry of Finance Republic of Indonesia. (2021). *Concept note: land-based mitigation and adaptation through a jurisdictional approach in West Kalimantan*. Jakarta: Fiscal Policy Agency Ministry of Finance Republic of Indonesia.
+- GIZ. (2020). *Gender analysis for forest and climate change programme (FORCLIME 4.0)*. Jakarta: GIZ.
+- ILO. (2020). *Keberagaman gender di tempat kerja*. Retrieved from: https://www.ilo.org/jakarta/info/public/pr/WCMS_753493/lang--en/index.htm
+- Israpil. I. (2021). Budaya patriarki dan kekerasan terhadap perempuan (sejarah dan perkembangannya). *Jurnal Pustaka*, 5(2), 141-150.
+- KPPPA. (2023). *Pembangunan Manusia Berbasis Gender*. Jakarta: KPPPA.
+  - https://www.kemenpppa.go.id/page/view/NTAyMg==
+- Mishra, L. (2021). Effects of violence against women on higher education in Mizoram India. *Journal of International Women’s Studies*, 22(1), 465-472.
+- Nurhaeni, I.D.A. (2012). *Australia Indonesia Partnership For Decentralisation (AIPD)*. Jakarta: AIPD.
+- Tohirin & Zamahsari. (2021). Peran social laki-laki dan perempuan. *Profetika Jurnal Studi Islam*, 22(1), 91-108.
+- Wahyudi, V. (2020). Peran Politik Perempuan dalam Perspektif Gender. *Politea: Jurnal Politik Islam*, 1(1), 63-68.
+
+[Page 142]
+
+
+---
+*Chunk pages 143–143*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=207 (sys=94, user=113), max_out=1024, ctx=8192
+---
+
+# Annex 8b
+
+## Gender Action Plan
+
+### to the GCF Funding Proposal
+
+#### Land-based Mitigation and Adaptation through a Jurisdictional Approach in West-Kalimantan
+
+##### 23/07/2024  
+###### Version 3.0  
+
+###### Submitted by:  
+Deutsche Gesellschaft für Internationale Zusammenarbeit (GIZ) GmbH
+
+
+---
+*Chunk pages 144–144*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=340 (sys=94, user=246), max_out=1024, ctx=8192
+---
+
+# 1. Background and Introduction
+
+This Gender Action Plan (GAP) is aimed at the Green Climate Fund (GCF) project "Land-Based Mitigation and Adaptation through a Jurisdictional Approach in West Kalimantan". It becomes the basis for operationalizing the results and recommendations of the Gender Assessment (GA, see Annex 8a). This document contains specific elements related to gender that must be considered in project design and during the implementation of the activities. It helps the GCF project advance gender equality through climate change mitigation and adaptation actions and minimize social, gender-related, and climate-related risks in all its actions. In addition, it helps to monitor the implementation of these measures and activities. Therefore, the GAP ensures effective gender mainstreaming and consistent integration of gender perspectives to maximize co-benefits on climate and development. The aim is to create an environment that supports drivers of change and positive gender dynamics and manage and mitigate potential adverse risks during the project.
+
+[Page 1]
+
+
+---
+*Chunk pages 145–145*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=545 (sys=94, user=451), max_out=1024, ctx=8192
+---
+
+# 2. Gender Action Plan
+
+## ID Project Activity Measures to strengthen gender equality
+
+| Indicators | Baseline | Targets, including sex-disaggregated targets | Timeline | Responsibili- ties | Estimated Budget (EUR) |
+|------------|----------|----------------------------------------------|----------|---------------------|------------------------|
+| Cross-cutting actions | 1. Cross-cutting | Recruit a gender expert (ESGI Advisor) to provide technical support to ensure women participation in capacity-building activities and mainstream gender across all project activities. | One gender expert (ESGI Advisor) recruited in Year 1 of project implementation. | One gender expert is hired for the whole project lifecycle in the first year of project implementation. | Y:1 – Y:7 | GIZ | 210,000 |
+| Cross-cutting actions | 2. Cross-cutting | Establish a gender responsive M&E system that includes all GAP indicators. | Gender responsive M&E system is operational. | A project monitoring system is operational that can compile disaggregated data by gender, age, ethnicity, disability, and geographic location. | Y:2-7 | GIZ Technical advisor for Environmental and Social Safeguards, Gender, and Indigenous Peoples (ESGI Advisor) | Included in M&E budget |
+| Cross-cutting actions | 3. Cross-cutting | Develop a Code of Conduct prohibiting SEAH by project staff and implementation partners including trainings. | i) A SEAH Code of Conduct is in place. ii) Percentage of staff | i) A project specific code of conduct on SEAH exists. ii) 100% | i) Y:1 ii) Y:1-7 | ES GI Advisor | Included in budget for GAP measure #1 |
+
+--- 
+
+*Note: Page 145*
+
+
+---
+*Chunk pages 146–146*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=525 (sys=94, user=431), max_out=1024, ctx=8192
+---
+
+# 3 More detailed information on the GRM, and its SEAH-specific protocol, is provided in the ESMP (Annex 6b).
+
+The project will oversee the follow-up of reported cases, ensuring all records are stored confidentially and securely. Monitoring efforts will involve collecting data on the number of cases reported, which will be included in annual reports. Additional information is included in the ESIA (Annex 6a) and ESMP (Annex 6b).
+
+## Cross-cutting
+
+| Project Activity | Measures to strengthen gender equality | Indicators | Baseline | Targets, including sex-disaggregated targets | Timeline | Responsibili- ties | Estimated Budget (EUR) |
+|------------------|----------------------------------------|------------|----------|---------------------------------------------|----------|--------------------|------------------------|
+| 4. GRM mechanism with a protocol on Sexual Exploitation, Abuse and Harassment (SEAH) is developed, and SEAH data is included in the monitoring and reporting | i) All annual reports include data on SEAH incidents in the project is included in project reporting in Y1-7 | ii) # of SEAH incidents reported and addressed | 0 | i) Yes | ii) While the target is 0, the aim is to have any incidents that occur reported and resolved | Y: 1-7 | ESGI Advisor Included in M&E budget |
+| | iii) Percentage of staff trained on the code of conduct and GRM, including the SEAH protocol | iii) 100% | | | | | |
+
+> **Note:** The text appears to be from page 146 of a PDF document. The original page number is preserved in the markdown format above.
+
+
+---
+*Chunk pages 147–147*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=594 (sys=94, user=500), max_out=1024, ctx=8192
+---
+
+# [Page 147]
+
+## 3 More detailed information on the GRM, and its SEAH-specific protocol, is provided in the ESMP (Annex 6b).
+
+### Pokja = working group / taskforce
+
+| Project Activity | Measures to strengthen gender equality | Indicators | Baseline | Targets, including sex-disaggregated targets | Timeline | Responsibili- ties | Estimated Budget (EUR) |
+|------------------|----------------------------------------|------------|----------|---------------------------------------------|----------|--------------------|------------------------|
+| 5. Cross-cutting SEAH awareness campaigns are conducted. | Number of SEAH awareness campaigns conducted | 0 | 7 SEAH awareness campaigns are conducted (1 per year) | Y: 1-7 | ESGI Advisor | GIZ | Solidaridad | BPDLH | 10,000 |
+| 6. Cross-cutting Peer support on SEAH related issues is established and supported with capacity building and linkages. | i) Number of survivor networks or peer support groups on SEAH established and trained in Y2-5. ii) Number of men and women (sex-disaggregated) accessing the survivor network or peer support groups (while ensuring their anonymity is secured) | 0 | i) At least one survivor network or support group on SEAH is established and provided training. ii) # of attendees (sex-dis-aggregated) | Y: 2-5 | GIZ Included in budget for GAP measure #4 |  |
+| 7. Cross-cutting Capacity building in FPIC processes, grievance mechanism, gender-related | i) Number of trainings | 0 | i) 14 trainings conducted in total, 2 trainings for project staff, 2 trainings for partner staff at province Y1 and Y3/ based on demand | ES GI Advisor | Pokja5 REDD+ | 20,000 (included in training budget for |
+
+---
+
+
+---
+*Chunk pages 148–148*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=721 (sys=94, user=627), max_out=1024, ctx=8192
+---
+
+# [Page 1]
+
+## 4
+
+For all trainings, efforts will be made to overcome barriers to participate in meetings. This includes: planning trainings in community spaces and/or accessible venues that are convenient for women, ensuring inclusive/ flexible scheduling at times that are convenient for women, considering their domestic responsibilities, and ensuring effective and clear communication. Active gender-responsive monitoring and target setting will also help the team adaptively manage as needed to ensure women are effectively participating.
+
+## ID Project Activity Measures to strengthen gender equality
+
+| Indicators | Baseline | Targets, including sex-disaggregated targets | Timeline | Responsibili- ties | Estimated Budget (EUR) |
+|------------|----------|---------------------------------------------|----------|---------------------|------------------------|
+| subject (including gender budgeting, PPRG) and capacity to facilitate critical re- flection in project im-plementation for field facilitators, GIZ project staff, and inde- pendent assistants ( together with IPP- FPIC trainings).4 |  |  |  |  |  |
+| ii) share of staff trained level, and 10 trainings for partner staff at regency level |  |  |  |  |  |
+| ii) 100% (new staff) |  |  |  |  |  |
+| Pokja Gender Mainstreaming | Tanjungpura University as the academi- cian appointed to assist tech- nically act. 1.1.1, see also IPP) |  |  |  |  |
+| 8. Cross-cutting |  |  |  |  |  |
+| Introduce quota for the participation of women in relevant project activities and technical staff (from all the partners) involved in the project. Similar actions to the cell above will be implemented to help in-crease the participation of women. | % of women participants | % of tech- nical staff | Rate of women is often below 30% | Minimum 30% of women | Y: 1-7 ESGI Advisor | GIZ Solidaridad BPDLH Included in budget for GAP measure #1 and grant agreements with EEs |
+| 9. Cross-cutting; in particular activity: 3.2.1 | Equitable and effective forest resource governance in KUPS | % of women in KUPS committees increased | Rate of women is often below 15% | At least 30% of committee members are women | Y: 1-7 GIZ Included in M&E budget |  |
+| 10. Cross-cutting; in particular sub-ac- tivities: | Integrate Gender Mainstreaming into trainings for relevant | % of training material reviewed by a | 0 100% of training material reviewed | Y: 1-7 ESGI Advisor Included in budget for GAP measure #1 |  |
+
+---
+
+
+---
+*Chunk pages 149–149*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=705 (sys=94, user=611), max_out=1024, ctx=8192
+---
+
+# [Page 1]
+
+6 
+
+Relevant information will be disclosed in a language and forms accessible to target communities and the wider public. Communities will retain the right to ask for information about the project’s status, entitlements, eligibility criteria, benefits allocation, responsibilities, and Grievance Redress Mechanism (GRM) channels, which will be made accessible. For more detailed information, refer to the Stakeholder Engagement Plan in Annex 7a.
+
+7 The Project’s ESGI Specialist will also explore opportunities with government organizations and civil society organizations who work on SEAH, and will identify if there are synergies to share information on not only the SEAH-related measures in the project (e.g. GRM), but also share information on available resources and services from these organizations. For example, the following organizations work on this topic and will be approached: 
+
+will be approached: will be approached:  
+
+ID Project Activity Measures to strengthen gender equality  
+Indicators Baseline Targets, including sex-disaggregated targets  
+Timeline Responsibili- ties Estimated Budget (EUR)  
+
+1.1.1.2  
+1.1.2.3  
+3.1.1.3  
+3.2.1.3  
+
+stakeholders, in particular for Tanjungpura. University, FMUs, SF field facilitators.  
+gender specialist to ensure adequate gender mainstreaming  
+
+11. Cross-cutting  
+
+Sharing project activities and results on the MoEF’s Gender Mainstreaming Website (https://pug.sisibaik.id/).  
+The team will also share updates through in-person trainings and sharing printed materials where suitable.  
+
+6  
+
+Number of good practices, guidelines, and lessons learned available on the website  
+
+Report on stakeholder engagement and implementation of stakeholder engagement plan.  
+
+0 Minimum 5 media products on gender mainstreaming are available.  
+
+Y: 1-7 ESGI Advisor  
+
+15,000  
+
+12. Cross-cutting  
+
+Collaborate with women’s groups and women’s organizations who are active in West Kalimantan to support gender  
+
+Number of MoUs with women’s group or women’s organization  
+
+0 Minimum one MoU / contract with women’s group or women’s organization is signed by the project  
+
+Y: 1-7 ESGI Advisor  
+
+Included in budget for GAP measure #1  
+
+--- END EXTRACTED TEXT ---
+
+
+---
+*Chunk pages 150–150*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=760 (sys=94, user=666), max_out=1024, ctx=8192
+---
+
+# [Page 1]
+
+7
+
+• Jurnalis Perempuan Khatulistiwa that provides assistance to women including issue of justice and violence (puankhatulistiwa.com)
+• LBH APIK (Asosiasi Perempuan untuk Keadilan) – Women association for justice, who provides assistance, defense and legal aid for women who experience GBV, discrimination and SEAH, and develop the capacities of communities to open access to justice for women, the poor and victims of human rights violations. They are a national organization, however have an office in WK Province (https://lbhapik.or.id/)
+• Other womens organizations the ESGI specialist will potentially conduct outreach with include: Yayasan Dian Tama, Lembaga Gemawan, PPSW Borneo, PEKKA.
+
+8 RAP (Rencana Aksi Provinsi): Provincial Action Plan
+9 API (Adaptasi Perubahan Iklim): Climate Change Adaptation
+10 RAK (Rencana Aksi Kabupaten): Regency Action Plan
+11 BAPPEDA = Provincial planning agency
+12 Pokja = working group / taskforce
+
+## ID Project Activity Measures to strengthen gender equality
+
+### Indicators Baseline Targets, including sex-disaggregated targets
+Timeline Responsibili- ties Estimated Budget (EUR)
+
+mainstreaming based on identified needs (e.g. Pusat Pengembangan Sumberdaya Wanita (PPSW) Bor- neo; Gemawan; Dian Tama; Pemberdayaan Perempuan Kepala Keluarga (PEKKA))
+
+#### Component 1
+
+##### 13. Sub activity
+1.1.1.1: Developing adaptation policies at the provincial level is in line with national adaptation policies
+
+Integrate Gender Mainstreaming into RAP8, API9 and RAK10 API with support of a gender specialist.
+
+Number of RAP API and RAK API that are gender main- streamed.
+
+0 1 RAP API and 5 RAK API are gender main- streamed
+Y: 3-7 ESGI Advisor
+
+BAPPEDA11
+
+Pokja12
+
+REDD+
+
+Pokja Gender Mainstreaming
+
+20,000 Local consultants + 20,000 Workshops/meetings (both included in activity. Budget for 1.1.1)
+
+##### 14. Sub activity
+1.1.1.3 Development of tools for
+
+Develop Gender Mainstreaming guiding material in climate change
+
+Gender Main- streaming guiding material
+
+0 Yes - gender Mainstreaming guiding materials are prepared and available for counterparts.
+
+Y: 2-6 ESGI Advisor 15,000 Local consultants (Included in activity
+
+--- END EXTRACTED TEXT ---
+
+
+---
+*Chunk pages 151–151*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=482 (sys=94, user=388), max_out=1024, ctx=8192
+---
+
+# [Page 1]
+8
+
+## 13 E.g. on: (1) gender disaggregated data collection; (2) gender responsive planning and budgeting; (3) how to integrate gender equity in mitigation and adaptation to climate change
+
+| ID Project Activity | Measures to strengthen gender equality | Indicators | Baseline | Targets, including sex-disaggregated targets | Timeline | Responsibili- ties | Estimated Budget (EUR) |
+|---------------------|----------------------------------------|------------|----------|---------------------------------------------|----------|--------------------|------------------------|
+| implementi ng adapta- tion activities | mate change adapta- tion and mitigation for KLHK/DLHK includ- ing: - operational stand- ards (SOP13) - policy briefs and best practices on subnational level. | ial is availa- ble. |  |  |  |  |  |
+| 1.1.1) | Sub activities | 1.1.1.4 | 1.1.2.4. | Monitoring and re- porting of adapta- tion and mitigation activities | Integrate gender dis- aggregated data into the adaptation and mitigation monitoring and reporting system. | The adapta- tion monitor- ing system features gen- der disaggre- gated data. | 0 The adaptation monitoring system and the online platform integrates gender disaggregated data. | Y: 2-7 ESGI Advisor with support of: - Agency for Regional De- velopment (namely Bap- penas and Bappeda) - Agency of Women Em- powerment and Child Pro- tection (namely DPPA) in Province and District - Agency of Environment | Included in budget for GAP measure #1 |
+
+--- 
+
+Note: The text appears to be a fragment or excerpt from a larger document, possibly related to gender integration in climate change adaptation and mitigation projects. The table structure suggests it may be part of a project plan or budgeting document, but the content is incomplete and lacks full context.
+
+
+---
+*Chunk pages 152–152*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=563 (sys=94, user=469), max_out=1024, ctx=8192
+---
+
+# [Page 1]
+
+## 9
+
+### ID Project Activity Measures to strengthen gender equality  
+#### Indicators Baseline Targets, including sex-disaggregated targets  
+#### Timeline Responsibili- ties  
+#### Estimated Budget (EUR) and For- estry (namely DLHK) in prov- ince and dis- trict  
+
+### 16. Sub activity 1.1.2.1  
+#### Align provincial REDD+ policies with national mitigation policies and regulations.  
+
+##### i) Review the regulatory framework related to Gender Mainmaining at province level, especially in relation to mitigation.  
+
+##### ii) Strengthen the regulatory framework related to mitigation by integrating Gender Mainstreaming with support of a gender specialist.  
+
+#### The gender-responsive mitigation policy document developed  
+#### The West Kalimantan provincial government has a Provincial Action Plan for Reducing Greenhouse Gas Emissions (RAD-GRK) but has not yet integrated gender.  
+#### The West Kalimantan provincial government has a Provincial Strategy and Action Plan on REDD+ (SRAP) but has not yet integrated gender.  
+#### The West Kalimantan Provincial Government has gender-responsive RAD-GRK, SRAP, and ERIS.  
+
+##### Y: 1-2 ESGI Advisor with support of:  
+- Agency of Environment and Forestry (namely DLHK) in province and district  
+- Agency for Regional Development (namely Bappeda) in Province and District  
+- Agency of Women Empowerment and Child Protection (namely DPPA) in  
+
+##### 30,000 Local consul- tancies (included in budget for act. 1.1.2)
+
+
+---
+*Chunk pages 153–153*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=659 (sys=94, user=565), max_out=1024, ctx=8192
+---
+
+# ID Project Activity Measures to strengthen gender equality
+
+## Indicators Baseline Targets, including sex-disaggregated targets
+
+### Timeline Responsibili- ties
+
+### Estimated Budget (EUR)
+
+The West Kalimantan provincial government has an Emission Reduction Intervention Strategy (ERIS), but it is not yet gender responsive.
+
+Province and District -UNTAN or other universities that can provide advice regarding the technicalities of integrating gender
+
+#### Sub activity 1.1.2.2
+
+Inclusion of mitigation policies in provincial development plans
+
+Provide expert assistance to integrate gender in the regency/provincial development plans (RPJMD), especially in mitigation programs, with support of a gender specialist.
+
+A gender responsive RPJMD document for West Kalimantan Province is available.
+
+#### Sub activity 1.2.1.3
+
+Increase stakeholders’ capacities (i.e. companies, communities, provincial and Regency governments)
+
+Increase gender awareness in the HCV/HCS working group through trainings and campaigns and develop SOPs and safeguards frameworks for gender responsiveness
+
+Percentage of gender responsive trainings
+
+0 100% of trainings for stakeholders involved in HCV/HCS management (namely companies, communities, provincial and district governments) and SOPs for HCV/HCS management plans are gender responsive.
+
+Y: 3-6 ESGI Advisor with support of: Agency for Regional Development (namely Bappeda) in Province and District
+
+25,000 Local consul- tancies (included in budget for act. 1.1.2)
+
+#### Sub activity 1.2.1.3
+
+Increase stakeholders’ capacities (i.e. companies, communities, provincial and Regency governments)
+
+Increase gender awareness in the HCV/HCS working group through trainings and campaigns and develop SOPs and safeguards frameworks for gender responsiveness
+
+Percentage of gender responsive trainings
+
+0 100% of trainings for stakeholders involved in HCV/HCS management (namely companies, communities, provincial and district governments) and SOPs for HCV/HCS management plans are gender responsive.
+
+Y: 3-6 ESGI Advisor GIZ
+
+30,000 Local consul- tancies + 30,000 Trainings (both included in Financing Agreement)
+
+
+---
+*Chunk pages 154–154*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=695 (sys=94, user=601), max_out=1024, ctx=8192
+---
+
+# [Page 154]
+
+## ID Project Activity Measures to strengthen gender equality
+
+### Indicators Baseline Targets, including sex-disaggregated targets
+
+| Sub-activity | Indicator | Baseline | Target | Timeline | Responsibili- ties | Estimated Budget (EUR) |
+|--------------|-----------|----------|--------|----------|--------------------|------------------------|
+| 19. Sub-activity 1.2.1.4 | Support and monitor the management plan implementation for High Biodiversity and Carbon Areas | Integrate reporting on gender measures in HCV / HCS reports | Gender responsiveness is part of the HCV / HCS reports | No HCV / HCS reports are available | HCV / HCS reports supported by the project include aspects of gender responsiveness | Y: 2-4 | ESGI Advisor | M&E Advisor | Included in budget for GAP measure #1 |
+| 20. Sub-activity 1.2.1.5 | Enabling Jurisdictional Approach (JA) certification for Ketapang District as a replicable model to other regencies in West Kalimantan Province | The expert and stakeholder consultative process is gender responsive | i) Share of women consulted (in %) ii) reporting on stakeholder engagement plan implementation reflects feedback from women and women’s organizations | 0 | i) At least 30% of the consulted stakeholders are women ii) Yes | Y: 3-6 | ESGI Advisor | GIZ | Provincial and Regencies Governments (main actors) | Included in budget for GAP measure #1 |
+| 21. Sub-activity 1.3.1.1 | Implement an on-granting program focusing on Indigenous Peoples (IPs) in West Kalimantan | i) Increasing women’s awareness about on-granting programme | i) Implement targeted outreach and awareness campaigns to ensure that women are included in the program | 0 | i) 6 campaigns ii) Yes | Y: 2-6 | ESGI Advisor | GIZ | IP fund proposal selection committee | BPDLH | 6,000 |
+
+---
+
+
+---
+*Chunk pages 155–155*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=364 (sys=94, user=270), max_out=1024, ctx=8192
+---
+
+# [Page 1]
+
+## ID Project Activity Measures to strengthen gender equality
+
+| Indicators | Baseline | Targets, including sex-disaggregated targets | Timeline | Responsibili- ties | Estimated Budget (EUR) |
+|------------|----------|----------------------------------------------|----------|-------------------|------------------------|
+| ii) Increasing women’s access to IP funding mechanism as recipients of grants | informed about the availability of grants and the application process (e.g., through a variety of communication channels, including community meetings, radio broadcasts, and women's networks) | ii) The selection criteria set includes gender responsiveness at its core. | iii) ESGI specialist to be engaged in reviewing and monitoring, and is available to provide guidance with implementation |  |  |
+| ii) 100% of proposals approved meet gender-responsive selection criteria | iii) Yes |  |  |  |  |
+
+---
+
+This table appears to be a fragment of a larger document or form, likely related to project planning or monitoring for gender equality initiatives. The structure suggests it is part of a broader framework where indicators and targets are defined for specific activities aimed at strengthening gender equality within projects.
+
+The columns represent:
+- **Indicators**: What is being measured
+- **Baseline**: Current state or starting point
+- **Targets**: Desired outcomes, including sex-disaggregated targets
+- **Timeline**: When these targets should be achieved
+- **Responsibilities**: Who is responsible for implementation
+- **Estimated Budget (EUR)**: Financial resources required
+
+The text indicates that the project activity involves increasing women's access to intellectual property funding mechanisms, ensuring they are informed about grant availability and application processes through various communication channels. It also emphasizes the inclusion of gender responsiveness in selection criteria and the engagement of ESGI specialists for review and monitoring purposes.
+
+The final row shows a target of 100% of approved proposals meeting gender-responsive selection criteria, with "Yes" indicating that this criterion is met or will be met.
+
+
+---
+*Chunk pages 156–156*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=752 (sys=94, user=658), max_out=1024, ctx=8192
+---
+
+# [Page 1]
+## 13
+
+### ID Project Activity Measures to strengthen gender equality  
+#### Indicators Baseline Targets, including sex-disaggregated targets  
+#### Timeline Responsibili- ties  
+#### Estimated Budget (EUR)  
+
+| Sub-activity | Activity | Description | Indicator | Baseline | Target | Timeline | Responsibility | Estimated Budget (EUR) |
+|--------------|----------|-------------|-----------|----------|--------|----------|----------------|------------------------|
+| 22. Sub-activity 1.3.1.2 | Elaborate strategies, policies, and procedures for one or several financing mechanisms for climate resilient agriculture and forestry | Integrating gender perspectives in policy strategies and procedures related to financing mechanisms for climate change | Elaborated policies and strategies reflect gender perspectives | 0 | All policies, strategies, and procedures reflect gender perspectives | Y: 2-7 | ESGI Advisor GIZ Provincial Government | 50,000 |
+| 23. Sub-activity 2.1.1.1 | Design sustainable land and forest-based business models | Ensure that the developed business model is gender responsive and strengthens the economic situation of women | Gender responsive business model available | 0 | Developed business models in sustainable forest and land use is gender-responsive | Y: 4-7 | 1. GIZ 2. ESGI Advisor | 20,000 |
+| 24. Sub-activity 2.1.2.1 | Improved capacities to implement resilient and sustainable smallholder farming | i) Providing trainings on household level to identify gender issues in the community and support gender sensitization for men and women. ii) Raise gender awareness among agricultural extension workers and champion farmers. | i) Share (in %) of households who participated in gender trainings in target villages. ii) Share (in %) of extension workers / local champions who received gender awareness training. | 0 | i) 30% of training participants are women ii) 100% of agricultural extension officers / champions farmers received gender awareness training | Y: 1-6 | Solidaridad ESGI Advisor Dinas Perkebunan | 40,000 |
+
+> (Included in financing agreement budget with EE Solidaridad)
+
+
+---
+*Chunk pages 157–157*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=703 (sys=94, user=609), max_out=1024, ctx=8192
+---
+
+# 14
+
+## ID Project Activity Measures to strengthen gender equality
+
+### Indicators Baseline Targets, including sex-disaggregated targets
+
+| Activity | Indicator | Baseline | Target | Timeline | Responsibilities | Estimated Budget (EUR) |
+|----------|-----------|----------|--------|----------|------------------|------------------------|
+| iii) Providing training and technical assistance to Women’s Farmer Groups in climate smart agriculture | iii) Share of women who are trained in climate smart agriculture | 30% of trained farmers are women | 25. Sub-activity 2.1.2.2 | Climate-resilient commodity and agroforestry scaled with improved market access | i) Provide tailored technical assistance to women farmers to get STDB registration | ii) Provide technical assistance related to agroforestry business, including marketing and processing of agroforestry products for MSMEs / women farmers | i) Percentage of farmers receiving STDB registration are women | ii) Percentage of female farmers with increased access to market and income | 0 | 0 | i) 30% of all farmers registered under STDB are women | ii) 50% of female led MSMEs / women farmers confirm having improved access to market and income | Y: 2-6 Solidaridad | Dinas Perkebunan (Agency of Plantation), Dinas Lingkungan Hidup dan Kehutanan (Agency of Environment, and Forestry), Dinas Koperasi (Cooperative, Small and Medium Enterprise, and Trade Office) | 10,000 Included in budget for GAP measure #24 |
+| iii) Providing training and technical assistance to Women’s Farmer Groups in climate smart agriculture | iii) Share of women who are trained in climate smart agriculture | 30% of trained farmers are women | 26. Sub-activity 2.1.2.3 | Digital systems for value chain traceability and certification, and improved access to services | i) Ensure that the new traceability system is gender inclusive by organising annual feedback & evaluation meeting | i) Percentage of women who confirm gender inclusiveness of digital system through the participation | No system/meeting available | i) Most female smallholders (%50) confirm the ease of use of the digital system in 5 feedback & evaluation meetings | Y: 2-6 Solidaridad | 20,000 |  |
+
+---
+
+[Page 1]
+
+
+---
+*Chunk pages 158–158*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=538 (sys=94, user=444), max_out=1024, ctx=8192
+---
+
+# [Page 1] 15
+
+## ID Project Activity Measures to strengthen gender equality
+
+| Indicators | Baseline | Targets, including sex-disaggregated targets | Timeline | Responsibilities | Estimated Budget (EUR) |
+|-----------|----------|---------------------------------------------|----------|------------------|------------------------|
+| ii) Provide training for women to use the digital system. |  | in feedback and evaluation meetings |  |  |  |
+| ii) Share of women trained in the use of the system. |  |  |  |  |  |
+| ii) 30% of smallholders trained are women. |  |  |  |  |  |
+
+## Sub-activity 2.1.3.1: Establish commodity-based platform at Reagency level and engage with provincial, national and international MSPs to promote dialogue on sustainable forestry & agriculture practices, investment into sustainable supply chains and sustainable sourcing practices
+
+Ensure representation of women farmers in each forum.
+
+| Number of MSF with representation of women farmers | 0 | 100% of MSF include female participants |  |  |  |
+|----------------------------------------------------|---|----------------------------------------|---|---|---|
+| Y: 1-5 Solidaridad |  | Bappeda Provincial/ regency regional planning agency |  | Sekda provincial/ regency secretariat |  |
+
+Included in budget for GAP measure #1
+
+## Sub-activity 2.1.4.1: GRASS - Greening Agricultural Smallholder Supply Chains in Kapuas Hulu
+
+Enable women through specific training measures to realize their potential for income generation and food production.
+
+| Number of women trained in sustainable food and commodity production | 0 | 180 Y: 1 ESGI Advisor |  |  |  |
+|---------------------------------------------------------------------|---|----------------------|---|---|---|
+| 100,000 Training (included in TWC budget for activity 2.1.4) |  |  |  |  |  |
+
+---
+
+
+---
+*Chunk pages 159–159*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=776 (sys=94, user=682), max_out=1024, ctx=8192
+---
+
+# [Page 1]
+16
+
+## ID Project Activity Measures to strengthen gender equality
+### Indicators Baseline Targets, including sex-disaggregated targets
+### Timeline Responsibili- ties
+### Estimated Budget (EUR)
+
+## Sub-activity: 2.1.5.1
+### NI-SCOPS II
+#### Advocate for gender inclusivity in ISPO revision process.
+##### Advocacy plan for gender Inclusivity in ISPO
+
+## Sub-activity 3.1.1.1 Development of climate-informed management plans of FMUs
+#### Include Gender Mainstreaming measures in templates for RPHJP / RPHJPd
+##### Share of newly RPHJP / RPHJPd that include gender measures
+###### To be analysed before the implementation of the measures
+
+## Sub-activity 3.1.1.2 Supporting FMU Organizations in five target Regencies to receive the status of “Effective FMU Organization”
+#### Support preferably gender mainstreamed forest farmer groups (social forestry) to achieve the “Effective FMU” status
+##### Number of forest farmer groups that consider gender mainstreaming (for example being a women farmer group or having gender balance in groups)
+###### 0
+
+## Sub-activity 3.1.1.4 Support FMU Organizations in five target Regencies in implementing climate-informed RPHJP and RPHJPd through
+#### Integrate gender dis-aggregated data into data and information exchange system (e.g. Gender Analysis Matrix (GAM) and use the Capacities and Vulnerabilities Analysis Framework)
+##### Availability of gender dis-aggregated data and information in the data and information exchange system
+###### No data and information exchange system operational
+
+## Sub-activity 3.1.1.4 Support FMU Organizations in five target Regencies in implementing climate-informed RPHJP and RPHJPd through
+#### Integrate gender dis-aggregated data into data and information exchange system (e.g. Gender Analysis Matrix (GAM) and use the Capacities and Vulnerabilities Analysis Framework)
+##### Availability of gender dis-aggregated data and information in the data and information exchange system
+###### No data and information exchange system operational
+
+## Sub-activity 3.1.1.4 Support FMU Organizations in five target Regencies in implementing climate-informed RPHJP and RPHJPd through
+#### Integrate gender dis-aggregated data into data and information exchange system (e.g. Gender Analysis Matrix (GAM) and use the Capacities and Vulnerabilities Analysis Framework)
+##### Availability of gender dis-aggregated data and information in the data and information exchange system
+###### No data and information exchange system operational
+
+## Sub-activity 3.1.1.4 Support FMU Organizations in five target Regencies in implementing climate-informed RPHJP and RPHJPd through
+#### Integrate gender dis-aggregated data into data and information exchange system (e.g. Gender Analysis Matrix (GAM) and use the Capacities and Vulnerabilities Analysis Framework)
+##### Availability of gender dis-aggregated data and information in the data and information exchange system
+###### No data and information exchange system operational
+
+## Sub-activity 3.1.1.4 Support FMU Organizations in five target Regencies in implementing climate-informed RPHJP and RPHJPd through
+#### Integrate gender dis-aggregated data into data and information exchange system (e.g. Gender Analysis Matrix (GAM) and use the Capacities and Vulnerabilities Analysis Framework)
+##### Availability of gender dis-aggregated data and information in the data and information exchange system
+###### No data and information exchange system operational
+
+## Sub-activity 3.1.1.4 Support FMU Organizations in five target Regencies in implementing climate-informed RPHJP and RPHJPd through
+#### Integrate gender dis-aggregated data into data and information exchange system (e.g. Gender Analysis Matrix (GAM) and use the Capacities and Vulnerabilities Analysis Framework)
+##### Availability of gender dis-aggregated data and information in the data and information exchange system
+###### No data and information exchange system operational
+
+## Sub-activity 3.1.1.4 Support FMU Organizations in five target Regencies in implementing climate-informed RPHJP and RPHJPd through
+#### Integrate gender dis-aggregated data into data and information exchange system (e.g. Gender Analysis Matrix (GAM) and use the Capacities and Vulnerabilities Analysis Framework)
+##### Availability of gender dis-aggregated data and information in the data and information exchange system
+###### No data and information exchange system operational
+
+## Sub-activity 3.1.1.4 Support FMU Organizations in five target Regencies in implementing climate-informed RPHJP and RPHJPd through
+#### Integrate gender dis-aggregated data into data and information exchange system (e.g. Gender Analysis Matrix (GAM) and use the Capacities and Vulnerabilities Analysis Framework)
+##### Availability of gender dis-aggregated data and information in
+
+
+---
+*Chunk pages 160–160*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=715 (sys=94, user=621), max_out=1024, ctx=8192
+---
+
+# 17
+
+## ID Project Activity Measures to strengthen gender equality
+
+### Indicators Baseline Targets, including sex-disaggregated targets
+
+| Timeline | Responsibili- ties | Estimated Budget (EUR) |
+|----------|--------------------|------------------------|
+| Y: 1-7   | ESGI Advisor       | Gender Main- streaming Taskforce |
+| Y: 1-7   | ESGI Advisor       | Gender Main- streaming Taskforce |
+
+## Sub-activity 3.2.1.1
+
+### Develop and implement SF management plans and support new SF permit proposals
+
+#### i) Ensure women are represented in the SF groups supported by this activity.
+
+- Currently women are underrepresented in SF groups.
+- At least 20% women participating in social forestry groups.
+
+## Sub-activity 3.2.1.2
+
+### Develop and strengthen SF business units (KUPS) to establish, improve, and escalate market, supply chain, and value-added communities' products, including the creation of KUPS models and capital supports.
+
+#### i) Provide gender-responsive planning and budgeting training for KUPS.
+
+- Percentage of KUPS with gender responsive business plans and budgets
+- Percentage of women as KUPS board members
+
+#### ii) Provide training and mentoring to women who are actively involved in KUPS and those who are not yet involved in KUPS.
+
+#### iii) Provide support for existing
+
+- Women’s Gender reponsive planning and budgeting is not practiced; women in KUPS are underrepresented.
+- 1. i) 100% of supported KUPS have gender responsive business and budget plans.
+- 2. ii) 100% of KUPS have representation of women in the management level.
+- 3. iii) At least one woman group is supported in Y: 1-7
+
+## Local Consultancies (incl. in act. 3.2.1)
+
+| Budget (EUR) |
+|--------------|
+| 30,000       |
+
+--- 
+
+*Note: Page numbers are preserved as per instructions.*
+
+
+---
+*Chunk pages 161–161*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=746 (sys=94, user=652), max_out=1024, ctx=8192
+---
+
+# 18
+
+## ID Project Activity Measures to strengthen gender equality
+
+### Indicators Baseline Targets, including sex-disaggregated targets
+
+| Sub-activity | Activity | Description | Indicator | Baseline | Target | Timeline | Responsibilities | Estimated Budget (EUR) |
+|--------------|----------|-------------|-----------|----------|--------|----------|------------------|------------------------|
+| 3.2.1.3 | Capacity building for permit holders of SF and other legal CBFM schemes | Ensure appropriate representation of women in the training of SF field facilitators (ToF). | % of women facilitators and trainers participating in trainings | Women as SF facilitators and trainers are underrepresented | 50% of the training slots at different levels are reserved for women facilitators and trainers | Y: 1-7 | ESGI Advisor<br>Gender Mainstreaming Taskforce | Included in budget for GAP measure #1 |
+| 3.2.1.4 | Restoration and rehabilitation of mangrove and peat forest ecosystems | Promote the participation of women from the communities in peat and mangrove restoration and in the establishment of tree nurseries. | Percentage of women participating in restoration activities | There is no information about women’s participation in restoration activities | 30% | Y: 1-7 | ESGI Advisor<br>Gender Mainstreaming Taskforce | 20,000 (incl. in Financing Agreement with Biodiversity NGO) |
+| 3.2.1.5 | Developing climate-resilient aquaculture infrastructure for coastal communities | The establishment of women led aquaculture groups. | Number of new women led aquaculture groups | 0 women led aquaculture groups | At least one woman-led aquaculture group (the project will establish two groups in two regencies) | Y: 1-7 | ESGI Advisor<br>Gender Mainstreaming Taskforce | 20,000 (incl. in Financing Agreement with Biodiversity NGO) |
+| 3.2.1.6 | Accelerate ensure representation of women in SF / CBFM | Number of SF / CBFM | 100% | Y: 1-7 | ESGI Advisor | Included in budget for |
+
+--- 
+
+**Note:** The original text appears to be incomplete or truncated, particularly at the end of the last row. This may be due to OCR issues or a partial extraction from the PDF.
+
+
+---
+*Chunk pages 162–162*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=479 (sys=94, user=385), max_out=1024, ctx=8192
+---
+
+# [Page 1]
+19
+
+The resources for the GAP are included in the overall project costs.
+
+## ID Project Activity Measures to strengthen gender equality
+## Indicators Baseline Targets, including sex-disaggregated targets
+## Timeline Responsibili- ties
+## Estimated Budget (EUR) and enable access to potential financial streams for climate change mitigation (e.g. REDD+) and adaptation strategy.
+
+Among the supported SF groups to improve financial access.
+
+boards that have women as board members are underrepresented and lack access to funding mechanisms.
+
+## Gender Mainstreaming Taskforce
+
+### GAP measure #1
+#### 38. Sub-activity 3.2.1.8
+Direct investments to KUPS (village communities) to implement social forestry licenses to contribute to sustainable management of forest land.
+
+Ensure women participation in financial management of GCF funds targeted at social forestry support.
+
+Percentage of supported KUPS, which are financially managed by women.
+
+Women involved in the financial management of KUPS are underrepresented.
+
+30% of newly established KUPS that receive project funding (GCF proceeds) have women as their treasurer
+
+Y: 1-7 ESGI Advisor
+
+## Gender Mainstreaming Taskforce
+
+Included in budget for GAP measure #1 + M&E Budget
+
+
+---
+*Chunk pages 163–163*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=633 (sys=94, user=539), max_out=1024, ctx=8192
+---
+
+# References
+
+- GIZ. (2020). *Analisis gender untuk program hutan dan perubahan iklim (FORCLIME 4.0)*. Jakarta: GIZ.
+- ILO. (2020). *Keberagaman gender di tempat kerja*. Diperoleh dari: https://www.ilo.org/jakarta/info/public/pr/WCMS_753493/lang--en/index.htm
+- Indonesian government. (1984). *CEDAW through Law Number 7 of 1984*.
+- Indonesian government. (2000). *Presidential Instruction Number 9 2000 concerning Gender Mainstreaming in National Development*.
+- Indonesian government. (2020). *Presidential Regulation Decree Number 18 2020 concerning the National Medium Term Development Plan (RPJMN) for 2020-2024*. Sekretariat Presiden Republik Indonesia, 1–7.
+- Israel, I. (2021). *Budaya patriarki dan kekerasan terhadap perempuan (sejarah dan perkembangannya)*. Jurnal Pustaka, 5 (2), 141-150.
+- Mishra, L. (2021). *Dampak kekerasan terhadap perempuan pada pendidikan tinggi di Mizoram India*. Jurnal Studi Wanita Internasional, 22 (1), 465-472.
+- KPPPA. (2022). *Pembangunan Manusia Berbasis Gender*. Jakarta: KPPPA.
+- Nurhaeni, IDA (2012). *Kemitraan Australia Indonesia untuk Desentralisasi (AIPD)*. Jakarta: AIPD.
+- Tohirin & Zamahsari. (2021). *Peran sosial laki-laki dan perempuan*. Profetika Jurnal Studi Islam, 22 (1), 91-108.
+- Wahyudi, V. (2020). *Peran Politik Perempuan dalam Perspektif Gender*. Politea: Jurnal Politik Islam, 1 (1), 63-68.
+- World Economic Forum. (2021). *2021 The global gender gap report*. In World Economic Forum (Issue March). https://www.weforum.org/reports/global-gender-gap-report-2021
+
+--- 
+Page 163

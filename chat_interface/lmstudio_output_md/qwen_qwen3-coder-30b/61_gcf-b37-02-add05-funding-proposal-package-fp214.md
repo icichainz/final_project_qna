@@ -1,0 +1,11819 @@
+---
+*Chunk pages 1–1*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=302 (sys=94, user=208), max_out=1024, ctx=8192
+---
+
+# Meeting of the Board
+## 23 – 26 October 2023
+### Tbilisi, Georgia
+
+## Provisional agenda item 12
+
+### GCF/B.37/02/Add.05  
+#### 2 October 2023
+
+## Consideration of funding proposals –  
+### Addendum V  
+
+## Funding proposal package for FP214  
+
+## Summary  
+This addendum contains the following seven parts:  
+1. A funding proposal titled "Thai Rice: Strengthening Climate-Smart Rice Farming";  
+2. No-objection letter issued by the national designated authority(ies) or focal point(s);  
+3. Environmental and social report(s) disclosure;  
+4. Secretariat’s assessment;  
+5. Independent Technical Advisory Panel’s assessment;  
+6. Response from the accredited entity to the independent Technical Advisory Panel's assessment; and  
+7. Gender documentation.
+
+
+---
+*Chunk pages 2–2*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=229 (sys=94, user=135), max_out=1024, ctx=8192
+---
+
+# GCF/B.37/02/Add.05  
+## Page b  
+
+### Table of Contents  
+
+- Funding proposal submitted by the accredited entity  
+- No-objection letter issued by the national designated authority(ies) or focal point(s)  
+- Environmental and social report(s) disclosure  
+- Secretariat’s assessment  
+- Independent Technical Advisory Panel’s assessment  
+- Response from the accredited entity to the independent Technical Advisory Panel's assessment  
+- Gender documentation  
+
+---  
+
+**Note:** The provided text appears to be a table of contents for a document, likely related to a funding proposal or project assessment. It does not contain any content that can be converted into markdown format beyond this structure. The rest of the document (pages 2–2) is not included in the extracted text and cannot be processed further without additional content.  
+
+If you have more pages or content to convert, please provide them for processing.
+
+
+---
+*Chunk pages 3–3*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=205 (sys=94, user=111), max_out=1024, ctx=8192
+---
+
+# Project/Programme title: Thai Rice: Strengthening Climate-Smart Rice Farming
+
+## Country(ies): Thailand
+
+## Accredited Entity: Deutsche Gesellschaft für Internationale Zusammenarbeit (GIZ) GmbH
+
+## Date of first submission: 2022/12/18
+
+## Date of current submission: 2023/09/21
+
+## Version number V.010
+
+
+---
+*Chunk pages 4–4*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=494 (sys=94, user=400), max_out=1024, ctx=8192
+---
+
+# [Page 1]
+## GREEN CLIMATE FUND FUNDING PROPOSAL V.10.0 | PAGE 1 
+
+### Contents
+
+- Section A: PROJECT / PROGRAMME SUMMARY  
+- Section B: PROJECT / PROGRAMME INFORMATION  
+- Section C: FINANCING INFORMATION  
+- Section D: EXPECTED PERFORMANCE AGAINST INVESTMENT CRITERIA  
+- Section E: LOGICAL FRAMEWORK  
+- Section F: RISK ASSESSMENT AND MANAGEMENT  
+- Section G: GCF POLICIES AND STANDARDS  
+- Section H: ANNEXES  
+
+### Note to Accredited Entities on the use of the funding proposal template
+
+- Accredited Entities should provide summary information in the proposal with cross-reference to annexes such as feasibility studies, gcnaender action plan, term sheet, etc.  
+- Accredited Entities should ensure that annexes provided are consistent with the details provided in the funding proposal. Updates to the funding proposal and/or annexes must be reflected in all relevant documents.  
+- The total number of pages for the funding proposal (excluding annexes) should not exceed 60. Proposals exceeding the prescribed length will not be assessed within the usual service standard time.  
+- The recommended font is Arial, size 11.  
+- Under the GCF Information Disclosure Policy, project and programme funding proposals will be disclosed on the GCF website, simultaneous with the submission to the Board, subject to the redaction of any information that may not be disclosed pursuant to the IDP. Accredited Entities are asked to fill out information on disclosure in section G.4.  
+
+### Please submit the completed proposal to:
+fundingproposal@gcfund.org  
+
+### Please use the following name convention for the file name:
+“FP-[Accredited Entity Short Name]-[Country/Region]-[YYYY/MM/DD]”
+
+
+---
+*Chunk pages 5–5*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=666 (sys=94, user=572), max_out=1024, ctx=8192
+---
+
+# GLOSSARY
+
+| Acronym | Full Form |
+|---------|-----------|
+| ACFS    | National Bureau of Agricultural Commodity and Food Standards |
+| ACWO    | ASEAN Confederation of Women’s Organisations |
+| AE      | Accredited entity |
+| AIFS    | ASEAN Integrated Food Security |
+| AMA     | Accreditation master agreement |
+| AMAF    | ASEAN Ministers Meeting on Agriculture and Forestry |
+| ASEAN   | Association of Southeast Asian Nations |
+| ASEAN-CRN | ASEAN Climate Resilience Network |
+| ASWGC   | ASEAN Sectoral Working Group on Crops |
+| AWD     | Alternate wetting and drying |
+| AWEN    | ASEAN Women Entrepreneurs Network |
+| BAAC    | Bank for Agriculture and Agricultural Cooperatives |
+| BAU     | Business-as-usual |
+| BCG     | Bio, circular, green |
+| BCSD    | Bias correction and spatial disaggregation |
+| BEIS    | UK Department for Business, Energy and Industrial Strategy |
+| BMUV    | Bundesministerium für Umwelt, Naturschutz, nukleare Sicherheit und Verbraucherschutz (German Federal Ministry for the Environment, Nature Conservation, Nuclear Safety and Consumer Protection) |
+| BMZ     | Bundesministerium für wirtschaftliche Zusammenarbeit und Entwicklung ( German Federal Ministry for Economic Cooperation and Development) |
+|BUR     | Biennial update report |
+| CDM     | Clean Development Mechanism |
+| CDRI    | Committee on Disaster Relief Improvement |
+| CEI     | Climate exposure index |
+| CFS     | Climate field school |
+| CGIAR   | Consultative Group on International Agricultural Research |
+| CH4     | Methane |
+| CMIP    | Coupled Model Intercomparison Project |
+| CO2     | Carbon dioxide |
+| CO2eq   | Carbon dioxide equivalent (referring to GHG emissions) |
+| CoC     | Chamber of Commerce |
+| CORDEX  | Coordinated Regional Climate Downscaling Experiment |
+| CPA     | Component project activities |
+| CRC     | Community Rice Centre |
+| CRI     | Climate Risk Index |
+| CRRL    | Climate-Resilient Rice Landscapes |
+| CSL     | Climate-smart loan |
+| CSO     | Civil society organisation |
+| CSR     | Corporate social responsibility |
+| DAE     | Direct access entity |
+| DDPM    | Department of Disaster Prevention and Mitigation |
+| DoAE    | Department of Agricultural Extension |
+| DRRD    | Division of Rice Research and Development |
+| DSIK    | Sparkassen Stiftung (German Savings Bank Foundation) |
+| DSR     | Direct-seeded rice |
+| EF      | Emission factor |
+| EFD     | Environmental Fund Division |
+| EGP     | Ethnic Groups Plan |
+| EIRR    | Economic internal rate of return |
+| ELE     | Evaluation and learning exercise |
+| ESIA    | Environmental and social impact assessment |
+| ESMF    | Environmental and social management framework |
+| ESMP    | Environmental and social management plan |
+| ESS     | Environmental and social safeguards |
+| ETS     | Emissions trading scheme |
+| EU      | European Union |
+| EU-ETS  | European Union Emissions Trading Scheme |
+| EUR     | Euro |
+
+[Page 5]
+
+
+---
+*Chunk pages 6–6*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=704 (sys=94, user=610), max_out=1024, ctx=8192
+---
+
+# [Page 1]  
+## GREEN CLIMATE FUND FUNDING PROPOSAL V.10.0 | PAGE 3  
+
+### EWMSA Enhancing Climate Resilience in Thailand through Effective Water Management and Sustainable Agriculture (GCF project FP170)  
+- **FA**: Financial assistance  
+- **FAA**: Funded activity agreement  
+- **FAO**: Food and Agriculture Organisation of the United Nations  
+- **FAO-RAP**: FAO Regional Office for Asia and the Pacific  
+- **FIRR**: Financial internal rate of return  
+- **FOLUR**: Food systems, land use and restoration  
+- **FP**: Funding proposal  
+- **FPO**: Fiscal Policy Office  
+- **FPRI**: Fiscal Policy Research Institute  
+- **FSA**: Farm sustainability assessment  
+- **FWM**: Farm-level water management  
+- **GAP**: Gender action plan / good agricultural practice  
+- **GC**: Gas chromatography  
+- **GCF**: Green Climate Fund  
+- **GCM**: Global climate model / general circulation model  
+- **GCU**: Grievance consideration unit  
+- **GDP**: Gross domestic product  
+- **GEF**: Global Environment Facility  
+- **GHG**: Greenhouse gas  
+- **GISTDA**: Geo-Informatics and Space Technology Development Agency  
+- **GIZ**: Deutsche Gesellschaft für Internationale Zusammenarbeit (GIZ) GmbH  
+- **GRM**: Grievance redress mechanism  
+- **GS**: Gold Standard  
+- **GSB**: Thai Government Savings Bank  
+- **GSEI**: Governance for Social Development and the Environment Institute  
+- **HP**: Horsepower  
+- **HWFI**: Heat wave frequency index  
+- **ICRF**: Innovative Climate Risk Financing for the Agricultural Sector in ASEAN  
+- **IFC**: International Finance Corporation  
+- **IKI**: Internationale Klimaschutz Initiative (International Climate Initiative)  
+- **IPCC**: Intergovernmental Panel on Climate Change  
+- **IPM**: Integrated pest management  
+- **IRR**: Internal rate of return  
+- **IRRI**: International Rice Research Institute  
+- **ISRL-T**: Inclusive Sustainable Rice Landscapes in Thailand  
+- **IWRM**: Integrated water resources management  
+- **JCM**: Joint Crediting Mechanism  
+- **JICA**: Japan International Cooperation Agency  
+- **LDCF**: Least Developed Countries Fund  
+- **LDD**: Land Development Department  
+- **LLL**: Laser land levelling  
+- **LT-LEDS**: Long-Term Low Greenhouse Gas Emission Development Strategy  
+- **M&E**: Monitoring and evaluation  
+- **MASCI**: Management System Certification Institute  
+- **MoAC**: Ministry of Agriculture and Cooperatives  
+- **MoF**: Ministry of Finance  
+- **MoNRE**: Ministry of Natural Resources and Environment  
+- **MRV**: Measuring, reporting and verification  
+- **MSME**: Micro, small and medium enterprise  
+- **MSR**: Mainstreaming Sustainable Rice  
+- **MSVC**: Market-Oriented Smallholder Value Chains  
+- **MTR**: Mid-term review  
+- **N2O**: Nitrous oxide  
+- **NAMA**: Nationally appropriate mitigation action  
+- **NAP**: National adaptation plan  
+- **NDA**: National designated authority  
+- **NDC**: Nationally determined contribution  
+- **NDVI**: Normalised difference vegetation index  
+- **NESDP**: National Economic and Social Development Plan  
+- **NGO**: Non-governmental organisation  
+- **NPV**: Net present value  
+- **NSP**: Thai Rice NAMA Support Project  
+- **OAE**: Office of Agricultural Economics  
+- **OECD**: Organisation for Economic Co-operation and Development  
+
+---  
+**Page 6**
+
+
+---
+*Chunk pages 7–7*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=623 (sys=94, user=529), max_out=1024, ctx=8192
+---
+
+# [Page 1]  
+## GREEN CLIMATE FUND FUNDING PROPOSAL V.10.0 | PAGE 4  
+
+### OIC Office of Insurance Commission  
+### ONEP Office of Natural Resources and Environmental Policy and Planning  
+### ONWR Office of National Water Resources  
+### PDPA Personal Data Protection Act  
+### PMU Project management unit  
+### PPP Public-private partnership  
+### PSC Project steering committee  
+### PV Photovoltaic  
+### R&D Research and development  
+### RCM Regional climate model  
+### RCP Representative concentration pathway  
+### RD Rice Department  
+### RID Royal Irrigation Department  
+### RIICE Remote Sensing-Based Information and Insurance for Crops in Emerging Economies  
+### RSWC Relative soil water content  
+### SAI Sustainable Agriculture Initiative  
+### SCALA Support Programme on Scaling-up Climate Ambition on Land-use and Agriculture  
+### SCCF Special Climate Change Fund  
+### SDG Sustainable Development Goal  
+### SEAH Sexual exploitation, abuse and harassment  
+### SECTORice Source-Selective and Emission-Adjusted GHG Calculator for Cropland – Rice  
+### SEP Stakeholder engagement plan  
+### SOM Soil organic matter  
+### SPA-FS Strategic Plan of Action on Food Security (ASEAN)  
+### SPEI Standard precipitation-evapotranspiration index  
+### SRLI Sustainable Rice Landscapes Initiative  
+### SRP Sustainable Rice Platform  
+### SSM Straw and stubble management  
+### SSNM Site-specific nutrient management  
+### SSP Shared socio-economic pathway  
+### SWOC Smart Water Operation Centre  
+### SWOT Strengths, weaknesses, opportunities and threats  
+### SWP Soil water potential  
+### TA Technical assistance  
+### TAS Thai Agricultural Standard for Sustainable Rice  
+### TCG Thai Credit Guarantee Corporation  
+### T-COP Thailand Carbon Offsetting Programme  
+### TDRI Thailand Development Research Institute  
+### TEI Thailand Environment Institute  
+### TFP Total factor productivity  
+### TGC-EMC Thai-German Cooperation on Energy, Mobility and Climate  
+### TGCP Thai-German Climate Programme  
+### TGEIS Thailand's GHG Emissions Inventory System Project  
+### TGIA Thai General Insurance Association  
+### TGO Thailand Greenhouse Gas Management Organisation  
+### ThaiCI Thai Climate Initiative  
+### THB Thai baht  
+### TMD Thai Meteorological Department  
+### TNA Technology needs assessment  
+### TRIS Thai Rice Insurance Scheme  
+### T-VER Thailand Verified Emission Reduction Scheme  
+### UNDP United Nations Development Programme  
+### UNEP United Nations Environment Programme  
+### UNFCCC United Nations Framework Convention on Climate Change  
+### USD US dollar  
+### VCS Verified Carbon Standard  
+### V-ETS Voluntary Emissions Trading Scheme (Thailand)  
+### WUO Water user organisation  
+
+---  
+*Page 7*
+
+
+---
+*Chunk pages 8–8*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=678 (sys=94, user=584), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.10.0 | PAGE 5
+
+## PROJECT/PROGRAMME SUMMARY
+
+### A.1. Project or programme
+Project
+
+### A.2. Public or private sector
+Public
+
+### A.3. Request for Proposals (RFP)
+Not applicable
+
+---
+
+Check the applicable GCF result area(s) that the overall proposed project/programme targets below. For each checked result area(s), indicate the estimated percentage of GCF and Co-financers’ contribution devoted to it. The total of the percentages when summed should be 100% for GCF and Co-financers’ contribution respectively.
+
+### A.4. Result area(s
+
+#### GCF contribution
+- **Mitigation total**
+  - ☐ Energy generation and access
+  - ☐ Low-emission transport
+  - ☐ Buildings, cities, industries and appliances
+  - ☒ Forestry and land use (40%)
+  
+#### Co-financers’ contribution
+- **Adaptation total**
+  - ☒ Most vulnerable people and communities (20%)
+  - ☒ Health and well-being, and food and water security (20%)
+  - ☐ Infrastructure and built environment
+  - ☒ Ecosystems and ecosystem services (20%)
+
+### A.5. Expected mitigation outcome
+
+(Core indicator 1: GHG emissions reduced, avoided or removed / sequestered)
+
+- Project implementation period (5 years): **2.44 MtCO₂e**
+- Project lifespan (15 years): **12.56 MtCO₂e**
+
+### A.6. Expected adaptation outcome
+
+(Core indicator 2: direct and indirect beneficiaries reached)
+
+- **253,400** (138,400 male, 115,000 female)
+- **760,200** (353,400 male, 406,800 female)
+
+### A.7. Total financing (GCF + co-finance)
+
+Euro 118.08 million
+
+### A.9. Project size
+Medium (Upto USD 250 million)
+
+### A.8. Total GCF funding requested
+
+Euro 38.17 million
+
+---
+
+1 Co-financer’s contribution means the financial resources required, whether Public Finance or Private Finance, in addition to the GCF contribution (i.e. GCF financial resources requested by the Accredited Entity) to implement the project or programme described in the funding proposal.
+
+2 Refer to the Policy of Co-financing of the GCF.
+
+
+---
+*Chunk pages 9–9*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=558 (sys=94, user=464), max_out=1024, ctx=8192
+---
+
+# A.10. Financial instrument(s) requested for the GCF funding
+
+- ☒ Grant
+- ☐ Loan
+- ☐ Guarantee
+- ☐ Equity
+- ☐ Results-based payment
+
+# A.11. Implementation period
+
+5 years
+
+# A.12. Total lifespan
+
+15 years
+
+# A.13. Expected date of AE internal approval
+
+1/9/2023
+
+# A.14. ESS category
+
+B
+
+# A.15. Has this FP been submitted as a CN before?
+
+- Yes ☒
+- No ☐
+
+# A.16. Has Readiness or PPF support been used to prepare this FP?
+
+- Yes ☐
+- No ☒
+
+# A.17. Is this FP included in the entity work programme?
+
+- Yes ☒
+- No ☐
+
+# A.18. Is this FP included in the country programme?
+
+- Yes ☒
+- No ☐
+
+# A.19. Complementarity and coherence
+
+- Yes ☒
+- No ☐
+
+# A.20. Executing Entity information
+
+The Deutsche Gesellschaft für Internationale Zusammenarbeit (GIZ) GmbH, besides being the Accredited Entity (AE) of the project, also acts as an Executing Entity (EE). Besides GIZ, there will be the following 4 Executing Entities:
+
+- Rice Department (RD) of the Ministry of Agriculture and Cooperatives (MoAC)
+- Bank for Agriculture and Agricultural Cooperatives (BAAC)
+- Office of Natural Resources and Environmental Policy and Planning (ONEP) of the Ministry of Natural Resources and Environment (MoNRE) [NDA]
+- International Rice Research Institute (IRRI)
+
+RD, BAAC, ONEP and IRRI are all separate legal entities that can enter into a contract in their own name.
+
+
+---
+*Chunk pages 10–10*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1073 (sys=94, user=979), max_out=1024, ctx=8192
+---
+
+# A.21. Executive summary  
+
+## Climate Change Problem  
+
+1. Rice is Thailand’s most important food crop, accounting for roughly half of Thai agricultural land and employing 18 million smallholder farmers. Rice farmers are among the poorest occupational groups in Thailand. They are extremely vulnerable to climate change: rice farming is a water-intensive and temperature-sensitive activity conducted in a climate that is becoming increasingly characterised by longer dry spells and higher temperatures (including temperature spikes).  
+
+2. At the same time, rice farming is a significant contributor to greenhouse gas (GHG) emissions, mainly through methane (CH₄) generated in flooded paddy fields but also carbon dioxide (CO₂) from agricultural burning practices and nitrous oxide (N₂O) from nitrogenous fertilizers. Globally, rice production accounts for approximately 2.5% of total anthropogenic GHG emissions and 10% of agricultural emissions. Thailand is the world’s fourth-largest rice sector methane emitter, accounting for 7% of such emissions.  
+
+3. Rice farmers’ awareness of climate change is high: almost 80% of farmers think that rainfall patterns are changing and that rice yields are suffering as a result. But smallholder farmers have limited capacity to adapt, given their low incomes and small farm sizes, and their limited access to technical assistance, markets and credit. Furthermore, women smallholder farmers face disproportionate challenges in adapting to climate change, as their needs and roles in agriculture (for example, with regard to technology access) are generally not recognised or addressed.  
+
+4. Aspects of low-emission and/or climate-resilient rice farming have been piloted and selectively rolled-out by baseline projects, but they have not been promoted and disseminated at a large scale nor in an integrated or cross-cutting context. From the perspective of agricultural service providers, investment in climate-smart technology and equipment carries substantial risk due to the unclear business case (particularly in relation to smallholder farmers) and the uncertain market size / demand for climate-smart services, particularly compared with the well-established and well-understood sugar cane service provision sector.  
+
+## Proposed Interventions  
+
+5. The Thai Rice Project will enable rice farmers – including women farmers – to adapt to a changing climate while simultaneously reducing GHG emissions.  
+
+6. The project design follows a bottom-up logic: behavioural changes will be triggered at the level of the farmer. Farmers will invest and adapt their practices and climate-smart technologies, which will be made available by service providers as a result of the project’s technical and financial support. The climate-smart rice that is produced will be verified, will incorporate production cost savings and will be sold at higher market prices, while rice straw residues will be monetised. The Thai Agricultural Standard for Sustainable Rice (TAS) will serve as a nationally recognised sustainability standard, augmented in an international context by corresponding international standards and systems. Building on an existing – albeit small – domestic voluntary carbon market, an innovative carbon crediting mechanism for the rice sector – the T-VER Rice Scheme – will be designed and implemented to unlock additional revenue flows. Policy-makers will be supported with technical assistance, monitoring tools and a new body – the Thai Rice Facility – that coordinates investments from the public and private sectors to achieve a strengthened and more ‘joined up’ institutional and policy environment for climate-smart rice.  
+
+## Climate Results / Benefits  
+
+7. The combination of these project interventions will lead to a paradigm shift in how rice farming is conducted: male and female farmers across Thailand will apply climate-smart rice farming technologies and practices supported by capable, well-equipped service providers. As a result, yields and livelihoods will improve, vulnerability to climate change will be reduced and GHG emissions will decrease significantly. The T-VER Rice Scheme will enable the rice sector to generate ongoing economic value from these emission reductions. In addition, governments across the region will benefit from the project’s experiences through knowledge sharing and peer-to-peer learning.  
+
+8. The project is expected to reduce 12.56 Mt CO₂e during its 15-year lifespan, at a mitigation cost to the GCF of Euro 3.12/t CO₂e, and to build the climate resilience of approximately 253,400 smallholder rice farmers.  
+
+---  
+*Page 7*
+
+
+---
+*Chunk pages 11–11*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1317 (sys=94, user=1223), max_out=1024, ctx=8192
+---
+
+# B.1. Climate context
+
+## B.1.1 Strategic context
+
+### Rice Production
+
+1. Agriculture plays an important role in Thailand’s economy, contributing 8% of gross domestic product (GDP) and employing 38.5 million people, approximately 30% of the population. 3 Rice is cultivated on roughly half of Thai agricultural land an d employs 18 million farmers. 4 Roughly 40% of labour in Thai agriculture is female. 5  
+
+2. Rice is Thailand’s main staple food and is also an important export commodity. 6 Of the rice that is consumed domestically, approximately one-third is used as inputs into other sectors, including animal feed, rice flour, rice-based snacks and bio-energy. The remaining two-thirds is consumed directly, either sold loose in traditional rice stores or pre-packed in bags. 7 In 2021, Thailand was the world’s third-largest rice exporter, after India and Viet Nam. 8 
+
+3. The major crop (‘in-season’ or wet season rice) is grown from May to October, except in the South, where the growing season is from mid-June to February of the following year. Almost three-quarters of Thailand’s annual rice production occurs in -season. 9 ‘Off-season’ rice is typically grown in the dry season from November to April, and from March to mid-June in the South. 
+
+4. Rice is grown in all provinces of the country. Approximately three-quarters of Thai rice is rain-fed and one-quarter is irrigated. 10 More than half of the total rice area is located in the North -East and Central Plains regions – the so-called ‘rice bowl’ of Thailand. 11 The majority of farmers in the Central Plains have access to irrigation facilities, which allow two rice crops – in-season and off-season – to be grown during the year. Almost three-quarters of the dry -season rice grown under irrigated conditions is located in the Central Plains region, with the principal crop being long-grain rice. 12  
+
+5. Situated at 90-200m above sea level, with undulating topography where irrigation is difficult, the North -East, in contrast, relies primarily upon rain-fed or mixed rain-fed / irrigated rice farming. The average size of farms is smaller than in the Central Plains and soil erosion presents challenges. The majority of North-Eastern rice is Hom Mali (the brand name for Thai jasmine rice), which is exported to Europe and North America, as well as glutinous rice. 13 
+
+6. Rice farming in Thailand is characterised as high risk but low return. 14 The sector is very fragmented. Most rice is grown on farms smaller than 2 hectares by smallholder farmers with limited access to credit  
+
+3 Office of Natural Resources and Environmental Policy and Planning (2022), Fourth Biennial Update Report – Thailand:  
+https://unfccc.int/sites/default/files/resource/Thailand_BUR4_final_28122022.pdf?download  
+4 Xu L. et al (2021), ‘Paddy rice mapping in Thailand using time-series Sentinel-1 data and deep learning model’, Remote Sensing, 13: 
+https://www.mdpi.com/2072-4292/13/19/3994/pdf?version=1633775190  
+5 International Labour Organisation, ILOSTAT Database: https://data.worldbank.org/indicator/SL.AGR.EMPL.MA.ZS?locations=TH  
+6 OECD & FAO (2019), Agricultural Outlook 2019-2028, Chapter 3: Cereals: 
+http://www.fao.org/3/CA4076EN/CA4076EN_Chapter3_Cereals.pdf  
+7 Krungsri Research (2022), Thailand Industry Outlook 2022-2024: Rice Industry: https://www.krungsri.com/getmedia/fd159784-6582-4f22-
+91e3-54549d3269ab/IO_Rice_220203_EN_EX.pdf.aspx  
+8 https://www.statista.com/statistics/255947/top-rice-exporting-countries-worldwide-2011/  
+9 Buddhaboon C. et al (2022), ‘The utilisation of satellite data to support wet season rice production policy in Thailand: a review of practices 
+and opportunities’, in Vadrevu K. et al (eds), Remote Sensing of Agriculture and Land Cover / Land Use Changes in South and Southeast 
+Asian Countries, Springer Nature, Switzerland.  
+10 UNEP (2021), Country Report: Sc
+
+
+---
+*Chunk pages 12–12*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1597 (sys=94, user=1503), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.10.0 | PAGE 9
+
+7. While there is a lack of systematically collected sex-disaggregated data and gender analysis on Thai rice farmers, it is believed that women account for only 27% of agricultural land holders in Thailand: the majority of Thai women farmers rent the land they work on. Women farmers are disproportionately impacted by climate change, as they play a large role in rural economies and are heavily involved in agricultural production. Women are also central to family food security and nutrition. The unique position of women makes them pivotal to both supporting effective climate change adaptation and mitigation, as well as addressing hunger and malnutrition. Consequently, “putting resources in the hands of women could help improve their position within the household and wider community…with multiplier effects for the food security, nutrition and health of their children.”  
+
+8. Yields of in-season and off-season rice – averaging between 461 kg/rai and 573 kg/rai, respectively 2,881 kg/ha and 3,581 kg/ha – are significantly lower than those in Viet Nam (45% lower), Indonesia (34% lower) and the Philippines (25% lower), and are characterised by higher variance between years. Total factor productivity (TFP) is low, and growing at a low rate, compared with other rice-producing countries. Rice yields are heavily dependent on weather conditions, particularly droughts and floods. However, even in years where there are no weather problems, the low price of rice combined with relatively high production costs (including labour, energy and chemicals) means that the returns from rice farming are very low. Farmers’ low incomes, high debt and their vulnerability to weather shocks serve to create barriers to wide-scale adoption of climate-smart rice production practices: farmers are generally not well positioned to undertake expensive, risky or disruptive changes in response to climate change.
+
+9. Smallholder farmers are typically organised into so-called ‘mega-farms’ – groups of approximately 30-150 farmers with a planting area of about 3,000 rai (480 hectares). Mega-farms are a relatively new structure – most are less than 5 years old – that are being promoted by the Ministry of Agriculture and Cooperatives (MoAC) as the basis of agricultural extension support services. A field manager or committee acts as the main focal point for managing the mega-farm’s activities along the rice value chain and encourages the members to work together as a group when managing their inputs, cultivation, quality assurance and market linkages. This model serves to reduce production costs, improve yields and build the technical knowledge and bargaining capacity of the farmer group.
+
+Community rice centres (CRCs) represent a second pillar of the extension support infrastructure, focused primarily on providing farmers with access to rice seeds and appropriate farming techniques.
+
+10. Farmers are also grouped in Water Usage Organisations (WUOs): farmer groups that are organised and supported by the government’s Royal Irrigation Department (RID). WUOs can take a number of forms
+
+---
+
+**References:**
+
+15 Attavanich W. et al (2019), ‘Farms, farmers and farming: a perspective through data and behavioural insights’, PIER Discussion Papers, 122: https://econpapers.repec.org/scripts/redir.pf?u=https%3A%2F%2Fwww.pier.or.th%2Ffiles%2Fdp%2Fpier_dp_122.pdf;h=repec:pui:dpaper:1  
+16 Chandio A. et al (2022), ‘How does climate change affect rice production in Thailand? Assessing the role of financial development’, Environmental Science and Pollution Research, preprint (under review): https://www.researchsquare.com/article/rs-1173507/v1; Wipatayotin, A. (4 November 2018), ‘Finding ways to beat farm debt’, Bangkok Post: https://www.bangkokpost.com/thailand/special-reports/1569802/finding-ways-to-beat-farm-debt   
+17 Ngammuangtueng P. et al (2019), ‘Water, energy and food nexus in rice production in Thailand’, Sustainability, 11: https://www.researchgate.net/publication/336754667_Water_Energy_and_Food_Nexus_in_Rice_Production_in_Thailand   
+18 World Bank (September 2020), ‘Thailand: Overview’: http://www.worldbank.org/en/country/thailand/overview    
+19 World Bank (2022), Thailand Rural Income Diagnostic: Challenges and Opportunities for Rural Farmers: https://documents1.worldbank.org/curated/en/0990050
+
+
+---
+*Chunk pages 13–13*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1131 (sys=94, user=1037), max_out=1024, ctx=8192
+---
+
+# B.1.2 Baseline scenario
+
+## Rice Farming is Impacted by Climate Change and Contributes to Climate Change
+
+### 12. Rice farming in Thailand, and associated agricultural livelihoods in rice-growing regions, is highly vulnerable and exposed to the impacts of climate change. At the same time, rice farming is a significant contributor to GHG emissions, mainly through methane (CH4) generated in flooded paddy fields but also carbon dioxide (CO2) from agricultural burning practices and nitrous oxide (N2O) from nitrogenous fertilizers.
+
+### Climate Vulnerability of Rice Farming
+
+#### 13. Thailand is already experiencing the effects of climate change. According to the Intergovernmental Panel on Climate Change (IPCC), the mean land-surface air temperature in South-East Asia has increased by approximately 1°C over the past 100 years. In Thailand, the average surface temperature is increasing more rapidly, having increased at an average rate of 0.02°C/year between 1970-2017. Changes in temperature extremes have also been documented, with a statistically significant trend of increasing annual numbers of warm days and warm nights and a corresponding reduction in the number of cool days and cool nights.
+
+#### 14. Mean annual precipitation varies across the country and shows considerable short-term variation, correlated with the El Niño Southern Oscillation and the Pacific Decadal Oscillation. Nonetheless, a general decreasing trend is evident between 1951-2016 for the whole of Thailand, with the largest reductions in the east and south, accompanied by accentuated seasonality: wetter wet seasons and drier dry seasons. The annual number of (rain-bringing) tropical depressions has fallen in the past 30 years, from 30 to 10; the number of tropical storms has declined from 55 to 35, and typhoons from 70 to 45. The recent IPCC AR6 WG I report notes that while the average number of rainy days over Thailand has decreased by 1.3 to 5.9 days per decade, average daily rainfall intensity has also increased by 0.24-0.73 mm/day, leading to an increased occurrence of flooding events during the wet season and an increased occurrence of drought events during the dry season.
+
+---
+
+**Note:** Page numbers are preserved as requested. The original page number is [Page 1].
+
+
+---
+*Chunk pages 14–14*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1629 (sys=94, user=1535), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.10.0 | PAGE 11
+
+## 15. According to climate models developed locally 30, the following future changes in the climate are projected31,32,33:
+
+- Increase in maximum and minimum temperature. Average temperatures are predicted to increase by up to 1.7°C under Representative Concentration Pathway (RCP) 4.5 or up to 2°C (RCP 8.5) by 2059 compared to the baseline climate of General Circulation Models (GCMs) (1975-2004). The maximum temperature in Thailand is projected to increase by approximately 0.9-1.8°C by 2100 under (RCP) 2.6, by 1.3 -2.3°C under RCP 4 .5 and by 2 -3.1°C under RCP 8.5. The minimum temperature in Thailand is projected to increase by approximately 1.2 -2.2°C by 2100 under RCP 2.6, by 1.6 -2.4°C under RCP 4.5 and by 2.2 -3.4°C under RCP 8.5. There will be an increased occurrence of heat spikes – defined as days with temperature exceeding 40°C.
+
+- The frequency and severity of floods are expected to increase. Projections of future annual precipitation suggest that rainfall during March to August will increase but will substantially decrease between September-February. While overall rainfall is expected to slightly increase by 2059 under both RCP 4.5 and RCP 8.5, seasonal precipitation patterns will change, resulting in wetter wet and drier dry seasons. Extreme precipitation events, associated with tropical storms, will intensify34 and the frequency of extreme flood events will increase. 35 Thailand is vulnerable to flooding, particularly late in the wet season (from September to October). In southern Thailand, with its mountainous terrain, flash floods can occur after intensive rainfall. In Northern, Central and North-Eastern Thailand, flood waters travel relatively slowly but often destructively, because of the gentle slope and extensive catchment areas of the basins of the Chao Phraya and Mun rivers. 36 Flooding typically occurs late in the wet season and thus has the potential to severely damage rice crops and cause catastrophic economic damages to affected farmers and communities. 37
+
+- Conversely, the frequency and severity of droughts are also expected to increase (see Figure 1). Consecutive years of below-normal rainfall have the potential to cripple the agricultural sector and markedly slow Thailand's economy. 38 Droughts have historically occurred infrequently in the dry season (November to April). The lack of precipitation during such drought events is compounded by the high temperatures and abundant insolation (and hence higher evapo-transpiration) experienced at that time of year. 39 As rice is the single most important crop in the Thai agricultural sector, drought also has substantial negative economic impacts on upstream and downstream industries along the value chain, including a large share of rural industries manufacturing agricultural inputs and processing agricultural outputs, but also the tertiary sector in rural regions.40
+
+During 2020-2021, Thailand experienced its worst drought in 40 years. Caused by a shorter-than-normal monsoon season and below-average annual rainfall in 2019, the drought was so severe that half of the country's major reservoirs stood below 50% of capacity and river levels were so low that saltwater started to penetrate upstream.41 The drought damaged 11.8 million tonnes of rice in
+
+30 Notably, Cruz F. et al (2017), 'Sensitivity of temperature to physical parameterisation schemes of RegCM4 over the CORDEX-Southeast Asia region', International Journal of Climatology, 37: https://rmets.onlinelibrary.wiley.com/doi/epdf/10.1002/joc.5151  
+31 Office of Natural Resources and Environmental Policy and Planning (2022), Fourth National Communication to the UNFCCC: https://unfccc.int/sites/default/files/resource/Thailand%20NC4_22122022.pdf?download  
+32 Ministry of Natural Resources and Environment (2015), Climate Change Master Plan 2015-2050: https://climate.onep.go.th/wp-content/uploads/2019/07/CCMP_english.pdf  
+33 Kiguchi M. et al (2021), 'A review of climate-change impact and adaptation studies for the water sector in Thailand', Environmental Research Letters, 16: https://iopscience.i
+
+
+---
+*Chunk pages 15–15*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1051 (sys=94, user=957), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.10.0 | PAGE 12
+
+## 2020, with estimated economic damage of Euro 2.2 billion
+
+42. Promping T. and Tingsanchali T. (2021), 'Meteorological drought hazard assessment for agriculture area in eastern region of Thailand', Proceedings of the 26th National Convention on Civil Engineering: https://conference.thaince.org/index.php/ncce26/article/download/1175/671/
+
+43. US Department of Agriculture (2022), Grain and Feed Update: Thailand: https://apps.fas.usda.gov/newgainapi/api/Report/DownloadReportByFileName?fileName=Grain%20and%20Feed%20Update_Bangkok_Thailand_TH2022-0037.pdf
+
+44. National Committee on Climate Change (2018), Thailand National Adaptation Plan
+
+## 16. Modelling commissioned for the preparation of this Funding Proposal (Annex 2c) comes to similar conclusions as the scientific literature.
+
+Meteorological time-series data (1961 to the current day) were compiled from 11 weather stations in rice-producing project areas in Central, North and North-East Thailand. Trends in meteorological variables, including extreme indices (highest 5-day precipitation amount, heat wave frequency index (HWFI), etc.) and composite indicators (e.g. the standard precipitation and evapotranspiration index, SPEI), were constructed. A Bias Correction and Spatial Disaggregation (BCSD) methodology, using ERA5-Land as a reference data-set, was used to interpolate missing values. Analysis was then carried out on seasonal bias by dividing each region into two seasons: the wet and the dry seasons. The Mann-Kendall trend assessment technique was applied to assess the results at a significance level of 95%. Data-sets from gridded observation (CRU 45 and ERA5 46) derived for each station were compared for validation.
+
+## 17. Future projections were analyzed using two model simulations: CMIP6 47 and CORDEX 48.
+
+Eight high-resolution Regional Climate Models (RCMs) from CORDEX-Core and 21 Global Climate Models (GCMs) from CMIP data archives were considered for the analysis, which was conducted over 3 time-periods – near-term (2025-2049), mid-term (2050-2074) and long-term (2075-2099) – and based on 3 climate scenarios (Shared Socio-Economic Pathways (SSPs)): SSP1-2.6, SSP2-4.5 and SSP5-8.5 49
+
+## 18. Key findings of the project modelling include:
+
+- The historical data and projections for future temperature show a clear upward trend (Figure 2).
+
+### Footnotes:
+
+42. Promping T. and Tingsanchali T. (2021), 'Meteorological drought hazard assessment for agriculture area in eastern region of Thailand', Proceedings of the 26th National Convention on Civil Engineering: https://conference.thaince.org/index.php/ncce26/article/download/1175/671/
+
+43. US Department of Agriculture (2022), Grain and Feed Update: Thailand: https://apps.fas.usda.gov/newgainapi/api/Report/DownloadReportByFileName?fileName=Grain%20and%20Feed%20Update_Bangkok_Thailand_TH2022-0037.pdf
+
+44. National Committee on Climate Change (2018), Thailand National Adaptation Plan
+
+45. CRU (Climatic Research Unit) is observation-based and has a spatial resolution of 50 km: https://crudata.uea.ac.uk/cru/data/hrg/
+
+46. ERA5 (ECMWF Reanalysis 5) is a re-analysis data-set with a spatial resolution of 30 km: https://www.ecmwf.int/en/forecasts/datasets/reanalysis-datasets/era5
+
+47. CMIP6: Coupled Model Intercomparison Project Phase 6: https://www.wcrp-climate.org/wgcm-cmip/wgcm-cmip6
+
+48. CORDEX: Coordinated Regional Climate Downscaling Experiment: https://cordex.org/
+
+49. O'Neill B. et al (2014), 'A new scenario framework for climate change research: the concept of shared socioeconomic pathway', Climatic Change, 122: https://link.springer.com/content/pdf/10.1007/s10584-013-0905
+
+
+---
+*Chunk pages 16–16*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=338 (sys=94, user=244), max_out=1024, ctx=8192
+---
+
+# [Page 1]
+## GREEN CLIMATE FUND FUNDING PROPOSAL V.10.0 | PAGE 13
+
+• There is increasing seasonality: i.e. more seasonal extremes ('wetter wet seasons' and 'drier dry seasons'), albeit with some geographical variation (Figure 3).
+
+• Heatwave frequency is predicted to increase markedly across all 3 regions. In the Central Plains, for example, the number of heatwave days is expected to increase from a historical baseline of ~18 days per year to ~58 days per year in the long-term period (2075-2099) under SSP2-4.5 (Figure 4).
+
+• The historical data and projections for SPEI show a clear upward trend in the number of drought months, indicating increasing incidence of drought conditions.
+
+## Figure 2: Temperature Forecasts for the Dry and Wet Seasons Under SSP1-2.6, SSP2-4.5 and SSP5-8.5
+
+
+---
+*Chunk pages 17–17*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=226 (sys=94, user=132), max_out=1024, ctx=8192
+---
+
+# Figure 3: Precipitation Forecasts for the Dry and Wet Seasons Under SSP1-2.6, SSP2-4.5 and SSP5-8.5
+
+# Figure 4: Heatwave Frequency for the Dry and Wet Seasons Under SSP1-2.6, SSP2-4.5 and SSP5-8.5
+
+--- 
+
+[Page 1]  
+B  
+GREEN CLIMATE FUND FUNDING PROPOSAL V.10.0 | PAGE 14  
+
+Figure 3: Precipitation Forecasts for the Dry and Wet Seasons Under SSP1-2.6, SSP2-4.5 and SSP5-8.5  
+
+Figure 4: Heatwave Frequency for the Dry and Wet Seasons Under SSP1-2.6, SSP2-4.5 and SSP5-8.5
+
+
+---
+*Chunk pages 18–18*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1478 (sys=94, user=1384), max_out=1024, ctx=8192
+---
+
+# Impacts of Climate Change on Rice Yields
+
+19. Rice yields have demonstrated considerable sensitivity to past climate change trends. Farmers consume 70% of the country’s water supply and rice is especially water-intensive, consuming more water than any other crop or economic sector.^50^ A typical Thai paddy field requires approximately 10,000 m³ of water per season and each kilogramme of paddy rice produced requires 2-3 m³ of irrigation water.^51^ However, the amount of irrigation water actually available is, even in a normal year, barely sufficient to fulfill the demands imposed by rice production.^52^ Even a moderate drought, measured in terms of relative soil water content (RSWC) between 35-55% or soil water potential (SWP) between 35-55 kPa, can reduce rice biomass by 25%, caused by stomata closure which reduces the leaf CO₂/O₂ ratio, resulting in photosynthesis inhibition and subsequent reductions in grain weight, panicle number per unit area, panicle length and grain number per panicle.^53^
+
+20. In the drought of 2019, yields in the second growing season declined by 54%, leading to a fall in exports from 11.1 to 7.6 million tonnes, or almost one-third, and the loss of about US$ 1.6 billion in export revenues.^54^ In the drought of 2020/21, the government effectively prohibited rice farming in some areas by not supplying water to the irrigation system in order to prioritise water for household consumption. The government also started to encourage rice farmers to diversify away from rice by planting non-rice crops, particularly in the dry season. With increasing temperatures, drier dry and wetter wet seasons, key adaptation requirements for Thailand will include “the reduction of water usage and expansion of its storage.”^55^
+
+21. Rice yields are sensitive to the projected changes in climate parameters. As a result of spikelet sterility and reduced accumulation of assimilates ^56^, rice grain yield declines when the average daily temperature exceeds 29°C, and grain quality continues to decline linearly as temperatures rise. At the global level, each increase of one degree Celsius in global mean temperature is expected to reduce the total rice yield by 3.2%. ^57^ The crop yield modelling commissioned for the preparation of the Thai Rice Project finds that a temperature increase of up to 2°C by 2059 under RCP 4.5 in the assessed area will reduce rice yields by 17-20%.
+
+22. In addition to sustained, incremental increases in temperature over the course of decades, rice yields are sensitive to transitory heatwaves. Heat exposure above ~34 °C for as little as 1 hour can reduce grain numbers and hence yield: the effect is irreversible^58^, occurs even when water root uptake and transpiration are unaffected^59^, and also applies to irrigated rice.^60^
+
+---
+**References:**
+50 Office of Natural Resources and Environmental Policy and Planning (2022), Fourth National Communication to the UNFCCC: https://unfccc.int/sites/default/files/resource/Thailand%20NC4_22122022.pdf?download  
+51 Thanawong K. et al (2014), ‘Eco-efficiency of paddy rice production in North-Eastern Thailand: a comparison of rain-fed and irrigated cropping systems’, Journal of Cleaner Production, 73: https://www.sciencedirect.com/science/article/abs/pii/S0959652613009219?via%3Dihub  
+52 Ngammuangtueng P. et al (2019), ‘Water, energy and food nexus in rice production in Thailand’, Sustainability, 11: https://mdpi-res.com/d_attachment/sustainability/sustainability-11-05852/article_deploy/sustainability-11-05852-v2.pdf?version=1571822723  
+53 Zhang et al (2018), ‘Effect of drought on agronomic traits of rice and wheat: a meta-analysis’, International Journal of Environmental Research and Public Health, 15: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5981878/pdf/ijerph-15-00839.pdf  
+54 NNA Business News (2 December 2019), ‘Thailand’s paddy output to decline in 2019-2020 season’: https://english.nna.jp/articles/2048   
+55 Kiguchi M. et al (20
+
+
+---
+*Chunk pages 19–19*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=984 (sys=94, user=890), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.10.0 | PAGE 16
+
+## Figure 5: Simulated Rice Yield Response to Temperature Variation in Kanchanaburi, Thailand Across Two Cultivars: ChaiNat 1 (left) and KDML105 (right)
+
+23. Wetter wet seasons and drier dry seasons will have the effect of leaching mineralised nitrogen from the soil more rapidly, before the rice crop can utilise it: the efficacy of fertilizers will thereby be reduced. It is projected that there will be a positive fertilization effect associated with higher atmospheric CO₂ concentrations. However, this fertilization effect shows strong interaction with soil mineral nitrogen levels, with responses being more positive in locations with high nitrogen levels: as soil mineral nitrogen is depleted by changes in precipitation patterns, the CO₂ fertilization effect is expected to weaken. Moreover, because stomata close at high temperatures to avoid wilting, photosynthesis stops and plants cannot make use of the higher CO₂ concentration. It is very probable, therefore, that positive effects on rice yields from higher CO₂ concentration will be more than offset by changes in other climate parameters, notably temperature and rainfall.
+
+24. Modelling commissioned for the preparation of this funding proposal and undertaken by the International Rice Research Institute (IRRI) suggests that the near-term (2025-2049) impact of climate change on rice yields will be negative in all 3 regions studied. Table 1 provides a summary of anticipated yield reductions, which average 0.6 tonnes per hectare in the dry season and 0.4 tonnes per hectare in the wet season.
+
+### Table 1: Anticipated Impact of Near-Term Climate Change on Rice Yields
+
+| Season | Region | Rice Variety | Average Rice Yield (t/ha): Current Climate (2001-2020) | Average Rice Yield (t/ha): Future Climate (2025-2049) | Change in Average Rice Yield (%) |
+|--------|--------|--------------|-------------------------------------------------------|------------------------------------------------------|----------------------------------|
+| Wet | Central Plains | IR72 | 7.68 | 7.22 | -6.0 |
+| Wet | Central Plains | MTR140 | 5.96 | 5.64 | -5.4 |
+| Wet | Central Plains | MTR070PS | 7.08 | 6.77 | -4.4 |
+| Wet | North-East | IR72 | 7.59 | 7.10 | -6.5 |
+| Wet | North-East | MTR140 | 5.73 | 5.55 | -3.1 |
+| Wet | North-East | MTR070PS | 7.35 | 7.29 | -0.8 |
+| Dry | North | IR72 | 7.86 | 7.29 | -7.3 |
+| Dry | North | MTR140 | 6.33 | 6.03 | -4.7 |
+| Dry | North | MTR070PS | 7.94 | 7.49 | -5.7 |
+| Dry | Central Plains | IR72 | 6.72 | 5.86 | -12.8 |
+| Dry | Central Plains | MTR140 | 4.91 | 4.49 | -8.6 |
+
+> Please refer to Annex 2f for detailed analysis. IRRI modelling commissioned for the preparation of the Thai Rice Project, using the ORYZA model – an eco-physiological process-based paddy crop model capable of incorporating climate variables, soil conditions, rice genotypes and agronomic management regimes. See Setiyono T. et al (2018), ‘Spatial rice yield estimation based on MODIS and Sentinel-1 SAR data and ORYZA crop growth model’, Remote Sensing, 293: https://mdpi-res.com/d_attachment/remotesensing/remotesensing-10-00293/article_deploy/remotesensing-10-00293.pdf?version=1518624326 and Boling A.A. et al (2011), ‘Yield gap analysis and the effect of nitrogen and water on photoperiod-sensitive Jasmine rice in north-east Thailand’, NJAS: Wageningen Journal of Life Sciences, 58: 1-2: Yield gap analysis and the effect of nitrogen and water on photoperiod-sensitive Jasmine rice in north-east Thailand - ScienceDirect.
+
+
+---
+*Chunk pages 20–20*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1062 (sys=94, user=968), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.10.0 | PAGE 17
+
+## North-East IR72 6.95 6.26 -9.9  
+MTR140 5.28 4.78 -9.5  
+North IR72 8.17 7.31 -10.5  
+MTR140 6.26 5.84 -6.7  
+
+25. Livelihoods of smallholder farmers are threatened by the impacts of climate change. Changes in temperature, rainfall and the frequency or intensity of extreme weather events directly affect farmers’ yields, as well as their households’ food security, income and well-being.
+
+62 Rice farmers’ awareness of climate change is high: almost 80% of farmers think that rainfall patterns are changing and that rice yields are suffering as a result.
+
+But smallholder farmers have limited capacity to adapt, given their lower income levels, limited land areas and lower education levels; their inferior access to technical assistance, markets and credit; and their often-chronic dependence on external support.
+
+Furthermore, women smallholder farmers face disproportionate challenges in adapting to climate change, as their needs and roles in agriculture (for example, with regard to technology access) are generally not recognised or addressed.
+
+26. The climate vulnerability assessment commissioned for the preparation of the Thai Rice Project estimates that, during the period 1975-2004, around 46% of the assessed area was classified as highly or very highly vulnerable according to the Climate Exposure Index (CEI).
+
+This vulnerability is expected to increase under future climate scenarios, reaching 60% under RCP 8.5 by the middle of the century.
+
+Figure 6: Small Administrative-Level Climate Exposure Index (CEI) in 24 Assessed Provinces Across Thailand
+
+27. Alternative livelihood options for smallholder farmers are limited. Rice farming is a water-intensive, temperature-sensitive activity in an environment that is projected to experience increasing (frequency/magnitude of) water scarcity and rising temperatures.
+
+One adaptation option for Thai farmers could, therefore, be to simply discontinue rice farming. However, the scope for making such a switch, and the scale of the potential benefits, is limited.
+
+Rice farming is deeply embedded within the cultural, social, economic and political fabric of Thailand.
+
+Rice remains the dominant agricultural industry, accounting for 51% of the cultivated area and contributing 15% of agricultural GDP:
+
+not only is rice still a vital food
+
+62 Kang H. et al (2021), ‘Future rice farming threatened by drought in the Lower Mekong Basin’, Scientific Reports, 11: https://www.nature.com/articles/s41598-021-88405-2.pdf  
+
+63 Nodera M. et al (2022), ‘Farmers’ perception and objective validation of the impact of climate change on farming activities in Northeast Thailand’, Earth and Environmental Science, 1016: https://iopscience.iop.org/article/10.1088/1755-1315/1016/1/012041/pdf  
+
+64 Vignola R. et al (2015), ‘Ecosystem-based adaptation for smallholder farmers: definitions, opportunities and constraints’, Agriculture, Ecosystems & Environment, 211: https://www.sciencedirect.com/science/article/pii/S0167880915002157/pdfft?md5=1649137f24da1e4d229744a0918ba1e2&pid=1-s2.0-S0167880915002157-main.pdf  
+
+65 FAO (2003), Gender Responsive Technology for Poverty Alleviation in Thailand: http://www.fao.org/3/ae538e/ae538e00.htm#Contents   
+
+66 The CEI is constructed using 20 climate variables, including temperature, heat/cold waves, rainfall and wet/dry days.  
+
+67 IRRI modelling commissioned for the preparation of the Thai Rice Project.  
+
+68 Duangmanee K. et al (2021), ‘Rice farmers’ need for crop insurance in Nakaosia sub-district in southern Thailand’s Trang province’, Journal of Humanities and Social Sciences Mahasarakham University: https://so03.tci-thaijo.org/index.php/humsujournal/article/view/247054/170230
+
+
+---
+*Chunk pages 21–21*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1764 (sys=94, user=1670), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.10.0 | PAGE 18
+
+crop domestically but it is also a major export, second only to rubber in value. 69 Some alternative crops are even more sensitive to climate change than rice, including sugarcane (and cassava) in upland Thai settings.70 There are also considerable obstacles to crop switching – including insufficient capital and lack of knowledge about production and markets – that would need to be overcome.71 
+
+28. Moreover, climate models are clear that the total volume of precipitation in Thailand is unlikely to decrease (and it may even increase). The projected water scarcity will be created by increasing seasonality and increasing intensity of precipitation events – i.e. by rains being more concentrated in time and less evenly distributed across the year. Longer-term infrastructure solutions, such as more dams and more surface water storage, do, therefore, offer potential solutions to at least some of the projecte d water scarcity. These solutions are outside of the scope of the Thai Rice Project (see Table 14) and are a longer-term proposition, but they do suggest that the rice sector can and will continue to play a prominent role in Thailand. Given the projected 30% increase in global rice demand by 2050 and the limited scope available for other rice-producing countries to generate a rice surplus, Thailand is well positioned, if climate change challenges are addressed, to continue to play a critical role in ensuring global rice supply. 72 This is particularly important in the current context of rising global food prices and wheat shortages,73 and given that rice is consumed on a regular basis by more than half the world’s population74 and accounts for 19% of global calorie consumption.75
+
+## GHG Emissions from Rice Farming
+
+29. Globally, rice is the third-largest crop-type in terms of area harvested, after wheat and maize. 76 Rice production accounts for approximately 2.5% of total anthropogenic GHG emissions and 10% of agricultural emissions.77 The rice sector generates ~30% of global agricultural methane emissions and ~11% of global agricultural nitrous oxide emissions,78 and the overall sectoral emissions footprint is, at a global level, comparable to that of aviation, shipping or deforestation.79
+
+30. Despite its significance, the rice sector is often overlooked in GHG mitigation assessments80, even though it is almost unique – even in comparison with other land-use81 and agricultural82 sectors – in its potential to offer immediate83, low-cost84, multi-gas85 abatement opportunities that can simultaneously serve to 
+
+69 Pongsrihadulchai, A. (2018), Thailand’s Rice Industry and Current Policies Towards High Value Rice Products, Food and Fertilizer Technology Centre for the Asian and Pacific Region: https://ap.fftc.org.tw/article/1297  
+70 Yoshida et al (2018), ‘Weather-induced economic damages of upland crops and the impact on farmer household income in Northeast Thailand’, Paddy and Water Environment, 17: https://kukr.lib.ku.ac.th/kukr_es/kukr/search_detail/result/394185    
+71 Meesungnoen N. et al (2019), ‘Factors affecting decision making on sugarcane cultivation of farmers in Khao suan Kwang district, Khonkaen province’, Khon Kaen Agriculture Journal, 47: https://www.cabdirect.org/cabdirect/abstract/20193194120  
+72 Yuan S. et al (2022), ‘Southeast Asia must narrow down the yield gap to continue to be a major rice bowl’, Nature Food, 3: https://www.nature.com/article/s43016-022-00477-z.pdf  
+73 World Bank (2022), Food Security Update – August 2022: https://thedocs.worldbank.org/en/doc/b5de315c82b1a3bb32bf30057aad9b74-0320012022/original/Food-Security-Update-LXVIII-Aug-11-2022.pdf  
+74 Simkhada K. and Thapa R. (2022), ‘Rice blast: a major threat to rice production and its various management techniques’, Turkish Journal of Agriculture – Food Science and Technology, 10: http://agrifoodscience.com/index.php/TURJAF/article/download/4548/2375/37888  
+75 Pame A. et al (2023), ‘Improving the sustainability of rice cultivation in
+
+
+---
+*Chunk pages 22–22*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1090 (sys=94, user=996), max_out=1024, ctx=8192
+---
+
+# B GREEN CLIMATE FUND FUNDING PROPOSAL V.10.0 | PAGE 19
+
+## 31. The Global Methane Pledge (GMP), launched in November 2021, aims to catalyse action to reduce methane emissions. Led by the USA and the EU, the 150 GMP signatories have agreed to take voluntary actions to collectively reduce global methane emissions by at least 30% from 2020 levels by 2030. The introduction of the GMP Food and Agriculture Pathway in November 2022 emphasises the important mitigation role to be played by livestock and rice production. Thailand is not currently a GMP signatory, but its policy priorities are well aligned with the initiative (see Section B.1.3). The ambitious mitigation measures Thailand proposes to implement, with GCF support, in its rice sector (see Section B.3.2) could play a valuable role in inspiring GMP signatory countries and informing their mitigation strategies.
+
+## 32. Agriculture accounts for approximately 15% of Thailand’s total GHG emissions and is the second-largest emitting sector after the energy sector. According to the most recent Biennial Update Report (BUR) (2022), rice cultivation produced 27 MtCO2eq of methane emissions, which accounts for 51% of total GHG emissions in the agriculture sector, or about 8% of Thailand’s total GHG emissions (see Error! Reference source not found.). Thailand is the world’s fourth-largest rice sector emitter and accounts for 7% of global rice sector methane emissions.
+
+## Figure 7: GHG Emissions in the Thai Agriculture Sector
+
+## 33. In irrigated rice production, which is the predominant practice in the Central Plains of Thailand, flooding of paddy fields leads to significant emissions of methane. The principal vectors underlying methane emissions are methanogenic bacteria. These bacteria perform well under anaerobic conditions and are
+
+---
+
+**References:**
+
+86 Khatri-Chhetric A. et al (2022), ‘Greenhouse gas mitigation co-benefits across the global agricultural development programmes’, Global Environmental Change, 76: https://www.sciencedirect.com/science/article/pii/S0959378022001248/pdfft?isDTMRedir=true&download=true  
+87 System of Rice Intensification (SRI): https://www.sri-2030.org/  
+88 IPCC (2023), Synthesis Report of the IPCC Sixth Assessment Report: https://report.ipcc.ch/ar6syr/pdf/IPCC_AR6_SYR_LongerReport.pdf  
+89 https://www.globalmethanepledge.org/  
+90 US Department of State (November 2022), Global Methane Pledge: From Moment to Momentum: https://www.state.gov/global-methane-pledge-from-moment-to-momentum/  
+91 Office of Natural Resources and Environmental Policy and Planning (2022), Fourth Biennial Update Report – Thailand: https://unfccc.int/sites/default/files/resource/Thailand_BUR4_final_28122022.pdf?download  
+92 FAOSTAT (2020), Rice Cultivation: https://www.fao.org/faostat/en/#data/GR  
+93 Office of Natural Resources and Environmental Policy and Planning (2020), Third Biennial Update Report – Thailand: https://unfccc.int/sites/default/files/resource/BUR3_Thailand_251220%20.pdf  
+94 World Resources Institute (2014), Wetting and Drying: Reducing Greenhouse Gas Emissions and Saving Water from Rice Production: http://www.wri.org/publication/wetting-and-drying-reducing-greenhouse-gas-emissions-and-saving-water-rice-production  
+95 Epule T. (2011), ‘Methane emissions from paddy rice fields: strategies towards achieving a win-win sustainability scenario between rice production and methane emission reduction’, Journal of Sustainable Development, 4: http://www.ccsenet.org/journal/index.php/jsd/article/download/12204/9099
+
+
+---
+*Chunk pages 23–23*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1613 (sys=94, user=1519), max_out=1024, ctx=8192
+---
+
+# [Page 1]
+
+## GREEN CLIMATE FUND FUNDING PROPOSAL V.10.0 | PAGE 20
+
+responsible for decomposing organic carbon and transforming it into methane through the process of methanogenesis.96 Methane is vertically transported to the atmosphere through three principal pathways: (i) diffusion of dissolved methane, (ii) the emergence of bubbles triggered by soil fauna and crop management procedures, and (iii) plant transport by diffusion into the roots and conversion to gaseous methane in the cortex and aerenchyma, with release into the atmosphere via plant micropores.97 The CH4 emissions are exacerbated by established farming practices such as continuous irrigation and the addition of organic manure.
+
+34. Besides CH4, rice cultivation also emits nitrous oxide (N2O). N2O is emitted both by the soil and the rice plant, with the principal determinants of emissions being the nitrogen fertilizer application rate and the water level.98
+
+35. Finally, open field burning of rice straw emits carbon dioxide (CO2), CH4 and N2O and other air pollutants (such as particulate matter).99 Rice straw and stubble burning is a widespread practice among Thai farmers to remove waste residue from their fields in preparation for planting the next crop100 and as a pest and disease management measure.101 The practice is not illegal, largely because of its prevalence, its negligible cost (an important consideration for low-income farmers) and the absence of alternatives 102, but the government has implemented a number of initiatives to try to reduce it. 103 Approximately half of rice residue (about 20 million tonnes per year) 104 is burned in the field, leading to the release of 15-22 MtCO2e/year105, as well as aerosol particles that contribute to the brown haze experienced in Thailand and other countries in South East Asia. 106 The smoke from this biomass burning has been shown to be potentially toxic, with probable links to the prevalence of asthma and the frequency of asthma attacks.107
+
+36. Detailed measurement of GHG emissions from rice fields has been conducted by the Rice Department in the context of the Thai Rice Nationally Appropriate Mitigation Action (NAMA) Support Project (NSP, see Section B.1.4). As shown in Figure 8, the overwhelming source of GHG emissions from Thai rice farming is methane associated with submerged rice crops. Fossil fuel CO2 emissions stemming from energy use (water pumping, harvesting machines, etc.) is the second-largest source, followed by emissions from the manufacture of fertilizers and pesticides – which are, notably, greater than the emissions generated by application of fertilizer to the rice plants.
+
+37. For the purpose of developing the Thai Rice Project, a detailed estimate of baseline GHG emissions in the Thai rice sector was commissioned by GIZ and developed by IRRI – see the Feasibility Study (Annex 2a). This estimate uses data collected from Thai government agencies and public data sources, as well as from in-field measurements. It incorporates CH4 emissions from farming, as well as on-site (N2O) and off-site (CO2) emissions from fertilizers, emissions from straw burning (CH4 and N2O) and emissions
+
+96 Bloom A. and Swisher M. (2010), 'Emissions from rice production', in Cleveland C. (2010) (Ed), The Encyclopedia of the Earth: http://www.eoearth.org/view/article/160598  
+97 Wassman R., Pappen H. and Rennenberg H. (1993), 'Methane emissions from rice paddies and possible mitigation strategies', Chemosphere, 26: https://www.sciencedirect.com/science/article/abs/pii/0045653593904222  
+98 Timilsina A. et al (2020), 'Nitrous oxide emissions from paddies: understanding the role of rice plants', Plants, 9: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7076488/pdf/plants-09-00180.pdf   
+99 Note that, according to IPCC good practice guidance, CO2 emissions caused by biomass burning are generally not considered to be net emissions, as they effectively represent the conclusion of the carbon cycle that started with primary production. However, CH4 and N2O emissions from biomass burning are considered. 
+100 Junpen A. et al (2018), 'Emission of air pollutants from rice residue open burning in Thailand, 2018', Atmosphere, 9: https://www.mdpi.com/2073-4433/9/11/44
+
+
+---
+*Chunk pages 24–24*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=617 (sys=94, user=523), max_out=1024, ctx=8192
+---
+
+# B.1.3 Baseline policies and strategies
+
+39. The Thai Rice Project is aligned with Thailand’s international commitments as well as its domestic sectoral policies and standards.
+
+40. Thailand’s 2nd Updated Nationally Determined Contribution (NDC) (2022) sets an ambitious mitigation target of 30% emission reductions against business as usual (BAU) by 2030. The 2nd Updated NDC notes that this target could be increased to 40% with adequate access to international technology development and transfer, financial resources and capacity building support. The 2nd Updated NDC also places greater emphasis on agriculture and natural resources, including: (i) increasing the ability to
+
+---
+
+*Note: Page numbers are preserved as per instructions.*
+
+[Page 21]
+
+
+---
+*Chunk pages 25–25*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1339 (sys=94, user=1245), max_out=1024, ctx=8192
+---
+
+# [Page 1]
+
+## B GREEN CLIMATE FUND FUNDING PROPOSAL V.10.0 | PAGE 22
+
+respond to and manage climate risks in the agricultural sector, and (ii) improving water resources management to increase water security and reduce loss and damage from water-related disasters.
+
+Climate-smart agriculture – including low-methane rice production and site-specific nutrient management – is identified as one of 8 mitigation priorities.
+
+### 41. Thailand’s Updated Long-Term Low Greenhouse Gas Emission Development Strategy (LT-LEDS) (2022)¹¹¹ establishes a target of peak emissions in 2025 and moving to net-zero emissions by 2065. Under business-as-usual (i.e. without policy interventions), the LT-LEDS predicts that Thailand’s GHG emissions will more than double in the period 2005 -2050 and that agriculture will continue to be the second-largest source of emissions, after energy. In the agricultural sector, the LT-LEDS states that measures promoting adaptation or cross-cutting climate benefits (mitigation and adaptation) will be prioritised. Identified agricultural priorities are: manure management, agricultural waste management, improved rice cultivation and practices (including alternate wetting and drying, straw management, dry direct seeded rice and alternative rice varieties – all of which are described below in Section B.1.4), improved water efficiency, promotion of organic fertilizers, increased renewable energy use, energy efficiency of water pumping and agricultural processing, climate insurance and early warning systems for planting management (e.g. crop calendars, water management strategies, etc.). The NAMA Support Project (NSP, described in Section B.1.4) is presented as a showcase initiative. The LD-LEDS also states that the Government of Thailand is seeking GCF support to scale-up climate-smart rice farming.
+
+### 42. The Fourth National Communication to the UNFCCC (2022)¹¹² identifies the rice sector, and particularly drought in the rice sector, as being an adaptation priority. Alternate wetting and drying (AWD) is specifically identified as a priority mitigation approach for reducing CH₄ emissions from the rice sector, as is improved fertilizer management for reducing N₂O emissions. Potential GCF support to climate-smart rice farming is explicitly referenced. In the Fourth BUR to the UNFCCC (2022)¹¹³, Thailand stresses that agriculture and food security are essential to supporting the sustainability of livelihoods and landscapes. Sustainable farming practices that strengthen the resilience of farmers’ livelihoods and reduce GHG emissions are identified as a national priority, and Thailand’s desire to develop a GCF project to support climate-smart rice farming is explicitly referenced. The UNFCCC Technology Needs Assessment (2012)¹¹⁴ identifies rice farming as a priority sector, and drought management and community water resource management as priority adaptation interventions.
+
+### 43. The National Adaptation Plan (NAP) (2018)¹¹⁵ notes that Thailand is the ninth highest-ranked country in the world as measured by the Climate Risk Index (CRI)¹¹⁶. The NAP observes that “Thailand is an agricultural-based society and is highly dependent on natural resources and the environment…Future climate variability will undoubtedly pose challenges to water resource management in the country, leading to more areas with drought risk rather than flood risk.” The NAP states that human rights and gender responsiveness are guiding principles and it identifies specific groups that may experience differentiated impacts, but it does not explicitly address gender-based vulnerabilities. The NAP identifies 6 key adaptation sectors, of which one is water resources management and another is agriculture and food security, and a set of key performance indicators that includes the extent to which farmers are self-reliant when facing climate-induced disasters. The Thai Rice Project directly addresses the following NAP priorities:
+
+#### Key Adaptation Sector: Water Resources Management
+
+- **Guideline 2, Measure 9:** Develop support and compensation systems or insurance schemes for water-related disasters which are effective and easily accessible to the general public.
+
+---
+
+¹¹¹ ONEP (2022), Thailand’s Long-Term Low Greenhouse Gas Emission Development Strategy:  
+https://unfccc.int/sites/default/files/resource/Thailand%20LT-LEDS%20%28Revised%20Version%29_08Nov2022.pdf  
+
+¹¹² Office of Natural Resources and Environmental Policy and Planning (2022), Fourth National Communication to the UNFCCC:  
+https://unfccc.int/sites/default/files/resource/Thailand%20NC4_22122022.pdf?download  
+
+¹¹³ Office of Natural Resources and Environmental Policy and Planning (2022), Fourth Biennial Update Report – Thailand:  
+https://unfccc.int/sites/default/files/resource/Thailand
+
+
+---
+*Chunk pages 26–26*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1194 (sys=94, user=1100), max_out=1024, ctx=8192
+---
+
+# [Page 1]
+
+## GREEN CLIMATE FUND FUNDING PROPOSAL V.10.0 | PAGE 23
+
+### Key Adaptation Sector: Agriculture and Food Security
+
+- **Guideline 1, Measure 2**: Develop appropriate insurance schemes or risk insurance systems to cover climate change impacts in the agricultural sector to enhance farmers’ self-reliance in basic risk management, such as facilitating access to financial resources and markets.
+- **Guideline 1, Measure 4**: Encourage adjustment in agricultural patterns in response to the changing climate: e.g. adjusting crop calendars to minimise damage from floods and droughts, and growing crops that need less water in the dry season.
+- **Guideline 1, Measure 5**: Promote the improvement of crop / livestock varieties to accommodate the changes in climatic conditions, and support farmers’ access to these varieties; these include crop varieties that are resilient to heat and drought, flood, diseases and pests, and salinity in soil and water.
+- **Guideline 1, Measure 8**: Support network building for climate change adaptation in the agricultural sector to enable cooperation on early warnings, climate risk assessments and exchanges of knowledge, technology, agricultural innovation, with linkages to the local context, by making community the centre of knowledge transfer and by continuously strengthening capacities of related stakeholders, including academia, government agencies, local private companies, and small-scale farmers.
+- **Guideline 1, Measure 9**: Enhance farmers’ awareness and knowledge on climate change impacts on agriculture and strengthen their adaptive and climate risk management capacities by compiling information and knowledge from academic research as well as local wisdom related to climate change impacts and adaptation in the agricultural sector, and disseminating it to relevant stakeholders and the general public to enhance awareness; and by promoting network building by types of agricultural practices to encourage effective exchanges of experiences on risk management and responses to climate change.
+
+### Guideline 2, Measure 2
+
+Develop and improve water resources management in irrigated zones in flood-risk and drought-risk areas to be more effective, by planning water resources management for agriculture together with other sectors.
+
+---
+
+## Thailand’s STAR117 allocation under the eighth Global Environment Facility (GEF) funding cycle (GEF-8, 2022-2026)
+
+Thailand’s STAR117 allocation under the eighth Global Environment Facility (GEF) funding cycle (GEF-8, 2022-2026) is US$ 19.1 million, the bulk of which (US$ 11.6 million or 61%) is associated with the biodiversity focal area. A further US$ 5.8 million is allocated to climate change mitigation and US$ 1.7 million to land degradation.
+
+An important GEF-funded baseline project, Inclusive Sustainable Rice Landscapes in Thailand (ISRL-T), implemented by the United Nations Environment Programme (UNEP) with GIZ as an Executing Entity, was approved in the preceding funding cycle (GEF-7) and recently commenced operations. (Please refer to Section B.1.5 for further details). The Thai government is not planning any rice projects under GEF-8.
+
+---
+
+## Climate Change Master Plan
+
+The Thai Ministry of Natural Resources and Environment (MoNRE) has defined Thailand’s long-term climate change strategy in its Climate Change Master Plan (2015-2050). The Master Plan is a long-term policy framework focusing on climate mitigation, adaptation and capacity building that informs the development of government agencies’ climate action plans and budgets.
+
+Noting that the number of hot days (defined as having temperatures higher than 33°C) is expected to increase by 2-3 weeks per year, and the number of cold days (< 15°C) will decrease by 2-3 weeks per year, with associated changes in precipitation and evapo-transpiration, the Master Plan gives prominence to agricultural sector adaptation approaches, including forecasting and early warning technologies, drought and flood management, plant breeding and precision farming.
+
+---
+
+## Carbon Markets
+
+The Master Plan also identifies carbon markets as a potential instrument for reducing GHG emissions in the private sector. Accordingly, the Thailand Voluntary Emissions Trading Scheme (Thailand V-ETS) and Thailand Verified Emission Reduction Scheme (T-VER) were established in 2015.
+
+- The Thailand V-ETS is administered by the Thailand Greenhouse Gas Management Organisation (TGO), an autonomous government institution under MoNRE.
+- Phase 1 of the Thailand V-ETS (2015-2017) – involving approximately 40 industrial facilities – was intended to pilot a Measurement, Reporting and Verification (MRV) framework for the ETS, develop sector-specific MRV guidelines, and design certain ETS features such as cap-setting and allowance allocation.
+- Phase 2 (2018-2020) – involving approximately 30 industrial facilities – focused on familiar
+
+
+---
+*Chunk pages 27–27*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1499 (sys=94, user=1405), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.10.0 | PAGE 24
+
+## T-VER Scheme
+
+The T-VER Scheme is a voluntary, domestic GHG crediting mechanism administered by TGO that covers CO2, CH4 and N2O emissions. An associated scheme, Premium T-VER, was introduced in 2022 to emphasise sustainable development benefits alongside GHG reductions and to align with the international Core Carbon Principles (CCPs) developed by the Integrity Council for the Voluntary Carbon Market.
+
+The T-VER / Premium T-VER project development cycle is similar to that of the Clean Development Mechanism (CDM) – development of a project design document (PDD), project approval by a designated national authority, third-party verification, etc. – and most GHG emission reduction methodologies are based on those approved by the CDM. Like the CDM, there is a 'programmatic' modality – Component Project Activities (CPAs) – that permits a large number of small-scale mitigation interventions to be aggregated together as one project.
+
+However, T-VERs can only be traded domestically – including through a new carbon credit exchange, FTIX, that opened in September 2022. Through its Thailand Carbon Offsetting Programme (T-COP), TGO has promoted the use of T-VERs in corporate social responsibility (CSR) initiatives.
+
+T-VER prices vary across project-types, with solar photovoltaic (PV) and hydro-power T-VERs, for example, trading at approximately 120 baht/tCO2e (~ Euro 3.24/tCO2e) and waste heat recovery T-VERs at approximately 40 baht/tCO2e (~ Euro 1.08/tCO2e).
+
+## Scope and Limitations
+
+The Scheme is currently limited in size and scope, particularly in relation to agriculture. Of the 246 registered projects, three-quarters are renewable energy or energy efficiency initiatives, with a further 12% focused on waste management. Only 2 projects are agricultural – fertilizer management on agricultural land and fertilizer management in fruit orchards – and they account for considerably less than 1% of the 6.8 million tCO2e that the T-VER Scheme is expected to deliver annually (according to the approved PDDs). To date, 205 projects have been issued a total of 8.8 million T-VERs, none of them from the agriculture sector.
+
+An alternate wetting and drying (AWD – see below) methodology is, however, currently being developed, partly informed by CDM methodology AMS-III.AU. With appropriate market support measures – technical assistance, awareness-raising, mobilisation of carbon buyers, etc. – in place, TGO estimates that the T-VER Scheme could potentially supply 27.1 million T-VERs by 2030.
+
+## National Strategy
+
+The National Strategy (2018-2037) is the core development strategy of Thailand. It states that "impacts of climate change have been anticipated to intensify with regard to variability, frequency and coverage. Such impacts will inevitably threaten lives, damage property and critical infrastructure, and affect agricultural production and water security."
+
+The Thai Rice Project addresses 3 of the 6 constituent strategies under the National Strategy: the National Strategy on Competitiveness Enhancement, the National Strategy on Developing and Strengthening Human Capital, and the National Strategy on Eco-Friendly Development and Growth.
+
+The 13th National Economic and Social Development Plan (NESDP, 2023-2028) is built around 5 strategic pillars, one of which is 'environmental conservation to deal with climate change'. The NESDP reaffirms the government's commitment to the NDC and identifies climate change risks as threats to national efforts to achieve poverty reduction and the Sustainable Development Goals (SDGs).
+
+The Bio-Circular-Green (BCG) Economy is being promoted by the Thai government as a model to propel economic growth, with a focus on 4 strategic sectors: (1) agriculture and
+
+---
+
+**Note:** The text appears to be incomplete or truncated at this point. The document continues with additional content that was not included in the extracted PDF chunk.
+
+
+---
+*Chunk pages 28–28*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1398 (sys=94, user=1304), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.10.0 | PAGE 25
+
+## 48. The Thai Rice Project is fully aligned with the draft Ministry of Agriculture and Cooperatives (MoAC) Climate Change Strategic Plan for the Agricultural Sector (2023 -2027), which contains 5 pillars relating to: adaptation (primarily, reducing yield losses due to climate change), mitigation (including introduction of carbon finance to the agricultural sector), knowledge generation and management (including digital tools), farmers and communities, and operationalising the Strategic Plan (including strengthening links between MoAC and other government institutions). The Strategic Plan is explicitly linked to the 2nd Updated NDC. The project is also aligned with MoAC’s Rice Department (RD) Policy in promoting economies of scale and sustainability in rice farming, such as, for instance, through the application of Thai Agricultural Standard (TAS) certification (see below). The Thai Rice Strategy (2020-2024) aims to position Thailand as the world leader in the production and marketing of quality rice and rice products. The strategy is divided into four sub-strategies, covering: the international market, the domestic market, rice production, and processed commodities and innovations.
+
+The Office of National Water Resources (ONWR) Master Plan on Water Management (2018 -2037) specifically identifies climate change as a strategic challenge and proposes a set of adaptation actions, including increasing water use efficiency in irrigated areas and constructing over 541,000 small dams to address future droughts.
+
+## 49. The Sustainable Rice Platform (SRP) Standard for Sustainable Rice Cultivation is the world’s first voluntary sustainability standard for rice. The SRP Standard, together with its Assurance Scheme and Performance Indicators, enable adoption of climate-smart practices by smallholder farmers, verification of these practices in order to make public sustainability claims in the market, and monitoring of environmental, economic and social impacts. Diverse stakeholders, including businesses and civil society organisations (CSOs), are incentivising 150,000 smallholders in 20 countries to shift to sustainable production using SRP, with rice marked as 'SRP-Verified' on packaging sold to consumers through retail outlets in Europe beginning in 2021. The Standard has been successfully piloted in Thailand by GIZ in partnership with MoAC’s Rice Department, where field trials have been conducted, replicated and expanded to generate data on productivity, quality, input costs and gross margins. Farmers’ profits have, on average, increased by 20% relative to BAU due to higher prices for better quality product, improved input efficiency, and reduced losses from pests and diseases.
+
+## 50. The Sustainable Agriculture Initiative (SAI) Platform Farm Sustainability Assessment (FSA) enables food and drink businesses to assess, improve and validate on-farm sustainability in their supply chains. The FSA is used for more than 70 agricultural crops (including rice) in over 40 countries, encompassing approximately 200,000 farms. The FSA has been successfully piloted in Thailand by GIZ in partnership with private companies. Documented and verified results include successfully helping 19,000 farmers increase their net income by more than 20% and reduce their GHG emissions from rice farming by 21%.
+
+## 51. The SRP Standard and the SAI Platform FSA apply to a wide range of rice cultivation systems, and therefore offer limited specificity and guidance for the selection and application of best practices that are most suitable in local contexts. In order to further promote scaling-up and adoption of sustainable practices by Thai farmers and businesses, the National Bureau of Agricultural Commodity and Food Standards (ACFS), under MoAC, has therefore developed a Thai Agricultural Standard (TAS) for
+
+---
+
+**Note:** The text appears to be incomplete or truncated at this point. The final part of the paragraph seems to have been cut off after "for". The rest of the content is missing from the extracted text.
+
+---
+
+
+---
+*Chunk pages 29–29*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1107 (sys=94, user=1013), max_out=1024, ctx=8192
+---
+
+# [Page 1]
+
+## GREEN CLIMATE FUND FUNDING PROPOSAL V.10.0 | PAGE 26
+
+Sustainable Rice that is broadly equivalent to these international standards.136 The TAS encompasses a range of sustainability elements, including water use, fertilizer use, rice straw / stubble management, farmer health and safety, and labour rights.
+
+52. While neither the SRP nor the SAI Platform FSA nor the TAS is explicitly framed as a climate change tool, all offer substantive climate mitigation and adaptation benefits. Furthermore, the Thai government is exploring ways to use the TAS as a means of screening and/or incentivising climate-smart investment.
+
+### Table 2: Relationship Between the SRP Standard and the TAS
+
+| Standard Objective | Background Scope | Differences |
+|--------------------|------------------|-------------|
+| Sustainable Rice Platform (SRP) | To provide a normative framework that can serve as a basis for supporting claims to sustainability performance in rice supply chains. Originally co-convened in 2011 by IRRI, UNEP and GIZ, the SRP is now an independent membership association.137 The association 'owns' the SRP Standard under a Creative Commons Licence – it is, effectively, a public good. The association 'owns' the Assurance Scheme, which generates revenue for the association. The SRP Standard applies to farm-level processes in rice production, including post-harvest processes under the farmer's control. The Standard (Version 2, developed in 2019) covers 41 requirements structured under 8 major themes: |
+|                    | Farm management (crop calendar, record-keeping, etc.) | Pre-planting (heavy metals, soil salinity, invasive species, levelling, etc.) |
+|                    | Water use (irrigation systems, water quality, groundwater extraction, etc.) | Nutrient management (fertilizer choices and application) |
+|                    | Integrated pest management (weeds, insects, diseases, birds, etc.) | Harvest and post-harvest (timing, equipment, storage, stubble and straw, etc.) |
+|                    | Health and safety (tool use, training, protective equipment, pesticide use and disposal, etc.) | Labour rights (child and forced labour, hazardous work, discrimination, etc.) |
+| Thai Agricultural Standard (TAS) for Sustainable Rice | To support and certify sustainability performance. The TAS also represents a tool for scaling through state programmes | The TAS is a public voluntary standard overseen by the National Bureau of Agricultural Commodity and Food Standards (ACFS). The TAS includes all of the requirements in the SRP Standard, plus a number of additional requirements relating to Thai regulatory priorities – e.g., where national laws exist, they are specified (for instance, food safety and heavy metals regulations). |
+
+136 TAS 4408-2022: https://www.acfs.go.th/files/files/commodity-standard/20220602160717_661890.pdf  
+137 In February 2020, the SRP was incorporated under German law as a member-based international association (eingetragener Verein, e.V.).
+
+
+---
+*Chunk pages 30–30*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1377 (sys=94, user=1283), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.10.0 | PAGE 27
+
+## and budgets,  
+and it could play  
+potential roles in  
+(e.g.) national  
+climate planning  
+and reporting,  
+the Thai carbon  
+market, etc.  
+
+The planned  
+certification scheme  
+for TAS is not  
+designed to  
+generate revenue;  
+rather, public sector  
+support is expected  
+to achieve the  
+lowest cost for  
+farmers to certify.  
+
+The TAS also extends to  
+processing of rice to  
+sustainable rice products,  
+whereas the SRP stops at the  
+farm gate.  
+
+GIZ is currently supporting  
+Thai actors to ‘benchmark’ the  
+TAS against the SRP so that  
+they can be recognised as  
+‘equivalent’. This will benefit  
+both standards: the TAS can  
+claim alignment with an  
+international standard and the  
+SRP can claim success in  
+scaling at national level.  
+
+ACFS has developed a  
+similar sustainability  
+standard for shrimp; the  
+Rice TAS therefore  
+forms part of a broader  
+public sector vision and  
+commitment to driving  
+sustainable production  
+and consumption.  
+
+## 53. Internationally, there is demand for sustainable rice from a growing number of international rice sourcing  
+companies, such as Olam and MARS. These buyers require adherence with strict assurance systems  
+to ensure traceability and to credibly distinguish sustainable rice from conventional rice. Thai rice  sector  
+actors and government institutions are committed to maintaining Thailand’s current rice market share and  
+recognise that sustainability-focused agricultural standards can facilitate access to premium markets.  
+
+## 54. The Thai Rice Insurance Scheme (TRIS). A national rice insurance scheme has been implemented in  
+Thailand since 2011. It provides  calamity-based insurance for the main rice season and serves to  
+complement disaster relief assistance provided through the National Disaster Scheme. Under the National  
+Disaster Scheme, rice growers are eligible to receive government compensation if their planted areas for  
+the main season are in a declared calamity area – defined by the occurrence of natural disasters (drought,  
+delayed rainfall, floods, excessive rain, cold weather, etc.) or insect or disease infestations – and there is  
+a verified total loss. However, th e financial support provided through th e relief assistance programme  
+covers only approximately one -third of the average total production cost per farmer. In addition, the  
+compensation is limited to 30 rai (4.8 ha) per household. The Thai Rice Insurance Scheme  provides a  
+supplementary ‘top -up’ payment to farmers using the sa me eligibility criteria as the National Disaster  
+Scheme.  
+
+The TRIS is a public-private partnership (PPP): it is administered by the Thai General Insurance  
+Association (TGIA) on behalf of a pool of 24 insurers that are, in turn, reinsured jointly by 13 reinsurers ,  
+Swiss Re being the largest; it is aimed at rice farmers, who must be registered with the Department of  
+Agricultural Extension (DoAE) of the Ministry of Agriculture and Cooperatives  (MoAC); it receives public  
+subsidies from the Ministry of Finance (MoF)  (see below) ; it is regulated by the Office of Insurance  
+Commission (OIC); and insurance pay-outs are distributed through the state-owned Bank for Agriculture  
+and Agricultural Cooperatives (BAAC).  
+
+## 55. There are two types of rice insurance policy under the TRIS: Basic Insurance Coverage (Tier 1) and Add-  
+on Insurance Coverage (Tier 2). In the 2022 crop year, Tier 1 insurance provides 1,190 baht per rai (5.1  
+Euro/ha) payment in the case of natural disasters and 595 baht per rai (2.6 Euro/ha) in the event of insect  
+or disease infestations. Tier 2 insurance provides an additional 240 baht per rai (1.0 Euro/ha) in the case  
+of natural disasters and 120 baht per rai ( 0.5 Euro/ha) in the case of insect or disease infestation .  
+Together, the disaster relief assistance programme and Tier 1 insurance cover approximately 63% of the  
+average total production cost per farmer.  
+
+• The insurance premium for Tier 1, before value-added tax (VAT) and stamp revenue, ranges from  
+99 to 218 baht per rai (0.4-0.9 Euro/ha). The insurance premium for BAAC loan clients is fixed at  
+99 baht per rai  (0.4 Euro/ha), regardless of risk zone. For non-loaned BAAC clients and general  
+farmers, premium rates depend on the location risks of planted areas at the district level.
+
+
+---
+*Chunk pages 31–31*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1136 (sys=94, user=1042), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.10.0 | PAGE 28
+
+## 40% by BAAC). The government subsidies 59.4 baht per rai (0.3 Euro/ha) of the insurance premiums for non-BAAC loaned Tier 1 farmers, accounting for 60% for the premium in low-risk zones, 30% in medium-risk zones and 27% in high-risk zones.
+
+• For Tier 2 add-on insurance coverage, the premium rates are not subsidised and also vary by risk area: 27 baht per rai (0.1 Euro/ha) for low-risk zones, 60 baht per rai (0.3 Euro/ha) for medium-risk zones and 110 baht per rai (0.5 Euro/ha) for high-risk zones.
+
+## 56. In 2021, 3.7 million rice farmers were insured under the TRIS – over 99% of them under Tier 1 only and 80% of them BAAC clients. This represents a substantial increase compared with its commencement year (60,000 farmers in 2011) and 1.9 million in 2018. Penetration of the TRIS among rice farmers has now reached approximately 72%. The total insured rice planting area is 43.5 million rai (7 million ha). In 2020, the scheme received premium payments of approximately 3.6 billion baht (Euro 97.3 million) and paid out indemnities of 1.5 billion baht (Euro 40.5 million), representing a loss ratio – the ratio of claims to premiums – of 42%. The loss ratio does, however, vary from year to year: in 2019 it exceeded 200%, as a high proportion of the insured area was affected by drought and flood.
+
+## 57. The TRIS has achieved considerable successes over its decade of implementation. However, it does face a number of challenges (Table 3). In particular: (i) the scheme is expensive – accounting for 6% of the government’s total annual budget 140 – and would benefit from efficiency savings; (ii) continued stakeholder engagement – notably that of farmers and insurers – needs to be sustained; (iii) due to the risk of adverse selection – farmers who need top-up insurance (Tier 2) are generally in high-risk zones – local insurers have limited appetite to expand the scheme; and (iv) climate change is introducing new uncertainties – weather extremes, periodicities and damage impacts – that need to be accommodated. More sophisticated approaches to assessing and pricing risk could positively contribute to each of these challenges.
+
+### Table 3: SWOT Assessment of the Thai Rice Insurance Scheme
+
+#### Strengths
+
+• Strong PPP collaboration  
+• 11-year track record of growth and increasing inclusivity  
+• Covers a broad range of natural hazards  
+• High rice farmer participation  
+
+#### Weaknesses
+
+• Delays in the declaration of calamity areas  
+• Cases of non-declaration of calamity areas (basis risk)  
+• Binary pay-out nature of the insurance (no partial pay-outs according to partial losses)  
+• Insurance coverage falls short of farmers’ production costs – but top-up (Tier 2) insurance is expensive for farmers and offers adverse selection risk for insurers  
+• Tier 1 covers only the wet season crop – despite the fact that: (i) for irrigated farmers in the Central Plains, this covers only half of their usual cropping cycle; and (ii) drought, pests and disease are often a greater problem for off-season rice-growing  
+• Loss assessment is largely qualitative (depends on the judgement of DoAE officers), pricing is not properly risk-based and use of digital technologies is limited  
+• Delays in pay-outs (insurance companies rely upon DoAE loss reports, which are manually performed and take 3-6 months to be published on the DoAE-TGIA linked IT system)  
+• Limited awareness / understanding of farmers – the high participation rate is primarily attributable to automatic Tier 1 enrolment of farmers in low-risk zones. (Tier 2 enrolment is not automatic or subsidised and is hence considerably lower)  
+• Heavy reliance upon government and BAAC subsidies  
+
+140 Ministry of Finance Open Data Portal: https://dataservices.mof.go.th/menu4?id=3 and Office of the Prime Minister (2022), Draft Bill on Annual Budget Expenditures for Fiscal Year 2022: https://bbstore.bb.go.th/cms/1632281470_9843.pdf
+
+
+---
+*Chunk pages 32–32*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1200 (sys=94, user=1106), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.10.0 | PAGE 29
+
+## Opportunities
+
+- Expanded use of digital technologies – geospatial data, mobile apps, etc.
+- Improved risk management could bring down costs, better target support to farmers and strengthen stakeholder participation
+
+## Threats
+
+- Climate change is introducing new weather extremes, periodicities and damage impacts
+- COVID-19 has financially weakened insurers and diminished their interest in participating
+- High fiscal burden of the scheme and the constraints imposed by the Fiscal Responsibility Act and the Public Debt Management Act
+- Limited awareness / understanding of farmers’ constraints and hence opportunities to redesign / grow the scheme
+
+## Challenges
+
+58. Given the challenges faced by the TRIS – which are widely recognised by all the key stakeholders, including the government, TGIA members, BAAC and rice farmers – there has been considerable discussion (and detailed analysis) on how the current indemnity insurance scheme can be improved. Solutions have focused on: (i) technological innovation, including better use of ‘big data’, remote sensing and crop modelling; (ii) end-user mobile apps to accelerate loss assessment processes and pay-outs, reduce fraud risk and improve communications with farmers; and (iii) transitioning away from, or augmenting, the existing scheme with alternative insurance models, including index-based insurance.
+
+59. The government’s action plan to reform the TRIS is outlined in the 13th NESDP (2023-2028), which notes that the “crop insurance system has not yet encouraged farmers to voluntarily purchase insurance.” Under Goal 11141 of the NESDP, Indicator 3.4 refers to expanding the number of farmers using the TRIS; Indicator 2.1 refers to the need for more spatially-refined assessment of climate risks. Strategy 9 of Goal 1142 is devoted to the use of digital technologies in agriculture, with Sub-Strategy 9.1 focused on promoting the use of information systems for natural resources (water, soils, etc.), agriculture (optimised growing techniques, crop prices, farmer registration, insurance, etc.) and ‘joined up’ data sharing and warehousing, and Sub-Strategy 9.2 on the development of platforms to facilitate data access and to support farmers’ and government agencies’ capacity building and the provision of extension services. An inter-ministerial Committee on Disaster Relief Improvement (CDRI) has been established to oversee the TRIS reform action plan.
+
+60. A number of parallel initiatives have generated useful insights to support the work of the CRDI. For example, TGIA has been running a pilot project in conjunction with Thaicom (a private-sector satellite operator) to explore design options for alternative insurance products; the Geo-Informatics and Space Technology Development Agency (GISTDA), in conjunction with the Rice Department, has undertaken a series of studies to assess the data quality and accuracy of satellite data sources (e.g. the correlation between the normalised difference vegetation index (NDVI) and rice yield and rice damage data); the OIC has undertaken an assessment of index-based insurance and has concluded that such insurance is permissible without the need for additional regulations provided basis risk is suitably managed; GIZ has explored technical options for extending insurance to the off-season; BAAC has developed a business plan to improve the internal processes and outward-facing customer communication aspects of the TRIS; and the Remote Sensing-based Information and Insurance for Crops in Emerging Economies (RIICE) project, a collaboration between the Swiss Agency for Development and Cooperation, GIZ, IRRI, Sarmap (a Swiss-based remote sensing company) and Allianz Re and subsequently Swiss Re, has undertaken a systematic analysis of options to improve the efficiency and transparency of the TRIS, including index-based scheme designs and remote sensing technology options, accompanied by national stakeholder consultations, capacity building and field trials.
+
+## Notes
+
+141 Goal 11: Thailand can reduce risks and impacts from natural disasters and climate change.  
+142 Goal 1: Thailand is a leading country in high-value agricultural and processed agricultural products.  
+143 GIZ (2019), Pre-Feasibility Study on Crop Insurance for Off-Season Rice in Thailand  
+144 See, for example, Kasetsart University (2018), The Possibility of Implementing the Area Yield Index Rice Insurance Product in Thailand: https://ageconsearch.umn.edu/nanna/record/276157/files/scc-76-isriya-apr7.pdf?withWatermark=0&version=1&registerDownload=1; Allianz Re (2016), Area Modelled Yield Index Insurance Pilot Project: https://www.asean-agrifood.org/?wpfb_dl=129
+
+
+---
+*Chunk pages 33–33*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=971 (sys=94, user=877), max_out=1024, ctx=8192
+---
+
+# B.1.4 Foundation projects  
+
+62. The Thai Rice Project considers the experiences and lessons learned of other projects in the fields of climate change, agriculture and water management.  
+• Baseline projects are defined as projects or programmes that are currently underway (or that have recently ended or will commence imminently) and that address areas of relevance to the Thai Rice Project. As the name suggests, baseline projects form part of the baseline – they exist irrespective of GCF involvement – but they share objectives in common with the Thai Rice Project, they have mobilised stakeholder engagement, and they are generating valuable data and lessons -learned.  
+These projects serve to complement the Thai Rice Project by targeting specific barriers (see Section B.2.3).  
+• Foundation projects are a sub-set of GIZ baseline projects that provide the bedrock upon which the Thai Rice Project is built: they provide granular understanding of sectoral and community needs, extensive stakeholder networks and relationships, ‘real world’ applications of climate-smart agricultural technologies and approaches, and knowledge generated and lessons -learned from project implementation. The 4 foundation projects are: the Thai Rice NAMA Support Project (NSP), the Market-Oriented Smallholder Value Chains (MSVC) project, the Thai-German Climate Programme – Agriculture (TGCP) and the Mainstreaming Sustainable Rice (MSR) project.  
+
+63. Thai Rice NAMA Support Project (NSP)  
+
+Project title: Thai Rice NAMA Support Project (NSP)  
+Implementing agency / funder: GIZ / NAMA Facility  
+Duration: 2018 – 2023  
+Budget: Euro 14.9 million  
+
+The Thai Rice NAMA Support Project (NSP)145 consists of three core components:  
+• Component 1: enable farmers to implement low-emission rice farming.  
+• Component 2: support private sector service providers to supply mitigation services to farmers.  
+• Component 3: policy formulation and support measures at the national level to promote low-emission rice production, including support to the TAS  
+
+145 https://www.nama-facility.org/projects/thailand-thai-rice-nama/  
+
+# Table 4: Potential Benefits of an Index-Based Rice Insurance Scheme  
+
+| TRIS Area | Modelled Yield | Index Insurance |
+|-----------|----------------|-----------------|
+| Historical data | Tied to National Disaster Scheme data | Uncertainties Generated at district level |
+| Pricing | High loadings for uncertainty due to variable assessment | Greater confidence in data reduces uncertainty loadings |
+| Adverse selection | Once a calamity is declared, poorly-managed farms may be over-paid; high-risk farms are more likely to apply for insurance cover | District outcome ‘de-selects’ farms with poor management; pay-outs are linked to the index, which is outside of individual farmers’ control |
+| Basis risk | Binary (if no ‘calamity declaration’ is issued by the government) | Difference between district yield and farm performance |
+| Loss assessment | Extended time and costs incurred; subjective | Fast, remote and mathematical; no subjectivity |
+| Claim payment | Typically slow due to delays in calamity declaration, loss assessment and scheme administration | Within ~14 days of index closing and data checking |
+| Human resource | Manual assessment, with accompanying human errors; requires extensive DoAE staff time | Combination of manual and digital assessment, with reduced scope for human error; more streamlined, standardised and transparent loss assessment |
+
+# Index-based insurance  
+
+61. Index-based insurance – that is, insurance that offers pay-outs linked to an easily-measured index (e.g. rice yield) that is closely correlated with crop damage, in contrast to indemnity-based insurance that offers pay-outs linked to assessment of actual losses – is attracting considerable stakeholder interest in Thailand, as it is seen as an effective solution to a number of key weaknesses in the current TRIS design.  
+
+# B.1.4 Foundation projects  
+
+62. The Thai Rice Project considers the experiences and lessons learned of other projects in the fields of climate change, agriculture and water management.  
+• Baseline projects are defined as projects or programmes that are currently underway (or that have recently ended or will commence imminently) and that address areas of relevance to the Thai Rice Project. As the name suggests, baseline projects form part of the baseline – they exist irrespective of GCF involvement – but they share objectives in common with the Thai Rice Project, they have mobilised stakeholder engagement, and they are generating valuable data and lessons -learned.  
+These projects serve to complement the Thai Rice Project by targeting specific barriers (see Section B.2.3).  
+• Foundation projects are a sub-set of GIZ baseline projects that provide the bedrock upon which the Thai Rice Project is built: they provide granular understanding of sectoral and community needs, extensive stakeholder networks and relationships, ‘real world’ applications of climate-smart agricultural technologies and approaches
+
+
+---
+*Chunk pages 34–34*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1155 (sys=94, user=1061), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.10.0 | PAGE 31
+
+Over its 5-year implementation period (2018-2023), the NSP is targeting GHG emissions of 1.7 MtCO2eq and benefitting 100,000 farmers and 450,000 members of farmer households. Key implementing partners include the Ministry of Natural Resources and Environment (MoNRE) – in particular the Office of Natural Resources and Environmental Policy and Planning (ONEP); the Ministry of Agriculture and Cooperatives (MoAC), including the Rice Department (RD) within MoAC; the International Rice Research Institute (IRRI), which is contributing to the calculation and verification of emission reductions in the field; and the Bank for Agriculture and Agricultural Cooperatives (BAAC), a government-owned agricultural development bank operating under the Ministry of Finance (MoF).
+
+An independent mid-term Evaluation and Learning Exercise (ELE), conducted in November 2021, found that the NSP is performing well with regard to policy formulation, is "highly likely" to achieve its GHG emissions reduction target and is successfully catalysing public sector co-finance. Because of the drought of 2020-2021, COVID-related disruptions and greater-than-expected risk aversion of smallholder rice farmers, the NSP initially fell behind schedule with regard to mitigation services uptake and private sector investment. However, significant momentum was re-established in 2022, with the NSP now having trained over 96,000 farming households and supported low-emission rice cultivation on ~320,000 ha of farmland. It is now expected that the NSP will achieve its GHG emissions reduction target by early-2024.
+
+The government also chose to feature the NSP as a showcase initiative in the updated LT-LEDS and the Fourth National Communication to the UNFCCC, both published in 2022.
+
+## 64. Market-Oriented Smallholder Value Chains (MSVC) project
+
+**Project title:** Market-Oriented Smallholder Value Chains (MSVC)  
+**Implementing agency / funder:** GIZ / German Federal Ministry for Economic Cooperation and Development (BMZ) - develoPPP programme in cooperation with Olam  
+**Duration:** 2018 – 2022  
+**Budget:** Euro 15 million, including Olam and Crop Life International  
+
+The MSVC project was developed as a response to the fact that rice in Thailand is primarily produced in smallholder settings. A low degree of organisation and poor infrastructure mean that farmers occupy a weak position in the value-chain. Farmers lack access to knowledge, farm inputs, machinery and financial services at the same time as complex regulatory and market requirements are emerging that relate to (inter alia) safety, sustainability and traceability.
+
+In a joint effort between GIZ, the Rice Department, Olam and Crop Life International, the MSVC project was formulated to build long-term relationships between rice farmers, processors and retailers so that rice farmers were better integrated into supply chains. Using mega-farms and community rice centres (CRCs) as means of delivering support to, and enhancing the market strength of, rice farmers, the project was built on 5 pillars:
+
+- Improving production and post-harvest practices  
+- Improving financial literacy  
+- Strengthening farmer organisations  
+- Creating long-term business relations  
+- Supporting public-private sector policy dialogue  
+
+An additional, cross-cutting workstream of the MSVC project supported the adoption of the SRP Standard and SAI Platform FSA by supply chain stakeholders.
+
+Approximately 19,000 Thai rice farmers in the North-East benefitted from MSVC support (3,000 more than the initial target); on average, they experienced 20% income increases and were able to reduce GHG emissions by 21%. Over 8,000 farmers received training and technical support on sustainability standard compliance.
+
+---
+
+**Footnotes:**
+
+146 Ambero Consulting (2021), Mid-Term Evaluation and Learning Exercise of the Thai Rice NAMA Support Project: https://www.nama-facility.org/fileadmin/user_upload/publications/documents/ELE_Reports/Thai_Rice_-_ELE/Mid-term_ELE_of_the_Thai_Rice_NSP.pdf   
+147 GIZ (2022), NSP Annual Report 2022.  
+148 ONEP (2022), Thailand’s Long-Term Low Greenhouse Gas Emission Development Strategy: https://unfccc.int/sites/default/files/resource/Thailand%20LT-LEDS%20%28Revised%20Version%29_08Nov2022.pdf; Office of Natural Resources and Environmental Policy and Planning (2022), Fourth
+
+
+---
+*Chunk pages 35–35*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1318 (sys=94, user=1224), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.10.0 | PAGE 32
+
+## 65. Thai-German Climate Programme – Agriculture (TGCP)
+
+**Project title:** Thai-German Climate Programme (TGCP): Agricultural Sector  
+**Implementing agency / funder:** GIZ / German Federal Ministry for the Environment, Nature Conservation, Nuclear Safety and Consumer Protection (BMUV) International Climate Initiative (IKI)  
+**Duration:** 2018 – 2022  
+**Budget:** Euro 2.7 million  
+
+The TGCP – Agriculture supported MoAC / RD to implement climate change policy in the rice sector – including institutional capacity building and the development of the TAS. Over 1,600 extension officers and farmers received training on sustainable rice farming methods and tools. An MRV Working Group, facilitated by the TGCP, was established with the objective of developing a rice MRV system and tools for Thailand. The Working Group consists of specialists from the RD, the Office of Agricultural Economics and the Office of Natural Resources and Environmental Policy and Planning. A business as usual (BAU) / baseline survey for 500 farmers was conducted, as well as measurement and analysis of seven mitigation technology demonstration plots (positive control) and conventional plots (negative control). Daily and seasonal methane emission rates were found to be, on average, 71% lower on the demonstration plots than on the conventional plots, resulting in average emission factors (EFs) of 0.61 on the demonstration plots and 1.33 on conventional plots. The new EFs, together with activity data from the baseline survey, have been used to calculate baseline emissions and emission reductions associated with the Thai Rice Project.
+
+## 66. Mainstreaming Sustainable Rice (MSR) project
+
+**Project title:** Mainstreaming Sustainable Rice: Scaling the Production and Global Marketing of Sustainable Rice  
+**Implementing agency / funder:** GIZ / BMZ-develoPPP programme  
+**Duration:** 2020 – 2023  
+**Budget:** Euro 6 million (Euro 2 million; plus Euro 4 million in-kind from MARS, Ebro Foods, Olam)  
+
+Based in Thailand, this global project – a joint initiative of GIZ, MARS, Ebro Foods and Olam International – aims to strengthen tools and systems to scale-up the production and global marketing of sustainable rice. The project is supporting rice stakeholders to establish national forums to advance action on sustainable rice and to elevate tools such as the SRP Standard (and, in Thailand, its domestic equivalent, the TAS) to meet internationally-credible standards, which will help members increase the value of rice and expand the market for verified rice.
+
+## Climate-Smart Technologies and Practices Supported by the Foundation Projects
+
+### 67. Laser land levelling (LLL)
+
+Laser land levelling is a precision agriculture system for field levelling that is commonly used in Australia, Japan and the USA, and increasingly in India and Viet Nam.149 LLL is a quick and effective means of ensuring that an agricultural field has a table-top flat surface (with a slope between 0-0.2%), which means that irrigation water reaches every part of the field with minimal waste from run-off or waterlogging. Application of LLL can increase water use efficiency by 12-40% and fertilizer use efficiency by 10-13%150,151; moreover, because the crop stand is more uniform, post-harvest crop losses can be reduced by 2-5%.152 Laser land levelling considerably lowers irrigation time for rice by 47-69 hours per hectare per season and can be deployed in conjunction with alternate wetting and drying (AWD) to maximise water savings.153 The laser levelling system requires the use of a tractor with an external hydraulic system, a drag bucket and a set of laser system components that include a laser transmitter, a receiver, a control box and a hydraulic valve. A 60 horse-power (HP) four-wheel drive tractor (4WT) can pull a 2m wide x 1m depth drag bucket and carry an average of 1.5 m³ of soil, levelling approximately 1.5
+
+---
+
+**Footnotes:**
+
+149 IRRI (2019), ‘GHG mitigation in rice: laser land levelling’: https://sites.google.com/a/irri.org/ccac/technologies/laser-land-leveling  
+150 Jat M. et al (2015), ‘Laser-assisted precision land levelling impacts in irrigated intensive production systems of South Asia’, in Lal R. and Stewart B. (eds), Soil-Specific Farming: Precision Agriculture, Taylor & Francis.  
+151 Pame A. et al (2023), ‘Improving the sustainability
+
+
+---
+*Chunk pages 36–36*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1684 (sys=94, user=1590), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.10.0 | PAGE 33
+
+## 68. Alternate wetting and drying (AWD)
+
+AWD is a water-saving technology that farmers can apply to reduce their irrigation water consumption in rice fields – and their methane emissions – without decreasing their yields.
+
+Empirical testing of AWD in the Central Plains of Thailand indicates that AWD reduces total water input by approximately 19% in the wet season and 39% during the dry season compared with continuous flooding.
+
+The high potential for water saving is underlined by other studies, which estimate that between 25-70% of irrigation water can be saved by applying AWD.
+
+A recent meta-analysis confirms that even mild AWD can reduce water use by 23% while fully maintaining rice yields.
+
+## 69. According to the 2019 Refinement to the 2006 IPCC Guidelines for National Greenhouse Gas Inventories
+
+In comparison to continuously flooded irrigated rice during the cropping season, applying a single drainage period as a result of AWD implementation can reduce methane emissions by 29% (i.e. a scaling factor of 0.71).
+
+The reduction can be increased to 45% (scaling factor of 0.55) if AWD implementation results in multiple drainage periods during the cropping season of irrigated rice.
+
+Empirical studies conducted in the Central Plains of Thailand estimate mean methane emissions (averaged over 3 seasons) under a low-emission management regime centred on AWD are 0.43 kg CH4/ha/day, compared with baseline methane emissions from traditional rice farming in the same region of 1.15 kg CH4/ha/day: i.e. methane emissions can be reduced by 63% – with no impact on rice yields – through application of climate-smart water management practices.
+
+Furthermore, the relationship between seasonal water level and methane emissions has been found to be continuous and approximately linear: even relatively small reductions in water level have a tangible inhibitory impact on methane emissions.
+
+## 70. In AWD, irrigation water is applied a few days after the disappearance of the ponded water
+
+Hence, the field is alternately flooded and non-flooded.
+
+The number of days of non-flooded soil between irrigations can vary from 1 to more than 10 days, depending on a number of factors such as soil-type, weather and crop growth stage.
+
+A practical way to implement AWD is by using a 'field water tube' to monitor the water depth in the field.
+
+After irrigation, the water depth will gradually decrease.
+
+When the water level has dropped to about 15cm below the surface of the soil, irrigation should be applied to re-flood the field to a depth of about 5cm.
+
+From one week before to a week after flowering, the field should be kept flooded, topping up to a depth of 5cm as needed.
+
+After flowering, during grain filling and ripening, the water level can be allowed to drop again to 15cm below the soil surface before re-irrigation.
+
+## 71. Site-specific nutrient management (SSNM)
+
+SSNM helps maintain and/or enhance crop yields while saving fertilizer through more efficient use.
+
+It represents an effective adaptation strategy to declining water availability and rising temperatures, potentially deployed in conjunction with drones which can:
+
+(i) identify localised areas for targeted fertilizer application through differences in leaf colour, and
+
+(ii) apply small, geographically-precise amounts of fertilizer while also reducing farm worker exposure to agro-
+
+--- END EXTRACTED TEXT ---
+
+
+---
+*Chunk pages 37–37*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1594 (sys=94, user=1500), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.10.0 | PAGE 34
+
+## Chemicals
+
+163 SSNM is most relevant for rice farming systems where nitrogen fertilizers are currently (over) used.  
+164 Excessive use of chemical fertilizers in the Thai rice sector has polluted surface water and groundwater through seepage.  
+165 SSNM reduces the quantity of N applied, thus reducing total reactive N (NH3, HN4+, NO3, NO2-, NO, N2O) losses to the environment through surface and underground leaching, volatilisation and N2O emissions.  
+Under SSNM, fertilizer is applied in accordance with recommendations from local extension services based on regular soil analysis using Soil Test Kits (STKs) which allow the user to analyse nitrogen (N), phosphorous (P), potassium (K) and pH levels. It can also include the promotion of organic fertilizers which, in Thai rice farming areas, essentially entails the application of animal manure or green manure (derived from sun hemp or mung bean, for example).
+
+## Straw / stubble management (SSM)
+
+72. If they have access to irrigation systems, Thai rice farmers seek to grow 2 crop cycles per year. This leaves only a short time-period in which to prepare the land for planting the next crop. Furthermore, service providers for tillage and land preparation may refuse to provide services to farmers if straw and stubble have not been removed from the field beforehand. Post-harvest straw / stubble open burning is, therefore, widely utilised as a rapid means of clearing the surface biomass to facilitate land preparation, as well as a pest and disease management tool.  
+166 This practice of burning rice residues leads to large-scale GHG emissions, as well as the release of other atmospheric pollutants.  
+167 According to IPCC good practice guidance, CO2 emissions caused by biomass burning are generally not considered to be net emissions, as they effectively represent the conclusion of the carbon cycle that started with primary production. However, CH4 and N2O emissions from biomass burning are considered. Moreover, after burning, farmers flood their fields (including the remaining stubble), leading to anaerobic decomposition of the stubble and further methane production.
+
+## To minimise GHG emissions
+
+73. Removal of the straw by baling or using it as substitute for fertilizer are more sustainable alternatives.  
+Rice straw balers are machines that collect loose straw scattered in the field with a pick-up reel mechanism and a compacting unit to make a dense mass of square or round baled straw. This baled straw can then be used as cattle feedstock, material for furniture, substrate for mushroom production, feedstock for bioenergy, pulp / paper production through cellulose extraction, biochar or as a base for bio-fertilizer (if mixed with manure), providing farmers with additional income.  
+168
+
+## Integrated Pest Management (IPM)
+
+74. Thailand ranks fourth in the world in its annual use of pesticides.  
+169 Of the five most commonly used pesticides in Thailand, four have been banned in the European Union.  
+1610 Pesticide intoxication is a major public health problem.  
+Building on TAS recommended practices, the foundation projects support a combination of IPM techniques, including conservation of natural enemies through habitat modification and minimisation / avoidance of pesticide application, and modification of cultural practices.  
+172 DoAE is currently supporting farming communities to establish Community Pest Management Centres (CPMCs), of which there are currently approximately 2,000 across the country (~2 per district), with each one supporting approximately 30 farmers to implement IPM techniques. Such techniques have a proven track-record in Thailand (and, indeed, in other major rice-producing countries, such as Indonesia, Malaysia and Viet Nam): for instance, in 2010 Thailand implemented one of the world’s
+
+---
+
+**References:**
+
+163 Devi, K. et al (2020), ‘Review on application of drones for crop health monitoring and spraying pesticides and fertilizer’, Journal of Critical Reviews, 7: https://www.jcreview.com/paper.php?slug=review-on-application-of-drones-for-crop-health-monitoring-and-spraying-pesticides-and-fertilizer  
+164 Islam S. et al (2018), ‘Nitrous oxide and nitric oxide emissions from lowland rice cultivation with urea deep placement and alternate wetting and drying irrigation’, Nature Scientific Reports, 8: https://www.nature.com/articles/s41598-018-35939-7.pdf  
+165 Thambhitaks K. and Kitchaicharoen J. (2021), ‘Valuation of external costs of wet season lowland rice production systems in northern Thailand’, Chiang Mai University
+
+
+---
+*Chunk pages 38–38*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1861 (sys=94, user=1767), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.10.0 | PAGE 35
+
+Most successful biological control programmes, the control of the cassava mealy bug. 173 However, due a range of knowledge, behavioural and economic barriers, IPM is not being systematically applied.174 An ongoing TEEB agri-food assessment in the Central Plains and North-East regions of Thailand is analysing the positive impact on rice yields of biological pest control , notably the role of damselflies, dragonflies and spiders on rice pests such as plant-hoppers and leafhoppers; empirical findings suggest that rice yields in insecticide-treated fields are often lower than those in untreated fields.175
+
+75. IPM offers considerable adaptation benefits: by avoiding or reducing climate-induced outbreaks of pests, IPM reduces crop losses – pre-harvest and post-harvest – and enhances food security. 176 Thai farmers already confront a number of pests, notably defoliators such as Cnaphalocrocis medinalis and Nymphula depunctalis and stem borers such as Chilo polychrysus, and Scirpoplulga nivella177, and there is growing evidence that climate change – particularly drought, which results in water stress and hence nutrient stress – will drive an increase in rice pest activity. 178 IPM also offers two indirect climate mitigation benefits: (i) by reducing avoidable yield losses, IPM reduces the GHG emission intensity per unit of food produced179; and (ii) IPM enables farmers to move away from straw and stubble burning practices while minimising the risk of corresponding pest or disease outbreaks.180
+
+76. Rice variety diversification , crop diversification and crop rotation . Preserving local genetic rice varieties, diversifying the use of rice varieties and switching to more climate-resilient rice varieties in certain geographies (e.g. drought-resistant and heat-resistant rice) offer potential climate adaptation benefits in Thailand.181 There are 4 broad categories of market-differentiated types of rice in Thailand: white rice (typically consisting of modern, high-yielding varieties and generally sold at the lowest prices), parboiled rice (typically modern, non-glutinous varieties for the export market and generally ~5% more expensive than white rice), Hom Mali rice (aromatic Thai jasmine rice with premium quality and price, often double the price of white rice),) and glutinous rice ('sticky rice', a daily staple in the North and North-East).182
+
+77. Within these categories, there are at least 89 local rice varieties found in Thailand, each with unique characteristics relating to, inter alia, disease resistance, adaptability to environmental conditions and production costs.183 The Thai rice strains San-pah-tawng 1 (SPT1), Neaw Phrae 1 (NP1), R258 and Skon Nakhon 1 (SKN1) are, for example, relatively heat-sensitive, whereas RD10, Chai Nat 1 (CNT1) and Suphan Buri 1 (SPR1) are relatively heat-tolerant.184 The range of varieties planted has, however, reduced significantly in recent decades as rice farmers have – with government support – moved away from traditional farming methods to modern, commercially-oriented rice agriculture: government support
+
+---
+
+**References:**
+
+173 Wyckhuys K. et al (2019), 'Biological control of an agricultural pest protects tropical forests', Communications Biology, 2: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6323051/pdf/42003_2018_Article_257.pdf  
+174 Deguine, J-P. (2021), 'Integrated pest management: good intentions, hard realities: a review', Agronomy for Sustainable Development, 41: https://link.springer.com/content/pdf/10.1007/s13593-021-00689-w.pdf?pdf=button  
+175 The Economics of Ecosystems and Biodiversity (TEEB) Agri-Food Assessment: Sustainable Rice in the North-East and Central Regions: https://teebweb.org/our-work/agrifood/country-implementation/eupi2019/thailand/  
+176 Ali M. et al (2019), 'Establishing next-generation pest control services in rice fields: ecoagriculture', Nature Scientific Reports, 9: https://www.nature.com/article/s41598-019-46688-6.pdf  
+177 Babendreier D. et al (2020), 'Biological control of lepidopter
+
+
+---
+*Chunk pages 39–39*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1511 (sys=94, user=1417), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.10.0 | PAGE 36
+
+Programmes currently cover 29 approved rice varieties.
+
+In addition to offering climate adaptation benefits, switching to other rice varieties offers mitigation benefits. 'Short-duration' rice varieties – those with shorter cropping periods (approximately 90 days for RD15 and RD31, for example, rather than 110-130 days for RD6 and KDML105) – generate less methane and have reduced fertilizer requirements.
+
+78. For irrigated rice areas where rice is typically cultivated two or three times a year, crop diversification can serve as an option for switching from off-season (dry season) rice farming to cultivating other crops – such as potato, maize, vegetables or beans – that use less water during a drought situation or that offer higher incomes for farmers.
+
+For example:
+- Irrigated areas in the North offer the potential to grow rice in the wet season, followed by a potato crop in the dry season and potentially even sweetcorn afterwards. The income from potatoes is 2-3 times higher than that from rice.
+- Green gram, soybean, pigeon pea or groundnut are suitable crops that can be grown under moisture-stress conditions and which help conserve moisture and enrich soil through nitrogen fixation. This can help sustain farmer livelihoods, reduce water consumption and CH4 emissions, as well as improve soil health.
+- A perennials-based system oriented around perennial plants, trees and ponds does not require intensive care once fully grown. Moreover, the products can be obtained all year round if a range of different perennial plants are cultivated.
+- Crop rotation also improves the ability of rice farmers to suppress pest and disease outbreaks and reduce the rate of pathogen spread. Such outbreaks can be disastrous for farmers: for example, an outbreak of rice blast, a fungal disease caused by Magnaporthe oryzae, can cause yield losses of up to 80% within 15-20 days. Crop rotation enhances agro-ecosystem resilience and also facilitates faster recovery from biotic stresses once the stress has been removed.
+
+However, farmers lack crop rotation experience and expertise, and also timely market price information for better decision-making. The choice of rice alternatives should also be closely linked to the farmer context: if subsistence farming and/or food security is a consideration, then the promotion of crops such as beans or potatoes may be appropriate, whereas nitrogen-fixing crops (for example) could be promoted for commercial farmers.
+
+79. Dry direct-seeded rice (DSR). Dry direct seeding is a crop establishment method wherein rice seeds are sown directly into an unsaturated, non-puddled field instead of the traditional method of growing seedlings in a nursery and then transplanting them into flooded fields. Globally, DSR is practised on approximately 33 mega-hectares, or approximately one-fifth of the area under paddy cultivation. The limitations of DSR can include higher seeding rates, lodging and risk of weed and nematode infestation.
+
+DSR also works most effectively when undertaken in conjunction with early-maturing, short-duration DSR-adapted rice varieties.
+
+---
+
+**Footnotes:**
+
+185 Napasintuwong O. (2018), ‘Rice breeding and R&D policies in Thailand’, FFTC Agricultural Policy Platform Journal: https://ap.fftc.org.tw/article/1278
+
+186 Janz B. et al (2019), ‘Greenhouse gas footprint of diversifying rice cropping systems: impacts of water regime and organic amendments’, Agriculture, Ecosystems and Environment, 270: https://www.sciencedirect.com/science/article/abs/pii/S0167880918304341
+
+187 Swarbreck S. et al (2019), ‘A roadmap for lowering crop nitrogen requirement’, Trends in Plant Science, 10: https://www.sciencedirect.com/science/article/abs/pii/S1360138519301505
+
+188 He D-C. et al (2021), ‘Crop rotation enhances agricultural sustainability: from an empirical evaluation of eco-economic benefits in rice production’, Agriculture, 11: https://mdpi-res.com/d_attachment/agriculture/agriculture-11-00091/article_deploy/agriculture-11-00091-v2.pdf?version=1611710511
+
+189 Sritongtae C. et al (2021), ‘Identification of superior soybean cultivars through the indication of specific adaptabilities within duo-environments for year-round soybean production in Northeast Thailand’, Agronomy, 11: https://www.mdpi.com/2073-4395/1
+
+
+---
+*Chunk pages 40–40*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1693 (sys=94, user=1599), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.10.0 | PAGE 37
+
+## 80. Farm-level water management (FWM)
+
+The amount of water available for rice farming at the beginning of the dry season depends on the total inflow during the preceding wet season (from May to October) and its subsequent storage.
+
+Construction / enlargement of hydraulic infrastructure, such as dams and ‘monkey cheeps’ (flood-retarding ponds), is being addressed by the government’s recent (June 2019) 20-year Master Plan on Water Resource Management, which envisages the construction of over 541,000 small dams. A smaller-scale solution – and one that can be implemented by individual farmers without the high capital costs and planning / coordination challenges of dams and ponds and the potential problems associated with groundwater abstraction – is the installation of on-farm water tanks for rainwater collection.
+
+Such tanks are small – typically 2-4 metres tall and several metres wide – and can be pre-fabricated (e.g. plastic) or can be built on-site using simple earthen walls. They can supply water to rice fields via dedicated pipes or via a pre-existing system of irrigation channels.
+
+Because of their relatively small capacity, such tanks are most effectively employed in conjunction with water-efficient farming methods such as AWD.
+
+## 81. Agro-meteorological advisory services
+
+Providing farmers with up-to-date, accurate weather forecasts, accompanied by advisories or warnings, via SMS and mobile apps can help them to prepare and calibrate appropriate responses (e.g. planting date, water use, harvesting date).
+
+The government is already supporting a number of initiatives in this area. MoAC’s Digital Agriculture Strategic Plan, for example, seeks to digitise agriculture by, inter alia, providing agricultural information systems and mobile phone alerts, and by raising the digital literacy of farmers.
+
+The RID provides weather advisories to farmers and has established a Smart Water Operation Centre (SWOC) to link data with relevant agencies for systematic water resource management during drought and flood crises. This Centre brings together information from the Thai Meteorological Department (TMD), the Hydro and Agro Informatics Institute, the Geo-Informatics and Space Technology Development Agency, the Department of Water Resources, and the Hydrographic Department of the Royal Thai Navy, where it is compiled for forecasts.
+
+Working in 3
+
+---
+
+**Note:** The text appears to be a continuation or excerpt from a larger document, likely related to agricultural practices and water management in Thailand. The references at the end suggest that this section may be part of a broader discussion on climate change adaptation strategies in rice farming.
+
+
+---
+*Chunk pages 41–41*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1079 (sys=94, user=985), max_out=1024, ctx=8192
+---
+
+# Climate-Smart Technologies and Practices: Climate Benefits and Co-Benefits
+
+| Technology / Practice | Climate Risk Addressed | Adaptation Benefit | Mitigation Benefit | Co-Benefits |
+|-----------------------|------------------------|--------------------|--------------------|------------|
+| Laser land levelling (LLL) | Rising temperature, drought, CH4 emissions | • Reduced irrigation water needs (fewer number of flooding days) | • Reduced CH4 emissions | • Higher efficiency of AWD and SSNM<br>• Yield increase<br>• Better nutrient efficiency (less fertilizer) |
+| Alternate wetting and drying (AWD) | Rising temperature, drought, CH4 emissions | • Increased water efficiency (30-40%) | • Can help to control pests (golden apple snail, rice blast fungus, etc.) | ~65% reduction in CH4 emissions<br>• increased rice yield and quality |
+| Site-specific nutrient management (SSNM) | N2O emissions | • Increased water-holding capacity of the soil | • Less water usage | • Better nutrient availability / use efficiency<br>~15% reduction in N2O emissions<br>• Higher yields and yield stability<br>• Improved soil health, including soil biodiversity |
+| Straw and stubble management (SSM) | CH4 and N2O emissions | • Potential for soil carbon and nutrient increase | • Generation of income from off-site straw products | Lower CH4 and N2O emissions<br>• Reduced toxic emissions (e.g. PM 2.5)<br>• Income diversification |
+| Integrated pest management (IPM) | Increased pests and diseases | • Reduction of losses due to increasing pest pressures | Reduction of fossil fuel-based agro-inputs | • Conservation of on- and off-site agro-biodiversity |
+
+## Notes
+
+207 UNDP-GCF: 'Enhancing Climate Resilience in Thailand through Effective Water Management and Sustainable Agriculture (EWMSA)'  
+208 This is a widespread sentiment amongst farmers, as described in the Market Study commissioned for the Thai Rice Project (Annex 2b).  
+209 Arunrat N. et al (2017), 'Farmers' intention and decision to adapt to climate change: a case study in the Yom and Nan basins, Phichit province of Thailand', Journal of Cleaner Production, 143: https://www.sciencedirect.com/science/article/abs/pii/S0959652616321138?via%3Dihub  
+210 OXFAM 2015), 'Resilience in Thailand: Impact evaluation of the climate change community-based adaptation model for food security project'
+
+
+---
+*Chunk pages 42–42*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=891 (sys=94, user=797), max_out=1024, ctx=8192
+---
+
+# Climate-Smart Technologies and Practices: Selling Points and Adoption Barriers for Farmers
+
+## Table 6: Climate-Smart Technologies and Practices
+
+| Technology / Practice | Selling Points for Farmers | Barriers to Adoption / Expansion | Other Considerations |
+|-----------------------|----------------------------|----------------------------------|----------------------|
+| **Laser land levelling (LLL)** | • Enables farmers to practise AWD more effectively<br>• Improves fertiliser application | • Upfront and recurring (typically every 5 years) investment costs<br>• Traditional (crude) flattening methods are price-competitive<br>• Farmers who rent farmland have reduced incentives to improve it | • Typically undertaken in conjunction with AWD: as a result, yield improvements can be difficult to distinguish<br>• LLL benefits need to be demonstrated to land-owners as well as farmers |
+| **Alternate wetting and drying (AWD)** | • Strengthens rice crops<br>• Reduces irrigation costs<br>• Reduces fuel costs and chemical use<br>• Reduces incidence of water-borne pests | • Lack of knowledge about AWD techniques (even when adopted, many farmers do not practise it correctly)<br>• Farmers are unlikely to use land to build water storage<br>• Farmers are rarely penalised for using public irrigation water to flood their fields, even in drought conditions | • In areas without public irrigation, farmers try to retain as much water in their fields as they can (particularly when rains are uncertain)<br>• Delivery model causes some barriers: information about the correct way to practise AWD is not received from extension services directly. Farmers who learn how to apply AWD without the correct information may not achieve good results<br>• Many farming areas use water-sharing systems that are connected to the public irrigation network: continued sustainability requires regulations and engagement with village heads or heads of mega-farms |
+
+---
+
+[Page 39]
+
+
+---
+*Chunk pages 43–43*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=979 (sys=94, user=885), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.10.0 | PAGE 40
+
+## Weather forecasts (TV, radio, traditional methods) are not always accurate, which deters farmers from draining fields
+
+## AWD adoption benefits from social pressure in increasingly drought-affected farming communities
+
+## Site-specific nutrient management (SSNM)
+
+- Reduction of fertilizer cost by ~10%
+- Site-specific mixes are complex to design and apply
+- Small-scale farmers do not have mixer machines to make nutrient mixes effectively and cost-efficiently
+- Difficult to find the fertilizer 'bases' (NPK) commercially
+- Farmers lack detailed knowledge about their soils and nutrient requirements
+- Delivery model causes some barriers:
+  - SSNM is easier for megafarms because they have access to mixers – megafarms can mix formulae and sell them to their members at lower cost
+  - Megafarms can also buy inputs at negotiated prices
+- Extension services do not conduct widespread soil testing
+
+## Straw and stubble management (SSM)
+
+- Fertilize soil
+- Additional income from selling straw
+- Straw collection and land preparation are limited to a short period of time (before the next rain starts or irrigation water becomes available)
+- Burning is quick, low-cost (essentially free) and farmers’ awareness of the health risks is limited
+- Some tractor service providers refuse to provide services if farmers have not burned their stubble
+- Alternative uses of rice straw require time-consuming processes such as drying and ploughing, as well as logistics facilities for storage and transportation
+- Only ~30% of farmers have land amenable to the use of baling machines (easy road access, short furrows); other farmers are deprioritized
+- Straw collection is not possible during the wet season
+- Farmers burn straw and stubble partly to prevent pests, disease and weedy rice
+- Straw and stubble should be distinguished from each other: stubble is more difficult to manage for farmers
+- Farmers are risk-averse about land preparation: they may abandon plans to decompose or sell straw due to impending rain
+- Demand for straw bales typically does not match supply because of farmers’ risk aversion and wet season conditions
+- Lack of water may extend the decomposition wait-time
+- For use in biomass energy plants, rice straw needs to be first cut finely by the balers – and this represents a high investment cost for the balers. Moreover, livestock owners offer higher prices than biomass energy plants for straw
+- Farmers are more likely to engage in SSM if they are also offered assistance with IPM
+
+## Integrated pest management (IPM)
+
+- Reduction of chemicals
+- Biological pesticides are complex and time-intensive to make. Outside of megafarms, farmers are unlikely to have the right conditions or incentives to make them themselves
+- The brown planthopper cannot be eliminated through spraying (a common misunderstanding of farmers)
+- Innovations are needed so that chemicals can be stored at room temperature and can be combined with reduced wait-time
+- Farmers are sceptical that biological substances can be fully effective against all pests
+- The (limited) IPM training offered to farmers to date has focused almost exclusively on the use of biological substances rather than scouting, selective spraying and other IPM measures
+- Farmers are unlikely to do their own pest-scouting because it is too onerous
+- Farmers will continue to engage in protective spraying at the beginning of a growing season regardless of pest prevalence
+
+
+---
+*Chunk pages 44–44*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1057 (sys=94, user=963), max_out=1024, ctx=8192
+---
+
+# B  
+## GREEN CLIMATE FUND FUNDING PROPOSAL V.10.0 | PAGE 41  
+
+### Rice variety diversification (drought- and heat-tolerant strains and short-duration varieties)  
+
+- Serves to insulate incomes from external shocks  
+- Lack of incentives to buy new seed varieties – many farmers use seeds (free of charge) they collected from previous crops  
+- Short-duration rice varieties tend to attract lower prices (because they are perceived as inferior quality and are typically made into powder for rice products). Farmers will only grow short-duration rice if they can be confident of good yields and guaranteed buyers  
+- Farmers are not keen to grow short-duration rice because it is ‘harder to manage’ due to the shortened time available for crop management  
+- Lack of knowledge on how to effectively grow short-duration rice varieties  
+- Many farmers are unaware of alternative rice varieties due to the limited number of buyers and rice seeds in current delivery channels  
+- Farmers tend to grow varieties that they see others growing – which may not be appropriate for them or may require training  
+- Farmers’ seed choice is strongly determined by rice miller needs and price-setting  
+
+### Crop diversification, rotation  
+
+- Additional income during drought periods  
+- Insufficient water to grow any other crops or after-rice crops  
+- Required investments in ponds and pumping can be expensive  
+- Lack of knowledge on crop diversification for site-specific market and climate conditions (leading to risk aversion)  
+- Farmers who rent land may not be able to grow alternative crops, as landlords may only accept short-term crops (in addition to rice)  
+- Crops that can be grown in drought-prone areas (e.g. sugar cane and cassava) attract pests that can also harm rice  
+- Sugar cane requires a high level of chemical use  
+- Emerging demand for corn from chicken meat companies  
+- Some megafarms currently offer support – particularly to women – on alternative income-generating activities (e.g. handicrafts)  
+
+### Dry direct-seeded rice (DSR)  
+
+- Requires less labour  
+- Reduced need for water for land preparation  
+- Prevents percolation of irrigation water due to fewer soil cracks  
+- More competition from weeds, requiring mitigation measures (including, potentially, greater use of herbicides)  
+- Rats and birds can severely damage seeds if they are not well covered with soil and/or water  
+- Sudden heavy rain immediately after seeding can adversely affect crop establishment  
+- DSR – particularly when direct drill seeding is employed – is most effective when used in conjunction with LLL, as this facilitates the maintenance of soil that is moist but not saturated (to avoid seed rotting)  
+- Priming (pre-hydration) of seeds promotes early emergence and vigorous early growth of DSR seeds (in soil that is otherwise potentially dry and sun-exposed)  
+
+### Farm-level water management (FWM)  
+
+- A simple solution to water shortage  
+- Tanks can be installed according to farmer needs and constraints  
+- Land trade-offs: land allocated to a tank cannot be used to grow crops  
+- Tanks require an associated water distribution / pumping system  
+- Risk of diesel-powered pumps being used by farmers unless specific efforts are made to promote PV pumping  
+
+### Agro-met advisory services  
+
+- Informed planning and more efficient use of agricultural inputs  
+- Avoided crop damage / loss  
+- ‘Last mile’ delivery of information to farmers has proved to be a challenging aspect of past initiatives  
+- Weather forecasts alone are insufficient: farmers need guidance on how to translate forecasts into concrete  
+- Baseline initiatives – notably the Thai Meteorological Department’s existing weather and climate forecasts and early warning products – provide a solid foundation for additional support  
+- Data synergies with index-based insurance
+
+
+---
+*Chunk pages 45–45*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1002 (sys=94, user=908), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.10.0 | PAGE 42
+
+• Facilitates ease of adoption of alternative rice varieties and crops actions – especially for climate-smart rice farming methods, which are new and require different behaviours / interventions
+
+83. The relevance and effectiveness of these climate-smart technologies and practices vary geographically.
+
+## Table 7: Climate-Smart Technologies and Practices: Geographical Suitability
+
+| Technology / Practice | Suitability / Applicability (Yes / No) |
+|-----------------------|----------------------------------------|
+| Central Plains        | North-East                             |
+| Laser land levelling (LLL) | Yes Yes, but limited applicability on steep terrain |
+| Alternate wetting and drying (AWD) | Yes. But as AWD aims to reduce water consumption, it is only applicable in areas with irrigation or water management |
+| Site-specific nutrient management (SSNM) | Yes |
+| Straw and stubble management (SSM) | Yes. Farmers in the Central Plains typically plant more than 1 time per year – thus SSM is useful Yes, but subject to constraints: farmers in the North-East typically plant 1 time per year and usually burn straw right away |
+| Yes. Air pollution is a policy priority in the North, especially around Chiang Rai |
+| Integrated pest management (IPM) | Yes |
+| Rice variety diversification | Yes, subject to economic and policy considerations |
+| Crop diversification, rotation | Yes, but limited applicability Yes. Crop diversification is already practised by some farmers in the North-East to earn additional income Yes, but with different needs across irrigated and non-irrigated areas |
+| Dry direct-seeded rice (DSR) | Yes |
+| Yes. Already widely practised in the rain-fed lowlands |
+| Yes |
+| Farm-level water management (FWM) | Yes, but limited applicability Yes Yes, but limited applicability |
+| Agro-met advisory services | Yes, but limited applicability Yes – the region of greatest need: farmers need to know appropriate planting dates Yes, but limited applicability |
+
+## Foundation Projects – Financial Mechanisms
+
+84. The NSP channels financial assistance (FA) through two mechanisms, both managed by BAAC: a revolving fund for farmers to pre-finance low-emission production investment as well as reduce the market entry risk for service providers; and a loan programme that supports investments by service providers in machinery. The revolving fund was created by the NSP, whereas the loan programme builds on BAAC’s pre-existing Green Loan Programme which provides loans to farmers for working capital and purchases of equipment / technology:
+
+• NSP revolving fund for farmers . LLL improves rice productivity and, at the same time, is an important but costly pre-requisite for proper field use of AWD (which, by itself, is a relatively low-cost and simple technology). Thus, the revolving fund is oriented toward LLL. The purpose of the revolving fund is to provide concessional zero-cost loans for farmers to receive LLL services upfront and then pay for these services in arrears over 3 harvest seasons or a maximum 3-year instalment period. Service providers are paid through the revolving fund for LLL on behalf of farmers. Pre-financing is unsecured and at 0% interest rate. Based on an extensive market survey on farmers’ willingness to pay and actual costs for service providers during the pilot season, a price of 1,350 baht/rai (5.8 Euro/ha) for LLL services (excluding land preparation, which can cost a further 650 baht/rai or 2.8 Euro/ha) is applied, with farmers required to make repayments of 40%, 40% and 20% of the total pre-financing amount to the revolving fund. In October 2022, the NSP launched a promotion programme for farmers to receive a 50% subsidy for LLL application.
+
+--- 
+
+[Page 1]
+
+
+---
+*Chunk pages 46–46*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1129 (sys=94, user=1035), max_out=1024, ctx=8192
+---
+
+# B.1.5 Baseline projects and programmes
+
+## Project title: GCF Readiness Support for Thailand (2 readiness projects previously implemented, 2 under implementation)
+
+- **Implementing agency / funder:** GIZ / GCF  
+- **Duration:** 2016 – 2022  
+- **Budget:** Euro 1.2 million  
+
+Readiness support delivered by GIZ has focused on:
+- (2016–2018) strengthening the Thai NDA to establish the necessary institutional arrangements to access the GCF (no objection procedure, country programme);  
+- (2018–2019) identifying potential projects for the development of a strategic project pipeline in line with national priorities;  
+- (2020–2021) building the capacity of the Environmental Fund Division (EFD) of the Office of Natural Resources and Environmental Policy and Planning (ONEP) to become accredited to the GCF and act as a national climate funding mechanism that responds to the priorities of the GCF country programme;  
+- (2021–2023) supporting the development of two Concept Notes in the transport and health sectors while strengthening the capacities of EFD in writing Concept Notes.
+
+Previous readiness support for the NDA has enabled the government to decide to prioritise the agricultural sector for national climate actions (both mitigation and adaptation) and has informed the government’s decision to develop the Thai Rice Project.
+
+## Project title: Enhancing Climate Resilience in Thailand through Effective Water Management and Sustainable Agriculture (EWMSA)
+
+- **Implementing agency / funder:** United Nations Development Programme (UNDP) / GCF [FP170]  
+- **Duration:** 2022 – 2026  
+- **Budget:** US$ 50 million  
+
+The project seeks to adapt water management in the Yom and Nan River basins with a focus on climate- and risk-informed planning and improvement of grey and green water management measures. GIZ supported UNDP during the development of the project by incorporating ecosystem-based adaptation.
+
+---
+
+[Page 43]  
+B  
+GREEN CLIMATE FUND FUNDING PROPOSAL V.10.0 | PAGE 43  
+
+• Loan programme for service providers. Loans are offered by BAAC to service providers for the acquisition of machinery (such as LLL machines and tractors). After providing LLL services to farmers, the revolving fund directly provides payment (LLL service cost and profit margin) to service providers on behalf of the farmers. This model ensures that service providers can immediately provide LLL services on the basis of guaranteed income (i.e. not having to wait for farmers’ harvests) that they can then use to repay their investment loans. The repayment period for the loans is 5 years with an interest rate (referred to as a Minimum Retail Rate) of 7% per year for individual service providers. For farmer groups acting as service providers, they can request a loan from the BAAC Green Loan Programme at an interest rate (referred to as a Minimum Loan Rate) of 5% per year.
+
+85. The NSP has encountered greater-than-anticipated challenges with regard to the development of the service provider market, including access to BAAC’s loan programme. Farmers have proven to be more risk-averse than expected – indeed, their reluctance to change long-established farming practices has actually been exacerbated by the climate-induced water scarcity many of them recently faced in the 2020–2021 drought, as the threat to their livelihoods means they are less able to take risks or make investments. This uncertainty on the (farmer) demand-side has served to create corresponding uncertainty on the (service provider) supply-side: service providers are unwilling to invest in new equipment if farmer adoption is uncertain. Moreover, BAAC has struggled to issue loans to service providers (many of which are themselves farmers) as many do not fulfil the general credit requirements – established track-record, amount of outstanding debt, availability of collateral – for accessing BAAC loans. As a consequence, demand for pre-financing from the revolving fund has been relatively low.
+
+86. Given the risk-aversion of farmers and the limited investment capacity by farmer and service providers, the NSP launched a partial subsidy for LLL machinery investment (up to 50%) for service providers (and farmers) in October 2022: this served to significantly boost service provider uptake, with an additional 75 service providers applying to participate and 56 subsequently being approved to do so, and it is now expected that the NSP will achieve its GHG emissions reduction target by early-2024.211
+
+---
+
+[Page 43]  
+B  
+GREEN CLIMATE FUND FUNDING PROPOSAL V.10.0 | PAGE 43  
+
+B.1.5 Baseline projects and programmes  
+
+87. Project title
+
+
+---
+*Chunk pages 47–47*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1130 (sys=94, user=1036), max_out=1024, ctx=8192
+---
+
+# [Page 1]
+
+## GREEN CLIMATE FUND FUNDING PROPOSAL V.10.0 | PAGE 44
+
+measures and nature-based solutions into the broader integrated water resources management (IWRM) approach. Additionally, GIZ is involved in the project implementation as a Responsible Party, working on complementing infrastructure with ecosystem-based adaptation (EbA). The Thai Rice Project focuses on on-farm adaptation and mitigation, with an emphasis on droughts and water-saving techniques, while the UNDP (adaptation-only) project seeks to increase overall flood resilience through water infrastructure, landscape-based approaches and political-level interventions. Synergies are planned through – inter alia – the introduction of climate-informed agricultural practices, farme r field training and training materials. Furthermore, institutional synergies are assured as the Thai Rice Project will harness the EWMSA’s structures that have been established with the RID in order to provide training to farmers and extension service staff. Digitisation and data collection will play important roles in both projects, and close cooperation is planned.
+
+### 89. Project title: Inclusive Sustainable Rice Landscapes in Thailand (ISRL-T)
+
+Implementing agency / funder: UNEP / GEF  
+Duration: 2023 – 2026  
+Budget: US$ 5.5 million (GEF)
+
+The ISRL is a multi-country programme under the GEF’s multi-focal area Food Systems, Land Use and Restoration (FOLUR) Global Impact Programme. The Thai project aims to enhance the rice value chain by upscaling Good Agricultural Practices (GAPs) through the SRP Standard in an integrated landscape management context, with a focus on 2 provinces: Chiang Rai in the North and Ubon Ratchathani in the North-East. The ISRL programme approaches rice farming from a landscape – and primarily biodiversity and forest management – perspective. Moreover, elements that are not covered by the SRP – such as drought-tolerant rice varieties and crop insurance – are outside the scope of the ISRL programme.
+
+Nonetheless, the ISRL programme and the Thai Rice Project share significant complementarities, facilitated by the fact that GIZ is an Executing Entity of the ISRL-T. The ISRL-T project also aims to address the demographic challenge posed by an ageing farmer population in Thailand through the promotion of youth groups, scouts and camps in relation both to forest conservation and sustainable rice farming in integrated landscape management – elements with which the Thai Rice Project coordinates in Chiang Rai and Ubon Ratchathani and replicates (to a limited extent) elsewhere.
+
+### 90. Project title: Support Programme on Scaling-up Climate Ambition on Land-Use and Agriculture through NDCs and NAPs (SCALA)
+
+Implementing agency / funder: Food and Agriculture Organisation of the United Nations (FAO) / BMUV IKI  
+Duration: 2020 – 2025  
+Budget: US$ 0.6 million (in Thailand)
+
+The SCALA programme is a Euro 20 million initiative that is funded by the International Climate Initiative (IKI). The programme is supporting 12 countries in Africa, Asia and Latin America, including Thailand. The objective of the programme is to translate the NDCs and/or NAPs into actionable and transformative climate solutions in land-use and agriculture with multi-stakeholder engagement. In Thailand, the Office of Agricultural Economics (OAE) and the Land Development Department (LDD) are the lead agencies and are coordinating SCALA activities across agencies. The SCALA programme recently supported MoAC in developing the draft Climate Change Strategic Plan for Agriculture (2023-2027), which forms one of the policy foundations of the Thai Rice Project. The Thai Rice Project will coordinate with the SCALA programme under Activity 3.1.2, strengthening the political framework and supporting the Thai public sector to act on the NDC / NAP.
+
+### 91. Project title: Thai-German Cooperation on Energy, Mobility and Climate (TGC-EMC)
+
+Implementing agency / funder: GIZ / BMUV IKI  
+Duration: 2023 – 2027  
+Budget: Euro 20 million (Euro 2.5 million for the biomass component and Euro 4 million for ThaiCI establishment)
+
+Funded by the International Climate Initiative (IKI), TGC-EMS aims to accelerate Thailand’s energy transition towards a sustainable model, ensuring economic growth and compatibility with high climate ambitions. Among different sub-projects under this broad (renewable energy and transportation) project, two sub-projects are connected to the Thai Rice Project:
+
+
+---
+*Chunk pages 48–48*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1144 (sys=94, user=1050), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.10.0 | PAGE 45
+
+• A biomass sub-project is working to reduce straw burning in rice and sugarcane fields, using the biomass for energy generation instead. The marketplace for rice straw and other biomass products will be established under the TGC-EMC project. In parallel, the Thai Rice Project will provide rice straw and feed into the market, while also developing business models for other straw uses (straw recycling / reuse).
+
+• The Thai Climate Initiative (ThaiCI) is a cross-sectoral fund – focused on electricity and transport – that is currently under development. It is intended to be a grant financing mechanism for climate projects, with approximately 30 environmental projects to be initially selected through thematic calls for proposals. ThaiCI will be integrated and scaled up within the Environmental Fund (EF) operated by the Environmental Fund Division (EFD) of the Office of Natural Resources and Environmental Policy (ONEP). The Thai Rice Project will strengthen EFD's implementation capacities as a complement to ongoing GCF readiness support (EFD is currently seeking accreditation with the GCF), as well as providing technical and financial support to enable EFD to expand the scope of ThaiCI grant support to climate-smart rice agriculture.
+
+## 92. Project title: Public-Private Blended Finance Facility for Climate-Resilient Rice Landscapes (CRRL)
+
+Implementing agency / funder: FAO / GEF (Least Developed Countries Fund (LDCF) and Special Climate Change Fund (SCCF))
+
+Duration: 2023 – 2026  
+
+Budget: US$ 1 million (LDCF / SCCF)
+
+The CRRL is a multi-country project – covering Bangladesh, Cambodia and Viet Nam – that will support the design of a new blended finance facility to catalyse public and private sector investment to scale-up climate adaptation and resilience-building in Asian rice landscapes. The project is still under development but is likely to revolve around 3 pillars: (i) the design of an integrated financing mechanism; (ii) the enhancement of financial and technical capacities of farmers, producer groups, counterparts and intermediaries to invest in climate resilience; and (iii) the development and implementation of project monitoring, governance and knowledge-sharing mechanisms. 
+
+The CRRL is expected to enhance the capacity of 10-15 organisations (financial institutions, farmers’ organisations, private sector) and approximately 6,000 individuals (financial institution staff, private sector representatives, farmer organisation members and rice producers). It will also result in an area of ~3,000 ha of agricultural land managed for climate resilience. GIZ is in close contact with FAO and coordination between the CRRL and the Thai Rice Project is assured – particularly as GIZ is a fellow member of the Sustainable Rice Landscapes Initiative (SRLI) and IRRI and the SRP are involved in both projects. The Thai Rice Facility (to be set up under Sub-Activity 3.1.3.1 of the Thai Rice Project ) can serve as a potential model for the CRRL’s integrated financing mechanism . FAO envisages that the financing mechanism – which will consist of a grant facility, a funded guarantee and commercial finance – will ultimately be managed by an international financial institution such as the International Finance Corporation (IFC) and may be partially capitalised by the GCF.
+
+## 93. Project title: Innovative Climate Risk Financing for the Agricultural Sector in ASEAN (ICRF-Agriculture)
+
+Implementing agency / funder: GIZ / German Federal Ministry for Economic Cooperation and Development (BMZ)
+
+Duration: 2023 – 2025  
+
+Budget: Euro 4 million
+
+The ICRF-Agriculture project will promote climate risk financing for the agricultural sector in cooperation with ASEAN working groups (crops, climate change and finance) through policy recommendations, updated work plans and improved technical knowledge. In collaboration with financial institutions and technology providers in the ASEAN member states , the project will design or improve resilience-enhancing and gender-responsive climate risk financing products and processes. Additionally, technical capacity at institutional and target group level in ASEAN member states will be improved to increase uptake of financial services through training and pilot implementation . Experiences from, and synergies with, the ICRF-Agriculture project at ASEAN and member state level , especially with regard to climate risk insurance and climate risk finance considerations in sustainability standards, will play a crucial role in achieving results in the Thai Rice Project, notably under Activities 2.1.1 and 2.1.2.
+
+
+---
+*Chunk pages 49–49*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1018 (sys=94, user=924), max_out=1024, ctx=8192
+---
+
+# B.2 (a). Theory of change narrative and diagram
+
+## B.2.1 Problem statement
+
+94. The rice sector of Thailand – the country’s most important food crop – faces adverse climate pressures. These pressures are placing, and will continue to place, increased burdens on farmers’ livelihoods, as well as on the national economy. Simultaneously, the rice sector stands out as the largest agricultural contributor to GHG emissions. In particular:
+
+95. Thai smallholder rice farmers, including a disproportionate number of women, are extremely vulnerable to increasing climate-induced water scarcity, temperature increases and heatwaves. Rice farming is a water-intensive and temperature-sensitive activity in an environment that is becoming characterised by longer dry spells and higher temperatures (including temperature spikes). Smallholder farmers lack the knowledge, risk appetite and finance needed to respond to the changing climate.
+
+96. The Thai rice sector is a significant source of GHG emissions. Rice farming accounts for 8% of Thailand’s total emissions and 39% of the country’s methane emissions.
+
+97. Climate-smart technologies are best deployed in combination. Mitigation measures, such as AWD, that are highly effective in an irrigated farming context are rendered considerably less effective when irrigation is temporarily abandoned due to water shortages. Similarly, their adaptation benefits – water conservation – are neutralised in the face of extreme climate change, when there is simply too little water to conserve. The effectiveness of AWD, SSNM, SSM, IPM, DSR and other measures is mediated by climate conditions – and farmers’ responses to climate conditions – even as these measures themselves seek to address climate change. Furthermore, synergies exist between the technologies. Empirical studies conducted in the Central Plains of Thailand indicate strong interaction (i.e. mutual reinforcement) mitigation effects on methane emissions stemming from the combined deployment of LLL and AWD in particular, but also interactive effects with SSM: each technology on its own serves to reduce GHG emissions, but they do so more effectively when used together.
+
+There is a need to acknowledge these complexities by intelligently deploying suites of inter-connected, mutually-reinforcing measures – accompanied by strengthening the innovation capacity of the rice sector – rather than relying on a ‘one size fits all’ static approach and/or on individual measures considered in isolation.
+
+98. The switch from conventional to low-emission, climate-resilient rice farming is directly reliant upon the actions of farmers and service providers, and their incentivisation through value-chain partners and government policies. Farmers and service providers must be motivated and educated to change their practices, and therefore the main barriers are those directly related to adoption of climate-smart production practices. The ‘attractive force’ of a climate-smart rice market (offering more assured supply and potentially premium prices) can incentivise and motivate farmers to change their practices and impose new requirements on climate-smart services. All sides of the market – farmers, service providers, rice off-takers, traders, buyers, retailers and consumers – depend upon each other: facilitating change among all of them is necessary to achieve market transformation towards low-emission, climate-resilient rice farming.
+
+## B.2.2. Barrier analysis
+
+### Why Climate-Smart Rice is Currently Not Being Grown and Sold at Scale in Thailand
+
+99. Despite the commitments and policies outlined in Section B.1.3 and the foundation and baseline projects outlined in Sections B.1.4 and B.1.5, a range of barriers serve to prevent the climate problem from being fully addressed.
+
+---
+
+
+---
+*Chunk pages 50–50*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1525 (sys=94, user=1431), max_out=1024, ctx=8192
+---
+
+# Cross-Cutting Barriers
+
+## 100. Knowledge and capacity constraints
+Knowledge and capacity constraints permeate many of the barriers presented below, spanning farmers, service providers, extension services, financial institutions, policy-makers and consumers. These include foundational knowledge gaps on how climate change is impacting rice farming and/or how it contributes to GHG emissions, for example, as well as lack of technical / practical knowledge on how to implement climate-smart, sustainable rice cultivation practices.
+
+## 101. Gender inequalities
+Gender inequalities also cut across the barriers presented below. For example, a number of relevant areas are characterised by persistent male domination, including institutional bureaucracy, technical areas (e.g. engineering, water management) and agriculture itself, thus limiting the implementation of equal opportunities (e.g. in advancing careers, improving minimum working conditions or addressing the specific needs of indigenous and migrant women).
+
+## 102. In rice farming, mechanisation and digitisation are considered 'male' activities and may therefore fail to create proportionate improvements for women. This is a key concern, as women constitute the majority of smallholder rice farmers in Thailand. Women's contributions tend to be invisible, women tend to be burdened with disproportionately more unpaid household work, and they are often not taken seriously as independent entrepreneurs. When women farmers do receive agricultural training, they have been found to achieve better attendance rates and greater subsequent adoption of new technologies. Women are also not typically considered to be community leaders: they have more difficulty than men in asserting leadership and decision-making power. Thus, even when they are willing to engage with new agricultural technology and its dissemination, this is typically regarded as being a matter for 'women's groups' rather than the farming community as a whole.
+
+# Barriers for Farmers
+
+## 103. The majority of Thai farmers are poor smallholders: Thai rice farmers are among the poorest occupational groups in Thailand. Half farm less than 10 rai (about 1.6 ha) of land and approximately one in five are in debt. Approximately 40% of farmers do not have full land ownership but, instead, rent land – and therefore have reduced incentive or flexibility to invest in technologies that improve soil or water management. The proportion of old farmers is growing – more than 40% of farms are operated by individuals older than 60 – largely as a result of youth choosing other employment sectors (or moving away from rural areas entirely): their technical skills and adaptability to new techniques tend to be lower and they also tend to be less educated than younger Thais, which limits their ability to navigate complex administrative rules (and rule changes), access credit and switch to alternative sources of income.
+
+# References
+
+214 Arunrat N. et al (2017), 'Farmers' intention and decision to adapt to climate change: a case study in the Yom and Nan basins, Phichit province of Thailand', Journal of Cleaner Production, 143: https://www.sciencedirect.com/science/article/abs/pii/S0959652616321138?via%3Dihub  
+
+215 OECD (2020), Thailand: Gender Budgeting Action Plan: https://read.oecd-ilibrary.org/governance/thailand-gender-budgeting-action-plan_6c398fc7-en#page1  
+
+216 Phuensane P. et al (2022), 'Influence of demographic characteristics and extrinsic motivations on farmers' smart farming adoption in Northeastern Thailand', GMSARN International Journal, 16: http://gmsarnjournal.com/home/wp-content/uploads/2022/01/vol16no4-6.pdf  
+
+217 Joblaew P. et al (2019), 'Factors affecting farmers' adoption of rice production technology from the collaborative farming project in Phrae province, Thailand', International Journal of Agricultural Technology, 15: http://www.ijat-aatsea.com/pdf/v15_n6_2019_November/9_IJAT_15(6)_2019_Joblaew,%20P..pdf  
+
+218 Aaltonen W. (2021), Building a Capable Farmers' Organisation Towards Livelihood Improvement: Evidence from Three Thai Rice Farmers' Organisational Models, PhD thesis, School of Oriental and African Studies (SOAS), London: https://eprints.soas.ac.uk/35778/1/Aaltonen_2021.pdf   
+
+219 Rigg J. et al (2018), 'More farmers, less farming? Understanding the truncated agrarian transition in Thailand', World Development, 107: https://www.sciencedirect.com/science/article/abs/pii/S0305750X183
+
+
+---
+*Chunk pages 51–51*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1327 (sys=94, user=1233), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.10.0 | PAGE 48
+
+## Barriers for Service Providers
+
+104. Climate-smart rice farming is at a nascent stage in Thailand: aspects of low-emission and/or climate-resilient rice farming have been piloted or selectively rolled-out by foundation projects and baseline projects, but they have not been promoted and disseminated at a large scale and nor in an integrated or cross-cutting context. From the perspective of service providers, investment in climate-smart technology and equipment carries substantial risk due to the unclear business case (particularly for smallholder farmers) and the uncertain market size / demand for climate-smart services, particularly compared with the well-established and well-understood sugar cane service provision sector.
+
+There is also widespread gender discrimination: women’s work is rarely considered to be a commercial service that deserves proper planning, payment and investment but is, instead, treated as an extension of household work or as a voluntary community service.
+
+## Financial Barriers
+
+105. Access to finance for smallholder farmers and SME service providers can be challenging, as banks tend to be cautious and reluctant to lend to marginal clients who are already exposed to substantial risks (even without the uncertainties presented by climate change), such as market prices for rice. Many rice farmers, and notably women farmers, earning barely a subsistence income struggle to meet typical loan conditions. For instance, they may lack collateral (especially farmers who rent their land), may not produce sufficient annual income, or may be insolvent as a result of other debts used to finance household needs (such as home purchase or basic consumption needs). Many agribusiness service providers are farmers themselves and hence face the same challenges.
+
+Furthermore, most farmers have limited financial literacy. Even if finance is available to them, many lack the capacity to evaluate the overall saving and borrowing prospects of their household and may not be inclined to borrow even if climate-smart agriculture offers positive – albeit delayed – financial returns.
+
+106. Existing agricultural loan products are not suitable for climate-smart agriculture: The transition from business-as-usual agriculture to climate-smart agriculture takes place over a number of years. LLL, for example, is applied in 5-year cycles, with a very expensive application in the first year and cheaper repeat applications in the following 4 years; the annual yield increase enabled by LLL is not sufficient to offset the LLL service cost in the first year, during which farm income drops significantly from the baseline. These cashflow profiles call for medium-term loans with an initial grace period (when climate-smart agriculture causes a significant drop in farm cashflows) and subsequent amortization. Such loans are not currently provided by farm lenders.
+
+Current standard products include short-term farm loans (e.g. financing of inputs and services at the beginning of the season with repayment post-harvest, revolving cash credit lines), medium-term loans (e.g. 5-year loans for the purchase of land and equipment) and long-term loans extended to agricultural enterprises for large investments (with repayment over 15 or more years).
+
+---
+
+**Note:** The following references are included in the text:
+
+225 Grabrucker K. and Grimm M. (2020), ‘Is there a rainbow after the rain? How do agricultural shocks affect non-farm enterprises?’ American Journal of Agricultural Economics, 103: https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/ajae.12174?download=true   
+226 Yoshioka N. et al (2020), ‘Ambiguity aversion and individual adaptation to climate change: evidence from a farmer survey in Northeastern Thailand’, Hitotsubashi University School of Economics Discussion Paper: https://hermes-ir.lib.hit-u.ac.jp/hermes/ir/re/31324/070econDP20-06.pdf  
+227 Van-Hung N. et al (2022), ‘Precision land levelling for sustainable rice production: case studies in Cambodia, Thailand, Philippines, Vietnam and India’, Precision Agriculture: https://link.springer.com/content/pdf/10.1007/s11119-022-09900-8.pdf  
+228 Jarumaneeroj P. et al (2021), ‘A multi-objective modelling approach to harvesting resource scheduling: decision support for a more sustainable Thai sugar industry’, Computers and Industrial Engineering, 162: https://www.sciencedirect.com/science/article/pii/S0360835221005982/pdfft?isDTMRedir=true&download=true  
+229 Somboon S. (2021), ‘The front-end’s lending decision system for the Agricultural Bank in Thailand’, Applied Economics Journal, 28: https://
+
+
+---
+*Chunk pages 52–52*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1504 (sys=94, user=1410), max_out=1024, ctx=8192
+---
+
+# B.2.3 Baseline gaps
+
+110. Mapping the foundation projects and the baseline projects onto the barrier analysis provides useful insight into the ‘gaps’ – i.e. enduring barriers – that need to be addressed by the Thai Rice Project.
+
+## Market Linkage Barriers
+
+107. Currently, farmers find it difficult to sell rice that conforms to a sustainability standard, such as the TAS or SRP, due to limited market linkage arrangements. Also, in the current situation of conventional rice supply, farmers sell individually and in low volumes. It is difficult for rice trading companies to segregate and aggregate high volumes of climate-smart rice, although there is high potential market demand.
+
+108. For market linkages of rice straw, there is a high demand from private companies that would like to purchase rice straw for producing biomass energy, paper pulp and acoustic materials. Farmers would also like to sell their rice straw instead of burning. However, the supply of rice straw is much lower than the demand because of farmer inertia (due to information and awareness constraints, risk aversion, etc.) and because there is a limited number of rice straw collectors and baler machines.
+
+## Policy and Regulatory Barriers
+
+109. Policy and financial frameworks do not favour climate-smart rice production and are not coordinated. There are a range of baseline policies, financial instruments and government support programmes that support the rice sector. However, they operate largely in isolation, they are not coordinated and their climate-smart impacts are not maximised. Irrigation water for farmers, for example, is free of charge (or almost free), meaning that there is little price incentive for rice farmers – who are the largest users of water in Thailand – to save water or employ more water-efficient technologies. Extension services for rice farmers are well developed, but they do not address climate-smart agriculture – and, indeed, currently lack the capacity to do so. BAAC’s loan programmes to the rice farming sector operate at large scale (totalling over Euro 43 billion) and are powerful drivers of farming activity, but they are not generally focused on climate-smart technologies and practices, and nor are they explicitly linked with government extension services or sustainability standards. The national insurance scheme for rice farmers is already facing operational challenges and will struggle to provide farmers with livelihood assurance in the face of future climate change. The national T-VER carbon crediting scheme provides financial incentives for emission-reduction activities, but it barely operates in the agricultural sector, which is the second-largest emitting sector in Thailand.
+
+## References
+
+232 See, for example, Kittipanya-ngam P. and Hua Tan K. (2020), 'A framework for food supply digitalisation: lessons from Thailand', Production Planning and Control, 31: https://www.tandfonline.com/doi/pdf/10.1080/09537287.2019.1631462?download=true
+
+233 Formoso B. (2021), 'The agroecological sustainability of petty farmers in Thailand: a challenge for the future', Current Research in Environmental Sustainability, 3: https://www.sciencedirect.com/science/article/pii/S2666049021000542/pdfft?isDTMRedir=true&download=true
+
+234 Baoguo L. and Laksitamas P. (2020), 'The marketing ethical strategies of Thailand's organic rice based on Eastern Economic Corridor (EEC), Cross-Current International Journal of Economics, Management and Media Studies, 2: https://www.easpublisher.com/media/features_article/CCIJEMMS_29_129-137c.pdf
+
+235 Overturf E. et al (2020), 'Towards a more sustainable circular bioeconomy. Innovative approaches to rice residue valorisation: the RiceRes case study', Bioresource Technology Reports, 11: https://sci.bban.top/pdf/10.1016/j.biteb.2020.100427.pdf#view=FitH
+
+236 Oanh N. (2021), 'Rice straw open burning: emissions, effects and multiple benefits of non-burning alternatives', Vietnam Journal of Science and Technology, 63: https://www.researchgate.net/profile/Nguyen-Thi-Oanh/publication/359922244_2021-VJST-RSOB_and_effects-final_version/links/625e6650a279ec5dd701db28/2021-VJST-RSOB-and-effects-final-version.pdf
+
+237 Hoer D. et al (2016), Feasibility of Rice Straw Utilisation for Small
+
+
+---
+*Chunk pages 53–53*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1217 (sys=94, user=1123), max_out=1024, ctx=8192
+---
+
+# Table 8: Barrier Removal by the Foundation and Baseline Projects: Remaining Challenges
+
+| Barrier | Baseline Interventions to Address the Barrier | Remaining Gaps and Challenges |
+|---------|-----------------------------------------------|-------------------------------|
+| **Barriers for farmers** | • Awareness-raising and training on the use of mitigation techniques (LLL / AWD, SSNM, SSM, etc.) – curricula, trainers, timetable, etc. <br>• TAS development and certification to reduce rice production costs, promote sustainability and enable access to premium rice markets <br>• Recent National Economic Plans have recommended that rice farmers cultivate other cash crops (in combination with rice farming) to increase crop diversity and protect their incomes | Adaptation has not been a principal focus (with limited exceptions); the effectiveness of LLL / AWD is being weakened by climate-driven water scarcity; the straw biomass market is under-developed; farmers’ risk aversion remains high, particularly under challenging (water-scarce) conditions; increased water pumping as a response to water scarcity may be accompanied by increased GHG emissions from diesel pumps; farmer demographics are ageing, limiting their appetite to deviate from business-as-usual practices and experiment with new business models (e.g. becoming service providers); obstacles to crop diversification and rotation – insufficient capital, lack of agronomic and market knowledge, etc. – remain significant, and some crops are even more sensitive to climate change than rice; farmer extension support would benefit from greater coordination and inclusion of climate-smart agriculture. |
+| **Barriers for service providers / market barriers** | • Development of business model and marketing of services to farmers <br>• Training for service providers on the use, operation and maintenance of mitigation techniques <br>• Service payment through NSP revolving fund <br>• BAAC loan programme | Service provider market entry for climate-smart technologies has been limited to date, partly because of financial constraints but primarily because service providers face a ‘catch-22’ situation: they are reluctant to invest in new equipment (LLL, tractors, etc.) without assured demand from farmers, but farmers are unwilling / unable to implement climate-smart techniques without technical and financial support. |
+| **Technical / technological barriers** | • Engagement with machinery manufacturers and distributors to supply LLL equipment compatible with 30-35 HP tractors (i.e. smaller tractors that are more prevalent, more affordable and better suited to small plots) <br>• Preliminary work and data collection on the use of drones for climate-smart rice farming (land mapping, crop observation, etc.) | Adaptation has not been a principal focus; mitigation technology emphasis (notably LLL and SSNM) typically favours: (i) larger farmers at the expense of the smallest (and most vulnerable) farmers, and (ii) farmers who own (not rent) their land; untapped potential of digital technologies (e.g. for agro-met services and farmer insurance); untapped potential of drones (e.g. for LLL, mapping and application of pesticides). |
+| **Market linkage barriers** | • Development of the TAS and its alignment with international standards as a systems accelerant for sustainable rice farming <br>• Capacity building and training to farmers on the benefits of straw and stubble management and promotion of market linkages for rice straw | Promoting the adoption of the TAS as a lower-cost and nationally-owned sustainability standard, as well as international sustainability standards on demand; high demand from private companies that would like to purchase rice straw for producing biomass energy, bio-fertilizer, paper pulp etc. but insufficient supply; quality assurance of service providers is patchy and unsystematic, despite its potential to engender farmers’ confidence in the services market. |
+| **Financial barriers** | • NSP revolving fund for farmers to pre-finance LLL <br>• Development of the TAS and alignment with international standards to reduce costs and access premium rice markets <br>• NSP subsidy for LLL services and investments in LLL machinery <br>• ThaiCI in the process of being established as a national grant-issuing fund for innovative pathfinder projects | Farmers’ financing needs are not confined to LLL; high (paperwork) transaction costs for farmers to access the revolving fund; farmers’ financial literacy is limited; the loan programme has not met expectations: BAAC lending does not target (or even preferentially consider) climate-smart rice farming; ThaiCI does not serve the rice sector; crop insurance coverage remains partial (covers only the wet season and only a proportion of farmers’ costs), bureaucratic and is not aligned with climate change risks; carbon finance is under-utilised as a financing mechanism for mitigation in the agricultural sector; there is scope for greater coordination and synergies between financial support instruments. |
+
+[Page 50]
+
+
+---
+*Chunk pages 54–54*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=707 (sys=94, user=613), max_out=1024, ctx=8192
+---
+
+# B.2.4 Theory of change
+
+The theory of change diagram is provided below (page 51)
+
+## Knowledge and capacity barriers
+
+- Training of local-level government extension officers on mitigation techniques
+- Promotion of private extension services  
+- Establishment of the MRV Working Group to develop a rice MRV system and tools
+
+## Adaptation has not been a principal focus; considerable institutional and individual capacity gaps remain, including in EFD (which is responsible for operationalising ThaiCI and is seeking accreditation as a national GCF Accredited Entity); limited farmer understanding of weather forecasts, especially in the context of new (climate-smart) farming practices and rice strains; untapped potential of 'capacity multipliers' such as training-of-trainers, 'smart farmers' and larger-scale mobilisation of private sector extension support; awareness / detailed understanding of the TAS and international sustainability standards is limited.
+
+## Policy and regulatory barriers
+
+- GHG calculation tool (SECTORice) developed, accompanied by training and user manuals  
+- Development of the TAS and some (limited) mainstreaming across government 
+- Support to local agencies in integrating climate mitigation in ongoing initiatives
+
+## Adaptation has not been a principal focus, nor holistic (mitigation + adaptation) climate-smart agriculture – despite drought, in particular, being identified as a key challenge in the NDC, NAP, NC, BUR and TNA; gaps in the government's ability to implement, monitor and measure the elements of the NDC relating to agriculture, and specifically rice agriculture; the TAS is a nascent standard with considerable potential but requires support with further development, training, data collection systems, assurance system implementation, etc.; there is scope for greater coordination between policies to strengthen their beneficial climate impacts; the Thai domestic carbon market is unable to effectively address rice agriculture (which is characterised by dispersed, small-scale, multi-gas emission sources and unsophisticated farmers).
+
+## Gender barriers
+
+- Proactive engagement of female farmers by offering special training on mitigation services,  
+
+Although the majority of smallholder rice farmers are women, female farmers continue to play marginalised roles; women in general, and vulnerable women in particular, continue to face discrimination, harassment and – in extreme cases – violence; the concept of female entrepreneurship is not yet developed / promoted for agricultural service provision; specific groups of women, notably migrant workers and skipped-generation households, remain particularly vulnerable to climate change impacts.
+
+
+---
+*Chunk pages 55–55*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=757 (sys=94, user=663), max_out=1024, ctx=8192
+---
+
+# [Page 1]
+
+## GREEN CLIMATE FUND FUNDING PROPOSAL V.10.0 | PAGE 52
+
+### 111. Figure 10) and in Annex 23b. The Thai Rice Project will put in place a comprehensive suite of measures to remove the identified barriers in order to achieve the project objective and, ultimately, address the climate problem.
+
+### 112. The successful implementation of the project will guide Thailand in reducing emissions from rice agriculture (thus contributing to MRA 4), supporting the most vulnerable people and communities (ARA 1), addressing food and water security (ARA 2), and bringing rice farmland under improved low-emission and climate-resilient management practices (ARA 4). This will ensure Thailand's alignment with the Paris Agreement and national targets (NDC, NAP and other national strategies).
+
+### 113. The GCF’s Sectoral Guide on Agriculture and Food Security identifies 3 pathways to achieving transformation towards climate-resilient and low-emission agricultural systems: (i) promoting resilient agro-ecology that responds to climate hazards, (ii) facilitating climate-informed advisory and risk management services, and (iii) reconfiguring food systems.244 Through its support to, inter alia, climate-smart rice farming technologies, practices and finance, weather information and advisories for farmers, rice insurance and the Thai Agricultural Standard (TAS) for sustainable rice, the Thai Rice Project addresses all three pathways.
+
+### 114. The project logic can be stated as follows:
+
+IF farmers and service providers are capacitated, equipped and able to apply climate-smart technologies and practices, and their linkages to markets are strengthened, and if public policies and private sector actors are geared towards promoting climate-smart rice farming...
+
+THEN paradigm shift will be achieved through the development of a climate-smart rice sector built upon self-sustaining business models, mainstreamed climate-smart technologies, materialised NDC and NAP objectives, and very significant replication potential, both within Thailand and beyond...
+
+BECAUSE rice farming in Thailand will be firmly set upon a climate-resilient and low-emission pathway with improved livelihoods for farmers.
+
+### 115. The theory of change diagram depicts how the Thai Rice Project aims to transform the sector towards low-emission, climate-resilient rice farming in Thailand.
+
+### 116. Rising temperatures and more frequent and severe droughts threaten rice yields and farmers' livelihoods and food security. Traditional rice farming practices use large amounts of water, threatening water security in Thailand. Moreover, rice farming produces considerable GHG emissions, exacerbated by the prevailing practices of straw and stubble management (burning) and fertilizer application.
+
+244 GCF (2021), Sectoral Guide: Agriculture and Food Security: https://www.greenclimate.fund/sites/default/files/document/agriculture-and-food-security-sectoral-guide.pdf
+
+
+---
+*Chunk pages 56–56*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1332 (sys=94, user=1238), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.10.0 | PAGE 53
+
+## 117. Rice is the staple food for over half of the global population. Approximately 90% of rice is produced and consumed in Asia. 245 In Thailand, rice is typically eaten in all 3 main meals246, and rice accounts for three-quarters of the average Thai’s calorific intake. 247 Although Thailand has experienced significant improvements in food security in the past 20 years, problems continue: persistent under-5 stunting and wasting, for example, remain serious concerns 248 , particularly among poor, rural communities. 249 Because climate change represents a significant threat to rice yields, it also represents a threat to food security. Sustaining, or even increasing, rice production in Thailand, and Asia more broadly, in the face of climate change is, therefore, vital for both national and global food security. 250  
+
+## 118. A low level of financial literacy and a high level of risk aversion characterise both farmers and service providers. Ironically, climate change – in the form of changing weather patterns and uncertain crop yields – is increasing their level of risk aversion, making farmers and service providers more hesitant to invest in climate-smart technologies. Banks are hesitant to provide them with capital and do not, in any case, offer financial products that are tailored to the specific needs of climate-smart investment.  
+
+## 119. As long as there is no substantial track record of climate-smart service provision of rice farming, service providers are hesitant to invest due to a perceived uncertainty of demand for these services. The current insurance system provides only basic and restrictive compensation to farmers in case of government-declared calamity events and lacks a sophisticated approach. The potential of carbon finance to incentivise emission reductions in the rice sector is untapped.  
+
+## 120. In addition, government policies are currently not geared towards climate-smart rice and are not well coordinated, and rice sector GHG emissions are not systematically tracked. Gender inequality in leadership exacerbates this trend by not providing opportunities and attention to willing women farmers who can contribute to, and lead, the necessary change.  
+
+## 121. A change to climate-smart practices would substantially reduce input costs and lead to yield increases, making the transition – once initiated – self-sustaining. In addition, there are several enabling factors that would increase the attractiveness of climate-smart rice farming for farmers, which are not yet present at scale: for example, a national climate-smart rice sustainability standard and verification method (TAS) has not yet been fully implemented, and farmers lack connections to potential off-takers for climate-smart rice and other actors in the value chain. Similar market challenges apply to products derived from rice straw: the business model is not yet clear to farmers or service providers, and market linkages are not firmed up.  
+
+## 122. While a number of foundation and baseline projects in the country are addressing the rice sector, they focus primarily on the mitigation aspects of climate change, they do not ‘join the dots’ and harness the (significant) synergies that exist between mitigation and adaptation in the Thai rice farming context, they pay insufficient attention to gender mainstreaming needs in the rice sector, and they operate at limited spatial scales (for instance, the NSP is confined to the Central Plains). The recently-approved GCF project, FP170251, is focused on landscape-based interventions and adaptation, and only very limited on-farm interventions or GHG emissions.  
+
+## 123. The Thai Rice Project builds on the foundation and baseline projects but adopts a modified approach in 4 key respects:  
+
+### Footnotes:
+245 Bandumula, N. (2017), ‘Rice production in Asia: key to global food security’, Proceedings of the National Academy of Science of India, Section B: Biological Science, 88: https://krishi.icar.gov.in/jspui/bitstream/123456789/31566/1/springer.pdf  
+246 Singanusong, R. and Mingyai, S. (2019), ‘Value creation and addition of rice and its significance to Thai culture’, Journal of Nutrition Science and Vitaminology, 65: https://sci.bban.top/pdf/10.3177/jnsv.65.S75.pdf#view=FitH  
+247 Mohidem, N. et al (2022), ‘Rice for food security: revisiting its production, diversity, rice milling process and nutrient content’, Agriculture, 12: https://mdpi-res.com/d_attachment/agriculture/agriculture-12-00741/article_deploy/agriculture-12
+
+
+---
+*Chunk pages 57–57*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=984 (sys=94, user=890), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.10.0 | PAGE 54
+
+• It operates at a larger scale and over a broader set of Thai provinces. The foundation projects have created a strong bedrock of awareness and technical understanding, have built a network of engaged stakeholders, have created management structures and processes, have mobilised political support at the highest levels, and have road-tested technical and financial instruments. The Thai Rice Project builds on these achievements, makes changes where necessary and significantly scales-up the climate ambition.
+
+• It incorporates strong climate adaptation and cross-cutting elements in recognition of: (i) the pressing climate-induced water scarcity pressures that farmers are already experiencing and will continue to experience, and (ii) the fact that potent mitigation approaches, such as LLL, AWD and DSR, also simultaneously have strong water-saving adaptation benefits.
+
+• It responds to lessons learned by addressing high stakeholder (farmer, service provider, financial lender) risk aversion – for instance, by supporting incentive payments for farmers, a climate-smart loan scheme financed by BAAC, improved crop insurance, and grant payments from a strengthened ThaiCl fund to targeted projects in the rice sector. It also builds on successful cases of women farmer leaders and women’s groups working on organic and sustainable agriculture.
+
+• It ensures a sustainable exit strategy and continued implementation of climate-smart practices after project end through a suite of financial instruments positioned within a new Thai Rice Facility coordination structure and by unlocking the potential of carbon finance to provide a supplementary source of income to climate-smart farmers.
+
+## 124. The Thai Rice Project will enable climate-smart rice farmers – including, crucially, women farmers – to adapt to a changing climate (Outcome 1) while simultaneously reducing GHG emissions (Outcome 2).
+
+## 125. The project design follows a bottom-up logic: behavioural changes will be triggered at the level of the farmer, including women farmers, who make informed decisions. Farmers will invest in and adapt their practices (Output 1.1) and climate-smart technologies will be made available by service providers – including women farmers and women’s farmer groups – (Output 2.1) as a result of the project’s technical and financial support. The climate-smart rice that is produced will be verified and sold at higher market prices while rice straw residues will be monetised. The TAS will serve as a nationally-recognised sustainability standard, augmented in an international context by equivalent international standards and systems. Building on the existing T-VER domestic carbon market, an innovative scheme for the rice sector will be designed and implemented to unlock additional revenue flows to support Thailand’s transition to climate-smart rice. Policy-makers will be supported with technical assistance, monitoring tools and a new institutional framework – the Thai Rice Facility – that coordinates investments from the public and private sectors (Output 3.1) to achieve a strengthened, more ‘joined up’ and gender-mainstreamed institutional and policy environment (Outcome 3).
+
+## 126. The combination of these interventions will lead to a paradigm shift in how rice farming is conducted: male and female farmers across Thailand will apply climate-smart rice farming supported by capable, well-equipped service providers. As a result, yields, livelihoods and food security will improve, vulnerability to climate change will be reduced and GHG emissions will decrease significantly. In addition, governments across the region will benefit from the project’s experiences through peer-to-peer learning formats, including through women’s national and regional networks. By participating in the project and with its parent organisation – the Office of Natural Resources and Environmental Policy and Planning (ONEP) – serving as an Executing Entity, the Environmental Fund Division (EFD) will become a strong advocate for gender equality and will acquire significant insights into, and experience of, implementing a GCF project, thereby supporting its efforts to become a GCF Direct Access Entity.
+
+
+---
+*Chunk pages 58–58*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=183 (sys=94, user=89), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.10.0 | PAGE 55
+
+## Figure 10: Thai Rice Project Theory of Change
+
+---
+
+This is a placeholder for the actual content of Figure 10, which would typically include a visual representation of the theory of change for the Thai Rice Project. Since no specific details or images are provided in the extracted text, this section remains empty.
+
+If you have additional information or want to describe what should be included in this figure, please provide it so that I can assist further.
+
+
+---
+*Chunk pages 59–59*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=175 (sys=94, user=81), max_out=1024, ctx=8192
+---
+
+# B.2 (b). Outcome mapping to GCF results areas and co-benefit categorization
+
+[Page 1]  
+B  
+GREEN CLIMATE FUND FUNDING PROPOSAL V.10.0 | PAGE 56  
+
+--- END EXTRACTED TEXT ---
+
+
+---
+*Chunk pages 60–60*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=577 (sys=94, user=483), max_out=1024, ctx=8192
+---
+
+# [Page 1]
+
+## GREEN CLIMATE FUND FUNDING PROPOSAL V.10.0 | PAGE 57
+
+### Outcome 
+number  
+GCF Mitigation Results Area (MRA 1-4)  
+GCF Adaptation Results Area (ARA 1-4)
+
+#### MRA 1
+Energy generation and access
+
+#### MRA 2
+Low-emission transport
+
+#### MRA 3
+Building, cities, industries, appliances
+
+#### MRA 4
+Forestry and land use
+
+#### ARA 1
+Most vulnerable people and communities
+
+#### ARA 2
+Health, well-being, food and water security
+
+#### ARA 3
+Infrastructure and built environment
+
+#### ARA 4
+Ecosystems and ecosystem services
+
+### Outcome 1: Climate-smart farmers' incomes and food security are increased despite adverse climate change  
+☐ ☐ ☐ ☐ ☒ ☒ ☐ ☒  
+
+### Outcome 2: The climate resilience of rice farming is enhanced and GHG emissions are substantially reduced through the adoption of climate-smart technologies  
+☐ ☐ ☐ ☒ ☒ ☒ ☐ ☒  
+
+### Outcome 3: Government policies and funds are geared towards climate-smart rice  
+☐ ☐ ☐ ☒ ☒ ☒ ☐ ☒  
+
+## Co-benefit number  
+Co-benefit Environmental Social Economic Gender Adaptation Mitigation  
+
+### Co-benefit 1:  
+Climate-smart female farmers are empowered to make decisions relevant to their well-being  
+☐ ☐ ☐ ☒ ☐ ☐  
+
+### Co-benefit 2:  
+Reduced water pollution from fertilizers, pesticides and other agricultural chemicals  
+☒ ☐ ☐ ☐ ☐ ☐
+
+
+---
+*Chunk pages 61–61*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=495 (sys=94, user=401), max_out=1024, ctx=8192
+---
+
+# B.3. Project/programme description
+
+## B.3.1 Project scope and geography
+
+127. The Thai Rice Project targets approximately 253,400 smallholder rice farmers, including a minimum of 115,000 female farmers. Of these farmers, ~100,000 are currently being served by the NSP. The focus of the project is primarily at the level of individual farms, not broader landscapes. Technical assistance directed at market access, policy and regulations at the national level is directly coupled with, and motivated by, the on-farm interventions undertaken by the project.
+
+128. The project area includes a total of 21 provinces, consisting of 12 provinces in the Central Plains, 7 provinces in the North-East region and 2 provinces in the North of Thailand, as shown in Figure 11 below. The farmland targeted by the project extends over a physical area of ~718,000 hectares, of which ~306,000 ha is irrigated and ~412,000 ha is rain-fed. As rice can be planted more than once each year in the same field, the 'effective farmland' – the wet season planting area plus the dry season planting area – amounts to ~1.07 million ha.
+
+Figure 11: Geographical Scope of the Thai Rice Project (Project provinces are shown in green)
+
+![Figure 11](https://www.qgis.org/en/site/)
+
+[Page 1]
+
+
+---
+*Chunk pages 62–62*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1271 (sys=94, user=1177), max_out=1024, ctx=8192
+---
+
+# Table 9: Project Geography and Indicative Allocation of Beneficiaries – Provinces
+
+| Province | Region | Total Population (millions) | Total Rice Farmers | Targeted by Thai Rice Project | Project Target Area: Irrigated (ha) | Project Target Area: Rain-Fed (ha) | Total Project Target Area (ha) |
+|----------|--------|-----------------------------|--------------------|-------------------------------|-------------------------------------|------------------------------------|--------------------------------|
+| 1 Ang Thong | Central Plains | 0.3 | 5,300 | 26,790 | 0 | 26,790 |
+| 2 Ayuthaya | Central Plains | 0.8 | 6,500 | 49,630 | 0 | 49,630 |
+| 3 Buriram | North-East | 1.6 | 22,400 | 22,420 | 78,100 | 100,520 |
+| 4 Chainat | Central Plains | 0.3 | 7,600 | 41,420 | 2,190 | 43,610 |
+| 5 Chiang Mai | North | 1.8 | 8,200 | 10,060 | 4,950 | 15,010 |
+| 6 Chiang Rai | North | 1.3 | 11,500 | 11,300 | 17,600 | 28,900 |
+| 7 Kalasin | North-East | 1 | 8,500 | 18,650 | 10,410 | 29,050 |
+| 8 Kamphaeng Phet | Central Plains | 0.7 | 7,100 | 27,280 | 18,020 | 45,300 |
+| 9 Lob Buri | Central Plains | 0.7 | 7,400 | 29,350 | 11,910 | 41,260 |
+| 10 Nakthon Ratchasima | North-East | 2.6 | 25,400 | 29,400 | 45,720 | 75,120 |
+| 11 Nakthon Sawan | Central Plains | 1 | 8,600 | 28,300 | 38,090 | 66,390 |
+| 12 Pathum Thani | Central Plains | 1.2 | 6,300 | 50,760 | 0 | 50,760 |
+| 13 Phi Chit | Central Plains | 0.5 | 8,400 | 31,030 | 36,470 | 67,490 |
+| 14 Phitsanulok | Central Plains | 0.9 | 8,100 | 35,880 | 29,680 | 65,550 |
+| 15 Roi Et | North-East | 1.3 | 18,000 | 11,100 | 42,340 | 53,440 |
+| 16 Singburi | Central Plains | 0.2 | 5,900 | 21,060 | 50,430 | 71,490 |
+| 17 Si Sa Ket | North-East | 1.5 | 26,700 | 34,860 | 0 | 34,860 |
+| 18 Suphanburi | Central Plains | 0.8 | 8,900 | 45,640 | 3,380 | 49,020 |
+| 19 Surin | North-East | 1.4 | 32,200 | 9,630 | 56,570 | 66,190 |
+| 20 Ubon Ratchathani | North-East | 1.9 | 13,700 | 24,000 | 29,740 | 53,740 |
+| 21 Uthai Thani | Central Plains
+
+
+---
+*Chunk pages 63–63*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=954 (sys=94, user=860), max_out=1024, ctx=8192
+---
+
+# B.3.2 Project description
+
+## Outcome 1: Climate-smart farmers’ incomes and food security are increased despite adverse climate change
+
+### Output 1.1: Rice farmers invest in and apply climate-smart technologies and practices
+
+#### Activity 1.1.1: Building capacity of smallholder farmers and extension services on climate-smart rice farming
+
+---
+
+## 130. The Thai Rice Project will support suites of climate-smart technologies and practices for rice farmers (see below, Output 1.1). These suites will differ between the target regions, according to the regions’ geographical and agricultural characteristics:
+
+- Focus interventions will be rolled-out to, and supported for, all target farmers in the target region.
+- Supportive interventions will be rolled-out to, and supported for, a sub-set of target farmers in the target region.
+
+In addition to the 10 climate-smart technologies and practices supported by the Thai Rice Project, supportive interventions will include:
+
+- Add-on support for a sub-set of farmers: using the TAS as the principal framework for capacity building of higher-readiness farmers to achieve additional sustainability benefits aligned with national targets.
+- Top-up support for a smaller sub-set of farmers: to address international supply chain needs through international systems and standards, such as the SRP Standard and SAI Platform FSA.
+
+---
+
+## 131. An indicative distribution of focus interventions and supportive interventions is provided in Table 11. The final distribution, which will closely resemble this indicative distribution, will be confirmed with project stakeholders (at national, provincial and local levels) during the inception phase of the project.
+
+### Table 11: Indicative Geographical Distribution of Project-Supported Technologies and Practices
+
+| Region | Focus Interventions | Supportive Interventions |
+|--------|---------------------|--------------------------|
+| Central Plains | • AWD<br>• SSNM<br>• LLL – to enable AWD and SSNM, as well as provide stand-alone mitigation and adaptation benefits<br>• SSM<br>• IPM<br>• Rice variety diversification – to achieve shorter cropping durations (and hence GHG reductions) as well as to enhance climate resilience<br>• Crop rotation – notably with nitrogen-fixing crops (e.g. sun hemp, mung beans) to promote soil health<br>• DSR at small scale<br>• Agro-met advisory services | |
+| North-East | • LLL<br>• SSNM – in combination with intercropping of nitrogen-fixing crops<br>• SSM<br>• IPM<br>• AWD – if farmers have access to water sources, irrigation or ponds. FWM to be employed when appropriate (e.g. micro irrigation / drip irrigation)<br>• Rice variety diversification – shorter cropping duration, less input required, comparable favour profile to Hom Mali rice<br>• DSR<br>• Agro-met advisory services | |
+| North | • AWD (for irrigated areas)<br>• SSNM<br>• SSM<br>• IPM<br>• Crop diversification<br>• LLL – only for irrigated farmers in valleys with relatively large plots<br>• DSR at small scale<br>• Agro-met advisory services | |
+
+---
+
+## 132. The Thai Rice Project is structured across 3 complementary Outcomes and Outputs:
+
+---
+
+## 133. Outcome 1: Climate-smart farmers’ incomes and food security are increased despite adverse climate change
+
+### Output 1.1: Rice farmers invest in and apply climate-smart technologies and practices
+
+#### Activity 1.1.1: Building capacity of smallholder farmers and extension services on climate-smart rice farming
+
+---
+
+> **Note:** The following terms are defined in footnotes:
+>
+> - 253 Project target area is calculated as the sum of the wet season planted area and the dry season planted area: i.e. double-cropped areas are counted twice.
+> - 254 Encompassing temperature, heat / cold waves, rainfall and wet / dry days.
+> - 255 AWD = alternate wetting and drying; DSR = direct-seeded rice; IPM = integrated pest management; LLL = laser land levelling; SSM = straw and stubble management; SSNM = site-specific nutrient management
+
+---
+
+
+---
+*Chunk pages 64–64*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=700 (sys=94, user=606), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.10.0 | PAGE 61
+
+## Activity 1.1.2: Enhancing farmers’ access to finance for climate-smart farming services and technologies
+
+### Outcome 2: The climate resilience of rice farming is enhanced and GHG emissions are substantially reduced through the adoption of climate-smart technologies
+
+#### Output 2.1: Service providers invest in and offer climate-smart technologies to rice farmers
+
+- Activity 2.1.1: Building capacity of service providers for the supply of climate-smart technologies and practices in rice farming
+- Activity 2.1.2: BAAC climate-smart and farmer-friendly financial product development and roll-out
+
+### Outcome 3: Government policies and funds are geared towards climate-smart rice
+
+#### Output 3.1: Strengthened institutional and market environment for climate-smart agriculture
+
+- Activity 3.1.1: Strengthening market linkages and standards for sustainable rice and biomass residues
+- Activity 3.1.2: Strengthening the enabling institutional and policy environment for climate-smart rice farming
+- Activity 3.1.3: Thai Rice Facility and ThaiCI implementation
+- Activity 3.1.4: Regional exchange and peer-to-peer learning
+
+## Figure 12: Project Design
+
+### Output 1.1: Rice farmers invest in and apply climate-smart technologies and practices
+
+#### Activity 1.1.1: Building capacity of smallholder farmers and extension services on climate-smart rice farming
+
+136. To promote the utilisation of climate-smart technologies and practices in rice production, the Thai Rice Project will train farmers in climate-smart – low-emission and climate-resilient – farming methods, as well as strengthen capacities within the public sector and its networks to expand their institutional climate-smart services. Under this approach, farmers will acquire knowledge from training implemented by government extension services, technical experts, local farmer organisations and private sector actors – and consequently adapt their farming practices. The project will also ensure effective linkage of this extension work to the Activities and Sub-Activities under Outputs 2.1 and 3.1, providing financial support and incentives through market opportunities. It will engage high-readiness farmer groups, young farmers and/or local SMEs to lead community-level activities.
+
+137. Target rice farmers will be selected in line with Rice Department guidance and will include: (i) farmers previously under the NSP, (ii) participants of MoAC's mega-farm policy (i.e. member farmers of mega-farms), and (iii) other farmers identified through the Rice Department's criteria for selecting beneficiaries.
+
+
+---
+*Chunk pages 65–65*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1150 (sys=94, user=1056), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.10.0 | PAGE 62
+
+## Sub-Activity 1.1.1.1: Training for farmers on climate-smart technologies, practices and management
+
+GCF financial instrument utilised: technical assistance grant.  
+Addressing: climate change adaptation and mitigation.  
+Executing Entity: GIZ, RD  
+
+138. Approximately 253,400 farmers will receive farmer-friendly and context-specific training, both theoretical (in a classroom setting, including virtual formats and online training) and practical (in the field via training plots), on the implementation of suites of technologies and practices for climate-smart rice production (as indicatively outlined in Table 11 and including, inter alia, LLL, AWD, SSNM, SSM, IPM, crop rotation, etc.). The project will also facilitate peer-to-peer exchange and learning, including farmer field days and agricultural fairs and expos. Particular emphasis will be placed on reaching women farmers, younger farmers (defined as being under the age of 42) and farmers who are, because of their socio-economic circumstances, particularly vulnerable to climate change – including those from women-headed households and skipped-generation households, women with disabilities, and migrant farmers and farm workers.
+
+139. Additional elements of the farmer training will include, for example:  
+• Good agricultural practices and farm management.  
+• PV water pumping (as a means of reducing potential GHG emissions associated with AWD- or FWM-related activities).  
+• Basic management and finance competences, including knowledge of the financial support instruments available for climate-smart investment (finance training materials will be developed under Sub-Activity 1.1.2.1 and delivered under Sub-Activity 1.1.1.1).  
+• Quality control and management of climate-smart service providers.  
+• Environmental and social safeguard (ESS)-related topics, including occupational health and safety (e.g. relating to the use of agro-chemicals); relevant environmental and social impact management (e.g. water pollution and biodiversity); sexual exploitation, abuse and harassment (SEAH); and farming traditions and customs and their inter-linkages with science-based farming methods (in line with the stipulations of the Environmental and Social Management Plan, Annex 6a – see also Table 26).  
+• Gender-climate inter-linkages, including the particular challenges faced by migrant women (in line with the stipulations of the Gender Action Plan (GAP), Annex 8b – see also Table 27.
+
+140. A sub-set of 50,000 advanced farmers seeking deeper engagement with climate-smart rice farming will be offered additional training. Such farmers will typically have a pre-existing basis for seeking further training – for example, they may have benefitted from earlier training delivered by a baseline or foundation project, or they may belong to a progressive mega-farm. They are also deemed to have high potential for successful completion of the training – resulting in, for example, successful TAS certification. But the key criterion for selection as an 'advanced farmer' is expressing an interest. Since training has an opportunity cost – time foregone in the field – that can be quite significant for poor smallholder farmers, only the most motivated farmers are expected to seek additional training. In acknowledgement of the fact that marginalised farmers – such as women and farmers with disabilities – may be less confident in volunteering for additional training, the project will make a pronounced effort to communicate the benefits of such training to these (and other) groups. Advanced training will include:  
+• Sustainability standards: the TAS in particular, but with additional international standards (such as the SRP) covered according to need / demand (training materials will be developed under Sub-Activity 3.1.1.1 and delivered under Sub-Activity 1.1.1.1).  
+• Carbon finance (training materials will be developed under Sub-Activity 3.1.2.3 and delivered under Sub-Activity 1.1.1.1).
+
+
+---
+*Chunk pages 66–66*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1219 (sys=94, user=1125), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.10.0 | PAGE 63
+
+• Investment calculation and planning for climate -smart rice farming , including credit management  
+training materials will be developed under Sub -Activity 1.1.2.1 and delivered through Sub -Activity  
+1.1.1.1).  
+• Climate risk insurance (insurance training materials will be developed under Sub-Activity 2.1.1.3 and  
+delivered under Sub-Activity 1.1.1.1).  
+
+## 141. Training curricula and material s will be developed to be farmer-friendly (e.g. in local languages ,  
+literacy-sensitive and written from the  farmers’ own benefit-oriented perspective ); draw to the  
+maximum extent on existing training materials, standards and guidelines256; and will undergo constant  
+quality improvement to meet farmer needs. The training materials will also include specific refresher  
+modules for NAMA Support Programme (NSP) farmers to review what was previously learned in the  
+NSP, with a focus on adaptation and resilience elements that go beyond the mitigation -focused  
+approach of the NSP. In addition, lessons learned and farmer feedback collected by the NSP will flow  
+into the development of the new material.  In this manner , successful farmers from the NSP will be  
+capacitated to act as community leaders on climate-smart agriculture and share their experiences with  
+their peers.  
+
+## 142. The training will be developed and rolled out in close collaboration with the relevant government  
+institutions and their sub-national structures (notably the Rice Department (RD)  and its regional and  
+community rice centres , the Royal Irrigation Department (RID ), the Department of Agricultural  
+Extension (DoAE ) and municipality offices) and local farmer and community organisations (which  
+include organisations that are already supporting climate-smart farmers or have climate-smart farmers  
+within their membership, as well as farmer groups and farmer cooperatives) by leveraging government  
+extension service infrastructure. This existing infrastructure will be augmented by support from IRRI,  
+relevant national scientific and  technical organisations (such as Kasetsart Univer sity and King  
+Mongkut University of Technology ), ACFS and TGO , as well as from non-government and private  
+sector stakeholders and international training and expert networks and value chain actors.  
+
+## 143. The project will facilitate private-sector participation in extension services, through: (i) sustainable rice  
+off-takers such as Ebro Foods, MARS, Olam and PepsiCo; and (ii) additional climate-smart agriculture  
+and value-chain stakeholders, such as input providers and millers, associations and others. Specific  
+areas of support  will include (inter alia): (i) conducting supplementary capacity building to support  
+farmers to understand and meet national and international sustainability standards sought by market  
+actors; (ii) capacitating farmer groups on traceability;  (iii) showcasing replicable incentive models to  
+drive farmer behavioural change towards climate-smart practices and increase sustainability of value  
+chains; (i v) educating suppliers and business partners to similarly incentivise climate -smart rice  
+farming; and (v) activating links with value chain actors, including global food agribusinesses, financial  
+institutions, input providers, technology providers, millers, traders, exporters, retailers and producer  
+organisations active in the rice sector to expand (self-financed) private sector engagement.  
+
+## 144. Involving farmer organisations and the private sector in the provision of extension services will  
+contribute to both the effectiveness of the intervention as well as the overall  sustainability of the  
+project. The private sector participants are committed to growing the sustainable rice sec tor in  
+Thailand and have pre -existing partnerships in place with GIZ and other development partners .  
+Extension activities and events that benefit from  private sector support will not advertise or market  individual products or brands, and all information provided will be  fair and neutral. The project will  
+ensure that training curricula across the public and private sector institutions are aligned.  
+
+## 145. In order to coordinate training events and monitor training results and impact, a simp le but effective  
+monitoring and reporting system will be developed and set up at the national and provincial levels;  
+this will also be leveraged to plan and manage subsequent rounds of training. This system will utilise  
+and build on existing RD and DoAE systems. Annual extension strategy implementation plans will be  
+agreed and reported on a quarterly basis.  
+
+256 A considerable body of training materials already exists, albeit scattered across countries, institutions and projects / programmes. The  
+Thai Rice Project will assemble a body of high-quality training literature spanning agronomic technologies and practices, nutrient  
+management, residues management, etc. A good example of an extant best-practice training resource is: Wuhan University and FAO  
+(202
+
+
+---
+*Chunk pages 67–67*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1198 (sys=94, user=1104), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.10.0 | PAGE 64
+
+## 146. All project-supported farmers will benefit from the training under Sub-Activity 1.1.1.1: by the end of project implementation, approximately 253,400 smallholder rice farmers will have received training, of whom a minimum of 115,000 will be women. A sub-set of 50,000 farmers will be enabled to achieve TAS certification (see Sub-Activity 3.1.1.1) and will embark upon domestic carbon market registration (see Sub-Activity 3.1.2.3). The project will devote particular effort to reaching women farmers, young farmers and vulnerable farmers, as well as coordinating with the UNEP-GEF ISRL-T baseline project (focused primarily on the North-East) which is improving local farming conditions through a landscape approach in order to reduce rural exodus. While addressing demographic change (and, specifically, the ageing of the farmer population) is not a focus of the Thai Rice Project (see Table 14), significant benefits can be generated by project-supplied training that will, in turn, enhance the attractiveness of the rice sector to prospective women and younger farmers. Capacity building of farmers and the peer-to-peer learning will enable farmers to fully assess the technical (e.g. agronomic, environmental) implications of climate-smart agriculture in the context of their current farm and broader household situation and allow them to make rational, informed decisions on adopting new techniques. Regular information to stakeholders in the sector on the extension activities will enable further support and early planning resource s such as water supply and expected demand for ser vices needed to implement climate-smart techniques.
+
+## 147. In addition to classical training approaches, the project will also develop innovative extension tools, including a training app and social media platforms where farmers (and farmer groups) can actively contribute with their experiences and successes. This will be coordinated with the relevant government institutions and with the GCF-UNDP EWMSA project. The content for the training app will be developed under Sub-Activity 1.1.1.1, while the app itself will be developed under Sub-Activity 1.1.1.3.
+
+## 148. In order to scale the training materials developed, the project will also develop a digital training toolkit on atingi.257 Atingi, which means 'to succeed' in Esperanto, is a free-of-charge, open-source digital learning platform that was developed by GIZ with BMZ support. It is currently used in conjunction with more than 200 GIZ projects worldwide and over 100 public sector, private sector and CSO institutions. It can be accessed via computer, tablet or smartphone, in online and off-line settings. It represents an 'off-the-shelf' solution to ensure that the Thai Rice Project can scale-up its training materials – with required functionality such as progress reporting, scoring, issuance of completion certificates, data protection, etc. – quickly and cost-effectively.
+
+## 149. The decision on which contents to implement as digital training will be taken during project implementation. Methods such as 'persona' (an archetype of a user), may be used to streamline and simplify the materials. Such a 'persona' approach could be fed with case-studies from specific rice farms that are also used also for training purposes (Sub-Activity 2.1.2.2). It can also support marketing campaigns for sustainable rice and quality aspects of future carbon credits ( Sub-Activity 3.1.1.4), as well as improve alignment and coordination of climate finance instruments (Sub-Activity 3.1.3.1).
+
+## Sub-Activity 1.1.1.2: Public sector capacity building, with a focus on extension services and networks
+
+GCF financial instrument utilised: technical assistance grant.  
+Addressing: climate change adaptation and mitigation.  
+Executing Entity: GIZ  
+
+## 150. Thailand already has a strong agricultural extension network that reaches across the country. However, the extension system lacks knowledge and expertise on climate-smart rice agriculture and significant capacity gaps are evident. The farmer training under Sub-Activity 1.1.1.1 will be delivered in close coordination and cooperation with this existing extension infrastructure (and in conjunction with farmer organisations and networks, and additional private sector extension support): enhancing the capacity of the extension network to address climate-smart rice farming – to supplement its current expertise in traditional rice farming – will, therefore, be crucial to switching the rice sector to a low-emission, climate-resilient model at scale, within the project areas and beyond. In addition, the extension system will be capacitated for new tasks that are relevant for climate-smart agriculture, such as MRV, gender-climate inter-linkages and ESS considerations.
+
+
+---
+*Chunk pages 68–68*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1179 (sys=94, user=1085), max_out=1024, ctx=8192
+---
+
+# B 
+ GREEN CLIMATE FUND FUNDING PROPOSAL V.10.0 | PAGE 65 
+
+The extension system does not incentivize extension professionals to promote climate-smart agricultural practices to farmers: there is, for instance, no reference to climate-smart farming in the system’s key performance indicators (KPIs). The project will support and advise RD, DoAE and BAAC to revise internal policies and incentive systems in order to anchor sustainability and climate change issues more prominently with local staff.
+
+151. At the national level, a group of agricultural extension officers, farmer organisations and technical experts will be established. This group will include RD, DoAE and – through the GCF-UNDP EWMSA project – RID staff, as well as specialists from IRRI, GIZ and Kasetsart University. Additional stakeholders will be invited to provide specialist inputs, as required – including non-governmental organisations (NGOs) and community groups that address environmental, social (e.g. disabilities, migrant workers) and gender-related issues. They will develop the overall extension strategy and approach, as well as basic materials that can be adapted to local contexts at the provincial level. Also, a group of Master Trainers will be established to roll-out the national-level training to extension staff. Master trainers will include MoAC staff (mainly from RD and DoAE) who can serve as amplifiers of knowledge within their respective organisations and provide training of further trainers within the extension network at the provincial level.
+
+152. At the provincial level, provincial representatives from RD and DoAE, local farmer organisations and local service providers will facilitate the development of provincial-level extension strategies, in conjunction with RID, TMD and other government institutions, as appropriate. Their work will include selection of the climate-smart technologies and practices most relevant to the provincial conditions (guided by the indicative structure in Table 11) and adaptation of the relevant (nationally-developed) training modules to the local context. They will also train a pool of provincial coordinators.
+
+153. The provincial coordinators will, in turn, train district extension staff and liaise with district extension staff (including community rice centres) and local farming communities to arrange local activities (peer-to-peer learning, training, field days, demonstrations, etc.).
+
+154. In parallel, Sub-Activity 1.1.1.2 will design and implement private sector integration into the extension work, such that the private sector farmer training under Sub-Activity 1.1.1.1 can take place seamlessly and coherently with the public sector extension support.
+
+## Sub-Activity 1.1.1.3: Development, verification and transfer of new technologies for climate-smart rice farming
+
+GCF financial instrument utilised: technical assistance grant.  
+Addressing: climate change adaptation and mitigation.  
+Executing Entity: GIZ, IRRI
+
+155. Sub-Activity 1.1.1.3 contains 2 strands of work: (i) digital solution development, and (ii) verification of new agronomic technologies.
+
+### Digital Solution Development
+
+156. Mobile phone penetration in Thailand is very high: 137%, indicating that there is, on average, more than one mobile phone per person. This compares with 116% in Northern Europe and 105% in North America, for example.²⁵⁸ The number of Thai mobile subscribers increased by 3.8 million (4%) in the period between 2021 and 2022 alone. Over 76% of Thai adults own a smart phone, far more than those who own a computer (32%). All (100%) mobile connections are broadband (i.e. 3G, 4G or 5G) and the median mobile internet connection speed is 31.9 Mbps, which compares favourably with the global average (29 Mbps) and with countries such as Ireland (28 Mbps), Israel (25 Mbps) or Mexico (22 Mbps). Use of websites and apps is widespread: 81% of the population use social media, mobile app downloads are increasing by 14% per year and consumer spending on mobile apps is increasing by 30% per year.²⁵⁹ Thais spend an average of 5 hours 28 minutes per day on their mobile phones, second only to the Philippines and far more than the global average (3 hours 43 minutes).²⁶⁰
+
+²⁵⁸ Datareportal (2022), Digital 2022: Global Overview Report: https://datareportal.com/reports/digital-2022-global-overview-report  
+²⁵⁹ Datareportal (2022), Digital 2023: Thailand: https://datareportal.com/reports/digital-2023-thailand  
+²⁶
+
+
+---
+*Chunk pages 69–69*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1402 (sys=94, user=1308), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.10.0 | PAGE 66
+
+## 157. Use of mobile apps by Thai farmers is widespread, is strongly encouraged by the government (notably in the context of the Thailand 4.0 strategy261) and offers significant agronomic and rural development potential.262 , 263  Examples of Thai agricultural apps include Agri-Map264 , Ricult265  and MOC Agri  
+Mart.266 However, the use of mobile apps for farming itself – and rice farming specifically – lags behind 
+general mobile usage, partly because app developers have hitherto struggled to address farmers’ 
+actual needs267, partly because generating user awareness of new apps is challenging268, and partly 
+because apps are generally most effective when accompanied by ‘real world’ interventions (e.g. 
+extension support to farmers to adopt new agronomic technologies or practices).269 The full potential 
+of agricultural apps and digital tools in Thailand has yet to be realised.  
+
+## 158. The project will support the use of mobile digital apps and tools in a number of contexts:  
+- Provision of training content for farmers (Sub-Activity 1.1.1.1).  
+- Capacity building of service providers on topics that rely heavily on digital tools (such as agro-met 
+advisories and insurance) (content developed under Sub-Activities 2.1.1.2, 2.1.1.3, etc.).  
+- Reporting crop damage and facilitating rapid claim payments (Sub-Activity 2.1.1.3).  
+- Match-making between farmers and service providers (Sub-Activity 2.1.1.1).  
+- MRV of GHG emissions ( Section E.7.2), including through digital, satellite-data-based and drone-
+based approaches, and also in support of Sub -Activity 3.1. 2.3 for carbon market (T-VER Rice) 
+implementation.  
+- Monitoring and evaluation.  
+
+## 159. Sub-Activity 1.1.1.3 will develop a single digital solution or, if advantageous to do so (e.g. for technical 
+reasons or to improve the user experience), a small number of multi -purpose solutions, to perform 
+these functions. In order to save costs and reduce development time, the project will seek to build on 
+and enhance an existing model. There are a number of candidate apps that could play a foundational 
+role, notably the Mali-Sorn app (see Sub-Activity 1.1.3.2) and the Farmbook app (Section E.7.2), and 
+each offers strengths and weaknesses in different areas (usability, existing functionality, operating 
+system compatibility, server scalability, size of existing user -base, ownership model , etc.). Another 
+potential foundational model is a match-making app pioneered by IRRI in Viet  Nam (EasyHarvest) 
+that could be tailored to the Thai context.  
+
+## 160. A detailed assessment of candidate apps , and discussions with relevant stakeholders, will be 
+undertaken during the first 6 months of project implementation, at which point a detailed roadmap for 
+app development will be formulated and approved – potentially also including the development of 
+interfaces between the project -developed app(s) and existing digital tools, to ensure seamless 
+integration of functionality for farmers . Emphasis will be placed upon technical simplicity from a user 
+perspective, given the relatively low literacy / technical competencies of farmers. Development of the 
+app itself will take place under Sub-Activity 1.1.1.3, while content development for the app – such as 
+training materials, agro -met advisories, etc. – will take place under the relevant Sub-Activities. The 
+farmer training under Sub-Activity 1.1.1.1 will serve as a channel for app awareness-raising.  
+
+## Verification of Modern Agronomic Technologies  
+
+## 161. A second strand of work will focus on the verification of new agronomic technologies that could support 
+climate-smart approaches in the Thai rice sector  and adapting their application to the local context. 
+One aspect of this work  will be devoted to drone technology. Building on a number of promising 
+baseline initiatives undertaken by the private sector  as well as the GCF-UNDP EWMSA project (FP 
+
+261 https://thaiembdc.org/thailand-4-0-2/  
+262 Khan N. et al (2020), ‘Analysing mobile phone usage in agricultural modernisation and rural development’, International Journal of 
+Agricultural Extension, 8: https://esciencepress.net/journals/index.php/IJAE/article/download/3255/1711  
+2
+
+
+---
+*Chunk pages 70–70*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1252 (sys=94, user=1158), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.10.0 | PAGE 67
+
+## 170) The project will work with farmer groups, entrepreneurs and IRRI to evaluate different use-cases of drones in conjunction with climate-smart rice agriculture and promote the most promising use-cases: e.g. for monitoring of crop development; mapping water levels, irrigation systems and land elevation to guide LLL activities; and targeted fertilizer application and pesticide spraying to reduce farm worker exposure to hazardous products as well as to reduce the overall amount of agrochemicals used, giving attention to unintended impacts. Where drone technology is found to be feasible, effective and scalable, training materials will be developed for the climate-smart training offered to farmers under Sub-Activity 1.1.1.1, to extension officers under Sub-Activity 1.1.1.2 and to service providers under Sub-Activity 2.1.1.2.
+
+## 162. Dry Direct Seeded Rice (DSR) is a crop management technology that offers considerable potential to farmers in terms of reduced labour input costs as well as reduced irrigation water requirements and methane emissions. Its specific application modalities – for example, manual or mechanised DSR, type of machine, hill or row seeding, etc. – and thus its benefits are, however, influenced by the agricultural and socio-ecological context in which it is applied. Verification and fine-tuning of DSR use-cases in the Thai context, climate impact analysis, and dissemination network and investment needs will be assessed by IRRI in the first 2 years of project implementation, in cooperation with the Rice Department. Based on these findings, the technology will be rolled out to farmers – with appropriate geographical targeting and contextual user guidance – through the extension work under Sub-Activity 1.1.1.1.
+
+## Activity 1.1.2: Enhancing farmers’ access to finance for climate-smart farming services and technologies
+
+## 163. Climate-smart agriculture is a novelty among Thai rice farmers. They are not familiar with the technologies involved and, as a result, are unable to quantify the financial benefits and impact of these technology investments on farm and household cashflows. Lack of financial understanding means that farmers – in their decision whether to adopt climate-smart agriculture or not – may overweigh the short-term negative impact on cashflows (especially if LLL is implemented) over the positive and attractive financial returns generated by climate-smart agriculture over a 5-year period (see Section D.6.3). Capacity building of farmers will enable them to fully assess the financial implications of climate-smart agriculture in the context of their current farm and broader household income and allow them to make rational, financially-informed investment decisions.
+
+## 164. Such financial capacity building may also persuade farmers of the opportunity to borrow in order to implement climate-smart rice farming, smoothing the negative impact of climate-smart technologies and practices (and LLL specifically) on farm cashflows in the first year of adoption. Only a minority of Thailand’s rice farmers currently borrow in the formal or informal sector and literacy regarding loan products – let alone new products such as the BAAC Climate-Smart Loan (CSL) scheme (see Sub-Activity 2.1.2.2) – is limited. The World Bank estimates that approximately 17-20% of Thai rural households have debt and that approximately 24% of rural borrowers have delinquent debt. According to the National Statistical Office, approximately 30% of rice farming households are in debt.
+
+## 165. Sub-Activity 1.1.2.1 will provide a suite of supportive financial training for smallholder rice farmers. The risks – and potential opportunities – presented by climate change will be integrated throughout the training and associated literature, such that the project does not simply enhance farmers’ generic financial understanding but also facilitates rational, informed investment decision-making in the context of low-emission, climate-resilient rice farming specifically.
+
+## References
+
+270 World Bank (2022), Thailand Rural Income Diagnostic: Challenges and Opportunities for Rural Farmers: https://documents1.worldbank.org/curated/en/099005010202299399/pdf/P1775991e5f180ee130cf14572184e61f60735628d80.pdf  
+271 National Statistical Office (2021), 2021 Household Socioeconomic Survey: http://www.nso.go.th/sites/2014en/Survey/social/household/household/2019/FullReport_HSES_W.pdf
+
+
+---
+*Chunk pages 71–71*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1139 (sys=94, user=1045), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.10.0 | PAGE 68
+
+## Sub-Activity 1.1.2.1: Financial literacy for farmers
+
+GCF financial instrument utilised: technical assistance grant.  
+Addressing: climate change adaptation and mitigation.  
+Executing Entity: BAAC, GIZ  
+
+## Sub-Activity 1.1.2.2: Incentive payments to support uptake of climate-smart services and technologies
+
+166. In order to boost initial uptake for climate-smart agricultural technologies and practices, in light of the novelty of such practices and farmer risk-aversion, and especially for smallholder farmers who are highly indebted and/or rent their farmland, an incentive scheme will be introduced under Sub-Activity 1.1.2.2: a partial share of the costs of climate-smart services and technologies will be supported through a grant-based incentive payment in the first year of adoption.
+
+## Sub-Activity 1.1.2.1: Financial literacy for farmers
+
+167. Sub-Activity 1.1.2.1 will develop a suite of training measures. Measures will include the development of a farmer-friendly financial literacy manual offering guidance on personal financial management (including insurance) and a training programme. The manual and training will be designed in a gender-sensitive manner under Sub-Activity 1.1.2.1 and will be delivered to farmers as part of the extension training under Sub-Activity 1.1.1.1. Additional, more advanced, financial training materials, focused on investment calculation and planning, will also be developed for a sub-set of 50,000 advanced farmers who receive supplementary training under Sub-Activity 1.1.1.1.
+
+168. The manual, investment planning materials and training will be developed by BAAC in coordination with RD and farmer organisations, building on inputs from the Thai Credit Guarantee Corporation (TCG). BAAC and TCG have built considerable experience in this area through past and ongoing farmer support programmes, notably BAAC's 'Literacy For All' and TCG's 'Debt Clinic' initiatives. The training will also build on the experience acquired by the German Savings Bank Foundation (Sparkassen Foundation, DSIK). In conjunction with the Thai Government Savings Bank (GSB), DSIK has developed an innovative gamified training approach for rural communities in North-East Thailand.272 Experiences and materials from the German-Thai Cooperation Project to Promote the Sustainable Development of Cluster Farms in Thailand will also be used.
+
+169. Both the manual and the training will focus on: (i) the basics of farm economics, with an emphasis on climate risk and climate-smart agriculture, (ii) how to run a small business, and (iii) how to increase income through prudent borrowing. Modules will also include, for example:
+
+- General financial literacy and awareness of the importance of proper financial planning at both farm and household level.
+- Analysis of the baseline financial situation of a farm, with focus on revenues, investment in equipment, variable operating costs and financial costs.
+- Analysis of the contribution of farm income to overall household income (the majority of farmers also engage in other jobs or income-generating activities).
+- Simulation of the financial effects of climate change (e.g. a drought year) on farm revenues and income.
+- Analysis of the financial implications of a farm's switching to climate-smart agriculture, including the adaptation perspective, based on different packages of climate-smart technologies and practices implemented: upfront cash outlays (e.g. the initial LLL service fee), recurring costs over a 5-year period, increase in yields that can be realistically expected vs. baseline, resulting impact on farm revenues, costs and income over five years, etc.
+- Analysis of the financial implications of a farm's switching to climate-smart agriculture on overall household income over 5 years, savings and ability to assume new debt (or refinance existing debt) and service it (pay interest, repay principal) according to loan terms.
+- Analysis of the terms and conditions of the Climate-Smart Loan (CSL) provided by BAAC (Sub-Activity 2.1.2.2) and a farmer's ability to service the loan (i.e. pay interest and repay principal according to terms).
+- Guidance on how to complete the required documents and other formalities for the BAAC CSL.
+- Analysis of the implications of climate-smart agriculture on insurance pay-outs (if a farmer has insurance) and/or the opportunity to expand insurance coverage. (Coordinated with Sub-Activity 2.1.1.3).
+
+[Page 1]  
+272 https://www.sparkassenstiftung.de/en/media/gallery/business-games
+
+
+---
+*Chunk pages 72–72*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1207 (sys=94, user=1113), max_out=1024, ctx=8192
+---
+
+# [Page 1]
+
+## GREEN CLIMATE FUND FUNDING PROPOSAL V.10.0 | PAGE 69
+
+GCF financial instrument utilised: farmer support grants.  
+Addressing: climate change adaptation and mitigation.  
+Executing Entity: BAAC  
+
+170. Sub-Activity 1.1.2.2 will provide an incentive payment – a grant payment that essentially serves as a  
+subsidy – to rice farmers to cover a partial share of the costs of their climate-smart services (see  
+Activity 2.1.1).  
+
+171. Currently, no support payments are available that are specific to the application of climate-smart  
+technologies or practices to farmers. The only exception is represented by the service providers (some  
+of whom are themselves farmers) that have received a partial subsidy for LLL machinery investment  
+under the NAMA Support Project (NSP). The NSP subsidy temporarily ranges as high as 50%, a  
+highly promotional rate that recognises the pilot nature of the NSP as well as the challenging post-  
+COVID economic context and the impacts of two consecutive droughts on NSP implementation. Other  
+farm subsidies, notably harvest support and the subsidies underlying the TRIS, are available that are  
+unrelated to climate-smart farming. They are updated every year and, in total, average approximately  
+baht 1,000/rai (~Euro 4.32/ha).²⁷³ These existing government subsidies by no means create a windfall  
+for beneficiary farmers, but simply allow them to earn a living wage from what would otherwise be  
+barely profitable farms (see the financial model provided in Annex 3a).  
+
+172. Despite the positive financial IRR generated by climate-smart technologies and practices without  
+subsidies (as detailed in Annex 3a), incentive payments are, in fact, essential to rapidly increase the  
+penetration of climate-smart technologies and practices among Thai rice farmers – for 2 principal  
+reasons:  
+
+- Climate-smart technologies and practices are an almost complete novelty in Thailand, the only  
+applications to date being those promoted by the NSP and the other foundation projects described  
+in Section B.1.4. Farmers in Thailand are risk-averse and disinclined to change farming practices  
+until there is widespread evidence of adoption and usefulness (a ‘chicken and egg’ problem).  
+Incentive payments are an effective mechanism to trigger behavioural change in agriculture²⁷⁴, as  
+demonstrated by the NSP. While recognising the success of the NSP subsidy, in order to minimi se  
+concessionality the incentive payment under the Thai Rice Project will be set at a significantly lower  
+level.  
+- While producing a positive IRR over 5 years, climate-smart technologies and practices, and in  
+particular LLL, can cause a meaningful decline in farm cashflows in the first year of adoption. For  
+instance, the financial model presented in Annex 3a shows that the typical Central Plains rice farm  
+adopting a climate-smart package including LLL would experience an 83% drop in cashflow in the  
+first year of package adoption. The incentive payment reduces this negative impact on farmers.  
+
+173. The incentive payments are also designed to boost the initial uptake of the climate-smart technologies  
+and practices and generate a catalytic peer-to-peer effect. Evidence and experience from past  
+projects (including the NSP) clearly show that this peer effect and communication between farmers is  
+essential to achieve a successful roll-out of practices considered new or innovative. Farmers in  
+Thailand and elsewhere are inherently risk-averse and sceptical of new technologies²⁷⁵, so network  
+effects generated by early adopters will be critical to overcome these barriers.  
+
+174. The incentive payments provided under Sub-Activity 1.1.2.2 will be made available for 2 years of the  
+Thai Rice Project. The first project year will be devoted to establishing and operationalising the  
+payment scheme and commencing the relevant training for farmers. The scheme is expected to  
+become operational after one year of project implementation and to remain in place in Years 2 and 3,  
+
+²⁷³ Attavanich W. et al (2019), ‘Farms, farmers and farming: a perspective through data and behavioural insights’, PIER Discussion Papers,  
+122: https://econpapers.repec.org/scripts/redir.pf?u=https%3A%2F%2Fwww.pier.or.th%2Ffiles%2Fdp%2Fpier_dp_122.pdf;h=repec:pui:dpaper:1  
+²⁷⁴ Springgmann M. and Freund F. (2022), ‘Options for reforming agricultural subsidies from health, climate and economic perspectives
+
+
+---
+*Chunk pages 73–73*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1207 (sys=94, user=1113), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.10.0 | PAGE 70
+
+During which farmers who have received training on climate-smart agriculture and financial management (under Sub-Activity 1.1.1.1) will be able to apply for incentive payments.
+
+175. Farmers’ incentive payment applications will be processed by BAAC and by the BAAC provincial working groups, and will be approved by BAAC. Farmers who have been trained on climate-smart agriculture and financial management through the extension services under Sub-Activity 1.1.1.1 will be eligible to apply for the incentive payment. The incentive payment will be paid to farmers through up to two tranches and will be used by them to cover initially negative cashflow resulting from the switch to CSA and to pay climate-smart agriculture service providers for services rendered. These service providers must be on the register of quality-assessed providers maintained by the project; the register will be established at project inception and updated thereafter.
+
+176. Eligibility criteria will be established to limit the approval of financial incentives only to farmers who:  
+(a) are expected to generate a catalytic network effect to draw in their peers, meeting a climate-performance-related and early-adopter-related criteria approach; and/or  
+(b) are particularly vulnerable due to one or more of the following factors:  
+(i) household income below a certain threshold,  
+(ii) inability to borrow from BAAC or other financial institutions (for instance due to lack of collateral or pre-existing loan exposures),  
+(iii) farm location in an area determined to be particularly exposed to climate change and other crop risks,  
+(iv) lack of irrigation (resulting in only one farming season), and  
+(v) gender considerations.
+
+177. Each year, two categories of incentive payment packages with differing support levels will be offered:  
+(i) a higher support level for climate-smart agriculture packages that include LLL, this being the technology that requires the largest cash outflow in the first year of adoption (due to the high LLL service fee); and  
+(ii) a lower support level for climate-smart agriculture packages that do not include LLL and therefore result in a smaller reduction in farm cashflows in the first year of implementation relative to the business-as-usual baseline. The package including LLL will be centred on the Central Plains and North-East, while the package excluding LLL will be offered in the North. Exact incentive levels will be potentially revised at project inception based on actual climate-smart technology costs at the time. Indicatively, for the purpose of estimating the GCF budget for the climate-smart incentive payments, the schedule presented in Table 12 has been used. In addition, absolute caps will be set (on a baht per farm rai basis) to avoid abuse, such as artificial inflation of LLL service fees by providers who may want to capture a portion of the incentive payment.
+
+Table 12: Incentive Payments for Climate-Smart Rice Farming Services
+
+| Incentive Payment Amount (Thai Baht) per Eligible Participating Farmer | Project Year | Year 1 | Years 2-3 | Years 4-5 |
+|------------------------------------------------------------------------|--------------|--------|-----------|-----------|
+| Payment With LLL (Central Plains, North-East) Set-up of scheme         | Baht 7,000 (~Euro 189) | None   | None      | None      |
+| Payment Without LLL (North) Set-up of scheme                           | Baht 4,000 (~Euro 108) | None   | None      | None      |
+
+178. Although payment applications will be processed and approved by BAAC, and payments will be disbursed by BAAC to eligible farmers upon submission of required documentation, the incentive payments will be available to farmers irrespective of their broader relationship with BAAC: i.e., farmers who do not intend to apply for the BAAC Climate-Smart Loan (CSL) under Sub-Activity 2.1.2.2 or any other loans offered by BAAC, or who are ineligible for BAAC loans, can nonetheless benefit from the incentive payment.
+
+179. The total volume of the incentive scheme will be limited to a total amount of Euro 7.6 million, which constitutes approximately 19% of the overall requested GCF grant amount. With this funding, approximately 16% of the 253,400 beneficiaries can be reached with incentive payments to serve as early adopters in order to generate a catalytic peer-to-peer effect.
+
+180. Once a farmer agrees to adopt a climate-smart technology package from a registered service provider, the farmer will receive the incentive payment from BAAC when provision of the climate-smart service/input commences, under a seamless process that minimizes the time between service/input provision and payment by BAAC. If the farmer is not eligible for a CSL loan
+
+
+---
+*Chunk pages 74–74*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1118 (sys=94, user=1024), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.10.0 | PAGE 71
+
+## Output 2.1: Service providers invest in and offer climate-smart technologies to rice farmers
+
+### Activity 2.1.1: Building capacity of service providers for the supply of climate-smart technologies and practices in rice farming
+
+182. Service providers have, to date, proved reluctant to enter the rice sector. For LLL, the NSP is providing technical support (capacity building, awareness-raising) and financial support (directly through a loan programme and indirectly through a revolving mechanism for farmers) in order to catalyse private sector provision of LLL services. This is achieving reasonable success but is encountering greater-than-expected risk aversion from service providers, who are deterred by market uncertainties (notably, the unknown level of demand from farmers, in part because of the climate-related disruption – drought – experienced by farmers over the past couple of years ), as well as challenges faced by service providers in accessing financing for equipment. Beyond LLL, services related to other climate-smart technologies, such as straw collection and advanced seeding machinery, as well as financial and insurance products, are not readily available. This is partly due to the nascent state of climate-smart agriculture in Thailand, as well as the fragmented and low-profit nature of the rice sector specifically.
+
+183. Activity 2.1.1 will expand the pool of potential service providers by reaching out beyond the LLL market and the MSME sector hitherto targeted by the NSP to also include mega-farms, cooperatives, water usage groups and community rice centres, while making sure that women-led institutions are targeted specifically. These institutions typically attract high levels of trust from farmers (who are often co-owners) and have established track records of jointly purchasing machinery and offering support services to their members. The Thai Rice Project will provide technical assistance and advisory support to these new classes of service provider, as well as a continuation of NSP-like technical support to MSMEs, to enable the service providers to offer high-quality climate-smart services to rice farmers. Whereas NSP technical assistance for service providers focused primarily on LLL, Thai Rice Project support will be broader, geographically and technically, and will encompass suites of additional climate-smart technologies (see Table 5) that address climate change mitigation and adaptation, as well as more business-oriented support (how to build sustainable business models).
+
+184. Activity 2.1.1 will also capacitate additional climate-smart services offered to farmers, beyond those directly related to in-field application – including support to agro-met advisory services provided by TMD and other stakeholders, and support to the TRIS.
+
+### Sub-Activity 2.1.1.1: Promotion of quality assurance and match-making for climate-smart agricultural services
+
+GCF financial instrument utilised: technical assistance grant.  
+Addressing: climate change adaptation and mitigation.  
+Executing Entity: GIZ, IRRI  
+
+185. In order to ensure a high quality of service provision, a quality approval process – tailored to each climate-smart technology and practice – will be developed and operationalised. Service providers that receive capacity building support will be eligible to apply for quality approval. Service providers will receive training on the project's quality standards and will be advised on how to reach them. Those that meet the quality standards for one or more climate-smart technologies and practices will be listed in a project-maintained register of quality-assessed service providers. Only registered service providers will be eligible to benefit from farmers' incentive payments (Sub-Activity 1.1.2.2) and the BAAC Climate-Smart Loan (Sub-Activity 2.1.2.1).
+
+
+---
+*Chunk pages 75–75*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1090 (sys=94, user=996), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.10.0 | PAGE 72
+
+## Sub-Activity 2.1.1.2: Strengthening agro-met service provision
+
+GCF financial instrument utilised: technical assistance grant.  
+Addressing: climate change adaptation and mitigation.  
+Executing Entity: GIZ  
+
+186. The app developed under Sub-Activity 1.1.1.3 or, if more appropriate, a dedicated app will have match-making functionality integrated within it. This will enable interested farmers and service providers to find each other, communicate, agree terms and a service schedule, and provide mutual ratings for each other after the work has been completed. The development of the quality standard will serve to provide farmers with confidence and reduce their reluctance to commission service providers, while the match-making functionality of the app will offer service providers assurance about market demand for their services. The mutual rating element of the app will promote high standards in the market.
+
+## Sub-Activity 2.1.1.2: Strengthening agro-met service provision
+
+187. The Thai TMD is currently piloting a programme called ‘Climate Field School’ (CFS) to demonstrate the potential of location-specific weather modelling accompanied by crop simulation to provide precise weather forecasting and tailored crop planning to farmers. CFS assimilates information on current crop conditions (e.g. the growth stages of crops), soil conditions (e.g. moisture content), crop-specific water balance, past meteorological conditions (e.g. temperature and rainfall in recent weeks) and future meteorological conditions (daily, weekly and seasonal forecasts) from a variety of sources, and provides tailored advisories for users. Through Sub-Activity 2.1.1.2, the Thai Rice Project will collaborate with, upscale and broaden CFS. This is a particular need in the North-East, where agro-met advisory services could play an essential role for rain-fed rice farming.
+
+188. Sub-Activity 2.1.1.2 incorporates 3 strands of work:  
+• The project will link TMD with RD and DoAE so that TMD is able to reach out to farmers during the training under Sub-Activity 1.1.1.1 and to extension officers under Sub-Activity 1.1.1.2 to build relationships, raise end-user awareness and, ultimately, channel advisories to farmers. TMD will also provide inputs for RD’s, DoAE’s and RID’s advisories – such as water management advisories for AWD practitioners and planting / treatment advisories for different rice varieties.  
+• In order to expand the scope of CFS so that it can address the specific needs of climate-smart rice farmers, the project will support exchange on information and decision-support needs, as well as support data sharing, as appropriate. TMD will then (further) develop advisories, or inputs to advisories provided by other agricultural extension network institutions, tailored to the needs of farmers who are implementing AWD, SSNM, alternative rice varieties and the other climate-smart technologies and practices.  
+• Content development for the mobile app developed under Sub-Activity 1.1.1.3 to supplement the existing SMS functionality of CFS, thereby enabling the transmission of richer, more detailed advisories and the availability of a searchable library of good-practice guidance for climate-smart rice farmers (including videos, graphics and other user-friendly content for farmers who may lack the literacy, technical skills or simply time to absorb detailed text).
+
+189. The emphasis will be on improving the so-called ‘last mile’, target-group-oriented, delivery of high-quality information to farmers – and, in particular, climate-smart farmers – so that they are able to make better on-farm decisions. In addition to TMD, RD and DoAE, Sub-Activity 2.1.1.2 will harness the expertise and data of other relevant agencies, most notably SWOC and GISTDA. In turn, the data collected from farmers and used to refine TMD’s modelling and advisories under Sub-Activity 2.1.1.2 will also be used – while adhering to data protection standards – by insurance companies and other service providers to develop new products for climate-smart farmers and by GISTDA for ground-truthing and model parameterisation in the context of its work on index-based crop insurance (see Sub-Activity 2.1.1.3).
+
+
+---
+*Chunk pages 76–76*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1108 (sys=94, user=1014), max_out=1024, ctx=8192
+---
+
+# B  
+## GREEN CLIMATE FUND FUNDING PROPOSAL V.10.0 | PAGE 73  
+
+### Sub-Activity 2.1.1.3: Improving insurance services offered to rice farmers  
+
+GCF financial instrument utilised: technical assistance grant.  
+Addressing: climate change adaptation.  
+Executing Entity: GIZ  
+
+190. In addition to reducing GHG emissions from the Thai rice sector, Activities 1.1.1 and 1.1.2 serve to reduce smallholder farmers’ risk exposure to climate change. Sub-Activity 2.1.1.3 complements these risk reduction interventions by transferring the residual risk to the (national and international) insurance market.  
+
+191. Since 2011, a number of insurance companies in Thailand (notably, Dhipaya, Thaivivat and Viriya) have offered rice insurance. These insurance products are made available through the umbrella Thai Rice Insurance Scheme (TRIS) managed by the TGIA and distributed via BAAC. The TRIS seeks to protect farmers against weather-related risks such as floods and droughts, and other threats, including diseases and pests. Tier 1 insurance premiums (basic insurance coverage) are subsidised by 100% (by the government and BAAC) for loanee farmers and by 60% (by the government) for non-loanee farmers. However, Tier 2 voluntarily-purchased top-up insurance is not subsidised.  
+
+192. Awareness of the rice insurance scheme is low among farmers, and it is regarded with some scepticism due to high costs and – from the farmers’ perspective – uncertain benefits. The current insurance scheme is restricted to in-season (main season) rice only – despite the fact that drought, pests and disease are often a greater problem for off-season rice growing – and it has acquired a reputation for being bureaucratic and overly rigid. It is also not well equipped to address anticipated future climate change impacts, with potentially greater damage to crop yields. However, due to the risk of adverse selection and some high loss ratios in recent years, key stakeholders are not interested in further increasing the size of the TRIS in its current form.  
+
+193. Hence, Sub-Activity 2.1.1.3 focuses on short-term interventions that will increase the efficiency and customer value of the existing TRIS model (focused on indemnity insurance), accompanied by a medium-term objective of transitioning the TRIS to an index-based ('parametric') model.  
+
+#### Short-Term Focus: Improving the Existing TRIS Model  
+
+194. One of the challenges faced by the TRIS is farmers’ low awareness of the benefits of insurance as a climate risk transfer tool when disaster occurs. The take-up rate of Tier 2 insurance (voluntary insurance with no subsidy) is very low. There is a need to raise farmers’ (men’s and women’s) awareness, both to ensure that their absorption capacity for climate shocks is improved and also to ensure the sustainability of the TRIS. Awareness-raising needs to be combined with farmers’ training on, and take-up of, climate-smart rice technologies and practices. Implementation of climate-smart rice technologies and practices can reduce farmers’ risk and hence could function as an incentive to reduce premiums of both Tiers and especially ease the adverse selection of Tier 2 farmers.  
+
+195. Sub-Activity 2.1.1.3 will develop, or build on existing, training manuals and materials that explicitly make the link – hitherto neglected in TRIS marketing and outreach activities – between climate change and insurance, and, specifically, the benefits available to farmers from transferring increasing (climate-driven) risk through insurance products, notably Tier 2 insurance. These materials will be integrated into the financial training materials developed under Sub-Activity 1.1.2.1. Climate risk insurance literacy training – including through a training-of-trainers approach – will be provided to:  
+- Farmers (delivered through Sub-Activity 1.1.1.1) – with support from BAAC and other relevant partners. In addition, targeted women’s groups will be offered this training to raise women’s awareness of the risk mitigation benefits of insurance and potential applications for businesses based on rice residues.  
+- Agricultural extension officers (delivered through Sub-Activity 1.1.1.2) – with support from TGIA and OIC.  
+
+196. The benefits of an enhanced app for purchasing insurance, reporting damage and reviewing insurance information will also be assessed.
+
+
+---
+*Chunk pages 77–77*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1203 (sys=94, user=1109), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.10.0 | PAGE 74
+
+## Medium-Term Focus: Transitioning the TRIS Model
+
+197. Loss assessment under the TRIS is currently conducted manually by DoAE extension officers and local administration officials as part of the national disaster relief assistance programme. This is time-consuming – leading to delays in insurance pay-outs – and introduces an element of subjectivity in the assessment process. Cost efficiencies could be introduced, and farmers’ confidence in the TRIS enhanced, if the system transitions to an index-based system. Insurance cover that is triggered by a specified meteorological event is ideal for providing rapid relief. It is also particularly well-suited to droughts and heatwaves because triggers can be linked to obvious parameters (‘indices’) – such as water precipitation or heating degree days – that can be precisely tailored to specific risks and yield losses in defined geographical areas. Insurance pay-outs can be automatic and immediate if the parameter is triggered, and the insured party does not have to file a n insurance claim. As described in Section B.1.3, a number of – somewhat uncoordinated – baseline initiatives have been undertaken to pave the way to an index-based insurance scheme. GISTDA, for example, estimates that its remote sensing data of floods and droughts is now capable of validating agricultural losses with 70% accuracy. However, GISTDA’s analysis is still at the trial stage, is undergoing continual improvement and is not yet officially used to support the TRIS.
+
+198. Sub-Activity 2.1.1.3 will build on the baseline initiatives and, through collaboration with GISTDA, TMD, OAE, universities and private sector insurers, will support the TRIS stakeholders to develop an index-based insurance model that, for example:
+• Is objective, transparent and consistent with actual losses.
+• Has the confidence and support of all the relevant TRIS stakeholders.
+• Builds, as feasible, on the extensive data collection system developed for the project to enable high-resolution geographical price differentiation of insurance premia, such that farmers who are less at risk of crop damage, or for whom the resulting damage is lower because of climate-smart measures, pay lower prices for insurance than more climate-exposed farmers.277 Data management modalities will be detailed after project inception: data privacy and data anonymisation will form important elements of this work and all data management will be compliant with the Personal Data Protection Act (PDPA).278
+• Possibly incorporates modules or product development on areas currently not insured, such as extreme shocks279 and off-season rice.
+• Is accompanied by an agreed roadmap for transitioning the current indemnity-based TRIS model to an index-based model. Implementation of the roadmap will commence in the project implementation period, resulting in partial application or piloting of index-based insurance during the project implementation period. The roadmap will also directly support the government’s TRIS Action Plan (as contained in the 13th National Economic and Social Development Plan, NESDP; see Section B.1.3), thereby ensuring sustained future impact beyond the duration of the Thai Rice Project.
+
+## Activity 2.1.2: BAAC climate-smart and farmer-friendly financial product development and roll-out
+
+199. The adoption of climate-smart technologies will reduce farm cashflows in the first year of implementation, especially if LLL services are part of the suite of technologies chosen by a farmer. Unless the farmer has meaningful savings, he/she would not be able to fund such a cash shortfall and benefit from the subsequent large increase in farm income expected in Years 2–5 of climate-smart rice farming implementation. The incentive payment planned under Sub-Activity 1.1.2.2 will buffer the first-year cash decline but will not completely eliminate it.
+
+200. The new BAAC Climate-Smart Loan (CSL) scheme (see Sub-Activity 2.1.2.1) is intended to allow creditworthy farmers to bridge the gap, with terms that are specifically tailored to climate-smart investments – such as the grace period in the first year and subsequent amortisation over 4 years with payments post-harvest – and favourable interest rates. While BAAC currently offers a range of farm loan products, none has terms specifically designed to meet the needs (e.g. 5-year time horizon, large initial cash outflow) of rice farmers switching to climate-smart agriculture. The BAAC CSL scheme will function based on farmer demand.
+
+277 Policy options (e.g. a price cap regime) to protect high-risk farmers from excessively high insurance prices will also be explored.  
+278 https://www.dataguidance.com/notes/thailand-data-protection-overview   
+279 A number of insurance and re-insurance companies, including Allianz, Swiss Re and Munich Re, have expressed interest in developing and offering such ‘extreme event insurance’ to rice farmers who practise climate-sm
+
+
+---
+*Chunk pages 78–78*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1046 (sys=94, user=952), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.10.0 | PAGE 75
+
+## 201. BAAC staff and credit officers are currently not knowledgeable on climate-smart agricultural technologies and their impact on cash flow patterns at the farm level, and are therefore unable to evaluate how the creditworthiness of farmers and service providers may be affected by their adoption. Because of their lack of knowledge, they are also unable to proactively recommend climate-smart loan products, including the BAAC CSL. Introducing the new BAAC CSL without proper training, especially of credit officers at provincial branches, may result in limited uptake of the CSL, depriving farmers and service providers interested in climate-smart rice farming of a meaningful amount of funding.
+
+### Sub-Activity 2.1.2.1: Climate-smart agricultural lending by BAAC
+
+GCF financial instrument utilised: none (entirely BAAC co-finance)  
+Addressing: climate change adaptation and mitigation.  
+Executing Entity: BAAC  
+
+## 202. BAAC will provide a CSL credit line of up to Euro 30 million, to be disbursed on a demand basis to farmers and service providers that adopt one or more (out of 7) of the Thai Rice Project’s supported climate-smart agricultural technologies and practices. The terms of the CSL will be concessional and tailored to the cashflow profile of climate-smart investments, which typically involve a large investment in the first year, followed by an increase in farm income (net of climate-smart agriculture costs) over the subsequent 4 years. This is particularly the case for climate-smart packages that include LLL services, which are especially expensive in the first year of application.
+
+## 203. The precise terms of the CSL will be confirmed at project inception, but are expected to feature:
+
+- Use of proceeds restricted to the purchase of inputs, equipment and services critical to the implementation of 7 of the project’s climate-smart agriculture technologies and practices (Table 13).
+- Average loan amount expected to be approximately baht 60,000 (~Euro 1,622).
+- 5-year maturity with a 1-year grace period.
+- Repayment in 4 equal annual installments in Years 2-5, with the instalment payment due – in the case of farmer loans – after each main season harvest.
+- Concessional interest rate of 2%.
+
+### Table 13: Eligible Uses of the BAAC Climate-Smart Loan
+
+| Technology / Practice | Main Costs / Expenditures for Farmer | Eligible for BAAC Climate-Smart Loan | Role of BAAC Climate-Smart Loan |
+|-----------------------|--------------------------------------|--------------------------------------|----------------------------------|
+| Laser land levelling (LLL) | Tractor, hydraulic system and laser system – typically purchased as a service from a specialist service provider. LLL should be repeated every 5 years. LLL can be accompanied by land preparation (vegetation clearance, drainage, etc.), which contributes additional costs. | Yes | For service providers: investment costs for LLL equipment (scraper and laser) For farmers: service cost |
+| Alternate wetting and drying (AWD) | Limited costs, as AWD essentially relies on good drainage practice rather than a purchased technology. Periodic flooding and drainage require movement of water in and out of paddy fields; depending on topography and the drainage system, this may require | Yes – solar PV | Investment costs for solar PV pump systems |
+| Solar PV pump systems | | | |
+
+> 280 The BAAC credit line is planned as co-finance. In case robust predictions and tracking of a loan scheme are not possible, parallel finance might be considered.  
+> 281 The Thai Rice Project supports 10 climate-smart technologies and practices, 7 of which are eligible under the CSL scheme and 3 of which are not: see Table 13.  
+> 282 A white list of eligible activities for CSL support, the detailed CSL design as well as the applicable rules and procedures will be specified with BAAC at project inception, based on the project financial model (incorporating up-to-date costs at the time of project inception), the project impact model and stakeholder consultations (including at the sub-national level).
+
+
+---
+*Chunk pages 79–79*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=893 (sys=94, user=799), max_out=1024, ctx=8192
+---
+
+# B 
+## GREEN CLIMATE FUND FUNDING PROPOSAL V.10.0 | PAGE 76 
+
+### Water pumping (and potential diesel consumption)
+Site-specific nutrient management (SSNM)  
+SSNM relies upon calibrated and typically reduced, but site-specific, application of fertilizer. Local soil testing determines fertilizer application dates and amounts; testing costs may be borne by farmers or (typically) local extension services. In order to apply site-specific fertilizer formula at reduced costs, farmers and/or farmer groups may invest in their own fertilizer mixing machines.  
+Yes  
+Investment costs for fertilizer mixers, and for base fertilizer as input  
+
+### Straw and stubble management (SSM)  
+Rice straw baler and compactor – typically purchased as a service from a specialist service provider. (Straw storage and treatment costs – pelletisation, shredding, etc. – are borne by downstream value-chain actors). Avoidance of burning entails additional land preparation costs for the next rice crop, including ploughing of stubble and low-grade straw into the soil.  
+Yes  
+For service providers: straw baling equipment   
+For farmers: straw baling services   
+
+Rice straw processing equipment: e.g. for biofertilizer or pulp production  
+
+### Integrated pest management (IPM)  
+Limited costs, as IPM relies upon reduced insecticide / herbicide application due to modified farming practices and scouting.    
+No None  
+
+### Rice variety diversification  
+Limited monetary costs (as rice research and development (R&D) and extension costs are borne elsewhere) but, from the farmer’s perspective, potentially elevated risk due to adoption of new or unknown (to the farmer) rice varieties.  
+No None  
+
+### Crop diversification, rotation  
+Limited monetary costs (as R&D and extension costs are borne elsewhere) but, from the farmer’s perspective, potentially elevated risk due to adoption of alternative crops that require different land preparation and management.  
+Yes  
+Decision-support tools, specialised machinery for alternative crops  
+
+### Dry direct-seeded rice (DSR)  
+Costs associated with dry DSR seeding equipment, such as drum seeders.  
+Yes Drum seeders and seeding equipment  
+
+### Farm-level water management (FWM)  
+Purchase and installation of small-scale on-farm water tanks and associated pumping costs (to move water from tanks to fields and vice versa)  
+Yes  
+Solar PV pump systems as well as micro- / farm-level irrigation systems (e.g. drip irrigation, water tanks)  
+
+### Agro-met advisory services  
+None – app and agro-met services are free for farmers. No None  
+
+204. For BAAC to verify that the use of funds is compliant with the loan terms, applicant farmers / service providers will be required to show proof of intention to purchase the relevant input / equipment / services. For instance, for a farmer this could be an order form from a registered service provider (see Sub-Activity 2.1.1.1) that details the list of items to be purchased with clear technical specifications, individual prices and total order size, and identity and contact information of the prospective buyer.  
+
+205. The establishment of the CSL scheme does not impose an obligation to lend on the part of BAAC.  
+BAAC will maintain full discretion over credit decisions and may refuse to approve loans for farmers /
+
+
+---
+*Chunk pages 80–80*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1135 (sys=94, user=1041), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.10.0 | PAGE 77
+
+## Sub-Activity 2.1.2.2: Climate-smart lending capacity development for BAAC
+
+GCF financial instrument utilised: technical assistance grant.  
+Addressing: climate change adaptation and mitigation.  
+Executing Entity: GIZ  
+
+207. Sub-Activity 2.1.2.2 will enable BAAC and its staff to:  
+• Understand the financial implications of different climate-smart rice agriculture technologies and practices at farm level.  
+• Further refine the terms of the BAAC CSL scheme described in Sub-Activity 2.1.2.1.  
+• Cogently explain to farmers and service providers how the CSL scheme fits their needs to fund a climate-smart investment and fits within their broader household / SME borrowing and savings plans.  
+• Better monitor the risks associated with the BAAC CSL portfolio after loans are disbursed.  
+• Understand and appreciate the needs and circumstances of particular groups of farmers who are currently under-served by financial products (notably, women farmers).  
+• Develop an enhanced understanding of environmental and social safeguards: for instance, in relation to occupational health and biodiversity conservation.  
+
+208. BAAC’s loan activities are designed to be supportive of the government’s agricultural objectives. Until recently, this has meant a focus on ‘conventional’ agriculture, intensification and increasing yields. With the introduction of the government’s Bio-Circular-Green (BCG) Economy Policy in 2021, which forms a component of the country’s core National Strategy (2018 -2037), the strategic emphasis is changing. The BCG Agriculture and Food Focus Area has 4 targets (2021 -2026):  
+(i) increase agricultural GDP from 1.3 trillion to 1.6 trillion baht;  
+(ii) increase the number of ‘smart farmers’ from 1 to 2 million;  
+(iii) increase the proportion of high-value (‘premium’) products to 30%; and  
+(iv) increase the incomes of smart farmers.  
+
+The BCG Economic Policy now forms the primary framework for guiding BAAC’s sustainability-related work. BAAC is in the process of developing, or reorienting, a portfolio of financial products to support the BCG Economic Policy, including Green Credits, Smart Farmer Credits, agricultural SME loans, Career Dream loans, Good Innovation loans and Build Thai Community Business loans. While not all of these products are directly relevant to rice farming or, indeed, to climate change, they are illustrative of the profound strategic reorientation that BAAC is undergoing.  
+
+209. As a result of Sub-Activity 2.1.2.2, BAAC will be able to continue, expand and adapt the CSL scheme, as well as other existing or new lending products, as needed after the Thai Rice Project, in order to support the continuing implementation of climate-smart agriculture among rice farmers and potentially other agricultural sub-sectors. In this regard, the project will also compile a comprehensive data-set  
+
+283 Full list of criteria available at https://www.baac.or.th/en/content-product.php?content_group_sub=2.  
+284 The Environmental and Social Management Plan (ESMP) is provided in Annex 6a.  
+285 https://www.nstda.or.th/thaibioeconomy/138-bio-circular-green-economy-to-be-declared-a-national-agenda.html.
+
+
+---
+*Chunk pages 81–81*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1177 (sys=94, user=1083), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.10.0 | PAGE 78
+
+## Showing, over the project period, the impact of climate-smart agriculture adoption on the profitability (and hence creditworthiness) of the adopting farms.
+
+This data-set will be shared with BAAC and will allow BAAC to consider the application of lower interest rates in future lending programmes targeted at climate-smart rice agriculture, outside the scope of the Thai Rice Project.
+
+Additionally, BAAC’s ongoing strategic reorientation will be linked to, and coordinated with, the rice sector Climate Finance Strategy that will be developed under Sub-Activity 3.1.3.1.
+
+## Beneficiaries of the capacity building under Sub-Activity 2.1.2.2 will be both corporate and provincial staff at BAAC who have been previously exposed to the Bank’s farm lending activities and therefore have some pre-existing knowledge of agricultural lending.
+
+Capacity development will build on:  
+(i) the finance training manual developed for farmers under Sub-Activity 1.1.2.1, which will have additional – more advanced, BAAC-oriented – chapters developed for it under Sub-Activity 2.1.2.2; and  
+(ii) training workshops, each lasting up to 3 days and delivered by contractors appointed by the project in coordination with GIZ experts.
+
+The workshops will take place at BAAC offices throughout the project area and will be concentrated in the first 2 years of project implementation.
+
+## Topics covered by the additional manual chapters and during the workshops will include, for example:
+
+- Specific for BAAC management: support in designing a tailored CSL product, refining the features provisionally agreed with BAAC to date (see Sub-Activity 2.1.2.1).  
+- Explanation of each climate-smart technology, with a particular focus on the costs required and the technology’s impact on farm/service provider cashflows over a 5-year period.  
+- Explanation of how the adoption of climate-smart technologies and practices alters the credit profile of a rice farmer, de-risking his/her rice farming activities in the future by improving yields and/or reducing certain costs.  
+- Case-studies of specific rice farms (including women farmers) and service providers adopting climate-smart agriculture in different provinces and regions, sharing of quantitative data from the NSP project and interactive climate-smart credit assessment exercises for BAAC loan officers.  
+- Detailed overview of the eligible inputs, equipment and services that can be financed through the CSL, as well as required documentation to verify that CSL proceeds will be used by farmers/service providers for the eligible purposes.  
+- Training on marketing and explaining the CSL scheme to prospective borrowers so that they are fully informed when making the borrowing decision.  
+- In addition to directly training staff, a training module will be dedicated to internal BAAC trainers (training of trainers model) so that they can replicate the training programme for additional BAAC staff in the future.  
+- Training will also cover methods and tools to assess climate change-related risks in BAAC’s lending operations. This will make use of, and build on, innovative products developed by the German Savings Bank Foundation (DSIK) – for example, a ‘risk radar’ toolbox to score and evaluate future climate change hazards’ impacts on BAAC’s agricultural credit portfolio.
+
+## In addition to delivering the training programme, Sub-Activity 2.1.2.1 will also produce training materials and knowledge tools covering the above topics, for use during project implementation and also for re-use in future training sessions that BAAC may decide to run independently.
+
+Such tools will include documents, presentations and BAAC web pages.
+
+# Output 3.1: Strengthened institutional and market environment for climate-smart agriculture
+
+## Activity 3.1.1: Strengthening market linkages and standards for sustainable rice and biomass residues
+
+Under Activity 3.1.1, the Thai Rice Project will assist government bodies and rice value chain actors to strengthen the institutional and market environment for climate-smart agriculture.
+
+The principal strands of this work will be:
+
+- Developing the sustainable rice markets. This strand of work directly supports the roll-out and scaling-up of the national standard and certification system for sustainable rice farming and embeds the principles of climate-smart rice production and consumption in policy and practice. It responds to:  
+  (i) government development objectives: to improve rice farmer livelihoods;  
+  (ii) government market development and export promotion priorities: to maintain Thailand’s position as a leading exporter of safe and high-quality rice; and  
+  (iii) consumer trends of greater interest in environmental stewardship.  
+
+- Developing the biomass residues markets. This strand of work seeks to realise opportunities to develop additional income streams for rice farmers through marketing of the by-products of rice.
+
+
+---
+*Chunk pages 82–82*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1141 (sys=94, user=1047), max_out=1024, ctx=8192
+---
+
+# B 
+ GREEN CLIMATE FUND FUNDING PROPOSAL V.10.0 | PAGE 79 
+
+## Production, notably rice straw and husks (including upcycling options for rice straw, such as paper / pulp production and bio-fertilizer production) , while incentivising compliance with public health measures to reduce burning of agricultural residues.
+
+## Strengthening linkages to private sector partners, value chains and public-private partnerships. This strand of work seeks to ensure that the supply-side interventions to drive best practice adoption by farmers will be complemented by parallel demand-side market development efforts targeting domestic, regional, and global supply chains for climate smart rice.
+
+## The National Bureau of Agricultural Commodity and Food Standards (ACFS), with support from GIZ and the Management System Certification Institute (M ASCI), is currently developing the Thai Agricultural Standard for Sustainable Rice (TAS) certification scheme, which is expected to launch by end-2023. ACFS and RD have received early interest from domestic companies and farmer groups seeking to certify. Benchmarking of the TAS against international standards is also underway. It is expected that the TAS will be recognised as equivalent to selected international systems (e.g. the SRP Standard and SAI Platform FSA), offering an additional opportunity for international market actors to purchase sustainable rice certified according to a recognised standard. Sub-Activity 3.1.1.1 will build on these baseline developments to strengthen the TAS in a number of important respects.
+
+## With regard to biomass residues, there is a significant opportunity to: (i) promote technologies for on-field management of rice stubble and straw (e.g. ploughing, aggregation) to farmer groups and/or SMEs; (ii) promote models that increase efficiencies while delivering the greatest economic benefits to farmers (e.g. transforming rice straw at source to pellets), to potentially increase the sales price and reduce transport costs by volume; (iii) engage private sector off-takers to strengthen and scale networks to match demand and supply of aggregated rice straw; (iv) engage high-readiness farmer groups, young farmers and/or local SMEs to lead community-level management programmes to collect, clean, store, transform and/or sell (transformed) rice straw or to utilise it locally within the community to strengthen community identity and resilience.
+
+## As identified in the Gender Assessment and Gender Action Plan (Annexes 8a and 8b), there is a particular opportunity with regard to local women’s groups, many of which currently produce – at limited scale and primarily for own-use or local use – bio-fertilizer from a mix of cow dung and vegetation (typically grasses). Rice straw represents a viable – and currently neglected – substrate for scaling-up bio-fertilizer production. In addition to supplementing the local incomes of women, this will serve to reduce the need for (GHG-emitting) chemical fertilizers.
+
+## Market-driven solutions that engage rice value chain actors – including service providers, technology providers, agricultural input providers, private sector actors interested in by-products (sub value chains), and retailers – are required to achieve climate-friendly value chains that extend from the farm to the consumer. Sub-Activity 3.1.1.2 will expand engagement of private sector actors across a range of activities, such as increasing purchases of climate-smart rice to supply national and international markets and in relation to consumer awareness campaigns to boost demand for, and the value of, climate-smart rice. Private sector partnerships will be an important aspect of achieving target results during the Thai Rice Project and to facilitate sustainability and upscaling after the project ends, due to these actors’ continued market presence.
+
+## Sub-Activity 3.1.1.1: Development of the sustainable rice and biomass residues markets  
+
+### GCF financial instrument utilised: technical assistance grant.  
+### Addressing: climate change adaptation and mitigation.  
+### Executing Entity: GIZ, IRRI  
+
+## Sustainable Rice  
+
+## Four mutually supportive strands of work will be undertaken to develop sustainable rice markets:  
+
+- Development of materials for farmer training and TAS certification, thereby creating a large body of farmers who not only practise climate-smart agriculture but who do so according to a recognised standard that applies objective quality criteria and opens up access to premium rice markets. A training curriculum and materials for farmers will be designed for roll-out, jointly with RD and DoAE, to support advanced farmers and farm groups to achieve TAS compliance. Training will be modular and compatible with other internal standards, notably the SRP, to enable appropriate modules to be
+
+---
+
+
+---
+*Chunk pages 83–83*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1281 (sys=94, user=1187), max_out=1024, ctx=8192
+---
+
+# [Page 1]
+
+## GREEN CLIMATE FUND FUNDING PROPOSAL V.10.0 | PAGE 80
+
+selected for delivery in diverse production areas – with a focus on the needs, gaps and priority measures in each area.
+
+Under Sub-Activity 1.1.1.1, approximately 50,000 farmers will receive training on the TAS, including the requirements for TAS certification.
+
+• Development of a robust and credible auditing system to ensure that farmers are, and remain, compliant with TAS requirements. A training curriculum and programme for auditors will be designed and rolled out jointly with ACFS, to ensure that a pool of qualified auditors is available to provide services to farmer groups seeking TAS certification. Auditors also serve as a key instrument to meet data collection needs – not only for confirming TAS compliance of farmers but also for quantification of aggregated climate-relevant impacts.
+
+• Support to the TAS product labelling system. The project will work with public agencies and private sector actors (notably, domestic retailers) to increase their awareness and appreciation of the TAS for Sustainable Rice product label. (Awareness among end-consumers will be strengthened through Sub-Activity 3.1.1.2).
+
+• Support the definition of even more robust climate-, sustainability- and gender-related practices and indicators to inform future enhancements to the TAS to ensure it remains an effective tool to achieve climate goals. An assessment of TAS implementation will be conducted (Year 5), resulting in a synthesis report on the climate and sustainability impacts of TAS, with recommendations to inform revision of the TAS by the scheme owner to increase its climate-relevance and its sustainability and gender benefits. (This assessment will link closely with policy support measures under Sub-Activity 3.1.2.1.)
+
+## Biomass Residues
+
+218. Currently (in the baseline), burning of straw is common and the prevailing practice in the North and, partially, the North-East. On those occasions where burning is not practised, a common use of high-quality rice straw (not wet or soiled) is as animal feed. On 1 rai (0.16 hectare) of farmland, a farmer can aggregate 20-25 straw bales, sellable at baht 20-30 per bale (Euro 0.5-0.8 per bale) on average. This generates approximately baht 750 per rai (Euro 3.2 per hectare) in income for the farmer.
+
+Rain-fed rice production systems have an advantage over irrigated areas in this respect: as rain-fed systems offer sufficient time for drying in-field (in contrast to the maximum break of 3 weeks between cropping seasons in irrigated areas), they tend to produce high-quality rice straw. There is not yet a common use for medium-quality rice straw.
+
+Potential off-takers (e.g. industrial users) have explored biomass for energy applications, but have not yet found a viable business model that also generates incomes acceptable to farmers. Rice stubble and low-quality rice straw should, ideally, be left to decompose in-field or should be ploughed under to support soil nutrient management.
+
+219. Based on international practices, IRRI contributions and experiences, and a soon-to-commence GIZ-ASEAN rice straw feasibility study286, the project will detail different – geographically-differentiated – options for the usage of collected rice straw / stubble as alternatives to burning. Details for each alternative use, including using rice straw as fertilizer, as a building material, as an energy source, paper production from rice straw pulp, biochar production, etc., will be itemised: for example, their required inputs, costs, regulatory considerations, potential markets and prices that can be achieved for the end-product.
+
+Options currently perceived to have the highest viability for scale-up include the production of paper or packaging (e.g. bio-degradable food packaging) from rice straw through cellulose extraction or the production of bio-fertilizer from rice straw (e.g. through composting or administering manure), as well as potential application of biochar to soils to improve soil organic carbon and water retention properties.
+
+The economic viability of different straw uses will be clearly outlined to farmers and local communities. The project will further engage with relevant baseline initiatives and private sector partners to scale-up viable business models for rice straw valorisation.
+
+220. The project will also set up or incorporate this approach in an easy-to-use, digital match-making platform / app for private sector actors (see Sub-Activity 2.1.1.1). While the TAS and the project’s co-financing partners (such as MARS, Ebro, Olam and PepsiCo) will facilitate linking up farmers with off-takers and mills, the match-making platform will link up farmers with registered (i.e. quality-assessed) climate-smart service providers, including straw management services.
+
+286 As part of the
+
+
+---
+*Chunk pages 84–84*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1069 (sys=94, user=975), max_out=1024, ctx=8192
+---
+
+# Sub-Activity 3.1.1.2: Linkages to private sector partners, value chains and public-private partnerships
+
+GCF financial instrument utilised: technical assistance grant.  
+Addressing: climate change adaptation and mitigation.   
+Executing Entity: GIZ  
+
+## 221. Stable business linkages between rice farmers and downstream value chain actors, such as processors and traders, are rare. This represents a challenge to the development of markets for sustainable rice and rice residues, as farmers have little assurance that higher quality rice (and associated investments) will pay off. It also complicates the development of transparency systems and behaviours (for instance, transparency of production and processing practices). As a result, there is currently poor product traceability and thus quality assurance. Without supply chain transparency and guaranteed quality, sustainability-minded consumers are less likely to generate the demand necessary to support and grow these product markets.
+
+## 222. Given this low degree of market organisation, farmers are generally in a weak position within the value chain, constrained by limited access to know-how and impartial technical advice; limited bargaining power with buyers due to their small size; inability to prove sustainability; in some cases, existing debts; limited availability of good-quality farm inputs, machinery and services; and a general absence of stable markets characterised by long-standing, trusted relationships between market actors. Concurrently, there is increasing pressure on farmers to modernise and adapt production systems, especially due to climate change.
+
+## 223. Under Sub-Activity 3.1.1.2, the supply-side interventions promoted under Outputs 1.1 and 2.1 to drive best-practice adoption of climate-smart technologies and practices in Thai rice farming will be complemented by parallel demand-side efforts targeting domestic, regional and global supply chains. The project will engage with domestic and international off-takers, building their understanding of, and confidence in, Thai sustainable rice, and supporting linkages and channels of communication with farmers. The project will also partner with retailers, sourcers of sustainably produced rice and public agencies to launch consumer and public awareness campaigns to build Thai consumers’ understanding of sustainable rice (TAS- and SRP-labelled rice in particular). Support will include marketing, communication toolkits for use by retailers / brands that procure / offer TAS-verified rice (or equivalent), off-taker / buyer support, and the development of a market development strategy for TAS-verified (or equivalent) rice. Increased visibility of the TAS standard (and equivalent standards) will boost consumer demand for sustainable rice both locally and on the global market, which will, in turn, enhance the demand of sourcing companies and off-takers for this rice. This will directly contribute to the long-term sustainability and exit strategy of the project.
+
+## 224. The project will also develop more extensive – and deeper – links with value chain actors, including global food agribusinesses, input providers, technology providers, millers, traders, exporters, retailers and producer organisations active in the rice sector. The aim will be to strengthen (self-interested, self-financed) private sector engagement to scale-up project and post-project impacts. Model practices and best practices on off-taking agreements will be compiled and publicised, as appropriate.
+
+## 225. As an integral element of these market strengthening measures, the project will work with MoAC, other relevant government institutions (e.g. ACFS and ONEP) and the private sector to develop a market development (including export promotion) strategy for Thai sustainable rice, with a particular emphasis on TAS-certified rice and the linkages (and potential gaps) between TAS, SRP and other sustainable rice standards.
+
+# Activity 3.1.2: Strengthening the enabling institutional and policy environment for climate-smart rice farming
+
+## 226. Under Activity 3.1.2, the Thai Rice Project will assist government bodies to enhance the institutional, policy and regulatory environment for climate-smart rice agriculture. The principal strands of this work will be:
+
+- Policy support relating to climate-smart agriculture.
+- Strengthening capabilities relating to MRV to support NDC implementation and reporting in the rice sector. This strand of work directly responds to Thailand’s 2nd Updated NDC request for
+
+[Page 81]
+
+
+---
+*Chunk pages 85–85*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1068 (sys=94, user=974), max_out=1024, ctx=8192
+---
+
+# Sub-Activity 3.1.2.1: Policy support for climate-smart agriculture
+
+**GCF financial instrument utilised:** technical assistance grant.  
+**Addressing:** climate change adaptation and mitigation.  
+**Executing Entity:** GIZ  
+
+227. Sub-Activity 3.1.2.1 will assist the Thai government to shift agricultural policies and programmes onto a climate-smart development trajectory. Policy support will focus on national-level linkages between agriculture and climate policy and on linkages between the national and sub-national levels. This will include support to sub-national initiatives, such as provincial marketing or climate finance strategies and provincial or district support schemes for climate-smart rice farming. Momentum at provincial and district levels is starting to build up: it can be supported through exchange of good practices at the sub-national level and analysis and strategy support upon request, with the aim of supporting at least 5 such initiatives.
+
+228. The project will also support the implementation of the MoAC Climate Change Strategic Plan for the Agricultural Sector (2023–2027) (see Section B.1.3). Through other Sub-Activities, the project will significantly contribute to the Strategic Plan’s key performance indicators relating to GHG emission reductions and climate adaptation. Sub-Activity 3.1.2.1 will provide additional, targeted, support relating to the Strategic Plan’s pillars on policy harmonisation, knowledge management and stakeholder awareness. The national consumer and public awareness campaigns included in the Strategic Plan will be supported through this Sub-Activity. Support to, and input into, sectoral policy and planning advice, including climate mainstreaming and climate-proofing, and mainstreaming EbA in close coordination with the respective institutions will be provided upon request.
+
+# Sub-Activity 3.1.2.2: Support to NDC implementation and MRV in the rice sector
+
+**GCF financial instrument utilised:** technical assistance grant.  
+**Addressing:** climate change adaptation and mitigation.  
+**Executing Entity:** GIZ, IRRI  
+
+229. GHG emissions tracking in the Thai rice sector has benefitted from a number of recent baseline developments. The Rice Department’s Rice Research Centres now possess 5 gas chromatographs for analysing GHG emissions from paddy fields, accompanied by trained rice researchers who can conduct primary measurements and analysis. Among other outputs from this work, detailed GHG emission fluxes have been determined for irrigated and non-irrigated rice cultivation systems. The Source-selective and Emission-adjusted GHG Calculator for cropland – Rice (SECTORice) tool has been developed by IRRI in collaboration with the Rice Department and GIZ. A preliminary database has been developed by the Rice Department and GIZ for use in collecting and aggregating field-data on seasonal farmer practices, to enable the calculation and monitoring of GHG emissions and mitigation. A multi-agency MRV Committee has been established, chaired by the Rice Department. The Committee has developed an MRV Handbook for the Rice Sector, including a proposed rice sector MRV system, procedures for MRV of mitigation measures, and monitoring and evaluation of adaptation measures. The 2nd Updated NDC (November 2022) identifies climate-smart agriculture as a mitigation and adaptation priority, accompanied by MRV and digitisation needs.
+
+230. The Thai Rice Project will extend the M&E system from its current coverage of 6 Central Plains provinces to the project’s 21 provinces in the Central Plains, the North and the North-East. Further, it will upgrade the M&E system in a number of important respects:
+
+
+---
+*Chunk pages 86–86*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1210 (sys=94, user=1116), max_out=1024, ctx=8192
+---
+
+# [Page 1]
+
+## GREEN CLIMATE FUND FUNDING PROPOSAL V.10.0 | PAGE 83
+
+• The project will work with the Rice Department, particularly its Division of Rice Research and Development (DRRD), to increase RD capabilities to lead MRV in the rice sector. This will be achieved through, inter alia: (i) expanding engagement and training on GHG emission sampling and seasonal farm activity data surveys to all Rice Research Centres within the project area; (ii) determining rice agro-ecosystem-specific EFs to support a Tier 2 approach; (iii) strengthening competencies of the 5 primary Rice Research Centres for data aggregation and analysis; (iv) providing tailored advanced training to DRRD on interpreting data, developing emissions scenarios and monitoring progress at national scale; and (v) providing technical advisory and facilitation support to consolidate the roles of stakeholders in operationalising the MRV system for the rice sector.
+
+• The project will also work with the MRV Committee to strengthen its institutional processes, to facilitate inter-agency exchange in line with the MRV Handbook and to build its technical capacities. The project will conduct a mid-term review of the Committee’s structures and guidelines to ensure compatibility with (evolving) international standards.
+
+• The project’s MRV/M&E system will be designed to serve as a cornerstone for eventual sector-wide MRV, having already undertaken or built all of the necessary institutional strengthening, methodology development, data collection and processing systems, verification systems, etc.
+
+• The MRV/M&E system will, over time, transition from paper-based ‘farm books’ and verification through extension staff to digital approaches (see Section E.7.2) and using satellite data. Identification and assessment of suitable approaches and partnerships and customisation to the country context will be undertaken in the first year of the project.
+
+• Combining MRV for GHG purposes with data collection for other climate-relevant applications – notably, monitoring the uses of, and impacts of, farmer incentive payments and climate-smart loans under the CSL scheme; ground-truthing of remote-sensing data and on-site damage assessment for insurance product development; monitoring and quality assurance of TAS-certified farmers and carbon market activities; and calibration of high-resolution agro-met data to improve the relevance and quality of farmer advisories. Not only does an integrated data collection system offer obvious cost-saving benefits, it will also open up promising opportunities for new climate products and approaches – for example, insurance products that are calibrated for different rice varieties, insurance products that specifically target TAS-certified farmers, or carbon finance revenue streams linked to the TAS.
+
+### Sub-Activity 3.1.2.3: Carbon market linkages
+
+GCF financial instrument utilised: technical assistance grant.  
+Addressing: climate change adaptation and mitigation.  
+Executing Entity: GIZ  
+
+231. The project will support the TGO to develop the T-VER Rice Scheme, and the recent Premium T-VER Scheme, as a voluntary carbon market for rice farming. Currently, the T-VER Scheme barely addresses emissions from the agriculture sector: of the 246 registered projects, only 2 are agricultural and none are related to rice. An AWD methodology is currently being developed. The T-VER Scheme is modelled on the CDM, with the strengths (transparent methodologies, robust validation and verification, etc.) and weaknesses (complexity, high transaction costs, atomistic project-by-project approach, etc.) this implies. The T-VER Scheme is also characterised by a rigid approach to additionality: mitigation activities must not commence before project registration, even if those activities are experimental (assessing new technologies or practices, for instance) or promoting learning-by-doing, and there is no intention to claim credits for pre-registration emission reductions. While this approach may be appropriate for industrial or energy projects, which are typically single-site and use established technologies that the project developers are already familiar with (e.g. solar PV or heat capture technology), it is not well-suited to the needs of the rice sector – where emissions sources (paddy fields) are numerous and small-scale, where climate-smart technologies (AWD, SSNM, SSM, etc.) are innovative and unfamiliar, and where project developers (farmers) are poor, require practical training and are risk-averse.
+
+232. Under Sub-Activity 3.1.2.3, the project will work with TGO to develop a rice sector-specific offshoot of the T-VER/Premium T-VER Scheme – provisionally called T-VER Rice – that shares many of the same underpinnings as the T-VER/Premium T-VER Scheme but which generates a differentiated class of carbon credit – Rice T-VERs – and which is better suited to the realities of GHG mitigation in rice farming. New design elements will include: adaptation of existing methodologies and/or the
+
+---
+
+
+---
+*Chunk pages 87–87*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1296 (sys=94, user=1202), max_out=1024, ctx=8192
+---
+
+# B  
+## GREEN CLIMATE FUND FUNDING PROPOSAL V.10.0 | PAGE 84  
+
+development of new methodologies (with AWD, SSNM and SSM identified as immediate priorities)287,  
+a simplified and more flexible approach to multi-methodology projects (to allow farmers to implement  
+multiple climate -smart technologies simultaneously), a  programmatic modality to aggregate large  
+numbers of farms, the use of standardised baselines to simplify mitigation estimation, simplified M&E  
+/ MRV that harnesses modern technology (e.g. remote sensing and mobile apps) and statistical  
+sampling288, and an alternative approach to additionality (combined with linkages to the TAS – see  
+below). The intention is to create a credible and robust environment for credited emission reductions  
+that meets the needs of T-VER Rice buyers (see below) – and hence will catalyse an additional, long-  
+term, source of carbon revenues for the rice sector – but which recognises the unique needs and  
+circumstances of the sector.   
+
+233. The project will enable Thai rice farmers to seamlessly register with the T -VER Rice Scheme, as an  
+automatic outcome of becoming TAS -certified. The additionality of this approach is assured, as TAS  
+certification is undoubtedly a significant deviation from the business -as-usual baseline. Such  
+seamless registration will impose no obligations on farmers, who can choose to practise TAS-certified  
+farming or not, but it facilitates friction -less entry into the ca rbon market for those who do. As TAS  
+certification is expected to provide farmers with substantive benefits independent of carbon finance  
+(such as premium prices for their rice and greater resilience to climate change), this linkage between  
+the TAS and the T-VER Rice Scheme is expected to grow the carbon market substantially.   
+
+234. Approximately 50,000 farmers will receive training on the TAS and TAS certification under Sub-Activity  
+1.1.1.1. These farmers will also receive training on the T -VER Rice Scheme so th at they are aware  
+of, and understand, the Scheme and can make an informed decision about their engagement with it.  
+The T -VER Rice training materials will be developed under Sub -Activity 3.1.2.3 and delivered to  
+farmers under Sub-Activity 1.1.1.1. The linkage between the TAS and the T-VER Scheme also offers  
+a number of additional benefits, notably: (i) data -sharing and MRV synergies between the TAS and  
+T-VER Rice, and (ii) assurance for carbon buyers that when they purchase Rice T-VERs they are not  
+just supp orting emission reductions but also strong sustainable development co -benefits ( gender  
+considerations, farmers’ climate resilience, reduced pollution, enhanced worker health and safety,  
+etc.).   
+
+235. Approximately 50 Thai verifiers will be trained for the T-VER Rice Scheme, so that emission reductions  
+can be expertly assessed according to the Scheme’s rules and modalities. Verifiers – who are typically  
+auditors and accountants – under the existing T-VER Scheme are independent and certified by TGO.  
+Those current verifiers who wish to extend their services to the T -VER Rice Scheme will be offered  
+training, as will the TAS auditors who are trained under Sub-Activity 3.1.1.1.   
+
+236. The project will work with TGO and other key stakeholders, notably BAAC and ACFS (the government  
+entity responsible for the TAS), to develop the detailed design, roles and responsibilities, and rules  
+and modalities of the T-VER Rice Scheme. The broad elements are currently envisaged as follows:  
+
+• TAS-certified farmers will, through their climate -smart farming practices, generate emission  
+reductions. At the scale of individual smallholder farms, these reductions will be small (on the scale  
+of approximately 1-10 tCO2e per year, depending upon the size of the farm and the suite of climate-  
+smart technologies adopted), but they will be substantial when aggregated over all participating  
+farmers.  
+• Emission reductions will be subject to T-VER Rice Scheme MRV and verification procedures, which  
+will, to the extent possible, build on and utilise technologies (e.g. remote sensing, drones, mobile  
+apps) and M &E systems developed by the Thai Rice Project in the context of the TAS, insurance  
+products, NDC support and other project-supported areas.  
+• The project will work with the new Thai carbon credit exchange, FTIX (see Section B.1.3), to set up  
+an online market for Rice T-VERs.  
+
+287 GIZ is, for example, in consultations with Verra over the ongoing development of a rice module for Verified Carbon Standard (VCS
+
+
+---
+*Chunk pages 88–88*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1143 (sys=94, user=1049), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.10.0 | PAGE 85
+
+• TGO, as the regulator of the T-VER Rice Scheme, will issue Rice T-VERs in line with total verified emission reductions (across the thousands of participating farmers). These Rice T-VERs will be transferred to BAAC (an established entity with robust financial control systems), which will sell them on the FTIX exchange. They will be purchased by carbon buyers (see below). The resulting carbon revenues will flow back to BAAC, which will use the revenues for designated, approved purposes – currently envisaged to be (subject to confirmation during project implementation): (i) ongoing support to the rice sector MRV system and/or (ii) additional funds for capitalisation of the Climate-Smart Loan (CSL) scheme, potentially targeting specific beneficiary-types who would not usually qualify for BAAC loans (e.g. farmers who rent land and hence lack collateral, and female-headed farming households which tend to be poorer than the average farming household, etc.).
+
+## 237. During project implementation, the project will identify, engage and work with (inter alia):
+
+• International initiatives, such as the World Business Council for Sustainable Development (WBCSD) and the Carbon Credit Quality Initiative (CCQI).  
+• Carbon market standards, such as the Verified Carbon Standard (VCS) and the Gold Standard (GS), on issues such as methodology adaptation / development and carbon registry design. While the strong focus of the project will be on developing the T-VER Rice Scheme, it is possible that, in certain circumstances (e.g. a specific methodology or use-case), it proves more cost-effective for farmers to generate carbon credits under another (credible) standard. If this is the case, the project will develop appropriate modalities to avoid double-counting of emission reductions.
+
+• Private sector partners to identify rice-relevant methodologies and to generate emission reductions, ecosystem services and co-benefits that are high-quality and avoid harm to the environment and communities. Proof-of-concept pilots, generating farmer-owned carbon credits in a ring-fenced setting and at limited scale, will be implemented with private sector companies to determine feasible approaches for scaling. This element will be covered through co-finance provided by private sector partners and/or BMZ co-finance.
+
+• National stakeholders who are interested in purchasing Rice T-VERs. Some of the project's current private sector partners have already expressed interest in sourcing Rice T-VERs and additional demand is expected from: (i) companies with commercial interests in promoting sustainable rice, (ii) Thai companies outside the rice sector that have domestic corporate social responsibility (CSR) programmes, and (iii) individual Thai consumers, such as those who purchase premium rice products.
+
+These activities have the objectives of developing the supply- and demand-sides of the market, ensuring robust carbon accounting and sustainable development standards, and achieving international compatibility and recognition.
+
+## 238. The T-VER Rice Scheme will serve as a voluntary carbon market mechanism. Like existing T-VERs, Rice T-VERs may be eligible for use for domestic offsetting purposes (details and use-cases to be clarified during project implementation). However, retirement of Rice T-VERs, without allowing any other emissions of greenhouse gases to be offset, will be promoted to buyers as a preferred option: i.e. the use of Rice T-VERs as offsets will be discouraged. Rice T-VERs purchased by international buyers will not be eligible for offsetting use – and hence there will be no need for corresponding adjustments in national GHG inventories.
+
+## 239. The project will work with the relevant government institutions responsible for the national GHG inventory system and the rice sector MRV system to ensure that the uses of the Rice T-VERs (retirement, offsetting, etc.) are recorded and reported appropriately in a carbon registry.
+
+## 240. The intention is to have all the elements in place for successful, full-scale T-VER Rice Scheme rollout by the end of the Thai Rice Project. While T-VER Rice Scheme operations will commence at limited scale during project implementation in order to observe and test Scheme processes (and improve them, as required), Rice T-VERs, except for those generated in the proof-of-concept pilots, will not be generated or issued during project implementation – thereby avoiding potential emission reduction attribution conflicts between the GCF and the T-VER Rice Scheme while providing sufficient time for the Scheme design to be stress-tested under real-world conditions.
+
+---
+
+289 https://carboncreditquality.org/index.html
+
+
+---
+*Chunk pages 89–89*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1220 (sys=94, user=1126), max_out=1024, ctx=8192
+---
+
+# Activity 3.1.3: Thai Rice Facility and ThaiCI implementation
+
+## Sub-Activity 3.1.3.1: Design and operationalisation of the Thai Rice Facility
+
+**GCF financial instrument utilised:** technical assistance grant  
+**Addressing:** climate change adaptation and mitigation  
+**Executing Entity:** GIZ  
+
+244. The institutions implementing the project’s financial instruments will be represented in the Thai Rice Facility working group, alongside MoAC, farmer representatives, private sector representatives and other relevant entities. Consultations will also involve private finance institutions that have previously expressed an interest in climate-smart agriculture, such as KasikornBank and Krungsri Bank as domestic actors and Rabobank as an international actor. The project will also seek knowledge exchange with GCF project FP199 in Cambodia on the Farmer-led Agricultural Resilience Mechanism (FARM) to ensure mutual learning on such a mechanism.
+
+245. The objective is to establish the Thai Rice Facility as a sustainable multi-institution facilitative unit that will remain in place long after the duration of the Thai Rice Project to support the coherent implementation of gender-responsive, climate-smart practices and financing in the Thai rice sector.
+
+290 FAO-GCF FP199: Public-Social-Private Partnerships for Ecologically-Sound Agriculture and Resilient Livelihoods in Northern Tonle Sap Basin (PEARL): https://www.greenclimate.fund/project/fp199  
+291 The Thai Rice Facility feasibility study commissioned during preparation of the Thai Rice Project is provided in Annex 2e.
+
+
+---
+*Chunk pages 90–90*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1080 (sys=94, user=986), max_out=1024, ctx=8192
+---
+
+# B GREEN CLIMATE FUND FUNDING PROPOSAL V.10.0 | PAGE 87
+
+## Sub-Activity 3.1.3.2: EFD strengthening and ThaiCI implementation
+
+GCF financial instrument utilised: technical assistance grant and investment grant  
+Addressing: climate change adaptation and mitigation.  
+Executing Entity: ONEP  
+
+246. EFD, a department within ONEP, occupies a unique position in Thailand’s public finance architecture. It is mandated to financially support climate change, the environment, sustainable conservation, and restoration and utilisation of national resources. EFD-supported interventions can include: (i) capacity development, awareness-raising and communications, (ii) supporting network and community-based participation in production and consumption, and (iii) supporting mitigation and adaptation actions, including data management and MRV systems.
+
+247. Sub-Activity 3.1.3.2 will support EFD in 2 respects: (i) it will strengthen EFD’s capacities as a complement to ongoing GCF readiness support, and (ii) it will provide GCF grant resources to be channelled by ONEP (EFD’s parent institution) – in the form of grant payments – to support innovative ThaiCI climate-smart rice projects. ThaiCI – the Thai Climate Initiative – is the name of an initiative fully implemented and owned by ONEP through its Environmental Fund Division (EFD).
+
+### EFD Strengthening
+
+248. The Thai Rice Project will facilitate peer-to-peer learning exchanges between EFD and the project’s Executing Entities, as well as GIZ as AE. It will enhance EFD’s capacities to set up and run ThaiCI and develop the operational and financial management capabilities needed to become accredited to the GCF. In order to avoid overlaps with ongoing GCF readiness projects, which are mainly focused on the accreditation process and GCF project development, the learning exchanges will focus on GCF funds management, cooperation with the private sector, and monitoring, evaluation and reporting according to GCF standards and requirements.
+
+### ThaiCI Implementation
+
+249. ThaiCI is currently able to provide grant support to small-scale, innovative projects in the electricity and transport sectors. With support provided under Sub-Activity 3.1.3.2, EFD will be provided with the technical and administrative skills to expand the scope of ThaiCI’s grant support to climate-smart rice agriculture.
+
+250. Further, the Thai Rice Project will provide ONEP with Euro 2 million of GCF grant funds so that it can operationalise ThaiCI’s newly-expanded sectoral scope by financing innovative climate-smart rice projects. A portion of the overall impacts achieved by the project in terms of total beneficiaries reached and GHG mitigated will also be reported towards the overall results framework from the subprojects under ThaiCI. Approximately 10-30 projects will be supported by the Thai Rice Project. All supported ThaiCI projects will commence and end within the duration of the Thai Rice Project implementation period, and will typically have a duration of 12-36 months. Entities that are legally eligible to receive funding under ThaiCI are: government institutions and local authorities, private sector companies, public and private environmental organisations, village committees, the Community Network Council, academic institutions and non-profit institutions.
+
+Apart from defining the eligible target group, minimum eligibility criteria are the following. The beneficiaries must a) not be on the GIZ’ sanctions lists, b) must have a legal status, c) must have public-benefit status. For private corporations, the project must aim at achieving public-benefit objectives and not serve the profit-making interests of the private corporation, d) must keep accounts and the bookkeeping system must enable a third party to gain overview, e) have its own written contract award rules that have been used for procurement to date, f) have internal and external control system, g) as well as the executives have not broken the law and/or known whether allegations of corruption have been made in the last five years. In addition to standard EFD conditions, applicants will be required to meet a set of additional project-imposed requirements informed by the project’s ESS activities.
+
+
+---
+*Chunk pages 91–91*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1130 (sys=94, user=1036), max_out=1024, ctx=8192
+---
+
+# B. GREEN CLIMATE FUND FUNDING PROPOSAL V.10.0 | PAGE 88
+
+## 251. EFD’s existing Climate Change Working Group (CC-WG) will propose ThaiCI’s climate-smart rice funding priorities, technical criteria and the project screening and approval processes. The CC-WG’s proposals will be formally approved by EFD (as a department within ONEP), potentially after one or more rounds of discussion (and associated revision) with the CC-WG. The adopted criteria and processes will be detailed in funding guidelines issued early in project implementation.
+
+ThaiCI projects eligible to receive GCF grants under the adopted screening and approval criteria will be selected by ONEP. All such projects will support climate-smart rice, will be innovative in nature, and particular emphasis will be placed on supporting marginalised stakeholders who are under-served by existing technical and financial support instruments, such as women farmers, women with disabilities, youth farmers and migrant farm workers. Projects can address capacity building needs, awareness-raising, the purchase of equipment and technology, the procurement of specialist services, MRV and data collection/management, and other legitimate, pre-approved activities.
+
+Projects will: (i) contribute to a reduction of GHG from rice farming; or (ii) support the avoidance or reduction of climate change impacts on rice farming and promote resilience of the sector; or (iii) be cross-cutting, offering mitigation and adaptation benefits. ONEP will strive to achieve a 50%/50% ratio of mitigation and adaptation projects.
+
+Thai Rice Project-financed grants channelled by ONEP to ThaiCI projects are subject to the general and instrument-specific environmental and social safeguards detailed in the Environmental and Social Management Framework (ESMF, Annex 6a).
+
+## Activity 3.1.4: Regional exchange and peer-to-peer learning
+
+## Sub-Activity 3.1.4.1: Regional exchange and peer-to-peer learning
+
+GCF financial instrument utilised: technical assistance grant.  
+Addressing: climate change adaptation and mitigation.  
+Executing Entity: GIZ, IRRI
+
+## 253. Experiences and knowledge generated in Thailand will be disseminated throughout the region. The FAO Regional Office for Asia and the Pacific (FAO-RAP), and ASEAN – through contributions to relevant ASEAN Policy Frameworks/ Guidelines, working groups/bodies/networks (e.g. the ASEAN Multi-Sectoral Framework on Climate Change: Agriculture and Forestry towards Food and Nutrition Security and Achievement of SDGs (2018), the ASEAN Integrated Food Security (AIFS) Framework and Strategic Plan of Action on Food Security (SPA-FS) 2021-2025, AMAF’s292 Approach to Gender Mainstreaming in the Food, Agriculture and Forestry Sectors (2018), the ASEAN Sectoral Working Group on Crops (ASWGC), the ASEAN Climate Resilience Network (ASEAN-CRN), of which Thailand is the Chair, etc.) – will be engaged to disseminate and exchange knowledge and feed in that knowledge into relevant processes.
+
+## 254. IRRI will, during the final year of project implementation, organise one regional conference and one side event at the International Rice Congress to share key lessons learned from the Thai Rice Project – on, for example, technology development and transfer, market development, enabling policy frameworks, the gender aspects of climate-smart rice farming, access to climate finance, GHG estimation and MRV in the rice farming sector, etc. The Thai Rice Project will organise a study tour for interested government officials and experts from ASEAN and other countries, as appropriate, to visit Thailand and experience first-hand how the project has transformed rice farming, so that the officials can amend and apply elements of the project in their respective countries. Key project implementation partners will promote project results through academic and non-academic publications and participation in international conferences.
+
+## 255. The experiences of the Thai Rice Project in Thailand will support the conceptualisation of further initiatives on climate-smart rice. This includes the CRRL/SRLI baseline project that is currently under development (see Section B.1.5): the Thai Rice Project can serve as a front-runner initiative for FAO and others to lay the groundwork at the national level for the CRRL to build on and replicate at the regional level. This will ultimately contribute to a paradigm shift at the regional level.
+
+292 AMAF: ASEAN Minister Meeting on Agriculture and Forestry.
+
+
+---
+*Chunk pages 92–92*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1314 (sys=94, user=1220), max_out=1024, ctx=8192
+---
+
+# B.3.3 Alternative operating models
+
+## 256. Alternative approaches to sustaining Thai rice production in the context of climate change have been fully considered. All of these approaches complement the chosen approach of the Thai Rice Project and they are mutually supportive. In some cases, the Thai Rice Project incorporates the approach (or aspects of the approach), albeit not as a central project element; in other cases, the alternative approach is considered out of scope of the Thai Rice Project, for technical or institutional reasons or because it is already being addressed by other initiatives.
+
+## Table 14: Alternative Approaches to Sustaining Thai Rice Production Under Climate Change
+
+| Alternative Approach | Description | Assessment | Relationship to Thai Rice Project |
+|----------------------|-------------|------------|-----------------------------------|
+| Aquifer storage | The Central Plain is the main reservoir for groundwater in Thailand. It holds 8 separate aquifers. In principle, shallow groundwater can be managed as a water supply for agricultural activities during the dry season. Over-extraction of groundwater (i.e. removal at rates higher than recharge) can be a problem in Thailand, contributing to land subsidence and seawater intrusion in some areas.293 The 2004 Groundwater Act reduced but did not eradicate such over-extraction. | Given that natural recharge will itself be affected by climate change (with groundwater recharge in the Chao Phraya river basin, for example, potentially decreasing by 50% by the 2090s294), aquifer storage is, at best, a partial solution to increasing drought conditions. | Aquifer storage is out of project scope. It is compatible with the Thai Rice Project. But given: (i) the complexities associated with managing extraction and monitoring water quality, (ii) the restrictive geographical applicability of aquifer storage as a climate adaptation solution, and (iii) the different suite of institutions and policy instruments involved, aquifer storage cannot be straightforwardly accommodated within the Thai Rice Project design. |
+| Promotion of alternatives to rice production | Switching crop species has the potential to increase farming incomes and reduce water demands in the Thai agricultural sector.295 In recent National Economic Plans, the Thai government has recommended that rice farmers cultivate other cash crops (in combination with rice farming) to increase crop diversity and protect their incomes. Approximately 9% of Thai paddy fields are located on land that is better suited to other crops, primarily sugarcane.296 Thailand has 57 sugar factories and has enough capacity to support an increase in sugarcane production. However, some crops are even more sensitive to climate change than rice, including sugarcane (and cassava) in upland Thai settings.297 Moreover, Thai farmers tend to prefer more immediate measures – such as water management – that are consistent with established rice farming practices, rather than more fundamental (and potentially riskier) changes to their underlying agricultural systems.298 Sugarcane production also involves extensive residue burning during harvesting; | Crop diversification is within the project scope as a strategy to augment or partially replace rice production. The project will, however, support alternative crops only where local conditions are appropriate, where farmers proactively pursue alternatives and only within the broader context of a revitalised, climate-smart rice farming sector – partly | |
+
+---
+
+293 Yuan S. et al (2022), ‘Southeast Asia must narrow down the yield gap to continue to be a major rice bowl’, Nature Food, 3: https://www.nature.com/articles/s43016-022-00477-z.pdf.  
+294 Koontanakulvong S. and Suthidhummajit C. (2015), ‘The role of groundwater to mitigate the drought and as an adaptation to climate change in the Phitsanulok irrigation project, in the Nan Basin, Thailand’, Jurnal Teknologi, 76: https://journals.utm.my/jurnalteknologi/article/download/5957/3982/16693.  
+295 Polthanee A. (2018), ‘Cassava as an insurance crop in a changing climate: the changing role and potential applications of cassava for smallholder farmers in Northeastern Thailand’, Forest and Society, 2: https://journal.unhas.ac.id/index.php/fs/article/download/4275/pdf/34872.  
+296 Land Development Department (2022), Agri-Map Online: https://agri-map-online.moac.go.th.  
+297 Yoshida et al (2018), ‘Weather-induced economic damages of upland crops and the impact on farmer household income in Northeast Thailand’, Paddy and Water Environment, 17: https://kukr.lib.ku.ac.th/kukr_es/kukr/search_detail/result/394
+
+
+---
+*Chunk pages 93–93*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1523 (sys=94, user=1429), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.10.0 | PAGE 90
+
+Thus, the promotion of sugarcane production would require the implementation of appropriate regulatory policies. There are also considerable obstacles to crop switching – including insufficient capital and lack of knowledge about production and markets – that would need to be overcome.
+
+Rice is a staple source of calories and micro-nutrients (magnesium, phosphorus, manganese, selenium, iron, folic acid, thiamin, niacin, etc.) for more than half of the world’s population. Rice accounts for 19% of dietary energy globally. Given the projected 30% increase in global rice demand by 2050 and the limited scope available for other rice-producing countries to generate a rice surplus, Thailand is well positioned, if climate change challenges are addressed, to continue to play a critical role in ensuring global rice supply. This is critically important in the current context of rising global food prices and wheat shortages. It also acknowledges that rice farming is central to Thai national identity: rice is more than just a subsistence or cash crop and is, instead, viewed as fundamental to Thais’ way of life and traditions.
+
+Because of the challenges associated with switching, partly because the climate benefits (mitigation and adaptation) of directly addressing rice farming are so high, and partly because rice farming is so vital – culturally and economically – to Thailand (and, indeed, to global food supply).
+
+## Organic rice farming
+
+Organic rice farming could address some of the challenges – excessive fertilizer use (and hence, in part, additional CH4 and N2O emissions), excessive pesticide use and access to premium rice markets – that the Thai Rice Project seeks to address.
+
+The number of organic farmers in Thailand has increased steadily over time – from approximately 2,500 in 2003 to 44,400 in 2019. This is still a very small share (0.003%) of total farmers, but the government has set ambitious goals to further expand the area under organic farming.
+
+However, shifting to organic rice farming is not straightforward. Even if farmers can be persuaded to switch, individual farmers cannot make the shift unless they are provided with the necessary assistance and techniques, such as managing soil fertility and tackling weeds and pests without herbicides and insecticides. Climate change may introduce additional stresses from pests that farmers find challenging to address without using chemical methods.
+
+Organic rice farming is out of project scope. It offers benefits (primarily relating to water quality and farmer safety), but its climate change impacts are less clear-cut.
+
+## Instead, the Thai Rice Project promotes the TAS and other sustainability standards for rice cultivation
+
+These seek to reduce – and better manage – the use of fertilizers and pesticides, but they do so in a framework that is
+
+---
+
+**References:**
+
+299 Suchato R. et al (2021), ‘Alternative cropping production in Thailand: a case study of rice and sugarcane production’, Heliyon, 7: https://www.cell.com/action/showPdf?pii=S2405-8440(21)02732-8.
+
+300 Meesungnoen N. et al (2019), ‘Factors affecting decision making on sugarcane cultivation of farmers in Khao suan Kwang district, Khonkaen province’, Khon Kaen Agriculture Journal, 47: https://www.cabdirect.org/cabdirect/abstract/20193194120.
+
+301 Fukagawa N. and Ziska L. (2019), ‘Rice: importance for global nutrition’, Journal of Nutritional Science and Vitaminology, 65: https://www.jstage.jst.go.jp/article/jnsv/65/Supplement/65_S2/_pdf/-char/en.
+
+302 Pame A. et al (2023), ‘Improving the sustainability of rice cultivation in central Thailand with biofertilizers and laser land levelling’, Agronomy, 13: https://mdpi-res.com/d_attachment/agronomy/agronomy-13-00587/article_deploy/agronomy-13-00587-v2.pdf?version=1677125713.
+
+303 Yuan S. et al (2022), ‘Southeast Asia must narrow down the yield gap to continue to be a major rice bowl’, Nature Food, 3: https://www.nature.com/articles/s43016-022-00477-z.pdf.
+
+304 World Bank (2022), Food Security Update – August 2022: https://thedocs.worldbank.org/en/doc/b5de315c82b1a3bb3
+
+
+---
+*Chunk pages 94–94*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1181 (sys=94, user=1087), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.10.0 | PAGE 91
+
+## Changing the rice planting date
+
+Shifting the crop calendar is a basic and practical adaptation response to changing seasonality.
+
+The gains from shifting rice planting dates are marginal in Thailand, where the climate is already near the upper temperature limit for rice growth.310 In most provinces, rainfall patterns are expected to shift earlier, which would require moving the planting date forward to avoid the water-deficit period. However, this would coincide with periods of high temperatures, in turn increasing crops’ water requirements.311
+
+Changing rice plantation dates is within the project scope. It is by no means a sufficient adaptation response to expected climate change in Thailand and it does not address GHG mitigation. But farmers are able, and expected, to make autonomous decisions about planting dates in the framework of the Thai Rice Project.
+
+The Thai Rice Project provides rice farmers with a suite of techniques, tools and capabilities to adopt climate-smart farming practices; the granular details of how and when these are implemented by farmers ‘in the field’ are ultimately decided by the farmers themselves.
+
+## Addressing farmer demographics
+
+More than 40% of farms in Thailand are operated by old farmers (defined as individuals older than 60 years). Promoting younger farmers may improve technical skills and adaptability to new climate-smart techniques.
+
+The Thai agricultural labour force is declining annually at a rate of 0.25-0.4%, having fallen from 40% in the 1960s to 30-35% today.312 This is primarily driven by youth not becoming farmers (and, instead, opting for urban – better-paid – jobs) rather than a large-scale exodus of existing farmers. It applies to all agricultural sub-sectors, not just rice farming.
+
+To address the ageing profile of farmers, it is necessary to encourage more young people to enter the sector. Thailand is by no means alone in experiencing such an ageing profile: the average age of farmers is, in fact, higher in Indonesia, the Philippines and Malaysia.313
+
+Moreover, the lessons from other countries are strongly suggestive that wide-ranging and quite fundamental reforms relating to, inter alia, employment, welfare systems, fiscal policy, land ownership, education, rural development and many other policy areas are required to reverse, or even simply arrest, the ageing process. Even with determined government action, revitalising the demographics of the agricultural sector can be a challenging, protracted and uncertain.
+
+## Addressing farmer demographics is largely out of project scope
+
+However, the Thai Rice Project will support a number of interventions that directly or indirectly enhance the attractiveness of the rice sector to prospective younger farmers and that complement measures supported by the government’s New Farmer and Young Smart Farmers programmes.
+
+These benefits include: efficiency gains (and, in turn, higher profits) due to a reduction in input costs and higher yields associated with the suite of interventions
+
+310 Shin Y. et al (2017), ‘Spatially distinct response of rice yield to autonomous adaptation under the CMIP5 multi-model projections’, Asia-Pacific Journal of Atmospheric Sciences, 53: https://link.springer.com/article/10.1007/s13143-017-0001-z.
+
+311 Boonwichai S. et al (2018), ‘Climate change impacts on irrigation water requirement, crop water productivity and rice yield in the Songkhram River Basin, Thailand’, Journal of Cleaner Production, 198: https://www.sciencedirect.com/science/article/abs/pii/S0959652618321310?via%3Dihub.
+
+312 Minh N. et al (2019), ‘The current adoption of dry direct seeding rice (DDSR) in Thailand and lessons learned for the Mekong River Delta of Vietnam’, CGIAR Working Paper No. 273: https://cgspace.cgiar.org/bitstream/handle/10568/101953/CCAFS%20WP%20273_DDSR.pdf?sequence=1&isAllowed=y.
+
+313 Rigg J. et al (2019), ‘Who will tend the farm? Interrogating the ageing Asian farmer’, The Journal of Peasant Studies, 47: https://www.tandfonline.com/doi/abs/10.1080/03066150.2019.1572605.
+
+
+---
+*Chunk pages 95–95*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=935 (sys=94, user=841), max_out=1024, ctx=8192
+---
+
+# B. GREEN CLIMATE FUND FUNDING PROPOSAL V.10.0 | PAGE 92
+
+## Process
+
+314 The Thai government is implementing 2 programmes – the New Farmer programme and the Young Smart Farmers programme – to support young farmers, but they operate on a limited scale: to date, 7,000 young farmers have benefitted, compared with over 1.5 million young farmers (aged under 45) who have ceased farming.
+
+There is a limit to what, realistically, a GCF project can do in this regard – particularly as the climate-specific benefits of targeting farmer demographics are rather minor and tangential when compared with the (immediate, far more certain) climate benefits of focusing on technologies and practices such as AWD and straw burning.
+
+## Implementation arrangements
+
+### B.4.1 Role of GIZ
+
+257. GIZ, with its head office located in Germany, is the Accredited Entity (AE) for the Thai Rice Project. GIZ will also operate as an Executing Entity in relation to specific activities of the project. For the avoidance of doubt, GIZ as the Accredited Entity and GIZ as the Executing Entity are a single legal entity, but the two GIZ functions of Accredited Entity and Executing Entity will be strictly separated and are accountable to different management structures within GIZ.
+
+258. GIZ is one of the largest international providers of capacity development and technical assistance on climate change worldwide. GIZ is currently carrying out over 300 climate-related projects, with combined funding of over US$ 1.9 billion. GIZ has been operating in Thailand since 1956. The GIZ country office currently employs 180 staff, the majority of whom work on climate change and/or agricultural issues. All GIZ projects are undertaken in close coordination with, and the approval of, the Government of Thailand, based on the Thai-German Framework Agreement on Development Cooperation. Climate change forms the cornerstone of GIZ support in Thailand: since 2009, projects with a combined budget of more than Euro 170 million have been implemented, of which climate change projects have accounted for Euro 135 million. The Thai Rice Project forms part of the GIZ Entity Work Programme.
+
+### B.4. Implementation arrangements
+
+314 Giller K. et al (2021), 'The future of farming: who will produce our food?', Food Security, 13: https://link.springer.com/content/pdf/10.1007/s12571-021-01184-6.pdf.
+
+315 Faysse N. et al (2019), 'Public policy to support young farmers in Thailand', Outlook on Agriculture, 48: https://journals.sagepub.com/doi/10.1177/0030727019880187.
+
+
+---
+*Chunk pages 96–96*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=898 (sys=94, user=804), max_out=1024, ctx=8192
+---
+
+# B.4.2 Executing Entities
+
+263. In addition to GIZ, the Thai Rice Project will have 4 Executing Entities:
+
+- Rice Department (RD) of the Ministry of Agriculture and Cooperatives (MoAC)
+- Bank for Agriculture and Agricultural Cooperatives (BAAC)
+- Office of Natural Resources and Environmental Policy and Planning (ONEP) of the Ministry of Natural Resources and Environment (MoNRE)
+- International Rice Research Institute (IRRI)
+
+264. Rice Department (RD): The Rice Department is a public entity under the Ministry of Agriculture and Cooperatives, as defined by the Department Act (No. 2), B.E. 2549 (2006). RD has the mandate to develop strategies, policies and plans related to rice production at both the national and international levels; this mandate include rice technologies, varieties, production methods and standards. The Rice Department (RD) is responsible for:
+
+- Developing strategies, policies and plans related to rice production at both national and international levels
+- Managing rice technologies, varieties, production methods and standards
+- Implementing rice production activities
+
+265. Bank for Agriculture and Agricultural Cooperatives (BAAC): BAAC is a public entity under the Ministry of Agriculture and Cooperatives, as defined by the Bank Act (No. 1), B.E. 2549 (2006). BAAC has the mandate to provide financial services to agricultural sector, including rice production and processing activities.
+
+266. Office of Natural Resources and Environmental Policy and Planning (ONEP): ONEP is a public entity under the Ministry of Natural Resources and Environment, as defined by the Act (No. 1), B.E. 2549 (2006). ONEP has the mandate to develop policies and plans related to natural resources and environmental protection, including rice production activities.
+
+267. International Rice Research Institute (IRRI): IRRI is a public entity under the Ministry of Agriculture and Cooperatives, as defined by the Act (No. 1), B.E. 2549 (2006). IRRI has the mandate to conduct research on rice production technologies, varieties, production methods and standards.
+
+268. The Executing Entities will be responsible for:
+
+- Implementing specific Sub-Activities listed in Table 15
+- Coordinating with GIZ and other relevant donors and projects
+- Reporting to the Project Steering Committee (PSC)
+- Coordinating with line ministries involved in the project, as well as the NDA
+- Supporting establishment and management of the Project Management Unit (PMU)
+
+269. The Executing Entities will be responsible for:
+
+- Managing the project budget of GIZ (Executing Entity)
+- Reporting to BMZ regarding its financial contribution to the project, as well as the overall progress of project implementation
+- Coordinating project implementation with the Executing Entities and other relevant donors and projects
+- Implementation of the specific Sub-Activities listed in Table 15
+- Liaising with, and reporting to, the Project Steering Committee (PSC) – see Section B.4.3
+- Coordinating with, and reporting to line ministries involved in the project, as well as the NDA
+- Supporting establishment and management of the Project Management Unit (PMU – see Section B.4.3)
+
+270. The Executing Entities will be responsible for:
+
+- Managing the project budget of GIZ (Executing Entity)
+- Reporting to BMZ regarding its financial contribution to the project, as well as the overall progress of project implementation
+- Coordinating project implementation with the Executing Entities and other relevant donors and projects
+- Implementation of the specific Sub-Activities listed in Table 15
+- Liaising with, and reporting to, the Project Steering Committee (PSC) – see Section B.4.3
+- Coordinating with, and reporting to line ministries involved in the project, as well as the NDA
+- Supporting establishment and management of the Project Management Unit (PMU – see Section B.4.3)
+
+271. The Executing Entities will be responsible for:
+
+- Managing the project budget of GIZ (Executing Entity)
+- Reporting to BMZ regarding its financial contribution to the project, as well as the overall progress of project implementation
+- Coordinating project implementation with the Executing Entities and other relevant donors and projects
+- Implementation of the specific Sub-Activities listed in Table 15
+- Liaising with, and reporting to, the Project Steering Committee (PSC) – see Section B.4.3
+- Coordinating with, and reporting to line ministries involved in the project, as well as the NDA
+- Supporting establishment and management of the Project Management Unit (PMU – see Section B.4.3)
+
+272. The Executing Entities will be responsible for:
+
+- Managing the project budget of GIZ (
+
+
+---
+*Chunk pages 97–97*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1303 (sys=94, user=1209), max_out=1024, ctx=8192
+---
+
+# [Page 1]
+
+## Department employs approximately 1,800 professional staff, including provincial officers. More than 50 regional RD centres operate in 28 provinces to support local research on rice and seed distribution.
+
+The Rice Department has considerable experience working with donors and international partners, including the International Rice Research Institute (IRRI), the China National Rice Research Institute, the UK Department for Business, Energy and Industrial Strategy (BEIS), GIZ, the World Bank and others. The Rice Department is the principal government partner for a number of foundation and baseline projects, including the NSP, MSVC, TGCP and MSR.
+
+## 265. Bank for Agriculture and Agricultural Cooperatives (BAAC): BAAC was established in 1966 as a government-owned (99.8% Ministry of Finance and 0.2% agricultural cooperatives) bank. In 1993, following an amendment to its legal incorporation act (BAAC Act, 1993), BAAC was authorised to lend to farmers for agricultural-related activities and, more recently, for rural non-agricultural activities. BAAC is supervised by the central bank (Bank of Thailand) and audited by the state auditing agency (Office of the Attorney General of Thailand). BAAC dominates lending to the agricultural sector in Thailand, accounting for 83% of total agricultural loans, as it provides subsidised loans to mostly smallholder farmers via group lending and on-lending to agricultural cooperatives. In the 2021 fiscal year, BAAC's total assets amounted to approximately Euro 53 billion.
+
+The majority of loanees are rice farmers. As rice is the principal crop in the country (followed by rubber, sugarcane, cassava and maize), providing services to these farmers is BAAC's core business activity. BAAC has considerable experience working with donors and international partners, including in the NSP where BAAC operates a loan programme for agricultural service providers.
+
+## 266. Office of Natural Resources and Environmental Policy and Planning (ONEP): ONEP is a public entity under the Ministry of Natural Resources and Environment (MoNRE), operating in accordance with the Administrative Organisation of the State Act B.E. 2534 (1991), as amended in B.E. 2545 (2002). ONEP has the mandate to formulate policy, plans and measures to enhance and preserve environmental quality and natural resources. ONEP is responsible for the Environmental Fund Division (EFD) and serves as the focal point for international environmental conventions, including the UNFCCC. ONEP is also the GCF NDA.
+
+ONEP has considerable experience working with donors and international partners, including as an implementation partner of the GIZ NAMA Support Project (NSP), the International Climate Initiative (IKI), the World Bank and others.
+
+## 267. International Rice Research Institute (IRRI): IRRI was established in 1960 as an independent, non-profit, international research and educational institute dedicated to reducing poverty and hunger through rice science, improving the health and welfare of rice farmers and consumers, and protecting the rice-growing environment for future generations. It is headquartered in the Philippines, has an office in Thailand and is a founding member of the Consultative Group on International Agricultural Research (CGIAR). IRRI is the most prominent regional research institution in its field and a significant provider of technical expertise and capacity building services in the rice sector. IRRI receives grant / project funding from governments and private sources. Its active portfolio includes more than 150 donor-funded projects, ranging in size from US$ 10,000 to US$ 30 million, in conjunction with JICA, USAID, FAO, UNDP, UNEP, ADB and others. Total grant income in 2021 amounted to approximately US$ 52.5 million.
+
+IRRI has a long history of executing projects funded by the German federal government (BMZ) in the rice sector, both in Thailand and the broader region.
+
+## Table 15: Responsibilities of Executing Entities
+
+| Thai Rice Project Elements | Executing Entity |
+|----------------------------|------------------|
+| Output 1.1: Rice farmers invest in and apply climate-smart technologies and practices | GIZ, IRRI, RD |
+| Activity 1.1.1: Building capacity of smallholder farmers and extension services on climate-smart rice farming | GIZ, RD |
+| Sub-Activity 1.1.1.1: Training for farmers on climate-smart technologies, practices and management | GIZ, RD |
+| Sub-Activity 1.1.1.2: Public sector capacity building, with a focus on extension services and networks | GIZ |
+
+> **Note:** Where a Sub-Activity is implemented by more than one Executing Entity, a Lead Executing Entity – indicated in bold font – will coordinate
+
+
+---
+*Chunk pages 98–98*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1100 (sys=94, user=1006), max_out=1024, ctx=8192
+---
+
+# B  
+## GREEN CLIMATE FUND FUNDING PROPOSAL V.10.0 | PAGE 95  
+
+### Sub-Activity 1.1.1.3: Development, verification and transfer of new technologies for climate-smart rice farmers  
+GIZ, IRRI  
+
+### Activity 1.1.2: Enhancing farmers’ access to finance for climate-smart farming services and technologies  
+BAAC, GIZ  
+
+#### Sub-Activity 1.1.2.1: Financial literacy for farmers  
+BAAC, GIZ  
+
+#### Sub-Activity 1.1.2.2: Incentive payments to support uptake of climate-smart services and technologies  
+BAAC  
+
+### Output 2.1: Service providers invest in and offer climate-smart technologies to rice farmers  
+
+#### Activity 2.1.1: Building capacity of service providers for the supply of climate-smart technologies and practices in rice farming  
+GIZ, IRRI  
+
+##### Sub-Activity 2.1.1.1: Promotion of quality assurance and match-making for climate-smart agricultural services  
+GIZ, IRRI  
+
+##### Sub-Activity 2.1.1.2: Strengthening agro-met service provision  
+GIZ  
+
+##### Sub-Activity 2.1.1.3: Improving insurance services offered to rice farmers  
+GIZ  
+
+#### Activity 2.1.2: BAAC climate-smart and farmer-friendly financial product development and roll-out  
+BAAC, GIZ  
+
+##### Sub-Activity 2.1.2.1: Climate-smart agricultural lending by BAAC  
+BAAC  
+
+##### Sub-Activity 2.1.2.2: Climate-smart lending capacity development for BAAC  
+GIZ  
+
+### Output 3.1: Strengthened institutional and market environment for climate-smart agriculture  
+
+#### Activity 3.1.1: Strengthening market linkages and standards for sustainable rice and biomass residues  
+GIZ, IRRI  
+
+##### Sub-Activity 3.1.1.1: Development of the sustainable rice and biomass residues markets  
+GIZ, IRRI  
+
+##### Sub-Activity 3.1.1.2: Linkages to private sector partners, value chains and public-private partnerships  
+GIZ  
+
+#### Activity 3.1.2: Strengthening the enabling institutional and policy environment for climate-smart rice farming  
+GIZ, IRRI  
+
+##### Sub-Activity 3.1.2.1: Policy support for climate-smart agriculture  
+GIZ  
+
+##### Sub-Activity 3.1.2.2: Support to NDC implementation and MRV in the rice sector  
+GIZ, IRRI  
+
+##### Sub-Activity 3.1.2.3: Carbon market linkages  
+GIZ  
+
+#### Activity 3.1.3: Thai Rice Facility and ThaiCI implementation  
+GIZ, ONEP  
+
+##### Sub-Activity 3.1.3.1: Design and operationalisation of the Thai Rice Facility  
+GIZ  
+
+##### Sub-Activity 3.1.3.2: EFD strengthening and ThaiCI implementation  
+ONEP  
+
+#### Activity 3.1.4: Regional exchange and peer-to-peer learning  
+GIZ, IRRI  
+
+##### Sub-Activity 3.1.4.1: Regional exchange and peer-to-peer learning  
+GIZ, IRRI  
+
+### Table 16: Executing Entity Budgets  
+
+| Executing Entity | Budget Responsibility | GCF Funds (million Euros) | Co-Finance (million Euros) | Total (million Euros) |
+|------------------|-----------------------|----------------------------|-----------------------------|----------------------|
+| GIZ              |                       | 15.77                      | 2.04                        | 17.81                |
+| RD               |                       | 8.2                        | 36                          | 44.2                 |
+| BAAC             |                       | 9                          | 30                          | 39                   |
+| ONEP             |                       | 2                          | 1.62*                       | 3.62                 |
+| IRRI             |                       | 3.18                       | 6.24                        | 9.42                 |
+| **Total**        |                       | **38.17**                  | **75.9**                    | **114.05** **         |
+
+* The ONEP co-financing letter indicates an amount of 60 million Thai baht. Converted into Euro (€) using the exchange rate 1 Euro (€) = 37 Thai baht.  
+** Private sector contributions not included in this figure.  
+
+### Figures are rounded.  
+
+268. In addition to the Executing Entities, the Thai Rice Project will mobilise a large number of project partners, spanning the public sector, the
+
+
+---
+*Chunk pages 99–99*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1149 (sys=94, user=1055), max_out=1024, ctx=8192
+---
+
+# B.4.3 Governance and management
+
+## Project Governance
+
+270. The Thai Rice Project will be overseen by a Project Steering Committee (PSC), which will serve as the principal governing body for the project (as shown in Figure 13). The PSC will meet twice a year and will consist of representatives of Thai national ministries and departments – including the Office of Natural Resources and Environmental Policy and Planning (ONEP), which serves as the Thai NDA – and close project partners. Private sector interests will be represented by a seat reserved for the private sector partners engaged in the project through the develoPPP programme (one seat on a rotational basis). The PSC will be responsible for political oversight and coordinating partner cooperation. The specific functions of the PSC will be to:
+
+### Ebro Foods
+
+- promotes sustainable rice value chains in Thailand, supports market linkages for farmers, and provides sustainability market information to farmers.
+- Ebro Foods will contribute to Activity 1.1.1 by joining in farmer trainings and providing market and buying information as a 'pulling force' for sustainable farm practices transformation and adoption by farmers.
+- Ebro Foods will also contribute to Activity 3.1.1 by working with local mills, identifying optimal collection points and ensuring rice is TAS-compliant (or equivalent standard).
+
+### MARS
+
+- promotes sustainable rice value chains in Thailand and has a sustainable sourcing income strategy for Thailand to advance farmer incomes through multi-stakeholder collaborations on relevant interventions, such as supporting market linkages for farmers, strengthening farmer groups, increasing farm productivity, income diversification and other measures.
+- MARS has worked with GIZ on a sustainable rice and income-focused programme in Roi Et since 2018.
+- MARS will contribute to Activity 1.1.1, for specific extension services and to Activity 3.1.1 (sourcing from farmers who comply with TAS / SRP and promoting market linkages).
+
+### Olam Agri Group
+
+- is interested in sourcing sustainable rice and is currently collaborating with GIZ, focused on building sustainable rice value chains in the ASEAN region.
+- Olam is also interested in straw and stubble management and climate-smart crop residue management.
+- Olam is supporting field activities in the Central Plains, covering field staff and training to promote new rice varieties and to develop new rice value chain linkages, and is providing a purchase guarantee for new rice varieties.
+- In the North-East, Olam is assigning full-time field staff to support farmer training and market linkage facilitation (working with local mills and farmer groups to set up optimal buying points).
+- Olam supports the development of a traceable product system, a monitoring system and a bonus incentive for standard-compliant rice.
+- Olam will contribute to Activities 1.1.1 and 3.1.1 by potentially providing a bonus incentive through sourcing of rice from farmers who comply with the TAS (or equivalent standard), market linkage facilitation with rice traders and mills, and biomass residue market development.
+- Olam will also support the exit strategy of the project through the work on carbon offsets and scoping the potential for carbon credit generation by Thai Rice farmers.
+
+### PepsiCo
+
+- through its subsidiary Pioneer Foods, is sourcing parboiled rice grown in the Central Plains of Thailand and will support climate-smart farmer extension to reduce GHG emissions in its supply chains.
+- PepsiCo is currently cooperating with GIZ Thailand to scale-out regenerative agricultural practices for farmers applying crop rotation and micro-irrigation techniques in Northern Thailand (Chiang Mai and Chiang Rai), which are expected to generate synergies, network effects and knowledge products that will feed into the Thai Rice Project.
+- PepsiCo has also successfully pioneered digital tools (such as the Cool Farm Tool) that will be assessed for their potential application in the Thai Rice Project.
+- The support from PepsiCo will be primarily channeled through their contribution to Sub-Activity 3.1.1.2.
+
+
+---
+*Chunk pages 100–100*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=726 (sys=94, user=632), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.10.0 | PAGE 97
+
+• Provide overall guidance for project implementation.  
+• Provide feedback and validation of annual work plans, annual reports and project evaluations.  
+• Ensure project progress and coherence with the (evolving) international and national policy context.  
+• Stay informed of project adherence with E&S Safeguards and Gender Action Plan objectives.  
+• Support the coordination of project activities across different line ministries and between the private and public sectors and civil society.
+
+## Figure 13: Project Governance and Management Structure 319
+
+### Project Management
+
+271. The PMU will be responsible for day-to-day implementation of the Thai Rice Project. Members of the PMU will consist of delegated staff from 4 of the Executing Entities – RD, BAAC, IRRI and GIZ – as well as from DoAE (as the Thai entity with an overall mandate for agricultural extension support, working in the Thai Rice Project context through RD). ONEP as fifth executing entity will be involved at least on a quarterly basis. The Rice Department will provide office space for the PMU. The PMU will be headed by an RD project director and will meet regularly with the following tasks:
+
+• Ensure overall project planning, implementation, monitoring, reporting and evaluation.  
+• Define, monitor and coordinate work plans.  
+• Ensure that budgets and work plans are on track.  
+• Identify and resolve bottlenecks and implementation challenges relevant at the project level.  
+• Monitor adherence to environmental, social, gender and fiduciary safeguards.  
+• Identify issues required to be brought to the attention of the PSC.  
+• Manage the procurement of consultants.
+
+272. A number of project Working Groups will be established with different mandates and meeting frequencies, appropriate to their tasks. The Working Groups will be supported by GIZ and will each contain a representative from the PMU. The Working Groups are intended to provide objective, technically strong, strategic monitoring of defined project activities, semi-detached from the PMU and unaffected by the day-to-day ‘micro-management’ that the PMU will be required to engage in. The Working Groups will involve stakeholders beyond the direct project stakeholders, such as members of the National Working Group for the Implementation of SDG 5 (gender equality). The Working Groups will report on their work directly to the Project Steering Committee. The Working Groups will include:
+
+• Extension Services Working Group  
+
+319 BAAC = Bank for Agriculture and Agricultural Cooperatives; DoAE = Department of Agricultural Extension; IRRI = International Rice Research Institute; MoAC = Ministry of Agriculture and Cooperatives; OAE = Office of Agricultural Economics; ONEP = Office of Natural Resources and Environmental Policy and Planning; RD = Rice Department; RID = Royal Irrigation Department.
+
+
+---
+*Chunk pages 101–101*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=580 (sys=94, user=486), max_out=1024, ctx=8192
+---
+
+# B.4.4 Legal and contractual arrangements
+
+273. BMZ will commission GIZ with the implementation of the overall project (commissioning agreement). The GCF will transfer funds based on a Funded Activity Agreement (FAA) to the Accredited Entity, GIZ.
+
+274. GIZ as Executing Entity will receive an internal task assignment from the AE for the implementation of defined Thai Rice Project activities. The other Executing Entities will sign grant agreements with GIZ, based on GIZ standard operating procedures for grant agreements. These subsidiary agreements will establish the legal basis on which GIZ makes the GCF proceeds available to the Executing Entities for the measures to be implemented by the Executing Entities, in accordance with the AMA and FAA. In addition, these agreements will include the co-finance contributions of the Executing Entities to the Thai Rice Project.
+
+275. GIZ (AE) will establish the legal formalities with the Government of Thailand in relation to the BMZ commission to cover the Thai Rice Project.
+
+## Figure 14: Contractual Arrangements
+
+# B.4.5 Financial flows
+
+276. GIZ (AE) will transfer GCF funds to 4 Executing Entities, as well as retaining a portion of the GCF funds to implement activities itself as an Executing Entity. The Bank for Agriculture and Agricultural Cooperatives (BAAC) will receive, as an Executing Entity, GCF proceeds for the implementation of the incentive payments for farmers (under Activity 1.1.2). The BAAC Climate-Smart Loan (CSL) scheme (under Activity 2.1.2) will be demand-based. It will receive technical support financed by the GCF but the loans themselves will be wholly financed by BAAC with no contribution from the GCF.
+
+
+---
+*Chunk pages 102–102*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=506 (sys=94, user=412), max_out=1024, ctx=8192
+---
+
+# B.4.6 Regulation, taxation and insurance
+
+## Privileges, Immunities and Taxation
+
+277. The Federal Republic of Germany has concluded a Framework Agreement on Technical Cooperation under international public law with the Government of Thailand, which provides for certain privileges and immunities to be applied in projects and programmes of technical cooperation, including exemptions for taxes, customs, duties and fees. GIZ will endeavour to reach an arrangement to have these privileges and immunities also applied to the Thai Rice Project, including GCF proc eeds. However, a formal agreement will only be entered into after the Thai Rice Project has been approved by the GCF Board.
+
+## Approvals, Permits and Land
+
+278. At the time of submitting this Funding Proposal, GIZ is not aware of the Thai Rice Project requiring other specific approvals, permits, licences or land to allow for the implementation of planned activities.
+
+## Currency
+
+279. Thai Rice Project local transactions will use the Thai national currency, the Baht. The AE will manage GCF proceeds in Euros. GIZ will apply its standard rates for the conversion of currency.
+
+## Insurance
+
+280. GIZ, as the AE, will ensure that Thai Rice Project activities are adequately insured as per GIZ standard operating procedures and common practices. GIZ standard operating procedures require contractors to ensure required insurance cover. GIZ policies provide insurance cover for GIZ staff. At the time of submitting the Funding Proposal, GIZ does not anticipate additional insurance in order to cover special risks in the Thai Rice Project.
+
+---
+
+*Note: Please see currency conversion notes in Section C: Financing Information.*
+
+
+---
+*Chunk pages 103–103*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1120 (sys=94, user=1026), max_out=1024, ctx=8192
+---
+
+# B.5. Justification for GCF funding request
+
+## B.5.1 Additionality
+
+281. The Thai Rice Project addresses mitigation and adaptation priorities identified by the government of Thailand, including in the NDC and the NAP. It targets a key economic sector – rice farming – that is both emissions-intensive and especially vulnerable to climate change. The Thai Rice Project builds on a strong basis provided by foundation and baseline projects, and assembles a significant volume of co-finance from a diverse set of public and private sector actors in order to address an identified set of barriers. The project further leverages a substantial amount of financing from the private sector, involving actors along the entire rice value chain.
+
+282. GCF support is needed for technical assistance (TA) – notably, training for farmers and service providers on the deployment of climate-smart technologies and approaches; operationalisation of the TAS standard; evolution of the Thai Rice Insurance Scheme (TRIS); and policy support for relevant Government institutions (joined -up coordination of the rice sector through the Thai Rice Facility, MRV, carbon market development, etc.) – as well as financial assistance (FA) in the form of incentive payments for farmers to adopt climate-smart technologies and practices, and grants to be channelled by ONEP to ThaiCI climate-smart rice projects.
+
+283. While Thailand’s rice sector is partially subsidised, with a history of provision of domestic finance in the rice sector by the government and state institutions such as BAAC, those finance flows are not targeted at climate-smart rice agriculture. Significant and long-standing barriers have jeopardised any significant progress in embarking on a low-emission, climate-resilient development trajectory. Considering those barriers, as well as the current macroeconomic environment in Thailand, the increasing frequency and severity of droughts in Thailand and the urgent need to trigger the switch from high- to low-carbon rice farming systems, the Thai Rice Project is needed in order to achieve substantive mitigation and adaptation benefits and to facilitate a paradigm shift in the rice sector.
+
+284. The Thai Rice Project is unique in targeting cross-cutting mitigation and adaptation needs in the rice sector, operating at scale, and deploying coordinated technical and financial assistance. The project will also generate significant co-benefits, including increased farmer incomes and reduced water and air pollution.
+
+## B.5.2 Concessionality
+
+285. The vast majority of the GCF grant (Euro 28.7 million out of Euro 38.15 million) is dedicated to technical assistance and other public good-type activities, for which the use of a grant is fully justified. GCF funds are used to capitalise only 2 financial instruments: (i) the incentive payments scheme for rice farmers (Sub-Activity 1.1.2.2) and (ii) grants to innovative ThaiCI climate-smart rice farming projects channelled by ONEP (Sub-Activity 3.1.3.2).
+
+286. The on-granting implemented through ThaiCI (amounting to up to Euro 1.85 million) will be directed at activities with a public-good character – such as technical assistance, community outreach and MRV – that will not generate significant financial reflows. While Thailand as a whole is considered an upper-middle-income, investment-grade (BBB+) country, the agricultural sector – and, in particular, rice farming – is considered highly vulnerable, justifying a more concessional approach.
+
+287. Only the incentive payments scheme – with a GCF budget of Euro 7.6 million – will generate financial reflows. The incentives are directed at eligible farmers who adopt a recommended package of climate-smart agriculture measures, and are indicatively set at baht 7,000 (~Euro 189) for farmers whose package includes expensive LLL services and baht 4,000 (~Euro 108) for farmers whose package does not includes LLL. These incentives are justified based on a detailed financial model (see Annex 3a) and the additional considerations outlined below.
+
+288. Despite the positive financial internal rate of return (FIRR) generated by climate-smart technologies and practices without the incentive payments (for example, 14.2% FIRR in the Central Plains and 11.2% in
+
+--- END EXTRACTED TEXT ---
+
+
+---
+*Chunk pages 104–104*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1107 (sys=94, user=1013), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.10.0 | PAGE 101
+
+## Table 17: Impact of Climate-Smart Technology Adoption With and Without GCF Incentive Payments  
+(Note: FIRR in the North with the GCF incentive payment is not meaningful due to a positive cashflow in Year 1; 10% discount rate used for net-present value (NPV) calculations; 5-year project duration)
+
+| Region | NPV | FIRR Without GCF Incentive Payment | FIRR With GCF Incentive Payment |
+|--------|-----|------------------------------------|---------------------------------|
+| Central Plains | THB: 2,612.7 Euro: 70.6 | THB: 8,976.4 Euro: 242.6 | 14.2% 27.5% |
+| North-East | THB: 437.1 Euro: 11.8 | THB: 6,800.7 Euro: 183.8 | 11.2% 36.2% |
+| North | THB: 206.1 Euro: 5.6 | THB: 3,842.4 Euro: 103.8 | 13.6% N/A |
+
+## Rationale for Climate-Smart Incentive Payments
+
+290. Farmers are inherently risk-averse and sceptical of new technologies – in Thailand and elsewhere. The most powerful factor to persuade farmers to switch practices is evidence that the new practices have worked among peers. These behavioural features are well documented in the academic literature. For instance, a 2019 study finds that "almost 35% of Thai farmers have an extreme degree of risk aversion" and that "80% of Thai farmers express some degree of loss aversion …The literature shows that loss aversion, when combined with risk aversion, could reduce farmers' incentive to invest and adopt new farming practices and/or technology". GIZ experience in Thailand with the NSP and in agricultural projects in other countries confirms this observation.
+
+291. The proposed GCF grant-funded financial incentives of baht 7,000 and baht 4,000 (with and without LLL, respectively) are designed to trigger the early conversion to climate-smart agriculture by a meaningful minority of rice farmers in the 3 regions. Specifically, the incentive scheme will be in force for 2 years and will benefit approximately 16% of the ~253,400 farmers targeted for conversion, or approximately 41,500 farmers. These incentivized early-adopters will be requested to share their evidence of climate-smart agriculture success with local peer farmers.
+
+292. As shown in Table 17, the switch to climate-smart rice farming would result in FIRRs that, while positive, are not by themselves sufficient to persuade first-time adopters to switch. The FIRR without incentive payments would be in the teens in the Central Plains and the North but close to just 10% in the North-East. It is also worth noting the high sensitivity of FIRRs to changes in rice yield (Table 18). Farmers are aware of the difficulties associated with accurately predicting the change in yield derived from switching to different technologies and practices, and will therefore look cautiously at promises of large returns over 5 years. These doubts will subside in the future, once farmers – due to the Thai Rice Project
+
+322 Attanavich W. et al. (2019), 'Farms, farmers and farming: a perspective through data and behavioural insights', PIER Discussion Paper, 122: https://www.pier.or.th/files/dp/pier_dp_122.pdf
+
+
+---
+*Chunk pages 105–105*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=716 (sys=94, user=622), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.10.0 | PAGE 102
+
+## Table 18: IRR Sensitivity to Yields
+
+| Central Plains | North-East | North |
+|----------------|------------|-------|
+| Yield FIRR     | Yield FIRR | Yield FIRR |
+| Base case LLL yield impact +5% 14.2% | LLL yield impact +7% 11.2% | SSNM yield impact +1.5% gradually by Year 3 13.6% |
+| Downside LLL yield impact +4% 2.2% | LLL yield impact +6% 5.0% | SSNM yield impact +1% by Year 2 -15.0% |
+
+The conversion to climate-smart agriculture negatively affects farm cashflows in the first year of adoption, especially when LLL is included.
+
+## Figure 16: Impact of Climate-Smart Technology Adoption on Farm Cashflows (5-Year Period)
+
+In the Central Plains, Year 1 cashflows would drop by 83%. The drop is even more pronounced in the North-East, where the baseline farm produces only a small cash surplus – here, the adoption of climate-smart agriculture causes cashflows to turn negative, requiring the farmer to either borrow or tap into his/her own savings to finance the adoption of climate-smart agriculture. Only in the North, where LLL is not applied, does the conversion cause only a moderate reduction in cashflows in Years 1 and 2.
+
+The financial incentive is intended to partially buffer the drop in cashflows in Year 1 and therefore facilitate conversion to climate-smart agriculture by early-adopters. With the objective to minimise concessionality, the baht 7,000 incentive in the Central Plains and North-East only partially covers the shortfall.
+
+## Eligibility criteria
+
+Will limit the approval of incentive payments only to farmers who are expected to generate a catalytic network effect to draw in their peers and/or are particularly vulnerable due to one or more of the following factors:
+
+1. Household income below a certain threshold
+2. Inability to borrow from BAAC or other financial institutions (for instance, due to lack of collateral or to pre-existing loan exposures)
+3. Farm location in an area determined to be particularly exposed to climate change and other crop risks
+4. Lack of irrigation (resulting in only one farming season)
+5. Gender considerations
+
+
+---
+*Chunk pages 106–106*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=463 (sys=94, user=369), max_out=1024, ctx=8192
+---
+
+# B 
+## GREEN CLIMATE FUND FUNDING PROPOSAL V.10.0 | PAGE 103 
+
+295. While the financial incentives will result in an increase in the FIRR, this increase is not deemed to be overly generous. Figure 17 shows the FIRR with GCF grant in the 3 regions. The FIRR in the Central Plains representative farm would increase to ~27.5%. The FIRR in the North-East representative farm would increase to 36.2%.
+
+296. Financial incentives will be discontinued once the Thai Rice Project ends. Since climate-smart rice farming produces a positive FIRR without incentives, once the initial risk-aversion is overcome and farmers realise the financial benefits of the new technologies and practices, it is expected that they will persist in their implementation. BAAC will be fully capacitated to evaluate the financial benefits of climate-smart agriculture (Sub-Activity 2.1.2.2) and some farmers who were previously not eligible for BAAC loans may become so. In addition, as a result of Sub-Activity 3.1.2.3, progress will have been made towards the establishment of a voluntary carbon pricing mechanism that allows climate-smart farmers to at least partially monetise the carbon value of climate-smart adoption, adding to the attractiveness of climate-smart rice farming.
+
+Figure 17: Climate-Smart Agriculture IRR with GCF Grants (5-Year Period)
+
+(Note: FIRR in the North is not meaningful due to a positive cashflow in Year 1)
+
+
+---
+*Chunk pages 107–107*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=563 (sys=94, user=469), max_out=1024, ctx=8192
+---
+
+# Hypothetical Concessional Loan Scenario
+
+297. The Thai Rice Project will mobilise a substantial BAAC loan as co-finance, dedicated to climate-smart rice farmers and funded out of BAAC's existing balance sheet (with no need for a GCF concessional loan).
+
+298. Nonetheless, a hypothetical scenario is presented below, in which GCF lends at concessional terms to the Government of Thailand and this amount is on-lent by BAAC (which is a state-owned bank) to farmers who: (i) adopt climate-smart farming technologies and practices, and (ii) pass BAAC's credit screening process. For the purposes of this hypothetical scenario, the following assumptions are applied to BAAC's on-lending: (i) 5-year maturity with 1-year grace period; (ii) 4 equal instalments in Years 2-5; (iii) 5% interest rate, higher than GCF rates due to the cost of converting GCF hard currency into Thai baht and BAAC's operating costs; and (v) a loan amount equal to 50% of the LLL service fee in the Central Plains and North-East and a small loan of baht 3,000 in the North (where LLL is not implemented).
+
+299. Unsurprisingly, FIRRs increase relative to the base-case (no-grant) scenario (see Figure 18), since the cost of debt is lower than the unlevered FIRRs shown above.
+
+300. It is worth noting that a loan, albeit at concessional terms, would hardly be considered a subsidy by risk-averse farmers who are new to climate-smart agriculture. Also, BAAC on-lending would only be available to creditworthy farmers – not to all farmers – and any relaxation of BAAC credit criteria would likely result in some farmers defaulting on the loan (making the loan de facto a grant).
+
+
+---
+*Chunk pages 108–108*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=359 (sys=94, user=265), max_out=1024, ctx=8192
+---
+
+# B.6. Exit strategy
+
+## B.6.1 Exit strategy
+
+301. The Thai Rice Project creates market linkages between farmers and other sustainable rice value chain actors – including service providers, off-takers, traders and consumers. By strengthening this market, and by fostering both the demand and supply of susta inably-produced rice, a lasting transformation of the sector will be achieved.
+
+302. Error! Reference source not found. provides a graphical representation of how the Thai Rice Project supports different elements of the rice and rice residues value chain . From the farmer perspective, the five major inputs that influence agricultural practices and decision-making are finance, policy, agro-inputs (such as seeds and irrigation water, but also intangibles such as skills and training), insurance and service provision. The rice and rice residues (straw and stubble) that are produced by farmers are purchased and
+
+[Page 105]
+
+
+---
+*Chunk pages 109–109*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1142 (sys=94, user=1048), max_out=1024, ctx=8192
+---
+
+# Thai Rice Project Exit Strategy
+
+## Activity 1.1.1: Building capacity of
+
+### National agricultural extension system
+
+The national agricultural extension system is capacitated to deliver climate-smart rice knowledge and practices to farmers and service providers, and promote the application of climate-smart technologies.
+
+### Private sector mobilization
+
+The private sector will be mobilized to support the government in this task. The project builds on a broad consortium of private sector partners and leverages private co-finance.
+
+### Extension services and capacity building
+
+The extension services and capacity building activities rendered through the Thai Rice Project will be continued and scaled-up by both public and private sector actors after the end of the project implementation period.
+
+## Activity 1.1.2: Creating stable and long-lasting relationships
+
+### Incentive grants and Climate-Smart Loan (CSL) Scheme
+
+The incentive grants and the Climate-Smart Loan (CSL) Scheme will be instrumental in creating stable and long-lasting relationships between farmers and value chain actors.
+
+#### Farmers and suppliers
+
+Farmers will be introduced to the suppliers of inputs, services (such as LLL) and labor required for the implementation of climate-smart rice farming, directly through the financial incentives and technical assistance provided by the project. These same suppliers will continue to operate in the long-term.
+
+#### LLL service provision
+
+LLL service provision is a profit-making activity: the project will create critical mass for providers to engage in this business activity and remain engaged in the long-term.
+
+#### BAAC expertise
+
+BAAC, the largest agricultural lender in Thailand, will have developed deep expertise in lending for climate-smart agriculture and will have witnessed the enhanced creditworthiness of farmers engaged in climate-smart agriculture (more stable income in the face of climate change). The CSL Scheme will become a mainstream loan product for BAAC.
+
+#### Repayment dedication
+
+Amounts repaid from the original climate-smart loans will continue to be dedicated to the CSL Scheme for new farmers who decide to adopt climate-smart agriculture, having witnessed its positive effects on farm income.
+
+## Activity 1.1.3: Dissemination of impacts and lessons learned
+
+### Regional exchange support
+
+The project's close links with IRRI (headquartered in the Philippines), multinationals such as Olam, MARS and PepsiCo, and the regional CRRL baseline project (see Section B.1.5), as well as its regional exchange support provided under Sub-Activity 3.1.4.1, will ensure that the project's impacts and lessons learned are widely disseminated throughout the region.
+
+## Activity 1.1.4: Enhanced coordination
+
+### Thai Rice Facility
+
+Initially, the benefit of the Thai Rice Facility, which will be established with Thai Rice Project support, will primarily be in the form of enhanced coordination between RD / MoAC and key rice sector institutions (such as BAAC, TGIA, ONEP and ACFS). Over time, however, the Facility is expected to enable a level of 'joined up' action across the rice sector and the climate change 'sector' that has hitherto not been possible.
+
+### Climate Finance Strategy
+
+One of the Facility's concrete deliverables during project implementation will be to develop a Climate Finance Strategy for the Thai rice sector.
+
+## Activity 1.1.5: Carbon finance pathway
+
+### T-VER Rice Scheme transition
+
+A further element of the exit strategy, as well as a mechanism for potential further scaling of results, is the promotion of carbon finance as a pathway for the rice sector to generate economic value from mitigation practices such as AWD.
+
+### Key long-term role
+
+Indeed, a key long-term role of the Thai Rice Facility will be to oversee the transition of the T-VER Rice Scheme from being a subject of technical support (during project implementation) to being an effective financial driver of mitigation action in the rice sector (after the project).
+
+## Activity 1.1.6: EF D support
+
+### Technical assistance and financial support
+
+Finally, the Thai Rice Project will extend technical assistance and financial support to EF D, thereby facilitating EFD's efforts to become a central climate finance institution and a GCF Direct Access Entity – and thereby cementing Thailand's long-term relationship with the GCF.
+
+## Table 19: Thai Rice Project Exit Strategy
+
+| Activity | Key Deliverables | Exit Strategy |
+|----------|------------------|---------------|
+| Activity 1.1.1 | Building capacity of national agricultural extension system | The project's capacity building support to farmers is undertaken through the national agricultural extension system: this system will continue to operate well beyond... |
+
+[Page 106]
+
+
+---
+*Chunk pages 110–110*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1269 (sys=94, user=1175), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.10.0 | PAGE 107
+
+## Smallholder farmers and extension services on climate-smart rice farming
+
+- Climate-smart training and advisory support to farmers:
+  - The rice farmer population is trained and enabled to make informed decisions on climate-smart technologies, practices and management.
+  - One or more apps are developed to support climate-smart rice farming.
+  - Dry DSR and drone technology are assessed for their potential in the Thai rice context.
+
+## Implementation period of the project
+
+- Ongoing climate-smart support to existing and new generations of farmers is provided during the implementation period of the project.
+- Close coordination with national stakeholders will be ensured during app development and an 'owner' of each app identified early on in the process.
+- There are good ex ante reasons to think that the market potential of dry DSR and drones is high, based on previous pilots and experiences in other countries. But current uncertainties are acknowledged: hence the project’s approach of verifying the technologies prior to large-scale support / roll-out.
+- In the unlikely event that use-cases are not found, this can itself be regarded as a useful project finding: one that will inform the scope of future government and donor agricultural support initiatives, avoid misallocation of investment capital, and avoid unnecessary market development dead-ends.
+
+## Activity 1.1.2: Enhancing farmers’ access to finance for climate-smart farming services and technologies
+
+- Financial literacy among rice farmers is improved.
+- Incentive payments to support the uptake of climate-smart services and technologies are issued to rice farmers.
+- Financial literacy support is delivered through the national agricultural extension system, the ongoing (post-project) operation of which is assured.
+- The project will overcome initial barriers to farmers’ adoption of climate-smart rice agriculture (risk aversion, indebtedness, etc.) and demonstrate the agricultural and financial viability of climate-smart rice, thereby unlocking sustained market growth.
+
+## Activity 2.1.1: Building capacity of service providers for the supply of climate-smart technologies and practices in rice farming
+
+- The quality approval process and register for climate-smart service providers are set up.
+- Registered service providers receive training on quality criteria and financial management.
+- A match-making app is rolled-out to facilitate farmer-service provider market interactions.
+- The efficiency and customer value of the existing Thai Rice Insurance Scheme (TRIS) model are improved and the transition to an index-based model is initiated.
+- The quality approval process and register will continue to be operated by RD after the end of the project.
+- Training for service providers will continue to be provided through the national agricultural extension system.
+- The match-making app will reduce market frictions, enabling farmers and service providers to find each other online, communicate, agree terms and a service schedule, and provide mutual ratings for each other after the work has been completed. It will continue to be operated by a designated app 'owner' after the end of the project (identity to be confirmed during project implementation).
+- The index-based TRIS roadmap will directly support the government’s TRIS Action Plan (as contained in the 13th National Economic and Social Development Plan, NESDP), thereby ensuring sustained future impact beyond the duration of the Thai Rice Project.
+
+## Activity 2.1.2: BAAC climate-smart and farmer-friendly financial product development and roll-out
+
+- The Climate Smart Loan (CSL) scheme is rolled-out to provide up to Euro 30 million in loans on a demand basis to climate-smart farmers and service providers.
+- BAAC corporate and provincial staff are trained on farmers’ climate-related needs, the design of climate-related financial products and the needs of under-served market segments (e.g. women farmers).
+- The CSL is entirely co-financed by BAAC. In the context of BAAC’s strategic pivot – encouraged by the government – towards financing climate-related agricultural investments, the CSL represents a valuable learning opportunity and a platform that can be subsequently upscaled or replicated.
+
+## Activity 3.1.1: Strengthening market linkages and standards for sustainable rice and biomass residues
+
+- The TAS is rolled-out and scaled-up as a national standard and certification system for sustainable rice.
+- Residue by-products of rice production are marketed, offering additional income streams for farmers.
+- Market linkages – domestic and international – between value chain actors are strengthened.
+- The TAS will continue to serve as a national standard beyond the project implementation period, providing a means of distinguishing premium rice in the national and international markets and facilitating targeted government support to climate-smart rice.
+- The project’s support to residue market-building will ensure that market development is self-interested and self-sustaining, with a momentum that endures long after the project has ended.
+
+
+---
+*Chunk pages 111–111*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=989 (sys=94, user=895), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.10.0 | PAGE 108
+
+## Activity 3.1.1: Strengthening the enabling institutional and policy environment for climate-smart rice farming
+
+- A market development strategy for TAS-verified (or equivalent) is developed.
+- Government bodies shift agricultural policies and programmes (sub-national initiatives, the Climate Change Strategic Plan for the Agricultural Sector, upgraded M&E system, strengthening of the MRV Committee, etc.) onto a climate-smart trajectory.
+- The T-VER Rice Scheme is launched as a flagship national voluntary carbon market coupled to the TAS.
+- Strengthening the policy, programmatic and institutional environment is key to ensuring sustained government engagement with climate-smart rice and a clear policy direction for the private sector.
+- The commencement of the T-VER Rice Scheme is specifically intended to be at the end of the Thai Rice Project.
+- Coupling the T-VER Rice Scheme with the TAS will facilitate friction-less entry into the carbon market for smallholder farmers, as well as provide farmers with substantive benefits independent of carbon finance (such as premium prices for their rice and greater resilience to climate change) – thereby driving further market growth.
+
+## Activity 3.1.2: Strengthening the enabling institutional and policy environment for climate-smart rice farming
+
+- Government bodies shift agricultural policies and programmes (sub-national initiatives, the Climate Change Strategic Plan for the Agricultural Sector, upgraded M&E system, strengthening of the MRV Committee, etc.) onto a climate-smart trajectory.
+- The T-VER Rice Scheme is launched as a flagship national voluntary carbon market coupled to the TAS.
+- Strengthening the policy, programmatic and institutional environment is key to ensuring sustained government engagement with climate-smart rice and a clear policy direction for the private sector.
+- The commencement of the T-VER Rice Scheme is specifically intended to be at the end of the Thai Rice Project.
+- Coupling the T-VER Rice Scheme with the TAS will facilitate friction-less entry into the carbon market for smallholder farmers, as well as provide farmers with substantive benefits independent of carbon finance (such as premium prices for their rice and greater resilience to climate change) – thereby driving further market growth.
+
+## Activity 3.1.3: Thai Rice Facility and ThaiCI implementation
+
+- The Thai Rice Facility is established as a multi-institution coordination body and commences operations (regular meetings, policy briefs, climate finance strategy for the rice sector, etc.).
+- ThaiCI is extended to encompass climate-smart rice and approximately 5–15 ThaiCI rice projects are supported with grants.
+- The Thai Rice Facility will continue to operate beyond the implementation period of the project, ensuring ‘joined up’ implementation of gender-responsive, climate-smart practices and financing in the Thai rice sector.
+- ThaiCI will continue to operate beyond the implementation period of the project, providing support to future climate-smart rice projects.
+- EFD’s capacity to manage ongoing ThaiCI operations, and its potential to become accredited as a GCF AE, will be enhanced.
+
+## Activity 3.1.4: Regional exchange and peer-to-peer learning
+
+- An extensive set of regional activities are implemented, including agronomic and MRV exchanges at the technical level, a World Rice Conference side-event and at least 4 regional knowledge-sharing events.
+- Experiences and knowledge generated by the Thai Rice Project will be disseminated and exchanged in the region, thereby facilitating replication effects and cross-fertilization of best practices for sustained deepening and widening of climate-smart rice farming in Thailand and throughout the region.
+
+## Overall project impact on the Thai rice sector’s climate-smart transition
+
+- Supply-side: trained farmers, enabled by technical and financial support and capable service providers, and motivated by financial self-interest, practise climate-smart rice farming and thereby serve as real-world exemplars of the benefits of climate-smart rice farming to other rice farmers in Thailand and beyond.
+- Demand-side: commercial off-takers and end-consumers are provided with quality-assured supply of certified sustainable rice, and associated biomass residues, thereby satisfying current pent-up demand and facilitating further market growth.
+- The twin pillars of the project’s exit strategy are: (i) to harness the financial self-interest of market actors (farmers, service providers, off-takers, consumers) so that market activity will be sustained independently of the project, and (ii) to put in place enduring structures – policies, agricultural extension services, financial products, etc. – that continue to operate beyond the duration of the Thai Rice Project.
+
+
+---
+*Chunk pages 112–112*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=166 (sys=94, user=72), max_out=1024, ctx=8192
+---
+
+# Figure 19: Rice and Rice Residues Value Chain
+
+[Page 1]  
+B  
+GREEN CLIMATE FUND FUNDING PROPOSAL V.10.0 | PAGE 109  
+
+Figure 19: Rice and Rice Residues Value Chain
+
+
+---
+*Chunk pages 113–113*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=732 (sys=94, user=638), max_out=1024, ctx=8192
+---
+
+# B.6.2 Sustainability
+
+309. The Thai Rice Project will scale-up and broaden a suite of foundation projects (see Section B.1.4), which have already demonstrated: (i) the strong interest (but currently limited capacity) of rice farmers to adopt and maintain climate-smart technologies and practices, (ii) current shortcomings and needs in the policy environment, and (iii) the genuine and proactive willingness of the government to support a paradigm shift to establish climate-smart rice production in Thailand – as reaffirmed by the updated 2nd NDC and the updated LT-LEDS published in November 2022.
+
+310. The Thai Rice Project is assessed as having high sustainability potential. GCF grant financing will:
+
+- Mainstream the use of a range of climate-smart farming technologies and practices that create financial benefits at farm-level and are therefore in the self-interest of the farmer (higher rice quality, reduced costs, premium price, reduced vulnerability to drought, etc.). Training will be conducted by the national agricultural extension services in conjunction with innovative private sector support and involving local farmer and community organisations, in order to ensure the widespread dissemination of, and sustainable, informed adoption of climate-smart farming practices.
+- Foster the development of new markets for climate-smart rice and establish the self-sustaining business models necessary for private sector provision of technologies to adapt farming practices to the new climate context while also reducing GHG emissions. Strong partnerships with the private sector will be established and market linkages strengthened through the Thai Agricultural Standard for Sustainable Rice (TAS) and through rice biomass residue markets.
+- Scale-up the TAS as a national standard to create market differentiation for climate-smart agricultural produce in the Thai market and support access to international markets through alignment with internationally equivalent standards. Regular enhancements to the TAS will be facilitated to progressively improve climate and other sustainability benefits.
+- Support the design, operationalisation and launch of the T-VER Rice Scheme as a sustainable source of additional finance for the climate-smart rice sector.
+- Strengthen the individual capacities of national institutions, including MoAC, MoNRE, EFD and BAAC, to implement climate-informed measures in the rice sector – including through an expanded and capacitated ThaiCI – and enhance their ability to coordinate and ‘join up’ efforts through the new Thai Rice Facility.
+- Mobilise a substantial volume of public and private finance in support of climate-smart rice, including an entirely new BACC Climate-Smart Loan (CSL) scheme explicitly designed to improve capital availability for climate-smart farmers and service providers.
+
+
+---
+*Chunk pages 114–114*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=692 (sys=94, user=598), max_out=1024, ctx=8192
+---
+
+# C.1. Total financing
+
+## (E) Requested GCF funding
+
+(i + ii + iii + iv + v + vi + vii)
+
+### Total amount Currency
+
+38.17 million euro (€)
+
+### GCF financial instrument Amount Tenor Grace period Pricing
+
+#### (i) Senior loans
+
+Enter amount  
+Enter years  
+Enter years  
+Enter %  
+
+#### (ii) Subordinated loans
+
+Enter amount  
+Enter years  
+Enter years  
+Enter %  
+
+#### (iii) Equity
+
+Enter amount  
+Enter % equity return  
+
+#### (iv) Guarantees
+
+Enter amount  
+Enter years  
+
+#### (v) Reimbursable grants
+
+Enter amount  
+
+#### (vi) Grants
+
+38.17  
+
+#### (vii) Results-based payments
+
+Enter amount  
+
+## (b) Co-financing information
+
+### Total amount Currency
+
+79.90 million euro (€)
+
+### Name of institution
+
+### Financial instrument Amount Currency Tenor & grace Pricing Seniority
+
+BMZ Grant  
+2.04 million euro (€)  
+
+RD In-kind  
+36 million euro (€)  
+
+BAAC Loans  
+30 million euro (€)  
+TBD  
+TBD  
+TBD  
+
+ONEP Grant  
+1.62** million euro (€)  
+
+IRRI In-kind  
+6.24 million euro (€)  
+
+MARS Grant (cash / in-kind)  
+1 million euro (€)  
+
+Olam Grant (cash / in-kind)  
+1* million euro (€)  
+
+Ebro Grant (cash / in-kind)  
+1 million euro (€)  
+
+PepsiCo Grant (cash / in-kind)  
+1* million euro (€)  
+
+### I Total financing
+
+I = (a) + (b)
+
+### Amount Currency
+
+118.08 million euro (€)
+
+## (d) Other financing arrangements and contributions
+
+* For simplicity, a EUR (€) to USD ($) exchange rate of 1:1 is applied to the Co-Finance contributions by Olam and PepsiCo. Upon submission of the Funding Proposal to the GCF Board, this exchange rate will be updated to the appropriate rate at the time. At the current exchange rate, the impact on the budget of using a 1:1 rate is less than Euro 130,000.
+
+** The ONEP co-financing letter indicates an amount of 60 million Thai baht. Converted into EUR (€) using the exchange rate: 1 EUR = 37 baht.
+
+Co-financing letters are provided in Annex 13.
+
+
+---
+*Chunk pages 115–115*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=859 (sys=94, user=765), max_out=1024, ctx=8192
+---
+
+# C.2. Financing by component
+
+| Component | Output | Activity | Indicative cost (million euro) | GCF financing | Co-financing | Amount (million euro) | Financial Instrument | Name of Institutions |
+|-----------|--------|----------|--------------------------------|---------------|--------------|-----------------------|----------------------|----------------------|
+| Outcome 1: Climate-smart farmers' incomes and food security are increased despite adverse climate change | Output 1.1: Rice farmers invest in and apply climate-smart practices and technologies | Activity 1.1.1 | 50.01 | 14.77 | Grant | 35.33 | In-kind | RD, IRRI |
+| | Activity 1.1.2 | 10.92 | 10.92 | Grant | - | - | - | - |
+| Outcome 2: Climate resilience of rice farming is enhanced and GHG emissions are substantially reduced through the adoption of climate-smart technologies | Output 2.1: Service providers invest in and offer climate-smart technologies to rice farmers | Activity 2.1.1 | 2.94 | 1.70 | Grant | 1.24 | In-kind | IRRI |
+| | Activity 2.1.2 | 30.28 | 0.28 | Grant | 30.000 | Loan | BAAC | - |
+| Outcome 3: Government policies and funds are geared towards climate-smart rice | Output 3.1: Strengthened institutional and market environment for climate-smart agriculture | Activity 3.1.1 | 6.38 | 1.51 | Grant | 4.87 | Grant, In-kind | BMZ, Private Partners |
+| | Activity 3.1.2 | 3.29 | 2.04 | Grant | 1.25 | In-kind | IRRI | - |
+| | Activity 3.1.3 | 4.67 | 2.36 | Grant | 2.31 | Grant | ONEP | - |
+| | Activity 3.1.4 | 2.53 | 1.29 | Grant | 1.25 | In-kind | IRRI | - |
+| Monitoring & Evaluation | - | - | 1.89 | 1.00 | Grant | 0.89 | Grant, In-kind | RD, BMZ, ONEP, IRRI, Private Partners |
+| Project Management | - | - | 4.07 | 1.32 | Grant | 2.76 | Grant, In-kind | RD, BMZ, ONEP, IRRI, Private Partners |
+
+Note: The original text appears to have been extracted from a PDF and contains some formatting issues. This markdown table represents the structured data as presented in the source material.
+
+
+---
+*Chunk pages 116–116*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1050 (sys=94, user=956), max_out=1024, ctx=8192
+---
+
+# C.3 Capacity building and technology development/transfer
+
+## C.3.1 Does GCF funding finance capacity building activities? 
+Yes ☒    No ☐
+
+## C.3.2. Does GCF funding finance technology development/transfer? 
+Yes ☒    No ☐
+
+## C.3.1 Capacity building
+
+311. The Thai Rice Project has a strong capacity building element, directed at both individuals (notably, rice farmers) and institutions (including mega-farms, extension services and service providers). This capacity building support directly addresses a need highlighted in Thailand’s NDC, which notes that "there are still gaps in individual and institutional capacities in all relevant agencies, including government agencies, the private sector and the general public. The provision of support and cooperation on climate action is important to achieving mitigation and adaptation objectives and increasing ambition."
+
+323 One of the 4 pillars of the Climate Change Master Plan (2015-2050) is specifically devoted to capacity building.
+
+312. The following Sub-Activities, with a total GCF grant allocation of approximately Euro 24.6 million, contain significant capacity building aspects:
+
+- Sub-Activity 1.1.1.1: Training for farmers on climate-smart technologies, practices and management
+- Sub-Activity 1.1.1.2: Public sector capacity building, with a focus on extension services and networks  
+- Sub-Activity 1.1.2.1: Financial literacy for farmers 
+- Sub-Activity 2.1.2.2: Climate-smart lending capacity development for BAAC 
+- Sub-Activity 3.1.4.1: Regional exchange and peer-to-peer learning  
+
+## C.3.2 Technology development / transfer
+
+313. Thailand’s NDC emphasises the importance to the country of "enhanced access to technology development and transfer". It goes on to note that "it is crucial that international cooperation through the UNFCCC focuses on cooperative attempts to…make technological solutions more affordable for developing countries." The LT-LEDS specifically identifies CH 4 reduction technologies in rice cultivation as a priority need.
+
+325 The Mitigation Technology Needs Assessment (TNA-M) observes that budget constraints on R&D in Thailand mean that international transfer of advanced technologies is urgently required. 
+
+326 The Adaptation Technology Needs Assessment (TNA-A) lists 5 technology priorities, 4 of which are addressed by the Thai Rice Project: weather forecasting and early warning systems, crop technology improvement (drought tolerance, water optimisation and disease and pest control are specifically identified as pressing needs), pr ecision farming practices (including water and GHG management) and post-harvest technology.
+
+327 National Science Technology and Innovation Policy Office (2012), Technology Needs Assessment Report for Climate Change: Mitigation: https://tech-action.unepccc.org/wp-content/uploads/sites/2/2013/12/technologyneedsassessment-mitigation-thailand-13.pdf  
+
+National Science Technology and Innovation Policy Office (2012), Technology Needs Assessment Report for Climate Change: Adaptation: https://tech-action.unepccc.org/wp-content/uploads/sites/2/2013/12/technologyneedsassessment-adaptation-thailand-13.pdf
+
+--- 
+[Page 113]
+
+
+---
+*Chunk pages 117–117*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=240 (sys=94, user=146), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.10.0 | PAGE 114
+
+## 314. The following Sub-Activities, with a total GCF grant allocation of approximately Euro 1.7 million, respond to these identified technology transfer needs:
+
+- Sub-Activity 1.1.1.3: Development, verification and transfer of new technologies for climate-smart rice farming
+- Sub-Activity 2.1.1.2: Strengthening agro-met service provision
+
+
+---
+*Chunk pages 118–118*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=763 (sys=94, user=669), max_out=1024, ctx=8192
+---
+
+# D.1. Impact potential
+
+## D.1.1 Impact performance overview
+
+315. The Thai Rice Project is a cross-cutting initiative that offers both climate mitigation and adaptation benefits.
+
+### Technological and Geographical Scope
+
+316. The Thai Rice Project targets 21 provinces, in which the adoption of 10 technologies and practices offering climate mitigation and/or adaptation benefits will be supported.
+
+#### Table 20: Climate-Smart Agricultural Technologies and Practices Supported by the Thai Rice Project
+
+| Technology / Practice | Type of Climate Impact |
+|-----------------------|------------------------|
+| Laser land levelling (LLL) | Adaptation – improved water-use efficiency, notably in the context of AWD |
+| Alternate wetting and drying (AWD) | Mitigation – reduced CH4 emissions<br>Adaptation – reduced water use |
+| Site-specific nutrient management (SSNM) | Mitigation – reduced N2O from N fertilizer application<br>Mitigation – reduced CO2 from avoided fertilizer production<br>Adaptation – reduced water use and improved nutrient use efficiency |
+| Straw and stubble management (SSM) | Mitigation – reduced CH4 and N2O emissions from straw / stubble burning<br>Adaptation – income diversification through sale of residues |
+| Integrated pest management (IPM) | Mitigation – reduction of fossil fuel-based agro-inputs<br>Adaptation – reduction of crop losses and enhanced food / income security |
+| Rice variety diversification | Mitigation – reduced CH4 emissions<br>Mitigation – reduced N2O from N fertilizer application<br>Mitigation – reduced CO2 from avoided fertilizer production<br>Adaptation – increased tolerance of heat and drought |
+| Crop diversification, rotation | Mitigation – reduced CH4 and N2O emissions<br>Adaptation – reduced water use and reduced crop failure risk |
+| Direct-seeded rice (DSR) | Mitigation – reduced CH4 emissions<br>Adaptation – reduced water use |
+| Farm-level water management (FWM) | Adaptation – increased water retention and storage |
+| Agro-met advisory services | Adaptation – avoided crop loss / damage through better-informed farmer decision-making |
+
+317. The suites of technologies and practices promoted by the Thai Rice Project differ between the target regions, according to the regions’ geographical and agricultural characteristics. An indicative geographical distribution is presented in Table 11. The final distribution, which will closely resemble this indicative distribution, will be confirmed with project stakeholders (at national, provincial and local levels) during the inception phase of the project.
+
+318. The mitigation and adaptation climate impacts presented below in Sections D.1.3 and D.1.5 are based on the indicative distribution. Any changes made to the distribution – in terms of technologies and/or their geographical distribution – will be made during the project implementation phase, as appropriate.
+
+
+---
+*Chunk pages 119–119*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1077 (sys=94, user=983), max_out=1024, ctx=8192
+---
+
+# D.1.2 Emissions reduction estimation methodology
+
+## Baseline Scenario
+
+### Water management practices:
+
+- For irrigated rice in the Central Plains, a high adoption of water-saving practices, including multiple drainage (AWD) and single drainage during the middle of the rice season, is generally observed due to 4 years of NSP implementation in this region. Comprehensive baseline data is captured by a farm survey conducted by GIZ and RD in 2022. This is used for the 6 provinces in the Central Plains that are covered by the NSP.
+  
+- For the 6 additional provinces in the Central Plains, it is assumed that farmers do not practise AWD but at least 50% and 30% of farms have started to apply single aeration in irrigated fields during the dry and wet seasons, respectively. This baseline also ensures conservativeness in the estimation of the project's mitigation potential.
+
+- The provinces in the North – Chiang Mai and Chiang Rai – have not yet adopted new water management activities at meaningful scale. Farmers in these provinces follow traditional practices and retain as much water in the field as possible. Therefore, the analysis assumes 100% continuous flooding in irrigated rice in these provinces.
+
+- For provinces in the North-East, continuous flooding is widely applied. The analysis assumes 75% continuous flooding in irrigated areas in the North-East.
+
+- For rain-fed rice, it is observed through in-field measurements that significant methane reduction can also be achieved through improved irrigation water management during the wet season. However, the 2022 farm survey data shows very low adoption of AWD (8%) and mid-season drainage (7%) practices in the Central Plains during the wet season, and no adoption in the dry season. These empirical values are adopted to estimate baseline emissions for the Central Plains.
+
+- For all provinces in the North and North-East regions, continuous flooding is assumed to be fully practised (100%) in both dry and wet seasons.
+
+## Project lifespan
+
+### 322. The Thai Rice Project lifespan is considered to be 15 years, assuming that three 5-year LLL cycles are sustained as a result of the technical capacities, strengthened service provider market, financial instruments and enhanced policies put in place by the project. Other investments facilitated by the project, such as the purchase of tractors and LLL equipment, are likely to have lifetimes of approximately 20 years or more. Nonetheless, to ensure conservativeness of the project impact calculations, a project lifespan of 15 years is used.
+
+---
+
+[Page 1]  
+D GREEN CLIMATE FUND FUNDING PROPOSAL V.10.0 | PAGE 116  
+
+---
+
+[End of extracted text]
+
+
+---
+*Chunk pages 120–120*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1430 (sys=94, user=1336), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.10.0 | PAGE 117
+
+## 325. Nitrogen fertilizer use: in the Central Plains, the average rate of nitrogen fertilizer used is assumed to be 96 kg N/ha and 107 kg N/ha in the dry and wet seasons, respectively.
+
+Based on empirical observations, it is estimated that the application rate is 20% lower in the North and the North-East.
+
+## 326. Rice residue management: Average rates for different rice residue (straw and stubble) management practices (i.e. burning, incorporation and removal) under irrigated and rain-fed rice in different regions that are reported in the academic literature are used.
+
+It is assumed that burning and removal rates during the wet season are half those in the dry season and that incorporation rates are commensurately higher.
+
+## 327. Methane EF: A number of academic studies calculate EFs for Thailand, with a wide range of values cited. No consolidation or meta-analysis of these EFs has been undertaken to date and no 'official' disaggregated EFs have been published.
+
+Therefore, the standard CH4 EFs provided by the IPCC for South-East Asia are used in the ex ante project GHG calculations. EFs can and will be refined during project implementation, as empirical data becomes available.
+
+## Project Scenario
+
+## 328. Project interventions by region: The Focus Interventions outlined in Table 11 are assumed to be implemented.
+
+A sub-set of potential Supportive Interventions are included in the calculations. Not all Focus Interventions or Supportive Interventions are included in the project's mitigation impact (see below).
+
+## 329. Among the 253,400 smallholder farmers targeted by the project, it is (conservatively) assumed that they apply the Focus Interventions / Supportive Interventions on 80% of their mega-farm farmland and on 60% of their non-mega-farm farmland – which equates to 72% of the farmers' total farmland.
+
+These application rates are based on the empirical experiences of the foundation and baseline projects described in Sections B.1.4 and B.1.5, and reflect the fact that plots differ in their characteristics (soil-type, slope, irrigation, etc.) and their biophysical suitability for certain technologies and practices. Farmers belonging to mega-farms tend to have more consolidated and established plots, accompanied by better access to support services; hence their higher application rate.
+
+Mitigation actions may be applied – and, indeed, are expected to be applied – by farmers on at least some of the remaining 28% of farmland, but in a more ad hoc and occasional manner. For this reason, emission reductions from this 28% of farmland are not estimated and are not included in the project's mitigation impact.
+
+## 330. Central Plains:
+
+### Water management: Applying water-saving practices (single aeration and AWD) is feasible under the bio-physical conditions of the Central Plains.
+
+With the support of the Thai Rice Project, farmers will shift the current area of single aeration and continuous flooding to AWD.
+
+### SSNM: It is assumed that direct and indirect N2O emissions are mitigated by reducing nitrogen input by 10% in both dry and wet seasons.
+
+### SSM: Burning of rice residues is a common practice in the Central Plains. More than one-third of rice residues are burned at the end of the dry season.
+
+For the project (mitigation) scenario, it is assumed – conservatively – that one-quarter of the baseline straw burning will be avoided. This amount will be removed from the field for other purposes.
+
+There will be no reduction of straw burning in the wet season due to wet conditions at the end of the season.
+
+Incorporating rice residues into the soil can generate high CH4 emissions under flooded conditions. In order to reduce CH4 emissions while avoiding the risk of soil fertility reductions, the incorporation of stubble will only be promoted in the wet season.
+
+When a combine harvester is used, the height of stubble is typically 30 cm, which is roughly equivalent to 2.4 tons/ha or 48% of the total weight of rice residue.
+
+The 2022 GIZ / RD field survey reveals that over 80% of residues are incorporated shortly before the start of the following season.
+
+The Thai Rice Project will promote early incorporation and target a level of 50% residue incorporation early before the following season, with 50% of residues being incorporated long (i.e. more than one month) before the following season.
+
+---
+
+### Notes:
+
+- **330 Stuart A. et al (2018), 'The application of best management practices increases the profitability and sustainability of rice farming in the central plains
+
+
+---
+*Chunk pages 121–121*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1347 (sys=94, user=1253), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.10.0 | PAGE 118
+
+## North:
+
+- **Water management:** The 2 provinces – Chiang Mai and Chiang Rai – will start to adopt innovative water management practices by shifting 30% of irrigated rice area from continuous flooding to single aeration (as a conservative estimate).
+- **SSNM:** The baseline nitrogen application rate for rice is relatively low in the North: 77kg N/ha in the dry season and 85 kg N/ha in the wet season. Fertilizer reduction may not be feasible or advisable in the North; this intervention is, therefore, not included in the GHG mitigation impact estimation.
+- **SSM:** Adoption of SSM in the North will be comparable to that in the Central Plains. It should be noted that, in the baseline, the incidence of burning rice straw and stubble is significantly higher in the North region (Chiang Mai and Chiang Rai) than in the Central Plains.
+
+## North-East:
+
+- **Water management:** 25% of rice land will transition from single aeration to AWD, while 25% of farms practising continuous flooding will practi se at least one aeration during the rice season. These moderate uptake rates can be reached without an emphasis on LLL, but introduction of LLL is considered to be beneficial (especially in the mega-farm context).
+- **SSNM:** Due to the low nitrogen rates that are currently applied, no nitrogen reduction will be pursued for farms in the North-East. SSNM introduced into the region will only focus on nitrogen use efficiency (applying smaller doses of nitrogen fertilizer and introducing the rotation of rice and nitrogen-fixing crops). This will have negligible effects on GHG emission, and there are no established ways of estimating the (negligible) impact.
+- **SSM:** Adoption of SSM in the North-East is similar to that in the Central Plains.
+
+## Other Interventions
+
+333. Four mitigation technologies and practices introduced by the Thai Rice Project are not included in the assessment of the mitigation impact of the project: because baseline information (such as level of IPM adoption by region) or project scenario information (e.g., the area of land that is suitable for DSR) is unavailable. Hence, the mitigation impacts of these 4 technologies and practices should be regarded as additional climate benefits that are not accounted for. During project implementation, intensive efforts will be made to collect relevant data so that these mitigation benefits can be credibly quantified and reported. Additionally, their climate adaptation impacts will be monitored using a combination of: (i) the project M&E system, (ii) farmer surveys, (iii) field monitoring of sample plots and, in the case of biodiversity, (iv) a multi-taxon study (covering plants, invertebrates, frogs, fish and birds) that will be undertaken as part of the project’s baseline assessment and mid-term review (see Table 26).
+
+- **Laser land levelling (LLL):** LLL can certainly play a crucial role in supporting and enhancing water-saving technologies. Poorly levelled fields are a major constraint on farmers effectively managing irrigation water in rice fields. On-station and on-farm trials show that LLL increases cropping system productivity and water-use efficiency, as well as profitability. Further, LLL is ‘scale-neutral’, meaning it is not biased towards large fields. A cost/benefit analysis of LLL in Thailand finds a break-even point for farmers after approximately 3 seasons due to higher yields and reduced inputs. An unpublished multi-factorial regression analysis shows a significant influence of LLL on the effectiveness of AWD: measurements on sample plots indicate a higher mitigation effect of AWD in laser-levelled fields than in fields levelled using traditional methods. However, despite these undoubted mitigation benefits, the scientific literature is currently too sparse to derive meaningful LLL EFs. The reduced input cost for farmers arising from LLL will be monitored to assess the adaptation impact of LLL. Specifically, the following metrics will be monitored: kg of seeds, kg of fertilizers, kg of pesticides and the volume of irrigation water reduced.
+
+### References
+
+334. Jat M. et al (2015), ‘Laser-assisted precision land levelling impacts in irrigated intensive production systems of South Asia’, in Lal R. and Stewart B. (eds), Soil-Specific Farming: Precision Agriculture, Taylor & Francis.  
+335. Aryal J. et al (2015), ‘Impacts of laser land levelling in rice-wheat systems of the north-western Indo-Gangetic plains of India’, Food Security, 7: https://link.springer.com/article/10.1007/s12571-015-0460-y  
+336. Nguyen-Van-Hung et al (2022
+
+
+---
+*Chunk pages 122–122*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1133 (sys=94, user=1039), max_out=1024, ctx=8192
+---
+
+# D.1.3 Emissions reduction impact
+
+## Baseline Emissions
+
+Total GHG emissions under the baseline scenario are 6.18 MtCO₂e/year. The average emissions intensity is 5.8 tCO₂e/ha. Since the planting area in the wet season is twice that in the dry season, the wet season is responsible for the majority of emissions: 74% of emissions from mega-farms and 69% of emissions from non-mega-farms occur during the wet season. Approximately 60% of emissions (3.7 MtCO₂e/year) are from irrigated areas and ~40% of emissions are from rain-fed areas.
+
+## Integrated pesticide management (IPM)
+
+Reducing herbicide and pesticide use from a high / intensive level to the recommended level will potentially mitigate 190.7 kg CO₂e/ha/season.338 The following metrics will be monitored to assess the adaptation impact of IPM: kg of product saved, reduction in input cost and the number of species in rice fields (biodiversity).
+
+## Short-duration rice varieties
+
+The emission rate (kg CO₂e/ha/day) depends on the set of applied interventions, the rice season and the irrigation conditions (irrigated and rain-fed). Reducing 1 day of crop duration will reduce between approximately 0.7-0.8% of the total emissions for a typical growth duration in Thailand of 125-150 days. Depending on the growing conditions, this could result in a reduction of 2.97-9.78 kg CO₂e/ha. The following metric will be monitored to assess the adaptation impact of short-duration rice varieties: the number of days that the crop is in the field.
+
+## Dry Direct Seeded Rice (DSR)
+
+Non-flooding conditions before the rice season contribute to a mitigation potential of 331 kg CO₂e/ha/season.339 In addition, multiple drainage water management events can be expected with dry DSR, meaning that in some project areas multiple aerations will be achieved through AWD and in other areas through dry DSR. The following metrics will be monitored to assess the adaptation impact of DSR: amount of land that does not apply land soaking, the volume of water saved and the amount of reduced labour required (person-hours).
+
+## Calculation Tool
+
+334. The estimation is performed using the SECTORice 340 calculation tool341 in conjunction with the conversion and scaling factors given by the 2019 refinement of the 2006 IPCC Guidelines for National Greenhouse Gas Inventories.342
+
+## NAMA Support Project (NSP)
+
+335. The NSP is implementing climate mitigation technologies and practices in 6 provinces in the Central Plains region. The baseline scenario utilised by the Thai Rice Project incorporates the work of the NSP: the baseline scenario in the NSP provinces is characterised by markedly higher baseline adoption rates of AWD, SSNM and SSM. Because the NSP is included in the baseline scenario, NSP-related emission reductions are excluded from the Thai Rice Project mitigation scenario. Double-counting of emission reductions – attributable to the NSP and to the Thai Rice Project – is thereby avoided.
+
+## References
+
+338 Nguyen-Van-Hung et al (2019), 'An assessment of irrigated rice production energy efficiency and environmental footprint with in-field and off-field rice straw management practices', Scientific Reports, 9: https://www.nature.com/articles/s41598-019-53072-x.pdf  
+339 Janz B. et al (2019), 'Greenhouse gas footprint of diversifying rice cropping systems: impacts of water regime and organic amendments', Agriculture, Ecosystems and Environment, 270: https://www.sciencedirect.com/science/article/abs/pii/S0167880918304341  
+340 SECTORice: Source-selective and Emission-adjusted GHG CalculaTOR for cropland – rice.  
+341 Wassmann R. et al (2019), 'Introducing a new tool for greenhouse gas calculation tailored for cropland: rationale, operational framework and potential application', Carbon Management, 10: https://www.tandfonline.com/doi/pdf/10.1080/17583004.2018.1553436?download=true  
+342 IPCC (2019), 2019 Refinement to the 2006 IPCC Guidelines for National Greenhouse Gas Inventories: https://www.ipcc-nggip.iges.or.jp/public/2019rf/vol4.html
+
+[Page 1]
+
+
+---
+*Chunk pages 123–123*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1442 (sys=94, user=1348), max_out=1024, ctx=8192
+---
+
+# Table 21: Baseline Emissions by Farm-Type, Season and Water Management Regime
+
+(IR = irrigated; RF = rain-fed)
+
+| Province | Region | GHG emissions (ktCO2e/year) | Mega-farm | Non-mega-farm |
+|----------|--------|-------------------------------|-----------|---------------|
+|  |  | Dry | Wet | Dry | Wet |
+| Chiang Mai North | 7.34 | 0.75 | 32.81 | 5.83 | 11.40 | 1.16 | 33.31 | 19.24 |
+| Chiang Rai North | 8.19 | 10.10 | 39.58 | 45.75 | 6.33 | 7.81 | 45.92 | 26.53 |
+| Uthai Thani Central Plains | 10.38 | 4.95 | 18.20 | 26.35 | 30.03 | 14.33 | 86.79 | 54.72 |
+| Nakhon Sawan Central Plains | 28.29 | 23.14 | 34.06 | 70.88 | 39.80 | 32.56 | 103.04 | 64.97 |
+| Kamphaeng Phet Central Plains | 23.95 | 5.43 | 26.32 | 26.55 | 55.93 | 12.69 | 79.91 | 50.38 |
+| PhiChit Central Plains | 26.71 | 20.70 | 52.88 | 62.00 | 39.72 | 30.77 | 112.41 | 70.88 |
+| Phitsanulok Central Plains | 43.65 | 18.29 | 37.42 | 44.68 | 69.93 | 29.29 | 86.73 | 54.68 |
+| Lop Buri Central Plains | 26.11 | 0.88 | 46.66 | 16.70 | 54.82 | 1.84 | 76.77 | 48.41 |
+| Chainat Central Plains | 23.81 | 1.38 | 45.37 | 5.39 | 45.76 | 2.65 | 98.84 | - |
+| Ang Thong Central Plains | 3.11 | - | 5.31 | - | 47.38 | - | 80.88 | - |
+| Pathum Thani Central Plains | 22.19 | - | 31.20 | - | 84.19 | - | 118.35 | - |
+| Sing buri Central Plains | 9.91 | - | 16.11 | - | 57.63 | - | 93.66 | - |
+| Ayuthaya Central Plains | 24.22 | - | 33.89 | - | 80.03 | - | 112.00 | - |
+| Suphan buri Central Plains | 42.36 | 0.90 | 49.22 | 14.11 | 54.49 | 1.15 | 83.69 | - |
+| Si sa ket North-East | 83.08 | 16.62 | 18.91 | 194.26 | 19.11 | 3.82 | 42.05 | 23.56 |
+| Kalasin North-East | 36.14 | 0.72 | 14.93 | 24.73 | 51.68 | 1.03 | 42.24 | 23.66 |
+| Ubon Ratchathani North-East | 71.31 | 4.41 | 16.32 | 10
+
+
+---
+*Chunk pages 124–124*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=659 (sys=94, user=565), max_out=1024, ctx=8192
+---
+
+# D.1.4 Adaptation impact methodology
+
+339. The climate and adaptation modelling are described in detail in the Feasibility Study (Annex 2a) and in Annexes 2c and 2f. In summary, the adaptation impact of the Thai Rice Project is assessed according to the following logic:
+
+- Demonstration that the climate in the project’s geography is changing (increasing incidence of drought, higher temperatures and more heatwaves) and is likely to continue changing.
+- Demonstration that this climate change will have negative impacts on rice yields and hence on farmers’ / farmer households’ livelihoods (see discussion of the climate impact chain below).
+- Demonstration that the project’s interventions will reduce or avoid these negative climate impacts.
+- Calculation of the number of farmers / households who will positively benefit from the project’s interventions.
+
+## Climate Impact Chain
+
+340. The rice sector in Thailand is facing climate-induced hazards from rising temperatures and changing rainfall patterns, which have direct biophysical impacts on the cultivation areas and, in turn, impact rice crop growth in several ways.
+
+341. First, rice production will be affected by more frequent and more extended drought conditions, coupled with – and partially caused by – more frequent heatwaves and a slow-onset increase in average temperature, and only partially compensated by more extreme rainfall during the wet season from June to November. Increasing average temperature and frequency of heatwaves result in more frequent crop failure due to heat stress, as the
+
+343. Expressed differently, the application rate can be stated as the proportion of the total project farming area: 7.2% in Year 1 (calculated as 10% of the 72% land area on which climate-smart farming is applied); 14.4% in Year 2 (20% of the climate-smart farming area); 28.8% in Year 3 (40% of the climate-smart farming area); 50.4% in Year 4 (70% of the climate-smart farming area); and 72% in Year 5 (when the project reaches the climate-smart farming application cap).
+
+
+---
+*Chunk pages 125–125*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=961 (sys=94, user=867), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.10.0 | PAGE 122
+
+## Climate Change Impacts on Rice Cultivation in Thailand
+
+### Heat Stress and Crop Failure
+
+rice cultivation areas are increasingly exposed to temperatures above 33.7°C during growth and especially above 31°C during flowering, which leads to spikelet sterility and results in crop failure and decreased yields. These heat stress impacts are exacerbated by the currently low uptake of more heat-tolerant rice varieties across Thailand.
+
+### Evapotranspiration and Reduced RSWC
+
+Second, and in parallel, increased average temperature and frequency of heatwaves also increase evapotranspiration in irrigated and rain-fed rice cultivation areas, reducing the RSWC below the levels required by the rice plants, which, in turn, causes stomata closure and photosynthesis inhibition and results in reduced grain weight and hence reduced yields.
+
+### Water Availability and Irrigation Challenges
+
+Third, and in combination with reduced rainfall during the wet season and more frequent drought conditions impacting water availability for irrigation of paddy rice, water-related climate change impacts will especially affect irrigated rice in the dry season (December to May), when evapotranspiration due to high temperature is also expected to have the highest impact on the fields. Increasingly frequently, there will be insufficient water to irrigate all rice fields, as has already been the case in recent years. The rice sector's vulnerability to water stress is further exacerbated by the current low uptake of water-saving techniques, such as AWD, and the widespread reliance on a 'bathtub' approach: i.e., using the irrigated fields themselves for water storage by keeping the water level above optimal, with the associated increased evaporation under high temperatures.
+
+### Extreme Rainfall and Flooding
+
+Fourth, more extreme rainfall especially during the wet season will cause more frequent flooding in low-lying cultivation areas, further reducing soil fertility and nutrient availability for crops due to leaching and reduced organic and inorganic fertilizer uptake, which results in further decreasing yields when rice plants have insufficient access to required soil nutrients. Additionally, the traditional replenishment of soil nitrogen levels through Azolla nitrogen-fixing is undermined as Azolla only grows on flooded fields. The impacts on soil fertility are exacerbated by the poor fertilizer and soil nutrient management practices currently practised. The rice sector is already experiencing stagnant yields per hectare due to poor soil health.
+
+### Pest and Disease Outbreaks
+
+Finally, the likelihood of, and areas where, periods of flooding precede drought periods will increase, leading to more frequent pest and disease outbreaks in the affected areas, such as those caused by the brown plant hopper. Additionally, a lack of irrigation water and associated insufficient water levels in irrigated rice fields will undermine the current practice of weed control through flooding, as weeds cannot flourish in flooded fields. Pest and disease management is already under stress as the sector is characterised by monoculture and lack of crop rotation, as well as poor water and fertilizer management. Climate change impacts on the likelihood of pest and disease outbreaks threaten to further reduce rice yields, which are already low compared with other countries in the region at least in part due to lack of investment in, and lack of capital for, climate-smart agriculture.
+
+### Vulnerability of Smallholder Farmers
+
+As rice farming in Thailand is already characterised by smallholder farming with low yields and low incomes, further reduced rice yields due to climate change threaten the livelihoods of smallholder farmers and, by extension, SME service providers helping to work the fields or provide logistics for the value chain. Smallholder farmers and service providers are especially vulnerable due to: (i) their comparatively high level of poverty and (ii) their associated lack of access to capital required for climate-smart adaptation measures, (iii) their generally low uptake of voluntary insurance products, (iv) their lack of access to training for (and, partially, lack of awareness of) suitable climate-smart agriculture interventions, and (v) the limited market for sustainable rice and rice residues.
+
+
+---
+*Chunk pages 126–126*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=590 (sys=94, user=496), max_out=1024, ctx=8192
+---
+
+# D.1.5 Adaptation impact
+
+347. The Thai Rice Project targets ~86,800 smallholder rice farmers in the Central Plains, ~ 147,000 farmers in the North-East and ~19,700 farmers in the North of Thailand. Rice farmers in Thailand are especially vulnerable to climate change impacts on rice harvests as reliable harvests form a major component of their food security or income security and, by extension, their livelihoods. The expected adaptation impact of the Thai Rice Project is the reduction of vulnerability of approximately 253,400 smallholder rice farmers (direct beneficiaries, female and male) to the impacts of climate change, and improved livelihoods of approximately 760,200 household members (indirect beneficiaries).
+
+348. Project interventions focus on climate change impacts on water availability, soil fertility, pest and disease outbreaks and rice crop failure rates due to water and heat stress through technical, capacity building and financial instrument interventions related to in-field climate-smart technologies and practices, including laser land levelling (LLL) and alternate wetting and drying (AWD). Additionally, the project targets income diversification through crop diversification and the utilisation of rice biomass residues (straw and stubble management: SSM), and climate risk transfer through voluntary crop insurance uptake.
+
+349. AWD reduces the overall consumption of irrigation water compared to the currently widespread practice of continuous flooding over each growth cycle and thereby contributes to adapting to reduced water availability while also reducing evaporation losses. While AWD reduces overall water consumption, it requires secured availability of irrigation water during the critical growth stages, which is currently not available – due to climate change – in large parts of the irrigated rice area. For the first flooding period, improving the use of weather forecasts will allow timed seeding and planting, and hence optimal use of the increasingly-scarce water resource. Consequently, the project implements measures to improve farmers’ access to high-quality agro-met advisory services.
+# PAGE 123
+
+
+---
+*Chunk pages 127–127*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1399 (sys=94, user=1305), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.10.0 | PAGE 124
+
+## 350. The second flooding period during plant maturation will, in some cases, require water storage systems to secure sufficient irrigation water availability as part of the water management component: the project promotes farm-level water management (FWM) to address this need. As continuous flooding also helps to suppress weed growth and some pests affecting rice (e.g., brown plant hopper), and supports the growth of nitrogen-fixing Azolla, supportive interventions on integrated pest management (IPM) and site-specific nutrient management (SSNM) flank the water-saving adaptation measures to avoid negative impacts on soil and plant health and, ultimately, the reliability of rice yields.
+
+## 351. SSNM also helps farmers to better control fertilizer application costs while increasing yields. Across sample sites in the region, SSNM is found to improve rice yields on 80% of farmland, depending on soil properties, agro-ecology and previous levels of fertilization. The average application rate of N-fertilizer across the project area has dropped due to recent increases in fertilizer costs, which may impact yield levels in the near-term as soil nitrogen levels drop below ideal levels. The high cost of fertilizer provides additional incentives to invest in test kits and soil doctors to implement SSNM as their relative investment costs drop. Farmers adopting SSNM and not benefiting from improved yields would still benefit from long-term improvement of soil health, which is currently found to be impacted in some of the project provinces, especially in the North-East, resulting in comparably low yields per hectare and high sensitivity to additional climate-induced yield loss from drought and heat stress as farmer’s marginal return per hectare of rice is already low. It is expected that the combination of AWD, SSNM and IPM will improve yields and reduce farmers’ input costs compared to the current approach of continuous flooding, while greatly enhancing resilience to more irregular rainfall (and also serving to reduce GHG emissions).
+
+## Most Vulnerable People and Communities
+
+## 352. Poverty in Thailand exhibits a distinct urban-rural dimension, with approximately 80% of Thailand’s poor living in rural areas. Most smallholder farmers are poor and many are in debt. Their agricultural yields, their farming methods and their very ways of life are threatened by climate change, in particular by the increasing frequency and severity of drought and heatwaves. In targeting rice farmers, the Thai Rice Project is therefore addressing the climate adaptation needs of some of the most vulnerable members of Thai society.
+
+## Health and Well-Being, and Food and Water Security
+
+## 353. Climate change, notably in the form of widespread droughts in 2015-16 and 2019-21, has not only revealed the vulnerability of the agriculture sector and those that depend on it, but has also served to further exacerbate it. Thailand ranks 9th in terms of countries most affected by climate events in the period 2000-19 and 29th (out of 191) in terms of expected future drought exposure. Changes in climate parameters are adversely affecting water security and, in turn, the security of rice supply, which represents a long-standing food staple for the Thai population and generates 29% of the country’s agricultural export revenues.
+
+## Ecosystems and Ecosystem Services
+
+## 354. Both, human utilisation of natural resources and climatic changes, have significant impacts on ecosystems. Agriculture, and thus the livelihoods of people, are heavily reliant on well-functioning ecosystems. Rice is Thailand’s most important food crop, accounting for roughly half of Thai agricultural land and employing 18 million
+
+---
+
+**References:**
+
+- **344** Sapkota T. et al (2019), ‘Crop nutrient management using Nutrient Expert improves yield, increases farmers’ income and reduces greenhouse gas emissions’, Nature Scientific Reports, 11: https://www.nature.com/articles/s41598-020-79883-x.pdf  
+- **345** https://www.worldbank.org/en/country/thailand/overview  
+- **346** Chandio A. et al (2022), ‘How does climate change affect rice production in Thailand? Assessing the role of financial development’, Environmental Science and Pollution Research, preprint (under review): https://www.researchsquare.com/article/rs-1173507/v1;  
+- **347** Attavanich W. (2018), How Is Climate Change Affecting Thailand’s Agriculture? A Literature Review with Policy Update: https://mpra.ub.uni-muenchen.de/90255/1/MPRA_paper_90255.pdf  
+- **348** Germanwatch (2021), Global Climate
+
+
+---
+*Chunk pages 128–128*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1502 (sys=94, user=1408), max_out=1024, ctx=8192
+---
+
+# D.2. Paradigm shift potential
+
+## D.2.1 Potential for scaling-up and replication
+
+355. Rice is grown in 114 countries. 353 Globally, rice production accounts for approximately 2.5% of total anthropogenic GHG emissions and 10% of agricultural emissions.354 The emissions footprint of the rice sector is comparable to that of (for example) aviation, shipping and deforestation.355 Rice production generates ~30% of global agricultural methane emissions and ~11% of global agricultural nitrous oxide emissions;356 in South-East Asia, rice cultivation accounts for one-third of the region’s methane emissions.357
+
+356. Accounting for 7% of global rice sector methane emissions, Thailand is the world’s fourth-largest rice sector emitter.358 Targeting the Thai rice sector therefore offers not only the potential to address a globally significant GHG emissions source in its own right but also one that offers substantial replication potential. As noted in Section B.1.2, the substantive global role that the rice sector can play in achieving low-cost, multi-gas GHG emission reductions has not, to date, received the recognition it deserves: the Thai Rice Project will play a valuable role in leading the way and demonstrating the potency of the rice sector in reducing agricultural GHG emissions at speed and with complementary sustainable development co-benefits. In particular, the project can help to inspire and inform countries seeking to meet their voluntary commitments under the Global Methane Pledge.359
+
+357. Food systems are one of the most important contributors to GHG emissions, but they also need to be adapted to cope with climate change impacts.360 In South-East Asia alone, approximately 24 million farmers depend on lowland rice agriculture, and the figure is three times higher in South Asia. Irrigated rice is grown on approximately 50% of the rice cultivation area in Asia and generates approximately 75% of the total rice production.361 With a conservative estimate of 10% real water savings (i.e. reduced evaporation, seepage and percolation flows that cannot be re-used), AWD adoption alone – even without accompanying water-saving measures – on all the world’s rice lands would free up 100 km³ of water annually for other uses and would reduce methane emissions by 1.5 billion tCO₂e/year.
+
+358. Within Thailand, more than 3.7 million households engage in irrigated rice cultivation on a total planted area of more than 17.4 million ha (of which approximately 4 million ha is irrigated). The Thai Rice Project targets 21 provinces out of the 76 in the country. There is thus considerable scope to replicate the Thai Rice Project approach in additional provinces in Thailand.
+
+359. The Thai Rice Project can also serve as a model for other countries seeking to develop domestic and international markets for sustainable rice. Large international companies that buy rice have already declared their intent to shift to sustainably produced rice – indeed, Olam, PepsiCo and others have already invested significant financial resources in GIZ foundation projects supporting the SRP and SAI Platform FSA standards in Thailand. They are struggling to make the switch in practice, as there is currently an insufficient supply of rice that meets the
+
+352 Xu L. et al (2021), ‘Paddy rice mapping in Thailand using time-series Sentinel-1 data and deep learning model’, Remote Sensing, 13: https://www.mdpi.com/2072-4292/13/19/3994/pdf?version=1633775190  
+353 Fahad S. et al (2021), ‘Bio-based integrated pest management in rice: an agro-ecosystems friendly approach for agricultural sustainability’, Journal of the Saudi Society of Agricultural Sciences, 20: https://www.sciencedirect.com/science/article/pii/S1658077X20301107/pdfft?isDTMRedir=true&download=true  
+354 Kritee K. et al (2018), ‘High nitrous oxide fluxes from rice indicate the need to manage water for both long- and short-term climate impacts’, Proceedings of the National Academy of Sciences, 115: https://www.pnas.org/doi/pdf/10.1073/pnas.1809276115?download=true  
+355 World Bank (2020), Our World in Data: Emissions by Sector: https://ourworldindata.org/emissions-by-sector#direct-industrial-processes-5-2  
+356 Maraseni T. et al (2017),
+
+
+---
+*Chunk pages 129–129*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1166 (sys=94, user=1072), max_out=1024, ctx=8192
+---
+
+# D.2.2 Potential for knowledge-sharing and learning
+
+360. The Thai Rice Project will maximise the potential for knowledge and learning by promoting the introduction of climate-smart technologies and practices and mainstreaming their use through dissemination via, and integration with, the national agricultural extension system (including community rice centres and regional rice research centres). Capacity building will be offered in a range of supplementary areas, including the TAS, insurance and carbon finance.
+
+361. There will be a strong emphasis on data collection, data analysis and the use of digital tools: for instance, under Sub-Activity 1.1.1.1 in the context of the atingi online learning platform, Sub-Activity 1.1.1.3 in the context of app development, and Sub-Activity 2.1.1.3 in the context of insurance product development. The project will gather lessons learned and results through its MRV and M&E systems, and will share these through its international project partners (notably, IRRI and ASEAN) for dissemination in the region (Sub-Activity 3.1.4.1). The project’s knowledge management plan is provided in Annex 23a.
+
+# D.2.3 Contribution to the creation of an enabling environment
+
+362. A recent (November 2022) publication from the SRLI provides a succinct summary of the factors that contribute to an enabling environment for sustainable rice. To quote from the publication:
+
+• Upstream value creation is paramount. Farmers and service providers in production landscapes need value propositions (e.g. agronomic packages, financial services and income opportunities) that work in their real-world context.
+• Cash flow is key. Solutions are needed to address payment delays and profit erosion across long value chains, and to mitigate fluctuations in farmer incomes throughout the year.
+• Trusted business relationships are needed along the value chain. Trusted relationships amongst value-chain actors are essential for reducing side-selling in the context of pre-financing and off-take agreements.
+• Capacity of essential enablers needs strengthening. To bring effective, bankable counterparties to finance sustainable rice, strong local capacity amongst essential enablers (e.g. cooperatives; agricultural SMEs; off-takers) in rice production landscapes is required over the long term.
+• Money alone will not overcome the challenges. Technical assistance and service provision need to be embedded within financial structures.
+• Size mismatch inhibits finance. De-risking and finance mechanisms need to be adapted to relatively small funding needs at the farmer level (e.g. aggregating similar projects to support larger investments).
+
+363. The Thai Rice Project addresses all of these factors, as well as additional enabling conditions (e.g. insurance, consumer awareness-raising, etc.). By building the capacities of rice farmers and service providers, by enabling them to interact in quality-regulated market settings (e.g. the TAS for sustainable rice and quality standards in biomass residue markets), by facilitating access to appropriate finance (e.g. farmer incentive payments, the BAAC CSL scheme and the T-VER Rice Scheme), and by promoting joined-up policy and knowledge dissemination, the project will put in place the enabling environment needed to catalyse and sustain the transition to climate-smart rice agriculture in Thailand.
+
+# D.2.4 Contribution to the regulatory framework and policies
+
+364. The Thai Rice Project is aligned with the government’s climate policies and strategies, notably the 2nd Updated NDC, the NAP and the Updated Long-Term Low Greenhouse Gas Emission Development Strategy (LT-LEDS). Indeed, the LT-LEDS specifically states that the Government of Thailand is seeking GCF support to scale-up climate-smart rice farming, a point that is reiterated in the Fourth BUR. The project is directly supportive of NDC requests for international assistance with MRV and GHG data management systems, and facilitates TGO’s efforts to develop a domestic carbon market. The project is also aligned with the government’s agriculture and rice sector
+
+362 SRLI (2022), Scaling Private Sector Investment in Sustainable Rice: Needs and Opportunities: https://www.wbcsd.org/contentwbc/download/15202/214841/1. Quoted text is from page 6.
+
+
+---
+*Chunk pages 130–130*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1271 (sys=94, user=1177), max_out=1024, ctx=8192
+---
+
+# D.2.5 Contribution to climate-resilient development pathways
+
+365. The conflict in Ukraine, supply chain disruptions and continued economic scarring from the COVID-19 pandemic are currently driving domestic food price inflation – often double-digit – in almost every (93%) low- and middle-income country in the world. By mid-2022, rice prices were 6% higher than at the beginning of the year, and maize and wheat prices were 2% higher (and 20% higher than in January 2021).^363
+
+Given that:
+
+- A global increase in temperature of 1°C is likely to reduce rice yields by an average of 3.3% globally^364 and approximately 23 million hectares under rice production in Asia are prone to droughts^365; and
+- Rice is the staple food of half of the world’s population, rice supplies as much as 80% of the daily calorific intake of the population of Asia, and a 50% increase in rice prices would push an additional 32–99 million Asians below the poverty line^366
+
+it is evident that climate change has the potential to severely disrupt the future supply of rice, with significant follow-on impacts on nutritional health and livelihoods. Moreover, one-third of global GHG emissions come from the food system^367, with rice production contributing ~30% of global agricultural CH4 emissions and ~11% of global agricultural N2O emissions.^368
+
+Measures – such as those included in the Thai Rice Project – to reduce the impacts of climate change on rice production and to reduce the GHG emissions associated with rice production therefore offer a substantial contribution to climate-resilient development pathways.
+
+# D.3. Sustainable development
+
+## D.3.1 Sustainable Development Goals
+
+366. The Thai Rice Project advances multiple Sustainable Development Goals (SDGs), with quantifiable metrics to document the progress of the project recorded through the TAS (or equivalent) standard. The project supports a strong multi-actor partnership (SDG 17) that offers a proven approach to enhance income (SDG 1) and food security (SDG 2) of rural rice farming populations, while tackling the global challenges of water resources (SDG 6) and climate change (SDG 13). The project promotes the empowerment of women (SDG 5) and requires adherence to international norms on labour rights (SDG 8). Promoting responsible consumption (SDG 12) creates the demand to accelerate and scale-up action to transform the rice sector. The digitisation element of the Thai Rice Project will enable the tracking and reporting of sustainable development benefits.
+
+## D.3.2 Development co-benefits
+
+367. Environmental:
+
+- Protection of biodiversity from the reduction of unnecessary agrochemical use and practising responsible use when needed.
+- Reduced air pollution from burning of straw and stubble.
+
+---
+
+^363 World Bank (2022), *Food Security Update – August 2022*: https://thedocs.worldbank.org/en/doc/b5de315c82b1a3bb32bf30057aad9b74-0320012022/original/Food-Security-Update-LXVIII-Aug-11-2022.pdf.  
+^364 Zhao C. et al (2017), *Temperature increase reduces global yields of major crops in four independent estimates*, Proceedings of the National Academy of Sciences, 114: https://www.pnas.org/doi/pdf/10.1073/pnas.1701762114?download=true.  
+^365 Bairagi S. and Durand-Morat A. (2021), *The impacts of drought and floods on the global rice market*, paper prepared for the 2021 Agricultural and Applied Economics Association Annual Meeting: https://www.researchgate.net/profile/Subir-Bairagi/publication/354190965_The_Impacts_of_Droughts_and_Floods_on_the_Global_Rice_Market/links/612a50292b40ec7d8bce701b/The-Impacts-of-Droughts-and-Floods-on-the-Global-Rice-Market.pdf.  
+^366 Pandey S. et al (2010), *Rice in the Global Economy: Strategic Research and Policy Issues for Food Security*: https://www.researchgate.net/profile/Gerald-Nelson-3/publication/258883000_Rice_and_global_climate_change/links/569bc1c808aea14769
+
+
+---
+*Chunk pages 131–131*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1424 (sys=94, user=1330), max_out=1024, ctx=8192
+---
+
+# D.4. Needs of recipient
+
+## D.4.1 Climate risk and vulnerability
+
+371. Thailand is one of the 16 countries identified globally as being in the ‘extreme risk’ category of those most vulnerable to future climate change impacts over the next 30 years.¹⁶⁹ It is ranked among the top 5 countries expected to experience the largest decline in GDP by 2048.¹⁷⁰ It ranks 9th in terms of countries most affected by climate events in the period 2000–1937¹⁷¹ and 29th (out of 191) in terms of expected future drought exposure.¹⁷²
+
+At present, Thailand faces an annual median probability of severe meteorological drought of around 4% (as defined by a standardised precipitation-evaporation index – SPEI – of less than -2), and this is projected to double by 2080-99 under RCP6.0 and RCP8.5 emissions pathways.¹⁷³
+
+---
+
+372. As described in Section B.1.2 and in the Feasibility Study (Annex 2a):  
+(i) Thailand’s climate is already changing and is expected to continue to change¹⁷⁴;  
+(ii) rice yields are sensitive to the changing climate parameters – notably, increasing temperatures and, in particular, declining water availability in the dry season¹⁷⁵;  
+(iii) rice yields will, without remedial action, come under sustained pressure¹⁷⁶ (leading to reductions in the order of 37% for Thai jasmine rice, for example, in the 2080s under RCP4.5¹⁷⁷); and  
+(iv) declining rice yields will negatively impact the national economy as well as individual farmer livelihoods:¹⁷⁸
+
+- Rice remains the dominant agricultural industry, accounting for 51% of cultivated area and contributing 15% of agricultural GDP. Not only is rice still a vital food crop domestically but it is also a major export, second only to rubber in value.¹⁷⁹
+
+---
+
+¹⁶⁹ Office of Natural Resources and Environmental Policy and Planning (2022), Thailand’s Second Updated Nationally Determined Contribution: https://unfccc.int/sites/default/files/NDC/2022-11/Thailand%202nd%20Updated%20NDC.pdf.  
+¹⁷⁰ Swiss Re Institute (2021), Economics of Climate Change: No Action Not An Option: https://www.swissre.com/dam/jcr:e73ee7c3-7f83-4c17-a2b8-8ef23a8d3312/swiss-re-institute-expertise-publication-economics-of-climate-change.pdf.  
+¹⁷¹ Germanwatch (2021), Global Climate Risk Index 2021: https://www.germanwatch.org/sites/default/files/Global%20Climate%20Risk%20Index%202021_2.pdf.  
+¹⁷² European Commission (2019), INFORM Index for Risk Management: Thailand Country Profile: https://drmkc.jrc.ec.europa.eu/inform-index/INFORM-Risk/Country-Risk-Profile/moduleId/1767/id/386/controller/Admin/action/CountryProfile.  
+¹⁷³ World Bank (2021), Climate Risk Country Profile: Thailand: https://reliefweb.int/attachments/238d041f-3397-39fd-b3ce-44031034ba6a/climate-risk-country-profile-thailand.pdf.  
+¹⁷⁴ Kiguchi M. et al (2021), ‘A review of climate change impact and adaptation studies for the water sector in Thailand’, Environmental Research Letters, 16: https://iopscience.iop.org/article/10.1088/1748-9326/abce80/pdf.  
+¹⁷⁵ Hussain T. et al (2021), ‘Responses of lowland rice genotypes under terminal water stress and identification of drought tolerance to stabilise rice productivity in southern Thailand’, Plants, 10: https://www.mdpi.com/2223-7747/10/12/2565/pdf?version=1637763706.  
+¹⁷⁶ Hensawang S. et al (2021), ‘Predicting rice production in Central Thailand using the WOFOST model with ENSO impact
+
+
+---
+*Chunk pages 132–132*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1476 (sys=94, user=1382), max_out=1024, ctx=8192
+---
+
+# D.4.2 Financing needs
+
+## Thailand's Economic Context
+
+Thailand is classified as an upper-middle income economy and is the second-largest economy in Southeast Asia after Indonesia. Economic growth slowed from 4.2% in 2018 to 2.4% in 2019 and then contracted by 6.1% in 2020, as a result of COVID-19 job losses, disruptions to supply chains, reductions in trade and tourism, and a severe drought that impacted agricultural production. The economy started to recover in 2021, recording 2.6% growth, but the recovery is expected to be sluggish, uneven and subject to heightened uncertainty. The pace of recovery is lagging regional peers such as Malaysia, the Philippines and Indonesia.
+
+## Public Debt and Labor Conditions
+
+The public debt-to-GDP ratio increased from 41.1% to 49.6% in 2020, there has been a significant rise in underemployment and informal labor, and there is a pressing need to balance economic stimulation with social protection for vulnerable groups, particularly indebted households. Since 2019, the average labor income of Thai households has declined and average household debt has increased by about a quarter.
+
+# D.5 Country ownership  
+
+## D.5.1 Alignment with climate policies
+
+The Thai Rice Project is aligned with the 2nd Updated NDC, the NAP, the LT-LEDS (updated in November 2022), national climate policies and strategy (including the new MoAC Climate Change Strategic Plan for the Agricultural Sector (2023-2027), the 4th National Communication to the UNFCCC , the 4th BUR and the Technology Needs Assessment (TNA) (see Section B.1.3). Three national institutions – RD, BAAC and ONEP – will serve as Executing Entities (in addition to GIZ and IRRI).
+
+## D.5.2 Engagement with stakeholders during project preparation
+
+The Thai Rice Project idea was first discussed with the NDA on 24 September 2020 and with the Rice Department on 12 October 2020. Following these positive discussions, the Rice Department established a Project Working Group and further (multiple) rounds of stakeholder consultation took place in 2021, 2022 and 2023. For brevity, stakeholders consulted are summarised in Table 23. Full details, including a summary of meetings / workshops held, a list of participants and photographs, are provided in Annex 7.
+
+## References
+
+380 World Bank (2022), Thailand Rural Income Diagnostic: Challenges and Opportunities for Rural Farmers: https://documents1.worldbank.org/curated/en/099005010202299399/pdf/P1775991e5f180ee130cf14572184e61f60735628d80.pdf.  
+381 Aaltonen W. (2021), Building a Capable Farmers’ Organisation Towards Livelihood Improvement: Evidence from Three Thai Rice Farmers’ Organisational Models, PhD thesis, School of Oriental and African Studies (SOAS), London: https://eprints.soas.ac.uk/35778/1/Aaltonen_2021.pdf.   
+382 World Bank (2020), Taking the Pulse of Poverty and Inequality in Thailand: https://www.worldbank.org/en/country/thailand/publication/taking-the-pulse-of-poverty-and-inequality-in-thailand.   
+383 Lunlalad A. and Apinunmahakul A. (2022), ‘Debt burden of farmers’ households as compared to households of other careers’ (in Thai), Development Economic Review, 16: https://so06.tci-thaijo.org/index.php/NER/article/view/254125/171793.  
+384 https://www.worldbank.org/en/country/thailand/overview.  
+385 Attavanich W. (2018), How Is Climate Change Affecting Thailand’s Agriculture? A Literature Review with Policy Update: https://mpra.ub.uni-muenchen.de/90255/1/MPRA_paper_90255.pdf  
+386 World Bank DataBank: https://databank.worldbank.org/source/worlddevelopment-indicators.  
+387 World Bank Open Data: https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG?locations=TH.  
+388 IMF (2021), Article IV Consultation: Thailand: https://www
+
+
+---
+*Chunk pages 133–133*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=986 (sys=94, user=892), max_out=1024, ctx=8192
+---
+
+# D.5.3 Engagement with stakeholders during project implementation
+
+377. The PSC will be responsible for providing strategic direction to the Thai Rice Project. The PSC will consist of representatives of Thai national ministries and departments – including the Office of Natural Resources and Environmental Policy and Planning (ONEP), which serves as the Thai NDA – and close project partners. The Chamber of Commerce (CoC) will represent private sector interests. During implementation of the Thai Rice Project, the PSC will periodically invite relevant stakeholders – such as private sector firms, academia, NGOs and development partners – in order to ensure full engagement and coordination. Many project actions, notably the training provided under Sub-Activities 1.1.1.1 and 1.1.1.2 and the outreach to supply chain actors under Sub Activity 3.1.1.2, intrinsically involve engagement with stakeholders.
+
+## ESS Stakeholder Engagement Plan (SEP) for Thai Rice Project Implementation
+
+378. The SEP is provided in Annex 7a. A summary is provided below.
+
+379. The SEP is based on extensive consultations that have taken place with project stakeholders to understand their views, interests, needs and concerns, particularly those of local communities, ethnic groups (see below) and vulnerable groups that may be involved in and/or directly affected by the project. The views of the National Designated Authority (NDA), relevant government institutions, the private sector and CSOs have also been sought. The stakeholder consultation process has been thoroughly documented to ensure that interested or
+
+[Page 130]
+
+# Table 23: Stakeholders Consulted During Project Preparation
+
+## Public Sector
+
+- Bank for Agriculture and Agricultural Cooperatives (BAAC)
+- Department of Agricultural Extension (DoAE)
+- Department of Disaster Prevention and Mitigation (DDPM) (Ministry of Interior)
+- Ministry of Social Development and Human Security
+- Environmental Fund Division (EFD)
+- Fiscal Policy Office (FPO)
+- Geo-Informatics and Space Technology Development Agency (GISTDA)
+- Health Promoting Hospital
+- Highland Research and Development Institute
+- Land Development Department (LDD)
+- Ministry of Agriculture and Cooperatives (MoAC)
+- National Bureau of Agricultural Commodity and Food Standards (ACFS)
+- Office of Agricultural Economics (OAE)
+- Office of Insurance Commission (OIC)
+- Office of Natural Resources and Environmental Policy and Planning (ONEP – also the NDA)
+- Rice Department (RD)
+- Royal Irrigation Department (RID)
+- Thai Meteorological Department (TMD)
+- Thailand Greenhouse Gas Management Organisation (TGO)
+
+## Private Sector
+
+- Agricultural service providers (e.g. land preparation, straw balers, ESS)
+- Atthajariya Company Limited
+- Axa
+- CropLife
+- Herba-Ebro Foods
+- Infuse
+- Kubota
+- MARS
+- Munich Re
+- Olam
+- PepsiCo
+- Sustainable Rice Platform (SRP) e.V.
+- Swiss Re
+- Syngenta
+- Thai General Insurance Association (TGIA)
+
+## Civil Society
+
+- Asian Institute of Technology (AIT)
+- Chiang Mai University
+- Fiscal Policy Research Institute (FPRI)
+- Good Governance for Social Development and the Environment Institute (GSEI)
+- Homenet Thailand
+- Kasetsart University
+- King Mongkut University of Technology
+- Provincial farmer groups, megafarms and farmers
+- Provincial womens' groups (Suphan Buri, Chiang Rai, Roi Et)
+- Puey Ungphakorn Institute for Economic Research (PIER)
+- Sustainable Development Foundation
+- Thai Organic Foundation
+- Thailand Development Research Institute (TDRI)
+- Thailand Environment Institute (TEI)
+- The Creagy
+- Weekend Farmer Network
+
+## International
+
+- CIAT
+- FAO
+- GGGI
+- IFC
+- IRRI
+- Mekong Institute
+- Sparkassen Foundation (DSIK)
+- UN Women
+- UNDP
+- UNEP
+
+# D.5.3 Engagement with stakeholders during project implementation
+
+377. The PSC will be responsible for providing strategic direction to the Thai Rice Project. The PSC will consist of representatives of Thai national ministries and departments – including the Office of Natural Resources and Environmental Policy and Planning (ONEP), which serves as the Thai NDA – and close project partners. The Chamber of Commerce (CoC) will represent private sector interests. During implementation of the Thai Rice Project, the PSC will periodically invite relevant stakeholders – such as private sector firms, academia, NGOs and development partners – in order to ensure full engagement and coordination. Many project actions, notably the training provided under Sub-Activities 1.1.1.1 and 1.1.1.2 and the outreach to supply chain actors under Sub Activity 3.1.1.2, intrinsically involve engagement with stakeholders.
+
+## ESS Stake
+
+
+---
+*Chunk pages 134–134*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=986 (sys=94, user=892), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.10.0 | PAGE 131
+
+## Concerned Third-Party Groups
+
+The SEP, which will be re-validated by stakeholders during the project inception phase prior to continuous implementation thereafter, is intended to perform the following functions:
+
+- Providing high-quality and accurate information to stakeholders throughout the project implementation period.
+- Fostering a two-way dialogue that offers an opportunity for stakeholders to raise their views and concerns and enabling the project to react accordingly.
+- Promoting social acceptance of the project.
+- Supporting the project to meet its targets – which, by their nature, require thousands of stakeholders to willingly change their behaviours: for example, smallholder farmers changing their agricultural practices, consumers changing their purchase decisions, private sector service providers investing in climate-smart agriculture, etc.
+
+## Key Principles Underlying the SEP
+
+380. The key principles underlying the SEP are:
+
+- Engagement starts at the beginning of the project and runs continuously throughout the project implementation period – so that key issues can be identified and responded to rapidly.
+- All targeted stakeholders are engaged, including women and vulnerable groups (such as migrant farm workers and ethnic groups).
+- All information is presented clearly, in culturally and educationally appropriate formats and in relevant languages.
+- Minutes of meetings are well documented and archived. They form part of the project’s documentation disclosure policy.
+- The project will strive to organise meeting locations and times that are best suited to stakeholders’ availability, travel constraints and cultural expectations. In the case of vulnerable households and communities, specific measures – such as individual meetings in homes or transportation assistance – will be implemented, as required.
+
+## Information Disclosure
+
+381. The Thai Rice Project will meet the requirements of the GCF Information Disclosure Policy and Section 7.1 of the GCF’s E&S policy.
+
+## External Communication and Grievance Redress Mechanism (GRM) (including SEAH GRM)
+
+382. According to the GCF’s E&S policy, the purpose of the GRM is to receive and facilitate the resolution of concerns and grievances about the environmental and social performance of GCF-financed activities. In the context of the Thai Rice Project, the specific objectives of the GRM are to:
+
+- Provide a communication channel to receive feedback and grievances from stakeholders (including, but not limited to, farmers, service providers, local authorities, NGOs and others), ultimately with the goal of resolving grievances amicably where possible and minimising the use of the legal system.
+- Establish a grievance procedure with clear responsibilities and reporting lines in order to process stakeholder grievances in a timely and transparent manner.
+- Establish a system for recording grievances and the measures (if any) put in place to respond to the grievances.
+- Provide a separate GRM for SEAH-related grievances that reflects the particular gender, cultural and privacy sensitivities that can be associated with SEAH complaints.
+
+## Basic Principles of the Project’s GRM
+
+383. The project’s GRM is predicated upon the following basic principles:
+
+- Transparency: the receipt and processing of grievances will be conducted transparently, in a culturally appropriate and gender-sensitive manner, and in the appropriate language.
+- Consistency: open channels of communication will be maintained between the claimant and the GRM for the duration of the grievance process.
+- Accessibility: all stakeholders will be able to freely access the GRM.
+- Disclosure: all grievances will be recorded and archived, regardless of whether the grievances are justified or not (the subsequent investigation will determine if the grievances are justified).
+- Discussion: all justified grievances will be followed up by one or more discussions with the claimant – accompanied, if useful or relevant, by a site visit by a project representative.
+- Privacy: the GRM will be consistent with Thai data protection law and will respect complainant confidentiality and privacy.
+
+
+---
+*Chunk pages 135–135*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1281 (sys=94, user=1187), max_out=1024, ctx=8192
+---
+
+# D 
+ GREEN CLIMATE FUND FUNDING PROPOSAL V.10.0 | PAGE 132 
+
+## 384. A detailed description of the GRM and the SEAH GRM is provided in Annex 6b. In brief, the project’s GRM enables grievances to be reported through a number of channels (including the project website, a dedicated phone number, local project representatives, grievance boxes located at project events, the local Damrongdhama Centre392, etc.), ensures all grievances are acknowledged and responded to within defined time-periods, and are systematically recorded. The GRM is predicated upon an escalatory model. Grievances are processed locally to the extent possible. Where the local-level Grievance Consideration Unit (GCU) is unable to address a grievance to the satisfaction of the complainant, the grievance is escalated to a GCU in the next level of the GRM hierarchy.
+
+## 385. The Thai Rice Project incorporates a separate survivor-centred and gender-responsive GRM for SEAH-related grievances. Individuals who wish to submit a SEAH-related grievance will be encouraged to use a dedicated project phone number (different from the general GRM phone number) or a dedicated project e-mail address (different from the general GRM e-mail address). Depending upon the nature of the grievance, the project ESS Manager will develop a bespoke response approach for each grievance. Given the range of possible grievances, and the range of possible levels of seriousness of allegations, a one-size-fits-all model is not considered desirable. Nor also may the standard escalatory model – start locally and then, if necessary, escalate to the national level – be appropriate: for example, if the allegations relate to local project representatives or if there is a danger of the identity of the complainant becoming known to the local community (against the wishes of the complainant).
+
+## 386. SEAH-related grievances will always be considered with compassion and sensitivity. Where the ESS Manager is not best placed to lead the investigative response (e.g. for gender or linguistic reasons), he/she will nominate a Grievance Focal Point who is better positioned to do so. The Grievance Focal Point may be a member of the PMU, a member of the broader project implementation team (e.g. an Executing Entity staff member) or an outside expert. In all cases, the Grievance Focal Point will be bound by tight confidentiality requirements.
+
+## Ethnic Groups and Indigenous Peoples
+
+### 387. The project’s Ethnic Group Plan (EGP) is provided in Annex 6b. Further details about the EGP are provided below (in Section G). A summary of EGP aspects relevant to stakeholder engagement are provided here.
+
+### 388. For the purpose of developing the EGP, consultations were held in two provinces in the North – Chiang Rai and Chiang Mai – with villages of ethnic groups that self-identify as indigenous peoples. Consultations integrated and considered culture and gender sensitivity. Diverse consultation formats were applied, including one-on-one meetings and village meetings, which included in-depth interviews with individual community leaders and farmers, in small groups and in full-group discussions. Community leaders comprise 3 types of persons, with clear and internally-respected roles and responsibilities for village matters:
+
+- ‘Pooyaibaan’ (which translates as ‘elder of the house’) and their assistants: these individuals are elected by village members following State rules and they are authorised to perform certain roles and take certain decisions. For example, they will lead in addressing conflicts such as land disputes and theft. It is observed that they tend to be from a younger generation (e.g. in their 30s) and have high fluency in the Thai language.
+- Village elders: this designation reflects traditional authority structures of the villages. Groups of elders who acquire this designation from age and wisdom collectively take decisions on traditions, such as selecting auspicious dates for annual events and festivals.
+- Spiritual leaders: many communities, such as Hmong, Lisu, Yao and Akha, worship their ancestors. Spiritual leaders are key figures who lead related rites and rituals, and may provide guidance and remedies for illnesses.
+
+### 389. During implementation, the Thai Rice Project will implement activities to promote climate-smart rice farming in lowland areas. Most ethnic groups that self-identify as indigenous peoples reside in highland areas in the North of Thailand, outside of the project’s target areas. Therefore, direct engagement with ethnic groups that self-identify as indigenous peoples will be very limited. However, the following potential touch-points are observed:
+
+- A small number of members of ethnic groups residing in highland areas engage as labourers in lowland rice farming areas, particularly at rice harvest time. During consultations, it was identified that the Akha and Lahu
+
+392 The Damrongdhama Centre, which falls under the authority of the Ministry of Interior,
+
+
+---
+*Chunk pages 136–136*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1184 (sys=94, user=1090), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.10.0 | PAGE 133
+
+are willing to accept jobs as labourers (including on rice fields), which may bring them into contact with project activities.
+
+• The Karen reside in lower-highland areas and favour rice farming on the same parcel of land year over year. As such, they are likely to be located between the lowland areas that farm rice (where the project will focus) and the highland areas where the other ethnic groups that self-identify as indigenous peoples reside. As such, the Karen may warrant particular attention for future engagement efforts.
+
+390. Taking into consideration the needs and interests of these ethnic groups (particularly of the Karen, Akha and Lahu community members), the project will aim to direct some of its climate-smart training at ethnic groups who are not located in the project’s target areas but who may provide a pool of talent and labour for climate-smart rice farming (Sub-Activity 1.1.1.1) in lowland areas. This is foreseen to be operationalised in cooperation with stakeholders who have experience in engaging ethnic groups in the North, such as the Mah Fah Luang (MFL) Foundation. The project will ensure availability of general project information and key content on which labourers need to be informed or for which labour capacities need to be built on climate-smart farming in the languages of ethnic groups. Additionally, appropriate monitoring activities (in line with free, prior and informed consent – FPIC) will ensure that unintended negative impacts to (members of) ethnic groups self-identifying as indigenous peoples from activities conducted in the project area do not occur or, in case they cannot be avoided, are mitigated.
+
+391. The SEP (Annex 7a) outlines the project’s stakeholder engagement process for project implementation, including for members of ethnic groups and those that self-identify as indigenous peoples. FPIC is at the core of each activity. Project staff will be trained on gender and social inclusion, to promote the participation of diverse stakeholders, including members of the ethnic groups. A communication and information dissemination plan will be elaborated during the project’s inception phase.
+
+392. The following considerations will be respected when designing consultations with the men and women of ethnic groups identifying as indigenous peoples to foster two-way communication:
+
+• Consultations will be conducted in a manner that is accessible and culturally appropriate, paying due attention to the specific needs of beneficiaries and others who may be affected by project implementation (including gender, literacy, language or accessibility of technical information).
+
+• The objective and the anticipated results of the consultation will be clearly stated.
+
+• Consultation design will take into account the specific indigenous peoples who are targeted, and their context (interests, capacities, cultural background).
+
+• Information provided in consultations will be complete, transparent and easy to understand, and will promote inclusiveness and gender sensitivity. It will explain the objectives of the project, including positive and potentially adverse effects.
+
+• Suitable trainers and facilitators will conduct the consultations, including trainers who are trained in social inclusion, indigenous peoples’ rights and gender equality. Translation services will be provided (when necessary).
+
+• Transparent, accurate and consistent documentation and reporting will be required from all consultations.
+
+393. With regard to the GRM, it will be operated in a way to effectively address ethnic groups’ (including those identifying as indigenous peoples) project-related concerns. It will follow all the GRM procedures and principles outlined above. In addition, further provisions will be implemented to ensure ethnic groups’ grievances are processed in an effective, accessible, fair, transparent and constructive way:
+
+• Submission of grievances from ethnic groups will be accepted in different ways: (i) in written form in local languages (to ensure that language barriers / limitations can be overcome); (ii) in oral form through a dedicated project phone number; (iii) by personal presentation; (iv) by sending a representative to be chosen freely by the claimant.
+
+• To ensure proper grievance proceedings, the project will provide for interpretation and/or translation in the claimant’s preferred local language.
+
+• GRM procedures will be publicly advertised in the relevant languages: for example, on website(s) and in project-related documents. Ethnic group participants in capacity building measures and community leaders (Pooyaibaan, village elders, spiritual leaders) will be specifically sensitised to the GRM and its functioning. These awareness-raising measures are intended to ensure that individuals from ethnic groups know how to
+
+393 The free choice of the representative is of utmost importance as anecdotal evidence shows that some socially disadvantaged groups do not always feel properly represented by community leaders for particular types of grievances.
+
+
+---
+*Chunk pages 137–137*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=955 (sys=94, user=861), max_out=1024, ctx=8192
+---
+
+# D.5.4 NDA approval process
+
+394. The Thai Rice Project has been subject to the NDA’s No-Objection Procedure.394 The No-Objection Letter (NoL) is provided in Annex 1a.
+
+# D.6. Efficiency and effectiveness  
+
+## D.6.1 Mitigation and adaptation cost
+
+395. The Thai Rice Project makes use of a relatively small grant from the GCF to address targeted barriers, coordinates with other projects and programmes, and triggers public and private sector leverage through the Executing Entities, farmers, service providers and other project stakeholders.
+
+### Table 24: Project Efficiency Indicators
+
+| GCF resources         | EUR 38.17 million |
+|-----------------------|-------------------|
+| Co-financing          | EUR 79.90 million |
+| Total project size    | EUR 118.08 million |
+| Co-finance ratio (GCF: co-finance) | 1:2.1 |
+| Total direct beneficiaries | 253,400 |
+| GCF cost per beneficiary (adaptation) | Euro 150.55 |
+| GCF cost per tCO2e abated (mitigation) [12.56MtCO2e abated over 15-year project lifespan] | Euro 3.04/tCO2e |
+
+## D.6.2 Economic analysis
+
+396. The economic model is provided in Annex 3a.
+
+397. The principal quantifiable economic benefits of the projects are: (i) the estimated GHG emissions reduction resulting from adoption of climate-smart agriculture by 253,400 farmers; (ii) the increase in income for farms that adopt climate-smart agriculture; and (iii) the value of water saved through the implementation of climate-smart agriculture. The three effects are discussed below.
+
+### GHG Emission Reductions  
+
+398. The project is expected to mitigate 12.56 million tCO2e over 15 years. The 15-year period is assumed to start in 2024 – the project is expected to begin in late 2023, but any activities conducted that year would be small and organisational in nature. The annual emission reductions will increase gradually from 2024 to 2028, when they are expected to reach 1.1 MtCO2e. The project assumes the continued implementation of climate-smart agriculture on 72% of the target farmers’ farmland, resulting in an additional ~1 MtCO2e/year emission reduction for the subsequent 10 years after project-end. The emission reductions will continue thereafter but, conservatively, estimates are limited to the 15-year period (5 project years + additional 10 years).
+
+399. The base-case assumption chosen for the shadow price of carbon is Euro 60/tCO2e. The Organisation for Economic Co-operation and Development (OECD) has published a study on the effective carbon prices needed
+
+394 http://gcf.onep.go.th/en_US/about-nda/#procedure.  
+395 Approximately 253,400 farmers are targeted by the project, with 72% of their farmland contributing to the project’s GHG mitigation impact. See Section D.1.2 for details.
+
+
+---
+*Chunk pages 138–138*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1305 (sys=94, user=1211), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.10.0 | PAGE 135
+
+## Incremental Income for Climate-Smart Farmers
+
+401. Consistent with the emission reduction estimate, the incremental income estimate assumes that all project farmers in each of the 3 regions implement climate-smart agricultural technologies and practices: ~86,800 farmers in the Central Plains, ~147,000 farmers in the North-East and ~19,700 farmers in the North. As acknowledgement that not all farmland is suitable for climate-smart agriculture (due to biophysical and logistical factors), and based on the empirical experience of baseline and foundation projects, it is conservatively estimated that 80% of mega-farm farmland and 60% of non-mega-farm farmland – which equates to approximately 72% of total farmland – is used for climate-smart rice farming. The pace of climate-smart application mirrors that in the emissions reduction estimate (cumulative application on 7.2% of the project farming area in 2024, 14.4% in 2025, 28.8% in 2026, 50.4% in 2027 and 72% in 2028). Each farmer is assumed to repeat the climate-smart investment for a new 5-year cycle once the previous 5-year cycle has expired. In each 5-year cycle, a farmer realises the incremental cashflows shown in the financial IRR (FIRR) calculation for the respective region.
+
+## Value of Water Saved
+
+402. The total amount of water saved is estimated conservatively at 1.7 billion cubic metres, based on the following assumptions:
+
+- The principal water-saving technologies are AWD and LLL. The amount of water saved by AWD varies according to context (climate, soil-type, agronomic practices, etc.) but can reasonably be approximated as 570 m³/ha/year.
+- AWD will be applied in the Central Plains and the North but not in the North-East, where only LLL will be applied. Based on the area where climate-smart rice farming will be implemented in the Central Plains and the North, the annual and cumulative water savings are estimated over 15 years.
+
+403. An authoritative academic review estimates the shadow price of water saved through water-efficient rice farming, across a range of rice-farming countries, to be US$ 0.025/m³ (Euro 0.023/m³). Based on this shadow price and the above volume estimate, an annual shadow value of water saved is estimated. This value is deemed to be conservative because only AWD-related water savings are considered.
+
+## Base-Case Economic IRR (EIRR) and NPV
+
+404. With the above assumptions and a total project budget of Euro 117.5 million (GCF grant + co-finance), the Thai Rice Project yields an attractive EIRR of 36.7%. The economic net present value is estimated at Euro 214.3 million, based on a 10% discount rate.
+
+---
+
+**Note:** The following references are included in the text:
+
+- OECD (2021), Effective Carbon Rates 2021 – Pricing Carbon Emissions Through Taxes and Emissions Trading: [https://www.oecd-ilibrary.org/taxation/effective-carbon-rates-2021_0e8e24f5-en](https://www.oecd-ilibrary.org/taxation/effective-carbon-rates-2021_0e8e24f5-en)
+- Carbon Pricing Leadership Coalition (2017), Report of the High-Level Commission on Carbon Prices: [https://static1.squarespace.com/static/54ff9c5ce4b0a53decccfb4c/t/59b7f2409f8dce5316811916/1505227332748/CarbonPricing_FullReport.pdf](https://static1.squarespace.com/static/54ff9c5ce4b0a53decccfb4c/t/59b7f2409f8dce5316811916/1505227332748/CarbonPricing_FullReport.pdf)
+- See [https://ember-climate.org/data/data-tools/carbon-price-viewer/](https://ember-climate.org/data/data-tools/carbon-price-viewer/)
+- Silalertruksa T. et al (2017), ‘Implications of water use and water scarcity footprint for sustainable rice
+
+
+---
+*Chunk pages 139–139*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=564 (sys=94, user=470), max_out=1024, ctx=8192
+---
+
+# Sensitivity Analysis
+
+405. Sensitivity analysis indicates that the EIRR and NPV are robust in downside scenarios. For the purpose of the sensitivity analysis, two variables have been considered: (i) lower carbon prices, down to an extremely conservative minimum of Euro 5/tCO2e, and (ii) a lower volume of emission reductions and lower incremental farm income from the base-case, in 10% negative increments.
+
+406. The analysis shows that the EIRR would be double-digit even if carbon prices dropped to Euro 20, below the OECD's low-end estimate, and the emission reduction volume / incremental income were 20% lower than in the base-case. The latter extreme scenario could be the result of extreme weather events, such as large-scale droughts, with devastating effects on farming activities. The EIRR would still be positive with an extremely low carbon price of Euro 5/tCO2e and emission reductions / incremental income in line with the base-case estimate. The economic NPV would still be positive with a carbon price of Euro 20/tCO2e and 20% lower emission reductions / incremental income.
+
+## Figure 21: Economic IRR Sensitivity
+
+## Figure 22: Economic NPV Sensitivity
+
+# D.6.3 Financial analysis
+
+407. The financial model is provided in Annex 3a. Additional commentary is provided in Section B.5.2 relating to concessionality.
+
+## Baseline Assumptions
+
+408. The incremental cashflows are modelled for farmers who switch from conventional rice farming to climate-smart farming over a 5-year implementation cycle. The cashflows of a representative baseline rice farm in each of the three target regions – Central Plains, North-East and North – are simulated. The representative farm aims to capture the conditions of the majority of – but not all – farms in each region. Detailed assumptions – derived from
+
+[Page 136]
+
+
+---
+*Chunk pages 140–140*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1073 (sys=94, user=979), max_out=1024, ctx=8192
+---
+
+# D 
+ GREEN CLIMATE FUND FUNDING PROPOSAL V.10.0 | PAGE 137 
+
+The literature, the findings of an extensive market study commissioned for the project401, as well as from IRRI data and GIZ field survey data collected for the NSP and other foundation and baseline projects – are described in Annex 3b.
+
+## 409. The situation of the indicative baseline farm can be summarised as follows:
+
+- **Central Plains**: contains the largest farms generating relatively high yields, produced both in the wet and dry seasons. The rice produced is of average quality and commands the lowest prices of all 3 regions. Fertilizers, pesticides, land rental and irrigation are the largest cost items, as a percentage of revenues. Because of the relatively large farm size, double season and relatively high yields, the indicative farm in the Central Plains produces the highest pre-tax profits, both in absolute terms (Euro 1,030/year) and area terms per (Euro 65/rai, Euro 10.4/ha).
+
+- **North-East**: mid-size farms, not irrigated and therefore producing only in the west season, with very low yields due to generally low-fertility soils. The rice produced, however, is of premium quality and attracts a high price. A high-cost base despite farmers not paying rent (land is mostly owned) and mostly not using irrigation. Premium rice prices are not sufficient to offset low yields, smaller farm size and high costs. The indicative farm in the North-East produces the lowest pre-tax profits, both in absolute terms (Euro 263/year) and area terms (Euro 23/rai, Euro 3.7/ha).
+
+- **North**: the smallest farms producing the highest yields (partly due to application of transplanting), over 2 seasons. Rice is of better quality than in the Central Plains but is not at a premium level. Operating costs in these small, hillside farms are the highest as a percentage of revenues. Fertilizers, planting and land preparation are the largest cost items. The indicative farm in the North produces low pre-tax profits in absolute terms (Euro 446/year) due to small farm size but relatively high pre-tax profits in area terms (Euro 56/rai, Euro 9.0/ha) due to high yields.
+
+## 410. In general, rice farming in all 3 regions produces only subsistence income (if at all) for the farmers and their families. Most farmers complement farm income with second jobs, typically as paid labour, as well as social security subsidies provided by the government. The financial model, however, only looks at farm income and the effects on it of switching from conventional rice farming to climate-smart rice farming.
+
+## Climate-Smart Agriculture Assumptions
+
+## 411. Farmers will have the opportunity to choose from a range of climate-smart technologies and practices, based on the specific conditions of their farms. Modelling all possible permutations would not be practical. The approach chosen in the financial model is to model a representative climate-smart package, combining a few technologies in each region. Detailed assumptions are described in Annex 3b.
+
+## Climate-Smart Agriculture Without GCF Grant
+
+## 412. The conversion to climate-smart agriculture produces a positive financial IRR (FIRR) in each representative farm:
+
+- For the Central Plains representative farm, the FIRR of switching to climate-smart agriculture is 14.2%. A substantial reduction in farm cashflows in Year 1, when LLL is applied at a considerable cost (in addition to smaller negative cashflow impacts from other technologies), is more than offset by the increase in cashflows over the subsequent 4 years.
+
+- A similar dynamic takes place in the representative North-East farm. Here, however, the yield increase from LLL and SSNM applies only to one farming season and generates proportionally lower positive cashflows than in the Central Plains. The FIRR is, therefore, lower (11.2%).
+
+- LLL is not applied in the representative farm in the North, due to the uneven terrain. Despite the absence of a large investment in LLL in Year 1, the conversion to climate-smart agriculture generates moderately negative cashflows in the first two years. The FIRR over 5 years is 13.6%.
+
+401 Provided in Annex 2b.
+
+
+---
+*Chunk pages 141–141*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=411 (sys=94, user=317), max_out=1024, ctx=8192
+---
+
+# D.6.4 Best available technologies and practices
+
+415. The project promotes climate-smart technologies and practices – such as LLL, AWD, SSNM and others – that are acknowledged by prominent institutions such as FAO and IRRI to be integral elements of the transition to climate-smart agriculture, increasing crop productivity while simultaneously building resilience to climate change.
+
+# Figure 23: Climate-Smart Agriculture Financial IRR Without GCF Grants (5-Year Period)
+
+413. Note that these FIRRs do not reflect the value of the technical assistance that farmers will receive to assist them with the implementation of climate-smart technologies and practices. If farmers paid for that technical assistance (in the hypothetical scenario where there is an external provider willing to provide it for a fee), the FIRRs would be lower than those shown above.
+
+# Climate-Smart Agriculture With GCF Grant
+
+414. Despite the positive FIRR generated by climate-smart technologies and practices without GCF financial support, incentive payments are, in fact, essential to rapidly increase the penetration of climate-smart technologies and practices among Thai rice farmers. The rationale for the use of GCF grant resources is presented in detail in Section B.5.2.
+
+
+---
+*Chunk pages 142–142*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=415 (sys=94, user=321), max_out=1024, ctx=8192
+---
+
+# D 
+## GREEN CLIMATE FUND FUNDING PROPOSAL V.10.0 | PAGE 139 
+   
+ 
+and reducing GHG emissions. 402 Because of its particular vulnerabilities to climate change and its significant 
+methane emissions, r ice cultivation is considered by the World Bank 403, FAO 404, CGIAR 405 and other leading 
+institutions to be a priority sub-sector for climate-smart support. 
+ 
+ 
+402 See, for example, Earth Security Group (2019), Financing Sustainable Rice for a Secure Future: https://earthsecuritygroup.com/wp-
+content/uploads/2019/11/ESG-Financing-Sustainable-Rice.pdf. 
+403 World Bank (2021), World Bank Group Climate Change Action Plan 2021-2025: 
+https://openknowledge.worldbank.org/bitstream/handle/10986/35799/CCAP-2021-25.pdf?sequence=2&isAllowed=y. 
+404 FAO (2021), Climate-Smart Agriculture: Case Studies: https://www.fao.org/3/cb5359en/cb5359en.pdf. 
+405 CGIAR (2021), CGIAR 2022-24 Investment Prospectus: https://storage.googleapis.com/cgiarorg/2021/06/Document-
+SC13_02_Endorsed-2022-24-Investment_-Prospectus.pdf.
+
+
+---
+*Chunk pages 143–143*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=737 (sys=94, user=643), max_out=1024, ctx=8192
+---
+
+# E.1. Project/Programme Focus
+
+- **Reduced emissions (mitigation)**
+- **Increased resilience (adaptation)**
+
+# E.2. GCF Impact level: Paradigm shift potential (max 600 words, approximately 1 -2 pages)
+
+## Assessment
+
+### Dimension
+
+| Current state (baseline) | Potential target scenario (Description) | How the project will contribute (Description) | Description Rating Scale |
+|--------------------------|-----------------------------------------|-----------------------------------------------|--------------------------|
+| At the time of this Funding Proposal formulation (late-2022), Thailand has a very under-developed climate-smart rice farming sector. The sector remains both emissions-intensive and especially vulnerable to climate change (notably water and heat stress). While the sector is partially subsidised, with a history of provision of domestic support by the government and state institutions such as BAAC, those finance flows are not targeted at climate-smart rice agriculture. Significant and long-standing barriers prevent any significant progress in embarking on a low-emission, climate-resilient development trajectory. | Low Paradigm shift would involve a shift away from current practices – such as continuous flooding of paddy fields and burning of rice residues – that generate substantial GHG emissions and that leave farmers exposed to drought and rising temperatures to a sector characterised by capacitated actors (farmers, service providers, financial institutions) who implement and finance climate-smart technologies and practices in a market environment driven by self-interest (positive IRRs and market recognition for sustainable rice and biomass residues) and guided by supportive, coordinated policies. | The Thai Rice Project is conservatively projected to deliver 12.56 MtCO2e of emission reductions and to enable ~253,400 farmers to implement climate-smart rice agriculture, which would represent a significant step towards paradigm shift on GHG emissions and climate adaptation. The project’s focus on women farmers and other vulnerable farming groups (e.g. migrant workers, skipped-generation households) will ensure inclusive impacts. | Low |
+
+## Replicability
+
+Food systems are one of the most important contributors to GHG emissions, as well as being one of the most exposed economic sectors to the adverse effects of climate change. In
+
+If the rice sector in 21 Thai provinces can be demonstrated to successfully transition to a low-emission, climate-resilient model, and do so while increasing farmers’ 
+
+The Thai Rice Project can serve as a model for other countries seeking to develop domestic and international markets for climate-smart rice. Large international companies that buy rice have already declared their intent to shift to sustainably produced
+
+---
+
+
+---
+*Chunk pages 144–144*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=886 (sys=94, user=792), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.10.0 | PAGE 141
+
+## South-East Asia and South Asia rice agriculture
+
+South-East Asia alone, approximately 24 million farmers depend on lowland rice agriculture, and the figure is three times higher in South Asia.
+
+With a conservative estimate of 10% water savings, AWD adoption alone – even without additional accompanying climate-smart measures – on all the world’s rice lands would free up 100 km³ of water annually for other uses and would reduce methane emissions by 1.5 billion tCO₂e/year.
+
+## Government support and replication
+
+Incomes and supporting the government to meet its NDC commitments, the approach could be further replicated in the remaining 55 Thai provinces and across other countries and regions.
+
+## Private sector involvement
+
+Rice – indeed, Olam, PepsiCo and others have already invested significant financial resources in GIZ foundation projects supporting the SRP and SAI Platform FSA standards in Thailand. They are struggling to make the switch in practice, as there is currently an insufficient supply of rice that meets the standard and they are committed to providing further support, in Thailand and in the broader region.
+
+## Multi-country FAO Climate-Resilient Rice Landscapes (CRRL) foundation project
+
+Further, the multi-country FAO Climate-Resilient Rice Landscapes (CRRL) foundation project, which is currently under development, is following development of the Thai Rice Project closely as it seeks to replicate rice sector paradigm shift in other Asian countries.
+
+## Sustainability concerns
+
+The sustainability of the current rice farming model is questionable. Since 2019 alone, repeated droughts have revealed the vulnerability of the rice sector to climate-driven water stress.
+
+GHG emissions continue to increase and residue burning remains a significant problem despite repeated government attempts to reduce the practice.
+
+Take-up of voluntary insurance among farmers is low, preventing them from transferring climate risk to other parties.
+
+Farmers’ incomes are among the lowest in Thailand. Financial products that target the rice sector are not designed, or even intended, to support climate-smart investment.
+
+## Paradigm shift
+
+Paradigm shift would see the development of a self-sustaining climate-smart rice sector in which farmers willingly apply climate-smart technologies and practices because it is in their economic self-interest to do so and because they are provided with the technical, awareness, financial and market-access tools needed to overcome initial adoption barriers.
+
+## Thai Rice Project assessment
+
+The Thai Rice Project is assessed as having high sustainability potential. The project will:
+
+- Mainstream the use of a range of climate-smart farming technologies and practices that create financial benefits at farm-level and are therefore in the self-interest of the farmer (higher rice quality, reduced costs, premium price, reduced vulnerability to drought, etc.). Training will be conducted by the national agricultural extension services in conjunction with innovative private sector support, in order to ensure the widespread dissemination of, and sustainable adoption of, climate-smart farming practices.
+
+- Foster the development of new markets for climate-smart rice and establish the self-sustaining business models necessary for private sector provision of technologies to adapt farming practices to the new climate context while also reducing GHG emissions. Strong partnerships with the private sector will be established and market linkages strengthened through the TAS and through rice biomass residue markets.
+
+- Scale-up the TAS as a national standard to create market differentiation for climate-smart agricultural produce in the Thai market
+
+
+---
+*Chunk pages 145–145*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=575 (sys=94, user=481), max_out=1024, ctx=8192
+---
+
+# E.3. GCF Outcome level: Reduced emissions and increased resilience (IRMF core indicators 1-4, quantitative indicators)
+
+## GCF Result Area
+
+### IRMF Indicator
+
+#### Means of Verification (MoV)
+- Baseline
+- Target
+- Assumptions / Notes
+
+### Mid-term Final
+
+#### MRA4
+
+##### Forestry and land use
+
+###### Core 1: GHG emissions reduced, avoided or removed/ sequestered
+
+- Project M&E system
+- Annual GHG emissions report
+- National reporting to UNFCCC
+
+###### Baseline
+- 0 0.5 MtCO2e
+
+###### Target
+- 2.44 MtCO2e
+
+###### Lifespan (15 years) emission reductions:
+- 12.56 MtCO2e
+
+###### Average annual emission reductions (5-year project duration):
+- 490,000 tCO2e
+
+###### A robust MRV system, designed to be able to serve 3 simultaneous purposes, will be established, building on the developments of baseline and foundation projects. The purposes include: (i) project
+
+--- 
+
+*Note: This appears to be a fragment from a larger document, and the text continues beyond this point.*
+
+
+---
+*Chunk pages 146–146*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=717 (sys=94, user=623), max_out=1024, ctx=8192
+---
+
+# E GREEN CLIMATE FUND FUNDING PROPOSAL V.10.0 | PAGE 143
+
+## M&E, (ii) certification schemes for sustainability standards and the carbon market, and (iii) contribution to national / sectoral MRV.
+
+Data sources will consist of farmer farm-books, satellite data, field measurements, validation site visits, farmer surveys and secondary data. Please refer to Sub-Activity 3.1.2.2 and Section E.7.2.
+
+The baseline is based on official data sources and granular data collection and analysis undertaken as part of an NSP endline survey and the Thai Rice Project feasibility study.
+
+## Total project direct / indirect beneficiaries
+
+### Core 2: Direct and indirect beneficiaries reached
+
+#### Project M&E system
+
+Satellite data-based sampling for triangulation of indicators observable from space (potentially including data supplied by GISTDA)
+
+Quarterly reporting on extension strategy implementation plans (see deliverable under Sub-Activity 1.1.1.1)
+
+DoAE annual monitoring of farming and extension activities
+
+OAE regular (project-independent) surveys on agricultural and agronomic statistics
+
+## Direct: 76,000 farmers
+
+- Male: 46,000
+- Female: 30,000
+
+## Indirect: 228,000 beneficiaries
+
+- Male: 106,000
+- Female: 122,000
+
+## Direct: 253,400 farmers
+
+- Male: 138,400
+- Female: 115,000
+
+## Indirect: 760,200 beneficiaries
+
+- Male: 353,400
+- Female: 406,800
+
+See below (ARA 1) for the definitions of direct beneficiaries and indirect beneficiaries.
+
+Because the 10 climate-smart technologies and practices supported by the project each deliver multi-faceted adaptation benefits (e.g. improved crop yields, reduced water consumption and reduced input costs), their impacts cannot meaningfully be distinguished by Result Area. For instance, a farmer adopting AWD receives beneficial impacts underARA 1 (all smallholder rice farmers are amongst the most vulnerable people in Thailand), ARA 2.2 (improved food security), ARA 2.3 (improved water security) and ARA 4 (improved rice agro-ecosystem). This is also the case for a farmer adopting SSM or SSNM or IPM, etc.
+
+As a result, the log-frame beneficiary numbers are identical for ARA 1 (Core 2)
+
+
+---
+*Chunk pages 147–147*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=809 (sys=94, user=715), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.10.0 | PAGE 144
+
+## ARA 2 (Core 2, Supplementary 2.2, Supplementary 2.3) and ARA 4 (Core 2):
+
+All farmers adopting the project-supported technologies and practices benefit across these Result Areas.
+
+## ARA1 Most vulnerable people and communities
+
+### Core 2: Direct and indirect beneficiaries reached
+
+Project M&E system
+
+- Satellite data-based sampling for triangulation of indicators observable from space (potentially including data supplied by GISTDA)
+- Quarterly reporting on extension strategy implementation plans (see deliverable under Sub-Activity 1.1.1.1)
+- DoAE annual monitoring of farming and extension activities
+- OAE regular (project-independent) surveys on agricultural and agronomic statistics
+
+### Direct:
+
+- 76,000 farmers
+  - Male: 46,000
+  - Female: 30,000
+
+### Indirect:
+
+- 228,000 beneficiaries
+  - Male: 106,000
+  - Female: 122,000
+
+### Direct:
+
+- 253,400 farmers
+  - Male: 138,400
+  - Female: 115,000
+
+### Indirect:
+
+- 760,200 beneficiaries
+  - Male: 353,400
+  - Female: 406,800
+
+Direct beneficiaries are defined as farmers who: (i) receive project support to switch to climate-smart rice agriculture (through a combination of one or more of: capacity development, site visits, extension support, incentive grants, climate-smart loans, etc.); and (ii) then proceed to adopt climate-smart rice farming technologies and practices during the project implementation period (and sustain them thereafter), leading to improved adaptation.
+
+Indirect beneficiaries are considered to be members of farmers' households who do not receive targeted project support but who do indirectly benefit from project activities (enhanced household incomes, enhanced climate resilience, strengthened livelihoods, etc.). The average household size is 4. Assuming that each direct beneficiary farmer occupies a separate household, and that each household contains 3 indirect beneficiaries, the total number of indirect beneficiaries is ~760,200. Farmers are assumed to be married to an individual of the opposite sex. The composition of the remaining household occupants (typically children) is assumed to be 50% male and 50% female.
+
+## ARA2 Health, well-being, food and water security
+
+### Core 2: Direct and indirect beneficiaries reached
+
+Project M&E system
+
+- Satellite data-based sampling for triangulation of indicators observable from space
+
+### Direct:
+
+- 76,000 farmers
+  - Male: 46,000
+  - Female: 30,000
+
+### Direct:
+
+- 253,400 farmers
+  - Male: 138,400
+  - Female: 115,000
+
+## ARA1, ARA2, and ARA4 targets are the same:
+
+Smallholder rice farmers are among the most vulnerable people in Thailand and they will all benefit from...
+
+
+---
+*Chunk pages 148–148*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=665 (sys=94, user=571), max_out=1024, ctx=8192
+---
+
+# E GREEN CLIMATE FUND FUNDING PROPOSAL V.10.0 | PAGE 145
+
+## Indicators observable from space (potentially including data supplied by GISTDA)
+
+### Quarterly reporting on extension strategy implementation plans  
+(see deliverable under Sub-Activity 1.1.1.1)
+
+### DoAE annual monitoring of farming and extension activities
+
+### OAE regular (project-independent) surveys on agricultural and agronomic statistics
+
+#### Direct: 76,000 farmers  
+- Male: 46,000  
+- Female: 30,000  
+
+#### Indirect: 228,000 beneficiaries  
+- Male: 106,000  
+- Female: 122,000  
+
+#### Direct: 253,400 farmers  
+- Male: 138,400  
+- Female: 115,000  
+
+#### Indirect: 760,200 beneficiaries  
+- Male: 353,400  
+- Female: 406,800  
+
+### ARA1, ARA2 and ARA4 targets are the same:  
+smallholder rice farmers are amongst the most vulnerable people in Thailand and they will all benefit from improved food and water security due to the project and they will all benefit from an improved rice agro-ecosystem due to the project.
+
+## Ecosystems and ecosystem services
+
+### Core 4: Hectares of natural resources brought under improved low-emission and/or climate-resilient management practice  
+
+### Project M&E system  
+
+#### Satellite data-based sampling for triangulation of indicators observable from space (potentially including data supplied by GISTDA)  
+
+#### Quarterly reporting on extension strategy implementation plans  
+(see deliverable under Sub-Activity 1.1.1.1)
+
+#### DoAE annual monitoring of farming and extension activities  
+
+#### OAE regular (project-independent) surveys on agricultural and agronomic statistics  
+
+##### Direct: 76,000 farmers  
+- Male: 46,000  
+- Female: 30,000  
+
+##### Indirect: 228,000 beneficiaries  
+- Male: 106,000  
+- Female: 122,000  
+
+##### Direct: 253,400 farmers  
+- Male: 138,400  
+- Female: 115,000  
+
+##### Indirect: 760,200 beneficiaries  
+- Male: 353,400  
+- Female: 406,800  
+
+### ARA1, ARA2 and ARA4 targets are the same:  
+smallholder rice farmers are amongst the most vulnerable people in Thailand and they will all benefit from improved food and water security due to the project and they will all benefit from an improved rice agro-ecosystem due to the project.
+
+
+---
+*Chunk pages 149–149*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=783 (sys=94, user=689), max_out=1024, ctx=8192
+---
+
+# E GREEN CLIMATE FUND FUNDING PROPOSAL V.10.0 | PAGE 146
+
+## Agricultural and Agronomic Statistics
+
+### ARA2 Health, well-being, food and water security
+
+#### Supplementary 2.2: Beneficiaries (female/male) with improved food security
+
+Project M&E system
+
+- **Direct:** 76,000 farmers
+  - Male: 46,000
+  - Female: 30,000
+- **Indirect:** 228,000 beneficiaries
+  - Male: 106,000
+  - Female: 122,000
+
+#### Direct: 253,400 farmers
+- Male: 138,400
+- Female: 115,000
+
+#### Indirect: 760,200 beneficiaries
+- Male: 353,400
+- Female: 406,800
+
+ARA1, ARA2 and ARA4 targets are the same: smallholder rice farmers are amongst the most vulnerable people in Thailand and they will all benefit from improved food and water security due to the project and they will all benefit from an improved rice agro-ecosystem due to the project.
+
+Income and specific food-security relevant household characteristics will be surveyed drawing on data for measuring Outcome 1 Indicator ("Climate-smart farmers' incomes and food security are increased despite adverse climate change") and triangulated with national food security statistics. In addition, improvements in water supply for agricultural use by HHs/individuals will draw on data from measuring Outcome 2 Indicator ("Water use-scaled yields of climate-smart rice") and triangulated with irrigation and water relevant statistics and weather data.
+
+### ARA2 Health, well-being, food and water security
+
+#### Supplementary 2.3: Beneficiaries (female/male) with more climate-resilient water security
+
+Project M&E system
+
+- **RID statistics on water security and weather data for triangulation**
+
+#### Direct: 76,000 farmers
+- Male: 46,000
+- Female: 30,000
+
+#### Indirect: 228,000 beneficiaries
+- Male: 106,000
+
+#### Direct: 253,400 farmers
+- Male: 138,400
+- Female: 115,000
+
+#### Indirect: 760,200 beneficiaries
+- Male: 353,400
+
+ARA1, ARA2 and ARA4 targets are the same: smallholder rice farmers are amongst the most vulnerable people in Thailand and they will all benefit from improved food and water security due to the project and they will all benefit from an improved rice agro-ecosystem due to the project.
+
+Climate-resilient water security for drinking and human well-being will be surveyed drawing on data for measuring Outcome 2 Indicator ("Water use-scaled yields of climate-smart rice") and triangulated with irrigation and water relevant statistics and weather data.
+
+
+---
+*Chunk pages 150–150*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=597 (sys=94, user=503), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.10.0 | PAGE 147
+
+## Ecosystems and ecosystem services
+
+- **Core 4: Hectares of natural resources** brought under improved low-emission and/or climate-resilient management practice  
+- Project M&E system  
+  - Satellite data-based sampling for triangulation of indicators observable from space (potentially including data supplied by GISTDA)  
+  - ONEP national biodiversity reporting  
+
+## Project Targeting
+
+- **0 231,700 ha** (planting area)  
+- **772,200 ha** (planting area)  
+
+The farmland targeted by the project extends over a physical area of ~718,000 hectares, of which ~306,000 ha is irrigated and ~412,000 ha is rain-fed. As rice can be planted more than once each year in the same field, the ‘effective farmland’ – the wet season planting area plus the dry season planting area – amounts to ~1.07 million ha. The project targets refer to ‘effective farmland’ (i.e. planting area/year).
+
+## Application of climate-smart agricultural technologies and practices
+
+Application of climate-smart agricultural technologies and practices is assumed to ramp up over time according to the following schedule (see Section D.1.3):
+
+- **7.2% of project farmland in Year 1**,  
+- **14.4% in Year 2**,  
+- **28.8% in Year 3**,  
+- **50.4% in Year 4**,  
+- **72% in Year 5**  
+
+This equates to:
+
+- **Year 1: ~77,200 ha**  
+- **Year 2: ~154,400 ha**  
+- **Year 3: ~308,900 ha**  
+- **Year 4: ~540,500 ha**  
+- **Year 5: ~772,200 ha**
+
+The mid-term estimate is calculated as a linear mid-way interpolation of the Year 2 and Year 3 values (since the project duration is 5 years).
+
+
+---
+*Chunk pages 151–151*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=873 (sys=94, user=779), max_out=1024, ctx=8192
+---
+
+# E.4. GCF Outcome level: Enabling environment (IRMF core indicators 5-8 as applicable)
+
+## Core Indicator 5: Degree to which GCF investments contribute to strengthening institutional and regulatory frameworks for low emission climate-resilient development pathways in a country-driven manner
+
+### Baseline context (description)
+Broad array of public support programmes, but not targeted at climate-smart rice and generally not coordinated; low innovation capacity of the system.
+
+### Rating for current state (baseline)
+Medium
+
+### Target scenario (description)
+Key public sector institutions, including the agricultural extension system and BAAC, have the knowledge and skills to support climate-smart policy development for the rice sector and to impart climate-smart knowledge and skills to rice farmers and climate-smart service providers. Policies and regulatory frameworks promote the transition to climate-smart rice production and do so in a 'joined up', coordinated manner.
+
+### How the project will contribute
+The project will build the capacity of key institutions (at national and sub-national levels), including the Rice Department, ONEP / EFD, the MRV Committee and BAAC, on climate-smart rice agriculture. EFD will be supported in its efforts to become a GCF Accredited Entity. MoAC will receive support to implement the Climate Change Strategic Plan for the Agricultural Sector. The MRV system for the rice sector will be enhanced in line with NDC requirements. The Thai Rice Facility will be established and operationalised as a coordination and peer-learning structure that brings together and coordinates the financial instruments supported by the project as well promoting alignment between key rice sector actors on broader policy issues.
+
+## Core Indicator 6: Degree to which GCF investments contribute to technology deployment, dissemination, development or transfer and innovation
+
+### Baseline context (description)
+Significant and long-standing barriers prevent any significant progress in embarking the Thai rice sector on a low-emission, climate-resilient development trajectory. Adoption of climate-smart technologies such as AWD, SSM and SSNM is low, fragmentary and incapable of sustained take-off.
+
+### Rating for current state (baseline)
+Low
+
+### Target scenario (description)
+Rice farmers employ suites of climate-smart technologies that reduce GHG emissions and reduce farmers' vulnerability to climate change (notably water stress and heat stress). These technologies enable farmers to increase yields, protect yields from climate damage and diversify.
+
+### How the project will contribute
+The project will implement a programme of training – via established extension channels – for farmers and service providers on suites of climate-smart technologies (LLL, AWD, SSM, SSNM, IPM, etc.). Market creation / building activities and match-making between market actors will create commercial opportunities for technology deployment (e.g. LLL service provision, use of rice straw, etc.). Financial support instruments, notably grant-based incentive
+
+## Core Indicator 7: Degree to which GCF investments contribute to strengthening institutional and regulatory frameworks for low emission climate-resilient development pathways in a country-driven manner
+
+### Baseline context (description)
+Broad array of public support programmes, but not targeted at climate-smart rice and generally not coordinated; low innovation capacity of the system.
+
+### Rating for current state (baseline)
+Medium
+
+### Target scenario (description)
+Key public sector institutions, including the agricultural extension system and BAAC, have the knowledge and skills to support climate-smart policy development for the rice sector and to impart climate-smart knowledge and skills to rice farmers and climate-smart service providers. Policies and regulatory frameworks promote the transition to climate-smart rice production and do so in a 'joined up', coordinated manner.
+
+### How the project will contribute
+The project will build the capacity of key institutions (at national and sub-national levels), including the Rice Department, ONEP / EFD, the MRV Committee and BAAC, on climate-smart rice agriculture. EFD will be supported in its efforts to become a GCF Accredited Entity. MoAC will receive support to implement the Climate Change Strategic Plan for the Agricultural Sector. The MRV system for the rice sector will be enhanced in line with NDC requirements. The Thai Rice Facility will be established and operationalised as a coordination and peer-learning structure that brings together and coordinates the financial instruments supported by the project as well promoting alignment between key rice sector actors on broader policy issues.
+
+## Core Indicator 8: Degree to which GCF investments contribute to technology deployment, dissemination, development or transfer and innovation
+
+### Baseline context (description)
+Significant and long-standing barriers prevent any significant progress in embarking the Thai rice sector on a low-emission, climate-resilient development trajectory. Adoption of climate-smart technologies such as AWD, SSM and SSNM is low, fragmentary and incapable of sustained take-off.
+
+### Rating for current state (baseline)
+Low
+
+### Target scenario (description)
+Rice farmers employ suites of climate-smart technologies that reduce GHG emissions and reduce farmers' vulnerability to climate change (notably water stress and heat stress). These technologies enable farmers to
+
+
+---
+*Chunk pages 152–152*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=639 (sys=94, user=545), max_out=1024, ctx=8192
+---
+
+# E GREEN CLIMATE FUND FUNDING PROPOSAL V.10.0 | PAGE 149
+
+## Development Strategy (LT-LEDS) specifically identifies CH4 reduction technologies in rice cultivation as a priority need.
+
+The Adaptation Technology Needs Assessment (TNA-A) lists 5 technology priorities, including:
+
+- Weather forecasting and early warning systems
+- Crop technology improvement (drought tolerance, water optimisation and disease and pest control are specifically identified as pressing needs)
+- Precision farming practices (including water management and greenhouse gas management)
+- Post-harvest technology
+
+## Incomes (e.g. through utilisation of rice biomass residues). Use of the technologies generates positive IRRs and they therefore continue to be deployed by farmers.
+
+Payments for farmers and a new Climate-Smart Loan (CSL) scheme from BAAC will serve to overcome financial barriers to adoption of climate-smart technologies.
+
+## Core indicator 7: Degree to which GCF Investments contribute to market development / transformation at the sectoral, local or national level
+
+The markets for sustainable rice, for rice residues, for climate-smart agricultural services and for GHG emission reductions are under-developed and are held back by knowledge, capacity, policy and financial barriers.
+
+Low functioning markets, consisting of willing, self-interested participants, exist for sustainable rice, rice residues, climate-smart agricultural services and rice sector GHG emission reductions.
+
+These markets provide price signals that promote climate sustainability and attract ongoing investment.
+
+## The project will facilitate the roll-out and enhancement of the Thai Agricultural Standard (TAS) for Sustainable Rice.
+
+The market for rice residues will receive technical and financial support, such that service providers are enabled and incentivised to enter and serve the market.
+
+The T-VER Rice scheme will monetise emission reductions achieved in the rice sector and will recycle the carbon revenues into continued low-emission, climate-resilient rice production.
+
+## The project will support the government to develop a market development strategy for climate-smart rice, including export promotion.
+
+National level (one country)
+
+
+---
+*Chunk pages 153–153*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=610 (sys=94, user=516), max_out=1024, ctx=8192
+---
+
+# E.5. Project/programme specific indicators (project outcomes and outputs)
+
+## Project results  
+(Outcomes / Outputs)  
+
+### Project-specific Indicator
+
+#### Means of Verification (MoV)
+- **Baseline**  
+  - **Target**  
+    - **Assumptions / Notes**
+
+### Outcome 1:  
+Climate-smart farmers’ incomes and food security are increased despite adverse climate change  
+
+#### Annual income of climate-smart rice farmers:
+- Project-supported rice farmers  
+- Project-supported male rice farmers  
+- Project-supported female rice farmers (female-headed households)  
+
+#### Income surveys of farmers  
+
+#### Project M&E system  
+- Farm books (as used in the project’s M&E system)  
+- BAAC and DoAE statistics  
+
+#### Baseline to be established through project baseline survey  
+
+#### Target:  
+- Project-supported rice farmers: at least 25% have increased their farming income by 5% or more  
+- Project-supported male rice farmers: at least 25% have increased their farming income by 5% or more  
+- Project-supported female rice farmers: at least 25% have increased their farming income by 5% or more  
+
+#### Target:  
+- Project-supported rice farmers: at least 60% have increased their farming income by 10% or more  
+- Project-supported male rice farmers: at least 60% have increased their farming income by 10% or more  
+- Project-supported female rice farmers (female-headed households): at least 60% have increased their farming income by 10% or more  
+
+#### The targets represent average increases within each sub-group  
+(all rice farmers, male rice farmers, female rice farmers). There will be variation between individuals within the sub-groups, depending upon the number of climate-smart technologies and practices they adopt and their success at implementing them.  
+
+---  
+**PAGE 150**
+
+
+---
+*Chunk pages 154–154*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=604 (sys=94, user=510), max_out=1024, ctx=8192
+---
+
+# E GREEN CLIMATE FUND FUNDING PROPOSAL V.10.0 | PAGE 151
+
+## Output 1.1: Rice farmers
+
+### Invest in and apply climate-smart technologies and practices
+
+Number of rice farmers who invest in and apply climate-smart technologies and practices
+
+Project M&E system
+
+- Farm books (as used in the project’s M&E system)
+- BAAC and DoAE statistics
+- On-site farmer interviews
+
+### Direct beneficiaries
+
+- 76,000 farmers
+  - Male: 46,000
+  - Female: 30,000
+- 253,400 farmers
+  - Male: 138,400
+  - Female: 115,000
+
+Consistent with the definition of direct beneficiaries (see above), farmers who adopt climate-smart rice farming technologies and practices, and as a consequence benefit from improved climate adaptation, will undertake investments in order to do so. Investments are technology-specific and may include (inter alia): new seed varieties, water storage infrastructure, water management / monitoring equipment, land levelling, etc.
+
+## Outcome 2: The climate resilience of rice farming is enhanced and GHG emissions are substantially reduced through the adoption of climate-smart technologies
+
+### Water use-scaled yields of climate-smart rice (kg rice/m3 water/ha)
+
+Field monitoring of sample plots (climate-smart plots and comparator standard plots)
+
+- 0
+- 65% of climate-smart farmers have higher water use-scaled rice yields than standard farmer counterparts
+- 80% of climate-smart farmers have higher water use-scaled rice yields than standard farmer counterparts
+
+Climate change (particularly water stress and heat stress) is already adversely affecting Thai rice yields and will continue to do so. The baseline can, therefore, be expected to trend over time, in a punctuated manner driven by drought events and temperature spikes (of varying durations).
+
+
+---
+*Chunk pages 155–155*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=323 (sys=94, user=229), max_out=1024, ctx=8192
+---
+
+# E GREEN CLIMATE FUND FUNDING PROPOSAL V.10.0 | PAGE 152
+
+Accordingly, project impacts on rice yields/water use over time may be hidden or distorted by simultaneous changes in climate parameters (temperature effects on rice yields, availability of water, etc.). Comparing the water use-scaled yields of climate-smart farmers against standard (non-climate-smart counterparts) at mid-term and final-term avoids this problem.
+
+Counterpart farmers will be selected so that, aside from not being climate-smart, they share all other relevant characteristics with climate-smart comparators (region, size of farm, income level, rain-fed/irrigated, rice variety, etc.).
+
+Water consumption can be monitored using relatively low-
+
+
+---
+*Chunk pages 156–156*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=684 (sys=94, user=590), max_out=1024, ctx=8192
+---
+
+# E  
+GREEN CLIMATE FUND FUNDING PROPOSAL V.10.0 | PAGE 153  
+
+## 406 For example, see Cruz K. et al (2022), ‘A low-cost wireless sensor for real-time monitoring of water level in lowland rice field under alternate wetting and drying irrigation’, Water, 14: https://mdpi-res.com/d_attachment/water/water-14-04128/article_deploy/water-14-04128.pdf?version=1671422565  
+cost wireless  
+sensors.  
+
+## Yield-scaled GHG emissions of  
+climate-smart rice  
+(kg CO2/kg harvest rice)  
+
+## Project M&E system (relating  
+to farmers’ volume of rice  
+production and GHG  
+emissions)  
+
+### 0  
+Irrigated: 20%  
+reduction of  
+yield-scaled  
+GHG emissions  
+relative to  
+standard (non-  
+climate-smart)  
+rice  
+
+### Rain-fed: 10%  
+reduction of  
+yield-scaled  
+GHG emissions  
+relative to  
+standard (non-  
+climate-smart)  
+rice  
+
+### Irrigated: 35%  
+reduction of yield-  
+scaled GHG  
+emissions relative  
+to standard (non-  
+climate-smart)  
+rice  
+
+### Rain-fed: 20%  
+reduction of yield-  
+scaled GHG  
+emissions relative  
+to standard (non-  
+climate-smart)  
+rice  
+
+Standard rice will be  
+selected so that, aside  
+from not being climate-  
+smart, it shares all  
+other relevant  
+characteristics with the  
+climate-smart rice  
+comparator (region,  
+farm-type, rice variety,  
+etc.).  
+
+## Output 2.1:  
+Service  
+providers  
+invest in and  
+offer climate-  
+smart  
+technologies  
+to rice  
+farmers  
+
+### Number of service providers that  
+are quality-assessed and  
+successfully registered to provide  
+climate-smart services to rice  
+farmers  
+
+### Project-maintained register of  
+quality-assessed service  
+providers  
+
+## 0 150 400  
+
+Under Sub-Activity  
+2.1.1.1, the project will  
+establish and maintain  
+a register of service  
+providers that receive  
+climate-smart training  
+and subsequently  
+meet the established  
+quality threshold.  
+
+## Area of project farmland that is  
+served by registered service  
+providers  
+
+### Farmer surveys  
+
+### Project’s service provider  
+registry  
+
+## 0 214,500 ha 375,400 ha  
+
+The farmland targeted  
+by the project extends  
+over a physical area of  
+~718,000 hectares. As  
+rice can be planted  
+more than once each  
+year in the same field,  
+the ‘effective farmland’  
+
+---
+
+
+---
+*Chunk pages 157–157*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=478 (sys=94, user=384), max_out=1024, ctx=8192
+---
+
+# E GREEN CLIMATE FUND FUNDING PROPOSAL V.10.0 | PAGE 154
+
+## The wet season planting area plus the dry season planting area – amounts to ~1.07 million ha.
+
+The project targets refer to 'effective farmland'.
+
+### Mid-term target is equivalent to 20% of the total effective farmland; the final target is equivalent to 35%.
+
+## Approval ratings of service providers by farmers show improving trend over time for:
+
+- Machine services
+- Insurance
+- Agro-met services
+
+## Farmer surveys
+
+### Project's service provider registry
+
+0 60% average approval rating  
+75% average approval rating  
+
+## Outcome 3: Government policies and funds are geared towards climate-smart rice
+
+### Revised (climate-proofed) policies, strategies, budget lines
+
+Official reports (e.g. ministerial statements, strategy documents, progress reports, etc.)
+
+- 1 national strategy and 2 sub-national strategies
+- 2 national strategies, policies or schemes; 
+- 5 sub-national strategies, plans or investments
+
+### National strategies, policies or plans include one or more of:
+
+- MoAC Climate Change Strategic Plan for the Agricultural Sector
+- Rice sector climate mainstreaming strategy
+- Ecosystem-based adaptation mainstreaming strategy
+
+### Sub-national strategies, plans or investments include one or more of:
+
+- Provincial marketing strategies, provincial
+
+
+---
+*Chunk pages 158–158*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=631 (sys=94, user=537), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.10.0 | PAGE 155
+
+## Climate Finance Strategies, Provincial Support Schemes for Climate-Smart Rice, District Support Schemes for Climate-Smart Rice
+
+Survey respondents identify concrete improvements in the institutional and market environment for climate-smart agriculture.
+
+Survey (including analysis by project) of named business / income cases among national and international private sector actors, farmer representatives and public sector representatives.
+
+- 70% of respondents identify at least 1 improvement
+  - Cost reductions or
+  - Income improvements or
+  - Benefits to companies
+
+worth at least 5% of its annual turnover / income / expenditure in the Thai rice sector
+
+- 90% of respondents identify at least 3 improvements
+  - Cost reductions or
+  - Income improvements or
+  - Benefits to companies
+
+worth at least 5% of its annual turnover / income / expenditure in the Thai rice sector
+
+The 5% threshold relates to business / institutional activities in the Thai rice sector. Multinationals' commercial rice operations in other countries are, for example, excluded, as are the non-rice operations of Thai private sector actors.
+
+## Output 3.1: Strengthened institutional and market environment for climate-smart agriculture
+
+Number of rice farmers certified with sustainability standard
+
+Monitoring and evaluation database for Thai rice farmers' production practices, service providers and extension activities
+
+ACFS and other sustainability standards' statistics / publications
+
+- 8,000 farmers
+- 18,000 farmers
+  - Male: 11,000
+  - Female: 7,000
+- 33,000 farmers
+  - Male: 20,000
+  - Female: 13,000
+
+The baseline of 8,000 consists primarily of SRP-certified farmers. The majority of certifications facilitated by the project will be TAS.
+
+The project expects to facilitate 10,000 new certifications by mid-term and 25,000 by
+
+
+---
+*Chunk pages 159–159*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=508 (sys=94, user=414), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.10.0 | PAGE 156
+
+## Project Targets
+
+Additional to the baseline.
+
+## Thai Rice Facility
+
+The Thai Rice Facility meets regularly to serve as a forum for institutional coordination.
+
+### Meeting Minutes
+
+Minutes circulated by the official focal point designated by MoAC.
+
+- 01 meeting per year
+- 2 meetings per year
+
+To constitute an 'official meeting' in this context, there must be a minimum of 5 Facility member institutions in attendance, of which at least 2 must be private sector institutions.
+
+## Number of Demonstration Projects
+
+Undertaken to design and calibrate the T-VER Rice Scheme.
+
+### Assessment Reports
+
+Minutes of Thai Rice Facility.
+
+### TGO Registry
+
+013
+
+## Number of Policy Briefs / Knowledge Products
+
+Developed by the Thai Rice Facility.
+
+### Policy Briefs / Knowledge Products
+
+02 policy briefs / knowledge products  
+5 policy briefs / knowledge products  
+
+Policy briefs / knowledge products will include: (i) a stocktake and recommendations relating to Thai climate-smart agricultural finance instruments, and (ii) an assessment of international best practices and developments in climate-smart agricultural finance, and how they can be implemented in the Thai context.
+
+## Number of Beneficiaries
+
+Of regional knowledge-sharing events.
+
+### Event Reports, Attendance Sheets, etc.
+
+0150 beneficiaries  
+• Male: 90  
+300 beneficiaries  
+• Male: 180  
+• Female: 120  
+
+4 events will be implemented during the project duration (2 by the mid-term). Total
+
+---
+
+
+---
+*Chunk pages 160–160*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=511 (sys=94, user=417), max_out=1024, ctx=8192
+---
+
+# E.5 Project co-benefit indicators
+
+## Co-Benefit Project-specific Indicator
+
+### Means of Verification (MoV)
+
+| Co-benefit 1: Climate-smart female farmers are empowered to make decisions relevant to their well-being | Empowerment score |
+|--------------------------------------------------------------------------------------------------------|-------------------|
+| Scorecard completed by women farmers attending project-supported training and extension services     |                   |
+
+### Baseline
+
+Baseline to be established through project baseline survey
+
+### Mid-Term
+
+10% increase in average empowerment score
+
+### Final
+
+40% increase in average empowerment score
+
+> This indicator is adapted from Performance Indicator (PI) 12 of the Sustainable Rice Platform (SRP), which addresses empowerment across 10 domains:
+- Women’s control over decisions relating to household agricultural production
+- Women’s control over decisions relating to their own labour input
+- Women’s satisfaction regarding their labour input
+- Women’s access to information and capacity building
+- Women’s access to seasonal resources for farm activities
+- Women’s control over long-term resources for farm activities
+- Women’s control over decisions relating to household income
+- Women’s control over their
+
+---
+
+*Page 157*
+
+
+---
+*Chunk pages 161–161*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=516 (sys=94, user=422), max_out=1024, ctx=8192
+---
+
+# E GREEN CLIMATE FUND FUNDING PROPOSAL V.10.0 | PAGE 158
+
+## 407 SRP (2021), Sustainable Rice Platform Performance Indicators for Sustainable Rice Cultivation, Version 2.1: https://sustainablerice.org/wp-content/uploads/2022/12/203-SRP-Performance-Indicators-Version-2.1.pdf.
+
+## 408 WOCAN (Women Organising for Change in Agriculture and NRM): https://www.wplus.org/.
+
+The scorecard consists of multiple-choice questions relating to practices and outcomes that span the domains. Each question is scored, resulting in a total empowerment score.
+
+Because of the novelty of climate-smart rice farming in Thailand, knowledge and skills acquisition are of central importance to initiating and sustaining the climate-smart rice sector – and women’s roles in it. Accordingly, this aspect of the SRP PI 12 indicator will be expanded and strengthened to construct the Thai Rice Project’s empowerment score indicator, building on the W+ Standard developed by WOCAN.
+
+The W+ Standard uses a number of metrics to measure women’s knowledge acquisition, including: increased knowledge and skills gained from extension services, numeracy, business management, use of new technologies, and use of digital tools. Questions that address these metrics will be included in the scorecard.
+
+At least 30% of women who receive project support in the first half of the project duration (for mid-term reporting) and at least 30% of women who receive project support in the second half of the project duration (for final reporting) will be asked to
+
+[Page 1]
+
+
+---
+*Chunk pages 162–162*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=595 (sys=94, user=501), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.10.0 | PAGE 159
+
+## Co-benefit 2: Reduced water pollution from fertilizers, pesticides and other agricultural chemicals
+
+### Reduction in tonnes of agro-chemicals applied to rice paddies (chemical fertilizers, pesticides, herbicides)
+
+#### Farm books (as used in the project’s M&E system)
+
+#### On-site farmer interviews
+
+#### Chemical sampling of paddy water
+
+#### Location-specific baselines to be established at project inception
+
+### 10% reduction relative to baseline  
+### 20% reduction relative to baseline  
+
+The project will achieve reduced agro-chemical water pollution primarily through its support to SSNM and IPM. Individual farmers will apply different suites of climate-smart technologies, including varying levels of SSNM and IPM. The project targets are derived from the same assumptions about Focus Interventions and Supportive Interventions that underlie the project GHG modelling.
+
+Because baselines are location-specific (varying by region, by district, by irrigation network and even by clusters of rice fields), the project impacts are best expressed as % reductions.
+
+### The indicator relates to agro-chemical inputs, rather than to water quality, because the active ingredients in agro-chemicals often exist in low concentrations, making accurate detection and measurement difficult and expensive. Moreover, different active ingredients have different effects (toxicity, hypertrophy, deoxygenation, etc.) over different timescales and on different ecosystem components, making a holistic assessment of 'water quality' somewhat problematic. Water samples may also be superimposed by other polluters not associated with agricultural activities.
+
+### An indicator monitoring the change of agrochemical inputs further enables the project to estimate impacts on groundwater contamination, which would otherwise be very difficult to assess through surface water samples.
+
+
+---
+*Chunk pages 163–163*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=696 (sys=94, user=602), max_out=1024, ctx=8192
+---
+
+# Co-benefit 3: Reduced smoke air pollution from rice straw and stubble burning
+
+## Indicator
+
+Number of farmers applying climate-smart straw and stubble management practices (e.g. removal of straw, incorporation of straw into the soil)
+
+## Data Sources
+
+- Farm books (as used in the project’s M&E system)
+- On-site farmer interviews
+- Government records (potentially including data supplied by GISTDA)
+
+## Baseline
+
+Baseline to be established at project inception
+
+## Project Targets
+
+Project-supported farmers apply climate-smart straw management practices on:
+
+- 30% / 20% of their farming areas (mega-farm / non-mega-farm)
+- 80% / 60% of their farming areas (mega-farm / non-mega-farm)
+
+## Indicator Adoption
+
+The indicator adopted is an indirect indicator that monitors farmer behaviour.
+
+## Reason for Indirect Indicator
+
+Use of a direct indicator (atmospheric PM2.5 particulate concentration) is not possible in this context because:
+
+- Atmospheric concentrations are strongly influenced by factors outside of the project’s control (other industries and sectors, including transport; sugarcane and maize farming practices; forest clearing through burning; and weather patterns)
+- A considerable fraction of smoke in Thailand, particularly in the Central Plains and the North / North-East, may originate from neighbouring countries
+
+## Project Achievement
+
+The project will achieve reduced smoke/haze pollution primarily through its support to SSM. Individual farmers will apply different suites of climate-smart technologies, including varying aspects of SSM suitable to local conditions.
+
+The project targets are derived from the same assumptions that underlie the project GHG modelling relating to Focus Interventions and Supportive Interventions.
+
+
+---
+*Chunk pages 164–164*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=439 (sys=94, user=345), max_out=1024, ctx=8192
+---
+
+# E.6. Project activities and deliverables
+
+## Activities Description
+
+### Sub-Activities Deliverables
+
+#### Output 1.1: Technical capacity and access to finance developed for rice farmers for climate-smart technologies and practices
+
+##### Activity 1.1.1: Building capacity of smallholder farmers and extension services on climate-smart rice farming
+
+Activity 1.1.1 promotes the utilisation of climate-smart technologies and practices in Thai rice production. Farmers are trained in low-emission and climate-resilient farming technologies and practices by government extension services (including community rice centres), technical experts, local farmer organisations and private sector actors – and, in combination with financial, market development and other support – adopt climate-smart farming practices as a result.
+
+The capacity of the existing agricultural extension network in Thailand is enhanced to address climate-smart rice farming.
+
+##### Sub-Activity 1.1.1.1: Training for farmers on climate-smart technologies, practices and management
+
+- First trainings conducted based on existing training materials.
+- Quarterly extension targets achieved as laid out in Annual extension strategy implementation plans (year 2-year 5, quarterly).
+- Digital training toolkit on atingi learning platform, or comparable digital platform, accessible for external users.
+
+
+---
+*Chunk pages 165–165*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=496 (sys=94, user=402), max_out=1024, ctx=8192
+---
+
+# Sub-Activity 1.1.1.2: Public sector capacity building, with a focus on extension services and networks
+
+- Extension strategy and sub-national framework developed.
+- 4 annual extension strategy implementation plans are agreed (year 2 – year 5).
+- Training kit 1 (covering the suites of key technologies and basic ESS, including data protection) is available to external users.
+- Training kit 2 (covering supporting technologies and cross-cutting issues) is available to external users.
+- Training kit 3 (covering farm economics and basic financial management) is available to external users.
+- Training and extension monitoring system set up.
+- Training logistics reimbursement system set up.
+
+# Sub-Activity 1.1.1.3: Development, verification and transfer of new technologies for climate-smart rice farming
+
+- Detailed roadmap for app development is agreed.
+- Data-sharing / data protection for app modalities developed.
+- App is developed and functional to be used in trainings with farmers.
+- Dry Direct Seeded Rice (DSR) is studied and tested according to study design by IRRI.
+- Detailed climate impact, financial analysis and ESG assessment for DSR are prepared.
+- App functionalities include climate information, match-making and individual tracking of progress towards CSA.
+- Assessment report on drone technology for use in climate-smart agriculture is published.
+- 1 additional high-potential climate-smart technology is studied and tested according to study design by IRRI.
+
+
+---
+*Chunk pages 166–166*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=586 (sys=94, user=492), max_out=1024, ctx=8192
+---
+
+# Activity 1.1.2: Enhancing farmers’ access to finance for climate-smart farming services and technologies
+
+Activity 1.1.2 develops capacity among farmers to fully assess the financial implications of climate-smart agriculture. This is achieved through context-specific training measures and incentive payments specific to the application of climate-smart technologies and practices.
+
+## Sub-Activity 1.1.2.1: Financial literacy for farmers
+
+- Training material for farm economics and finance available for trainers.
+- Advanced financial training materials, focused on investment calculation and planning, available for trainers.
+
+## Sub-Activity 1.1.2.2: Incentive payments to support uptake of climate-smart services and technologies
+
+- Scheme for farmer incentive payments operationalised.
+- Years 2-3 (Q2/Q4): 2 types of incentive payment package paid out (Q2/Q4) (including LLL and excluding LLL) according to biannual targets.
+- Incentive payments disbursed to farmers.
+
+# Output 2.1: Provision of technologies and practices for climate-smart rice agriculture
+
+## Activity 2.1.1: Building capacity of service providers for the supply of climate-smart technologies and practices in rice farming
+
+Activity 2.1.1 expands the pool of potential service providers and provides them with technical assistance and advisory support services. In order to ensure a high quality of service provision, a quality approval process (differentiated by climate-smart technology and practice) is developed and operationalised. Match-making approaches
+
+### Sub-Activity 2.1.1.1: Promotion of quality assurance and match-making for climate-smart agricultural services
+
+- Quality approval process and register for climate-smart service providers set up.
+- Training on quality criteria and financial management provided to all registered service providers.
+- Match-making app roll-out starts.
+
+
+---
+*Chunk pages 167–167*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=767 (sys=94, user=673), max_out=1024, ctx=8192
+---
+
+# E GREEN CLIMATE FUND FUNDING PROPOSAL V.10.0 | PAGE 164
+
+for farmers and service providers are developed. Additional service provision for farmers, in the form of agro-met advisory services and crop insurance, are supported.
+
+## Sub-Activity 2.1.1.2: Strengthening agro-met service provision
+• TMD products and data integrated into training materials.  
+• Content (agro-met advisories) produced for the app developed under Sub-Activity 1.1.1.3.
+
+## Sub-Activity 2.1.1.3: Improving insurance services offered to rice farmers
+• Data-sharing / data protection modalities for Sub-Activity 2.1.1.3 developed.  
+• Training materials on crop insurance and climate change risk management developed and integrated.  
+• Dialogue established.  
+• Prototype of index-based insurance product is developed.  
+• Roadmap for transitioning or testing the current indemnity-based TRIS model to an index-based model agreed.
+
+## Activity 2.1.2: BAAC climate-smart and farmer-friendly financial product development and roll-out
+
+Activity 2.1.2 introduces the BAAC Climate-Smart Loan (CSL) scheme, which is specifically tailored to the cashflow profile of climate-smart investments of farmers and service providers. To improve the uptake of the CSL, the capacity of BAAC staff and credit officers is developed through training and knowledge tools on climate-smart agricultural technologies and their impact on cash flow patterns.
+
+## Sub-Activity 2.1.2.1: Climate-smart agricultural lending by BAAC
+• Detailed design elements of BAAC credit line are specified.  
+• BAAC credit line is set up.  
+• Disbursements and repayments are monitored and reported end of year 3-5 respectively.
+
+## Sub-Activity 2.1.2.2: Climate-smart lending capacity development for BAAC
+• Training for BAAC corporate and provincial staff starts based on existing training material.  
+• Training content for BAAC corporate and provincial staff developed and incorporated into project-supported trainings, as well as for regular use by BAAC.
+
+## Output 3.1: Strengthened institutional and market environment for climate-smart agriculture
+
+## Activity 3.1.1: Strengthening market linkages and standards for
+
+Activity 3.1.1 supports government bodies and rice value chain actors to strengthen the institutional and market environment for climate-smart agriculture. A national standard
+
+### Sub-Activity 3.1.1.1: Development of the sustainable rice and biomass residues markets
+• TAS training materials are developed.  
+• TAS auditing system design is developed.  
+• Training curriculum and programme for auditors developed and implemented.
+
+
+---
+*Chunk pages 168–168*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=664 (sys=94, user=570), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.10.0 | PAGE 165
+
+## Sustainable Rice and Biomass Residues
+
+The residue by-products of rice production are marketed, which offers additional income streams to farmers and complies with public health measures. Market linkages are strengthened through targeting domestic, regional and global supply chains, and supporting marketing and communication toolkits for use by retailers / brands that procure / offer TAS-verified rice (or equivalent), off-taker / buyer support, and the development of a market development strategy for TAS-verified (or equivalent) rice.
+
+## Awareness-raising and Training
+
+Awareness-raising and training on the TAS product labelling system is designed and implemented (primarily targeting domestic retailers).
+
+## Synthesis Report
+
+A synthesis report on the climate and sustainability impacts, with recommendations for design improvements, is produced.
+
+## Technical and Economic Feasibility
+
+Technical and economic feasibility of uses of rice residues is conducted.
+
+## Pilot Testing
+
+Pilot the most promising use(s), including links to service provider match-making and/or business models.
+
+## Sub-Activity 3.1.1.2: Linkages to Private Sector Partners, Value Chains and Public-private partnerships
+
+- PPPs operational.
+- 2 additional private partners contribute resources to the project (by Q1 of year 3 and 4)
+- Marketing and communication toolkits for use by retailers / brands that procure / offer TAS-verified rice (or equivalent) are developed.
+- Market development strategy for Thai sustainable rice developed.
+
+## Activity 3.1.2: Strengthening the Enabling Institutional and Policy Environment for Climate-smart Rice Farming
+
+Activity 3.1.2 assists government bodies in shifting agricultural policies and programmes onto a climate-smart trajectory and with the implementation of key national plans relating to climate-smart agriculture. The MRV system in the rice sector is expanded and upgraded to support NDC implementation. The establishment and operationalisation of a carbon market for rice farmers is supported.
+
+### Sub-Activity 3.1.2.1: Policy Support for Climate-smart Agriculture
+
+- Technical input provided to MoAC relating to the Climate Change Strategic Plan for the Agricultural Sector.
+- Policy dialogue launched.
+- 5 sub-national government dedicated climate initiatives or climate-proofing exercises supported with technical advice.
+
+
+---
+*Chunk pages 169–169*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=523 (sys=94, user=429), max_out=1024, ctx=8192
+---
+
+# Sub-Activity 3.1.2.2: Support to NDC implementation and MRV in the rice sector
+
+- Design study and concept for M&E system developed, taking into account 21 provinces, multiple purposes and use of data (MRV, assurance / verification for standards and carbon credits, damage assessment), and use of digital / secondary data (drones, remote sensing, etc.).
+- Competencies of the 5 primary Rice Research Centres for data aggregation and analysis strengthened through documented training.
+- Technical competences and routines of the MRV Committee strengthened through targeted support.
+- Mid-term review of the MRV Committee’s structures and guidelines conducted to ensure compatibility with (evolving) international standards.
+- MRV set-up (project M&E system and interface with sectoral MRV) handed over to government
+
+# Sub-Activity 3.1.2.3: Carbon market linkages
+
+- Initial design report prepared for a carbon market mechanism for rice (provisionally called T-VER Rice).
+- Full design study of T-VER Rice scheme approved by TGO (detailed design, roles and responsibilities, and rules and modalities of the T-VER Rice Scheme).
+- Concept for farmer registration with the T-VER Rice Scheme, as an automatic outcome of becoming TAS-certified, developed and agreed with ACFS and TGO.
+- Training on the T-VER Rice Scheme developed.
+- Training of 50 Thai verifiers for the T-VER Rice Scheme.
+- Outreach and engagement with potential carbon credit buyers.
+- Mechanism operational.
+
+
+---
+*Chunk pages 170–170*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=621 (sys=94, user=527), max_out=1024, ctx=8192
+---
+
+# Activity 3.1.3: Thai Rice Facility and ThaiCI implementation
+
+Activity 3.1.3 enables the creation and operationalisation of the Thai Rice Facility as a lean coordination and peer-learning structure. EFD’s capacities, and exposure to GCF project implementation, are enhanced to support its efforts to become accredited to the GCF. GCF funds are deployed as grants by ONEP to innovative ThaiCI climate-smart projects.
+
+## Sub-Activity 3.1.3.1: Design and operationalisation of the Thai Rice Facility
+
+- Working group under PMU established and meeting routines agreed.
+- ESS screening procedures and instruments for project financial mechanism specified.
+- Policy briefs / knowledge products on (i) stocktake and recommendations on Thai climate-smart agriculture finance instruments and (ii) international best practices and developments in climate-smart agricultural finance developed.
+- Climate finance strategy for the rice sector developed.
+- Public-private sector forum on Thai rice organised.
+
+## Sub-Activity 3.1.3.2: EFD strengthening and ThaiCI implementation
+
+- ThaiCI publishes call for proposals for smart-rice projects.
+- Approximately 10-30 climate-smart rice projects are supported via grants (with an emphasis on supporting marginalised stakeholders who are under-served by existing technical and financial support instruments).
+- It is assumed that half of the funds channeled through ThaiCI will be allocated to adaptation and mitigation outcomes, respectively.
+- As an estimation, 4,625 individuals of the 253,400 beneficiaries reached through the project and 185,000 tons of GHG are expected to be contributed towards the total impacts through the ThaiCI subgrants.
+- This is based on an assumed cost per beneficiary of 200 EUR, and an assumed cost per tCO2eq mitigated of 5 EUR. Assumptions are conservative estimates based on the overall project efficiency indicators tables contained in this Funding Proposal.
+- On-the-job-training and EFD institutional strengthening on GCF requirements.  
+[Page 1]  
+E  
+GREEN CLIMATE FUND FUNDING PROPOSAL V.10.0 | PAGE 167
+
+
+---
+*Chunk pages 171–171*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=781 (sys=94, user=687), max_out=1024, ctx=8192
+---
+
+# E. GREEN CLIMATE FUND FUNDING PROPOSAL V.10.0 | PAGE 168
+
+## Activity 3.1.4: Regional exchange and peer-to-peer learning
+
+Activity 3.1.4 ensures that experiences and knowledge generated by the Thai Rice Project are disseminated and exchanged in the region. This will be ensured through interaction with ASEAN, FAO, CRRL / SRLI and other relevant bodies and programmes, by means of a study tour for government officials, organisation of a dedicated regional conference, participation at international conferences, publications, etc.
+
+### Sub-Activity 3.1.4.1: Regional exchange and peer-to-peer learning
+
+- Technical exchange organised via IRRI network, ASEAN and contributions to expert networks (SRLI and others).
+- MRV technical exchange organised via ASEAN and FAO.
+- World Rice Conference side-event organised and implemented.
+- At least 4 regional knowledge-sharing events implemented during project duration.
+- Study visit by ASEAN experts and officials organised and implemented.
+
+## E.7. Monitoring, reporting and evaluation arrangements
+
+### E.7.1 Monitoring, reporting and evaluation arrangements
+
+416. Monitoring, reporting and evaluation arrangements (in addition to the ESMP and GAP) will comply with the relevant GCF policies, as stipulated in the AMA, FAA and programme-related Financing Agreements with Executing Entities and Implementation Partners, which Executing Entities will extend to sub-grantees.
+
+417. The Thai Rice Project will apply a customised results-based Monitoring and Evaluation (M&E) system. The M&E system will track project inputs, activities, sub-activities and impact, as well as associated financial flows, across all outputs in all project provinces.
+
+418. The system will be based on:
+- GIZ Standard Operating Procedures (‘GIZ’s evaluation policy – principles, guidelines and requirements’).
+- Monitoring and evaluation plan (Annex 11a)
+- The project logical framework.
+- The project implementation schedule.
+- Requirements of the GCF’s Annual Performance Report.
+- Procedures and requirements of project partners and stakeholders.
+
+419. The oversight for M&E lies with GIZ as the Accredited Entity and, specifically, the GIZ GCF Oversight Unit. The Project Management Unit (PMU) will implement the M&E system and will work closely with the Executing Entities as well as government, private sector and development partners.
+
+## Recruitment of M&E Staff
+
+420. Immediately when the Thai Rice Project commences, GIZ’s GCF Oversight Unit at head office in Germany will make available one expert to oversee and coordinate the project M&E and reporting routines. As soon as GCF proceeds become available, the project will recruit one full-time M&E specialist. The specialist will work closely together with the Oversight Unit, manage the M&E system and provide on-the-job training for dedicated M&E experts from the PMU, the Executing Entities and other stakeholders of the system where necessary and requested.
+
+
+---
+*Chunk pages 172–172*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=859 (sys=94, user=765), max_out=1024, ctx=8192
+---
+
+# Independent Monitoring and Evaluation Studies
+
+## 421. GIZ’s GCF Oversight Unit will initiate a mid-term evaluation and a final evaluation of the project.
+
+GIZ evaluations are carried out by GIZ’s independent evaluation unit. This unit is steered by a corporate unit that is separate from operational business and reports directly to the Management Board. Moreover, evaluations are conducted with the support of external evaluators.
+
+## 422. GIZ applies the ‘Evaluation criteria for German bilateral development cooperation’ (2006, revised 2020) on a standard basis in project evaluations.
+
+These are based on the 6 evaluation criteria agreed by the Development Assistance Committee (DAC) of the OECD: relevance, effectiveness, efficiency, overarching development results (impact), coherence and sustainability. In addition to the 6 OECD DAC evaluation criteria, the following 7 GCF criteria will also be evaluated: relevance, effectiveness, efficiency, impact and sustainability; coherence in climate finance delivery; gender equity; country ownership; innovativeness in result areas; replication and scalability; and unexpected results.
+
+## 423. Regarding the GCF’s Evaluation Principle for ‘Impartial, objective and unbiased and relevance, use and participation’: 
+
+all provisions for upholding the GCF evaluation principles described in Chapter V (a-d) of the Evaluation Policy are followed (see DAC standards and DeGEval evaluation standards). In line with the UNEG norms, evaluation team members selected by GIZ must not be directly responsible for the policy setting, design or management of an evaluation project.
+
+## 424. Regarding the GCF’s Evaluation Principle for ‘Credibility and Robustness’: 
+
+as a matter of principle, GIZ takes care to use an appropriate combination of quantitative and qualitative methods of empirical social research in evaluations. The mix of methods is adapted to the object of the evaluation and the evaluation questions. To ensure robust evidence, GIZ uses a theory-based approach as a minimum standard for its central project evaluations. The contribution analysis has proven to be a suitable design. The aim of contribution analyses is to collect empirical evidence on whether and to what extent contributions to observed changes can be associated with a project. Furthermore, the analyses should increase the understanding and knowledge of what works, what does not work and why.
+
+## 425. Projects will be rated based on the 6 OECD/DAC and the 7 GCF evaluation criteria.
+
+Each of the OECD/DAC and GCF criteria is rated on a scale of 1 to 100. Using a points system serves to increase the transparency of ratings, whilst enabling better comparability between individual projects.
+
+## 426. An Interim Independent Evaluation Report and a Final Independent Evaluation Report will be submitted to the GCF as per timeline agreed in the FAA.
+
+## 427. Results from the mid-term evaluation should be reflected within the project design, to influence upscaling, and improve overall project implementation (adaptive management).
+
+# Data Collection and Frequency
+
+## 428. The PMU will coordinate data collection for implemented activities through the responsible Executing Entities, their relevant executing departments / divisions at different levels, and any other relevant stakeholders.
+
+The PMU will supervise and guide the monitoring, reporting and evaluation and make all detailed reports as well as summary reports available to GIZ’s Oversight Unit at head office level at least every 6 months.
+
+
+---
+*Chunk pages 173–173*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1214 (sys=94, user=1120), max_out=1024, ctx=8192
+---
+
+# E.7.2 Monitoring, reporting and verification (MRV) of climate mitigation impacts
+
+429. In addition to the project M&E system described above, the Thai Rice Project will utilise the MRV system that was developed at project level to monitor the mitigation progress of the NSP by the Ministry of Agriculture and Cooperatives (MoAC) and the Ministry of Natural Resources and Environment ( MoNRE) in conjunction with 2 other foundation projects (TGCP -Agriculture and MSVC).409 The main actors in the data collection chain include RD (MoAC ), the Office of Agricultural Economics (OAE, under MoAC) and ONEP (under MoNRE), the latter of which runs the Thailand Greenhouse Gas Emissions Inventory System (TGEIS) for UNFCCC reporting purposes. Currently, a national-level MRV system for the rice sector is still under development (e.g., NDCs for the rice sector have not been defined). Thus, the project-level MRV system of the NSP can serve as a blueprint for a similar MRV system under the Thai Rice Project, and mitigation as well as adaptation data would feed into a national-level MRV system once this was established for the rice sector. In consequence, the MRV system of the Thai Rice Project will be developed as a subcomponent of the M&E system of the project, whereby it would constitute a database separate from the regular monitoring tasks of the project . Since the Thai Rice Project intends to support (i) ACFS to significantly scale-up the TAS national sustainability standard and (ii) TGO to develop and implement the T-VER Rice Scheme, ACFS and TGO are also likely to become major sources for activity data of rice farmers in the country. ACFS has already discussed data-sharing modalities with RD. A potential future data sharing mode could then be established to feed into a national-level MRV system for the rice sector spanning all rice-growing provinces in the country . Additional actors, especially those providing and processing satellite data and digital solutions, will likely act as drivers of digitisation and triangulation of statistical and activity data with satellite- and digitally derived data.
+
+430. Farm activity data is collected by RD using 'farmer books' maintained by farmers. Farmer books provide personal information and basic information about farmers’ crops (essentially, the size of their plantation areas) and their agricultural practices. The Thai Rice Project will utilise this data-collection platform and develop it further (under RD), mindful of data protection regulations and in adherence with the principle of data minimisation. The scope for use of a digital (app-based) farmer book will be explored, building on the existing DoAE Farmbook app.410 Ease-of-use of data collection (whether by hard copy or app) will be a key design principle, as neither the user-base (rice farmers, many of whom are elderly) nor the downstream data collection actors can afford a time-consuming, complex data-entry procedure.
+
+# E.7.3 Monitoring, reporting and verification (MRV) of climate adaptation impacts
+
+432. Monitoring of adaptation impacts requires a robust enumeration of the number of farmers (disaggregated in various ways – e.g. smallholder vs mega-farm, male and female, irrigated vs non-irrigated) who receive measurable adaptation benefits as a result of Thai Rice Project technical or financial support. Enumeration of direct beneficiaries (the farmers) will be undertaken in conjunction with the national rice sector MRV system (see above), as well as with relevant stakeholders – such as BAAC (in the context of CSL recipients) and ONEP (in the context of ThaiCI grant recipients). Indirect beneficiaries (the farmers’ household members) will be enumerated using the farmer books in conjunction with surveys and official data sources (census, DoAE databases, etc.).
+
+
+---
+*Chunk pages 174–174*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=192 (sys=94, user=98), max_out=1024, ctx=8192
+---
+
+# E GREEN CLIMATE FUND FUNDING PROPOSAL V.10.0 | PAGE 171
+
+Monitoring of the adaptation impact will be supported through assessing the effectiveness of the response comparing climate-smart plots and comparator standard plots for key indicators as well as observing climate risk factors over time.
+
+
+---
+*Chunk pages 175–175*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=953 (sys=94, user=859), max_out=1024, ctx=8192
+---
+
+# F.1. Risk factors and mitigation measures
+
+A detailed analysis of Thai Rice Project implementation risks is provided in the Feasibility Study (Annex 2a).  
+Environmental and social risks are considered in the Environmental and Social Impact Assessment, the Environmental and Social Management Plan and the Environmental and Social Management Framework (ESIA-ESMP-ESMF, Annex 6a). Gender-specific risks are considered in the Gender Assessment ( Annex 8a) and the Gender Action Plan ( Annex 8b).
+
+From a safeguard perspective, the Thai Rice Project risk is rated as Medium (Category B).
+
+## Selected Risk Factor 1
+
+| Category | Probability | Impact |
+|----------|-------------|--------|
+| Governance | Low | Medium |
+
+### Description
+The Thai Rice Project is constructed on the assumption that the Government of Thailand is fully committed to supporting climate-smart rice farming and will sustain its engagement accordingly. Furthermore, challenges associated with COVID-19 and the slowing global economy may weaken the Government's support.
+
+### Mitigation Measure(s)
+The Thai Rice Project addresses a sector – rice farming – that is culturally, economically and politically important. The drought of 2019-2021, which badly affected rice production in Thailand, means that political awareness of the impacts of climate change, and a willingness to address them, are higher than ever before. Indeed, the government is currently in the process of drafting a Climate Change Act that includes, inter alia, a National Climate Change Master Plan, mitigation and adaptation objectives, and a statutory role for the National Climate Change Committee. The 13th NESDP (2023-2028) is built around 5 strategic pillars, one of which is 'environmental conservation to deal with climate change'. The NESDP reaffirms the government's commitment to the NDC and identifies climate change risks – notably, drought and floods – as threats to national efforts to achieve poverty reduction and the SDGs.
+
+Thailand's 2nd Updated NDC (2022) identifies climate-smart agriculture – including methane management from rice farming and site-specific nutrient management – as a national priority. The LT-LEDS was also updated in 2022 with the specific purpose of strengthening the role of rice farming in Thailand's climate adaptation and mitigation strategies. Identified agricultural priorities in the updated LT-LEDS are: manure management, agricultural waste management, improved rice cultivation and practices (including alternate wetting and drying, straw management, dry direct seeded rice and alternative rice varieties), improved water efficiency, promotion of organic fertilizers, increased renewable energy use, energy efficiency of water pumping and agricultural processing, climate insurance and early warning systems for planting management (e.g. crop calendars, water management strategies, etc.). The NAMA Support Project (NSP) is presented as a showcase initiative. The LD-LEDS also states that the Government of Thailand is seeking GCF support to scale-up climate-smart rice farming, a point that is reiterated in the Fourth BUR (2022).
+
+Government institutions have been closely involved in the origination, development and design of the Thai Rice Project from the earliest stages. The project builds on a set of foundation and baseline projects that have benefitted from past and ongoing government support, including from institutions – the Rice Department, BAAC and ONEP – that will serve as Executing Entities for the Thai Rice Project.
+
+## Selected Risk Factor 2
+
+| Category | Probability | Impact |
+|----------|-------------|--------|
+| Governance | Low | Medium |
+
+### Description
+The Thai Rice Project will be implemented by 5 Executing Entities. All Output, and the majority of Activities and Sub-Activities, are associated with more than one Executing Entity. There is a risk that this will result in lack of clarity over roles and responsibilities, leading to unnecessary duplication of work, delays in decision-making or opaque accountability.
+
+[Page 172]
+
+
+---
+*Chunk pages 176–176*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1108 (sys=94, user=1014), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.10.0 | PAGE 173
+
+## Mitigation Measure(s)
+
+The project management structure is not considered to be especially complex. Indeed, the involvement of 3 national executing entities – including the national institution responsible for rice sector policy, the national institution responsible for rice sector financing and the national institution responsible for environmental policy (including the UNFCCC and the GCF) – serves as a strong indicator of the high level of national support and ownership of the project, which, in turn, offers confidence that the project will be implemented fully and effectively. The involvement of the world’s leading source of technical expertise on rice farming – the International Rice Research Institute (IRRI) – is an indication of the robust best-practice underpinnings of the project.
+
+As indicated in Table 15, two-thirds of the project’s sub-activities (i.e. 12 out of 18) each have only one executing entity and no sub-activity has more than 2 executing entities. At the activity level, three-quarters (i.e. 6 out of 8) of activities have 2 or fewer executing entities.
+
+Where a sub-activity or activity is implemented by more than one executing entity, a lead executing entity (identified in bold font in Table 15; in the majority of cases, it is GIZ) will coordinate the interventions of the other executing entities. The project has been co-designed by all 5 executing entities, building on 2 years of intense collaboration: all the executing entities are very aware of their roles and responsibilities, and are very supportive of the supervisory, management and reporting structures that will be put in place to coordinate their interventions.
+
+## Selected Risk Factor 3
+
+### Category: Technical and operational  
+### Probability: Medium  
+### Impact: Medium  
+
+### Description
+
+Most rice farmers are poor and risk-averse, many (~20%) are in debt and many are old and reluctant to change their established practices. Ironically, recent climate shocks – notably, the 2019-2021 drought – have increased their vulnerability and potentially reduced their ability/willingness to respond to climate change. As a result, farmers may not proactively engage with the Thai Rice Project or undertake recommended actions.
+
+## Mitigation Measure(s)
+
+The recent drought has witnessed thousands of farmers taking spontaneous, uncoordinated action to adapt to climate change, with responses ranging from switching to rain-fed rice farming to diversifying away from rice altogether. The mobilisation to date of smallholder farmer interest in climate-smart agriculture achieved by the set of foundation and baseline projects that underlie the Thai Rice Project is further evidence of farmers’ willingness – and, in some cases, urgent need – to change. The Thai Rice Project will provide farmers with the knowledge and tools to do so, and deployment of the Thai Agricultural Standard (TAS) and other sustainability standards will provide a further (financial) incentive to do so. The project’s financial instruments – incentive payments, grants channelled through ThaiCI and the BAAC Climate-Smart Loan (CSL) scheme – are specifically designed to be low-cost and accessible to smallholder rice farmers.
+
+## Selected Risk Factor 4
+
+### Category: Technical and operational  
+### Probability: Low  
+### Impact: Medium  
+
+### Description
+
+Mid-season drainage (a form of mild-intermittent flooding that causes a single long aeration event) brings redox conditions to levels that limit methanogenesis but are still too low for large amounts of N2O formation. However, more intense intermittent flooding – as typically practised under AWD – includes multiple aeration events (i.e. drying and wetting of soils), leading to higher pulsed microbial activity, enhanced nitrification/denitrification and more redox cycles. Under the right conditions, these shifts can increase the potential for N2O emissions, potentially undermining the CH4 mitigation benefits of AWD.
+
+## Mitigation Measure(s)
+
+The largest single determinant of N2O emissions is the amount of nitrogenous fertilizer applied to the paddy field. The Thai Rice Project will work with farmers to introduce site-specific nutrient management (SSNM) practices (which is also a condition of farmers receiving TAS certification), thereby lowering N2O emissions.
+
+In any case, additional N2O production as a result of AWD is considered low risk. AWD is an intentionally managed process that allows water to drop down to 15cm below soil level, which roughly corresponds to a medium-intermittent
+
+
+---
+*Chunk pages 177–177*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1243 (sys=94, user=1149), max_out=1024, ctx=8192
+---
+
+# [Page 1]
+## GREEN CLIMATE FUND FUNDING PROPOSAL V.10.0 | PAGE 174
+
+### Flooding regime; this is distinct from the intense flooding regime required to produce N2O.411 Meta-analysis of published data clearly reveals that N2O emissions only slightly increase with AWD (in cases with no offsetting SSNM regime).412 This type of meta-analysis was also used for developing the IPCC 2006 Good Practice Guidelines.413
+
+The project will monitor N2O emissions: in the unlikely event that N2O emissions do increase as a result of AWD, these emissions will be accounted for (and will commensurately reduce the project’s overall GHG mitigation impact). Furthermore, the N2O EFs used in the project’s GHG modelling (see Annex 22b) explicitly differentiate between water management regimes, being lower for continuously-flooded rice and higher for single- and multiple-aeration scenarios. This ensures that increases in N2O emissions (if they materialise) when shifting to non-continuously flooded rice production are not only accounted for but that project mitigation impact estimates are calculated in a conservative manner. During project implementation, GHG measurements will be conducted on a number of reference sites to verify or update the EFs and improve the accuracy of the mitigation calculations. These measurements will include methane and nitrous oxide.
+
+### Selected Risk Factor 5
+#### Category: Probability Impact
+##### Technical and operational Medium Medium
+
+###### Description
+Water scarcity is a growing problem. Even rice farmers with access to irrigation systems, who can normally cultivate rice 2 times per year in the dry season and the wet season, were prohibited from planting rice in 3 successive dry seasons (2019, 2020 and 2021) and were only able to plant rice in the wet season. One of the Thai Rice Project’s principal means of achieving GHG emission reductions is through AWD. However, AWD is primarily suitable only for irrigated rice. Therefore, there is a risk that climate change, especially severe drought events, will undermine the mitigation effectiveness of the project.
+
+###### Mitigation Measure(s)
+The Thai Rice Project incorporates a strong adaptation element alongside the mitigation element, precisely to allow farmers to respond to the growing problem of water scarcity.
+
+The GHG emission reduction estimates presented in Section D.1.3 account for the fact that: (i) baseline agricultural practices are geographically diverse across regions, and (ii) for many farmers who are currently practising continuous flooding, open-burning and excessive use of nitrogen fertilizer, continuous flooding is likely to become less prevalent (more punctuated) in the future. With Thai Rice Project support, it is estimated that approximately 72% of project farmland (~80% of mega-farm farmland and ~60% of non-mega-farm farmland) will apply mitigation and adaptation measures.
+
+### Selected Risk Factor 6
+#### Category: Probability Impact
+##### Technical and operational Low Medium
+
+###### Description
+In rural areas, a major challenge is that women are more often than men engaged in unpaid and informal work, including day-to-day household management, which entails obtaining clean water for household use, finding or procuring energy sources for cooking and heating, and obtaining and preparing food. As a result, women are not as well represented in formal employment and they risk being excluded from training and access to finance. Women rice farmers in Thailand are known to be statistically under-counted, largely overlooked in the policy arena and consistently underserved by agricultural and rural support services.
+
+###### Mitigation Measure(s)
+These gender-related issues are fully acknowledged and will be acted upon. A Gender Assessment and a Gender Action Plan have been developed (see Annexes 8a and 8b), and a comprehensive set of actions has been incorporated into the Thai Rice Project design – such as training of farmers under Sub-Activity 1.1.1.1, training of agricultural extension officers under Sub-Activity 1.1.1.2 and training of BAAC loan officers under Sub-Activity 2.1.2.2 – to address gender-related barriers and imbalances, including among particularly vulnerable categories of women (such as skipped-generation households, women with disabilities and migrants).
+
+#### Footnotes
+411 Yan X. and Akiyama H. (2018), ‘Overestimation of N2O mitigation potential by water management in rice paddy fields’, Proceedings of the National Academy of Sciences, 115: https://www.pnas.org/doi/pdf/10.1073/pnas.1816208115?download=true.  
+412 Wassman R. et al (2018), ‘New records of very high nitrous oxide fluxes from rice cannot be generalised for water management and climate impacts’, Proceedings of the National Academy of Sciences
+
+
+---
+*Chunk pages 178–178*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=586 (sys=94, user=492), max_out=1024, ctx=8192
+---
+
+# Selected Risk Factor 7
+
+## Category: Probability Impact
+
+### Technical and operational  
+Low Medium  
+
+## Description
+
+Rice farming is a water-intense activity in an environment that is projected to experience increasing (frequency/magnitude of) water scarcity. By supporting rice farming, the Thai Rice Project runs the risk of encouraging maladaptation – i.e. sustaining an activity that would be better replaced by more climate-appropriate crops.
+
+## Mitigation Measure(s)
+
+Rice farming is deeply embedded within the cultural, social, economic and political fabric of Thailand. To expect rice farming to simply disappear and be replaced by different crops is unrealistic and undesirable, particularly given the current pressures on the global supply of food staples. Instead, the Thai Rice Project will offer farmers the ability to respond to climate change by modifying the ways they grow rice and by providing alternatives (alternative crops and income streams). Farmers can then navigate their own adaptation strategies as circumstances require, equipped with the appropriate training and methods.
+
+Moreover, climate models are clear that the total volume of precipitation in Thailand is unlikely to decrease (and it may even increase). The projected water scarcity will be created by increasing seasonality and increasing intensity of precipitation events – i.e. by rains being more concentrated in time and less evenly distributed across the year. Longer-term infrastructure solutions, such as more dams and more surface water storage, do, therefore, offer potential solutions to at least some of the projected water scarcity. These solutions are outside of the scope of the Thai Rice Project (see Table 14) and are a longer-term proposition, but they do suggest that the rice sector can and will continue to play a prominent role in Thailand.
+
+Given the projected 30% increase in global rice demand by 2050 and the limited scope available for other rice-producing countries to generate a rice surplus, Thailand is well positioned, if climate change challenges are addressed, to continue to play a critical role in ensuring global rice supply. This is critically important in the current context of rising global food prices and wheat shortages.
+
+[Page 1]  
+F  
+GREEN CLIMATE FUND FUNDING PROPOSAL V.10.0 | PAGE 175
+
+
+---
+*Chunk pages 179–179*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1120 (sys=94, user=1026), max_out=1024, ctx=8192
+---
+
+# G.1. Environmental and social risk assessment
+
+## 433. Environmental and social risks are considered in the Environmental and Social Impact Assessment , the Environmental and Social Management Plan, the Environmental and Social Management Framework  (ESIA-ESMP-ESMF, Annex 6a) and the Ethnic Groups Plan (Annex 6b).
+
+## 434. The ESIA-ESMP was developed according to the GCF’s Revised Environmental and Social Policy (dated September 2021). The information and data used to formulate ESIA were obtained from reviewing the draft project documents , the technical feasibility studies and consultations with the project preparation team;  
+background studies and data, including government documents,  academic papers and grey literature; and 
+extensive, re-iterative, consultations with relevant stakeholders across the public and private sectors and civil 
+society. Recommendations to mitigate or compensate potential environmental and social harms, and to 
+emphasise potential environmental and social benefits, are presented in the ESMP.  The ESMF contains 
+principles and measures to avoid or minimise potential environmental and social harms, and to emphasise 
+potential environmental and social benefits, associated with the financial instruments – the incentive payments 
+to farmers, the grants channelled by ONEP through ThaiCI and climate-smart loans to farmers and service 
+providers – that will be established or supported by the Thai Rice Project and whose beneficiaries and precise 
+uses cannot be known in advance.
+
+## 435. The project is categorised as Category B  (‘medium’) E&S risk. This rating is based on the consideration 
+that the project will implement activities that have “potential limited adverse environmental and/or social risks 
+and impacts that, individually or cumulatively”, are: 
+• Few in number: Of the 10 ESS categories, 7 are rated Low Risk (ESS 2, ESS 3, ESS 5, ESS 6, ESS 7, ESS 
+8, ESS 9) and 3 are rated Medium (ESS 1, ESS 4, ESS 10). Moreover,  SEAH risk is rated Low, emergency 
+preparedness and response risk is rated Low and Human rights risk is rated Low.  
+• Generally site-specific: ESS risks are confined to smallholder rice fields and their environs.  
+• Largely reversible: It is noteworthy in this regard that key project interventions - e.g. AWD (water), SSNM 
+(fertilizer) and IPM (pesticides) – relate to reduction or avoidance of the use of a particular resource, so 
+reversibility of harms is not generally a concern. 
+• Readily addressed through mitigation measures, which are described in detail, fully costed, linked to detailed 
+implementation arrangements and build on best national and international practice.
+
+## 436. The Thai Rice Project has the potential to cause moderate negative environmental and social impacts. These 
+potentially include impacts on water quality through contamination by chemicals and fertilizers, degraded soil 
+quality, competition among farmers for water and the implementation of climate-smart agricultural technologies 
+in the context of limited farmer knowledge  about these technologies. The project does not require  or involve 
+land acquisition and/or resettlement. None of the interventions will require the displacement of people, involve 
+economic displacement or will be conducted in protected areas or sensitive locations .
+
+## 437. The project offers substantial positive environmental and social impacts for the beneficiaries in North, North -
+East and Central Thailand, notably in the form of improved adaptation to climate change (droughts, heat waves 
+and others). The project offers positive global environmental impacts, notably in the form of reduced GHG 
+emissions from the Thai rice farming sector. Co-benefits include reduced water and air pollution.
+
+# G.1.1 Environmental and social impact assessment (ESIA)
+
+## 438. A summary of ESIA findings is provided in Table 25. Full details and analysis are provided in Annex 6a.
+
+### Table 25: Summary of Environmental and Social Impact Assessment
+
+| Environmental & Social Safeguards | Risk Level | Explanation / Basis for Risk Level Determination |
+|----------------------------------|------------|--------------------------------------------------|
+| ESS 1: Assessment and management of environmental | Medium | • The environmental and social management systems for rice cultivation are overseen and operated by a range of government institutions, including the Office of Natural Resources and Environmental Policy and Planning (ONEP), the Pollution Control Department (PCD) of the Ministry of Natural Resources and Environment (MoNRE), and the Department of Agricultural Extension (DoAE), the Rice Department (RD), the Land Development |
+
+[Page 179]
+
+
+---
+*Chunk pages 180–180*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1270 (sys=94, user=1176), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.10.0 | PAGE 177
+
+## Environmental and Social Risks and Impacts
+
+Department (LDD) and the Royal Irrigation Department (RID), all under the Ministry of Agriculture and Cooperatives (MoAC). Assessment, monitoring and reporting are undertaken by regional and local government agencies in close collaboration with provincial Rice Research Centres and agricultural extension offices. Financial assistance to rice farmers is provided by the Bank for Agriculture and Agricultural Cooperatives (BAAC), which operates an extensive branch network.
+
+### Water Management
+
+Water management is the most important environmental issue in rice cultivation, as rice requires substantial but varying amounts of water throughout the entire growing period. The water distribution system is most developed in the Central Region, where it is managed by water distribution committees that have established legal mandates and community representation.
+
+### Soil Management
+
+Soil management is an important aspect of rice agriculture. Soil organic matter (SOM) varies throughout the project area, from approximately 2-3% in the North to more than 4% in the Central Plains. LDD provides technical advisory support to rice farmers to manage soil quality (including soil acidity). LDD also operates a 'soil doctor' service to, among other things, advise on crop rotational techniques for soil management (e.g., in some areas, jute is promoted between the first and second rice growing seasons).
+
+### Air Pollution
+
+Air pollution from the burning of rice fields (as a land clearance technique) is a significant environmental harm associated with rice production. The Pollution Control Department and the Department of Agricultural Extension are actively working to prevent burning.
+
+## Social Risks
+
+Using new techniques such as laser land levelling (LLL) can replace conventional machines like tractors or hand ploughing machines and thus reduce workload during land preparation. LLL operation is usually undertaken by local service providers on demand. High demand for LLL services may induce lower demand for local labour and service providers.
+
+As detailed in the economic and financial analysis (Annex 3a), rice farming in all three project regions (Central Plains, North-East, North) currently produces only subsistence income (if at all) for farmers and their families. Rice farmers are among the poorest segments of Thai society. The adoption of climate-smart farming technologies and practices will produce a positive financial internal rate of return (IRR) – 14.2% in the Central Plains, 11.2% in the North-East and 13.6% in the North – thereby increasing farmers' incomes. Moreover, because of the adaptation benefits conferred by these technologies and practices, farmers' incomes will also be less volatile in the context of climate variations.
+
+Some (limited) erosion of cultural traditions, such as ceremonies marking events in the traditional farming calendar, may be experienced as farmers adopt new technologies and practices (see ESS 8). But these traditions are in long-term decline due to other technological and market developments that are unrelated to the project and would be put under even greater stress if rice farming were to become unviable due to climate change.
+
+The project poses some limited SEAH risks (see below) in the context of training and extension support and agricultural service provider activities.
+
+## Implementation of the Thai Rice Project
+
+The implementation of the Thai Rice Project will strengthen environmental and social management systems and will improve important facets of environmental and social governance (water usage, water quality, air pollution, GHG emissions, working conditions, etc.). Stakeholder capacities – farmers, extension services, government departments, etc. – will be strengthened. The project's ESS systems include policy, identification of risks and impacts, management plans, organisational capacity and competency, stakeholder engagement, grievance mechanisms and monitoring and review.
+
+Several impacts show positive benefits, such as reduced greenhouse gas emissions, reduced fertilizer leachate into the environment, reduced water consumption and improved air quality (less straw burning). Negative impacts may stem from indirect impacts, such as water quality and conflict. The project may also have cumulative impacts on biodiversity and agricultural standards improvement/adoption, which are likely to be beneficial.
+
+## ESS 2: Labour and Working Conditions
+
+### Low
+
+In the North and North-East regions, labour needs in rice farming are concentrated in the wet season (as most farms are rain-fed). This can generate labour shortages and competition for farm workers, and can lead to foreign workers (most of them from Myanmar and Cambodia) being employed.
+
+Workloads and work allocations among male and female farmers are typically mutually decided: although there is a strong gender-driven division of labour, this is generally not perceived as unfair or unfairly imposed. Men tend to work on labour-intensive jobs while women work on management-related jobs and supplementary livelihoods. Farm mechanisation is weakening this traditional division of labour.
+
+If an agricultural worker has employee status, he/she is covered by the terms of the Labour Protection Act (LPA, 1998). Agricultural workers who are employed year-round but are not covered by the LPA are, instead,
+
+
+---
+*Chunk pages 181–181*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1229 (sys=94, user=1135), max_out=1024, ctx=8192
+---
+
+# ESS 3: Resource efficiency and pollution prevention
+
+## Low
+
+- Contamination of water bodies – including in neighbouring farms and the local vicinity – by fertilizers and pesticides is possible. Although the amounts applied will be reduced by the project, chemical and fertilizer use will still be necessary. It is important that farmers understand what practices, procedures and products are appropriate and safe to use. The aim is that environmental contamination and health impacts can be avoided or minimised.
+- Burning of rice residues (straw and stubble) is widespread, but the negative health impacts to farmers and communities are not widely known. Monitoring, reporting and effective communication is necessary. Proper straw and stubble management will reduce air pollution problems. Project activities that promote straw baling will be very helpful in reducing pollutant emission from straw burning, as well as generating additional incomes to local farmer communities.
+- Water efficiency will be improved through AWD and farm-level water management, but there is a risk of deficient amounts of water received by farmers due to climate extremes, high demand of water and inefficiencies in water distribution. This will be addressed through active information and coordination with water management committees and usage organisations, and will take into consideration most vulnerable groups.
+- Significant reduction of CH4 emissions will be achieved through the application of LLL and AWD.
+- Emission reductions of N2O will be achieved through the reduced amount of fertilizer used. The current baseline is that the fertilization rate practised by farmers is, on average, about double the optimum fertilization rate implied by soil analysis. Project activities will also lower farmers’ costs of fertilizer and other associated items (such as labour costs) and reduce negative environmental impacts.
+- IPM will help reduce the contamination of chemicals in air, soil and water bodies.
+- Other measures, such as farm-level water management, rice variety diversification and dry direct seeding, will have positive impacts on resource use efficiency. Some of these measures will also lead to reduced greenhouse gas emissions.
+
+# ESS 4: Community health, safety and security
+
+## Medium
+
+- Most farmers do not manage the entirety of the rice cultivation process themselves. Instead, they employ service providers (who are often farmers themselves who are augmenting their incomes) to carry out selected stages of rice production, such as ploughing, planting, fertilizing, spraying chemicals and harvesting. Farmers and service providers generally lack training in (and even awareness of) basic health and safety measures.
+- Management and use of chemicals (fertilizers, pesticides, fungicides, etc.) is often casual. Farmers are either unaware of safety protocols or choose to ignore them – e.g. protective equipment usage, proper handling procedures, etc. This can lead to serious health risks for farmers and their families, particularly when dealing with highly toxic substances.
+- The use of hazardous chemicals in agriculture poses significant risks to both human health and the environment. Many farmers are not aware of the dangers associated with these substances or how to properly handle them. This lack of knowledge contributes to widespread exposure to harmful chemicals, which can result in acute and chronic health issues for workers and their families.
+- There is a need for improved training and awareness programs regarding chemical safety among agricultural workers. These programs should focus on educating farmers about the proper use of pesticides and other chemicals, including safe handling techniques and protective equipment usage. Additionally, regular monitoring and enforcement of regulations are essential to ensure compliance with safety standards.
+- The lack of adequate safety measures in agricultural operations can lead to accidents and injuries. Workers may be exposed to various hazards during farming activities, such as machinery accidents, chemical exposure, or falls from heights. These risks can be mitigated through proper training, equipment usage, and safety protocols.
+- In some cases, farmers may not have access to adequate healthcare services or medical facilities for treating occupational health issues. This lack of access can exacerbate the impact of chemical exposure on workers' health, particularly in rural areas where healthcare infrastructure is limited.
+- The implementation of effective safety measures requires collaboration between government agencies, agricultural organizations, and local communities. By working together, stakeholders can develop comprehensive strategies to address safety concerns and improve overall working conditions for agricultural workers.
+- There is a need for ongoing research and development of safer alternatives to existing chemicals used in agriculture. This includes exploring new technologies and methods that reduce the reliance on harmful substances while maintaining productivity levels. Such efforts can contribute to long-term sustainability and improved health outcomes for agricultural workers.
+- The potential for environmental contamination from chemical use in agriculture extends beyond immediate health risks. Pollutants may seep into groundwater or affect soil quality, leading to broader ecological impacts. Addressing these concerns requires careful monitoring and regulation of chemical usage in farming practices.
+- The presence of hazardous chemicals in agricultural environments can pose long-term risks to both human health and environmental integrity. These risks include chronic diseases, reproductive issues, and developmental disorders. Understanding the full scope of these impacts is crucial for developing effective prevention strategies.
+- Regular inspection and enforcement of safety regulations are necessary to ensure that farmers comply with established standards. This includes monitoring the use of chemicals
+
+
+---
+*Chunk pages 182–182*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1301 (sys=94, user=1207), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.10.0 | PAGE 179
+
+## ESS 5: Land acquisition and involuntary resettlement  
+Low  
+
+- The Thai Rice Project will be implemented on plots of land where rice cultivation is already practised – either by individual farmers or as officially-designated ‘mega-farms’. The project will not involve new land acquisition or resettlement.  
+
+## ESS 6: Biodiversity conservation and sustainable management of living natural resources  
+Low  
+
+- Ecosystem benefits of AWD reported in the academic literature include (non-exhaustive): improved soil structure, pest management, weed management, root and tiller development, phyto toxin removal and enhanced soil microbial activity.  
+- Surveys conducted in the Central Region by the NAMA Support Project (NSP) indicate that implementation of climate-smart agricultural technologies and practices, such as AWD and SSNM, did not significantly change the biodiversity of rice fields. However, information on the effects of other technologies planned by the Thai Rice Project (e.g. alternative rice varieties or direct-seeding) is not available in the Thai context. (However, the general academic literature does not raise any major concerns).  
+- Most rice residues are burned. However, some farmers leave them to decompose in situ, providing a form of soil enhancer and fertilizer. If such residues are diverted to market uses (bio-energy, pulp and paper production, etc.), this may represent a localised ecosystem loss of nutrients.  
+- Positive impacts on the protection of biodiversity can be expected from the reduction of agrochemical use.  
+
+## ESS 7: Indigenous peoples  
+Low  
+
+- The indigenous peoples of Thailand are commonly referred to as ‘hill tribes’ or ‘ ethnic groups’. They are located primarily in the upland areas of the North and West of the country: the Akha, Hmong, H’tin, Karen, Khmu, Lahu, Lisu, Lua, Mien and Mlabri. There are also smaller groups in the North, the so-called local Tai groups (Tai Lue, Tai Khuen and Tai Yong), the Kachin and the Shan. In total, ethnic groups account for approximately 5% of the population.  
+- Not all ethnic groups self-identify as indigenous peoples. A notable share of the population of two provinces in the North – Chiang Rai and Chiang Mai – are classified as members of ethnic groups by official data and self-identify as indigenous peoples (but they may not fall within the geographical boundaries of the project – see below). In the Central and North-East regions, members of ethnic groups are few in number, geographically dispersed and tend to be mainstreamed into Thai society, and hence do not generally self-identify as indigenous peoples. (Please refer to the Ethnic Groups Plan – Annex 6b – for details).  
+- The Government of Thailand does not use the term ‘indigenous peoples’ and affirms that these groups are Thai citizens, that they enjoy the same fundamental rights as all citizens and that they are protected by the laws of the Kingdom. However, the highland ethnic groups remain among the poorest communities in Thailand and many of them do not have proper documentation regarding their status. As a result, they generally do not vote, seek civil service jobs or travel to other parts of the country.  
+- The project will be implemented only in lowland rice-farming areas or in the inter-mountain ‘lowland’ valleys of the uplands.  
+
+## ESS 8: Cultural heritage  
+Low  
+
+- All cultural heritage sites in Thailand are controlled by the Fine Arts Department of the Ministry of Culture. No farming is allowed, by law, on cultural heritage sites.  
+- Many cultural ceremonies and traditions are practised in association with rice cultivation, especially in rural areas. Many of these traditions and ceremonies are conducted to request ample rainfall, good harvests and the good health of farmers. Rice farming forms an integral part of the culture and way of life of rural communities. It has been observed that such cultural ceremonies and traditions are gradually fading away, partly due to the penetration of new technologies that provide stability in the required production outputs. There are concerns that many of these cultures and traditions will eventually disappear completely with the uptake of new technology and with a new generation of farmers.  
+- Many ceremonies and traditions play valuable roles, such as communication of local wisdoms, and strengthening social relationships between villagers and between old and young generations.  
+- The project will not infringe on protected cultural heritage sites, nor develop natural resources on land subject to traditional ownership or tenure, which, inter alia, includes natural areas with cultural and/or spiritual value, such as sacred groves, sacred bodies of water and waterways, sacred mountains, sacred trees, sacred rocks, burial grounds and other cultural sites.
+
+
+---
+*Chunk pages 183–183*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1142 (sys=94, user=1048), max_out=1024, ctx=8192
+---
+
+# G.1.2 Environmental and social management plan (ESMP)
+
+439. The ESMP provides a suite of practical measures (see Table 26) to manage the potential unintended negative environmental and social impacts associated with the project’s activities, as well as to allow for meaningful and inclusive multi-stakeholder consultations and engagement throughout the life-cycle of the project. Further, the ESMP ensures that adequate processes are in place to appropriately monitor activities against GCF and GIZ ESS policies and standards. The institutional arrangements relating to ESS measures are detailed in Annex 6a, in particular Sections 3.3 (ESMP) and 7.8 (ESMF).
+
+## Stakeholder engagement and information disclosure
+
+Low
+
+- Promoted by MoAC, many rice farmers in Thailand are grouped into mega-farms and community enterprises. Information dissemination channels are well developed in such groupings, with information flowing from group leaders. Information distribution to smallholder farmers (i.e. non-group farmers) is typically achieved through village heads (Phu Yai Bann). Furthermore, government institutions, such as the Rice Department, rice research centres, the Department of Agricultural Extension (DoAE) and BAAC, work closely with farmers and have established information, training and financial disbursement mechanisms.
+- Elderly smallholders have limited access to the internet and social media, and generally rely on 'old media' (radio and TV) for up-to-date information.
+- Farmers tend to be risk-averse and conservative. They tend to be influenced far more by 'real' outcomes (e.g. demonstration sites and proven results) and word-of-mouth from peers rather than abstract ideas and messages.
+
+## Climate change resilience and adaptation
+
+Medium
+
+- The following future changes to the climate are projected: an increase in maximum and minimum temperatures, an increase in the frequency and severity of droughts and floods, an increase in heatwaves, and greater seasonality. All present challenges to current models of rice farming.
+- The poverty, indebtedness and low levels of education that prevail in the Thai rice farming sector mean that farmers are vulnerable to climate change-driven impacts on rice outputs.
+- Supporting the continuation of rice farming in the context of increasing climate pressures opens the possibility of maladaptation.
+- Rice is a staple source of calories and micro-nutrients (magnesium, phosphorus, manganese, selenium, iron, folic acid, thiamin, niacin, etc.) for more than half of the world's population: climate-driven threats to rice output therefore represent a global health and nutrition risk.
+
+## Sexual exploitation, abuse and harassment (SEAH)
+
+Low
+
+- For the Thai Rice Project, risks of sexual abuse, exploitation and harassment (SEAH) exist in the context of project-supported training and extension support, agricultural service provider activities (regarding both potentially exploitative relationships with farmers and contacts between service provider staff and members of the public), and access to financial support.
+- The Thai Rice Project does not exacerbate such risks, but it is necessary to include mechanisms to avoid SEAH, to monitor occurrence, and to implement a zero-tolerance policy.
+
+## Emergency preparedness and response
+
+Low
+
+- During Thai Rice Project implementation, health and safety standards should apply to premise receiving members of the public – for instance, farmers – during training, capacity building and extension support.
+- Project-supported agro-met apps and services should be capable of providing farmers with emergency alerts (e.g. for storms, strong winds, floods, etc.) in addition to their standard climate-smart farming functionality.
+
+## Human rights
+
+Low
+
+- GCF's E&S policy, as well as GIZ's safeguards management system, puts a significant emphasis on avoiding infringement of the human rights of others and addressing adverse human rights impacts that project activities may cause or contribute to.
+- Each of the ESSs has elements related to human rights dimensions that a project may face in the course of its operations. For the Thai Rice Project, human rights risks and impacts are essentially related to agricultural labour and livelihoods and are assessed under ESS 2 and ESS 4.
+
+[Page 180]
+
+
+---
+*Chunk pages 184–184*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1465 (sys=94, user=1371), max_out=1024, ctx=8192
+---
+
+# Table 26: Thai Rice Project ESS Mitigation Measures
+
+## Environmental & Social Safeguards
+
+### Project Mitigation Measures
+
+#### ESS 1: Assessment and management of environmental and social risks and impact
+
+- The project ESS management system will be established and operationalised.
+- The ESMP and ESMF will be staffed, resourced and implemented throughout project implementation.
+- Capacity building and enhanced institutional coordination between key government institutions with ESS mandates / reach (notably, MoAC and its constituent departments, MoNRE, ONEP including EFD, TMD, TCG, BAAC, TGO, etc.) (notably, Sub-Activities 1.1.1.2, 2.1.2.2, 3.1.2.2, 3.1.2.3 and 3.1.3.2).
+- Development and promotion of the TAS to mainstream sustainable, climate-smart rice (Sub-Activity 3.1.1.1).
+- TRIS enhancements to more effectively and efficiently transfer farmers’ climate risks to insurance markets (Sub-Activity 2.1.1.3).
+- Design and operationalisation of the Thai Rice Facility as a coordinating and peer-exchange mechanism for climate-smart agriculture (Sub-Activity 3.1.3.1).
+- Development of the T-VER Rice Scheme as an environmentally robust carbon finance mechanism for incentivising low-carbon farming practices (Sub-Activity 3.1.2.3).
+- Support to identified NDC needs and sectoral MRV to improve the quality of climate data and its use to inform environmental policy-making (Sub-Activity 3.1.2.2).
+
+#### ESS 2: Labour and working conditions
+
+- Gender-based inequalities and divisions of labour will be addressed by the project’s Gender Action Plan (see Section G.2.2).
+- The GAP also includes measures to address the employment vulnerabilities of migrants and to facilitate their inclusion in the transition to climate-smart rice (Sub-Activity 1.1.1.1).
+- Measures will be included to address the ageing profile of rice farmers, including – as part of its farmer training – devoting particular effort to reaching women and youth, as well as coordinating with the ISRL-T baseline project that is implementing activities to reduce rural exodus (Sub-Activity 1.1.1.1).
+- The project’s support to technological innovation and the use of digital tools will reduce physical labour requirements of farming (notably, Sub-Activity 1.1.1.3).
+- Training and capacity building of farmers will build skills and open up new income-generating activities (premium rice, biomass residues, etc.) (Sub-Activities 1.1.1.1, 1.1.2.1, 3.1.1.1 and 3.1.1.2).
+- Farmers who feel that project activities worsen their working conditions or present unnecessary risks will be able to communicate their concerns using the project’s Grievance Redress Mechanism (see Section D.5.3).
+- Training materials for farmers and service providers will emphasise that child labour and forced labour are illegal and will not be tolerated by the project. Farmers risk ejection from the project – with consequent loss of technical and financial support – if they employ such practices (Sub-Activities 1.1.1.1 and 2.1.1.1).
+- Site visits to farms undertaken by project staff for the purposes of M&E and stakeholder consultations will also be used to check for the use of forced labour or child labour. Farmers who are found to employ forced labour or child labour in contravention of national legislation will be reported to the relevant authorities.
+
+#### ESS 3: Resource efficiency and pollution prevention
+
+- LLL, AWD, DSR, rice variety diversification and crop diversification will reduce water consumption (Sub-Activities 1.1.1.1, 1.1.1.2, 1.1.2.2, 2.1.2.1, 3.1.1.1 and 3.1.2.1).
+- AWD will be coordinated with local Water Usage Organisations to reduce the scope for conflicts over scarce water (Sub-Activities 1.1.1.1 and 1.1.1.2).
+- SSNM will reduce fertilizer consumption (and hence water pollution) (Sub-Activities 1.1.1.1, 1.1.1.2, 1.1.2.2, 2.2.2.1 and 3.1.2.1).
+- IPM will reduce insecticide, pesticide and fungicide consumption (and hence water pollution) (Sub-Activities 1.1.1.1, 1.1.1.2, 2.2.
+
+
+---
+*Chunk pages 185–185*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1347 (sys=94, user=1253), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.10.0 | PAGE 182
+
+## ESS 5: Land acquisition and involuntary resettlement
+
+- The locations of all farm plots served by the project (i.e. where climate-smart technologies and practices are adopted) will be known and logged. Only land that is officially categorised as rice farming land by the government (i.e. only land that is associated with farmers registered with DoAE) will be eligible to participate in the project.
+- Local institutions, such as WUOs and provincial extension services, will be kept informed of (and, in many cases, involved in providing support to) participant farms.
+- Contact details for the project’s grievance redress mechanism (GRM) will be communicated to participating farmers and to local communities (e.g. on public notice boards, local government institutions, community and CSO websites, etc.), so that individuals who feel they have been wrongly excluded from the project or who claim their land is being used without their permission will be ableable to submit official complaints.
+
+## ESS 6: Biodiversity conservation and sustainable management of living natural resources
+
+- A biodiversity module will be included in farmer and extension officer training on climate-smart agricultural practices. Although biodiversity is not typically an issue of great interest to rice farmers, the beneficial impacts on rice yields of some types of insects and birds, and the benefits of reduced pesticide application to personal well-being, will be emphasised (Sub-Activities 1.1.1.1 and 1.1.1.2).
+- Each year, a representative sample of farmers practising SSM will be analysed to ensure that their diversion of biomass residues for other purposes has not inadvertently led to a compensating increase in their use of chemical fertilizers. If this is found to be a problem, farmer training and adaptive measures will be put in place (Sub-Activities 1.1.1.1 and 1.1.1.2).
+- A multi-taxon biodiversity study (covering plants, invertebrates, frogs, fish and birds) will be undertaken as part of the project’s baseline assessment and mid-term review. Paired sites of conventional and climate-smart rice farming and over time will be surveyed: where noteworthy positive or negative impacts are detected, these will be reported (e.g. in the mid-term review as well as relevant project reports and literature) and project activities will be amended to reinforce/reduce these impacts in the second half of project implementation. Site surveys and routine monitoring and reporting will also focus biodiversity.
+
+## ESS 7: Indigenous peoples
+
+- The project’s Ethnic Groups Plan (Annex 6b) provides detailed analysis of Thai ethnic groups’ and indigenous peoples’ characteristics, needs and relationships to the Thai Rice Project, and outlines concrete measures for the project to maximise engagement with, and address the differentiated needs of, these groups (including constituent sub-groups, such as women and vulnerable individuals).
+- As a general rule, persons self-identifying as belonging to an indigenous people and engaged in rice farming will be included in the project interventions, although the project intervention area does not cover the upland areas where most indigenous groups live. Their Free, Prior and Informed Consent (FPIC) to participate in the project will be sought – on an individual level and/or through the authorities of the groups involved.
+- The project M&E system put in place will be designed in an ethnically-sensitive way, including socio-economic as well as project implementation relevant data.
+- A survey will be undertaken to ensure that those farmers who self-identify as being part of an indigenous people: (i) have fair and equitable access to project support, and that (ii) any challenges they encounter as a result of their ethnicity (cultural, language, etc.) will be addressed (e.g. in subsequent training materials, workshops, etc.).
+- An ethnic groups engagement field guide (guidebook) that incorporates the concept of ethnic group sensitivity and potential (cultural responsiveness), including consultation/social inclusion, will be developed. Training will be provided to key government and project staff on this guidebook.
+- Where the project activities may reach self-identified indigenous peoples, adequate information on project interventions will be provided and engagement sought. The conduct of meaningful consultations that seek to obtain FPIC will be ensured (with special attention paid to women). This aims to ensure transparent processes and active, free, effective,
+
+
+---
+*Chunk pages 186–186*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1453 (sys=94, user=1359), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.10.0 | PAGE 183
+
+## ESS 8: Cultural heritage
+
+- The project will only implement activities on land that is classified as existing rice farming land (see ESS 5). Cultural heritage sites will, therefore, be excluded.
+- The project will, at all times, be respectful of local traditions and customs. For instance, many farmers still rely on traditional cues (e.g. bird behaviour, tree flowering behaviour) to guide their planting practices. The project will provide scientifically-grounded agro-met data and advisories, but will frame this as augmenting existing information rather than being dismissive of it (Sub-Activities 1.1.1.1 and 2.1.1.2).
+- Training provided to farmers will include references to traditions and customs and the positive roles they play in sustaining rice communities (Sub-Activity 1.1.1.1).
+- The project’s media and publicity activities (e.g. brochures, videos, etc.) will reference, where relevant, cultural events and practices – to convey the message that climate-smart rice farming can be as integrated into the cultural fabric of rural life just as much as traditional rice farming.
+- The project’s Stakeholder Engagement Plan (see Section D.5.3) includes project participation in local festivals and events as a means of maintaining good community relationships as well as supporting the conservation of local cultures and heritage.
+
+## ESS 9: Stakeholder engagement and information disclosure
+
+- Building on extensive stakeholder consultations undertaken during project preparation, the Thai Rice Project will implement a robust and inclusive Stakeholder Engagement Plan (SEP) – see Section D.5.3.
+- Training materials, workshops and other project activities will be provided to stakeholders (farmers, extension service officers, etc.) in appropriate forms (language, tone, technical level, etc.) (Sub-Activities 1.1.1.1, 1.1.1.2, 1.1.2.1, 2.1.1.2, 2.1.1.3 and 3.1.1.2).
+- Particular efforts will be made to engage with and support vulnerable stakeholders, including female-headed households, female-headed skipped generation households, ethnic groups, indigenous peoples and migrant workers (Sub-Activity 1.1.1.1).
+- The project will develop or enhance digital tools (mobile apps, atingi online learning platform, agro-met advisory services, etc.) that will enhance information flows to farmers (Sub-Activities 1.1.1.1, 1.1.1.3 and 2.1.1.2).
+- The project will operate training plots that serve to provide farmers with ‘real world’ assurance that the climate-smart technologies and practices being advocated by the project are effective (Sub-Activity 1.1.1.1, 1.1.1.2, 2.1.1.2, 2.1.1.3 and 3.1.2.2).
+
+## ESS 10: Climate change resilience and adaptation
+
+- The climate-smart technologies and practices supported by the project are intended to enhance the resilience of Thai rice farmers (as well as reduce their GHG emissions).
+- Where farmers’ climate risks cannot be fully eliminated, the project will also support enhancements to the national rice insurance scheme that serve to displace these risks to the insurance market (Sub-Activity 2.1.1.3).
+
+## Sexual Exploitation, Abuse and Harassment (SEAH)
+
+- All beneficiaries of the project’s training programmes (e.g. farmers, extension service officers, financial institutions, government agencies, Executing Entities, etc.) will receive awareness-raising and training on SEAH (Sub-Activities 1.1.1.1, 1.1.1.2, 2.1.1.1, 2.1.2.2, 3.1.2.1 and 3.1.3.2).
+- All project stakeholders (recipients of training and/or financial support) will have access to the SEAH grievance mechanism (which operates separately from the project’s general Grievance Redress Mechanism) (see Section D.5.3).
+- All reports of SEAH violations will be collated centrally by the project ESS Manager.
+- SEAH will be addressed immediately on a case-by-case basis.
+
+## Emergency preparedness and response
+
+- All premises used by the project must be in compliance with legal obligations. For instance, a venue must have a Building Certificate if required by the 1979 Building Control Act; seismic design provisions must be met (as stipulated under the 2021 revision to the Seismic Regulation); a Safety Officer must be designated according to the terms of the Occupational Health & Safety Act
+
+
+---
+*Chunk pages 187–187*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1066 (sys=94, user=972), max_out=1024, ctx=8192
+---
+
+# G.1.3 Environmental and social management framework (ESMF)
+
+440. The Thai Rice Project includes a range of activities that cannot be fully specified in advance because they involve financial support to individuals or institutions: the nature of this financial support (e.g. the type of technology supported, etc.) and the identities of the beneficiaries will only be known during project implementation, when financing decisions are made by the relevant institution. As a consequence, the potential social and environmental risks and impacts of this financial support cannot be assessed in detail in advance. As such, the ESMF has been prepared. The ESMF sets out, in general and for each of the project's financial instruments, the principles and rules for limiting potential negative social and environmental impacts of the forthcoming interventions.
+
+## EMSF General Principles
+
+- Investment activities supported by the Thai Rice Project must, in all instances, be legal and aligned with the low-emission, climate-resilient objectives of the project.
+- No funding shall be approved or disbursed that exceeds, or represents a significant risk of exceeding, a Category B ESS risk.
+- Financial transfers shall be made only to identified individuals or institutions who meet the eligibility criteria of the relevant financial instrument.
+- Subject to the constraints set by instrument-specific eligibility criteria, all funding decisions shall be non-discriminatory in relation to recipients' gender, ethnicity, age and religion.
+- All funding decisions – positive or negative – shall be fully documented and stored for at least a period of 5 years beyond the implementation period of the Thai Rice Project.
+- Project-supported investments shall be subject to M&E to ensure compliance with eligibility rules and to assess environmental and social impact (positive and negative).
+- Funding decisions and resulting payments shall be subject to the project's grievance redress mechanism.
+- These general principles, as well as the instrument-specific principles, shall be periodically reviewed (at least annually) and, if required, amended to improve the social and environmental protections afforded by the project.
+
+## Incentive Payments to Farmers
+
+- Only registered farmers who have received training on climate-smart agriculture and financial management and who meet the relevant criteria shall be eligible to receive incentive payments.
+- Incentive payments can be used by farmers to finance any of the Thai Rice Project's supported climate-smart technologies and practices (see Table 5) or a combination thereof (with different incentive levels for packages of technologies that include or exclude LLL).
+- Climate-smart activities financed or part-financed by incentive payments shall be conducted on land that is classified as rice farmland.
+- Service providers that deliver one or more of these technologies and practices and that are procured by farmers using incentive payments must be included in the register of quality-assessed service providers that is maintained by the Thai Rice Project.
+- A registry of incentive payment recipients shall be maintained by BAAC and this shall include location information.
+- Site visits and farmer interviews conducted as part of the project's M&E and stakeholder engagement process shall include a sufficiently large, randomly selected sample of farmers who have received incentive payments to ensure that statistical inference of the results is reliable at the 95% confidence level.
+
+## BAAC Climate-Smart Loan (CSL) Scheme
+
+- BAAC standard lending conditions and eligibility criteria (e.g. relating to creditworthiness) shall apply to the CSL scheme. In addition, only (i) registered farmers who have received training on climate-smart agriculture and financial management and (ii) service providers included in the register of quality-assessed service providers that is maintained by the Thai Rice Project shall be eligible to receive loans through the CSL scheme.
+- Climate-smart loans can be used by farmers / service providers to finance one or more of climate-smart technologies and practices (see Table 13): LLL, AWD, SSNM, SSM, crop diversification, DSR and FWM.
+- Climate-smart activities financed or part-financed by the CSL scheme shall be conducted on land that is classified as rice farmland.
+
+
+---
+*Chunk pages 188–188*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1149 (sys=94, user=1055), max_out=1024, ctx=8192
+---
+
+# G.2. Gender assessment and action plan
+
+## G.2.1 Gender Assessment
+
+### Background
+
+Thailand ranks 79 out of 191 countries in the Gender Inequality Index. In comparison, Malaysia is ranked 57 and Vietnam 71. In comparison to Vietnam, Thailand exhibits a wider gender gap in labor force participation and has fewer female members of parliament (Thailand 14%, Vietnam 27%). Of 76 provincial governors in Thailand, only one is a woman and only 8% of Provincial Administrative Organisations (PAOs) are led by women.
+
+Key challenges in realising gender equality and the empowerment of women in Thailand include: (i) a general lack of sex-disaggregated data and (ii) traditional attitudes and stereotypes—which underpin discrimination against, and vulnerabilities of, rural women and the low participation of women in decision-making positions.
+
+There is a clear gender division of labour in agriculture. Men do the so-called physically strenuous work, which includes operating machinery (tractor, harvesters, etc.) as well as spraying chemicals. Agricultural labour is often paid by work done, and the types of work that men do are often paid more per hour of work. Women’s work, such as supplementary transplanting and packaging, is paid by day, so per-hour payments tend to be lower.
+
+---
+
+*Page 185*
+
+
+---
+*Chunk pages 189–189*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1536 (sys=94, user=1442), max_out=1024, ctx=8192
+---
+
+# [Page 1]
+## GREEN CLIMATE FUND FUNDING PROPOSAL V.10.0 | PAGE 186
+
+gender division of labour is partly based on the perception that women are better at ‘tedious’ tasks. 418 Female employment in agriculture in Thailand as a share of total female employment declined from 61% in 1991 to 28% in 2019.419 The majority of women (53% of female workers in the agriculture sector) are essentially unpaid family workers: just 27% own agricultural land while they make up 41% of the agricultural workforce. 420 They tend to benefit less than men in periods of agricultural expansion and they tend to be hit harder in periods of agricultural contraction: they are, therefore, relatively more vulnerable than men. 421 Under the 20 -year National Strategy (2018-2037), Thailand aims to maximise the use of digital technology across all socio -economic activities. Many women in rural areas, however, are not able to fully benefit from progress in information technology due to access and capacity constraints.422
+
+443. Despite the continued presence of gendered roles and prominent gender stereotypes, both women and men in rural areas share a general sense of gender equality in their contributions to agriculture.423 This stems from the fact that women tend to be in charge of households’ financial management. Women and men have the same rights over land, and equal rights to inheritance are guaranteed by the Civil and Commercial Code, although those who take care of parents (who tend to be daughters) tend to receive more .424 Women and men have the same rights to open bank accounts, obtain credit and access formal financial services. Relations between wives and husbands tend to be relatively egalitarian.425  
+
+444. Since agriculture is a volatile occupation, farmers frequently diversify. This is particularly the case for women farmers, who often serve as the household financial manager. There is a women’s group in almost all villages. In villages where cohesion among the villagers is strong, these women’s groups often engage in joint income -generating activities, sometimes even formally registered as community enterprises. Many of these groups make compost and fertilizers using earthworms and organic materials (typically cow dung and grass). They tend to operate on a small scale and typically produce only enough for backyard gardens. Interviews conducted during preparation of the Thai Rice Project revealed that if the groups had machines to mix the materials and sieve the worms, they would be able to increase the production of bio -fertilizer. Currently, these activities are treated as women’s small-scale secondary income-generating activities and, essentially, an extension of household work. Women are generally not considered to be entrepreneurs: if they were, there is considerable potential for them to increase their incomes as bio-fertilizer service providers.  
+
+445. Among women, there are 4 particularly vulnerable groups:
+- Single parents and the older women in skipped -generation households. There are approximately 1.4 million single -parent households (7% of all households), the majority of them single-mothers who face difficult financial situations . This prevalence of single -parent households is largely attributable to rural exodus, in which men leave their villages to seek education or work. Where both parents leave, they typically ask their parents to look after their children, resulting in an increasing trend in skipped -generation
+
+418 Richardson M. and Roberts R. (2020), 'Modern women and traditional gender stereotypes: an examination of the roles women assume in Thailand's agricultural system', Journal of International Agricultural and Extension Education, 27: https://www.researchgate.net/profile/Richie Roberts/publication/347711850_Modern_Women_and_Traditional_Gender_Stereotypes_An_Examination_of_the_Roles_Women_Assume_in_Thailand's_Agricultural_System/links/5fe35676a6fdccdcb8f539e1/Modern-Women-and-Traditional-Gender-Stereotypes-An-Examination-of-the-Roles-Women-Assume-in-Thailands-Agricultural-System.pdf.
+419 World Bank Databank: https://data.worldbank.org/indicator/SL.AGR.EMPL.FE.ZS?locations=TH.
+420 OECD (2021), Social Institutions and Gender Index: 2021 Regional Report for Southeast Asia: https://www.oecd-ilibrary.org/development/sigi-2021-regional-report-for-southeast-asia_236f41d0-en.
+421 Korwatanasakul U. et al (2020), 'Analysis of global value chain participation and the labour market in Thailand: a micro-level analysis', ERIA Discussion Paper, No.
+
+
+---
+*Chunk pages 190–190*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1674 (sys=94, user=1580), max_out=1024, ctx=8192
+---
+
+# [Page 1]
+## GREEN CLIMATE FUND FUNDING PROPOSAL V.10.0 | PAGE 187
+
+### households: i.e. elderly women or men looking after their grandchildren.
+
+426 There are now 400,000 skipped-generation households, accounting for 2% of total households, and the majority are female-headed.  
+These households can experience financial challenges and can struggle with the physical burdens associated with agricultural labour.  
+Approximately 20% of elders in skipped-generation households have incomes below the poverty line – a rate that is more than double the national average.
+
+### • Disabled women and women who take care of the sick and disabled.
+
+Approximately 2% of the Thai working-age population is unable to work due to illness or disability. The proportion is marginally higher for men than women (2.5% and 1.6%, respectively) due to the higher occurrence of work accidents in male-dominated occupations (industry, transport and the use of agricultural machinery).  
+Disabled men and women face physical and cultural challenges: in rural areas in particular, disability tends to be considered synonymous with ill health and there is an expectation that disabled persons should stay at home under the custody of family members.  
+Disabled women tend to experience greater exclusionary pressures than their male counterparts: they are less likely to be employed and, if they are employed, their positions are often insecure.  
+Moreover, women are often the ones who are expected to take care of disabled relatives, both financially and physically; this places disproportionate burdens and constraints on them.
+
+### • Indigenous and ethnic group women in rural Thailand experience pronounced inequalities.
+
+Ethnic group communities, including those that self-identify as being indigenous peoples, tend to be more patriarchal than mainstream Thai communities, leading to unequal opportunities for indigenous women to invest in educational and vocational skills, participate in paid work and obtain healthcare.  
+Traditional belief systems limit the scope for ethnic group women to express themselves and their opinions.
+
+### • Migrant women from neighbouring countries.
+
+Even when they do similar jobs, female migrant workers tend to be paid less and have more limited access to training and careers.  
+This is despite labour laws that clearly stipulate that men and women should receive equal pay for equal work in Thailand regardless of their nationality.  
+Approximately 59% of migrant workers are paid less than the statutory minimum wage, with the figure rising to 66% for women migrant workers.  
+Migrant women are disproportionately vulnerable to sexual-based violence.
+
+## Policy Context
+
+446. The 2017 Constitution prohibits discrimination on the grounds of sex and affirms the principle of equality between men and women. Thailand ratified the Convention on the Elimination of All Forms of Discrimination against Women (CEDAW) in 1985 and ratified the optional protocol in 2000. Recent improvements in gender equality-related laws include:
+
+### Footnotes
+
+426 Rungmanee S. et al (2021), Migration and Women’s Land Tenure Security in the Greater Mekong Sub-Region: Case Studies from Thailand, Lao PDR and Myanmar, Regional Centre for Social Sciences and Sustainable Development: https://drive.google.com/file/d/1qN9GvLvyw_MNcxWw4Ipy6YPRdImy6DIV/view.  
+427 UNDP (2021), FP170: Enhancing Climate Resilience in Thailand Through Effective Water Management and Sustainable Agriculture – Gender Assessment, Green Climate Fund: https://www.greenclimate.fund/sites/default/files/document/fp170-gender-assessment.pdf.  
+428 Yuko S. and Rambo A. (2017), ‘Household structure and sources of income in a rice-growing village in Northeast Thailand’, Southeast Asian Studies, 6: https://www.jstage.jst.go.jp/article/seas/6/2/6_275/_pdf/-char/ja.  
+429 UNDP (2021), FP170: Enhancing Climate Resilience in Thailand Through Effective Water Management and Sustainable Agriculture – Gender Assessment, Green Climate Fund: https://www.greenclimate.fund/sites/default/files/document/fp170-gender-assessment.pdf.  
+430 Nitkamhan B. et al (2020), ‘Social disparities and incapability to work due to illness or disability among the working-age population in Thailand’, Indian Journal of Public Health Research and Development, 11: https://medicopublication.com/index.php/ijphrd/article/download/10245/9588/19321.  
+431 Agustin C. (2019), Breaking Out of the Glass Box: Employee Responses to Disability Inclusion in the Workforce in Thailand, College of Management, Mahidol University: https://archive.cm.mahidol.ac
+
+
+---
+*Chunk pages 191–191*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1284 (sys=94, user=1190), max_out=1024, ctx=8192
+---
+
+# [Page 1]
+
+## GREEN CLIMATE FUND FUNDING PROPOSAL V.10.0 | PAGE 188
+
+- The Name Act was amended to allow women the right to choose a family name (2005).
+- Amendment to the Civil Code to provide women and men equal grounds for divorce (2007).
+- Rape was criminalised by the Penal Code of 1965, and the subsequent Criminal Code Amendment Act of 2007 criminalised marital rape.
+- The Labour Protection Act of 2008 and the Penal Code foresee legal protection in the workplace and the Labour Protection Act extends protection against sexual abuse, harassment or nuisance by superiors to cover all workers, both female and male.
+- Anti-human trafficking Act B.E. 2551 (2008).
+- Domestic Violence Victim Protection Act of B.E. 2550 (2007).
+- Amendment to the Thai Penal Code to decriminalise the termination of pregnancy during the first 12 weeks (2021).
+
+## 447. The Gender Equality Act was introduced in 2015. This is the first Thai law to explicitly promote gender equality. It is also Thailand’s first legal instrument to specifically mention transgender people. The Strategy for Women’s Development Plan is Thailand’s principal mechanism for promoting women’s development; it aligns with SDG 5 (Gender Equality) and with the framework of the 20-year National Strategy and the 5-year National Economic and Social Development Plan. The Strategy has the vision of “[creating] social equality without discrimination, for women to have a good quality of life, be safe and secure.” The Department of Women’s Affairs and Family Development, under the Ministry of Social Development and Human Security, has put in place a 3-year Gender Action Plan to promote gender equality. It covers 4 main areas: (i) awareness-raising to improve understanding of gender equality; (ii) strengthening gender empowerment; (iii) promoting all organisations to have policies on gender equality; and (iv) promoting research and development on gender equality. Monitoring of the Action Plan at the ministry level is done by the Chief Gender Equality Officer (CGEO) and the Gender Focal Point (GFP) appointed by each ministry. Since 2015, ministries’ permanent secretaries serve, in theory, as their CGEO, but implementation of this rule is not widely practised.
+
+## 448. Thailand’s Voluntary National Review on the 2030 Agenda for Sustainable Development reports that women’s status in Thailand has drastically improved over recent decades. The country has achieved gender parity in basic education, with women doing slightly better in higher education and the proportion of women in poverty lower than that of men. While noting that Thailand is recognised as having among the most favourable conditions for women’s entrepreneurship in Asia and the Pacific, the Review also recognises the still-low representation of women in the public sector, in particular in national politics, in government leadership positions and in local administration.
+
+## 449. Thailand considers the development of a gender-disaggregated database a next step in its effort to achieve gender equality. As of 2020, only 46% of indicators needed to monitor the SDGs from a gender perspective were available, with gaps in key areas including labour market indicators (such as the gender pay gap). In addition, many areas – including gender and poverty, physical and sexual harassment, women’s access to assets (including land), and gender and the environment – lack comparable methodologies for regular monitoring.
+
+## CEDAW’s 2017 Concluding Observations on the State of Gender Equality in Thailand, the Committee noted a number of gender-related policy gaps. The Committee expressed a particular concern for the situation of rural Thai women, including indigenous women and women belonging to ethnic groups, who remain disproportionately affected by poverty and limited economic opportunities. The Committee also observed that rural women, in particular, are excluded from participation in the elaboration and implementation of policies and action plans on climate change and disaster risk reduction, despite the fact they are disproportionately affected by their impacts.
+
+## Institutions
+
+## 450. The Department of Women’s Affairs and Family Development of the Ministry of Social Development and Human Security is the national institution responsible for promoting gender equality and the empowerment of
+
+---
+
+**Note:** This text appears to be a fragment from a larger document, possibly related to a report or policy document on gender equality in Thailand. Some sections may be incomplete due to OCR issues or formatting constraints during extraction.
+
+---
+
+
+---
+*Chunk pages 192–192*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1139 (sys=94, user=1045), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.10.0 | PAGE 189
+
+## Women, and social inclusion
+
+The Department serves as the secretariat of the National Inter-Ministerial Committee on Policy and Strategy for the Improvement of the Status of Women, chaired by the Prime Minister. The position of Chief Gender Equality Officer and Gender Focal Point is in place in 131 government departments and agencies; among other duties, the title-holders are responsible for coordinating gender mainstreaming support in sub-national government agencies. Other government agencies that play an important role in gender equality are the National Human Rights Commission and the Law Reform Commission of Thailand.
+
+## Working Group for the Implementation of SDG 5 (gender equality)
+
+The Working Group for the Implementation of SDG 5 (gender equality) supports the implementation of the Goal. Representatives from government agencies and civil society, including the Thailand Sustainable Development Foundation, the Association to Empower the Potential of Women with Disabilities (AEPWWDs), the Foundation for Women, Homenet Thailand, the Foundation for Labour and Employment Promotion, and WeMove, are all active in the Working Group. The Working Group allows government agencies and civil society to exchange information, as well as discuss future directions in the implementation of SDG.
+
+Other important non-government institutions and CSOs focus particularly on gender-based violence and LGBTQ issues. These include the Health and Opportunity Network (HON) in Pattaya, M Plus (HIV/AIDS, LGBTQ), the Gender and Development Research Institute (GDRI) (Bangkok), the Rainbow Sky Association of Thailand (Bangkok), the Teeranat Kanjana-aksorn Foundation, the ProRights Foundation and others.
+
+## Ministry of Agriculture and Cooperatives (MoAC)
+
+The Ministry of Agriculture and Cooperatives (MoAC) is responsible for food security in Thailand. Its 20-year Agriculture and Cooperatives Plan (2017-2036) includes SDG 5 as one of its guiding SDGs. The Plan identifies gender equality and women’s empowerment in public-private partnership as an objective under Strategy 2: 'Enhancing the management efficiency of agricultural commodities through their supply chains'.
+
+The Action Plan of MoAC’s Department of Agricultural Extension (DoAE, 2023-2027) contains a specific target to promote and develop women farmers and farmers’ wives’ groups in order to improve household incomes, ensure stability of food supply and promote learning and agricultural value-addition. There have also been considerable advances in increasing the number of women DoAE extension officers – to the extent that, in some districts, all the extension workers are women.
+
+## Gender Assessment: Key Findings
+
+Detailed analysis is provided in the Gender Assessment (Annex 8a). Key findings of the Gender Assessment include:
+
+- Thailand is a matrilocal society, and women have a certain level of resources and power within the household. However, gender discrimination and inequality persist, particularly in relation to decision-making. The presence of women in leadership positions is very important. The current lack of women in such positions in an agricultural context means that their views on governance, resource allocation and technology adoption carry less weight than is merited.
+- Women are heavily engaged in agriculture and there is a strong prevailing gender division of labor in the sector. Because women need to do both household and care work as well as actively engage in agricultural work, their workloads tend to be heavy.
+- Women farmers are interested in new technology and are generally predisposed to technology adoption. However, they are sensitive about technology costs, as they also tend to be the financial manager of the household. New technologies need to be cost-competitive and to emphasize cost reduction potential in order to draw the attention of women farmers.
+- Women are interested in diversification of agriculture, and this, alongside their income-generating activities, provides them with a sense of livelihood security. However, their activities are often perceived to be small-scale and secondary, and are not typically considered a target for up-scaling. This is a lost opportunity.
+- Women farmers are more interested in environmental and health issues, which serves as a good basis for climate-smart technologies and advocacy.
+- Thai women have good education and have relatively good basic ICT skills compared to men, they are active in productive activities, and there are promising opportunities that women can explore if given appropriate recognition and support. Women farmers’ attendance at training is generally high.
+
+> [445] Interviews with extension officers in Chiang Rai and Roi-Et.
+
+
+---
+*Chunk pages 193–193*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1339 (sys=94, user=1245), max_out=1024, ctx=8192
+---
+
+# [Page 1]
+## GREEN CLIMATE FUND FUNDING PROPOSAL V.10.0 | PAGE 190
+
+• There are disproportionately more female-headed skipped-generation households, which places a burden on women.  
+• Young people travel to cities for education and work; they tend not to return and, if they do so, they tend not to take up agricultural roles. There is a need to inspire youth in agriculture and agricultural technologies while they are still in school.  
+• There are, however, some returnees who do come back to farm after working in urban areas. These new farmers tend to be more open to new technologies. Women returnees can be strong leaders in the community. Encouraging and involving returnees can enhance expansion of climate-smart technologies.  
+• Disabled rural women experience the constraints and challenges faced by their male counterparts (a built environment that is not ' disability-friendly', limited transport and mobility options, limited work opportunities, etc.) as well as cultural and societal constraints on their participation in the labour force. Additionally, women are expected to assume the burden of caring for disabled relatives.  
+• Most migrant agricultural workers are from Myanmar. In the North, they are largely Thai Yai, an ethnic group in Myanmar who share a similar language with Thais. Women migrant agricultural workers are paid less than male migrant agricultural workers, who are, in turn, paid less than Thai agricultural workers. Migrant workers typically come from cultures with stricter gender division of labor, and women are often assigned to packaging work that is paid less. Migrant workers also tend to be more vulnerable than Thai workers because of their precarious legal status in Thailand.  
+• Members of ethnic groups and indigenous peoples are few in number in the project area (and largely confined to the North), as they are located primarily in hilly areas where paddy production is not practised (or is practised on an extremely small scale). However, it is important to note that their role as protectors and managers of upland forest is significant, which can affect water availability in the lowlands.446 The financial support that ethnic communities receive is small and dwindling.447 Ethnic communities are generally more patriarchal than mainstream Thai society: women are commonly engaged in handicraft-making to supplement their low (or non-existent) incomes. Capacity building support to women in ethnic groups has the potential to simultaneously create new income-generating opportunities and narrow gender disparities, as does cooperation with existing initiatives.  
+• Because of a lack of gender-disaggregated data, it is difficult to understand the extent of gender-related inequalities in rice farming and to monitor progress towards addressing these inequalities.  
+• The Thai Rice Project Executing Entities have identifiable gender needs:  
+• The Rice Department (RD) applies the national policies and strategies that promote gender equality (such as the Strategy for Women’s Development Plan). But RD does not have its own gender action plan, there is no Gender Focal Point within the institution and staff members are not generally aware of who the Chief Gender Equality Officer (CGEO) is.  
+• BAAC has an inclusion policy and a grievance procedure for complaints by and against employees. A number of BAAC initiatives, notably the Microfinance Linkage Project (which ended in 2009) and the Tree Bank Scheme, have an explicit gender equality objective. But BAAC does not have a gender action plan and its senior management (at Board, Management Committee and Sub-Committee levels) is overwhelmingly male.  
+• ONEP serves as the government’s gender focal point for climate change, together with the Department of Women’s Affairs and Family. ONEP has started to recognise the importance of gender aspects for climate policy development. However, its mission statement does not explicitly refer to gender. ONEP also administers the national EIA guidelines, but they do not include gender either. The Environmental Fund (EF) that is administered by EFD, a department of ONEP, does not apply gender criteria when making funding decisions.  
+• IRRI's Code of Conduct explicitly prohibits discrimination on the basis of gender, race, ethnicity or religious belief. IRRI has a 'Gender in the Workplace' strategy. As part of the Consultative Group on International Agricultural Research (CGIAR), IRRI is also bound by One CGIAR policies and guidelines, including the 'Framework for Gender, Diversity and Inclusion in CGIAR’s Workplaces'. Approximately 43% of IRRI staff are women. IRRI has identified a number of gender-related needs in the Thai rice sector, including the need for more gender-disaggregated data and greater women's involvement in agricultural and water management decision-making. Internally, IRRI’s Gender and Livelihoods coordinator is based in India. As gender issues in the Thai agricultural sector tend to be subtle and less obvious than in South Asia, IRRI may require assistance to ensure that its staff who support the Thai Rice Project are suitably trained on Thai-specific gender issues.
+
+446 Virapongse A. (
+
+
+---
+*Chunk pages 194–194*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1145 (sys=94, user=1051), max_out=1024, ctx=8192
+---
+
+# G.2.2 Gender Action Plan
+
+454. The Gender Action Plan is provided in Annex 8b. Table 27 provides a summary of the key proposed actions.
+
+## Table 27: Gender Action Plan: Key Proposed Actions
+
+| Gender Equality Need | Gender Action Plan: Proposed Intervention | Reflection in the Thai Rice Project |
+|----------------------|-------------------------------------------|-------------------------------------|
+| Design               | Benefits from the project are enjoyed equally by women and men, and gender disparities are not widened. | • A gender-sensitive M&E system is put in place to enable the project to track the number of female and male beneficiaries and to ensure gender-responsive project management. |
+|                      | The M&E system, and project management in general, will be set up in a gender-sensitive way, reflecting gender best practice and consultations with the Department of Women’s Affairs and Family Development. | • Gender-disaggregated data is available to inform decision-making and to track progress. |
+|                      | • Studies, surveys and reports commissioned by the project include gender-disaggregated data, especially relating to women in vulnerable situations (including, for example, gender disaggregation of training recipients, female-headed households, female-headed skipped generation households, women with small children, elderly women living alone, women living with people with care needs, disabled women, and women from ethnic groups or self-identifying as belonging to an indigenous people). | • Development of a comprehensive set (master list) of the gender-disaggregated data that is required to drive forward the gender agenda in the Thai rice sector. |
+|                      | • Regular diagnostics to monitor whether the gender-disaggregated data in the master list is being collected and is being included in relevant project reporting. | • A mechanism to collect SEAH issues is developed and SEAH data is included in the monitoring data. |
+|                      | TORs for studies and surveys commissioned by the project will include the need for gender disaggregation and – where relevant – consideration of vulnerable sub-groups; a master list of gender-disaggregated data will be developed and periodically updated; regular checks will be undertaken to ensure gender needs are being met. | • The gender equality perspective is shared with and by project implementation personnel. |
+|                      | • All key personnel involved in the project (PMU, relevantExecuting Entity staff, etc.) are trained on integration of gender interventions and gender mainstreaming, including how to monitor and how to communicate in a gender-sensitive way. | • The respective capacity development measures will be implemented. |
+|                      | Changes in division of labour (agricultural, household, family care, etc.) exists between women and men. | • Information campaigns and training and awareness materials supported by the project will include awareness-raising on gender equality and social inclusion (GESI) and the necessity of men and women sharing household and family work. |
+|                      | Information, capacity development and awareness-raising activities that include gender equality elements will be implemented where relevant and feasible; nonetheless, expectations of the changes that can be achieved by the project in the domain of gender roles are considered to be conservative given the deeply-entrenched gendered division of labour in the Thai agricultural sector. | • Women migrant agricultural workers are protected from gender-based discrimination. |
+|                      | • Women migrant workers are eligible to receive project-supported training (where they meet other relevant criteria – e.g., they are rice farmers in the project area, etc.). | • Farmer training emphasises the need – and obligation for project participation – to comply with all labour laws, including anti-discrimination legislation. |
+|                      | • Training on climate-smart rice agriculture for farmers (most of whom are not migrants) presents the perspective of women migrant workers, so that all farmers understand – and, ideally, empathise with – the challenges migrant women confront. | • Farmers’ participation in the project will be contingent upon their respect for labour law and gender non-discrimination. Training will be designed to include the perspectives and needs of women migrant workers. |
+|                      | Climate-smart agriculture training for women in vulnerable situations is conducted in the village or the place of their preference, taking into consideration their time constraints. Older women belonging to an ethnic group or self-identifying as belonging to an indigenous people | Training and other knowledge acquisition opportunities will be designed to cater to the needs of different target groups, especially vulnerable groups – to the extent |
+
+[Page 194]
+
+
+---
+*Chunk pages 195–195*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1217 (sys=94, user=1123), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.10.0 | PAGE 192
+
+## Training and Knowledge Acquisition Opportunities
+
+- Women with small children, elderly women living alone, women with disabilities, women living with people with care needs, women from ethnic groups or self-identifying as belonging to an indigenous people are able to access training and other knowledge acquisition opportunities.
+- People might have more difficulties accessing these trainings because of language and cultural barriers. If needed, special training will be arranged for this particular group of women.
+
+## Training Materials
+
+- Training materials are made available online and offline and in smart phone-compatible formats, so that they can be accessed when convenient to the user.
+- Allowed by geographical, logistic and financial constraints.
+
+## Atingi Learning Platform
+
+- The atingi learning platform (Sub-Activity 1.1.1.1) and training materials for the app developed under Sub-Activity 1.1.1.3 will have offline functionality to facilitate learning in circumstances where internet access is not available or is too expensive.
+
+## Climate-Smart Technologies and Practices
+
+- Introduced climate-smart technologies and practices have relevance and utility for women as well as men.
+
+## Gender-Responsive Training Modules
+
+- All training modules (materials, coursework, etc.) are reviewed by a gender expert to ensure they are gender-responsive and adequately reflect gender equality and interests: e.g., by highlighting the cost reduction dimension of climate-smart technologies, applications for work where women are heavily represented (e.g. bio-fertilizer production) and by showcasing under-exploited potentials for women's income generation.
+- Training modules will be reviewed and adapted accordingly by a gender expert.
+
+## Ageing Trend Among Rice Farmers
+
+- The ageing trend among rice farmers – including women farmers – is addressed.
+
+## Secondary School Education
+
+- Secondary school girls and boys, particularly those in the final 2 years of school, in the project areas are introduced to climate-smart agricultural technologies and practices through youth engagement activities.
+- Their awareness of governmental support programmes for rice farmers is raised.
+
+## Returning Farmers
+
+- The perspective of returning farmers (especially targeting young women and men who have just started a family) is reflected in the training approach.
+- The farmer training offered under Sub-Activity 1.1.1.1 will devote particular effort to reaching women and youth.
+- The project will coordinate with the ISRL-T baseline project, which is implementing activities to reduce rural exodus.
+
+## Entrepreneurial Potential of Returnee Women
+
+- The entrepreneurial potential of women returning from urban areas to care for their parents is harnessed.
+- Returnee women are contacted by local mega-farms or village associations and are offered training and information on climate-smart rice farming.
+- Returnee women are paired up in 'reciprocal mentorships', whereby local women farmers provide advice and practical training on rice farming and the returnees provide practical advice on skills acquired (e.g., on technology and commerce).
+- Relevant information sharing, training and mentorship programmes will be organised by the project.
+- Where the project becomes aware of returnee women, the project will (with their free, prior and informed consent) contact relevant mega-farms, village associations, CSOs and extension services to provide them with advisory, technical and networking support.
+
+## BAAC Financial Support
+
+- BAAC financial support is accessible to women farmers and service providers.
+- BAAC develops financial literacy training and financial instruments (incentive payments and Climate-Smart Loan (CSL) scheme) that meet the needs of women farmers, informed by consultations with women's groups and women mega-farm leaders.
+- This would serve as a process for dialogue for BAAC and identify women's financial needs as well as the mode of communication that women find it easy to access.
+- The training provided to BAAC loan officers (Sub-Activity 2.1.2.2) will include the gender dimension of farming and borrowing, so that officers have a full appreciation of the needs of, and the challenges faced by, prospective women customers.
+- The BAAC CSL scheme will be equally available to women and men farmers and to service providers run by women or men.
+
+## Women Farmers and Rice Insurance
+
+- Women farmers benefit from rice insurance.
+- Insurance scheme awareness-raising and insurance literacy training are provided to women's groups and women farmers.
+- A feedback mechanism is established to allow women farmers to voice their insurance needs, including for businesses based on rice residues as inputs.
+- Under Sub-Activity 2.1.1.3, the project will provide training and awareness-raising to farmers (women and men) to improve their understanding of insurance and its ability to transfer away climate-related risks.
+- The project will support the development of new insurance products and a roadmap to transition the TRIS to an index-based model: women farmers' views will be gathered, assessed and responded to during implementation of these workstreams.
+
+
+---
+*Chunk pages 196–196*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1286 (sys=94, user=1192), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.10.0 | PAGE 193
+
+## Women farmers are acknowledged as current or potential service providers and are supported accordingly.
+
+- **Women farmers and women’s groups are supported as service providers – notably, for bio-fertilizer production (for which rice straw residues can be used in conjunction with traditional manure substrate).**
+- **Support is provided to identify other biomass sources (in addition to currently-used cow dung) that can be used in conjunction with rice residues to make bio-fertilizer.**
+- Sub-Activity 3.1.1.1 will incorporate market analysis and support to women’s groups in the context of bio-fertilizer production.
+
+## Women farmers benefit from rice insurance.
+
+- **Insurance scheme awareness-raising and insurance literacy training are provided to women’s groups and women farmers.**
+- **A feedback mechanism is established to allow women farmers to voice their insurance needs, including for businesses based on rice residues as inputs.**
+- Sub-Activity 2.1.1.3 will provide training to women farmers and to women’s groups. A series of consultation rounds with women farmers and women’s groups is included in the project budget.
+- Feedback will also be collected from training participants using standard attendee score cards.
+
+## Market access for premium, climate-smart rice is available for women farmers.
+
+- **Women’s groups are able to sell their premium rice (higher-quality, low-emission, etc.) to consumers directly through marketing and packaging support rather than being obliged to blend it with standard rice, or are supported in their market linkages to suitable off-takers (e.g., by being supported to adopt practices that conform to agricultural standards such as the TAS, SRP or equivalent).**
+- The project will undertake extensive actions to strengthen the ability of farmers (women and men) to grow sustainable rice, to become TAS-certified, to access finance sources needed to support their transition to climate-smart rice farming practices, and to strengthen and extend the TAS standard itself (product labels, auditing systems, etc.).
+- The Thai Agricultural Standard for Sustainable Rice (TAS) includes women’s empowerment as a foundational element.
+  - **The TAS women’s empowerment indicators are reviewed in the Thai gender context.**
+  - **The TAS standard is supported to expand and to include women’s empowerment indicators.**
+  - **TAS women empowerment indicator data is collected, tracked in the master list of gender-disaggregated data, and reported to inform evolution of the standard and broader policymaking.**
+- The project is committed to working with ACFS to further enhance the TAS – in its climate mitigation and adaptation aspects but also with regard to other sustainability elements, including gender.
+
+## Farmers in the project area are aware of SEAH issues and are supported.
+
+- **SEAH awareness campaigns are conducted.**
+- **Functioning GRM on SEAH issues is established in the project area.**
+- **Peer support on SEAH-related issues is established and supported with capacity building and linkages.**
+- The project is committed to support and set up at least one network on SEAH per province, a functioning and effective grievance mechanism and trainings on SEAH-related topics.
+
+## All 5 EEs (RD, BAAC, ONEP, IRRI, GIZ) have well-trained GFPs to implement GAP.
+
+- **Each EEs appoint at least one GFP.**
+- **GFPs of each EE are trained on gender integration, gender mainstreaming, gender M&E, and gender-sensitive communication and are equipped to implement the GAP.**
+- EEs gender-related activities will be supported and monitored by the project.
+
+## All 5 EEs are aware on SEAH issues.
+
+- **EEs project key personnel is trained on SEAH annually.**
+- **EEs SEAH-related activities will be supported and monitored by the project.**
+
+## The Rice Department is responsive to women farmers’ needs.
+
+- **Regular consultations with RD are organised to reflect and consult on gender integration in the rice sector.**
+- **Regional RD facilities (rice seed centres, rice research centres) are supported with gender-inclusive outreach.**
+- **Recommendations for an RD gender action plan are developed in a participatory process with RD.**
+- **RD sets up a SEAH GRM.**
+- **Training provided to RD staff is gender-inclusive, so that gender-related issues are appropriately communicated to RD stakeholders (such as rice farmers).**
+- **RD staff training includes women’s empowerment performance indicators under the revised TAS.**
+- **RD’s gender-related activities will be supported and monitored by the project.**
+
+## BAAC is responsive to women farmers’ needs.
+
+- **BAAC develops a GAP.**
+- **Gender action plan dissemination training is provided for BAAC staff.**
+- **BAAC monitors the progress of the GAP.**
+- **BAAC establishes a GRM for SEAH related issues.**
+- **BAAC’s gender-related activities will be supported and
+
+
+---
+*Chunk pages 197–197*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1037 (sys=94, user=943), max_out=1024, ctx=8192
+---
+
+# G  
+ GREEN CLIMATE FUND FUNDING PROPOSAL V.10.0 | PAGE 194  
+
+## Gender-related activities  
+
+• ONEP’s ESS guidelines explicitly address gender aspects.  
+• ONEP’s Environmental Fund Division (EFD) is to include gender criteria for funding allocation decisions.  
+• ONEP establishes a SEAH GRM.  
+
+IRRI is responsive to women farmers’ needs.  
+• All IRRI Thailand recruitment processes and TOR descriptions are made gender-sensitive.  
+• Guidelines for gender-sensitive action are established for IRRI Thailand.  
+• Training to disseminate IRRI’s gender guideline for action is provided for all IRRI staff.  
+• Performance on gender guidelines is monitored and included in regular project reports.  
+• IRRI Thailand establishes a SEAH GRM.  
+
+IRRI’s gender-related activities will be supported and monitored by the project.  
+
+Women farmers are able to fully and productively participate in decision-making in local governance institutions.  
+• The roles and successes of women are showcased in project-related events (e.g. as demonstration farmers, as event speakers, etc.).  
+• Focused training on climate change issues is provided to interested women’s groups so that they can play a role as environment and climate-smart technology advocates.  
+• Annual national workshops are organised for agriculture- and environment-relevant ministries and departments and women leaders in the rice sector to discuss the role of women in their organisations, how to strengthen their leadership roles and networking.  
+
+## The project will undertake extensive awareness-raising, training and networking events, which will be equally accessible to women and men. Further, under Sub-Activity 3.1.4.1, the project will organise a regional (ASEAN) workshop and a side-event at the International Rice Congress. It is currently envisaged (subject to confirmation during project implementation) that gender issues – and, specifically, the ‘real world’ gendered aspects of transitioning to climate-smart rice agriculture – will feature prominently in one or both of these international events so that other countries can learn from Thailand’s experience.  
+
+## Women farmers are included in, and their views are reflected in, exchange and peer-to-peer learning activities.  
+• Women and women’s groups are included in the project’s regional and national exchange and peer-to-peer learning activities and events.  
+• Best-practice cases on gender equality and social inclusion in the project are collected and disseminated – online and at meetings and workshops, including the ASEAN Women Entrepreneurs Network (AWEN) and the ASEAN Confederation of Women’s Organisations (ACWO).  
+
+## Women and women’s groups will be fully included in information exchange and peer-to-peer learning. Best-practice cases will be disseminated. The project knowledge management plan (Annex 23a) makes special provision for gender-related knowledge dissemination and knowledge products. Links with AWEN, ACWO and other regional organisations will be cultivated and deepened.  
+
+## G.3. Financial management and procurement  
+
+455. The Executing Entities – BAAC, IRRI, ONEP and RD – will sign subsidiary agreements with GIZ as the Accredited Entity, based on GIZ standard operating procedures for financing contracts. These agreements will establish the legal basis by which GIZ makes GCF funding available to the Executing Entities to manage and operate the Thai Rice Project. The Executing Entities are responsible for implementing and administering their activities in accordance with GIZ and their own standard operating procedures. As the Accredited Entity, GIZ has assessed the capacities of the Executing Entities and is satisfied that they are able to implement their respective tasks within the project (please refer to Annex 2a).  
+
+## G.3 Disbursement and procurement arrangements  
+
+### Financial Management  
+
+456. The financial management of the Thai Rice Project will follow GIZ’s internal rules and regulations. GIZ has bank accounts with Deutsche Bundesbank and Commerzbank. GIZ will not open a specific bank account for GCF proceeds and other GCF funds but will ensure that all funds provided are clearly identifiable and distinguishable.
+
+
+---
+*Chunk pages 198–198*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=802 (sys=94, user=708), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.10.0 | PAGE 195
+
+## From GIZ’s other funds by setting up separate cost units exclusively for the funds disbursed by the GCF for each funded activity (ledger accounts). Funds received and expenditures incurred will be booked to the respective cost unit according to generally accepted accounting principles and procedures accepted by the German Government.
+
+As a general principle, GIZ disburses funds to recipients in accordance with the progress of the project. The Executing Entities have to report on the proper use of funds and defined progress as a prerequisite for any further disbursement.
+
+## Procurement
+
+### 457. In the case of procurement by GIZ, GIZ will follow its own procurement guidelines. GIZ is required to comply with the relevant contracting rules established in the German Act against Restraints of Competition (GWB), the German Regulation on the Award of Public Contracts (VgV) and, if applicable, the Contracting Rules for the Award of Public Service Contracts when procuring services, construction work and supplies.
+
+### 458. When awarding contracts for supplies and services (including consultancy services) to be financed in full or in part from the financing contract / grant agreement, the external Executing Entities will have to comply with the provisions mentioned in the Procurement Guidelines for projects funded by GCF/GIZ. These guidelines set out the principles, procedures and minimum standards that recipients of GIZ financing must adhere to.
+
+### 459. The Procurement Guidelines shall not contradict the applicable national procurement law and/or regulations for public procurement, which apply in the Executing Entities’ countries. In principle, the regulations of the Executing Entities’ countries are to be observed; the procurement procedures mentioned in the Guidelines are obligatory minimum standards. While implementing a project with public funds, the Executing Entities should take reasonable account of economic efficiency as well as ecological and social aspects.
+
+### 460. The Thai Rice Project’s procurement plan is provided in Annex 10a.
+
+## Independent external auditing
+
+### 461. Independent external auditors will perform annual financial audits of the Thai Rice Project in line with International Auditing Standards. GIZ will be responsible for selecting and engaging the external auditors.
+
+## G.4. Disclosure of funding proposal
+
+- ☐ No confidential information: The accredited entity confirms that the funding proposal, including its annexes, may be disclosed in full by the GCF, as no information is being provided in confidence.
+- ☒ With confidential information: The accredited entity declares that the funding proposal, including its annexes, may not be disclosed in full by the GCF, as certain information is being provided in confidence. Accordingly, the accredited entity is providing to the Secretariat the following two copies of the funding proposal, including all annexes:
+  - Full copy for internal use of the GCF in which the confidential portions are marked accordingly, together with an explanatory note regarding the said portions and the corresponding reason for confidentiality under the accredited entity’s disclosure policy, and
+  - Redacted copy for disclosure on the GCF website.
+  
+The funding proposal can only be processed upon receipt of the two copies above, if containing confidential information.
+
+
+---
+*Chunk pages 199–199*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=669 (sys=94, user=575), max_out=1024, ctx=8192
+---
+
+# Annexes
+
+## H.1. Mandatory annexes
+
+- **Annex 1** NDA no-objection letter(s) (template provided)
+- **Annex 2** Feasibility study - and a market study, if applicable
+- **Annex 3** Economic and/or financial analyses in spreadsheet format
+- **Annex 4** Detailed budget plan (template provided)
+- **Annex 5** Implementation timetable including key project/programme milestones (template provided)
+- **Annex 6** E&S document corresponding to the E&S category (A, B or C; or I1, I2 or I3):  
+  (ESS disclosure form provided)
+- **Environmental and Social Impact Assessment (ESIA)** or
+- **Environmental and Social Management Framework (ESMF)** or
+- **Environmental and Social Management Plan (ESMP)**
+- **Annex 7** Summary of consultations and stakeholder engagement plan
+- **Annex 8** Gender assessment and project/programme-level action plan (template provided)
+- **Annex 9** Legal due diligence (regulation, taxation and insurance)
+- **Annex 10** Procurement plan (template provided)
+- **Annex 11** Monitoring and evaluation plan (template provided)
+- **Annex 12** AE fee request (template provided)
+- **Annex 13** Co-financing commitment letter, if applicable (template provided)
+- **Annex 14** Term sheet including a detailed disbursement schedule and, if applicable, repayment schedule
+
+## H.2. Other annexes as applicable
+
+- **Annex 15** Evidence of internal approval (template provided)
+- **Annex 16** Map(s) indicating the location of proposed interventions
+- **Annex 17** Multi-country project/programme information (template provided)
+- **Annex 18** Appraisal, due diligence or evaluation report for proposals based on up-scaling or replicating a pilot project
+- **Annex 19** Procedures for controlling procurement by third parties or executing entities undertaking projects financed by the entity
+- **Annex 20** First level AML/CFT (KYC) assessment
+- **Annex 21** Operations manual (Operations and maintenance)
+- **Annex 22** Assessment of GHG emission reductions and their monitoring and reporting (for mitigation and cross-cutting projects)
+
+## Other references
+
+- **Annex X** Other references
+
+
+---
+*Chunk pages 200–200*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=615 (sys=94, user=521), max_out=1024, ctx=8192
+---
+
+# Annex Number Annex Document
+
+1. NDA Approval  
+1a NDA Letter of No Objection  
+
+2. Feasibility Study  
+2a Feasibility study  
+2b Market Study for GCF Thai Rice  
+2c Climate Modelling Report  
+2d Thai Rice Insurance Scheme: Recommended Actions on Innovative Climate Risk Finance for the Agricultural Sector in the ASEAN Region  
+2e Thai Rice Facility Report  
+2f Crop Model Study of Rice Yields Under Climate Change Impacts  
+
+3. Economic and Financial Analysis  
+3a Economic and Financial Analysis  
+3b Economic and Financial Analysis  
+3c Market study data summary  
+
+4. Project Budget  
+4a Project budget  
+4b Notes & Assumptions  
+
+5. Implementation Timetable  
+5a Implementation timetable  
+
+6. Environmental and Social Documents  
+6a Environmental and social impact assessment (ESIA), environmental and social management plan (ESMP), environmental and social management framework (ESMF)  
+6b Ethnic Groups Plan (EGP)  
+
+7. Stakeholder Consultations  
+7a Stakeholder Engagement Plan (SEP)  
+7b Summary of stakeholder consultations  
+
+8. Gender Assessment and Action Plan  
+8a Gender Assessment  
+8b Gender Action Plan  
+
+9. Legal Due Diligence  
+9a Legal Due Diligence: Regulation, Taxation and Insurance  
+
+10. Procurement Plan  
+10a Procurement plan  
+10b Procurement guidelines for projects funded by GIZ  
+
+11. Monitoring and Evaluation Plan  
+11a Monitoring and evaluation plan  
+
+12. AE Fee Request  
+12a AE fee request  
+
+13. Co-finance Letters  
+13a Co-finance letter: BMZ  
+13b Co-finance letter: PepsiCo  
+13c Co-finance letter: MARS  
+13d Co-finance letter: Olam Agri Group  
+13e Co-finance letter: Ebro Foods  
+13f Co-finance letter: Rice Department  
+13g Co-finance letter: BAAC  
+13h Co-finance letter: IRRI  
+13i Co-finance letter: ONEP  
+
+14. Term Sheet  
+14a Term sheet  
+
+15. Internal Approval  
+15a GIZ letter of internal approval  
+
+16. Maps  
+16a Map of project area
+
+
+---
+*Chunk pages 201–201*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=272 (sys=94, user=178), max_out=1024, ctx=8192
+---
+
+# 19. Procedures for Controlling Procurement by Executing Entities
+
+## 19a. Procedures for controlling procurement by third parties or executing entities undertaking projects financed by the entity
+
+# 20. First level AML/CFT (KYC) Assessment  
+
+## 20a. First level AML / CFT (KYC) Assessment 
+
+# 22. Assessment of GHG Emission Reductions  
+
+## 22a. GHG model baseline 
+
+## 22b. GHG methodology and mitigation potential assessment 
+
+## 22c. GHG target model 
+
+# 23. Other References 
+
+## 23a. Knowledge management plan 
+
+## 23b. Theory of change diagram
+
+
+---
+*Chunk pages 202–202*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=148 (sys=94, user=54), max_out=1024, ctx=8192
+---
+
+# No-objection letter issued by the national designated authority(ies) or focal point(s)
+
+--- 
+
+This is a placeholder for the content that would typically appear on page 202 of a PDF document. Since no actual text was provided in the extracted text, this section remains empty and serves as a header indicating the presence of a page number (202) without any content to convert into Markdown format.
+
+If you have additional content or specific text from this page, please provide it so I can assist with converting it into GitHub-flavored Markdown.
+
+
+---
+*Chunk pages 203–203*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=129 (sys=94, user=35), max_out=1024, ctx=8192
+---
+
+# Page 203
+
+---
+
+# Page 203
+
+---
+
+# Page 203
+
+---
+
+# Page 203
+
+---
+
+# Page 203
+
+---
+
+# Page 203
+
+---
+
+# Page 203
+
+---
+
+# Page 203
+
+---
+
+# Page 203
+
+---
+
+# Page 203
+
+---
+
+# Page 203
+
+---
+
+# Page 203
+
+---
+
+# Page 203
+
+---
+
+# Page 203
+
+---
+
+# Page 203
+
+---
+
+# Page 203
+
+---
+
+# Page 203
+
+---
+
+# Page 203
+
+---
+
+# Page 203
+
+---
+
+# Page 203
+
+---
+
+# Page 203
+
+---
+
+# Page 203
+
+---
+
+# Page 203
+
+---
+
+# Page 203
+
+---
+
+# Page 203
+
+---
+
+# Page 203
+
+---
+
+# Page 203
+
+---
+
+# Page 203
+
+---
+
+# Page 203
+
+---
+
+# Page 203
+
+---
+
+# Page 203
+
+---
+
+# Page 203
+
+---
+
+# Page 203
+
+---
+
+# Page 203
+
+---
+
+# Page 203
+
+---
+
+# Page 203
+
+---
+
+# Page 203
+
+---
+
+# Page 203
+
+---
+
+# Page 203
+
+---
+
+# Page 203
+
+---
+
+# Page 203
+
+---
+
+# Page 203
+
+---
+
+# Page 203
+
+---
+
+# Page 203
+
+---
+
+# Page 203
+
+---
+
+# Page 203
+
+---
+
+# Page 203
+
+---
+
+# Page 203
+
+---
+
+# Page 203
+
+---
+
+# Page 203
+
+---
+
+# Page 203
+
+---
+
+# Page 203
+
+---
+
+# Page 203
+
+---
+
+# Page 203
+
+---
+
+# Page 203
+
+---
+
+# Page 203
+
+---
+
+# Page 203
+
+---
+
+# Page 203
+
+---
+
+# Page 203
+
+---
+
+# Page 203
+
+---
+
+# Page 203
+
+---
+
+# Page 203
+
+---
+
+# Page 203
+
+---
+
+# Page 203
+
+---
+
+# Page 203
+
+---
+
+# Page 203
+
+---
+
+# Page 203
+
+---
+
+# Page 203
+
+---
+
+# Page 203
+
+---
+
+# Page 203
+
+---
+
+# Page 203
+
+---
+
+# Page 203
+
+---
+
+# Page 203
+
+---
+
+# Page 203
+
+---
+
+# Page 203
+
+---
+
+# Page 203
+
+---
+
+# Page 203
+
+---
+
+# Page 203
+
+---
+
+# Page 203
+
+---
+
+# Page 203
+
+---
+
+# Page 203
+
+---
+
+# Page 203
+
+---
+
+# Page 203
+
+---
+
+# Page 203
+
+---
+
+# Page 203
+
+---
+
+# Page 203
+
+---
+
+# Page 203
+
+---
+
+# Page 203
+
+---
+
+# Page 203
+
+---
+
+# Page 203
+
+---
+
+# Page 203
+
+---
+
+# Page 203
+
+---
+
+# Page 203
+
+---
+
+# Page 203
+
+---
+
+# Page 203
+
+---
+
+# Page 203
+
+---
+
+# Page 203
+
+---
+
+# Page 203
+
+---
+
+# Page 203
+
+---
+
+# Page 203
+
+---
+
+# Page 203
+
+---
+
+# Page 203
+
+---
+
+# Page 203
+
+---
+
+# Page 203
+
+---
+
+# Page 203
+
+---
+
+# Page 203
+
+---
+
+# Page 203
+
+---
+
+# Page 203
+
+---
+
+# Page 203
+
+---
+
+# Page 203
+
+---
+
+# Page 203
+
+---
+
+# Page 203
+
+---
+
+# Page 203
+
+---
+
+# Page 203
+
+---
+
+# Page 203
+
+---
+
+# Page 203
+
+---
+
+# Page 203
+
+---
+
+# Page 203
+
+---
+
+# Page 203
+
+---
+
+# Page 203
+
+---
+
+# Page 203
+
+---
+
+# Page 203
+
+---
+
+# Page 203
+
+---
+
+# Page 203
+
+---
+
+# Page 203
+
+---
+
+# Page 203
+
+---
+
+# Page 203
+
+---
+
+# Page 203
+
+
+---
+*Chunk pages 204–204*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=607 (sys=94, user=513), max_out=1024, ctx=8192
+---
+
+# [Page 1]
+
+## Environmental and social safeguards report form pursuant to para. 17 of the IDP
+
+### Basic project or programme information
+
+- **Project or programme title**: Thai Rice: Strengthening Climate-Smart Rice Farming
+- **Existence of subproject(s) to be identified after GCF Board approval**: Yes
+- **Sector (public or private)**: Public
+- **Accredited entity**: Deutsche Gesellschaft für Internationale Zusammenarbeit (GIZ) GmbH
+- **Environmental and social safeguards (ESS) category**: Category B
+- **Location – specific location(s) of project or target country or location(s) of programme**: Kingdom of Thailand
+
+### Environmental and Social Impact Assessment (ESIA) (if applicable)
+
+- **Date of disclosure on accredited entity’s website**: Friday, September 22, 2023
+- **Language(s) of disclosure**: English and Thai
+- **Explanation on language**: Thai is the official language of Thailand.
+- **Link to disclosure**:
+  - **English**: [https://www.thai-german-cooperation.info/wp-content/uploads/2023/09/annex-6a_esia_esmp_esmf_en.pdf](https://www.thai-german-cooperation.info/wp-content/uploads/2023/09/annex-6a_esia_esmp_esmf_en.pdf)
+  - **Thai**: [https://www.thai-german-cooperation.info/wp-content/uploads/2023/09/index6a-th.pdf](https://www.thai-german-cooperation.info/wp-content/uploads/2023/09/index6a-th.pdf)
+- **Other link(s)**: Thailand - giz.de
+- **Remarks**: An ESIA consistent with the requirements for a Category B project is contained in the “ESIA/ESMP/ESMF” document (Annex 6a).
+
+### Environmental and Social Management Plan (ESMP) (if applicable)
+
+- **Date of disclosure on accredited entity’s website**: Friday, September 22, 2023
+- **Language(s) of disclosure**: English and Thai
+- **Explanation on language**: Thai is the official language of Thailand.
+- **Link to disclosure**:
+  - **English**: [https://www.thai-german-cooperation.info/wp-content/uploads/2023/09/annex-6a_esia_esmp_esmf_en.pdf](https://www.thai-german-cooperation.info/wp-content/uploads/2023/09/annex-6a_esia_esmp_esmf_en.pdf)
+  - **Thai**: [https://www.thai-german-cooperation.info/wp-content/uploads/2023/09/index6a-th.pdf](https://www.thai-german-cooperation.info/wp-content/uploads/2023/09/index6a-th.pdf)
+- **Other link(s)**: Thailand - giz.de
+- **Remarks**: An ESMP consistent with the requirements for a Category B project is contained in the “ESIA/ESMP/ESMF” document (Annex 6a).
+
+
+---
+*Chunk pages 205–205*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=604 (sys=94, user=510), max_out=1024, ctx=8192
+---
+
+# Environmental and Social Management (ESMS) (if applicable)
+
+## Date of disclosure on accredited entity’s website  
+N/A  
+
+## Language(s) of disclosure  
+N/A  
+
+## Explanation on language  
+N/A  
+
+## Link to disclosure  
+N/A  
+
+## Other link(s)  
+N/A  
+
+## Remarks  
+N/A  
+
+## Any other relevant ESS reports, e.g. Resettlement Action Plan (RAP), Resettlement Policy Framework (RPF), Indigenous Peoples Plan (IPP), Indigenous Peoples Planning Framework (IPPF) (if applicable)
+
+### Description of report/disclosure on accredited entity’s website  
+
+#### Indigenous Peoples Plan (IPP):  
+Friday, September 22, 2023  
+
+#### Language(s) of disclosure  
+English and Thai  
+
+#### Explanation on language  
+Thai is the official language of Thailand.  
+
+#### Link to disclosure  
+
+##### Ethnic Groups Plan (EGP)  
+
+- English:  
+  [https://www.thai-german-cooperation.info/wp-content/uploads/2023/09/annex-6b_ethnic_groups_plan_en.pdf](https://www.thai-german-cooperation.info/wp-content/uploads/2023/09/annex-6b_ethnic_groups_plan_en.pdf)  
+
+- Thai:  
+  [https://www.thai-german-cooperation.info/wp-content/uploads/2023/09/index6b-th.pdf](https://www.thai-german-cooperation.info/wp-content/uploads/2023/09/index6b-th.pdf)  
+
+##### Gender Assessment (GA)  
+
+- English:  
+  [https://www.thai-german-cooperation.info/wp-content/uploads/2023/09/annex_8a_gender-assessment_en.pdf](https://www.thai-german-cooperation.info/wp-content/uploads/2023/09/annex_8a_gender-assessment_en.pdf)  
+
+- Thai:  
+  [https://www.thai-german-cooperation.info/wp-content/uploads/2023/09/index8a-th.pdf](https://www.thai-german-cooperation.info/wp-content/uploads/2023/09/index8a-th.pdf)  
+
+##### Gender Action Plan (GAP)  
+
+- English:  
+  [https://www.thai-german-cooperation.info/wp-content/uploads/2023/09/annex-8b_gap-en.pdf](https://www.thai-german-cooperation.info/wp-content/uploads/2023/09/annex-8b_gap-en.pdf)  
+
+- Thai:  
+  [https://www.thai-german-cooperation.info/wp-content/uploads/2023/09/index8b-th.pdf](https://www.thai-german-cooperation.info/wp-content/uploads/2023/09/index8b-th.pdf)  
+
+#### Other link(s)  
+Thailand - giz.de  
+
+#### Remarks  
+The IPP document is titled “Ethnic Groups Plan (EGP)” (Annex 6b).  
+
+#### Disclosure in locations convenient to affected peoples (stakeholders)  
+
+##### Date  
+Friday, September 22, 2023  
+
+##### Place  
+The ESIA/ESMP/ESMF, the Ethnic Groups Plan (EGP), the Gender Assessment (GA) and the Gender Action Plan (GAP)  
+
+--- 
+
+*Page 205*
+
+
+---
+*Chunk pages 206–206*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=506 (sys=94, user=412), max_out=1024, ctx=8192
+---
+
+# [Page 1]
+
+## Address Information
+
+### Chiang Mai Rice Seed Center
+- **Address:** 401 Moo.12 Nong Khwai, Hang Dong, Chiang Mai, Thailand  
+- **Phone:** +66 5 311 4062  
+- **Email:** cmi_rsc@rice.mail.go.th  
+- **Website:** [https://cmi-rsc.ricethailand.go.th/address.php](https://cmi-rsc.ricethailand.go.th/address.php)
+
+### Ubon Ratchathani Rice Seed Center
+- **Address:** Chaengsanit Rd., Chaeramae, Mueang Ubon Ratchathani, Ubon Ratchathani, 34000  
+- **Phone:** +66 4 534 4104  
+- **Email:** ubn_rrc@rice.mail.go.th  
+- **Website:** [https://ubn-rrc.ricethailand.go.th/main.php](https://ubn-rrc.ricethailand.go.th/main.php)
+
+### Thailand Rice Science Institute
+- **Address:** No.213 Moo. 5 Malaiman Rd., Mueang, Suphan Buri 72000  
+- **Phone:** +66 3 555 5340  
+- **Email:** trsi.rd@rice.mail.go.th  
+- **Website:** [https://trsi.ricethailand.go.th/address.php](https://trsi.ricethailand.go.th/address.php)
+
+### GIZ office Thailand
+- **Address:** 193/63 Lake Rajada Office Complex (16th floor), New Ratchadapisek Road, Klongtoey, Bangkok 10110  
+- **Phone:** +66 2 661 9273  
+- **Phone:** +66 2 661 9281  
+- **Email:** giz-thailand@giz.de  
+
+## Available Copies
+
+### Hard copies are made available at:
+- Chiang Mai Rice Seed Center
+- Ubon Ratchathani Rice Seed Center
+- Thailand Rice Science Institute
+
+### Soft copies are made available at:
+- Office of Natural Resources and Environmental Policy and Planning (ONEP)
+  - Website: [http://envfund.onep.go.th/media/description?itemId=94](http://envfund.onep.go.th/media/description?itemId=94)
+
+## Board Meeting Dates
+
+- **Date of Board meeting in which the FP is intended to be considered:** N/A  
+- **Date of accredited entity’s board meeting:** N/A  
+- **Date of GCF’s board meeting:** Monday, October 23, 2023  
+
+> Note: This form was prepared by the accredited entity stated above.
+
+
+---
+*Chunk pages 207–207*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=504 (sys=94, user=410), max_out=1024, ctx=8192
+---
+
+# GCF/B.37/02/Add.05  
+## Page 207  
+
+### Secretariat’s assessment of FP214  
+#### Proposal name: Thai Rice: Strengthening Climate-Smart Rice Farming  
+#### Accredited entity: Deutsche Gesellschaft für Internationale Zusammenarbeit (GIZ) GmbH  
+#### Country: Thailand  
+#### Project/programme size: Medium  
+
+### I. Overall assessment of the Secretariat  
+#### 1. The funding proposal is presented to the Board for consideration with the following remarks:  
+
+**Strengths** | **Points of caution**  
+--- | ---  
+The project promotes a strategic approach to transforming the rice-based food systems of Thailand to sustainable low-emission systems. | It will be important to monitor the progress of the design of the T-VER Rice Scheme and seek to identify how the scheme can later after project closure be scaled up.  
+The project offers the potential to significantly reduce methane emissions from rice production without jeopardizing the rice yield and a unique opportunity to transform all of Thailand’s rice production to a low-emission pathway. | The project will drive behavioural change in smallholder farmers through a targeted incentive mechanism to boost the initial uptake of climate-smart technologies, including laser land levelling (LLL).  
+The project will collaborate with the Bank for Agriculture and Agricultural Cooperatives (BAAC), by complementing BAAC’s climate-smart agricultural lending with technical assistance tailored for BAAC to better structure its financing products for climate change results. |  
+
+#### 2. The Board may wish to consider approving this funding proposal with the terms and conditions listed in the respective term sheet and addendum XXI, titled “List of proposed conditions and recommendations”.  
+
+### II. Summary of the Secretariat’s assessment  
+#### 2.1 Project background  
+
+---  
+[Page 1]  
+---
+
+
+---
+*Chunk pages 208–208*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1042 (sys=94, user=948), max_out=1024, ctx=8192
+---
+
+# GCF/B.37/02/Add.05  
+## Page 208  
+
+### 3.  
+Rice is Thailand’s most important food crop, accounting for roughly half of the country’s agricultural land and employing 18 million smallholder farmers. However, rice farming is also a significant contributor to the country’s greenhouse gas (GHG) emissions, mainly through methane from flooded paddy fields. At the same time, smallholder farmers engaged in rice farming are vulnerable to climate change due to changing rainfall patterns, as well as increasing frequency and severity of flooding and droughts.
+
+### 4.  
+The proposed project aims to bring both adaptation and mitigation results from the rice farming sector in Thailand. If approved, it will be the first GCF project to focus solely on transforming the rice production system. It will support both rice farmers and service providers to adopt a suite of climate-smart technologies and practices, as well as farmer-friendly financial products to sustainably manage their rice farming. Through these interventions, the project will offer unique opportunities to significantly decrease methane emissions, reducing water usage, while still maintaining rice yields and recycling rice straw into new commodities for market.
+
+### 5.  
+The project will be implemented in targeted farmlands in 21 provinces in the central plains, north-east and north, covering about 718,000 hectares with both rain-fed and irrigation schemes. It is structured around three components, namely: (a) investment in climate-smart technologies and practices that can be applied by rice farmers; (b) investment in and offering of climate-smart technologies for rice farmers by service providers; and (c) strengthening of the institutional and market environment for climate-smart agriculture (CSA).
+
+### 6.  
+The proposed project is expected to reduce a total of 12.56 million tonnes of carbon dioxide equivalent (Mt CO₂ eq) during the project lifetime of 15 years. This result will be achieved through application of climate-smart technologies and practices, including water management practices with alternative wetting and drying (AWD), site-specific nutrient management, and straw and stubble management. On the adaptation side, the project will contribute to directly benefiting 253,400 smallholder rice farmers, and an additional 760,200 people indirectly through various trainings and capacity-building activities.
+
+### 7.  
+The total project financing is EUR 118.08 million of which a request is being made for GCF grants of EUR 38.17 million. The co-financing of EUR 79.90 million has also been secured to support the project. The co-financing will be provided by nine entities, in the form of grants, loans, and in-kind financing. The project is submitted under environmental and social safeguards category B, and the total duration of the project is five years.
+
+### 8.  
+Component-by-component analysis  
+
+### 9.  
+Outcome 1: Climate-smart farmers’ incomes and food security are increased despite adverse climate change (total costs: EUR 61.02 million; GCF cost: 25.69 million, or 42 per cent)
+
+### 10.  
+Outcome 1 will support 253,400 smallholder rice farmers to invest in and apply climate-smart technologies and practices. To do so, it will provide trainings to farmers on climate-smart technologies, practices and management. Farmers will be taught to shift their production from high water intensity to low water managed systems, integrated pest management (IPM), and straw recycling with AWD and other techniques to better control water levels in the rice fields, while lowering methane emissions. At the same time, this outcome will enhance farmers’ access to finance for climate-smart farming technologies, through providing financial literacy trainings. It will also offer incentive payments to farmers, encouraging them to adopt climate-smart technologies including AWD and LLL.
+
+### 11.  
+The merit of this outcome lies in the fact that the latest technologies will be transferred to farmers through the development of apps for climate-smart rice farming. As noted in the funding proposal, the level of mobile phone penetration in Thailand is 137 per cent, implying that the potential adoption rate of the apps would be high if they are user friendly and address farmers’ needs. Once developed, the apps will need to be updated on a regular basis to reflect
+
+--- END EXTRACTED TEXT ---
+
+
+---
+*Chunk pages 209–209*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=982 (sys=94, user=888), max_out=1024, ctx=8192
+---
+
+# GCF/B.37/02/Add.05  
+## Page 209  
+
+12. Enhancing farmers’ access to finance is another strong merit of this project. As the proposed climate-smart technologies are at a nascent stage in the country, and farmers’ profits are estimated to decline significantly in the first year of adoption of these technologies, the incentive payments of GCF funding through a grant award mechanism is essential to boost the uptake of the proposed technologies. The mechanics of the incentive payments are well-designed to incentivize farmers to meaningfully engage in the project activities. Only those farmers who have received the requisite training on digital technologies and financial literacy trainings to be carried out earlier in the project will be eligible to apply for the incentive payment. This will motivate farmers to undertake the trainings.  
+
+13. This outcome will be 100 per cent financed by grants from GCF and in-kind contributions from the Rice Department (RD) of the Thai Ministry of Agriculture and Cooperatives, and the International Rice Research Institute. While the economic and financial analysis shows positive returns in the case of the incentive payments (subactivity 1.1.2.2), the proposal presents sufficient justification for the request of full grants, mainly due to the farmers’ low risk appetite and expected low return from farming in the first year. Nonetheless, the proposal states that minimum concessionality is sought to make the proposed interventions viable for the farmers. Such minimum concessionality is evident when compared with the previous Thai Rice NAMA [nationally appropriate mitigation action] Support Project (NSP), noting that grants requested as incentive payments under the Thai Rice Project is less than the NSP.  
+
+## Outcome 2. The climate resilience of rice farming is enhanced and GHG emissions are substantially reduced through the adoption of climate-smart technologies (total costs: EUR 33.22 million; GCF cost: 1.97 million, or 5.9 per cent)  
+
+14. The outcome will foster access to finance schemes to invest in technology transfer and access to innovation to support the transition of rice production. Building on the capacity established in outcome 1, this outcome will allow farmers and communities and local service providers to invest in innovation and technology that will encourage production to move towards a low-emission pathway and significantly reduce GHG emissions.  
+
+15. Outcome 2 will train service providers to provide climate-smart services to rice farmers, including on machine services, insurance and agromet services. These enhanced service provisions will cover approximately 375,000 hectares of farmland. This outcome will also provide climate smart loans (CSLs) by BAAC to creditworthy farmers to offset the reduced farm cashflows in the first year of climate-smart farming, with favourable pricing compared to the market. The total size of the loans will be EUR 30 million entirely co-financed by BAAC.  
+
+16. The proposal provides a clear and robust rationale for the need for technical capacity-building for service providers, including the lessons learned from NSP. Development of the apps under subactivity 1.1.1.3 will play a facilitating role under outcome 2, with a mutual rating function to ensure a high standard of service from the service providers. The project will need to ensure the apps are developed in an intuitive and user-friendly manner, so as to retain as many farmers as possible as quickly as possible.  
+
+17. The proposal presents a clear description of the eligible uses of BAAC loans, indicating which technologies and practices are eligible or not for accessing CSLs. The eligibility criteria are clear and aligned with the GCF investment criteria. The eligibility criteria for loanees have also been clearly identified, and they are aligned with the project objectives. The pricing, terms and conditions of CSLs are deemed to be highly concessional. As BAAC proceeds with debt  
+
+---  
+**End of Page 209**  
+---
+
+
+---
+*Chunk pages 210–210*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=907 (sys=94, user=813), max_out=1024, ctx=8192
+---
+
+# GCF/B.37/02/Add.05  
+Page 210  
+
+## Outcome 3: Government policies and funds are geared towards climate-smart rice (total costs: EUR 16.87 million; GCF cost: 7.19 million, or 42 per cent)  
+
+18. Outcome 3 will strengthen institutional and market environment for climate-smart agriculture, by training farmers to get the Thai Agricultural Standard for Sustainable Rice (TAS) certification. It will also engage with domestic and international off-takers to link up with farmers and increase the visibility of their TAS-certified products.  
+
+19. The proposal increases its paradigm shift by expanding the existing carbon market to include emission reduction from the rice sector. The current Thailand Verified Emission Reduction Scheme (T-VER Scheme) does not include the rice sector, and the project will work with the Thailand Greenhouse Gas Management Organization to develop a rice sector-specific scheme to properly account for reductions in GHG emissions in rice farming. With the collaboration of the Thailand Greenhouse Gas Management Organization, project-supported farmers will be able to register for TAS certification, and sustainably produce their rice.  
+
+20. The outcome will further help establish the Thai Rice facility, a national vehicle to scale up the transitioning of low-emission rice systems and continue to explore the nexus of innovation and finance in the sector. The final outcome will support the enabling conditions of policy, investments and innovation to continue boosting and fostering a long-term transition of the rice systems of Thailand and further boost access to markets for sustainable low-emission rice.  
+
+## III. Assessment of performance against investment criteria  
+
+### 3.1 Impact potential                                     Scale: High  
+
+21. The project has a high impact potential due to the innovative architecture of the three outcomes fostering livelihood diversification for the most vulnerable rice farmers in the target regions reaching 253,400 direct beneficiaries and 760,200 indirect beneficiaries. In addition, the project offers a unique solution to lower methane emissions from rice production by 2.4 Mt CO2 eq during project implementation and 12.5 Mt CO2 eq over the project lifetime. The project presents long-term solutions for the transformation of the rice sector in Thailand. Through the proposed outcomes and the focus on technology transfer, piloting and scaling up key technologies in water management – IPM and straw recycling to name a few – farmers will be able to not only save water, but also to reduce methane emissions while maintaining high rice yields, and to manage fields in a more sustainable manner through IPM methods. Finally, rice straw recycling offers a unique opportunity to find an economic use for straw that would otherwise be burned after each rice harvest thus reducing CO2 emissions and providing communities with the opportunity to explore the vast possibilities for recycling and upcycling rice straw into new products.  
+
+22. The project will further support and build capacity for farmers to gain access to TAS certification, which will allow them to enter key markets and partnerships with the private sector and off takers. The project will further work with the TAS system to align it with the Sustainable Rice Platform standards and to include climate and sustainability indicators and practices in its framework, thereby not only incentivizing farmers to produce higher quality rice for premium markets but also incentivizing the production of climate-smart rice.  
+
+23. The project offers a unique opportunity to scale up the best practices from the Thai Rice Facility to rice-producing areas countrywide, transitioning Thailand’s rice food systems to a  
+
+---  
+*Note: Page numbers are preserved as per instructions.*
+
+
+---
+*Chunk pages 211–211*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=960 (sys=94, user=866), max_out=1024, ctx=8192
+---
+
+# GCF/B.37/02/Add.05  
+## Page 211  
+
+The partnership with BAAC and the loan scheme provided is strategically positioned to provide access to finance to service providers and farmers to invest and roll out the technology and innovation needed for the transition of rice systems.  
+
+### 24. The partnership with the International Rice Research Institute, the world’s leading centre of excellence on rice farming, will play a crucial role in supporting implementation and incorporating the newest innovation and technology from a scientific perspective into the project activities.  
+
+### 3.2 Paradigm-shift potential                Scale: High  
+
+The paradigm shift potential is high due to the innovative and long-term visioned structure of the project providing farmers with the technology, practice, and access to finance to transition their local food systems and secure long-term access to finance, innovation and technology through the unique partnerships with national financial institutions, and technology partners as well as the private sector, all managed and scaled up through the established Thai Rice Facility.  
+
+The project further seeks to solve the challenges with rice straw burning, a significant contributor to GHG emissions in Thailand annually, and instead recycle and upcycle the straw into new commodities, thus creating a national market and demand for such products.  
+
+### 26. The project builds on an innovative and strategic baseline project, the NSP funded by the NAMA facility and GIZ from 2018 to 2023; a project that helped pilot low-emission rice production, private sector collaboration in the agriculture sector and policy support. The new proposed project builds on this strategic base, scaling up the best practices and lessons learned from five years of implementation by anchoring them within the project’s three outcomes.   
+
+### 27. The number of well tested and piloted technologies that the project will scale up and promote to farmers include LLL, AWD, site-specific nutrient management, straw and stubble management and IPM. Farmers will have better and longer-term access to these technologies to help them transition their current rice production to become more resilient and sustainable, reducing water consumption, methane and nitrous oxide emissions, and reduced agrochemical use through IPM methods. The scalability of these methods and technologies will be facilitated both through training and access to finance through the BAAC loan scheme aiding service providers and farmers to invest and deploy these technologies to help transition their rice production.  
+
+### 28. Burning of rice straw after each harvest is standard procedure but contributes to large annual CO2 emissions and air pollution. The project seeks to combat this innovatively by promoting alternative uses of rice straw and stubble for use in production of fertilizer, building material, energy, paper, packaging material, biochar production, etc. The project will study the various options in detail, and will work with farmers to identify the best uses for rice straw and stubble while working in parallel with the private sector to create a demand and market for straw-based products. Once implemented, this will have long-term impact on incentivizing farmers not to burn straw but rather recycle and upcycle it to new products and markets.  
+
+### 29. The project has created an innovative link to the T-VER Scheme by expanding the national carbon market to include a dedicated scheme for rice credits, the proposed ‘T-VER Rice Scheme’ will allow and incentivize rice farmers to shift to low-emission rice production with significant methane emission reductions, and will support and unlock additional finances allowing farmers to reinvest in their rice systems and diversify livelihoods. This new scheme will have a long-term impact and will help not only rice farmers in Thailand to transition their rice production, but also will be of great value to other rice-producing countries in the region which may be inspired to develop similar national schemes. The proposed new scheme on rice will address current gaps in the T-VER Scheme which currently do not focus on agriculture projects and carbon credits from agriculture activities.
+
+
+---
+*Chunk pages 212–212*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=869 (sys=94, user=775), max_out=1024, ctx=8192
+---
+
+# GCF/B.37/02/Add.05  
+## Page 212  
+
+### 30. To facilitate the long-term transition and scalability of low-emission rice production, the project will strategically create a national platform, the Thai Rice Facility, which will coordinate, and extract lessons learned and best practices from the technologies managed, financial instruments and incentives deployed and help scale up the full transition of rice production to significantly reduce methane emissions across the country.  
+
+### 3.3 Sustainable development potential             Scale: High  
+
+#### 31. The project’s sustainable development potential is considered high. It will foster innovation and progress across several Sustainable Development Goals (SDGs) such as SDG 17, SDG 13, SDG 12, SDG 6, SDG 5, SDG 2 and SDG 1.  
+
+#### 32. The project will encourage livelihood diversification, sustainable water management, and farming system practices by fostering integrated pest management solutions aiming to boost the agrobiodiversity of existing farming systems thereby boosting environmental co-benefits. The project will allow farmers themselves to improve management of their rice production and of surrounding ecosystems using IPM as well as through the reduction of straw burning to encourage alternatives and new products to be developed helping to further diversify livelihood strategies.  
+
+#### 33. Socioeconomic co-benefits are well embedded in the project structure with the production of climate-smart rice and new market opportunities created through the TAS, as well as the new window of the T-VER Rice Scheme and flow of future finance to further support farmers’ transition of their rice production. Recycling of rice straw will also open new opportunities and markets for farmers with the possibility of transforming the straw into paper, packaging, biochar, building material, etc., thus stimulating new alternatives and new markets and creating a circular economy.  
+
+#### 34. Gender co-benefits are fully embedded within the project with a key focus on full participation of and inclusivity for women in the transformation of rice farming, as well as focusing on strengthening women farmers’ access to finance, technical capacities and for national institutions to provide gender-responsive support.  
+
+### 3.4 Needs of the recipient                          Scale: High  
+
+#### 35. The needs of the recipient are considered high. The project targets the key rice growing areas in central, east and northern Thailand, areas which are also home to vulnerable communities. Through fostering a transition to low-emission rice production, the project offers the opportunity to transform the entire rice sector of Thailand, one of the largest rice exporters worldwide.  
+
+#### 36. The target beneficiaries and their productive assets are exposed to climate-induced risks severely challenging their livelihood strategies while rice production significantly contributes to Thailand’s annual GHG emissions. The project works directly to reduce the vulnerability of the target beneficiaries by boosting their access to innovation and technology, and finance allowing them to diversify their livelihoods through for example the circular economy promoted by straw recycling and the opportunities this brings to project beneficiaries.   
+
+#### 37. The proposed project would be GCF’s first fully rice-based project and would provide innovative financing to the rice sector in Thailand, to change from a business-as-usual approach and transition rice production to low-emission production. The project offers an innovative approach to collecting, coordinating and matching national and international finance. The rice sector in Thailand is challenged by a lack of financial innovation and access for farmers to financial institutions. The project will directly deliver solutions to change this scenario and
+
+
+---
+*Chunk pages 213–213*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=834 (sys=94, user=740), max_out=1024, ctx=8192
+---
+
+# GCF/B.37/02/Add.05  
+## Page 213  
+
+### 3.5 Country ownership               Scale: High  
+
+39. The country ownership is considered high, rice production and rice food systems are a key priority for Thailand and play significant roles in its national economy. The project is fully aligned with the nationally determined contribution (second updated version), the national adaptation plan, Long-term Low Greenhouse Gas Emission Development Strategy, national climate policies and strategies such as the Ministry of Agriculture and Cooperatives’ climate change strategic plan for the agricultural sector (2023–2027), the fourth national communication to the UNFCCC, fourth biannual update report and technology needs assessment.  
+
+40. The project is well aligned with past and ongoing projects focusing on rice and rice-based farming systems in the country, from bilateral and multilateral partners, and presents a strategic matrix on how these initiatives are linked with the proposed Thai Rice project and how they will be coordinated, and collaboration will take place during implementation.   
+
+41. GIZ and the executing entities proposed to support implementation provide a very strong, strategic and innovative mix of skills, and financial innovation. GIZ has a long-term presence in Thailand, has worked for decades with the country’s government in the rice sector and broader food systems and is uniquely positioned to deliver this project based on its vast global, regional and national experience in food systems transition, rice-based farming systems and financial innovation. Together with national organizations serving as executing entities, the Rice Department, BAAC and Office of Natural Resources and Environmental Policy and Planning (ONEP) the implementation structure is solid, strategic and will provide a strong foundation for a full scaling up of the best practices of the project to transition the rice sector to a sustainable future. Each of these national organizations have long-term experience in the country and are national centres of excellence, contributing with key skill sets and strong bases of innovation and knowledge.  
+
+42. The project will further support the Environmental Fund Division (EFD) hosted by ONEP and strengthen its implementation capacities, building on an ongoing GCF Readiness and Preparatory Support project helping EFD to finalize its accreditation with GCF as a national direct access entity to provide technical and financial support to position EFD to scale up climate-smart rice agriculture in the future.  
+
+43. The project is built on very strategic and well-organized stakeholder consultations led by the Rice Department since 2020 involving all stakeholder groups across the target areas and coordinated through a project working group. This national platform has fostered the key dialogues and consultations that have resulted in the project architecture.   
+
+### 3.6 Efficiency and effectiveness                            Scale: Medium-High  
+
+44. The project’s efficiency and effectiveness are considered medium-high, due to its innovative solution to transforming the rice food systems to sustainable, water-saving and methane-reducing systems and the structure of the national rice scheme under the T-VER Scheme.
+
+
+---
+*Chunk pages 214–214*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=966 (sys=94, user=872), max_out=1024, ctx=8192
+---
+
+# GCF/B.37/02/Add.05  
+## Page 214  
+
+45. Its financial structure is innovative and fills a current challenging gap aiming to boost financial innovation in the rice sector helping to transition it to a sustainable future. The project offers a unique platform for generating and directing finance, innovation and technology into the rice systems through the establishment of the Thai Rice Facility and the integration of the private sector through TAS certifications and off takers, the T-VER Rice Scheme and the circular economy boosted by straw recycling and upcycling establishing new products and markets for rice straw.  
+
+46. The AE developed a well-justified economic and financial analysis with clear references and justification for the assumptions used. The financial analysis assesses financial incentives to rice farmers which accounts for 20 per cent of the requested GCF funding (EUR 7.6 million out of EUR 38.17 million). The incentives are the only activity in the project that potentially generates cash reflows. It models incremental cashflows for farmers who switch from conventional rice farming to CSA over the five-year project implementation period.  
+
+47. The model shows profitability of CSA with and without GCF grants. For all three target regions, the model shows marginal profits through implementing CSA. Nonetheless, request for grants is assessed to be adequate and reasonable, considering financial internal rate of return sensitivity to yields against climate change impacts. The impacts of climate change have been taken into account in the model, by factoring these impacts into the calculation, different rates of yields decline as project implementation progresses. Also, it is acknowledged that farmers in the target regions are inherently averse to adopting new agricultural practices and technologies. The CSA profits in the first year of the project are substantially negative, and the subsequent profits in the following years will not be sufficient to persuade first-time adopters.  
+
+48. The financial model also presents a scenario analysis using a hypothetical concessional loan in the project, with concessional debt from BAAC (5 per cent interest rate, five-year maturity and one-year grace period). The results show positive returns, as the cost of debt is lower than the unlevered financial internal rate of return. The positive result ensures that the CSA has the potential to be sustainable with concessional financing from the existing financial institution (i.e. BAAC). However, the necessity for grants is still valid due to the reasons stated above, as analysed by the AE.  
+
+49. The project’s adaptation cost is EUR 23/beneficiary and its mitigation cost is EUR 1.22/t CO2 eq. Both figures show that the project is highly efficient in delivering climate results. The co-financing ratio is 1:2.09 which is lower than the Updated Strategic Plan target. However, the project shows high potential for mobilizing private finance, if the CSA is successful in the project areas, with the potential for continued financing by BAAC. The level and type of co-finance is very significant and diverse spanning from several financial instruments, including the public and private sectors, national and international actors bringing a diverse package of co-finance to fully help transform the rice sector. The structure of the co-finance, and the project architecture will help boost and leverage additional finance from the private sector in particular through the TAS, T-VER Rice Scheme and rice straw in many years to come and will have a strong catalytic effect in scaling up the best practices from the project across Thailand.  
+
+## IV. Assessment of consistency with GCF safeguards and policies  
+### 4.1 Environmental and social safeguards  
+
+50. Project background. The project aims to sustainably shift smallholder rice agriculture in Thailand onto a low-emission, climate-resilient development trajectory by promoting the adoption of climate-smart rich farming technology and practices among smallholder rice farmers, upscaling and extending relevant services including financial instruments, and strengthening the institutional and market environment for climate-smart agriculture in  
+
+--- 
+
+Note: The text appears to continue on page 214 but ends abruptly. This section is complete as presented.
+
+
+---
+*Chunk pages 215–215*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=986 (sys=94, user=892), max_out=1024, ctx=8192
+---
+
+# GCF/B.37/02/Add.05  
+Page 215  
+
+Thailand. The project will build capacity of smallholder farmers and service providers, respectively, on the application and supply of climate-smart technologies and practices in rice farming. The project will support the development of a number of financial products and services, including grant-based incentive payments to eligible rice farmers to cover part of the costs of switching to climate-smart agriculture; piloting an index-based insurance based on the existing insurance services to lower the costs of insurance for rice farmers who are at less risk of crop damage or can lower the damage following climate-smart measures; and developing a new climate-smart loan to creditworthy farmers switching to climate-smart agriculture. Among the environmental and social (E&S) co-benefits are the reduced greenhouse gas emissions, improved air quality from less straw burning, and improvements in water quality and availability from environmentally sound management and use of chemicals. The project is also expected to contribute to the empowerment of the women and youth in the target areas.
+
+51. Environmental and social risk category. The AE assigned the project moderate E&S risk category which is considered equivalent of GCF’s Category B. The Secretariat confirms the proposed E&S risk category considering the small-scale nature of the interventions that will be carried out by the smallholder farmers. Implementation of the proposed climate-smart technologies and practices is expected to have potential minimal to moderate environmental and social risks, which are expected to be highly localized and can be avoided and mitigated through careful design and the application of generally accepted mitigation measures and standards. The Secretariat also confirms that the assigned risk category is within the accreditation level of the AE.
+
+52. Safeguards instrument. The AE provided an environmental and social assessment, environmental and social management plan, and environmental and social and management framework (ESMF) with the funding proposal as the safeguard document. The document provides an overview of the national context for environmental and social risk assessment, the potential environmental and social risks likely to be associated with the project activities and a range of climate-smart technologies and practices targeted by the project. As the project will involve financial support to individual smallholder farmers or institutions, site-specific environment and social impact assessments and manage plans will be developed during the project’s implementation.
+
+53. Compliance with the GCF ESS standards: The paragraphs below provide a brief description of the programme’s compliance with ESS standards.
+
+54. ESS 1: Assessment and management of environmental and social risks and impacts. The ESMF discussed the environmental and social baseline of North, North-East, and Central regions targeted by the project and assessed the general risks and impact against the policies and standards of the project’s E&S reference framework. It includes an assessment of the anticipated positive and negative direct, indirect, and cumulative impacts from the project implementation, the significance level and the corresponding mitigation measures of each risk identified per the AE’s safeguard standards, as well as indicative mitigation measures related to the 10 climate-smart technologies and practices to be supported by the project. As the project will provide financial supports with the exact beneficiaries and types of technologies and practices that are yet to be identified during project implementation, the ESMF outlines the due diligence process to be undertaken for activities to be financially supported by the project including through incentive payments, climate-smart agriculture lending, and through the Thai Climate Initiative (ThaiCI). The costs of implementing the ESMF have been identified and integrated into the project’s budget. Additional details on the identified risks and how they will be mitigated are provided below.
+
+55. ESS 2: Labour and working conditions. The AE assessed that most project interventions, including the deployment of the proposed technologies and practices, are expected to be low risk for labour and working conditions, and AE identified that the needs and interests of female smallholder farmers are not yet addressed systematically in Thailand’s rice farming sector.
+
+
+---
+*Chunk pages 216–216*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1037 (sys=94, user=943), max_out=1024, ctx=8192
+---
+
+# GCF/B.37/02/Add.05  
+## Page 216  
+
+### ESS 3: Resource efficiency and pollution control  
+The ESMF assessed the baseline conditions with regards to rice straw burning, use of fertilizers, pesticides and chemical overflow to waterways and soil bodies, and noted that while rice farming in general does not significantly cause pollution to public water bodies as the level of concentration is relatively low compared to other crops. The project may nonetheless present low risks and impacts from the implementation of climate-smart technologies and practices against the baseline conditions, and may also face the risk of deficient amounts of water received by farmers due to high demand of water and inefficiencies in water distribution.  
+
+To maximize the positive impacts of reduction of GHG emissions, air pollution, and the contamination of chemicals in air, soil and water bodies and increase of resource efficiency, prevent and minimize the negative impacts on resources, the project will take prevention measures and monitoring of soil health and soil fertility during implementation, promote the safe use of chemicals and straw utilisation and commercialisation as part of the ESMP. The project will also provide water management support at the farm-level and coordinate with water management committees.   
+
+### ESS 4: Community health, safety and security  
+The AE assessed medium risks to the community health and safety due to the lack of awareness and training in basic health and safety measures, misuse or management of chemicals, accidents arising from the use of machinery, infectious disease from the outdoor and aquatic environment associated with rice farming and the exposure to inclement weather conditions. While the some of the technologies will reduce farmers’ exposure to hazardous chemicals and extreme weather conditions, the project will provide occupational health and safety training for farmers and extension services, including guidance on the safe operation and maintenance of equipment associated with climate-smart farming technologies and practices.  
+
+The project will promote preventive methods and the principle of “non-chemical first” and the use of chemical pesticide as the last option with trainings for the adoption of appropriate procedures for the safe use and handling of fertilizer and other agro-chemicals. The project will also take measures including sound disposal of registered pesticides and active ingredients. The project-supported agro-met advisory services will include emergency alerts in addition to the standard climate-smart farming information to help farmers and communities prepare for and respond to emergencies.  
+
+### Conflict sensitivity  
+The ESMF considered conflict sensitivity as part of the ESS assessment, noting that the distribution of water via the public irrigation system during the dry season or long intervals with little or no precipitation may cause lack of water for farmers located downstream. Such situation of water shortage may lead to competition between farmers and the lack of trust in water management authorities, particularly in the Central Plain of Thailand where most farmers rely on the public irrigation system.  
+
+The project will strengthen knowledge and built capacity of farmers, coordinate water management related interventions with local water usage organisations, and support policy and planning to adapt to this situation. As conflicts between farmers and service providers may arise in the case of high demand for some of the technological services promoted by the project, such as the Laser Land Levelling (LLL) services and that the consequent non-  
+
+---  
+**Note:** The text appears to end mid-sentence, likely due to a PDF extraction issue. The last line seems incomplete.
+
+
+---
+*Chunk pages 217–217*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1024 (sys=94, user=930), max_out=1024, ctx=8192
+---
+
+# GCF/B.37/02/Add.05  
+## Page 217  
+
+### 59. ESS 5: Land acquisition and involuntary resettlement  
+The project does not include any activities that will require land acquisition or resettlement. However, project activities could affect the land use rights with regards to the farm-level water management which may involve micro-interventions such as the installation of water thanks. The project interventions will take place only when land ownership, possession and land use rights are clear. The locations of all farm plots served by the project, where climate-smart technologies and practices are adopted, will be logged, and that only when the land is officially categorised as rice farming land by the government will be eligible to participate in the project. Prior to the commencement of project activities, the ownership of each plot will be identified from the official registration information and that the landowner’s prior agreement will be obtained. Where a plot is rented by the landowner to a farmer, the prior consent of both the landowner and the farmer will need to be obtained.
+
+### 60. ESS 6: Biodiversity conservation and sustainable management of living natural resources  
+While noting the challenge of obtaining data on biodiversity in Thai rice field in general and the lack of detailed information on the effects of the technologies planned to be promoted by the project, the AE undertook a comprehensive survey of the academic literature, which did not raise any concern related to natural habitat, ecosystem or biodiversity in relation to the adoption of climate-smart farming practices proposed by the project and concluded that the adoption of climate-smart agriculture (with accompanying reductions in agro-chemical use) may in fact have beneficial impacts on some types of insects, birds, and amphibious animals. Nonetheless, a precautionary approach should be exercised in implementing the project activities to ensure that the potential negative impacts, such as the introduction of agro-chemicals, alien or invasive species, pests and pathogens are adequately addressed. The AE will carry out a multi-taxon biodiversity study to monitor the impacts of project activities in rice fields and report the results of the study as part of the project’s mid-term review. The AE will undertake appropriate actions in response to the results of the study where needed. In addition, a biodiversity module will be included in the training to farmers and service providers on climate-smart agricultural practices. Specific to the straw and stubble management (SSM) technology/ practice, the AE will each year collect and analyse the data from a representative sample of farmers practising SSM to ensure that their diversion of biomass residues for other purposes will not inadvertently lead to a compensating increase in their use of chemical fertilizers. If this is found to be a problem, the project will take adaptive measures and put into place necessary trainings.
+
+### 61. GCF Indigenous Peoples Policy and ESS 7 on Indigenous Peoples  
+The project adopts no-harm measures to manage the risks involved for indigenous individuals that will be part of the project, and further proposes a ‘do-good’ approach with proactive measures for indigenous communities, that are reflected in an Ethnic Groups Plan. In the development of the Ethnic Groups Plan, consultations were undertaken with villages that self-identify as indigenous. Culturally tailored grievance and redress mechanisms for indigenous peoples are foreseen. Activities adhere to the key principles of the GCF Indigenous Peoples Policy. The AE foresees to undertake a meaningful consultation process, seeking the free, prior and informed consent of the peoples involved in the project by engaging the traditional indigenous authorities of those communities and respecting the system of self-government. The project respects and recognizes traditional knowledge and livelihood systems and does not involve any changes in the access of indigenous peoples to their lands, territories and resources. It also aligns with international rights standards relevant to indigenous peoples. In line with its roles and functions, the GCF Indigenous Peoples Advisory Group is available to provide advice to the AE who is also encouraged to share emerging good practices and success stories with the Group.
+
+
+---
+*Chunk pages 218–218*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1056 (sys=94, user=962), max_out=1024, ctx=8192
+---
+
+# GCF/B.37/02/Add.05  
+## Page 218  
+
+### 62. ESS 8: Cultural heritage  
+The project intends to contribute to valuing the customs and traditions associated with rice cultivation, while noting that the ongoing societal change, modernisation processes, including the uptake of new technologies and practices, may challenge such traditions especially in respect to the new generation of farmers. The project will not infringe on protected cultural heritage sites, nor develop natural resources on land subject to traditional ownership or tenure, which, inter alia, includes natural areas with cultural and/or spiritual value, such as sacred groves, sacred bodies of water and waterways, sacred mountains, sacred trees, sacred rocks, burial grounds and sites.
+
+### 63. Sexual exploitation, sexual abuse, and sexual harassment (SEAH) safeguarding  
+The ESMF identified that the project poses low SEAH risks in the context of project-supported training and extension support, agricultural service provider activities, and when farmers and service providers targeted by the project accessing to the project’s financial support. To avoid and prevent the project from exacerbating SEAH risks, the AE will implement a zero-tolerance policy on SEAH and operate a survivor-centered and gender-responsive GRM for SEAH-related grievances. The project will provide SEAH training to all beneficiaries of the project’s training programmes, such as farmers, extension service officers, financial institutions, government agencies, and executing entities. The project will make sure that all project stakeholders (recipients of training and/or financial support) will have access to a dedicated SEAH grievance mechanism which operates separately from the project’s general GRM with gender, cultural and privacy sensitivities, and that all reports of SEAH violations will be collated centrally by the project ESS manager or a grievance focal point immediately on a case-by-case basis. The ESMF elaborates the SEAH GRM process, which will be provided on the project website and incorporated in all project literature for stakeholder engagement.
+
+### 64. Implementation arrangements  
+GIZ, as the AE, will oversee and monitor the management and implementation of the project’s ESMF through an E&S safeguards management and monitoring system to be developed during the project inception. Each of the three executing entities will be responsible for the implementation of the E&S safeguard (ESS) measures directly related to its mandate, with the Rice Department, will also play the role of coordinating with other supporting organizations in the implementation of ESMF. The AE will recruit an ESS manager who will coordinate all ESS related processes within the project as well as the implementation of the ESMP and ESMF. All EEs will nominate their respective ESS focal points to ensure the planning, implementation, and monitoring of the ESMP and the ESMF of the project. The ESS manager and the ESS focal points nominated by the EEs will form the ESS management team to be involved in the delivery of the ESMF. External specialists and resources will be included where needed.
+
+### 65. Stakeholder engagement and information disclosure  
+The AE provided a Stakeholder Engagement Plan (SEP) with the proposal, which identified key stakeholders and mapped out their roles and responsibilities, female farmers, skipped generation households, ethnic groups, and other vulnerable groups’ needs and concerns which had been taken into consideration and informed the design of the project and its interventions. The plan described the Stakeholder engagement methods, timeframes, and the responsible entities for the project implementation to ensure meaningful engagement and effective information disclosure to all relevant stakeholders.
+
+### 66. Grievance redress mechanism  
+The project will establish a project-level GRM and a separate GRM for SEAH-related grievances, which are elaborated in the ESMF and the SEP. The project-level GRM will handle complaints both directly and indirectly related to the project implementation. The SEAH-related grievance mechanism will follow a different set of procedures to ensure higher level of sensitivity. In line with their roles and functions, the Indigenous Peoples Advisory Group is available to provide advice to the accredited entity and executing entities. In line with the GCF Indigenous Peoples Policy, the GCF indigenous peoples focal point will be available for assistance at any stage, including before a claim has been made.
+
+
+---
+*Chunk pages 219–219*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=976 (sys=94, user=882), max_out=1024, ctx=8192
+---
+
+# 4.2 Gender Policy
+
+67. The AE provided a gender assessment and action plan with the funding proposal and therefore complies with the requirements of the GCF Gender Policy. The Thai Rice: Strengthening Climate Smart Rice Farming project provides an opportunity to mainstream gender equality and women’s empowerment and also achieve stand-alone gender outputs and outcomes. The assessment summarizes the legal, institutional, and sociocultural context of gender equality in the targeted country. It highlights how climate-related vulnerabilities are closely tied with local cultural values and stereotypes that influence women’s access to and control over resources, and their decision-making power and ability. It further analyses the key gender equality and women’s empowerment in the agriculture sector and makes conclusions/recommendations for the specific gender mainstreaming areas.
+
+68. The AE recognizes that women play prominent roles in off-farm and non-farm income-generating activities, however, these activities are often regarded as an extension of their household work, hence there is less recognition of women’s work/activities. There is a need to recognize women producers and women’s groups who could play a critical role under this project, including activities related with bio-fertilizer production. In the agriculture sector, the project concludes that women play a prominent role in the sector but their work is largely unpaid, and the home-based care work that women traditionally engage in also makes it difficult for most women to fully engage in other productive areas; women and men have different interests and needs with regards to agricultural technologies, hence it is important for the project to identify those differences when introducing climate-smart technologies and practices. Other highlights of the concluding reflections from the gender assessment include the need for the project to enhance women’s leadership in the sector; and introduce climate-smart agricultural technologies that largely target women and youth. The AE also highlights the gender expertise within the partner organizations, including RD, BAAC, and ONEP. The project will facilitate the bridging of any gaps that have been identified within the partner organizations with regards to gender expertise in order to enhance the gender outcomes earmarked for this project.
+
+69. The gender action plan outlines several activities that will contribute towards the achievement of gender and women’s empowerment outcomes under this project. Among other interventions, the AE will facilitate the development of a gender-sensitive monitoring and evaluation system that will track the number of beneficiaries and help to ensure gender-responsive project management – the project will target 253,400 direct beneficiaries (138,400 male and 115,000 female), and 760,200 indirect beneficiaries (353,400 male and 406,800 female); 
+
+(1) Key personnel of the Project Management Unit and relevant ES staff will be trained in gender mainstreaming, conduct information campaigns and trainings on GESI with a focus on shared/division of labour at household level as it relates to agricultural activities, engage women migrant workers and support them with training e.g. on rice-farming, provide farmer trainings on climate-smart rice agriculture, labour laws, agricultural information technologies, sexual exploitation, abuse and harassment, and other topical issues;
+
+(2) Introduce learning sessions in secondary schools on climate-smart agricultural technologies and practices;
+
+(3) Develop financial literacy trainings and financial instruments (incentive payment and climate-smart loan scheme loans) that meet the needs of women farmers;
+
+(4) Identify other biomass sources (in addition to currently used cow dung) that can be used in conjunction with rice residues to produce bio-fertilizer;
+
+(5) Facilitate insurance scheme awareness-raising and insurance literacy training for women groups and women farmers;
+
+(6) Ensure that there is access to markets for women farmers’ groups;
+
+(7) Ensure that TAS includes women’s empowerment as a foundational element, and many other activities aimed at gender mainstreaming in the rice sector.
+
+
+---
+*Chunk pages 220–220*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=926 (sys=94, user=832), max_out=1024, ctx=8192
+---
+
+# 4.3 Risks
+
+## 4.3.1. Overall programme assessment (medium risk)
+
+70. GCF is requested to provide a grant of EUR38 million to enable Thai rice farmers to adapt to climate change while reducing GHG emissions in Thailand. The BMZ via AE is co-financing a grant of EUR 2 million and the Government of Thailand is providing grant and in-kind contribution EUR 37.6 million. Additional co-financiers including private sector are expected to channel their contribution through AE either in grant or in-kind. BACC is also financing a demand-based loan of EUR 30 million.
+
+71. Thailand has an investment grade credit rating and its fiscal situation may support availing concessional debt from GCF. The AE has requested a full grant financing from GCF based on the public-good nature of the activities and agriculture, especially rice farming considered as highly vulnerable.
+
+## 4.3.2. Accredited entity/executing entity’s capability to execute the current programme (medium risk)
+
+72. GIZ is an AE and co-EE of the project. The AE has been operating in Thailand since 1956. The AE has a track record of implementing projects with an accumulated budget of EUR170 million of which EUR 135 million accounted for climate change projects since 2009.
+
+73. There are four additional co-EEs, namely Rice Department (RD) of the Ministry of Agriculture and Cooperatives (MoAC), Bank for Agriculture and Agricultural Cooperative (BAAC), International Rice Research Institute (IRRI) and Office of Natural Resources and Environmental Policy and Planning (ONEP) of the Ministry of Natural Resources and Environment (MoNRE). The AE provides information on the EEs track record of working with different international partners and implementing similar types of projects.
+
+## 4.3.3. Project-specific execution risks (medium risk)
+
+74. Impact risk – co-financing: the impact potential assumed that BAAC will provide the loan of EUR 30 million. However, it is a demand-based loan which may not be fully materialized depending on the status of the borrowers’ own capital, availability of alternative resources, and other market-conditions. If the loans are not taken up due to the lower demand than expected, the impact will be subsequently reduced. To partially mitigate this risk, the technical assistance to BAAC will include the size of the loan that will realistic and feasible for uptake by farmers. Also, the loan terms and conditions will be flexible to be tailored to the market conditions.
+
+75. Misuse of proceeds: GCF grant is targeting more vulnerable groups who are not eligible for loans due to pre-existing loan exposures or lack of collateral. Therefore, there is a risk that GCF grant might be used to repay existing or take new loans. To mitigate this risk, the AE suggested that several measures be taken place: the payment will be subject to the commitment and participation of farmers in project activities, and documented order from the service providers. The disbursement will be made in several tranches to ensure more control over the utilization of the funds. The AE already had experience and lessons learned from the previous projects in this regard. More detailed procedures will be finalized in the agreement between GIZ and BAAC.
+
+76. Low demand risk: The FP states that Thai farmers have an extreme degree of risk aversion and skeptical of new technologies. With this background, there could be a low demand and participation of farmers especially in advanced training which is technically more demanding. According to AE, it offers some financial benefits such as TAS certification opening up access to premium rick market with higher prices, investment planning training and greater
+
+
+---
+*Chunk pages 221–221*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=776 (sys=94, user=682), max_out=1024, ctx=8192
+---
+
+# GCF/B.37/02/Add.05  
+## Page 221  
+
+### Awareness and understanding of climate risk insurance to reduce financial exposures to climate change  
+Based on the consultation and baseline study, AE and gov’t are confident that project will attract 50,000 farmers for training.  
+
+### Concessionality and project viability:  
+The AE carried out financial analysis on the incentive payment scheme, which has revenue generate potential. With the GCF resources of EUR7.6million (~20% of total GCF grant), the analysis results in IRR of 27.5%-36.2%. The analyses include with and without GCF finance scenario, sensitivity analysis to rice yields, and hypothetical concessional loan scenario provided by the GCF. Despite the relatively high IRR results, it shows negative cashflow in the early year of the project. Given the negative profits and high-risk averseness of the farmers to new technologies and practices, the AE considers that the long-term profits are not sufficient enough to convince early adopters. Therefore, while the project viability is valid with this scheme in long term, the full concessionality is still needed.  
+
+### 4.3.4. GCF portfolio concentration risk (low risk)  
+In case of approval, the impact of this proposal on the GCF portfolio concentration in terms of result area and single proposal is not material.  
+
+### 4.3.5. Compliance risk (medium risk)  
+The accredited entity has confirmed it has policies and procedures in place for monitoring, identifying and proactively addressing the risks of money-laundering, the financing of terrorism and other prohibited practices. A mechanism for whistleblowing is in place to allow for the reporting of any improprieties in the project or its activities.  
+
+While the AE has taken steps and implemented protections to minimize these risks, a Compliance Risk rating is determined to be MEDIUM. Such a rating is not to be construed as an objection to the project, but as a recognition that residual risks of the abovementioned improprieties may exist due to the size, complexity and amount of funding in the project. Continued and effective application of the AE’s policies and procedures should go far to mitigate these residual risks.  
+
+### 4.3.6. Summary risk assessment and recommendation  
+#### Summary risk assessment  
+- Overall project/programme: Medium  
+- Accredited entity/executing entity capability to implement the project/programme: Medium  
+- Project-specific execution: Medium  
+- GCF portfolio concentration: Low  
+- Compliance: Medium  
+
+### 4.4 Fiduciary  
+GIZ, the accredited entity (AE) for the Thai Rice project will also operate as one of the five executing entities (EEs) in relation to specific project activities. As the AE, GIZ will assume oversight responsibility for the project, as defined in the accreditation master agreement (AMA) between GCF and GIZ. As AE, GIZ will administer project funds on behalf of GCF and will provide oversight guidance and quality assurance for the executing entities.
+
+
+---
+*Chunk pages 222–222*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=964 (sys=94, user=870), max_out=1024, ctx=8192
+---
+
+# GCF/B.37/02/Add.05  
+## Page 222  
+
+82. As an EE, GIZ will be responsible for managing the project budget of GIZ and implementation of specific subactivities. In addition, BMZ will commission GIZ with the implementation of the overall project (commissioning agreement), while GCF will transfer funds based on a funded activity agreement (FAA) to GIZ. GIZ will also report to BMZ regarding its financial contribution to the project, as well as the overall progress of project implementation.
+
+83. As mentioned above, the Thai Rice Project will have four executing entities in addition to GIZ: RD; BAAC; ONEP of the Ministry of Natural Resources and Environment; and International Rice Research Institute.
+
+84. The Thai Rice Project will also mobilize a large number of project partners, spanning the public sector. Through the BMZ develoPPP programme, which promotes private sector activities, companies interested in investing sustainably in a developing or emerging market country can receive technical and financial support. Through their participation in the develoPPP programme, Ebro Foods, MARS, Olam Agri Group and PepsiCo have well-established relationships with GIZ in Thailand. They are keen to extend this support in the form of grant co-finance (channelled through GIZ) and technical assistance for elements of specific subactivities of the Thai Rice Project.
+
+85. GIZ as EE will receive an internal task assignment from the AE for the implementation of defined Thai Rice Project activities. The other EEs will sign grant agreements with GIZ, based on GIZ standard operating procedures for grant agreements. These subsidiary agreements will establish the legal basis on which GIZ will make the GCF proceeds available to the EEs for the measures that they will implement, in accordance with the AMA and FAA. In addition, these agreements will include the co-finance contributions of the EEs to the Thai Rice Project.
+
+86. GIZ (AE) will transfer GCF funds to the four other EEs, as well as retaining a portion of the GCF funds to implement its activities as an EE for the project. BACC (EE) will receive GCF proceeds for the implementation of the incentive payments for farmers (under Activity 1.1.2). The BAAC Climate-Smart Loan scheme (under Activity 2.1.2) will receive technical support financed by GCF but the loans themselves will be wholly financed by BAAC with no contribution from GCF.
+
+87. Lastly, GIZ (AE) will be responsible for selecting and engaging independent external auditors who will perform annual financial audits of the Thai Rice Project in line with International Standards on Auditing.
+
+## 4.5 Results monitoring and reporting  
+
+88. As a cross-cutting initiative, the project aims to generate both mitigation and adaptation results. On the mitigation side, the intervention is expected to result in overall GHG emission reductions of 12.56 Mt CO2 eq over the project lifespan of 15 years, as per the metrics of the GCF core indicator for mitigation based on the GHG accounting methodology detailed under annex 22 of the funding proposal. On the adaptation side, 253,400 direct beneficiaries and 760,200 indirect beneficiaries are expected as adaptation impact. The AE provided a methodology and assumptions for defining both direct and indirect beneficiaries in the funding proposal.
+
+89. The theory of change diagram adequately captures different levels of expected changes as well as logical linkages from the goal statement down to the proposed activities. Mitigation and adaptation outcomes are well identified along with developmental co-benefits. The project intervention will be made at three levels – farmer, service provider and institution, which will together contribute to generating both mitigation and adaptation outcomes. Barriers and risks that may hinder the achievement of these changes are identified and linked to pertinent activities which will tackle them accordingly.
+
+
+---
+*Chunk pages 223–223*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=792 (sys=94, user=698), max_out=1024, ctx=8192
+---
+
+# GCF/B.37/02/Add.05  
+## Page 223  
+
+90. The logical framework has been well designed in accordance with the Integrated Results Management Framework (IRMF). The paradigm shift potential is envisaged to be achieved with the potential target scenarios. Appropriate IRMF core and supplementary indicators are selected to monitor and report the project results in respective GCF result areas, and for each indicator baseline and targets (mid-term and final) are set with different means of verifications. Project specific indicators are also well developed to measure output-level results as well as some outcome-level results which cannot be monitored by GCF IRMF indicators.
+
+91. At the GCF outcome level of the enabling environment, three GCF core indicators are identified: institutional and regulatory framework, technology deployment and dissemination, and market development. With the low or medium level of baseline of each indicator, the project is expected to build a comprehensive enabling environment in Thailand.
+
+92. The implementation timetable in annex 5 clearly describes how and when project activities will be conducted, and when key deliverables will be delivered. In addition, the monitoring and evaluation plan in annex 11 has identified all indicators and has set aside an adequate amount of budget to collect the data throughout project implementation.
+
+## 4.6 Legal assessment  
+
+93. The Accreditation Master Agreement (the “AMA”) was signed with the Accredited Entity on 15 November 2017 and became effective on 18 January 2019.
+
+94. The Accredited Entity has provided a legal certificate confirming that it has obtained all internal approvals and it has the capacity and authority to implement the project.
+
+95. The proposed project will be implemented in the Kingdom of Thailand, a country in which GCF is not provided with privileges and immunities. This means that, among other things, GCF is not protected against litigation or expropriation in this country, which risks need to be further assessed. The GCF Secretariat provided a draft agreement on privileges and immunities and a background note to the Government of the Kingdom of Thailand on 26 February 2016. The latest communication took place on 13 March 2023 whereby the GCF Secretariat sent the updated draft to the Government of the Kingdom of Thailand. Negotiations on the agreement are ongoing.
+
+96. The Heads of the Independent Redress Mechanism (IRM) and Independent Integrity Unit (IIU) have both expressed that it would not be legally feasible to undertake their redress activities and/or investigations, as appropriate, in countries where GCF is not provided with relevant privileges and immunities. Therefore, it is recommended that disbursements by GCF are made only after GCF has obtained satisfactory protection against litigation and expropriation in the country or has been provided with appropriate privileges and immunities.
+
+97. To address the matters raised in this section, it is recommended that any approval by the Board is made subject to the following conditions:  
+(a) Signature of the funded activity agreement in a form and substance satisfactory to the GCF Secretariat within 180 days from the date of Board approval; and  
+(b) Completion of the legal due diligence to the satisfaction of the Secretariat.
+
+
+---
+*Chunk pages 224–224*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=636 (sys=94, user=542), max_out=1024, ctx=8192
+---
+
+# GCF/B.37/02/Add.05  
+Page 224  
+
+## Independent Technical Advisory Panel’s assessment of  
+### FP214  
+#### Proposal name: Thai Rice: Strengthening Climate-Smart Rice Farming  
+#### Accredited entity: Deutsche Gesellschaft für Internationale Zusammenarbeit (GIZ) GmbH  
+#### Country: Thailand  
+#### Project/programme size: Medium  
+
+## I. Assessment of the independent Technical Advisory Panel  
+
+### 1.1 Overview  
+
+1. This is a five-year project on rice farming in Thailand, targeting 21 provinces in the three most important rice-growing regions of the country: the north, the northeast and the central plains. The goal of the project is to establish climate-smart rice farming in Thailand. As such, it is a cross-cutting, medium-sized project with a dual objective:  
+   (a) To adapt rice farming in Thailand in order to reduce the negative impacts of observed and anticipated adverse climate conditions; and  
+   (b) To reduce greenhouse gas (GHG) emissions resulting from rice farming in order to help mitigate climate change.  
+
+2. To achieve these objectives, the intention of this project is to intervene on three main complementary axes:  
+   (a) Increasing the income and food security of climate-smart farmers operating under changing climatic conditions (Outcome 1);  
+   (b) Substantially reducing GHG emissions (Outcome 2); and  
+   (c) Directing or channelling government policies and appropriate funds towards climate-smart rice farming (Outcome 3).  
+
+3. With multiple co-benefits for female farmers, and for soil, water and air quality, the project's three fundamental axes will be realized through:  
+   (a) Rice farmers’ adoption of, and investment in, climate-smart technologies and practices (Output 1);  
+   (b) Service providers’ supply of, and investment in, climate-smart technologies (Output 2); and  
+   (c) Strengthening of the institutional and business environment for climate-smart rice farming.  
+
+4. From this perspective, the project's outcomes and outputs focus on the fundamental components of the sector's vulnerability and resilience. These are the exposure and sensitivity of Thailand's rice farming (through climate-smart practices and technologies) and its adaptive capacity (through institutional strengthening, improved market conditions and mastery of climate-smart technologies and practices). The adoption of these technologies and practices will also enable a low-GHG emission system.
+
+
+---
+*Chunk pages 225–225*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=948 (sys=94, user=854), max_out=1024, ctx=8192
+---
+
+# GCF/B.37/02/Add.05  
+## Page 225  
+
+### 5.  
+The technical capacity-building activities and the financial and institutional arrangements have been designed to provide key stakeholders (farmers and service providers) in the rice value chain in Thailand with considerable support for the process of adopting the climate-smart practices and technologies that are at the heart of the project.  
+
+### 6.  
+A wide range of practices and technologies (10 in total) are envisaged: laser land levelling, alternate wetting and drying, site-specific nutrient management, straw and stubble management, integrated pest management, rice variety diversification, crop diversification and rotation, dry direct-seeded rice, farm-level water management and agro-met advisory services.  
+These technologies and practices provide adaptation and mitigation benefits, as well as several co-benefits.  
+
+### 7.  
+This project is of the utmost importance, as rice production is strategic for the country from both a socioeconomic and an environmental point of view.  
+
+### 8.  
+From a socioeconomic standpoint, rice production makes a considerable contribution to the country's economy. It should continue to play a pivotal role in meeting growing world demand (Thailand is one of the world's leading rice-producing countries) and maintaining the livelihoods of small-scale farmers, including women. This represents a challenge for the sector, which has to manage increasing socioeconomic issues exacerbated by changing climatic conditions, notably more intense and frequent droughts or rainfall.  
+In environmental terms, the emissions avoided by this project will make a significant contribution to achieving the ambitions set out in the country's nationally determined contribution.  
+It should be noted that rice cultivation produces more than 50 per cent1 of the total GHG emissions in the agriculture sector, the second-largest source of GHG emissions in the country after energy.  
+
+### 9.  
+The project will be executed by a consortium of five entities: Deutsche Gesellschaft für Internationale Zusammenarbeit (GIZ) GmbH (also the accredited entity for this project), the Rice Department (RD) of the Ministry of Agriculture and Cooperatives (MAC), the Bank for Agriculture and Agricultural Cooperatives (BAAC), the Office of Natural Resources and Environmental Policy and Planning (ONEP) of the Ministry of Natural Resources and Environment (the national designated authority (NDA)) and the International Rice Research Institute (IRRI).  
+
+### 10.  
+The total budget for this five-year project is EUR 118.08 million, including EUR 38.17 million in the form of a grant from GCF. The project will be managed and governed by three main structures: a steering committee, a management unit and implementation units divided into working groups.  
+
+### 1.2 Impact potential            Scale: Medium to High  
+
+### 11.  
+The project will help to move towards a low-emission rice farming system in Thailand. Using a wide range of climate-smart agriculture techniques and practices (CSA T&P), including those relating to better management of water, nutrients and crop residues, the project aims to avoid the emission of 2.44 Mt CO2 eq during its five-year implementation period and 12.56 Mt CO2 eq during its lifespan (15 years).  
+
+### 12.  
+The project's mitigation impact was estimated using the Source-selective and Emission-adjusted GHG CalculaTOR for Cropland (SECTOR) tool, which considered the emission and scaling factors provided by the 2019 refinement of the 2006 IPCC Guidelines for National Greenhouse Gas Inventories. More precisely, the Intergovernmental Panel on Climate Change (IPCC) Tier 1 approach was used to calculate GHG emissions, notably methane and nitrous oxide resulting from rice production in the target regions. To convert emissions of these gases into their carbon dioxide equivalent, warming potentials of 28 and 265 were used for methane and  
+
+> [Paragraph 32 of the funding proposal]  
+
+---  
+**Note:** The text ends here with a reference to paragraph 32 of the funding proposal, which is not fully included in this extract.
+
+
+---
+*Chunk pages 226–226*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=913 (sys=94, user=819), max_out=1024, ctx=8192
+---
+
+# GCF/B.37/02/Add.05  
+## Page 226  
+
+13. The rate of adoption of the different CSA T&P is based on experiences of relatively short duration and very specific contexts that are likely to evolve and also assumes a linear approach ending in a constant rate of adoption over the length of the project. It is thus important to ensure that the monitoring and evaluation system adequately addresses this aspect, on which the mitigation impact of the project greatly depends.  
+
+14. Moreover, given the importance of the rate of adoption of the different CSA T&P as a variable in estimating the mitigation potential, it is important to ensure that the results of the project are useful for future initiatives. The project's measurement, reporting and verification system and knowledge-sharing plan must take this into account and be adapted accordingly.  
+
+Emissions reduction projections are based on assumptions about the rate of adoption of technologies and practices, and so this must be a crucial workstream to ensure a high degree of confidence in the mitigation potential of projects.  
+
+15. In addition to its mitigation impact, the project will also contribute to enhancing the resilience of rice farming in Thailand. The number of direct beneficiaries is estimated to be 253,400, including 115,000 women; the number of indirect beneficiaries of the project is estimated to be 760,200, including 406,800 women. The farmland area covered by the project is approximately 718,000 ha, of which 306,000 ha are irrigated and 412,000 ha are rain-fed.  
+
+16. The adaptation benefits of the project will cover both the exposure and sensitivity of rice farming in Thailand, and the adaptive capacity of the various categories of stakeholders in the sector, including service providers and policymakers.  
+
+17. However, as the preliminary choice of interventions was made using, among other things, a vulnerability assessment mainly based on a climate-exposure index, this is likely to compromise the interventions’ long-term adequacy. The accredited entity has recognized the importance of integrating future socioeconomic conditions into the final identification of interventions and has agreed to take this into account during the project inception phase.  
+
+18. In general, the independent Technical Advisory Panel (iTAP) considers the impact potential for both adaptation and mitigation of the proposed project to be medium to high.  
+### 1.3 Paradigm shift potential         Scale: Medium to High  
+
+19. The project proposes a set of innovative CSA T&P that will not only increase the resilience of rice farming in Thailand but also reduce its GHG emissions.  
+
+20. The project’s theory of change is clearly and coherently stated. If it is applied as stated, and the project achieves the expected outcomes, the interventions could be replicated elsewhere, provided that the contexts in which they are implemented are taken into account and necessary adjustments are made.  
+
+21. The project will also contribute to the creation of an enabling environment by strengthening institutional capacities, and encouraging the formulation and implementation of policies, and the channelling of financial resources towards climate-smart rice farming.  
+
+2 Funding proposal, annex 2b: GHG methodology and mitigation potential assessment, p. 6.
+
+
+---
+*Chunk pages 227–227*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=921 (sys=94, user=827), max_out=1024, ctx=8192
+---
+
+# GCF/B.37/02/Add.05  
+## Page 227  
+
+### 22. Furthermore, the project will ensure that the capacities of service providers are strengthened and that the financial instruments available to them are adapted so that they can offer climate-smart technologies to farmers.
+
+### 23. When supporting the formulation of policies focused on climate-smart rice farming, the project should consider directing a greater effort towards aspects relating to valuing the work of farmers, greater incentives for young farmers and improved land tenure security, to reduce the major barriers to the adoption of CSA T&P.
+
+### 24. In order to foster a paradigm shift in the sector, the knowledge management plan of the project needs to promote, among other things, better use of process-based crop models in the identification of adaptation interventions. With this in mind, it is important that the data collected as part of the project can be used to evaluate the crop model in the target regions. This evaluation, which can be carried out in conjunction with the relevant national authorities (the Rice Department, for example), will be used not only to build capacity, but also to make more informed decisions about the adaptation practices to be adopted. This is very important, as the evidence provided for the evaluation of the crop model in the target regions is not sufficient.
+
+### 25. When well calibrated and validated, process-based crop models such as the one used to simulate the impacts of adverse climate conditions on future rice yield in Thailand can considerably “help decision-makers by reducing the time and human resources required for analysing complex alternative decisions3” like the multiple candidates CSA T&P of the proposed project. This can also contribute to strengthening national technical and institutional capacities, thereby ensuring a paradigm shift.
+
+### 26. The proposed project has an exit strategy encompassing technical, institutional and financial aspects, including the creation of strategic links between farmers and other rice value-chain stakeholders, to enable the activities to be carried out over the long term.
+
+### 27. Overall, the iTAP rates the paradigm shift potential of the project as medium to high.
+
+#### 1.4 Sustainable development potential                    Scale: High
+
+### 28. The project offers several environmental, social and economic co-benefits. It also promotes women's empowerment. More precisely, it is aligned with the following United Nations Sustainable Development Goals (SDGs): 2 – Zero hunger, 3 – Good health and well-being, 5 – Gender equality, 8 – Decent work and economic growth, 12 – Responsible consumption and production, 13 – Climate action and 15 – Life on land.
+
+### 29. The main environmental externalities resulting from the project's interventions – notably from reduced use of agrochemicals and burning of harvest residues – include improved soil and air quality, conservation of water resources and protection of biodiversity.
+
+### 30. In social terms, the project is likely to contribute to improving the health of farmers and consumers by promoting a responsible use of agrochemicals.
+
+### 31. Economically, the project will help to boost the incomes of climate-smart farmers and service providers by increasing yields, reducing input costs, obtaining better prices for sustainable rice production and creating employment opportunities associated with the provision of climate-smart adaptation and mitigation services.
+
+### 32. The project places particular emphasis on empowering female farmers through capacity-building activities, improving access to financing and encouraging institutions to provide specific interventions to women.
+
+#### 3 Jones, JW et al. 1998. Decision support system for agrotechnology transfer: DSSAT v3. In Tsuji, GY, Hoogenboom, G, Thornton. Understanding Options for Agricultural Production, 157-177. Kluver Academic Publishers.
+
+
+---
+*Chunk pages 228–228*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=794 (sys=94, user=700), max_out=1024, ctx=8192
+---
+
+# GCF/B.37/02/Add.05  
+## Page 228  
+
+33. In general, the iTAP rates the sustainable development potential of the proposed project as high.  
+### 1.5 Needs of the recipient  Scale: High  
+
+34. Thailand has been one of the countries most affected by climate hazards in recent years. This demonstrates a high level of vulnerability that is likely to increase, particularly as a result of its exposure to unprecedented adverse climatic conditions, such as more prolonged and intense periods of drought or rainfall. Rice production, and in particular its yield, is highly dependent on the climate, and high temperatures combined with more frequent and longer dry spells are likely to considerably reduce the productivity of this strategic crop. Small-scale farmers, including women, will be particularly affected, as their capacity to respond is relatively low.  
+
+35. Thailand's economy also faces serious challenges, including a high level of public debt and relatively high unemployment rate. This situation has been exacerbated by the crisis caused by the coronavirus disease 2019 (COVID-19) pandemic. All this contributes to limiting the ability of the Government of Thailand to meet the needs of its most vulnerable people, such as small-scale farmers.  
+
+36. Funding from GCF will enable interventions aimed at removing several barriers faced by the key stakeholders in the rice value chain, to establish a climate-smart rice farming system in Thailand.  
+
+37. The project has clearly identified the multiple dimensions of the technical, institutional, economic, social and cultural needs of the different categories of stakeholders involved in rice production in Thailand, and has envisaged a wide range of interventions to address them in a sustainable way.  
+
+38. Consequently, the iTAP assesses the needs of the recipient for the proposed project as high.  
+### 1.6 Country ownership Scale: High  
+
+39. The development of the project's interventions and activities is the result of a long and extensive stakeholder consultation process. This included representatives from the public and private sector, civil society organizations and international technical and financial partners.  
+
+40. This extensive stakeholder consultation process enabled the project's various interventions to be aligned with the key priorities relating to climate change and the development of rice farming set out in the country's various policy documents, in particular Thailand’s 2nd Updated Nationally Determined Contribution, the Thailand National Adaptation Plan, the Thailand Mid-century, Long-term Low Greenhouse Gas Emission Development Strategy (LT-LEDS) and the Climate Change Strategic Plan for the Agriculture sector (2023–2027).  
+
+41. In addition, GIZ, both as an accredited entity and executing entity, and the other institutions responsible for the project’s implementation have a long track record of implementing climate change programmes and projects. GIZ is currently implementing more than 300 climate change-related projects, with combined funding of over USD 1.9 billion.  
+
+42. The Rice Department operates more than 50 centres in more than 20 provinces of Thailand, supporting local research on rice and seed distribution.  
+
+43. The BAAC, a government-owned bank established in 1966, is the leading bank in terms of loans to the agricultural sector.
+
+
+---
+*Chunk pages 229–229*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=784 (sys=94, user=690), max_out=1024, ctx=8192
+---
+
+# GCF/B.37/02/Add.05  
+## Page 229  
+
+44. ONEP, in the Ministry of Natural Resources and Environment, which functions as the NDA for GCF and national focal point for the United Nations Framework Convention on Climate Change, with mandate to formulate policies, plans and measures for environmental protection and restoration, has considerable experience working with multiple donors and international partners.
+
+45. IRRI, an independent, non-profit international research and educational institute, is a world leader on rice.
+
+46. The vast and diverse experience of the executing entities, combined with their technical expertise, provide assurance that they have the required capacities to smoothly implement the proposed project.
+
+47. The overall iTAP assessment of the country ownership for the proposed project is high.  
+
+### 1.7 Efficiency and effectiveness Scale: High  
+
+48. The proposed project promotes the adoption of several CSA T&P recommended by leading institutions in the agricultural sector, such as the Food and Agriculture Organization of the United Nations, and in rice farming in particular, such as IRRI. These CSA T&P are globally considered to be best practices likely to maximize both efficiency and effectiveness.
+
+49. The co-financing ratio is 1:2.1 and “the vast majority of the GCF grant (EUR 28.7 million out of EUR 38.15 million) is dedicated to technical assistance and other public good-type activities”.  
+
+50. The estimated GCF cost of adaptation per beneficiary is EUR 150.55 and the estimated GCF cost EUR 3.04 per t CO2 eq avoided is relatively low compared to the various economic, social and environmental benefits that may result from the activities implemented.
+
+51. Overall, the iTAP assesses the efficiency and effectiveness of the proposed project as high.
+
+## II. Overall remarks from the independent Technical Advisory Panel  
+
+52. Based on the analyses presented in the above paragraphs, the iTAP endorses, without conditions, the funding proposal titled “Thai Rice: Strengthening Climate-Smart Rice Farming”.
+
+53. In order to improve the project, including its impacts, the iTAP recommends the following:
+
+54. During the first year of the project, a detailed monitoring and evaluation plan should be developed, capturing the responsible institutions as well as the timeline for each activity.
+
+55. During the first year of the project, a clear mechanism should be established for ensuring that emission reductions achieved by the funded activity will not be converted into carbon credits, as per the terms of the accreditation master agreement between GCF and GIZ.
+
+56. During the inception phase, an improved knowledge management plan should be developed to make better use of process-based crop models in planning adaptation activities in rice farming, including the development of rice varieties that are better adapted to current and adverse climatic conditions. Furthermore, it must ensure that knowledge of the key determinants of the adoption rate of CSA T&P is systematized and translated in a way that can be leveraged in future initiatives.
+
+4 Funding proposal, para. 285, and the detailed budget of the project presented in annex 4a thereto.
+
+
+---
+*Chunk pages 230–230*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=196 (sys=94, user=102), max_out=1024, ctx=8192
+---
+
+# GCF/B.37/02/Add.05 
+## Page 230 
+
+57. The executing entities should pay particular attention to the socioeconomic factors, such as the age of the farmers, and labour- and gender-related issues, that are to be included in the main criteria for the final selection of the interventions to be implemented.
+
+
+---
+*Chunk pages 231–231*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=667 (sys=94, user=573), max_out=1024, ctx=8192
+---
+
+# Response from the accredited entity to the independent Technical Advisory Panel's assessment (FP214)
+
+## Proposal name: Thai Rice: Strengthening Climate-Smart Rice Farming
+
+## Accredited entity: Deutsche Gesellschaft für Internationale Zusammenarbeit (GIZ) GmbH
+
+## Country/(ies): Thailand
+
+## Project/programme size: Medium
+
+### Impact potential
+
+The AE acknowledges the iTAP response with thanks and appreciates the encouraging feedback, as well as the highlighting of key success factors within the project design.
+
+The AE agrees with the overall assessment of iTAP on the impact potential. The project will, overall, contribute to a significant reduction in GHG emissions from the rice sector in Thailand and provide a range of adaptation benefits to Thai farmers. On this issue, the AE agrees with the recommendation by iTAP that the structuring of the project's MRV system will be a crucial element in order to achieve the envisaged objectives, and the project will continue to develop the system further, together with the main responsible agencies in Thailand, the Office of Natural Resources and Environmental Policy and Planning (ONEP) and the Rice Department (RD), which both serve as Executing Entities in this project. ONEP is responsible for management of Thailand's national GHG inventory.
+
+The range of experiences that have informed the development of the climate-smart technologies adoption plan stem from the multi-year implementation of a number of baseline projects in Thailand, augmented by the extensive experience of the Rice Department and the International Rice Research Institute (IRRI).
+
+The AE further acknowledges and agrees with the suggestion by iTAP to pay special attention to future socio-economic conditions in order to sharpen the final identification of agricultural interventions to be implemented.
+
+### Paradigm shift potential
+
+The AE acknowledges and appreciates the assessment by iTAP.
+
+The project will, indeed, strive to achieve a paradigm shift in the Thai rice sector through a combination of interventions.
+
+The recommendation by iTAP to also place an increased focus on the use of process-based crop models to identify adaptation solutions is well noted. The AE plans to take up this suggestion, among others, through making use of the data on yields and performance of individual climate-smart agricultural interventions during project implementation. This data can then be used, in cooperation with IRRI and RD, to further inform the development and refinement of existing crop models, thereby strengthening the capacities of national partners and helping to make informed decisions about adaptation strategies.
+
+[Page 231]
+
+
+---
+*Chunk pages 232–232*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=736 (sys=94, user=642), max_out=1024, ctx=8192
+---
+
+# Sustainable development potential
+
+The AE appreciates the iTAP assessment and agrees with the appraisal of the project’s sustainable development potential as high.
+
+## Needs of the recipient
+
+The AE appreciates the iTAP assessment and agrees with the assessment of the needs of Thailand. Thailand has, indeed, been highly affected by climate hazards in recent years, and is – as specified in the country’s 2nd Updated Nationally Determined Contribution (2022) – among the countries in the “extreme risk” category.
+
+## Country ownership
+
+The AE appreciates the iTAP assessment and agrees with the assessment of the high country ownership of Thailand. The proposal has been developed through an extensive stakeholder consultation process involving actors from the public and private sectors, academia as well as civil society organisations. The project set-up convenes the major actors in the Thai rice sector, including key public, private and civil society partners.
+
+## Efficiency and effectiveness
+
+The AE appreciates the iTAP assessment and agrees with the assessment of the project’s high efficiency and effectiveness.
+
+## Overall remarks from the independent Technical Advisory Panel
+
+We note and acknowledge the positive and encouraging response from iTAP.
+
+As indicated above, the project’s monitoring and evaluation system – in parallel with the project’s GHG MRV system – is an important element of the project design. Based on the recommendation by iTAP, the AE has already started to identify potential areas to improve the current Monitoring and Evaluation Plan and agrees to develop a revised version within the first year of project implementation.
+
+The AE acknowledges and agrees with the recommendation by iTAP regarding the need for establishing a mechanism to avoid potential conversion of emission reductions into carbon credits and will develop a mechanism to safeguard this during project implementation. While mobilising potential sources of finance from carbon credits is an element of the post-project exit strategy and a strong opportunity to leverage additional support for smallholder farmers, the AE will ensure full compliance with its accreditation master agreement.
+
+The AE fully notes the feedback on the knowledge management plan. This plan will be continually improved during implementation, also with a view towards an evaluation of empirical adoption rates and the use of process-based crop model information for the decision-making of key national actors, such as the Rice Department, as well as for the benefit of other (for example, regional) initiatives.
+
+The changing demographic (ageing) of rice farmers, as well as other socio-economic, gender and labour-related issues, are, indeed, factors that influence the project design. While reversing overall demographic change in Thailand is beyond the scope of this project, the AE will integrate these socio-economic factors into project implementation and the selection of interventions: e.g. as part of the to-be-developed project extension strategy.
+
+[Page 1]  
+GCF/B.37/02/Add.05  
+Page 232
+
+
+---
+*Chunk pages 233–233*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=190 (sys=94, user=96), max_out=1024, ctx=8192
+---
+
+# Annex 8a: Gender Assessment
+
+## GCF Funding Proposal
+
+### Thai Rice: Strengthening Climate-Smart Rice Farming
+
+#### April 2023
+
+##### Version 1
+
+Deutsche Gesellschaft für Internationale Zusammenarbeit (GIZ) GmbH
+
+##### Gender documentation for FP214
+
+---
+
+*Note: The provided text appears to be a title page or cover page of a document. It does not contain any content that would be suitable for conversion into markdown format as it lacks substantive information beyond the title and author details.*
+
+---
+
+
+---
+*Chunk pages 234–234*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=614 (sys=94, user=520), max_out=1024, ctx=8192
+---
+
+# [Page 1]
+
+## Title of the project: Thai Rice: Strengthening climate-smart rice farming
+
+## Country/countries: Thailand
+
+## Sector: Agriculture (rice production); Climate change
+
+## Commissioning party: Green Climate Fund
+
+## Recommendation for gender policy marker
+
+If the marker has already been determined, this should be stated here. In case the recommendation based on the gender analysis deviates from the previously assigned marker, this should also be noted.
+
+## Purpose for conducting the gender analysis
+
+- ☒ for a new project
+- ☐ for a follow-on project
+- ☐ for a modification offer
+- ☐ for the GIZ portfolio in a country
+- ☐ other: Click here to enter text.
+
+## Status of the gender analysis
+
+- ☒ Provisional gender analysis
+- ☐ Finalised gender analysis
+
+## Method conducting the gender analysis
+
+- ☐ Desk study
+- ☒ Desk study + data collection (e.g. on-site appraisal mission, interviews etc)
+
+## Involved Gender FP
+
+More than one option can be selected:
+
+- ☐ at the project level: Enter name
+- ☒ *at the country level: Veena Ngarmpring
+- ☐ *at the level of the department or regional division: Enter name
+- ☐ *of the responsible unit in GloBe: Enter name and unit
+- ☐ of the sectoral department: Enter name and unit
+
+* Please note: The Gender FP must be copied into all emails sent to the S+G Desk. For bilateral projects, the Gender FP of the country office should be involved; for regional projects, either the Gender FP of the country or area where the project has its headquarters, or the Gender FP of the department; for sectoral and global projects, the Gender FP of the responsible unit in GloBe.
+
+## Other persons involved
+
+- ☒ officer responsible for the commission
+- ☒ project member
+- ☐ appraisal mission team member
+- ☐ planning officer
+- ☐ external consultant
+
+## Author(s) of the gender analysis
+
+Kyoko Kusakabe
+
+## Date
+
+19 December 2022
+
+---
+
+1 According to the OECD DAC, all ODA-financed projects should be assigned a marker. The gender marker is requested for BMZ projects and EU co-financing arrangements. Other public German commission parties do not currently request it.
+
+
+---
+*Chunk pages 235–235*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=402 (sys=94, user=308), max_out=1024, ctx=8192
+---
+
+# Table of contents
+
+## Chapter 1: Introduction
+................................ ................................ ................................ ....... 3 
+
+## Chapter 2: Information on gender dimensions in the country or the region
+................... 4
+
+### 2.1 Meta level (norms)
+................................ ................................ ................................ ........... 4 
+
+### 2.2 Macro level (policies and laws)
+................................ ................................ ........................ 7 
+
+### 2.3 Meso level (institutions)
+................................ ................................ ................................ ... 8 
+
+### 2.4 Micro level (target groups)
+................................ ................................ ...............................  9 
+
+## Chapter 3: Gender dimensions in the sector
+................................ ................................ ... 13 
+
+### 3.1 Meta level
+................................ ................................ ................................ ...................... 13 
+
+### 3.2 Macro level
+................................ ................................ ................................ .................... 14 
+
+### 3.3 Meso level
+................................ ................................ ................................ ..................... 15 
+
+### 3.4 Micro level
+................................ ................................ ................................ ..................... 16 
+
+## Chapter 4: Gender responsiveness and expertise, as well as gender equality in the 
+partner organization(s)
+................................ ................................ ................................ ..... 24 
+
+## Chapter 5: Gender responsiveness and expertise in the project/among project staff in 
+the country
+................................ ................................ ................................ ......................... 29 
+
+### 5.1 Equal opportunities in the team
+................................ ................................ ..................... 29 
+
+### 5.2 Gender expertise of the team members
+................................ ................................ ......... 29 
+
+## Sources
+................................ ................................ ................................ ..............................  31
+
+
+---
+*Chunk pages 236–236*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=392 (sys=94, user=298), max_out=1024, ctx=8192
+---
+
+# Chapter 1: Introduction
+
+This gender assessment serves as an input to the Funding Proposal for the project “Thai Rice – Strengthening climate-smart rice farming” to the GCF that will include elements of technical cooperation as well as financial cooperation. The project aims at strengthening the resilience of rice farmers in Thailand and to contribute to mitigating GHG emissions from rice farming through the promotion of low-emission, sustainable rice production.
+
+During the Concept Note development, a preliminary identification of gender-related risks indicated that female rice farmers are largely overlooked in the policy arena and consistently underserved by agricultural and rural support services. In consequence, women are often at risk of being excluded from training and climate finance initiatives, deepening existing gender inequalities.
+
+To meet GCF’s gender-related requirements for Funding Proposals, this gender assessment has been developed.
+
+This report was written based on desk review of reports as well as academic papers, and a series of key informant interviews of government officials, NGOs and GIZ field officers. It is also based on information gathered during field visits to Chiangrai province and Roiet province to meet women’s groups and mega farmers. Please see appendix for the list of respondents.
+
+
+---
+*Chunk pages 237–237*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=951 (sys=94, user=857), max_out=1024, ctx=8192
+---
+
+# Chapter 2: Information on gender dimensions in the country or the region  
+## 2.1 Meta level (norms)  
+
+### Gender equality in statistics  
+
+Thailand ranks 79 out of 191 countries in the 2021 Gender Inequality Index (UNDP, 2021). In comparison with other countries in the Southeast Asian region, Malaysia was ranked 57 and Vietnam 71. Compared with Vietnam, Thailand’s gender gap in labor force participation rate was wider — Vietnam is 69.6% for women and 79.4% for men, while in Thailand, it is 59.0% for women and 75.0% for men. Compared to the East Asia and Pacific region 2, there are fewer women seated in parliament (22% for the region and 16% for Thailand) (World Bank, 2021).  
+
+The adolescent birth rate was considerably high in these two countries (Thailand 32.7, Vietnam 34.6 births per 1,000) compared to countries like Malaysia (9.3) (UNDP, 2021).  
+
+UN Women observe that the challenges faced by Thailand in terms of gender equality and women’s empowerment include: Lack of gender-disaggregated data, violence against women (including trafficking of women and girls), vulnerability of women self-identifying as pertaining to an ethnic group and rural women, HIV/AIDS prevalence, low participation of women in the area of politics, and the traditional norms and beliefs that underlie this discrimination against women (UNDP, 2021).  
+
+With the limited sex-disaggregated data available, gender gaps can be seen in Table 1. Women outperform men in some areas (such as reading and basic ICT skills). According to Thailand’s Voluntary National Review, the proportion of companies that had at least one female executive increased from 74% in 2017 to 86% in 2020 (Thailand, 20213). Women spend disproportionately longer time on care work compared to men. On average, women spent one hour more on care work and household work per day than men (Thailand, 2021).  
+
+### Table 1: Gender gaps in Thailand*  
+
+| Indicator                                                                                           | Women     | Men       |
+|-----------------------------------------------------------------------------------------------------|-----------|-----------|
+| Literacy rate age 15+                                                                               | 93.8%     | 92.4%     |
+| Proportion of children and young people achieving a minimum proficiency level in mathematics (lower secondary) | 51.05     | 43.04     |
+| Proportion of children and young people achieving a minimum proficiency level in reading (lower secondary)   | 49.18     | 30.54     |
+| Proportion of youth and adults with Information and Communication Technology (ICT) skills (finding, downloading, installing, and configuring software) | 17.09     | 14.47     |
+| Connecting and installing new devices                                                               | 9.76      | 9.2       |
+| Writing a computer program using a specialized programming language                                 | 0.76      | 1.02      |
+| Proportion of individuals who own a mobile phone                                                    | 87.9      | 88.4      |
+| Proportion of informal employment in non-agriculture employment                                     | 65.2      | 51        |
+| Proportion of adults (15 years and older) with an account at a financial institution or mobile money service provider (% of adults aged 15 years and older) | 79.78     | 83.69     |
+| Proportion of their time spent on unpaid care and domestic work                                     | 11.8%     | 3.8%      |
+
+> **Note:**  
+> 2 Excluding high-income countries. For a detailed list of countries, please visit: [Proportion of seats held by women in national parliaments (%) - East Asia & Pacific (excluding high income)](worldbank.org)  
+> 3 Thailand’s voluntary national review on the implementation of the 2030 agenda for sustainable development 2021.  
+
+--- 
+
+[Page 1]
+
+
+---
+*Chunk pages 238–238*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1076 (sys=94, user=982), max_out=1024, ctx=8192
+---
+
+# [Page 1]
+
+## 5
+
+Women aged 20-24 old who were married or in a union before age 18  
+20.2%  
+
+Women of reproductive age (15 -49) whose need for family planning is satisfied with modern methods  
+88.2%  
+
+Proportion of seats held by women in national parliaments (in 2021)  
+15.8%  
+
+Proportion of elected seats held by women in deliberative bodies of local government  
+17.9%  
+
+Proportion of women in managerial positions  
+35.1%  
+
+Proportion of women in senior and middle management positions  
+31%  
+
+Women aged 15 -49 years old reported that they had been subject to physical and/or sexual violence by a current or former intimate partner in the previous 12 months.  
+9.3%  
+
+Source: UN Women, n.d. a.  
+*Data between 2018 to 2021  
+
+## Violence against women
+
+Violence against women is still prevalent in Thailand. The number of women who experienced violence and received the support of One Stop Crisis Center (OSCC) under the Ministry of Public Health increased from 26 women per day in 2007 to 36 women per day in 2015. More than half (55%) of these cases involved their intimate partners as abusers ( Sumano, 2020). The number of domestic violence cases reported has risen from 25,767 to 31,866 between 2010 and 2013, respectively (Chuemchit et al., 2018). Of the 30,000+ cases of violence against women reported to the OSCC, only around 5,000 cases are recorded by the police, and only about 1,500 cases result in an arrest of the abuser (Skinnider et al., 2017). A report in 2011 indicates a higher proportion of violence cases in the North and Central regions compared to other regions (OWAFD, 2011; UNDP, 2021).
+
+The entrenched culture of shame in Thailand makes reporting of these incidents of violence, as well as reporting of harassment cases, difficult. The Thai Public Broadcasting Service (PBS) calls sexual harassment in Thailand "ubiquitous" – too many and too widespread to count. Men’s strong public image and authority are used to threaten the victims, and the abusers can be teachers, politicians, government officials, and even fathers or male relatives. Often the perpetrator has more power than the victim, the latter being too scared to report since they are afraid that no one will believe her. The stigmatization of female victims of sexual harassment or abuse is still strong in Thailand, and women are often blamed as the cause of the problem. The Thai justice system is not well equipped to support the victims (Bunnag, 2022).
+
+In Thailand, and especially in the lowlands, most communities practise matrilocal patterns of living and inheritance (Curran & Meijer-Irons, 2014). That is, men marry into the women’s house, and women stay with or near their own parents and relatives. Women, or often the youngest daughter who would take care of the old parents, tend to inherit the larger part of the land and property. Matrilocal patterns of living have their advantages. Living near their own parents reduces the chances of domestic violence (as seen by Sigalla (2018) in Tanzania), and being away from such living patterns by moving into urban areas can diminish women’s position since they lose their support system that is available in their place of origin (Mills, 1997). Matrilocal living patterns provide protection to women but also lead to expectations
+
+_______________________________________________________________________________________________________________  
+4 OSCC is a multidisciplinary unit that provides comprehensive services for victims of violence in Thailand. The centers are equipped not only with medical doctors and nurses, but also representatives from the Royal Thai Police, the Office of the Attorney-General, non-governmental organisations, emergency shelters, and the Ministry of Social Development and Human Security. There are currently approximately 108 One Stop Crisis Centres in hospitals in Bangkok and provincial areas of Thailand.  
+5 Although this is a matter of concern, it is not clear whether more cases are reported since more women dare to do so, or whether it is because the absolute number of cases has increased.
+
+
+---
+*Chunk pages 239–239*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=935 (sys=94, user=841), max_out=1024, ctx=8192
+---
+
+# Gender stereotypes and women’s political participation
+
+Although the statistics and reports point to the fact that gender inequality persists in Thailand, gender issues are manifested in a subtle way in daily life. On the surface, women in rural areas of Thailand seem to enjoy considerable freedom and social position. However, there still exist strong gender stereotypes that are degrading towards women. Women are not able to become monks since the religion deems women to be contaminated. The gender stereotype that women lack physical strength can affect women’s choices of work or can be used as an excuse for gender wage gaps. Although women work outside the home side by side with men, women are expected to keep their skin fair and beautiful, and are expected to be delicate and feminine (Richardson and Roberts, 2020). Even when women and men work together outside the home, women still have to do most of the household work. However, even with such a clear division of labor, there is a strong sense of equality among Thai women in general, and women believe that they are able to do whatever men do. Women are often perceived to be good at business and communication and it is widely believed that women are more patient and hence better able to do “tedious” tasks (Richardson and Roberts, 2020).
+
+Women face cultural barriers to political participation. For example, “patriarchal norms pose challenges to women who run for office at the local level – norms that expect them to stay at home.” (UNDP 2021:12). The complex relationships and negotiations that are involved in politics complicate women’s advancement in the political arena.
+
+# Women self-identifying as pertaining to an ethnic group
+
+Ethnic groups self-identifying as indigenous people mainly reside in the hilly areas of Northern Thailand, although some are forced to move out of their communities because they have lost cultivated lands to outside investors (IWNT, 2011). Although many hill community people have ID cards, there are fewer women who have Thai nationality, since there are fewer women who can read, write and speak the Thai language well (IWNT, 2011).
+
+Women who have no official nationality must endure a form of imprisonment in their own communities. When there are limited economic opportunities in the communities and the traditional security measures fail to protect these women, many of them decide to enter into the sex industry or perform illegal work in order to make a living and have access to the resources that will help them obtain nationality for their families and themselves, particularly for those who are widows and have children to take care of (IWNT, 2011).
+
+Traditional belief systems limit the way women in the hill communities express themselves and their opinions, and women are solely responsible for reproductive work. In Thailand, there are many migrant workers from neighboring countries, who in many cases stay for an extended period of time. These migrant workers are considered to be one of the most vulnerable groups in Thailand. Their precarious legal status is exacerbated by the fact that women migrants are more vulnerable to security issues (both in the community and in the household in terms of gender-based violence). Women are paid less than men because of gender discrimination and sex segregation in types of work they do, and women bear the heavier burden to look after family and children (both physically when the children are with them, and through remittances when they have left children behind) (Pearson and Kusakabe, 2012).
+
+
+---
+*Chunk pages 240–240*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=990 (sys=94, user=896), max_out=1024, ctx=8192
+---
+
+# 2.2 Macro level (policies and laws)
+
+Thailand ratified the Convention on the Elimination of All Forms of Discrimination against Women (CEDAW) in 1985 and further ratified the optional protocol in 2000. It adopted the Beijing Declaration and Platform for Action (BFPA) in 1995. Recent improvements in gender equality-related laws include:
+
+- The Name Act was amended to allow women the right to choose a family name (2005).
+- Amendment to Civil Code to provide women and men equal grounds for divorce (2007).
+- Rape was criminalized by the Penal Code of 1965, and the subsequent Criminal Code Amendment Act of 2007 criminalized marital rape.
+- The Labor Protection Act of 2008 and the Penal Code foresee legal protection in the workplace, and the Labor Protection Act extends protection against sexual abuse, harassment or nuisance by superiors to cover all workers, both female and male, with penalties up to THB 20,000 baht. Sexual harassment nonetheless continues to be an issue in the workplace (UNDP, 2021).
+- Anti-human trafficking Act B.E. 2551 (2008) was introduced as a measure to prevent and suppress the trafficking of women and children.
+- The Domestic Violence Victim Protection Act of B.E. 2550 passed in 2007, and the associated criminal code was amended, to criminalize marital rape to combat gender-based violence.
+- Amendment to the Thai Penal Code to relax currently restrictive regulations on abortion by decriminalizing the termination of pregnancy during the first 12 weeks (2021).
+
+The Gender Equality Act was introduced in Thailand in 2015. The Act establishes three committees for driving gender equality: namely, the gender equality promotion committee, the committee on unfair gender discrimination, and the gender equality fund executive committee. This is the first Thai law to promote gender equality, which aims to provide protection to all people from gender discrimination, including transgender people. Although the Department of Women’s Affairs and Family Development recognizes challenges faced by transgender people, “the Act has been criticized by the CEDAW Committee for making exceptions on issues related to religious principles and national security” (UNDP 2021:15).
+
+The 2017 Constitution prohibits discrimination on the grounds of sex and affirms the principle of equality between women and men. UNDP (2021:16) hailed that this is “the first that calls for Gender Responsive Budgeting, determining that the government when allocating the budget, shall take into account the different needs of people based on gender, age and other conditions in order to ensure fairness.” Following this, the Budget Bureau has asked spending ministries to indicate on their budget request forms whether individual budget requests have a gender impact (OECD, 2021). In line with the SDG 5 (Gender equality) and aligning with the 20-Year National Strategy (2018-2037), the Thai Women’s Development Plan or the Women Development Strategy (2017-2021) was established with the vision to create social equality without discrimination. It is the main mechanism for Thailand to promote women’s development (UNDP, 2021).
+
+The three-year Action Plan to promote gender equality (2020-2022) of the Department of Women’s Affairs and Family Development under the Ministry of Social Development and Human Security covers four main areas: (i) Awareness raising to improve understanding of gender equality; (ii) strengthening gender empowerment; (iii) all organizations to have policies on
+
+_______________________________________________________________________________________________________________
+6 The Government of Thailand’s National Review: Implementation of the Beijing Declaration and Platform for Action (1995) and the outcomes of the twenty-third special session of the General Assembly (2000) in the context of the twenty-fifth anniversary of the Fourth World Conference on Women and the adoption of the Beijing Declaration and Platform for Action 2020.
+
+
+---
+*Chunk pages 241–241*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=857 (sys=94, user=763), max_out=1024, ctx=8192
+---
+
+# 8. Gender Equality
+
+## (iv) Promote research and development on gender equality
+
+The monitoring at the ministry level is done through the Chief Gender Equality Officer (CGEO) and the Gender Focal Point (GFP) appointed under each ministry. Since March 2015, the Cabinet has made all permanent secretaries to serve as their ministries' CGEO.
+
+## The weakness in Thailand's policy on gender equality
+
+The weakness in Thailand’s policy on gender equality was summarized by UNDP (2021:16) as below:
+
+> “In CEDAW’s 2017 Concluding Observations on the state of gender equality in Thailand, the Committee expressed particular concern for the situation of rural Thai women, including indigenous women and those ethnic and religious minorities, remain disproportionately affected by poverty and limited economic opportunities. CEDAW spells out that Thai women, in particular rural women, are also excluded from participation in the elaboration and implementation of policies and action plans on climate change and disaster risk reduction, despite the fact they are disproportionately affected by the effects of climate change and disasters. Besides the lack of clear policy directives on the integration of gender equality and limited participation of women in the formulation and implementation of climate policies and plans, another key challenge in gender and social inclusion in on climate change action is lack of sex-disaggregated data.”
+
+The lack of data prohibits the government’s ability to design specific interventions. Thailand considers the development of a sex-disaggregated database as the next step in its effort to achieve gender equality (UNDP, 2021). As of 2020, only 45.9% of the indicators needed to monitor the SDGs from a gender perspective were available, with gaps in key areas such as: labor market indicators such as the gender pay gap, gender and poverty, physical and sexual harassment, women’s access to assets (including land), and gender and the environment. Data lacks comparable methodologies for regular monitoring (UN Women, n.d.a). Thailand has developed laws and policies as well as gender mainstreaming mechanisms, but still needs to translate it into action. To achieve this goal, strengthening the collection of sex-disaggregated data, as well as capacity building of organizations, remain an urgent task.
+
+## 2.3 Meso level (institutions)
+
+The Ministry of Social Development and Human Security has tasked the Department of Women’s Affairs and Family Development as the national women’s machinery responsible for promoting gender equality, empowerment of women, and social inclusion. The Department of Women’s Affairs and Family Development is responsible for formulating policies and processes to enhance social security for women and girls, setting up mechanisms for promoting coordination among concerned government offices and non-government organizations. It is also the secretariat of the National Inter-ministerial Committee on Policy and Strategy for the Improvement of the Status of Women, which is chaired by the Prime Minister. The Office implements the five-year National Women’s Development Plans (UNDP, 2021). There are Chief Gender Equality Officers (CGEOs) and Gender Focal Points (GFPs) in 131 government departments and agencies who are responsible for providing and coordinating gender mainstreaming support in the various subnational government agencies (ADB, 2013). Other government agencies that play an important role in gender equality are the National Human Rights
+
+[Page 1]
+
+
+---
+*Chunk pages 242–242*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=990 (sys=94, user=896), max_out=1024, ctx=8192
+---
+
+# 9  
+## Commission7 as well as Law Reform Commission of Thailand 8. The National Human Rights  
+Plan (2019-2023) determines a women’s human rights plan to achieve gender equality goals.  
+
+The Thai government has constituted a Working Group for the Implementation of SDG 5. The  
+Working Group includes representatives from government agencies and civil society such as  
+the Thailand Sustainable Development Foundation, the Association to Empower the Potential  
+of Women with Disabilities (AEPWWDs), the Foundation for Women, Homenet Thailand Foun-  
+dation for Labour and Employme nt Promotion and WeMove . The Working group exchange s  
+information and discusses future directions on gender equality (UNDP, 2021).  
+
+Other important non-government institutions and Civil Society Organisations (CSOs) on gen-  
+der equality work especially around gender-based violence and LGBTQ issues. These include  
+the Health and Opportunity Network (HON) in Pattaya, M Plus (HIV/AIDS, LGBTQ), Gender  
+and Development Research Institute (GDRI) (Bangkok), Rainbow Sky Association of Thailand  
+(Bangkok), Teeranat Kanjana-aksorn Foundation, ProRights Foundation, Sisters Foundation  
+(Pattaya), SHero (on domestic and gender-based violence), Thai Transgender Alliance (Thai  
+TGA), Transgender People Association of Thailand, Transmen Alliance of Thailand (TMAT),  
+Transpiration Power, and Asia Pacific Transgender Network (APTN).  
+
+The United Nations Partnership Framework (UNPAF) for Thailand 2017-2021 was signed by  
+the United Nations Country Team (UNCT) in Thailand and the Royal Thai Government (RTG)  
+in July 2017 with a single outcome: “By 2021, inclusive systems, structures and processes  
+advance sustainable people -centred, equitable development for all people in Thailand”. UN  
+Women chaired the Gender Theme Group in 2017, serving as an advisory group to the UNCT  
+on gender issues in support of the implementation of UNPAF as well as strengthening the UN’s  
+collective impact in advancing gender equality and women’s empowerment; and led the 2017  
+UNCT CEDAW Reporting.  
+
+Since July 2019, the theme group has been changed to the Gender Equality and Social Inclu-  
+sion (GESI), chaired by UN Women and UNDP, with the aim to not only advise UN CT on  
+gender issues but to support the implementation of UNCT accountability frameworks and rec-  
+ommendations including facilitation of the System-wide Action Plan (SWAP) on Gender Equal-  
+ity and the Empowerment of Women. It also provided training as well as monitored implemen-  
+tation through performance indicators (the “scorecard”). UN Women co-leads the UNCT SDG  
+Results Group on Peace and Governance with UNDP (since February 2018) and the COVID-  
+19 and Gender-based Violence (GBV) Sub-group in Thailand (since May 2020) (UN Women,  
+n.d. b).  
+
+## 2.4 Micro level (target groups)  
+
+### Discrimination against women  
+
+According to the Association for the Promotion of the Status of Women, discriminatory prac-  
+tices against women still exist in many areas in Thailand , especially in rural areas. These in-  
+clude employment practices, unfair treatment of women workers, and access to resources.  
+More specifically, there is a lack of policies promoting economic empowerment and access to  
+financial services for disadvantaged groups of women. Only 13.67% of women have borrowed  
+
+_______________________________________________________________________________________________________________  
+7 The National Human Rights Commission examines and reports facts in cases of human rights violation, promotes awareness of  
+human rights, provides advice to relevant agencies and government to promote and protect human rights and prepares a human  
+rights situation assessment report for submission to the parliament and the cabinet.  
+8 The commission considers and prepares a draft law assigned by the Prime Minister or the Council of Ministers, gives opinions  
+or performs other legal matters to a State agency, train s and develops civil servants in the field of law, and coordinate s with  
+relevant agencies to develop legal principles and the administration of State affairs, among other tasks.  
+
+---  
+[Page 1]
+
+
+---
+*Chunk pages 243–243*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1033 (sys=94, user=939), max_out=1024, ctx=8192
+---
+
+# Women’s Representation in Decision-Making Bodies
+
+Women are under-represented in both public and private decision-making bodies. There is only one female governor from 76 provinces (1.32%), women Chiefs of Provincial Administrative Organizations (PAO) account for 8%, and Sub-district Administrative Organizations (SAO) account for 6.45% only (UNDP, 2021). These figures rank Thailand as one of the lowest in Asia and the Pacific region in terms of gender equality in politics. Women in leadership positions work harder than men since women who aim for an active role in the community are still expected to fulfill their household tasks before they go beyond their household (Homenet interview, 19 September 2022).
+
+# Women’s Access to Reproductive Health Services
+
+Thailand’s primary health care, including reproductive health care services, is provided through a network of sub-district health centers. UNDP (2021:11) notes the achievements of reproductive health care services in Thailand:
+
+> “80% of all pregnant women used prenatal care in 1987, 92% in 2000, and 100% in 2012 when Universal Health Care (UHC) was in place. Birth attendance increased from 90.8% in 1990 to 99.7% in 2012. Further, the Contraceptive Prevalence Rate (CPR) increased from 14.8% in 1970 to 79.3% in 2012. The total fertility rate per woman fell from 5.9 children in the 1970s to 1.6 children in 2011.”
+
+However, there are some remaining challenges, such as a high level of teenage pregnancy. The adolescent birth rate increased from 42 per 1,000 women aged 15-19 years in 2007 to 52 in 2012 but then fell to 44 in 2020 (World Bank, 2020). Unmet need for contraception knowledge is higher among younger women (11.6% for women aged 15-19 years old) than for older women (8.3% for women aged 45-49 years old) (UNDP, 2021). Teenage pregnancy puts more stress and burden on women than men. Pregnant girls continue to be prohibited from going to school and face stigma. Teenage pregnancy becomes a problem for the girls and their families, while the boys and their families usually do not face any consequences (Homenet interview, 19 September 2022).
+
+Women in Thailand still face a number of challenges accessing safe abortions, though from October 2022 abortion has been allowed up to the 20th week of pregnancy. Abortions during the first 12 weeks became legal in Thailand in February 2021. Previously, abortion had been illegal, with limited exceptions made for cases in which the mother’s physical or mental health was threatened, the woman was under 15 years of age, became pregnant as the result of rape or incest, or the fetus had serious disabilities or deformities (AP News, 2022). It is officially estimated that about 30,000 abortions occur each year (including induced, spontaneous and therapeutic abortions), but this can be under-estimated, and other figures suggest 200,000–300,000 annually (UNDP, 2021).
+
+
+---
+*Chunk pages 244–244*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=996 (sys=94, user=902), max_out=1024, ctx=8192
+---
+
+# Women in vulnerable situations
+
+One of the sub-groups of women who are in a vulnerable situation is young mothers, especially young mothers (including teenage mothers) with small children. They frequently face difficulties because their education has been disrupted and they face obstacles in obtaining employment because of childcare responsibilities. Furthermore, they often face stigma, although since there are more teenage mothers in the villages nowadays, people are becoming more used to seeing young mothers (Interview with Homenet, 19 September 2022). In 2013, there were 1.4 million single-parent households (7.1% of all households).
+
+Another sub-group of women in vulnerable situations are older women in skipped-generation households. Skipped-generation households are those households that consist of grandparent(s) and grandchildren whose parents are working and living elsewhere. Because of the lack of affordable childcare in many urban areas, parents often send their children back home under the care of their grandparents. There were 400,000 skipped-generation households (elderly women or men with grandchildren) in 2013, which accounted for approximately 2% of the total households, with an increasing trend (UNDP, 2021). Among the skipped-generation households, there are more women who head such households (more elderly women with grandchildren), and they tend to be more vulnerable. About 20% of elders in skipped-generation households have income below the poverty line – more than twice the national poverty rate (UNDP, 2021).
+
+A third sub-group are women elders. A growing number of Thai elders are living in vulnerable family situations – living alone, with elderly spouses or with grandchildren. 63% of them live in rural areas (UNDP, 2021). Senior citizens living alone increased from 8% in 2014 to 10.8% in 2017, and it is estimated that 20% of elders will soon be living below the poverty line, the majority being female (Charoensuthipan, 2019).
+
+A fourth sub-group of women are disabled women as well as women who take care of the sick and the disabled. Disabled people receive only 800 baht per month as monthly support from the government. Women face double discrimination because of their gender and because of their disability and have difficulties finding employment. As a result, they are excluded from compensation measures that are available through the employment social security scheme of the government. Women are often the ones who take care of the disabled, both financially and physically, which puts a disproportionately larger responsibility on them (Protection international, 2020).
+
+A fifth sub-group of vulnerable women are women self-identifying as pertaining to an ethnic group. Most of the ethnic groups in rural Thailand live in remote hilly areas. They experience significant health inequities, as a recent study in Northern Thailand revealed (Thummapol et al., 2018). Ethnic groups face discrimination in access to health care, especially since older women have difficulty speaking in Thai and they feel more uncomfortable accessing services. As a result, women self-identifying as pertaining to an ethnic group are more vulnerable to preventable diseases (e.g. cervical cancer and HIV/AIDS). Ethnic groups in Thailand tend to be more patriarchal than lowland Thais, which increases women’s workload, depriving them of time to access health services (UNDP, 2021).
+
+A sixth sub-group consists of migrant women from neighboring countries. Even when they do similar jobs as Thai citizens, women migrant workers tend to be paid less and have less access to training and careers. This situation persists despite the Labor Protection Act 1998 guaranteeing equal treatment of all employees and equal treatment and remuneration between women and men in employment.
+
+---
+
+**Note:** Page numbers are preserved for reference. The text above represents the content from page 244 of the original PDF.
+
+
+---
+*Chunk pages 245–245*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=735 (sys=94, user=641), max_out=1024, ctx=8192
+---
+
+# Care work
+
+In Thai society, care work is carried out almost solely by women – both childcare and elderly care. As mentioned above, much of the vulnerability of women comes from their care work responsibilities. There are government mechanisms that seek to ease such work, although they are limited in scale and scope. For example, Village Health Volunteers (VHVs) are introduced and trained in each village, visit people who are sick or old and conduct health checks of small children. They are trained and receive a small stipend for their work. Most VHVs are women. Recently, all sub-districts have introduced a care worker scheme, with the municipality government paying for care workers who visit bed-ridden elderly people (Interview with women’s group in Roiet province, 1 October 2022).
+
+There are also some sub-districts that have introduced day-care centers. Around 85% of children aged 3 - 5 years attend Early Child Development Centers or pre-primary education. However, the lack of affordable childcare services for children under three is still a problem (Unicef, 2019).
+
+COVID-19 pandemic has led to close down of schools, which increased women’s childcare work. It has also increased women’s healthcare work at home, as well as other reproductive activities as family members spend longer time at home (UNDP, 2021).
+
+## Conclusions for the project
+
+- Thailand is a matrilocal society, and women have a certain level of resources and power within the household. However, gender discrimination and inequality persist. Gender-based violence endures, teenage pregnancy stigmatizes girls, and women in leadership positions earn much less than men. Gender stereotypes are widespread, and gender norms expecting women to be good mothers and wives are strong.
+
+- Because of the lack of gender-disaggregated data, it is difficult to understand the extent of the gender inequality problem. Although there have been a number of laws that were introduced to improve gender equality, the mechanisms and operationalization of gender equality still remain weak.
+
+- Thai women in general have a good education, have relatively good basic ICT skills compared to men, and are active in productive activities. There are many opportunities that women can explore if given appropriate recognition and support.
+
+- Some particularly vulnerable groups of women include single mothers with young children, elderly women in skipped-generation households, elderly women living alone, disabled women and women with care responsibilities (elderly, sick, disabled), women self-identifying as pertaining to an ethnic group, and women migrant workers.
+
+- There is little support for women’s care work responsibilities. There is a lack of affordable childcare services for children under three.
+
+
+---
+*Chunk pages 246–246*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=910 (sys=94, user=816), max_out=1024, ctx=8192
+---
+
+# Chapter 3: Gender dimensions in the sector
+
+## 3.1 Meta level
+
+### Women’s employment in agriculture
+
+According to the World Bank (2020), estimated women’s employment in agriculture as a share of all female employment declined from 60.8% in 1991 to 27.6% in 2019 in Thailand. Thai women are actively involved in agricultural groups, have equal access to the family’s productive resources, and have greater control over household income than men (Akter et al., 2017). Women and men have the same rights over land, and equal rights to inheritance are guaranteed by the Civil and Commercial Code, although those who take care of the parents (who tend to be daughters) tend to get more (UNDP, 2021). Historic and ethnographic studies describe women’s relations with their husbands as relatively egalitarian (Curran & Meijer-Irons, 2014). Women and men have the same economic rights including in relation to opening bank accounts, obtaining credit, and accessing formal financial services. The Thai government has put in place a number of measures, such as the National Village and Urban Community Fund, to extend loans to villages and urban communities and provide vocational training to women and men alike (UNDP, 2021).
+
+### Women as unpaid family workers
+
+Despite such a positive trend, gender inequality in Thailand persists in a more subtle way. One of the issues is the invisibility of women’s contribution. The majority of women (53%) workers in the agriculture sector are considered unpaid family workers. Having women’s work categorized as unpaid family work makes women’s farming activities invisible. Men might be engaged in rice farming together with women, but women might also be engaged in other backyard farming activities as part of their unpaid family work. In this case, the farming household will be counted based on the men’s farming activity, since women are supposed to be “assisting” men. Such invisibility of women’s work leads to a deficiency in policy/ program action to support women’s farming activities. Hence, policy measures such as agricultural trade expansion might not be benefiting women unpaid workers as much as it should, since their work is not fully taken into consideration, making unpaid women workers relatively more vulnerable than men in the agriculture sector (Korwatanasakul, 2020).
+
+In Thailand, 27% of women legally own agricultural land, which is higher than the average for OECD member countries (18%). However, it is also noted that Thai women make up 41% of the agricultural workforce. Women put in more work relative to their land ownership in Thailand (OECD, 2021).
+
+### Gender division of labour in agriculture in Thailand
+
+There is a clear gender division of labour in agriculture in Thailand. Men do the so-called physically strenuous work, which includes operating machinery (tractors, harvesters, etc.) as well as spraying chemicals. Agricultural labour is often paid by work done, and the type of work that men do are often paid more per hour. Women’s work, such as supplementary transplanting, is paid by day and is almost universally paid at a lower rate. This is especially the case for migrant agriculture workers. Women migrants often do packaging work, while men migrants do the harvesting and other strenuous work, so men are paid higher wages than women (Focus Group Discussion with women in Chiangrai September 30, 2022). Such gender division of labor is based on the perception that women are better at “tedious” tasks (Richardson and
+
+[Page 1]
+
+
+---
+*Chunk pages 247–247*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=968 (sys=94, user=874), max_out=1024, ctx=8192
+---
+
+## 3.2 Macro level
+
+The Ministry of Agriculture and Cooperatives (MOAC) is responsible for food security in Thailand. Its 20-year agriculture and cooperative plan (2017-2036) includes SDG 5 (gender equality) as one of the guiding SDGs. It mentions gender equality and women’s empowerment in public-private partnership under one of the five key strategies (Strategy 2: Enhancing the management efficiency of agricultural commodities throughout their supply chains).
+
+In other plans related to agriculture, gender equality is mentioned sporadically. The Action Plan of the Department of Agricultural Extension (2020-2022) includes gender equality-related action under “Development of agricultural group and community enterprises into Smart Groups” (Activity 1.3, page 9). It outlines an objective to strengthen women’s groups and women farmers to increase household income for food security and to add value to agricultural products.
+
+The subsequent Action Plan of the Department of Agriculture Extension (2023-2027) also refers to farmers’ wives groups under Section 4.1, “Strong agricultural organization”. The Plan aims to register farmers’ wives groups and transfer agricultural knowledge through the se groups.
+
+Although MOAC does not have a separate gender policy or gender strategy, it follows the national policy on gender equality. It recognizes women’s role in agriculture, but with a greater emphasis on post-harvest and community enterprise development activities. It works in coordination with the Community Development Department of the Ministry of Interior to develop and to promote “One Tambon One Product” (OTOP)10. Many OTOP products are produced by women’s groups. But, in general, issues of gender equality and power balance are not incorporated into existing agricultural policy (Nguyen et al., 2019).
+
+Despite higher levels of women’s participation in agriculture, the role of women in rural areas is often seen as secondary to men's roles. Women are regarded as secondary farm laborers rather than principal earners (Nguyen et al., 2019). Women also tend to be more concentrated in lower-value produce production, such as backyard vegetable production, small animal raising, food preparation and processing, retail trade of agricultural goods or non-farm income-generating activities. Even when these activities earn a higher income than the main agricultural production, women’s activities are most of the time considered as supplementary income.
+
+Despite the continued prevalence of gendered roles and gender stereotypes, both women and men in rural areas hold a sense of gender equality in agriculture. A study investigating the thoughts and feelings of Thai women participating in agriculture, using semi-structured interviews and researcher observation, found that there is a feeling of partnership between women and men (Richardson & Roberts, 2020). This might stem from the fact that women tend to be in charge of financial management at the household level in Thailand. However, it could also be grounded in a sense of collectivism, which has historically been high in Thailand (Pimpa, 2012; Hofstede, 1984). This higher level of collectivism, which has manifested itself in the importance people place on the commitment to groups such as “… family, extended family, or extended relationships” (Pimpa, 2012), makes it difficult for women to separate their personal interest from that of their family and/or to perceive their individual contribution separately. Such cultural values make gender issues in rural Thailand more difficult to identify and to problematize. Gender issues exist but they are internalized into everyday practices in rural areas.
+
+---
+
+10 One Tambon One Product (OTOP) is a local entrepreneurship stimulus program which aims to support the unique locally made and marketed products of each Thai tambon (sub-district) all over Thailand. Superior products from sub-districts are selected to receive formal branding as a “starred OTOP product” and are provided with promotion support locally and internationally.
+
+
+---
+*Chunk pages 248–248*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=832 (sys=94, user=738), max_out=1024, ctx=8192
+---
+
+# 15
+
+engagement in agriculture in Thailand, significant barriers to gender equality and empowerment still exist that need to be addressed through extension programming (Richardson & Roberts, 2020). Most of the policies and plans do not fully recognize women’s leading role in agriculture, problematize the unpaid work that they put in, nor do they problematize that women’s work is seen as supplementary income.
+
+The Plan to Drive the Promotion of Gender Equality 2019-2021 by the Gender Equality Promotion Committee (Sor Tor Por) of Thailand placed importance on women’s engagement in agriculture. The Plan noted, under its commitment to SDG 2 (zero hunger), that agricultural activities that women are engaged in are important for sustainable agriculture – taking care of small animals, collection and processing of food from the forest, mixed crop agriculture, and producing food for the family. With globalization and commercialization, women’s traditional ways of agriculture are destroyed, and cash income is accorded greater importance than household food security and sustainable agriculture. Therefore, the Plan argues that in order to help the environment and implement sustainable agriculture, improving women’s decision-making power is important.
+
+## 3.3 Meso level
+
+The Department of Women’s Affairs and Family Development sent a directive to all ministries to appoint a Chief Gender Equality Officer in November 2020. However, such appointments have not been fully implemented across departments11.
+
+The Rice Department promotes and supports rice farmers to obtain the Sustainable Rice Platform certification. It is noted that the Sustainable Rice Platform Performance Indicators for Sustainable Rice Cultivation include women’s empowerment as one of the indicators. According to the “Sustainable Rice Platform Performance Indicators for Sustainable Rice Cultivation” (version 2.1, January 2020), the assumption is that empowerment of women leads to improved maternal health, improved family health and well-being. Women’s empowerment is expected to lead to higher levels of productivity and profitability (page 35). The measurement of women’s empowerment is based upon a scorecard covering the following topics:
+
+- Women’s control over decisions regarding household agricultural production
+- Women’s control over decisions regarding their own labor input
+- Women’s satisfaction regarding their labor input
+- Women’s access to information and capacity building
+- Women’s access to seasonal resources for farm activities
+- Women’s control over long-term resources for farm activities
+- Women’s control over decisions regarding household income
+- Women’s control over their personal income
+- Women’s participation in collective decision-making
+- Violence against women
+
+The Department of Agricultural Extension works closely with farmers. In the past, most extension workers were men. However, with the improvement of infrastructure, travel to villages has become easier and faster. Moreover, as women tend to perform better academically, more women are coming in to work as government officers in MOAC. As a result, there are now more women extension workers and, in some districts, all the extension workers are women12.
+
+_______________________________________________________________________________________________________________  
+11 Many Rice Department staff do not seem to be aware of the existence of CGEO.  
+12 This has been repeatedly mentioned in the interviews with GIZ field officers and during field visits in Chiangrai and Roiet.
+
+
+---
+*Chunk pages 249–249*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=968 (sys=94, user=874), max_out=1024, ctx=8192
+---
+
+# 16
+
+The Bank for Agriculture and Agricultural Cooperatives (BAAC) is implementing several projects targeted at the rural populace, some of which promote gender mainstreaming and support national gender policies. They have gender-disaggregated data and use the data to analyze and identify those who have difficulty in repaying loans, although such gender-disaggregated data is only for internal use and is not shared publicly¹³. BAAC was awarded the Honorable Discharge Plaque as an outstanding organization that protects rights and promotes equality between the genders on International Women's Day 2016 (BAAC, 2015).
+
+BAAC offers both life insurance and agriculture insurance. Whoever holds an account in BAAC is covered by the insurance. There is no evidence to show that women have difficulty in accessing BAAC loans. At the same time, BAAC does not currently have any women-focused financial schemes. It is noted that BAAC is one of the committee members of the Thai Women Empowerment Funds under the Community Development Department, Ministry of Interior. A Women's Development Fund¹⁴ has been established in each province, where women can borrow money for income-generating purposes. A committee is organized with women leaders in the province to manage the fund. The funds are not used for rice cultivation, but for other agriculture and non-agriculture activities of women¹⁵. WDF uses 80% of its funds for loans and 20% for subsidies, with a maximum of 200,000 baht for support. The experience of learning about women's credit needs from the WDF might be useful in reflecting on a women-focused financial scheme of BAAC itself.
+
+## 3.4 Micro level
+
+### Women's active engagement in agriculture
+
+Men used to be dominant in agricultural work, but the economic situation and the need for cash have pushed women to take up a larger role in Thai agriculture. Nowadays, women usually perform a large fraction of the management and financial management tasks for the farm and the household while men work in the field as well as earn money outside the village. Women also supplement the household income through their income-generating work both on-farm and off-farm. Hence, women have increasingly assumed a decision-making role alongside their husbands. However, due to the gender-based division of labour and gender roles in the family and community, as well as women's lower social location in society and lack of women in leadership roles, the role of financial management is actually more of a burden and responsibility for women and does not always increase their power and freedom (Rungreangkulkij et al. 2019).
+
+### Women's time burden and care work
+
+As noted above, women are in charge of almost all of the household work and men only "help" with household chores. Even though women are doing ever more work in agriculture, their workloads within the household have not changed. However, in the rural setting, women normally do not perceive household work as a burden. Agriculture is perceived by women as an ideal livelihood to allow them to balance their household work and care work with productive work. Women, as well as men, frequently seek employment in the cities after finishing their¹⁴
+
+---
+
+¹³ According to the interview on October 6, 2022 with Mr. Jameekorn Rangmanee, BAAC Kanchanaburi Office by Dr. Areeya Obidiegwu, Kasetsart University.
+
+¹⁴ Women's groups register with the District Community Development Office. Fund is managed by a provincial committee that is composed of one elected representative per district (http://www.womenfund.in.th/).
+
+¹⁵ Although the fund contributes to women's economic activities, it has been pointed out that without accompanying program to raise awareness on gender equality, the loan itself has a limited impact to change gender relations (Akkasaeng, 2020).
+
+
+---
+*Chunk pages 250–250*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1059 (sys=94, user=965), max_out=1024, ctx=8192
+---
+
+# 17
+
+## Education, but when women have children or when their parents need care, women are the ones who come back to take up the care work alongside agricultural work.
+
+## Gender division of labour and wage gap
+
+As far as rice production is concerned, the workload has diminished since much of the work has been mechanized. Ploughing that used to be men's work is now done using tractors (albeit driven by men). Transplanting, which used to be women's work, has now been largely eliminated because of the use of broadcasting techniques or drum seeders. Harvesting, which used to be done by both women and men, but more frequently by women, is now done by harvesters. But the gender division of labour in agriculture remains strong, and men normally do physically strenuous work (including the operation of machinery) and spraying chemicals, while women are responsible for the management of the field. There is still a need to do supplementary transplanting since there are some areas where rice seeds do not sprout. In some places, there is a need for weeding. Both of these activities are done by women. Weeding is more difficult when rice is broadcast and cannot be mechanized. In Roiet, farmers cut the rice together with weeds in order to eliminate the weeds. Such cutting is done by men using mechanical grass cutters.
+
+Although the agricultural workload has diminished for both women and men, agriculture is still physically hard work. The most commonly experienced health problem of rural women is back pain or, more generally, body pain. According to Akter et al. (2017), about 70% of the respondents in their focus group discussions mentioned these problems as being caused by their workload. Despite this, most women did not seek medical help to reduce the pain. They only rest or use home remedies such as medicated patches or body massages to reinvigorate the strained muscles. Further, all women farmers in Thailand undergo state-sponsored monthly medical checkups and biannual blood tests to check for pesticide contamination (Akter et al., 2017).
+
+Youths tend to leave rural villages for education and for non-farming employment. This is the case for both women and men. However, when women have children and/or when their parents become old, it is often women who come back home to take care of children and the elderly, and, alongside their care work, start to be engaged in agriculture. These returnee women have to manage the household and agriculture themselves. Women's rice farming workload in female-headed households does not necessarily increase, since most of the rice production work is mechanized and women will hire labour for land preparation, spraying chemicals and harvesting. Women heads of households say that the difficulty of not having men around is that they are not able to consult – that is, there is no one to help in their task of farm management. Women have to manage the day-to-day farm activities and make crop management decisions in addition to daily household management (FAO, 2010). Still, there are some people who do have difficulty finding time to balance both household labour and agriculture. For example, young women with young children are considered to have more difficulty juggling different activities.
+
+There is a severe labour shortage in agriculture, and farmers often hire workers. Sometimes, the workers are other villagers, but often they hire Burmese migrant workers. Especially in the North, they prefer to hire Thai Yai Burmese workers since they speak the Thai language. Women migrant workers are often paid less than men. For example, for one harvesting job, men earn 500 baht while women earn 300 baht. This discrepancy is explained as being due to different work – men do the harvesting work and women do the packaging work.
+
+---
+
+16 These points have been repeatedly mentioned during group discussions with women's groups in Chiangrai and Roiet, but especially Roiet (where there are more young people who migrate out to work).  
+17 Mentioned during the group discussion with women in Chiangrai Province.  
+18 Mentioned during the interview with women farmer and also during the group discussion with women in Chiangrai Province.
+
+
+---
+*Chunk pages 251–251*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1082 (sys=94, user=988), max_out=1024, ctx=8192
+---
+
+# Technology Adoption
+
+During trainings organized by the Rice Department as well as NGOs, it is often observed that it is the women who best learn new agricultural technologies. Not only are the majority of training participants women, but they also contact extension workers more often than men. Women also tend to do better in classroom learning sessions. Although the decision whether to adopt technologies is not made only by women, women can take the lead in the adoption. Women's decisions can be given higher importance, since most often women are the ones who will be implementing the technologies. The detailed tasks that are associated with new agricultural practices are deemed to be carried out by women.
+
+As a result, women tend to be better in guiding household decisions to adopt different ways of doing things, as was expressed during the Focus Group Discussion (FGD) with women in Chiangrai, during the discussion on agriculture technologies:
+
+> "Many male farmers have been brain-washed that they need to use chemicals to do agriculture. But we are starting to realize that it is better to use fewer chemicals and go organic. Women are working hard to use less chemicals and advocate for organic methods. Men feel that it is a loss of face and were not very cooperative, but they are starting to understand. Men are more for chemicals than women, since men do not want to work on details and want to just use physical strength to apply chemicals. Women are more patient in going into details to manage the farm. Women are sacrificing for the family and community. They are working harder and harder." (FGD, 20 September 2022)
+
+Women - as the financial managers of the household - are sensitive to the cost of new technologies. Before even thinking about the potential yield increase, their first reaction to technology such as Land Laser Levelling (LLL) is that it is too expensive.
+
+The New Theory Agriculture is popular among women farmers, not only because it is advocated by the former King, but also because it is not costly. The whole idea is how to minimize expenditure. This suits women farmers' preferences, and it is easier for them to adopt and embrace. When introducing new technologies, it is important that the initial cost is minimized in order to catch the attention and interest of female farmers.
+
+Women are often keen to embrace new technologies, but there are some areas over which they do not have control. For example, tractors are operated by men. These male operators do not like to plough the land when there is still widespread rice stubble, since it will damage the tractor. So, they will burn the stubble, sometimes without even discussing this action with the land owner or with their wives.
+
+Both women and men use social media to obtain information on new technologies. As seen in the earlier section, there are fewer women in computer program development, but women are slightly better in terms of using applications. In Roiet province, women are the ones who help the elderly by downloading apps and registering for various support programs. They google when they have questions, and they watch YouTube to learn how to implement new agricultural technology practices. Such internet-based learning serves as supplementary knowledge.
+
+_______________________________________________________________________________________________________________  
+19 This point has been echoed throughout the field visits for this report – both in Chiangrai and in Roiet, both by GIZ field staff as well as the women leaders that were interviewed.  
+20 The King Bhumibol Adulyadej revealed in 1994 how his ideas on Sufficiency Economy should apply to agriculture. The New Theory Agriculture is a system of integrated and sustainable agriculture, embracing his thoughts and efforts in water resource development and conservation, soil rehabilitation and conservation, sustainable agriculture and self-reliant community development. The aim is to optimize farmland (TICA, 2019).  
+21 These points were mentioned during the group discussion with women farmers in Chiangrai and Roiet provinces (interviewed on 29 September and 1 October 2022).  
+22 According to the women's group in Roiet Province, interviewed on 1 October 2022.  
+23 According to the women's group in Roiet Province, interviewed on 1 October 2022.  
+24 According to the women's group in Chiangrai Province, interviewed on 29 September 2022.
+
+
+---
+*Chunk pages 252–252*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=990 (sys=94, user=896), max_out=1024, ctx=8192
+---
+
+# 19
+
+acquisition to support what they hear during training and increases their understanding of the technology.
+
+Both women and men are selected and trained as smart farmers and soil doctors by the sub-district agriculture officers. But, since they do not receive any support other than the initial training, farmers bring their soil samples to the center themselves (with a recommendation from the sub-district agriculture officer) to check the soil quality, rather than go to the soil doctors. If the farmers then go to a cooperative with the soil diagnosis result, the cooperative will provide farmers with an ideal mix of fertilizer. Contacting government offices is often done by women.
+
+## Certification
+
+The respondents during the field visits all noted that even when the farmers produce better quality rice, it is often not reflected in the market price. There is a small market for organic rice as a niche product for certain groups of buyers in the urban area. Some rice mills buy Sustain-able Rice Platform (SRP) rice with a small bonus. In Roiet province, women leaders said that even those farmers who were able to produce organic rice are selling their rice as SRP rice for the small bonus that the project provides for SRP rice, instead of selling it as organic rice (which should obtain a higher price). The premium rice market is still small and underdeveloped.
+
+There are efforts by women's group to develop such a premium rice market. Some women's groups use the Good Agriculture Practices (GAP) certificate as a story for their products to appeal to environmentally conscious consumers.
+
+## Income generating activities of women
+
+Since agriculture is a volatile occupation, farmers prefer to diversify. This is especially the case for women farmers, who often serve as both the farm manager and the household's financial manager. As is seen in the Department of Agriculture Extension's Plan, there are women's groups in all villages. Especially in villages where cohesion among the villagers is strong, there are active women's groups that are engaged in joint income-generating activities, and more cohesive ones are organized into community enterprises and are registered as such.
+
+Some of these groups also make compost and bio-fertilizers using earthworms. They tend to operate on a small scale, so they produce only enough for backyard gardens. Women's groups in Chiangrai Province shared that if they had a machine to mix the materials and sieve the worms, they would be able to increase the production of bio-fertilizer. Currently, these activities are treated as women's small-scale secondary income-generating activities and as an extension of household work. Women are not generally considered entrepreneurs; hence they tend to be neglected for support to grow or expand. If these women producers were to be supported as entrepreneurs and service providers, there would be considerable potential for them to increase their incomes and be recognized as entrepreneurs.
+
+---
+
+25 According to the women's group in Roiet Province, interviewed on 1 October 2022.
+26 According to the women leaders of mega farm in Roiet Province, interviewed on 1 October 2022.
+27 Good Agricultural Practices for Rice is a voluntary standard that certifies that the rice is safe for consumption with good quality. It provides requirements for every production steps to produce rice.
+28 According to the women's group in Suphanburi Province, 15 September 2022.
+29 The Action Plan of the Department of Agriculture Extension (2020-2022) and (2023-2027). See Section 3.2 of this report.
+30 Discussion with women's group in Chiangrai Province, 29 September 2022.
+31 According to one of the women leaders interviewed in Chiangrai (30 September 2022), she buys 25-30 kg of cow dung with 30 baht to make earthworm fertilizer. After one month, she can produce 20 kg of earthworm fertilizer, which she can sell with 20 baht per kg.
+
+
+---
+*Chunk pages 253–253*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=898 (sys=94, user=804), max_out=1024, ctx=8192
+---
+
+# 20
+
+It is important to note that lower cost of production and diversity of income sources create a sense of security among women farmers. Women in Chiangrai emphasized the importance of diversification for their livelihood security. The sense of security obtained through diverse income sources was stronger than that obtained from insurance32.
+
+Most women’s groups focus on income-generating activities. It is only when NGOs are present that they start to be engaged in other aspects, such as environmental issues and basic rights (Homenet interview on 19 September 2022). Taking note of the women’s higher awareness of the environment and health, as well as of new technologies, there is an untapped opportunity to involve women more strongly in climate-smart agriculture.
+
+## Women in leadership
+
+The numbers of female heads of village or heads of farmers’ groups are rising. This also coincides with the fact that men are frequently busy working outside the village and with the fact that with stronger Sub-district Administrative Offices (that are in control of budgets), the heads of the villages are slowly losing their political influence and resources. Regardless of the reasons, with more women being visible in official leadership positions, they serve as good role models.
+
+Being in leadership positions is more difficult for women than men since women working for the community need to fulfil their household chores before they work outside the household; otherwise, they will be exposed to criticism from both family and community members33.
+
+It is noteworthy that many of the strong women leaders in the villages are women who had gathered experience outside their home villages through education and work before returning after some time. They display a more confident demeanor and are often more knowledgeable and more articulate compared with those who have spent all their lives inside the same village. These women also run for local elections and win seats. For example, in Suvarnaphumi District in Roiet province 34, a number of women have become members of the sub-district council. This has created changes in the way the sub-district utilizes the budget. These women were able to highlight the importance of women’s groups’ activities and were able to allocate more budget support to the women’s groups. The sub-district leadership is supportive of women’s groups, but the fact that women were in leadership positions did make a difference.
+
+## Aging farmers and young farmers
+
+Youths tend to leave the village for education and work and the remaining smallholder farmer population is, on average, ageing as a consequence. Because of mechanization, it is still possible for older farmers to continue farming, especially for rice production. There is a pattern of young couples asking family members, mostly parents and/or siblings, to look after their children while they seek employment elsewhere (Rungmanee et al., 2021). This leads to an increase in skipped-generation households. There are more single elderly female-headed skipped-generation households than male-headed skipped-generation households (UNDP, 2021). These households commonly encounter difficulties, both financially and in terms of labour availability.
+
+There are some people who come back from the cities and start farming. These older returnee farmers tend to be more open to new technologies and can serve as good role models or
+
+_______________________________________________________________________________________________________________  
+32  According to group discussion with women’s group in Chiangrai province on 29 September 2022.  
+33  According to group discussion with women’s group in Chiangrai province, 29 September 2022.  
+34   Interview with women’s group on 1 October 2022.
+
+
+---
+*Chunk pages 254–254*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=832 (sys=94, user=738), max_out=1024, ctx=8192
+---
+
+# 21
+
+demonstration farmers in the future. There might be greater opportunities that they would be 
+interested in adopting new agricultural practices and showing other farmers their benefits.  
+
+In order to encourage younger generations to take up farming, it is important to inspire youths 
+on the exciting dimension of agriculture through knowledge of new scientific information and 
+technology. Currently, agricultural technology teaching is not in the curriculum and is done as 
+limited extra-curricular activities. If there are more opportunities for youths to become inspired 
+by agricultural technologies, there might be more young generation farmers who can lead cli-
+mate-smart agriculture in the future.  
+
+## Migrant workers
+
+Survey data generated prior to COVID-19 pandemic found that migrant workers’ incomes in 
+Thailand varied significantly depending on several factors, including gender, agricultural crop, 
+nationality, type of labour, and the province of employment . Around 58% of migrant worker 
+respondents who reported working full time made less than the statutory minimum wage of the 
+province in which they are employed . While 50% of men were paid less than the minimum 
+wage, the proportion was 66% for female migrant workers (ILO, 2022). Key recommendations 
+made in the ILO report include developing regular migration channels that are less costly, time 
+consuming and complex; amending the Ministerial Regulation concerning Labour Protection 
+in Agricultural Work to cover all workers in agriculture; a review of the ways in which the border 
+employment scheme is used; as well as addressing the significant gender wage gap (ILO, 
+2022).  
+
+In summary, women in rural Thailand play a prominent role in agriculture, but their contribution 
+is less visible since they are generally regarded as being unpaid family workers. Such lack of 
+recognition of women’s independent contributions and needs is reflected in the lack of specific 
+attention to women an d gender differences in agriculture -related policies and plans. Women  
+still need to juggle their time and effort with their care work responsibilities. Women are inter-
+ested in new technologies and can be a strong driver of new agricultural practices, but they 
+might have different priorities regarding what kind of technologies they would like to adopt than 
+men or external experts, hence there is a need to pay attention to their needs. Women play a 
+large role in stabilizing the fluctuating income from agricul ture by being engaged in non -farm 
+or off-farm income-generating activities. However, their activities are seen more as an exten-
+sion of household work rather than a serious business, hence the potential to grow their busi-
+ness is still untapped. Women in leadership positions can support this effort of better recogni-
+tion of women’s activities in the community and economy, and can make a difference by chang-
+ing resource allocation.  
+
+## Conclusions for the project
+
+- Women play a prominent role in agriculture, but they are perceived as 
+unpaid family labour. It is important that gender -disaggregated data is 
+properly collected and monitored so that women’s contributions are cor-
+rectly reflected in policies and plans.  
+- Women play a prominent role in agriculture but, at the same time, they 
+take almost the entire responsibility for care work at home. It is important 
+that a balanced workload is achieved between women and men in the 
+household and community through sharing of household work as well as 
+by providing social services such as daycare services.  
+
+[Page 1]
+
+
+---
+*Chunk pages 255–255*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=731 (sys=94, user=637), max_out=1024, ctx=8192
+---
+
+# 22
+
+- The female share of participants in agricultural training is high. It is helpful if there are follow-up supplementary learning materials made available online. Noting that often women farmers like using online applications even more than men, such online materials will be useful for their learning.
+
+- Women are interested in agricultural technologies but might have different priorities or interests than men. For example, they might be more interested in the cost reduction dimension of a technology. It is important to be sensitive to gender differences in the needs and interests of farmers when introducing climate-smart technologies and practices.
+
+- Young women and men leave farming but, when women have children or when their parents are old/sick, women tend to return to the rural villages. Such women who have been exposed to outside experience and knowledge might be more open to adopt new agricultural practices. Encouraging and providing support to these returnee women to apply climate-smart technology could be an effective strategy.
+
+- Women play a prominent role in off-farm and non-farm income-generating activities. However, these activities are often seen as an extension of their household work rather than as serious business. Such low recognition of women's activities leads to a lower position of women in society. It is important that women's income-generating activities are treated as serious business, are given proper support and are provided with business opportunities. For example, women producers and women's groups can play a role as service providers in the project, notably in the context of bio-fertilizer production.
+
+- Some women's groups sell their premium rice in small packages directly to consumers. However, the premium rice market is still underdeveloped. There is a need to support the development of premium rice markets and link women's groups to access such markets.
+
+- Facilitating women's leadership is important. Women's presence in leadership roles is still low and women face higher barriers in taking up leadership roles compared to men. Women can make a difference in resource allocation to support other women if they are in decision-making positions. To ensure that gender equality efforts can be sustained in the project area, promoting women into leadership positions is essential.
+
+- Women's groups tend to focus on income-generating activities. With external support and encouragement, they have the potential to play a key role as environmental and climate-smart technology advocates.
+
+- Migrant workers are essential for agricultural work, but it is noted that women migrant workers are paid less than men. It is important to ensure gender equality in wages among migrant workers.
+
+- Young people frequently leave the community for education and then do not come back. It is important to introduce opportunities for young
+
+[Page 255]
+
+
+---
+*Chunk pages 256–256*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=204 (sys=94, user=110), max_out=1024, ctx=8192
+---
+
+# Page 1
+
+23  
+women and men to be inspired by climate -smart agricultural technolo-  
+gies so that they might be interested to take them up in the future. Sup-  
+porting young couples who are just starting a family to stay in, or return   
+to, their villages to start up agriculture could serve as a complementary   
+approach to supporting climate-smart rice farming adoption.
+
+
+---
+*Chunk pages 257–257*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=879 (sys=94, user=785), max_out=1024, ctx=8192
+---
+
+# Chapter 4: Gender responsiveness and expertise, as well as gender equality in the partner organization(s)
+
+## Rice Department (RD)
+
+The RD of the Ministry of Agriculture and Cooperatives applies the national policies/strategies to promote gender equality: e.g., the Gender Equality Act, B.E. 2558 (2015), the 20-Year National Strategy, the National Economic and Social Development Plan and the Gender Equality Promotion Plan. However, RD does not have a gender action plan developed specifically for its own purposes, and staff members do not seem to be aware of who the Chief Gender Equality Officer (CGEO) is. The Department has not promoted gender equality issues and the awareness of gender equality in the rice sector is not commonly shared among staff members.
+
+## The Department of Women’s Affairs and Family Development (DWAFD) of the Ministry of Social Development and Human Security
+
+The DWAFD has included in its Strategy (2017-2036) several gender-specific points, including strengthening the mechanism of women’s development, ensuring that government agencies create sex-disaggregated data in their monitoring and evaluation system, as well as allocating funds to research into gender needs and differences. With support from DWAFD, the Rice Department can identify gender issues to focus on their programs, make sure that the data they collect are sex-disaggregated, and identify and train personnel for their monitoring and evaluation positions.
+
+Since the involvement of women in rice production in Thailand is high, the Rice Department should be able to collect good practices of women’s engagement in successful climate-smart agriculture, for learning and sharing with communities. It would also be able to identify opportunities that are created by its programs to empower women to be more active at the leadership level, noting that the number of women in leadership positions is still very low, especially at higher hierarchical levels above the village (sub-district, district, etc.).
+
+It is also noted that the Rice Department is currently supporting the development of a Thai Agricultural Standard (TAS) for sustainable rice, a national standard based on the global SRP standard. It is strongly recommended that the TAS standard adopts the SRP approach of including a women’s empowerment performance indicator in its monitoring and performance framework (see Section 3.3 of this report).
+
+## Bank for Agriculture and Agricultural Cooperatives (BAAC)
+
+In its Sustainability Report 2020, BAAC has included the following orientation with regard to SDG 5 (gender equality):
+
+While operating its business, BAAC has paid respect to human rights by upholding and practising the relevant principle of laws. There is no discrimination in recruiting bank personnel: both males and females have an equal chance of being recruited. Welfare is provided, and career paths are clearly developed together with human resource maintenance and development. There is no discrimination against race or religion. The ultimate goal is to be able to deliver financial services and create sustainable value for all stakeholders.
+
+With respect to financial access, when registering household representatives as clients, BAAC is also equally open to both men and women being accepted (BAAC, 2020:5).
+
+In its Business Strategy for the fiscal year 2022, BAAC notes the importance of equipping its personnel with higher capabilities to deal with different generations, especially young farmers.
+
+---
+
+[Page 1]
+
+
+---
+*Chunk pages 258–258*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=888 (sys=94, user=794), max_out=1024, ctx=8192
+---
+
+# [Page 1]
+
+## 25
+
+It also emphasizes compliance and provides a grievance procedure for complaints and mis-
+conduct of employees, although there is no specific mention of sexual harassment. The com-
+pliance and governance sub -committee have equal numbers of women and men (3 woman 
+out of 6 members).  
+
+While BAAC has a policy for inclusiveness and respect for human rights, there is no concrete 
+gender action plan. Its board and management are male-dominated. According to its Annual 
+Report 2021, the gender disaggregation of management members is as below:  
+
+• Of the 15 Board members, 3 are women.  
+• Of the 21 Management Committee members, 2 are women 
+• All of the Relation Affairs Committee (which consists of both employer and employee 
+representatives) members are exclusively men 
+• All Appeal Sub-Committee members are men (total 7 members)  
+• Of the Sub-Committee on the Development of Grassroots Economy and Social Envi-
+ronmental Responsibility members (8 in total, 7 men and one woman), the only woman 
+is one of the two senior experts.  
+
+Although the lack of women in management does not necessarily mean that BAAC’s operation 
+is gender-blind, there is room for more effort to be made to increase the number of women in 
+higher management positions.  
+
+BAAC collects sex-disaggregated data on clients and service operation recipients , but such 
+data is not made available to the public. The gender balance among clients seems to differ 
+from one location to another.  This is an improvement  from earlier days , when most BAAC 
+clients were male (as they were the household heads and the land was registered under their 
+names). Nowadays, women are better at dealing with paperwork, and hence more women are 
+contacting BAAC themselves36. Women clients seem to be aware of the insurance/compensa-
+tion that they are entitled to from the government through BAAC.  
+
+A number of BAAC projects support gender equality. For example, the Microfinance Linkage 
+Project (ended in 2009) supported women indirectly by providing access to formal credit and 
+supporting alternative income -generating activities such as small -scale vegetable produ c-
+tion37. BAAC’s “Tree Bank scheme” was established to encourage members to plant trees on 
+ their own land, helping members earn income to improve their financial security while increas-
+ing the number of trees in the community. The scheme is currently operated in over 800 com-
+munities. Half of the participants are women, and 90% of the committee members are women 
+(The Government of Thailand National Review, 2014). However, other BAAC projects – such 
+as the Land Ownership Fund 38 – disregard gender when targeting beneficiaries and may ,
+therefore, not be responsive to the needs of rural women.  
+
+In order to make sure that BAAC is able to meet the needs of female clients, as well as en-
+courage more young clients, BAAC needs to train its staff members to engage with women 
+and youths and reflect their needs in its operations. As seen in Section 3.3 of this report, BAAC 
+is one of the committee members of Thailand Women’s Empowerment Fund. The experience 
+in operating the Fund can be used to further develop its own women-focused programs.  
+
+_______________________________________________________________________________________________________________  
+36 According to the group discussion with women leaders in Chiangrai province (29 September 2022).  
+37   https://www.thai-german-cooperation.info/en_US/history_rural_2/  
+38   https://www.baac.or.th/en/content-product.php?content_group_sub=2
+
+
+---
+*Chunk pages 259–259*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1078 (sys=94, user=984), max_out=1024, ctx=8192
+---
+
+# Office of Natural Resources and Environmental Policy and Planning (ONEP)
+
+ONEP is a public entity under the Ministry of Natural Resources and Environment (MoNRE) and is responsible for the Environmental Fund Division (EFD) and serves as the focal point for international environmental conventions, including the GCF. ONEP employs a total of 272 government officials, 72% of whom are women. More than 70% of those at the executive level are women (GIZ, 2021). "ONEP implements a gender-neutral approach in its recruitment and career growth policy at all levels" (GIZ, 2021).
+
+ONEP serves as the government's gender focal point for climate change together with the Department of Women's Affairs and Family Development (DWAFD). Although ONEP has started to recognize the importance of gender aspects for climate policy development by reaching out to DWAFD, its mission statement does not explicitly refer to gender. ONEP administers the national EIA guidelines, but they do not include gender either. The Environmental Fund that is administered by ONEP does not apply gender criteria when making funding decisions (GIZ, 2021).
+
+Since ONEP is an entity under MoNRE, it falls under the government's national plans on gender equality in Thailand. ONEP is supposed to have its own gender focal point, which the DoWAFD requires, but does not in fact have one as yet. ONEP also lacks a Gender Action Plan (GAP). But since the Thai government itself has a gender equality policy, ONEP is subject to its provisions.
+
+# International Rice Research Institute (IRRI)
+
+IRRI, as a member of the Consultative Group on International Agricultural Research (CGIAR), has a strong commitment to gender equality and empowerment of women, as it believes that when women are empowered, not only women benefit, but it leads to the improvement of health and sustainability of food systems as a whole (interview on 8 September 2022 with Dr. Jean Balie, the IRRI regional director of Southeast Asia and the Pacific). During the meeting between IRRI and the Thai government on 15 October 2020 on "One CGIAR", IRRI Director General Matthew Morell assured the Deputy Permanent Secretary of the Ministry of Agriculture and Cooperatives that One CGIAR will "bring together a holistic agenda across food and nutritional security, climate change, the environment, livelihoods and prosperity, and gender and youth empowerment in agriculture" (IRRI, 2020).
+
+IRRI regularly publishes research on gender topics in rice production and has become a research leader in gender and livelihoods. IRRI is an equal-opportunity employer that values diversity: women and minorities are encouraged to apply. Designing and implementing gender equality at IRRI overall is generally under the governance of the executive team, which is composed of research, human resource and operations divisions.
+
+IRRI implements the "IRRI Gender in the Workplace Strategy". Further, IRRI's Code of Conduct explicitly states the non-acceptance of discrimination on the basis of race, ethnicity, religious belief, sex and gender. Currently, IRRI, being part of the One CGIAR, is bound by the One CGIAR's policy and guidelines, including the "Framework for Gender, Diversity and Inclusion in CGIAR's Workplaces".
+
+As of 30 September 2022, the data shows that IRRI employs
+
+---
+
+[Page 1]
+
+
+---
+*Chunk pages 260–260*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=763 (sys=94, user=669), max_out=1024, ctx=8192
+---
+
+# 27
+
+541 men and 407 women, making it a ratio of 1:0.7 (men to women), which is equal to 43% women among IRRI staff.
+
+While IRRI does not have any project deliverables that specifically target gender research, IRRI applies a 'gender lens' in all its activities. IRRI has identified some challenges for gender equality, as follows:
+
+1. Access to information about climate change and related impacts on water and agriculture;
+2. Decision-making related to water management and agriculture;
+3. Access to technology and related training to advance climate-smart agriculture;
+4. Access to finance to invest in climate-smart agriculture.
+
+Although IRRI has established itself as a thought leader on gender-livelihood linkages in the agricultural context, it is based in India. The Thai local staff who will be responsible for gender and livelihoods for the Thai Rice GCF project are not yet clearly assigned (as of October 2022). Gender issues in Thailand are subtle, and less obvious compared with South Asia or Africa. Women are very active in agriculture. However, the gender gap in leadership, as well as household and care work responsibilities and wage differences, persists, as seen in previous sections. This gap is generally perceived as reflecting natural differences and problematizing it can be challenging. IRRI needs to assign a gender officer who is not only appropriately trained but who also receives strong support from IRRI’s research lead on gender and livelihoods and also from the top management of IRRI Thailand.
+
+## Conclusions for the project
+
+RD:
+
+- The Chief Gender Equality Officer (CGEO) does not seem to be widely known to staff members. Better awareness raising on the roles of the CGEO and his/her visibility is needed.
+- There is no Gender Focal Point (GFP) in RD. It would help the functioning of the CGEO by having GFPs at the department, office and project levels.
+- There is no RD Gender Action Plan. Having an action plan would help facilitate the gender equality efforts of the project.
+- The RD follows the standard protocols and regulations of the Thai government for ethical conduct. Setting an anti-discrimination and sexual harassment policy for RD would highlight the importance of gender equality in RD.
+- Although women play a large role in agriculture, gender issues in Thailand are subtle and not easily identifiable. Training and awareness raising to clarify the subtle and hidden gender inequality issues for all levels of RD can help RD to monitor – and, ultimately, steer – gender equality issues in the rice sector.
+- It is noted that SRP includes women’s empowerment indicators that are an important tool to monitor the status of women’s empowerment in the rice sector. Such good practices need to be continued in the Thai Agricultural Standard for Sustainable Rice (TAS) as well.
+
+
+---
+*Chunk pages 261–261*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=515 (sys=94, user=421), max_out=1024, ctx=8192
+---
+
+# BAAC
+
+- BAAC has more women clients than in the past. BAAC can strengthen its services to contribute to gender mainstreaming efforts by designating a GFP as well as through developing a Gender Action Plan. BAAC management can receive training to effectively guide the process and give clear direction for gender equality in BAAC’s organization and services.
+
+- As was discussed in the earlier section, women farmers tend to have different needs and different drivers of a sense of security than male farmers. BAAC can strengthen its outreach so that it can better capture female farmers’ needs – in terms of both financial support (lending) as well as for insurance products.
+
+# IRRI
+
+- IRRI as an organization has declared a strong commitment to gender equality and operates a code of conduct for non-discrimination. Designating a GFP at the Thailand Country Office level could effectively translate such organizational commitment to country operations.
+
+- Although there is a clear commitment to the topic, there is currently no IRRI gender equality action plan developed for Thailand. An action plan would help guide in-country operations.
+
+- In order to have the action plan effectively implemented, IRRI Thailand staff members need to be trained on gender equality concepts. Their Terms of Reference (TORs) need to include working for gender equality so that tackling gender issues becomes everyone’s responsibility.
+
+# ONEP
+
+- ONEP has recognized the importance of gender perspectives and is one of the government’s two GFPs for climate change in Thailand. However, it has still not yet operationalized gender integration into its operation, such as including gender equality in its mission, gender guidelines in EIA guidelines, or gender criteria in Environmental Fund disbursements.
+
+
+---
+*Chunk pages 262–262*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=813 (sys=94, user=719), max_out=1024, ctx=8192
+---
+
+# Chapter 5: Gender responsiveness and expertise in the project/among project staff in the country
+
+## 5.1 Equal opportunities in the team
+
+The project is still at the proposal stage, so the personnel selection of the team members is not yet concluded. According to GIZ’s Gender Strategy, the Human Resources Department monitors action on equal opportunities within GIZ. New staff are given orientation on GIZ’s Gender Strategy, on sexual harassment policy and the functioning of the Gender Working Group in GIZ Thailand.
+
+Currently, the GIZ Thailand office is finalizing its own sexual harassment policy.
+
+## 5.2 Gender expertise of the team members
+
+GIZ Thailand office currently has a part-time GFP (10% of the total time allocated to work as GFP). In principle, all GIZ projects need to designate GFPs, but not all have yet done so. The country GFP and the project GFPs constitute the GIZ Gender Working Group and meet once a month. They exchange their experiences as well as discuss joint activities. This has been an effective forum for peer-to-peer learning.
+
+GIZ Thailand ensures that all proposals include gender considerations and improve gender equality wherever possible. All GIZ proposals need to be assessed by the country GFP against the GIZ Safeguards + Gender checklist. The country GFP provides recommendations on whether a proposal will need a gender analysis prior to the project or not. However, most projects developed by GIZ Thailand to date have been designated the level of G-0 for the gender marker (do no harm). The aim is to bring most projects up to GG1 level (include gender equality in objectives). Some projects already have successful achievements in terms of gender equality, and this was attributed to including a gender-related indicator in the design of these projects.
+
+GIZ Thailand central office staff receive gender training from an external resource person. However, not all field officers receive such opportunities. Integrating gender in projects is still a new topic for GIZ Thailand staff, and they are currently introduced to the “reach-benefit-empower” framework of gender integration.
+
+GIZ Thailand project staff need to work with their partners, and sometimes they face difficulty advocating for gender since the partner institutions frequently do not have gender equality policies or action plans. The first step that they are taking is to introduce GIZ’s gender strategy and code of conduct to partners.
+
+It seems that there is a certain level of gender awareness among GIZ Thailand staff, but there is still a need to improve capacity in terms of operationalizing their gender knowledge into practice in project implementation and management. How to influence and guide partners to take up gender-integrated/transformative approaches in project implementation and monitoring is an additional challenge.
+
+---
+
+**Note:** Page numbers are preserved as requested. The text above reflects the content from page 262 of the original PDF.
+
+
+---
+*Chunk pages 263–263*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=462 (sys=94, user=368), max_out=1024, ctx=8192
+---
+
+# Conclusions for the project
+
+- During staff recruitment, gender balance among staff in general and in relation to specific positions needs to be kept in mind. Staff TORs need to include adoption of a gender-transformative approach in their work.
+
+- A GFP needs to be recruited for the Thai Rice Project. If more and more GIZ projects are to adopt gender integration seriously, a part-time overall GFP would not be able to handle the workload and a full-time employee would be of benefit.
+
+- Assign GFPs for all projects. By having all projects participating in the Gender Working Group, peer-to-peer learning will be even more effective.
+
+- Gender training for all levels of staff needs to be conducted. Regular gender training for all levels – from management to field staff – is needed. Training for managers is needed so that they will be able to exercise leadership in a gender-transformative approach. Project staff need to be trained to identify gender issues in the field and how to monitor gender equality in projects. Also, gender communication training is needed so that project staff will be able to effectively deliver the message of gender equality to national partners and to final beneficiaries.
+
+- Develop gender monitoring indicators for all projects. This will facilitate project management to keep a constant focus on gender equality issues.
+
+- Sharing gender experiences with other agencies and with other GIZ country offices would be effective to motivate the country team to further develop gender-related practices and to promote the development of projects with strong gender dimensions.
+
+
+---
+*Chunk pages 264–264*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1195 (sys=94, user=1101), max_out=1024, ctx=8192
+---
+
+# Sources
+
+- Akter, Sonia, Pieter Rutsaert, Joyce Luis, Nyo Me Htwe, Su Su San, Budi Raharjo, Arlyna Pustika (2017) *Women’s empowerment and gender equity in agriculture: A different perspective from Southeast Asia*, Food Policy, Volume 69, Pages 270–279, https://doi.org/10.1016/j.foodpol.2017.05.003.
+- AP News “New Thai rules allow abortions up to 20th week of pregnancy” (September 27, 2022) https://apnews.com/article/abortion-health-thailand-statutes-4de6fb7a91e9007be6418561f67be5ae.
+- Asian Development Bank. (2013) *Thailand: Country Partnership Strategy 2013–2016 - Gender Analysis (Summary)*, pp. 2–3.
+- BAAC (2015) *Annual Report 2015*.
+- BAAC (2020) *Sustainable development report: Bank for Agriculture and Agricultural Cooperatives (BAAC)*.
+- BAAC (2021) *Annual report 2021*.
+- Bunnag, Nad (2022) *OPINION: How a high-profile case reflects Thai society’s views on sexual harassment victim and offenders?, April 17, 2022, Thai PBS World*, available online at https://www.thaipbsworld.com/opinion-how-a-high-profile-case-reflects-thai-society's-views-on-sexual-harassment-victims-and-offenders/.
+- Charoensuthipan, Penchan (2019) *“Elderly face increasing burden: Ageing population presents new challenges to society’s welfare”*, Bangkok Post, 5 June 2019 https://www.bangkokpost.com/thailand/special-reports/1689648/elderly-face-increasing-burden.
+- Chuemchit, M, Chernkwanma S, Rugkua R, Daengthern L, Abdullakasim P, Wieringa SE. *Prevalence of Intimate Partner Violence in Thailand*. J Fam Violence. 2018;33(5):315–323. doi: 10.1007/s10896-018-9960-9. Epub 2018 Apr 7. PMID: 29904232; PMCID: PMC5986850.
+- Curran SR, Meijer-Irons J. (2014) *Climate variability, and ownership and migration: Evidence from Thailand about gender impacts*. Wash J Environ Law Policy. 4(1):37–74. PMID: 27547492; PMCID: PMC 4991643. https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4991643/.
+- FAO (2010) *Gender dimensions of agricultural and rural employment: Differentiated pathways out of poverty*, FAO, IFAD and ILO: Rome.
+- GIZ (2021) *Gender analysis for a proposal on “Climate, coastal and marine biodiversity” Thailand, July*.
+- Hofstede, G. (1984). *National cultures revisited*. Asia Pacific Journal of Management, 2, 22–28. http://dx.doi.org/10.1007/BF01732507.
+- ILO (2022) *Labour Act exclusion leads to low pay and challenging conditions for migrant workers in Thai agricultural sector*, ILO Bangkok, available online at https://www.ilo.org/asia/media-centre/news/WCMS_844750/lang--en/index.htm.
+- Indigenous Women Network of Thailand (IWNT) (2011) *“Report on the situation on the rights of ethnic minority women in Thailand”, with collaboration from the Network for the Advancement of Women and Peace, supported by UN Women*.
+- IRRI (2020) *“Thailand welcomes One CGIAR, seeks rice research collaboration”* https://www.irri.org/news-and-events/news/thailand-welcomes-one-cgiar-seeks-more-rice-research-collaboration.
+- Korwatanasakul, Upalat (2020) *How can trade liberalization boost women’s employment and well-being? An analysis
+
+
+---
+*Chunk pages 265–265*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1243 (sys=94, user=1149), max_out=1024, ctx=8192
+---
+
+# References
+
+- OECD (2021), *SIGI 2021 Regional Report for Southeast Asia*, Social Institutions and Gender Index, OECD Publishing, Paris, https://doi.org/10.1787/236f41d0-en.
+- OWAFD (2011) *Report on Gender-based Violence Against Women and Girl (VAW/G) Indicators*; Office of Women’s Affairs and Family Development, Ministry of Social Development and Human Security, with support from UNDP Thailand. Available online at https://www.undp.org/thailand/publications/report-gender-based-violence-against-women-and-girls-vaw/g-indicators.
+- Pearson, R. and Kusakabe, K. (2012) *Thailand’s Hidden Workforce: Burmese migrant women factory workers*, Zed Books: London.
+- Pimpa, N. (2012). *Amazing Thailand: Organizational culture in the Thai public sector*. International Business Research, 5(11), 35-42. https://doi.org/10.5539/ibr.v5n11p35.
+- Protection international (2020) *“Thailand Covid-19: Reality if twice as harsh now for disabled women defending human rights”*, Protection international 21 April 2020. https://www.protectioninternational.org/en/news/thailand-covid19-reality-twice-harsh-now-disabled-women-defending-human-rights.
+- Richardson, M., Roberts, R. (2020) *Modern women and traditional gender stereotypes: An examination of the roles women assume in Thailand’s Agricultural System*, Journal of International Agricultural and Extension Education, Vol 27(4). DOI: 10.5191/jiaee.2020.27407.
+- Rungmanee, Soimart, Souknida Sautouky, Maw Thoe Myar and Patcharin Lapanun (2021) *Migration and Women’s Land Tenure Security in the Greater Mekong Sub-region: Case Studies from Thailand, Lao PDR, and Myanmar*, The Regional Center for Social Science and Sustainable Development (RCSD): Thailand.
+- Rungreangkulkij, Somporn, Ingkata Kotnara, Nilubol Rujiraprasert, Napaphat Khuandee (2019) *“Gender inequality identified as an underlying cause of depression in Thai women”*, Journal of international women’s studies, 20:7, 395-407.
+- Sigalla, Geofrey Nimrod, Declare Mushi, Tine Gammeltoft (2018) *“ ‘Staying for the children’: The role of natal relatives in supporting women experiencing intimate partner violence during pregnancy in northern Tanzania – a qualitative study”*, Plos One 13:6.
+- Skinnider, E., Montgomery, r., & Garrett, S. (2017). *The Trial of Rape*. Bangkok, Thailand: UN Women, UNDP, UNODC.
+- Sumano, Boonwara (2020) *Abuse against women still prevalent*, November 25, 2020, available online at https://tdri.or.th/en/2020/11/abuse-against-women-still-prevalent/.
+- Thailand. (2021). *Thailand’s voluntary national review on the implementation of the 2030 agenda for sustainable development 2021* (May 2021), https://sustainabledevelopment.un.org/content/documents/279482021_VNR_Report_Thailand.pdf.
+- The Government of Thailand’s National Review (2014) *Implementation of Beijing Declaration and Platform for Action (1995) and the outcomes of the twenty-third special session of the General Assembly (2000) in the context of the twentieth anniversary of the Fourth World Conference on Women and the adoption of the Beijing Declaration and Platform for Action 2015*, October 2014.
+- Thummapol, Onouma, Sylvia Barton, Tanya Park. (2018) *Healthcare Access Experiences Among Indigenous Women in Northern Rural Thailand: A Focused Ethnographic Study* in Central Asian Journal of Global Health, Vol. 7, No. 1.
+- TICA (2019) *The New Theory Agriculture* https://image.mfa.go.th/mfa/0/GH2PYnujXi/%E0%B9%80%E0%B8%AD%E0%B8%81%E0%B8%AA%E0
+
+
+---
+*Chunk pages 266–266*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=280 (sys=94, user=186), max_out=1024, ctx=8192
+---
+
+# [Page 1]
+
+33  
+https://data.unwomen.org/country/thailand.  
+UN Women (n.d. b) UN Women Asia and the Pacific:  Thailand  
+https://asiapacific.unwomen.org/en/countries/thailand#_ftnref7.  
+World Bank. (2020). World bank open data. Washington, DC: World Bank.  
+https://www.asiapathways-adbi.org/2020/08/how-trade-liberalization-boost-women-employment-well-being-thai-labor-market.  
+World Bank 2021 “Proportion of seats held by women in national parliaments (%)  
+https://data.worldbank.org/indicator/SG.GEN.PARL.ZS?locations=VN.
+
+
+---
+*Chunk pages 267–267*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=192 (sys=94, user=98), max_out=1024, ctx=8192
+---
+
+# Annex 8b
+
+## Gender Action Plan
+
+### GCF Funding Proposal
+
+#### Thai Rice: Strengthening Climate-Smart Rice Farming
+
+##### July 2023
+
+###### Version 3
+
+###### Deutsche Gesellschaft für Internationale Zusammenarbeit (GIZ) GmbH
+
+--- 
+
+*Note: The provided text appears to be a header or title page from a document, likely a PDF. It contains no content beyond the title and version information, so no further markdown conversion is possible.*
+
+
+---
+*Chunk pages 268–268*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=341 (sys=94, user=247), max_out=1024, ctx=8192
+---
+
+# LIST OF ACRONYMS
+
+| Acronym | Full Form |
+|---------|-----------|
+| ACWO    | ASEAN Confederation of Women’s Organisations |
+| ASEAN   | Association of Southeast Asian Nations |
+| AWEN    | ASEAN Women Entrepreneurs Network |
+| BAAC    | Bank of Agriculture and Agricultural Cooperatives |
+| EE      | Executing Entity |
+| EFD     | Environmental Fund Division |
+| ESS     | Environmental and Social Safeguards |
+| GAP     | Gender Action Plan |
+| GESI    | Gender Equality and Social Inclusion |
+| GFP     | Gender Focal Point |
+| GIZ     | Deutsche Gesellschaft für Internationale Zusammenarbeit GmbH (GIZ) GmbH |
+| GRM     | Grievance Redress Mechanism |
+| IRRI    | International Rice Research Institute |
+| M&E     | Monitoring and Evaluation |
+| ONEP    | Office of Natural Resources and Environmental Policy and Planning |
+| PMU     | Project Management Unit |
+| RD      | Rice Department |
+| SEAH    | Sexual Exploitation, Abuse and Harassment |
+| SRP     | Sustainable Rice Platform |
+| TAS     | Thai Agricultural Standard for Sustainable Rice |
+| ToR     | Terms of Reference |
+
+[Page 1]
+
+
+---
+*Chunk pages 269–269*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=658 (sys=94, user=564), max_out=1024, ctx=8192
+---
+
+# Thai Rice – Gender Action Plan
+
+## 1. Introduction
+
+A Gender Action Plan (GAP) forms the basis for gender mainstreaming throughout the project cycle. It is thus an operational planning as well as a Monitoring and Evaluation (M&E) instrument. This also includes integration of the respective indicators and baseline information into the system. The GAP will also be discussed with project partners who are involved in the project’s implementation.
+
+The gender assessment of the Thai Rice Project has identified the following gender issues/points of importance to be addressed by the project:
+
+- Monitoring of the gender equality situation is important to ensure that the project will not expand gender disparities and can contribute to gender equality and women’s empowerment.
+- Gender-disaggregated data is lacking and needs to be collected whenever there is an opportunity.
+- Gender equality perspectives need to be shared by all actors involved in the project.
+- Gender inequality largely stems from an unequal gender division of labour that places greater responsibilities for household and care work on women while also granting them fewer leadership roles.
+- Certain groups of women are especially vulnerable and need special attention, including women migrant workers, female-headed households, skipped-generation households, women with young children, elderly women living alone, women living with people with care needs, women with disabilities, and women self-identifying as pertaining to an ethnic group.
+- Women and men have different levels of interest in different types of technologies. Technology promotion and dissemination strategies need to consider such gender differences.
+- There are groups of women whose high potential for supporting climate-smart rice farming is not fully appreciated, including returnee women farmers as well as young women farmers.
+- Financial and insurance services need to take into consideration women’s needs.
+- Women farmers need to be acknowledged as entrepreneurs and service providers and need to be provided with business support.
+- Women's groups can be supported with market support for sustainable rice.
+- Some of the Project’s Executing Entities (EEs), namely the Rice Department (RD), the Bank for Agriculture and Agricultural Cooperatives (B AAC), the Office of Natural Resources and Environmental Policy and Planning (ONEP) and the International Rice Research Institute (IRRI), need to review – and, in some cases, improve or develop – their policies and practices to be gender-inclusive.
+- The project could usefully support and facilitate women’s leadership in the community, nationally and regionally.
+
+
+---
+*Chunk pages 270–270*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=685 (sys=94, user=591), max_out=1024, ctx=8192
+---
+
+# 4. Gender Action Plan
+
+## 1 Quantification of indicators will be ensured within the first year of project implementation.
+
+## 2 Where the main responsible EE is collaborating with contributing EEs, the respective EE is marked in bold. Where all listed EEs have/ share the same responsibility, none is marked in bold.
+
+| ID | Project | sub-activity | Gender equality needs | Description of the intervention | Indicators for successful implementation |
+| --- | --- | --- | --- | --- | --- |
+| 1 | Baseline Targets | Timeframe (year of implementation) | Responsible entity for the implementation | Cost estimation (EUR) |  |
+| 1 | All Benefits from the project are enjoyed equally by women and men, and gender disparities are not widened. | A gender-sensitive Monitoring and Evaluation (M&E) system is put in place to track the number of female and male beneficiaries and to ensure gender-responsive project management. | Gender-sensitive M&E system tracks the number of women being direct and indirect beneficiaries reached in Y1-5. | 0 | 253,400 direct beneficiaries (138,400 male, 115,000 female) | 760,200 indirect beneficiaries (353,400 male, 406,800 female) | 1-5 | GIZ, RD, BAAC, ONEP, IRRI | Included within budget of the M&E system |
+| 2 | All Gender-disaggregated data is available to inform decision-making and to track progress (includes data on land ownership, land rental, employment in agriculture, time use, loan access/utilization/repayment, out-migration, etc.). | Studies, surveys and reports commissioned by the project include gender-disaggregated data, especially relating to vulnerable women including, e.g., gender disaggregation of training recipients, female-headed households, female-headed skipped generation households, single mothers with small children, elderly | Gender-disaggregated data and information on vulnerable women collected in Y1-5. | 0 | 26 studies and reports have gender-disaggregated data, and further disaggregated by ethnicity, age, disabilities and other. | 1-5 | RD, BAAC, ONEP, IRRI, GIZ | Included in project budget for international and local consultancies |
+
+[Page 1]
+
+
+---
+*Chunk pages 271–271*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=629 (sys=94, user=535), max_out=1024, ctx=8192
+---
+
+# Thai Rice – Gender Action Plan
+
+## ID  
+Project  
+sub-activity  
+Gender equality  
+needs  
+Description of the  
+intervention  
+Indicators for  
+successful  
+implementation  
+
+### 1  
+Baseline Targets  
+Timeframe  
+(year of  
+implementation)  
+Responsible  
+entity for the  
+implementation  
+
+### 2  
+Cost  
+estimation  
+(EUR)  
+
+## Women living alone, women living with people with care needs, women with disabilities, women self-identifying as pertaining to an ethnic group.
+
+### 3  
+Development of a comprehensive set (master list) of gender-disaggregated data that is required to drive forward the gender agenda in the Thai rice sector.  
+
+Master list of gender-disaggregated data developed in Y1-5.  
+
+0  
+
+Master list of gender-disaggregated data developed.  
+
+1-5  
+
+GIZ, RD, BAAC, ONEP, IRRI  
+
+Included in staff costs of Gender Focal Points (GFPs)  
+(GIZ: 116,207 (1 person)  
+RD: 309,000 (3 people)  
+BAAC: 148,000 (3 people)  
+ONEP: 27,500 (1 person)  
+IRRI: 122,340 (1 person))  
+
+### 4  
+Regular diagnostics to monitor whether the gender-disaggregated data in the master list is being collected and is being included in relevant project reporting.  
+
+Master list of gender-disaggregated data is monitored in Y2-5.  
+
+0  
+
+Annual checks of the master list are conducted.  
+
+2-5  
+
+GIZ, RD, BAAC, ONEP, IRRI  
+
+### 5  
+A mechanism to collect Sexual Exploitation, Abuse and Harassment (SEAH) issues is developed and SEAH  
+
+Number of reports that include data on SEAH incidents in the project is included in  
+
+0  
+
+All the quarterly reports of the EEs have SEAH data  
+
+1-5  
+
+GIZ, RD, BAAC, ONEP, IRRI  
+
+See GAP intervention ID 3  
+
+--- 
+
+[Page 1]
+
+
+---
+*Chunk pages 272–272*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=695 (sys=94, user=601), max_out=1024, ctx=8192
+---
+
+# Thai Rice – Gender Action Plan
+
+## 6
+
+| ID | Project | Sub-activity | Gender equality needs | Description of the intervention | Indicators for successful implementation |
+| --- | --- | --- | --- | --- | --- |
+| 1 | Baseline Targets | Timeframe (year of implementation) | Responsible entity for the implementation | Cost estimation (EUR) | Data is included in the monitoring data. Project reporting in Y1-5. |
+| 2 | All | The gender equality perspective is shared with and by project implementation personnel. | 42 members of key personnel involved in the project (Project Management Unit (PMU), relevant EE staff, etc.) are trained on integration of gender interventions and gender mainstreaming, including how to monitor and how to communicate in a gender-sensitive way. | Number of key personnel involved in the project who have been trained on gender integration in projects, gender mainstreaming, monitoring and communicating in a gender-sensitive way in Y1-4. | Baseline will be set in inception phase |
+| 42 members of key personnel of EEs (5 from BAAC, 7 from RD, 3 from ONEP, 6 from IRRI and 21 from GIZ) are trained annually on gender topics. | 1-4 | GIZ, RD, BAAC, ONEP, IRRI | 16,400 | 7 | All |
+| Changes in division of labour (agricultural, household, family care, etc.) between women and men. | Information campaigns and training and awareness materials supported by the project will include awareness-raising on Gender Equality and Social Inclusion (GESI) and the necessity of men and women sharing household and family work. | Number of training modules that include GESI and about sharing of household work in Y1-5. | Baseline will be set in inception phase |
+| 20 training modules developed by the project include GESI. | 1-5 | GIZ, RD, IRRI | Included within sub-activity 1.1.1.1 | 8 | Number of awareness-raising campaigns organised or materials produced that include gender equality |
+| 0 | 5 | GESI awareness campaigns are organized in project area. | 5,000 |  |  |
+
+--- 
+
+**Note:** Page numbers are preserved as per the original document.
+
+
+---
+*Chunk pages 273–273*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=316 (sys=94, user=222), max_out=1024, ctx=8192
+---
+
+# Thai Rice – Gender Action Plan
+
+## 7
+
+| ID | Project | sub-activity | Gender equality needs | Description of the intervention | Indicators for successful implementation |
+|----|---------|--------------|-----------------------|---------------------------------|------------------------------------------|
+| 1 | Baseline Targets | Timeframe (year of implementation) | Responsible entity for the implementation | Cost estimation (EUR) | messages in Y1-5. |
+| 2 | 9 | Percentage of households participating in the project that confirm changes in division of labour within household in Y1-5. | At least 50 % of the project participating households (or 126,700 households) report changes in division of labour within their household. | 1-5 | Included within sub-activity 1.1.1.1 |
+
+--- 
+
+*Note: Page 273*
+
+
+---
+*Chunk pages 274–274*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=538 (sys=94, user=444), max_out=1024, ctx=8192
+---
+
+# Thai Rice – Gender Action Plan
+
+## Page 274
+
+### 3 Migrant workers are vulnerable because of their precarious legal status. Women migrant workers are particularly vulnerable because they tend to be paid less, tend to have less language ability and less developed social networks than male migrant workers. Thailand’s agriculture is heavily dependent on migrant workers from neighbouring countries.
+
+| ID | Project | sub-activity | Gender equality needs | Description of the intervention | Indicators for successful implementation |
+| --- | --- | --- | --- | --- | --- |
+| 1 | Baseline Targets | Timeframe (year of implementation) | Responsible entity for the implementation | Cost estimation (EUR) | 10 |
+| 1.1.1.1 | Women migrant agricultural workers are protected from gender-based discrimination. | 3 | Women migrant workers are eligible to receive project-supported training (where they meet other relevant criteria, e.g., they are rice farmers in the project area). | Number of trainings conducted and number of participants per year targeting migrant women and men in Y1-5. | 0 |
+| At least 4 trainings per province (21 provinces) targeting migrant women and men (with more than 50% of participants being women) organized every year with at least 40 migrant participants (in different locations every year, to cover workers in different areas). | 1-5 GIZ, RD | Included within sub-activity 1.1.1.1 | 11 | Percentage of migrant women and men workers participating in farmers’ trainings | 0 |
+| Value assortment set in inception phase for percentage of the participants of farmers’ training are Included within sub-activity 1.1.1.1 |  |  |  |  |  |
+
+--- 
+
+**Note:** The original page number is preserved as "Page 274".
+
+
+---
+*Chunk pages 275–275*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=736 (sys=94, user=642), max_out=1024, ctx=8192
+---
+
+# Thai Rice – Gender Action Plan
+
+## 9
+
+| ID | Project | Sub-activity | Gender equality needs | Description of the intervention | Indicators for successful implementation |
+|----|---------|--------------|-----------------------|----------------------------------|------------------------------------------|
+| 1 | Baseline Targets | Timeframe (year of implementation) | Responsible entity for the implementation | Cost estimation (EUR) | Organized by the project in Y1-5. migrant workers. |
+| 2 | 12 | Farmer training emphasizes the need – and obligation for project participation – to comply with all labour laws, including anti-discrimination legislation. | Number of farmer training modules which include issues on labour law and anti-discrimination in Y1-3. | 0 | 20 training modules include issues on labour law and anti discrimination. |
+| 1-3 | GIZ, RD | Included within sub-activity 1.1.1.1 | 13 | Training on climate-smart rice agriculture for farmers (most of whom are not migrants) presents the perspective of women migrant workers, so that all farmers understand – and, ideally, empathize with – the challenges migrant women confront. | Number of farmer training modules reviewed and revised to include women migrant workers’ perspectives and challenges in Y1-2. |
+| 0 | 20 farmer training modules include women migrant workers’ perspectives. | 1-2 | GIZ, RD | Included within sub-activity 1.1.1.1 | 14 | 1.1.1.1, 1.1.1.3 | Women in vulnerable situations (female-headed households, female-headed skipped generation households, women with young children, elderly women living alone, women living with people with care needs, women with disabilities, women self-identifying as pertaining to an ethnic group) | Climate-smart agriculture training for women in vulnerable situations is conducted in the village or the place of their preference, taking into consideration their time and logistical constraints. | Number of training and participants per year which target vulnerable women in Y1-5. |
+| 0 | At least 4 trainings with at least 40 vulnerable women conducted per province every year (training to be conducted in different locations every year to | 1-5 | GIZ, RD | Included within sub-activity 1.1.1.1 + | 5,000 (additional travel costs) |
+
+--- 
+
+**Note:** The original page number is preserved as [Page 1].
+
+
+---
+*Chunk pages 276–276*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=638 (sys=94, user=544), max_out=1024, ctx=8192
+---
+
+# Thai Rice – Gender Action Plan
+
+## Page 276
+
+### ID  
+Project  
+sub-activity  
+Gender equality  
+needs  
+Description of the  
+intervention  
+Indicators for  
+successful  
+implementation  
+
+### 1  
+Baseline Targets  
+Timeframe  
+(year of  
+implementation)  
+Responsible  
+entity for the  
+implementation  
+2  
+Cost  
+estimation  
+(EUR)  
+
+### Group  
+are able to  
+access training and  
+other knowledge  
+acquisition  
+opportunities.  
+to an ethnic group  
+might have more  
+difficulties accessing  
+these trainings because  
+of language and  
+cultural barriers. If  
+needed special training  
+will be arranged for this  
+group of women.  
+
+### Enhance  
+participation of  
+women in  
+diverse  
+locations) with  
+at least 10% of  
+the  
+participants  
+from ethnic  
+groups.  
+
+### 15  
+Percentage of  
+how many  
+participants of  
+trainings  
+targeting  
+vulnerable  
+women confirm  
+to have adopted  
+new  
+technologies  
+and increased  
+their income in  
+Y1-5.  
+
+### 0  
+50% of the  
+training  
+participants  
+adopted new  
+technologies  
+and increased  
+their income.  
+
+### Included within  
+GAP  
+intervention  
+
+### ID  
+14  
+16  
+
+### Training materials are  
+made available online  
+and offline in smart  
+phone-compatible  
+formats, so that they  
+can be accessed when  
+convenient to the user.  
+
+### Number of  
+training  
+materials made  
+accessible for  
+online and  
+offline use on  
+smartphones in  
+Y1-5.  
+
+### 0  
+Material of 20  
+training  
+modules to be  
+accessed  
+online.  
+
+### 1-5  
+GIZ, RD, IRRI  
+
+### Included within  
+sub-activities  
+1.1.1.1 and  
+1.1.1.3 for  
+
+### 17  
+1.1.1.1,  
+1.1.1.3  
+
+### Introduced climate-  
+smart technologies and  
+practices have  
+relevance and utility for  
+women as well as men.  
+
+### All training modules are  
+reviewed with a gender  
+perspective to ensure  
+they are gender-  
+responsive and  
+
+### Number of  
+training  
+materials  
+reviewed from a  
+gender  
+0  
+Materials of 20  
+trainings  
+modules are  
+reviewed from  
+1-3  
+GIZ, RD, IRRI  
+
+### Included within  
+sub-activity  
+1.1.1.1 and  
+1.1.1.3  
+
+---
+
+
+---
+*Chunk pages 277–277*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=564 (sys=94, user=470), max_out=1024, ctx=8192
+---
+
+# Thai Rice – Gender Action Plan  
+## Page 1  
+
+### ID  
+Project  
+sub-activity  
+Gender equality  
+needs  
+
+### Description of the  
+intervention  
+
+### Indicators for  
+successful implementation  
+
+| ID | Baseline Targets | Timeframe (year of implementation) | Responsible entity for the implementation | Cost estimation (EUR) |
+|----|------------------|------------------------------------|-------------------------------------------|-------------------------|
+| 18 | 1.1.1.1, 1.1.1.3 | Y1-3 | GIZ, RD | 14,000 |
+
+### The ageing trend among rice farmers – including women farmers – is addressed.  
+Secondary school girls and boys, particularly those in the final 2 years of school, in the project areas are introduced to climate-smart agricultural technologies and practices. Their awareness of governmental support programmes for rice farmers is raised.  
+
+### Number of awareness raising events at secondary schools and percentage of girls participating in these events in Y3-5.  
+
+### One secondary school per province (21 provinces) receive introduction to climate-smart agriculture technologies and practices, with at least 50% of the participants being girls.  
+
+### 0  
+### 70% of the girls and 70% of boys participating find the technologies included within GAP intervention ID 18  
+
+---  
+
+**Note:** The original page number is visible as “Page 1” in the extracted text.
+
+
+---
+*Chunk pages 278–278*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=788 (sys=94, user=694), max_out=1024, ctx=8192
+---
+
+# Thai Rice – Gender Action Plan  
+## Page 278  
+
+### 4 As identified in the gender assessment (Annex 8a), more women than men are care takers of the elderly. Both, young women and men, go to urban areas for work. However, when their parents are older, normally the daughters will come back to the province to take care of them. It is noted that these returnee women are often higher educated, have professional experience, and have wider exposure to different ideas while living in the urban areas, and can be more open to new technologies and different ways of doing things. This intervention aims to ensure that such resourceful women are integrated well into the rice farming community and into the project, so that both these women as well as the project benefit from their contribution.
+
+| ID | Project sub-activity | Gender equality needs | Description of the intervention | Indicators for successful implementation |
+| --- | --- | --- | --- | --- |
+| 1 | Baseline Targets | Timeframe (year of implementation) | Responsible entity for the implementation | 2 | Cost estimation (EUR) |
+| 1 | 1.1.1.1, 1.1.1.3 | 20 | The perspective of returning farmers (especially targeting young women and men who have just started a family) is reflected in the training approach. Number of training modules reviewed and revised to be returning farmers friendly in Y1-2. | 0 |
+| 2 | 1.1.1.1, 2.1.1.1 | 20 | Material for 20 training modules is made returning farmers friendly. | 1-2 GIZ, RD, IRRI |
+| 3 | 1.1.1.1, 1.1.1.3 | 21 | The entrepreneurial potential of women returning from urban areas to care for their parents is harnessed. | 4 |
+| 4 | Returnee women are contacted by local mega-farms or village associations and are offered training and information on climate-smart rice farming. | Number of returnee women farmers contacted by local mega-farms or village associations in Y3-5. | 0 |
+| 5 | 20 returnee women are contacted per province to implement climate smart technologies. | 3-5 GIZ, RD, IRRI | 5,000 |
+| 6 | Returnee women are paired up in ‘reciprocal mentorships’, whereby local women farmers provide advice and practical training on rice farming and the returnees provide practical advice (e.g., | Number of returnee women paired up in ‘reciprocal mentorships’ in Y3-5. | 0 |
+| 7 | 20 returnee women are paired up for ‘reciprocal mentorships’. | Included within GAP intervention ID 21 |
+
+---
+
+
+---
+*Chunk pages 279–279*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=770 (sys=94, user=676), max_out=1024, ctx=8192
+---
+
+# Thai Rice – Gender Action Plan  
+## Page 279  
+
+### 5 Note that some women’s groups in the North are already producing and selling bio-fertilizer using rice straw residues in conjunction with traditional manure substrate. Note also that earthworm fertilizers reduce the production of GHG emissions. The production of organic fertilizer will also contribute to sub-activity 3.1.1.1 through better use of biomass such as cow dung.  
+
+| ID | Project | sub-activity | Gender equality needs | Description of the intervention | Indicators for successful implementation |
+|---|---|---|---|---|---|
+| 1 | Baseline Targets | Timeframe (year of implementation) | Responsible entity for the implementation | Cost estimation (EUR) | on technology and commerce). |
+| 23 | 1.1.2.1 | BAAC financial support is accessible to women farmers and service providers. | BAAC develops financial literacy trainings and financial instruments (incentive payment and Climate-Smart Loan scheme) that meet the needs of women farmers, informed by consultations with women’s groups and women mega-farm leaders. This would serve as a process for dialogue for BAAC and identify women’s financial needs as well as the mode of communication that women find it easy to access. | Percentage of financial instruments introduced by BAAC cater to women’s needs in Y1-5. | 0 |
+| 24 | Number of women farmers attending the consultation rounds in Y1-3. | At least 100 women farmers per province attend the consultation rounds with BAAC. | 1-3 GIZ, BAAC | Included within GAP intervention ID 23 |  |
+| 25 | 2.1.1.1, 3.1.1.1, 3.1.1.2 | Women farmers are acknowledged as current or potential service providers and are supported accordingly. | Women farmers and women’s groups are supported as service providers - notably, for bio-fertilizer production (for which rice straw residues can be used in conjunction with traditional manure substrate). | Number of women’s groups confirmed to have been supported to work as service providers (e.g., bio-fertilizer service Baseline will be set in inception phase) | At least 10 women’s groups per province are supported to work as service providers (e.g., bio-fertilizer production). |
+| 25 | 3.1.1.1 | Included within sub-activity 3.1.1.1 |  |  |  |
+
+---  
+**Note:** The original page number is preserved as "Page 279".
+
+
+---
+*Chunk pages 280–280*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=608 (sys=94, user=514), max_out=1024, ctx=8192
+---
+
+# Thai Rice – Gender Action Plan
+
+## Page 280
+
+### ID  
+Project  
+sub-activity  
+Gender equality  
+needs  
+Description of the  
+intervention  
+Indicators for  
+successful  
+implementation  
+
+| ID | Project | sub-activity | Gender equality needs | Description of the intervention | Indicators for successful implementation |
+|----|---------|--------------|-----------------------|----------------------------------|------------------------------------------|
+| 1 | Baseline Targets | Timeframe (year of implementation) | Responsible entity for the implementation | Cost estimation (EUR) |  |
+| 26 | Support is provided to identify other biomass sources (in addition to currently used cow dung) that can be used in conjunction with rice residues to produce bio-fertilizer. | Number of additional biomass sources identified to produce bio-fertilizer in Y1-5. | Baseline will be set in inception phase | At least two biomass sources identified that can be used with rice residues to produce bio-fertilizer. | Included within sub-activity 3.1.1.1 |
+| 27 | Women farmers benefit from rice insurance. | Insurance scheme awareness-raising and insurance literacy training are provided to women’s groups and women farmers. | Number of women attending insurance scheme awareness raising and insurance literacy training and percentage of women holding a rice insurance in Y1-5. | 0 | At least 100 women per province attend the training per year. At least 40% of the rice insurance holders are women. | 1-5 GIZ | Included within sub-activity 2.1.1.3 |
+| 28 | A feedback mechanism is established to allow women farmers to voice their insurance needs, including for businesses based on rice residues as inputs. | Percentage of women trainees providing feedback to the insurance scheme in Y2-5. | Baseline will be set in inception phase | 70% of the women trainees provide feedback on the insurance mechanism. | 2-5 GIZ | 116,207 (GIZ staff cost for 1 GFP) |
+
+--- 
+
+**Note:** The original page number is preserved as "Page 280".
+
+
+---
+*Chunk pages 281–281*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=607 (sys=94, user=513), max_out=1024, ctx=8192
+---
+
+# Thai Rice – Gender Action Plan  
+## Page 281  
+
+### ID  
+Project  
+sub-activity  
+Gender equality  
+needs  
+Description of the  
+intervention  
+Indicators for  
+successful  
+implementation  
+
+| ID | Project sub-activity | Gender equality needs | Description of the intervention | Indicators for successful implementation |
+|----|----------------------|-----------------------|----------------------------------|------------------------------------------|
+| 1 | Baseline Targets | Timeframe (year of implementation) | Responsible entity for the implementation | Cost estimation (EUR) |
+| 29 | 3.1.1.1, 3.1.1.2 | Market access for premium, climate-smart rice is available for women farmers. Women’s groups are able to sell their premium climate-smart rice (higher quality, low-emission, etc.) to consumers directly through marketing and packaging support rather than being obliged to blend it with standard rice or are supported in their market linkages to suitable off-takers (e.g., by being supported to adopt practices that conform to agricultural standards such as the Thai Agricultural Standard for Sustainable Rice (TAS), Sustainable Rice Platform (SRP) or equivalents). | Percentage of women who increase their income by selling premium climate-smart rice and adopting climate-smart agriculture practices, and the percentage of income increase in Y3-5. Baseline will be set in inception phase | 70% of the women’s groups selling premium climate-smart rice increase income by 10%. |
+| 30 | 3.1.1.1 | The TAS includes women’s empowerment as a foundational element. TAS women’s empowerment indicators are reviewed in the Thai gender context. Inclusion of women’s empowerment indicators in TAS in Y1-3. | 0 | TAS includes women’s empowerment indicators. |
+| 31 | 3.1.1.2 | See GAP intervention ID | 28 | TAS is supported to expand and to include women’s empowerment indicators. |
+
+---  
+**Note:** The original page number is visible as “Page 281” in the markdown output.
+
+
+---
+*Chunk pages 282–282*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=683 (sys=94, user=589), max_out=1024, ctx=8192
+---
+
+# Thai Rice – Gender Action Plan
+
+## Page 1
+
+### ID
+Project  
+sub-activity  
+Gender equality  
+needs  
+Description of the  
+intervention  
+Indicators for  
+successful  
+implementation
+
+### 1
+Baseline Targets  
+Timeframe  
+(year of  
+implementation)  
+Responsible  
+entity for the  
+implementation  
+
+### 2
+Cost  
+estimation  
+(EUR)  
+
+### 31
+TAS women’s  
+empowerment indicator  
+data is collected and  
+reported to inform  
+evolution of the  
+standard and broader  
+policymaking.  
+
+Number of  
+reporting on  
+TAS women’s  
+empowerment  
+indicators in Y2-5.  
+
+0  
+All TAS report  
+includes data  
+on women’s  
+empowerment  
+indicators.  
+
+### 2-5
+GIZ  
+See GAP  
+intervention ID  
+
+### 28
+### 32
+
+### 1.1.1.1.
+1.1.1.2.
+Farmers in the project  
+area are aware of  
+SEAH issues and are  
+supported.  
+SEAH awareness  
+campaigns are  
+conducted.  
+
+Number of  
+SEAH  
+awareness  
+campaigns  
+conducted in  
+Y2-5.  
+
+0  
+
+5 SEAH  
+awareness  
+campaigns are  
+conducted.  
+
+### 2-5
+GIZ, RD, IRRI  
+
+### 5.000
+
+### 33
+Functioning grievance  
+redress mechanism  
+(GRM) on SEAH issues  
+is established in the  
+project area.  
+
+Percentage of  
+male and female  
+beneficiaries  
+disaggregated  
+by sex, ethnic  
+group and age,  
+migration status)  
+who confirm  
+they are aware  
+of the SEAH  
+GRM and trust  
+in its  
+effectiveness in  
+Y2-5.  
+
+0  
+More than  
+80% of women  
+and men in  
+each  
+subcategory  
+(by sex, ethnic  
+group, age,  
+migration  
+status) are  
+aware of the  
+SEAH GRM  
+and have trust  
+in its  
+effectiveness.  
+
+### 2-5
+GIZ, RD,  
+BAAC, ONEP,  
+IRRI  
+See GAP  
+intervention ID  
+
+### 3
+
+### 34
+Peer support on SEAH  
+related issues is  
+established and  
+supported with capacity  
+building and linkages.  
+
+Number of  
+survivor  
+networks or peer  
+support groups  
+on SEAH  
+established and  
+trained in Y2-5.  
+
+0  
+At least one  
+survivor  
+network or  
+support group  
+on SEAH is  
+established  
+and provided  
+training.  
+
+### 2-5
+GIZ  
+Included within  
+GAP  
+intervention ID  
+
+### 32
+
+
+---
+*Chunk pages 283–283*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=781 (sys=94, user=687), max_out=1024, ctx=8192
+---
+
+# Thai Rice – Gender Action Plan  
+## Page 1  
+
+| ID | Project | Sub-activity | Gender equality needs | Description of the intervention | Indicators for successful implementation |
+|----|---------|--------------|-----------------------|----------------------------------|------------------------------------------|
+| 35 | 1.1.1.1 | All 5 EEs (RD, BAAC, ONEP, IRRI, GIZ) have well-trained GFPs to implement GAP. Each EEs appoint at least one GFP. | Number of GFPs appointed per EE in Y1. | 0 | 9 GFPs are appointed: - 3 from RD (1 per region) - 3 from BAAC (1 per region) - 1 from ONEP - 1 from IRRI - 1 from GIZ |
+| 36 | 1.1.1.1 | All 5 EEs (RD, BAAC, ONEP, IRRI, GIZ) are aware on SEAH issues. EE’s project key personnel are trained on SEAH, and training conducted every year. | Number of key personnel in BAAC, RD, ONEP, IRRI, and GIZ who are trained on SEAH in Y1-5. | Baseline will be set in inception phase. | 21 members of key personnel of BAAC, RD, ONEP, IRRI and GIZ participate in the annual training, and 80% of the staff involved are trained on SEAH. |
+| 37 | 1.1.2.2, 2.1.2.1 | BAAC is responsive to women farmers’ needs. BAAC develops a GAP. | BAAC develops its own GAP in Y2. | 0 | BAAC develops its own GAP. |
+| 38 | GAP dissemination training is provided for | Number of key BAAC staff | 0 | 5 members of BAAC key | 2-5 GIZ, BAAC Included within GAP |
+
+--- 
+
+**Note:** The original page number is visible as "Page 1".
+
+
+---
+*Chunk pages 284–284*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=575 (sys=94, user=481), max_out=1024, ctx=8192
+---
+
+# Thai Rice – Gender Action Plan  
+## Page 284  
+
+| ID | Project | Sub-activity | Gender equality needs | Description of the intervention | Indicators for successful implementation |
+|----|---------|--------------|-----------------------|----------------------------------|------------------------------------------|
+| 1 | Baseline Targets | Timeframe (year of implementation) | Responsible entity for the implementation | Cost estimation (EUR) | BAAC management and staff attending GAP dissemination training in Y2-5. |
+| 2 | 40 | BAAC monitors GAP implementation. | GAP implementation progress report included in annual report in Y2-5. | 0 | Section on GAP implementation progress in BAAC is included in all annual reports. |
+| 6 | 41 | BAAC establishes a GRM for SEAH related grievances. | Percentage of project implementing staff at BAAC who are aware of SEAH issues and percentage of them having medium level of confidence in the SEAH GRM in Y1-5. | 0 | 80% of project relevant BAAC staff are aware of and at least 70% have a medium level of confidence in the SEAH GRM. |
+| 38 | 42 | 1.1.1.1 RD is responsive to women farmers’ needs. | Regular consultations with RD are organised to reflect and consult on gender mainstreaming in the rice sector. | Number of meetings of RD and GIZ on reporting on the progress of gender mainstreaming in RD in Y1-5. | Bi-monthly meeting of RD and GIZ on the progress of gender mainstreaming is organized. |
+| 309,000 (RD staff costs for 3 GFPs) |  |  |  |  |  |
+
+--- 
+
+*Note: The original page number was 284.*
+
+
+---
+*Chunk pages 285–285*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=583 (sys=94, user=489), max_out=1024, ctx=8192
+---
+
+# Thai Rice – Gender Action Plan
+
+## 19
+
+| ID | Project sub-activity | Gender equality needs | Description of the intervention | Indicators for successful implementation |
+|----|----------------------|-----------------------|---------------------------------|------------------------------------------|
+| 43 | Regional RD facilities (rice seed centres, rice research centres) are supported with gender-inclusive outreach | Number of training and number of participating regional RD facilities on gender-responsive outreach activities in Y1-5 | Baseline will be set in inception phase | 28 regional RD facilities (15 rice seed centres, 12 rice research centres, 1 Thailand Rice Science Institute) are trained to review their activities and developed a list of gender-responsive outreach activities |
+| 44 | RD develops its own GAP | RD develops its own GAP in Y2 | 0 RD develops its own GAP | GIZ, RD See GAP intervention ID 42 |
+| 46 | RD sets up a SEAH GRM | Percentage of project-implementing staff at RD are aware of SEAH issues and percentage of them having medium level of confidence in the SEAH GRM in Y1-5 | 0 80% of project-implementing RD staff are aware and at least 70% have a medium level of confidence in the SEAH GRM | 1-5 RD, GIZ See GAP intervention ID 42 |
+| 47 | Training provided for RD staff is gender-inclusive, so that gender-related issues | Number of training modules for RD staff which are | 0 3 training modules for RD staff are | 1-5 RD Included within GAP intervention ID 6 |
+
+--- 
+
+**Note:** The original page number is preserved as [Page 1].
+
+
+---
+*Chunk pages 286–286*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=647 (sys=94, user=553), max_out=1024, ctx=8192
+---
+
+# Thai Rice – Gender Action Plan
+
+## 20
+
+| ID | Project | Sub-activity | Gender equality needs | Description of the intervention | Indicators for successful implementation |
+|----|---------|--------------|-----------------------|---------------------------------|------------------------------------------|
+| 1 | Baseline Targets | Timeframe (year of implementation) | Responsible entity for the implementation | Cost estimation (EUR) |  |
+| 2 | Cost estimation (EUR) |  |  |  |  |
+| 47 | RD staff training | includes women’s empowerment performance indicators under the revised TAS. | Number of RD staff members in charge of TAS are trained on its women’s empowerment indicators in Y2-3. | 0 | 16 members of RD staff in charge of TAS are trained on women’s empowerment performance indicators. |
+| 48 | 3.1.3.2 ONEP is responsive to women farmers’ needs. | The importance of women’s empowerment and gender equality is included in ONEP’s mission statement. | Reference to women’s empowerment and gender equality is made in ONEP’s mission statement in Y2. | 0 | ONEP’s mission statement includes women’s empowerment and gender equality. |
+| 2 | ONEP | 27,500 (ONEP staff costs for 1 GFP) |  |  |  |
+| 49 | ONEP’s ESS guidelines explicitly address gender aspects. | Reference to gender aspects is included in ONEP’s environmental and social safeguards (ESS) guidelines in Y1-3. | 0 | ONEP’s ESS guidelines address gender aspects. |
+| 1-3 | ONEP | See GAP intervention ID 48 |  |  |  |
+| 50 | ONEP’s Environmental Fund Division (EFD) to include gender criteria for funding allocation decisions. | Inclusion of gender criteria in EFD’s funding allocation in Y1-3. | Baseline will be set in inception phase | Gender criteria for funding allocation for EFD developed. | 1-3 | ONEP | See GAP intervention ID 48 |
+
+---
+
+[Page 1]
+
+
+---
+*Chunk pages 287–287*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=718 (sys=94, user=624), max_out=1024, ctx=8192
+---
+
+# Thai Rice – Gender Action Plan
+
+## [Page 1]
+
+### ID
+Project  
+sub-activity  
+Gender equality  
+needs  
+Description of the  
+intervention  
+Indicators for  
+successful  
+implementation  
+
+### 1  
+Baseline Targets  
+Timeframe  
+(year of  
+implementation)  
+Responsible  
+entity for the  
+implementation  
+
+### 2  
+Cost  
+estimation  
+(EUR)  
+
+### 51  
+ONEP establishes a  
+SEAH GRM.  
+Percentage of project-  
+implementing staff at ONEP  
+are aware of SEAH issues  
+and percentage of them having  
+medium level of confidence in  
+the SEAH GRM in Y1-5.  
+0  
+80 % of ONEP project-  
+implementing staff are aware  
+of and at least 70% have a  
+medium level of confidence in the SEAH  
+GRM.   
+1-5 GIZ, ONEP  
+See GAP  
+intervention ID  
+48  
+
+### 52  
+1.1.2.3,  
+2.1.1.1,  
+3.1.4.1  
+IRRI is responsive to  
+women farmers’ needs.  
+All IRRI Thailand  
+recruitment processes  
+and Terms of  
+Reference (ToR)  
+descriptions are made  
+gender-sensitive.  
+Percentage of  
+recruitment  
+announcement  
+and ToRs are  
+gender-sensitive  
+in Y1-5.  
+Baseline  
+will be set  
+in inception  
+phase  
+100 % IRRI  
+recruitment announcement  
+s and ToRs  
+are gender-  
+sensitive.  
+1-5 IRRI  
+122,340 (IRRI  
+staff costs for  
+1 GFP)  
+
+### 53  
+Guidelines for gender-  
+sensitive action are  
+established for IRRI  
+Thailand.  
+Guidelines for  
+gender-sensitive  
+action are  
+developed for  
+IRRI Thailand in  
+Y1.  
+Baseline  
+will be set  
+in inception  
+phase  
+IRRI’s  
+guideline for  
+gender-  
+sensitive  
+action is  
+developed.  
+1 IRRI  
+See GAP  
+intervention ID  
+52  
+
+### 54  
+Gender training to  
+disseminate IRRI’s  
+gender guideline for  
+action is provided for all  
+IRRI Thailand staff.  
+Number of IRRI  
+key personnel  
+trained on  
+gender guideline  
+for action in Y1-  
+4.  
+0  
+6 members of  
+IRRI key  
+personnel are  
+trained on  
+gender  
+guideline for  
+action.  
+1-4 IRRI  
+Included within  
+GAP  
+intervention ID  
+6  
+
+### 55  
+Performance on gender  
+guidelines is monitored  
+and included in regular  
+project reports.  
+Frequency of  
+collection of  
+data on  
+performance of  
+the gender  
+0  
+Data from the  
+gender  
+guidelines is  
+1-5 IRRI  
+See GAP  
+intervention ID  
+52  
+
+---
+
+
+---
+*Chunk pages 288–288*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=711 (sys=94, user=617), max_out=1024, ctx=8192
+---
+
+# Thai Rice – Gender Action Plan  
+## Page 288  
+
+### 6  
+To ensure that governance working modalities will be gender-responsive, it is important to ensure that women are involved in key decision-making bodies, especially those that decide on budgets.  
+
+| ID | Project | sub-activity | Gender equality needs | Description of the intervention | Indicators for successful implementation |
+|---|---|---|---|---|---|
+| 1 | Baseline Targets | Timeframe (year of implementation) | Responsible entity for the implementation | Cost estimation (EUR) | guideline of IRRI in Y1-5. |
+| 56 | IRRI Thailand | establishes a SEAH GRM | Percentage of project implementing staff at IRRI who are aware of SEAH issues and percentage of them having medium level of confidence in the SEAH GRM | All IRRI Thailand staff are aware of and have and at least 70% have a medium level of confidence in the SEAH GRM | 1-5 IRRI See GAP intervention ID |
+| 52 | 57 | 1.1.1.1, 1.1.1.3, 3.1.1.1, 3.1.1.2, 3.1.4.1 | Women farmers are able to fully and productively participate in decision-making in local governance institutions. | The roles and successes of women are showcased in project-related events (e.g., female advanced farmers, as event speakers, etc.). | Number of women selected as advanced farmers and appointed speakers in project events in Y1-5. |
+| 0 | 10 women selected as advanced farmers per province per year are selected to speak in project-related events | 1-5 GIZ, RD, IRRI | Included within sub-activities 1.1.1.1, 1.1.1.3, 3.1.1.1, 3.1.1.2 and 3.1.4.1 (training, workshops and conferences) | 58 | Focused training on climate change issues is provided to interested women’s groups so that they can play a role as |
+| 0 | Number of women’s groups selected and trained as environment/ | 1-5 GIZ, RD, IRRI | 15,000 |  |  |
+
+--- 
+
+*Note: This content appears to be from a PDF page with page number 288.*
+
+
+---
+*Chunk pages 289–289*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=695 (sys=94, user=601), max_out=1024, ctx=8192
+---
+
+# Thai Rice – Gender Action Plan  
+## Page 289  
+
+### 7 This is suggested to redefine women’s groups’ roles, which are currently limited to small income-generating activities.  
+
+| ID | Project | sub-activity | Gender equality needs | Description of the intervention | Indicators for successful implementation |
+|----|---------|--------------|-----------------------|----------------------------------|------------------------------------------|
+| 1 | Baseline Targets | Timeframe (year of implementation) | Responsible entity for the implementation | Cost estimation (EUR) | environment and climate-smart technology advocates7. technology advocates in Y1-5. environment/ climate change issues. |
+| 59 | Annual national workshops are organised for agriculture- and environment-relevant ministries and departments and women leaders in the rice sector to discuss the role of women in their organisations, how to strengthen their leadership roles and networking. | Number of workshops and percentage of female participants, percentage of whom are women, discuss gender equality and strengthening of women in leadership roles in Y2-5. | 0 | 4 national workshops are organized with 100 participants per year, among which are at least 50% women leaders in the rice sector. | 2-5 GIZ, RD, IRRI |
+| 60 | Women farmers are included in, and their views are reflected in, regional and national exchange and peer-to-peer learning activities. | Women and women’s groups are included in the project’s regional and national exchange and peer-to-peer learning activities and events. | Percentage of women participating in project’s regional and national exchange and peer-to-peer learning activities and events in Y1-5. | 0 | 45% of the participants are women. |  
+| 1-5 IRRI | Included within sub-acitivities 1.1.1.1 and 3.1.4.1 trainings, workshops and conferences) | Best-practice cases on gender equality and social inclusion in the project are collected and disseminated | Number of best practices selected in project location and | 0 | At least 1 best practice per province |  
+| 3-5 GIZ, RD, IRRI | See GAP interventions | ID 28, 42, 52 | | | |
+
+---  
+
+**Note:** The original page number is visible as "Page 289".
+
+
+---
+*Chunk pages 290–290*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=271 (sys=94, user=177), max_out=1024, ctx=8192
+---
+
+# Thai Rice – Gender Action Plan
+
+## Page 1
+
+### ID
+Project  
+sub-activity  
+Gender equality  
+needs  
+
+### Description of the intervention
+Indicators for  
+successful  
+implementation  
+
+### Timeframe (year of implementation)
+Responsible  
+entity for the  
+implementation  
+
+### Cost estimation (EUR)  
+(online and at meetings  
+and workshops  
+including the ASEAN  
+Women Entrepreneurs  
+Network (AWEN) and  
+the ASEAN  
+Confederation of  
+Women’s Organisations  
+(ACWO)).  
+disseminated in  
+Y3-5.  
+selected and  
+disseminated  
+per year.
+
+
+---
+*Chunk pages 291–291*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=253 (sys=94, user=159), max_out=1024, ctx=8192
+---
+
+# References
+
+- GCF. (2019). *Gender Policy GCF. Gender Analysis/Assessment and Gender and Social Inclusion Action Plan Templates*. Available here: [https://www.greenclimate.fund/document/gender-assessment-and-action-plan-annex-8-funding-proposals](https://www.greenclimate.fund/document/gender-assessment-and-action-plan-annex-8-funding-proposals).
+- GIZ. (2019). *GIZ Standard outline for the preparation of Gender Analyses: Template and User Guide*.
+- GIZ. (2021). *General User Guide, Safeguards and Gender Management System*, August 2021.
+
+__________________

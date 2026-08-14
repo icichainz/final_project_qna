@@ -1,0 +1,7390 @@
+---
+*Chunk pages 1–1*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=395 (sys=94, user=301), max_out=1024, ctx=8192
+---
+
+# Meeting of the Board  
+## 4 – 7 March 2024  
+### Kigali, Rwanda  
+
+## Provisional agenda item 10  
+
+### GCF/B.38/02/Add.08  
+#### 12 February 2024  
+
+## Consideration of funding proposals –  
+### Addendum VIII  
+
+## Funding proposal package for FP228  
+
+## Summary  
+
+This addendum contains the following six parts:  
+
+1. A funding proposal summary titled "Cambodian Climate Financing Facility" submitted by Korea Development Bank;  
+2. No-objection letter(s) issued by the national designated authority(ies) or focal point(s);  
+3. Environmental and Social report(s) disclosure;  
+4. Independent Technical Advisory Panel’s assessment;  
+5. Response from the accredited entity to the independent Technical Advisory Panel's assessment; and  
+6. Gender documentation of the funding proposal.  
+
+These documents are presented as submitted by the accredited entity and the national designated authority(ies) or focal point(s), respectively.  
+
+Pursuant to the Comprehensive Information Disclosure Policy of the Fund, the funding proposal titled “Cambodian Climate Financing Facility” submitted by Korea Development Bank is being circulated on a limited distribution basis only to Board Members and Alternate Board Members to ensure confidentiality of certain proprietary, legally privileged or commercially sensitive information of the entity.  
+
+[Page 1]
+
+
+---
+*Chunk pages 2–2*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=225 (sys=94, user=131), max_out=1024, ctx=8192
+---
+
+# Table of Contents
+
+- [Funding proposal submitted by the accredited entity](#funding-proposal-submitted-by-the-accredited-entity)
+- [No-objection letter(s) issued by the national designated authority(ies) or focal point(s)](#noobjection-letters-issued-by-the-national-designated-authorityies-or-focal-points)
+- [Environmental and Social report(s) disclosure](#environmental-and-social-reports-disclosure)
+- [Independent Technical Advisory Panel’s assessment](#independent-technical-advisory-panels-assessment)
+- [Response from the accredited entity to the independent Technical Advisory Panel's assessment](#response-from-the-accredited-entity-to-the-independent-technical-advisory-panels-assessment)
+- [Gender documentation](#gender-documentation)
+
+## Funding proposal submitted by the accredited entity
+
+[Page 2]
+
+## No-objection letter(s) issued by the national designated authority(ies) or focal point(s)
+
+[Page 124]
+
+## Environmental and Social report(s) disclosure
+
+[Page 125]
+
+## Independent Technical Advisory Panel’s assessment
+
+[Page 127]
+
+## Response from the accredited entity to the independent Technical Advisory Panel's assessment
+
+[Page 138]
+
+## Gender documentation
+
+[Page 140]
+
+
+---
+*Chunk pages 3–3*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=192 (sys=94, user=98), max_out=1024, ctx=8192
+---
+
+# Project/Programme title: Cambodian Climate Financing Facility
+
+## Country(ies): Cambodia
+
+## Accredited Entity: The Korea Development Bank
+
+## Date of first submission: [2023/03/14]
+
+## Date of current submission: [2024/02/07]
+
+## Version number: [V.010]
+
+
+---
+*Chunk pages 4–4*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=493 (sys=94, user=399), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE b
+
+## Contents
+
+- Section A: PROJECT / PROGRAMME SUMMARY
+- Section B: PROJECT / PROGRAMME INFORMATION
+- Section C: FINANCING INFORMATION
+- Section D: EXPECTED PERFORMANCE AGAINST INVESTMENT CRITERIA  
+- Section E: LOGICAL FRAMEWORK
+- Section F: RISK ASSESSMENT AND MANAGEMENT
+- Section G: GCF POLICIES AND STANDARDS
+- Section H: ANNEXES  
+
+## Note to Accredited Entities on the use of the funding proposal template
+
+- Accredited Entities should provide summary information in the proposal with cross-reference to annexes such as feasibility studies, gender action plan, term sheet, etc.
+- Accredited Entities should ensure that annexes provided are consistent with the details provided in the funding proposal.
+- Updates to the funding proposal and/or annexes must be reflected in all relevant documents.
+- The total number of pages for the funding proposal (excluding annexes) should not exceed 60.
+- Proposals exceeding the prescribed length will not be assessed within the usual service standard time.
+- The recommended font is Arial, size 11.
+- Under the GCF Information Disclosure Policy, project and programme funding proposals will be disclosed on the GCF website, simultaneous with the submission to the Board, subject to the redaction of any information that may not be disclosed pursuant to the IDP.
+- Accredited Entities are asked to fill out information on disclosure in section G.4.
+
+## Please submit the completed proposal to:
+
+fundingproposal@gcfund.org
+
+## Please use the following name convention for the file name:
+
+"FP-[Accredited Entity Short Name]-[Country/Region]-[YYYY/MM/DD]"
+
+
+---
+*Chunk pages 5–5*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=464 (sys=94, user=370), max_out=1024, ctx=8192
+---
+
+# LIST OF ACRONYMS
+
+| Acronym | Full Form |
+|---------|-----------|
+| ABC     | Association of Banks in Cambodia |
+| ADB     | Asia Development Bank |
+| AE      | Accredited Entity |
+| AFD     | French Development Agency |
+| AFOLU   | Agriculture, Forestry and Other Land Use |
+| AMA     | Accreditation Master Agreement |
+| AML     | Anti-Money Laundering |
+| ARDB    | Agricultural and Rural Development Bank |
+| ASEAN   | Association of Southeast Asian Nations |
+| BAU     | Business as Usual |
+|BUR      | Biennial Updated Report |
+| CC      | Climate Change |
+| CCF     | Cambodian Climate Finance |
+| CCFF    | Cambodian Climate Financing Facility |
+| CFT     | Combating the Financing of Terrorism |
+| CIFRS   | Cambodian International Financial Reporting Standards |
+| CRVA    | Climate Risk and Vulnerability Assessment |
+| CSFI    | Cambodian Sustainable Finance Initiative |
+| CSX     | Cambodian Securities Exchange |
+| DBSA    | Development Bank of Southern Africa |
+| DFI     | Development Finance Institution |
+| OC      | Oversight Committee |
+| EDC     | Electricite du Cambodge |
+| EDCF    | Economic Development Cooperation Fund |
+| EE      | Energy Efficiency |
+| ESAP    | Environmental and Social Action Plan |
+| ESCO    | Energy Service Company |
+| ESG     | Environmental, Social, and Governance |
+| ESIA    | Environmental and Social Impact Assessment |
+| ESMF    | Environmental and Social Management Framework |
+| ESMP    | Environmental and Social Management Plan |
+| ESMS    | Environmental and Social Management System |
+| ESS     | Environmental and Social Safeguards |
+| EU      | European Union |
+| FAA     | Funded Activity Agreement |
+| FDI     | Foreign Direct Investment |
+| FOLU    | Forestry and Other Land Use |
+| GAP     | Gender Action Plan |
+| GCF     | Green Climate Fund |
+| GDP     | Gross Domestic Product |
+| GEF     | Global Environment Facility |
+| GFC     | CCFF TA Facility Committee |
+| GGGI    | Global Green Growth Institute |
+
+[Page 1]
+
+
+---
+*Chunk pages 6–6*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=455 (sys=94, user=361), max_out=1024, ctx=8192
+---
+
+# [Page 1]
+
+## GREEN CLIMATE FUND FUNDING PROPOSAL V.2.0 | PAGE b
+
+### GGP Gender Gap Assessment  
+### GHG Greenhouse Gas  
+### GMAC Garment Manufacturers Association in Cambodia  
+### GW Gigawatt  
+### HR Human Resources  
+### GCC Green Credit Committee  
+### IDP Information Disclosure Policy  
+### IFC International Finance Corporation  
+### IFI International Financial Institutions  
+### IIA Independent Investment Advisor  
+### ILO International Labour Organization  
+### IMA Investment Management Agreement  
+### IPCC Intergovernmental Panel on Climate Change  
+### IPPU Industrial Process and Product Use  
+### IRMF Integrated Results Management Framework  
+### IT Information Technology  
+### JICA Japan International Cooperation Agency  
+### KDB Korea Development Bank  
+### KYC Know Your Customer  
+### LFI Local Financial Institutions  
+### MDB Multilateral Development Banks  
+### MEF Ministry of Economy and Finance  
+### ML Money Laundering  
+### MOE Ministry of Environment  
+### MPGCC Master Plan on Gender and Climate Change  
+### MRV Monitoring, Reporting and Verification  
+### MSC Mekong Strategic Capital  
+### NAMA Nationally Appropriate Mitigation Actions  
+### NAP National Adaption Plan  
+### NAPFFIP Cambodia National Adaption Plan Financing Framework and Implementation Plan  
+### NBC National Bank of Cambodia  
+### NCSD National Council for Sustainable Development  
+### NDA National Designated Authority  
+### NDC Nationally Determined Contribution  
+### NEEP National Energy Efficiency Policy  
+### NPRS National Poverty Reduction Strategy  
+### ODA Official Development Assistance  
+### PMU Project Management Unit  
+### PPF Project Preparation Facility  
+### PV Solar Photovoltaic  
+### RCP Representative Concentration Pathway  
+### RE Renewable Energy  
+### REDD Reducing emissions from deforestation and forest degradation  
+### RFP Request for Proposal  
+
+--- 
+
+*Note: This is a list of acronyms and abbreviations used in the context of climate funding and policy, as referenced in the document.*
+
+
+---
+*Chunk pages 7–7*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=250 (sys=94, user=156), max_out=1024, ctx=8192
+---
+
+# [Page 1]  
+## GREEN CLIMATE FUND FUNDING PROPOSAL V.2.0 | PAGE b  
+
+### RGC Royal Government of Cambodia  
+### SADIF Smart Axiata Digital Innovation Fund  
+### SDG Sustainable Development Goals  
+### TA Technical Assistance  
+### TAP Technical Advisory Panel  
+### TBD To be Determined  
+### TF Terrorist Financing  
+### TOR Terms of Reference  
+### UK United Kingdom  
+### UNDP United Nations Development Program  
+### US United States  
+### USAID United States Agency for International Development  
+### USD US Dollar  
+### VCS Verified Carbon Standard  
+### WASH Water, Sanitation, and Hygiene  
+### WB World Bank  
+
+---  
+*Note: This appears to be a list of abbreviations and acronyms used in the context of a funding proposal or project documentation. No further content is provided on this page.*  
+
+---  
+*Page 7*
+
+
+---
+*Chunk pages 8–8*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=754 (sys=94, user=660), max_out=1024, ctx=8192
+---
+
+# Project/Programme Summary
+
+## A.1. Project or programme  
+A.2. Public or private sector  
+Private  
+
+## A.3. Request for Proposals (RFP)  
+Not applicable  
+
+## A.4. Result area(s)  
+Check the applicable GCF result area(s) that the overall proposed project/programme targets below. For each checked result area(s), indicate the estimated percentage of GCF and Co-financers’ contribution devoted to it. The total of the percentages when summed should be 100% for GCF and Co-financers’ contribution respectively.
+
+| GCF contribution | Co-financers' contribution |
+|------------------|----------------------------|
+| 86%              | 86%                        |
+| Mitigation total |                            |
+| Energy generation and access | 38% |
+| Low-emission transport | 5% |
+| Buildings, cities, industries and appliances | 24% |
+| Forestry and land use | 19% |
+| Adaptation total |                            |
+| Most vulnerable people and communities | 2% |
+| Health and well-being, and food and water security | 10% |
+| Infrastructure and built environment | Enter number % |
+| Ecosystems and ecosystem services | 2% |
+
+## A.5. Expected mitigation outcome  
+(Core indicator 1: GHG emissions reduced, avoided or removed / sequestered)  
+11,070,740 tCO2e reduced  
+
+## A.6. Expected adaptation outcome  
+(Core indicator 2: direct and indirect beneficiaries reached)  
+785,263 490,675  
+5% 3%  
+
+## A.7. Total financing (GCF + co-finance)  
+108.96M USD  
+
+## A.9. Project size  
+Medium (Upto USD 250 million)  
+
+## A.8. Total GCF funding requested  
+54.96M USD  
+
+For multi-country proposals, please fill out annex 17.  
+
+1 Co-financer’s contribution means the financial resources required, whether Public Finance or Private Finance, in addition to the GCF contribution (i.e. GCF financial resources requested by the Accredited Entity) to implement the project or programme described in the funding proposal.  
+2 The total lifespan of the project/programme is defined as the maximum number of years over which the outcomes of the investment are expected to be effective. This is different from the project/programme implementation period.  
+3 Refer to the Policy of Co-financing of the GCF.  
+
+[Page 1]
+
+
+---
+*Chunk pages 9–9*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=855 (sys=94, user=761), max_out=1024, ctx=8192
+---
+
+# A.10. Financial instrument(s) requested for the GCF funding
+
+Mark all that apply and provide total amounts. The sum of all total amounts should be consistent with A.8.
+
+- ☒ Grant: $4.96 million  
+- ☒ Loan: $50 million  
+- ☐ Guarantee: Enter number  
+- ☐ Equity: Enter number  
+- ☐ Results-based payment: Enter number  
+
+# A.11. Implementation period
+
+Up to 23 years  
+
+# A.12. Total lifespan
+
+35 years  
+
+Total lifespan period is defined as the maximum lifespan of interventions.  
+
+# A.13. Expected date of AE internal approval
+
+This is the date that the Accredited Entity obtained/will obtain its own approval to implement the project/programme, if available.
+
+10/31/2023  
+
+# A.14. ESS category
+
+Refer to the AE’s safeguard policy and GCF ESS Standards to assess your FP category.
+
+I-2  
+
+# A.15. Has this FP been submitted as a CN before?
+
+Yes ☒  No ☐  
+
+# A.16. Has Readiness or PPF support been used to prepare this FP?
+
+Yes ☒  No ☐  
+
+# A.17. Is this FP included in the entity work programme?
+
+Yes ☒  No ☐  
+
+# A.18. Is this FP included in the country programme?
+
+Yes ☒  No ☐  
+
+# A.19. Complementarity and coherence
+
+Does the project/programme complement other climate finance funding (e.g. GEF, AF, CIF, etc.)? If yes, please elaborate in section B.1.
+
+Yes ☒  No ☐  
+
+# A.20. Executing Entity information
+
+- Ministry of Economy and Finance  
+  Royal Government of Cambodia  
+
+- Agricultural and Rural Development Bank  
+  Country of registration: Cambodia  
+  Ownership type: Public enterprise functioning as State-owned commercial bank  
+
+- Mekong Strategic Capital (Cambodia) Co., Ltd.  
+  (Formerly known as Mekong Strategic Partners “MSP”)  
+  Country of registration: Cambodia  
+  Ownership type: Private Limited Company  
+
+# A.21. Executive summary (max. 750 words, approximately 1.5 pages)
+
+The Royal Government of Cambodia (RGC) is committed to combating climate change and accelerating the transition to a low carbon and climate resilient sustainable economy. In response to the increasing greenhouse gas emissions in Cambodia and the country’s vulnerabilities to Climate Change, the RGC has identified ambitious mitigation and adaptation actions in its updated Nationally Determined Contribution (NDC) in 2020. It also recognized that transforming NDC into tangible actions that lead to low-emission and climate-resilient development requires US$ 7.8 billion of financing. However, Cambodia faces challenges in securing the financial resources needed to achieve their NDC targets. The public budget alone is not sufficient to fund NDC needs and, there is an identified need to scale up private,  
+
+4 Loan provided by KDB in which GCF is participating (such loan, the “GCF loan”).  
+5 35 years is chosen given it is the maximum lifespan of the interventions the CCFF will finance.
+
+
+---
+*Chunk pages 10–10*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=967 (sys=94, user=873), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 3
+
+The Cambodian Climate Financing Facility (CCFF) Programme has been designed in response to this identified need in Cambodia to scale up climate finance and accelerate NDC implementation. It is a dedicated, national climate finance facility to support the development of Cambodia’s low-emission, climate resilient pathways leveraging public and private sector funding at the level of the CCFF, and projects financed by it.
+
+The CCFF Programme consists of the US$ 100 million Lending Facility and the US$ 9 million Technical Assistance (TA) Facility to accelerate Cambodia’s Nationally Determined Contribution (NDC) implementation and post-Covid green economic recovery. In particular, the CCFF provides long-term, blended climate finance to local financial institutions and private sector actors to address financial, knowledge, capacity and technology gaps hindering the uptake of targeted climate projects in Cambodia. It targets high priority NDC sectors for climate change mitigation and adaptation.
+
+To this end, the expected climate impact from the programme is 11.1 million tCO2e reduced and 1.3 million direct and indirect beneficiaries with improved adaptative capacity to climate change, and more resilient physical infrastructure to the effects of climate change. The CCFF Programme contributes to Cambodia’s NDC implementation, because much needed private, institutional, and commercial capital to fund high priority NDC sectors will be scaled up and the enabling environment improved.
+
+It should be also highlighted, that the CCFF Programme has strong country ownership. Both, the CCFF Lending Facility and CCFF TA Facility will be established and managed locally by an experienced international team. In particular, the CCFF Lending Facility with US$ 100 million funding will be established within the Cambodian policy bank, the Agricultural & Rural Development Bank (ARDB), established by the Royal Government of Cambodia and operating as a state-owned commercial bank.
+
+The CCFF Lending Facility will have a dedicated governance and investment policy to de-risk local green projects and a specific mandate to enable and crowd in the local financial sector by incentivizing local banks to increase their credit risk appetite and scale green finance, thereby creating a systemic shift towards climate finance in Cambodia.
+
+The CCFF Programme will support ARDB in the GCF accreditation process, enabling ARDB’s transition to a fully-fledged national climate development bank with direct access to international climate finance for Cambodia. On top of that, the Korea Development Bank (KDB) will lead the provision of technical assistance to support ARDB down the path of a national climate development bank for Cambodia. KDB has a strong track record in deploying capacity building programmes in developing countries and sharing lessons learned from their decades long track record of deploying climate finance in a developing market context.
+
+The CCFF TA Facility will be managed by Mekong Strategic Capital (MSC), an investment and advisory company incorporated in Cambodia who are the leading private sector experts collaborating to catalyse climate finance initiatives in the Country. MSC has the local-market presence and track record in the management of climate focused technical assistance projects as an implementing partner of the USAID Green Invest Asia and USAID Morodok Baitang projects, with a mandate to catalyse climate finance in sustainable land use and agriculture.
+
+In addition, MSC in its role of investment advisor has significant track record in assessing climate project specific risks and opportunities in Cambodia, as well public and private sector stakeholder engagement.
+
+The CCFF Programme has been initiated by the Royal Government of Cambodia (RGC) in collaboration with key local stakeholders, ensuring strong country ownership in launching Cambodia’s first national green financing initiative and deploying climate finance at scale nationwide.
+
+
+---
+*Chunk pages 11–11*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1384 (sys=94, user=1290), max_out=1024, ctx=8192
+---
+
+# B B GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 4
+
+## 6
+
+The 2021 ND-GAIN Index ranked Cambodia as 152 out of 181 countries, using a score which calculates a country’s vulnerability to climate change as well as their readiness to improve resilience. https://gain.nd.edu/our-work/country-index/rankings/. Cambodia ranks 46th out of 163 countries in UNICEF’s Children’s Climate Risk Index, which is in the top third of countries with a high risk to climate change. The report found that Cambodian children are highly exposed to water scarcity, riverine flooding and vector-borne disease. Furthermore, the Global Climate Risk Index ranks Cambodia as 14th most climate risk prone country globally; source: Global Climate Risk Index, 2021: https://germanwatch.org/sites/default/files/Global%20Climate%20Risk%20Index%202021_2.pdf
+
+## 7
+
+Cambodia is the low middle-income country, and while it has experienced an impressive economic growth during past decade, its performance has been largely dependent on large official development assistance (ODA) and FDI inflows (7.9% percent of GDP, among highest in the world). The poverty rate in Cambodia is 13%, however, around 4.5 million people (26% of population) in Cambodia remain near poor and vulnerable to falling back to poverty when exposed to economic and external shock, including that of climate change.
+
+## 8
+
+Cambodia’s capacity to leverage domestic public and private sector funding to meet US$5.8 billion mitigation and US$2 billion adaptation NDC needs largely depends on Cambodia’s ability to mobilize international funding from donors. Source: First Biennial Update Report
+
+## 9
+
+Average Daily Temperature, 2080-2099 RCP2.6 to RCP8.5 scenario, source: WBG Climate Change Knowledge Portal (CCKP, 2021). Climate Data: Projections. https://climateknowledgeportal.worldbank.org/country/Cambodia/climate-data-projections. The projections are based on the coupled Model Intercomparison Project Phase 5 (CMIP5) models, which are utilized within the Fifth Assessment Report (AR5) of the Intergovernmental Panel on Climate Change (IPCC), providing estimates of future temperature and precipitation. See also, Flato, G., Marotzke, J., Abiodun, B., Braconnot, P., Chou, S. C., Collins, W., Rummukainen, M. (2013). Evaluation of Climate Models. Climate Change 2013: The Physical Science Basis. Contribution of Working Group I to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change, 741–866. URL: https://pubs.giss.nasa.gov/abs/ip06000g.html
+
+## 10
+
+Climate Change in the Lower Mekong Basin. United States Agency for International Development (USAID), 2014. http://mekongarcc.net/sites/default/files/usaid_marcc_values_at_risk_report_with_exesum-revised.pdf.
+
+## PROJECT/PROGRAMME INFORMATION
+
+### B.1. Climate context (max. 1000 words, approximately 2 pages)
+
+Cambodia is considered one of the most vulnerable countries to the impacts of climate change, as evidenced by several international climate change indices 6. The country is particularly vulnerable to floods, droughts, windstorms, and seawater intrusion due to its geographic location. Cambodia’s vulnerability to climate change is exacerbated by: (1) economic dependency on climate sensitive sectors such as agriculture, forestry, and water resources; and (2) low capacity to adapt to climate change given a fragile socio-economic context7 and limited access to financial resources to fund climate change mitigation and adaptation needs 8. Existing climate technology and capacity gaps also limit Cambodian’s ability to manage climate impact.
+
+On average, the mean annual temperature in Cambodia has increased at a rate of about 0.18° C each decade due to anthropogenic greenhouse gas (GHG) emission-induced warming (see B.1.1. Mitigation Profile of Cambodia). By the end of the 21st century, temperatures are projected to rise by approximately 1.0 °C – 3.7 °C under RCP2.6 to RCP8.5 climate scenarios (AR5, WB) 9. These consistent changes in temperature are associated with more frequent and severe extreme weather events, resulting in degradation of the country’s critical natural resources (agriculture, forestry , and water), damaging infrastructure, and threatening the livelihood of its population (see B.1.2. Climate Vulnerability Profile
+
+
+---
+*Chunk pages 12–12*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1297 (sys=94, user=1203), max_out=1024, ctx=8192
+---
+
+# B.1.2. Climate Vulnerability Profile
+
+- **Agriculture, forestry, and water resources:** Cambodia’s agriculture sector is already exposed to floods and droughts. Based on 20-year historical data, losses in agriculture production are mainly due to flooding (about 62%) and droughts (32%). Under the high emission scenario, wet season rice yield (rain-fed) could fall by up to 70% of current yield levels. Similarly, for the dry season, (irrigated) rice yields could decrease by 40%. The growing period for most of agricultural products will be less than 5 months. Provided that 80% of the population derives its livelihood from agriculture, the degree of exposure to climate extremes and long-term climate changes is high.
+
+- Climate change also challenges the Royal Government of Cambodia’s plans to promote the development of the agriculture sector, through productivity enhancement, diversification, and agricultural commercialization (from subsistence to commercial agriculture, increasing private sector engagement and export potential of the sector).
+
+---
+
+[Page 1]  
+B B  
+GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 5  
+
+11 Cambodia’s average annual GDP growth rate (AAGR) was 7.2% in 2010–2018. The population increased steadily at an AAGR of 1.6% in 2010–2018. The urban population grew by 3.4% per year, faster than the rural population. Final energy consumption increased by 7.2% per year in 2010–2018. Electricity consumption grew the fastest, by an average of 18.3% per year, followed by oil (8.3)—which accounts for most of the total final energy consumption (55%). Biomass share in total energy consumption is also high, at about 25.5%, in 2018. It is noteworthy, that five million Cambodians lack access to grid electricity and are reliant on wood, and other traditional fuels for energy.
+
+12 Nang Phirun, Sam Sreymom, Lonn Pichdara and Ouch Chhuong (June 2014), Adaptation Capacity of Rural People in the Main AgroEcological Zones in Cambodia, CDRI Working Paper Series No. 93 (Phnom Penh: CDRI). Cambodia is an agrarian country, with its economic growth largely reliant on the agricultural sector. Over 80% of the population lives in rural areas and most of them depend on rainfed agriculture for living.
+
+13 Besides being highly vulnerable to impacts of climate change, the agriculture sector in Cambodia is not yet well developed—with neighboring countries such as Thailand and Viet Nam, and with respect to domestic as well as export markets primary due to private sector under investment. Farming remains mostly subsistence based and rain-fed, with low productivity. The royal government of Cambodia in Cambodia (RGC) is currently taking measures to improve the management and monitoring of forest resources, with the updated NDC targeting a 50% reduction of historical emissions in the FOLU sector by 2030.
+
+The second largest emitting sector in the country is the agriculture sector, followed by the energy and industry sectors. Cambodia’s economy experienced a rapid expansion between 1994 and 2016, resulting in increased emissions from the energy11, waste and industry sectors. In the energy sector, the main contributor to emissions is transport (52.9% of emissions in 2016), followed by industry (33.8%). Under a business as usual (BAU) scenario 2030, and without the FOLU sector, the energy and agriculture sectors are projected to generate the largest share of emissions (43.7% and 34.5%, respectively); these are also the sectors in which private sector engagement is viewed as critical under Cambodia’s NDC.
+
+In the updated NDC, the RGC targets GHG emission reduction of - 42% compared to BAU scenario. FOLU is expected to provide the major share of 59.1% emissions reduction by 2030. Other sectors like energy (21.3%), agriculture (9.6%), industry (Industrial Process and Product Use, IPPU) (9.1%), and waste (0.9%) are also expected to contribute significantly. Reducing energy sector emissions through use of solar and wind technologies is a priority mitigation action for the RGC, as identified in Cambodia’s updated NDC, which states that 25% of the country’s energy mix should be derived from wind and solar.
+
+Furthermore, while Cambodia’s Power Development Master Plan 2020 – 2030 forecasts 1,725MW solar capacity by 2030,
+
+
+---
+*Chunk pages 13–13*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1543 (sys=94, user=1449), max_out=1024, ctx=8192
+---
+
+# B B  
+## GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 6  
+
+### Sectoral Strategies and NDCs  
+The sectoral strategies, as well as NDCs, recognize a need for private sector engagement and commercialization of the climate resilient agriculture sector. (Source: NDC 2020, Development of Master Plan for Crop Production in Cambodia to 2030 – Final Report, item 336).  
+
+### Water Resources and Climate Change  
+Loss of forest cover and/or degradation tend to increase peak river flows and erosion, which would lower water availability in the dry season (when water is particularly valuable for irrigation and household use), increase flood risk and increase siltation of reservoirs, thus reducing their useful life. Source: World Bank, 2022  
+
+### Water Usage in Cambodia  
+According to Ministry of Water Resources and Meteorology, Climate Change Strategic Plan for Water Resources and Meteorology (2013-2017), the water used for agriculture in Cambodia amounts to 98% of the total use, followed by the domestic use 3% and 1% for industrial use. Most of Cambodia’s population already face water shortage during the dry season (November-April), with increased water deficit of six to eight months under future climate scenarios to further result in water inequality. Water demands for metropolitan areas with populations of high density and industries of high economic value are prioritized in times of scarcity-contributing to water scarcity induced inequity.  
+
+### References  
+https://www.adb.org/sites/default/files/publication/689106/adb-brief-171-surface-water-resouces-rbgs-cambodia.pdf; https://thewaterproject.org/water-crisis/water-in-crisis-cambodia  
+
+### Rural Water Access and Gender  
+In rural areas, woman is responsible for sourcing of water, which in turn influences time available for childcare and feeding. Failure of food systems leads to the increased risk of undernutrition and diseases.  
+
+### Gender, Climate Change, Health  
+WHO: https://www.who.int/globalchange/GenderClimateChangeHealthfinal.pdf?ua=1; Gender statistics for key sectors in Cambodia: https://www.jica.go.jp/project/cambodia/011/news/general/ku57pq00001xwvts-att/20150308_01.pdf  
+
+### Infrastructure Resilience  
+In the absence of proactive measures to make these infrastructures more resilient to climate change, private investors’ risk aversion to climate-related risks associated with infrastructure will increase to divert already scarce resources from infrastructure financing in Cambodia.  
+
+### Socioeconomic Data  
+Source: Cambodia Socio Economic Survey, https://www.nis.gov.kh/nis/CSES/Final%20Report%20of%20Cambodia%20Socio-Economic%20Survey%202019-20_EN.pdf for 2019/2020 data. According to the GOC, “an improved water source is not necessarily safe, but an improved source is more likely to provide safe water”. Furthermore, other studies reveal that only 12% of semi-rural people and 11% of rural people are covered by safe drinking water supply solution in Cambodia. Overall, at least 11 million people still live today without access to a proper safe drinking water supply, 70% of them live in semi-rural areas. Source: Sevea, access to drinking water in rural areas  
+
+### Forests and Water Deficit  
+Forests in Cambodia currently have a water deficit period of 4 – 6 months. As per Cambodia’s updated NDC, those forests will become exposed to a water deficit period of 6 – 8 months or more. Forests in Cambodia play an important role to regulate the water flow. Without forests, the dry season flows (November - April) in Cambodia will be reduced by 25%, thereby exacerbating the water deficit already being experienced in Cambodia during drier periods.  
+
+### Example: Tonle Sap River Basin  
+As an example, Cambodia is already experiencing seasonal water scarcity in the river basins of the Tonle Sap River Basin Group (18 out of 25 provinces in Cambodia were affected by droughts in 2016, for example, with around 2.5 million people lacking water). Existing reservoir storage capacity (less than 10 percent of total water generated) is insufficient to redistribute water significantly between seasons.  
+
+### Climate Vulnerability Profile  
+Drought and flooding are expected to worsen because of climate change as further explained under climate vulnerability profile (see B1.2 and D1), and hence, a decrease in forest cover as a result of climate change and human induced deforestation may in turn have negative implications for the Cambodian population, in terms
+
+
+---
+*Chunk pages 14–14*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1292 (sys=94, user=1198), max_out=1024, ctx=8192
+---
+
+# B B  
+## GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 7  
+
+### Cambodia 2017  
+A WHO study on drinking-water quality at the point of consumption performed in 2013, further suggested that only 23% of rural households and 42.5% of urban households have access to microbiologically safe drinking water.  
+Source: A National Assessment of Point-of-Consumption Drinking Waters in Rural Areas of Cambodia. Phnom Penh: Office of the WHO Representative in Cambodia; 2013.  
+
+As per ADB, 40% of rural residents still practice open defection in 2017.  
+
+### Cross-cutting Projects  
+For the purposes of the GCF FP, the cross-cutting projects are projects that contribute to the projects that has a potential to contribute to both mitigation and adaptation impact and includes one or more eligible mitigation and adaptation activities from the list of Eligible Activities for Classification as Climate Change Mitigation and Adaptation Projects (Annex 21, see table 7 and table 6).  
+
+The CCFF shall promote investments in climate resilient and adaptive rural water supply and sanitation projects, as well as climate resilient renewable energy infrastructure and agriculture in line with Cambodia’s NDC and NAP needs. The expected number of direct beneficiaries is 785K individuals.  
+
+Given the programmatic approach of the CCCF, the location specific climate risk and vulnerability assessments will be performed for renewable energy infrastructure assets to be funded by the CCFF, so to identify project specific climate risks and inform required structural and non-structural investment needs to improve the climate resilience of those assets. See also table “Cambodia: Climate Vulnerabilities and Impact” under section D1 for sector specific climate vulnerabilities and targeted adaptation impact because of the CCFF investments, as well as Feasibility Study for country vulnerability profile.  
+
+### B.1.3. Programme Additionality  
+To finance its climate ambitions, RGC must mobilize US$5.8 billion for mitigation actions and US$2 billion for adaptation actions. Domestic budgetary resources (which have been constrained by Covid-19 needs) are insufficient: only 3.2% of total public expenditures are spent on climate change in Cambodia. Promoting the private sector contribution to the climate change response in Cambodia is a national priority (Source: NDC 2020, NCSD 2016), yet the country’s capacity to leverage domestic public and private sector funding to meet NDC financing needs largely depends on Cambodia’s ability to mobilize international funding from donors.  
+
+International development partners remain the largest source of funding for Cambodia’s climate change response (58% in 2019, but only US$315 million). However, fluctuations in external climate change financing are affecting Cambodia’s capacity to implement its climate actions and the financing gap to implement NDC is expanding, as identified in Cambodia’s NDC, Climate Change Strategic Plan (CCSP), National Adaptation Plan (NAP) and sector specific Nationally Appropriate Mitigation Actions (NAMAs).  
+
+The CCFF is a dedicated national climate financing facility to support the development of Cambodia’s low-emission and climate resilient pathways. It is specifically designed to leverage much needed public and private sector funding to accelerate Cambodia’s NDC implementation through:  
+
+- Catalysing funding at scale for key climate mitigation and adaptation sectors: sustainable forestry and land use (FOLU) and agriculture, renewable energy (RE) and energy efficiency (EE), transport and water.  
+The CCFF expects to mobilize US$100 million from private and public sector investors. This investment will be complimented by a Technical Assistance (TA) facility.  
+
+- Addressing market failures in the financial sector by offering long-term and concessional financing to local financial institutions and project developers to de-risk high climate impact potential projects.  
+The CCFF is designed with a specific mandate to enable and crowd in the local financial sector by incentivizing local banks to change their credit risk appetite and grow their lending to green projects in Cambodia, thereby creating a systemic shift towards climate financing. This will be achieved through provision of the wholesale loans, as well as co-financing together with the local financial institutions directly at project level, by bringing required track record, capacity, and funding to de-risk LFIs on a project level.   
+
+- Providing technical assistance to facilitate capacity building and knowledge sharing.  
+
+The CCFF has been conceptualized in collaboration with RGC, various donors (including GCF and USAID) and with the engagement of key stakeholders to ensure the programme meets local recipients’ needs and has strong country ownership. The programme is complementary to existing donor funded initiatives in Cambodia, including that of GCF. For details, kindly refer to the Annex 2: Feasibility Study.  
+
+The CCFF Programme targets high climate impact sectors which are aligned to Cambodia’s mitigation and adaptation needs as identified in Cambodia’s NDC
+
+
+---
+*Chunk pages 15–15*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=719 (sys=94, user=625), max_out=1024, ctx=8192
+---
+
+# B B  
+## GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 8  
+
+### 20 Source for all sectors, except water: Cambodia’s updated Nationally Determined Contribution (Appendix 2)  
+### 21 Source: Appendix 1: Detailed Mitigation and Adaptation Measures Cambodia’s updated Nationally Determined Contribution; Source for forest adaptation measures: https://www.adaptation-undp.org/projects/cambodias-second-national-communication-progress  
+
+vulnerabilities and targeted adaptation impact because of the CCFF investments, as well as eligible mitigation and adaptation activities under section B3 below.  
+
+### Table 1: Snapshot of Cambodia's Key Mitigation and Adaptation Needs  
+
+| Sector | Mitigation Need | Adaptation Need | Risks and Impacts |
+|--------|------------------|------------------|-------------------|
+| Forestry and Other Land Use (FOLU) | Contributes to 61% of GHG emissions in Cambodia | Highly vulnerable to climate change | • Strengthen and improve the sustainable management and monitoring of forest resources and forest land use<br>• Approaches to reduce deforestation, build capacity, and engage stakeholders.<br><br>• The creation of forest plantations on otherwise unproductive lands, conservation of protected areas, and improved forest resource management |
+| | | | • Emission reduction through avoided deforestation and soil degradation.<br>• Increased industry crop productivity and profit in the production value chains through stress-tolerant varieties and climate smart agricultural (CSA) practices and increasing resilience to climate change, reduced forest cover loss.<br>• Diversification will also contribute to an increase in income (Land equivalent ratio) and diversification of economic opportunities for farmers to adapt to climate change. |
+| | | | Project Example contributing to Cambodia’s Mitigation Needs: <br>• Utilization of alternative and sustainable supply chains from agri-industrial plantations (e.g., teak in pipeline) that reduce deforestation and associated emissions.<br><br>Project Example contributing to Cambodia’s Adaptation Needs: <br>• Expansion on degraded lands, thereby promoting afforestation and land restoration activities.<br>• Encouragement of protected areas conservation and stakeholder engagement through incentivization. (e.g., the Programme plans to offer rice farmers market access at a premium price in return for those farmers patrolling and protecting the forest near their fields.) |
+
+---  
+**Note:** The original page number is preserved as [Page 1].
+
+
+---
+*Chunk pages 16–16*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=903 (sys=94, user=809), max_out=1024, ctx=8192
+---
+
+# B B GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 9
+
+## Agriculture
+
+Contributes to 16.9% of GHG emissions in Cambodia  
+Highly vulnerable to Climate Change  
+
+- Increasing the effectiveness and sustainability of agricultural land management techniques (conservation agriculture)  
+- Organic input agriculture and bio-slurry  
+- Deep placement fertilizer technology  
+- Development of rice crops for increased production, improved quality/safety  
+- Harvesting and post harvesting techniques and agri-business enhancement  
+- Development of industry crops; agribusiness diversification  
+- Development of new technologies and increasing yields by using new crop varieties which adapt to climate change and promote agriculture productivity  
+- Scaled up climate-resilient agricultural production through increased access to solar irrigation systems and other climate-resilient practices  
+- Mitigation impact of rice farming to environment, through reduced GHG emissions  
+- Increase rice productivity  
+- Reduce loss during and post harvesting  
+- Improve rice quality and safety  
+- Promote climate friendly Agribusiness rice value chain and profit in rice production value chains  
+- Developing climate-proofed agriculture systems for adapting to change in water variability to enhance crop yield  
+
+### Project Examples contributing to Cambodia’s Mitigation Needs:  
+
+- Energy-efficient traction, irrigation, and storage (falls in top 25% of energy efficiency rates for equipment available in country)  
+
+### Project Examples contributing to Cambodia’s Adaptation Needs:  
+
+- Investments in rice crops and industrial crops (e.g., teak) to promote development of conservation agriculture and agri-business diversification  
+- Climate stress tolerant varieties, conservation agriculture, organic input agriculture, integrated pest management, resource efficiency (such as water saving techniques through drip irrigation) etc.  
+
+### Cross-Cutting Project Example:  
+
+- Solar water pumps, cross cutting benefits of CO2 reduction and water stress reduction  
+
+## Energy  
+
+Contributes to 12% of GHG emissions in Cambodia  
+Vulnerable to climate change  
+
+- National grid-connected RE generation and connection of decentralized renewable generation to the grid (25% of energy mix)  
+- Non-grid renewable electricity  
+- Diversification of energy mix via non-hydro renewables, such as solar and wind to decrease water stress  
+- Climate proofing existing of RE infrastructure, given climate change impacts on RE assets  
+- Emission reduction from energy sector  
+- Strengthened climate-resilient energy through infrastructure improvement to respond to climate related disasters  
+
+### Project Example contributing to Cambodia’s Mitigation Needs:  
+
+- Investment in greenfield solar and wind projects, energy storage and grid modernization with emission reduction potential at scale  
+
+### Project Example contributing to Cambodia’s Adaptation Needs:  
+
+- Climate proofing existing RE infrastructure given climate change impacts on RE assets  
+
+--- 
+
+*Note: Page numbers are preserved as per instructions.*
+
+
+---
+*Chunk pages 17–17*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=468 (sys=94, user=374), max_out=1024, ctx=8192
+---
+
+# B B GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 10
+
+## Cambodia’s Adaptation Needs
+
+- Climate proofing of infrastructure during construction stage
+- Reduction of water stress in drought-prone areas through promoting non-hydro RE sources
+- Cross cutting benefits of CO2 reduction and climate resilient infrastructure, including water stress reduction
+
+## Transport
+
+- Contributes to 55% of emission from energy sector
+- Promotion of low emission transport projects
+- E-mobility: increased use of hybrid cars, electric vehicles, and bicycles
+- Integration of transport and urban planning to minimize vulnerability to climate impacts
+- Upgrade and renovation of existing transportation infrastructure into climate resilient transportation infrastructure
+- Emission Reduction from transport sector as projects financed by CCFF target mitigation impact only
+
+## Project Example contributing to Cambodia's Mitigation Needs
+
+- Facilitate funding of electric vehicles, including purchase of electric motorcycles used by private individuals and moto taxi operators, thereby reducing GHG emissions and resulting in cost savings for users
+- Charging infrastructure private sector, including Solar PV powered charging infrastructure
+- The projects financed by CCFF target mitigation impact in transport sector
+
+
+---
+*Chunk pages 18–18*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=747 (sys=94, user=653), max_out=1024, ctx=8192
+---
+
+# B B GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 11
+
+## 22 Water resource management includes 6 measures as per updated NDC of Cambodia, within phase 1 the CCFF shall consider addressing water inequality in rural population. However, CCFF also indirectly contributes to the establishment of nationally standardized best practice systems for irrigation as per NDC through financing of agriculture activities that encourage best practice irrigation and water saving.
+
+Over time, it may also contribute to other water measures - such as establishment of centralized and standardized approach to climate resilient water management and integrated groundwater management in Cambodia.
+
+## Other Energy – Energy Efficiency (EE) in manufacturing, waste management
+
+Contributes to 3% of emission; Vulnerable to Climate Change
+
+- Promoting EE interventions for buildings and manufacturing industries
+- Reducing emissions from waste through use of bio digesters and water filters
+
+N/A • Emission Reduction/Energy Efficiency.
+
+Project Example contributing to Cambodia’s Mitigation Needs:
+
+- Supporting EE initiatives in the manufacturing industry (garments and textiles), including upgrades to energy efficient boilers, sewing machines, washing machines, drying machines, compressors, and efficient lighting appliances
+- Building efficiency for renovations and retrofits including improved insulation, ventilation and cooling will also be considered under investment activities, along with green building components as Cambodia is currently working on a green building code
+
+## Water
+
+Highly vulnerable to climate change during dry season
+
+N/A • Water, sanitation and hygiene (WASH) infrastructure in rural areas resilient and adapted to climate change
+
+- Increased access to resilient and adaptive rural water supply and sanitation
+- Local sources of water dry up, households must go further to find water or purchase bottled water. Access to water is no longer guaranteed.
+- Decreased water quality, water born health diseases due to contamination. Hence, access to climate resilient water supply to rural households in Cambodia.
+
+Project Example contributing to Cambodia’s Adaptation Needs:
+
+- Improving water supply infrastructure in drought prone areas
+- Support for increased safe water access for the rural population, schools, and health centres
+
+In addition, the programme specific climate eligibility list has been developed, providing a non-exhaustive list of activities in each CCFF targeted sector eligible for classification as climate change mitigation and adaptation
+
+
+---
+*Chunk pages 19–19*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1212 (sys=94, user=1118), max_out=1024, ctx=8192
+---
+
+# B B  
+## GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 12  
+
+### 23 The programme lifespan impact  
+projects. This list is aligned to the Common Principles , Cambodia’s NDC and is consistent with the ASEAN  
+Taxonomy (See Annex 21 - Operations Manual).  
+
+### B.2 (a). Theory of change narrative and diagram (max. 1500 words, approximately 3 pages plus  
+diagram)  
+The CCFF is the first national climate finance facility to support the development of Cambodia’s low-emission,  
+climate resilient pathway leveraging public and private sector funding at scale at the level of the CCFF and  
+projects financed by it. The CCFF Programme consists of the US$ 100 million Lending Facility and the US$ 9  
+million TA Facility to accelerate Cambodia’s Nationally Determined Contribution (NDC) implementation and  
+post-Covid green economic recovery. In particular, the CCFF provides long- term, blended climate finance to  
+local financial and private sector actors to address fin ancial knowledge, capacity and technology gaps  
+hindering investments into projects with potential to strengthen Cambodia’s climate mitigation and adaptation  
+capacity. Specifically, CCFF targets high priority NDC sectors for climate impact mitigation and ad aptation,  
+such as energy, transport, agriculture, forestry and other land use (AFOLU), and water.  
+
+The expected climate impact from the programme is 11.1 million tCO2e reduced and 1.3 million direct and  
+indirect beneficiaries with the improved adaptative capacity to climate change, and a more resilient physical  
+infrastructure to the effects of climate change 23. The CCFF P rogramme contributes to Cambodia’s NDC  
+implementation, because much needed private, institutional, and commercial capital to fund high priority NDC  
+sectors will be scaled up and the enabling environment improved.  
+
+The CCFF programme intends to catalyse a shift from the current without- programme paradigm of high-  
+emission and climate- vulnerable sustainable development in Cambodia, with limited finance and capacity  
+available for mitigation and adaptation at scale, to a with-programme paradigm with reduced GHG emissions  
+across the AFOLU, energy and transport sectors, increased climate resilience of the energy, agriculture and  
+water sectors, and financial, institutional and technical capacity for the implementation of mitigation and  
+adaptation at scale.  
+
+The steps required for the realization of CCFF’s envisioned paradigm shift is mapped out in its theory  
+of change (ToC) below, which describes the logical pathway between the assumptions, barriers,  
+activities, outputs and outcomes, which will ultimately result in the achievement of the intended impact  
+or goal.  
+
+#### Programme Goal/Impact Statement:  
+IF CCFF provides long- term blended climate finance and builds the  
+enabling environment in Cambodia for its effective use; THEN GHG emissions will be reduced across AFOLU,  
+energy and transport sectors, and the climate resilience of the energy, agriculture and water sectors will be  
+enhanced, strengthening Cambodia’s capacity for mitigation and adaptation;  BECAUSE CCFF’s  
+demonstration of catalyzing private sector capital will de- risk the bankability of mitigation and adaptation  
+projects increasing the availability of finance for priority NDC sectors.  
+
+The Programme’s goal/impact will be achieved through four complementary outcomes.  
+Outcome 1: Increased private sector finance for climate change adaptation and mitigation (MRA 1, 2,  
+3, 4; ARA 1, 2, 4).  Contributing to the realization of Outcome 1 are: i) the achievement of institutional  
+preparedness for the programme (Output 1.1) through its establishment (Activity 1.1.1), the operationalization  
+of the CCFF working group at ARDB (Activity 1.1.2) and the provision of support for its implementation (Activity  
+1.1.3); ii) the building of institutional capacity building of ARDB to become a national climate bank (Output 1.2)  
+through the sharing of knowledge from CCFF’s operations and its internalization in the ARDB’s climate  
+financing framework ( Activity 1.2.1), supporting capacity building and training of ARDB staff ( Activity 1.2.2),  
+and developing a long- term strategy for ARDB as Cambodia’s national climate bank ( Activity 1.2.3 ); iii)  
+wholesale green lending implemented (Output 2.1) through selecting suitable LFIs ( Activity 2.1.1), executing  
+loan agreements with selected LFIs ( Activity 2.1.2 ), providing wholesale green lending ( Activity 2.1.3 ) and  
+implementing post -investment MRV of green lending proceeds to LFIs ( Activity 2.1.4); and iv) direct green  
+lending implemented ( Output 2
+
+
+---
+*Chunk pages 20–20*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1147 (sys=94, user=1053), max_out=1024, ctx=8192
+---
+
+# [Page 1]
+
+## GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 13
+
+### Outcome 2: Reduced GHG emissions across the AFOLU, energy and transport sectors (MRA 1,2,3,4).
+
+This outcome will be achieved through the activities and outputs contributing to the realization of Outcome 1 (see above), and i) the building of institutional capacity building of ARDB to become a national climate bank (Output 1.2) through the sharing of knowledge from CCFF’s operations and its internalization in the ARDB’s climate financing framework (Activity 1.2.1), supporting capacity building and training of ARDB staff (Activity 1.2.2), and developing a long-term strategy for ARDB as Cambodia’s national climate bank (Activity 1.2.3); ii) strengthened Cambodia’s climate finance framework (Output 3.1) through the sharing of knowledge generated through the implementation of the CCFF programme with public and private sector stakeholders (Activity 3.1.1) and supporting climate finance policy frameworks for Cambodia (Activity 3.1.2); and iii) Capacity building for stakeholders across the sustainable ecosystem (Output 3.2) through providing technical assistance for the preparation of climate change projects (Activity 3.2.1) and building the institutional capacity of borrowers (Activity 3.2.2).
+
+### Outcome 3: Enhanced climate resilience of the energy, agriculture and water sectors (ARA 1,2,4).
+
+This outcome will be achieved through the activities and outputs contributing to the realization of Outcomes 1 and 2 (see above).
+
+### Outcome 4: Strengthened institutional and technical capacity for adaptation and mitigation (MRA 1,2,3,4; ARA 1,2,4).
+
+This outcome will be achieved through the activities and outputs contributing to the realization of Outcome 2 (see above).
+
+In parallel to contributing to the achievement of the Programme’s outcomes, project outputs and their contributing activities (as described above) will collectively contribute to three co-benefits.
+
+- **Economic co-benefit**: the creation of full-time and part-time jobs. Outputs 2.1 (Wholesale green lending implemented) and 2.2 (Direct green lending implemented) will directly contribute to this co-benefit.
+- **Gender and Social co-benefit**: increased gender mainstreaming into investments. Outputs 2.1 (Wholesale green lending implemented) and 2.2 (Direct green lending implemented) will directly contribute to this co-benefit.
+- **Environmental co-benefit**: reduced environmental impact of investments through the preparation and implementation of safeguards plans. Outputs 2.1 (Wholesale green lending implemented) and 2.2 (Direct green lending implemented) will directly contribute to this co-benefit.
+
+The CCFF programme is designed to respond to specific barriers to the achievement of its proposed outcomes and goal. These barriers and the activities which will address them are presented below.
+
+### Barrier 1 (B1): Insufficient domestic public resources to meet NDC targets, identified need to mobilize institutional, private & commercial capital at scale
+
+The Royal Government of Cambodia has made progress integrating climate change in budgeting through the development of a climate change financing framework, yet the public budget alone is not sufficient to fund the NDC mitigation and adaptation needs of US$7.8 billion. As per BUR 1, the public climate change expenditure was on average 3.8% of total public expenditure from 2009 to 2017 and only 1% of GDP.
+
+Cambodia has received both grants and loans from development partners and donor countries to design and implement climate change projects. However, Cambodia still faces major financial constraints to ensure effective implementation of adaptation and mitigation actions. For example, while development partners have been focused largely on financing adaptation actions, there is still a 92% financing gap to implement Cambodia’s adaptation needs. Furthermore, the external climate finance has been associated with fluctuations, and thereby, these interventions were not able to reach climate impact at scale due to scattered efforts. To this end, there is an identified need to mobilize institutional, private, and commercial capital through a dedicated domestic climate financing facility that shall provide long-term and sustained means to fund Cambodia’s climate mitigation and adaptation actions to meet NDC targets.
+
+### Barrier 2 (B2): Lack of capacity, knowledge, and financial resources to design and operationalize climate finance vehicles/products
+
+The analyses of Cambodia’s updated NDC and BUR 1 reveal, that Cambodia’s future resource mobilization looks toward a reasonable mix of national and international sources of funding, which can contribute towards
+
+---
+
+
+---
+*Chunk pages 21–21*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1092 (sys=94, user=998), max_out=1024, ctx=8192
+---
+
+# B B GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 14
+
+## 24 See Annex 2 – Feasibility Study  
+## 25 National Bank of Cambodia Supervision Report 2022  
+
+enabling conditions to scale up climate finance, foster innovation, and demonstration, as well as generate sustainable development co- benefits along with climate impact. While there are proven climate finance vehicles and products that can be replicated by the domestic financial sector in Cambodia, to date, such innovative finance models have not been utilized in Cambodia. This is largely due to limited local capacity, knowledge, and resource gaps to implement and access climate finance. Climate finance is yet a new asset class in Cambodia, and thereby, largely overlooked.
+
+### CCFF Component 1 (addressing B1 and B2): Establishment of the CCFF  
+
+Barriers 1 and 2 are addressed by the activities targeted under CCFF Programme Component 1. Barrier 1 is addressed by establishing a national, dedicated, blended climate finance facility with US$10 9M capitalization. The CCFF is designed as 20-year Programme, to mobilize US$100M loan to high climate impact projects. Furthermore, at the project level, the Programme has a potential to mobilize US$347M private sector investment throughout the Programme duration, given the reinvestment and co-financing features of the loan component. The grant funding of US$5M is an innovative feature of the Programme, so to contribute towards enabling conditions to scale up climate finance in Cambodia.
+
+The long-term sustainability of this domestic, climate finance facility is ensured through (1) Building institutional capacity of ARDB to design, issue, and administer climate loans. This is achieved through the establishment of a dedicated climate finance department at ARDB and appointing an Independent Investment Advisor with climate finance track record, to build ARDB’s institutional capacity and (2) Accreditation of ARDB for GCF, to have access to a sustained source of climate finance.
+
+In addition, the institutional capacity building and knowledge sharing geared towards local financial institutions and private sector actors in Cambodia are embedded in the CCFF Programme design (particularly Component III), thereby building local capacity at scale to access and design climate finance projects/products.
+
+### Barrier 3 (B3): Risk averse Local Financial Institutions (LFIs), High perceived risks for climate projects due to limited track record and capacity, no incentive to invest in climate projects  
+
+Local financial institutions in Cambodia have risk -averse lending appetites, typically requiring >150% tangible security, and strong pre-existing cash flows. Project finance is not available for climate projects in Cambodia, due to the lack of capacity to appropriately structure projects. These capacity gaps and limited track record in climate finance further makes it difficult for LFIs to evaluate climate investments and develop adequate investment/financing approaches.
+
+As an example, an increased exposure to climate change risks on infrastructure assets on one hand in Cambodia, and limited local capacity to adequately assess risks, vulnerability and impacts and integrate climate adaptation into infrastructure project evaluation are significant barriers hindering financing of incremental costs required to make renewable energy projects in Cambodia climate resilient. Furthermore, in the absence of proactive measures to make these infrastructures more resilient to climate change, private investors’ risk aversion to climate-related risks associated with infrastructure will increase to divert already scarce resources for infrastructure financing in Cambodia. This translates into a high-risk perception for climate projects.
+
+Furthermore, there is a high cost of capital in Cambodia, with lending interest rates ranging between 8% to 16% p.a., and deposit rates generally between 5% to 8% p.a. Offshore borrowing also is not feasible given the high country-risk premium international banks place on Cambodia. This coupled with high transaction costs to design the specific climate finance products that have not yet been proven in Cambodia, disincentivizes LFIs to engage in climate finance.
+
+In addition, Cambodia’s financial system lacks policy frameworks to incentivize climate finance. For example, Bangladesh has introduced regulatory incentives for the local financial sector to engage in climate finance, while Malaysia has developed a taxonomy intended to serve as a guide for financial institutions to identify potential economic activities to achieve climate-change mitigation and adaptation. Indonesia has developed a green bond framework to enable local financial institutions and private sector actors to diversify their investor base to channel climate funding. Such policy frameworks to catalyse climate funding through
+
+---
+
+
+---
+*Chunk pages 22–22*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1074 (sys=94, user=980), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 15
+
+## [Page 1]
+
+### Barrier 4 (B4): Mismatch between available loan terms & climate technology financing needs, hence low uptake of high climate impact technologies & practices by private sector
+
+Loan tenor in Cambodia is generally less than 5 years, which is typically too short for climate projects in targeted CCFF sectors. DFIs active in Cambodia, who do offer longer term loans, require debt sizes greater than US$10M-15M, which excludes most projects.
+
+The high cost of capital in Cambodia is another barrier, so is the limited openness of LFI’s to fund early-stage projects, which is often required for financing climate technology needs, especially in the energy and water sectors. The private sector actors in Cambodia are subject to traditional access to finance barriers in addition to barriers that are typical to climate finance, such as lack of loan products tailored to climate technology/practice needs, lack of financial resources to develop/formulate climate projects (including vulnerability assessment, climate technology feasibility studies).
+
+### CCFF Component 2 (addressing B3 and B4): Climate Financing for High Climate Impact Mitigation and Adaptation Projects
+
+Barriers 3 and 4 are addressed by the activities targeted under the CCFF Programme Component 2. In particular, Barrier 3 is addressed by providing:
+
+1. **Wholesale green lending to local financial institutions**, structured as concessional, long-term loans, thereby incentivizing LFI’s to engage in climate finance. The transaction costs of LFI’s will be reduced through lower cost of funding as well as developing loan products together with the CCFF team, that will be tailored to risk/return profile of the potential borrowers from targeted high climate impact sectors and
+
+2. **Direct green lending to private sector actors**, enabling affordable lending rates for high climate impact projects and mobilizing capital through co-financing. Through this direct green lending to private sector actors, the CCFF shall contribute to building a pipeline of deals and structuring/syndicating transactions to facilitate the involvement of other capital providers, both public and private, foreign and domestic. Such funding will be geared towards early-stage climate funding or complex project finance (including for climate resilient renewable energy projects), requiring de-risking through innovative financial structures.
+
+The Direct Green Lending product is complimentary to Wholesale Green Lending, as it will primarily finance the projects that LFI’s are not willing to engage alone due to risk/return profile or investment size considerations.
+
+Component 2 is highly catalytic, as it has the potential to mobilize resources at the level of projects both from local LFIs, institutional investors and private sector. Importantly, it provides strong “paradigm shifting” market signals by:
+
+1. Reducing transaction risks associated with climate finance for LFIs and
+2. Demonstrating the financial viability of the high climate impact projects.
+
+### Barrier 5 (B5): Limited institutional capacity, data, and knowledge gaps to identify, invest and monitor high climate impact projects in Cambodia
+
+Both, at the level of the LFIs as well as private sector actors, there is a lack of institutional capacity to identify low carbon/climate resilient investment measures, monitor and report on them. This often translates into insufficient knowledge of the potential benefits of climate-related investments, and an inability to properly assess and manage potential risks, which results in heightened perceived risks for green projects.
+
+Data quality is yet another constraint, hindering finance of high climate impact projects in Cambodia. There is an absence of baseline measurements, data-collection resources, and methods and information sharing protocols useful for decision-making. Lack of business-relevant information on potential hazards, exposure, and climate vulnerability is the biggest challenge, especially in the water sector that is constrained with data gaps. These gaps result in barriers to identify, invest, and monitor high climate impact projects by LFIs and private sector actors.
+
+### Component 3 (addressing non-financial barriers discussed under B3, B4, and B5): The activities targeted under Component 3 will help address non-financial barriers hindering investments into high climate impact projects as follows:
+
+
+---
+*Chunk pages 23–23*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=979 (sys=94, user=885), max_out=1024, ctx=8192
+---
+
+# B B GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 16
+
+## 27 Success of some of the policy work under MDB initiatives
+
+(e.g., energy sector such as ADB: EE, grid connected solar and energy storage, grid expansion; DFAT Aus: RE and integration strategy; UNDP: solar rooftop and off-grid access; World Bank: EVs, off-grid access, clean cook stoves; KfW: EE, transmission, regulatory engagement)
+
+## Barrier
+
+### Description
+Proposed Activity
+
+## B3 No policy incentives to encourage local financial sector in Cambodia to engage in climate finance.
+
+Activity 3.1.2 Support climate finance policy frameworks for Cambodia to accelerate climate finance actions in Cambodia and create policy incentives to encourage climate funding.
+
+## B4 Lack of project preparation financial resources for private sector borrowers to access climate finance.
+
+Activity 3.2.1 Protect Perparation Technical Assistance
+
+The activity shall support eligible borrowers access to climate finance by funding much-needed feasibility studies for early-stage projects with innovative technologies or business models, climate vulnerability studies and climate baseline assessments.
+
+## B5 Limited institutional capacity, data and knowledge gaps to identify, invest and monitor high climate impact projects in Cambodia.
+
+Activity 3.1.1 Share knowledge generated through the implementation of the CCFF programme with public and private sector stakeholders:
+
+This activity will contribute to strengthening climate finance institutional capacity in Cambodia, through partnerships, awareness raising, institutional capacity building and knowledge sharing activities. It will equip public and private sector stakeholders with resources to understand how climate finance innovation and consideration of climate, ESG and gender factors in investment decision making contribute to investment outcomes.
+
+Activity 3.2.2 Institutional Capacity Building of Borrowers:
+
+This activity shall support selected borrowers (LFIs, Private sector Actors) to build institutional capacity to manage high climate impact projects, thereby contributing to the long-term sustainability of the CCFF Programme.
+
+## To derive the above, the CCFF’s theory of change relies on a number of reasonable assumptions.
+
+- First, it is assumed that regulatory environment and institutional structures are conducive to private sector investments in Cambodia.
+- Second, it is assumed success of some of the policy works under MDB initiatives27. Currently ADB, WB, KfW, AFD, USAID, JICA, DFAT and EU all have grant programmes targeting the energy sector gaps to promote Renewable Energy and Energy Efficiency uptake through policy interventions, and the CCFF team is already engaging and will continue to be actively engaged in dialogues with development partners who are supporting these various policy initiatives. Furthermore, it should be highlighted that the public sector in Cambodia is aware of the challenges and is motivated to address those issues in the medium term, as evidenced by policy efforts, including for example, a recent plan to design the ESCO Road Map in Cambodia (UNDP intervention) or updated Master Plan that promotes non-hydro renewable energy investments. To this end, in theory of change assumption, we reflect upon this and assume that MDB’s policy work will be successful in the medium to long-term and thereby, create an enabling environment conducive to renewable energy investments.
+- Third, we assume that changes in the country’s political environment does not impact the existing vision of the Royal Government of Cambodia to scale up climate action. CCFF’s investment strategy is aligned to Cambodia’s NDC needs and the programme interventions are coordinated with the Ministry of Economy and Finance (MEF) as well as NDA in Cambodia, so the CCFF Programme has political will and support, and it is assumed that changes in political environment will not impact existing vision as reflected in Cambodia’s NDC and National Climate Strategy.
+- Fourth, we assume that the public sector is open to engaging with CCFF team in policy dialogue related to climate finance framework and sector specific policy as it may be required.
+
+
+---
+*Chunk pages 24–24*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=532 (sys=94, user=438), max_out=1024, ctx=8192
+---
+
+# B B  
+## GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 17  
+
+### 28  
+The Project Preparation Facility under component 3 also addresses the sector specific risks, including regulatory risk  
+Assumptions 2, 3 and 4 are interrelated, and those conditions will be considered/assessed prior to and during the implementation phase of the CCFF Programme. For example, e.g., during due-diligence  
+stage, project specific political and regulatory risks are assessed, while the risk monitoring framework  
+includes those risks in the programme level risk register for on-going monitoring.  
+
+Furthermore, the pipeline for the CCFF program has been designed around the current regulatory  
+environment, engagement with development partners, and discussions with the RGC. We believe  
+there is significant opportunity in each sector targeted by the CCFF and with proper blended finance  
+structuring approach, regulatory risks can be decreased  
+
+28. CCFF’s investment strategy is aligned to  
+Cambodia’s NDC needs and the planned programme interventions are coordinated with the Ministry  
+of Economy and Finance (MEF) as well as NDA in Cambodia. To this end, while the stakeholder  
+engagement depends on external factors there is a high-level of  
+political support for the CCFF  
+Programme and openness to engage in the policy dialogue.  
+
+• Fifth, we assume that the Local Financial Sector is open to engage in climate finance upon availability  
+of concessional, blended finance is unchanged. While these assumptions  are reliant on external  
+factors, the CCFF Programme’s lending facility provides financial incentives to Local F Is through  
+concessional loans to de-risk their participation and hence build track record of climate finance, while  
+the CCFF TA Facility  includes knowledge sharing activities to cultivate interest and openness to  
+engage in climate finance.  
+
+The intended outputs and outcomes brought by the CCFF Programme is depicted in the “Theory of Change”  
+Diagram below:
+
+
+---
+*Chunk pages 25–25*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=153 (sys=94, user=59), max_out=1024, ctx=8192
+---
+
+# B B GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 18
+
+---
+
+This is a placeholder for the content of page 25, which appears to be a header or title section. The actual text content from this page has not been provided in the extracted PDF chunk.
+
+If you have additional pages or content to convert, please provide them so I can generate the full Markdown output.
+
+--- 
+
+Note: The current extraction only includes the header information and does not contain any readable text from the body of the document. Therefore, no further conversion is possible without more content.
+
+
+---
+*Chunk pages 26–26*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=726 (sys=94, user=632), max_out=1024, ctx=8192
+---
+
+# B.2 (b). Outcome mapping to GCF results areas and co-benefit categorization
+
+| Outcome number | GCF Mitigation Results Area (MRA 1-4) | GCF Adaptation Results Area (ARA 1-4) |
+|----------------|---------------------------------------|---------------------------------------|
+| MRA 1          | Energy generation and access          |                                       |
+| MRA 2          | Low-emission transport                |                                       |
+| MRA 3          | Building, cities, industries, appliances |                                    |
+| MRA 4          | Forestry and land use                 |                                       |
+| ARA 1          | Most vulnerable people and communities |                                       |
+| ARA 2          | Health, well-being, food and water security |                                  |
+| ARA 3          | Infrastructure and built environment  |                                       |
+| ARA 4          | Ecosystems and ecosystem services     |                                       |
+
+## Outcome 1: Increased private sector finance for climate change adaptation and mitigation  
+☒ ☒ ☒ ☒ ☒ ☒ ☐ ☒  
+
+## Outcome 2: Reduced GHG emissions from agriculture, forestry and other land-use (AFOLU), energy and transport sectors  
+☒ ☒ ☒ ☒ ☐ ☐ ☐ ☐  
+
+## Outcome 3: Enhanced climate resilience of the energy, agriculture and water sectors  
+☐ ☐ ☐ ☐ ☒ ☒ ☐ ☒  
+
+## Outcome 4: Strengthened institutional and technical capacity for adaptation and mitigation  
+☒ ☒ ☒ ☒ ☒ ☒ ☐ ☒  
+
+If any co-benefits have been identified in section B.2(a), fill in the Co-benefit table below to map each co-benefit to the corresponding category as defined in the FP guidance note.
+
+| Co-benefit number | Co-benefit                          | Environmental | Social | Economic | Gender | Adaptation | Mitigation |
+|-------------------|-------------------------------------|---------------|--------|----------|--------|------------|------------|
+| Co-benefit 1:     | Job creation                        | ☐             | ☐      | ☒        | ☐      | ☐          | ☐          |
+| Co-benefit 2:     | Gender mainstreamed into investments| ☐             | ☒      | ☐        | ☒      | ☐          | ☐          |
+| Co-benefit 3:     | Reduced environmental impact of investments | ☒       | ☐      | ☐        | ☐      | ☐          | ☐          |
+
+Note: The CCFF is expected to contribute to Cambodia’s sustainable development goals, through bringing one or more environmental, social or economic co-benefit as identified in Annex 22 and summarized in section D of this FP. However, the core focus of the theory of change is on catalysing long-term, blended climate finance for Cambodia’s NDC implementation and hence, the discussions under section B.2(a) have been presented. [Page 19]
+
+
+---
+*Chunk pages 27–27*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1017 (sys=94, user=923), max_out=1024, ctx=8192
+---
+
+# B B GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 20
+
+## According to the document:
+
+The SDG indicators will be identified during the screening stage per each project and measured/monitored as per the pre-agreed project-specific M&E Plan.
+
+## B.3. Project/programme description (max. 2500 words, approximately 5 pages)
+
+The CCFF Programme consists of the Lending Facility (US$ 100 million) and the TA Facility (US$ 9 million). It is a first-of-its-kind, country-owned climate finance facility to catalyse public and private sector funding for high climate impact mitigation and adaptation projects that contribute to the country's NDC achievement. The CCFF Programme overview is provided in the table below.
+
+### CCFF Programme Snapshot
+
+| CCFF structure | CCFF Lending Facility (US$ 100 million): A ring-fenced loan facility with an aim to finance mitigation and adaptation activities under Component 2 of the CCFF Programme. |
+|----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|                | CCFF TA Facility (US$ 9 million): A dedicated technical assistance facility to fund national and institutional capacity building activities under Components 1 and 3 of the CCFF Programme. |
+
+### CCFF governance
+
+CCFF Programme governance has a robust governance structure as follows:
+
+#### CCFF Lending Facility:
+
+- Oversight Committee (OC): comprised of appointed representatives of KDB as Accredited Entity on behalf of GCF, the Ministry of Economy and Finance (MEF), ARDB, and representative designated by co-financiers of the CCFF Programme, if requested. The OC shall have an oversight function for the CCFF Lending Facility.
+- The CCFF Oversight Committee will have a dedicated sub-committee (Green Credit Committee) responsible for overseeing that the funded activities under the CCFF Lending Facility are aligned to its targeted results (impact, outcome, output):
+  - CCFF Lending Facility Green Credit Committee (GCC): comprised of appointed representatives of MSC and ARDB, KDB (as an observer from OC, non-voting member but receives the result of the committee afterwards). The GCC will approve loan transactions through unanimous vote and ensure alignment to all the commitments under Component 2.
+  - MSC will be the appointed climate expert on the GCC to ensure that only high impact climate projects are approved (given loan approvals require unanimous vote by MSC and ARDB, MSC effectively has veto power for projects with limited climate impact).
+  - The decisions of the GCC will be reported to OC (including KDB as AE) and eventually GCF.
+
+#### CCFF TA Facility:
+
+- CCFF TA Facility Committee (GFC): comprised representatives of MSC and KDB (as observer from OC, non-voting member). The GFC will approve TA interventions for Components 1 and 3. The GFC will be established by MSC.
+- The TA Facility Committee will be advised by the Technical Advisory Panel (TAP), comprising a representative of RGC (potentially NDA), private sector and civil society. The TAP will advise the GFC on TA Activities, including targeted policy and capacity building interventions. It will also engage with public and private sector entities on knowledge sharing and awareness raising activities.
+- The decisions of the GFC will be reported to KDB and eventually GCF.
+
+#### Project Management Unit (PMU)
+
+MSC, Executing Entity appointed by KDB, shall establish Project Management Units (PMUs) responsible for administering the funded activities under Components 1, 2, and 3: a TA facility PMU at MSC; and a lending facility PMU at ARDB. The PMUs are responsible for ensuring the funded activities' alignment with the terms and conditions across all the legal arrangements including the FAA and AMA.
+The PMU's decisions will be reported to the OC including KDB as AE on behalf of GCF.
+
+### Target size
+
+US$ 109 million  
+- US$ 100 million Lending Facility (Component 2)  
+- US$ 9 million TA Facility (Components 1 and 3).  
+
+### Geography
+
+Cambodia
+
+
+---
+*Chunk pages 28–28*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1122 (sys=94, user=1028), max_out=1024, ctx=8192
+---
+
+# B B GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 21
+
+## Target sectors
+Energy (renewable energy and energy efficiency), water infrastructure, sustainable agriculture and forestry, and low-emission transport.
+
+The GCF is requested to participate in KDB’s US$ 50 million senior loan to MEF to support the CCFF Lending Facility and provide US$ 5 million in the form of grant to support the TA Facility as follows:
+
+- **US$ 50 million senior loan to the CCFF Lending Facility**. The GCF senior loan is requested to mobilize additional US$ 50 million investment capital from Agricultural and Rural Development Bank (ARDB) and other DFI/IFIs, and de-risk targeted climate actions across climate vulnerable areas in Cambodia. Importantly, the requested GCF participation shall enable the CCFF to offer concessional, long-term loans to private sector borrowers for high climate impact mitigation and adaptation projects under Component 2.
+
+- **US$ 5 million non-reimbursable grant to the CCFF TA Facility**. The CCFF TA Facility will enable the establishment and capacity development of the CCFF under Component 1, while addressing critical barriers hindering uptake of high climate impact projects in Cambodia through knowledge and capacity building activities to be funded under Component 3.
+
+## Programme output and activities
+The programme output and activities explained further in this section contribute to following outcomes as explained in theory of change (B2) above:
+
+### Outcome 1: Increased private sector finance for climate change adaptation and mitigation (MRA 1, 2, 3, 4; ARA 1, 2, 4)
+This is achieved through the Interim Outcome 1: Climate financing scaled up across Cambodia for adaptation and mitigation initiatives.
+
+### Outcome 2: Reduced GHG emissions from the AFOLU, energy and transport sectors (MRA 1, 2, 3, 4)
+This outcome will be achieved through the realization of Interim Outcome 1: Climate financing scaled up across Cambodia for adaptation and mitigation initiatives, and Interim Outcome 2: Strengthened enabling environment for improved flows and the use of climate finance for adaptation and mitigation initiatives. Expected climate impact is 11.1 million tCO2e emissions reduced, avoided, or removed/sequestered.
+
+### Outcome 3: Increased climate resilience of projects in energy, agriculture and water sector, strengthening Cambodia's adaptation capacity
+This outcome will be achieved through the realization of Interim Outcome 1: Climate financing scaled up across Cambodia for adaptation and mitigation initiatives and Interim Outcome 2: Strengthened enabling environment for improved flows and the use of climate finance for adaptation and mitigation initiative. The expected adaptation impact is: 1.3 million Direct and Indirect Beneficiaries with increased adaptation capacity to climate change, as well as US$139 million of renewable energy assets made more resilient to effects of climate change and/or more able to reduce GHG emissions.
+
+### Outcome 4: Strengthened institutional and technical capacity for adaptation and mitigation
+This will be achieved through the realization of Interim Outcome 2: Strengthened enabling environment for improved flows and the use of climate finance for adaptation and mitigation initiatives.
+
+## Co-benefits
+In parallel to contributing to the achievement of the programme's outcomes, all projects financed from CCFF facility are expected to contribute to Cambodia's sustainable development goals, through bringing one or more environmental, economic, or social co-benefits as identified below:
+
+### Environmental Co-benefit
+All projects funded under CCFF Programme shall be screened for E&S risks and opportunities. To this end, projects are expected to contribute to improved land or air or water quality, enhanced resource efficiency of, or sustainable management, or protection of natural resources. Furthermore, all projects to be financed from CCFF will strive to avoid adverse impacts of its activities on the environment and affected people, and where avoidance is impossible, mitigate adverse impacts to people and the environment through institutionalizing Environmental and Social practices aligned to CCFF Environmental & Social Management System.
+
+### Gender and Social Co-benefit
+Projects contribute to gender responsiveness, with [30%] of CCFF Loan proceeds finance women led businesses/borrowers and [20%] of the CCFF TA funding supporting gender mainstreamed activities. In addition, projects are expected to bring one or more social sustainability benefits, such as improvements in health and safety, or improved access to energy, and/or access to clean water and sanitation.
+
+
+---
+*Chunk pages 29–29*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=960 (sys=94, user=866), max_out=1024, ctx=8192
+---
+
+# B B  
+## GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 22  
+
+### Economic co-benefit  
+Projects contribute to economic sustainability through creation of full time and/or part time jobs. Other co-benefits include enhancement of income and financial inclusion, especially among women; or development of quality, reliable, sustainable, and resilient infrastructure to support economic development, such as energy and water security.
+
+### Component 1: Establishment of the CCFF  
+#### Executing Entity: MSC, KDB, and ARDB  
+
+To ensure long-term sustainability of the CCFF, a portion of the GCF grant proceeds will be utilized to establish the CCFF as per best legal, operational and governance practices of the internationally proven climate finance facility models. Given the limited local climate finance capacity, the establishment of the CCFF will be led by MSC, as Executing Entity with responsibility for carrying out activities for institutional preparedness of the CCFF in collaboration with local stakeholders.
+
+#### Output 1.1: Institutional Preparedness for the Programme  
+
+##### Activity 1.1.1: Establish the CCFF  
+This activity shall establish committed facilities (Lending and TA Facility) and set up the implementation arrangements (as described in Section B.4). This includes setting up the CCFF governance structure, such as appointment of Oversight Committee which will have an authority to establish sub-committees, appoint the Independent Investment Advisor (IIA), and set up the Project Management Unit (PMU) that will provide strategic oversight of the programme outcomes, outputs and activities, and reporting regularly to the OC, including KDB as AE on behalf of GCF.
+
+##### Activity 1.1.2: Develop the Operational Structure of the CCFF Working Group at ARDB  
+Once the CCFF Working Group is established at ARDB, the detailed investment framework for on lending and direct lending, CCFF credit policy, and operational manual including decision making process, credit review, post-investment monitoring policy, CCFF specific gender-screening criteria tool (loan, grant separately), whistle-blower program from procurement and financial management perspective, etc. will be developed.
+
+##### Activity 1.1.3: Provide support for the programmatic implementation of the CCFF  
+This activity includes specific capacity building interventions to build CCFF Working Group’s institutional capacity to implement Activities under Component 2 as per Operations Manual and Credit Policy. The non-exhaustive list of eligible interventions is demonstrated below:
+
+#### Output 1.2: Institutional Capacity Building of ARDB to Become a National Climate Bank in Cambodia  
+The CCFF Programme has been designed to ensure the long-term sustainability of ARDB to access climate finance and become a leading national climate development bank in Cambodia. The establishment of a dedicated CCFF Working Group at ARDB will contribute to building ARDB’s track record in climate finance.
+
+##### Project pipeline development:  
+Support identification and assessment of green projects and LFIs compliant with CCFF Credit Policy and investment eligibility criteria adopted by ARDB  
+
+##### Due diligence (DD) support for credit review, including E&S and Gender:  
+Support pre-investment climate impact assessment, technology feasibility studies and environmental and social management as per CCFF ESMS requirements, gender assessment, stakeholder engagement, climate impact monitoring, reporting and verification. This includes advisory support to set up system and tools required to perform high quality DD (e.g. gender screening as per CCFF gender screening criteria to ensure that 30% of women borrowers target as per GAP is achieved).
+
+##### Post-investment monitoring support including MRV:  
+Develop internal systems to collect, monitor and evaluate project specific impacts, including climate change interventions, ensuring systems are fit for purpose with key stakeholders, such as NDA, to support tracking of NDC contributions. This activity includes post-investment impact reporting as per project specific M&E plan.
+
+
+---
+*Chunk pages 30–30*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1003 (sys=94, user=909), max_out=1024, ctx=8192
+---
+
+# B B GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 23
+
+## 29
+
+The Common Principles have been developed by the Joint Climate Finance Tracking Group of multilateral development banks (MDBs) and a group of representatives of the International Development Finance Club (IDFC) member banks, who invite They invite other institutions to adopt the methodology and foster increased transparency, consistency and credibility while reporting financial flows that contribute to climate change mitigation.
+
+while the targeted institutional capacity building activities shall contribute to building ARDB’s overall institutional capacity to design climate finance products and access international climate funding, including through GCF.
+
+• Activity 1.2.1: Share lessons learnt, and data collected from CCFF’s operations and internalise it in ARDB’s climate financing framework: This entails, sharing lessons learnt and data collected from CCF/CCFF’s operation and internalization in ARDB’s climate financing framework.
+
+• Activity 1.2.2: Support capacity building and training of ARDB staff through knowledge sharing and workshops. Institutional, personnel capacity building and training session by each business area.
+
+• Activity 1.2.3: Develop a long-term strategy for ARDB as Cambodia’s national climate bank development. Development of long-term strategy of ARDB as Cambodia’s national climate bank
+
+## Component 2 Climate Financing for High Climate Impact Mitigation and Adaptation Projects
+
+Executing Entity: MEF, ARDB, and MSC
+
+This component provides climate financing for high impact climate mitigation and adaptation projects in the CCFF target sectors through the CCFF Lending Facility – the ring-fenced loan account managed by the CCFF Working Group. The ring-fenced structure prevents the funds under the Programme from being mingled with other businesses or assets/liabilities of ARDB, while mitigating any likely risks to the CCFF investors who intend to investment only in climate responsive projects eligible as per investment eligibility criteria under the Programme.
+
+Furthermore, the CCFF Lending Facility shall operate as an independent “facility” at ARDB, with dedicated governance and relevant commitments such as investment eligibility criteria, credit policy, Environmental and Social Management System (ESMS), Gender Action Plan (G AP), and Monitoring and Evaluation Framework (M&E Framework). The ARDB shall establish a dedicated project management unit, the Cambodia Climate Financing Facility (CCFF) Working Group, that shall originate, issue, and manage loans.
+
+In addition to the investment criteria above, the climate eligibility criteria have been developed to provide a non-exhaustive list of activities in each CCFF targeted sector eligible for classification as climate change mitigation and adaptation projects (see tables below). It is aligned Cambodia’s NDC in terms of the mitigation and adaptation needs, while the eligible activities are also aligned to the Common Principles 29 for climate mitigation and adaptation finance tracking developed by MDB/IFI community and is consistent with the ASEAN Taxonomy. The tables below are based on a framework approach, that is flexible enough to cover various interventions within a scope of targeted sectors and impact areas.
+
+### Activities Eligible for Classification as Climate Change Mitigation Projects
+
+| Sector | Mitigation category | Eligible Mitigation Activities |
+|--------|---------------------|--------------------------------|
+| Renewable Energy | Electricity generation | The entity applying for CCFF funding should demonstrate that GHG emissions of renewable energy shall be substantially lower than |
+
+### Investment Criteria
+
+The CCFF Lending Facility shall finance projects that meet the following 4 investment criteria:
+
+(i) Climate Impact. Demonstrate a measurable climate change mitigation and/or adaptation impact, contributing to Cambodia’s NDC implementation.
+
+(ii) Sustainable Development. Contributes to Cambodia’s sustainable development goals, through bringing one or more environmental, economic, or social-co benefits.
+
+(iii) Bankability/Financial Sustainability. Demonstrate an improvement in financial viability or bankability by investing and de-risking high impact climate projects tailored to local recipients needs in Cambodia.
+
+(iv) Mobilizing Climate Finance. Demonstrate the potential to catalyse private capital into the project.
+
+Each of these investment criteria is unpacked in the Annex 21: Operations Manual.
+
+
+---
+*Chunk pages 31–31*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=695 (sys=94, user=601), max_out=1024, ctx=8192
+---
+
+# B B GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 24
+
+## Projects up to 50MW installed capacity will be considered for financing
+
+corresponding GHG emissions from fossil fuel generation. Analysis of GHG emissions should take account of material lifecycle sources.
+
+### Eligible activities include:
+
+- Grid connected onshore solar electricity generation facilities based on Solar PV technology
+- Grid connected onshore and offshore wind energy generation facilities
+- Off-grid renewable electricity generation through solar and wind, implemented by the users as new installations (Greenfield) or replacement of existing onsite fossil-fuel-fired generation. Users are in off-grid locations, i.e., they do not have connection to a national/regional grid, unless exceptional situations, e.g., weak grids
+
+### Other RE application in targeted CCFF categories
+
+- Solar PV agricultural land/buildings for on-site use or grid connection, solar water pumping systems in irrigation. Or wind energy on agricultural land.
+- On-site solar PV installations for Commercial & Industry use
+- On site renewable energy installation for charging stations (e-mobility)
+
+### Measures to facilitate integration of renewable energy into grids
+
+- Investments in supporting assets dedicated to integrating renewable energy such as transmission and distribution infrastructure, energy storage, demand management solutions and micro-grids/smart grids.
+
+#### Note: Only storage projects that are directly related to renewable energy plans will be financed, therefore, they should meet the same criteria for low lifecycle GHG emissions as in case of RE mitigation activity. The project in combination with RE should result in net emission reduction.
+
+#### Note: Activities that use fossil fuels for power energy generation are excluded
+
+### Energy efficiency (EE) improvements, with at least [20]% energy saving potential compared to baseline.
+
+The eligible mitigation activities include:
+
+- Brownfield commercial and industrial energy-efficiency improvements, including but not limited to installation of more efficient equipment (e.g., boilers, sewing machines, drying machines and compressors, washing machines, LED lights), changes in processes resulting in energy savings, resource-use efficiency measures, and implementation of energy-efficiency plans.
+- Highly efficient or low-carbon greenfield manufacturing facilities or greenfield supplementary equipment or production lines at an existing manufacturing facility.
+- Improvements to existing industrial processes, new processes, or advanced manufacturing technology leading to a reduction in consumption or a reduction in waste of non-energy resources through changes in processes or process inputs.
+
+### Other:
+
+---
+
+
+---
+*Chunk pages 32–32*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=843 (sys=94, user=749), max_out=1024, ctx=8192
+---
+
+# B B  
+## GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 25  
+
+### 30  
+In response to phase down of high-GWP refrigerants such as R-410A and R-134a, the low-GWP refrigerants should be funded such as R-32, R-513A (630 GWP/AR4), R-1234ze(E) (1 GWP/AR4), R-515B (292 GWP/AR4), and R-1233zd(E) (1 GWP/AR4).  
+
+#### Energy efficiency in new commercial or residential buildings,  
+and performance updates to buildings in commercial and industrial sector, such as:  
+- Use of building materials with low embedded GHG emissions (including low-carbon cement, sustainable timber, and bamboo),  
+- Construction of building structures for high energy efficiency, such as advanced thermal protection of the building envelope, windows with low thermal conductivity/low-emissivity façade glazing.  
+- Energy efficiency improvement in assets in existing buildings, such as mechanical and electrical systems; heating, ventilation, and air-conditioning (HVAC); indoor and exterior lighting; and pumping and heat exchanger stations  
+- Adoption of energy-management systems & digital smart solutions (e.g., charging stations for EVs, smart meters)  
+
+#### Training to mainstream energy efficiency and data management  
+
+#### Other eligible activities in manufacturing industry as per Common Principles.  
+
+Note: Energy efficiency measures that extend lifetime of fossil fuel assets are excluded.   
+
+### Sustainable Agriculture, Forestry, and Land-use  
+#### Key sub-sector focus:  
+- Rice value chains  
+- Industrial (e.g., teak) value chain  
+
+The eligible mitigation activities include agricultural projects that contribute to reduced GHG emissions, energy use, improved carbon pools through better agricultural practices, and reduced non-carbon dioxide emissions such as:  
+
+#### Degraded land rehabilitation, erosion control measures, reduced tillage intensity and cover crops, crop rotation, higher inputs of organic matter to soil, perennial cropping systems, circular/integrated activities that enhance carbon stock, and other conservation agriculture measures.  
+
+#### Reduction of non-CO2 GHG emissions from agricultural practices or technologies (example activities include more efficient nitrogen drainage management, and water management in paddy rice)  
+
+#### Energy efficient measures, resulting in at least [20]% energy saving compared to baseline  
+
+#### Organic input agriculture and bio-slurry  
+
+Note: Deforestation is an excluded activity; price premiums will be paid to nearby rice farmers in exchange for their protection of forest land.  
+
+### Forestry or agroforestry projects that sequester carbon through sustainable forest management, avoided deforestation or avoided land degradation  
+
+#### The entity applying the CCFF funding shall demonstrate a substantial increase in the above or below ground carbon stock, or a substantial reduction in net GHG emissions or carbon intensity (e.g., tCO2e/unit of outcome).  
+
+#### The eligible activities include technologies or practices that promote afforestation (plantations) and reforestation on previously deforested land (applying international best practices), and circular or integrated activities that enhance carbon stock.
+
+
+---
+*Chunk pages 33–33*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=858 (sys=94, user=764), max_out=1024, ctx=8192
+---
+
+# B B  
+## GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 26  
+
+### 31 As CRVA tool, CCFF will capitalize on ADB’s climate risk management approach and its sector specific guidelines for climate proofing of the projects in energy and agriculture sectors. The level of technical rigor of the assessment will depend on the project complexity and availability of climate data and information for the project area. It can range from a simple desk analysis to a complex assessment based on custom climate projections to enable a more detailed assessment.
+
+### carbon stock, supply chains that promote sustainable agroforestry, land degradation prevention measures.  
+
+### Water  
+Lower-carbon greenfield or brownfield water supply projects that replace tanker use or local coping mechanisms with a piped utility water supply system. This is mitigation co-benefit to adaptation activities planned in water sector.  
+
+The eligible activities could include, but are not limited to:  
+- Replacement of tanker use for water service delivery to end users with a piped network  
+- Reduction in household or neighborhood-level pumping (groundwater or surface water extraction, or pumping for distribution) powered by diesel fuel with a piped network that uses energy more efficiently  
+- Reduction in household boiling or other emissive household treatment options with access to treated water  
+- Requiring piped water systems/operators to utilize the most energy efficient technologies available locally for water treatment, pipes, and/or pumping  
+
+### Transport  
+Electric Vehicles and relevant charging infrastructure  
+Entity applying for the CCFF funding should demonstrate a net emission reduction as well as ideally a modal shift to low-emission transportation systems  
+- E-vehicles and infrastructure that are fundamental to the operation of transport services are eligible.  
+- Potential eligible activities include purchase of electric motorcycles used by private individuals and commercial operators, charging infrastructure (private sector), including Solar PV powered charging infrastructure.  
+
+### The non-exhaustive list of activities eligible for classification as climate change adaptation projects are provided below. The projects may be supported by the CCFF TA Facility to deploy the consultant(s) with relevant climate expertise and support with evaluation of climate risks as per CCFF climate impact assessment framework. Depending on the project specific risks, the climate adaptation plan with appropriate mitigation measures and technologies will be proposed for further investment  
+
+### 31. Activities Eligible for Classification as Climate Change Adaptation Projects  
+#### Category Eligible Adaptation Activities  Core Indicator (KPI)  
+
+#### Renewable Energy  
+- Climate proofing of greenfield solar and wind infrastructure for location specific physical climate risks and vulnerabilities, at least [10]% of investment costs are directed for climate proofing adaptation measures. The eligible activities include both structural and non-structural measures, such as:  
+  - Investments into RE+ energy storage systems to accommodate for climate-induced intermittency in energy system planning  
+  - Cabling and components that can deal with high moisture content and flooding  
+  - Wind turbines designed to withstand extreme high temperatures or Solar PV modules with heat-resistant photovoltaic cells and module materials designed to withstand short peaks of very high temperature  
+  - Use of designs that improve passive airflow beneath photovoltaic mounting structures, reducing panel temperature and increasing power output  
+
+#### Value of physical assets made more resilient to the effects of climate change  
+#### Direct and Indirect Beneficiaries reached  
+
+---  
+[Page 33]
+
+
+---
+*Chunk pages 34–34*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=874 (sys=94, user=780), max_out=1024, ctx=8192
+---
+
+# B B  
+## GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 27  
+
+### 32  
+For the purposes of the CCFF funding, those would be considered as cross-cutting investment.  
+### 33  
+The adaptation measures depend on the location specific risks and hence will be tailored accordingly at individual project level.  
+### 34  
+This is preliminary target, as per discussions with LFIs and based on their existing pipeline demand. One of the primary tools LFIs are seeking is de-risking mechanisms such as co-finance and subordinated tranches at a project level. The CCFF will thus de-risk LFI participation in the private sector climate finance, at the level of wholesale loans provided to them but also at the level of the direct green lending to projects.  
+The CCFF will co-finance projects together with LFIs to encourage their active participation in green lending, by bringing required co-finance, as well as capacity and expertise to structure and manage risks specific to climate finance projects.  
+
+#### Maintenance adjusted to climate conditions (e.g., in dry areas, panel rinsing system to remove dust and grit)  
+#### Disaster risk management systems  
+#### Meteorology-based weather/climate forecasting  
+
+##### Solar electricity generation facilities in drought prone areas in Cambodia, with evidence of climate vulnerabilities and ability to complement to hydropower generation capacity during dry season  
+
+### 32  
+Output directly contributes to system adaptation to climate change.  
+
+#### Sustainable Agriculture, Forestry, and Land-use  
+
+Project location specific climate risk and vulnerability assessment in AFOLU sector and financing of the production technologies and practices that are resilient to climate change and are aligned to Cambodia’s NDC adaptation actions in AFOLU sector. The eligible activities include but are not limited to  
+
+##### 33:  
+
+###### Investments in rice crops and industrial crops (e.g., teak) to promote development of conservation agriculture and agri-business diversification  
+###### Climate stress tolerant varieties, organic input agriculture, integrated pest management  
+###### Resource efficiency (such as water saving techniques through drip irrigation, energy efficient agriculture equipment, solar water pumps that reduce GHG emissions as a co-benefit and increase resiliency to increasing water stress driven by climate change)  
+###### Scaling up adaptation technologies and climate resilient business models across the rice value chain  
+###### Climate information technologies and services, such as (M&E) imagery systems, soil analysis tools, etc.  
+###### Flood and drought defenses and storm water management  
+
+##### Hectares of land or forests under improved and effective management that contribute to climate resilient agriculture practices  
+
+#### Direct and Indirect Beneficiaries reached  
+
+#### Water  
+
+###### Climate resilient water supply to rural households in Cambodia Direct and Indirect Beneficiaries reached  
+
+### The Key outputs of Component 2 (CCFF Lending Facility) include:  
+
+#### Output 2.1: Wholesale green lending implemented.  
+#### Output 2.2: Direct green lending implemented.  
+
+The envisioned capital commitment across two outputs from the CCFF Lending Facility is [20]34% allocation to wholesale green lending and [80]% allocation to direct green lending, of which [50]% of the direct green lending is targeted to be co-financed together with LFIs . The allocation may however change during the CCFF Programme implementation period, as the CCFF team accumulates lessons learned from its lending activities and assesses the impact from each output.  
+
+---  
+*Page 34*
+
+
+---
+*Chunk pages 35–35*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=767 (sys=94, user=673), max_out=1024, ctx=8192
+---
+
+# Business Plan template will be developed by MSC within 6 months of the GCF FAA effectiveness as part of the Component 1 implementation process.
+
+## Output 2.1 Wholesale green lending implemented:
+
+Output 2.1 consists of the following activities:
+
+### Activity 2.1.1: Select Local FIss based on assessment as per CCFF Lending Facility's LFI Selection Criteria.
+
+The LFI Selection Criteria will be further developed under Component 1, but will be aligned to the Wholesale Green Loan Borrower Eligibility Assessment Framework provided below:
+
+## CCFF Wholesale Green Loan Borrower Eligibility Assessment Framework
+
+### Eligibility Criteria
+
+The CCFF wholesale green loan eligible borrowers are local financial institutions in Cambodia that are dully licensed from the National Bank of Cambodia and demonstrate:
+
+- Compliance to the National Bank of Cambodia regulatory and prudential requirements (including AML/CFT and corporate governance regulations).
+- Alignment with the CCFF Investment and Eligibility Criteria framework for the requested project funding.
+- Commitment to building a green lending portfolio.
+- Meet the CCFF's environmental and social management system (ESMS) requirements, as well as Gender Policy requirements.
+
+### Selection Process
+
+The CCFF will issue a request for proposals (RFP) to Cambodian registered financial institutions via the Association of Banks and the Cambodian Sustainable Finance Initiative, requesting submissions for CCFF wholesale green loan funding.
+
+Local Financial Institutions will be required to submit all documents requested in the RFP and ensure that relevant management staff are available to participate in the due diligence process, as required.
+
+Eligible local financial institutions will be identified through the following process:
+
+- Only financial institutions registered in Cambodia and holding a license from the NBC will be considered.
+- Initial screening and assessment of the proposed project concept against investment criteria.
+
+Local financial institutions that pass initial screening will be subject to due diligence and will need to provide information including:
+
+- Business Plan aligned to CCFF requirements
+- Eligible borrowers: The wholesale green loan eligible borrowers are local financial institutions (LFIs) in Cambodia, that meet the CCFF Lending Facility's Credit Policy requirements.
+- Target size of wholesale green loan: US$ 2 million to US$ 15 million
+- Target size of green loan from LFI to borrower: less than US$500k
+- Borrower concentration limit: No more than 15% of aggregate capital commitments
+- Type of funding to be provided to end-user: Concessional, long-term loans with focus on early stage and growth capital, including working capital.
+
+The local financial institutions will be asked to submit a project information memorandum, summarizing proposed project/programme for the CCFF financing to evaluate if the concept is aligned with the CCFF objectives and investment criteria.
+
+
+---
+*Chunk pages 36–36*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=949 (sys=94, user=855), max_out=1024, ctx=8192
+---
+
+# B B  
+## GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 29  
+
+- Environmental and Social Management Plan and/or Gender Policy as relevant  
+- Prospective green project pipeline  
+- Disbursement, monitoring, and reporting arrangements for green projects  
+- Supporting documents, such as impact calculation models or financial models as to be requested in RFP document  
+
+The due-diligence process shall determine:  
+- The alignment of the proposed LFI project to the CCFF four investment criteria  
+- Compliance with CCFF ESMS and Gender Policy  
+- Management track record, including compliance with National Bank of Cambodia regulatory and prudential requirements (including AML/CFT and corporate governance regulations)  
+
+Only projects that meet the eligibility criteria as demonstrated during due diligence will be considered for lending. In particular, the Credit Memo will be submitted for the Green Credit Committee’s further review to confirm the alignment to CCFF Investment and Eligibility Criteria as per CCFF Credit Policy. Once the lending decision is made, the selected borrowers are notified.  
+
+### Activity 2.1.2: Execute Loan Agreements with Local FIs  
+Upon selection of the borrowers (LFIs), the loan agreement is discussed and signed between ARDB and each LFI including the terms and conditions of the loan, such as disbursement pre-conditions, loan repayment schedule, legal clauses pertinent to ESMS compliance requirements and M&E Plan, all aligned with umbrella agreements. The standard loan agreement template will be further developed (Component 1) to ensure efficient contracting process.  
+
+### Activity 2.1.3: Provide Wholesale Green Lending  
+This activity includes but is not limited to: onboarding of the borrower and creating loan account, loan disbursement as per pre-agreed disbursement schedule in sub project loan agreements.  
+
+### Activity 2.1.4: Implement post-investment Monitoring, Reporting and Verification (MRV) of Green Lending Proceeds to Local FIs  
+This includes MRV of climate mitigation and adaptation impacts, as per project specific M&E plans agreed with each Local FI. The post investment MRV activity entails the monitoring of the green loan proceeds as per the credit risk management procedures to be developed under Component 1. Furthermore, each loan transaction to be funded from the CCFF Lending Facility will include project specific M&E Plan aligned to CCFF Programme Monitoring and Evaluation Framework.  
+
+The M&E Plan template is provided in Annex 21: Operations Manual. It is noteworthy that M&E Plan will also include applicable climate mitigation and adaptation impact outcome indicators aligned to the CCFF log-frame (core indicators) and any sub-indicators as to be determined on project-by-project basis.  
+
+## Output 2.2: Direct Green Lending implemented  
+
+### Activity 2.2.1: Select green lending opportunities based on assessment as per CCFF Lending Facility’s CCFF Credit Policy  
+The credit policy will be further developed under Component 1 but will be aligned to the Direct Green Loan Borrower Eligibility Assessment framework (source: Annex 21).  
+
+#### Eligible borrowers:  
+The Direct Green Loan eligible borrowers are private sector entities registered and operating in Cambodia, including but not limited to renewable energy developers, SME’s across agriculture value chains, garment sector entities, water suppliers, e-commerce fleet operators/aggregators, EV start-ups and others that meet CCFF Lending Facility’s Credit Policy requirements.  
+
+#### Target size of direct green loan:  
+US$ 0.5 million to US$ 10 million  
+
+#### Borrower concentration limit:  
+No more than US$ 10 million  
+
+#### Type of funding:  
+Early stage and growth capital, including working capital.  
+
+#### Type of Instrument:  
+Term loans and revolving credit facilities  
+
+---
+
+
+---
+*Chunk pages 37–37*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=861 (sys=94, user=767), max_out=1024, ctx=8192
+---
+
+# B B GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 30
+
+It should be noted that prior to application submission, the CCFF Working Group will be involved in the pipeline origination activities to develop pipeline of direct green lending projects aligned to the CCFF Investment and Eligibility Criteria. This process includes engagement with the private sector actors (potential borrowers), the LFIs and DFI/IFIs for project leads as well as public stakeholders (Ministry of Economy and Finance, and not profit organizations such as GGGI). Such a participatory approach also indirectly contributes to the local awareness raising on opportunities in green finance, and shall contribute to paradigm shift objectives of the theory of change.
+
+## The CCFF Direct Green Loan Borrower Eligibility Assessment Framework
+
+### Eligibility Criteria
+
+The CCFF Direct Green Loan eligible borrowers are private sector entities registered and operating in Cambodia that demonstrate:
+
+- Use of proceeds aligned to eligible activities described in Tables 6 and 7 of Annex 21
+- Alignment of the proposed project for funding with the CCFF Investment and Eligibility Criteria framework
+- Compliance to the CCFF prudential requirements (AML/CFT, ESMS, Gender Policy)
+- Business plan with path to financial viability because of CCFF financing
+
+### Selection Process
+
+Eligible borrowers shall be selected through the following process:
+
+- Initial screening and assessment of the proposed project concept against investment criteria.
+
+The entities that pass initial screening will be subject to due diligence and will need to provide information including:
+
+- Environmental and Social Management Plan and/or Gender Policy as relevant.
+- Monitoring and reporting arrangements (M&E Plan).
+- Supporting documents as may be required, such as financial model and/or impact calculations. The eligible borrower can be supported by the CCFF team to perform impact calculations.
+
+The due-diligence process shall determine:
+
+- The alignment of the proposed project to the CCFF four investment criteria
+- Compliance with CCFF ESMS and Gender Policy
+- Operational track record and management’s ability to deliver the project intended outcomes
+
+Only projects that meet the eligibility criteria as demonstrated during due diligence will be considered for lending. In particular, the Credit Memo will be submitted for the Green Credit Committee’s further review and lending decision as per CCFF Credit Policy. Once the lending decision is made, the selected borrowers are notified and reported to OC.
+
+## Activity 2.2.2: Execute Loan Agreements with Borrowers
+
+Upon selection of the borrower (direct green project borrowers), the loan agreement is discussed and signed between the ARDB and the borrower including the terms and conditions of the loan, such as disbursement preconditions, loan repayment schedule, legal clauses pertinent to ESMS compliance requirements and M&E Plan. The standard loan agreement templates will be further developed (Component 1) to ensure efficient contracting process.
+
+## Activity 2.2.3: Provide Direct Green Lending
+
+This activity includes but is not limited to on-boarding of the borrower and creating loan account, loan disbursement as per pre- agreed disbursement schedule in the Loan Agreement.
+
+The eligible borrowers will be asked to submit a project information memorandum, summarizing proposed project/programme for the CCFF financing to evaluate if the concept is aligned with the CCFF objectives and investment criteria.
+
+
+---
+*Chunk pages 38–38*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1084 (sys=94, user=990), max_out=1024, ctx=8192
+---
+
+# B B  
+## GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 31  
+
+• Activity 2.2.4. Implement post-investment MRV of Green Lending Proceeds to selected  
+borrowers for direct green loan. This includes MRV of climate mitigation and adaptation impact,  
+as per project specific M&E plans agreed with each eligible direct lending borrower. The post  
+investment monitoring entails the monitoring of the green loan proceeds as per the credit risk  
+management procedures to be developed under Component 1. Furthermore, each loan transaction  
+to be funded from CCFF Lending Facility will include project specific M&E Plan aligned to CCFF  
+Programme Monitoring and Evaluation Framework.  
+
+It is noteworthy that M&E Plan will also include applicable climate mitigation and adaptation impact outcome indicators aligned to the CCFF log-frame (core indicators) and any sub-indicators as to be determined on project-by-project basis. The M&E Plan template is provided in Annex 21: Operations Manual.  
+
+## Component 3: Technical Assistance Facility to Address Non-financial Barriers Hindering Uptake of Climate Projects in Cambodia  
+Executing Entity: MSC  
+
+It should be highlighted, that the CCFF governance structure includes the Technical Advisory Panel (TAP) represented by the public and private sector stakeholders, who will work closely with the Executing Entity of Component 3 to facilitate the required dialogue between public and private sector actors and ensure that Technical Assistance Activities funded under Component 3 meet targeted beneficiary needs. This consultative function of the TAP is another innovative design feature of the Programme, geared to contribute to theory of change of the Programme.  
+
+### Output 3.1 Strengthened Climate Finance Framework  
+• Activity 3.1.1: Share knowledge generated through the implementation of the CCFF programme with the public and private sector stakeholders: This activity will contribute to strengthening climate finance policy framework, through partnerships, awareness raising, institutional capacity building and knowledge sharing activities.  
+
+The indicative list of eligible interventions is provided in the TA eligibility criteria in Annex 21 Operations Manual.  
+
+It should be highlighted, that under Activity 3.1.1, the CCFF Working Group through the TAP will explore partnerships with existing donors and key industry stakeholders to enhance the enabling environment for climate finance (see also partnership model in TA eligibility criteria).  
+
+The CCFF Working Group envisions to engage in sector specific policy dialogue with the public sector, so to share lessons learned from its investments and contribute to an enabling environment. For example, the CCFF envisions engaging in dialogue with public and private sector to see how the National Energy Efficiency Policy (NEEP) implementation can be accelerated in Cambodia and intends to pilot business models (e.g., green factory accelerator concept) that addresses energy efficiency sector specific risks.  
+
+The CCFF is also likely to join energy policy dialogue with the public sector (Ministry of Mines and Energy, EDC), together with the existing donors (WB, KfW, AFD, USAID, JICA, DFAT and EU) already financing policy interventions in the sector. These are preliminary interventions that have been already identified during the CCFF design stage (KHR-RS-003), but once the CCFF commences its activities more needs are likely to be identified for further engagement with the public sector in policy dialogues.  
+
+Under the activity, the CCFF TAP shall collaborate with existing in-country donors to identify the leverage points to harmonize existing programme efforts & synergies, thus advancing transformation potential of the programmes towards a common goal. As an example, CCFF plans to coordinate with FAO in Cambodia to explore potential synergies between the GCF programmes (FP199). Synergies may be explored through knowledge sharing between CCFF and FAO, as well as between technical cooperation activities.  
+
+Furthermore, it shall partner with other donors to scale up transformational potential of climate finance. For the purposes of the CCFF, this shall include co-investments together with other donors at a level of the borrower to provide much needed climate finance at scale for high climate impact projects that fit CCFF investment eligibility criteria.  
+
+Note: Such partnerships are expected to be driven through the TAP and supported by the CCFF Working Group, hence the TA budget will fund the TAP costs & related knowledge sharing/dialogue initiation costs. The CCFF Working Group team members contributing to partnerships will be financed from normal business process.
+
+
+---
+*Chunk pages 39–39*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1027 (sys=94, user=933), max_out=1024, ctx=8192
+---
+
+# B B  
+## GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 32  
+
+Importantly, Activity 3.1.1 will focus on sharing lessons learned from the implementation of the CCFF Programme, including through knowledge sharing events, targeted awareness-raising of activities, and publishing relevant case studies. This activity includes close collaboration with public and private sector stakeholders relevant to facilitate paradigm shift towards climate finance in Cambodia. The activity will thus contribute to strengthening relevant institutional capacity, data and knowledge to scale up climate finance in Cambodia.  
+
+The direct beneficiaries of this activity are:  
+- The Royal Government of Cambodia  
+- CCFF borrowers and its industry counterparts  
+- Industry Associations, including the ABC  
+
+## Activity 3.1.2: Support Climate Finance Policy Frameworks for Cambodia  
+
+This activity includes funding of the advisory services to advance the climate finance policy environment in Cambodia, so to create an enabling environment to catalyse local financial sector engagement into climate finance.  
+
+Direct beneficiaries are relevant public and private sector stakeholders benefiting from advisory services and improved policy environment for climate finance. For the purposes of this funding proposal, the policy framework can include one of the following deliverables: policies, roadmaps, guidance, regulations, voluntary principles, templates, or tools relevant to climate finance. See the TA eligibility criteria in Annex 21 Operations Manual for indicative list of eligible interventions under this activity. The eligible interventions are organized as per policy development cycle, such as preparation (initiating, commitment) and implementation (developing and/or advancing).  
+
+The CCFF Working Group will collaborate with the Association of Banks in Cambodia (ABC) to advance the climate finance policy agenda, as this is the key industry body which has been leading the work on the Cambodian Sustainable Finance Initiative (CSFI), a cooperative partnership between the ABC, the National Bank of Cambodia (NBC), and the Ministry of Environment. Synergies with existing technical assistance activities implemented by the ABC’s CSFI will be sought.  
+
+The direct beneficiaries of this activity include:  
+- The National Bank of Cambodia (NBC)  
+- The Association of Banks in Cambodia (ABC)  
+- Members of the ABC (local financial institutions)  
+
+## Output 3.2 Capacity Building for Stakeholders across the Sustainable Ecosystem  
+
+### Activity 3.2.1: Project Preparation Technical Assistance  
+
+This activity will support eligible borrowers to access climate finance. In particular, the activity will fund feasibility studies for innovative technologies, investment readiness and business models, climate vulnerability studies and climate baseline assessment s to prepare investments for wholesale or direct funding under Component 2, including development of project specific MRV plans & ex-ante impact calculations. Given the E&S & gender capacity gaps at the level of potential borrowers, Activity 3.2.1 shall also provide technical assistance to potential borrowers for development of E&S and gender risk assessment relevant information (e.g., fit for purpose ESIA, ESAP and gender analysis, stakeholder engagement plan, etc.) to facilitate climate finance and meet CCFF robust investment requirements.  
+
+Direct beneficiaries are eligible borrowers benefiting from increased access to finance because of project preparation TA, while indirect beneficiaries are LFIs and/or the ARDB CCFF Working Group which benefit from improved investment decision making as a result of addressing data and knowledge gaps.  
+
+### Activity 3.2.2: Institutional Capacity Building of Borrowers  
+
+This activity will support selected borrower’s ( LFIs, private sector actors) post -investment by building their institutional capacity to manage high impact climate projects. This includes, but is not limited to, set-up of relevant governance structures (climate, E&S, gender), operational processes (ESMS, Gender Policy, Gender Action Plan, Gender Screening Criteria for CCFF wholesale borrowers, Green Lending, HR, Procurement) aligned to CCFF policies, development of climate MRV capacity through targeted trainings, tools and templates, and supporting external expertise to verify climate impact of projects financed by the CCFF loans. It shall also fund relevant technical expertise to support borrowers to leapfrog climate technologies and practices, including but not limited to climate resilient agriculture.  
+
+Direct beneficiaries are:  
+- The Royal Government of Cambodia  
+- CCFF borrowers and its industry counterparts  
+- Industry Associations, including the ABC  
+
+The direct beneficiaries of this activity include:  
+- The National Bank of Cambodia (NBC)  
+- The Association of Banks in Cambodia (ABC)  
+- Members of the ABC (local financial institutions)  
+
+Direct beneficiaries are eligible borrowers benefiting from increased access to finance because of project preparation TA, while indirect beneficiaries are LFIs and/or the ARDB CCFF Working Group which benefit from improved investment decision making as a result of addressing data and knowledge gaps.  
+
+Direct beneficiaries are:  
+- The Royal Government of Cambodia  
+- CCFF borrowers and its industry counterparts  
+- Industry Associations, including the ABC  
+
+The direct beneficiaries of this activity include:  
+- The National Bank of Cambodia (NBC)  
+- The Association of Banks in Cambodia (ABC)  
+- Members of the ABC
+
+
+---
+*Chunk pages 40–40*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=546 (sys=94, user=452), max_out=1024, ctx=8192
+---
+
+# B B GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 33
+
+## are eligible borrowers benefiting from increased capabilities to manage climate finance projects aligned to the CCFF investment eligibility criteria and the industry best practices (for MRV, E&S, Gender). This institutional capacity building is likely to strengthen the ability of the borrowers to attract follow-on investment for existing or future climate projects, thereby scaling up positive climate impact brought by projects implemented by borrowers.
+
+All activities to be funded from the CCFF TA Facility will be additional to what is already available on the market and will include the same sub-activities as outlined below (hereinafter: Technical Assistance Process):
+
+### Technical Assistance Process
+All TA activities under Component 3 will undergo the process as summarized below:
+
+- Identification of the Technical Assistance (TA) needs  
+- Planning in consultation with TAP on targeted TA interventions and beneficiaries  
+- Submission of the TA proposals for GFC Review  
+- TA Decision (Yes/No)  
+- Selection of the TA Providers to deliver projects as it may be required  
+- Execution of Legal Agreements (TA Agreements)  
+- Implementation (including disbursement and MRV)
+
+## B.4. Implementation arrangements (max. 1500 words, approximately 3 pages plus diagrams)
+This section is organized in three sub-sections: B4.1 CCFF Programme Flow of Funds and Legal Arrangements, B4.2 CCFF Programme Governance and Institutional Arrangements and B4.3 Track record of CCFF Accredited Entity and Executing Entities.
+
+### B4.1 Flow of Funds and Legal Arrangements
+Flow of Funds: The CCFF Programme consists of the CCFF Lending Facility and the CCFF TA Facility, hence, below diagrams and steps describe flow of funds per each facility:
+
+#### CCFF Lending Facility Flow of Funds:
+
+Figure 1: Flow of Funds
+
+
+---
+*Chunk pages 41–41*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=657 (sys=94, user=563), max_out=1024, ctx=8192
+---
+
+# B B 
+## GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 34
+
+### 36 The intention is for KDB, MEF and ARDB to enter into a tripartite agreement in order to establish the terms and conditions of the loan and outline the roles and responsibilities of all three parties.
+
+GCF and KDB will enter into an FAA in the form of a loan participation agreement (Participation Agreement) for the financing of Component 2 and KDB as AE will sign a CCFF Debt Facility Agreement with the MEF and the ARDB. Then, KDB, as lender, will channel the GCF funds to MEF based on the draw-down requirements in the FAA, to on-lend to the ARDB. The ARDB will open a new (ring-fenced) account at NBC to receive the KDB funding from MEF (for the avoidance of doubt, a separate account will be opened for each lender). Funds from the ring-fenced account will be withdrawn (subject to unanimous approval of the Green Credit Committee for eligible borrowers) to the operational account at ARDB and subsequently disbursed to the customer.
+
+### Figure 2: Detailed Flow of Funds (GCF Funds)
+
+The CCFF Lending Facility has a target capitalization of US$ 100 million. The GCF and KDB will contractually agree that GCF shall be granted a participation in up to US $50 million in concessional senior loans provided by KDB in two phases. Phase 1 is a US$ 15 million commitment based on co-financing from ARDB, and Phase 2 is the remaining US$ 35 million contingent upon committed matching co-financing. The CCFF envisions to mobilize the remaining US$ 35 million from co-financers within the first 24 months of programme implementation. The disbursements to ARDB are made within 30 days from the date the MEF receives the fund. The repayment to the investors (i.e., KDB and other co-financiers) are made based on pre- agreed repayment schedules.
+
+The CCFF Lending Facility is expected to disburse the US$ 100 million in funding over five years. The funds from the CCFF Lending Facility are allocated to selected Direct Green Lending and Wholesale Green Lending borrowers based on terms and conditions included in Project Loan Agreements for each approved green loan transaction.
+
+### Expected CCFF Lending Facility Drawdown Schedule:
+
+
+---
+*Chunk pages 42–42*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=612 (sys=94, user=518), max_out=1024, ctx=8192
+---
+
+# B B 
+## GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 35
+
+Loan proceeds (principal, interest) collected from borrowers are then remitted to the CCFF Lending Facility account and are repaid to investors based on pre- agreed repayment schedule. It should be noted that the implementation period of the CCFF Lending Facility is 20 years and the loan provided by KDB in which GCF is participating (such loan, the "GCF loan") is revolving in nature, therefore the principal and interest (net of investor interest and fees) collected from the borrowers may be reinvested under certain conditions to ensure the long-term catalytic impact of the CCFF Lending Facility in providing climate finance for high climate impact projects in Cambodia.
+
+Following the 5-year grace period, the GCF loan proceeds will be repaid in equal installments from years 6 – 20 (6.67% of initial principal), as shown in the chart below.
+
+Expected CCFF Lending Facility Lifespan:
+
+| Year | Funding (USD millions) |
+|------|------------------------|
+| 1    | -                      |
+| 2    | -                      |
+| 3    | -                      |
+| 4    | -                      |
+| 5    | -                      |
+| 6    | 93                     |
+| 7    | 87                     |
+| 8    | 80                     |
+| 9    | 73                     |
+| 10   | 67                     |
+| 11   | 60                     |
+| 12   | 53                     |
+| 13   | 47                     |
+| 14   | 40                     |
+| 15   | 33                     |
+| 16   | 27                     |
+| 17   | 20                     |
+| 18   | 13                     |
+| 19   | 7                      |
+| 20   | -                      |
+
+The chart shows the distribution of funding over time, with a gradual decrease in funding from year 6 onwards. The funding amounts are represented in millions of USD.
+
+Note: This is a simplified representation of the funding schedule; actual values may vary based on specific conditions and calculations.
+
+
+---
+*Chunk pages 43–43*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=788 (sys=94, user=694), max_out=1024, ctx=8192
+---
+
+# B B GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 36
+
+## The roles and responsibilities of each entity relevant to the GCF flow of funds for the CCFF Lending Facility are summarized below.
+
+### KDB
+
+KDB, in its role of GCF’s Accredited Entity, will oversee the CCFF Programme implementation and will ensure that relevant GCF policies and requirements are passed down at the level of the CCFF Working Group within ARDB and its borrowers. KDB will be a member of the CCFF Oversight Committee (OC), which will provide overall oversight of the CCFF Lending Facility.
+
+KDB is also an observer of the CCFF Green Credit Committee (GCC), which is responsible for approving CCFF green loans through unanimous vote. The GCC will be accountable to the ARDB and the OC. Through KDB’s representation on the OC and GCC, KDB will represent GCF’s rights, and monitor the Executing Entity’s compliance with the FAA and AMA obligations. KDB will provide overall oversight and quality control, while assessing achievement of the Programme’s targeted outcomes and results as per the CCFF Programme log-frame.
+
+### ARDB
+
+ARDB is a co-Executing Entity for Component 2, involved in origination, issuance and administration of the CCFF loan for high impact climate projects. The ARDB shall create a dedicated project management unit (CCFF Working Group) to implement activities under the CCFF Lending Facility. Therefore, for this funded activity, it shall act as an Executing Entity for Component 2.
+
+The ARDB Board will establish the CCFF OC as a sub-committee to provide overall oversight of the CCFF Lending Facility. The GCC will be established under the CCFF OC and will be accountable to the CCFF OC and ARDB Board. The GCC will be responsible for approving CCFF Lending Facility green loans by unanimous vote.
+
+The CCFF Working Group has dual reporting to the CCFF OC and the ARDB CEO. This double reporting line ensures robust governance of the CCFF Programme as per the local regulatory requirements and international best practices.
+
+### MSC
+
+MSC will act as a co-Executing Entity by performing as the Independent Investment Advisor for Component 2. MSC will dedicate senior managers to the ARDB CCFF Working Group to provide oversight and effectively manage the loan origination, assessment, and monitoring of the CCFF Programme. MSC will also appoint a representative to the GCC, who will be independent from the MSC Staff managing the ARDB CCFF Working Group. MSC has fiduciary duty and reports to the CCFF OC and the ARDB Board.
+
+### MEF
+
+MEF is a co-Executing Entity for Component 2 as the official representative of the Royal Government of Cambodia as the borrower of the loan funds. It is the responsibility of MEF to fulfil government fiduciary duties and financial management oversight of ARDB, and to ensure timely pass-through of funds to ARDB.
+
+## CCFF TA Facility Flow of Funds:
+
+
+---
+*Chunk pages 44–44*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=662 (sys=94, user=568), max_out=1024, ctx=8192
+---
+
+# B B GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 37
+
+- KDB as the AE commits US$ 5 million non-reimbursable funds to the CCFF TA Facility.
+- MSC to set up an account in its role of Executing Entity for Component 1 and Component 3, where KDB shall disburse funds to the CCFF TA Facility according to fund drawdown requests submitted by MSC.
+- MSC as an Executing Entity utilizes the funds to implement activities under Component 1 and Component 3 supported by the TA Facility as per pre-agreed eligibility criteria with KDB. It will identify capacity building, knowledge sharing and policy development needs in collaboration with the Technical Advisory Panel comprised of public and private sector stakeholders, including representatives of RGC. This will ensure that the needs of TA Beneficiaries are identified and addressed. Each TA intervention will be subject to the approval of the TA Facility Committee (see B4.2 for governance arrangements).
+- To execute some of the TA activities, MSC will engage with the TA Providers, independent experts, who will be selected based on competitive bid in line with the CCFF Procurement Policy. The payments to TA providers will be deliverables based.
+
+## Roles and Responsibilities are detailed below:
+
+### KDB
+KDB will appoint MSC as an Executing Entity for Components 1 and 3 through a TA Service Agreement, which shall be a Subsidiary Agreement. However, in its role of AE, KDB shall monitor and supervise the implementation of the CCFF TA Facility to ensure that the CCFF Programme outcomes are met. This will be achieved through KDB's representation (as non-voting member) on the TA Facility Committee. It will also identify any weaknesses during the implementation period and ensure corrective measures are taken, as may be required. KDB will also provide in-kind contribution through its experience to support ARDB's capacity building and climate strategy development for Component 1, Output 1.2 (specifically activities 1.2.2 and 1.2.3).
+
+### MSC
+MSC in its role of Executing Entity will implement the activities targeted under Component 1 and Component 3 of this Funded Activity. As an Executing Entity it will undertake project management, monitoring and reporting roles, as well as coordinate with KDB and be responsible for all relevant communications.
+
+## B4.2 CCFF Programme Governance and Institutional Arrangements
+
+
+---
+*Chunk pages 45–45*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1088 (sys=94, user=994), max_out=1024, ctx=8192
+---
+
+# B B  
+## GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 38  
+
+The CCFF governance structure has been designed to ensure the robust oversight and management of the program at three layers as follows:  
+
+### Oversight Committee  
+The CCFF Lending Facility will be governed by the Oversight Committee (OC), which is established as an ARDB Board sub-committee to oversee the programme activities on behalf of the investors and the Royal Government of Cambodia to ensure that CCFF program objectives, outcomes and impact are achieved. The OC shall provide strategic oversight to ensure the CCFF Programme intended outcomes are achieved. To foster independence and ensure country ownership, the OC will involve representatives from the KDB (as the AE), MEF, ARDB, and potentially other co-financiers of the CCFF Lending Facility.  
+
+The OC has the authority to approve and modify the plans and performance submitted by sub-committees every year, and if necessary, has the authority to cancel the decision of a sub-committee or change its members.  
+
+### Oversight Committee Meetings & Accountability  
+The OC convenes minimum four times per year to review the quarterly results, the extraordinary OC meetings are called by the Green Credit Committee upon need.  
+
+### Oversight Committee Diversity  
+The OC and the CCFF sub-committees will be staffed in a way to ensure the gender equity, as well as ensure that directors collectively possess relevant skills, competences and attributes to exercise oversight on investors behalf. This includes climate and ESG expertise, as well as relevant banking background and familiarity with the targeted sectors and geographic area.  
+
+The CCFF Oversight Committee will have a dedicated sub-committee responsible for overseeing the activities financed under the CCFF Lending Facility are aligned to its targeted results (impact, outcome, output) as follows:  
+
+#### CCFF Lending Facility Sub-Committee  
+CCFF Lending Facility Green Credit Committee (GCC): comprised of appointed representatives from MSC, ARDB and KDB (as observer from OC, non-voting member). The GCC ensures alignment to CCFF Programme strategy and targeted outcomes of Component 2 as per the CCFF Programme logical framework. The GCC will be established under the CCFF OC for the purposes of credit decisioning activities. The GCC is accountable to the ARDB and OC.  
+
+In particular, the GCC operates as per CCFF Credit Policy and ensures that the credit decision-making is based on the CCFF investment eligibility criteria (Annex 21) by holding decision-making power to approve green loan transactions. The voting members of the GCC will have a complementary skillset, with MSC bringing the required climate finance, risk management and technical expertise to evaluate the climate impact potential of the projects. ARDB brings experience in reviewing credit applications in the rural and agricultural sectors across Cambodia and can ensure proposed loans are aligned to RGC strategic climate change policies and priorities. A unanimous vote from the ARDB and MSC reps is required for approval to ensure alignment to the CCFF climate impact criteria.  
+
+MSC will be the appointed climate expert on the GCC to ensure that only high impact climate projects are approved (given loan approvals require unanimous vote by MSC and ARDB, MSC effectively has veto power for projects with limited climate impact). KDB, as a non-voting member on the GCC will have a right to receive reports on decisions of the committee.  
+
+#### GCC Meetings & Accountability  
+The GCC meets on a need basis, as it is responsible for approval of the green loan transactions (through unanimous vote) as well as approval of any major change decisions concerning approved green loans. It is accountable to the CCFF Oversight Committee and ARDB Board and submits quarterly and annual reports.  
+
+#### CCFF TA Facility Committee (GFC)  
+ comprised of representatives from MSC and KDB (provides oversight as AE, non-voting member). The GFC will approve TA interventions for Components 1 and 3 submitted by the MSC project management unit. The GFC will be established by MSC.  
+
+The GFC will be advised by the Technical Advisory Panel (TAP), comprised of representatives of the RGC (potentially NDA), private sector and civil society. The TAP will advise the GFC on TA Activities, including targeted policy and capacity building interventions. It will also engage with public and private sector entities on knowledge sharing and awareness raising activities. The TAP will have an advisory, non-voting, role.
+
+
+---
+*Chunk pages 46–46*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=329 (sys=94, user=235), max_out=1024, ctx=8192
+---
+
+# [Page 1]
+
+## B B 
+
+### GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 39 
+
+#### GFC Meetings & Accountability
+
+The GFC meets on a need basis, as it is responsible for approval of the TA interventions as well as approval of any changes concerning planned TA services. KDB, as an observer will have a right to receive quarterly and annual reports on decisions of the committee.
+
+#### Institutional Arrangements
+
+The institutional arrangements provide information on the organizational structure of the CCFF Programme.
+
+The CCFF Programme has two project management units as follows:
+
+1) CCFF Lending Facility is managed by the dedicated unit at ARDB, the CCFF Working Group, which will be established after the GCF FAA signing. The organizational structure of the CCFF Working Group is provided below.
+
+#### CCFF Lending Facility Organizational Chart (Indicative)
+
+Figure 3: ARDB Organizational Chart
+
+
+---
+*Chunk pages 47–47*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=645 (sys=94, user=551), max_out=1024, ctx=8192
+---
+
+# B B  
+## GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 40  
+
+### Figure 4: CCFF Working Group Organizational Chart  
+
+The core responsibility of the ARDB CCFF Working Group is the project management of the CCFF Lending Facility, including but not limited to finance and administrative management, credit risk management, relationship management, business development and environmental and social risk management. The CCFF Working Group will be staffed by ARDB employees (existing full-time employees from ARDB’s core units, seconded to the CCFF Working Group) and Senior Managers from MSC. MSC, as Independent Investment Advisor (IIA), will effectively manage the operations of the CCFF Working Group as demonstrated in the organizational chart (blue). This is to acknowledge ARDB’s limited institutional capacity and track record in climate finance and the need to build local capacity through a “hands on” collaborative approach.  
+
+The operational synergies between those entities are ensured through the Investment Management Agreement (IMA), that shall include defined roles and responsibilities as well as investment guidelines.  
+
+The expectation is that MSC will support ARDB through hands-on technical capacity building to implement the CCFF Lending Facility, ensuring the highest international standards of governance and risk management are met. The intention is for the ARDB to take over complete management of the CCFF Working Group over time, as its capacity is built and experience gained, without the need for ongoing or continued MSC’s support.  
+
+ARDB’s capacity will be reviewed on a periodic basis and MSC will be able to opt out of the Programme only in case ARDB is considered sufficiently capable of operating CCFF Working Group alone and KDB approves by written consent. The timeline for this transition could potentially align with ARDB becoming a GCF Accredited Entity.  
+
+To fulfil its project management obligations, CCFF Working Group will have 5 core teams lead by CCF F Working Group Co-Heads, as well as collaborate with the existing ARDB business-as-usual teams and external consultants as further explained below:  
+
+### CCFF Working Group team composition and core responsibilities (snapshot)  
+- Operations: the team is comprised of three positions, managing CCFF operations functions. The team is led by the Operations Manager appointed by MSC in its capacity of IIA and supported by the operations analyst and operations associate seconded by ARDB.
+
+
+---
+*Chunk pages 48–48*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=896 (sys=94, user=802), max_out=1024, ctx=8192
+---
+
+# B B GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 41
+
+- **Risk**: the team is comprised of three positions, managing credit risk across the CCFF Lending Facility portfolio, including financial institution and direct lending borrowers. The team is led by the Credit Risk Manager appointed by MSC and supported by one credit analyst seconded by ARDB and two climate risk personnel whose expertise will be built through collaborating with the external consultants deployed.
+
+- **Relationship Management**: the team is comprised of four positions, managing CCFF Lending Facility borrower relationships, including lending applications and ongoing loan monitoring. The team is led by the Relationship Manager appointed by MSC in its capacity of IIA and supported by three client service associates seconded by the ARDB.
+
+- **Business Development**: the team is comprised of four positions, managing CCFF Lending Facility pipeline development and new business opportunities and partnerships. The team is led by the Business Development Manager appointed by MSC and supported by three business development associates seconded by ARDB.
+
+- **Environmental and Social Governance**: the team is comprised of four positions, overseeing the CCFF Lending Facility’s compliance to the CCFF ESMS, Gender Policy and M&E Framework. The team includes functions of environmental and social management, monitoring of climate impact, gender mainstreaming in climate finance and portfolio reporting. The team is led by the E&S Manager appointed by MSC (with climate governance track record) and supported by three team members (Gender Specialist, M&E Specialist, Portfolio Reporting Analyst) seconded by ARDB.
+
+Such organizational arrangement ensures that “up-skilling” of the 15 ARDB seconded team members to the CCFF Working Group by 5 Senior Managers appointed by MSC in its role of IIA. This is achieved through on the job training, since ARDB seconded team will be involved in day-to-day project management of the CCFF Lending Facility. Furthermore, the CCFF Working Group will have access to the external experts with complimentary technical skills in environmental and social due-diligence, gender assessment, carbon accounting and sector specific expertise. This will ensure that required technical expertise is in place to structure, implement and monitor the high climate impact projects aligned to the CCFF Programme theory of change, and build capacity of the ARDB team.
+
+Furthermore, ARDB is a licensed commercial bank operating under regulatory requirements of the National Bank of Cambodia (NBC). Therefore, the CCFF Working Group will be supported by ARDB core functions such as risk management, internal audit, legal and front office to ensure compliance to regulatory requirements and ARDB business practices as demonstrated below:
+
+## Functions performed by existing ARDB teams
+
+- **Compliance/AML**: including review of loan applications submitted to the CCFF Working Group for compliance with KYC and AML/CFT requirements etc.
+
+- **Loan operations**: processing and maintaining loans approved by the CCFF Working Group in compliance with ARDB policies and NBC regulations.
+
+- **Legal**: managing loan workouts and legal recourse, as required.
+
+- **IT/Systems**: providing IT infrastructure and support for CCFF Working Group and lending customers, including online channels.
+
+- **Internal Audit**: ensuring compliance of CCFF Working Group activities with ARDB policies and procedures.
+
+This functional collaboration between the CCFF Working Group and ARDB core teams, will result in knowledge transfer and awareness building on green finance across ARDB as an institution, supporting ARDB’s development and transition into Cambodia’s National Climate Bank.
+
+
+---
+*Chunk pages 49–49*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=580 (sys=94, user=486), max_out=1024, ctx=8192
+---
+
+# B B 
+## GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 42 
+
+### 2) CCFF TA Facility is managed by a dedicated TA Project Management Unit (PMU) set up within MSC, which will be established after the GCF FAA effectiveness. The organizational structure of the PMU is provided below.
+
+#### CCFF TA Facility Organizational Chart:
+
+The core responsibility of the TA PMU will be to perform the following functions:
+- Prepare annual work plan and budget of planned TA Activities in line with the CCFF Programme target results
+- Track and monitor payments as well as manage the procurement of eligible TA providers  
+- Ensure the successful delivery of Components 1 and 3 and respective outputs and activities through the coordination of all stakeholders and partners involved in the CCFF TA Facility delivery  
+- Overall monitoring and evaluation of the CCFF TA Facility  
+
+To fulfil its project management obligations, the TA PMU will have three core personnel, and will be led by the TA Manager as further explained below:
+
+#### TA PMU positions and core responsibilities (snapshot):
+- **TA Manager:** will be responsible for overall coordination of TA Activities and preparing the annual work plan, including screening for E&S risks and incorporating gender equity in the activities.  
+ 
+- **TA Specialist:** will be responsible for monitoring the implementation of TA services.  
+
+- **Admin Support:** will support the annual budget preparation and payments to TA service providers.  
+
+Such organizational arrangement ensures efficiency in managing the CCFF TA Facility and allows for close collaboration with the ARDB CCFF Working Group to ensure TA Activities directly support the management and disbursement of CCFF green loans approved under the CCFF Lending Facility, and the effective development and knowledge building of ARDB and green loan borrowers.
+
+### B4.3: Track record of CCFF Accredited Entity and Executing Entities
+
+#### Korea Development Bank (KDB)
+
+Equipped with a stable credit rating based on strong macroeconomic fundamentals of Korea with having successfully completed financial arrangements across countries; e.g., top-tier PF arranger in Asia Pacific;
+
+
+---
+*Chunk pages 50–50*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1004 (sys=94, user=910), max_out=1024, ctx=8192
+---
+
+# B B  
+## GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 43  
+
+### 37 Loan provided by KDB in which GCF is participating (such loan, the “GCF loan”).  
+Executing Entity – CCFF  
+(Component 1)  
+
+GCF Proceeds  
+Channelling;  
+
+Follow-up management of  
+GCF Loan37 Proceeds  
+under Component 2  
+Monitoring, Supervision and  
+Evaluation of all the  
+executing entities’  
+implementation under all  
+Components  
+
+CCFF Oversight Committee  
+Member  
+
+A proven track record of deploying climate finance while climate sectors  
+including renewable energy market or finances on scale and tackling  
+challenging circumstances of the then least developed market in Korea;  
+Actively financing renewable energy projects by leveraging its leadership  
+position in the domestic PF market - advised and/or arranged a total of 90  
+renewable energy projects (total installed capacity of 23 GW) as of Feb.  
+2022.  
+
+On-lending is one of many business areas of the bank. As a policy financing  
+institution, KDB has possessed a proven track record of two- step lending  
+experiences under a structured internal system with intermediaries.  
+Willing to transfer decades–long accumulated experience and know -how on  
+taking on calculated risks and strategically creating financial values in new  
+business areas with a purpose of the replication and scale up in Cambodia  
+Well-versed in a standard on- lending scheme with supporting multiple sub-  
+projects and sub-borrowers in collaboration with local FIs in Southeast Asia.  
+
+### Ministry of Economy & Finance (MEF)  
+Executing Entity – CCFF  
+Lending Facility  
+(Component 2)  
+CCFF Oversight Committee  
+member  
+
+The Ministry of Economy and Finance (MEF) was established by law in 1996.  
+Its organization and functioning is defined by a sub-decree of the Royal  
+Government of Cambodia. The role of the MEF is to implement and  
+contribute to the government’s economic and financial policy. Included in the  
+main responsibilities of the ministry are the establishment of the country’s  
+uniform financial system, preparation and implementation of the national  
+budget, distribution and redistribution of the total national revenues,  
+inspection of the public’s finances, and monitoring of the government’s  
+economic and financial policies. To implement these tasks, the ministry is  
+organized into various general departments.  
+
+MEF has significant experience in implementing donor -funded programs ,  
+including on-lending concessional funding to ARDB for development partners  
+such as World Bank, AFD, IFAD, ADB.  
+
+### Agricultural & Rural Development Bank (ARDB)  
+Executing Entity – CCFF  
+(Component 1, 2)  
+CCFF Oversight Committee  
+member  
+
+CCFF Lending Facility  
+Green Credit Committee  
+Member  
+
+ARDB, a 100% government -owned policy bank, was established in 1998 to  
+support the development of SMEs in Cambodia’s rur al and agricultural  
+sectors. ARDB was originally mandated as a specialized bank in agriculture,  
+and in February 2020 received its commercial banking license at the direction  
+of the RGC. ARDB is a public enterprise functioning in the form of a state-  
+owned commercial bank and is fully independent in leading and governing  
+the banks activities. ARDB is under the technical supervision of the Ministry  
+of Economy and Finance and supervised by the National Bank of Cambodia.  
+
+ARDB has an established organizational structure, robust fiduciary standards  
+regulated by the NBC and regional presence across Cambodia, enabling  
+efficient set up and go to market strategy for the CCFF Programme.  
+
+The key benefit of collaborating with ARDB is as follows: (1) As an existing  
+national policy bank with a development mandate, ARDB is a well matched,  
+centralized partner to develop and channel climate finance in the Cambodian  
+market, (2) The CCFF Lending Facility can leverage ARDB’s commercial  
+banking license to offer a full suite of banking products to customers, resulting  
+in a more inclusive, holistic value proposition, (3) As a Government -owned  
+entity, ARDB is unlikely to stifle competition between priva te sector financial  
+
+--- END EXTRACTED TEXT ---
+
+
+---
+*Chunk pages 51–51*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=847 (sys=94, user=753), max_out=1024, ctx=8192
+---
+
+# B B GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 44
+
+Institutions in channelling climate finance, delivering greater competition and better financing outcomes for green projects.
+
+- Access to ARDB agricultural and rural sector project pipeline
+- Extensive subject matter knowledge and sector contacts
+
+Importantly, ARDB is committed to develop its capacity and improve governance to take over the role of Cambodia's leading bank with climate finance mandate—which ensures sustainability of the CCFF Programme. The CCFF Programme will support ARDB in the GCF accreditation process, enabling ARDB's transition to a fully-fledged national climate bank with direct access to international climate finance for Cambodia.
+
+ARDB has high-quality fiduciary standards with regards to risk management (including KYC, AML/CFT procedures) as demonstrated by the capacity assessment performed by the Accredited Entity.
+
+## Mekong Strategic Capital (MSC)
+
+Executing Entity – CCFF Lending Facility  
+(Component 2)  
+Executing Entity – CCFF TA Facility (Components 1 & 3)  
+
+MSC is the leading investment management and advisory firm operating across the Mekong Region, with country presence in Cambodia, Thailand & Vietnam. MSC team brings 100+ years of combined financial services experience with a strong understanding of local context in Cambodia. It has on the ground presence to source local deals with extensive networks for facilitating due diligence, completion and regulatory compliance and an ability to leverage its banking and climate expertise to originate high impact, transformative green projects in Cambodia.
+
+MSC’s extensive financial sector experience results in a holistic approach to climate finance: driving change at the local level, supporting sustainable companies, and catalysing investment into green projects. Below are highlights from MSC track record:
+
+- Diversified banking experience. MSC brings extensive banking experience in Cambodia, including appraising and investing into transactions, with deep knowledge of debt structuring and perfecting security.
+- Sustainable investment management. Demonstrated experience appraising and investing into sustainable growth companies and supporting them to scale.
+  - Smart Axiata Digital Innovation Fund (SADIF) is a venture capital fund managed by MSC to invest in Cambodian-based, digital start-ups and aims to spur the digital ecosystem in the country.
+- Sustainable investment advisory. MSC is the contracted implementing partner for USAID Green Invest Asia and is responsible for mobilizing and arranging US$ 400 million of financing into sustainable agricultural and forestry projects across SE Asia. Also, MSC is the implementing partner for USAID Morodok Baitang, a Cambodia-focused project that aims to support strategic partnerships between rural communities, the private sector and development partners to grow revenue and employment opportunities in conservation-friendly, climate-smart and socially equitable enterprises across Cambodia.
+- Finance sector development. MSC has a demonstrated track record of collaborating with public and private sector stakeholders to catalyse the transition to a sustainable financial system in Cambodia. Specifically, MSC has experience implementing E&S risk management standards within financial institutions across the region and individual transactions, including IFC performance standards.
+
+
+---
+*Chunk pages 52–52*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1133 (sys=94, user=1039), max_out=1024, ctx=8192
+---
+
+# B B  
+## GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 45  
+
+### 38 Loan provided by KDB in which GCF is participating (such loan, the “GCF loan”).  
+### 39 Loan provided by KDB in which GCF is participating (such loan, the “GCF loan”).  
+
+• GCF Delivery Partner. MSC has positive track record with the Green Climate Fund, as we are an approved delivery partner, and implemented the GCF Readiness and Prep aratory Support Programme: “Design of a Cambodian Institution for Green Financing” (KHM-RS-003).  
+
+## B.5. Justification for GCF funding request (max. 1000 words, approximately 2 pages)  
+The CCFF Programme introduces an innovative climate finance facility, to unlock much needed institutional, commercial, and private sector investments for high climate impact projects that contribute to Cambodia’s NDC implementation. Participation by the GCF in the loan and the GCF grant investment in the Programme are critical to:  
+
+1. Bring the required scale to the Cambodian Climate Financing Facility to contribute to NDC implementation. Cambodia has received both grants and loans from development partners and donor countries to design and implement climate change projects, yet these efforts were not able to reach climate impact at scale due to scattered efforts and fluctuations in funding. Therefore, the CCFF capitalizes on lessons learned and is designed as US$ 109 million national climate finance programme with an investment horizon of 20 years. The GCF concessional loan of US$ 5 0 million will bring the required scale of US$ 100 million to the CCFF Lending Facility, which is not possible without GCF’s catalytic investment. The US$ 5 million of non-reimbursable grant to the CCFF TA Facility will contribute to the enhanced enabling environment conducive to climate finance as a result of: developed climate policy frameworks, enhanced institutional capacity of local financial institutions and private sector actors as well as relevant public stakeholders to structure, manage and/or invest in climate finance projects.  
+
+2. Leverage co-financiers at the facility level. ARDB has committed to co-finance US$15 million alongside GCF to establish the CCFF in Phase 1 as described in B4. KDB and MSC have been in talks with various other co-financiers, however, these discussions have not yet materialized in commitments. The institutional investors are hesitant to invest until the facility is established and anchored by GCF. However, the establishment of the facility requires significant resources and capacity which is currently missing in Cambodia. The proposed CCFF Lending Facility structure is anticipated to de-risk targeted co-financiers at the level of the CCFF Lending Facility and mobilize additional US$ 35 million from investors. Furthermore, the portion of the GCF catalytic grant shall be utilized to establish the facility as per best practices of climate finance facility models proven internationally (e.g., green bank), hence leveraging co-financiers who have been hesitant to commit without proper legal and operational arrangements in place. Consultations with the potential co-financiers in the CCFF pipeline revealed that the GCF loan38 is expected to leverage at minimum 1:1 co-financing at the CCFF Lending Facility level. It should be highlighted that the CCFF is the first, national climate finance facility targeting investments in high climate impact projects that contribute to low-carbon and climate resilient, sustainable pathways. Therefore, the investment by GCF is expected to create market confidence in the investment thesis.  
+
+3. Unlock institutional, commercial, and private sector capital. The GCF concessional loan and grant instruments enables catalytic design of the Programme, addressing financing and non-financial barriers hindering the uptake of climate finance (see theory of change, section B2 for details). The consultations with institutional, commercial and private sector investors in Cambodia revealed that GCF long-term blended finance is perceived to improve the risk-return profile of the projects financed by it and potentially unlock US$ 347 million (Please see Annex 3) investment in Cambodia’s NDC priority sectors. Each dollar invested by the CCFF Lending Facility is expected to mobilize additional private sector capital at a project-level, which is where significant leverage will occur.  
+
+### Concessionality of GCF Loan 39 Investment. Under the proposed investment structure, the GCF concessionality will directly benefit the eligible green borrowers by offering long-term and affordable funding to finance high climate impact projects. In particular, the GCF concessional funding shall enable:
+
+
+---
+*Chunk pages 53–53*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1078 (sys=94, user=984), max_out=1024, ctx=8192
+---
+
+# B.6. Exit strategy (max. 500 words, approximately 1 page)
+
+## Sustainability: The proposed CCFF Programme component structure is designed with sustainability in mind, as follows:
+
+### Component 1 – Establishment of the CCFF
+
+The long-term sustainability of this domestic climate finance facility is ensured through building institutional capacity of ARDB to design, issue, and administer climate loans under CCFF. This is achieved through the establishment of a dedicated climate finance unit at ARDB (CCFF Working Group) and appointing an Independent Investor Advisor (MSC) with climate finance track record, to develop local climate finance capacity within ARDB. Throughout the term of the project, ARDB representatives will work alongside MSC, enabling climate finance knowledge transfer and capability uplift. The collaboration will be ensured through functional levels, as well as at governance levels, with ARDB represented on the Green Credit Committee and the Oversight Committee of the CCFF. Furthermore, KDB will also work alongside ARDB to support the local national entity in capacity building and long-term strategy development in order to facilitate ARDB obtaining GCF accreditation and in long-term, enabling it to channel climate funding direct from GCF and other international climate lenders. By becoming a GCF Accredited Entity, ARDB will be able to raise additional climate funding from GCF to further grow climate financing in Cambodia, and it will signal to other international climate finance funders ARDB’s readiness and attract further international climate finance. The expected results of these interventions are that ARDB will become the national green financing institution, enabled to play a leading role in scaling up Cambodia’s climate finance ambitions and ecosystem. The ultimate ambition is for ARDB to assume complete management of the CCFF Working Group without support from MSC before then end of the implementation period.
+
+### Component 2 – Climate Financing for High Climate Impact Mitigation and Adaptation Projects
+
+The green lending offered through the CCFF Programme is expected to result in increased green
+
+[Page 46]
+
+
+---
+*Chunk pages 54–54*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1067 (sys=94, user=973), max_out=1024, ctx=8192
+---
+
+# B B  
+## GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 47  
+
+40 Loan provided by KDB in which GCF is participating (such loan, the “GCF loan”).  
+lending capacity and appetite for green projects in Cambodia. Post CCFF investment, the borrowers  
+(wholesale and direct green loan borrowers) shall be required to report to the CCFF on climate impact,  
+including through establishing a project specific M&E plan. Over time, this on-going reporting, coupled  
+with borrower specific capacity building activities supported by technical assistance (Component 3),  
+shall result in the increased capacity of the borrower to manage climate projects, including impact  
+reporting, and channel additional climate funding in Cambodia. Importantly, the CCFF Programme is  
+designed with a specific mandate to enable and crowd in the local financial sector by incentivizing local  
+banks to change their credit risk appetite and grow their lending to green projects in Cambodia, thereby  
+creating a systemic shift towards climate financing. Furthermore, the activities financed by the CCFF  
+are likely to bring a positive demonstration effect to catalyse private sector engagement in climate  
+action, as one of the CCFF’s investment criteria is commercial sustainability. Hence, each successful  
+project implemented by the CCFF shall demonstrate to the risk averse and opportunistic private sector  
+entities, that high climate impact projects can be commercially sustainable and feasible. Thereby,  
+overtime contributing to changed risk perception and demonstrating opportunities in climate projects.  
+
+### Component 3 – Technical assistance to address non-financial barriers hindering uptake of  
+climate projects in Cambodia. The design of Component 3 is geared towards enabling conditions to  
+scale up climate finance by fostering climate finance policy innovation, building institutional climate  
+capacity of borrowers and facilitating positive demonstration effect by sharing lessons learned by LFIs  
+and private sector actors funded by the CCFF. The Component also contributes to addressing critical  
+climate data gaps, hindering climate-useful business decision making in Cambodia.  
+
+Replicability: The successful rollout of the Cambodian Climate Finance Facility would serve as a best practice  
+for other developing countries in Southeast Asia facing similar challenges and constraints in uniting public,  
+private and international efforts for mobilizing funding for its NDC implementation. Locally, the successful  
+collaboration of CCFF with LFIs, shall bring an explicit focus on the need for more climate finance to create the  
+critical mass of funding volumes to achieve positive climate and sustainability impacts. On a sub-project level,  
+the CCFF funding will contribute to leapfrogging innovative business models and climate technologies in  
+Cambodia, which is expected to have a positive development effect and contributing to replication within the  
+Country’s private sector as well as regionally.  
+
+### GCF Exit Strategy: GCF’s participation in the GCF loan  
+40 will be repaid with proceeds received from CCFF  
+Programme borrowers as per the financial model (Annex 3) and Term Sheet (Annex 14). The exit pathway is  
+straightforward as the key instrument of the CCFF is loans, tied to specific repayment schedules which will be  
+monitored on a monthly basis by the CCFF team. Over the 20-year life of the CCFF, it is assumed capital will  
+be recycled and re-invested.  
+
+Through ARDB capability and capacity build under Component 1 , ARDB is expected to assume independent  
+ownership and responsibility for the CCFF without support from the Programme or the IIA (i.e., MSC), enabling  
+ARDB to continue climate financing activities in Cambodia, which will potentially align to the timeline of ARDB  
+receiving GCF accreditation. Given the CCFF Working Group is established within the ARDB Green Finance  
+Department, the CCFF will become fully integrated into ARDB over time through their Green Finance  
+Department, as ARDB continues to grow its green loan portfolio through additional funding from international  
+climate finance providers.  
+
+Additionally, ARDB will be encouraged to be a national climate bank by KDB, under Component 1. In close  
+coordination with ARDB, KDB will assess ARDB's current states and develop strategies that reflect the findings  
+through the Programme implementation. Based on these strategies, KDB will share its experiences and  
+knowledge that will allow ARDB to expand its business and become a competent green finance institution  
+based on particular program of KDB, which are ‘KDB Capacity Building Program’ and ‘KDB Strategy  
+Development Program’. Please see Annex 24 for details.
+
+
+---
+*Chunk pages 55–55*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=387 (sys=94, user=293), max_out=1024, ctx=8192
+---
+
+# B6.1: KDB Climate & Development Finance Cooperation Plan
+
+The CCFF Programme will enable ARDB to expand its mandate beyond agri cultural lending through support and knowledge building from the Independent Investment Advisor, MSC. The development of a green lending framework (e.g., Operations Manual, Annex 21) and CCFF Credit Policy, implemented by the CCFF Working Group enables ARDB to lend to key NDC priority sectors and ensures clear use of funds for green lending across both mitigation and adaptation activities, ensuring the long-term sustainability of green lending practices by ARDB. Additionally, the green lending framework will be made available to the entire financial sector ecosystem and promoted through the Cambodian Sustainable Finance Initiative. By clearly demonstrating what constitutes a green loan and providing wholesale green l ending to LFIs t hrough Component 2, LFIs will be incentivized to actively seek green lending opportunities. The CCFF provides an important demonstration effect that green lending creates positive business outcomes for LFIs, ensuring the long-term sustainability of green lending practices even after the Programme's implementation period. [Page 1]
+
+
+---
+*Chunk pages 56–56*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=646 (sys=94, user=552), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 49
+
+## FINANCING INFORMATION
+
+### C.1. Total financing
+
+#### (a) Requested GCF funding
+
+| Component | Amount | Currency | Tenor | Grace period | Pricing |
+|-----------|--------|----------|-------|--------------|---------|
+| (i) Senior loans | 50 million | USD ($) | 20 years | 5 years | As per Term Sheet |
+| (ii) Subordinated loans | - | - | - | - | - |
+| (iii) Equity | - | - | - | - | - |
+| (iv) Guarantees | - | - | - | - | - |
+| (v) Reimbursable grants | - | - | - | - | - |
+| (vi) Grants | 4.96 million | USD ($) | - | - | - |
+| (vii) Results-based payments | - | - | - | - | - |
+
+Total amount: 54.96 million USD ($)
+
+#### (b) Co-financing information
+
+| Name of institution | Financial instrument | Amount | Currency | Tenor & grace | Pricing | Seniority |
+|---------------------|----------------------|--------|----------|---------------|---------|-----------|
+| ARDB | Senior Loans | 15 million USD ($) | 20 years | 5 years | TBD | pari passu |
+| KDB | In kind | 1.0 million USD ($) | N/A | N/A | N/A | N/A |
+| ARDB | In kind | 3.0 million USD ($) | N/A | N/A | N/A | TBD |
+| TDB | Senior Loans | 35 million USD ($) | 20 years | 5 years | TBD | pari passu |
+
+Total amount: 54.00 million USD ($)
+
+#### (c) Total financing
+
+(c) = (a)+(b)  
+Amount: 108.96 million USD ($)  
+
+#### (d) Other financing arrangements and contributions
+
+(max. 250 words, approximately 0.5 page)
+
+The estimated mobilized financing during the life of the CCFF is $347 million. The average share of CCFF funding is 50% for green investments and is assumed constant throughout the 20-year life, with CCFF principal repayments revolved into new green lending. The resulting leverage ratio for GCF capital is 4x over the life of the CCFF.
+
+### C.2. Financing by component
+
+Please provide an estimate of the total cost per component and output as outlined in section B.3. above and disaggregate by source of financing. More than one co-financing institution can fund a single component or output. Provide the summarised cost estimates in the table below and the detailed budget plan as annex 4.
+
+41 Assumes all in pricing (i.e., interest rate plus annual service fee)
+
+
+---
+*Chunk pages 57–57*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=773 (sys=94, user=679), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 50
+
+## Component Output Indicative cost
+| Name of Institutions | Establishment of the CCFF | Institutional Preparedness for the Programme |
+|----------------------|---------------------------|----------------------------------------------|
+| ARDB                 | 3.60                      | 2.60                                         |
+| KDB                  | 1.24                      | 0.24                                         |
+
+## Financial Instrument
+| Amount million USD ($) | Financial Instrument | Amount million USD ($) | Financial Instrument |
+|-----------------------|----------------------|------------------------|----------------------|
+| 1.00                  | In-Kind              | 1.00                   | In-Kind              |
+
+## Climate Financing for High Climate Impact Mitigation and Adaptation Projects
+Wholesale Green Lending implemented
+
+| Amount million USD ($) | Financial Instrument | Amount million USD ($) | Financial Instrument |
+|-----------------------|----------------------|------------------------|----------------------|
+| 20.00                 | Senior loans         | 10.00                  | Senior loans         |
+
+## Direct Green Lending implemented
+| Amount million USD ($) | Financial Instrument | Amount million USD ($) | Financial Instrument |
+|-----------------------|----------------------|------------------------|----------------------|
+| 80.00                 | Senior loans         | 40.00                  | Senior loans         |
+
+## Technical Assistance Facility to Address Non-financial Barriers Hindering Uptake of Climate Projects in Cambodia
+Strengthened Climate Finance Framework
+
+| Amount million USD ($) | Financial Instrument | Amount million USD ($) | Financial Instrument |
+|-----------------------|----------------------|------------------------|----------------------|
+| 0.13                  | Grants               | 0.13                   | Grants               |
+
+## Capacity building for stakeholders across the sustainable ecosystem
+| Amount million USD ($) | Financial Instrument | Amount million USD ($) | Financial Instrument |
+|-----------------------|----------------------|------------------------|----------------------|
+| 1.35                  | Grants               | 1.35                   | Grants               |
+
+## TA PMU Costs
+| Amount million USD ($) | Financial Instrument | Amount million USD ($) | Financial Instrument |
+|-----------------------|----------------------|------------------------|----------------------|
+| 1.15                  | Grants               | 0.29                   | In-Kind              |
+
+## M&E Costs
+| Amount million USD ($) | Financial Instrument | Amount million USD ($) | Financial Instrument |
+|-----------------------|----------------------|------------------------|----------------------|
+| 1.49                  | Grants               | 0.35                   | In-Kind              |
+
+## Indicative total cost (USD)
+| Amount million USD ($) | Financial Instrument |
+|-----------------------|----------------------|
+| 108.96                |                      |
+| 54.96                 |                      |
+| 54.00                 |                      |
+
+### Note:
+For breakdown of assumed costs by component/output/activity see Annex 4 – Budget Detail and Annex 3 – Financial Model for assumptions on CCFF Lending Facility operating expenses. Budget is for indicative purposes and subject to change based on Programme needs during implementation.
+
+## C.3 Capacity building and technology development/transfer (max. 250 words, approximately 0.5 page)
+### C.3.1 Does GCF funding finance capacity building activities?
+- Yes ☒
+- No ☐
+
+### C.3.2 Does GCF funding finance technology development/transfer?
+- Yes ☒
+- No ☐
+
+CCFF programme design involves the CCFF Lending Facility and CCFF TA Facility. The CCFF Lending Facility will contribute to leapfrogging and scale up of innovative technologies and business models for Cambodia (e.g., solar and wind technologies are still at nascent stage in Cambodia, while business model innovation is required in sectors such as energy efficiency, transport, and water) by de-risking private sector participation through concessional loans and working with local project promoters and technical experts to pilot innovative technologies/business models.
+
+
+---
+*Chunk pages 58–58*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1324 (sys=94, user=1230), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 51
+
+The CCFF TA Facility will promote capacity building, by providing necessary resources, such as project preparation technical assistance to undertake feasibility studies to pilot innovative technologies, and business model and investment readiness support, as well as institutional capacity building activities targeted to enhance the capacity of the borrower to structure, implement and monitor high climate impact projects (see Component 3).
+
+## Examples of innovative technologies and business models to be financed by CCFF
+
+### Energy – Green Factory Accelerator Platform / ESCO Model
+
+The CCFF team is engaged with Switch Asia, GGGI and Garment Manufacturers Association in Cambodia (GMAC) to facilitate an innovative green factory accelerator concept that addresses barriers to scaling energy efficiency and renewable energy deployment in the Commercial & Industrial (i.e., garment) sector in Cambodia. Through a multi-stakeholder approach, the CCFF Lending Facility will enable a model green factory platform to aggregate green factory projects, structure transactions and procure energy services. Importantly, the accelerator de-risks investors by aggregating small projects on an investment platform level. The green factory accelerator will thereby enable the much needed scaling up of energy efficiency financing in the garment sector and hence create climate impact.
+
+### Sustainable Agriculture
+
+The CCFF team is engaged with a local rice value chain actor to scale up production of organic and deforestation-free rice production in Cambodia. The key innovation of the project is that it is working with 1,500 farmers for the cultivation of organic, wildlife friendly, and deforestation-free rice, which is exported to international buyers. The incentive for farmers is the premium price paid by the firm above market price and upskilling of farmers who commit to the firm's standards, and benefit from knowledge transfer on sustainable production. Payments made to families in participating communities are conditional on the maintenance of forest cover, which is monitored by satellite images, which is an innovative technology available in Cambodia, as well as ground truthing. The CCFF Lending Facility would allow the firm the scale up, further commercialize their operations, and expand their innovative business model into other crops such as cashew, as the firm is currently not able to access appropriate growth capital given the perceived riskiness by LFIs. The climate impact achieved is reduced GHG emissions from deforestation, fertilizer production and decomposition of organic soil amendments in rice paddies.
+
+### Water – Piped Water Operating Model
+
+Across Cambodia there are over 400 private water operators that supply piped water to households, schools, and healthcare facilities within their licensed areas. The majority of these operators lack access to finance for extending the coverage of their network to all households within their area – meaning that a large portion of households are currently not being supplied. These operators also lack access to best practices resulting in underperforming systems that can't guarantee the supply of clean water. With access to long term concessional capital, TapEffect, an identified pipeline company, can solve these barriers through their innovative B2B approach, where they partner with these operators to increase their coverage and improve operations. Increasing the coverage of households and ensuring that all schools and healthcare facilities within the areas are protected and increasing the climate resilience of these systems through increasing the availability of water storage ponds for dry season droughts.
+
+### Energy – Climate Resilient Infrastructure
+
+The CCFF team is currently in talks with solar and wind energy developers in Cambodia to provide much needed concessional funding to scale up leapfrogging of renewable energy technologies as per NDC needs. It is noteworthy that they have communicated a need to perform a location specific climate risk and vulnerability assessment (CRVA) and based on findings, CCFF would support the developers to invest in structural and non-structural measures to improve climate resilience of renewable energy to extreme weather events. This is a welcomed initiative given the climate vulnerabilities in Cambodia and its impact on renewable energy infrastructure projects. For example, the feasibility study of one of the solar energy projects in the CCFF pipeline integrates flood resilience measures such as elevating the solar park and transmission tower footings above the highest flood level, paving, and raising embankment height of access roads, strengthening existing drainage canals and building a storm water retention pond. Regular maintenance of drainage canals, storm water retention pond and access roads will be carried out to ensure their ongoing effective operation. The key climate vulnerable components will be subject to further analysis during the detailed engineering design. The emergency response procedures will be also institutionalized, and relevant staff trained as part of the ESMS procedures.
+
+## KDB Capacity Building Program
+
+KDB, as a model green development bank and the Programme's AE, will lead the implementation of the capacity building activities (1.2.2 & 1.2.3) for ARDB. KDB's capacity building program designed to transfer its hands-on knowledge and experience based on the KDB Development Finance Model, which is an effective tool for demonstrating how KDB has developed and expanded its functions as a development finance institution for over a half century,
+
+
+---
+*Chunk pages 59–59*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=860 (sys=94, user=766), max_out=1024, ctx=8192
+---
+
+# D D GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 52
+
+## EXPECTED PERFORMANCE AGAINST INVESTMENT CRITERIA
+
+This section refers to the performance of the project/programme against the investment criteria as set out in the GCF’s Initial Investment Framework.
+
+### D.1. Impact potential (max. 500 words, approximately 1 page)
+
+Mitigation impact is achieved based on investments at scale in the RE and EE (clean energy), sustainable land use and agriculture, and low-emission transport sectors. These sectors have been identified as priority mitigation sectors in Cambodia’s updated NDC, with potential to bring climate impact at scale and contribute to Cambodia’s low emission sustainable development pathway. These are the sectors that also suffer from several financial and non-financial barriers, such as limited access to finance due to high perceived risk, technology and capacity gaps, limited private sector involvement, and low awareness of impact potential.
+
+Total tonnes CO2e avoided: 11.1 million tCO2e. The snapshot of climate baseline and additionality assumptions and targeted impact is provided in “Mitigation Impact” table below, with assumptions and calculations further unpacked in Annex 22.
+
+| GCF | Result | Area | Mitigation | Activity | Methodologies |
+|-----|--------|------|------------|----------|---------------|
+| MRA1 | Energy generation and access | Investment into grid-connected Solar PV technologies, including for use in agriculture and manufacturing sector. | UK Government Green Book, provided that CCFF is programmatic approach and project specific activities are not known at approval. | Baseline: CO2 emissions from fossil fuel power energy generation that are displaced due to the project mitigation activities. | The projections are based on the scenario, where the fossil fuel generation will continue to grow in Cambodia as per BAU to meet increasing energy demand (at current carbon intensity level). But at the same time, the CCFF programme contributes to acceleration of solar generation capacity, thereby satisfying the portion of increasing electricity demand in Cambodia with clean energy that would have otherwise been met by coal energy and imported fossil fuel. |
+| Additionality | The decrease of the energy sector emissions through solar technologies is one of the key priority mitigation actions of the Government of Cambodia, as identified in the updated NDC (25% of energy mix should come from wind and solar). Furthermore, the power plan estimates [1,725MW] solar capacity by 2030, however, to meet the target, a scale up of private sector investment is needed. The sector faces a number of financial and non-financial barriers as follows: | | | | |
+| | | | | | |
+| | | | | | |
+| | | | | | |
+
+#### Justification:
+Main emission source  
+6,410,626 tCO2e reduced.  
+
+An average cost of 20 $/tCO2e.
+
+---
+
+
+---
+*Chunk pages 60–60*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=709 (sys=94, user=615), max_out=1024, ctx=8192
+---
+
+# D D  
+## GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 53  
+
+### Failure and malfunction of projects  
+and hence cost of fund available.  
+
+Power sector specific policy and  
+grid vulnerability gaps.  
+
+The CCFF programme shall target small to  
+medium size solar PV projects (average  
+annual installation planned is 16MW,  
+including for use in agriculture and  
+manufacturing), where private sector and  
+DFI funding is scarce and banking sector  
+financing is largely absent.    
+
+The solar project uptake in Cambodia is  
+slow, and to date only few solar projects  
+have been initiated in Cambodia and  
+mostly by the efforts of DFIs (who mainly  
+finance large scale projects through  
+concessional funding). The local financial  
+institution’s involvement in the sector is  
+limited due to perceived risks, and there is  
+no dedicated green loan product targeting  
+renewable energy projects.  
+
+Key additionality of the CCFF Programme is  
+that it will accelerate solar investments in  
+Cambodia through incentivizing banks to  
+invest in the sector through concessional  
+funding. Such approach will contribute to  
+building of LFI’s capacity and risk  
+appetitive to finance solar projects. The  
+targeted TA interventions through CCFF  
+Component 3 shall address non-financial  
+barriers as discussed under section B2,  
+that are critical for uptake of solar projects  
+in Cambodia.  
+
+Building  
+onshore wind  
+farms  
+connected to  
+the grid.  
+
+UK Government  
+Green Book,  
+provided that  
+CCFF is  
+programmatic  
+approach and  
+project specific  
+activities are not  
+known at  
+approval.  
+
+Baseline: CO2 emissions from electricity  
+generation in fossil fuel fired power plants  
+(coal plants) that are displaced due to the  
+project activities.  
+
+Common Practice: No utility-scale wind  
+projects have been completed in  
+Cambodia to date. Additionally, most of  
+the planned capacity now comes from  
+coal.  
+
+Additionality: These projects will achieve  
+climate additionality by displacing carbon-  
+emitting power generation with wind  
+power, in line with NDC action that  
+encourages renewable energy (25%) in  
+the energy mix.  
+
+There is no existing market for wind  
+energy in Cambodia as no onshore wind  
+project has been completed to date. This  
+entails high start-up costs and difficulty  
+accessing finance for projects (given  
+investment barriers listed above), and  
+wind remains an unproven technology  
+within the country. Complicating matters  
+further, the focus of the Cambodian  
+government has shifted towards building  
+
+### CO2  
+Justification:  
+Main emission  
+source  
+380,870  
+tCO2e  
+reduced.  
+
+An average  
+cost of 27  
+$/tCO2e.
+
+
+---
+*Chunk pages 61–61*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=879 (sys=94, user=785), max_out=1024, ctx=8192
+---
+
+# D D  
+GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 54  
+
+## Coal Plants  
+Given the barriers in this sector, there is a clear use case for concessional finance to increase market competitiveness by supporting much-needed private investment in the wind energy sector and demonstrating the role of wind power in the Cambodia’s electricity generation mix.  
+
+## MRA3  
+### Buildings, cities, industries and appliances  
+Retrofitting textile factories in manufacturing industry for increased energy efficiency  
+
+UK Government Green Book, provided that CCFF is programmatic approach and project specific activities are not known at approval.  
+
+Baseline: existing factories continue to operate at current levels of energy efficiency and consumption. Cambodia remains a least developed country and upfront costs combined with current knowledge barriers will continue to hamper progress in this area.  
+
+Common Practice: No large-scale previous projects have been successfully undertaken, and current projects require concessional funding to move forward.  
+
+The Global Green Growth Institute (GGGI) has supported preliminary work to improve energy efficiency in Cambodian factories, but companies are seeking funding to begin replacing factory equipment. Without concessional finance, it is unlikely that project activities will occur and hence, contribute to climate impact at scale. See also financial barriers 1, 3 and 4 under section B2.  
+
+Additionality: CCFF concessional funding shall contribute to the retrofitting of textile factories at scale; by unlocking investments necessary to meet Cambodia’s NDC targets of 55% emission reduction by 2030 compared to baseline in garment sector.  
+
+Climate Additionality: Increasing the efficiency of factory equipment cuts energy use and avoids emissions from the local grid supplying the factory with electricity. More efficient boilers also reduce the amount of wood burned to power them, avoiding emissions from deforestation.  
+
+- **CO₂**  
+  398,575 tCO₂e reduced; project boundary is GHG emissions from all energy used on-site and emissions from equipment supply chains.  
+
+- **Average cost**: 218 $/tCO₂e  
+
+## MRA4  
+### Forestry and land use  
+Preventing deforestation by investing in sustainable rice value chains and guaranteeing a premium price to nearby rice farmers in exchange for their  
+
+VCS Methodology  
+VM0015 - Methodology for Avoided Unplanned Deforestation  
+
+Baseline: A variable deforestation rate which is derived from USAID models and historical deforestation rates (approximately 0.5%) as specified in VM0015. Below-ground carbon storage is assumed to decay following a 10-year linear function.  
+
+Farmers can only participate in the program if they protect forest from deforestation, thus avoiding emissions from the loss of forest biomass. Project GHG emissions from deforestation, fertilizer production and decomposition of organic soil amendments in rice paddies  
+
+- **1,663,773 tCO₂e reduced**  
+
+- **Average cost**: 21 $/tCO₂e
+
+
+---
+*Chunk pages 62–62*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=773 (sys=94, user=679), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 55
+
+## Protection of Forest Land
+
+Emissions are quantified and are much smaller than emissions reductions.
+
+### Common Practice
+
+Farmers have little incentive to protect nearby forests and often participate in illegal logging activities for fuelwood.
+
+### Ibis Rice’s Scaling
+
+Constrained by lack of available finance.
+
+### Banking Sector
+
+It is noteworthy that the banking sector has traditionally been reluctant to lend to agriculture sectors, with credit to agriculture and agribusiness accounted for only 9.4% of formal finance in 2018 in Cambodia.
+
+### Characteristics of the Sector
+
+The sector is also characterized by the lending mismatch with production cycle, and there is scarcity of seed and working capital funding.
+
+### Commercial Banks
+
+As in other sectors, commercial banks are not engaged in green lending to the agriculture sector and there are significant capacity gaps to design such loan products that increase transaction costs.
+
+## Additionality
+
+CCFF shall provide much needed early stage and growth capital for the agriculture sector, by incentivizing local financial institutions to increase funding to agriculture businesses through green finance.
+
+### Transaction Costs
+
+The transaction costs of LFI’s will be reduced through lowering cost of funds as well as developing loan products together with the CCFF Working Group, that will be tailored to risk/return profile of the targeted borrower across the sustainable rice value chain.
+
+### Direct Green Lending
+
+The direct green lending from CCFF will be complimentary to wholesale green lending, unlocking early-stage funding at scale where banks are reluctant to participate.
+
+## Climate Additionality
+
+Farmers can only participate in the program if they protect forest from deforestation, thus avoiding emissions from the loss of forest biomass.
+
+### Project Emissions
+
+Project emissions are quantified and are much smaller than emission reductions.
+
+## Diversification of Agro-industrial Plantation (Teak Farms) on Degraded Land
+
+### Impact Model
+
+Follows a novel carbon accounting methodology designed according to the (VCS) Methodology.
+
+### Baseline
+
+Once degraded, lands are difficult to revive as sprouts are cut for charcoal and firewood and outcompeted by vines and climbers.
+
+### Substantial Areas
+
+Substantial areas of degraded land left behind by illegal logging operations are being offered as concessions by the government.
+
+### No Baseline Emissions
+
+No baseline emissions are assumed.
+
+## Carbon Sinks in Plantation Biomass and Harvested Wood Products or Degraded Land Biomass
+
+### Total Impact
+
+A total impact of 1,972,716 tCO2e
+
+## Impact Calculations
+
+Impact calculations are based on the IBIS RICE business model in the CCFF pipeline, whereas the private sector entity purchase their rice from small-plot farmers and then process and/or sells the rice. The smallholder farmers are paid premium price to nearby rice farmers in exchange for their protection of forest land.
+
+---
+
+
+---
+*Chunk pages 63–63*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=862 (sys=94, user=768), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 56
+
+## Requirements
+
+### Published by Verra43, and based on IPCC guidelines
+
+Common Practice: Few Cambodian forestry operations have sustainable forestry certification and teak cultivation is less common than rubber and palm oil cultivation, activities with less potential for carbon sequestration. Adhering to social and environmental standards tends to decrease short term profitability.
+
+### Additionality
+
+Degraded land in the baseline scenario is replaced by dense teak plantings, which acts as a carbon sink. Wood products produced from the plantation also provide a carbon sink. Emissions from running a plantation and manufacturing teak products have been quantified and are much smaller than the calculated emissions removal. Such investments would not have been scaled up without CCFF concessional funding, given access to finance barriers (see barriers 1, 3 and 4 under section B2 as well as barriers described above for agriculture sector).
+
+An average cost of 18 $/tCO2e.
+
+### MRA2
+
+Low-emission transport
+
+Purchasing electric motorcycles for private and commercial use.
+
+UK Government Green Book, provided that CCFF is programmatic approach and project specific activities are not known at approval.
+
+### Baseline
+
+Petrol-powered motorcycles operating at current use and fuel efficiency levels.
+
+Common Practice: Common practice analysis results show that there is a minimal, if any, existing market for electric motorcycles. Any projects attempting to deploy this technology which is new to Cambodia would face start-up costs and difficulty obtaining financing. This compounds the fact that electric motorcycles already require a larger upfront investment.
+
+### Additionality
+
+Project will replace petrol consumption of baseline motorcycles, resulting in net emission reduction. CCFF funding is additional, as it unlocks access to private sector funding that contributes to e-mobility market scaling in Cambodia.
+
+An average cost of 71 $/tCO2e.
+
+### Other non-GHG emission reductions as per log-frame
+
+Adaptation impact is achieved through increased access to climate resilient agriculture and sustainable land-use practices, resilient and adaptive rural water supply and sanitation and climate resilient infrastructure.
+
+Number of direct beneficiaries benefitting from the CCFF Programme are 785K individuals.
+
+43 No approved VCS methodology currently exists for a commercial regrowth project on low-productivity land. Thus, the impact model follows a novel carbon accounting methodology designed according to the Verified Carbon Standard (VCS) Methodology Requirements published by Verra. Verified Carbon Standard (VCS) Methodology Requirements published by Verra. Where called for in the VCS guidelines, formulae and methodologies from the 2006 IPCC guidelines in Volume 4: Agriculture, Forestry and Other Land Use have been applied. This approach also draws on "Approved VCS Methodology VM0005" which is a methodology for the conversion of low productive to high productive forest.
+
+--- 
+
+[Page 1]
+
+
+---
+*Chunk pages 64–64*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1221 (sys=94, user=1127), max_out=1024, ctx=8192
+---
+
+# [Page 1]
+
+## GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 57
+
+### Cambodia: Climate Vulnerabilities and Impact
+
+| Sector | Climate hazard Risk/Impact | Adaptation Activities | Adaptation Impact |
+|--------|----------------------------|-----------------------|-------------------|
+| **Agriculture, Forestry and land use (AFOLU)** | Increasing mean annual temperature, projected to rise by approximately 1.0 °C – 3.7 °C under RCP2.6 to RCP8.5 climate scenarios (AR6, WB). | Reduced Crop Yield, (IPCC, 2018) and reduced duration of rice crop growth (Wassmann et al). Rice production in Cambodia can decrease by 45% by 2080 under high emission scenario (IPCC, 2022); rising temperatures are already affecting planting and harvest dates in Cambodia. Reduced productivity of labor force in agriculture due to increased temperature and heatwaves, impacting agriculture production (Dunne et al. (2013). | Project location specific climate risk and vulnerability assessment in AFOLU sector and financing of the production technologies and practices that are resilient to climate change and are aligned to Cambodia’s NDC adaptation actions in AFOLU sector. The indicative examples include: |
+| | | | |
+| | | **Investments in rice crops and industrial crops (e.g., teak)** to promote development of conservation agriculture and agri-business diversification. Climate stress tolerant varieties, organic input agriculture, integrated pest management, Resource efficiency (such as water saving techniques through drip irrigation, energy efficient agriculture equipment, solar water pumps that reduce GHG emissions as a co-benefit and increase resiliency to increasing water stress driven by climate change) | Scaling up adaptation technologies and climate resilient business models across the rice value chain |
+| | | | |
+| | | **Climate information technologies and services**, such as (M&E) imagery systems, soil analysis tools, etc. | Hectares of land or forests under improved and effective management that contribute to climate resilient agriculture practices: 26,975 |
+| | | | |
+| | | Assumes that projects targeted for improved land under management that contributes to CO2 emission reduction also contributes to climate resilient agriculture practices, thereby bringing cross-cutting benefits. | Direct Beneficiaries benefiting from improved livelihoods as a result of the CCFF Programme Funding: 36,128 |
+| | | | |
+| | | Includes individuals with: | |
+| | | (1) Increased access to affordable loans in AFOLU sector to channel early stage/growth capital and deploy climate resilient practices and technologies, as well as utilize climate information in decision making to adapt to climate change. Thereby, contributing to increased income generation capacity of the borrowers and their households. | |
+| | | (2) Climate vulnerable rice farmers as well as their families engaged by Borrowers (in supply chain), which will see their | |
+| | | More frequent and/or intense extreme weather events, such as floods and droughts (IPCC, 2018). | |
+| | | Production losses. 90% of the rice production losses in Cambodia are due to intensified floods and prolonged droughts in Cambodia (IPCC, 2018), which has been evidence to result in food shortages in numerous provinces (MOE, 2006). The projected increase in the frequency and severity of droughts, floods and windstorms will further exacerbate impact on the sector (IPCC, 2022). | |
+| | | Changing climatic conditions further expose crop production to increased outbreaks in agricultural pests and diseases. | |
+| | | Pressure on water resources during dry periods. | |
+| | | Forest cover loss. By 2050, it is projected that over 4 million hectares of lowland forest with a current dry season lasting between 4 and 6 months, will become | |
+
+--- 
+
+**Note:** The text appears to be a continuation of a larger document or report, likely from a PDF source, and this section represents page 64 of the original document.
+
+
+---
+*Chunk pages 65–65*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=750 (sys=94, user=656), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 58
+
+## Exposed to water deficit periods of between 6 to 8 months
+
+## Flood and drought defences and storm water management
+
+## Production increased by 25% as a result of introduction of sustainable and climate resilient rice production practices
+
+This will be achieved, through farmers engaged in Borrower's supply chain receiving high-quality seed at the point of use to be repaid without interest at harvest (i.e., no-cost working capital), as well as technical assistance in form of capacity enhancement techniques for production improvement (sustainability, climate resilience). This increased yield contributes to increase income generating capacity of those households as well as increased food security, since (a) rice farmers engaged by borrower in the supply chain will sell 60% of their produce to the IBIS RICE at a premium price (currently estimated at US$ 217 premium per ton), so to incentivize their involvement into sustainable and climate resilient practices (b) remaining 40% they can consume for their own use at households, therefore, increasing their food security—given that climate change threatens food security of local rural population in Cambodia.
+
+## The indirect beneficiaries: 490,675 Indirect beneficiaries would be
+
+## Changes in rainfall patterns + flooding (AR6, WB)
+
+## Loss of soil fertility and degraded agriculture land due to increased precipitation and flooding; damaged infrastructure (roads, irrigations systems)
+
+## Losses of rain fed agriculture
+
+It is noteworthy, that the vulnerability of Cambodia’s rice agriculture is linked particularly to the very high prevalence of rain-fed systems, as currently only 24% of agriculture is irrigated in Cambodia. Projections indicate an increase to damage of the area under paddy production by up 23% in Cambodia (Shrestha et al., 2019a).
+
+## Sea level rise
+
+## Saline intrusion, reducing agricultural land
+
+## Under certain emissions’ scenarios (SRESB1 and SRESA2), by 2050 most lowland forests in Cambodia, particularly forest areas located in the northeast and southwest, will be exposed to longer dry seasons
+
+(Special Report on Emissions Scenario, A2 family, Emissions Scenarios, IPCC, 2000. N.B.: The SRES scenarios have four qualitative story lines that yield four sets of scenarios called "families": A1, A2, B1 and B2.)
+
+
+---
+*Chunk pages 66–66*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=462 (sys=94, user=368), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 59
+
+Individuals that are directly employed in agriculture by the borrowers of projects funded under CCFF Programme, thereby benefiting from income security and skills enhancement to be more resilient to climate change impacts & related financial shocks. The agriculture is the sector were most Cambodian women and men work (33.1% as per 2019 Census). Approximately 34% of agricultural households reported experiencing some form of severe shock during the last 12 months, with weather related events being number one most reported shock (82%), with drought and food security reported most frequently (62%), followed by the floods (12%) and typhoons (5%). The most common responses to these shocks included selling crops and/or livestock, finding work outside the agricultural holding, or borrowing money. Thereby, farmers are exposed to greater climate induced financial shocks as a result of climate change.
+
+Hence the CCFF Programme directly contributes to increased adaptive capacity of agriculture workers in Cambodia through their long-term formal employment opportunities (hence enhanced financial security to climate change shocks) and skills enhancement (e.g. through "on-the-job" implementation of
+
+--- END EXTRACTED TEXT ---
+
+
+---
+*Chunk pages 67–67*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=631 (sys=94, user=537), max_out=1024, ctx=8192
+---
+
+# D D  
+## GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 60  
+
+sustainable and  
+climate resilient  
+practices) that  
+contributes to their  
+long-term employment  
+sustainability within a  
+sector, as well as on  
+their own land.   
+See Annex 22 (Excel  
+file) for further details  
+on assumptions, data,  
+and methodologies.  
+
+### Energy  
+More frequent and/or  
+intense extreme weather  
+events, such as floods or  
+increased precipitation  
+induced landslides.  
+
+Increasing mean annual  
+temperature  
+
+Increased risk of direct  
+flood damage to energy  
+infrastructure (Solar PV,  
+Wind Farms), access roads  
+and transmission line tower  
+structures.   
+
+Increased operating  
+challenges such as lower  
+cell efficiency and energy  
+output. Low to Medium  
+probability. Affects life span  
+of energy infrastructure.  
+
+RE project location  
+specific climate risk and  
+vulnerability assessment  
+(CRVA), investing in  
+structural and non-  
+structural measures to  
+improve climate  
+resilience of RE to  
+extreme events. The  
+indicative examples  
+include:  
+
+Investments into RE+  
+energy storage system to  
+accommodate for  
+climate-induced  
+intermittency in energy  
+system planning.  
+
+Cabling and components  
+that can deal with high  
+moisture content and  
+flooding.  
+
+Wind Turbines designed  
+to withstand extreme  
+high temperatures or  
+Solar PV modules with  
+heat-resistant  
+photovoltaic cells and  
+module materials  
+designed to withstand  
+short peaks of very high  
+temperature.  
+
+Use of designs that  
+improve passive airflow  
+beneath photovoltaic  
+mounting structures,  
+reducing panel  
+temperature and  
+increasing power output.  
+
+Maintenance adjusted to  
+climate conditions, e.g.,  
+in dry areas, panel  
+rinsing system to remove  
+dust and grit is effective  
+adaptation option.  
+
+Climate proofing of all  
+energy infrastructure  
+investments to be  
+supported by the  
+CCFF Programme  
+(US$ 139M for  
+renewable energy  
+infrastructure value  
+estimated, out of which  
+at least 10% of total  
+investments directed  
+towards adaptation  
+measures)  
+
+Number of physical  
+assets in energy sector  
+made more resilient to  
+climate variability and  
+change, considering  
+human benefits: 52
+
+
+---
+*Chunk pages 68–68*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1143 (sys=94, user=1049), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 61
+
+## Disaster risk management systems
+
+### Water, rural areas primarily Northeast and Southwest
+
+More frequent violent storms with torrential rains
+
+More frequent and longer lasting droughts (IPCC, 2018)
+
+Contamination of surface water resources when areas holding waste or other health hazards flood.
+
+Water insecurity: Local sources of water dry up, households must go further to find water or purchase bottled water. Access to water is no longer guaranteed.
+
+Decreased water quality, waterborne health diseases due to contamination.
+
+Climate resilient water supply to rural households in Cambodia.
+
+Water will be sourced from a high flow area and treated based on climate risk and vulnerability assessment, providing year-round access to safe water.
+
+Number of beneficiaries with year-round access to reliable and safe water supply despite climate shocks and stress:
+
+749,135 individuals
+
+## D.2. Paradigm shift potential (max. 500 words, approximately 1 page)
+
+Paradigm Pathway Statement of the CCFF: “IF CCFF provides long-term blended climate finance and builds the enabling environment in Cambodia for its effective use; THEN GHG emissions will be reduced across AFOLU, energy and transport sectors, and the climate resilience of the energy, agriculture and water sectors will be enhanced, strengthening Cambodia’s capacity for mitigation and adaptation; BECAUSE CCFF’s demonstration of catalyzing private sector capital will de-risk the bankability of mitigation and adaptation projects increasing the availability of finance for priority NDC sectors”.
+
+The CCFF is a country owned, US$ 109 million climate financing facility in Cambodia, designed to: (1) provide long-term, concessional climate finance at scale to de-risk private sector investments in high priority NDC sectors; (2) institutionalize climate governance at the level of local financial institutions/private sector companies it finances; and (3) build local capacity to implement high climate impact projects.
+
+Through its blended finance approach, CCFF mobilizes investment from public and private sources at the level of the CCFF and its portfolio companies (banks, private sector entities), thereby creating significant leverage and scalability during the Programme implementation period. It contributes to the paradigm shift pathway as follows:
+
+### I. Potential for scaling up and replication
+
+The design of the CCFF is based on the internationally proven climate finance facility model, which can be readily replicated by local financial institutions in Cambodia as well as by institutions in South east Asia, once successfully tested in Cambodia.
+
+The uniqueness of the CCFF Programme design is in its blended finance approach, capitalizing on the GCF grant instrument to address existing barriers hindering uptake of innovative vehicles and ensuring the long-term sustainability of the Programme, by (1) building the institutional capacity of a national financial institution (ARDB) to design, issue and administer climate finance products/programmes (2) supporting ARDB in GCF accreditation to have access to sustained sources of climate finance and (3) building local financial institutions and the private sector’s institutional capacity to mobilize climate finance from private, institutional and commercial funds.
+
+See activities under Component 1 and Component 3 of B3, as well as respective measurable indicators under section E log-frame. See also the theory of change for detailed barrier analyses and proposed activities contributing to paradigm shift impact.
+
+### II. Potential for knowledge sharing and learning
+
+Each component of the Programme is geared towards knowledge sharing and learning.
+
+Component 1 contributes to the knowledge sharing and institutional learning of ARDB, as well as Royal Government of Cambodia (ME F, MOE) who are to be represented on the governance structure of the CCFF ( OC, TAP) and directly benefit from lessons learned from the Programme implementation.
+
+Component 2 contributes to the knowledge sharing and learning, as through accessing CCFF loans the local financial institutions and private sector actors will design and manage high climate impact products/projects as per CCFF’s best practice requirements, thereby contributing to “learning by doing”.
+
+47 (Source: Climate Change and Water Governance in Cambodia by Cambodia Development Resource Institute and Asian Development Bank (ADB) climate risk assessment, Choi, Y. et al., 2016: Effects of weather factors on dengue fever incidence and implications for interventions in 7 Cambodia. BMC public health, 16, 241, doi:10.1186/s12889-016-2923)
+
+
+---
+*Chunk pages 69–69*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1179 (sys=94, user=1085), max_out=1024, ctx=8192
+---
+
+# D D  
+## GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 62  
+
+### Component 3 activities support the institutional capacity building of the CCFF borrowers, by equipping them with critical capacity and tools to incorporate climate risk and opportunity analyses in decision making, tracking climate impact, and institutionalizing ESG and gender inclusiveness (i.e., climate governance). Additionally, the Programme aims to facilitate knowledge transfer to interested public and private sector stakeholders, through organizing periodic knowledge sharing events and developing tangible knowledge products, so to equip local and regional stakeholders with resources to understand how climate finance innovation and institutionalization of best practice climate governance in investment decision making contributes to low-carbon and climate resilient pathways.  
+
+In planning for knowledge sharing events and products, the Executing Entity shall collaborate with the Technical Advisory Panel comprised of key public and private sector stakeholders, including the Cambodia Sustainable Finance Initiative. MSC, through its representation in the Mekong Region, shall also participate in the regional events as applicable to facilitate cross-border knowledge sharing and increase opportunities for regional replication of the Programme. Lastly, it should be highlighted that the Programme involves a range of actors that create a community of sizable stakeholders that are willing to share experiences and learn from each other.  
+
+### III. Contribution to the creation of an enabling environment:  
+At the core of the Programme design is addressing financial and non-financial gaps hindering uptake of high climate impact projects in Cambodia. In particular, Component 1 ensures the long-term sustainability of the Programme through building ARDB’s national capacity to provide climate loans and implement climate finance programmes.  
+
+Component 2 provides access to much needed affordable and long-term finance, thereby accelerating transfer of high-impact climate technologies and practices contributing to NDC implementation. Component 2 is catalytic in nature, as it enables affordable and long-term funding to compensate for incremental risks and transaction costs hindering LFI’s and the private sector to engage in climate action.  
+
+Component 3 includes targeted activities geared towards addressing knowledge, capacity and policy gaps hindering uptake of climate projects through complimentary Technical Assistance Facility (see B2(a), barriers addressed by Component 3). It should be also highlighted that the Technical Advisory Panel will advise the Executing Entity (MSC) on specific TA interventions under each activity. Such collaboration shall ensure that the targeted TA activities are a result of public and private sector dialogue and contribute to local ownership as well as recipient needs in line to country priorities.  
+
+### IV. Contribution to the regulatory framework and policies:  
+The Programme targets the development of climate finance policy frameworks, thereby, accelerating climate finance actions in Cambodia and creating policy incentives to encourage climate finance. Activity 3.1.2 under section B3 offers a list of potential policy options, but final policy initiative(s) will be determined in consultation with the TAP to ensure they are complementary to existing initiatives in Cambodia.  
+
+Furthermore, on a need basis, the CCFF Working Group will engage in sector specific policy dialogue with the public sector, so to share lessons learned from its investments and contribute to an enabling environment. The policy dialogue will be funded through Activity 3.1.2 based on additionality principle. This means, that while it shall not fund policy work itself (as this is already being financed by donors and CCFF is more additional by addressing climate finance policy gaps), sector specific policy dialogue is envisioned together with the donors and key industry stakeholders already engaged in sector specific policy advancement in Cambodia. Examples of such partnerships are discussed under more detail in section B3.  
+
+### V. Overall contribution to climate-resilient development pathways consistent with relevant national climate change adaptation strategies and plans:  
+Cambodia’s “Cambodia National Adaptation Plan Financing Framework and Implementation Plan (NAPFFIP)” identifies the need to leverage additional financial resources notably from the private sector and through alternative instruments, such as loans. The Programme directly responds to those needs, by providing long-term concessional loans to engage the private sector in adaptation actions. This way, funding incremental costs of adaptation projects and demonstrating that adaptation actions in Cambodia can be financed by instruments other than grant. Importantly, the Programme targets the priority sectors (agriculture and water) identified in the NAP, with the suggested measures under CCFF climate eligibility criteria aligned to updated NDC needs for adaptation. Adaptation projects financed by the CCFF shall promote gender responsiveness in line to NAPFFIP.  
+
+### D.3. Sustainable development (max. 500 words, approximately 1 page)  
+The CCFF Investment & Eligibility Criteria requires eligible borrowers to demonstrate contribution to sustainable development in addition to the climate impact (See Annex 21). As such, the CCFF Programme is expected to contribute to a number of economic, social, gender and environmental co-benefits as summarized below:
+
+
+---
+*Chunk pages 70–70*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1009 (sys=94, user=915), max_out=1024, ctx=8192
+---
+
+# D D  
+## GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 63  
+
+### Economic co-benefits, including green jobs:  
+The CCFF shall catalyse US$ 347 million funding into Cambodia’s economy, with investments resulting in increased economic activity and job creation in key priority sectors of Cambodia (SDG 8 co-benefits). Based on an assessment of projects in the C CFF pipeline, the programme expected to have an enduring impact and is estimated to create 1.0 million green jobs. Beyond this, the Programme will support a range of broader sustainable development benefits such as energy security (reduced dependency on imports through diversification of energy source, and energy productivity through energy efficiency measures), water security and ecosystem conservation. The Programme shall contribute to post-COVID economic recovery through increased banking and private sector activity, while also reducing the fiscal strain on the Royal Government of Cambodia by allocating funding for climate action.
+
+### Social co-benefits and gender-sensitive development impact:  
+CCFF funded projects shall contribute to a number of social goals, such as increased access to affordable clean energy (SDG 7), access to clean water and sanitation in rural areas (SDG 6, which is directly linked to preventing and containing water borne diseases in Cambodian population SDG 3). The investments into the energy efficiency measures as well as transport sector will improve energy productivity and result in cost savings for direct beneficiaries.
+
+The CCFF also directly contributes to women’s empowerment through funding women-led businesses, creation of women-focused jobs (40% of green jobs created because of CCFF investments expected to be held by women), and equitable participation of women in stakeholder engagement/capacity building activities. See the gender action plan (Annex 8) for detailed KPIs and outputs.
+
+### Environmental co-benefits:  
+The CCFF Programme is designed specifically to finance projects that meet climate mitigation objectives, as well as are environmentally sound. In particular, the C CFF investment criteria requires projects to demonstrate a net reduction in emissions as well as compliance to the CCFF ESMS. The Programme is expected to bring the following environmental co-benefits:
+
+- GHG emission reduction at scale, contributing to Cambodia’s NDC implementation  
+- Improved air quality  
+- Improved water quality (through development of climate resilient WASH infrastructure in rural areas)  
+- Improved land quality/sustainable land use  
+- Promoting healthy ecosystems and biodiversity  
+- Efficient use of resources, including promotion of circular economy  
+
+At a project level, the CCFF shall promote environmental and social risk management in line to ESMS, aligned to the GCF Environmental Policy, Cambodia’s environmental and social regulations , and international best practices (e.g., ILO).
+
+## D.4. Needs of recipient (max. 500 words, approximately 1 page)  
+
+Cambodia is considered one of the most vulnerable countries to the impacts of climate change due to a combination of economic, geographic, and social factors. In particular:  
+
+Cambodia is a low middle-income country, and while it has experienced impressive economic growth during the past decade, its performance has been largely dependent on large official development assistance (ODA) and FDI inflows (7.9% percent of GDP, among the highest in the world). The poverty rate in Cambodia is 13%, however, around 4.5 million people (26% of population) in Cambodia remain near poor and vulnerable to falling back into poverty when exposed to economic and external shocks, including that of climate change and coronavirus. The economic development is threatened by the coronavirus disease (COVID-19), with an average annual GDP Growth rate of 7.2% decreasing to -3.1% in 2020.
+
+Importantly, the country is highly exposed to the impacts of climate hazards as follows:  
+
+| Hazard         | Exposure Level |
+|----------------|----------------|
+| River, Coastal and Urban flood | High           |
+| Landslide      | High           |
+| Cyclone        | High           |
+| Extreme Heat   | High           |
+| Wildfire       | High           |
+
+48 Source: ThinkHazard
+
+
+---
+*Chunk pages 71–71*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1327 (sys=94, user=1233), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 64
+
+## Climate Change and Its Impact on Cambodia
+
+Climate change can put 61% of Cambodia’s rural GDP at risk and impact 7 million Cambodians (43% of population). This is because, more than 70% of the Cambodian population lives in the rural areas and is highly dependent on climate-sensitive sectors such as agriculture, forestry and water resources. Due to its geographic location, Cambodia experiences almost all types of climate hazards, such as floods, droughts, heavy storms, fire incidents and related disease outbreaks.
+
+In this respect, the country’s National Poverty Reduction Strategy (NPRS) explicitly identifies natural disasters, particularly flood and drought, as critical factors that have, and continue to increase socioeconomic vulnerabilities of rural households.
+
+Climate change has been also linked to rural out migration among the population of Cambodia. Furthermore, the gender assessment revealed that women and men in Cambodia are impacted disproportionally by climate change in each sector targeted by the CCFF Programme, including agriculture and water (see Annex 8a, chapter IV).
+
+The projected climate change trends indicate more severe floods and droughts, which is expected to affect Cambodia’s GDP by nearly 10% by 2050 and hence, further increase socioeconomic vulnerabilities of the local population.
+
+## Vulnerability and Adaptation Capacity
+
+Cambodia’s vulnerability to climate change is further exacerbated by the low capacity to adapt to climate change, given the limited access to financial resources to fund climate change mitigation and adaptation needs. Specifically, transforming Cambodia’s Nationally Determined Contributions (NDCs) into tangible actions that lead to low-emission and climate-resilient development requires US$ 7.8 billion of financing. However, Cambodia faces challenges in securing the financial resources needed to achieve their NDC targets.
+
+The public budget alone is not sufficient to fund NDC needs and, there is an identified need to scale up private, institutional, and commercial funds to implement Cambodia’s NDC targets. This is recognized in Cambodia’s updated NDC and National Climate Strategy.
+
+Furthermore, as described under sections B2 and B5, the financing of climate projects by the domestic financial sector in Cambodia is limited, due to high cost of capital, high risk perception and limited institutional experience with climate financing in Cambodia. The absence of long-term financial, as well as persisting technology, knowledge and capacity gaps hinder uptake of high climate impact projects in Cambodia and thereby threaten implementation of NDC. Such inaction for a climate vulnerable country like Cambodia may result in economic losses, as well as loss of livelihoods and societal challenges including migration.
+
+## CCFF Programme Contributions
+
+The table below further details how the CCFF Programme contributes to local Recipient Needs in Cambodia:
+
+### Country Needs
+
+- The CCFF is the 1st national, dedicated, climate finance facility to mobilize climate finance at scale into Cambodia’s key priority NDC sectors (FOLU, agriculture, energy, and water), with significant mitigation and adaptation potential (Total lifetime emissions reduced: 11.1 million tons, total number of direct and indirect beneficiaries: 1.3 million individuals). The Programme is aligned to the national climate strategy, updated NDC, NAP and sector specific NAMA in garment industry. See also country ownership (D5) section.
+
+- The CCFF contributes to Cambodia’s sustainable economic development, as catalytic loan and grant funding shall contribute to increased economic activity, supply chain development & job creation.
+
+- Improving the efficiency and effectiveness of the public sector through lessons learned from Programme implementation by M OE and MEF, increasing climate data availability as well as climate finance policy implementation support through TA Facility to encourage shift to climate finance.
+
+### Population
+
+- Gender mainstreamed and inclusive approach to climate finance, with risks and opportunities for vulnerable groups identified for each project already during design stage.
+
+- Reduced deforestation and increased land restoration, thereby increasing access to sustainable land use and income generation capabilities. As an adaptation co-benefit, projects shall encourage conservation of protected areas and community engagement through incentive pay.
+
+## References
+
+49 Climate Change in the Lower Mekong Basin. United States Agency for International Development (USAID), 2014.  
+http://mekongarcc.net/sites/default/files/usaid_marcc_values_at_risk_report_with_exesum-revised.pdf.
+
+50 90 percent of the population is engaged in agricultural activities, and roughly 80 percent rely on subsistence crops (USAID, 2019). The  
+
+51 https://www.sciencedirect.com/science/article/pii/S2666049021000633  
+
+52 The banking sector remains the dominant player in the financial system, as capital market in Cambodia is underdeveloped. The market lacks affordable and long-term financial sources as further described in B2 (a).
+
+53 The CCFF governance structure allows for participation of MEF on Oversight Committee and
+
+
+---
+*Chunk pages 72–72*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1157 (sys=94, user=1063), max_out=1024, ctx=8192
+---
+
+# D.5. Country ownership (max. 500 words, approximately 1 page)
+
+The Cambodian Climate Financing Facility (CCFF) is directly aligned to country’s NDC needs, as it invests into high priority NDC sectors such as FOLU, agriculture, energy (RE, EE, Transport) and water with climate mitigation and adaptation potential. It catalyses much needed climate finance at scale to implement NDC needs, by leveraging public and private sector finance through a blended finance approach. Importantly, through financing local financial institutions and private sector actors, the CCFF shall contribute to the de-risking of climate projects and unlocking additional private sector capital at the project level.
+
+The Programme fits with the Country’s national climate priorities through its components, which are aligned to Cambodia’s existing Climate Change Strategic Plan 2014-2023 (i.e., national climate strategy), updated NDC, NAP and NAMAs as follows:
+
+## Component 1 (Establishment of the CCFF)
+
+Cambodia’s National Climate Strategy identifies a need for a pooled funding mechanisms to scale up climate finance in Cambodia. It also talks to the need to develop national capacity to manage climate finance mechanisms. Furthermore, the analyses of Cambodia’s updated NDC and BUR reveal, that Cambodia’s future resource mobilization looks toward a reasonable mix of national and international sources. The CCFF has been designed to respond to national climate priorities and it is the first national, dedicated climate finance facility to pool funds at the level of the facility and at the level of projects.
+
+## Component 2 (Climate Financing for High Climate Impact Mitigation and Adaptation Projects)
+
+Component 2 is designed to finance sector specific needs, both in terms of technology and practice, as identified in Cambodia’s National Climate Strategy, updated NDC, NAP and sector specific NAMA in garment industry. Component 2 is highly catalytic, as it has potential to mobilize much needed local and international resources at the level of the projects both from Local Financial Institutions, institutional investors and private sectors.
+
+## Component 3 (Technical Assistance Facility to address non-financial barriers hindering uptake of climate projects in Cambodia)
+
+This component is designed to address persistent data, knowledge and capacity gaps identified in Cambodia’s updated NDC, as well as the Biennial Updated Report (BUR). This includes gaps in environmental, social, and economic assessment of climate projects, sectoral knowledge and best practices, GHG measurements and accounting, and MRV transparency.
+
+
+---
+*Chunk pages 73–73*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1139 (sys=94, user=1045), max_out=1024, ctx=8192
+---
+
+# D D  
+GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 66  
+
+Importantly, the Programme Governance Arrangements ensure the country ownership as follows:  
+
+- The key goal of the CCFF is to establish a national climate finance institution that can work effectively both to directly finance private sector green projects, as well as with the domestic financial sector to mobilize catalytic green financing in Cambodia. ARDB, a national development bank owned by the MEF, has been selected as the most appropriate institution to host the CCFF programme and gradually assume a role of catalytic climate bank in Cambodia. As discussed throughout this funding proposal, a dedicated technical assistance activity under Component 1 has been designed to (1) build institutional capacity of ARDB to design, issue, and administer climate products/programmes and (2) facilitate accreditation of ARDB for GCF, so to enable ARDB’s access to sustained source of climate finance.  
+
+- The ARDB will co-finance the CCFF Lending Facility with a US$ 15 million commitment received from the MEF. The Royal Government of Cambodia (MOE and MEF) will be represented in the governance structure, enabling lessons learned throughout implementation of the CCFF Programme to be applied internally by MEF and MOE, the two most critical ministries for Cambodia’s low carbon and climate resilient sustainable development.  
+
+Capacity of Accredited Entity to deliver: The accredited entity for the proposed Programme is KDB, which is the leading development bank in Korea with strong institutional climate finance capabilities and track record in international development finance linked to the country priorities. KDB well understands ARDB and the goal of Cambodian government for net zero including NDC and can support ARDB and MSC to properly manage the CCFF based on the following experiences and can further support ARDB to develop into a green development bank.  
+
+- KDB has been at the forefront of Korea’s national development by playing key roles, indispensable to the country’s economic growth.  
+- KDB has been working to enhance the green finance market in Korea, fully dedicated to supporting the government and society to achieve the country’s carbon neutrality goals.  
+- KDB has been coordinating its roles to align with the government direction and underpin the growth and stability of the Korean economy and society.  
+- KDB is the first GCF accredited entity and the first to join the Equator Principles in Korea.  
+
+KDB has also undergone a robust GCF accreditation process and will work as the implementing partner for the activities 1.2.2 & 1.2.3 of Component 1, supporting ARDB to build its institutional climate capacity and develop a long-term strategy as Cambodia’s national climate bank.  
+
+It is noteworthy, that the accredited entity performed a capacity assessment of MSC, ARDB and MEF, executing entities for the CCFF. The outcomes of the capacity assessment are positive, and the summaries are provided in Annexes 23, 24 and 26.  
+
+Role of National Designated Authority: The Ministry of Environment has been involved in the design of the CCFF Programme from its inception. As a matter of fact, MOE has submitted a readiness proposal to GCF to finance preparation activities for the CCFF, including stakeholder consultations and optimal climate finance vehicle structures. Post CCFF establishment, the MOE will be represented on the Technical Advisory Panel as further unpacked under section B4 (Implementation Arrangements).  
+
+Engagement with civil society organizations and other relevant stakeholders: The CCFF was conceptualized in collaboration with local public and private sector stakeholders, including the governmental agencies and civil society as detailed in Annex 7. An inter-ministerial Technical Advisory Group was also formed to provide a collaborative approach to achieve agreement on the vehicle structure and priority sectors for investment, which are aligned to Cambodia’s national climate change strategy, updated NDC and nationalized SDG objectives. Furthermore, the stakeholder engagement with donors have been undertaken to ensure that the Programme intervention complements existing initiatives in Cambodia including that of GCF and key DFIs and donors such as USAID. The mapping of existing initiatives and complementarity of CCFF is unpacked in Annex 2.  
+
+It is noteworthy, that the CCFF Programme has developed a dedicated project specific Stakeholder Engagement Plan which encourages the involvement of the indigenous people, women and vulnerable groups in the sub-project design and decision making (See Annex 6). Furthermore, the CCFF Gender Action Plan sets minimum measurable targets for such involvement (Annex 8b). The Grievance Mechanism is also part of the ESMS, with key stakeholders enabled to raise concerns regarding the Programme and/or projects financed by it.
+
+
+---
+*Chunk pages 74–74*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=801 (sys=94, user=707), max_out=1024, ctx=8192
+---
+
+# D.6. Efficiency and effectiveness (max. 500 words, approximately 1 page)
+
+## Section B.5 describes the additionality of the GCF instruments and programme structure, including requested concessionality to address identified barriers.
+
+The risk of crowding out other private and public investments will be mitigated by two additional factors as described below:
+
+- As described throughout the proposal, the high priority NDC sectors are largely financially underserved, in terms of access to private, commercial, and institutional capital. Thus, activities from the Programme aim to fill a financing gap through financial and non-financial support. In doing so, the Programme strives to unlock financing for high climate impact projects, by creating opportunities for co-financing and scaling up funding through partnering with local and international private and public sector investors on a project level.
+- Component 2 expands financial solutions to local financial institutions in Cambodia, thereby partnering with the local financial sector to design affordable climate financing products that can reach targeted end-borrowers per each sector. The partnership with LFI’s will be promoted through provision of concessional funding and de-risking solutions as well as targeted technical assistance activities so to enhance their capacity to properly identify, assess, and structure climate financing solutions that can effectively address recipient needs and attract more investment on a project level.
+
+## Financial Viability of the CCFF Programme and Need for GCF Concessionality
+
+The CCFF Programme has been designed with commercial viability in mind to ensure its long-term sustainability. The CCFF Lending Facility will provide long-term green loans at concessional rates of interest. The CCFF Lending Facility will be co-financed by ARDB, GCF and other co-financiers. The concessionality received by GCF will enable the CCFF to offer wholesale lending to local financial institutions at a cost of funding which incentivizes their participation in green lending. Additionally, the GCF concessionality allows the CCFF to lend directly to green projects at affordable rates, de-risking projects and crowding in other private sector investors. In particular, the CCFF will prioritize co-financing green projects together with LFIs to encourage their active participation in climate finance.
+
+The CCFF will fill existing market gaps and efficiently deploy funding to meet the needs of green projects. As shown in the figure below, Cambodia currently lacks a highly catalytic lending facility with flexible financing structures, longer tenors, appropriate ticket sizes and suitable risk appetite for green projects.
+
+## Cost Efficiency and Effectiveness
+
+Based on the financial model and with a conservative approach (see Annex 3), the Programme is estimated to deliver an average GCF cost of US$ 7.84 per ton of CO2 reduced (see Annex 22). This is based on the utilization of the best available climate technologies and practices as identified in the CCFF Eligible Mitigation and Adaptation Activities (Annex 21). This expected GCF cost efficiency compares favourably relative to similar projects at GCF.
+
+
+---
+*Chunk pages 75–75*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=472 (sys=94, user=378), max_out=1024, ctx=8192
+---
+
+# D D  
+GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 68  
+
+From an efficiency point of view, the Programme presents structural competency to leverage private sector capital. Each dollar invested by the GCF through its loan instrument shall leverage an additional dollar at the level of facility. This 1:1 leverage is standard for Financial Institution focused climate finance programmatic approaches, including ones financed by the GCF.  
+
+In addition, each dollar invested by the CCFF in projects financed by it, is expected to mobilize additional private, commercial, and institutional level capital at a project level, which is where key leverage will happen. Overall, the Programme is expected to mobilize US$ 347 million of investments into Cambodia’s NDC priority sectors. The CCFF is expected to provide 50% of the investments required for green projects it finances and reinvest principal and interest proceeds back into high impact climate projects over the Programme’s 20-year implementation period (see Annex 3).  
+
+The disbursement period of the GCF funds is 5 years from the date of the first Loan Disbursement Receipt, this period is requested given (1) time needed to establish and mobilize co-financing at the level of the facility and (2) the need to allow a reasonable origination period of both LFI and private sector projects; in some cases, origination capacity would depend on completion of project preparation financed by activities 1.1.1 and 1.1.2 and (3) revolving nature of the CCFF Lending Facility.
+
+
+---
+*Chunk pages 76–76*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=773 (sys=94, user=679), max_out=1024, ctx=8192
+---
+
+# E E  
+## GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 69  
+
+### LOGICAL FRAMEWORK  
+This section refers to the project/programme’s logical framework in accordance with the GCF’s Integrated Results Management Framework to which the project/programme contributes as a whole, including in respect of any co-financing.  
+
+#### E.1. Project/Programme Focus  
+Please indicate whether this proposal is for a mitigation or adaptation project/programme. For cross-cutting proposals, select both.  
+- ☒ Reduced emissions (mitigation)  
+- ☒ Increased resilience (adaptation)  
+
+#### E.2. GCF Impact level: Paradigm shift potential (max 600 words, approximately 1 -2 pages)  
+This section of the logical framework is meant to help a project/programme monitor and assess how it contributes to the paradigm shift described in section D.2 above by applying three assessment dimensions - scale, replicability, and sustainability.  
+
+Accordingly, for each assessment dimension (see the definition per assessment in the accompanying guidance note), describe the current state (baseline) and the potential scenario (target) and rate the current state (baseline) by using the three-point-scale rating (low, medium, and high) provided in the guidance note. Also describe how the project/programme will contribute to that shift/ transformation under respective assessment dimensions (scale, replicability and sustainability). In doing so, please refer to section B.2(a) (theory of change).  
+
+| Assessment Dimension | Current state (baseline) | Potential target scenario (Description) | How the project/programme will contribute (Description) | Description Rating |
+|----------------------|--------------------------|-----------------------------------------|--------------------------------------------------------|--------------------|
+| Scale                | Cambodia has received both grants and loans from development partners and donor countries to design and implement climate change projects. Yet, these efforts were not able to reach climate impact at the scale required for NDC implementation, due to scattered efforts and fluctuations in funding. Furthermore, there are local capacity, knowledge and resource gaps hindering access to climate finance for high priority NDC sectors. | Cambodia’s target scenario as identified in NDC and BUR 1 is a reasonable mix of international and local climate finance sources of funding, which can contribute towards enabling conditions to scale up climate finance and incentivize low carbon and climate resilient technologies with view to accelerate NDC implementation. | The Programme will contribute to the potential target scenario by establishing a dedicated, national climate financing facility of US$ 105M to mobilize public and private sources of funding at the level of the CCFF and its portfolio companies (banks, private sector entities). Thereby, creating significant leverage and scalability during the Programme implementation period to finance high priority NDC sectors. The blended finance structure of the CCFF will enable an environment conducive to climate finance as a result of the (1) strengthening Cambodia’s climate finance framework, (2) enhanced | Low |
+
+--- 
+
+**Note:** This is a partial extract from page 76 of the document. The full text continues beyond this point.
+
+
+---
+*Chunk pages 77–77*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=765 (sys=94, user=671), max_out=1024, ctx=8192
+---
+
+# E E  
+## GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 70  
+
+### Institutional capacity of local financial institutions, private sector actors and public sector stakeholders to structure/manage and invest in climate projects.  
+
+#### Replicability  
+
+There is currently no national climate finance vehicle in Cambodia and local financial institution’s participation in climate finance is limited. Furthermore, there is a limited uptake of climate technologies and business models by private sector in Cambodia, due to limited track record and capacity to structure and implement climate projects, therefore climate opportunities are largely overlooked.  
+
+#### Low  
+
+The potential target scenario is a situation where the climate finance facility model is replicated by local financial institutions in Cambodia and potentially across the region, given the urgency to mobilize local financial sector in NDC implementation. Furthermore, the private sector is able to leapfrog climate technologies and innovative business models to capitalize on climate opportunities and address climate change risks.  
+
+The CCFF’s design is based on internationally proven climate finance facility model, which can be readily replicated by local financial institutions in Cambodia, as well as by institutions across Southeast Asia following successful implementation. Additionally, lessons learnt through this Programme will directly impact and provide a pioneer example to any effort to replicate the work in other countries.  
+
+Positive perceptions of climate finance will spread across not only Cambodia but also across the ASEAN region over the long term, especially based on executing entities’ well-known presence in the region and well-positioned to initiate knowledge transfer and collaborate with other countries.  
+
+#### Sustainability  
+
+There is currently no sustained source of domestic private sector climate finance in Cambodia due to limited track record and capacity as discussed above. The public sector funds alone are not enough to finance NDC implementation, and there is a limit to external DFI/IFI funding.  
+
+#### Low  
+
+Potential target scenario is the sustained source of private sector finance, through increased participation of the local financial sector and private sector because of its increased ability to structure, mobilize funding for, and implement high priority climate projects in Cambodia.  
+
+Long-term sustainability is ensured through building institutional capacity of ARDB to design, issue, and administer climate loans under the CCFF, as well as obtaining GCF accreditation to channel climate funding for further projects/programme. In addition, the CCFF Programme is geared towards increased participation of the local financial institutions and private sector through incentives such as concessional wholesale green loans and targeted technical assistance activities to foster an enabling environment.  
+
+See also section B6 for a more detailed discussion of the CCFF Programme sustainability.  
+
+### E.3. GCF Outcome level: Reduced emissions and increased resilience (IRMF core indicators 1-4, quantitative indicators)
+
+
+---
+*Chunk pages 78–78*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=619 (sys=94, user=525), max_out=1024, ctx=8192
+---
+
+# E E  
+## GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 71  
+
+Select appropriate IRMF core and supplementary indicators to monitor project/programme progress. More than one IRMF (core and or supplementary) indicators may be selected as applicable for each GCF results area and project/programme outcome (as defined in the table in section B.2(b)). If IRMF indicators are unable to measure any given project/programme outcomes, project/programme-specific indicators should be developed under section E.5 (project/programme specific indicators).  
+
+### GCF Result Area  
+#### IRMF Indicator  
+##### Means of Verification (MoV)  
+
+Baseline  
+Target  
+Assumptions / Note  
+
+#### Core 1: GHG emissions reduced, avoided or removed/sequestered  
+
+CCFF Annual Performance Report submitted to KDB by an executing entity based on portfolio data, with third party independent verification of the impact data.  
+
+0  
+4,766,461 tCO2e  
+
+(Year 10)  
+End of implementation (Year 20):  
+8,788,729 tCO2e  
+
+Lifespan:  
+11,070,740 tCO2e  
+
+Avoided, reduced or removed/sequestered GHG emissions from grid electricity generation over the lifetime, investment into low emission transport, all energy used on-site and emissions from equipment supply chains, and investments into the sustainable rice value chains that prevent deforestation and establishing teak plantations on degraded lands.  
+
+See Annex 22 for data sources and methodologies applied.  
+
+Factors that may impact achievement of targeted impact: External shocks (e.g., major changes in political situation that may impact business environment and worsen current regulatory context, natural disaster that may impact infrastructure assets).  
+
+> **Note:** The final target means the target at the end of project/programme implementation period. However, for core indicator 1 (GHG emission reduction), please also provide the target value at the end of the total lifespan period which is defined as the maximum number of years over which the impacts of the investment are expected to be effective.  
+
+---  
+**Page 78**
+
+
+---
+*Chunk pages 79–79*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=630 (sys=94, user=536), max_out=1024, ctx=8192
+---
+
+# E E 
+## GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 72
+
+### MRA1 Energy generation and access
+
+#### Core 1: GHG emissions reduced, avoided or removed/sequestered
+
+CCFF Annual Performance Report submitted to KDB by an executing entity based on portfolio data, with third party independent verification of the impact data.
+
+- 0
+- 1,447,716 tCO2e (Year 10)
+- End of implementation (Year 20): 4,062,338 tCO2e
+- Lifspan: 6,791,496 tCO2e
+
+Avoided GHG emissions from grid electricity generation over the lifetime through generation via RE installations.
+
+See Annex 22 for data sources and methodologies applied.
+
+Factors that may impact achievement of targeted impact: External shocks (e.g., major changes in political situation that may impact business environment and worsen current regulatory context, natural disaster that may impact infrastructure assets).
+
+#### MRA1 Energy generation and access
+
+##### Supplementary 1.2: Installed energy stoarage capacity
+
+CCFF Annual Performance Report submitted to KDB by an executing entity based on portfolio data, with third party independent verification of the impact data.
+
+- 0 TBD TBD
+- Installed energy storage capacity (MWh) which are directly related to renewable energy projects.
+- At the FP stage, it is not clear how many projects with storage component will be financed by the CCFF, hence mid-term and final targets set as TBD.
+
+##### Supplementary 1.3: Installed renewable energy capacity
+
+CCFF Annual Performance Report submitted to KDB by an executing entity based on portfolio data, with third party independent verification of the impact data.
+
+- 0
+- 169,650 kW (Year 10)
+- End of implementation (Year 20): 214,262 kW
+
+Installed renewable energy capacity (kW) because of targeted investments in wind and solar technologies. See Annex 22 for data sources and methodologies applied.
+
+Assumptions for factors that may impact achievement of targeted impact external factors are same as above.
+
+
+---
+*Chunk pages 80–80*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=774 (sys=94, user=680), max_out=1024, ctx=8192
+---
+
+# Supplementary 1.4: Renewable energy generated
+
+CCFF Annual Performance Report submitted to KDB by an executing entity based on portfolio data, with third party independent verification of the impact data.
+
+- **0**  
+  1,655,716 MWh  
+  (Year 10)  
+  End of implementation  
+  (Year 20):  
+  4,645,994 MWh  
+
+Lifespan:  
+7,767,264 MWh  
+
+Assuming that targeted renewable energy capacity is installed, and functions as planned, with maintenance taking place as required.  
+
+See Annex 22 for data sources and methodologies applied.  
+
+Assumptions for factors that may impact achievement of targeted impact (external factors) are same as above.
+
+# Core 3: Value of physical assets made more resilient to the effects of climate change and/or more able to reduce GHG emissions
+
+CCFF Annual Performance Report submitted to KDB by an executing entity based on portfolio data, with third party independent verification of the impact data.  
+
+- **0**  
+  US$ 118,666,667  
+  (Year 10)  
+  US$ 138,800,000  
+
+Investments into energy assets with GHG reduction potential that are climate proofed; at least 10% of total investments for adaptation measures. See eligible adaptation activities (Annex 21) for the renewable energy sector, as well as Annex 22 for data sources and methodologies applied.
+
+# MRA2 Low-emission transport
+
+# Core 1: GHG emissions reduced, avoided or removed/sequestered
+
+CCFF Annual Performance Report submitted to KDB by an executing entity based on portfolio data, with third party independent verification of the impact data.  
+
+- **0**  
+  125,014 tCO2e  
+  (Year 10)  
+  End of implementation  
+  (Year 20):  
+  232,514 tCO2e  
+
+Lifespan:  
+244,180 tCO2e  
+
+tCO2e emissions avoided as a result of investment into low emission transport.  
+
+See Annex 22 for data sources and methodologies applied.
+
+# Supplementary 1.5: Improved low-emission vehicle fuel economy
+
+CCFF Annual Performance Report submitted to KDB by an executing entity based on portfolio data, with third party independent verification of the impact data.  
+
+- **0**  
+  2,049,538,895 MJ  
+  (Year 10)  
+  End of implementation  
+  (Year 20):  
+  3,811,943,744 MJ  
+
+Lifespan:  
+4,003,212,140 MJ  
+
+Refers to energy savings.  
+
+See Annex 22 for data sources and methodologies applied.  
+
+The use of electric vehicles will reduce the use of fuel for transport.
+
+
+---
+*Chunk pages 81–81*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=502 (sys=94, user=408), max_out=1024, ctx=8192
+---
+
+# E E 
+## GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 74
+
+The use of electric vehicles over those powered by fossil fuels will be favoured and reduce the costs of transport.
+
+### MRA3 Buildings, cities, industries and appliances
+
+#### Core 1: GHG emissions reduced, avoided or removed/sequestered
+
+CCFF Annual Performance Report submitted to KDB by an executing entity based on portfolio data, with third party independent verification of the impact data.
+
+- 250,638 tCO2e (Year 10)
+- End of implementation (Year 20): 409,579 tCO2e
+
+Lifespan: 398,575 tCO2e
+
+Project boundary is reduced from all energy used on-site and emissions from equipment supply chains.
+
+See Annex 22 for data sources and methodologies applied.
+
+#### The external factor that may impact targeted outcome is a major shift in political and economic position of the country, impacting business environment and its ability to allocate funding for energy saving measures vs. the recovery measures.
+
+##### Supplementary 1.1: Annual energy savings
+
+- 426,395 MWh (Year 10)
+- Implementation period (year 20): 696,792 MWh
+- Lifespan: 678,073 MWh
+
+Total annual energy savings as a result of the CCFF investments in energy retrofits in textile industry.
+
+See Annex 22 for data sources and methodologies applied.
+
+Assumptions for factors that may impact achievement of targeted impact external factors are same as above.
+
+
+---
+*Chunk pages 82–82*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=649 (sys=94, user=555), max_out=1024, ctx=8192
+---
+
+# E E 
+## GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 75
+
+### MRA4 Forestry and land use
+
+#### Core 1: GHG emissions reduced, avoided or removed/sequestered
+
+CCFF Annual Performance Report submitted to KDB by an executing entity based on portfolio data, with third party independent verification of the impact data.
+
+- **0**  
+  2,943,093 tCO2e (Year 10)  
+  End of implementation year 20:  
+  4,084,299 tCO2e  
+
+Lifespan:  
+3,636,489 tCO2e  
+
+Total GHG emissions reduced and removed/sequestrated as a result of the investments into the sustainable rice value chains that prevent deforestation and establishing teak plantations on degraded lands.
+
+See Annex 22 for data sources and methodologies applied.
+
+External shocks such as major shifts in political and regulatory environment, granting large scale concessions may be considered as factors that may impact achievement of targeted impact.
+
+All selected ARAs
+
+#### Core 2: Direct and indirect beneficiaries reached
+
+CCFF Annual Performance Report submitted to KDB by an executing entity based on portfolio data, with third party independent verification of the impact data.
+
+- **0**  
+  671,930 direct beneficiaries  
+  197,732 indirect beneficiaries  
+
+  785,263 direct beneficiaries  
+  490,675 indirect beneficiaries  
+
+See assumptions for ARA1 and ARA2 below.
+
+##### ARA1 Most vulnerable people and communities
+
+###### Core 2: Direct and indirect beneficiaries reached
+
+CCFF Annual Performance Report submitted to KDB by an executing entity based on portfolio data, with third party independent verification of the impact data.
+
+- **0**  
+  31,466 direct beneficiaries  
+  197,732 indirect beneficiaries  
+
+(Year 10)  
+
+Direct beneficiaries:  
+36,128 female at least 40%  
+
+Indirect beneficiaries:  
+
+Direct beneficiaries are:
+
+1. Climate vulnerable rice farmers as well as their families engaged by Borrowers (in supply chain), which will see their production increased by 25% as a result of introduction of sustainable and climate resilient rice production
+
+
+---
+*Chunk pages 83–83*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=590 (sys=94, user=496), max_out=1024, ctx=8192
+---
+
+# E E 
+ GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 76 
+
+## 490,675, female 
+at least 40%.  
+
+practices. This will be 
+achieved, through farmers 
+engaged in Borrower's supply 
+chain receiving high-quality 
+seed at the point of use to be 
+repaid without interest at 
+harvest (i.e., no-cost working 
+capital), as well as technical 
+assistance in form of capacity 
+enhancement techniques for 
+production improvement 
+(sustainability, climate 
+resilience). This increased yield 
+contributes to increase income 
+generating capacity of those 
+households as well as 
+increased food security, since 
+(a) rice farmers engaged in 
+IBIS RICE supply chain will sell 
+60% of their produce to the 
+IBIS RICE at a premium price 
+(currently estimated at 
+US$ 217 premium per ton),  so 
+to incentivize their involvement 
+into sustainable and climate 
+resilient practices (b) remaining 
+40% they can consume for 
+their own use at households, 
+therefore, increasing their food 
+security-given that climate 
+change threatens food security 
+of local rural population in 
+Cambodia.  
+
+## 2. Borrowers receiving CCFF 
+loan to introduce sustainable, 
+low carbon and climate resilient 
+practices to drive productivity 
+and profitability of commercial 
+rice production & teak. 
+Indirect beneficiaries would be 
+individuals that are directly 
+employed in agriculture by the 
+borrowers of projects funded 
+
+### Supplementary 2.1: 
+Beneficiaries 
+(female/male) adopting 
+improved and/or new 
+climate-resilient livelihood 
+options 
+
+CCFF Annual Performance 
+Report submitted to KDB 
+by an executing entity 
+based on portfolio data, 
+with third party independent 
+verification of the impact 
+data. 
+
+### 0 
+31,466 direct 
+beneficiaries 
+197,732 indirect 
+beneficiaries  
+(Year 10) 
+
+#### Direct 
+beneficiaries: 
+36,128, female 
+at least 40% 
+#### Indirect 
+beneficiaries: 
+490,675, female 
+at least 40%.
+
+
+---
+*Chunk pages 84–84*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=407 (sys=94, user=313), max_out=1024, ctx=8192
+---
+
+# E E 
+## GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 77
+
+under CCFF Programme, 
+thereby benefiting from income 
+security and skills 
+enhancement to be more 
+resilient to climate change 
+impacts & related financial 
+shocks. The agriculture is the 
+sector were most Cambodian 
+women and men work (33.1% 
+as per 2019 Census) and who 
+are exposed to financial shocks 
+to due climate change. As 
+noted above, approximately 34 
+percent of agricultural 
+households reported 
+experiencing some form of 
+severe shock during the last 12 
+months. One of the most 
+common responses to these 
+shocks include finding work 
+outside the agricultural sector, 
+borrowing or selling crop.   
+Hence the CCFF Programme 
+directly contributes to 
+increased adaptive capacity of 
+agriculture workers in 
+Cambodia through their long-
+term formal employment 
+opportunities (hence enhanced 
+financial security to climate 
+change shocks) and skills 
+enhancement (e.g.  through 
+"on-the job" implementation of 
+sustainable and climate 
+resilient practices) that 
+contributes to their long-term 
+employment sustainability 
+within a sector, as well as on 
+their own land.  
+
+--- 
+
+*Note: This text appears to be from page 84 of a PDF document, but the content seems incomplete or fragmented. The original page number is preserved as per the rules.*
+
+
+---
+*Chunk pages 85–85*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=685 (sys=94, user=591), max_out=1024, ctx=8192
+---
+
+# E E  
+## GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 78  
+
+See Annex 22 for further details on assumptions, data, and methodologies applied.  
+
+### ARA2 Health, well-being, food and water security  
+
+#### Core 2: Direct and indirect beneficiaries reached  
+CCFF Annual Performance Report submitted to KDB by an executing entity based on portfolio data, with third party independent verification of the impact data.  
+
+- 0  
+- 640,464 direct beneficiaries (Year 10)  
+- 749,135 direct beneficiaries, out of which 51% are female.  
+
+#### Number of direct beneficiaries with year-round access to reliable and safe water supply despite climate shocks and stress.  
+
+### Supplementary 2.3: Beneficiaries (female/male) with more climate-resilient water security  
+CCFF Annual Performance Report submitted to KDB by an executing entity based on portfolio data, with third party independent verification of the impact data.  
+
+- 0  
+- 640,464 direct beneficiaries (Year 10)  
+- 749,135 direct beneficiaries, out of which 51% are female.  
+
+### ARA4 Ecosystems and ecosystem services  
+
+#### Core 4: Hectares of natural resources brought under improved low-emission and/or climate-resilient management practice  
+CCFF Annual Performance Report submitted to KDB by an executing entity based on portfolio data, with third party independent verification of the impact data.  
+
+- 0  
+- 23,213 ha (Year 10)  
+- 26,975 ha  
+
+A conservative assumption would be that the projects targeting improved land management to reduce CO2 emission would also contribute to climate resilient agricultural practices, thereby promising cross-cutting benefits.  
+
+### Supplementary 4.1: Hectares of terrestrial forest, terrestrial non-forest, freshwater and coastal marine areas brought under restoration  
+CCFF Annual Performance Report submitted to KDB by an executing entity based on portfolio data, with third party independent verification of the impact data.  
+
+- 0  
+- 15,970 ha Year 10  
+- 18,790 ha  
+
+A conservative assumption for degraded land restored and brought under improved management practices.  
+
+### TBD. Provided that the CCFF targets land degradation as paying premium price to farmers that conserve forest resources, the Programme may qualify for ecosystem restoration.
+
+
+---
+*Chunk pages 86–86*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=756 (sys=94, user=662), max_out=1024, ctx=8192
+---
+
+# E E  
+## GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 79  
+
+### and/or improved  
+ecosystems  
+verification of the impact  
+data  
+
+### E.4. GCF Outcome level: Enabling environment (IRMF core indicators 5-8 as applicable)  
+Select at least two relevant IRMF core (enabling environment) indicators to monitor and elaborate the baseline context and project/programme’s targeted outcome against the respective indicators. Rate the current state (baseline) vis-à-vis the target scenario and select the geographical scope of the outcome to be assessed. Describe how the project/programme will contribute towards the target scenario. Refer to a case example in the accompanying guidance to complete this section.  
+
+| Core Indicator | Baseline context (description) | Rating for current state (baseline) | Target scenario (description) | How the project will contribute | Coverage |
+|----------------|----------------------------------|-------------------------------------|---------------------------------|----------------------------------|----------|
+| **Core Indicator 5:** Degree to which GCF investments contribute to strengthening institutional and regulatory frameworks for low emission climate-resilient development pathways in a country-driven manner | There is currently no policy signal in Cambodia to incentivize climate finance and hence uptake of low carbon and climate resilient technologies/practices. | low | The target scenario includes regulatory incentives or policy signals (e.g., sustainable finance taxonomy) for local financial sector to engage in climate finance. | Activity 3.1.2 “Support climate finance policy frameworks for Cambodia” under TA Facility directly contributes to target scenario, by collaborating with public sector to accelerate climate finance actions and create policy incentives that encourage climate funding. | National level (one country) |
+| **Core Indicator 6:** Degree to which GCF investments contribute to technology deployment, dissemination, development or transfer and innovation | The uptake of climate technologies and practices are limited in Cambodia due to financial but also non-financial barriers—such as capacity, knowledge, and data gaps to structure, fundraise and implement innovative technology projects. | low | The uptake for climate technologies and practices, across energy, agriculture, transport, and water sectors are improved as a result of increased access to funding, accumulated track record and improved enabling environment. | Activities under Component 2 (Lending Facility) directly contribute to technology deployment, dissemination, and transfer by providing green loans for innovative technologies and business models in targeted sectors. Activities under Component 3 (TA Facility) contribute to institutional capacity building to structure, fundraise and implement innovative technologies and business models. For example, activity 3.2.1 provides Project Preparation Technical Assistance to borrowers to develop feasibility | National level (one country) |
+
+---
+
+
+---
+*Chunk pages 87–87*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=552 (sys=94, user=458), max_out=1024, ctx=8192
+---
+
+# E E 
+## GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 80
+
+studies for early-stage projects with innovative technologies and business models, as well as undertake climate baseline and vulnerability assessments. Limited data to assess feasibility of innovative technologies is often a critical factor hindering climate projects in Cambodia.
+
+Furthermore, Activity 3.2.2 provides institutional capacity building technical assistance to eligible borrowers to manage and implement projects.
+
+### Core indicator 8: Degree to which GCF investments contribute to effective knowledge generation and learning processes, and use of good practices, methodologies and standards
+
+There is a lack of institutional capacity in Cambodia to identify, monitor and report on low carbon and climate resilient investment measures. This often translates into insufficient knowledge of potential benefits of a climate related investment, and the real risks it carries.
+
+There is also an absence of useful data (including baseline data and respective collection resources), that hinders climate informed decision-making in Cambodia and limits understanding of local stakeholders on benefits of climate focused investments.
+
+To facilitate climate informed investment decision making, institutional track record and capacity will be built to capitalize on opportunities in climate finance, knowledge products and knowledge sharing.
+
+### Activity 3.1.1 under Component 3 aims to facilitate knowledge transfer to interested public and private sector stakeholders, through organizing periodic knowledge sharing events and developing tangible knowledge products, so to equip local and regional stakeholders with resources to understand how consideration of climate impact, ESG and gender factors contributes to positive investment outcomes.
+
+### National level (one country)
+
+### E.5. Project/programme specific indicators (project outcomes and outputs)
+
+
+---
+*Chunk pages 88–88*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=927 (sys=94, user=833), max_out=1024, ctx=8192
+---
+
+# E E GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 81
+
+## 57 Assumes year 5 for volume of TA services, and year 20 for volume loan funding.
+
+This section should list out project/programme-specific performance indicators (outcomes and outputs) that are not covered in sections above (E.1-E.4). List down tailored indicators to monitor /track progress against relevant project/programme results (outcomes/outputs). AEs have the freedom to decide against which outcomes they would like to set project/programme specific indicators. If any co-benefits are identified in sections B.2(a)(b), and D.3, AEs are encouraged to add and monitor co-benefit indicators under the "Project/programme co-benefit indicators" section in table below. Add rows as needed.
+
+Please number each outcome and output as shown below to indicate association of outputs to the contributing outcome. The numbering for outputs under this section should correspond to the output numbering in annex 4 (detailed budget plan).
+
+### Project/programme results (outcomes/ outputs)
+
+| Project/programme specific Indicator | Means of Verification (MoV) | Baseline | Target | Assumptions / Note | Mid-term | Final |
+|---|---|---|---|---|---|---|
+| Outcome 1: Increased Private sector finance for climate change adaptation and mitigation | US$ funding leveraged for climate change mitigation and adaptation as a result of the CCFF Programme, disaggregated by the (a) contributions (own loan resources) from LFIs b) contributions from sponsors c) other climate finance sources. | CCFF Annual Progress Reports (submitted by EE to AE) | 0 | Total: US$ 293M out of which CCFF: $146.5M, LFIs: US$ 43.95M, project sponsors: US$ 58.6M, other climate finance sources: US$ 73.25M (Year 10) | Total: US$ 347M out of which CCFF: US$ 173.5M LFIs: US$ 52.05M, project sponsors: US$ 69.4M, other climate finance sources: US$ 86.75M (Year 20) | The average share of CCFF funding is 50% for green investments and is assumed constant throughout the 20-year life, with CCFF principal repayments revolved into new green lending. See Annex 3 CCFF Financial Model for assumptions and methodology. |
+| Output 1.1: Institutional Preparedness for the Programme | Volume of funding mobilized at the level of CCFF Programme, disaggregated by the loan and grant resources, as well sources of finance. | CCFF Annual Progress Reports (submitted by EE to AE) | 0 | US$ 104.96 million mobilized funding at the level of the CCFF programme, out of which US$ 100 million loan and US$ 4.96 million grant. | US$ 104.96 million mobilized funding to establish & operationalize the CCFF programme, out of which US$ 100 million loan and US$ 105 million mobilized to establish and operationalize CCFF Programme (US$ 100M CCFF Lending Facility and US$ 5M |
+
+--- 
+
+Note: The text appears to be incomplete or truncated. Some content may have been cut off during extraction.
+
+
+---
+*Chunk pages 89–89*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=420 (sys=94, user=326), max_out=1024, ctx=8192
+---
+
+# E E GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 82
+
+## Sources of finance:
+
+- GCF: US$ 54.96 million  
+- Other investors: US$ 50 million  
+- (10 years)  
+- US$ 4.96 million grant  
+
+## Sources of finance:
+
+- GCF (US$ 54.96 million),  
+- other investors: US$ 50 million  
+
+## CCFF TA Facility)
+
+## Major changes in country’s political, business, and legal environment may delay capital mobilization and disbursement required to operationalize the CCFF Programme
+
+## CCFF established and operationalized
+
+## CCFF Semi-Annual Progress Reports (submitted by EE to AE)
+
+## Annual audited financial statements
+
+## CCFF not yet established
+
+## CCFF established and operating
+
+## CCFF established and operating
+
+## Establishment of CCFF committed facilities (Lending and TA Facility) and set up of implementation arrangements as per section B4 to operationalize CCFF occurs timeously with support from local partners
+
+## Major changes in country’s political, business, and legal environment may delay CCFF’s establishment
+
+
+---
+*Chunk pages 90–90*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=561 (sys=94, user=467), max_out=1024, ctx=8192
+---
+
+# E E  
+## GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 83  
+
+### Volume of grant funding disbursed to build institutional preparedness of the CCFF Programme  
+- Total: US$ 2.98M  
+
+#### Activity1.1.1:  
+- $150K  
+
+#### Activity1.1.2:  
+- $62.8K  
+
+#### Activity1.1.3:  
+- 2.47M  
+
+### Volume of grant funding disbursed to establish CCFF, develop operational structure of the CCFF Working Group at ARDB and provide support for the programmatic implementation of CCFF.  
+
+#### CCFF Working Group at ARDB Operationalized  
+- CCFF Working Group at ARDB not yet operationalized  
+- Operational structure of CCFF Working Group at ARDB developed  
+- CCFF Working Group at ARDB operating  
+- Operationalization of CCFF Working Group at ARDB occurs timeously with support from local partners  
+
+### Major changes in country’s political, business, and legal environment may delay CCFF’s institutional preparedness and ARDB’s capacity building.  
+
+#### Output 1.2: Institutional capacity building of ARDB built to become a national climate bank  
+
+##### Number of ARDB staff trained and sensitized with climate finance  
+- 0  
+- 15  
+- 20  
+- ARDB staff is actively engaged in CCFF implementation, as well as undergo targeted knowledge sharing and capacity building workshops so to internalize  
+
+---  
+
+**Note:** This text appears to be a fragment from a larger document, possibly related to a funding proposal or project plan. The content seems incomplete or fragmented due to OCR issues or extraction limitations.
+
+
+---
+*Chunk pages 91–91*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=430 (sys=94, user=336), max_out=1024, ctx=8192
+---
+
+# Lessons Learned in ARDB’s Operations
+
+Staff turnover is limited, and knowledge is retained within ARDB.
+
+Major changes in the country’s political, business, and legal environment may delay CCFF’s institutional preparedness and ARDB’s capacity building.
+
+## Long-term Strategy for ARDB as Cambodia’s National Climate Bank
+
+0 1 long-term strategy in place  
+Strategy is being implemented  
+ARDB supports the development and implementation of the long-term strategy.
+
+### Output 2.1: Wholesale Green Lending Implemented
+
+Volume of wholesale (US$ millions) green loan financing approved and disbursed to eligible borrowers, disaggregated by targeted sectors.
+
+CCFF Semi-Annual Progress Reports (submitted by EE to AE).  
+Annual audited financial statements.
+
+0 US$ 29.3M, to be disaggregated by targeted sectors ex-post  
+US$ 34.7M, to be disaggregated by sectors ex post  
+
+Based on CCFF Financial Model, recycling of principal & interest into green loans throughout the implementation period. (Annex 3)
+
+
+---
+*Chunk pages 92–92*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=517 (sys=94, user=423), max_out=1024, ctx=8192
+---
+
+# E E  
+## GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 85  
+
+### No. of LFIs selected and participating in wholesale green lending  
+0 5 6  
+
+Based on CCFF Financial Model, conservative assumption. (Annex 3)  
+
+### No. of loans disbursed by LFIs, disaggregated by sectors  
+0 TBD TBD  
+
+At the FP stage it is difficult to provide a reliable estimate of number of loans made by LFIs, hence mid-term and final targets set as TBD with actual number of loans to be disbursed by the LFI’s to be reported during the CCFF Programme implementation period.  
+
+### Output 2.2: Direct green lending implemented  
+Volume of direct green loan financing approved and disbursed to eligible borrowers, disaggregated by targeted sectors.  
+
+0  
+US$ 117.2M, to be disaggregated by targeted sectors ex-post  
+US$ 138.8M, to be disaggregated by targeted sectors ex-post  
+
+Based on CCFF Financial Model, recycling of principal & interest into green loans throughout the implementation period. (Annex 3)  
+
+### No. of loans disbursed, disaggregated by sectors  
+0  
+147 loans, to be disaggregated by targeted sectors ex-post  
+174 loans, to be disaggregated by targeted sectors ex-post  
+
+Based on CCFF Financial Model, recycling of principal & interest into green loans throughout the implementation period. (Annex 3)
+
+
+---
+*Chunk pages 93–93*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=424 (sys=94, user=330), max_out=1024, ctx=8192
+---
+
+# Outcome 4: Strengthened institutional and technical capacity for adaptation and mitigation
+
+## Number of stakeholders with strengthened institutional and technical capacity for climate adaptation and mitigation, disaggregated by direct and indirect beneficiaries
+
+### CCFF Annual Progress Reports submitted to KDB by an executing entity
+
+- **Direct Beneficiaries:** 152 stakeholders
+- **Indirect Beneficiaries:** 665 stakeholders
+
+### Direct Beneficiaries
+
+- **180 stakeholders**
+  
+  Direct beneficiaries include ARDB and CCFF borrowers (hereinafter stakeholders) that benefit from funding from CCFF Lending Facility and CCFF TA Facility, which facilitates institutional and technical capacity through building respective track record to design, implement and access climate finance for mitigation and adaptation projects.
+
+### Indirect Beneficiaries
+
+- **665 stakeholders**
+
+  Indirect beneficiaries include regulators, industry actors and donor community (hereinafter, stakeholders) that benefit from strengthened climate finance framework & stakeholder capacity built across sustainable development.
+
+
+---
+*Chunk pages 94–94*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=456 (sys=94, user=362), max_out=1024, ctx=8192
+---
+
+# E E  
+## GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 87  
+
+### finance ecosystem as a result of sub-activities supported under output 3.1 and 3.1 (See TA Eligibility Criteria). For purposes of ex-ante estimates, those are measured as stakeholders who participate in knowledge sharing and awareness raising events, as well as multi-stakeholder policy engagements.
+
+### Output 3.1: Strengthened Climate Finance Framework  
+Total volume TA services provided to strengthen climate finance framework, to be disaggregated by the activities.  
+
+CCFF Semi-Annual Progress Reports (submitted by EE to AE).  
+
+Annual audited financial statements.  
+
+0 US$ 0.19 million  
+
+Activity 3.1.1: 0.15 million  
+Activity 3.1.2: 0.04 million  
+
+US$ 0.19 million  
+
+Activity 3.1.1: 0.15 million  
+Activity 3.1.2: 0.04 million  
+
+Based on budget (Annex 4).  
+
+CCFF TA Funding is utilized to support eligible activities under TA eligibility criteria, that advance climate finance policy framework in Cambodia so to create an enabling environment to catalyze the local financial sector’s  
+
+---
+
+
+---
+*Chunk pages 95–95*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=359 (sys=94, user=265), max_out=1024, ctx=8192
+---
+
+# E E 
+ GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 88 
+  
+engagement in climate finance.  
+Total number of eligible climate finance policy framework sub-activities supported through CCFF TA Facility  
+0 1 2  
+# of eligible TA sub-activities supported through CCFF TA Facility that supports strengthening of the climate finance policy framework in Cambodia. The targeted beneficiaries of those activities are the National Bank of Cambodia (NBC), the Association of Banks in Cambodia (ABC) and members (Local Financial Institutions).    
+Conservative assumption, See operational manual for TA Eligibility Criteria for output 3.1 (eligible sub-activities under 3.1.2)  
+Total number of knowledge sharing and awareness raising events performed.  
+0 38 events 38 events  
+Events are actively attended by borrowers.
+
+
+---
+*Chunk pages 96–96*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=535 (sys=94, user=441), max_out=1024, ctx=8192
+---
+
+# Output 3.2: Capacity Building for Stakeholders across the sustainable ecosystem
+
+## Total volume of TA services provided for Output 3.2, disaggregated by eligible sub-activities.
+
+| Sub-Activity | Volume (US$) |
+|--------------|--------------|
+| Activity 3.2.1 | 0.67 million |
+| Activity 3.2.2 | 0.68 million |
+| Total | 1.35 million |
+
+## Total number of projects receiving approved technical assistance for preparation of climate change adaptation and mitigation projects, disaggregated by eligible sub-activities.
+
+| Sub-Activity | Number of Projects |
+|--------------|--------------------|
+| CCFF Semi-Annual Progress Reports (submitted by EE to AE) | 227 projects |
+| CCFF Semi-Annual Progress Reports (submitted by EE to AE) | 227 projects |
+
+## Total number of TA services deployed to build institutional capacity of borrowers (LFIs and private sector actors), disaggregated
+
+| Sub-Activity | Number of Services |
+|--------------|--------------------|
+| CCFF Semi-Annual Progress Reports (submitted by EE to AE) | 227 services |
+| CCFF Semi-Annual Progress Reports (submitted by EE to AE) | 227 services |
+
+## See operational manual for TA Eligibility Criteria for output 3.2 (specifically, eligible sub-activities under 3.2.1)
+
+## See Annex 4 for assumptions on number of projects.
+
+## # of TA services funded from CCFF TA Facility to bring institutional capacity of borrowers (post-investment support)
+
+
+---
+*Chunk pages 97–97*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=480 (sys=94, user=386), max_out=1024, ctx=8192
+---
+
+# E E  
+## GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 90  
+
+### Eligibility Criteria  
+See Annex 4 for assumptions on number of projects, and assumes 1 service per project.  
+
+### Project/programme co-benefit indicators  
+
+#### Economic co-benefit: Job creation  
+Number of full-time or part time jobs created by the project at the end of the reporting period, disaggregated by gender  
+
+#### CCFF Annual Performance Report (submitted by the EE to KDB)  
+- 0 161,826 (42% female)  
+- 256,007 (40% female)  
+
+Based on Impact Model (Annex 22)  
+
+#### Gender & social co-benefit: Increased gender mainstreaming into investments  
+% of CCFF funding contributing to gender equity, disaggregated by loan and grant funding   
+
+#### CCFF Annual Performance Report (submitted by the EE to KDB)  
+- 0  
+  - 30% of loan funding and 20% of grant funding.  
+  - 30% of loan funding and 20% of grant funding.  
+
+#### CCFF Lending Facility proceeds finance women led businesses and/or businesses that promote women economic empowerment and gender equality as per CCFF Gender-Mainstreamed investment criteria.  
+
+#### C CFF TA Facility proceeds finance activities that contribute to gender equity.  
+
+---  
+**Page 97**
+
+
+---
+*Chunk pages 98–98*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=562 (sys=94, user=468), max_out=1024, ctx=8192
+---
+
+# E E GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 91
+
+## See Gender Action Plan & TA eligibility criteria in OP Manual.
+
+### Environmental co-benefit:
+Reduced environmental impacts of investments
+
+### Number of projects/borrowers funded from CCFF with improved ESG practices.
+CCFF Annual Performance Report (submitted by the EE to KDB).
+
+- 0 113 projects (50%)
+- 158 projects (70%)
+
+It is conservatively assumed, that CCFF shall contribute to improved E&S practices at a level of project, provided that each project will includes E&S due-diligence and development of ESAP to address gaps and ensure compliance to CCFF ESMS.
+
+## E.6. Project/programme activities and deliverables
+
+All project activities should be listed here with a description and sub-activities. Significant deliverables should be reflected in annex 5 implementation timetable. Add rows as needed.
+
+Please number the activities as shown below to indicate association of activities to the related outputs provided above in section E.5. Similarly, please number sub-activities as shown below to associate to the related activity.
+
+| Activities | Description | Sub-activities | Deliverables |
+|-----------|-------------|----------------|--------------|
+| Activity 1.1.1: Establish the CCFF | The Executing Entities shall undertake necessary steps to establish CCFF Lending Facility and TA Facility | - Establishment of the OC with members appointed.  
+- Accounts opened and governance structure in place.  
+- Formation of appropriate teams and divisions at ARDB  
+- Appointment of the Independent Investment Advisor (IIA), MSC  
+- CCFF accounts opened, and legal agreements signed.  
+- CCFF governance (Oversight Committee) established.  
+- OC appoints MSC as the IIA. | - 1 CCFF Lending Facility  
+Project Management Unit |
+
+--- 
+
+[Page 1]
+
+
+---
+*Chunk pages 99–99*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=757 (sys=94, user=663), max_out=1024, ctx=8192
+---
+
+# E E  
+## GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 92  
+
+### CCFF Working Group  
+established at ARDB.  
+
+#### Activity 1.1.2: Develop the Operational Structure of the CCFF Working Group at ARDB  
+The necessary arrangements to operationalize CCFF (including development of the operational manual and credit policy) is facilitated.  
+
+- Assessment of current ARDB policies and procedures  
+- Development of CCFF Working Group policies and procedures  
+
+#### Activity 1.1.3: Provide support for the programmatic implementation of the CCFF  
+This activity includes specific capacity building interventions to build CCFF’s institutional capacity to implement Activities under Component 2 as per Operations Manual and Credit policy.  
+
+- Formation of CCFF Working Group reporting structure and team in place  
+- Assessment of team and roles formed  
+
+#### Activity 1.2.1: Share lessons learnt, and data collected from CCFF’s operations and internalise it in ARDB’s climate financing framework  
+Sharing lessons learnt and collected data from CCFF Working Group’s operation and internalization in ARDB’s climate financing framework.  
+
+- Training plans developed to be shared during events  
+- Assessment and review of appropriate products to be shared with LFIs and project developers  
+
+#### Activity 1.2.2: Support capacity building and training of ARDB staff through knowledge sharing and workshops  
+Institutional, personnel capacity building and training session by each business area.  
+
+- Capacity assessment performed  
+- Training materials and agendas developed  
+
+#### Activity 1.2.3: Develop a long-term strategy for ARDB as Cambodia’s national climate bank development  
+Development of long-term strategy of ARDB as Cambodia’s green development bank.  
+
+- External/Internal environment analysis  
+- Establishment of strategy direction and institutional goals  
+- Establishment of strategy goal and detailed action plan  
+
+- 1 Green Bank strategy to gradually green the banks’ portfolio and position as national green bank developed, time bound workplan agreed with ARDB.
+
+
+---
+*Chunk pages 100–100*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=756 (sys=94, user=662), max_out=1024, ctx=8192
+---
+
+# Activity 2.1.1: Select Local FIs based on assessment results as per CCFF Lending Facility’s LFI selection criteria
+
+CCFF Working Group undertakes necessary steps aligned to the CCFF Credit Policy to select local financial institutions for wholesale green loan financing.  
+- Announcement of RFP.  
+- Screening of proposals against CCFF Investment and Eligibility Criteria (Annex 21).  
+- Due diligence (DD) as per investment DD procedure in CCFF Credit Policy. This includes KYC and AML/CFT procedures.  
+- Subject to positive DD outcome, submission of Credit memo to Green Credit Committee.  
+- Lending Decision (Y/N).  
+- Notify selected LFIs of loan decision (Y/N).  
+See CCFF Investment & Eligibility Criteria (Annex 21) for details.  
+- Minimum 4 LFIs selected/wholesale green loans approved.
+
+# Activity 2.1.2: Execute Loan Agreements with LFIs
+
+CCFF Working Group develops and signs legal agreement for each approved wholesale green loan transaction.  
+- Discussion and signing of the Loan Agreement with the borrower.  
+- Loan Agreements signed between ARDB and LFI borrower.  
+- Project Specific M&E Plan developed and part of the Loan Agreement  
+
+# Activity 2.1.3: Provide Wholesale Green Lending
+
+CCFF Working Group provides wholesale green loan to approved borrower as per steps in next column.  
+- On-board borrower and create loan account.  
+- Loan disbursement as per pre-agreed disbursement schedule in the Loan Agreement.  
+- Loans disbursed.
+
+# Activity 2.1.4: Implement post-investment MRV of green lending proceeds to Local FIs
+
+CCFF Working Group undertakes monitoring, reporting and verification activities as per the CCFF Risk Management Framework and Monitoring and Evaluation Framework (M&E Framework, Annex 21).  
+- Post-investment monitoring and evaluation as per the risk management framework of the CCFF Lending Facility and Monitoring and Evaluation Framework.  
+- Post-investment reports as per project specific M&E Plan.
+
+# Activity 2.2.1: Select green lending opportunities based on assessment results as per CCFF Lending Facility’s credit policy
+
+CCFF Working Group undertakes necessary steps aligned to the CCFF Lending Facility Credit Policy to select green projects for the direct green loan financing.  
+- Identify green project opportunity.  
+- Conversation with project owner to understand needs.  
+- Receive Direct Green Loan Application.  
+- Direct green loan borrowers selected/direct green loans approved.
+
+
+---
+*Chunk pages 101–101*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=689 (sys=94, user=595), max_out=1024, ctx=8192
+---
+
+# E E 
+## GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 94
+
+### Activity 2.2.1: Execute loan agreements with borrowers
+
+CCFF Working Group develops and signs legal agreement for each approved direct green loan transaction  
+- Development and signing of the Loan Agreement with the borrower.  
+- Loan Agreements signed between ARDB and green project borrower.  
+- Project Specific M&E Plan developed and part of the Loan Agreement  
+
+### Activity 2.2.2: Execute loan agreements with borrowers
+
+CCFF Working Group develops and signs legal agreement for each approved direct green loan transaction  
+- Development and signing of the Loan Agreement with the borrower.  
+- Loan Agreements signed between ARDB and green project borrower.  
+- Project Specific M&E Plan developed and part of the Loan Agreement  
+
+### Activity 2.2.3: Provide Direct Green Lending
+
+CCFF Working Group provides green loan to approved borrower as per steps in next column.  
+- On-board borrower and create loan account.  
+- Loan disbursement as per pre-agreed disbursement schedule in the Loan Agreement.  
+- Loans disbursed.  
+
+### Activity 2.2.4: Implement post-investment MRV of green lending proceeds to selected borrowers for direct green loan.
+
+CCFF Working Group undertakes monitoring, reporting and verification activities as per the CCFF Monitoring and Evaluation Framework (M&E Framework, Annex 21).  
+- Post-investment monitoring and evaluation as per the risk management framework of the CCFF Lending Facility and Monitoring and Evaluation Framework.  
+- Post-investment reports as per project specific M&E Plan  
+
+### Activity 3.1.1: Share knowledge generated through the implementation of the CCFF programme with public and private sector stakeholders
+
+This activity will contribute to knowledge sharing activities aligned to targeted TA beneficiary needs.  
+All TA activities under Component 3 will undergo same process (sub-activities) as detailed here:  
+
+- Identification of the Technical Assistance (TA) needs.  
+- Knowledge sharing products (at least 2).  
+- Knowledge sharing events organized or attended (at least 5).  
+Awareness raising workshops (at least 3), sex-
+
+
+---
+*Chunk pages 102–102*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=620 (sys=94, user=526), max_out=1024, ctx=8192
+---
+
+# E E  
+## GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 95  
+
+### Activity 3.1.2: Support climate finance policy frameworks for Cambodia  
+This activity includes funding of the advisory services to advance the climate finance policy environment in Cambodia and address existing policy gaps.  
+Direct beneficiaries are relevant public and private sector stakeholders benefiting from advisory services and improved policy environment for climate finance.  
+
+- # of stakeholder consultations facilitated to initiate policy dialogue: at least 5  
+- 1 Policy dialogue  
+- 1 Climate Finance Policy Framework  
+
+### Activity 3.2.1: Project Preparation Technical Assistance  
+This activity will support eligible private sector borrowers in project preparation activities, so to enable access to climate finance.  
+
+- Feasibility studies  
+- Climate vulnerability studies  
+- Climate baseline assessments  
+- Fit for purpose ESIA and/or ESAP  
+- Gender Analysis  
+- Gender Action Plan  
+
+### Activity 3.2.2: Institutional capacity building of borrowers (Local FIs and private sector actors)  
+This activity will support selected borrowers (LFIs, private sector actors), post-investment, to build institutional capacity to manage high climate impact projects.  
+
+- Borrowers supported with external expertise to develop climate MRV capacity through targeted training, tools and templates or independent climate impact verification  
+- Borrower supported with external expertise to align its operational processes to CCFF Policies. Potential deliverables include but are not limited to standardized tools and templates to institutionalize green finance, such ESMS  
+
+---  
+[Page 1]
+
+
+---
+*Chunk pages 103–103*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=633 (sys=94, user=539), max_out=1024, ctx=8192
+---
+
+# E E  
+## GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 96  
+
+### Gender Policy, Gender Action Plan Template, Gender Screening Tool  
+• Borrowers’ capacity building on topics such as climate impact measurement, climate governance, E&S, gender mainstreaming in climate finance.  
+Note: Sex-disaggregated data will be collected on beneficiaries of capacity building activities.  
+
+### E.7. Monitoring, reporting and evaluation arrangements (max. 500 words, approximately 1 page)  
+The monitoring and evaluation framework for the program is designed as multi-layered framework, with monitoring responsibilities shared by the Accredited Entity, CCFF Executing Entities and Project Counterparties (Borrowers) as follows:  
+
+#### Monitoring, Reporting and Evaluation:  
+• Accredited Entity shall provide overall oversight, to make sure that the Programme operational milestones as identified in GCF log-frame are reached. The monitoring shall focus on the Programme performance against (impact level indicators under E2, Outcome level indicators under section E3 and E4 of log-frame) the Programme specific indicators (E5) and activities (E6). In addition, the Accredited Entity shall oversee the compliance in line with the Accreditation Master Agreement (AMA) signed between an Accreditied Entity and GCF. This will be ensured through AE’s representation at CCFF Oversight Committee & TA Facility Committee (see roles/responsibilities of OC below). The Accredited Entity shall submit annual reports to the GCF based on the data submitted by Executing Entities, as well as undertake independent mid-term and final evaluation of the CCFF Programme as per the schedule below:  
+
+| Milestones/Reports | Expected Dates |
+|--------------------|----------------|
+| Program Inception Report | Within 6 months of the FAA Effective Date. |
+| Semi-Annual Financial Report and Annual Performance Report | As per the AMA, Accredited Entity and GCF. |
+| Interim Evaluation Report prepared in accordance with the GCF evaluation Criteria & GCF evaluation policy | Interim Independent Evaluation Report, prepared halfway of the Programme implementation period as per FAA timeline. |
+| CCFF Programme Completion report | Within 3 months after the Programme completion date |
+| CCFF Programme Final Independent Evaluation Report prepared in accordance with the GCF evaluation criteria and GCF evaluation policy | Within 6 months after the submission of the Programme completion report |
+
+
+---
+*Chunk pages 104–104*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=500 (sys=94, user=406), max_out=1024, ctx=8192
+---
+
+# E E  
+## GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 97  
+
+• **Executing Entity (EE):** The day-to-day monitoring of the Programme milestones shall be a responsibility of the Executing Entities through dedicated project management units for components managed by it (ARDB & MSC as EE for loan component through CCFF Working Group at ARDB, MSC as EE for grant component through TA Facility Unit at MSC), who will l iaise with the project counterparty (borrowers, TA providers) to institutionalize a robust monitoring and reporting framework on a sub-project level.  
+
+Each project to be financed by the CCFF shall include a project specific M&E plan, aligned to the CCFF Programme outputs and outcomes. The implementation of the project specific M&E Plan will be monitored by the CCFF Project Management Units semi-annually (for indicators under E5, E6) and yearly for indicators under (E4, E3 and E2), while the E3 indicators shall be verified annually independently on an aggregate portfolio basis.  
+
+Each PMU Unit of the Executing Entities (CCFF Working Group for loan component, TA Facility Unit for grant component) shall aggregate the project monitoring data across the CCFF portfolio and submit the following reports to the Oversight Committee, TA Facility Committee, and KDB respectively as per schedule below.  
+
+### Milestones/Reports  Expected Dates  
+- **Semi-annual performance Reports:** 45 days from the end of each reporting period  
+- **Annual Performance Reports:** 90 days from the end of the 31 December of each year  
+- **Annual Impact Evaluation Report (E3 Indicators):** 60 days from the end of the Year  
+
+The roles and responsibilities of the committees are provided below:
+
+
+---
+*Chunk pages 105–105*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=654 (sys=94, user=560), max_out=1024, ctx=8192
+---
+
+# E E  
+## GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 98  
+
+• **Oversight Committee (OC):** is a sub-committee of the ARDB Board and is responsible for the oversight of the CCFF Lending Facility. Hence, for the purposes of the CCFF M&E approach the roles and responsibilities are as follows:  
+
+### Oversight Committee Roles and Responsibilities:  
+- Provide general oversight and strategic guidance to the CCFF Working Group (the PMU of the CCFF Lending Facility).  
+- Approves CCFF Monitoring and Evaluation Framework.  
+- Oversee the implementation of the CCFF Lending Facility funded activities to monitor progress in achievement of intended results (impact, outcome, outputs) as per the CCFF Programme Logframe. This includes Gender, Environmental and Economic co-benefits.  
+- Convenes at least annually to review the CCFF Lending Facility performance.  
+- Reviews the monitoring deliverables, engages regularly (at least semi-annually) with CCFF Working Group at ARDB (PMU) to ensure that the CCFF Programme is on track against key performance indicators.  
+- Provide advice and guidance on monitoring and interim evaluation issues identified during the Programme implementation; meet with PMU as needed to resolve outstanding issues and provide decision making to ensure delivery of CCFF Programme intended results.  
+- Reviews and endorses reports for further submission to donors, including GCF.  
+- Ensures comprehensive interim and final evaluation is carried out in timely manner, as per pre-agreed schedules and evaluation process detailed under section 3 of the M&E Framework (see Operations Manual).  
+
+• **Note:** KDB is a member of Oversight Committee (OC) and TA Facility Committee (GFC). To this end, as an accredited entity of the GCF and member of the OC and GFC, KDB shall provide overall CCFF Programme oversight to ensure that operational milestones agreed with Green Climate Fund as per log-frame above are reached.  
+
+### Additional KDB roles and responsibilities (beyond as an Oversight Committee member and TA Facility Committee member (as an observer, a non-voting member) are detailed below:  
+- Any Communication (including reporting) to the Green Climate Fund  
+- Collaborate with GCF to agree on the scope and design of interim and final evaluation reports.  
+- Contribute to decision making on major changes or issues as per legal agreements.  
+
+---  
+[Page 1]
+
+
+---
+*Chunk pages 106–106*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=735 (sys=94, user=641), max_out=1024, ctx=8192
+---
+
+# E E  
+## GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 99  
+
+KDB (as an accredited entity of the Green Climate Fund and a member of the Oversight Committee) shall provide overall Programme oversight and submit the Annual Reports to GCF, as well as undertake independent mid-term and final evaluation of the CCFF Programme.  
+
+• **CCFF Working Group at ARDB**: the CCFF Working Group at ARDB is the PMU for the CCFF Lending Facility. The CCFF Working Group is therefore accountable and responsible for overseeing that the activities financed from the CCFF Programme Component 2 contribute to the targeted Programme results (impact, outcome, and outputs). Furthermore, they are ultimately responsible for cascading down the CCFF M&E Framework to a project level and monitoring project level results. This will be achieved through the development of the project specific M&E Plan for each borrower, so to acknowledge the different monitoring requirements related to data capture, recording and analysis of ex-post GHG reduction per borrower (wholesale/direct and sectors targeted).  
+
+It should be highlighted that in addition to M&E functions, the CCFF Working Group on behalf of KDB is responsible for aggregating annual reports of each project management unit (PMU) in joint Annual Performance Report to the Green Climate Fund in format acceptable to GCF. The report is submitted by MSC (as CCFF Working Group member) to the KDB for further submission to the Green Climate Fund.  
+
+## CCFF Working Group Roles and Responsibilities:  
+
+- Provides quality management to ensure that projects financed from the Lending Facility are aligned to the CCFF Programme Logframe project impact results and outcomes related to the loan component 2.  
+- Ensures transparent, high-quality, and timely monitoring of project activities and results, as well as aggregating the monitoring data into Monitoring Deliverables to the Oversight Committee as per section 3.  
+- Manages and addresses any monitoring issues on a project and/or aggregate CCFF Lending Facility portfolio level, so to ensure that activities financed from the Lending Facility contribute to targeted CCFF Programme results. Major issues and red flags are brought to the Oversight Committee’s attention.  
+- Collaborates with Project Counterparties to develop project specific M&E Plan and guides counterparties to institutionalize adequate monitoring systems as per requirement of this CCFF M&E Framework.  
+- Provides guidance on monitoring and evaluation activities throughout project implementation, including guidance on impact calculation methodology.  
+- Evaluates the projects financed from the CCFF Programme Lending Facility, shares lessons learned with the Oversight Committee.  
+- Complies semi-annual and annual performance reports of each EE for submission to the Oversight Committee.  
+- On behalf of the Oversight Committee, prepares reports for the Donors in format acceptable for donors.  
+
+---  
+**Page 106**
+
+
+---
+*Chunk pages 107–107*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=656 (sys=94, user=562), max_out=1024, ctx=8192
+---
+
+# E E 
+## GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 100
+
+• TA Facility Committee (GFC): TA Facility Committee in addition to its role to approve TA interventions (see CCFF Governance), is responsible for the CCFF TA Facility oversight. Hence, for the purposes of CCFF M&E approach the roles and responsibilities are as follows:   
+
+### TA Facility Committee Roles and Responsibilities:  
+• Provide general oversight and strategic guidance to the CCFF TA Facility Unit.  
+• Convene at least annual meeting to review the CCFF TA Facility Performance and review monitoring deliverables.  
+• Ensures comprehensive interim and final evaluation of the CCFF TA Facility is carried out in timely manner, as per pre-agreed schedules and evaluation process. 
+
+• TA Facility Unit at MSC: TA Facility Unit at MSC is the project management unit for the CCFF TA Facility. The TA Facility Unit at MSC is accountable and responsible for overseeing that activities financed from the CCFF programme components 1 and 3 contribute to targeted programme results (impact, outcome, and outputs). Furthermore, they are ultimately responsible for cascading down the M&E framework to activities funded from the TA components and monitor project level results.  
+
+### TA Facility Unit at MSC 
+ Provides quality management to ensure that the TA services provided from the TA Facility are aligned to the CCFF Programme Logframe project impact results and outcome related to grant components 1 and 3.  
+ Ensures transparent, high-quality, and timely monitoring of project activities and results, as well as aggregating the monitoring data into Monitoring Deliverables to the TA Facility Committee.  
+ Manages and addresses any monitoring issues on a project and/or aggregate TA Facility level, so to ensure that activities financed from the TA Facility contribute to targeted CCFF Programme results. Major issues and red flags are brought to the TA Facility Committee’s attention.  
+ Collaborates with Project Counterparties to develop project specific M&E Plan and guides counterparties to institutionalize adequate monitoring systems as per requirement of this CCFF M&E Framework.  
+ Provides guidance on monitoring and evaluation activities throughout project implementation.  
+ Evaluates the TA services from the TA Facility, shares lessons learned with the TA Facility Committee (where KDB is a non-voting member).  
+ Collaborates with the CCFF Working Group to prepare Joint Annual Performance Report for the CCFF Programme to KDB for further submission to GCF.
+
+
+---
+*Chunk pages 108–108*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=466 (sys=94, user=372), max_out=1024, ctx=8192
+---
+
+# E E  
+## GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 101  
+
+- **Project Counterparty (Borrower, TA Provider):** On a project level, the Project Counterparty shall be accountable to implement the project specific M&E Plan under oversight of the CCFF PMU at EE for their respective component. The Project Counterparty shall submit the M&E reports to each project management unit as per the project specific M&E Plan in line to the CCFF M&E Framework requirements. See Operations Manual (section 6).  
+
+It should be highlighted the CCFF has developed a robust M&E Framework, that provides an overview and mechanism of M&E for the CCFF Programme and projects financed by it, so to ensure effective delivery of targeted outputs, outcomes, and impact (including environmental and social, such as gender).  
+
+The main objective of this M&E Framework is to:  
+- Establish key principles, processes and deliverables for effective monitoring and evaluation of the CCFF Programme and activities financed by it.  
+- Promote ownership and accountability for monitoring and evaluation among the CCFF team and key stakeholders, through defining governance structures and reporting requirements.  
+- Encourage learning during CCFF Programme implementation.  
+
+The scope of the Monitoring & Evaluation Framework is the CCFF Programme and activities financed by it. It can be integrated with ARDB’s existing tools, including for data management and performance tracking solutions to ensure effective data collection and monitoring.  
+
+The full M&E Framework is provided in Annex 21 (Operations Manual), while the key information is summarized in Annex 11.
+
+
+---
+*Chunk pages 109–109*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=973 (sys=94, user=879), max_out=1024, ctx=8192
+---
+
+# F.1. Risk factors and mitigations measures (max. 3 pages)
+
+Please describe financial, technical, operational, macroeconomic/political, money laundering/terrorist financing (ML/TF), sanctions, prohibited practices, and other risks that might prevent the project/programme objectives from being achieved. Also describe the proposed risk mitigation measures. Insert additional rows if necessary.
+
+For probability: High has significant probability, Medium has moderate probability, Low has negligible probability  
+For impact: High has significant impact, Medium has moderate impact, Low has negligible impact  
+
+Prohibited practices include abuse, conflict of interest, corruption, retaliation against whistleblowers or witnesses, as well as fraudulent, coercive, collusive, and obstructive practices
+
+## Selected Risk Factor 1
+
+| Category | Probability | Impact |
+|----------|-------------|--------|
+| Technical and operational | Low | Medium |
+
+### Description
+
+The risk is that the CCFF Programme will underperform, because of the ARDB’s current limited track record in climate finance and limited capacity to identify and implement climate projects. Thereby, resulting in technical and operational risks.
+
+### Mitigation Measure(s)
+
+The risk mitigation is embedded in the CCFF Programme design as follows:
+
+- KDB in its role of the accredited entity has performed a capacity assessment of ARDB, that revealed that ARDB has a fiduciary standard that enables them to channel GCF funding. The ARDB is a policy bank functioning as a state-owned commercial bank that adheres to local regulatory requirements of the National Bank of Cambodia and Board/Management has a track record in identifying, measuring, monitoring and controls risks inherent in fiduciary activities.
+
+- The executing entities for the CCFF Lending Facility are MEF, ARDB and MSC, who have a responsibility to implement the funded activity under the Component 2. In particular, MSC will be appointed as Independent Investment Advisor, who has substantial track record in climate finance in Cambodia and Mekong Region and has led the design of the CCFF Programme from inception.
+
+- The CCFF Lending Facility is a ring-fenced facility, thereby preventing Programme funds from mixing with ARDB's other business, assets or liabilities. Hence, risks to investors are limited to the portfolio risks of the CCFF. Importantly, the CCFF Lending Facility will establish a dedicated project management unit (CCFF Working Group) operating with its own Credit Policy, Operational Manual, Environmental and Social Management System, Procurement Policy, and Monitoring and Evaluation Framework that are aligned to GCF Policies and Fiduciary standards, as well as international best practices.
+
+- The organizational structure of the CCFF Working Group (PMU for the Lending Facility) is designed to ensure that decision-making authority regarding CCFF funds is vested for the life of the Programme in personnel with sufficient climate finance capacity and experience. MSC in its role of the Independent Investment Advisor will hold all senior management positions and decision-making authority within the CCFF Lending Facility and be responsible for day-to-day management of CCFF Working Group personnel and operations. In this capacity, a representative appointed by but independent from MSC will advise on all CCFF lending decisions. MSC will be the appointed climate expert on the Green Credit Committee (GCC) to ensure that only high impact climate projects are approved (given loan approvals require unanimous vote by MSC and ARDB, MSC effectively has veto power for projects with limited climate impact).
+
+- Upskilling ARDB staff in climate finance via on-the-job training will be led by MSC, including the training of ARDB staff seconded to CCFF Working Group positions, as well as BAU ARDB staff working with the CCFF Working Group on a regular basis (e.g., AML/CFT, compliance, lending operations, management team etc).
+
+
+---
+*Chunk pages 110–110*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1070 (sys=94, user=976), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 103
+
+Furthermore, Component 1 (Output 1.2) ensures that the CCF F team benefits from access to independent expertise as it may be required to fill-in any technical and operational capacity gaps.
+
+In addition, the CCFF Programme has a robust governance structure, ensuring on-going monitoring of potential technical and operational risks. In particular, the Oversight Committee, a sub-committee of the ARDB Board, will oversee CCFF performance via quarterly reporting from the CCFF Working Group, ensuring compliance with policy (including investment and risk management policies) and Cambodian law. The Oversight Committee composition supports this function, with KDB bringing deep financial institution, development, and climate finance governance experience to complement the ARDB and MEF representative’s existing skillset and quickly detect any operational/technical failures for further mitigation.
+
+The Oversight Committee is supported by the Green Credit Committee bringing complimentary skillsets in climate finance, who will review and approve green loan transactions with a unanimous vote.
+
+All these measures bring the probability of the operational and technical risks of the CCFF Programme to low. For additional information on CCFF Programme governance and institutional structure, kindly refer to section B5.
+
+## Selected Risk Factor 2
+
+| Category | Probability | Impact |
+|----------|-------------|--------|
+| Other    | Low         | Medium |
+
+### Description
+
+Proposed CCFF structure means GCF capital of US$50 million on ARDB balance sheet, creating potential for ARDB to default on loan repayment commitments to GCF. GCF funds are subject to potential ARDB liquidity risk as GCF funding and the CCFF US$100 million portfolio can potentially amount to significant component of ARDB borrowings and loan portfolio, respectively, further compounding potential ARDB credit risk.
+
+### Mitigation Measure(s)
+
+GCF exposure to ARDB liquidity risk is mitigated significantly to 'low' by the following factors, which will grow and diversify ARDB's funding sources and lending activities, thereby limiting GCF funding as a proportion of ARDB committed borrowings and reducing GCF risk exposure to ARDB:
+
+- ARDB 2019 – 2028 transformation and growth strategy – in addition to establishing the CCFF, ARDB is in the process of significantly scaling up lending to rural and agricultural SMEs as part of a 10-year roadmap to become a fully-fledged commercial bank supporting Cambodia's agricultural value chain. ARDB 2021 loan disbursements totalled US$305 million, representing 23% year-on-year loan book growth; based on ARDB forecasts, this trend is expected to continue in 2022 and 2023, with lending growth moderating from 2026 to average between 10 and 15% annual growth. To support this growth, ARDB is actively growing and diversifying funding sources through government loans, and loans from development financial institutions (including ADB, AFD and the International Fund for Agricultural Development), as well as customer deposits and credit lines from agent banks. ARDB has a strong solvency ratio of more than 48% as of 2021, well above the 15% regulatory threshold. As such, GCF funds and CCFF assets will represent an increasingly limited portion of ARDB's overall funding and lending portfolio, reducing GCF risk exposure.
+
+- CCFF phased drawdown approach – the CCFF drawdown of GCF funds will be phased over 5 years, starting from 2024, at a rate of approximately US$20 million per year to meet projected CCFF lending volumes. In 2024, the GCF drawn down funds would only represent approx. 3% of ARDB total borrowings. This assumes initial CCFF capitalization of US$100 million, including $50 million co-investment, and drawdown of GCF and co-investor funds in a 1:1 ratio. GCF funds as a proportion of ARDB committed borrowings are expected to peak in 2028 as the full $50 million is drawn down, with GCF funds representing ~7% of total ARDB borrowings. ARDB funding and loan book growth over the same period ensure this proportion remains relatively low, again reducing GCF risk exposure to ARDB. Please refer to Annex 3 CCFF Financial Model (Tab: Chart) for further analysis and presentation of the phased drawdown relative to the expected growth of ARDB borrowings.
+
+
+---
+*Chunk pages 111–111*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=968 (sys=94, user=874), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 104
+
+## Diversification of Funding Sources
+
+The CCFF Programme will support ARDB to diversify its funding sources and reduce reliance on MEF funding by diversifying the ARDB's borrowing base. This includes accessing climate finance funding from international partners such as multilateral development banks.
+
+## Capital Adequacy and Reserves
+
+ARDB will maintain adequate capital adequacy ratios (CAR) to demonstrate the bank's financial strength and ability to absorb potential losses. The prudential requirement set by the NBC is a CAR of 15%, as of 2021 ARDB has a CAR of >48%, significantly above the prudential requirements, and is projected to be greater than 20% throughout the 20-year life of the CCFF Programme. Please refer to Annex 3 Financial Model (Tab: Capital) for further analysis on ARDB’s current and projected CAR.
+
+To protect GCF’s investment, the loan agreement(s) between KDB and MEF on behalf of ARDB will include a step-in right in favour of the investor, which would be triggered in the event of an actual or potential liquidation event on ARDB’s part. In this situation, ARDB’s rights over CCFF borrowers (as expressed in the loan contracts with these borrowers) would be transferred to KDB prior to ARDB liquidation, enabling KDB to collect repayments directly from these borrowers, thus ensuring GCF funds are repaid. However, ARDB insolvency is highly unlikely given it is a fully state-owned enterprise. Additionally, the final responsibility of loan repayment will be MEF. This measure mitigates the impact of ARDB credit risk on GCF, with residual impact considered 'medium'.
+
+## Selected Risk Factor 3
+
+### Category: Credit
+### Probability: Low
+### Impact: Medium
+
+### Description
+
+As a financial institution engaged in lending to green projects and local financial institutions, the CCFF faces credit risk arising from the possible inability of these borrowers to meet their loan repayment obligations, creating potential for material adverse effects on the CCFF’s operations, financial condition, and reputation, and potentially limiting the CCFF’s ability to scale climate finance in Cambodia and deliver expected climate benefits. While there are several studies that indicate an increase in green credit activities that can reduce non-performing loans, CCFF credit risk is compounded by the CCFF’s role of de-risking projects to crowd in private sector finance by offering products that assume greater risk, such as subordinated debt and project finance. Potential defaults of green project borrowers may negatively impact the repayment of the ARDB to MEF, and of MEF to KDB.
+
+### Mitigation Measure(s)
+
+The CCFF will primarily manage credit risk posed by borrowers through its credit risk management policies ( Annex 21), including through standard lending processes such as due diligence, taking of collateral, and loan monitoring. These policies and procedures have been developed to reflect international best practice (including IFC Performance Standards) and leverage MSC’s deep knowledge and experience of business lending, development finance and green projects in the Cambodian market.
+
+ARDB is a 100% state-owned enterprise. Given the loan agreement will be with MEF for on-lending to ARDB, the ultimate responsibility for repayment will be the MEF. Combined with the management and governance measures outlined in Risk Factors 1 and 2 (including lending decisions by the Green Credit Committee with oversight from the Oversight Committee, membership including experienced banking and credit risk professionals), these measures support an assessment of residual credit risk probability of 'low' – corresponding to the credit risk appetite of the CCFF.
+
+Furthermore, the use of limits on loan amounts to individual projects and at an aggregated sector-level ensures the impact of credit losses on the overall CCFF portfolio is limited to 'low'.
+
+## Selected Risk Factor 4
+
+### Category: ML/FT
+### Probability: Medium
+### Impact: Low
+
+
+---
+*Chunk pages 112–112*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=806 (sys=94, user=712), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 105
+
+## Description
+GCF financing of the CCFF resulting in money laundering, terrorist financing or other prohibited practices.
+
+## Mitigation Measure(s)
+The ARDB will apply the following mitigating measures to the Programme as a leading institution in member country of FATF, (for your reference, the FATF does not call for the application of enhanced due diligence measures to be applied to these jurisdictions but encourages its members and all jurisdictions to take into account the FATF guidance).
+
+1. Ensuring that all the businesses supported by the Programme follow the guidelines and requirements at all times and be aware of any updates/revisions to help them avoid any legal issues that might arise from the perspective of the AMLA.
+2. Establishing a Know-Your-Client (KYC) procedure/policy in line with the AMLA to prevent money laundering activities as it would help ensure the monitoring of all their customer activities and identification of financial transactions that might raise red flags.
+3. Implementing a record management system covering detailed transaction records to assist in monitoring financial activities, make it easier to review the customer’s history, and understand if there’s anything unusual arising from their transactions.
+
+Additionally, loans provided to both direct borrowers (projects) and on a wholesale basis to local financial institutions will be subject to AML/CFT (KYC) risk assessments and due diligence by ARDB, in compliance with ARDB policy and Cambodian law. Borrowers that do not meet these standards will not be eligible for funding by the CCFF, as such, the risk of GCF funds being used to finance ML/TF is 'low'.
+
+## Selected Risk Factor 5
+### Category: Probability Impact
+#### Sanctions
+- **Low Low**
+
+## Description
+There should not be any United Nations Security Council resolutions imposing financial sanctions that would prohibit the engagement of GCF or the AE in the country or with individuals or entities under each Component of the Programme. If there is any, any approvals, exemptions, licenses, or other permissions are required.
+
+## Mitigation Measure(s)
+KDB has similar measures announced by the United Nations (UN) or other international organizations (e.g., World Bank, OECD, IMF, etc.), and will not deal with the countries or companies included in the list. In addition, it was confirmed by the internal system that MEF, ARDB or MSC are not included in the list as of now. Additionally, no individual or entity that is listed on the UN Consolidated Sanctions List will be involved in any manner with the project or its activities, either as a counterparty, implementer, or beneficiary.
+
+## Selected Risk Factor 6
+### Category: Probability Impact
+#### Corruption and Political issues
+- **Medium Low**
+
+## Description
+GCF financing of the CCFF being used for corruption-related or political purposes
+
+## Mitigation Measure(s)
+Programme governance significantly reduces this risk. All fund flows or expenditures cannot be determined by ARDB or MEF alone in the current programme governance structure. External advisor such as MSC will participate as major decision maker in governance structure, which is highly unlikely for Cambodian government or other entities to use
+
+---
+
+
+---
+*Chunk pages 113–113*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=965 (sys=94, user=871), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 106
+
+## Selected Risk Factor 7
+
+### Category: Regulatory Risk  
+#### Probability: Low  
+#### Impact: Low  
+
+### Description  
+CCFF Programme targets investments in several sectors critical to Cambodia’s NDC implementation. While the country’s regulatory environment is generally conducive to private sector investment, there are sector specific gaps (e.g., renewable energy policy context) that expose the CCFF to a certain level of regulatory risks.
+
+### Mitigation Measure(s)  
+The Programme is based on the following mitigation measures:  
+
+#### Policy Dialogue with the public sector  
+Together with the existing donors already financing policy interventions: As an example, currently ADB, WB, KFW, AFD, USAID, JICA, DFAT, and EU all have grant programmes targeting the energy sector gaps to promote Renewable Energy and Energy Efficiency uptake through policy interventions. Furthermore, it should be highlighted that public sector in Cambodia is aware of the challenges and is motivated to address those issues in medium term, as evidenced by the policy efforts—including for example a recent plan to design the ESCO Road Map in Cambodia (UNDP intervention) or updated Master Plan that promotes non-hydro renewable energy investments. The CCFF team will join policy dialogues as necessary to facilitate regulatory reforms. It will do so by sharing lessons learned from investments into government’s key priority sectors, including success stories that should make government more open to change.  
+
+In a similar manner, donors are active in policy work in other sectors, and it is assumed that such on-going policy work will be successful in medium to long-term and thereby, create enabling environment conducive for investments.
+
+#### Blended finance structure of the CCFF Programme  
+That minimizes regulatory risks through concessional funding to the private sector that incentivizes entities to engage in climate projects even in the context of regulatory challenges and availability of grant funding to address regulatory barriers.  
+
+As an example, Activity 3.1.2 envisions the work with the Central Bank of Cambodia to support policy work that creates regulatory environment conducive to climate finance. Component 3.2.1 minimizes the regulatory risks at the project level, as it enables CCFF to develop a pipeline of projects that are bankable and pilot innovative business models that address the sector specific risks, including regulatory risk.  
+
+For example, CCFF is currently in discussion with GGGI on Energy Efficiency Investment platform to aggregate garment pipeline, structure transactions and coordinate finance in garment industry, addressing some of the barriers related to ESCO model in Cambodia.
+
+Additionally, the blended finance structure of the CCFF Programme can play a crucial role in incentivizing entities to engage in climate projects, even when regulatory obstacles persist.  
+
+#### Financial Incentives  
+Blended finance structure can significantly reduce the financial burden associated with climate projects. By lowering the cost of capital, it becomes more attractive for entities to invest in such projects, even if regulatory obstacles make them less economically viable in the short term. The funding can bridge the gap between project costs and potential returns, making the projects financially feasible and attractive.
+
+#### Risk Mitigation  
+Blended finance structure can also help address various risks associated with climate projects. Regulatory obstacles often introduce uncertainties and increase project risks. However, by providing financial support, blended finance can act as a risk-sharing mechanism. It can cushion entities against potential losses arising from regulatory changes or delays, giving them more confidence to proceed with climate projects despite regulatory uncertainties.
+
+#### Capacity Building  
+By providing training, knowledge transfer, and expertise, the CCFF Programme can help entities develop the necessary skills and capabilities to navigate regulatory obstacles effectively. Enhanced capacity enables  
+
+---
+
+
+---
+*Chunk pages 114–114*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=777 (sys=94, user=683), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 107
+
+## Entities to understand and comply with regulations more efficiently, reducing the perceived risks and increasing their willingness to engage in climate projects.
+
+### Demonstrating Success: Blended finance structure can be utilized to support pilot projects or demonstration initiatives that showcase the effectiveness and benefits of climate projects. By funding successful projects, entities can highlight their positive environmental and economic impacts, creating a compelling case for regulatory reforms. The demonstrated success can generate public support, industry recognition, and political momentum, leading to favorable regulatory changes in the long run.
+
+## CCFF team expertise, to identify and manage regulatory risks: CCFF AE and EE ( MEF, ARDB, MSC) are finance sector actors, that have a track record of identifying and navigating through regulatory risks in emerging markets.
+
+### Selected Risk Factor 8
+
+| Category | Probability | Impact |
+|----------|-------------|--------|
+| Other    | Low         | Medium |
+
+#### Description
+Political instability and economic volatility could impact Programme outcomes.
+
+#### Mitigation Measure(s)
+Over the past two decades, Cambodia has been able to achieve political stability and strong economic growth, and there is no indication that this will change in the foreseeable future. Cambodia has a democratic system of government, with elections being held at regular intervals. Cambodia’s political stability and peace has led to its sustained economic growth. Additionally, Cambodia has a highly open market-oriented economy that promotes private sector development.
+
+The CCFF Programme has been designed through strong government support at all levels and considers the following mitigation measures against political instability.
+
+##### Stakeholder Engagement
+The Programme will engage with diverse stakeholders, including government officials, civil society organizations, and local communities, to promote transparency, accountability, and consensus-building in climate finance decision-making processes.
+
+##### Alignment to Long-term Policy Frameworks
+The Programme is aligned to Cambodia’s long-term sustainable development policies that provide stability and protect against sudden policy changes.
+
+##### Capacity Building
+The Programme supports capacity building efforts for government and relevant stakeholders to enhance their ability to manage climate finance effectively and transparently.
+
+##### Anti-corruption Measures
+The Programme will implement robust anti-corruption measures, such as regular audits, financial controls, and transparency mechanisms, to mitigate the risk of funds being misused or misappropriated.
+
+Overall, the CCFF Programme can help address the risks of political instability and economic volatility through proactive mitigation measures. By promoting transparency, stakeholder engagement, good governance, and financial resilience, the Programme can enhance its effectiveness in addressing climate change challenges and helping Cambodia achieve its sustainable development goals.
+
+### Selected Risk Factor 9
+
+| Category | Probability | Impact |
+|----------|-------------|--------|
+| Technical and operational | Low         | Medium |
+
+#### Description
+The CCFF Programme does not achieve its intended outcomes of climate financing volumes due to risk averse Local Financial Institutions (LFIs) who have a high perceived risk for climate projects due to limited track record and capacity, and limited incentive to invest in climate projects. Not all co-financing is confirmed and/or there are insufficient bankable projects meeting the CCFF investment eligibility criteria.
+
+
+---
+*Chunk pages 115–115*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=953 (sys=94, user=859), max_out=1024, ctx=8192
+---
+
+# Mitigation Measure(s)
+
+Mitigating the risk of the CCFF Programme not achieving its intended outcomes due to the high perceived risk of Local Financial Institutions (LFIs) in Cambodia for climate projects will be done through the following ways:
+
+## Capacity Building and Technical Assistance
+
+The CCFF Programme will provide capacity building and technical assistance to LFIs to enhance their understanding of climate projects, including training on project appraisal, risk assessment, and monitoring. The training provided will help LFIs develop the necessary skills and expertise to assess, manage, and monitor climate projects effectively. The Programme will also collaborate with international development agencies and climate finance experts to provide targeted support and guidance to LFIs, facilitating their engagement in climate finance.
+
+## Risk Mitigation Instruments
+
+The CCFF Programme will introduce risk-sharing mechanisms, such as co-financing and subordinated tranches, to reduce the real and perceived risk for LFIs when financing climate projects. The Programme will also work with the Credit Guarantee Corporation of Cambodia (CGCC) to develop portfolio guarantee products to cover potential defaults arising from climate projects, thereby providing a safety net for LFIs.
+
+## Incentive Mechanisms
+
+The CCFF Programme will provide wholesale funding at preferential interest rates, reduced collateral requirements, and extended loan tenures, to encourage LFIs to prioritize climate projects in their lending portfolios. The CCFF Programme will foster partnerships between LFIs and climate project developers to create mutually beneficial collaborations that align with the LFIs' business objectives and risk appetite.
+
+## Knowledge Sharing and Awareness
+
+The CCFF Programme will conduct targeted awareness campaigns and knowledge-sharing events to promote the benefits and opportunities associated with climate projects to LFIs. The Programme will share success stories and case studies highlighting the financial viability and positive impact of climate projects to build confidence and encourage LFIs to engage in this sector. The Programme will facilitate networking and peer learning platforms for LFIs, allowing them to share experiences, best practices, and lessons learned related to climate finance.
+
+## Policy and Regulatory Support
+
+The CCFF Programme will work closely with relevant regulatory authorities to establish supportive policy frameworks and incentives that encourage LFIs to allocate resources towards climate projects. The Programme will engage stakeholders to advocate for streamlined regulatory processes and procedures specifically tailored for climate finance, reducing administrative burdens and increasing efficiency for LFIs. The Programme will engage in policy dialogue with the government to promote the integration of climate considerations into national development plans and financial sector strategies.
+
+By implementing these strategies, the CCFF Programme will mitigate the perceived risk of LFIs, build their capacity and confidence in financing climate projects, and encourage them to channel funds towards climate initiatives. This, in turn, can contribute to achieving the intended outcomes of the Programme in promoting climate action and sustainable development in Cambodia.
+
+## Mitigating the risk of the CCFF not achieving its intended outcomes due to investor commitments and insufficient bankable green projects requires proactive measures and strategies that will be done through the following ways:
+
+### Investor engagement and commitments
+
+There continues to be regular communication and engagement with potential co-financiers to ensure a clear understanding of the CCFF's goals and objectives, including clearly communicating the co-financing requirements, expected commitment levels, and timeline for funding.
+
+### Project pipeline development
+
+There has been significant market outreach and awareness since the GCF Readiness Study (KHM-RS-003) that has built expectations in the market for the CCFF. The CCFF has been designed as a result of extensive market research and outreach efforts to identify and engage with potential project developers and sponsors, and financial institutions. The CCFF TA Facility will offer support and capacity building to project developers to enhance their ability to develop green projects and meet CCFF requirements. The CCFF will
+
+[Page 108]
+
+
+---
+*Chunk pages 116–116*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=766 (sys=94, user=672), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 109
+
+Also have a Technical Advisory Panel, which will support partnerships with government agencies, industry associations and development organizations to leverage their networks and resources in identifying bankable green projects. The CCFF will implement robust project screening criteria and a due diligence process to ensure the selection of high-quality and viable green projects.
+
+## Adaptability and flexibility:
+The CCFF Working Group will continuously assess market dynamics and evolving climate priorities to identify emerging technologies with high potential for green projects. The CCFF investment eligibility criteria allow for a diverse portfolio of green projects across sectors to reduce concentration risk and increase the likelihood of finding bankable projects. The CCFF will design and offer flexible financing structures that accommodate the specific needs and risk profiles of different types of green projects, allowing customized financing solutions.
+
+## Collaboration and knowledge sharing:
+The CCFF will foster collaboration and knowledge sharing among stakeholders, including financial institutions, project developers, government agencies and industry experts to collectively address barriers and share best practices for green project development and financing. The CCFF Programme will organize workshops to facilitate dialogue and learning opportunities among key stakeholders, promoting the exchange of experiences and innovative ideas in climate financing.
+
+By implementing these strategies, the CCFF can mitigate the risks associated with co-financer commitments and insufficient bankable green projects. Proactive investor engagement, strong pipeline development, capacity building support, adaptability and collaboration can enhance the CCFF’s ability to attract co-finance and finance a robust portfolio of high-impact climate projects.
+
+## Selected Risk Factor 10
+### Category: Probability Impact
+
+| Technical and operational | Low | Medium |
+|---------------------------|-----|--------|
+| Description               | The CCFF underperforms in the expected uptake of green loans due to private sector indebtedness. |
+| Mitigation Measure(s)     | We have already checked demand for climate financing and project pipelines. Therefore, the risk of the private sector indebtedness will be limited to this programme. Furthermore, the CCFF will implement responsible lending policies at both the direct and wholesale borrower level that promote sustainable lending practices, enhanced debt management and risk assessment frameworks, improved business viability through TA and capacity building initiatives, and foster an enabling environment for sustainable finance. |
+
+Specifically, the CCFF will have:
+- Stringent lending policies and guidelines, designed to ensure responsible assessment of a project's debt capacity (affordable and suitable to needs), ensuring additional debt does not put the borrower into a situation of financial hardship.
+- Policies and guidelines that include requirements for potential borrowers to meet international benchmark hurdles for assessing debt serviceability, etc.
+- Loan agreements with banks that include reporting requirements of these ratios to ensure that analysis of the end borrower has been completed and adhere to responsible lending guidelines.
+- Part of wholesale lending due diligence will be to also assess the Financial Institution's marketing practices, whereby any institution that engages in any form of predatory lending will be excluded.
+
+
+---
+*Chunk pages 117–117*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1085 (sys=94, user=991), max_out=1024, ctx=8192
+---
+
+# GCF Policies and Standards  
+## G.1. Environmental and social risk assessment (max. 750 words, approximately 1.5 pages)   
+
+### Programme E&S Risk Categorization  
+The Programme aims to establish a US$10 9 million Cambodian Climate Finance Facility, so to invest into high climate impact projects in FOLU, Agriculture, Energy (RE, EE and Transport) and Water sectors. The Programme shall only finance activities that have low to medium environmental and social risks, which are generally site-specific, largely reversible, and readily addressed through mitigation measures. The high risk (Category A) projects will be excluded from the activities to be funded by the CCFF as per the Exclusion List included in CCFF E&S Management System (Annex 6).  
+
+Provided that the Programme includes categories of activities involving investment through financial intermediation, the CCFF is categorized as medium level of intermediation, I2 as per GCF’s revised environmental and social policy. The portfolio of CCFF shall include low and medium E&S risk projects only.  
+
+### Environmental and Social Management  
+The Accredited Entity has developed the Environmental & Social Management System for CCFF in accordance with the GCF revised ESS Policy and IFC Performance Standards. The ESMS provides a set of policies, procedures, and resources to identify, manage, and reduce environmental and social (E&S) risks and impacts associated with the CCFF’s operations and investments.  
+
+The CCFF’s environmental and social management process is summarized below; please refer to the Annex 6 [E&S Management System] for details.  
+
+#### Screening of activities to be financed by the CCFF loan instrument  
+Screening of the activities against ESMS Exclusion List to ensure that activity does not fall under excluded risk.  
+
+#### Risk Categorization  
+Categorization of E&S risks; only category B (medium) and Category C (low) E&S risk projects will advance to DD stage, as category A (high) E&S risk activities are excluded from CCFF investment58. The categorization ensures that the extent of the due diligence is commensurate with the risks posed by a potential investment.  
+
+#### Due-Diligence (DD)  
+Assess E&S risks, impacts as per IFC Performance Standards, and Borrower’s Capacity to manage the E&S risk.  
+Identify gaps in borrower’s capacity.  
+Develop time-bound and measurable borrower specific Environmental and Social Action Plan (ESAP) to mitigate risks/gaps.  
+
+#### Decision-Making  
+CCFF Green Credit Committee will review the environmental and social assessment of the activities; make an investment decision accordingly. Only invest in projects where risks are largely reversible and readily addressed through mitigation measures as detailed in ESAP.  
+
+#### Post Investment Monitoring  
+CCFF will monitor E&S activities through review of quarterly and annual E&S reporting of the borrowers, as well as site visits and project effected stakeholder engagement as necessary. The extent of monitoring will be based on the type and level of risks identified, including environmental and social risks.  
+
+### Other relevant information from ESMS [see Annex 6 for details]:  
+
+- The CCFF’s ESMS will be operationalized by the E&S Manager that will have necessary expertise and resources to implement the ESMS together with the core CCFF Working Group team. The role and responsibilities of E &S Manager is covered in the ESMS document. The E &S Manager shall perform the trainings for the core CCFF Working Group team so to ensure that ESMS is internalized and operationalized by the CCF F Working Group staffs. In addition, the E&S Manager will have access to external technical expertise (on a need basis, for category B projects) to perform E&S due-diligence and develop ESMP.  
+
+- The CCFF borrowers will be required to adhere to relevant E&S local laws and requirements of the CCFF ESMS. In particular, the borrowers (all wholesale loan borrowers, direct lending borrowers ) with a Category B E&S risk project proposed for CCFF financing will be required to institutionalize the borrower level ESMS proportionate to the E&S risks and impacts of its activities, and where applicable, appropriate processes for  
+
+58 The CCFF will not invest in any “high risk” projects classified as Category A as per CCFF ESMS.
+
+
+---
+*Chunk pages 118–118*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1059 (sys=94, user=965), max_out=1024, ctx=8192
+---
+
+# G.2. Gender assessment and action plan (max. 500 words, approximately 1 page)
+
+A Programme level gender assessment has been performed to identify gender specific vulnerabilities and risks in Cambodia on a country level and the sectors targeted for funding. The detailed assessment is included in Annex 8a, and the key vulnerabilities are summarized below:
+
+### I. The skill and capacity of women’s participation in economic activities remains limited, and the opportunities and resource management open to women remain lower than men, with barriers to access including time availability and access to information, production resources, finances, and technology.
+
+### II. Limited women involvement in decision-making across all sectors, which results in the underrepresentation of women needs in project design.
+
+### III. While there is an indication of the LFI’s to develop capacities in gender, there is a lack of the gender mainstreaming in financial sector and limited financial products incorporating gender inclusiveness.
+
+Based on this assessment, the CCFF programme aims to mainstream gender into its investments, through promoting gender equity and economic empowerment across key programme outputs (Output 1-3 in Section B3) as follows:
+
+## 1.1 Enhance Institutional Preparedness of the CCFF
+
+CCFF is set up as a ring-fenced account with dedicated governance, operational structure (including team/expertise) and Monitoring, Reporting and Verification (MRV). Thereby, to integrate gender equity and economic empowerment opportunities in institutional preparedness of the CCFF, gender will be mainstreamed across CCFF’s governance, operational process and monitoring, reporting, and verification system as follows:
+
+### 1. Gender Mainstreamed Governance on the level of the CCFF will be achieved, through (a) adopting CCFF Gender Policy to communicate CCFF aspirations to internal and external stakeholders towards gender-mainstreamed investments (b) empowering women in decision making roles and setting specific targets and (c) enhancing internal gender expertise at level of governance, by assigning respective roles and responsibilities. Specifically, a full time Gender Focal Point will be appointed by an Executing Entity to the CCFF working group, which will be supported by external consultants on a need basis to implement CCFF Gender Policy.
+
+It is noteworthy that CCFF Gender
+
+---
+
+
+---
+*Chunk pages 119–119*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1039 (sys=94, user=945), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 112
+
+## Focal Point’s responsibilities also include capacity building of borrowers, through targeted training, knowledge sharing events and tools.
+
+### a. Gender Mainstreamed Operational process on the level of CCFF, so to institutionalize CCFF Gender Policy through dedicating resources and introducing gender responsive HR practices to enhance gender equality in the workforce. This will be achieved through adopting and training staff on an anti-sexual harassment policy with respective grievance mechanism tailored to CCFF SEAH. As well as promote non-discrimination and equal opportunities and support hiring retention and promotion of female staff, through setting specific measurable targets.
+
+### b. Gender Mainstreamed Monitoring, Reporting and Verification system: gender-disaggregated data collection, analyses and impact reporting will be promoted as per CCFF GAP.
+
+## 1.2 Institutional Capacity Building of ARDB to Become a National Climate Bank in Cambodia: Integrate knowledge sharing culture within ARDB, so to share lessons learned from CCFF implementation in terms of promoting gender equity and economic empowerment. This will be achieved through institutional capacity needs assessment of ARDB (including vis a vis GCF fiduciary requirements for accreditation) and performing respective knowledge sharing and capacity building workshops.
+
+## 2. Gender-mainstreamed wholesale and direct green lending:
+
+To promote gender equality and women economic empowerment into CCFF’s lending process, the CCFF will introduce 2X aligned gender-mainstreamed criteria in lending process (see Annex 8b for preliminary criteria) and dedicate 30% of its Lending Facility to borrowers that meet preliminary criteria below:
+
+- Are founded by a woman or women or are majority owned by women (51%); and/or
+- Have at least 30% women in senior management; and/or
+- Provide products or services designed to disproportionately benefit women; and/or
+- Have a workforce that is at least 30%-50% women, together with a progressive human resource policy; and/or
+- For 30% of the portfolio to meet the criteria above (applicable for financial institutions only).
+
+In addition, to mainstream gender co-benefit outcome into investment projects, each borrower funded by the CCFF Programme shall be required to undertake Gender Assessment and develop a Gender Action Plan, that will set actionable targets to promote gender equity and women economic empowerment at the level of borrower/project.
+
+As a result of such gender-mainstreaming into CCFF lending process, the following measurable results are expected:
+
+- US$ 52,050,000 (30% of the CCFF Loan Proceeds) dedicated to projects that enhance gender equity and women economic empowerment
+- Gender mainstreamed, jobs generated through CCFF investments: [256,007], out of which 40% female.
+- Direct Beneficiaries with more climate-resilient water security: [749,135], out of which 51% are female.
+- Direct Beneficiaries (female/male) adopting improved and/or new climate-resilient livelihood options: [36,128], out of which 40% female.
+
+## 3. Strengthened Climate Finance Framework and Sustainable Finance Ecosystem:
+
+CCFF shall dedicate 20% of grant funding to enhance gender mainstreaming into climate investment projects and contribute to institutional transformation. This will be achieved by:
+
+### a) Active collaboration with Cambodian Sustainable Finance Initiative (CSFI) and National Bank of Cambodia (NBC) to organize knowledge sharing events and facilitate much needed dialogue on gender responsive climate financing between the public and private sector actors. Such knowledge sharing events are expected to contribute to the need for identification for gender mainstreaming in Cambodia’s climate finance policy framework and CCFF grant funding is readily available to fund relevant advisory services to advance the gender mainstreaming in Cambodia’s climate finance policy framework (see OP Manual, TA eligibility criteria for activity 3.1.2 & 3.1.1). Importantly, knowledge sharing events will be geared towards sharing lessons learned from CCFF Program investment activities to demonstrate gender related differential impacts of Climate Change (CC) and the benefits from investing in gender responsive CC projects. Thereby, building a
+
+--- END EXTRACTED TEXT ---
+
+
+---
+*Chunk pages 120–120*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1094 (sys=94, user=1000), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 113
+
+## business case to unlock public and private sector buy-in for gender-mainstreamed investments in Cambodia.
+
+The CCFF GAP includes measurable targets for knowledge sharing events and knowledge products (cases) that are critical to equip local stakeholders with resources to understand how consideration of climate impact and gender factors contributes to positive investment outcomes.
+
+### b) Dedicated technical assistance & gender expertise from CCFF to support targeted borrowers to mainstream gender at a level of project & initiate institutional-wide transformation.
+
+Given capacity and knowledge gaps in Cambodia’s financial sector to promote uptake of gender mainstreamed investments, the CCFF Programme through its full-time Gender Specialist and Gender Consultants, and available TA funding for activity 3.2.1 and 3.2.2 will provide technical assistance to enhance gender mainstreaming into climate finance projects and institutional transformation of the targeted borrowers. Support will be provided to perform gender assessments to identify the gender specific risks at the project level and develop gender action plans to mitigate risks, while borrowers will be supported to introduce good practice standards to mainstream gender at institutional level (e.g. develop gender policy or GAP, promote gender equity in workforce and governance, anti-SEAH practices) and build their capacity through various knowledge transfer activities.
+
+Furthermore, to unlock gender-mainstreamed innovations, the CCFF borrowers will be eligible to receive technical assistance to develop products and services targeting women customers. Active coordination with wholesale loan borrowers (LFIs) is planned to mainstream gender into the bank’s lending and operations, by equipping wholesale borrowers with respective tools and technical capacity to institutionalize gender -mainstreamed climate finance.
+
+### Update of the Gender Action Plan:
+
+It should be highlighted that CCFF Gender Action Plan has been designed as per GCF Gender Policy. The CCFF GAP will be reviewed annually and updated as needed, to reflect the changing environment in Cambodia and any new vulnerabilities to be found through project specific gender assessments.
+
+CCFF Programme aims to improve delivery of gender responsive climate finance in Cambodia, through building a business case for gender mainstreamed climate finance in Cambodia’s financial and private sector and hence, contributing to paradigm shift towards gender-responsive climate finance.
+
+## G.3. Financial management and procurement (max. 500 words, approximately 1 page)
+
+KDB will be responsible for the monitoring and review of the Programme’s performance and will work closely with the Executing Entities ( MEF, ARDB, MSC ) to develop CCFF operational policies (e.g., financial management, risk management, procurement, etc.) to ensure compliance with best practices and international standards. KDB, through participation in the Oversight Committee, will seek monthly/quarterly reviews with the Executing Entities of the Programme to review financial and operational performance in order to ensure compliance to policies and provide necessary reporting to GCF.
+
+The investment proceeds of the GCF will be managed according to the general provisions of: (i) the FAA and AMA between the GCF and KDB; and (ii) Financial management and procurement guidelines of the CCFF Programme to be developed under Component 1 based on following key information below . Additionally, the EEs will follow KDB’s financial management and procurement policy guidance.
+
+### Financial management:
+
+The Programme’s funding flows will be regularly monitored and strictly governed by a set of contractual and institutional arrangements under the ring-fenced facility implementation structure, as addressed in section B.4. In principle, the GCF proceeds will be independently managed in a ring-fenced account pursuant to the general provisions of the AMA and FAA. As the Accredited Entity, KDB, will regularly confirm whether financial operations, such as disbursement of the proceeds, are being properly executed in compliance with contractual and institutional arrangements.
+
+### The funds in the CCFF ring-fenced account will be managed and administered by the ARDB and MSC as IIA of the CCFF Lending Facility, with loan disbursements requiring unanimous approval of the GCC and dual sign off by authorized signatories from MSC and ARDB to ensure a sound control environment. Additionally, CCFF Lending Facility will have a dedicated senior Operations Manager to ensure the process for authorizing payments, preparing monthly trial balances, and producing monthly/quarterly reports are in accordance with the CCFF’s governing documents. In addition, EE will have a dedicated PMU who monitors all the TA activities under Component 1 and 3 and reports it to KDB.
+
+
+---
+*Chunk pages 121–121*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1016 (sys=94, user=922), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 114
+
+## Financial Management Practices
+
+The CCFF Programme will develop its own financial management practices under Component 1. Financial management includes compliance to NBC regulations and monitoring, which includes comprehensive weekly and monthly reporting. In addition, it includes reporting to GCF and other co-financiers in the form of semi-annual and annual financial statements.
+
+Financial statements shall be prepared in accordance with Cambodian International Financial Reporting Standards ("CIFRS") and subject to an annual audit by an independent auditor, the auditor to be selected through competitive bidding in accordance with CCFF procurement policies.
+
+The wholesale and direct green loan borrowers will be required to prepare accounts in accordance with CIFRS and required to produce annually audited financial statements.
+
+## Procurement
+
+CCFF will develop its own procurement policy statement which will be aligned to international best practices and informed by the KDB procurement guideline as well as preliminary procurement plan submitted herein. All procurements shall be in accordance with the procurement guidelines for goods and services and procurement guidelines of GCF and KDB (AE) on the use of consultants.
+
+Where the scope of the work can be precisely defined, the TOR are clear, and where it is possible to estimate with reasonable precision the personnel, any consultants, time and other inputs required will be selected using a Quality-and-Cost-Based approach. Where individual consultants are engaged – as opposed to firms – with due regard will be taken of their professional qualifications and relevant experience.
+
+Within a framework of Component 1, CCFF will develop and adopt whistleblower mechanism, so to set out CCFF's commitment to strengthen its system of integrity and to eradicate Sanctionable Practices and Misconduct in CCFF-financed operations and activities.
+
+## Risk Management (including KYC, AML/CFT of borrowers)
+
+ARDB as a licensed commercial bank is subject to the supervision of the NBC. The NBC has comprehensive and established banking regulations that govern ARDB. Additionally, ARDB has a holistic and integrated risk management system that ensures there is alignment between daily operations, policies, risks and strategies.
+
+While the CCFF Lending Facility will be subject to independent governance structure for loan origination, disbursement, and monitoring, ARDB BAU risk and operations teams will support functions of KYC, AML/CFT, and Sanctions Screening. ARDB is regularly monitored and fully in compliance with the NBC regulations regarding governance, internal controls, and risk management.
+
+## G.4. Disclosure of funding proposal
+
+Note: The Information Disclosure Policy (IDP) provides that the GCF will apply a presumption in favour of disclosure for all information and documents relating to the GCF and its funding activities. Under the IDP, project and programme funding proposals will be disclosed on the GCF website, simultaneous with the submission to the Board, subject to the redaction of any information that may not be disclosed pursuant to the IDP.
+
+Information provided in confidence is one of the exceptions, but this exception should not be applied broadly to an entire document if the document contains specific, segregable portions that can be disclosed without prejudice or harm.
+
+Indicate below whether or not the funding proposal includes confidential information:
+
+- ☐ No confidential information: The accredited entity confirms that the funding proposal, including its annexes, may be disclosed in full by the GCF, as no information is being provided in confidence.
+- ☒ With confidential information: The accredited entity declares that the funding proposal, including its annexes, may not be disclosed in full by the GCF, as certain information is being provided in confidence. Accordingly, the accredited entity is providing to the Secretariat the following two copies of the funding proposal, including all annexes:
+  - Full copy for internal use of the GCF in which the confidential portions are marked accordingly, together with an explanatory note regarding the said portions and the corresponding reason for confidentiality under the accredited entity's disclosure policy, and
+  - Redacted copy for disclosure on the GCF website.
+  
+The funding proposal can only be processed upon receipt of the two copies above, if containing confidential information.
+
+
+---
+*Chunk pages 122–122*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=692 (sys=94, user=598), max_out=1024, ctx=8192
+---
+
+# ANNEXES
+
+## H.1. Mandatory annexes  
+- ☒ Annex 1 NDA no-objection letter(s) (template provided)  
+- ☒ Annex 2 Feasibility study - and a market study, if applicable  
+- ☒ Annex 3 Economic and/or financial analyses in spreadsheet format  
+- ☒ Annex 4 Detailed budget plan (template provided)  
+- ☒ Annex 5 Implementation timetable including key project/programme milestones (template provided)  
+- ☒ Annex 6 E&S document corresponding to the E&S category (A, B or C; or I1, I2 or I3):  
+  - (ESS disclosure form provided)  
+  - ☐ Environmental and Social Impact Assessment (ESIA) or  
+  - ☐ Environmental and Social Management Plan (ESMP) or  
+  - ☒ Environmental and Social Management System (ESMS)  
+  - ☐ Others (please specify – e.g. Resettlement Action Plan, Resettlement Policy Framework,  
+    Indigenous People’s Plan, Land Acquisition Plan, etc.)  
+- ☒ Annex 7 Summary of consultations and stakeholder engagement plan  
+- ☒ Annex 8 Gender assessment and project/programme-level action plan (template provided)  
+- ☒ Annex 9 Legal due diligence (regulation, taxation and insurance)  
+- ☒ Annex 10 Procurement plan (template provided)  
+- ☒ Annex 11 Monitoring and evaluation plan (template provided)  
+- ☒ Annex 12 AE fee request (template provided)  
+- ☒ Annex 13 Co-financing commitment letter, if applicable (template provided)  
+- ☒ Annex 14 Term sheet including a detailed disbursement schedule and, if applicable, repayment schedule  
+
+## H.2. Other annexes as applicable  
+- ☐ Annex 15 Evidence of internal approval (template provided)  
+- ☐ Annex 16 Map(s) indicating the location of proposed interventions  
+- ☐ Annex 17 Multi-country project/programme information (template provided)  
+- ☐ Annex 18 Appraisal, due diligence or evaluation report for proposals based on up-scaling or replicating a pilot project  
+- ☐ Annex 19 Procedures for controlling procurement by third parties or executing entities undertaking projects financed by the entity  
+- ☐ Annex 20 First level AML/CFT (KYC) assessment  
+- ☒ Annex 21 Operations manual (Operations and maintenance)  
+- ☒ Annex 22 Assessment of GHG emission reductions and their monitoring and reporting (for mitigation and cross cutting-projects)  
+- ☒ Annex 23 MSC Capacity Assessment  
+- ☒ Annex 24 ARDB Capacity Assessment  
+- ☒ Annex 25 KDB – In-kind contribution proposal  
+
+[Page 122]
+
+
+---
+*Chunk pages 123–123*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=202 (sys=94, user=108), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 116
+
+* Please note that a funding proposal will be considered complete only upon receipt of all the applicable supporting documents.
+
+59 Annex 22 is mandatory for mitigation and cross-cutting projects.  
+☑ Annex 26 MEF Capacity Assessment
+
+
+---
+*Chunk pages 124–124*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=642 (sys=94, user=548), max_out=1024, ctx=8192
+---
+
+# Kingdom of Cambodia  
+## Ministry of Environment  
+
+### Subject: Funding proposal for the GCF by The Korea Development Bank regarding Cambodian Climate Financing Facility  
+
+Dear Mr. Yannick Glemarec,  
+
+We refer to the programme *Cambodian Climate Financing Facility* in Cambodia as included in the funding proposal submitted by The Korea Development Bank (KDB) to us on 18 November 2022.  
+
+The undersigned is the duly authorized representative of the Ministry of Environment, the National Designated Authority of Cambodia.  
+
+Pursuant to GCF decision B.08/10, the content of which we acknowledge to have reviewed, we hereby communicate our no-objection to the programme as included in the funding proposal.  
+
+By communicating our no-objection, it is implied that:  
+a. The government of Cambodia has no-objection to the programme as included in the funding proposal;  
+b. The programme as included in the funding proposal is in conformity with the national priorities, strategies and plans of Cambodia;  
+c. In accordance with the GCF's environmental and social safeguards, the programme as included in the funding proposal is in conformity with relevant national laws and regulations.  
+
+We also confirm that our national process for ascertaining no-objection to the programme as included in the funding proposal has been duly followed.  
+
+We also confirm that our no-objection applies to all projects or activities to be implemented within the scope of the programme.  
+
+We acknowledge that this letter will be made publicly available on the GCF website.  
+
+Please, Mr. Glemarec, accept the assurances of our highest consideration.  
+
+Morodok Techo Building (Lot 503)  
+Tonie Bassac, Chamkannom, Phnom Penh, CAMBODIA  
+Phone: 023 235 004 / 023 235 006  
+
+No-Objection letter(s) issued by the national designated authority(ies) or focal point(s)  
+
+---  
+
+*Page 124*
+
+
+---
+*Chunk pages 125–125*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=568 (sys=94, user=474), max_out=1024, ctx=8192
+---
+
+# Environmental and Social Safeguards Report Form
+
+## Basic project or programme information
+
+- **Project or programme title**: Cambodian Climate Financing Facility
+- **Existence of subproject(s) to be identified after GCF Board approval**: Yes
+- **Sector (public or private)**: Private
+- **Accredited entity**: Korea Development Bank (KDB)
+- **Environmental and social safeguards (ESS) category**: Category I-2
+- **Location – specific location(s) of project or target country or location(s) of programme**: Cambodia
+
+## Environmental and Social Impact Assessment (ESIA) (if applicable)
+
+- **Date of disclosure on accredited entity’s website**: N/A
+- **Language(s) of disclosure**: N/A
+- **Explanation on language**: N/A
+- **Link to disclosure**: N/A
+- **Other link(s)**: N/A
+- **Remarks**: N/A
+
+## Environmental and Social Management Plan (ESMP) (if applicable)
+
+- **Date of disclosure on accredited entity’s website**: N/A
+- **Language(s) of disclosure**: N/A
+- **Explanation on language**: N/A
+- **Link to disclosure**: N/A
+- **Other link(s)**: N/A
+- **Remarks**: N/A
+
+## Environmental and Social Management System (ESMS) (if applicable)
+
+- **Date of disclosure on accredited entity’s website**: Friday, February 2, 2024
+- **Language(s) of disclosure**: English and Khmer
+- **Explanation on language**: Khmer is the official language of Cambodia, which is the language understandable to affected peoples/stakeholders
+- **Link to disclosure**:
+  - English: [https://www.kdb.co.kr/wcmscontents/pdf/ESMS_English_2024.pdf](https://www.kdb.co.kr/wcmscontents/pdf/ESMS_English_2024.pdf)
+  - Khmer: [https://www.kdb.co.kr/wcmscontents/pdf/ESMS_Local_Language_2024.pdf](https://www.kdb.co.kr/wcmscontents/pdf/ESMS_Local_Language_2024.pdf)
+- **Other link(s)**: N/A
+- **Remarks**: An ESMS consistent with the requirements for a Category I-2 programme is contained in the "Environmental and Social Management System".
+
+## Any other relevant ESS reports, e.g. Resettlement Action Plan (RAP), Resettlement Policy Framework (RPF), Indigenous Peoples Plan (IPP), Indigenous Peoples Planning Framework (IPPF) (if applicable)
+
+- **Remarks**: N/A
+
+--- 
+
+*Page 125*
+
+
+---
+*Chunk pages 126–126*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=438 (sys=94, user=344), max_out=1024, ctx=8192
+---
+
+# Description of report/disclosure on accredited entity’s website
+
+## Indigenous Peoples Planning Framework (IPPF) / Friday, February 2, 2024
+
+### Language(s) of disclosure
+- English and Khmer
+
+### Explanation on language
+Khmer is the official language of Cambodia, which is the language understandable to affected peoples/stakeholders.
+
+### Link to disclosure
+- English: [https://www.kdb.co.kr/wcmscontents/pdf/ESMS_English_2024.pdf](https://www.kdb.co.kr/wcmscontents/pdf/ESMS_English_2024.pdf)
+- Khmer: [https://www.kdb.co.kr/wcmscontents/pdf/ESMS_Local_Language_2024.pdf](https://www.kdb.co.kr/wcmscontents/pdf/ESMS_Local_Language_2024.pdf)
+
+### Other link(s)
+N/A
+
+### Remarks
+An ESMS consistent with the requirements for a Category I-2 programme, including the Indigenous Peoples Planning Framework(IPPF), is contained in the "Environmental and Social Management System".
+
+### Disclosure in locations convenient to affected peoples (stakeholders)
+Date: Friday, February 2, 2024
+
+Place:
+Hard copies of the ESMS will be made available at the Agriculture and Rural Development Bank, #9-13, St 7, Sangkat Chaktomuk, Kahn Doun Penh, Phnom Penh, Cambodia
+
+### Date of Board meeting in which the FP is intended to be considered
+Date of accredited entity’s Board meeting: TBD
+
+### Date of GCF’s Board meeting
+Monday, March 4, 2024
+
+> Note: This form was prepared by the accredited entity stated above.
+
+
+---
+*Chunk pages 127–127*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=794 (sys=94, user=700), max_out=1024, ctx=8192
+---
+
+# GCF/B.38/02/Add.08  
+## Page 127  
+
+### Independent Technical Advisory Panel’s assessment of  
+## FP228  
+### Proposal name: Cambodian Climate Financing Facility  
+### Accredited entity: Korea Development Bank (KDB)  
+### Country/(ies): Cambodia  
+### Project/programme size: Medium  
+
+## I. Assessment of the independent Technical Advisory Panel  
+
+### 1.1 Overview  
+
+1. The Cambodian Climate Finance Facility (“CCFF” or “Facility”) is designed to mobilize finance for low carbon and climate resiliency projects in Cambodia, a least developed country. CCFF is a two-part programme (Lending Facility and Technical Assistance Facility) to be capital-ized and deployed across two temporal phases. The Lending Facility will offer direct project fi-nancing to qualifying projects in the form of long-term concessional loans and will also provide wholesale lending to local financial institutions (LFIs). In addition to debt products, CCFF also includes a technical assistance component that will be used to establish the Facility and to sup-port capacity-building among relevant market stakeholders, including LFIs. The CCFF Lending Facility has a target capitalization of USD 100 million, while the Technical Assistance Facility will be funded by grants to a total of USD 9 million.  
+
+2. CCFF will be implemented by the Agriculture and Rural Development Bank (ARDB), a Cambodian state-owned commercial bank in conjunction with Mekong Strategic Capital (MSC). MSC is an investment and advisory company incorporated in Cambodia focused on climate fi-nance initiatives in the country. MSC was actively involved in developing the CCFF concept and building up ARDB capacity in anticipation of CCFF as an implementing partner of the United States Agency for International Development Green Invest Asia programme that provided critical project preparation funding for CCFF. In addition, MSC, in its role of investment adviser has a relevant track record in assessing the specific risks and opportunities of climate projects in Cambodia, as well public and private sector stakeholder engagement.  
+
+3. Korea Development Bank (KDB) will act as the accredited entity (AE). The Cambodian Ministry of Economy and Finance (MEF) will also participate as an executing entity.  
+
+4. The Facility will be capitalized and operated across two phases. The first tranche will include USD 15 million from GCF and co-financing of a minimum USD 15 million from ARDB. GCF funding is conditioned on ARDB’s contribution. CCFF envisages a second phase where GCF would contribute an additional USD 35 million subject to co-financing of a minimum USD 35 million from other investors and development finance institutions. The second phase is subject to CCFF meeting deployment milestones (70 per cent of capital deployed), which would corrob-orate the market demand for climate finance as well as the execution capacity of the CCFF management team. The second tranche is expected to be initiated within 24 months of the first disbursement of the first tranche, conditioned on the CCFF team meeting its investment and deployment targets. Discussions with potential co-funders for the second tranche are already underway.
+
+
+---
+*Chunk pages 128–128*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1010 (sys=94, user=916), max_out=1024, ctx=8192
+---
+
+# GCF/B.38/02/Add.08  
+## Page 128  
+
+5. The Technical Assistance Facility has similar tranches. GCF will contribute USD 5 million, split equally between tranche 1 and tranche 2. The remaining USD 4 million in co-financing will be contributed by KDB and ARDB (USD 3 million from ARDB and USD 1 million from KDB; both in-kind). Disbursements for each tranche will be conditional on confirmation of the commitments from co-financiers for the Lending Facility.  
+
+6. The grant funds will be implemented by MSC as the executing entity and in a first instance will be applied to the establishment and institutional preparedness of CCFF and capacity-building of ARDB staff to support the projected lending activities. Additionally, MSC will work with public sector stakeholders to advance climate policy and build capacity of LFIs and private sector entities on managing climate projects.  
+
+7. In the Lending Facility, KDB, serving as the accredited entity, will direct funds to MEF, which, in turn, will extend loans to ARDB. CCFF funds will be securely managed within a ring-fenced account at ARDB. MEF, ARDB, and MSC will jointly function as executing entities for disbursement funds to LFIs and providing direct loans to the private sector for mitigation and adaptation projects that qualify. The major share, eighty per cent of the loan component, is earmarked for direct lending to private sector entities, particularly for early-stage and growth capital, offering term loans and revolving credit facilities. The remaining portion will be allocated to wholesale lending through LFIs. These loans are designed to bolster the development of Cambodia's low-emission, climate-resilient pathways, leveraging both public and private sector funding within CCFF and the projects it supports. As capacity grows, it is anticipated that ARDB will progressively assume sole management of CCFF.  
+
+8. The funding proposal anticipates that the programme will yield a climate impact, reducing 11.1 million tonnes of carbon dioxide equivalent (t CO2 eq) and benefiting 1.3 million direct and indirect individuals. These beneficiaries will experience enhanced adaptive capacity to climate change, along with more robust physical infrastructure resilient to the impacts of climate change.  
+
+9. CCFF is Cambodia’s first green financing initiative at a nationwide scale. It is also described in the funding proposal as a first step to enabling ARDB’s transition to a fully-fledged national climate development bank with direct access to international climate finance for Cambodia, including eventual accreditation with GCF.  
+
+10. Lastly, we note that the funding proposal stretches to over 120 pages which is more than double the proposed maximum length of a GCF funding proposal. This is not unique to the project at hand as over-long proposals are commonplace. We would like to see the GCF Secretariat and AEs make a better effort to keep within the limits requested in the standard GCF format.  
+
+### 1.2 Impact potential                Scale: Medium-High  
+
+11. CCFF intends to support projects in target sectors that mitigate or adapt to climate change. The near-term focus sectors are renewable energy, energy efficiency, sustainable land use and agriculture, and low-emission transport sectors. CCFF does not mandate any specific allocation to each of these sectors, but instead will have a flexible approach to origination and portfolio construction. The final composition of CCFF’s portfolio will depend on various market factors. This uncertainty, albeit normal for facilities such as CCFF, makes it difficult to evaluate the impact potential of CCFF with any degree of specificity.  
+
+12. The funding proposal estimates that CCFF will cause the avoidance of over 11 million t CO2 eq and reach 1.3 million beneficiaries. The mitigation outcomes are expected to be driven by accelerating renewable energy generation capacity as well as avoided deforestation and land degradation. These sectors have been identified as priority mitigation sectors in the updated nationally determined contribution (NDC) of Cambodia. Moreover, these sectors are detrimentally  
+
+---  
+**Note:** This text appears to continue on page 129, but only page 128 is provided here.
+
+
+---
+*Chunk pages 129–129*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1069 (sys=94, user=975), max_out=1024, ctx=8192
+---
+
+# GCF/B.38/02/Add.08  
+## Page 129  
+
+### 13. An area of initial concern for the independent Technical Advisory Panel (TAP) involved ARDB’s limited experience in non-agricultural sectors. As noted, CCFF will operate across a variety of sectors that appear to be outside ARDB’s historical areas of expertise. In our view, this is where the involvement of MSC as a co-executing entity of CCFF will be instrumental. MSC’s role will be to provide hands-on technical support and implementation of the CCFF Lending Facility, and work with ARDB to build capacity and transfer knowledge in-house for ARDB. MSC has demonstrated sufficient experience appraising and investing in sustainable energy, water infrastructure, agriculture, and forestry projects. We are also relying on KDB as the accredited entity to deploy its in-kind contribution to CCFF to build ARDB’s capacity to operate across new sectors.
+
+### 14. We commend CCFF’s plans to launch a request for proposals process to support development of a more robust project pipeline for the Facility.
+
+### 15. In terms of needs, we note that Cambodia is a least developed country, with a small banking system and a limited ecosystem of local project developers. Many local developers struggle to access financing, which hinders climate-friendly development at the scale sought by Cambodia. The funding proposal does a credible job of detailing the specific barriers to finance that CCFF seeks to address. In summary, finance is not readily available for low-carbon and resiliency projects and, even if able to advance, they still struggle to access follow-on capital due to a general perception of risk and high collateral requirements. CCFF is designed to mitigate some of these barriers and to provide a level of concessionality for climate projects in the form of discounted interest rates and long-dated tenors.
+
+### 16. CCFF will have an Oversight Committee with a dedicated sub-committee (Green Credit Committee) responsible for ensuring that the funded activities under the CCFF Lending Facility are aligned to its targeted results (impact, outcome, output). This is a critical function to ensure that CCFF lending, and their partner lending, are truly aligned with supporting Cambodia’s NDC goals and achieving low-carbon and resiliency outcomes. Funding institutions that require a financial return, such as CCFF, are always at risk of relaxing standards when impact goals and financial returns are at odds. Standards could quickly degenerate if, as an expediency, impact organizations begin to approve projects that are borderline from an impact standpoint and eventually lose coherence as regards impact gains. With this in mind, we recommend that the GCF Secretariat take an active role in ensuring that membership on the Green Credit Committee is well vetted to ensure impact expertise. Additionally, the project sponsors should invite and include members from other funders (second phase) on their committees to broaden the diversity of experiences.
+
+### 17. We commend the tranched approach and the linking to co-finance. The co-finance nature of this facility is critical as the goal of CCFF is not limited to funding approved projects but also intends to educate and shape the commercial landscape so that local banks gain first-hand experience in the relevant sectors. A barrier to climate finance in Cambodia is the lack of expertise and familiarity at commercial banks. By requiring that at least 20 per cent of loans are wholesaled through other LFIs, the Facility can crowd-in other market participants. Moreover, 50 per cent of the direct green lending is targeted to be co-financed together with LFIs.
+
+### 18. We would encourage the CCFF team to also see themselves as market makers. The concessionality available through CCFF, alongside the credibility of ARDB, will provide the CCFF management team with the opportunity to conduct market-making efforts such as organizing
+
+--- END EXTRACTED TEXT ---
+
+
+---
+*Chunk pages 130–130*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=948 (sys=94, user=854), max_out=1024, ctx=8192
+---
+
+# GCF/B.38/02/Add.08  
+## Page 130  
+
+### 19. In addition, CCFF will build capacity of project developers and LFIs and will create hands-on experience in green lending. Lastly, ARDB is a public institution that will benefit from climate finance tools, expertise and programmatic capability to support national climate goals.  
+
+### 20. Overall, the independent TAP regards CCFF’s impact potential as medium-high.  
+
+## 1.3 Paradigm shift potential     Scale: Medium - High  
+
+### 21. Cambodia faces several barriers to climate finance due to the small size of its local financial sector, lack of long-term financing, and the lack of relevant expertise. CCFF is intended to address these market constraints by playing a catalytic role through a blended finance approach, to increase climate-related investment in key sectors of Cambodia’s development goals.  
+
+### 22. The CCFF Lending Facility will have a dedicated governance and investment policy to de-risk local green projects and a specific mandate to enable and crowd in the local financial sector by incentivizing local banks to accept greater credit risk in this area in order to scale green finance, thereby creating a systemic shift towards climate finance in Cambodia.  
+
+### 23. CCFF is designed to provide climate finance directly into high priority sectors as identified in Cambodia’s updated NDC and into LFIs to spur their investment into the same sectors. The finance provided will be long-term, concessional and at scale to de-risk private sector investments. In addition to the direct finance provided, CCFF aims to institutionalize climate governance at the level of local financial institutions/private sector companies that it finances and build local capacity to implement high climate impact projects in ARBD.  
+
+### 24. CCFF is not a one-off project but instead is designed to catalyse impact across the Cambodian economy by providing customized financial and non-financial products, designed to assist projects in achieving bankability and growth. CCFF is expected to contribute to a paradigm shift in Cambodia by attracting private sector investments into climate projects and changing perceptions of the commercial viability of climate projects. If successful, CCFF will help reduce market misperceptions around climate projects by expanding the direct experience of LFIs and enlarging the project developer ecosystem so that more climate-friendly projects can reach fruition in a timely manner. As more projects are developed (and financed by the private sector) CCFF will help create an improved environment for future project development.  
+
+### 25. Additionally, CCFF can make a significant contribution to a paradigm shift in Cambodia by building up the institutional capacity of ARDB and resulting in a national financial institution capable of designing, issuing and administering climate finance products. We also note that CCFF is intended to support ARDB in GCF accreditation, which would provide a channel to climate finance in Cambodia. In addition to ARDB, CCFF is also intended to build the institutional capacity of LFIs and the private sector to mobilize climate finance from private, institutional and commercial funds.  
+
+### 26. CCFF will also engage with relevant stakeholders including the Government of Cambodia on policy dialogues and sharing of lessons to contribute towards an improved enabling environment for scaling up investments by removing regulatory and policy barriers.
+
+
+---
+*Chunk pages 131–131*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=953 (sys=94, user=859), max_out=1024, ctx=8192
+---
+
+# GCF/B.38/02/Add.08  
+## Page 131  
+
+27. We note that CCFF incorporates many green bank principles, and the funding proposal claims that the Facility will be the first application of the green bank model in Cambodia. Although, in our view, CCFF is not strictly a green bank, it does model many of the attributes of green bank activities that can be broadly replicated across the region.  
+
+28. The paradigm shift capacity of green banks hinges upon their adeptness in overcoming investment obstacles by strategically deploying meagre public resources to catalyse substantial private investments. In essence, a green bank is conceived to achieve this objective sustainably, whereby it not only champions environmental causes but also upholds financial viability as a foundational principle. Institutions reliant on intermittent injections of public funds cannot genuinely be deemed green banks and possess limited potential for paradigmatic change. While the desired financial returns may be more conservative compared to those pursued by purely commercial entities, they should nonetheless be adequate to ensure the financial robustness, creditworthiness and enduring viability of the green bank itself. The imposition of a return requirement fosters investment discipline, positioning green banks such as CCFF, as a reliable collaborator for other co-funding sources.  
+
+29. CCFF is structured as a self-sustaining initiative with the capacity to broaden its scope and attract supplementary capital from diverse collaborators as it evolves. The commendable tranche mechanism, whereby funds from GCF are allocated based on deployment milestones and co-financing objectives, merits widespread adoption within GCF funding proposals. This strategic approach not only facilitates the presentation of more credible funding proposals but also mandates sponsors to substantiate their claims with tangible evidence of progress before tapping into valuable GCF resources.  
+
+30. By demonstrating the profitability of low-carbon investments across the target sectors, CCFF will also help to further scale up and address other green sectors suffering from similar barriers. Following the development of increased capacity and experience at ARDB, the institution will be better prepared to secure extra funding from sources beyond GCF. This will enable them to offer the necessary catalytic support to the private sector, thereby facilitating the significant expansion of green sectors in Cambodia.  
+
+31. CCFF will also contribute to development pathways in Cambodia that are consistent with national climate change adaptation strategies. CCFF directly responds to those needs by providing long-term concessional loans to engage the private sector in adaptation actions. The Facility will therefore contribute to funding the incremental costs of adaptation projects and demonstrating that adaptation actions in Cambodia can be financed by instruments other than grant.  
+
+32. We note positively that most of the GCF funding requested is in the form of a loan facility which requires payback of principal and interest, albeit with a highly concessional interest. This pragmatic approach is in line with green bank best practices and is an indicator that the project sponsors intend to establish a useful entity.  
+
+33. We also observe positively that CCFF, like other green bank efforts, will be well positioned to develop and disperse market knowledge in the local financial sector as well as to drive cross-sector collaboration in project development. The funding proposal incorporates the development of ARDB staff capacity as well as contributions to learning for LFIs and private-sector actors through accessing CCFF financing and managing climate projects. CCFF borrowers will be supported in building up capacity to better understand climate impact, risks, and how to apply such insights in their decision-making processes.  
+
+34. Lastly, CCFF can also function as a trusted partner to cross-border capital providers. One of the impediments to attracting finance into developing markets from international private sources is country risk perception. These risks can be mitigated by having a local co-finance partner that understands local political and economic realities.
+
+
+---
+*Chunk pages 132–132*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=947 (sys=94, user=853), max_out=1024, ctx=8192
+---
+
+# GCF/B.38/02/Add.08  
+Page 132  
+
+## 35. Similarly, CCFF can function as a trusted partner to both domestic and international partners as relates to the green or climate credibility of transactions. More investors are looking for assets that have sustainability at their core, while still generating an appropriate risk-adjusted return. Programmes that maintain high impact standards and enforce high quality screening, oversight and reporting can improve the attractiveness of co-investments in their markets. Co-investors will perceive that project climate attributes are credible when CCFF is part of the transaction, consequently reducing perceived environmental impact risk.
+
+## 36. Overall, we rate the potential for CCFF to effect paradigm shift as medium to high.
+
+### 1.4 Sustainable development potential   Scale: Medium-High  
+
+## 37. CCFF’s objectives are aligned with Cambodia’s development goals. Under CCFF, climate-friendly projects and businesses in Cambodia will have greater access to affordable finance. This in turn should increase the overall number, scale and speed to market of green projects in agriculture, energy and transport. In this way, CCFF can contribute to Cambodia’s NDC targets while also supporting the country’s economic recovery and long-term growth. Other CCFF direct beneficiaries also include LFIs which will build capacity and gain experience specific to the climate sector.
+
+## 38. The CCFF proposal credibly demonstrated its potential to contribute to the sustainable development of Cambodia beyond mitigation and adaptation impacts, including:
+
+## 39. Economic co-benefits. CCFF is designed to deploy and mobilize climate finance, which in turn is expected to promote increased economic activity. The funding proposal projects that CCFF will directly and indirectly create one million jobs (Sustainable Development Goal, SDG 8). We suspect that this number is an overshoot, but it is clear that jobs and economic activity will be engendered. Furthermore, many of the financed projects will have embedded climate resilience benefits, which leads to economic co-benefits especially in the agricultural sector. For instance, given the importance of rice farming for the economy, sustainable practices, reduced land degradation and deforestation will allow for increased productivity and crop yields for farmers. CCFF will further support sustainable practices relating to alternative industrial crops such as teak to increase diversification in farming.
+
+## 40. Social and gender co-benefits. Adoption of climate technologies and best practices will support increased access to affordable clean energy (SDG 7) and prevent waterborne diseases through clean water (SDGs 3 and 6), effectively improving the health and well-being of households. On the gender front, we express reservations regarding the evident gender imbalance upon scrutinizing the ARDB website, revealing an exclusively male composition within both the Board and leadership team. Notably, no female representation occupies any leadership role. Nevertheless, it is essential to underscore that CCFF itself is conceived as a ring-fenced account, endowed with a dedicated governance structure. This structure includes a distinct CCFF Oversight Committee and a CCFF Working Group functioning as the project management unit for the CCFF Lending Facility.
+
+## 41. To address and rectify the gender disparity, the executing parties affirm their commitment to mainstreaming gender considerations into this governance framework. The CCFF Gender Action Plan, presented as an annex to the funding proposal, outlines specific and measurable targets designed to encourage women's involvement in decision-making roles. These targets include a minimum of 20 per cent women representation on the CCFF Oversight Committee, a similar representation in the CCFF Working Group, and a commitment to achieving at least 40 per cent women employment at the CCFF programme level. Furthermore, the CCFF Gender Action Plan envisions fostering gender equity not only within CCFF but also across projects financed by it.
+
+
+---
+*Chunk pages 133–133*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=922 (sys=94, user=828), max_out=1024, ctx=8192
+---
+
+# GCF/B.38/02/Add.08  
+## Page 133  
+
+### 42. To ensure the effective implementation of the CCFF Gender Policy and Gender Action Plan, a designated CCFF Gender Focal Point will be appointed. This individual will be responsible for building institutional-wide capacity within ARDB and among borrowers supported by CCFF, thereby solidifying the commitment to gender inclusivity and equity. For the Gender Focal Point to be effective, it is important that the leadership of the ARDB, the CCFF and related committees also support the objective of inclusion and gender equality.
+
+### 43. The CCFF programme has developed a dedicated project-specific Stakeholder Engagement Plan which encourages the involvement of Indigenous Peoples, women and vulnerable groups in the sub-project design and decision-making (annex 6). This is a key part of the project to ensure that climate investments contribute to enhancing resiliency of the most vulnerable.
+
+### 44. Environmental co-benefits. The CCFF investment criteria are designed to achieve climate mitigation and adaptation objectives, the programme aims to directly reduce greenhouse gas emissions and reach 1.3 million beneficiaries, including through adoption of climate technologies and sustainable management practices. The funding proposal projects the following environmental co-benefits: minimization of environmental damage, reduction of land degradation and deforestation, and improvement of air as well as land quality.
+
+### 45. Overall, the independent TAP rates the sustainable development potential of CCFF as medium-high.
+
+#### 1.5 Needs of the recipient     Scale: Medium-High  
+
+### 46. Cambodia is a least developed country with low economic development making the finance of mitigation and adaptation interventions challenging. We note that the climate finance needs of Cambodia are substantial and unlikely to be met by public finance alone. Consequently, addressing the major constraints to private investments will be essential for Cambodia’s sustainable growth. CCFF will focus on sectors which suffer from underinvestment due to the market barriers. CCFF will seek to address these barriers by providing financing solutions for climate projects and by enhancing capacity across the finance, development and public sectors.
+
+### 47. Additionally, due to its geographic location Cambodia is highly exposed to climate risks, including floods, landslides, cyclones, extreme heat and wildfire, affecting in particular the vulnerable rural population. According to the funding proposal, climate change can put 61 per cent of Cambodia’s rural GDP at risk and impact seven million Cambodians (43 per cent of population). Much of the Cambodian population lives in rural areas and is highly dependent on climate-sensitive sectors such as agriculture, forestry and water resources. Cambodia’s climate vulnerability can hamper the country’s sustainable development and NDC implementation.
+
+### 48. The funding proposal estimates that Cambodia requires USD 7.8 billion of financing to meet its NDC targets. However, Cambodia faces challenges in securing the necessary financial resources. With insufficient public funding and lack of private sector participation, the CCFF programme aims to tackle priority NDC sectors including forestry and other land use, agriculture, energy and water. Through long-term concessional lending, the Facility has the potential to mitigate market gaps and deliver on climate impact projects that would not have been implemented without this programme.
+
+### 49. Overall, the independent TAP rates the needs of the recipient as medium-high.
+
+#### 1.6 Country ownership     Scale: Medium -High  
+
+### 50. The Royal Government of Cambodia has also provided a no-objection letter through its national designated authority (the Ministry of Environment, MOE). The MOE has been involved in the design of the CCFF programme from its inception having been supported by GCF through
+
+--- 
+
+*Note: Page numbers are preserved as requested.*
+
+
+---
+*Chunk pages 134–134*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1013 (sys=94, user=919), max_out=1024, ctx=8192
+---
+
+# GCF/B.38/02/Add.08  
+## Page 134  
+
+The CCFF project is an initiative of the MEF, ARDB, and MCF. MEF and ARDB are both national public institutions that will serve as implementing partners for the Facility. We have assessed that there is political support and intention on the part of Cambodian public sector to establish the CCFF to facilitate their climate goals. We express some initial trepidation as throughout the independent TAP review process we did not have the occasion to interact with Cambodian nationals as regards the programme. KDB as the accredited entity is made up of non-Cambodian professionals, and MCF, albeit with deep roots in Cambodia, was represented by non-Cambodian nationals. However, based on our document review and other indications of support we ultimately assess that there is sufficient support across the Cambodian public and private sector.  
+
+The establishment of CCFF is aligned to Cambodia's overall national planning objectives and development goals, including the NDC and national adaptation plans and climate strategy. For instance, Cambodia’s updated NDC identifies forestry and other land use, agriculture, energy, transport and water with climate mitigation and adaptation potential as priority sectors for intervention. CCFF is specifically designed to mobilize finance for these sectors and thus contributes to the implementation and realization of Cambodia’s NDC targets. CCFF aims to attract financing from GCF and cause other resource mobilization, combining international and local entities, which is an approach articulated in Cambodia’s climate strategy. CCFF is also designed to address knowledge and capacity gaps identified in the NDC.  
+
+Crucially, the governing set-up secures and authorizes national control. The plan demands a shared investment and execution dedication from ARDB for the initial slice (USD 15 million, 1:1 ratio). Additionally, ARDB and MEF will play a hands-on role in initiating, running and overseeing CCFF. The objective is to eventually transform ARDB, the host of CCFF, into a bona fide climate development bank with self-reliant ownership and entry to global climate funds, becoming an accredited entity, for example with GCF.  
+
+The co-financing commitment of ARDB, as a public finance institution, is a material sign of country ownership. Commitment measured in funds and action should always carry more weight in our assessment than simply commitment in words. Moreover, the Government of Cambodia (through the MOE and MEF) will be represented in the governance structure, enabling these institutions to absorb lessons learned throughout implementation of CCFF. The MEF and MOE are core ministries in Cambodia’s efforts to increase low-carbon and climate resilient development.  
+
+The independent TAP considers CCFF to be aligned with host country priorities, and we assess involvement on the part of Cambodia to be significant. Overall, we rate country ownership of the funding proposal as medium-high.  
+
+### 1.7 Efficiency and effectiveness    Scale: Medium-High  
+
+The establishment of CCFF aligns with the GCF Private Sector Strategy. The proposal is also well-aligned with the updated Strategic Plan for the GCF 2024–2027, particularly as regards target 11 (national and regional financial institutions supported to access GCF resources). The CCFF will be the first national climate financing facility in Cambodia, private sector financial institutions will be actively involved in carrying out wholesale lending, co-financing projects, as well as being beneficiaries of capacity-building support.  
+
+In addition to its private-sector focus, the CCFF assumes a pivotal role in enhancing the climate finance capabilities of public institutions in Cambodia. Its overarching objective is to mobilize private sector finance at scale by extending support to LFIs, private sector entities, and rural households. From our perspective, CCFF offers an efficient approach to amplifying private sector finance.
+
+
+---
+*Chunk pages 135–135*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1065 (sys=94, user=971), max_out=1024, ctx=8192
+---
+
+# GCF/B.38/02/Add.08  
+## Page 135  
+
+58. We also note that LFIs in Cambodia exhibit risk-averse lending practices, necessitating substantial tangible security and robust cash flows. The absence of project finance availability for climate projects in Cambodia, coupled with capacity gaps and a limited track record in climate finance, presents challenges for LFIs to assess climate investments adequately. For instance, the heightened vulnerability of infrastructure assets to climate change risks in Cambodia, coupled with a constrained local capacity to effectively evaluate risks, vulnerabilities and impacts, as well as incorporate climate adaptation into infrastructure project assessments, pose substantial obstacles to securing funding for the additional expenses needed to enhance the climate resilience of renewable energy projects in Cambodia.  
+
+59. CCFF, through its blended finance approach, aims to address these impediments, offering direct lending to eligible projects and mobilizing local financial institutions. The Facility's nature as a blended finance instrument is intended to alleviate barriers such as tenor, high perceived risks, and the cost of capital. ARDB and MSC will work closely with commercial banks to structure transactions where commercial banks can participate and will report on its progress toward the goal of mobilizing co-investment.  
+
+60. We further note that CCFF features conditions designed to avoid market distortions. This provides us with comfort that the programme is reasonably well designed and adapted for the Cambodian context. Both the grant and credit components will focus only on projects that are not yet bankable without credit enhancement, financial or development support.  
+
+61. CCFF also intends to use GCF concessionality to offer highly competitive financing rates directly to eligible projects. The funding proposal and the feasibility study do an adequate job of mapping the interest rate environment in Cambodia and justifying the discounted rates that CCFF intends to inject into the market. The collaboration with LFI's will be advanced by offering concessional funds and risk mitigation solutions, coupled with specific technical assistance initiatives. These efforts aim to bolster their ability to accurately discern, evaluate and formulate climate finance solutions that adeptly meet recipient requirements, fostering increased investment at the project level.  
+
+62. One area of concern for the independent TAP was that CCFF represented a major upsizing of ARDB’s assets. Based on a desktop review we identified that ARDB has a relatively modest loan portfolio (USD 320 million roughly) and not much more in total assets. If the CCFF were to meet its intended target of USD 100 million this would represent a significant increase in assets and loan capacity compared to those previously managed by ARDB, posing an execution and capacity risk. Ultimately, we attained comfort in the fact that CCFF would be drawn down over a period of five years (i.e. USD20 million per year) to meet projected CCFF lending volumes. Given the phased drawdown and the continued loan asset growth of ARDB, over 20 per cent per year in the last five years (2018, USD 159 million increased to USD 364million in 2022) according to the annual report of ARDB, the expected highest ratio of the CCFF loan asset to ARDB total loan asset, assuming the growth rate of 20 per cent is maintained, will be less than 10 per cent in 2028. Therefore, we judged the risk that CCFF could represent a disproportionally large portion of the overall ARDB balance sheet to be moderate. Moreover, the CCFF Lending Facility is ultimately a ring-fenced facility, with its own dedicated operational and governance structure.  
+
+63. In our view, CCFF has a well-defined mandate that can facilitate risk-taking investments in support of climate interventions in Cambodia. We also view favourably the amount of co-financing and the variety of co-finance partners that are engaged in discussions for phase two funding. In accordance with the Funding Proposal, every dollar committed by the GCF is intended to catalyse an additional dollar at the Facility level. Moreover, each dollar infused by the CCFF into its funded projects is anticipated to attract supplementary private, commercial and institutional  
+
+---  
+**Page 135**
+
+
+---
+*Chunk pages 136–136*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=935 (sys=94, user=841), max_out=1024, ctx=8192
+---
+
+# GCF/B.38/02/Add.08  
+## Page 136  
+
+64. We also view favourably the design of the Facility, which supports the goal of commer-  
+cial viability to ensure its long-term sustainability. CCFF is set to offer lending rates that cover  
+the costs necessary to foster commercially sustainable green projects in crucial NDC priority  
+sectors. As the CCFF Lending Facility extends funds both on a wholesale scale to LFIs and di-  
+rectly to beneficiaries of green projects, the anticipated average loan yield for the programme's  
+portfolio is in the range of between 5 and 6 per cent per annum. With the average cost of funds  
+for commercial banks in Cambodia hovering between 3 and 3.5 per cent per annum, it becomes  
+imperative for CCFF to price its wholesale green lending to LFIs below 3.5 per cent per annum  
+to effectively incentivize their participation in green financing.  
+
+65. Furthermore, direct beneficiaries of green projects require annual rates averaging be-  
+tween 5 and 7 per cent to uphold their financial feasibility without displacing other private-sec-  
+tor investors. Considering the anticipated concessionality of GCF, along with green loan yields  
+and operating costs, the resultant return on assets for CCFF is estimated to be around 1 per cent,  
+showcasing its commercial viability while ensuring that GCF concessional benefits are passed on  
+to both wholesale and direct green borrowers.  
+
+66. Overall, the independent TAP rates the efficiency and effectiveness of this programme as  
+medium–high.  
+
+## II. Overall remarks from the independent Technical Advisory Panel  
+
+67. The CCFF programme aligns closely with the established principles of green banks,  
+which have demonstrated effectiveness in delivering crucial financing for climate mitigation and  
+adaptation. We posit that CCFF has the potential to unlock avenues for both public and private  
+capital to support projects that might otherwise falter without such interventions. This will be  
+achieved through the direct provision of financing and assistance to qualifying climate interven-  
+tions, as well as through the wholesale lending channel to local financial institutions.  
+
+68. Significantly, the commitment of GCF funding will be paralleled by corresponding finan-  
+cial support from ARDB, symbolizing a tangible national dedication to this initiative. We com-  
+mend the pragmatic and phased approach outlined in the funding proposal, wherein additional  
+GCF funding is contingent upon CCFF achieving substantial deployment and co-financing mile-  
+stones.  
+
+69. In our assessment, the CCFF concessional loans and technical assistance play a pivotal  
+role in diminishing the costs and risks – both real and perceived – associated with investments  
+in climate change mitigation and adaptation. In emulation of successful green bank initiatives,  
+CCFF aspires not only to deploy its own capital but also to galvanize private investment, thereby  
+expediting the transition towards a more sustainable economy.  
+
+70. The ring-fenced configuration of CCFF stands as a safeguard for the programme's funds,  
+preventing any commingling with other operations or assets/liabilities of ARDB. This structural  
+delineation serves to mitigate potential risks for CCFF investors who specifically seek to invest  
+in climate-responsive projects meeting the eligibility criteria outlined in the programme.  
+
+71. The Stakeholder Engagement Plan, encouraging the involvement of Indigenous Peoples,  
+women, and vulnerable groups in the sub-project design and decision-making, along with gen-  
+der-related targets on women’s representation and employment, are well noted.
+
+
+---
+*Chunk pages 137–137*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=164 (sys=94, user=70), max_out=1024, ctx=8192
+---
+
+# GCF/B.38/02/Add.08
+## Page 137
+
+72. Considering the foregoing considerations, the independent TAP endorses this funding proposal.
+
+```
+
+
+---
+*Chunk pages 138–138*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=539 (sys=94, user=445), max_out=1024, ctx=8192
+---
+
+# GCF/B.38/02/Add.08  
+## Page 138  
+
+### Response from the accredited entity to the independent Technical Advisory Panel's assessment (FP228)  
+
+#### Proposal name: Cambodian Climate Financing Facility  
+#### Accredited entity: Korea Development Bank (KDB)  
+#### Country/(ies): Cambodia  
+#### Project/Programme size: Medium  
+
+### Impact potential  
+
+The Accredited Entity (AE) would like to acknowledge the iTAP’s recognition of Programme target sectors aligned with Cambodia's updated Nationally Determined Contribution (NDC).  
+
+The Programme has been designed in response to the identified needs in Cambodia to scale up climate finance and accelerate NDC implementation. Through a close partnership with Executing Entities, including the Cambodian government and the Agricultural and Rural Development Bank (ARDB), the AE will support the development of Cambodia’s low-emission, climate-resilient pathways by leveraging public and private sector funding.  
+
+### Paradigm shift potential  
+
+The AE would like to express gratitude for recognising that the Programme is intended to address local market barriers to climate finance, with an advanced blended finance structure to increase climate investment and a mandate to enable and crowd in the local private financial sector. The Programme provides long-term, blended finance to local financial institutions and private sector actors to address financial, knowledge, and technology gaps hindering the uptake of targeted climate projects in Cambodia.  
+
+### Sustainable development potential  
+
+This is well noted. The Programme will contribute to Cambodia’s NDC implementation and a number of economic, social, gender and environmental co-benefits.  
+
+### Needs of the recipient  
+
+The AE agrees with iTAP that Cambodia faces several barriers to deploying climate finance, including insufficient public funding and lack of private sector participation. The programme has been designed to tackle those funding gaps through long-term concessional lending and enhance capacity across the finance, development, and public sectors, eventually contributing to Cambodia's NDC target.  
+
+### Country ownership  
+
+---  
+*Page 138*
+
+
+---
+*Chunk pages 139–139*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=361 (sys=94, user=267), max_out=1024, ctx=8192
+---
+
+# GCF/B.38/02/Add.08
+## Page 139
+
+The AE is aware of the importance of country ownership for successful Programme implementation and a sustainable climate investment ecosystem. The Cambodian government has initiated and developed the Programme in collaboration with key stakeholders, ensuring strong country ownership in launching Cambodia's first national green financing initiative and deploying climate finance at scale nationwide.
+
+### Efficiency and effectiveness
+
+The Programme will enable ARDB's transition to a fully-fledged national climate development bank with direct access to international climate finance for Cambodia. In addition, the AE understands the iTAP's remark regarding ARDB's asset and loan portfolio. KDB will support and lead the provision of technical assistance to support ARDB down the path of national climate development in Cambodia.
+
+### Overall remarks from the independent Technical Advisory Panel
+
+In general, the AE agrees with the remarks made by the iTAP. The AE would like to note that the Programme will be the first application of the green bank model in Cambodia and will model many of the attributes of green bank activities that can be broadly replicated across the region.
+
+
+---
+*Chunk pages 140–140*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=151 (sys=94, user=57), max_out=1024, ctx=8192
+---
+
+# ANNEX 8(a)
+## Gender Assessment
+### Cambodian Climate Financing Facility
+
+#### Gender Documentation for FP228
+
+
+---
+*Chunk pages 141–141*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=587 (sys=94, user=493), max_out=1024, ctx=8192
+---
+
+# Page 1 | 28
+
+## Contents
+
+### I. Introduction: CCFF’s Commitment to Gender Equity
+
+### II. Key Gender Indicators in Cambodia
+
+#### 2.1 Key Demographic Trends
+
+##### Population:
+
+##### Households and societal norms:
+
+##### Marital status:
+
+##### Education:
+
+##### Health:
+
+#### 2.2 Women Economic Empowerment
+
+##### Women in Business:
+
+##### Women in Labor Force:
+
+##### Gender Wage Gap:
+
+##### Gender Gap in Social Protection:
+
+##### Gender Gap in Managerial Positions:
+
+#### 2.3 Women in Leadership and Decision-making Roles
+
+##### Women in Political Leadership Roles:
+
+##### Women in Judiciary:
+
+##### Women in Civil Service:
+
+#### 2.4 Gender Based Violence
+
+#### 2.5 Socio-Cultural Norms in Cambodia
+
+### III. Institutional Assessment
+
+#### 3.1 Legal Framework
+
+#### 3.2 Policy Framework
+
+#### 3.3 Governance
+
+#### 3.4 Key Indicators for Gender Measurement
+
+### IV. Gender Assessment per Sector and Entry Points for CCFF
+
+#### 4.1 Financial Inclusion in Cambodia’s Financial Sector
+
+##### Entry Points for CCFF in Financial Sector:
+
+#### 4.2 Sustainable Land-use and Agriculture Sector
+
+##### Entry Points for CCFF in Sustainable Land-use and Agriculture
+
+#### 4.3 Clean Energy Sector (Renewable Energy and Energy Efficiency):
+
+##### Entry Points for CCFF in Clean Energy
+
+#### 4.4 Low-Carbon Transportation Sector
+
+---
+
+
+---
+*Chunk pages 142–142*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=473 (sys=94, user=379), max_out=1024, ctx=8192
+---
+
+# Page 2 | 28
+
+## Entry Points for CCFF in Low-Carbon Transportation
+................................ ........................26
+
+## 4.5 Climate Resilient Water Sector
+................................ ........................26
+
+## Entry Points for CCFF in Climate Resilient Water
+................................ .............................. 27
+
+## V. CCFF Gender Responsive Approach to Climate Finance
+................................ .....................28
+
+### Figure 1: Gender Assessment Process
+................................ ................................ ...................... 4
+
+### Figure 2: Household Characteristics by Gender
+................................ ................................ ......... 5
+
+### Figure 4: Establishment of Enterprises by Sex and Size of Enterprise
+................................ ....... 8
+
+### Figure 4: Cambodia’s Working Age Women and Men in Labor Force
+................................ ........ 9
+
+### Figure 5: Age-specific Labor Force Participation Rates (LFPR) by sex, Cambodia, 2008-2019
+................................ ................................ ..................... 10
+
+### Figure 6: Percentage of Women and Men Senators in 1999-2006 and 2018-2024
+................................ ................................ ..................... 12
+
+### Figure 7: Percentage of Women and Men Members of the National Assembly in 1993-1998 and 2018-2023
+................................ ................................ ................................ .12
+
+### Table 1: Population/Gender Demographic Trends
+................................ ................................ ..... 4
+
+### Table 2: Key Health Indicators 2019, Gender Disaggregated
+................................ ..................... 6
+
+### Table 3: Summary Performance Against Cambodia SDG 5: Gender Equality
+................................ ...14
+
+### Table 4: Summary of Key Policy Frameworks to Institutionalize Gender Equality in Cambodia
+................................ ................................ ....................16
+
+### Table 5: Key Indicators for Gender Measurement Cambodia
+................................ ....................19
+
+### Table 6: Snapshot of Cambodia's Financial Inclusion
+................................ ....................................... 19
+
+
+---
+*Chunk pages 143–143*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=839 (sys=94, user=745), max_out=1024, ctx=8192
+---
+
+# Page 143 | 28
+
+## I. Introduction: CCFF’s Commitment to Gender Equity
+
+The Cambodian Climate Financing Facility (CCFF) is a dedicated national climate finance facility to contribute to Cambodia's low-emission and climate resilient pathways. It is specifically designed to leverage much needed public and private sector funding to accelerate Cambodia's NDC implementation through:
+
+- Catalyzing funding at scale for key climate mitigation and adaptation sectors: sustainable land use and agriculture, clean energy (renewable energy and energy efficiency), low-carbon transportation and water. The CCFF expects to mobilize US$100 from private and public sector investors. The investment will be complimented by a US$5 million TA Facility.
+- Addressing market failures in the financial sector, by offering long-term and concessional financing to Local Financial Institutions and Project Developers to de-risk high, climate impact potential projects.
+- Providing grant funding, to facilitate capacity building and knowledge sharing.
+
+The CCFF acknowledges that women and men equally contribute to combating climate change, and gender responsive approach is a part of the CCFF's paradigm shift approach to contributing to Cambodia's low-emission and climate resilient development pathways.
+
+To this end, the CCFF shall promote and support gender equity by institutionalizing gender responsive approach at a level of institution and projects we finance. CCFF operations will be guided by the Gender Policy and the Gender Action Plan.
+
+This gender gap assessment builds upon the desktop review of secondary data, as well as stakeholder consultations performed during conceptualization of the CCFF facility with public and private stakeholders in Cambodia, including the Ministry of Women's Affairs of Cambodia and other members of the Royal Government of Cambodia, the Cambodian Sustainable Finance Initiative (CSFI) of the Association of Banks in Cambodia (ABC), private sector actors, donors and not for profit organizations.
+
+The objective of the gender assessment is to understand the country level and sector specific gender gaps, so to decide on entry points for programme level gender-responsive interventions for CCFF Gender Action Plan (see Annex 8b). This gender assessment will be complemented by the "project specific gender assessments" to be undertaken during the CCFF investment due-diligence stage1, by zooming into project specific gender risks and opportunities including through inclusive stakeholder consultations.
+
+Based on findings of project specific gender assessments, borrowers will be required to establish gender action plan which will lead to co-benefits in terms gender-mainstreamed investments through addressing project level gender gaps and enhancing gender equity and women's economic empowerment (see Annex 8b for CCFF level gender-disaggregated indicators and targets).
+
+The Green Climate Fund's Gender Policy and Gender Assessment Template (Annex 8) was consulted for preparation of this assessment report, so was the number of international best practices including that of the ILO and OECD.
+
+Gender assessment process undertaken to prepare this document and determine entry points for the CCFF's gender responsive climate finance approach is summarized under figure 1 below:
+
+1. Investment due-diligence precedes CCFF's investment decision making stage; gender is material to CCFF investment decision making and to this end, each project put forward for CCFF consideration shall undergo gender assessment. The respective project specific Gender Action Plan will be developed on need basis.
+
+--- 
+
+*Note: Page numbers are preserved as per the original PDF.*
+
+
+---
+*Chunk pages 144–144*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=487 (sys=94, user=393), max_out=1024, ctx=8192
+---
+
+# Page 4 | 28
+
+## Figure 1: Gender Assessment Process
+
+## II. Key Gender Indicators in Cambodia
+
+### 2.1 Key Demographic Trends
+
+The key demographic trends provide information on Cambodia's gender disaggregated data across Cambodia's population/households, marital status, education, and health as of the year 2019.
+
+#### Population:
+
+As per 2019 census, women comprised 51.3% and men comprised 48.7% of Cambodia's total population of 15,288,489². Between 2008 to 2019, the population in Cambodia increased by the 2,156,529 persons, which represents an increase of 16.1% and an annual average growth rate of 1.4%. The vast majority of the population (60%) still lives in rural areas, furthermore, there are slightly more women than men in Cambodia.
+
+#### Table 1: Population/Gender Demographic Trends
+
+| Residence | Population 2008 | Population 2019 |
+|-----------|------------------|------------------|
+| Female    | 6,879,628        | 7,980,374 (51.3%)|
+| Male      | 6,516,054        | 7,571,837 (48.7%)|
+| Urban     | 1,358,457        | 3,141,855 (39.5%)|
+| Rural     | 5,260,484        | 4,838,519 (60.5%)|
+
+**Source:** The Government of Cambodia 2019 Census
+
+²Note: This refers to the 2019 census data, which is referenced in the text.
+
+
+---
+*Chunk pages 145–145*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=828 (sys=94, user=734), max_out=1024, ctx=8192
+---
+
+# Page 5 | 28
+
+## Households and societal norms
+
+The average household size in Cambodia was 4.3 persons in the year 2019; a decline from 4.7 in 2008. This decrease in household size is due to shift from joint and extended family structures towards small nuclear, family structures.
+
+For the year 2019, 26% of the households were led by women and 74% were led by men. The majority of the female heads of household were aged between 30 -59 years, majority of them were economically active. The studies report that an increase in family size and head of household’s education level increases the likelihood of a women becoming a wage worker.
+
+### Figure 2: Household Characteristics by Gender
+
+#### Marital status:
+
+Most of the population in Cambodia aged 15 years and above (66.2%) were married. The never married population is 27.5%, while the proportion of widowed/divorced/separated population is 6.3%. However, there were relatively more widowed and divorced/separated females than males. This is partly result of higher male mortality, as well as indication that that men tend to remarry more than one woman in most cases.
+
+Females in Cambodia tend to marry earlier than males. The average marriage age was 27.0 and 24.0 years for males and females, respectively. It is noteworthy, that compared to the year 2008, the average age at marriage in 2019 had increased by 1.4 years and 0.7 years for males and females, respectively.
+
+The proportion married among adolescents aged 15-19 in rural areas was higher than that in urban area, with gender gap increasing in rural areas. The 9.5% of female adolescents were married in rural area vs. 2% of male adolescents, while 6.5% of female adolescents were married in urban area vs. 1.5% of male.
+
+Marital status is the most important determinant of women’s wage employment. Women who are married are 38% less likely to be in paid employment.
+
+#### Education:
+
+Cambodia is on track for achieving gender equality in education and literacy, as per the Cambodia’s voluntary national review of implementation of the 2030 agenda for sustainable development.
+
+Nonetheless, the Global Gender Gap index indicates that the number of challenges remain in terms of education attainment, as Cambodia ranks 128 out of 1585.
+
+The key challenges to be addressed are: (1) equitable and inclusive access for the children to all levels of education and training (2) transition from primary to lower-secondary and high drop-out rates at the lower secondary levels (3) quality issue from pre-
+
+**Source:** The Government of Cambodia 2019 Census  
+**Reference:** WEF, Global Gender Gap Index 2021 https://www3.weforum.org/docs/WEF_GGGR_2021.pdf  
+
+26%  
+74%  
+F E M A L E  L E D  H O U S E H O L D S  
+M A L E  L E D  H O U S E H O L D S  
+
+--- 
+
+*Note: Page numbers are preserved as per the original PDF.*
+
+
+---
+*Chunk pages 146–146*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=885 (sys=94, user=791), max_out=1024, ctx=8192
+---
+
+# Page 6 | 28
+
+## Literacy Rate: 88.5%
+
+The proportion of literate persons among the population aged seven and older increased from 78.4% in 2008 to 88.5% in 2019. However, there are still noticeable gender gaps in terms of literacy rate (91.1% of males and 86.2% for female). This pattern reflects the educational disadvantage experienced by women relative to men.
+
+It should be however highlighted, that the literacy rate varies by the age group. The male and female literacy rates are very close to each other for younger age groups (close to 90%), but are but are wider in the age groups starting around 25 years and older.
+
+## The population attending school/educational institution
+
+More than 90% of the population in age groups 6-11 years and 12-14 years were attending school in 2019, while only 20.7% for age groups over 18-24 and 0.7% of age group above 25 were attending educational institution.
+
+The 2019 census reveal, that only 29.1% of those who ever attended school or educational institution had completed primary education, 21.8% had completed lower secondary education, 2.9% had received the secondary/ diploma and 2.8% had completed education beyond secondary level.
+
+## Gender gap assessment reveals
+
+While enrolment rate for girls was marginally higher than enrollment rate for men at ages 6-11 and 12-14, the girl’s enrolment rate declines relative with boys with age. For age groups over 18-24 the school attendance is 22.1% for male and 19.3% for female, while for the age group over 25, the school attendance is 0.8 for male and 0.6 for women. This school /educational institution attendance gap widens in rural population. This reflects traditional attitudes that discourage girls from continuing to study after a certain age.
+
+## Covid is expected to further affect gender gap in education
+
+Surveys by various organization found, that distance learning disproportionately affects female learners than male learners. Girls and young women are expected to engage in housework and unpaid care work for younger siblings and older members of the family while home, which affects their time to undertake online learning classes.
+
+## Health
+
+The health indicators were benchmarked against infant mortality rate, maternal mortality ratio, life expectancy and disability, see table 2 below. The gender disaggregated data were derived from the 2019 Census of Cambodia.
+
+### Table 2: Key Health Indicators 2019, Gender Disaggregated
+
+| Sex | Infant Mortality Rate | Under-five mortality | Life Expectancy | Disability (some disability) |
+|-----|-----------------------|----------------------|-----------------|------------------------------|
+| Total, Both Sexes | 17.6 | 28.1 | 75.5 | 3.7 |
+| Male | 20.6 | 31.7 | 74.3 | 3.2 |
+| Female | 14.6 | 24.3 | 76.8 | 4.2 |
+
+> Source: UNDP, Gender Wage Gap 2021  
+> 7 The rate of people with disability (some difficulty) aged 5 years and over
+
+---
+
+
+---
+*Chunk pages 147–147*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=997 (sys=94, user=903), max_out=1024, ctx=8192
+---
+
+# Page 7 | 28
+
+The infant mortality rate and under five mortality rates in Cambodia is higher in males than in females, which is due to the biological determinants. The life expectancy at birth is higher for female than for male. The mortality rates estimated for rural areas in Cambodia are higher than those for urban areas. The differences are due to the level of parental education, access to health facilities, and poor hygienic practices. Water and sanitation related diseases are among one of the leading causes of sickness and death in rural children in Cambodia.
+
+The maternal mortality ratio is 141 per 100,000 live births. Malnutrition is considered the underlying cause of 45% of child deaths and 20% of maternal deaths in Cambodia. Furthermore, 32% of the children in Cambodia are being stunted (too short for their age) and 10% being waste (too thin for their height). Poor water, sanitation and hygiene (WASH), poverty resulting in sub-optimal feeding and a mother's lack of education are the main causes of child undernutrition, which is one of the most significant obstacles to human development.
+
+## 2.2 Women Economic Empowerment
+
+The women economic empowerment was benchmarked against publicly available data for women in business (enterprises established or headed by women) and the women in labor force. The gender sensitive wage gap was also mapped.
+
+The analyses revealed that women economic empowerment is limited and there is a room for growth both in terms of women in business and women in labor force. Most women are working in informal economy and in low-income industries. The women participation in business is focused on microenterprises, with profit generation capacity of such enterprises being lower than that of large and medium/small enterprises led mainly by men.
+
+We also found that women capacity to participate in labor force both in terms of education and skills is limited, with Cambodia's national strategic development plan pointing to a need to promote gender equity in the labor and vocational training.
+
+The COVID-19 crisis has accelerated automation and digitalization, which increased labor market disruption in Cambodia. The Global Gender Gap Index for Cambodia points to significant challenges for gender parity in the future of jobs due to increasing occupational gender-segregation. Furthermore, less than 3% of the Cambodia's women entrepreneurs have access to formal credit.
+
+The review of secondary data also revealed that social norms and gender relations pose barriers to women's economic empowerment and growth; they prevent women from expanding their opportunities. Although women are nominally guaranteed equal rights with men, unlike their male counterparts, women are seen as having a lower status in society. Traditional and gender norms assigned to girls and young women.
+
+8 2 in 5 rural Cambodians use a non-improved drinking water source during the dry season, 1 in 2 rural health facilities doesn't have sufficient water all year round. Only 16 per cent of rural drinking water classified as 'safely managed', compared with 55 per cent of urban drinking water, there is an urgent need to ensure that Cambodian children have access to clean, climate-resilient water supply in homes, schools, and healthcare facilities, particularly in rural and vulnerable areas.
+
+9 Source: UNICEF, Health and Nutrition
+
+10 The Royal Government of Cambodia, NATIONAL STRATEGIC DEVELOPMENT PLAN 2019-2023
+
+11 The Cambodian Constitution, Article 35, recognizes that women and men have equal rights to participate in societal, economic, political, and cultural lives.
+
+12 Source: Exploring the Opportunities for Women-owned SMEs in Cambodia, IFC 2019. According to IFC, the "Women's subordination to men under the Chbab Srey (traditional Code of Women) limits their economic independence and opportunities. Though Cambodian society has become more open and women are taking on more dominant roles in the economy, the effects of Chbab Srey still perpetuate negative gender stereotypes. Consequently, they prevent women from developing and succeeding in businesses".
+
+
+---
+*Chunk pages 148–148*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=725 (sys=94, user=631), max_out=1024, ctx=8192
+---
+
+# Page 8 | 28
+
+Women (early marriage, household chores, taking care of younger siblings, etc.) result in limited educational opportunities. Consequently, women often enter the labor market with fewer educational qualifications and skills than men (see section 2.3 for statistics to female access to education). Those same social norms and obstacles prevent woman to access customers and new markets.
+
+The women employment is concentrated in sectors traditionally associated with women, such as agriculture, forestry and fishery and trade/services. Women participation in labor force in energy, industry and transport sectors is thereby limited; so is the promotion—which tends to be restricted given social norms and institutional settings (see section 2.3), with fewer women holding decision-making roles in Cambodia.
+
+## Women in Business:
+
+There were 753, 670 enterprises in Cambodia as of 2022, and 99% of enterprises in Cambodia are MSME’s (enterprises with up to 100 employees). Female representatives account for 69.2% of all enterprises in Cambodia (this includes both registered and unregistered enterprises), however women are underrepresented in energy, water and transport sectors, while overrepresented in agriculture and manufacturing sectors. The large enterprises and SME’s have lowest women representation, of 21% and 26%. While the micro enterprises, have highest woman representation of 60% (source: UNCFDC 2021, IFC)
+
+### Figure 3: Establishment of Enterprises by Sex and Size of Enterprise
+
+Sectors targeted by CCFF and ownership structure of enterprises:
+
+| Industry       | Male Representative | Female Representative |
+|---------------|---------------------|-----------------------|
+| Energy        | 71%                 | 29%                   |
+| Agriculture   | 49%                 | 61%                   |
+| Manufacturing (garment) | 26%         | 74%                   |
+| Water         | 72%                 | 28%                   |
+| Transport     | 87%                 | 13%                   |
+
+The Cambodian government has made targeted efforts over the past years to improve the business environment with a gender-sensitive lens, notably improving business environment and contributing to women’s economic empowerment through coordinating with donors to increase access to finance
+
+13 The challenges of women in leadership: key findings from gender statistics analysis, General Secretariat of National Assembly  
+14 For the purposes of this document, ownership structure includes data for both registered and unregistered enterprises in Cambodia as per Economic Census 2022. Sex of representative based on closest industry sub-sector classifications, such as Energy (3510), Water (3600), Manufacturing (1410), Agriculture (4620) and Transport (4540, also transport sector for CCFF purposes focuses on retail loans). Therefore, data here may differ from aggregate industry classification in terms of sex of representatives and it is acknowledge that it is closest single estimate, also several sub-sectors can be funded under each industry.
+
+
+---
+*Chunk pages 149–149*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1006 (sys=94, user=912), max_out=1024, ctx=8192
+---
+
+# Page 149 | 28
+
+## Business Registration: Only 12.4% of enterprises in Cambodia are registered, as the process to formalize business is complex and time consuming in Cambodia. While this is the problem for both men and women, the women’s tendency to be less educated and social norms opt women from registering business in Cambodia.
+
+The easiest form to register a business in Cambodia is sole proprietorship, and hence, majority of registered businesses in Cambodia are microenterprises. Furthermore, sole proprietorship is also a most common form of enterprise in unregistered business in Cambodia (90.9%). The SME segment therefore is very small (2.1%), with large enterprises representing less than 0.2% in Cambodia. This data suggests barriers for growth and presence of “missing middle”.
+
+## Women in Labor Force:
+
+According to Cambodia Socio-Economic Survey 2019, the total working-age population is around 8,626,789 people. The share of women is slightly lower than men, with women’s share at 49% and men’s share at 51%.
+
+Figure 4: Cambodia’s Working Age Women and Men in Labor Force
+
+The labor force of Cambodia is largely informal, as paid employment in Cambodia constitutes only 31.5% (33.6% male and 29.3% female). Remaining labor force is informal (67.5%), largely constituting of own account workers (42.7%) and unpaid family workers (15.1%). The proportion of females in this informal sector is higher than that of males, 50.3 percent of male employed persons are own account workers. In the case of females, most reported working as unpaid family workers (35.4 percent female vs. 15.1% in male). In rural areas, the proportion of unpaid female workers is even higher (46.2 percent).
+
+---
+
+**Note:** The source references for the data are as follows:
+
+- Source: THE CHALLENGES OF WOMEN IN LEADERSHIP: KEY FINDINGS FROM GENDER STATISTICS ANALYSIS, General Secretariat of National Assembly; (2) Exploring the Opportunities for Women-owned SMEs in Cambodia, IFC 2019  
+- Source: Exploring the Opportunities for Women-owned SMEs in Cambodia, IFC 2019  
+- Informal employment is defined as the total number of informal jobs, whether carried out in formal sector enterprises, informal sector enterprises, or households, during a given reference period. This includes employers and own-account workers who are employed in their own informal sector enterprises; contributing family workers; and employees and paid apprentices or interns who do not have paid annual leave or sick leave benefits, and whose employers do not contribute to their social security
+
+---
+
+**Page 149**
+
+
+---
+*Chunk pages 150–150*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=555 (sys=94, user=461), max_out=1024, ctx=8192
+---
+
+# Page 10 | 28
+
+In 2019 as well as in 2008, the proportion of paid employees among males was higher than the proportion among females. As noted in above sections, marital status is an important determinant of women’s wage employment. Women who are married are 38% less likely to be in paid employment. Larger family size and higher education levels in heads of households increase the likelihood of women becoming wage workers.
+
+The 81.7% of the population aged 15-59 years are in the labor force, 85.8% for males and 77.9% for females. It is however noteworthy, that women continue to enter and exit the labor force at an earlier age than men (see figure 3 below). The male economic activity rate remains higher than females for all ages from around age twenty onwards.
+
+## Figure 5: Age-specific Labor Force Participation Rates (LFPR) by sex, Cambodia, 2008-2019
+
+In 2019, the majority of employed persons in Cambodia’s economy were working as agricultural, forestry and fishing workers (53.4 percent), followed by craft and related workers (16.6%) and services and sales workers (12.6 percent). This indicates that Cambodia’s labor market is still predominantly composed of unskilled workers. Such distribution of labor force also explains the fact, that economic activity rates have always been higher in rural areas than in the urban areas for male and females - largely driven by higher participation rates in agriculture in rural areas. The female participation in skilled agriculture, forestry and fishing was higher (15.1 vs. 10.1%).
+
+The economically inactive population includes people who are not working and not seeking work during the reference period. The proportion of the population who are not economically active is higher among females (41.0 percent) than among males (34.8 percent).
+
+## Gender Wage Gap:
+
+18 General Population Census Cambodia, 2019.
+
+
+---
+*Chunk pages 151–151*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=849 (sys=94, user=755), max_out=1024, ctx=8192
+---
+
+# Page 151 | 28
+
+## Gender Gap in Social Protection:
+
+The women coverage under existing national social assistance program and social security scheme is limited; women are often left without any support. Low social protection is especially felt with regard to old-age pensions, unemployment benefits or maternity protection. However, this issue is recognized in NSDP (2019 -2023) and there are plans by the Royal Government of Cambodia (RGC) to widen the coverage.
+
+## Gender Gap in Managerial Positions:
+
+In 2019, 3 out of 10 managerial positions were occupied by women, while men occupied the 7 out of 10 posts. This indicates the significant gaps and empowerment issues for women in leadership positions as further explained under section 2.3 below.
+
+### 2.3 Women in Leadership and Decision-making Roles
+
+The woman in decision making roles were benchmarked against publicly available data on gender statistics in political, civil service and judiciary sector. While women participation has been growing in institutional setting and the royal government of Cambodia has been encouraging women participation, the women participation rates are nowhere near parity. Women continue to have limited leadership and decision-making opportunities.
+
+Women’s participation in decision making is limited for a number of reasons, including the traditional belief that women are not suited to high positions and decision making. Women’s role in caregiving and household work is yet another barrier to their full participation in decision making, as is women’s very low level of education.
+
+## Women in Political Leadership Roles:
+
+The Parliament of Cambodia is the bicameral legislature of the Government of Cambodia, consisting of the Senate and the National Assembly. The figure below indicates that the number of women senators has only increased one percent during the two decades. At the first mandate (1999 -2006), women were accounted for 15 percent, and the fourth mandate (2018 -2024) is 16 percent. It shows that women's situation in the Senate remains largely unchanged, thereby emphasizing on need on women empowerment in political roles.
+
+---
+
+**Note:**  
+19 The gender wage is calculated by subtracting the average wage level for women from that of men, and then dividing the remainder by the average wage level of men.  
+20 Exchange rate of 4000.05 used, in KR overall average of 1,136,707 for men and 1,002,341 for female across all sectors/occupations.  
+21 Gender wage gap Cambodia, UNDP 2021.  
+22 Source: Source: National Strategic Development Plan (NSDP 2019-2023) Cambodia, Royal Government of Cambodia (RGC).  
+23 Cambodia, Country Gender Analyses, ADB 2012
+
+
+---
+*Chunk pages 152–152*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=419 (sys=94, user=325), max_out=1024, ctx=8192
+---
+
+# Page 12 | 28
+
+## Figure 6: Percentage of Women and Men Senators in 1999-2006 and 2018-2024
+
+The situation in National Assembly is however different, it shows that female membership has been increasing from 1st mandate (where women represented only 6%) to 21 percent in the sixth mandate. It should be also highlighted, that more women hold senior positions within the National Assembly compared to the first mandate.
+
+## Figure 7: Percentage of Women and Men Members of the National Assembly in 1993-1998 and 2018-2023
+
+Women make up about 16% of the government senior position from Under Secretary of State to Deputy Prime Minister (as of February 2020).
+
+## Women in Judiciary:
+
+Women's participation in the judiciary system is relatively low within seven years of service (2013-2020). Women constitute only 15 percent of judges, 14 percent of prosecutors, 22 percent of lawyers, and 12 percent of the notary public (as of February 2020).
+
+## Women in Civil Service:
+
+Even though the numbers of male civil servants are still higher, more women civil servants have been recruited, increasing from 32 percent to 41 percent from 2007 to 2018. This is largely due to Royal
+
+
+---
+*Chunk pages 153–153*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=973 (sys=94, user=879), max_out=1024, ctx=8192
+---
+
+# Page 13 | 28
+
+## Government of Cambodia’s introduced quote, with a guideline to include 20 percent to 50 percent of women in the annual recruitment of the public institutions.
+
+### 2.4 Gender Based Violence
+
+Violence against women (VAW) is still a pervasive issue in Cambodia. Among Women aged between 15-64 in Cambodia, 30% have experienced violence in physical, sexual, psychological, and economic forms.
+
+The National Survey on Women’s Health and Life experience in Cambodia further revealed, that approximately, 1 in 5 women age between 15 -64 reported that they have experienced physical and/or sexual violence from their intimate partner at least once in their lifetime. Most of the women reported experience violence also claim that the incident occurred more than once. Furthermore, 75% of women experience physical and/or sexual violence claims encounter severe acts of violence. The survey also found that 20% of women's first sexual intercourse experience was without their consent.
+
+While non-partner VAW is not as common as intimate partner, it is still of significant concern in Cambodia. Non-partner physical violence was reported by 14% of women; friends, parents and siblings were most commonly identified to be the perpetrators. The 6% of Cambodian women has experienced economic violence.
+
+According to USAID study, a culture of impunity protects the perpetrators rather than the victims of violence, corruption, and abuse. Key challenges are (i) the lack of mechanisms and guidelines for effective implementation of laws; (ii) discriminatory attitudes and behaviors, which underlie gender-based violence; and (iii) the stigmatization of survivors of violence.
+
+The recent studies also warn, that the COVID-19 pandemic may further increase women’s exposure to violence, as a result of measures such as lockdowns and disruptions to vital support services.
+
+### 2.5 Socio-Cultural Norms in Cambodia
+
+The Cambodian household is traditionally headed by a man as evidenced by the 2019 household data under section 2.1 “Households”. The family is at the core of society and plays a key role in meeting the economic and social needs of its members. Women are expected to be responsible for housekeeping and child caring. Various studies indicate, that compared to many other women in Asia, the women in Cambodia play a significant role in managing family finances. At households, in addition to traditional roles expected of women, they have also assumed roles traditionally reserved for men, perhaps as a legacy of Khmer Rouge period.
+
+Culture, traditions, and beliefs have contributed significantly to the construction of gender identities and social norms in Cambodia. Men are traditionally portrayed as strong, rational and powerful, whereas women are often described as gentle, emotional, weak, and humble. The moral codes (Chhab Srei and Chhab Proh) also underpin such stereotypes. In accordance with these behavioral codes, Cambodian women are
+
+---
+
+**Note:** This text appears to be incomplete or truncated, as it ends abruptly after "Cambodian women are" without completing the sentence or providing further content. The original page number is preserved in the markdown format above.
+
+
+---
+*Chunk pages 154–154*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=786 (sys=94, user=692), max_out=1024, ctx=8192
+---
+
+# Page 14 | 28
+
+## III. Institutional Assessment
+
+Cambodia ranks 103 out of 156 in the Global Gender Gap Index 2021. As per the index, the gender gaps remain widest in education attainment (rank 128) and political empowerment (rank 126). The progress in economic empowerment has improved in line with the country’s economic growth, however the gaps still remain, particularly to women’s paid employment (rank 46).
+
+The table below provides a summary of performance of Cambodia’s SDG with respect to Gender Equality as per national review performed in 2019. It points to gaps with regard to the women economic empowerment and women in decision making. Our findings in Section II are in line with the key gender gaps pointed out by the global and local rankings.
+
+### Table 3: Summary Performance Against Cambodia SDG 5: Gender Equality
+
+| Indicator | Status |
+|----------|--------|
+| Empower women in wage employment | Unfinished business |
+| Empower women in decision making | Unfinished business |
+| Combat gender-based violence | No target values |
+
+To zoom into the root causes of gender gap, this institutional assessment section focuses on analyses of legal framework and policies vis a vis gender equality in Cambodia.
+
+### 3.1 Legal Framework
+
+The Cambodian Constitution, Article 31, recognizes that women and men have equal rights to participate in societal, economic, political, and cultural lives. Article 35 and Article 45 of this constitution also emphasize equal work with equal payment among men and women, prohibiting all forms of discrimination against women as follows:
+
+#### Text Box 1: Extract from Constitution
+
+- **Article 31 (rights and freedoms):** Every Khmer citizen shall be equal before the law, enjoying the same rights, freedoms and fulfilling the same obligations regardless of race, color, sex, language, religious belief, political tendency, birth origin, social status, wealth, or other status.
+  
+- **Article 35 ( political equality):** Khmer citizens of either sex shall be given the right to participate actively in the political, economic, social and cultural life of the nation.
+
+- **Article 45 ( discrimination against women):** All forms of discrimination against woman shall be abolished, and the exploitation of women in employment shall be prohibited in marriages and matters of the family.
+
+This constitutional commitment is also reinforced by Cambodia's ratification of the Convention on Elimination of Discrimination against Women (CEDAW) in 1992, and its signing of the "Platform for Action" agreed at the 1995 Fourth World Conference on Women in Beijing.
+
+---
+
+**Note:**  
+29 National Survey on Women’s Health and Life experience in Cambodia, 2015, WHO.  
+30 Source: Cambodia's Voluntary National Review 2019 of the Implementation of 2030 Agenda, June 2019
+
+
+---
+*Chunk pages 155–155*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=383 (sys=94, user=289), max_out=1024, ctx=8192
+---
+
+# Page 15 | 28
+
+The employment relationship in Cambodia is governed by a number of legal instruments such as the Constitution, the Civil Code, the Labor Law, the Law on Minimum Wages, the Law on Social Security Schemes, the Law on Trade Unions and international treaties incorporated as part of Cambodian law through parliamentary enactments.
+
+The labor law does not allow discrimination in wages based on sex, origin, age, and caste.
+
+31 Cambodian Civil Code, promulgated on 8 December 2007 and fully implemented in late 2011  
+32 Labour Law dated 13 March 1997, as amended on 20 July 2007 and on 26 June 2018  
+33 Law on Minimum Wages, dated 6 July 2018  
+34 Law on Social Security Schemes dated 2 November 2019, replacing the old law dated 2002  
+35 Law on Trade Unions, promulgated on 17 May 2016 (amended on 3 January 2020) and its implementing regulations.  
+36 Source: https://thelawreviews.co.uk/title/the-employment-law-review/cambodia
+
+
+---
+*Chunk pages 156–156*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=939 (sys=94, user=845), max_out=1024, ctx=8192
+---
+
+# 3.2 Policy Framework
+
+The Royal Government of Cambodia (RGC) adopted Cambodian Sustainable Development Goals Framework 2016-2030 and localized Sustainable Development ("Gender Equality") into action through (i) Rectangular Strategy for Growth, Employment, Equity and Efficiency, (ii) National Strategic Development Plan (NSDP 2019 -2023), (iii) Neary Rattanak Strategic Plan 2019 -2023 and (iv) National Action Plan to Prevent Violence Against Women (NAPVAW). These key strategic policy frameworks are followed by the measurable target indicators for gender mainstreaming by the RGC.
+
+The gender mainstreaming is noted in all these strategic frameworks, however benchmarking to international best practices reveal, that some of those frameworks may benefit from more granularity on how to overcome inherit social norms and sector specific gaps.
+
+## Table 4: Summary of Key Policy Frameworks to Institutionalize Gender Equality in Cambodia
+
+| Policy Framework | Description |
+|------------------|-------------|
+| Rectangular Strategy (IV)38 | Rectangular Strategy (RS) IV specifies four policy rectangles: (1) Human resource development; (2) Economic diversification; (3) Private sector and market development; and (4) Sustainable and inclusive development. Rectangle 1-Human Resource Development refers to the strengthening of gender equity and social protection. The document also clearly refers to promoting the role of women in the economy and mainstreaming gender in government initiatives as priorities (e.g. Neary Rattanak Strategic Plan). |
+| National Strategic Development Plan (2019-2023)39 | The NSDP is the key strategic planning framework, which is the backbone of the sustainable development efforts of Cambodia and focuses on overcoming binding constraints, bringing about the conditions for the expansion and deepening of the economy, ensuring progressive improvement in socioeconomic conditions, mobilizing resources and monitoring progress. The NSDP is gender mainstreamed throughout and sets targets/indicators for gender mainstreaming for further monitoring. The NSDP may benefit from a more granularity on how to overcome the inherit socio-cultural norms vis a vis gender perception in Cambodia. |
+| Neary Rattanak Strategic Plan 2019-202340 | Neary Rattanak Strategic Plan is a five-year strategic plan of the Ministry of Women's Affairs to strengthen gender mainstreaming and women's empowerment. The Plan addresses gender mainstreaming in five strategic areas (1) Women's Economic Empowerment (2) Education of Women and Girls (3) Health of Women and Girls (4) Legal Protection for Women and Girls (5) Women in Public Leadership and Politics and (6) Gender in Climate Change The NRSP emphasizes that sector specific policies would benefit from greater gender mainstreaming. The data gaps with regard to gender in climate change has been emphasized, along with remaining challenges in each of strategic areas. |
+
+37 Source: https://mop.gov.kh/DocumentEN/CSDG%20Framework-2016-2030%20English.pdf  
+38 Source: http://cnv.org.kh/wp-content/uploads/2012/10/Rectangular-Strategy-Phase-IV-of-the-Royal-Government-of-Cambodia-of-the-Sixth-Legislature-of-the-National-Assembly-2018-2023.pdf  
+39 Source: https://www.mop.gov.kh/en-us/Home/Download/def33e18-289c-45b1-b6e3-fb357435c019  
+40 Source: https://www.mowa.gov.kh/wp-content/uploads/2021/02/Neary-Rattanak-V-final-Eng.pdf
+
+
+---
+*Chunk pages 157–157*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=972 (sys=94, user=878), max_out=1024, ctx=8192
+---
+
+# Page 17 | 28
+
+## National Action Plan to Prevent Violence Against Women 2019-2023 (NAPVAW)
+
+NAPVAW was developed and approved by the RGC to reduce violence against women and girls, including those at increased risk through increased prevention interventions, improved response, increased access to quality services, and multi-sectoral coordination and corporation. Four key areas have been identified as primary areas of focus: (i) Prevention (ii) Legal Protections and Multi-Sectoral Services (iii) Formulation and Implementation of Laws and Policies (iv) Review, Monitoring, and Evaluation. It provides direction for implementation through multi-institutional operational plans, roles and mandates to the national and sub-national institutions at all levels.
+
+In terms of governance, it is noteworthy that the working groups have been created to support implementation of the action plan by MOVA.
+
+## Climate Change and Gender Action Plan related policies
+
+- The National Strategic Plan on Gender and Climate Change 2014-2023
+- Master Plan for Gender and Climate Change (2018-2030)
+- Action Plan on Gender and Climate Change 2019-2023
+
+Despite the constitutional right for gender equity as well as progress in terms of gender focused policies and strategic plans, mainstreaming gender equity in Cambodia is still facing constraints. In particular, the key policy frameworks reveal following gender challenges in Cambodia:
+
+1. Most women in Cambodia are working in the informal economy and the industrial employment within a lower wage range require additional support for capacity and skill development, strengthened social protection and safety at work.
+
+2. The skill and capacity of women's participation in economic activities remains limited, and the opportunities and resource management open to women remain lower than men, with barriers to access including time availability and access to information, production resources, finances, and technology.
+
+3. Women traditionally are required to balance both paid and family care work, and consideration is needed for the fact that higher social constraints are placed on their activities and time. Flexible support and supportive environments are needed in the workplace for women to achieve work and life balance, which can be the encouraging factor for more effective and productive work.
+
+4. Gender stereotypes and attitudes of society and family continue to divide work by sex, which hinders the development of women's roles in modern society. Women have been encouraged to embrace skills and work according to gender stereotype and perspectives of society and family, which has not enabled women to select and decide for jobs following market demands. In addition, this has led to a limited number of women who study or work in Science, Technology, Engineering, Art, and Math (STEAM).
+
+5. Negative gender stereotypes and attitudes in the family, the workplace, and the public space continue to occur against the LGBTI population and other vulnerable groups of people. These are barriers to enjoyment of their rights and their potential.
+
+6. The health of women and girls still needs more attention, especially in remote areas with a focus on expanding information and understanding of the importance of health care, hygiene, and nutrition.
+
+7. Women and girls still face physical, sexual, emotional, and economic violence that may occur at home, at work and in the community, and all forms of violence may be perpetrated against women and girls regardless of income, education, and knowledge levels.
+
+8. There is an identified need to strengthen and expand the partnership mechanisms with the private sector and its stakeholders.
+
+9. Gender stereotypes reinforce the idea that household duties and unpaid care works fall under the responsibility of women, and this is still a major barrier to women being able to exercise their rights and participating in public works and holding leadership positions.
+
+41 Source: https://cambodia.unfpa.org/en/publications/royal government-cambodia-national-action-plan-prevent-violence-against-women-2019-2023
+
+
+---
+*Chunk pages 158–158*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=666 (sys=94, user=572), max_out=1024, ctx=8192
+---
+
+# Page 18 | 28
+
+## x. Insufficient accountability of ministries and other government institutions on promoting gender equality, and updating and institutionalizing the gender mainstreaming action plan
+
+As a result, capacity building and implementation mechanisms and functions for gender mainstreaming at all levels and strengthen monitoring and evaluation framework are a challenge.
+
+The challenges referred in policy framework(s) are in line with our findings based on assessment of the key gender indicators and research related to socio-cultural norms in Cambodia discussed under Section II.
+
+## 3.3 Governance
+
+The national institution responsible for the gender mainstreaming in Cambodia is the Ministry of Women’s Affairs (MOWA). It was established in 1996 to lead, coordinate and facilitate efforts for gender equality and women’s empowerment in Cambodia. The Ministry works with pubic institutions, civil society and private sector to advance gender equality in policies and programs.
+
+The key policy framework of the MOWA is Neary Rattanak Strategic Plan. MOWA has created gender mainstreaming action groups (GMAGs) in each line ministry, who are mandated to support women’s economic empowerment by preparing and implementing the sectoral gender mainstreaming action plans (GMAPs).
+
+It is noteworthy, that the MOWA is a member of the National Council for Sustainable Development (NCSD) and the National Committee for Disaster Management (NCDM). It is thereby involved in advocating and addressing the issues of women, girls and gender in the development and implementation of the policies on green growth development, climate change, disaster risk reduction and impact management.
+
+It has subcommittee “Committee for Gender and Climate Change (CGCC)” responsible for developing national guidelines on gender mainstreaming in climate change programs as well as capacity development of civil servants at national and sub-national level. Thus far, the CGCC of MOWA has also developed guidelines for gender mainstreaming in adaptation in five sectors (Agriculture, Rural Development, Health, Water Resources, Public Works and Transport).
+
+## 3.4 Key Indicators for Gender Measurement
+
+The below table summarizes the Gender Mainstreamed indicators targeted by the Royal Government of Cambodia (RGC) in its NSDP 2019-2023 for further measurement.
+
+Source: Table 4.7, key indicators for gender measurement, the NSDP 2019-2023.
+https://www.mop.gov.kh/DocumentEN/NSDP%202019-2023%20in%20English.pdf
+
+
+---
+*Chunk pages 159–159*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=468 (sys=94, user=374), max_out=1024, ctx=8192
+---
+
+# Page 19 | 28
+
+## Table 5: Key Indicators for Gender Measurement Cambodia
+
+### IV. Gender Assessment per Sector and Entry Points for CCFF  
+We conducted sector specific gender assessment in Cambodia; however, we were constrained by availability of gender disaggregated data in energy, transport and water sectors. This gender assessment is high-level and used as an entry point for planning CCFF gender-mainstreamed programmatic approach. It will be complimented by project specific gender assessment to guide CCFF gender mainstreamed investment decision making and project design. See the CCFF Gender Action Plan for details.
+
+### 4.1 Financial Inclusion in Cambodia’s Financial Sector  
+Financial inclusion is increasingly being recognized as a key driver of economic growth and reducing inequality in Cambodia. This section provides an overview of state of financial inclusion in Cambodia and proposes the key entry points for planning CCFF g ender-mainstreamed programmatic approach for wholesale loan borrowers (local financial institutions).
+
+## Table 6: Snapshot of Cambodia's Financial Inclusion Indicators
+
+| Indicator | Data | Source |
+|-----------|------|--------|
+| Banked Population | 30% as of 2021 | UNCDF |
+| Population using other formal services | 62% as of 2021 |  |
+| Informal Financial Services | 23% as of 2021 |  |
+| Population excluded from formal financial services | 33% as of 2021, out of which 60% women |  |
+| Proportion of female that are banked | 25% as of 2021 |  |
+| Women vs. Men in formal Financial Inclusion | 60% of women vs. 73% of men as of 2021 |  |
+
+---
+
+
+---
+*Chunk pages 160–160*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=999 (sys=94, user=905), max_out=1024, ctx=8192
+---
+
+# Page 20 | 28
+
+## Bank Credit 10% as of 2021  
+% of women interested to take loan from bank  
+70% as of 2019 IFC Survey  
+
+## Account Ownership  
+21.5% of women and 21.8% of men in Cambodia had an account (as of 2017)  
+WB Gender Data Portal  
+
+## Asset Ownership  
+51.4% of men and 61.5% of women owned a dwelling either alone or jointly (as of 2014).  
+WB Gender Data Portal  
+
+## Geographic distribution of the financial inclusion (% adults)  
+Percentage of inclusion in Urban Area: 74%, 69% in rural areas.  
+National Bank of Cambodia  
+
+## Key findings are summarized below:  
+
+- Male financial inclusion in Cambodia is higher than that of female counterparts: As indicated in table 6 above, there is relatively high level of access to formal financial services in Cambodia (67%), with female formal financial inclusion being lower than that of male counterparts (at 60% vs. 73% male). Furthermore, 33% of the population in Cambodia remains excluded from formal financial services, out of which 60% women. And majority of population are currently served by microfinance institutions and payment service institutions (source: National Bank of Cambodia).  
+
+- There is a need for financial deepening in Cambodia through banking sector, to enhance access to credit and product offerings: The findings demonstrate that banked population in Cambodia remains small segment of formal financial services (only 30%, compared to 62% provided by non-bank formal financial institutions). The most used financial services are remittances, savings and credits. Yet only 42% of Cambodia’s population has access to finance, out of which, only 10% has access to credit from a bank. Currently, MFI’s and MDIs who have access to donor funded programs targeting microenterprises, as well as informal channels are key providers of credit in Cambodia. Hence, access to credit is more expensive and the size of credit is comparably limited, thereby limiting the opportunity of business customers to access required early stage and growth capital at scale. Various studies and stakeholder engagement in Cambodia also suggest that the number one barrier to access to finance for businesses is high interest rates in Cambodia. This indicates that there is room for financial deepening and a need to increase access to credit from local financial institutions (Banks). This finding is also aligned with Royal Government of Cambodia’s (RGC) Financial Sector Development Strategy, which prioritizes the diversification of financial services and products in banking sector. Furthermore, RGC’s Financial Inclusion Strategy outlines a need to promote innovative credit products for consumers and SMEs. As per National Bank of Cambodia “ consumers can access credit from multiple sources, which means that portion of these individuals are able to hide over-indebtedness by using one source of credit to repay another ”. And there have been indications of over-indebtedness and loan defaults. Market intelligence data of Executing Entity also suggests that women are particularly vulnerable, as (1) refinancing of loans puts extra financial burden to repay and then re-borrow for women, given the persisting gender income gaps in Cambodia and (2) women micro-enterprises benefit from availability of programs with better financial terms, thereby often, male household members take credit in the name of women on documents, thereby exposing them to potential risks of default.  
+
+- Financial access for female-led businesses remains low: Women represent majority of business owners in Cambodia (as indicated in women economic empowerment section of this document), yet have less access to formal sources of finance to grow enterprises. Only 25% of women are banked, and only 3% of women SME’s has access to formal credit mainly served by microfinance institutions and credit-cooperatives. Therefore, limiting access to critical growth capital. Affordability of loans is an issue in Cambodia, for both women and male owned businesses.
+
+
+---
+*Chunk pages 161–161*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=685 (sys=94, user=591), max_out=1024, ctx=8192
+---
+
+# Page 21 | 28
+
+• Banks in Cambodia have a track record in lending to women, but there is limited institutional capacity and human resources to mainstream gender into climate finance: The executing entity has a track record of working with local financial institutions in Cambodia in partnership with USAID and IFC, supporting Cambodian Sustainable Finance Initiative (CSFI) and its member banks to develop Gender Policy, E & S risk management policies and tools, and develop green lending pipeline. Most of the banks in Cambodia have a track record of lending to women, as well as appetite to enhance climate finance to women-led business and/or business that promote gender equity and women economic empowerment. Yet, access to affordable funding coupled with the capacity and knowledge gaps are currently limiting bank’s ability to branch into gender-mainstreamed climate finance. Preliminary engagements with banks also highlight the need for institutional and human resource capacity building in the financial sector to enhance gender equity. For example, eight banks that were already provided with E & S risk management tools (including gender policy and respective training) by CSFI, indicated a need for further non-financial assistance to implement Gender Policy. The CCFF programme is specifically designed to meet this need by providing financial and non-financial support (in form of gender expertise to develop and implement project specific Gender Action Plan (see Annex 8b)) to its borrowers in collaboration with the CSFI.
+
+## Entry Points for CCFF in Financial Sector:
+
+• Wholesale Loans to Local Financial Institutions: Gender-mainstreamed investments to local financial institutions in Cambodia, that provide lending to women-led businesses and businesses that contribute to gender equity and women economic empowerment. Thereby, enhancing credit and product offerings and contributing to financial sector deepening in Cambodia through climate finance.
+
+• Institutional and human resource capacity building to enhance gender equity: Given capacity and knowledge gaps in Cambodia’s financial sector to promote uptake of gender mainstreamed investments, the CCFF Programme through its full-time Gender Specialist, Gender Consultants and available TA funding resources will provide non-investment support to enhance gender equity and women economic empowerment considerations at institutional and project level. The capacity building, knowledge sharing, and TA funding is expected to support banks undertake gender assessment, develop gender action plan, build institutional capacity to mainstream gender into Banks’ lending and operations, promote gender equity in workforce, develop products and services targeting women customers. Active collaboration with Cambodian Sustainable Finance Initiative (CSFI) and National Bank of Cambodia is planned. See Annex 8b for detailed entry points for the financial sector.
+
+
+---
+*Chunk pages 162–162*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1002 (sys=94, user=908), max_out=1024, ctx=8192
+---
+
+# Page 162 | 28
+
+## 4.2 Sustainable Land-use and Agriculture Sector
+
+CCFF shall invest in sustainable land-use and agriculture activities, with forest conservation features. To this end, we have assessed the existing gender gaps in forestry and agriculture sectors under text box 2.
+
+### Text Box 2: Gender Assessment of Cambodia’s Agriculture and Forestry Sectors vis a vis planned CCFF Sustainable Land-use and Agriculture Investments
+
+The forestry and agriculture sector in Cambodia contribute to less than 20% of GDP for the year 2019⁴³, however the proportion of employed population engaged in the sector is around 30⁴⁴. This reflects low productivity, low returns to labor and low economic security to both men and women employed in the sector.
+
+The agriculture is the sector where most Cambodian women and men work, however the majority is vulnerable employment (own account workers and unpaid workers), as only 1.1% of men and 0.7% of women population aged 15 or older are engaged in formal employment in agriculture. The wage gap in the sector is 14.9%.
+
+It is noteworthy, that the agriculture sector itself is characterized by the low productivity in Cambodia, which affects women’s income generating capacity disproportionally then men.
+
+Women in agriculture face variety of obstacles and constraints compared to their male counterparts—including access to economic resources, knowledge, and capacities to invest in appropriate agriculture technologies or implement sustainable agriculture practices to drive productivity. Main reason is that women in Cambodia have difficulty to access extension services and finance. The gender gap persists in access to landownership as well. Households headed by women comprised 23.5% of total agricultural household in 2019. However, only 11.7% of agricultural land were owned by women-headed households and remaining 88.3% owned by male-headed households.
+
+It is noteworthy, that approximately 34% of agricultural households reported experiencing some form of severe shock during the last 12 months, including weather events like typhoon, flood, landslide or drought. As a matter of fact, weather related events are number one most reported shock (82%), with drought and food security reported most frequently (62%), followed by the floods (12%) and typhoons (5%). The most common responses to these shocks included selling crops and/or livestock, finding work outside the agricultural holding, or borrowing money. This indicates that agriculture household holding’s income (both men and women) are affected by climate change, however women are affected disproportionally given the constraints to access to economic and financial resources.
+
+In terms of forestry, the commercial forestry is predominantly male dominated in Cambodia, while the women are discouraged from pursing leadership roles in the sector. It is also noteworthy, that there is a lack of female representation during stakeholder engagement and community meetings. As per USAID study, “women are often not invited to grassroots, sub-national, and national level meetings, and men usually hold the leadership positions and choose who to (or not to) invite”⁴⁵.
+
+⁴³ Source: Annual Report 2019, National Bank of Cambodia  
+⁴⁴ By industry, the largest proportion of the employed population was engaged in agriculture, forestry and fishing, at 33.1%, followed by both manufacturing and wholesale and retail trade, at 16.7% each, and then by construction, at 10.0%. It is noteworthy, that out of 32.5% of the total employed persons in agriculture sector, only 0.9% is formal employment in agriculture (1.1% for men and 0.7% for women). Remaining 30% of employed persons aged 15 or older are engaged in informal work. It is also noteworthy, the informal employment was highest among agricultural, forestry and fishery workers (98.6 informal and 1.4 formal%). Source: Report on the Cambodia Labor Force Survey 2019, National Institute of Statistics Ministry of Planning  
+⁴⁵ Source: Gender Analysis, Strategy and Action Plan, 2019, USAID Cambodia Green Future
+
+
+---
+*Chunk pages 163–163*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=819 (sys=94, user=725), max_out=1024, ctx=8192
+---
+
+# Page 163 | 163
+
+## Entry Points for CCFF in Sustainable Land-use and Agriculture
+
+The gender and social inclusion entry points in the forestry and agriculture sector given CCFF's sustainable land-use and agriculture investment plans are as follows:
+
+- Investments encourage sustainable land-use and agriculture, by addressing productivity constraints in agriculture and the sector in which most Cambodian women work.
+- Promote women's access to economic and financial resources and opportunities, including through job creation and financing of women-led businesses in agriculture sector.
+- Promoting knowledge transfer, through positive demonstration effect on use of sustainable land-use and agriculture practices, as well as training to women employees on forest conservation and sustainable land use practices [to be offered by the entrepreneurs financed by the CCFF].
+- Enhance women's voice through representation in decision-making, e.g. through stakeholder engagement as well as encouraging women in leadership positions.
+
+See CCFF Action Plan for additional details on sector specific targets and actionable items.
+
+## 4.3 Clean Energy Sector (Renewable Energy and Energy Efficiency):
+
+CCFF shall invest in renewable energy (solar, wind) and energy efficiency measures (energy efficiency in manufacturing). We have assessed the existing gender gaps in clean energy sector. It should be highlighted, that there is a relative scarcity of gender related studies focused on clean energy in Cambodia. To this end, this sub-section also discusses relevant data with broader context of energy sector and manufacturing sector.
+
+### Text Box 3: Gender Assessment of Cambodia's Energy and Manufacturing Sectors, vis a vis Planned CCFF Clean Energy Investments
+
+The gender assessment in clean energy value chain was benchmarked against three key indicators: (1) access to energy (2) economic empowerment in energy and manufacturing sector (3) stakeholder engagement. The findings reveal that sector specific and broader structural issues discussed under Section II result in gender gaps across clean energy value chain in Cambodia.
+
+#### Access to energy:
+
+The Royal Government of Cambodia made remarkable progress in terms of energy access, which currently stands at 84%. Nonetheless, there are gender gaps in terms of access to energy. As per world bank 2018 data⁴⁶, 69% of male-headed households have grid access, compared with 65% of female-headed households. Affordability is the biggest barrier to access to electricity mentioned by both men and women, however, 84% of female-headed households find the cost of connection and monthly fees to be the biggest hurdles to gaining grid access.
+
+Lack of energy limits opportunities, job creation, business development, and access to health and education. Women are affected disproportionally then men, as women and girls spent large part of their day collecting fuelwood for domestic purposes and production, which translates in inequality as well as into lost opportunities for education and remunerated labor⁴⁷.
+
+⁴⁶ Source: https://openknowledge.worldbank.org/bitstream/handle/10986/29512/124490.pdf?sequence=5&isAllowed=y  
+⁴⁷ 51% of population in Cambodia still uses firewood for cooking, In the rural areas, about 68 percent of the households used firewood as fuel for cooking. Source: Cambodia Socio-Economic Survey 2019/20
+
+
+---
+*Chunk pages 164–164*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1076 (sys=94, user=982), max_out=1024, ctx=8192
+---
+
+# Page 164 | 28
+
+## Economic empowerment: The clean energy value chain in Cambodia is gender blind 48, with the gender dimensions not captured in economic statistics. 49 This is often the case in other developing countries too.
+
+To this end, we have looked at employment statistics across “ electricity, gas, steam and air conditioning supply” and “manufacturing sectors”, as well as women’s engagement in clean energy business.
+
+We found, that only 0.2% of the Cambodia’s working age population is employed in the "electricity, gas, steam, and air -con supply industry". Males accounted for 75.7 % of employed working age population, compared with 24.3 % who were females. There is significant wage gap of 40% in the industry. It is also noteworthy, that the women make up less than 33% of technical staff and below 31% of managers in Cambodia.
+
+While exact statistics for clean energy sector is not available, we assume that similar low employment and significant gender gap may persist in renewable energy, largely due to the broader structural issues in Cambodia (see Section II) that prevent women’s ability to enter and advance in their careers.
+
+These structural issues are: (1) limited formal employment and wage discrimination, (2) capacity constraints given the low education levels of women (e.g., upper secondary and university education, especially STEM) and (3) access to capacity enhancement trainings 50.
+
+Social norms and cultural perceptions of women are yet another significant barrier. For example, there is observed evidence in Cambodia, that women are successfully leading renewable energy micro enterprises in Cambodia ( e.g., small-scale solar energy, clean energy cookstove businesses), yet their opportunities for expansion is limited due to household obligations and limited access to finance.
+
+## In terms of the manufacturing industry 51, we zoomed into garment industry as energy efficiency measures will be focused on this industry. We found that job in garment industry is viewed as an opportunity for economic empowerment, especially for women who represent 85% of workers. Less than 4% of the female garment worker population however holds a line leader or office staff role. Male workers are more likely than female workers to achieve promotion within the industry because of an intentional preference for female workers for lower skilled job 52. 1 out of 3 women experience sexual harassment in their workplace; 68.2% were also made to feel uncomfortable or unsafe in the workplace.
+
+## Stakeholder engagement: Drawing on project experiences in grid-connected renewable energy in Cambodia as well as Asia, we found that persistent social norms and cultural perceptions limit women’s ability to participate at every stage of energy decision-making. In Cambodia and as demonstrated by the Section II, high-level civil service professionals are predominantly men. Furthermore, the socio-cultural norms discussed under section 2.5, further hamper women’s participation in public consultations for RE projects and thereby, limiting the ability of women to influence decisions on the quality and potential outcomes of the project. It is also noteworthy, that land acquisition process for large scale renewable energy
+
+48 Cambodia’s updated NDC identifies a need to enhance monitoring and evaluation systems of sectoral ministries to track gender outcomes in climate change initiatives with a particular focus on collecting and managing sex-disaggregated data, gender indicators and budgeting, outcome-based reporting and the dissemination and up-scaling of the gender and climate change adaptation related knowledge generated.
+
+49 There is no official document describing the statistics of employment or business ownership in energy-related sectors; furthermore, there is no gender disaggregated data available on access to energy in Cambodia. Thereby no reference to gender disaggregated data in this section for clean energy sector
+
+50 The statistics show 0 trainings offered for both men and women in the sector.
+
+51 Manufacturing is the second largest employer of the working age population in Cambodia, contributing to 16.7% of employment of working age population in Cambodia. 22.3% women and 11.5% men. Majority of jobs in manufacturing industry (70%) is informal employment, with only 30% of jobs being formal employment.
+
+52 Source: https://www.care.org.au/wp-content/uploads/2017/04/SHCS_Brief-Women-Cambodia-Garment-Industry-March-2017_CA.pdf
+
+
+---
+*Chunk pages 165–165*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=715 (sys=94, user=621), max_out=1024, ctx=8192
+---
+
+# Page 165 | 165
+
+## Projects are mostly domain of the men, as women households have less title to land then men in Cambodia. Yet, women engage with land and access energy in ways different than men and the women's participation in consultation and decision making is critical.
+
+### Entry Points for CCFF in Clean Energy
+
+Based on the gender assessment in the sector, CCFF key entry points for the gender equity and women's economic empowerment for clean energy sector is as follows:
+
+- Investments encourage gender-mainstreamed infrastructure design, with gender assessment being mandatory for all renewable energy projects considered for financing for CCFF funds. The gender analysis forms part of the analysis for scoping and feasibility studies for solar/ wind infrastructure and stakeholder consultations, which shall include women and women's groups, the disabled, the elderly, indigenous groups and all local communities impacted by the proposed infrastructure. The specific quotas for female participation in stakeholder engagement are included in the gender action plan.
+
+- Large scale renewable energy projects provide opportunities for direct employment for women and for men. Quotas for female employment, together with gender sensitive workplaces, separate male and female toilets, and PPE designed for women are envisioned entry points as per the CCFF Gender Action Plan and are expected to contribute to a gender equality in workplace.
+
+- Encourage workforce safety, and harassment free work environment through project specific gender action plans including for energy efficiency projects in manufacturing sector.
+
+- Collaborate with private sector through knowledge sharing events to strengthen capacity across clean energy value chain.
+
+See CCFF Action Plan for additional details on sector specific targets and actionable items.
+
+## 4.4 Low-Carbon Transportation Sector
+
+CCFF shall invest in low-carbon transportation sector. Since the gender disaggregated data in low-carbon transportation sector is not available, we will focus discussion on observed information in transportation sector in Cambodia.
+
+### Text Box 4: Gender Assessment of Cambodia's Transportation Sector, vis a vis planned CCFF Low-Carbon Transportation Investments
+
+Cambodia's transport sector is male dominated, with motorcycles being the most popular choice in Cambodia (accounting for more than 85% of vehicle registration in Cambodia). While the gender disaggregated data in terms of access to transport is not available, we assume that in line to other countries in Asia, women and men in Cambodia do not have equal access to different modes of transport. Men in Cambodia also have higher access to income and control over family finances, while women in Cambodia are viewed to have domestic and caregiving responsibility in families. The mobility needs of women and men are also different.
+
+To this end, the men in Cambodia are likely to benefit more by an increased access to transport both in terms of mobility as well as affordability.
+
+
+---
+*Chunk pages 166–166*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=940 (sys=94, user=846), max_out=1024, ctx=8192
+---
+
+# Page 166 | 166
+
+## Traffic accidents in Cambodia are high, especially from motorbikes which accounts for 75% of fatalities by the transport sector. Much of care burden of the injured due to the gender norms fall to women and girls, given the socio-cultural gender norms in Cambodia discussed under Section 2.5.
+
+There is a lack of human resources, qualified technicians and skills to take advantage of the advancement of technology and innovation in transport sector in Cambodia as per the NSDP, which effects women and men employment and career advancement in transport sector disproportionally.
+
+## Entry Points for CCFF in Low-Carbon Transportation
+
+CCFF’s key entry points for gender equity and women’s economic empowerment for low-carbon transportation sector is:
+
+- **Gender mainstreamed access to low-carbon transport**, given affordable financing offered by the CCFF. The number of additional female and male passengers using low-carbon transport as a result of CCFF support is as follows: [39k total passengers, 20k female passengers].
+- **Increased employment for women**. The increased access to mobility for women can also lead to entrepreneurial opportunities in Cambodia.
+- **The purchases of motor vehicles for commercial use by enterprises will require safety trainings to employees**, thereby promoting safe access to transportation.
+
+See CCFF Action Plan for additional details on sector specific targets and actionable items.
+
+## 4.5 Climate Resilient Water Sector
+
+CCFF shall invest in climate resilient water, focused on rural areas. The discussion is thereby focused on gender gaps and opportunities in water sector.
+
+### Text Box 5: Gender Assessment of Cambodia’s Water Sector, vis a vis planned CCFF Climate Resilient Water Investments
+
+The gender assessment in climate resilient water sector was benchmarked against three areas: (1) access to water, (2) economic empowerment in water sector, and (3) decision making in water sector.
+
+### Access to water:
+
+Access to resilient and adaptive water supply and sanitation remain scarce in Cambodia’s rural areas. In 2019, while 74% of rural households had access to improved water supply, only 10% of those had piped water supply and only 5.7% of rural households had access to hand washing facilities connected with running water from a piped system.
+
+Most of Cambodia’s population already face
+
+---
+
+**Note:** The text appears to be incomplete or truncated at this point. The reference to "12% of semi-rural" suggests that the document continues beyond this section, but it is not fully included in the provided extract.
+
+
+---
+*Chunk pages 167–167*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=923 (sys=94, user=829), max_out=1024, ctx=8192
+---
+
+# Page 167 | 167
+
+## Economic empowerment in water sector
+
+We have analyzed Cambodia’s most recent labor census and looked at “water supply, sewerage, waste management and remediation activities” to understand employment trends. We found, that only 0.2% of the Cambodia’s working age population are employed in the sector, and informal employment is at 85%. There is gender parity in terms of women and men employment in the sector, however, there is 11% wage gap. The industry is dominated by the low-skilled workers of both men and women, as only 5% of the employed population have a university level education held by women. The World Bank Utility Survey 2018–19 further identified that women make approx. 10% of the Cambodian water and sanitation utilities workforce.
+
+## Privately owned and managed rural water schemes
+
+Privately owned and managed rural water schemes are being promoted by the Royal Government of Cambodia, as these schemes are seen as means to leverage private sector participation and funding. There are however gender gaps impacting entrepreneurial opportunities for women in rural water supply schemes. The women entrepreneurs are limited by a “double burden” of household care and income generating activity, mobility challenges and limited access to finance. The low interest loans/ affordable finance were impacting profitability and discouraging women economic empowerment in WASH sector.
+
+## Technical training, personal leadership training and education
+
+Technical training, personal leadership training and education was identified as yet another barrier impacting economic empowerment.
+
+## Decision making in water sector
+
+The weather shocks impact water supply and infrastructure in Cambodia, with women affecting disproportionally as they are the primary users of water for domestic use. As women’s decision-making role in Cambodia is limited (see Section II), it negatively impacts women’s participation in public consultations for water projects and thereby, off-putting the ability of women to influence decisions on the quality of the water supply project design (inc. climate resilience) and potential outcomes of the project.
+
+## Entry Points for CCFF in Climate Resilient Water
+
+CCFF’s key entry points for gender equity and women’s economic empowerment for climate resilient water sector is:
+
+- Gender mainstreamed design of water supply projects; specific quotas for female participation in stakeholder engagement are included in the gender action plan.
+- Increased access to climate resilient and improved safe water supply in rural areas, that brings health benefits (including for women, who use water in ways different to men).
+
+Overall, at least 11 million people still live today without access to a proper safe drinking water supply, 70% of them live in semi-rural areas. Source: Sevea, access to drinking water in rural areas Cambodia 2017.
+
+## References
+
+59 Failure of food systems impacted, leads to the increased risk of undernutrition and diseases. Source: Gender, Climate change, Health, WHO  
+60 Source: Female Water Entrepreneurs in Cambodia, Enterprise in Wash led by the he Institute for Sustainable Futures (ISF-UTS).
+
+
+---
+*Chunk pages 168–168*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=568 (sys=94, user=474), max_out=1024, ctx=8192
+---
+
+# Page 168 | 168
+
+## V. CCFF Gender Responsive Approach to Climate Finance
+
+The Cambodian Climate Financing Facility (CCFF) is a dedicated national climate finance facility to contribute to Cambodia's low-emission and climate resilient pathways.  
+CCFF is specifically designed to contribute to inclusive climate action, supporting Cambodia to implement its climate ambition, gender equality and development goals as identified in their NDC, national development strategies and sector policies.  
+
+To this end, the CCFF shall promote and support gender equity by institutionalizing a gender responsive approach at a level of institution and projects we finance. CCFF operations will be guided by the Gender Policy and the Gender Action Plan.  
+
+We identified key entry points for a gender mainstreamed approach for each sector financed by the CCFF in section IV of this document, however, we also acknowledge, there are significant gender gaps existing in Cambodia's local financial sector.  
+
+To this end, the CCFF, as Cambodia's first dedicated climate financing facility, shall set an example in terms of gender-mainstreamed governance, operational procedures and investment process.  
+
+Furthermore, the CCFF shall contribute to the knowledge transfer through collaboration with partner financial institutions to share gender assessment and monitoring tools, as well as lessons learned on gender responsive climate finance, thereby contributing to the institutionalization of gender mainstreamed governance in the local financial sector. Collaboration with local community service organizations on gender mainstreaming in private sector, as well participation in knowledge sharing events together with public and private sector is planned to enhance local capacity and knowledge transfer.  
+
+In addition, CCFF shall contribute to gender disaggregated climate finance data collection in Cambodia, in line to Cambodia's Master Plan for Gender and Climate Change (2018-2030).  
+
+For additional details on CCFF's Gender Response approach to climate finance see CCFF Gender Action Plan.
+
+
+---
+*Chunk pages 169–169*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=146 (sys=94, user=52), max_out=1024, ctx=8192
+---
+
+# ANNEX 8(b)
+## Gender Action Plan
+### Cambodian Climate Financing Facility
+
+[Page 1]
+
+
+---
+*Chunk pages 170–170*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=277 (sys=94, user=183), max_out=1024, ctx=8192
+---
+
+# Page 1 | 16
+
+## Contents
+
+- Overview ................................ ................................ ................................ ................................ .... 2
+- Section 1: CCFF Programme Gender Co-benefit ................................ ................................ ....... 2
+- Section 2: CCFF Gender Action Plan ................................ ................................ ......................... 5
+- Section 3: CCFF Gender Responsive Climate Finance Entry Points per Sector   ......................13
+
+### Entry Points in Sustainable Land Use and Agriculture Sector ................................ ................13
+
+### Entry Points in Clean Energy (Renewable Energy, Energy Efficiency) Sector .......................14
+
+### Entry Points in Low-Carbon Transportation Sector ................................ ................................ 15
+
+### Entry Points in Climate Resilient Water Sector ................................ ................................ ......15
+
+### Entry Points for Financial Sector Interventions ................................ ................................ ......15
+
+
+---
+*Chunk pages 171–171*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=803 (sys=94, user=709), max_out=1024, ctx=8192
+---
+
+# Page 2 | 16
+
+## Overview  
+This Gender Action Plan is divided into 3 sections.  
+- Section 1 provides information on CCFF Programme’s gender co-benefit outcome and explains how the CCFF Programme outcome will be achieved through actions outlined in CCFF GAP. It also discusses the CCFF Programme’s contribution to Cambodia’s Master Plan for Gender and Climate Change (2018-2030).  
+- Section 2 presents the CCFF Gender Action Plan, which contributes to delivery of the CCFF Programme gender co-benefits and gender responsive climate finance through five outputs and respective actions.  
+- Section 3 provides information on key entry points for CCFF’s sector specific interventions.
+
+## Section 1: CCFF Programme Gender Co-benefit  
+The Cambodian Climate Financing Facility (CCFF) is a first of its kind, country-owned, climate finance facility to catalyze public and private sector funding for high climate impact projects that contribute to NDC implementation and to Cambodia’s Master Plan for Gender and Climate Change (MPGCC) (2018-2030).  
+
+The CCFF Programme’s co-benefit outcome is increased gender mainstreaming into investments to enhance gender equity and promote women economic empowerment. This outcome will be achieved through integrating gender equity and economic empowerment opportunities across each output of the CCFF Programme (see FP, output 1-3) as follows:  
+
+### 1.1 Institutional Preparedness of the CCFF  
+CCFF is set up as a ring-fenced account with dedicated governance, operational structure (including team/expertise) and Monitoring, Reporting and Verification (MRV). Thereby, to integrate gender equity and economic empowerment opportunities in institutional preparedness of the CCFF, gender will be mainstreamed across CCFF’s governance, operational process and monitoring, reporting, and verification system as follows:  
+
+#### a. Gender Mainstreamed Governance on the level of the CCFF  
+This will be achieved through:  
+- (a) adopting CCFF Gender Policy to communicate CCFF aspirations to internal and external stakeholders towards gender-mainstreamed investments  
+- (b) empowering women in decision making roles and setting specific targets  
+- (c) enhancing internal gender expertise at level of governance, by assigning respective roles and responsibilities  
+
+Specifically, a full time Gender Focal Point will be appointed by an Executing Entity to the CCFF working group, which will be supported by external consultants on a need basis to implement CCFF Gender Policy. It is noteworthy that CCFF Gender Focal Point’s responsibilities also include capacity building of borrowers, through targeted trainings, knowledge sharing events and tools.  
+
+#### b. Gender Mainstreamed Operational process on the level of CCFF  
+To institutionalize CCFF Gender Policy through dedicating resources and introducing gender responsive HR practices to enhance gender equality in workforce. This will be achieved through adopting and training staff on an anti-sexual harassment policy with respective grievance mechanism tailored to CCFF SEAH. As well as promote non-discrimination and equal opportunities and support hiring retention and promotion of female staff, through setting specific measurable targets.
+
+
+---
+*Chunk pages 172–172*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=933 (sys=94, user=839), max_out=1024, ctx=8192
+---
+
+# Page 3 | 16
+
+## c. Gender Mainstreamed Monitoring, Reporting and Verification system : gender-
+disaggregated data collection, analyses and impact reporting will be promoted as per 
+CCFF GAP.
+
+### 1. Institutional Capacity Building of ARDB to Become a National Climate Bank in 
+Cambodia: Integrate knowledge sharing culture within ARDB, so to share lessons learned 
+from CCFF implementation in terms of promoting gender equity and economic empowerment. 
+This will be achieved through institutional capacity needs assessment of ARDB (including vis 
+a vis GCF fiduciary requir ements for accreditation) and performing respective knowledge 
+sharing and capacity building workshops.
+
+## 2. Climate Financing for High Climate Impact Mitigation and Adaptation Projects : To 
+promote gender equality and women economic empowerment into CCFF’s lending process, 
+the CCFF will introduce 2X aligned gender -mainstreamed criteria in lending process and 
+dedicate 30% of its Loan Proceeds to borrowers as per following preliminary criteria below:  
+▪ Are founded by a woman or women or are majority owned by women (51%), and/or  
+▪ Have at least 30% women in senior management; and/or provide products or services 
+designed to disproportionately benefit women; and/or  
+▪ Have a workforce that is at least 30%-50% women (min targets to be aligned to 2X min 
+industry targets for sectors targeted by the CCFF), together with a progressive human 
+resource policy; and/or  
+▪ For 30% of the portfolio  to meet the criteria above (applicable for financial institutions 
+only). 
+
+In addition, to mainstream gender co -benefit outcome into investment projects, each borrower funded by 
+the CCFF Programme shall be required to undertake Gender Assessment and develop a Gender Action 
+Plan, that will set actionable targets to promote gender equity and women economic empowerment at the 
+level of borrower/project.
+
+### Text Box: Envisioned Project Specific GAP Scope explained  
+GAPs typically cover corporate/project level enhancements. Therefore, at level of borrower, the gender assessment 
+and action plan shall focus on existing capacity as well as leadership commitment, support for gender equity and 
+women’s and vulnerable individuals’ empowerment through ensuring non-discrimination and equal opportunities, as 
+well as building respective internal capacity to mainstream gender.  
+
+At project level, the gender assessment will focus on gender -specific risks at the project level, ensuring inclusive 
+stakeholder consultations on the project, its objectives and design with needs of women/men/vulnerable populations 
+in the project area. The refore, engagement with gender advocates, and women’s civil society organizations, and 
+relevant local and national authorities shall be undertaking during project specific gender assessment (see ESMS 
+for guidance on inclusive stakeholder consultations, as well as entry points in CCFF GAP).  The key focus will be on 
+assessing the root causes, structural barriers and inequalities that may put women or men (including vulnerable 
+groups) at disadvantage. The Gender Action Plan may thus focus, for example, on inc lusive stakeholder 
+engagement, ensuring the safety and security of female employees, ensuring effective grievance mechanism, 
+marketing/ messaging strategy for female customers.
+
+## 3. Technical Assistance Facility to address non-financial barriers hindering uptake of 
+climate projects in Cambodia: CCFF shall dedicate 20% of grant funding to enhance gender 
+mainstreaming into climate investment projects and contribute to institutional transformation. This will be 
+achieved by:       
+(a) Active collaboration with Cambodian Sustainable Finance Initiative (CSFI) and National Bank of 
+Cambodia to organize knowledge sharing events and facilitate much needed dialogue on gender 
+responsive climate financing between the public and private sector actors. Such knowledge 
+sharing events is expected to contribute to the need identification for gender mainstreaming in 
+Cambodia’s climate finance policy framework and CCFF grant funding is readily available to fund
+
+
+---
+*Chunk pages 173–173*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=777 (sys=94, user=683), max_out=1024, ctx=8192
+---
+
+# Page 4 | 16
+
+Relevant advisory services to advance the gender mainstreaming in Cambodia’s climate finance policy framework (see OP Manual, TA eligibility criteria for activity 3.1.2 & 3.1.1). Importantly, knowledge sharing events will be geared towards sharing lessons learned from CCFF Program investment activities to demonstrate gender related differential impacts of Climate Change (CC) and the benefits from investing in gender responsive CC projects. Thereby, building a business case to unlock public and private sector buy-in for gender-mainstreamed investments in Cambodia.
+
+The CCFF GAP includes measurable targets for knowledge sharing events and knowledge products (cases) that are critical to equip local stakeholders with resources to understand how consideration of climate impact and gender factors contributes to positive investment outcomes.
+
+## (b) Dedicated grant funding & gender expertise from CCFF to support targeted borrowers to mainstream gender at a level of project & initiate institutional-wide transformation:
+
+Given capacity and knowledge gaps in Cambodia’s financial sector to promote uptake of gender mainstreamed investments, the CCFF Programme through its full-time Gender Specialist, Gender Consultants, and available TA funding for activity 3.2.1 and 3.2.2 will provide non-investment support to enhance gender mainstreaming into climate finance projects and institutional transformation of the targeted borrowers.
+
+Support will be provided to perform gender assessments to identify the gender specific risks at the project level and develop gender action plans to mitigate risks. Importantly, borrowers will be supported to introduce good practice standards to mainstream gender at institutional level (e.g., develop gender policy or GAP, promote gender equity in workforce and governance, anti-SEAH practices) and build their capacity through various knowledge transfer activities.
+
+Furthermore, to unlock gender-mainstreamed innovations, the CCFF borrowers will be eligible to receive technical assistance to develop products and services targeting women customers. Active coordination with wholesale loan borrowers (LFIs) is planned to mainstream gender into the bank’s lending and operations, by equipping wholesale borrowers with respective tools and technical capacity to institutionalize gender-mainstreamed climate finance.
+
+## CCFF contributes to Cambodia’s Master Plan for Gender and Climate Change (2018–2030) as follows:
+
+- Improves delivery of gender responsive climate finance  
+- Strengthens implementation of MPGCC’s strategic objectives in the private sector  
+- Creates awareness of climate change and need of gender mainstreaming in climate planning/investment/monitoring process  
+- Contributes to gender disaggregated climate finance data collection in Cambodia and lessons learned  
+- Demonstrates gender related differential impacts of Climate Change (CC) and the benefits from investing in gender responsive CC initiatives  
+- Builds gender mainstreaming capacity in key priority NDC sectors, which are also identified in MPGCC  
+- Enhances economic empowerment of women, through job creation, capacity building and women led business financing.  
+- Organizes knowledge sharing events, to enhance much needed dialogue on gender responsive climate financing between the government, civil society and private sector
+
+
+---
+*Chunk pages 174–174*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=640 (sys=94, user=546), max_out=1024, ctx=8192
+---
+
+# Page 5 | 16
+
+## Section 2: CCFF Gender Action Plan
+
+### Outcome Statement: Increased gender mainstreaming into investments to enhance gender equity and promote women economic empowerment. This outcome will be achieved through integrating gender equity and economic empowerment opportunities across each output of the CCFF Programme (see FP, output 1-3) as outlined below:
+
+| Output | Activities | Indicators and Targets | Timeline | Responsibilities | Costs |
+|--------|------------|------------------------|----------|------------------|-------|
+| 1.1 Institutional preparedness for the CCFF programme | 1.1.1 Gender Mainstreamed Governance | • A clear Gender Policy adopted at a CCFF level aligned to GCF Gender Policy, promoting gender equity at the level of CCFF and activities financed by it. • The Gender Policy to include SEAH Policy Statement aligned to the provisions into the CCFF ESMS and GCF SEAH Policy • Gender Policy (including SEAH policy statement) Adopted by the CCFF Oversight Committee (OC) and communicated to respective stakeholders (ARDB, Borrowers) | • 1st year | • CCFF Working Group (CCFF WG), • CCFF Oversight Committee (OC) | • US$ 25,000 |
+|  |  | • Gender mainstreamed governance structure, that encourages women in decision making roles. • At least [20%] women representation on the CCFF Oversight Committee • At least [20%] women representation on CCFF Working Group | • From 1st year • From 2nd year | • CCFF shareholder • CCFF WG co- heads | • No additional resources envisioned, given part of ongoing compensation of respective committee members (see CCFF budget). |
+
+> It should be highlighted that the annual budget for implementation of this CCFF Gender Action Plan will be allocated, as well as relevant resource in form of the dedicated Gender Focal Point to manage implementation of the Gender Policy at the level of the CCFF and activities financed by it. To this end, the costs presented in this document are preliminary estimates, to be refined once the CCFF is established and updated annually as per annual budget allocation practices.
+
+
+---
+*Chunk pages 175–175*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=690 (sys=94, user=596), max_out=1024, ctx=8192
+---
+
+# Output Activities Indicators and Targets  Timeline  Responsibilities  Costs
+
+• Enhance internal gender expertise at level of governance, by appointing CCFF Working Group “Gender Focal Point” responsible for implementation of the CCFF Gender Policy and this gender action plan  
+• “Gender Focal Point” appointed  
+• 1st year  
+
+• CCFF WG co-heads  
+• No additional resources envisioned, part of Gender Budget below.  
+
+## 1.1.2 Gender- Mainstreamed operations (Resource allocation)  
+
+• Resource allocation to ensure that Gender Policy is operationalized at the CCFF level as follows:  
+• Identify key CCFF staff – supporting Gender Focal point to monitor CCFF’s gender policy, implementation at the portfolio level  
+• Allocate annual budget to ensure implementation of the gender policy and this action plan  
+• Develop gender-mainstreamed investment screening criteria, tools and training materials to support implementation of  
+
+• Key staff identified (internal and external consultants) & responsibilities assigned  
+• Gender included as part of the CCFF Working Group’s annual budget  
+
+## ▪ CCFF Gender- mainstreamed investment  
+
+• 1st year  
+• 1st year  
+• Annual  
+
+• 1st year of CCFF set-up.  
+• CCFF WG co-heads  
+• CCFF Gender Focal Point  
+
+• US$ [90,000] annually3 (preliminary estimate, includes salaries of gender focal point, portion of salaries of respective staff to monitor GAP implementation at portfolio level, portion of CCFF WG responsible for Gender Policy and CCFF GAP implementation oversight and portion of MRV staff salaries responsible for sex-disaggregated data collection and analysis, and external gender expertise)  
+
+• US$ 12,000  
+
+2 This can be internal or external as per CCFF staffing plan. Development of CCFF/ARDBs internal capacity to retain full-time Gender Specialist is planned (year 2/3), but until then collaboration with external Gender Specialist is envisioned to build relevant capacity  
+3 Assumes average over the first 5 years of CCFF Programme implementation. Costs are higher in the early years when Gender Consultants are deployed, and normalizes to approx. $30k/year after gender capacity built within CCFF Working Group.  
+
+[Page 1]  
+P a g e  6 | 16
+
+
+---
+*Chunk pages 176–176*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=744 (sys=94, user=650), max_out=1024, ctx=8192
+---
+
+# Output Activities Indicators and Targets Timeline Responsibilities Costs
+
+## 1.1.3 Gender mainstreamed Operations (human resource practices)
+
+- **Gender mainstreamed human resource practices** introduced at the CCFF level, that encourages gender equity in staffing process, pay equity and women participation in capacity building as well as zero tolerance to SEAH.
+- **Contractual clause(s) for staff & CCFF Committee members contracts** developed to include provisions
+  - Target (Employment): [40%] women
+  - Interim: [20%]
+  - Pay equity
+  - Equal representation for CCFF team’s capacity building activities, flexible working arrangements for women to ensure the participation.
+  - Legal language for contractual clauses developed and incorporated in staffing & committee members contracts for CCFF team.
+  - On-boarding training webinar developed
+
+## 1.1.3 Gender mainstreamed Operations (human resource practices)
+
+- **On-going, upon each capacity building**
+- **On-going upon staff recruitment/secondment**
+- **CCFF Gender Focal Point** in collaboration with CCFF Working Group Co-heads and coordination with ARDB HR & Legal Team, and support of external consultants.
+  - **US$ 35,000**
+
+## 1.1.3 Gender mainstreamed Operations (human resource practices)
+
+- **No additional resources, part of the 2.1 budget**
+
+---
+
+For the purposes of this Gender Action Plan, the targets for gender mainstreamed gender practices apply to CCFF and ARDB CCFF Working Group, collectively also referred throughout this document as "CCFF team". It does not apply to borrowers; however, borrower specific gaps may include the specific employment targets depending on gap assessment and sector specific vulnerabilities. To the best extent possible, those targets will be aligned to the sector specific gender targets in the updated NDC (Annex 1 and Annex II).
+
+
+---
+*Chunk pages 177–177*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=697 (sys=94, user=603), max_out=1024, ctx=8192
+---
+
+# Output Activities Indicators and Targets Timeline Responsibilities Costs
+
+## 1.1 Zero SEAH tolerance
+
+- Conducting awareness raising and training activities for covered individuals and the committee members, especially those involved in lending decision-making.
+  - 100% of CCFF staff undergoing training
+- Gender Mainstreamed MRV System
+  - Gender mainstreamed data collection on the level of the CCFF and activities financed by it.
+  - Sex-disaggregated data collected
+    - On-going during program duration as per Borrower Specific GAP and CCFF GAP timelines.
+  - CCFF Gender Focal Point under leadership of the CCFF Working Group.
+  - No additional cost, part of the CCFF annual budget.
+- Monitoring and Reporting of the CCFF Gender Action Plan Implementation
+  - Monitoring of the Borrower specific GAP, report progress on aggregate portfolio basis to the CCFF Board on annual basis.
+  - Independent verification of the gender responsive climate finance outcomes
+    - Reporting on gender included as part of the CCFF Program Annual Reports to investors
+    - Quarterly Monitoring, Annual Reporting on targets and indicators as per this CCFF GAP, as well as progress report on implementation of the CCFF Policy on aggregate portfolio basis.
+  - Independent verification performed
+    - Annually to the CCFF Investors,
+    - Quarterly and Annual to the CCFF Oversight Committee.
+    - Upon CCFF program Completion.
+  - CCFF Working Group, under oversight of the CCFF Oversight Committee
+  - CCFF Gender Focal Point
+  - CCFF Gender Focal Point
+
+## 1.2 Institutional capacity building of ARDB built to become a national climate bank in Cambodia
+
+### 1.2.1 Enhanced Gender Equity at the level of ARDB
+
+- Institutional-level gender assessment of ARDB
+  - Based on above, develop Gender
+    - 1 Institutional ARDB wide- GAP assessment performed
+    - 1 Gender Action Plan Developed, with 3rd year
+      - Gender Focal Point
+      - Not included, part of in-kind contribution.
+
+---
+
+*Page 8 | 16*
+
+
+---
+*Chunk pages 178–178*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=601 (sys=94, user=507), max_out=1024, ctx=8192
+---
+
+# Output Activities Indicators and Targets Timeline Responsibilities Costs
+
+## Action Plan to include measurable targets for capacity building and knowledge sharing workshops as well as enhancing ARDB capacity to meet GCF actionable items including but not limited to timebound & measurable targets on knowledge sharing and capacity building workshops.
+
+### 2. Climate financing for high climate impact mitigation and adaptation projects
+
+#### 2.1 Gender mainstreamed investment criteria that promote lending to women-led businesses and/or businesses that promote women economic empowerment and gender equality.
+
+- Incorporate gender criteria in CCFF Investment Policy, that supports gender mainstreamed loan investments.
+- 2x aligned Gender mainstreamed investment criteria approved by OC and incorporated into the Investment Policy.
+- Target: [30%] of CCFF Loan proceeds finance women led businesses and/or businesses that promote women economic empowerment and gender equality as per CCFF Gender-Mainstreamed investment criteria
+
+#### Additional Impact Areas to be reached through CCFF Investments at the end of the programme implementation period:
+
+- Gender mainstreamed, jobs generated through CCFF investments: [256,007], out of which 40% female.
+- Direct Beneficiaries with more climate-resilient water security: [749,135], out of which 51% are female.
+
+#### 1st year
+
+- Aggregate final target, measured at the end of the CCFF Program Implementation.
+- Aggregate final target, measured at the end of the CCFF Program Implementation.
+
+#### CCFF Working Group Co-heads
+#### CCFF Oversight Committee
+
+#### No additional resources, part of the 2.1 budget for development of tools and templates.
+
+#### US$ 52,050,000 (30% of the CCFF Loan Proceeds)
+
+
+---
+*Chunk pages 179–179*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=781 (sys=94, user=687), max_out=1024, ctx=8192
+---
+
+# Output Activities Indicators and Targets Timeline Responsibilities Costs
+
+- **Direct Beneficiaries (female/male) adopting improved and/or new climate-resilient livelihood options:**  
+  36,128, out of which 40% female.
+
+- **2.2 Gender Responsive Lending Process**  
+  - CCFF lending process to include Gender Assessment (GA) for each loan to be funded from the CCFF Program, so to assess the project specific gender vulnerabilities and risks, baselines, as well as opportunities to evaluate project specific gender impacts and outcomes.  
+  - Gender Action Plan developed based on Gender Assessment findings, detailing respective actions, indicators and measurable targets, timelines for further monitoring, and  
+  - Gender Assessment included as part of the CCFF Lending Process (DD stage), and summary GA Findings presented to Green Credit Committee to guide decision making  
+  - Gender Action Plan included in the Loan Agreements as required for each type of green loan (Wholesale or Direct):  
+    - 100-130] GAPs by the end of programme implementation period.  
+  - Zero tolerance to GBV/SEAH as per the SEAH Policy Statement. The loan agreements with the borrower include the legal provisions that require compliance with the CCFF SEAH Policy Statement, as well as other relevant clauses reflecting contractors’  
+  - On-going during CCFF loan investment period  
+  - By the time of loan-agreement signing with the borrower, on a need basis8.  
+  - On-boarding upon signing of GAP  
+  - CCFF Gender Focal Point, support of external gender consultants if needed.  
+  - CCFF Gender Focal Point with ARDB legal team.  
+  - US$ 10,000-25,000 per each gender assessment and GAP (assumes external consultancy funded by TA)  
+  - No additional fees, part of the annual budget under 1.2.
+
+---
+
+**Note:**  
+5 In particular, C CFF will identify opportunities to invest in women led businesses; income generation for women through direct and indirect employ ment; and the access to climate technologies and mitigation/adaptation solutions.  
+6 See also Section 3: Sector Specific Entry points that will be considered by the CCFF Gender Focal Point when developing borrower specific GAP.  
+7 GAP findings shall allow CCFF IC to assess the extent the projects contribute to the CCFF Gender Action Plan Impact Statement “delivery of gender responsive climate finance”  
+8 This is to acknowledge that in rare cases, the Gender Action Plan may not be needed (e.g., some LFIs may already be practicing the gender mainstreamed approach in Cambodia as maybe revealed by Gender Gap Assessment).
+
+
+---
+*Chunk pages 180–180*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=757 (sys=94, user=663), max_out=1024, ctx=8192
+---
+
+# Output Activities Indicators and Targets Timeline Responsibilities Costs
+
+## 1. Reporting by the borrowers
+
+- **Perform capacity building for Borrower’s Gender Focal Points** responsible for implementation of the Borrower Specific GAP to obtain borrower’s “buy-in” into the CCFF Policy, plus facilitate knowledge transfer through sharing gender assessment and monitoring tools developed by the CCFF
+
+## 2. Compliance requirements in line with the GBV/11
+
+- **Actionable items of ESMP** as applicable.
+
+## 3. Capacity building meeting
+
+- **3 Technical assistance facility** to address non-financial barriers hindering uptake of climate projects in Cambodia
+
+### 3.1 Gender Responsive TA Allocation Process
+
+- **CCFF TA application process** encourages recipients to identify opportunities for gender inclusiveness
+- **Gender inclusive opportunities identified** in the TA application
+- **Target: Minimum [15%] of the CCFF TA proceeds finance eligible gender-mainstreamed activities**
+- **On-going, during TA allocation period**
+- **Final target, at the end of the CCFF Programme implementation**
+- **CCFF Gender Focal Point, support of external gender specialist if needed**
+- **US$ [820K] (15% of total TA proceeds)**
+
+### 3.2 Gender-mainstreamed knowledge sharing across Cambodia’s financial sector
+
+- **Organize knowledge sharing events** on gender mainstreaming in Cambodia’s financial sector in collaboration with Cambodian
+- **Target: [4] during CCFF program duration**
+- **Target: [1] case study prepared bi-annually in collaboration with Borrowers to be published on website**
+- **Once in every [5] years**
+- **Once in every [2] years**
+- **During CCFF Program lifespan**
+- **CCFF Gender Focal Point in collaboration with key stakeholders**
+- **Up to US$ 2,000 per knowledge sharing event**
+- **US$ 5,000-10,000 per case study**
+- **US$ 5,000 per knowledge sharing event**
+
+> 9 This may include but not limited to activities funded from GCF grant proceeds under component 1 and component 3, that may include but not limited to gender assessment and gender action plan development by external consultants for borrowers, gender toolkits, external gender expertise to perform inclusive stakeholder engagement, develop IPP or SEAH risk assessment, external gender expertise to perform capacity building activities for borrowers as well as targeted beneficiaries, equal access to trainings, knowledge, policy and advocacy materials that include gender components and etc.
+
+--- 
+
+*Page 11 | 16*
+
+
+---
+*Chunk pages 181–181*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=288 (sys=94, user=194), max_out=1024, ctx=8192
+---
+
+# Output Activities Indicators and Targets Timeline Responsibilities Costs
+
+## Sustainable Finance Initiative (CSFI)
+
+- Share lessons learned from CCFF Program investment activities to demonstrate gender related differential impacts of Climate Change (CC) and the benefits from investing in gender responsive CC projects.
+- Participate in regional knowledge sharing events on gender mainstreaming in climate finance and/or accessible to key stakeholders (CCFF Oversight Committee, Borrowers, Investors and the members of CSFI)
+  - At least 1 event during program duration, based on invitation.
+
+
+---
+*Chunk pages 182–182*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=789 (sys=94, user=695), max_out=1024, ctx=8192
+---
+
+# Section 3: CCFF Gender Responsive Climate Finance Entry Points per Sector
+
+Below sub-sections identify key entry points for gender responsive climate finance interventions per sector according to country level Gender Assessment performed:
+
+It should however be highlighted, that those are the entry points and as part of CCFF’s investment process, the CCFF team will perform the gender assessment of activities to be financed by the CCFF loan and grant component (see output 3 in CCFF GAP above). This will be undertaken during the credit assessment and grant allocation process, see actionable item 3.1 and 3.2 above. Thereby, project specific gender vulnerabilities and risks, as well as opportunities for project specific gender impact and outcomes will be already identified pre-investment stage and in fact, those findings will inform overall decision making for the investments.
+
+## Entry Points in Sustainable Land Use and Agriculture Sector
+
+- CCFF Investments encourage sustainable land-use and agriculture, by addressing productivity constraints in agriculture, the sector in which most of Cambodian women and men work but represent vulnerable workers¹⁰. To this end, during the gender assessment process, measures will be taken to ensure that workers employed by the borrower are provided the social and labor protections that they are entitled to receive by the national law. Furthermore, working conditions will be assessed to ensure that they meet international labor standards (including ILO) and national law requirements.
+
+- Promote gender mainstreamed access to economic and financial resources and opportunities, including through creating formal employment and financing of women led businesses in agriculture sector. Measurable, gender mainstreamed employment quotas will be set in the borrower specific GAPs based on project specific gender assessment findings. Target: [40%] of new jobs generated by the project are taken by women, so to align with Cambodia’s NSDP 2019-2023.
+
+- Promoting knowledge transfer, through positive demonstration effect on use of sustainable land-use and agriculture practices, as well as training to women employees on forest conservation and sustainable land use practices to be offered by the entrepreneurs financed by the CCFF. This entry point shall be translated in measurable action in borrower specific GAPs that will define percentage of women and men participating in training and (2) percentage of women and men that could apply lessons learned from training into day-to-day actions, so to measure impact. It will be however ensured, that at least [35%] of the beneficiaries of training and capacity building are female in line to NDC targets.
+
+- Enhance stakeholder engagement practice, by ensuring that consultations are conducted in gender responsive manner with women and vulnerable groups also represented. During stakeholder engagement, if woman participation is limited, encourage borrowers to perform outreach events to increase woman participation. Target: [50%] of engaged stakeholders are women and vulnerable groups¹¹.
+
+¹⁰ The vulnerable workers are defined as own account workers and unpaid workers  
+¹¹ For the purposes of this document, most vulnerable groups are women & children, people with disabilities, the marginalized & the displaced.
+
+
+---
+*Chunk pages 183–183*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=717 (sys=94, user=623), max_out=1024, ctx=8192
+---
+
+# Page 14 | 16
+
+## Entry Points in Clean Energy (Renewable Energy, Energy Efficiency) Sector
+
+- Investments encourage gender-mainstreamed project design, so to maximize women’s equal access and benefits. Gender assessments are mandatory for all renewable energy projects considered for financing by CCFF in line with Cambodia’s updated NDC.
+  
+  The gender analysis forms part of the analysis for scoping and feasibility studies for solar/wind infrastructure and stakeholder consultations, which shall include women and women's groups, the disabled, the elderly, indigenous groups, and all local communities impacted by the proposed infrastructure. The target quota for this vulnerable group participation in stakeholder engagement will be encouraged at [30%].
+
+- Large scale renewable energy projects provide opportunities for direct employment for women and for men. Targets for female employment generation, together with gender sensitive workplaces, separate male and female toilets, and PPE designed for women are envisioned entry points for Borrower specific GAP and are expected to contribute to a gender equity in the workplace.
+
+- Given the SEAH risks in development and construction of renewable energy projects, some of the entry points for the GBV/SEAH risk prevention can be as follows:
+
+### Labor Management Procedures
+
+- Compliance to IFC PS 2, encourage non-discrimination and equal opportunities and support hiring, retention and promotion of female staff.
+- Incorporation of Occupational, Health and Safety measures
+- Development of SEAH Policy Statement aligned to CCFF to ensure zero tolerance as per the contractual requirements with the borrowers
+- Codes of Conduct including clauses and sanctions against the use of GBV/SEAH to be required for all contractors and subcontractors and their workers.
+- Awareness Sessions: It is recommended that information and awareness sessions on GBV/SEAH throughout project implementation is held for the staff. Induction sessions can also be organized for temporary workers before they start work. Awareness sessions can be verbal or written, depending on local context and literacy level.
+- The evidence of awareness raising/training can be “training logs” to be signed by staff covered under activities.
+
+### Grievance Mechanism
+
+- Establish, maintain, and operate a grievance mechanism for Project workers & Community consistent with CCFF ESMS and relevant safeguard standards. This will include reporting and allegation procedures regarding GBV/SEAH and an accountability framework and response to complaints.
+- Other protocols as it may be necessary depending on applicable SEAH risks
+- Access to GBV service providers to which GBV survivors, including SEA/SH survivors, will be referred, and the services which will be available.
+
+
+---
+*Chunk pages 184–184*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=744 (sys=94, user=650), max_out=1024, ctx=8192
+---
+
+# Page 15 | 16
+
+• Encourage workforce safety, and harassment free work environment through borrower specific gender action plans in energy efficiency projects in manufacturing sector.  
+• Collaborate with private sector through knowledge sharing events to strengthen capacity across clean energy value chain, including on SEAH risk assessment and prevention.
+
+## Entry Points in Low-Carbon Transportation Sector
+
+• Gender mainstreamed access to low-carbon transport, given affordable financing offered by the CCFF. The number of additional female and male passengers using low-carbon transport will be measured, to ensure that targets set in the CCFF log-frame is attained.  
+• Women economic empowerment to be measured by the following indicators:   
+  - reduced average travel time for women and men to essential services (e.g., health care services, hospitals, schools, and government offices); markets, jobs, and other income-earning opportunities  
+  - increased percentage of women in transport sector employment.  
+• The purchases of motor vehicles for commercial use by enterprises will require gender mainstreamed safety trainings to employees, thereby promoting safe access to transportation.
+
+## Entry Points in Climate Resilient Water Sector
+
+• Gender mainstreamed design of water supply projects through gender inclusive stakeholder consultations, ensuring at minimum [30%] of female participation in stakeholder engagement.  
+• Increased access to climate resilient and improved safe water supply in rural areas, that brings health benefits (including for women, who use water in ways different to men). Target: [50%] of all project beneficiaries reporting access to safe drinking water in rural areas are women by the end of CCFF Program.  
+• Increased employment and entrepreneurial opportunities for women in the water supply schemes, given the availability of affordable funding from CCFF. Gender mainstreamed indicators will be determined in Borrower specific GAP.
+
+## Entry Points for Financial Sector Interventions
+
+Local Financial Institutions who seek funding from the CCFF will be encouraged to develop gender responsive approach to climate finance aligned to CCFF Policy and Outputs 1 - 5. With each Local Financial Institution Borrower, CCFF will perform gender assessment and agree on a Borrower Specific Gender Action Plan. The key objective is to catalyze the paradigm shift towards gender responsive climate finance. Below are possible entry points for GAP:
+
+### Table 1: Possible Entry Points for Financial Institutions Gender Action Plan12:
+
+#### Output 1: Enhance Gender equality in Financial Institution’s governance and leadership
+
+- Leadership commitment to improve gender equality through dedicated Gender Policy and/or GAP.  
+- Enhance internal gender expertise at level of governance, by assigning respective roles and responsibilities (e.g., appointment of gender focal point).  
+- Conduct gender awareness seminars for FI Leadership Team (Board, Management Team)
+
+12 Source: Climate4Action (C4A) LLC, adapted for CCFF Programme. IP rights of C4A apply.
+
+
+---
+*Chunk pages 185–185*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=819 (sys=94, user=725), max_out=1024, ctx=8192
+---
+
+# Page 16 | 16
+
+## Output 2: Gender Mainstreamed human resource process to enhance gender equality in workforce
+
+- Adopt and train on an anti-sexual harassment policy with respective grievance mechanism tailored to CCFF SEAH.
+- Promote non-discrimination and equal opportunities and support hiring, retention and promotion of female staff.
+- Collection and analysis of sex-disaggregated data
+- Progressive human resource policy, with plans to increase the number or percentage of female members on leadership teams and in workforce (board, management team, workforce including interns)13
+- Promote flexible work practices (e.g., flextime, telecommuting, job sharing, part-time with benefits, compressed workweek, etc.)
+- Other, such as support to child and elder care (e.g., phased return to work after parental leave, subsidized childcare, paid time and dedicated space for lactation, paid time off for health care appointments with dependents, etc.)
+- Other, aligned to best ILO and GCF interim performance standard 214(e.g., maternity or paternity leave beyond what is required by law, enact health and safety measures)
+
+## Output 3: Gender-mainstreamed lending process to increase women’s financial inclusion
+
+- Increase volume of loans to women or women owned business, and business that promote gender equality and economic empowerment15
+- Develop easily accessible tools to enhance gender mainstreamed lending (e.g., Gender-mainstreamed lending criteria, gender assessment toolkit, webinar) for banks staff.
+- Conduct internal gender awareness training to address bias in lending practices.
+
+## Financial products or services adapted to meet women’s needs16
+
+- Design products or services specifically for women
+- Create market campaigns specifically targeting women (e.g. for retail EV loans)
+- Adapt application procedures to meet women’s needs
+- Ensure adequate female staffing to engage women customers
+
+## Output 4: Gender Mainstreamed MRV
+
+- Establish sex-disaggregated database and monitoring mechanism for operational and to extent applicable lending process17
+
+## Output 5: Knowledge Sharing
+
+- Public awareness raising campaigns or
+- Participation in knowledge sharing event on women entrepreneurship or gender mainstreaming in lending process.
+
+In addition to above, the quarterly reporting to the CCFF team on implementation of the Borrower specific GAP shall be included in the Loan Agreement.
+
+13 This may include career progression pathways including through capacity building, education sponsorship or mentorship too, given persisting educational and technical skills challenges that may prevent progression of women on leadership roles in Cambodia.
+
+14 GCF performance standard is IFC Performance Standard 2,
+
+15 Such actionable items will apply to wholesale loans supported by the CCFF, which specifically target women and women owned enterprises as borrowers
+
+16 Such actionable items will apply to wholesale loans supported by the CCFF funding, which specifically target women borrowers
+
+17 Initial indicators to be monitored may include sex-disaggregated to monitor loan amount, total number of loan amounts, total new jobs created, number of female loan officers, number of female borrowers, female staff in middle and upper management funded from CCFF credit line.

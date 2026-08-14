@@ -1,0 +1,7420 @@
+---
+*Chunk pages 1–1*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=324 (sys=94, user=230), max_out=1024, ctx=8192
+---
+
+# Meeting of the Board  
+## 21 – 24 October 2024  
+### Songdo, Incheon, Republic of Korea  
+
+## Provisional agenda item 10  
+
+### GCF/B.40/02/Add.12  
+#### 30 September 2024  
+
+## Consideration of funding proposals –  
+### Addendum XII  
+
+## Funding proposal package for FP250  
+
+## Summary  
+
+This addendum contains the following seven parts:  
+1. A funding proposal titled "Achieving emission reduction in the Central Highlands and South Central Coast of Viet Nam to support National REDD+ Action Programme goals (RECAF)";  
+2. No-objection letter issued by the national designated authority(ies) or focal point(s);  
+3. Environmental and social report(s) disclosure;  
+4. Secretariat’s assessment;  
+5. Independent Technical Advisory Panel’s assessment;  
+6. Response from the accredited entity to the independent Technical Advisory Panel's assessment; and  
+7. Gender documentation.  
+
+---  
+
+*Page 1*
+
+
+---
+*Chunk pages 2–2*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=230 (sys=94, user=136), max_out=1024, ctx=8192
+---
+
+# Table of Content
+
+- Funding proposal submitted by the accredited entity 3
+- No-objection letter issued by the national designated authority(ies) or focal point(s) 76
+- Environmental and social report(s) disclosure 77
+- Secretariat's assessment 83
+- Independent Technical Advisory Panel's assessment 97
+- Response from the accredited entity to the independent Technical Advisory Panel's assessment 114
+- Gender documentation 117
+
+
+---
+*Chunk pages 3–3*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=224 (sys=94, user=130), max_out=1024, ctx=8192
+---
+
+# Project/Programme title:  
+Achieving emission reduction in the Central Highlands and South Central Coast of Viet Nam to support National REDD+ Action Programme goals (RECAF).  
+
+## Country(ies):  
+Viet Nam  
+
+## Accredited Entity:  
+International Fund for Agricultural Development (IFAD)  
+
+## Date of first submission:  
+[2022/11/14]  
+
+## Date of current submission:  
+[2024/08/29]  
+
+## Version number:  
+[V.8]  
+
+---  
+*Page 1*
+
+
+---
+*Chunk pages 4–4*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=492 (sys=94, user=398), max_out=1024, ctx=8192
+---
+
+# [Page 1]
+
+## GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 0
+
+### Contents
+
+- Section A: PROJECT / PROGRAMME SUMMARY
+- Section B: PROJECT / PROGRAMME INFORMATION
+- Section C: FINANCING INFORMATION
+- Section D: EXPECTED PERFORMANCE AGAINST INVESTMENT CRITERIA  
+- Section E: LOGICAL FRAMEWORK
+- Section F: RISK ASSESSMENT AND MANAGEMENT
+- Section G: GCF POLICIES AND STANDARDS
+- Section H: ANNEXES  
+
+### Note to Accredited Entities on the use of the funding proposal template
+
+- Accredited Entities should provide summary information in the proposal with cross-reference to annexes such as feasibility studies, gender action plan, term sheet, etc.
+- Accredited Entities should ensure that annexes provided are consistent with the details provided in the funding proposal. Updates to the funding proposal and/or annexes must be reflected in all relevant documents.
+- The total number of pages for the funding proposal (excluding annexes) should not exceed 60. Proposals exceeding the prescribed length will not be assessed within the usual service standard time.
+- The recommended font is Arial, size 11.
+- Under the GCF Information Disclosure Policy, project and programme funding proposals will be disclosed on the GCF website, simultaneous with the submission to the Board, subject to the redaction of any information that may not be disclosed pursuant to the IDP. Accredited Entities are asked to fill out information on disclosure in section G.4.
+
+### Please submit the completed proposal to:
+fundingproposal@gcfund.org
+
+### Please use the following name convention for the file name:
+“FP-[Accredited Entity Short Name]-[Country/Region]-[YYYY/MM/DD]”
+
+
+---
+*Chunk pages 5–5*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=643 (sys=94, user=549), max_out=1024, ctx=8192
+---
+
+# Project/Programme Summary
+
+## A.1. Project or programme
+Project
+
+## A.2. Public or private sector
+Public
+
+## A.3. Request for Proposals (RFP)
+Not applicable
+
+## A.4. Result area(s)
+- **GCF contribution**  
+  Co-financers' contribution  
+  Mitigation total: 0 % 0 %  
+  Energy generation and access: 0 % 0 %  
+  Low-emission transport: 0 % 0 %  
+  Buildings, cities, industries and appliances: 0 % 0 %  
+  Forestry and land use: 100 % 100 %  
+
+- **Adaptation total**  
+  Most vulnerable people and communities: 0 % 0 %  
+  Health and well-being, and food and water security: 0 % 0 %  
+  Infrastructure and built environment: 0 % 0 %  
+  Ecosystems and ecosystem services: 0 % 0 %
+
+## A.5. Expected mitigation outcome
+(Core indicator 1: GHG emissions reduced, avoided or removed / sequestered)  
+-6.68 MtCO2-eq (over 12 years of project lifespan)2,3
+
+## A.6. Expected adaptation outcome
+(Core indicator 2: direct and indirect beneficiaries reached)  
+Not requested here as the project is focused on mitigation  
+N/A N/A  
+
+N/A N/A
+
+## A.7. Total financing (GCF + co-finance)
+96,076,000 USD
+
+## A.9. Project size
+Medium (Upto USD 250 million)
+
+## A.8. Total GCF funding requested
+35,000,000 USD
+
+## A.10. Financial instrument(s) requested for the GCF funding
+- ☒ Grant: 35,000,000 USD  
+- ☐ Loan: Enter number  
+- ☐ Guarantee: Enter number  
+- ☐ Equity: Enter number  
+- ☐ Results-based payment: Enter number  
+
+## A.11. Implementation period
+6 years5
+
+## A.12. Total lifespan
+12 years
+
+## A.13. Expected date of AE internal approval
+9/30/2024
+
+## A.14. ESS category
+B
+
+
+---
+*Chunk pages 6–6*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1357 (sys=94, user=1263), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 2
+
+## A.15. Has this FP been submitted as a CN before?
+
+- Yes ☒  
+- No ☐  
+
+## A.16. Has Readiness or PPF support been used to prepare this FP?
+
+- Yes ☐  
+- No ☒  
+
+## A.17. Is this FP included in the entity work programme?
+
+- Yes ☒  
+- No ☐  
+
+## A.18. Is this FP included in the country programme?
+
+- Yes ☒  
+- No ☐  
+
+## A.19. Complementarity and coherence
+
+- Yes ☒  
+- No ☐  
+
+## A.20. Executing Entity information
+
+The Government of Viet Nam, acting through the Ministry of Agriculture and Rural Development (MARD) and the Provincial Peoples Committees (PPCs) of Dak Lak, Dak Nong, Gia Lai, Lam Dong, and Ninh Thuan provinces.
+
+## A.21. Executive summary (max. 750 words, approximately 1.5 pages)
+
+### 1. 
+Viet Nam’s rapid economic growth has led to a quadrupling of per capita GHG emissions this century, from 0.79 tCO2eq in 2000 to 3.81 tCO2eq in 2018. GHG emissions are accelerating at one of the fastest rates in the world. Pollution associated with these emissions impairs health and productivity, exacerbates forest degradation, and amplifies climate impacts, which have already damaged trade and investment. In 2022, Viet Nam had 14,790,075 hectares of forest area, of which 10,134,082 hectares were natural forests and 4,655,993 hectares were planted forests. A logging ban was imposed in 2016. However, reducing emissions in the forest sector, particularly in the Central Highlands region, and addressing the complex sustainability challenges farmers face, is an outstanding concern. Between 2010 and 2018, the Central Highlands region, where most of the project's target provinces are located, experienced a significant loss of natural forests and forest degradation. The total loss amounted to 362,532 hectares, representing 30% of the national total. The Vietnamese government and IFAD recognize that without proactive interventions to sustainably enhance forest management and agricultural productivity, pressure on the country's forests will likely intensify, resulting in an increase of GHG emission and a reduction in the capacities of forests to play their role as carbon sink.
+
+### 2. 
+The proposed project, "Achieving Emission Reduction in the Central Highlands and South Central Coast of Viet Nam to Support National REDD+ Action Programme Goals (RECAF)" is a mitigation project which aims at supporting the implementation of the National REDD+ Action Plan (NRAP). It is a pivotal element of the Nationally Determined Contribution 2022 (NDC) to the Paris Climate Agreement. Viet Nam’s unconditional emission reduction contribution for LULUCF is 32.5 MtCO2eq by 2030 and the conditional emission reductions for LULUCF is an additional 14.1 MtCO2eq by 2030.
+
+### 3. 
+RECAF will support REDD+ phase 1 activities at national level, by updating and enhancing the National REDD+ policies and mechanisms to meet results-based payment (RBP) requirements of different donors and strategic upgrades will be made in the National Forest Monitoring System (NFMS) and Safeguard Information System (SIS). That will be in addition to the support already received by Viet Nam from the Forest Carbon Partnership Facility (FCPF) and the UN-REDD Program. It will also support REDD+ phase 2 activities, in the Central Highlands provinces of Gia Lai, Dak Lak, Dak Nong, and Lam Dong, and the province of Ninh Thuan in the South-Central Coast by (i) protecting existing natural forests, especially in areas susceptible to deforestation and forest degradation; (ii) implementing community forest management initiatives tailored to the needs of forest-dependent communities; and (iii) establishing sustainable, deforestation-free value chains and infrastructure in agricultural commodities linked to deforestation processes (traceability, reduction of post-harvest losses through processing, monitoring systems), which will be implemented through public-private-producer partnerships (4Ps) platform to be created and integrated at the provincial level to mobilize concrete actions to develop deforestation-free value chains.
+
+> **Note:** Co-financer’s contribution means the financial resources required, whether Public Finance or Private Finance, in addition to the GCF contribution (i.e. GCF financial resources requested by the Accredited Entity) to implement the project or programme described in
+
+
+---
+*Chunk pages 7–7*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1301 (sys=94, user=1207), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 3
+
+## 4. RECAF seeks to contribute to generate emission reduction (ERs) of 6.68 MtCO2-eq during its lifetime, through an investment of USD 76 million in component 2 (REDD+ phase 2), including USD 18.5 million from GCF (24% of the budget of component 2). A total of 145,000 ha of forestland adjacent to cropland and settlements will be transformed into economically viable agroforestry systems based on perennial crops and the multi-stakeholder commune-level collaborative forest management (MCCFM) models (90,000 ha under the agroforestry system and 55,000 ha under MCCFM) and indirectly protect 500,000 ha of highly valuable natural forests in the target provinces.
+
+## 5. As expected for an Agriculture, Forestry and other Land Uses (AFOLU) project, RECAF also provides significant adaptation co-benefits, contributing to the climate-resilient sustainable development of forest-dependent communities in the target provinces, including smallholder farmers, ethnic minorities, and other producers, by increasing biodiversity and natural forest coverage, enhancing ecosystem services, such as watershed management, erosion control, soil fertility management, and the supply of non-wood forest products (NWFPs), which are crucial for the livelihood needs of the local population and reduce poverty in rural communities. Furthermore, improved land tenure, inclusive investment planning, and equitable resource distribution will generate economic co-benefits for forest-dependent communities. The project expects to reach 420,000 direct beneficiaries, including smallholder farmers and ethnic minorities, and a total of 1,000,000 people will indirectly benefit from the project.
+
+## 6. RECAF will promote capacity building and technology development/transfer. This will be achieved through research, training, and knowledge sharing, which will build awareness, understanding, and capacity among public and private stakeholders regarding climate change mitigation and adaptation, as well as the main drivers of deforestation. Technology investment/transfer will be promoted, including investments in small local stations for monitoring weather, pest incidence, and other environmental parameters, enabling farmers to better plan and manage their farms and respond timely to weather events. From a trade perspective, RECAF will support the creation or strengthening of deforestation-free value chains for some key agricultural commodities that Viet Nam must establish to continue exporting to the EU. This is in response to the new EU Regulation 2023/1115 on deforestation-free products, which aims to promote the consumption of 'deforestation-free' products and reduce the EU’s impact on global deforestation and forest degradation. It also seeks to reduce GHG emissions and biodiversity loss. This regulation is part of a broader plan of actions to tackle deforestation and forest degradation, first outlined in the 2019 Commission Communication on Stepping up EU Action to Protect and Restore the World’s Forests.
+
+## 7. Furthermore, RECAF will contribute to the GCF-2 Strategic Plan 2024-2027 targets in two major areas: i) mitigation, with a cumulative mitigation target of 6,684,338 tCO2-eq over the project lifetime, achieved by covering a total area of 145,000 hectares with forestland, and indirectly protect 500,000 hectares of highly valuable natural forests in the target provinces which will further reduce pressure on natural resources and facilitate conservation programs. That is a direct contribution to the second target of the GCF-2 Strategic Plan which is the improvement of ecosystems by “supporting developing countries, which results in 120 to 190 million hectares of terrestrial and marine areas being conserved, restored, or brought under sustainable management.” ii) through its adaptation co-benefits, RECAF will support 420,000 direct beneficiaries, mainly smallholders and vulnerable individuals, and 1,000,000 indirect beneficiaries, to improve their livelihood and food security, which contributes directly to the GCF-2 goals for food security “supporting developing countries, resulting in 190 to 280 million beneficiaries adopting low-emission, climate-resilient agricultural and fisheries practices, securing livelihoods while reconfiguring food systems.”
+
+## 8. It is important to mention that during the preparation of this project, extensive discussions have taken place between IFAD and the only GCF Direct Access Entity in Viet Nam, the Viet Nam Development Bank (VDB), which mostly focuses on large-scale enterprises. These discussions aimed to assess VDB’s interest and capacity in leading or supporting RECAF. VDB is currently benefiting from a Readiness Support for the Implementation of the IRMF and is working on
+
+
+---
+*Chunk pages 8–8*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1098 (sys=94, user=1004), max_out=1024, ctx=8192
+---
+
+# B.1. Climate context (max. 1000 words, approximately 2 pages)
+
+## B.1.1. Viet Nam’s environmental background: an urgent climate issue
+
+9. Climate change significantly impacts Viet Nam, especially in terms of precipitation and temperature shifts. As global temperatures rise, Viet Nam experiences more extreme weather, including heavier monsoons and prolonged droughts. According to the Global Climate Risk Index 2024, Viet Nam has improved its rank, but it is still among the countries most affected by climate-related events. This vulnerability exacerbates forest problems, with increased rainfall and flooding leading to soil erosion and soil degradation. Furthermore, higher temperatures contribute to forest fires and pest outbreaks, further degrading these critical ecosystems. This combination of factors places Viet Nam's environmental stability and forestry resources under severe stress, threatening biodiversity, and local livelihoods.
+
+10. Mean annual temperature in Viet Nam has increased by 0.5°C – 0.7°C since 1960, with the rate of increase most rapid in southern Viet Nam and the Central Highlands. In the period 1971–2010 the rate of warming in Viet Nam was at 0.26°C per decade, this is reported as being almost twice the rate of global warming over the same period. Projected temperature increases range between 1.0°C and 3.4°C by 2080-2099 when compared with the 1986-2005 baseline. El Niño remains a major influencer of trends in precipitation. On a sub-national level some changes are significant: the general trend has been towards increased rainfall in central regions, and reduced rainfall in northern and southern regions ( an extensive CC analysis is available in Annex 2, Ch. 3).
+
+11. Viet Nam faces high disaster risk levels, ranked 83 out of 190 countries by the 2024 INFORM CC Risk Index, driven particularly by its exposure to hazards. Viet Nam has extremely high exposure to flooding, including riverine, flash and coastal flooding. Also, the country is affected by tropical cyclones and storm surges, though these hazards are mostly concentrated in the urban areas in the Red River and Mekong River deltas. The RECAF project area is mainly vulnerable to flash floods and landslides caused by heavy rainfall and typhoons particularly the Dak Lak and Ninh Thuan provinces. In addition, the project area is exposed to droughts that take place more often and for longer periods. Some models project an increase of 10% in the annual probability of drought over the next decades. Increasing inter-annual rainfall variability (rather than any decline in long-term rainfall) and increasing demand for water are the two main drivers behind the increasing incidence of drought. Within the RECAF project boundaries, Ninh Thuan is a drought hotspot; the Central Highlands also suffer its effects, particularly on sloping and remote areas ( an extensive CC analysis is available in Annex 2, Ch. 3).
+
+12. As reported in the Viet Nam's 3rd Biennial Update Report (BUR3) Technical Annex, the Central Highlands (within the provinces of Gia Lai, Dak Lak, Dak Nong, Lam Dong) and Ninh Thuan within the South-Central Coast regions (Figure 1) are experiencing the highest rates of deforestation and forest degradation in the country. These regions populated by 6 million people and a major agricultural production centre of the country, are particularly vulnerable to climate change due to significant increases in temperatures and precipitation, which in turn provoke socioeconomic vulnerabilities.
+
+### Figure 1. Viet Nam RECAF’s target provinces
+
+--- 
+
+**Note:** Page numbers are preserved as per instructions.
+
+
+---
+*Chunk pages 9–9*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1450 (sys=94, user=1356), max_out=1024, ctx=8192
+---
+
+# B
+
+## GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 5
+
+### 10 Pham TT, Hoang TL, Nguyen DT, Dao TLC, Ngo HC and Pham VH. 2019. The context of REDD+ in Viet Nam: Drivers, agents and institutions 2nd edition. Occasional Paper 196. Bogor, Indonesia: CIFOR. And IFAD analysis of crop acreage in the project area.
+
+### 11 Conclusion 191/VT-VPCP, dated 22/7/2016 on solutions for sustainable forest restoration in the Central Highland region. https://snrd-asia.org/wp-content/uploads/2022/05/2022-05-18-Policy-brief-Impacts-of-the-logging-ban-in-Viet-Nam_EN.pdf
+
+### 12 BUR3 and FIPI analysis
+
+### 13. In the RECAF provinces, the agriculture and forestry sectors account between 28% and 50% of provincial GDP and from 80% to 90% of employment. Thus, agriculture and forestry are critical activities for the economy and livelihoods of people in the region. Coffee, rubber, rice, cassava, pepper and acacia are the main cash and plantation crops. The Central Highlands account for nearly 90% of the country’s coffee cultivation area. Until 2016, the expansion of these crops had been the main driver of deforestation and forest degradation in the region. After 2016, due to the logging ban of 2016 and lower global commodity prices, the crops expansion rate braked as well as pressure on the forest ecosystems. However, forest restoration between 2014 and 2018 was limited. Coffee commodity prices have doubled since late 2023 due to shortages, raising concern that farmers will again clear forest and plant.
+
+### 14. The intricate interplay between socioeconomic conditions and vulnerabilities, such as poverty, uncertain land tenure rights, limited access to vital technology, finance, market opportunities, and sound advisory services, exacerbates environmental problems including deforestation and forest degradation. This is further compounded by the absence of robust and cohesive policy and institutional frameworks. Illegal encroachments for agricultural expansion emerge as a significant consequence of these factors, resulting in increased emissions, degradation of soil and ecosystems, and the perpetuation of socioeconomic vulnerabilities.
+
+## B.1.2. GHG emissions from land use sectors
+
+### 15. AFOLU sector constitutes, globally, the second leading cause of global warming, after energy generation. Viet Nam’s updated Nationally Determined Contribution to the Paris Climate Agreement of 2022 reaffirms the goal of increasing forest cover to 42% by 2030 and maintaining a stable level to 2050. Viet Nam’s unconditional emission reduction contribution for LULUCF is 32.5 MtCO2eq by 2023. The conditional emission reductions for LULUCF are an additional 14.1 MtCO2eq by 2023. Thus, RECAF seeks to contribute almost half (6.68 MtCO2-eq) of the national LULUCF emission reductions in the LULUCF sectors by 2030.
+
+### 16. While GHG emissions in LULUCF have stabilized considerably, compared to historical emission rates (particularly pre-2010), the emissions profile does not adequately capture the emissions from forest degradation and from conversion of natural forest to plantation forest. Most of the carbon sequestration comes from the extensive plantation of monocultures for industrial purposes (especially acacia and rubber). Therefore, while whole forest cover is maintained, the biodiversity of such mono-crops is much lower and does not provide equal levels of ecosystem services in terms of watershed management, erosion prevention, soil fertility management and provision of non-wood forest products (NWFPs) for local population’s livelihoods and nutrition purpose.
+
+### 17. Furthermore, agriculture activity on converted forestland (whether officially registered as forest or agriculture land) continues to be a source of emissions and there are also many hectares of now bare land or severely degraded forest that are currently not sequestering carbon where they did in the past. Agroforestry, which involves integrating trees into monocrop agricultural lands, enhances GHG sequestration and also provides increased shade, improved water retention in soils, and diversified income sources for farmers to cope with commodity price fluctuations and climate changes.
+
+Given the substantial opportunities for forest restoration in these regions, it is important to intensify efforts to protect and restore forests adjacent to agricultural areas and rural communities. This can be achieved through the establishment of agroforestry value chains, diversification of livelihood sources, and the implementation of community forestry
+
+
+---
+*Chunk pages 10–10*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1503 (sys=94, user=1409), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 6
+
+## 13 A 150% increase as of June 2024, from 2019 levels. See: https://www.indexmundi.com/commodities/?commodity=robusta-coffee&months=60 
+
+## 14 ADB. 2024. Asian Development Outlook: April 2024. ADB publisher, p. 310 https://www.adb.org/sites/default/files/publication/957856/asian-development-outlook-april-2024.pdf 
+
+## 15 https://vietnamnet.vn/en/vietnam-business-news-may-25-2024-2283926.html 
+
+## Vietnam has 54 recognized ethnic groups, 53 of which are minority ethnic groups, and is therefore considered a multi-ethnic country. The Government of Vietnam does not apply the term "Indigenous Peoples" to any of these minority ethnic groups. The term " ethnic minorities" is used instead. It is estimated that RECAF will reach at least 100,000 beneficiary households, of which at least 40% are ethnic minorities, who are living adjacent to forests and/or depend on forests for their economic livelihoods. They have been considered at design as indigenous peoples from the perspectives of GCF and an Indigenous People Plan (IPP Annex 6b) has been developed following the GCF and IFAD’s Indigenous Peoples Policies and guaranteeing Free, Prior and Informed Consent (FPIC).
+
+found within 1km of settlement areas. Similarly, 41.2% of deforestation and 15.5% of the forest degradation occurred within 1km of the road network, indicating that roads, if not properly designed, increase pressure on forests ecosystems. However, with current increasing world commodity prices, the consequence of the Ukraine and MENA conflicts, as well as surging coffee prices, 13 it is expected that expansionary pressure from certain crops, notably maize and coffee, will increase again and increased timber prices may lead to increased illegal logging 14,15. In addition, increased fuel and fertilizer costs and general high inflation rates are expected to increase poverty rates, which in turn push the local community to further encroachment for food production and increased use of firewood as coping strategies.
+
+## 20. The project’s district and beneficiary selection is based on a combined analysis including the following variables: forest cover, community forest areas, deforestation and forest degradation hotspots, assessment of the drivers of change, socio-economic condition, ethnic or non-ethnic regions, population living in forest areas, and a detailed assessment of the agricultural value chains suitable for a jurisdictional approach to deforestation- free sourcing and/or for the introduction of agroforestry/multiple cropping with shade trees. All the information explaining the selection of sites is detailed in Annex 2 (Feasibility study), under Chapter 2 (Deforestation and forest degradation analysis), Chapter 3 (Climate change analysis), Chapter 4 (Socio economic policy environment) and Chapter 8 (Deforestation-free value chains and commodity development). In addition, an extensive narrative with the selection criteria of the direct and indirect beneficiaries is included in Annex 26, while Annex 26 a contains a detailed calculation of them, the impact on the total population, and per commodity.
+
+## B.1.4. Tools to tackle Viet Nam’s deforestation and forest degradation 
+
+## 21. Reducing Emissions from Deforestation and Forest Degradation (REDD+) is a central instrument in Viet Nam’s National Climate Change Strategy. The REDD+ National Action Plan (NRAP), first approved in 2012 and then updated in 2017, provides the country’s framework for REDD+ implementation up to 2030. Aligned with United Nations Framework Convention on Climate Change's (UNFCCC) decisions, which urge countries to address the direct and underlying drivers of deforestation and forest degradation, REDD+ plays a pivotal role in Viet Nam's National Climate Change Strategy and achieving Viet Nam’s Nationally Determined Contribution to the Paris Climate Agreement (2022) LULUCF emission reduction targets. The World Bank Forest Carbon Partnership Facility (FCPF) has supported Viet Nam to achieve REDD+ objectives and receive results-based payments for the North-Central Coast of the country . However, the Central Highlands have thus far not received large-scale international support for NRAP implementation. Yet, these forests have suffered roughly 1/3 of the deforestation and forest degradation nationally and future prospects indicate that despite the logging ban, challenges remain. As Viet Nam project area approaches the later stages of the forest transition curve, prioritizing the "+" aspect of REDD+ becomes important, focusing on forest restoration and
+
+
+---
+*Chunk pages 11–11*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1357 (sys=94, user=1263), max_out=1024, ctx=8192
+---
+
+# B.1.5. Present REDD+ implementation and need for geographic focus on the Central Highlands
+
+In 2018, Vietnam became the first country in Asia and the Pacific, and among the first five countries in the world, to graduate from the REDD+ readiness phase through the fulfillment of the four key UNFCCC requirements (i.e., FREL/FRLs, System of Information on Safeguards (SIS), NRAP and NFMS) under the Warsaw framework for REDD+ implementation.
+
+The Government has shown high commitment to REDD+ through its participation in all international REDD+ related treaties and protocols, its proactivity in promulgation of REDD+ policies, and the various REDD+ projects. In 2024, Vietnam has received US$ 51.5 million in Results Based Payments (RBPs) by World Bank Forest Carbon Partnership Facility. This is for the forest-sector emission reductions in 6 North Central provinces of Thanh Hoa, Nghe An, Ha Tinh, Quang Binh, Quang Tri and Thua Thien Hue. The RBPs are primarily directed to the provinces and beneficiaries in those 6 provinces, as outlined in the Benefit Sharing Agreement.
+
+Vietnam will also receive support for national-level governance activities including: 
+a) support to review, develop, revise regulations, guidelines for policies and mechanisms on GHG ER of the forestry sector; 
+b) strengthen law enforcement on forest protection and sustainable development; and 
+c) capacity building for relevant organizations and individuals directly participating in forest protection and management activities (in the North Central Coast).
+
+RECAFs contribution is to assist the Government of Vietnam and key provinces to implement the NRAP in the Central Highlands region and Ninh Thuan within the South-Central Coast region. There are challenges to implement the NRAP (2017) in the Central Highlands region.
+
+These challenges include: 
+
+- **Integration of REDD+ into Provincial Socio-Economic Development Plans (SEDPs):** Building capacity to integrate REDD+ objectives, targets, and activities into five-years provincial SEDPs by providing training and technical support to provincial government agencies.
+  
+- **Planning and Implementation Support:** Provinces have completed Provincial REDD+ Action Plans. However, provinces require further assistance to address capacity gaps, technical support and guidance, and implementation frameworks within their SEDPs.
+  
+- **Local Stakeholder Engagement:** Enhancing the capacity of local stakeholders, including government agencies, community representatives, and civil society organizations, to actively participate in the integration process through awareness raising, dialogue facilitation, and meaningful engagement.
+  
+- **Cross-Sectoral Collaboration:** Strengthening capacity for cross-sectoral collaboration between government departments and agencies at the provincial level through training on coordination mechanisms, interdepartmental communication, and the identification of co-benefits between REDD+ and other sectors.
+
+
+---
+*Chunk pages 12–12*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1442 (sys=94, user=1348), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 8
+
+## 20 On 31 October 2021, MARD and Emergent - the trustee of the LEAF Coalition, signed the Letter of Intent. With this Letter of Intent, Viet Nam transfers to LEAF/Emergent 5.15 million tons of CO2 emissions reduction from forests in the South Central region and Central Highlands during the 2022-2026 period. LEAF/Emergent will pay for this service with a minimum price of USD 10/ton of CO2, resulting in USD 51.5 million. The registered area of emissions reduction commercial forest is 4.26 million ha, including 3.24 million ha of natural forest and 1.02 million ha of plantation forest.
+
+Given that RECAF is focused on REDD+ activities in the same provinces as targeted under LEAF, IFAD is in a good position for joint planning of IFAD-GCF-LEAF resources, to ensure complementarity. An agreement between MARD and IFAD has been prepared in which MARD would consider IFAD as the third-party intermediary as the geographical match between LEAF jurisdictions and RECAF.
+
+## Private Sector Engagement: Building private sector and local farmer capacity to meet REDD+ requirements for deforestation-free agricultural commodities and facilitating access to financial mechanisms and investment opportunities related to REDD+.
+
+## Monitoring and Evaluation: Building capacity for monitoring and evaluating the integration of REDD+ into provincial SEDPs, including developing indicators, data collection protocols, and reporting mechanisms specific to integrated REDD+ and economic development activities.
+
+## Operational Early Warning Systems: Strengthening capacity to utilize NFMS data effectively for operational early warning systems, including training stakeholders on utilizing NFMS data and integrating it with real-time monitoring tools for timely forest fire and encroachment alerts.
+
+## Subnational Capacity Building: Enhancing capacity at the subnational level by building technical expertise of local government agencies (district level) and non-governmental organizations (NGOs) in utilizing NFMS data and other tools to monitor and address deforestation, forest degradation, and illegal encroachment activities.
+
+## Performance-based Incentives: The current Payments for Forest Environmental Services (PFES) programme, operational since 2008, does not contain distribution criteria based on performance of stewardship activities. With a well-designed incentive mechanism, Viet Nam can create stronger motivation for land users to actively participate in REDD+ activities.
+
+## 27. There are several challenges and capacity gaps that need to be urgently addressed to enhance the overall effectiveness of REDD+ implementation in Viet Nam, aligning with the country's NDC commitments. Furthermore, continuous updates and enhancements of FREL/FRLs, SIS, NRAP, and NFMS are important to maintain eligibility for seeking RBPs until 2030. These efforts will also support the country in operationalizing the implementation of Article 6 under the Paris Agreement.
+
+## B.1.6. Baseline Activities and Investments
+
+## 28. RECAF will leverage and build upon past and ongoing REDD+ support initiatives, specifically the UN-REDD Programme, the Forest Carbon Partnership Facility (FCPF) of the World Bank, and the Lowering Emissions by Accelerating Forest Finance (LEAF) Coalition 20, among others. The Integrated Sustainable Landscape Management through Deforestation-Free Jurisdiction project, lead by UNDP and in partnership with IDH, UNEP, and CIAT pursued a detailed Central Highlands deforestation-free jurisdictional commodity production and planning effort, which was partially funded for Lam Dong and Dak Nong Provinces, and those activities form a basis to build upon. The IDH Initiative for Sustainable Landscapes (ISLA) is actively implementing deforestation-free activities in Lam Dong and Dak Lak, and RECAF will seek to dovetail with these initiatives serve as foundations for ensuring the additional value of RECAF, to bring a comprehensive approach across the entire Central Highlands region, for comprehensive NRAP implementation through deforestation-free agricultural production, addressing cross-sectoral challenges, capacity and finance constraints at Provincial levels, and to support rural producers and value-chains to meet the deforestation-free jurisdictional requirements of the EUDR.
+
+Given the overlapping provincial coverage between LEAF and RECAF, careful coordination between the two initiatives will be established to ensure a complementary relationship. RECAF will assist the Government of Viet Nam in reinvesting these benefits into further REDD+ outcomes, aligning with the country's NDC commitments. Refer to Section 6.1.2.1 on Annex 2 on Baseline Activities and Investments. In addition, RECAF will complement the ongoing GCF-funded project (FP 125) titled "Strengthening the resilience of smallholder agriculture to climate change-induced water insecurity in the Central Highlands and South-Central Coast regions of Viet Nam (2020
+
+
+---
+*Chunk pages 13–13*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1288 (sys=94, user=1194), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 9
+
+## B.1.7. Relevant Enabling Policies for REDD+ in Viet Nam
+
+29. There exists a robust set of domestic policies and strategies for REDD+ to address deforestation and forest degradation, enhance forest carbon stocks, and simultaneously improve the livelihoods of forest-dependent communities. These include the Updated Nationally Determined Contribution (NDC) (2022); Decision No. 419/QD-TTg National REDD+ Action Programme (NRAP) to 2030 (2017); Forestry Law (2017); Environmental Protection Law (2020); Planning Law (2017); Criminal Code (2015); National Climate Change Strategy with Vision to 2050 (2022); Decree No. 06/2022/ND-CP on Mitigation of Greenhouse Gas Emissions and Protection of the Ozone Layer (2022); Decree No. 08/2022/ND-CP Detailing a number of articles of the Law on Environmental Protection (2022); Prime Minister’s Directive 05/CT-TTg dated May 18th, 2022 on Strengthening management of forest protection and solving illegal deforestation and forestland encroachment; Prime Minister at Decision 297/QD-TTg dated March 18th, 2019 on Regional Program on Forest Protection, Restoration and Sustainable Development in the Central Highlands for the period 2016–2030. Refer to Sections 6.1.3 and 6.1.4 in Annex 2 for more details.
+
+30. Other enabling policies of note and areas for increased alignment: The Voluntary Partnership Agreement between the European Union and the Socialist Republic of Viet Nam on forest law enforcement, governance and trade (FLEGT) signed in 2018 provides a legal framework to ensure all imports into the European Union from Viet Nam of timber and timber products have been legally produced, to promote trade in timber products that are from sustainably managed forests, and form a basis for cooperation on enhanced forest law enforcement and governance. There may be opportunities for greater policy alignment between REDD+ and the 2018 Law on Crop Production (Law No. 31/2018/QH14) which does not reference deforestation-free agriculture but does mandate crop production shall comply with laws on environmental protection, and strategies to adapt to climate change and decrease greenhouse gas emissions are to be implemented. Similarly, the 2017 Planning Law, covering a ten-year planning period from 2021 to 2030 (with a vision to 2051), enables spatial and sector planning at Provincial and National levels, but does not provide clarity on how national target programmes, such as REDD+, relates to other policy goals related to poverty or sector growth plans. However, the Planning Law does enable implementation of some NRAP activities, such as defining spatial distribution and targets for agricultural and forest land use, and defining areas prohibited from exploitation. There are opportunities in the next 5-year development planning cycle to encourage greater alignment, and that is a key activity RECAF will pursue at Provincial and district levels.
+
+Vietnam’s Sustainable Coffee Plan for 2020 and Vision for 2030 does not include commitments to REDD+ or deforestation-free initiatives, especially in light of the EU Deforestation Regulation [Page 1].
+
+## B.2 (a). Theory of change narrative and diagram (max. 1500 words, approximately 3 pages plus diagram)
+
+### B.2.(a).1. Project Goal and Goal Statement
+
+31. The RECAF project’s goal is to reduce GHG emissions from AFOLU sector, contributing to the climate-resilient sustainable development of forest-dependent communities in the target provinces. To achieve this goal, the project sets out its paradigm-shifting logic predicated on the premise that:
+
+**Goal Statement:** IF Viet Nam's REDD+ design pillars and NRAP are fully upgraded and integrated into provincial socio-economic development processes with effective public-private-producer partnerships (4Ps) and financial and legal incentives to operationalize deforestation-free value chains for REDD+, THEN Viet Nam will be able to scale up its sustainable land and forest management across the Central Highlands and South-Central Coast and beyond to establish a pathway towards low-emissions sustainable development, BECAUSE the necessary policy and institutional frameworks, technical capacity, and financial means will have been placed to reduce GHG emissions from the AFOLU sector while contributing to the climate-resilient sustainable development of forest-dependent communities.
+
+--- 
+
+**Note:** The text continues on page 13. This is a continuation of the content from
+
+
+---
+*Chunk pages 14–14*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=832 (sys=94, user=738), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 10
+
+## Co-benefit 1 and co-benefit 2 are interconnected co-benefits.
+
+## B.2.(a).2. Barriers
+
+The project will address the following barriers to meet the goal statement.
+
+### Barrier 1
+
+At provincial level, there is a lack of interdepartmental, cross-sectoral and public-private coordination to implement NDC and NRAP objectives: Provinces are requested to contribute to Viet Nam's updated NDC (2022) targets and implement Provincial RAPs. MARD has signed agreements with the 5 Central Highlands Provinces to comply with the EUDR by the end of 2024 so as not to disrupt exports of coffee, wood, and wood products, rubber from the region. Yet reaching compliance and transforming these commodity value chains will require significant longer-term investments and changes in operations, as well as changes to the next 5-year provincial development plans (SEDPs). Traceability in the coffee sector is hampered by the structure of the value chain and thus jurisdictional approaches to standards and tracing must be developed to address this barrier. NDC and NRAP targets require integration into SEDPs. Sectoral disconnects, lack of interdepartmental, cross-sectoral coordination, and capacity constraints at district and provincial levels on cross-sector trade-offs and planning is needed. Provincial SEDPs are the primary strategic document for the provincial government and its various sectoral plans. SEDP provides the basis for the coordinated work planning and budget to implement all socio-environmental-economic activities during a period of five years. There is also a lack of public-private sector coordination to ensure these policies take into account private sector actions and investments that must be coordinated for transformation impact in the sectors.
+
+### Barrier 2
+
+Policy and institutional capacity gaps at the national level to access REDD+ Results Based Payments and forge cross-sector alignment for reaching AFOLU emission reductions and climate resilience: Viet Nam has well developed REDD+ readiness, including forest monitoring, Measurement, Reporting and Evaluation (MRV) systems, benefit-sharing mechanisms, and safeguard policies, from national to Provincial and district levels. Viet Nam has both technical and financial capacities to produce activity data and emissions factors for deforestation and forest degradation. Additional technical assistance is needed for afforestation. This has application in future distribution of PFES and for other Results-Based emission reduction payment efforts. Viet Nam seeks to define conditions for the implementation of Article 6 of the Paris Agreement, which shall contribute, if managed properly, to increased flow of financial resources for private and public sectors reducing emissions. Cross-sectoral incoherence exists, though recent changes to agriculture sector policies offer a basis to build upon.
+
+## Figure 2 Theory of Change Diagram
+
+
+---
+*Chunk pages 15–15*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1431 (sys=94, user=1337), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 11
+
+The 2018 Law on Crop Production does not include deforestation-free agriculture, and more effort is necessary to define how sector area targets, planning, and investment can be aligned with NRAP objectives. The 2017 Planning Law (2021 to 2030, with a vision to 2051) does not provide clarity on how national target programmes, such as REDD+, relates to other policy goals. Viet Nam’s Sustainable Coffee Plan to 2020 and Vision to 2030 does not include REDD+ or deforestation-free commitments. Working with GoV at all relevant levels, RECAF will pursue greater sectoral alignment to address these barriers.
+
+## Barrier 3. Lack of secured land tenure
+
+The Central Highlands faces land tenure challenges that are complex and differ based on many factors and nuances, all of which impact on NDC, NRAP, and SDG goals. Improved forest management and agroforestry take time to provide economic and environmental services. Therefore, rural households and communities need to have some long-term secured land tenure to invest in planting trees and adopting more sustainable labor-intensive practices.
+
+The Government of Viet Nam nationalized forest resources in 1976 and set up State Forest Enterprises (SFE) to manage forests, even though traditional tenure rights of local communities and traditional forest management practices were ignored. Sometimes land traditionally cultivated (through shifting cultivation or permanent cropland) was included as forestland, or smallholder farmers were displaced from their land elsewhere and pushed into the forest, leading to disputes that continue until today.
+
+Reforms in the 1990s and 2000s provided a legal framework for re-allocation of forest resources to local communities. However, some discrepancies and gaps in the legal framework remain. For example, while the Land Law of 2013 did not recognize allocation of natural production forests to local communities, by contrast, the Forestry Law of 2017 recognizes local communities, defined as "groups living in the same village and having the same customs and traditions", as legal owner of forest and giving priority in forest allocation to ethnic minority groups and communities who have customs, traditions, culture, beliefs and customary rules associated with forest uses. Both laws are in force. Furthermore, there is no legal definition of community-based forest management in Viet Nam.
+
+Forests that have been allocated to households and communities are usually of poor quality with low economic returns, allocation criteria have at times excluded poor, particularly ethnic minorities and women-led households, and revocation of allocated user rights is fairly easy and frequent. Furthermore, a lack of community involvement in decision-making has resulted in disputes. (See more details in annexes 6A and B, 7 and 8). Thus, forestland dependent rural households and communities do not have the long-term secured land tenure that is a prerequisite for their ability to invest in better forest management and agroforestry.
+
+From this perspective, it is crucial to thoroughly explore the possibility of establishing a multi-stakeholder commune-level collaborative forest management (MCCFM) mechanism in order to enhance current institutional arrangements and forest management methods at the commune level. This mechanism will facilitate collaborative zoning, forestland allocation (FLA), and sustainable forest management (SFM) practices, in conjunction with Provincial Peoples Committees (PPCs), Forest Management Boards (FMBs), and Commune Peoples’ Committees (CPCs).
+
+## Barrier 4. Lack of capacity and incentives for private sector action
+
+Government targets for the private sector continue to focus on raising the efficiency and competitiveness by increasing productivity, quality, and added value. Key incentives are price support subsidies for rice; irrigation service fee exemptions and lack of pricing on water extraction; seed and livestock breeding subsidies; credit subsidy schemes, reduction of land taxes and extension services. Only recently, the target of reducing adverse impacts on the environment has been added to agribusiness development policies and requirements for Environmental Impact Assessments to obtain investment permits have become stricter. Only companies exporting to specific export markets (e.g., organic niche markets, timber exports to the EU under Forest Law Enforcement Governance and Trade (FLEGT) and recently enacted European Union Deforestation Regulation (EUDR)) have an incentive to invest in sustainability and mitigation.
+
+Consequently, there has been little demand for financial products to facilitate such investments, and commercial banks and microfinance institutions (MFIs) have neither developed suitable credit products nor have they sufficient institutional capacity (including, at the micro level, medium to long-term funding capacity) and knowledge on the subject. While the Viet Nam Bank for Social Policy and microfinance institutions target the poor with small loan amounts and the Viet Nam Development Bank (VDB) provides loans for sustainable investments by large scale enterprises, there is a "missing middle", encompassing both size and tenor elements, resulting in a lack of long-term investment loans targeting
+
+
+---
+*Chunk pages 16–16*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1101 (sys=94, user=1007), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 12
+
+## B.2.(a).3. How the outcomes will overcome the barriers
+
+38. The project seeks to deliver two outcomes that are mutually reinforcing, overcome the barriers, and support each other to realize its goal as shown in Figure 3.
+
+39. Viet Nam’s REDD+ design pillars are fully upgraded and integrated into provincial policies & institutional frameworks with improved public-private-producer partnerships (4Ps) to operationalize REDD+ (Outcome 1): This initiative will bolster both provincial and national AFOLU policies, aiding the fight against deforestation and ecosystem degradation. Furthermore, it seeks to incorporate REDD+ into the national and provincial development policies and institutional capacity plans, thereby overcoming Barrier 1. It will also strengthen stakeholder coordination mechanisms and tackle issues related to interdepartmental and cross-sectoral coordination (Barrier 2). Furthermore, it will address the lack of incentives for long-term sustainable forest management (Barrier 3), ensuring these challenges are effectively met and resolved. To ensure smooth operations and coordination between the RECAF, relevant institutions, and initiatives such as LEAF, the Department of Forest (DoF) under MARD (formerly called VNForest) will sign necessary agreements with IFAD. These agreements will strengthen collaboration and facilitate effective cooperation to overcome existing barriers.
+
+40. Emissions reductions from AFOLU consequently to 4Ps’ deforestation-free value chains & performance-based finance (Outcome 2): Building upon the foundation laid by Outcome 1, this outcome focuses on the development of deforestation-free value chains through the engagement of 4Ps, improved financial access, and the creation of supporting infrastructure will effectively address Barrier 4 and encourage greater private sector involvement. The provision of performance-based incentives for well-managed forests under community forest management, in conjunction with the establishment of deforestation-free value chains, will enhance income-generating opportunities for forest-dependent communities through sustainable forest management, effectively eliminating Barrier 5. These efforts will result in increased forest carbon stocks and enhanced carbon sequestration.
+
+## B.2.(a).4. Co-benefits:
+
+41. While the specific outputs under the two outcomes will be further described in section B.3, it is important to note that delivering these outcomes will also yield co-benefits in two primary areas closely associated with mitigation activities. Improved land tenure, diversified agroforestry intercropping, and inclusive investment planning and Figure 3 Mutually Reinforcing Outcomes of RECAF
+
+--- 
+
+[Page 1]
+
+
+---
+*Chunk pages 17–17*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1299 (sys=94, user=1205), max_out=1024, ctx=8192
+---
+
+# B.2. (a).5. Risks
+
+42. External shocks to the macro-economy (such as market fluctuations, pandemics, and conflicts) pose a potential risk to this proposal. The project currently assumes that smallholders can achieve sustainable livelihoods by opting for deforestation-free alternatives and participating in Payment for Environmental Services (PFES/PES) programs, rather than engaging in encroachment activities. The Economic and Financial Analysis (EFA), outlined in Annex 3, provides evidence that agroforestry and niche product business models can be equally or more profitable in the long run. To ensure the success of the innovative PES mechanism, a study on fair pricing for carbon services will consider the opportunity costs involved. However, it is important to note that these costs are subject to change due to various factors, including fluctuations in international carbon markets, pandemic-related restrictions, and conflicts. Consequently, there is a risk that during periods of high agricultural commodity prices and relatively low PES payments, it may once again become more profitable to resort to deforestation for crop cultivation. To mitigate this risk, it is crucial to enhance the enforcement of forest protection regulations. At the project and enterprise levels, key measures to address this concern involve conducting thorough financial analyses of project investments, prioritizing high-quality, productive, and cost-efficient deforestation-free production options.
+
+43. Climate change poses a significant threat to the livelihoods of impoverished communities, particularly those who are highly susceptible to climate-related hazards like droughts, pests, heat waves, and disease outbreaks, which often lead to crop failures. The project is designed to factor in the climate vulnerability of these communities during the development of a deforestation-free value chain, facilitating infrastructure enhancements, and promoting MCCFM. To mitigate the adverse effects of climate change, several measures will be implemented. These include the promotion of climate-resilient crop varieties, diversification of livelihood options through the development of specialty products and improving access to financial resources. By integrating these strategies, the project aims to enhance the resilience and sustainability of the livelihoods of vulnerable communities in the face of climate change.
+
+44. Lack of investment interest is also a risk in which the project is unable to design credit products attractive enough for banks to invest their own capital. These financial products must be tailored to the needs of individual farmers and enterprises, while still being appealing to a significant number of them. This is crucial because financial institutions have fixed costs and require scale to be profitable. The main mitigation measures include hiring qualified rural finance experts, collaborating closely with banks to design scalable financial products, demonstrating profitability and driving demand for these products through project activities, and reducing unit operating costs for banks through capacity building and enabling value chain linkages.
+
+45. Insufficient human resources and operational delays: In general, weak coordination between government units and a limited availability of skilled contractors and service providers can cause delays in project implementation. To mitigate this, the project emphasizes strong institutional linkages and has started identifying potential external technical assistance through the IFAD country team. The project also requires solid and long-term commitment from various actors. Some planned activities may involve processes that take longer than expected. The 4P participatory action plans will address participants' needs to ensure commitment, and proactive management and IFAD support will further mitigate the risk of delays. Specifically, delays in project start-up may result from non-synchronous GCF and IFAD approval processes. Therefore, once IFAD Executive Board approval is obtained, all post-approval processes will be initiated in line with GCF requirements, ensuring that the necessary documents are ready for signature upon GCF's approval. Other delays may occur in procurement processes due to discrepancies between IFAD guidelines and national laws and regulations. This risk will be mitigated by utilizing IFAD's Online Procurement End-to-End System (OPEN) and providing training to project staff. More details in section F1.
+
+# B.2.(a).6. Assumptions
+
+46. Policies & regulations are implemented: It is assumed that the improved policies and regulations will be effectively implemented by decision makers and communities. Given the strong commitment demonstrated by MARD and the participating provinces during the project preparation process, IFAD is confident that this assumption will hold true during implementation.
+
+47. Private sector's and farmers' risk appetite remains high: It is assumed that SMEs and communities are keen on participating in deforestation-free value chains, as it aligns with their long-term prosperity and is tied to the preservation of forests. IFAD is convinced of this due to the significant cultural and economic roles forests play in the target communities and for small businesses. However, it is acknowledged that communities often rely heavily
+
+
+---
+*Chunk pages 18–18*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1146 (sys=94, user=1052), max_out=1024, ctx=8192
+---
+
+# [Page 1]
+## GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 14
+
+on the remaining forests due to livelihood needs and external pressures leading to reduced forest areas. Therefore, RECAF will demonstrate practical deforestation-free supply chain management and alternative livelihood options to establish avenues for sustainable income generation and livelihood enhancement.
+
+Effective consultation with ethnic minorities will be sought before any activity that affects their lands, territories, resources, livelihoods, or cultures is carried out. Detailed information about FPIC is included in Annex 6B – Indigenous Peoples Plan
+
+## 48. Consumer demand for deforestation-free products continues:
+This assumption is based on the recent European Union Deforestation Regulation (EUDR) mandating that key agricultural commodities (coffee being the largest, given the large import demand Europe has for Vietnamese coffee) meet the criteria of deforestation-free.
+
+The assumption is also based on increasing awareness among consumers about the impact of climate change and the crucial role that tropical forests play in climate change mitigation and adaptation efforts. As a result, consumers are making conscious purchasing decisions that prioritize deforestation-free products, leading to a rise in international demand.
+
+## 49. REDD+ RBPs opportunities are available:
+This assumption is supported by the ongoing processes under LEAF and FCFP, the ongoing discussions in the GCF Board for a new REDD+ RBP Window, and the renewed international commitment to climate action in the forestry sector at the Conference of Parties (COP) 27 of the UNFCCC. These factors provide additional momentum and opportunities for the implementation of REDD+ initiatives.
+
+## B.2 (b). Outcome mapping to GCF results areas and co-benefit categorization
+
+## 50. To contribute to GCF Mitigation Results Area 4 (Forestry and Land Use), the project's Outcome 1 and Outcome 2 must complement each other. They aim to operationalize REDD+, verify REDD+ results aligned with Viet Nam's NDC and NARP, deliver RPBs, meet national REDD+ information requirements, and generate emissions reductions and removals at the jurisdictional level. This integrated approach ensures the project's impact through implementing REDD+ in Viet Nam.
+
+| Outcome number | GCF Mitigation Results Area (MRA 1-4) | GCF Adaptation Results Area (ARA 1-4) |
+|----------------|--------------------------------------|-------------------------------------|
+| MRA 1          | Energy generation and access         | Most vulnerable people and communities |
+| MRA 2          | Low-emission transport               | Health, well-being, food and water security |
+| MRA 3          | Building, cities, industries, appliances | Infrastructure and built environment |
+| MRA 4          | Forestry and land use                | Ecosystems and ecosystem services |
+
+Outcome 1: Viet Nam's REDD+ design pillars are fully upgraded and integrated into provincial policies and institutional frameworks with improved public-private-producer partnerships (4Ps) to operationalize REDD+
+☐ ☐ ☐ ☒ ☐ ☐ ☐ ☐
+
+Outcome 2: Emissions reductions from AFOLU are generated through 4Ps' deforestation-free value chains and performance-based finance  
+☐ ☐ ☐ ☒ ☐ ☐ ☐ ☐
+
+## 51. The main co-benefits from RECAF are i) adaptation co-benefit (increased resilience of forest-dependent communities) and ii) economic (improved land tenure, inclusive investment planning, and equitable resource distribution). It is important to highlight that equitable access to project benefits will be delivered in a culturally appropriate manner for ethnic minorities. They have been adequately consulted about the design and will continue to be consulted during project implementation in an iterative manner on aspects that relate to their lives and/or communities. Further information is provided in Annex 6B – Indigenous Peoples Plan.
+
+## 52. Thus, the RECAF project outlines a framework for developing adaptation indicators during the implementation stage. These indicators will serve as benchmarks to monitor and evaluate the effectiveness of the co-benefit adaptation measures, ensuring they meet intended objectives and can be adjusted in response to new information or changing conditions. This dynamic approach will mitigate potential adverse outcomes and enhance the project's capacity to adapt effectively to evolving climate scenarios. In addition, RECAF ensures that no maladaptation occurs throughout its lifecycle. Maladaptation, which refers to actions that inadvertently increase vulnerability to climate change instead of reducing it, is meticulously avoided by integrating project management strategies and comprehensive risk assessments.
+
+
+---
+*Chunk pages 19–19*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1027 (sys=94, user=933), max_out=1024, ctx=8192
+---
+
+# B
+
+## GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 15
+
+### 23 TREES – The REDD+ Environmental Excellence Standard – is the Architecture for REDD+ Transition (ART)’s standard for the quantification, monitoring, reporting and verification of Greenhouse Gas (GHG) emission reductions and removals from REDD+ activities at a jurisdictional and national scale. https://www.artredd.org/trees/
+
+| Co-benefit number | Co-benefit | Environment | Social | Economic | Gender | Adaptation | Mitigation |
+|-------------------|------------|-------------|--------|----------|--------|------------|------------|
+| Co-benefit 1: Improved land tenure and inclusive investment planning and equitable resource distribution | ☐ ☐ ☒ ☐ ☐ ☐ |
+| Co-benefit 2: Increased resilience of forest dependent communities | ☐ ☐ ☐ ☐ ☒ ☐ |
+
+### B.3. Project/programme description (max. 2500 words, approximately 5 pages)
+
+#### 53. This section focuses on describing the outcomes, outputs, activities, and sub-activities to elaborate on the project’s approach and strategy. Thus, Annex 24 includes a table of activities with detailed information about the EE and its funding source.
+
+##### Outcome 1: Viet Nam’s REDD+ design pillars are fully upgraded and integrated into provincial policies & institutional frameworks with improved public-private-producer partnerships (4Ps) to operationalize REDD+:
+
+This outcome will foster cross-sector coordination and planning mostly at Provincial levels, leading to a tangible reduction in deforestation, and strengthened capacities to mobilize funds for the implementation of REDD+ action plans. The NRAP, FREL/FRLs, NFMS, SIS and registry provide solid foundations from which to invest in minor additions, as necessary, to meet the international requirements for accessing and obtaining RBPs from specific sources such as LEAF and potentially other sources in relation to Article 6 of the Paris Agreement (Output 1.1).
+
+These updates to the REDD+ design pillars will be seamlessly integrated into provincial SEDPs, ensuring an enabling policy and institutional environment that facilitates effective stakeholder coordination. This integration will foster 4Ps at the provincial level, mobilizing concrete actions to achieve emissions reductions and removals through the development of deforestation-free value chains and community forestry initiatives (Output 1.2).
+
+###### Output 1.1: National REDD+ policies and mechanism upgraded to fulfill all required functions, including afforestation.
+
+Two activities will build on previous readiness investments to bolster Viet Nam’s capacity to implement Phase 2 (REDD+ implementation) activities. These are detailed below.
+
+###### Activity 1.1.1: Upgrade National Forest Monitoring System (NFMS) and Safeguard information System (SIS)
+
+###### Sub-activity 1.1.1.1. Upgrade a monitoring system to report results of emissions reductions and removals:
+
+In collaboration with FIPI, this activity will support the DoF to upgrade its NFMS to achieve all emission reduction and enhancement activity requirements in the LULUCF sectors, and assist Viet Nam to complete required diligence in meeting the ART/TREES standard applied by the LEAF coalition. Activity 1.1.1 will enhance the NFMS and SIS by addressing institutional and technical gaps at the national level to effectively monitor the progress of the NRAP implementation.
+
+Vietnam has both technical and financial capacities to produce activity data and emissions factors for deforestation and forest degradation. Technical assistance is needed on Activity Data and Removal factors for afforestation. This would allow Viet Nam to access new options for Results Based Payments in areas outside the GCF funded project area/carbon pools, including those from the private sector.
+
+RECAF will also support the NFMS to enhance its transparency, inclusiveness and accessibility to strengthen the linkages between the monitoring of NRAP, NFMS, MRV and registry system to effectively and strategically monitor REDD+ investment effectiveness and coordinate RBPs from different sources in relation to Viet Nam's NDC. The activity will also support greater engagement of provincial institutions and civil society organizations in the provincial MIS (Sub-activity 1.2.1.3).
+
+
+---
+*Chunk pages 20–20*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1375 (sys=94, user=1281), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 16
+
+## Sub-activity 1.1.1.2. Implement the REDD+ Safeguards Information System
+
+Despite government’s effort, the safeguard information system (SIS) and the operationalization of SIS to improve good forest governance at provincial and district levels has not been fully achieved – due to the lack of budget and low capacity of relevant stakeholders at local level. To improve, the Project will support Department of Forest (central level) to design and implement a training programme related to good governance of forests. This program will focus on:
+
+a) Developing a manual on SIS monitoring and reporting (for use at provincial level, and can be used nationwide),  
+b) Developing guidelines on promoting gender equity and rights of indigenous peoples in forest development, and  
+c) Conducting trainings (within project provinces) for Forest Management Boards to effectively investigate and report the biodiversity status of their forest, for staff reporting on SIS.
+
+## Sub-activity 1.1.1.3. Promote inter-provincial coordination and knowledge management
+
+RECAF will support a REDD+ communication strategy in the target Provinces, to assist in public dissemination of project details beyond the direct project participants. A website and the engagement of provincial and national media will increase awareness about the project activities and on the importance and benefits of forest conservation, on relevant policies, on deforestation-free livelihood options, on the forecasted impact of climate change in the project area and options to adapt farming systems to this change.
+
+MARD will also organize interprovincial exchange workshops with 4P platforms and on regional landscape coordination with participants from similar agro-ecological zones and/or from the same watershed to exchange lessons and facilitate coordinated planning across provincial boundaries. This activity will also enhance knowledge management (KM) and innovation on REDD+ related topics, including from and with other provinces, countries and non-governmental stakeholders.
+
+## Activity 1.1.2: Mobilize resources for NRAP implementation and inclusive investment planning and equitable resource distribution mechanisms
+
+It is crucial for Viet Nam to mobilize resources to effectively implement the NRAP (2017) and establish benefit-sharing mechanisms. These efforts are essential for achieving successful and sustainable emissions reductions and removals through REDD+. The activity will develop a comprehensive regional investment plan for NRAP implementation, and explore avenues to increase domestic financing for deforestation-free value chain development and collaborative forest management.
+
+### Sub-activity 1.1.2.1. Prepare a Regional NRAP Investment plan
+
+There is a need to coordinate the range of funding sources that should be aligned (but are currently not) to implement NRAP objectives across the priority Central Highlands Provinces and Ninh Thuan province. This includes in relation to the activities identified in Section 6.1.2.1 in Annex 2, other sources of domestic finance, and possible RBPs via the LEAF Coalition.
+
+### Sub-activity 1.1.2.2. Conduct capacity building for private sector resource mobilization
+
+The activity will also establish and operationalize a domestic Viet Nam Forest and Business Partnership as a public private platform to discuss funding mechanisms and mobilize private sector financing for NRAP implementation, including support to the national movement on the plantation of 1 billion trees.
+
+This activity will also support the Government to develop its legal and institutional arrangements for the implementation of the article 6 of the Paris Agreement, especially articles 6.2 and 6.4, and RBPs from the LEAF Coalition. This will contribute to increase the financial flows that Viet Nam could leverage from national and international private and public entities, to be re-invested in the implementation of the NRAP and NDC.
+
+### Sub-activity 1.1.2.3. Conduct national multistakeholder policy dialogue on including carbon sequestration services in PFES mechanisms and to draft MCCFM guidelines
+
+PFES, in operation since 2008, but lacking performance-based measures of stewardship, holds great potential for reform to activate domestic incentives to reward forest stewardship.
+
+As explained in section B2, Decree 99 of 2010 did not designate users of forest carbon sequestration and retention services, and the contracting of households for patrolling under so-called “joint forest management” turns PFES payments into payments for labor, not linked to forest protection or regeneration performance.
+
+A series of national policy dialogues will be organized on the various facets of establishing carbon-related PFES/PES, and the role of the Provincial Forest Protection Development Funds (PFPDFs) as true PES intermediaries assisting private sector, state-owned forest holders and communities to buy and sell ecosystem services.
+
+The project will assist DoF and the Viet Nam Forest Fund (VNFF) to adapt the regulatory framework as needed and develop rate setting mechanisms. In addition, the project will provide guidance on the MRV needed to link PFES payments to forest conservation
+
+
+---
+*Chunk pages 21–21*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1182 (sys=94, user=1088), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 17
+
+## Output 1.2: Provincial policies, legal and institutional frameworks, and stakeholder coordination mechanisms integrated with National REDD+ Action Plan (NRAP).
+
+### Activity 1.2.1: Mainstream NRAP into provincial policies and legal institutional frameworks
+
+While Provincial REDD+ action plans (PRAPs) have been completed, systematic integration of the NRAP in SEDPs is lacking, as is PRAP spatial planning and overcoming sectoral conflicts. The provincial SEDP is the primary strategic document for the provincial government and its various sectoral plans provide the basis for the work planning and budget to implement all socio-environmental-economic activities during a period of five years. Provincial sustainable forestry development plans (PSFDP) and programmes for ethnic minorities and mountainous areas need to be included. This makes it essential for the NDC targets and NRAP interventions to be explicitly incorporated into SEDPs if they are to be funded and implemented at all.
+
+#### Sub-activity 1.2.1.1. Strengthen provincial leadership, political will and commitment:
+
+The activity will start with updating high level managers in the provincial communist party organizations, people’s councils and line departments on the PRAP, updated NDC targets, the NRAP and related national policies to strengthen provincial leadership, political will, and operational steps for implementation.
+
+#### Sub-activity 1.2.1.2. Support the development of REDD+ action plans and their integration into sector plans:
+
+The project will support the development of provincial green growth strategies and provincial REDD+ action plans (PRAP) and their integration in SEDPs, and in the provincial sustainable forestry development plans (PSFDP) and programmes for ethnic minorities and mountainous areas. Through the 4P platforms (Activity 1.2.3 below), the project will invite private sector entities, financial institutions, and farmer representatives to provide their inputs and feedback on the PRAPs and SEDPs in the form of a policy brief and through participation in policy dialogue and meetings in which these documents will be discussed.
+
+### Activity 1.2.2: Improve cross-sector coordination for better forest management and transition to deforestation-free economic development
+
+#### Sub-activity 1.2.2.1. Facilitate 4P platforms to provide inputs and ensure effective implementation of PRAPs:
+
+The project will establish provincial 4P platforms as effective coordination mechanisms for implementation of the PRAP and the deforestation-free commodity value-chains. A policy advisor will be recruited by the Project Management Unit (PMU) to oversee the provincial 4P platforms. Membership in the 4P platforms will include representatives from government units involved in the project, such as People's Provincial Committee (PPC), Department of Agriculture and Rural Development (DARD), Department of Labor, Invalids and Social Affairs (DOLISA), Department of Natural Resources and Environment (DONRE), Forest Protection Department (FPD), forest companies, major buyers of selected commodities, farmer cooperatives and associations, and representatives of forest-dependent communities, indigenous and ethnic communities, and smallholder farmers. The establishment of provincial 4P platforms will enhance stakeholder engagement, coordination, and knowledge sharing, enabling the successful development and implementation of strategies and action plans related to deforestation-free value chains and sustainable forestry policies.
+
+#### Sub-activity 1.2.2.2. Facilitate cross-sector coordination, policy dialogue and capacity building on zoning, FLA, MCFM and PFES:
+
+The project will also facilitate cross-sector coordination on land use zoning and forestland allocation, to address complicated dynamics of forest land being used by local villagers. It is estimated that this area comprises around 52,000 ha in Lam Dong, 27,000 ha in Dak Lak, 46,000 ha in Dak Nong, 15,200 ha in Ninh Thuan and ~ 70,000 ha in Gia Lai. There is political will to embark on a process of land allocation for these areas to individual households of village communities, especially if it is demonstrated that these areas were already in use before 2016, and also to restore some areas, by facilitating increased agroforestry and planting of native tree species. The project will facilitate collaboration between the forest protection units under DARD, DONRE, PPCs and CPCs, FMBs, State Forest Enterprises (SFEs) and local communities to decide on the future of these encroached and/or disputed forestlands under Activity 2.3.2 by developing a MCCFM mechanism to facilitate collaborative zoning, FLA, and SFM.
+
+
+---
+*Chunk pages 22–22*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1059 (sys=94, user=965), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 18
+
+## Activity 1.2.3: Enhance Public-Private-Producer Partnerships (4Ps) for deforestation-free economic development
+
+This activity consists of a series of actions to generate and share knowledge among stakeholders directly involved in project activities and beyond. The 4P platforms will be requested to plan or provide inputs to the planning of all these activities, be involved in their monitoring, review resulting reports and be responsible of the dissemination of results among their stakeholder constituencies.
+
+### Sub-activity 1.2.3.1. Generate baseline knowledge
+
+Participatory baseline studies to refine the understanding of drivers of deforestation and how to mitigate trade-offs between forest conservation and rural economic development will inform green growth strategies, PRAP and other policies developed under Activity 1.2.1. An in-depth assessment of the current status of formal and traditional forest management practices, including specific management of forest biodiversity, will inform the selection of communes for the first MCCFM pilots (under Activity 2.3.2). This study, in combination with data on performance in terms of maintaining healthy forest cover, will also provide insights for the compilation of best practices for the capacity building of forest protection departments.
+
+### Sub-activity 1.2.3.2. Identify socially and economically viable and dense agroforestry systems adapted to agro-ecological zones
+
+The project begins by creating a typology of agro-ecological zones, taking into account sustainable practices and ancestral knowledge of ethnic minorities. It draws upon a wealth of existing information, including best practices and lessons learned from previous initiatives, such as the IUCN's report on forest landscape restoration in Quang Tri [26] and the comprehensive study on agroforestry practices in Viet Nam conducted by ICRAF [27].
+
+By incorporating these valuable resources, the project aims to enhance its effectiveness, generate additional benefits, and maximize cost-efficiency in supporting more trees on farms, intercropping of annuals and perennials, and generating more on-farm income. Financial feasibility assessments will be completed, so that farmers can phase cropping, and understand the potential yield impacts, financial implications, and how the project can support the gaps and reducing risks for adoption. Training is provided to public and community-based nursery staff to ensure the production of quality seedlings for the various species in the agroforestry mix, further supported through infrastructure development under Activity 2.2.2.
+
+### Sub-activity 1.2.3.3. Share knowledge with the wider population and advocacy
+
+To promote knowledge sharing and advocacy beyond the project participants, provincial forest and climate information hubs will be established at each FPD.
+
+## Outcome 2: Emissions reductions from AFOLU consequently to 4Ps' deforestation-free value chains & performance-based finance
+
+### Output 2.1: Deforestation free value chains developed by 4Ps and increased access to finance
+
+### Activity 2.1.1: Develop deforestation-free commodity supply chains through 4P platforms
+
+The NRAP focuses on sustainable agriculture for export commodities like coffee and pepper, promoting deforestation-free commitments from government, producers, processors, and buyers. Private sector and financing institutions are essential for successful R EDD+ implementation. Developing deforestation-free value chains is vital to improve the livelihoods and resilience of marginalized ethnic minority groups and discourage further encroachment.
+
+
+---
+*Chunk pages 23–23*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1099 (sys=94, user=1005), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 19
+
+## 28 Information and database provided by the RECAF project preparation boards of five provinces in June 2024
+
+### Table 2. Overview of selected crops and approaches
+
+| Commodity | Reduced deforestation | Other reduced emissions | Enhanced carbon stock | Economic and adaptation co-benefits | Market |
+|-----------|-----------------------|-------------------------|-----------------------|-------------------------------------|--------|
+| Coffee, pepper-based | Jurisdictional approach, traceability | Reduction of post-harvest losses | Reduced erosion & fertilizer use | Agroforestry (with fruits, macadamia, indigenous trees etc.), transition from annual crop | 90%-95% to European and US market |
+| Cashew | Avoided conversion to monocropping and annual crop | - | - | Value-added products, climate-resilient technologies, increased financial access, and income diversification | 40% to US market |
+| Fruits | - | - | - | Value-added products, climate-resilient technologies, increased financial access, and income diversification | 40% to China market |
+| Acacia | Jurisdictional approach, traceability | - | - | Financial access, and income diversification | 50% to China market |
+| Bamboo | Sustainable management | - | - | Value-added products, increased financial access, and income diversification | 10% to China market |
+| Specialty products (beekeeping, medicinal plants, mushrooms, sericulture, dyes, etc.) | Incentive for forest protection / income gives less need for encroachment | - | - | Can make agroforestry more profitable | 90% to domestic market |
+
+### Sub-activity 2.1.1.1. Develop deforestation-free commodity supply chains (perennial crops, acacia-based timber, bamboo): At the district level, 4P platforms will create and execute action plans to develop deforestation-free value chains, benefiting carbon stocks and forest-dependent communities.
+
+RECAF will engage with major companies sourcing coffee, pepper, cashew, bamboo, and acacia in project districts, and work with farmers and producer groups. Value-chain blockages that exist will be prioritized for actions, such as traceability constraints.
+
+The Vietnamese coffee sector, there are very few purchases direct purchases by processor-exporters from farmers. Circular 08/2013/TT-BCT issued by the Ministry of Industry and Trade disallows foreign-owned companies from sourcing directly from farmers, and mandates that they must instead buy through a registered local company (or cooperative). This has resulted in significant challenges to trace coffee beans to the farm level, and overall traceability in the sector. It has also resulted in a value-chain where beans are sorted by quality just after leaving the farm-gate, and sold accordingly, making traceability very difficult.
+
+The action plans, based on baseline studies from Activity 1.2.3, will guide multistakeholder dialogue on reducing emissions, sharing responsibilities, and mobilizing resources. District-level representatives will participate in provincial-level platforms.
+
+For perennial crops, 4P platforms will adopt a jurisdictional approach, ensuring deforestation-free sourcing, reducing losses, and promoting agroforestry systems. Farmer training, traceability systems, and collaboration with local governments will be crucial.
+
+The project aims to replicate successful approaches, piloted by IDH and SNV in Lac Duong district, Lam Dong in the coffee sector and expand to other commodities.
+
+Simultaneously, the project will promote agroforestry systems, mitigating climate change and enhancing livelihoods. Different provinces will focus on specific crops, diversifying income and reducing risks. For example, In Ninh Thuan province, cashew or fruit-based agroforestry systems will be promoted, while other provinces will focus on coffee-based systems combined with pepper, fruits, and others, including macadamia, persimmon, and indigenous forest.
+
+
+---
+*Chunk pages 24–24*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1374 (sys=94, user=1280), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 20
+
+## Sub-activity 2.1.1.2. Develop value chains for deforestation-free niche products (honey, mushroom, medicinal plants, herbs, other NWFPs):
+
+RECAF will transform commodity supply chains and empower individual farmers, CIGs (established under Activity 2.1.2), cooperatives, and SMEs to develop value-added activities, including specialty products from deforestation-free sources. These activities will create alternative income opportunities for communities currently relying on forestland cultivation.
+
+Building on IFAD's experience in supporting 4Ps and agribusiness in Viet Nam, RECAF will encourage private sector co-investments in agribusiness SMEs within ethnic minority and poor communities. Potential options include beekeeping, mushroom cultivation, herbs and medicinal plants, silk production, weaving, and community-based ecotourism. Value-added products from new tree species introduced into perennial crop systems, such as processed fruits and macadamia nuts, are also viable.
+
+These products can be certified under the One Commune One Product (OCOP) program by the Government of Viet Nam, benefiting from related capacity building and promotion.
+
+Additionally, the project will adopt a holistic approach to address resilience, nutrition, and economic empowerment for ethnic minorities. It will provide training on nutrition-sensitive agriculture, identifying and prioritizing climate-resilient, nutritious foods, and improving their availability and affordability while contributing to biodiversity conservation.
+
+## Activity 2.1.2: Develop the capacity of farmers, common interest groups (CIGs), cooperatives and small and medium-sized enterprises (SMEs) for deforestation-free value chains and alternative livelihood development
+
+CIGs, existing cooperatives, and SMEs will receive support to develop business plans for generating alternative income. They will actively participate in district-level 4P platforms and establish connections with buyers and financial service providers to access markets and financing opportunities.
+
+CIGs play a crucial role in enabling effective community participation, particularly for ethnic minorities and women, ensuring their interests and options are considered during decision-making and collaborative business development processes. As these CIGs evolve, they may eventually transition into official cooperatives.
+
+Furthermore, communal plans will be developed to provide valuable input for shaping value chain action plans. This includes determining suitable crop choices, promoting deforestation-free sourcing practices, exploring alternative livelihood options, and addressing the capacity development needs of their members.
+
+## Sub-activity 2.1.2.1. Establish CIGs:
+
+In each rural commune within the project districts located near or within forests, RECAF will establish CIGs. CIGs are built on the outcomes of IFAD's past projects - the Sustainable Economic Empowerment of Ethnic Minorities (3EM) in Dak Nong and Agriculture, Farmers and Rural Areas Support Project (TNSP) in Gia Lai and Ninh Thuan.
+
+These CIGs, together with cooperatives, will serve as entry points to effectively represent farmers within the 4P platforms. They will play a crucial role in farmer capacity building, establishing productive alliances with buyers, obtaining group certification, maintaining community infrastructure (Output 2.2), and establishing connections with financial service providers.
+
+CIGs can also operate as collective businesses, potentially evolving into cooperatives during the project's duration, to facilitate the development of alternative livelihood SMEs. They will contribute to business development and marketing efforts by collectively attracting buyers, determining production volumes and delivery schedules, negotiating and managing contracts, and in certain cases, sourcing and managing short-term credit for their members.
+
+In cases where CIGs utilize collective or common land for income-generating activities, they must establish governance systems through community-based decision-making structures that involve participating ethnic minority groups. These structures will determine the land's use and the distribution of benefits.
+
+## Sub-activity 2.1.2.2. Train farmers, CIGs, cooperatives and SMEs:
+
+Based on the training curricula developed under Activity 2.1.1, comprehensive training programs will be implemented for farmers, Community Interest Groups (CIGs), cooperatives, and small and medium enterprises (SMEs) using diverse methods such as Enterprise to Farmer (E2F), Farmer to Farmer (F2F), and ICT-based platforms like YouTube and Facebook.
+
+The training aims to enhance their knowledge and skills, cater to their specific needs, and promote sustainable practices throughout the value chain.
+
+
+---
+*Chunk pages 25–25*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1364 (sys=94, user=1270), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 21
+
+## Activity 2.1.3: Support financial providers to develop and promote financial products for deforestation-free value chain development
+
+This activity will integrate REDD+ into relevant rural finance markets. Investments in the AFOLU sector, such as agroforestry systems, typically have positive returns in the long-term yet there is a lack of suitable credit products. Solutions to overcome barriers in the development of investment loans that are accessible to poor and smallholder farmers include (but are not limited to):  
+(i) work with finance providers to use alternatives to traditional collateral and match smallholder cash flows with finance;  
+(ii) credit partnership models whereby the offtake and/or input provider is a partner in the flow of finance, including potentially serving to buy down risk and reduce operating costs;  
+(iii) “vendor based” models where lending goes directly to upstream suppliers and is on lend down the supply chain; and  
+(iv) more locally adapted loan products.  
+
+The project will prioritize the first, second (which may be a component of the first), and fourth solutions, based on best practices from past IFAD projects in the region. The remaining solution will emerge and be evaluated through the 4P platform.
+
+RECAF will build on the successes and lessons learnt of the microfinance services provided by the WDF, through savings and credit groups supported by the Women’s Union (WU). Since 2012, IFAD has supported the professionalization and development of WDFs in 11 provinces, including in Dak Nong, Ninh Thuan and Gia Lai, and they are still operating successfully and providing growing access to collateral-free and alternative collateral finance to women from ethnic minorities and other rural poor groups. RECAF will also collaborate with the Cooperative Development Funds (CDFs) managed by the Cooperative Alliances in Lam Dong and Dak Lak, which have recently been designed to provide bridge-finance in the growth of cooperatives before they can access commercial loans. They are extremely relevant for the development of cooperative enterprises that produce and market NWFPs and deforestation-free OCOP products.
+
+Other organizations through which long-term investment loans for mitigation and adaptation could be provided include the Farmer Development Funds of the Farmers Union (FU), and interested commercial banks such as Agribank, VBSP and Lien Viet Post Bank.
+
+## Sub-activity 2.1.3.1. Strengthen WDFs and CDFs to manage funds and develop products that support investments in deforestation-free value chains
+
+On the supply side, the staff of WDFs and CDFs will receive training to enhance their understanding of the business models and capacity of CIGs, cooperatives, and SMEs developed under Activities 2.1.1 and 2.1.2. This training will also cover associated financing opportunities, risk management strategies, and loan appraisal skills in providing collateral-free and alternative collateral finance and supporting saving and credit group mechanism to scale up the existing microfinance infrastructure (i.e., WDFs and CDFs) supported by IFAD to assist deforestation-free value chain and agroforestry development. The staff will be supported in developing appropriate financial products that facilitate investments in climate change mitigation and adaptation, specifically tailored to these models. They will actively participate in value chain linkage activities, fostering the development of credit partnership models within productive alliances and contract farming arrangements.
+
+## Sub-activity 2.1.3.2. Provide access to capital for WDFs and CDFs to more rapidly scale credit activities
+
+A study will be conducted on the operational efficiency, regulatory context, and management of the WDFs and CDFs. This study will be used to define the strategy for capitalization, regulatory transformation and leveraging of additional funds and operationalizing the activities of the WDFs and CDFs for lending to RECAF smallholders. Agribank and other commercial banks will be supported to set up loan groups in collaboration with the FU or WU acting as agent, expanding their existing pilots.
+
+## Sub-activity 2.1.3.3. Build capacity of commercial banks to develop products, partnerships and application of fintech that support investments in deforestation free value chains and advance project objectives
+
+Commercial banks will be invited to participate in the 4P platforms, supported by the State Bank of Viet Nam’s (Central Bank) requirement for 30% of bank portfolios to be dedicated to "green" lending. This requirement serves as an incentive for commercial banks to get involved in the project, as they can benefit from the derisking activities provided, such as farmer organization and training, development of financially viable business plans, integration into value chains, and investments in public infrastructure. Furthermore, support will be provided to establish value chain partnerships between these banks and value chain companies, CIGs, cooperatives, SMEs, and farmers. The aim is to develop value chain financing specifically tailored for
+
+
+---
+*Chunk pages 26–26*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1168 (sys=94, user=1074), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 22
+
+## Activity 2.2.1: Develop infrastructure for deforestation free value chains
+
+In accordance with the new ODA policy of Vietnam (Decree 114/2021/ND-CP on management and use of ODA and concessional loans of foreign donors), the allocation of IFAD loan financing will be exclusively directed towards supporting this activity. Drawing from the valuable insights gained from previous IFAD-funded operations in Viet Nam, the investments will be driven by demand and prioritization, determined through the district and commune socio-economic development planning process, as well as the participatory 4P value chain action planning.
+
+However, it is crucial that these investments adhere to a set of eligibility criteria, particularly pertaining to deforestation-free practices and their contribution to forest restoration, carbon stock enhancement, and minimizing social and environmental impacts. Furthermore, the investments must be technically feasible and incorporate viable operation and maintenance mechanisms.
+
+The selection criteria for the infrastructure investment are presented in the Annex 21 “Project Implementation Manual” (PIM), section IV, Component 2, table X. Their focus will be on targeting impoverished communities and ethnic minority groups while ensuring a positive economic return on investment. It is important to note that the consultation with ethnic minority groups will continue to be conducted through the FPIC framework during the project implementation phase (see IPP in Annex 6B). Presently, discussions between provincial governments and IFAD are in progress to identify potential infrastructure projects. These projects are likely to encompass micro-irrigation systems, organic fertilizer production facilities, value-added processing facilities, and ecotourism establishments to enhance agroforestry capacity.
+
+Furthermore, the development of operation and maintenance manuals, as well as training sessions, will be included in the investment plans. Routine and periodic maintenance resources will be provided by beneficiary groups, in addition to the annual budgets allocated by local governments. Operation and maintenance entails implementation of investments by partnered agencies, districts, and communes, as agreed upon with RECAF. Operation and maintenance groups will establish regulations for fee collection and labor mobilization for routine maintenance.
+
+Furthermore, the allocation of IFAD loan co-financing (USD 37.8 million) for this Activity will focus on investments in small-scale and micro irrigation systems ($21.8 million; a total 12,000 ha of command areas are expected to be irrigated); Small-scale irrigation reservoirs for water storage and supply for crop cultivation; Small-scale lined irrigation canals and/or piped irrigation systems (upgraded from earth irrigation canals); Small-scale irrigation weirs/dams; Irrigation pumping stations for crop cultivation. Other investments include Small-scaled rural roads (upgraded from earth roads) to production areas or linkages between collecting points/warehouses and production areas; Micro weather stations for early-warning of extreme weather conditions (draught, storm, frost…); Pest monitoring systems for agricultural production; Ecotourism infrastructures and facilities, and; Other public infrastructures for deforestation-free VC.
+
+### Sub-activity 2.2.1.1. Promote sustainable agroforestry through small-scale and micro infrastructure investments, including the development of micro irrigation systems and organic fertilizer production facilities:
+
+This will enable farmers to adopt deforestation-free practices and enhance the productivity of their agricultural lands. Additionally, it will support the conservation of natural resources and the promotion of environmentally friendly farming methods.
+
+### Sub-activity 2.2.1.2: Enhance the post-harvest facilities of selected value chains by incorporating value-added processing techniques:
+
+This will enable farmers to maximize the value of their agricultural products, reduce waste, and improve the overall quality of their goods. Moreover, the establishment of alternative business development facilities such as visitor centers and ecotourism facilities will create additional income-generating opportunities for local communities and promote sustainable tourism practices.
+
+## Activity 2.2.2: Establish and upgrade forest restoration infrastructure (IFAD Co-finance)
+
+RECAF will also invest in essential forest protection and rehabilitation infrastructure, with a focus on enhancing forest monitoring systems, establishing public nurseries for diverse tree varieties, and implementing other crucial forest protection measures. This also includes the establishment of forest monitoring stations, an early warning system for forest fire and illegal encroachment, the creation of fire breaks, and the provision of forest fire water points, among
+
+---
+
+
+---
+*Chunk pages 27–27*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1148 (sys=94, user=1054), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 23
+
+## 32 Co-investment in ecosystem services global lessons from payment and incentive schemes
+
+### Chapter 6, Piloting a carbon-PES scheme in Viet Nam—the case of Bac Kan Province  
+https://worldagroforestry.org/sites/agroforestry/files/2022-03/PES%20eBook-final.pdf  
+
+### 33 https://www.jica.go.jp/project/vietnam/037/materials/ku57pq00002hisx7-att/forest_management_en.pdf  
+
+others. The implementation of upgraded forest monitoring systems will significantly strengthen the management and monitoring of forest resources, allowing for timely alerts regarding deforestation plots, forest fires, and chainsaw activities. Additionally, these systems will facilitate accurate forest inventory assessments. Investments in public tree nurseries will play a pivotal role in ensuring the production of a wide range of tree species, which will be utilized for forest restoration efforts, the development of dense agroforestry systems, and the successful implementation of the ambitious 1 billion tree campaign.
+
+## Sub-activity 2.2.2.1. Strengthen forest monitoring and protection infrastructure by implementing comprehensive upgrades:  
+This includes enhancing surveillance systems, deploying advanced technology for early detection and warning of forest fire and illegal activities, and bolstering the capacity of forest rangers and law enforcement agencies. These infrastructure improvements will play a crucial role in safeguarding forests and ensuring their sustainable management.
+
+## Sub-activity 2.2.2.2.: Establish public nurseries dedicated to tree species cultivation, creating essential infrastructure for reforestation and afforestation initiatives:  
+These nurseries will serve as vital centers for propagating and nurturing diverse tree seedlings. By providing necessary infrastructure, such as nursery facilities and equipment, these establishments will support biodiversity conservation, ecosystem restoration, and the development of sustainable forestry practices.
+
+## Output 2.3: Collaborative forest management capacity enhanced through performance-based incentives  
+
+### Activity 2.3.1: Develop a results-based payments for ecosystem services (PES) mechanism for collaborative forest management  
+RECAF aims to enhance the Payment for Forest Ecosystem Services (PFES) system in Vietnam by addressing its current limitations. PFES, although successful in promoting forest conservation, operates more as a regulatory fee than a true market-based mechanism. RECAF aims to evolve PFES into a more voluntary, market-driven, and informational process that aligns with international frameworks like REDD+. Key improvements proposed under RECAF include piloting innovative PES schemes to promote voluntary participation, transparency, fairness, and better information flow among stakeholders. An extensive analysis of Activity 2.3.1 is available in Annex 25.
+
+#### Sub-activity 2.3.1.1. Support Provincial Forest Protection Development Funds (PFPDFs) to design and implement a mechanism for performance-based payments for carbon sequestration services:  
+Based on the national level consultation and legal frameworks built in 1.1.2.3, this activity brings piloting to the Provincial level. The mechanism will not only encompass forest areas but also extend to non-forest areas, hence referred to as PES instead of PFES. The implementation of this mechanism will involve the establishment of an Innovative PES Fund (IPF), which will operate as a sub-fund under the Provincial Forest Protection Development Funds (PFPDFs). In the first year, the project will focus on designing the scope and operational management of the IPF, as well as identifying potential long-term funding sources. Lessons and insights from successful projects like the IFAD funded 3 PAD project in Bac Kan province that piloted a carbon PES scheme 32, and the collaborative management-PFES approach in Son La province of the Sustainable Natural Resource Management Project (SNRM) funded by JICA 33 will be incorporated into the design.
+
+#### Sub-activity 2.3.1.2. Build the capacity building of the PFPDFs:  
+RECAF will assist PFPDFs in managing the IPF and transitioning from an administrative unit to a trusted fund that mobilizes funding and connects buyers and sellers of environmental services.
+
+### Activity 2.3.2: Support multi-stakeholder commune-level collaborative forest management (MCCFM)  
+RECAF will establish and support village-level MCCFM groups to develop and implement comprehensive forest management plans and effective forest monitoring systems to facilitate collaborative zoning, FLA, and SFM practices, including agroforestry, in partnership with PPCs, FMBs, CPCs and SFEs. To ensure long-term sustainability, a capacity development program will be implemented to strengthen the MCCFM support system by providing training  
+
+---  
+**Page 27**
+
+
+---
+*Chunk pages 28–28*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=961 (sys=94, user=867), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 24
+
+## Sub-activity 2.3.2.1. Facilitate a participatory land use planning and mapping process
+
+A participatory land-use planning and mapping will be conducted (possibly as part of the forestland allocation process) in each community prior to the commencement of any other project activity. FPIC will be obtained as necessary. This planning will identify forest areas for protection, degraded forest for regeneration and sustainable harvesting of NWFPs and deforested areas on which agroforestry systems can be developed. This will also generate ideas for the development of alternative income generating activities, such as possibilities to cultivate herbs or medicinal plants under forest canopy, or value addition to sustainably harvested NWFPs.
+
+## Sub-activity 2.3.2.2. Develop fully-devolved MCCFM pilots
+
+For the selected communities for MCCFM, a FLA to communities or adjustment of previous FLA will be supported following guidelines developed under Activity 1.1.2, so that the legal ownership or user right status matches the forestland management responsibility of the community. MCCFM management structures will be established and/or strengthened and the project will support the community to develop and implement a forest management plan, and the related monitoring and evaluation (M&E) plan. MCCFM management plans will include the introduction of more trees in the landscape, restoring or regenerating forest where possible, but also introducing agroforestry on encroached forestland currently under annual crop cultivation. The nurseries established under Activity 2.2.2 will be able to deliver the necessary seedlings of selected tree species. For monocrop perennial crops, in collaboration with the 4P platforms, viable options for diversification with multipurpose trees will be piloted, as well as organic management which would open the possibility of introducing beekeeping in orchards. For annual crops on agriculture land, Contour Hedgerow Technology (CHT) will be introduced with nutritious nitrogen fixing species (e.g., pigeon pea and other beans) and multipurpose trees, which will control soil erosion and improve soil moisture retention. When the IPF is set up, RECAF will also support MCCFM pilots to submit proposals for PES payments.
+
+## Sub-activity 2.3.2.3. Develop capacity of village-level MCCFM group members
+
+A training needs assessment will be conducted, based on which a capacity development programme will be designed and executed. Capacity building areas will be (i) managerial, including MCCFM group management, handling violation of forest management plan, administrative processes and accounting; and (ii) technical: on forest species, monitoring forest health, agroforestry and CHT. The capacity building programme will build on and include exchange of local knowledge among ethnic groups about the forest, NWFPs and sustainable forest management. Livelihood improvement will be supported in connection with specialty product development and access to financial services (including SCGs) under Activity 2.1.2. To avoid dependency of local community on project support for MCCFM development, the project will focus on building up community institution for self-governing. A F2F learning network will be established and maintained for learning and networking among community members to help follow up after training.
+
+## Sub-activity 2.3.2.4. Strengthen the MCCFM support system
+
+To support smooth implementation of the MCCFM activities and their institutionalization, the project will conduct a capacity development needs assessment of key government agencies, FMBs and SFEs to determine priorities for strengthening MCCFM support systems.
+
+
+---
+*Chunk pages 29–29*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1001 (sys=94, user=907), max_out=1024, ctx=8192
+---
+
+# B.4. Implementation arrangements (max. 1500 words, approximately 3 pages plus diagrams)
+
+## 54. RECAF implementation arrangements follow the Government Decree 114/2021 on ODA management in Viet Nam and the proven structure used in all IFAD-funded projects in the country. It takes on board a number of additional functions in order to respond to the Government, IFAD and GCF policies, including risk management, policy engagement, facilitating private sector linkages and partnerships, M&E and knowledge management. A Project Implementation Manual (PIM) describes detailed coordination and implementation arrangements under the project (Figure 4).
+
+## 55. Project coordination and lead Implementing agencies. The Government of Viet Nam has designated the DOF under MARD as the Project Coordination Agency, and the Province People Committees (PPCs) of Gia Lai, Dak Lak, Dak Nong, Lam Dong and Ninh Thuan provinces, respectively, as RECAF Lead Project Implementing Agencies. The DOF and PPCs are accountable for the project execution. The PPC will establish a Project Steering Committee (PSC) in each province which together with DOF is mandated to lead the project implementation and ensure coordination and integration of the project with all the national target programmes (NTPs) and development partner-funded projects (Table 1).
+
+## 56. Each provincial PSC will be led by the PPC Chairperson or the Deputy Chairperson and will be composed of provincial line agencies, PCEM, FU, WU/WDF and Youth Union (YU), district level project steering committees, development partners and private sector entities which are party to the RECAF. The PSC provides the strategic direction to the implementation of RECAF, oversights project planning, financing and procurement processes, mobilizes adequate and timely finance for the AWPB, reviews the progress and reporting on results. The PSC will also hold joint meetings for the NTP-EMD, NTP-NRD and NTP-SPR and the development partner-funded projects in the provinces. In addition, as per standard practice in project implementation, IFAD provides an advisory role to the PSC. The TORs of the PSC are to be included in the PIM at project start-up. IFAD provides no objection to the PIM (as well as to any amendments thereafter). To note also that one of the PSC’s main roles is to validate the Project’s annual work plans and budget (AWPBs). IFAD provides final no objection to the AWPBs, after it has been validated by PSC.
+
+## 57. Decisions related to the project implementation are discussed collectively by the PSC and formalized through PSC resolutions. PSC decisions are informed by reports and recommendations from the Project Management Unit (PMU). The PSC may convene meetings to analyze the report's contents, discuss recommendations, develop interdisciplinary solutions, and make related decisions. These meetings aim to address project challenges and consider recommendations from the project, and relevant policies and regulations of both Viet Nam and the financiers (IFAD and GCF). In cases where convening a meeting is not feasible, the PSC leadership will circulate documents to member agencies to gather their opinions and votes. The feedback and votes are then compiled, and a decision is made accordingly. Thus, the PSC's decision-making process is informed and follows a bottom-up approach, incorporating opinions and comments from all PSC members. The provincial PPC (EE) Chairperson or Deputy Chairperson chairs the PSCs, and therefore has the final approval authority over any decision adopted by the provincial PPCs.
+
+## 58. Project Management Unit (PMU) and Sub-PMUs. A PMU will be established at national level to assist DoF in the project coordination and day-to-day implementation. The PMU will mobilize technical support from DoF and the
+
+Figure 4: Project Implementation Arrangements
+
+
+---
+*Chunk pages 30–30*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1407 (sys=94, user=1313), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 26
+
+## Other departments under MARD and line agencies under the PPC and its think-tanks such as the Institute of Policy and Strategy for Agriculture and Rural Development (IPSARD), National Centre of Agriculture Extension (NCEA), National University of Forestry in Hanoi and the Highland’s University of Agroforestry in Buon Me Thuot to technically support project implementation.
+
+The PMU will also mobilize external service providers for support on specialized technical areas, such as possibly IDH on the jurisdictional approach to deforestation-free supply chain management, SNV on rural finance, and ICRAF on agroforestry, MCCFM and PFES.
+
+## Five Sub-PMUs will be established at provincial level and report directly to the PPC in each province. The Sub-PMUs will be led by a full-time Provincial Project Director appointed from the leadership at the department level.
+
+Each Sub-PMU will be composed of three technical sections:  
+(i) Strategic Management including dedicated staff for planning and monitoring/evaluation the project activities and the social (gender, youth, ethnic minorities) and environmental safeguards and REDD+ and climate adaptation activities,  
+(ii) Infrastructure Management including a Non-deforestation Engineer to ensure adherence to social and environmental safeguards, and  
+(iii) Financial Management.
+
+PPCs represented by provincial Sub-PMUs will sign contracts for infrastructure projects and other activities that will be implemented at the commune level. Therefore, PPCs will not enter into direct contracting with project beneficiaries. Instead, PPCs will sign contracts with service providers to benefit communes (project beneficiaries).
+
+## The Sub-PMUs will be responsible for the day-to-day management of the RECAF implementation at the province level.
+
+Sub-PMUs will function as the secretary for the PSC activities and meetings. The key tasks of the Sub-PMU are to:  
+(i) ensure the coherence of the implementation strategy towards the expected outputs, outcomes and impacts;  
+(ii) prepare the project Annual Work Plan and Budget (AWPB) and procurement plan;  
+(iii) mobilize and manage project finance from the various sources;  
+(iv) ensure adherence to IFAD procurement and national procedures;  
+(v) set up of the Management Information System, baseline surveys, M&E and reporting structures;  
+(vi) set up a co-ordination structure and strategy with local co-implementing agencies (DARD, DONRE, DPI, DOLISA, DOIT and DPCs, CPCs, WU, YU, FU and PCEM), and the district and commune level agencies;  
+(vii) facilitate the networking with banking sector, private sector entities, 4P platforms;  
+(viii) set up an effective knowledge management system;  
+(ix) identify relevant policy topics and support the PSC on policy engagement activities; and  
+(x) ensure environmental and social safeguards requirements are met for project activities implementation based on the national regulations on natural resources and environmental management, and the IFAD’s SECAP recommendations.
+
+## The proposed Sub-PMU structure builds on the foundation provided under the previous IFAD-funded projects in the highlands (e.g., the project for the 3EM in Dak Nong and TNSP in Gia Lai and Ninh Thuan). These have demonstrated a solid track record of delivery of even complex tasks across province, district and commune structures.
+
+The compact management unit helps the province save operating costs while ensuring that project activities will be properly mainstreamed into the provincial Socio-Economic Development Plans and National Target Programmes. The IFAD country team will organize regular implementation support and supervision missions and provide client-based training programmes for capacity development of the Sub-PMUs.
+
+In addition, it is important to mention that infrastructure investments under Activities 2.2.1 and 2.2.2 are “public” infrastructures, and their implementation will be managed by provincial Sub-PMUs. The provincial Sub-PMUs will use IFAD’s loan funds to implement the relevant infrastructure investments (Figure 4).
+
+## District and commune level coordination.
+
+The District and Commune Peoples’ Committees (DPCs and CPCs) will coordinate project implementation while the responsibility and accountability for execution of project activities lies with MARD and PPC, as EE's. Thus, the line agencies and mass organizations (i.e., FU, WU, YU) will be responsible for execution of project activities.
+
+The PMU and Sub-PMUs staff and hired technical assistance services will provide technical backstopping and support to RECAF implementation at the district and commune level.
+
+## The project coordination and implementation management are summarized in Figure 4.
+
+Overall, RECAF coordination and implementation arrangements are fully integrated into existing institutional setup in Viet Nam to ensure coherence to the national ODA policies, direct link to higher level policy makers, sustainability, local capacity building and reduced management cost.
+
+## Human resources are key for the successful implementation of RECAF.
+
+Key positions
+
+
+---
+*Chunk pages 31–31*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1311 (sys=94, user=1217), max_out=1024, ctx=8192
+---
+
+# B.5. Justification for GCF funding request (max. 1000 words, approximately 2 pages)
+
+## 69. Viet Nam’s updated NDC of 2022 contains an unconditional emission reduction contribution in LULUCF sectors of 32.5 MtCO2eq by 2030. The conditional emission reductions for LULUCF are an additional 14.1 MtCO2eq by 2030.
+
+RECAF seeks to contribute almost half (6.68 MtCO2- eq) of the conditional LULUCF emission reductions by 2030.  
+As a key national -level plan to achieve the LULUCF portion of the NDC, RECAF aims to implement the National REDD+ Action Plan of 2017 in the Central Highlands provinces of Gia Lai, Dak Lak, Dak Nong, and Lam Dong, and the province of Ninh Thuan in the South- Central Coast. These areas experienced considerable forest loss and degradation over past decades, and despite the logging ban of 2016, challenges persist in realizing and stabilizing these GHG stores. Provincial and district level implementation is crucial, forging cross -sectoral commitments, building deforestation-free agricultural production and forest rehabilitation.
+
+## 70. As stipulated in the UNFCCC COP decision 9/CP.19, the GCF is one of the main sources through which financing for REDD+ activities are expected to be channeled for Viet Nam and other developing countries. The GCF investment will be a critical complement to domestic financing allocated for REDD+ and to support implementation of key policy reforms and targeted investments that will not otherwise occur.
+
+The GCF investment will be a needed catalyst for institutionalizing much needed inter -sectoral and multi -stakeholder approaches to reform forest management and conservation, including the stimulation of climate smart financial products, and to lay out the fundamentals of an enabling environment for NRAP implementation as presented in this proposal.
+
+## 71. GCF grant financing would be deployed in the poorer, forested areas of the country where institutions are weakest, local ethnic minority communities lack access to public and private funds, and productive infrastructure deficits impede the inclusion of ethnic minority groups and other smallholders in poverty -reducing agricultural and forestry
+
+## Table 3: EE Arrangements and Funding Sources 
+
+| Output EE | Funding source |
+|-----------|----------------|
+| 1.1 PPC   | GCF            |
+| 1.2 MARD  | GCF            |
+| 2.1 PPC   | GCF            |
+| 2.2 PPC   | IFAD and Provincial Governments |
+| 2.3 PPC   | GCF            |
+
+## Project management 
+
+MARD & PPCs National and provincial governments
+
+## 65. Legal arrangements: IFAD will enter into a Funded Activity Agreement with the GCF (FAA). IFAD will also enter into Subsidiary Agreements, with the 6 Executing Entities, namely (i) the Government of Viet Nam (the “GoV” or the "Recipient”) as represented by the Ministry of Agriculture and Rural Development (the “MARD”); (ii) Provincial People’s Committee (PPC) of Dak Lak, (iii) PPC of Dak Nong, (iv) PPC of Gia Lai, (v) PPC of Lam Dong, and (vi) PPC of Ninh Thuan. Each Subsidiary Agreement will include the terms and conditions for the GCF grant and the IFAD loan financing, as well as the relevant Governmental co-financing. Co-financiers for the project are IFAD and the Government of Viet Nam; the latter cofinancing includes a sum of co- financing from MARD and the 5 PPCs. The Subsidiary Agreements being therefore also Co-financing agreements.
+
+## 66. Roles and responsibilities of each Executing Entity can be found in Annex 24 on EE breakdown of execution responsibility per activity and Annex 25 on Detailed project description.
+
+## 67. Fund flow: The grants grant from GCF to IFAD, and from IFAD to the 6 EEs will be drafted in accordance with Annex 4 and subject to disbursement requests from IFAD to GCF (as per disbursement tranches in the FAA) and from EEs to IFAD (as per disbursement requests, based on the use of 70% of the already disbursed amount). Fund flow for the IFAD loan from IFAD to the EEs, and payment reflows back to IFAD will be based on disbursement requests and financial reports considering 70% of the already disbursement amounts.
+
+## 68. Collaboration with development partners will be sought to develop synergies, exchange lessons, and avoid duplication of efforts, as mentioned earlier in section B.1
+
+
+---
+*Chunk pages 32–32*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1355 (sys=94, user=1261), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 28
+
+## Supply Chain and Sustainable Production Systems
+
+GCF will finance the technical assistance and capacity building required to support the successful implementation of reforms; for mainstreaming REDD+ into SEDP processes; for the development, systematization and validation of agro-ecological specific agroforestry practices to be extended to poor small producers; the development of local niche products that add value to NWFP and provide incentives to conserve forests; and increase the capacity of financial service providers to design and offer long term credit products and leverage additional financing needed for investments in agroforestry systems.
+
+## Mainstreaming REDD+ into Policy and Investment Planning
+
+72. GCF financing will also leverage government policy and public investment planning mechanisms to fully mainstream REDD+ relevant policies and leverage critical public infrastructure investments and co-financing to achieve reductions in emissions from deforestation and degradation associated with the expansion of agricultural export commodity production and weak conservation and protection of forest resources. GCF resources, in association with deforestation-free value chain and forest restoration infrastructure investments financed by IFAD, would then jointly create the opportunity to leverage private sector financing from entrepreneurs, private sector entities, and financial institutions, as one of the main barriers identified is weak participation of the private sector in achieving national climate change mitigation and adaptation priorities, by forging strong public-private-producer partnerships for achieving deforestation-free agricultural supply chains. This, in turn, would open doors to increased investments by international organizations and foster new partnerships, whose collective impact will be much more significant than if they were operating separately. RECAF will influence the current VNFF's PFES to direct it towards more collaborative forest management, given that another barrier is the inequitable distribution of costs and benefits of forests/forestland protection and conservation, which can be addressed through adoption of performance based PFES/PES mechanisms for carbon stock enhancement and deforestation-free supply chains.
+
+## Market Failure and Transition Challenges
+
+73. There is a clear market failure that provides a barrier for the transition from monocultures (annual and perennial crops as well as forestry plantations) to dense agroforestry systems. While agroforestry systems are better adapted to climate change, because of their long cycle, they are not well researched in terms of optimal species combinations. Furthermore, farmers are hesitant to plant new species for which there are no known buyers, but these value chains do not have a chance of developing until a first minimum volume of production is available. As these agroforestry systems need investments with an extended payback horizon, farmers need corresponding long-term financing to be able to finance these investments, whereas financial service providers typically are hesitant not only due to perceived credit risk (exacerbated by the loan term) but are also unable in some cases to provide long-term loans to smallholder farmers, as a result of corresponding capital mismatch. The WDFs and CDFs which are already working with the project targeting groups of ethnic minorities, smallholder farmers, women and rural SMEs have low capitalization and would not be able to co-finance the project activities without project catalyzing interventions. In addition, financial service providers lack knowledge about the cash flow of these multiple cropping systems and consequently do not fully appreciate the risk mitigation these systems provide in terms of addressing climate change and market risks, nor are they able to structure the loans accordingly, including integrating value chain actors to reduce risks and costs. Finally, IFAD has considered all possible financing options for RECAF. IFAD's internal funds allocation mechanism does not permit the allocation of grants or other highly concessional loans to Vietnam due to its per capita income level.
+
+## Kickstarting Transition to Deforestation-Free Agroforestry Systems
+
+74. To kick-start the transition to deforestation-free agroforestry systems, selected financial service providers will require grant financing for research, capacity building, and facilitation to establish value chain linkages and productive alliances. The successful introduction of macadamia nuts into coffee plantations in Lam Dong demonstrates the feasibility of achieving similar outcomes in the targeted provinces of the RECAF project. RECAF will enhance the capacity of relevant institutions and commercial banks in understanding sustainable farming systems, business models, and markets. This will enable them to design suitable loan products and offer financial literacy and business support services to farmers investing in these systems, thereby mitigating risks for financial service providers (FSPs) involved.
+
+## Financing Challenges for Low-Middle-Income Countries
+
+75. Viet Nam, as a low-middle-income country (LMIC), faces challenges in accessing concessional finance due to its status. This has prompted the country to explore alternative sources of capital. At the same time, the decentralized governance model in place assigns the responsibility of servicing external debt obligations to provinces. The Central Government has implemented new ODA policies that impose strict limits on loan investments. These measures are aimed at managing the rapidly increasing debt-to-GDP ratio observed in the first half of this decade and relieving the
+
+
+---
+*Chunk pages 33–33*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1412 (sys=94, user=1318), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 29
+
+## 34 The overall green credit from Vietnam Bank for Agriculture and Rural Development (VBARD): VND 12,000 billion for low-carbon emission agriculture investment and green energy; Bank for Investment and Development of Vietnam (BIDV): VND 20,000 billion for clean and safe agriculture aiming at international standards such as GLOBAL GAP, ISO, Rainforest, etc., and Lien Viet Post Bank: VND 9,600 billion for low carbon emission, climate change adaptation agriculture, and green energy.
+
+emissions from the AFOLU sector, contribute to climate-resilient sustainable development in forest-dependent communities, and fulfill its NDC commitments.
+
+## 76. RECAF recognizes the long-term financial and economic viability of transitioning to deforestation-free agroforestry systems and accessing REDD+ RBPs, especially with the project intervention. However, certain barriers to long-term investment and private sector engagement in non-bankable areas (i.e., enabling conditions under Outcome 1 and various capacity development activities under Outcome 2) need to be addressed. Furthermore, the Government's current ODA policies hinder the project's feasibility at a lower level of concessionality. To overcome these obstacles and drive transformative change, the project requires support from the GCF grant to address initial risks, mitigate information asymmetry among financial institutions, tackle complex policy and institutional challenges related to land tenure, and resolve implementation challenges at the sub-national level for REDD+. The GCF grant plays a crucial role in overcoming these barriers and ensuring successful project implementation. IFAD’s loan investment for deforestation-free value chain and MCCFM infrastructure alone without supporting necessary policies, institutional capacities, stakeholder coordination, and beneficiaries' capacity building would be insufficient to achieve the required systemic, institutional, and individual-level transformation. Thus, adopting a blended finance model becomes imperative for RECAF. This model supports and increases the success rate of early adopters of deforestation-free agroforestry systems, making the project more attractive to private sector investors in the long run. The grant funding acts as a catalyst, triggering a paradigm shift in sustainable agroforestry systems.
+
+## 77. From this perspective, the GCF grant emerges as the optimal choice, facilitating technology transfer, robust capacity-building, and the realization of significant environmental and social benefits. Capacity development in business planning and revenue management of beneficiaries will ensure that revenues from deforestation-free value chain and MCCFM activities unlock private and public investments, enabling the replication and scaling up of a low-emission and sustainable AFOLU sector in the post-project environment.
+
+## 78. In addition to the GCF grant, the project aims to unlock other sources of funding:
+
+- A total of USD 32.5 million co-financing from IFAD (scheduled for approval at the September 2024 IFAD Executive Board), both GCF and IFAD financing are fully blended into one project design, and the planned simultaneous approvals (GCF financing targeting the GCF October Board) will allow smooth post approval processes, and the implementation of the two financing streams as one blended project.
+- It will unlock USD 28.6 million in Government in-kind and grant co-financing. The in-kind Government contribution will cover salary, office, and equipment, and the grants contributions will cover for consultancies, capacity building, design, and O&M of infrastructure. Government co-financing covers the direct costs of various consultancies and capacity building activities under Output 1.1, 2.1, and 2.3; and the design, supervision, and capacity building on O&M for infrastructure works under Output 2.2. In addition, the GoV, through RECAF, will bring in co-financing resources and cover additional existing costs through the socio-economic development planning (SEDP) mechanism (Activity 1.2.1) and 4P platform (Activity 1.2.3), including the national target programs (NTPs), the One Commune One Product (OCOP) program, and support other provincial funds.
+- Furthermore, USD 6.5 million is expected to be unlocked from project beneficiaries as parallel financing, mainly through infrastructure investments and agroforestry pilots, while about USD 7 million will come from direct private sector co-investment also as expected parallel financing. It should be noted that the volume of private finance is important to RECAF as private investments are long-term and involve many smallholders. One of the critical barriers to long-term credit for smallholder investment is the mismatch between farmers' cash flows and the credit products available. For this reason, RECAF has been designed to improve immediate cash flows at the farm level through intercropping as part of the agroforestry model. Nonetheless, especially initially, beneficiary cash flows will not be sufficient, and external finance will be required. Since the FP was first developed,
+
+
+---
+*Chunk pages 34–34*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1315 (sys=94, user=1221), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 30
+
+## B.6. Exit strategy (max. 500 words, approximately 1 page)
+
+79. RECAF’s exit strategy is based on the following pillars: (i) building of an enabling policy and regulatory environment; (ii) strengthening of rural institutions, (iii) establishment of coordination mechanisms and partnerships/alliances; (iv) knowledge sharing and capacity building; and (v) long-term land stewardship financing and building the financial feasibility and technical ability of rural producers to pursue deforestation-free commodity production. Also, engagement on a market basis with financial institutions for the provision of credit for investment in both fixed assets (primarily trees) and inputs for smallholders is a critical element of the exit strategy, particularly the recognition by the FIs that smallholders and their deforestation-free value chains make good business sense, are profitable, and have reduced risks of future revenue dips. In addition, carbon credit finance remains an important, and hopefully growing, element for finance in the future. If possible, RECAF will work to convert carbon finance into consumer finance products.
+
+Together, these pillars will ensure that the transition to a deforestation-free rural economic development pathway will continue after project closure.
+
+80. (i) Enabling policy and regulatory framework: At the provincial level, building an enabling environment will start with integration of the NRAP into primary strategic provincial plans, which will ensure that provincial governments have reserved budgets to implement specific activities, and that NRAP objectives are mainstreamed in the overall social-economic and forestry development activities. At the national level, policy engagement on community forest management and payments for ecosystem services will result in national guidelines that will facilitate continuation and expansion of the pilots established in the project provinces and expansion to other provinces in the country.
+
+81. (ii) Rural institutions: At community level, RECAF will establish or strengthen various local and grassroots rural institutions building on the existing institutions, with particular attention to the governance systems of the concerned ethnic minorities, which will empower local communities to continue to invest in trees and climate change adaptation. After the initial participatory land use planning and mapping process, village-level MCCFM group management structures will be established in priority sites based on consultation with representatives of ethnic minorities and their traditional governance structures. They will sign agreements with forest protection departments for the long-term management of forestland.
+
+In the same and other villages, commodity or product-oriented CIGs will be established and existing cooperatives will be strengthened and trained on group and business management. In case CIGs use collective/common land for their income generating activities, they will need to agree on the use of land and benefits for the communities through decision making of pertinent ethnic minority governance systems.
+
+After project closure, they will be able to represent the small producers in coordination mechanisms with government and to develop 4P arrangements with private sector entities and financial service providers and continue to grow their deforestation-free businesses, providing income to their members. Financial services providers’ capacity will be strengthened to provide financial products that will continue to facilitate investments in climate change adaptation and mitigation.
+
+Specifically, the CDFs will continue to finance cooperatives producing specialty products, and WU/WDF will also support CIGs in MCCFM in accessing finance for investments.
+
+82. (iii) Coordination mechanisms: Collaboration during the project implementation through the 4P platforms at provincial level with private sector engagement will continue to facilitate interdepartmental coordination after project closure. Specific exit strategy will be designed with 4P partners at the start up. Likewise, personal relationships and trust developed between government officials, cooperatives and companies, and understanding of each other’s way of working, will facilitate coordination also into the future. These arrangements have been proven during project design by the ease of coordination between government, communities and collectives, and companies which had already worked together in previous value chain development projects.
+
+The commodity or products 4P platforms at district and commune level will result in value chain action plans which will be updated towards the end of the project for continued action after project closure. The project will also facilitate agreements between farmers, CIGs/cooperatives and companies, for longer term commercial partnerships that will facilitate investments in trees becoming profitable only in the long-term. As much as possible, such commercial collaboration and partnerships shall also consolidate an exit strategy with minimal technical guidance required post project.
+
+83. (iv) Knowledge sharing and capacity building: RECAF will generate and share knowledge on several strategic technical areas that will be a basis for continued action after project closure as knowledge will be uploaded in permanent websites owned by sustainable relevant institutions. Baseline studies on drivers of deforestation and on adequate PFES rates will not only inform immediate project activities, but will also generate insights that will still be relevant after project closure. Research and pilot sites for agroforestry systems will generate knowledge about the most viable tree combinations for specific agro-ecological zones and develop replication guidelines. Lessons from
+
+---
+
+
+---
+*Chunk pages 35–35*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=899 (sys=94, user=805), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 31
+
+## Project Pilots on Community Forest Management and PFES/PES
+
+The project pilots on community forest management and PFES/PES and bankable business models will be compiled and disseminated to professionals, informing their future work. The project will also implement large training programmes, increasing the knowledge and skills of farmers, to use climate, weather and pest information, to practice agroforestry and other good agricultural practices that reduce emissions and adapt to climate change and to increase their financial skills.
+
+## Long-Term Land Stewardship Financing
+
+(v) Long-term land stewardship financing and building the financial feasibility and technical ability of rural producers to pursue deforestation-free commodity production: As mentioned above, the PFES/PES redesign to enable this already-existing PES mechanism to reward environmental stewardship would deliver on a long-term finance need, and help drive more benefits to local communities and forest users. Such performance-based financing also provides reliable and regular cash flows, which contribute to communities’ resilience to shocks and may stimulate or facilitate access to finance for further investments, starting a virtuous cycle.
+
+## Infrastructure Investments for Deforestation-Free Value Chain Development
+
+Furthermore, IFAD's investment in loans for infrastructure aimed at supporting deforestation-free value chain development and forest protection and restoration (Output 2.2) will strengthen these pillars by providing beneficiaries with access to essential technologies and facilities. Increasing tree cover on coffee farms, diversifying crops and related income streams (and the timing of harvest/payment), will bring increased agroecological and financial resilience to farmers.
+
+The agroforestry intercropping business models show it is economically feasible for farmers to diversify with fruit, nut or multi-purpose trees on their coffee farms, without suffering large impacts in coffee yields over time, while simultaneously diversifying and increasing their income. The priority is to introduce fruit, nut or multi-purpose forest trees to increase and diversify smallholder livelihoods, reduce exposure to commodity price fluctuation, improve farming practices, reduce environmental impact of farming practices, and provide protection from future climate-driven impacts.
+
+To support deforestation-free value chains, the infrastructure investments encompass various components, including micro-irrigation systems, organic fertilizer production facilities, value-added processing facilities, and agroforestry-focused ecotourism establishments. Additionally, RECAF invests in critical forest protection infrastructure, with a specific emphasis on enhancing monitoring systems and establishing public nurseries. This infrastructure is essential for effective forest management, early detection of illegal activities, and the conservation and restoration of diverse tree varieties.
+
+## Exit Strategy and Sustainability
+
+To ensure the continuity of infrastructure operations and maintenance beyond the project's closure, an exit strategy is implemented. Beneficiaries receive capacity training in areas such as business planning and revenue management. This equips them with the skills needed to generate sufficient revenue from infrastructure facilities, such as value-added processing and tourism facilities. The generated funds are then utilized for ongoing maintenance, upgrades, and potential expansion, enabling the sustainability of the infrastructure investments.
+
+By incorporating a robust exit strategy and providing capacity training, the project aims to foster self-sufficiency among beneficiaries, ensuring the long-term viability and impact of the infrastructure investments in promoting deforestation-free practices, forest protection, and sustainable value chain development.
+
+## Consolidation of Exit Strategy
+
+To further consolidate such exit strategy, as per IFAD guidelines, a comprehensive exit and sustainability strategy will be formulated at start up with implementing partners. Its implementation will be reviewed and rated during each IFAD supervision mission. Key exit commitments and handover plans will be ensured through dedicated agreements signed before project closure.
+
+
+---
+*Chunk pages 36–36*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=732 (sys=94, user=638), max_out=1024, ctx=8192
+---
+
+# C. FINANCING INFORMATION  
+
+## C.1. Total financing  
+
+### (a) Requested GCF funding  
+
+| Component | Amount (USD) | Currency | Tenor | Grace period | Pricing |
+|-----------|--------------|----------|-------|--------------|---------|
+| (i) Senior loans | Enter amount | Enter years | Enter years | Enter % |  |
+| (ii) Subordinated loans | Enter amount | Enter years | Enter years | Enter % |  |
+| (iii) Equity | Enter amount |   |   | Enter % equity return |  |
+| (iv) Guarantees | Enter amount | Enter years |   |   |  |
+| (v) Reimbursable grants | Enter amount |   |   |   |  |
+| (vi) Grants | 35 |   |   |   |  |
+| (vii) Results-based payments | Enter amount |   |   |   |  |
+
+### Total amount:  
+35 million USD ($)  
+
+### GCF financial instrument:  
+Amount Tenor Grace period Pricing  
+(i) Senior loans: Enter amount, Enter years, Enter years, Enter %  
+(ii) Subordinated loans: Enter amount, Enter years, Enter years, Enter %  
+(iii) Equity: Enter amount, Enter % equity return  
+(iv) Guarantees: Enter amount, Enter years,    
+(v) Reimbursable grants: Enter amount,    
+(vi) Grants: 35  
+(vii) Results-based payments: Enter amount  
+
+### (b) Co-financing information  
+
+| Component | Amount (USD) | Currency | Tenor & grace | Pricing | Seniority |
+|-----------|--------------|----------|---------------|---------|-----------|
+| IFAD Senior Loans | 32.434 | Options | 25 years | 5 years | Variable% pari passu |
+| GoV In kind | 28.642 | Options | Enter years | Enter years | Enter% Options |
+| Click here to enter text | Options | Enter amount | Options | Enter years | Enter years |
+| Enter text | Options | Enter amount | Options | Enter years | Enter years |
+| Enter text | Options | Enter amount | Options | Enter years | Enter years |
+
+### Total amount:  
+61.076 million USD ($)  
+
+### Name of institution:  
+Financial instrument Amount Currency Tenor & grace Pricing Seniority  
+
+## C.2. Financing by component  
+
+| Component | Output Indicative cost USD | GCF financing | Co-financing | Amount | Financial Instrument | Amount | Financial Instrument | Name of Institutions |
+|-----------|----------------------------|---------------|--------------|--------|----------------------|--------|----------------------|----------------------|
+| Outcome 1 | Outputs 1.1. and 1.2 | 15,423,426 | 14,941,356 | Grant | 482,070 | Public budget* | GoV |  |
+
+### Notes:  
+It is expected that USD 35 million GCF grant financing, together with USD 32.434 million IFAD loan, and USD 28.642 million Government in-kind and in-cash co-financing, will unlock USD 6.452 million from project beneficiaries, mainly through infrastructure investments (2.2) and agroforestry investments (2.1 and 2.3) and about 7 million from direct private sector co-investment in activities initiated by the 4P platforms and SMEs. Project beneficiaries and private sector partners will contribute with parallel financing to activities in which they participate, for an estimated total amount of USD 13.452 million (UDS 6.452 million + USD 7 million).  
+
+## C.3. Other financing arrangements and contributions  
+
+(max. 250 words, approximately 0.5 page)  
+
+---  
+[Page 36]
+
+
+---
+*Chunk pages 37–37*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=958 (sys=94, user=864), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 33
+
+## Outcome 2
+
+### Outputs  
+2.1, 2.2, and 2.3  
+
+- **75,393,414**  
+- **18,575,844** Grant  
+- **24,383,570** Public budget*  
+- **GoV**  
+- **32,434,000** Loan IFAD  
+- **Project Management Cost (PMC)**  
+- **PMC**  
+- **5,259,160**  
+- **1,482,800** Grant  
+- **3,776,360** Public budget*  
+- **GoV**
+
+### Indicative total cost (USD)  
+- **96,076,000**  
+- **35,000,000**  
+- **61,076,000**  
+  - Of which:  
+    - **28.642,000 USD** Gov co-financing  
+    - **32,434,000** IFAD co-financing  
+
+* in-kind  
+
+### More than 50% of the project cost will be allocated for activities that will directly benefit agriculture and forest-dependent people, particularly ethnic minorities and women (estimated to be 420,000 direct beneficiaries), the rest of the activities will indirectly benefit project beneficiaries ( estimated to be 1,000,000 indirect beneficiaries) living in and around the target provinces, primarily through peer-to-peer knowledge exchange and system-wide improvements in value chains and policy and institutional environments.
+
+### An assumption is that RECAF will attract private sector partners that are interested to invest in deforestation-free supply chains.
+
+### Both will be contributing to Outcome 2.  
+
+### Finally, it is also expected that additional resources will be leveraged as REDD+ RBPs from different sources, including the FCPF or the LEAF coalition. For instance, in the letter of intent signed between Viet Nam and the LEAF coalition, the expected volumes of ERs will be **5,570,282 tCO₂-eq** for the period 2022–26.
+
+### Meetings were conducted with the Ministry of Finance (MoF) and VDB to discuss the potential of utilizing a GCF loan through IFAD as the Accredited Entity (AE) for low-interest wholesale lending aimed at promoting green credit products. However, the MoF did not favored developing a GCF loan component into RECAF. Additionally, the VDB showed limited interest in acting as an Executing Entity (EE) under RECAF.
+
+### While international pressure for private sector action to halt deforestation is certainly increasing, and companies selling into certain markets will need to demonstrate that their products have not been obtained through deforestation (e.g., under EU FLEGT and EUDR), other companies will not be interested. But if REDD+ is effectively mainstreamed in provincial and national AFOLU policies, all companies in Viet Nam will be subject to policies that incentivize them to ensure they do not contribute to deforestation. In addition, all companies will be interested in increasing their resilience to climate change, and RECAF activities will be able to assist them with this and attract their participation.
+
+### That may have to be updated, depending on the national regulations which evolve periodically, and also to ensure consistency with future decisions from the GCF Board related to treatment of ERs generated thanks to GCF investment and REDD+ RBP  
+
+### https://live-leaf-coalition.pantheonsite.io/wp-content/uploads/2021/12/Vietnam_LEAF-Proposal.pdf  
+
+## Figure 5 Diagram Illustrating Flow of Expected Investments and REDD+ Result Based Payments to Beneficiaries
+
+### REDD+ Result Base payments  
+### Green/climate Investments in AFOLU sector  
+
+#### Public sector and gvt contribution  
+#### National REDD+ Strategy / NDC  
+
+#### RECAF  
+Will facilitate, collaborate, leverage through 4Ps platforms  
+
+#### Environmental Protection Fund  
+Project beneficiaries: CIGS, Cooperative, SMES, private sector, villages and communities  
+
+---
+
+
+---
+*Chunk pages 38–38*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1050 (sys=94, user=956), max_out=1024, ctx=8192
+---
+
+# C.3 Capacity building and technology development/transfer (max. 250 words, approximately 0.5 page)
+
+## C.3.1 Does GCF funding finance capacity building activities?  
+Yes ☒    No ☐  
+
+## C.3.2 Does GCF funding finance technology development/transfer?  
+Yes ☒    No ☐  
+
+91. RECAF will mobilize financial resources from GCF, IFAD, Government, private sector entities, the financial sector and other funds (e.g., LEAF, DFCD), and beneficiaries for investing in capacity building and technology development/transfer. GCF funding for capacity building and technology will be approximately 60% of the total GCF contribution to the project.
+
+92. For enabling environment (Outcome 1), RECAF will support provincial governments to mainstream the NRAP in its social and economic development plans and investments. The project will set up multisector 4P platforms to coordinate REDD+ implementation and identify options for deforestation-free value chain development. Research, training and knowledge sharing will build awareness, understanding and capacity of public and private stakeholders on climate change mitigation and adaptation, drivers of deforestation, and REDD+ for proper planning. At national level, capacity building will be provided to support MARD to upgrade its REDD+ monitoring and information system in order to generate the required reports for results-based payment from different sources of RBP, including LEAF, FCPF and potentially others.
+
+93. For deforestation-free and climate resilient rural economic development (Outcome 2), value chain specific 4P platforms at district level will develop and implement value chain action plans with the objective to transform these value chains deforestation-free, enhance carbon stocks and adapt to climate change, while ensuring a fair income for participating smallholder farmers, ethnic minorities and other small producers. Capacity building will ensure that farmers from both Kinh and ethnic minority groups, CI Gs, cooperatives and SMEs have the skills to participate in 4Ps, can implement sustainable practices, and are able to access green credit products and invest in climate change mitigation and adaptation and in alternative livelihood activities.
+
+94. Under the infrastructure investments, technology investment/transfer will be promoted including investments in small local stations for the monitoring of weather, pest incidence and other environmental parameters enabling farmers to better plan and manage their farms and react timely to weather events. GCF funds will be used to provide capacity building to analyze and use these data. Investments in public facilities for ecotourism will facilitate developing participatory ecotourism activities linked to agro forestry and specialty product development and/or as part of community forest management. The project will also invest in forest protection and rehabilitation infrastructure, including in forest monitoring stations and public tree nurseries to lower cost and increase quality of seedlings required for afforestation and agro-forestry activities, paying specific attention to indigenous and neglected species, crop wild relative etc. to contribute to biodiverse afforestation and genetic resource conservation. Where appropriate, digital and green/renewable/recycle technology will be supported.
+
+95. Finally, capacity building will be provided for the participatory land use planning and mapping process, which will be conducted in all communities prior to starting any project activities. This will provide a community landscape management plan that will inform areas for agroforestry development, identify options for specialty product development, infrastructure needs, and options for PFES/PES and MCCFM. Capacity building will also be provided to subsequently implement these PES mechanisms and MCCFM plans.  
+(page 34)
+
+
+---
+*Chunk pages 39–39*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1321 (sys=94, user=1227), max_out=1024, ctx=8192
+---
+
+# D.1. Impact potential (max. 500 words, approximately 1 page)
+
+## D.1.1. Mitigation
+
+96. As per the EX-ACT analysis, the following mitigation impact is expected:  
+The provisional total carbon balance for the RECAF project is 6.68 Mt CO₂-eq over 12 years (6 years of implementation and 6 years of capitalization) for a total area under analysis of 144,805 hectares. In specific, the sequestration through land use changes (afforestation and other land use change) is –293,120 tCO₂-eq; the carbon sequestration potential from Agriculture (Perennial) with -2,409,108 tCO₂-eq; and Degradation and Management (Forest degradation) with -4,002,980 tCO₂-eq; the project is a source of emissions in Inputs and Investments of +32,982 tCO₂-eq (see the extensive analysis in Annex 22).
+
+97. The carbon balance is entirely related to outcome 2 (REDD+ phase 2)38 and is disaggregated by outputs as listed below:  
+• Output 2.1 is reflected in the Land use change, cropland, and forest degradation modules. Given the computation of data (detailed in Computation of data in EX-ACT), the total carbon balance over 12 years of this output is equal to -5,134,337 tCO₂-eq. The conversion of existing agroforestry systems and the restoration activities in bamboo and timber-bamboo forests are the main contributors on increasing carbon sequestration.  
+• Output 2.2 is reflected in the input and land use change modules. Given the computation of data (detailed in Computation of data in EX-ACT), the total carbon balance over 12 years of this output is equal to 35,948 tCO₂-eq.  
+• Output 2.3 is reflected in the land use change modules, cropland and forest degradation. Given the computation of data (detailed in Computation of data in EX-ACT), the total carbon balance over 12 years of this output is equal to -1,585,952 tCO₂-eq. The restoration activities on forest are the main contributors to increase sequestration under this output.
+
+98. The total carbon balance resulting from the implementation of the project’s activities has been estimated at -6,684,338 tCO₂-eq over 12 years. These ERs are resulting from the USD 76 million invested in component 2 (REDD+ phase 2), including USD 18.5 million from GCF (24% of the budget of component 2). 24% of the ERs expected from RECAF can therefore be attributed to GCF, representing 1,603,200 tCO₂eq.
+
+99. However, and given that the RBPs are part of the exit strategy of the project, and an incentive for Viet Nam to invest in reducing GHG emissions from deforestation in the first place, it is expected that the remaining ERs (i.e. 5 MtCO₂eq) generated thanks to investments from the different co-financers of the project including the government, beneficiaries, private sector and IFAD, will be used by the government of Viet Nam to seek REDD+ RBP or other type of carbon market option, from sources different from GCF. Assuming a price of USD 5/tCO₂eq (in line with FCPF current practices and the price under the 1st REDD+ RBP call for proposal from GCF), and assuming that a discount of approximately 25% could be applied by future providers of RBP due to uncertainty, buffer and other requirements, the value of the ERs from the project that Viet Nam could expect to mobilize is USD 19 million for ERs achieved during the lifetime of the project. This tentative value has been included in the EFA; yet it is very speculative given uncertainties related to RBP and other forms of carbon markets/payments.
+
+## D.1.2. Reduced emissions
+
+100. On top of this, mitigation benefit comes from the reduction of deforestation and forest degradation thanks to better policies and enforcement, forest protection infrastructure, deforestation-free value chain management, community-based forest management and performance-based payments forest ecosystem services. While policies will have impact at the provincial level, most activities are expected to have district-wide impact. The selected project districts have a total of 926,066 hectares of natural forest. However, about 400,000 hectares of this area are special use forest, which are
+
+
+---
+*Chunk pages 40–40*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1169 (sys=94, user=1075), max_out=1024, ctx=8192
+---
+
+# D.1.3. Adaptation Co-benefits
+
+The project will also deliver climate change adaptation co-benefits, with a particular focus on the beneficiaries belonging to ethnic minorities, such as the M'Nong, Ma, and Ede communities, who reside in forested areas or rely on forests for their livelihoods. The target groups for the project include rural poor households, unskilled rural individuals (with a priority given to young people), and relatively less poor or lead farmers who possess the necessary skills and assets to promote agroforestry and commercial agricultural production. The project will prioritize the inclusion of youth, women-headed households, and ethnic minority households within these target groups, with a goal of ensuring that 40% of the total beneficiaries fall into these categories. To achieve this, the Gender Action Plan incorporates specific measures to encourage women's participation, aiming for a project target of 40% women's involvement.
+
+Under Output 2.1, the project will provide training to farmers on the utilization of climate information and existing agrometeorological advisory services, including pest information. The training curriculum will consider both the traditional environmental knowledge and practices of the ethnic minorities and the best available scientific knowledge to promote locally appropriate and climate-suited crop varieties and agroforestry practices. For instance, the project will introduce additional tree species in monocrop coffee plantations, transitioning to coffee-based agroforestry systems to diversify income sources and ensure soil suitability and crop resilience to reduce crop loss and damage by climate-related factors.
+
+Through the MCCFM structures (Output 2.3), community members will gain greater influence in land use planning and management. They will also acquire knowledge about climate-adapted forest management and agroforestry systems. Furthermore, the project will provide training on financial literacy and encourage membership-based savings, empowering farmers and forest-dependent community members to enhance their adaptive capacity through savings and improved access to finance.
+
+Moreover, the project includes infrastructure investment (Output 2.2) that enhances the beneficiaries' resilience to climate change. The selection criteria for infrastructure will consider adaptive measures to address observed and anticipated effects of climate change, ensuring the long-term application and operation of the infrastructure to support deforestation-free value chains and MCCFM.
+
+Overall, it is expected that the project will reach 100,000 households with a 70% adoption rate, resulting in an estimated 140,000 farmers who will enjoy the adaptation co-benefits. By prioritizing climate change adaptation and involving marginalized communities.
+
+# D.1.4. Economic co-benefits
+
+The project will directly benefit women, youth, ethnic minorities, and men engaged in forest protection, agroforestry, and various activities along the deforestation-free value chains. With a target group of approximately 100,000 smallholder farmers and forest-dependent community members, including ethnic minorities, the project aims to generate significant economic co-benefits through improved land tenure and inclusive investment planning and equitable resource distribution to enable their long-term investment in sustainable land use practices.
+
+Economic co-benefits will encompass increased and sustainable agroforestry production, higher incomes through participation in deforestation-free value chains, enhanced livelihoods and capitals through MCCFM and PFES/PES, and the adoption of technologies to reduce water usage and chemical fertilizer needs to reduce crop loss and input spending.
+
+In addition, the project utilizes the EX-ACT tool to measure the impact on CO2 stock and (GHG emissions. An expected reduction of 6 million metric tons of CO2-equivalent emissions over 12 years will be quantified monetarily and financed through various sources, including national funds, the Forest Carbon Partnership Facility (FCPF), and private sector contributions. Payments will be distributed to project stakeholders contributing to CO2 stock and GHG emission reduction. The project may also consider using the Biodiversity Integrated Assessment and Computation Tool (B-INTACT) to address specific biodiversity concerns in forest areas, recognizing their importance for ecosystem services.
+
+
+---
+*Chunk pages 41–41*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1248 (sys=94, user=1154), max_out=1024, ctx=8192
+---
+
+# D.2. Paradigm shift potential (max. 500 words, approximately 1 page)
+
+The project will enable a paradigm shift through several pathways:
+
+## First, it will contribute to a regulatory framework and policies that will provide an enabling environment for the transition to sustainable forestland management, deforestation-free value chains and climate resilient livelihoods based on agroforestry systems. The NRAP will be mainstreamed into the 5-year provincial SEDPs, which provide the basis for the spatial planning, work planning and budget to implement all social, environmental and economic activities in the target provinces.
+
+The project will facilitate interdepartmental, cross-sectoral and public-private coordination at provincial, district and community level that will allow for a participatory land use planning for effectively safeguarding forest ecosystem services in a transparent manner while also providing livelihoods opportunities for local communities and a fair sharing of costs and benefits. Similar systems have been used in other IFAD project in Viet Nam and enabled important scaling up to other provinces by mainstreaming climate resilient and value chain SEDPs into normal planning and incorporating results of participatory research in extension plans.
+
+Through facilitating of Forestland Allocations processes, the project will contribute to solving enduring land use disputes, which is a prerequisite for forest conservation, regeneration and sustainable agroforestry systems. One important aspect of this process will be the effective participation of ethnic minorities during planning and implementation process. A participatory approach to planning and implementation will be consistently adopted and top-down approach will be avoided.
+
+## Secondly, the jurisdictional approach to developing deforestation-free value chains is still very new. While it is intended to be multisectoral, to ensure that none of the major value chains in a certain jurisdiction acts as a driver of deforestation, experiences so far have mainly focused on a single commodity (e.g., cocoa in Ivory Coast and Ghana, dairy in Brazil, oil palm in Indonesia). The project will apply lessons from the first pilots of the jurisdictional approach in coffee-based systems in Lam Dong facilitated by IDH and SNV to further develop the approach. The project will facilitate public-private-producer partnership platforms around agroforestry systems involving buyers from multiple crops. This will also provide a more market-oriented approach to the development of agroforestry systems, which are often approached from a purely agronomic and environmental perspective.
+
+When business-to-business of verified deforestation-free products or final retail marketing of sustainable branded products is successful, this will crowd in other farmers and value chain actors in the project provinces and trigger transformation at scale. The project will thus provide important lessons, both on approach as well as on technical aspects of species combinations that can be used for scaling up to other districts, and replication in other part of Viet Nam and abroad. This support to deforestation-free value chains is essential for Viet Nam given it current trade agreement with the EU and the recently approved EU regulation on reducing GHG emissions linked to deforestation.
+
+## Thirdly, the development of a performance-based mechanism for PES that includes payments for carbon sequestration services would be a first in Viet Nam. In combination with a rigorous monitoring and reporting system, this would open up potential for accessing international REDD+ financing and public and private "carbon markets". In combination with the FLA and community-based forest management, this will provide the possibility to pay communities based on their forest management performance and provide real and long-term incentives for local communities to conserve and restore forests.
+
+This would be a substantial change from the current "contracting system", which basically contract community labor for patrolling, which excludes women and does not involve the local communities in management decisions. Based on the pilots implemented by the project in the Central Highlands and South-Central Coast, the project will facilitate MARD to develop guidelines for performance based PFES/PES for carbon sequestration services and community forest management, for scaling out and replication nationwide.
+
+## Fourth, developing the capacity of financial service providers to provide financing for investments in agroforestry and MCCFM to reduce deforestation and forest degradation while increasing the adaptive capacity and income of farmers and forest-dependent people will address a significant barrier in the transition to deforestation-free agriculture development.
+
+## A fundamental aspect of RECAF's paradigm shift is IFAD facilitation to ensure full and effective participation of ethnic minorities during the planning and implementation process as the project's horizontal partners. The values of the ethnic minorities' ancestral knowledge and their practices will be considered as the basis for co-creating initiatives that are environmentally sustainable and rooted in the cultures and value of the ethnic minorities. Participatory approach to planning and implementation will be consistently adopted and top-down approaches will be avoided.
+
+## Specifically,
+
+### Potential for scaling up and replication: several approaches and activities can be scaled up and replicated, including: the jurisdictional approach to deforestation-free value chain development; the performance-based
+
+---
+
+
+---
+*Chunk pages 42–42*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1186 (sys=94, user=1092), max_out=1024, ctx=8192
+---
+
+# D.3. Sustainable development (max. 500 words, approximately 1 page)  
+RECAF will contribute to achieving the Global Sustainable Development Goals (SDGs), especially SDG 1 (end poverty), SDG 2 (zero hunger), SDG 5 (gender equality), and SDG 13 (climate action). While this section discusses several sustainability benefits expected to result from the project’s interventions.
+
+## D.3.1. Environmental benefits  
+117. The project will promote the transition of monocropped perennial cash crops to agroforestry systems and the use of other sustainable agriculture practices such as contour planting and Contour Hedgerow Technology (CHT), which will enhance ecosystem services in the form of soil fertility enhancement, carbon sequestration and reduced erosion. Soil analysis, training on better soil management, fertilization schedules and the use of nitrogen fixing species in multiple crop systems and IPM will also reduce the use of chemical fertilizers and run-off of these fertilizers into streams and groundwater thus contributing to reduced soil and water pollution from chemicals.
+
+## D.3.2. Biodiversity benefits  
+118. RECAF aims to deliver biodiversity benefits, specifically in terms of mean species abundance (MSA). The MSA metric, developed by Global Biodiversity Model for Policy Support (GLOBIO)39, measures the average abundance of original species in disturbed and undisturbed habitats across six taxonomic groups. A case study on four project provinces showed that both MSA and natural capital experienced a decline from 1994 to 1996, followed by a slower decrease until around 2010. However, there was a partial recovery in MSA between 2018 and 2020. The project's focus on reducing deforestation and forest degradation is expected to prevent MSA decline by strongly correlating with forest cover. Efforts such as promoting forest regeneration, agroforestry practices, and integrating indigenous tree species are anticipated to increase MSA. Additionally, supporting sustainable use of NWFPs and involving communities can incentivize forest biodiversity conservation. The project also emphasizes the importance of incorporating traditional knowledge and practices of ethnic minorities, particularly in agriculture and animal husbandry. The Nagoya Protocol on Access and Benefit-sharing guides biodiversity conservation, ensuring fair benefits from genetic resources. In this context, RECAF supports MSA, community engagement, and integration.
+
+39 https://www.globio.info
+
+
+---
+*Chunk pages 43–43*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1235 (sys=94, user=1141), max_out=1024, ctx=8192
+---
+
+# D.3.3. Social benefits
+
+119. **Land tenure:** As explained in section B2, sometimes land traditionally cultivated by local ethnic minorities was declared forestland or smallholder farmers were displaced from their land elsewhere and pushed into the forest, leading to disputes that continue until today. At provincial level, the project will facilitate coordination between departments, management boards and communities to address such land tenure issues. Guidelines for FLA processes, including FPIC will be developed. At the commune level, participatory land use planning and mapping will be conducted in each community. This planning will identify forest areas for protection (particularly for ensuring continuity of ecosystem services), degraded forest for regeneration and sustainable harvesting of NWFPs and deforested areas on which agroforestry systems can be developed. For the selected communities for MCCFM, a FLA to communities or adjustment of previous FLA will be supported, so that the legal ownership or user right status matches the forestland management responsibility of the community.
+
+120. **The resolution of land use conflicts and the improvement of land tenure rights of ethnic minorities are key objectives of DOF, the project provinces and IFAD.** Therefore, improved tenure rights have been defined as a co-benefit in the logical framework. The project expects to conduct or adjust FLA in 150 villages, covering a total of 55,000 ha, and benefitting 100,000 smallholders and ethnic minorities. Individual or community land use rights are not only a prerequisite for the implementation of the MCCFM and performance based PFES/PES activities, they also contribute to the empowerment of these ethnic minority communities and facilitate their integration in the formal economy, enabling the signing of contract farming agreements with buyers of deforestation-free commodities and of securing formal loans for investments in agroforestry and specialty products. Without stable tenure rights, those farmers would also have no incentive to spend their labor and financial resources in such long-term investments.
+
+# D.3.4. Nutrition
+
+121. During the stakeholder consultation process, poorer households revealed they cannot afford nutritious diets, their dietary diversity is very poor and is likely worsening in current context of food price spike. Malnutrition is known to be high among the ethnic minorities in Viet Nam. The prevalence of stunting among ethnic minority children is 31.4%, which is twice as high as that among the Kinh ethnic majority group. The project is expected to have a positive result on dietary diversity among target groups through two different pathways. First, through better and more resilient incomes from more diverse farming systems, better farm management reducing production costs, investments in irrigation and through better value chain linkages and the development of small cooperative businesses around specialty products. Second, the introduction of fruit trees, nuts, herbs and medicinal plants into current monocrop coffee or pepper and in the agroforestry systems to be planted on bare land and the use of beans in CHT will increase the nutritional value of the farm products. Nutrition will also be part of the criteria to select and evaluate proposed participatory research on relevant farming systems. Finally, forest conservation and improvement will also lead to more sustainable access and use to relevant NWFPs which plays a key role in diet of ethnic minorities. However, it should be noted that the contribution of this project is such that it cannot be considered a co-benefit in the traditional sense.
+
+# D.3.5. Gender and Indigenous Peoples’ sensitive project design and implementation
+
+122. The project promote gender equality – through (i) increased participation of women in project activities outside their home; (ii) attending project training to improve current farm knowledge, financial skills, and learn new knowledge about market; (iii) improved loan access; (iv) increased female participation in household's decision making thanks to improved farm skills; (v) reduced household chore on the part of female through increased undertaking of household work on the part of male, and work arrangement based on seasons; and (vi) full use of the advantage of matriarchal system to increase female involvement in income generation activities for economic empowerment. The project targets a 50% male-female rate of the expected beneficiaries adopting improved climate resilient livelihood options. See Indigenous Peoples’ Plan in Annex 6B and Gender Action plan in Annex 8.
+
+123. FPIC procedures will be followed for all project activities and investments at districts and commune level and a grievance redress mechanism will be established. FPIC obtained from ethnic minorities will be given special attention to ensure it remains free from potential pressure or coercion by any external actor, including provincial DARDs or other stakeholders, due to unequal power dynamics. FPIC processes will engage third-party independent facilitators for FPIC consultations on a regular basis.
+
+
+---
+*Chunk pages 44–44*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1275 (sys=94, user=1181), max_out=1024, ctx=8192
+---
+
+# D.4. Needs of recipient (max. 500 words, approximately 1 page)
+
+## D.4.1. Economic and social development level and vulnerability to climate change
+
+124. Vietnam has achieved strong economic growth of an average 6.4% in Gross Domestic Product per year. The proportion of the population living below the national poverty line reached 4.8% in 2020, down by over 70% since 1993.
+
+125. Vietnam is one of the most disaster and natural hazard-prone countries in the East Asia and Pacific region. The World Bank listed Vietnam as one of the five countries that will be most affected by climate change. The rural poor are the most vulnerable to shocks from natural disasters and hazards. This, because they are more likely to live in areas vulnerable to natural disasters, have higher dependency upon agriculture and natural resources for their livelihoods, and have more vulnerable assets, such as less well constructed homes. Furthermore, they have fewer resources to invest in adaptation to climate change and to recover from the impacts of natural disasters. Without adapting farming systems, yields of several crops are expected to decrease, with coffee being especially affected.
+
+126. The project area remains poorer in comparison to most other regions of the country, with poverty rates of 8.3% in the Central Highlands and 12.7% in Ninh Thuan. Its economy remains dominated by agriculture and forestry. The poverty rate amongst ethnic minorities is 40.4%, accounting for 53.8% of the extreme poor. The poverty rate has been one of the criteria for project district selection. The target districts also have a high rate of ethnic minorities, and coffee is one of the major crops. Thus, the project is targeting the population most affected by climate change, and activities under Output 2.1 have a focus on deforestation-free coffee supply chains and the development of coffee-based agroforestry systems. Indeed, poverty is widespread among ethnic minorities. Poor households have small landholdings which are generally infertile and water stressed. In the absence of irrigation, labor requirement for plot development is high as the soil tends to be hard and requires more efforts. Although labor exchange arrangements are common, for households who do not have sufficient able-bodied adults and are unable to contribute to the exchange, labor has to be hired when needed. Poor households do not have the means to do so resulting in poor crop management. In addition, the households cannot afford input costs – despite knowing that adequate dosages can increase yields – and have no recourse but to source inputs (seeds, fertilizers and pesticides) on credit from the local input supplier to be paid back after harvest. In case of failure to pay back the debt, interest is charged at high rates indebting the household till the next harvest or beyond.
+
+## D.4.2. Alternative sources of financing
+
+127. Vietnam has the potential to access alternative sources of forest finances, such as LEAF, that could also benefit target beneficiaries through performance-based payments for ecosystem services. Therefore, the project will work on upgrading the monitoring and reporting of forest cover and quality and resulting emissions and carbon sequestration and work with MARD to start accessing these other financing sources. Furthermore, the project will assist banks (e.g., VDB, and BIDV) and MFIs to attract more suitable capital to increase their lending in the agriculture sector for climate change adaptation and mitigation.
+
+128. Finance barriers such as high costs, risks, and private sector hesitancy in agroforestry investments need attention. It is crucial to make REDD+ and deforestation-free value chains and MCCFM practices financially viable. However, the existing ODA loan finance policies and unfavorable enabling conditions necessitate RECAF to seek GCF finance at a higher level of concessionality to complement its infrastructure loan and deploy a blended finance model, as discussed in Section B.5.
+
+## D.4.3. Institutions and implementation capacity
+
+129. Policy and institutional gaps remain for implementing REDD+ at the provincial level. Provinces are requested to make contributions to the NDC targets. However, none of the participating provinces has been able to systematically integrate the updated NDC targets in the areas of AFOLU due to lack of concrete guidelines and funding support. There is also a lack of interdepartmental, cross-sectoral and public-private coordination.
+
+# D.5. Country ownership (max. 500 words, approximately 1 page)
+
+130. Vietnam has fully achieved the four key requirements of the Warsaw Framework, having now completed its National REDD+ Strategy, National Forest Monitoring System (FMS) and Forest Reference Emissions Levels (FREL/FRLs), and more recently an operational and online Safeguards Information System (SIS), along with Summary of Information (SOI) on safeguards. In addition, REDD+ has already made a number of contributions to transformational change in
+
+
+---
+*Chunk pages 45–45*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1169 (sys=94, user=1075), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 41
+
+## Alignment and ownership
+
+131. The project is aligned with the NDC through the land use planning activities, the better capacity for forest protection, the protection through the jurisdictional approach to deforestation-free supply chain management of major commodities, the development of agroforestry, and through enhancing the resilience of the target beneficiaries.
+
+132. The project has integrated lessons learned from the REDD+ in the design: (i) the core of a successful REDD+ strategy is effective planning and investment; with clearly defined, locally agreed objectives, (ii) provide appropriate incentives for better forest management (or disincentives for forest destruction); and (iii) incentives come in various forms, including through access to more secure tenure over land and resources, assistance for market and financial access and/or through benefits from domestic PES schemes.
+
+133. Ownership and commitment to project investments have been traditionally strong in Viet Nam, from the national to the commune levels. The project has been designed through a lengthy and participatory process. First of all, it was the Government who proposed the initial concept note to IFAD to act as International Accredited Entity (IAE) and co-financier of RECAF. After formal endorsement of the revised concept note, each province formed a Project development board (PPB), collected baseline data and prepared their own thematic reports and project proposals. The DoF participated in the two IFAD design missions, during which extensive discussions with the PPCs and PPBs and selected district authorities were held. The PPBs organized the field visits. Subsequently, design choices and the project document were extensively discussed between IFAD, DOF and the project provinces. Commitment letters are attached in Annex 1.
+
+## GCF country programme
+
+134. The National Designated Authority is the Ministry of Planning and Investment. The GCF so far has funded 3 projects for a total of USD 146 million:
+
+- FP013 Improving the resilience of vulnerable coastal communities to climate change related impacts in Viet Nam, implemented by UNDP, approved 2017
+- FP071 Scaling up energy efficiency for industrial enterprises in Viet Nam, implemented by the World Bank, approved 2018
+- FP125 Strengthening the resilience of smallholder agriculture to climate change-induced water insecurity in the Central Highlands and South-Central Coast regions of Viet Nam, implemented by UNDP, approved 2020
+
+135. VDB has become the DAE of GCF since July 2021 and implemented a GCF readiness project to strengthen their pipeline development capacity. As discussed in Section C.2, IFAD will collaborate with the VDB through RECAF to strengthen the VDB's capacity as Viet Nam's first DAE to the GCF. The objective is to enhance their ability in project origination and design, ensuring the sustainability of RECAF's outcomes and enabling the VDB to strategically leverage these results to advance Viet Nam's commitments under its NDC and NAP. Concurrently, RECAF will actively pursue collaboration with the United Nations Development Program (UNDP) to facilitate the exchange of lessons learned, harmonize approaches, ensure complementarity between the two GCF projects, and avoid duplication of efforts and inefficiencies in GCF investments. This collaboration will maximize the effectiveness of both initiatives and optimize the utilization of GCF funds.
+
+## Capacity of Accredited Entity and Executing entities to deliver
+
+136. IFAD's strategy in Viet Nam over the past 20 years has focused on supporting the Government's achievement of its key development target to move rural populations from subsistence farming to climate resilient market-oriented agriculture. The current 2019-2025 Country Strategic Opportunities Program (COSOP) focusses on smallholders and agriculture SMEs in underserved areas with a concentration of ethnic minorities, like the Central Highlands and Ninh Thuan province. RECAF is fully aligned with the COSOP.
+
+137. IFAD has experience with supporting and encouraging innovation and experimentation with value chain development, small-scale infrastructure and financing, PES, market-oriented planning and public investment, land and forestland planning and allocation, private sector engagement, and climate smart agriculture. In addition, IFAD has also strengthened grassroots community institutions and has mainstreamed social, climate and environmental issues so that investments in climate mitigation and adaptation benefit poor rural households and the most vulnerable rural groups including ethnic minorities.
+
+138. IFAD-funded projects in the highlands (i.e., 3EM and TNSP) already included many of the key building blocks of RECAF: the climate-informed SEDP, the climate resilient value chain action planning, the common interest group
+
+
+---
+*Chunk pages 46–46*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1275 (sys=94, user=1181), max_out=1024, ctx=8192
+---
+
+# D.6. Efficiency and effectiveness (max`. 500 words, approximately 1 page)  
+## 142  
+One major objective of the GCF financing is to remove bottlenecks to transition from monocrop plantations to multi-crop agroforestry. While transitioning to these agroforestry systems is generally financially and economically viable, barriers to investment remain. The project will use GCF concessional funding, combined with IFAD’s infrastructure loan, to address these barriers to investments, and in particular the following ones:  
+
+- **High upfront investment costs**, addressed through the development of adequate credit products and the provision of lines of credit to support financial institutions;  
+- **Revenues not accruing immediately on tree crops** (implying that producers have to find alternative sources of income in the medium term), also addressed through the development of adequate credit products and systems with annual understory crops;  
+- **Risks for early adopters**, addressed through the agroforestry pilots;  
+- **The risk of price fluctuations on the crops grown**, addressed by testing multi-crop agroforestry mixes that allow producers to diversify crops grown and decrease their vulnerability to price fluctuations, and by supporting access to markets (with supporting infrastructure, e.g., value added processing facilities);  
+- **The risk of investing in perennials, with long-term benefits**, by supporting long-term land tenure and investments in irrigation infrastructure.  
+
+## 143  
+Under this blended finance model, the GCF grant will focus on removing these bottlenecks, but the majority of the direct financing for the agroforestry will take place through financial institutions and beneficiaries’ own capital, to avoid crowding out private investment. Hence, the GCF financing focuses on the market failures including information asymmetry of financial institutions, supporting early adopters of agroforestry systems (through the agroforestry pilots in 2.3), and improving access to markets for producers (through the 4P platforms and  
+
+[Page 42]  
+GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 42  
+
+---
+
+
+---
+*Chunk pages 47–47*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=795 (sys=94, user=701), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 43
+
+## Project Overview
+
+The proposed project aims to create a better investment environment for sustainable agroforestry and deforestation-free value chains. This will allow for the expansion of sustainable investment models for agroforestry and value chain development, which could potentially receive support from Viet Nam's Direct Access Entity (DAE), the VDB, in the future.
+
+## Economic and Financial Analysis (EFA)
+
+144. An Economic and Financial Analysis (EFA) of the project was conducted to assess the viability of project activities from the perspective of beneficiaries (financial analysis) and society (economic analysis). To quantify the benefits, activity models compare the benefits with and without the project, so the results presented below are all incremental.
+
+The analysis shows that the project is extremely profitable, with an NPV of USD 786.1 million, corresponding to an Economic Internal Rate of Return (EIRR) of 29.8%. The high return stems from the project's ambitious target to leverage investments into agroforestry by beneficiaries, through loans from financial institutions.
+
+Another reason is that these models consider a period of twenty years, so the NPV of benefits includes twenty years of additional benefits as opposed to the ten years often used in annual crop models.
+
+## Cost Efficiency
+
+145. The project is very efficient in terms of cost per beneficiary and cost per ton of CO₂ mitigated. The cost per beneficiary is USD 245 while the cost per ton of CO₂eq mitigated is USD 15.41, which is below the World Bank social price for a ton of CO₂eq of USD 43-86 in 2023.
+
+Using the lower bracket for the social price of carbon that ranges from USD 43 per ton of CO₂eq in 2023 to USD 55 per ton of CO₂eq, as opposed to a market price of USD 5 per ton of CO₂eq, increases the project NPV to USD 887.4 million, corresponding to an EIRR of 33.9%.
+
+## Challenges and Barriers
+
+146. However, in addition to the high upfront investment costs, the limited awareness of opportunities and risk mitigation options among domestic financial institutions, and the suboptimal enabling policy and institutional environment, Viet Nam's current ODA policies on loans also pose a barrier to accessing loan finance.
+
+Therefore, to overcome these challenges and set Viet Nam on a trajectory towards meeting its NDC targets, it is imperative to secure GCF grant financing to unlock the potential of net-zero mitigation development opportunities.
+
+GCF grant financing is particularly essential for unlocking net-zero mitigation opportunities in Viet Nam, as enabling conditions, often categorized as non-bankable public sector investment areas, require targeted support. Despite the potential for high revenue, these enabling conditions, such as policy and institutional frameworks, are crucial yet often overlooked by traditional financial institutions.
+
+Grants bridge the gap by providing the necessary resources to address these non-bankable areas and pave the way for sustainable development and achievement of net-zero goals.
+
+
+---
+*Chunk pages 48–48*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=809 (sys=94, user=715), max_out=1024, ctx=8192
+---
+
+# E.1. Project/Programme Focus
+
+Please indicate whether this proposal is for a mitigation or adaptation project/programme. For cross-cutting proposals, select both.
+
+- **Reduced emissions (mitigation):** Mitigation focused with adaptation co-benefits  
+- ☑ Increased resilience (adaptation)
+
+# E.2. GCF Impact level: Paradigm shift potential (max 600 words, approximately 1-2 pages)
+
+## Assessment
+
+### Dimension
+
+| Current state (baseline) | Potential target scenario (Description) | How the project/programme will contribute (Description) | Description Rating | Scale |
+|--------------------------|-----------------------------------------|---------------------------------------------------------|--------------------|-------|
+| Limited implementation of NRAP in the Central Highland and South Central Coast regions : The regions continue to experience deforestation and forest degradation, despite having significant potential for forest restoration. To reduce emissions from the AFOLU sector in these regions, it is crucial to address the low adoption of shade coffee and other alternative practices among farmers to increase restorative practices through agroforestry and promote economically viable MCCFM. These practices not only increase market value and forest carbon stock but also help reduce emissions. This can be achieved by ensuring enabling conditions in policy, institutional support, financial assistance, and market access. | Achieving a harmonized approach will necessitate a collaborative effort from all relevant parties, commonly referred to as Low | 145,000 hectares of forestland adjacent to cropland and settlements are transformed into economically viable agroforestry systems based on perennial crops and MCCFM models. These efforts effectively reduce both climate change and socioeconomic vulnerabilities faced by farmers and forest-dependent communities. As a result, a significant reduction of 6.68 MtCO2-eq in emissions is achieved over a span of 12 years. | Enhancing and integrating the country's REDD+ design pillars and NRAP into provincial SEDPs by incorporating effective 4Ps for participatory land use planning and value chain development, along with financial and legal incentives to effectively operationalize deforestation-free value chains for REDD+. This, in turn, will help expand the area of forests adjacent to cropland under sustainable agroforestry systems and MCCFM. | Designing and operationalizing economically viable deforestation-free value chains through 4P platforms. Simultaneously, enhancing access to finance and establishing essential support infrastructure for deforestation-free value chains and forest restoration will be prioritized. These measures aim to incentivize increased participation of farmers, forest-dependent communities, and SMEs in alternative agroforestry practices, fostering deforestation-free value chain practices and promoting forest conservation through MCCFM that harness alternative income generation |
+
+--- 
+
+**Page 44**
+
+
+---
+*Chunk pages 49–49*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=892 (sys=94, user=798), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 45
+
+## The 4Ps and Strategic Directions
+
+the 4Ps, while being guided by well-defined strategic directions. However, at present, Lam Dong is the only province that has developed a provincial REDD+ action plan, and there is a notable lack of robust institutional and stakeholder coordination at the provincial, district, and commune levels.
+
+## Activities and Replicability
+
+activities, e.g., ecotourism, value added processing of NWFPs, and apiculture.  
+Replicability Limited adoption of market-based agroforestry and MCCFM models, coupled with insufficient financial and market access support, hindering the replication of technical sound practices:
+
+At the provincial level, the implementation efforts of NRAP lack economically and socially viable agroforestry and MCCFM models that effectively engage all relevant stakeholders, including the private sector, to promote widespread replication. To facilitate the transition, especially for smallholder farmers and ethnic minorities, it is essential to establish strong economic justifications that make the adoption of these models more accessible. This entails providing dedicated financial and market access support to encourage broader participation and replication of these practices.
+
+## Medium
+
+By designing and operationalizing deforestation-free value chains through 4P platforms, and simultaneously improving access to finance and markets, as well as ensuring favorable policy and institutional enabling conditions, solid incentives and justifications are created for farmers and forest-dependent communities, including the poor, ethnic minorities, and women, to adopt sustainable agricultural production and alternative livelihood practices. These efforts not only lead to reduced emissions from the AFO LU sector and increased forest health and quality but also enable the replication of successful models.
+
+## Building Upon SEDPs
+
+Building upon the provincial Sustainable Economic Development Plans (SEDPs) that have integrated the National REDD+ Action Plan (NRAP) to implement jurisdictional REDD+, the project will be dedicated to the development of viable deforestation-free value chains through multi-stakeholder platforms (4Ps). This comprehensive approach includes targeted actions to increase access to finance and markets, as well as the implementation of community forest management (CFM)-based alternative income generation models to enable market-based transition, which can be self-sustained.
+
+As part of this effort, the project will establish performance-based payment for ecosystem services (PES) mechanisms and improve the availability of financial products. Moreover, the project will give priority to the establishment and enhancement of critical infrastructure, including value-added processing facilities, water and time-saving technologies, ecotourism facilities, and tree nurseries. These initiatives are essential for successfully replicating sustainable agroforestry practices and forest restoration efforts.
+
+## Sustainability
+
+Current policy and institutional environment, along with inadequate stakeholder coordination mechanisms, presenting significant challenges in establishing sustained change:
+
+Despite Medium
+
+The project generates paradigm-shifting impacts on Vietnam's emissions reduction targets and fosters the sustainable development of forest-dependent communities. These outcomes are realized and maintained through the implementation of improved
+
+By implementing an improved enabling policy and institutional framework, and bolstering stakeholder coordination through 4P platforms, the project improves land use planning and land tenure. The approach provides a robust foundation for
+
+---
+
+
+---
+*Chunk pages 50–50*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1034 (sys=94, user=940), max_out=1024, ctx=8192
+---
+
+# E.3. GCF Outcome level: Reduced emissions and increased resilience (IRMF core indicators 1- 4, quantitative indicators)  
+## GCF Result Area  
+
+| IRMF Indicator | Means of Verification (MoV) | Baseline | Target Assumptions / Note |
+|----------------|-----------------------------|----------|---------------------------|
+| Core 1: GHG emissions reduced, avoided or removed/sequestered | REDD+ NFMS, provincial MISs | 0 0 MtCO2-eq | 6.68 MtCO2-eq<br>Note:42 |
+| Core 4: Hectares of natural resources brought under improved low-emission and/or climate-resilient management practice | REDD+ NFMS, provincial MISs | 0 70,000 hectares of forestland adjacent to cropland and settlements are transformed into economically viable agroforestry systems based on perennial crops and MCCFM models (44,000 hectares under agroforestry system, 26,000 under MCCFM) | Total of 145,000 hectares of forestland adjacent to cropland and settlements are transformed into economically viable agroforestry systems based on perennial crops and MCCFM models (90,000 hectares under agroforestry system, 55,000 under MCCFM )<br>Note:43 |
+
+### Note:41  
+The final target means the target at the end of project/programme implementation period. However, for core indicator 1 (GHG emission reduction), please also provide the target value at the end of the total lifespan period which is defined as the maximum number of years over which the impacts of the investment are expected to be effective.
+
+### Note:42  
+This is factoring in the lag time between planting trees and carbon sequestration due to factors like tree establishment, limited photosynthetic capacity in young trees, biomass accumulation, environmental influences, and species/site selection. The project will remove 6.68 MtCO2-eq emissions within a span of 12 years, which equates to a removal of 557,028 MtCO2-eq annually, based on FAO's EX-Ante Carbon-balance Tool (EX-ACT) estimate using the 2006 IPCC Guidelines methodology (see Annex 22). Assumption: A decent survival rate and no extensive loss through forest fires, or pest and diseases.
+
+### Note:43  
+The focus of this initiative is mainly on cropland and production forests, as well as protected areas and buffer zone forests where the MCCFM approach can benefit restoration and protection efforts. More information can be found in Annex 22. The mid-term target area is determined by the slower implementation rate during the first half, which allows for the establishment of operational arrangements for afforestation, reforestation, and carbon stock enhancement efforts. Assumptions: Firm commitment by local governments, and relevant institutions to coordinate and support MCCFM efforts. Strong interest among forest dependent communities, CIGs, cooperatives and SMEs to participate.
+
+--- 
+
+[Page 50]
+
+
+---
+*Chunk pages 51–51*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1039 (sys=94, user=945), max_out=1024, ctx=8192
+---
+
+# E.4. GCF Outcome level: Enabling environment (IRMF core indicators 5-8 as applicable)
+
+## Core Indicator 5: Degree to which GCF investments contribute to strengthening institutional and regulatory frameworks for low emission climate-resilient development pathways in a country-driven manner
+
+Currently, only Lam Dong province has a provincial REDD+ action plan in place. However, there are several key challenges that need to be addressed. These challenges include the lack of effective coordination between different government departments and between 4Ps, inadequate recognition of land tenure rights for indigenous peoples, insufficient legal frameworks, technical capacity, and financial instruments to handle conflicts and encroachment related to forestland use. Additionally, there is a notable absence of results-based payment mechanisms for carbon-related PFES.
+
+### Rating for current state (baseline)
+
+medium
+
+### Target scenario (description)
+
+4 new Provincial REDD+ Action Plans (PRAPs) based on the NRAP are developed and seamlessly integrated into provincial SEDPs and comprehensive forest management systems. Simultaneously, an effective 4P coordination mechanism is established to harness collaborative efforts for low-emission development. Indigenous communities are granted forest tenure rights, enabling them to actively participate in MCCFM. Forest protection authorities and extension services are equipped with robust tools to efficiently address forestland conflicts, encroachments, and provide adept technical support. Furthermore, a successful implementation of a PES mechanism ensures the operational sequestration of carbon services.
+
+### How the project will contribute
+
+The project will develop PRAPs aligned with the NRAP and SEDPs, establish 4P platforms for public-private partnerships for developing deforestation-free value chains, empower forest-dependent communities with forest tenure rights, enhance the capacity of forest protection authorities, and implement a PES mechanism for carbon sequestration. These efforts will improve AFOLU policies, promote cross-sector coordination, reduce deforestation, and mobilize funds for sustainable forest management and climate change mitigation.
+
+### Coverage
+
+Multiple sub-national areas within a country
+
+---
+
+## Core Indicator 7: Degree to which GCF Investments contribute to market development/transformation at the sectoral, local, or national level
+
+Agricultural commodities serve as primary drivers of deforestation, and the farming systems and plantation forests are predominantly characterized by monocropping practices. Meanwhile, major players in export markets, such as Neuman, Nestle, and 3COM, increasingly demand "deforestation-free" products. However, due to disorganized and uncoordinated supply chains, these market signals fail to reach farmers and small processors. Additionally, farmers and small and medium-sized enterprises
+
+### Rating for current state (baseline)
+
+low
+
+### Target scenario (description)
+
+As a result of the project's efforts, the agriculture sector undergoes a transformative shift in its development targets. The sector moves beyond solely prioritizing volume and value targets and embraces long-term sustainability goals, which include forest conservation and reduced emissions. Off-takers actively support deforestation-free sourcing practices, encouraging farmers to adopt sustainable agroforestry techniques that maximize carbon sequestration and economic and adaptation co-benefits.
+
+### How the project will contribute
+
+The project aims to create deforestation-free value chains that prioritize carbon stock enhancement, and fair income for smallholders and ethnic minorities. It collaborates with 4P platforms to adopt a jurisdictional approach for deforestation-free sourcing, forest monitoring, and reducing post-harvest losses. The project also promotes sustainable timber production by shifting from monocropping to mixed timber plantations and encouraging sustainable bamboo management. It supports farmers, cooperatives, and SMEs by empowering them with technical capacity and financial resources.
+
+### Coverage
+
+Multiple sub-national areas within a country
+
+
+---
+*Chunk pages 52–52*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=772 (sys=94, user=678), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 48
+
+## Challenges for SMEs
+
+SMEs encounter challenges related to limited access to credit for investment in emission reduction initiatives. Furthermore, there is a lack of technical support and coordination among actors within the value chain, hindering effective collaboration.
+
+## Community Engagement
+
+This leads to the engagement of communities in alternative livelihood enterprises, while the implementation of effective inclusive investment planning and equitable resource distribution mechanisms successfully reduce emissions and improve livelihoods.
+
+## Value-Adding Activities and Alternative Livelihoods
+
+They are engaged through value-adding activities and alternative livelihoods such as beekeeping and ecotourism. Investments are also made in traceability, certification, branding, and sustainability-driven markets to benefit farmers and forest-dependent communities within deforestation-free value chains and MCCFM initiatives.
+
+## Core Indicator 8: Degree to Which GCF Investments Contribute to Effective Knowledge Generation and Learning Processes
+
+These challenges encompass weak linkages between the NFMS and on-the-ground monitoring systems, including an early warning system required for effective forest management and carbon services payments, as well as the lack of a registry to manage and coordinate REDD+ results and RPBs pertaining to the NDC.
+
+There is also a notable knowledge gap among extension staff, farmers, and financial service providers concerning deforestation-free value chains, alternative livelihood development, and investment opportunities, including MCCFM models incorporating traditional knowledge and alternative income generation.
+
+## Medium
+
+Public institutions, extension providers, smallholders, forest-dependent communities, private sector value chain actors, and financial service providers are equipped with the necessary tools and resources to enhance their knowledge and skills. This is achieved by utilizing the best available scientific knowledge, incorporating best practices, and drawing insights from relevant activities and experiences.
+
+## Project Contributions
+
+The project actively contributes to knowledge management and sharing by making its lessons learned and best practices readily accessible to other stakeholders throughout the country.
+
+## Collaboration with FIPI
+
+The project collaborates with FIPI to upgrade the NFMS in line with the requirements of REDD+ RBPs and the registry mechanism, meeting the GCF, FCPF, and LEAF coalition requirements.
+
+## Transparency and Accessibility
+
+The transparency and accessibility of NFMS and linkages to provincial MIS will be enhanced through this process to improve monitoring efforts. Provincial forest and climate information hubs will be established to gather and disseminate project-generated data and materials, promoting knowledge sharing on climate change, REDD+, deforestation-free value chains, NWFPs, agroforestry, PFES/PES, and MCCFM.
+
+## Replication Guidelines and Packages
+
+Replication guidelines and packages will facilitate wider adoption, complemented by clear language articles, YouTube videos, and a dedicated hotline for public inquiries.
+
+## Multiple Sub-National Areas Within a Country
+
+---
+
+
+---
+*Chunk pages 53–53*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=823 (sys=94, user=729), max_out=1024, ctx=8192
+---
+
+# E.5. Project/programme specific indicators (project outcomes and outputs)
+
+## Project results  
+**(outcomes/ outputs)**  
+
+### Project/programme specific  
+**Indicator**
+
+### Means of Verification (MoV)  
+
+### Baseline Target Assumptions/Note  
+
+## Mid-term Final  
+
+### Outcome 1: Viet Nam’s REDD+ design pillars are fully upgraded and integrated into provincial policies and institutional frameworks with improved 4Ps to operationalize REDD+
+
+- **# of updated existing or new laws, regulations, policies or strategies on mainstreaming REDD+ Action planning into Socioeconomic development planning (SEDP) proposed to policy makers for approval, ratification or amendment**  
+  - Project MIS, PRAP, SEDP  
+
+### Outcome 1: Viet Nam’s REDD+ design pillars are fully upgraded and integrated into provincial policies and institutional frameworks with improved 4Ps to operationalize REDD+
+
+- **Project MIS, MRV system**  
+  - Updated and operational REDD+ monitoring and information system  
+  - Upgraded and operational REDD+ monitoring and information system  
+
+### Output 1.1 National REDD+ policies and mechanism upgraded and updated to meet RBP requirements  
+
+- **Upgraded NFMS operational with linkages between the monitoring of NRAP, NFMS, MRV and registry system**  
+  - Upgrade completion reports, operational manuals, registry reports, project MIS.  
+  - Evaluation and impact assessment;  
+    - MRV system (national)  
+    - Stakeholder dialogue and/or workshop reports  
+
+### Not fully meeting requirements of international forest financing mechanisms, and weak linkages and application to on-the-ground implementation  
+
+- **One updated NFMS that meet the requirements of the Warsaw Framework for REDD+, the enhanced transparency framework under the Paris Agreement, and the RBP sources identified to monitor REDD+ investment effectiveness and access and coordinate RBPs from different sources in line with the NDC**  
+  - One fully upgraded NFMS with further improvements in functionality against mid-term  
+
+### Government continues to show its high commitment to international conventions and strategies in REDD+ implementation  
+
+- **DOF has sufficient institutional capacity to adequately manage and maintain the NFMS**  
+
+### At mid-term, the NFMS will be updated whilst at end term, the SIS is expected to be upgraded  
+
+- **An update would constitute an assessment of the current parameters and indicators used in the SIS to ensure they reflect the latest REDD+ developments and requirements**  
+  - The system will be updated to reflect any changes with national and international frameworks and ensure that it is aligned with national forest  
+
+---
+
+
+---
+*Chunk pages 54–54*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=647 (sys=94, user=553), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 50
+
+## Programs and Relevant International Conventions and Agreements
+
+The update will be determined by a transparent & effective engagement with stakeholders (including indigenous peoples & local communities to gather their input & ensure their rights and knowledge are respected). The updated SIS will include a schedule for regular updates and maintenance of the SIS to ensure it remains current and functional. Updating the SIS also involves setting up of a robust quality assurance mechanism to validate the data and information collected.
+
+The upgrade of the system is informed by the updating process and involves incorporating new data collection methods, such as remote sensing and GIS technologies, to improve the accuracy and comprehensiveness of the information. Moreover, the user interface of the SIS will be enhanced to make it more user-friendly and accessible to a wider range of stakeholders. Finally, the upgrade will also involve linking the SIS with other national and international environmental monitoring systems to provide a more holistic view of forest management and conservation efforts. This will facilitate data sharing and interoperability between different systems.
+
+## REDD+ Safeguard Information System Operational and RBP Sources Identified
+
+Upgrade completion reports, SIS, summary of information reports to UNFCCC, project MIS.
+
+MRV system, stakeholder dialogue and/or workshop reports.
+
+SIS is outdated and needing upgrades.
+
+One updated SIS that meets the requirements of the Warsaw Framework for REDD+.
+
+One fully upgraded SIS with further improvements in functionality against mid-term.
+
+Government continues to show its high commitment to international conventions and strategies in REDD+ implementation. Provincial authorities are committed to implement SIS.
+
+# of international and domestic investments leveraged, including RBPs, identified based on the NRAP Investment Plan.
+
+NRAP investment plan, registry reports, investment agreements, project MIS.
+
+0 At least 2 potential investment sources (international and/or domestic) identified.
+
+At least 1 investment agreement reached.
+
+Government completes the regulatory framework for private sector involvement in REDD+. RBPs opportunities are available. Provincial authorities maintain ARD and
+
+
+---
+*Chunk pages 55–55*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=935 (sys=94, user=841), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 51
+
+## Forestry Development as Priority Sector for Provincial Investment
+
+### Output 1.2 Provincial policies, legal and institutional frameworks, and stakeholder coordination mechanisms integrated with NRAP.
+
+- # of PRAPs prepared and integrated into provincial SEDPs and forestry plans that ensure alignment with Warsaw Framework for REDD+, Paris Agreement, and national policies/strategies (including Vietnam's NDC and NRAP)
+  - PRAPs, Forestry plans and SEDPs, project MIS
+  - 1 (Lam Dong has its PRAPs)
+  - 4 PRAPs
+  - 5 PRAPs, including updated PRAP for Lam Dong, 5 SEDPs and forestry plans with integrating PRAPs.
+- Provincial governments committed to PRAP and SEDP.
+  - # functioning provincial 4P platforms established.
+  - 4P platform TORs, meeting minutes, Project MIS
+  - 0 5 (at least one per province)
+  - 5 (at least one per province)
+
+### Outcome 2: Emissions reductions from AFOLU are generated through 4Ps’ deforestation-free value chains and performance-based finance
+
+- # of hectares of natural resources brought under improved low-emission and/or climate-resilient management practice
+  - REDD+ NFMS, provincial MISs
+  - 0 70,000 hectares
+  - 145,000 hectares
+- Policies on CFM and PFES are strongly enforced at all levels.
+  - Provincial Governments are committed to implement CFM and PFES.
+  - Communities and households are interested in CFM and PFES.
+  - Local enterprises are able to finance their part of the investment facility.
+  - Co-financed beneficiaries capable of providing their contribution.
+- # of farmers adopting climate-resilient practices/technologies as part of deforestation-free value chain development and CFM promotion
+  - Project MIS, outcome surveys, thematic studies and impact assessment
+  - 0 30,000 households
+  - 70,000 households
+
+### Output 2.1 Deforestation free value chains developed by 4Ps and increased access to finance
+
+- # of district and commune-level 4P platforms implementing VC action plans
+  - 4P platform TORs, meeting minutes, action plan progress reports, Project MIS
+  - 0 21 (at least one per district)
+  - 42 (at least two per district)
+- Provincial authorities committed to provincial and regional participatory integrated market-led socio-economic development planning and RAP.
+  - Provincial authorities maintain ARD and forestry development as priority sector for Provincial investment.
+  - Private investors are interested in investing in business opportunities in smallholder agriculture.
+- # of deforestation-free value chains and alternative niche products identified and operationalized
+  - Contract/Purchase agreements, Project MIS
+  - 0 5 potential deforestation-free value chains and 10
+  - 3 deforestation-free value chains and 7 alternative niche
+- Consumer demand for deforestation-free products continues.
+  - Private sector's and farmers' risk appetite remains high.
+  - Co-
+
+
+---
+*Chunk pages 56–56*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=557 (sys=94, user=463), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 52
+
+## Potential Alternative Niche Products/Businesses Identified
+
+The mid-term goal of identifying "5 potential deforestation-free value chains and 10 potential alternative niche products/businesses" will involve engaging with local communities and stakeholders, conducting market research and feasibility studies.
+
+5 value chains and 10 businesses are an accurate estimation of the number that can be identified in the time allocated and given the country context.
+
+Out of these 5 value chains and 10 businesses, only 3 value chains and 7 businesses can be supported to be fully operationalized. This is because of the limited time and resources to promote the adoption of sustainable technologies, advocating for supportive policies, and providing training and capacity building.
+
+Regular monitoring and evaluation will ensure progress and allow for necessary adjustments, ultimately contributing to sustainable development and environmental conservation.
+
+## Indicators
+
+| Indicator | Value |
+|----------|-------|
+| Number of Financial Institutions (banks, MFIs and/or WDF) who have received TA or support to develop new products or services | 0 2 5 (1 per province) |
+| Adequate skills base amongst local service providers | Local enterprises are able to finance their part of the investment facility. |
+| Co-financed beneficiaries capable of providing their contribution | Valid agricultural innovations are available from research institutions and private sector. |
+| Number of households able to access new financial products | Loan agreements/contracts, project MIS |
+| 0 10,000 40,000 | Policies on CFM and PFES are strongly enforced at all levels. |
+| Provincial Governments are committed to implement CFM and PFES | Communities and households are interested in CFM and PFES. |
+| Local enterprises are able to finance their part of the investment facility |  |
+
+--- 
+
+[Page 1]
+
+
+---
+*Chunk pages 57–57*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=777 (sys=94, user=683), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 53
+
+## Co-financed beneficiaries capable of providing their contribution.
+
+### Output 2.2 Deforestation - free value chains and forest restoration infrastructure upgraded and established
+
+- % of CIGs, cooperatives and SMEs reporting improvement in MCCFM through infrastructure investment
+- Infrastructure installation completion report, pre- and post-intervention survey, project MIS.
+- 0 30% 80% Out of the total 200 CIGs and 100 SMEs/cooperatives with agroforestry infrastructure, and 100 CIGs and 50 SMEs/cooperative with alternative business development.
+
+### Value of infrastructure upgraded
+
+- Infrastructure installation completion report, pre- and post-intervention survey, project MIS.
+- 0 USD 30 million USD 51.4 million The value of infrastructure is including GCF investment, IFAD investment, provincial governments and beneficiary contributions (output 2.2)
+
+### Output 2.3 Collaborative forest management capacity enhanced through performance-based incentives
+
+- # of households belonging to communities and forestland owners accessing PFES mechanisms.
+- Legal agreements/provincial decree, project MIS
+- 0 2,000 households 5,000 households Policies on CFM and PFES are strongly enforced at all levels. Provincial Governments are committed to implement CFM and PFES. Communities and households are interested in CFM and PFES.
+
+### # of hectares for which performance-based PFES provides incentives to conserve or restore forest
+
+- NFMS, registry, provincial MIS, project MIS
+- 0 5,000 hectares 40,000 hectares
+
+### # of hectares of forestland under MCCFM
+
+- NFMS, provincial MIS, project MIS
+- 0 5,000 hectares 15,000 hectares
+
+## Project/programme co-benefit indicators
+
+### Project results (outcomes/ outputs)
+
+### Project/programme specific Indicator
+
+#### Means of Verification (MoV)
+
+##### Baseline Target Assumptions/Note
+
+###### Mid-term Final
+
+### Co-benefit 1: Increased economic benefits from improved land tenure, inclusive investment planning and equitable resource distribution (Economic)
+
+- # of households reporting improved access to land or forest
+- Project MIS, outcome surveys, thematic studies and impact assessment
+- 0 30,000 households 70,000 households Provincial authorities committed to recognize and enforce planning of land use to avoid forest encroachment.
+
+- # of households reporting increase in their incomes
+- Project MIS, outcome surveys, thematic studies and impact assessment
+- 0 30,000 households 70,000 households Socioeconomic conditions remain reasonably stable in the Project area. Extreme weather and natural disasters are manageable. Market demand for the targeted value chains remains stable or increases to ensure profitability of smallholders' business models
+
+
+---
+*Chunk pages 58–58*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=948 (sys=94, user=854), max_out=1024, ctx=8192
+---
+
+# E GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 54
+
+## Co-benefit 2: Increased Resilience of forest dependent communities (Adaptation)
+
+# of farmers adopting climate-resilient practices/technologies as part of deforestation-free value chain development and CFM promotion.
+
+Project MIS, outcome surveys, thematic studies and impact assessment
+
+0 30,000 households 70,000 households 70% adoption rate.
+
+Consumer demand for deforestation-free products continues. Producer groups are interested in inclusive value chain, and willing to invest in climate-resilient practices/technologies. Financial service providers remain interested to invest in project-targeted value chains.
+
+## E.6. Project/programme activities and deliverables
+
+### Activities Description Sub-activities Deliverables
+
+#### Activity 1.1.1 Upgrade National Forestry Management System (NFMS) and Safeguard information System (SIS)
+
+In collaboration with FIPI, this activity will support DOF to upgrade the NFMS system to reach the requirements of the different providers of REDD+ RBPs, including through the GCF and LEAF Coalition which uses the ART/TREES standard. This would allow Viet Nam to access new options for RBPs, including from the private sector.
+
+##### Sub-activity 1.1.1.1: Develop of a monitoring system to report results of emissions reductions and removals
+
+1.1.1.1: upgraded one NFMS with clear linkages between the monitoring of NRAP, NFMS, MRV and registry system to effectively and strategically monitor REDD+ investment effectiveness and coordinate RBPs from different sources in relation to Viet Nam's NDC.
+
+##### Sub-activity 1.1.1.2: Implement the REDD+ Safeguards Information System (SIS)
+
+1.1.2 A manual for provinces (1) on implementing updated SIS approach and SIS reporting; 5 RECAF provinces supported with their SIS reports through training workshops.
+
+##### Sub-activity 1.1.1.3. Promote inter-provincial coordination and knowledge management
+
+1.1.1.3: Interprovincial exchange workshops with 4P platforms (x6); regional landscape coordination workshops with participants from similar agro-ecological zones and/or from the same watershed (x6).
+
+A REDD+ communication strategy; monthly local media engagement; # public events; 1 project website; 1 national information hub, including website, providing information on climate change, REDD+, agroforestry, deforestation-free value chains, PFES and MCCFM.
+
+#### Activity 1.1.2 Mobilize resources for NRAP implementation and inclusive investment planning and equitable
+
+The activity will support DOF to develop a national investment plan for NRAP implementation. It will also support the Government of Viet Nam to develop its legal and institutional arrangements for the implementation of the Article 6 of the Paris Agreement.
+
+##### Sub-activity 1.1.2.1: Prepare a NRAP Investment plan
+
+1.1.2.1 National investment plan for NRAP implementation (1); options explored increase green finance (via e.g., BIDV) for establishing a green credit portfolio with MFIs for CIGs, cooperatives, and SMEs.
+
+##### Sub-activity 1.1.2.2 Conduct capacity building for resource mobilization
+
+1.1.2.2 Enhanced capacity of MARD to engage with Emergent for LEAF RBPs, and a fully functioning REDD+ registry to centrally manage and coordinate REDD+ results and payments through multiple sources.
+
+
+---
+*Chunk pages 59–59*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1329 (sys=94, user=1235), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 55
+
+## Resource distribution mechanisms
+
+Agreement, especially articles 6.2 and 6.4, which will contribute to increase the financial flows that the country could leverage from national and international private and public entities, to be re-invested in the implementation of the NRAP and NDC.
+
+### Sub-activity 1.1.2.3: Conduct national multistakeholder policy dialogues on including carbon sequestration services in PFES mechanisms and to draft MCCFM guidelines
+
+- **1.1.2.3**: Three policy briefs on PFES and CFM; 3 national policy dialogues; 1 regulatory framework that enables PFDPs to channel REDD+ results-based payments to communities; 1 set of guidelines on MCCFM.
+
+## Activity 1.2.1 Mainstream NRAP into provincial policies and legal institutional frameworks
+
+RECAF supports the development of provincial green growth strategies and provincial REDD+ action plans (PRAP) and their integration in SEDPs, and in the provincial sustainable forestry development plans (PSFDP) and programmes for ethnic minority and mountainous areas. Through the 4P platforms, the project will invite private sector entities and farmer representatives to provide their inputs and feedback on the PRAPs and SEDPs in the form of a policy brief and through participation in policy dialogue and meetings in which these documents will be discussed.
+
+### Sub-activity 1.2.1.1: Strengthening provincial leadership, political will and commitment
+
+- **1.2.1.1**: 2 national workshops, 2 study tours, 5 studies to determine pledges
+
+### Sub-activity 1.2.1.2 Support the development of provincial REDD+ action plans and their integration into forestry and socio-economic development plans
+
+- **1.2.1.2**: 3 green growth action plans; 1 climate change action plan; 5 PRAPs which are then integrated into 5 SEDPs and into 5 ethnic minorities and mountainous areas programmes; 30 annual forestry planning meetings supported; 5 recommendations for forestry investment plans
+
+### Sub-activity 1.2.1.3: Support a provincial REDD+ monitoring and information system (MIS) and participatory forest inventory surveys
+
+- **1.2.1.3**: 5 Provincial FREL/FRLs 2011-2020, 5 emission inventories, 16 district forest inventory surveys, including biomass assessment, linking to the NFMS and NRAP/PRAP monitoring, directly supporting Viet Nam’s NDC.
+
+## Activity 1.2.2 Improve cross-sector coordination for better forest management and deforestation-free economic development
+
+The project will establish provincial, cross-sectoral 4P platforms to provide inputs to and feedback on the PRAPs and on the integration of the REDD+ interventions in the SEDP and forestry policies. The 4P platforms will be financially supported to organize training of their private sector members on REDD+, PFES, VPA FLEGT (and possibly EUDR) and the new Environmental Impact Assessment requirements for investments. Knowledge generation and sharing activities under activity 1.1.3 will also be undertaken by or at least with the involvement of the 4P platforms.
+
+### Sub-activity 1.2.2.1: Facilitate 4P platforms to provide inputs and ensure effective implementation of PRAPs
+
+- **1.2.2.1**: 5 provincial 4Ps are established and facilitated met 4 times a year; studies on options for deforestation-free value chain management; compendium of bankable deforestation-free business models and credit products; policy briefs on deforestation-free value chains development & supportive rural finance; training of private sector on REDD+, PFES, VPA FLEGT and EIA.
+
+### Sub-activity 1.2.2.2: Facilitate cross-sector coordination policy dialogue and capacity building on zoning, FLA, MCCFM and PFES
+
+- **1.2.2.2**: Procedural guidelines on FPIC and FLA at the provincial level based on Activity 1.1.2; 10 forest management boards (MBs) trained on participatory ecotourism collaborate with communities and private sector on ecotourism development; 5 conflict resolution mechanisms; 10 trainings of FPDs and MBs on addressing forestland use conflicts; 10 policy dialogues on MCCFM and PFES; 10 training workshops on lessons from Output 2.3 with visits to pilots.
+
+## Activity 1.2.3 Enhance 4Ps for deforestation-free economic development
+
+This activity consists of a series of actions to generate and share knowledge among stakeholders directly involved in project activities and beyond.
+
+
+---
+*Chunk pages 60–60*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1236 (sys=94, user=1142), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 56
+
+## Sub-activity 1.2.3.2 Identify socially and economically viable and dense agroforestry systems adapted to agro-ecological zones.
+
+1.2.3.2: 5 surveys to characterize good local agroforestry practices; 32 participatory research sites; 5 reports of results and guidelines; # of study visits of 4P and MCCFM participants to research sites; 40 nurseries trained to produce quality seedlings for agroforestry and 1 billion tree campaign.
+
+## Sub-activity 1.2.3.3 Share knowledge with the wider population and advocacy.
+
+1.2.3.3 Monthly local media engagement; # public events; 5 information hubs at FPDs.
+
+## Activity 2.1.1 Develop deforestation-free commodity supply chains through 4P platforms
+
+Sub-sector or value chain specific 4P platforms at district level will develop and implement value chain action plans with the objective to make these value chains deforestation-free, enhance carbon stocks and to adapt to climate change, while ensuring a fair and stable income for participating smallholder farmers.
+
+### Sub-activity 2.1.1.1 Develop deforestation-free commodity supply chains (perennial crops, acacia-based, bamboo).
+
+2.1.1.1. 32 district 4P platforms have developed and implemented value chain action plans and productive alliances; 32 digital platforms for mapping, supply chain management, deforestation alert & traceability systems; investments in 180,000 ha of monocrops and bare land to establish enriched agroforestry systems; 80,000 ha under improved bamboo management plans.
+
+### Sub-activity 2.1.1.2 Develop value chains for deforestation-free niche products (honey, mushrooms, medicinal plants, herbs, other NWFPs).
+
+2.1.1.2 In-depth studies on options (market potential, impact on forest, pro-poor potential); establishment of commune level 4P platforms; bankable business plans & financial feasibility studies; product promotion activities. As a result, 3 deforestation-free value chains and 7 alternative niche products/businesses fully operationalized.
+
+## Activity 2.1.2 Develop the capacity of farmers, CIGs, cooperatives and SMEs for deforestation-free value chains and alternative livelihood development
+
+Based on the value chain action plans developed by the 4P platforms, these entities will develop a capacity building programme for farmers, common interest groups (CIGs), cooperatives and SMEs.
+
+### Sub-activity 2.1.2.1 Establish CIGs.
+
+2.1.2.1 ToT for 32 CIG facilitators/trainers; around 480 CIGs (+ - 30 farmers/CIG) established linked to commodity 4P platforms and 400 CIGs for niche product development; CIG leadership trained on group management, business planning; and traceability & certification systems.
+
+### Sub-activity 2.1.2.2 Train farmers, CIGs, cooperatives and SMEs on deforestation-free product development, group governance and financial access.
+
+2.1.2.2: 97,000 farmers are trained on use of climate and pest information; on agroforestry and other low emission agricultural practices; on sustainable NWFP management; on post-harvest handling. 15,000 farmers trained on financial literacy. 400 CIGs and 200 small and medium (cooperative) enterprises developing niche products trained on record keeping, financial management and financial feasibility analysis of business plans; 5000 farmers. 100 CIGs and 60 coops/SMEs submit loan applications to MFIs or banks.
+
+## Activity 2.1.3 Support financial providers to develop and promote financial products for
+
+This activity will integrate climate change mitigation concerns into rural finance. Investments in climate change mitigation, such as agroforestry systems, typically have positive returns in the long-term yet and there is a lack
+
+### Sub-activity 2.1.3.1 Strengthen WDFs and CDFs to manage funds and develop products that support investments in deforestation-free value chains.
+
+2.1.3.1: 5 provincial funds (3 WDFs and 2 CDFs) have improved procedures through training on agroforestry and niche product business models, risk management and loan appraisal skills; 2 CDFs have increased capacity to access further sources of capital; 5 knowledge sharing events with WDFs on how to increase capital.
+
+
+---
+*Chunk pages 61–61*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1104 (sys=94, user=1010), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 57
+
+## Sub-activity 2.1.3.3 Provide access to capital for WDFs and CDFs to more rapidly scale credit activities.
+
+### 2.1.3.2: Feasibility study on line of credit/finance facility and regulatory context for the WDFs.
+
+## Sub-activity 2.1.3.3 Build capacity of commercial banks to develop products, partnerships and application of fintech that support investments in deforestation free value chains and advance project objectives.
+
+### 2.1.3.3: Supported banks set up at least 21 loan groups in collaboration with FU and WU acting as agent; trained and reporting on VC finance; 10 VC finance products/partnerships between banks and companies participating in 4P platforms; MoUs with 3 banks to test innovations that grow access to finance, including, but not limited to, fintech, cash-flow based financing and agricultural credit cards.
+
+## Activity 2.2.1 Develop infrastructure for deforestation free value chains
+
+These investments will be demand driven and prioritization and selection will take place through the district and commune socio-economic development planning process and the participatory 4P value chain action planning. Investments will need to meet social, environmental, technical and economic eligibility criteria. However, it is crucial that these investments adhere to a set of eligibility criteria, particularly pertaining to deforestation-free practices, and minimizing social and environmental impacts.
+
+### Sub-activity 2.2.1.1: Promote sustainable agroforestry through small-scale and micro infrastructure investments, including the development of micro irrigation systems and organic fertilizer production facilities.
+
+#### 2.2.1.1: A minimum of 200 CIGs and 100 small and medium-sized (cooperative) enterprises provided with agroforestry micro infrastructure development support.
+
+### Sub-activity 2.2.1.2: Enhance the post-harvest facilities of selected value chains by incorporating value-added processing techniques.
+
+#### 2.2.1.2: A minimum of 100 Community Interest Groups (CIGs) and 50 small and medium-sized (cooperative) enterprises provided with value-added processing and alternative business infrastructure development support.
+
+## Activity 2.2.2 Establish and upgrade forest restoration infrastructure
+
+These investments will be demand driven and prioritization and selection will take place through the district and commune socio-economic development planning process and the participatory 4P value chain action planning. However, it is crucial that these investments adhere to a set of eligibility criteria, particularly pertaining to their contribution to forest restoration, carbon stock enhancement, and minimizing social and environmental impacts.
+
+### Sub-activity 2.2.2.1 Strengthen Forest monitoring and protection infrastructure by implementing comprehensive upgrades
+
+#### 2.2.2.1 A minimum of 100 village-level MCCFM groups provided with support to upgrade or establish forest monitoring and protection infrastructure.
+
+### Sub-activity 2.2.2.2 Establish public nurseries dedicated to tree species cultivation, creating essential infrastructure for reforestation and afforestation initiatives.
+
+#### 2.2.2.2: A minimum of eight nurseries established.
+
+## Activity 2.3.1 Develop a results-based payments for ecosystem services (PES) mechanism for
+
+The project will pilot an innovative PES mechanism that complements current systems. The mechanism will have the possibility to go beyond forest areas and also cover ecosystem
+
+### Sub-activity 2.3.1.1 Support PFPDFs to design and implement a mechanism for performance-based payments for carbon sequestration services.
+
+#### 2.3.1.1: 5 Innovative PES funds (IPFs) established under PFPDFs; 15 payment schemes developed and operational for a total of 40,000 ha benefitting 25,000 households.
+
+
+---
+*Chunk pages 62–62*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=823 (sys=94, user=729), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 58
+
+## 44 MCCFM groups can be the same group as CIGs under output 2.1, or CIGs for specific value chains can be subgroups of MCCFM groups.
+
+collaborative forest management services provided non-forest areas (hence PES and not PFES).
+
+### Sub-activity 2.3.1.2 Build the capacity of PFPDFs.
+
+2.3.1.2: 2500 PFPDF participants trained to implement new PES mechanism and to become PFES intermediaries; 5 PFPDFs become public service agencies with financial autonomy; MRV guidelines developed under Output 1.1 localized and implemented.
+
+### Activity 2.3.2 Support MCCFM.
+
+Participatory land-use planning and mapping will be conducted in each community. This will identify forest areas for protection, degraded forest for regeneration and sustainable harvesting of NWFPs and deforested areas.
+
+For the selected communities for MCCFM, a FLA to communities or adjustment of previous FLA will be supported following guidelines developed under Activities 1.1.2 and 1.2.2, so that the legal ownership or user right status matches the forestland management responsibility of the community.
+
+### Sub-activity 2.3.2.1 Facilitate a participatory land use planning and mapping process.
+
+2.3.2.1: Completion reports on participatory land use planning and mapping with obtained FPIC as necessary, in all communities with project activities (at least 150); Selection of communities for FLA and MCCFM; at least 75 forest restoration agreements signed between forest MBs and communities (where MCCFM is not feasible).
+
+### Sub-activity 2.3.2.2 Develop fully-devolved MCCFM pilots.
+
+2.3.2.2 Forestland Allocation conducted or adjusted in 150 villages, covering total 45,000 ha; 150 village-level MCCFM groups 44 established or strengthened and 150 management plans; 2400 ha of bare or severely degraded forestland planted with dense agroforestry systems.
+
+### Sub-activity 2.3.2.3 Capacity development of village-level MCCFM group members.
+
+2.3.2.3: 5 capacity development programmes designed based on needs assessment; 50 out of 100 participants of ToT provide training to 10,000 community members; farmer-to-farmer learning network established.
+
+### Sub-activity 2.3.2.4 Strengthen the MCCFM support system
+
+2.3.2.4: 5 capacity development programmes designed based on needs assessment; 50 out of 100 participants of ToT provide training to colleagues of FPDs, DARD, FMBs, SFEs and NGOs to better support communities; 75 forest management boards are trained/coached to support devolvement process of tenure and management responsibilities to communities, to monitor forest restoration agreements with communities and/or implement co-management arrangements.
+
+
+---
+*Chunk pages 63–63*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1291 (sys=94, user=1197), max_out=1024, ctx=8192
+---
+
+# E.7. Monitoring, reporting and evaluation arrangements (max. 500 words, approximately 1 page)
+
+147. To achieve the expected mitigation impact with adaptation co-benefits, a project M&E will be systematically developed and implemented. At the start of RECAF, during the detailed inception planning phase, an Evaluation Reference Group (ERG) will be established, consisting of key stakeholder representatives and a small pool of local experts, to advise on the practicality, rigor, and credibility of the M&E system setup and its tracking and assessment of expected results.
+
+148. Expected mitigation will be mainly the promotion and changes of land use to agroforestry and regeneration or restoration of degraded forest. RECAF will develop a monitoring system to report results on emission reduction and removals from such changes, based on the system being developed for REDD+ and the pilot already developed with Terra-I model in Lam Dong Province, and other standard tools. The project will establish and operationalize an effective NRAP monitoring system that incorporates social and environmental indicators to track the implementation and impact of REDD+ interventions. Comprehensive national forestland use and forest remote sensing and databases, and trends scaled down to local level, were used to establish baseline. These and other GIS data and layers will continue to be used throughout the project for M&E across Outcomes and Outputs, also linked to the project management information system (MIS, more below). The EX-ACT tool will be used, as was done at the design stage, assessing the expected mitigation impact, and with regularly updated remote sensing databases and localized data from provinces, the changes will be regularly reviewed and reported annually for the Annual Progress Report (APR); for IFAD project stakeholders and GCF purposes. While EX-ACT is considered among standard tools for mitigation assessment in AFOLU, regularly used by IFAD and World Bank, refined tools, such as being developed by FAO Nationally Determined Contribution Expert Tool (NEXT), will be brought in as necessary.
+
+149. The project will employ surveys to measure adaptation and economic co-benefits. These surveys will assess the adoption rates of climate resilient agriculture and agroforestry practices, as well as the vulnerability and resilience of sampled households in target areas. A comparison will be made with control households, and participatory appraisal will complement the assessments. Standard resilience measurement tools like FAO’s Resilience Index Measurement and Analysis (RIMA)45 and Building Resilience and Adaptation to Climate Extremes and Disasters (BRACED)46 will be utilized for developing assessment methods. Household activities, including access to new technologies, will be measured through regular data reporting and uploading to the Project Management Information System (MIS). Mobile data gathering tools like KOBO or Collect mobile will be utilized, and local technical officers and community representatives will receive training for data collection. The project will also incorporate structured thematic assessments and process monitoring, guided by the Expert Review Group (ERG) and PMU. These assessments will measure policy and institutional changes, paradigm shifts, deforestation-free value chain development, tenure, social changes, inclusion, and other relevant factors. As operational indicators are refined, they will be incorporated into the monitoring and evaluation (M&E) parameters.
+
+150. M&E more broadly will follow and enhance existing systems established by previous IFAD-funded projects in the region including the 3EM (Dak Nong) and TNSP (Gia Lai and Ninh Thuan). The recent completed IFAD/SKD-led impact assessment (AMD)47 has further strengthened local capacities in terms of baseline surveys and indicators. IFAD Core Indicator System (COIS) forms the backbone of the M&E system and additional indicators will be added on as required. The project’s M&E system will be designed to track and verify the levels of achievement of project outputs, the associated outcomes, and the success in achieving the project objective and its development goal. Indicators are disaggregated per gender, age, ethnic groups and other relevant target categories.
+
+151. Monitoring will focus on activities/inputs, output, outcome, performance and risks while evaluation will assess the relevance, efficiency, effectiveness and impact on poverty reduction, business growth and environment, empowerment and partnership, sustainability, replicability, lessons learned, and knowledge uptake, all within the context of the requirements for successful climate adaptation and mitigation. Outputs, outcomes, and impact indicators are all causally connected as set out in the Logical Framework. As per established practice under 3EM and TNSP, the project’s M&E system will be participatory, involving the supported communes in data collection and management.
+
+152. Monitoring will be an integral part of the project coordination roles, held by IFAD as IAE and by the EEs, including MARD and the provinces. All key staff will be involved in strengthening project progress and performance monitoring in their particular areas of responsibility, and trained accordingly. This will build on any capacity building done with
+
+[Page
+
+
+---
+*Chunk pages 64–64*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=555 (sys=94, user=461), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 60
+
+## Monitoring and Evaluation System
+
+153. The M&E system will have an embedded project MIS integrating project management, financial management, procurement and physical progress, and thus, it allows reporting in real time. The MIS will be the platform for all co-implementing agencies to provide a nd review progress data for planning, reporting and adjustments of the implementation plans. Robust project data will feed knowledge management and policy dialogue. The dedicated project MIS, interoperable and where relevant, directly integrated with government information management systems, will be developed and operated for rigorous and one-point source of data analysis and standard reporting, tracking key activities and outputs, and core relevant outcomes. Mainstreaming key elements of the M&E system for national and local operation beyond the project will be a major system principle. The monitoring will provide quarterly, semi-annual and annual feedback on the extent to which the project is achieving its outputs, implementing the activities, identifying potential problems at an early stage and proposing possible solutions. The accessibility of the project to all sectors of the target population, as well as the technical and financial efficiency will be monitored and possible improvements suggested.
+
+154. Project evaluation, with focus on mitigation results and co- benefits, scalability, replicability and sustainability, will be initiated and managed by the Strategic Management Section under the PMU, guided by the ERG, in two major forms (i) impact evaluation and (ii) thematic evaluation. At the same time, the full reviews at mid-term and at the conclusion of the project will be conducted by independent evaluators commissioned by and external to IFAD and the Government. These official reviews are the Mid-Term Evaluation (MTE) and Independent Final Evaluation (IFE).
+
+
+---
+*Chunk pages 65–65*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1221 (sys=94, user=1127), max_out=1024, ctx=8192
+---
+
+# F.1. Risk factors and mitigations measures (max. 3 pages)
+
+## 155. The risk of external shocks to the policy environment, such as the COVID-19 pandemic and increasing world commodity prices resulting from the Ukraine conflict, poses significant challenges. This risk is particularly relevant for RECAF, given its focus on deforestation-free value chains targeting international markets. Viet Nam's relatively open economy, with a high proportion of income derived from export revenue, amplifies the vulnerability to these external shocks. Additionally, elevated agricultural commodity prices would increase the opportunity costs of not converting forests into cropland. Mitigating this risk depends on sound macroeconomic policies at the national level, including maintaining market-determined exchange rates. At the project and enterprise levels, emphasis should be placed on conducting thorough financial analyses of project investments, prioritizing quality, high productivity, and low cost per unit of output value in deforestation-free production options.
+
+## 156. The success of the project in improving livelihoods relies on establishing favorable conditions and incentives through socio-economic factors and supportive business regulations. Despite overall economic growth and poverty reduction in the five targeted provinces, smallholder farmers, ethnic minorities, and women still face persistent challenges in accessing essential resources like information, technology, finance, and secure land tenure rights. Consequently, they lag behind the general progress trend. Moreover, the current economic growth is not sustainable and lacks low-emission practices. The project's primary objective is to facilitate a viable transition toward deforestation-free value chains, with a specific focus on empowering smallholders, ethnic minorities, and women in forestland-dependent communities. This will be achieved by strategically investing in agroforestry and MCCFM, promoting income diversification through specialty product development, improving access to finance for deforestation-free value chains, and strengthening MCCFM infrastructure. It is crucial to acknowledge that climate change poses a significant socio-economic risk, necessitating its seamless integration into the project's activities.
+
+## 157. Simultaneously, RECAF will employ approaches and processes that foster the long-term sustainability and growth of 4P platforms. The project's action plans will ensure stakeholder coordination and collaboration mechanisms remain relevant beyond the project's lifespan, and active stakeholder engagement continues. There is a risk that the project may struggle to design credit products that attract sufficient investment from banks. These financial products need to be tailored to the specific needs of individual farmers and enterprises while still appealing to a significant number of them. Achieving scale is crucial because fixed costs associated with financial institutions require a certain level of profitability. To mitigate this risk, the project will employ qualified rural finance experts and collaborate closely with banks to design products that align with their interests. Furthermore, project activities should drive demand for these products and reduce risk through capacity building and facilitating value chain linkages.
+
+## 158. Human resources are essential for the successful implementation of RECAF. At the outcome/output levels, a risk arises from the limited availability of skilled and efficient contractors and service providers, particularly concerning REDD+ related activities. Rigorous screening and investigation of potential contractors before engagement can adequately address this risk. The experience gained by IFAD in Viet Nam and the project provinces (Gia Lai, Dac Nong, and Ninh Thuan) remains invaluable in this regard. For technical areas in which the executing entities lack expertise, engaging specialized service providers should be considered. IFAD's Country Team is currently identifying potential external technical assistance, which will be financed under the GCF-supported outcomes/outputs and the PMC (limited to up to 5,5% of total costs).
+
+## 159. RECAF is scheduled for review by the IFAD Executive Board (EB) in September 2024, and is targeting the GCF Board of October 2024. If, for any reason, the project is not approved at the planned GCF Board meeting but receives approval at a subsequent Board meeting, the following mitigation measures will be implemented. The post-approval processes will be initiated promptly once the IFAD EB approves the project. This includes drafting the Funded Activity Agreement between IFAD and GCF and preparing the Financing Agreement between IFAD and the Government, ensuring compliance with GCF requirements. By having all post-approval aspects prepared and documents ready for signing, any potential delays in project implementation can be minimized. This ensures project integrity and reduces the risk of startup or implementation delays. In addition, the costs to cover the initial PMU establishment will be covered by the Government to allow no delays in project implementation start-up.
+
+## 160. Identified risks and mitigating measures are thoroughly discussed in the IFAD’s Integrated Project Risk Framework (IPRM), including financial management and procurement risk. See also section G.1. Environmental and social risk assessment. Section G.3 discusses RECAF’s financial management and procurement arrangements.
+
+### Selected Risk Factor 1: External shocks to the macro-economy and governance
+
+| Category | Probability | Impact |
+|----------|-------------|--------|
+|
+
+
+---
+*Chunk pages 66–66*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=850 (sys=94, user=756), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 62
+
+## Governance
+
+### Medium Medium
+
+#### Description
+At the main objective/goal level there is a risk of external shocks to the macro-economy increasing world commodity prices as a consequence of the Ukraine and Palestine-Israel conflict. This risk of external shocks is always present in a relative open economy such as that of Viet Nam, particularly with the high proportion of income being derived from export revenue. These shocks could influence the Government’s commitment to provide the resources for implementation of the NTPs and climate change adaptation and mitigation policies and risk the transition to deforestation-free value chains that target international markets.
+
+#### Mitigation Measure(s)
+At the national level, sound macro-economic policies, including smart governance are the main means of mitigating the risk. At the project and enterprise level, this is the sound financial analysis of project investments, with emphasis on quality and high productivity and low cost per unit of output value. Agreements on funding targets and modality are included in the financing agreement on counterpart funding, including provincial levels.
+
+## Selected Risk Factor 2 Climate change impact
+
+### Category Probability Impact
+Other Medium Medium
+
+#### Description
+The project area, and the project’s target beneficiaries in particular, are vulnerable to the impact of climate change (see climate change analysis in Annex 2).
+
+#### Mitigation Measure(s)
+The project will facilitate an economically viable transition to deforestation-free value chains, with a specific focus on forestland dependent communities, through investments in agroforestry and MCCFM, in income diversification through specialty product development, in better access to finance for the necessary technologies and infrastructure.
+
+## Selected Risk Factor 3 Lack of interest from banks to invest in climate change mitigation and adaptation
+
+### Category Probability Impact
+Technical and operational Medium Medium
+
+#### Description
+There is a risk that the project is not able to design credit products attractive enough for banks to invest their own capital in the transition to deforestation-free value chains. These financial products must be specially tailored to the needs of individual farmers and enterprises, yet be of interest to a significant number of them. This is necessary because financial institutions’ costs are primarily fixed, and therefore require scale to be profitable.
+
+#### Mitigation Measure(s)
+Hire qualified rural finance experts and design the products in close collaboration with the banks. The project activities will also drive demand for these products and de-risk them through capacity building and enabling value chain linkages. The project results target in terms of on the number of hectares in which farmers will effectively invest have also been estimated conservatively.
+
+## Selected Risk Factor 4 Insufficient human resources
+
+### Category Probability Impact
+Technical and operational Low Medium
+
+#### Description
+There is weak coordination at the provincial level, between departments and between provincial and district governments that may delay project implementation. There are also limited skilled and efficient contractors and service providers to implement the project in a cost-effective manner.
+
+#### Mitigation Measure(s)
+The project promotes strong institutional linkages through the integrated NRAP-SEDP process in the project areas, which is instrumental to coordinate, mobilize and converge both capacity and resources for project implementation. IFAD experience gained in Viet Nam and project provinces will be vital to identifying potentially suitable contractors and service providers, coupled with rigorous screening and investigation of potential contractors prior to engagement. The IFAD country team already started identification of potential external technical assistance during the design phase.
+
+
+---
+*Chunk pages 67–67*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1032 (sys=94, user=938), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 63
+
+## Selected Risk Factor 5: Non-synchronous GCF and IFAD approval processes cause delay in implementation
+
+### Category: Technical and operational  
+### Probability: Low  
+### Impact: Medium  
+
+#### Description
+RECAF aims at the IFAD EB in September 2024 and the GCF Board meeting in October 2024. In case the project is not approved at the October 2024 GCF Board, this could potentially delay project implementation, or result in asynchronous implementation of the output depending on funding source.
+
+#### Mitigation Measure(s)
+Once IFAD EB approval has been obtained, all post-approval processes will be initiated, including the drafting of the Funded Activity Agreement (between IFAD and GCF) and preparation of the Financing Agreement (between IFAD and the Government), in line with GCF requirements, so that, at GCF approval, all these documents are ready and can be signed quickly. This will ensure project integrity and mitigate delays. In addition, the costs for initial PMU establishment will be covered by the Government to avoid delays in project implementation start-up.
+
+## Selected Risk Factor 6: Procurement delays
+
+### Category: ML/FT  
+### Probability: Low  
+### Impact: Medium  
+
+#### Description
+Inflexible internal government regulations pose severe risks to the timely allocation of funds and disbursements. Transparency International CPI index (2023) for Viet Nam is 41, and it is assessed as a medium-risk country for corruption. There are no money laundering or terrorist financing risks identified. Viet Nam has very strict procedures for the use of public funds, including donor funds and has robust financial management systems. The only procurement risks are delays due to discrepancies between IFAD guidelines and national laws and regulations, delays in budget allocation and lengthy procurement processes.
+
+#### Mitigation Measure(s)
+Mitigation measures include:  
+(i) The project management information system, including web-based accounting software, will be identified and procured at inception stage.  
+(ii) Using IFAD’s Online Procurement End-to-End System (OPEN) and ICP Contract Monitoring Tool, Financial management and procurement management will be linked.  
+(iii) Bidders and contractors will be requested to sign self-certification forms on anticorruption.  
+(iv) IFAD will give special attention to training of project staff. See detailed description of fiduciary risks and mitigation measures in IPRM.
+
+## 161. The Integrity Due Diligence (IDD) covers the following risk factors:
+
+- **Ultimate beneficial owners (UBOs):** IFAD takes reasonable efforts, where applicable and practicable, in line with the risk-based approach, to identify and verify UBOs. For entities without UBOs, IFAD applies equivalent controls to the senior management officials or board of directors, who exercise executive control over the entity.  
+- **Sanctions screening:** IFAD screens all counterparties against applicable sanctions lists and industry-standard financial crime databases.  
+- **Financial crime screening:** Searches of counterparties are conducted against industry-standard databases to identify and assess any financial crime/integrity-related concerns (criminal, civil or regulatory issues).  
+- **Politically Exposed Persons (PEPs):** The IDD involves reasonable measures to identify and assess IDD subjects that are PEPs where there could be concerns.  
+- **Nature of the engagement:** The IDD considers the type and nature of IFAD’s engagement and/or transaction and overall financial crime/integrity risk.  
+- **Project host country risk:** Assessment is conducted to determine whether the country is at high risk for ML/TF as a result of a FATF classification based on “strategic deficiencies” in the context of the project, as well as any host country sanctions in place.  
+- **AML/CFT Compliance program:** Additional AML/CFT checks for financial institutions, based on an assessment of their policies and procedures, which is initiated by the recipient completing an AML/CFT Questionnaire.
+
+As indicated above, no specific alerts to be assessed were identified with reference to Executies Entities. Extended checks on financial institutions involved in capacity building initiatives and investments mobilization did not highlight any substantial risk concerns involving sanctions, money laundering, terrorism financing, financial crime, integrity or related risks. The overall risk rating was therefore deemed Moderate Risk.
+
+
+---
+*Chunk pages 68–68*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1292 (sys=94, user=1198), max_out=1024, ctx=8192
+---
+
+# GCF Policies and Standards  
+## G.1. Environmental and social risk assessment (max. 750 words, approximately 1.5 pages)   
+
+### Assignment of the Environmental & Social Risk Category  
+
+162. The proposed environmental and social risk assignment for the project is “Category B”. This risk rating is proposed based on the screening of ES risks and impact associated with the:  
+- (i) type, nature and scale of proposed project activities;  
+- (ii) project’s affected stakeholders and results from stakeholder consultations; and  
+- (iii) socioeconomic and environmental settings (covering inherent risks) of the potential project sites.  
+
+The risk assignment accounts for the likelihood of each risk materializing, cumulative environmental and social impacts, and the severity of a given risk’s impact on achievement of the intended project results. The risk assessment considers the effect(s) of ES risk mitigation measures already utilized in the project areas but does not assume any future additional mitigation measures outside of those proposed in the RECAF project ES instruments.  
+
+### Summary of the main outcomes of ES instruments  
+
+163. Based on the screening, the project design team prepared a(n):  
+- (i) Environmental and Social Management Framework (ESMF, Annex 6A);  
+- (ii) Indigenous Peoples Plan (IPP, Annex 6B);  
+- (iii) Gender Assessment (including the accompanying Gender Action Plan, Annex 8); and  
+- (iv) Stakeholder Engagement Plan (SEP, Annex 7).  
+
+The instruments describe and respond to the assessed environmental and social impacts/risks, as well as related feedback obtained during field visits, household surveys, key informant interviews, and focus group discussions with project stakeholders (Annex 7). A Labor Management Plan (LMP) will be prepared during the first year of implementation and prior to commencement of related activities. Likewise, a Biodiversity Impact Assessment (BIA) and related Biodiversity Management Plan (BMP) are currently underway and will be finalized prior to commencement of activities. Quantitative and qualitative data collected through primary and secondary sources were used to assist the analysis. Key findings are summarized below.  
+
+### ESMF Outcomes: key environmental and social risks and impacts  
+
+#### Social risks and impacts  
+
+164. Social impacts of the project are largely positive. The project activities aim to improve the livelihoods of those experiencing poverty, especially ethnic minorities (with a target of 40% participation) who live near forest areas, while reducing their dependence on unsustainable use of forest resources. These impacts will be achieved through a series of activities meant to improve beneficiaries’ farm skills, business development knowledge, access to loans and land (via forestland allocations), and enhance gender equality through increased female participation in project activities for economic empowerment. Expected activity outcomes include improved quality and yield of farm produce, diversified sources of income, and long-term participation in deforestation-free value chains.  
+
+Key social risks associated with project activities relate to:  
+- (i) community health and safety and gender-based violence due to labor influx (e.g., migrant workers engaged for project construction and other activities);  
+- (ii) child and/or forced labor with the influx of contracted labor;  
+- (iii) occupational health and safety of project workers (e.g., contractors’ workers);  
+- (iv) road safety; and  
+- (v) discrimination and exclusion of disadvantaged/vulnerable groups.  
+
+Inherent risks include potential tensions/conflicts between communities (addressed through the IPPF and project grievance redress mechanism) and presence of child and/or forced labor in the project areas (for example, when children support agricultural activities in ways which are not age appropriate).  
+
+#### Environmental risks and impacts  
+
+165. The project is expected to have largely positive environmental impacts, including improved ecosystem services, soil fertility/soil health, forest health, and natural resources management. Potential negative environmental impacts are expected to be minor, limited in time/scale, and reversible, as they relate to small-scale infrastructure (e.g., small-scale reservoirs, etc.).  
+
+These impacts may include:  
+- (i) erosion and run-off to water bodies during earthworks/construction;  
+- (ii) temporary pollution from construction (e.g., dust, noise, vibration);  
+- (iv) potential water pollution from sourcing aggregates/construction materials (soil, gravels); and  
+- (v) increased water consumption.  
+
+These construction-related environmental risks and impacts will be managed through the application of good construction practices and application of a site-specific Environmental and Social Management Plan (ESMP) written into the contract agreements/procurement of the given construction company/provider. The ESMP will also take into account the territorial and environmental knowledge of the affected ethnic minorities.  
+
+Additional environmental risks include:  
+- (i) presence of unexploded ordinances (UXOs) at construction sites; and  
+- (ii) increased use of pesticides due to crop intensification/improved crop yields.  
+
+The ESM
+
+
+---
+*Chunk pages 69–69*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1281 (sys=94, user=1187), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 65
+
+## Environmental impacts are assessed to be negligible to small given the project’s focus on environmental/forest rehabilitation and construction of small-scale infrastructure.
+
+### IPP Outcomes: potential impacts on Indigenous Peoples and measures to address those impact
+
+166. The impact of the proposed project activities on ethnic minority groups will be largely positive. Environmental and social risks and impacts identified under the initial assessment in the ESMF (which helps determine the scope of any future assessments and ES management plans) have been included in the IPP (Annex 6B), alongside proposed mitigation measures for effective ES management during project implementation. The IPP has been developed to promote the inclusion and participation of poor ethnic minority groups in project planning and implementation. A community-driven development approach will be adopted to ensure the ownership and commitment of ethnic minorities in RECAF provinces, which in turn supports sustainability of the investments, increased self-reliance and community empowerment. The project will enhance existing community-driven development approaches that are suited to the holistic perspectives of the target ethnic minority groups whereby ecosystems and socioeconomic and cultural systems are intertwined. The IPP sets forth steps process for stakeholder engagement – both during project preparation and project implementation to foster meaningful consultation that will lead to free, prior and informed consent of the target ethnic minority communities for proposed project activities that affect them.
+
+### SEP: Summary of multi-stakeholder consultations undertaken during project design & planned for implementation
+
+167. A Stakeholder Engagement Plan (SEP) was prepared during project design and provides guidance on how to conduct stakeholder engagement throughout the project cycle. At project design, 654 people were consulted about the project/safeguards alone, of which 353 were male and 301 were female. Outreach involved a blend of household surveys, key informant interviews, focus group discussions, and site visits. This outreach and engagement helped inform project design – particularly on how to better encourage participation of ethnic minorities, women, youth (in age-appropriate ways) – and helped determine preferred methods of communication (including methods of grievance redress).
+
+### Engagement and information disclosure during implementation
+
+168. During implementation, stakeholder engagement will continue to depend on the target communities and is designed to be, therefore, sensitive to ethnic minority community needs and preferences (as well as differentiated to the needs of vulnerable persons in the project area). All provincial PMUs will maintain FPIC consultations with ethnic minorities and Kinh in the target project communes. FPIC consultations will be factored into the annual Indigenous Peoples’ Plans which each provincial PMU will prepare to ensure ethnic minorities are included in project activities. Gender and youth targets are also mainstreamed into the annual IPPs to ensure that targets are achieved over the project’s life cycle and monitored and evaluated at the project’s midterm and conclusion. All ES instruments, once approved, will be disclosed at least 30 days prior to the GCF Board meeting date. The documents will be posted on the websites of DARD for each project province and summaries of the documents will be disclosed in Vietnamese in communes where potential affected peoples reside. The documents will also be disclosed on the GCF website.
+
+### FPIC-specific (IPP/Ethnic minority community) consultations
+
+169. FPIC consultation were conducted with ethnic minority groups and Kinh present in the project area. FPIC-specific consultations aimed to: (i) provide the concerned ethnic minority communities with information about project’s objective, scope of work, activities, social and environmental risks and impacts, and grievance redress procedures; and (ii) solicit their preferences based on their current traditional practices, including preferred approaches to avoiding, minimizing, and mitigating social and environmental risks and impacts and enhancing development impacts of the proposed project activities. Of the 654 people consulted (353 male, 301 female), most were ethnic minorities and participated in the FPIC consultation, which involved a blend of focus group discussions, key informant interviews, and household surveys (in this case, the IP/EM-specific questions were part of the broader household survey used). As part of the FPIC consultations, key project information was disclosed at an early stage of the project design (June – November 2021 and May – July 2022, respectively) to the potential target ethnic minority and Kinh communities who were expected to benefit from the project and may be impacted by the project. Later, once the project design is completed and ES instruments are finalized, FPIC consultations with ethnic minorities will be repeated to provide these groups and Kinh with updated project information and solicit their meaningful feedback for incorporation into project activities. All project information has been presented in a manner that is culturally appropriate to the consulted communities, such as forms of presentation and use of local languages. Sufficient time has been arranged – between the early stages of project design and design completion – to allow ethnic minority communities sufficient time to understand project activities, associated environmental and social risks and impacts
+
+
+---
+*Chunk pages 70–70*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1238 (sys=94, user=1144), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 66
+
+## Resources
+
+Their traditional knowledge and practices related to environmental and social management, for instance, will be adopted in a way that are preferred and culturally appropriate to each ethnic minority group.
+
+## Mitigation measures at throughout the project cycle
+
+170. Mitigation measures across the project cycle are detailed within the ESMF, SEP, and IPPF, respectively. The ESMF details the screening procedures and tentative risks by project Outcome/Output/activity, along with the steps required during implementation/operation and the associated monitoring/reporting. The IPPF, similarly, provides guidance on how to move from informed and iterative consultations in design towards full FPIC agreements with ethnic minority communities and incorporation of their traditional ecological knowledge within the project activities during implementation. Both documents detail the project’s grievance redress mechanism.
+
+The SEP, which covers engagement of stakeholders throughout the project cycle, was instrumental in guiding the design-phase consultations. During preparation, the risk of potential exclusion of vulnerable populations was avoided through extensive outreach and consultation (654 people were consulted, of which 353 were male and 301 were female). These consultations helped inform project design such that the project activities serve as mitigation measures themselves. For example: (i) activity 1.2.1 upgrades the SIS for better monitoring/management and compliance with international standards and (ii) activity 2.1.2, likewise, supports IPM and practices for improved soil fertility.
+
+Two safeguards specialists at each provincial PMU will support the development of site-specific ES instruments, implementation of mitigation measures, and monitoring/reporting throughout the project cycle.
+
+## Project-level Grievance Redress Mechanism (GRM)
+
+171. The project has designed a GRM to provide complainants with redress procedures that are accessible, easily used, and free of charge to enable affected peoples to raise project related concerns and grievances. The project GRMs provide information on how to lodge complaints, including the forms, channels, steps, and processing/turnaround time associated with each step (e.g., time limit for acknowledging receipt of the complaint, notification of the resolution decision, etc.). The GRM accounts for local practices of ethnic minorities in relation to grievance redress/conflict resolution, including the use of local ethnic minority language. During the grievance resolution progress, where necessary, dialogues will be held between the project’s designated GRM unit/personnel and the aggrieved person(s) to promote mutual understanding and collaboration among relevant parties for effective resolution (See Section 9 of IPP for details, Section IX of the SEP, and the related chapter within the ESMF).
+
+## Capacity of the Executing Entities to implement the ESMP and ESMF and arrangements for compliance monitoring, supervision and reporting
+
+172. The project provinces have prior experience with implementing projects financed by IFAD, the World Bank, Asian Development Bank, and other international development partners. They are familiar with the related safeguards/ESS standards of these organization. Nonetheless, given that RECAF has a target of 40% of its total beneficiary households to be ethnic minority households and incorporates/integrates gender and youth within specific performance indicators and targets, provincial PMUs will be trained during the first year of project implementation on the IFAD and GCF’s environmental and social safeguard standards (ESS), particularly on how to effectively implement the triggered ESS standards during the project cycle. Some of this capacity development was already initiated at project design, when the design team provided training for household survey enumerators and gave sensitization training to the provincial teams supporting project design. The PMU’s ESS capacity (that is developed from the first year of project implementation) will be assessed by the end of the first year to inform if additional capacity development is required.
+
+## G.2. Gender assessment and action plan (max. 500 words, approximately 1 page)
+
+173. The gender assessment was carried out through extensive collection and analysis of secondary data (national, regional, provincial level) and primary data (project level). Primary data were collected through consultation with about 654 people, of which 90% are ethnic minority people and close to 50% are female. All consulted people live in 21 districts of 5 project provinces. These districts are identified (through data analysis under the project) as hotspots for deforestation.
+
+174. Key findings. The gender assessment suggests that the ethnic minorities in the project are very poor and as such vulnerable to the potential impact of climate change, particularly to their current agricultural production which makes up 77% for cultivation, 26% for animal husbandry, and 6% for forestry. The monthly average cash income of women is lower than that of men (n=1,340) and average productive land access among female headed households is lower than that of male headed households. However, for youth respondents, there is
+
+
+---
+*Chunk pages 71–71*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1113 (sys=94, user=1019), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 67
+
+## Production Forest, Protection Forest, Agri-land for Animal Husbandry and Residential land), only 36.7% (n=182) have both husband and wife’s names on their LURCs (See Section 3.3.2).
+
+### In terms of division of labor and decision making, gender stereotypes still exist due to social norms by which women typically spend most of their daily time for unpaid domestic works whereas men spend most of their time for paid work and social activities outside their home. Albeit most of the financial decision-making rest with female members, particularly for domestic activities, decision making in agricultural production appears to be mainly taken by men as they are perceived to be more knowledgeable about cultivation practices, innovation, labor, and market due to being more socialized (See Section 3.3.3 and 3.3.4). As a result, women appear being less confident in (i) identifying business opportunities, (ii) protecting their business from being harmed, and (iii) bargaining for better prices. They are also less likely to be able to visit friends, relatives in nearby villages or neighboring province, as they have to ask for permission of their husbands (See Section 3.3.5).
+
+### Recommendations. Based on the results of the gender assessment, a Gender Action Plan and IPP were prepared to ensure inclusion of women during all project planning activities and investment activities that benefit them at both household and community level. To promote female participation in project activities (which deviate from the current labor division and social norms), the following key actions will be implemented:
+
+- Ensure at least 40% of female participating in all project planning activities – be it intended to benefit local people at community or household level, including female-headed households;
+- Reduce women’s burden from traditional household chores by:
+  - Exploring and promoting activities and technologies that help women save time and labor including drudgery reduction mechanisms;
+  - Exploring and increasing use of small-scale practices that involve mechanization to free up intensive and heavy labor. This can be shared in groups of people that typically share labor;
+  - Encouraging men to share more domestic works (towards equal sharing) to enable women to take trainings outside their home.
+- Provide funding and capacity building trainings, e.g., technologies, leadership training, financial literacy, business development, etc. to develop value chains that women are more comfortable/skilled for niche products such as bee-keeping, sericulture, weaving, natural dyes (which can be introduced/included in agro-forestry interventions);
+- Conduct Information, Education and Communication (IEC) campaigns for awareness raising, sharing success story and champions;
+- Promote female participation throughout the whole process of government-led FLA, including joint ownership of forestland to promote decision making on the part of women.
+
+### The above actions aim to promote equal participation of women from project’s target groups, which will enhance female participation in project planning and implementation activities and foster the process of economic empowerment for female members. Further details are provided in the full gender assessment and project-level gender action plan in Annex 8.
+
+## G.3. Financial management and procurement (max. 500 words, approximately 1 page)
+
+### Financial Management
+
+#### Staffing. All five provinces and MARD will use their respective accounting and finance unit staff to manage the financial management aspects of the project. All provinces have identified FM staff who will work on RECAF, most of whom are experienced in IFIs-funded operations. IFAD will provide additional hands-on training and support before the project implementation start and during the implementation. The project will entirely rely on government staff for FM.
+
+#### Budgeting. Inflexible internal government regulations pose severe risks to the timely allocation of funds and disbursements. Therefore, the project will have dedicated staff at the PMU with the required skills to address all challenges related to internal government regulations well in advance. As a result, the PMU will manage adequate budget allocations for each year. In addition, the AWPB for each year will be submitted 60 days before the start of each financial year. The AWPB will split planned project expenditures by funding source, expense category, Outcomes, Outputs, and activities (GCF budgeting requirement). IFAD funds will only finance capital expenditures. GCF and Government co-financing funds will also finance recurrent expenditures and soft investments such as
+
+---
+
+
+---
+*Chunk pages 72–72*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1291 (sys=94, user=1197), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 68
+
+## Training and Consultancies
+
+Budget execution will be monitored quarterly utilizing the accounting software of the project.
+
+## Funds Flow and Disbursements
+
+All provinces and MARD will maintain DAs in USD for both IFAD Loan and GCF grant and Project Accounts in VND at the State Treasury. Funds will flow from DAs to Project Accounts based on annually approved budgets for each province and MARD. Viet Nam’s Treasury system is reliable for maintaining DAs and Project Accounts. IFAD and GCF funds will be disbursed based on quarterly Interim Financial Reports (IFRs). All provinces and MARD will have procedures and systems to ensure that accurate IFRs are sent to IF AD within the agreed deadlines. Each WA will be accompanied by the most recent IFRs, including the cash forecast for the next two quarters.
+
+## Internal Controls
+
+All provincial governments and central ministries are required to follow stringent financial regulations of the Government. Therefore, the internal control environment is reliable though inflexible rules cause inefficiencies in allocating funds and disburs ements. The project is developing a PIM to consolidate all relevant policies and procedures of the Government, GCF, and IFAD to be applied during the implementation of the project. Project Managers will be responsible for the duly enforcement of the PIM provisions.
+
+## Accounting and Financial Reporting
+
+All provinces will procure and customize accounting software for the project needs. The software will need to maintain accounting records on double entry bookkeeping principles. The accounting systems will be customized to generate GCF (expenditures split by funding source, expense category, Outcomes, Outputs, and activities), IFAD, and government-required reports. In addition to quarterly IFRs, all provinces will produce and submit IFAD semi-annual certified financial reports using the GCF template and guidelines within 30 days from the end of each period. The report for each province and MARD will be consolidated at the PMU level and sent to IFAD. The FMFCL and PIM will include a reporting template to be used by the Borrower/Recipient when preparing the certified report to ensure consistency and easy compilation of the combined GCF account statement. IFAD will work with the project team to ensure that IFAD and GCF required reports are harmonized as much as possible.
+
+## External Audit
+
+Private sector auditors will audit annually project financial statements. The project will submit audit reports to IFAD within five months of the end of each period. ToRs of the annual project audit will include an assessment of the compliance with the applicable GCF requirements and special opinions needed for IFAD’s compliance with GCF requirements. In addition, the GCF will have the right to conduct ad-hoc checks on the use of its funds and conduct ex-post evaluations as required in terms of the Financing Agreement.
+
+## Although Not Required
+
+The PDT has prepared a Fiduciary Summary as part of the project design documentation.
+
+## Procurement
+
+Public procurement in Viet Nam is governed by the Law on Public Procurement (No. 22/2023/QH15), Decree 24/2024/ND-CP on Instructions for Implementation of the Law on Public Procurement. The procurement framework of Viet Nam is well developed and considered consistent with the internationally accepted principles. The legislative system is applicable and mandatory to all procurement activities by public bodies at central and local levels for goods, works, consulting services and non-consulting services using state funds.
+
+## The e-Procurement System
+
+The e-Procurement system in the country is well functioning supporting the procurement process, including advertisement of procurement plan, invitation for bids, bidding documents, submission of bids, bid opening, advertisement of bidding result for procuring goods, works and consulting services. Since 2019, ADB and WB endorsed use of the system to procure NCB contracts of goods and works under the two banks system.
+
+## Procurement Risk Assessment
+
+Procurement risk assessment for RECAF shows that the overall inherent procurement risk (Part A and Part B) is moderate. The overall Residual Risk is rated as low. The main project procurement risks include: (i) minor discrepancies between IFAD Project Procurement Guidelines and the Law on Public Procurement in terms of conditions and thresholds for applying direct contracting and single source selection, procurement method (CQS); (ii) there are often constraints in budget allocation, funds are not always released or allocated in a timely manner based on the approved AWPB supporting planned activities; (iii) limited English skills of project staff including procurement staff; and (iv) procurement processes (planning, bidding, contract award and contract implementation) are often delayed.
+
+## Several Mitigation Measures
+
+Several mitigation measures for project procurement risks are: (i) using IFAD’s Online Procurement End-to-End System (OPEN) and ICP Contract Monitoring Tool for monitoring project procurement activities; (ii) applying e-Procurement
+
+
+---
+*Chunk pages 73–73*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1358 (sys=94, user=1264), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 69
+
+## 189. Applicable regulations and procurement arrangements
+
+Procurement under RECAF shall be carried out in accordance with the Law on Public Procurement (No. 22/2023/QH15), Decree 24/2024/ND -CP and subsequently updated public procurement regulations as long they are consistent with IFAD Project Procurement Guidelines. In cases there are contradictions between IFAD Procurement Guidelines and the national procurement regulations, IFAD Procurement Guidelines will take precedence and govern.
+
+## 190. The PMU at DOF and the provincial PMUs at project provinces (Dak Lak, Dak Nong, Gia Lai, Lam Dong and Ninh Thuan) are directly responsive for project procurement activities for goods, works and services. Procurement of climate resilient infrastructure investments (e.g., water infrastructures, value added processing facilities, forest protection infrastructures) under Output 2.2 will be carried out by the provincial PMUs. For decentralized activities (trainings, extension services, inputs for agroforestry pi lot activities, etc.), procurement will be undertaken by project implementing partners (DARD and sub- departments under DARD, WU, District People’s Committees and/or Commune People’s Committees).
+
+## 191. Innovative PES Funds (i.e., IPFs) under Output 2.3 will be implemented by the Provincial Forest Protection and Development Funds (PFPDF) in project provinces based on the IPF guidelines. The PFPDF is an independent legal entity and is under the direction and control of the PPC at the provincial level. Thus, paragraphs 202-204 in the PIM and Activity 2.3.1 in Annex 25 discuss the operations of the IPF and refer to the functions of the PFPDF. Furthermore, the PFPDF in each province is functioning under the directions and control of the PPC. It is confirmed that the implementation of this activity, more specifically the selection of the IPF proposals and the payments scheme will be carried out by the PFPDFs, in line with the final criteria and that the final decision-making authority remains with the PPCs (as the EEs for this project). The IPF will be operationalized and disbursing sub- grants during the project. For more information, please refer to paras 200-205 in the Annex 21 (PIM).
+
+## 192. The project shall recruit a fulltime Procurement Officer at each PMU in project provinces. The Procurement Officer will be responsible for carrying out procurement planning and implementation at the PMU; training, supporting project staffs at the PMU and implementer agencies undertaking project procurement activities. A Procurement Committee including at least 3 representatives of assigned PMU staff or hired procurement consultants will be established for each procurement activity undertaken. IFAD will ensure the TOR for the recruitment and recruited procurement officers are accredited or certified professionals by subjecting the selection or appointment to be subject to IFAD prior review.
+
+## Procurement Plan
+
+### 193. IFAD’s prior no- objection is required on the Project Implementation Manual (PIM) dictating all implementation modalities (including operational, financial and procurement); the Annual Work Plans and Budgets (AWPBs) dictating the use of funds. The initial 18- month Procurement Plan (PP), and subsequently the annual PPs in consistency with the AWPBs shall be prepared and obtain IFAD no objection before proceeding with procurement activities. These aspects will be described in the Subsidiary Agreements with the EEs, as per standard IFAD practice, in line with IFAD General Conditions for Financing Agreements. Project procurement plan will be prepared and monitored through IFAD’s Online Procurement End- to-End System (OPEN). Data and information of all contracts including Memorandum of Agreements must be listed and updated on a regular basis in the IFAD Client Portal - Contract Monitoring Tool (ICP -CMT).
+
+### 194. Governance and anti-corruption measures. Project staff, beneficiaries, and all bidders, suppliers, contractors and consultants under IFAD -financed contracts are expected to observe the highest standard of ethics and integrity during the procurement and execution of project activities. IFAD will not finance expenditures for goods, works or consulting services that have not been procured in accordance with IFAD Project Procurement Guideline and the Financing Agreement. In such cases, IFAD may, in addition, take other remedial action under the financing agreement, including cancellation of the amount in question from the loan account by declaring it ineligible. Even if the contract was awarded following IFAD’s “no objection” statement, IFAD may still declare mis -procurement if it concludes that this statement was issued on the basis of incomplete, inaccurate or misleading information
+
+
+---
+*Chunk pages 74–74*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=577 (sys=94, user=483), max_out=1024, ctx=8192
+---
+
+# G.4. Disclosure of funding proposal
+
+**No confidential information:** The accredited entity confirms that the funding proposal, including its annexes, may be disclosed in full by the GCF, as no information is being provided in confidence.
+
+**With confidential information:** The accredited entity declares that the funding proposal, including its annexes, may not be disclosed in full by the GCF, as certain information is being provided in confidence. Accordingly, the accredited entity is providing to the Secretariat the following two copies of the funding proposal, including all annexes:
+
+- Full copy for internal use of the GCF in which the confidential portions are marked accordingly, together with an explanatory note regarding the said portions and the corresponding reason for confidentiality under the accredited entity’s disclosure policy, and
+- Redacted copy for disclosure on the GCF website.
+
+The funding proposal can only be processed upon receipt of the two copies above, if containing confidential information.
+
+
+---
+*Chunk pages 75–75*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=696 (sys=94, user=602), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 71
+
+* Please note that a funding proposal will be considered complete only upon receipt of all the applicable supporting documents.
+
+## ANNEXES
+
+### H.1. Mandatory annexes
+
+- ☒ Annex 1 NDA no-objection letter(s) (template provided)
+- ☒ Annex 2 Feasibility study - and a market study, if applicable
+- ☒ Annex 3 Economic and/or financial analyses in spreadsheet format
+- ☒ Annex 4 Detailed budget plan (template provided)
+- ☒ Annex 5 Implementation timetable including key project/programme milestones (template provided)
+- ☒ Annex 6 E&S document corresponding to the E&S category (A, B or C; or I1, I2 or I3):  
+  (ESS disclosure form provided)
+- ☐ Environmental and Social Impact Assessment (ESIA) or
+- ☒ Environmental and Social Management Plan (ESMP) or
+- ☐ Environmental and Social Management System (ESMS)
+- ☐ Others (please specify – e.g. Resettlement Action Plan, Resettlement Policy Framework, Indigenous People’s Plan, Land Acquisition Plan, etc.)
+- ☒ Annex 7 Summary of consultations and stakeholder engagement plan
+- ☒ Annex 8 Gender assessment and project/programme-level action plan (template provided)
+- ☒ Annex 9 Legal due diligence (regulation, taxation and insurance)
+- ☒ Annex 10 Procurement plan (template provided)
+- ☒ Annex 11 Monitoring and evaluation plan (template provided)
+- ☒ Annex 12 AE fee request (template provided)
+- ☒ Annex 13 Co-financing commitment letter, if applicable (template provided)
+- ☒ Annex 14 Term sheet including a detailed disbursement schedule and, if applicable, repayment schedule
+
+### H.2. Other annexes as applicable
+
+- ☐ Annex 15 Evidence of internal approval (template provided)
+- ☒ Annex 16 Map(s) indicating the location of proposed interventions
+- ☐ Annex 17 Multi-country project/programme information (template provided)
+- ☐ Annex 18 Appraisal, due diligence or evaluation report for proposals based on up-scaling or replicating a pilot project
+- ☐ Annex 19 Procedures for controlling procurement by third parties or executing entities undertaking projects financed by the entity
+- Annex 20 First level AML/CFT (KYC) assessment
+- Annex 21 Operations manual (Operations and maintenance)
+- Annex 22 Assessment of GHG emission reductions and their monitoring and reporting (for mitigation and cross-cutting projects)51
+
+- Annex X Other references
+
+
+---
+*Chunk pages 76–76*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=148 (sys=94, user=54), max_out=1024, ctx=8192
+---
+
+# No-objection letter issued by the national designated authority(ies) or focal point(s)
+
+--- 
+
+This section appears to be a heading or title related to the issuance of no-objection letters by national designated authorities or focal points. The content suggests that this is likely part of a larger document or policy framework, possibly related to regulatory or administrative procedures.
+
+If further context were provided, it might clarify whether this refers to a specific process, legal framework, or institutional procedure. However, based on the extracted text alone, it seems to indicate that such letters are issued by national authorities or focal points, possibly in response to certain requests or applications.
+
+The phrase "no-objection letter" implies that these documents are used to confirm that there are no objections to a particular action or decision, often in regulatory or administrative contexts. The inclusion of "national designated authority(ies)" suggests that this is a formal process involving specific institutions or agencies responsible for issuing such letters.
+
+In summary, this section likely outlines the issuance of no-objection letters by national authorities or focal points, possibly as part of a broader regulatory framework or administrative procedure.
+
+---
+
+**Note:** The original page number (76) is preserved in the markdown format. If additional content were available from this page, it would be included here. However, based on the provided text, only the heading and brief description are present.
+
+
+---
+*Chunk pages 77–77*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=691 (sys=94, user=597), max_out=1024, ctx=8192
+---
+
+# Environmental and Social Safeguards Report Form
+
+## Basic project or programme information
+
+### Project or programme title
+Achieving emission reduction in the Central Highlands and South Central Coast of Viet Nam to support National REDD+ Action Programme goals (RECAF)
+
+### Existence of subproject(s) to be identified after GCF Board approval
+Yes
+
+### Sector (public or private)
+Public
+
+### Accredited entity
+International Fund for Agricultural Development (IFAD)
+
+### Environmental and social safeguards (ESS) category
+Category B
+
+### Location – specific location(s) of project or target country or location(s) of programme
+Central Highlands provinces of Gia Lai, Dak Lak, Dak Nong, and Lam Dong, and the province of Ninh Thuan in the South-Central Coast of the Socialist Republic of Viet Nam
+
+### Environmental and Social Impact Assessment (ESIA) (if applicable)
+Not specified
+
+### Date of disclosure on accredited entity’s website
+Thursday, September 19, 2024
+
+### Language(s) of disclosure
+English and Vietnamese
+
+#### Explanation on language
+Vietnamese is the official language of Viet Nam.
+
+#### Link to disclosure
+- English: [https://www.ifad.org/documents/d/guest/annex-6a-environmental-and-social-management-framework-august-29-2024-clean](https://www.ifad.org/documents/d/guest/annex-6a-environmental-and-social-management-framework-august-29-2024-clean)
+- Vietnamese: [https://www.ifad.org/documents/d/guest/annex-6a-environmental-and-social-management-framework-august-29-2024-clean-vie](https://www.ifad.org/documents/d/guest/annex-6a-environmental-and-social-management-framework-august-29-2024-clean-vie)
+
+#### Other link(s)
+All docs are available in the IFAD Social, Environmental and Climate Assessment Procedures (SECAP) webpage: [https://www.ifad.org/en/secap-disclosed-documents](https://www.ifad.org/en/secap-disclosed-documents)
+
+The following are the weblinks to the Annex 6a ESMF disclosed on the governmental websites:
+- Ministry of Agriculture and Rural Development (MARD)/Department of Forestry (DoF): [https://cuclamnghiep.gov.vn/2024/09/17/bao-cao-khung-quan-ly-moi-truong-xa-hoi/](https://cuclamnghiep.gov.vn/2024/09/17/bao-cao-khung-quan-ly-moi-truong-xa-hoi/)
+- Gia Lai province – Department of Planning and Investment: [https://skhdt.gialai.gov.vn/News/VP/Tai-lieu-cong-bo-thuoc-du-an-Giam-thieu-khi-thai-o.aspx](https://skhdt.gialai.gov.vn/News/VP/Tai-lieu-cong-bo-thuoc-du-an-Giam-thieu-khi-thai-o.aspx)
+- Dak Lak province – Department of Forest Protection: [http://kiemlam.nnptnt.daklak.gov.vn/tai-lieu-cong-bo-thuoc-du-an-giam-thieu-khi-thai-o-khu-vuc-tay-nguyen-va-duyen-hai-nam-trung-bo-viet](http://kiemlam.nnptnt.daklak.gov.vn/tai-lieu-cong-bo-thuoc-du-an-giam-thieu-khi-thai-o-khu-vuc-tay-nguyen-va-duyen-hai-nam-trung-bo-viet)
+
+
+---
+*Chunk pages 78–78*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=941 (sys=94, user=847), max_out=1024, ctx=8192
+---
+
+# [Page 1]
+
+## Project Environmental and Social Management Framework (ESMF)
+
+An ESIA consistent with the requirements for a Category B project is contained in the project Environmental and Social Management Framework (ESMF) (Annex 6a of FP package).
+
+## Environmental and Social Management Plan (ESMP) (if applicable)
+
+### Date of disclosure on accredited entity’s website
+
+Thursday, September 19, 2024
+
+### Language(s) of disclosure
+
+English and Vietnamese
+
+#### Explanation on language
+
+Vietnamese is the official language of Viet Nam.
+
+### Link to disclosure
+
+#### English:
+
+https://www.ifad.org/documents/d/guest/annex-6a-environmental-and-social-management-framework-august-29-2024-clean
+
+---
+
+## Department of Agriculture and Rural Development
+
+https://nnptnt.daklak.gov.vn/chi-tiet-van-ban/-  
+van-ban/tai-lieu-cong-bo-thuoc-du-an-giam-thieu-khi-thai-o-khu-vuc-tay-nguyen-va-duyen-hai-nam-trung-bo-viet-nam-nham-gop-phan-thuc-hien-cac-muc-tieu-chuong-trinh-hanh-dong-quoc-gia-redd-recaf-do-quy-phat-trien-nong-nghiep-quoc-te-ifad-va-quy-khi-hau-xanh-gcf-tai-tro.1413?gidzl=VvOn2ij_fMrzZpGBoMUYQN-9EmxNRgjdP81kK8Tgg3Oqq3zLWcpxC3o1OmVUE_9XReTYL6I6tg1HotkeQG  
+
+## Dak Nong province – Department of Agriculture and Rural Development
+
+https://snnptnt.daknong.gov.vn/Bai-Viet-Chi-Tiet/1761/tai-lieu-cong-bo-thuoc-du-an-giam-thieu-khi-thai-o-khu-vuc-tay-nguyen-va-duyen-hai-nam-trung-bo-viet-nam-nham-gop-phan-thuc-hien-cac-muc-tieu-chuong-trinh-hanh-dong-quoc-gia-redd-recaf-do-quy-phat-trien-nong-nghiep-quoc-te-ifad-va-quy-khi-hau-xanh-gcf-tai-tro  
+
+## Lam Dong province
+
+https://lamdong.gov.vn/sites/snnptnt/th%C3%B4ng%20tin%20tuy%C3%AAn%20truy%E1%BB%81n/SitePages/Giam-thieu-khi-thai-o-khu-vuc-Tay-Nguyen-va-duyen-hai-Nam-Trung-Bo-Viet-Nam-nham-gop-phan-thuc-hien-cac-muc-tieu-Chuong-trinh-Hanh-dong-quoc-gia-REDD--RECAF.aspx?gidzl=QHxQK1Xped5l0TvG6MkbT6GFsLKEOl8XVmxTLWameNLrNjnKKZkZTtDNsWG5EAuYS0BR0MD4N4qM77MYS0  
+
+## Ninh Thuan province – Department of Planning and Investment
+
+https://sokhdt.ninhthuan.gov.vn/portal/Pages/2024-9-17/Tai-lieu-cong-bo-thuoc-du-an-Giam-thieu-khi-thai-o5bgn1k.aspx  
+
+---
+
+## Remarks
+
+An ESIA consistent with the requirements for a Category B project is contained in the project Environmental and Social Management Framework (ESMF) (Annex 6a of FP package).
+
+
+---
+*Chunk pages 79–79*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=952 (sys=94, user=858), max_out=1024, ctx=8192
+---
+
+# [Page 1]
+
+Vietnamese:  
+https://www.ifad.org/documents/d/guest/annex-6a-  
+environmental-and-social-management-framework-  
+august-29-2024-clean-vie  
+
+Other link(s)  
+All docs are available in the IFAD Social, Environmental  
+and Climate Assessment Procedures (SECAP) webpage:  
+https://www.ifad.org/en/secap-disclosed-documents  
+
+The following are the web links to the Annex 6a ESMF  
+disclosed on the governmental websites:  
+• Ministry of Agriculture and Rural Development  
+(MARD)/Department of Forestry (DoF):  
+https://cuclamnghiep.gov.vn/2024/09/17/bao-  
+report-khung-quan-ly-moi-truong-xa-hoi/  
+• Gia Lai province – Department of Planning and  
+Investment  
+https://skhdt.gialai.gov.vn/News/VP/Tai-lieu-  
+cong-bo-thuoc-du-an-Giam-thieu-khi-thai-o.aspx    
+• Dak Lak province – Department of Forest  
+Protection:  
+http://kiemlam.nnptnt.daklak.gov.vn/tai-lieu-  
+cong-bo-thuoc-du-an-giam-thieu-khi-thai-o-khu-  
+vuc-tay-nguyen-va-duyen-hai-nam-trung-bo-viet-  
+nam-nham-gop-phan-thuc-hien-cac-muc-tieu-  
+chuong-trinh-hanh-dong-quoc-gia-redd-recaf-do-  
+quy-phat-tri-328.html;    
+• Department of Agriculture and Rural Development:  
+https://nnptnt.daklak.gov.vn/chi-tiet-van-ban/-  
+van-ban/tai-lieu-cong-bo-thuoc-du-an-giam-  
+thieu-khi-thai-o-khu-vuc-tay-nguyen-va-duyen-hai-  
+nam-trung-bo-viet-nam-nham-gop-phan-thuc-  
+hien-cac-muc-tieu-chuong-trinh-hanh-ong-quoc-  
+gia-redd-recaf-do-quy-phat-trien-nong-nghiep-  
+quoc-te-ifad-va-quy-khi-hau-xanh-gcf-tai-tro.-  
+1413?gidzl=VvOn2ij_fMrzZpGBoMUYQN-  
+9EmxNRgjdP81kK8Tgg3Oqq3zLWcpxC3o1OmVUE  
+_9XReTYL6I6tg1HotkeQG  
+
+• Dak Nong province – Department of Agriculture  
+and Rural Development:  
+https://snnptnt.daknong.gov.vn/Bai-Viet-Chi-  
+Tiet/1761/tai-lieu-cong-bo-thuoc-du-an-giam-  
+thieu-khi-thai-o-khu-vuc-tay-nguyen-va-duyen-hai-  
+nam-trung-bo-viet-nam-nham-gop-phan-thuc-  
+hien-cac-muc-tieu-chuong-trinh-hanh-dong-quoc-  
+gia-redd-recaf-do-quy-phat-trien-nong-nghiep-  
+quoc-te-ifad-va-quy-khi-hau-xanh-gcf-tai-tro  
+
+• Lam Dong province:  
+https://lamdong.gov.vn/sites/snnptnt/th%C3%B4  
+ng%20tin%20tuy%C3%AAn%20truy%E1%BB%8  
+1n/SitePages/Giam-thieu-khi-thai-o-khu-vuc-Tay-  
+Nguyen-va-duyen-hai-Nam-Trung-Bo-Viet-Nam-  
+nham-gop-phan-thuc-hien-cac-muc-tieu-Chuong-  
+trinh-Hanh-dong-quoc-gia-REDD--
+
+
+---
+*Chunk pages 80–80*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=744 (sys=94, user=650), max_out=1024, ctx=8192
+---
+
+# [Page 1]
+
+RECAF.aspx?gidzl=QHxQK1Xped5l0TvG6MkbT6GF  
+sLKEOl8XVmxTLWameNLrNjnKKZkZTtDNsWG5EA  
+uYS0BR0MD4N4qM77MYS0  
+
+• Ninh Thuan province – Department of Planning and Investment:  
+https://sokhdt.ninhthuan.gov.vn/portal/Pages/20  
+24-9-17/Tai-lieu-cong-bo-thuoc-du-an-Giam-thieu-  
+khi-thai-o5bgn1k.aspx  
+
+## Remarks
+
+An ESMP consistent with the requirements for a Category B project is contained in the project Environmental and Social Management Framework (ESMF) (Annex 6a of FP package).  
+
+Environmental and Social Management System (ESMS) (if applicable)  
+
+Date of disclosure on accredited entity’s website N/A  
+Language(s) of disclosure N/A  
+Explanation on language N/A  
+Link to disclosure N/A  
+Other link(s) N/A  
+Remarks N/A  
+
+Any other relevant ESS reports, e.g. Resettlement Action Plan (RAP), Resettlement Policy Framework (RPF), Indigenous Peoples Plan (IPP), Indigenous Peoples Planning Framework (IPPF) (if applicable)  
+
+Description of report/ Date of disclosure on accredited entity’s website  
+Indigenous Peoples Plan (IPP) / Thursday, September 19, 2024  
+
+Language(s) of disclosure English and Vietnamese  
+Explanation on language Vietnamese is the official language of Viet Nam.  
+Link to disclosure  
+English:  
+https://www.ifad.org/documents/d/guest/annex-6b-  
+recaf-indigenous-peoples-plan-august-24-2024-clean  
+
+Vietnamese:  
+https://www.ifad.org/documents/d/guest/annex-6b-  
+recaf-indigenous-peoples-plan-august-24-2024-clean_vie  
+
+Other link(s)  
+
+All docs are available in the IFAD Social, Environmental  
+and Climate Assessment Procedures (SECAP) webpage:  
+https://www.ifad.org/en/secap-disclosed-documents  
+
+The following are the weblinks to the Annex 6b IPP  
+disclosed on the governmental websites (in Vietnamese):  
+
+• Ministry of Agriculture and Rural Development  
+(MARD)/Department of Forestry (DoF):  
+https://cuclamnghiep.gov.vn/2024/09/17/bao-  
+report-ke-hoach-danh-cho-nguoi-dan-toc-thieu-so/  
+
+• Gia Lai province – Department of Planning and  
+Investment Department of Planning and  
+Investment  
+https://skhdt.gialai.gov.vn/News/VP/Tai-lieu-  
+cong-bo-thuoc-du-an-Giam-thieu-khi-thai-o.aspx
+
+
+---
+*Chunk pages 81–81*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=954 (sys=94, user=860), max_out=1024, ctx=8192
+---
+
+# [Page 1]
+
+• Dak Lak province – Department of Forest Protection:  
+http://kiemlam.nnptnt.daklak.gov.vn/tai-lieu-cong-bo-thuoc-du-an-giam-thieu-khi-thai-o-khu-vuc-tay-nguyen-va-duyen-hai-nam-trung-bo-viet-nam-nham-gop-phan-thuc-hien-cac-muc-tieu-chuong-trinh-hanh-dong-quoc-gia-redd-recaf-do-quy-phat-tri-328.html;  
+
+• Department of Agriculture and Rural Development:  
+https://nnptnt.daklak.gov.vn/chi-tiet-van-ban/-van-ban/tai-lieu-cong-bo-thuoc-du-an-giam-thieu-khi-thai-o-khu-vuc-tay-nguyen-va-duyen-hai-nam-trung-bo-viet-nam-nham-gop-phan-thuc-hien-cac-muc-tieu-chuong-trinh-hanh-ong-quoc-gia-redd-recaf-do-quy-phat-trien-nong-nghiep-quoc-te-ifad-va-quy-khi-hau-xanh-gcf-tai-tro.1413?gidzl=VvOn2ij_fMrzZpGBoMUYQN-9EmxNRgjdP81kK8Tgg3Oqq3zLWcpxC3o1OmVUE_9XReTYL6I6tg1HotkeQG  
+
+• Dak Nong province – Department of Agriculture and Rural Development:  
+https://snnptnt.daknong.gov.vn/Bai-Viet-Chi-Tiet/1761/tai-lieu-cong-bo-thuoc-du-an-giam-thieu-khi-thai-o-khu-vuc-tay-nguyen-va-duyen-hai-nam-trung-bo-viet-nam-nham-gop-phan-thuc-hien-cac-muc-tieu-chuong-trinh-hanh-dong-quoc-gia-redd-recaf-do-quy-phat-trien-nong-nghiep-quoc-te-ifad-va-quy-khi-hau-xanh-gcf-tai-tro  
+
+• Lam Dong province: Department of Agriculture and Rural Development:  
+https://lamdong.gov.vn/sites/snnptnt/th%C3%B4ng%20tin%20tuy%C3%AAn%20truy%E1%BB%81n/SitePages/Giam-thieu-khi-thai-o-khu-vuc-Tay-Nguyen-va-duyen-hai-Nam-Trung-Bo-Viet-Nam-nham-gop-phan-thuc-hien-cac-muc-tieu-Chuong-trinh-Hanh-dong-quoc-gia-REDD--RECAF.aspx?gidzl=QHxQK1Xped5l0TvG6MkbT6GFsLKEOl8XVmxTLWameNLrNjnKKZkZTtDNsWG5EAuYS0BR0MD4N4qM77MYS0  
+
+• Ninh Thuan province – Department of Planning and Investment:  
+https://sokhdt.ninhthuan.gov.vn/portal/Pages/2024-9-17/Tai-lieu-cong-bo-thuoc-du-an-Giam-thieu-khi-thai-o5bgn1k.aspx;  
+
+## Remarks
+
+An Indigenous Peoples Plan (IPP) was prepared as Annex 6b of the FP package.  
+Disclosure in locations convenient to affected peoples (stakeholders)  
+
+### Date
+
+Thursday, September 19, 2024  
+
+### Place
+
+The following are the addresses in which both Annex 6a ESMF and Annex 6b IPP have been disclosed:
+
+
+---
+*Chunk pages 82–82*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=468 (sys=94, user=374), max_out=1024, ctx=8192
+---
+
+# Ministry of Agriculture and Rural Development (MARD)/Department of Forestry (DoF)
+
+- **MARD/Department of Forestry**: No 2, Ngoc Ha Street, Ba Dinh District, Hanoi, Vietnam
+
+# Gia Lai province – Department of Planning and Investment
+
+- **No. 2 Hoang Hoa Tham street**, Pleiku city, Gia Lai, Vietnam
+
+# Dak Lak province
+
+## (1) Department of Forest Protection
+
+- **49 Hung Vuong street**, Tu An, Buon Ma Thuot city, Dak Lak, Vietnam
+
+## (2) Department of Agriculture and Rural Development
+
+- **47 Nguyen Tat Thanh street**, Buon Ma Thuot, Dak Lak, Vietnam
+
+# Dak Nong province – Department of Agriculture and Rural Development
+
+- **01 Tran Hung Dao street**, Nghia Trung, Gia Nghia, Dak Nong, Vietnam
+
+# Lam Dong province: Department of Agriculture and Rural Development
+
+- **36 Tran Phu street**, Da Lat city, Lam Dong, Vietnam
+
+# Ninh Thuan province - Department of Planning and Investment
+
+- **Muoi Sau Thang Tu street**, Tan Tai, Phan Rang city, Ninh Thuan, Vietnam
+
+## Date of Board meeting in which the FP is intended to be considered
+
+- **Date of accredited entity’s board meeting**: Tuesday, December 10, 2024
+- **Date of GCF’s board meeting**: Monday, October 21, 2024
+
+> Note: This form was prepared by the accredited entity stated above.
+
+
+---
+*Chunk pages 83–83*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=575 (sys=94, user=481), max_out=1024, ctx=8192
+---
+
+# GCF/B.40/02/Add.12  
+## Page 83  
+
+### Secretariat’s assessment of FP250  
+
+**Proposal name:** Achieving emission reduction in the Central Highlands and South Central Coast of Viet Nam to support National REDD+ Action Programme goals (RECAF)  
+
+**Accredited entity:** International Fund for Agricultural Development  
+
+**Country:** Viet Nam  
+
+**Project/programme size:** Medium  
+
+## I. Overall assessment of the Secretariat  
+
+### 1. The funding proposal is presented to the Board for consideration with the following remarks:  
+
+#### Strengths  
+- Catalyses a shift in the enabling environment for long-term deforestation-free value chain development, including the development of the REDD+ results-based payment infrastructure, and financial and technical support to producers in agroforestry value chains.  
+- GCF support is in the form of grants for a project with the potential for revenue generation. This is justified by (i) the use of GCF funding focusing on non-income generating activities and (ii) developing market and covering the high risk and front-loaded profile of agroforestry investments.  
+- Shifts focus from plantations to multi-crop agroforestry while indirectly preserving natural forests as a result of community involvement and livelihood diversification, reducing pressure on natural resources.  
+
+#### Points of caution  
+- In order to avoid the risk of double-counting, emission reductions generated by the project will not be sold as carbon credits for the duration of the project.  
+- Mobilizes substantial financing from beneficiaries and local financial institutions, aligning them through public-private-producer partnerships while helping demonstrate and mature the market for value chains and agroforestry-oriented financial products.  
+
+### 2. The Board may wish to consider approving this funding proposal in accordance with the term sheet agreed between the Secretariat and the accredited entity (AE) and, if considered appropriate, subject to the conditions set out in annex II of document GCF/B.40/02.  
+
+## II. Summary of the Secretariat’s assessment  
+
+### 2.1 Project background  
+
+---
+
+
+---
+*Chunk pages 84–84*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=870 (sys=94, user=776), max_out=1024, ctx=8192
+---
+
+# GCF/B.40/02/Add.12  
+## Page 84  
+
+### 3. Viet Nam’s rapidly growing economy is placing increasing pressure on its natural resources. This is particularly apparent in the issue of the degradation of forests, one of Viet Nam’s most valuable assets with over 10.1 million hectares of natural forests and another 4.7 million hectares of planted forests. Despite a logging ban in 2016, it has been challenging to balance the conservation of forests with sustainability challenges of farmers and economic development in rural areas.
+
+### 4. Without proactive interventions to sustainably enhance forest management and agricultural productivity, pressures on the country's forests are likely to intensify, reducing the capacity of forests to act as carbon sink. Reducing emissions from deforestation is one of the critical focus areas of Viet Nam’s nationally determined contributions (NDCs), with an unconditional reduction for land use, land-use change and forestry of 32.5 megatonnes of carbon dioxide equivalent (Mt CO₂ eq) by 2030 and conditional emission reductions for an additional 14.1 Mt CO₂ eq by the same year.
+
+### 5. The project is a key piece of the strategy to achieve this vision, by helping unlock the potential of communities and private agroforestry actors, in partnership with the public and financial sectors, to invest in forest conservation and the development of deforestation-free value chains for commodities such as coffee and pepper, cashew, fruits, acacia, bamboo, and a variety of speciality products (honey, medicinal plants, mushrooms, dyes, silk, etc.). It will do so by:  
+
+#### (a) Bolstering the regulatory framework and forest monitoring and protection infrastructure, along with productive infrastructure for deforestation-free value chains;  
+#### (b) Filling gaps in the REDD+ framework specific to agroforestry activities, unlocking additional financing streams for forest conservation;  
+#### (c) Linking REDD+ finance to directly support producers through payment for forestry ecosystem services and collaborative forest management schemes, incentivizing and rewarding communities and private actors for supporting mitigation goals for Viet Nam; and  
+#### (d) Addressing knowledge and financial barriers for communities and producers through technical capacity development on deforestation-free value chains (including training and knowledge exchange platforms, development of business plans, etc.) and support for local financial institutions to develop financial products tailored to the long returns of agroforestry investments.
+
+### 6. The project focuses on five provinces in Central Viet Nam which have experienced a significant loss of natural forests and forest degradation (362,532 hectares, representing 30 per cent of the national total), particularly targeting impoverished communities and ethnic minority groups while ensuring a positive economic return on investment.
+
+### 7. The total project funding amount is USD 96.08 million, of which GCF funding is requested for USD 35 million in grants for various technical assistance purposes. The contribution of the International Fund for Agricultural Development (IFAD) will amount to USD 32.43 million in the form of loans, supporting productive and forest protection and monitoring infrastructure. The Government of Viet Nam will provide USD 28.64 million in grant and in-kind resources.
+
+### 8. The project’s environmental and social safeguards risk is categorized as B.
+
+### 9. The project will be executed by the five Provincial People’s Committees, and the Ministry of Agriculture and Rural Development in the case of output 1.2.  
+
+## 2.2 Component-by-component analysis
+
+
+---
+*Chunk pages 85–85*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=954 (sys=94, user=860), max_out=1024, ctx=8192
+---
+
+# GCF/B.40/02/Add.12  
+## Page 85  
+
+### 10. The detailed description of project activities is contained in annex 25.
+
+#### Component 1: Viet Nam’s REDD+ design pillars are fully upgraded and integrated into provincial policies and institutional frameworks with improved public-private-producer partnerships (4Ps) to operationalize REDD+:
+- **(Total cost: USD 15.42 million; GCF cost: USD 14.94 million)**
+
+##### 11. Component 1 corresponds to REDD+ phase I (readiness). It is structured in two outputs:
+
+###### (a) Output 1.1: National REDD+ policies and mechanism upgraded to fulfil all required functions, including afforestation, by:
+- (i) upgrading the National Forest Monitoring System and Safeguard Information System to meet the Architecture for REDD+ Transactions/The REDD+ Environmental Excellence Standard (ART/TREES) standard applied by the LEAF coalition; and
+- (ii) mobilizing resources to implement the National REDD+ Action Plan through regional investment plans and dialogues on private sector resource mobilization, payment for forestry ecosystem services, and community forest management (elements in component 2);
+
+###### (b) Output 1.2: Provincial policies, legal and institutional frameworks, and stakeholder coordination mechanisms integrated with the National REDD+ Action Plan, which will foster 4P platforms at the provincial level, and develop locally-appropriate mitigation actions linked to deforestation-free value chains and community forestry initiatives.
+
+#### Component 2: Emissions reductions from agriculture, forestry and other land use consequently to 4P deforestation-free value chains and performance-based finance:
+- **(Total cost: USD 75.39 million; GCF cost: USD 19.91 million)**
+
+##### 12. Component 2 corresponds to REDD+ phase 2 (implementation). It comprises the following outputs:
+
+###### (a) Output 2.1: Deforestation-free value chains developed by 4Ps, and increased access to finance:
+- Executing the action plans created by 4Ps at the district level;
+- Developing the capacity of farmers, community interest groups and small and medium-sized enterprises on business plan development, crop choices and deforestation-free practices; and
+- Supporting financial providers to develop agroforestry-tailored financial products;
+
+###### (b) Output 2.2: Deforestation-free value chains and forest restoration infrastructure upgraded and established:
+- This output will be financed by IFAD loans, and includes:
+  - (i) small and micro-scale infrastructure such as micro irrigation systems and organic fertilizer production facilities, post-harvest facilities with value-added processing;
+  - (ii) forest monitoring and protection infrastructure as well as public nurseries to support afforestation and reforestation;
+
+###### (c) Output 2.3: Collaborative forest management capacity enhanced through performance-based incentives:
+- Including:
+  - (i) the development of provincial forest protection development funds, a first-in-country payment for ecosystem services focused on emission reductions, in which GCF support will help build capacity and design scope, operations and a long-term financing plan;
+  - (ii) support for multi-stakeholder commune-level collaborative forest management (MCCFM), with participatory land-use planning, capacity-building of MCCFM group members, and the establishment of MCCFM pilots.
+
+#### Project management costs:
+- **(Total cost: USD 5.26 million; GCF cost: USD 1.48 million)**
+
+##### 13. This cost will support the management, coordination and implementation of the project activities, in compliance with the contractual obligations that are included or referred to in the legal agreements entered into with the AE. The GCF portion of the project management cost is less than 5 per cent of the grant portion of requested funding from GCF. The overall amount exceeds the reference figure of 5 per cent established in the GCF Policy on Fees for accredited
+
+--- 
+
+**Note:** This text appears to be part of a larger document, and the page number (85) is preserved as requested.
+
+
+---
+*Chunk pages 86–86*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=841 (sys=94, user=747), max_out=1024, ctx=8192
+---
+
+# GCF/B.40/02/Add.12  
+## Page 86  
+
+### entities and delivery partners (decision B.19/09), which is considered justified in this proposal owing to the strong role played by Provincial People’s Committees in the implementation and exit strategy of the project.
+
+## III. Assessment of performance against investment criteria
+
+### 14. The Secretariat team considers the proposal to be strongly aligned with GCF investment criteria, with a high impact potential in the area of reduced emissions from deforestation and land-use change, associated environmental and social co-benefits, and an interesting partnership model between public, private and community sector actors to implement and fund agroforestry interventions in support of the country’s NDC goals.
+
+#### 3.1 Impact potential                                Scale: High
+
+##### 15. The proposal envisages direct emission reductions of 6.68 Mt CO2 eq over 12 years as a result of reduced forest degradation and sequestration from agriculture and afforestation in a total of 145,000 hectares (90,000 hectares under agroforestry and 55,000 under collaborative forest management), estimated following the relevant EX-ACT methodology. This is a significant direct contribution towards Viet Nam’s NDCs (46.6 Mt CO2 eq, of which 14.1 Mt CO2 eq are conditional), with a scalable model as argued below.
+
+##### 16. In addition to direct emission reductions, the project is likely to have a substantial impact on the conservation of a further 500,000 hectares of non-protected natural forests in the target provinces, as deforestation pressures are reduced as a result of forest protection policies and enforcement, forest protection infrastructure, deforestation-free value chain management and community-based forest management and performance-based payments for forest ecosystem services.
+
+##### 17. Significant adaptation co-benefits are also envisaged in a rugged landscape prone to floods, as healthier forests help mitigate against floods, landslides and erosion. The project will train farmers on the utilization of climate information and existing agrometeorological advisory services including pest information, resilient crops and agroforestry practices, and financial literacy, all of which would enhance the preparedness of local communities, especially Indigenous Peoples, against the impacts of climate (estimated: 140,000 beneficiaries).
+
+##### 18. In order to avoid risk of double-counting, emission reductions generated by the project will not be sold as carbon credits for the duration of the project.
+
+#### 3.2 Paradigm shift                Scale: High
+
+##### 19. The project takes a multi-pronged approach to addressing key regulatory, technical and financial barriers to enable sustainable forest-land management, deforestation-free value chains and climate resilient livelihoods based on agroforestry systems.
+
+##### 20. From a regulatory and institutional perspective, the project plans to enhance coordination and capacities in government agencies, particularly Provincial People’s Committees which have a high degree of agency on land use and economic development matters, in order to strengthen forest-related regulation and enforcement and planning, while addressing remaining gaps on the REDD+ framework. Viet Nam is relatively advanced in terms of REDD+ implementation; project activities will build on the foundations provided by the National REDD+ Action Plan, forest reference emission levels/forest reference levels, national forest monitoring systems, Safeguard Information System and registry, and fill gaps to meet
+
+---
+
+
+---
+*Chunk pages 87–87*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=826 (sys=94, user=732), max_out=1024, ctx=8192
+---
+
+# GCF/B.40/02/Add.12  
+## Page 87  
+
+international requirements for accessing and obtaining results-based payments from specific  
+sources such as LEAF.  
+
+21. A key innovative aspect of the proposal is its alignment of incentives between public and  
+private stakeholders to the benefit of forest conservation, in effect a partnership model (4Ps)  
+reflected in several aspects of the proposal, notably coordinating decision-making on locally-  
+appropriate economic and value chain development at the local level, and a first-in-country  
+payment for forest ecosystem services and collaborative forest management scheme that would  
+effectively link the financial resources obtained through results-based payments with the  
+private actors and communities involved in making them possible through deforestation-free  
+value chains. The model is designed in a way that has strong replication potential countrywide,  
+with the same governance system and the ability to use the strengthened REDD+ pillars and  
+lessons learned, and benefits from a solid element of knowledge learning and sharing.  
+
+### 3.3 Sustainable development potential                      Scale: High  
+
+22. The programme is expected to contribute significant positive environmental, social and  
+economic impacts as a result of its forest conservation and deforestation-free value chain  
+development outcomes. The transition from mono-crop plantations to more complex  
+agroforestry systems, and the prevention of forest degradation, will result in benefits in  
+ecosystem services such as biodiversity, soil fertility and reduced erosion. Meanwhile, soil  
+analysis, training on better soil management, fertilization schedules and the use of nitrogen-  
+fixing species in multiple crop systems will also reduce the use of chemical fertilizers, with  
+consequent positive impacts on water and soil quality.  
+
+### 3.4 Needs of the recipient                  Scale: Medium  
+
+24. Viet Nam is a country with strong economic growth, with GDP growing at a pace above 6  
+per cent annually. However, the project area – dominated by agriculture and forestry – remains  
+poorer in comparison to most other regions of the country, with poverty rates of 8.3 per cent in  
+the Central Highlands and 12.7 per cent in Ninh Thuan, increasing to 40.4 per cent among ethnic  
+minorities targeted by the project.  
+
+### 3.5 Country ownership                   Scale: High   
+
+26. The project is a key priority for the Government of Viet Nam, in terms of achieving its  
+NDCs by developing one of the strategic pillars to reduce deforestation and emissions from  
+land-use change. The national designated authority has been closely involved in driving the  
+
+---
+
+
+---
+*Chunk pages 88–88*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=910 (sys=94, user=816), max_out=1024, ctx=8192
+---
+
+# GCF/B.40/02/Add.12  
+## Page 88  
+
+### Development of the funding proposal, along with the relevant ministries and provincial authorities, private sector and communities in the target area.  
+
+27. The proposal benefits from the strong involvement at subnational level of the Provincial People’s Committees which play a strong role in downscaling and implementing national policies within their jurisdictions.  
+
+### 3.6 Efficiency and effectiveness                   Scale: Medium to high  
+
+28. The project has a relatively high mitigation cost-effectiveness at USD 15.41/t CO2 eq, or USD 5.25/t CO2 eq when only GCF funding is considered, in addition to significant adaptation and environmental co-benefits. This is reflected in its strong economic internal rate of return of 29.8 per cent, indicating it is a highly profitable investment across multiple dimensions.  
+
+29. The GCF contribution of USD 35 million will be in the form of grants, with a co-financing ratio of 1:1.75 with IFAD (USD 32.4 million in loans) and the Government of Viet Nam (USD 28.6 million, largely resources in-kind and project management costs). While such division of financial instruments places a greater burden on GCF in terms of the concessionality of the instruments, the project team has worked with IFAD to optimize the financial structure taking into account the limitations posed by Viet Nam’s official development assistance policy and IFAD’s own regulations; GCF funding will thus largely focus on financing technical assistance to develop the enabling environment and tackle technical and financial barriers for early adopters – including a back-loaded financial return and relatively higher risk profile of investments.  
+
+30. The majority of the direct financing for the agroforestry will take place through financial institutions and beneficiaries’ own capital, leveraging an additional private investment of between USD 13 and 14 million, which is a positive factor with regard to the project’s ability to sustain and scale up investments.  
+
+## IV. Assessment of consistency with GCF safeguards and policies  
+
+### 4.1 Environmental and social safeguards  
+
+31. Project brief. The project's activities are organized to support two desired outcomes of upgrading the country’s REDD+ design pillars, integration into provincial policies and institutional frameworks and generation of emissions reductions from agriculture, forestry, and other land use. Given that the project promotes forest conservation and encourages farmers to adopt sustainable agroforestry techniques, its potential environmental co-benefits would be as regards improved soil quality and biodiversity in the target areas, as well as water conservation.  
+
+32. Environmental and social (E&S) risk category and safeguard instrument. The project is categorized as Category B. The Secretariat confirms the risk category and that this is within the AE’s accreditation level. The infrastructure to be supported will be small-scale such as post-harvest storage and processing facilities, business centre facilities, visitor centres, ecotourism facilities, micro irrigation systems, organic fertilizer production facility, forest protection and rehabilitation infrastructure such as tree nurseries, fire breaks and water points, among others.  
+
+The risks of adverse social impacts due to changes in land classification and land-use regulations will be low due to the built-in provisions for consultations and the full and effective participation of affected communities as part of the REDD+ strategy. The project will also exclude Category A (high risk) activities.  
+
+The AE has prepared an environmental and social management framework (ESMF) and a Stakeholder Engagement Plan. The ESMF is the appropriate instrument for the project since the project will have several site-specific activities or subprojects, including small-scale infrastructure, and post-harvest and processing facilities.
+
+
+---
+*Chunk pages 89–89*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1005 (sys=94, user=911), max_out=1024, ctx=8192
+---
+
+# GCF/B.40/02/Add.12  
+## Page 89  
+
+That are not yet identified in terms of specific types, locations, and their beneficiary communities. The detailed designs of these facilities will also be developed with the local governments, beneficiary communities, and/or private enterprises during implementation.
+
+### 33. Compliance with the GCF Environmental and Social Safeguards (ESS) standards.  
+The discussion below describes the project’s compliance with the standards.
+
+### 34. ESS1: Assessment and Management of Environmental and Social Risks and Impacts.  
+The prepared ESMF provides a brief background of the project area, identifies the potential impacts and risks and corresponding management measures, and sets out the procedure and requirements for managing the risks and impact of subprojects. Management measures include adoption of an exclusion list; screening of subprojects using a subproject screening checklist; adoption and implementation of an E&S code of practice for construction; adoption of guidelines for worker's camp and workers code of conduct; and the development of a chance find procedure. The procedure for assessment and vetting of subprojects indicates the conduct/preparation of environmental and social impact assessment (ESIA)/environmental and social management plan (ESMP) or environmental protection plan depending on the risk category of the subproject.
+
+### 35. ESS2: Labour and Working Conditions.  
+The ESMF provides brief background information about the current labour and working conditions legislations in Vietnam which is found to be generally aligned with international standards. The ESMF identified risks of work-related accidents, child labour and forced labour, and has addressed these. Among the measures proposed are: preparation and implementation of a labour management plan during the first year of the project and prior to implementation of construction-related/labour-intensive activities; inclusion in the procurement documents of the requirement for contractors to identify occupational health and safety (OHS) risks and provide remedies for non–compliance; requirement for contractors to conduct OHS training to raise awareness and promote application of good OHS practices prior to mobilizing all workers for construction sites; and where necessary, contractors will be required to engage qualified OHS staff to oversee OHS issues, among others. A monitoring procedure will also be established prior to commencement of related works and site-specific E&S assessments will cover potential labour issues, including risks of child and forced labour for suppliers and in the value chains relevant to the RECAF project. The ESMF indicates that contracted workers will have access to the project's grievance redress mechanism (GRM).
+
+### 36. ESS3: Resource Efficiency and Pollution Prevention.  
+The project is expected to have only minor impacts to air and water quality, most of which are temporary, occurring only during the construction of small-scale infrastructure in the form of erosion and sedimentation, generation of dust and noise, and domestic wastewater from workers' camps. Standard mitigation measures have been identified and are included in the environmental code of practice for construction. The project interventions could also result in increased use of pesticide due to the need to intensify production or increased yield in farms. The risk of increased pesticide use will be minimized through the project’s training for farmers on good production/good agricultural practices and utilizing integrated pest management.
+
+### 37. ESS4: Community Health, Safety and Security (CHSS).  
+The project involves a broad spectrum of interventions that may have CHSS risk in relation to construction activities. This will include potential exposure of residents to construction site and traffic accident hazards. Standard mitigation measures have been identified to address construction hazards, which are an extension of the occupational health and safety measures, including provision of signages, fences and detours. The project may also encounter potential malfunction of small reservoirs as a CHSS hazard. This hazard from small reservoirs will be mitigated through proper engineering design. Proposed reservoirs will undergo E&S assessment which will input into the engineering design to be undertaken by qualified experts. The ESMF has also identified the presence of unexploded ordnances (UXOs) as one of the inherent CHSS risks in the project, though  
+
+---  
+*Page 89*
+
+
+---
+*Chunk pages 90–90*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1068 (sys=94, user=974), max_out=1024, ctx=8192
+---
+
+# GCF/B.40/02/Add.12  
+## Page 90  
+
+Considered to be low since construction activities will reportedly not occur in previously untouched land. Nevertheless, the ESMF indicates that UXO risk assessments will be conducted for all subproject sites where UXOs are considered a potential hazard. If necessary, UXO clearance will be carried out by qualified agencies, and construction activities will not be permitted until UXO clearance is complete.
+
+Interventions involving agricultural production, and the establishment and operation of nurseries could include the use of pesticide. The increased exposure to pesticides will be mitigated under the project which will include training on good agricultural practices like integrated pest management, as well as (in instances where pesticide use cannot be avoided) appropriate handling, storage, application and disposal of pesticides.
+
+As regards potential for conflict in relation to anticipated small-scale labour influx and the use of local labour for infrastructure schemes, the risk related to conflict with local people is assessed to be low. Workers of infrastructure scheme contractors will also be required to abide with a code of conduct prior to their mobilization to the construction sites.
+
+## 38. ESS5: Land Acquisition and Involuntary Resettlement
+
+The infrastructure component of the project may involve land or right-of-way acquisition. However, it is expected that the impacts of these activities will be low, as the project will not approve subprojects listed in the exclusion list. This includes:
+
+- Infrastructure schemes that require physical resettlement of more than 20 people per infrastructure scheme area or affect more than 10 per cent (in value term) of assets of an individual household;
+- Any subproject that physically displaces any ethnic minority household or dilutes/changes their security of tenure;
+- Activities that result in (i) restriction of resources access that could not be mitigated; and/or (ii) adverse impacts on the livelihoods of households that are of any ethnic minority group, or households that are considered vulnerable/disadvantaged;
+- use of the project as an incentive and/or a tool to support and/or implement involuntary resettlement of local people and village consolidation;
+- new settlements or expansion of existing settlements.
+
+Land acquisition and/or resettlement, if any, shall all be voluntary, following the IFAD Standard 7 which follows the Voluntary Guidelines on the Responsible Governance of Tenure of Land, Fisheries and Forests and Voluntary Land Donation principle. According to the ESMF, if the screening highlights the need for voluntary land donation or temporary disruption to land use, a Voluntary Land Donation form must be prepared and consulted upon, as well as approved and disclosed prior to subproject implementation.
+
+## 39. ESS6: Biodiversity Conservation and Sustainable Management of Living Natural Resources
+
+The ESMF has identified and addressed the risks of potential encroachment of project activities or project-supported activities into protected areas and possible disruption of ecological flows with the development of small reservoirs. Encroachment on protected forest areas will be avoided or minimized as the project will focus on reducing deforestation of areas surrounding protected areas and will not be operating inside Special Use Forest or highly protected forest areas.
+
+The possible disruption to ecological flows (e.g. migratory fish and water use) in the development of small reservoirs will be managed by requiring the conduct of migratory fish assessment and provision of fish ladders where needed, as well as consultation and coordination with community water users about the timing of the water flow.
+
+At project implementation, when infrastructure schemes are identified, an E&S screening will be carried out on these infrastructure schemes to ensure biodiversity is not adversely affected. All physical activities of the project (e.g. construction of canals and farm roads) will be carried out outside any protected areas, and in accordance with the relevant laws and regulations of Vietnam.
+
+## 40. GCF Indigenous Peoples Policy and ESS 7
+
+With the presence of ethnic minorities in the project area, the AE has prepared a comprehensive Indigenous Peoples Plan, and ensured the mainstreaming of information on ethnic minorities through the project documentation. There is a clear 40 per cent project beneficiary target for Indigenous Peoples, including for women. These targets are outlined both in the annual work programme and budget.
+
+The AE standards for stakeholder engagement include meaningful consultation leading to the free, prior and informed consent (FPIC) of the affected Indigenous Peoples. During project development,
+
+
+---
+*Chunk pages 91–91*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1063 (sys=94, user=969), max_out=1024, ctx=8192
+---
+
+# GCF/B.40/02/Add.12  
+## Page 91  
+
+ethnic minorities were consulted in two key phases between 2021 and 2024: (i) at early stage of project design and (ii) after completion of design. According to the AE, project information was presented in a culturally appropriate way with the use of local languages. Other good practices include the engagement of third-party independent facilitators for FPIC consultations and the continuation of the AE’s experience in supporting Indigenous Peoples’ consultants who engage in leading FPIC processes as third parties. In line with their roles and functions, the Indigenous Peoples Advisory Group is available to provide advice to the AE and executing entities (EEs).  
+
+## 41. Implementation arrangements  
+The project will have a national-level project management unit (PMU) at the Ministry of Agriculture and Rural Development (MARD). There will also be provincial or sub-PMUs at each of the five provinces which will manage the public infrastructure components and coordinate provincial line agencies and service providers down to the commune levels. The national-level PMU in MARD with its lead safeguard specialist will be responsible for ensuring effective application of the ESMF for all activities. Its responsibility includes overall planning and supervision of E&S activities, including the hiring of qualified national E&S capacity-building consultants – individual or firm – to provide E&S training and technical assistance including supervision, monitoring and reporting of E&S implementation to IFAD and GCF every six months. The sub-PMUs are responsible for the implementation of management measures in the ESMF. This includes hiring a qualified specialist to prepare and finalize E&S documents; securing IFAD clearance of E&S documents and approval of the government; and implementing the ESMPs, Stakeholder Engagement Plans, Indigenous Peoples Plans, and Gender Action Plans and ensure that the final subproject design has incorporated measures to mitigate potential negative impacts during construction and operations.  
+
+## 42. Stakeholder Engagement and grievance redress mechanism (GRM)  
+During project preparation, the project has conducted consultations with potential beneficiaries (e.g. farmers, cooperatives, ethnic minorities, etc.), national and provincial line ministries and departments, and other stakeholders in a form of formal household surveys, key informant interviews and focus group discussions. Stakeholder feedback in the form of recommendations related to gender, Indigenous Peoples and information about inherent risks have been incorporated in the project design and approaches. Further engagements with stakeholders have been planned, including inception workshops with representatives of the communes to be held at each provincial PMU; training; focus group discussions to discuss E&S requirements and subproject development; and periodic focus group discussions with local leaders, civil society organizations and communities at subproject sites, to discuss subproject implementation status, GRM and E&S issues. A Stakeholder Engagement Plan has been prepared which identifies and categorizes the project's stakeholders and outlines the objectives and strategies for engaging with them. The ESMF describes the project GRM procedures and the units responsible for resolving grievances by the various stakeholders. Directly hired and contracted workers will also be given access to the project GRM. In line with the GCF Indigenous Peoples Policy, the GCF Indigenous Peoples focal point will be available for assistance for ethnic minorities at any stage, including before a claim has been made.  
+
+## 43. Sexual Exploitation, Sexual Abuse, and Sexual Harassment (SEAH) safeguarding  
+The SEAH safeguards incorporated by the AE as part of the project’s ESMF is considered complies with the SEAH provisions of the GCF Revised Environmental and Social Policy. The ESMF has assessed the risks related to gender-based violence (GBV) and SEAH and outlined the overall mitigation measures, such as mainstreaming GBV and SEAH provisions in all bidding documents and contracts and establishing a code of conduct to prevent GBV/SEAH based on the national guideline for GBV prevention. Specific SEAH risks and safeguard plans will be conducted at the subproject level during implementation. The ESMF requires the establishment of a project-level GRM and outlines a distinct pathway that explicitly focuses on responding to GBV and SEAH related complaints. This pathway prioritizes the confidentiality and privacy of the aggrieved party and ensures a timely and respectful response from the implementing partners. The AE is recommended to incorporate the information of the GCF Independent
+
+
+---
+*Chunk pages 92–92*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=874 (sys=94, user=780), max_out=1024, ctx=8192
+---
+
+# GCF/B.40/02/Add.12  
+## Page 92  
+
+### Redress Mechanism as part of the accessible GRMs for the project to ensure all three levels of the GRMs can be accessed by the stakeholders in case of SEAH incidents.  
+
+#### 4.2 Gender policy  
+
+44. The AE provided a gender assessment and action plan with the funding proposal and therefore complies with the requirements of the GCF Updated Gender Policy. The gender assessment, which was based on both primary (n=625) and secondary sources, is rich in information and data on various gender issues. However, some of the data is outdated (i.e. older than 10 years old) and some references are to areas that are outside the scope of the intervention.  
+
+45. The gender action plan (GAP) follows the structure of the project’s overall logical framework, which is an excellent approach. Both quantitative and qualitative indicators are used to measure change. The AE will recruit a gender adviser who will facilitate the implementation of the GAP and ensure accountability on the commitments made in the plan and overall gender mainstreaming outcomes of the project. The GAP activities have costing attached to each gender-specific intervention and other mainstreamed activities embedded in the overall budget of the project. With regard to gender indicators, the AE is encouraged to flesh these out in the early stages of the project implementation, and clearly stated in the GAP table for proper accountability.  
+
+46. The project document is clear on discrimination and targeting of ethnic minorities. The project outlines six areas where gender equality will be promoted, namely:  
+(i) increased participation of women in project activities;  
+(ii) attending project training to improve current farm knowledge, financial skills, and gain new knowledge about markets;  
+(iiii) improved loan access;  
+(iv) increased female participation in household decision-making;  
+(v) reduced household chores for females through increased undertaking of household work by males; and  
+(vi) full use of the advantage of a matriarchal system to increase female involvement in income-generation activities for economic empowerment.  
+
+The AE also commits to include issues of gender-based violence which will be mainstreamed throughout the project.  
+
+#### 4.3 Risks  
+
+##### 4.3.1 Overall programme assessment (medium risk)  
+
+47. The proposed mitigation project for Viet Nam aims to support the implementation of the National REDD+ Action Plan for the reduction of emissions in the Central Highlands and South Central Coast regions of the country. The REDD+ framework promotes activities that reduce emissions from deforestation and forest degradation through conservation, sustainable management of forests and the enhancement of forest carbon stock.  
+
+48. Project funding will comprise a GCF grant of USD 35 million, an IFAD senior loan of USD 42.9 million and a Government of Viet Nam in-kind contribution of USD 18.9 million. The co-financing ratio is 1.0:1.77 and accounts for 64 per cent of total financing. Furthermore, the project is expected to attract an estimated USD 13.5 million in parallel financing and co-investment from the private sector in related infrastructure and agroforestry.  
+
+##### 4.3.2 Accredited entity/executing entity capability to execute the current programme (low risk)  
+
+49. The International Fund for Agricultural Development (IFAD) is an international AE with a mission to improve global agriculture and food security. To date, IFAD has provided over USD 23 billion in grants and low-interest rate loans to fund livelihoods in fragile and developing countries.
+
+
+---
+*Chunk pages 93–93*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=887 (sys=94, user=793), max_out=1024, ctx=8192
+---
+
+# GCF/B.40/02/Add.12  
+## Page 93  
+
+### 4.3.3. Project-specific execution risks (medium risk)  
+50. The proposed project aims to upgrade the host country’s policies and institutional framework to operationalize REDD+ as well as develop deforestation-free value chains and performance-based finance. Potential risk to the project’s success includes volatility of commodity prices given the country’s open economy and high proportion of export-based revenue. Higher global commodity prices would raise the opportunity cost of not converting forest land for agricultural usage and incentivize disregard for deforestation-free production methods. Another factor that will affect project success is the ability to attract sufficient financing from microfinance institutions and rural banks to support a deforestation-free value chain. The project will endeavour to design suitable credit products tailored to the specific needs of individual farmers and find alternatives to traditional financing to support smallholders. Availability of adequate and qualified human resources is also essential for successful project implementation due to the risk of limited skilled and efficient contractors for REDD+ related activities. The project will rely on IFAD’s experience working in Viet Nam and the identified provinces to undertake rigorous screening and investigation of potential contractors before engagement.
+
+### 4.3.4. Project viability and concessionality  
+51. Under the component for emission reduction, the proposed project will strengthen forest monitoring by using performance-based financing and will develop deforestation-free value chains, among other activities. These activities and related initiatives are well within the expertise of the AE given their years of experience in this area and project viability is expected to be manageable. The proposed GCF grant will represent 36 per cent of total project size. The level of concessionality is reasonable considering the 64 per cent co-financing expected to be catalysed from the AE and host country. Furthermore, the proposed project is expected to attract an additional USD 13.5 million in parallel financing and co-investment in infrastructure and agroforestry. The project is estimated to generate a significant amount of emissions reduction over its 12-year life.
+
+### 4.3.5. GCF portfolio concentration risk (low risk)  
+52. In case of approval, the impact of this proposal on the GCF portfolio concentration in terms of results area and single proposal is not material.
+
+### 4.3.6. Compliance risk (medium risk)  
+53. Based on available information for this funding proposal, the Secretariat has determined a compliance risk rating of ‘medium’. IFAD’s robust Anti-Money Laundering and Counter-Financing of Terrorism (AML/CFT) framework includes thorough assessments of executing entities (EEs) and Vietnam, ensuring compliance with Financial Action Task Force (FATF) standards. Extended checks found no significant risks related to money laundering or terrorism financing. However, the dynamic nature of financial crime risks necessitates continuous monitoring and mitigation.
+
+
+---
+*Chunk pages 94–94*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=810 (sys=94, user=716), max_out=1024, ctx=8192
+---
+
+# GCF/B.40/02/Add.12  
+## Page 94  
+
+54. IFAD's Integrity Due Diligence (IDD) process includes vetting of all counterparties, including ultimate beneficial owners (UBOs) and ongoing monitoring. The AE will also implement anti-fraud, bribery, and corruption controls for the project, including mandatory self-certification for bidders, detailed internal controls, and external audits per international standards, are in place.  
+55. Overall, IFAD's compliance measures align with international standards. Continuous vigilance, adaptive strategies, and enhanced monitoring and training are essential to mitigate potential risks. This rating recognizes the complexities of managing compliance across multiple provinces and diverse entities.  
+
+### 4.3.7. Recommendations  
+
+| Summary risk assessment | Rationale | Overall programme | Medium | It is recommended that the Board consider the above factors in its decision. |
+|-------------------------|-----------|-------------------|------|-----------------------------------------------------------------------------|
+| Accredited entity/executing entity capability to implement this programme | Low | Project-specific execution | Medium | GCF portfolio concentration | Low | Compliance | Medium |
+
+### 4.4 Fiduciary  
+
+56. The grant from GCF to IFAD, and grants from IFAD to the six EEs will be drafted in accordance with annex 4 and subject to disbursement requests from IFAD to GCF (as per disbursement tranches in the funded activity agreement) and from EEs to IFAD (as per disbursement requests, based on the use of 70 per cent of the amount already disbursed). Fund flow for the IFAD loan from IFAD to the EEs, and payment reflows back to IFAD will be based on disbursement requests and financial reports considering 70 per cent of the amounts already disbursed.  
+
+57. All provinces and the MARD will maintain Designated Accounts (DA) in USD for both the IFAD loan and GCF grant, and for project accounts in Vietnamese dong at the State Treasury. Funds will flow from DAs to project accounts based on annually approved budgets for each province and for the MARD. The treasury system of Viet Nam is reliable for maintaining DAs and project accounts. IFAD and GCF funds will be disbursed based on quarterly Interim Financial Reports (IFRs). All provinces and the MARD will have procedures and systems to ensure that accurate IFRs are sent to IFAD within the agreed deadlines. Each withdrawal application will be accompanied by the most recent IFRs, including the cash forecast for the next two quarters.  
+
+58. All provinces will procure and customize accounting software for the project needs. The software will need to maintain accounting records on double-entry bookkeeping principles. The accounting systems will be customized to generate GCF (expenditures split by funding source, expense category, outcomes, outputs, and activities), IFAD, and government-required reports. In addition to quarterly IFRs, all provinces will produce and submit IFAD semi-annual certified financial reports using the GCF template and guidelines within 30 days from the end of each period.  
+
+59. Private sector auditors will audit project financial statements annually. The project will submit audit reports to IFAD within five months of the end of each period. The terms of...
+
+
+---
+*Chunk pages 95–95*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=908 (sys=94, user=814), max_out=1024, ctx=8192
+---
+
+# GCF/B.40/02/Add.12  
+## Page 95  
+
+### reference of the annual project audit will include an assessment of compliance with the applicable GCF requirements and special opinions needed for IFAD’s compliance with GCF requirements. In addition, GCF will have the right to conduct ad hoc checks on the use of its funds and conduct ex post evaluations as required in terms of the Financing Agreement.
+
+### 4.5 Results monitoring and reporting  
+
+60. As a mitigation initiative, the project aims to reduce 6.68 Mt CO2 eq over 12 years of project lifespan, mainly from GCF mitigation results area 4. The project demonstrates a high confidence in achieving mitigation impact potential in the agriculture, forestry and other land use sector with a clear intervention logic and well-conducted baseline and situation analysis.  
+
+61. There is a good argument that the project should explicitly recognize adaptation as well as mitigation impacts, but the advice from the Secretariat to the AE on this point has changed over the past years. It is not advised that the proposal be changed back to cross-cutting, since this would not serve any practical purpose at this point. Instead, adaptation co-benefits are identified along with mitigation outcomes, with relevant indicators in the logical framework.  
+
+62. The impact calculations are based on spatially explicit and nationally relevant data, and the analysis of land-use change scenarios is detailed and credible, giving us confidence that this will be a high-impact, low-risk intervention with results that will enhance our overall cost-effectiveness in delivery.  
+
+63. The theory of change and the logical framework have been enhanced with better descriptions of results and SMART (Specific, Measurable, Attainable, Relevant, and Time-bound) indicators, as per the Division of Portfolio Management comments. It was also confirmed that the project result will be integrated into the government system for maximizing sustainability of the project.  
+
+64. The impact calculations are based on spatially explicit and nationally relevant data, and the analysis of land-use change scenarios is detailed and credible, giving us confidence that this will be a high-impact, low-risk intervention with results that will enhance our overall cost-effectiveness in delivery.  
+
+### 4.6 Legal assessment  
+
+65. The Accreditation Master Agreement was signed with the Accredited Entity on 24 September 2018 (the “AMA”), and it became effective on 9 November 2018. The Accredited Entity’s five-year accreditation term lapsed on 8 November 2023 but was extended by Decision B.37/18, paragraph (q) until the earlier of three years from the date of lapse of the five-year accreditation term or the date on which a revised accreditation framework is adopted by the Board. The Board approved the re-accreditation of the Accredited Entity pursuant to Decision B.37/18, and negotiation of the Amended and Restated Accreditation Master Agreement is ongoing.  
+
+66. The Accredited Entity has not provided a legal opinion/certificate confirming that it has obtained all internal approvals and it has the capacity and authority to implement the project.  
+
+67. The proposed project will be implemented in the Socialist Republic of Vietnam, a country in which GCF is not provided with privileges and immunities. This means that, amongst other things, GCF is not protected against litigation or expropriation in this country, which risks need to be further assessed. The GCF Secretariat sent a draft agreement on privileges and immunities and a background note to the Government of Vietnam in 2015. The latest communication was sent by the GCF Secretariat to the Government of Vietnam on 21 December 2018.
+
+
+---
+*Chunk pages 96–96*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=441 (sys=94, user=347), max_out=1024, ctx=8192
+---
+
+# GCF/B.40/02/Add.12
+## Page 96
+
+68. The Heads of the Independent Redress Mechanism (IRM) and Independent Integrity Unit (IIU) have both expressed that it would not be legally feasible to undertake their redress activities and/or investigations, as appropriate, in countries where the GCF is not provided with relevant privileges and immunities. Therefore, it is recommended that disbursements by the GCF are made only after the GCF has obtained satisfactory protection against litigation and expropriation in the country, or has been provided with appropriate privileges and immunities.
+
+69. To address the matters raised in this section, it is recommended that any approval by the Board is made subject to the following conditions:
+
+(a) Submission by the Accredited Entity to the Fund of a certificate or legal opinion, in form and substance satisfactory to the GCF Secretariat, within 120 days after Board approval confirming that the Accredited Entity has obtained all final internal approvals needed by it and has the capacity and authority to implement the proposed project;
+
+(b) Signature of the funded activity agreement in a form and substance satisfactory to the GCF Secretariat within 180 days from the date of Board approval, or the date the Accredited Entity has provided a certificate or legal opinion confirming that it has obtained all final internal approvals, whichever is later; and
+
+(c) Completion of the legal due diligence to the satisfaction of the GCF Secretariat.
+
+
+---
+*Chunk pages 97–97*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=725 (sys=94, user=631), max_out=1024, ctx=8192
+---
+
+# [Page 1]
+
+## CF/B.40/02/Add.12  
+### Page 97  
+
+## Independent Technical Advisory Panel’s assessment of  
+### FP250  
+
+## Proposal name: Achieving emission reduction in the Central Highlands and South Central Coast of Viet Nam to support National REDD+ Action Programme goals (RECAF)  
+
+## Accredited entity: International Fund for Agricultural Development  
+
+## Country: Viet Nam  
+
+## Project/programme size: Medium  
+
+## I. Assessment of the independent Technical Advisory Panel  
+
+### 1.1 Overview  
+
+1. This funding proposal for a medium-sized, public sector mitigation project in environmental and social safeguards Category B is submitted by the Government of Viet Nam through the International Fund for Agricultural Development (IFAD) as the accredited entity (AE). The executing entity (EE) is the Government of Viet Nam, acting through the Ministry of Agriculture and Rural Development (MARD) and the Provincial Peoples Committees of Dak Lak, Dak Nong, Gia Lai, Lam Dong and Ninh Thuan provinces.  
+
+2. The total cost of the proposed project is USD 96.1 million, of which USD 35 million is proposed as GCF finance and USD 61.1 million is co-finance from IFAD and the Government of Viet Nam (see section 1.6 below). The overall project goal is “to reduce GHG emissions from Viet Nam’s agriculture, forestry and other land use (AFOLU) sector, contributing to the climate-resilient sustainable development of forest-dependent communities in the target provinces.” This involves facilitating a transition toward deforestation-free value chains, with a specific focus on empowering smallholders, ethnic minorities, and women in forestland-dependent communities.  
+
+3. The project aims at supporting the implementation of the National REDD+ Action Plan (NRAP), as a key element of Viet Nam’s nationally determined contribution (NDC) 2022 to the Paris Agreement. Countries established the “REDD+” framework through UNFCCC decision 1/CP.16. “REDD” stands for reducing emissions from deforestation and forest degradation in developing countries. The “+” stands for additional forest-related activities that protect the climate, namely, sustainable management of forests, and the conservation and enhancement of forest carbon stocks.  
+
+4. The proposed project for achieving emission reduction in the Central Highlands and South Central Coast of Viet Nam to support National REDD+ Action Programme goals (RECAF) has two outcomes, designed to be reinforce each other.  
+
+#### Figure 1: Mutually reinforcing outcomes of RECAF (Figure 3 from funding proposal)  
+
+1 Funding proposal package for “Achieving emission reduction in the Central Highlands and South Central Coast of Viet Nam to support National REDD+ Action Programme goals (RECAF)”, received from IFAD on 6 September 2024.
+
+
+---
+*Chunk pages 98–98*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=745 (sys=94, user=651), max_out=1024, ctx=8192
+---
+
+# GCF/B.40/02/Add.12  
+## Page 98  
+
+### 4. Outcome 1: Viet Nam’s REDD+ design pillars are fully upgraded and integrated into provincial policies and institutional frameworks with improved public-private-producer partnerships (4Ps) to operationalize REDD+.  
+
+RECAF will support REDD+ phase 1 activities at national level, by updating and enhancing existing national REDD+ policies and mechanisms to meet specific results-based payment (RBP) requirements of donors. The project will leverage and build upon past and ongoing REDD+ support initiatives, specifically the United Nations REDD Programme, the Forest Carbon Partnership Facility (FCPF) of the World Bank, and the Lowering Emissions by Accelerating Forest Finance (LEAF) Coalition. Strategic upgrades will be made to the National Forest Monitoring System (NFMS) and safeguard information system (SIS) to facilitate engagements with these initiatives.  
+
+### 5. Outcome 2: Emissions reductions from AFOLU consequent to the 4Ps’ deforestation-free value chains and performance-based finance.  
+
+The project will also support REDD+ phase 2 activities, in the Central Highlands provinces of Dak Lak, Dak Nong, Gia Lai and Lam Dong, and the province of Ninh Thuan in the South Central Coast. The project aims to do this by:  
+- (i) protecting existing natural forests, especially in areas susceptible to deforestation and forest degradation;  
+- (ii) implementing community forest management initiatives tailored to the needs of forest-dependent communities; and  
+- (iii) establishing sustainable, deforestation-free value chains and infrastructure in agricultural commodities linked to deforestation processes.  
+
+This includes traceability, reduction of post-harvest losses through processing, monitoring systems, which will be implemented through public-private-producer partnerships (4Ps) platform to be created and integrated at the provincial level to mobilize concrete actions to develop deforestation-free value chains, and linked to Viet Nam’s Payments for Forest Environmental Services (PFES) with enhanced performance-based criteria.  
+
+### 6. The project outputs under these two outcomes are as follows:  
+
+#### Outcome 1 - Viet Nam’s REDD+ design pillars are fully upgraded and integrated into provincial policies and institutional frameworks with improved public-private-producer partnerships (4Ps) to operationalize REDD+  
+
+##### Output 1.1: National REDD+ policies and mechanism upgraded to fulfill all required functions, including afforestation  
+
+###### Activity 1.1.1 Upgrade National Forest Monitoring System (NFMS) and safeguard information system  
+###### Activity 1.1.2 Mobilize resources for NRAP implementation and inclusive investment planning and equitable resource distribution mechanisms  
+
+##### Output 1.2: Provincial policies, legal and institutional frameworks, and stakeholder coordination mechanisms integrated with National REDD+ Action Plan (NRAP)  
+
+###### Activity 1.2.1 Mainstream NRAP into provincial policies and legal institutional frameworks
+
+
+---
+*Chunk pages 99–99*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=824 (sys=94, user=730), max_out=1024, ctx=8192
+---
+
+# GCF/B.40/02/Add.12  
+Page 99  
+
+## Activity 1.2.2 Improve cross-sector coordination for better forest management and transition to deforestation-free economic development  
+## Activity 1.2.3 Enhance public-private-producer partnerships (4Ps) for deforestation-free economic development  
+
+### Outcome 2 - Emissions reductions from AFOLU consequent to 4Ps’ deforestation-free value chains and performance-based finance  
+
+#### Output 2.1: Deforestation-free value chains developed by 4Ps and increased access to finance  
+##### Activity 2.1.1 Develop deforestation-free commodity supply chains through 4P platforms  
+##### Activity 2.1.2 Develop the capacity of farmers, common interest groups, cooperatives and small and medium-sized enterprises (SMEs) for deforestation-free value chains and alternative livelihood development  
+##### Activity 2.1.3 Support financial providers to develop and promote financial products for deforestation-free value chain development  
+
+#### Output 2.2: Deforestation-free value chains and forest restoration infrastructure upgraded and established  
+##### Activity 2.2.1 Develop infrastructure for deforestation-free value chains  
+##### Activity 2.2.2 Establish and upgrade forest restoration infrastructure  
+
+#### Output 2.3: Collaborative forest management capacity enhanced through performance-based incentives  
+##### Activity 2.3.1 Develop a results-based payments for ecosystem services (PES) mechanism for collaborative forest management  
+##### Activity 2.3.2 Support multi-stakeholder commune-level collaborative forest management  
+
+### 1.2 Impact potential                                         Scale: Medium  
+
+7. The proposed project aspires to have a mitigation impact of 6,684,338 tonnes of carbon dioxide equivalent (t CO2 eq) through the activities of Outcome 2 in the five target provinces, over a 12-year project lifespan (including the six-year project implementation period). The mitigation impact potential, set out in annex 22a (describing the methodology) and annex 22b (providing the calculations using the Food and Agriculture Organization (FAO) Ex-ACT tool), is to be achieved entirely through enhancing carbon stocks, through carbon-intensive agroforestry, perennial agriculture, sustainable forest management, and forest restoration. The mitigation impact potential calculations do not include any emissions reductions from activities to prevent or slow deforestation or forest degradation.  
+
+8. Focus on carbon enhancement: The independent Technical Advisory Panel (iTAP) notes that the title of the proposed RECAF project, and much of the language of the funding proposal, including the key outcomes, refer to “achieving emission reduction”. This is misleading, since the project is actually about “achieving carbon enhancement”, otherwise referred to as carbon removals, or carbon sequestration, which is a completely different pathway to mitigation impact. This should be clarified in the documentation before project  
+
+> **Note:** The funding proposal suggests that the project may have an indirect positive impact on reducing deforestation and forest degradation in the 500,000 ha of the 926,066 ha making up the project districts that are not strictly protected special use forests (see paragraph 101 of the funding proposal), although the logic is not made clear. This benefit is not calculated or included in the project’s estimated mitigation impact calculations.
+
+
+---
+*Chunk pages 100–100*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1147 (sys=94, user=1053), max_out=1024, ctx=8192
+---
+
+# GCF/B.40/02/Add.12  
+## Page 100  
+
+Inception, to avoid the risk of miscommunication about the nature of the project and GCF investment in it (see recommendation in concluding section of this assessment).  
+
+9. Paragraph 101 of the funding proposal explains the focus on carbon removals (and not emissions reductions), stating that “the attribution of the reduction of deforestation and forest degradation to project activities will be difficult to quantify, as the project will be implemented in a period which already has witnessed more stringent policies (e.g. logging ban in 2016) and increased forest conservation efforts. Deforestation and forest degradation data in the hotspot analysis refer to the period 2010 to 2018. Data for business-as-usual scenario would thus refer to a period that falls largely before the logging ban.” Instead, the project focuses on an important niche in the mitigation efforts of Viet Nam in support of the REDD+ Action Plan and the NDC, which is to work on improving carbon sequestration in already transformed or degraded lands, taking carbon out of the atmosphere (rather than preventing it getting there).  
+
+10. LEAF Coalition and RECAF: The RECAF project is clearly aligned with wider national efforts that do focus on the emission reduction targets of the NDC, in particular, the Lowering Emissions by Accelerating Forest Finance (LEAF) Coalition, and the results-based payments (RBP) received by Viet Nam through the World Bank’s FCPF in March 2024 for a total of USD 51 million. It is noted that the FCPF work is in the North Central Coast of Viet Nam and has no geographical overlap with the proposed RECAF project.  
+
+11. The LEAF Coalition, however, is working in the same geographical areas as the RECAF project. MARD and Emergent (the trustee of the LEAF Coalition), signed a Letter of Intent in 2021 by which Viet Nam transfers to LEAF/Emergent 5.15 million tons of CO2 emissions reduction from forests in the South Central region and Central Highlands during the 2022–2026 period. LEAF/Emergent will pay for this service with a minimum price of USD 10/tonne of CO2, resulting in USD 51.5 million. The registered area of emissions reduction commercial forest is 4.26 million hectares (h), including 3.24 million ha of natural forest and 1.02 million ha of plantation forest.  
+
+12. The intention is that the LEAF interventions focus on reducing emissions, while the RECAF interventions focus on carbon enhancement, thus pursuing distinct but complementary strategies, both part of the REDD+ Action Plan, in the same landscapes. The funding proposal states that “given that RECAF is focused on REDD+ activities in the same provinces as targeted under LEAF, IFAD is in a good position for joint planning of IFAD-GCF-LEAF resources, to ensure complementarity. An agreement between MARD and IFAD has been prepared in which MARD would consider IFAD as the third-party intermediary as the geographical match between LEAF jurisdictions and RECAF.” (See footnote 20 to paragraph 28 of the funding proposal.)  
+
+13. In the question-and-answer exchange with the AE, the iTAP asked about the risk of double accounting of the mitigation impact potential, and thus the same carbon removals being funded twice – by GCF and by buyers on the public or private carbon markets. In response, the AE clarified that “LEAF is paying Viet Nam for emission reductions from avoided deforestation, with the activity period between 2022 and 2026. Results-based payments are to be reinvested in forest protection and mitigating deforestation. To address the risk of double accounting, RECAF covers different [activities] – agroforestry, perennial agriculture and improved forest/land management. By not including avoided deforestation … this allows for a clear separation between the two.”3 The distinct focus of RECAF on generating impact through carbon removals in these landscapes is noted.  
+
+14. The iTAP also notes that the AE has left open the possibility of selling 76 per cent of the RECAF project’s carbon removals, as part of the project’s exit strategy: “RECAF will assist the Government of Viet Nam in reinvesting these benefits into further REDD+ outcomes, aligning with the country's NDC commitments” (funding proposal paragraph 28), since only 24 per cent of the carbon removals will have been “paid for” by GCF, with the remaining 76 per cent of the  
+
+3 iTAP written questions and IFAD responses, 1 September 2024.
+
+
+---
+*Chunk pages 101–101*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=973 (sys=94, user=879), max_out=1024, ctx=8192
+---
+
+# GCF/B.40/02/Add.12  
+## Page 101  
+
+The total carbon balance resulting from the implementation of the project’s activities has been estimated at -6,684,338 t CO2 eq over 12 years. These ERs are resulting from the USD 76 million invested in component 2 (REDD+ phase 2), including USD 18.5 million from GCF (24% of the budget of component 2). 24% of the ERs expected from RECAF can therefore be attributed to GCF, representing 1,603,200 t CO2 eq.  
+
+However, and given that the RBPs are part of the exit strategy of the project, and an incentive for Viet Nam to invest in reducing GHG emissions from deforestation in the first place, it is expected that the remaining ERs (i.e. 5 Mt CO2 eq) generated thanks to investments from the different co-financers of the project including the government, beneficiaries, private sector and IFAD, will be used by the government of Viet Nam to seek REDD+ RBP or other type of carbon market option, from sources different from GCF. This approach appears consistent with accepted practice internationally.  
+
+### Presentation of mitigation potential:  
+The iTAP believes that the proposed project has a significant potential for impact, with 6.68 Mt CO2 eq equating to almost half of the conditional land use, land use change and forestry (LULUCF) emission reductions by 2030 that are set out in Viet Nam’s NDC. The calculations behind the impact potential are well thought through, and the assumptions behind the emission factors are meticulously recorded in the calculator spreadsheet.  
+
+However, the use of the calculator sub-module 5.1 on “Forest management and degradation” for capturing the mitigation impact of community forest management and forest restoration activities in output 2.3 is unusual, and does not make clear what the baseline situation is without the project. If the baseline situation is that forest degradation has stopped, it is not legitimate to account for natural forest regeneration, since this would have occurred without the project. If the baseline situation involves some degree of ongoing forest degradation, then the project interventions are necessary to halt and reverse that degradation, in order for natural regeneration to occur. If the latter is the case, this implies the need to track whether, and to what extent, the project is proving successful in slowing and eventually halting forest degradation. This consideration has been included in the suggested condition outlined in the last section of this assessment.  
+
+In addition, there are a number of weaknesses in the presentation of the funding proposal package which make it difficult to join the dots between the mitigation impact potential and the project interventions towards Outcome 2, particularly the agroforestry interventions on the ground. These weaknesses compromise the ability for the AE to be able to report with any certainty on the actual mitigation impact achieved. These issues are outlined below, with suggestions at the end of this assessment for how the funding proposal might be strengthened through addressing them before signature of the funded activity agreement for the project:  
+
+(a) The project theory of change has a missing step in the results chains, suggesting that investments in infrastructure, capacity-building, market access, finance etc, lead directly to carbon sequestration, without capturing the on-the-ground changes that are needed for this sequestration to occur. This analysis is captured in the iTAP Figure 2 below.  
+
+#### Figure 2: A representation of results chains from the funding proposal theory of change diagram, with additions  
+
+4 Quote from funding proposal paragraph 98.  
+5 Quote from funding proposal paragraph 99.
+
+
+---
+*Chunk pages 102–102*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=700 (sys=94, user=606), max_out=1024, ctx=8192
+---
+
+# GCF/B.40/02/Add.12  
+Page 102  
+
+## Abbreviations: 4Ps = public-private-producer partnerships, PES = payments for ecosystem services, ToC = theory of change, FP = funding proposal  
+
+### (b) No detailed spatial targets are included in the narrative for the various interventions on the ground that the project is designed to unlock, in order to increase carbon sequestration. There is a need to have these spatial targets foregrounded so that they can inform spatial planning and decision-making on planting and harvesting, through the 4P platforms and at commune level, and so that actual land use decisions can be tracked, reported and compared with these indicative targets, in order to assess ex post mitigation achievements.  
+
+Examples of the indicative intervention types for which the spatial targets per province could be clarified and foregrounded, are:  
+
+- Shift from monocrop coffee to 30 per cent shaded coffee;  
+- Shift from monocrop pepper to pepper vines grown on cassia spice trees;  
+- Shift from monocrop cashew trees to cashew intercropped with lemongrass plants;  
+- Shift from bare land or degraded annual cropland to diverse agroforestry systems, such as coffee-based systems combined with pepper, fruits, macadamia, persimmon, durian and avocado (to maximize yield and sequestration);  
+- Shift from acacia monocrop plantations with five-year rotational harvesting, focused on pulpwood production, to mixed plantations with nine-year rotational harvesting for logwood production;  
+- Shift from bamboo and bamboo-timber forests with unplanned harvesting to well managed plantations with agreed felling rates; and  
+- Shift from unmanaged broadleaved, deciduous and coniferous forest to well informed and equipped community forest management, including enrichment planting.  
+
+### (c) No measurement, reporting and verification (MRV) system for the project interventions is included in annex 11 (monitoring plan) or annex 22 (mitigation estimates), with references made only to wider provincial and national MRV systems. In order to track the results of the RECAF project and understand how these can be attributed to the GCF/IFAD/government investment, there is a need for actual site visits, and verification of changed cropping, harvesting and management practices, throughout the project implementation period (and ideally by MARD and provinces for the full 12-year lifespan).  
+
+In response to a question from the iTAP, the AE highlighted core indicator 4 on the numbers of hectares “brought under low-emission practice”, but this needs to be broken down into a detailed matrix for meaningful monitoring, with project  
+
+--- END EXTRACTED TEXT ---
+
+
+---
+*Chunk pages 103–103*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1031 (sys=94, user=937), max_out=1024, ctx=8192
+---
+
+# GCF/B.40/02/Add.12  
+## Page 103  
+
+(personnel directly engaged in the process). The indicator wording could also be adjusted to reflect the enhancement of carbon stocks instead of the lowering of emissions.  
+
+(d) No deforestation/degradation monitoring system is in place in the agroforestry landscapes to monitor and report on deforestation for agroforestry/perennial agriculture, or on illegal harvesting (degradation), both of which could occur as a direct perverse result of project activities, in response to new market opportunities created by the project through establishment of buyer contracts, provision of infrastructure etc. Even if the assumption is made that deforestation and degradation are not ongoing, because of other enforcement efforts, this assumption should be tested, so that corrective actions can be taken if necessary. This kind of cross-checking is particularly important for producers selling into value chains or jurisdictions that are claiming to be “deforestation-free”, building on other donor-funded pilots.  
+
+(e) The narrative element of annex 22 setting out the anticipated carbon removals, while accurate, is extremely difficult to read and to link to the figures in the calculator spreadsheet. There is a need for a much more detailed summary table than the one provided as table 1 of annex 22a, showing exactly how the spreadsheet numbers are derived. As one example, the figures in the management module (in sub-module 5.1, Forest management and degradation) can only be understood by adding rows from table 8 to rows from table 12. The table should also show the figures for each of the three modules for each of the two key outputs (Outputs 2.1 and 2.3). This is essential for the project management team to be able to understand the links between the figures and the new planting and harvesting regimes which they will need to plan spatially with communities, provide extension support, and track the results.  
+
+(f) The agroforestry extension strategy is described only briefly in the funding proposal and Project Implementation Manual (annex 21) and no breakdown is provided in the budget note B7 in annex 4 for the farmer training to the value of USD 5.87 million for Output 2.1 (agroforestry), with similarly little detail on extension in Output 2.3 (community forestry). The shifts to production and harvesting regimes that sequester more carbon will be incentivized in the ways described in the project, but also come with opportunity costs in many cases. Extension will require skilled engagement with producers on their traditional knowledge, needs, preferences, perception, and concerns, if significant behavioural change is expected to result (for example less frequent harvesting of bamboo or, planting of fruit trees that take long to mature). A clear strategy for the delivery of training, setting out the methodology and approach to shifting production practices would significantly improve the chances of achieving the desired shifts on the ground, and thus fulfilling the mitigation impact potential.  
+
+(g) No plan is in place for climate-adaptive approaches to agroforestry and forestry planning and extension, in tandem with the evolving climate. The iTAP notes that annex 2 now includes downscaled assessments providing insights on temperature and rainfall projections of the United Nations Intergovernmental Panel on Climate Change Sixth Assessment Report, with differential impacts for drought and flood in the project landscapes. The AE has acknowledged the limitations of the Global Agro-ecological Zone modelling tool in estimating the potential impacts of climate change on the proposed agroforestry systems at the scale of the targeted areas. To address this issue, which could compromise not only the sustainability of the agroforestry systems, but also the overall mitigation impact of the project, the AE plans to carry out certain research  
+
+6 Key are the Sustainable Trade Initiative. ‘Initiative for Sustainable Landscape’ programme in the Central Highlands in Lac Duong; and the ‘Coffee Agroforestry and Forest Enhancement for REDD+ project (Café-REDD) in Lam Dong province funded by the Netherlands Development Organization, the International Climate Initiative and the German Ministry for the Environment, Nature Conservation, Nuclear Safety, and Consumer Protection.
+
+
+---
+*Chunk pages 104–104*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=941 (sys=94, user=847), max_out=1024, ctx=8192
+---
+
+# GCF/B.40/02/Add.12  
+## Page 104  
+
+### Activities during the implementation phase  
+These activities aim to assess the effectiveness of the agroforestry systems under changing climatic conditions. However, it has not been clearly indicated how the results of this research, within the relatively limited time frame of the project, will be integrated into an adaptive management approach to adjust the initially proposed agroforestry systems.  
+
+### 20. The iTAP suggests that the seven areas of weakness outlined above could be addressed with supplementary material to be developed by the AE before signature of the funded activity agreement for the project (see concluding section of this assessment).  
+
+### 21. Based on the above, the impact potential is considered as medium.  
+
+## 1.3 Paradigm shift potential                                      Scale: Medium  
+
+### 22. The proposed project aims to bring about paradigm shift through several features:  
+- Building the enabling environment for REDD+ results-based payments;  
+- Scaling up forest land allocation for improved security of tenure;  
+- Instituting payments for forest ecosystem services;  
+- Supporting a jurisdictional approach to developing deforestation-free value chains;  
+- Sharing knowledge and learning; and  
+- Developing the capacity of financial service providers to support community forestry and agroforestry.  
+
+### 23. Building the enabling environment for REDD+:  
+The project will enable a paradigm shift through contributing to a regulatory framework and policies that will provide an enabling environment for the transition to sustainable forestland management, forest restoration, and agroforestry systems that sequester significant amounts of carbon. It will also strengthen the wider national and provincial systems for claiming results-based payments – for both reduced emissions and carbon enhancement.  
+
+The National REDD+ Action Plan will be mainstreamed into the five-year provincial Sustainable Economic Development Plans, and the project will support the development of provincial REDD+ action plans and their integration into socioeconomic and forestry development plans. Interdepartmental, cross-sectoral and public-private coordination will be facilitated at provincial, district and community levels, allowing for participatory land use planning in support of enhanced carbon sequestration.  
+
+### 24. Scaling up forest land allocation:  
+Activities to improve tenure rights of local farming communities are intended to address a barrier to long-term investments in sustainable farming systems and forest management. Through facilitating 150 Forest Land Allocation processes, the project will make a contribution to solving enduring disputes and improving security of tenure over areas designated as forest land that have long been cultivated by local villagers, thus addressing a significant 45,000 ha out of the estimated total of 210,000 ha of such land across the target provinces. (See section 1.5 below for further discussion of the project’s interventions for land tenure reform.)  
+
+The funding proposal indicates (in sub-activity 1.2.2.2) that in the national and provincial governments, “there is political will to embark on a process of land allocation for these areas to individual households of village communities, especially if it is demonstrated that these areas were already in use before 2016.” If the project is successful in achieving these allocations, there is potential for scale-up through the above-mentioned sub-activity which will “facilitate cross-sector coordination, policy dialogue and capacity-building on zoning, forest land allocation, multi-stakeholder commune-level community forest management and payment for forest ecosystem services”.  
+
+### 25. Potential for knowledge-sharing and learning:  
+Activity 1.2.3 has been designed to facilitate knowledge generation, sharing and learning among project stakeholders and across the project area, and with the wider public. In addition, the 4P platforms at provincial and district levels and participatory land-use planning at commune level ensures knowledge-sharing and learning among stakeholders.  
+
+In addition to the regulatory framework, increased capacity of forest protection authorities will enable them to better address forest land-use  
+
+---  
+**Note:** This content appears to be incomplete or truncated from the original PDF page. The text ends mid-sentence with "address forest land-use", suggesting that more content follows on the next page or section.
+
+
+---
+*Chunk pages 105–105*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1093 (sys=94, user=999), max_out=1024, ctx=8192
+---
+
+# GCF/B.40/02/Add.12  
+## Page 105  
+
+### 26. Private sector engagement: A critical aspect of upscaling is the engagement of domestic financial institutions and investors in value chains. Section C.1 of the funding proposal anticipates leveraged co-finance, during project implementation, of USD 7 million from direct private sector co-investment in activities initiated by the 4P platforms and SMEs. Investment in productive capacity of USD 6.45 million is also hoped for from producers themselves. Output 2.1 will engage commercial banks to build their capacity to develop products, partnerships and application of financial technology that support such investments by producers. It will also support women’s development funds, through savings and credit groups, and cooperative development funds, to access new capital and make microfinance loans in support of the project’s objectives.  
+
+In response to a question from the iTAP on engagement thus far, the AE stated that they had “conducted multiple meetings with potential commercial bank partners.. and they continue to express interest in financing the project’s smallholders and SMEs, perhaps even more so now as there is increasing State Bank of Vietnam (SBV) pressure to make “green” loans, and as the industry works to develop a taxonomy for green investments.”  
+
+### 27. Sustainability of payment for forest ecosystem services: The area where success and scale-up seem least certain is that of the development of a performance-based mechanism for payments for forest ecosystem services (PFES) including carbon sequestration. Such a mechanism would be a first in Viet Nam. According to the funding proposal, it would “provide real and long-term incentives for local communities to conserve and restore forests” and “would open up potential for accessing international REDD+ financing and public and private carbon markets” (funding proposal paragraph 112), by providing an avenue for clear and equitable benefit sharing.  
+
+The project aims to set up five new innovative PES funds (IPFs) under the existing Provincial Forest Protection Development Funds, and aspires to “create an enabling environment for PFES implementation in the target provinces to “evolve” itself into a more performance-based, voluntary and data-informed process, and can be more easily linked to Viet Nam’s NDC and REDD+” (funding proposal paragraph 112). The framework for the new IPFs is to be set up through policy work in Output 1.1, and the mechanism itself in Output 2.1, to facilitate Community Forest Management.  
+
+### 28. The iTAP acknowledges the extensive research, thought and consultation that has gone into the planned intervention to develop a results-based PFES mechanism (as reflected in the feasibility study and the additional section at the end of annex 25 on Activity 2.3.1). The shift from the current limited so-called PES model, “which basically contracts community labour for patrolling, which excludes women and does not involve the local communities in management decisions” (funding proposal paragraph 112), is “not linked to forest protection or regeneration performance, [and constitutes] a fee charged for resource use rather than a true PES” is welcomed.  
+
+The likely sustainability of the five new provincial IPFs, to be established through GCF capitalization grants totalling USD 1.27 million (budget note B27), can be questioned, however. By its nature, a PES scheme relies on seamless continuation of funding for the long term. For a sustainable paradigm-shifting outcome of the RECAF project, the IPFs would need to have been replenished by the end of the six-year project implementation period, to allow the scheme to continue uninterrupted.  
+
+### 29. In response to a query about this, the AE argued that the PFES scheme should be seen as temporary: “Agroforestry models, especially in coffee areas which is a majority of agricultural  
+
+7 iTAP written questions and IFAD responses, 1 September 2024.  
+8 iTAP written questions and IFAD responses, 1 September 2024.
+
+
+---
+*Chunk pages 106–106*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=948 (sys=94, user=854), max_out=1024, ctx=8192
+---
+
+# Page 106
+
+## CF/B.40/02/Add.12
+
+### Areas in the Central Highlands, are developed based on the need to compensate farmers during the transition to more sustainable practices. Once the harvests and improved yields derive from agroforestry, farmers can rely on the new revenue streams, not PFES. In essence, PFES can be viewed as a source of finance towards more sustainable land use, but not a long-term source of payments to farmers, because they should rather be reaping the financial benefits from improved land management and agroforestry.
+
+This seems to the iTAP to constitute an unusual approach to PES, which is generally considered to be a long-term mechanism, ideally market-based or at least built upon an ongoing revenue source. If instead, the mechanism to be developed through the project were framed as a flexible benefit-sharing mechanism, for customization and application in other results-based initiatives, this short-term investment might make more sense.
+
+### Overall, based on the above, the paradigm shift potential of the project is assessed as medium.
+
+## Sustainable development potential    Scale: Medium to high
+
+### The proposed project is aligned with the United Nations 2030 Agenda for Sustainable Development, including contributions towards the country’s efforts to meet Sustainable Development Goals (SDGs) SDG 1: End poverty in all its forms everywhere; SDG 2: End hunger, achieve food security and improved nutrition and promote sustainable agriculture; SDG 3: Ensure healthy lives and promote well-being for all at all ages; SDG 5: Achieve gender equality and empower all women and girls; and SDG 13: Take urgent action to combat climate change and its impacts. Specific co-benefits anticipated from project interventions are discussed below.
+
+### Environmental benefits: The project will promote the transition of monocrop perennial cash crops to agroforestry systems and the use of other sustainable agriculture practices such as contour planting and contour hedgerow technology, enhancing soil fertility and reducing erosion. Training on soil management and use of nitrogen-fixing species should reduce chemical use and resultant soil and water pollution. The project aspires to increase mean species abundance, as a key measure of biodiversity, through forest protection and regeneration, and incorporating indigenous tree species into agroforestry planting, consciously building on traditional knowledge about the value of these species.
+
+### Health benefits: The project is expected to have a positive result on dietary diversity among target groups, through better and more resilient incomes that are derived from more diverse farming systems; better farm management reducing production costs; investments in irrigation increasing yields; better value chain linkages; and the development of small cooperative businesses around specialty products. Second, the introduction of fruit trees, nuts, herbs and medicinal plants into current monocrop coffee or pepper and in the agroforestry systems to be planted on bare land, and the use of beans in contour hedgerow technology, will increase the nutritional value of the farm products.
+
+### Gender and social inclusion benefits: The project promotes gender equality through: (i) increased participation of women in project activities outside their home; (ii) involving women in project training to improve current farm knowledge, financial skills, and learn new knowledge about markets; (iii) improved loan access for women; (iv) increased female participation in household decision-making, thanks to improved farm skills; (v) reduced women’s household chores through increased undertaking of household work by men, and work arrangements based on seasons; and (vi) increasing female involvement in income generation activities for economic empowerment. The Gender Action Plan incorporates specific 9 iTAP written questions and IFAD responses, 1 September 2024.
+
+
+---
+*Chunk pages 107–107*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1034 (sys=94, user=940), max_out=1024, ctx=8192
+---
+
+# GCF/B.40/02/Add.12  
+## Page 107  
+
+The project has a particular focus on beneficiaries belonging to ethnic minorities, such as the M'Nong, Ma, and Ede communities, who reside in forested areas or rely on forests for their livelihoods. The target groups for the project include rural poor households, unskilled rural individuals (with priority given to young people), as well as relatively less poor or lead farmers who possess the necessary skills and assets to promote agroforestry and commercial agricultural production. The project will prioritize the inclusion of youth, women-headed households, and ethnic minority households within these target groups, with a goal of ensuring that 40 per cent of the total beneficiaries fall into these categories.
+
+Free, prior and informed consent (FPIC) procedures will be followed for all project activities and investments at districts and commune level, and a grievance redress mechanism will be established. The project also emphasizes the importance of incorporating traditional knowledge and practices of ethnic minorities.
+
+### Adaptation co-benefits:  
+The project summary (paragraphs 5–7) and section B.2 state that one of the two key co-benefits of the project is climate change adaptation, namely increased resilience of forest-dependent communities. Although the feasibility study (annex 2) describes climate change impacts in the five provinces, the funding proposal narrative fails to identify the specific climate change hazards to which resilience will be built, and how specifically the project interventions will reduce vulnerability or exposure to these hazards.
+
+Paragraph 5 mentions “increasing biodiversity and natural forest coverage, enhancing ecosystem services, such as watershed management, erosion control, soil fertility management, and the supply of non-wood forest products” again without linking these to specific communities’ vulnerability to specific climate hazards. The funding proposal “outlines a framework for developing adaptation indicators during the implementation stage. These indicators will serve as benchmarks to monitor and evaluate the effectiveness of the co-benefit adaptation measures, ensuring they meet intended objectives and can be adjusted in response to new information or changing conditions.” (Funding proposal paragraph 52.) It is unclear where this framework can be found.
+
+### Farmer training under Output 2.1 will include training on the utilization of climate information and existing agrometeorological advisory services, including pest information; and also that the proposed project will complement and coordinate with the work done through the ongoing GCF-funded project (FP125) titled "Strengthening the resilience of smallholder agriculture to climate change-induced water insecurity in the Central Highlands and South Central Coast regions of Viet Nam (2020-2026)" implemented by United Nations Development Programme, which is working in the same provinces with similar target groups, undertaking similar investments in irrigated agriculture and agroforestry, but motivated through the lens of climate change adaptation.
+
+### Land tenure co-benefits:  
+The second key co-benefit of the project relates to land tenure reform. The project involves piloting the forest land allocation (FLA) of encroached and/or disputed forestlands to communities as the basis for their investment in community forestry and agroforestry. Security of tenure is expected to be improved through FLA to 150 target communities (covering a total of 45,000 ha, and benefitting 100,000 smallholders and ethnic minorities), with improvements to the enabling environment for scaling up this process.
+
+At provincial level, the project will facilitate coordination between departments, management boards and communities to address land tenure issues. Guidelines for FLA processes, including FPIC, will be developed, including processes to document community claims, define criteria by which allocations will occur, and assess the power relations within communities to ensure poor and disadvantaged households and communities are adequately represented.
+
+### At the commune level, participatory land-use planning and mapping will identify forest areas for protection, degraded forest for regeneration and sustainable harvesting of forest products, as well as deforested areas on which agroforestry systems can be developed. This will
+
+
+---
+*Chunk pages 108–108*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=970 (sys=94, user=876), max_out=1024, ctx=8192
+---
+
+# GCF/B.40/02/Add.12  
+## Page 108  
+
+Also contribute to the empowerment of ethnic minority communities and facilitate their integration in the formal economy, enabling the signing of contract farming agreements with buyers of deforestation-free commodities and of securing formal loans for investments in agroforestry and specialty products.
+
+40. While these important interventions are welcomed – both for the 150 pilot communities and the wider enabling environment – the AE notes in Barrier 3 (funding proposal paragraph 35) the many and complex challenges involved achieving successful land tenure reform. In response to questions from the iTAP on how progress towards forest land allocations will be monitored and reported, and what adaptive management measures will be put in place if it does not unfold successfully, the AE noted that “as for how the land allocations will be monitored and reported, this has not yet been defined for the project. RECAF would follow criteria of transparency and clear documentation at community, district and provincial levels and beyond, to ensure open and inclusive land allocation.”
+
+41. The iTAP assesses the sustainable development potential of the project as medium to high.  
+1.5 Needs of the recipient  Scale: Medium to high  
+
+42. As highlighted in the funding proposal, Viet Nam’s updated NDC of 2022 contains an unconditional emission reduction contribution in the land use, land-use change and forestry (LULUCF) sector of 32.5 Mt CO₂ eq by 2030. The conditional emission reductions for the LULUCF sector are an additional 14.1 Mt CO₂ eq by 2030. Based on the initial submission, RECAF seeks to contribute almost half (6.68 Mt CO₂ eq) of the conditional LULUCF emission reductions by 2030, by implementing the National REDD+ Action Plan of 2017 in the Central Highlands provinces of Dak Lak, Dak Nong, Gia Lai and Lam Dong, and the province of Ninh Thuan in the South Central Coast.
+
+43. The AE argues that GCF investment will be a critical complement to domestic financing allocated for REDD+ and to support implementation of key policy reforms and targeted investments that will not otherwise occur. The GCF investment will be a needed catalyst for institutionalizing much needed inter-sectoral and multi-stakeholder approaches to reform forest management and conservation, including the stimulation of climate-smart financial products, and to lay out the fundamentals of an enabling environment implementing the action plan.
+
+44. GCF grant financing will be deployed in the poorer, forested areas of the country where institutions are weakest, local ethnic minority communities lack access to public and private funds, and productive infrastructure deficits impede the inclusion of ethnic minority groups and other smallholders in poverty-reducing agricultural and forestry supply chains and their adoption of sustainable production systems and practices. This is combined with significant loan finance from IFAD, focused on providing the necessary infrastructure, through provincial governments, to farming communities.
+
+45. As a lower middle-income country, Viet Nam has achieved strong economic growth of an average 6.4 per cent in gross domestic product (GDP) per year in the last decade, and the debt to GDP ratio was only 37 per cent in 2023. But the decentralized governance model in place assigns the responsibility of servicing external debt obligations to provinces, with strict limits on loan investments. To address these challenges, the Government of Viet Nam is seeking a grant of USD 35 million from GCF. This grant, combined with IFAD's last-mile infrastructure-oriented loan, presents a strong platform for Viet Nam to achieve the project objectives. The grant will help enhance carbon sequestration in the AFOLU sector, contribute to climate  
+
+10 iTAP written questions and IFAD responses, 1 September 2024.
+
+
+---
+*Chunk pages 109–109*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=984 (sys=94, user=890), max_out=1024, ctx=8192
+---
+
+# GCF/B.40/02/Add.12  
+## Page 109  
+
+Viet Nam is highly vulnerable to natural and climate change-induced disasters, with the rural poor exposed to flood, drought and landslide risks. Yields of several crops are expected to decrease with temperature increases and changes in rainfall patterns, with coffee yields being especially negatively affected. The project area remains poorer in comparison to most other regions of the country, with poverty rates of 8.3 per cent in the Central Highlands and 12.7 per cent in Ninh Thuan11 and its economy remains dominated by agriculture and forestry. The poverty rate among ethnic minorities is 40.4 per cent, accounting for 53.8 per cent of the extreme poor. The target districts were chosen because they experience a higher poverty rate, have large ethnic minority populations, and coffee as one of the major crops.  
+
+Overall, based on the above, the iTAP rates needs of the recipient as medium to high.  
+### 1.6 Country ownership  
+**Scale: High**  
+
+Alignment and ownership: The proposed project aims to implement the National REDD+ Action Plan of 2017 in the Central Highlands provinces of Dak Lak, Dak Nong, Gia Lai and Lam Dong, and the province of Ninh Thuan in the South Central Coast. The project is aligned with the Viet Nam NDC through implementing land use planning activities; better capacity for forest protection; a jurisdictional approach to deforestation-free supply chain management of major commodities; development of agroforestry; and enhancing the resilience of the target beneficiaries.  
+
+The project is also well aligned with the government development target to move rural populations from subsistence farming to climate resilient market-oriented agriculture. The current 2019–2025 Country Strategic Opportunities Programme focuses on smallholders and small and medium enterprises in agriculture, in underserved areas with a concentration of ethnic minorities, like the Central Highlands and Ninh Thuan province.  
+
+The project has been designed through a lengthy and participatory process, following a proposal by the Government of Viet Nam for the initial project concept with IFAD as international access entity and co-financier of RECAF. After formal endorsement of the revised concept note, each province formed a project development board, collected baseline data and prepared their own thematic reports and project proposals. The Department of Forestry participated in the two IFAD design missions, during which extensive discussions were held with provincial and district governments, and the project development boards. Commitment letters from the provincial governments are attached in annex 1, indicating their willingness to enter loan agreements with IFAD for infrastructure development. Dak Nong province will not take a loan, but will finance the same level of infrastructure development itself.  
+
+Civil society engagement: Although local and international civil society organizations of varying levels of independence are active in Viet Nam, no evidence is provided on any consultations held with these organizations in developing the project, with consultation focused on government stakeholders at various levels, and community-level stakeholders and groupings in the target sites. During project design, in a process involving both IFAD and the United Nations Food and Agriculture Organization (see funding proposal annex 7), a total of 654 people were consulted at community level in 21 districts across the five provinces, of which 353 were male and 301 were female. Outreach involved a blend of household surveys, key informant interviews, focus group discussions and site visits. This helped inform project design – particularly on how to better encourage participation of ethnic minorities, women and youth (in age-appropriate ways) – and helped determine preferred methods of communication and grievance redress. During implementation, stakeholder engagement will be sensitive to ethnic  
+
+11 https://www.gso.gov.vn/wp-content/uploads/2021/03/Thong-cao-bao-chi-MDP_MPI_edited.pdf
+
+
+---
+*Chunk pages 110–110*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=985 (sys=94, user=891), max_out=1024, ctx=8192
+---
+
+# GCF/B.40/02/Add.12  
+## Page 110  
+
+52. Free, prior and informed consent (FPIC) consultations were conducted with ethnic minority groups and Kinh people present in the project areas, providing information on the proposed project and soliciting their preferences based on their current traditional practices, including preferred approaches to avoiding, minimizing and mitigating social and environmental risks and impact and enhancing development impacts of the proposed project activities. As part of the FPIC consultations, key project information was disclosed at an early stage of the project design (June–November 2021 and May–July 2022, respectively) to the potential target ethnic minority and Kinh communities who were expected to benefit from, and may be impacted by, the project. Later, once the project design is completed and environmental and social safeguard instruments are finalized, FPIC consultations through provincial project management units will be repeated to provide updated project information and solicit meaningful feedback for incorporation into project activities.
+
+53. AE and EE capacity: IFAD has a strong track record in Viet Nam over the past 20 years, supporting rural development and the shift from subsistence farming to climate resilient market-oriented agriculture. IFAD has experience with supporting and encouraging innovation and experimentation with value chain development, small-scale infrastructure and financing, PES, market-oriented planning and public investment, land and forest land planning and allocation, private sector engagement, and climate smart agriculture. IFAD-funded projects in three of the target highland provinces – the Sustainable Economic Empowerment of Ethnic Minorities12 in Dak Nong, and the Agriculture, Farmers and Rural Areas Support Project13 in Gia Lai and Ninh Thuan – included many of the key building blocks of RECAF: the climate-informed provincial Sustainable Economic Development Plans, the climate resilient value chain action planning, the common interest group development, 4P platforms, climate resilient infrastructure, and savings and credit groups. The provinces with experience in implementing IFAD-funded projects are thus in a good position to assist the other two provinces.
+
+54. The government EEs are the Ministry of Agriculture and Rural Development, through its Department of Forestry, and the People’s Provincial Committees of the five provinces. The Department of Forestry is the agency in charge of managing and developing forestry throughout the country, and is well placed to implement the project, since it is responsible for: (i) providing advice to the Minister on forestry management; (ii) conducting policy-strengthening for forestry management and development nationwide; (iii) conducting forest management planning and budgeting for the whole country; (iv) serving as the national focal point for REDD+; (v) implementing REDD+ related activities, including the FCPF and the upcoming initiative through the LEAF Coalition.
+
+55. The Provincial People’s Committee (PPC) is the highest executive agency at the provincial level, overseeing all socioeconomic development within the province. The strengths of PPCs include: (i) being the decision-making body at the provincial level on all related socioeconomic issues; (ii) reviewing and endorsing all provincial policies and programmes; (iii) approving forest management planning and budgeting for the province; (iv) conducting investigation and supervision of all development activities within the province; (v) being responsible to the government for REDD+ implementation; and (vi) having full decision-making power to assign provincial line agencies, such as the Departments of Agriculture and Rural Development under MARD, Forest Protection Department, Forest Protection and Development Fund etc., in implementing related activities. For specific technical areas in which the EEs lack expertise, specialized service providers will be engaged.
+
+12 https://www.ifad.org/en/web/operations/-/project/1100001483  
+13 https://www.ifad.org/en/web/operations/-/project/1100001552
+
+
+---
+*Chunk pages 111–111*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1021 (sys=94, user=927), max_out=1024, ctx=8192
+---
+
+# Page 111
+
+56. The ability of the four PPCs which will be taking the infrastructure loans to repay IFAD has also been confirmed. In response to a question on this from the iTAP, the AE stated that "The borrower agencies have a demonstrated history of strong financial management and the ability to meet their financial obligations consistently. They have successfully managed previous projects, ensuring timely repayments and maintaining financial stability. In addition, by law, each province is required to have an annual revenue and expenditure plan as well as an approved medium-term investment plan. Before any project is approved, the loan and repayment plan must be included in the medium-term investment plan, which is then reviewed and approved by the Provincial People’s Council, central ministries, and the National Assembly. Furthermore, the project itself includes a detailed loan and repayment plan submitted alongside the project proposal, which is evaluated and approved by the Ministry of Finance. This comprehensive process guarantees that the borrower agencies have the capacity and commitment to take and repay loans effectively."¹⁴
+
+57. The iTAP assesses country ownership of the project as high.
+
+## 1.7 Efficiency and effectiveness  
+Scale: Medium to high  
+
+58. Of the project’s total proposed budget of USD 96.08 million, 36 per cent (USD 35 million) is proposed to be a GCF grant, and 64 per cent (USD 61.08 million) is made up of co-financing to the project, closely woven into the project logic. The co-financing is composed of USD 28.64 million from the Government of Viet Nam, including in-kind contributions from MARD and the PPCs, as well as a grant for infrastructure investment in the province of Dak Nong. Major co-financing of USD 32.43 million from IFAD is in the form of ordinary term loans to the PPCs to undertake infrastructure investments in target communities, in support of agroforestry, perennial agriculture, community forest management and forest restoration.
+
+59. IFAD loan finance: The loan finance will support project activities in the two areas of deforestation-free agroforestry value chains and community forest management. For agroforestry, investments will be made in small-scale and micro irrigation systems (over a total of 12,000 ha); small reservoirs for water storage and supply for crop cultivation; irrigation canals and/or piped irrigation systems (upgraded from earth canals); irrigation weirs/dams; and irrigation pumping stations for crop cultivation. Other investments will include small-scale rural roads (upgraded from earth roads) connecting producers collecting points/warehouses; micro weather stations for early-warning of extreme conditions; pest monitoring systems; and ecotourism infrastructures and facilities. Investments in support of community forest management and restoration will include forest monitoring systems; public seed and seedling nurseries; fire watch towers, water points for forest fire fighting; forest protection stations; forest patrol paths and feeder roads; and facilities for forest management and protection. The final list of eligible loan types in annex 21 does not include the post-harvest agri-processing facilities that are the focus on sub-activity 2.2.1.2, but this type of infrastructure loan seems critical to the value chain strengthening logic, and the AE is encouraged to make sure it is on the list.
+
+60. Given the centrality of the IFAD loans to the project’s logic, and also to its efficiency and effectiveness, it is essential that the loans be linked to the actual producer needs on the ground for agroforestry and community forest management. The iTAP welcomes inclusion in the project implementation manual (annex 21) of clear steps for planning and selection of infrastructure, which indicate that infrastructure provision will be demand-driven, as well as the table of selection criteria. The manual indicates that "The type of public infrastructure will be identified and prioritized through the process of value chain action planning in connection with the 4P platforms and the district and communal SEDPs. Where appropriate, other public
+
+¹⁴ iTAP questions and AE responses, 1 September 2024.
+
+
+---
+*Chunk pages 112–112*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=908 (sys=94, user=814), max_out=1024, ctx=8192
+---
+
+# GCF/B.40/02/Add.12  
+## Page 112  
+
+61. **Economic rate of return**. An economic analysis conducted by the project proponents (see the economic and financial analysis in annex 3) was conducted to assess the viability of project activities from the perspective of beneficiaries (financial analysis) and society (economic analysis). To quantify the benefits, activity models compare the benefits with and without the project, so the results presented are all incremental. The analysis shows that the project is very profitable, with a net present value of USD 786.1 million, corresponding to an economic internal rate of return of 29.8 per cent. The high return stems partly from the project’s ambitious target to leverage investments into agroforestry by beneficiaries, through loans from financial institutions (the success of which remains to be seen).  
+
+62. **Efficiency in cost per beneficiary and t CO₂ eq**: The project can be seen to be efficient in terms of cost per beneficiary and cost per tonne of CO₂ mitigated. The cost per beneficiary is USD 245 while the cost per tonne of CO₂ eq mitigated is USD 15.41, which is below the World Bank social price for a tonne of CO₂ eq of between USD 43 and USD 86 in 2023. Using the lower bracket for the social price of carbon that ranges from USD 43 per tonne of CO₂ eq in 2023 to USD 55, as opposed to a market price of USD 5 per tonne of CO₂ eq, increases the project net present value to USD 887.4 million, corresponding to an economic internal rate of return of 33.9 per cent.  
+
+63. **The iTAP rates project’s overall efficiency and effectiveness as medium to high**.  
+
+## II. Overall remarks from the independent Technical Advisory Panel  
+
+64. The iTAP believes that the project “Achieving emission reduction in the Central Highlands and South Central Coast of Viet Nam to support National REDD+ Action Programme goals (RECAF)” has the potential to make significant contributions to enhancement of carbon stocks in the target provinces.  
+
+65. The iTAP recommends that the AE consider adjusting the project title to reflect more accurately the chosen project strategy, which aims to achieve carbon enhancement, rather than emission reductions. This will avoid confusion and show clearly the distinct focus of this investment by GCF, IFAD and the Government of Viet Nam, in contradistinction to other initiatives.  
+
+66. The iTAP recommends that the Board approve this funding proposal with the following condition precedent to the execution of the funded activity agreement:  
+
+67. The accredited entity shall provide to the Fund, in form and substance satisfactory to the Secretariat, a supplementary report including the following elements, necessary to strengthen the Project’s ability to achieve, track and report on the fulfillment of its mitigation impact potential:  
+
+(a) an updated theory of change diagram reflecting the on-the-ground results which are currently missing from the results chains, and are essential in explaining how mitigation impacts will be achieved;  
+(b) a detailed set of spatial targets, per Project province, for implementing the planting and harvesting patterns used in calculating the intended carbon enhancement;  
+(c) a measurement, reporting and verification (MRV) plan, whereby the achievement of the spatial targets can be tracked and reported to the Fund in the annual performance report to GCF, as well as being fed into provincial and national MRV systems;
+
+
+---
+*Chunk pages 113–113*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=322 (sys=94, user=228), max_out=1024, ctx=8192
+---
+
+# GCF/B.40/02/Add.12  
+Page 113  
+
+(d) a strategy and plan for annual monitoring, through the annual performance report, of  
+the rate of deforestation and forest degradation in agroforestry target districts, together  
+with a narrative explaining any positive or negative links between emerging trends and  
+the Project activities, and necessary adaptive management measures;  
+
+(e) an additional key, accompanying annex 22 to the funding proposal, explaining precisely  
+the linkages between the hectares over which specific planting and harvesting patterns  
+are expected to be achieved, and the figures in the sub-modules of the carbon calculator;  
+
+(f) a strategy for delivery of agroforestry and forest management extension and training,  
+setting out the methodology and approach to shifting production and harvesting  
+ practices, in a manner which is respectful of local and traditional practices, but is also  
+designed to achieve specific behavioural change for enhancement of carbon stocks.
+
+
+---
+*Chunk pages 114–114*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=636 (sys=94, user=542), max_out=1024, ctx=8192
+---
+
+# GCF/B.40/02/Add.12  
+## Page 114  
+
+### Response from the accredited entity to the independent Technical Advisory Panel's assessment (FP250)  
+
+**Proposal name:** Achieving emission reduction in the Central Highlands and South Central Coast of Viet Nam to support National REDD+ Action Programme goals (RECAF)  
+
+**Accredited entity:** International Fund for Agricultural Development  
+
+**Country:** Viet Nam  
+
+**Project/programme size:** Medium  
+
+### Impact potential  
+
+Thank you for the positive feedback.  
+iTAP mentioned (point 5) the need to change the title of the project to align it with the content.  
+This important issue is extensively discussed in the “Overall Remarks” section.  
+In addition, iTAP recommends including in the supplementary report:  
+(i) an updated Theory of Change,  
+(ii) a detailed set of spatial targets for the various carbon sequestration interventions,  
+(iii) an MRV plan,  
+(iv) an annual deforestation and forest degradation monitoring plan,  
+(v) an updated Table 1 in Annex 22, and  
+(vi) the agroforestry and forest management extension and farmer training delivery strategy.  
+
+IFAD welcomes all recommendations from ITAP. Please refer to response related to the 'Overall Remarks' section.  
+
+### Paradigm shift potential  
+
+RECAF has considered a short-term investment in the PFES mechanism as a short to medium term measure to compensate farmers during the transition to more sustainable practices which is by essence a transitory phase, with expectations that the new production practices will result in enhanced revenues.  
+
+Some countries outside Vietnam, such as Cameroun for instance, are setting up mechanisms aiming at supporting smallholder farmers transitioning gradually toward more sustainable practices, combining different types of mechanisms including PES; or other which are conditioning the provision of agricultural subsidies after the transition period, to the compliance with environmental requirements. However, we acknowledge that the preference is usually for a long-term funding approach.  
+
+PES schemes typically require sustained funding to achieve lasting, transformative impacts, as short-term models may not provide the continuity needed for forest protection and regeneration. A shift to a flexible benefit-sharing approach could make short-term investment more viable, but long-term replenishment of the IPFs remains at the same time the preferred solution for lasting success.  
+
+### Sustainable development potential  
+
+Thank you for the positive comments.
+
+
+---
+*Chunk pages 115–115*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=653 (sys=94, user=559), max_out=1024, ctx=8192
+---
+
+# GCF/B.40/02/Add.12  
+Page 115  
+
+The co-benefit adaptation indicators will be developed during project implementation following the co-benefits climate resilience impacts outlined in the Funding Proposal section B.2. The DOF under the MARD will be responsible for defining and monitoring these indicators, as part of the MRV plan once the project is underway.
+
+## Needs of the recipient  
+Well noted, thank you.
+
+## Country ownership  
+Well noted, thank you.
+
+## Efficiency and effectiveness  
+In paragraph 42, iTAP requested clarification on why the final list of eligible loan types in Annex 21 excludes post-harvest agri-processing facilities. The reason is that under the new ODA management policy (Decree 114), IFAD loans can only be used for public infrastructure, making both private infrastructure and facilities ineligible, including post-harvest agri-processing facilities. Instead, investments in alternative facilities such as visitor centers and ecotourism infrastructure, aimed at generating income for local communities and promoting sustainable tourism are eligible. Consequently, post-harvest agri-processing facilities were excluded from the investment list, in line with the policy's focus on public infrastructure and alternative development projects.
+
+## Overall remarks from the independent Technical Advisory Panel  
+
+The request of iTAP to change the title of the project from “Achieving emission reduction in the Central Highlands and South Central Coast of Viet Nam to support National REDD+ Action Programme goals (RECAF)” to “Achieving carbon enhancement in the Central Highlands and South Central Coast of Viet Nam to support National REDD+ Action Programme goals (RECAF)” is noted and understandable. However, this decision has extensive implications for many national and regional agreements already signed, as well as financial and legal binding consequences within IFAD, the donors and several entities in Vietnam and abroad. At this point, IFAD does not consider that changing the title is possible. For this reason, we should gently decline the suggestion.
+
+We would like to thank iTAP for recommending the approval of RECAF to the GCF Board. RECAF will provide to GCF a supplementary report including:  
+i) an updated theory of change diagram;  
+ii) a detailed set of spatial targets, per Project province, for implementing the carbon sequestration activities;  
+iii) a measurement, reporting and verification (MRV) plan;  
+iv) a strategy and an annual deforestation monitoring plan;
+
+
+---
+*Chunk pages 116–116*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=193 (sys=94, user=99), max_out=1024, ctx=8192
+---
+
+# GCF/B.40/02/Add.12  
+## Page 116  
+
+v) an updated Table 1 in Annex 22 to the funding proposal providing greater details on the estimation procedure and figures; and  
+vi) a strategy for delivery of agroforestry and forest management extension and training.
+
+
+---
+*Chunk pages 117–117*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=186 (sys=94, user=92), max_out=1024, ctx=8192
+---
+
+# [Page 1]  
+## Achieving emission reduction in the Central Highlands and South Central Coast of Vietnam to support National REDD+ Action Programme goals (RECAF)  
+### Gender assessment  
+#### August 24, 2024  
+##### Final version  
+###### Gender documentation for FP250  
+
+---
+
+
+---
+*Chunk pages 118–118*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=602 (sys=94, user=508), max_out=1024, ctx=8192
+---
+
+# Table of Contents
+
+- [Acknowledgements](#acknowledgements)  
+- [Abbreviations](#abbreviations)  
+- [Executive Summary](#executive-summary)  
+- [1. INTRODUCTION](#introduction)  
+  - [1.1 Project Goal](#project-goal)  
+  - [1.2 Project Outcomes, Outputs, and Activities](#project-outcomes-outputs-and-activities)  
+  - [1.3 Project target groups](#project-target-groups)  
+  - [1.4 Project area](#project-area)  
+  - [1.5 Project’s potential impacts](#projects-potential-imacts)  
+    - [1.5.1 Positive impacts](#positive-impacts)  
+    - [1.5.2 Adverse impacts and risks](#adverse-impacts-and-risks)  
+- [2. METHODS](#methods)  
+  - [2.1 Purpose of gender assessment](#purpose-of-gender-assessment)  
+  - [2.2 Methods](#methods)  
+- [3. GENDER ASSESSMENT](#gender-assessment)  
+  - [3.1 Country overview](#country-overview)  
+    - [3.1.1 National Policies related to Gender Equality & Climate Change](#national-policies-related-to-gender-equality--climate-change)  
+    - [3.1.2 Status Quo and Results of National Policy Implementation](#status-quo-and-results-of-national-policy-implementation)  
+    - [3.1.3 Gender Stereotypes](#gender-stereotypes)  
+    - [3.1.4 Labor Force in Key Sectors](#labor-force-in-key-sectors)  
+    - [3.1.5 Labor Division in Production](#labor-division-in-production)  
+    - [3.1.6 Income Sources](#income-sources)  
+    - [3.1.7 Political Participation](#political-participation)  
+    - [3.1.8 Gender–sensitive Assessment](#gendersensitive-assessment)  
+    - [3.1.9 Gender Based Violence](#gender-based-violence)  
+    - [3.1.10 Impacts of Climate Change](#impacts-of-climate-change)  
+    - [3.1.11 Impacts of COVID-19](#impacts-of-covid-19)  
+  - [3.2 Project Area Overview](#project-area-overview)  
+    - [3.2.1 Socio-economic Conditions of People in the Project Area](#socioeconomic-conditions-of-people-in-the-project-area)  
+    - [3.2.2 Poverty](#poverty)  
+  - [3.3 Project’s Target Groups](#projects-target-groups)  
+    - [3.3.1 Demographic Information](#demographic-information)  
+
+---
+
+## Acknowledgements
+
+[Page 1]
+
+---
+
+## Abbreviations
+
+[Page 1]
+
+---
+
+## Executive Summary
+
+[Page 1]
+
+---
+
+## 1. INTRODUCTION
+
+### 1.1 Project Goal
+
+[Page 1]
+
+---
+
+### 1.2 Project Outcomes, Outputs, and Activities
+
+[Page 1]
+
+---
+
+### 1.3 Project target groups
+
+[Page 1]
+
+---
+
+### 1.4 Project area
+
+[Page 1]
+
+---
+
+### 1.5 Project’s potential impacts
+
+#### 1.5.1 Positive impacts
+
+[Page 1]
+
+---
+
+#### 1.5.2 Adverse impacts and risks
+
+[Page 1]
+
+---
+
+## 2. METHODS
+
+### 2.1 Purpose of gender assessment
+
+[Page 1]
+
+---
+
+### 2.2 Methods
+
+[Page 1]
+
+---
+
+## 3. GENDER ASSESSMENT
+
+### 3.1 Country overview
+
+#### 3.1.1 National Policies related to Gender Equality & Climate Change
+
+[Page 1]
+
+---
+
+#### 3.1.2 Status Quo and Results of National Policy Implementation
+
+[Page 1]
+
+---
+
+#### 3.1.3 Gender Stereotypes
+
+[Page 1]
+
+---
+
+#### 3.1.4 Labor Force in Key Sectors
+
+[Page 1]
+
+---
+
+#### 3.1.5 Labor Division in Production
+
+[Page 1]
+
+---
+
+#### 3.1.6 Income Sources
+
+[Page 1]
+
+---
+
+#### 3.1.7 Political Participation
+
+[Page 1]
+
+---
+
+#### 3.1.8 Gender–sensitive Assessment
+
+[Page 1]
+
+---
+
+#### 3.1.9 Gender Based Violence
+
+[Page 1]
+
+---
+
+#### 3.1.10 Impacts of Climate Change
+
+[Page 1]
+
+---
+
+#### 3.1.11 Impacts of COVID-19
+
+
+---
+*Chunk pages 119–119*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=659 (sys=94, user=565), max_out=1024, ctx=8192
+---
+
+# [Page 1]
+
+| iii |  
+
+## 3.3.2 Access to Land Resource, Income and Youth ........................................................................ 28  
+## 3.3.3 Labour Division ........................................................................................................................ 29  
+## 3.3.4 Decision Making ....................................................................................................................... 31  
+## 3.3.5 Agency ....................................................................................................................................... 32  
+
+## 4. GENDER ACTION & SOCIAL INCLUSION PLAN ................................................................... 33  
+### 4.1 Approach to developing Gender Action & Social Inclusion Plan (GASIP) ......................................... 33  
+### 4.2 Gender Chain Results ...................................................................................................................... 33  
+### 4.3 Responsibility of governmental agencies ...................................................................................... 34  
+#### 4.3.1 Provincial Peoples Committee ................................................................................................. 34  
+#### 4.3.2 Project Management Board ..................................................................................................... 34  
+#### 4.3.3 District Peoples Committee ..................................................................................................... 34  
+#### 4.3.4 Commune Peoples Committee ................................................................................................ 34  
+#### 4.3.5 Local people .............................................................................................................................. 35  
+### 4.4 Cost and Budget .............................................................................................................................. 35  
+
+## 5. CONCLUSIONS AND PRIORITY AREAS ................................................................................... 36  
+### 5.1 Conclusions ...................................................................................................................................... 36  
+#### 5.1.1 Potential barriers to economic participation of women ......................................................... 36  
+#### 5.1.2 Opportunities for gender mainstreaming into project activities towards closing gap  ......... 38  
+### 5.2 Priority Areas .................................................................................................................................... 38  
+#### 5.2.1 Priority One – Enhance women participation in project planning and implementation  .... 38  
+#### 5.2.2 Priority Two – Improve women’s skills for improved income and balanced household chore  ................................................................................................................................................... 39  
+#### 5.2.3 Priority Three – Create mechanisms that allow more and consistent women participation  ............................................................................................................................................................ 40  
+#### 5.2.4 Priority Four – Facilitate for enhanced female-headed businesses to join value chains  ..... 40  
+#### 5.2.5 Priority Five – Promote Gender Mainstreaming among Youth  ............................................ 40  
+#### 5.2.6 Priority Six – Promote Women Participation in FLA, CFM and PFES  ................................ 41  
+#### 5.2.7 Priority Seven – Enhance security of tenure for women in forest lands and other resources  ............................................................................................................................................................ 41  
+
+## REFERENCES .................................................................................................................................... 41  
+
+## ANNEXES ........................................................................................................................................... 43  
+### Annex 1 – Gender Action & Social Inclusion Plan .............................................................................. 44  
+
+---
+
+
+---
+*Chunk pages 120–120*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=500 (sys=94, user=406), max_out=1024, ctx=8192
+---
+
+# Table of Figures
+
+| Figure | Title |
+|--------|-------|
+| 1 | Labor force participation rate (%) |
+| 2 | Industrial sectors (%) |
+| 3 | Average monthly earnings of wage worker (in thousand VND) |
+| 4 | Proportion (%) |
+| 5 | Proportion of communes by major income sources of the commune's residents |
+| 6 | Labour force across quarters, for the 2019-2021 period |
+| 7 | Population Aged 15 Years and Above By Literacy Status (1 April 2019) |
+| 8 | Rural population Aged 15 Years and above by Literacy Status |
+| 9 | Net enrolment rates (%) |
+| 10 | Gross attendance rate (%) and net attendance rate |
+| 11 | Female Headed Households |
+| 12 | Labour Force Participation (2019) |
+| 13 | Migration |
+| 14 | Distribution of Survey Sample |
+| 15 | Labour Division (by Gender) |
+| 16 | Decision Making (domestic works and agricultural works) |
+| 17 | Decision Making (family issues) |
+| 18 | Sense-of-Agency |
+
+# Table of Tables
+
+| Table | Title |
+|-------|-------|
+| 1 | Number of research participants |
+| 2 | Poverty Rate of Project Provinces |
+
+--- 
+
+[Page 1]
+
+
+---
+*Chunk pages 121–121*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=831 (sys=94, user=737), max_out=1024, ctx=8192
+---
+
+# Acknowledgements
+
+This report was submitted by the Ministry of Planning and Investment of Vietnam (Accredited Entity) for the GEF financing under the RECAF project. The report was prepared by Tuan Anh Le (FAO Consultant) - with the inputs from Alessandra Gage (Environment Officer, FAO) and Dhrupad Choudhury (IFAD Consultant). The report was written under the overall guidance of Cora Danker (Project Design Team Leader, Agribusiness Officer, FAO), Nguyen Ngoc Quang (Project Design Team Leader, IFAD Vietnam), Francisco Pichon (Country Director for Vietnam and Thailand, IFAD), and Nguyen Thanh Tung (Program Officer, IFAD Vietnam). Excellent administrative support for online meetings and consultations was provided by Nguyen Khanh (IFAD Vietnam).
+
+This report should be read in conjunction with the Indigenous Peoples Plan.
+
+Many members have been involved in the consultation process during June–November 2021 and May–July 2022. We are grateful to the focal points of five project provinces who had worked hard to lead the organisation of the household surveys, focus group discussions, and key informant interviews:
+
+- Mr. Tran Dinh Triet
+- Mr. Tran Nhat Thanh (Gia Lai)
+- Mr. Nguyen Thanh Van
+- Mr. Tran Van Khoa
+- Ms. Huynh Thi Minh Quyen (Dak Lak)
+- Mr. Le Huyen
+- Mr. Phan Ninh Thuan
+- Mr. Le Canh Hau (Ninh Thuan)
+- Mr. Pham Tuan Anh
+- Mr. Duong Quoc Thinh (Dak Nong)
+- Mr. Nguyen Van Trung
+- Mr. Cao Viet Tan
+- Ms. Nguyen Thi Thanh Son (Lam Dong)
+
+We would like to extend our special thanks to the members of district Departments including Department of Agriculture and Rural Development, Women’s Union, Forest Protection Departments, etc. of five provinces who conducted household interviews, focus group discussions and key information interviews. Their diligence and hard work make the quality of the data.
+
+Without provincial commitment and active support in leading the extensive consultation effort through the COVID-19 surge, the consultations had not been possible.
+
+We are deeply grateful to each and every member of the target communities from 21 districts of five project provinces who had participated in various consultation sessions to share their insight about their community and provide suggestions to project design. The information they provided are extremely helpful to building the baseline socioeconomic profile for project’s target community and to guiding the focus of project intervention design and implementation, particularly for ethnic minorities and gender mainstreaming.
+
+During the preparation of the data collection tools and the Indigenous People Plan and Gender Assessment Report, we are grateful to the insights, comments and suggestions from:
+
+- Antonella Cordone (IFAD)
+- Cora Danker (FAO)
+- Francisco Pichon (IFAD)
+- Jim Hancook (FAO)
+- Nguyen Ngoc Quang (IFAD)
+- Nguyen Thanh Tung (IFAD)
+- Rachele Arcese (IFAD)
+- Alberto Tordesillas Torres (FAO)
+- Safia Aggarwal (FAO)
+
+and many other colleagues whose comments and suggestions are helpful to enhancing the quality of the reports.
+
+
+---
+*Chunk pages 122–122*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=373 (sys=94, user=279), max_out=1024, ctx=8192
+---
+
+# Abbreviations
+
+| Acronym | Full Form |
+|---------|-----------|
+| 4P Public–Private–Producer Partnership |  |
+| CFM Community Forest Management |  |
+| CIG Community Interest Group |  |
+| DARD Department of Agriculture and Rural Development |  |
+| EM Ethnic Minority |  |
+| FA Farmers Association |  |
+| FC Farmers’ Cooperative |  |
+| FAO Food and Agriculture Organization |  |
+| FLA Forest Land Allocation |  |
+| FGD Focus Group Discussion |  |
+| FHH Female-Headed Household |  |
+| FPIC Free, Prior, Informed Consent |  |
+| GAP Gender Action Plan |  |
+| GCF Green Climate Fund |  |
+| GBV Gender Based Violence |  |
+| IEC Information, Education and Communication |  |
+| IFAD International Fund for Agricultural Development |  |
+| IPP Indigenous Peoples’ Plan |  |
+| KII Key Informant Interview |  |
+| MARD Ministry of Agriculture and Rural Development |  |
+| NCD |  |
+| OHS |  |
+| NDC Nationally Determined Contribution |  |
+| SE/SH |  |
+| socio-economic development planning |  |
+| SEA/SH |  |
+| Sexual Exploitation and Abuse/Sexual Harassment |  |
+| SEP Stakeholder Engagement Plan |  |
+| PC Peoples’ Committee |  |
+| PMU Project Management Board |  |
+| VAC Violence Against Children |  |
+| VCAP |  |
+| VNFOREST |  |
+| value chain action plans |  |
+| Vietnam Administration of Forestry |  |
+| WB World Bank |  |
+
+[Page 1] vi
+
+
+---
+*Chunk pages 123–123*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=955 (sys=94, user=861), max_out=1024, ctx=8192
+---
+
+# Executive Summary
+
+## Background
+
+A gender assessment had been conducted during June–November 2021 and May–July 2022 amid resurgence of COVID-19 in Vietnam by mid-2021. The assessment aims to understand, to the extent possible, the socioeconomic status, culture and livelihoods of project’s target groups which include, inter alia, ethnic minorities, women and youth. The assessment was carried out through extensive collection and analysis of secondary data (national, regional, provincial level) and primary data (project level). Primary data were collected through consultation with about 654 people, of which 90% are ethnic minority people and close to 50% are female. All consulted people live in 21 districts of 5 project provinces in the Central Vietnam. These districts are identified (through data analysis under the project) as hotspots for deforestation.
+
+## Purpose
+
+The gender assessment aims to understand the gender relations, roles, responsibilities of men and women living in project districts, thereby proposing ways – through a gender action plan, to promote gender equality and empowerment for women among project’s target groups. Since most of project beneficiaries are ethnic minorities, the Gender Action Plan and Indigenous People Plan will be mainstreamed into project planning and implementation which will be carried out annually by each of the five project provinces. The gender mainstreaming under the project will be planned and carried in a manner that contributes to achieving the expected targets over the project life. This is based on targets set forth by mid-line and end-line vis-a-vis project’s baseline established through the social assessment and gender assessment that have been done under the project. Consultation with potential beneficiaries (known as affected people) and other stakeholders (interested groups) takes the forms of household survey, focus group discussion and key informant interviews.
+
+## Key findings
+
+The gender assessment suggest that the ethnic minorities in the project are very poor and as such vulnerable to the potential impact of climate change, particularly to their current agricultural production which makes up 77% for cultivation, 26% for animal husbandry, and 6% (forestry). The monthly average cash income of female members are lower than that of male (n=1,340) and average productive land access among female headed household is low than that of male headed household. However, for youth respondents, there is no statistically significant difference in monthly average cash income between male and female. In terms land shared land titles, . It is noted that across all types of land asked in the household survey (including Perennial land, Annual Cropland, Production Forest, Protection Forest, Agri-land for Animal Husbandry and Residential land), only 36.7% (n=182) have both husband and wife’s names on their LURCs (See Section 3.3.2).
+
+In terms of labor division and decision making, gender stereotype still exists due to social norms by which female typically spend most of their daily time for unpaid domestic works whereas male spend most of their time for paid work and social activities outside their home. Albeit most of the decision in financing rest with female member, particularly for domestic works, decision making in agricultural production appears to be mainly taken by mostly by male as they are more knowledgeble about cultivation practices, innovation, labor, and market due to being more socialised (See Section 3.3.3 and 3.3.4). As a result, female appears being less confident in a) identifying business opportunities, b) protecting their business from being harmed, and c) bargaining for better prices. They are also less likely to be able to visit friends, relatives in nearly are a (villages, neighbouring province) as they have to ask for permission of their husband (See Section 3.3.5).
+
+
+---
+*Chunk pages 124–124*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=582 (sys=94, user=488), max_out=1024, ctx=8192
+---
+
+# [Page 124]
+
+## Recommendations
+
+Based on the results of the gender assessment, it is highly recommended (through the Gender Action Plan and Indigenous People Plan) that female members be included during all project planning activities and invesment activities that benefit them at both household and community level.
+
+For ethnic groups that are of matriarchal societies, this system will be used as an advantage under the project to promote the participation of EM women in decision making process and income generation activities – both household and community level.
+
+To promote female participation in project activities (which deviate from the current labour division and social norms), the following key steps are recommended:
+
+- Ensure at least 40% of female participating in all project planning activities – be it intended to benefit local people at community or household level, including female-headed households;
+- Reduce women's burden from traditional household chore by
+  - Exploring and promoting activities that help women save time and labour including drudgery reduction mechanisms,
+  - Exploring and increasing use of small-scale practices that involve mechanicalisation to free up intensive and heavy labour. This can be shared in groups of people that typically share labour,
+  - Encouraging male to share more domestic works (towards equal sharing) to enable female to take trainings outside their home.
+- Provide funding and capacity building trainings, e.g. technologies, leadership training, financial literacy, business development, etc. to develop value chains that women are more comfortable/skilled for niche products such as bee-keeping, sericulture, weaving, natural dyes (which can be introduced/included in agro-forestry interventions);
+- Conduct IEC campaigns for awareness raising, sharing success story and champions;
+- Promote female participation throughout the whole process of government lead forest land allocation (FLA), including joint ownership of forest land to promote decision making on the part of female.
+
+The above key recommendations aim to promote equal participation of female from project's target groups, which would enhance female participation in project planning and implementation activities and foster the process of economic empowerment for female members.
+
+
+---
+*Chunk pages 125–125*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=468 (sys=94, user=374), max_out=1024, ctx=8192
+---
+
+# 1. INTRODUCTION
+
+## 1.1 Project Goal
+
+The project is entitled “Achieving emission reduction in the Central Highlands and South Central Coast of Viet Nam to support National REDD+ Action Programme goals” (RECAF). The RECAF project’s goal is to reduce GHG emissions from AFOLU sector, contributing to the climate-resilient sustainable development of forest-dependent communities in the target provinces.
+
+To achieve this goal, the project sets out its paradigm-shifting logic predicated on the premise that:
+
+### Goal Statement:
+
+IF Viet Nam's REDD+ design pillars and NRAP are fully upgraded and integrated into provincial socio-economic development processes with effective public-private-producer partnerships (4Ps) and financial and legal incentives to operationalize deforestation-free value chains for REDD+, THEN Viet Nam will be able to scale up its sustainable land and forest management across the Central Highlands and South-Central Coast and beyond to establish a pathway towards low-emissions sustainable development, BECAUSE the necessary policy and institutional frameworks, technical capacity, and financial means will have been placed to reduce GHG emissions from the AFOLU sector while contributing to the climate-resilient sustainable development of forest-dependent communities.
+
+The project focuses on developing deforestation-free value chains, fostering alternative livelihood options, and implementing community forest management initiatives tailored to the needs of forest-dependent communities, as described further below. The Theory of Change diagram (Figure below) visually depicts these approaches and illustrates the anticipated outcomes of the project's interventions.
+
+[Page 1] | 1 |
+
+
+---
+*Chunk pages 126–126*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=492 (sys=94, user=398), max_out=1024, ctx=8192
+---
+
+# 1.2 Project Outcomes, Outputs, and Activities
+
+## OUTCOME 1: Viet Nam’s REDD+ design pillars are fully upgraded and integrated into provincial policies & institutional frameworks with improved public-private-producer partnerships (4Ps) to operationalize REDD+
+
+### Output 1.1: National REDD+ policies and mechanism upgraded to fulfill all required functions, including afforestation.
+
+#### Activity 1.1.1: Upgrade National Forest Monitoring System (NFMS) and Safeguard information System (SIS)
+
+- **Sub-activity 1.1.1.1.** Upgrade a monitoring system to report results of emissions reductions and removals
+- **Sub-activity 1.1.1.2.** Implement the REDD+ Safeguards Information System
+- **Sub-activity 1.1.1.3.** Promote inter-provincial coordination and knowledge management
+
+#### Activity 1.1.2: Mobilize resources for NRAP implementation and inclusive investment planning and equitable resource distribution mechanisms
+
+- **Sub-activity 1.1.2.1.** Prepare a Regional NRAP Investment plan
+- **Sub-activity 1.1.2.2.** Conduct capacity building for private sector resource mobilization
+- **Sub-activity 1.1.2.3.** Conduct national multistakeholder policy dialogue on including carbon sequestration services in PFES mechanisms and to draft MCCFM guidelines
+
+### Output 1.2: Provincial policies, legal and institutional frameworks, and stakeholder coordination mechanisms integrated with National REDD+ Action Plan (NRAP)
+
+#### Activity 1.2.1: Mainstream NRAP into provincial policies and legal institutional framework
+
+
+---
+*Chunk pages 127–127*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=808 (sys=94, user=714), max_out=1024, ctx=8192
+---
+
+# [Page 1]
+
+## Outcome 2: Emissions reductions from AFOLU consequently to 4Ps' deforestation-free value chains & performance-based finance
+
+### Output 2.1: Deforestation free value chains developed by 4Ps and increased access to finance
+
+#### Activity 2.1.1: Develop deforestation-free commodity supply chains through 4P platforms
+- Sub-activity 2.1.1.1. Develop deforestation-free commodity supply chains (perennial crops, acacia-based timber, bamboo)
+- Sub-activity 2.1.1.2. Develop value chains for deforestation-free niche products (honey, mushrooms, medicinal plants, herbs, other NWFPs)
+
+#### Activity 2.1.2: Develop the capacity of farmers, common interest groups (CIGs), cooperatives and small and medium-sized enterprises (SMEs) for deforestation-free value chains and alternative livelihood development
+- Sub-activity 2.1.2.1. Establish CIGs
+- Sub-activity 2.1.2.2. Train farmers, CIGs, cooperatives and SMEs
+
+#### Activity 2.1.3: Support financial providers to develop and promote financial products for deforestation-free value chain development
+- Sub-activity 2.1.3.1. Strengthen WDFs and CDFs to manage funds and develop products that support investments in deforestation-free value chains
+- Sub-activity 2.1.3.2. Provide access to capital for WDFs and CDFs to more rapidly scale credit activities
+- Sub-activity 2.1.3.3. Build capacity of commercial banks to develop products, partnerships and application of fintech that support investments in deforestation free value chains and advance project objectives
+
+### Output 2.2: Deforestation-free value chains and forest restoration infrastructure upgraded and established
+
+
+---
+*Chunk pages 128–128*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=856 (sys=94, user=762), max_out=1024, ctx=8192
+---
+
+# Activity 2.2.1: Develop infrastructure for deforestation free value chains
+
+- Sub-activity 2.2.1.1. Promote sustainable agroforestry through small-scale and micro infrastructure investments, including the development of micro irrigation systems and organic fertilizer production facilities
+- Sub-activity 2.2.1.2: Enhance the post-harvest facilities of selected value chains by incorporating value-added processing techniques
+
+# Activity 2.2.2: Establish and upgrade forest restoration infrastructure (IFAD Co-finance)
+
+- Sub-activity 2.2.2.1. Strengthen forest monitoring and protection infrastructure by implementing comprehensive upgrades
+- Sub-activity 2.2.2.2.: Establish public nurseries dedicated to tree species cultivation, creating essential infrastructure for reforestation and afforestation initiatives
+
+# Output 2.3: Collaborative forest management capacity enhanced through performance-based incentives
+
+# Activity 2.3.1: Develop a results-based payments for ecosystem services (PES) mechanism for collaborative forest management
+
+- Sub-activity 2.3.1.1. Support Provincial Forest Protection Development Funds (PFPDFs) to design and implement a mechanism for performance-based payments for carbon sequestration services
+- Sub-activity 2.3.1.2. Build the capacity building of the PFPDFs
+
+# Activity 2.3.2: Support multi-stakeholder commune-level collaborative forest management (MCCFM)
+
+- Sub-activity 2.3.2.1. Facilitate a participatory land use planning and mapping process
+- Sub-activity 2.3.2.2. Develop fully-devolved MCCFM pilots
+- Sub-activity 2.3.2.3. Develop capacity of village-level MCCFM group members
+- Sub-activity 2.3.2.4. Strengthen the MCCFM support system
+
+## 1.3 Project target groups
+
+It is estimated that RECAF will reach 420,000 direct beneficiary households who are mainly smallholders and vulnerable individual, and a total of 1,000,000 people who will indirectly benefit from the project. Specifically, the project’s target groups include: (i) rural poor households with land and labourers; (ii) unskilled employed rural people; (iii) rural people lacking land for sustainable production but having business acumen and interest; and (iv) key farmers with the skills and assets to promote agroforestry/commercial agricultural production. Vulnerable households, such as the poor, near-poor and/or women-headed households, youth and others identified through local SEDP and RAP planning processes (e.g., engaged in vulnerable production systems, carrying out their production activities in vulnerable areas identified by Disaster Risk Management planning/zoning), and ethnic minority households will be prioritized among the target groups. RECAF will propose specific measures to ensure women’s participation in relevant activities, including minimum participation rates (at least 40%).
+
+In addition to above target groups, the project will also include small and medium scale enterprises/agri-businesses (SMEs), and producer organizations (cooperatives, Common Interest Groups (CIGs), savings and credit groups, and so forth, in project supported zero deforestation value chains.
+
+
+---
+*Chunk pages 129–129*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=320 (sys=94, user=226), max_out=1024, ctx=8192
+---
+
+# 1.4 Project area
+
+The project will cover five provinces, including Gia Lai, Dak Lak, Dak Nong, and Lam Dong in Central Highlands, Ninh Thuan in the South-Central Coast (See Figure below). Within five project provinces, districts selected for project intervention have a total of 926,066 hectares of natural forest, of which about 400,000 hectares of this area are special use forest, which are strictly protected anyway, and no project impact can be expected there. Thus, it is estimated that project activities will contribute to the protection of about 500,000 hectares of natural forest.
+
+# 1.5 Project's potential impacts
+
+## 1.5.1 Positive impacts
+
+Impacts will, overall, be positive, including (but not limited to) the following key benefits:
+
+### At community level:
+Knowledge
+
+
+---
+*Chunk pages 130–130*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=532 (sys=94, user=438), max_out=1024, ctx=8192
+---
+
+# [Page 1] 6
+
+- Access to improved sustainable farming knowledge (climate smart agricultural practices, deforestation free standards, good agricultural practices, GAP Standards) that are gender sensitive and lead to women’s empowerment.
+- Bio-inoculant and LEISA based practices introduced for improvement of soil health and productivity.
+- Improved capacity building (knowledge, management, leadership, and also to enhance women’s confidence for embarking on business enterprises)
+
+## Soil and Landscape
+
+- Improved soil health, diversified farming and landscapes, thereby increasing productivity of crops and livestock and promoting integration of environmental management.
+- Local communities will have deeper knowledge and understanding of local soil types/micro-habitats and hence, can contribute to effective interventions.
+
+## Infrastructure
+
+- Access to infrastructure and facilities to improve agricultural production efficiency and promote adoption of deforestation free supply chain and help in reducing drudgery.
+
+## Credit Loan
+
+- Access to loans for smallholders those who are willing to adopt climate-smart farming practices.
+
+## Income generation and business development opportunities
+
+- Job opportunities (on-farm and off-farm) for both men and women,
+- Job and skill development opportunities for youth (particularly for those who are disadvantaged), including promotion of agricultural SMEs, on-the-job training and apprenticeship programme.
+
+## Networking
+
+- Become part of forestry and farmer groups for mutual support/learning
+- Become part of business partner with private sector
+- Become part of saving/credit group for mutual support business partnership (including MFI/Women development fund, currently in Dak Nong and Ninh Thuan, to be replicated).
+
+## Gender equality
+
+- Improved participation of men and women in project planning, implementation, M&E
+At provincial and national level:
+- Mainstream REDD+ into SEDP
+
+---
+
+
+---
+*Chunk pages 131–131*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=579 (sys=94, user=485), max_out=1024, ctx=8192
+---
+
+# [Page 1]
+| 7 |  
+
+## 1.5.2 Adverse impacts and risks
+
+### Adverse Social & Environmental Impacts:
+Will be minor, localized, limited, manageable and reversible,
+
+### Potential minor temporary environmental impacts due to minor upgrading of small-scaled irrigation canal, drainage, rural road, power line, access road, production facilities, infrastructure and equipment for harvesting and post-harvesting, forest protection stations, fire watch tower, pumps, and other public infrastructure foreseen under the project.
+
+- Can be avoided or minimized through proper design and construction measures.
+- Can be avoided through a) consultation and b) exploring ways to engage EM peoples into project design and implementation, and c) participatory monitoring during project implementation
+
+### Social and Environment Risks
+- Improper storing, handling, and application of pesticides and other chemical inputs
+- Possible increased use of chemical fertilisers and pesticides due to crop intensification which may raise risk of environmental and human health deterioration.
+- Completing demands for scarce water supply with local people
+- Contraction of diseases (e.g. HIV/AIDS, sexually transmitted diseases, other communicable diseases…, COVID-19, due to labor influx)
+- Conflicts with local people
+- Gender based violence (e.g. verbal and physical abuse, sexual harassment, violence against children…)
+- Unequal access to project benefits/conflicts if eligibility for selection of beneficiaries do not exist, or exist but not well applied
+- Possible social exclusion (because of vulnerability, land tenure issues)
+- Agricultural competition (markets, value chains…)
+- Declined emphasis on food crops, resulting in reduced dietary diversity with serious implications for nutritional security and human health, particularly of pregnant women, nursing mothers and children due to increased shift towards commercially important cash crops and agroforestry,
+- Inflation
+- Traffic accidents
+
+
+---
+*Chunk pages 132–132*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=734 (sys=94, user=640), max_out=1024, ctx=8192
+---
+
+# 2. METHODS
+
+## 2.1 Purpose of gender assessment
+
+The purpose of this Gender Assessment (GA) is to understand the status-quo of key gender related issues at country, particularly those at project levels, and on the basis of that propose s gender- responsive actions that will be realized under the proposed project – through mainstreaming gender issues into project design and to promote gender equality through project activities during project implementation.
+
+The gender assessment and gender action plan aim to 1) support climate change interventions and innovations through a holistic gender mainstreaming approach, 2) Promote gender equality through climate change mitigation and adaptation interventions whereas minimising social, gender-related and climate-related risks in all project activities; and 3) contribute to reducing the gender gap caused by current inherent social, economic and environmental vulnerabilities and exclusions as well as potential impacts induced by the climate change in Central Vietnam. Above gender actions are done through FPIC engagement process that has already started during project design stage and will be maintained and enhanced during project implementation.
+
+## 2.2 Methods
+
+The gender assessment starts out by, first, exploring and analysi ng the gender roles and norms in Vietnam that shape how men and women undertake role s in their daily income generation activities and other relevant activities at household and community levels. A particular focus is placed on the project’s target population, which include both Kinh mainstream and ethnic minority groups present in the project area.
+
+Second, the gender assessment was conducted on the basis of the social assessment of the project’s potential risks and impacts. The social and gender assessment aligns with the logical framework of the proposed project to inform project design in general and the gender action and social inclusion plan in particular. While the social assessment contributes to project design through avoiding/minimizing adverse impacts and risks, and enhance project development effectiveness, the gender action plan aims to implement specific activities that mainstreams gender aspects into project activities, thereby promoting gender equality through project investments.
+
+### Data Collection Tool
+
+A set of questionnaires were prepared by the project design team for the purpose of Focus Group Discussions (FGD), Key Informant Interview (KII), and Household Survey (HS). The questions were translated into Vietnamese for use by local governmental staff. Staff selected by provinces to conduct these surveys were trained through Zoom and were provided sufficient time to practice through follow-up online sessions to ensure they well understand the structure and purpose of each questions and know how to pose such questions in a way that is culturally appropriate to local people, particularly people from ethnic minority groups.
+
+### Sample Size and Sampling
+
+For the household survey, a sample of 353 households was taken. The percent of male interviewees is 58.7% and that for female is 41.9%. To ensure representativeness from 21 project districts, a typical
+
+[Page 1]  
+| 8 |
+
+
+---
+*Chunk pages 133–133*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=734 (sys=94, user=640), max_out=1024, ctx=8192
+---
+
+# [Page 1]
+| 9 |  
+ 
+commune in each district was selected for the survey (including FGD, KII and HS). A stratified 
+random sampling was adopted in each select commune to enhance the representativeness for potential 
+project beneficiaries.  
+## Table 1 - Number of research participants 
+   No. Type of consultation Male Female Total number of people 
+participating 
+ 1 Household survey 205 148 353 
+ 2 Focus Group Discussion 70 107 177 
+ 3 Key Informant Interview 55 40 95 
+ Total 330 295 625 
+ 
+In addition to primary data collected through household survey, focus group discussion, and key 
+informant interview, secondary data such as research papers, study reports, statistical books, 
+technical reports, and socioeconomic development reports, were collected to assist the description 
+and analysis of the socioeconomic context of the affected households, and their com munity at 
+large. 
+
+## Data Collection  
+
+### Focus Group Discussions (FGD)
+FGDs were conducted in small groups (8 persons per group). 
+FGD gathered people from similar backgrounds (e.g. ethnic groups, natural resource dependent) 
+and experiences to discuss pre-defined topics. This information was collected to support the 
+gender analysis and gender assessment exercise, and the preparation of the required social and 
+environmental safeguards documents. All FGDs were guided by moderators who are trained local 
+governmental staff. The group facilitators introduced topics for discussion and helped groups to 
+participate in a lively and natural discussion amongst themselves. FGD aimed to obtain the insight 
+of local people on specific issues, particularly the range of their opinion and ideas, and the 
+inconsistencies and variation that exists in their community with regards to their beliefs, 
+knowledge, attitude and practices with regards to their agricultural and forestry productions and 
+their access to the land/natural resources to support their subsistence and long-term livelihoods. 
+
+### Key Informant Interview (KII)
+KII aims to collect information about select pressing issues and 
+problem in the target community – through individuals who are locally known as experts in the 
+topics under question, and who have a broad social network with individuals and parties who play 
+certain roles (e.g. production, marketing, consumption…) in a value chain for a commodity that 
+are likely to be supported by the project to promote deforestation free value chain.  
+
+### Household Survey  
+Household surveys were administered to invited representatives  of local 
+households using questionnaire uploaded through personal mobile device s of local government 
+staff who conduct the survey.  
+
+### Languages
+All FGD were conducted with the language assistance  of local governmental staff 
+who are from the same ethnic minority  groups. This person was full time with each of the FGD 
+to ensure participants from ethnic groups are comfortable  using their own native languages and 
+Kinh language as they feel most comfortable for the purpose of the focus group discussion.
+
+
+---
+*Chunk pages 134–134*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=732 (sys=94, user=638), max_out=1024, ctx=8192
+---
+
+# [Page 1]
+| 10 |  
+
+## COVID-19 Prevention
+
+In Dak Dong and Ninh Thuan provinces, the above surveys were conducted amidst the rising COVID-19 (June-August 2021). Thus, national and provincial measures for COVID-19 prevention were strictly observed by local government and local governmental staff who were directly involved in the surveys. For Gia Lai and Dak Lak provinces, surveys were carried out during June and July 2022.
+
+## Data Analysis
+
+Mixed method was applied for the gender assessment to enhance the reliability and validity of the study findings.
+
+### Focus Group Discussions (FGD)
+
+Qualitative data obtained from focus group discussions were analyzed using content analysis.
+
+### Household Survey
+
+Household survey data was collected through questionnaire prepared by project design team and designed into KoboToolbox platform. KoboToolbox was selected because it supports offline data collection, offers functionality appropriate to the needs of this survey, and is free. Data collected on field were submitted to KoboToolbox platform after each day of household interview. Data were cleaned using Microsoft Excel and were analyzed using the statistical package IBM SPSS Statistics for Windows (version 28.0, Armonk, NY, USA).
+
+Descriptive statistics was conducted to obtain frequency for all responses collected through the online survey.
+
+### Key Informant Interview (KII)
+
+Data collected from KII were reviewed and analyzed to support the trustworthiness of data collected from FGDs, particularly for the topic related to Contract Farming.
+
+## 3. GENDER ASSESSMENT
+
+### 3.1 Country overview
+
+#### 3.1.1 National Policies related to Gender Equality & Climate Change
+
+Gender. Gender equality has been mandated in the latest Constitutions of Vietnam (2013). It is furthered on in respective legal documents to promote implementation. In Vietnam, the Law on Gender Equality (No. 73/2006/QH11) was approved in 2007. It aims to address gender equality, particularly women's rights and women's empowerment through legal frameworks to allow consistent mainstreaming into legal system in Vietnam. In addition to this Law, the National Strategy on Gender Equality 2021-2030, the Action Plans on Gender Equality 2011-15, 2016-20, and other legislation defining the responsibilities for the implementation of the Law.
+
+Various Decrees and Directive were promulgated in relation to this law to facilitate the implementation process. It was also mandated that any new laws need to incorporate the opportunities for mainstreaming gender aspect to promote gender equality in applicable laws. Some prominent laws that promote gender equality include Law on Marriage and Family (2014), Law on Law on Domestic Violence Prevention and Control (2007), and Labor Code (2019).
+
+
+---
+*Chunk pages 135–135*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=856 (sys=94, user=762), max_out=1024, ctx=8192
+---
+
+# [Page 1]
+
+| 11 |  
+
+In addition to leg islation framework, national strategy on gender equality have been unfolded . The  
+latest national strategy for gender equality (2021 -2020) was built on the success and lesson learned  
+from its precedent (2010 -2020). This strategy aims to reduce the gaps of gender equality through  
+creating favourable conditions to promote equal participation of men and women in various fields of  
+social life, covering six key targets including political, economic and labor, gender based violence,  
+health care, education, information access and communication. To realize national strategy on gender  
+equality, national action plan on gender equality have been prepared to guide the implementation of  
+the national strategy. In terms of state management, at provincial level, provincial people committee,  
+prepare their own implementation plan to materialize the national strategy. This is done by setting for  
+province targets that are specific to the situation of gender equality in respective province. With  
+regards to state management, ministries sets for he their own gender equality implementation plan in  
+areas such as agriculture, health, education…to promote more specific gender mainstreaming effort  
+in activities of their own sector.   
+In addition, National Target Program also make an effort to mainstream gender into their respective  
+programs, such as National Target Program on New Rural ( 2021-2025), on Sustainable  Poverty  
+Reduction (2016-2020), on Health care (2016- 2020), Jobs, Job Training, and Labor Safety (2016 –  
+2020), Pollution Resolution and Environmental Improvement (2012 -2015) and for the period from  
+2016-2020 for r adical resolution for public seriously  polluting establishments. At provincial level,  
+provincial Peoples’ Committee als o published Action Plan on Gender Quality to realize National  
+Strategy on Gender Equality.   
+At international level, Vietnam has ratified various conventions related to promoting gender equality.  
+Some of them include Forced Labour Convention, Equal Remuneration Convention, Discrimination  
+(Employment and Occupation) Convention.   
+Climate Change/Natural Disaster  
+The Government of Viet Nam has a strong legal framework in place to respond to the potential impact  
+of climate change. Resolution 24-NQ-TW (dated 3 June 2013) issued by the Communist Party is a  
+high-level directive on climate change. The Resolution strengthens the roles of relevant agencies in  
+responding to climate change. Its objectives cover on 1) climate change response, 2) natural resource  
+management, and 3) environmental protection. It focuses, in particular, on climate change adaptation  
+and serves as the foundation for planning directions and policies for socio -economic development,  
+ensuring national defense, security and social security.  The Government is conducting consultation  
+on the draft National Strategy on Climate Change for the period from now up to 2050.   
+The Law on Natural Disaster Prevention and Control (2013) states  
+1 gender equity as one of seven   
+core principles of disaster prevention and control. The document provides guidance of how natural  
+disaster prevention and recovery should be implemented. It also specifies roles and responsibilities of  
+relevant agencies in natural disaster prevention and control. It prescribes activities of natural disaster  
+prevention and control, the rights and obligations of agencies, organizations, households and  
+individuals participating in natural disaster prevention and control, and state management and  
+available resources to ensure achievement of this effort. Although there is no specific guidance on   
+
+1 Clause 5, Article 4, Law on Natural Disaster Prevention and Control 2013
+
+
+---
+*Chunk pages 136–136*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=843 (sys=94, user=749), max_out=1024, ctx=8192
+---
+
+# [Page 1]
+| 12 |  
+
+## Gender Mainstreaming in the Law and Decrees under this Law
+
+There has been guidance that has been issued by MARD and Central Women’s Union on Gender Mainstreaming in Community Based Natural Disaster Prevention and Control (for commune level).
+
+## National Green Growth Strategy for 2021 - 2030, Vision towards 2050
+
+**(No. 1658/QD-TTg, dated October 1, 2021)**
+
+Its overall target is to "accomplish green growth, thereby contributing to the restructuring of the economy in conjunction with renewing the growth model, in order to achieve economic prosperity, environmental sustainability and social equality; strive towards a green and carbon neutral economy; contribute to the realization of the goal to reduce global warming".
+
+The target is achieved through the following six guiding views:
+
+1. **Green growth contributes to the restructuring of the economy in conjunction with renewing the growth model**, raising the competitive capabilities and the ability to withstand external shocks, as well as the actualization of the Strategy for socio-economic development in the 2021-2030 period, the system of national master plans together with the development strategies of industries and fields.
+
+2. **Green growth is an important method to carry out sustainable development** and directly contributes to the reductions in greenhouse gas emissions as a step towards a carbon neutral economy in the long run.
+
+3. **Green growth places the people at the center** and helps reduce human vulnerability to climate change; encourages each person to maintain a lifestyle that is responsible to the community and to society, provides guidance to the future generations with regards to the green living culture while also establishing a civilized and modern society that is in harmony with nature and the environment.
+
+4. **Green growth must be based on modern institutions and governance**, advanced science and technology along with high quality human resources, and it has to suit the international context as well as the conditions within our country.
+
+5. **The orientation of green growth is to invest into advanced technologies**, digital transformation along with smart and sustainable infrastructure; creating momentum so that private investments play an increasingly important role in the green economy.
+
+6. **Green growth is a common cause of the entire political system**, the entire people, the business community along with related organs and organizations; it is promoted through a spirit of innovation and the aspirations to develop a prosperous and sustainable country.
+
+## 3.1.2 Status Quo and Results of National Policy Implementation
+
+Despite strong commitment to establishing a legal framework, with Law on Gender Equality as a pivotal legislation that is cross-cutting various sectors, gender is still not integrated systematically into the laws and policies related to agriculture, food and nutrition security and related indicators are not sex-disaggregated (FAO 2019).
+
+## 3.1.3 Gender Stereotypes
+
+At global level, in 2021, Vietnam was ranked 87th (out of 156 countries) on Global Gender Gap Index. The country was ranked 26 (from 31st in 2020) on Economic Participation and Opportunity, but 94th (from 93rd in 2020) on Educational Attainment, 152nd (from 151st in 2020) on Health and Survival and 121st on Political Empowerment (WEF Global Gender Gap Report 2021). At the regional level
+
+---
+
+
+---
+*Chunk pages 137–137*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=735 (sys=94, user=641), max_out=1024, ctx=8192
+---
+
+# [Page 13]  
+ 
+## Gender Gap Index and Social Norms in Vietnam
+
+In East Asia and the Pacific, Vietnam was ranked 9th overall on the Gender Gap Index. At country level, though improvement has been made at policy and action levels over the past decades, gender gaps still exists because of various reasons. Gender stereotypes and social norm are among the key reasons (UNDP 2018).
+
+Social norms act as a powerful mechanism that regulates conflicts in groups, even in cases where there is no central authority (Axelrod 1983). Whether people observe a norm or not would depend critically on two types of expectations: empirical and normative. That is, individuals have preferences for conforming to social norms that are conditional on both types of expectations being present (Bicchieri 2006).
+
+In Vietnam, the social norms, which form part of common behavior, are that men are leaders, decision makers and risk takers. These limit women’s access to, certain types of works, expected roles, and decision making within their family. Also, patriarchal attitudes and deep-rooted gender stereotypes regarding responsibilities and roles of women and men in the family and in society result in subordinate roles of women (UNDP 2018). In general, women are responsible for chores and caring work in the family. Similarly, girls are often involved in doing housework than boys do. Because of the women’s responsibilities in chore, women aged 25 and older tend to choose jobs close to home to enable them to undertake chore duty (ISDS 2015).
+
+## 3.1.4 Labor Force in Key Sectors
+
+The urban population was 33,122,548 persons (34.4% of the total population) whereas that in rural areas is 63,086,436 persons (65.6%) (GSO 2019). With the population increasing over the past three decades (1990-2020), the labor force of Vietnam has steadily increased over the same period. It hits the peak in 2019 with 57,307,619 people before reversing down to 56,542,377 in 2020 due to COVID-19 (WB, ILO 2021).
+
+Figure 1 - Labor force participation rate (%)
+
+| Year | Male | Female | Urban | Rural |
+|------|------|--------|-------|-------|
+| 2016 | 82.4 | 81.9   | 82.3  | 81.9  |
+| 2017 | 72.5 | 71.9   | 71.6  | 71.8  |
+| 2018 | 82.4 | 81.9   | 82.3  | 81.9  |
+| 2019 | 82.4 | 81.9   | 82.3  | 81.9  |
+
+Data source: GSO 2019
+
+
+---
+*Chunk pages 138–138*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=443 (sys=94, user=349), max_out=1024, ctx=8192
+---
+
+# [Page 1]
+| 14 |  
+
+It is noted during 2016-2019, while the labor forces in industry and service sectors had slightly increased, the labor force participating in agriculture, forestry and fishery had decreased. Average monthly earnings of wage worker tends to increase over years (See Figure 3) with wages of female lower than that of female (for both urban and rural area).  
+
+Figure 2 - Industrial sectors (%)  
+
+Data source: GSO 2019  
+
+Figure 3 - Average monthly earnings of wage worker (in thousand VND)  
+
+Data source: GSO 2019  
+
+It is noted that the proportion of unpaid family workers is higher for female whereas for own-account workers, male is higher than female.  
+
+41.9 40.2 37.7  
+34.5  
+24.7 25.8 26.7  
+30.1  
+33.4 34.1 35.6 35.4  
+0  
+10  
+20  
+30  
+40  
+50  
+2016 2017 2018 2019  
+Agriculture, forestry and fishery Industry and construction Services  
+5304  
+5715  
+6183  
+7067  
+4739 5094 5446  
+6203  
+0  
+1000  
+2000  
+3000  
+4000  
+5000  
+6000  
+7000  
+8000  
+9000  
+2016 2017 2018 2019  
+Male Female Urban Rural Urban Rural  
+
+--- 
+
+Note: The text appears to be a continuation of a larger document, and the page number is included as per the original PDF.
+
+
+---
+*Chunk pages 139–139*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=562 (sys=94, user=468), max_out=1024, ctx=8192
+---
+
+# 3.1.5 Labor Division in Production
+
+In agriculture and forestry, women engage in the most of the production activities, including sowing, crop care, to harvesting. They also manage income-expenses and are responsible for selling products. On the other hand, men are mainly involved in land preparation and the use of pesticide, which is generally considered physically heavy (ISDS 2015).
+
+The labor division, which is rooted from social norms and the roles of men and women in relation to their physical health, affect how they access necessary resources for production/income generation and relevant decision making. FAO (2019) found that gender inequality are apparent in agriculture, food and nutrition, including access to resources for agricultural production such as land, technology, training, finance and markets, and agricultural extension services albeit their high partition in agriculture, forest and fishery – 75.8% of female vs 69.3 of male in 2019 alone. With regards to land titling, women have limited access to land due to kinship-based practices of inheritance. The most vulnerable women were found to be the ones from patrilineal groups and those living in rural and mountainous areas.
+
+# 3.1.6 Income Sources
+
+In Central Highland, the proportion of communes whose average main income (2008-2018) from agriculture is highest (100%), followed by wholesale and retail (86.6), other services (44.5%), forestry (around 23%), industry (17.8%). It is noted while agriculture remain constant (100%) over the period from 2008-2018, forestry slightly decreased over the same period whereas fisheries slight increased.
+
+| 0 | 10 | 20 | 30 | 40 | 50 | 60 |
+| --- | --- | --- | --- | --- | --- | --- |
+| Employer Own-account | worker | Unpaid family | worker | Wage worker Member of | cooperatives | Total Male Female |
+
+[Page 1]  
+| 15 |  
+
+Figure 4 - Proportion (%)  
+
+Data source: GSO 2019
+
+
+---
+*Chunk pages 140–140*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=728 (sys=94, user=634), max_out=1024, ctx=8192
+---
+
+# 16
+
+Figure 5 - Proportion of communes by major income sources of the commune's residents 
+
+## 3.1.7 Political Participation  
+According to WEF (2021), albeit progress made, Viet Nam still need to improve gender parity in politics since only 11.3% of the Political Empowerment sub index gap has been closed, further regressing since 2020 (-1 percentage points). Although 26.7% of parliamentarians are women, to date there are still no women ministers, and there has never been a woman head of state.
+
+## 3.1.8 Gender –sensitive Assessment  
+Matriarchy or patriarchy in ethnic minority groups  
+Communal organization and kinship are an important aspects that characterize key cultural traits of ethnic groups in Vietnam. Such organization through – either matriarchy or patriarchy, are traditional fundamental that affect the marriage customs and practices among ethnic groups in Vietnam. It also affect how men and women access to assets, exercise power and decision making over the use of such access, as well as division of labor. Local customs and habits affect social and cultural values, and as such behaviors of members in each ethnic groups, particularly in the area of asset ownership, inheritance, marriages, among other things.
+
+### Practices of matriarchy  
+For some ethnic groups in Vietnam, matrilineality is historically characterized by a society in which women have more power and control over the resources. They are the ones who proposed a marriage. The Ede, K’ho, M’nong, Chăm, Raglay, for example, are well known for the matrilineality, and these marriage practices are common among them. For example, women from K’ho and Chăm are the ones who propose a marriage. Their husband will join them in their family. Women have control over the family asset as well as other aspects. If there are divorces, men leave the family with nothings. When the husband die, they will be buried in their mother’s hometown. In terms of inheritance, heritage is also passed down – through women for some ethnic groups. For example, for Ra glay people, if a husband passes away, his assets such as tools and equipment are turned back to his mother, or to his sisters if his mother has passed away. This social arrangement is typically derived from the fact that
+
+--- 
+
+**Note:** The text appears incomplete or fragmented, likely due to OCR issues or page break problems. The content seems to be cut off after "This social arrangement is typically derived from the fact that" and continues with some numerical data (e.g., 4.4 1.3 2.7 2.0 2.7 2.6) which may be part of a chart or graph, but not fully readable in this extract.
+
+--- 
+
+**Page 140**
+
+
+---
+*Chunk pages 141–141*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=806 (sys=94, user=712), max_out=1024, ctx=8192
+---
+
+# [Page 1]
+| 17 |  
+
+Women are those who rear their children. They also take care of the children and domestic works while men typically undertake heavy works in the field, including hunting. Thus, family issues remain the key responsibility of women, typically for ethnic groups that exercise matriarchy. Matrilineal groups also have their children follow women’s family name. Matriarchy also have an influence on cultural traits such as architecture, sculpture, weaving, and decoration in their culture.
+
+## Gender equality from the perspective of ethnic minorities
+
+From the above, one may ponder that men are somehow just laborers in the family in matriarchy societies – as characterized with being married, having no control over assets, inheritance, etc. However, within these societies, this may not be considered as inequality.
+
+Ethnic minority communities do not maintain the concept of gender equality as the one defined in the development field. For EM people, husband and wife assigned their work based on their physical ability and labor arrangement within their family. An alternative to "gender equality" for them would be "being together", "caring for each other", "working together", "sharing" between husband and wife. This is what they perceived as an "ideal family" (Pham 2012:17).
+
+It is true that in the forest or rural settings, men are commonly involved in undertaking heavy works, such as hunting, ploughing, collecting wood, spraying pesticide, building/repair houses. Thus, domestic works, albeit with more devotion of time, is considered light duties inside the house. Women, as such, consider it necessary for them to do these works to maintain a "harmonious" family (Pham 2012:16).
+
+Water collection and treatment remain a cumbersome activity especially for ethnic minority households (UNWomen 2016).
+
+## Job opportunities for EM women
+
+Currently, national policies are contributing to creating better opportunities for some groups of female workers, such as in labour–intensive exports. However, these policies seems to fail in generating sufficient and more secure economic alternatives to women of low levels of formal education in general, and from disadvantaged rural regions in particular. These issues seems to be more serious for the case of women of ethnic minorities. It is also noted that unpaid domestic work and care is the major data gaps in Viet Nam, especially with regards to time use and informal employment is also higher among ethnic minorities (UNWomen 2016).
+
+UN Women (2016) recommends that particular attention should be given to the plight of ethnic minority women and girls, who continue to lag behind both ethnic minority men, and Kinh and Chinese women in accessing economic opportunities, and facilitate women's access to employment outside jobs and sectors traditionally seen as female).
+
+## Land use titles
+
+In Vietnam, it was prescribed in the Land Law 2013 that where the land use rights, or land use rights and the house ownership, and other assets attached to land is the joint property of both husband and wife, full names of both husband and wife must be written in the certificate of land use rights and house ownership unless there has been an agreement between husband and wife that name of only
+
+
+---
+*Chunk pages 142–142*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=922 (sys=94, user=828), max_out=1024, ctx=8192
+---
+
+# [Page 1]
+| 18 |  
+
+One person is written on such certificates. If required, such land use right certificate can be updated to indicate the names of both husband and wife if the land is joint property of both husband and wife. Even though there has been an increase in the number of female –only and joint holders of land use title for agricultural and residential land since early 2002s, the number of formal entitlements over non–residential land for the wife was lowest among ethnic minority groups that practice patrilineal succession (UNDP 2013).  
+
+## Agricultural extension  
+
+Women have fewer opportunities to access training and field workshops. Men are overrepresented in technology transfer involving new livelihood strategies (e.g. shrimp farming, orchard plantation), new machinery and cultivation techniques and non–traditional crops that are seen as commercially promising (UN Women, 2016). Women’s limited access to rural advisory and agricultural extension services, training and technology transfer is due to various gender –biased patriarchal social norms, resulting in women’s lower levels of education, increased time constraints and limited mobility, among other constraints (FAO 2019). Furthermore, although women are more involved in agriculture, they are also more likely to work on smaller farms and to cultivate subsistence crops. By contrast, women farmers remain confined to more traditional types of training such as small –scale animal husbandry (FAO 2019).  
+
+## 3.1.9 Gender Based Violence  
+
+### • Domestic Violence  
+
+At national level, domestic violence in Vietnam has been a critical social problem for more than the past decade. In 2010, the National Study on Domestic Violence against Women in Viet Nam, conducted by the GSO with the technical support from the WHO and MOH, found that 58 percent of ever-married women report they have suffered physical, sexual, and emotional violence from their husbands at least one of these types in their lives, 27 percent of women had experienced any of these type of violence in the past 12 months, of which 9 percent currently subjected to violence from their husbands. About 10% reported an experience of physical violence by someone other than their partner since they were 15, albeit this figure varies from 3% to 12% among regions. Perpetrators were mainly male family members (as reported by 65% of the women experiencing physical non-partner violence).  
+
+In 2019, the above survey was repeated. It was found that 26.1% of respondent in Viet Nam who had ever been married or married/partnered reported that she had experienced physical violence from her husband/partner during her lifetime (lifetime violence), and 4.6% experienced physical violence from her husband/ partner in the last 12 months (current violence). Sexual violence by a husband/partner was experienced by 13.3 % of women in Viet Nam in their lifetime, and for 5.7% of women this occurred within the last 12 months. Common reasons for physical violence include “family problem” (50.8%), “drunkenness” (40.9%), followed by “money problems” (18.8%). Nevertheless, 49.6% who experienced physical and/or sexual violence by a husband/partner had never told anyone about it and most women (90.4%) did not seek help from formal services or authorities. 69.7% of women who did seek help said they would seek help when they could not endure the violence anymore.  
+
+It was noteworthy that in the 2019 survey that, with regards to emotional violence, more women reported their experiencing of emotional violence by a husband/partner compared with any other  
+
+---
+
+
+---
+*Chunk pages 143–143*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=896 (sys=94, user=802), max_out=1024, ctx=8192
+---
+
+# [Page 143]
+
+| 19 |  
+
+form of violence. 47.0% have experienced it at least once in their lifetime and 19.3% within the last  
+12 months.  27.3% of women experienced one or more acts of controlling behaviour (a form of  
+psychological abuse) by a husband/partner during their lifetime and 12.9% during the last 12 months.  
+When controlling behaviour is combined with physical, sexual and emotional abuse, the violence rate  
+rise to 60.2 per cent during lifetime and 27.8 per cent in the last 12 months. 20.6% of women  
+experienced economic ab use by a husband/partner during their lifetime and 11.5% in the last 12  
+months.  
+
+The national survey also found that gender -biased perceptions on violence significant contribute to  
+men’s and women’s acceptance of violence. Cultural beliefs about masculinity and femininity also  
+influence remarkably the ways in which people deal with ang er that lead to violence. More than one  
+third of w omen in rural areas are more likely to agree that men were the decision -makers and  
+household head than those in urban area. 51.8 % believe that a man is justified in beating his wife if  
+she were unfaithful (45.2%) or did not take “care of children” (27.0%). Women who were victim of  
+violence were also more likely to justify and excuse perpetration of violence by a husband/partner  
+compared with women who have not experienced violence. These facts were also more strongly  
+supported by people living in rural areas compared to urban areas and among women of lower  
+education.  
+
+• Child Abuse  
+In terms of child abuse, almost one in four women with children under 15 years old reported that  
+their children have been physically abused by the partner. Violence against children also has a strong  
+relationship with violence against women by the same perpetrator. It is important to note that abusive  
+acts are typically not incidents but often are repeated behavior, with physical and sexual violence  
+against women usually starting early in a woman’s relationship whereas sexual and emotional violence  
+appears to go on for many years throughout the relationship. Emotional abuse, according to women  
+participating in the national survey, affects them even more than physical or sexual violence.  It was  
+reported that women who experienced physical and/or sexual violence by a husband/partner were  
+more likely to report uncommon behavioural issues of their children, such as frequent nightmare,  
+unusually quiet or withdrawn.  
+
+In terms of economic and social disadvantage, Violence against women often disturbs women’s ability  
+to work resulting in a risk of loss of employment, a decrease in income, and increased isolation. It was  
+found that women with limited access to resources, credit, markets and extension services face even  
+more limited access if they are living with violence. This is even worse with those who do not work  
+and rely on husband who are bread winner, particularly most vulnerable  women who are poor, or  
+having disabilities, elderly and of ethnic minority. If they are not empowered to mobilize resources as  
+a preventative measure, they are more disproportionately vulnerable to events such as natural disaster  
+and climate change, in the long run.  
+
+• Sexual Harassment  
+At national level, there is no official and systematic data on sexual harassment. Sexual harassment was  
+also challenging to recognize since it may take the forms of physical, verbal or non-verbal harassment.  
+In a survey conducted by the International Labour Organization (ILO) in Vietnam in 2015, up to 17  
+per cent of mid -career workers interviewed (n=150) said either they or someone they knew in their  
+
+--- END EXTRACTED TEXT ---
+
+
+---
+*Chunk pages 144–144*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=873 (sys=94, user=779), max_out=1024, ctx=8192
+---
+
+# 3.1.10 Impacts of Climate Change
+
+Viet Nam is sixth most affected country in the world by climate change. Each year, intense and unpredictable weather events cause fatalities and extensive damage to infrastructure, and impact on the livelihoods of already disadvantaged communities in urban and rural areas in which children and women are particularly at risk (UNCEF 2021 website, retrieved July 9, 2021). The level of impacts of climate change and the coping strategies of the populations depends very much on their socio-economic status, socio-cultural norms, access to resources, poverty as well as gender and there has been growing research evidence that demonstrate that the effects of climate are not gender-neutral. In fact, women and children are among the groups of highest risk (WB 2021).
+
+In terms of nutrition, at global level, the World Food Programme estimates that the risks of hunger and child malnutrition on a global scale will increase by 20% by 2050 if adaptation action strategy are not in place (WFP 2015). The two primary drivers for malnutrition is the lack of fruit and vegetables in diets and health complications caused by underweight (Springmann et al. 2016). Poorer farmers and communities are least able to afford water storage, irrigation infrastructure, and farming technologies which assist in their adaptation strategy (WB 2021).
+
+Stakeholder consultations revealed that due to extreme events (heavy rainfall, prolonged dry periods) post sowing and during germination, emerging crops are often damaged or die, necessitating a second sowing. Farmers, particularly the poor, do not have se eds saved and face difficulty in sourcing seeds for a second sowing. Seed Banks or mechanisms for sourcing seeds in such situations is critical as failure to access seeds could mean hunger or starvation for the households unless means for income generation are available through wage labour or other options. This is not always possible in rural communes particularly in EM areas.
+
+# 3.1.11 Impacts of COVID-19
+
+## Impact on Labour Force
+
+[Page 1]  
+| 20 |  
+
+---
+
+
+---
+*Chunk pages 145–145*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=927 (sys=94, user=833), max_out=1024, ctx=8192
+---
+
+# [Page 1]
+
+| 21 |  
+ 
+The three waves of the Covid -19 pandemic in Vietnam in 2019 and 2020 had resulted in 
+unemployment to millions  of workers in Vietnam. In 2020, for instance, 32.1 million Vietnamese 
+workers aged 15 or above to either lose their jobs or have their working hours reduced (GSO 2020). 
+Despite recovery, by the first quarter of 2021, there are still 9.1 million people aged 15 and over across 
+the country who are adversely affected by the Covid -19 pandemic. Of 9.1 million workers, 540,000 
+people lost their jobs, 2.8 million people were furloughed or suspended their production and business 
+operations, 3.1 million workers having worked with reduced working hours or required to work on a 
+reduced schedule or take shifts. 6.5 million workers reported having experienced lowe r income. It is 
+expected that the resurgence of the Covid -19 in Vietnam (forth wave) will continue to hinder the 
+recovery effort of both workers and government. 
+ 
+In terms of sectors, workers in the service sector were the most severely affected (20.4%), followed 
+by industry and construction sector (16.5%), and agriculture, forestry and fisheries (7.5%). In Central 
+highland of Vietnam, although the major income sources come from agriculture, which is the least 
+affected group, the impact on services (which are among the top 5 major sources of income in Central 
+Highland) may cause a cascading effect onto those whose major income are from agricultur e – from 
+consumption perspective. According to GSO analysis (2021), the third wave of the Covid -19 
+pandemic in Viet Nam has not only slowed down the labour market recovery (achieved in the second 
+half of 2020) but also left many workers, especially women, unemployed and become informally 
+employed workers. In quarter 1/2021 alone, the number of employed people aged 15 and over was 
+dropped to 49.9 million (959.6 thousand lower from the previous quarter) and was mainly in the rural 
+areas and among men. It is noted that there are still 3.5 million workers engaged in subsistence work
+2 
+in the agriculture, forestry and fishery sector. Women make up nearly two -thirds of this group, 
+primarily those aged 50 and over (accounting for 59.4%). 
+ 
+It was also noted when migrant poor workers lose jobs in urban area, they tend to return home in 
+rural area to ease the cost of living in cities (e.g. house renting, food costs and other services). 
+According to GSO (2021), to earn their living  and support their family, women are likely to accept 
+unstable jobs as they do not have many job opportunities compared to men. They have no choice but 
+to accept less stable jobs as long as they can ensure earnings for themselves and their families. 
+Figure 6 - Labour force across quarters, for the 2019-2021 period 
+ 
+Data source: GSO 2021 
+ 
+2 Not including employed persons who take on extra subsistence work. 
+51.6 
+51.4 
+51.6 52.1 
+51.2 
+49.4 
+51.3 
+52.1 
+51.0 
+ 45.0
+ 50.0
+ 55.0
+Quarter I
+of 2019
+Quarter II
+of 2019
+Quarter III
+of 2019
+Quarter IV
+of 2019
+Quarter I
+of 2020
+Quarter II
+ of 2020
+Quarter III
+ of 2020
+Quarter IV
+of 2020
+Quarter I
+of 2021
+
+
+---
+*Chunk pages 146–146*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=430 (sys=94, user=336), max_out=1024, ctx=8192
+---
+
+# [Page 1]
+| 22 |  
+
+## Impacts on GBV
+
+COVID-19 left hidden impact dispropor tionately on women. Data from Vietnam Central Women’s Union indicated that during the period of social distancing, the number of calls to their hotlines increase by 50%. The number of victims administered to their Peace House Shelter increased by 80% compared to the same period of the previous year. In economic terms, growing empirical evidence from Vietnam and other countries suggested evidence of induced impact of COVID-19 on women, for instance:  
+
+- Women’s burden across all spheres were not only heavier, but also more dangerous.  
+- They bear greater burden of unpaid care work which limits their economic participation, and suffer increased incidences of gender-based violence during crises.  
+- They will endure a worsening of their burdens until COVID-19 is well under control, and for a long time after.    
+- Women expect their labor income to fall by 50 percent more than men.  
+- Women are 24 percent more likely to lose their job permanently than men.  
+- Women tend to reduce their current consumption and increase savings.  
+- Women and girls are particularly vulnerable to economic hardship, as they are generally in more precarious employment than men to begin with  
+
+## Project Area Overview
+
+### Socio-economic Conditions of People in the Project Area  
+
+#### LITERACY  
+
+At regional level (Central Highlands)
+
+
+---
+*Chunk pages 147–147*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=810 (sys=94, user=716), max_out=1024, ctx=8192
+---
+
+# Administrative Unit Population Aged 5 and Over
+
+| Administrative Unit | Total | Male | Female | Currently Attending | Ever Attended | Never Attended |
+|---------------------|-------|------|--------|---------------------|---------------|----------------|
+| Dak Lak               | 1,735,702 | 867,619 | 868,082 | 431,300 | 212,441 | 218,859 |
+| Dak Nong              | 564,103 | 285,376 | 278,727 | 158,493 | 79,890 | 78,602 |
+| Gia Lai               | 1,295,645 | 646,711 | 648,934 | 315,822 | 161,043 | 154,779 |
+| Lam Dong              | 1,193,070 | 595,173 | 597,897 | 290,610 | 145,348 | 145,262 |
+| Ninh Thuan            | 561,965 | 277,532 | 284,433 | 129,490 | 62,158 | 67,332 |
+
+# Administrative Unit Population Aged 15 and Over
+
+| Administrative Unit | Total | Male | Female | Literate | Illiterate | Not stated |
+|---------------------|-------|------|--------|----------|------------|------------|
+| Dak Lak               | 1,356,049 | 679,279 | 676,770 | 1,259,279 | 645,204 | 614,075 |
+| Dak Nong              | 401,567 | 204,536 | 197,031 | 375,871 | 195,283 | 180,587 |
+| Gia Lai               | 1,027,093 | 506,519 | 520,574 | 877,077 | 452,130 | 424,946 |
+| Lam Dong              | 933,805 | 461,397 | 472,408 | 863,595 | 436,452 | 427,143 |
+| Ninh Thuan            | 440,011 | 217,117 | 222,894 | 384,642 | 194,246 | 190,396 |
+
+Source: GSO 2015 (The 1/4/2015 Time-Point Population Change and Family Planning Survey)
+
+
+---
+*Chunk pages 148–148*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=645 (sys=94, user=551), max_out=1024, ctx=8192
+---
+
+# [Page 1]
+| 24 |  
+ 
+According to the VHLSS (2016), the percentage of literate people at aged 15 and above is 95% (Male: 
+96.6% and Female: 93.5%). The rate of Central Highland is much lower 90.9% (Male: 93.4% and 
+Female: 88.4%). 
+## Figure 7 - Population Aged 15 Years and Above By Literacy Status (1 April 2019) 
+ 
+Data source: GSO 2016 
+At provincial level (Project Provinces)  
+## Figure 8 - Rural population Aged 15 Years and above by Literacy Status 
+ 
+Data source: GSO 2019 
+ 
+• ENROLLMENT 
+At national level, the net enrolment rates in primary school was 97.04%. This rate for Central Highland 
+region is 95.63% which is the lowest compared to other five regions of the country. At national level, 
+the net enrollment rate for male and female are 97.08% and 96.99%, respectively. It was 94.91% and 
+96.36% for male and female, respectively, for Central Highland. 
+175,053
+169,710
+182,285
+163,029
+138,793
+121,413
+112,710
+93,745
+72,282
+49,411
+0
+20,000
+40,000
+60,000
+80,000
+100,000
+120,000
+140,000
+160,000
+180,000
+200,000
+15-19 20-24 25-29 30-34 35-39 40-44 45-49 50-54 55-59 60-64
+Urban -Male Urban -Female Rural -Male Rural -Female
+0
+10,000
+20,000
+30,000
+40,000
+50,000
+60,000
+70,000
+15-19 20-24 25-29 30-34 35-39 40-44 45-49 50-54 55-59 60-64 65-69 70-74 75-79 80 +
+DL-Rural -Male
+DL-Rural -Female
+LD-Rural -Male
+LD-Rural -Female
+DN-Rural -Male
+DN-Rural -Female
+NT-Rural -Male
+NT-Rural -Female
+
+
+---
+*Chunk pages 149–149*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=466 (sys=94, user=372), max_out=1024, ctx=8192
+---
+
+# [Page 1]
+| 25 |  
+
+## At regional level (Central Highlands)  
+It is also noted that the net enrollment rate between male and female in Central Highlands drops across three levels of education with male rate decline more sharply than female rate, perhaps to join the labor force.  
+
+### Figure 9 - Net enrolment rates (%)  
+
+Data source: GSO 2016  
+
+## At provincial level (Project Provinces)  
+While the gross attendance rate (%) and net attendance rate (%) for five project provinces are not different among project province, it is noted the gross and net rate are lowest in Gia Lai province.  
+
+### Figure 10 - Gross attendance rate (%) and net attendance rate  
+
+Data source: GSO 2018 (The 1/4/2018 Time Point Population Change and Family Planning Survey)  
+
+| 0 | 10 | 20 | 30 | 40 | 50 | 60 | 70 | 80 | 90 | 100 |
+|---|---|---|---|---|---|---|---|---|---|---|
+| Primary | Lower Secondary | School upper secondary school | Country | Country - Male | Country - Female | Highlands | Highlands - Male | Highlands - Female | Linear (Highlands - Male) | Linear (Highlands - Female) |
+| 98.7 | 96.1 | 96.9 | 99.2 | 95.3 | 97.6 | 93.8 | 96.8 | 97.2 |
+
+| 0 | 20 | 40 | 60 | 80 | 100 |
+|---|---|---|---|---|---|
+| Dak Lak | Dak Nong | Gia Lai | Lam Dong | Ninh Thuan |
+| GROSS-Primary | GROSS- Lower secondary | GROSS-Higher Secondary | GROSS-College and University | NET-Primary | NET-Lower Secondary |
+| NET-Higher Secondary | NET-College and University |  |  |  |  |
+
+---
+
+
+---
+*Chunk pages 150–150*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=539 (sys=94, user=445), max_out=1024, ctx=8192
+---
+
+# Female Headed Households
+
+At country level, the percentage of female headed households is 21.86%. In Central Highland, it is 23.7 which is among the two lowest regions. However, it appears that the rate of female headed households has increased over the past ten years – from 18.6% in 2008 to 23.7% in 2018.
+
+## Figure 11 - Female Headed Households
+
+Data source: GSO 2018
+
+Also, it is noted that female headed households could result because of death of the husband, but it could also result because of out-migration of the male. In census or related surveys, a household with the husband migrated out may still be counted as male headed, but in practice, it is female headed for all practical purposes. Conventional surveys thus overlook these 'invisible' female headed households and they are not counted in the surveys – the 'missing, invisible female headed households'.
+
+# Labour Force Participation
+
+It is noted that as a general pattern, the percentage of labour force participation is always higher for male compared to female, and higher in rural compared to urban. Gia Lai and Dak Nong have the highest proportion of labour participation.
+
+## Figure 12 - Labour Force Participation (2019)
+
+Data source: GSO 2019 (Vietnam Population and Housing Census)
+
+| 26 |
+|----|
+
+| 2008 | 2010 | 2012 | 2014 | 2016 | 2018 |
+|------|------|------|------|------|------|
+| 18.6 | 20.8 | 21.2 | 21.1 | 20.8 | 23.7 |
+
+| Male | Female |
+|------|--------|
+| 0    | 20     |
+| 40   | 60     |
+| 80   | 100    |
+
+| Total | Male | Female |
+|-------|------|--------|
+| 0     | 20   | 40     |
+| 60    | 80   | 100    |
+
+| Five provinces | Urban | Rural |
+|----------------|-------|-------|
+| Dak Lak        | Dak Nong | Gia Lai |
+| Lam Dong       | Ninh Thuan | |
+
+--- 
+
+[Page 150]
+
+
+---
+*Chunk pages 151–151*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=585 (sys=94, user=491), max_out=1024, ctx=8192
+---
+
+# Migration
+
+There is a remarkable difference between in-migrant and out-migrant (in person) among give project provinces. In Ninh Thuan, Gia Lai and Lam Dong, the number of local people who move out of the province is higher than those in Dak Lak and Dak Nong where the number of immigrant outdo the number of inmigrants.
+
+## Figure 13 – Migration
+
+Data source: GSO 2019 (Vietnam Population and Housing Census)
+
+## 3.2.2 Poverty
+
+The number of poor households is highest in Dak Lak, followed by Gia Lai, Dak Nong, Ninh Thuan and Lam Dong. However, it is noted the number of near-poor households are
+
+Table 2 - Poverty Rate of Project Provinces
+
+| Provinces    | Total poor households | Poverty rate (%) | Total near-poor households | Near-poverty rate (%) |
+|--------------|-----------------------|------------------|----------------------------|-----------------------|
+| Đắk Lắk     | 31,557                | 6.34             | 34,853                     | 7.01                  |
+| Đắk Nông    | 8,464                 | 5.18             | 10,929                     | 6.69                  |
+| Gia Lai     | 14,943                | 3.96             | 34,202                     | 9.05                  |
+| Lâm Đồng    | 3,370                 | 0.99             | 9,303                      | 2.74                  |
+| Ninh Thuận  | 5,636                 | 3.10             | 16,735                     | 9.21                  |
+
+Source: MOLISA (2021) – Decision on publicizing results of review of poor, near -poor households in 2020 based on multi -poverty standards for period from 2016 -2020 (Decision No. 125/QĐ -LĐTBXH dated 22 February 2022.
+
+## Migration Data
+
+- 5,000
+- 10,000
+- 15,000
+- 20,000
+- 25,000
+- 30,000
+- 35,000
+
+Ninh Thuận | Đắk Lắk | Gia Lai | Đắk Nông | Lâm Đồng  
+In-migrant (Persons) | Out-migrant (Persons)
+
+[Page 1]
+| 27 |
+
+
+---
+*Chunk pages 152–152*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1162 (sys=94, user=1068), max_out=1024, ctx=8192
+---
+
+# 3.3 Project’s Target Groups
+
+## 3.3.1 Demographic Information
+
+A total of 353 households participated in the survey. 41.9% of survey participant (n=148) are female and the remainder (58.7%, n=205) are male. Survey participants represented five provinces including Dak Nong, Dak Lak, Gia Lai, Ninh Thuan, Lam Dong (See Figure 15 below). Of the total 1,235 people enlisted as members from 353 respondents' households, 49.6% are male and 50.4% are female. Of the total 353 people who answered the household interview, 218 (68.1%) are household head, of which 20.1% (n=71) are female-headed household. Most of household heads (71.7%, n=253) were born in the community and have been living in their community for an average of 33 years. The average household size is 4.4 person (min=2, max=9, SD=1.2). The average age of survey respondents is 38 (min=17, max=75, SD=11.5). The average age of all household members reported by 353 survey respondents (n=1,235) is 24.6 min=0.5, max=79, SD=16.5.
+
+Three largest ethnic groups participating in the survey include Ba Na (18.7%, n=66), Raglay (17.8%, n=63), M’Nong (16.4%, n=58), followed by Kinh (11.3%, n=40), J’rai (10.2%, n=36), Ede (9.1%, n=32), Nùng (4.2%, n=15, etc. In terms of religion, more than half of the survey participants has no religion (62.3%, n=220). The remainder (37.6%, n=113) practices major religious denomination in Vietnam including Protestantism (24.9%, n=88), Catholism (9.9%,n=35), Buddism (1.4%, n=5), and others (1.4%, n=5).
+
+Figure 14 - Distribution of Survey Sample
+
+| Provinces | Districts (communes) | n Percent |
+|-----------|----------------------|-----------|
+| Đắk Nông | Đắk Glong (Đắk Som) | 74 21.0% |
+| Lâm Đồng | Đam Rông (Đạ Long) | 16 4.5% |
+| Ninh Thuận | Thuận Bắc (Phước Chiến) | 79 22.4% |
+| Gia Lai | Chư Prong (Ia Ga) | 106 30.0% |
+| Đắk Lắk | Eaka (Cư Elang) | 78 22.1% |
+| Total |  | 353 100% |
+
+## 3.3.2 Access to Land Resource, Income and Youth
+
+### Access to Productive land
+
+The average land area of female-headed households (n=71) is lower than that of male-headed households (n=282) and is 7,569m² and 9,429m², respectively. However, these is no significant difference in average land area between these two groups 4. In terms of Land Use Right Certificate (LURC), for Perennial Land, 43% of respondents (n=57) indicate both husband and wife have shared land title, 15% (n=20) has husband only on LURC and 5% (n=7) has only wife on LURCs. The same pattern applies for Annual Cropland where both husband and wife have their names on LURCs (49%, 
+
+3 Min=4, max=75, SD=13.9) 
+4 t(119)=1.389, p>0.05, Cohen's d=0.171
+
+
+---
+*Chunk pages 153–153*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1011 (sys=94, user=917), max_out=1024, ctx=8192
+---
+
+# 29
+
+## Land Ownership and LURCs
+
+For forest land, although the number of respondents that have forest land is small (n= 28), LURCs with both husband and wife's names takes up 25% (n=7). For Residential Land (only 32%, n=50) have both husband and wife's names on the LURCs. It is noted that across all types of land asked in the survey (including Perennial land, Annual Cropland, Production Forest, Protection Forest, Agri-land for Animal Husbandry and Residential land), only 36.7% (n=182) have both husband and wife's names on their LURCs.
+
+## Monthly Cash Income
+
+The monthly cash income earned by all household members from the sample (n=580) is 3,195,291 VND. Monthly cash income earned male is higher than female: 3,778,929 VND vs 2,529,815 VND.
+
+## Youth
+
+For youth (16-30 years of age), there are 235 youth members (124 male, 111 female) out of total 1,233 member reported from 353 households in the survey. Their monthly cash income of 88 youth members who work is 3,438,068 (male: 3,596,809, female: 3,256,098). However, income difference between male and female is not statistically significant. This suggests that youth does not only make more income than older group but also does not have income difference between male and female. The monthly cash income of youth is lower than that of non-youth.
+
+The average land area of youth households is lower than that of non-youth households (7,094m2 and 10,505m2, respectively). There is also a significant difference in average land area owned by households headed by youth and households headed by non-youth. The average number of outstanding loans that youth households have (n=105) is lower than that of non-youth households (n=248) and is 1.05 and 1.31, respectively. These is significant difference in average number of outstanding loans between these two groups.
+
+## Labour Division
+
+Participants from the survey seems to follow the division of labor that is based on the traditional gender stereotype. Female members are likely involved in domestic works, particularly activities that are light physically, and are related to finance, such as keeping money, spending more on food and children education. On the contrary, male members are in charge for heavy works, including activities that require interaction with people outside the family, such as going to training, attending community meetings. The works that male and female members share least include works that are typically done by only male or only female. For example, minor repair in home and pesticide spraying are done by mainly or solely by male members. Other works that are not shared and thus done mainly by female member include household chore (cooking, dish washing, laundry, family diet, keeping money). Other works that are less shared and therefore done mainly by male including works that involve going out of home such as buying agricultural input, attending meetings, trainings.
+
+## Statistical Analysis
+
+5 Male vs Female (all household member): t(501)=-3.31, p<0.001, n=580, Cohen's d=-.267 (small effect size)
+
+6 Male vs Female (youth): t(86)=.967, p=0.488, n=88, Cohen's d=-.267 (small effect size)
+
+7 Youth vs Non-youth: t(527)=-2.95, p<.05, n=580, Cohen's d=-.246 (small effect size)
+
+8 t(266)=2.782, p<0.05, Cohen's d=0.285
+
+9 t(351)=2.018, p<0.05, Cohen's d=0.235
+
+
+---
+*Chunk pages 154–154*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=145 (sys=94, user=51), max_out=1024, ctx=8192
+---
+
+# Labour Division (by Gender)
+
+| 30 |
+|----|
+
+Figure 15 - Labour Division (by Gender)
+
+
+---
+*Chunk pages 155–155*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=348 (sys=94, user=254), max_out=1024, ctx=8192
+---
+
+# 3.3.4 Decision Making
+
+With regards to decision making as to domestic works and agricultural works, although most works are shared, female members do as much as twice male members with regard to work items that female do mainly and solely (1,019 vs 540 responses).
+
+Figure 16 – Decision Making (domestic works and agricultural works)
+
+However, when it comes to internal/home issue, male members appears to be less decisive. In fact, female make sole decision four times higher than male (315 vs 81 responses). This may be explained by the fact that most of survey participant are from ethnic minority groups that practice matriarchy in which the mother or a female elder has authority over the family group.
+
+Figure 17 – Decision Making (family issues)
+
+With regards to decision making as to domestic works and agricultural works, although most works are shared (both), female members outdo male members in terms of the number of work items that female do mainly and solely.
+
+
+---
+*Chunk pages 156–156*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=601 (sys=94, user=507), max_out=1024, ctx=8192
+---
+
+# 3.3.5 Agency
+
+Improving women’s agency, particularly their ability to define goals and act on them, is crucial for advancing gender equality and the empowerment of women (Donald et al. 2017). In this analysis, ten questions were asked to female survey respondents (n=140). A 10-point Likert scale was used for ten questions with 1 indicating that female participants do not have at all the ability to control whereas 10 indicates participants can fully control. These questions are in Figure below.
+
+Results show that while mean score do not vary much (min=5.5 and max=6.2), the standard deviation of the score (SD) varies notably with the following questions (indicated by yellow and red colour in the last row for SD).
+
+- Question 2. To which extent participant can identify business opportunities to start up a new business
+- Question 5. To which extent participant can save money in order to invest in future business opportunities
+- Question 7. To which extent participant can bargain to obtain cheap prices when you are buying anything for the business
+- Question 9. To which extent participant can protect your business assets from harm by others
+- Question 10. To which extent participant can collect the money someone owes you
+
+The scores for these five questions suggested that the ability of female participants from the sample vary considerably on ability to identify business opportunities, save money, bargain, protect their assets, and interact with other people on difficult work such as collecting money from someone who own them.
+
+It is noted that lowest mean score is with Question 2 (Identify business opportunities to start up a new business) and Question 9 (Protect your business assets from harm by others). These suggest the female participating in the survey are not confident about identifying new business opportunities and about protecting their business assets from harm by others.
+
+[Page 1] | 32 |
+
+
+---
+*Chunk pages 157–157*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=550 (sys=94, user=456), max_out=1024, ctx=8192
+---
+
+# [Page 1]
+| 33 |  
+
+## Figure 18 - Sense-of-Agency 
+
+## 4. GENDER ACTION & SOCIAL INCLUSION PLAN
+
+### 4.1 Approach to developing Gender Action & Social Inclusion Plan (GASIP)  
+The Gender Action Plan (GAP) is aligned with the logical framework of the project. This aims to ensure the activities proposed in the GAP are lined up with the overall project design to contribute to achieving the overall goal of the project. Meanwhile, the proposed activities, and related performance indicators, are proposed based on empirical evidence and in-country and international experience.  
+
+Responsive gender activities are proposed on the basis of a) analysis of constraints to gender mainstreaming, b) opportunities to overcome such constraints, and c) priority areas for promoting gender mainstreaming under the project. Performance indicators are proposed for the priority areas – with baseline and targets set at activity, output and outcome levels to assist implementation, monitoring, and evaluation (See Chapter 5 below, and the GASIP in Annex 1).  
+
+### 4.2 Gender Chain Results  
+There has been a growing evidence at global level that provides specific transmission pathways from gender equality to impact economic growth (Kabeer and Natali 2013, Elborgh-Woytek et al 2013). Transmission pathways are linked up with the macroeconomic policy in a manner that increased gender equality increases economic performance. This process facilitates a social change in which social norms related to gender change over time which results in economic improvement. In a more specific way, improved education, health and nutrition lead to increased participation of female workers in the local labour force, resulting in improved productivity (WB 2020).  
+
+Reducing and redistributing unpaid home chores is also a common way to allow women more time to participate in income generation activities and community activities that take place outside their home base. According to the WB (2020), when this can be done at country level, short-term economic...
+
+
+---
+*Chunk pages 158–158*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=610 (sys=94, user=516), max_out=1024, ctx=8192
+---
+
+# 34
+
+## 4.3 Responsibility of governmental agencies
+
+### 4.3.1 Provincial Peoples Committee
+
+- Oversee all operational aspects of provincial PMU for the project, including the GAP implementation.
+- Provide overall guidance to provincial PMU with regards to GAP implementation, particularly implementing the GAP as an integral part of provincial annual socioeconomic development program and gender mainstreaming in agro- and agricultural sector.
+- Monitory regularly PMU’s project activities and ensure that activities set forth in the GAP are implemented timely and effectively.
+
+### 4.3.2 Project Management Board
+
+- Responsible for overall implementation of the project, including the GAP.
+- Ensure funding is allocated sufficiently and timely for implementation of the planned activities.
+- Work as lead agency for GAP implementation and coordinate with other governmental agencies, such as Peoples Committees and functional agencies – at provincial, district and commune levels, to carry out planned activities.
+- Maintain regular monitoring of GAP implementation, at quarterly, bi–annually, and annually.
+- Conduct periodic review and evaluation of GAP implementation to ensure the overall progress and quality of GAP implementation is on track with the planned activities.
+- Where necessary, update the GAP based on development needs and feedback from EM communities in the project area. These development needs should be in line with the logical framework of the project.
+
+### 4.3.3 District Peoples Committee
+
+- Support PMU in selecting communes that are potential for planning and carrying out activities proposed in the GAP.
+- Ensure the activities set forth in GAP are carried in a manner that is integrated with the overall socioeconomic development plan of the district, and in connection with other annual district development programs.
+- Provide overall guidance to commune PCs within the district in GAP implementation.
+
+### 4.3.4 Commune Peoples Committee
+
+- Collaborate and support PMU in implementing GAP.
+- Support PMU in carrying out consultation/trainings/workshops/ with effective participation of female representatives of target households and of female headed households.
+- Provide regular support and encourage the participation of women and female headed households in all project related activities, particularly consultation meetings, trainings, workshops.
+
+
+---
+*Chunk pages 159–159*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=659 (sys=94, user=565), max_out=1024, ctx=8192
+---
+
+# 4.3.5 Local people
+
+- At household level, arrangement should be made – built on matrilineal society, to enable female representative of the household to participate in project activities, such as consultation meetings, trainings, workshops that are beneficial to women, particularly for enable them to take part in economic activities to support household income generation activities. These help to advance the gender mainstreaming impacts.
+- Women are encouraged to participate in public events, such as workshops, trainings that are designed exclusive for women to promote their participation and economic empowerment.
+- Provide gender-sensitive comments/suggestions/feedback, including raising questions for issues they are concerned about.
+
+# 4.4 Cost and Budget
+
+Based on the nature, and scope of the proposed gender action plan, the following cost is proposed as a mimimum. The cost will be born by respective provincial PMU as counterpart funding. Other relevant technical training (such as agricultural extension, loan training…) will be financed using project's financing. These costs are tentatively allocated for each gender mainstreaming activity – as indicated in Annex 1. The cost may be updated annually – alongside the preparation of Annual Project Implementation Plan, to facilitate budgeting allocation process on the part of provincial governments.
+
+| No. | Items | Time | Cost (USD) | Total | Notes |
+|-----|-------|------|------------|-------|-------|
+| 1 | Recruit a gender consultant | • Update GASIP to reflect detailed project implementation plan • Updated Indicators, Baseline & Target based on IFAD's Gender Monitoring template • Developing data collection monitoring forms • Develop guidelines for mainstreaming gender aspect into awareness raising campaign and relevant training materials • Build capacity for provincial PMUs' Gender Officer • Build capacity of extension staff and other implementing partners on the use of participatory gender tools and approaches in diagnostic and extension activities • Conduct gender awareness raising campaign (including SEA/SH) in Year 1, and repeated at Midline Year 1 | 3,493 x 12 | 41,915 | (of which estimated 5,510 USD for awareness raising campaigns) |
+| 2 | Recruit and maintain a gender officer | 6 years | 1,200 x 12 month x 5 provinces | 72,000 |  |
+| 3 | Gender mainstreaming | • Training materials (including SEA/SH) | 0 Costs integrated into respective consulting services |  |  |
+
+[Page 1]  
+| 35 |  
+
+--- 
+
+*Note: The original page number is preserved as per the rules.*
+
+
+---
+*Chunk pages 160–160*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=752 (sys=94, user=658), max_out=1024, ctx=8192
+---
+
+# 36
+
+| No. | Items | Time | Cost | Total |
+|-----|-------|------|------|-------|
+| 5 | • Training delivery | 0 | Costs integrated into project financing | 113,915 |
+
+## 5. CONCLUSIONS AND PRIORITY AREAS
+
+### 5.1 Conclusions
+
+#### 5.1.1 Potential barriers to economic participation of women
+
+Based on the gender analysis and gender assessment above, a number of key barriers to the participation of women in economic activities have been identified for the project:
+
+- **Social norms**
+
+The social norms in Vietnam have long shaped how men and women within a family divide their responsibility – chore and income generation activities. This is still existent today. This norm was originally based on labor division between women and men, based on their natural physical health. While men are generally responsible for physically heavy works, and works considered dangerous or harmful to health, women takes the responsibility of child bearing and taking care of family works, such as preparing meals, doing chore work, and do home gardening and domestic animal feeding.
+
+Because of these responsibility pattern, men are considered as a person representing his family in works that are socialized by nature, while women are expected to stay away from. Even when some ethnic groups adopt matriarchy, such as Chăm, K’ho, J’rai, Ede, Bana, women are generally decision makers, when it comes to labor division, men are still in charge of heavy works while women are responsible for children and home care.
+
+ActionAid Vietnam (2016) found in the study (n=825) that all women and girls participating in their survey experience serious gender stereotypes in labor division.
+
+- **Burden of care**
+
+The social norm defines domestic works for women. As such, women spend most of their time at home, taking care of works that are unpaid – works that are easily forgotten, or recognized by other family members as well as community. Chore works typically take women most of their time – day and night. This does not leave them any time for socialized activities, such as attending community meetings, agricultural extension trainings, or visit friends or relatives who are far away from their family.
+
+During the day, they are also involved in home farming, and/or farming in the field for certain period of time, such as seed preparation, seedling, and crop care, weeding, harvesting, and selling. A study by ActionAid Vietnam in 2016 interviewed about 825 people from nine cities and provinces in three main regions of Vietnam. The findings revealed that women worked an average 35 hours per week compared with 21 hours for men. In particular, in areas with poor gender based public services and economic development, women and girls spend up to almost 9 hours every day for unpaid care work.
+
+[Page 1]
+
+
+---
+*Chunk pages 161–161*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=879 (sys=94, user=785), max_out=1024, ctx=8192
+---
+
+# [Page 161]
+
+| 37 |  
+
+• Human capital  
+Rural life is typically difficult. Thus children, at their very young age, are familiar with household chore.  
+Some are involved in farming to provide additional labor to family farming. Boys and girls thus tend  
+to drop out of school more as the move through primary, secondary and high school education. Early  
+marriage at younger age in rural area does to enable young people to continue education because of  
+limited or even no educational opportunities as young women start to take care of their family while  
+young men are involved in farming/income generation activities to support their livelihoods. This  
+create a vicious cycle that is hard to break out in many instances in rural areas, particularly for p oor  
+ethnic minorities.  
+
+• Vulnerable groups  
+With regards to vulnerable groups, such as family workers, women consistently have a much higher  
+representation than men, with up to 66.4% of family labor being female. In contrast, among wage  
+workers or employers, female labor has a significantly lower re presentation compared to male labor.  
+Specifically, women only account for 43.9% in the wage workers (12.2 percentage points lower than  
+men). This indicated gender inequality in employment. However, it's noted that the gender gap in the  
+proportion of wage-employed workers is gradually narrowing (reducing from 14.2 percentage points  
+in 2019 to 12.2 percentage points in 2022), according to 2022 Labor Force Participation Report of the  
+Vietnam General Statistics Office.  
+
+• Wage and earning gaps  
+There is still a discrimination with regards to women in terms of wage pay, particularly  to the same  
+works that men do. According to Vietnam General Statistics Office (2022), about 46% of women in  
+Vietnam are in the labour force . It is noted in the female labour force in rural area is higher than in  
+urban area – 61.8% in rural vs 38.2% in urban area. The labor force participation rate varied across  
+regions in Vietam. The Central Highland (project area) has the highest rate for femal labour  
+participation (78.1%) while two key delta have lower rate: 62.1% for Red River Delta, and 58.5% for  
+Mekong Delta Region, for example. In the recent past few years, women had a higher representation  
+(than men) in 4 out of 9 occupational categories, particularly in the "Services workers and market sales  
+worker" category. This indicates a progress in addressing gender inequality in job access in Vietnam.  
+Gender pay gap still exist. The pay gap between women and men continues to be an important factor  
+behind wage inequality, according to the ILO Global Wage Report 2022-2023. In Vietnam, the average  
+monthly earnings of wage worker is  6,977,000 VND for female vs 7,946.7 for men (in 2022). This  
+pattern is the same for 2020 and 2021 (2022 Labor Force Participation Report of GSO). In agriculture,  
+in 2015, for instance, about 52% of farm workers were women. Similarly, about 55% of self-employed  
+nonfarm workers were also women. These two groups of jobs are of low productivity and the earnings  
+are, on average, below the minimum wage . This source of income is also risky as they are prone to  
+adverse impact of changing weather and  highly sensitive to price fluctuation due to market demand  
+(WB 2018).  
+
+• Job market  
+
+---
+
+
+---
+*Chunk pages 162–162*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=849 (sys=94, user=755), max_out=1024, ctx=8192
+---
+
+# [Page 1]  
+| 38 |  
+
+In rural area, job market is limited. This is especially evident in remote, mountainous where farm  
+works are dominant . Given this, when searching for jobs, women tend to look for jobs near home  
+while men can travel far to work as migrant workers. In the context of this project, it is likely that  
+women, including women in ethnic minority communities , are likely to focus on their domestic  
+farming, or farming activities (for those who having access to productive land).  
+
+## Climate change and natural disasters, and COVID-19  
+
+Both climate change and natural disasters such as flash flood, drought, typhoon,  are likely to affect  
+farming activities in many ways. While climate change is slow, and coupled with weather extremes,  
+that affect crop yield, natural disasters can cause havoc loss to the crops, which result in and partial or  
+complete loss of crop, which push the households back in their effort of making economic progress.  
+
+## 5.1.2 Opportunities for gender mainstreaming into project activities towards closing gap  
+
+Despite the above key constraints to economic participation of women, opportunities are available  
+for improvement under the project. The following section identify five priority areas that the project  
+can focus to contribute to shift in social norms/gender  stereotypes, and enhance the level of  
+participation of women in income generation activities over the project life. In particularly, it highlight  
+the fundamental role women play, particularly through the project initiated deforestation  free  
+forest deg radation free value chains. This promotes the gradual shift in social norms/gender  
+stereotypes in which women serve as agents of change in this social change process.  
+
+## 5.2 Priority Areas  
+
+### 5.2.1 Priority One – Enhance  women participation in project planning and  
+implementation  
+
+Women are traditionally responsible for most of household chore. This unpaid work take them not  
+only most of their time in a day but also restrict them from learning chance to upgrade their farming  
+skills which are essential for improve d crop yield, and for being accepted into a value chain. To free  
+up women gradually from traditional household chore, it is essential  that their husband share the  
+household chore, such as child care, cooking, home gardening, animal husbandry. When women have  
+more time to participate in trainings, community meetings, and farming  activities, they contribute to  
+increasing family income – through optimized labor and farm yield.  
+
+To promote women participation in project planning and implementation, activites that target women should be delivered during off -  
+farm season, or during time when  farm work is low. It is also important to be sensitive in arranging  
+the timing of such meetings and trainings during the day. Women’s workload have diurnal variations  
+and it is important to be sensitive to this aspect. Meetings and trainings should be organized at a time  
+during the day when it does not clash with the time of the day when demands on the women for  
+domestic chores is highest. This is to facililate sharing of household chore on the part of the male, of  
+work shifting, which enable women to go outside their home for trainings and meetings.  Training  
+content and capacity building events need to be designed based on women’s need and aspiration. As  
+such, these need to be gender sensitive , e.g type/focus of technolog ies/techniques, training events,  
+proximity to villages/communes. Steps that could be taken to promote sharing of household chore  
+include:
+
+
+---
+*Chunk pages 163–163*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=832 (sys=94, user=738), max_out=1024, ctx=8192
+---
+
+# 39
+
+• **Awareness raising**: both men and women of the same households (project target groups) need to understand the need to foster women’s participation in learning and more participation in income generation activities. Awareness raising could be done through meetings for project planning, larger community meetings, and media campaign (Information, Education, Communication). It is anticipated that encouraging women to participate in learning and income generation would not face challenges since most women from ethnic groups stay at home while their husband migrate for works outside the community. But understanding and support from their husband is fundamental to their increased participation in project activities.
+
+• **Access to income generation activities**: Once awareness is raised and there is a family support for female participation, female beneficiaries are encouraged to participate in relevant trainings for income generation activities, including loan access to improved production at farm level.
+
+• **Sharing of household chore**: sharing of household chore is a process that happens at varying pace depending on each household. The sharing process allow female members to spare more time for self-learning and for taking part in additional income generation, as they wish, to increase their farming production, and eventually their income.
+
+• **Success case**: Successful sharing should be shared at group level (loan group) to encourage and support other member who still lag behind, and to support in increase awareness for households that are slow. At certain level, good stories in household chore sharing should be shared at village, and commune level, to consolidate the success, to raise public awareness that help reinforce this improved households practice, and change the public awareness over time, and eventually the norms of sharing household chores.
+
+## 5.2.2 Priority Two – Improve women’s skills for improved income and balanced household chore
+
+When women are freed up gradually from their long-aged domestic role, they can work closely with their husband on a work such as crop care, selecting vet service, deciding the selling price for a better joint decision making. When women participate effectively and consistent in farm work, they are in a better position to negotiate with their husband who would share the home chore load and is more likely to accept their spouse going out for learning and meeting events organized for women. As farming activities are intensified, for instance, for enhanced mechanisation, labour hire, labour exchange, to boost crop yield and quality, the couple and other family members can rearrange for a more optimized division of labour that they both find acceptable to achieve better income for their family. The outcome of this adjusted labour division facilitates the participation of the family, and women, in project’s value chain, which contribute to only economic empowerment for women, but also, for the family. In addition, special efforts must be made by the project to organize trainings and capacity building events in financial literacy, business development and market negotiation so that women’s confidence (and subsequent participation) in setting up and managing enterprises is enhanced. This, over time, reduce their dependency on natural forest product thanks to increased income and participation in deforestation free value chain. Decision making pattern will be changed towards more participation of women in family’s income generation activities. A long-term goal would be to slowly change the gender stereotype and gender social norms.
+
+
+---
+*Chunk pages 164–164*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=905 (sys=94, user=811), max_out=1024, ctx=8192
+---
+
+# 5.2.3 Priority Three – Create mechanisms that allow more and consistent women participation
+
+Project activities that promote women participation should create a condition that require women participation to enable the household to benefit from project activities. Potential activities include loan programs. As a longer-term, local financial service provider could be supported/encouraged to ensure women participation is a sufficient and necessary condition to quality for a pro-poor loan. Project activities – from planning to implementation, should be designed, structure, that later activities require participation of women in early activities. This aims to ensure family and husband consistently support the women to participate in project activities in a longer time and women participation is not as ticking the box.
+
+Investments that benefit groups or larger community should require at 30% of women participation for the planning meeting to proceed. If this target is compromised, there is no impetus for later meetings that have higher level of women participation. Thus, the target of at least 40% women participation in all project planning and implementation will be compromised.
+
+# 5.2.4 Priority Four – Facilitate for enhanced female-headed businesses to join value chains
+
+It is important to support female-headed households (including those whose husband are far away for earning income) who want to start a business in agri-, agro-business to improve their family income. At country level, the percentage of female headed households is 21.86%. In Central Highland, it is 23.7%. In project’s sample, it is 19.8%. It is noted that rate of female headed households tends to have increased over the past ten years – form 18.6% in 2008 to 23.7% in 2018.
+
+The project will encourage female-headed households to take part in business development courses to learn how to start and improve their business, and to learn new farming skills to enhance their adaption to climate change, and to meet the market demand. As female headed household appears to have less access to land compared to male-headed household, it is necessary these household need additional support to ensure they are not excluded from project beneficiary households.
+
+Each agricultural commodity (e.g. coffee, tea, rubber, cassava, bean, maize) requires different role of women in farming these commodities, including their time devotion. Mainstreaming gender for each commodity aims to recognize the roles and knowledge of women in farming these crops. It does not take women in farming as the same for every commodities. Understanding women role enable project to identify ways to ensure women can participate in the right trainings that are essential to their existing role, and as such enable women to upgrade their farming skill for better application to contribute to the overall gains for their crops.
+
+# 5.2.5 Priority Five – Promote Gender Mainstreaming among Youth
+
+Since the skill of youth and access to land resources are limited, the average income of male and female among youth is not different statistically compared to that between male and female in the group older than youth (more than 30 years of age). Targeting youth group in the project area is one effective way to promote improved income at household level. This could be achieved as youth is more active in learning and applying new knowledge, they are more capable physically and thus can spend more effective time in farming activities and later on value chains. Their initial results achieved from project support can serve as champion in the social change process within their community and thus can
+
+10 t(264)=1.794, p>0.05, Cohen’s d=0.279
+
+
+---
+*Chunk pages 165–165*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=888 (sys=94, user=794), max_out=1024, ctx=8192
+---
+
+# [Page 1]  
+| 41 |  
+
+create a good spill-over effect in terms of learning for youth outside the project area, including groups that are just above youth age, such as the group between 30 -50 years of age who are quite active in farming. As there is no income gap between male and female in youth, supporting youth group, including the group just above youth age (i.e. 30 -50), can create a long-term impact which may last beyond project life in terms of income equality. Investment for youth should focus on skills, finance access, business development.  
+
+## 5.2.6 Priority Six – Promote Women Participation in FLA, CFM and PFES  
+
+There are limited participation of women in Forest Land Allocation process (FLA), Community Forest Management (CFM) and PFES (Payment for Forest Environmental Services). The project will focus on promoting the unfolding of FLA, CFM and PFES which have been part of government’s program. To ensure there is a strong sense of ownership and participation for effective use of forest land and benefit from PFES, it is important women need to be included in planning process throughout implementation of these programs, particularly for areas where FLA, CFM, and PFES have not been unfolded yet due to lack of finance and lack of human resources. An important step to enhance women’s participation and partnerships is to encourage and support forest-dependent livelihood opportunities that will not only offer supplementary food and nutrition (wild honey, wild fruits, mushrooms, herbs, medicinal plants, dyes, bamboo and rattan, small aquacultures), but also open up livelihood diversification and income generating opportunities, thereby increasing interest and stakes for women to become significant stakeholders in the process.  
+
+## 5.2.7 Priority Seven – Enhance security of tenure for women in forest lands and other resources  
+
+Security of tenure for women as reflected by the figures for land titling (36%) suggest the need for specific attention to be accorded to this aspect. It is well acknowledged that tenurial security significantly contributes to poverty alleviation and well-being. Efforts by the project must ensure that any land-based intervention must facilitate the allocation of land to the participating household and this allocation formalized through land certification or titling reflecting the names of the wife and husband. Even when community allocations are done, tenurial arrangements (i.e. access to plots for individual households or group members) must reflect joint holdings which include both the wife and husband’s names. In addition, it is important to assist women to have access to important daily resources such as access to clean water which is more handy (water fetching is time and labour demanding) and access to clean energy for household lighting, cooking, heating and productive enterprises.  
+
+## REFERENCES  
+
+Actionaid Vietnam. 2016. Making a house become a home. Policy Brief, ActionAid Vietnam.  
+https://vietnam.actionaid.org/sites/vietnam/files/ucw_policy_brief_-_en.pdf  
+
+Beth A. Bee (2019) Gendered spaces of payment for environmental services: A critical look, Geographical Review, 109:1, 87-107, DOI: 10.1111/gere.12292  
+
+Chowdhury, Iffat, Elizaveta Perova, Hillary Johnson, and Aneesh Mannava. 2018. Gender Streaming in Vietnam. Washington, DC: International Bank for Reconstruction and Development/World Bank.
+
+
+---
+*Chunk pages 166–166*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=808 (sys=94, user=714), max_out=1024, ctx=8192
+---
+
+# References
+
+| Page 1 |  
+|--------|
+| Donald A, Koolwal G, Annan J, Falb K, and Goldstein K (2017). Measuring Women’s Agency. |
+| Elborgh-woytek, K., Newiak, M., Fabrizio, S., Kpodar, K., Clements, B., and Schwartz, G. (2013). Women, Work, and the Economy: Macroeconomic Gains from Gender Equity. Washington, D.C.: International Monetary Fund. |
+| FAO (2017). Guide to mainstreaming gender in FAO’s project cycle. |
+| FAO (2019). Country Gender Assessment in Agriculture in Vietnam. |
+| Green Climate Fund (2019). Gender Policy. |
+| Green Climate Fund and UNWomen (2017). Mainstreaming Gender in Green Climate Fund Projects. |
+| Green Climate Fund (2019). Gender Action Plan of the GCF 2020–2023. |
+| IFAD (2018). Design of gender transformative smallholder agriculture adaptation programmes - Gender and climate change adaptation. |
+| IFAD (2019). Mainstreaming Gender-transformative Approaches at IFAD – Action Plan 2019-2025. |
+| Kabeer, N., and Natali, L. (2013). Gender Equality and Economic Growth: Is there a Win -Win? Institute of Development Studies (IDS) Working Paper. Vol. 2013 No. 417. London: Pathways of women’s empowerment and IDS. |
+| McElwee, P., Lê, H., Nghiêm, T., Vũ, H., & Trần, N. (2021). Gender and payments for environmental services: Impacts of participation, benefit-sharing and conservation activities in Viet Nam. Oryx, 1 -9. doi:10.1017/S0030605320000733 |
+| Springmann, M., Mason-D’Croz, D., Robinson, S., Garnett, T., Godfray, H. C. J., Gollin, D., Scarborough, P. 2016. Global and regional health effects of future food production under climate change: a modelling study. The Lancet: 387: 1937–1946. |
+| Tuan Anh Le, Vu Manh Loi, Charlotte Bingham, 2015. Vietnam In- Country Guidance Note: Social Assessment. The World Bank. |
+| USAID/UNDP (2016). Economics of climate change adaptation: Agriculture sector analysis for Viet Nam. |
+| USAID Climate Change Adaptation Project Preparation Facility for Asia and the Pacific/United Nations Development Programme |
+| WFP (2015). Two minutes on climate change and hunger: A zero hunger world needs climate resilience. The World Food Programme. |
+| World Bank (2018). Vietnam’s future jobs - the gender dimension. |
+| World Bank (2020). Indonesia Country Gender Assessment: Investing in Opportunities for Women. World Bank. |
+| World Bank (2021). Vietnam - Climate Risk Country Profile. Washington D.C. |
+| UNFPA (2020). Review of 10 years implementing Law on Gender Equality |
+| UNWomen 2016. Towards Gender Equality in Viet Nam: Making Inclusive Growth Work for Women. |
+
+--- 
+
+[Page 1]
+
+
+---
+*Chunk pages 167–167*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=139 (sys=94, user=45), max_out=1024, ctx=8192
+---
+
+# ANNEXES
+
+[Page 1]  
+| 43 |  
+
+---  
+[Page 167]  
+| 167 |  
+
+---  
+[Page 167]  
+| 167 |  
+
+---  
+[Page 167]  
+| 167 |  
+
+---  
+[Page 167]  
+| 167 |  
+
+---  
+[Page 167]  
+| 167 |  
+
+---  
+[Page 167]  
+| 167 |  
+
+---  
+[Page 167]  
+| 167 |  
+
+---  
+[Page 167]  
+| 167 |  
+
+---  
+[Page 167]  
+| 167 |  
+
+---  
+[Page 167]  
+| 167 |  
+
+---  
+[Page 167]  
+| 167 |  
+
+---  
+[Page 167]  
+| 167 |  
+
+---  
+[Page 167]  
+| 167 |  
+
+---  
+[Page 167]  
+| 167 |  
+
+---  
+[Page 167]  
+| 167 |  
+
+---  
+[Page 167]  
+| 167 |  
+
+---  
+[Page 167]  
+| 167 |  
+
+---  
+[Page 167]  
+| 167 |  
+
+---  
+[Page 167]  
+| 167 |  
+
+---  
+[Page 167]  
+| 167 |  
+
+---  
+[Page 167]  
+| 167 |  
+
+---  
+[Page 167]  
+| 167 |  
+
+---  
+[Page 167]  
+| 167 |  
+
+---  
+[Page 167]  
+| 167 |  
+
+---  
+[Page 167]  
+| 167 |  
+
+---  
+[Page 167]  
+| 167 |  
+
+---  
+[Page 167]  
+| 167 |  
+
+---  
+[Page 167]  
+| 167 |  
+
+---  
+[Page 167]  
+| 167 |  
+
+---  
+[Page 167]  
+| 167 |  
+
+---  
+[Page 167]  
+| 167 |  
+
+---  
+[Page 167]  
+| 167 |  
+
+---  
+[Page 167]  
+| 167 |  
+
+---  
+[Page 167]  
+| 167 |  
+
+---  
+[Page 167]  
+| 167 |  
+
+---  
+[Page 167]  
+| 167 |  
+
+---  
+[Page 167]  
+| 167 |  
+
+---  
+[Page 167]  
+| 167 |  
+
+---  
+[Page 167]  
+| 167 |  
+
+---  
+[Page 167]  
+| 167 |  
+
+---  
+[Page 167]  
+| 167 |  
+
+---  
+[Page 167]  
+| 167 |  
+
+---  
+[Page 167]  
+| 167 |  
+
+---  
+[Page 167]  
+| 167 |  
+
+---  
+[Page 167]  
+| 167 |  
+
+---  
+[Page 167]  
+| 167 |  
+
+---  
+[Page 167]  
+| 167 |  
+
+---  
+[Page 167]  
+| 167 |  
+
+---  
+[Page 167]  
+| 167 |  
+
+---  
+[Page 167]  
+| 167 |  
+
+---  
+[Page 167]  
+| 167 |  
+
+---  
+[Page 167]  
+| 167 |  
+
+---  
+[Page 167]  
+| 167 |  
+
+---  
+[Page 167]  
+| 167 |  
+
+---  
+[Page 167]  
+| 167 |  
+
+---  
+[Page 167]  
+| 167 |  
+
+---  
+[Page 167]  
+| 167 |  
+
+---  
+[Page 167]  
+| 167 |  
+
+---  
+[Page 167]  
+| 167 |  
+
+---  
+[
+
+
+---
+*Chunk pages 168–168*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=580 (sys=94, user=486), max_out=1024, ctx=8192
+---
+
+# Annex 1 – Gender Action & Social Inclusion Plan
+
+## Project activities
+
+### Project Sub-activities
+
+#### Proposed Responsive Activities
+
+##### Indicators
+
+| Base-line | Mid-line | End-line | Means of Verification | Responsible institutions | Timeline | Budget |
+|-----------|----------|----------|-----------------------|--------------------------|----------|--------|
+| 35%       | 40%      | 40%      |                       |                          |          |        |
+| 0         | 1        | 1        |                       |                          |          |        |
+| 0%        | 30%      | 60%      |                       |                          |          |        |
+
+##### Output 1.1: National REDD+ policies and mechanism upgraded to fulfill all required functions, including afforestation.
+
+###### Activity 1.1.1: Upgrade National Forest Monitoring System (NFMS) and Safeguard information System (SIS)
+
+- Sub-activity 1.1.1.1. Upgrade a monitoring system to report results of emissions reductions and removals
+- Sub-activity 1.1.1.2. Implement the REDD+ Safeguards Information System
+- Sub-activity 1.1.1.3. Promote inter-provincial coordination and knowledge management
+
+###### Activity 1.1.2: Mobilize resources for NRAP implementation and inclusive investment planning and equitable resource distribution mechanisms
+
+- Sub-activity 1.1.2.1. Prepare a Regional NRAP Investment plan
+- Sub-activity 1.1.2.2. Conduct capacity building for private sector resource mobilization
+- Sub-activity 1.1.2.3. Conduct national multistakeholder policy dialogue on including carbon sequestration services in PFES mechanisms and to draft MCCFM guidelines
+
+##### Guidance Note on Mainstreaming Gender into PFES is developed for use under project
+
+##### Revolving fund is established using the
+
+[Page 1]  
+| 44 |  
+
+--- 
+
+*Note: The text appears to be incomplete or fragmented, possibly due to OCR issues or formatting problems during extraction.*
+
+
+---
+*Chunk pages 169–169*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=807 (sys=94, user=713), max_out=1024, ctx=8192
+---
+
+# [Page 1]
+
+| 45 |  
+ 
+PFES payment for each 
+watershed that target 
+women as loan 
+beneficiaries. 
+
+## Output 1.2: Provincial policies, legal and institutional frameworks, and stakeholder coordination mechanisms integrated with National REDD+ Action Plan (NRAP)  
+
+### Activity 1.2.1: Mainstream NRAP into provincial policies and legal institutional framework  
+- Sub-activity 1.2.1.1. Strengthen provincial leadership, political will and commitment  
+- Sub-activity 1.2.1.2. Support a provincial REDD+ monitoring and information system (MIS) and participatory forest inventory surveys  
+
+### Activity 1.2.2: Improve cross-sector coordination for better forest management and transition to deforestation-free economic development  
+- Sub-activity 1.2.2.1. Facilitate 4P platforms to provide inputs and ensure effective implementation of PRAPs  
+- Sub-activity 1.2.2.2. Facilitate cross-sector coordination, policy dialogue and capacity building on zoning, FLA, MCFM and PFES  
+
+### Activity 1.2.3: Enhance Public-Private-Producer Partnerships (4Ps) for deforestation-free economic development  
+- Sub-activity 1.2.3.1. Generate baseline knowledge  
+- Sub-activity 1.2.3.2. Identify socially and economically viable and dense agroforestry systems adapted to agro-ecological zones  
+- Sub-activity 1.2.3.4. Share knowledge with the wider population and advocacy  
+
+## Outcome 2: Emissions reductions from AFOLU consequently to 4Ps’ deforestation-free value chains & performance-based finance  
+
+### Output 2.1: Deforestation free value chains developed by 4Ps and increased access to finance  
+#### Activity 2.1.1: Develop deforestation-free commodity supply chains through 4P platforms  
+- Sub-activity 2.1.1.1. Develop deforestation-free commodity supply chains (perennial crops, acacia-based timber, bamboo)  
+- Sub-activity 2.1.1.2. Develop value chains for deforestation-free niche products (honey, mushrooms, medicinal plants, herbs, other NWFPs). Market analysis will analyse, among other things, potential target market and trends of consumers’ preferences with regards to:  
+  - % of market reports that analyse market demand on the need for a) social inclusion and b) FPIC compliance for value chain with EM participation.  
+
+#### Activity 2.1.2: Develop deforestation-free commodity supply chains through 4P platforms  
+- Sub-activity 2.1.2.1. Develop deforestation-free commodity supply chains (perennial crops, acacia-based timber, bamboo)  
+- Sub-activity 2.1.2.2. Develop value chains for deforestation-free niche products (honey, mushrooms, medicinal plants, herbs, other NWFPs). Market analysis will analyse, among other things, potential target market and trends of consumers’ preferences with regards to:  
+  - % of market reports that analyse market demand on the need for a) social inclusion and b) FPIC compliance for value chain with EM participation.  
+
+## Logical framework  
+## M&E system  
+## Annual Project Performance Report (PPR) with Results Tracker using gender-disaggregated data  
+IFAD  
+
+## Annual Project Performance Report  
+## PMUs’ social inclusion staff (gender, youth, EM)  
+## PMU’s consultant for social and environmental safeguards  
+
+20,000
+
+
+---
+*Chunk pages 170–170*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=422 (sys=94, user=328), max_out=1024, ctx=8192
+---
+
+# 46
+
+## a) Social inclusion, such as no discrimination on the basis of gender, ethnic background, religion, disability, sexual orientation, pregnancy, with regard to hiring, remuneration, benefits, training, advancement, discipline, termination, retirement, or any other employment-related decisions, particularly on the part of private sectors (e.g. companies, enterprises)
+
+## • Delivery of Trainings to prepare for participation in select Value Chain(s) Private- Public- Producer Partnerships (4P) mechanism will have provisions that require all agribusiness participating in project initiated 4P partnership
+
+### Percentage of FEMALE PARTICIPATING in project planning and training.
+
+#### Of which Percentage of female IP participating
+
+- 0%
+- 25%
+- 10%
+- 40%
+- 20%
+
+## • M&E system
+
+## • Annual Project Performance Report
+
+## • PMU's social inclusion staff (gender, youth, EM)
+
+## • PMU's consultant for social and environmental safeguards
+
+
+---
+*Chunk pages 171–171*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=569 (sys=94, user=475), max_out=1024, ctx=8192
+---
+
+# [Page 1] 47
+
+ensure at least 30% participants in each of the meeting/workshop/training that they organize are female
+
+Percentage of female trained CAN NAME at least 3 key training knowledges they have adopted for crop improvement
+
+0% 40% 80%
+
+- M&E system
+- Annual Project Performance Report
+
+- PMUs’ social inclusion staff (gender, youth, EM)
+- PMU’s Training Consultant
+
+Percentage of female trained they HAVE ADOPTED project's training knowledge for at least one season
+
+0% 50% 80%
+
+- M&E system
+- Annual Project Performance Report
+
+- PMUs’ social inclusion staff (gender, youth, EM)
+
+- PMU’s Training Consultants
+
+Percentage of female trained indicate project's training IMPROVES THEIR CROP YIELD
+
+0% 40% 70%
+
+- M&E system
+- Annual Project Performance Report
+
+- PMUs’ social inclusion staff (gender, youth, EM)
+- PMU’s Training Consultants
+
+Percentage of female trained indicate project's training knowledge help INCREASE NET INCOME BY AT LEAST 10% (compared to baseline)
+
+0% 50% 70%
+
+- M&E system
+- Annual Project Performance Report
+
+- PMUs’ social inclusion staff (gender, youth, EM)
+- PMU’s Training Consultants
+
+Percentage of female trained and forest-dependent indicate they are LESS DEPENDENT for at least 50% of their annual need from forest's products (compared to baseline)
+
+0% 40% 80%
+
+- M&E system
+- Annual Project Performance Report
+
+- PMUs’ social inclusion staff (gender, youth, EM)
+- PMU’s Training Consultants
+
+
+---
+*Chunk pages 172–172*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=615 (sys=94, user=521), max_out=1024, ctx=8192
+---
+
+# [Page 1]
+
+| 48 |  
+ 
+Percentage of female 
+trained and forest-
+dependent CAN 
+NAME at least one 
+Forest Product they 
+stop collecting 
+(compared to 
+baseline) thanks to 
+improved income 
+0% 40% 80% • M&E system 
+• Annual Project 
+Performance 
+Report 
+ 
+ 
+• PMUs’ social 
+inclusion staff 
+(gender, youth, EM) 
+• PMU’s Training 
+Consultants  
+  
+ YOUTH percentage of 
+YOUTH participating 
+in Project Planning 
+and Training 
+(disaggregated by 
+gender) 
+ 
+Of
+ which percentage 
+of EM 
+0% 
+ 
+ 
+ 
+ 
+0% 
+20% 
+ 
+ 
+ 
+ 
+10% 
+30% 
+ 
+ 
+ 
+ 
+15% 
+• M&E system 
+• Annual Project 
+Performance 
+Report 
+ 
+ 
+• PMUs’ social 
+inclusion staff 
+(gender, youth, EM) 
+• PMU’s Training 
+Consultants  
+  
+  Percentage of 
+YOUTH receiving 
+SERVICES 
+PROMOTED OR 
+SUPPORTED by the 
+project (disaggregated 
+by gender) 
+ 
+Of
+ which percentage 
+of EM 
+0% 
+ 
+ 
+ 
+ 
+ 
+ 
+0% 
+20% 
+ 
+ 
+ 
+ 
+ 
+ 
+10% 
+30% 
+ 
+ 
+ 
+ 
+ 
+ 
+15% 
+• M&E system 
+• Annual Project 
+Performance 
+Report 
+ 
+ 
+• PMUs’ social 
+inclusion staff 
+(gender, youth, EM) 
+ 
+• PMU’s Training 
+Consultants  
+  
+  Percentage of 
+YOUTH with NEW 
+JOBS/EMPLOYMEN
+T OPPORTUNITIES 
+ 
+ 
+Of
+ which percentage 
+of EM 
+0% 
+ 
+ 
+ 
+ 
+ 
+0% 
+20% 
+ 
+ 
+ 
+ 
+ 
+10% 
+30% 
+ 
+ 
+ 
+ 
+ 
+20% 
+• M&E system 
+• Annual Project 
+Performance 
+Report 
+ 
+ 
+• PMUs’ social inclusion 
+staff (gender, youth, 
+EM) 
+• PMU’s Training 
+Consultants  
+  
+  Percentage of all project 
+materials prepared for 
+trainings/ meetings/  
+workshops, etc. 
+incorporates gender 
+dimensions, highlighting 
+roles and potential 
+contribution of women 
+in all relevant aspects of 
+0% 100% 100% • M&E system 
+• Annual Project 
+Performance 
+Report 
+ 
+• PMUs’ social inclusion 
+staff (gender, youth, 
+EM) 
+• PMU’s Training 
+Consultants
+
+
+---
+*Chunk pages 173–173*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=382 (sys=94, user=288), max_out=1024, ctx=8192
+---
+
+# [Page 1]
+| 49 |  
+ 
+training knowledge and 
+subsequent adoption 
+ • Private-
+Public-
+Producer 
+Partnerships 
+(4P) 
+mechanism 
+will have 
+provisions 
+that require all 
+agribusiness 
+participating 
+in project 
+initiated 4P 
+partnership 
+ensure at least 
+30% 
+participants in 
+each of the 
+meeting/ 
+workshop/ 
+training that 
+they organize 
+are female. 
+• Ensure all 
+training 
+materials 
+prepared for 
+trainings/ 
+meetings/ 
+workshops 
+incorporates 
+gender 
+dimensions, 
+highlighting 
+roles and 
+potential 
+contribution 
+of women in 
+all relevant 
+aspects of 
+training 
+knowledge 
+and 
+Percentage of female 
+attending each 
+meeting/ workshop/ 
+training that 
+agribusiness organized 
+under project initiated 
+VC  
+ 
+Of which percentage of 
+EM 
+ 
+ 
+0% 
+ 
+ 
+ 
+ 
+ 
+0% 
+40% 
+ 
+ 
+ 
+ 
+ 
+15% 
+40% 
+ 
+ 
+ 
+ 
+ 
+20% 
+• M&E system 
+• Annual Project 
+Performance 
+Report 
+• PMUs’ social inclusion 
+staff (gender, youth, 
+EM) 
+• PMU’s Training 
+Consultants
+
+
+---
+*Chunk pages 174–174*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=621 (sys=94, user=527), max_out=1024, ctx=8192
+---
+
+# Activity 2.1.2: Develop the capacity of farmers, common interest groups (CIGs), cooperatives and small and medium-sized enterprises (SMEs) for deforestation-free value chains and alternative livelihood development
+
+## Sub-activity 2.1.2.1. Establish CIGs
+
+| Indicator | Value |
+|-----------|-------|
+| Percentage of project beneficiary individuals invited to training on CIG, MSME on climate smart farming systems | 0% |
+| Of which percentage of EM | 0% |
+
+## Sub-activity 2.1.2.2. Train farmers, CIGs, cooperatives and SMEs
+
+| Indicator | Value |
+|-----------|-------|
+| Percentage of project beneficiary individuals invited to training on CIG, MSME on climate smart farming systems | 30% |
+| Of which percentage of EM | 10% |
+
+## Additional Information
+
+- **M&E system**
+- **Annual Project Performance Report**
+- **PMUs' social inclusion staff (gender, youth, EM)**
+- **PMU's Training Consultants**
+
+## Activity 2.1.2: Develop the capacity of farmers, common interest groups (CIGs), cooperatives and small and medium-sized enterprises (SMEs) for deforestation-free value chains and alternative livelihood development
+
+| Indicator | Value |
+|-----------|-------|
+| Percentage of project beneficiary individuals invited to training on CIG, MSME on climate smart farming systems | 60% |
+| Of which percentage of EM | 25% |
+
+## Additional Information
+
+- **M&E system**
+- **Annual Project Performance Report**
+- **PMUs' social inclusion staff (gender, youth, EM)**
+- **PMU's Training Consultants**
+
+## Activity 2.1.2: Develop the capacity of farmers, common interest groups (CIGs), cooperatives and small and medium-sized enterprises (SMEs) for deforestation-free value chains and alternative livelihood development
+
+| Indicator | Value |
+|-----------|-------|
+| Percentage of project beneficiary individuals invited to training on CIG, MSME on climate smart farming systems | 10,000 |
+
+## Additional Information
+
+- **M&E system**
+- **Annual Project Performance Report**
+- **PMUs' social inclusion staff (gender, youth, EM)**
+- **PMU's Training Consultants**
+
+## Activity 2.1.2: Develop the capacity of farmers, common interest groups (CIGs), cooperatives and small and medium-sized enterprises (SMEs) for deforestation-free value chains and alternative livelihood development
+
+| Indicator | Value |
+|-----------|-------|
+| Percentage of project beneficiary individuals invited to training on CIG, MSME on climate smart farming systems | 0% |
+| Of which percentage of EM | 0% |
+
+## Additional Information
+
+- **M&E system**
+- **Annual Project Performance Report**
+- **PMUs' social inclusion staff (gender, youth, EM)**
+- **PMU's Training Consultants**
+
+## Activity 2.1.2: Develop the capacity of farmers, common interest groups (CIGs), cooperatives and small and medium-sized enterprises (SMEs) for deforestation-free value chains and alternative livelihood development
+
+| Indicator | Value |
+|-----------|-------|
+| Percentage of project beneficiary individuals invited to training on CIG, MSME on climate smart farming systems | 30% |
+| Of which percentage of EM | 10% |
+
+## Additional Information
+
+- **M&E system**
+- **Annual Project Performance Report**
+- **PMUs' social inclusion staff (gender, youth, EM)**
+- **PMU's Training Consultants**
+
+## Activity 2.1.2: Develop the capacity of farmers, common interest groups (CIGs), cooperatives and small and medium-sized enterprises (SMEs) for deforestation-free value chains and alternative livelihood development
+
+| Indicator | Value |
+|-----------|-------|
+| Percentage of project beneficiary individuals invited to training on CIG, MSME on climate smart farming systems | 60% |
+| Of which percentage of EM | 25% |
+
+## Additional Information
+
+- **M&E system**
+- **Annual Project Performance Report**
+- **PMUs' social inclusion staff (gender, youth, EM)**
+- **PMU's Training Consultants**
+
+## Activity 2.1.2: Develop the capacity of farmers, common interest groups (CIGs), cooperatives and small and medium-sized enterprises (SMEs) for deforestation-free value chains and alternative livelihood development
+
+| Indicator | Value |
+|-----------|-------|
+| Percentage of project beneficiary individuals invited to training on CIG, MSME on climate smart farming systems | 10,000 |
+
+## Additional Information
+
+- **M&E system**
+- **Annual Project Performance Report**
+- **PMUs' social inclusion staff (gender, youth, EM)**
+- **PMU's Training Consultants**
+
+##
+
+
+---
+*Chunk pages 175–175*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=694 (sys=94, user=600), max_out=1024, ctx=8192
+---
+
+# Activity 2.1.3: Support financial providers to develop and promote financial products for deforestation-free value chain development
+
+- **Sub-activity 2.1.3.1.** Strengthen WDFs and CDFs to manage funds and develop products that support investments in deforestation-free value chains
+- **Sub-activity 2.1.3.2.** Provide access to capital for WDFs and CDFs to more rapidly scale credit activities
+- **Sub-activity 2.1.3.3.** Build capacity of commercial banks to develop products, partnerships and application of fintech that support investments in deforestation-free value chains and advance project objectives
+
+## Indicators
+
+| Indicator | Target | Data Source |
+|-----------|--------|-------------|
+| Percentage of loan products designed to disburse by production stage (stage wise) to be suitable to the need of ethnic minorities and women | 0% | • M&E system of financial service provider<br>• M&E system<br>• Annual Project Performance Report<br>PMUs’ social inclusion staff (gender, youth, EM)<br>PMU’s Training Consultants |
+| Percentage of female participating in each MSME that applies climate smart farming systems | 0% | • M&E system<br>• Annual Project Performance Report<br>PMUs’ social inclusion staff (gender, youth, EM)<br>PMU’s Training Consultants |
+| Percentage of female participating in community interest group (CIG) that applies climate smart farming systems | 0% | • M&E system<br>• Annual Project Performance Report<br>PMUs’ social inclusion staff (gender, youth, EM)<br>PMU’s Training Consultants |
+| Percentage of female participants in infrastructure design meetings | 0% | • M&E system<br>• Annual Project Performance Report<br>PMUs’ social inclusion staff (gender, youth, EM)<br>PMU’s Training Consultants |
+| Percentage of infrastructure designed that are female friendly | 0% | • M&E system<br>• Annual Project Performance Report<br>PMUs’ social inclusion staff (gender, youth, EM)<br>PMU’s Training Consultants |
+
+## Target
+
+- 20,000
+
+## Activities
+
+- Provide financial services access to smallholders, and other vulnerable groups such as women and ethnic minorities
+
+--- 
+
+[Page 175]
+
+
+---
+*Chunk pages 176–176*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=348 (sys=94, user=254), max_out=1024, ctx=8192
+---
+
+# 52
+
+minorities  
+through  
+established  
+Women  
+Developmen  
+t Fund  
+(WDF)  
+Integrate  
+climate  
+change  
+mitigation  
+and  
+adaptation  
+concerns into  
+financial  
+services  
+through  
+working with  
+actors in  
+proposed  
+WDF to  
+incorporate  
+climate risks  
+into their loan  
+portfolios and  
+incentivize  
+the adoption  
+of climate-  
+smart farming  
+practices by  
+smallholders.  
+Of which percentage  
+of EM  
+  
+Organize  
+business  
+development  
+course for  
+women who  
+are interested  
+in start a new  
+agri-, agro-  
+business,  
+including  
+female  
+headed small-  
+size business  
+Annual awareness  
+raising and IEC  
+campaign to promote  
+husband’s chore  
+sharing with his wife  
+  • M&E system of  
+financial service  
+provider  
+• M&E system  
+• Annual Project  
+Performance  
+Report  
+  
+PMUs' social inclusion  
+staff (gender, youth, EM)  
+  
+PMU's Training  
+Consultants
+
+
+---
+*Chunk pages 177–177*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=629 (sys=94, user=535), max_out=1024, ctx=8192
+---
+
+# [Page 1]
+
+| 53 |
+Percentage of trained female that apply for loan have timely and sufficient access to loan  
+0% 30% 40% • M&E system of financial service provider  
+• M&E system  
+• Annual Project Performance Report  
+
+PMUs’ social inclusion staff (gender, youth, EM)  
+PMU’s Training Consultants  
+
+Percentage of borrowers that successfully participate in at least one project initiated value chains  
+0% 40% 60% • M&E system of financial service provider  
+• M&E system  
+• Annual Project Performance Report  
+
+PMUs’ social inclusion staff (gender, youth, EM)  
+PMU’s Training Consultants  
+
+Percentage of loan borrower repay their loan as scheduled  
+0% 95% 98% • M&E system of financial service provider  
+• M&E system  
+• Annual Project Performance Report  
+
+PMUs’ social inclusion staff (gender, youth, EM)  
+PMU’s Training Consultants  
+
+Percentage of loan borrower report that they have reduced at least 30% of their household chore (daily time) through sharing with their spouse/other male member in their family  
+0% 50% 80% • M&E system of financial service provider  
+• M&E system  
+• Annual Project Performance Report  
+
+PMUs’ social inclusion staff (gender, youth, EM)  
+PMU’s Training Consultants  
+
+Percentage of borrower that are youth  
+0% 30% 50% • M&E system of financial service provider  
+• M&E system  
+• Annual Project Performance Report  
+
+PMUs’ social inclusion staff (gender, youth, EM)  
+PMU’s Training Consultants  
+
+Encourage and Support new female headed business to join project’s value chain  
+Percentage of female-headed businesses that project supports have access to loan  
+0% 50% 80% • M&E system of financial service provider  
+• M&E system  
+• Annual Project Performance Report  
+
+PMUs’ social inclusion staff (gender, youth, EM)  
+PMU’s Training Consultants
+
+
+---
+*Chunk pages 178–178*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=454 (sys=94, user=360), max_out=1024, ctx=8192
+---
+
+# [Page 1]  
+## 54  
+
+All WDF to  
+be  
+established at  
+project  
+provinces will  
+ensure, as a  
+loan  
+eligibility,  
+loan  
+applicants are  
+required to  
+address  
+climate risks  
+through  
+adopting  
+climate-smart  
+farming  
+practices in  
+their agro-  
+agricultural  
+activities for  
+which the  
+loan is  
+applied  
+
+### Percentage of target  
+client being female  
+
+0% 50% 80% • M&E system of  
+financial service  
+provider  
+• M&E system  
+Annual Project  
+Performance  
+Report  
+PMUs’ social inclusion  
+staff (gender, youth, EM)  
+
+PMU’s Training  
+Consultants  
+
+### Output 2.2: Deforestation -free value chains and forest restoration infrastructure upgraded and established  
+#### Activity 2.2.1: Develop infrastructure for deforestation free value chains  
+##### Sub-activity 2.2.1.1. Promote  
+sustainable agroforestry  
+through small-scale and  
+micro infrastructure  
+investments, including the  
+development of micro  
+irrigation systems and  
+organic fertilizer production  
+facilities  
+
+##### Sub-activity 2.2.1.2: Enhance  
+the post-harvest facilities of  
+selected value chains by  
+incorporating value-added  
+processing techniques  
+
+#### 10,000  
+
+### Percentage of female  
+participants in  
+
+0% 30% 40% • M&E system  
+• Annual Project  
+Performance Report  
+• PMUs’ social inclusion  
+staff (gender, youth, EM)  
+
+---  
+**Page 178**
+
+
+---
+*Chunk pages 179–179*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=483 (sys=94, user=389), max_out=1024, ctx=8192
+---
+
+# 55
+
+## Infrastructure Design Meetings
+
+### PMU's Training Consultants
+
+| Percentage of | infrastructure designed that are female friendly |
+|---------------|--------------------------------------------------|
+| 0%            | 100%                                             |
+| 100%          |                                                  |
+
+### PMU's Social Inclusion Staff (Gender, Youth, EM)
+
+| Percentage of participants at all planning meetings for critical infrastructure are female |
+|-------------------------------------------------------------------------------------------|
+| 0%                                                                        |
+
+### Of which the percentage of EM
+
+| 0% | 30% | 10% | 60% | 25% |
+|----|-----|-----|-----|-----|
+
+## Activity 2.2.2: Establish and upgrade forest restoration infrastructure (IFAD Co-finance)
+
+### Sub-activity 2.2.2.1
+
+Strengthen forest monitoring and protection infrastructure by implementing comprehensive upgrades.
+
+### Sub-activity 2.2.2.2
+
+Establish public nurseries dedicated to tree species cultivation, creating essential infrastructure for reforestation and afforestation initiatives.
+
+## 10,000
+
+Ensure all workshops/meetings organized to identify infrastructures that support agricultural production (e.g., irrigation channel, rural roads…) invite the percentage of female participants in all project trainings/workshops.
+
+| 0% | 25% | 40% |
+|----|-----|-----|
+
+### M&E system
+
+- Annual Project Performance Report
+
+### PMUs' social inclusion staff (gender, youth, EM)
+
+### PMU's Training Consultants
+
+--- 
+
+*Note: Page numbers are preserved as per instructions.*
+
+
+---
+*Chunk pages 180–180*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=518 (sys=94, user=424), max_out=1024, ctx=8192
+---
+
+# [Page 1] 56
+
+## Participation of Women
+
+### Output 2.3: Collaborative forest management capacity enhanced through performance-based incentives
+
+#### Activity 2.3.1: Develop a results-based payments for ecosystem services (PES) mechanism for collaborative forest management
+
+- **Sub-activity 2.3.1.1.** Support Provincial Forest Protection Development Funds (PFPDFs) to design and implement a mechanism for performance-based payments for carbon sequestration services
+- **Sub-activity 2.3.1.2.** Build the capacity building of the PFPDFs
+
+#### Activity 2.3.2: Support multi-stakeholder commune-level collaborative forest management (MCCFM)
+
+- **Sub-activity 2.3.2.1.** Facilitate a participatory land use planning and mapping process
+- **Sub-activity 2.3.2.2.** Develop fully-devolved MCCFM pilot
+- **Sub-activity 2.3.2.3.** Develop capacity of village-level MCCFM group members
+- **Sub-activity 2.3.2.4.** Strengthen the MCCFM support system
+
+### Ensure all workshops/meetings organized to identify infrastructures that support agricultural production (e.g. irrigation channel, rural roads…) invite the participation of women
+
+#### Percentage of participants at all planning meetings for critical infrastructure are female
+
+| Indicator | 0% | 10% | 25% | 30% | 60% |
+|-----------|----|-----|-----|-----|-----|
+| DARDs     |    |     |     |     |     |
+| Local people |  |     |     |     |     |
+
+### TOTAL: 113,915
+
+---
+
+*Note: The original page number is preserved as "1" in the markdown format.*
+
+
+---
+*Chunk pages 181–181*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=839 (sys=94, user=745), max_out=1024, ctx=8192
+---
+
+# Annex 2 – Actions to be taken to minimize and mitigate GBV risk (including SEA/SH) as part of Gender Action and Social Inclusion Plan (GASIP)
+
+## Project Preparation
+
+- At project level, social assessment (results reflected in GASAP and IPP) was conducted and SEA/SH risk screened, identified, and key mitigation measures proposed.
+- Provincial PMUs sensitized on the importance of identifying and addressing SEA/SH risk, proposed mitigation measures, and implementation mechanisms.
+- GBV risk mainstreamed into Stakeholder Engagement Plan to ensure project affected people and project workers are aware of GBV risk, mitigation measures, including project’s level GRM for GBV.
+
+### Project Preparation
+
+- IFAD and FAO (as lead) and Provincial PMUs (as supporting)
+- SEA/SH risks and prevention measures are reflected in project's ESMF, SEP, GASIP and IPP.
+- IFAD (completed, as part of social assessment)
+
+## Project Implementation
+
+### At project level
+
+- Integrate GBV (including SEA/SH) into consultation meetings (as part of project’s overall Stakeholder Engagement Plan).
+- Conduct project–level awareness raising campaign, including the participation of local Women’s Unions as potential GBV service providers.
+- Mainstream GBV related information into project’s materials (e.g. project booklet and training documents).
+- Report on GBV incidence status in PPMU’s quarterly implementation progress report.
+- Review annual PPMU’s capacity to identify, prevent and respond to SEA/SH risks throughout project cycle.
+
+### At infrastructure scheme (for civil works)
+
+- Screen for SEA/SH risk (as part of preparation of site–specific ESMP, and integrate in site–specific ESMPs).
+- Include provisions related GBV (including SEA/SH) in the bidding documents and Work Contract of the Contractors.
+- Key provisions include: a) zero tolerance for GBV (including SEA/SH), b) awareness raising for workers about GBV/SEA/SH risks, c) Code of Conducts for contractor’s workers prepared, understood, and signed by workers prior to mobilization to project site d) Grievance Redress disclosed to contractor’s workers.
+- Year 1
+- Year 1, repeated mid–term.
+- Quarterly Report submitted to IFAD
+- Preparation of infrastructure scheme (before civil works).
+- Prior review of bidding documents and work contract by IFAD procurement team
+- Provincial PMUs
+- Provincial PMUs
+- Provincial PMUs
+- Provincial PMUs
+- IFAD project team
+- Provincial PMUs
+- Provincial PMUs and Contractors
+
+### Ongoing review during supervision missions, and provide guidance and support as necessary
+
+- 5,510 USD (project funding)
+
+[Page 1] | 57 |
+
+---

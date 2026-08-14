@@ -1,0 +1,10976 @@
+---
+*Chunk pages 1–1*
+*Token usage:* input=316 (sys=94, user=222), max_out=1024, ctx=8192
+---
+
+# Meeting of the Board  
+## 15–18 July 2024  
+### Songdo, Incheon, Republic of Korea  
+
+## Provisional agenda item 10  
+
+### GCF/B.39/02/Add.14  
+#### 24 June 2024  
+
+## Consideration of funding proposals –  
+### Addendum XIV  
+
+## Funding proposal package for FP239  
+
+## Summary  
+
+This addendum contains the following seven parts:  
+1. A funding proposal titled "Building Climate Resilience for Food and Livelihoods in the Horn of Africa (BREFOL)";  
+2. No-objection letter issued by the national designated authority(ies) or focal point(s);  
+3. Environmental and social report(s) disclosure;  
+4. Secretariat’s assessment;  
+5. Independent Technical Advisory Panel’s assessment;  
+6. Response from the accredited entity to the independent Technical Advisory Panel's assessment; and  
+7. Gender documentation.  
+
+[Page 1]
+
+
+---
+*Chunk pages 2–2*
+*Token usage:* input=228 (sys=94, user=134), max_out=1024, ctx=8192
+---
+
+# GCF/B.39/02/Add.14
+## Page b
+
+### 135
+### 141
+### 146
+### 163
+### 175
+
+## Table of Content
+
+- Funding proposal submitted by the accredited entity
+- No-objection letter issued by the national designated authority(ies) or focal point(s)
+- Environmental and social report(s) disclosure
+- Secretariat's assessment
+- Independent Technical Advisory Panel's assessment
+- Response from the accredited entity to the independent Technical Advisory Panel's assessment
+- Gender documentation 178
+
+
+---
+*Chunk pages 3–3*
+*Token usage:* input=225 (sys=94, user=131), max_out=1024, ctx=8192
+---
+
+# Project/Programme title: Building Climate Resilience for Food and Livelihoods in the Horn of Africa (BREFOL)
+
+## Country(ies): Djibouti, Ethiopia, Kenya, Somalia, and South Sudan
+
+## Accredited Entity: The African Development Bank (AfDB)
+
+## Date of first submission: [2023/05/27]
+
+## Date of current submission [2024/06/18]
+
+## Version number [V.007]
+
+
+---
+*Chunk pages 4–4*
+*Token usage:* input=493 (sys=94, user=399), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 0
+
+## Contents
+
+- Section A: PROJECT / PROGRAMME SUMMARY
+- Section B: PROJECT / PROGRAMME INFORMATION
+- Section C: FINANCING INFORMATION
+- Section D: EXPECTED PERFORMANCE AGAINST INVESTMENT CRITERIA  
+- Section E: LOGICAL FRAMEWORK
+- Section F: RISK ASSESSMENT AND MANAGEMENT
+- Section G: GCF POLICIES AND STANDARDS
+- Section H: ANNEXES  
+
+## Note to Accredited Entities on the use of the funding proposal template
+
+- Accredited Entities should provide summary information in the proposal with cross-reference to annexes such as feasibility studies, gender action plan, term sheet, etc.
+- Accredited Entities should ensure that annexes provided are consistent with the details provided in the funding proposal. Updates to the funding proposal and/or annexes must be reflected in all relevant documents.
+- The total number of pages for the funding proposal (excluding annexes) should not exceed 60. Proposals exceeding the prescribed length will not be assessed within the usual service standard time.
+- The recommended font is Arial, size 11.
+- Under the GCF Information Disclosure Policy, project and programme funding proposals will be disclosed on the GCF website, simultaneous with the submission to the Board, subject to the redaction of any information that may not be disclosed pursuant to the IDP. Accredited Entities are asked to fill out information on disclosure in section G.4.
+
+## Please submit the completed proposal to:
+
+fundingproposal@gcfund.org
+
+## Please use the following name convention for the file name:
+
+“FP-[Accredited Entity Short Name]-[Country/Region]-[YYYY/MM/DD]”
+
+
+---
+*Chunk pages 5–5*
+*Token usage:* input=611 (sys=94, user=517), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.2.0 | PAGE 2 OF 15
+
+## Abbreviation Definitions
+
+| Abbreviation | Definition |
+|-------------|------------|
+| AAAP        | Africa Adaptation Accelerator Program |
+| ACS         | Agricultural Cooperative Society |
+| AD          | Agro-dealer |
+| ADF         | African Development Fund |
+| AE          | Accredited Entity |
+| AFAWA       | Affirmative Finance Action for Women in Africa |
+| AfDB        | African Development Bank (AfDB) |
+| AFOLU       | Agriculture, Forests, and Other Land Use |
+| AML/CFT     | Anti-Money Laundering and Countering Financing of Terrorism |
+| ARA         | Adaptation Result Area |
+| ASALs       | Arid and Semi-arid Lands |
+| AVC         | Agropastoral Value Chain |
+| BDCW        | BREFOL Direct Credit Window |
+| BDICW       | BREFOL Direct Insurance Credit Window |
+| BREFOL      | Building Climate Resilience for Food and Livelihoods in the Horn of Africa |
+| CBs         | Commercial Banks |
+| CDD         | Maximum Number of Consecutive Dry Days |
+| CDI         | Combined Drought Indicator |
+| CFRA        | Country Fiduciary Risk Assessment |
+| CIEWS       | Climate Information and Early Warning System |
+| CLMCP       | Community Land Management Committees and Platforms |
+| CMIPs       | Coupled Model Inter-comparison Programs |
+| COVID-19    | Coronavirus 2019 |
+| CPAR        | Country Procurement Assessment Report |
+| CRU         | Climatic Research Unit |
+| CRVA        | Climate Risk and Vulnerability Assessment |
+| CSA         | Climate-Smart Agriculture |
+| CSOs        | Civil Society Organizations |
+| CSP         | Country Strategy Papers |
+| CWD         | Consecutive Wet Day |
+| DACCS       | African Union-Draft Africa Climate Change Strategy |
+| DRM         | Disaster Risk Management |
+| DRs         | Discount Rates |
+| DRSLP       | Drought Resilience and Sustainable Livelihoods Programme |
+| EA          | Economic Analysis |
+| EDRMC       | Ethiopian Disaster Risk Management Commission |
+| EE          | Executing Entities |
+| EFA         | Economic and Financial Analysis |
+| EIRR        | Economic Internal rate of Return |
+| ENPV        | Economic Net Present Value |
+| ESIAs       | Environmental and Social Impact Assessments |
+| ESFs        | Environmental and Social Management Frameworks |
+| ESMPs       | Environmental and Social Management Plans |
+| EWS         | Early warning systems |
+| FA          | Financial Analysis |
+| FAA         | Funded Activity Agreement |
+| FAO         | Food and Agricultural Organization |
+| FBAs        | Farm-based Associated |
+| FCMB        | First City Monument Bank |
+| FEWS NET    | Famine Early Warning Systems Network |
+| FIRR        | Financial Internal Rate of Return |
+| FMA         | Financial Management Arrangement |
+| FNPV        | Financial Net Present Value |
+
+--- 
+
+[Page 1]
+
+
+---
+*Chunk pages 6–6*
+*Token usage:* input=649 (sys=94, user=555), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.2.0 | PAGE 3 OF 15
+
+## FSI Fragile State Index  
+## FNWG Food Security and Nutrition Working Group  
+## GALS Gender Action Learning System  
+## GCA Global Centre on Adaptation  
+## GDP Gross Domestic Product  
+## GFFA Global Forum on Food and Agriculture  
+## GGW Great Green Wall  
+## GHA Greater Horn of Africa  
+## GHGs Green House Gases  
+## HCVI Hunger and Climate Vulnerability Index  
+## HoA Horn of Africa  
+## HWF Heat Wave Frequency  
+## ICEWARN IGAD Conflict Early Warning and Response Mechanism  
+## ICG International Crisis Group  
+## ICAP IGAD Climate Prediction and Applications Center  
+## ICPALD IGAD Centre for Pastoral and Livestock Development  
+## IDDRSI IGAD’s Drought Disaster Resilience and Sustainability Initiative  
+## IES IGAD Executive Secretariat  
+## IFAD International Fund for Agricultural Development  
+## IFI International Financial Institutions  
+## IFRAH IGAD Food Security, Nutrition and Resilience Analysis Hub  
+## IGAD Intergovernmental Authority on Development  
+## IGADD Intergovernmental Authority on Drought and Development  
+## IGREENFIN Inclusive Green Financing Initiative  
+## ILRI the International Livestock Research Institute  
+## IMF International Monetary Fund  
+## IPC Integrated Food Security Phase Classification  
+## IPCC Intergovernmental Panel on Climate Change  
+## IPCU IDDRSI Platform Coordinating Unit  
+## IPMT Integrated Pest Management Technology  
+## IPRs Independent Procurement Reviews  
+## IRAPP IGAD Regional Aids Programme  
+## ISFM Integrated Soil Fertility Management  
+## ISSP IGAD Security Sector Programme  
+## LoC Line of Credit  
+## LPFIs Local Private Financial Institutions  
+## LUCF Land-Use Change and Forestry  
+## MAD Meteorological and Agricultural Drought  
+## MDAs Ministries, Departments and Agencies  
+## MENA Middle East and North Africa  
+## MFI Microfinance institution  
+## MIRR Modified Internal Rate of Return  
+## MoAF Ministry of Agriculture and Forestry  
+## MoLFR Ministry of Livestock, Forestry and Range  
+## MoA Ministry of Agriculture  
+## MoAWFL Ministry of Agriculture, Water, Fisheries and Livestock  
+## MoAWFLC Ministry of Agriculture, Water, Fisheries and Livestock, and Cooperatives  
+## MoCEF Ministry of Commerce Economics and Finance  
+## MoFE Ministry of Finance, Ethiopia  
+## MoFP Ministry of Finance and Planning, South Sudan  
+## MoFK Ministry of Finance, Kenya  
+## MoFS Ministry of Finance, Somalia  
+## MoIL Ministry of Irrigation and Lowlands  
+## MoU Memorandums of Understanding
+
+
+---
+*Chunk pages 7–7*
+*Token usage:* input=551 (sys=94, user=457), max_out=1024, ctx=8192
+---
+
+# [Page 1]
+
+## GREEN CLIMATE FUND FUNDING PROPOSAL V.2.0 | PAGE 4 OF 15
+
+### MRA Mitigation Results Area  
+### MSME Micro, Small & Medium Enterprises  
+### MtCO2e Metric tons of carbon dioxide equivalent  
+### NAPA National Adaptation Programmes of Action  
+### NAPs National Adaptation Plans  
+### NDAs National Designated Authorities  
+### NDCs Nationally Determined Contributions  
+### ND-GAIN Notre Dame Global Adaptation Initiative  
+### NDVI Normalized Difference Vegetation Index  
+### NGOs Non-governmental Organizations  
+### NMA National Meteorological Agency  
+### NMS National Meteorological Services  
+### NPCU National Program Coordination Unit  
+### NTF Nigeria Trust Fund  
+### NTEP National Treasury and Economic Planning  
+### OECD Organization for Economic Cooperation and Development  
+### PARs Project Appraisal Reports  
+### PCU Platform Coordinating Unit  
+### PDAP Procurement Development Action Plan  
+### PEAPA Programme Executing Agency Procurement Assessment  
+### PEPs Politically Exposed Persons  
+### PFIs Public Financial Institutions  
+### PIA Priority Intervention Areas  
+### PIUs Project Implementing Units  
+### PMUs Project Management Units  
+### PPP Private-Public Partnerships  
+### PPM Participatory Pasture Management  
+### PTCs Pastoralist Training Centers  
+### RCP Representative Concentration Pathway  
+### RETs Renewable energy technologies  
+### RMCs. Regional Member Countries  
+### RPSC Regional Program Steering Committee  
+### SACCOs Savings and Credit Cooperative Organizations  
+### SBDs Standard Bidding Documents   
+### SC Sub-Component  
+### SME Small and Medium-sized Enterprise  
+### SMI Small and Medium-sized Industry  
+### SPEI Standardized Precipitation Evapotranspiration Index  
+### SPI Standardized Precipitation Index      
+### TAAT Technologies for African Agricultural Transformation Program  
+### TADs Transboundary Animal Diseases  
+### TFRA Task Force on Rural Africa  
+### ToC Theory of Change  
+### TOT Training-of-Trainers  
+### UA Units of Account  
+### UBA United Bank for Africa  
+### UNDP United Nations Development Programme  
+### UNHCR United Nations High Commissioner for Refugees  
+### USSD Unstructured Supplementary Service Data  
+### VHI Vegetation Health Index
+
+
+---
+*Chunk pages 8–8*
+*Token usage:* input=219 (sys=94, user=125), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.2.0 | PAGE 5 OF 15
+
+## WABEs Women in Agribusiness Enterprises  
+## WASH Water Sanitation and Hygiene  
+## WFP World Food Programme  
+## WHO World Health Organization  
+## WMO World Meteorological Organization   
+## WOP Without Project  
+## WP With Project  
+## WSDI Warm Spell Duration  
+## YABEs Youths in Agribusiness Enterprises  
+
+--- 
+
+*Note: The text appears to be a list of abbreviations or acronyms related to various organizations and projects, possibly for a funding proposal or project documentation. No further content is provided in this extract.*
+
+
+---
+*Chunk pages 9–9*
+*Token usage:* input=886 (sys=94, user=792), max_out=1024, ctx=8192
+---
+
+# A. PROJECT/PROGRAMME SUMMARY  
+## A.1. Project or programme  
+Programme  
+
+## A.2. Public or private sector  
+Public  
+
+## A.3. Request for Proposals (RFP)  
+Not applicable  
+
+## A.4. Result area(s)  
+The applicable GCF result area(s) that the overall proposed project/programme targets below.  
+
+| GCF contribution | Co-financers’ contribution | Mitigation total | 18% | 11% |
+|------------------|----------------------------|------------------|-----|-----|
+| Energy generation and access | 7% | 5% | ☒ |  |
+| Low-emission transport |  |  | ☐ |  |
+| Buildings, cities, industries and appliances |  |  | ☐ |  |
+| Forestry and land use | 11% | 6% | ☒ |  |
+| Adaptation total | 82% | 89% | ☒ |  |
+| Most vulnerable people and communities | 34.4 % | 25.4% | ☒ |  |
+| Health and well-being, and food and water security | 32.0% | 58.5% | ☐ |  |
+| Infrastructure and built environment |  |  | ☐ |  |
+| Ecosystems and ecosystem services | 15.6% | 5.1% | ☒ |  |
+
+## A.5. Expected mitigation outcome  
+(Core indicator 1: GHG emissions reduced, avoided or removed / sequestered)  
+14.1 MtCO2eq  
+
+## A.6. Expected adaptation outcome  
+(Core indicator 2: direct and indirect beneficiaries reached)  
+Direct and indirect beneficiaries ~4.68 million direct beneficiaries (ADF 1.859,451.0 + GCF 2,835,280.0 million) at least 50% women  
+~15.55 million indirect beneficiaries (ADF 10,198,282 + GCF 5,350,100 million) at least 50% women  
+1.9% of total population  
+6.4% of total population  
+
+## A.7. Total financing (GCF + co-finance)  
+USD 335,30 million (GCF 151.00 million + ADF & Others USD 184,30 million)  
+
+## A.9. Project size  
+Large (Over USD 250 million)  
+
+## A.8. Total GCF funding requested  
+USD151.0 million  
+
+## A.10. Financial instrument(s) requested for the GCF funding  
+- ☒ Grant USD 90.70 Million  
+- ☒ Loan USD 60.30 Million  
+- ☐ Guarantee Enter number  
+- ☐ Equity Enter number  
+- ☐ Results-based payment Enter number  
+
+## A.11. Implementation period  
+7(84) years(months)  
+
+## A.12. Total lifespan  
+25 (300) years(months)  
+
+## A.13. Expected date of AE internal approval  
+9/30/2024  
+
+## A.14. ESS category  
+Refer to the AE’s safeguard policy and GCF ESS Standards to assess your FP category.  
+
+# B  
+## A.15. Has this FP been submitted as a CN before?  
+Yes ☒    No ☐  
+
+## A.16. Has Readiness or PPF support been used to prepare this FP?  
+Yes ☐    No ☒  
+
+## A.17. Is this FP included in the entity work programme?  
+Yes ☒    No ☐  
+
+## A.18. Is this FP included in the country programme?  
+Yes ☒    No ☐
+
+
+---
+*Chunk pages 10–10*
+*Token usage:* input=1108 (sys=94, user=1014), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 2
+
+## A.19. Complementarity and coherence
+
+Does the project/programme complement other climate finance funding (e.g., GEF, AF, CIF, etc.)? If yes, please elaborate in section B.1.
+
+- Yes ☐  
+- No ☒  
+
+## A.20. Executing Entity information
+
+- The Government of Djibouti, acting through its Ministry of Commerce, Economy and Finance (MoCEF) and its Ministry of Agriculture, Water, Fishery and Livestock (MoAWFL);
+- The Government of Ethiopia, acting through the Ministry of Finance of Ethiopia (MoFE) and the Ministry of Agriculture (MoA);
+- The Government of Kenya, acting through the National Treasury and Economic Planning (NTEP) and the Ministry of Agriculture, Water, Fishery, Livestock and Cooperatives (MoAWFLC);
+- The Government of Somalia, acting through its Ministry of Finance, Somalia (MOFS) and Ministry of Livestock, Forestry and Range (MoLFR);
+- The Government of South Sudan, through its Ministry of Finance and Planning, South Sudan (MoFP) and Ministry of Agriculture and Forestry (MoAF);
+- The Intergovernmental Authority on Development (IGAD)
+
+## A.21. Executive summary (max. 750 words, approximately 1.5 pages)
+
+The HoA region faces increased vulnerability due to highly variable rainfall patterns leading to extreme weather events such as floods and droughts, resulting in humanitarian emergencies, food insecurity and infrastructure damage. Therefore, the proposed GCF-AfDB programme entitled "Building Climate Resilience for Food and Livelihoods in the Horn of Africa (BREFOL)" aims to address the pressing issue of climate change and variability in the Horn of Africa (HoA) region, specifically targeting Djibouti, Ethiopia, Kenya, Somalia and South Sudan in addition to the IGAD region. The specific objective of the programme is to reduce the vulnerability and increase the resilience of agro-pastoral and pastoral communities to climate-induced food insecurity and to reduce greenhouse gas (GHG) emissions in the region. This will be achieved by providing each beneficiary community with a package of resilience solutions, including:
+
+1. Infrastructure for water harvesting and agro-pastoral development,
+2. Support for sustainable land management development,
+3. Access to innovative climate-smart technologies and best practices,
+4. Access to renewable energy,
+5. Capacity building for cooperatives and agribusiness Micro, Small and Medium Enterprises (MSMEs) on entrepreneurship,
+6. Access to credit, and
+7. Access to climate services, early warning and index insurance.
+
+AfDB financing will focus on providing:
+
+1. Agro-pastoral production infrastructure,
+2. Support for sustainable land management,
+3. Access to innovation,
+4. Capacity building for cooperatives, and
+5. Infrastructure to generate climate information.
+
+GCF funding will complement the required resilience package by providing climate finance and promoting low-carbon technologies to enable these communities to be better equipped and prepared to cope with climate and other environmental hazards. With an estimated budget of USD 335.29 million, the programme aims to build resilience to the impacts of climate change by integrating climate change considerations into agricultural practices.
+
+Key constraints to climate adaptation that the programme seeks to overcome include limited access to concessional finance, political instability, weak governance, infrastructure gaps and limited access to climate information. The outputs of the programme are expected to lead to three main outcomes:
+
+1. Increased adoption of climate-resilient solutions,
+2. Enhanced carbon sequestration and reduced greenhouse gas emissions of agropastoral value chain (AVC), and
+3. Strengthened adaptive capacity of vulnerable communities.
+
+Additionally, the program aims to bring about co-benefits such as improved livelihoods opportunities and ecosystem services in line with regional strategies and national commitments. The programme will be implemented by host countries' Ministries of Agriculture, with regional coordination through the Intergovernmental Authority on Development (IGAD) and its subsidiary bodies.
+
+---
+
+1 Co-financer’s contribution means the financial resources required, whether Public Finance or Private Finance, in addition to the GCF contribution (i.e., GCF financial resources requested by the Accredited Entity) to implement the project or programme described in the funding proposal.  
+2 See Annex 23 for computations  
+3 Refer to the Policy of Co-financing of the GCF.
+
+
+---
+*Chunk pages 11–11*
+*Token usage:* input=1050 (sys=94, user=956), max_out=1024, ctx=8192
+---
+
+# C. GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 3
+
+## B. PROJECT/PROGRAMME INFORMATION  
+### B.1. Climate context (max. 1000 words, approximately 2 pages)  
+
+1. The Horn of Africa (HoA) is one of the most food insecure regions in the world. The eight countries in the HoA - including Djibouti, Ethiopia, Eritrea, Kenya, Somalia, Sudan, South Sudan and Uganda (Figure B.1.1) - have a combined population of about 250 million people, of whom 160 million (or about 64 per cent) live in areas where food is extremely
+
+2. In addition, about 80% of the region is classified as arid and semi-arid land (ASAL), with about 40% of the total land area classified as ecologically low productive land due to poor climatic conditions coupled with severe environmental degradation resulting from both natural conditions and human activities. Since the 1970s, several of these countries have been threatened by famine at least once every decade (a frequency that has recently increased to once every three to five years). In Somalia, for example, the Famine Early Warning Systems Network (FEWS NET) predicts that the total number of people experiencing crisis - IPC 36 or higher levels of acute food insecurity will increase significantly to more than 1.6 million. These projections are based on expected desert locust crop and pasture losses, the impact of the coronavirus (COVID-19) pandemic on domestic market supply chains and household food and income sources, increasing seasonal climate extremes, and the reduced ability of poor households to cope with shocks and agricultural losses. Reports from the Food Security and Nutrition Working Group (FSNWG) indicate that between 18.6 and 21.1 million people in Ethiopia, Kenya and Somalia are expected to experience crisis -IPC 3 or worse levels of acute food insecurity due to drought. The number of people in need of emergency food assistance to meet their basic needs is expected to rise to as many as 26 million people in the three countries by February 2023, due to consecutive seasons of poor rainfall in 2022 and 2023.
+
+Figure B.1.1: Map of the Horn of Africa showing station points used to plot the mean annual cycles of rainfall and temperature and elevation in meters above sea level.
+
+3. Similarly, in Djibouti, an estimated 60,000 Djiboutians and refugees in the country are at Crisis -IPC 3 or worse and in urgent need of food assistance. The situation is not much different in Ethiopia, where an estimated 8.1 million people are currently in Stressed or Crisis-IPC 2 and IPC 3 respectively. This has been attributed to localised flooding, conflict, insecurity, poor macroeconomic factors, desert locust infestation and the ongoing negative impact of past poor harvests. In South Sudan, an estimated 6 million people - about 51 percent of South Sudan's total population - could face crisis (IPC 3) or worse levels of acute food insecurity at the peak of the lean season from May to June, requiring urgent food
+
+--- 
+
+**Note:** The text appears to be incomplete or truncated. The last sentence ends mid-sentences and does not provide a complete conclusion.
+
+
+---
+*Chunk pages 12–12*
+*Token usage:* input=1259 (sys=94, user=1165), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 4
+
+## References
+
+8 USAID (2020). Food Assistance Fact Sheet South Sudan  
+9 IPCC (2018). Summary for Policy Makers (Draft).  
+10 ICPAC (2018). Greater Horn of Africa Climate and Food Security Atlas. IGAD.  
+11 University of Notre Dame (2020). Notre Dame Global Adaptation Initiative. URL: https://gain.nd.edu/our-work/country-index/  
+12 WMO (2020) State of the Climate in Africa  
+https://reliefweb.int/sites/reliefweb.int/files/resources/1275_WMO_State_of_the_Climate_in_Africa_2020_en.pdf  
+
+## Climate Vulnerabilities, Impacts, and Adaptation Options
+
+### Climate Vulnerabilities:
+
+5. The historical seasonal cycle of precipitation and temperature (mean, minimum and maximum) for selected stations in Ethiopia (Bole), Sudan (El Nahud), South Sudan (Wau), Kenya (Dagoretti), Somalia (Mogadishu), Djibouti (Djibouti), Uganda (Kabale) and Eritrea (Asmara) for the period 1981-201913 is presented in Figure B.1.2 below. As observed (Figure B.1.2), stations across the HoA exhibit different characteristics depending on their geographical location. Some stations show unimodal precipitation seasons, while others show bimodal seasons. This corresponds to single temperature peaks at some stations and double peaks at others. For example, the observed rainfall at Bole is unimodal with a maximum monthly rainfall peak of about 264 mm/month in August. Double temperature peaks are also observed at the station between the seasons of March-May and September-November. Temperatures vary from about 7°C (min) to 26.3°C (max) at the station. En Nahud in the southern part of Sudan also shows a similar pattern of unimodal rainfall, but with distinct double temperature peaks in May (39oC) and October (37oC). The observed maximum mean monthly rainfall at this station is about 120 mm. Wau in Southern Sudan experiences an early onset of rainfall compared to the stations in Sudan. Although the temperature at Wau peaks in the same month as El Nahud, the magnitude is lower, and the mean monthly rainfall is higher (about 193 mm/month). Both Dagoretti in Kenya and
+
+--- END EXTRACTED TEXT ---
+
+
+---
+*Chunk pages 13–13*
+*Token usage:* input=543 (sys=94, user=449), max_out=1024, ctx=8192
+---
+
+# 14 Greater Horn of Africa Climate Risk and Food Security Atlas
+
+Mogadishu in Somalia experience bimodal rainy seasons with different first peaks in April and May respectively, but the second peak is observed in November. Both stations experience two temperature maxima. Djibouti experiences a year-round wet season with a single temperature maximum in July, although the magnitude of the mean monthly rainfall is lower (i.e. less than 35 mm/month). This can be explained by the influence of a precipitation area over the western equatorial Indian Ocean, which affects the distribution of rainfall along the HoA coast¹⁴.
+
+Perennial rainfall is also observed in Kabale, Uganda, with bimodal rainfall seasons in MAM (March - April - May) and SON (September - November), while Asmara, Eritrea, experiences unimodal rainfall peaking in July.
+
+## Figure B.1.2: Monthly Climatology of precipitation, mean, minimum and maximum temperature for El Nahud in Sudan, Bole in Ethiopia, Wau in South Sudan, Dagoretti in Kenya, Somalia, Djibouti city in Djibouti reference to 1981 -2019. The analysis is done based on observed station data.
+
+## 6. Observed trends in precipitation, minimum and maximum temperature for the period 1976 -2005 are shown in Figure B.1.3a. As observed, trends in precipitation range from -9 to 9 mm/month/decade over the entire HoA. Positive trends are observed over most of southern Sudan, southern Sudan, northwestern Uganda, northern Ethiopia, all of Djibouti and parts of Somalia. These trends are statistically significant only in the northeastern axis of Ethiopia. On the other hand, negative trends are
+
+--- 
+
+**Note:** The text appears to be incomplete or cut off at this point. The last sentence ends abruptly without completing the discussion on negative trends.
+
+
+---
+*Chunk pages 14–14*
+*Token usage:* input=753 (sys=94, user=659), max_out=1024, ctx=8192
+---
+
+# [Page 1]
+## GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 6
+
+### 15 Kew, S. F., Philip, S. Y., Hauser, M., Hobbins, M., Wanders, N., van Oldenborgh, G. J., van der Wiel, K., Veldkamp, T. I.
+E., Kimutai, J., Funk, C., and Otto, F. E. L.: Impact of precipitation and increasing temperatures on drought trends in eastern  
+Africa, Earth Syst. Dynam., 12, 17–35, https://doi.org/10.5194/esd-12-17-2021, 2021.
+
+observed in most parts of Kenya, especially in the central and southern parts of the country. Declining  
+trends are also observed in the southern parts of Ethiopia and the northern part of Eritrea. Some parts  
+of Somalia and eastern Uganda have also experienced a decrease in rainfall. However, the observed  
+negative trends are not statistically significant. With regard to temperature, a general nighttime  
+warming trend is observed over the entire HoA, except for a few areas over the northeastern parts of  
+Ethiopia, where a decreasing trend of about -0.15 oC/decade was observed. The observed temperature  
+trends are statistically significant over a larger spatial extent of the HoA. The observed warming trend  
+in maximum temperature is relatively large in the central region of HoA and in the northwestern flank  
+for minimum temperature. The observed precipitation deficits in some parts of the region and the large-  
+scale increases in temperature are factors that contribute to increased evaporation, which in turn can  
+lead to increased water demand and thus intensified drought impacts15.
+
+### Figure B.1.3a: Observed trends in precipitation, minimum and maximum temperature for the  
+period 1976-2005. Stippling denotes areas where trends are statistically significant at 0.05  
+level  
+
+### 7. 7. Analysis of area -averaged rainfall and temperature over the region based on CRU data for the  
+period 1900-2020 is also shown in Figure B.1.3b. The results show that the region has experienced  
+high inter-annual rainfall variability with no clear trend of increasing or decreasing rainfall. The period  
+from the 1970s to the late 2000s was characterised by a decreasing rainfall trend, while the last decade  
+(2011-2020) was characterised by a series of wet years. For temperature, however, there has been a  
+consistent regional warming trend over the last forty years (1981 to 2020), and this is one of the key  
+indicators of climate change in the region. Inter-annual variability in rainfall, intra-seasonal changes in  
+rainfall and increases in temperature are threatening crop productivity, with farmers experiencing  
+declining yields and some areas becoming less suitable for the production of major crops.
+
+
+---
+*Chunk pages 15–15*
+*Token usage:* input=766 (sys=94, user=672), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 7
+
+## 16 The assessment of future climate change in the GHA countries are based on projections produced by the Coupled Model Inter-comparison Programs (CMIPs), overseen by the World Climate Research Program. Data presented is CMIP6, derived from the Sixth phase of the CMIPs. The CMIPs form the data foundation of the IPCC Assessment Reports. CMIP6 supports the IPCC's Sixth Assessment Report. Projected data is presented at a 1.0º x 1.0º (100km x 100km) resolution.
+
+### Figure B.1.3b: Anomalies of annual total rainfall (top) and temperature (bottom) （°C) for the IGAD region from CRU data for the period from 1900 to 2020 relative to 1961 to 1990 average. Blue bars indicate cooler-than-average years; red bars show warmer-than-average years.
+
+## 8.8 Climate projections for the period 2021 -2050 show a general increase in annual mean temperatures under the RCP4.5 (medium-low) and RCP8.5 (high) emission scenarios. Under the medium-low emissions scenario, the annual mean near-surface temperature is projected to increase by more than 1oC and 1.6oC, respectively, in most countries of the HoA region (Figure B.1.4a). The difference between the projected period (2021 -2050) and the baseline period (1976 -2005) is statistically significant at the 0.05 level over some areas in the central and most of the southern parts of the region. Warming under RCP8.5 is projected to be high, reaching up to 2.4oC, as shown in Figure B.1.4. More intense warming is projected to occur during the March -April-May (MAM) season. The MAM season is important for most of the region, especially in sectors sensitive to rainfall variability. Therefore, increased temperature and precipitation variability during this season can negatively affect food security and key production sectors due to water scarcity and heat stress.
+
+### Figure B.1.4a: Projected change in mean temperature in the Horn of Africa for the period 2021-2050 under RCP 4.5 and RCP 8.5 emission scenarios. The change is computed relative to 1976 -2005 base period. Stippling denotes areas where differences are statistically significant at 0.05 level.
+
+## 9. Projected changes in the spatial distribution of precipitation under the RCP4.5 scenario indicate that widespread wet conditions are likely over the southern part of the region. On the other hand, precipitation deficits are projected under RCP4.5 over the whole of Sudan, Eritrea, central and northern
+
+---
+
+
+---
+*Chunk pages 16–16*
+*Token usage:* input=783 (sys=94, user=689), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 8
+
+## 17 Ibid.
+
+parts of southern Sudan, northern and western Ethiopia and southern Uganda. Other parts, including all of Somalia, Djibouti, south-eastern Ethiopia, northern Uganda and Kenya, are projected to receive more precipitation under the same emissions scenario. The increase in precipitation is only significant in southern Kenya and a small part of Uganda. Under the RCP8.5 scenario, precipitation deficits are projected to increase in parts of the region. The spatial extent of the deficit extends further into the south of the region and is statistically significant mainly around the central area of the HoA. It is expected that regions with more precipitation are likely to experience an increase in the frequency of heavy rainfall and flood events, while those with pr ojected deficits are likely to experience intense droughts in the HoA region. Flood events pose major risks to the populations living in these areas and often result in negative impacts such as human displacement, deaths, destruction and/or loss of property, damage to crops and arable land, as well as loss of productive assets such as livestock due to deaths17. The Greater Horn of Africa Climate Risk and Food Security Atlas shows that since the 1990s, the GHA region has experienced a number of flood events with varying impacts. The number of incidents varies across the region, with Ethiopia having the highest number of incidents (20), followed by Somalia, Sudan and Tanzania (18). Fewer people were affected in Djibouti than in the other countries. The highest number of people affected by a single flood event was in Somalia, followed by Sudan, Kenya and Uganda. T he average number is highest in Sudan and South Sudan. These conditions are expected to worsen under wetter climate conditions, as expected under the RCP4.5 scenario. This variability calls for improved monitoring systems to enhance preparedness and planning.
+
+## 10. In addition to projected changes in spatial distribution, time series analyses of annual precipitation and temperature anomalies averaged over the IGAD region based on multi-model ensemble simulations for the two scenarios (RCP4.5 and RCP8.5) have been presented to quantify uncertainties in future projections associated with climate models and scenario (Figure B.1.4b). Under RCP4.5, models project a likelihood of small and consistent temperature increases in future periods. Under this scenario, the region is expected to experience a temperature increase of around 1.5 -3.5oC. Under RCP8.5, higher temperature changes of up to 4 -6oC are projected over the region. The temperature increase under this scenario is faster than under RCP4.5, especially between 2050 and 2100. For precipitation, the models show strong inter-annual variability in the future compared to the historical period. This variability is projected to be higher under RCP8.5 than under RCP4.5, with recurrent wet and dry periods.
+
+--- 
+
+**Note:** The text above appears to be a continuation of a larger document or section, likely from a climate impact assessment report. It discusses projections related to precipitation and temperature changes in the Greater Horn of Africa region under different RCP scenarios (RCP4.5 and RCP8.5). The content includes references to flood events, droughts, and variability in climate models.
+
+
+---
+*Chunk pages 17–17*
+*Token usage:* input=1090 (sys=94, user=996), max_out=1024, ctx=8192
+---
+
+# [Page 1]  
+C  
+GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 9  
+
+18 Sarah Osima et al. (2018). Environ. Res. Lett. 13 065004. https://doi.org/10.1088/1748-9326/aaba1b.  
+19 Netherlands Ministry of Foreign Affairs (2018). Climate Change Profile: Greater Horn of Africa.  
+http://www.government.nl/foreign-policy-evaluations.  
+20 Masilin Gudoshava et al 2020 Environ. Res. Lett. 15 034037. https://doi.org/10.1088/1748-9326/ab6b33.  
+21 https://climateknowledgeportal.worldbank.org/.  
+
+Figure B.1.4b: Time series of annual rainfall (top) and temperature (bottom) anomalies  
+averaged over the IGAD region for the two scenarios (RCP4.5 and RCP8.5) for the period 1951-  
+2100 with respect to 1971-2000 base period based on ensemble of simulations.  
+
+11. Other useful indicators for assessing climate change, impact and associated costs include the World  
+Meteorological Organization (WMO) Expert Team Core Sector Indicators such as Standardised  
+Precipitation Index (SPI), Standardised Precipitation Evapotranspiration Index (SPEI), Warm Season  
+Duration Index (WSDI), Heat Wave Frequency (HWF), Maximum Consecutive Dry Days (CDD),  
+Maximum Consecutive Wet Days (CWD), Normalised Difference Vegetation Index (NDVI) and  
+Meteorological and Agricultural Drought (MAD). The projected change in these indices was calculated  
+for the period 2021-2050 (using scenario modelling) in the future and the reference period (1976-2005)  
+under two representative concentration pathways (i.e. RCP4.5 and 8.5 emission scenarios). These  
+extreme climate indicators are useful for designing sector-specific programmes, especially in regions  
+that are extremely vulnerable to climate change and extreme climate events. Appendix 1.1 (a&b)  
+shows the calculated SPI for the region. Under the RCP4.5 emissions scenario, moderate drought is  
+projected to occur over most of Sudan, Eritrea, northern South Sudan and Ethiopia and southern  
+Uganda, while moderate wetness is projected to occur over all of Somalia, northern Uganda, south -  
+western and eastern Kenya and south-eastern Ethiopia. Under RCP8.5, moderate drought is expected  
+to intensify across the HoA, with parts of Sudan, South Sudan, Ethiopia and Uganda likely to  
+experience severe drought (i.e. SPI < -1.5). Similar but stronger signals are observed for SPEI  
+Appendix 1.1(c&d), where extreme drought (i.e. SPEI < -2) is expected to dominate the northern  
+region of Sudan, although not statistically significant. In general, a statistically significant increase in  
+warm spells is likely to occur across the HoA domain with WSDI, particularly under RCP4.5, where the  
+hotspots (warm spells > 100 days) are in Ethiopia, Kenya and Uganda Appendix 1.1(e&f). The change  
+is expected to intensify under RCP8.5, but at a lower level of significance. The frequency of heatwaves  
+is also projected to increase by 50 days over the entire HoA region under the RCP4.5 and 8.5 emission  
+scenarios Appendix (g&h). Consistent with the literature, days with extreme heat (DHI > 35 oC) are  
+projected to increase over most of the GHA region (Osima et al. 2018; 18 Netherlands Ministry of  
+Foreign Affairs, 2018;19 and Gudoshava et al. 2020 20). It is important to note that while global climate  
+and weather monitoring systems are useful for providing an overview of the general situation, localised  
+information systems are critical for providing information at the local level and are therefore useful for  
+more detailed planning. As such, BREFOL will be more useful if it includes components aimed at  
+generating and disseminating local information.  
+
+12. Similarly, Appendix 1.2 shows that under RCP8.5, CDD (defined as a day without agriculturally  
+significant rainfall with a threshold of 1 mm/ day)21is projected to increase over most
+
+
+---
+*Chunk pages 18–18*
+*Token usage:* input=1293 (sys=94, user=1199), max_out=1024, ctx=8192
+---
+
+# [Page 1]  
+## GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 10  
+
+### 22 ICPAC/WFP (2018). Greater Horn of Africa Climate Risk and Food Security Atlas.  
+http://www.icpac.net/index.php/applications/research-development.html.  
+
+### 23 Both are proxies’ measures used in assessing meteorological and agricultural drought conditions in the literature.  
+
+### 24 https://reliefweb.int/organization/ocha.  
+
+with more pronounced effects in north-eastern Ethiopia; the White Nile region of Sudan; the northern region of South Sudan; the coastal, north-eastern and Rift Valley regions of Kenya; central, western and northern parts of Somalia; and all of Djibouti and Eritrea. However, CDD is projected to decrease in the southern parts of the region under RCP4.5, although the change is not significant. The projected increase in CDD could affect crop growth and development, which in turn could affect food security in the affected regions. This is a clear indication of the need to formulate actionable policies aimed at adapting to drier days in the future.  
+
+In Appendix 1.3, CWD (defined as a day with a rainfall threshold equal to or greater than 1 mm/day) is projected to decrease over most of the region, particularly in southern Sudan, western South Sudan, western Ethiopia, southern Eritrea, Uganda, and northwestern and southeastern Kenya. Some areas, including northern Ethiopia and central parts of southern Sudan, are expected to experience increases in CWD. Again, the projected increase in CWD in certain parts of the region calls for actionable strategies to adapt to or take advantage of localised impacts such as flooding in the region.  
+
+Frequent flooding has had a strong impact on poverty reduction, food security, livelihoods and human capital of several communities in the GHA region, as shown in Appendix 1.4.  
+
+### 13. Appendices 1.5 and 1.6 present the Normalised Difference Vegetation Index (NDVI) and a proxy for MAD. While NDVI measures the presence or absence of live green vegetation and is very important for livestock management in terms of pasture availability in terms of abundance and scarcity, MAD is a proxy measure of meteorological and agricultural drought conditions on a seasonal time scale.  
+
+This new approach, developed in the Atlas, combines the traditional SPI and the Vegetation Health Index (VHI), using a standardised method of layer combination described in detail in the Atlas, to produce a Combined Drought Indicator (CDI) for the region (Appendix 1.5). As can be seen from the NDVI maps, most of the pastoral areas, usually located in the eastern part of the region, tend to have lower vegetation performance compared to the non-pastoral areas of the region. This information is crucial for livestock management, especially in terms of pasture availability in terms of abundance and scarcity.  
+
+Similarly, the CDIs (Appendix 1.6) show that the impact of drought varies across the region, affecting different locations at different times and to different degrees. In particular, the end of the 2008/2009 La Niña events, which led to the 2009 MAM drought conditions that affected almost the entire GHA region, is well represented in the combined map. The extent of the 2010/2011 drought in the GHA is also clearly visible on the CDI map.  
+
+### 14. The aggregated annual drought maps for the region show that drought is an inescapable feature of the GHA region, particularly in the semi-arid areas where an estimated 75 per cent of the labour force is engaged in smallholder rain-fed agriculture, and therefore its impact on crops and human populations can be acute, as illustrated in Appendices 1.7 and 1.8.  
+
+For example, the severe drought of 2010/11 in Kenya, Somalia and south-eastern Ethiopia affected around ten million people, with more than 250,000 deaths in Somalia. Similarly, statistics from the EM DAT global database show that since 1990, Ethiopia, Kenya and Somalia have experienced more droughts than other countries in the region. The highest number (maximum) of people affected in any one episode was in Kenya, with over 20 million people affected, followed by Ethiopia and then Sudan.  
+
+This led to animal deaths and a significant drop in their market prices, with milk production falling significantly for most affected households. Wildlife in these areas has also been severely affected. The food security situation in the region has also deteriorated.  
+
+The increasing trend, especially in late 2015 and 2016, is linked to the El Niño drought that affected parts of the northern sector countries such as Ethiopia, Sudan
+
+
+---
+*Chunk pages 19–19*
+*Token usage:* input=1152 (sys=94, user=1058), max_out=1024, ctx=8192
+---
+
+# C GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 11
+
+## Agriculture and livelihoods
+
+(i.e, changes in soil health/fertility, heat stress on crop and livestock production, scarcity of pasture and water for crop production and livestock rearing due to delayed onset, increased occurrence of pests/pathogens, desert locust infestation, occurrence of tick and skin diseases in camels, cattle, goats and sheep, increase in post-harvest losses and spoilage of animal products, shifts in planting/harvesting seasons with devastating impacts on productivity, etc.), 
+
+## Water resources and energy
+
+Large interannual and interdecadal rainfall variability resulting in increased frequency of floods and droughts affecting water availability for crop and livestock production, reduced surface water quality, increased run-off, erosion and subsequent sedimentation, Reduced quantity and quality of water in shallow wells and springs due to increased run-off and evaporation rates, increased damage to water infrastructure and transport networks, more variable hydrological regime leading to increased frequency of floods, which will complicate future dam management, especially during intense rainfall events, and unreliability of hydropower generation due to more variable river flows;
+
+## Forestry
+
+Increased fire risk: drier conditions will increase fire risk, making forest fires more frequent and intense, leading to degradation, increase in invasive species such as Prosopis juliflora and Acacia drepanolobium in e.g. Afar and Somali regions where they cause significant socio-cultural damage, changes in forest-dependent livelihoods due to changes in forest extent, impacts on species with narrow ecological ranges (e.g. In Uganda, the disappearance of medicinal plant species has been consistently reported, while eucalyptus forests have been attacked by insect pests (tree lice), especially during the prolonged dry season, and increased incidence of pathogenic fungi has been observed to have moved into previously disease-free areas, causing widespread damage to forest plantations;
+
+## Health
+
+Incidence of vector-borne diseases, increased incidence of malaria in highland areas not currently suitable for transmission, and increased Rift Valley fever, more days of the year exceeding critical heat health thresholds (temperatures above 31°C are associated with increased mortality and risk of non-communicable diseases, which disproportionately affect children, the elderly, migrant workers, and the poor), (temperatures above 31°C are associated with increased mortality and risk of non-communicable diseases disproportionately affecting children, the elderly, migrant workers and those working outdoors), changes in the nutritional value of crops associated with lower child nutritional status, increased disease burden in the under-18 population, bacterial growth facilitated by contaminated water sources as a result of flooding, increasing the likely incidence of diarrhoeal and other water-related diseases.
+
+## Table B.1.1: Summary of Climate Hazards, Impacts and likely Adaptation Options for the HoA
+
+| Hazard/ Key Citations | Consulted | Likely Impacts | Potential Adaptation Options |
+|-----------------------|-----------|----------------|------------------------------|
+| Agriculture and Livelihoods | • Rising temperatures especially seasonal mean temperature. • Prolonged dry spells • Rainfall variability • Increased extreme precipitation events | ⚫ Increased water and heat stress for crops and livestock, lowering the productivity of pastoral livelihoods and negatively impacting the production of important crops such as maize, wheat, cotton, and coffee. ⚫ Scarcity of pasture and water for crop production and livestock rearing because of delayed onset | ⚫ Promotion of agroforestry (mixing trees and agricultural crops): provides food security, erosion control (the trees keep the soil together, less will be lost), soil fertility (trees have a fertilizing effect on their environment) and moisture balance as well as an addition source of fuel (wood), all of which are important in climate change adaptation creating a buffer for the local environment when dealing with the changes ⚫ Investing in fodder banks, crop/livestock integration, improvements to grazing corridors, efficient watering technologies, vaccination, pest monitoring and control systems, intensification of cultivated pastures and resilient livestock breeds. ⚫ Promotion of robust policy and technological interventions that enhance the adoption of |
+
+| Key Citations | 1. Richardson, K., Calow, R., Pichon, F., New, |
+|---------------|-----------------------------------------------|
+
+---
+
+
+---
+*Chunk pages 20–20*
+*Token usage:* input=1181 (sys=94, user=1087), max_out=1024, ctx=8192
+---
+
+# Climate risk report for the East Africa region
+
+## References
+
+1. S. and Osborne, R. (2022)  
+   Climate risk report for the East Africa region. Met Office, ODI, FCDO.  
+   https://reliefweb.int/attachments/5821f8e6-c172-4c3e-a6fa-cb91c95707bc/Climate%20risk%20report%20for%20the%20East%20Africa%20region.pdf
+
+2. World Bank Climate Change Knowledge Portal  
+   http://sdweb.worldbank.org/climateportal/countryprofile/home.cfm?  
+   page=country_profile&CCode=KEN&ThisTab=ClimateFuture.
+
+3. Government of Netherlands (2019)  
+   Climate Change Profile: Greater Horn of Africa  
+   https://reliefweb.int/attachments/1eea6572-e1bd-3eef-b9d6-09242b0c9316/Greater%2BHor%2Bof%2BAfrica.pdf
+
+4. IGAD Climate Prediction & Application Centre (ICPAC) / World Food Programme (WFP) Regional Bureau for East and Central Africa, Nairobi  
+   Persistent droughts and overgrazing.
+
+## Climate impacts on agriculture and livestock
+
+- Flooding events from heavy precipitation resulting in livestock deaths and loss of agriculture.
+- Changes in soil health/fertility affecting crops yields and pasture growth for livestock productivity.
+- Land degradation and soil erosion will be exacerbated by more intense rainfall events, posing risks to the natural resource base, agricultural productivity and subsequently food security, particularly in already degraded areas.
+- Cash crops such as tea, coffee and cocoa are impacted as the ability to shift farming to higher (cooler) altitudes is limited.
+- Increases in the occurrence of pests/pathogens – cassava mosaic, leaf rust, coffee rust, berry borer, potato taste defect, brown rot disease etc.
+- Post-harvest losses; spoilage of animal products because of the inability to effectively process agricultural products and safely store seeds, grains and other perishable products.
+- Shifts in timing of planting/harvesting as a result prolonged dry spell.
+- Damage to road network caused by extreme weather events such as flooding, landslide, erosion etc., leading to decreasing access to finance, markets, and extension services.
+
+## Climate-smart agriculture (CSA) practices
+
+- Precision farming and regenerative or conservation agriculture.
+- Adoption of climate adapted seed varieties.
+- Integrated soil fertility management (ISFM) programs.
+- Soil and water conservation techniques etc.
+- Diversification (crops and income), to deal with uncertain weather conditions: timing of the rains, temperatures, hours of sunshine / shade.
+- Use of improved seeds, crop varieties, and livestock breeds and other.
+- Sustainable agricultural practices and technologies such as integrated pest management, integrated soil management, and agricultural system diversification etc.
+- Improvements in supply chains logistics and distribution, appropriate packaging solutions, modern storage facilities, and cold chains including training in post-harvest management practices.
+- Promoting precision farming.
+- Enhancing access to climate information early warning system (CIEWS) and agro-advisory services such as planting time, good farm management practices, irrigation schedules, use of farm manure and choice of inorganic fertilizers, suitable crop types and varieties to be planted, weeding regimes, the available seed suppliers, crop pests and diseases prevention and control measures.
+- Introducing actions that include improved and climate-resilient crop varieties and livestock breeds; innovative adaptation practices and technologies; improving natural resource management (land, water, ecosystems, biodiversity) and use of other production inputs.
+- Promoting access to innovative financing mechanisms such as crop/livestock insurance programs, digital advisory services, and climate finance.
+- Developing entrepreneurship skills and increasing access to finance and markets for the most marginalized groups in the society.
+- Leveraging climate financing products from the private sector to invest in climate resilient livelihood option programs.
+
+
+---
+*Chunk pages 21–21*
+*Token usage:* input=897 (sys=94, user=803), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 13
+
+## Greater Horn of Africa Climate Risk and Food Security Atlas
+
+[Page 1]
+
+- **Water Resource & Energy**
+  - Rising temperatures
+  - Increased frequency of intense precipitation events
+  - Decreased dry season precipitation
+
+### Key Citations
+
+5. Oiro, S. et al.  
+(2020). https://aura.abdn.ac.uk/bitstream/handle/2164/15773/Oiro_et_al_depletion_groundwater_hydrogeology_journal_vor.pdf?sequence=1&isAllowed=y.
+
+6. Arcanjo, M.  
+(2020). http://climate.org/wp-content/uploads/2020/05/Water-Security-in-the-Horn-of-Africa.pdf.
+
+7. SIPRI (2020). https://www.sipri.org/sites/default/files/2020-03/sipripp54_0.pdf.
+
+8. Hirwa, H. (2021). https://doi.org/10
+
+### Impact on Water Resources
+
+- Reduced surface water quality
+- Increased sedimentation and erosion
+- Reduced water quantity and quality in shallow wells and springs due to increased rates of evaporation
+- Increased damage to water infrastructure and transportation networks
+- More variable hydrological regime leading to higher flood frequency that will complicate future dam management especially during intense precipitation
+- Unreliability of hydroelectricity production due to more variable river flows
+
+### Investments in Safe Water and Sanitation (WASH)
+
+- By their nature, risk-reducing since they lessen people's dependence on more climate-vulnerable, poorer quality sources (rivers, streams, ponds etc.), and free up time – particularly for woman and girls – for more productive activities, as well as improving long-term health and nutrition
+- Promoting good watershed management practices that protect water sources from increased drought and water quality risk, while also protecting or rehabilitating landscapes that act as carbon sinks in the natural environment
+- Investing in coastal protection, hydro-agro-meteorological early warning systems, improved water management, and urban planning to reduce the vulnerability of risks posed by flooding caused by intense precipitation
+- Investing in early warning for early action food security Hub to support early detection and diagnosis of emerging food insecurity crises related to water scarcity
+- Development of flood prediction system, avoiding development in flood prone areas and building flood preventing infrastructure (dykes and levees) were needed
+- Investing in projects that increase energy access, including through renewable energy and improved energy efficiency through energy saving education plans
+- Promoting technological improvements, including energy efficiency, battery storage, waste recycling to energy, green hydrogen, nuclear developments, carbon storage, and decarbonization techniques
+
+### Planning and Implementing a Wood-Energy Programme
+
+- Includes legislation for forest management to minimize the cutting of natural forest but could also provide safe
+---
+
+
+---
+*Chunk pages 22–22*
+*Token usage:* input=798 (sys=94, user=704), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 14
+
+## 25 Greater Horn of Africa Climate and Food Security Atlas (2018), https://www.icpac.net/documents/3/17-00072_IGAD_Climate_Risk_and_Food_Security_Atlas.pdf .3390/su131164
+
+### Human Health
+- Rising temperatures, especially daily maximum and minimum
+- Increased frequency of intense precipitation
+- Changing rainfall patterns and rising temperatures
+- Increasing temperature extremes
+- More flood events
+
+### Key Citations
+9. Muga et al., (2021). https://doi.org.1371/journal.pntd.0009166  
+10. Nnko et al., (2021). https ://doi.org/10.1371/journal.pntd.0009081  
+11. Rother, (2020). Rother H.A. (2020) Controlling and preventing climate-sensitive noncommunicable diseases in urban sub-Saharan Africa. Sci Total Environ, 722:137772.
+
+### More days of the year exceeding critical heat-health thresholds; temperatures above 31°C and associated with increased mortality and risks of non-communicable diseases which disproportionately affect children, the elderly, migrant workers, and those working outdoors.
+
+### Impacts on nutritional value of crops which is associated with lower nutritional status for children, increasing the disease burden as the under-18 population is projected to increase considerably.
+
+### More flood events that contaminate water sources and longer stretches of higher temperatures that facilitate bacterial growth increase the likely incidence of diarrheal and other water-related diseases.
+
+### Expanded ranges of disease vectors (e.g., mosquitoes) and increased transmission of infectious diseases such as malaria and Monkeypox virus
+
+### Increased incidence of diarrheal diseases (particularly cholera)
+
+### Priority adaptation measures concerning public health aim for the development of early warning systems, improved water basin management for potable water, urban planning, and environmental management. Additionally, improved training of health workers, better sanitation policies, expanded public education, and greater disease and epidemic monitoring will further reduce the risks to public health.
+
+### Climate Risk and Vulnerability Assessment (CRVA)
+16. This subsection is largely based on the CRVA conducted in the Greater Horn of Africa Climate Risk and Food Security Atlas25. The Hunger and Climate Vulnerability Index (HCVI) was developed in the
+
+---
+
+
+---
+*Chunk pages 23–23*
+*Token usage:* input=859 (sys=94, user=765), max_out=1024, ctx=8192
+---
+
+# [Page 1]
+
+## GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 15
+
+26 IPCC (Intergovernmental Panel on Climate Change). 2012. Special report on managing the risks of extreme events and disasters to advance climate change adaptation. Cambridge, UK: Cambridge University Press.  
+27 https://www.icpac.net/documents/3/17-00072_IGAD_Climate_Risk_and_Food_Security_Atlas.pdf.  
+
+Atlas as a tool for understanding climate risks to food security at lower administrative levels in the HoA. It shows the relative vulnerability of the region's food-insecure population to climate risks at the district level. The HCVI analysis goes beyond the impact of climate on crop yields and provides a multi-dimensional analysis of vulnerability, while highlighting the critical role of adaptive capacity in determining vulnerability. The approach provides an important starting point for monitoring vulnerability, evaluating programme effectiveness and/or examining plausible impacts of climate change. It is based on the Intergovernmental Panel on Climate Change's (IPCC 2013) definition of vulnerability to climate change. That is, the relationship between the degree of climate stress on populations (exposure), the degree of responsiveness to stress (sensitivity), and the ability of populations to adapt to climate change (adaptive capacity).  
+
+The composite index includes socio-economic and environmental indicators that are highly correlated and relevant to food insecurity in general. A total of six indicators were used in the assessment (Table B.1.2). Two for exposure (frequency of floods and droughts), two for sensitivity (forest cover and rainfed agriculture) and two for adaptive capacity (population below poverty line and rural population), as summarised in the table below.
+
+### Table B.1.2: Indicators considered in the Hunger and Climate Vulnerability Index (HCVI) for the HOA
+
+| Component Profile | Indicator |
+|-------------------|-----------|
+| **Exposure** | Climate hazards |
+| | · Frequency of droughts* |
+| | · Frequency of floods* |
+| | · Mean annual temperature* |
+| | · Frequency of Storms |
+| | · Long-term trend in temperature |
+| | · Death toll |
+| | · Mortality per 100,000 inhabitants |
+| | · Economic losses (US $) |
+| | · Losses per GDP (%) |
+| **Sensitivity** | Environment |
+| | · Forest cover* (% of total area) |
+| | Agriculture |
+| | · Rain-fed agriculture* (% of total agriculture) |
+| | · Crop yields (yield per ha – kg/ha) |
+| | · Poverty index |
+| **Adaptive capacity** | Infrastructure |
+| | · Market access* |
+| | · Water access rural population (%) |
+| | · Water access urban population (%) |
+| | · Paved roads (% of all roads) |
+| | · Governance |
+| | Socioeconomic indicators |
+| | · Total population below poverty line* ($ 2 per day PPP) (%) |
+| | · Rural population* (%) |
+| | · Decadal Population growth (%) |
+| | · Vulnerable employment (%) |
+
+Hunger and Climate Vulnerability Index (HCVI) = Exposure X Sensitivity / Adaptive Capacity  
+
+\*Indicators used are those with good correlation (correlation coefficient ≥ 0.3) with Food Security Indicators  
+
+### Figure B.1.5a, b, c and d present the analysis of the HCVI for the HoA considering the three components (adaptive capacity, sensitivity and exposure). Starting with exposure to climate stress, as measured by the frequency of floods and droughts (Figure B.1.5a), the analysis shows that the
+
+---
+
+
+---
+*Chunk pages 24–24*
+*Token usage:* input=735 (sys=94, user=641), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 16
+
+## Figure B.1.5a: Exposure to Climate Stress
+
+In southern Sudan, where high to very high exposure is more pronounced in the western parts of the country, eastern Ethiopia, northern Somalia and high exposure in the south, including Kenya, where the eastern parts of the country suffer from high exposure to frequent floods and droughts. Very high exposure to frequent floods and droughts in Kenya is most pronounced in the south-eastern parts of the country, as shown in Figure B.1.5a.
+
+## Figure B.1.5b: Sensitivity
+
+In terms of sensitivity - measured in terms of forest cover and rainfed agriculture (Figure B.1.5b) - countries with high to very high sensitivity are South Sudan (the entire coastline from north to south), Ethiopia (north-central), northern Somalia and certain parts of western Kenya.
+
+## Figure B.1.5c: Adaptive Capacity
+
+In terms of adaptive capacity - measured by the total population below the poverty line ($2 per day PPP) and the percentage of the population living in rural areas - South Sudan and Ethiopia have high to very high adaptive capacity, as shown in Figure B.1.5c. In contrast, most parts of Kenya and Somalia have the lowest adaptive capacity.
+
+## Figure B.1.5d: Combined Climate and Food Insecurity Analysis (HCVI)
+
+The results of the combined climate and food insecurity analysis (HCVI), which includes the components of exposure (a), sensitivity (b) and adaptive capacity (c), are presented in Figure B.1.5d (HCVI).
+
+For Ethiopia, the results show that part of the western highlands is highly vulnerable compared to the rest of the country. This is due to its heavy reliance on rain-fed production, and therefore rainfall variability has a major impact on production and food security. Other areas of high vulnerability include the northeastern region (parts of Afar and Tigray) and the southeastern pastoral areas.
+
+For Djibouti, taking into account the three components (adaptive capacity, sensitivity and exposure), parts of Obock, Tadjourah, Dikhill and Djibouti city are among the areas with the highest vulnerability to climate shocks and food insecurity.
+
+In Kenya, Figure B.1.5d shows that pastoral areas are more vulnerable compared to the rest of the country, while in Somalia, most parts of the country are highly vulnerable due to the fact that climatic shocks are prominent in most areas. The north is more vulnerable to climatic shocks than the rest of the country and the population has low adaptive capacity.
+
+The results are similar for Southern Sudan, where the HCVI identified many areas of the country as vulnerable due to high levels of food insecurity, underdeveloped agriculture and infrastructure, among other factors. Sensitivity to climate-related risks is high in agricultural production areas in the west and south.
+
+
+---
+*Chunk pages 25–25*
+*Token usage:* input=731 (sys=94, user=637), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 17
+
+## Figure B.1.5. Assessment of climate risk and vulnerability in HoA. Source: ICPAC (2018).
+
+### 21. Green House Gases (GHGs) Emissions Profiles  
+Figure B.1 .6 below illustrates the GHG emissions profile for the five countries in the HoA, showing Ethiopia's emissions at 204.7 MtCO2e, with agriculture as the main contributor (112. 5MtCO2e), followed by land-use change and forestry (32.4MtCO2e), energy (51.01MtCO2e), waste (4.9MtCO2e), industrial processes (3.9MtCO2e) and bunker fuels (2.32MtCO2e). Sudan recorded emissions of 130.64MtCO₂e, led by agriculture (75.6MtCO2e), followed by energy (27.8MtCO2e ), Land-Use Change and Forestry ( LUCF) (21.0MtCO2e), waste (3.75MtCO2e), industrial processes (2.52MtCO₂e), and bunker fuels (0.74MtCO ₂e). Similarly, South Sudan's emissions in 2018 totalled over 68.5MtCO2e, mainly from Agriculture (49.36MtCO2e), LUCF (9.8MtCO2e), Energy (6.7MtCO2e), Waste (2.5MtCO2e), Bunker Fuels (0.19MtCO2e), and Industrial Processes (0.09MtCO2e). In Somalia, emissions in 2018 were mainly from agriculture and LUCF (39.51MtCO₂e), followed by waste and energy (5.53MtCO ₂e), with smaller contributions from industrial processes (0.28MtCO ₂e) and bunker fuels (0.24MtCO ₂e). In Kenya, emissions from different sectors were 47.7 MtCO ₂e, -7.6 MtCO₂e, 28.5 MtCO₂e, 4.9 MtCO₂e, 3.9 MtCO₂e and 2.3 MtCO₂e, while in Djibouti the contributions were 0. 71MtCO ₂e, 0.0MtCO ₂e, 0.38MtCO ₂e, 0.20MtCO ₂e, 0.19MtCO ₂e and 0.34MtCO ₂e respectively, totalling 1.4MtCO₂e for 2019.
+
+--- 
+
+*Note: Page numbers are preserved as per instructions.*
+
+
+---
+*Chunk pages 26–26*
+*Token usage:* input=692 (sys=94, user=598), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 18
+
+## 22. At current emission levels, these countries plan to keep their respective emissions close to the world average of 7.58 MtCO2e by 2035 or neutral by 2050. This will be achieved by reducing their respective carbon footprints and by pursuing green growth path ways in all key economic sectors, particularly agriculture, forestry and other land use (AFOLU), including energy. By supporting activities to increase tree cover, BREFOL will help to improve GHG sequestration and thereby reduce emissions. BREFOL will support agro-forestry initiatives that lead to improved soil health, increased agricultural production while increasing tree cover, and increased household income from wood and non-wood farm products, thereby increasing household resilience.
+
+## Figure B.1.6: GHGs emissions profiles for these five target countries and Sudan in the HoA as of 2019, for which the latest historical GHG emissions statistics are available at the NDC Partnership.
+
+## 23. Adaptation/mitigation needs: The proposed programme, Building Climate Resilience for Food and Livelihoods in the Horn of Africa (BREFOL), is highly consistent with the countries' legal frameworks or action plans on climate change (Table B.1.3). In particular, the focus on natural resource and environmental management; market access, trade and finance; improved production and livelihood diversification; disaster risk management; research, knowledge management and technology transfer; coordination, institutional strengthening and partnerships; and human capital, gender and social development is consistent with the IGAD Drought Disaster Resilience and Sustainability Initiative (IDDRSI) strategy and the Horn of Africa Regional Resilience Framework 3.0 (Table B.1.4). In addition, the programme is part of the AfDB and the Global Centre on Adaptation's Africa Adaptation Acceleration Programme, which aims to catalyse climate-resilient actions through a triple-win approach to address the impacts of COVID-19, climate change and the economy. In addition, the programme is aligned with the AfDB's Ten-Year Strategy (2013-2022) and supports its twin objectives (inclusive growth and transition to green growth) and its three special focus areas (agriculture and food security, fragile states, and gender). The programme will also contribute to achieving three of the AfDB's High 5 development priorities: Feeding Africa, Integrating Africa and Improving the Quality of Life for African People.
+
+
+---
+*Chunk pages 27–27*
+*Token usage:* input=736 (sys=94, user=642), max_out=1024, ctx=8192
+---
+
+# Table B.1.3: Country’s Regulatory Framework/Action Plans on Climate Change
+
+## Djibouti
+
+- **Green Economy Strategy**
+- **National Strategy on Climate Change**
+- **First NDC (2016)**
+  - Reduce vulnerability to droughts
+  - Protect against rising average sea levels
+  - Develop access to water
+  - Protect biodiversity
+  - Strengthen the resilience of rural populations
+
+### Adaptation/Mitigation Commitments
+
+- **Targeted Sectors:**
+  - Low energy lightbulbs
+  - Administrative buildings thermal rehabilitation
+  - Energy audit for buildings
+  - Installation of 60 MW onshore wind turbines in Goubet by 2025
+  - Three (250MW) solar power plants by 2025
+  - 1000 ha reforestation
+  - Efficient cook stoves
+  - Efficient appliances for households operated using renewable energy resources and products
+  - Energy from waste – Biodigester/Biogas Systems
+
+### Means of Implementation
+
+- **Energy & Efficiency**
+- **Mitigation & Adaptation = $6.413B**
+
+---
+
+## Ethiopia
+
+- **Climate Resilient Green Economy Strategy**
+- **Programme of Adaptation to Climate Change**
+- **National Strategy for CC adaptation and mitigation**
+- **First NDC (2017) and Updated NDC 2021**
+  - Ethiopia’s Long-Term Low Emission and Climate Resilient Development Strategy (2020-2050)
+
+### Adaptation/Mitigation Commitments
+
+- **Sustainable agricultural land management practices**
+- **Reduction in preharvest losses**
+- **Carbon sequestration in grasslands**
+- **Lowlands Livelihood Resilience Project**
+  - Fuel switch and biomass efficiency (improved cookstoves)
+  - Reforestation
+  - Landscape restoration
+  - Enhancement of livestock productivity
+  - Agricultural mechanization
+  - Increase in the share of poultry
+  - Oilseed feeding to reduce emissions from enteric fermentation
+
+### Means of Implementation
+
+- **Energy efficiency**
+- **Transport electrification**
+- **Public transport expansion**
+- **Industry fuel switch**
+- **Use of organic fertilizer and crop residues**
+- **Clinker substitution in cement**
+- **Reduction of waste per capita**
+- **Waste separation and composting**
+- **Wastewater management**
+
+### Additional Commitments
+
+- **Reduce preharvest losses in crop production**
+- **Increase climate resilient agricultural practices**
+- **Increase irrigation schemes**
+- **AFOLU & Livestock**
+- **Energy & Efficiency**
+- **IPPU**
+- **Infrastructure**
+- **Managed Soils**
+- **Waste Management**
+
+### Mitigation = $281.3B; Adaptation = $$40.5B
+
+
+---
+*Chunk pages 28–28*
+*Token usage:* input=704 (sys=94, user=610), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 20
+
+## Kenya Vision 2030
+
+- Kenya National Adaptation Plan (NAP) 2015-2030
+- National Climate Change Response Strategy
+- National Policy on Climate Finance
+- First NDC and Updated NDC (2020):
+  - Presidential directive to increase tree/forest cover to 15% by planting 15 billion trees in the next 5 years.
+- Enhancing the adaptative capacity and climate resilience in all sectors and at the national and county levels
+- Innovative livelihood strategies to enhance local communities' resilience
+
+## Adaptation Measures
+
+- Enhancing the adaptative capacity and climate resilience in all sectors and at the national and county levels
+- Build the capacity build of the private sector (formal and informal) so as to enhance the resilience of their investments e.g., through identification of new products and services that are more resilient to climate change impacts.
+- Develop fiscal incentive measures to encourage businesses to undertake investment in adaptation and resilience building measures.
+- Implement long term private sector investment in adaptation and resilience building measures.
+
+## Climate Resilient Fish Species
+
+- Develop and implement a pilot project on climate resilient fish species and the related value chain.
+- Upscale sustainable aquaculture initiatives
+- Strengthen land use management systems including rangeland management, fodder banks and strategic reserves.
+
+## Livestock and Feed Development
+
+- Develop new feeds.
+- Promote livelihood diversification and market access (camels, indigenous poultry, beekeeping, rabbits, emerging livestock - quails, guinea fowls, ostriches etc.).
+- Establish price stabilization schemes and strategic livestock-based food reserves.
+- Restore degraded grazing lands.
+
+## Renewable Energy and Resource Efficiency
+
+- Innovative livelihood strategies to enhance local communities' resilience.
+- Renewable energy expansion
+- Enhancement of energy and resource efficiency across all sectors
+- Tree cover of at least 10% of the land area
+- Land degradation neutrality
+- Scaling nature-based solutions for mitigation
+- Clean cookstoves  
+- Low-carbon and efficient transport
+- Climate Smart Agriculture
+- Sustainable waste management
+- Coastal zone management
+- Uptake of climate risk management tools, early warning system
+
+## Mitigation and Adaptation
+
+- AFOLU
+- Renewable Energy & Energy Efficiency
+- Transport
+- Waste management
+- Blue economy
+
+## Funding
+
+- Mitigation: $17.7B
+- Adaptation: $43.9B
+
+
+---
+*Chunk pages 29–29*
+*Token usage:* input=835 (sys=94, user=741), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 21
+
+## Adaptation Technology Updates
+
+- Strengthening tools for monitoring, evaluation and learning tools  
+- Enhancement of blue and ocean economy  
+
+## Somalia
+
+### National Adaptation Programme of Action (NAPA)
+
+- First NDC & Updated NDC (2021)  
+- Solar power lighting  
+- Efficient stoves & kilns for charcoal making  
+- Large scale water capture and storage facilities  
+- Biogas production from biodegradable feedstock  
+- Charcoal production from invasive Prosopis plant & replacement with crop production  
+- Action for E savings (turn off) and recycling  
+- Energy & Efficiency  
+- AFOLU  
+- N/A  
+
+## South Sudan
+
+### National Adaptation Programme of Action (NAPA)
+
+- First NDC and Updated NDC (2021)  
+- Increase the use of clean and carbon-neutral energy  
+- Declare 20% of natural forests as reserve forests to protect it from deforestation  
+- Prioritize the enhancement of climate resilience in the agricultural sector  
+- Promote alternative sources of energy to reduce deforestation and the consequent loss of livelihood options  
+- Introduce fire management plans to prevent the spread of wildfires during periods of drought  
+- Establish emissions standards for vehicles  
+- Energy generation and energy end use  
+- Transport  
+- Land Use and Land Use Change  
+
+## Mitigation & Adaptation = $50B
+
+Source: Adopted from Africa NDC Hub. Available at: [https://africandchub.org/](https://africandchub.org/)
+
+---
+
+## Table B.1.4: Alignment of BREFOL to IDDRSI Strategy and the HoRN Regional Resilience Framework 3.0
+
+| IDDRSI Priority Intervention Areas (PIAs) | HoA Resilience 3.0 Framework | Intermediate Results (IRs) | BREFOL Intervention Areas - Sub-components (SC) |
+|------------------------------------------|------------------------------|----------------------------|------------------------------------------------|
+| A. Natural Resources and Environment Management | 1.1. Water resources development and management<br>1.2. Rangeland management and pasture development<br>1.3. Securing equitable access to natural resources<br>1.4. Environmental management including biodiversity<br>1.5. Development of renewable energy | IR 2.1. Strengthened collaboration, learning and adaptation of state, non-state actors, and communities<br>IR 2.3. Strengthened capacity and systems of local, national, and regional institutions | SC 1-1: Developing climate-resilient infrastructure (Water resources, energy, markets, and ICTs etc.)<br>SC 1-2: Supporting the sustainable management of agropastoral land |
+| B. Market Access, Trade and Financial Resources | 2.1. Transport, market, and infrastructure development | IR 1.1. Diversified, sustainable and resilient economic opportunities<br>IR 1.3. Maintaining livelihood opportunities and access to financial services | SC 2-1: Increasing access to digital advisory services and markets |
+
+---
+
+
+---
+*Chunk pages 30–30*
+*Token usage:* input=908 (sys=94, user=814), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 22
+
+## 2.2. Security livestock mobility  
+## 2.3. Access to secure and affordable financial services  
+## 2.4. Strengthening regional and cross-border trade  
+## 2.5. Development and harmonization of financial services in the IGAD region  
+
+### IR 1.4. Increased and secure access to market infrastructure  
+### IR 1.5. Prioritizing private sector-led trade and investment approaches  
+
+### IR 4.2. Improved and sustained health, nutrition, and hygiene practices  
+### IR 4.3. Increased and sustained availability of, access to, and utilization of WASH services  
+
+## SC 2-2: Developing entrepreneurship skills and increasing access to finance  
+## SC 2-3: Increasing access to innovative financing for farmers organizations and MSMEs  
+
+## C. Enhanced Production and Livelihood Diversification  
+
+### 3.1. Livestock production, health, and nutrition  
+### 3.2. Crop production and productivity  
+### 3.3. Fisheries development  
+### 3.4. Income diversification  
+### 3.5. Productive safety net (chronically food insecure)  
+### 3.6. Productive safety net 2 grading from safety net  
+### 3.7. Transboundary Disease and SPS Measures and Standard  
+
+#### IR 1.2. Intensified, sustainable and resilient agricultural and livestock market systems  
+#### IR 1.1. Diversified, sustainable and resilient economic opportunities  
+#### IR 1.2. Intensified, sustainable and resilient agricultural and livestock market systems  
+
+## SC 1-3: Improving access to climate-smart innovations, and technologies  
+
+## D. Disaster Risk Management  
+
+### 4.1. Early warning systems and Response  
+### 4.2. Contingency planning  
+### 4.3. Disaster risk reduction and climate change adaptation  
+### 4.4. Reduction of vulnerability to climate related hazards and natural disasters  
+
+#### IR 2.1. Strengthened collaboration, learning and adaptation of state, non-state actors, and communities  
+
+## SC 3-1: Enhancing climate services infrastructure  
+
+## E. Research, Knowledge Management, and Technology Transfer  
+
+### 5.1. Support to applied adaptive research  
+### 5.2. Advisory and extension services  
+### 5.3. Knowledge management and communication  
+### 5.4. Promote the network of national and regional dryland collaborative, adaptive, and applied research centres  
+### 5.5. Alignment of applied and adaptive research with development priorities of the resilience agenda  
+
+#### I.R 2.2. Strengthened knowledge management and communication of innovative research and practices  
+#### IR 2.1. Strengthened collaboration, learning and adaptation of state, non-state actors, and communities  
+
+## SC 3-2: Strengthening operational capacity for resilience  
+
+## F. Coordination, institutional strengthening, and partnerships  
+
+### 7.1. Coordination and platform management  
+### 7.2. Institutional strengthening and capacity building  
+### 7.3. Enhancing partnerships  
+### 7.4. Resource mobilization  
+
+#### IR 2.1. Strengthened collaboration, learning and adaptation of state, non-state actors, and communities  
+#### IR 2.3. Strengthened capacity and systems of local, national, and regional institutions  
+
+## SC 3-3: Strengthening operational capacity for resilience
+
+
+---
+*Chunk pages 31–31*
+*Token usage:* input=1224 (sys=94, user=1130), max_out=1024, ctx=8192
+---
+
+# [Page 1]
+
+## GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 23
+
+### 28 OECD (2022), States of Fragility 2022, OECD Publishing, Paris, https://doi.org/10.1787/c7fedf5e-en.
+
+### 29 The Fund for Peace (2022). https://fragilestatesindex.org/wp-content/uploads/2022/07/22-FSI-Report-Final.pdf.
+
+### 30 https://fragilestatesindex.org/.
+
+## 7.5. Monitoring, Evaluation, and Learning
+
+### G. Human Capital, Gender, and Social Development
+
+#### 7.1. Access to health and nutrition
+#### 7.2. Access to education and training
+#### 7.3. Promote gender equality, women’s empowerment.
+
+## IR 3.1 Improved educational attainment
+## IR 3.2 Improved vocational, entrepreneurship and employment skills
+## IR 3.3 Financial capabilities
+## IR 3.4 Aspirations, self-efficacy, and confidence to adapt
+
+## IR 4.1. Increased and sustained availability of access to, and utilization of health services
+## IR 4.2. Improved and sustained health, nutrition, and hygiene practices
+
+## SC 1-1: Developing climate-resilient infrastructure (Water resources, energy, markets, and ICTs etc.)
+
+## SC 2-2: Developing entrepreneurship skills and increasing access to finance for women and youths
+
+## SC 3-2: Strengthening operational capacity for resilience
+
+### 26. Root causes to climate change adaptation and mitigation
+
+Table B.1.5 below summarises the drivers, barriers and risks to climate change adaptation and mitigation in the HoA region.
+
+### 27. Root Cause No. 1: Extreme poverty and food insecurity:
+
+Djibouti, Ethiopia, Kenya, Somalia and South Sudan have a combined population of approximately 250 million, which is projected to increase by 5% by 2050. Within this population, an estimated 160 million people (or nearly 64%) live in rural areas that are highly vulnerable to environmental degradation. Alarmingly, about 40% of these rural areas are classified as having low environmental production potential, rendering them economically unproductive due to adverse climatic conditions and severe land and environmental degradation resulting from unsustainable land use practices or human-induced activities. As a result, the rapid growth of the rural population exacerbates the challenge of increasing agricultural productivity under uncertain climatic conditions. This challenge is particularly acute given that more than 40% of the region's population lives below the $1 a day poverty line, adding to the urgency of addressing extreme poverty and food insecurity.
+
+### 28. Root Cause No. 2: Climate change and environmental degradation – This factor has exacerbated the challenges facing the Horn of Africa (HoA) and its rural poor. Over the past two decades, severe droughts have become more frequent, including in 2002-2003 in Ethiopia, 2005-2006 in equatorial East Africa, and 2010-2011 across the Horn of Africa. In recent years, below-average rainfall has led to prolonged droughts in Somalia, southern and south-eastern Ethiopia, and northern and eastern Kenya, with devastating impacts on agriculture and livelihoods. At the same time, severe floods, such as those in South Sudan in 2020 and 2021, have caused extensive damage to infrastructure and loss of life. These climate-related disasters have had a profound economic impact, particularly on rural communities, leading to crop failures, famine and increased migration to urban areas. According to the UN Office for the Coordination of Humanitarian Affairs, more than 36.1 million people across the Horn of Africa have been affected by drought since October 2020, with millions of livestock lost.
+
+### 29. Root cause No. 3: Fragility - According to the OECD (2022)28, fragility is the combination of exposure to risks and insufficient coping capacity of the state, system and/or communities to manage, absorb or mitigate those risks. In the latest 2022 Fragile State Index (FSI)29, Ethiopia, South Sudan, Kenya, Somalia and Djibouti rank 11th, 8th, 4th, 32nd, 2nd and 49th respectively, with four out of the five countries (Somalia, South Sudan and Ethiopia) classified as vulnerable to collapse30. This is largely due to political violence; protests sparked by economic grievances, for example in Somalia; successive failed rains leading to drought conditions that have left over 36.
+
+
+---
+*Chunk pages 32–32*
+*Token usage:* input=1313 (sys=94, user=1219), max_out=1024, ctx=8192
+---
+
+# C GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 24
+
+## References
+
+1. AfDB (2022). https://www.afdb.org/en/contacts.
+2. Eloff, P. (2021) Armed Conflict, Organised Violence, and Food Insecurity in South Sudan. World Food Programme.  
+   https://fscluster.org/sites/default/files/documents/03022021_conflict_and_fsl_fslc_final.pdf.
+3. World Bank (2021) Horn of Africa Regional Economic Memorandum. https://www.hoainitiative.org/wp-content/uploads/2022/03/0-HoA-REM-Overview-combined.pdf
+4. UNDP (2022) AFRICA’S PROMISE: The UNDP Renewed Strategic Offer in Africa.  
+   https://www.undp.org/sites/g/files/zskgke326/files/migration/gw/207c01616c26cedb6b14d278c8523d5758d74fa4cb4688047e94db2f2746ddcf.pdf
+5. IMF (2021) Regional Economic Outlook for Sub-Saharan Africa.  
+   https://www.imf.org/en/Publications/REO/SSA/Issues/2021/10/21/regional-economic-outlook-for-sub-saharan-africa-october-2021
+6. FAO (2018) Africa Regional Overview of Food Security and Nutrition 2018. http://www.fao.org/3/ca2710en/ca2710en.pdf
+7. WHO (2023) Public Health Situation Analysis. https://cdn.who.int/media/docs/default-source/documents/emergencies/greater-horn-of-africa--public-health-situation-analysis-january-2023.pdf?sfvrsn=ab0b51db_4&download=true
+8. FAO (2023) Food Policy Monitoring in the Near East and North Africa region. https://www.fao.org/3/cc9189en/cc9189en.pdf
+9. UN (2021) Promotion of durable peace and sustainable development in Africa.  
+   https://www.un.org/osaa/sites/www.un.org.osaa/files/docs/2109875_osaa_sg_report_web_new.pdf
+10. World Food Programme. (2020). Horn of Africa: Desert Locust Crisis - Situation Report No. 10. Rome.
+11. United Nations Development Programme. (2018). Regional Human Development Report for Africa: Accelerating Gender Equality and Women's Empowerment in Africa. New York.
+12. International Crisis Group. (2019). Climate Change, Ethiopia's Conflict and the Horn's Famine Threat. Africa Report No. 274. Brussels.
+13. United Nations High Commissioner for Refugees. (2021). Global Trends Forced Displacement in 2020. Geneva.
+14. United Nations Environment Programme. (2017). The Horn of Africa: Abundance amid Adversity. Nairobi.
+
+## Root Cause No. 4: Conflicts
+
+Conflict in the HoA plays a major role in food insecurity in the region. In South Sudan, for example, conflict-induced famines in 2017 and 2021 left more than 2.5 million people on the brink of starvation and death. These conflicts have affected the country's main 'breadbasket', where mixed cereal-root crop livelihoods include maize, sorghum, millet and livestock.
+
+As reported in (Eloff, 2021)32, in times of conflict, agriculture is disrupted, and the mobility of pastoralists is restricted. Rural populations are forced to flee, prioritising their physical security over food security. The same dynamic is playing out in other conflict-affected countries in the region. For example, violence is currently causing severe food insecurity in the Tigray region of Ethiopia, and in Uganda, conflict has been linked to food insecurity.
+
+## Table B.1.5: Summary matrix of the root causes, barriers and risks to climate change adaptation and mitigation in the HoA region
+
+| S/N | Root Causes                                                                                                                                     | Barriers to be addressed                                                                                                                                                                                                                                                                                                                                                                               | Risks/Problem                                                                                                                                                                                                                                                                                                                                                                                       |
+|-----|--------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 1   | Extreme poverty and food insecurity: (1) Political instability and conflict (World Bank, 202133
+
+
+---
+*Chunk pages 33–33*
+*Token usage:* input=1141 (sys=94, user=1047), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 25
+
+## 39 UNHCR (2020) East and Horn of Africa and the Great Lakes  
+https://reporting.unhcr.org/sites/default/files/ga2020/pdf/Chapter_EastHornGreatLakes.pdf  
+
+## 46 The Fund for Peace (2022). https://fragilestatesindex.org/wp-content/uploads/2022/07/22-FSI-Report-Final.pdf.  
+
+refugee crises (UNHCR, 2020)  
+
+## 2. Climate change and environmental degradation:  
+(1) Prolonged drought events for example, the 2005–2006 over equatorial east Africa, 2008–2010 over Sudan, northern Kenya, and the Horn of Africa, the 2010–11 in the Horn of Africa, 2015–16 in Ethiopia, the October–December 2020, March–May 2021, October–December 2021 and March–May 2022 lean seasons that affected parts of Somalia, southern and south-eastern Ethiopia, and northern and eastern Kenya.  
+(2) Heavy rainfall and severe floods  
+(3) Prolonged dry spells etc.  
+
+## • Inadequate finance and funding gaps (80% funding gap as only 20% of the annual cost of adaptation in the region comes from public budgets).  
+• High indebtedness of the countries, suggest that addressing extreme climate events would require additional adaptation finance from both development partners and the private sector  
+• Access to climate finance for smallholder farmers and pastoralists  
+• Disaster risk management (early warning systems and response, contingency planning, disaster risk reduction and climate change adaptation, and reduction of vulnerability to climate related hazards and natural disasters)  
+• Coordination, institutional strengthening, and partnerships  
+• Context-specific climate risks and vulnerability assessments.  
+• Gender inequality in climate change adaptation.  
+
+## • Increases heat stress: under prolonged heat stress depletion of carbohydrate reserves and plant starvation are observed  
+• Increases the occurrence of pests/pathogens – cassava mosaic, leaf rust, coffee rust, berry borer, potato taste defect, brown rot disease etc.  
+• Increases post-harvest losses; spoilage of animal products because of the inability to effectively process agricultural products and safely store seeds, grains and other perishable products.  
+• Shifts in timing of planting/harvesting as a result prolonged drought period  
+• Damage to road network caused by extreme weather events such as flooding, landslide, erosion etc., leading to decreasing access to finance, markets, and extension services.  
+• Increased damage to water infrastructure and transportation networks  
+• Unreliability of hydroelectricity production due to more variable river flows  
+• Expanded ranges of disease vectors (e.g., mosquitos) and increased transmission of infectious diseases such as malaria and Monkeypox virus  
+• Increasing loss of property and infrastructure associated with rising flood events  
+• Increased incidence of diarrheal diseases (particularly cholera)  
+
+## 3 Fragility: All the five countries are highly exposure to risks and have insufficient coping capacities to manage, absorb or mitigate such risks. In the recent Fragile State Index (FSI)46, Ethiopia, South Sudan, Kenya, Somalia and Djibouti rank 11th, 8th, 4th, 32nd, 2nd, and 49th respectively, with three out of the five countries (Somalia, South Sudan, and Ethiopia), classified as  
+
+## • Linking peacebuilding, climate change adaptation and sustainable livelihoods.  
+• Promoting context specific assessments tools used to inform national and regional efforts. For example, IDDRSI Strategy.  
+• Coordination, institutional strengthening, and partnerships  
+• Inadequate finance and funding gaps  
+• Land fragmentation  
+• High indebtedness of the countries, suggest that  
+
+## • Political violence  
+• Social unrest  
+• Food and livelihood insecurities  
+• Environmental-induced migration  
+• Armed and resource conflicts  
+• Rising poverty  
+• Humanitarian disasters  
+• Unhealthy investment environment conducive for the growth of the private sector investors.
+
+
+---
+*Chunk pages 34–34*
+*Token usage:* input=789 (sys=94, user=695), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 26
+
+## 47 https://fragilestatesindex.org/
+
+vulnerable to collapse.  
+This is due mainly to political violence, protests sparked by economic grievances, drought conditions, armed conflicts, resource conflicts among pastoralists and communities, rising poverty, and humanitarian disasters.
+
+addressing fragility would require additional adaptation finance from development partners and the private sector
+
+### Enabling environment for private-sector led growth.
+
+### Gender inequality  
+
+## Conflicts: Human and resource conflicts play a major role in food and livelihood insecurity in the HoA region. For example, the 2017 and 2021 famines caused by conflicts in South Sudan hit over 2.5 million people living them on the brink of starvation and death. Similarly, violence is currently driving severe food insecurity in the Tigray region of Ethiopia
+
+### Linking peacebuilding, climate change adaptation and sustainable livelihoods.
+
+### Promoting context specific assessments tools used to inform national and regional efforts. For example, IDDRSI Strategy
+
+### Coordination, institutional strengthening, and partnerships
+
+### Land fragmentation
+
+### Access to climate finance for smallholder farmers and pastoralists
+
+### High indebtedness of the countries, suggest that addressing conflicts, would require additional adaptation finance from development partners and the private sector
+
+### Programs linking peacebuilding, climate change adaptation and sustainable livelihoods.
+
+### Institutional strengthening and capacity gap deficiencies
+
+### Gender inequality
+
+### Support for inclusive technical dialogues on the evolving understanding of climate security  
+
+## Political violence and insecurity
+
+## Social unrest
+
+## Food and livelihood insecurity  
+
+## Livelihood distortion  
+
+## Environmental-induced migration  
+
+## Armed and resource conflicts  
+
+## Rising poverty  
+
+## Humanitarian disasters  
+
+Unhealthy investment environment conducive for the growth of the private sector and investors.
+
+## Other complementary initiatives on which BREFOL builds and key lessons learned: There are several past (Appendix 1.9a &b) and ongoing (Appendix 1.10) climate change adaptation/mitigation programmes/projects in the HoA on which BREFOL builds. While the past initiatives were consulted to draw key lessons from their implementation, some of the ongoing initiatives were consulted either to avoid duplication of efforts and/or to identify existing gaps to be filled by BREFOL. As part of the Feed Africa strategy, AfDB implemented the regional Drought Resilience and Sustainable Livelihoods Programme (DRSLP) from 2012 -2021, which aimed to reduce poverty and food insecurity and accelerate sustainable economic growth in the Greater Horn of Africa (HOA). BREFOL builds on the achievements and lessons learnt from DRSLP, in particular by capitalising on the infrastructure built
+
+--- 
+
+[Page 34]
+
+
+---
+*Chunk pages 35–35*
+*Token usage:* input=431 (sys=94, user=337), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 27
+
+## B.2 (a). Theory of change narrative and diagram (max. 1500 words, approximately 3 pages plus diagram)
+
+and managed. BREFOL also builds on IFAD's Inclusive Green Financing Initiative (IGREENFIN I):  
+Greening Agricultural Banks & the Financial Sector to Foster Climate Resilient, Low Emission  
+Smallholder Agriculture in the Great Green Wall (GGW) countries - Phase I. This initiative, which aims  
+to support the greening of agricultural banks and the financial sector to foster climate resilient, low  
+emission smallholder agriculture in Burkina Faso, Chad, Côte d'Ivoire, Djibouti, Eritrea, Ethiopia,  
+Ghana, Mali, Mauritania, Niger, Nigeria, Senegal and Sudan, provided very useful insights for the  
+design of BREFOL. Similarly, IGAD's Drought Disaster Resilience and Sustainability Initiative (IDDRSI)  
+strategy and the Horn of Africa Regional Resilience Framework 3.0 were very instrumental in  
+packaging the sub-investment activities of BREFOL. The African Union's Draft Africa Climate Change  
+Strategy - DACCS (2020 - 2030) also played a key role in narrowing down BREFOL's sub-investments  
+in line with the region's adaptation needs.
+
+
+---
+*Chunk pages 36–36*
+*Token usage:* input=1283 (sys=94, user=1189), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 28
+
+## 48 IGAD’s Drought Disaster Resilience and Sustainability Initiative (IDDRSI) Strategy  
+https://faolex.fao.org/docs/pdf/igad215119.pdf  
+
+### Description of the problem:  
+The Horn of Africa is one of the most disaster-prone regions in the world, with crippling food insecurity resulting from multiple hazards in the region. Since the 1970s, several countries in the HoA have been threatened by famine at least once every decade. It is worth noting that the frequency of these hazards and disasters has recently increased to every 3–5 years.  
+
+The development of programmes that can strengthen the resilience of communities in the region is of paramount importance. The Food Security and Nutrition Working Group (FSNWG), for example, predicts that between 18.6 and 21.1 million people in Ethiopia, Kenya and Somalia are likely to face crisis-IPC 3 or worse levels of acute food insecurity due to drought.  
+
+The number of people in need of emergency food assistance to meet basic needs could rise to as many as 26 million people in the three countries by February 2023 if a fifth consecutive season of poor rainfall occurs between October and December, as early projections suggest is likely.  
+
+As noted above, extreme poverty and food insecurity (root cause #1), climate change and environmental degradation (root cause #2), fragility (root cause #3) and conflict (root cause #4) are some of the key drivers of recurrent food crises, hunger and famine in the region.  
+
+Unfortunately, the high indebtedness of these countries severely constrains public spending to address some of the key challenges facing the region. Similarly, their highly fragile nature (Somalia, South Sudan and Ethiopia are prone and vulnerable to armed conflict). Exposure to frequent conflict acts as a disincentive to the inflow of private financial resources: critical for the creation of self-sustaining green/circular economy activities, sustainable wealth creation and green job opportunities.  
+
+For smallholder farmers and pastoralists, who account for more than 80% of all low-return subsistence farming activities, lack of access to financial resources often limits their ability to adapt. The end result is often violent conflict over land use and resources, environmentally induced migration and exposure to vicious poverty traps.
+
+### Preferred adaptation solution:  
+The preferred short-, medium- and long-term adaptation solutions to the above issues at the regional level, particularly for IGAD member states, are contained in the IGAD Drought Disaster Resilience and Sustainability Initiative (IDDRSI) Strategy.  
+
+At the national level, preferred adaptation solutions are expressed in each country's legal framework or action plan on climate change (Table B.1.3).  
+
+BREFOL is key to the implementation of the IDDRSI strategy at the regional and national levels in the short, medium and long term, including the realisation of the Fund's impact at the global level. Specifically, at the global level, BREFOL contributes by increasing the adaptive capacity and resilience of:  
+
+1. Vulnerable people and communities  
+2. The health and well-being as well as food and water security of the target population  
+3. The environment and ecosystems and ecosystem services in the target areas  
+
+In terms of mitigation co-benefits, BREFOL contributes through reduced emissions from:  
+
+1. Facilitating access to renewable energy (solar and bio-digesters)  
+2. Improved forest cover and land use change  
+
+At the regional and national levels, BREFOL contributes to:  
+
+1. Supporting, developing and rehabilitating climate resilient infrastructure (water resources, energy, market integration, cross-border health and research facilities, road networks, ICTs, etc.)  
+2. Supporting sustainable forest management  
+3. Supporting sustainable management of agro-pastoral production systems (IDDRSI PIA 1)  
+4. Increasing access to digital information flows and advisory services, especially on markets and trade  
+5. Developing entrepreneurship skills and increasing access to finance for vulnerable groups, especially women and youth  
+6. Increasing access to innovative financing for smallholder farmers, pastoralists and agribusiness MSMEs (IDDRSI PIA 2)  
+7. Improving access to climate-smart innovations and technologies (IDDRSI PIA 3)  
+8. Improving climate service infrastructure and extension services  
+9. Promoting climate risk finance and insurance to cushion vulnerable smallholder production systems (IDDRSI PIA 4)  
+10. Supporting gender-sensitive climate regulatory framework reforms and institutional strengthening for climate-smart planning and development (IDDRSI PIAs 5, 6 & 7)
+
+### To support the implementation of the key activities of the ‘BREFOL Preferred Adaptation Solution’, the AfDB will draw on the approaches developed under three of its ongoing special initiatives to support BREFOL
+
+
+---
+*Chunk pages 37–37*
+*Token usage:* input=1022 (sys=94, user=928), max_out=1024, ctx=8192
+---
+
+# C GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 29
+
+## Finance Action for Women in Africa
+
+which aims to empower women and bridge the $42 billion financing gap facing women in Africa (see, for example, Appendix 2.2 for AFAWA success stories on the continent); and
+
+## The AfDB-GCA (Global Centre on Adaptation) Africa Adaptation Accelerator Programme (AAAP)
+
+which specialises in scaling up access to digital extension services and technologies and related data-driven agricultural and financial services for at least 30 million smallholder farmers in Africa across 26 countries (see Appendix 2.3 for AfDB-GCA AAAP success stories).
+
+Figure B.2.1 shows the integration of AfDB special initiatives into the programme.
+
+### Figure B.2.1: Integration of AfDB Special Initiatives into BREFOL
+
+## Expected outputs of BREFOL:
+
+The main expected outputs of BREFOL include:
+
+1. construction/rehabilitation of 538 water availability and mobilisation infrastructures;
+2. construction/rehabilitation of 5,980 ha of community irrigation schemes;
+3. construction/rehabilitation of 152 community livestock infrastructures (livestock markets, livestock health centres, etc.);
+4. rehabilitation and management of 102,000 ha of degraded rangelands through agroforestry and afforestation programmes;
+5. introduction of climate-smart innovations (improved resilient seeds for crops and fodder) to more than 542,000 (278,000 + 64,000) smallholder farmers and pastoralists to increase agricultural and fodder production;
+6. Establishment and deployment of 5 digital extension services through PPP to benefit more than 1,142,000 smallholder farmers and pastoralists;
+7. Construction and rehabilitation of 125 rural markets;
+8. Installation and operation of 125 agro-meteorological stations;
+9. Operationalisation of 3 cross-border Memoranda of Understanding to facilitate the control and management of transboundary animal diseases and zoonoses in border areas, including 3 cross-border veterinary laboratories to facilitate cost-benefit analysis of integrated pest management technologies (IPMT) to control crop and livestock pests and diseases such as fall armyworm, arboviruses in transhumant cattle and locust invasion;
+10. Building resilience of 4.9 million direct beneficiaries and over 18.7 million indirect beneficiaries, their health and well-being, as well as food and water security, improved ecosystems and ecosystem services through improved land use and management practices;
+11. improved access to renewable energy (co-benefit to climate change mitigation), resulting in reduced post-harvest losses and emission reductions through increased carbon sequestration of 14.1 million tCO2e;
+12. leveraged an additional USD 8.9 million through a blended finance approach in fragile states (Ethiopia and Djibouti);
+13. promoting green/circular economy activities with a view to gender mainstreaming, leading to gender-sensitive sustainable wealth creation
+
+## Component 1: Strengthening Pastoral and Agropastoral Production Systems' Resilience to Climate Change
+
+### Output 1.3: Increased adoption of climate-smart innovations
+
+AfDB-TAAT –approach adopted to upscale Output 1.3
+
+## Component 2: Supporting low carbon and resilient development of Agribusinesses
+
+### Output 2.1: Increased access to digital advisory services and markets
+
+GCA/AfDB-AAAP –approach adopted to upscale Output 2.1
+
+### Output 2.2: Developed inclusive MSMEs and cooperatives with access to climate financing
+
+AfDB-AFAWA –approach adopted to upscale Output 2.2
+
+## Climate-smart Tech Dissemination
+
+## Digital Advisory Services
+
+## Women empowerment
+
+
+---
+*Chunk pages 38–38*
+*Token usage:* input=1194 (sys=94, user=1100), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 30
+
+## 36. Potential Barriers addressed by BREFOL:  
+
+## 37. Barrier No 1. Lack of access to concessional finance for smallholder farmers and pastoralists to adapt to climate change:
+
+Timely access to finance is critical to cope with the debilitating effects of climate change and extreme weather events that characterise the HoA region. Not infrequently, smallholder farmers do not have access to credit facilities to purchase agricultural inputs such as climate-smart seed varieties, fertilizers and farm implements, and to adopt climate-smart agricultural practices to cope with sudden disasters such as seasonal droughts and flash floods.
+
+This is illustrated by statistics on access to finance from the World Bank's Global Findex Database, which shows that on average only 22% of smallholder farmers in the HoA have an account with a financial institution, less than 7% are able to borrow from a financial institution, while only about 6% of the active farming population is able to borrow to start, operate or expand a farm or business. With such low access to formal finance in an environment characterised by extreme climate events (droughts and floods), fragility, conflict and population explosion, building resilience at scale is almost impossible.
+
+The main constraints to accessing credit are:  
+1. The high market interest rate (12-18%)  
+2. The limited capacity of smallholders to guarantee the credit requested due to the high risks of the agricultural sector  
+3. The limited capacity of smallholders to finance the design of bankable projects  
+4. The limited management capacity of smallholders, which increases the risk of non-repayment of loans  
+
+## 38. Barrier No 2. Political instability, Insecurity, and Weak Governance:
+
+Political instability, insecurity and weak governance are severely hampering efforts to achieve climate-resilient food and livelihood systems in the Horn of Africa, affecting Djibouti, Ethiopia, Kenya, Somalia and South Sudan.
+
+According to the Fragile States Index 2021, all five countries are among the world's most fragile states, with Somalia and South Sudan in the top ten. In 2021, conflict and insecurity displaced more than 5.9 million people in Somalia, while in South Sudan some 7.9 million people were in need of humanitarian assistance due to conflict-related displacement (UNOCHA, 2021).
+
+Weak governance exacerbates these challenges, with Djibouti, Ethiopia, Kenya, Somalia and South Sudan scoring below the global average on the World Bank's Worldwide Governance Indicators, particularly in terms of political stability and government effectiveness (World Bank, 2021). This combination of political instability, insecurity, and weak governance hampers the implementation of climate adaptation and mitigation measures, increases vulnerability to climate-related shocks, and undermines efforts to build resilience and ensure sustainable food and livelihood systems in the region.
+
+## 39. Barrier No 3. Infrastructure, policy, and technologies gaps and limited access to climate information:
+
+Countries in the HoA face many challenges in terms of preparedness and readiness to respond to sudden climate shocks in the region due to infrastructure, technology and capacity gaps. Access to reliable and timely weather information in formats that are easily accessible to end-users such as farmers and pastoralists, especially in the event of sudden disasters such as drought and famine, is still limited in the region and needs to be widely promoted.
+
+Similarly, the availability of digital technology services, which have been shown to significantly improve the resilience of people and communities, also during the crisis, has not been widely promoted in the region, partly due to low private sector participation. Similarly, innovative financing mechanisms such as crop and livestock insurance, which can help farmers and pastoralists manage agricultural and livestock risks, especially during seasonal droughts and lean seasons, suffer from low enrolment rates due to weak institutions and capacity constraints.
+
+Capacity gaps also exist in terms of the extent of ministerial coordination on climate change interventions, adequate mainstreaming of climate change into policies and projects, and the development of bankable proposals that qualify for access to climate finance from international climate funds to scale up mitigation and adaptation activities.
+
+## 40. Barrier No 4. Low private sector involvement in fragile states:
+
+As discussed under Activity 5.2 of the DACCS (2020 – 2030): After most governments, the private sector is often the next biggest spender on the continent. For example, there are many private entrepreneurs with vested interests in lucrative renewable energy, energy conservation, waste recycling and other businesses for profit and not necessarily as climate change adaptation and mitigation or NDC interventions.
+
+Beyond these green/cradle-to-grave ventures, the private sector also offers various types of private finance such as
+
+
+---
+*Chunk pages 39–39*
+*Token usage:* input=813 (sys=94, user=719), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 31
+
+## Barrier No 5. Weak implementation capacity risk at local and national levels
+
+Weak implementation capacity at both local and national levels poses a significant risk to achieving climate-resilient food security and livelihoods in Djibouti, Ethiopia, Kenya, Somalia and South Sudan.
+
+At the local level, limited resources, technical expertise and institutional capacity hinder the effective implementation of climate change adaptation and mitigation strategies, agricultural practices and disaster risk reduction measures. Local communities often lack access to information, technology, and financial resources needed to cope with climate-related shocks and build resilience (UNDP, 2018). Furthermore, inadequate coordination and collaboration among local stakeholders further hampers efforts to address climate change impacts and sustainably manage natural resources.
+
+## Taken together, this means that addressing the HoA problem through the combination of well-designed programme interventions discussed in Section B.3 will help trigger a paradigm shift towards low-carbon and climate-resilient development pathways in the HoA. However, this assumes that: (1) extreme climate events (risk no. 1); (2) insufficient participation of women and youth in programme activities; and (3) economic downturns due to COVID-19 and other pandemics (risk no. 3) are well managed.
+
+## The overall objective of this programme is to reduce the vulnerability of the region to climate-induced food insecurity by mobilising climate and other sources of adaptation finance needed to strengthen the resilience and adaptive capacity of the five IGAD countries in the HoA. The region will be equipped and better prepared to face the challenges of food insecurity caused by climate and other environmental hazards such as drought, floods, locust invasion, land degradation, etc. The highlight of the programme intervention is presented in the Theory of Change (ToC, Figure B.2.2).
+
+
+---
+*Chunk pages 40–40*
+*Token usage:* input=1395 (sys=94, user=1301), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 32
+
+## Figure B.2.2: Theory of change for BREFOL B.2 (b)
+
+### Outcome mapping to GCF results areas and co-benefit categorization
+
+#### Outcomes
+
+##### Activities
+
+- **Activity 1.1.1:** Construct or rehabilitate and manage water harvesting infrastructure  
+- **Activity 1.1.2:** Construct or rehabilitate and manage community irrigation schemes  
+- **Activity 1.1.3:** Construct or rehabilitate and manage community livestock infrastructure  
+- **Activity 1.2.1:** Train communities on sustainable land management best practices  
+- **Activity 1.2.2:** Support sustainable rangeland management and agroforestry  
+- **Activity 1.3.1:** Provide extension services and deploy climate-smart innovations to improve agricultural and fodder production  
+- **Activity 1.3.2:** Disseminate resilient varieties to improve agricultural and fodder production  
+
+##### Barriers, Risks, and Root Causes
+
+###### Assumptions
+
+1. The AfDB employs a multifaceted approach that combines due diligence, risk assessments, capacity building, stakeholder engagement, and policy enforcement to proactively manage and mitigate the challenges associated with political instability, conflict, and corruption.
+2. The participating Governments promote sound fiscal policies, social investment programmes, international cooperation, public financial management, transparent budgeting, and conflicts prevention and resolution efforts, thereby ensuring financial stability and sustainable economic development.
+3. Based on the dynamic regional landscape and the prevailing priorities of the organization, IGAD employs strategies such as conflict prevention and resolution, peacebuilding, governance and anti-corruption initiatives, capacity building, and diplomatic engagement to nurture regional stability, proactively prevent conflicts, and facilitate the promotion of sustainable development in HoA.
+4. The capacity of IGAD and EEs (PMUs) will be strengthened by the recruitment of senior fiduciary and M&E staff. Also, the management training will be conducted for all the EEs PMU.
+5. Respective host country PMUs learn lessons among each other during the implementation to improve their respective performance.
+
+###### Barriers
+
+- **Barrier No 1:** Lack of access to concessional finance for smallholder farmers and pastoralists to adapt to climate change.
+- **Barrier No 2:** Political instability, Insecurity, and Weak governance.
+- **Barrier No 3:** Infrastructure, policy, and technologies gaps, and limited access to climate information.
+- **Barrier No 4:** Low private sector engagement in fragile states context.
+- **Barrier No 5:** Weak implementation capacity risk at local and national levels.
+
+###### Activities
+
+- **Activity 2.1.1:** Establish and deploy digital advisory services using PPP mechanism  
+- **Activity 2.1.2:** Construct rural markets  
+- **Activity 2.2.1:** Train women and youth on entrepreneurial skills in renewable energy technologies and/or AVC development including access to credit line  
+- **Activity 2.2.2:** Facilitate access for women and youth groups to renewable energy (solar and biodigester systems) to enhance alternative income generation  
+- **Activity 2.2.3:** Design and operationalise innovative credit lines via selected local PFIs, in participating countries.  
+- **Activity 2.2.4:** Provide technical assistance to MSMEs, local PFIs, and cooperatives to create an enabling environment for credit access and sustainability  
+
+###### Risks
+
+- **Risk No 1:** Extreme climate events.
+- **Risk No 2:** Lack of access to credit facilities.
+- **Risk No 3:** Changes in Governments’ sector strategies.
+- **Risk No 4:** Risk of uneven uptake among countries.
+
+#### Outcome 1
+
+**Increased adoption of climate-resilient solutions**
+
+##### Goal Statement
+
+IF climate finance is mobilized to strengthen the resilience of agropastoral and pastoral communities, and to promote low carbon technologies in the Horn of Africa THEN the vulnerability to climate-induced food insecurity and GHG emissions will be reduced BECAUSE the region will be better equipped and prepared to manage climate and other environmental-related hazards.
+
+##### Output 2.1
+
+Increased access to digital advisory services and markets.
+
+##### Output 3.1
+
+Enhanced access to climate information and early warning systems.
+
+#### Outcome 2
+
+**Enhanced carbon sequestration and reduced greenhouse gas emissions of AVC**
+
+#### Outcome 3
+
+**Strengthened adaptive capacity of vulnerable communities**
+
+##### Root Causes
+
+- **Root Cause No 1:** Extreme poverty and food insecurity.
+- **Root Cause No 2:** Climate Change and environmental degradation.
+- **Root Cause No 3:** Fragility.
+- **Root Cause No 4:** Conflicts.
+
+##### Component 1  
+Output 1.1: Climate resilient infrastructure built/rehabilitated.
+
+##### Component 2  
+Output 1.2: Improved sustainable land management
+
+
+---
+*Chunk pages 41–41*
+*Token usage:* input=1050 (sys=94, user=956), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 33
+
+## 49 Please refer to Annex 17 for the multiple country progam information
+
+Fill in the GCF results area table below to map each project/programme outcome identified in section B.2(a) to the contributing GCF results area(s) by referring to the description of eight results areas provided in the guidance note.
+
+| Outcome number | GCF Mitigation Results Area (MRA 1-4) | GCF Adaptation Results Area (ARA 1-4) |
+| --- | --- | --- |
+| MRA 1 | Energy generation and access |  |
+| MRA 2 | Low-emission transport |  |
+| MRA 3 | Building, cities, industries, appliances |  |
+| MRA 4 | Forestry and land use |  |
+| ARA 1 | Most vulnerable people and communities |  |
+| ARA 2 | Health, well-being, food and water security |  |
+| ARA 3 | Infrastructure and built environment |  |
+| ARA 4 | Ecosystems and ecosystem services |  |
+
+| Outcome 1 | ☐ | ☐ | ☐ | ☒ | ☒ | ☒ | ☐ | ☒ |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Outcome 2 | ☒ | ☐ | ☐ | ☐ | ☒ | ☐ | ☐ | ☐ |
+| Outcome 3 | ☐ | ☐ | ☐ | ☐ | ☒ | ☒ | ☐ | ☐ |
+
+If any co-benefits have been identified in section B.2(a), fill in the Co-benefit table below to map each co-benefit to the corresponding category as defined in the FP guidance note.
+
+| Co-benefit number | Co-benefit Environmental | Social Economic Gender Adaptation Mitigation |
+| --- | --- | --- | --- | --- | --- |
+| Co-benefit 1 | ☐ | ☒ | ☒ | ☐ | ☐ | ☐ |
+| Co-benefit 2 | ☒ | ☐ | ☐ | ☐ | ☐ | ☐ |
+
+## B.3. Project/programme description (max. 2500 words, approximately 5 pages)
+
+44. The proposed programme: Building Climate Resilience for Food and Livelihoods in the Horn of Africa (BREFOL)49, estimated at USD 335.30 million (AfDB + Country USD 184.29 million + GCF USD 151.0 million), will trigger a paradigm shift towards secure and increased agropastoral production and income generation in the HoA. Through the construction and rehabilitation of physical infrastructure and climate resilient assets (e.g., water mobilisation infrastructure, community irrigation schemes and areas, livestock markets, animal health facilities, rangelands and pastures); training and capacity building in agribusiness development, entrepreneurship and adoption of climate-smart agricultural technologies and innovations; improving access to climate finance, digital markets and digital extension services; access to climate information and early warning systems (CIEWS); and ensuring the creation of an enabling environment (institutional strengthening and regulatory and policy framework reforms); BREFOL is strategically positioned to "catalyse impact" beyond the initial duration of the AfDB and GCF investments.
+
+45. The program mainstreams gender across the proposed initiatives economic advantages, such as women's empowerment (economically and financially) through access to credit facilities, including other gender-related benefits, such as the development and promotion of women-led agribusiness MSMEs. Women are known to demonstrate solid repayment behaviour, and have solid track record as savers, often through informal institutions such as unregulated Savings and Credit Cooperative Organizations (SACCOs) and Rotating Savings and Credit Associations (ROSCAs). Another compelling characteristic of women finance behaviour is that they typically reinvest up to 90% of their income in the education, health and nutrition of their family and community, compared to up to 40% for men. This means that investing in women's businesses can transform lives and societies. Moreover, it seeks to yield social benefits by improving women's economic independence, which may have positive social, cultural, and political implications in the region.
+
+46. Environmental co-benefits are expected through the promotion of resilient agropastoral production systems by encouraging the adoption of best practices in sustainable land management and agroforestry, leading to improved ecosystem services and increased soil organic carbon. In addition,
+
+
+---
+*Chunk pages 42–42*
+*Token usage:* input=1286 (sys=94, user=1192), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 34
+
+The programme envisages the installation of 4.8 MW of solar photovoltaic systems for solar irrigation, lighting and processing, as well as the potential generation of biogas energy from over 3,890 m³ of biodigesters to be installed under the programme.
+
+## GCF Support and Participation in the BREFOL Programme
+
+47. GCF support and participation in the BREFOL programme is therefore of paramount importance. First, concessional resources from the GCF will help to bridge the existing adaptation finance gaps for these countries. For example, Ethiopia's Enhanced NDC estimates that the country's adaptation and mitigation need in the six priority sectors will require a total investment of USD 40.5 billion and USD 281.3 billion, respectively. Similarly, that for Kenya highlights that the investment and costs required by the international community for both mitigation and adaptation would be over $61.1 billion. Estimates for Djibouti and South Sudan are $6.4 billion and $50.0 billion respectively. Although an estimated 20% of the annual adaptation costs in the region will come from public budgets, this is clearly insufficient, with a financing gap of 80%. Given the high level of indebtedness of the countries, it is clear that the implementation of planned investments such as BREFOL would require additional funding from the GCF and other development partners. This was highlighted in the 5th Intermediate Outcome of the African Union Draft Africa Climate Change Strategy - DACCS (2020-2030) for these countries.
+
+## Private Sector Role in Scaling Up Adaptation Finance
+
+48. Second, as highlighted under barrier #4, the private sector has a key role to play in scaling up adaptation finance, especially in fragile contexts such as the HoA region. Unfortunately, the private sector often lacks the incentives and other enabling instruments needed to attract private capital to climate-sensitive sectors in the region. Again, concessional resources from the GCF are critical to unlocking private capital in the region. For example, for an initial investment of $24.35 million from GCF concessional resources, BREFOL, through its Direct Credit Window (BDCW) to PFIs, would help leverage an additional $5.49 million (23%) of private capital from local private financial institutions (LPFIs) in Djibouti and Ethiopia. This will go a long way towards addressing barrier #1 (lack of access to concessional finance for smallholder farmers and pastoralists to adapt to climate change).
+
+## Training of Cooperatives and SMEs
+
+49. Third and finally, GCF funds will support the training of more than 4,395 cooperatives and SMEs in the region. These well-trained 4,395 cooperatives and SMEs will be able to mobilise additional resources from other commercial banks and microfinance institutions. In addition, we expect this critical mass of well-trained cooperatives and SMEs to serve as trainers of trainers (ToT) for other cooperatives and SMEs interested in accessing credit from local private financial institutions (PFIs).
+
+## Activity Mapping for BREFOL
+
+50. Table B.3.1 presents the activity mapping of BREFOL (i.e., Baseline Investments versus GCF Financed Operations per country).
+
+### Table B.3.1. Activity Mapping for BREFOL Baseline and GCF Interventions
+
+| Component Output | Djibouti | Ethiopia | Kenya | Somalia | South Sudan | IGAD |
+|------------------|----------|----------|-------|---------|-------------|------|
+| **Component 1:**<br>Strengthening Pastoral and Agropastoral Production Systems' Resilience to Climate Change |  |  |  |  |  |  |
+| Output 1.1: Climate resilient infrastructure built/rehabilitated (Activities 1.1.1 to 1.1.3) | AfDB + GCF | AfDB + GCF | N/A | AfDB | AfDB | N/a |
+| Output 1.2: Improved sustainable land management practices (Activities 1.2.1 & 1.2.2) | AfDB + GCF | GCF | AfDB + GCF | N/A | AfDB + GCF | GCF |
+| Output 1.3: Increased adoption of climate-smart innovations (Activiities 1.3.1 & 1.3.2) | AfDB + GCF | AfDB+ GCF | AfDB + GCF | GCF | GCF | AfDB + GCF |
+| **Component 2:**<br>Supporting low carbon and resilient |  |  |  |  |  |  |
+| Output 2.1: Increased
+
+
+---
+*Chunk pages 43–43*
+*Token usage:* input=1187 (sys=94, user=1093), max_out=1024, ctx=8192
+---
+
+# [Page 1]
+
+## Component 1: Strengthening Pastoral and Agropastoral Production Systems’ Resilience to Climate Change
+
+This component aims to strengthen the resilience of pastoral and agropastoral production systems to climate change through improved production systems. It implements the IDDRSI priority intervention area 1, which aims to improve the management of natural resources and the environment in the HoA.
+
+### Output 1.1: Climate resilient infrastructure built/rehabilitated
+
+#### Activity 1.1.1: Develop and rehabilitate the resilience of infrastructure (AfDB + GCF Financed)
+
+This activity will include the construction/rehabilitation and management of infrastructure to secure water for agropastoral production in different districts of the respective countries.
+
+In Djibouti, for example, the programme will include the construction of six (6) water resource mobilisation infrastructures tailored to climate change challenges. This will include the construction of micro-dams, related infrastructure and gender-sensitive boreholes, as well as the construction of rural drinking water distribution networks. In addition, efforts will be made to construct or rehabilitate 50 numbered small earth dams, boreholes, covered water pans, shallow wells and water distribution systems.
+
+In Ethiopia, the focus will be on the construction of 227 multipurpose, demand-driven community water sub-project distribution systems/networks, the rehabilitation of 239 existing small-scale, demand-driven water-related infrastructure, the construction of 25 multipurpose, demand-driven community water sub-project distribution systems/networks, the rehabilitation of 20 existing small-scale, demand-driven water-related infrastructure, and the implementation of 10 resource-rich small-scale irrigation schemes to develop 1500 ha of irrigable land. It will also support the operationalisation of 35 effective irrigation water user associations (WUAs) through the formulation of resource management guidelines in collaboration with the Ministry of Irrigation and Lowlands (MoIL), and the monitoring of physical infrastructure projects.
+
+In Southern Sudan, activities will include the construction of 42 water pans/small earth dams, 22 community berkeds (covered water pans), equipment/upgrading of 3 boreholes, training of water infrastructure management committees (with 30% women participation) and technical studies for water infrastructure projects.
+
+
+---
+*Chunk pages 44–44*
+*Token usage:* input=1240 (sys=94, user=1146), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 36
+
+## Activity 1.1.2: Construct or rehabilitate and manage community irrigation schemes (AfDB + GCF Financed)
+
+The main objective of this activity is to improve water control and efficiency through the construction/rehabilitation of community irrigation systems. This activity will focus on the development of 240 hectares of climate resilient irrigated perimeters in Djibouti, including the maintenance of hydraulic structures and the installation of six (6) drinking troughs and standpipes downstream of threshold structures for livestock watering and irrigation. In addition, efforts will be made to develop 390 hectares of climate-resilient irrigation perimeters, including multicultural farmland, through a public-private partnership (PPP). In Ethiopia, the programme will develop 900 hectares of demand-driven small-scale irrigation for crops and fodder. In Kenya, activities will include the rehabilitation and development of 800 hectares in seven irrigation schemes, including the rehabilitation of 100 kilometers of roads leading to irrigation schemes and the rehabilitation of 112 reservoirs, boreholes, shallow wells and sub-surface dams. In Southern Sudan, initiatives will focus on the construction of a 25-kilometre access road from Aweil town to a rice scheme and the installation of a chain-link fence for the rice irrigation scheme.
+
+## Activity 1.1.3: Construct or rehabilitate and manage community livestock infrastructure (AfDB Financed)
+
+This activity will facilitate the development of community-driven infrastructure to improve the resilience of livestock to climate change. Specifically, AfDB funding will be used to conduct two technical studies on the management of community livestock infrastructure, including the procurement of animal health laboratory products and fisheries resource monitoring and assessment tools in Djibouti. In Ethiopia, AfDB funding will support the construction of 15 demand-driven animal health posts and 8 other livestock infrastructure facilities such as pastoralist training centres (PTCs), extension centre, veterinary clinics and storage facilities. In Kenya, the budget will cover the construction of 21 livestock markets, 28 hay sheds, 28 pasture rehabilitation projects, and the procurement of equipment for 7 diagnostic laboratories and holding offices. In Somalia, funds will be used to equip/upgrade 1 veterinary laboratory, purchase 12 mobile veterinary clinics, introduce 6 climate-smart improved fodder varieties, support the establishment of fodder banks, map regional rangelands, degraded areas for rehabilitation, prosopis control and livestock routes. Regional rangeland monitoring infrastructure and drought crisis/early warning systems will also be established. In Southern Sudan, funding will support the construction/rehabilitation of 15 veterinary clinics (in Southern, Western and Eastern Kapoeta), 18 livestock checkpoints (in Southern, Western and Eastern Kapoeta), 14 abattoirs (in Southern, Western and Eastern Kapoeta) and 2 livestock quarantine centres.
+
+## The signing and implementation of the cross-border MoUs will be facilitated by IGAD through the IGAD Centre for Pastoral Areas and Livestock Development (ICPALD). The aim is to address transboundary livestock development challenges. ICPALD has implemented a number of livestock-related programmes that contribute to sustainable peace in cross-border border communities. These include:
+
+1. Facilitated the signing of a cross-border MoU by ministers to improve the control of transboundary animal diseases (TADs). This has helped to synchronise vaccination and reduce outbreaks of TADs in cross-border areas, thereby contributing to sustainable cross-border livestock trade. The minimal or no loss of livestock due to the control of TADs has helped to sustain livelihoods and reduce the vulnerability of youth to extremist activities or misuse by community elites.
+
+2. Enhanced livestock trade within Member States and international markets such as Middle East and North Africa (MENA) and Asian countries. Our interventions, such as supporting exporters to participate in the GULF International Food Fair for three years, helped improve promotion of products to importers and attracted new buyers for meat and live animal exporters in the IGAD region, resulting in increased sales of products. This has helped pastoralists and agro-pastoralists to sell more livestock and increase their income, thereby encouraging pastoralists who had stopped the practice to resume it in order to continue earning a living.
+
+3. Facilitated and supported the development, signing and operationalisation of the transhumance protocol, which has been adopted in most of the cross-border areas in the region. Under this protocol and the Animal Health Production and Health MoU, communities on both sides of the border have participated in joint activities and shared rangeland resources, including water and grass and forage. These activities have helped to strengthen community relations and peace.
+
+4. ICPALD has supported cross-border communities to establish common livestock markets, which have facilitated local trade in livestock and livestock products and other household goods. These cross-border community interactions are the
+
+
+---
+*Chunk pages 45–45*
+*Token usage:* input=1192 (sys=94, user=1098), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 37
+
+## 57. Output 1.2: Improved sustainable land management practices.
+
+## 58. Activity 1.2.1: Train communities on sustainable land management best practices (AfDB + GCF Financed):
+
+This activity aims to scale up the adoption of sustainable land management (SLM) best practices by farmers and pastoralists. This will be done through a demand-driven approach to support improved agropastoral and pastoral production systems through training and capacity building to improve land management systems and practices. The project will train approximately 31,000 farmers and pastoralists (50% women) in SLM best practices. In addition, 100 community-based pasture management approaches will be developed with the International Livestock Research Institute (ILRI), using participatory pasture management (PPM) toolkits for dissemination.
+
+In Ethiopia, for example, the programme will develop and deliver training of trainers (ToT) to over 100 regional and zonal stakeholders on sustainable rangeland development techniques and tools and provide 300 technical backstopping training sessions for district and grassroots staff. In Kenya, support will be provided to accelerate the process of organising, formalising and building the capacity of Community Land Management Committees and Platforms (CLMCPs). This will include sensitising communities on land rights and interests, organising outreach campaigns to train farmer organisations in small-scale irrigation technologies, and providing training to support the sustainable management of agropastoral lands covering 6000 hectares. In addition, degraded rangelands will be identified and mapped, covering 6000 hectares, and sustainable land management tools will be developed and disseminated through training sessions involving 50 stakeholders per country. Reseeding of degraded agropastoral land will also be carried out, covering 2000 hectares.
+
+In Southern Sudan, efforts will focus on developing local capacity to manage land degradation, organising stakeholder consultations, training local land management committees and providing communities with technologies for land resource use, rehabilitation and restoration. In the IGAD region, the focus will be on developing and disseminating tools and approaches for sustainable rangeland management, including training of trainers (ToT).
+
+## 59. Activity 1.2.2: Support sustainable rangeland management and agroforestry (AfDB + GCF Financed):
+
+This investment activity aims to sustainably improve land and rangeland productivity. It will support various initiatives to improve rangeland management and regeneration at regional and national levels.
+
+In Djibouti, for example, AfDB financing will be used to carry out regeneration, enrichment and management activities on 25 kilometres of rangeland, including planting trees and shrubs, and establishing 1,000 hectares of community forestry. In addition, GCF funding will be used to regenerate, enrich and manage a further 500 hectares of rangeland, construct a green wall, establish nurseries for endangered species and develop anti-erosion structures in catchment areas.
+
+In Ethiopia, investments will be made in bush clearing on 31,500 hectares, soil and water conservation measures, reseeding and rangeland management, and the purchase of various seeds and agricultural inputs for 10,000 hectares. GCF funding will promote physical and biological soil and water conservation techniques, expand rangeland agroforestry and rehabilitate 600 hectares of rangeland affected by invasive plant species.
+
+In Kenya, activities will include identification and mapping of degraded rangelands, support for land use planning, construction of erosion control structures, support for spring protection and soil erosion control, and tree planting in degraded areas.
+
+In Somalia, rehabilitation and management of 3,500 hectares of rangeland will be carried out, along with dissemination and training activities with ILRI.
+
+In Southern Sudan, 1,000 kilometres of livestock routes will be constructed/rehabilitated, and 3,000 hectares of rangeland will be rehabilitated and managed using participatory approaches. In the IGAD region, efforts will focus on operationalising and institutionalising the IGAD Regional Rangeland Management Strategic Framework, improving the competitiveness of livestock value chains, and assessing cross-border veterinary laboratories.
+
+## 60. Output 1.3: Increased adoption of climate-smart innovations.
+
+## Activity 1.3.1: Provide extension services and deploy climate-smart innovations to improve agricultural and fodder production (AfDB + GCF Financed):
+
+This activity will address a major barrier to the uptake of innovation in the region. This is mainly due to limited knowledge of CSA technologies and their applications. It will provide extension services and access to resilient improved varieties.
+
+According to the World Bank (2021), scaling up support for climate-smart agriculture (CSA) across the
+
+
+---
+*Chunk pages 46–46*
+*Token usage:* input=1201 (sys=94, user=1107), max_out=1024, ctx=8192
+---
+
+# [Page 1]
+
+## GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 38
+
+agri-food value chain through robust policy and technology interventions can deliver robust triple-win benefits: increasing productivity, reducing greenhouse gas emissions, and improving resilience to climate-related shocks. In Djibouti, for example, under this activity, BREFOL will focus on: 1) developing and disseminating tools from the catalogue of technologies and good practices with the TAAT programme to producers, including women (<30%) and youth (<30%) in the context of climate change (AfDB), and 2) drafting an agreement between ISV and DAF to set up trials and multiplication of fodder seed production, and purchase and distribute 1,000 improved breeds of goats for restocking and livestock feeding (GCF). For Ethiopia, this activity will finance 1) fodd er, crop and aquaculture production using innovative TAAT technologies (see Annex 2). 1 for TAAT achievements across the continent) and TAAT - Technical Assistance for Development of Catalogue of Innovative Technologies and Best Practices (AfDB), and 2) Pr ocurement of 30 machinery/equipment to improve fodder production, establishment and strengthening of 30 hay storage facilities and fodder banks to stabilise fodder supply to agricultural MSMEs, establishment and strengthening of 30 fodder nurseries and support to 60 demand-driven and community-based small-scale irrigated drought-tolerant fodder seed production activities in selected locations (GCF). In Kenya, the AfDB will invest in capacity building of NARES officers, extension workers and farmer organisations on TAAT technologies, as well as access to and adoption of new genetics and associated technologies for the fish sector, including the production of high quality, low-cost fish feed and improved processing techniques. GCF funds will be invested in ext ension services and demonstrations of innovative technologies to reach 42,000 pastoralists and smallholder farmers, including capacity building of extension workers and farmer organisations on climate-smart fodder technologies. South Sudan, under this activity, will invest GCF resources in resilient fodder production systems in the absence of AfDB support by establishing additional fodder banks (with farm and fodder handling equipment, fodder storage infrastructure and fodder bank operating costs) to benefit 50,000 pastoralists and their 250,000 livestock. In addition, 50 tonnes of resilient fodder varieties will be provided. Finally, at the regional level, IGAD will invest AfDB resources to develop an interactive online tool that will be used by countries to identify the most appropriate and easy-to-adopt solutions for their agro-pastoralists, and to organise an interactive regional climate smart technology fair. Complementary GCF resources under this activity will support the development and dissemination of extension materials on innovative technologies, including support for the development of resilient forage systems.
+
+## 61. Activity 1.3.2 : Disseminate resilient varieties to improve agricultural and fodder production (GCF Financed for all countries and AfDB for Kenya): This activity aims to increase fodder production in the 5 countries to secure livestock production. It will mainly support commercial fodder production through the establishment of fodder banks in pastoralist areas, contributing to improved livelihoods and reduced livestock vulnerability. BREFOL will provide more than 264,000 pastoralists in the 5 countries with resilient seeds to increase fodder production. In Djibouti, through a partnership with the International Livestock Research Institute (ILRI), efforts will focus on extension services to train 40,000 pastoralists/agro-pastoralists in 50 districts on rangeland management and disseminate ra ngeland management plans (RMP). Similarly, in South Sudan, GCF funds will be used to provide extension services to 4,000 pastoralists and smallholder farmers. Beneficiaries in the other three countries include 120,000 pastoralists in Ethiopia, 50,000 in Kenya and 50,000 in Somalia.
+
+## 62. Component 2: Supporting Low Carbon and Resilient Development of Agribusinesses: There is a growing emphasis on developing the agribusiness sector to enable vulnerable communities and people to adapt to climate change. Agribusiness development, such as access to digital technology and markets, entrepreneurship development and access to innovative financial instruments, has the potential to boost rural productivity, increase competitiveness and help rebuild better and stronger agriculture and food production systems, especially after COVID-19, and address climate change. This is an important change pathway to build resilience and address climate change issues through climate finance solutions in the HoA (IDDRSI Priority Intervention Area 2). This means facilitating market access, trade and financial resources. Thus, in line with IDDRSI PIA 2, Component 2 of BREFOL will
+
+
+---
+*Chunk pages 47–47*
+*Token usage:* input=775 (sys=94, user=681), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 39
+
+## 64. Activity 2.1.1: Establish and deploy digital advisory services using PPP mechanism (AfDB + GCF Financed)
+
+Promoting sustainable and resilient agro-pastoral value chain development requires timely access to various updated information on technologies, finance, market, climate information, Early Warning System (EWS), etc. for all stakeholders. This activity will therefore respond to these important needs for which the PPP is adopted to ensure sustainability.
+
+The implementation of this activity will build on the digital advisory services approaches developed by AfDB under the African Adaptation Acceleration Programme (AAAP, see Appendix 2.3). The activity will support the development of digital solutions through public-private partnerships (see Annex 25 for more details).
+
+## 65. Proposed Public Private Partnership Approach for scaling Digital Tools
+
+Despite the significant growth of digitalization in Africa's agricultural sector, only 33 million of these rural smallholder farmers have been registered by the approximately 390 digital companies operating in Africa in 2019, according to the CTA/Dalberg Advisors report. However, the report recognizes that "digitalization could be a game changer in increasing productivity, profitability and resilience to climate change" and other economic stressors.
+
+Both the EU-Africa Task Force on Rural Africa (TFRA) report and the Global Forum on Food and Agriculture (GFFA) communiqué highlighted the power of digitalization to transform agriculture and rural economies. Figure B.3.1 illustrates the importance of digitizing the agricultural value chain.
+
+Figure B.3.2: Importance of digitalization on smallholder agriculture: Source CTA/Dalberg Advisors Report
+
+## 66. One of the reasons for the low level of digitisation in African rural communities is the lack of appropriate public-private partnerships to scale up the adoption of digital solutions.
+
+Other challenges that have been identified with lack of traction in the adoption of digital solutions include the following:
+
+- The presence of many small agritech start-ups with stand-alone applications that address limited agricultural challenges in most project countries. In some countries, such as Kenya, the emergence of many agritech startups has led to fragmentation of the sector, and many of these startups have not been able to scale beyond a few hundred users.
+- Most digital agricultural interventions are government and NGO driven, without a corresponding sustainability strategy to ensure the continued use or scaling of the digital solutions beyond the life of the projects that sponsored them.
+- Lack of privately developed infrastructure to support agricultural services and general lack of public-private partnerships for business model innovation.
+- Lack of market matching platforms for smallholder farmers and pastoralists.
+- Limited critical information services for smallholder farmers and agropastoralists on climate-smart agronomic practices.
+
+Among the reasons for low levels of digitization among African rural communities is lack of appropriate public private partnership to scale-up the adoption of digital solutions.
+
+
+---
+*Chunk pages 48–48*
+*Token usage:* input=727 (sys=94, user=633), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 40
+
+## Solutions
+
+Other challenges that have been identified with lack of traction in the adoption of digital solutions include the following:
+
+### 67. Methodology for the PPP Business Model Innovation
+
+The methodology for the selection of the private sector partner and the subsequent development and deployment of the digital solutions shall include the following procedure, as shown in Figure B.3.2 (see Annex 25 for more details):
+
+![Figure B.3.3: Methodology for developing the PPP business model innovation](#)
+
+### 68. Under this activity, AfDB and GCF will:
+
+1. Support over 1,142,000 smallholder farmers (women and youth), farmer organizations and agribusiness MSMEs to benefit from extension on using digital advisory services; and
+2. Establish a regional innovation hub/data centre to coordinate and share knowledge among innovation partners, governments, and other stakeholders.
+
+### 69. Activity 2.1.2: Construct rural markets (AfDB + GCF Financed)
+
+Limited access to markets is a major constraint for farmers and pastoralists to get the right price for agropastoral products. This activity will address this constraint through the construction and development of various market infrastructure components in different regions of the participating countries, with the main objective of facilitating trade in agropastoral products.
+
+In Djibouti, efforts will focus on the construction of two community markets and the rehabilitation of rural market roads, as well as the development of livestock infrastructure in five community markets.
+
+In Ethiopia, efforts will include the construction of 60 km of access and feeder roads, six livestock market centres and 30 fodder market centres.
+
+Kenya will receive support for the establishment of a market with digital extension infrastructure and the construction of 14 demand-driven rural markets.
+
+In Somalia, activities will include the construction of 10 livestock market fences and shade structures, as well as technical studies and supervision of marketing infrastructure works, and the construction of 17 demand-driven rural markets.
+
+In Southern Sudan, activities will support the professionalization of agro-pastoral value chains/cooperatives, the development of smart maps for livestock routes and climate information, the establishment of a national e-registry of pastoralists and farmers, the facilitation of the provision of digital financial services, and the construction of 10 demand-driven rural markets.
+
+### 70. Output 2.2: Developed inclusive MSMEs and cooperatives with access to climate financing
+
+### 71. Activity 2.2.1: Train women and youth on entrepreneurial skills in renewable energy technologies and/or AVC development including access to credit line (AfDB and GCF Financed)
+
+Low technical capacity is a major constraint for women and youth to access renewable energy technologies and/or AVC development including access to credit line. This activity will address this constraint through training programs that focus on building entrepreneurial skills in renewable energy technologies and/or AVC development, including access to credit line.
+
+
+---
+*Chunk pages 49–49*
+*Token usage:* input=1362 (sys=94, user=1268), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 41
+
+## Activity 2.2.1: Empower women and youth in agricultural value chain (AVC) activities and job creation
+
+and managerial capacity has been a major constraint for women and youth in developing SMEs for agricultural value chain (AVC) activities and job creation.
+
+Under this activity, BREFOL will train over 2,350 women and youth from 772 cooperatives and MSMEs on entrepreneurship in renewable energy technologies (solar and biogas) and agribusiness. The aim is to empower producer groups, including women's groups, through training, structuring and awareness raising on entrepreneurship, leading to the development of business plans for cooperatives and MSMEs.
+
+In Ethiopia, support will be provided to strengthen existing cooperatives through capacity building and technical assistance, as well as tailored training materials for women/youth led MSMEs in multiple languages.
+
+In Kenya and Somalia, the focus will be on supporting regulatory processes, developing a rural energy catalogue, and training youth and women on bio-digesters and solar energy systems.
+
+South Sudan will support youth and women's groups to develop sub-projects, support youth associations/cooperatives in beekeeping, and provide entrepreneurship training for women and youth MSMEs. Training will include business plan development and linkages to credit lines and commercial banks.
+
+This activity will build on the women's empowerment approaches developed under the AfDB's AFAWA programme (see Appendix 2.2).
+
+## Activity 2.2.2: Facilitate access for women and youth groups to renewable energy (solar and biodigester systems) to enhance alternative income generation (AfDB + GCF Financed)
+
+Limited access to energy causes significant post-harvest losses in agro-pastoral production. The fossil energy used is a source of greenhouse gas emissions.
+
+Under this activity, more than 10,680 women and youth entrepreneurs will be able to access gender-sensitive climate finance to invest in the introduction of renewable energy for staple food processing (4.8 MW solar and 3,890m³ (~0.12MW) biodigester systems) through the BREFOL Credit Window.
+
+In Djibouti, this activity aims to establish a gender-sensitive financing mechanism tailored to the needs of smallholder farmers, fishers and MSMEs, including guarantee funds and access to micro-credit for women, including 0.3 MW of solar for food processing to women/youth led MSME/IGA groups.
+
+In Ethiopia, the project will build community processing units for youth and women, strengthen existing cooperatives, facilitate capacity building for district agricultural offices to support MSMEs, purchase equipment for demand-driven processing units, coordinate the establishment of women/youth led MSMEs for renewable energy management, and establish 700 (3500m³) biodigesters for women/youth led MSMEs. In addition, access to renewable energy will be provided, including 1 MW of solar energy for food processing for women and youth-led MSMEs.
+
+In Kenya, inputs and access to renewable energy such as solar and bio-digesters will support alternative income generation for women and youth, including the provision of 1.5 MW of solar and 120 m³ of bio-digesters for food processing.
+
+In Somalia, renewable energy alternative income generation inputs will be provided, including 1.0 MW of solar food preservation systems for women and youth groups.
+
+South Sudan will receive support for 1 MW of solar and 270 m³ of bio-digester food processing systems for women and youth-led associations, as well as training and deployment support.
+
+## Activity 2.2.3: Design and operation of innovative credit lines through selected public financial institutions (PFIs) in participating countries (GCF funded)
+
+PFIs and the private sector in general do not invest significantly in AVC business due to the high-risk nature of the sector. As discussed under barrier #4, one way to attract private capital to climate-sensitive sectors is to provide the right incentives and an enabling environment suitable for private sector operations.
+
+To this end, BREFOL will use GCF concessional resources to support the establishment of a dedicated direct lending window (BDCW) to provide two local PFIs in Djibouti and Ethiopia with stable, lendable resources to adequately address the financing needs of smallholder farmers, pastoralists, agribusiness MSMEs, FBAs and other MSMEs, such as cooperatives, with an interest in green/circular economy development (Please see Annex 26 for more details of the LPFIs). A total of 1,985 farmer groups, cooperatives and MSMEs will benefit from the BDCW, of which at least 50% will be led by women and youth.
+
+A legal agreement will be signed at the level of
+
+
+---
+*Chunk pages 50–50*
+*Token usage:* input=855 (sys=94, user=761), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 42
+
+## Table B.3.2: Deposit vs. lending interest rates in participating countries
+
+74. In addition, under this activity, BREFOL will encourage existing climate insurance providers to scale up weather insurance (WII) coverage for livestock production. This will be done by coordinating the design of climate insurance schemes for targeted agri-MSMEs (cooperatives, enterprises, aggregators, etc.); developing frameworks that integrate climate insurance into climate finance strategies; optimising the use of concessional funds and grants (by providing targeted subsidies, de-risking investments of producers/enterprises/aggregators; and developing smart subsidy criteria for a climate insurance scheme for agri-MSMEs. Under this activity, TA support will be provided to establish or strengthen access to digital services for parametric/index insurance in Ethiopia. GCF resources will therefore complement AfDB investments to support the establishment of a BEFOL Direct Insurance Credit Window (BDICW) with the selected banks. This will help 3,600 smallholder and pastoralist groups, MSMEs, FBAs and other agribusiness MSMEs to mitigate climate-related shocks in the region. The criteria for the selection of sub-project beneficiaries under Activity 2.3.1 are summarised in Table B.3.3, while the sub-activities eligible for funding under the BDCW are listed in Table B.3.4 (subject to change on a case-by-case basis). In principle, the project will ensure that each beneficiary of the credit line is covered by a sustainability insurance under the BDICW.
+
+## Figure B.3.3: BREFOL Direct Credit Window (BDCW) to attract Private Sector Investments in the HOA
+
+75. It is important to emphasise here that the AfDB has been at the forefront of supporting SME development in Africa through credit lines, with notable success. For example, in 2016, the AfDB approved a $150 million line of credit (LoC) to Nigeria's United Bank for Africa (UBA) Plc to finance infrastructure and SME projects, including women-owned enterprises in Nigeria (https://www.afdb.org/fr/node/24.). Still in Nigeria, in 2018, the AfDB approved a $50 million LoC to Nigeria's Fidelity Bank Plc to support small and medium-sized enterprises and women-owned enterprises in selected transformative sectors, including nearly one hundred SMEs in manufacturing, indicator deposit interest rate lending interest rates by FDED & DBE BREFOL maximum proposed rates
+
+| Country | Deposit Rate (%) | Lending Interest Rates | Maximum Proposed Rates |
+|---------|------------------|------------------------|------------------------|
+| Djibouti | 1.70% | 12% - 15% | 6.00% |
+| Ethiopia | 7.70% | 12% - 18% | 9.00% |
+
+5% matching funds from smallholder farmers, pastoralists, and micro-enterprises, and 10% matching funds from small-medium agribusiness enterprises (Crowds in additional $2.25 million)
+
+Funds Flow
+GCF Funds Flow
+BREFOL Direct Credit Windows (BDCW)
+for the growth of Agribusiness MSMEs 
+($24.35 million)
+(Crwds in additional $5.49 million) 
+from LPFIs as simple co-financing
+
+
+---
+*Chunk pages 51–51*
+*Token usage:* input=1135 (sys=94, user=1041), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 43
+
+## 50 Djibouti | MFW4A - Making Finance Work for Africa.
+
+## 51 Ethiopia | MFW4A - Making Finance Work for Africa.
+
+In 2022, the AfDB approved a $50 million LoC with Nigeria's First City Monument Bank (FCMB) to support access to finance for small and medium-sized enterprises and women-owned businesses. FCMB will use the credit line to expand lending activities that will support the country's post-pandemic economic recovery and promote more inclusive and climate-resilient growth. It will focus on companies in Nigeria's agribusiness, manufacturing, healthcare and renewable energy sectors (https://www.afdb.org/en/news-and-events/).
+
+## 76. As the AfDB will have an oversight role over the selected local PFIs, it will ensure that any changes to the selection criteria or the disbursement of any sub-loans to the selected beneficiaries are strictly in accordance with the sub-loan agreements between the local PFIs and the sub-loan beneficiaries.
+
+## 77. The financial context of the participating countries under the BDCW and the selected PFIs
+
+## 78. Djibouti:  
+Djibouti's financial system is still very underdeveloped. It is dominated by the banking sector, which holds more than 95% of financial sector assets. As of July 2019, the financial landscape consisted of 11 banks with majority foreign ownership, including 8 traditional commercial banks and 3 Islamic banks. The non-bank financial sector consists of 20 licensed financial auxiliaries (foreign exchange bureaus and/or remittance offices), 3 microfinance institutions, 2 insurance companies, and an economic development fund specialising in SME financing.
+
+Access to financial services is constrained by several factors, including: (i) unemployment and poverty; (ii) low mobile phone and internet penetration; (iii) high borrowing costs; and (iv) underdeveloped payment and credit information systems.
+
+## 79. Digital finance also remains underdeveloped, partly due to limited internet and mobile penetration and a lack of institutional and technical capacity (barrier #3). Access to finance for SMEs is a recurring problem in Djibouti. Most SMEs operate in the informal sector and do not have access to bank loans. SME loans account for only 12% of corporate loans. The limited scope of the credit reporting system and the unreliability of the financial information provided by SMEs partly explain the low level of business lending.
+
+## 80. Ethiopia:  
+Ethiopia's financial sector comprises 18 banking institutions, of which 16 are private and 2 are public. The total number of bank branches was 4,757, with more than a third (35.3%) located in the capital, Addis Ababa. The country has 37 microfinance institutions (MFIs), 17 insurance companies (16 of which are private) and 532 agencies.
+
+Most micro, small and medium-sized enterprises (MSMEs) and large companies have access to traditional financial services to manage their liquidity. However, access to credit is more limited, especially for MSMEs: only 30% have access, compared to 68% of large enterprises. Despite a vibrant digital financial subsector, barriers remain, including regulatory limits on daily transactions and mobile bank account balances.
+
+## 81. Criteria for the selection of sub-project beneficiaries under activity 2.3.1:
+
+## 82. Definition of Smallholder Farmers:  
+The definition of smallholder farmers varies from country to country. For the purposes of this programme, the most widely used definition of smallholder farmers has been adopted, namely farmers with a low asset base and less than 2 hectares of land under cultivation. Alternatively, they can be defined as farmers who operate under structural constraints, such as sub-optimal access to resources, technology and markets, or with limited resource endowments compared to other farmers in the sector. Farming less than 2.0 hectares.
+
+## 83. Farmer-based association (FBA):  
+These are associations or organisations established within a given territory to address the common needs of their members (smallholder farmers).
+
+## 84. Agricultural Cooperative Society (ACS):  
+Defined as a business association in which farmers pool their resources to increase revenues, reduce costs or share risks, depending on the type of cooperative.
+
+## 85. Agro-dealer (AD):  
+Defined as a locally based entrepreneur who sells seeds, fertiliser and agrochemicals to poor farmers in rural areas.
+
+
+---
+*Chunk pages 52–52*
+*Token usage:* input=1032 (sys=94, user=938), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 44
+
+## [Page 1]
+
+52 Afful-Koomson et al. (2014). Economic and Financial Analysis of Small and Medium Food Crops Agro-Processing Firms in Ghana. United Nations University Institute for Natural Resources in Africa, Accra, Ghana.
+
+53 Defined as individuals between 18 and 35 years of age
+
+86. Producer Organisation (PO): In this context, a PO is defined as any legal entity formed by primary producers in the AFOLU and energy sectors that provides for the sharing of profits/benefits among its members. This could include, for example, any farmers' association (FBAs, WABEs, YA BEs, fishermen, poultry, livestock, dairy, vegetable, palm, oil producers, weavers, etc.), cooperative, ESCO, etc.
+
+87. Micro, small and medium enterprises (MSMEs): The definition of MSMEs varies from country to country. However, for this programme, the definition of MSMEs proposed by Afful -Koomson et al. (2014)52 will be used. This is based on the following quantitative variables, which are described in Table B.3.4 below:
+
+### Table B.3.4. Quantitative Variables for Defining MSMEs
+
+| Category | Quantitative Aspects |
+|----------|----------------------|
+| Medium Enterprise | Employs between thirty and hundred people; has a total annual turn-over in the range of US$ 20,000 to $ 50,000 and with fixed assets not exceeding $1,000,000. |
+| Small Enterprise | Employs between ten to twenty-nine people; has a total annual turn-over in the range of $2,000 to below $20,000, and with fixed assets not exceeding more than $100,000. |
+| Very Small and Micro Enterprises | Employs between one to nine people; has a total annual turn-over between $500 and $2,000, and with fixed assets not exceeding $10,000. |
+
+Source: Adopted and modified from Afful-Koomson et al. (2014)
+
+88. A formally registered agribusiness enterprise with more than 51% women's and youth's 53 ownership (more than 51% of the firm's assets holding or shares are owned by a woman or a youth. This will be assessed and validated against firm registration information from the relevant MDAs in charge, and the share of profits during the tenor of the sub-loans.
+
+89. The criteria for selecting FBAs will be like that of the MSMEs as follows:
+
+- A formally registered FBA/O with the Ministry of Agriculture or any other relevant body; The size of the Association must not be less than 5 members with at least 60% of the members being women or youth;
+- Activities are mainly carried out along the agricultural and food systems value chains, including renewable energy;
+- Track record of loan repayments;
+- Operational bank account of more than 2 years;
+- Records and bookkeeping;
+- Agriculture land holding of between 5 and 15 ha; and
+- Any other characteristics deemed necessary by the LPFIs
+
+See Annex 26 for possible eligible activities or investments under the Credit Line Facility.
+
+90. Activity 2.2.4: Provide technical assistance to MSMEs, local PFIs, and cooperatives to create an enabling environment for credit access and sustainability (AfDB + GCF Financed): Farmers, pastoralist groups and SMEs face financial and non-financial constraints in developing the agricultural value chain to add value and increase income. This activity aims to support these actors to ensure that they have access to credit, but also that they manage it efficiently to increase their income and repay the credit. It will therefore provide technical assistance and allocate funds to finance early-stage agripreneur start-ups in Ethiopia through grants and repayable grants via business developmentment service organisations. It will also conduct a needs assessment to identify eligible agribusiness MSMEs, PFIs and cooperatives, coordinate ongoing dialogue, facilitate the review of legal and policy
+
+---
+
+
+---
+*Chunk pages 53–53*
+*Token usage:* input=1163 (sys=94, user=1069), max_out=1024, ctx=8192
+---
+
+# C GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 45
+
+frameworks for credit lines suitable for pastoral contexts, support local financial institutions, review existing legal and institutional frameworks, and establish six knowledge-sharing platforms with relevant stakeholders. In Kenya, the focus will be on capacity building for agro-pastoral communities on index-based livestock insurance schemes, sensitising the community on youth agribusiness plans for loan applications in collaboration with PFIs, creating linkages and networks with PFIs dealing with agricultural lending, and providing capacity building on business plan development to support agricultural investments. In addition, women and youth will be trained in agro-pastoral value chain (AVC) entrepreneurship skills and access to credit will be facilitated to reach 100 MSMEs with a total membership of 2,000. The activity also aims to develop a public-private partnership (PPP) framework and structure to incentivize private sector insurance companies to introduce index-based livestock insurance (IBLI) products, and to design and validate appropriate climate risk contracts for climate and livestock insurance in Somalia. A total of 4,395 farmer/pastoralist groups and MSMEs will benefit from capacity building in financial management and marketing to improve their management efficiency, thereby increasing their ability to repay the loan.
+
+## Component 3: Strengthening Rural Communities’ Capacity to Adapt to Climate Change
+
+Efforts to strengthen the capacity of agropastoral communities in the HoA to adapt to climate change are imperative due to the region's vulnerability to environmental changes exacerbated by climate change. The IDDRSI's Priority Area of Intervention (PAI) 4 emphasises disaster risk management (DRM) as central to enhancing resilience and food security in the HoA. Climate-related disasters such as droughts, floods and unpredictable rainfall patterns pose a significant threat to agricultural productivity and livelihoods in the region. By prioritising DRM, initiatives can focus on early warning systems, sustainable land management practices and community-based resilience building to mitigate the impacts of climate change on agropastoral communities. Such efforts aim to enhance adaptive capacity, promote sustainable resource management and ensure food security in the face of the challenges posed by a changing climate in the Horn of Africa. Thus, in line with IDDRSI PAI 4, BREFOL will deliver the following outputs to improve DRM in the HoA.
+
+## Output 3.1: Enhanced access to climate information and early warning systems
+
+### Activity 3.1.1: Expanding the network of agro-meteorological stations to generate data for climate advisory services
+
+It is essential to expand the network of agro-meteorological stations to increase the availability of climate information for improving climate resilience, agricultural planning and livelihoods in the HoA. This activity will be key to improving climate resilience and agricultural productivity in Ethiopia, Kenya and South Sudan. The installation of agro-meteorological stations will significantly improve the capacity to generate accurate and localised weather and climate data, enabling more effective climate advisory services. In Ethiopia, twenty-five (25) automatic weather stations will be established to strengthen the early warning system and improve weather observation coverage, benefiting pastoralists and agro-pastoralists. In Kenya, fourteen (14) stations will be installed, with a focus on placing at least two in each county, to improve data generation for climate-informed extension services, enabling farmers to make informed decisions. Similarly, in South Sudan, a total of eight (8) automated agro-meteorological stations will be installed in project counties to strengthen the network infrastructure for digital climate-advisory services and support resilience-building efforts in vulnerable communities.
+
+### Activity 3.1.2: Integrate and disseminate climate information and early warning into the established digital advisory services
+
+This activity will integrate and disseminate climate information and early warnings in Ethiopia, Kenya and South Sudan using digital solutions platforms established through the PPP mechanism (see Annex 25 on the digital solutions PPP model under Activity 2.1.1). The National Meteorological Services (NMS) of the three countries will work with qualified private sector entities providing digital agro-advisory solutions to update and integrate climate information into the digital solution model. Memoranda of Understanding (MoUs) will be signed with the NMSs to facilitate access to climate data and information for agropastoral and pastoral communities. The PPP mechanism will support coordination, capacity building and monitoring and evaluation efforts with NMS. The established PPP will facilitate the collection, synthesis and dissemination of information and create a business case. Specifically in Ethiopia, this activity will support the recalibration of the existing ATI
+
+
+---
+*Chunk pages 54–54*
+*Token usage:* input=1120 (sys=94, user=1026), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 46
+
+## Hotline Service
+- Provide tailored advice to the pastoral community, adding features and improving usability.
+- One (1) mobile application for pastoral extension agents will be customised to disseminate climate information and early warnings to 700,000 pastoralists and smallholder farmers (an average of 100,000 per district).
+- Unstructured Supplementary Service Data (USSD) and Interactive Voice Response (IVR) systems for climate information dissemination will also be developed and made operational.
+
+## Climate Information and Early Warning Systems
+- In Kenya, climate information and early warning systems will be deployed, and technical assistance will be provided to train and equip 500,000 pastoralists and smallholder farmers in the use of climate services.
+- Similarly, in South Sudan, technical assistance support will be provided to train and equip 3,000 pastoralists and smallholder farmers in the use of climate services.
+
+## Output 3.2: Strengthened Regulatory and Policy Frameworks and Institutional Capacity for Climate Resilience
+
+### Activity 3.2.1: Support delivery of climate regulatory framework and mainstreaming of climate change into agricultural sector policies and strategies
+- The enabling environment is critical to the achievement of the objective of BREFOL, especially for the mobilisation of the private sector in the development of agribusinesses for value addition to agro-pastoral products.
+- The main constraint to investment for SME development is the lack of adequate regulation that can encourage private sector investment.
+- This activity will further improve the existing investment and regulatory framework in the participating countries (see Annex 9).
+- Support capacity building for participating countries on MRV-related activities.
+
+### Policy Dialogue and Climate Index-Based Insurance
+- Investments will be made to facilitate mainstreaming policy dialogues with key stakeholders on climate index-based insurance to advance actionable reforms in Ethiopia.
+- Coordination will take place between the National Meteorological Agency (NMA), ATI, insurance service providers, the Ethiopian Disaster Risk Management Commission (EDRMC) and other key stakeholders to establish independent verification of index insurance and standardisation of insurance packages for the agro-pastoral and livestock value chain.
+
+### Mainstreaming Climate Change into Sector Policies
+- In Kenya and Somalia, this activity will support the mainstreaming of climate change into sector policies and strategies, including dissemination in the agriculture, water, livestock and environment sectors.
+- In South Sudan, the activity will support the National Agriculture and Livestock Extension Policy, the Integrated Natural Resources Research Policy, the Agriculture Sector Policy and the Pastoralism Policy.
+- At the regional level (IGAD), socio-economic and environmental data on vulnerability and resilience will be regularly collected and processed.
+- Documentation and sharing of best practices on adaptation and resilience will be supported, as well as mapping and assessment of existing climate resilience projects and initiatives.
+- Facilitate dialogue on climate change resilience in the region and develop and disseminate a report on the state of climate and climate change impacts in the IGAD region.
+- Raise awareness and facilitate stakeholder engagement on existing regional and national climate change and adaptation policies and strategies, including the Framework for Weather, Water and Climate Services, the IGAD Regional Climate Change Strategy and the Climate Change Adaptation Strategy.
+- Support will be provided for mapping regional and Member States' requirements for mainstreaming climate change into sectoral policies, and for dialogue and platforms for sharing data and experiences on mainstreaming climate change into sectoral policies and strategies.
+- A tracking platform on regional and national policies and strategies will be developed to support informed sector decisions.
+
+## Gender-Sensitive Pro-poor Programmes and Policies
+- Given the high level of discrimination against women and girls in the HoA (Barrier No. 5) and the fact that this marginalised group plays a crucial role in the management of ecosystem services and food security in the region, the design and implementation of gender-sensitive pro-poor programmes and policies will contribute to the economic and financial empowerment of women and girls, in line with IDDRSI Priority Area 7.
+- TA support is therefore requested from the GCF to conduct feasibility studies in the five IGAD countries to assess the feasibility of rehabilitating/developing new cooperative food security banks under the management of women-led organisations.
+
+## Component 4: Program Coordination and Knowledge Management (All countries and IGAD)
+- This component will serve as a cornerstone for effective programme management, evaluation and coordination and will include several key aspects.
+- Firstly, it will involve the conduct of baseline surveys in various areas such as energy use and penetration, socio-economic conditions, assessment of the enabling business environment for agribusiness MSMEs, quality of life, agricultural baselines and food
+---
+
+
+---
+*Chunk pages 55–55*
+*Token usage:* input=1100 (sys=94, user=1006), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 47
+
+## Security
+
+These surveys will provide essential data for assessing the impact and progress of the programme. Second, the component will cover project implementation (see Annex 5 for the detailed implementation schedule), management and coordination at country and regional levels to ensure smooth implementation of activities and alignment with programme objectives. Thirdly, it will address procurement and disbursement arrangements for goods, services and consultancy at both project and sub-project levels, ensuring transparency and efficiency in resource allocation (see Annex 10 for a detailed procurement plan). Fourth, the component will focus on the organisation of procurement and implementation at the level of the Executing Entities (EEs) and Project Implementing Units (PIUs) or Project Management Units (PMUs), streamlining processes and minimising bottlenecks. Fifth, it will oversee financial management arrangements at the level of EEs and PIUs, including preparation of audits, financial statements and reporting, ensuring compliance with financial regulations and accountability standards. Finally, the component will include monitoring and evaluation of project and sub-project performance measurement frameworks, using data from the M&E plan (Annex 11) to track progress, identify areas for improvement and ensure achievement of programme objectives.
+
+Overall, this component will play a key role in facilitating effective coordination, management and knowledge dissemination throughout the programme implementation process in order to achieve the outputs listed below.
+
+## Output 4.1: Project management and coordination
+
+### Activity 4.1.1: Project management and Coordination
+
+This activity will focus on project management and coordination to ensure efficient implementation and alignment with programme objectives. Staff for the Project Management Unit in Ethiopia, Kenya, Djibouti and IGAD, and the Implementing Agency in Somalia and South Sudan will be recruited through a competitive process to ensure transparency and to select the most qualified person or entity for the task. Financial and procurement audits will be conducted regularly to ensure accountability and transparency, and to ensure that resources are used effectively and in accordance with established AfDB policies. This comprehensive approach to project management will facilitate smooth implementation, enhance oversight, and build confidence in the integrity and effectiveness of the project. Global coordination of the project will be provided by IGAD to ensure synergy in the implementation of the national and regional components.
+
+### Activity 4.1.2: Technical and institutional capacity building
+
+This activity will focus on technical and institutional capacity building to enable the effective implementation of the project in the context of conflict, fragility and poor governance. In particular, it will focus on building the capacity of stakeholders to implement the Gender Action Plan, Environmental and Social Management Frameworks (ESMFs) and Environmental and Social Management Plans (ESMPs) (see Annex 6). These efforts will include training and support to stakeholders involved in these processes, including project staff and relevant institutions, to ensure compliance with environmental and social standards. In addition, gender mainstreaming will be emphasised throughout the project, integrating gender considerations into all aspects of design and implementation. A baseline survey will provide essential data for project design and monitoring. Dedicated roles such as project accountant, procurement specialist and project coordination support officer will be established to ensure efficient financial management, procurement processes and overall project coordination. This comprehensive approach to capacity building and staffing will support the successful implementation of the project while promoting environmental and social sustainability and gender equality.
+
+### Activity 4.1.3: Monitoring and Evaluation
+
+This activity includes monitoring and evaluation through supervision missions carried out by national and regional focal points (see Annex 11 for detailed programme M&E plan). These missions will ensure that project activities are on track and meeting their objectives. Regular meetings and workshops will provide an opportunity for stakeholders to discuss progress, address challenges and share best practices. The project launch will mark the start of implementation and set the stage for effective coordination and cooperation. A mid-term review will provide a comprehensive assessment of progress and identify areas for adjustment or improvement where necessary. Finally, a project completion report will summarise achievements, lessons learned and recommendations for future projects, providing valuable insights for stakeholders and contributing to ongoing learning and development in the field. The costs of conducting the mid-term review and the final independent review are covered by the AE Fee (see Annex 12).
+
+
+---
+*Chunk pages 56–56*
+*Token usage:* input=1027 (sys=94, user=933), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 48
+
+## Activity 4.1.4: Knowledge Management and Communication
+
+This activity will focus on knowledge management and communication to facilitate project feasibility and knowledge sharing. This initiative will involve the establishment of robust systems for collecting, organising and disseminating project-related information and best practices. Stakeholders will be kept informed of project developments, milestones and results through effective communication channels. This proactive approach to knowledge management will enhance project viability by ensuring that decision-makers have access to timely and relevant information for informed decision-making. In addition, by promoting knowledge sharing among project team members and stakeholders, this activity will foster a culture of learning and innovation, ultimately improving the overall effectiveness and sustainability of the project.
+
+## Need for the proposed programme intervention
+
+Both the baseline investment and the GCF interventions have been carefully selected to ensure scalability. This means that fewer resources will be needed to achieve significant economic benefits. In particular, the programme design uses a blended finance structure, introducing innovative financing instruments such as credit lines, matching grants and simple co-financing with selected private sector investors and intermediaries (commercial banks). This approach will help to de-risk and crowd in private sector capital for resilience building in various energy and agriculture, forestry and other land use (AFOLU) value chains in the HOA.
+
+## BREFOL will provide a credit line of USD 24.35 million to leverage an additional USD 8.72 million from two Public Financial Institutions (PFIs) in Dibouti and Ethiopia through the BDCW. These additional leveraged resources will help increase the PFIs' loan portfolio to agribusiness MSMEs and other programme beneficiaries. BREFOL will also assist farmer organisations and agribusiness MSMEs in preparing business plans for PFIs, and beneficiaries' access to the funds will be subject to a matching fund contribution of 5-10%: depending on the size of the agribusiness MSMEs.
+
+## In total, the GCF requested amount of USD 24.35 million in credit lines will help to leverage 35.8% more capital, valued at USD 8.72 million as green blended finance.
+
+## BREFOL will also deploy technological innovations as sub-projects to deliver critical climate-adaptation advisory services, market linkages, crop protocols, gender and rural/extension services through a variety of low- to high-tech channels, depending on the digital development of each country (Table B.3.6). It will also scale up the successful technology dissemination approaches of the Technologies for African Agricultural Transformation (TAAT) programme, which will increase the incomes of smallholder farmers and MSMEs in the HOA. Other key innovations to be scaled up include:
+
+- The approaches of i) the Global Centre on Adaptation's (GCA) Smallholder Adaptation Accelerator Programme (AAAP) for digital advisory services, and ii) the Affirmative Finance Action for Women in Africa (AFAWA) Technical Assistance (TA), which provides advisory services to financial institutions to ensure successful implementation of their product portfolios for women, and strengthens the capacity of women entrepreneurs through training to increase business productivity and growth.
+
+## Table B.3.6: Some key innovations introduced by BREFOL in the HOA
+
+| BREFOL Key Innovations Component/ Sub-component | Type of Innovation | Purpose | Barrier(s) Addressed |
+|-----------------------------------------------|--------------------|---------|----------------------|
+| Regional integration to improve livestock trading, and better control of transboundary animal diseases, pest, and zoonoses | Economic & Scientific Innovations | - Facilitate cross-border trading in livestock and staple food crops<br>- Facilitate control of transboundary animal diseases and zoonoses, including pest control management<br>- Facilitate cost-effectiveness analysis of integrated pest management technologies to fight against fall armyworm, arboviruses in transhumant cattle, and locust's invasion | Barrier No 5. |
+
+--- 
+
+*Note: Page numbers are preserved as per the original document.*
+
+
+---
+*Chunk pages 57–57*
+*Token usage:* input=715 (sys=94, user=621), max_out=1024, ctx=8192
+---
+
+# C GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 49
+
+## • Integration of sustainable land management practices
+
+### C-1, SC 1-2 Technical Innovation
+
+- Promotion of resilient agroecological practices among smallholder farmers and pastoralists to support adaption while fostering ecological health synergies and mitigation co-benefits
+- Improve soil health and fertility
+- Minimize land conflicts associated with fragmentation and degradation
+
+## Barrier No 5
+
+### C-1, SC 1-2 Technology Innovation
+
+- Scale up and disseminate proven agricultural technologies and innovations to millions of smallholder farmers
+- Improve soil health/fertility through improved farming practices
+- Minimize agricultural transaction costs
+
+## Barrier No 3
+
+## • Integration of the Global Centre on Adaptation (GCA) Smallholder Adaptation Accelerator Program (AAAP) to scale up digital advisory services and markets in climate responsive planning
+
+### C-2, SC 2-1 Digital & Market Innovations
+
+Partner with GCA to:
+
+- Scale up the Smallholder Adaptation Accelerator Program (AAAP)
+- Facilitate access to digital advisory services and markets
+- Reduce the transaction cost of doing business in fragile and conflicts prone areas
+
+Barriers No. 1, 3 & 4
+
+## • Integrate innovative financial instruments to help 'crowd-in' additional private sector finances in fragile states
+
+### C-2, SC 2-1 Financial Innovations
+
+Leveraging on GCF concessional finances to:
+
+- Leverage additional private sector investments in fragile states
+- De-risk the agriculture and other land use sectors in fragile states to attract private sector investors
+- Design innovative financial instruments attractive to private investors in fragile states
+- Operationalize access to 'carbon credits' for smallholder farmers
+
+Barriers No. 1, 3 & 4
+
+## • Integrate gender-sensitive food security Banks to empower women economically and financially
+
+### C-3; C 3-3 Technological, Planning, and Implementation
+
+- Economically empower women and girls to fight against gender discrimination and income inequality
+- Increased empowerment of women to play decision-making role in their households in vulnerable communities
+- Increased small-scale or pilot adaptation initiatives adapted and accessible for women to build resilience of vulnerable
+
+Barrier No. 2
+
+
+---
+*Chunk pages 58–58*
+*Token usage:* input=1286 (sys=94, user=1192), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 50
+
+## B.4. Implementation arrangements (max. 1500 words, approximately 3 pages plus diagrams)
+
+### The Accredited Entity (AE): AfDB
+
+The African Development Bank Group (hereinafter referred to as AfDB) is the Accredited Entity (AE). The AfDB is the premier pan-African development institution promoting economic growth and social progress across the continent. It is made up of three institutions, namely:
+
+1. The African Development Bank (AfDB), established in 1964,
+2. The African Development Fund (ADF), a funding window of the AfDB, established in 1972, and
+3. The Nigeria Trust Fund (NTF), established in 1976.
+
+It currently has 81 members, comprising 54 independent African countries (regional members) and 27 non-African countries (non-regional members).
+
+The AfDB focuses on five development priorities as part of its ten-year strategy (2013-2022) to promote inclusive and green growth. The development priorities, commonly referred to as the 'High 5s', are:
+
+(i) Light Up and Power Africa,
+(ii) Feed Africa,
+(iii) Industrialise Africa,
+(iv) Integrate Africa, and
+(v) Improve the Quality of Life for the People of Africa.
+
+This programme is designed to support the realisation of the development priorities of "Feeding Africa" and "Improving the Quality of Life for the People of Africa". The AfDB has supported several transformative activities and investments in these priority areas. These include financing rural infrastructure (such as roads, irrigation, electricity, storage facilities and access to markets) to improve agricultural productivity and competitiveness.
+
+The AfDB has also supported several initiatives to strengthen agriculture and food security, particularly to improve the livelihoods of rural populations in Regional Member Countries (RMCs). As agricultural production in rural communities is largely dependent on rain-fed irrigation, they are highly vulnerable to extreme weather conditions and uncertainties.
+
+It will be unfortunate to pursue an integrated approach to improving agricultural production and food security without appropriate risk-sharing products, access to affordable finance, especially for women, and services to mitigate the impact of climate risks.
+
+The AfDB has financed several related projects and programmes in the HOA region. At present, the AfDB's portfolio in the HOA is estimated at about UA 2.4 billion and is distributed as shown in Table B.4.1.
+
+### Table B.4.1. AfDB’s investment portfolio in the Horn of Africa
+
+| Country    | Djibouti | Ethiopia | Eritrea | Kenya | Somalia | Sudan South Sudan | Uganda | Total |
+|------------|----------|----------|---------|-------|---------|-------------------|--------|-------|
+| Amount (UA Millions) | 107.9    | 1,130.0  | 68.0    | 2380.0 | 69.0    | 141.0             | 9.6    | 2,443.5 |
+
+### The AfDB, as the AE, will receive the GCF proceeds in trust and sign the Funding Activity Agreement with the GCF.
+
+It will sign loan and grant agreements with the Ministries of Finance of Djibouti, Ethiopia, Kenya, Somalia and South Sudan.
+
+### Executing Entities (EE):
+
+The Executing Entities (EE) are the Government of Djibouti, acting through the Ministry of Commerce, Economy and Finance (MoCEF) and the Ministry of Agriculture, Water, Fisheries and Livestock (MoAWFL); the Government of Ethiopia, acting through the Ministry of Finance, Ethiopia (MoFE) and the Ministry of Agriculture (MoA); the Government of Kenya, acting through the National Treasury and Economic Planning (NTEP), Kenya and the Ministry of Agriculture, Water, Fisheries and Livestock and Cooperatives (MoAWFLC); the Government of Somalia, through its Ministry of Finance, Somalia (MoFS) and Ministry of Livestock, Forestry and Range (MoLFR); the Government of South Sudan, through its Ministry of Finance and Planning, South Sudan (MoFP) and Ministry of Agriculture and Forestry (MoAF); and the Intergovernmental Authority on Development (IGAD), which is a separate legal entity. For Southern Sudan, FAO will act as a third-party implementing agency.
+
+### National Designated Authorities (NDAs):
+
+The Ministry of Housing, Urban Development and Environment (Djibouti), the Environment, Forestry and Climate Change Commission (Ethiopia), the National Treasury (Kenya), the Office of the Prime Minister (Somalia) and the Ministry of Environment and Forestry (South Sudan) are the respective GCF National Designated Authorities (NDAs) in these countries.
+
+
+---
+*Chunk pages 59–59*
+*Token usage:* input=1204 (sys=94, user=1110), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 51
+
+## 112. Intergovernmental Authority on Development (IGAD)
+
+The Intergovernmental Authority on Development (IGAD) in Eastern Africa was established in 1996 to replace the Intergovernmental Authority on Drought and Development (IGADD), established in 1986 to mitigate the effects of recurrent severe droughts and other natural disasters that caused widespread famine, environmental degradation and economic hardship in the region. Djibouti, Ethiopia, Kenya, Somalia, Sudan and Uganda took action through the UN to establish the intergovernmental body for development and drought control in their region. Eritrea became the seventh member after gaining independence in 1993, and South Sudan joined IGAD as the eighth member in 2011.
+
+## 113. In view of the emerging political and socio-economic challenges, the Assembly of Heads of State and Government, meeting in Addis Ababa in April 1995, decided to revitalise IGAD and broaden the areas of cooperation between Member States. The new and revitalised IGAD was launched at the 5th Summit of the IGAD Assembly of Heads of State and Government held in Djibouti on 25-26 November 1996. The Summit endorsed the decision to strengthen regional cooperation in three priority areas: food security and environmental protection; economic cooperation, regional integration and social development; and peace and security.
+
+## 114. IGAD is comprised of four hierarchical policy organs as follows:
+
+## 115. THE ASSEMBLY OF HEADS OF STATE AND GOVERNMENT
+
+is the supreme policy making and regulatory organ of the IGAD. It determines the objectives, guidelines and programmes for IGAD and meets once a year. A Chairman is elected from the Member States in rotation.
+
+## 116. THE COUNCIL OF MINISTERS
+
+is composed of the Ministers of Foreign Affairs and one other Focal Minister designated by each member state. The Council formulates policy, approves the work programme and annual budget of the Secretariat during its biannual sessions.
+
+## 117. THE COMMITTEE OF AMBASSADORS
+
+is comprised of IGAD Member States’ Ambassadors or Plenipotentiaries accredited to the country of IGAD Headquarters. It convenes as often as the need arises to advise and guide the Executive Secretary.
+
+## 118. THE SECRETARIAT
+
+is headed by an Executive Secretary appointed by the Assembly of Heads of State and Government for a term of four years, renewable once. The Secretariat assists Member States in formulating regional projects in the priority areas, facilitates the coordination and harmonisation of development policies, mobilises resources to implement regional projects and programmes approved by the Council and reinforces national infrastructures necessary for implementing regional projects and policies.
+
+## 119. The Executive Secretary is assisted by Divisions responsible for:
+
+- Agriculture and Environment  
+- Economic Cooperation and Regional Integration  
+- Health Social Development  
+- Peace and Security  
+- Administration and Finance  
+- Planning Coordination and Partnerships  
+
+## 120. In addition to the above-mentioned departments at the headquarters in Djibouti, IGAD has a number of specialised institutions and programmes hosted by other member states. These include the IGAD Conflict Early Warning and Response Mechanism (CEWARN), the IGAD Security Sector Programme (ISSP), the IGAD Centre for Pastoral Area and Livestock Development (ICPALD), the IGAD Climate Prediction and Applications Centre (ICPAC) and the IGAD Regional Aids Programme (IRAPP). In addition, due to the devastating drought that hit the IGAD region in 2010-2011, affecting more than 13 million people and exacerbating food insecurity to famine levels, IGAD launched the IDDRSI to end drought emergencies through the introduction of innovative sustainable development strategies, policies and programmes at member state, transboundary and regional levels aimed at building resilience to future climatic and economic shocks.
+
+## 121. At the country level, the following Ministries will act on behalf of the various governments as the EEs:
+
+- The Government of Djibouti, acting through its Ministry of Commerce Economics and Finance (MoCEF), and Ministry of Agriculture, Water, Fisheries and Livestock (MoAWFL);  
+- The Government of Ethiopia, acting through its Ministry of Finance, Ethiopia (MoFE) and Ministry of Agriculture, Livestock and Fishery Resources (MoALFR);  
+- The Government of Kenya, acting through its National Treasury and Economic Planning (NTEP) and Ministry of Agriculture, Water, Fisheries and Livestock, and Cooperatives (MoAWFLC);  
+- The Government of Somalia, acting through its Ministry of Finance, Somalia ( MoFS) and Ministry of Livestock,
+
+
+---
+*Chunk pages 60–60*
+*Token usage:* input=1308 (sys=94, user=1214), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 52
+
+• The Intergovernmental Authority on Development (IGAD).
+
+## 122. Public Financial Institutions (PFIs):
+These are National Development Institutions (NDIs) owned and operated by the government or a public body. They differ from private financial institutions in terms of ownership; private financial institutions are owned and operated by private individuals or entities.
+
+## 123. Program Implementation:
+The overall coordination of the programme, in particular of the regional activities, will be carried out by IGAD as the regional implementing agency, working in close liaison with the five national governments in the HoA region. While IGAD will be responsible for the regional coordination and management of the programme, the institutions of the IGAD Member States will be responsible for the implementation of the activities at national level. There will be a legally binding financing agreement (protocol of agreement) between AfDB and IGAD based on the grant amount and associated conditions. The IGAD Executive Secretariat (IES) and its specialised institutions, including ICPAC (IGAD Climate Prediction and Applications Centre) and ICPALD (IGAD Centre for Pastoral and Livestock Development), will provide the necessary technical backstopping for regional activities.
+
+## 124. The IGAD Secretariat, through the IDDRSI Platform Coordination Unit (IPCU), will be responsible for coordinating the implementation of the Regional Programme. The Regional Programme Coordination Unit, established by the IGAD Secretariat, will be responsible for coordinating the programme. Under the supervision of a Regional Programme Steering Committee (RPSC), the IPCU will provide coordination support and overall guidance to ensure that the goals and objectives of the regional programme component are achieved. The mandates of the RPSC include the approval of programme budgets, programme activity reports and annual accounts related to the implementation of the overall programme. It will be chaired by the IES in accordance with the applicable instrument and its secretariat will be provided by a Regional IDDRSI Coordinator. During the implementation of specific regional activities under the programme, ICPAC and ICPALD will each provide technical assistance support within the framework and under the terms of a Memorandum of Understanding with the IGAD Secretariat. The MoUs will be signed by IGAD through ICPALD with relevant ministries or agencies of the participating countries sharing the border. The content of the MoUs will include the 3 IGAD border clusters for better control of transboundary animal diseases and zoonoses in border areas. It will also explore the possibility of establishing cross-border veterinary laboratories in the 3 IGAD border clusters and enhance the competitiveness of livestock value chains in the IGAD region by ensuring that stakeholders comply with the Agreement on the Application of Sanitary and Phytosanitary Measures in line with market research under the African Continental Free Trade Agreement. The Regional Programme Steering Committee (RPSC), which will include representatives from the RPCU and the National Programme Coordination Unit (NPCU), to ensure synergy and harmonisation in the implementation of the programme at country and regional levels.
+
+## 125. At the national levels, the Executing Entities (EEs) are the Government of Djibouti, acting through The Ministry of Commerce Economics and Finance (responsible for the signing of loan and grant agreements with AfDB) and the Ministry of Agriculture, Water, Fisheries and Livestock (responsible for project implementation in Djibouti); the Government of Ethiopia, acting through The Ministry of Finance (responsible for the signing of the loan and grant agreements with AfDB) and the Ministry of Agriculture, Livestock and Fishery Resources (responsible for project implementation in Ethiopia); the Government of Kenya, acting through the Ministry of Finance (responsible for the signing of Loan and Grant Agreements with AfDB), and the Ministry of Agriculture, Water, Fisheries and Livestock, and Cooperatives (responsible for project implementation in Kenya); the Government of Somalia, acting through the Ministry of Finance (responsible for the signing of loan and grant agreements with AfDB) and the Ministry of Agriculture and Irrigation (in charge of project implementation in Somalia); and the Government of South Sudan, acting through the of Finance and Economic Planning (responsible for the signing of loan and grant agreements with AfDB) and the Ministry of Agriculture and Forestry (responsible for project implementation in South Sudan).
+
+## 126. In line with the AfDB's financing of sovereign operations in member countries, each ministry responsible for project/programme implementation is required by law to establish a dedicated Project Management Unit (PMU) as part of the loan and grant "agreements" with the AfDB. The PMU must remain operational throughout the life of the programme. Among other things, the PMU coordinates directly with the EEs and project stakeholders and is responsible for supporting the implementation of day-to-day activities, the technical quality of project outputs, and effective stakeholder engagement
+
+
+---
+*Chunk pages 61–61*
+*Token usage:* input=1122 (sys=94, user=1028), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 53
+
+## Project Implementation Team
+
+The staff recruited under the project and those seconded by the Government will together form a project implementation team that will ensure sound and effective project implementation.
+
+## National Project Steering Committee (NPSC)
+
+The PMU receives technical and advisory services from a National Project Steering Committee (NPSC) chaired by the State Minister of Agriculture or equivalent. The establishment of the NPSC or equivalent is a mandatory condition of the Loan and Grant Agreements signed between each country's Ministry of Finance and the AfDB.
+
+As part of the "Other Conditions" in the legal instruments for the programme - "Agreements", each country is required to provide evidence of the establishment of a National Project Steering Committee (NPSC) with a composition and terms of reference acceptable to the AfDB. The NPSC is only a steering committee to oversee the implementation of the programme in accordance with the Financing Agreement. There will be no legal agreement between the EE and the NPSC.
+
+The NPSC, which will meet at least twice a year, will provide implementation oversight and policy guidance, and ensure inter-ministerial coordination, harmonisation and support for alignment among donors providing related resilience-building programmes. The NPSC will also be mandated to review the progress of the project on a semi-annual basis and assess the work plans on an annual basis to ensure effective implementation of the project. It is also responsible for approving the country's budgets, activity reports and annual accounts.
+
+In addition, the NPSC will liaise with the IDDRSI Platform Coordination Unit (PCU) to ensure that all resilience-building activities implemented at country level receive the necessary technical guidance, oversight and coordination. The Project Coordinator will be the Secretary of the NPSC and the focal point for all coordination with the IGAD National Programme Coordination Team, including reporting, as shown in Figure B.4.1 below. The allocation of EEs to each activity is shown in Appendix 3.
+
+### Figure B.4.1: BREFOL Implementation Arrangements and reporting
+
+See Appendix 4 for summary on financing source and assignments of Executing Entities.
+
+## Flow of Funds
+
+As shown in Figure B.4.2, the GCF resources held in trust will be received by the AfDB after the signing of the Funded Activity Agreement (FAA) and the fulfilment of all requirements for the execution and effectiveness of the FAA, as well as for disbursement according to the schedule.
+
+The AfDB will sign the Loan Agreement (2) and the Grant Agreement (6) with the respective Ministries of Finance (MoFs) of Djibouti, Ethiopia, Kenya, Somalia, South Sudan and the IGAD Secretariat in accordance with the AfDB's procedures and policies for financing sovereign operations and taking into account the terms and conditions of the Term Sheet for the BREFOL programme with the GCF.
+
+The Ministry of Finance of each country will disburse GCF non-repayable income for activities related to:
+
+1. Sustainable agro-pastoral land management (C 1-2)
+2. Access to climate-smart innovations and technologies (C 1-3)
+3. Access to digital extension services and markets (C 2-1)
+4. Improving access to climate services infrastructure (C 3-1)
+
+to the national executing entities (EEs) for the above interventions, in accordance with AfDB policies and procedures, such as for procurement and disbursement, ESS and gender, among others.
+
+The national executing agencies, through their project management units:
+
+- Reporting
+- Project Management Unit (PMU)
+- Hosted by the respective EE
+
+### Regional Program Steering Committee (RPSC)
+
+Chaired by IGAD Executive Secretary
+
+### Technical Guidance
+
+### National Project Steering Committee (NPSC)
+
+Chaired by the State Minister of Agriculture or its Equivalent
+
+### Technical Assistance (TA) Support
+
+Beneficiary Group (e.g., Smallholder farmers, Pastoralists, Agribusiness MSMEs, ACS, POs, PFIs, NGOs, and Other BREFOL Partners such as National and Regional Research Institutions and Organisations
+
+### Programme/project agreements including co-financing arrangements
+
+### Implementing arrangements and reporting
+
+### Executing Entities (EEs)
+
+### Technical Assistance (TA) Support
+
+### Ministries of Finance (MoFs)
+
+Representing the Governments' of the five IGAD Member States, and responsible for signing the Loan and Grant Agreements with AfDB (AE)
+
+
+---
+*Chunk pages 62–62*
+*Token usage:* input=1006 (sys=94, user=912), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 54
+
+## 54 The AfDB through its Financial Sector Department will support the respective PMU in carrying out due diligence of selected PFIs, in accordance with its mandate to put in place well-functioning financial systems that mobilize and allocate savings, supply the credit needs of economic agents, and allocate resources more efficiently while reducing intermediation costs. It will equally support the selected PFIs in the screening of sub-project loan applications to ensure strict adherence to BREFOL objectives.
+
+(PMUs), will procure goods and services in accordance with AfDB procurement procedures and policies for the implementation of the programme.
+
+## 129. For the GCF repayable funds (i.e. BREFOL Direct Credit Window (BDCW) and BREFOL Direct Insurance Credit Window (BDICW), the Ministry of Finance, with the written approval of the EE for each country (after the PFIs have met and complied with all eligibility criteria deemed satisfactory by the EE and the AE) 54, will sign loan agreements with the selected public financial institutions (PFIs) in Djibouti and Ethiopia and disburse the proceeds to the selected PFIs. Selected local PFIs will further sign loan agreements with selected beneficiaries (after the programme beneficiaries have met and fulfilled all eligibility criteria deemed satisfactory by the EE, AE and PFI) as shown in Figure B.4.2.
+
+### Figure B.4.2: BREFOL Flow of Funds
+
+## B.5. Justification for GCF funding request (max. 1000 words, approximately 2 pages)
+
+## 130. The Horn of Africa is one of the most disaster-prone regions in the world, suffering from recurrent food crises caused by extreme poverty and food insecurity (root cause 1), climate change and environmental degradation (root cause 2), fragility (root cause 3) and conflict (root cause 4). Unfortunately, these countries' high levels of debt severely constrain public spending to address most of the key challenges facing the region. In addition, due to the fragile nature of the region, potential private sector investors that could drive green/circular economy jobs and sustainable wealth creation in the region are highly risk averse, putting additional pressure on already limited fiscal space. The end result is widening inequality, violence, social unrest, political conflicts over land use and resources, environmental migration and exposure to vicious poverty traps.
+
+## 131. In most cases, those typically affected are smallholder farmers, pastoralists and other small-scale producers and actors along various value chains, who are typically constrained by resource limitations (Barriers Nos. 1 & 3). More worryingly, the recent Covid-19 economic downturn has further affected investment activity in the region and target countries. As a result, institutional investors - particularly those interested in smallholder agriculture - are becoming more risk averse.
+
+## 132. The resources requested from the GCF will therefore play a critical role in supporting farmers and pastoralists to increase agropastoral production, incentivising and de-risking public and private institutional investment, and creating local and regional green business opportunities that will be
+
+### Financial Report
+Executing Entities (EEs)  
+GCF Funds Flow  
+Implementation of BREFOL Regional Activities related to activities 1.2.1, 1.2.2, 1.3.1, 2.1.1, 3.1.2, 3.2.1, 4.1.1 – 4.1.4  
+Co-financing Flow  
+Flow of Funds  
+
+### PMUs  
+Ministries of Finance (MoFs)  
+Representing the Governments’ of the five IGAD Member States, and responsible for signing the Loan and Grant Agreements with AfDB (AE)  
+
+### Beneficiary Group (e.g., Smallholder farmers, Pastoralists, Agribusiness MSMEs, ACS, POs, NGOs, and Other BREFOL Partners such as National Research Institutions and Organisations
+
+
+---
+*Chunk pages 63–63*
+*Token usage:* input=1263 (sys=94, user=1169), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 55
+
+## 55 AfDB (2022). https://www.afdb.org/en/contacts.
+
+### Attractive to private sector investment in the HoA
+
+A key lesson from other ongoing initiatives in the countries and region is the centrality of green blended finance in catalysing a shift towards climate-resilient and low-emission development pathways for these countries. Without the GCF, leveraging additional private sector finance to scale up the priority adaptation actions mentioned above will certainly be difficult due to the rising public debt situation in these countries. This has severely constrained the fiscal space needed to implement relevant adaptation measures, which are essential for building the resilience of smallholder farmers and pastoralists. In addition, the fragile nature of some of these countries further discourages the private sector from investing in critical sectors that are essential for triggering high transformative impacts within the HoA.
+
+### The key is to de-risk private sector finance
+
+The GCF is an important player in this area due to the highly concessional nature of its funding instruments. In addition, GCF funding typically allows for sufficient grace periods and repayment periods that are equally attractive to the private sector. This is essentially what is needed to catalyse the priority adaptation inventions proposed in the IDDRSI strategy beyond the GCF-funded activities.
+
+## Rationale and level of concessionally of the GCF financial instrument
+
+### Concessional resources from the GCF to BREFOL will help overcome critical barriers and risks to climate change adaptation and mitigation in the HoA region
+
+In particular, the existence of large financing gaps (Barrier #1) and lack of access to finance for smallholder farmers and pastoralists (Barrier #2), as outlined in Section B.2, prevent the region from investing in and implementing the large-scale adaptation and mitigation programmes needed to build resilience in the region. Without additional funding from development partners and the private sector, as highlighted in the 5th interim outcome of the African Union Draft Africa Climate Change Strategy - DACCS (2020 - 2030), scaling up the region's adaptation and mitigation efforts may be impossible. The mobilisation of GCF resources will be critical in overcoming these barriers to building resilience in the region.
+
+### The private sector also has a critical role to play in scaling up adaptation finance to build resilience in the region
+
+Unfortunately, due to the highly fragile nature of the region (Risk #2), most private sector investors are risk averse given the high-risk profile associated with investing in the region. In the latest 2022 Fragile State Index (FSI), Ethiopia, Sudan, South Sudan, Kenya, Somalia and Djibouti ranked 11th, 8th, 4th, 32nd, 2nd and 49th respectively, with four out of the five countries (Somalia, South Sudan and Ethiopia) classified as fragile.
+
+### Thus, the requested concessional green financing from the GCF (USD 90.71 million), together with the AfDB's Strategic Private Sector Investment for Fragile States Project55, will help to cascade effective win-win private-private and private-public partnerships for a strong green/circular economy in the HoA region
+
+### In addition, the high indebtedness of all five IGAD countries, limited access to credit and other financial instruments, and the existence of multiple poverty traps are significant constraints to adaptation finance in the region
+
+Short funding horizons also make it difficult to fully integrate adaptation measures. Ethiopia's financing needs are significant, given its large physical and social infrastructure needs and low tax-to-GDP ratio, which is expected to average 10% from 2017 to 2022. The primary deficit plus debt service is estimated at close to 4% of GDP. As of June 2022, total public debt stood at around 57% of GDP, of which just over half was external.
+
+### Kenya
+
+Public debt increased from 61% of GDP in 2021 to 72% of GDP in 2022, mainly due to public investment in infrastructure, debt management challenges and the COVID-19 crisis. Kenya is now at high risk of debt distress according to the International Monetary Fund.
+
+### Somalia
+
+The IMF's 2022 debt sustainability analysis shows that even with interim debt relief, Somalia will remain in debt distress, with debt still at around 43.3% of GDP in 2024: above the 30% sustainability threshold.
+
+### South Sudan
+
+The debt risk rating improved from debt distress to high risk in October 2022 due to the restructuring of the country's commercial debt with Qatar National Bank, which accounts for 46% of external debt. The debt restructuring and the clearance of arrears owed to the country also helped to reduce external debt from 38% of GDP
+
+
+---
+*Chunk pages 64–64*
+*Token usage:* input=1186 (sys=94, user=1092), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 56
+
+## B.6. Exit strategy (max. 500 words, approximately 1 page)
+
+143. First and foremost, the use of different financial instruments in the programme is critical to ensure the continuity of the programme beyond GCF funding. As discussed in section B.5, these financial instruments will not only help to leverage additional resources from the private sector but will also raise awareness among PFIs and other private sector investors of the growing financial benefits associated with integrating climate change and green growth instruments into their business strategies and operations. As discussed under barrier #2, the private sector offers various types of private finance such as debt, equity, guarantees, simple co-financing and insurance products, etc., which have great potential to bridge the adaptation financing gap in Africa. Unfortunately, they often lack the incentives and other enabling instruments to create a self-sustaining green/circular economy, sustainable wealth creation and jobs in fragile states. Creating new profit opportunities for private capital from investments that address climate change, and the green/circular economy opens the doors to this great source of capital in the HOA now and in the future. Thus, concessional green financing from the GCF, together with the AfDB's Strategic Private Sector Investment for Fragile States project, can help cascade effective win-win private-private and private-public partnerships to create a self-sustaining green/circular economy, sustainable wealth creation and green jobs in the HoA region.
+
+144. Secondly, the programme integrates rigorous training and capacity building initiatives for 1) inclusive MSMEs and cooperatives with access to climate finance; 2) agribusiness MSMEs on renewable energy and AVC development; 3) women and youth on entrepreneurial skills in renewable energy technologies and AVC development, including access to credit lines; 4) climate change policy mainstreaming; 5) climate change, gender mainstreaming and conflict management, among many others. It is expected that this critical mass of trained beneficiaries will help to sustain the programme beyond the initial investment (barrier #4).
+
+145. Third, the AFAWA Technical Assistance Programme (ATAP) will contribute to women's economic empowerment and improve their creditworthiness. It will also strengthen the capacity of LPFIs to understand and respond appropriately to women entrepreneurs, who often lack the financial and
+
+[Page 1]
+
+
+---
+*Chunk pages 65–65*
+*Token usage:* input=765 (sys=94, user=671), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 57
+
+Fourth, ensuring that each eligible sub-loan beneficiary under BREFOL is subject to a 5-10% matching fund contribution to access the BREFOL Direct Credit Window (BDCW) with the two selected PFIs is very innovative for the long-term sustainability of the programme even after the GCF investment. Similarly, ensuring that the two participating PFIs in Djibouti and Ethiopia provide simple co-financing (20%) and matching funds (50%) to access GCF concessional resources will help to "crowd in" additional private sector resources (USD 6.48 million). The role of the private sector in increasing green finance and creating future green jobs can't be overstated. These measures, built into BREFOL, will ensure that additional private capital is injected into the programme beyond the GCF's initial investment.
+
+Fifth, BREFOL will enable smallholder farmers, agribusiness MSMEs, FBAs, ACSs, WABEs and POs currently excluded from financial markets to access digital advisory services and markets (financial literacy, bank accounts and transactions), enabling them to improve their production and incomes and thus compete locally and internationally. This is likely to be sustainable as they will receive formal training in business plan development prior to sub-project implementation.
+
+Finally, BREFOL will also use technological innovations to deliver critical climate adaptation advice, market linkages, crop protocols, gender and rural extension through a variety of low to high tech channels, depending on the digital development of each country. It will also replicate and scale successful TAAT COMPAC technologies and innovations that can increase the incomes of smallholder farmers and agribusiness MSMEs in the HoA region. Other innovations to be scaled up include: the Global Centre on Adaptation (GCA) Smallholder Adaptation Accelerator Programme (AAAP), and the AFAWA TAP for financial and economic empowerment of women in the HoA. Taken together, these activities will contribute to the transition to low-carbon, climate-resilient, sustainable development pathways in the HoA.
+
+
+---
+*Error processing pages 66–66: *
+---
+
+
+
+---
+*Error processing pages 67–67: *
+---
+
+
+
+---
+*Chunk pages 68–68*
+*Token usage:* input=220 (sys=94, user=126), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 60
+
+## 152. Almost 20% of the requested GCF grant will be used to support capacity development of these beneficiary groups. The remaining 80% will directly support the construction of infrastructure and the acquisition and transfer of climate-resilient technologies and innovations to the beneficiary groups through the capacity development activities outlined above.
+
+--- 
+
+**Note:** This text appears to be a fragment from a larger document, likely related to a funding proposal or project description. The content suggests that a significant portion of the grant will be allocated for capacity building, while the remainder will focus on infrastructure construction and technology transfer.
+
+
+---
+*Chunk pages 69–69*
+*Token usage:* input=1069 (sys=94, user=975), max_out=1024, ctx=8192
+---
+
+# D. EXPECTED PERFORMANCE AGAINST INVESTMENT CRITERIA  
+This section refers to the performance of the project/programme against the investment criteria as set out in the GCF’s Initial Investment Framework.  
+
+## D.1. Impact potential (max. 500 words, approximately 1 page)  
+
+153. BREFOL will contribute to GCF Impact level E.2: Scalability, replicability and sustainability.  
+In terms of scalability, there are key innovations introduced by BREFOL with very high potential for scalability (see e.g. Table B.3.5). These include the Global Centre on Adaptation's (GCA) Smallholder Adaptation Accelerator Programme (AAAP) through digital extension services, the Technologies for African Agricultural Transformation (TAAT) programme through its innovative technology dissemination approach, and AFAWA's approach to women's empowerment. Similarly, in terms of replicability, the above novelty introduced by BREFOL comes with significant economic benefits even with less resource commitment. It's therefore very attractive for replication in other sectors, markets, geographical regions or countries. In terms of sustainability, four main outcomes are expected from the initial investments, which will ensure the sustainability of the programme.  
+
+154. Mitigation co-benefits: The programme is expected to install a total of 4.8 MW of solar PV for solar irrigation, solar lighting and processing systems, and to generate a total of 3,890 m³ (~0.12 MW) of methane for waste-to-energy (Table D.1.1), thereby reducing fuelwood and fossil fuel consumption. Taking into account the carbon sequestration potential of the 102,000 ha of rehabilitated rangelands and 29,800 ha of degraded lands/forests rehabilitated and managed under agroforestry, Table D.1.1 summarises the mitigation potential of the programme from two GCF outcome areas: 1) MRA1-Energy Production and Access; and 2) MRA4-Forestry and Land Use (see Annexes 22a-c for the underlying assumptions and calculations).  
+
+155. Table D.1.1. Summary of mitigation potentials of the program from two GCF Results Areas: Energy generations and access and forestry and landuse – Please refer to Annex 22a, 22b, 22c for detailed calculation and methodological note.  
+
+| GHG reduction activity | Capacity / Unit | Yearly GHG emissions (tCO₂) | GHG emissions avoided at mid term (tCO₂) | GHG emissions avoided by end of programme (tCO₂) | GHG emissions avoided over lifetime (tCO₂) |
+|------------------------|------------------|------------------------------|------------------------------------------|--------------------------------------------------|--------------------------------------------|
+| Off grid solar PV for irrigation Systems, Lighting and Processing Systems - MW | 4.8 | 6,046 | 9,686 | 26,614 | 135,434 |
+| Installation of Biodigester units - m³ | 3,890 | 6,737 | 10,105 | 30,316 | 90,949 |
+| Rehabilitation of rangelands ha | 102,000 | 320,405 | 274,287 | 1,226,939 | 8,010,125 |
+| Land under agroforestry - ha | 29,800 | 236,513 | 183,941 | 806,312 | 5,912,829 |
+| **Total** | **569,701** | **478,025** | **2,090,182** | **14,149,337** | |
+
+156. To ensure that mitigation results are properly recorded during the implementation period and throughout the life of the programme, the necessary resources have been allocated to track progress towards the mitigation targets and policies outlined in the Nationally Determined Contributions (NDCs) of the five countries. The project will support the operationalisation of a project-specific Monitoring, Reporting and Verification (MRV) mechanism during the project implementation period and will support the necessary institutions to collect the required information after the project period. For the PV and biodigester units, the responsibility for reporting on the operation of the installed systems will lie with the private contractors to whom the project is contracted.
+
+
+---
+*Chunk pages 70–70*
+*Token usage:* input=1188 (sys=94, user=1094), max_out=1024, ctx=8192
+---
+
+# D.2. Paradigm shift potential (max. 500 words, approximately 1 page)
+
+## Potential for scaling-up and replication: As shown in Table B.3.4, a key feature of the programme is to increase private sector participation in climate change adaptation strategies in five IGAD member states in the Horn of Africa (HoA) region. This will be done through financial innovations that provide the right incentives and enable instruments that are attractive to private
+
+## 157. To ensure that MRV is in place for the project after the end of the implementation programme (after 7 years), capacity building will be provided during the project implementation period to set up a specific MRV mechanism for the project indicators (see Annex 4 - Budget under Component 3 and Component 4).
+
+## 158. BREFOL will significantly improve access to and use of climate risk information and agro-advisory services to guide multiple project interventions to improve agropastoral land management. This will directly benefit more than 1,800,000 smallholder farmers, pastoralists and vulnerable communities in the HoA. The programme will also construct/rehabilitate some 450 water mobilisation infrastructures, including the operationalisation of 3 cross-border Memoranda of Understanding (MoU) to better control transboundary animal diseases and zoonoses in border areas. Other key achievements of the programme include Establishment of 3 cross-border veterinary laboratories to facilitate cost-benefit analysis of integrated pest management technologies to control fall armyworm, arboviruses in transhumant cattle and locust invasion; Restoration of degraded land by bringing about 102,000 ha of degraded agro-pastoral rangeland/pasture under sustainable land management practices; Providing about 1,200,000 smallholder farmers, pastoralists and communities with access to digital and non-digital climate-resilient innovations and technologies; facilitating carbon trading among smallholder farmers, pastoralists and communities, resulting in additional adaptation finance; and strengthening operational capacity to build climate resilience at community, national and regional levels.
+
+## 159. BREFOL is expected to directly benefit 1.95 million (GCF plus baseline investments) smallholder farmers and pastoralists, who will need to be organised into Farm-based Associated (FBAs), Women in Agribusiness Enterprises (WABEs), Youths in Agribusiness Enterprises (YABEs), Agricultural Cooperative Societies (ACSs), Producer Organisations, Agro-Dealers and Agribusiness MSMEs. It will also indirectly benefit over 7.14 million people (GCF plus baseline investments), of which 50% will be women and 50% youth. Other beneficiaries include 10,495 women-led MSMEs/FBAs, youth-led MSMEs/FBAs ACS and other agribusiness MSMEs, and 2 PFIs in Djibouti and Ethiopia. In addition, around 7 Technologies for African Agricultural Transformation (TAAT) COMPACT technologies and innovative solutions will be transferred to support climate resilient, low emission development during the implementation of the programme. The breakdown of beneficiaries is summarised in Table D.1.2.
+
+## Table D.1.2: Summary of BREFOL Beneficiaries (see Annex 23 for details)
+
+| Programme Beneficiaries (Direct Plus Indirect) | Region | Direct (ADF) | Direct (GCF) | Total D (ADF+GCF) | Indirect (ADF+GCF) | Total(D+I) | Male | Females | % of Total Population |
+|-----------------------------------------------|--------|--------------|--------------|-------------------|--------------------|------------|------|---------|-----------------------|
+| IGAD Region                                    |        | 1,849,451.0  | 2,835,280.0  | 4,684,731.0       | 15,548,382.7       | 20,233,113.7 | 10,116,556.8 | 10,116,556.8 | 8.3% |
+|                                                |        |              |              |                   |                    |            |      |         |                       |
+
+## 160. The table shows that the total population affected by the programme is 20,233,113.7 people, with 50% being female and 50% being male. The percentage of total population is 8.3%.
+
+## 161. Potential for scaling-up and replication: As shown in Table B.3.4, a key feature of the programme is to increase private sector participation in climate change adaptation strategies in five IGAD member states in
+
+
+---
+*Chunk pages 71–71*
+*Token usage:* input=1187 (sys=94, user=1093), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 63
+
+## Sector Investors and Partnerships
+
+The Green Climate Fund (GCF) funding proposal involves sector investors such as private-public partnerships (3Ps) and public-private producer partnerships (4Ps). These models bring together combined expertise and resources to accelerate the delivery of results and increase the impact of green investment opportunities, wealth creation, and green jobs, especially for the most marginalized (women, girls, and youth).
+
+These models are strongly aligned with the GCF's goal of funding initiatives that catalyze climate impact beyond a one-off investment. Similarly, the vision of the BREFOL Direct Credit Window (BDCW) and BREFOL Direct Insurance Credit Window (BDICW) models is to use existing climate funds (GCF resources) to create an enabling environment that is attractive to private sector investors, such as agribusiness MSMEs and weather-based insurance promoters, with a vested interest in green/circular business opportunities.
+
+## BREFOL Financial Innovations
+
+With the initial investment of GCF funds and co-financing (US$ 335.29 million), BREFOL aims to increase the baseline of private sector investor financing by 13.2% (US$8.72 million) to implement additional climate change adaptation initiatives along the energy, agriculture, forest and other land use (AFOLU) sectors in the HoA.
+
+BREFOL's financial innovations therefore represent a profound opportunity to use the 3Ps and 4Ps models to shift the status quo trajectory in five IGAD countries towards a low-carbon, climate-resilient pathway that will ensure that the energy and AFOLU sectors deliver critical services for decades to come. As a cornerstone investment, this GCF investment will already leverage an additional US$2.25 million from direct programme beneficiaries in the two participating countries.
+
+More importantly, BREFOL's financial innovation models will contribute to the larger adaptation initiative of the IDDRSI for the next 30 years and the AfDB's Strategic Private Sector Investment for Fragile States Project within the continent, further contributing to this potential paradigm shift through further scaling and replication. Technical and economic feasibility studies supporting past and proposed BREFOL initiatives in the five countries and the IGAD region are provided in Annexes 2.1-2.6.
+
+## Scalability Potential
+
+If the financial innovations introduced by BREFOL are successful in the HoA, it is hoped that they can be replicated to support other AfDB-anchored programmes across Africa, such as:
+
+- The Programme for Integrated Development and Adaptation to Climate Change in the Zambezi Watercourse (PIDACC-Zambezi)
+- The Programme to Strengthen Agriculture and Forest Value Chains for Climate Resilience and Reduce Deforestation in Congo and DRC (PRAFS)
+
+As such, the programme has significant scalability potential, as successful implementation can be scaled up immediately through the programme's critical monitoring, learning, and evaluation components.
+
+## Integration of TAAT
+
+Another key feature of the programme worthy of up-scaling and replication is the integration of the Technologies for African Agricultural Transformation (TAAT) programme. TAAT specializes, inter alia, in the scaling up and dissemination of proven agricultural technologies and innovations to smallholder farmers on the continent.
+
+TAAT is currently being implemented in 27 low-income African countries. Under TAAT, the average productivity gains recorded by farmers who have received proven agricultural technologies for different commodities are:
+
+- 33% for small livestock
+- 38% for both cassava and maize
+- 40% for orange and flesh sweet potato
+- 42% for rice
+- 44% for aquaculture (tilapia)
+- 64% for sorghum
+- 71% for fodder
+- 80% for millet
+- 100% for wheat
+- 113% for iron-rich beans
+
+With an average across commodities of 62.5%.
+
+With the introduction of 7 new TAAT COMPAC technologies and innovations in five IGAD member countries, successful implementation can be immediately scaled up and replicated in other countries in the region.
+
+## Integration of AFAWA
+
+Similarly, the integration of AFAWA (Affirmative Finance Action for Women in Africa) to contribute to the economic and financial emancipation and empowerment of marginalized women in the HoA offers the greatest potential for scalability and replication in the HoA region, where gender discrimination is rampant.
+
+AFAWA's sole mandate is to bridge the gender gap in access to finance and unlock women's entrepreneurial capacity in Africa, particularly in the agricultural sector. This gap is currently estimated at $42 billion for African women across all business value chains, including $15.6 billion in agriculture alone.
+
+AFAWA therefore aims to unlock $1.3-2 billion from local PFIs for on-lending to women entrepreneurs.
+
+
+---
+*Chunk pages 72–72*
+*Token usage:* input=1088 (sys=94, user=994), max_out=1024, ctx=8192
+---
+
+# D 
+## GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 64
+
+### 166. Potential for knowledge sharing and learning: BREFOL's potential for knowledge creation and learning can't be overemphasised. It is an integral part of several of the programme's planned activities and sub-activities. For example, an important activity of BREFOL is to support the development of agribusinesses. Key elements of this activity with deep knowledge sharing and learning capabilities are: 1) strengthening access to digital extension services and markets; 2) building project preparation, management and coordination capacities of key Ministries, Departments and Agencies (MDAs) in the five countries; 3) training women and youth in business skills development in renewable energy technologies (RETs) to help them generate alternative income from clean energy; and 4) designing innovative credit lines to local PFIs for on-lending to programme beneficiaries. BREFOL expects that many lessons will be learned and shared from its innovative credit line windows for other ongoing AfDB programmes in the Congo Basin and the Zambezi region of Southern Africa.
+
+### 167. Another key activity of BREFOL is to improve access to climate information and early warning systems (CIEWS) in the HoA region. This will be achieved through data collection, management and dissemination to different target audiences and programme beneficiaries. These strategies of generating, managing and disseminating climate advisory information to end-users will enable vulnerable people, communities and institutions involved in adaptation planning in the HoA to continue using climate information and adaptation knowledge after the programme ends. In particular, strengthening the capacity of national MET services to develop and maintain climate services for forecasting, drought monitoring and forecasting, crop and rangeland monitoring, seasonal forecasting, climate information and regular hazard early warnings in an actionable format, including support for the organisation of interactive seasonal user forums, will ensure that greater knowledge, appreciation and awareness of the identified climate change challenges in the HoA will improve future climate-smart planning, even after the programme ends. In addition, the programme will consolidate partnerships between private investors, government and national, regional and continental climate research institutions, including the IGAD Climate Prediction Centre (ICPAC) and ClimDev-Africa, to ensure the exchange of information, knowledge and best practices to translate early warning information into guidelines and warnings for government agencies, emergency services, aid agencies, agricultural NGOs, extension services, farmer organisations and the public. Overall, the knowledge management systems developed under this key activity will enable the National Hydromet Services of each participating country and other regional climate research centres to continue to provide training programmes on climate change adaptation for different types of users after BREFOL implementation.
+
+### 168. Contribution to the creation of an enabling environment: BREFOL will contribute to the creation of an enabling environment in three ways. The first is by addressing a critical challenge currently facing the African continent as a whole, and the HoA region in particular. This is increasing women's access to affordable finance to grow and feed Africa, with an estimated $42 billion financing gap for African women across business value chains, including $15.6 billion in agriculture alone. This challenge has been attributed to 1) Finance: Lending to women in agriculture is perceived as riskier, so they face prohibitive interest rates. In addition, women often lack traditional collateral and guarantees; 2) Capacity: Financial institutions lack the capacity to understand and respond appropriately to women entrepreneurs, who also often lack the financial and business acumen to respond to the needs of financial institutions; and 3) Business environment: In many African countries, legal and regulatory frameworks hinder women's full participation in private sector-led growth.
+
+### 169. The programme is specifically designed to improve access to finance for smallholder farmers to build their adaptive capacity, especially women ( Barrier #4 ), and to help reduce gender discrimination ( Barrier #5 ). The programme will provide women with access to affordable finance to carry out activities along the energy and AFOLU sectors, which will lead to women's empowerment. This will facilitate the creation of green jobs, especially for young girls and youth, who are often dependent on women. This will be done through a two-pronged approach. First, the programme will work with local private financial institutions (PFIs), in collaboration with the
+
+--- 
+
+*Note: The text appears to end mid-sentence at the last line of the extract.*
+
+
+---
+*Chunk pages 73–73*
+*Token usage:* input=1097 (sys=94, user=1003), max_out=1024, ctx=8192
+---
+
+# D. GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 65
+
+## AGG programme
+
+The programme will provide instruments that specifically target and incentivize lending to women agribusiness entrepreneurs, women-led cooperatives, and smallholder women farmers.
+
+Secondly, the programme will support sub-activities that provide basic training programmes along the energy and AFOLU sectors. This will facilitate access to credit for the purchase of products, improve the creditworthiness of women and young girls, and increase the turnover of smallholder farmers.
+
+Similarly, sub-activities that provide incentives for women, young girls and youth to actively participate in food production using appropriate clean energy technologies will be particularly promoted to achieve the goal of creating employment for the most vulnerable groups in society.
+
+## BREFOL Dedicated Direct Credit Window (BDCW)
+
+The second enabling environment is the BREFOL Dedicated Direct Credit Window (BDCW), specifically designed to provide local Private Financial Institutions (PFIs) with stable lendable resources to adequately meet the financing needs of agribusiness MSMEs, and the BREFOL Direct Insurance Credit Window (BDICW) model with local PFIs to attract private sector participation in promoting access to social protection mechanisms.
+
+The two financial innovations introduced in the programme will facilitate greater private sector participation in bridging the adaptation finance gap (Barrier #1). As discussed under Barrier #2 of the TOC, climate resilience activities are often integrated into development interventions or business activities and therefore rarely stand alone. For this reason, the private sector has a critical role to play in financing adaptation.
+
+Beyond managing their own exposure to climate risks, different types of private finance - debt, equity, guarantees, insurance products - have great potential to bridge the adaptation financing gap on the continent. Unfortunately, the African continent lacks companies with the organisational capital to leverage economies of scale and specialisation to attract this level of investment for climate-smart planning.
+
+This is particularly true in the context of fragility, which attracts even fewer private companies, given the high-risk profile associated with the region due to potential conflict.
+
+## BREFOL Third Enabling Environment
+
+The third enabling environment created by BREFOL is:
+
+1. Facilitating access to digital extension services and markets in the region;
+2. Facilitating access to climate risk finance and insurance mechanisms to protect against the adverse impacts of climate shocks on food and agriculture systems;
+3. Strengthening national climate monitoring and reporting systems;
+4. Developing NDC implementation action plans for adaptation and resilience measures based on country commitments to implement the Paris Agreement;
+5. Constructing and rehabilitating 450 water mobilisation infrastructure (e.g. small earth dams, boreholes, covered water pans, shallow wells, water distribution systems);
+6. Development of 6,000 ha of irrigated land and rehabilitation of 300,000 ha of rangeland/pasture;
+7. Rehabilitation and development of 100 livestock feed, health and market access infrastructure (e.g. livestock markets, animal health posts, mobile clinics, veterinary laboratories (including cross-border laboratories in border areas), fodder banks or haystacks, feeder roads);
+8. Facilitating and operationalising 3 cross-border Memoranda of Understanding in 3 IGAD border clusters to better control transboundary animal diseases and zoonoses in border areas;
+9. Establishing cross-border veterinary laboratories in 3 IGAD border clusters and increasing the competitiveness of livestock value chains in the IGAD region.
+
+## Contribution to the regulatory framework and policies
+
+BREFOL is consistent and in alignment with IDDRSI Strategy and the HoRN Regional Resilience Framework as illustrated in Table B.1.4.
+
+## Overall contribution to climate-resilient development pathways
+
+As discussed in the Programme ToC, addressing the HoA problem through the combination of well-designed interventions and packages discussed in Section B.2 will help to trigger a paradigm shift towards low-carbon and climate-resilient development pathways. However, this assumes that 1) extreme climate events (risk no. 1); 2) insufficient participation of women and youth in programme activities (risk no. 2); and; 3) economic downturns due to COVID-19 and other pandemics (risk no. 3) are well managed during programme implementation.
+
+## D.3. Sustainable development (max. 500 words, approximately 1 page)
+
+[Page 1]
+
+
+---
+*Chunk pages 74–74*
+*Token usage:* input=1162 (sys=94, user=1068), max_out=1024, ctx=8192
+---
+
+# D GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 66
+
+## 174. BREFOL will reduce the negative environmental impacts of rangeland degradation by improving the behaviour and practices of farmers, pastoralists and communities. It will also have significant social benefits in terms of health, climate resilience and risk management. The baseline programme will therefore directly contribute to SDG 6 by benefiting an estimated 306,531 people (50% women, girls and youth) with access to clean and reliable energy, safe water and diversified livelihoods, including new access for 900,000 people through digital solutions and technological innovations (SDG 9). Climate-smart planning will be improved, including mainstreaming climate change and green growth tools in vulnerable communities in the HoA region. The programme will create more than 3.2 million green jobs and restore degraded rangelands and pastures, thereby reducing the impact of extreme climate events (SDG 13). In addition, the long-term sustainability of the programme will be ensured by empowering communities to maintain and manage their assets in the future. The restoration of degraded rangelands/pasturelands will contribute to the achievement of SDG15 (Halt and reverse land degradation and halt biodiversity loss) and SDG13 (Combat climate change through carbon sequestration and contribute to climate stabilisation). The programme will promote climate-resilient nature-based solutions that can help mitigate floods, droughts, erosion and landslides (hazards) and reduce vulnerability to climate change, while generating multiple benefits for the environment and local communities. This will promote gender equality in access, use and management of forests and trees and watersheds, and in the distribution of associated benefits, building on existing knowledge (SDG 5).
+
+## 175. It is important to note that climate change affects men and women differently, depending on their different roles and responsibilities at the household and community levels. Women play a more important role than men in managing ecosystem services and food security. They dominate the frontline in promoting action to tackle the impacts of a changing climate. However, women are the most exposed and vulnerable to climate change because they tend to be poorer, less educated and not involved in critical political and household decision-making processes that affect their lives and well-being. In some cases, cultural norms related to gender may limit women's ability to make quick and timely safety decisions in the event of disasters.
+
+## 176. BREFOL, through its focus on gender mainstreaming and women's economic empowerment through AFAWA, will support the reduction of entrenched gender inequalities in access to finance that hinder women's ability to manage current climate risks and adapt their livelihoods to long-term climate change trends. BREFOL has set targets: 50% of the loans/grants will go to women-led MSMEs/FBAs, WABEs, cooperatives and POs. The other 50% will be allocated to men, of which 50% will be allocated to youth-led MSMEs, YABEs, cooperatives and POs in which young women participate. Specific actions have been integrated into the programme (Activities 2.2.1 & 2.2.2) to strengthen the technical and managerial capacity of women, with the aim of providing them with appropriate tools to identify and develop bankable business plans and improve their creditworthiness with LPFIs.
+
+## D.4. Needs of recipient (max. 500 words, approximately 1 page)
+
+## 177. Timely access to finance is critical to cope with the debilitating impacts of climate change and extreme weather events that are typical of the HoA region (Root cause #2 and Barrier #1). Frequently, smallholder farmers, especially women, including women in female-headed households, do not have access to credit facilities to purchase agricultural inputs such as climate-smart seed varieties, fertilizers and tools, and to adopt climate-smart agricultural practices to cope with sudden disasters such as seasonal droughts and flash floods. They also lack the skills and enabling environment to increase their productivity and production (Barrier #4). The situation is further exacerbated by climate change and the recent global COVID-19 pandemic, which has caused further disruptions throughout the value chains of agriculture and food systems. Thus, without concrete measures to ensure greater access to finance and to strengthen the adaptive capacity of smallholder farmers, most of whom are women, to invest in climate-resilient livelihood options, the development of agriculture and food systems will
+
+58Nellemann, C., R. Verma, and L. Hislop (eds), Women at the frontline of climate change: Gender risks and hopes. A Rapid Response Assessment, 2011
+
+
+---
+*Chunk pages 75–75*
+*Token usage:* input=1154 (sys=94, user=1060), max_out=1024, ctx=8192
+---
+
+# D.5. Country ownership (max. 500 words, approximately 1 page) {#d5-country-ownership-max-500-words-approximately-1-page}
+
+180. A mission from the African Development Bank (AfDB) Group visited the five IGAD countries involved in the programme from 10 to 19 June 2019, to identify the components of the programme that could help build resilience for food and livelihoods in the Horn of Africa (HoA). The mission to identify the HoA programme followed the AfDB's announcement at the February 2019 roundtable on financing the Sahel Regional Climate Investment Plan (PIC-RS) for 2018–2030, and to support the implementation of the Priority Programme to Catalyse Climate Investments in the Sahel (PPCI) for 2020–2025.
+
+181. The work of the mission was carried out in close cooperation with the Secretariat and institutions of the Intergovernmental Agency for Development (IGAD), namely the Agriculture and Environment Department (AED), the Planning, Coordination and Partnerships Department (DCPP), the Economic Cooperation and Integration Department (DECI) and the Social Development Department (DSD), the IGAD Climate Prediction and Application Centre (ICPAC) and the ICPALD. The AfDB mission team also liaised with the relevant ministries responsible for agricultural development in the five countries involved, and subsequently secured buy-in from each country. See Annexes 1.1–1.5 for the No Objection Letters issued by the National Designated Authorities of the countries. Discussions were also held with the IDDRISI National Resilience Groups in Kenya, Djibouti and Ethiopia. The national meetings were facilitated by the IGAD IDDRSI National Focal Points. All the stakeholders met expressed their support for the new programme and their desire to see it implemented under the Bank's leadership.
+
+182. The IGAD Secretariat welcomed the Bank's initiative in preparing the HOA programme and provided guidance on the need to focus on structuring investments (agro-sylvo-pastoral investments, agribusiness, climate services, value chain and marketing) for the most vulnerable populations. They also stressed the importance of ensuring better synergy with ongoing strategies and actions at both regional and country levels.
+
+183. Consultations with countries highlighted the following considerations:
+- The need for aggregation/integration of interventions; concentration of project activities
+- Strengthening the quality of project entry, which requires upstream techno-economic, environmental and social studies, as well as financial structuring studies and detailed designs.
+
+
+---
+*Chunk pages 76–76*
+*Token usage:* input=902 (sys=94, user=808), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 68
+
+• High staff turnover and inadequate capacity in some countries, which undermines project and programme continuity. This requires the recruitment of dedicated staff for the national PIUs.
+• Synergy with existing programming to avoid duplication
+• Land tenure security, which remains a challenge in agricultural and pastoral areas and needs to be integrated into programming.
+• The need for a clear definition of responsibilities at national and sub-national levels, which will require Memoranda of Understanding between national and sub-national entities.
+• Scaling up mechanisation and technology adoption at national level
+• The need for platforms for private sector participation in value chains
+• The need to initiate and support youth empowerment programmes; and
+• The need to build the resilience of pastoralists.
+
+184. Similarly, during the preparation of the feasibility study for the programme, high-level and grassroots consultations were held with all stakeholders, including women and youth. Workshops were held and individuals were contacted to identify the challenges and needs in each country. The large number of people mobilised during the consultations confirms that the countries and IGAD are highly committed to the programme and have high expectations of its ability to bring about improvements. The feasibility studies involved extensive consultation with beneficiary communities in all areas of likely intervention. In addition, the feasibility reports were validated through stakeholder workshops in each country. Consultation with beneficiaries and stakeholders - communities, women's groups, youth associations, civil society organisations (CSOs) and non-governmental organisations (NGOs) - will continue during the implementation phase.
+
+185. During the programme preparation and appraisal missions, the Bank consulted widely with senior government officials, technical experts and development partners in the region. The final design of the programme reflects the views and recommendations of the stakeholders and the activities of the programme have been harmonised with other interventions in the region. This participatory approach at the design stage will be deepened during implementation. Representatives of the programme's beneficiaries will be members of the country project steering committee and will be closely involved in monitoring and evaluation. The capacity of beneficiary associations and relevant government institutions will be strengthened to better manage and coordinate programme activities.
+
+186. As a follow-up to the various consultations held during the preparation of the baseline programme, additional consultations were held with countries and IGAD during the preparation of the full FP to ensure greater country ownership. Annex 7 provides more details on the additional consultative processes and the main inputs from each country. Some key highlights from the consultative meetings include the following:
+
+• Country support for the preparation of market research studies.
+• Establishment of PMUs and drafting of ToRs for recruitment of staff.
+• Stakeholder consultations with potential local private financial institutions (PFIs).
+• Provision of no-objection letters in support of the programme.
+• Identification of other potential partners such as UNCCD and NGOs.
+• Contributions from the IGAD Climate Prediction and Application Centre (ICPAC) to improve the climate context of the programme.
+
+187. Country summaries are indicated below:
+
+188. Djibouti: The stakeholder engagement meetings (see Annex 7.1) brought together government officials, technical advisors to the Minister of Agriculture, representatives of the technical directorates and partners of the other ministries, the authorities of the intervention areas (Prefect and President of the Regional Councils), the Sub-Directors of Rural Development of the project areas, members of the communities, including pastoralists and agropastoralists,
+
+
+---
+*Chunk pages 77–77*
+*Token usage:* input=1287 (sys=94, user=1193), max_out=1024, ctx=8192
+---
+
+# D.6. Efficiency and effectiveness (max. 500 words, approximately 1 page)
+
+193. In terms of delivering the co-benefits of adaptation and mitigation as envisaged by the Fund, BREFOL is highly efficient and very cost-effective. For example, as shown in Table D.6.1, the total estimated cost of adaptation per beneficiary is about $71.6. Of this adaptation cost, the GCF contributes only USD 28.8 per programme beneficiary, which represents a contribution of
+
+[Page 69]
+
+
+---
+*Chunk pages 78–78*
+*Token usage:* input=1090 (sys=94, user=996), max_out=1024, ctx=8192
+---
+
+# D 
+## GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 70 
+
+40.1% and 59.9%, respectively, in terms of financing the adaptation potential for the co-financing mobilized by the AfDB and the GCF funding. Similarly, the total estimated cost per tCO2e for the programme is about $23.8. The GCF contributes only $1.16 per  tCO2e achieved to these mitigation costs, representing 4.9% and 95.1% of the mitigation potential of the AfDB co-financing and GCF funding, respectively.
+
+### Table D.6.1: Summary of the efficiency and cost effectiveness of the program 
+
+| Total Program Funding (mUSD) | $335.3 |
+|------------------------------|--------|
+| GCF 33Funding (mUSD)         | $151.0 |
+| Program Direct Beneficiaries | 4.7    |
+| Total Emissions Reductions in 25years (mtCo2e) | 14.1 |
+| Estimated Cost per Program Beneficiary | $71.6 |
+| GCF Amount Allocated for Adaptation | $134.7 |
+| Estimated GCF cost per Program Beneficiary | $28.8 |
+| GCF Amount Allocated Mitigation | $16.3 |
+| Estimated Programme Cost per tCO2e | $23.8 |
+| Estimated GCF cost per tCO2e | $1.16 |
+
+### In order to assess the financial and economic viability of the proposed interventions, including the effectiveness of the GCF investment in the Programme, an Economic and Financial Analysis (EFA) was carried out (see Annexes 3a&b for the EFA summary and Ex cel worksheets). A summary of the EFA results is presented in Tables D.6.2 & D.6.3 below. Note that the net benefits derived from the activity level models, in terms of incremental benefits relative to the baseline, are aggregated in both the financial and economic analyses, taking into account the scale of the project and its objectives (total area under cultivation in hectares), in order to assess the overall benefits generated by the proposed programme interventions. The derived benefits are compared with the project costs (estimated from the project budget) to assess the overall investment effectiveness indicators for different discount rates (DRs). These are the Economic Net Present Value (ENPV), the Economic Internal Rate of Return (EIRR) and the Modified Internal Rate of Return (MIRR). The financial and economic models of the crop and a summary of the economic analysis are provided in the attached Excel spreadsheets (Annex 3b).
+
+### The financial analysis (FA) has three objectives. 1) Firstly, to assess the financial soundness of the development interventions promoted under BREFOL. 2) Second, to examine the impact of BREFOL activities on the incomes of smallholder farmers, pastoralists, agribusiness MSMEs, Producer Organisations (POs), local PFIs and Farmers Based Associations (FBAs). 3) Thirdly, to provide a strong analytical framework for the economic evaluation of BREFOL in the region. Such an analysis is important for an overall assessment of BREFOL in terms of society rather than on an individual basis (FA).
+
+### Four scenarios are generally considered for each FA, as shown in the attached Excel worksheets (Annex 3b). These are 1) 'model assumptions', which provide the general assumptions and parameters used for each FA; 2) 'without project' (WOP) scenario, which is the baseline of the analysis; and 'with project' (WP) scenario, which is the proposed activities and interventions of the programme. Note that the WOP is the business-as-usual (BAU) scenario, where yields are below potential and returns to family labour are expected to be lower, although not in all cases. Irrigation is an old farming technique and some traditional farmers, particularly those involved in intercropping in the region, have used it. In most of the analyses we have included irrigation as a 'drought factor' for both scenarios, given the aridity of the region. If this assumption is relaxed in the WOP scenario, it is likely that yields would be below potential and returns to family labour would be lower in the WOP scenario. In addition, the use of the two scenarios allows us to identify the net benefits of the programme's "incremental situation" at the individual and aggregate levels.
+
+
+---
+*Chunk pages 79–79*
+*Token usage:* input=911 (sys=94, user=817), max_out=1024, ctx=8192
+---
+
+# D GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 71
+
+## 198. The FA results show that most of the crop models are profitable from the farmers' perspective. The cash flows show that farmers will be able to cover the necessary operating costs. Furthermore, with the possible introduction of resilient varieties (TAAT COMPAC Technologies, livestock, etc.) into the programme, the potential yields of the selected crops will double, implying more cash inflows to farmers. The FA results also confirm that the proposed production packages are financially attractive to the participants and that the potential benefits to the beneficiary farmers of participating in the activities implemented under BREFOL are financially attractive. The cash flows also show that smallholder farmers will be able to meet the necessary operating costs, especially with the increased yields associated with the introduction of TAAT COMPAC seeds. Farmers may also decide to intercrop some of the horticultural crops (cabbage, lettuce and tomatoes) with staple crops or agroforestry to generate more income. However, as our analysis is conservative, this option is not considered here.
+
+## 199. At an aggregate level, the FA calculates an overall Financial Internal Rate of Return (FIRR) of 59.8% for the baseline scenario and average Financial Net Present Values (FNPVs) of $477.48 million at a discount rate of 9.6%, $732.13 million at a discount rate of 6%, $586.76 million at a discount rate of 7.9% and $186.11 million at a discount rate of 19.1%. Further sensitivity analysis was performed on the FIRR for various scenarios under the RCP 8.5, such as 10% and 20% cost overruns, benefit increases, benefit decreases and 1- and 2-year benefit delays. In all cases, as shown in the table below, the FIRRs were higher than the discount rates, and in most cases much higher. The FNPVS were also always positive. This shows that the programme is not only very robust from the perspective of the smallholder beneficiary but would also remain viable under a wide range of alternatives.
+
+### Table D.6.2: Summary table of the key performance indicators of the FA under different discount rates
+
+## 200. With regard to the Economic Analysis (EA), the EA does several things. First, it assesses the economic viability and overall cost-effectiveness of the programme. This is usually done from the perspective of society, rather than at the individual and household level as in the FA. This is usually done by comparing the aggregate economic benefits with the economic costs of the programme and assessing the economic internal rate of return (EIRR). Secondly, it shows how sensitive the proposed investments may be to small changes in the model parameters used, such as prices, incomes, interest rates, discount rates, etc., due to risks and unforeseen factors. Details on sensitivity to model parameters, including EA model assumptions such as economic prices and their conversion factors, social discount rates, shadow prices for carbon and the Economic Programme Cost (EPC), can be found in the attached Excel spreadsheets.
+
+## 201. Three performance indicators were calculated for the EA. These are the Economic Net Present Value (ENPV), the Economic Internal Rate of Return (EIRR) and the Modified Internal Rate of Return (MIRR), as shown in the table below. On this basis, the EA calculates an overall Economic Internal Rate of Return (EIRR) of 28.0% for the programme's baseline
+
+--- 
+
+Note: The text appears to be incomplete or cut off at the end. The last sentence seems to be truncated and does not provide complete information about the Economic Analysis results.
+
+
+---
+*Chunk pages 80–80*
+*Token usage:* input=387 (sys=94, user=293), max_out=1024, ctx=8192
+---
+
+# D 
+## GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 72 
+
+scenario, an overall Economic Net Present Value (ENPV) of USD 112.74 million at a discount rate of 11.0%, USD 133.92 million at a discount rate of 10.0%, USD 100.48 million at a discount rate of 7.9% and USD 238.11 million at a discount rate of 6.0%.  
+
+202. In order to test the stability of the EA model, we performed an additional robustness check on key variables of the model. That is, 10 and 20% cost overruns, benefit increases, benefit decreases, and 1 - and 2-year benefit delays. The results are shown in t he table below. In all cases, the EIRR and MIRR were higher than the discount rates used, and in most cases much higher. The NPVs were also always positive. This shows that the programme is not only very robust but would also remain viable under a wide range of alternatives.  
+
+### Table D.6.3: Summary table of the key EA performance indicators for different discount rates
+
+
+---
+*Chunk pages 81–81*
+*Token usage:* input=826 (sys=94, user=732), max_out=1024, ctx=8192
+---
+
+# E. LOGICAL FRAMEWORK
+
+## E.1. Project/Programme Focus
+
+Please indicate whether this proposal is for a mitigation or adaptation project/programme. For cross-cutting proposals, select both.
+
+- ☒ Reduced emissions (mitigation)
+- ☒ Increased resilience (adaptation)
+
+## E.2. GCF Impact level: Paradigm shift potential (max 600 words, approximately 1 -2 pages)
+
+Following on from the paradigm shifting potential of the project described in Section D.2, the scalability, replicability and sustainability of the proposed climate change adaptation and mitigation activities are presented here. Scalability, replicability and sustainability are threatened by the six barriers identified in this proposal. The trios are achieved here through the following outputs shown in this table.
+
+| Assessment | Dimension | Current state (baseline) | Potential target scenario (Description) | How the project/programme will contribute (Description) | Description Rating |
+|------------|-----------|--------------------------|-----------------------------------------|--------------------------------------------------------|--------------------|
+| Scale      | Current private sector involvement in climate change adaptation and mitigation is very limited, especially in the fragile countries of the IGAD region. This is due to the lack of innovative financial mechanisms that provide incentives and an enabling environment for investment in high-risk areas. Therefore, creating new profit opportunities for private capital based on climate change adaptation and mitigation investments opens the doors for private sector investment. | Low | The scaling-up of most of the results is particularly evident in the increased participation of the private sector in climate change adaptation strategies in five IGAD member states in the Horn of Africa (HoA). The enabling financial innovations, such as the BREFOL Direct Credit Window (BDCW) and the BREFOL Direct Insurance Credit Window (BDICW), are expected to help scale up sustainable land management for agropastoralism, climate-smart innovations, and climate risk finance and insurance mechanisms that will help strengthen the climate resilience of climate-vulnerable communities. These innovative financial mechanisms will provide the right incentives and enabling instruments that are attractive to private sector investors, such as private-public partnerships (3Ps) and public-private-producer partnerships (4Ps) in agribusiness MSMEs and weather-based insurance promoters with an interest in green/circular business opportunities in the energy, agriculture, forest and other land use (AFOLU) sectors in the HoA. | The project will contribute to realizing this target scenario through:  
+• Output 1.2: Improved sustainable land management practices  
+• Output 1.3: Increased adoption of climate-smart innovations  
+• Output 2.3: Developed inclusive MSMEs and cooperatives with access to climate financing  
+• Output 3.1: Enhanced access to climate information and early warning systems | Low |
+
+--- 
+
+[Page 73]
+
+
+---
+*Chunk pages 82–82*
+*Token usage:* input=829 (sys=94, user=735), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 74
+
+## Replicability
+
+Currently, smallholder farmers and the private sector have limited access to innovative programmes of action and climate adaptation and mitigation technologies. Unlocking innovative financing mechanisms that help integrate climate smart technologies and climate information services could support smallholder farmers in the IGAD region.
+
+Due to the lack of human, technical and financial capacity, some projects are not replicable in other IGAD member states, such as the TAAT COMPAC technologies and innovations.
+
+Low Given the regional nature of the GCF proposal, it is designed to be replicable in IGAD member countries and beyond. Thus, almost all of the proposed activities are designed to be replicable at community, country, regional and continental levels (beyond IGAD/HoA countries), including:
+
+1. Development and rehabilitation of climate-resilient infrastructure (water resources, energy, market integration, cross-border health and research facilities, road networks, ICTs, etc.);
+2. Support for sustainable agro-pastoral land management;
+3. Increasing access to digital technologies.
+
+Additionally, the following activities are also designed to be replicable:
+
+4. Supporting sustainable agro-pastoral land management,
+5. Increasing access to digital extension services and markets,
+6. Developing entrepreneurship skills and increasing access to finance for women and youth,
+7. Increasing access to innovative finance for smallholder farmers, pastoralists and agribusiness MSMEs;
+8. Improving access to climate-smart innovations and technologies;
+9. Improving climate services infrastructure and advisory services; and
+10. Promoting climate risk finance and insurance; and finally,
+11. Supporting gender-sensitive reforms of climate regulatory frameworks and institutional strengthening for climate-smart planning and development.
+
+For example, the 7 new TAAT COMPAC technologies and innovations are expected to be replicated from the pioneer country such as Kenya to other IGAD member countries. The holistic approaches ensure the successful replicability of the results.
+
+## Sustainability
+
+Due to the six barriers described in Section C, the adaptive capacity of smallholder farmers and pastoralists is not sustainable and vulnerable to the climate hazards identified in this proposal.
+
+Although various activities are being implemented,
+
+Low The sustainability of the proposed outputs will require effective training of trainers, capacity building, increasing access to digital advisory services and markets, developing entrepreneurship skills and increasing access to finance for women and youth, improving climate services infrastructure, providing climate risk finance and insurance mechanisms,
+
+The project will contribute to realizing this target scenario through:
+
+- Output 1.1: Climate resilient infrastructure built/rehabilitated
+- Output 2.2: Developed inclusive MSMEs and cooperatives with access to climate financing
+
+## Sustainability (continued)
+
+The project will contribute to realizing this target scenario through:
+
+- Output 2-1: Increased access to digital advisory services and markets
+- Output 2-2: Developed inclusive MSMEs and cooperatives with access to climate financing
+
+
+---
+*Chunk pages 83–83*
+*Token usage:* input=726 (sys=94, user=632), max_out=1024, ctx=8192
+---
+
+# E. GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 75
+
+Their sustainability is not guaranteed due to the lack of adequate supporting institutions, infrastructure and capacities. The sustainability of the proposed programmes could only be ensured by strengthening these institutions, where some of the proposed actions such as developing policy frameworks, capacity building and building robust knowledge management are critical.
+
+Strengthening operational capacity for resilience, and programme coordination and knowledge management will help ensure the sustainability of the target scenarios designed for scale-up and replication.
+
+Cooperatives with access to climate financing and access to RE Output 3-1: Enhanced access to climate information and early warning systems
+
+• Output 3-1: Enhanced access to climate information and early warning systems  
+• Output 3-2: Strengthened regulatory and policy frameworks and institutional capacity for climate resilience.  
+• Outcome 4: Program Coordination and Knowledge Management  
+
+E.3. GCF Outcome level: Reduced emissions and increased resilience (IRMF core indicators 1 -4, quantitative indicators)  
+
+GCF Result Area IRMF Indicator  
+Means of Verification (MoV)  
+Baseline Target Assumptions / Note  
+
+Mid-term Final  
+59  
+
+Total GHG emission reduction  
+Core 1: GHG emissions reduced, avoided or removed/sequestered  
+0 Mt CO2 eq.  
+
+0.48 MTCO2 2.1 Mt CO2  
+over project period  
+
+14.1MTCO2  
+over lifetime  
+
+Implementation targets for solar PV, biodigesters, and agro forestry is met as per project timelines.  
+
+MRA1 Energy generation and access  
+Core 1: GHG emissions reduced, avoided or removed/sequestered  
+Baseline, mid-term and end term assessment in each country, contract agreements,  
+0 Mt CO2 eq.  
+
+19k TCO2 avoided through the deployment of PV systems and biodigesters  
+56k tCO2 over project period  
+
+avoided through the deployment of PV systems  
+
+Regulatory and legal Frameworks, and capacity in place for solar power generation and Biodigester installation, and operation and maintenance.  
+
+59 The final target means the target at the end of project/programme implementation period. However, for core indicator 1 (GHG emission reduction), please also provide the target value at the end of the total lifespan period which is defined as the maximum number of years over which the impacts of the investment are expected to be effective.
+
+
+---
+*Chunk pages 84–84*
+*Token usage:* input=585 (sys=94, user=491), max_out=1024, ctx=8192
+---
+
+# E GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 76
+
+## Procurement Documents, and Bill of Quantities
+
+## Biodigesters
+
+226kTCO2 over lifetime avoided through the deployment of PV systems and biodigesters
+
+## MRA1 Energy generation and access
+
+### Supplementary 1.3: Installed renewable energy capacity
+
+Baseline, mid-term and end term assessment in each country, contract agreements, procurement documents, and bill of quantities.
+
+0 MWp At least 1 MW of solar PV installed, and a capacity of at least 0.12MW Biodigester systems installed
+
+### 4.8 MW of solar and 0.12MW of Biodigester systems Installed
+
+## Regulatory and legal Frameworks, and capacity in place for solar power generation and Biodigester installation, and operation and maintenance
+
+## MRA4 Forestry and land use
+
+### Core 1: GHG emissions reduced, avoided or removed/sequestered
+
+Baseline analysis report, survey results and final reports
+
+0 Mt CO2 eq.
+
+0.46 MTCO2 through rangeland rehabilitation and agro forestry activities
+
+2.0 Mt CO2 over project period through rangeland rehabilitation and agro forestry activities
+
+13.9MTCO2 over lifetime through rangeland rehabilitation and agro forestry activities
+
+## Enabling environment to put in place through IGAD's Centre for Pastoral Area and Livestock Development (ICPALD), to enact behavioural changes in sustainable land management practices.
+
+Adequate training and sensitization programs result in behavioural changes in land use management.
+
+Beneficiaries are therefore willing to adopt sustainable land management practices
+
+
+---
+*Chunk pages 85–85*
+*Token usage:* input=602 (sys=94, user=508), max_out=1024, ctx=8192
+---
+
+# Supplementary 4.1: Hectares of terrestrial forest, terrestrial non-forest, freshwater and coastal marine areas brought under restoration and/or improved ecosystems
+
+## Baseline analysis report, survey results and final reports
+
+### 0 ha of pastureland placed under sustainable land management practices with agroforestry and afforestation program introduced
+
+### 29,800 ha of pastureland placed under sustainable land management practices with agroforestry and afforestation program introduced
+
+## Enabling environment put in place through IGAD’s Centre for Pastoral Area and Livestock Development (ICPALD), to enact behavioural changes in sustainable land management practices.
+
+### Adequate training and sensitization programs result in behavioural changes in land use management.
+
+## Beneficiaries are therefore willing to adopt sustainable land management practices such as agroforestry management practices with positive environmental benefits
+
+## Total number of programme beneficiaries
+
+### Core 2: Direct and indirect beneficiaries reached
+
+#### 0 1,405,419 (50% male and 50% female) of direct and 4,664,525 (50% male and 50% female) of indirect beneficiaries by end of year 3
+
+#### 4,684,731 (50% male and 50% female)) of direct and 15,548,383 (50% male and 50% female) of indirect beneficiaries by end of year 7
+
+## Value chain actors, communities, and institutions etc., are willing to adopt climate resilient livelihood options & technological innovations, introduced by the programme.
+
+--- 
+
+**Page 77**
+
+
+---
+*Error processing pages 86–86: *
+---
+
+
+
+---
+*Error processing pages 87–87: *
+---
+
+
+
+---
+*Chunk pages 88–88*
+*Token usage:* input=766 (sys=94, user=672), max_out=1024, ctx=8192
+---
+
+# E.4. GCF Outcome level: Enabling environment (IRMF core indicators 5-8 as applicable)
+
+## Core Indicator Baseline context (description)
+Currently climate smart agricultural and pastoral technologies are not widely disseminated and applied. The GCF will support to undertake the economics of integrated pest management technologies to fight against fall armyworm, arboviruses in transhumant cattle, and locust’s invasion, and upscale low.
+
+## Target scenario (description)
+Techno-economic analysis integrated pest management technologies to fight against fall armyworm, arboviruses in transhumant cattle, and locust’s invasion completed in 3 agroecological zones in the HOA countries, and Technologies for African Agricultural Transformation (TAAT) Program to over 278,000 pastoralists and smallholder farmers in the HOA upscaled. The TAAT are a high-impact technologies to boost agricultural output.
+
+## How the project will contribute (coverage)
+The GCF support in dissemination and technology transfer of the high-impact technologies to boost agricultural output.
+
+## Core Indicator 6: Degree to which GCF investments contribute to technology deployment, dissemination, development or transfer and innovation
+
+### Supplementary 4.1: Hectares of terrestrial forest, terrestrial non-forest, freshwater and coastal marine areas brought under restoration and/or improved ecosystems
+Baseline assessment reports survey results, and final reports.
+
+#### 0
+- 40,000 ha of rangeland/pastureland rehabilitated
+- 102,000 ha of rangeland/pastureland rehabilitated
+
+#### Smallholder farmers and pastoralists are willing to participate and adopt new sustainable land management practices on degraded rangeland/pastureland
+
+### Core 4: Hectares of natural resources brought under improved low-emission and/or climate-resilient management practice
+Baseline assessment reports survey results, and final reports.
+
+#### 0
+- 40,000 ha of rangeland/pastureland rehabilitated
+- 102,000 ha of rangeland/pastureland rehabilitated
+
+#### Smallholder farmers and pastoralists are willing to participate and adopt new sustainable land management practices on degraded rangeland/pastureland
+
+###ARA4 Ecosystems and ecosystem services
+
+#### Supplementary 4.1: Hectares of terrestrial forest, terrestrial non-forest, freshwater and coastal marine areas brought under restoration and/or improved ecosystems
+Baseline assessment reports survey results, and final reports.
+
+#### 0
+- 40,000 ha of rangeland/pastureland rehabilitated
+- 102,000 ha of rangeland/pastureland rehabilitated
+
+#### Smallholder farmers and pastoralists are willing to participate and adopt new sustainable land management practices on degraded rangeland/pastureland
+
+###ARA4 Ecosystems and ecosystem services
+
+#### Core 4: Hectares of natural resources brought under improved low-emission and/or climate-resilient management practice
+Baseline assessment reports survey results, and final reports.
+
+#### 0
+- 40,000 ha of rangeland/pastureland rehabilitated
+- 102,000 ha of rangeland/pastureland rehabilitated
+
+#### Smallholder farmers and pastoralists are willing to participate and adopt new sustainable land management practices on degraded rangeland/pastureland
+
+---
+
+[Page 1]
+
+
+---
+*Chunk pages 89–89*
+*Token usage:* input=658 (sys=94, user=564), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 81
+
+## Technologies for African Agricultural Transformation (TAAT)
+
+To over 278,000 pastoralists and smallholder farmers in the HOA.
+
+### Core Indicator 5: Degree to which GCF investments contribute to strengthening institutional and regulatory frameworks for low emission climate-resilient development pathways in a country-driven manner
+
+Government officials in the IGAD member countries lack adequate capacity to develop bankable proposals that can qualify for climate finance, mainstreaming climate risk management in policy documents and plans is very weak, and the countries don’t yet have NDC implementation action plans on adaptation and resilience interventions building on respective country’s commitments to the implementation of the Paris Agreement.
+
+### Core Indicator 7: Degree to which GCF Investments contribute to market development/ transformation at the sectoral, local, or national level
+
+Due to lack road infrastructure that hinders access to market, lack of entrepreneurship skills and increasing access to finance and markets for the most low About 152 animal feed, health, and market access infrastructure (e.g., livestock markets etc.) rehabilitated/developed), over 1,100,000 smallholder farmers (women and youth), farmers organization and The GCF will build road infrastructure of increase access to market, enable to having access to digital advisory services so as to have access to their products and build their
+
+Multi-countries
+
+
+---
+*Chunk pages 90–90*
+*Token usage:* input=576 (sys=94, user=482), max_out=1024, ctx=8192
+---
+
+# E.5. Project/programme specific indicators (project outcomes and outputs)
+
+## Project/programme results  
+**(outcomes/ outputs)**  
+
+### Project/programme specific Indicator
+
+#### Means of Verification (MoV)
+- **Baseline**
+- **Target Assumptions / Note**
+- **Mid-term**
+- **Final**
+
+---
+
+### Core indicator 8: Degree to which GCF investments contribute to effective knowledge generation and learning processes, and use of good practices, methodologies and standards
+
+The target communities don’t have effective knowledge generation and learning process, use of good practices, methodologies, and standards. The GCF funding is expected to address this challenge so as they could effectively increase their adaptation capacity.
+
+---
+
+### Low Regional innovation hub/data centre to coordinate and share knowledge among innovation partners, governments and other stakeholders
+
+Established and development of the regional capacity building and training of trainers on the gender action learning system (GALS) approach and methodology completed.
+
+---
+
+### Knowledge management systems and methodologies developed under this key activity will enable the national hydromet services for each involved country, and other regional climate research centres to continue providing training programmes on climate change adaptation to different types of users after BREFOL implementation.
+
+Multi-countries
+
+---
+
+
+---
+*Chunk pages 91–91*
+*Token usage:* input=716 (sys=94, user=622), max_out=1024, ctx=8192
+---
+
+# Outcome 1: Increased adoption of climate-resilient solutions
+
+## Output 1-1: Climate resilient infrastructure built/rehabilitated
+
+### Number of water mobilization infrastructure (e.g., small earth dams etc.) constructed or rehobilitated and managed
+
+- Baseline assessment survey results, and progress and final reports.
+- 0 177 water mobilization infrastructure (i.e., small earth dams etc.) constructed
+- 538 mobilization infrastructure (e.g., small earth dams etc.) constructed
+
+### Institutions and stakeholders’ readiness to participate in the activities, and IGAD member states capability in place to effectively implement the regional activities
+
+### Community mobilization of women and youth in the IGAD member states and effective sensitization, identification, and engagement of women and youth at the community level
+
+#### Area (hectares) of community irrigation lands developed and managed
+
+- Baseline assessment, feasibility studies, and quantitative analysis results
+- 0 1,950 ha of irrigation lands developed
+- 5.980 ha of irrigation lands developed
+
+### Number of animal feed, health, and market access infrastructure (e.g., livestock markets etc.) constructed or rehobilitated and managed
+
+- Baseline assessment, feasibility studies, and quantitative analysis results
+- 0 47 infrastructures set up
+- 152 infrastructures set up
+
+
+---
+*Chunk pages 92–92*
+*Token usage:* input=450 (sys=94, user=356), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 84
+
+## Infrastructure
+
+Built or equipped to take up jobs in land and pasture rehabilitation.
+
+### Output 1.2: Improved sustainable land management practices
+
+#### Number of agropastoralists and pastoralists trained on sustainable land management best practices (disaggregated by male and female)
+
+##### Baseline analysis report, survey results and final reports
+
+###### 0% 10,300
+
+- Agropastoralists and pastoralists trained on sustainable land management best practices
+- 31,300 agropastoralists and pastoralists trained on sustainable land management best practices
+
+##### Enabling environment to put in place through IGAD's Centre for Pastoral Area and Livestock Development (ICPALD), to enact behavioural changes in sustainable land management practices.
+
+#### Number of Trainers trained at regional level on improved sustainable land management
+
+##### Annual Progress reports
+
+###### 0 30 (50% male and 50% female)
+
+###### 100 (50% male and 50% female)
+
+##### Enabling environment put in place through IGAD's Centre for Pastoral Area and Livestock Development (ICPALD), to train trainers
+
+---
+
+
+---
+*Chunk pages 93–93*
+*Token usage:* input=443 (sys=94, user=349), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 85
+
+## Area (hectares) of degraded rangeland rehabilitated and managed
+
+Baseline assessment, progress and final reports
+
+## Area (hectares) of degraded land/forest rehabilitated and managed under agroforestry and plantation
+
+Baseline assessment, progress and final reports
+
+## Community mobilization of women and youth in the IGAD member states and effective sensitization, identification, and engagement of women and youth at the community level to take up jobs in land and pasture rehabilitation
+
+## Number of cross-border rangelands (cluster) sustainably managed
+
+Baseline assessment, progress and final reports
+
+## Enabling environment put in place through IGAD's Centre for Pastoral Area and Livestock Development (ICPALD), to enact behavioural changes in sustainable land management practices
+
+Baseline assessment, progress and final reports
+
+## Area (hectares) of degraded rangeland rehabilitated and managed
+
+Baseline assessment, progress and final reports
+
+## Area (hectares) of degraded land/forest rehabilitated and managed under agroforestry and plantation
+
+Baseline assessment, progress and final reports
+
+## Community mobilization of women and youth in the IGAD member states and effective sensitization, identification, and engagement of women and youth at the community level to take up jobs in land and pasture rehabilitation
+
+Baseline assessment, progress and final reports
+
+## Number of cross-border rangelands (cluster) sustainably managed
+
+Baseline assessment, progress and final reports
+
+## Enabling environment put in place through IGAD's Centre for Pastoral Area and Livestock Development (ICPALD), to enact behavioural changes in sustainable land management practices
+
+Baseline assessment, progress and final reports
+
+
+---
+*Chunk pages 94–94*
+*Token usage:* input=612 (sys=94, user=518), max_out=1024, ctx=8192
+---
+
+# E GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 86
+
+## Output 1.3: Increased adoption of climate-smart innovations
+
+### Number of small holder farmers and pastoralists benefiting from extension services disaggregated by male and female
+
+- **Baseline assessment, progress and final reports**
+  - 0 90,000 (50% male and 50% female)
+  - 278,000 (50% male and 50% female)
+
+### Community mobilization of women and youth in the IGAD member states and effective sensitization, identification, and engagement of women and youth at the community
+
+- **Number of trainers trained on tools for extension services on climate smart innovations/dissemination**
+  - **Training reports progress and final reports**
+    - 0 80 (50% male and 50% female)
+    - 250 (50% male and 50% female)
+
+### Enabling environment put in place to train trainers
+
+- **Number of beneficiaries receiving resilient varieties to improve agricultural and fodder production**
+  - **Bill of quantities, contracts, quantitative and qualitative analysis reports, and final reports**
+    - 0 83,750 (50% male and 50% female)
+    - 264,000 (50% male and 50% female)
+
+### Enabling environment are in place for scaling up TAAT COMPAC technologies and innovations
+
+## Outcome 2: Enhanced carbon sequestration and reduced greenhouse gas emission of AVC
+
+### Amount of GHG emissions avoided through project activities
+
+- **0 Mt CO2 eq.**
+- **0.48 MTCO2 over project period**
+- **14.1 MTCO2 over lifetime**
+
+### Implementation targets for solar PV, biodigesters, and agro forestry is met as per project timelines.
+
+---
+
+
+---
+*Error processing pages 95–95: *
+---
+
+
+
+---
+*Chunk pages 96–96*
+*Token usage:* input=595 (sys=94, user=501), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 88
+
+## Output 2.2: Developed inclusive MSMEs and cooperatives with access to climate financing
+
+### Number of women and youth groups and cooperatives trained on renewable energy and/or AVC development and having access to credit
+
+Baseline assessment reports, contracts and direct purchase agreements, bill of quantities, pre-and post-intervention (qualitative and quantitative) survey results
+
+0 123 410 Technical assistance (TA) support provided to women and youth on entrepreneurial development in renewable energy utilization and or AVC development
+
+Number of agribusiness MSMEs trained on renewable energy and/or AVC development and having access to credit
+
+Budget, Baseline assessment reports, pre-and post-intervention (qualitative and quantitative) survey results
+
+0 114 (50% male and 50% female owned)
+
+362 (50% male and 50% female owned)
+
+Credit lines are made available through local PFIs for on-lending to program beneficiaries
+
+### Number of people including women in female headed households and youth with a target of 50% to receive inputs and finance to generate alternative
+
+Budget, Baseline assessment reports, pre-and post-intervention (qualitative and quantitative) survey results
+
+0 2,800 (50% male and 50% female)
+
+10,680 (50% male and 50% female)
+
+Budget, Baseline assessment reports, pre-and post-intervention (qualitative and quantitative) survey results
+
+Mid-term and final evaluation reports, contract agreements, bill of quantities
+
+--- 
+
+[Page 1]
+
+
+---
+*Chunk pages 97–97*
+*Token usage:* input=698 (sys=94, user=604), max_out=1024, ctx=8192
+---
+
+# E 
+ GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 89 
+
+## Income from Renewable Energy Sources
+
+### Solar and Biodigesters Quantities, Procurement Documents, and Survey Results
+
+#### Capacity in MW of solar PV installed
+
+- **Mid-term and final evaluation reports, contract agreements, bill of quantities, procurement documents, and survey results**
+  - **0 2.8 MW** (0.3MW in Djibouti, 0.5MW in Ethiopia, 1MW in Kenya, 0.5MW in Somalia, 0.5MW in South Sudan) at the end of year 3
+  - **4.8 MW** (0.3MW in Djibouti, 1MW in Ethiopia, 1.5MW in Kenya, 1MW in Somalia, 1MW in South Sudan) at the end of year 7
+
+#### Enabling environment created for private sector investment in renewable energy generation: 4.8 MW of solar and 3,890m³ of Biodigester systems
+
+##### Capacity in cubic meter of biodigesters installed
+
+- **Mid-term and final evaluation reports, contract agreements, bill of quantities, procurement documents, and survey results**
+  - **0 2,160 m³** (2000m³ in Ethiopia, 60m³ in Kenya, 100m³ in South Sudan) at the end of year 3
+  - **3,890 m³** (3500m³ in Ethiopia, 120m³ in Kenya, 270m³ in South Sudan) at the end of year 7
+
+#### Enabling environment created for private sector investment in renewable energy generation: 4.8 MW of solar and 3,890m³ of Biodigester systems
+
+### Number of small holder farmers, organizations and agribusiness MSMEs including women and youth headed households being eligible for getting access to innovative climate financing (credit) supported Budget, Baseline assessment reports, pre-and post-intervention (qualitative and quantitative) survey results
+
+- **0 660** (50% male and 50% female)
+- **1,985** (50% male and 50% female)
+
+### Credit lines are made available through local PFIs for on-lending to program beneficiaries
+
+--- 
+
+*Note: Page numbers are preserved as per the original document.*
+
+
+---
+*Chunk pages 98–98*
+*Token usage:* input=748 (sys=94, user=654), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 90
+
+## Outcome 3: Strengthened adaptive capacity of vulnerable communities
+
+### Number of climate-related agricultural policies, regulations, or laws enacted with the use of climate information
+
+- **Baseline assessment reports, pre-and post-intervention (qualitative and quantitative) survey results**
+  - **0** 5 climate-related agricultural policies, regulations, or laws enacted with the use of climate information
+  - **21** climate-related agricultural policies, regulations, or laws enacted with the use of climate information
+
+### Institutions and stakeholders readily engage with TA provided and show political will to streamline climate related policies
+
+### Output 3.1: Enhanced access to climate information and early warning systems
+
+#### Number of agrometeorological stations installed and generating
+
+- **Bill of quantities, contracts, quantitative and qualitative analysis reports, and final reports**
+  - **0** 25 (4 in Djibouti, 10 in Ethiopia, 7 in Kenya, 4 in South Sudan) at the end of year 3
+  - **56** (8 in Djibouti, 25 in Ethiopia, 14 in Kenya, 8 in South Sudan) at the end of year 7
+
+#### Institutions and stakeholders’ readiness to participate in the activities, and IGAD
+
+> Note: The text appears incomplete or fragmented. Some sections may be missing or unclear due to OCR issues or formatting problems during extraction.
+
+---
+
+
+---
+*Chunk pages 99–99*
+*Token usage:* input=520 (sys=94, user=426), max_out=1024, ctx=8192
+---
+
+# E GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 91
+
+## Weather and Climate Data
+
+### Member States Capability in Place to Effectively Implement Regional Activities
+
+- Number of pastoralists and smallholder farmers (women and youth including women in female headed households) with a target of 40% having access to and use of climate-informed agro-advisory services
+- Baseline assessment reports, contract agreements, bill of quantities, pre-and post-intervention (qualitative and quantitative) survey results
+
+### Beneficiaries Are Willing to Be Trained in the Use of Climate-Informed Agro-Advisory Services Through Innovations Introduced into the Program for Scaling Up Climate Information Services (CIS)
+
+- Number of trainers trained on the use of climate services including early warning systems and data use
+- Training reports, progress and final reports
+
+### Enabling Environment Put in Place to Train Trainers
+
+- Number of tools for harmonisation early warning and climate services developed at regional level
+- Baseline assessment, progress reports, Midterm and final reports
+
+### Institutions and Stakeholders’ Readiness to Participate in the Activities, and IGAD Member States Capability in Place to Effectively Implement Regional Activities
+
+- [Page 1]
+
+
+---
+*Error processing pages 100–100: *
+---
+
+
+
+---
+*Chunk pages 101–101*
+*Token usage:* input=541 (sys=94, user=447), max_out=1024, ctx=8192
+---
+
+# E GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 93
+
+reports, midterm and final reports  
+national and regional levels by the respective governments and IGAD  
+
+Effectiveness of program M&E systems at the national and regional levels  
+
+Effective and efficient M&E reporting  
+
+Number of procurement audit report  
+Annual audit reports 0 18 36  
+
+Annual performance report  
+Annual performance reports 0 18 36  
+
+Number of capacity-building activities aimed at enhancing understanding and implementation of climate-smart agricultural practices and the program  
+Training reports, progress and final reports  
+
+0 36 (50% male and 50% female participation)  
+72 (50% male and 50% female participation)  
+
+Number of established M&E system  
+0 6 6  
+
+Number of knowledge products developed and disseminated  
+Reports, publications, and annual reports  
+0 18 36  
+
+Project/programme co-benefit indicators  
+Co-benefit 1  
+
+Number of jobs created for women and youth from rangeland and pastureland rehabilitation with women including women in female  
+
+Baseline assessment reports  
+0% 25,000 jobs created or sustained with at least 60% of jobs allocated to women and youth including women in  
+
+80,000 jobs created or sustained with at least 60% of jobs allocated to women and youth including women in  
+
+Number of jobs created for women and youth from rangeland and pastureland rehabilitation with women including women in female
+
+
+---
+*Chunk pages 102–102*
+*Token usage:* input=722 (sys=94, user=628), max_out=1024, ctx=8192
+---
+
+# E GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 94
+
+## headed households involved in seed preparations for rehabilitation of lands
+
+### female headed households
+
+### female headed households
+
+## headed households involved in seed preparations for rehabilitation of lands
+
+## Co benefit 2 Ecosystem services improved
+
+### Annual Performance Report and national statistic records
+
+- 0 ha
+- 49,000 ha of rangelands / forests with improved ecosystem services
+- 131,800 ha of rangelands / forests with improved ecosystem services
+
+## Activities related to rangeland rehabilitation and agro forestry are effectively implemented.
+
+### E.6. Project/programme activities and deliverables
+
+#### Activities Description
+
+##### Sub-activities
+
+###### Deliverables
+
+###### Activity 1.1.1: Construct or rehabilitate and manage water harvesting infrastructure
+
+###### Activity 1.1.2: Construct or rehabilitate and manage community irrigation schemes
+
+###### Activity 1.1.3: Construct or rehabilitate and manage community livestock infrastructure
+
+The major activities include construction/rehabilitation of water mobilization infrastructure; development of irrigation lands and rehabilitation of rangeland/pastureland, rehabilitation of animal feed, health, and market access infrastructure, facilitating and operationalizing of cross-border memorandums of understanding to better control transboundary animal diseases and zoonoses in border areas.
+
+- N/A
+  - 538 mobilization infrastructure (i.e., small earth dams etc.) constructed,
+  - 5980 ha of irrigation lands developed,
+  - 152 animal feed, health, and market access infrastructure (e.g., livestock markets etc.) rehabilitated/developed,
+
+###### Activity 1.2.1: Train communities on sustainable land management best practices
+
+Introduction of pastureland sustainable land management practices with agroforestry and afforestation program, with community agroforestry and afforestation committees being set up and women including women in female headed households to serve as leaders and members of these committees, land loss and land restoration study, an assessment of land tenure patterns and corridors, design of tools, and the production of catalogues for land conflicts for
+
+- N/A
+  - 31,300 agropastoralists and pastoralists trained on sustainable land management best practices
+  - 100 trainers trained at regional level on improved sustainable land management
+  - 102,000 ha of rangeland/pastureland rehabilitated,
+
+
+---
+*Error processing pages 103–103: *
+---
+
+
+
+---
+*Chunk pages 104–104*
+*Token usage:* input=861 (sys=94, user=767), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 96
+
+## Activity 2.2.3: Design and operationalise innovative credit lines via selected local PFIs, in participating countries.
+
+## Activity 2.2.4: Provide technical assistance to MSMEs, local PFIs, and cooperatives to create an enabling environment for credit access and sustainability
+
+### agribusiness MSMEs with vested interest in green/circular economy development
+
+- Alternative income from renewable energy sources such as solar and biodigesters
+  - 4.8 MW of solar PV installed
+  - 3,890 meter cube of biodigesters installed
+  - 1,985 small holder farmers, organizations, and agribusiness MSMEs including women and youth headed households being eligible for getting access to innovative climate financing (credit) supported
+  - 3,600 small holder farmers, organizations, and agribusiness MSMEs including women and youth headed households being covered by Climate Insurance
+  - 4,395 agribusiness MSMEs and cooperatives including women and youth headed households being eligible for getting access to innovative climate financing (credit and insurance) supported
+
+## Activity 3.1.1: Expand agrometeorological stations network to generate data for climate advisory services
+
+## Activity 3.1.2: Integrate and disseminate climate information and early warning into the established digital advisory services
+
+The project will support to expand the agrometeorological stations network to improve climate resilience, agricultural planning, and livelihoods in the HoA. This activity will be pivotal in enhancing climate resilience and agricultural productivity in Ethiopia, Kenya, and South Sudan. By installing agrometeorological stations, the capacity to generate accurate and localized weather and climate data will be significantly improved, facilitating more effective climate advisory services. This activity will also integrate and disseminate climate information and early warnings in Ethiopia, Kenya, and South Sudan using digital solution platforms established through the PPP mechanism.
+
+### N/A
+
+- 128 agrometeorological stations installed and generating weather and climate data
+- 1,100,000 pastoralists and smallholder farmers (women and youth including women in female headed households) with a target of 40% having access to and use of climate-informed agro-advisory services
+- 200 trainers trained on the use of climate services including early warning systems and data use
+- 2 tools for harmonisation early warning and climate services developed at regional level
+
+## Activity 3.2.1: Support delivery of climate regulatory framework and mainstreaming of climate change into agricultural sector policies and strategies
+
+Investment will be directed to facilitate mainstreaming policy dialogues with key stakeholders on climate index-based insurance to advance actionable reforms in Ethiopia. There will be coordination among the National Meteorological Agency (NMA), ATI, insurance service providers.
+
+### N/A
+
+- 21 climate-related agricultural policies, regulations, or laws enacted or updated
+- 1 regional climate risk mechanism designed and operationalised
+- 140 trainers trained on mainstreaming climate change in policies
+
+
+---
+*Chunk pages 105–105*
+*Token usage:* input=713 (sys=94, user=619), max_out=1024, ctx=8192
+---
+
+# E.7. Monitoring, reporting and evaluation arrangements (max. 500 words, approximately 1 page)
+
+## 203. Monitoring of the programme
+
+All projects financed under the Facility will be monitored by the AfDB's portfolio management team in accordance with relevant internal policies and procedures. The AfDB, as the accredited executing agency, will be responsible for directly monitoring implementation conditions and reporting periodically to the GCF under terms to be agreed between the AfDB and the GCF.
+
+All projects financed under the Facility will comply with AfDB standards and procedures for appraisal, approval, monitoring and supervision, involving representatives or all relevant teams (engineers, lawyers, project finance specialists, procurement experts, E&S specialists, gender specialists, climate finance officers, financial management officers, supervision and monitoring specialists).
+
+The implementation and monitoring of each stage of the project will be guided and managed by the AfDB Project Lifecycle Management Framework. The key task managers who will carry out due diligence, implementation supervision, risk monitoring and mitigation will be located in the relevant teams at Headquarters and in the IGAD regional and country offices.
+
+## 204. Reporting
+
+1) Reporting by project companies to the AfDB will be in line with the standard loan agreement and the AfDB will conduct a semi-annual supervision.
+
+2) AfDB reporting to the GCF: The AfDB will comply with the relevant GCF policies (as specified in the AMA) in the reporting and evaluation arrangements for this framework. The AfDB will submit the Annual Performance Report (APR) to the GCF during the seven-year implementation period. In addition, a semi-annual activity report on the status of individual subprojects financed by the GCF will be provided during the life of the sub-loans. For the TA component, reports from the beneficiaries will be consolidated by the AfDB for reporting to the GCF. In addition, an inception report, mid-term evaluation report, final evaluation report, and financial information reports will be submitted (semi-annually throughout the life of the programme), as agreed under the AMA and FAA.
+
+## 205. Evaluation
+
+The evaluation arrangements for this framework will be in line with the relevant AfDB and GCF policies. Both the mid-term and final independent evaluations will be carried out by the AfDB's Independent Evaluation Department (IDEV). The AfDB's independent evaluation work will be guided by internationally accepted principles for the evaluation of development assistance, in particular the Organisation for Economic Co-operation and Development (OECD) principles.
+
+
+---
+*Chunk pages 106–106*
+*Token usage:* input=184 (sys=94, user=90), max_out=1024, ctx=8192
+---
+
+# E
+
+## GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 98
+
+and Development Assistance Committee's (OECD DAC) Evaluation Guiding Principles and the Evaluation Cooperation Group's (ECG) good practice standards.
+
+
+---
+*Chunk pages 107–107*
+*Token usage:* input=814 (sys=94, user=720), max_out=1024, ctx=8192
+---
+
+# F. RISK ASSESSMENT AND MANAGEMENT
+
+## F.1. Risk factors and mitigations measures (max. 3 pages)
+
+Please describe financial, technical, operational, macroeconomic/political, money laundering/terrorist financing (ML/TF), sanctions, prohibited practices, and other risks that might prevent the project/programme objectives from being achieved. Also describe the proposed risk mitigation measures. Insert additional rows if necessary.
+
+For probability: High has significant probability, Medium has moderate probability, Low has negligible probability  
+For impact: High has significant impact, Medium has moderate impact, Low has negligible impact  
+
+Prohibited practices include abuse, conflict of interest, corruption, retaliation against whistle-blowers or witnesses, as well as fraudulent, coercive, collusive, and obstructive practices  
+
+### Selected Risk Factor 1
+
+| Category | Probability | Impact |
+|----------|-------------|--------|
+| Technical and operational | Medium | Medium |
+
+#### Description
+
+206. This risk arises when agriculture, rangelands and food production systems are affected by many uncontrollable events, often related to weather, biology and the environment, including excessive or insufficient rainfall, extreme temperatures, diseases and zoonoses, and land degradation. This may also be due to low levels of technology adoption and access to finance. Key factors for this risk include natural conditions, biological and environmental hazards, technology levels, natural disasters, finance, demand and policy decisions.
+
+#### Mitigation Measure(s)
+
+207. The mitigation measures put in place through the program include:  
+● Increasing access to affordable finances to smallholder farmers, pastoralists, and other agribusiness MSMEs to adapt to climate change,  
+● Enhancing access to climate-informed advisory services in agriculture and food production systems  
+● Introducing sustainable land management practices such as agroforestry and carbon farming in degraded rangeland/pastureland.  
+● Facilitating cost-effectiveness analysis of integrated pest management technologies to fight against fall armyworm, arboviruses in transhumant cattle, and locust’s invasion  
+● increasing the preparedness and readiness of smallholder farmers, pastoralists, and institutions to adapt to climate change and climate extremes  
+● Promoting greater private sector participation in green/circular economic building activities.  
+● Integration of technological innovations in agriculture such as the Technologies for African Agricultural Transformation (TAAT) Program, and the Global Centre on Adaptation (GCA)  
+Smallholder Adaptation Accelerator Program (AAAP) to scale up digital advisory services and markets in climate responsive planning  
+● Provision of access to improved seed varieties, pest control and surveillance services through cross-border MoUs.  
+● Scaling up and disseminate proven agricultural technologies and innovations to millions of smallholder farmers  
+● Introducing cross-border memorandums of understanding to better control transboundary animal diseases and zoonoses in border areas.  
+● Capacity building in agroecological systems that promote crop diversification and therefore reducing risks to crop diseases and weather shocks.  
+● Introducing social protection mechanisms such as weather-based crop/livestock insurance programs.
+
+### Selected Risk Factor 2
+
+| Category | Probability | Impact |
+|----------|-------------|--------|
+| Credit | Medium | Medium |
+
+---
+
+
+---
+*Chunk pages 108–108*
+*Token usage:* input=902 (sys=94, user=808), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 100
+
+## Description
+
+208. Timely access to finance is critical to cope with the debilitating impacts of climate change and extreme weather events that characterise the HoA region. Not infrequently, smallholder farmers do not have access to credit facilities to purchase agricultural inputs such as climate-smart seed varieties, fertilizers and farm implements, and to adopt climate-smart agricultural practices to cope with sudden disasters such as seasonal droughts and flash floods. This is illustrated by statistics on access to finance from the World Bank's Global Findex Database, which shows that on average only 22% of smallholder farmers in the HoA have an account with a financial institution, and less than 7% are able to borrow from a financial institution, while only about 6% of the active farming population is able to borrow to start, operate or expand a farm or business. With such low access to credit in an environment characterised by extreme climate events (droughts and floods), fragility, conflict and population explosion, building resilience at scale is almost impossible.
+
+## Mitigation Measure(s)
+
+209. The mitigation measures put in place through the program include:  
+• Integration of innovative financial instruments to help 'crowd-in' additional private sector finances for resilience building in the region.  
+• Introducing carbon credit schemes to help increase access to finance and building of the adaptive capacity of smallholder farmers and pastoralists in the region.  
+• Establishing dedicated credit windows to increase access to finance to invest in different value chains.  
+• Training farmers and business holders on the principles of business and financial planning and management.  
+• Ensuring diversified source of incomes for the participants such as through carbon farming, use of renewable energy in food crops processing.  
+• Broadening climate finance access based for smallholder farmers, pastoralists, agribusiness MSMEs etc., from different financial sources such as from local PFIs, private investors, insurance promoters, and beneficiary groups.
+
+## Selected Risk Factor 3
+
+### Category: Governance  
+### Probability: Medium  
+### Impact: Medium  
+
+## Description
+
+210. This risk can arise from changes in government sector strategies and policies, the political and governance context of countries (insecurity and conflict), and non-compliance with the Bank's fiduciary guidelines, resulting in implementation delays. It may also be due to limited coordination between agencies and stakeholders, and weak implementation capacity within Project Management Units (PMUs).
+
+## Mitigation Measure(s)
+
+211. The mitigation measures put in place through the program include:  
+• Building communities’ resilience to climate change is a priority for the region and for the five participating IGAD countries. The involved governments are maintaining adequate political commitment to implementing the program and maintain their effort on promoting sector specific strategies and policies conducive for the implementation of BREFOL.  
+• IGAD has put in place a conflict resolution mechanism that might reduce the challenges of insecurity and conflicts. The Program is itself expected to foster peace among conflicting communities.  
+• BREFOL will build the capacity of the program staff and the program’s beneficiaries. Lessons learnt from the DRSLP have been integrated in the program’s design and the implementation plan,  
+• The Bank will continue to run fiduciary clinics to strengthen capacity.  
+• In some participating countries, the program will use PMUs that are already running DRSLP to be strengthened with the addition of specialized staff. Additional capacity building/training will be provided. AfDB will also conduct annual fiduciary clinics to address any remaining capacity gaps.
+
+
+---
+*Chunk pages 109–109*
+*Token usage:* input=898 (sys=94, user=804), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 101
+
+Bank staff will conduct regular supervision missions and audits and follow up closely to monitor adherence to Bank standards and procedures as a way of securing value for money.
+
+## Selected Risk Factor 4  
+### Category: Probability Impact  
+**ML/FT Medium Medium**
+
+### Description  
+213. This risk can manifest itself in scenarios characterised by a lack of integrity among programme beneficiaries, the involvement of politically exposed persons (PEPs), the presence of sanctions, civil, criminal and regulatory backgrounds, and potential anti-money laundering and countering the financing of terrorism (AML/CFT) issues. In such situations, vulnerability to financial impropriety, illegal activities and compliance breaches becomes a significant concern, requiring thorough scrutiny and risk mitigation measures. An integrity assessment has been carried out on the executing agencies. This integrity assessment was conducted using the principles of integrity due diligence, namely beneficial ownership, politically exposed person risk, sanctions risk, civil, criminal and regulatory background, and AML/CFT & integrity policy assessment.
+
+### Mitigation Measure(s)  
+214. The mitigation measures put in place through the program include:  
+- The Bank will constantly monitor its counterparties through its supervision activities. This process is also strengthened by the daily automated sanctions, PEP, and adverse media monitoring on Bank’s counterparties.  
+- All outgoing payments from the Bank will be automatically screened against sanctions lists through Swift.  
+- A training program will be defined on an annual basis in consultation with the relevant Bank’s units. Training and Capacity Building is an integral part of the Bank preventive activities around sanctionable practices and ML/TF. The main audience will be staff from Project Implementation Units and the training topics will focus mainly on the Bank’s integrity framework and ML/TF issues in Project Management.  
+- Specific integrity clauses are incorporated in all project documentation between the Bank and its counterparties. These clauses include including Audit & Inspection Rights, Adherence to the Bank Integrity Framework, Transposition of due diligence requirements for final beneficiaries.  
+- The Bank has different oversight mechanisms that will ensure that any indicator of sanctionable practices is reported to the Integrity and Anti-Corruption Office for investigation with a sanction mechanism for substantiated cases. The Bank also has a whistleblowing policy which provides several channels for raising concerns related to sanctionable practices and provisions to protect whistle blowers from retaliation.
+
+## Selected Risk Factor 5  
+### Category: Probability Impact  
+**Other-- Risk of uneven uptake among countries - Medium Medium**
+
+### Description  
+There may be challenges in the use of resources during implementation, which could lead to uneven uptake between countries. For example, if a country has a lower take-up rate, the funds allocated to that country may remain unused, which could affect the climate impact of the project.
+
+### Mitigation Measure(s)  
+The mitigation measures retained are:  
+- Firstly, flexibility of resource reallocation in most secure areas of the country in case of conflict and  
+- Secondly, restructuring of the financing plan among countries, if necessary, as last option, after the mid-term review to transfer resource to most competitive countries.
+
+
+---
+*Chunk pages 110–110*
+*Token usage:* input=1098 (sys=94, user=1004), max_out=1024, ctx=8192
+---
+
+# G. GCF POLICIES AND STANDARDS
+
+## G.1. Environmental and social risk assessment (max. 750 words, approximately 1.5 pages)
+
+215. BREFOL is a climate change adaptation operation that aims to improve the resilience of communities and agropastoral production systems with minimal negative environmental and social impacts. As a result, the Bank's integrated safeguard system has classified the programme as Category 2, meaning that site-specific programme activities are expected to have only moderate environmental and social risks and impact that can be managed through the instruments proposed in the programme's environmental and social safeguards instruments, Environmental and Social Impact Assessments (ESIAs), Environmental and Social Management Plans (ESMPs) and Environmental and Social Management Frameworks (ESMFs). The ESIA/ESMP and ESMF reports were validated by the participating countries and disclosed both in-country and on the Bank's website in accordance with the 30-day disclosure requirement before the BREFOL was submitted to the AfDB Board of Directors for consideration.
+
+216. BREFOL will have a significant positive impact on the environment and ecosystems in the Horn of Africa. In particular, it will: (i) improve natural resource management at local, national and regional levels; (ii) improve access to infrastructure for water, animal health and access to markets; (iii) rehabilitate rangelands and pastures; (iv) improve productivity/production in the livestock, crop, forestry and pastoral sectors; (v) increase the number of farmers and pastoralists using climate services; and (vi) conserve rangelands and soils and prevent erosion.
+
+217. The disclosed ESMF (see Annex 6 for details) outlines measures to minimise and mitigate the potential negative impacts of the programme and to optimise its benefits. The implementation of environmental measures will involve various stakeholders, including governments, local authorities, communities, grassroots organisations, NGOs, local people, women, the private sector, research institutes, etc. The environmental monitoring of the programme will be carried out by the entity responsible for environmental and social safeguards in each country.
+
+## G.2. Gender assessment and action plan (max. 500 words, approximately 1 page)
+
+218. Information from the gender assessment reports and consultations with stakeholders during the assessment mission in the five participating countries indicate that women in male- and female-headed households in agropastoral communities face several gender-based barriers (see Annex 8). These barriers include harmful traditional practices, low levels of literacy and less power over intra- and extra-household decisions on productive resources. These conditions undermine women's well-being, economic empowerment and gender equality as a whole. In addition, women have less access to social infrastructure and services, and their low levels of literacy and marketable skills mean that they are less active in the labour market. If these challenges are not addressed during programme implementation, they could hamper women's participation in BREFOL, hinder women's economic empowerment and undermine gender equality. For this reason, BREFOL has budgeted for a gender action plan at regional and national levels. The plan uses the Gender Action Learning System (GALS) approach, which seeks to transform harmful and disadvantageous socio-cultural gender norms and practices that significantly hinder women's empowerment and gender equality. Based on the regional components of the programme and the GALS methodology, BREFOL will train national champions to support planned women's economic empowerment activities. In these activities, women will act as the main agents of change and men as their allies. An additional concern is the role of women in the agribusiness activities planned by the programme: this role could increase women's workload, as women are already responsible for household and family activities. To address this concern, BREFOL has budgeted for gender-sensitive infrastructure that will reduce women's workload and poverty, and remove barriers to childcare, by building children's playgrounds and crèches, and locating boreholes near villages and residential areas, solar energy systems and bio-digesters. Of the 1.6 million people who will benefit from climate-informed agricultural extension services, 50% will be women and 30% will be youth (males and females aged 18-35). In addition, a climate risk insurance scheme will be established through a public-
+
+--- END EXTRACTED TEXT ---
+
+
+---
+*Chunk pages 111–111*
+*Token usage:* input=1026 (sys=94, user=932), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 103
+
+## G.3. Financial management and procurement (max. 500 words, approximately 1 page)
+
+220. AfDB's fiduciary and financial management measures for BREFOL in upstream engagement with programme countries during the preparation of Country Strategy Papers (CSPs), where fiduciary risks and country capacity were assessed in the Country Fiduciary Risk Assessment (CFRA). This is a key document for dialogue with the country on the risk assessment and agreed mitigation actions to address identified fiduciary risks, including corruption and AML/CFT and prohibited practices issues. The AE has also carried out an integrity assessment using the principles of integrity due diligence, namely beneficial ownership, the presence of politically exposed persons (PEPs), the existence of sanctions, civil, criminal and regulatory background and AML/CFT of the EEs.
+
+221. Generally, the Financial Management Arrangement (FMA) of BREFOL, requires:  
+• Accounting Management: Legal agreements require BREFOL participating countries to: (i) maintain accounts and records and prepare financial statements for projects and subprojects financed from AfDB resources and resources administered by the AfDB; and (ii) establish accounting, administrative, and financial procedures in manuals. These accounts and records should justify the use of funds disbursed to the programme or project and be prepared in accordance with applicable accounting standards.
+
+• Accounting standards and practices: Although accounting standards and practices may vary from country to country, the accounts of the programme or sub-project under BREFOL, irrespective of the system adopted, shall comply with the principles of transparent management and provide comprehensive information on the following aspects 1) accountability for the funds provided to the programme or sub-project; these funds may include the proceeds of the AfDB loan or grant, or other resources from co-financiers and counterpart funds; 2) disclosure of expenditure and specific information on components financed under the programme.
+
+222. Programme Financial Statements: The programme or sub-projects financial statements prepared under BREFOL shall include:
+
+- For all projects: i) Statement of Income (funds received from AfDB, counterpart funds and, where applicable, co-financiers) and Expenditure (expenditure incurred both for the current year and accumulated to date) showing separately AfDB funds, counterpart and co-financiers funds and cash balances; 2) Statement of Special Account(s); 3) Notes to the Financial Statements describing the applicable accounting principles used and a detailed analysis of the main accounts.
+
+- For revenue generating sub-projects under BREFOL (in addition to the requirements above): i) a balance sheet showing the accumulated funds of the project, bank balances and other assets and liabilities of the project at the end of each financial year; ii) a profit and loss account (or an operating
+
+---
+
+
+---
+*Chunk pages 112–112*
+*Token usage:* input=1019 (sys=94, user=925), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 104
+
+## Financial Reporting
+
+- As an annex to the financial statements prepared under BREFOL, the following would be included as an annex to the financial statements of all projects under the programme:
+  - **i)** a reconciliation between the amount shown as "received from the Bank" and the amount shown as disbursed by the AfDB. The reconciliation should indicate the methods used for disbursement, i.e., special account, direct payment or reimbursement guarantee, and the reimbursement methods with those recommended in the Project Appraisal Reports (PARs) and the Disbursement Letter;
+  - **ii)** a comprehensive list of all fixed assets acquired with dates, value and condition of the assets.
+
+## Financial Reporting
+
+- BREFOL participating countries are required to provide regular and comprehensive accounting and financial information on the programme and sub-projects under the programme. The information should detail the various uses of the loan and grant proceeds. Financial systems and financial communication reports may vary depending on the type of sub-project, lending instrument and country. The AfDB may not require a standard format but will ensure that reports submitted for review and consideration are sufficiently informative.
+
+## Retention and Filing of Documents
+
+- Each country participating in the BREFOL programme is required to maintain and preserve programme/sub-project documents and supporting documents and to make them available to AfDB representatives as required.
+
+## Retention of Documentation
+
+- The AfDB's General Conditions require each country participating in the programme to retain all documents relating to the loan proceeds so that they can be audited by external auditors or the AfDB's representative. Documentation should be retained in a manner that is readily accessible.
+
+## Audit
+
+- The general conditions of the loan and grant agreements require that all programme and sub-project accounts be audited annually in accordance with relevant generally accepted standards.
+  
+- According to the standard terms of reference (ToR) for external audits of AfDB-financed programmes or projects, the auditor is required, among other things, to examine relevant documents, review internal financial control mechanisms to identify deficiencies and weaknesses that could affect the efficiency of the project, form an opinion on the quality of the financial statements, and confirm that the funds granted to the project have been used for their intended purpose.
+  
+- Each country must have the accounts of the project or programme audited by qualified and independent auditors who meet AfDB requirements. In countries where the audit is entrusted to the Auditor General's Office (AGO) under the supervision of the government, the AfDB may approve the appointment of this office, provided that the matter is discussed during programme/project appraisal and loan negotiations, and the audit is conducted in accordance with the AfDB's standard terms of reference for the audit of AfDB-financed projects/programmes.
+  
+- The audited financial statements, auditor's report and management letter must be received by the AfDB no later than six months after the end of the financial year to which they relate. Failure to comply with this requirement will result in the immediate suspension of further replenishments to the Special Account.
+
+## Procurement and Disbursement Arrangements
+
+- **Procurement Arrangements:** The procurement of goods (including services other than consultancy services), works and the acquisition of consultancy services financed under BREFOL will be carried out in accordance with the Procurement Framework for Bank Group-financed Operations, 2015 Edition, and in compliance with the provisions of the GCF FAA (see Annex 10 for the detailed procurement plan). More specifically, procurements will be made in accordance with the AfDB's Procurement Methods and Procedures (BPP), based on the relevant Standard Bidding Documents (SBDs) for goods and works contracts, as well as consulting services, for which the BPP is considered the most appropriate.
+
+- Indeed, following an analysis of the procurement systems of the five BREFOL participating countries, the procurement systems and procedures of Djibouti, Somalia and South
+
+---
+
+
+---
+*Chunk pages 113–113*
+*Token usage:* input=959 (sys=94, user=865), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 105
+
+## Sudan were considered to be weak.
+On this basis, it was decided to apply the AfDB's procurement methods and procedures in Djibouti, Somalia and South Sudan. In Ethiopia and Kenya, BREFOL will use each country's procurement system for national competitive bidding and procurement of goods and works, subject to the conditions for Ethiopia and Kenya discussed above. When these two countries procure packages of goods, works and consultancy services through open international competitive bidding, the AfDB's procurement methods and procedures will apply.
+
+## Disbursement
+The disbursement methods to be used to mobilise project funding are: (i) the direct payment method; (ii) the special fund/revolving fund method; and (iii) the reimbursement method. Direct payments will be made in respect of contracts for works, goods and services signed between borrowers and suppliers in accordance with AfDB procurement rules and procedures and national procurement laws. The special account method will be used to settle operating expenses, training costs, field mission costs, etc. It requires the opening of a special account with the central banks of the five participating countries, which will in turn transfer all funds received from the AfDB to the PMU account opened with a bank acceptable to the AfDB. The opening of the bank account will be a condition precedent to the first disbursement. The reimbursement method will be used when eligible expenditures of all project funds are pre-financed with the prior approval of the AfDB. Disbursements will be made in accordance with the List of Goods and Services and AfDB's policies and procedures as described in the Project Disbursement Manual.
+
+## Conditions Precedent to First Disbursement of Grants and Loan under BREFOL
+The obligation of AfDB to make the first disbursement of the respective grants and loan shall be subject to the entry into force of the respective Protocol of Agreements (POA) and the Loan Agreement (LA), in accordance with the provisions set out in the POA and LA, and the submission of evidence, in a form and substance acceptable to AfDB, of fulfilment by the Recipient or Borrower of the following conditions:
+
+### Submission of evidence of the recruitment/appointment of staff for the Project Management Unit (PMU) for each country, and a Regional Program Coordination Unit (RPCU) for IGAD with qualifications and terms of reference acceptable to the AfDB.
+
+## Other conditions:
+### The Borrower/ Recipient shall provide to the AfDB, within six months after the first disbursement:
+
+#### Djibouti, Ethiopia, Kenya, Somalia, South Sudan:
+ii. Submission of the evidence of the establishment of the National Project Steering Committee (NPSC) with composition and terms of reference acceptable to AfDB.
+iii. Provision of Counterpart Contribution, as stipulated in the respective loan/grant agreements
+
+#### IGAD:
+i. Submission of the evidence of the establishment of the Regional Program Steering Committee (RPSC), which will include representatives from the regional programme coordination unit (RPCU), IGAD Climate Prediction and Applications Centre (ICPAC), the IGAD Pastoral Centre for Livestock and Pastoral Development (ICPALD), the IGAD Food Security, Nutrition and Resilience Analysis Hub (IFRAH), and representatives from the National Program Steering Committees (NPSCs), within three months of the first disbursement of the Grant.
+
+## Undertakings
+The Borrower/ Recipients undertakes to:
+ii. carry out the Program in accordance with the Environmental and Social Management Plans ("ESMPs"), and the Bank's Safeguards Policies and the applicable national legislation in a manner and in substance satisfactory to the AfDB;
+
+
+---
+*Chunk pages 114–114*
+*Token usage:* input=1050 (sys=94, user=956), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 106
+
+## iii. prepare and submit to the AfDB Project Reports, including quarterly reports on the implementation of the ESMPs including any deficiencies identified and the corrective measures thereto;
+
+## iv. refrain from taking any action which would prevent or interfere with the implementation of the ESMPs, including any amendment, suspension, waiver, and/or voidance of any provision thereof, whether in whole or in part, without the prior written concurrence of the AfDB;
+
+## v. each of the Borrower/Recipient shall cause its respective relevant sector ministry to provide coordination for implementation of country Projects;
+
+## vi. each of the Borrower/Recipient shall cause the establishment of a National Project Steering Committee (NPSC) which shall be responsible for respective country Project oversight, overall policy guidance, strategic direction, and review and approval of work plans and budgets.
+
+## Programme Monitoring and Evaluation (M&E)
+
+Simply refers to the process of procurement-related M&E throughout the programme (and procurement) cycle. The information to be monitored for the programme and sub-projects under the programme will be identified in the Programme Executing Agency Procurement Assessment (EAPA), drawing on sources such as the Country Procurement Assessment Report (CPAR). Capacity development as outlined in the Procurement Development Action Plan (PDAP) will also be subject to M&E throughout programme implementation. The AfDB's primary monitoring tools are post-procurement reviews (PPRs), procurement audits (PAs), independent procurement reviews (IPRs), and other miscellaneous reviews associated with AfDB programme or project-related supervision and monitoring.
+
+## In all five participating countries, including IGAD, the programme will be implemented over a period of 84 months.
+
+The M&E Officers to be appointed from the PMUs and the Regional Programme Coordination Unit (RCU) will be responsible for collecting all data, including gender-disaggregated data at all levels where possible, analysing and compiling information on physical achievements and financial implementation. To this end, he/she will have at his/her disposal a roadmap with quantitative indicators of the programme's progress, relating to the implementation of the sub-components. This monitoring will enable the preparation of quarterly progress reports in accordance with the Bank's format and procedures: physical objective, level of achievement, expected costs, actual costs, variances and explanations for any variances.
+
+This information will be used to prepare the quarterly, mid-year and annual performance programme reports by the respective EE together with the NPSC and RPSC. In addition, the countries will recruit the necessary expertise to develop a harmonised, gender- and conflict-sensitive monitoring and evaluation mechanism and prepare an implementation manual to operationalise the collection and processing of national and regional data and the reporting of results against the indicators set out in the logical and M&E frameworks.
+
+In addition to the review work of the Steering Committee, the AfDB will conduct two monitoring missions per year, in addition to a mid-term review mission. The mid-term review will be conducted in year 3. Upon completion of the programme, the AfDB and the respective governments will prepare a final report within the required timeframe.
+
+## G.4. Disclosure of funding proposal
+
+Indicate below whether or not the funding proposal includes confidential information.
+
+### ☐ No confidential information: The accredited entity confirms that the funding proposal, including its annexes, may be disclosed in full by the GCF, as no information is being provided in confidence.
+
+### ☒ With confidential information: The accredited entity declares that the funding proposal, including its annexes, may not be disclosed in full by the GCF, as certain information is being provided in confidence. Accordingly, the accredited entity is providing to the Secretariat the following two copies of the funding proposal, including all annexes:
+
+- Full copy for internal use of the GCF in which the confidential portions are marked accordingly, together with an explanatory note regarding the said portions and the corresponding reason for confidentiality under the accredited entity's disclosure policy, and
+- Redacted copy for disclosure on the GCF website.
+
+The funding proposal can only be processed upon receipt of the two copies above, if containing confidential information.
+
+
+---
+*Chunk pages 115–115*
+*Token usage:* input=703 (sys=94, user=609), max_out=1024, ctx=8192
+---
+
+# H. ANNEXES
+
+## H.1. Mandatory annexes  
+
+- **Annex 1** NDA no-objection letter(s) (template provided)  
+- **Annex 2** Feasibility study - and a market study, if applicable  
+- **Annex 3** Economic and/or financial analyses in spreadsheet format  
+- **Annex 4** Detailed budget plan (template provided)  
+- **Annex 5** Implementation timetable including key project/programme milestones (template provided)  
+- **Annex 6** E&S document corresponding to the E&S category (A, B or C; or I1, I2 or I3):  
+  - ESS disclosure form provided  
+- **Annex 7** Summary of consultations and stakeholder engagement plan  
+- **Annex 8** Gender assessment and project/programme-level action plan (template provided)  
+- **Annex 9** Legal due diligence (regulation, taxation and insurance)  
+- **Annex 10** Procurement plan (template provided)  
+- **Annex 11** Monitoring and evaluation plan (template provided)  
+- **Annex 12** AE fee request (template provided)  
+- **Annex 13** Co-financing commitment letter, if applicable (template provided)  
+- **Annex 14** Term sheet including a detailed disbursement schedule and, if applicable, repayment schedule  
+
+## H.2. Other annexes as applicable  
+
+- **Annex 15** Evidence of internal approval (template provided)  
+- **Annex 16** Map(s) indicating the location of proposed interventions  
+- **Annex 17** Multi-country project/programme information (template provided)  
+- **Annex 18** Appraisal, due diligence or evaluation report for proposals based on up-scaling or replicating a pilot project  
+- **Annex 19** Procedures for controlling procurement by third parties or executing entities undertaking projects financed by the entity  
+- **Annex 20** First level AML/CFT (KYC) assessment  
+- **Annex 21** Operations manual (Operations and maintenance)  
+- **Annex 22** Assessment of GHG emission reductions and their monitoring and reporting (for mitigation and cross cutting-projects)  
+- **Annex 23** BREFOL Beneficiary Estimate  
+- **Annex 24** BREFOL GCF Fragility Assessments  
+- **Annex 25** Digital Solution PPP Model for BREFOL  
+
+--- 
+
+*Page 107*
+
+
+---
+*Chunk pages 116–116*
+*Token usage:* input=366 (sys=94, user=272), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 108
+
+* Please note that a funding proposal will be considered complete only upon receipt of all the applicable supporting documents.
+
+## APPENDICES
+
+### Appendix 1
+
+#### Appendix 1.1: Projected change in some selected WMO Expert Team Sector-Specific Climate Indices: (a&b) standardized precipitation index (SPI); (c&d) standardized precipitation evapotranspiration index; (e&f) warm spell duration (days) and (g&h) heat wave frequency (days); in the GHA countries between the period 2021 -2050 and reference time (1976 -2005) under RCP4.5 and 8.5 emission scenarios. Stippling denotes regions where the difference is statistically significant at 0.05 level.
+
+##### (a)
+
+##### (b)
+
+##### (c)
+
+##### (d)
+
+##### (e)
+
+##### (f )
+
+###### 61 Annex 22 is mandatory for mitigation and cross-cutting projects.
+
+###### ☒ Annex 26 BREFOL Eligibility Criteria
+
+
+---
+*Chunk pages 117–117*
+*Token usage:* input=323 (sys=94, user=229), max_out=1024, ctx=8192
+---
+
+# Appendix 1.2: Projected change in consecutive dry days (CDD) in the GHA countries between the period 2021-2050 and reference time (1976-2005) under RCP4.5 and 8.5 emission scenarios. Stippling denotes regions where the difference is statistically significant at 0.05 level.
+
+# Appendix 1.3: Projected change in consecutive wet days (CWD) in the GHA countries between the period 2021 -2050 and reference time (1976 -2005) under RCP4.5 and 8.5 emission scenarios. Stippling denotes regions where the difference is statistically significant at 0.05 level.
+
+
+---
+*Chunk pages 118–118*
+*Token usage:* input=206 (sys=94, user=112), max_out=1024, ctx=8192
+---
+
+# Appendix 1.4: Number of People Affected by Floods in the HoA Region beginning from 90s
+
+Source: Adapted from the Climate Risks and Food Security Atlas of the GHA based on EM DAT Database
+
+[Page 1]
+
+
+---
+*Error processing pages 119–119: *
+---
+
+
+
+---
+*Chunk pages 120–120*
+*Token usage:* input=152 (sys=94, user=58), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 112
+
+---
+
+[Page 1]  
+H  
+
+--- 
+
+This appears to be a header or title from a document, likely related to the Green Climate Fund's funding proposal version 3.0, with page number 112. The content seems to be a fragment of a larger document and does not contain substantial text beyond this header. 
+
+If you have more content from the PDF, please provide it for conversion into Markdown format.
+
+
+---
+*Chunk pages 121–121*
+*Token usage:* input=268 (sys=94, user=174), max_out=1024, ctx=8192
+---
+
+# Appendix 1.7: Number of People Affected by Droughts in the HoA Region beginning from 90s
+
+Source: Adapted from the Climate Risks and Food Security Atlas of the GHA based on EM DAT Database
+
+# Appendix 1.8: Trends in Number of Food Insecure People (IPC Phase 3 and above or in need of Humanitarian Assistance) in the HoA Since October 2010
+
+Source: Adapted from the Climate Risks and Food Security Atlas of the GHA based on EM DAT Database
+
+
+---
+*Chunk pages 122–122*
+*Token usage:* input=195 (sys=94, user=101), max_out=1024, ctx=8192
+---
+
+# Appendix 1.9a: Past Climate Finance Projects in the HoA
+
+[Page 1]  
+H  
+GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 114  
+
+---
+
+# Appendix 1.9b: Past Climate Finance Projects in the HoA
+
+---
+
+
+---
+*Chunk pages 123–123*
+*Token usage:* input=336 (sys=94, user=242), max_out=1024, ctx=8192
+---
+
+# Appendix 1.10: Some Selected Ongoing Experiences in the HoA Initiatives / Projects / Programs
+
+## Indicative Amount Intervention Areas
+
+### Program to Build Resilience for Food and Nutrition Security in the Horn of Africa (BREFONS) - 2021-2027
+
+- **UA 149 million (AfDB)**  
+  Designed as a follow-up phase of the DRSLP with the sole objective of improving the living standards for women, youth, and the population in general in the HoA (Djibouti, Ethiopia, Kenya, Somalia, South Sudan, and Sudan).
+
+### Agricultural Climate Resilience Enhancement Initiative
+
+- **USD 6.8 million (Adaptation Fund)**  
+  The goal of the project is to develop and implement adaptation strategies and measures
+
+[Page 123]
+
+
+---
+*Chunk pages 124–124*
+*Token usage:* input=904 (sys=94, user=810), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 116
+
+## Targeted countries include Ethiopia, Kenya, and Uganda (2017)
+
+That will strengthen the resilience of vulnerable smallholder farmers, agro-pastoralists, and pastoralists in the Horn of Africa to climate variability and change in line with the IDDRSI programme, the National Adaptation Programme of Action (NAPAs) and Development Strategies/Visions of participating countries.
+
+## Multinational (Somalia/Sudan)
+
+Rural Livelihoods Adaptation to Climate Change in the Horn of Africa II (RLACC II)”. 2017
+
+US $17 million (The Global Environment Facility-GEF)
+
+RLACC II aims to enhance rural livelihoods by reducing food insecurity through climate adaptive measures in pastoral and agro-pastoral communities. It is a clear response to the devastating drought, environmental degradation, and poverty in the Horn of Africa.
+
+## Strengthening Climate Information Systems for Climate Change Adaptation in the Greater Horn of Africa through Regional Cooperation
+
+US $9.5 million. The Green Climate Fund (GCF)
+
+The programme aims to strengthen the climate resilience of 8 targeted countries (all members of Intergovernmental Authority on Development) to the climate change impacts of extreme rainfall events, extreme droughts and floods that can be of transboundary nature and impact several countries at the same time.
+
+## Horn of Africa Climate Change Programme (HoA-CCP)
+
+€ 4.000.000 from the Netherlands Ministry of Foreign affairs (DGIS)
+
+A leverage to attract other financial resources and sustain the regional programme
+
+## Financing Supports Regional Initiative on Communities Hosting Refugees - 2016
+
+$175 Million from the International Development Association (IDA), the World Bank’s fund for the poorest, and the Governments of Ethiopia, Uganda, and Djibouti
+
+To mitigate the impact of forced displacement on refugee-hosting communities in the Horn of Africa.
+
+## Horn of Africa Regional Initiative - 2014
+
+$8 billion from World Bank, United Nations, African Union, European Union, African Development Bank, and the Islamic Development Bank
+
+To help the Horn of Africa countries address the drivers of fragility and conflict, particularly in tackling forced displacement, supporting populations in borderlands, and facilitating regional economic integration.
+
+## Horn of Africa Initiative - 2021
+
+$83.6 million from the AfDB
+
+To boost cross-border trade in electricity between Ethiopia and Djibouti and to deepen integration in the Horn of Africa sub-region.
+
+## COVID-19 Rapid Response Facility (CRF) - 2020
+
+$10 billion from AfDB
+
+To bolster health systems and disease surveillance, enhance infection prevention and control, and improve regional coordination by the East African Community (EAC) and the Intergovernmental Authority on Development (IGAD) to contain cross-border transmissions.
+
+## Food and Nutrition Security Resilience Programme in the Horn of Africa - 2019
+
+$28 million - FAO
+
+The Program focusing on addressing the cause-effect relationship between conflict and food insecurity in Somalia, South Sudan and Sudan, and seeks to set good examples of how to build food system resilience in protracted crises.
+
+
+---
+*Chunk pages 125–125*
+*Token usage:* input=415 (sys=94, user=321), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 117
+
+## Resilient Landscapes and Livelihoods Project (FP136 - Ethiopia) – Approved in August 2020
+
+- $296 million from GCF and World Bank
+- The Project aimed at improving climate resilience, land productivity and carbon storage and increase access to diversified livelihood activities in selected rural watersheds.
+
+## Cooling facility (FP177-Multi-country including Somalia)
+
+- $879.8 million from GCF and World Bank
+- An innovative, multi-sector and multi-country programmatic financing mechanism to help address the key sustainable development challenge of providing access to cooling while minimizing negative climate impacts.
+
+## Inclusive Green Financing Initiative (IGREENFIN I): Greening Agricultural Banks & the Financial Sector to Foster Climate Resilient, Low Emission Smallholder Agriculture in the Great Green Wall (GGW) countries - Phase I (FP183 – Multi-country including Djibouti, Sudan and Ethiopia)
+
+- €177.482 million from GCF and IFAD
+- A cross-cutting programme will enhance access to credit and technical assistance for local farmers, farmers' organizations, cooperatives and micro and small sized enterprises.
+
+
+---
+*Chunk pages 126–126*
+*Token usage:* input=1075 (sys=94, user=981), max_out=1024, ctx=8192
+---
+
+# [Page 1]
+## GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 118
+
+### Appendix 2:  
+#### 2.1 Technologies for African Agriculture Transformation (TAAT)
+
+TAAT is an AfDB flagship program, which offers a wide range of technology brokerage services to assist African countries. The services include the latest climate-smart technologies, their accompanying management practices, and post-harvest and value-addition interventions. Different strategies are offered for different commodities but are usually combined to strengthen national food systems.
+
+The overall goal of TAAT, which is an integral part of AfDB’s Feed Africa Strategy (2016–2025), is to radically transform African agriculture into a competitive sector by deploying high-impact, proven agricultural technologies to raise agricultural productivity in Africa; mitigate risks and promote diversification and processing in 18 agricultural value chains within eight priority intervention areas, namely: self-sufficiency in rice production; cassava intensification; food and nutrition security in the Sahel; transforming African Savannahs into breadbaskets; revitalizing tree plantations; expanding horticulture; increasing Africa’s wheat production and achieving self-sufficiency in inland fish production.
+
+These work alongside six enabler domains that address transversal issues such as soil fertility management, water management, and capacity development, policy support, attracting African youth in agribusiness, and fall armyworm response.
+
+TAAT's partnership with the Consultative Group on International Agricultural Research (CGIAR) Centres and Advanced Agricultural Research Institutes, the world's largest global agricultural innovation network and provider of climate smart agricultural technologies. The CGIAR and Advanced Agricultural Research Institutes work in consortium with the National Agricultural Research and Extension Systems (NARES), Private sector, and Ministries of Agriculture.
+
+TAAT program has emerged as a cornerstone in the deployment of climate-smart innovations and technologies, particularly in the agricultural sector. This is achieved through a strategic focus on innovative farming solutions, large-scale deployment of proven agricultural technologies, and the promotion of Climate Smart Agriculture (CSA) technologies and innovations.
+
+#### Climate-Smart Farming Solutions:
+
+##### Soil and Water Conservation Techniques:
+TAAT spearheads the adoption of innovative soil and water conservation techniques such as Zai, Half-moons, and Contour Lines Technique. These soil and water conservation techniques, specifically demonstrated to boost sorghum, maize millet production in the Sahel region, and dry areas in East Africa.
+
+##### Low-Cost Irrigation Technologies:
+Through its Water Enabler Compact (TAAT-WEC), TAAT promotes the use of cost-effective and easily deployable irrigation and water management technologies. This initiative not only improves water management and irrigation practices but also contributes significantly to climate-smart agriculture.
+
+#### Maize activities and Impact on Productivity:
+
+##### Drought-Tolerant Maize Varieties:
+The TAAT Maize Compact, led by the African Agricultural Technology Foundation (AATF), is disseminating climate-smart maize technologies such as the Water Efficient Maize Varieties and other breeding programs across 14 countries in Africa. These technologies are disseminated through a strong Public-Private Partnership (PPP) with significant participation of commercial seed companies, farmer groups, commodity associations, and National Agricultural Research Systems (NARS).
+
+When drought hit the Southern Africa region in 2019, TAAT deployed drought-tolerant maize varieties, which were cultivated by 5.2 million households on 841,000 hectares. As a result, farmers survived the drought, allowing maize production to expand by 631,000 metric tons of maize, with a value of USD 107 million. The TAAT Maize Compact also facilitated the establishment of 4,256 demonstration plots, conducted 757 field days, and distributed 84,321 free small-pack seeds to boost the scale-up of over 17,340 tons of climate-smart maize seeds.
+
+##### Market Linkages and Strategic Partnerships:
+The Maize Compact facilitates linkages between farmers and input/output markets, ensuring a ready market for maize grain at fair prices. Collaborations with agro-processors, grain off-takers, and millers have resulted in value-added products such as maize flour and stockfeed. TAAT, through its innovative approach of aggregating farmers into groups, has
+
+
+---
+*Chunk pages 127–127*
+*Token usage:* input=1038 (sys=94, user=944), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 119
+
+## TAAT's Impact on Wheat Production:
+### Wheat Seed Activities:
+In Ethiopia, following the recent successful and nationwide deployment of heat-tolerant wheat varieties, the irrigated wheat area was rapidly expanded from less than 5,000 ha in 2018/19 to 187,240 ha in 2020/21 and 650,000 ha in 2021/22. On average, yields of wheat increased on average from 2.0 tons/ha to 4 tons/ha. Ethiopia’s wheat production increased by an additional 1.6 million metric tonnes in 2022, and the country achieved self-sufficiency in wheat production. Ethiopia says it is poised to export wheat for the first time in the coming wheat season. This model is being upscaled to other East African countries of Sudan, Tanzania, etc.
+
+### Strategic Initiative and Capacity Building:
+TAAT places a strong emphasis on capacity building, providing hands-on training for seed technicians, pioneer farmers, and youth engaged in community-based seed production. The program's approach involves the establishment of Innovation Platform (IP) sites, promoting the adoption of heat-tolerant wheat varieties with associated management packages.
+
+## Sustainable Livestock Production:
+### Comprehensive Livestock Technologies:
+TAAT's involvement in sustainable livestock production includes water storage facilities, feed mixers, slaughtering equipment, rotational grazing, eco-friendly production equipment. The program also emphasizes research on high-performance animal breeds with enhanced yield and quality and the soil mapping to support integrated soil fertility management usage in the production of livestock feed. The program supports the processing of livestock waste into compost, contributing to sustainable waste management practices. Private sector participation is encouraged through the Risk Sharing Facility (RSF), to finance private enterprises involved in livestock production.
+
+## Sustainable Horticulture and Vegetable Production:
+### Climate-Resilient Varieties and Precision Farming:
+TAAT through its compact led by WorldVeg focuses on introducing heat-tolerant, high-yield, and disease-resistant varieties in horticulture and vegetable production. TAAT promotes precision farming, changes in cropping patterns, and the use of early warning systems for sustainable horticulture and vegetable production. Moreover, soil mapping guides fertilizer use, and efficient water management policies are implemented to ensure sustainable practices in horticulture and vegetable production.
+
+## Sustainable Staple Crops Production:
+### Climate-Resilient Staple Crops production:
+TAAT focuses on sustainable intensification of adapted cassava, maize, rice, and soya seed varieties. The program advocates for the use of improved short-cycle, heat, and drought-tolerant rice, cassava, maize, and soybean varieties. The program emphasizes the production of early generation seeds (EGS) and the construction of Semi-Autotrophic Hydroponics technology (SAH) centers for rapid multiplication of seed and demo trials. Integrated rice-based farming systems, efficient irrigation, the use of climate-resilient cultivars, weather-proof farming equipment and post-harvest facilities contribute to sustainable staple crops production. The adoption of no-tillage practices, organic fertilizers, and precision farming techniques further enhances climate-smart agriculture.
+
+### Innovative Financing and Climate Forecasting:
+Innovative financing, including the Risk Sharing Facility (RSF), and crop insurance schemes are introduced to attract private sector participation in staple crops production. TAAT emphasizes the importance of climate forecasting and monitoring systems, leveraging remote sensing technologies for informed decision-making.
+
+## Summary:
+In summary, TAAT's multifaceted approach encompasses innovative farming techniques, adoption of climate-smart technologies, strategic partnerships, and capacity building. This comprehensive strategy is instrumental in deploying climate-smart innovations and technologies, ensuring increased productivity, improved income for farmers, and addressing challenges related to climate change in the agricultural sector. The program's success stories in various agricultural domains showcase its vital role in advancing sustainable practices across the African continent.
+
+
+---
+*Chunk pages 128–128*
+*Token usage:* input=1078 (sys=94, user=984), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 120
+
+## Monitoring and Evaluation
+
+The Monitoring and Evaluation of Agri-Science Uptake in Research and Extension (MPRO) is a well thought-out monitoring and evaluation system providing a new cutting-edge data collection architecture that uses analytical tools and latest methods for tracking progress and assessing performance results based on defined program indicators. Fully deployed in TAAT spanning in 31 countries with a powerface data collection interface, the tool uses innovative analytical tools to showcase implementation progress of ongoing field work and provides access to real time data highlighting how TAAT is positively impacting smallholder farmer behaviours that lead to transformative change. This innovative platform provides a holistic and comprehensive data collection, analysis, and visualization solution, offering valuable insights through an intuitive, interactive dashboard.
+
+The project’s M&E system and related activities will be financed and supported by funds allocated to the M&E. Using the project’s M&E planned budget, this existing digital tool MPRO will be applied to this project and used to inform progress on adaptation to the M&E systems in each of the participating countries. This involves ensuring data is correctly and timely gathered on adaptation related activities in each participating country.
+
+The MPRO Platform has been designed to encourage reshare and reuse of the M&E data for: (i) routinely monitoring the progress in real-time beyond indicators and reporting, (ii) continuously providing insightful evidence of achievement for management decision making to improve implementation, (iii) interactive dashboards for data visualization and (iv) enhanced performance reporting. The platform automatically aggregates data and has information available in an organized space saving time, resources, and reduces the risk of errors when retrieving data. The system will empower the entire ecosystem of partners and stakeholders across all targeted countries in IGAD to make informed decision as a pivotal digitally enabled system in the new cutting-edge Tech enabled-M&E arena.
+
+Additionally, MPRO is interoperable with other Management Information Systems (MIS). In this case, no duplicate efforts will be needed both for AfDB and GCF internal M&E systems to receive data in real-time. The platform which is already effective, will be populated with results, and greater resources and expertise will be dedicated to M&E activities, particularly at the community level and to inform progress on adaptation.
+
+## 2.2 Affirmative Finance Action for Women in Africa (AFAWA)
+
+Affirmative Finance Action for Women in Africa (AFAWA) is a pan-African initiative to bridge the USD 42 billion financing gap facing women in all countries in Africa, with the aim of strengthening enabling environments and stakeholder capacity. Financing will be in-form of loans (concessional and market-rate). AFAWA adopts a holistic approach through three pillars.
+
+AFAWA finance leverages the AfDB’s financial instruments and has two innovative solutions to drastically transform the banking and financial landscape in Africa and to create incentives for lending to women in business: (i) USD 300 million risk-sharing instrument to unlock USD 3 billion in credit for women businesses and enterprises in Africa. This mechanism will build upon the existing network of commercial banks and microfinance institutions to create structural change and lasting impact for women, and (ii) rating system to evaluate financial institutions based on the share and quality of their lending to women, and their socio-economic impact. Top institutions will be rewarded with preferential financing terms from AfDB.
+
+AFAWA technical assistance provides advisory services to financial institutions to ensure successful implementation of their product portfolio for women and strengthens the capacity of women entrepreneurs through training to enhance business productivity and growth. AFAWA technical assistance provides advisory services to financial institutions to ensure successful implementation of their product portfolio for women and strengthens the capacity of women entrepreneurs through training to enhance business productivity and growth.
+
+AFAWA enabling environment engages with African Governments and other key stakeholders to support legal, policy and regulatory reforms and strike down the structural barriers impeding women in business.
+
+Through the Bank's commitment to fostering access to finance and technical support for Women-led Small and Medium Enterprises (WSMEs), AFAWA achieved significant milestones in 2023, a year of resilience and transformation. In collaboration with 96 financial institutions across 32 regional member countries, AFAWA unlocked a cumulative lending of about USD 1.6 billion by leveraging on the Bank's
+
+---
+
+
+---
+*Chunk pages 129–129*
+*Token usage:* input=1175 (sys=94, user=1081), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 121
+
+investments and AFAWA risk sharing mechanism implemented by the African Guarantee Fund (AGF). As of end of 2023, AFAWA counts a cumulative amount of USD 54.5 million approved and signed technical assistance projects, which participate in strengthening Part ners Financial Institutions’ value propositions for women market; strengthening the women entrepreneur’s capacities; and shaping a conducive enabling environment for women’s access to finance on the continent. AFAWA’s deployment after two years has contributed to multiply the volume of the Bank’s investments towards WSMEs benefiting a total of 7,193 vibrant women-led SMEs continent-wide.
+
+## Enhancing Visibility and Empowering Financial Institutions:
+
+Throughout 2023, AFAWA extended its reach beyond Tanzania and the Democratic Republic of Congo, organizing 4 additional AFAWA Finance Series, in partnership with the African Guarantee Fund (AGF) in Ghana (February), Angola (March), Nigeria (October), and Kenya (November). These events focused on advocating with Countries’ Central Banks for crucial actions and reforms, resulting cumulatively in the training of over 500 bankers and Financial Ecosystem practitioners over two days, emphasizing smart-gender investing and building strong value propositions for WSMEs.
+
+## Strengthening the ecosystem and Championing Reform Advocacy:
+
+AFAWA has played a pivotal role in policy reform, currently supporting 20 member countries in developing gender-responsive policies for WSMEs’ access to finance in partnership with the Alliance for Financial Inclusion (AFI). Simultaneously, the program is partnering with 10 Women Entrepreneurship Enablers to support over 8,000 WSMEs in accessing finance in 20 African countries.
+
+On special projects, the Bank through AFAWA signed an agreement in February 2023 with Femmes Afrique Solidarite under the African Union Empowering women in agriculture initiative to capacitate women cooperatives in the cashew sector in Tanzania. The USD 280,000 grant will enable the women to increase their cashew production from 500 to 3,000 metric tonnes while meeting the quality standards required by cashew off-takers.
+
+During the month of March 2023, the Bank through AFAWA signed $425 million Technical Assistance grant with Banque du Commerce et d’Industrie de Mauritanie to support its goals of supporting access to finance for WSMEs in Mauritania, Mali, Guinea, and Senegal. The grant follows a $7 million trade facility to BCI signed in 2022.
+
+With the support of AFAWA under the Guarantee for Growth (G4G) program, Zambia National Commercial Bank (ZANACO) launched the Zee Women’s Banking program, that is extending credit facilities to all women in the program with no collateral requirements. In the context of the launch, ZANACO hosted its inaugural Zee Women’s Banking Awards, on March 07 in Lusaka, to celebrate the accomplishments of the women entrepreneurs who have made a positive impact in their areas of expertise. Awards were presented in categories such as: Entrepreneurs of the Year, CEO of the Year, Creative of the Year, Rising Star Youth, among others awarded to top performers in their sector.
+
+The Bank together with AGF went on a business development mission to Djibouti in March 2024 to explore opportunities for AFAWA through the financial sector and potentially at government level with the recently approved project with the Alliance for Financial Inclusion (AFI). Following the mission colleagues from AGF are discussing with some of the financial institutions who have expressed initial interest in the AFAWA Guarantee Mechanism.
+
+AFAWA in partnership with the African Guarantee Fund and the African Bankers’ Award has integrated a new award category, namely the AFAWA Bank of the Year Award, which goes to the bank that has greatly incorporated the development and growth of WSMEs as an integrated part of their SME strategy. Letshego Microfinance Bank Nigeria h allocated 63% of its 5,115 loans to support women-led small businesses through their innovative Step Up Loan solution.
+
+## Pathway towards Unlocking USD 5 billion and Bridging the Gender Financial Gap in Africa:
+
+Looking ahead, AfDB commitment to unlocking the targeted USD 5 billion remains strong. A comprehensive approach will guide AFAWA’s efforts on fostering lasting partnerships and synergies while accelerating mainstreaming AFAWA into the bank’s operations across the sectors and the regions. In 2024, AFAWA intends to enhance efforts in pursuing de-risking, empowering, and transforming the landscape for women-led SMEs in Africa while ensuring a greater impact and inclusive growth for years to come.
+
+
+---
+*Chunk pages 130–130*
+*Token usage:* input=1048 (sys=94, user=954), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 122
+
+## 2.3 The Africa Adaptation Acceleration Program (AAAP)
+
+The AAAP is an initiative to scale up adaptation efforts and mobilise USD 25 billion to support climate-resilient development in Africa. Led by the African Development Bank (AfDB) and the Global Centre on Adaptation, the programme focuses on strengthening the capacity of African countries to adapt to the impacts of climate change. It comprises several pillars addressing critical areas such as agriculture and food security, resilient infrastructure, youth empowerment for entrepreneurship and job creation in climate adaptation and resilience, and innovative financing initiatives.
+
+### Agriculture and food security pillar
+
+Agriculture is vital to Africa's economies, employing more than half the population and contributing 25% to GDP. However, climate change poses significant challenges to the continent's agriculture, affecting food security and incomes, particularly for women and rural households. The use of digital technology offers potential solutions, with estimates of 40-70% increases in yields and incomes. However, some 250 million people, including smallholder farmers and pastoralists, lack access to digital agricultural services.
+
+The Agriculture and Food Security Pillar aims to scale up the adoption of climate-smart digital technologies and related data-driven agricultural and financial services for at least 30 million farmers in Africa by 2025, leading to improved food security for at least 10 million people in 26 least developed countries.
+
+#### Projects supported include
+
+##### Programme to Build Resilience for Food and Nutrition Security in the Horn of Africa (BREFONS, 331,914 euros)
+
+In this project, AAAP's added value is evident through the provision of upstream technical assistance to ensure the integration of climate-smart digital technologies for adaptation into the project. This includes several completed tasks such as the preparation of Digital Adaptation Profiles for Kenya & Ethiopia, technical reports on agricultural insurance support, and national multi-stakeholder workshops to identify key digital adaptation solutions.
+
+The project aims to achieve several outcomes, including benefiting 1.3 million farmers and pastoralists and 15 million livestock through the use of gender-responsive climate services. It aims to create 55,000 jobs for youth and women, while cultivating 170,000 hectares using digital climate-smart solutions.
+
+##### National Integrated Livestock Development Programme in Senegal Phase 1 (PNDIES P1, €300,000)
+
+The objective of the programme is to contribute to the development of competitive, climate-resilient and job-creating value chains for youth and women. In pursuit of this goal, the AAAP has provided several value-added activities. These include conducting an evidence-based assessment of PNDIES' climate vulnerability and identifying strategic options for integrating digital and smart agriculture to address climate change. In addition, AAAP has analysed the climate vulnerability of livestock value chains to inform adaptation strategies. It has also identified constraints and opportunities for private sector investment in digital tools for adaptation, facilitated multi-stakeholder dialogues and actions to increase commitment to climate adaptation in the livestock sector, and conducted capacity building for livestock professional associations on the use of digital tools to build resilience in the livestock sector.
+
+##### Programme to Build Resilience to Food and Nutrition Insecurity in the Sahel (P2 P2RS, €409,163)
+
+The programme aims to contribute to the improvement of living conditions and food and nutrition security in the Sahel and West Africa region. AAAP added value to the programme through the dissemination of climate information services, in particular by promoting public-private partnerships to facilitate the sustainable production of hydro-climatic information and services, thereby creating employment opportunities for young people.
+
+In Niger, the project supported the organisation of a regional fair on best practices and technological innovations for climate change adaptation, mitigation and resilience, including digital solutions. In The Gambia, the project focused on upgrading the electronic farmer registry and integrating project beneficiaries, providing digital/mobile extension services through agritech providers, and supporting the development and implementation of national frameworks for climate services.
+
+Through these initiatives, the project strengthened regional cooperation and used digital technologies to promote climate resilience and adaptation in the target countries and regional entities covered by the project.
+
+
+---
+*Chunk pages 131–131*
+*Token usage:* input=815 (sys=94, user=721), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 123
+
+## Programme for Integrated Development and Adaptation to Climate Change in the Zambezi River Basin (PIDACC Zambezi, EUR 417,937)
+
+In this African Development Bank investment, the AAAP has made significant progress on several fronts. It carried out mapping exercises to identify digital technologies suitable for climate adaptation and to highlight their applicability in different sectors. It has also deepened understanding of the challenges and opportunities associated with using digital tools for climate adaptation. By providing actionable recommendations and facilitating engagement opportunities, the AAAP has strengthened climate adaptation efforts through digital technologies. It has also developed a comprehensive database cataloguing existing technologies, their applications in agriculture and digital solutions for climate adaptation.
+
+AAAP also facilitated training sessions on key topics such as water accounting, integration of remote sensing and hydro-meteorological data for sustainable water management, and climate adaptation strategies, including regional climate insurance and weather risk pooling.
+
+## Climate Resilient Wheat Value Chain Development Project (CREW, €150,000)
+
+AAAP's contribution to the CREW project is to introduce climate adaptation measures and integrate digital adaptation solutions throughout the wheat value chain. This includes assessing local climatic conditions and food security, developing micro-regional climate risk maps, and facilitating stakeholder workshops to identify priority digital extension mechanisms. In addition, AAAP supports capacity building of extension agents and stakeholders involved in the implementation of digital climate advisory services. These efforts aim to increase the resilience of Ethiopia's wheat production system, improve wheat production and productivity, and promote national wheat self-sufficiency, regional trade and exports.
+
+## Mkondvo Ngwavuma Water Augmentation Programme (MNWAP, €249,952)
+
+The overall objective of MNWAP is to improve food security, poverty reduction and climate change resilience by supporting the development of water and irrigation infrastructure in Eswatini. The project will contribute to poverty reduction in the target region. Increased production will lead to higher incomes for producers and improve their social and economic well-being. AAAP will contribute to increasing agricultural productivity and growth in the agricultural sector, and significantly improve food and nutrition security and incomes by providing climate risk assessments to improve the project.
+
+The programme aims to transform approximately 9,400 hectares of uncultivated land into diversified commercial cash crops. The programme aims to create 100,000 direct jobs and many more indirect employment opportunities.
+
+## Technical assistance
+
+Stakeholder workshops were conducted in all regions of Africa to prioritise digital extension mechanisms and promote the adoption of Digital Climate Advisory Services (DCAS). These trainings aimed to inform and strengthen the capacity of selected public and private actors, enabling them to share knowledge, best practices and experiences, and explore innovative approaches to promote the adoption of DCAS in their respective regions. The training focused on the design and implementation of DCAS projects tailored to reach the last mile, thereby empowering farmers to improve food security and climate resilience.
+
+To date, more than 500 participants have been trained in South, East, West and Central Africa.
+
+
+---
+*Chunk pages 132–132*
+*Token usage:* input=721 (sys=94, user=627), max_out=1024, ctx=8192
+---
+
+# Appendix 3: Table A.4: Assignment of EEs
+
+## Component Output Activity Financin
+g Source 
+Executing Entity 
+(EE) 
+Component 1: 
+Strengthening Pastoral 
+and Agropastoral 
+Production Systems’ 
+Resilience to Climate 
+Change
+
+### Output 1.1: Climate resilient infrastructure built/rehabilitated
+
+#### Activity 1.1.1: Construct or rehabilitate and manage water harvesting infrastructure
+- **ADF** Grant
+- **MoAWFL**, Djibouti; **MoA**, Ethiopia; **MoLFR**, Somalia; **MoAF**, South Sudan
+- **Gov't** Contributions
+- **GCF** Loan
+
+#### Activity 1.1.2: Construct or rehabilitate and manage community irrigation schemes
+- **ADF** Grant
+- **MoAWFL**, Djibouti; **MoA**, Ethiopia; **MoAWFLC**, Kenya; **MoAF**, South Sudan
+- **GCF** Loan
+
+#### Activity 1.1.3: Construct or rehabilitate and manage community livestock infrastructure
+- **ADF** Grant
+- **MoAWFL**, Djibouti; **MoA**, Ethiopia; **MoAWFLC**, Kenya; **MoLFR**, Somalia; **MoAF**, South Sudan
+- **ADF** Loan
+
+### Output 1.2: Improved sustainable land management practices
+
+#### Activity 1.2.1: Train communities on sustainable land management best practices
+- **ADF** Grant
+- **MoAWFL**, Djibouti; **MoA**, Ethiopia; **MoAWFLC**, Kenya; **MoAF**, South Sudan; **IGAD**
+- **ADF** Loan
+- **GCF** Grant
+
+#### Activity 1.2.2: Support sustainable rangeland management and agroforestry
+- **ADF** Grant
+- **MoAWFL**, Djibouti; **MoA**, Ethiopia; **MoAWFLC**, Kenya; **MoLFR**, Somalia; **MoAF**, South Sudan; **IGAD**
+- **ADF** Loan
+- **GCF** Grant
+
+### Output 1.3: Increased adoption of climate-smart innovations
+
+#### Activity 1.3.1: Provide extension services and deploy climate-smart innovations to improve agricultural and fodder production
+- **ADF** Grant
+- **MoAWFL**, Djibouti; **MoA**, Ethiopia; **MoAWFLC**, Kenya; **MoLFR**, Somalia; **MoAF**, South Sudan; **IGAD**
+- **ADF** Loan
+- **GCF** Grant
+
+
+---
+*Chunk pages 133–133*
+*Token usage:* input=867 (sys=94, user=773), max_out=1024, ctx=8192
+---
+
+# Activity 1.3.2: Disseminate resilient varieties to improve agricultural and fodder production
+
+## Component 2: Supporting low carbon and resilient development of Agribusiness
+
+### Output 2.1: Increased access to digital advisory services and markets
+
+#### Activity 2.1.1: Establish and deploy digital advisory services using PPP mechanism
+
+- **ADF** Grant
+  - MoAWFL, Djibouti; MoA, Ethiopia; MoAWFLC, Kenya; MoLFR, Somalia; MoAF, South Sudan
+  - IGAD
+- **ADF** Loan
+  - GCF
+- **GCF** Grant
+
+#### Activity 2.1.2: Construct rural markets
+
+- **ADF** Grant
+  - MoAWFL, Djibouti; MoA, Ethiopia; MoAWFLC, Kenya; MoLFR, Somalia; MoAF, South Sudan
+- **GCF** Grant
+  - GCF
+- **GCF** Loan
+
+### Output 2.2: Developed inclusive MSMEs and cooperatives with access to climate financing
+
+#### Activity 2.2.1: Train women and youth on entrepreneurial skills development in renewable energy technologies
+
+- **ADF** Grant
+  - MoAWFL, Djibouti; MoA, Ethiopia; MoAWFLC, Kenya; MoLFR, Somalia; MoAF, South Sudan
+- **ADF** Loan
+  - GCF
+- **GCF** Grant
+
+#### Activity 2.2.2: Facilitate access for women and youth groups to renewable energy (solar and biodigester systems) to enhance alternative income generation
+
+- **ADF** Grant
+  - MoAWFL, Djibouti; MoA, Ethiopia; MoAWFLC, Kenya; MoLFR, Somalia; MoAF, South Sudan
+- **GCF** Grant
+  - GCF
+
+#### Activity 2.2.3: Design and operationalise innovative credit lines via selected local PFIs, in participating countries.
+
+- **GCF** Grant
+  - MoAWFL, Djibouti; MoA, Ethiopia
+- **GCF** Loan
+
+#### Activity 2.2.4: Provide technical assistance to MSMEs, local PFIs, and cooperatives to create an enabling environment for credit access and sustainability
+
+- **ADF** Grant
+  - MoA, Ethiopia; MoAWFLC, Kenya; MoLFR, Somalia
+- **ADF** Loan
+  - GCF
+- **GCF** Grant
+
+## Component 3: Strengthening Rural Communities’ Capacity to Adapt to Climate Change
+
+### Output 3.1: Enhanced access to climate information and early warning systems
+
+#### Activity 3.1.1: Expand agrometeorological stations network to generate data for climate advisory services
+
+- **ADF** Grant
+  - MoAWFL, Djibouti; MoA, Ethiopia; MoAWFLC, Kenya; MoAF, South Sudan
+- **ADF** Loan
+  - GCF
+- **GCF** Grant
+
+
+---
+*Chunk pages 134–134*
+*Token usage:* input=654 (sys=94, user=560), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 126
+
+## Activity 3.1.2: Integrate and disseminate climate information and early warning into the established digital advisory services
+
+- **ADF Grant**
+  - MoAWFL, Djibouti;
+  - MoA, Ethiopia;
+  - MoAWFLC, Kenya;
+  - MoAF, South Sudan;
+  - IGAD ADF Loan
+  - GCF Grant
+
+## Output 3.2: Strengthened regulatory and policy frameworks and institutional capacity for climate resilience
+
+### Activity 3.2.1: Support delivery of climate regulatory framework and mainstreaming of climate change into agricultural sector policies and strategies
+
+- **ADF Grant**
+  - MoAWFL, Djibouti;
+  - MoA, Ethiopia;
+  - MoAWFLC, Kenya;
+  - MoLFR, Somalia;
+  - MoAF, South Sudan;
+  - IGAD ADF Loan
+  - GCF Grant
+
+## Component 4: Program Coordination and Knowledge Management
+
+### Output 4.1: Project management and coordination
+
+#### Activity 4.1.1: Project management and Coordination
+
+- **ADF Grant**
+  - MoAWFL, Djibouti;
+  - MoA, Ethiopia;
+  - MoAWFLC, Kenya;
+  - MoLFR, Somalia;
+  - MoAF, South Sudan;
+  - IGAD ADF Loan
+  - GCF Grant
+
+#### Activity 4.1.2: Technical and institutional capacity building
+
+- **ADF Grant**
+  - MoAWFL, Djibouti;
+  - MoA, Ethiopia;
+  - MoAWFLC, Kenya;
+  - MoLFR, Somalia;
+  - MoAF, South Sudan;
+  - IGAD ADF Loan
+
+#### Activity 4.1.3: Monitoring and Evaluation
+
+- **ADF Grant**
+  - MoAWFL, Djibouti;
+  - MoA, Ethiopia;
+  - MoAWFLC, Kenya;
+  - MoLFR, Somalia;
+  - MoAF, South Sudan;
+  - IGAD GCF Grant
+
+#### Activity 4.1.4: Knowledge Management and Communication
+
+- **ADF Grant**
+  - MoAWFL, Djibouti;
+  - MoA, Ethiopia;
+  - MoAWFLC, Kenya;
+  - MoLFR, Somalia;
+  - MoAF, South Sudan;
+  - IGAD
+
+
+---
+*Chunk pages 135–135*
+*Token usage:* input=721 (sys=94, user=627), max_out=1024, ctx=8192
+---
+
+# [Page 1]
+
+*êâ*
+
+RepueLroue oe D.lreoul  
+Ururtr-Écnlrrr-PRrx  
+MITIsTTRT DE L'ENVIRoNNEIMENT  
+ET DU Drvrlopprvrxt DunRatr  
+LE SECRÉTAIRE CÉruÉNEI  
+N.t+0  
+Djibouti, le 0 g ApR ZglJ  
+MEDD  
+is+++ L^;.lt+=*l'  
+ù*Jl - Ëlrt,*^Jl -;r-3Jl  
+âj-J+ll î,:l:s  
+Ll rr,,, Jl 4J^jillJ  
+ptrJt g,r.ïl  
+aSr  
+\J  
+,-.à,i ^"-
+
+Re: Funding proposal for the GCF by the African Development Bank regarding program toBuild Resilience and Food Security in the Horn of Africa
+
+Dear lVladam, Sir,
+
+WgL"t"t to the programme titled Program to Build Resilience and Food Security in the Horn of Africa(BREF?A1S) in Diibouti as included in the funding proposal submitted by African Devetopment Bank to  
+us on '17 December 2021 .
+
+The undersigned is the duly authortzed representative of Ministry of Environment and SustainableDeveloppement, the Nationat Designated Authority of Djibouti.
+
+Pursuant to GCF decision B.0B/10, the content of which we acknowledge to have reviewed, we  
+hereby communicate our no-objection to the programme as included inlhe funding proposal.
+
+By communicating our no-objection, it is implied that:  
+(a) The government of Djibouti has no-objection to the programme as included in the fundingproposal;  
+(b) The programme as included in the funding proposal is in conformity with the natjonal priorities  
+strategies and plans of D1ibouti;  
+(c) ln accordance with the GCF's environmentaland social safeguards, the programme as  
+included in the funding proposal is in conformity with relevant national laws ànd regulations.  
+
+We also confirm that our national process for ascertaining no-objection to the programmeas includedin the funding proposal has been duly followed  
+We also confirm that our no-objection applies to all projects or activities to be implemented within thescope of the programme  
+We acknowledge that this letter will be made publicly available on the GCF website.
+
+To: The Executive Director  
+Green Climate Fund ("GCF")  
+
+Kind regards,  
+Ministry of Envi  
+@  
+nd Su  
+t  
+nable  
+g,  
+| +zs3 3s-Bs-22 18  
+ent  
+BP 11  
+Secretary  
+Dini  
+No-objection letters issued by the national designated authority(ies) or focal point(s)
+
+---
+
+
+---
+*Chunk pages 136–136*
+*Token usage:* input=129 (sys=94, user=35), max_out=1024, ctx=8192
+---
+
+# Page 136
+
+---
+
+[Page 136]
+
+---
+
+[Page 136]
+
+---
+
+[Page 136]
+
+---
+
+[Page 136]
+
+---
+
+[Page 136]
+
+---
+
+[Page 136]
+
+---
+
+[Page 136]
+
+---
+
+[Page 136]
+
+---
+
+[Page 136]
+
+---
+
+[Page 136]
+
+---
+
+[Page 136]
+
+---
+
+[Page 136]
+
+---
+
+[Page 136]
+
+---
+
+[Page 136]
+
+---
+
+[Page 136]
+
+---
+
+[Page 136]
+
+---
+
+[Page 136]
+
+---
+
+[Page 136]
+
+---
+
+[Page 136]
+
+---
+
+[Page 136]
+
+---
+
+[Page 136]
+
+---
+
+[Page 136]
+
+---
+
+[Page 136]
+
+---
+
+[Page 136]
+
+---
+
+[Page 136]
+
+---
+
+[Page 136]
+
+---
+
+[Page 136]
+
+---
+
+[Page 136]
+
+---
+
+[Page 136]
+
+---
+
+[Page 136]
+
+---
+
+[Page 136]
+
+---
+
+[Page 136]
+
+---
+
+[Page 136]
+
+---
+
+[Page 136]
+
+---
+
+[Page 136]
+
+---
+
+[Page 136]
+
+---
+
+[Page 136]
+
+---
+
+[Page 136]
+
+---
+
+[Page 136]
+
+---
+
+[Page 136]
+
+---
+
+[Page 136]
+
+---
+
+[Page 136]
+
+---
+
+[Page 136]
+
+---
+
+[Page 136]
+
+---
+
+[Page 136]
+
+---
+
+[Page 136]
+
+---
+
+[Page 136]
+
+---
+
+[Page 136]
+
+---
+
+[Page 136]
+
+---
+
+[Page 136]
+
+---
+
+[Page 136]
+
+---
+
+[Page 136]
+
+---
+
+[Page 136]
+
+---
+
+[Page 136]
+
+---
+
+[Page 136]
+
+---
+
+[Page 136]
+
+---
+
+[Page 136]
+
+---
+
+[Page 136]
+
+---
+
+[Page 136]
+
+---
+
+[Page 136]
+
+---
+
+[Page 136]
+
+---
+
+[Page 136]
+
+---
+
+[Page 136]
+
+---
+
+[Page 136]
+
+---
+
+[Page 136]
+
+---
+
+[Page 136]
+
+---
+
+[Page 136]
+
+---
+
+[Page 136]
+
+---
+
+[Page 136]
+
+---
+
+[Page 136]
+
+---
+
+[Page 136]
+
+---
+
+[Page 136]
+
+---
+
+[Page 136]
+
+---
+
+[Page 136]
+
+---
+
+[Page 136]
+
+---
+
+[Page 136]
+
+---
+
+[Page 136]
+
+---
+
+[Page 136]
+
+---
+
+[Page 136]
+
+---
+
+[Page 136]
+
+---
+
+[Page 136]
+
+---
+
+[Page 136]
+
+---
+
+[Page 136]
+
+---
+
+[Page 136]
+
+---
+
+[Page 136]
+
+---
+
+[Page 136]
+
+---
+
+[Page 136]
+
+---
+
+[Page 136]
+
+---
+
+[Page 136]
+
+---
+
+[Page 136]
+
+---
+
+[Page 136]
+
+---
+
+[Page 136]
+
+---
+
+[Page 136]
+
+---
+
+[Page 136]
+
+---
+
+[Page 136]
+
+---
+
+[Page 136]
+
+---
+
+[Page 136]
+
+---
+
+[Page 136]
+
+---
+
+[Page 136]
+
+---
+
+[Page 136]
+
+---
+
+[Page 136]
+
+---
+
+[Page 136]
+
+---
+
+[Page 136]
+
+---
+
+[Page 136]
+
+---
+
+[Page 136]
+
+---
+
+[Page 136]
+
+---
+
+[Page 136]
+
+---
+
+[Page 136]
+
+---
+
+[Page 136]
+
+---
+
+[Page 136]
+
+---
+
+[Page 136]
+
+---
+
+[Page 136]
+
+---
+
+[Page 136]
+
+---
+
+[Page 136]
+
+---
+
+[Page 136]
+
+---
+
+[Page 136]
+
+---
+
+[Page 136]
+
+---
+
+[Page 136]
+
+---
+
+[Page 136]
+
+---
+
+[Page 136]
+
+---
+
+[Page 136]
+
+---
+
+[Page 136]
+
+---
+
+[Page 136]
+
+---
+
+[Page 136]
+
+---
+
+[Page 136]
+
+---
+
+[Page 136]
+
+---
+
+[Page 136]
+
+
+---
+*Chunk pages 137–137*
+*Token usage:* input=527 (sys=94, user=433), max_out=1024, ctx=8192
+---
+
+# [Page 1]
+
+## Republic of Kenya
+
+### The National Treasury and Economic Planning
+
+#### Telegraphic Address: 22921  
+#### Fax No. 310833  
+#### Telephone: 2252299  
+
+#### When Replying Please Quote  
+Ref: T N T/CO N F/36/021/C/ (96)
+
+### Ms. Mufalda Duarte  
+Executive Director  
+Green Climate Fund  
+G-Tower, 24-4 Songdo-dong  
+Yeonsu-gu  
+Incheon City, Republic of Korea  
+
+### The National Treasury  
+PO BOX 30007 - 00100  
+Nairobi  
+
+#### Date: November 16, 2023
+
+## Re: Funding proposal for the GCF by the African Development Bank - Agriculture Research, Production and Sustainability Division - regarding financing the Program to Build Resilience and Food Security in the Horn of Africa.
+
+We refer to the programme titled "Program to Build Resilience and Food Security in the Horn of Africa (BREFONS)" as included in the funding proposal submitted by the Africa Development Bank on November 13, 2023.
+
+The undersigned is the duly authorized representative of the National Treasury, the National Designated Authority of Kenya.
+
+Pursuant to GCF decision B.08/10, the content of which we acknowledge to have reviewed, we hereby communicate our no-objection to the project as included in the funding proposal.
+
+By communicating our no objection, it is implied that:
+
+(a) The Government of Kenya has no objection to the programme as included in the funding proposal;  
+(b) The programme as included in the funding proposal is in conformity with the national priorities, strategies and plans of Kenya.
+
+
+---
+*Chunk pages 138–138*
+*Token usage:* input=351 (sys=94, user=257), max_out=1024, ctx=8192
+---
+
+# [Page 1]
+
+(c) In accordance with the GCF's environmental and social safeguards, the programme as included in the funding proposal is in conformity with relevant national laws and regulations.
+
+We also confirm that our national process for ascertaining no-objection to the programme as included in the funding proposal has been duly followed. Further, we confirm that our no-objection applies to all projects or activities to be implemented within the scope of the programme.
+
+We acknowledge that this letter will be made publicly available on the GCF website.
+
+Yours sincerely,  
+DR. CHRIS KILO, CBS  
+PRINCIPAL SECRETARY/ NATIONAL TREASURY  
+
+Copy to: Prof. Njuguna N dung'u, CBS  
+Cabinet Secretary  
+The National Treasury and Economic Planning  
+NAIROBI  
+
+Laouali GARBA  
+Division Manager  
+Agriculture Research, Production and Sustainability Division (AHAl.2)  
+African Development Bank
+
+
+---
+*Chunk pages 139–139*
+*Token usage:* input=129 (sys=94, user=35), max_out=1024, ctx=8192
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page
+
+
+---
+*Chunk pages 140–140*
+*Token usage:* input=129 (sys=94, user=35), max_out=1024, ctx=8192
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page 1
+
+---
+
+# Page
+
+
+---
+*Chunk pages 141–141*
+*Token usage:* input=595 (sys=94, user=501), max_out=1024, ctx=8192
+---
+
+# [Page 1]
+
+## Environmental and social safeguards report form pursuant to para. 17 of the IDP
+
+### Basic project or programme information
+
+- **Project or programme title**: Building Climate Resilience for Food and Livelihoods in the Horn of Africa (BREFOL)
+- **Existence of subproject(s) to be identified after GCF Board approval**: Yes
+- **Sector (public or private)**: Public
+- **Accredited entity**: African Development Bank (AfDB)
+- **Environmental and social safeguards (ESS) category**: Category B
+- **Location – specific location(s) of project or target country or location(s) of programme**: Djibouti, Ethiopia, Kenya, Somalia, and South Sudan
+
+### Environmental and Social Impact Assessment (ESIA) (if applicable)
+
+- **Date of disclosure on accredited entity’s website**: Friday, February 2, 2024
+- **Language(s) of disclosure**:
+  - Djibouti: French
+  - Ethiopia: English, Amharic
+  - Kenya: English  
+  - Somalia: English, Somali  
+  - South Sudan: English
+
+### Explanation on language
+
+Due to the African Development Bank’s multicultural status and depending on the country’s preference, all communications are made through the use of one of the two official languages, English and French. In Ethiopia and Somalia, where the official languages are Amharic and Somali respectively, we have also published the documents in these languages.
+
+### Link to disclosure
+
+#### Djibouti
+- English: [https://www.afdb.org/sites/default/files/djibouti_cges_drlsp_ii_vf_30.09.21_-_version_anglaise.pdf](https://www.afdb.org/sites/default/files/djibouti_cges_drlsp_ii_vf_30.09.21_-_version_anglaise.pdf)
+- French: [http://www.maepe-rh.dj/index.php?option=com_content&view=article&id=91&Itemid=374](http://www.maepe-rh.dj/index.php?option=com_content&view=article&id=91&Itemid=374)
+
+#### Ethiopia
+- English: [https://www.afdb.org/sites/default/files/esmf_main_report_final_21_september_2021_ethiopia_0.pdf](https://www.afdb.org/sites/default/files/esmf_main_report_final_21_september_2021_ethiopia_0.pdf)
+- Amharic: [http://moa.gov.et/images/2023/BREFONS______ESMF.pdf](http://moa.gov.et/images/2023/BREFONS______ESMF.pdf)
+
+#### Kenya
+- English: [https://www.afdb.org/sites/default/files/kenya_esmf_final-revised_.pdf](https://www.afdb.org/sites/default/files/kenya_esmf_final-revised_.pdf)
+
+
+---
+*Chunk pages 142–142*
+*Token usage:* input=525 (sys=94, user=431), max_out=1024, ctx=8192
+---
+
+# [Page 1]
+
+## Somalia
+
+- **English:**  
+  https://www.afdb.org/sites/default/files/environmental_and_social_management_framework_-_brefons_-_somalia.pdf  
+
+- **Somali:**  
+  https://molfr.gov.so/wp-content/uploads/2024/01/Somali-Version-ESMF-report.pdf  
+
+## South Sudan
+
+- **English:**  
+  https://www.afdb.org/sites/default/files/ssd_environmental_and_social_management_framework_ssd-_hoa_project_em2.pdf  
+
+## Other link(s)
+
+- **AfDB**  
+  https://www.afdb.org/en/documents/multinational-program-build-resilience-food-and-nutrition-security-horn-africa-p-z1-c00-073  
+
+## Ministry of Agriculture, Livestock, and Fisheries of Djibouti
+
+- **French:**  
+  http://www.maepe-rh.dj/index.php?option=com_content&view=article&id=91&Itemid=374  
+
+## Ministry of Agriculture of Ethiopia
+
+- **English:**  
+  http://moa.gov.et/images/2023/Ethiopia_ESMF_version_GCF24Jan2024.pdf  
+
+- **Amharic:**  
+  http://moa.gov.et/images/2023/BREFONS______ESMF.pdf  
+
+## Ministry of Agriculture, Livestock, Fisheries and Cooperatives of Kenya
+
+- **English:**  
+  https://kilimo.go.ke/wp-content/uploads/2024/01/ENVIRONMENTAL-AND-SOCIAL-MANAGEMENT-FRAMEWORK-ESMF-FOR-BREFONS.pdf  
+
+## Ministry of Livestock Forestry & Range of Somalia
+
+- **English:**  
+  https://molfr.gov.so/wp-content/uploads/2024/01/Somalia_ESMF-version_GCF25Jan2024-1.pdf  
+
+- **Somali:**  
+  https://molfr.gov.so/wp-content/uploads/2024/01/Somali-Version-ESMF-report.pdf
+
+
+---
+*Chunk pages 143–143*
+*Token usage:* input=586 (sys=94, user=492), max_out=1024, ctx=8192
+---
+
+# Ministry of Agriculture and Food Security of South Sudan
+
+## English:
+https://mafs.gov.ss/wp-content/uploads/2024/01/South_Sudan_ESMF_version_GCF24Jan2024.pdf
+
+## Remarks
+
+A framework for an ESIA consistent with the requirements for a Category B programme is contained in the Environmental and Social Management Framework (ESMF) for each of the target countries.
+
+### Environmental and Social Management Plan (ESMP) (if applicable)
+
+#### Date of disclosure on accredited entity’s website
+Friday, February 2, 2024
+
+#### Language(s) of disclosure
+English, Amharic, French, and Somali
+
+#### Explanation on language
+Due to the African Development Bank’s multicultural status and depending on the country’s preference, all communications are made through the use of one of the two official languages, English and French. In Ethiopia and Somalia, where the official languages are Amharic and Somali, respectively, we have also published the documents in these languages.
+
+#### Link to disclosure
+
+##### Djibouti
+- English: https://www.afdb.org/sites/default/files/djibouti_cges_drlsp_ii_vf_30.09.21_-_version_anglaise.pdf
+- French: http://www.maepe-rh.dj/index.php?option=com_content&view=article&id=91&Itemid=374
+
+##### Ethiopia
+- English: https://www.afdb.org/sites/default/files/esmf_main_report_final_21_september_2021_ethiopia_0.pdf
+- Amharic: http://moa.gov.et/images/2023/BREFONS______ESMF.pdf
+
+##### Kenya
+- English: https://www.afdb.org/sites/default/files/kenya_esmf_final-revised_.pdf
+
+##### Somalia
+- English: https://www.afdb.org/sites/default/files/environmental_and_social_management_framework_-_brefons_-_somalia.pdf
+- Somali: https://molfr.gov.so/wp-content/uploads/2024/01/Somali-Version-ESMF-report.pdf
+
+##### South Sudan
+- English: https://mafs.gov.ss/wp-content/uploads/2024/01/South_Sudan_ESMF_version_GCF24Jan2024.pdf
+
+--- 
+
+[Page 1]
+
+
+---
+*Chunk pages 144–144*
+*Token usage:* input=571 (sys=94, user=477), max_out=1024, ctx=8192
+---
+
+# [Page 1]
+
+https://www.afdb.org/sites/default/files/ssd_environmental_and_social_management_framework_ssd-_hoa_project_em2.pdf
+
+## Other link(s)
+
+- AfDB  
+  https://www.afdb.org/en/documents/multinational-program-build-resilience-food-and-nutrition-security-horn-africa-p-z1-c00-073
+
+## Ministry of Agriculture, Livestock, and Fisheries of Djibouti
+
+- French:  
+  http://www.maepe-rh.dj/index.php?option=com_content&view=article&id=91&Itemid=374
+
+## Ministry of Agriculture of Ethiopia
+
+- English:  
+  http://moa.gov.et/images/2023/Ethiopia_ESMF_version_GCF24Jan2024.pdf
+
+- Amharic:  
+  http://moa.gov.et/images/2023/BREFONS______ESMF.pdf
+
+## Ministry of Agriculture, Livestock, Fisheries and Cooperatives of Kenya
+
+- English:  
+  https://kilimo.go.ke/wp-content/uploads/2024/01/ENVIRONMENTAL-AND-SOCIAL-MANAGEMENT-FRAMEWORK-ESMF-FOR-BREFONS.pdf
+
+## Ministry of Livestock Forestry & Range of Somalia
+
+- English:  
+  https://molfr.gov.so/wp-content/uploads/2024/01/Somalia_ESMF-version_GCF25Jan2024-1.pdf
+
+- Somali:  
+  https://molfr.gov.so/wp-content/uploads/2024/01/Somali-Version-ESMF-report.pdf
+
+## Ministry of Agriculture and Food Security of South Sudan
+
+- English:  
+  https://mafs.gov.ss/wp-content/uploads/2024/01/South_Sudan_ESMF_version_GCF24Jan2024.pdf
+
+## Remarks
+
+An ESMP consistent with the requirements for a Category B programme is contained in the Environmental and Social Management Framework (ESMF) for each of the target countries.
+
+## Environmental and Social Management System (ESMS) (if applicable)
+
+- Date of disclosure on accredited entity’s website: N/A
+
+
+---
+*Chunk pages 145–145*
+*Token usage:* input=508 (sys=94, user=414), max_out=1024, ctx=8192
+---
+
+# [Page 1]
+
+## Language(s) of disclosure
+N/A
+
+## Explanation on language
+N/A
+
+## Link to disclosure
+N/A
+
+## Other link(s)
+N/A
+
+## Remarks
+N/A
+
+## Any other relevant ESS reports, e.g. Resettlement Action Plan (RAP), Resettlement Policy Framework (RPF), Indigenous Peoples Plan (IPP), Indigenous Peoples Planning Framework (IPPF) (if applicable)
+
+### Description of report/disclosure on accredited entity’s website
+N/A
+
+### Explanation on language
+N/A
+
+### Link to disclosure
+N/A
+
+### Other link(s)
+N/A
+
+### Remarks
+N/A
+
+## Disclosure in locations convenient to affected peoples (stakeholders)
+
+### Date
+Friday, February 2, 2024
+
+### Place
+Djibouti  
+Ministry of Agriculture, Water, Fisheries and Livestock (MoAWFL), Zone Boulaos – BP: 4250, Djibouti – République de Djibouti  
+
+Ethiopia  
+Ministry of Agriculture (MoA), PO Box 62347, Addis Ababa, Ethiopia  
+
+Kenya  
+Ministry of Agriculture and Livestock Development, Cathedral Road, Nairobi, P. O. Box 30028-00100 Kenya  
+
+Somalia  
+Ministry of Livestock, Forestry and Range, Warta Nabada District Mogadishu, Somalia  
+
+South Sudan  
+Ministry of Agriculture and Food Security, Ministries Complex, Juba, South Sudan  
+
+### Date of Board meeting in which the FP is intended to be considered
+Date of accredited entity’s board meeting Monday, September 30, 2024  
+
+### Date of GCF’s Board meeting
+Monday, July 15, 2024  
+
+### Note
+This form was prepared by the accredited entity stated above.
+
+
+---
+*Chunk pages 146–146*
+*Token usage:* input=524 (sys=94, user=430), max_out=1024, ctx=8192
+---
+
+# GCF/B.39/02/Add.14  
+## Page 146  
+### Secretariat’s assessment of FP239  
+
+**Proposal name:** Building Climate Resilience for Food and Livelihoods in the Horn of Africa (BREFOL)  
+**Accredited entity:** African Development Bank (AfDB)  
+**Country/(ies):** Djibouti, Ethiopia, Kenya, Somalia and South Sudan  
+**Project/programme size:** Large  
+
+## I. Overall assessment of the Secretariat  
+
+1. The funding proposal is presented to the Board for consideration with the following remarks:  
+
+### Strengths  
+The programme presents innovative solutions to improve, at scale, the adaptive capacity of communities in the Horn of Africa through improved production and productivity of local agricultural and food systems and improved management of rangeland and agropastoral landscapes.  
+
+### Points of caution  
+As three of the five target countries are currently affected by conflict, and social and institutional fragility, there are additional risks for a timely and synchronized implementation of the programme. Several mitigation measures, including separate disbursement per country and reallocation clauses, have been included in the design.  
+
+The focus on agribusiness development, especially youth and women-led micro, small and medium-sized enterprises (MSMEs), and the deployment of innovative financial instruments including credit lines and simple co-financing with selected private investors and intermediary financial institutions will help to stimulate investment for building climate change resilience through transformation of the agricultural and food systems and management of rangeland ecosystems in the Horn of Africa region.  
+
+Implementation through both national and regional institutions is commendable, because it will enable building on the existing capacities, structures and governance mechanisms in the Horn of Africa, while continuing to build the region’s capacity at all levels.
+
+
+---
+*Chunk pages 147–147*
+*Token usage:* input=912 (sys=94, user=818), max_out=1024, ctx=8192
+---
+
+# GCF/B.39/02/Add.14  
+## Page 147  
+
+### 2. The Board may wish to consider approving this funding proposal in accordance with the  
+term sheet agreed between the Secretariat and the accredited entity, and, if considered  
+appropriate, subject to the conditions set out in Annex II of document GCF/B.39/02.  
+
+## II. Summary of the Secretariat’s assessment  
+
+### 2.1 Programme background  
+
+3. The Building Climate Resilience for Food and Livelihoods in the Horn of Africa (BREFOL)  
+programme is a large-scale intervention aimed at reducing climate-induced food insecurity in  
+the Horn of Africa, which is one of the world’s most disaster-prone regions, with debilitating  
+food-insecure conditions arising from various hazards in the region. The objective of the  
+programme is to enhance the capacity of vulnerable communities across five countries that are  
+part of the Intergovernmental Authority on Development, the region’s economic bloc), namely  
+Djibouti, Ethiopia, Kenya, Somalia and South Sudan. The programme aims to enable these  
+countries to prepare adequately for and manage food insecurity challenges caused by climate  
+and other environmental hazards by fostering solutions for mobilizing the financial resources  
+needed to strengthen the resilience and adaptive capacity of the vulnerable communities in the  
+target countries.  
+
+4. The Horn of Africa region is home to approximately 250 million people who are highly  
+dependent on the local ecosystems for their survival, 64 per cent of whom live in areas prone to  
+extreme food shortages, where the frequency of the threat of famine has increased in the recent  
+past, and the need of emergency food assistance to meet basic needs continues to rise.  
+Moreover, the region has experienced high inter-annual rainfall variability, along with a  
+consistent regional warming trend over the past 40 years (1981–2020), posing a threat to crop  
+productivity. This has resulted in farmers experiencing declining crop yields and some areas  
+becoming less suitable for production of major crops, thereby further affecting food systems,  
+well-being and local livelihood strategies in the region.  
+
+5. The programme will overcome these challenges by helping to transition the local food  
+systems to diversified agroforestry systems, with more robust species and mix of varieties  
+compared with current systems, and by supporting communities to manage and produce an  
+array of food and tree crops targeting 4.68 million direct beneficiaries and 16.37 million indirect  
+beneficiaries. Through capacity-building and the establishment of the new agroforestry systems,  
+communities will be more resilient, better able to cope with shocks and damage, and will also  
+benefit from access to finance through a network of local financial institutions to help reinvest  
+in and diversify the local food systems.  
+
+6. The programme will deliver mitigation co-benefits in the form of reduced and avoided  
+emissions that will be achieved through activities aimed at increasing energy access through  
+improved vegetation regeneration, improved power generation, and improved forest cover and  
+land-use conditions.  
+
+7. The programme is requesting USD 151 million of GCF financing, structured in USD 90.70  
+million grant financing and USD 60.30 million loan financing. The total cost of the programme,  
+including co-financing, is USD 335.30 million, with co-financing primarily in the form of grants  
+and loans from the accredited entity (AE), the African Development Bank (AfDB).  
+
+8. In terms of environmental and social safeguards (ESS), this proposal has been  
+categorized as environmental and social (E&S) risk category I-2. The review by the Secretariat  
+confirms the E&S risk category assigned by the AE, although it recommends that the programme  
+be re-categorized as E&S risk category B.
+
+
+---
+*Chunk pages 148–148*
+*Token usage:* input=810 (sys=94, user=716), max_out=1024, ctx=8192
+---
+
+# GCF/B.39/02/Add.14  
+## Page 148  
+
+### 2. Component-by-component analysis  
+
+#### Component 1: Strengthening pastoral and agropastoral production systems’ resilience to climate change (total cost: USD 187.70 million; GCF cost: USD 69.08 million)  
+9. Component 1 will strengthen the resilience of pastoral and agropastoral production systems to climate change by (i) supporting the development of climate-resilient infrastructure; (ii) supporting the sustainable management of agropastoral land; and (iii) improving access to climate-smart innovations and technologies. This component clearly demonstrates the complementarity between the GCF and AfDB investments in developing an integrated approach (infrastructure – natural resources management – climate-smart agriculture inputs and technologies nexus) to transforming pastoral and agropastoral production systems in response to climate change.  
+
+#### Component 2: Supporting low-carbon and resilient development of agribusinesses (total cost: USD 91.99 million; GCF cost: USD 64.56 million)  
+10. Component 2 will support the development of agribusinesses by increasing access to digital advisory services and markets, and supporting the development of inclusive MSMEs and cooperatives with access to climate financing. Agribusiness opportunities will provide significant avenues for livelihood diversification as a strategy for building resilience, especially for groups with limited access, such as women and youth. Investments in agribusinesses are also expected to greatly contribute to improved and more resilient agricultural production, further contributing to the food security of the region. In addition, channelling GCF loans through local financial institutions is complemented by technical assistance to these financial partners, to ensure a long-term transformation of increased access to finance for smallholders and other underserved groups.  
+
+#### Component 3: Strengthening agropastoral communities’ capacity to adapt to climate change (total cost: USD 26.66 million; GCF cost: USD 9.39 million)  
+11. Component 3 will support the strengthening of agropastoral communities’ capacity to adapt to climate change by enhancing the climate services infrastructure, strengthening operational capacities for climate regulatory framework reforms, and institutional strengthening in the target countries.  
+
+#### Component 4: Programme coordination and knowledge management (total cost: USD 28.95 million; GCF cost: USD 7.98 million)  
+12. Project implementation and monitoring and evaluation costs have been adequately provided for, and specific activities have been planned and integrated within the design of the programme to ensure that project implementation and monitoring and evaluation processes will be effectively coordinated.  
+
+### Gender and environmental and social management framework aspects  
+13. A costed environmental and social management framework (ESMF) was developed for each of the programme’s five target countries, outlining specific activities that will sufficiently ensure that ESS are put in place and observed throughout the programme’s lifespan. A well-designed gender assessment and action plan was also developed, laying out costed plans of actions that will be undertaken in the five programme countries to ensure that gender equality, equity and safeguards will be upheld throughout the lifespan of the programme.
+
+
+---
+*Error processing pages 149–149: LM Studio API error 400: {"error":"Model unloaded."}*
+---
+
+
+
+---
+*Chunk pages 150–150*
+*Token usage:* input=887 (sys=94, user=793), max_out=1024, ctx=8192
+---
+
+# GCF/B.39/02/Add.14  
+## Page 150  
+
+### 21. The programme contributes directly towards efforts to achieve the Sustainable Development Goals (SDGs), in particular SDG 5 (gender equity), SDGs 6 and 7 (access to clean energy and water), SDG 9 (technological innovation), SDG 13 (climate action) and SDG 15 (halting and reversing land degradation and biodiversity loss).
+
+### 22. The economic, social and environmental co-benefits that the programme offers stem from the capacity-strengthening that the programme will provide to communities to enhance their ability to create, diversify and sustain livelihood strategies and opportunities for themselves.
+
+### 23. The livelihood opportunities will help to boost production and income, which will in turn contribute towards improved productivity and sustainable management of rangeland and agropastoral ecosystems by local communities, thus offering communities excellent opportunities to create value and economic possibilities across the value chain of the numerous products of both livestock and crop-farming systems. This will help to establish resilient rangeland and agropastoral landscapes across the target areas, with the potential for scaling up to the entire Horn of Africa region. These livelihood security and enhanced ecosystem management outcomes will further build resilience in the target communities.
+
+### 24. The climate resilient and smart infrastructure, financing mechanisms and agribusiness approaches that the programme will promote will provide the incentives and architecture to foster added value to key commodities and products derived from the livestock and crop-farming systems and bring innovation and technology into local food systems in the Horn of Africa region. These factors will help communities generate, process and transform key products, with enhanced access to surrounding markets and thereby further generate security and resilience for livelihoods.
+
+### 3.4 Needs of the recipient Scale: High  
+
+### 25. The programme targets one of the world’s most disaster-prone regions, where debilitating food-insecure conditions arise from various hazards which are compounded by the high political fragility of the region.
+
+### 26. The communities are facing severe challenges from climate change threatening their current livelihood strategies and yet they lack the financial resources and access to credit facilities to purchase farm inputs such as climate-adapted seed varieties, fertilizers and farm implements, and to deploy climate resilient agricultural practices to cope with the frequent hazards and the recurrent food crises, hunger and famine that characterize the region. The current local livelihood and food systems are not able to withstand the pressure from climate change. The proposed interventions, through agribusiness development and the credit lines and weather-based insurance mechanisms, will help communities transform their livelihood options, local food systems and ecosystems to become resilient and diverse and to foster long-term food systems and landscapes, thereby building resilience and adaptive capacity.
+
+### 27. The target countries are heavily indebted and do not have sufficient resources to invest in the actions to safeguard their populations from climate-induced hazards and food insecurity. The countries and beneficiaries are currently struggling to access finance to support the transition they need to secure their well-being, livelihood and food systems. Without access to finance and investments, the local food systems will not be able to provide vulnerable communities in the region with the safety nets they need. The programme will fill an important gap through working with key regional, national and local institutions in both the private and public sectors, and will help to foster long-term solutions through financial innovation, building
+
+--- 
+
+*Note: Page numbers are preserved as per instructions.*
+
+
+---
+*Error processing pages 151–151: *
+---
+
+
+
+---
+*Chunk pages 152–152*
+*Token usage:* input=963 (sys=94, user=869), max_out=1024, ctx=8192
+---
+
+# GCF/B.39/02/Add.14  
+## Page 152  
+
+The programme also has an innovative exit strategy that will enable scaling up its approach to finance across the Horn of Africa and will build access and partnership between communities, intermediary financial institutions and other private sector actors for targeting local markets with innovative products and commodities from the local agricultural and food systems.
+
+The programme has a proposed budget of USD 335.30 million, with GCF funding representing 45 per cent of the estimated cost at USD 151 million and co-financing at 55 per cent or USD 184.30 million. The GCF financing includes a USD 90.70 million grant (27.1 per cent of the total funding) and a USD 60.30 million senior loan (18 per cent of total funding). AfDB will provide USD 42.9 million in senior loans at a 0.5 per cent interest rate with a 30-year tenor and a 10-year grace period (12.8 per cent of the total funding) and support the programme with a USD 123.54 million grant (36.8 per cent of total funding), while the Food and Agriculture Organization of the United Nations will provide a grant of USD 0.69 million (0.21 per cent of the total funding). The governments and beneficiaries will also make in-kind contributions of USD 16.03 million (4.8 per cent of the total funding) and USD 1.82 million (0.54 per cent of the total funding), respectively.
+
+Since the proposed programme involves multiple interventions in different countries, it was not possible to conduct a full economic and financial appraisal (EFA) of all the subprojects at the ex ante analysis stage. However, a detailed EFA was carried out on a selection of indicative subprojects, as outlined in annex 3 of the funding proposal. As per the AfDB policy guidelines, all other interventions intended for funding under the funding proposal will be thoroughly scrutinized to assess their financial and economic viability. Only subprojects that meet the prescribed economic net present value (NPV) and internal rate of return (IRR) thresholds will be financed by the programme.
+
+The overall aggregate EFA results modelled over 25 years at an average financial discount rate of 9.6 per cent and an average economic discount rate of 11 per cent revealed the ex ante estimates for financial aggregate results (table 1) and the economic individual and aggregate results (table 2).
+
+### Table 1. Overall appraisal of financial results of indicative projects  
+Overall aggregate financial discount rate 9.6%  
+
+| Financial NPV (USD thousands) | Financial IRR (%) |
+|-------------------------------|-------------------|
+| Base scenario (WP scenario)   | 447.55            |
+| costs +10%                    | 1,518.06          |
+| costs +20%                    | 1,489.37          |
+| benefits +10%                 | 1,730.12          |
+| benefits +20%                 | 1,913.48          |
+| benefits –10%                 | 1,363.39          |
+| benefits –20%                 | 1,180.02          |
+| benefits postponed 1 year     | 1,464.47          |
+| benefits postponed 2 years    | 1,494.67          |
+
+Abbreviations: IRR = internal rate of return, NPV = net present value, WP = worst possible scenario
+
+
+---
+*Chunk pages 153–153*
+*Token usage:* input=814 (sys=94, user=720), max_out=1024, ctx=8192
+---
+
+# GCF/B.39/02/Add.14  
+## Page 153  
+
+### Table 2. Overall appraisal of economic aggregate results of indicative projects  
+| Scenario | Economic NPV (USD millions) | Economic IRR (%) |
+|----------|----------------------------|------------------|
+| Base scenario (WP scenario) | 91.44 | 28.3 |
+| Costs +10% | 78.43 | 24.4 |
+| Costs +20% | 65.42 | 21.3 |
+| Benefits +10% | 113.59 | 32.5 |
+| Benefits +20% | 135.74 | 36.9 |
+| Benefits –10% | 69.28 | 24.1 |
+| Benefits –20% | 47.13 | 19.9 |
+| Benefits postponed 1 year | 67.07 | 21.0 |
+| Benefits postponed 2 years | 82.04 | 24.4 |
+
+**Abbreviations:**  
+- IRR = internal rate of return  
+- NPV = net present value  
+- WP = worst possible  
+
+### 39. The EFAs were conducted on the basis of guidelines provided by GCF on a “per indicative project” basis for each country of interest. The analysis shows that the proposed investments are financially feasible and economically viable. The EFAs suggest that the investment is justified, with positive financial and economic NPVs, and financial and economic IRRs higher than the chosen discount rates of 9.6 per cent and 11 per cent, respectively.  
+
+Additionally, the EFA sensitivity analyses results indicated that the estimated profitability and sustainability of proposed interventions are relatively insensitive to changes in discount rates, increase in costs or decrease in benefits, as well as when benefits are postponed by one or two years. This in turn suggests that the financial and economic results obtained are robust.
+
+## IV. Assessment of consistency with GCF safeguards and policies  
+
+### 4.1 Environmental and social safeguards  
+
+### 40. Programme overview. BREFOL aims to help build climate resilience and food security in the five Intergovernmental Authority on Development member countries of the Horn of Africa. The programme includes components to strengthen the resilience of pastoral and agropastoral production systems such as the development and rehabilitation of water and irrigation infrastructure for croplands and pasturelands, including for animal feed, health, and market access infrastructure. It also aims to promote sustainable land management practices such as agroforestry and afforestation programmes and deploy climate-smart innovations and upscaling of technologies to pastoralists and smallholder farmers in the Horn of Africa.  
+
+The programme also seeks to facilitate access to digital advisory services and markets and provide entrepreneurial skills development in renewable energy technologies. It also aims to design innovative credit lines to local participating financial institutions to finance (i) investments in the crop, aquaculture, and livestock value chains; (ii) woodlots for fuelwood; and (iii) the restoration of forest and degraded lands.  
+
+The environmental and social co-benefits of the programme include reduced air pollution and improved air quality resulting in better health and well-being of the communities. The programme will also contribute to the improvement of water supply and security, and will enhance the overall ecosystem and ecosystem services through improved forest cover and land-use changes in the target areas.
+
+
+---
+*Chunk pages 154–154*
+*Token usage:* input=949 (sys=94, user=855), max_out=1024, ctx=8192
+---
+
+# GCF/B.39/02/Add.14  
+## Page 154  
+
+### 41. Environmental and social risk category and safeguard instruments  
+The AE has classified the programme as Category I-2 in accordance with its integrated safeguard system classification. This is equivalent to GCF’s Category B classification given that the activities to be supported will involve development and rehabilitation of water and market access infrastructure, and financing of a broad range of value chain activities from production to marketing, which will target smallholder beneficiaries.  
+
+The activities foreseen could have potential limited adverse environmental and/or social risks and impacts that individually or cumulatively, are few, generally site-specific, largely reversible, and readily addressed through mitigation measures.  
+
+The Secretariat confirms the risk category and that this is within the AE’s accreditation level. The AE has submitted an Environmental and Social Management Framework (ESMF) for each of the target country (Djibouti, Ethiopia, Kenya, Somalia, and South Sudan).  
+
+### 42. Compliance with GCF’s environmental and social safeguards (ESS) standards  
+The paragraphs below provide a description of the programme’s compliance with the GCF ESS.  
+
+#### (a) ESS1 (Assessment and Management of Environmental and Social Risks and Impacts)  
+Each participating country has prepared an environmental and social management framework (ESMF). The ESMFs provided the procedures to assess and manage individual activities (subprojects) of the programme in each country. While the general overview of the potential risks and impacts of the programme in each of the countries has been described, more detailed analysis of the E&S impacts will be carried out in all target locations.  
+
+The AE’s guidelines will be applied in the conduct of these assessments. Participating financial institutions will also be required to have operational environmental and social management systems (ESMS) whose standards will meet the requirements of the AE’s integrated safeguard system.  
+
+#### (b) ESS2 (Labour and Working Conditions)  
+The ESMFs identified that the target countries are mostly signatories to International Labour Organization conventions and will comply with the core principles of these fundamental conventions.  
+
+The ESMFs also identified risks in relation to occupational health and safety and basic worker’s rights, non-discrimination in employment and benefits, prohibition of child labour and forced labour. The frameworks require access of programme and subproject workers to grievance redress mechanisms.  
+
+It is also recommended that the AE and its executing entities ensure that labour issues in the primary supply chain are adequately assessed and managed as part of the due diligence of the programme’s subprojects.  
+
+#### (c) ESS3 (Resource Efficiency and Pollution Prevention)  
+The programme is generally geared towards efficient use of resources, particularly of water. Hence, the infrastructures that are to be developed and rehabilitated under the programme will be designed to achieve this.  
+
+Some of the activities are also designed to complement the objectives of establishing the hard infrastructure such as by distributing drought tolerant crops to maximize scanty water resources.  
+
+Nevertheless, the programme’s activities will have potential pollution impacts as identified in the ESMFs. These include the possibility for soil erosion, noise, air and water pollution impacts due to construction activities from earthmoving, spillage and generation of wastes.  
+
+There is also the potential for unsustainable water use and water loss from water harvesting structures/reservoirs through evaporation. The potential for siltation of water reservoirs due to erosive land use in the upstream areas can also be expected.  
+
+As regards processing and livestock/dairy facilities, there is potential for air and water pollution due to the operation and use of chemicals and discharges of waste from laboratories and facilities.  
+
+The ESMFs prescribe the development of waste management plans when these issues are identified in site-specific environmental and social impact assessments of the activities.
+
+
+---
+*Chunk pages 155–155*
+*Token usage:* input=979 (sys=94, user=885), max_out=1024, ctx=8192
+---
+
+# GCF/B.39/02/Add.14  
+Page 155  
+
+## (d) ESS4 (Community Health, Safety and Security)  
+The following hazards are potentially relevant based on the current situations of the programme countries. These include construction site and route accident hazards, infrastructure collapse hazard for dams and water impoundments, and other natural hazards such as dust/sandstorms, locust infestation, and severe drought. There are also labour influx-related hazards such as potential for cultural conflicts, increased incidence of gender-based violence and/or sexual exploitation, abuse and harassment (SEAH), and spread of communicable diseases and water and vector-borne diseases. There is also the potential for wild animal encounters and incidence of wildfire in rehabilitated rangeland, forests and facilities.  
+
+The agricultural activities could lead to pesticide poisoning and food safety hazard from processing facilities supported by the programme. Given that the target countries have a significant history or active cases of conflicts, there is potential for the exacerbation of conflict as a result of the programme’s activities. Security arrangements may also have adverse interactions with the host communities. To mitigate these risks and prevent these types of conflicts, the programme will organize public consultations under the guidance of the Intergovernmental Authority on Development. During the conduct of the detailed E&S assessment studies, conflict sensitivity analyses will also be undertaken to determine the levels of fragility and likelihood of conflict occurrences on the ground, and that appropriate management measures will be developed.  
+
+## (e) ESS5 (Land Acquisition and Involuntary Resettlement)  
+The ESMFs have assessed that land acquisition cannot be ruled out but the risks are low. At least two ESMFs (Djibouti and Kenya) have also indicated that subprojects with significant displacements will not be funded. The infrastructure envisaged under the programme are expected to be small scale and other interventions requiring significant area of lands can be sited in government owned lands or beneficiary lands (communal lands), hence land acquisition by expropriation would be rare. However, these lands may still be occupied by some families/tribes or may have been traditionally accessed by groups of people who are not necessarily the beneficiaries of the programme.  
+
+Thus, during the conduct of site-specific environmental and social impact assessments, Resettlement Action Plans which will detail land acquisition and resettlement arrangements including on compensation will be prepared should this standard be triggered. The programme should also ensure that the ESMSs of participating financial institutions shall also cover impacts of land acquisition or use by their respective investments.  
+
+## (f) ESS6 (Biodiversity Conservation and Sustainable Management of Living Natural Resources)  
+The ESMFs have identified risks related to loss or fragmentation and degradation of habitat, severance of animal migration routes and pathways (e.g. due to reduction in water supply, changes in water flow and drainage, soil erosion, pollution of water, soils or air), and loss of plant biodiversity as a result of introduction of invasive species such as Prosopis. There is also the potential loss of vegetation and/or natural habitat during earthworks and construction activities.  
+
+The impacts and risks from the construction activities can be avoided by application of strict siting criteria. Among the strategies to be implemented by the programme are:  
+(i) proper inventory of flora and fauna;  
+(ii) establishment of buffer zones around conservation and ecologically sensitive areas and avoidance or minimization of activity within these zones;  
+(iii) rehabilitation of cleared areas with native species;  
+(iv) soliciting advice from biodiversity authorities/wildlife specialists, indigenous knowledge experts, traditional natural resources management practitioners on appropriate management measures; and  
+(v) supporting government initiatives on biodiversity conservation.  
+
+## (g) GCF Indigenous Peoples Policy & ESS7 (Indigenous Peoples)  
+The scope of the programme and activities have potential to impact Indigenous Peoples who are found in the countries where the programme will be implemented and thus trigger application of...
+
+
+---
+*Chunk pages 156–156*
+*Token usage:* input=994 (sys=94, user=900), max_out=1024, ctx=8192
+---
+
+# GCF/B.39/02/Add.14  
+## Page 156  
+
+### (h) ESS8 (Cultural Heritage)  
+The potential impact on cultural heritage sites in the programme areas was identified as one of the risks under the programme. However, activities that will adversely impact cultural heritage will be excluded from financing. Further, to manage the risk in situations where there is discovery of physical cultural resources particularly during construction activities, the ESMFs have developed a Chance Find Procedure that outlines the actions required if culturally significant resources are encountered during project construction or operation.
+
+### 43. Sexual exploitation, abuse and harassment (SEAH) safeguarding  
+The SEAH safeguarding approach proposed by the AE is considered inadequate by the Secretariat to comply with the SEAH provisions pursuant to the GCF Environmental and Social Policy. Although the AE has noted that the programme may exacerbate the pre-existing level of gender-based violence and SEAH in the target countries and has devised SEAH safeguards as part of the country-level ESMFs, only the ESMF for Kenya identifies the potential SEAH risks, mitigation measures and the related due diligence process. The Secretariat recommends that the AE take a consistent approach in assessing and addressing the potential SEAH risks that can be applied in all the target countries. The Secretariat also suggests a condition that the AE provide further revised ESMFs for Djibouti, Ethiopia, Somalia and South Sudan, incorporating the necessary SEAH risk screening, risk mitigation measures, the SEAH due diligences process for subprojects, and the procedures for addressing potential SEAH incidences through the grievance redress mechanisms (GRMs) per country.
+
+### 44. Implementation arrangements  
+Each country covered by the programme will have a Project Management Unit or Project Coordinating Unit which will be responsible for the day-to-day operations of the programme. The Project Management Unit/Project Coordinating Unit usually will have E&S safeguard specialists/experts who will manage and monitor implementation of the ESMF. Consultants will also be engaged as needed, to provide technical review and advice on E&S management measures. At the subnational or region/district levels, E&S focal persons will be designated to ensure implementation, monitoring and reporting of the management measures. Programme staff will also undergo training on E&S safeguards.
+
+### 45. Stakeholder Engagement and Information Disclosure  
+The programme has undergone consultations in each country, often being introduced as a second phase or follow-up of a Drought Resilience and Sustainable Livelihood Programme. These consultations were conducted with government officials at the national, subnational and local levels. Plans for further consultations have been outlined in the ESMFs. Detailed and updated stakeholder engagement plans will also be prepared during implementation. Stakeholder engagements will be very important given the fragile and conflict-affected situations of most of the programme areas.
+
+### 46. Grievance redress mechanism (GRM)  
+The ESMFs have described GRMs to be established in the country for the programme. The mechanisms often involve the setting up of independent Grievance Redress Committees at central and region/district levels. The Grievance Redress Committees will have representatives from the project-affected persons, municipal government officials, local civil society leaders, as well as women and youth groups. These are designed to ensure that concerns are proactively identified, apprehensions from impacts of the interventions are adequately clarified, and that issues raised by complainants can be resolved in a timely manner.
+
+
+---
+*Chunk pages 157–157*
+*Token usage:* input=923 (sys=94, user=829), max_out=1024, ctx=8192
+---
+
+# GCF/B.39/02/Add.14  
+## Page 157  
+
+### 4.2 Gender policy  
+
+47. The AE has provided a programme-level gender assessment and gender action plan and therefore complies with the requirements of the GCF Gender Policy.  
+
+48. The gender assessment was conducted through desk reviews and some stakeholder consultations with the ministries responsible for women’s affairs and gender experts, but this did not cover all five participant countries. The stakeholder consultation for development of the gender assessment and gender action plan is limited in scope and in the range of categories of stakeholders engaged.  
+
+49. The gender assessment indicates that countries have favourable environments to promote gender equality and women’s empowerment. Many of the countries have enshrined equality between women and men in their constitutions, legal, institutional and political frameworks as well as having programmes and projects in operation. Many already have established ministries responsible for women’s affairs with devolved structures to support the gender mainstreaming agenda. However, although many initiatives exist to address gender issues, it is notable that the initiatives and commitments are yet to result in tangible changes in the lives of women and there remains a need for much more action in order to meet the commitments that have been set. In some instances, progress is impeded by the existence of widespread violence against women and girls, high levels of female unemployment and low levels of employability among women, who mostly operate in the informal sector in roles that are at subsistence level and are not very sustainable. It is also a reality that financial inclusion is not prioritized by financial institutions, particularly for women entrepreneurs, which is further exacerbated by the slow changes in sociocultural practices.  
+
+50. Women have limited ownership or no access to land, productive resources, access to finance and credit, or technical support to improve agricultural practices. Access to information for women is limited in general, and particularly for climate-related information that is needed for making informed decisions or being part of decision-making processes. Literacy rates among women are particularly low, given that overall literacy rates across the countries’ populations are low. The sociocultural practices maintain women and girls in roles that inhibit their contribution to the overall household economy, and their personal growth and development. The agriculture sector is affected by such realities where the productivity gaps of women-owned farms are 20–30 per cent compared with farms of their male counterparts. The challenges in accessing agriculture, climate-related services, inputs, advisory services and digital and non-digital information for women are much higher than for men, affecting their productivity, nutrition and food security. In addition, it is well-known that much of the day-to-day work and engagement of women (be it in agriculture, entrepreneurship activities, women-led businesses, farmer associations etc.) rely heavily on natural resources. The detrimental impacts of climate change continue to negatively affect opportunities for women in terms of their sources of livelihood, income, day-to-day sustenance, and achieving returns on their engagements in various farmers’ groups and farm-related activities.  
+
+51. The gender assessment recognizes that women-headed households and women in polygamous households in particular face more constraints than women in households headed by men. The constraints result in women lacking security, facing higher levels of poverty, higher levels of workload, and children not being able to attend school. However, women-headed households seem to have more economical use of resources at their disposal. Overall, the five countries are rated very low on gender-related indices.
+
+
+---
+*Chunk pages 158–158*
+*Token usage:* input=842 (sys=94, user=748), max_out=1024, ctx=8192
+---
+
+# GCF/B.39/02/Add.14  
+## Page 158  
+
+### 52.  
+The gender action plan provides activities that will address the challenges to women identified in the gender assessment and will invest in actions to build on the existing roles of women in adapting to climate change. Both regional and country-specific gender action plans include a host of activities with corresponding indicators, targets, timelines, gender expertise and budget.  
+
+### 53.  
+The gender action plan focuses on both cross-cutting regional gender-related issues and country-specific gender issues. It should be noted that the country-level gender assessment and gender action plans will be further refined during project implementation for each of the countries.  
+
+### 54.  
+The regional gender action plan, which covers all five participant countries, focuses on capacity-related issues through (i) the development and adaptation of Gender Action Learning System toolkits and methodologies, thus improving gender relations and promoting the empowerment of women by addressing unequal sociocultural norms; (ii) mentorship support to the training of trainers for conducting gender-related research; (iii) cross-country learning exchanges and documenting best practices; and (iv) the collection of gender-disaggregated data.  
+
+### 55.  
+The country gender action plans include very similar activities aimed at developing the leadership as well as technical skills of women; ensuring the active participation of women in land-related issues; improving the role and contribution of women in water management committees, management groups for land, demonstration sites and agricultural cooperatives; and engaging women as entrepreneurs with access to finance and related services. The action plans also address other constraints faced by women by making labour-saving and climate-smart agriculture technologies accessible to women (e.g. energy-saving cookstoves, solar panels, and biodigesters). These technologies are aimed at addressing the time constraints and workload of women and enabling women’s engagement and participation in decision-making in (water) committees, which have a considerable impact on the quality of life as well as fulfilment of women’s roles and responsibilities. Activities will focus on sectors where many women in the countries are already working, such as enhancing productivity in poultry rearing (i.e. increasing the value chain).  
+
+### 56.  
+The Secretariat understands that the current assessments and gender action plans need further and deeper consultations at all levels; and notes that the gender assessment (to be conducted six months after the inception of the programme) needs to provide sufficient opportunities for various stakeholders to engage and influence the design of the country gender action plans. The AE needs to make sure that the consultations with women and groups representing women’s interests are an integral part of the country-level gender assessments, including ensuring equal representation and voice within consultations and on the formulation of the GRM. GRM design, use and implementation needs to be responsive to local contexts, and the needs of women and vulnerable people.  
+
+## 4.3 Risks  
+
+### 4.3.1. Overall programme assessment (medium risk)  
+57. The Secretariat considers the overall programme as medium risk.  
+
+### 4.3.2. Accredited entity/executing entity capability to execute the current programme (medium risk)  
+58. The AE, AfDB, demonstrated its capability by reference to its existing portfolio of projects and programmes in the Horn of Africa of comparable size or above. The AE is rated AAA stable by Moody’s, Standard & Poor’s and Fitch.
+
+
+---
+*Chunk pages 159–159*
+*Token usage:* input=810 (sys=94, user=716), max_out=1024, ctx=8192
+---
+
+# GCF/B.39/02/Add.14  
+## Page 159  
+
+### 59. Each participant country has designated a ministry as an EE. The AE carried out institutional assessments of the EEs and recommended measures to reduce fiduciary risks incorporated as conditions for GCF disbursements in the term sheet.
+
+### 4.3.3. Programme-specific execution risks (medium risk)  
+
+60. Co-finance: the Secretariat acknowledges the alignment of interests between the AE and GCF, with co-financing in the form of grants and loans from the AE (ratio 1:1.22). If co-financing does not materialize then this may impede programme implementation; however, the risk is adequately mitigated by official approval from the AfDB board in 2021–2022 and by conditions for GCF disbursements in the term sheet.
+
+61. Credit risk: the AE will channel GCF loans to the government ministries acting as EEs in Djibouti and Ethiopia, totalling USD 60 million or 40 per cent of total GCF financing. GCF is the sole lender under the BEFROL direct credit window and the BEFROL direct insurance credit window, and assumes the credit risk of intermediate lenders (local private financial institutions, insurance providers). Credit risk is high, given the sub-investment grade rating profile of the two countries (e.g. Ethiopia Moody’s Caa3/ Standard & Poor’s CCC). In addition, inflationary pressure in Ethiopia may lead to a depreciation of the local currency’s exchange rate against the United States dollar and increase the cost of servicing a USD-denominated GCF loan. However, the highly concessional loans from GCF reduce the financial risk for the countries.
+
+62. Programme viability and concessionality: GCF concessional funding is expected to crowd in private sector financing and catalyse investment in climate change adaptation initiatives, which would not have been possible otherwise. The Secretariat notes that the high concessionality from GCF loans will be passed down to end-borrowers at an agreed margin range and considering the prevailing market-based interest rates in the target countries ( Djibouti, Ethiopia).
+
+### 4.3.4. Compliance risk (medium risk)  
+
+63. This programme addresses food production and security in several countries within the Horn of Africa region. Much of this region is challenged by low capacities to instil financial integrity controls. However, for this programme, the AE has assessed the risks and has proposed a plan to monitor and mitigate such risks. With the imposition of these controls, the compliance risk in the programme is measured as “medium”.
+
+### 4.3.5. GCF portfolio concentration risk (low risk)  
+
+64. In case of approval, the impact of this proposal on the GCF portfolio concentration in terms of result area and single proposal is not material.
+
+### 4.3.6. Recommendation  
+
+65. It is recommended that the Board consider the above factors in its decision.
+
+### Summary risk assessment  
+
+- Overall programme: Medium  
+- Accredited entity (AE)/executing entity (EE) capability: Medium  
+- Project-specific execution: Medium  
+- GCF portfolio concentration: Low  
+- Compliance: Medium
+
+
+---
+*Chunk pages 160–160*
+*Token usage:* input=883 (sys=94, user=789), max_out=1024, ctx=8192
+---
+
+# GCF/B.39/02/Add.14  
+## Page 160  
+
+### 4.4 Fiduciary  
+
+66. AfDB will be the AE of this programme. There are six EEs of this programme, as follows:  
+(a) The Government of Djibouti, acting through its Ministry of Commerce Economics and  
+Finance, and Ministry of Agriculture, Water, Fisheries and Livestock;  
+(b) The Government of Ethiopia, acting through its Ministry of Finance, and Ministry of  
+Agriculture, Livestock and Fishery Resources;  
+(c) The Government of Kenya, acting through its Ministry of Finance, and Ministry of  
+Agriculture, Water, Fisheries and Livestock, and Cooperatives;   
+(d) The Government of Somalia, acting through its Ministry of Finance and Ministry of  
+Agriculture and Irrigation;  
+(e) The Government of South Sudan, acting through its Ministry of Finance and Economic  
+Planning and Ministry of Agriculture and Forestry; and  
+(f) The Intergovernmental Authority on Development.  
+
+67. Loan pricing will be equal for all borrowers. Both the GCF loan and AfDB loan are pari passu. Although accounting standards and practices may differ from country to country, the accounts of the projects and subprojects under BREFOL shall, irrespective of the system adopted, comply with the principles of transparent management and provide exhaustive information on:  
+(i) accountability of funds provided to the project or subproject (such funds may comprise proceeds from the AfDB loan or grant, or other resources from co-financiers and counterpart funds); and  
+(ii) disclosure of expenditure and specific information on components financed under the programme.  
+
+68. All projects financed under the Facility will be monitored by the AfDB Portfolio Management team as per the relevant internal policies and procedures. The AfDB – as the accredited entity – will be responsible for direct monitoring of implementation conditions and reporting periodically to GCF under the terms to be agreed between AfDB and GCF. All projects financed under the Facility will comply with the AfDB appraisal, approval, monitoring and supervision standards and procedures.  
+
+69. The financial reporting should detail the various uses of the loan and grant proceeds.  
+The audit arrangements require that all project and subproject accounts are audited each year in accordance with the relevant generally accepted standards. The auditor, in accordance with the standard terms of reference for external audits of AfDB-financed programmes or projects, is required, among other things, to examine pertinent documents, review internal financial control mechanisms to identify deficiencies and weaknesses that could affect the efficiency of the project, form an opinion on the quality of the financial statements and confirm that the funds granted to the project have been used for their intended purpose. Each country must have the accounts of the project or programme audited by qualified and independent accountants that meet AfDB requirements. In countries where auditing is entrusted to the Auditor General’s Office under the supervisory authority of the state, AfDB may approve the designation of this Office provided that the matter is discussed at the programme/project appraisal stage as well as during the loan negotiations and that the audit is conducted in accordance with AfDB standard terms of reference for the audit for AfDB-financed projects/programmes. The audited financial statements, the auditor’s report and management letter must be received by AfDB no later than six months after the end of the financial year to which they relate. Non-compliance with this requirement will result in the immediate suspension of further replenishments to the Special Account.
+
+
+---
+*Chunk pages 161–161*
+*Token usage:* input=898 (sys=94, user=804), max_out=1024, ctx=8192
+---
+
+# GCF/B.39/02/Add.14  
+## Page 161  
+
+### 70. The Terms and Condition for the sub-loans is not yet available. To ensure the concessionallity is benefited the final borrowers, this will be a condition for the first disbursement of the GCF proceeds on the TS.  
+
+### 4.5 Results monitoring and reporting  
+
+#### 71. As a cross-cutting initiative, the programme aims at generating results across GCF mitigation results areas 1 and 4, and adaptation results areas 1, 2 and 4. The programme is expected to reach 4.68 million direct beneficiaries and 15.55 million indirect beneficiaries, corresponding to 0.8 per cent and 2.9 per cent of the national populations, respectively. At least 50 per cent of the beneficiaries across both categories are expected to be women. The expected mitigation outcome is an emissions reduction of 10.7 Mt CO2 eq over the programme lifespan.  
+
+#### 72. The Secretariat has worked with the AE over seven rounds of reviews to refine the programme theory of change and significant improvement has been noted. The theory of change diagram identifies co-benefits and risks/barriers relevant to the programme.  
+
+#### 73. The logical framework has been developed in accordance with the GCF integrated results management framework and follows the recommended template. A significant paradigm shift potential has been identified for the programme. The AE has provided indicators at the project outcome level to facilitate performance management. However, in the latest round of review, the AE has been provided with recommendations for improving suggested indicators under Outcomes 1 and 3, and providing clarity on means of verification for indicators for Outcomes 1, 2 and 3. The AE has defined indicators for assessing the co-benefits listed under the programme’s theory of change.  
+
+#### 74. Suggestions have also been provided to the AE in the latest round of review to augment annex 11 (Monitoring and Evaluation Plan) in line with the latest logical framework. In annex 23 (Beneficiary Estimation), it has been recommended that the AE should provide further details on classification of beneficiaries as direct/indirect and arrangements for avoiding double-counting.  
+
+### 4.6 Legal assessment  
+
+#### 75. The Accreditation Master Agreement was signed with the AE on 8 November 2017 and it became effective on 7 November 2019.  
+
+#### 76. The AE has not provided a legal opinion/certificate confirming that it has obtained all internal approvals and it has the capacity and authority to implement the programme.  
+
+#### 77. The proposed programme will be implemented in the following countries in which GCF is not provided with privileges and immunities. This means that, among other things, GCF is not protected against litigation or expropriation in these countries, which risks need to be further assessed. The countries are as follows:  
+
+##### (a) Republic of Djibouti:  
+The GCF Secretariat provided a draft agreement on privileges and immunities and a background note to the Government of the Republic of Djibouti on 26 October 2017. The latest communication was sent by the GCF Secretariat to the Government of the Republic of Djibouti on 05 October 2018.  
+
+##### (b) Federal Democratic Republic of Ethiopia:  
+The Secretariat provided a draft agreement on privileges and immunities and a background note to the Government of the Federal Democratic Republic of Ethiopia most recently on 26 April 2016. The latest communication was sent by the GCF Secretariat to the Government of the Federal Democratic Republic of Ethiopia on 03 November 2017.
+
+
+---
+*Chunk pages 162–162*
+*Token usage:* input=622 (sys=94, user=528), max_out=1024, ctx=8192
+---
+
+# GCF/B.39/02/Add.14  
+## Page 162  
+
+(c) Republic of Kenya: The Secretariat provided a draft agreement on privileges and immunities and a background note to the Government of the Republic of Kenya on 30 September 2015. The latest communication was sent by the Government of the Republic of Kenya to the Secretariat on 5 October 2018.
+
+(d) Federal Republic of Somalia: The Secretariat and the Government of the Federal Republic of Somalia had a meeting on 8 October 2018. The Secretariat has not yet dispatched a draft agreement on privileges and immunities and a background note to the Government of the Federal Republic of Somalia hence, negotiations have not yet started.
+
+(e) Republic of South Sudan: The Secretariat has not yet dispatched a draft agreement on privileges and immunities and a background note to the Government of thew Republic of South Sudan hence, negotiations have not yet started.
+
+78. The Heads of the Independent Redress Mechanism and Independent Integrity Unit have both expressed that it would not be legally feasible to undertake their redress activities and/or investigations, as appropriate, in countries where GCF is not provided with relevant privileges and immunities. Therefore, it is recommended that disbursements by GCF are made only after GCF has obtained satisfactory protection against litigation and expropriation in the countries, or has been provided with appropriate privileges and immunities.
+
+79. To address the matters raised in this section, it is recommended that any approval by the Board is made subject to the following conditions:  
+(a) Submission by the Accredited Entity to the Fund of a certificate or legal opinion, in form and substance satisfactory to the GCF Secretariat, within 180 days after Board approval, confirming that the Accredited Entity has obtained all final internal approvals needed by it and has the capacity and authority to implement the proposed programme;  
+(b) Signature of the funded activity agreement in a form and substance satisfactory to the GCF Secretariat within 180 days from the date of Board approval, or the date the Accredited Entity has provided a certificate or legal opinion confirming that it has obtained all final internal approvals, whichever is later; and  
+(c) Completion of the legal due diligence to the satisfaction of the GCF Secretariat.
+
+
+---
+*Chunk pages 163–163*
+*Token usage:* input=919 (sys=94, user=825), max_out=1024, ctx=8192
+---
+
+# GCF/B.39/02/Add.14  
+## Page 163  
+
+### Independent Technical Advisory Panel’s assessment of  
+#### FP239  
+
+##### Proposal name: Building Climate Resilience for Food and Livelihoods in the Horn of Africa (BREFOL)  
+
+##### Accredited entity: African Development Bank (AfDB)  
+
+##### Country/(ies): Djibouti, Ethiopia, Kenya, Somalia and South Sudan  
+
+##### Project/programme size: Large  
+
+### I. Assessment of the independent Technical Advisory Panel  
+
+1. This is the second submission of the funding proposal for Building Climate Resilience for Food and Livelihoods in the Horn of Africa (BREFOL) under the standard proposal approval process.  
+The assessment by the independent Technical Advisory Panel (iTAP) is based on the funding proposal package presented to the iTAP on 3 May 2024 and informed by a set of written questions and answers further discussed in an online meeting between the iTAP and the accredited entity (AE) on 21 May 2024.  
+
+2. The total budget remains at USD 335 million, with a total of USD 151 million (USD 90.7 million as a grant, and USD 60.3 million as a loan) requested from GCF. It also remains a cross-cutting programme, expecting to contribute to both mitigation and adaptation results areas, with an implementation period of seven years.  
+
+3. The AE for the programme is the African Development Bank (AfDB).  
+
+4. The executing entities (EEs) of the programme comprise:  
+   (a) The governments of the five countries (Djibouti, Ethiopia, Kenya, Somalia and South Sudan), acting through their respective ministries responsible for finance and agriculture, respectively; and  
+   (b) The Intergovernmental Authority on Development (IGAD), the regional organization for the governments of the [Greater] Horn of Africa Region.  
+
+5. The proposed programme has four components, as listed in Table 1 below, with their respective indicative costs and share of total financing.  
+
+> **Note:**  
+> 1 The funding proposal was first submitted to the independent Technical Advisory Panel (iTAP) on 15 December 2023.  
+> The funding proposal was then titled “Program to Build Resilience and Food Security in the Horn of Africa”. It was not endorsed by the iTAP at that time but has now been revised and resubmitted, guided by a set of recommendations from the iTAP (limited distribution document titled “Assessments and responses of funding proposals not endorsed by the independent Technical Advisory Panel”). Prior to the submission of the funding proposals, a concept note was presented in April 2022.  
+> (https://www.greenclimate.fund/document/program-build-resilience-and-food-security-horn-africa).  
+>   
+> 2 The funding proposal package from 3 May 2024 consists of the funding proposal (clean and track-change versions from Secretariat discussions), the questions and answers (Q&A) from the previous submission, a draft Secretariat assessment, and 21 annexes. Most annexes contain sub-annexes relating to participant countries, resulting in a package with 50 attachments in total.  
+> The funding proposal was updated with new greenhouse gas (GHG) emission calculations on 22 May 2024, complementing the package with a marked and updated funding proposal (on GHG issues) and updated versions of annexes 17 and 22, along with the Q&A from the discussion between the accredited entity and the iTAP on 21 May 2024.  
+>   
+> 3 The Horn of Africa Region [proper] consists of Djibouti, Eritrea, Ethiopia and Somalia. The Greater Horn of Africa includes also Kenya, Sudan, South Sudan and Uganda.  
+
+---  
+
+*Note: Page numbers are preserved as per the original PDF.*
+
+
+---
+*Chunk pages 164–164*
+*Token usage:* input=909 (sys=94, user=815), max_out=1024, ctx=8192
+---
+
+# Table 1: Overview of BREFOL components, outputs, and financing
+
+| Components and outputs | Amount (USD million) | Share of total |
+|------------------------|----------------------|----------------|
+| Component 1: Strengthening pastoral and agropastoral production systems’ resilience to climate change |  |  |
+| Output 1.1: Climate-resilient built/rehabilitated infrastructure | 187.70 | 56% |
+| Output 1.2: Improved sustainable land management practices |  |  |
+| Output 1.3: Increased adoption of climate-smart innovations |  |  |
+| Subtotal component 1 | 187.70 | 56% |
+| Component 2: Supporting low-carbon and resilient development of agribusiness |  |  |
+| Output 2.1: Increased access to digital advisory services and markets | 91.99 | 27% |
+| Output 2.2: Developed inclusive micro, small and medium-sized enterprises and cooperatives with access to climate financing |  |  |
+| Subtotal component 1 | 91.99 | 27% |
+| Component 3: Strengthening agropastoral communities’ capacity to adapt to climate change |  |  |
+| Output 3.1: Enhanced access to climate information and early warning systems | 26.66 | 8% |
+| Output 3.2: Strengthened regulatory and policy frameworks and institutional capacity for climate resilience |  |  |
+| Subtotal component 3 | 26.66 | 8% |
+| Component 4: Programme coordination and knowledge management |  |  |
+| Output 4.1: Project management and coordination | 28.95 | 9% |
+| Subtotal component 4 | 28.95 | 9% |
+| Total project | 335.30 | 100% |
+
+## Source:
+Adapted from funding proposal, Annex 4 “Budget by component” BREFOL Budget Revised 15042024.
+
+## Notes:
+
+6. Component 1 receives 56 per cent of the total budget (46 per cent of the GCF contribution and 64 per cent of the co-financing). It contains the programme’s single largest output (output 1.1) on infrastructure construction and rehabilitation, in itself accounting for 38 per cent of the total budget (19 per cent of the GCF contribution and 53 per cent of the co-financing). Output 1.1 will be funded with a USD 70 million grant and USD 28 million loan from the African Development Fund (ADF), complemented by a USD 29 million loan from GCF. The activities under this output are geared towards the construction, rehabilitation and management of water harvesting infrastructure, community irrigation schemes, and livestock infrastructure. Component 1 also houses outputs 1.2 and 1.3 towards improved land management and the adoption of climate-smart innovations, operating with GCF grants (USD 16 million and 24 million, respectively).
+
+7. Component 2 supports agribusinesses and other enterprises in accessing markets and climate credit. The related activities involve extension of digital services, training of women and youth on entrepreneurship, renewable energy technologies/solutions, and the extension of credit lines. The financing is a mix of grant and loan financing, amounting to a total of 43 per cent of the GCF contribution and 15 per cent of the co-financing.
+
+8. The extension of credit, however, is limited to two of the beneficiary countries; BREFOL’s Direct Credit Window (BDCW) is to be rolled out through two local private finance institutions in Djibouti and Ethiopia. Furthermore, BREFOL will promote existing climate insurance providers to scale up weather-based insurance coverage for livestock production. GCF resources are to complement AfDB’s investments to support the establishment of a BREFOL
+
+## Note:
+4 The ADF is a funding window for AfDB. It is the concessional arm of the AfDB that provides grants and concessional loans to low-income African countries.
+
+
+---
+*Chunk pages 165–165*
+*Token usage:* input=869 (sys=94, user=775), max_out=1024, ctx=8192
+---
+
+# GCF/B.39/02/Add.14  
+## Page 165  
+
+### Direct Insurance Credit Window with the selected banks  
+In principle, each beneficiary of the credit line is to be covered by insurance.  
+
+### Component 3  
+A smaller share of the programme resources are destined for component 3 (Strengthening Agropastoral Communities’ Capacity to Adapt to Climate Change), under which the programme supports regulatory frameworks and enhances access to climate information and early warning systems.  
+
+### Outcome and main pursuit of component 3  
+The outcome and the main pursuit of component 3 in the previous submission was strengthened institutional capacity and climate regulatory frameworks. However, the expected results in this area have been toned down (and the previous outcome was replaced with ‘Strengthened adaptive capacity of vulnerable communities’). This toning down of institutional capacity enhancement is entirely congruent with the limited effort and budget afforded to such activities. In essence, the funding proposal has chosen to focus on infrastructure and credit lines.  
+
+### Component 4  
+Component 4 (Programme coordination and knowledge management) has a funding allocation of USD 29 million, which constitutes 9 per cent of the total budget. This component also addresses technical and institutional capacity-building, monitoring and evaluation (M&E), as well as knowledge management and communications.  
+
+### iTAP review  
+The iTAP has reviewed the funding proposal against the six investment criteria of GCF, commenting on the overall structure as well as the specifically proposed interventions planned.  
+
+#### 1.1 Impact potential  
+Scale: Medium  
+
+### Cross-cutting programme  
+This cross-cutting programme is to contribute to five GCF results areas; two mitigation results Areas (MRAs) and three adaptation results areas (ARAs). These are:  
+- MRA 1 – Energy generation and access  
+- MRA 4 – Forestry and land use  
+- ARA 1 – Most vulnerable people and communities  
+- ARA 2 – Health, well-being, food and water security  
+- ARA 4 – Ecosystems and ecosystem services  
+
+### Theory of change illustration  
+According to the theory of change illustration, the three components contribute in different ways to the programme’s outcomes and co-benefits. These are:  
+(a) Outcome 1: Increased adoption of climate-resilient solutions  
+(b) Outcome 2: Enhanced carbon sequestration and reduced greenhouse gas emissions from [agricultural value chains]  
+(c) Outcome 3: Strengthened adaptive capacity of vulnerable communities  
+(d) Co-benefit 1: Improved livelihood opportunities  
+(e) Co-benefit 2: Ecosystem services improved  
+
+### Concerns regarding logical flow  
+The need for greater clarity and logical flow in how activities, outputs, outcomes and co-benefits contribute towards the overarching goal and results areas was a major issue in the first submission of this funding proposal package. The overall consistency has improved but the logical flow and the application of the theory of change remains problematic. The iTAP is concerned with this design insufficiency and suggests improving the logic and clarity through a carefully and comprehensively updated logical framework to guide the implementation and monitoring (see condition (i) in the concluding section).  
+
+### Project activities related to MRA 1  
+The project will support two activities related to MRA 1 (Energy generation and access). These are off-grid solar photovoltaics and the installation of biodigester units. The funding  
+
+> Note: The text appears incomplete or truncated at this point, possibly due to OCR issues or page break.  
+
+---  
+**Note:** Page numbers are preserved as per instructions.
+
+
+---
+*Chunk pages 166–166*
+*Token usage:* input=1077 (sys=94, user=983), max_out=1024, ctx=8192
+---
+
+# GCF/B.39/02/Add.14  
+## Page 166  
+
+### Proposal claims a mitigation impact potential of 56,930 tonnes of carbon dioxide equivalent (t CO2 eq) by the end of the seven years of implementation and 226,383 t CO2 eq by the end of the 25 years lifespan. The mitigation impact potential of the off-grid solar photovoltaics was quantified using a clean development mechanism methodology for small-scale electrification, and the mitigation impact potential of the biodigester units was quantified using the International Renewable Energy Agency methodology for small-scale biogas capacity production.
+
+### 17. The project also claims a mitigation impact potential from MRA 4 (Forestry and land use), specifically from activities for the rehabilitation of rangelands and for agroforestry. The mitigation impact potential was quantified using the Ex-Ante Carbon-balance Tool (EX-ACT) tool developed by the Food and Agriculture Organization of the United Nations. The anticipated mitigation results are 2,033,251 t CO2 eq by the end of the implementation period and 13,922,954 t CO2 eq over the lifespan of the project.
+
+### 18. The iTAP assesses the overall estimation of 2,090,182 tCO2eq by the end of the implementation period and 14,149,337 tCO2eq by the end of the project lifespan as sound, clear and well justified. However, there is still a lack of clarity about how the climate impact of the project will be integrated into the M&E system and/or in the measurement, reporting and verification (MRV) system of the participating countries (see condition (i) in the concluding section).
+
+### 19. On adaptation impact potential: The funding proposal indicates an expected adaptation outcome with 4.7 million direct beneficiaries. Indirect beneficiaries are assessed as 15.5 million. The funding proposal document suggests that at least 50 per cent should be women, while the calculations (see Annex 23) indicate exactly 50:50 male/female. In order to reach at least 50 per cent women – or even nearly 50 per cent – significant and proactive measures are needed (see discussion under section 1.3 (paras. 34–36) and condition (ii) in the concluding section).
+
+### 20. Annex 23 (Estimation of Beneficiaries) includes different ways to estimate the number of beneficiaries, related to different activities. An update of the project’s monitoring framework should review the beneficiary estimation methodologies and explore the necessary qualitative delineations required to assess and monitor how many can be said to have benefited from the programme. Even the use of more qualitative indicators can be explored as a way of drawing attention to the logical pathways for how specific activities are meant to contribute to specific outputs and broader outcomes (see condition (i) in the concluding section).
+
+### 21. All BREFOL outcomes are to contribute to ARA 1 ([Enhanced resilience of the] most vulnerable people and communities). This might be the case given the general fragility and vulnerability of the region. It should be noted, however, that specific methodologies for reaching the most vulnerable [within the region] are lacking. The beneficiary contributions for accessing credit may be effective in targeting those able to successfully manage credit without specific support, but it may also bar the most vulnerable from accessing the concessional climate finance facilitated by the programme.
+
+### 22. Indirect beneficiary estimates are by definition imprecise, and rough estimates of hectares covered or percentages of the population need to be accepted as reasonable. One area where a more precise indirect beneficiary calculation would make great sense, however, relates to activity 3.1.2 ‘Integrate and disseminate climate information and early warning into the established digital advisory services.’ An early warning system could very reasonably be expected to reach all people in a given geographic area with climate-related early warnings. The present monitoring framework gauges the number of pastoralists with access to climate-informed agro-advisory services (activity 3.1.1) but in relation to EWS, only the number of  
+
+> **Note:** The text appears incomplete or cut off at this point.  
+>  
+> *6 The iTAP notes that the beneficiary estimation (or project/programme-specific indicators listed in section E5 of the funding proposal) does not count the number of individuals or businesses that actually acquire loans and insurance, but only how many are eligible (including women and youth).*
+
+
+---
+*Chunk pages 167–167*
+*Token usage:* input=987 (sys=94, user=893), max_out=1024, ctx=8192
+---
+
+# GCF/B.39/02/Add.14  
+## Page 167  
+
+### 1.2 Paradigm shift potential                 Scale: Medium  
+
+23. In the GCF context, paradigm shift potential is defined as the degree to which the proposed activity can catalyse impact beyond a one-off project or programme investment. To the extent that the BREFOL programme can be effectively implemented, there is a good potential for catalysing change beyond the one-off investment.  
+
+24. If the construction/rehabilitation of water harvesting, irrigation and livestock infrastructure is of high quality and communities are interested in using and maintaining such infrastructure, then these investments should provide benefits relating to water and food security for many years to come (the total lifespan indicated is 25 years).  
+
+25. Extension services and training for improved land management and climate-smart solutions in agriculture, rangelands and forestry should help communities maintain soil fertility, use a better mix of crops, and protect livestock from disease. If successful, this stands to greatly enhance livelihoods and adaptive capacity, which should be lasting qualities that improve the lives of pastoralists and agropastoralists.  
+
+26. Entrepreneurship training and the extension of credit – as connected with climate-smart businesses and insurance coverage – may also have lasting positive effects on the local community and its ability to cope with climate change and also make mitigation action more compatible with sustainable livelihoods.  
+
+27. Related to the credit lines, there are great opportunities for GCF to help overcome specific barriers to financing. More financing is needed in the region. However, the potential of the programme for helping new or vulnerable groups access finance is uncertain. With regard to gender, this may depend on the level of success of BREFOL in taking lessons and insights from:  
+(a) The reportedly highly successful pan-African Affirmative Finance Action for Women in Africa (AFAWA); and  
+(b) The AfDB’s commitment to fostering access to finance and technical support for Women-led Small and Medium Enterprises.  
+
+28. The funding proposal is very vague on ways to strengthen regulatory and policy frameworks and/or institutional capacities for climate resilience. It seems there will be policy dialogues in some of the countries, but with different topical orientations. Policy and regulatory frameworks may otherwise be the most direct way of triggering action beyond the project or ‘one-off investment’, but this is not the path or ‘paradigm shift potential’ opted for by BREFOL.  
+
+29. The funding proposal correctly notes that conducive regulatory frameworks are critical for climate action as well as for business development. It is hoped that other related initiatives by the five country governments do work on the strengthening of institutional capacities for climate resilience and the creation of an enabling business environment for climate-smart entrepreneurship. Such developments beyond the programme would be important for making  
+
+---  
+**Note:** The text appears to continue from a previous paragraph, but ends abruptly without completing the sentence. The original page number is preserved as per instructions.
+
+
+---
+*Chunk pages 168–168*
+*Token usage:* input=960 (sys=94, user=866), max_out=1024, ctx=8192
+---
+
+# GCF/B.39/02/Add.14  
+## Page 168  
+
+BREFOL’s investments into tools, trainings and infrastructure more effective and sustainable in the long run. It would have been desirable for BREFOL to have a stronger plan for activity 3.2.1 ‘Support delivery of climate regulatory framework and mainstreaming of climate change into agricultural sector policies and strategies.’  
+
+### 1.3 Sustainable development potential  
+Scale: Medium to high  
+
+30. The theory of change figure (funding proposal, page 32, figure B.2.2) indicates co-benefits of ‘improved livelihood opportunities’ and ‘ecosystem services improved’. These are fully consistent with the activities proposed across the programme.  
+
+31. BREFOL also seeks to contribute towards the 2030 Agenda for Sustainable Development and the Sustainable Development Goals (SDGs). Significant contributions should go towards SDG 2 (Zero hunger), SDG 5 (Gender equality), SDG 6 (Clean water and sanitation), SDG 7 (Affordable and clean energy), SDG 9 (Industry, innovation and infrastructure), SDG 11 (Sustainable cities and communities), SDG 13 (Climate action through carbon storage and contribution towards stabilizing of climate) as well as the restoration of degraded rangeland/pastureland as a significant contribution towards SDG 15 (Life on land).   
+
+32. The wider (co-)benefits of the proposed programme may be substantial, very much depending on the level of success in reaching the most vulnerable people and communities and enhancing their health, well-being, and food and water security.  
+
+33. The economic and social co-benefits may be the greatest, not least by way of enhancing women’s access to credit and enabling further income-generation. If the focus on women is successfully maintained throughout the layers of implementation, the gender and social co-benefits could contribute to women’s economic independence, which in turn may have beneficial social, cultural and political spin-offs.  
+
+34. However, the Horn of Africa faces serious gender inequalities, which may compromise the success of the programme as these hamper the freedom and well-being of women and girls.  
+
+Annex 8 (Gender Analysis and Action Plan) suggests that the key gender inequalities faced by women and girls include the limited ownership of, access to, and control over productive resources along with extra work burdens relating to caregiving and the gathering of fuelwood, fodder, grass for construction and the otherwise reduced mobility outside the home. Other factors include low literacy levels leading to low skills, poor salaries and low levels of formal employment and reduced representation in political, legal and policymaking institutions. These inequalities are rooted in sociocultural patriarchal norms, kinship rules and traditional practices.  
+
+As further pointed out in Annex 8, this affects the way women participate in livelihood diversification activities, and will thus have a bearing on the success of the proposed project.  
+
+35. The gender action plan (see Annex 8) is specific, budgeted and well elaborated. It is however not sufficiently integrated into the funding proposal’s mainstream activities. Moreover, the rationale for having activities 2.2.1 and 2.2.2 focus specifically on women and youth, while none of the other activities have this focus, is unclear. The prevailing gender discrimination could motivate any other activity to (also) have a more specific gender focus and gender-responsive methodologies.  
+
+36. The iTAP notes that consultations with beneficiaries and stakeholders – communities, women’s groups, youth associations, civil society organizations (CSOs), and non-governmental organizations – will continue in the implementation phase (see para. 185 of the funding proposal). This provides the AE with suitable opportunities for developing an updated gender action plan that is integrated into the mainstream activities (see condition (ii) in the concluding section).
+
+
+---
+*Chunk pages 169–169*
+*Token usage:* input=960 (sys=94, user=866), max_out=1024, ctx=8192
+---
+
+# GCF/B.39/02/Add.14  
+## Page 169  
+
+### 37. Environmental co-benefits, as indicated in paragraph 46 of the funding proposal, are anticipated through the promotion of resilient agropastoral production systems by promoting the adoption of sustainable land management best practices and agroforestry, leading to improved ecosystem services and increased soil organic carbon content. Furthermore, BREFOL envisions the installation of 4.8 megawatts of solar photovoltaic systems for solar irrigation, lighting, and processing, alongside the potential generation of biogas energy from over 3,890 cubic metres of biodigester capacity that will be installed.
+
+### 38. One factor which could limit environmental benefits, or even do harm, is the risk of overextraction of groundwater. In all five countries, stakeholder consultations came up with the idea of “drilling and rehabilitation of boreholes fitted with solar powered pumps” (see paragraphs 189–193 of the funding proposal). With the shift from “costly” diesel to “free” solar photovoltaics, the iTAP would like to point to the possible risk of overpumping and overextraction of groundwater. This risk is heightened where institutional capacities and regulatory frameworks are weak, and groundwater monitoring may be absent.
+
+### 1.4 Needs of the recipient                          Scale: Medium to high  
+
+### 39. The Horn of Africa is one of the world’s most disaster-prone and food-insecure regions. Conflict and climate change-intensified drought and flooding, compounded by economic downturn, continue to affect millions of citizens, including refugees, internally displaced persons and their host communities. Discrimination and threats of violence hamper access to the resources needed for the income generation that is essential for accessing food and adapting to climate change adaptation. Millions of children suffer from acute malnutrition. There is no question about the vulnerability and financing needs of the beneficiary countries and populations.
+
+### 40. The proposed programme also sets out to support the most vulnerable people and communities and address gender aspects. These are critical intentions that need even further emphasis and critical attention, as highlighted above.
+
+### 41. The fragility of the region is discussed in relation to governance risks (see paras. 211–213 of the funding proposal). It is critical for the successful implementation of the programme that the level and risk of conflict and lack of capacity be continuously monitored and addressed in project management and oversight. Due consideration of fragility and conflict risk also needs to be brought into project management and methodologies for programme delivery. Annex 24 (Fragility and Resilience Assessment) contains important and insightful information about the sociopolitical situation of the beneficiary countries, and would be worth updating. Such an update could provide opportunity for weaving the insights of the assessment into the methodologies for implementing the BREFOL activities (see condition (iii) in the concluding section).
+
+### 42. Updated country-level strategies for managing fragility concerns in an adaptive manner during project implementation will be key for the implementation of activities 3.2.1 (Support delivery of climate regulatory framework and mainstreaming of climate change into agricultural sector policies and strategies) and 4.1.2 (Technical and institutional capacity building).
+
+### 43. There is also a clear need for climate-smart agrifinance in the region. The BDCW to the Djibouti Economic Development Fund and Development Bank of Ethiopia will address the much-needed financing needs in the climate sensitive agricultural sector. This facility will enable the two local private finance institutions to demonstrate how to structure the financing and derisk the potential investment activities in the climate-smart agriculture sector. Given the prevailing market interest rates, ranging from 12 per cent to 15 per cent in Djibouti, and 12 per  
+
+### 44. See paragraph 73 of the funding proposal, and activity 2.2.3.
+
+
+---
+*Chunk pages 170–170*
+*Token usage:* input=936 (sys=94, user=842), max_out=1024, ctx=8192
+---
+
+# GCF/B.39/02/Add.14  
+## Page 170  
+
+### 1.5 Country ownership               Scale: Medium to high  
+
+44. The five participating countries – Djibouti, Ethiopia, Kenya, Somalia and South Sudan – have all provided no-objection letters and will contribute in-kind co-financing. The initial concept note for the present endeavour (then titled Building Resilience for Food and Nutrition Security) covered seven of the eight IGAD countries.10 Uganda excluded itself, and Sudan was unable to participate due to conflict in the country. Hence, five IGAD member States are involved in the presently proposed programme.  
+
+45. Additional consultations with the participating countries after the first submission of the funding proposal to GCF also led to changes in the activity setup between the countries. It appears, from AfDB’s responses to the iTAP’s questions, that several countries were not able to identify suitable financial institutions to roll out the credit lines. Hence, activities related to the BDCW and the related Direct Insurance Credit Window are limited to Djibouti and Ethiopia.  
+
+46. At the regional level, this whole endeavour is a follow-on from IGAD’s Drought Resilience and Sustainable Livelihoods Program (DRSLP). Lessons learned from the DRSLP have been integrated in the programme’s design and the implementation plan. In some participating countries, the programme will use project management units that are already running DRSLP, which are to be strengthened with the addition of specialized staff. The proposed programme aligns with IGAD’s Drought Disaster Resilience and Sustainability Initiative Strategy and the HoRN Regional Resilience Framework 3.0. Also, the African Union Draft Africa Climate Change Strategy (2020–2030) played a pivotal role in narrowing down the BREFOL subinvestments, consistent with the adaptation needs of region.  
+
+47. At the national level, the proposed programme aligns with the respective countries’ national strategies and action plans on climate change. All of them have submitted at least a first (indicative) nationally determined contribution.  
+
+48. The participating countries’ capacity to implement funded programmes is essential. The ministries and regional organization acting as EEs all operate in critically challenging environments and have important capacity needs. Nevertheless, they are also the most suitable entities to take on a project of this nature, and their involvement should enable them to develop their capacity further. The nationally owned implementation also holds the key to future sustainability.  
+
+49. The iTAP hence commends the approach of working through regional and national entities, and trusts that the AE has incorporated necessary and sufficient means to support and develop the implementation capacity of the executing and implementing entities.  
+
+50. There has been engagement with CSOs and other stakeholders. The funding proposal (para. 185) suggests that “the large number of people mobilized during the consultations confirms that countries and IGAD are highly committed to the programme and have high expectations of its ability to bring improvements.”  
+
+9 See paragraph 74 of the funding proposal, and activity 2.3.1.  
+10 https://www.greenclimate.fund/document/program-build-resilience-and-food-security-horn-africa  
+
+---  
+Page 170
+
+
+---
+*Chunk pages 171–171*
+*Token usage:* input=1015 (sys=94, user=921), max_out=1024, ctx=8192
+---
+
+# GCF/B.39/02/Add.14  
+## Page 171  
+
+### 1.6 Efficiency and effectiveness                           Scale: Medium  
+
+51. The total programme funding of USD 335.3 million comprises USD 151.0 million of requested GCF funding, and USD 184.3 million in AE/ADF and government co-financing. The co-financing is hence larger than the amount requested from GCF, demonstrating high commitment from the AE and the respective country governments. Table 2 provides an overview of the funding by country.  
+
+#### Table 2: Overview of BREFOL financing by financier and receiving country  
+
+| Country/Entity | GCF financing (USD million) | Co-financing: ADF + FAO + Governments + beneficiaries (USD million equivalent) | Total BREFOL Grant Loan In-kind Total Co-fin | % of Co-fin | All |  
+|----------------|-------------------------------|----------------------------------------------------------------------------------|---------------------------------------------|-------------|-----|  
+| Djibouti       | 14.02                         | 14.00                                                                            | 28.02                                       | 18.6%       | 21.45 |  
+| Ethiopia       | 25.64                         | 46.30                                                                            | 71.94                                       | 47.6%       | 38.89 |  
+| Kenya          | 20.10                         | 0.00                                                                             | 20.10                                       | 13.3%       | 42.90 |  
+| Somalia        | 8.82                          | 0.00                                                                             | 8.82                                        | 5.8%        | 21.45 |  
+| South Sudan    | 14.64                         | 0.00                                                                             | 14.64                                       | 9.7%        | 36.44 |  
+| IGAD           | 7.50                          | 0.00                                                                             | 7.50                                        | 5.0%        | 5.32  |  
+| Governments    | 16.03                         | 16.03                                                                            | 9%                                          | 16.03       | 4.8%  |  
+| Beneficiaries  | 1.82                          | 1.82                                                                             | 1%                                          | 1.82        | 0.5%  |  
+| Grand total    | 90.71                         | 60.30                                                                            | 151.01                                      | 100%        | 123.55 |  
+
+Source: Compiled from funding proposal, Annex 4, ‘Budget Summary’ BREFOL Budget Revised 15042024.  
+Abbreviations: ADF = African Development Fund; FAO = Food and Agriculture Organization of the United Nations;  
+BREFOL = Building Climate Resilience for Food and Livelihoods in the Horn of Africa; IGAD = Intergovernmental  
+Authority on Development.  
+
+52. The estimated government co-financing (in-kind) is around 9 per cent of total BREFOL resources. It seems mostly geared towards activity 1.1 on infrastructure construction and rehabilitation.  
+
+53. The programme anticipates leveraging additional private sector co-financing to the tune of USD 9 million (see Table 3). It is noted that most of the co-financing is from the Development Bank of Ethiopia. Smaller amounts of funding are provided by other sources of matching funds, including from small-medium enterprises, smallholder farmers and micro-enterprises.  
+
+#### Table 3: Expected contributions from private sector financing  
+
+| Contributions from Private Sector Financing Channels | Amount (USD million) |
+|------------------------------------------------------|----------------------|
+| 20% co-financing from the Development Bank of Ethiopia | 5.49                 |
+| 50% matching fund from Djibouti Economic Development Fund | 0.99               |
+| 5% matching fund from smallholder farmers and micro-enterprises | 0.45           |
+| 10% matching fund from small-to-medium-sized enterprises | 1.80              |
+| Total Green Blended Finance                          | 8.72                 |
+
+Source: Adapted from funding proposal, page 50, table B.3.5.
+
+
+---
+*Chunk pages 172–172*
+*Token usage:* input=740 (sys=94, user=646), max_out=1024, ctx=8192
+---
+
+# GCF/B.39/02/Add.14  
+## Page 172  
+
+### Figure 1 – Ways for the BREFOL Direct Credit Window to attract private sector investments  
+
+**Source:** Funding proposal, page 43, figure B.3.3.  
+
+54. The arrangements for the private sector contribution are illustrated in Figure 1 above.  
+Co-financing is to be blended alongside the baseline investment and GCF resources to increase the lending portfolio for the BDCW and the BREFOL Direct Insurance Credit Window.  
+
+55. On the organization of the credit lines, the lessons learned on key factors contributing to the success of AfDB’s ongoing AFAWA programme would still (as recommended also in previous iTAP reviews) need to be more clearly incorporated into the rolling out of the innovative credit lines (see condition (ii) in the concluding section).  
+
+56. The iTAP notes the close connection between credits, advisory services, regulatory reforms, as well as blended finance and potential guarantees, and would recommend the AE to develop these linkages in a similar manner to ensure cross-programme coherence and solid contributions to the enabling environment for continued beneficiary financial prowess and economic independence. This was recommended also in the previous review, and is reiterated in the proposed condition (i) in the concluding section.  
+
+57. On cost-effectiveness, the GCF cost per beneficiary is USD 29 and the cost per t CO2 eq of avoided/reduced emissions is USD 31. The calculations are outlined in Table 4.  
+
+### Table 4: BREFOL summary of the efficiency and cost-effectiveness of the programme  
+
+| Total programme funding (in USD million) | 335.3 |
+|------------------------------------------|-------|
+| GCF funding (in USD million)             | 151.0 |
+| Programme direct beneficiaries (million) | 4.7   |
+| Total emissions reductions in 25 years (million t CO2 eq) | 10.7 |
+| Estimated cost per programme beneficiary | 71.6 |
+| GCF amount allocated for adaptation (in USD million) | 134.7 |
+| Estimated GCF cost per programme beneficiary | 28.8 |
+| GCF amount allocated for mitigation (in USD million) | 16.3 |
+
+- 5% matching funds from smallholder farmers, pastoralists, and micro-enterprises, and 10% matching funds from small-medium agribusiness enterprises (Crowds in additional $2.25 million)
+- 20% Co-financing ($22.5 million) from DBE plus 50% Matching Fund ($1.97 million) from FDED (Crowds in additional $5.49 million)
+
+### Funds Flow  
+
+**GCF Funds Flow**  
+BREFOL Direct Credit Windows (BDCW) to Djibouti Economic Development Fund (FDED), & the Development Bank of Ethiopia (DBE) for the growth of Agribusiness MSMEs ($24.35 million)  
+
+FDED, Djibouti  
+
+---
+
+
+---
+*Chunk pages 173–173*
+*Token usage:* input=790 (sys=94, user=696), max_out=1024, ctx=8192
+---
+
+# GCF/B.39/02/Add.14  
+## Page 173  
+
+### Estimated programme cost per t CO2 eq  
+31.3  
+
+### Estimated GCF cost per t CO2 eq  
+1.5  
+
+#### Source: Funding proposal, page 73, table D.6.1  
+
+## II. Overall remarks from the independent Technical Advisory Panel  
+
+58. The iTAP finds that the proposed initiative BREFOL is well aligned with the updated Strategic Plan for the GCF 2024–2027 by accelerating climate action for the most vulnerable.  
+
+59. The iTAP also recognizes that the AE, EEs and country teams are committed to addressing the important goal of enhancing climate resilience among agropastoral and other communities in the Horn of Africa. It is hence of great importance that GCF supports this kind of initiative in one of the most climate-affected and vulnerable parts of the world.  
+
+60. A general finding (from both the first and second submissions), however, is that the way that the programme is structured does not do justice to the needs of the region and the many important endeavours proposed. The iTAP hence recommends a set of measures, formulated in the conditions below, aimed at enhancing the clarity and manageability of the proposed initiative.  
+
+61. Hence, the iTAP recommends that the Board approve this funding proposal with the following conditions to be fulfilled prior to the first disbursement of GCF proceeds:  
+
+### Conditions precedent to the first disbursement of GCF proceeds:  
+
+(a) The Accredited Entity shall provide to the GCF, in form and substance satisfactory to the Secretariat:  
+
+  (i) an updated logical framework that is consistent with the theory of change; and  
+
+  (ii) a detailed monitoring, evaluation and learning plan (MEL Plan) that:  
+
+    (1) Clearly outlines milestones towards achieving the Funded Activity outcomes and final targets, disaggregated by sex;  
+
+    (2) Sets out the definition of indicators and data gathering methods for progress in mitigation of, and adaptation to, climate change of specific systems proposed in each Host Country;  
+
+    (3) Includes the methods for analysing and interpreting the data;  
+
+    (4) Includes the description per Host Country of the process to integrate the monitoring and evaluation information to the reporting system of the United Nations Framework Convention on Climate Change (M&E system for adaptation and MRV system for mitigation); and  
+
+    (5) Sets out the steps and responsibilities for knowledge management and exchange.  
+
+(b) The Accredited Entity shall deliver to the Fund, in form and substance satisfactory to the Secretariat, an updated gender action plan that explains how to achieve the stated goal of 50 per cent female and 50 per cent male split among direct and indirect beneficiaries of the Programme, considering the presently unequal access to resources such as credit, land titles or livestock, information and means of communication, as well as the ability to autonomously make financial decisions;  
+
+(c) The Accredited Entity shall update, in form and substance satisfactory to the Secretariat, the information and analysis contained in Annex 24 to the Funding Proposal.
+
+
+---
+*Chunk pages 174–174*
+*Token usage:* input=170 (sys=94, user=76), max_out=1024, ctx=8192
+---
+
+# GCF/B.39/02/Add.14
+## Page 174
+
+prepare corresponding country-level strategies for managing fragility concerns in an adaptive manner during project implementation in the Host Countries.
+
+
+---
+*Error processing pages 175–175: *
+---
+
+
+
+---
+*Chunk pages 176–176*
+*Token usage:* input=767 (sys=94, user=673), max_out=1024, ctx=8192
+---
+
+# GCF/B.39/02/Add.14  
+## Page 176  
+
+As righly noted by iTAP consultations with beneficiaries and stakeholders including communities, women’s groups, youth associations, civil society organizations (CSOs), and non-governmental organizations, will continue in the implementation phase. We also agree that this process will provide suitable opportunities for developing an updated gender action plan that is integrated into the mainstream BREFOL activities.  
+
+To address the possible risk of overpumping and overextraction of groundwater, site specific geophysical assessment will be performed to ascertain that the selected sites/acquifer can support and sustain the proposed drilling or rehabilitation of boreholes. The boreholes will not be located on the same location but will be scattered in the target communities based on demand. Note that this is the only possible source of water which will induce development interventions within the communities.  
+
+In addition, the solar-powered submersible pumps which will be installed in the boreholes will only be pumping water for a short period of time during the day into overhead tanks, which will have a cut-off mechanism, and the pump will not be working for the rest of the day and at night, which will allow groundwater recharge.  
+
+### Needs of the recipient  
+Thank you for your comments and for highlighting the unique challenges in the region and the need for the proposed BREFOL Direct Credit Window (BDCW).  
+
+The AfDB usual practice applicable to BREFOL will be to employ multifaceted approach that combines due diligence, risk assessments, capacity building, stakeholder engagement, and policy review to proactively manage and mitigate the challenges associated with fagility and conflicts. We agree to regularly update the country-level strategies for managing fragility concerns in an adaptive manner during project implementation to facilitate the implementation of activities 3.2.1 (Support delivery of climate regulatory framework and mainstreaming of climate change into agricultural sector policies and strategies) and 4.1.2 (Technical and institutional capacity building).  
+
+During BREFOL appraisal, the Bank’s fragility and resilience department will update assessment in line with the AfDB “Strategy for Addressing Fragility and Building Resilience in Africa (2022-2026)”.  
+
+### Country ownership  
+Thank you for your commendation. The AfDB (AE) will continue to provide necessary support to develop the implementation capacity of the executing and implementing entities at regional and national level.  
+
+### Efficiency and effectiveness  
+These comments are well noted. As recommended for the organization and rolling out of the innovative credit lines, BREFOL will leverage on the lessons learned on success of AfDB’s ongoing AFAWA programme.  
+
+The AE take note of these iTAP recommendations and will ensure clear linkage between the proposed credits, advisory services, regulatory reforms, as well as blended finance and potential guarantees, and ensure cross-programme coherence and solid contributions to the enabling environment for continued beneficiary financial prowess and economic independence.
+
+
+---
+*Chunk pages 177–177*
+*Token usage:* input=637 (sys=94, user=543), max_out=1024, ctx=8192
+---
+
+# Overall remarks from the independent Technical Advisory Panel
+
+## First remarks
+
+The AfDB (AE) would like to use this medium to sincerely appreciate the efforts of iTAP and insightful comments during the assessment of the BREFOL proposal package. This has really helped to improve the quality of the funding proposal.
+
+## Second remarks
+
+We accept the following:
+
+### Conditions precedent to the first disbursement of GCF proceeds:
+
+1. That the Accredited Entity shall provide to the GCF, in form and substance satisfactory to the Secretariat:
+   - an updated logical framework that is consistent with the theory of change; and
+   - a detailed monitoring, evaluation and learning plan (MEL Plan) that:
+     - Clearly outlines milestones towards achieving the Funded Activity outcomes and final targets, disaggregated by sex;
+     - Sets out the definition of indicators and data gathering methods for progress in mitigation of, and adaptation to, climate change of specific systems proposed in each Host Country;
+     - Includes the methods for analysing and interpreting the data;
+     - Includes the description per Host Country of the process to integrate the monitoring and evaluation information to the reporting system of the United Nations Framework Convention on Climate Change (M&E system for adaptation and MRV system for mitigation);
+     - Sets out the steps and responsibilities for knowledge management and exchange.
+
+2. The Accredited Entity shall deliver to the Fund, in form and substance satisfactory to the Secretariat, an updated gender action plan that explains how to achieve the stated goal of 50 per cent female and 50 per cent male split among direct and indirect beneficiaries of the Programme, considering the presently unequal access to resources such as credit, land titles or livestock, information and means of communication, as well as the ability to autonomously make financial decisions.
+
+3. The Accredited Entity shall update, in form and substance satisfactory to the Secretariat, the information and analysis contained in Annex 24 to the Funding Proposal, and prepare corresponding country-level strategies for managing fragility concerns in an adaptive manner during project implementation in the Host Countries.
+
+## Last remarks
+
+Lastly, we thank the iTAP, GCF Secretariat, and GCF Task Team (Manager and Support) for the invaluable efforts and time taken through out the funding proposal review cycle.
+
+
+---
+*Chunk pages 178–178*
+*Token usage:* input=146 (sys=94, user=52), max_out=1024, ctx=8192
+---
+
+# Annex 8. Gender Analysis and Action Plan  
+## Gender documentation for FP239  
+
+---  
+
+*This page is intentionally left blank.*  
+
+---  
+
+[Page 1]  
+
+---  
+
+*End of document*  
+
+---  
+
+*Note: The content appears to be a header or title page, with no substantial text to convert into Markdown. The document seems to contain only a title and a blank page, suggesting that the actual content may have been omitted or is not available in this extract.*  
+
+---  
+
+[Page 1]  
+
+---  
+
+*End of document*  
+
+---  
+
+*Note: The content appears to be a header or title page, with no substantial text to convert into Markdown. The document seems to contain only a title and a blank page, suggesting that the actual content may have been omitted or is not available in this extract.*  
+
+---  
+
+[Page 1]  
+
+---  
+
+*End of document*  
+
+---  
+
+*Note: The content appears to be a header or title page, with no substantial text to convert into Markdown. The document seems to contain only a title and a blank page, suggesting that the actual content may have been omitted or is not available in this extract.*  
+
+---  
+
+[Page 1]  
+
+---  
+
+*End of document*  
+
+---  
+
+*Note: The content appears to be a header or title page, with no substantial text to convert into Markdown. The document seems to contain only a title and a blank page, suggesting that the actual content may have been omitted or is not available in this extract.*  
+
+---  
+
+[Page 1]  
+
+---  
+
+*End of document*  
+
+---  
+
+*Note: The content appears to be a header or title page, with no substantial text to convert into Markdown. The document seems to contain only a title and a blank page, suggesting that the actual content may have been omitted or is not available in this extract.*  
+
+---  
+
+[Page 1]  
+
+---  
+
+*End of document*  
+
+---  
+
+*Note: The content appears to be a header or title page, with no substantial text to convert into Markdown. The document seems to contain only a title and a blank page, suggesting that the actual content may have been omitted or is not available in this extract.*  
+
+---  
+
+[Page 1]  
+
+---  
+
+*End of document*  
+
+---  
+
+*Note: The content appears to be a header or title page, with no substantial text to convert into Markdown. The document seems to contain only a title and a blank page, suggesting that the actual content may have been omitted or is not available in this extract.*  
+
+---  
+
+[Page 1]  
+
+---  
+
+*End of document*  
+
+---  
+
+*Note: The content appears to be a header or title page, with no substantial text to convert into Markdown. The document seems to contain only a title and a blank page, suggesting that the actual content may have been omitted or is not available in this extract.*  
+
+---  
+
+[Page 1]  
+
+---  
+
+*End of document*  
+
+---  
+
+*Note: The content appears to be a header or title page, with no substantial text to convert into Markdown. The document seems to contain only a title and a blank page, suggesting that the actual content may have been omitted or is not available in this extract.*  
+
+---  
+
+[Page 1]  
+
+---  
+
+*End of document*  
+
+---  
+
+*Note: The content appears to be a header or title page, with no substantial text to convert into Markdown. The document seems to contain only a title and a blank page, suggesting that the actual content may have been omitted or is not available in this extract.*  
+
+---  
+
+[Page 1]  
+
+---  
+
+*End of document*  
+
+---  
+
+*Note: The content appears to be a header or title page, with no substantial text to convert into Markdown. The document seems to contain only a title and a blank page, suggesting that the actual content may have been omitted or is not available in this extract.*  
+
+---  
+
+[Page 1]  
+
+---  
+
+*End of document*  
+
+---  
+
+*Note: The content appears to be a header or title page, with no substantial text to convert into Markdown. The document seems to contain only a title and a blank page, suggesting that the actual content may have been omitted or is not available in this extract.*  
+
+---  
+
+[Page 1]  
+
+---  
+
+*End of document*  
+
+---  
+
+*Note: The content appears to be a header or title page, with no substantial text to convert into Markdown. The document seems to contain only a title and a blank page, suggesting that the actual content may have been omitted or is not available in this extract.*  
+
+---  
+
+[Page 1]  
+
+---  
+
+*End of document*  
+
+---  
+
+*Note: The content appears to be a header or title page, with no substantial text to convert into Markdown. The document seems to contain only a title and a blank page, suggesting that
+
+
+---
+*Chunk pages 179–179*
+*Token usage:* input=805 (sys=94, user=711), max_out=1024, ctx=8192
+---
+
+# BUILDING CLIMATE RESILIENCE FOR FOOD AND LIVELIHOODS IN THE HORN OF AFRICA (BREFOL)  
+## GENDER ANALYSIS AND ACTION PLAN  
+### DJIBOUTI  
+
+## I. Introduction
+
+The BREFOL Project in Djibouti is classified as Category 2 in the Bank's Gender Marker System (GEN II), which means that the project contributes significantly through several of its outcomes and objectives to promoting gender equity and women's empowerment.
+
+The following activities were discussed with all the technicians and experts of the project, including the Coordinator, the Monitoring and Evaluation Officer and the Gender Expert for the Ministry of Agriculture team; the Program Project Manager and the Djibouti Country Project Manager within the Bank. Each of the following activities was deemed already integrated or integrable within previously planned activities, including:  
+
+1. The implementation of guidelines for gender-sensitive agricultural infrastructure (within the budget line for technical manuals to be developed by the same firm).  
+2. Consultations with gender-sensitive beneficiaries (with <50% women).  
+3. General gender training for all stakeholders, including those on the prevention of risks related to the transmission of HIV-AIDS, STDs but also the risks of gender-based violence (GBV) or sexual exploitation, harassment and abuse of power (SEAH) within the project.  
+4. The deployment in the field of the innovative GALS (Gender Action Learning System) methodology under the supervision of IGAD and Oxfam at regional level.  
+5. The recruitment of a National Gender Expert.  
+
+The reworked table of gender activities in virtual session was shared with all participants with also a specific gender questionnaire to collect the country information required during the assessment mission, addressed to the Gender Expert, answered with the support of members of the Ministry of Agriculture and other national structures (including the Ministry of Women and Family). Finally, bilateral meetings between the Gender Experts (AfDB/Djiboutian party) and the project team were organized to finalize the project gender activity plan.  
+
+## II. Gender analysis
+
+Regarding the Africa Gender Equality Index (AGI) developed annually by the AfDB and UNECA, Djibouti is one of the three countries on the continent not to have because of the lack of too many indicators. It is therefore not possible to measure or compare the differences in Djibouti's performance vis-à-vis the continental average and other countries from this index. This presupposes a very weak consideration of gender issues in national development statistical studies, with a significant lack of sex-disaggregated data.  
+
+According to the Mo Ibrahim Index of Governance in Africa (IIAG) 2020, at the gender level, Djibouti occupies the 52nd place out of 54 in Africa with a Gender score of 31.8/100 and an 151 of the 54 African countries are included in this index, using data from national sources, and by imputing values for data Missing. Djibouti, Equatorial Guinea and South Sudan are not included due to their lack too much important indicators. AGI 2019, methodological report, p.25.  
+
+---  
+*Page 179*
+
+
+---
+*Chunk pages 180–180*
+*Token usage:* input=1084 (sys=94, user=990), max_out=1024, ctx=8192
+---
+
+# Improving Women's Socio-Economic Opportunities in Djibouti
+
+## Political Participation and Representation
+
+This indicator measures and aggregates data on:
+- Women's political participation and representation, for which Djibouti scores 50.08/100
+- Equal civil liberties for women, 36.2/100
+- Equal access to public services for women, where Djibouti scores 9.4/100
+- Laws on violence against women, for which no score is available
+- Socio-economic opportunities for women, sought by this agricultural project, whose score is 31/100
+
+## Socio-Economic Opportunities
+
+Djiboutian women have limited socio-economic opportunities compared to men. Although Djibouti is experiencing high economic growth (8.4%), unemployment is massive and affects 48.2% of the active population, particularly affecting young people and women (62.8% and 65.6% unemployment rate).
+
+In the absence of significant private sector development, 41% of the workforce work in government or public services. The State remains the country's largest employer. However, the administration recruited twice as many men from 2009 to 2017 so that the unemployment rate for men even decreased three times more (from 54.6% to 38.7%) than that of women (from 68.6% to 63.4%) between 2002 and 2017.
+
+Accumulating inequalities rooted in traditions and customs limiting their socio-economic role, women experience a low level of employability. This leads them to turn mainly to the informal sector. From 2010 to 2015, the rate of women working in the informal sector even increased significantly (from 31.7% to 74.3%).
+
+## Women's Entrepreneurship
+
+Women's entrepreneurship in Djibouti is paradoxically weak and underdeveloped. In 2014, despite a recognized dynamism of Djiboutian women, only 16% of new companies created were created by women (Ouloufa Abdo Ismaël, Director of ODPIC, 2018). While it was almost absent ten years ago, "female entrepreneurship has developed little by little and today represents a force for development."
+
+The Republic of Djibouti has set itself a target of 35% of businesses created by women by 2021 by counting on support for the formalization of existing activities and support activities for women entrepreneurs affected by unemployment and precariousness (ibid.). According to Aicha Hamadou Hamid, it is an economic lever for the entire Djiboutian population but also " a way to fight unemployment and the marginalization of women in the labor market", the overwhelming majority of whom work in the informal sector.
+
+Women work every day to feed their families and are very present in the subsistence economy, small trade, clothing, cosmetics or handicrafts. They are penalized by the lack of funding and infrastructure. Several issues surrounding the start-up or expansion of women-owned businesses and the identification of socio-cultural problems and barriers faced by women entrepreneurs as well as ways and means to overcome them.
+
+## Financial Inclusion for Farmers
+
+Financial inclusion for farmers is very limited, particularly for women farmers. Government efforts to combat the exclusion of people from the banking system with the implementation of microfinance tools, particularly for women traders known as "charcharis", have led to a significant increase in the number of credit beneficiaries and their volume.
+
+The number of women beneficiaries of credit has increased fifteen-fold (from 800 in 2010 to 12,500 in 2015, source: MPFPF, National Gender Policy 2011-2021; Republic of Djibouti, SCAPE 2015-2019, p.17), and the volume of credits granted by FD9 (from FDJ 57 million to FDJ 500 million, ibid.). However, agricultural activities are ineligible for credit from microfinance institutions.
+
+The majority of women and girls continue to face many constraints that prevent them from taking advantage of Djibouti's growth potential by remaining at the stage of "income-generating" activities, which are not very sustainable, with unchanged access to other means of production.
+
+## Source
+
+2 Source: https://iiag.online/data.html?meas=GEND&loc=DJ&view=overview, Retrieved 09/22/21.
+
+
+---
+*Chunk pages 181–181*
+*Token usage:* input=1147 (sys=94, user=1053), max_out=1024, ctx=8192
+---
+
+# [Page 1]
+
+This stagnation is due to cultural factors. In rural areas, the girl prepares herself from an early age to take on household chores and take charge of the maintenance of the home. Mothers thus value the reproductive role of the woman and will sometimes prefer to prepare the little girl for the function of future mother and housewife. These factors constrain access to land, livestock or inheritance, as well as training factors. Indeed, even though the Family Code guarantees equal land rights for women and men (Article 101), in practice women have little access to land and are often even deprived of their inheritance in favour of the men in their family (AFD, 2020).
+
+## Unpaid work and burden of caregiving
+
+Like many African countries, the weight of socio-cultural norms confers the majority of unpaid work on women. Djiboutian society is patriarchal. With regard to family education and the recognition of the common responsibility of men and women to bring up their children, the traditional perception that these responsibilities are attributed to the mother still prevails in the Republic of Djibouti. "Men leave this burden on women's shoulders. Indeed, it is rare for men to stay at home to care for children" (UN/CEDAW, 2010). Mothers thus value the reproductive role of the woman and will sometimes prefer to prepare the little girl for the function of future mother and housewife. This is especially observed in rural areas where the girl will be prepared from an early age to take on household chores and take charge of household maintenance.
+
+While the Family Code Act has put an end to a large number of forms of discrimination, the persistence of patriarchal attitudes and deep-rooted and deep-rooted stereotypes concerning the roles and responsibilities of men and women in society that may discriminate against women are prevalent in Djibouti. The husband is considered the head of the family, relegating the wife to a subordinate role in decision-making concerning the family. These stereotypes still perpetuate conventional wisdom that women's role should be limited to the private sphere or, even more so, that it is up to them to look after the well-being of the home and family, even if they pursue a career.
+
+Considerable efforts have been made in the area of information and awareness-raising in urban areas. The educated couple recognizes that child-rearing is a shared responsibility of both men and women, and misconceptions about the roles of women and girls begin to evolve within educated families. On the other hand, Djiboutian rural society still has difficulty freeing itself from the weight of these social constructs (UN/CEDAW, 2010). In sum, despite notable top-down advances, pockets of conservatism encouraged by customs persist. Work on standards seems essential to change mentalities and provide a better balance in the division of labour.
+
+## Training for women contributes little to their employability
+
+Enrolment in Djibouti's general and technical education is growing, but the proportion of girls is stagnating or decreasing, at the risk of perpetuating women's poverty. With a literacy rate that is struggling to increase (from 43.7% in 2011 to 48.2% in 2017), more women are deprived of assets in the labour market, especially rural women whose literacy rate is 16.2%. This result is well below the 40 points of increase targeted for 2016. The goal of parity has not been achieved at the primary level, with a gender parity index that has even declined (from 0.98 in 2009 to 0.86 in 2017); which jeopardizes the achievement of parity at the average (0.82), secondary (0.83), technical (0.72) and higher (0.61) levels of education given the increase in gender gaps with the years of schooling.
+
+This decline in Djibouti is the result of a slow evolution in girls' enrolment (net enrolment rate (NER) from 65.7% in 2011 to 68.7% in 2017) and retention (gross enrolment rate (GER) from 68.8% in 2011 to 78.9% in 2017). The construction of gender-sensitive infrastructure and school canteens has had tangible effects on the retention of rural girls (GER from 21.9% in 2011 to 58.7% in 2017) but has still failed to significantly influence girls' dropouts.
+
+The main reason for girls dropping out and dropping out of school is related to marriage or the need to go to work for the family.
+
+
+---
+*Chunk pages 182–182*
+*Token usage:* input=1119 (sys=94, user=1025), max_out=1024, ctx=8192
+---
+
+# [Page 1]
+
+In the agricultural sector, smallholder farms run by women face a productivity gap of 20-30% compared to their male counterparts. In a context of resource scarcity, a third of women own land/farms and women herders own a quarter of the livestock (small ruminants). The effects of climate change are worsening the situation of women, even destroying their means of production and livelihood. Agriculture in Djibouti is limited to very small areas, due to the lack of water for irrigation, and is almost exclusively for self-consumption.
+
+Djibouti also faces challenges in accelerating nutrition and food security. From 2010 to 2013, stunting stagnated at 29.7% and acute malnutrition decreased from 10.9% to 17.8% among children aged 0-5 years. Given the current health system, 8.98% of the Djiboutian population over 55 years of age is in a fragile situation according to the World Bank. The wasting of women (extreme thinness) of childbearing age remains high. Inadequate nutritional practices are the causes with micronutrient deficiencies. Women's lower access to knowledge, assets and power within the household is a barrier to seeking care. Thus, universal coverage of health services remains a challenge, penalizing poor and rural women in particular. Despite increased mobilization of public resources to improve the population's care in terms of access to health care, health inequalities persist, and many challenges remain to consolidate gains and continue to expand access to care for populations, particularly in rural and disadvantaged urban areas.
+
+The maternal mortality rate is very high, at 383 deaths per 100,000 live births (PSDs), a figure almost five times higher than the regional average (78/100,000) (World Bank, 2013). Gender gaps also exist to the detriment of boys who experience more stunting (32% vs. 27% for girls), more acute malnutrition (19% vs. 16%), and greater health vulnerability.
+
+According to UNAIDS data, in Djibouti, in 2019, there were 36,800 adults living with HIV (among them 56% women and 44% men over 15 years old) and between 500 and about 1,000 children (UNAIDS). This prevalence among adults aged 15 to 49 years would be 0.8% with a downward trend.
+
+In terms of family planning and protection against sexually transmitted diseases (STDs), the country missed PNG's target of a five-point increase target for 2016 with 17% of unmet needs.
+
+According to a study by another bank project in the Dikhil and Ali Sabieh area (INSUCO, ESIA, 2019), the population (men and women) knows that the HIV/AIDS virus exists but does not necessarily know the transmission channels, prevention mechanisms, or even their own HIV status. In rural areas, 56% of non-single women reported knowledge of AIDS (up from 66% in 2002), but 85% of women with knowledge of AIDS did not know that not using condoms was a risk of transmission.
+
+The Covid-19 situation is exacerbating gaps in access to health to the detriment of the elderly and women. Indeed, Djibouti has the highest Covid-19 prevalence rate in East Africa, recording 1,300 cases of Covid-19 per million inhabitants as of April 28, 2020, according to the African Union's Center for Disease Control and Prevention (CDC). At the level of the project area, with regard to health infrastructure, the feasibility study of this project mentioned the absence of a hospital structure in Defaineitou, and the request for the installation of a dispensary was made during the consultations of the populations.
+
+13% of female-headed households do not have access to water compared to 10% of their male counterparts and 8% of female-headed households use traditional wells to fetch water.
+
+3 UNAIDS, Djibouti, https://www.unaids.org/fr/regioncountries/countries/djibouti, consulted on 30/01/21.
+
+4 Report on the national response to the HIV/AIDS epidemic, 2014; Country factsheets, HIV/AIDS Estimates, 2017.
+
+5 Source: Le Monde, April 29, 2020, Covid 19 : U.S. military isolates base in Djibouti, lemonde.fr
+
+
+---
+*Chunk pages 183–183*
+*Token usage:* input=944 (sys=94, user=850), max_out=1024, ctx=8192
+---
+
+# [Page 1]
+
+## The use of improved toilets
+
+The significant inequalities between urban and rural households are based on the use of improved toilets. Only 19% of rural households have access to improved toilets compared to 85% for urban households. Depending on the gender of female heads of household, there is a four-point difference, to the detriment of those headed by women.
+
+## Vulnerable population: nomads
+
+Moreover, it should be emphasized that Djibouti has the specificity of the existence of a very vulnerable population, the nomads, in a situation of extreme vulnerability. In 2014, more than 98% of nomadic households belonged to the two poorest quintiles of the population, and nomads accounted for the largest percentage of food insecure households. Since 2010, massive displacements of nomads have been grouped at sites in the north of the country, including Ali Sabieh. These populations, who have lost all the ir livestock, are entirely assisted by aid programs from the WFP, the State or donations from philanthropists in the Gulf countries. 42% are severely food insecure and 32% moderately food insecure (AGVSAN, 2014, WFP).
+
+## Climate change impact on nomads
+
+Climate change leads nomads to a frantic search for pastures for their livestock and a concentration of livestock on watered parts of the country, resulting in overconsumption of pastures with its corollary, the destruction of soil. The decrease in grazing areas leads nomadic populations to sell or see the death of part of their livestock, animal capital constituting their main source of income.
+
+## Digital divide affecting rural women
+
+The digital divide hits rural women hardest. In terms of access to information and communication technologies (ICTs), strong inequalities prevail to the detriment of female-headed households and between rural and urban households. Inequalities emerge to the detriment of female-headed households for access to the Internet (20% vs. 25% for those with a man at the head), mobile phones (67% vs. 78%), and at least one means of information and communication technologies (68% vs. 79%). Despite the 2014 "Zero Women Without Telephone" campaign in rural areas, the digital divide remains characterised by inequalities related to gender and/or place of residence. Only 2% of rural households headed by women have access to the internet (2% compared to 25% of similar urban households), 20% to a mobile phone (compared to 80%) and 22% to at least one medium NICT (compared to 80% of urban households headed by women).
+
+## Inclusive financial services in Africa
+
+The provision of inclusive financial services is expanding in Africa to help women smallholder farmers overcome some of the constraints mentioned, with insurance, for example, to de-risk agricultural financing for women farmers or yield insurance pooling a gricultural loans to reassure banks and encourage them to support small farms. Africa is the continent most vulnerable to climate change and is already prone to a wide variety of natural disasters and women in particular do not have collateral for loans. The African Development Bank (and several foundations) is encouraging investment in digital financial inclusion in Africa. This requires investments in digital infrastructure, policy and regulation, digital products (SMS providing agricultural advice), innovation and capacity building with a gender-centric approach.
+
+## III. Gender Analysis within the context of BREFOL Djibouti
+
+### The objective of the Programme
+
+The objective of the Programme is to contribute to the improvement of living conditions, including for women and youth, food and nutrition security, increased resilience, and peace and security in the Horn of Africa.
+
+### Watersheds selected in the project area
+
+The watersheds selected in the project area are located in the regions of:
+• Ali Sabieh: Assamo & Ali-Addé & Holl-Holl & Oboley & Daasbiyo, 513 km²
+
+
+---
+*Chunk pages 184–184*
+*Token usage:* input=925 (sys=94, user=831), max_out=1024, ctx=8192
+---
+
+# [Page 1]
+
+6500 inhabitants,  
+• Dikhil : Hanlé & As-Eyla & Harou & Mouloud & Arwo, 1060.8 km², 3500 inhabitants,  
+• Weima : Assa-Gaila, Adoyla, Guirror, Gaoura, Defaynatou, Ripta ; Randa, Bankoualé,  
+Terdo, Debné, Daimoli, 1949 km², 1500 habitants,  
+• Tadjourah, 1949 km², 1500 inhabitants,  
+• Djibouti-city Ambouli Zone (population not specified),  
+• And Arta: Damerjog, Douda, Attar, 850 km2, 950 inhabitants.  
+
+This corresponds to a total of 25 localities and a total population of more than 12,400  
+beneficiaries, including about 6225 women, not counting the nomadic, migrant or refugee  
+population who can also carry out subsistence or cash agricultural activities.  
+
+Data from a survey conducted by INSUCO (ESIA, 2019) highlight the following facts for some  
+localities concerned by this project:  
+- the unemployment situation is greatly exacerbated with 75% of people of working age  
+unemployed in the  Ali Sabieh region, and 77% in the Arta region. 6  
+- this situation particularly affects women (70% of women)  while 58% of men are in this  
+situation. 7  
+
+The needs expressed during the feasibility study of women farmers residing in the project area  
+to improve their productivity were as follows:  
+✓ The need to reduce dependence on fuel to power the well engine (wish to have solar  
+panels to power these engines).  
+✓ Have agricultural gardens (although very active in their community, women have less  
+than 50% of agricultural gardens).  
+✓ The construction of wells.  
+✓ The granting of pesticides for plants.  
+✓ The construction of protection against the wadi of water in case of rain  
+✓ The construction of hydraulic structures, water reservoirs, and micro-dams.  
+✓ Logistical means (cars to transport their crops to markets).  
+
+## IV. Actions taken by the Government  
+
+At the level of Djibouti's legal, institutional  and political framework, significant institutional  
+progress in favor of gender equality can be noted on the part of the Djiboutian government with  
+the inclusion of the right to gender equality in the national constitution, the ratification of  
+international protocols on the promotion of gender equality, as well as the updating of a national  
+gender policy (PNG) for the period 2011 -2021. Progress on gender equality and the  
+empowerment of women and girls is manifested in the prohibition of early marriage, forc ed  
+marriage, repudiation and against moral and sexual harassment, although pockets of  
+conservatism encouraged by customs persist.  
+
+However, national, political and budgetary instruments to implement these provisions remain  
+insufficient (i.e. although recognized as a crime, violence against women, including female  
+genital mutilation (FGM), is significant). This is important to note giv en that in any project,  
+the influx of external male labour represents a major impact with the increase in GBV and  
+
+6 These data are taken from  EDESIC 2015 AndDjiboutian Research on Employment, the Informal Sector and  
+Consumption and the Djiboutian Household Survey ; of theEDAM 2017, Household Survey, and were collected as  
+part of the ESIA, Environmental and Social Impact Assessment (ESIA) of the project.  
+7 Source: Survey conducted by INSUCO in 2019 as part of the ESIA.
+
+
+---
+*Chunk pages 185–185*
+*Token usage:* input=802 (sys=94, user=708), max_out=1024, ctx=8192
+---
+
+# [Page 1]
+
+exploitative sexual relations (women and girls, especially migrants, finding themselves forced into prostitution).
+
+With regard to the economic opportunities of Djiboutian women, at the initiative of the 1st Lady of the Republic of Djibouti, UNFD and ODPIC (Djiboutian Office of Industrial and Commercial Property), a plan to promote women's entrepreneurship has been launched.
+
+Many initiatives were then born, such as the Centre for Leadership and Entrepreneurship (CLE), inaugurated in 2019, set up in partnership with the Ministry of Women and Family, which offers women entrepreneurs support in the process of setting up projects, developing business plans but also seeking funding. This incubation center also offers young people (men and women) an equipped and free space for a period of one year for the creation and experimentation of start-ups; Also, the Club des Jeunes Entrepreneurs Djiboutiens (CJED) offers a space for the exchange of experience of women entrepreneurs and women wishing to undertake, provides assistance in the form of support to strengthen the entrepreneurial skills of learners, promotes the coordination of institutions in charge of women's economic empowerment and offers expertise for the evaluation of applications of project leaders during competitions organized by the institutions in charge of promoting entrepreneurship. Finally, the Women Like Djibouti antenna, supported by ODPIC, supports women working in the informal sector to formalize their activities.
+
+The "Djibouti Vision 2035" focuses on renewable energies for the modernization of rural areas and the Djiboutian State has undertaken a vast energy infrastructure program with a view to improving the living conditions of the population. However, large-scale capital-intensive infrastructure projects and other initiatives that create jobs or promote technical training have so far benefited women little. This project, which aims to target women and youth, has the potential to be a game changer.
+
+The vision of "Djibouti 2035" aims for a situation where "35% of women are economically independent".
+
+## V. Project logical framework and gender-sensitive indicators
+
+Instead of a logical framework (proposed at the regional programme level), a table presenting the project components was proposed to the project team with the general gender-sensitive project indicators:
+
+### Project Appraisal Report
+
+| Objective | Result 2: Increase revenues from agro-sylvo-pastoral value chains | Result Indicator: Increase in annual per capita income (M/F) +30% (M/F) to be precisely defined in the baseline study |
+|-----------|-------------------------------------------------------------------|-------------------------------------------------------------|
+|           | Result 3: Strengthen the adaptive capacity of populations to better prepare for and manage climate change risks and variations. | Result Indicator: Increased access to safe land for youth and women. |
+|           | 2000 (of which 50% of women) | |
+
+### RESULT STATEMENT 1: Strengthen the resilience of drought-prone areas and pastoral and agro-sylvo-pastoral production systems to climate change.
+
+---
+
+
+---
+*Error processing pages 186–186: *
+---
+
+
+
+---
+*Chunk pages 187–187*
+*Token usage:* input=156 (sys=94, user=62), max_out=1024, ctx=8192
+---
+
+# Details of the approved activities of the Gender Action Plan, as well as their implementation costs
+
+| Activity | Implementation Cost |
+|----------|---------------------|
+|          |                     |
+
+*Page 187*
+
+
+---
+*Chunk pages 188–188*
+*Token usage:* input=685 (sys=94, user=591), max_out=1024, ctx=8192
+---
+
+# Project Title: Building Climate Resilience for Food and Livelihoods in the Horn of Africa (BREFOL)
+
+## Objective
+To contribute to the improvement of living conditions, and food and nutrition security in the Horn of Africa
+
+## Category
+SMG (GMS) GEN II
+
+## Components Activities Budget in USD  
+| Target(s) | Indicator | Responsible(s) | Timeline |
+|-----------|-----------|--------------|----------|
+| Component 1. Strengthening Pastoral and Agropastoral Production Systems' Resilience to Climate Change | | | |
+| Consult communities, especially on infrastructure design, groups of women (50%) and men (50%). | Project (to be done by national gender expert) | 50% women, 50% young people. (nb. to be determined from the baseline study). | Nb. of women, nb. of young people who were consulted |
+| ERAP / Technical partners (Dir. Agriculture) / local elected officials / Gender and Community Development Expert | Year 1 | | |
+| Produce a manual/guide with guidelines for the implementation of gender-sensitive agricultural infrastructure (manual that will be required in the deliverables of the infrastructure technical studies). | Project (to be done by national gender expert) | 1 Guide available to project engineers to build gender-sensitive infrastructure | Availability of a guide/Community satisfaction (men/women) |
+| ERAP / Gender and Community Development Expert | Years 1-2 | | |
+| Component 1. Strengthening Pastoral and Agropastoral Production Systems' Resilience to Climate Change | | | |
+| Realize agricultural infrastructures taking into account the gender dimension: wells, hygiene (improved toilets), security, lighting, and including small agricultural technologies (e.g. pick-up, solar panels, solar pumps, pesticides, protection against water wadis, flour grinders, home irrigation, chicken coops, community markets) and gardens (6 minimum) for women (<35% minimum of the proposed infrastructure budget). | Project (to be done by national gender expert) | 100% gender-sensitive infrastructure 30% women-specific infrastructure 1 women's agricultural garden per watershed | Proportion of gender-sensitive infrastructure. Share of infrastructure budget dedicated to agricultural and garden technologies for women |
+| ERAP / Gender and Community Development Expert / Gender Focal Points (PFG) | Year 2-6 | | |
+
+--- 
+
+*Note: Page 188*
+
+
+---
+*Chunk pages 189–189*
+*Token usage:* input=643 (sys=94, user=549), max_out=1024, ctx=8192
+---
+
+# Component 2. Supporting the Development of Agribusinesses
+
+## Support farmers in financial inclusion (<50% women) in the localities of Tadjourah (6), Ali Sabieh (3), Dikhil (2), Djibouti - city (Ambouli) (50 people per locality, per year, 1st registered).
+
+- **Establish an agreement with the Ministry of Education for the free use of classrooms.**
+- **3 718 2400 people trained among the beneficiaries of the project, including at least 1200 women**
+- **Nb. of training and nb. of persons benefiting from this specific training**
+- **ERAP / Ministry of Education / UNFD / PFG localities - regions**
+- **Years 1-6**
+
+## Acquisition of 1000 hens, equipment and food and veterinary products for one year, exclusively reserved for women farmers (100% women) and with 100% female management.
+
+- **112 536 Number of women or groups of women to be defined in the baseline study**
+- **Nb. of women benefiting from poultry houses**
+- **ERAP / Gender and Community Development Expert**
+- **Year 1-2**
+
+## Community agroforestry (50% women and youth) Project (to be managed by national gender expert).
+
+- **120 Nb. of hectares**
+- **ERAP / Gender and Community Development Expert**
+- **Year 1-3**
+
+## Develop health and safety measures that take into account the needs of women.
+
+- **Project (to be managed by national gender expert)**
+- **100% of women's groups satisfied**
+- **Share of women's groups satisfied**
+- **ERAP / Business / Gender and Community Development Expert**
+- **Year 1-2**
+
+## Train the women beneficiaries of the project in leadership and public speaking following an agreement signed with the Regional Directorates (at the beginning of the project and then spread over the duration of the project once a month).
+
+- **Project (to be managed by national gender expert)**
+- **70% of women beneficiaries of the project**
+- **Number of women trained in leadership and speaking (baseline study)**
+- **Ministry of Health, Community Relays / Gender and Community Development Expert**
+- **Years 2-6**
+
+--- 
+
+*Note: Page numbers are preserved as per the original PDF.*
+
+
+---
+*Chunk pages 190–190*
+*Token usage:* input=624 (sys=94, user=530), max_out=1024, ctx=8192
+---
+
+# [Page 1]
+
+Carry out a gender analysis on the acquisition of land rights with specific recommendations for actions and budgeted, integrated into the baseline study (TDRs with budget extension + $ 20,000).
+
+NB: a questionnaire submitted to the project team includes a series of questions for which data are missing but will need to be integrated into the baseline study as well as this extension focused on land issues (see part 4 of Annex B13).
+
+20 000 1 roadmap to support farmers in acquiring their AOS1 list of actions proposed, budgeted and validated for a phase 2
+
+Availability of a roadmap to support farmers in acquiring their land cover certificates (AOS) with validated and budgeted actions for a phase 2 (or additional funding)
+
+PIU / Prefectures / Gender focal points / Local development and gender expert / Ministry of the Interior
+
+Years 1-2
+
+Establish partnerships with the engineering university, business schools and vocational technical high schools on trade, energy to create opportunities for collaboration and business with the project farmers (role of the Gender Expert and the Project Coordinator).
+
+- 4 training institutes associated with the project / Partnership agreements
+
+Nb. of training structures involved in the project (school support projects, volunteering and business case studies)
+
+PIU (Coordinator) / Gender and Community Development Expert / Ministry of Education
+
+Years 1-7
+
+Carry out a particular activity with the communities/cooperatives benefiting from the project for a simplified procedure (e.g. sending requests by email and possibility of representation) with the Prefectures in partnership with the PFGs of the Capitals for the formulation of requests and obtaining certificates of agricultural occupation of the sub-projects (role of the Gender Expert and the PFG).
+
+- 1 Prefectural agreement for a simplified procedure email or document
+
+Existence of a facilitated procedure to set up this approach for the project
+
+Gender and Community Development Expert / ERAP / Prefectures
+
+Year 2-4
+
+
+---
+*Chunk pages 191–191*
+*Token usage:* input=739 (sys=94, user=645), max_out=1024, ctx=8192
+---
+
+# Component 2. Supporting the Development of Agribusinesses
+
+## Project (to be managed by national gender expert)
+
+### Situation at the end of the project +20% land held by men and women.
+
+Baseline % land owned by men/women.
+
+### Project trainers (agents) / Gender focal points (PFG) localities and capitals / Gender expert and Dvp. Co. Years 1-6
+
+Establish an agreement with the Ministry of the Interior for the acquisition of national identity documents for refugees, immigrants and stateless persons working on arable land.
+
+(to be managed by national gender expert)
+
+### 1 Convention is implemented during the project
+
+Existence of a convention ERAP / Ministry of Interior / ONARS / IOM / National Expert on Gender and Community Development
+
+Year 1-2
+
+### Deliver entrepreneurship training to business plan and SME development (<40% women).
+
+Project (to be managed by national gender expert)
+
+40% women entrepreneurs, 40% women-led businesses among the beneficiaries of the project
+
+Proportion of women entrepreneurs and women-led businesses among beneficiaries
+
+Project trainers / PFG localities and capitals / Gender and Community Development expert
+
+Year 2
+
+### Develop community sub-projects to provide access to innovative technologies to improve the yield of agropastoral activities, e.g. renewable energy (solar home systems' kits, pumping), improved cooking stoves. Based on demand (but at least <35% women).
+
+Project (to be managed by national gender expert)
+
+35% of sub-projects managed by women
+
+50% of sub-projects for the benefit of women supported
+
+Proportion of projects developed and led by women supported by the project
+
+Proportion of sub-projects for the benefit of women (expressed needs: i.e. solar panels, etc.)
+
+Number of women including women in female headed households and youth accessing clean, reliable and affordable solar home systems through ERAP / Project Trainers / Gender and Community Development Expert
+
+Years 2-5
+
+
+---
+*Chunk pages 192–192*
+*Token usage:* input=620 (sys=94, user=526), max_out=1024, ctx=8192
+---
+
+# [Page 1]
+
+## Project (to be managed by national gender expert)
+
+35% of the budget for women entrepreneurs - entrepreneurs; or £90,000 minimum.
+
+Percentage of bank guarantee/micro-credit facility budget for women entrepreneurs or women-led businesses
+
+ERAP / Gender and Community Development Expert
+
+Year 2
+
+## Policy dialogue with banking institutions: inclusion of rural women, LoC, support for the formalization of jobs in the sector.
+
+Project 1 high-level workshop with recommendations
+
+Nb. of workshops on financial inclusion and access to land rights for farmers in Djibouti
+
+ERAP / Gender and Community Development Expert
+
+Years 1-4
+
+## Component 2. Supporting the Development of Agribusinesses
+
+Study on business opportunities in the agricultural value chain for domestic and cross-border trade, including a chapter on women's trade and recommendations for policy dialogue.
+
+Project (to be done by national gender expert)
+
+1 study on gender-responsive business opportunities
+
+Existence of a study on business opportunities, cross-border trade
+
+ERAP / Gender and Community Development Expert
+
+Years 1-2
+
+Establish partnerships with the engineering university, business schools and vocational technical high schools on trade, energy to create opportunities for collaboration and business with the project farmers (role of the Gender Expert and the Project Coordinator).
+
+(to be done by national gender expert)
+
+4 training institutes associated with the project / Partnership agreements
+
+Nb. of training structures involved in the project (support projects, volunteering and business case studies)
+
+PIU (Coordinator)/ Gender and Community Development Expert / Ministry of Education
+
+Years 2-5
+
+
+---
+*Chunk pages 193–193*
+*Token usage:* input=658 (sys=94, user=564), max_out=1024, ctx=8192
+---
+
+# Component 3.  
+## Strengthening Agropastoral Communities’ Capacity to Adapt to Climate Change
+
+- Training of trainer(s) (12) or refresher on climate-smart agricultural practices (CFS) and nutrition, ensuring that 50% of women are trained (2 more women).  
+  - Project (to be managed by national gender expert)  
+- 14 Ministry of Agriculture officers trained or refreshed in CSA and nutrition (including 12 who will be trainers)  
+- Number of community workers trained or upgraded  
+
+### MORE Year 1
+
+- Training in CSA for women's farmers' groups (50% women or women's groups) throughout the project.  
+  - Project (to be managed by national gender expert)  
+- 50% women among the beneficiaries of the project (baseline)  
+- Number of project beneficiaries trained, including 50% women  
+- 70% of project beneficiaries  
+
+### Project Trainers / ERAP
+
+### Year 2–6
+
+# Component 4.  
+## Project Coordination and Management
+
+Recruit a national expert in gender and community development through competitive recruitment for the ERAP full-time, bilingual in English:
+
+(i) responsible for the implementation of the PAG and its integration into the final logical framework of the project,  
+(ii) training of the project team and gender stakeholders,  
+(iii) organization of trainings,  
+(iv) relationship with external partners (administrations: Prefectures, Ministries, military camps; design office, companies, NGOs, National Union of Djiboutian Women (UNFD)),  
+(v) coordination of PFGs of capitals and localities,  
+(vi) supervision in the field,  
+(vii) participation in the complaints management committee, COPIL and COTECH of the project,  
+(viii) periodic reports on gender to the Coordinator, drafting of the gender part of the AfDB's periodic reports,  
+(ix) Gender and CSO Focal Point at the AfDB on the project.
+
+- 420,000  
+  - 1 competent national gender and community development expert recruited throughout the duration of the project  
+- An experienced and bilingual national gender and community development expert in English  
+
+### MORE Year 1 – 7
+
+
+---
+*Chunk pages 194–194*
+*Token usage:* input=714 (sys=94, user=620), max_out=1024, ctx=8192
+---
+
+# Component 4. Project Coordination and Management
+
+## Designate a full-time Gender Focal Point per locality (12) (50% women) to play a role of facilitator and close follow-up:
+
+### (i) Financial inclusion courses (opening of bank accounts)
+### (ii) Coordination (with trainers, the Prefecture, the Gender Expert)
+### (iii) Establishment of the list of people in need of CNI, certificates of agricultural occupation, people to register for training, etc.
+### (iv) Report on the activities of his locality to the PFG of the Capital
+### (v) Followed trainings to become a trainer
+### (vi) Writing a monthly report
+### (vii) Training and training groups in the GALS methodology
+
+**Project (to be managed by national gender expert)**
+
+- **12 Gender and community development focal points within localities including at least 6 women**
+- **Existence of a gender focal point (PFG) per locality, 50% of whom are women**
+
+**ERAP / Prefectures / Gender Focal Points / Gender and Community Development Expert / UNFD**
+
+**Year 1**
+
+---
+
+## Training Awareness/mobilization of populations (50% women) and all project stakeholders (companies, external workers, ministries, traditional leaders) on gender and women's empowerment
+
+**Project (to be managed by national gender expert)**
+
+- **According to the baseline study**
+- **Number of persons (M/F) and stakeholders trained**
+
+**ERAP / Business / Gender and Community Development Expert**
+
+**Year 2-4**
+
+---
+
+## Further train the entire project team in gender (gender mainstreaming within agricultural projects, in climate resilience) and present PAG activities to the entire team at the start of the project. (3 half days)
+
+- **MORE (100%) Number of project employees with more in-depth gender training**
+- **Gender and Community Development Expert**
+
+**Year 1**
+
+---
+
+## Train the 12 trainers of the project (30% women) on the theme of female leadership and gender (including gender-based violence (GBV), female genital mutilation, FMG), women's economic empowerment, sexual exploitation and abuse, through the National Union of Djiboutian Women (UNFD), as well as the 4 Deputy Directors
+
+- **17310 12 trained agents including at least 4 women**
+- **Number of trainers trained, including at least 30% women**
+
+**MFF / UNFD / Gender and Community Development Expert**
+
+**Years 1-2**
+
+---
+
+## Train the entire project team in gender (gender mainstreaming within agricultural projects, in climate resilience) and present PAG activities to the entire team at the start of the project. (3 half days)
+
+- **MORE (100%) Number of project employees with more in-depth gender training**
+- **Gender and Community Development Expert**
+
+**Year 1**
+
+---
+
+## Designate a full-time Gender Focal Point per locality (12) (50% women) to play a role of facilitator and close follow-up:
+
+### (i) Financial inclusion courses (opening of bank accounts)
+### (ii) Coordination (with trainers, the Prefecture, the Gender Expert)
+### (iii) Establishment of the list of people in need of CNI, certificates of agricultural occupation, people to register for training, etc.
+### (iv) Report on the activities of his locality to the PFG of the Capital
+### (v) Followed trainings to become a trainer
+### (vi) Writing a monthly report
+### (vii) Training and training groups in the GALS methodology
+
+**Project (to be managed by national gender expert)**
+
+- **12 Gender and community development focal points within localities including at least 6 women**
+- **Existence of a gender focal point (PFG) per locality, 50% of whom are women**
+
+**ERAP / Prefectures / Gender Focal Points / Gender and Community Development Expert / UNFD**
+
+**Year 1**
+
+---
+
+## Training Awareness/mobilization of populations (50% women) and all project stakeholders (companies, external workers, ministries, traditional leaders) on gender and women's empowerment
+
+**Project (to be managed by national gender expert)**
+
+- **According to the baseline study**
+- **Number of persons (M/F) and stakeholders trained**
+
+**ERAP / Business / Gender and Community Development Expert**
+
+**Year 2-4**
+
+---
+
+## Further train the entire project team in gender (gender mainstreaming within agricultural projects, in climate resilience) and present PAG activities to the entire team at the start of the project. (3 half days)
+
+- **MORE (100%) Number of project employees with more in-depth gender training**
+- **Gender and Community Development Expert**
+
+**Year 1**
+
+---
+
+
+---
+*Chunk pages 195–195*
+*Token usage:* input=625 (sys=94, user=531), max_out=1024, ctx=8192
+---
+
+# Designate a Gender Focal Point per Region (4) part -time in the Sub-
+Directorate of each capital (Dikhil, Ali Sabieh, Tadjourah, Djibouti -city of the 6 watersheds) whose mission will be to: (i) report to the Gender Expert, (ii) facilitate travel and coordination with the prefectures, (iii) follow, support the ac tivities of the localities, (iv) make supervision - monitoring of the field, (v) write a bi-monthly report to the Ministry of Agriculture (Gender Expert), (vi) train and groups in the GALS methodology.
+
+## Project 4 Focal points of the kind of capitals
+
+| Nb. of PFG by Capital | Gender and community development expert / Associations, local NGOs |
+|----------------------|-------------------------------------------------------------------|
+| Year 1               | Training of trainers on the Oxfam GALS methodology (Gender Action Learning System) by IGAD (6 people, 1 Ministry representative, 5 days). Necessary to include the Gender Expert (as well as the 4PFG of the capitals and the Project Coordinator). |
+| IGAD                 | 7 people trained including 3 women minimum |
+| Number of people trained to be SALG trainers | IGAD / ERAP Years 1-2 |
+| Train gender focal points in localities (12) and regions (4) in the GALS methodology with tools translated into French and deployed in local languages (Somali, Afar) to be able to assist GALS trainers (by the Gender Expert). | 14 338 12 Gender focal points of localities formed |
+| Nb. of gender focal points of localities formed | Gender and Community Development Expert / UNFD |
+| Years 1-2            | Train 30 people (15 couples) in local language per locality in the GALS methodology for 2 years (8 days of training in total), i.e. 360 people. |
+| 34 560               | 360 people trained, including at least 180 women |
+| Nb. of persons trained at the GALS PFG of the Capitals (trained) and Gender and Community Development Expert |
+
+
+---
+*Chunk pages 196–196*
+*Token usage:* input=716 (sys=94, user=622), max_out=1024, ctx=8192
+---
+
+# Component 4. Project Coordination and Management
+
+## Actively participate in the complaints management mechanism to ensure the representation of women (50%), monitoring of firms/companies in charge of the work, company.
+
+| Indicator | Description |
+|----------|-------------|
+| PGES 100% of cases resolved | Number of cases referred to the Complaints Management Committee |
+| Gender and Community Development Expert | Years 1-7 |
+| Study of the baseline situation with sex-disaggregated indicators and a detailed gender analysis on the project area - collection and monitoring of sex-disaggregated indicators throughout the project with the Monitoring and Evaluation Expert | Project (50,000) |
+| 1 complete baseline taking full account of gender aspects and indicators | Existence of a gender-sensitive baseline and ToRs including this aspect |
+| ERAP / Monitoring Evaluation Expert / Design Office / Gender and Community Development Expert / PFG | 6 Months after inception |
+| Training/prevention workshops on GBV, FGM, GBV/SEAH, hygiene, HIV-AIDS with support from reference institutions on the issue and the signing of a Charter of Commitment at the start of the project by the Ministry of Women and Family (MFF) and partners | Additional sessions by the Gender Expert as needed |
+| 56 268 70% of the beneficiaries of the project (to be defined reference study) including 50% of women | Number of people who participated in the training workshops (<70% of project beneficiaries, <50% women). |
+| MFF / Ministry of Justice / Police / Gender and Community Development Expert | Years 2-3 |
+| Organization of exchange workshops, and national and international communication on the good practices of the project in terms of gender mainstreaming, participation in the sharing of lessons learned between the countries of the program (photos, videos, social networks, articles, interview, workshop, etc.) | 5 000 2 virtual exchange workshops on gender8 communication objects on Djibouti's PAG |
+| Nb. of virtual gender exchange workshopsNb. communication objects on the implementation of Djibouti's PAG | Gender and National Community Development Expert / IGAD |
+| Years 3-6 | Integration of gender sensitivity into the procurement plan Project (to be managed by national gender expert) |
+| 100% of PAG budget disburse | Percentage of PAG disbursement |
+
+---
+
+*Note: Page 196*
+
+
+---
+*Chunk pages 197–197*
+*Token usage:* input=135 (sys=94, user=41), max_out=1024, ctx=8192
+---
+
+# TOTAL
+ 
+733 720
+
+
+---
+*Chunk pages 198–198*
+*Token usage:* input=530 (sys=94, user=436), max_out=1024, ctx=8192
+---
+
+# [Page 1]
+
+In the event of additional funding or budgetary reserves during project implementation, the following activities are desirable:
+
+- Support for the acquisition of land documents at the Prefecture, coverage of logistical costs (travel to prefectures or sub-prefectures: capitals and very remote localities).
+- Verbal, digital, functional and digital literacy (min. 50% women) in the localities of Tadjourah (6), Ali Sabieh (3), Dikhil (2), Djibouti-city (Ambouli) following an agreement with the Ministry of Education (for the free use of classrooms).
+- Training of gender focal points (trainers) of localities in training in verbal, digital, functional and digital literacy (12) by UNFD
+- Extension of the tasks of the Gender Focal Points of the localities (50% women) to also deliver digital and functional literacy courses and establish the list of people in need of CNI and certificates of agricultural occupation.
+- Strengthening of the early warning system with the establishment of a network of field assessors of climate vulnerability equipped (50% women/men) and the representation of women on the Committee set up by the Ministry of the Interior.
+- Participatory governance within Climate Smart Villages (CSV) (planned for phase 2) by strengthening the participation of women and youth (50%).
+- Equipment for home irrigation ("home water-pumps") and renewable energy solutions ( solar panels) to intensify agricultural production and/or lighten women's domestic burden.
+- Strategy for the inclusion of vulnerable populations (migrants, nomads) among the beneficiaries of the project with measures to combat their food insecurity,
+- Specific support for women's entrepreneurship, for example with the establishment of an incubator in national priority agricultural value chains with comprehensive entrepreneurial and technical training in these sectors.
+
+
+---
+*Chunk pages 199–199*
+*Token usage:* input=915 (sys=94, user=821), max_out=1024, ctx=8192
+---
+
+# Ethiopia
+
+## Context
+
+Ethiopia is a low-income country with a population of 112,078,730, of which 50% are women according to the World Bank Data for the country. It is interesting to note that the country has made some tremendous progress towards actions to gender equality.
+
+According to the global Gender Gap Index of 2020 by the World Economic Forum, Ethiopia ranks 82nd in the 2020 rankings, showing that it has closed 70.5% of its gender gap to date. Ethiopia has also achieved 16th position globally in political empowerment with about almost half (47.6%) of its ministers being women and 38.8% of parliament seats occupied by women.
+
+Ethiopia has also operationalized various policy and legal instruments designed to promote gender equality, for example, mainstreaming gender within the key national development plans such as the Growth and Transformation Plan I and II (GTP); instituting gender budgeting, increased political participation by women with a cabinet of 50% women and increased representation of women at regional and councils but though lower at federal level; registration of considerable improvements in reproductive health and some moderate strides for women's land rights with about 40% of women owning land and 25% owning through joint land certification for women in male headed households.
+
+Despite these remarkable results, women are still marginalized in the fields of health services, education, labour market, and economic participation and realization of their full potential. For example, Ethiopian women are worse off in agricultural productivity, business revenues and hourly wages than men due to differential access to productive resources like credit, inputs, education, and assets.
+
+## Specific Gender Gaps
+
+These include: Limited access to basic services like education. Gender Parity Index (GPI) is low in secondary and tertiary levels. Females are less likely to complete Grade 8 (59.7 percent against 64.4 percent for male) and continue with secondary schooling compared to their male counterparts and more likely to perform poorly than boys on grade 10 examination.
+
+Apparently, there are fewer females enrolled in higher institutions of learning compared to males in undergraduate (34 percent) and postgraduate (18 percent) levels. Mean years of schooling for females is just 1.6, less than half of the already low mean years of schooling for males, at 3.7 years.
+
+## Low BMI Among Women in Reproductive Age
+
+Around 22.3 percent of women in the reproductive age (15-49 years) are underweight (18.5 >BMI) because of inadequate energy intake and/or diseases. The highest proportion of underweight in women is observed in Afar (39.1 percent), followed by Tigray (34 percent), Gambella (31.8), and Somali (31.2 percent).
+
+On the other hand, the prevalence of overweight and obesity among non-pregnant women of reproductive age (15-49) stands at 29.4 percent in Addis Ababa, while about one-in-five women in Dire Dawa and Harar are overweight or obese.
+
+---
+
+**Note:** Page numbers are preserved as requested. The original page number is [Page 1].
+
+
+---
+*Chunk pages 200–200*
+*Token usage:* input=1005 (sys=94, user=911), max_out=1024, ctx=8192
+---
+
+# Harmful traditional practices – FGM and Early Marriages
+
+Around 65 percent of Ethiopian women aged 15–49 are victims of FGM. Somali and afar regional states have the highest FGM rates with 99 percent of women aged 15–49 having been circumcised. The FGM prevalence has decreased from 74 percent in 2005 with a notable decline among younger women (aged 15–19), which currently stood at 47 percent in 2016, showing a 24 percent decline over ten years¹³. Women in rural areas are more likely to be circumcised than their urban counterparts (68 percent and 54 percent respectively).
+
+Early marriage is a common practice in Ethiopia, particularly in some parts of the country, impacting school attendance of girls. The median age at first marriage for women is one of the lowest on the continent: 17.1 years. Among women aged 30–34, 27.3 percent had married by age 15⁶⁹¹⁴. More than 58 percent of girls between the ages of 15 and 19 give birth sometimes causing physical damages (HDR Ethiopia). A USAID study found that an estimated 36,000 to 39,000 women in Ethiopia live with obstetric fistula, and over 3,000 additional new cases occur each year¹⁵.
+
+# Gender Based Violence
+
+More than one-third of ever-married women reported that they have experienced physical, emotional, or sexual violence from their husband or partner at some point in time. As per the 2016 DHS, almost 1 in 4 women reported experience of emotional violence and physical violence from a husband or partner. Experience of physical, emotional, or sexual violence is higher among older women 40–49 (38 percent), formerly married women (45 percent), those living in rural areas (36 percent vs 11 percent for urban). Comparably, women in Oromia (39 percent), Harari (38 percent), and Amhara (37 percent) had higher proportion of women experiencing domestic violence. Experience of spousal violence decreases with increasing educational level and household wealth. Women from the richest quintile are least likely to report ever experiencing sexual violence (4.5 percent), while 12.3 percent of women in the poorest quintile report having experienced it¹⁶.
+
+The new Civil Servants Proclamation No. 1064/2017 addressed sexual harassment in the workplace prescribing serious disciplinary measures.
+
+# Barriers to economic participation – limited access to productive resources
+
+Women fare worse off in agricultural productivity, business revenues, and hourly wages than men due largely to differential access to productive resources like credit, assets, inputs, and education. Women’s low access to formal credit is partly linked to their limited ownership/control of physical assets that serve as collateral. Women experience lower returns on investments due to structural issues that perpetuate the broader social norms, market failures, and institutional constraints.
+
+The Government has prioritized increasing women’s access to agriculture extension services. The Women Development and Change Package highlights a set of agricultural extension services from which women may benefit. The Growth and Transformation Plan II (GTP II) also has set the target of increasing the percentage of rural women farmers who are benefiting from extension services to 30 percent.
+
+It was reported that in 2019 around 2.8 million women 2,792,600 (32 percent female headed) women farmers were reached through the agricultural extension services. Though women make up more than 40 percent of the agricultural labor force and head approximately 25 percent of all farming households, they have less access to land and other factors of production than men. On average, male-headed households own 2.2 hectares of land compared to 1.7 hectares for female-headed households.
+
+¹³ FDRE (2019), Fifth National Report on Progress made in the Implementation of the Beijing Declaration and Platform for Action  
+¹⁴ World Bank (2019), Ethiopia Gender Diagnostic Report  
+¹⁵ Ethiopia Fistula Foundation  
+¹⁶ Central Statistical Agency (2016), Ethiopia Demographic and Health Survey
+
+[Page 1]
+
+
+---
+*Chunk pages 201–201*
+*Token usage:* input=962 (sys=94, user=868), max_out=1024, ctx=8192
+---
+
+# [Page 1]
+
+headed households.17 Compared to male farm managers, female farm managers control smaller plots of land, cultivate fewer crops, use fewer inputs, and are less likely to access extension programs and formal credit. Use of inputs tend to involve cash investment and mobility that cash-constrained and homestead bound women may ill afford. Thus, productivity for female farm-managers is 23 percent lower than their male counterparts18.
+
+Disproportional overrepresented of women in informal sector as workers: According to estimates made using 2015/16 HICES data, at least 52.6 percent of women and 47.5 percent of men in the major towns are self-employed19. It is also estimated that 36 percent of women's work in the informal sector20. In this category, women account for about half of the operators in the wholesale and retail subsector. As informal workers, women face challenges including a lack of working premises and shortage of working capital.
+
+Women’s underrepresentation and undervaluation in the labour market : As reported in the AfDB Africa Gender Index, female labour force participation rate was 74.3 (86.6 for male) in 201821. Unemployed female youth in Ethiopia outnumber unemployed male youth, at 30 percent and 19 percent respectively22. In urban areas female unemployment rate (26.4 percent) is more than double as compared to male (12.2).23 There are also significant gender gaps in wages received. Males receive 50 percent more on average than women. Females earn 69 percent of what males earn in the whole economy and 63 percent in industry sector. In manufacturing, even after accounting for education and experience, men earn 23 percent more on average24.
+
+Under representation of women in High skill jobs and in managerial positions: Close to 60 percent of the female production workers are unskilled (as opposed to 28 percent for males). The proportion of females who work as production managers or department heads is less than 4 percent, whereas that for males is about 13 percent. Women make up only 20 percent of science and engineering professionals, 21 percent of business services agents, and 30 percent of information and communication technologies (ICT) technicians25. Women’s share of highly qualified professions, senior positions and management is estimated at 30 percent26
+
+Impact of COVID 19 on women and girls: Ethiopian women, like elsewhere, are vulnerable to infection due to their productive roles as first line health workers, health facility service staff (e.g., cleaners, laundry) and reproductive roles (as primary care providers). Overwhelmed health services may also hamper women’s access to reproductive health, especially crucial pre-natal services, and access to family planning, exacerbating the already high level of maternal deaths in the country. With the slowing down of economic activities, more Ethiopian women will be particularly vulnerable as many of them depend on subsistence employment and the hardest hit self-employment sector, which is characterized by informal business. Increased household stress
+
+17 World Bank (2019), Ethiopia Gender Diagnostic Report.
+18 GIZ (2019), Employment and Labour Market Analysis (ELMA) in Ethiopia.
+19 AfDB (2020), Growth, Inequality and Poverty Reduction and Job Creation in Ethiopia.
+20 UNDP (2018), A Study On Women Manufacturing In Ethiopia.
+21 AfDB (2019), Africa Gender Index
+22 FDRE (2020), Ten Year Perspective Development Plan (2021 – 2030).
+23 Ethiopian Central Statistical Agency (2018), The 2018 urban employment unemployment survey.
+24 UNDP(2018), ETHIOPIA | National Human Development Report.
+25 UNDP(2018), ETHIOPIA | National Human Development Report.
+26 GIZ (2019), Employment and Labour Market Analysis (ELMA) in Ethiopia.
+
+
+---
+*Chunk pages 202–202*
+*Token usage:* input=895 (sys=94, user=801), max_out=1024, ctx=8192
+---
+
+# [Page 1]
+
+over economic shocks, prolonged periods of coexistence in (small) living quarters, and reduced 
+access to critical protection services and support networks during this pandemic could exacerbate 
+cases of intimate partner violence in the country. In the absen ce of a vigorous back -to-school 
+campaign, girls’ school dropout is also expected to rise from the current 17.3 percent (elementary 
+level). The need for family members to consistently  wash their hands to protect themselves from 
+infection, and keep homes and  other establishments clean adds a new dimension to the water 
+collection burden of women. 
+ 
+Lessons learned from Phase I (DRSLP I and DRSLP II) 27 of the project, data collected through 
+key informant interviews, consultations with gender focal points in the relevant Ministry of 
+Agriculture, and non -governmental organizations during the feasibility study period for this 
+project in selected project regions indicate that pastoral and agro -pastoral women in Ethiopia are 
+doubly marginalized; by virtue of their gender and through their migratory lifestyle making access 
+to services difficult. A bigger percentage of the population is found in the rural areas with women 
+providing most of the manual labour in agro pastoral communities.  For example, while men 
+migrate from one place to another with livestock, women and girls are left at home to take care of 
+families during prolonged periods of drought and with v ery limited resources to support their 
+families.  Due to their socio -cultural gender norms, they are forced to walk for long distances in 
+search of water, fuel wood, and grass for construction of houses.  This activity pattern puts an extra 
+constraint on their time budgets and reduces the amount of time available daily to engage in small 
+income earning businesses (IGAD, 2016). 
+ 
+Gender disaggregated information on roles and access to assets and productive inputs by men and 
+women remains scant making analysis and targeting difficult. However, consultations and research 
+indicate that pastoral women face considerable barriers in acce ssing land and credit. Where land 
+is owned by female heads of households, the parcels of land are much smaller than those jointly 
+owned by women and men in male headed households.  At the community and household level, 
+patrilineal system of land ownership and inheritance based on customary laws and practices 
+override the established laws, institutions and legal frameworks on land ownership such that 
+preference is always given to sons versus daughters.  Women in agro pastoral communities also 
+have no access to credit in formal microfinance institutions and rely on traditional saving schemes 
+to operate small businesses that are not economically viable. They are also often excluded from 
+vital information for market and value chains and are not able to access in formation related to 
+climate change resilient agricultural practices due to their low literacy levels and limited 
+participation in decision making in community level institutions. This in turn raises their 
+vulnerabilities to shocks related to climate chang e compared to men. (IGAD, 2015; UN Women, 
+2014) 
+ 
+The major beneficiaries of the proposed program will be pastoral and agro pastoral communities 
+with 30% to 50% being women based on government commitment and number of women reached, 
+and their local institutions in 30 districts across 4 administrative regions in Ethiopia.  The primary 
+beneficiaries of the proposed project interventions are expected to number about 2,267,736 million 
+people (about 441,194 household). These beneficiaries will be selected individuals, household 
+
+27 AfDB (2014).  Drought Resilience and Sustainable Livelihoods Program in the Horn of Africa – Project II (DRSLP II).  
+Ethiopia Appraisal Report.
+
+
+---
+*Chunk pages 203–203*
+*Token usage:* input=835 (sys=94, user=741), max_out=1024, ctx=8192
+---
+
+# [Page 1]
+
+(male headed and female headed households), and communities residing in agro pastoral areas in  
+four Lowlands regions. They include pure pastoralists (camel, cattle, sheep, and goat owners) and  
+agro-pastoralists in the targeted rangelands; those opting out of pastoralism and/or interested in  
+taking up alternative forms of livelihood; and the populations in the selected woredas and kebeles.   
+
+Specifically, this project targets to build climate resilience for food and livelihoods among   
+agropastoral communities and mainstream gender along the project components, thereby reducing  
+the gender gap, achieving economic empowerment and gender equality.  One of the main project  
+outcomes is to increase income from agro pastoral value chains with increased per capita income  
+among women beneficiaries and creation of jobs for women and youth.  Additionally, the project  
+targets to increase access to productive resources for youth and women like land, innovative and  
+digital financial services tail ored to meet the needs of the two marginalized groups, biofortified  
+foods to women (in male headed and female headed households) and men within their households,  
+participation in sustainable management of agro pastoral lands, and development of agribusinesses  
+and agro pastoral value chains for women led and youth led cooperatives. Furthermore, the project  
+will also strengthen women’s decision-making role in the household and their community and their  
+representation in the membership and leadership of grassroots institutions and organizations.    
+
+Therefore, the current project aims to mainstream gender in all components as well as address  
+specific issues through targeted activities as outlined in the GAP. The project seeks to empower  
+women both within the project areas and in program implementation  and aims to achieve 30% to  
+50% of those benefiting to be women. It will encourage committees to include a 30% quota for  
+women in management and training activities in line with GoE regulations.  The GAP activities  
+are supposed to address the persistent ch allenges and barriers that continue to negatively affect  
+women to close the gender gap and achieve economic empowerment for women and youth.  A  
+gender expert within the PIU will ensure that the project is implemented in a way that addresses  
+the gender issues among agro pastoral communities.  Continuous monitoring and evaluation will  
+be carried in a timely manner throughout the project period with gender mainstreamed indicators  
+of change as outlined in the project log frame.    
+
+Identification of specific gender-based risks and mitigation measures to address identified  
+gender gaps, inequalities, or discriminatory practices in the regions targeted for program  
+implementation in Ethiopia.   
+
+1) Project activities that are dominated by men for example in design of infrastructure like  
+boreholes, roads and rehabilitation of such structures can tend to limit the participation of  
+women due to socio norms.  This will be minimized through training of women in public  
+speaking and making sure that at least 30% of representation in these forums are women  
+with again equal representation in leadership positions.  
+2) that the project will ensure that women are not underrepresented in all forums across the  
+project components (water committees, sustainable management of agro pastoral lands,  
+climate smart villages with demonstration sites, access to digital technology on climate  
+resilience practices and services etc.) with at least 30% representation.  Also engaging with  
+norms will involve transforming the mind-sets of both men and women and their traditional  
+and customary leaders especially through gender transformative activities like community
+
+
+---
+*Chunk pages 204–204*
+*Token usage:* input=818 (sys=94, user=724), max_out=1024, ctx=8192
+---
+
+# [Page 1]
+
+dialogues. In addition, the GALS Approach and methodology should be implemented in 
+all regions covered by the project.  If it is not possible, then organized tours to the region 
+where such methodology has been implemented should be arranged for other commu nity 
+members to learn.  In cases where norms persist and hinder women’s participation in the 
+presence of men, then women only groups should be encouraged so that women can share 
+their views on their needs, concerns, and interests with respect to implementa tion and 
+management of the project activities so that they are not disadvantaged.  
+
+3) Markets for agro pastoral value chains especially livestock can have the tendency to be 
+dominated by men and thus reduce the bargaining power of women with respect to prices 
+of livestock and other agro pastoral value chain products. These challenges can be  
+addressed through capacity building in public speaking for women, having digital 
+platforms packaged and simplified to meet the market needs of women especially 
+providing weekly market price targets on agro pastoral value chain products across the 
+project regions.  
+
+4) Other challenges related to this project could arise due to time poverty constraints based 
+on women’s heavy workload.  Alternative technologies like renewable energy – solar and 
+biodigester systems  will be made  available to women to reduce their time poverty 
+constraints imposed on them by their productive and reproductive roles. Access to 
+household water will be enhanced through provision of boreholes within short distances of 
+homesteads and villages so that women spend less time travelling to fetch water. For water, 
+adequacy during the dry season and accessibility through shorter distance travelled should 
+be tackled as priorities. Women will have have quotas (at least 30% participation) in 
+reseeding programs and in land rehabilitation programmes 
+
+5) Women have low literacy levels and therefore could face challenges in understanding 
+livestock and crop production technologies in agro pastoral value chains.  The project 
+should support simplified and packaged crop production technologies and extension 
+service training manuals and modules targeting low literacy levels of women to enhance 
+food production and nutrition Such modules and technology manuals should be packaged 
+in the local languages to meet the needs of women.  Training should be conducted near 
+villages and homesteads where women are comfortable to avoid the fear of traveling for 
+long distances away from their homesteads based on socio cultural gender norms which 
+limit women’s mobility to faraway places without permission from the male heads of 
+households and due to their heavy workload. Training periods of time and dates of training 
+should be agreed upon based on consultations between women and education extension 
+service providers. 
+
+6) Based on intrahousehold control of specific value chains by men and control of income 
+from such value chains due to social cultural gender norms based on patrilineal systems in 
+the agro pastoral communities, it is advisable to invest in women only value ch ains 
+targeting women to make sure that women have the opportunity to earn income from value 
+chains that have no value to men based on gender norms and traditions.  Such vale chains 
+include poultry, goat and sheep fattening commonly termed as small stock va lue chains.  
+Studies have shown that when a certain value chain becomes profitable, there is the 
+possibility of control by men.  Therefore, the project implementers at the community level
+
+
+---
+*Chunk pages 205–205*
+*Token usage:* input=551 (sys=94, user=457), max_out=1024, ctx=8192
+---
+
+# [Page 1]
+
+should put in place safeguards to ensure that markets, and market prices and products from 
+women only value chains are not taken over by men.  Such safeguards can include women 
+organising into cooperatives for poultry, sheep and goat keeping and marketing their 
+products as a group and thereafter sharing the income. Processing plants for produce from 
+women only value chains are more secure from male dominance if they are operated as 
+women only cooperatives for economic empowerment of women  
+
+7) Women are not homogeneous, and care must be taken not to assume that the interests, 
+needs and concerns of women are the same. Such an assumption could result in biases in 
+identification and participation of women beneficiaries in the project activities.  There are 
+women from male headed households and female headed households and younger women.  
+Women from female headed households like widows and single mothers should be 
+involved in all project activities targeting women using a quota system of representation to 
+make sure that all groups and categories of women benefit equally from the project 
+activities through representation at all planned activities across the project components.  
+
+8) Harmful traditional and customary practices can result in low participation of women in 
+the project.  Community mobilization to create awareness against such practices should be 
+encouraged through gender transformative action plans for example through comm unity 
+wide campaigns against female genital mutilation and early marriages, reproductive health 
+awareness and use of capacity building materials simplified and packaged to target 
+different local community groups  on behaviour change and use of gender sensi tive and 
+diversified behaviour change communication strategies to promote women and girls 
+empowerment.  
+
+9) There could be gender biased implementation of project components by field staff if they 
+are not trained on gender mainstreaming into the project cycle activities.  The gender expert 
+in the PIU gender expert and coordinator should build the capacity of field staff and gender 
+focal points at the local level so that gender is mainstreamed into the project activities to 
+achieve empowerment for women and close in the gender gaps identified in agro pastoral 
+communities.
+
+
+---
+*Chunk pages 206–206*
+*Token usage:* input=688 (sys=94, user=594), max_out=1024, ctx=8192
+---
+
+# Project Title: Resilience Building for Food and Nutrition Security (BREFOL) Programme in the Horn of Africa (HOA)
+
+## Objective
+To contribute to the improvement of living conditions and food and nutrition security in the Horn of Africa
+
+## Category: SMG (GMS) - GEN II - Components Activities Budget in USD
+
+| Component | Activity | Target(s) | Indicator | Responsible | Timeline |
+|-----------|----------|-----------|-----------|-------------|----------|
+| Component 1. | Strengthening the resilience of drought-prone areas and pastoral and agropastoral production systems to climate change | | | | |
+| Community consultations including women/men groups during design and site identification for infrastructure development activities | 50,000 | 50 # of community consultations for development of infrastructure | Community stakeholder consultation plan developed | Ministry of Agriculture/Ministry of Women and Social Affairs/PIU | Ongoing |
+| Leadership training for women including public speaking training to participate fully in the Climate Change adaptation planning and range land management | 10,000 | 500 # of women trained | Ministry of Agriculture/Ministry of Women and Social Affairs/PIU | Ongoing |
+| Facilitated dialogues with women/community groups during site identification for sustainable range land rehabilitation | 20,000 | 20 # of dialogues with community groups on sustainable range management | Ministry of Agriculture/Ministry of Women and Social Affairs/PIU | Year 2 |
+| Payam Land Council, Land Committees, and clan leaders land management training with representations of at least 30% women | 50,000 | 20 # of training sessions with PAYAMs | # of women who participate in land management committees | Ministry of Agriculture/Ministry of Women and Social Affairs/PIU | Year 2 |
+| Replicate the Farm Africa gender inclusive bylaws in woredas to increase women's participation in conservation efforts, range land management, agroforestry and decision making | 100,000 | 20 # of woredas that adopt bylaws to accelerate women's participation in conservation efforts, range land management and decision making | Gender Expert in PIUs | Year 2-4 |
+| Participation of youth and women groups in the sustainable land project budget (100,000) | 50,000 | 50 # of women and youth who participate | PIU | Ongoing |
+
+--- 
+
+[Page 1]
+
+
+---
+*Chunk pages 207–207*
+*Token usage:* input=510 (sys=94, user=416), max_out=1024, ctx=8192
+---
+
+# [Page 1]
+
+## Management Practices in Agro Pastoral Lands
+
+### Sustainable Land Management
+
+| Indicator | Value |
+|----------|-------|
+| Development of water infrastructure | 9,299.4 |
+| Number of water infrastructure developed to bring water close to communities | 200 |
+| Number of households who have access to water sources closer to their homes | 5000 |
+
+### Inclusive Entrepreneurship
+
+| Indicator | Value |
+|----------|-------|
+| Developed tailor made business development services for women with low literacy levels | 20,000 |
+| Number of women trained | 500 |
+| Number of communities where traditional leaders facilitate women's access to land | 20 |
+
+### Gender Expert
+
+| Indicator | Value |
+|----------|-------|
+| Gender analysis of selected value chains and identification of entry points for women's participation | 30,000 |
+| Number of gender analyses reports | 3 |
+
+### Facilitating the organisation of women farmers into cooperatives
+
+| Indicator | Value |
+|----------|-------|
+| Supporting them to achieve some level of formalisation to benefit from financing | 50,000 |
+| Number of women who are registered members of cooperatives | 5000 |
+| Number of cooperatives trained on governance and Agri business | 500 |
+
+### Provision of renewable energy solutions
+
+| Indicator | Value |
+|----------|-------|
+| Inputs and finance (energy saving cookers/solar panels for women and female-headed households) | 500,000 |
+| Number of women who adopt use of renewable energy solutions | 500 |
+
+### Year 3-4
+
+| Indicator | Value |
+|----------|-------|
+| Provision of renewable energy solutions inputs and finance (energy saving cookers/solar panels for women and female-headed households) | 500,000 |
+| Number of women who adopt use of renewable energy solutions | 500 |
+
+### Year 2-4
+
+| Indicator | Value |
+|----------|-------|
+| Provision of renewable energy solutions inputs and finance (energy saving cookers/solar panels for women and female-headed households) | 500,000 |
+| Number of women who adopt use of renewable energy solutions | 500 |
+
+### Year 1-2
+
+| Indicator | Value |
+|----------|-------|
+| Gender analysis of selected value chains and identification of entry points for women's participation | 30,000 |
+| Number of gender analyses reports | 3 |
+
+### Year 2-6
+
+| Indicator | Value |
+|----------|-------|
+| Dialogue between traditional leaders and district gender units to guarantee women's access to land resources beyond the project | 20,000 |
+| Number of communities where traditional leaders facilitate women's access to land | 20 |
+
+### Year 3-4
+
+| Indicator | Value |
+|----------|-------|
+| Provision of renewable energy solutions inputs and finance (energy saving cookers/solar panels for women and female-headed households) | 500,000 |
+| Number of women who adopt use of renewable energy solutions | 500 |
+
+### Year 2-6
+
+| Indicator | Value |
+|----------|-------|
+| Dialogue between traditional leaders and district gender units to guarantee women's access to land resources beyond the project | 20,000 |
+| Number of communities where traditional leaders facilitate women's access to land | 20 |
+
+### Year 1-2
+
+| Indicator | Value |
+|----------|-------|
+| Gender analysis of selected value chains and identification of entry points for women's participation | 30,000 |
+| Number of gender analyses reports | 3 |
+
+### Year 2-4
+
+| Indicator | Value |
+|----------|-------|
+| Provision of renewable energy solutions inputs and finance (energy saving cookers/solar panels for women and female-headed households) | 500,000 |
+| Number of women who adopt use of renewable energy solutions | 500 |
+
+### Year 3-4
+
+| Indicator | Value |
+|----------|-------|
+| Provision of renewable energy solutions inputs and finance (energy saving cookers/solar panels for women and female-headed households) | 500,000 |
+| Number of women who adopt use of renewable energy solutions | 500 |
+
+### Year 2-6
+
+| Indicator | Value |
+|----------|-------|
+| Dialogue between traditional leaders and district gender units to guarantee women's access to land resources beyond the project | 20,000 |
+| Number of communities where traditional leaders facilitate women's access to land | 20 |
+
+### Year 1-2
+
+| Indicator | Value |
+|----------|-------|
+| Gender analysis of selected value chains and identification of entry points for women's participation | 30,000 |
+
+
+---
+*Chunk pages 208–208*
+*Token usage:* input=620 (sys=94, user=526), max_out=1024, ctx=8192
+---
+
+# Building Capacity for Women to Access Resources Related to Renewable Energy at the Group/Cooperative Level
+
+## Project Activities and Targets
+
+### 1. Accessing Finance for Renewable Energy Technologies
+- **Target:** 20,000 women who access finance for renewable energy technologies
+- **Timeframe:** Year 3-4
+- **Training and support:** For women to access bio digester units and solar systems
+- **Target:** 20,000 women trained (PIU. Gender Expert)
+- **Timeframe:** Year 3-4
+
+### 2. Gender Responsive Adaptive Capacity to Climate Change
+- **Target:** Training of pastoralists and smallholder farmers on the use of climate-informed agro-advisory services (at least 30% target are women)
+- **Project budget:** (100,000) # pastoralists using climate informed agro advisory services (at least 30% women)
+- **Timeframe:** PIU Year 2-4
+
+### 3. Network of Climate Vulnerability Assessors Equipped with Early-warning Systems Targeting Women
+- **Project budget:** # of women who use early warning technologies
+- **Timeframe:** PIU Year 1-2
+
+### 4. Gender Responsive Project Coordination
+- **Target:** Recruitment of a Gender Expert in PIU for an effective and efficient coordination of the GAP
+- **Target:** 420,000 1 Gender Expert recruited
+- **Timeframe:** PIU 6 Months
+
+### 5. Gender Assessment of the Project
+- **Target:** Obtain baseline data and inform project implementation
+- **Target:** 50,000 1 Gender assessment Report
+- **Timeframe:** PIU 6 Months after inception
+
+### 6. Updated Gender Action Plan
+- **Target:** Capacity building on Gender mainstreaming of key stakeholders including on GBV/SEAH prevention
+- **Target:** 20,000 500 # of stakeholders trained
+- **Timeframe:** Contractors Year 2-7
+
+### 7. Production of Gender Knowledge Products
+- **Target:** Collection of gender disaggregated data for Monitoring, Evaluation and Learning
+- **Target:** 10,000 3 # number of reports produced
+- **Timeframe:** Gender Expert Year 2-7
+
+### 8. Facilitation of Gender Transformative Forums for Men and Women
+- **Target:** Sub-national Gender Action Learning Systems (GALS) approach and methodology targeting women/men/traditional leaders across all the target locations
+- **Target:** 100,000 10 # of training sessions on the GALSs approach
+- **Timeframe:** PIU Gender Expert Year 2-6
+
+--- 
+
+*Note: Page 208*
+
+
+---
+*Chunk pages 209–209*
+*Token usage:* input=139 (sys=94, user=45), max_out=1024, ctx=8192
+---
+
+# [Page 1]
+
+TOTAL   
+1,699,299.4
+
+```
+
+
+---
+*Chunk pages 210–210*
+*Token usage:* input=833 (sys=94, user=739), max_out=1024, ctx=8192
+---
+
+# Kenya
+
+## Context
+
+Kenya is a developing country whose development efforts are increasingly being hampered by the adverse impacts of climate change such as droughts and floods, which have increased in both frequency and intensity over the past decades. These impacts are felt across all sectors including agriculture, health, energy, transport, and water.
+
+Kenya's National Climate Change Action Plan (2018-2022) identified major climate hazards in Kenya, including the increasing frequency and intensity of extreme climate events, heat waves, droughts, floods, and landslides. The arid and semi-arid regions of Kenya have endured three severe droughts in the last decade (2010-2011, 2016-2017 and 2020-2022). The 2020-2022 drought was reported as the most severe and longest with widespread livelihood losses and massive displacement of populations.
+
+In economic terms, each drought reduces the Gross Domestic Product by an average of 3.3 percent with the average annual cost of the damage estimated at $ US 1.25 billion for drought alone. This has led to loss of lives, diminished livelihoods, reduced crop and livestock production, and damaged infrastructure, among other adverse impacts.
+
+Over the past 20 years, Kenya's population has doubled. Although Kenya has sustained population growth, it has both high birth and infant mortality rates. There has been a marked improvement in life expectancy, particularly in recent years. This is consistent with Africa overall. The United Nations estimated the Kenyan population to be at 54 million (51% women, 49% men) as at July 2022. Most of the population is mainly rural and relies on climate vulnerable nature-based resources.
+
+## Gender and Climate Change
+
+Gender, together with other aspects of identity, shapes the lives, opportunities, and experiences of people across the globe. It also influences vulnerability to climate impacts. Despite growing recognition of the differential vulnerabilities as well as the unique experiences and skills women and men bring to development and environmental sustainability efforts, women still have less economic, political, and legal capabilities. Consequently, they are more exposed to and less able to cope with the adverse effects of climate change.
+
+Equally true is the reality of women as powerful agents of change, who despite structural and sociocultural barriers are making significant contributions to sustainable development.
+
+In Kenya, patriarchal norms that assign gender roles place responsibility for household reproduction in women and girls. As primary caregivers they are charged with securing water, food, and fuel for cooking and heating while also being responsible for taking care of household members including children, the elderly, and disabled.
+
+In addition to reproduction activities, women also actively engage in livelihood production, undertaking the bulk of agricultural work and contributing to productivity for consumption and for sale. Nonetheless, women earn only a fraction of the income generated and own a nominal percentage of assets.
+
+Barriers to information, technologies, and financial services coupled with limits to women's full participation in household decision-making, markets and formal institutions contribute to these unequal outcomes between men and women. Despite women's participation and contribution to the economy, their work is under-rated, and women and girls' work is often unpaid, underpaid, or invisible. The majority of
+
+[Page 1]
+
+
+---
+*Chunk pages 211–211*
+*Token usage:* input=854 (sys=94, user=760), max_out=1024, ctx=8192
+---
+
+# [Page 1]
+
+Women work in the informal sector, with only 34 percent working in the formal sector. For those that do work in the formal labour market they generally earn less than men; for every KSh100 earned by a man, a Kenyan woman only earns KSh 62.5. This wage gap cumulatively translates to different outcomes for both men and women, economically, politically, socially and culturally. Poverty is prevalent among low-income earning women, rural communities, and the urban poor, concentrated in increasing urban settlements. 30.2 per cent of female headed households are poor compared to 26 per cent of their male counterparts.
+
+Women’s dependence on natural resources for both reproductive and productive activities underscore their vulnerability in the face of increased climatic uncertainty. Yet, this same dependence also makes them critical stakeholders in adaptation and mitigation efforts. Therefore, implementation towards Kenya’s NDC as well as efforts towards low carbon and climate resilient development requires inclusive and gender responsive approaches that address the factors that maintain inequalities, constrain women’s opportunities, and limit their ability to plan and adapt to climate change.
+
+Climate change risks lead to the loss of livelihood opportunities and caused considerable stress for men and boys. This is because of the socially ascribed role of men as the providers for the household. These have led to psycho-social illness and low self-esteem among men, while families are dislocated, and new gender roles emerge. Men are more likely than women to be affected by parasitic and infectious diseases during droughts and famines because they engage more in outdoor activities during severe weather events. However, women are more vulnerable to injury and fatality in climate change-induced hazards, such as flooding. This is because women have fewer opportunities to learn life skills such as swimming and tree climbing which are required in the event of severe flooding. Climate change affects the youth in diverse ways without any notable variations. During extreme weather events, youth experience unemployment, and some engage in substance abuse, suffer depression, and drop out of school. In addition, some of the female youth suffer from unwanted pregnancies and early marriages. In other cases, the youth engage in illegal activities such as drug addiction, robbery and join terrorist groups.
+
+A quick overview of the context in the priority sectors of water, agriculture and energy highlights the following realities:
+
+## Water
+
+Climate change is leading to a reduction in water resources which makes the management of this critical resource more difficult, affecting energy production and agricultural systems and increasing the likelihood of conflict. Currently, clean water coverage in Kenya stands at 60 percent leaving approximately 40 percent of Kenyans without access to clean and safe drinking water. In times of water scarcity, such as during droughts, it is women and girls who must travel long distances in search of water, with the result that they have less time for other activities including critical ones such as education and/or paid work. Prolonged drought leads to migration by pastoralist communities in search of pasture and water. They sometimes establish new settlements near other communities dependent on the same water source, which often lead to tensions and violent conflicts with unemployed youth becoming involved in different types of violent behavior, including livestock raiding. Additionally, because of strained livelihoods, intra-household relationships are strained, leading to tensions and gender-based violence (GBV).
+
+
+---
+*Chunk pages 212–212*
+*Token usage:* input=859 (sys=94, user=765), max_out=1024, ctx=8192
+---
+
+# Agriculture: Gender norms that dictate roles in agricultural underpin the disparities that men and women face in production systems
+
+Women have less access to the means of production including land, finance, inputs, modern technologies, extension services, and marketing facilities while also having less say in decision making. Land title deeds are an important form of collateral for accessing agricultural credit, and hence the low rates of women’s ownership of land in Kenya hampers their ability to obtain loans from financial institutions. These barriers will further constrain women’s ability to adapt to climate change, with the result of an increased gender gap in agriculture coupled with more threats to families’ food security. More needs to be done to ensure women’s ownership of factors of production with land being key.
+
+# Energy: In Kenya, the energy sector plays an important role as the infrastructure enabler for sustained economic growth, development, and poverty
+
+Access to modern energy is an enabler for women’s empowerment as it plays a key role in meeting practical gender needs of women such as cooking, food processing and water hauling as well as strategic gender needs like street lighting for safety and power for enterprise development. While access to energy services would not necessarily guarantee gender equality, it increases efficiencies around household tasks such as cooking and allows time for education and other productive activities. Across all sectors, the impacts of climate change are often compounded for older women, women with a disability or for those with responsibility for other disabled or sick family members. Indigenous minorities lacking in influence and access to decision-making are highly likely to face barriers to accessing solutions.
+
+# Key barriers to integrating gender considerations into climate compatible development include existing gender inequalities, patriarchal culture, and asymmetrical power structures
+
+These need to be reflected in strategies and interventions. It is important to also underline that gender is not just about women and that a narrow focus on women in climate change adaptation results in narrow interpretation of complex contexts and this leads to shortsighted policies and interventions.
+
+# Policy, Legal and Institutional Framework
+
+The Government of Kenya has recognized the need for equal and full participation of women and men at all levels of national development. The Government is committed to empowering women, reducing gender inequality, and eliminating all forms of discrimination. The Vision 2030 highlights progress made on gender equality and the commitments for ensuring compliance with international and regional obligations on gender equality and women’s empowerment. The National Gender Policy 2011 and the Strategic Plan of the National Gender and Equality Commission (2019-2024) were designed to provide a framework for improving gender equality. Policies such as the Article 27 (8) of the 2010 constitution of the Republic of Kenya requires progressive realisation of the enforcement of the two-thirds gender rule and requires this to be implemented during general elections. In addition, Article 27 (6) provides for strong affirmative action, aimed at ensuring full realisation of gender equality.
+
+The Government of Kenya has responded to the challenge of climate change by enacting and assenting to various policy, legislation, and strategies at the national and international levels. The link between gender and climate was first recognized at the global level in 2001 with the United Nations Framework Convention on Climate Change (UNFCCC) formally addressing representation and participation of women. At continental level, the African Union (AU) is
+
+[Page 1]
+
+
+---
+*Chunk pages 213–213*
+*Token usage:* input=872 (sys=94, user=778), max_out=1024, ctx=8192
+---
+
+# [Page 1]
+
+committed to addressing climate change issues with a gender perspective. Kenya has sought to operationalize AU commitments by integrating a gendered lens in their respective climate change policies, strategies and action plans as well as green growth and low carbon strategies.
+
+Kenya’s Climate Change Act of 2016 establishes institutions at national, sectoral and subnational levels to address climate change challenges. These include the National Climate Change Council, the Climate Change Directorate and the Climate Change Fund. Kenya has had a gender policy since the year 2000. It provides a framework for stakeholders to address the gender inequalities in a cross-cutting manner. The State Department for Gender in the Ministry of Public Service, Youth and Gender Affairs develops relevant policies and coordinates the mainstreaming of gender and women’s empowerment in government departments and agencies at national and subnational levels. Additionally, the National Gender and Equality Commission (NGEC) coordinates, audits, monitors, facilitates and advises both state and non-state actors on gender equality and freedom from discrimination. NGEC hosts the secretariat of the African Working Group on Gender and Climate Change. The sectoral institutions include the Climate Change Units and Gender Focal Points in all Ministries, Departments and Agencies.
+
+Kenya has done well to ensure robust climate change policies and legislative frameworks; however, gender disparities persist largely due to the slow implementation processes. This can be attributed to gaps in the laws, delayed enactment of gender-related legislation, ignorance of existing legislations, gaps in some of the policies and laws, inadequate accountability by citizens and duty bearers.
+
+## The Rationale for Gender Activities in BREFOL Kenya Project
+
+The project will cover the six counties that were part of DRSLP-1 and Garissa county. The Gender Report stemming out of DRSLP-1 indicates that means of productions remain dominated by men in all six counties covered in the first phase, a situation dictated by patriarchal traditions. Labour, land and equipment, were controlled by adult and elderly males. The latter also determined how resources were allocated and used at household and communal levels.
+
+The communities are traditionally pastoralist with livestock being the main source of livelihood. Livestock production activities (herding, watering, securing livestock, treatment, slaughtering, and sale) were dominated by men. In Samburu and Marsabit counties did women and girls participate in herding. The seasonal migration of men in search of pasture and water for livestock activities and to attend market days meant their reduced availability for farming activities during these periods. Women had full control in milking and selling milk as well as in chicken rearing, sale of eggs and sale of chicken. Key challenges to livestock production as a livelihood were: lack of water; diseases; low levels of value addition; decreasing pasture space; insecurity; limited access to credit; infiltration of livestock trade by brokers; and price fluctuations. In Samburu, a man could assign some livestock to his wives to sustain their households. However, the wives had no authority to dispose of the stock and must consult their husbands before doing so. In Baringo County, there were cases of single women and widows owning dairy cattle and married women owning goats and sheep but the latter needed to consult their husbands if they wished to dispose of the livestock. Although ownership and control of livestock mainly lay with men, all family members benefited from and accessed livestock products. However, income from livestock was under men’s management.
+
+---
+
+
+---
+*Chunk pages 214–214*
+*Token usage:* input=853 (sys=94, user=759), max_out=1024, ctx=8192
+---
+
+# [Page 1]
+
+Though crop farming is new to these communities, it is now the second main source of livelihoods.  
+Communities do not have the capacity yet to adopt advanced crop farming technologies. In crop  
+farming, land preparation is dominated by men while the sorting of the produce is exclusively done  
+by women. Planting, weeding, harvesting, storage and transport of produce to the market was done  
+by both men and women and the distribution of labour varied by county and by crop. There was a  
+shared control on crops and related income but women largely controlled benefits related to  
+subsistence farming activities. In crop farming, key challenges were lack of water, poor access to  
+extension services, and low levels of value addition.  
+
+Women bore the burden of reproductive activities (fetching water, cooking, fetching firewood,  
+cleaning houses, laundry; and care for children, sick and elderly). These activities were conducted  
+daily and manually. Most of these activities were done in the domestic sphere and, as a result,  
+limited women’s exposure. Men, on the other hand, were in charge of activities viewed as  
+technical.  
+
+A majority of respondents (85%) across the six counties reported being married. Household data  
+confirmed that polygamy was common and in Samburu County practiced almost as much as  
+monogamy. In all six counties, the man was the head of the household and the main decision maker  
+on family assets and community matters. The wife was the daily manager of food and other family  
+resources. In the absence of the man, the first son took over decision making if he had attained  
+maturity age. In the case of polygamous relationships, the first wife shared responsibilities with  
+her co-wives and alternated in herding, child care and other duties. Her first son was the senior son  
+regardless of his chronological age relative to sons of other wives.  
+
+In all six counties, there was male dominance in community management activities such as  
+gathering intelligence about community security and welfare; dispute resolution (land, domestic  
+feuds, resources, theft etc); disciplining young men; carrying out religious activities and  
+ceremonies, organising initiation ceremonies; and blessing warriors. Contemporary leadership was  
+male-dominated and allowed women representation solely to abide by the constitutional gender  
+rule. Only in Samburu and Marsabit counties were things different with female chiefs who were  
+given respect due to their positions.  
+
+Rites of passage such as circumcision for boys and female genital mutilation (FGM) for girls were  
+still practiced in some counties. Circumcision across the other counties was carried out during  
+periodic ceremonies associated with good harvests. FGM continues to have disastrous effect on  
+girls’ and women’s health. Early marriage was responsible for the high dropout for girls in most  
+of the communities.  
+
+The issue of land ownership and acquisition remains key to any intervention aimed at building  
+resilience. Study findings indicated that individual ownership of land across the six counties was  
+common, exception in Samburu County where land was owned through group ranches. Where  
+land titling was available, men are the ones registered as land owners. Though land was accessed  
+and used by all the community members, women were unable to use such land as collateral for  
+development loan. Pasture could be accessed by all but control was exercised by men in the  
+community. Similar for water resources which could be accessed by everyone in the community,
+
+
+---
+*Chunk pages 215–215*
+*Token usage:* input=784 (sys=94, user=690), max_out=1024, ctx=8192
+---
+
+# [Page 1]
+
+but Water Resources Users Associations (WRUAs) were dominated by men. The considerable workload of women in both productive and reproductive activities restricted their availability to participate and conduct WRUA activities.
+
+Female-headed households faced more constraints than male-headed households. Such constraints included: lack of traditional physical protection provided by men; higher levels of poverty; lower incomes due to reliance on one breadwinner; inadequate resources due to patriarchal ownership and inheritance patterns; and high workload. Fewer children from such households went to school and quite a number became labourers to earn a livelihood for the family. One advantage of female-headed households was cited as more economical use of resources.
+
+Various institutions operate in the counties covered by the DRSLP. They include co-operative societies, government institutions, NGOs, faith-based organisations, and community-based organisations and self-help groups. Information from the cooperatives indicated low levels of attention to gender differentials. This was largely because they were voluntary organisations by nature and furthered the interests of their members without necessarily encouraging any particular sex to join. Membership is dictated by the ability to fulfil membership conditions such as payment of registration fees, regular contribution of shares, involvement in a specific productive activity, production capacity and ability to repay loans. Other information indicated that women were constrained by lack of capital and ignorance regarding sources of credit due to lower levels of education and exposure.
+
+## Recommendations
+
+10) DSRLP project activities that depend on men's inputs need to be synchronised with seasons when they are not migrating. In parallel, the capacity of women to engage in activities dominated by men should be built.
+
+11) Deliberate strategies should be developed to include women in all committees related to the project, including community management activities on decision making, conflict management and land management. Strong reference should be made to the constitutional edict on inclusion through the two-thirds gender rule. Traditional and contemporary leaders should be mobilised to facilitate such dialogues and lead the desired changes. Where necessary, the project should rely on separate spaces for women to ensure that women articulate their views on community management issues.
+
+12) Livestock investment should be spent on value chains benefitting both men and women equitably. Key challenges should be addressed, including: water, pasture, insecurity, diseases and marketing. For water, adequacy during the dry season and accessibility through shorter distance travelled should be tackled as priorities.
+
+13) With the growing interest in crop farming as an alternative livelihood, the project should support simple crop production technologies that would enhance food production and security. More complex technologies should be introduced at a later stage when acceptance and capacity of beneficiaries have been secured. Crop farming activities have shown great potential in the gender balancing of responsibilities.
+
+14) Invest in value chains that benefit women. Poultry rearing is the domain of women. Commercial poultry rearing should be prioritized as an income generating activity for women with safeguards in place to ensure that the trade is not hijacked by men once it
+
+
+---
+*Chunk pages 216–216*
+*Token usage:* input=524 (sys=94, user=430), max_out=1024, ctx=8192
+---
+
+# 15) Move away from the assumption that heads of households are men
+
+With polygamy commonly practiced, assuming so would be counter-productive and omit women who are de facto heads of their individual households. This would also ensure that households headed by widows and single mothers are reached.
+
+# 16) Support advocacy work to recognise girls’ and women’s right to inherit family property and the succession rights of widows
+
+# 17) Run awareness campaigns on the elimination of FGM, early marriages, discriminatory dietary practices that negatively impact the development of girls and initiation practices that negatively impact boys’ education
+
+# 18) Maximise the use of all structures created under the project as entry points for advocating gender equality and mobilising the community for gender training
+
+For instance, using a facility for the distribution of educational and behaviour change materials on gender; to campaign against domestic violence and girls’ education; and to dialogue and promote women’s and girls’ rights.
+
+# 19) The WRUAs should adhere to the two-thirds gender rule in their leadership and include women in positions of authority, not just as treasurers
+
+Ideally, equal representation of men and women is preferred to ensure that both perspectives are considered, including the inputs of women when setting user fees. Ensure the WRUAs are not dominated by men by discontinuing the practice of registering men as the household heads and instead registering the adult that manages water within the household.
+
+# 20) Train field staff on gender mainstreaming in the project cycle
+
+In addition, farmers and elders need to receive targeted training on gender issues, the roles they play in preserving the status quo, on how to create change as well as on the key constitutional and legal provisions on gender equality.
+
+
+---
+*Chunk pages 217–217*
+*Token usage:* input=883 (sys=94, user=789), max_out=1024, ctx=8192
+---
+
+# 40
+
+## BREFOL KENYA GENDER ACTION PLAN / GENDER ACTIVITIES FOR IMPLEMENTATION IN KENYA
+
+### PROJECT TITLE
+Building Climate Resilience for Food and Livelihoods in the Horn of Africa (BREFOL)
+
+### OBJECTIVE
+To contribute to the improvement of living conditions and food and nutrition security in the Horn of Africa
+
+### CATEGORY
+(GMS) GMS II  
+
+### COMPONENT ACTIVITIES BUDGET IN USD
+
+| Target | Indicator | Responsible (S) | Timeline |
+|--------|-----------|---------------|----------|
+| Component 1: Strengthening Pastoral and Agropastoral Production Systems' Resilience to Climate Change |  |  |  |
+| Ensure a minimum of 1/3 representation from each gender in all committees (community land management, conservation, etc.) and community consultations |  |  |  |
+| Project (100,000) | 30% women, 50% young people. (no tbc @ baseline study). # of women # of young people who were consulted | PIU/MoALF&C | Year 1 |
+| Leadership training for women including public speaking training to boost participation in Climate Change Adaptation Plans and other processes | 10,000 | 70% of women beneficiaries of the project | # of women trained in leadership and speaking (no tbc @ baseline study) | PIU/MoALF&C |
+| Year 1-2 | Facilitation of gender transformative forums for men and women - Gender Action Learning Systems (GALS) Approach and Methodology targeting women/men/traditional leaders (5 per county) across targeted counties (these trainings to be facilitated by GALS champions trained by IGAD) | 50,000 | 35 local leaders in all 7 counties trained in GALs | # of local leaders trained per county, of which women | IGAD |
+| Year 2-4 | Documentation of best practices on Gender responsive Land Use (part of Gender expert TORs) | 1 best practice on gender responsive land use produced | Existence of documentation (video or print medium) | IGAD/Ministry of Public Service and Gender/NGEC |
+| Year 3-5 | Component 2: Supporting the Development of Agribusinesses |  |  |
+| Support Agri-business Officers in providing training on business development, financial inclusion and digital literacy (+ functional literacy for women) | 10,000 | Training of trainer(s) (14) or refresher on climate-smart business development, financial inclusion & digital literacy | 30% trainees are women | 14 Ministry of Agriculture officers trained to be trainers or refreshed in agribusiness | PIU/MoALF&C/Gender Officer |
+| Year 2 | Policy dialogues on land access (leasing and ownership for sustainability after the project; strengthening local districts' gender integration) | 20,000 | 1 county level # of policy dialogues held | PIU/MoALF&C/Gender Officer + Years 2-4 |
+
+--- 
+
+*Note: Page numbers are preserved as per instructions.*
+
+
+---
+*Chunk pages 218–218*
+*Token usage:* input=874 (sys=94, user=780), max_out=1024, ctx=8192
+---
+
+# 41
+
+## Unit and Negotiating/Lobbying Traditional Leaders Depending on Context
+
+### Policy Dialogue
+
+- **State Department of Gender**
+- **NGEC**
+
+### Study to Improve Gender Responsiveness of Poultry and Dairy Value Chains where Women are Heavily Involved (e.g., mechanization; information; negotiation skills; business plan; how to commercialize)
+
+#### 10,000
+
+- **1 study on improvement of gender responsiveness of value chains**
+- Existence of a study on gender responsiveness of value chains
+- **PIU/MoALF&C/Gender Officer + State Department of Gender**
+
+#### Years 2-3
+
+- Partnerships with agronomy, engineers, business schools to implement best practices.
+- **10,000**
+- At least 3 partnerships established
+- No. of functional partnerships
+
+#### PIU/MoALF&C/Gender Officer
+
+- Min of Education Years 2-6
+- Eligibility criteria for agri-business start-ups acknowledge differences in young men and women’s profiles
+- Project Budget done by the PMU
+
+#### Inclusive eligibility criteria developed and applied
+
+- Existence of inclusive criteria;
+- No. of youth and women owned businesses benefiting
+
+#### PIU/MoALF&C/Gender Officer + NGEC
+
+#### Years 2-3
+
+### Component 3: Strengthening Agropastoral Communities’ Capacity to Adapt to Climate Change
+
+#### ToT for climate-smart agriculture practices and nutrition by/for women (30 participants)
+
+##### 10,000
+
+- 30 trainees trained
+- # of women and men trained
+
+#### PIU/MoALF&C/Gender Officer
+
+#### Year 2
+
+- Climate-smart agriculture training to women groups of farmers throughout the project
+- Project done by the national gender expert
+
+#### 30 % women among the beneficiaries of the project (# tbc @ baseline)
+
+#### # of women groups trained
+
+#### PIU/MoALF&C/Gender Officer
+
+#### Year 2-3
+
+### Capacity building of beneficiaries on local natural resource management and sensitization on GBV
+
+##### 40,000
+
+- 4 Community user committees (land, water, forest) per target county
+- # of persons (M/F) and stakeholders trained
+
+#### PIU/MoALF&C/MoI
+
+#### Year 2-4
+
+### Component 4: Project Coordination and Management
+
+#### Gender Expert in PIU for an effective and efficient coordination of the GAP and gender mainstreaming in the project
+
+##### 420,000
+
+- 1 gender expert (local)
+- 1 gender expert recruited and working PIU/MoALF
+
+#### 6 Months
+
+- Gender-sensitive procurement plan
+- Project done by the national gender expert
+- Project guidelines on gender sensitive procurement
+- Existence and application of gender sensitive project procurement guidelines and
+
+#### Gender Expert/PIU/MoALF
+
+#### Year 1
+
+
+---
+*Chunk pages 219–219*
+*Token usage:* input=833 (sys=94, user=739), max_out=1024, ctx=8192
+---
+
+# [Page 1]
+
+## 42
+
+Capacity building of staff and beneficiaries on gender mainstreaming and cross-cutting issues  
+10,000  
+100% of PIU  
+70% of beneficiaries  
+
+| # of PIU | staff, No. of beneficiaries’ capacities built | PIU/ MoALF&C | Year 1-2 |
+|----------|-----------------------------------------------|--------------|----------|
+| Gender assessment of the project to obtain baseline data and inform project implementation | 50,000 | 1 assessment | Gender Assessment report; Updated GAP |
+| PIU/Gender Expert/MoALF | 6 months after inception | Capacity building on Gender mainstreaming of key stakeholders including on GBV/SEAH prevention | 20,000 |
+| At least 1 training every quarter | # of stakeholder trained | Contractor/Gender Expert/PIU/MoALF | Year 2-6 |
+| Learning and sharing good practices and lessons among the countries/in the continent/internationally | 10,000 | 2 virtual exchange workshops on gender communication | # of exchange workshops |
+| Gender Expert/Communications Lead/PIU/MoALF | Years 3 and 6 | Total | 770,000 |
+
+---
+
+## SOMALIA
+
+### I. Introduction
+
+The project is assigned a Category II on the Bank’s Gender Marker System as the project will improve women’s economic empowerment through specific targeting within the project activities. Interventions to address GBV will also ensure that prevention measures are in place to support community women from any risk associated with project activities. Indicators related to the outputs are sex-disaggregated or gender-relevant.
+
+### II. Gender Analysis
+
+According to the 2019 country gender profile for Somalia by AfDB and UN Women, the Federal Government of Somalia has made commitments and efforts in realizing gender rights and inclusion as well as empowerment of women through participation in decision making highlighting the roles for peace building and rebuilding of Somalia.
+
+Information gathered from previous key informant interviews with gender and human rights advisor, office of the president in the FGS and reported in literature indicates that: three key country frameworks have been drafted that provide strong platforms for promoting gender equality and development, with support from international partners. At the state level, the Provisional Constitution (2012) has included important new gender provisions and an 'ambitious' articulation and protection of citizen rights. Notably, in 2013, a Draft Constitution Technical Review Committee was established, with two lawyers, including one woman. Meanwhile, the international community’s Compact for Somalia under the ‘New Deal Framework’ (2013) and the New Partnership for Somalia (NPS) have mainstreamed and prioritized gender commitments, with a specific focus on addressing gender disparities across sectors. Finally, the National Development Plan (NDP) (2017 -2019) articulated a national framework for country development, with a notable alignment to the Sustainable Development Goals (SDGs) and goals to promote gender equality, in particular SDG 5: Gender Equality as a ‘platform for all other sustainable development goals.’
+
+
+---
+*Chunk pages 220–220*
+*Token usage:* input=872 (sys=94, user=778), max_out=1024, ctx=8192
+---
+
+# 43
+
+Additionally, government ministries and focal points in gender have also been established and appointed respectively, for example, the Ministry for Women and Human Rights Development (MWHRD) was established to better support gender and rights development in Somalia. Based on this institutional and policy frameworks and leadership from the focal points, ministries have now developed (or are developing) their own gender policies and gender budgeting guidelines. The development of relevant monitoring framework s and the tracking of gender budgeting across ministries remain key outstanding areas of action for the MWHRD .
+
+## National Gender Policies
+
+The draft National Gender Policy of 2015 provides an overall assessment and guidance on gender sensitive and inclusive programming in the areas of economic empowerment, education, health, governance and political participation with various cited 'indicators', or gender achievements outlined to facilitate the monitoring and evaluation of this policy (MWHRD, 2015). As key national reference and guidance platforms for the promotion of gender equality and inclusion, National Gender Policies (NGPs) have been formulated in each of the three regions (Somaliland, Puntland, and Somalia), most recently at FGS level. These have been well received by civil society and women's groups.
+
+Unfortunately, apart from the support of gender activists, public impacts of these g ender policies are limited, with little knowledge or awareness of their existence among many social groups. The implications of such limited public awareness and involvement by the FGS, is that gender rights and equality have thus remained critical issues in the uncertain context of Somalia, with low human development indicators, instability, and climate change.
+
+## Gender Gaps in Somalia
+
+The Federal Government of Somalia (FGS) is committed to advance gender equality and women's empowerment. The Provisional Federal Constitution stresses women's equality with men and emphasizes women's effective participation in all spheres of life, including public offices and in decision-making. In 2016, the FGS adopted a National Gender Policy with the aim to further gender mainstreaming in its peace and state-building processes.
+
+Women in Somalia experience higher unemployment rates than men: 74% for women and 61% for men. Despite the Somali private sector being dominated by micro, small and medium enterprises of which women are the main drivers, women have limited access to credit, technology, and information. Access to services such as health care and education, by women and girls is disproportionately low. Somalia's maternal mortality rate is the highest in the world, at 1,600 per 100,000 live births. Literacy levels are low; only 26% of women can read and write compared to 36% for men. 
+
+Somalia remains one of the most unequal countries with the Gender Index standing at 0.776 (1 – complete inequality) placing Somalia at the fourth-highest position globally. Climate Change has exacerbated gender inequality in Somalia, with women and children affected more by climate change effects due to lack of access and control of critical resources, biased labour division and absence from decision making processes from household to the National level. On the other hand, women and youth can act as agents of change and play a key role in supporting the transition towards low emissions and climate resilient development in Somalia. There are critical gender issues across sectors and hence the promotion of gender equality is critical for effective climate adaptation and mitigation in Somalia.
+
+## Barriers to Achievement of Women's Empowerment and Gender Equality in Somalia
+
+
+---
+*Chunk pages 221–221*
+*Token usage:* input=873 (sys=94, user=779), max_out=1024, ctx=8192
+---
+
+# 44
+
+The Somali culture is considered socially conservative for women, with women's lives historically restricted to the private sphere, leading to their constrained role in decision-making, and limited access to assets and productive resources in their communities. Yet, women have contributed significantly to peace building efforts in recent years, forging new public roles. New trends are also now visible in the political, social, and economic domains.
+
+Women are 'absent in leadership', particularly in Somaliland, and a gap does exist in 'mentors and role models' in (formal) institutions and in society that discourages women to participate in public leadership spheres. In all regions, National Gender Policies have not been publicly discussed or disseminated. With limited government capacities and allocated budgets, there is also a lack of practical action in working towards gender targets with low public awareness and support available for women (and minority groups) as there are few national campaigns and limited government outreach.
+
+Social cultural gender norms, traditions and religious interpretation are still highlighted as the major barriers in working towards gender equality and rights development. Particularly, religious, and traditional clan leaders may challenge the smooth implementation of gender laws and policies in fostering conservative narratives. Furthermore, parliament and decision-making institutions within the FGS remain male-dominated with gender/women's oversight in progressive laws and policies.
+
+Violence against women and girls cuts across all aspects of women's lives and remains deeply rooted in the local culture and traditions according to a report by UNDP 2014. In the transition from a predominantly nomadic and pastoralist society, traditional structures and customary laws have been strained, with varying effects on women and girls. Gender relations and roles have evolved and shifted, particularly with war and displacement over the past three decades resulting in women's increasing household responsibilities as family breadwinners, and large numbers of female-headed households living as IDPs (with men killed in conflict, absent, or working as migrants). As highlighted by a Rift Valley Institute discussion forum, while Somali women have often suffered disproportionately from the civil war and gender-based violence, the conflict has also ushered in new opportunities for them to assert themselves socially and politically.
+
+## Traditional Gender Roles and Responsibilities in Somalia
+
+Somali society is strongly patriarchal, with clearly delineated roles and responsibilities of men, women, boys, and girls. The traditional gender roles and responsibilities of Somali men, women, girls, and boys highlight the impact of war and poverty (particularly because of increasing rural livelihood pressures). Men are traditionally the protectors of family security, primary breadwinners, and the central decision makers in both public and private settings. Men also control household expenditures, and their place is outside the home.
+
+On the other side, women are homemakers and are responsible for bearing and raising children, food production and all domestic tasks. Women face land pressures – land alienation, degraded resources, and vulnerability to drought. Conditions are even worse for women and girls from female headed households who experience heightened challenges due to limited or no access to productive resources and assets compared to women in male headed households (Muse and Gardner, 2013). The bias manifests itself in terms of family investment in girls' skills (e.g., education), with a preference for boys to be educated; and women's low access to formal employment, with positions and status reserved for men (EU, 2013).
+
+
+---
+*Chunk pages 222–222*
+*Token usage:* input=928 (sys=94, user=834), max_out=1024, ctx=8192
+---
+
+# III. Project Intervention Regions and Constraints resulting from Gender Relations in Agro Pastoral Communities
+
+The project will be implemented in priority locations in six Regional States in Somalia: Somaliland, Puntland, Galmudug, Hirshabelle, Southwest, and Jubbaland. The selection of intervention locations was based on the following principles:
+
+1. Focusing on a gro-pastoral investments  
+2. Promoting community-managed infrastructures  
+3. Prioritizing cross border clusters  
+4. Continuity of intervention districts to facilitate project implementation and supervision  
+5. Ensuring synergies with ongoing interventions in each Region and alignment with the HOAI economic corridors and IGAD Cluster Approach  
+6. Alignment with country policies and strategies  
+7. Building on the progress made with DRSLP II implementation and leveraging lessons learnt  
+
+The project is targeting a total of 500,000 people out of which 50% of the beneficiaries should be women from male headed and female headed households.
+
+Gender relations among agro pastoral communities are varied. Review of gender relevant literature for Somalia and consultation with the relevant implementing Ministry of Livestock, Forestry and Range highlights the important role played by women as small-scale business owners in agro pastoral communities and in livelihood diversification as a strategy to cope with ongoing climate change risks and shocks.
+
+While men migrate with livestock in search of scarce resources and others leave for the bigger cities in search of paid employment, women are left home to attend to the families and households, ensure that their household are food and nutrition secure and generate income for varied household needs. It is therefore inevitable for women not to engage in diversified income earning activities to support their families.
+
+With these multiple roles at hand, women and girls are constrained by high labour intensity burdens on their activity time budgets resulting in time poverty constraints, childcare barrier due to the amount of time spent raising babies and small children, harmful social cultural practices like gender-based violence, female genital mutilation, and early marriages. In addition, women are also faced with bigger challenges hindering their participation in the economic sphere due to limited or no access to and control over productive resources like financial services, land, information on entrepreneurial activities, climate smart resilient agricultural practices and technology to cope with the recurring climate change risks due to drought.
+
+# IV. Program’s Contribution to Gender Equality
+
+The Program is categorized GEN II according to the Bank’s Gender Marker System where the gender assessment has identified four key entry points to enhance livelihood diversification thereby resulting in socio-economic benefits for women (in male and female headed households) and youth through:
+
+1. Design and implementation of gender sensitive infrastructure and services for example installation of boreholes and use of solar systems and biodigesters to reduce labour intensity burden on women, child care barrier and time poverty constraints  
+2. Development of agribusiness value chains as strategies for livelihood diversification targeting both women and youth and access to productive resources like financial services, entrepreneurship training, markets and market linkages and climate smart agricultural practices through their cooperatives and groups  
+3. Transformation of socio cultural gender norms through GALS Approach and Methodology to support woman’s role in decision making and leadership in their agro pastoral communities  
+4. Recruitment of a Gender Expert in the PIU to ensure gender mainstreaming of the GAP activities along the program components and strengthening the capacity of key stakeholders in the implementing FGS ministries to address the gender issues during the project implementation, monitoring and evaluation periods. Additionally, the gender expert will also build the capacity of PIU and regional implementing staff and focal points on
+
+[Page 222]
+
+
+---
+*Error processing pages 223–223: *
+---
+
+
+
+---
+*Chunk pages 224–224*
+*Token usage:* input=636 (sys=94, user=542), max_out=1024, ctx=8192
+---
+
+# 47
+
+- Women have low literacy levels and therefore could face challenges in understanding livestock and crop production technologies in agro pastoral value chains. The project should support simplified and packaged crop production technologies and extension service training manuals and modules targeting low literacy levels of women to enhance food production and nutrition. Such modules and technology manuals should be packaged in the local languages to meet the needs of women. Training should be conducted near villages and homesteads where women are comfortable to avoid the fear of traveling for long distances away from their homesteads based on socio cultural gender norms which limit women's mobility to faraway places without permission from the male heads of households and due to their heavy workload. Training periods of time and dates of training should be agreed upon based on consultations between women and education extension service providers.
+
+- Based on intrahousehold control of specific value chains by men and control of income from such value chains due to social cultural gender norms based on patrilineal systems in the agro pastoral communities, it is advisable to invest in value chains targeting women to make sure that women can earn income from value chains that have no value to men based on gender norms and traditions. Such value chains include poultry, goat and sheep fattening commonly termed as small stock value chains. Studies have shown that when a certain value chain becomes profitable, there is the possibility of control by men. Therefore, the project implementers at the community level should put in place safeguards to ensure that markets, and market prices and products from women only value chains are not taken over by men. Such safeguards can include women organising into cooperatives for poultry, sheep and goat keeping and marketing their products as a group and thereafter sharing the income. Processing plants for produce from women only value chains are more secure from male dominance if they are operated as women only cooperatives for economic empowerment of women.
+
+- There could be gender biased implementation of project components by field staff if they are not trained on gender mainstreaming into the project cycle activities. The gender expert in the PIU should build the capacity of field staff and gender focal points at the local level so that gender is mainstreamed into the project activities to achieve empowerment for women and girls and to reduce or eliminate the challenges identified in agro pastoral communities in relation to food, health and nutrition insecurity.
+
+
+---
+*Chunk pages 225–225*
+*Token usage:* input=801 (sys=94, user=707), max_out=1024, ctx=8192
+---
+
+# 48  
+GENDER ACTION PLAN (SPECIFIC ACTIVITIES) FOR SOMALIA  
+
+## PROJECT TITLE  
+Building Climate Resilience for Food and Livelihoods in the Horn of Africa (BREFOL)  
+
+## OBJECTIVE  
+To contribute to the improvement of living conditions and food and nutrition security in the Horn of Africa  
+
+## CATEGORY  
+(GMS) GMS II  
+
+## COMPONENT ACTIVITIES BUDGET IN USD  
+
+### Component 1: Strengthening Pastoral and Agropastoral Production Systems’ Resilience to Climate Change  
+
+#### Community consultations including women/men groups during design and site identification for infrastructure development  
+- Project done by the national gender expert  
+- Target: 30% women, 50% young people (no tbc @ baseline study)  
+- # of women  
+- # of young people who were consulted  
+
+#### Participation of youth and women groups in the sustainable land management practices in agro pastoral lands’ (reseeding programs, at least 30% women participation in water committees and in leadership positions)  
+- 10,000  
+- 70% of women beneficiaries of the project  
+- # of women trained in leadership and speaking  
+
+#### Year 1–2  
+
+### Component 2: Supporting the Development of Agribusinesses  
+
+#### Livelihood diversification strategies for women and youth using alternative energy systems – solar systems and biodigesters to reduce labour intensity burden  
+- 10,000  
+- Training of trainer(s) (14) or refresher on climate-smart business development, financial inclusion & digital literacy  
+- 30% trainees are women  
+- 14 Ministry of Agriculture officers trained to be trainers or refreshed in agribusiness  
+
+#### Year 2  
+
+#### Packaging of training modules (on business development services, digital and financial literacy) in Somali language to meet the low literacy levels of women in male and female-headed households  
+- 20,000  
+- 1 county level policy dialogue  
+- # of policy dialogues held  
+
+#### Year 2–4  
+
+### Component 3: Support enabling environment and TA to accelerate women’s access to finance  
+
+#### Identifying local savings and credit organizations among the community members (women and youth groups) and linking them to MFIs  
+- 20,000  
+- 1 study on improvement of gender responsiveness of value chains  
+- Existence of a study on gender responsiveness of value chains  
+
+#### Year 2–3  
+
+---  
+*Page 225*
+
+
+---
+*Chunk pages 226–226*
+*Token usage:* input=931 (sys=94, user=837), max_out=1024, ctx=8192
+---
+
+# Component 3: Strengthening Agropastoral Communities’ Capacity to Adapt to Climate Change
+
+## Training to target women group farmers and women cooperatives on climate-smart agriculture and nutrition
+
+- **10,000** trainees trained
+- **30** trainees trained
+- **# of women and men trained**
+- PIU/Ministry/Gender Officer
+- Year 2
+
+## Capacity building on CSA practices and agricultural value chains that can withstand adverse climate change risks with special seed varieties (maize, millet and sorghum): fodder and food to women
+
+- **Project (40,000)** 
+- **30%** women among the beneficiaries of the project (#tbc @ baseline)
+- **# of women groups trained**
+- PIU/Ministry/Gender Officer
+- Year 2-3
+
+## Network of climate vulnerability assessors equipped with early-warning systems with simplified manuals to target women in male and female headed households with low literacy levels
+
+- **40,000**
+- **4** community user committees (land, water, forest) per target county
+- **# of persons (M/F) and stakeholders trained**
+- PIU/Ministry/Gender Officer
+- Year 2-4
+
+## Facilitation of gender transformative forums for men and women: Sub-national Gender Action Learning Systems (GALS) Approach and methodology targeting women/men/traditional leaders across all the target locations (these trainings to be facilitated by GALS champions trained by IGA D)
+
+- **50,000**
+- **35** local leaders in all 7 counties trained in GALS
+- **# of local leaders trained per county, of which women**
+- PIU/Ministry/Gender Officer/IGAD
+- Year 2-4
+
+# Component 4: Project Coordination and Management
+
+## Gender assessment of the project to obtain baseline data and inform project implementation
+
+- **50,000**
+- **1** assessment
+- **Gender Assessment report; Updated GAP**
+- PIU/Ministry/Gender Officer
+- 6 months after inception
+
+## Gender Expert in PIU to implement and coordinate the GAP and gender mainstreaming in the project
+
+- **420,000**
+- **1** gender expert (local)
+- **1** gender expert recruited and working PIU
+- 6 months
+
+## Capacity building of staff and beneficiaries on gender mainstreaming and cross-cutting issues
+
+- **Project**
+- **100%** of PIU
+- **70%** of beneficiaries
+- **# of PIU staff, No. of beneficiaries’ capacities built**
+- PIU
+- Year 1-2
+
+## Capacity building on Gender mainstreaming of key stakeholders including on GBV/SEAH prevention
+
+- **20,000**
+- **At least 1** training every quarter
+- **# of stakeholder trained**
+- Gender Expert/PIU
+- Year 2-6
+
+
+---
+*Chunk pages 227–227*
+*Token usage:* input=201 (sys=94, user=107), max_out=1024, ctx=8192
+---
+
+# [Page 1]
+50  
+Learning and sharing good practices  
+and lessons among the countries/in  
+the continent/internationally) 10,000  
+2 virtual  
+exchange  
+workshop
+s on  
+gender  
+communic
+ation  
+# of  
+exchange  
+workshop
+s Gender  
+Expert/PIU  
+Years  
+3 and  
+6  
+Total 710,000
+
+
+---
+*Chunk pages 228–228*
+*Token usage:* input=131 (sys=94, user=37), max_out=1024, ctx=8192
+---
+
+# Page 1
+
+51
+
+```
+
+
+---
+*Chunk pages 229–229*
+*Token usage:* input=742 (sys=94, user=648), max_out=1024, ctx=8192
+---
+
+# SOUTH SUDAN
+
+## PART I: GENDER ANALYSIS/ASSESSMENT
+
+### I. Gender Analysis
+
+South Sudan is committed to supporting gender equality within its development priorities at the national and international levels, through its policies such as the National Gender Policy (NGP) (2012), South Sudan’s National Women’s Strategy 2016 and the National Development Policy.
+
+The GoSS through the Ministry of Gender, Child and Social Welfare has developed a National Gender Policy with the objective to design efficient policy frameworks and mechanisms for women economic empowerment and gender responsive agriculture ecosystem. The National Gender Policy has identified the following strategies:
+
+- Conduct research into gender dimensions of food security and the food-production sector including agriculture, livestock, fisheries, water transport and trade;
+- Institutionalize mechanisms to address key barriers that reduce women’s ability to produce and preserve sufficient food; and
+- Facilitate adequate resource allocation for small-scale agriculture and better access to water, energy transport and markets.
+
+### Agriculture
+
+Agriculture is the backbone of South Sudan’s economy. Women in South Sudan turn predominantly to agriculture as a necessity to support their families rather than as a business opportunity. Evidence shows that the agriculture sector provides livelihoods for over 80% of the population living in rural areas. However, much of the rural sector activity is currently focused on low-input and low-output subsistence agriculture, instead of farming as business and production for markets and export.
+
+The vast majority of South Sudanese, especially women and youth, are non-wage employees who depend on natural resources, particularly animal husbandry or crop farming to survive. Female-headed households are a significant proportion of the rural and urban poor and face even greater challenges in securing livelihood.
+
+According to Oxfam South Sudan gender analysis report (2016) 42, women suffer greater food insecurity due to their cultural and social roles as caregivers. This care economy/unpaid workload hinders them from involvement in productive activities.
+
+### Labour
+
+The gendered division of labour in South Sudan is particularly marked, with women having responsibilities for searching for food, firewood and clean water; cooking; domestic chores and childcare; as well being responsible for much of the agricultural activities at the household and community levels.
+
+Similar to other African countries, their productivity is lowered by unequal access to land, access to markets, productivity inputs, limited technical and business capacity, and the need to balance between business and family/societal responsibilities. This has important consequences for women’s opportunities for economic empowerment, the types and nature of employment available to them, and their vulnerability to poverty.
+
+The regions covered by the project have different gender specificities that are analyzed within the framework of the project in order to inform adequate measures and ensure equitable participation of women and men. In the Eastern Equatoria, there were more issues of displacement, challenges
+
+[Page 1]
+
+
+---
+*Chunk pages 230–230*
+*Token usage:* input=886 (sys=94, user=792), max_out=1024, ctx=8192
+---
+
+# 53
+
+of women’s land rights, cited incidences of challenges of widows and women headed households,  
+issues of refugee and returnee rights and sexual and gender-based violence.  
+
+## Land tenure: 
+
+Despite the South-Sudanese Land Act (2009) and the Constitution stating women  
+and men’s equal right to property, s ocial and customary norms, however, prioritize male land  
+ownership and inheritance. Land owned by a married couple is often registered in the name of the  
+male spouse (Deng, 2016). Evidence show significant gender imbalances in land ownership for  
+the targeted regions. According to FAO’s gender assessment, land ownership in Central Equatoria  
+is 4.8% for women (compared to 90.5% for me n), in Eastern Equatoria is 4.6% for women  
+(compared to 95.4% for men). Although women constitute 80% of the agricultural workforce,  
+ownership and management of larger scale farm tend to be male dominated. Women are under -
+represented in the commercial farming and overrepresented at the lower end of the informal market  
+system. The project’s targeted crops, maize, sorghum and sesame, demonstrate high potential for  
+women empowerment with women being more represented from planting to processing and man  
+being in charge of transportation to wholesale. These crops are also drought -resilient with high  
+production capacity in selected states. Access to and control of lands has compounded effects on  
+poverty alleviation through agricultural production, food security as well as maintaining  
+sustainable peace.  
+
+## Climate change: 
+
+South Sudanese women and vulnerable groups such as persons with disabilities  
+are also at greater climatic risks given that they are both more likely to be dependent on natural  
+resources and have less access to education, decision -making spaces, resources, information, and  
+are less likely to own land and face sharper conditions when facing climate-induced displacement.  
+In addition, women are responsible for biomass and water collection for their homes and  
+deforestation and droughts will increase their time burden and risks of gender-based violence when  
+collecting from further water and forest points. Despite this, women remain considerable  
+knowledge bearers in agriculture and natural resource management and involving them in climate-
+adaptive and climate-smart practices will be key in enhancing community resilience and mitigation  
+during climatic events. The UNFCC in fact, recognizes both climate-based gender vulnerabilities  
+and the important role of women in climate-dependent sectors and the unique strengths they bring  
+to climate change adaptation and mitigation. South Sudan designed a policy, the National  
+Adaptation Programme of Actions (NAPA) to Climate Change with gender equality and  
+eliminating food insecurity as part of guiding principles for projects.  
+
+## The project aims to respond to some of the gender issues in alignment with the GoSS’ continuous  
+efforts towards addressing gender issues and improving gender equity. The project is classified as  
+Category 2 under the Bank's Gender Marker System (GMS). The project's actions aim at fostering  
+livelihood diversification for women and youth through agro pastoral value chains including  
+support for alternative renewable energy systems (solar and biodigesters) to reduce their labour  
+intensity burden and time related  constraints through  
+
+1. accelerated access to gender -sensitive infrastructure. Community infrastructure will be designed in consultation with women and include gender-sensitive constructions  
+2. gender -responsive land management with specific leadership training for women to participate in land management committees  
+3. enhanced access to skills for agribusiness development/growth and sustainable income generation  
+4. strengthened capacity to adapt to climate change through access to climate-smart agriculture trainings, practices and tools.  
+
+[Page 1]
+
+
+---
+*Chunk pages 231–231*
+*Token usage:* input=720 (sys=94, user=626), max_out=1024, ctx=8192
+---
+
+# II. Identification of specific gender-based risks and mitigation measures to address identified gender gaps, inequalities, or discriminatory practices in the regions targeted for program implementation in South Sudan
+
+## 1. Project activities that are dominated by men for example in design of infrastructure like boreholes, roads and rehabilitation of such structures can tend to limit the participation of women due to socio norms. This will be minimized through training of women in leadership and making sure that 30% of representation in these forums are women with again equal representation in leadership positions
+
+## 2. Efforts should be made to make sure that women are not underrepresented in all forums across the project components (water committees, sustainable management of agro pastoral lands, climate smart villages with demonstration sites, access to digital technology on climate resilience practices and services etc) with at least 30% representation. Also engaging with norms will involve transforming the mindsets of both men and women and their traditional and customary leaders especially through gender transformative activities like community dialogues. In addition, we encourage the GALS Approach and methodology to be implemented in all regions covered by the project. If it is not possible, then organized tours to the region where such methodology has been implemented should be arranged for other community members to learn. In cases where norms persist and hinder women’s participation in the presence of men, then women only groups should be encouraged so that women can share their views on their needs, concerns, and interests with respect to implementation and management of the project activities so that they are not disadvantaged.
+
+## 3. Other challenges related to this project could arise due to time poverty constraints based on women’s heavy workload. Care should be taken to make sure alternative technologies like renewable energy – solar and biodigester systems are available to women to reduce their time poverty constraints imposed on them by their productive and reproductive roles. Boreholes should also be located within short distances of homesteads and villages so that women spend less time travelling to fetch water. For water, adequacy during the dry season and accessibility through shorter distance travelled should be tackled as priorities. Women should have quotas (at least 30% participation) in reseeding programs and in land rehabilitation programmes.
+
+## 4. Women have low literacy levels and therefore could face challenges in understanding livestock and crop production technologies in agro pastoral value chains. The project should support simplified and packaged crop production technologies and extension service training manuals and modules targeting low literacy levels of women to enhance food production and nutrition. Such modules and technology manuals should be packaged in the local languages to meet the needs of women. Training should be conducted near villages and homesteads where women are comfortable to avoid the fear of traveling for
+
+[Page 1]
+
+
+---
+*Chunk pages 232–232*
+*Token usage:* input=745 (sys=94, user=651), max_out=1024, ctx=8192
+---
+
+# 55
+
+long distances away from their homesteads based on socio cultural gender norms which  
+limit women’s mobility to far away places without permission from the male heads of  
+households and due to their heavy workload. Training periods of time and dates of training  
+should be agreed upon based on consultations between women and education extension  
+service providers.  
+
+## 5. Based on intrahousehold control of specific value chains by men and control of income  
+from such value chains due to social cultural gender norms based on patrilineal systems in  
+the agro pastoral communities, it is advisable to invest in women only value ch ains  
+targeting women to make sure that women have the opportunity to earn income from value  
+chains that have no value to men based on gender norms and traditions. Such vale chains  
+include poultry, goat and sheep fattening commonly termed as small stock val e chains.  
+Studies have shown that when a certain value chain becomes profitable, there is the  
+possibility of control by men. Therefore, the project implementers at the community level  
+should put in place safeguards to ensure that markets, and market prices and products from  
+women only value chains are not taken over by men. Such safeguards can include women  
+organising into cooperatives for poultry, sheep and goat keeping and marketing their  
+products as a group and thereafter sharing the income. Processing plants for produce from  
+women only value chains are more secure from male dominance if they are operated as  
+women only cooperatives for economic empowerment of women.  
+
+## 6. Women are not homogeneous, and care must be taken not to assume that the interests,  
+needs and concerns of women are the same. Such an assumption could result in biases in  
+identification and participation of women beneficiaries in the project activities. Th ere are  
+women from male headed households and female headed households and younger women.  
+Women from female headed households like widows and single mothers should be  
+involved in all project activities targeting women using a quota system of representation to  
+make sure that all groups and categories of women benefit equally from the project  
+activities through representation at all planned activities across the project components.  
+
+## 7. Harmful traditional and customary practices can result in low participation of women in  
+the project. Community mobilization to create awareness against such practices should be  
+encouraged through gender transformative action plans for example through commu nity  
+wide campaigns against female genital mutilation and early marriages, reproductive health  
+awareness and use of capacity building materials simplified and packaged to target  
+different local community groups on behaviour change and use of gender sensiti ve and  
+diversified behaviour change communication strategies to promote women and girls  
+empowerment.  
+
+## 8. There could be gender biased implementation of project components by field staff if they  
+are not trained on gender mainstreaming into the project cycle activities. The gender expert  
+in the PIU gender expert and coordinator should build the capacity of field staff and gender  
+focal points at the local level so that gender is mainstreamed into the project activities to
+
+
+---
+*Chunk pages 233–233*
+*Token usage:* input=153 (sys=94, user=59), max_out=1024, ctx=8192
+---
+
+# [Page 1]
+## 56
+
+achieve empowerment for women and close in the gender gaps identified in agro-pastoral communities.
+
+
+---
+*Chunk pages 234–234*
+*Token usage:* input=693 (sys=94, user=599), max_out=1024, ctx=8192
+---
+
+# [Page 1]
+## 57
+
+### PROJECT TITLE
+Building Climate Resilience for Food and Livelihoods in the Horn of Africa (BREFOL)
+
+### Objective
+To contribute to the improvement of living conditions and food and nutrition security in the Horn of Africa
+
+### CATEGORY (GMS)
+GMS II
+
+### COMPONENT ACTIVITIES BUDGET USD
+
+| Target | Indicator | Responsible (S) | Timeline |
+|--------|-----------|-----------------|----------|
+| Component 1: Strengthening Pastoral and Agropastoral Production Systems' Resilience to Climate Change |  |  |  |
+| Leadership training for women to increase participation and decision making in Climate Adaptation Planning | 15,000 | At least 50% of women beneficiaries of the project # of women trained in leadership and public speaking | PIU/MoA |
+| Year 1-2 |  |  |  |
+| Active participation of women (at least 30%) in community consultations in identifying lands to rehabilitate constructions in gender-sensitive manner (ie. Adequate WASH, street lighting, road safety measures etc.) | Project (to be done by national gender expert) | # in reference to baseline of Payams selected (TBC) # of women # of young people who were consulted | PIU/MoA |
+| Year 1-6 |  |  |  |
+| Constructions include gender-sensitive infrastructure (boreholes), feeder roads connecting markets, and irrigation infrastructures | Project (to be done by national gender expert) | 100% gender-sensitive infrastructure Proportion of gender-sensitive infrastructure | PIU |
+| Year 2-6 |  |  |  |
+| Training of 30 persons per targeted Payam (15 couples and traditional leaders) / twice a year on the Gender Action Learning Systems (GALS) methodology | 50,000 | # in reference to baseline of Payams selected (TBC) # of persons trained on the GALS methodology per Payam # of traditional leaders trained per Payam | PIU/MoA/IGAD |
+| Year 1-4 |  |  |  |
+| Ensure a minimum of 1/3 representation from each gender in all committees (community land management, conservation, etc.) and community consultations | Project (to be managed by the national gender expert) | # in reference to baseline of Payams # of M/F in all committees | PIU/MoA |
+| Year 1-6 |  |  |  |
+
+---
+
+
+---
+*Chunk pages 235–235*
+*Token usage:* input=602 (sys=94, user=508), max_out=1024, ctx=8192
+---
+
+# 58
+
+## Component 1: Supporting the Development of Land Access and Use
+
+### Documentation of best practices on Gender responsive land access and use
+
+- **10,000** best practice on gender responsive land use produced
+- Existence of documentation (video or print medium)
+- IGAD
+
+### Policy dialogues with traditional leaders and local government on land access
+
+- Towards development of bylaws to extend land ownership of women (towards leasing, ownership for sustainability after the project)
+- 20,000
+- Three policy dialogues held and one bylaw developed
+
+### Training of communities for social cohesion
+
+- 10,000 Biannual trainings held for social cohesion
+- #trainings held PIU
+
+## Component 2: Supporting the Development of Agribusinesses
+
+### Adapted business trainings (local language and low-literacy levels in business development, processing, cross-border trade) for female-headed households and women
+
+- 40,000 Quarterly trainings held
+- #trainings held PIU
+
+### Gender-sensitive value chain assessment
+
+- 10,000 Gender assessment report
+- PIU
+
+### Facilitating the organisation of women farmers into cooperatives and supporting formalisation to benefit from financing and linkages with MFIs
+
+- Project (to be managed by the national gender expert)
+- 30% women among the beneficiaries of the project (# tbc @ baseline)
+- # of women groups formalized
+- PIU/ MoA/MoF
+
+## Component 3: Strengthening Agropastoral Communities' Capacity to Adapt to Climate Change
+
+### Climate-smart agriculture training to women groups of farmers throughout the project
+
+- Project (to be managed by the national gender expert)
+- 70% of women among the # of women groups trained
+- PIU/ MoA
+
+Year 1-4
+
+
+---
+*Chunk pages 236–236*
+*Token usage:* input=685 (sys=94, user=591), max_out=1024, ctx=8192
+---
+
+# Project Implementation and Monitoring
+
+## Component 4: Project Coordination and Management
+
+### Gender Assessment of the Project
+- **Baseline data collection** to inform project implementation and gender action plan
+- **50,000** (1 assessment)
+- **Gender Assessment report; Updated GAP**
+- **PIU/Gender Expert/MoA**
+- **6 Months after inception**
+
+### Recruitment of Gender and Community Development Expert
+- **420,000**
+- **1 gender expert (local)**
+- **1 gender expert recruited and working**
+- **PIU/MoA**
+- **6 Months**
+
+### Capacity Building of Staff and Beneficiaries on Gender Mainstreaming
+- **10,000**
+- **100% of PIU**
+- **70% of beneficiaries**
+- **# of PIU staff, No. of beneficiaries' capacities built**
+- **PIU/ MoA**
+- **Year 1-2**
+
+### Capacity Building on Gender Mainstreaming of Key Stakeholders
+- **20,000**
+- **At least 1 training every quarter**
+- **# of stakeholder trained**
+- **Contractor/Gender Expert/PIU/MoA**
+- **Year 2-6**
+
+### Collection of Gender Disaggregated Data for Monitoring, Evaluation and Learning
+- **Communication on the project gender outcomes** (Success/impact stories, sharing good practices and lessons learned)
+- **Project**
+- **Gender disaggregated data in every IPR / Yearly**
+- **Communication on project #M/F beneficiaries in every program component**
+- **PIU**
+- **Year 1-6**
+
+## Capacity Building of Beneficiaries on Local Natural Resource Management and Sensitization on GBV/SEAH
+- **25,000**
+- **4**
+- **Community user committees** (land, water, forest) per target county
+- **# of persons (M/F) and stakeholders trained PIU/ MoA**
+- **Year 2-4**
+
+## ToT for climate-smart agriculture practices and nutrition by/for women (30 participants)
+- **10,000**
+- **30 trainees trained**
+- **# of women and men trained**
+- **PIU/ MoA**
+- **Year 2**
+
+## Capacity building on CSA practices and agricultural value chains that can withstand adverse climate change risks with special seed varieties
+- **Project (to be managed by the national gender expert)**
+- **70% of women among the beneficiaries of the project**
+- **# of women and men trained**
+- **PIU/ MoA**
+- **Year 1-4**
+
+## Project Implementation and Monitoring
+
+### Component 4: Project Coordination and Management
+
+#### Gender Assessment of the Project
+- **Baseline data collection** to inform project implementation and gender action plan
+- **50,000** (1 assessment)
+- **Gender Assessment report; Updated GAP**
+- **PIU/Gender Expert/MoA**
+- **6 Months after inception**
+
+#### Recruitment of Gender and Community Development Expert
+- **420,000**
+- **1 gender expert (local)**
+- **1 gender expert recruited and working**
+- **PIU/MoA**
+- **6 Months**
+
+#### Capacity Building of Staff and Beneficiaries on Gender Mainstreaming
+- **10,000**
+- **100% of PIU**
+- **70% of beneficiaries**
+- **# of PIU staff, No. of beneficiaries' capacities built**
+- **PIU/ MoA**
+- **Year 1-2**
+
+#### Capacity Building on Gender Mainstreaming of Key Stakeholders
+- **20,000**
+- **At least 1 training every quarter**
+- **# of stakeholder trained**
+- **Contractor/Gender Expert/PIU/MoA**
+- **Year 2-6**
+
+#### Collection of Gender Disaggregated Data for Monitoring, Evaluation and Learning
+- **Communication on the project gender outcomes** (Success/impact stories, sharing good practices and lessons learned)
+- **Project**
+- **Gender disaggregated data in every IPR / Yearly**
+- **Communication on project #M/F beneficiaries in every program component**
+- **PIU**
+- **Year 1-6**
+
+## Capacity Building of Beneficiaries on Local Natural Resource Management and Sensitization on GBV/SEAH
+- **25,000**
+- **4**
+- **Community user committees** (land, water, forest) per target county
+- **# of persons (M/F) and stakeholders trained PIU/ MoA**
+- **Year 2-4**
+
+## ToT for climate-smart agriculture practices and nutrition by/for women (30 participants)
+- **10,000**
+- **30 trainees trained
+
+
+---
+*Chunk pages 237–237*
+*Token usage:* input=151 (sys=94, user=57), max_out=1024, ctx=8192
+---
+
+#gender programme reports
+
+## Total: 690,000
+
+---
+
+[Page 1]  
+60  
+gender  
+outcomes  
+#gender  
+programme  
+reports  
+TOTAL  690,000  
+
+---
+
+This appears to be a fragment of a larger document, likely related to gender programme reports and outcomes. The text seems to indicate that the total number of reports or outcomes is 690,000. However, without more context or content from other pages, it's difficult to determine the exact structure or meaning of this section.
+
+The fragment includes:
+- A heading for "gender programme reports"
+- A total count of 690,000
+- Some text that appears to be a mix of words and numbers
+
+It's possible that this is part of a larger table or document where the full context would provide more clarity about what these numbers represent. The presence of "60" suggests there might be some numerical data or statistics involved, but without additional information, it's hard to say.
+
+If you have more pages or content from this document, please provide them for a more complete conversion.
+
+
+---
+*Chunk pages 238–238*
+*Token usage:* input=753 (sys=94, user=659), max_out=1024, ctx=8192
+---
+
+# Regional Cross Cutting Gender Issues of Concern in the 6 HoA Countries (Sudan, South Sudan, Ethiopia, Kenya, Somalia, and Djibouti)
+
+1. Although in country differences may arise among the agro sylvo pastoral communities based on ethnicity, religious orientation and other intra country and inter-ethnic specific norms and traditions, the key gender inequalities faced by women and girls in agro sylvo pastoral communities are generally similar. Limited access to, control over, ownership and decision making on productive resources and in community forums are common limiting factors to women’s role in productive activities, economic empowerment, and achievement of gender equality. Other socio-cultural expectations on women place an extra burden on their activity time budgets for example caregiving and childcare, gathering of fuel wood, fodder, grass for house construction and overall reduced mobility outside the home into the community sphere. Other socio economic and political factors include low literacy levels leading low skills hence poor salaries and low levels of employment in formal jobs, poor maternal and child health care, reduced representation in political, legal and policy making institutions. This in turn affects the way women participate in livelihood diversification activities across the member states in the HoA. These inequalities have their root causes in socio-cultural gender norms, traditional practices and kinship rules and patrilineal rules that limit women’s access to, control over and decision making on key productive resources and participation in socio economic and political leadership forums in the community, subnational and national institutions.
+
+2. Access to and Control Over Resources in Agro Sylvo Pastoral Communities:
+
+- Women’s roles within livestock production system and the distribution of ownership of livestock is strongly related to social and cultural factors.
+- Often, when the rearing of small animals becomes a more important source of family income, ownership management and control are often turned over to the man.
+- Women entrepreneurs, involved in local and border trade have the challenge of limited access to marketing networks, credit, and other financial services e.g., bank loans.
+- Women in cross border trade, may have challenges in quickly accessing travel documents or gender insensitive trade agreements.
+- Men often own larger animals such as cattle and camels while small animals such as sheep, goats, pigs, and chicken that are reared near the house are kept by women.
+- Women in livestock economy are often responsible for livestock management, processing and marketing, caregiving, feed gatherers, and milk production, but often lack decision making power and capabilities that is important for their social and economic empowerment.
+- Despite this involvement, women’s role in livestock production has often been underestimated.
+- Women entrepreneurs, involved in local and boarder trade, also have the challenge of limited access to marketing networks, credit due to lack of collateral and technical knowledge.
+
+
+---
+*Chunk pages 239–239*
+*Token usage:* input=832 (sys=94, user=738), max_out=1024, ctx=8192
+---
+
+# 62
+
+• Women in cross border trade, may have challenges quickly accessing travel documents.  
+Other factors that have negatively impacted on women cross border trade have been gender insensitive trade agreements, such the World Trade organization (WTO).  
+
+3. While women are faced with such challenges, it is worth noting that access to, control over and management of resources including hides, meat, grazing areas and feed resources empower women and lead to an overall welfare of the whole household. Furthermore, market access plays a significant role in the wellbeing of a household as it allows people to buy and sell goods and services, including household essentials; and it contributes to the diversification of livelihoods in agro sylvo pastoral communities.   Market inaccessibility is, therefore, an important cause of poverty, inequality and in determining where public services are inadequately provided. The target regions in each of the 6 countries within the framework of this program are highly dependent on pastoral and agro-pastoral economy, and livestock and related products and the major markets products.  
+
+## Gender Roles and Responsibilities  
+
+4. In these communities, women are responsible for milking, processing, and selling milk products, providing feed/fodder and water, caring for new-born lambs/kids and sick animals. Young girls are also involved in the grazing of goats and sheep, whereas married and young women are responsible for household activities. This means that often, women have access to these products and able to improve on the welfare of their families.  
+
+5. Typically, male tasks include herding, cutting branches for home feeding and administering modern medicines. Wool shearing, giving traditional vaccines against sheep pox, and castration are exclusively the domain of men for socio-religious reasons.   Men migrate over long distances with the livestock in search of pasture and water, women and girls remain at home with meager resources at their disposal and are expected to sustain their families, hence the need for livelihood diversification by women and youth in these communities.  
+
+## Livelihoods Support and the role of Formal and Informal Institutions in Perpetuating Gender Inequalities  
+
+6. Studies show that among most of the communities living in the HoA region, pastoralism and agro pastoralism are the main sources of livelihood. A fundamental shift in strategizing pastoralist livelihoods, and especially that of women, is to recognize innovation and entrepreneurship, and not limiting activities to those of coping. Although gender relations in the pastoral communities vary widely among tribes, regions, and countries participating in the program, there are some shared realities. Not only are women time-poor with long daily household routine duties, from childrearing, preparation of the meals, collection of firewood and water for the household to livestock management, but opportunities to economic empowerment and contribution to household are not maximised due to low capacity, lack of inputs, tools and credit and financial illiteracy. However, gender inequalities are produced and reproduced through intra and extra household gender dynamics in policies, institutions (socio, political, economic, traditional, religious, and customary), and processes, both formal and informal, to reinforce these gender inequalities that are observed today in agri sylvo pastoral communities across the 6
+
+[Page 1]
+
+
+---
+*Chunk pages 240–240*
+*Token usage:* input=767 (sys=94, user=673), max_out=1024, ctx=8192
+---
+
+# 63
+
+Among most communities living in the HoA region in the identified clusters to be covered in this program, pastoralism and agro pastoralism are the main sources of livelihood. Some of the key gender issues include:
+
+- Gender inequalities in relation to livelihood support make women highly vulnerable to livelihood insecurity in times of disaster which impacts negatively on the economic and social development of the region due to underutilization of available human resources.
+- Men often own and control the assets of production, including the land and the livestock. The men, therefore, often determine women's access to land which forms the basis of their livelihood such as rearing small livestock.
+- Limited access to land means little collateral for obtaining credit.
+- Livelihoods programmes in emergency situations can provide important opportunities to promote higher standards of gender equality in economic life, by affirming women's role as economic change agents and by promoting equal access to productive resources and to decision-making mechanisms.
+- Differential access to and control of livelihood assets also means differential impact of livelihood vulnerabilities between men and women as well as on male-headed households (MHHs) versus female-headed households (FHHs).
+- Men often own and control the assets of production, including land and livestock. The men, therefore, often determine women's access to land which form the basis of their source of livelihood such as rearing small livestock, and limited access to land means little collateral for obtaining credit.
+- Ensuring food and feed resources, and livelihood security for poor smallholder livestock producers and processors continues to be a challenge.
+
+## 7. The livelihood diversification approach can thus be used as a key tool in promoting early recovery as well as greater gender equality in the post crisis social context.
+
+## The effects of Disasters: Climate Change Risks, Droughts, Floods, War and Conflicts on Gender Dynamics and Women Empowerment
+
+## 8. Previous studies in the HoA have looked at the effects of disasters on men's and women's lives in agro sylvo pastoral communities and found that:
+
+- Women are more likely to be disproportionately affected and exposed to risks, increased loss of livelihoods, gender-based violence and even lives during and in the aftermath of disasters
+- Despite the differences, the potential women have and their knowledge and experiences is overlooked and women's leadership in building resilience in communities is overlooked.
+- Pre-existing gender inequalities constrain the influence and control of women and girls over decisions governing their lives as well as their access to resources of production such as finances, agricultural inputs, land, and property as well as technologies.
+- Women are therefore more likely to be disproportionately affected and exposed to risks, increased loss of livelihoods, gender-based violence (GBV) and even loss of life during and in the aftermath of disasters.
+- Despite the differences, the potential and leadership skills women have in building resilience in communities have been overlooked.
+
+
+---
+*Chunk pages 241–241*
+*Token usage:* input=843 (sys=94, user=749), max_out=1024, ctx=8192
+---
+
+# 64
+
+• Poverty and inequality shape women’s and men’s vulnerability to disaster and the impacts of climate change, and their capacity to cope and recover in the post-disaster period.  
+• Since women and men are affected differently by disaster and climate change, their different vulnerabilities and capacities must be analysed, and their gender-specific concerns and priorities addressed.  
+• These gender inequalities make women highly vulnerable to livelihood insecurity in times of disaster and have negative impacts on the economic and social development of the region due to underutilization of available human resources.
+
+## 9. The program will cover six countries of the HoA namely Djibouti, Ethiopia, Somalia, South Sudan, Sudan, and Kenya targeting climate change affected, drought-prone, food and nutrition insecure areas and communities where pastoralism and agro-pastoralism are the main sources of livelihood. Out of the targeted beneficiaries, at least 50% should be women in both male and female headed households as well as youth. Other direct beneficiaries include the Governments of the States of the Region whose capacities will be strengthened to coordinate a regional approach to enhance enhancing drought resilience development and regional integration.  
+The beneficiaries of the Program are the populations of the six (6) IGAD Member States found in agro sylvo pastoral cluster regions and areas.
+
+## 10. The programme is expected to increase the income of agro-pastoralists through the improvement of the delivery of climate smart services ensuring food, nutrition, and health security through identified interventions along the program components. More importantly, diversification of sources of livelihood and the rehabilitation, construction, and mobilization/conservation of water resources will reduce the exposure of the population to the climate change shocks and related conflicts over natural resources like water and pastureland. Women and youth will particularly benefit from the project through targeted interventions (including income generation through livelihood diversification activities in establishment, growth, and maintenance of agro pastoral value chains, establishment of renewable energy sources like solar systems and biodigesters, climate smart agricultural practices, and simplified digital technology designed to target women to be able to respond to climate change related shocks on time) to enhance their economic and social integration/empowerment. More detailed information is provided in member country gender analysis and GAP activities.
+
+## 11. The progress toward achieving this objective will be measured through i) the number of water and animal health and marketing related infrastructures developed, ii) number of women and men and livestock accessing water within a certain distance; iii) the number and adoption rate of alternative livelihoods sources with data stratified and disaggregated by gender, iv) the incremental productivity/production of livestock and main crops; v) the area of land rehabilitated and, vi) the change in the beneficiary’s incomes (men and women), vii) number of personnel and beneficiaries (males and females) benefiting from capacity building programs including the gender transformative capacity building of national champions at the regional level through the Gender Action Learning Systems (GALS) Approach and Methodology. This approach and methodology as an intervention targets transformation of socio-cultural gender norms, and harmful traditional and customary practices with women as main agents of change in their communities and men as their allies to reduce gender-based inequalities in the 6 countries.
+
+
+---
+*Chunk pages 242–242*
+*Token usage:* input=728 (sys=94, user=634), max_out=1024, ctx=8192
+---
+
+# 65
+
+## 12. This program will address gender inequalities in the IGAD region in support of the 'political will', manifested by IGAD country ministers responsible for gender issues, who occasionally meet to advocate the engagement of women in all development initiatives in the region.
+
+The creation of an IGAD Gender and Resilience Working Group and the Gender Unit will work towards planning, coordination, monitoring and evaluation of the regional gender component and follow up supervisory roles, monitoring and evaluation in gender and socio norms research, documentation of best practices and collection of sex disaggregated data to ensure that gender mainstreaming is part of the program design, implementation, monitoring and evaluation in the 6 member countries.
+
+The main goal is to achieve women economic empowerment and gender equality and equity within the context of the program components for enhanced climate change resilience, food, nutrition, and health security among agro sylvo pastoral communities in the 6 member countries.
+
+## 13. The economic and financial resources and opportunities provided by the project will be measured by sex-disaggregated indicators. In the Bank Gender Marker System (GMS), the project is then considered as a GEN II.
+
+By the end of the project period, it is expected that there will positive outcomes for example increased income for women from agro sylvo pastoral value chains with an output indicator in increased annual per capita income among women (in male and female headed households) and creation of additional jobs for women and youth.
+
+Furthermore, women should have increased access to social services and infrastructure to reduce their labour and time poverty constraints, reduce child and care giving barriers and be able to participate more in livelihood diversification activities through agribusiness development in agro sylvo pastoral value chains.
+
+## 14. Gender analysis for each country, including action plan, has been presented in the respective Country Components/Reports. The Regional Gender Action Plan with the corresponding budget for the regional gender activities is provided below.
+
+### Gender Action Plan Regional Activities and Budget (Regional Gender Activities for Implementation by IGAD and its Institutions)
+
+NOTE: Activities Presented here cut across the 4 components of the Project
+
+| Gender Activities | Estimated Cost USD |
+|-------------------|--------------------|
+| Regional Capacity Building for ToT (including Gender and Resilience Working Group members) on the Gender Action Learning Systems (GALS) Approach and Methodology adopted from OXFAM- Uganda Using GALS Champions from Uganda. ToTs (National ToTs) to spearhead implementation of GALS activities in their respective countries | 200,000 |
+| Regional Gender Expert supporting national gender experts; leading regional gender action plan and producing knowledge products to capture lessons learnt | 420,000 |
+| Translation of GALS Tools into local Languages (Amharic, Arabic, French and Somali) for regional capacity building | 20,000 |
+
+[Page 1]
+
+
+---
+*Chunk pages 243–243*
+*Token usage:* input=382 (sys=94, user=288), max_out=1024, ctx=8192
+---
+
+# [Page 1]
+
+66  
+Gender Activities Estimated Cost USD  
+Regional mentorship support for National Member Country Gender Action Learning  
+Systems ToTs  
+48,000  
+Regional Capacity Building on Gender Planning and Budgeting (Using GALS) for  
+Member country institutions across the project components  
+45,000  
+Regional Coordination and Supervision of Gender and Social Cultural Norms Research in  
+the Agro pastoral communities across the IGAD Region to identify barriers to women  
+empowerment and devise appropriate initiatives  
+70,000  
+Documentation of Gender transformative best practices and knowledge management in  
+agro pastoralists communities  
+52,000  
+Collection of gender disaggregated data with gender mainstreamed indicators of change in  
+agro pastoral communities  
+60,000  
+Regional Cross Country Gender Learning Exchanges to countries where GALS  
+methodology has been implemented in the agro pastoral communities  
+35,000  
+Regional monitoring and evaluation mechanism to ascertain gender compliance of the  
+standards and tools  
+60,000  
+Cross country supervisory role by the Gender Unit including contribution to staff salary 80,000  
+Establishment of a coordination/strengthening of a coordination mechanism (Gender and  
+Resilience Working Group)  
+30,000  
+Grand Total 1,120,000  
+__________

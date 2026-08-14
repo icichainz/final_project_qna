@@ -1,0 +1,6793 @@
+---
+*Chunk pages 1–1*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=404 (sys=94, user=310), max_out=1024, ctx=8192
+---
+
+# Meeting of the Board
+## 4 – 7 March 2024
+### Kigali, Rwanda
+
+## Provisional agenda item 10
+### GCF/B.38/02/Add.11
+#### 12 February 2024
+
+## Consideration of funding proposals – Addendum XI
+
+### Funding proposal package for FP231
+
+## Summary
+
+This addendum contains the following six parts:
+
+a) A funding proposal summary titled "Accelerating Solar Action Program (ASAP)" submitted by Ecobank Ghana Limited;
+
+b) No-objection letter(s) issued by the national designated authority(ies) or focal point(s);
+
+c) Environmental and Social report(s) disclosure;
+
+d) Independent Technical Advisory Panel’s assessment;
+
+e) Response from the accredited entity to the independent Technical Advisory Panel's assessment; and
+
+f) Gender documentation of the funding proposal.
+
+These documents are presented as submitted by the accredited entity and the national designated authority(ies) or focal point(s), respectively. Pursuant to the Comprehensive Information Disclosure Policy of the Fund, the funding proposal titled "Accelerating Solar Action Program (ASAP)" submitted by Ecobank Ghana Limited is being circulated on a limited distribution basis only to Board Members and Alternate Board Members to ensure confidentiality of certain proprietary, legally privileged or commercially sensitive information of the entity.
+
+--- 
+
+[Page 1]
+
+
+---
+*Chunk pages 2–2*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=225 (sys=94, user=131), max_out=1024, ctx=8192
+---
+
+# Table of Contents
+
+- [Funding proposal submitted by the accredited entity](#funding-proposal-submitted-by-the-accredited-entity)
+- [No-objection letter(s) issued by the national designated authority(ies) or focal point(s)](#noobjection-letters-issued-by-the-national-designated-authorityies-or-focal-points)
+- [Environmental and Social report(s) disclosure](#environmental-and-social-reports-disclosure)
+- [Independent Technical Advisory Panel’s assessment](#independent-technical-advisory-panels-assessment)
+- [Response from the accredited entity to the independent Technical Advisory Panel's assessment](#response-from-the-accredited-entity-to-the-independent-technical-advisory-panels-assessment)
+- [Gender documentation](#gender-documentation)
+
+## Funding proposal submitted by the accredited entity
+
+[Page 2]
+
+## No-objection letter(s) issued by the national designated authority(ies) or focal point(s)
+
+[Page 3]
+
+## Environmental and Social report(s) disclosure
+
+[Page 4]
+
+## Independent Technical Advisory Panel’s assessment
+
+[Page 5]
+
+## Response from the accredited entity to the independent Technical Advisory Panel's assessment
+
+[Page 6]
+
+## Gender documentation
+
+[Page 7]
+
+
+---
+*Chunk pages 3–3*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=194 (sys=94, user=100), max_out=1024, ctx=8192
+---
+
+# Project/Programme title: Accelerating Solar Action Program (ASAP)  
+## Country(ies): Ghana  
+## Accredited Entity: Ecobank Ghana Limited  
+## Date of first submission: 2020/04/16  
+## Date of current submission: 2024/01/24  
+## Version number V.008  
+
+--- 
+
+*Note: The provided text appears to be a header or metadata section from a PDF document, likely related to a project or programme titled "Accelerating Solar Action Program (ASAP)" in Ghana, accredited by Ecobank Ghana Limited, with submission dates and version information.*  
+
+No further content is available for conversion into Markdown as per the instructions.
+
+
+---
+*Chunk pages 4–4*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=493 (sys=94, user=399), max_out=1024, ctx=8192
+---
+
+# [Page 1]
+
+## GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 0
+
+### Contents
+
+- Section A PROJECT / PROGRAMME SUMMARY
+- Section B PROJECT / PROGRAMME INFORMATION
+- Section C FINANCING INFORMATION
+- Section D EXPECTED PERFORMANCE AGAINST INVESTMENT CRITERIA  
+- Section E LOGICAL FRAMEWORK
+- Section F RISK ASSESSMENT AND MANAGEMENT
+- Section G GCF POLICIES AND STANDARDS
+- Section H ANNEXES  
+
+### Note to Accredited Entities on the use of the funding proposal template
+
+- Accredited Entities should provide summary information in the proposal with cross-reference to annexes such as feasibility studies, gender action plan, term sheet, etc.
+- Accredited Entities should ensure that annexes provided are consistent with the details provided in the funding proposal. Updates to the funding proposal and/or annexes must be reflected in all relevant documents.
+- The total number of pages for the funding proposal (excluding annexes) should not exceed 60. Proposals exceeding the prescribed length will not be assessed within the usual service standard time.
+- The recommended font is Arial, size 11.
+- Under the GCF Information Disclosure Policy, project and programme funding proposals will be disclosed on the GCF website, simultaneous with the submission to the Board, subject to the redaction of any information that may not be disclosed pursuant to the IDP. Accredited Entities are asked to fill out information on disclosure in section G.4.
+
+### Please submit the completed proposal to:
+fundingproposal@gcfund.org
+
+### Please use the following name convention for the file name:
+“FP-[Accredited Entity Short Name]-[Country/Region]-[YYYY/MM/DD]”
+
+
+---
+*Chunk pages 5–5*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=761 (sys=94, user=667), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 1
+
+## PROJECT/PROGRAMME SUMMARY
+
+### A.1. Project or programme  
+**A.2. Public or private sector**  
+Private  
+
+### A.3. Request for Proposals (RFP)  
+Not applicable  
+
+### A.4. Result area(s)  
+Check the applicable GCF result area(s) that the overall proposed project/programme targets below. For each checked result area(s), indicate the estimated percentage of GCF and Co-financers’ contribution devoted to it. The total of the percentages when summed should be 100% for GCF and Co-financers’ contribution respectively.
+
+| GCF contribution | Co-financers' contribution |
+|------------------|----------------------------|
+| 100 %            | 100 %                      |
+| ☒ Energy generation and access | 100 % |
+| ☐ Low-emission transport | Enter number % |
+| ☐ Buildings, cities, industries and appliances | Enter number % |
+| ☐ Forestry and land use | Enter number % |
+| Adaptation total | Enter number % |
+| ☐ Most vulnerable people and communities | Enter number % |
+| ☐ Health and well-being, and food and water security | Enter number % |
+| ☐ Infrastructure and built environment | Enter number % |
+| ☐ Ecosystems and ecosystem services | Enter number % |
+
+### A.5. Expected mitigation outcome  
+(Core indicator 1: GHG emissions reduced, avoided or removed / sequestered)  
+417,452 tCO2 eq over the lifetime of the solar systems installed.
+
+### A.6. Expected adaptation outcome  
+(Core indicator 2: direct and indirect beneficiaries reached)  
+Not Applicable  
+
+Indicate number of direct beneficiaries  
+Indicate number of indirect beneficiaries  
+Indicate % of direct beneficiaries vis-à-vis total population  
+Indicate % of indirect beneficiaries vis-à-vis total population  
+
+### A.7. Total financing (GCF + co-finance2)  
+_____ USD 31.57 Million  
+
+### A.9. Project size  
+Small (Upto USD 50 million)  
+
+### A.8. Total GCF funding requested  
+_____ USD 16.19 Million  
+
+> 1 Co-financer’s contribution means the financial resources required, whether Public Finance or Private Finance, in addition to the GCF contribution (i.e. GCF financial resources requested by the Accredited Entity) to implement the project or programme described in the funding proposal.  
+> 2 Refer to the Policy of Co-financing of the GCF.
+
+
+---
+*Chunk pages 6–6*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=806 (sys=94, user=712), max_out=1024, ctx=8192
+---
+
+# A.10. Financial instrument(s) requested for the GCF funding
+
+Mark all that apply and provide total amounts. The sum of all total amounts should be consistent with A.8.
+
+- ☒ Grant USD 1,197,530  
+- ☒ Loan USD 15,000,000  
+- ☐ Guarantee Enter number  
+- ☐ Equity       Enter number  
+- ☐ Results-based payment    Enter number  
+
+# A.11. Implementation period
+
+13 Years  
+
+# A.12. Total lifespan
+
+25 Years  
+
+# A.13. Expected date of AE internal approval
+
+This is the date that the Accredited Entity obtained/will obtain its own approval to implement the project/programme, if available.
+
+12/20/2023  
+
+# A.14. ESS category
+
+Refer to the AE’s safeguard policy and GCF ESS Standards to assess your FP category.
+
+I-2  
+
+# A.15. Has this FP been submitted as a CN before?
+
+Yes ☒    No ☐  
+
+# A.16. Has Readiness or PPF support been used to prepare this FP?
+
+Yes ☐    No ☒  
+
+# A.17. Is this FP included in the entity work programme?
+
+Yes ☒    No ☐  
+
+# A.18. Is this FP included in the country programme?
+
+Yes ☒    No ☐  
+
+# A.19. Complementarity and coherence
+
+Does the project/programme complement other climate finance funding (e.g. GEF, AF, CIF, etc.)? If yes, please elaborate in section B.1.
+
+Yes ☒    No ☐  
+
+# A.20. Executing Entity information
+
+If not the Accredited Entity, please indicate the full legal name of the Executing Entity(ies) and provide its country of registration and ownership type. Note that there can be more than one Executing Entity. Also indicate if an Executing Entity is the National Designated Authority. Refer to the definition of Executing Entity in the Accreditation Master Agreement.
+
+Ecobank Ghana Limited  
+2 Morocco Lane, Off Independence Avenue, Ministerial Area  
+PMB, GPO, Accra - Ghana.  
+Website: www.ecobank.com.gh  
+Email: ecobankghana_gcf@ecobank.com  
+
+# A.21. Executive summary (max. 750 words, approximately 1.5 pages)
+
+1. The energy sector contributes to 35% of Ghana’s GHG emissions yet the country’s RE installed capacity currently stands below 20% of its 2030 target. The proposed Program aims to mobilize concessional finance to promote the use of distributed Solar PV Systems in Ghana, focusing on expanding access to this technology for Micro, Small & Medium Enterprises (MSMEs) and Households, to contribute to the reduction of Ghana’s Green House Gas (GHG) emissions and the creation of a more favourable environment for sustainable energy financing over the long term.
+
+
+---
+*Chunk pages 7–7*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1083 (sys=94, user=989), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 3
+
+## 2. 
+Ecobank is expecting to use all GCF reimbursable funding provided through a direct loan to Ecobank, to deploy term loans to Households and MSMEs (including include women entrepreneurship, and agricultural irrigation cooperatives), repayable in fixed instalments over 7 years, secured by the underlying asset. The term loans will be solely dedicated to the purchase and installation of distributed Solar PV Systems by Households and MSMEs, which represent a significant untapped market potential in Ghana.
+
+## 3. 
+Solar PV plants connected to distribution networks or transmission lines for sale to distribution utilities will not be eligible for financing under the ASAP Program.
+
+## 4. 
+The GCF USD15 million loans to Ecobank will be blended with Ecobank’s USD15 million to provide a total of USD 30 million dedicated term loans to the program beneficiaries for the purchase and installation of distributed Solar PV Systems. The Program also includes a non-reimbursable grant component for technical assistance aspects provided by the GCF of USD790,030 and a budget of USD787,500 jointly provided by the GCF and Ecobank for Project Management. The expected total cost of the ASAP program is USD31.57 million. By offering concessionary loans, the project has the potential to develop RE, mainly Solar PVs, into a thriving industry within the country, which will not only improve the heavily fossil-fuel reliant energy mix but also create significant employment in the new and growing sector. With GCF Funding, the bank can broaden the impact of ASAP by reaching untapped market segments, which were unable to get financed due to high upfront cost for Solar PV systems, or high interest rates and inability to meet stringent collateral requirements of commercial banks, or for lack of awareness about financing options. The ASAP will encourage other institutions (Commercial Banks & other lending institutions) to develop competitive solutions which will inevitably increase the overall market size/acceptance. It will also allow the creation of a secondary market for solar panels that will encourage commercial banks to develop more financial products centred around renewable energy.
+
+## 5. 
+The Program is expected to result in 1,005,378 MWh of renewable electricity generated during the 25 years of production of the distributed Solar PV systems, through a forecasted total installed capacity of 30.59 MW. The ASAP program will increase the share of renewable energy by 30.59 MW in Ghana’s energy supply mix, passing from the actual renewable energy installed capacity of 78.61 MW³⁴ to a total of 109.MW by the end of the implementation of the program, which represents a 33.11% increase from the current renewable energy installed capacity in Ghana.
+
+## 6. 
+The ASAP total installed capacity will target 1,617 installations with an average power output of 4kW for households with energy use of between 300kWh/month and 600kWh/month, and 765 installations with an average power of 30kW for MSMEs with electricity use above 600 kWh/month, including off-grid beneficiaries.
+
+## 7. 
+The total energy produced will allow the reduction of 417,452 tonnes of CO2 equivalent over the 25-year lifetime of the solar systems installed, reaching a total of 2,382 household and MSME beneficiaries (including the special subset of Irrigation Cooperatives), and create 1,794 jobs in the clean energy sector.
+
+## 8. 
+The Program is expected to play a critical role in filling the long-term financing gap and mobilize funding from the private sector in the future, providing necessary support to renewable energy investment projects unable to obtain suitable financing in the existing market.
+
+## 9. 
+Electricity is a significant portion of MSMEs operating expense and a major expense for households. The concessional nature of the loans under the ASAP program will enable beneficiaries to procure an alternative cost-saving and reliable energy technology at an affordable price with a flexible repayment tenor. This would enhance the competitiveness of the MSMEs.
+
+>³⁴ Ghana National Energy Statistics 2000-2019 http://www.energycom.gov.gh/files/2020%20ENERGY%20STATISTICS-revised.pdf (Page 19)
+
+
+---
+*Chunk pages 8–8*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=319 (sys=94, user=225), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 4
+
+While increasing disposable incomes of households, thereby offering them incentives to adopt cost-saving measures such as rooftop solar.
+
+10. The Program is in line with the Government of Ghana's GHG emissions reduction targets, as set out in the Nationally Determined Contribution (NDC) to the United Nations Framework Convention on Climate Change (UNFCCC), and in line with the Government's strong focus on renewable energy and Solar PV. The project has strong ongoing support from the NDA (the Ministry of Finance) as well as the Energy Commission (EC). Both entities have been strongly engaged in the proposal development.
+
+11. The Program will be implemented by Ecobank Ghana that will act as the Accredited Entity and the Executing Entity for all components of this proposal.
+
+
+---
+*Chunk pages 9–9*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1317 (sys=94, user=1223), max_out=1024, ctx=8192
+---
+
+# B.1. Climate context (max. 1000 words, approximately 2 pages)
+
+## Ghana’s climate profile
+
+Ghana has a tropical climate that follows the country’s varied topography. Annual rainfall ranges from 1,100 mm in the north to about 2,100 mm in the southwest. The northern part of the country has one rainy season that extends from May to September; the south has two rainy seasons – the first lasts from April to July and the second from September to November. Like several other countries in West Africa, the dry season (December to March) brings the arid and dusty harmattan winds that blow from the Sahara Desert, and is marked by low humidity, hot days and cool nights. Average annual temperatures are around 26°C, with higher temperatures in the north and during the dry season. The area between the forest in the southwest and the savanna in the north is vital for domestic food production, due to more reliable rains and an extended growing season.
+
+## Climate changes being experienced in Ghana
+
+The main climate changes being experienced in Ghana are temperature increases and shifting rainfall patterns, resulting in floods and droughts becoming more prevalent. Climate change impacts will continue to adversely affect the agricultural and energy generation sectors markedly, with the livelihoods of many, including small-scale farmers, being placed at risk. In terms of agriculture, decreased productivity and crop losses because of drought and floods are expected to worsen food insecurity. This will exacerbate the increase occurrence of plant pests under drought conditions. The occurrence of vector and water-borne diseases are also expected to increase in addition to urban migration with resultant depopulation of non-urban regions, primarily in Northern Ghana. The country will also be affected by climate change-driven sea level rise, resulting in increases in coastal erosion and the salinification of coastal aquifers.
+
+## Water availability and hydroelectricity
+
+Reduced water availability, attributable to climate change-induced erratic rainfall and prolonged droughts, increases the need for irrigation in agricultural areas, and negatively impacts the country’s hydropower generating potential. Hydroelectricity represents a significant portion of the national power supply mix in Ghana. Ghana’s electricity supply mix has changed from biomass (including organic wastes and biofuel) (85%) and hydroelectricity (15%) in 1974, to being mostly comprised of renewable, thermal and hydroelectricity. Thermal energy generation utilizes fossil fuels such as crude oil, natural gas and diesel. In 2020, the energy supply mix was comprised of 50.5% thermal, 49.8% hydro and 0.1% renewable energy sources, and while data available for 2021 denotes 65.3%, 34.1% and 0.6% of a total of 22,051 GWh of electricity generated was from thermal, hydro, and other renewable sources respectively. As of November 2023, total installed capacity for existing plants in Ghana is 5,134 Megawatt (MW), with a dependable capacity of 4,710 MW. Thermal generation accounts for the largest share of Ghana’s power generation, representing 66%, with Hydro accounting for 33%. Ghana’s thermal power generation is fueled largely by natural gas, but occasionally using light crude oil and diesel. Production of energy from solar and other renewables such as wind is negligible. With the efforts of successive governments to make the country’s energy mix cleaner and less expensive, the country saw a significant decrease in the reliance on oil, although oil remains the highest single source of energy. Reliance on oil and biomass decreased from 49% to 35% and 39% to 34% respectively within the period.
+
+## References
+
+12. Available online: https://www.climatelinks.org/sites/default/files/asset/document/2017_USAID_Climate%20Change%20Risk%20Profile%20-%20Ghana.pdf  
+13. Available online: https://unfccc.int/sites/default/files/resource/Gh_NC4.pdf  
+14. Available online: https://www.climatelinks.org/sites/default/files/asset/document/2017_USAID_Climate%20Change%20Risk%20Profile%20-%20Ghana.pdf  
+15. Available online: http://www.un-page.org/files/public/ghanaclimatechangepolicy.pdf  
+16. Available online: https://ouroilmoney.s3.amazonaws.com/media/documents/2016/06/09/energy_strategy.pdf  
+17. Available online: https://unfccc.int/sites/default/files/resource/Gh_NC4.pdf  
+18. Available online: https://ouroilmoney.s3.amazonaws.com/media/documents/2016/06/09/energy_strategy.pdf  
+19. Available online
+
+
+---
+*Chunk pages 10–10*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1338 (sys=94, user=1244), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 6
+
+## Available online: https://unfccc.int/sites/default/files/resource/Gh_NC4.pdf
+
+17 Kumi, Ebenezer Nyarko, 2017, The Electricity Situation in Ghana: Challenges and Opportunities. Centre for Global Development Policy Paper 109    
+18 Available online: http://www.un-page.org/files/public/ghanaclimatechangepolicy.pdf  
+19 Available online: http://www.energycom.gov.gh/files/Ghana%20Integrated%20Power%20System%20Master%20Plan%20_Volume%202.pdf    
+20 Available online: https://ouroilmoney.s3.amazonaws.com/media/documents/2016/06/09/energy_strategy.pdf  
+21 Available online: http://www.energycom.gov.gh/files/Renewable-Energy-Masterplan-February-2019.pdf  
+22 https://data.worldbank.org/indicator/EN.ATM.CO2E.KT?end=2020&locations=GH&start=1990&view=chart  
+23 Available online: https://unfccc.int/sites/default/files/resource/Gh_NC4.pdf  
+24 Ghana Fourth National Greenhouse Gas Inventory Report, February 2019  
+25 Available online: http://www.energycom.gov.gh/files/Renewable-Energy-Masterplan-February-2019.pdf  
+26 Available online: https://unfccc.int/sites/default/files/resource/Gh_NC4.pdf  
+27 Kumi, Ebenezer Nyarko, 2017, The Electricity Situation in Ghana: Challenges and Opportunities. Centre for Global Development Policy Paper 109  
+
+## While reliance on natural gas for the same period increased from 7% to 26%. This increased reliance was further helped by the discovery and production of natural gas in Ghana’s oil producing fields. Reliance on hydroelectricity remained constant for the period at 5%. Although renewable energy, particularly solar, accounted for less than 1% of the energy mix from 2016 to 2020, energy supply from solar more than doubled, from 2 ktoe (kiloton of oil equivalent) to 4.89 ktoe within the period. Thus, will continue to result in an increasing reliance on fossil fuel-fired thermal plants, which has shifted Ghana’s electricity supply mix from being largely hydropower based to thermal power based, stifling the country’s progress to reducing GHG emissions in the energy sector. Exacerbating this is an increased demand for energy due to a growing population and developing economy, and hence the need for sustainable, reliable energy production.
+
+16,17,18,19,20,21.
+
+## Ghana’s GHG Emission Profile
+
+### Aggregate emissions
+
+15.According to the World Bank (Climate Watch Historical GHG Emissions) 22, in 2020 CO2 emissions in Ghana are estimated at 19.4 MtCO2 which represents a 45% increase from year 2015 and a 291% from year 2000. This does not account other for other GHG emissions in the same period . The country’s updated NDC 2020 -2030 estimates that in the base year 2019 total GHG emissions stood at 58.8 MtCO2e.
+
+### In 2016 stationary energy combustion contributed around 18.6% of net GHG emissions in Ghana, with the agriculture, forestry, and other land use (AFOLU) sector contributing approximately 54% of this total. From 2012 until 2016, GHG emissions from stationary energy combustion increased by 19.8%, with Ghana’s net emissions increasing by 7.1% in the same period. In 2016, energy industries including thermal power plants, accounted for approximately 36.8% (15.79 MtCO2e) of total emissions (increasing by 303% since 1990) and were the second highest emitters of total GHGs after the AFOLU sector. Transport and energy generation accounted for 47.7% and 34.7% of energy sector emissions, respectively23,24,25.
+
+### Small diesel generators are often used during electricity supply interruptions. The installation of solar PV systems under ASAP Ghana will reduce reliance on the unsustainable use of diesel for energy generation. Large grid, mini grid as well as home Solar PV installations aim reduce the reliance on fossil fuels to supply households with energy. The ASAP program has hence been structured to improve access
+
+
+---
+*Chunk pages 11–11*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1411 (sys=94, user=1317), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 7
+
+## References
+
+1. Available online:  
+   https://www.energymin.gov.gh/sites/default/files/2023-09/FINAL%20GHANA%27S%20NATIONAL%20ENERGY%20TRANSITION%20FRAMEWORK_2023_compressed%20%281%29_compressed%20%282%29.pdf
+
+2. Available online: https://unfccc.int/sites/default/files/resource/Gh_NC4.pdf
+
+3. Online Available:  
+   https://www.climatelinks.org/sites/default/files/asset/document/2017_USAID_Climate%20Change%20Risk%20Profile%20-%20Ghana.pdf
+
+4. Available online: https://unfccc.int/sites/default/files/resource/Gh_NC4.pdf
+
+5. Available online: http://www.un-page.org/files/public/ghanaclimatechangepolicy.pdf  
+
+6. Available online: http://www.lowcarbondev-support.org/-media/Sites/FIRM_Facilitating_Implementation_and_Readiness_for_Mitigation/Final-Country-Reports-Phase-1/FIRM-Ghana-LCDS.ashx?la=da  
+
+7. Available online:  
+   http://www.energycom.gov.gh/files/Ghana%20Integrated%20Power%20System%20Master%20Plan%20_Volume%202.pdf  
+
+8. Available online: https://ouroilmoney.s3.amazonaws.com/media/documents/2016/06/09/energy_strategy.pdf  
+
+9. Available online: https://unfccc.int/sites/default/files/resource/Gh_NC4.pdf  
+
+10. Available online: http://www.energycom.gov.gh/files/Renewable-Energy-Masterplan-February-2019.pdf  
+
+11. Available online:  
+    http://www.energycom.gov.gh/files/Ghana%20Integrated%20Power%20System%20Master%20Plan%20_Volume%202.pdf  
+
+12. Online Available: http://energycom.gov.gh/files/SE4ALL-GHANA%20ACTION%20PLAN.pdf  
+
+13. Available online:  
+    http://www.energycom.gov.gh/files/Ghana%20Integrated%20Power%20System%20Master%20Plan%20_Volume%202.pdf  
+
+## Analysis of Greenhouse Gas Emissions (GHGs) according to gas type
+
+Carbon dioxide (CO2) accounted for 64.7% of total emissions in 2016, amounting to 27.3 MtCO2e. From 1990 until 2016, CO2 emissions had increased by 1.9% per annum, with energy generation, transport and land-use contributing to this increase. Nitrous oxide (N2O) and methane (CH4) contributed 18.3% and 15.4% to GHG emissions in 2016, respectively. N2O emissions increased by 2.6% from 1990 to 2016, with increases in land-use change, fertiliser utilization and crop-residues contributing to this trend. CH4 emissions increased by 1.8% per year from 1990 to 2016 due to expansions in livestock farming, waste disposal and water treatment. In 2016, fluorinated gases contributed least to total GHG emissions, at 1.6%. Perfluorocarbon emissions decreased by 6.9% from 1990 to 2016. 35.9% of this decrease occurred between 2012 and 2016.
+
+## Ghana’s national climate change mitigation priorities and targets
+
+The ASAP program is aligned and supported by national and regional policies including Ghana’s Nationally Determined Contribution (NDC) to the UNFCCC, Ghana’s National Climate Change Policy, Low Carbon Development Strategy, Strategic National Energy Plan, National Energy Policy, the Energy Sector Strategy and Development Plan, the Ghana Renewable Energy Master Plan (REMP), as well as the regional Economic Community of West African States (ECOWAS) Renewable Energy Policy. ASAP is also aligned with Ghana’s commitments as part of the global Sustainable Energy for all (SE4ALL) initiative. Furthermore, to the afore-mentioned, other analyses such as the Ghana Integrated Power System Master Plan highlight the potential of renewable energy utilization, such as solar PV systems, in Ghana.
+
+To address the attendant effects of such short-term planning of the overall development of the renewable energy sector, the Renewable
+
+
+---
+*Chunk pages 12–12*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1126 (sys=94, user=1032), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 8
+
+## 42 Available online: https://unfccc.int/sites/default/files/resource/Gh_NC4.pdf  
+## 43 Available online: http://www.energycom.gov.gh/files/Renewable-Energy-Masterplan-February-2019.pdf  
+## 44 Available online: https://unfccc.int/sites/default/files/resource/Gh_NC4.pdf  
+## 45 Available online: http://www.energycom.gov.gh/files/Renewable-Energy-Masterplan-February-2019.pdf  
+
+As valuable tools with the potential for engaging in these systems. The largest irrigation dam in Ghana is located at Tono in the Upper East Region, with a capacity of about 93 million m³ at full supply level. Irrigation dams in Ghana have been used mainly in rice and vegetable production. There are over 380 small to medium reservoirs in the three northern regions with surface areas averaging at 6 - 20 ha. Recently, commercial irrigation activities have sprung up where such water facilities are used for growing fruits and other horticultural crops for export, thus generating jobs and income in crop production.
+
+According to the Ghana Renewable Energy Masterplan, as of 2015, solar PV contributed to the irrigation 150 ha (hectares) of agricultural land. This is expected to rise substantially to 46,150 ha (hectares) by 2030 (representing 48.8 MW of solar PV installations).
+
+## 22. The REMP aims to achieve the following by 2030:  
+- Increase the proportion of renewable energy in the national energy generation mix from 42.5 MW in 2015 to 1363.63 MW (with grid connected systems totalling 1094.63 MW);  
+- Reduce the dependence on biomass as main fuel for thermal energy applications;  
+- Provide renewable energy-based decentralised electrification options in 1,000 off-grid communities;  
+- Promote local content and local participation in the renewable energy industry.
+
+## 23. As set out in the NDC, the current Coordinated Programme of Economic and Social Development Policies (2017 to 2024), confirms Ghana’s commitment to achieve a 45% emissions reduction by 2024. The Government has numerous policies and programs in place to progress with this effort including the National Climate Change Policy and the Low Carbon Development Strategy. Such strategies include low-carbon electricity supply, scaling-up of renewable energy as well as energy efficiency in households.
+
+Should these strategies and measures be successfully implemented, Business as Usual (BAU) emissions are expected to decrease by 45% by 2024. This translates to 33 MtCO₂e by 2030. Under a BAU scenario without mitigation strategies implemented, GHG emissions in Ghana are expected to reach a yearly level of 73 MtCO₂e by 2030, which equates to a threefold increase in emissions since 1990² or an average of 2.1% per year⁴²,⁴³.
+
+## 24. The trend of increases in GHG emissions in Ghana is evident in the energy sector in that GHG emissions increased from 15% in 1990 to 36% in 2016. Furthermore, energy sector emissions are expected to overtake AFOLU emissions by 2027 due to further industrialization, increased thermal energy capacity, vehicle emissions, deforestation, and land-use change. BAU emissions from the energy sector are expected to reach 36.6 MtCO₂e by 2030 but could be reduced by 58% with the implementation of various mitigation measures. These include reducing deforestation, energy efficient and clean energy supply to households, access to electric transport, low-carbon energy supply, greater reliance on renewable energy, stream utilization in thermal energy production, as well as natural gas commercialization.
+
+Furthermore, universal grid access has been prioritized by the Ghanaian government, as access to electricity has recently been documented to be 84.3%, with rural communities being underrepresented in this regard⁴⁴,⁴⁵.
+
+## 25. The Government of Ghana’s NDC and Strategic National Energy Plan places a high priority on Solar PV. The first listed energy action is to scale up renewable energy penetration by 10% by 2030, from 1% contribution to the energy mix in 2019. Ghana’s Renewable Energy Act provides the legal and regulatory framework necessary to enhance and expand the country’s Renewable Energy sector. The Act was passed in 2011
+
+
+---
+*Chunk pages 13–13*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=566 (sys=94, user=472), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 9
+
+## Table 1. Renewable energy targets in REMP for the period 2015 to 2030
+
+To drive investments into renewable energy, Ghana continues to implement the following concrete technical and fiscal strategies:
+
+a) Expand the National Interconnected Transmission System (NITS) to accelerate the interconnection of utility-scale renewable energy projects.
+
+b) Encourage bulk customers to integrate renewable electricity in their distribution and consumption mix under the Renewable Energy Purchase Obligation (REPO).
+
+c) Ensure that net-metered systems have access to the distribution grid, in line with the Net-Metering Code.
+
+d) Recommend tax incentives for the importation of materials and equipment required for local assembly, manufacturing or installation and maintenance of renewable energy systems.
+
+e) Deploy decentralized renewable energy technologies for electrification of the isolated island and lakeside communities under the Scaling-up Renewable Energy Programme (S-REP).
+
+f) Institutionalized the Annual Renewable Energy Fair (Conference and Exhibition) as an avenue to disseminate information on government policies, interventions and emerging technologies on renewable energy and energy efficiency. It also provides the platform for consultation among academia, government representatives, decision-makers, private sector operators, project financiers, and consumers. The annual fair was introduced in 2015.
+
+g) In 2017, Ghana ratified the International Solar Alliance (ISA) framework agreement to become one of the founding members of ISA. As a member of ISA, Ghana can access up to US$ 10 billion renewable energy credit from India. This is part of government's efforts to drive investments into the renewable energy sector; however, to date has not been successful. Should this be successful, it will impact the ability to scale.
+
+
+---
+*Chunk pages 14–14*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1138 (sys=94, user=1044), max_out=1024, ctx=8192
+---
+
+# [Page 1]
+
+## B 
+### GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 10 
+
+### 48 Centre for Global Development, 2017, The Electricity Situation in Ghana: Challenges and Opportunities Available Online: https://www.cgdev.org/sites/default/files/electricity-situation-ghana-challenges-and-opportunities.pdf  
+
+### 49 Available online: https://unfccc.int/sites/default/files/resource/Gh_NC4.pdf  
+
+### 50 Available online: http://www.energycom.gov.gh/files/Renewable-Energy-Masterplan-February-2019.pdf  
+
+### 51 Available online: https://unfccc.int/sites/default/files/resource/Gh_NC4.pdf  
+
+### 52 Energy Commission, Energy Statistics 2023. Available online: https://www.energycom.gov.gh/newsite/index.php/planning/energy-statistics?download=420:2023-energy-statistics ( Table 3.3)    
+
+### 53 Available online: https://unfccc.int/sites/default/files/resource/Gh_NC4.pdf  
+
+### 54 Energy Commission, Energy Statistics 2023. Available online: https://www.energycom.gov.gh/newsite/index.php/planning/energy-statistics?download=420:2023-energy-statistics  
+
+### 55 Available online: https://www.climatelinks.org/sites/default/files/asset/document/2017_USAID_Climate%20Change%20Risk%20Profile%20-%20Ghana.pdf  
+
+### 56 Available online: https://unfccc.int/sites/default/files/resource/Gh_NC4.pdf  
+
+### 27. The government also has complimentary energy efficiency regulations and programs in place (including standards and labelling), with specific focus on improving electricity access48, via clean and sustainable sources. As power outages and unreliable supply are also common challenges faced by households and enterprises, ASAP aims to improve access by providing an alternative source of energy, in the form of solar PV, to beneficiaries49,50.  
+
+### 28. Solar PV has long been prioritized and is known to have a high potential for clean energy production in Ghana. Numerous efforts are underway, supported by the Government to increase the utilization of Solar PV51. However, the transition to solar PV usage across large parts of the country remains a challenge because of i) limited transmission and distribution networks; ii) poor network compatibility/reliability; iii) remoteness of resources from areas which have a high electricity demand; iv) lack of technical expertise; v) affordability; and vi) accessibility to financing. This is particularly relevant when considering MSMEs and households, which are of primary focus in this Program.  
+
+### State of Solar PV in Ghana  
+
+### 29. Ghana has an installed renewable energy (RE) capacity of 162.35 MW as of 202252 (excluding large hydropower installations greater than 100 MW). There are programmes in the process of being implemented focusing on MSME’s and household in terms of financing and increasing access to Solar PV53. Under the Sustainable Energy for All initiative, over 89 communities in Ghana have gained access to solar energy with 4,500 solar systems having been installed.54. Furthermore, other initiatives such as Sustainable Energy for All Country Action Plan (2012), aims to promote greater renewable energy inclusion in the energy supply mix, which also includes greater reliance on solar energy55  
+
+### 30. There are other RE financing programs ongoing from the Sustainable Use of Natural Resource and Energy Finance (SUNREF) program. The SUNREF program is a green term loan with local partner banks involved as well as energy supply companies. This program seeks to support small and medium-sized companies in Ghana when these companies invest in renewable energy production. Such interventions could contribute up to 7 GWh per year reduction in energy consumption and reduce emissions by 3.2 ktCO2e each year. Through large grid solar PV and home solar PV systems, emission reductions of 177.94 and 64.06 ktCO2e/year respectively, are expected by 203056.  
+
+### 31. The aim of SUNREF Ghana is to facilitate access to affordable sustainable energy and allow companies and households to acquire higher quality equipment, make cost savings and become more competitive by managing energy more efficiently while respecting the environment. Together with local partner banks, SUNREF Ghana is offering businesses, organisations, and households an opportunity to access financing for sustainable energy projects, and assistance in structuring green investments.  
+
+### 32. A Loan of 30million euro provided to partner banks on attractive terms (concessional rate loans for long periods,
+
+
+---
+*Chunk pages 15–15*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1155 (sys=94, user=1061), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 11
+
+## References
+
+57 Available online: https://unfccc.int/sites/default/files/resource/Gh_NC4.pdf  
+58 Available online: https://www.energycom.gov.gh/newsite/index.php/reports?download=29:ghana-renewable-energy-master-plan     
+59 Available online: https://unfccc.int/sites/default/files/resource/Gh_NC4.pdf  
+60 Available online: https://unfccc.int/sites/default/files/resource/Gh_NC4.pdf  
+61 World Bank, 2016, Ghanaian firms experience improves access to finance and electricity but challenges remain. Available online: https://blogs.worldbank.org/opendata/ghanaian-firms-experience-improved-access-finance-and-electricity-challenges-remain  
+62 Asumadu-Sarkodie, S. and Owusu, P.A., 2016. The potential and economic viability of solar photovoltaic power in Ghana. Energy sources, Part A: Recovery, utilization, and environmental effects, 38(5), pp.709-716.  
+63 Available online: http://www.energycom.gov.gh/files/Renewable-Energy-Masterplan-February-2019.pdf    
+64 Available online: https://unfccc.int/sites/default/files/resource/Gh_NC4.pdf  
+
+## SUNREF Project
+
+33. The SUNREF project provided training & technical assistance support to partner banks to enable them to understand the green financing space and how to assess green projects (Renewable Energy & Energy Efficiency). The Energy Commission & Technical Assistance Consultants provided technical support to partner banks in the evaluation of green projects. The SUNREF project started in 2020 has currently been extended to middle of 2024.
+
+## Additional Investment
+
+34. Additional investment from other sources, such as the GCF, enable Ghana to achieve renewable energy supply targets by providing additional finance. Crowding of the ASAP program in Ghana is therefore not foreseen. Furthermore, REMP, which was initiated in 2019, aims to increase the renewable energy share of the national energy generation mix from 42.5 MW in 2015 to 1,363.63 MW in 2030. Such targets could equate to reduction in CO₂ of 11 million tonnes.
+
+## Solar PV Vendors
+
+35. There are several active Solar PV vendors in Ghana, which are overseen by the Association of Ghana Solar Industry and have received approval to operate from the National Energy Commission. Solar PV vendors encompass those who import, sell, and/or install solar PV systems. As at end of 2022, there were about one hundred service providers that had been licensed to install and maintain Solar PV systems. According to REMP, the government still aims to increase skills so that more businesses could install and maintain PV systems.
+
+## Net Metering Scheme
+
+36. The Government of Ghana is setting up a net metering scheme that will be able to allow excess electricity from the solar PV system to be incorporated into the national grid. Under this scheme, MSMEs and households will utilize renewable electricity, and any excess could be exported to the national electricity grid. The Energy Commission has prepared net-metering codes and renewable energy sub-codes for transmission and distribution systems.
+
+## ASAP Program
+
+37. Only solar vendors/installers that have been licensed by the Energy Commission can participate in the ASAP Program. As a prerequisite to receiving approval from the Energy Commission, the program's beneficiaries are required to replace all lamps at their facility or residences with low consumption LED lamps. In addition, focus will be placed on the distribution of LED lamps in electrified households, whereas clean lighting focuses on replacing kerosene lamps with solar and dry cells in non-electrified households. According to REMP, solar powered water heaters, irrigation, streetlights, and crop dryers will be prioritized.
+
+## Market Gap Assessment
+
+38. Access to affordable and appropriate financing mechanisms for the acquisition of solar PV remains a key barrier for MSMEs and households. Access to finance was reported as the biggest obstacle to day-to-day operations by half of the firms involved in a survey in 2012, up from one in every three firms in 2007. Despite solar PV being capital intensive to install, subsidies as well as private sector involvement would boost investment possibilities in renewable energy.
+
+39. The scaling up 200,000 solar PV home systems, establishing a solar mini-grid system of 10 MW capacity as well as ensuring the installation of further solar PV systems with a capacity of 150 to 250 MW aims to contribute to the emission reductions. This creates an opportunity for marked expansion in renewable energy projects, particularly the solar energy sector. Renewable energy
+
+
+---
+*Chunk pages 16–16*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1022 (sys=94, user=928), max_out=1024, ctx=8192
+---
+
+# B.2 (a). Theory of change narrative and diagram (max. 1500 words, approximately 3 pages plus diagram)
+
+## Problem Analysis
+
+As of now, Ghana's total solar installed capacity accounts for less than 1% of the energy generation mix. This gap is indicative of insufficient availability of concessional finance that has led to limited adoption of renewable energy technologies, especially in the distributed Solar PV sector. Also, there is a general lack of awareness and understanding regarding the benefits of distributed Solar PV systems among MSMEs and households. This lack of awareness hampers the demand for such systems, even when they can contribute to country’s GHG emissions reduction and long-term energy security. Finally, there is a lack of technical expertise and capacity among local stakeholders, hindering the adoption of solar PV systems.
+
+The below theory of change provides the pathway how ASAP expect to address these issues.
+
+## 40. Mini-grid Electrification Policy
+
+The Mini-grid Electrification Policy developed in 2016 states that mini-grid customers should benefit from the same pricing policy as customers serviced by the main electricity grid under the rural electrification arrangement. This has major implications for mini-grid financing, which may not be viable without cross-subsidies or external subsidies. However, this provides an opportunity for private sector investment in small-scale, home-based renewable energy provision.
+
+An over-supply of on-grid electricity and the current situation of Power Purchase Agreements make mini-grids a potential market opportunity should greater clarity be provided on the role of private sector stakeholders. The main gap in the on-grid market value chain is the availability of long-term capital for project developers. In Ghana, the oversupply of electricity related to Power Purchase Agreements renegotiation also weighs on the market.
+
+## 41. REMP (Renewable Energy Master Plan)
+
+The REMP was developed to provide an investment-focused framework to develop the renewable energy sector in Ghana. REMP also provides a framework to encourage private sector engagement, including the provision of concessional financing and government on-lending facilities to renewable energy investments.
+
+Opportunities for expanding the renewable energy market through an enabling business environment as well as supporting de-risking initiatives, so that increased private sector participation could be encouraged. By 2019, four local companies had been established to manufacture solar PV systems in Ghana. However, REMP has identified the need for local assembly and manufacturing of Solar PV systems to be expanded further.
+
+## 42. Tax Incentives and Financial Support
+
+The REMP also encourages renewable energy generation, such as solar PV systems, by providing tax reductions to locally based companies and exempting them from VAT and import duty on selected equipment and plants.
+
+Despite microfinance institutions and rural banks providing debt financing and additional financial support to MSMEs, these entities do not provide specific energy investment products. A lack of skilled personnel to install and maintain solar PV systems needs to be addressed to encourage private sector investment.
+
+Independent power producers will need to identify which communities could benefit from off-grid projects, yet there are presently no clear criteria differentiating communities that could benefit from off-grid and grid-connected electricity. Presently the Ghana tariff policy is a potential barrier for grid-connected investments.
+
+The Grid Code would require revision and needs to include specific conditions enabling renewable energy generators to provide accurate data. The above is compounded by the fact that Ghana's utilities, regulators, financial institutions, and project developers have limited experience and capacity to structure and develop bankable Power Purchase Agreements.
+
+## References
+
+65 Available online: http://www.energycom.gov.gh/files/Renewable-Energy-Masterplan-February-2019.pdf  
+66 Available online: http://www.energycom.gov.gh/files/Ghana%20Integrated%20Power%20System%20Master%20Plan%20_Volume%202.pdf   
+67 Available online: http://www.energycom.gov.gh/files/Renewable-Energy-Masterplan-February-2019.pdf  
+68 Available online: http://www.energycom.gov.gh/files/Renewable-Energy-Masterplan-February-2019.pdf  
+
+## Page 12
+
+[Page 1]
+
+
+---
+*Chunk pages 17–17*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=633 (sys=94, user=539), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 13
+
+## Theory of Change Diagram
+
+44. The theory of change (ToC) illustrates how each of the three components of the program is interrelated and contribute to the long-term objective of breaking down the barriers needed in reducing emissions from power generation in Ghana. The Program aims to achieve the GCF fund level outcomes of "increased number of small, medium and large low emission power suppliers" in Ghana by enabling increased investments in renewable energy amongst end-user households and MSMEs, and to stimulate supply and demand for renewable energy products through innovative financing mechanisms, capacity building and awareness raising.
+
+45. The ToC, presented in Annex 24, conveys the sequence of logic underpinning ASAP. It highlights how, through the achievement of the project's outcomes, a wide-reaching long-term goal will be achieved. It also shows how the results of the project's activities will see the outcomes realised, as well as how the activities will address any barriers and risks to the achievement of the outcomes. Additionally, any key assumptions necessary for the achievement of project outcomes are presented.
+
+## Problem Statement
+
+46. The impacts of climate change on water supplies in Ghana is reducing the country's capacity for hydropower. Options for other forms of renewable energy (RE), such as solar PV, are limited because of limited financial (including loan finance) and technical (including supply and maintenance capacity across the country). As a result, thermal power plants (which use fossil fuels) are being relied on increasingly, which is increasing GHG emissions severely hindering Ghana's progress towards its mitigation targets. Without GCF finance, the expansion of solar PV as a renewable energy option will be limited, and the country will continue to rely on thermal power, limiting the country's intended contribution to climate change mitigation.
+
+## Goal Statement
+
+47. IF Households (HH), MSMEs and Cooperatives gain access to adequate financing options for Solar PV installations alongside awareness raising and development of institutional capacity, THEN the share of renewable energy will increase in Ghana and the sector emissions footprint will be lowered, BECAUSE there will be a demonstrated business model to finance the Solar PV market that will create more opportunities, expertise and knowledge about financing clean energy, especially the Solar PV value chain.
+
+
+---
+*Chunk pages 18–18*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1023 (sys=94, user=929), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 14
+
+## 48. Paradigm Shift Potential
+
+The program promotes an overall paradigm shift within Ghana as it enables HOUSEHOLDs and MSMEs to access financing to generate more sustainable power, thereby lowering the cost to enter the market for other HOUSEHOLDs and MSMEs and creating competition. In addition, it promotes an overall paradigm shift as it calls for affordable financing options for RE and builds the technical know-how on how to administer Solar PV loans. At the same time, technicians and working-level people involved in the program will be able to expand on their knowledge and skillset normalizing the practice of providing affordable financing for Solar PV loans. The project, therefore, has the potential to transform power generation and reduce energy emissions from energy access and power generation.
+
+## 49. Three outcomes will contribute to the realisation of the project’s goal and paradigm shift potential
+
+(i) Outcome 1: 30.59 MW of new renewable energy capacity installed ( GCF core indicator 1.3) leading 1,005,378 MWh of clean energy generated (GCF core indicator 1.1)
+
+(ii) Outcome 2: Solar PV market is transformed, and Net metering is catalyzed (GCF core Indicator 7).
+
+(iii) Outcome 3: Dissemination of Solar PV technology and awareness on clean energy is increased across the markets (GCF core indicators 6 and 8).
+
+## 50. Several financial, institutional, and technological barriers stand in the way of achieving the program’s outcomes, including:
+
+a) lack of adequate financing options for distributed energy systems;
+
+b) high upfront costs, including those required to provide financing for solar PV;
+
+c) Limited awareness on financing options and net metering benefits;
+
+d) Increasing reliance on Diesel generators during electricity interruptions;
+
+e) lack of capacity in the energy sector and among energy professionals in Ghana on the latest solar PV technologies;
+
+f) lack of knowledge of administering green loans; and
+
+g) lack of unified knowledge among solar PV providers on the newest technological improvements in solar energy.
+
+## 51. The program is made up of three primary components with activities specifically designed to address the barriers presented above:
+
+## 52. Component 1 Deployment of Solar PV Loans
+
+The program provides affordable and appropriate financing solutions for viable Solar PV projects, to help address the existing financing gap for these investments in Ghana. By providing concessional loans to HOUSEHOLDs and MSMEs the program decreases the high upfront cost which has been identified as the primary barrier to solar PV uptake and enables a larger segment of society to afford access to clean energy. The lack of affordable financing options and the cost of finance has been a major obstacle for Ghanaian HOUSEHOLDs and MSMEs in the RE sector. Interest rates are especially unfavourable (38% as at 2023) and loan tenors no more than 3 years. Thus, the blended financing from GCF and Ecobank substantially lowers the interest rate and extends the tenor period up to 7 years, providing an opportunity to revolve the loan. At the culmination of the project, the aim is to decrease the perceived risk that currently exists in the market, decrease the cost of financing RE projects and finance commercially viable solar PV projects.
+
+## 53. Component 2 Development of Institutional Capacity
+
+Ghanaian banks do not have the knowledge or ability to take on risks in providing financing for clean energy. HOUSEHOLDs and MSMEs often lack the technical capacity and knowledge on how to maintain Solar PV systems. This perpetuates the lack of implementation of clean energy power generation and the ability to sustain viable clean energy programs such as Solar PV.
+
+## 54. To ensure the long-term viability of the program, capacity development must take place at several different stages. This includes training Ecobank loan officers, training solar PV vendors on the ASAP Ghana program, training EC officers on the ASAP Ghana Program, and establishing a campaign and certification of the Solar PV program. Each of these is essential in ensuring the sustainability of the
+
+--- END EXTRACTED TEXT ---
+
+
+---
+*Chunk pages 19–19*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=885 (sys=94, user=791), max_out=1024, ctx=8192
+---
+
+# [Page 1]
+
+## B. GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 15
+
+### projects as it increases the capacity and knowledge of lending institutions to administer green loans and  
+Solar PV loans. At the same time, it is essential on the upstream end as it provides technical and up to  
+date knowledge for engineers, technicians,  HOUSEHOLDs and MSMEs on the latest technological  
+innovations in Solar PV and how to maintain them as well.   
+
+### 55. Component 3 Advocacy and Outputs Dissemination : This component focuses on ensuring that  
+knowledge captured and gained through the ASAP program for the beneficiaries reaches new markets  
+and is replicable. To do this, the component sets out on ensuring there is a robust RE strategy in place  
+based on the ASAP program that can further guide the implementation and uptake of RE  in Ghana. As  
+part of the evidence gathering, awareness and advocacy raising, the component calls for knowledge  
+exchange activities at professional sector level gatherings to further inform on the program and aim for  
+it to be adaptable and adoptable to a greater spectrum.   
+
+### 56.Key assumptions: The realisation of the project’s three outcomes is underpinned by four key  
+assumptions:  
+
+1. Scaling-up renewable energy infrastructure can improve Ghana’s ability to meet its emissions  
+reduction targets;  
+2. Capacity development trainings are sufficient to enhance the capacity of Ecobank  to deploy solar  
+PV loans and for energy professionals to gain expertise on the installation and maintenance of the  
+latest solar PV technologies;  
+3. Knowledge dissemination and awareness -raising strategies will be sufficient to reach the target  
+beneficiaries;  
+4. The political climate in Ghana will be stable and there will be an active interest in the uptake of clean  
+energy technologies by the target beneficiaries.  
+
+The diagram of the theory of change is presented in Annex 24 at the end of this Funding Proposal.  
+
+## B.2 (b).   Outcome mapping to GCF results areas and co-benefit categorization  
+
+Fill in the GCF results area table below to map each project/programme outcome identified in section B.2(a) to the contributing  
+GCF results area(s) by referring to the description of eight results areas provided in the guidance note.  
+
+| Outcome number | GCF Mitigation Results Area (MRA 1-4) | GCF Adaptation Results Area (ARA 1-4) |
+|----------------|---------------------------------------|---------------------------------------|
+| MRA 1          | Energy generation and access          | ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐                        |
+| MRA 2          | Low-emission transport                | ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐                        |
+| MRA 3          | Building, cities, industries, appliances | ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐                        |
+| MRA 4          | Forestry and land use                 | ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐                        |
+| ARA 1          | Most vulnerable people and communities | ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐                        |
+| ARA 2          | Health, well-being, food and water security | ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐                        |
+| ARA 3          | Infrastructure and built environment  | ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐                        |
+| ARA 4          | Ecosystems and ecosystem services     | ☐ ☐ ☐ ☐ ☐ ☐ ☐ ☐                        |
+
+### Outcome 1:  
+Deployment of Solar PV Loans  
+☒ ☐ ☐ ☐ ☐ ☐ ☐ ☐  
+
+### Outcome 2:  
+Development of Institutional  
+Capacity  
+☒ ☐ ☐ ☐ ☐ ☐ ☐ ☐  
+
+### Outcome 3:  
+Advocacy and Outputs  
+Dissemination  
+☒ ☐ ☐ ☐ ☐ ☐ ☐ ☐  
+
+If any co-benefits have been identified in section B.2(a), fill in the Co-benefit table below to map each co-benefit to the  
+corresponding category as defined in the FP guidance note.  
+
+Co-benefit
+
+
+---
+*Chunk pages 20–20*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=782 (sys=94, user=688), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 16
+
+## 69 The Renewable Energy Act of 2011, (Act 832): http://www.energycom.gov.gh/licensing/licensing-renewable-energy-sector  
+
+| Co-benefit | Environmental | Social | Economic | Gender | Adaptation | Mitigation |
+|------------|---------------|--------|----------|--------|------------|------------|
+| Increased number of households, MSMEs with access to low carbon energy solutions | ☒ | ☒ | ☒ | ☐ | ☒ | ☒ |
+| Increased number of loans at attractive rates to HHs and MSMEs to lower cost of energy and streamline solar PV | ☒ | ☒ | ☒ | ☐ | ☒ | ☒ |
+| Creation of Green jobs and increased employment in the sector | ☒ | ☒ | ☒ | ☒ | ☒ | ☒ |
+
+## B.3. Project/programme description (max. 2500 words, approximately 5 pages)
+
+### 57. The ASAP program is designed to address the financing gap and barriers for accessing solar powered energy in Ghana, contribute to the reduction of greenhouse gas emissions (GHG) and create a more favourable environment for sustainable energy financing over the long term. The total cost of the ASAP program is USD 31.57 million. GCF funding is critical to lower the cost of financing for the installations to a competitive level and to help adjust the terms of available financing to the cash flows of the program beneficiaries.
+
+### 58. The GCF USD 15 million loans to Ecobank will be blended with USD 15 million of Ecobank's resources, for a total of USD 30 million dedicated loans to customers for distributed Solar PV systems. The Program also includes a non-reimbursable grant of USD 79,0030, provided by the GCF, for capacity building, technical assistance and awareness raising components. The remaining amount of USD 787,500 funded by GCF and Ecobank is to manage the 13 years project. Ecobank will use the GCF loan, and its co-financing, to provide loans to MSMEs and households for financing distributed Solar PV systems.
+
+### 59. The Project is expected to play a critical role in providing necessary financing that is currently not available in the market. The ASAP program will help address the upfront cost barriers of the solar PV technology and it will indirectly allow the growth of the skills of local partners to assess and implement similar PV projects in the future.
+
+### 60. Ecobank will only accept companies that have been certified/licenced by the Ghana's Energy Commission (EC) as technology vendors for the ASAP program to ensure the adoption of the best available technology and the program will only allow the deployment of solar panels and related accessories that have been approved and certified by the EC. EC has a regulatory framework69 in place that ensures solar PV importers/suppliers have their products tested with Ghana Standard Authority, and it also registers all vendors that are in the business of installation and maintenance of solar PV in Ghana.
+
+
+---
+*Chunk pages 21–21*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1234 (sys=94, user=1140), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 17
+
+## 61. The proposed program will finance households and MSMEs to allow the financial close, construction and operation of distributed Solar PV systems to demonstrate their technical and financial viability in the Ghana market. ASAP will act as a validation for investors and lenders currently unable to participate in funding arrangements thereby helping pave the way for future participants. A key element of the ASAP program is providing a basis for the predictability of the revenue model for commercial bankability and long-term financial sustainability.
+
+## 62. The concessionality provided by the ASAP program will be targeted at overcoming short term risks and cost barriers. The concessionality in interest rates offered by GCF will be passed on to the end beneficiaries and its impact calculated on the levelized cost of electricity (LCOE) for the beneficiaries. The calculated LCOEs ($/kWh) using the prevailing market rate of about 40.28% (as at 30th November 2023), without GCF concessionality are: $0.087/kWh for Households, $0.094/kWh for MSMEs (and $0.038/kWh for Irrigation Cooperatives) respectively. With GCF concessionality, LCOE is estimated at $0.068/kWh for HHs, $0.073/kWh for MSMEs (and $0.034/kWh for Irrigation Cooperatives) respectively (calculations included in Annex 3 Economic and financial analysis).
+
+## 63. All the program components and sub-components will be implemented by Ecobank Ghana acting as the Accredited Entity and the sole Executing Entity of all the components of this proposal.
+
+## 64. Component 1. Deployment of Solar PV Loans: Deployment of concessional loans by Ecobank for distributed Solar PV systems to the target beneficiaries of the ASAP. The rationale behind the numbers is that Ghana's electricity tariff for residential customers is in 3 tiers (GHS1-50kWh/month, GHS 50-300kWh/month, GHS 300-600kWh/month and GHS 600+kWh/month). The target group in the residential sector consume 300+kWh/month and MSMEs 600+kWh/month, which presents an economic case for that category because of higher tariff progression in Ghana. As you consume more, you pay more. The ASAP program will only provide loans to two key beneficiaries (and one sub-sector): (1) Residential households that are grid-connected and have a monthly electricity bill of more than approximately USD 50 or consumption of 300kWh; and (2) MSMEs that are grid-connected and have a monthly consumption of more than 600kWh and/or an electricity bill of more than USD100 per month. For MSMEs, the PV installation will have an average power of 30kW. Irrigation cooperatives will be a sub-set of MSMEs, and their monthly consumption should be more than 2,000 kWh. This component has two sub-components:
+
+## 65. Sub-component 1.1: Solar PV Loans to Households, and Sub-component 1.2: Solar PV Loans to MSMEs and Cooperatives: Under this component, Ecobank will receive a loan of USD 15 million from the GCF, and it will blend the GCF funds with Ghana Cedis equivalent of USD 15 million of its own resources, to offer Solar PV loans at attractive rates and with tenors of up to 7 years to the ASAP program eligible beneficiaries. AE will convert GCF loan proceeds to, and on-lend to Sub-Borrowers in, local currency (i.e., Ghana Cedis or "GHS") based on prevailing market spot rates as advised by the Central Bank of Ghana. Accordingly, the AE will bear the foreign exchange risk ("FX") and shall make payments to GCF in USD under the FAA.
+
+## 66. From the experience of Ecobank Asset Finance Product Program for the HHs and MSMEs, Ecobank is confident that the ASAP program eligible beneficiaries will be able to repay the loans within a maximum of 7 years (with a 1-year tenor that will be the loan repayment time in the minority of cases) and therefore Ecobank will have the opportunity to recycle the GCF funds within the proposed 14-year tenor of the GCF loan to Ecobank. Ecobank's Asset Finance Product Program experience in the market demonstrated that these types of loans have proven to have a low probability of default rate, therefore the direct loans with no or limited cash collateral are considered appropriate to finance the local Solar PV market.
+
+## 67. Ec
+
+
+---
+*Chunk pages 22–22*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1039 (sys=94, user=945), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 18
+
+## 68. All commercial banks in Ghana apply the Ghana Reference Rate (GRR) in arriving at the effective interest rates for their clients. This will also apply to Ecobank’s co-financing and is subject to variation on monthly basis. Having said that, the attraction of the ASAP to the target clients is beyond doubt by virtue of the concessional interest rate of the GCF Loan to Ecobank that will be passed on to the ASAP beneficiaries.
+
+## 69. Under this program, the energy generated by the ASAP beneficiaries will be used for own consumption by Households and MSMEs and hence capital expenditure (CAPEX) financing only will be provided by the program.
+
+## 70. A two-pronged approach will be applied for the selection of eligible Households and MSMEs (including Irrigation Cooperatives) for prioritizing eligible beneficiaries: an eligibility criterion considering business registration, sector, ownership and management, gender, financial capacity, and records, and a scoring system based on Ecobank checklist, and in accordance with GCF criteria as expressed in the Funded Activity Agreement (FAA).
+
+## 71. Component 2. Development of institutional capacity. Developing institutional capacity is a core part of the ASAP Program because to ensure the long-term sustainability of the Program, it will be crucial to build the capacity of Ecobank loan officers and to provide training through the solar PV value chain to the private sector, public sector, solar PV vendors and the EC of Ghana. This component has four sub-components:
+
+## 72. Sub-component 2.1: Training of Ecobank loan officers on the ASAP Ghana Program: This sub-component is targeted at training Ecobank staff to support the full implementation of all components of the program, from program development to program implementation and monitoring. For the program to be successful, it is important that Ecobank desk officers assigned to the program are well versed and knowledgeable about loan origination for Solar Rooftop PV investments (capital budgeting, energy audit, production efficiency evaluation etc.), loan appraisal using credit, gender and climate screens and can provide advisory support to the target borrowers for reducing default risks.
+
+## 73. This sub-component is therefore designed to strengthen the capacity of the Ecobank workforce to support program implementation. On this basis, five (5) capacity building workshops have been factored into this sub-component to achieve its objectives. This includes four (4) training workshops in the first 2 years of the program (2 per year) and one in the third year.
+
+## 74. In year one, the first two training workshops will focus on loan origination targeting Solar Rooftop PV investments, loan appraisal using credit, gender and climate screens, and preparation of loan applications. In the second year, the focus of the workshops will be on Solar Rooftop PV project monitoring and evaluation. The last workshop in year 3 will concentrate on advisory support to the target borrowers for reducing default risks in loan repayments.
+
+## 75. Sub-component 2.2: Training of Solar PV Vendors on the ASAP Ghana Program - To ensure Program success, it will also be critical to provide capacity building activities to solar PV technology vendors. This training will target quality Solar PV vendors to enable them to better understand, use and promote the Program. Ecobank will identify, select, and lead capacity-building activities to train 250 solar PV vendors.
+
+## 76. The implementation of the National Rooftop Solar Program (NRSP) in 2016 led to an upsurge in the number of solar PV vendors. The number of licensed solar PV companies increased from about 25 to over 100 companies by end of 2018. Currently, there are over 2,00 registered solar vendors in the database of the EC, however, the number of companies with valid License is below 100. This is because the NRSP was suspended due to funding issues, among other things. There is therefore a need to organize training and refresher courses in the design, installation and maintenance of solar PV systems taking into consideration current trends and new or advanced technological improvements in the solar
+
+
+---
+*Chunk pages 23–23*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=973 (sys=94, user=879), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 19
+
+## Sub-component 2.2: Training for the Energy Commission Officers on ASAP Ghana Program
+
+As a technical regulator for the renewable energy industry, the EC has Engineers who undertake inspection and assessment of solar PV systems and ensure compliance. Ten (10) of such Engineers would be dedicated to the ASAP program. These personnel will be provided with the requisite training on the various aspects of the program and technical issues in relation to solar PV system design, installation, and maintenance to ensure the sustainability of the Program. The Energy Commission will work together with distribution utilities in the performance of the above activity.
+
+## Sub-component 2.3: Training for the Energy Commission Officers on ASAP Ghana Program
+
+There are currently over 7 solar PV training schools spread across the country that offer training in the design, installation, and maintenance of solar PV systems. One or more of these training institutions will be procured through a competitive process to provide the services that will lead to the training program provided by sub-component 2.3 of ASAP.
+
+## Sub-component 2.4: Sensitization and Certification of Solar PV Vendors on ASAP Ghana Program
+
+There are currently over 200 Solar PV Vendors within the database of EC. A workshop will be organised to share the concepts and program requirements and eligibility criteria for Solar PV Vendors to participate in the ASAP program. This will include the production of ASAP program material and the engagement of consultants to deliver the workshop. A 1-day Sensitization workshop will be led by 4 Consultants, and it will be organised at 3 zones across the country for the 200 solar PV vendors: southern, northern, and middle-belt zones. Solar PV vendors will be shortlisted to participate, and an agreement will be signed with each vendor.
+
+The licensed Solar PV Vendors will be assessed, their products tested by the Ghana Standards Authority (GSA) under this activity, and only qualifying Vendors will be certified for the ASAP program in line with the program eligibility criteria. A Program Implementation Agreement will also be signed with the qualifying Solar PV Vendors. It is estimated based on EC’s market assessment that, about 80% of the existing licensed 200 Solar PV Vendors who will be sensitised and assessed will be certified to participate in the ASAP program. As part of the eligibility criteria, the estimated 160 solar PV Vendors will submit 3 key components (solar panels, inverter, regulator/battery for testing and certification by the GSA), and ensure that, the products continue to always meet the minimum technical standards throughout the entire duration of the ASAP Program.
+
+## Component 3. Advocacy and Outputs Dissemination
+
+The establishment of a strong communication system to present the ASAP program and its results will be crucial to ensure an initial interest by potential beneficiaries and later for the replicability of similar initiatives without GCF intervention, thus, to foster the sustainability in time of the proposal. This component has two sub-components:
+
+## Sub-component 3.1: Raising greater awareness concerning the program initiative for potential replication and upscaling within Ghana
+
+This will be achieved through two sets of marketing activities:
+
+### Media Marketing
+
+Ecobank will develop a marketing and awareness-raising strategy to promote the Program and generate awareness of the benefits of Solar PV. The marketing and awareness-raising strategy will target households and MSMEs. Four (4) Marketing campaigns on TV, Radio, Print, and social media. Three (3) weekly slots (468 total) will be secured for the respective Radio, TV, Print, and social media platforms.
+
+---
+
+
+---
+*Chunk pages 24–24*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=935 (sys=94, user=841), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 20
+
+## 70 For more information: https://ecobank.com/group/investor-relations/corporate-governance/money-laundering  
+and TV channels, and two (2) weekly slots (312 total) on Print and Social media platforms over  
+the 3-year implementation period.
+
+### b. Events Marketing: Sensitization workshops and seminars will be organized to share experiences.  
+The Program will also deliver focused publicity, such as targeting the annual conferences of  
+professional bodies and present the Program to them, as well as exhibit at the annual Ghana  
+Renewable Energy Fair (Conference and Exhibition), which is organized by the EC.  Ecobank  
+will procure all the external services needed to perform the activities and achieve the results  
+included in this sub-component. This will entail the sponsorship and participation in two (2) annual  
+marketing events during the first three years of the program (6 total) to promote the ASAP  
+program through exhibitions and presentations during the events.
+
+## 84.Sub-component 3.2: Inclusive stakeholders’ engagement and advocacy to build support. Under this sub-  
+component, Ecobank will engage with industry representatives and policy makers to build support and  
+foster collaboration and dialogue between beneficiaries and technology suppliers with the aim to improve  
+understanding and advocate best practices in the deployment of solar PV technology. This engagement  
+will be inclusive, ensuring that at least 40% of engaged stakeholders are women.
+
+## B.4. Implementation arrangements (max. 1500 words, approximately 3 pages plus diagrams)  
+
+### 85. As the accredited entity and executing entity Ecobank will maintain the responsibilities of the Project to  
+the GCF as per the terms agreed between Ecobank and GCF in the Accredited Entity Master Agreement  
+(AMA) and to be agreed in the specific Funded Activity Agreement (FAA) for this proposal.
+
+### 86. Ecobank will ensure full compliance for both the debt and the grant components of the Funding Proposal.  
+Part of this compliance will include ensuring the Environmental and Social Management Framework  
+(ESMF) are followed, Know Your Customer (KYC) checks on all the borrowers and apply Ecobank’s  
+procurement policy on the implementation of the grant funding.
+
+### 87. Ecobank has an Anti-Money Laundering Policy (AML) policy in place and would be duly applied to this  
+project. The Group’s AML covers all activities designed to protect the Group from being used as a  
+medium for facilitating illegally obtained money from sources including illicit trafficking in narcotic drugs  
+and psychotropic substances, participation in an organized criminal group, illicit arms trafficking,  
+corruption, smuggling, fraud and robbery or theft, embezzlement, or any other criminal activities.70  
+
+### 88. Ecobank has extensive experience in the management of Climate Finance transactions directly or in  
+partnership with International Organizations such as USAID, World Bank,  and International Finance  
+Corporation (IFC).  Ecobank’s Asset Finance Product Program experience in the market demonstrated  
+that these types of loans have proven to have a low probability of default rate, therefore the direct loans  
+with no or limited cash collateral are considered appropriate to finance the local Solar PV market.  This  
+would contrast with  general market requirements where borrowers are required to provide alternative  
+collaterals to secure loans for Solar PV systems as re-marketability of the systems are considered to be  
+low.  
+
+### 89. The Risk Management Department of Ecobank Ghana will oversee the ASAP Ghana project. Ecobank  
+will set up a GCF Desk composed of personnel who have capabilities in appraising loan transactions.  
+As set out in the budget, the ASAP Ghana program will be incorporated into the program and budget of  
+Ecobank’s operations to ensure that resources are available.
+
+
+---
+*Chunk pages 25–25*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1046 (sys=94, user=952), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 21
+
+## 90. The GCF Project Cycle
+
+The GCF Project Cycle is the framework used by Ecobank Ghana to design, prepare, implement, and supervise GCF projects. The six stages of the Project Cycle are:
+
+1. **Identification**
+2. **Preparation**
+3. **Appraisal**
+4. **Negotiation/Approval**
+5. **Execution**
+6. **Evaluation**
+
+In the project identification phase, the aim is to identify projects that have a mutual high priority for both the borrower and Ecobank, and that appear suitable for Ecobank support. Projects must be consistent with GCF’s Environmental and Social Safeguards, which incorporate and reflect the dialogue between Ecobank and the Borrower and that will be part of conditions agreed upon in the Offer/Commitment Letter between Ecobank and the Borrowers in the value chain (Vendors, Installers, and End-users).
+
+## 91. GCF Loan and Funding
+
+The GCF will enter an FAA with Ecobank, and it will provide a loan of USD 15 million to Ecobank and therefore the GCF will solely take credit risk on Ecobank. Ecobank will blend the GCF USD 15 million loan with USD 15 million of Ecobank’s resources, to provide a total of USD 30 million dedicated loans to customers for Distributed Solar PV systems, the beneficiaries of the ASAP program, MSMEs (including Irrigation Cooperatives as a special subset of MSMEs) and households.
+
+The Program also includes a non-reimbursable grant of USD 790,030, provided by the GCF, for capacity building, technical assistance and awareness raising components. The remaining amount of USD 787,500 funded by GCF and Ecobank is to manage the 14 years project.
+
+Ecobank will use the GCF loan, and its co-financing, to provide loans to MSMEs and households for financing distributed Solar PV systems.
+
+## 92. Ecobank's Role in Beneficiary Selection
+
+Ecobank will apply its policies and credit assessment for the section of the beneficiaries of the ASAP program, and it will screen, select, and approve the eligible beneficiaries to receive a loan for the installation of solar PV systems.
+
+Ecobank will be the lender on record for all the loans provided by ASAP and thus enter into the relevant loan agreements with the selected beneficiaries, which are MSMEs (including Irrigation Cooperatives as a special subset of MSMEs) and households. Ecobank will play an oversight role to ensure the project overall objectives are achieved and on budget.
+
+“No Objection” will be sought during the procurement processes, engage a Verification Consultant to undertake ex-ante and ex-post impacts of the ASAP project as well as active participation in all Project Steering Committee (PSC) meetings:
+
+### a. Consultant Engagement
+
+Ecobank will work with Energy Commission (EC) in the recruitment of consultant through International/National Competitive Bidding process. The consultant will assist Ecobank Ghana Limited and EC in the implementation of the ASAP to include reporting on project progress; present payment requests; provide financial report; and to build capacity of Ecobank Ghana Limited and EC staff in ensuring sustainability of the ASAP project.
+
+### b. Project Management Unit (PMU)
+
+The PMU will be under the direct supervision of Ecobank and be responsible for the implementation of the ASAP project which will include arrange and manage the contract with service providers. The PMU will be hosted by the Ecobank Ghana Limited. The PMU will organize PSC meetings, prepare unaudited interim financial reports, and manage the designated project account and processing of direct payments.
+
+### c. Project Steering Committee
+
+The Project Steering Committee (PSC) will assume the overall institutional responsibility of the project. The Committee will provide overall oversight responsibility in reviewing and validating the project’s annual work plan and budget. The Committee will be chaired by Ecobank Ghana Limited. Other members of the Committee will include the Ghana Irrigation Development Authority (GIDA), EC, Reps from Civil Society Organisation (CSO) and other key related stakeholders. There is an option to invite other participants as observers to the meetings. The PSC will meet quarterly.
+
+
+---
+*Chunk pages 26–26*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=954 (sys=94, user=860), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 22
+
+## 93. As Ecobank will be the lender on record for the loans it will bear the credit risk of the final beneficiaries. All loans to the ASAP beneficiaries will only be provided in local currency, GHS.
+
+## 94. Ecobank will bear completely the foreign exchange risk for all the loans it will issue under the ASAP program in local currency. Ecobank will be hedged using Ecobank’s balance sheet and pricing the hedge using the interest rate differential between the local currency funding cost and foreign currency bond of an equivalent tenor or through other conventional pricing alternatives including by not limited to “The Currency Exchange Fund (‘TCX’)”. The local currency cost of funding for the equivalent tenor is calculated by adding a margin to the yield of the local currency bond of an equivalent tenor at which the local currency funds can be attracted.
+
+## 95. Below is an indicative cost of hedge analysis based on prevailing market conditions in 2023:
+
+- The yield on 14-year LCY Bond – 36%
+- Premium to attract 14yr LCY Deposits from clients – 2%
+- Cost of 14-year LCY Deposit-% (i+ii) = 38%
+- The yield on 14-year FCY Bond: 9.6%
+- Cost of Hedge -% (iii-iv): 28.4%
+
+## Implementation arrangements and Contractual Agreements
+
+### Component 1. Deployment of Solar PV Loans - Sub-component 1.1 : Solar PV loans to Households, and Sub-component 1.2: Solar PV loans to MSMEs and Cooperatives
+
+## 96. Ecobank loan structures normally provide for the payment of equal instalments of principal after the expiration of any grace period. Principal instalments should normally be paid monthly or quarterly. Other structures may be appropriate and acceptable but typically require a higher degree of scrutiny.
+
+## 97. Loans with the following characteristics are typically deemed as unusual risk: loans with tenors that are greater than 5 years; or loans with tenors greater than one year with either: bullet repayments, grace periods more than 1 year, an amortization schedule that does not involve equal instalments of principal after the grace period; or instalments payable on a schedule which is longer than quarterly. Loans with these characteristics are usually considered as unusual risk and require higher levels of approval.
+
+## 98. However, under the GCF facility, by virtue of the long-term nature of the loan from the GCF to Ecobank, of 14 years, Ecobank intends to handle all such transactions within the team. Loan amortization would be matched to the cash flow cycle of the borrowers.
+
+## 99. To speed up the turnaround time for GCF credit requests, a pre-approved checklist would be incorporated in the product program that Ecobank uses in approving MSME transactions where no financials and other detailed information are required. In the case of households, the individual will first approach an Ecobank relationship officer. They will do an initial screening of the investments and gather all the required information before forwarding this to the Credit Analyst. The relationship officers are guided by an approved target market and before proceeding to submit a Call Report, a Risk Manager or Credit Analyst would also have consented to initiate a credit application. The credit application package is put together by the Credit Analyst who would then submit it for an independent appraisal by the Risk Officer in the Risk Management Department.
+
+## 100. At least three (3) Bank Credit Committee (BCC) members are needed to approve a Credit, one of whom must be a Risk Officer in the Risk Management Department. One of the BCC members must also have the required Credit Approval Limit that covers the total Facility Limit.
+
+
+---
+*Chunk pages 27–27*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=686 (sys=94, user=592), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 23
+
+## 101. In the case of MSMEs, the individual MSMEs representatives will directly approach Ecobank’s MSME department. Once the loan project is developed it will be submitted to a specific unit in charge of the Program for review/appraisal. Once they have cleared the proposed loan project, it will be submitted to BCC for approval. In case it is not approved, a more in-depth appraisal of the project may be required.
+
+## 102. As indicated in earlier section B .3, a two-pronged approach will be applied for the selection of the eligible households and MSMEs (including Irrigation Cooperatives) for prioritizing eligible beneficiaries. Detailed eligibility criteria will be included in the Term Sheet, together with all loan terms to ASAP beneficiaries. The two-pronged approach includes:
+
+(i) an eligibility criterion considering business registration, sector, ownership and management, gender, financial capacity, and records; and  
+(ii) a scoring system based on Ecobank checklist, and in accordance with GCF criteria as expressed in the FAA.
+
+## Components 2 and 3: Agreement for the Grant
+
+## 103. The program also includes a non-reimbursable grant that will be fully financed by the GCF. The grant will be used to finance the activities under components 2 and 3 of the program. To reiterate, for component 2: Developing Institutional Capacity, a grant of USD598,030 and for component 3: Advocacy and Outputs Dissemination a grant for USD192,000. A Program Implementation Agreement will also be signed with the qualifying Solar PV Vendors.
+
+It is estimated based on EC’s market assessment that, about 80% of the existing licensed 200 Solar PV Vendors who will be sensitised and assessed will be certified to participate in the ASAP program. As part of the eligibility criteria, the estimated 160 solar PV vendors will submit 3 key components (solar panels, inverter, and regulator/battery) for testing and certification by the GSA, and ensure that, the products continue to always meet the minimum technical standards throughout the entire duration of the ASAP Program. On the other hand, the contractors and trainers will be sourced through Ecobank’s Human Resources department. The bank has an existing list of consultants and trainers. If none of the existing names meet the training needs under the programme, a request for proposal will be sent out and consultants and trainers who meet the required training needs.
+
+
+---
+*Chunk pages 28–28*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=720 (sys=94, user=626), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 24
+
+## Project Management Cost (PMC)
+
+104. The programme includes a cost of USD787,500 for credit due diligence, monitoring, verification, and reporting as well as activities of the PMU. These Project Management costs are covered at 48% by the Accredited Entity.
+
+105. Ecobank will manage and execute all the grant activities of the Program (components 2, 3, and PMC), as presented in the diagram below.
+
+## Experience and Track Record of Ecobank
+
+Please see Annex 23 for Climate Finance transactions that Ecobank Ghana Limited has financed over the years.
+
+106. To provide some information on the experience and track record of Ecobank in the financing of Distributed Solar PV systems, it is worth mentioning the Ecobank Ghana Solar Energy Project launched in 2019. The Ecobank Ghana Solar Energy project supports a sustainable, green, clean, and efficient global energy change and enhances the operational efficiency of the bank through a reduction in electricity consumption. The project aligns with sustainable development goals (SDGs) 3 and 7, and the Sustainable Energy for All (SE 4 ALL) initiatives of the UN and has been achieved largely by complementing sole dependence on the national grid with solar energy.
+
+107. Following a successful 15-month pilot with six branches, to replace high-energy consuming equipment and introduce solar, project execution began in early 2019. Since then, thirty-two (32) branches representing 51% of the branch network and ten (10) off-site ATMs locations ran a hybrid system. This has resulted in an average monthly energy cost savings of between 30%-40%.
+
+## Component 2. DEVELOPING INSTITUTIONAL CAPACITY
+
+2.1. Training of Ecobank loan officers on the ASAP Ghana Program  
+2.2. Training of solar PV providers on the ASAP Ghana programme  
+2.3. Training for the Energy Commission Officers on ASAP Ghana Program (including inspection, technical monitoring, verification)  
+2.4. Sensitization and Certification of Solar PV Vendors on ASAP Ghana Program (including certification and signing of programme implementation agreement).
+
+## Component 3. ADVOCACY AND OUTCOME DISSEMINATION
+
+3.1. Raising greater awareness concerning ASAP for potential replication and upscaling within Ghana  
+3.2. Inclusive stakeholders engagement and advocacy to build support  
+
+## PROJECT MANAGEMENT COST
+
+GRANT ACTIVITIES  
+ECOBANK GHANA  
+GCF  
+
+--- 
+
+*Note: Page numbers are preserved as per the original document.*
+
+
+---
+*Chunk pages 29–29*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1228 (sys=94, user=1134), max_out=1024, ctx=8192
+---
+
+# B.5. Justification for GCF funding request (max. 1000 words, approximately 2 pages)
+
+## Socio-economic context
+
+109. Ghana’s economy entered a full-blown macroeconomic crisis in 2022 on the back of pre-existing imbalances and external shocks. Large financing needs and tightening financing conditions exacerbated debt sustainability concerns, shutting off Ghana from the international market. Large capital outflows combined with monetary policy tightening in advance d economies put significant pressure on the exchange rate, together with monetary financing of the budget deficit, resulting in high inflation. These developments interrupted the post COVID-19 recovery of the economy as GDP growth declined from 5.1% in 2021 to 3.1% in 2022. The 2022 fiscal deficit was well above target at 11.8%. Public debt rose from 79.6% in 2021 to over 90% of GDP in 2022, as debt service-to-revenue reached 117.6%.
+
+110. To help restore macroeconomic stability, Ghana has secured a three-year IMF Extended Credit Facility (ECF) program of about $3 billion and has embarked on a comprehensive debt restructuring. The authorities have committed to a frontloaded fiscal consolidation while pursuing a tighter monetary policy, complemented by structural reforms in the areas of tax policy, revenue administration, and public financial management, as well as steps to address weaknesses in the energy and cocoa sectors. The government has completed a Domestic Debt Exchange Programme (DDEP), implemented an external debt repayments standstill, and sought official debt restructuring under the Common Framework. In the first half of 2023, GDP growth rebounded to 3.2% on the back of strong growt h in services (6.3%) and agriculture (6.2%). This denotes that fiscal balance improved to a deficit of 0.8% of GDP while the primary balance (commitment basis) recorded a surplus of 1.1% of GDP. On the other hand, the industrial sector contracted by 2.2% as all industry sub-sectors (oil and gas, manufacturing, water and sewerage, and construction) shrank, except for mining and quarrying.
+
+111. As of November 2023, Ghana's economy has shown signs of recovery and it is likely to grow by about 3.0% by the end of 2023, all things being equal. While revenue had increased, reaching 15.8% of GDP, the rapid growth in expenditures, the GDP Growth had rebounded strongly averaging 3.2% in first three quarters compared to 3.0% in same period in 2022 mainly on the back of growth in services (avg. 6.3%) and in Agriculture (avg. 6.2%); with inflation falling to 26.4% as at end of November 2023.
+
+112. Overall real GDP is projected to grow at 2.3% and 2.8% in 2023 and 2024 respectively, while it is expected to record an average growth of 4.3% over the medium-term (2025-2027). Growth is expected
+
+[Page 29]
+
+
+---
+*Chunk pages 30–30*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1305 (sys=94, user=1211), max_out=1024, ctx=8192
+---
+
+# [Page 1]
+
+## GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 26
+
+### 73 Source: https://www.ug.edu.gh/news/isser-unveils-comprehensive-analysis-ghana%E2%80%99s-economy-state-ghanaian-economy-report-sger  
+### 74 As at 23 October 2023, accessed at: https://www.bog.gov.gh/treasury-and-the-markets/bank-of-ghana-bill-rates/  
+### 75 As at 23 October 2023, accessed at: https://www.bog.gov.gh/treasury-and-the-markets/treasury-bill-rates/   
+### 76 Accessed October 2023: https://www.bog.gov.gh/wp-content/uploads/2021/11/APR-For-September-2021_Date-published-November-23-2021.pdf  
+### 77 AFD, 2012, working paper 123, Assessing Credit Guarantee Schemes for MSME Finance in Africa. Page 14. Banks non-performing loans are high. Non-
+preforming loans represented 20.9% of total gross loans at the end of July 2017. World Bank Group, 2018, 3rd Ghana Economic Update, Agriculture as an 
+Engine of Growth and Jobs Creation.  
+### 78 Average Ecobank loan tenor is two years.  Loan tenors longer than 5 years are considered unusual risk.  
+### 79 Source: https://www.usaid.gov/sites/default/files/documents/1860/PAOP-Ghana-MarketAssessment-Final_508.pdf  
+
+to be 4.4% in 2025, and 5.0% by 2027. Similarly, real non-oil GDP is expected to grow at 2.8% and 2.1% 
+in 2023 and 2024 respectively, while it is expected to record an average of 4.1%  over the medium term 
+(2025-2027)73  
+
+### Absence of alternative sources of financing 
+
+#### 113. The cost of finance in Ghana is very high. The Bank of Ghana Bill rate was 30.9% as of October 2023,74 
+and the 182-day Treasury Bill Interest rate was 31.7% as of October 2023.75 Accordingly, personal, and 
+commercial loan interest rates are also very high. In 2021, the Annual Percentage Rates of Banks in 
+Ghana for loans to households and MSMEs ranged between 23% - 33% and 20% - 31% respectively.76  
+
+#### 114. Ecobank’s mortgage rate currently stands at 35% . Commercial loan rates vary even more, but for 
+assets with relatively low recoverability such as PV panels, small-business loan rates are typically above 
+33%. These rates can be rationalized by inflation, transaction costs, and high default rates.77 Even with 
+decreasing inflation rates, borrowing rates are expected to remain very high for the foreseeable future. 
+In addition, loan tenors are typically short term (less than two years),78 with high collateral requirements.  
+
+#### 115. Generally, investments in solar power in Ghana are from international sources, mainly donor and impact 
+funds, with limited investment from local sources taking place. As a result, international solar PV 
+companies have an advantage over their local counterparts in accessing investment funding. Local solar 
+PV providers, on the other hand, are traditional suppliers of renewable energy equipment and are not 
+set up to offer consumer credit to benefit the local supply chain. Furthermore, many local distribution 
+c ompanies that are considering entering the energy sector perceive green energy (such as solar PV 
+produced energy) to be a risky investment and rather pursue lower risk opportunities such as captive 
+power.  The dynamic produced by this distinction, and a lack of local financing options, have led to the 
+emergence of crowdfunding as an important fundraising source for off-grid companies. World Bank data 
+indicate that 7.3 million people in Ghana lack formal bank accounts or mobile money wallets. Rural 
+consumers, especially women, are particularly prone to this type of financial exclusion, compounding the 
+challenge experienced by SHS companies to offer financed energy products to off-grid customers79.  
+
+#### 116. The lack of accessible and affordable commercial finance on offer by local banks impedes the ability of 
+households and MSME
+
+
+---
+*Chunk pages 31–31*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1002 (sys=94, user=908), max_out=1024, ctx=8192
+---
+
+# B  
+## GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 27  
+
+### 80 Accesses October 2023: IMF Executive Board Approves US$3 Billion Extended Credit Facility Arrangement for Ghana  
+is limited. This perpetuates the lack of implementation of clean energy power generation and the ability  
+to sustain viable clean energy programs such as Solar PV. Additional information on this barrier is  
+presented in Section B.2.  
+
+### Success of ASAP in Ghana’s Challenging Macro-Economic Environment  
+119. Ghana has faced increased fiscal and debt challenges due to significant external shocks like COVID-19 in recent years. These shocks have led to a loss of access to international financial markets, limited domestic financing options, and a reliance on government monetary support. This has resulted in a reduction in international reserves, depreciation of the Cedi, rising inflation, and a decrease in domestic investor confidence, ultimately leading to a severe crisis, affecting MSMEs, much like in other countries.  
+
+120. As a response, the government has taken proactive measures to address these profound challenges. These actions include expediting fiscal adjustments and initiating a comprehensive restructuring of the national debt to alleviate severe financing constraints and the unsustainable levels of public debt. The May 2023 approval of the USD3 billion 36-month Extended Credit Facility (ECF) arrangement by the IMF Executive Board facilitated the immediate disbursement of about USD600M.  
+
+Supported by the ECF arrangement, this economic program builds on the government’s post COVID-19 program for economic growth aimed at macroeconomic stability and debt sustainability. This includes wide-ranging reforms to build resilience and lay the foundation for stronger and more inclusive growth. The timely negotiation of debt restructuring agreements with external creditors has been crucial for the successful implementation of the new Extended Credit Facility (ECF) arrangement.  
+
+121. In addition to safeguarding vulnerable segments of the population, the government's program encompasses significant and front-loaded fiscal consolidation efforts aimed at restoring public finances to a sustainable trajectory. These fiscal measures have been complemented by ambitious structural reforms, focusing on tax policy, revenue administration, and public financial management. Furthermore, there will be initiatives to address weaknesses in the energy and cocoa sectors. To control inflation and rebuild international reserves, the authorities continue to implement suitably tight monetary policies and maintain flexibility in exchange rates, aiming to bring inflation down to single digits.  
+
+### The Accelerating Solar Action Program (ASAP) in a developing economy like Ghana can have several positive impacts in a challenging macroeconomic environment.  
+One of the immediate benefits of the Accelerating Solar Action Program (ASAP) is a reduction in energy costs for both businesses and households. This can provide relief to consumers struggling in a harsh economic environment, as it lowers electricity bills and frees up income for other essential needs.  
+
+### There are regions in Ghana, like in many developing economies, with limited or unreliable access to the national grid. Distributed solar PV systems can provide a reliable source of electricity, especially in rural and remote areas. This can enhance the quality of life and support economic activities in these regions. The implementation of solar projects requires local labour for installation, maintenance, and support services. This program provides an avenue for job creation, particularly in a challenging economic context where employment opportunities may be limited.  
+
+### Like many developing countries Ghana, relies heavily on imported fossil fuels. By promoting solar energy, the ASAP, the country can reduce its dependence on fossil fuels, which often require substantial foreign exchange reserves. ASAP can therefore enhance energy security and reduce exposure to volatile global oil prices. The adoption of distributed solar PV systems can alleviate pressure on the national grid, reducing the need for expensive grid expansion and maintenance. This can save costs for the government and utilities and lead to more reliable grid service.  
+
+### Implementing ASAP will require infrastructure development, such as improving the electricity grid and distribution networks. This will lead to long-term improvements in the energy sector, which will in turn contribute to economic resilience. The adoption of distributed solar PV systems can alleviate pressure on the national grid, reducing the need for expensive grid expansion and maintenance. This can save costs for the government and utilities and lead to more reliable grid service.  
+
+---  
+**Page 31**
+
+
+---
+*Chunk pages 32–32*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1024 (sys=94, user=930), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 28
+
+## 126. With a growing solar industry in Ghana, ASAP will also promote technology transfer and capacity building, allowing local companies and technicians to gain expertise in solar PV installation and maintenance. By investing in the solar sector, Ghana can diversify its economy and reduce its reliance on a few key sectors, such as agriculture and mining. Economic diversification can enhance resilience in challenging economic times.
+
+## Request for GCF Funding
+
+## 127. The GCF support is required at this stage given the challenges associated with long-term financing options for the solar rooftop segment. As the Government of Ghana continues to advance on various macroeconomic and sector reforms and policy-related hurdles are expected to be overcome only after the end of the program implementation period, the GCF concessionality will allow the initial start-up phase of Solar PV financing in Ghana.
+
+## 128. Any concessionality considered in this program will be targeted at overcoming short-term risk or cost barriers. Normally the loans offered by conventional banks to solar rooftop projects have an average maturity of 3 – 5 years. However, with long tenure loans made available by GCF to Ecobank, the bank shall be able to provide loans with longer tenures such as 7 years.
+
+## 129. The loans advanced by Ecobank to beneficiaries will have a maximum tenor of 7 years and a minimum tenor of 1 year. The GCF loan to Ecobank will have a 14-year tenor to provide to Ecobank the possibility to maximize ASAP impact and reuse the funds for several loan cycles.
+
+## 130. Given the minimum loan tenor will be of 1 year, and the ASAP implementation period will be of 13 years, funds repaid within this period would be reused subject to GCF's approval. However, if unused by the scheduled GCF repayment instalment date, the said funds will be applied as part of GCF repayment. The minimum loan tenor period is 1 year hence the loan period (implementation period of the programme) will be of 13 years, meaning a year to expiry there will be no further disbursements. Also, given the average and maximum tenors, the funds will be reused after 7 years hence the 14 years tenor requested to the GCF. It is at this stage forecasted that the program term loans will be used as follows: 30% to finance Households (up to 7 years tenor), 70% to finance MSMEs (up to 7 years tenor).
+
+## 131. The GCF concessionality will allow decreasing current market rates for these types of investment, thus providing program beneficiaries with the possibility to access PV Solar installations. The market rate consists of two components:
+
+### a. The Ghana Reference Rate (GRR), a variable interest rate fixed monthly by the Central Bank  
+### b. A risk premium determined by the bank based on the risk profile of loan applicants. This is the component that is expected to be reduced based on the concessionality of the GCF facility.
+
+## 132. Below the effect of GCF concessionality to program beneficiaries, that is considered key to unlocking rooftop solar investments in Ghana:
+
+### i. MSMEs – As of March 2021, the GRR was 14.34% plus the average risk premium of 12.25% gives an interest rate of 26.59%. Currently (i.e., 2023) the GRR is 32% plus the average risk premium of 12.25% gives an interest rate of 44.25%.
+
+### ii. Households – Market rate in March 2021 was 29% (Ghana Reference Rate of 14.34% plus Risk Premium of 14.66%). Currently (i.e., 2023) the GRR is 32% plus the average risk premium of 14.66% gives an interest rate of 46.66%.
+
+
+---
+*Chunk pages 33–33*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=907 (sys=94, user=813), max_out=1024, ctx=8192
+---
+
+# B.6. Exit strategy (max. 500 words, approximately 1 page)  
+**Page 29**
+
+133. The GCF funding will be repaid by Ecobank directly, based upon the agreed terms. GCF support is needed to kick-start the ASAP Ghana Program as it will help make investments in solar PV projects competitive against the alternative investment priorities for MSMEs and households by providing a more affordable source of financing at more suitable tenors.
+
+134. The program ASAP is designed to address the existing problems faced by the market and to grow the renewable energy lending segment. This intervention is designed to double the existing number of Solar PV users in the country; more importantly, create a self-sustaining ecosystem for renewable energy lending.
+
+135. With the blended loan, Ecobank will be able to scale its renewable energy portfolio without requiring additional collateral from the end consumers. This success of ASAP will serve as proof of concept for other commercial banks to follow in the future. Once scalability is achieved by Ecobank, other banks will also develop specialized financial solutions.
+
+136. With higher success rate of loans disseminated to women without any default, will inevitably create more acceptability and make financing to women easier in the future. Market awareness will create acceptability of renewable energy solutions as a collateral for financial institutions.
+
+137. Increase growth in loans will lead to an increase in green jobs with more solar vendors entering the market and increasing the business size of existing solar vendors. Overall influx of new Solar equipment will increase will inevitably create a secondary market. Banks will become more comfortable lending to residents if there are large Solar Vendors operating in the country, these large operators will be able to employ high skilled technical resources to efficiently install Solar PV modules, have the capacity to service buy back arrangement with commercial banks, offer higher quality & standardized products to end consumers.
+
+138. The aim of ASAP is to create a self-sustaining lending eco-system for renewable energy solutions where there is higher participation from local financial institutions:
+
+a) The blended loan facility is designed for the AE to promote RE financial solutions. This program will enable AE to further develop niche RE centric financial solutions in the future because of the experience gained over the life of the project.
+
+b) The benefits of ASAP will lead towards creation of a self-sustaining and growing demand for RE solutions, primarily Solar PV modules. The HHs and MSMEs are end beneficiaries of ASAP as they will benefit from being able to access and install environmentally friendly alternates to meet their day-to-day power requirements. Marketing activities as explained in Component 3 are intended towards increasing general awareness about climate change and to establish the reliability of Solar PV modules. A well-informed beneficiaries will derive the change towards combating climate change.
+
+c) Higher irradiation levels across the country are a strong indicator of the potential of Solar PV modules. Furthermore, Solar PV modules is the cleanest, widespread, and most reliable distributed model available for the targeted beneficiaries. There are solar vendors present across the country and will benefit a larger proportion of the local populations.
+
+d) The project will help create testimonials and success stories of financing provided to women. These testimonials combined with the mass awareness will help create a more inclusive lending mechanism and would eventually ease access to formal lending to women.
+
+e) The primary purpose of ASAP is to develop a self-sustaining eco-system for financing and installation of RE solutions in Ghana. Furthermore, the program is designed to enhance the reach...
+
+
+---
+*Chunk pages 34–34*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=801 (sys=94, user=707), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 30
+
+## 139. Ecobank is committed to continuing to offer green loans after the lifetime of the project. It is anticipated that by the end of the Program, Ecobank will have demonstrated the benefits of Solar PV systems to a critical mass of clients – building trust and showcasing the systems within these key sectors; have built internal capacity to offer, promote, monitor, and report on green loans; and have sustainable financing mechanisms in place to address the key barriers to uptake.
+
+## 140. The program takes a comprehensive approach to develop local markets for Solar PV projects, building awareness and capacity. Successful implementation of the Program and showcasing successful Solar PV systems will support the industry to grow and expand.
+
+## 141. After the lifetime of the ASAP Ghana Program, it is expected that a supply chain of suppliers and installers will have been established and matured, leaving a more experienced and advanced market. The Program is also expected to demonstrate the business opportunity of solar PV systems, leading to a gradual shift to commercial finance as the market matures.
+
+## 142. It is anticipated that after the lifetime of the Program, the capacity of the financial institutions in green financing of projects/appraisal would have been built and the necessary awareness created leading to the eventual full transformation of the market to continuous uptake of solar PV systems in Ghana.
+
+## 143. In 5-10 years, due to higher influx of RE/Solar solutions being implemented by people, a secondary self-sustaining market will develop automatically which will include repair/maintenance and resale of solar equipment. With more influx of technology, commercial banks will be comfortable with taking Solar PV systems as collaterals for respective loans which will further facilitate access by the general public for Solar PV solutions.
+
+## 144. Ecobank expects that by developing awareness and a secondary market, RE financial solutions will become business-as-usual and other banks will offer competitive collateral-free solutions to customers. People will be aware of the benefits of RE Solutions and will consider opting for solutions at normal market rates in the future. Further there is sufficient evidence to expect the cost of implementing RE solutions, especially solar PV, will go down due to more innovative and efficient solutions being developed every passing year.
+
+## 145. Furthermore, current trends are showing the following:
+1) Increase in efficiency of Solar PV (hence decrease in cost) in terms of power capacity per unit area of PV.
+2) Increase in electricity tariffs (hence increase in income from Solar PV Systems)
+3) Depreciation of GHS (nominal increase in value of Solar PV Systems).
+
+## 146. Considering all these factors, Ecobank expects the adoption of Solar PV systems to increase (both in number of customers and sizes of orders).
+
+
+---
+*Chunk pages 35–35*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=698 (sys=94, user=604), max_out=1024, ctx=8192
+---
+
+# C. GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 31
+
+## FINANCING INFORMATION  
+
+### C.1. Total financing  
+
+#### (a) Requested GCF funding  
+(i + ii + iii + iv + v + vi + vii)  
+
+**Total amount Currency**  
+16.19 million USD ($)  
+
+**GCF financial instrument Amount Tenor Grace period Pricing**  
+(i) Senior loans 15.0 14 years 2 years 0.00 %  
+(ii) Subordinated Loans Enter amount Enter years Enter years Enter %  
+(iii) Equity Enter amount Enter % equity return  
+(iv) Guarantees Enter amount Enter years   
+(v) Reimbursable grants Enter amount    
+(vi) Grants 1.19     
+(vii) Results-based payments Enter amount    
+
+#### (b) Co-financing information  
+
+**Total amount Currency**  
+15.38 million USD ($)  
+
+**Name of institution Financial instrument Amount Currency Tenor & grace Pricing Seniority**  
+Ecobank Ghana Subordinated Loans 15.0 million USD ($) 14 years 2 years N/A junior  
+Ecobank Ghana In kind 0.38 million USD ($) N/A N/A Options  
+Click here to enter text. Options Enter amount Options Enter years Enter years Enter%  
+
+#### (c) Total financing  
+(c) = (a)+(b)  
+
+**Amount Currency**  
+31.57 million USD ($)  
+
+#### (d) Other financing arrangements and contributions  
+(max. 250 words, approximately 0.5 page)  
+
+Please explain if any of the financing parties including the AE would benefit from any type of guarantee (e.g. sovereign guarantee, MIGA guarantee).  
+Please also explain other contributions such as in-kind contributions including tax exemptions and contributions of assets.  
+Please also include parallel financing associated with this project or programme (refer to the co-financing policy).  
+
+147. The programme’s budget includes a Project Management Cost of USD787,500 of which USD380,000 shall be an in-kind contribution of the Accredited Entity.  
+
+### C.2. Financing by component  
+
+Please provide an estimate of the total cost per component and output as outlined in section B.3. above and disaggregate by source of financing. More than one co-financing institution can fund a single component or output. Provide the summarised cost estimates in the table below and the detailed budget plan as annex 4.
+
+
+---
+*Chunk pages 36–36*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=670 (sys=94, user=576), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 32
+
+## Component Output Indicative cost Options GCF financing Co-financing Amount Options Financial Instrument Amount Options Financial Instrument Name of Institutions
+
+### 1. Deployment of loans
+- **Output 1.1**: 30 15.0 Choose an item. 15.0 Subordinate d loans Ecobank Ghana
+
+### 2. Developing Institutional Capacity
+- **Output 2.1**: 0.20 0.20 Grants Enter amount Choose an item Click here to enter text.
+- **Output 2.2**: 0.21 0.21 Grants Enter amount Choose an item Click here to enter text.
+- **Output 2.3**: 0.03 0.03 Grants Enter amount Choose an item Click here to enter text.
+- **Output 2.4**: 0.16 0.16 Grants Enter amount Choose an item Click here to enter text.
+
+### 3. Advocacy and Outputs Dissemination
+- **Output 3.1**: 0.19 0.19 Grants Enter amount Choose an item Click here to enter text.
+
+### 4. Programme Management
+- **Output 4**: 0.78 0,4 Grants 0.38 In-kind Ecobank Ghana
+
+Indicative total cost (USD) 31.57 16.19 15.38
+
+This table should match the one presented in the term sheet and be consistent with information presented in other annexes including the detailed budget plan and implementation timetable.
+
+In case of a multi-country/region programme, specify indicative requested GCF funding amount for each country in annex 17, if available.
+
+## C.3 Capacity building and technology development/transfer (max. 250 words, approximately 0.5 page)
+
+### C.3.1 Does GCF funding finance capacity building activities?
+- Yes ☒
+- No ☐
+
+### C.3.2 Does GCF funding finance technology development/transfer?
+- Yes ☐
+- No ☒
+
+If the project/programme is expected to support capacity building and technology development/transfer, please provide a brief description of these activities and quantify the total requested GCF funding amount for these activities, to the extent possible.
+
+148. This has been fully detailed above under Section B.3, Component 2.
+
+
+---
+*Chunk pages 37–37*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=964 (sys=94, user=870), max_out=1024, ctx=8192
+---
+
+# D.1. Impact potential (max. 500 words, approximately 1 page)
+
+Describe the potential of the project/programme to contribute to the achievement of the Fund’s objectives and result areas. As applicable, describe the envisaged project/programme benefits for mitigation and/or adaptation. Provide the intended outcomes for mitigation by elaborating on how the project/programme contributes to low-emission sustainable development pathways. Provide the intended outcomes for adaptation by elaborating on how the project/programme contributes to increased climate-resilient sustainable development.
+
+Calculations should be provided as an annex. This should be consistent with section E.3 reporting GCF’s core indicators.
+
+## 149. The Program is expected to deliver the following key climate change mitigation impacts over its lifetime:
+
+- **417,452 tCO₂ eq reduced or avoided** while delivering numerous other benefits, outlined below.
+- Renewable energy will play a critical role in supporting Ghana to reach its goal of universal electrification by 2030 and will support the country to leapfrog more polluting energy sources in its mission towards low carbon development.
+
+## 150. The Ecobank Program is highly scalable and replicable within the region and potentially beyond.
+
+- The market barriers the Program is designed to address (as described in Section B.1) are not unique to Ghana but are common to many countries within the region and globally.
+- It is expected that demonstration of success in unlocking investments in hard-to-reach sectors — including MSMEs and households — will provide an excellent case study for neighbouring counties to follow suit.
+
+## GCF core indicators
+
+### Expected tonnes of carbon dioxide equivalent (tCO₂ eq) to be reduced or avoided (Mitigation only)
+
+- **Annual:** 16,698 tCO₂eq  
+- **Lifetime:** 417,452 tCO₂eq  
+
+### Other relevant indicators
+
+- **Total number of direct and indirect beneficiaries, disaggregated by gender** (reduced vulnerability or increased resilience): NA  
+- **Number of beneficiaries relative to total population, disaggregated by gender** (adaptation only): NA  
+
+## Additional relevant indicators
+
+- **1,005,378 MWh of clean energy generated over the lifetime of the systems (25 years).**
+- **30.59 MW of total installed capacity:**  
+  - 1,617 installations of average power of 4 kW of power for households  
+  - 765 installations of average power of 30 kW for MSMEs  
+
+- **1,617 household beneficiaries** (of which a target of 50% will be female-headed households).  
+- **765 MSME beneficiaries** (of which, 19 are expected to be irrigation cooperatives and of the total, 25% are expected to be female-headed majority female-owned businesses, with 1,794 jobs created in the sustainable energy sector).  
+
+## ASAP Ghana will also have significant environmental and social co-benefits in addition to GHG emissions reductions.
+
+- Reduction in demand for fossil fuels will also help diminish urban air pollution and related respiratory and circulatory ailments, as well as noise pollution.  
+- Greater availability and reliability of electricity supply will improve educational, quality of life and health conditions at the household level by providing a constant source of lighting for studying and carrying out daily home activities in the evening, making unnecessary the use of kerosene lamps or solid fuels and thus also improving indoor air quality.
+
+## 151. All assumptions and methodologies are outlined in Annex 3.
+
+> **81** In Ghana the largest percentage of households are headed by females. A 50% target is hence considered reasonable.
+
+
+---
+*Chunk pages 38–38*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=996 (sys=94, user=902), max_out=1024, ctx=8192
+---
+
+# D.2. Paradigm shift potential (max. 500 words, approximately 1 page)  
+Potential for scaling up and replication.  
+
+152. The ASAP Program is highly scalable and replicable in Ghana and potentially beyond. If this new local currency loan product can prove that there are viable investment opportunities in this target sector over the next couple of years, Ecobank can support the Government of Ghana to mobilize both domestic and international private capital on the back of this success, which will serve to scale the Solar PV market in Ghana. Thus, GCF’s proceeds for this local currency loan product has the potential to catalyze multiple follow-on investment vehicles.  
+
+153. The Program also takes a comprehensive approach to developing local markets for Solar PV projects, building awareness and capacity. Successful implementation of the Program and showcasing successful Solar PV systems will support the industry to grow and expand.  
+
+154. Although the Program focuses on Solar PV, the financial models, and increased capacities for Ecobank means that Ecobank could scale the Program to include energy efficiency or other renewable energy technologies in the future.  
+
+155. Further to the above, ASAP will contribute to the creation of an enabling environment through eliminating current barriers by providing market incentives to participants by reducing costs (through loan pricing) and mitigating risks (by reducing the risk premium and providing training and workshops).  
+
+## Potential for knowledge and learning  
+156. A key element of the Program is to enable knowledge and learning, to ensure long term sustainability of the Program, demonstrate the value of Solar PV projects, and mainstream green lending. The following activities will contribute to the strengthening of knowledge:  
+i. Component 2, which relates directly to capacity building for Ecobank officers, EC staff, household and MSMEs. This component of the Program is critical to build and share knowledge and learning.  
+ii. Component 3 will raise awareness for the program to potential beneficiaries (with a focus on MSMEs and households).  
+
+# D.3. Sustainable development (max. 500 words, approximately 1 page)  
+## Environmental co-benefits  
+
+157. To overcome power deficits, over the last few years there has been increased use of diesel-based distributed generation solutions, some of which were placed in urban areas, creating direct exposure to air and noise pollution. As renewable energy projects, to be developed under this project, follow adequate environmental and social safeguards, the need for these diesel-based solutions will be reduced, resulting in associated domestic, environmental benefits and improved health and safety. As per international best practices, suppliers are required to have waste management plans to ensure environmentally sound disposal. Since the market of solar panels is nascent in Ghana and the average life of a panel is 25 years, disposal of panels has not been experienced by any of the vendors so far and most of them do not have a policy regarding disposal of panels. Ecobank will ensure that all the vendors have a waste management plan for disposal of their solar panels when they cannot be used anymore. For those panels that are returned or resold, avenues for recycling and reusing will be explored in due course.  
+
+## Social co-benefits including health impacts.  
+
+158. The funds will be targeted at providing concessional financing for MSMEs and HHs. It is often observed that such businesses and households find it difficult to avail affordable funding options from conventional lenders due to the rigid lending parameters set by such lenders. It is worthwhile to note that affordable and continuous power supply is the key resource needed to carry out their business activities or household chores. Large commercial and industrial players use their captive power plant to generate electricity using Natural Gas (which is subsidized). HHs or MSMEs which include commercial and industrial units, do not have the capacity to generate their own electricity and depend on the grid. Ecobank will target MSME firms in the commercial and industrial segments along with HH segments, which do not get any subsidies from  
+
+[Page 34]
+
+
+---
+*Chunk pages 39–39*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=918 (sys=94, user=824), max_out=1024, ctx=8192
+---
+
+# D. GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 35
+
+## Economic co-benefits
+159. Compared with fossil-fuel technologies, which are typically mechanized and capital intensive, the renewable energy industry is more labour-intensive. This means that, on average, more jobs are created for each unit of electricity generated from renewable sources than from fossil-fuels. Employment also has spillover effects as industries in the renewable energy supply chain will benefit and unrelated local businesses will benefit from increased household and business incomes. According to Ecofin Agency 2023 Report, worldwide employment in the renewable energy sector increased from 7.3 million in 2012 to 13.7 million in 2022. Nearly 4.9 million jobs globally are concentrated in photovoltaic solar energy, the sector with the most significant growth among renewable energy sources. Inference, a considerable number of jobs could be created alongside higher income generation for people— manifested through the capacity building of ASAP, Marketing agencies employed via the awareness campaign, logistics companies involved, underwriters and insurers hired and new Solar PV vendors that are created.
+
+## Gender-sensitive development impact
+160. The project will offer support for implementation of various type of activities aimed at improving job opportunities for women in the renewable energy sector. The project will benefit women in the following ways:
+- an inclusive and balanced approach for capacity building that includes both genders.
+- an inclusive and balanced approach for selecting programme beneficiaries.
+
+161. Through the designated Women Entrepreneurship under the Ellevate initiative for Solar Finance, the ASAP will encourage economic empowerment of women. Reducing the electricity costs of MSMEs can provide much needed facilitation during the stages of their development. Therefore, under the “Ellevate initiative” Ecobank will further reduce its spread by an additional 1% to make the cost of borrowing easier to Businesswomen, salaried women, and women in general.
+
+## D.4. Needs of recipient (max. 500 words, approximately 1 page)
+### Overview of Ghana’s GHG emissions and mitigation strategies
+
+162. Ghana’s total GHG emissions were estimated at 42.2 million tonnes of carbon dioxide equivalent (MtCO2e) in 2016, representing an increase of more than 7.1% compared to the 2012 levels. When the Forestry and Other Land Uses (FOLU) emissions are excluded from the national total, emission stood at 29.3 MtCO2e. Generally, the total national emissions have increased by 66.3% between 1990 and 2016. Ghana identified twenty mitigation measures in the energy, transport, forestry, industry, and waste sector to achieve the minus 45% emission reduction commitment.
+
+163. Similarly, in the Energy sector, the emissions from stationary combustion were 7.83 MtCO2e with the energy industry being the most significant source in 2016. The 2016 levels accounted for 52% of all the
+
+---
+
+
+---
+*Chunk pages 40–40*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1091 (sys=94, user=997), max_out=1024, ctx=8192
+---
+
+# Ghana’s Energy Sector and Climate Change Vulnerability
+
+## Energy Sector Emissions
+
+164. Mobile combustion emissions were estimated at 7.2 MtCO₂e in 2016. It was singularly responsible for 48% of the total energy emissions and 17% of the overall national emissions. The 2016 transportation emissions increased by 7% relative to the levels reported in 2012.
+
+165. Ghana has adopted a voluntary national emission target of minus 45% against the BAU emissions of 74 MtCO₂e. The mitigation target translates to 33.3 MtCO₂e emission reductions between 2017 and 2030 and divided into an unconditional of minus 15% (11 MtCO₂e) and a conditional of minus 30% (22.2 MtCO₂e).
+
+## Vulnerability of Ghana’s Energy Sector to Climate Change
+
+166. Reduced water availability, attributable to climate change-induced erratic rainfall and prolonged droughts, increases the need for irrigation agricultural areas, and negatively impacts the country’s hydropower generating potential. While continuing to reduce the country’s reliance on thermal power plants through increasing its hydropower generating capacity is targeted, the recent and potential future climate change-related water shortages mean that the projected energy generation capacity of hydropower plants could be reduced to 50% by 2050. For example, energy supply was significantly affected from 2007 until 2015 due to poor and erratic rainfall. This is and will continue to result in an increasing reliance on fossil fuel-fired thermal plants, which has shifted Ghana’s electricity supply mix from being largely hydropower based to thermal power based, stifling the country’s progress to reducing GHG emissions in the energy sector. Exacerbating this is an increased demand for energy due to a growing population and developing economy, and hence the need for sustainable, reliable energy production from other renewable sources such as solar PV installations.
+
+## Ghana’s Energy Mix Target
+
+167. Ghana’s electricity supply mix has changed from biomass (including organic wastes and biofuel) (85%) and hydroelectricity (15%) in 1974, to being mostly comprised of renewable, thermal and hydroelectricity. Thermal energy generation utilizes fossil fuels such as crude oil, natural gas and diesel. In 2018, thermal power plants produced 67% of the country’s total energy, contributing significantly to GHG emissions. In 2020, the energy supply mix was comprised of 50.5% thermal, 49.8% hydro and 0.1% renewable energy sources.
+
+168. The Government of Ghana’s NDC and Strategic National Energy Plan places a high priority on Solar PV. The first listed energy action is to scale up renewable energy i penetration by 10% by 2030, from 1% contribution to the energy mix in 2019. Ghana’s Renewable Energy Act provides the legal and regulatory framework necessary to enhance and expand the country’s Renewable Energy sector. The Act was passed in 2011 and aims to increase the production of renewable energy to meet the 10% policy target by 2030. This target will be achieved through REM (2019), which aims to increase the renewable energy share of the national energy generation mix from 42.5 MW in 2015 to 1,363.63 MW in 2030 (Table 1, Section B.1.). Of this total, 200 MW is targeted for distributed solar PV.
+
+## Energy Access in Ghana
+
+169. Universal grid access has been prioritized by the Ghanaian government, as access to electricity has recently been documented to be 84.3%, with rural communities being underrepresented in this regard. The government also has complimentary energy efficiency regulations and programs in place (including standards and labelling), with specific focus on improving electricity access via clean and sustainable sources. As power outages and unreliable supply are also common challenges faced by households and enterprises, ASAP aims to improve access by providing an alternative source of energy, in the form of solar PV, to beneficiaries.
+
+170. Information on the absence of alternative sources of financing is presented in Section B.5., Justification for GCF Funding Request.
+
+
+---
+*Chunk pages 41–41*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1418 (sys=94, user=1324), max_out=1024, ctx=8192
+---
+
+# D.5. Country ownership (max. 500 words, approximately 1 page)
+
+## Ghana's leadership in sustainable energy
+
+Ghana is seen as a leader and role model within the region when it comes to sustainable energy. Ghana was the first developing country to join the Sustainable Energy for All (SE4ALL) network.
+
+The ASAP Ghana Program is aligned and supported by national and regional policies including Ghana's NDC to the UNFCCC, the National Climate Change Policy, the Low Carbon Development Strategy, the Strategic National Energy Plan, the National Energy Policy, the Energy Sector Strategy and Development Plan, and the ECOWAS Renewable Energy Policy.
+
+## Ghana's climate change mitigation priorities
+
+As set out in its NDC to the UNFCCC, the Government of Ghana has an unconditional emissions reduction target of 15% relative to a business-as-usual (BAU) scenario (emissions of 73.95 MtCO2e by 2030). The Government has numerous policies and programs in place to progress with this effort including the National Climate Change Policy and the Low Carbon Development Strategy mentioned above.
+
+The Government also committed to an additional 30% emission reduction conditional upon external support to cover the full cost of implementing the mitigation action (finance, technology transfer, capacity building). With this external support, a total emission reduction of 45% below the BAU emission levels can be achieved by 2030.
+
+The NDC identifies the GCF as a key source of international finance to meet conditional goals. The profile and 'paradigm shift' approach of the GCF are seen as essential for shifting Ghana to a low carbon economy. The NDC also places a high priority on Solar PV. The first listed specific energy action is to "scale up renewable energy penetration by 10% by 2030", with a strong focus, and three specific action areas relating to Solar PV.
+
+The high priority of solar PV in progressing with Ghana's low emission development is also outlined in the National Climate Change Policy, the Low Carbon Development Strategy, and Ghana's national energy policy.
+
+## References
+
+82 Available online: https://unfccc.int/sites/default/files/resource/Gh_NC4.pdf  
+83 Available online: https://www.climatelinks.org/sites/default/files/asset/document/2017_USAID_Climate%20Change%20Risk%20Profile%20-%20Ghana.pdf  
+84 Available online: http://www.un-page.org/files/public/ghanaclimatechangepolicy.pdf  
+85 Available online: https://ouroilmoney.s3.amazonaws.com/media/documents/2016/06/09/energy_strategy.pdf  
+86 Available online: https://unfccc.int/sites/default/files/resource/Gh_NC4.pdf  
+87 Kumi, Ebenezer Nyarko, 2017, The Electricity Situation in Ghana: Challenges and Opportunities. Centre for Global Development Policy Paper 109    
+88 Available online: http://www.un-page.org/files/public/ghanaclimatechangepolicy.pdf  
+89 Available online: http://www.energycom.gov.gh/files/Ghana%20Integrated%20Power%20System%20Master%20Plan%20_Volume%202.pdf    
+90 Available online: https://ouroilmoney.s3.amazonaws.com/media/documents/2016/06/09/energy_strategy.pdf  
+91 Available online: http://www.energycom.gov.gh/files/Renewable-Energy-Masterplan-February-2019.pdf  
+92 Available online: https://unfccc.int/sites/default/files/resource/Gh_NC4.pdf  
+93 Available online: http://www.energycom.gov.gh/files/Renewable-Energy-Masterplan-February-2019.pdf  
+94 Centre for Global Development, 2017, The Electricity Situation in Ghana: Challenges and Opportunities Available Online: https://www.cgdev.org/sites/default/files/electricity-situation-ghana-challenges-and-opportunities.pdf  
+95 Available online: https://unfccc.int/sites/default/files/resource/Gh_NC4.pdf  
+96 SE4ALL, https://www.seforall.org/content/ghana-leads-sustainable-energy-all  
+97 Available online: http://www.un-page.org/files/public/ghanaclimatechangepolicy.pdf  
+98 Available online: http://www.lowcarbondev-support.org/-/media/Sites/FIRM_Facilitating_Implementation_and_Readiness_for_Mitigation/Final-Country-Reports-Phase-1/FIRM-Ghana-LCDS.ashx?la=da  
+99 Available online: https://ouroilmoney.s3.amazonaws.com/media/documents/2016/06/09/energy_strategy.pdf  
+100 SE4ALL, https://
+
+
+---
+*Chunk pages 42–42*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=802 (sys=94, user=708), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 38
+
+## Engagement with NDAs, civil society organizations and other relevant stakeholders
+
+175. The Government of Ghana, led by the Ministry of Finance (GCF NDA), went through a deliberative process to select the ASAP Ghana concept as the priority mitigation focussed GCF project. ASAP Ghana also has strong ongoing support from the Ministry of Finance and the country’s Energy Commission (EC).
+
+Stakeholder engagement in the said programme will be on an ongoing basis and relevant feedback shall be incorporated into the programme at intervals to ensure sustainability and fulfilment of programme objectives. ASAP shall participate in workshops and conferences to be in sync with various stakeholders such as NDA, Government Officials, Civil Society Organisations, industry participants and end consumers regarding their expectations and recommendations on the programme.
+
+## Stakeholder Group: The Government of Ghana, led by the Ministry of Finance (GCF NDA)
+
+- **Application to the Green Climate Fund**
+- **Pre-clearance of funding proposal**
+- **Discussion on Concept Note**
+
+### Date: January 10, 2018
+
+- Objective of the proposed programme is in line with the NDC.
+- Proposal cleared for submission to GCF. NOL dated 09/10/2018
+
+## Stakeholder Group: Energy Commission & Irrigation Development Authority
+
+- Discussed regulatory framework and approvals for the ASAP project.
+- Explored avenues for collaboration and support.
+- Examine the project scope including possible candidate sites.
+- Discussed Exploring any environmental issues and permits.
+- Exploring any DFI finance for GCF proposal as related to the AFD.
+
+### Date: September 17, 2017 - April 15, 2018
+
+- Compliance with national energy policies and regulations.
+- Regular updates on project milestones and potential regulatory impacts.
+- Collaboration on creating an enabling regulatory environment for solar initiatives.
+- Integration of solar solutions for efficient water management in agriculture.
+- Technical assistance for optimizing solar PV systems in irrigation.
+- Alignment with sustainable agricultural practices and water conservation.
+- This helped confirm the relevance of mobilizing additional financial support from the GCF to help fund the solar rooftop projects.
+
+
+---
+*Chunk pages 43–43*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=718 (sys=94, user=624), max_out=1024, ctx=8192
+---
+
+# D GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 39
+
+## Solar PV Vendors
+
+- **Expectations from financers**
+- **April 30, 2018**
+- Huge market potential in MSME & HH segment
+- Favorable policies for setting up rooftop solar systems
+- Upfront capital requirements for the PV systems and end-users seeking long tenure loans
+- ASAP to provide training and certification for vendors
+
+## Potential Beneficiary Districts (Households - HH)
+
+- Identified key community leaders and influencers
+- Gathered initial feedback on community expectations
+- May 5-14, 2020
+- High cost of grid energy and alternatives
+- Funding avenues beyond the conventional bank financing is essential
+- Limitations faced in borrowing to finance solar rooftop in terms of interest rates, collateral, quality systems, and requirement of long tenure loans
+- This helped confirm the relevance of mobilizing additional financial support from the GCF to help fund the solar rooftop projects
+
+## Association of Ghana Industries (AGI) – MSMEs
+
+- Widespread adoption of sustainable energy practices across the industrial sector
+- Contributing significantly to the reduction of greenhouse gas emissions
+- May 5-14, 2020
+- High cost of grid energy and alternatives
+- Promoting policies that incentivize industrial adoption of solar technologies
+- Collaboration on industry-specific green initiatives, workshops, and forums
+- Access to information on the economic benefits of solar energy and return on investment in solar technologies for industries
+- Funding avenues beyond the conventional bank financing is essential
+- Limitations faced in borrowing to finance solar rooftop in terms of interest rates, collateral, quality systems, and requirement of long tenure loans
+- This helped confirm the relevance of mobilizing additional financial support from the GCF to help fund the solar rooftop projects
+
+
+---
+*Chunk pages 44–44*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1037 (sys=94, user=943), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 40
+
+## Civil Service Organizations
+
+- Hosted joint workshops and roundtable discussions to gather insights, address concerns, and incorporate diverse perspectives into the project’s design.
+- Sought input through consultation forums, ensuring the inclusion of voices from civil society and women to align the ASAP with their specific needs and priorities.
+- May 18–25, 2020
+- Provided expertise in environmental impact assessments, and facilitating community engagement to ensure the project aligns with sustainable development goals.
+- Their involvement extends to promoting transparency, ethical practices, and socially inclusive approaches within the solar energy project.
+- Inclusion in ASAP planning and decision-making processes.
+- Advocacy for environmental and social responsibility in solar initiatives.
+- Collaboration on awareness campaigns and community engagement programs.
+
+## National Programs, policies, laws, and regulations supporting ASAP Ghana
+
+177. As highlighted in the market study, each of the ASAP activities indicated are aligned with countries’ national mitigation plans. The ASAP Ghana Program is supported by policies, legislation, and complementary programs.
+
+- Ghana’s National Energy Policy sets out a goal of renewable energy constituting 10 percent of national energy generation by 2020.
+- The National renewable energy Act (Act 832) provides the legal and regulatory framework necessary to enhance and expand the country’s renewable energy sector.
+
+178. With the support of the African Development Bank (AfDB), IFC and Climate Investment Fund, the Government has also developed a Scaling-up Renewable Energy Program - Ghana, Investment Plan (SREP-Ghana IP). SREP-Ghana IP is aimed at unlocking financing opportunities to accelerate the development of a sustainable renewable energy sector. Ecobank’s efforts to establish an RE portfolio are explicitly identified in the SREP-Ghana IP as a key effort to address hard-to reach sectors including MSMEs and households.
+
+179. The Government has complementary programs in place, including the Ministries, Departments and Agencies Solar Rooftop Program for Government buildings, a solar lantern subsidy Program for poor, off-grid rural households, and a mini-grid installation Program for off-grid communities. The Government is also participating in the Sustainable Use of Natural Resources and Energy Finance Program together with the Agence Française de Développement (AFD) and the European Commission.
+
+180. ASAP Ghana is also expected to contribute to the Government’s efforts to improve its national electric grid and electricity access. The country is implementing a National Electrification Scheme with the aim of providing universal access to electricity by the year 2020. As of 2016, approximately 82.5% of Ghana’s population had access to electricity.
+
+ Programs such as ASAP Ghana are critical to support the achievement of the energy access target with clean and renewable sources.
+
+ With these broader policy reforms underway, and with strong Government commitment, rapid uptake of PV is viable.
+
+181. Although the provision has been made in terms of policies and regulations for an enabling environment, effective financial support is required to achieve the objectives relating to national development of renewable energy within the time scale. Although renewable energy potential in Ghana is clear, research has also identified a financing gap.
+
+### References
+
+- 106 Government of Ghana, Ministry of Finance, 2018, 2018 Budget Statement and Economic Policy, paragraph 506 to 508. Available online: [http://www.mofep.gov.gh/sites/default/files/budget-statements/2018-Budget-Statement-and-Economic-Policy.pdf](http://www.mofep.gov.gh/sites/default/files/budget-statements/2018-Budget-Statement-and-Economic-Policy.pdf)
+- 107 Opportunities for linking the Programs are being explored by the Energy Commission. [http://energycom.gov.gh/public-notices/92-request-for-expressions-of-interest](http://energycom.gov.gh/public-notices/92-request-for-expressions-of interest)
+- 108 Centre for Global Development, 2017, The Electricity Situation in Ghana: Challenges and Opportunities Available Online: [https://www.cgdev.org/sites/default/files/electricity-situation-ghana-challenges-and-opportunities.pdf](https://www.cgdev.org/sites/default/files/electricity-situation-ghana-challenges-and-opportunities.pdf)
+- 109 [http://www.ghanaweb.com/GhanaHomePage/republic/ministry.profile.php?ID=38](http://www.ghanaweb.com/GhanaHomePage/republic/ministry.profile.php?ID=38)
+
+
+---
+*Chunk pages 45–45*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1030 (sys=94, user=936), max_out=1024, ctx=8192
+---
+
+# D.6. Efficiency and effectiveness (max`. 500 words, approximately 1 page)
+
+## Cost-effectiveness and Efficiency
+
+Despite microfinance institutions and rural banks providing debt financing and additional financial support to MSMEs, these entities do not provide specific energy investment products. A lack of skilled personnel to install and maintain solar PV systems needs to be addressed to encourage private sector investment.
+
+Independent power producers will need to identify which communities could benefit from off-grid projects, yet there are presently no clear criteria differentiating communities that could benefit from off-grid and grid-connected electricity. Presently the Ghana tariff policy is a potential barrier for grid-connected investments. The Grid Code would require revision and needs to include specific conditions enabling renewable energy generators to provide accurate data. The above is compounded by the fact that Ghana's utilities, regulators, financial institutions and project developers have limited experience and capacity to structure and develop bankable Power Purchase Agreements.
+
+## Financial and economic analysis
+
+The financial and economic analysis shows that this Program is financially sound. The financial mechanisms (as outlined above) have been tailored to suit the market context and needs, and the country and sector-specific barriers. There would be no crowding out of other private or public investment, as the total investments needs for renewable energy in Ghana are aligned with the size that this facility can offer.
+
+ASAP Ghana offers loans at least concessional rates through Ecobank, a local commercial bank. Financing through a local commercial bank is the most efficient and effective way to address the market sectors identified.
+
+## Stimulating availability of financial and technical capacity
+
+ASAP has the potential to stimulate the increased availability of financial and technical capacity for in solar PV projects in Ghana. The proposed programme will finance an initial of solar PV installations in Ghana, allowing for financial close, construction and operation to demonstrate their technical and financial viability.
+
+ASAP will provide validation for investors and lenders that the installation of solar PV (the contractual arrangements, support scheme, etc.) is a bankable model as required by several players essential to carry these projects forward (sponsors, services companies, lenders, manufacturers, equipment suppliers and maintenance service providers). In addition, the programme will help establish links with private sector investors, lenders, specialized consultants (engineering, legal, etc.), equipment suppliers, and further develop the capacities of local partners across the supply chains of the technologies involved in the programme.
+
+## Co-financing, leveraging and mobilized long-term investments (mitigation only)
+
+The expected volume of finance to be leveraged: USD 30 million (GCF and Co-financing from Ecobank). The requested USD15million of GCF reimbursable financing will complement Ghana Cedis equivalent of USD15 million reimbursable co-financing committed by Ecobank Ghana. The Program also includes a non-reimbursable grant of USD 0.79 million provided by the GCF and USD 0.78 million for project management jointly provided by GCF and Ecobank hence bringing the total expected mobilized funding to USD 31.57 million.
+
+## Financial viability
+
+The Program includes innovative, yet viable financing mechanisms and business models that have been designed to overcome the country-specific market barriers - including upfront cost barrier, high cost of finance, and high collateral requirements, through concessional loans.
+
+[Page 41]
+
+
+---
+*Chunk pages 46–46*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1008 (sys=94, user=914), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 42
+
+## Economic and Financial Rate of Return
+
+188. Each sub-project under the Program will be required to meet certain profitability criteria. The target market sectors have been carefully defined to ensure that each subproject is financially viable. Incorporating renewable energy technology into MSMEs or households would increase the creditworthiness of these entities, as these distributed Solar PV systems will lead to reduced operational costs and (in the case of MSMEs) greater production reliability. The commercial rate of return (IRR, NPV, payback period) and the expected rate of return with the GCF support is given in Annex 3.
+
+189. The cost per tonne of CO2eq avoided is: USD 72/tCO2e. This considers the investment made by the GCF, as well as co-financing. The GHG emissions reduction cost on GCF loan is USD 36/ t CO2e. This cost is effective considering the financial instrument which is used (loan) and considering the current shadow price of carbon which is estimated to be within $40-$80/tCO2e in 2020 according to World Bank¹¹². The internal rate of return (IRR) of the equipment at 20 years is 9.44%, 18.89% and 8.53% for households, MSMEs and irrigation cooperatives, respectively.
+
+## Long term financial viability and exit strategy
+
+190. The GCF funding will be repaid by Ecobank directly, based upon the agreed terms set out in the AMA. Ecobank is committed to continuing to offer green financing after the lifetime of the ASAP Ghana Program. It is anticipated that by the end of the Program, Ecobank will have demonstrated the benefits of Solar PV systems to a critical mass of clients – building trust and showcasing the systems within these key sectors. In addition, it is expected that Ecobank will have built internal capacity to offer, promote, monitor, and report on green loans; and have sustainable financing mechanisms in place to address the key barriers to uptake.
+
+191. After the lifetime of the ASAP Ghana Program, it is expected that a supply chain of suppliers and installers will have been established and matured, resulting in a more experienced and advanced market. The Program is also expected to demonstrate the business opportunity of solar PV systems, leading to a gradual shift to commercial finance as the market matures. It is anticipated that after the lifetime of the Program, the uptake of loans for Solar PV systems will continue to grow. To achieve this, GCF support is crucial in helping kick-start the initial phase of the ASAP Ghana Program and overcome the key market barriers.
+
+## Application of best practices
+
+192. Solar PV panels and the balance of systems are proven technologies globally, as well as in Ghana. The solar irradiation level in Ghana ranges from 4.5 to 6.0 kWh/m²/day with the highest irradiation levels occurring in the northern half of the country and are hence significant. Ghana's Renewable Energy Act provides the legal and regulatory framework necessary to enhance and expand the country's Renewable Energy sector. Only solar vendors/installers that have been licensed by the Energy Commission can participate in the ASAP Program. As a prerequisite to receiving approval from the Energy Commission, the program's beneficiaries are required to replace all lamps at their facility or residences with low consumption LED lamps. In addition, focus will be placed on the distribution of LED lamps in electrified households, whereas clean lighting focuses on replacing kerosene lamps with solar and dry cells in non-electrified households. As per REMP, solar powered water heaters, irrigation, streetlights, and crop dryers will be prioritized¹¹³.
+
+¹¹² https://documents1.worldbank.org/curated/en/621721519940107694/pdf/2017-Shadow-Price-of-Carbon-Guidance-Note.pdf  
+¹¹³ Available online: https://unfccc.int/sites/default/files/resource/Gh_NC4.pdf
+
+
+---
+*Chunk pages 47–47*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=766 (sys=94, user=672), max_out=1024, ctx=8192
+---
+
+# E.1. Project/Programme Focus
+
+Please indicate whether this proposal is for a mitigation or adaptation project/programme. For cross-cutting proposals, select both.
+
+- ☒ Reduced emissions (mitigation)
+- ☐ Increased resilience (adaptation)
+
+# E.2. GCF Impact level: Paradigm shift potential (max 600 words, approximately 1 -2 pages)
+
+This section of the logical framework is meant to help a project/programme monitor and assess how it contributes to the paradigm shift described in section D.2 above by applying three assessment dimensions - scale, replicability, and sustainability.
+
+Accordingly, for each assessment dimension (see the definition per assessment in the accompanying guidance note), describe the current state (baseline) and the potential scenario (target) and rate the current state (baseline) by using the three-point-scale rating (low, medium, and high) provided in the guidance note. Also describe how the project/programme will contribute to that shift/ transformation under respective assessment dimensions (scale, replicability and sustainability). In doing so, please refer to section B.2(a) (theory of change).
+
+## Assessment Dimension
+
+### Current state (baseline)
+
+As of 2021, Solar energy represents only 1% of the energy mix in Ghana and the government's priority is to increase this share to 10% by 2030. The aim is to increase the renewable energy share of the national energy generation mix from
+
+### Potential target scenario (Description)
+
+The ASAP program will increase the share of RE by 30.59 MW in Ghana's energy mix adding to the 78 MW
+
+### How the project/programme will contribute (Description)
+
+Describe key applicable outputs and or resulting outcomes relevant to increasing (scaling up) quantifiable results within and beyond the scope of the intervention.
+
+The ASAP intervention it is projected catalyse the increased shared of distributed PV generation in the Ghanaian market, by addressing chronic financial, and technical barriers through the concessional loan, capacity building and increased awareness which are
+
+114 https://www.irena.org/-/media/Files/IRENA/Agency/Statistics/Statistical_Profiles/Africa/Ghana_Africa_RE_SP.pdf
+
+
+---
+*Chunk pages 48–48*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=724 (sys=94, user=630), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 44
+
+## 42.5 MW in 2015 to 1,363.63 MW in 2030
+
+Of this total, 200 MW is targeted for distributed solar PV to which ASAP is contributing.
+
+However, to be able able to reach this target, private sector investment is required alongside increased capacity of institutions to support the increased contribution of PV in the energy mix.
+
+Already installed in the country to a total of 109 MW by the end of the implementation of the program, which represents a 33.11% increase from the current renewable energy installed capacity in Ghana.
+
+Currently seen as major barriers. This will result in an increase in the installed capacity of distributed PV generation from 78 MW to 109 MW and will contribute to the following other major outputs:
+
+- Signature of 2,300+ loan agreements with households, MSMEs
+- Avoidance of emission of 16,698 tCO2 in average per year
+- Increased capacity of officers of the ASAP program to understand and process
+- Creation of 1,794 jobs
+- Training of 250 Solar PV vendors
+- Certification of 160 solar PV vendors
+
+## Replicability
+
+Although distributed solar PV energy is a mature technology and extensively used in many (usually developed) countries, and even if Ghana benefits from good insolation, the technology only accounts for a minute share in the energy mix.
+
+Lack of access to financial tools, lack of capacity for a good
+
+An increased technical capacity within banking institutions such as Ecobank and within engineering / sales companies coupled with financial support provided though loans will make distributed generation from PV technology more available to end users.
+
+Once the technical and financial viability is proven and he necessary ecosystem strengthened, the market is bound to react through an increased demand which will in turn result in a snowball effect drawing in more stakeholders making the market more competitive and professionalized with time
+
+## Describe key applicable outputs and resulting outcomes that will be replicated to other sectors, markets, geographical regions, or countries
+
+Through the lessons learnt under the project and capacity built at institutional level (1,794 jobs created certification of 160 PV vendors etc.), a pioneer example will be set to any effort to replicate the work by other financial institutions within Ghana and in the countries where Ecobank is present and operational. The project will help to provide positive perceptions of RE finance and de-risking
+
+--- 
+
+**Page 48**
+
+
+---
+*Chunk pages 49–49*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=502 (sys=94, user=408), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 45
+
+## Understanding of the Technology for Processing of Applications and Low Capacity of Local Installers/Vendors
+
+The technology for processing of applications and low capacity of local installers/vendors are seen as major barriers for the increased share of solar PV in the electricity generation mix.
+
+Moreover, there is not enough awareness of the benefits and financial viability of solar PV at grassroot level to generate a much stronger demand for green energy solutions mechanisms will spread in parallel making the market more competitive.
+
+## Sustainability
+
+Investment in the renewable energy in Ghana and other West African nations is growing, however sustainable and profitable business models across the whole supply chain and ecosystem is yet to be established due to various factors such as lack of capacity, economies of scale, etc.
+
+## Low
+
+The creation of an enabling environment to support continued and sustainable growth of the PV market enabling while at the same time generating co benefits such have reduced emissions, job creation, increased gender equality in the sector. Once a sustainable business model is established, the market will grow yield further climate and socio-economic benefits.
+
+## Describe key applicable outputs and resulting outcomes that will be sustained beyond the project/programme period
+
+The ASAP program, which benefits from the endorsement of the Government of Ghana, will establish of an enabling environment for investment in the PV market by providing:
+
+- Concessional financial support to encourage investment in the sector while raising awareness on the benefits of PV systems
+- Gender responsive actions integrated in the project
+
+--- 
+
+[Page 1]
+
+
+---
+*Chunk pages 50–50*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=638 (sys=94, user=544), max_out=1024, ctx=8192
+---
+
+# E.3. GCF Outcome level: Reduced emissions and increased resilience (IRMF core indicators 1-4, quantitative indicators)
+
+Select appropriate IRMF core and supplementary indicators to monitor project/programme progress. More than one IRMF (core and or supplementary) indicators may be selected as applicable for each GCF results area and project/programme outcome (as defined in the table in section B.2(b)). If IRMF indicators are unable to measure any given project/programme outcomes, project/programme-specific indicators should be developed under section E.5 (project/programme specific indicators).
+
+## GCF Result Area: IRMF Indicator
+
+### Means of Verification (MoV)
+
+| Baseline | Target | Assumptions / Note |
+|----------|--------|--------------------|
+| 0 tCO2eq | 61,055tCO2 eq | • 208,781 tCO2eq (at end year 13) • 417,452 tCO2eq (at year 25) |
+| Midterm target: 20,121 tCO2eq | Final target: 208,781 tCO2eq | Assumptions: • 10% of the systems installed at year 1 following grace period • 70 % of systems installed at year 3 following grace period • 100% of systems installed at year 4 following grace period • All tenders and procurements are |
+
+> **Note:** The final target means the target at the end of project/programme implementation period. However, for core indicator 1 (GHG emission reduction), please also provide the target value at the end of the total lifespan period which is defined as the maximum number of years over which the impacts of the investment are expected to be effective.
+
+--- 
+
+**Page 46**
+
+
+---
+*Chunk pages 51–51*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=342 (sys=94, user=248), max_out=1024, ctx=8192
+---
+
+# E 
+ GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 47 
+  
+  
+ 
+successful during grace 
+period. 
+ 
+• Project lifetime: 25 
+years as per industry 
+standards for this type 
+of asset 
+ 
+• Average Annual 
+emission reductions: 
+16,698 tCO2eq 
+ 
+• Lifetime emission 
+reductions: 
+• 417. 452 tCO2eq 
+ 
+MRA1 Energy 
+generation and access 
+ 
+Supplementary 1.3: 
+Installed renewable energy 
+capacity 
+Loan agreements 
+specifying amount and size 
+of installation for which loan 
+is granted. 
+Annual report by Ecobank 
+indicating capacity installed 
+with support of GCF 
+funding 
+0 21.4 MW 30.59 MW Installed capacity at mid-term 
+is as follows: 
+Category 
+Power 
+installed 
+(kWp) 
+PV HH 4.50 
+PV SME 15.60 
+Solar pumps 1.30 
+Total 21.40
+
+
+---
+*Chunk pages 52–52*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=357 (sys=94, user=263), max_out=1024, ctx=8192
+---
+
+# E.4. GCF Outcome level: Enabling environment (IRMF core indicators 5-8 as applicable)
+
+Select at least two relevant IRMF core (enabling environment) indicators to monitor and elaborate the baseline context and project/programme's targeted outcome against the respective indicators. Rate the current state (baseline) vis-à-vis the target scenario and select the geographical scope of the outcome to be assessed. Describe how the project/programme will contribute towards the target scenario. Refer to a case example in the accompanying guidance to complete this section.
+
+## Core Indicator Baseline context (description) | Rating for current state (baseline) | Target scenario (description) | How the project will contribute Coverage
+
+| Category | Power installed (kWp) |
+|----------|-----------------------|
+| PV HH | 6.44 |
+| PV SME | 22.38 |
+| Solar pumps | 1.77 |
+| Total | 30.59 |
+
+---
+
+[Page 1]
+
+
+---
+*Chunk pages 53–53*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=790 (sys=94, user=696), max_out=1024, ctx=8192
+---
+
+# Core Indicator 6: Degree to which GCF investments contribute to technology deployment, dissemination, development or transfer and innovation
+
+Even if PV is a mature technology and already present in Ghana, as at 2021, Solar energy represented only 1% of the energy mix and the government’s priority is to increase this share to 10% by 2030. Furthermore, even if Ghana benefits from good insolation, the technology only accounts for a minute share in the energy mix.
+
+The aim is to increase the PV distributed generation share from 2 MW in 2015 to 200 MW in 2030. This will require the setting up of sustainable financing mechanisms and the development of capacity to accompany the growth of the PV market.
+
+The ASAP program will provide concessional loans for the deployment of up to 30.5MW of distributed PV generation, facilitate capacity building for the AE and other stakeholders and support advocacy campaigns to promote the technology as well as the financial products and technical support provided.
+
+# Core Indicator 7: Degree to which GCF Investments contribute to market development/transformation at the sectoral, local, or national level
+
+Ghana has a huge potential in terms of exploitation of solar energy. However, PV for electricity generation only occupies a small % of the energy mix and in order to reduce the GHG emissions as well as improve economic resilience, the Government of Ghana has targeted an increased share on variable RE in the mix.
+
+Key barriers like access to finance for RE solutions as well as lack low
+
+Increasing the share of solar PV from 1 to 10% by 2030 will result in collateral benefits in the whole supply change of the PV industry yielding more job opportunities and empowering women and youth. With the increased human capacity, availability of viable and sustainable financial models and with increased demand for low carbon energy solutions, the market I bound to become more competitive.
+
+Through the lessons learnt under the ASAP project and capacity built at institutional level (1,794 jobs created certification of 160 PV vendors etc.), a pioneer example will be set to any effort to replicate the work by other financial institutions within Ghana and in the countries where Ecobank is present and operational.
+
+The project will help to provide positive perceptions of RE finance and de risking mechanisms will spread
+
+National level (one country)
+
+---
+
+*Note: Page numbers are preserved as per instructions.*
+
+
+---
+*Chunk pages 54–54*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=487 (sys=94, user=393), max_out=1024, ctx=8192
+---
+
+# E 
+ GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 50 
+
+of awareness and low 
+capacity within banking 
+institutions, government 
+agencies and private 
+sector operators in the 
+energy sector is limiting 
+access to larger market 
+share for PV 
+contribute to bettering 
+the Ghanaian 
+in parallel making the 
+market more 
+competitive. 
+
+## Core indicator 8: Degree 
+to which GCF 
+investments contribute 
+to effective knowledge 
+generation and learning 
+processes, and use of 
+good practices, 
+methodologies and 
+standards 
+
+The lack of 
+understanding on how 
+the whole ecosystem for 
+solar PV needs to be set 
+up and the lack of 
+awareness at grassroot 
+level on the benefits of 
+low carbon energy 
+systems must be 
+addressed to unhinge 
+the market demand for 
+solar PV. There is also a 
+perception of complexity 
+associated with the 
+financing and technical 
+aspect of grid connected 
+PV systems as well as 
+on best practices to 
+establish sustainable 
+business models. 
+
+Furthermore, many 
+existing banking and 
+financial institutions do 
+not have the capacity to 
+provide financing to the 
+sector given the 
+significant real and 
+perceived risks (like 
+low  
+
+Knowledge of financing 
+products and best 
+practices within the PV 
+sector will be developed. 
+
+Increased capacity 
+among financial 
+institutions and 
+otherwise, to provide 
+customized financing 
+solutions to MSMEs / 
+householders at 
+attractive terms. 
+
+Moreover, support for 
+the development of 
+knowledge and 
+learnings 
+to further boost sector 
+will be provided. 
+
+National level (one 
+country)
+
+
+---
+*Chunk pages 55–55*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=702 (sys=94, user=608), max_out=1024, ctx=8192
+---
+
+# E.5. Project/programme specific indicators (project outcomes and outputs)
+
+This section should list out project/programme-specific performance indicators (outcomes and outputs) that are not covered in sections above (E.1-E.4). List down tailored indicators to monitor /track progress against relevant project/programme results (outcomes/outputs).  AEs have the freedom to decide against which outcomes they would like to set project/programme specific indicators. If any co-benefits are identified in sections B.2(a)(b), and D.3, AEs are encouraged to add and monitor co-benefit indicators under the “Project/programme co-benefit indicators” section in table below. Add rows as needed.
+
+Please number each outcome and output as shown below to indicate association of outputs to the contributing outcome. The numbering for outputs under this section should correspond to the output numbering in annex 4 (detailed budget plan).
+
+## Project/ Programme Outputs
+
+### Project/programme specific Indicator
+
+| Means of Verification (MoV) | Baseline | Target | Assumptions / Note | Mid-term | Final |
+|-----------------------------|----------|--------|--------------------|----------|-------|
+| MWh of clean energy generated | Data from Energy Commission Ghana, GCF APRs 0 96,000 MWh 438,000 MWh | Beyond the grace period, 10% of solar PV are installed in the first year, 40% in the second year and 70% in the third year. | Output 1.1: 30.59 MW of renewable energy capacity is installed leading to increased adoption of solar PV | # of MWs of low-emission energy capacity installed | Ecobank Reports, Ministry of Energy Reports |
+| MWh of clean energy generated | Data from Energy Commission Ghana, GCF APRs 0 96,000 MWh 438,000 MWh | Beyond the grace period, 10% of solar PV are installed in the first year, 40% in the second year and 70% in the third year. | Output 1.2: Green financial instruments are deployed in support to solar PV installations | # of Loan Agreement signed for PV installations | Ecobank Public Reports |
+| MWh of clean energy generated | Data from Energy Commission Ghana, GCF APRs 0 96,000 MWh 438,000 MWh | Beyond the grace period, 10% of solar PV are installed in the first year, 40% in the second year and 70% in the third year. | Targeted Beneficiaries are comfortable borrowing at 18% (MSMEs) and 20% (HHs) for investing in solar PV | Output 1.1: 30.59 MW of renewable energy capacity is installed leading to increased adoption of solar PV | Ecobank Reports, Ministry of Energy Reports |
+
+## Outcome 1: Clean energy is generated over the lifetime of installed solar PV sources and energy security is improved.
+
+### Output 1.1: 30.59 MW of renewable energy capacity is installed leading to increased adoption of solar PV
+
+| Means of Verification (MoV) | Baseline | Target | Assumptions / Note | Mid-term | Final |
+|-----------------------------|----------|--------|--------------------|----------|-------|
+| # of MWs of low-emission energy capacity installed | Ecobank Reports, Ministry of Energy Reports | 0 21.40 MW 30.59 MW | Beyond the grace period, 10% of solar PV are installed in the first year, 40% in the second year and 70% in the third year. | Output 1.1: 30.59 MW of renewable energy capacity is installed leading to increased adoption of solar PV | Ecobank Reports, Ministry of Energy Reports |
+
+### Output 1.2: Green financial instruments are deployed in support to solar PV installations
+
+| Means of Verification (MoV) | Baseline | Target | Assumptions / Note | Mid-term | Final |
+|-----------------------------|----------|--------|--------------------|----------|-------|
+| # of Loan Agreement signed for PV installations | Ecobank Public Reports | 0 1,670 2,382 | Targeted Beneficiaries are comfortable borrowing at 18% (MSMEs) and 20% (HHs) for investing in solar PV | Output 1.2: Green financial instruments are deployed in support to solar PV installations | Ecobank Public Reports |
+
+--- 
+
+**Note:** The text appears to be a continuation of the previous section with some formatting issues, but it seems to be part of a larger document related to project/programme specific indicators and
+
+
+---
+*Chunk pages 56–56*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=677 (sys=94, user=583), max_out=1024, ctx=8192
+---
+
+# Outcome 2: Solar PV market is transformed, and Net metering is catalyzed
+
+## # of net metered solar systems installed
+
+Data from Energy Commission Ghana, GCF APRs  
+0 1,000 2,382  
+
+At maximum, meters are provided, and net metered solar systems are installed within a year of signing the loan agreement.
+
+## Output 2.1: Increased knowledge and expertise of officers on loan origination & M&E
+
+- # of Loan Officers trained - development of an ASAP pipeline - support to due diligence of eligible ASAP subloans, including financial, technical, social, and environmental assessments.
+- # of Workshops organised for Loan Officers
+- Ecobank Reports indicating number of Loan Officers trained.
+- Ecobank Report indicating number of Workshops organised for Loan Officers.
+
+### Number of Loan Officers trained - 150 in initial 3 years
+
+The 150 Loan Officers are selected Staff will include 50 Relationship Officers, 10 Risk Officers, 10 Credit Analyst, 60 Branch Managers, and 20 Senior Managers and Executives.
+
+The 150 Loan Officers will attend all 7 workshops planned for this component to effectively implement, monitor, and manage the program.
+
+## Output 2.2: Increased knowledge of EC engineers on technical aspects of solar PV
+
+- # of EC Engineers trained  
+- Ecobank reports  
+- 0  
+- 10  
+
+The EC as a technical regulator for the renewable energy industry has engineers who undertake inspection and assessment of solar PV systems and ensure compliance. Ten (10) of such Engineers subject to the recommendation of the EC would be dedicated to the ASAP program. These personnel will be provided with the requisite training on the various aspect of the program and technical issues in relation to solar.
+
+
+---
+*Chunk pages 57–57*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=650 (sys=94, user=556), max_out=1024, ctx=8192
+---
+
+# E 
+ GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 53 
+
+## # of Workshops organised for Solar PV Vendors trained
+
+### Ecobank Report
+
+- **0**
+- **2**
+- **2**
+
+## Output 2.3: Increased knowledge of Solar PV MSMEs on the design, installation, and maintenance of solar PV
+
+### # of Solar PV Vendors trained
+
+- **0**
+- **250**
+- **2**
+- **250**
+
+## The program will train about 250 Solar PV Vendors. The implementation of the National Rooftop Solar Program (NRSP) in 2016 witnessed an upsurge in the number of Solar PV vendors. The number of licensed Solar PV Vendors increased from about 25 to over 100 companies by end of 2018. Currently, there are over 200 registered Solar PV Vendors in the database of the EC.
+
+### Two (2) training workshops of two (2) days each will be provided for 250 Solar PV Vendors.
+
+## Output 2.4: Solar PV providers are trained and certified
+
+### # of Solar PV Vendors sensitized
+
+- **0**
+- **200**
+- **200**
+
+## There are currently over 200 Solar PV Vendors licensed with the EC who will be the focus of this component. A 1-day Sensitization workshop will be led by two (2) internal senior experts from the EC and two (2) project officers from Ecobank, and it will be organised at 3 zones across the country for the 200 solar PV vendors: southern,
+
+
+---
+*Chunk pages 58–58*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=518 (sys=94, user=424), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 54
+
+## # of Solar PV Vendors assessed and certified
+
+### EC Database  
+Ecobank Report  
+
+### 0  
+
+### 160  
+
+### 160  
+
+## Northern, and middle-belt zones.
+
+It is estimated based on EC’s market assessment that, about 80% of the existing licensed 200 Solar PV Vendors who will be sensitised and assessed will be certified to participate in the ASAP program.
+
+## Outcome 3: Dissemination of Solar PV technology and awareness on clean energy is increased across the markets.
+
+### % of solar capacity in the country generation mix  
+Ministry of Energy Reports, Ecobank Reports.  
+
+### 1% 1.35% 1.5%  
+
+The indicator is tracking the contribution to the energy mix which is attributable to the project.
+
+With the support of its marketing department, Ecobank Loan Officers will develop tailored marketing tools/campaign using traditional media channels (radio, TV newspapers) and social media platforms. Three (3) weekly slots multiplied by 52 weeks will be secured for the respective radio, and TV channels, to be complemented by two (2) weekly slots multiplied by 52 weeks on print and social media platforms over the 3-year implementation period.
+
+## Output 3.1: Greater understanding of the benefits of solar PV within target market  
+
+Ecobank will organize/participate in two (2) annual marketing events/workshops (6 total) to promote the program.
+
+
+---
+*Chunk pages 59–59*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=559 (sys=94, user=465), max_out=1024, ctx=8192
+---
+
+# E GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 55
+
+## # of Marketing and knowledge sharing events
+
+Ecobank Reports  
+0  
+6  
+6  
+
+Some of the key events are annual conferences of professional bodies, the annual Ghana Renewable Energy Fair (Conference and Exhibition), which is organized by EC.
+
+## Output 3.2: increased knowledge for adopting solar PV
+
+## # of Loan requests received for solar PV installations
+
+Ecobank Reports  
+0  
+2000  
+4000  
+
+The indicator will be measured among the requests received by Ecobank. A broader market knowledge which translates in more loan requests at other financial institutions will not be tracked.
+
+## Project/programme co-benefit indicators
+
+### Increased resilience of energy infrastructure through multiple feed-in source
+
+## # of solar PV installations effectively feeding energy to the grid
+
+Ecobank Reports, EC reports  
+0  
+1000  
+2000  
+
+Decentralized nature of multiple feed-in sources, facilitated by net metering, will contribute to increased reliability, adaptability, and overall robustness of the energy infrastructure.
+
+Resilience of the energy system is defined as the capacity to ensure sustained energy availability amid changing climate conditions that negatively impact country hydro generation.
+
+### Increased number of households, MSMEs with access to low carbon energy solutions
+
+## # of Households and MSMEs with improved access to low-emission energy sources
+
+Ecobank Reports  
+0  
+0  
+808 households  
+382 MSMEs  
+1,617 households  
+765 MSMEs  
+
+The beneficiary units are taken as households and MSMEs. For assumptions of household size for the target sectors, see Annex 3. For households, gender-disaggregated information for the target income sector.
+
+
+---
+*Chunk pages 60–60*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=455 (sys=94, user=361), max_out=1024, ctx=8192
+---
+
+# E 
+ GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 56 
+
+## Creation and Preservation of Environmentally Sustainable Employment Opportunities
+
+### # of certified vendors in business which is in good standing
+
+Ecobank Reports
+
+20 50 100
+
+There are currently over 200 Solar PV Vendors licensed with the EC.
+
+Given the lack of vibrant solar PV market, it is assumed that only 10% of these vendors have their solar PV business in good standing.
+
+The project will track the amount of those whom business is in good standing with the assumption that the economic opportunity offered by ASAP will result in improving their balance sheets.
+
+## Solar PV value chain is improved through establishment of an Institutional Framework to ensure sustainability of the program at the bank level
+
+### # Solar PV Lending Framework established at Ecobank
+
+Ecobank website 0 0 1
+
+A framework document for solar PV lending building on lessons learned from ASAP is publicly available for disseminating best practice to other financial institutions.
+
+## E.6. Project/programme activities and deliverables
+
+
+---
+*Chunk pages 61–61*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=604 (sys=94, user=510), max_out=1024, ctx=8192
+---
+
+# E. GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 57
+
+All project activities should be listed here with a description and sub-activities. Significant deliverables should be reflected in annex 5 implementation timetable. Add rows as needed.
+
+Please number the activities as shown below to indicate association of activities to the related outputs provided above in section E.5. Similarly, please number sub-activities as shown below to associate to the related activity.
+
+| Activities | Description | Sub-activities | Deliverables |
+|-----------|-------------|----------------|--------------|
+| Component 1. Deployment of Loans |  |  |  |
+| Activity1.1: Solar PV Loans for Residential Households | A Solar PV Loan program targeting residential households will be put in place | Selection of beneficiaries based on eligibility criteria, and Ecobank due diligence on beneficiaries. | Signature of loan contracts. |
+|  |  | Concessional financing for Solar PV systems for eligible residential households. |  |
+| Activity1.2: Solar PV Loans for MSMEs and cooperatives | A Solar PV Loan program targeting MSMEs, and cooperatives will be put in place. | Selection of beneficiaries based on eligibility criteria, and Ecobank due diligence on beneficiaries. | Signature of loan contracts. |
+|  |  | Concessional financing for Solar PV systems for eligible MSMEs. |  |
+| Component 2. Development of Institutional Capacity |  |  |  |
+| Sub-component 2.1: Training of Ecobank Loan Officers on the ASAP Ghana Program |  |  |  |
+| Activity 2.1.1: Sensitization Workshop for Ecobank Loan Officers in Ghana on the ASAP Program | Two (2) workshops in two (2) *Zones within the first year of the implementation period, will engage 150 Ecobank Staff on the ASAP program highlighting eligibility criteria's, impact, and expected outcomes. The workshop will be led by two (2) internal resources. The 150 selected Staff will include 50 Relationship Officers, 10 Risk Officers, 10 Credit Analyst, 60 Branch Managers, and 20 Senior Managers and Executives. | Organisation of two (2) workshops. | The workshops delivered in two (2) Zones. |
+
+--- 
+
+*Note: The original text appears to have been extracted from a PDF and formatted for readability, but the content remains largely unchanged from the source document.*
+
+
+---
+*Chunk pages 62–62*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=548 (sys=94, user=454), max_out=1024, ctx=8192
+---
+
+# E  
+## GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 58  
+
+*The bank per its network of 64 branches have four (4) zones in addition to the Head Office. The first 3 zones including Head Office will be put together as one (1) zone for this program and will cover the southern belt of the country, and the fourth zone on the other hand will cover the northern belt of the country.*
+
+### Activity 2.1.2:  
+#### Capacity Building of Ecobank Loan Officers  
+
+Five (5) capacity building workshops will be organised to achieve the set objectives of the program: four (4) training workshops are planned for the first 2 years of the program (2 per year), and one (1) is planned in the third year.  
+
+In year one, the first two training workshops will focus on loan origination targeting Solar Rooftop PV investments, loan appraisal using credit, gender and climate screens, and preparation of loan applications. In the second year, the focus of the workshops will be on Solar Rooftop PV project monitoring and evaluation. The last workshop in year 3 will concentrate on advisory support to the target borrowers for reducing default risks in loan repayments.  
+
+Organisation of five (5) capacity building workshops.  
+
+The capacity-building workshops delivered for 150 Ecobank Loan Officers.
+
+### Sub-component 2.2:  
+#### Training of solar PV Vendors on the ASAP Ghana Program  
+
+Activity 2.2.1:  
+#### Capacity-building activities provided to 250 Solar PV Vendors  
+
+Organisation of two (2) workshops of two (2) days each.  
+
+The capacity-building workshops delivered for 250 Solar PV Vendors.
+
+
+---
+*Chunk pages 63–63*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=646 (sys=94, user=552), max_out=1024, ctx=8192
+---
+
+# Capacity Building Workshops for Solar PV Vendors
+
+## Sub-component 2.3: Training for the Energy Commission Officers on ASAP Ghana Program
+
+### Activity 2.3.1: Capacity Building Workshops for Energy Commission Engineers
+
+Capacity-building activities provided to 10 EC Engineers.
+
+Two 5-day training workshops will be provided for the 10 EC Engineers in year 1 and 2.
+
+Organisation of two (2) training workshops of five (5) days each.
+
+The capacity-building workshops delivered for 10 EC Engineers.
+
+## Sub-component 2.4: Sensitization and Certification of Solar PV Vendors on ASAP Ghana Program
+
+### Activity 2.4.1: Workshop for the Sensitisation of Solar PV Vendors in Ghana
+
+A workshop will be organised to share the concepts and program requirements and eligibility criteria for Solar PV Vendors to participate in the ASAP program.
+
+A 1-day Sensitization workshop will be organised at 3 zones across the country for the 200 solar PV vendors: southern, northern, and middle-belt zones.
+
+Organisation of one (1) day training workshops in three (3) Zones.
+
+The capacity-building workshops delivered for 200 Solar PV Vendors in three (3) Zones.
+
+### Activity 2.4.2: Capacity Assessment and Certification of Solar PV Vendors
+
+The licensed Solar PV Vendors will be assessed, their products tested by the Ghana Standards Authority (GSA) under this activity, and only qualifying Vendors will be certified for the ASAP program in line with the program eligibility criteria.
+
+A Program Implementation Agreement will also be signed with the qualifying Solar PV Vendors.
+
+Assessment of 200 Solar PV Vendors.
+
+Certification of 160 Solar PV Vendors for ASAP Program.
+
+Signatures of 160 Program Implementation Agreements with the certified Solar PV Vendors.
+
+160 certified Solar PV Vendors and 160 Program Implementation Agreement signed.
+
+
+---
+*Chunk pages 64–64*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=533 (sys=94, user=439), max_out=1024, ctx=8192
+---
+
+# Component 3. Advocacy and Outputs Dissemination
+
+## Activity 3.1: Awareness raising through Media and events
+
+Ecobank will develop a marketing and awareness-raising strategy to promote the Program and generate awareness of the benefits of Solar PV. The marketing and awareness-raising strategy will target households and MSMEs.
+
+Four (4) Marketing campaigns on TV, Radio, Print, and social media. Three (3) weekly slots (468 total) will be secured for the respective Radio, and TV channels, and two (2) weekly slots (312 total) on Print and Social media platforms over the 3-year implementation period.
+
+Sponsor and participate in two (2) annual marketing events during the first three years of the program (6 total) to promote the ASAP program through exhibitions and presentations during the events.
+
+Some of the key events are annual conferences of professional bodies, the annual Ghana Renewable Energy Fair (Conference and Exhibition), which is organized by the EC.
+
+Organisation of marketing campaigns through media.
+
+## Activity 3.2: Inclusive stakeholders' engagement
+
+Ecobank will engage with industry representatives and policy makers to build support and foster collaboration and dialogue between beneficiaries and technology suppliers with the aim to improve understanding and
+
+160 certified suppliers will participate in dialogue events with policy makers and loan beneficiaries.
+
+
+---
+*Chunk pages 65–65*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=681 (sys=94, user=587), max_out=1024, ctx=8192
+---
+
+# E.7. Monitoring, reporting and evaluation arrangements (max. 500 words, approximately 1 page)
+
+193. MONITORING
+
+The primary aim of monitoring is to accurately quantify and verify the carbon emissions reduction achieved by ASAP project in Ghana. During implementation, the project will identify a sample for each set of users in the project activity, for example, sampling for Households, sampling for MSMEs and sampling for cooperative irrigation systems. The sample for all the 3 target groups shall be developed as per the guidelines for the Sampling and surveys for CDM project activities and programmes of activities Version 04.0 117. Meters with dataloggers shall be used on these samples to collect data and monitor their performance.
+
+Monitoring, reporting, and evaluation arrangements will comply with the relevant GCF policies as appointed in the AMA, the GCF indicators and performance management framework (and updates). Ecobank is going to be the executing entity for ASAP. Ecobank is also the accredited entity for this project and, in that role, will have the overall responsibility and oversight for the project, including project preparation and implementation, financial management and procurement.
+
+As a commercial bank, Ecobank already conducts detailed due diligence on each case that is processed in the existing financing products offered by the bank. Furthermore, commercial banks are highly regulated in Ghana. Each bank must follow strict guidelines to meet regulatory and internal requirements. Ecobank will bear responsibility for monitoring, reporting, and verifying emissions savings, as well as keeping evidence.
+
+For issuing any loan under the ASAP, the application process must follow a guideline to become eligible for financing. Ecobank will be able to provide quarterly update reports of the projects, which will contain the following information:
+
+i. Customer Information & Updates: (a) Summary of new customers incorporated under ASAP in terms of volume of customers, value of total loans and the RE generated (Solar Panel Wattage); (b) General updates about the overall stage of the project.
+
+[Page 1]
+
+
+---
+*Chunk pages 66–66*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=788 (sys=94, user=694), max_out=1024, ctx=8192
+---
+
+# E GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 62
+
+## ii. Marketing activities updates - Budget & Expenditure:
+
+(a) A summary of the final approved marketing plan and a write up of the marketing strategy for GCF's clarification;  
+(b) Marketing ROI and analysis of market spending in terms of the reach generated by the campaign.
+
+## iii. Issues and Challenges:
+
+(a) Detailed explanations of the issues being faced in fund deployment;  
+(b) Performance of fund deployment in line with the budget.
+
+## iv. Customer Feedback and Review:
+
+(a) Complaints and issues faced by customers including new and potential customers.
+
+---
+
+The bank strictly follows International Financial Reporting Standards (IFRSs) issued by the International Accounting Standards Board (IASB), while each Solar vendor is evaluated by the Energy Commission of Ghana (EC) which ensures no underage employees are hired by the vendors.
+
+Ecobank follows its own vendor onboarding process which ensures that no vendor can employ forced or underage labor.
+
+Ecobank will evaluate Solar PV Vendors based on the following criteria:
+
+a. EC certification for distributed generation companies  
+b. The procurement/compliances departments ensure no use of underage employees and forced labor.  
+c. Vendors should have complete remote access to their installed Solar PV Systems.  
+d. As per the project’s agreement with GCF, use of force labor/ underage employee will be prohibited in any activity related to this project. While we will make sure that our solar vendors do not indulge in Force/ Underage labor, Ecobank will have the solar vendors sign an agreement/affidavit with the bank stating that no Solar vendors shall employ Force labor/ underage employees, and the vendor will do their due diligence in choosing their suppliers ensuring no force labor/underage employees work under the supplier.  
+
+e. Operationally, Bi- Annual surprise audits of various vendors will take place and in term of non-compliance Vendor will be removed from the Bank Vendor List. More details on these measures are elaborated in Annex 13 – Environmental Social Action plan of the Funding Proposal.  
+f. Ecobank intends to follow the international best practices and adopt the guidelines issued by GCF to ensure compliance with the operational framework provided by GCF (ESMF).
+
+If the above criteria are met, the Vendor's profile (financials and market standing) is reviewed. If acceptable, the Solar PV company is offered an agreement. Upon signing, the company is onboarded.
+
+EC has more than 200 Certified Vendors, all playing an active role in contributing to clean energy access and power generation.
+
+The Bank assesses Marketing/Advertising agencies as per the following selection criteria for onboarding:
+
+a. RFP (Request for proposal) is sent out to prospective agencies.  
+b. CB (Creative Brief) is presented to all those agencies that qualify for the RFP.  
+c. Financial Bid (agencies to quote a cost) is taken from all those that accept the CB.
+
+Approval is sought from Managing Director - Contract is signed for 1 year and is renewable.
+
+
+---
+*Chunk pages 67–67*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=606 (sys=94, user=512), max_out=1024, ctx=8192
+---
+
+# E 
+## GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 63
+
+### 118
+Taken as the Combined Margin Average from the Institute for Global Environmental Strategies (IGES), 2018, available online: https://pub.iges.or.jp/pub/iges-list-grid-emission-factors
+
+### 194
+The capacity building components of the Program will also support Ecobank relationship officers to properly monitor and report on sub-projects.  
+The methodology for estimating baselines, energy savings, and greenhouse gas emissions reductions will be based on the International Financial Institutions (IFI) Framework for a Harmonized Approach to Greenhouse Gas Accounting. Based on this guidance applicable to Solar PV, emissions factors for electricity will be used and taken from the Institute for Global Environmental Strategies (IGES), 2018.118 For large projects, appropriate combined margin weighted averages (weighted operating margin and weighted build margin) will be used. These are available from the same source.
+
+### 195
+REPORTING  
+Ecobank will report to the GCF periodically as agreed with the GCF, on the status of GCF funded activities throughout the relevant reporting period. These reports will include the disbursements made during the relevant period, the implementation status of the sub-projects and the monitoring of results and impacts of sub-projects.
+
+### 196
+EVALUATION  
+The evaluation arrangements will comply with the related Ecobank and GCF policies. The midterm and final evaluation will be conducted by the newly established Ecobank GCF Desk and will be conducted two years from the start date of the Program. At the time of the Mid-term evaluation, it is not expected that significant development results will have been achieved, since the portfolio will not have achieved full maturity. Therefore, the implementation of the funding strategy will be the focus of the evaluation and will also cover aspects like the number of MSMEs and HHs financed and loan volumes, GHG avoidance, energy production, installed capacity, private sector capital catalysed, and total number of people served/impacted. The EC also plays a critical role in the technical elements of the monitoring (such as technical inspections) and is also committed to supporting technical elements of monitoring, reporting, and verification.
+
+
+---
+*Chunk pages 68–68*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=771 (sys=94, user=677), max_out=1024, ctx=8192
+---
+
+# F.1. Risk factors and mitigations measures (max. 3 pages)
+
+## 197. The main Program risks include:
+- Limited uptake of Program loans
+- Limited ability of the technology vendors to keep up with demand
+- Currency risk
+- Default risk
+
+Each of these risks has been addressed through the Program’s design, and as part of Ecobank’s risk mitigation procedures.
+
+## 198. The main environmental and social risks identified in the environmental and social assessment include:
+- Occupational health and safety risks to workers during the installation of solar systems
+- Localised contamination of soil, groundwater and/or surface water due to the release of hazardous materials from improperly disposed of storage batteries
+- Challenges in waste management of PV panels
+- Final disposal of end-of-life PV panels after decommissioning
+- Localised contamination of soil, groundwater and/or surface water due to the release of hazardous materials from improperly disposed of PV panels
+- Disruption of activities in MSMEs and residential dwellings during the installation of PV systems
+- Construction-related noise and waste
+
+## 199. Each of these risks has been assessed as having a low impact and a low probability of occurring, as systems have been put in place at a government level. Furthermore, the chance and impact of regulatory risks for the program are also considered to be low based on the assessment.
+
+Key financial, technical, and operational, social, and environmental and other risks that might prevent the project/Program objectives from being achieved, as well as risk mitigation measures, are outlined below.
+
+### Selected Risk Factor 1
+- **Category:** Technical and operational
+- **Probability:** Medium
+- **Impact:** Low
+
+#### Description
+Lack of interest in loan Program from MSMEs and Households lack of uptake of solar PV.
+
+#### Mitigation Measure(s)
+200. The market assessment and consultations with key actors during the proposal preparation phase showed that there is high demand for solar PV systems from the target sectors, but that key barriers are prohibiting these investments (including high interest rates, inappropriate loan tenors, and lack of collateral).
+
+201. The Program is designed to address these barriers through the financial products that will be offered by Ecobank – including loans at suitable tenors, and with affordable interest rates. Marketing and communications elements have also been built into the Program, to raise awareness of the value of such Programs. It is expected that these measures will decrease the probability of the risk occurring to a very low level.
+
+### Selected Risk Factor 2
+- **Category:** Technical and operational
+- **Probability:** Medium
+- **Impact:** Low
+
+#### Description
+Lack of ability for solar PV vendors to keep up with demand.
+
+#### Mitigation Measure(s)
+202. The supply-side market for Solar PV products has been growing in recent years. However, the market will need to further grow to meet the increased demand expected for the ASAP Ghana Program. The number of anticipated projects to be implemented during the lifetime of the Program has also been
+
+---
+
+
+---
+*Chunk pages 69–69*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=721 (sys=94, user=627), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 65
+
+## Selected Risk Factor 3  
+### Category: Probability Impact  
+Credit Medium Low  
+
+### Description  
+Currency risk / foreign exchange fluctuations  
+
+### Mitigation Measure(s)  
+203. The Foreign Exchange regulations of Ghana allow Ecobank Ghana to borrow and repay in foreign currency and there are no withholding tax restrictions on the repayment of such loans. EGH has at one time or had its Balance Sheet loans from EIB, AfDB, IFC and FMO.
+
+## Selected Risk Factor 4  
+### Category: Probability Impact  
+Credit Low Low  
+
+### Description  
+Clients default on loans  
+
+### Mitigation Measure(s)  
+204. As of December 2022, Ecobank Ghana’s non-performing loan (NPL) ratio stood at 9.47% (12% as of 2021 FYE). This reducing trend is expected to continue.  
+
+205. Loans as part of this Program will only be issued in the currency that the business or household receives income in, which lessens the default risk due to currency fluctuations. USD lending would be exceptional and would be restricted to beneficiaries who have a USD cash flow.  
+
+206. In addition to these institutional risk mitigation measures, the risk of NPLs can be incorporated into the pricing structure of the loan program.
+
+## Selected Risk Factor 5  
+### Category: Probability Impact  
+Other Medium Low  
+
+### Description  
+Occupational health and safety risks to workers (e.g., slips and falls due to poor housekeeping, falls from elevated structures, electric shock and arc flash/arc blast, injuries caused by loose objects or machinery, etc.) during the installation of solar systems on rooftops of residential, and Micro Small and Medium Enterprise (MSME) buildings, and pump houses of irrigated farms.  
+
+### Mitigation Measure(s)  
+207. Solar PV companies will be required to prepare and implement a Site-Specific Health and Safety Management Plan (HSMP) pertinent to the type of systems they install, indicating hazard prevention and control measures (i.e., risk assessment and prevention, protection and control measures based on the risk assessment performed), and outlining a health and safety training program, and an organisation and management structure for implementation of the plan. The HSMP will include a system to track and respond to accidents, incidents, near misses and fatalities. The terms of reference for the plan are an attachment to the ESMF.  
+
+208. Solar PV companies will continue to: i) provide training to workers on safe work practices and conduct toolbox talks; ii) provide and enforce the use of adequate Personal Protective Equipment (PPE) on site;
+
+
+---
+*Chunk pages 70–70*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=688 (sys=94, user=594), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 66
+
+## Selected Risk Factor 6  
+### Category: Probability Impact  
+**Other** - Low Low  
+
+### Description  
+Localised contamination of soil, groundwater and/or surface water due to the release of hazardous materials from improperly disposed of storage batteries at the end of their life cycle. The main concern is lead since all solar batteries available in Ghana are gel lead cells.
+
+### Mitigation Measure(s)  
+211. Battery suppliers will be required to take back used batteries for recycling once they reach the end of their life cycle. There is an incentive to both battery suppliers and beneficiaries to participate in the recycling of batteries because battery recycling companies in Ghana pay for the used batteries they receive.
+
+212. Only battery recyclers that have the required Environment Permit from EPA to operate will be allowed to participate in the Program. The EC and Ecobank will verify compliance with this requirement.
+
+213. The EC and Ecobank will provide solar system installers, battery suppliers and beneficiaries with information about the need to recycle spent batteries and where to recycle them.
+
+---
+
+## Selected Risk Factor 7  
+### Category: Probability Impact  
+**Other** - Low Low  
+
+### Description  
+Challenges in waste management of PV panels. Final disposal of end-of-life PV panels after decommissioning. Localised contamination of soil, groundwater and/or surface water due to the release of hazardous materials from improperly disposed of PV panels after decommissioning, or improperly disposed broken or damaged PV panels during transportation, installation, or operation.
+
+### Mitigation Measure(s)  
+214. This risk is minor. The EC and Ecobank will provide solar system installers and beneficiaries with information about the need to reuse and recycle decommissioned or damaged PV panels, and where to recycle them.
+
+---
+
+## Selected Risk Factor 8  
+### Category: Probability Impact  
+**Other** - Low Low  
+
+### Description  
+[No description provided]  
+
+### Mitigation Measure(s)  
+[No mitigation measures provided]
+
+
+---
+*Chunk pages 71–71*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=852 (sys=94, user=758), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 67
+
+## Disruption of activities in MSMEs and residential dwellings during the installation of PV systems
+
+### Mitigation Measure(s)
+
+215. This risk is minor and, thus, no specific mitigation measures are required.
+
+### Selected Risk Factor 9  
+
+| Category     | Probability | Impact |
+|--------------|-------------|--------|
+| Other        | Low         | Low    |
+
+### Description
+
+Construction-related noise and waste.
+
+### Mitigation Measure(s
+
+216. This risk is minor and, thus, no specific mitigation measures are required, but the EC and Ecobank will provide solar system installers with information about the need to recycle discarded cardboard and plastic packaging, and where to recycle them.
+
+217. Ghana is currently undergoing broad-scale banking sector reforms. Ecobank is a top tier bank and the largest bank in Ghana in terms of assets and deposits. Ecobank is a strategically important bank in the financial system of Ghana. Currently, Ecobank’s operations are not affected by the changes taking place as part of the banking sectors reforms and does not expect to be going forward.
+
+218. The banking sector reforms date back to 2017, when the Bank of Ghana (BoG) embarked on a comprehensive reform agenda, with the objective of cleaning up the banking industry and strengthening the regulatory and supervisory framework for a more resilient banking sector.
+
+219. One of the most significant components of the banking sector reforms was the new minimum capital directive issued on 11 September 2017. The directive required universal banks operating in Ghana to increase their minimum stated capital to GHS 400 million by the end of 2018. Following the deadline for compliance, the changes in the banking sector have largely gone in the direction expected – decrease in the number of banks – although the impact may not have been as significant as first thought. The minimum stated capital of GHS 400 million remains unchanged with Ghana’s macroeconomic challenges.
+
+220. The total number of banks currently operating as universal banks in Ghana stands at twenty-three (23). In effect, the number of banks has shrunk by eleven (11), representing a 32% decline from the 34 banks that operated as universal banks prior to the coming into effect of the new minimum capital directive.
+
+221. BoG approved three mergers involving six banks, effectively accounting for three more exits. The approved mergers are: 1. First National Bank & GHL Bank Limited, 2. Energy Bank & First Atlantic Bank and 3. Sahel - Sahara Bank & Omni Bank.
+
+222. After the new minimum capital directive, BoG and the Government have undertaken some complementary actions aimed at consolidating the expected gains from the bank recapitalization exercise and supporting a wider financial sector clean-up and transformation.
+
+223. These include:  
+(i) Directive for Voluntary Winding up of Banks and Specialized Deposit-taking Institutions issued in September 2018.  
+(ii) Cyber and Information Security Directive - issued in October 2018.  
+(iii) Directives for Forex Bureau in Ghana - issued in October 2018.  
+(iv) Finalization of Corporate Governance Directive 2018 - issued in December 2018.  
+(v) Creation of Ghana Amalgamated Trust (GAT) Plc as a Special Purpose Vehicle (SPV) to support the capital requirement of selected banks - issued in January 2019.
+
+
+---
+*Chunk pages 72–72*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1126 (sys=94, user=1032), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 68
+
+## 224. Amidst all the changes, compliance with various reforms, and a reduction in the number of banks with universal banking licenses, Ghana’s total banking sector operating assets (based on participating banks) increased by 11.3% (from 2017) to GHS 80.64 billion indicating a resilient sector in 2018. Having initiated most of the reforms seen in the sector over the last two years, we expect BoG will take the necessary steps to enhance supervision and compliance across the industry to consolidate and sustain the gains made so far. Going forward, banks will have to properly streamline the various aspects of their businesses, if they are to effectively manage the potentially complex web of operational efficiency, liquidity, and risk management issues, whilst maintaining a desired level of profitability.
+
+## 225. The major impact in 2020 on the local banking sector was the COVID-19 pandemic. Following government directives, interest rates charged by commercial banks in Ghana were lowered by 200 bps; companies affected by COVID-19 were also granted a moratorium on principal repayments for up to 6 months.
+
+## 226. Ghana's banking and financial services sector, like markets throughout the region, suffered a setback in 2020 as the Covid-19 pandemic weakened economic growth. The banking sector was faced by higher loan loss provisions and subdued lending growth due to the Covid-19 pandemic which will weigh on short-term profitability. An uptick in delinquencies over much of 2020 means the non-performing loan ratio rose to 15.8% in September 2020 (compared to a Q120 average of 14.0%), though this figure did ease slightly to 15.3% in October 2020. Capitalization levels were broadly considered adequate, however, after minimum capital requirements were raised and banks were able to better deal with risks and challenges. The Bank of Ghana (BoG) took several steps to support microfinance institutions through the crisis, including cash injections, the reclassification of overdue loan payments and delaying the implementation of increased capital reserves until the end of 2021. The BoG has however, indicated that there is limited room for such support due to the country's high debt-to-GDP ratio. (Source: Ghana Banking & Financial Services Report Q1 2021 published by Fitch Solutions Country Risk & Industry Research).
+
+## 227. The banking sector remained profitable and liquid in the first three quarters of the year in spite of the challenging economic environment, which was predominantly influenced by the COVID-19 pandemic, high national debt levels, inflationary pressures amongst others: in aggregate, resulting in higher market interest rates and failures in other macro fundamentals. Key performance indicators such as return on assets, return on equity, total assets and deposit levels improved up to the third quarter of 2022.
+
+## 228. In the third quarter of the year 2022, Ghana's debt stock was assessed as having reached unsustainable levels. The world economy was just recovering from the COVID-19 shock when Russia attacked Ukraine. The resultant shock to the supply chains of major commodities sent world prices on an inflationary trajectory. Ghana's economy was not spared. A strong US Dollar and increasing US interest rates made it increasingly difficult for the government to service its debt. The debt service challenges prompted international rating entities to downgrade the country's credit ratings throughout 2022. And this caused further anxiety among investors, which put even more pressure on the Ghana cedi. Having been locked out of the international financial market in late 2021, the Ministry of Finance (MoF) eventually, in December 2022, had no option but to announce a suspension of payments on selected external debts and then launched the Domestic Debt Exchange Programme (DDEP).
+
+## 229. The DDEP was a voluntary invitation to holders of selected GoG debt instruments to voluntarily surrender them in exchange for new bonds issued at new rates and maturities. The new rates and maturities meant a value loss for investors, including banks. After several engagements with MoF and assurances of some regulatory forbearances, the banking industry signed up to the DDEP. The direct impact of the bond exchange by banks meant their assets were now impaired and significant impairment losses needed to be recognized by the affected banks.
+
+## 230. As the largest holder of the government's domestic debts, the implementation of the DDEP had significant implications for the banking sector in various ways. Even though the DDEP was voluntary and
+
+
+---
+*Chunk pages 73–73*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1267 (sys=94, user=1173), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 69
+
+contained no compulsion to participate by the banking sector, the banks prioriti zed the stability of the economy, knowing that the banking sector is a subset of the economy and anything that would destabilize it would invariably affect the sector. To this end, the sector took a very difficult decision and supported the government in the DDEP to get the economy back on track swiftly. This sacrificial feat had direct and indirect implications for the sector.
+
+231.Available data on 22 universal banks from the Ghana Association of Banks revealed, net impairment losses on financial assets in the sector surged from GHS1.43 billion in 2021 to a colossal GHS19.5 billion in 2022, which negatively impacted the sector’s financial performance and position.
+
+232.Again, alterations in the interest rates, and maturity of the new bonds resulting from the DDEP gives a lower future cash flow generating capacity for the bonds and potential liquidity pressures. Collectively, the industry's earning assets-to-total assets ratio dipped from 65.6% in the preceding year to 60.3% in 2022, and the industry slipped from profitability of GH S 4.99 billion in 2021 to a loss of GH 6.02 billion by the end of the 2022 financial year. The average minimum ratio of capital to risk -weighted assets for the banking industry in 2022 dipped slightly from 28.07% to 15.6%. This ratio, however, remained above the minimum thresholds of 10% (as a result of the application of the regulatory measures introduced by the Bank of Ghana in response to the DDEP).
+
+233.Like profit, industry return on assets (ROA) and return on equity (ROE) were pole- axed by the huge impairment loss incurred by the banks through the DDEP which caused the variables to slip by 5.68% and 48.5%, respectively in 2022. Liquidity and solvency were also negatively impacted. While it may sound exaggerated that losses incurred and the fall in ROA, ROE, and other performance indicators are caused by the DDEP rather than operational inefficiencies, evidence from the net impairment losses and a thorough review of the banks’ financials affirm the latter. The negative impact notwithstanding, total assets, net interest income, and total operating income in the sector inched up by 18.8%, 26.1% and 31.2% respectively.
+
+234.After a bruising setback in the banking sector in 2022 and the implementation of mitigating measures announced by the industry regulator, the sector exhibited a strong rebound and recovery in the first quarter of 2023, raising optimism amongst investors and customers. The first quarter industry financial report revealed that the industry’s profit after tax increased by 45.8% to GH ₵2.8 billion, compared to a 21.5% increase in April 2022, net impairment loss dropped to GH₵944 million; and total assets increased sharply by 22.6% to GH₵238.2 billion, compared with 24.8% growth in April 2022. These were however audited numbers for the first quarter of 2023.
+
+235.The industry liquidity position remained strong in the first quarter with core liquid assets to total deposits increasing to 38.0% compared to 33.1% in April 2022. However, the ratio of broad liquid assets to total deposits declined to 83.2% from 98.9% a year ago. Industry non -performing loan (NPL) ratio rose marginally to 18.0% compared to 14.3% in April 2022; and capital adequacy ratio adjusted for regulatory reliefs was 14.8% which is lower than th e 21.3% attained in the previous year. Though financial soundness indicators decreased marginally compared to similar time periods a year ago, they have exhibited a strong sign of recovery considering the values obtained at the end of 2022 financial year.
+
+236.More so, Ghana is making progress in talks to restructure its external debt (i.e., Eurobond) and hopes to achieve a resolution by the end of the year. In a budget speech, Ken Ofori -Atta (Minister of Finance) said, the economy was getting back on track with a smaller deficit than targeted in the first eight months of 2023. Ghana has received "illustrative proposals" on debt treatment scenarios from
+
+
+---
+*Chunk pages 74–74*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=276 (sys=94, user=182), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 70
+
+At least 2.8% next year, an inflation rate of 15% by the end of December 2024 from more than 35% in October this year (GHCPIY=ECI) and a primary budget surplus of 0.5% of GDP next year, budget highlights showed. Per the above, the IMF programme and the attendant restructure of the country's debts is leading to a revival of the macro-economic environment therefore would have positive effect on ASAP implementation with an expansion of HH and MSMEs incomes and purchasing power.
+
+
+---
+*Chunk pages 75–75*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=961 (sys=94, user=867), max_out=1024, ctx=8192
+---
+
+# GCF Policies and Standards  
+## G.1. Environmental and social risk assessment (max. 750 words, approximately 1.5 pages)  
+
+238. A full Environmental and Social Management Framework (ESMF) is included in Annex 6.  
+
+239. The construction activities involved in the ASAP Ghana Program, consisting of the installation of crystalline silicon solar panels and associated balance of systems (i.e., inverter, battery bank, battery charger, etc.), are in general of very small scale, technically simple, require a very limited number of workers using manual and small tools and equipment, take a short time to complete, and demand very little construction materials as well as energy and water. In addition, these activities do not require the construction of work camps, the erection of construction plants or the development of new infrastructures or large buildings. Further, activities will be implemented in already existing structures, such as roofs of single-family houses, MSME buildings and pump houses of irrigated farm cooperatives located in already existing urban and rural settlements.  
+
+240. The above Program characteristics, in conjunction with the fact that firms licensed by the EC will undertake the installation of solar systems with qualified technical staff largely trained under Programs sponsored by the EC and using solar equipment tested by the Ghana Standards Authority, point to potential risks anticipated to be minor to low in magnitude, localized, short term, reversible, easily avoided or mitigated with readily available and cost-effective measures, and have a low likelihood of occurring.  
+
+241. An ESMF was developed, which is enclosed as an attachment to this Proposal. The Plan: i) identifies the potential environmental and social impacts and risks of the Program; ii) assesses and ranks the significance of the identified risks; iii) defines feasible measures to avoid and manage the environmental and social risks posed by ASAP Ghana, prioritized according to the significance of the risks; iv) establishes the institutional arrangements for the implementation and oversight of the ESMF; and v) formulates a detailed plan for the monitoring of critical environmental and social parameters during the implementation of the Program.  
+
+242. The overall environmental and social risk category for the Program is I2. All the risks identified are likely to manifest with low to moderate significance. The potential moderate risks are:  
+(i) occupational health and safety risks to workers during the installation of solar systems; and  
+(ii) localized contamination of soil, groundwater and/or surface water due to the release of hazardous materials from improperly disposed of storage batteries.  
+
+243. Section G.2 of this Proposal describes the identified risks and associated management measures. The likely low risks are:  
+(i) challenges in waste management of PV panels: final disposal of end-of-life PV panels after decommissioning and localized contamination of soil, groundwater and/or surface water due to the release of hazardous materials from improperly disposed of PV panels; and  
+(ii) disruption of activities in MSMEs and residential dwellings during the installation of PV systems; and  
+(iii) construction-related noise and waste.  
+
+244. The ESMF includes an Environmental and Social Monitoring Plan, which first lists the identified potential environmental and social risks and the respective mitigation measures and then, for each measure, defines parameters and units of measurement, methods for collecting information, the frequency and location of application of the methods, and responsibilities for mitigation and monitoring.  
+
+245. Regarding the institutional arrangements for the implementation and oversight of the ESMF, the responsibility for implementing the environmental and social management measures rests with solar PV panel installation and maintenance companies, which are also required to prepare and implement a Site-Specific Health and Safety Management Plan (HSMP). The EAA Division of the EPA, together with the SITA Directorate of the EC, will be responsible for the enforcement and oversight of many of the  
+
+[Page 75]
+
+
+---
+*Chunk pages 76–76*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=918 (sys=94, user=824), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 72
+
+## 246. ASAP Ghana falls under Schedule 1 (i.e., “Undertakings Requiring Registration and Environment Permit”) of the Environmental Assessment Regulations of 1999 (LI 1652) and, therefore, does not require an Environmental and Social Impact Assessment. To comply with Schedule 1 requirements, the EC will:
+
+- Fill out an Environmental Assessment Registration Form for several beneficiaries located in the same district;
+- Pay a small fee for filing the Form for each group of beneficiaries; and
+- Be the recipient of the Environment Permits granted by the EPA.
+
+The EC will need to expand its team to include additional staff to complete the Environmental Assessment Registration Forms.
+
+## 247. In principle section 3.1.5 of the E & S policy for GCF funded projects require that where Ecobank Ghana Limited is implementing activities jointly with other international financial institutions, Ecobank Ghana will explore a common approach, for the assessment and management of the environmental and social risks and impacts. In effect, Ecobank accepts that the ESM F will be termed Environmental and Social Management Framework (ESMF).
+
+## 248. The screening will be done using the standard template used by policy for E & S due diligence, assessment, and action plan formulation. This will be applied to manage and safeguard issues for site-specific project activities that will be identified during project activities. The ESMF will cover all project components including any capacity building as well as any small-scale works related to the sub-project investments. There will be a GRM set up that will leverage the existing complaint mechanism of EGH.
+
+## 249. Tabulated environmental and social risks and impacts and management measures are provided.
+
+## 250. Performance Standard 1: Assessment and Management of Environmental and Social Risks and Impacts:
+
+### i. To identify and evaluate environmental and social risks and impacts of the project - The ESMF for ASAP Ghana includes the identification and evaluation of environmental and impact and risks. As agreed with the EPA, the EC will:
+
+- Fill out Form EA1 for several beneficiaries located in the same district;
+- Pay a small fee for filing the Form for each group of beneficiaries; and
+- Be the recipient of the Environmental Permits granted.
+
+For the EC to be able to respond effectively to the amount of work involved in preparing and submitting the Forms EA1, the Programme will finance a Part-Time National Environmental Consultant on a retainer basis to complete the Forms EA1 under the supervision of the EC.
+
+### ii. To adopt a mitigation hierarchy to anticipate and avoid, or where avoidance is not possible, minimize, and, where residual impacts remain, compensate/offset for risks and impacts - The ESMF for ASAP Ghana includes the identification and evaluation of environmental and impact and risks, as well as mitigation measures.
+
+### iii. To promote improved environmental and social performance through the effective use of management systems - Ecobank has developed an ESMS as part of accreditation requirement for the GCF.
+
+### iv. To ensure that grievances from affected communities and external communications from stakeholders are responded to and managed appropriately - In case there are grievances from affected communities and/or external communications from stakeholders, the EC will address them.
+
+### v. To promote and provide means for adequate engagement with affected communities and to ensure that relevant environmental and social information is disclosed and disseminated - There has been some stakeholder consultation, including with the private sector and civil society, in the
+
+--- 
+
+*Note: Page numbers are preserved as per instructions.*
+
+
+---
+*Chunk pages 77–77*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1065 (sys=94, user=971), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 73
+
+## Performance Standard 2: Labour and Working Conditions
+
+To promote the fair treatment, non-discrimination, and equal opportunity of workers; establish, maintain, and improve the worker-management relationship; promote compliance with national employment and labour laws; protect workers, including vulnerable categories of workers such as children, migrant workers; and promote safe and healthy working conditions, and the health of workers.
+
+The Ghanaian requirements are equivalent to the GCF requirements. Labour Inspectors, attached to the Ministry of Employment and Labour, are responsible for verifying compliance with the national requirements.
+
+Further, the ESMF for ASAP Ghana includes mitigation measures for occupational health and safety risks. This ESMF requires that installers develop a formal Health and Safety Management Plan specific for the type of systems they install. This ESMF includes the terms of reference for the Plan.
+
+The joint inspections agreed between the EC and the EPA of a sample of project sites will include the oversight of occupational health and safety risks.
+
+## Performance Standard 3: Resource Efficiency and Pollution Prevention
+
+To avoid or minimize adverse impacts on human health and the environment by avoiding or minimizing pollution from project activities; promote more sustainable use of resources, including energy and water; and reduce project-related Greenhouse Gas (GHG) emissions.
+
+The ESMF and the Environmental and Social Monitoring Plan (Annex VI) for ASAP Ghana will address this. The joint inspections agreed between the EC and the EPA of a sample of project sites will verify implementation of the ESMF.
+
+The periodic monitoring, reporting and evaluation system for ASAP Ghana will include the environmental and social, including gender, performance of the Programme.
+
+ASAP Ghana contributes to the objectives of energy efficiency, utilisation of renewable energy resources and sustainable use of energy established in the legal framework for the energy sector and the Environmental Policy of Ghana and complies with the stated GCF requirement.
+
+Lastly, ASAP Ghana will not generate GHG emissions directly and will contribute to the Ghana National Climate Change Policy focus area of minimisation of GHG emissions.
+
+## Performance Standard 4: Community Health, Safety, and Security
+
+Performance Standard 4 recognizes that project activities, equipment, and infrastructure can increase community exposure to risks and impacts. In addition, communities that are already subject to impacts from climate change may also experience an acceleration and/or intensification of impacts due to project activities.
+
+While acknowledging the public authorities’ role in promoting the health, safety, and security of the public, this Performance Standard addresses the client’s responsibility to avoid or minimize the risks and impacts to community health, safety, and security that may arise from project-related activities, with particular attention to vulnerable groups.
+
+The installations of the Solar PV will not be done on a utility scale at any location to endanger the health and safety of entire communities besides solar PVs installed is not known to be hazardous to the health and safety of those nearby.
+
+## Performance Standard 5: Land Acquisition and Involuntary Resettlement
+
+Performance Standard 5 recognizes that project-related land acquisition and restrictions on land use can have adverse impacts on communities and persons that use this land. Involuntary resettlement refers both to physical displacement (relocation or loss of shelter) and to economic displacement (loss of assets or access to assets that leads to loss of income sources or other means of livelihood) because of project-related land acquisition and/or restrictions on land use.
+
+Resettlement is considered involuntary when affected persons or communities do not have the right to refuse land acquisition or restrictions on land use that
+
+
+---
+*Chunk pages 78–78*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=957 (sys=94, user=863), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 74
+
+## 255. Households, MSMEs, as well as irrigation cooperatives expected to benefit from ASAP, will have the properties already developed and the installation is expected to be done on rooftops ruling out the possibility of acquiring land under ASAP and to the extent of doing so involuntarily is remote to the project.
+
+## 256. Performance Standard 6. Biodiversity Conservation and Sustainable Management of Living Natural Resources. Performance Standard 6 recognizes that protecting and conserving biodiversity, maintaining ecosystem services, and sustainably managing living natural resources are fundamental to sustainable development. The requirements set out in this Performance Standard have been guided by the Convention on Biological Diversity, which defines biodiversity as “the variability among living organisms from all sources including, inter alia, terrestrial, marine and other aquatic ecosystems and the ecological complexes of which they are a part; this includes diversity within species, between species, and of ecosystems.”
+
+## 257. Performance Standard 7 Indigenous Peoples: Performance Standard 7 recognizes that Indigenous Peoples, as social groups with identities that are distinct from mainstream groups in national societies, are often among the most marginalized and vulnerable segments of the population. In many cases, their economic, social, and legal status limits their capacity to defend their rights to, and interests in, lands and natural and cultural resources, and may restrict their ability to participate in and benefit from development. Indigenous Peoples are particularly vulnerable if their lands and resources are transformed, encroached upon, or significantly degraded. Their languages, cultures, religions, spiritual beliefs, and institutions may also come under threat. Therefore, Indigenous Peoples may be more vulnerable to the adverse impacts associated with project development than non-indigenous communities. This vulnerability may include loss of identity, culture, and natural resource-based livelihoods, as well as exposure to impoverishment and diseases.
+
+## 258. Whereas there are no group of people labelled as 'indigenous' people in Ghana the ASAP targets cosmopolitan areas where willing beneficiaries will rely on their own already acquired properties for the installations and no community will have to provide land for the project.
+
+## 259. Performance Standard 8 Cultural Heritage. Performance Standard 8 recognizes the importance of cultural heritage for current and future generations. Consistent with the Convention Concerning the Protection of the World Cultural and Natural Heritage, this Performance Standard aims to ensure that clients protect cultural heritage during their project activities. In addition, the requirements of this Performance Standard on a project's use of cultural heritage are based in part on standards set by the Convention on Biological Diversity.
+
+## 260. Overall, the Project ESS and Gender will follow the GCF accepted Environmental and Social Risk Policy & Procedure Manual (ESPPM) and Gender policy approved for implementation by the GCF during accreditation.
+
+## G.2. Gender assessment and action plan (max. 500 words, approximately 1 page)
+
+## 261. With regards to gender issues, the gender assessment for ASAP in Ghana was conducted between May 2023 and July 2023. The assessment is based on a mixed approach methodology, combining quantitative and qualitative approaches. Data from secondary and primary sources was used. Primary data was collected from Greater Accra, Central and Northern Regions. Key Informant interviews were held with national-level institutions, NGOs, past and ongoing solar energy projects, male and female-owned MSMEs and male and female headed-households. Focus group discussions was held with water user associations (WUAs).
+
+
+---
+*Chunk pages 79–79*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1066 (sys=94, user=972), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 75
+
+## 262. 
+The assessment concluded that, except for the economic (employment) and educational sectors, there is a generalized lack of sex-disaggregated data for most other areas in Ghana, which is especially notable in the areas of energy and environment.
+
+## 263. 
+Further, the Gender Assessment found that, in 2015, Ghana fell into Group 5 in the Gender Development Index (GDI) and ranked in 131st place in the world in the Gender Inequality Index (GII), which indicates that, despite the progress made over the years, the country still has a long way to go in achieving gender equality, as underscored by the GDI.
+
+## 264. 
+The Gender Action Plan provides entry points for gender-responsive actions to take under each component of the Program. The Plan specifies, for each output, corresponding outcomes, actions, and indicators, as well as responsible agencies. The indicators will serve to measure and track progress on each proposed action in the plan - key entry points for achieving the programme’s gender and social inclusion outcome are:
+
+a) The Accredited Entity and the key implementing institutions have gender policies that guide the implementation of programmes; collect gender-disaggregated data to inform programme implementation; gender focal persons are in place; and staff have received gender training in the last five years. The Renewable Energy Association of Ghana (REAG) has also trained its members on gender mainstreaming within the renewable sector.
+
+b) The institutional gender analysis revealed that both the AE and the key implementing institutions had gender training needs.
+
+c) There is limited access to formal credit with moderate interest rates by households (male and female-headed) to procure and install solar PV systems. There is limited access to credit to women MMSE who majority save in non-financial channels to upgrade their businesses.
+
+d) Loan repayment terms should be every four months rather than monthly, to enable them to harvest and sell their produce before payment is done.
+
+e) Requesting for land and properties as collateral to access loans may disadvantage women.
+
+f) To reduce the loan risk, it is good to target cooperatives with both male and female members rather than individual farmers.
+
+g) Considering the expensive initial cost of installing solar PV technologies for irrigation purposes, to reach out to farmers, mixed irrigation groups or WUAs should be targeted for women to benefit.
+
+h) Solar Irrigation systems should have women-friendly designs for easy operation.
+
+i) The PV system should be easily and simply switched on by women in the absence of men.
+
+## 265. 
+Throughout the process of developing the overall GCF Concept Note and Funding Proposal, as well as during the preparation of the environmental, social and gender assessment and management instruments for ASAP Ghana, stakeholder engagement and consultation activities were undertaken with representatives of the non-governmental, private, and public sectors. The assessment has produced several recommendations for the execution of ASAP:
+
+i. The differential needs of men and women with respect to the provision of loans and installation of solar PV systems for PAPs as indicated ‘section 6.3’ of this report should be taken into consideration in the design, planning, and implementation of the programme.
+
+ii. Beyond the provision of long-term and short-term loans for PAPs, the ASAP programme should invest in gender equality and social inclusion capacity building for the ASAP programme staff and key implementing institutions, Energy Commission, Environmental Protection Agency, and MoFA-Ghana Irrigation Development Authority (GIDA) Irrigation scheme managers including the solar PV vendors that will benefit from the loans. Specific tailor-made gender training should be organized for ASAP staff and selected staff of the key implementing institutions (EC and EPA) on how to integrate the gender transformation approach in the ASAP programme. For the ASAP programme staff, additional training would be provided on how to implement the GAP.
+
+iii. In the assessment and certification of solar PV vendors, conscious effort should be made to include at least 45% women and PLWD, youth considering that the sector is male dominated.
+
+iv. Considering that there are different categories of PAPs (male and female-headed households, male and female own MSMEs, and WUAs to be engaged by the ASAP, it is important for the
+
+--- END EXTRACTED TEXT ---
+
+
+---
+*Chunk pages 80–80*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1013 (sys=94, user=919), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 76
+
+## Programme Team and Loan Packages
+
+The programme team should come up with loan packages that would suit each PAP, especially women who are usually disadvantaged. The bank should provide business technical assistance (non-financial support) to the vendors and MSMEs who will benefit from the loans. This would ensure business growth and they would be able to pay back their loans.
+
+In furtherance to this, ASAP should bring on board individuals who can pay for the cost of the solar panel.
+
+## Women Participation in Project Activities
+
+In the implementation of all project activities for PAPs, a quota of 50% women participation should be targeted for households and MSMEs. For the irrigation cooperative, women's membership in groups and at least two women in leadership positions in the WUA should be a requirement for groups to benefit from the loans. Training and advisory services should be done at a time when women are free to participate.
+
+## Gender Action Plan Implementation
+
+Adequate financial resources should be allocated for the implementation of the Gender Action Plan developed for ASAP. It is important for the project to engage the services of a full-time experienced gender specialist for the lifespan of the project to support with the implementation of the gender action plan. It is further recommended that external gender consultants should be part of the evaluation team that will be engaged during the programme’s mid-term and terminal evaluation.
+
+## Collaboration with Other Solar Programmes
+
+The ASAP Programme should collaborate with other solar programmes being implemented in Ghana to share experiences, best practices and lessons learned in the implementation of the ASAP GAP. Again, the ASAP programme should document GTA achievements, lessons learned and best practices for replication. Development of targeted communication and information materials on gender equality achievement of ASAP should be undertaken. In addition, the ASAP programme should create awareness about the programme, using media channels that more women can have access to the information. Local dialect and English should be used considering the low level of education of women.
+
+## Female-Headed Households
+
+To reach out to more female-headed households, Ecobank should collaborate with the residential homeowner's associations to target more women beneficiaries and to ensure they pay back their loans.
+
+## Registered WUAs
+
+It is recommended that, the ASAP programme should work with existing WUAs that are registered and have both women, men, youth, aged and PLWD members rather than establishing new groups to ensure more women farmers are reached. It is further recommended that the programme should engage with registered WUAs working with government and co-owned government and communal irrigation schemes as they tend to have more secured land access by both genders.
+
+## MSME Eligibility
+
+For the MSMEs, it will be important to reduce the electricity consumption requirement for women as an eligibility criterion from 800 Ghana cedis (GHS) and above to 500 Ghana cedis (GHS) and above to allow more women owned MSMEs to roll on the ASAP programme.
+
+## Grievance Desk
+
+There should be a grievance desk established for the programme and it must have both men and women as part of the team responsible for receiving grievances from PAPs. The grievances should be recorded in a logbook separately for men and women.
+
+## Consultations
+
+266. In the case of the drafting of the ESMF and the Gender Action Plan, consultations took place with non-governmental organizations focused on environmental and gender issues, potential Program beneficiaries, solar panel installers and their trade association, a battery recycler, Ecobank (co-Executing Entity) and pertinent public sectorial authorities in the areas of environment, gender, energy, labour, finance and planning, and irrigation.
+
+A full gender assessment and project-level gender action plan (Annex 8).
+
+## Financial Management and Procurement
+
+G.3. Financial management and procurement (max. 500 words, approximately 1 page)
+
+Ecobank Procurement (detailed procurement plan included in Annex 10.)
+
+267. The responsibility for the implementation of the Program, and therefore for the award and administration of contracts under the Program, rests with the borrower. Ecobank is required to ensure that the proceeds of any credit are used only for the purposes for which the credit was granted, with due attention to
+
+---
+
+
+---
+*Chunk pages 81–81*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=969 (sys=94, user=875), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 77
+
+## Considerations of economy and efficiency
+
+While in practice the specific procurement rules and procedures to be followed in the implementation of a project depend on the circumstances of the case, three considerations generally will guide Ecobank’s requirements:
+
+268. The need for economy and efficiency in the implementation of the project, including the procurement of the goods, works, and services involved.
+
+269. Ecobank’s interest in giving all eligible bidders the same information and equal opportunity to compete in providing goods, works, and services financed by Ecobank, and the importance of transparency in the procurement process.
+
+270. Open competition is the basis for efficient public procurement. Borrowers shall select the most appropriate method for the specific procurement. In most cases, International Competitive Bidding (ICB), properly administered, and with the allowance for preferences for domestically manufactured goods and, where appropriate, for domestic contractors for works under prescribed conditions is the most appropriate method. In most cases, therefore, Ecobank requires its Borrowers to obtain goods, works, and services through ICB open to eligible suppliers, service providers, and contractors.
+
+271. Where ICB is not the most appropriate method of procurement, other methods of procurement may be used. These include Limited International Bidding (LIB), National Competitive Bidding (NCB), Shopping, Framework Agreement (FA), Direct contracting, Force Account, Use of Procurement agents and other special considerations.
+
+272. The Borrower may wish to proceed with the initial steps of procurement before signing the related Bank loan. In such cases, the procurement procedures, including advertising, shall be in accordance with the procurement of goods and services by executing agencies receiving loans, credits, and grants policy of the bank for the eventual contracts to be eligible for Bank financing. In addition, Ecobank shall review the process used by the Borrower. A Borrower undertakes such advance contracting at its own risk, and any concurrence by Ecobank with the procedures, documentation, or proposal for an award does not commit Ecobank to make a loan for the project in question. If the contract is signed, reimbursement by Ecobank of any payments made by the Borrower under the contract prior to loan signing is referred to as retroactive financing and is only permitted within the limits specified in the Loan Agreement.
+
+273. Invariably Ecobank will review the Borrower’s procurement procedures, documents, bid evaluations, award recommendations, and contracts to ensure that the procurement process is carried out in accordance with the agreed procedures. The Procurement Plan approved by Ecobank shall specify the extent to which these review procedures shall apply in respect of the different categories of goods, works, and services to be financed, in whole or in part, from Ecobank loan.
+
+274. The Borrower shall ensure that the publication of the award of a contract is undertaken in line with the policy of transparency and accountability. The financial reports standards and auditing standards used will be the International Financial Reporting Standard (IFRS) and International Auditing Standard (IAS).
+
+## Reporting of complaints
+
+275. The reporting of complaints or allegations of wrongdoing within the project or any of its activities would be via the Ecobank Whistle-blower platform. Ecobank is an organization with strong values of responsibility and integrity. Our Ecobank Group Code of Conduct contain general guidelines for conducting business with the highest standards of ethics. The bank is committed to an environment where open, honest communications are the expectation and not the exception. This is to ensure that employee, contractor, supplier, customer, or any other stakeholder feel comfortable bringing to the attention of Ecobank instances where they are aware of any violations of policies, standards or regulations that have occurred, or they reasonably suspect to have occurred.
+
+--- 
+
+[Page 1]
+
+
+---
+*Chunk pages 82–82*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=616 (sys=94, user=522), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 78
+
+## 276. In line with the Whistleblowing Policy, Ecobank guarantees protection to a whistle-blower making disclosures in good faith. To this end, parties are encouraged to submit their report in confidence via the link: reports.ethicspoint.com. This Whistleblowing system is hosted by a third-party Global hotline provider NAVEX and is independent of the Ecobank IT platform.
+
+## Management of Ecobank loans
+277. The processes set out for Ecobank loans under the ASAP Ghana Program are outlined in section C.7. G.4. Disclosure of funding proposal
+
+### Note:
+The Information Disclosure Policy (IDP) provides that the GCF will apply a presumption in favour of disclosure for all information and documents relating to the GCF and its funding activities. Under the IDP, project and programme funding proposals will be disclosed on the GCF website, simultaneous with the submission to the Board, subject to the redaction of any information that may not be disclosed pursuant to the IDP. Information provided in confidence is one of the exceptions, but this exception should not be applied broadly to an entire document if the document contains specific, segregable portions that can be disclosed without prejudice or harm.
+
+### Indicate below whether or not the funding proposal includes confidential information:
+
+- **No confidential information:** The accredited entity confirms that the funding proposal, including its annexes, may be disclosed in full by the GCF, as no information is being provided in confidence.
+- **With confidential information:** The accredited entity declares that the funding proposal, including its annexes, may not be disclosed in full by the GCF, as certain information is being provided in confidence. Accordingly, the accredited entity is providing to the Secretariat the following two copies of the funding proposal, including all annexes:
+  - Full copy for internal use of the GCF in which the confidential portions are marked accordingly, together with an explanatory note regarding the said portions and the corresponding reason for confidentiality under the accredited entity's disclosure policy, and
+  - Redacted copy for disclosure on the GCF website.
+  
+The funding proposal can only be processed upon receipt of the two copies above, if containing confidential information.
+
+
+---
+*Chunk pages 83–83*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=705 (sys=94, user=611), max_out=1024, ctx=8192
+---
+
+# Annexes
+
+## H.1. Mandatory annexes
+
+- **Annex 1** NDA no-objection letter(s) (template provided)  
+- **Annex 2** Feasibility study - and a market study, if applicable  
+- **Annex 3** Economic and/or financial analyses in spreadsheet format  
+- **Annex 4** Detailed budget plan (template provided)  
+- **Annex 5** Implementation timetable including key project/programme milestones (template provided)  
+- **Annex 6** E&S document corresponding to the E&S category (A, B or C; or I1, I2 or I3):  
+  - ESS disclosure form provided  
+  - Environmental and Social Impact Assessment (ESIA) or  
+  - Environmental and Social Management Framework (ESMF) or  
+  - Environmental and Social Management System (ESMS)  
+  - Others (please specify – e.g. Resettlement Action Plan, Resettlement Policy Framework, Indigenous People’s Plan, Land Acquisition Plan, etc.)  
+
+- **Annex 7** Summary of consultations and stakeholder engagement plan  
+- **Annex 8** Gender assessment and project/programme-level action plan (template provided)  
+- **Annex 9** Legal due diligence (regulation, taxation and insurance)  
+- **Annex 10** Procurement plan (template provided)  
+- **Annex 11** Monitoring and evaluation plan (template provided)  
+- **Annex 12** AE fee request (template provided)  
+- **Annex 13** Co-financing commitment letter, if applicable (template provided)  
+- **Annex 14** Term sheet including a detailed disbursement schedule and, if applicable, repayment schedule  
+
+## H.2. Other annexes as applicable
+
+- **Annex 15** Evidence of internal approval (template provided)  
+- **Annex 16** Map(s) indicating the location of proposed interventions  
+- **Annex 17** Multi-country project/programme information (template provided)  
+- **Annex 18** Appraisal, due diligence or evaluation report for proposals based on up-scaling or replicating a pilot project  
+- **Annex 19** Procedures for controlling procurement by third parties or executing entities undertaking projects financed by the entity  
+- **Annex 20** First level AML/CFT (KYC) assessment  
+- **Annex 21** Operations manual (Operations and maintenance)  
+- **Annex 22** Assessment of GHG emission reductions and their monitoring and reporting (for mitigation and cross-cutting projects)  
+
+> [Page 1]  
+> *Please note that a funding proposal will be considered complete only upon receipt of all the applicable supporting documents.*  
+> 119 Annex 22 is mandatory for mitigation and cross-cutting projects.  
+
+## Annex X Other references
+
+--- 
+
+**Note:** The text above represents the full content extracted from page 83 of the PDF, formatted in GitHub-flavored Markdown without summaries or additional commentary.
+
+
+---
+*Chunk pages 84–84*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=189 (sys=94, user=95), max_out=1024, ctx=8192
+---
+
+# GREEN CLIMATE FUND FUNDING PROPOSAL V.3.0 | PAGE 80
+
+## Annex 24 Theory of Change
+
+i Renewable Energy means modern forms of renewable energy such as solar, wind, bio-mass, and small and medium hydro.
+
+--- 
+
+*Note: The text appears to be a fragment from a larger document, likely related to the Green Climate Fund's funding proposal. The content suggests that renewable energy is defined in terms of modern forms including solar, wind, biomass, and small to medium hydroelectric power.*
+
+
+---
+*Chunk pages 85–85*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=150 (sys=94, user=56), max_out=1024, ctx=8192
+---
+
+# No-objection letter(s) issued by the national designated authority(ies) or focal point(s)
+
+[Page 1]
+
+
+---
+*Chunk pages 86–86*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=129 (sys=94, user=35), max_out=1024, ctx=8192
+---
+
+# Page 86
+
+---
+
+[Page 1]
+
+
+---
+*Chunk pages 87–87*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=571 (sys=94, user=477), max_out=1024, ctx=8192
+---
+
+# Environmental and Social Safeguards Report Form
+
+## Basic project or programme information
+
+- **Project or programme title**: Accelerating Solar Action Program (ASAP)
+- **Existence of subproject(s) to be identified after GCF Board approval**: Yes
+- **Sector (public or private)**: Private
+- **Accredited entity**: Ecobank Ghana Limited
+- **Environmental and social safeguards (ESS) category**: Category I-2
+- **Location – specific location(s) of project or target country or location(s) of programme**: Across the Regional locations in Ghana
+
+## Environmental and Social Impact Assessment (ESIA) (if applicable)
+
+- **Date of disclosure on accredited entity’s website**: N/A
+- **Language(s) of disclosure**: N/A
+- **Explanation on language**: N/A
+- **Link to disclosure**: N/A
+- **Other link(s)**: N/A
+- **Remarks**: N/A
+
+## Environmental and Social Management Plan (ESMP) (if applicable)
+
+- **Date of disclosure on accredited entity’s website**: N/A
+- **Language(s) of disclosure**: N/A
+- **Explanation on language**: N/A
+- **Link to disclosure**: N/A
+- **Other link(s)**: N/A
+- **Remarks**: N/A
+
+## Environmental and Social Management System (ESMS) (if applicable)
+
+- **Date of disclosure on accredited entity’s website**: Monday, January 29, 2024
+- **Language(s) of disclosure**: English
+- **Explanation on language**: English is the official language of Ghana.
+- **Link to disclosure**: [https://ecobank.com/upload/publication/20240129022948740UP82NAU9KJ/20240129022759326n.pdf](https://ecobank.com/upload/publication/20240129022948740UP82NAU9KJ/20240129022759326n.pdf)
+- **Other link(s)**: N/A
+- **Remarks**: An ESMS consistent with the requirements for a Category I-2 project is contained in the “Environmental and Social Management Framework”.
+
+## Any other relevant ESS reports, e.g. Resettlement Action Plan (RAP), Resettlement Policy Framework (RPF), Indigenous Peoples Plan (IPP), Indigenous Peoples Planning Framework (IPPF) (if applicable)
+
+- **Description of report/disclosure on accredited entity’s website**: N/A
+- **Language(s) of disclosure**: N/A
+- **Explanation on language**: N/A
+
+
+---
+*Chunk pages 88–88*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=382 (sys=94, user=288), max_out=1024, ctx=8192
+---
+
+# Disclosure in locations convenient to affected peoples (stakeholders)
+
+## Date
+Monday, January 29, 2024
+
+## Place
+Ecobank Ghana Head Office, # 2 Morocco Lane Off Independence Avenue, Ridge – Accra
+
+Also at the following key branches:
+1. Tema Main Branch - Community 1, Krakue Road, Tema.
+2. Kumasi Main Branch - Harper Road, Adum Kumasi.
+3. Takoradi Main Branch - Plot 34, Axim Road, Harbour Commercial area, Takoradi.
+4. Tamale Branch - Bolgatanga Road, Tamale.
+5. Tarkwa Branch - Esiama Road, Tarkwa.
+6. Accra Main Branch - 2 Morocco Lane Off Independence Avenue, Ridge – Accra.
+
+## Date of Board meeting in which the FP is intended to be considered
+N/A
+
+## Date of accredited entity’s Board meeting
+N/A
+
+## Date of GCF’s Board meeting
+Monday, March 4, 2024
+
+## Note
+This form was prepared by the accredited entity stated above.
+
+
+---
+*Chunk pages 89–89*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=774 (sys=94, user=680), max_out=1024, ctx=8192
+---
+
+# GCF/B.38/02/Add.11  
+Page 89  
+
+## Independent Technical Advisory Panel’s assessment of FP231  
+
+### Proposal name: Accelerating Solar Action Program (ASAP)  
+- **Accredited entity:** Ecobank Ghana Limited  
+- **Country/(ies):** Ghana  
+- **Project/programme size:** Small  
+
+## I. Assessment of the independent Technical Advisory Panel  
+
+### 1.1 Overview  
+
+1. In its assessment, the independent Technical Advisory Panel (TAP) is guided by decision B.33/12 adopted by the Board, which explains the principles for demonstrating the impact potential of GCF-supported activities as well as other appraisal and assessment guidance in considering these investment criteria and as endorsed by the Board.  
+
+2. The Intergovernmental Panel on Climate Change has concluded that Ghana is already experiencing the impacts of climate change, and these impacts are expected to worsen in the coming decades. According to the panel, Ghana is highly vulnerable to the effects of climate change due to its reliance on rain-fed agriculture, limited adaptive capacity, and high levels of poverty.  
+
+3. Aside from the negative impact that climate change already has had on the country, Ghana is also on a pathway of significantly increasing its own greenhouse gas (GHG) emissions in the coming years and decades. According to Government of Ghana projections and based on a business-as-usual scenario, “Ghana’s emissions could rise from 28 Mt CO2e[q] in 2021 to over 140 Mt in 2050”, with the most significant share of increase in emissions coming from the transport, industrial, and power sectors, driven by population growth, gross domestic product per capita growth, and increasing vehicle ownership.  
+
+   *While the government has ambitious plans to achieve a net zero growth pathway for Ghana, realizing that objective is filled with significant challenges, including a complex macroeconomic environment characterized by unsustainable levels of public debt, significant inflation, and high interest rates.*  
+
+4. Against this background, Ecobank Ghana Limited, the accredited entity (AE), is proposing the implementation of a project entitled the “Accelerating Solar Action Program (ASAP)”. ASAP is designed as a debt-financing mechanism to promote the roll-out of distributed solar photovoltaic (PV) installations for household and micro, small and medium-sized enterprise (MSME) clients as well as irrigation cooperatives in Ghana.  
+
+   The main objective of the programme is to provide affordable financing solutions to these target client groups to address current affordability and bankability issues associated with distributed renewable energy financing in the Ghanaian market. Through the programme, the AE seeks to demonstrate the viability of distributed solar PV and, through associated technical assistance as well as advocacy work, to lay the groundwork for a subsequent scale-up of the market for distributed solar PV in Ghana, and the wider region.  
+
+   *See SEforALL (2023). Ghana Energy Transition and Investment Plan, p. 1. Available at: www.seforall.org/system/files/2023-09/report-ghana-etip_WEB.pdf.*
+
+
+---
+*Chunk pages 90–90*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=798 (sys=94, user=704), max_out=1024, ctx=8192
+---
+
+# GCF/B.38/02/Add.11  
+Page 90  
+
+## 5. The purpose of the present funding proposal is an application to GCF for funding of a concessional line of credit for ASAP of USD 15 million. Under the terms of the funding proposal, Ecobank Ghana Limited would act as both the AE and the executing entity (EE). As EE, Ecobank proposes to match the loan proceeds from GCF with resources from its own balance sheet, in the same volume and on a pari passu basis, to provide tailored financing packages to household, MSME and cooperative clients for distributed solar PV installations to replace part or all of their current power consumption from the national grid (component 1).  
+
+In addition, the funding proposal contains a request for an accompanying grant facility of USD 1,197,530 for coverage of certain programme management costs as well as delivery of capacity development (component 2: capacity development of AE/EE loan officers, as well as solar PV vendors and Energy Commission Officers in combination with delivery of a sensitization and certification campaign targeted at solar PV vendors) and advocacy work (component 3: implementation of various activities to disseminate the results of the ASAP and thus to lay the foundation for an eventual scaling up and/or replication).  
+
+## 1.2 Impact potential         Scale: Medium  
+
+## 6. The funding proposal highlights various anticipated impacts resulting from the proposed project across various GCF results areas. Specifically, the funding proposal references three main project outcomes:  
+
+(a) Outcome 1: 30.59 MW of new renewable energy capacity installed (core indicator 1.3), with 1,034,372 MWh of clean energy to be generated (core indicator 1.1);  
+(b) Outcome 2: Distributed solar PV market is transformed, and net metering is catalysed (core indicator 7); and  
+(c) Outcome 3: Increased dissemination of solar PV technology and innovation awareness across the market (core indicators 6 and 8).  
+
+## 7. The AE/EE expects to accomplish these outcomes through seven outputs, namely:  
+
+(a) The roll-out of distributed solar PV installations among households, MSMEs and irrigation cooperatives;  
+(b) Enhanced energy security of participating clients in conjunction with the adoption of low-emission pathways;  
+(c) Improved capacity of AE/EE loan officers in appraising and transacting on distributed solar PV deals;  
+(d) Increased knowledge on the part of solar PV vendors regarding design, installation and maintenance of distributed solar PV;  
+(e) Enhanced knowledge of Energy Commission Officers regarding the distributed solar PV market in Ghana;  
+(f) Certification of up to 200 solar PV providers; and  
+(g) Enhanced understanding in the wider market (e.g. among potential target groups, policymakers, etc.) regarding the benefits of distributed solar PV.  
+
+## 8. Together, the project interventions are expected to yield the following positive impacts, as estimated in relation to GCF core indicators and results areas:  
+
+> ASAP will also finance solar PV installations for irrigation cooperatives, some of which are currently not connected to the national grid.
+
+
+---
+*Chunk pages 91–91*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1083 (sys=94, user=989), max_out=1024, ctx=8192
+---
+
+# GCF/B.38/02/Add.11  
+Page 91  
+
+## (a) Reduction of 417,452 tonnes of carbon dioxide equivalent (t CO2 eq) over the whole lifetime of the project (25 years (useful life of equipment and calculated based on the current grid emission factor (GEF) for Ghana)) (mitigation results area 1, core 1);  
+
+## (b) Installation of 30.596 MW of renewable energy capacity in the form of distributed solar PV installations with households, MSMEs and irrigation cooperatives (mitigation results area 1, suppl. 1.3);  
+
+## (c) Increase in the share of solar PV in the installed generation mix in Ghana from the last estimate of 1 per cent (2021) to 10 per cent by 2030 (or from 2 MW in 2015 to 100 MW in 2030) (core indicator 6);  
+
+## (d) Through the implementation of a pilot portfolio and accompanying capacity development and advocacy efforts, ASAP is expected to trigger the replication of similar solar PV lending programmes by other financial institutions in the country, thereby activating a virtuous growth cycle in distributed solar PV investing in Ghana (core indicator 7); and  
+
+## (e) Via the sharing of lessons learned and best practices, ASAP is expected to contribute to the emergence of a sustainable market for distributed solar PV with significant growth potential (core indicator 8).  
+
+9. The logical framework presented in the funding proposal is straightforward. In the assessment of the independent TAP, however, there are various factors that need to be considered that may negatively impact the ability of the proposed project to generate the projected impact results. This includes the following considerations:  
+
+### (a) The AE suggests that the proposed project is expected to reduce/avoid 417,452 t CO2 eq over the lifetime of the project. The calculation of CO2 reduction/avoidance is based on the current GEF for Ghana (given as 0.413 in the revised annex 3 to the funding proposal), following the corresponding clean development mechanism methodology.3 While from a methodological point of view this is correct (and ensures the projected impacts of this project can be benchmarked against others on a level playing field), it is important to point out that this CO2 reduction/mitigation projection assumes a static GEF for the next 25 years. That, however, seems highly unlikely, even in the short- to medium-term.  
+
+### The Government of Ghana has ambitious targets to increase the share of renewable energy, both on-grid as well as off-grid. For example, under the recently launched Ghana Energy Transition and Investment Plan, the government anticipates 150 GW of installed solar PV capacity by 2060. As per the government’s plans, by 2040, the share of low-carbon technologies in the power generation mix is already expected to exceed 80 per cent.4 As of today, there exists a mature pipeline of renewable energy independent power producer projects that could achieve financial close in a fairly short period of time provided that the enabling environment in the Ghanaian power sector (and particularly the current lack of cost-reflective tariffs and the over-indebtedness of the Electricity Company of Ghana (ECG) as the main off-taker in the power sector) improves. This would significantly reduce the GEF, and with it the actual CO2 reduction/avoidance targets set for the project.  
+
+### The AE correctly notes in its response to the written question of the independent TAP that it is difficult, if not impossible, to model a change in the GEF over time due to various uncertainties, not least of which are  
+
+3 The initial funding proposal submission to the independent TAP included an estimate of 522,671 t CO2 eq mitigation potential. Based on feedback from the independent TAP, that was revised downwards to 417,452 t CO2 eq, adopting a more conservative GEF of 0.413. See independent TAP Question B.38, Accelerating Solar Action Program (ASAP), dated 14 January 2024.  
+
+4 SEforALL (2023). Ghana Energy Transition and Investment Plan, p. 22. Available at: www.seforall.org/system/files/2023-09/report-ghana-etip_WEB.pdf.  
+
+5 Annex 22A to the funding proposal contains an anonymized pipeline, showing that installations will be distributed across Ghana but without providing further details.
+
+
+---
+*Chunk pages 92–92*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1000 (sys=94, user=906), max_out=1024, ctx=8192
+---
+
+# Page 92
+
+GCF/B.38/02/Add.11
+
+## (a) Macro-economic Fundamentals and Power Sector Environment
+
+The independent TAP highlights that the macroeconomic fundamentals in Ghana and the economic and regulatory environment in the country’s power sector are important to consider. However, in the view of the independent TAP, it is important to emphasize that a renewable energy build-out in the Ghanaian power sector is more likely than not to occur, if not in the short term, then certainly in the medium-term, with implications for the CO2 emissions reduction/avoidance potential of the proposed programme.
+
+## (b) Financial and Economic Analysis of Distributed Solar PV
+
+In the view of the independent TAP, the results of the financial and economic analysis for distributed solar PV (presented in annex 3 to the funding proposal) raises questions about the attractiveness of the proposed investments, specifically from the viewpoint of prospective household and irrigation cooperative clients.
+
+In the base case scenario that is presented (with a capital expenditure PV estimate of USD 1436.73/kWp), and based on the given assumptions regarding specific investment cost, the payback period (in terms of the expected time frame for the recovery of initial investment costs through energy savings) for household investees is estimated at 13 years; with a 10 per cent escalation in specific investment cost, the payback period increases to 15 years. For MSME investees, the payback period is significantly better (seven years in base case, and eight years with a 10 per cent increase in specific investment cost), but for irrigation cooperatives (solar pump investments), it is similar to that of household clients (12 and 15 years, respectively).
+
+The independent TAP is of the view that there is a risk that these payback periods may appear unattractive to potential clients, and as such the loan offering (despite the significant concessional element included by GCF) provided by the AE (despite the significant concessional element provided by GCF) may not see sufficient uptake in the market (and thus fewer distributed solar PVs will be installed and less CO2 reduction achieved). Any further escalation of specific investment costs will further reduce the attractiveness of the offering (though the estimates that are included for specific investment costs appear to be conservative).
+
+## (c) “Route to Market” Concerns
+
+The independent TAP is concerned about the lack of focus regarding the “route to market” that the AE/EE proposes to adopt.
+
+The independent TAP understands that the prospective loan customers under the program will be households, MSMEs and irrigation cooperatives. In almost all programmes of this nature, solar PV vendors (and not financial institutions) have typically been the major source of client origination as they initiate client engagements and effectively act as originators.
+
+Under the ASAP, the AE/EE is also proposing to work with solar PV vendors for the sourcing of deals. However, rather than adopting a targeted approach and working with a limited number of vendors (which would be conducive to ensuring cohesive marketing, consistent quality in delivery and programme implementation efficiencies), the AE/EE proposes to work with all solar PV vendors that successfully complete certification by the Energy Commission. This could ultimately be up to 200 different vendors.
+
+While the AE/EE clarified during the question-and-answer (Q&A) session that it has experience in working with solar PV vendors in Ghana, the independent TAP is concerned that such a broad approach may be inefficient and, notwithstanding the fact that only certified vendors will be allowed, carry risks in terms of quality of delivery (including on operations and maintenance (O&M) of financed installations).
+
+The independent TAP appreciates that the choice for an open approach is partly driven by the desire to be inclusive and to also offer smaller vendors the possibility of participating in the programme but it will require the AE/EE to invest significant management resources.
+
+Overall, in the view of the independent TAP, this lack of clarity regarding “route to market” presents a risk to programme implementation and thus impact. For any potential future scale-up and should the AE return to GCF for additional resources, this would be a critical due diligence issue.
+
+
+---
+*Chunk pages 93–93*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=995 (sys=94, user=901), max_out=1024, ctx=8192
+---
+
+# GCF/B.38/02/Add.11  
+Page 93  
+
+(d) Collaboration with solar PV vendors is not just important for origination purposes but is typically also the key mechanism to ensure proper O&M of the financed installations. The fact that the programme will only work with vendors certified and licensed by the Energy Commission of Ghana, and that it will provide some capacity development to those entities, including for the purpose of raising their maintenance capabilities does provide some assurance on that front. However, neither the funding proposal nor the relevant annex (annex 21, “Operation & Maintenance”) contains any specific details on O&M requirements imposed by the AE/EE on its loan clients (or the solar PV vendors through which it presumably originates transactions), or what additional due diligence the AE/EE will perform on participating origination partners to ensure installations are properly maintained. There is thus a risk that should there be a lack of a rigorous O&M regime, installations may not achieve the expected power production potential or, worse, may break down before the end of their useful life. The independent TAP recommends that the respective annex 21 is amended prior to conclusion of a funded activity agreement (FAA) between GCF and the AE/EE, and that the AE/EE also share with GCF a sample agreement highlighting the O&M requirements that it will impose, as lender, on participating solar PV vendors and their clients;
+
+(e) The funding proposal does not include a comprehensive market analysis for available renewable energy financing in Ghana (and some references included in the market gap assessment section date back more than 10 years). The feasibility and market assessment (annex 2) provides an overview of key institutions and policies governing the sector and highlights some key factors that negatively impact growth in renewable energy investment but fails to provide an analysis of the existing financing market for renewable energy in the country. The only reference project that is referred to is the Sustainable Use of Natural Resources and Energy Finance project (a regional renewable energy promotion scheme supported by Agence française de développement). It is unclear whether the AE/EE has incorporated any lessons learned from the Sustainable Use of Natural Resources and Energy Finance project, and whether and to what extent the AE/EE’s main competitors in the market (e.g. CalBank and GCB Bank) are offering comparable financing packages to potential investees. The funding proposal also fails to reference other significant market players (e.g. Daystar) that do not just act as solar PV vendors and installers, but also provide financing solutions to their clients. In fact, one alternative route to supporting the budding distributed solar PV market in Ghana by providing energy service companies with concessional financing support (rather than for the AE/EE providing financing directly to end clients) remains unexplored in the funding proposal. Even if these companies do not currently service the specific target groups that the AE/EE seeks to pursue via ASAP, the exploration of partnerships with these entities may potentially offer more efficient and effective implementation prospects;
+
+(f) The success (impact) of the proposed project also hinges on the successful integration of distributed solar PV installations into the power grid (which presumably applies to the vast majority of installations to be financed under ASAP). The funding proposal does not provide details on where prospective installations will be located,5 or how they will be connected to the grid. The independent TAP assumes that most of the proposed installations will be connected to the distribution grid managed by either ECG or Northern Electric Distribution Company (NEDCO) (possibly apart from installations for irrigation cooperatives some of which will likely be entirely off-grid). Practical experience in emerging market settings such as Ghana with integrating distributed solar PV systems onto distribution grids shows that in many cases additional front-of-the-meter upgrading is required, as distribution infrastructure in such countries often tends  
+
+5 Annex 22A to the funding proposal contains an anonymized pipeline, showing that installations will be distributed across Ghana but without providing further details.
+
+
+---
+*Chunk pages 94–94*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1013 (sys=94, user=919), max_out=1024, ctx=8192
+---
+
+# GCF/B.38/02/Add.11  
+## Page 94  
+
+### 10. Overall, the independent TAP rates the impact potential for the project as medium, with potential for improvement if the issues highlighted above are adequately clarified and addressed prior to the start of implementation.
+
+#### 1.3 Paradigm shift potential        Scale: Low-Medium  
+
+### 11. The funding proposal notes (correctly in the view of the independent TAP) that the current financing environment in Ghana is the key bottleneck for scaled investments into distributed solar PV installations by households, MSMEs and others. One major challenge in this context is the adverse interest rate environment in the country that is driven by negative macroeconomic fundamentals. The availability of concessional capital is thus considered key to the success of the programme by allowing the AE/EE to offer attractive lending terms of prospective clients that otherwise would not be able to afford such borrowings.
+
+### 12. In that context, it is unclear to the independent TAP how the proposed project will trigger follow-on investments (and thus create a self-sustaining lending eco-system) after GCF resources have been exhausted. While the independent TAP agrees that some of the other programme elements (e.g. capacity development efforts for solar installation companies) can help in moving the market forward and in facilitating scale, the independent TAP would expect that without access to additional concessional debt the market will not continue to grow after ASAP resources have been depleted. For instance, the panel notes that the 14-year tenor and high level of concessionality being requested by the AE/EE seems to imply that solar PV systems are not close to being commercially viable as a lending sector. Thus, it is in our view not realistic to believe that other financiers will see this as an opportunity without high levels of concessionality. As an alternative, it might have been useful to explore the setting up of a dedicated distributed solar PV financing mechanism, and to utilize GCF resources as first loss capital to raise debt from the AE/EE, and thus to facilitate a revolving use of resources over time. It is unclear whether this approach would reduce lending rates by sufficiently large margins to make investments attractive, but it would have offered the benefit of creating a more sustainable and scalable lending model that could also be opened to other participating lenders.
+
+### 13. This challenge is compounded by the reality that for a proper scaling of the market for distributed solar PV at the household level, financing solutions will have to be found that can successfully target less affluent clients. The proposed programme targets high-income households in Ghana (i.e. those households that can afford a monthly power bill of USD 50 or more). As highlighted in annex 3 to the funding proposal, only 5 per cent of existing households in Ghana are in that bracket (and the addressable market is further reduced by the fact that many of those are living in rental units or dwellings unsuitable for the installation of distributed solar PV). For a paradigm shift to occur, finance offerings would have to provide solutions for target clients with significantly less disposable income. This implies a requirement to absorb more risk by lending institutions, and possibly also a requirement to make financing even more affordable than what is being proposed as part of the proposed programme. A similar logic applies for scale-up of the MSME market where the AE/EE targets companies with a power requirement of 30 kW and above. It is not clear from the funding proposal how the proposed  
+
+--- END EXTRACTED TEXT ---
+
+
+---
+*Chunk pages 95–95*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=933 (sys=94, user=839), max_out=1024, ctx=8192
+---
+
+# GCF/B.38/02/Add.11  
+## Page 95  
+
+The programme would contribute to the emergence of suitable financing offerings that would translate into a scaling up of distributed solar PV for a lower segment of the market that represents a much larger share of the MSME bracket.  
+
+14. The funding proposal states that ASAP will encourage other institutions (e.g., other commercial banks) to develop competitive solutions which will then inevitably increase the overall market size and acceptance of distributed solar PV as an asset class. The independent TAP believes that the activities planned under component 3 can play a useful role in educating the larger finance market in Ghana around how distributed solar PV lending “works” – but it fails to see how other financiers can break into this space and be competitive with the AE/EEs offering without a similarly sized and structured infusion of concessional capital. Moreover, it views the fact that the capacity development programme (under component 2) is restricted to AE/EE loan officers as a missed opportunity in the view of the independent TAP. An alternative might have been to open the programme up to other institutions and to organize them under a neutral platform (e.g., the Ghana Association of Banks, or the Development Bank of Ghana).   
+
+15. While not immediately relevant to ASAP considering its relatively small size, a significant increase in the share of variable renewable energy on distribution grids as part of a future scale-up may create grid stability issues and require active management and investment by the grid operator. Thus, a significant roll-out of a distributed solar PV investment programme would likely require significant investments in grid capacity, voltage regulation, power quality improvement and the implementation of smart grid technologies for better grid management by the respective utility. Upgrades to transformers, switchgear and protection systems are also likely to be important, along with investments in grid modernization and energy storage systems to ensure the stability and reliability of the grid when integrating small-scale solar PV projects. The funding proposal also does not contain an analysis of whether these potential challenges were analysed, and how they would be addressed as part of a scaling up of the market (both from a financing as well as implementation point of view). In this context, the narrow focus of component 3 on marketing and campaign events – with engagement with policymakers in activity 3.2 limited to “Engagement with relevant stakeholders during the (2) annual marketing events” – limits the potential of this project to improve the enabling environment for replication and upscaling.  
+
+16. To prepare for market scale-up, and thus to help facilitate a paradigm shift, the independent TAP recommends to the Board to include the following conditions in its approval of the programme:  
+(a) Within a year of effectiveness of the FAA, submission of a technical study to be conducted jointly between Ecobank, ECG and NEDCO, in form and substance satisfactory to GCF, on investment requirements and associated financing and implementation modalities (related to grid capacity, voltage regulation, power quality improvement, energy storage systems, and the implementation of smart grid technologies); and  
+(b) Within two years after effectiveness of the FAA, a report in form and substance satisfactory to GCF, summarizing the results of a structured dialogue held by the AE/EE with the distribution utilities, the Energy Commission of Ghana and the Ministry of Finance of Ghana on the learnings from ASAP, particularly on the investment implications of the need to ensure stability and reliability of the grid while integrating a growing share of variable renewable energy.  
+
+17. Overall, the independent TAP rates the potential for the project to effect paradigm shift as low–medium.  
+### 1.4 Sustainable development potential                Scale: Medium  
+
+18. The funding proposal highlights the following sustainable development benefits:
+
+
+---
+*Chunk pages 96–96*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1036 (sys=94, user=942), max_out=1024, ctx=8192
+---
+
+# GCF/B.38/02/Add.11  
+## Page 96  
+
+### 19. Environmental co-benefits:  
+The funding proposal highlights two categories of environmental co-benefits:  
+
+1. **The introduction of distributed solar PV installations** in some cases may replace diesel generators that can cause significant air and noise pollution. It remains unclear however what the potential for these environmental co-benefits will be, as the funding proposal lacks an analysis or an estimate of how many diesel generators it will likely replace. These benefits would largely be relevant only in urban areas. It also cannot be automatically assumed that diesel generators will be decommissioned because of the installation of solar PV; they may simply be sold and operated in other locations. As a result, the overall positive impact may be limited;  
+
+2. **The funding proposal notes that the AE/EE will insist on the introduction of a waste management plan** for the disposal of PV panels after the end of their useful life. Establishing a best practice framework for environmentally appropriate disposal of PV panels can be an important benefit generated by ASAP to mitigate the negative environmental impact of improper disposal of PV panels.  
+
+### 20. To avoid negative environmental impacts through overextraction of groundwater as a result of support to the irrigation cooperatives to replace diesel pumps with solar PV pumps, the independent TAP recommends that the AE includes as conditions for such loans, the installation of piezometers for ongoing monitoring of the level of the water table, and the establishment of governance mechanisms to control extraction rates.  
+
+### 21. Social co-benefits, including health benefits:  
+The funding proposal indicates that the project will have social co-benefits, in part by ensuring continuous power supply that will enable households to carry on with their “chores”. It remains unclear from the funding proposal however what these social co-benefits would look like in practice, and how sizeable they would be. As highlighted before, in the household segment the programme targets one of the most affluent segments of the Ghanaian population (households that can currently afford monthly power bills of USD 50 or more), so it is fairly likely that these beneficiaries already have other means to deal with power outages (e.g. diesel backup). Generally, while the independent TAP agrees that there likely are social co-benefits from ASAP, the funding proposal does not really cover them in sufficient detail for a proper assessment. Apart from this, the funding proposal details a credible pathway to job creation benefits from the implementation of the programme (further elucidated in the Q&A).   
+
+### 22. Economic co-benefits:  
+The funding proposal points to the current overcapacity on the Ghanaian national grid (that is expected to revert to under-supply over the next five to seven years, based on current trends). The proposed project will promote grid defection. This will in apply in particular to a segment of the existing customer base for ECG and NEDCO that can generally be considered reliable (“good credit customers”). The funding proposal does not address the issue of grid defection and its impact on the relevant utilities and, for that matter, tariff construction in Ghana and the ability of the national power utility to provide affordable tariffs especially to poorer segments of the population. This might constitute negative economic impact of the programme. Considering the limited size of ASAP that impact may be negligible for now. In addition, the AE/EE did clarify during the Q&A that these potential effects were discussed with the relevant utilities, and that ASAP is supported by sector policies of the Government of Ghana. However, it would become a serious consideration if indeed a broader scale-up of distributed solar PV investment would be triggered and would have to be investigated.  
+
+6  
+South Africa’s power utility is increasingly grappling with the negative impact of grid defection, and implications for the company’s financial performance and long-term retail tariff construction by the regulator. “This solar boom translates into an erosion of 2.3% (4.5TWh) of Eskom’s sales base and 1% or R3.3 billion in its revenue margins (i.e. retail revenue less wholesale purchases) over the period, […].” See South Africa’s solar boom bleeds Eskom.
+
+
+---
+*Chunk pages 97–97*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=911 (sys=94, user=817), max_out=1024, ctx=8192
+---
+
+# GCF/B.38/02/Add.11  
+Page 97  
+
+## 23. Gender-sensitive development co-benefits  
+The funding proposal notes that ASAP will have gender-sensitive development co-benefits, by way of achieving a “higher focus of capacity building on female staff within the organization”, and for a “preference of female staff at key leadership positions of the project”. It remains unclear how these targets will be achieved in practice. The connection to Ecobank’s Ellevate Initiative on Social Finance that is referred to in the funding proposal also remains unclear.  
+
+The relevant annex, annex 8 (Gender analysis and gender action plan), includes a more detailed treatment of relevant activities that can achieve gender-positive results; the results of that annex have not, however, been weaved into the funding proposal and as such it remains somewhat unclear whether the AE/EE is fully committed to implementing the specific activities mentioned there.  
+
+## 24. Overall, the independent TAP rates the sustainable development impact potential of the project as medium.  
+
+### 1.5 Needs of the recipient  
+Scale: Medium-High  
+
+## 25. Overall, the proposed programme has the potential to close an important gap in the financing market for small-scale distributed solar PV investment in Ghana. The macroeconomic environment in Ghana combined with other factors creates a situation where financing institutions do not adequately cover this segment of the market. Considering the expected growth trajectory for CO2 emissions referred to above, the country does require investments into clean energy capacity, on-grid as well as distributed and off-grid.  
+
+## 26. The funding proposal notes that roughly 30 per cent of the expected project borrowers will be households. The project targets households that currently have an electricity consumption of USD 50 per month or above. As per the World Bank, Ghana is a lower-middle income country with a gross domestic product per capita of USD 2,203.7  
+
+Households that can afford annual electricity payments of USD 600 and above must be considered part of the upper-middle class. As such, the programme is not targeted at poor or otherwise vulnerable populations. To achieve the transformation of the distributed solar PV market and the expected climate mitigation outcomes that are core to this funding proposal, this is perhaps not crucial. However, it is somewhat unclear whether this specific target group really requires the significant concessional support provided via the GCF facility or whether these households would be willing and able to finance distributed solar PV installations on somewhat more commercial terms.  
+
+This is also relevant when considering the impact ASAP may have on the wider solar financing market in Ghana; experience from other countries shows that instead of boosting market development, excessively concessional offerings can hinder market entry and competition.  
+
+## 27. Overall, the independent TAP rates the potential for the project to serve the needs of the recipients as medium to high.  
+
+### 1.6 Country ownership  
+Scale: Medium-High  
+
+## 28. Stakeholder consultations and engagement: The independent TAP notes the fact that all the consultations that the AE/EE has held as part of project preparation with relevant stakeholders took place at least three, and in some cases five years ago. The stakeholder engagement plan (annex 7 to the funding proposal) indicates further engagements are planned but no specific activities or timelines are provided.  
+
+Thus, the independent TAP recommends that the AE/EE, prior to programme launch, conduct additional consultations with relevant stakeholders.  
+
+---  
+BusinessTech, 9 October 2023. Available at: https://businesstech.co.za/news/energy/723790/south-africas-solar-boom-bleeds-eskom/.  
+7 See www.worldbank.org/en/country/ghana/overview.
+
+
+---
+*Chunk pages 98–98*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=971 (sys=94, user=877), max_out=1024, ctx=8192
+---
+
+# GCF/B.38/02/Add.11  
+Page 98  
+
+## Stakeholders  
+The AE/EE should engage stakeholders – including the regulator (e.g. to discuss potential negative impact of grid defection on tariffs), representatives of beneficiary districts and civil society organizations, etc. – to ensure that the programme design is reflective of today’s solar PV financing environment in Ghana and the power sector as it is clearly understood, and that is also reflective of the needs of targeted client groups. The AE/EE should submit a summary of the outcomes to the Secretariat prior to programme launch.
+
+## Coherence with existing policies  
+The funding proposal makes a credible case for how the proposed investments in distributed solar PV capacity are aligned with various Ghanaian Government strategies on climate mitigation and adaptation. It remains less clear to what extent ASAP is aligned with the investment and sector planning of the relevant Ghanaian utilities, especially ECG and NEDCO. As highlighted earlier, most of the distributed solar PV installations promoted under ASAP will be connected to the distribution grid of these two utilities, with corresponding technical and commercial implications. In line with the proposed recommendation regarding additional stakeholder consultations above, the AE/EE should discuss these issues with the relevant utilities and the regulator to understand how ASAP aligns with their investment and sector planning.
+
+## Capacity of the AE  
+The AE/EE is a respected financial institution with a large footprint in the Ghanaian market and the wider region. The funding proposal however lacks a detailed discussion of prior experience of the AE/EE in handling implementation of programmes of a similar nature. For example, the AE/EE was the beneficiary of a USD 10 million clean energy guarantee facility provided by the Development Credit Authority of the United States Agency for International Development; the funding proposal does not reference the experiences the AE/EE has drawn from implementing that programme, and whether it held any useful best practices and lessons learned that were incorporated in the design of ASAP. It does refer to the successful implementation of the “Ecobank Asset Finance Product Program for the HHs and MSME”, however, it does not contain any details on best practices or lessons learned that are being transferred into ASAP.
+
+## Independent TAP assessment  
+The independent TAP considers the alignment of the project with host country government priorities to be high but assesses the track record of the AE as medium. Overall, the independent TAP rates country ownership of the funding proposal as medium–high.
+
+## Efficiency and effectiveness  
+Scale: Medium  
+
+## Leverage of lending platform and experience  
+The proposed programme will leverage the established lending platform and experience operating in Ghana of the AE/EE (including on asset finance transactions) and raise 50 per cent of the programme’s resources from the balance sheet of the AE/EE which the independent TAP welcomes and applauds. This constitutes a significant commitment of the AE/EE to the programme and ensures alignment of interest with GCF. Additionally, the AE/EE has previously implemented a programme to finance and install rooftop solar on a large percentage of its bank branches in Ghana. This experience and the lessons learned around identifying deployment partners and financing barriers are well embedded in the approach proposed in the funding proposal.
+
+## Concessional finance offerings  
+As highlighted earlier, the AE/EE through the proposed programme will utilize GCF proceeds to offer highly concessional finance offerings to households, MSMEs and cooperatives to incentivize investment in distributed solar PV installations. While the financial and economic analysis would suggest that the level of implicit subsidy provided does not necessarily translate into highly attractive payback periods/returns for clients, at the same time it remains somewhat unclear whether the household clients that are targeted (upper-middle income clients) specifically require such significant concessional support. The independent TAP appreciates that the core purpose of the programme is not to subsidize the upper-middle class but to catalyse the uptake of distributed solar PV in Ghana, but for any future roll-out of the
+
+---
+
+
+---
+*Chunk pages 99–99*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=973 (sys=94, user=879), max_out=1024, ctx=8192
+---
+
+# GCF/B.38/02/Add.11  
+Page 99  
+
+## Programme Funding Proposal  
+
+34. The funding proposal includes a grant funding request in the amount of USD 407,500 to cover the project management costs (PMCs) of the EE (and charged separately to the AE fee). Under GCF rules, such a request for a grant to cover part or all of PMCs is allowable. However, the independent TAP notes that the AE/EE has various other sources of revenue to finance project implementation, notably the proceeds from the processing fee (0.25 per cent), the facility fee (0.5 per cent) as well as the loan credit margin (variable depending on the credit profile) it charges to the borrowers.  
+
+In the response to the written request of the independent TAP, the AE/EE clarified that it requires the additional grant to cover PMC as the cash flow from fees and interest income will only materialize over time, while some of the implementation-related expenses occur early in the lifespan of the programme.  
+
+The independent TAP is of the view that GCF provides a highly concessional line of credit to the AE/EE that the institution can use, to its own advantage, to build a competitive position in a market segment that may grow significantly over the years. As with any other new product/business proposal, the independent TAP would expect the AE/EE to commit seed capital to finance such a new venture (as it does with any other new product/business initiative it rolls out as a bank).  
+
+In this case, there appears to be sufficient credit spread between GCF concessional debt finance and available market returns for the AE/EE to support an upfront investment by the AE/EE.  
+
+Going forward, we recommend that the Secretariat be more attune to whether requested grant funding is truly additional and necessary in light of the overall positive project economics resulting from extremely low cost GCF loans. It is our view that alternate forms of funding these upfront costs would be better aligned with a private sector approach and encourage greater involvement from our AE partners.  
+
+For instance, in this funding proposal one potential alternative option would have been to restructure the grant component as a bridge loan to the AE/EE, to be repaid alongside the concessional debt facility.  
+
+## Overall remarks from the independent Technical Advisory Panel  
+
+35. Overall, the funding proposal is comprehensive, and – while there are various risks and weaknesses as highlighted above – shows a credible pathway to achieving notable impacts. The independent TAP welcomes the significant share of co-financing from the AE/EE which underscores its ownership in the programme and ensures alignment of interest with GCF.  
+
+36. The independent TAP makes the following recommendations for the AE:  
+
+(a) The independent TAP recommends that annex 21 to the funding proposal on O&M arrangements is amended prior to the conclusion of an FAA between GCF and the AE/EE to reflect the specific O&M regime that will be in place for solar installations financed under ASAP, and that the AE/EE also share with GCF (also prior to conclusion of the FAA) a sample agreement highlighting the O&M requirements that it will impose, as lender, on participating solar PV vendors and their clients;  
+
+(b) To avoid negative environmental impacts through overextraction of groundwater as a result of support to the irrigation cooperatives to replace diesel pumps with solar PV pumps, the independent TAP recommends that the AE includes as conditions for such loans, the installation of piezometers for ongoing monitoring of the level of the water table, and the establishment of governance mechanisms to control extraction rates. This could be reflected in the sample template agreement between the AE/EE and its clients;  
+
+## References  
+
+8 Decision B.19/43.
+
+
+---
+*Chunk pages 100–100*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=490 (sys=94, user=396), max_out=1024, ctx=8192
+---
+
+# GCF/B.38/02/Add.11  
+Page 100  
+
+(c) The independent TAP further recommends that the AE/EE, prior to programme launch, conduct additional consultations with relevant stakeholders – including the regulator (e.g. to discuss potential negative impact of grid defection on tariffs), representatives of beneficiary districts and civil society organizations, etc. – to ensure the programme design is reflective of today’s solar PV financing environment in Ghana and the power sector as it is clearly understood, and that is also reflective of the needs of targeted client groups. The AE/EE should submit a summary of the outcomes to the Secretariat prior to programme launch;  
+
+37. To prepare for market scale-up, and thus to help facilitate a paradigm shift, the independent TAP recommends to the Board to include the following conditions in its approval of the programme:  
+
+(a) Within a year of effectiveness of the FAA, submission of a technical study to be conducted jointly by Ecobank, ECG and NEDCO, in form and substance satisfactory to GCF, on investment requirements and associated financing and implementation modalities (related to grid capacity, voltage regulation, power quality improvement, energy storage systems, and the implementation of smart grid technologies);  
+
+(b) Within two years following effectiveness of the FAA, a report in form and substance satisfactory to GCF, summarizing the results of a structured dialogue held by the AE/EE with the distribution utilities, the Energy Commission of Ghana and the Ministry of Finance of Ghana on the learnings from ASAP, particularly on the investment implications of the need to ensure stability and reliability of the grid while integrating a growing share of variable renewable energy.
+
+
+---
+*Chunk pages 101–101*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=799 (sys=94, user=705), max_out=1024, ctx=8192
+---
+
+# GCF/B.38/02/Add.11  
+## Page 101  
+
+### Response from the accredited entity to the independent Technical Advisory Panel's assessment (FP231)  
+#### Proposal name: Accelerating Solar Action Program (ASAP)  
+#### Accredited entity: Ecobank Ghana Limited  
+#### Country/(ies): Ghana  
+#### Project/Programme size: Small  
+
+### Impact potential  
+The AE/EE appreciates ITAP's Medium rating on the impact potential of ASAP and values the constructive feedback provided in the assessment.  
+
+Regarding the dynamic nature of the Grid Emission Factor (GEF), the AE/EE acknowledges the likelihood of changes in the medium term. It recognizes that evolving circumstances may lead to slightly different emission reduction figures beyond a given period. The AE/EE agrees with ITAP that uncertainties are primarily guided by the future share of renewables in the generation mix, potential hydro generation changes due to climate change, and the ongoing efforts of the Government of Ghana to achieve a climate-resilient, low-emission path.  
+
+The AE/EE expresses a commitment to employing an independent carbon verifier for compiling relevant program reports at mid-term and program closing.  
+
+The AE/EE acknowledges ITAP's concerns about the attractiveness of payback periods for certain segments and expresses a continuous commitment to monitor the program off-take for these segments. The AE/EE believes that the current program loan size aligns with existing financial absorption capacity in the market for targeted segments. It emphasizes that the payback period for the asset, when modelled using current electricity prices as a baseline, is not necessarily the same as the loan payback period, which considers the borrower's overall repayment capacity and schedule.  
+
+The AE/EE clarifies that the first payback is a conservative period based on a business-as-usual scenario, while the second payback represents what the beneficiary agrees to pay for an asset, they would not otherwise own. The AE/EE reassures ITAP that its lending policy is flexible enough to accommodate accelerated repayment schedules should borrowers choose to go beyond electricity cost savings, thereby reducing overall loan repayment periods.  
+
+On the “route to market” strategy, AE/EE acknowledges ITAP suggestion for working with a limited set of vendors. AE/EE recognizes that ITAP approach provides management efficiency and would like to provide assurance to ITAP on its commitment to efficiency and quality, considering other implementation risks which would have been induced by working with a small list of vendors given the specifics of the market in Ghana.  
+
+On the Operations and Maintenance (O&M), AE/EE commits to amend Annex-21 to include O&M requirements.  
+
+The AE/EE appreciates ITAP's feedback regarding the potential need for upgrading or rehabilitating portions of distribution grids before connecting distributed solar PV systems. Although AE/EE currently engages Energy Commission Ghana (EC) certified installers for origination and relies on certified vendors and beneficiaries to assess technical feasibility before initiating loan applications, we are thankful to ITAP for highlighting this consideration.  
+
+In response to this valuable feedback, the AE/EE will implement an additional eligibility...
+
+
+---
+*Chunk pages 102–102*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=810 (sys=94, user=716), max_out=1024, ctx=8192
+---
+
+# GCF/B.38/02/Add.11  
+## Page 102  
+
+### Criterion for loan applications  
+We value the collaborative input from ITAP and are committed to incorporating suggestions that enhance the overall impact potential of ASAP.  
+
+### Paradigm shift potential  
+We appreciate the thorough evaluation provided by ITAP on the paradigm shift potential of ASAP and value the feedback provided alongside the rating.  
+
+The AE/EE agrees that current adverse interest rates in the country driven by negative macroeconomic fundamentals constitute a major challenge to scaled investments into distributed solar PV installations.  
+
+On the concerns whether a self-sustaining lending ecosystem will be in place for solar PV upon post-GCF resource exhaustion, AE/EE is pleased with ITAP agreement that other programme elements other than concessional finance will help moving the market forward. The programme also provides an interesting opportunity for the GCF to evaluate the effect of Concessionality to end users for green products on broader country lending rates for comparable products. While AE/EE agrees with ITAP that it is too soon to say whether scale-up will happen with lower income brackets, the programme nonetheless presents a potential for scale-up and AE/EE notes the reasons provided by ITAP for a low-medium rating on paradigm shift potential. Overall, we appreciate the insights provided by ITAP and commit to more openness to exploring collaboration with other financial institutions to achieve a higher paradigm shift.  
+
+### Sustainable development potential  
+The AE/EE acknowledges ITAP's medium rating for the sustainable development potential of the ASAP program and appreciates the constructive feedback provided in the assessment.  
+
+We are pleased that ITAP recognizes the value of introducing a waste management plan for solar PV panels at the end of their useful lifetime. Addressing ITAP's concern about unused Diesel generators sold and used elsewhere, thus reducing overall impact, the AE/EE would like to highlight that the program's influence promotes a low-emission path, not a zero-emission path. If Diesel generators have to be purchased elsewhere beyond the programme’s boundaries to meet electricity demands of those areas, they would still be purchased with or without the programme and contribute to emissions in those areas which are not covered by the programme.  
+
+The AE/EE appreciates ITAP's recommendation and solution for water management and conservation. We express our commitment to implementing these recommendations and propose introducing a condition for solar loans, ensuring that replacements for diesel pumps control extraction rates.  
+
+We also welcome ITAP's agreement, based on discussions, that the potential for grid defection as an unwanted result of the program would be negligible, considering the limited size of ASAP. The AE/EE acknowledges that if such risks were deemed serious, it would significantly impact the program's ranking on paradigm shift potential.  
+
+On the ITAP’s concern about clarity and implementation of gender-sensitive development activities, AE/EE would like to clarify that the Ecobank’s Elevate Initiative on Social Finance provides better interest rates for women. This is an existing initiative within the Bank which provides more attractive lending terms to vulnerable groups.
+
+
+---
+*Chunk pages 103–103*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=543 (sys=94, user=449), max_out=1024, ctx=8192
+---
+
+# [Page 1]  
+## GCF/B.38/02/Add.11  
+### Page 103  
+
+#### Needs of the recipient  
+The AE/EE acknowledges ITAP's medium-high rating for the needs of recipient criteria of the ASAP programme and has no further comments.  
+
+#### Country ownership  
+The AE/EE acknowledges ITAP's medium-high rating for the country ownership criteria of the ASAP programme and has no additional comments.  
+
+#### Efficiency and effectiveness  
+The AE/EE acknowledges ITAP's medium rating for the efficiency and effectiveness of the ASAP program and appreciates the feedback provided on the PMC.  
+The AE/EE would like to clarify the rationale for requesting this grant portion. It is not just because the GCF board recommended PMC must always be presented as a separate component of project structures, but that the cash flow from fees and interest income is expected to materialize gradually over time, whereas certain implementation-related expenses occur early in the program's lifespan. This creates a temporal misalignment between revenue generation and upfront costs. Consequently, the grant funding serves as a strategic tool to bridge this gap, ensuring the smooth and timely execution of essential activities.  
+In addition, a GCF funded activity includes certain reporting requirements and verification of impacts which are not necessarily covered by business-as-usual lending of Ecobank.  
+Finally, that a GCF partner achieves a good economic value while delivering on climate change mitigation is a good signal for other financial institutions hesitating to incorporate ESG values in their investment strategy.  
+
+#### Overall remarks from the independent Technical Advisory Panel:  
+• AE/EE takes note of ITAP recommendations and will implement to the extent practical. With regards to the study on investment requirements and associated financing to be delivered within 1 year of FAA effectiveness, in a form and substance satisfactory to GCF, AE/EE requests ITAP's guidance on the outline of such a study to enable AE/EE to comply with the expectations for form and substance.
+
+
+---
+*Chunk pages 104–104*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=168 (sys=94, user=74), max_out=1024, ctx=8192
+---
+
+# Accelerating Solar Action Programme, Ghana (ASAP Ghana)
+## Gender Assessment
+### September 2023
+#### Gender documentation for FP231
+
+---
+
+This document appears to be a title page or cover page for a gender assessment report related to the Accelerating Solar Action Programme in Ghana. The document includes:
+
+- Title: "Accelerating Solar Action Programme, Ghana (ASAP Ghana)"
+- Subtitle: "Gender Assessment"
+- Date: September 2023
+- Document identifier: Gender documentation for FP231
+
+The content suggests this is a report or study focused on gender-related aspects of solar energy initiatives in Ghana, likely as part of the ASAP Ghana program. The document appears to be a single page with no additional content beyond the title information.
+
+The text is formatted as a title page with proper hierarchy using markdown headings (#, ##, ###) and includes the date and document identifier. No other content or data appears to be present on this page.
+
+[Page 1]
+
+
+---
+*Chunk pages 105–105*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=743 (sys=94, user=649), max_out=1024, ctx=8192
+---
+
+# ECOBANK Ghana – ASAP – Gender Assessment – September 2023  
+## Page 2 of 42  
+
+### ACRONYMS  
+- ASAP: Accelerated Climate Action and Sustainability  
+- MSME: Micro, Small and Medium Enterprises  
+- PAPs: Participatory Action Projects  
+
+### EXECUTIVE SUMMARY  
+The executive summary provides an overview of the gender assessment conducted for the ASAP project in Ghana. It outlines key findings related to gender disparities across sectors such as energy, environment, finance, and business environments. The report highlights how these sectors impact women's participation and access to resources, particularly in relation to climate change adaptation and mitigation strategies.
+
+### 1 INTRODUCTION  
+#### 1.1 Background and Rationale  
+The background and rationale for conducting the gender assessment stem from the need to understand how gender dynamics influence the implementation of climate action initiatives within Ghana. The study aims to identify gaps in policy frameworks, institutional structures, and social norms that affect women’s participation in sustainable development efforts.
+
+#### 1.2 Specific Objective of the Assessment  
+The specific objective of this assessment is to evaluate the gender-related impacts of the ASAP project on various sectors including energy, environment, finance, and business environments. This includes analyzing the roles and contributions of both men and women in these areas, as well as identifying potential barriers or opportunities for inclusion.
+
+#### 1.3 Assessment Methodology  
+The methodology used involves a combination of desk research, stakeholder interviews, and field surveys to gather data on gender-related issues across different sectors. The approach focuses on understanding the institutional context, local perceptions, and social structures that shape gender roles in climate change adaptation and mitigation projects.
+
+### 2 CONTEXT REVIEW  
+#### 2.1 Overview and national framework  
+##### 2.1.1 Legal Status of Women and Girls in Ghana  
+Ghana has made significant progress in legal frameworks supporting gender equality, but challenges remain in implementation. The country’s constitution guarantees equal rights for men and women, while laws such as the Gender Policy Framework aim to promote gender mainstreaming across sectors.
+
+##### 2.1.2 Demography  
+Demographic trends show a growing population with increasing urbanization, which affects access to resources and services. Women are often underrepresented in decision-making processes, especially in rural areas where they face limited access to education and economic opportunities.
+
+##### 2.1.3 Gender and participation in political life  
+Political participation by women remains low despite constitutional provisions for gender equality. There is a lack of representation in parliament and local government bodies, which limits the influence of women on policy decisions affecting their lives.
+
+##### 2.1.4 Key challenges to achieving gender equality in Ghana  
+Key challenges include cultural norms, limited access to education, economic disparities, and inadequate support systems for women in leadership roles. These factors hinder progress toward full gender equality and sustainable development goals.
+
+### 3 GENDER ASSESSMENT OF KEY SECTORS INVOLVED IN ASAP  
+#### 3.1 Energy Sector  
+The energy sector plays a crucial role in promoting access to clean energy, particularly through solar power initiatives. However, women’s involvement in this sector is limited due to lack of training and support. The assessment highlights the need for targeted interventions to increase female participation in renewable energy projects.
+
+#### 3.2 Environment Sector  
+Environmental policies and programs often overlook gender-specific needs, leading to unequal distribution of benefits and risks. Women are disproportionately affected by environmental degradation and climate change impacts, especially in rural communities where they depend on natural resources for livelihoods.
+
+#### 3.3 Finance Sector  
+Financial inclusion remains a challenge for women, particularly in rural areas. Access to credit and financial services is often restricted based on gender, resulting in lower participation rates among female entrepreneurs. The sector needs more inclusive policies to ensure equitable access to financing.
+
+#### 3.4 Business environment  
+##### 3.4.1 Female entrepreneurship, and SMEs  
+Female entrepreneurs face numerous barriers including lack of capital, limited networks, and insufficient support systems. Despite these challenges, there are opportunities for growth in micro, small, and medium enterprises (MSMEs), particularly in renewable energy and sustainable development sectors.
+
+##### 3.4.2 Ghana MSME policy  
+Ghana’s MSME policy aims to promote inclusive economic growth, but it lacks gender-sensitive measures that could enhance women’s participation in business activities. The policy needs revision to better address the unique needs of female entrepreneurs.
+
+##### 3.4.3 Participation of Women and Men in the Informal Economy  
+In the informal economy, both men and women engage in various activities, but women often have less access to formal markets and resources. This leads to unequal outcomes in terms of income generation and social mobility.
+
+### 4 FINDINGS OF THE ASAP INSTITUTIONAL GENDER ANALYSIS  
+#### 4.1 Ecobank Ghana PLC  
+Ecobank Ghana PLC has implemented several initiatives aimed at promoting financial inclusion, particularly for women. However, the bank’s gender analysis reveals that while some programs are effective, others lack sufficient focus on
+
+
+---
+*Chunk pages 106–106*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=400 (sys=94, user=306), max_out=1024, ctx=8192
+---
+
+# ECOBANK Ghana – ASAP – Gender Assessment – September 2023
+
+## Page 3 of 42
+
+### 6.2 Opportunities for the programme to address the needs of specific and vulnerable groups
+
+### 6.3 Identified Knowledge and Skills of PAPs Relevant for Achieving the Programme Outcome
+
+### 6.4 Opportunities for the project to challenge gender stereotype and increase positive gender relations
+
+### 6.5 Anticipated gender roles to be played in the context of the programme
+
+## 7 RECOMMENDATIONS
+
+## Annex I: References
+
+## Annex II: Referential list of respondents
+
+---
+
+### AGRER PPF Contract References
+
+- **Contract:** GCF Project Preparation Facility – Technical Assistance  
+- **LTA:** LTA GCF 2020/020 of 29 July 2020  
+- **Project Title:** Accelerating Solar Action Programme  
+- **Country(ies):** Ghana  
+- **Requested by:** Ecobank Ghana Plc  
+- **SOW date:** September 2022  
+- **Report references**  
+  - **Gender expert:** Dr. Hannah Nyamekye  
+  - **AGRER QC:** Giuseppe Daconto  
+  - **Report version:** ASAP Gender Assessment 2023 09 09 (Final)
+
+
+---
+*Chunk pages 107–107*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=454 (sys=94, user=360), max_out=1024, ctx=8192
+---
+
+# ACRONYMS
+
+- AE: Accredited Entity  
+- ApFOG: Apex Farmers Organization of Ghana  
+- ASAP: Accelerating Solar Action Programme in Ghana  
+- BDS: Business Development Services  
+- CEDAW: Convention on the Elimination of All Forms Discrimination Against Women  
+- CSAIP: Climate Smart Agriculture Investment Plan  
+- EC: Energy Commission  
+- ESG: Environmental Social and Governance  
+- EPA: Environmental Protection Agency  
+- EPALA: Environmental Protection Agency Ladies Association  
+- ESMP: Environmental Social Management Plan  
+- FONG: Farmers Organization Network in Ghana  
+- GAP: Gender Action Plan  
+- GCF: Green Climate Fund  
+- GEA: Ghana Enterprise Agency  
+- GFU: Gender Focal Unit  
+- GHG: Green House Gas  
+- MDA: Ministries Department and Agencies  
+- MFI: Micro Finance Institution  
+- MoFA: Ministry of Agriculture  
+- MoGCSP: Ministry of Gender Children and Social Protection  
+- MoE: Ministry of Energy  
+- MSME: Micro Small Meduim Enterprises  
+- NAP: National Adaptation Plan  
+- NDA: National Designated Authority  
+- NEP: National Energy Policy  
+- NDC: Nationally Determined Contribution  
+- NFIDS: National Financial Institution Development Strategy  
+- NGO: Non-Governmental Organization  
+- NRECCU: Natural Resources Environment Climate Change Unit  
+- PLWD: Persons living with Disability  
+- PV: Photovoltaics  
+- REAG: Renewable Energy Association of Ghana  
+- ROSCA: Rotating Savings and Credit Association  
+- SHS: Solar Home Systems  
+- SLM: Sustainable Land Management  
+- STEM: Science Technology Engineering and Mathematics  
+- ToR: Terms of Reference  
+- UNFCCC: United Nations Framework on Climate Change  
+- WUA: Water User Association  
+
+[Page 1]
+
+
+---
+*Chunk pages 108–108*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=905 (sys=94, user=811), max_out=1024, ctx=8192
+---
+
+# ECOBANK Ghana – ASAP – Gender Assessment – September 2023
+
+## Page 5 of 42
+
+### EXECUTIVE SUMMARY
+
+The gender assessment for the Accelerating Solar Action Programme in Ghana was conducted between May 2023 and July 2023. The assessment is based on a mixed approach methodology, combining quantitative and qualitative approaches. Data from secondary and primary sources was used. Primary data was collected from Greater Accra, Central and Northern Regions. Key Informant interviews were held with national-level institutions, NGOs, past and ongoing solar energy projects, male and female-owned MSMEs and male and female headed-households. Focus group discussions were held with water user associations (WUAs).
+
+Key entry points for achieving the programme’s gender and social inclusion outcome are:
+
+- The Accredited Entity and the key implementing institutions have gender policies that guide the implementation of programmes; they collect gender-disaggregated data to inform programme implementation; they have gender focal persons in place; and staff have received gender training in the last five years. The REAG has also trained its members on gender mainstreaming within the renewable sector.
+- The institutional gender analysis revealed that both the AE and the key implementing institutions had gender training needs.
+- There is limited access to formal credit with moderate interest rates by households (male and female-headed) to procure and install solar PV systems. There is limited access to credit to women MMSE who majority save in non-financial channels to upgrade their businesses.
+- Loan repayment terms should be every four months rather than monthly, to enable them to harvest and sell their produce before payment is done.
+- Requesting for land and properties as collateral to access loans may disadvantage women.
+- To reduce the loan risk, it is good to target cooperatives with both male and female members rather than individual farmers.
+- Considering the expensive initial cost of installing solar PV technologies for irrigation purposes, to reach out to farmers, mixed irrigation groups or WUAs should be targeted for women to benefit.
+- Solar Irrigation systems should have women-friendly designs for easy operation.
+- The PV system should be easily and simply switched on by women in the absence of men.
+
+The assessment has produced several recommendations for the execution of ASAP.
+
+1. The differential needs of men and women with respect to the provision of loans and installation of solar PV systems for PAPs as indicated section 6.3 of this report should be taken into consideration in the design, planning and implementation of the programme.
+2. Beyond the provision of long-term and short-term loans for PAPs, the ASAP programme should invest in gender equality and social inclusion capacity building for the ASAP programme staff and key implementing institutions, Energy Commission, Environmental Protection Agency, and MoFA-Ghana Irrigation Development Authority (GIDA) Irrigation scheme managers including the solar PV vendors that will benefit from the loans. Specific tailor-made gender training should be organized for ASAP staff and selected staff of the key implementing institutions (EC and EPA) on how to integrate the gender transformation approach in the ASAP programme. For the ASAP programme staff, additional training would be provided on how to implement the GAP.
+3. In the assessment and certification of solar PV vendors, conscious effort should be made to include at least 45% women and PLWD, youth considering that the sector is male-dominated.
+4. Considering that there are different categories of PAPs (male and female-headed households, male and female own MSMEs, and WUAs to be engaged by the ASAP, it is important for the
+
+--- END EXTRACTED TEXT ---
+
+
+---
+*Chunk pages 109–109*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=803 (sys=94, user=709), max_out=1024, ctx=8192
+---
+
+# ECOBANK Ghana – ASAP – Gender Assessment – September 2023
+
+## Page 6 of 42
+
+### Recommendations
+
+5. In the implementation of all project activities for PAPs, a quota of 50% women participation should be targeted for households and MSMEs. For the irrigation cooperative, women's membership in groups and at least two women in leadership positions in the WUA should be a requirement for groups to benefit from the loans. Training and advisory services should be done at a time when women are free to participate.
+
+6. Adequate financial resources should be allocated for the implementation of the Gender Action Plan developed for ASAP. It is important for the project to engage the services of a full-time experienced gender specialist for the lifespan of the project to support with the implementation of the gender action plan. It is further recommended that external gender consultants should be part of the evaluation team that will be engaged during the programme’s mid-term and terminal evaluation.
+
+7. The ASAP Programme should collaborate with other solar programmes being implemented in Ghana to share experiences, best practices and lessons learned in the implementation of the ASAP GAP. Again, the ASAP programme should document GTA achievements, lessons learned and best practices for replication. Development of targeted communication and information materials on gender equality achievement of ASAP should be undertaken. In addition, the ASAP programme should create awareness about the programme, using media channels that more women can have access to the information. Local dialect and English should be used considering the low level of education of women.
+
+8. To reach out to more female-headed households, Ecobank should collaborate with the residential homeowner's associations to target more women beneficiaries and to ensure they pay back their loans.
+
+9. It is recommended that, the ASAP programme should work with existing WUAs that are registered and have both women, men, youth, aged and PLWD members rather than establishing new groups to ensure more women farmers are reached. It is further recommended that the programme should engage with registered WUAs working with government and co-owned government and communal irrigation schemes as they tend to have more secured land access by both genders.
+
+10. For the MSMEs, it will be important to reduce the electricity consumption requirement for women as an eligibility criterion from 800 Ghana cedis (GHS) and above to 500 Ghana cedis (GHS) and above to allow more women-owned MSMEs to roll on the ASAP programme.
+
+11. There should be a grievance desk established for the programme and it must have both men and women as part of the team responsible for receiving grievances from PAPs. The grievances should be recorded in a logbook separately for men and women.
+
+
+---
+*Chunk pages 110–110*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=844 (sys=94, user=750), max_out=1024, ctx=8192
+---
+
+# ECOBANK Ghana – ASAP – Gender Assessment – September 2023
+
+## Page 7 of 42
+
+### 1 INTRODUCTION
+
+#### 1.1 Background and Rationale
+
+The Accelerating Solar Action Programme (ASAP) proposed by Ecobank Ghana aims at mobilizing conces sional finance to promote the use of Solar PV systems in Ghana, with a focus on MSMEs, households, and irrigation cooperatives to contribute to the reduction of greenhouse gas emissions and the creation of a more favourable environment for sustainable energy financing over the long term. The programme is in line with the Government of Ghana's GHG emissions reduction targets, as set out in the Nationally Determined Contribution (NDC) to the United Nations Framework Convention on Climate Change (UNFCCC), and in line with the Government's strong focus on renewable energy and solar PV. The programme has strong ongoing support from the National Designated Authority (NDA) at the Ministry of Finance as well as the Energy Commission (EC). The proposed programme has national coverage; specifically, the intervention targets peri-urban areas across all sixteen regions of Ghana.
+
+The Green Climate Fund is committed to gender and social inclusion and centres on gender-responsive climate action programmes that benefit women and men. This study has been prepared to fulfil the gender safeguard policy of the Fund to ensure that women and other vulnerable groups will equally and meaningfully share the programme's benefits.
+
+#### 1.2 Specific Objective of the Assessment
+
+The purpose of the study is to assist the Accredited Entity (AE) to produce a comprehensive gender assessment, following the GCF policy. The study builds on an initial assessment carried out during the earlier stage of the formulation, and on comments from GCF. The assessment will feed the ASAP Gender Action Plan (presented as a separate volume).
+
+#### 1.3 Assessment Methodology
+
+The assessment involved a literature review; formulating an assessment design/approach; determining a sampling plan of stakeholders and programme affected persons (PAPs); preparation of field instruments, data collection; processing; and analysis.
+
+- **Document review**: To contextualize the assignment, we reviewed relevant national policy documents, ASAP documentation and a previous draft of the Gender Analysis Report prepared during the early stages of the formulation, reports from relevant government ministries, agencies, departments, and international development agencies.
+  
+- **Assessment design/approach**: The methodology combined quantitative and qualitative approaches (mixed methods) in addition to the triangulation of information between primary and secondary sources.
+
+- **Sampling technique of stakeholders and programme affected persons**: We used a purposive sampling technique to select the sample respondents. At the national level, the following institutions was sampled in addition to the Accredited Entity: nine (9) government ministries and agencies; five (5) women organizations and networks; three (3) solar PV actors and trade associations; four (4) ongoing and past solar PV projects; and two (2) NGOs. The list of respondents interviewed is presented in Annex B.
+
+For the ASAP programme affected persons (PAPs), we drew a sample from three regions of Ghana: Northern, Central, and Greater Accra. We considered that ASAP targets peri-urban areas. In each region, the following were selected purposively based on those who meet the programme's eligibility
+
+1 Green Climate Fund Gender Policy, 2019.
+
+
+---
+*Chunk pages 111–111*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=980 (sys=94, user=886), max_out=1024, ctx=8192
+---
+
+# ECOBANK Ghana – ASAP – Gender Assessment – September 2023
+
+## Page 8 of 42
+
+### Criteria set out for households, MSMEs, and irrigation cooperatives:
+
+Eight (8) households comprising 4 female-headed households and 4 male-headed households meeting the eligibility criteria of a monthly electricity tariff tier of 300+ kWh/month; 10 MSMEs comprising 5 women-owned and 5 men-owned enterprises duly registered and meeting the eligibility criteria of a monthly electricity tariff tier of 600+kWh/month; three (3) irrigation cooperatives per region meeting the eligibility criteria of having pump houses and using fuel powered irrigation systems with both men and women membership; and three (3) solar PV vendors. Out of the sampled PAPs from the three regions, key informant interviews were held with 12 females and 13 male-headed households, as well as with 6 female-owned and 8 male-owned MSMEs. Separate focus group discussions were held with five (5) women and seven (7) male members of water users’ associations (WUAs).
+
+### Field instruments, data collection procedure, and processing
+
+A questionnaire and an interview guide were used to solicit information from a sample of national-level stakeholders. These included: past and ongoing solar renewable energy projects in Ghana and NGOs working in renewable energy; women's organizations and networks; and ASAP PAPs.
+
+The questionnaire and interview guide were aligned with the Green Climate Fund-s gender assessment and action plan development template.
+
+Data was collected from respondents through face-to-face or virtual interviews depending on their preference and availability. Separate focus group discussions were held with men and women members of the irrigation cooperatives/ Water Users Associations (WUAs) to ensure women were free to provide information. The list of respondents and project-affected persons (PAPs) consulted for primary data collection is presented in annex II. The data collection period was from 16 June 2023 to 16 July 2023. Quantitative data from the field was analysed using univariate analysis such as means, frequencies, and percentages, and content analysis was used to analyse the qualitative data. The analysis of this assessment informed the gender action plan (GAP) development.
+
+## 2 Context Review
+
+### 2.1 Overview and national framework
+
+This section presents the legal and policy framework in Ghana regarding the status of women and the promotion of gender equity, as relevant to ASAP.
+
+### 2.1.1 Legal Status of Women and Girls in Ghana
+
+The government of Ghana has made a strong political commitment to gender equality and is a signatory to various international conventions, protocols, and agreements. There is a clear legal framework and institutional architecture in place to promote gender equality and to address various forms of inequality against women including gender-based violence.
+
+The international instruments Ghana is party to include the Convention on the Elimination of All Forms of Discrimination Against Women (CEDAW), 1986; The Beijing Declaration and Platform for Action; The Commonwealth Plan of Action for Gender Equality; Maputo Declaration; and the United Nations Sustainable Development Goals, especially Goal 5 which calls for gender equality and empowerment of women and girls including actions to end discrimination against women and girls to achieve economic growth and development.
+
+Ghana has several national laws protecting women’s rights and violence against women and girls including Ghana’s 1992 Constitution that prohibited discrimination based on sex, social or economic status among others; the 1998 Criminal Code Amendment Act and legal amendments criminalizing certain harmful traditional practices, such as widowhood rites (1984), female genital mutilation (FGM) (1995) and child abuse (1998). Others are the Affirmative Action Bill, 1998; Intestate Succession Law, 1985 (PNDC III); Persons with Disability Act, 2006 (Act 715); and the Domestic Violence Act, 2007 (Act
+
+2 National Gender Policy, 2015.
+
+
+---
+*Chunk pages 112–112*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=987 (sys=94, user=893), max_out=1024, ctx=8192
+---
+
+# ECOBANK Ghana – ASAP – Gender Assessment – September 2023
+
+## Page 9 of 42
+
+### 732). Domestic Violence Act 732, adopted by Parliament in 2007, outlines a comprehensive legal framework for the prevention of and protection against domestic violence and criminalizes various acts of physical and sexual violence, economic and psychological abuse, and intimidation in domestic relations.
+
+The Ministry of Gender, Children and Social Protection (MoGCSP) oversees the implementation of the National Gender Policy (2015) which is for all sectors of the country including those related to energy and climate change. The overarching goal of the National Gender Policy is: “To mainstream gender equality and women’s empowerment concerns into the national development process in many sectors in order to improve the social, legal, civic, political, economic and cultural conditions of the people of Ghana; particularly women and men, boys and girls in an appreciable manner and as required by National and International Frameworks.”
+
+The National Gender Policy has been reviewed and is currently in the cabinet for approval.
+
+Gender desks have been established in all Ministries, Departments, and Agencies in Ghana to lead gender transformation in the sector plans and programs. The Coordinated Programme of Economic and Social Development Policies (2017 - 2024) defines the goals and aspirations for Ghana’s national development and outlines strategies as well as specific initiatives that will help achieve the stated vision, together with the means of implementation, monitoring, and evaluation. The programme includes provision for gender and social inclusion, women and girls empowerment, as well as other vulnerable groups like the youth, aged, and PLWD. The programme further supports sustainable natural resource management, mainstreaming climate change resilience, and the expansion of renewable energy.
+
+### 2.1.2 Demography
+
+Considering that the proposed ASAP programme would have national coverage, this section of the report presents national demographic information with implications for ASAP.
+
+#### 2.1.2.1 Maternal and infant mortality rate
+
+Inequality in the healthcare system exist in Ghana as women face barriers in accessing healthcare. Rural women are more disadvantaged than their urban counterparts. The infant mortality rate in Ghana between 2014 and 2022 decreased from 41 deaths per 1,000 live births to 28 deaths per 1,000 live birth. Maternal deaths have declined from 580 per 100,000 live births in 2007 to 301 per 100,000 live births in 2021. The slow pace of maternal death decline makes it difficult for the country to achieve the SDGs target of 70 deaths per 100,000 live births by 2030. Under-five mortality rate prior to the attainment of age 5 has been declining since 2016. Official survey results show a decline from 111 per 1,000 live births in 2013 to 56 per 1,000 live births in 2017 against the SDG target of 25 per 1,000 live births.
+
+#### 2.1.2.2 Educational status of girls and boys
+
+In Ghana, gender parity index on the average has been achieved and maintained at the basic level or primary level but progress at the secondary level has averaged (0.95). The index at both primary and junior high school were higher in urban than rural areas as shown in Table 1 below.
+
+---
+
+**Note:** Page numbers are preserved for reference. The text above represents the content extracted from page 112 of the PDF, formatted into GitHub-flavored Markdown while maintaining structure and formatting.
+
+
+---
+*Chunk pages 113–113*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1036 (sys=94, user=942), max_out=1024, ctx=8192
+---
+
+# ECOBANK Ghana – ASAP – Gender Assessment – September 2023
+
+## Page 10 of 42
+
+### Table 1: Gender Parity Index from 2016/17 to 2020/21
+
+| Academic Year | Kindergarten | Primary | Junior High School | Senior High School |
+|---------------|--------------|---------|--------------------|--------------------|
+| 2016/17       | 1.0          | 1.03    | 0.97               | 0.96               |
+| 2017/18       | 1.0          | 1.00    | 1.00               | 0.92               |
+| 2018/19       | 0.99         | 1.00    | 1.02               | 0.95               |
+| 2019/20       | 1.03         | 1.02    | 1.02               | 0.96               |
+| 2020/21       | 0.99         | 1.00    | 1.00               |                    |
+
+**Source:** Ghana 2022 Voluntary National Review Report
+
+The improvements in the basic level can be attributed to the continuous Girl-Child Education campaigns by the Government through the Ministry of Education (MoE) and Ministry of Gender and Social Protection (MoGCSP) with support from development partners and CSOs over the years.
+
+Girls in the northern regions and rural areas throughout the country were less likely to continue and complete their education due to the weak quality of educational services, inability to pay expenses related to schooling, prioritization of boys’ education over girls’, security problems related to the distance between home and school, lack of dormitory facilities, and inadequate sanitation and hygiene facilities.
+
+### 2.1.2.3 Adult literacy rate
+
+The overall adult literacy rate (people 15 years and older), in Ghana, is 72.2%. Literacy rates are higher among males than females (78.4% for men compared to 66.3% for females). Greater Accra has the highest male literacy for this age category (92.2%), while the Western Region has the lowest male literacy rate (80.2%). Among females, the Volta Region has the lowest female literacy rate (67.6%) among all the Coastal regions while Greater Accra Region has the highest female literacy rate (84.2%). The national literacy among 15 years and older in the urban areas is 81.8% and 58.3% in the rural areas.
+
+### 2.1.2.4 Gender and poverty rate
+
+In 2023, an estimated 2.99 million people in Ghana lived in extreme poverty, the majority being the male population. The number of men living on less than 1.90 U.S. dollars a day in the country reached around 1.5 million (51%), while the count was at 1.46 million for women (49%). Overall, 0.5 percent of the global population in extreme poverty were found in Ghana as of 2022.
+
+### 2.1.3 Gender and participation in political life
+
+In Ghana, no laws limit the participation of women and members of minorities in the political process. Women, however, hold fewer leadership positions than men, and female political figures face sexism, harassment, and threats of violence. Cultural and traditional factors limit women's participation in political life. In general, women are underrepresented in key public decision-making bodies, as reflected in Table 2 below. Women's participation in parliamentary, political, and public life has averagely improved as of 2021. Except for Ministers and Chief Directors that declined in 2021, all
+
+**Footnote:** Gender parity index is a statistical measure used to describe ratios between boys and girls in each population. Gender parity index measures the progress towards gender parity in participation in education for females compared to males. It is calculated by dividing the indicators value for females by the indicator value for males. If the gender parity index is equal to one (1) it indicates parity/equal between females and males. A value of less than one (1) generally indicates a disparity in favor of boys/men, while a value greater than 1 indicates disparity in favor of girls/women.
+
+---
+
+
+---
+*Chunk pages 114–114*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1017 (sys=94, user=923), max_out=1024, ctx=8192
+---
+
+# ECOBANK Ghana – ASAP – Gender Assessment – September 2023
+
+## Page 11 of 42
+
+others recorded improvements, particularly for Deputy Ministers which increased to 27 percent from 14 percent in 2020. Despite this, all the targets for women’s participation were not achieved in 2021.
+
+Women representation in public life from 2020 to 2021 is presented in Table 2 below.
+
+### Table 2: Representation of women at different levels of government in Ghana from 2018 to 2021
+
+| POSITIONS | YEAR 2018 | YEAR 2019 | YEAR 2020 | YEAR 2021 |
+|-----------|-----------|-----------|-----------|-----------|
+| MINISTERS | 20% (10)  | 22% (13)  | 25% (9)   | 20% (8)   |
+| DEPUTY MINISTERS | 20% (12) | 20% (10) | 14% (7) | 27% (10) |
+| MEMBER OF PARLIAMENTS | 14% (37) | 14% (38) | 14% (38) | 15% (40) |
+| METROPOLITAN MUNICIPAL AND DISTRICT CHIEF EXECUTIVE | 17% (36) | 14% (37) | 14% (37) | 15% (38) |
+| CHIEF DIRECTORS | 17% (3) | 24% (7) | 31% (9) | 30% (9) |
+| SUPREME COURT JUDGES | 26% (15) | 26% (4) | 28% (5) | 31% (5) |
+| HIGH COURT JUDGES | 38% (5) | 36% (35) | 36% (35) | 37% (44) |
+
+Source: MoGCSP Annual Progress Report, 2022.
+
+### 2.1.4 Key challenges to achieving gender equality in Ghana
+
+The main barriers to attaining gender equality in the country include low political prioritization of gender issues in policy execution. There is still a wide gap between the statements contained in the formal framework and their actual implementation. Some institutions have gender policies, others are still developing them. There is also a challenge with the collection of gender-disaggregated data across all sector to inform policymaking.
+
+Although all government ministries and agencies have gender-focal persons, their gender and inclusion expertise is limited and those who are not in management positions cannot influence decisions within their institutions.
+
+Other challenges are the patriarchal social structure and discriminatory customary practices where male domination is persistent. Socio-cultural discriminatory practices, norms, and prejudiced institutions still exist, all of which contribute to limiting female access to productive resources, such as land, as well as access to credit and educational opportunities, among others.
+
+In addition, systemic gender and social biases in cultural practices overexpose girls to early and forced marriages, sexual violence, denial of education, and cultural servitude. Another barrier which runs through all the sectors in Ghana, is women’s limited access to resources, including technical support, finance, and productive time. Finally, there is limited access to justice for women; limited logistics for monitoring the gender equality aspects of policies.
+
+### 3 GENDER ASSESSMENT OF KEY SECTORS INVOLVED IN ASAP
+
+This section of the report provides an overview of Ghana’s energy, environmental and financial sectors. It elaborates on the sector policies, relevance of the sector to women and strategies in place to address gender issues in the sectors. It also reviews gender dimensions of the business environment, with special regard to MSMEs.
+
+### 3.1 Energy Sector
+
+The National Energy Policy was approved by Cabinet on 16th March 2010 to guide the development and management of Ghana’s energy sector. Energy issues are of concern to the whole population. Women are one of the most important actors in the energy sector, in terms of their contact, use, and management of renewable energy sources (fuel wood and charcoal). Specifically, sub-section (8.2) of
+
+14 KII, Principal Programme Officer, MoGCSP.
+
+15 KII, Executive Director COLANDEF and Principal Programme Officer, MoGCSP.
+
+
+---
+*Chunk pages 115–115*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=857 (sys=94, user=763), max_out=1024, ctx=8192
+---
+
+# ECOBANK Ghana – ASAP – Gender Assessment – September 2023
+
+## Page 12 of 42
+
+The policy provides information on how to mainstream gender in the energy sector, and another sub-section (8.3) provides information on the gender challenges and policy direction to address the gender issues and challenges in the sector. The policy outlines the following strategies for addressing the energy and gender challenges by Government:
+
+- Promoting the use of modern forms of energy in households;
+- Supporting the capacity development of women in the energy sector;
+- Promoting the development of solar and other renewable forms of energy in off-grid communities; and
+- Ensuring the participation of women in the formulation and implementation of energy interventions.
+
+To implement the Energy Policy, the Energy Sector Strategy and Development Plan (2020) was developed to provide strategies, programs, and projects intended to support the national economic development agenda of the Government of Ghana in the six broad areas of the energy sector namely: renewable energy; power; petroleum, and energy sub-sectors; energy sector institutions; waste-to-energy; and energy and gender. The strategy seeks to address gender issues in the energy sector with financing from the Government of Ghana in collaboration with development partners, bilateral and multilateral donor agencies, and private sector institutions.
+
+Ghana’s Renewable Energy Master Plan (2019) also provides specific strategies to promote solar home systems (SHS) including solar rooftop programs and solar irrigation systems. However, gender and social inclusion issues do not appear in the document.
+
+The Ministry of Energy plays an oversight role and ensures that its activities, as well as activities of sector agencies under its portfolio, i.e., Energy Commission, National Petroleum Authority, Petroleum Commission, and Public Utilities, mainstream gender into the implementation of their activities. This is achieved through the implementation of the National Action Plan on Policy for Gender Mainstreaming in Energy Access for the Republic of Ghana (2020 - 2024). The key actions cover:
+
+- Sensitization of staff of the Ministry of Energy and sector agencies on gender dimensions in the energy sector;
+- Creation of a gender focal unit at the Ministry of Energy, under the office of the Chief Director, with clearly defined roles and resources;
+- Awareness creation initiatives aimed at addressing cultural beliefs and practices hindering gender equality in energy technical fields;
+- Mainstreaming gender in all energy projects;
+- Increasing female access to STEM education and skills training using instruments such as preferential admission processes and quota scholarships for female applicants;
+- Increasing internship opportunities for females studying STEM programs;
+- Building capacity of, and showcasing women-led business; and
+- Creating gender-sensitive financing mechanisms for energy projects.
+
+Despite the availability of policies and gender action plans for the sector, there are challenges with mainstreaming gender in the energy sector. The sector is male dominated with few women in decision-making positions in both government and private sectors. This hinders women’s views at the policy and programme intervention levels within government and private institutions.
+
+---
+
+**Note:** Page numbers are preserved as per instructions.
+
+
+---
+*Chunk pages 116–116*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1023 (sys=94, user=929), max_out=1024, ctx=8192
+---
+
+# ECOBANK Ghana – ASAP – Gender Assessment – September 2023
+
+## Page 13 of 42
+
+### Energy Sector
+
+In the context of the national energy policy environment, there is limited involvement of women in the planning, management, and delivery of energy services. The low level of staff gender capacity in the energy sector (government ministries, departments, and agencies) is also a major challenge in mainstreaming gender into energy and climate change interventions in the country.
+
+There is currently no gender-disaggregated published data on energy usage, production, and provision of energy services. Published energy statistics from the Ghana Energy Commission do not cover the gender dimension. Energy data published by the Ghana Statistical Service on energy usage do not present disaggregated data based on gender, even though the metadata from the surveys has disaggregated data.
+
+The number of women graduating with Science, Technology, Engineering, and Math (STEM) degrees is increasing, but women’s employment in the energy (power) sector is not increasing. Women attempting to enter the energy sector face barriers such as gender stereotypes, bias, lack of mentorship, and networking. As a result, women who are graduating with STEM degrees and technical training certificates too often end up working in unrelated fields, underutilizing the skills they have developed.
+
+The lack of financial access prevents women from making purchasing decisions such as buying clean cook stoves or investing in solar PV systems for their home and businesses. Rural women and those living in urban slums tend to face additional spatial energy inequalities as they have lower incomes and face greater challenges in physically accessing energy. For example, travelling longer distances to charge phones, limited access to mobility, and living beyond the grid infrastructure.
+
+In rural farming households, women and young girls do most of the cooking and heating of water with fuel wood and charcoal and are responsible for the collection of fuel wood. Commercial food cooking in rural areas and some parts of urban areas is done using charcoal, gas, and fuel wood. The use of charcoal and fuel wood has negative health effects such as respiratory diseases, eye irritations, etc. The use and sale of biomass (fuel wood and charcoal) is dominated by rural women than urban women. The predominance of women and children involved in the collection and use of fuel-wood puts them in a disadvantaged position in terms of economic opportunities and exposes them to increased health risks.
+
+### 3.2 Environment Sector
+
+The National Environmental Policy (1995) is driven by the Environmental Protection Agency as a lead agency facilitating the process towards sustainable development. Social and gender issues are part of the cross-sectoral issues of the policy, which contains provisions for men, women, and other vulnerable groups. Equity and inclusivity are among the fifteen (15) operational principles guiding the implementation of the policy.
+
+The equity principle states that "there should be equitable access to all environmental resources, benefits, and services to meet basic needs in order to ensure human well-being". The principle of inclusivity states that the "environmental management process must take into consideration the interests, needs, and values of all interested and affected parties in decision making to achieve sustainability."
+
+The policy specifically makes a provision that, "awareness and public education programmes should include both men and women across the social divide". It ensures that impact assessments cover all policies, programmes, and projects to maximize equity for economic, ethnic, social, cultural, gender, different age groups, and the disadvantaged. Finally, provision has been made to facilitate the participation of women across all sectors of society in training, public
+
+---
+
+**Note:** The text appears to be incomplete or truncated at the end. The reference section continues with citations but does not fully conclude.
+
+
+---
+*Chunk pages 117–117*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1007 (sys=94, user=913), max_out=1024, ctx=8192
+---
+
+# ECOBANK Ghana – ASAP – Gender Assessment – September 2023
+
+## Page 14 of 42
+
+awareness campaigns, formal and non-formal education, and decision processes in environmental issues.
+
+Ghana’s updated National Determined Contribution (NDC) has 19 actions in 10 priority areas to achieve nationally determined contribution goals. Fostering social inclusion with focus on youth and women is one of the long-term outcomes of the 19 policy actions of the NDC. As such, gender and social inclusion considerations with focus on women and youth are to be integrated in the implementation of all the 13 adaptation and mitigation programmes outlined in the document, which will enable Ghana to achieve a resilient and low carbon society by promoting economic growth, climate protection and air quality benefits, youth, women empowerment, and social inclusion. The NDC is aligned with the national sector policies and is backed by concrete programmes that the ministries, departments, and agencies (MDA); metropolitan, municipal, and district assemblies (MMDAs); private sector; and civil society organizations can implement.
+
+Gender is crosscutting in Ghana’s National Adaptation Plan (NAP) Framework. This addresses the medium and long-term adaptation needs of the country in a coherent and coordinated manner for key sectors such as agriculture, forestry, water, energy, gender, and health.
+
+## 3.3 Finance Sector
+
+The Ministry of Finance is the National Designated Authority of the Green Climate Fund. The financial policies, Acts, and strategies with implications for the ASAP are the National Financial Inclusion and Development Strategy (NFIDS)(2018-2023); Public Private Partnership Act 2020 (Act 1039); Digital Financial Services Policy (DFS Policy); and the Bank of Ghana, Sustainable Banking Principles and Sector Guidance Note (2019).
+
+The Public-Private Partnership Act 2020 (Act 1039) has gender and inclusion considerations incorporated. Specifically, objects seven (7) of the Act which is on Fairness and Transparency has sections 1 and 4 stipulating the following:
+
+- (1) The procurement process relating to a partnership project shall be fair, transparent, and competitive
+- (4) Each qualified and short-listed bidder who complies with the bidding process provided under this Act has a right to equal opportunity and access to information.
+
+The National Financial Inclusion and Development Strategy (NFIDS), (2018-2023) seeks to promote financial inclusion of disadvantaged groups, including women, youth, and rural segments who are below the national average of having financial services by prioritizing further development of digital financial services such as mobile money and by strengthening service providers such as non-bank financial institutions.
+
+Gender considerations have also been incorporated in the Digital Financial Services Policy (2020-2023) and its states that, a gender lens would be applied to the implementation of the policy to advance women’s financial inclusion, whose access to and use of financial services continues to lag behind. These considerations include the following:
+
+All stakeholders should:
+
+- Understand the market dynamics from a gender perspective, utilizing existing data and collecting new data where possible on those dynamics so that this data can be used proactively to reduce the gap between financial inclusion levels for men and women;
+- Consider the normative barriers that affect women’s opportunities to access and use digital financial services (DFS) and how this and other relevant policies might exacerbate or reduce these barriers;
+- Engage local communities to grasp women’s wants and needs across profiles and livelihoods (e.g., rural, urban, agriculture, commence, informal sector, etc);
+
+---
+
+**Note:** The text above contains references to various documents and policies. These are not included in the markdown output but are preserved for reference purposes.
+
+27 National Environmental Policy, 1995.  
+28 Ghana's Updated Nationally Determined Contribution (2021 to 2023).  
+29 National Adaptation Plan (NAP) Republic of Ghana, 2020.   
+30 Public Private Partnership Act 2020 (Act 1039).  
+31 Ghana National Financial Inclusion and Development Strategy (2018-2023).  
+32 Digital Financial Services Policy (2020-2023).
+
+
+---
+*Chunk pages 118–118*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=998 (sys=94, user=904), max_out=1024, ctx=8192
+---
+
+# ECOBANK Ghana – ASAP – Gender Assessment – September 2023
+
+## Page 15 of 42
+
+- Monitor all actions taken in line with this policy to understand their impact on gender, and keenly seek to document and address any unintended consequences;
+- Explain and advocate the business case for serving women well and promote those messages so that they translate into financial services that are more appropriate for women; and
+- Leverage online and in-person resources such as FinEquity.33
+
+The Bank of Ghana, Sustainable Banking Principles and Sector Guidance Note (2019) is a process-led initiative to take account of environmental considerations, social inclusion, and good governance in the lending decision-making by banks in Ghana. They consist of seven general principles and five sector-specific guidance notes with the dual goals of:
+
+- Improving the contribution of finance to sustainable and inclusive growth by funding society's long-term needs;
+- Strengthening financial stability by incorporating environmental, social, and governance (ESG) factors in lending decision-making.
+
+These Principles include Principle 4 on Gender Equality and Principle 5 on Financial Inclusion. The document further details how these principles and practices can be implemented in the following five sectors: Agriculture and Forestry; Mining and Oil and Gas; Construction and Real Estate; Power and Energy; and Manufacturing activities as related to the banking portfolio.
+
+The gender equality principle applies to a bank’s own internal business operations as well as a bank’s business activities with clients by adopting some or all of the following practices:
+
+- Establishing high-level corporate leadership for gender equality;
+- Treating all women and men fairly at work and implementing gender-sensitive recruitment and retention practices;
+- Ensuring the health, safety, and well-being of all women and men workers;
+- Promote training and professional development for women;
+- Implementing enterprise development and marketing practices that empower women;
+- Promoting equality through community initiatives;
+- Measuring and publicly reporting on progress to achieve gender equality; and
+- Providing a grievance mechanism to address workplace-related grievances that is accessible and confidential.
+
+With respect to the financial inclusion principle, it recommends that banks must consider how to expand both the scope and reach of its product and service to improve the access of individuals and small businesses in Ghana to financial services.34
+
+Gender issues persist in Ghana’s financial sector despite Ghana’s effort to achieve financial inclusion over the years. The gender inequality has almost doubled from 7% to 11%. Ghanaian women and youth are still marginalized by the financial system and lack tailored products that fit their specific financial needs. Women tend to save and borrow from VSLAs, Rotating Savings, and Credit Associations (ROSCAs) more than men, who are more likely to tap formal financial institutions such as Banks and Micro Finance Institutions (MFIs). Women also borrow from informal channels such as family and friends with about 6% borrowing from formal financial institutions. Rural women also rely on non-bank financial institutions (NBFIs) and informal financial services. In the case of savings, only 16% of women save at formal financial institutions. Women prefer to borrow from informal channels because it is more convenient and flexible unlike formal financial institutions which are not flexible and often require collateral submission.35
+
+There is higher financial illiteracy among women than men.36 Ownership of bank accounts, by males and females of age fifteen years and above is 74% and 63% respectively creating a gap of 11%.37
+
+There is a lack of awareness among women regarding formal financial services. A 2021 survey showed that 72% of men owned mobile phones and 65% used mobile money, against 59% and 55% of women
+
+---
+
+**Note:** Page numbers are preserved as per the original PDF.
+
+33 Digital Financial Services Policy (2020–2023).  
+34 Bank of Ghana, Sustainable Banking Principles and Sector Guidance Note (2019).  
+35 World Bank, 2021, Global Findex database.  
+36 Alliance for financial Inclusion, 2023.  
+37 Global Findex, 2021.
+
+
+---
+*Chunk pages 119–119*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1107 (sys=94, user=1013), max_out=1024, ctx=8192
+---
+
+# ECOBANK Ghana – ASAP – Gender Assessment – September 2023
+
+## Page 16 of 42
+
+respectively. The gender gap in mobile money usage is likely due to the gap in financial literacy and 
+financial education ir respective of the high ownership of phones by women. 38 Access to financial 
+services is heterogeneous across regions and key demographics. In terms of regions, the five poorest 
+regions (Upper West, Northern, Volta, Upper East, and Brong Ahafo) remain the mo st financially 
+excluded. Similarly, rural residents and women have less access to banks than their urban and male 
+counterparts. Rural residents, women, and the poor rely more heavily on NBFIs and informal financial 
+services than urban residents, men, and the non-poor. Furthermore, rural residents, women, and the 
+poor overall use mobile money and NBFIs more than they use banks. Access to formal financial 
+services also varies across key socioeconomic demographics, including urban versus rural households, 
+wealth, and gender. Rural residents, the poor, and women have fewer active financial accounts than 
+their urban poor, and male counterparts.39  
+
+### 3.4 Business environment
+
+#### 3.4.1 Female entrepreneurship, and SMEs
+
+To support the high percentage of female entrepreneurs in Ghan a, the Government of Ghana set up 
+the National Board for Small Scale Industries (NBSSI) by an Act of Parliament, Act 434.  The Act became 
+operational in 1985. In the 1990s, the Cottage Industries and Rural Housing Department was 
+established, and the Ghana Enterprise Development Corporation were subsumed under the NBSSI as 
+part of efforts to defragment MSME support initiatives in Ghana. In 2020, with the passage of Act 1043 
+by Parliament, the Ghana Enterprises Agency (GEA) is now the apex governmental body dedicated to 
+the promotion and development of micro, small, and medium enterprises (MSMEs) in Ghana.  GEA is 
+mandated to coordinate, implement, and monitor the activities of the MSMEs Sector in Ghana. The 
+Ghana Enterprises Agency ACT 1043 also has made prov ision for the establishment of a micro, small 
+and medium enterprises fund with the objective including addressing gaps in funding micro, small and 
+medium enterprises.40  
+
+In 2021, the Ghana Enterprises Agency disbursed a total of GH¢22.1 million in grants a nd GH¢12 
+million in loans to 15,248 beneficiaries. In 2021, a total of 116,189 women were provided with 
+business development services, and 57,657 enterprises participated in financial literacy programmes. 
+Additionally, 1,332 MSMEs were provided with Japanese Kaizen training to improve efficiency in the 
+same year, under the Coronavirus Alleviation Programme Business Support Scheme, Ghana 
+Enterprises Agency provided 302,001 successful applicants with loans amounting to GH¢523.11 
+million. Out of the total number of beneficiaries, 208,381 were females.41 
+
+Women's rate of entrepreneurship surpasses that of men. In 2021, the National Bureau of Statistics 
+of Ghana reported that 67% of women are self -employed. This rate is much lower for men, who 
+represent 54% of the  same category.72% of Ghanaian women are involved in some form of 
+entrepreneurship be it formal or informal. Their businesses tend to be small -scale, informal, and in 
+business sectors where the profit margin is low and opportunities to scale are challengin g42. Women 
+in Ghana tend to lack opportunities in business education, and accessing and using financial services 
+among Ghanaian entrepreneurs, large male -female earnings inequalities persist, driven by gaps in 
+business capital, access to land and other collateral, business practices, and social norms.43 
+
+Despite government support, three barriers creating gender inequity in the MSME sector are (i) access 
+to finance/credit; (ii) access to land and electricity; and (iii) access to skills. Some of these challenges, 
+which are faced by both genders, are particularly severe among women. Limited job opportunities in 
+the country are the underlying cause for why some women choose to work on their own to have time 
+
+---
+
+38 Bank of Ghana, Annual Report 2021 available at https://www.og.gov.gh/wp-content/uploads/2022/06/AnnRep-2021.pdf  
+39 National Financial Inclusion Strategy.  
+40 Ghana Enterprise Agency Act, 2020  
+41 Ghana 2022
+
+
+---
+*Chunk pages 120–120*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1025 (sys=94, user=931), max_out=1024, ctx=8192
+---
+
+# ECOBANK Ghana – ASAP – Gender Assessment – September 2023
+
+## Page 17 of 42
+
+### 3.4.1 Employment in the Informal Sector
+
+The choice of employment in the informal sector allows men and women to work and manage their time and work at their own pace, which reduces stress and ensures business sustainability (KII interview of MSMEs). Another factor is the absence of a well-developed labour market that provides a living wage. Resorting to operate a small business or hawking goods in public spaces becomes a coping strategy for securing a livelihood. This is particularly the case for women, who suffer from fewer years of education compared to men and possess inadequate skills. Low-skilled women are highly concentrated in informal and unpaid work in the service and agricultural sectors.
+
+### 3.4.2 Ghana MSME Policy
+
+The MSME Policy covers eight (8) thematic areas: Enabling Environment; Institutional, Legal and Regulatory Framework; Financing for MSMEs; Business Development Services; Technology, Innovation, Research and Development; Market Facilitation; Entrepreneurship Development; and Local Economic Development. Gender and inclusive growth and environmental sustainability are included as cross-cutting. Specifically, the policy seeks to promote gender and inclusive growth; encourage the introduction of pro-gender policies within the MSME sector; promote equal opportunities for all through its MSME interventions; support organizations and associations of women entrepreneurs to design programmes that account for their specific needs and challenges; and promote programmes on gender awareness.
+
+### 3.4.3 Participation of Women and Men in the Informal Economy
+
+The informal sector is defined as the part of the economy that is neither taxed nor monitored by any form of government. In Ghana, the informal sector can be categorized into “organized” and “unorganized” business entities. The organized ones are largely registered with offices and paid staff, whilst the unorganized ones operate from temporary structures and from homes with no paid workers. There are just about 9.5 percent of businesses in Ghana that are in a formal state. The remaining 90.5 percent are informal. Of the informal economy, about 79.8 percent are micro-sized businesses, with women dominating entrepreneurs (over 46%) in the Ghanaian economy. Available data from the Registrar General Department indicates that about 90% of formal businesses registered in Ghana are MSMEs.
+
+The underlying causes of the choice of employment in the informal sector by women is because of limited job opportunities. Again, some women choose to work on their own to have time for their family and children, manage their time, work at their own pace, reduce stress, and ensure there is sustainability in the business. Other factors are the absence of a well-developed labour market that provides a living wage; the low educational level of women compared to men; and inadequate skills of women. Low-skilled women are highly concentrated in informal and unpaid work in the service and agricultural sectors.
+
+### 4 FINDINGS OF THE ASAP INSTITUTIONAL GENDER ANALYSIS
+
+This section of the report elaborates on findings from the institutional gender analysis conducted about Ecobank Ghana and ASAP's key implementing institutions, the Energy Commission (EC), Environmental Protection Agency (EPA), and Ghana Irrigation Development Authority (GIDA).
+
+> Note: GEA not included since the assessment consultant was unable to gain access
+
+--- 
+
+*Page 17 of 42*
+
+
+---
+*Chunk pages 121–121*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=989 (sys=94, user=895), max_out=1024, ctx=8192
+---
+
+# 4.1 Ecobank Ghana PLC
+
+Ecobank management through its policies is committed to promoting gender transformation within the institution and has committed financial resources for gender-related activities in accordance with its Gender Policy. At the Board level, there is under-representation of women. Out of the nine members, only three are females. At the Board, Executive, and Management levels of the institution, decisions are jointly taken by the gendes. This ensures inclusive decision-making. Thirty-seven percent (37%) of the members of the executive committee (EXCOM) and 52% of the management staff are female. In addition, 25% of the Heads of Departments are women.
+
+Several policies and strategies were in place to promote gender and inclusion within the institution since before the adoption of the Ecobank Gender Policy (2022–2025). These strategies included maternity leave and post-maternity leave. A Women’s Desk (Elevate Desk) has been established within the Bank to ensure senior female executives’ mentor, coach, and train younger staff to advance the corporate ladder.
+
+Ecobank is one of the banks in Ghana that have products or services for women. As part of the Elevate program, loans and non-financial support are provided to women-owned MSMEs to support them to grow their business. The non-financial support encompasses pieces of training, access to markets, basic accounting principles, and business management.
+
+With respect to the gender technical expertise of staff, they had received gender-related training in the past five years, and the most recent training on gender-sensitive lending was in the month of February and March 2023. As such, the staff’s level of knowledge on gender is self-rated within the very high category.
+
+However, the gender training needs of staff who would support the implementation of the ASAP program is integrating gender and social inclusion issues into the ASAP Programme cycle. The institution collects gender-disaggregated data at the transaction points (opening of accounts) to inform the institution's operations.
+
+There are challenges faced while striving to achieve gender transformation. Notable among these are female staff with expertise capable of advancing through the corporate ladder who may prefer different career paths.
+
+# 4.2 Energy Commission
+
+The Commission has established a gender desk with a focal person and a draft gender policy is available. There is gender parity at the management level (50% males and 50% females). Management decisions are taken in an inclusive manner. In terms of staffing, out of 133 staff, 70% are males and the remaining 30% are females.
+
+In the past five years, the staff have received gender training on renewable energy technology deployment for solar, wind mini hydro etc. The institution ensures the collection of gender-disaggregated data and uses the data to guide programming by addressing challenges of both genders and for energy policy development and implementation.
+
+The Commission staff expressed the need to grow skills on how to integrate a gender transformative approach in the implementation of the ASAP programme.
+
+# 4.3 Environmental Protection Agency
+
+The Agency developed a gender policy in 2019 with specific strategies promoting gender equality in management and governance, access to gender-disaggregated data on staff for decision-making, equal opportunity for employment, advancement, and development to enhance staff competence; integrating gender issues in policies, plans and programs and project at all levels, and finally an implementation plan.
+
+The gender policy outlines the organization’s gender equality intent, priorities, and practices with the objective of improving staff capacity toward equitable opportunities for women.
+
+
+---
+*Chunk pages 122–122*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=914 (sys=94, user=820), max_out=1024, ctx=8192
+---
+
+# ECOBANK Ghana – ASAP – Gender Assessment – September 2023
+
+## Page 19 of 42
+
+### Institutional policies are developed in an inclusive and gender-sensitive manner as women take part in the policy formulation process and are represented on policy formulation committees.
+
+The policies of EPA are committed to gender and social inclusion transformation in the organizations at both the national and regional levels. The commitment to financial resources for the implementation of gender-related activities is more at the national level than the regional level. Management has put in place gender-focal persons at the national and regional levels. Gender balance in the agency’s staffing patterns was in the medium category with male and female strength of 60% and 40% respectively. Some staff have received gender capacity building in the last five years.
+
+There are women in senior management positions such as Directors and Heads of Department who participate in decision-making at the management level. There are two men and women occupying executive positions. The female staff have an association called Environmental Protection Agency Ladies Association (EPALA) that deals particularly with women-related issues.
+
+### 4.4 Ghana Irrigation Development Authority (GIDA)
+
+The policy has gender considerations for vulnerable groups, and it has been revised pending approval. GIDA is responsible for the formation of water users’ associations (WUAs) through the Water Users Association Regulations, 2016 (LI 2230). At the GIDA schemes, gender and social inclusion issues are integrated into all activities. Both men and women have equitable access to irrigable lands, they take part in decision-making within the WUA and are encouraged to take leadership positions. In addition to integrating gender into the agency's work, GIDA ensures that all schemes address environmental and practice climate change mitigation actions. The Environmental Social Management Plan (ESMP) developed by GIDA outlines strategies and actions for implementation at all GIDA schemes.
+
+### 5 Situation of male and female PAPs in the sampled regions
+
+This section presents the findings of an assessment of the situation of men and women with respect to their access to energy and gender issues faced by PAPs (households, MSMEs, and Irrigation farmers) within peri-urban areas of the Greater Accra, Central, and Northern Regions of Ghana, which were targeted among the sixteen regions of the country. Findings are reported in this order: households, MSMEs, and irrigation farmers.
+
+#### 5.1 Households
+
+All the male and female-headed household (100%) in the three regions are connected to electricity grid. Both male and female household heads are working in either the formal sector (i.e., director, financial institution workers, development workers, accountant, education officers, training officers, public health workers, researchers) or the informal sector (i.e., bakers, welders, caterers, hairdressers, millers, traders, cold store operators). Two females were retired public workers. There were several energy sources used by the households. The predominant energy sources used was electricity followed by LPG, charcoal, battery, and fuel.
+
+There was a gendered differential pattern of energy consumption and expenditure on electricity with the average expenditure of 569 Ghana cedis (GHS) and 448 Ghana cedis (GHS) for male-headed households and female-headed households respectively. There was no differential uses of electricity
+
+--- 
+
+**Note:** Page numbers are preserved as requested.
+
+
+---
+*Chunk pages 123–123*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=891 (sys=94, user=797), max_out=1024, ctx=8192
+---
+
+# ECOBANK Ghana – ASAP – Gender Assessment – September 2023
+
+## Page 20 of 42
+
+In male and female-headed households, electricity was used mainly for these purposes: powering lights, television, ironing, charging laptops and phones, operating deep freezers, fridges, washing machines, blenders, microwaves, bread toasters, fufu making machine, juicers, rice cookers, air conditioners etc. Decisions on which source of energy to use for cooking are taken by women in both male and female-headed households.
+
+‘Dumsor’ (load shedding) poses challenge for both female and male head-households connected to the electricity grid. When this occurs, it creates inconvenience for both male and female-headed households. They were no differences in the effect of the load shedding on the performance of their productive and reproductive roles. Some reported effects of both genders were:
+
+- Difficulty in sleeping because of heat in the room;
+- Inability to iron children's uniforms and personal dresses for work;
+- Difficulty in cooking, washing etc using manual methods;
+- Extra money is spent on the purchase of batteries;
+- It affects children's learning in the evening and adult students pursuing online courses cannot participate in their online classes; and
+- No source of entertainment at home when there is no power.
+
+Some of the coping strategies reported by 5% of male-headed households included the use of inverters and generators. For the remaining 95% of male-headed households and all the female-headed households (100%), they used battery-powered touch lights, mobile phone lights, solar and electric rechargeable lamps, lanterns, solar lanterns, candle, battery-powered micro fans, power banks for charging phones, etc.
+
+Both genders reported that reading the postpaid meter is a challenge when the electricity corporation staff meets their absence. There was no challenges reported by male-headed households. However, some of the female-headed households reported that their main challenge was that sometimes the electricity is used up during the night when retail shops are closed, and they must wait until the next morning to be able to recharge.
+
+Both male and female households interviewed know about solar PV panels for providing alternate sources of power for households. However, the main barriers facing these households in accessing this technology is financial constraints.
+
+When respondents were asked whether they would participate in the ASAP programme, the findings revealed that 51.8% and 48.2% males and females respectively indicated they will. In investigating whether PAPs could replace the bulbs in their homes with led bulbs as planned in the ASAP, the study found that 90% and 80% of the female-headed and male-headed households respectively were already using LED bulbs. The remaining households were also willing to change their bulbs to LED as proposed by ASAP.
+
+Anticipated gendered constraints that may prevent household PAPs from participating in the programme as reported by some male-headed households are as follows:
+
+- If the cost of the initial PV installation is above fifty thousand Ghana cedis (GHS50,000);
+- Short loan repayment tenure;
+- High repayment monthly amount;
+- Miscommunication on the day and time for the installation.
+
+The responses from the women differed as following:
+
+- Inability to use their houses as collateral for the solar PV loan;
+- When the maintenance cost of the installed solar PV system is costly;
+- Financial constraint;
+- If the solar system cannot generate electricity during the rainy season;
+
+[Page 1]
+
+
+---
+*Chunk pages 124–124*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1027 (sys=94, user=933), max_out=1024, ctx=8192
+---
+
+# ECOBANK Ghana – ASAP – Gender Assessment – September 2023
+
+## Page 21 of 42
+
+- Personally dislike for loans;  
+- Financial resources for maintenance of the system if the terms and conditions are not flexible.  
+- About 20% of the respondent did not foresee any constraints.
+
+### 5.2 Micro Small Medium Enterprises (MSMEs) and solar PV vendors
+
+All male and female -owned MSMEs interviewed owned their business premises which were connected to the grid. With respect to their cash flow per month, none of the respondents were willing to release the information to the study team. It was observed that during power outages about 80% of the male-owned business had alternative sources of power in the form of diesel and fuel-operated generators. None of the female -owned MSMEs had alternative power sources. In terms of mean expenditure for electricity use, male -owned enterprises spent more than female -owned enterprises, i.e., 150 Ghana cedis (GHS) to 500 Ghana cedis (GHS) per day against 100 Ghana cedis (GHS) to 200 Ghana cedis (GHS) per day for the latter group. The effect of power outages had a negative effect on the female-owned business because they had no alternative source of power. This results in low sales and incomes, spoilage of products for the case of those operating cold stores, and finally it slows down business. The coping strategy adopted by the female MSMEs was that they wait for the electricity to be switched on.
+
+Solar PV vendors are also MSMEs involved in solar PV importing procurement, marketing, sales, installation, and maintenance. The proportion of men and women in the solar renewable energy sector was 85% and 15% respectively with no percentage of PLWD. 70% of solar PV businesses related to sales and management in Ghana are owned by women with the remaining percentage (30%) owned by men. On the other hand, about 85% of businesses related to installation, procurement, importation, and engineering are owned by men etc. All MSMEs interviewed, including the vendors, expressed their interest in the ASAP short -term loans and were also willing to change their bulbs to LED bulbs. The only constraint that will prevent them from opting for the loan is if the loan conditions are not favourable.
+
+### 5.3 Irrigation Farmers
+
+The farmers interviewed belonged to Water Users Association (WUA) and Water Users Groups (WUG). Except for the Blue Gardens Vegetable Farmers Association, all the farmer cooperatives interviewed were registered as Water Users Association (WUAs) with either the Register General Department, District/Municipal Assemblies, or the Apex Farmers Association of Ghana. The WUAs and water user groups had both male and female membership as shown in Table 3 below.
+
+#### Table 3: Data on WUA membership and the average cost of fuel used per farmer per day
+
+| Name of WUA | Region | Membership | Males | Females | Women in leadership positions | The average cost of fuel used per farmer (men and women) per day |
+|-------------|--------|------------|-------|---------|------------------------------|------------------------------------------------------------------|
+| Beifkrom irrigation WUA | Central | 61 | 26 | 35 | 0 | 100GHS |
+| Blue Garden Estate Vegetable Farmer Group | Central | 6 | 6 | - | 0 | 70GHS |
+| Obrapa Vegetable and mango farmers Association (WUA) | Central | 17 | 10 | 7 | 2 | 100GHS |
+| Dzowulo Vegetable Growers Association (WUA) | Greater Accra | 51 | 47 | 44 | 2 | 120GHS |
+| Tibom’yam cooperative group (WUA) | Northern | 30 | 20 | 10 | 0 | 100GHS |
+| Gbib’katimali cooperative group (WUA) | Northern | 80 | 50 | 30 | 4 | 60GH |
+
+Source: Gender Assessment field data, 2023.
+
+All the water users' associations or groups had at least two women in leadership positions. The reasons for the under-representation of women in leadership positions are time constraints and their low level of education, although there were opportunities for them to occupy leadership positions within the
+
+
+---
+*Chunk pages 125–125*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1173 (sys=94, user=1079), max_out=1024, ctx=8192
+---
+
+# ECOBANK Ghana – ASAP – Gender Assessment – September 2023
+
+## Page 22 of 42
+
+The WUA and groups had executives headed by the chairman who presides over issues including dispute resolutions. The women and youth through the focus group discussions explained that their voices were heard within the group and participated in discussions during meetings.
+
+The source of land for the farmers was government land on GIDA irrigation schemes, communal, private, family, hired, own land acquired through purchase, and gifts received from parents.
+
+On government irrigation schemes, men, women, and youth had access to either half-acre or one-acre land to cultivate based on individual capabilities. Access to government land is based on membership in the WUAs. All the women, as well as some men, had farm sizes of a half-acre. Only men had one acre of land for cultivation.
+
+However, on hired land, family, and communal lands, the mean land size for men and women was 3.5 acres and 2 acres respectively. For communal irrigation schemes, the land sizes were much bigger for both male and female farmers. For example, for the Tibom’yam cooperative group in the Northern region, the land sizes for men and women was 4-15 acres and 1-5 respectively.
+
+Some women (Tibom’yam cooperative group) reported that access to land was very difficult especially if their husbands does not have enough land to share. The farmers reported that those working on hired land do not have secured tenure for long-term investments as the landowners can take back their land.
+
+There were no differences in the farming roles played by men and women as both were engaged in weeding, planting, fertilizer application, and harvesting.
+
+The marketing of produce is done predominantly by women.
+
+It was observed that in the Central and Greater Accra Regions, women cultivated crops with low production costs such as okra, tomatoes, garden eggs, sweet potatoes, pepper, watermelon, cucumber, lettuce, and lemon grass, whiles men cultivated crops with high production cost such as carrots, beans, green pepper, cabbage, groundnut, onions, cucumber, spring onions, onion, beetroot, radish, spinach, parcel, mint.
+
+The reasons given by the women are financial constraint and limited access to labour. In the Northern Region, the men cultivate maize, rice, cassava, and soya beans etc.
+
+It was impossible to capture the vegetable yields under irrigation because of poor record keeping on the part of the farmers (men, women, youth, aged and PLWD). The farmers engage in all-year-round production.
+
+In terms of decisions on production activities, both men and women take decisions on their production activities. For married couples who work on the same plot, decisions related to the farming business are jointly taken. Income accruing from farming is controlled by women and men in the case of those engaged in individual farming.
+
+Most women farmers were engaged in other income-generating activities such as trading, sale of vegetables in the markets, etc. The men were also engaged as traders, drivers, masons, carpenters, teachers, etc.
+
+Access to energy to lift water was a major constraint for the smallholder farmers (men and women). The fossil fuel-powered irrigation pumps are not durable and require frequent servicing or replacement, else they would frequently break down, thus increasing maintenance costs.
+
+The farmers on GIDA irrigation schemes use one diesel or petrol-operated pumps that serve all the farmers to pump water for irrigation through sprinklers and locally constructed irrigation manual systems using tubes. The farmers also have pump houses except the Blue Garden Vegetable Farmers Association.
+
+The Beifikro m Irrigation women farmers reported that they usually cannot operate the pumping machines because of the drudgery involved.
+
+At the private and communal irrigation schemes, each farmer (male or female) had their own irrigation pumps. Although some WUAs had pump houses, yet they refused to place their pumps there because of the high incidence of theft cases which was widespread in all three regions.
+
+The purchase of fuel or petrol for pumping is done individually at all types of irrigation schemes.
+
+From Table 3 above, it can be observed that the farmers (men and women) spend an average of 83 Ghana cedis (GHS) on fossil fuel per day.
+
+All the registered WUAs have bank accounts and they pay dues for unforeseen expenditures by the group and welfare purposes. Women and men control income accrued from their own farms and usually spend on household food, health, clothing, and children's basic expenditures.
+
+Negative effects were experienced by the farmers (men, women, and youth) when there is fuel (diesel or petrol) shortages in addition to the impact of climate change on land use for crop farming. This results in poor
+
+---
+
+
+---
+*Chunk pages 126–126*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=1010 (sys=94, user=916), max_out=1024, ctx=8192
+---
+
+# ECOBANK Ghana – ASAP – Gender Assessment – September 2023
+
+## Page 23 of 42
+
+### Crop and Farming Challenges
+
+The farmers (men and women) reported that they use buckets and watering cans resulting in increased workload and drudgery. The effect of diesel and fuel shortages is poor growth of the crops which translates to low yield and income, and loss of profit and capital.
+
+### Climate-Smart Practices
+
+To mitigate these negative effects, the farmers (men and women) adopt climate-smart practices on their farms. These practices include applying water conservation, mulching, use of compost, planting of cover crops, nursing and transplanting, water, and moisture conservation, changing planting dates/periods, use of early maturing varieties, use of draught tolerant varieties; crop rotation, land rotation, mixed farming, row planting, intercropping, re-filling, repeated sowing, strip, tractor, and animal ploughing, etc. They also rely on weather information to guide their planting.
+
+### Participation in ASAP Program
+
+The farmers (both men and women) were willing to participate in the ASAP programme. All the WUAs and Water User Group expressed interest in participating in the proposed ASAP program except one group (Dzowulo Vegetable Farmers Association because they are farming on a government land which is not secured).
+
+### Constraints Preventing Participation
+
+Finally, the anticipated constraints that may prevent the farmers (men and women, aged, youth, PLWD) from participating in the ASAP were low-capacity solar PV systems, high-interest rates, and if they must use their produce to pay for the loan instead of cash.
+
+### Commonly Held Beliefs, Perceptions, and Stereotypes
+
+Our field assessment confirmed well-established general perceptions of gender roles and biases. The PAPs had beliefs related to loans, technology adoption and farming. For example, some Muslim farmers in the Central Region believed that it was against their religion to take bank loans. It is commonly believed in Ghana that women are creditworthy and usually pay back their loans.
+
+In terms of technology adoption, it is believed that men are early adopters while most women are late adopters of technologies related to solar energy, irrigation, and agriculture. Commonly held beliefs related to crop farming are that certain crops are termed as women's crops and include groundnut, beans, cowpea etc., which are predominantly cultivated by women.
+
+Some PAPs have the perception that solar energy is for powering lighting systems and cannot power huge processing equipment and irrigation pumping machines.
+
+### Land Preparation Perceptions
+
+Some perceptions and stereotypes related to land preparation for crop farming are that ploughing is men's task whiles gathering weeds and sowing are tasks for women and young girls. In most peri-urban areas of Ghana, there is a distinct division of labor based on sex and age within households creating stereotypes. For example, cooking in the household is reserved for women and young girls and decisions related to energy for cooking is done by women.
+
+In the Awutu District area where Obrapa vegetable and mango farmers operate, there are taboos surrounding water use for irrigation and other purposes at the "Bantama" farming area.
+
+### Local Institutional Actors Relevant to Social Groups with Implications for ASAP
+
+Key social groups with relevance to the ASAP include Irrigation Cooperatives (Water Users Associations/Groups), Residential Homeowners Association, Renewable Energy Association of Ghana (REAG) and Village Savings and Loan Association (VSLA).
+
+#### Renewable Energy Association of Ghana
+
+The renewable energy association of Ghana represents renewable energy sector actors. It provides support to companies, individuals, and institutions while promoting renewable energy and energy efficiency. The Association's total membership comprises 65% and 45% male and female respectively. There is no discrimination in the rules of membership, but one must be working in the renewable energy sector.
+
+The percentage of males and females in leadership positions is 80% and 20% respectively. Decision-making is done in an inclusive manner. Members of the association benefit from
+
+---  
+**Note:** Page numbers are preserved as per instructions.
+
+
+---
+*Chunk pages 127–127*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=916 (sys=94, user=822), max_out=1024, ctx=8192
+---
+
+# ECOBANK Ghana – ASAP – Gender Assessment – September 2023
+
+## Page 24 of 42
+
+### 5.5.1 Women’s Groups
+
+Women’s groups are organizations that provide technical training, business development support, and opportunities. The association sometimes mobilizes grants for its member and provide recommendation for members to access bank loans.
+
+Gender capacity building has been organized for members within the last five years.
+
+### 5.5.2 Homeowners Associations
+
+Homeowner’s Associations are legally constituted organizations that are formed in a community by the property owners to help with the general maintenance of the properties and to ensure that the value and quality of the properties are maintained. In the Greater Accra and Central Regions, household data was collected from households at Rehoboth and Millennium City Estates. The estates had a governing board that makes sure the rules of the Association are adhered to. These rules are made known to each homeowner. There is no discrimination in the rules of joining the association. The purchase of the property automatically makes one a member of the association. The percentage of male members are more than the females in both Associations.
+
+Members are obliged to pay association dues either monthly or yearly. Some of the services offered by the Association are pest control, maintaining community landscaping, providing recreational facilities, space for community events, community security, internet connectivity for homes, and street maintenance.
+
+### 5.5.3 Irrigation Water Users Association/ Groups
+
+The study identified Water Users Associations (WUAs) and Water Users Groups during the assessment. Both the formal and informal water user groups had both male and female members. Information about the irrigation farmers (WUAs) has been provided in section 5.3 already.
+
+### 5.5.4 Village Savings and Loans Associations
+
+Village Savings and Loan Associations (VSLAs) have proved transformational in helping people find a way out of poverty and helping them become more empowered. Both men and women create a local group, and each saves a small amount of money every week. Within a short time, there is money in the box, which the members can also borrow.
+
+The study revealed that only one WUA had formed a VSLA. There were no reported inequalities with respect to rules for joining or the ability to borrow from the association.
+
+### 5.6 Anticipated gender differentials to vulnerability and adaptive capacity to climate change
+
+Climate change impacts men and women differently within peri-urban areas in Ghana, given their different roles and responsibilities at the household level, as MSMEs and irrigation farmers. Among all the ASAP PAPs, vulnerability to climate change is higher in women than men and boys because of their limited access to productive resources, technical skills, information, irrigable land, credit, assets, in addition to their low education and the majority employed in less paid jobs.
+
+With respect to adaptive capacities, there are gender differentials in the access and use of climate information to identify access and choose adaptation options, to innovate in response to evolving challenges and opportunities to adapt to a changing climate. Climate and weather information are provided through television, radio, and by phone text message and many women and MSMEs may not access such information as their interest may not be there except for women farmers who need such information for their planting activities.
+
+Among climate adaptation actions farmers may adopt climate-smart practices and engage in off-farm livelihoods. Male-owned MSMEs may have more skills in analysing climate change risks/ opportunities and generating strong adaptive strategies for their businesses and identifying appropriate funding for their adaptive or emission reduction strategy, business opportunity, and climate risk mitigation strategies.
+
+---
+
+**Note:** Page numbers are preserved as they appear in the original document.
+
+
+---
+*Chunk pages 128–128*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=683 (sys=94, user=589), max_out=1024, ctx=8192
+---
+
+# ECOBANK Ghana – ASAP – Gender Assessment – September 2023
+
+## Page 25 of 42
+
+Climate change tends to exacerbate existing gender inequalities among ASAP PAPs and women, especially may face larger negative impacts. In the context of the ASAP, the following prevailing inequalities may be exacerbated by climate change:
+
+### Male and female headed-households
+
+- Women’s workload would increase when gender-sensitive household equipment cannot be used for cooking, washing, ironing, etc. during power outages.
+- If floods or drought affects the livelihoods of female household heads and they are out of jobs, they cannot procure batteries and rechargeable lamps.
+- The health of women and children are at risk when there are floods in homes.
+- Reduced savings for women resulting from extra expenditure on medication, and lack of water during droughts.
+- Poor communication among spouses and other family members resulting from the inability to charge mobile phones could trigger conflicts and gender-based violence.
+- Women’s time for rest and leisure would reduce drastically.
+- Less participation of women in remote social, educational activities, and entertainment, requiring the use of the internet such as banking, educational programs, entertainment, church service etc.
+- Poor security and increased fear within female-headed-households due to darkness around the house.
+- Reduced disposable income through food spoilage in fridges and purchase of batteries to power touch lights etc.
+- Limited access to credit by female and male household heads.
+
+### Female and male owned MSMEs
+
+- The difficulty of women reinvesting in enterprises that are affected by climate disasters such as drought, floods, etc.
+- Delays in the provision of goods and services during power outages.
+- Reduced production levels, income, and profits by female-owned MSMEs.
+- Loss of capital due to spoilage of goods that require freezing and cooling.
+- Limited access to start-up capital or credit to upgrade their businesses.
+- Challenges in accessing the right business development support.
+- Women's land ownership constraint would prevent them from investing in permanent business structures and solar technologies.
+
+### Irrigation Farmers (WUAs)
+
+- Food insecurity and malnutrition status of female-headed households would aggravate.
+- Adult and youth males and females are likely to migrate to earn income when there is crop failure due to drought.
+- Access to irrigable lands may be difficult for women as men are the custodians of family and communal lands.
+- Crop and productivity levels of women may decline as they have limited access to production resources.
+- The difficulty of women to finance farming destroyed by drought or floods.
+
+
+---
+*Chunk pages 129–129*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=677 (sys=94, user=583), max_out=1024, ctx=8192
+---
+
+# ECOBANK Ghana – ASAP – Gender Assessment – September 2023
+
+## Page 26 of 42
+
+- Women who lose their livelihoods because of floods and drought may migrate to neighboring countries and cities and may be exposed to rape, gender-based violence, abuse, teenage pregnancy, etc.
+- Women have smaller land sizes and floods can cause erosion and leaching which will lead to loss of soil fertility resulting in low yield, reduced income, and food insecurity within households.
+
+## Lessons learned from ongoing and past solar PV programmes
+
+The staff of past programs such as Energizing Development Programme (Endev programme) implemented by GIZ, Ghana SEforALL Programme, and ongoing programs such as the Green People’s Energy Programme (Solar Powered Irrigation System component) were consulted to ascertain their approach to gender and social inclusion during programme implementation. None of the programmes had a Gender Action Plan although gender and inclusion issues were mainstreamed into the programmes. Some of the lessons learned during programme implementation are reported below:
+
+- For all training programmes 40-50% quota was provided to reach more women.
+- Gender capacity building was organized for the programme staff.
+- The programme monitoring and evaluation indicators had gender indicators that were monitored and reported on.
+- Considering the expensive initial cost of installing solar PV technologies for irrigation purposes, to reach out to farmers, mixed irrigation groups or WUAs should be targeted for women to benefit.
+- Decision-making on the choice of installation companies/ vendors should be done by the beneficiaries especially women.
+- The use of NGOs working to promote women's empowerment can be used to support the sensitization and awareness creation of women-owned MSMEs, female-headed households, and cooperatives to adopt solar PV solar systems.
+
+## Reported best practices from ongoing and past projects with implications for ASAP are presented below:
+
+- A gender assessment should be conducted in the programme area to identify gender issues that may prevent a project from achieving gender equity.
+- Adequate budget should be allocated for the implementation of the gender action plan.
+- A full-time gender specialist should be recruited to support with the implementation of a gender action plan.
+- Where subsidies are given for both genders to cover the cost of a technology (solar PV system), women should be targeted especially.
+- Solar Irrigation systems should have women-friendly designs for easy operation.
+- Gender disaggregated data should be collected for monitoring and evaluation purposes (men, women, youth, aged, and PLWD).
+
+
+---
+*Chunk pages 130–130*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=671 (sys=94, user=577), max_out=1024, ctx=8192
+---
+
+# 6 Findings on entry point for achieving the project’s gender and social inclusion outcome
+
+## 6.1 Differential needs of men and women in the context of ASAP
+
+The Institutional gender analysis revealed that both the AE and the key implementing institutions had gender training needs. In furtherance to this, gender differential needs were reported by PAPs and these needs can be addressed by ASAP.
+
+### Ecobank, EC, and EPA
+
+- Gender Transformative training within the programme cycle to enable staff (men and women) to achieve equity in the implementation of the programme.
+- Favourable loan terms and interest rates
+
+### Solar PV Vendors (REAG)
+
+- Gender training to ensure equity in wages, and salaries, reduce violence and sexual abuse among staff and workers and promote respect for women, organizational health issues, etc.
+- Information on the number of people who will do the installation, the day and time the installation will be done, and the duration of the installation.
+
+### Female-headed households
+
+- Preference for automatic change over from electricity grid to solar not manual.
+- Training on how to operate the solar PV system.
+- Adequate information on the programme, terms, and conditions of the loan; collateral required by Ecobank to participate in the programme, interest rate on the loans and payment period; cost of the solar PV panels and accessories, maintenance cost of the system.
+
+### Male headed households
+
+- Information on the day and time for the installation and number of installers and the duration of the installation.
+- Longer loan repayment plan
+- Warranty for the solar PV system at least for one year.
+- The solar PV system should be powerful to be able to power all the gadgets PAPs use at home.
+- The system should be durable
+
+### Male and Female owned MSMEs
+
+- Warranty from the vendors (one year after-sales services)
+- Information on the cost of the solar PV system and installation cost based on consumption.
+- Moderate interest rate on the ASAP loans with flexible repayment schedule.
+- Payment terms and mode of payment of loan repayment should be flexible.
+- Cost of maintaining the system after installation monthly and yearly.
+
+### WUA/WUG women
+
+- Solar PV system that can pump the required water for irrigation per day for farmers.
+- High-quality solar PV system with reserve battery and available parts on the market
+
+
+---
+*Chunk pages 131–131*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=610 (sys=94, user=516), max_out=1024, ctx=8192
+---
+
+# ECOBANK Ghana – ASAP – Gender Assessment – September 2023
+
+## Page 28 of 42
+
+### Key Recommendations for Solar System Implementation
+
+- The solar panels should be mounted on a pillar and high to prevent theft.
+- Tools for simple maintenance of the system.
+- Training of at least three male farmers to be able to provide maintenance service to the system for minor faults.
+- A solar system that can easily be switched on easily to reduce drudgery.
+- A warranty of one to two years on the solar system to be installed by the company.
+- Flexible Loan repayment every four months not monthly to enable them to harvest and sell their produce before payment is done.
+- The long-term repayment schedule of the loan.
+
+### WUA/WUG (men)
+
+- A grievance system where they can channel any issue related to payment.
+- Strong quality solar PV system.
+- The system should be easily and simply switched on by women in the absence of men. Simple sparking of the pump.
+- Loan repayment every four months not monthly to enable them to harvest and sell their produce before payment is done.
+
+### 6.2 Opportunities for the programme to address the needs of specific and vulnerable groups
+
+During the collection of field data, special attention was given to women, men, youth, PLWD, and the aged population as such their strengths, challenges and needs have been incorporated into the proposed strategy to address the needs of PAPs.
+
+Distinct vulnerabilities of women and men in the project intervention area with implications for the ASAP are presented below:
+
+#### Vulnerability issues for the specific target group
+
+Project response strategy for addressing the vulnerability of men and women
+
+Ecobank and ASAP Key implementing Institution (EC, EPA, GIDA)
+
+Households (male-headed and female-headed)
+
+The increased workload of women when gender-sensitive equipment in the household cannot be used due to power outages.
+
+Reduced time for women to rest and leisure
+
+Less participation of women, men, youth, and children in entertainment, remote educational courses, social activities etc.
+
+Reduced disposable income due to food spoilage in the fridge, purchase of candles, batteries, etc.
+
+Provision of solar PV systems that can power all household appliances.
+
+
+---
+*Chunk pages 132–132*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=705 (sys=94, user=611), max_out=1024, ctx=8192
+---
+
+# ECOBANK Ghana – ASAP – Gender Assessment – September 2023
+
+## Page 29 of 42
+
+### The youth leave home during power outages and female youth are more vulnerable.
+
+- Limited access to formal credit with moderate interest rates by households (male and female-headed) to procure and install solar PV systems.
+- Provision of ASAP loans with moderate interest rates and flexible payment terms.
+- Requesting for landed properties as collateral to access loans may disadvantage women.
+- The alternate collateral requirement should be considered by ASAP such as PAPs, Treasury bills, bank savings etc.
+
+### MSMEs & Solar PV Vendors
+
+- Some female and male-owned MSMEs have limited access to business development knowledge to boast their enterprises.
+- ASAP can link MSMEs to the Ecobank Elevate Desk to benefit from the non-financial services provided for MSMEs.
+- The difficulty for women to reinvest enterprises that are affected by climate disasters such as drought, floods, etc.
+- Ecobank can introduce business insurance products for MSMEs or PAPs.
+- Delays in the provision of goods and services during power outages by male and female-owned MSMEs.
+- ASAP to provide solar PV systems for MSMEs capable of powering machines and equipment for their business operations.
+
+### High expenditure on fossil fuel and diesel to power generators of mostly male-owned MSMEs.
+
+- Increased production cost, reduced production levels, income, and profit.
+- Limited access to credit to women MMSE who majority save in non-financial channels to upgrade their businesses.
+- ASAP to provide loans for MSMEs and short-term loans for solar PV vendors at moderate interest rates.
+
+### Irrigation farmers (men and women, youth, PLWD)
+
+- Food insecurity and malnutrition status of female-headed households would aggravate if there were floods and drought.
+- Ecobank can introduce business insurance products for WUAs.
+- The difficulty of women to finance farming destroyed by drought or floods.
+- Women, and youth who experience crop failure because of floods and drought may migrate to neighbouring countries and cities and may be exposed to rape, GBV, abuse, teenage pregnancy, etc.
+- Crop and productivity levels of women may decline as they have limited access to production resources including credit.
+- Provision of ASAP loans with moderate interest rates and flexible payment terms.
+- High expenditure on fossil fuel to irrigate crops by both gender.
+- Provision of solar PV system for WUAs to power their irrigation pumps.
+- Drudgery involved in operating the irrigation pump by men.
+
+
+---
+*Chunk pages 133–133*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=727 (sys=94, user=633), max_out=1024, ctx=8192
+---
+
+# ECOBANK Ghana – ASAP – Gender Assessment – September 2023
+
+## Page 30 of 42
+
+### The inability of women to irrigate crops due to difficulty in operating the irrigation pump.
+- The solar PV system should have a gender-sensitive switching system where women can easily operate.
+
+### Limited access to irrigable land by men and women on informal irrigation schemes/ private sites.
+- ASAP should work with WUAs working on formal irrigation schemes owned by the government or co-owned by the government and communities.
+
+### Unsecured land tenure by farmers (men, women, youth, PLWD) working on government lands around cities, hired lands, and family lands.
+- Under-representation of women in leadership positions within WUAs and WUG.
+- ASAP can collaborate with the gender focal persons of GIDA to improve the situation.
+
+## 6.3 Identified Knowledge and Skills of PAPs Relevant for Achieving the Programme Outcome
+
+The knowledge and skills possessed by PAPs have a positive effect on achieving the project objectives. Notable knowledge and skills reported by PAPs which, are a building block for the achievement of the ASAP outcome, are enumerated below:
+
+### All PAPS (Vendors, households, MSMEs and WUAs)
+- Some PAPs have received a bank loan and repaid it successfully.
+- They know every bank loan assessed comes with an interest rate and payment terms.
+- They know that banks require collateral from applicants before granting a loan request.
+- They have knowledge of how solar PV systems can provide energy for use.
+- They know that the initial cost of installing solar PV is high.
+- They know that installing solar PV will require maintenance after some period.
+- They know that led bulbs consume less electricity.
+
+### Solar PV Vendors (REAG members)
+- Some solar PV vendors have knowledge of gender which was provided by REAG.
+- The vendors have knowledge and skills in solar PV installation and maintenance.
+
+### Male and female household heads
+- Some PAPs are already using led bulbs because they know it saves energy.
+- They know that one needs a good roof for the installation of solar PV on their rooftop.
+
+### Male and female Owned MSMEs  
+- They know that Ecobank provides loans for businesses.
+- They know that an MSME must own the building for their business to be able able to invest in solar panels on the rooftop.
+- They know that installing solar systems will provide 24-hours access to power and this will translate into increased production of goods and services, increased profit, income, and growth of the business.
+- For the MSMEs who are using generators, they know that installing solar PV systems will reduce production expenditure on fossil fuel.
+
+### Water User’s Association / Water Users Groups
+
+---
+
+
+---
+*Chunk pages 134–134*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=862 (sys=94, user=768), max_out=1024, ctx=8192
+---
+
+# ECOBANK Ghana – ASAP – Gender Assessment – September 2023
+
+## Page 31 of 42
+
+### Key Knowledge and Skills of Farmers
+
+- The farmers know the types of crops that grow well under irrigation.
+- They know that they cannot repay bank loans by monthly payment considering that they must harvest and sell their produce before any payment can be done.
+- They have skills in soil water management practices such as mulching etc.
+- Knowledge of climate change and its adverse effect on their livelihoods.
+- Practical knowledge and skills on how to maintain soil moisture, water management practices and the importance of using climate resistance improved seeds for planting.
+- Knowledge of the importance of registering water user groups and formation of strong associations.
+- Some of the groups can mobilize themselves into groups such as VSLA or savings groups.
+
+### Opportunities for the Project to Challenge Gender Stereotype and Increase Positive Gender Relations
+
+Although it will be difficult for the project to challenge gender stereotypes, socio-cultural and religious norms in the programme area, yet opportunity exists to reduce the perceptions PAPs have with implications for the ASAP programme. It will be possible to sensitize the public through various media to encourage women to adopt solar PV technology and demystify the perception that solar energy cannot power irrigation pumps or machines in households and equipment for operating businesses.
+
+### Anticipated Gender Roles to be Played in the Context of the Programme
+
+The ASAP involves five phases which are needs assessment, design and planning, implementation, monitoring & evaluation, and reporting, and finally mid-term and final evaluations. This section of the report elaborates on the anticipated roles men and women from Ecobank, ASAP key implementing institutions, and PAPs would play within the project phases:
+
+#### Project Assessment Stage
+
+At this stage of the programme, men and women (PAPs, AE, and technical staff of key implementing institutions and relevant stakeholders) would provide data through focus group discussions and key informant interviews for project studies.
+
+#### Project Design and Planning Stage
+
+Ecobank will provide advisory and technical support and facilitate stakeholder interconnectivity. Technical staff (men and women) from Energy Commission, EPA, GIDA, Solar PV Vendors (REAG), and consultants/experts would provide technical guidance for the designing and planning.
+
+#### Operational Stage
+
+##### Preparatory Phase
+
+AE and key implementing institutions
+
+Ecobank Ecobank management will define staff (men and women) that will work on the ASAP Programme nationwide and open the ASAP call for application for PAPs and solar PV vendors; monitor the structure of the loan facility for each of the applicants; review before the finalization of the loan agreement for implementation; and market the ASAP programme for the public (men and women) to role on the programme.
+
+Ecobank will prepare and submit a preliminary environmental report or environmental impact statement.
+
+##### Environmental Protection Agency
+
+EPA technical staff comprising of women and men will zone the ASAP programme area where the installation will be done, and a coping assessment conducted on ASAP compatibility with EPA regulations; review the Preliminary Environmental Report submitted for the ASAP by Ecobank.
+
+##### GIDA & National Farmers Organizations
+
+They will provide a list of registered WUAs (women, men, youth, PLWD, and the aged) at government, government and communal co-owned irrigation, and private irrigation schemes in Ghana using fossil fuel-operated irrigation pumps.
+
+
+---
+*Chunk pages 135–135*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=950 (sys=94, user=856), max_out=1024, ctx=8192
+---
+
+# ECOBANK Ghana – ASAP – Gender Assessment – September 2023
+
+## Page 32 of 42
+
+### EC and Solar PV Vendors (REAG)
+EC and REAG can recommend qualified and experienced vendors (men, women, youth, aged, PLWD) that the ASAP team can engage during programme implementation.  
+Solar PV vendors (men, women, youth, PLWD) would apply for the ASAP short-term loan.
+
+### PAPs
+PAPs (male and female) will apply for the ASAP loan, provide the requisite collateral and deposit.
+
+## Pre-construction phase
+
+### AE and key implementing institutions
+Ecobank ASAP gender specialist/ consultant will train ASAP staff, Ecobank selected staff, solar PV vendors, and the ASAP key implementing institutions. ASAP Team (men and women) would deploy the loans to PAPs and pay for all construction and operational permits required.
+
+### Energy Commission
+Energy Commission Technical staff (men and women) will undertake inspection and assess vendors and certify them. Technical staff (men and women) selected to participate in the ASAP will participate in the gender training.
+
+### EPA Technical staff from EPA (men and women)
+EPA technical staff (men and women) will conduct a coping assessment on the ASAP compatibility with EPA regulations.
+
+### GIDA
+GIDA Team (men and women) will provide technical guidance to the solar PV vendors on suitable sites to mount the solar PV panels at the government, and government and communal co-owned irrigation schemes.
+
+### Solar PV Vendors (REAG)
+Solar PV vendors (men, women, youth and PLWD) would conduct assessments on buildings owned by PAPs for installation and estimate the required solar PV needed based on their consumption levels and collect a list of PAPs, their location to be able to schedule for inspection, and the dates for installation, etc.  
+REAG members/vendors (men and women) will participate in the gender training.  
+REAG will collaborate with ASAP to provide health and safety training for the selected vendors who will access the ASAP loans.
+
+### PAPs
+All PAPs-male and female  
+PAPs (men and women) will provide information on their location, the equipment the solar PV will power, and any other information required by the vendors.
+
+## Construction phase
+
+### AE and key implementing institutions
+Ecobank ASAP Team (men and women) will ensure compliance with the planned solar PV construction and monitor the technical people (vendors, etc,) according to plan.
+
+### Energy Commission
+Energy Commission technical staff (men and women) will provide necessary license as required.
+
+### EPA
+EPA technical staff (men and women) will provide permits and conditions for the ASAP programme and provide an environmental permit for the programme.
+
+### GIDA
+GIDA Irrigation scheme managers (men and women) will guide the WUAs to work out how the payment will be done by members and provide supervision during the installation.
+
+### Solar PV Vendors (REAG)
+Vendors (men, women, youth, and PLWD) will procure solar PV panels and accessories and install them for PAPs, test run and provide basic maintenance training for PAPs.
+
+### PAPs
+All PAPs  
+PAPs (men and women) will avail themselves at home or irrigation site for the installers to do their work and supervise the installation, PAPs will learn how to operate and perform simple maintenance services such as cleaning the solar PVs and using the system. They will utilize the solar PV system to generate energy for use in the household and businesses.  
+Male PAPs The male PAPs will supervise and support the vendors to perform their tasks.
+
+### WUA (male, female, youth & PLWD)
+They will manage and maintain the solar PV system and make internal rules for the use of irrigation water and payment of the ASAP loan.
+
+
+---
+*Chunk pages 136–136*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=920 (sys=94, user=826), max_out=1024, ctx=8192
+---
+
+# ECOBANK Ghana – ASAP – Gender Assessment – September 2023
+
+## Page 33 of 42
+
+### Monitoring & evaluation and reporting stage
+
+- **AE and key implementing institutions**
+  - Ecobank ASAP Team (men and women) will monitor the loan payment of PAPs to identify gaps in payment.
+  - Gender disaggregated data will be collected during monitoring and the commissioning of evaluation and reported on according to the GCF template.
+  - ASAP Gender Specialist/consultant (male or female) would report on gender issues relevant to the project to be addressed by the ASAP team.
+
+### Energy Commission
+
+- Energy Commission Technical staff (men and women) will participate in ASAP monitoring as required.
+
+### EPA Monitor and enforce existing laws and regulations related to environmental, social impact, and gender assessment and GAP of the ASAP programme.
+- On an annual basis, EPA will collect and review the ASAP environmental report submitted by Ecobank and give feedback to the ASAP team.
+
+### GIDA Irrigation Scheme Managers
+
+- Irrigation Scheme Managers (men and women) will ensure the solar PV system is properly managed on-site.
+
+### Solar PV Vendors (REAG)
+
+- Vendors (men, women, youth, and PLWD) will provide maintenance services for beneficiaries as needed and support Ecobank to monitor the solar systems mounted for households, MSMEs, and irrigation groups/WUAs to ensure that quality work has been done as per the installation and servicing schedule.
+- Again, REAG will support monitoring, health, and safety compliance and submit appropriate reports taking into consideration gender and social inclusion issues and sustainability.
+
+### PAPs Male, female and PLWD
+
+- PAPs will provide data for monitoring and evaluation purposes.
+
+## Mid-term and final evaluation
+
+- A team of external evaluators (men and women) including a gender consultant would be engaged to conduct the mid-term and final evaluation of the programme.
+- ASAP PAPs (men and women) would provide gender-disaggregated data for the evaluation studies.
+
+## 7 RECOMMENDATIONS
+
+Based on the assessment’s findings, we propose the following recommendations for the ASAP programme.
+
+1. The differential needs of men and women with respect to the provision of loans and installation of solar PV systems for PAPs as indicated section 6.3 of this report should be taken into consideration in the design, planning and implementation of the programme.
+2. Beyond the provision of long-term and short-term loans for PAPs, the ASAP programme should invest in gender equality and social inclusion capacity building for the ASAP programme staff and key implementing institutions, Energy Commission, Environmental Protection Agency, and MoFA-Ghana Irrigation Development Authority (GIDA) Irrigation scheme managers including the solar PV vendors that will benefit from the loans. Specific tailor-made gender training should be organized for ASAP staff and selected staff of the key implementing institutions (EC and EPA) on how to integrate the gender transformation approach in the ASAP programme. For the ASAP programme staff, additional training would be provided on how to implement the GAP.
+3. In the assessment and certification of solar PV vendors, conscious effort should be made to include at least 45% women and PLWD, youth considering that the sector is male-dominated.
+4. Considering that there are different categories of PAPs (male and female-headed households, male and female own MSMEs, and WUAs to be engaged by the ASAP, it is important for the programme team to come up with loan packages that would suit each PAP especially women who are usually disadvantaged. The bank should provide business technical assistance (non-financial support) to the vendors and MSMEs who will benefit from the loans. This would ensure business development.
+
+---
+
+
+---
+*Chunk pages 137–137*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=744 (sys=94, user=650), max_out=1024, ctx=8192
+---
+
+# ECOBANK Ghana – ASAP – Gender Assessment – September 2023
+
+## Page 34 of 42
+
+5. In the implementation of all project activities for PAPs, a quota of 50% women participation should be targeted for households and MSMEs. For the irrigation cooperative, women's membership in groups and at least two women in leadership positions in the WUA should be a requirement for groups to benefit from the loans. Training and advisory services should be done at a time women are free to participate.
+
+6. Adequate financial resources should be allocated for the implementation of the Gender Action Plan developed for ASAP. It is important for the project to engage the services of a full-time experienced gender specialist for the lifespan of the project to support with the implementation of the gender action plan. It is further recommended that external gender consultants should be part of the evaluation team that will be engaged during the programme's mid-term and terminal evaluation.
+
+7. The ASAP Programme should collaborate with other solar programmes being implemented in Ghana to share experiences, best practices and lessons learned in the implementation of the ASAP GAP. Again, the ASAP programme should document GTA achievements, lessons learned and best practices for replication. Development of targeted communication and information materials on gender equality achievement of ASAP should be undertaken. In addition, the ASAP programme should create awareness about the programme, using media channels that more women can have access to the information. Local dialect and English should be used considering the low level of education of women.
+
+8. To reach out to more female-headed households, Ecobank should collaborate with the residential homeowner's associations to target more women beneficiaries and to ensure they pay back their loans.
+
+9. It is recommended that, the ASAP programme should work with existing WUAs that are registered and have both women, men, youth, aged and PLWD members rather than establishing new groups to ensure more women farmers are reached. It is further recommended that the programme should engage with registered WUAs working with government and co-owned government and communal irrigation schemes as they tend to have more secured land access by both genders.
+
+10. For the MSMEs, it will be important to reduce the electricity consumption requirement for women as an eligibility criterion from 800 Ghana cedis (GHS) and above to 500 Ghana cedis (GHS) and above to allow more women-owned MSMEs to roll on the ASAP programme.
+
+11. There should be a grievance desk established for the programme and it must have both men and women as part of the team responsible for receiving grievances from PAPs. The grievances should be recorded in a logbook separately for men and women.
+
+
+---
+*Chunk pages 138–138*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=157 (sys=94, user=63), max_out=1024, ctx=8192
+---
+
+# ANNEXES
+
+## Annex 1: Gender Assessment Framework
+
+### Overview
+The Gender Assessment Framework is designed to guide the implementation of gender-sensitive interventions within the project. It includes key components such as:
+
+- **Gender integration**: Ensuring that gender considerations are embedded in all project activities.
+- **Gender analysis**: Conducting a thorough analysis of gender roles and relations in the context of the project.
+- **Gender indicators**: Defining measurable outcomes related to gender equality.
+
+### Key Components
+1. **Gender Integration**
+   - Incorporating gender perspectives into project design and implementation.
+   - Ensuring that all stakeholders are aware of gender issues and their relevance to project outcomes.
+
+2. **Gender Analysis**
+   - Identifying gender roles, responsibilities, and power dynamics in the community.
+   - Assessing how these factors influence access to resources and opportunities.
+
+3. **Gender Indicators**
+   - Establishing clear metrics for measuring progress toward gender equality.
+   - Monitoring changes in gender norms and behaviors over time.
+
+### Implementation Strategy
+- **Training**: Providing training sessions for staff and beneficiaries on gender-sensitive approaches.
+- **Monitoring**: Regularly reviewing project activities to ensure gender integration.
+- **Evaluation**: Conducting periodic evaluations to assess the effectiveness of gender interventions.
+
+## Annex 2: Gender Data Collection Tools
+
+### Tools Used
+The following tools are used for collecting gender-related data:
+
+| Tool | Description |
+|------|-------------|
+| Questionnaire | Standardized survey instrument designed to gather information on gender roles and attitudes. |
+| Focus Group Discussions | Structured group conversations aimed at exploring community perspectives on gender issues. |
+| Key Informant Interviews | In-depth interviews with individuals who have knowledge about gender dynamics in the area. |
+
+### Data Collection Methods
+- **Quantitative methods**: Surveys and structured questionnaires.
+- **Qualitative methods**: Focus groups and interviews.
+
+### Sample Size
+The sample size for data collection is determined based on:
+- Population size
+- Statistical power requirements
+- Resource availability
+
+## Annex 3: Gender Action Plan
+
+### Objectives
+The primary objectives of the gender action plan include:
+
+1. Promoting equal access to resources and opportunities.
+2. Enhancing women's participation in decision-making processes.
+3. Addressing gender-based violence and discrimination.
+
+### Activities
+- **Capacity Building**: Training programs for women and men on gender equality concepts.
+- **Awareness Raising**: Campaigns to promote awareness of gender issues.
+- **Policy Advocacy**: Engaging with local authorities to advocate for gender-inclusive policies.
+
+### Timeline
+The action plan is structured according to the following timeline:
+- **Short-term**: Within 6 months
+- **Medium-term**: Within 1 year
+- **Long-term**: Within 3 years
+
+## Annex 4: Gender Monitoring and Evaluation Framework
+
+### Indicators
+Key indicators for monitoring gender progress include:
+
+| Indicator | Description |
+|----------|-------------|
+| Women's participation in decision-making | Percentage of women involved in local governance structures. |
+| Access to resources | Proportion of women who have access to financial resources. |
+| Gender-based violence | Number of reported cases of gender-based violence. |
+
+### Monitoring Frequency
+- **Monthly**: Regular monitoring of key indicators.
+- **Quarterly**: Comprehensive review of progress.
+- **Annually**: Full evaluation of project outcomes.
+
+### Reporting Mechanism
+Reports are submitted to:
+- Project management team
+- Gender focal point
+- External stakeholders
+
+## Annex 5: Gender Capacity Building Activities
+
+### Training Modules
+Training modules include:
+
+1. **Gender Mainstreaming**
+   - Understanding the concept of gender mainstreaming.
+   - Integrating gender considerations into project design.
+
+2. **Gender Analysis**
+   - Conducting gender analysis in project contexts.
+   - Identifying gender gaps and opportunities.
+
+3. **Gender Tools**
+   - Using tools for gender assessment and monitoring.
+   - Applying practical techniques for gender-sensitive programming.
+
+### Target Audience
+Training is directed toward:
+- Project staff
+- Community leaders
+- Beneficiaries
+
+### Duration
+The training duration varies depending on the module:
+- **Short-term**: 2 days
+- **Medium-term**: 5 days
+- **Long-term**: 10 days
+
+## Annex 6: Gender Integration in Project Activities
+
+### Integration Points
+Gender integration occurs at various points within project activities:
+
+1. **Project Design**
+   - Incorporating gender considerations into project objectives.
+   - Ensuring that gender analysis informs project design.
+
+2. **Implementation**
+   - Monitoring gender-related activities during implementation.
+   - Adjusting strategies based on gender feedback.
+
+3. **Monitoring and Evaluation**
+   - Evaluating the impact of gender interventions.
+   - Reporting on gender outcomes.
+
+### Best Practices
+- **Inclusive participation**: Ensuring that both men and women are involved in project activities.
+- **Gender-sensitive approach**: Using methods that respect gender differences and promote equality.
+- **Continuous learning**: Updating strategies based on lessons learned from gender interventions.
+
+## Annex 7: Gender Data Analysis
+
+
+---
+*Chunk pages 139–139*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=656 (sys=94, user=562), max_out=1024, ctx=8192
+---
+
+# Annex I: References
+
+- Abuld-Aziz Seidu et al, 2020. Barriers to accessing healthcare among women in Ghana; a multilevel modelling.
+- Action Aid Baseline Report on Transformative Action for Gender Equity (TAGE).
+- Alliance for financial Inclusion, 2023.
+- Bank of Ghana, Annual Report 2021 available at [https://www.og.gov.gh/wp-content/uploads/2022/06/AnnRep-2021.pdf](https://www.og.gov.gh/wp-content/uploads/2022/06/AnnRep-2021.pdf)
+- Bank of Ghana, Sustainable Banking Principles and Sector Guidance Note (2019).
+- Climate Change Policy.
+- Coordinated Programme of Economic and Social Development Policies (2017-2024).
+- Digital Financial Services Policy (2020-2023)
+- Doris Sasu, 2023.
+- Energia (2019).
+- Energy Sector Strategy and Development Plan, 2020.
+- Environment Protection Agency Gender policy.
+- Energy Commission, 2019
+- Eric Anthony Vurinye, Kavaarpuo and Paul Yaw Addai Yeboah. International Journal for Multidisciplinary Research (IJFMR) E-ISSN: 2582-2160. Volume 5, Issue 3, May-June 2023,  
+- Funding Project Proposal: Accelerating Solar Action Program.
+- Gender Assessment and Gender Action Plan Report (ASAP Ghana, by Jose M. Cabral).
+- Gender Development Index Report
+- GCF Project Preparation Facility, Technical Proposal
+- Ghana Energy Sector Strategy and Development, 2010.    
+- Ghana Enterprise Agency Act, 2020
+- Ghana Enterprise Agency, website.  
+- Ghana National Gender Policy (2015).
+- Ghana National Gender Policy (2015)
+- Ghana National Financial Inclusion and Development Strategy (2018-2023).
+- Ghana's Updated Nationally Determined Contribution (2021 to 2023).
+- The Ghana Renewable Energy Master Plan (REMP)
+- Ghana 2022 Voluntary National Review Report.
+- Ghana-2022 Human Rights Report.
+- Green Climate Fund Gender Policy, 2019
+- Global Findex, 2021.
+- Government of Ghana, 2021 
+- Ghana Living Standard Survey (GLSS) Round Seven
+- Gender and Agriculture Development Strategy II (Ministry of Food and Agriculture).
+- [https://data.unicef.org/country/gha/](https://data.unicef.org/country/gha/)
+- [https://ecobank.com](https://ecobank.com)
+
+
+---
+*Chunk pages 140–140*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=393 (sys=94, user=299), max_out=1024, ctx=8192
+---
+
+# ECOBANK Ghana – ASAP – Gender Assessment – September 2023
+
+## Page 37 of 42
+
+### Low Carbon Development Strategy
+
+Mensah-Kutin (2018). In-Depth Gender Analyses for the Nationally Determined Contributions Process in Ghana.
+
+### National Action Plan on Policy for Gender Mainstreaming in Energy Access for the Republic of Ghana
+
+### National Adaptation Plan (NAP) Republic of Ghana, 2020
+
+### National Climate Change Policy Implementation Status Report
+
+### National Energy Policy, 2010
+
+### National Environment Policy
+
+### National Financial Inclusion Strategy
+
+### National Irrigation Policy, Strategies and Regulatory Measures (MoFA, 2011)
+
+### National Micro, Small and Medium Enterprises (MSME) Policy, 2019
+
+### Public Private Partnership Act 2020 (Act 1039)
+
+### Population and Housing Census (2021)
+
+### Renewable Energy Master Plan, 2019
+
+### Request for Project Development Technical Assistance (Annex 1)
+
+### Schiffer, A., and Nkpeebo Yesutanbul, A., (2021) Energy Access and Gender in Ghana: Policy Brief
+
+### Cambridge: Global Sustainability Institute
+
+### Strategic National Energy Plan
+
+### World Bank, 2021, Global Findex database
+
+
+---
+*Chunk pages 141–141*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=620 (sys=94, user=526), max_out=1024, ctx=8192
+---
+
+# Annex II: Referential list of respondents
+
+| Institution Name and Position | Email/Contact Number |
+|-------------------------------|----------------------|
+| Ecobank<br>Dr. Loretta Sarpong<br>Commercial Banking-Elevate Desk | lsarpong@ecobank.com<br>0244460233 |
+| Ecobank<br>Senior Legal Officer<br>Mr. Frank Osei-Nkrumah | FOSEI-NKRUMAH@ecobank.com<br>0246827298 |
+| Ecobank<br>Madam Sandra Ababio | 0508113110 |
+| Ecobank<br>Mrs Kelda Ocansey<br>Account Manager<br>Commercial Banking | kofedie@ecobank.com<br>0245353861 |
+| Energy Commission<br>Mr. Ebenezer Ashie<br>Project Coordinator, SUNREF/Green Projects Financing | eashie@energycom.gov.gh<br>0504627401 |
+| Ministry Of Energy<br>Ing. Seth Mahu<br>Deputy Director, Renewable Energy | seth.mahu@energymin.gov.gh<br>0244209710/0268209710 |
+| Ministry Of Finance<br>Mr. Robert Mensah<br>Senior Budget Officer | info@mofep.gov.gh<br romensah@mofeb.gov.gh<br>0302747197 |
+| Ministry Of Food & Agriculture<br>Dr. Kingsley Amoako<br>Director<br>Directorate of Crop Services | 0244599596<br>kingkwaw@yahoo.com |
+| Ministry Of Land And Natural Resources<br>Mr Daniel Nsowah<br>Assistant Director 1, Forestry | danielnsowah@yahoo.com<br>0242836505 |
+| Ministry Of Land And Natural Resources<br>Mrs Rahmat Tahiru<br>Assistant Director 1, Forestry<br>Gender Focal Person | rahmattahiru@gmail.com<br>0244949542 |
+| Ministry Of Gender, Children And Social Protection<br>Mrs Sabia Kpekata<br>Principal Programme Officer | skpekata@ahoo.co.uk<br>02448618918 |
+| Ghana Irrigation Development Authority<br>Ing. Mavis Baah Acheamfour | maysamabakah@gmail.com<br maydear77@yahoo.com |
+| Environment Protection Agency<br>Mrs Juliana Boateng<br>Principal Programme Officer | Juliabb21@yahoo.com<br>0204051616 |
+
+[Page 141]
+
+
+---
+*Chunk pages 142–142*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=649 (sys=94, user=555), max_out=1024, ctx=8192
+---
+
+# ECOBANK Ghana – ASAP – Gender Assessment – September 2023
+
+## Page 39 of 42
+
+### INSTITUTION NAME AND POSITION EMAIL/CONTACT NUMBER
+
+#### Women Organizations In The Land Sector:
+
+| Name | Position | Email | Contact Number |
+|------|----------|-------|----------------|
+| Colandef | Madam Nana Ama Yirrah | Executive Director | nana.ama@colandef.org |
+|  |  |  | 025663004/0208139887 |
+
+#### Ghana Renewable Energy Association:
+
+| Name | Position | Email | Contact Number |
+|------|----------|-------|----------------|
+| Mr Enoch Agyepong | Program Coordinator | eyagyepong@gmail.com | 0244981590 |
+
+#### Solar Rooftop Programme:
+
+| Name | Position | Email | Contact Number |
+|------|----------|-------|----------------|
+| Green People’s Energy Project | Mr. Frank Odarquaye Lamptey | Technical Advisor | odarquaye@outlook.com |
+|  |  |  | 0249521779 |
+
+#### Energizing Development Programme, Giz:
+
+| Name | Position | Email | Contact Number |
+|------|----------|-------|----------------|
+| Mr. Samuel Ametefe Adooe | Component Leader | ametefe.adoboe@gmail.com | 0208151132 |
+
+#### Sustainable Energy For All Initiative:
+
+| Name | Position | Email | Contact Number |
+|------|----------|-------|----------------|
+| Madam Paula Eze | Former Coordinator | Manager, Renewable Energy Regulation | pedze@energycom.gov.gh |
+|  |  |  | 0265676250/0244487403 |
+
+#### Sustainable Use Of Natural Resource And Energy Finance (Sunref) Programme:
+
+| Name | Position | Email | Contact Number |
+|------|----------|-------|----------------|
+| Mr Eben Ashie | Former Coordinator |  | 0265179872/0557349004 |
+
+#### Millennium City Estate, Central Region:
+
+| Name | Position | Email | Contact Number |
+|------|----------|-------|----------------|
+| Mr Fred Darko Effah |  | effahfred@outlook.com | 0206032211 |
+
+#### Millennium City Estate, Central Region:
+
+| Name | Position | Email | Contact Number |
+|------|----------|-------|----------------|
+| Mr Stephen Kotah |  | skoth12@gmail.com | 0245861969 |
+
+#### Millennium City Estate, Central Region:
+
+| Name | Position | Email | Contact Number |
+|------|----------|-------|----------------|
+| Mr Koomson |  |  |  |
+
+#### Millennium City Estate, Central Region:
+
+| Name | Position | Email | Contact Number |
+|------|----------|-------|----------------|
+| Mr Gyamera |  |  |  |
+
+#### Millennium City Estate, Central Region:
+
+| Name | Position | Email | Contact Number |
+|------|----------|-------|----------------|
+| Madam Rosemond Morrison |  | rosemondquarm2@gmail.com | 0541345226 |
+
+#### Millennium City Estate, Central Region:
+
+| Name | Position | Email | Contact Number |
+|------|----------|-------|----------------|
+| Madam Pamela Jackson |  | akuallotey@gmail.com | 0240914861 |
+
+#### Millennium City Estate, Central Region:
+
+| Name | Position | Email | Contact Number |
+|------|----------|-------|----------------|
+| Madam Sabina solace5y@gmail.com |  |  | 0248444170 |
+
+#### Millennium City Estate, Central Region:
+
+| Name | Position | Email | Contact Number |
+|------|----------|-------|----------------|
+| Madam Solace Datoah |  | Solace5y@gmail.com | 0248444170 |
+
+#### Millennium City Estate, Central Region:
+
+| Name | Position | Email | Contact Number |
+|------|----------|-------|----------------|
+| Madam Sabina Kirk-Mensah |  | mmcbusy@gmail.com | 0555584511 |
+
+#### Rehoboth Estate:
+
+| Name | Position | Email | Contact Number |
+|------|----------|-------|----------------|
+| Mr Winfred King |  | winfredking@yahoo.com |  |
+
+--- 
+
+**Note:** The original page number is preserved as per the rules.
+
+
+---
+*Chunk pages 143–143*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=672 (sys=94, user=578), max_out=1024, ctx=8192
+---
+
+# ECOBANK Ghana – ASAP – Gender Assessment – September 2023
+
+## Page 40 of 42
+
+### Institution Name and Position Email/Contact Number
+
+| Institution Name | Region | Contact Number |
+|------------------|--------|----------------|
+| Rehoboth Estate | Greater Accra Region | 0505255121 |
+| Rehoboth Estate | Greater Accra Region | 0243720773 |
+| Rehoboth Estate | Greater Accra Region | 0249648791 |
+| Rehoboth Estate | Greater Accra Region | 0244727309 |
+| Rehoboth Estate | Greater Accra Region | 0243217736 |
+| Rehoboth Estate | Greater Accra Region | 0240914861 |
+| Yong Dakpem Yili | Northern Region | 0240993486 |
+| Jisonayili Area | Northern Region | 0541150172 |
+| Dungu-Sawaba | Northern Region | 0243520484 |
+| Fuo Estate | Northern Region | 0245748205 |
+| South Kpalsi, Northern Region | 0242201871/0203966520 |
+| Nyanshegn North Area | Target Area | 0244250772 |
+| Sakasaka, Northern Region | 0246414341 |
+| Snnit Flat Area | Northern Region | 0248679286 |
+| Fuo Estate | Northern Region | 0248725270 |
+| Beifkrom Irrigation Wua, Mankesim, Central Region (Male Fdg) | 0241334819 |
+| Beifkrom Irrigation Wua, Mankesim, Central Region (Female Fdg) | 0541117582 |
+
+--- 
+
+Note: The original text appears to be a list of institutions and their contact information, with some entries being names and others being email addresses or phone numbers. The formatting has been preserved as much as possible while converting to Markdown tables.
+
+
+---
+*Chunk pages 144–144*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=484 (sys=94, user=390), max_out=1024, ctx=8192
+---
+
+# ECOBANK Ghana – ASAP – Gender Assessment – September 2023
+
+## Page 41 of 42
+
+### INSTITUTION NAME AND POSITION EMAIL/CONTACT NUMBER
+
+| Institution Name | Position | Gender | Email | Contact Number |
+|------------------|----------|--------|-------|----------------|
+| Blue Garden Estate Vegetable Farmer Group, Central Region | Mr. Aziz | Male & Female Fdg | Wug | 0532521263 |
+| Blue Garden Estate Vegetable Farmer Group, Central Region | Mr Alhaji | Male Fdg | Group Leader | 0245348353 |
+| Obrapa Vegatables And Mango Farmers Association, Central Region | Mr Felix Banini | Male Fdg |  | 0245668580 |
+| Obrapa Vegatables And Mango Farmers Association, Central Region | Madam Ernest Essuman | Female Fdg |  | 0599323083 |
+| Tibom’yam Cooperative, Northern Region | Mr Nasam Karim | Male Fdg |  | 0247621708 |
+| Gbib’katimali Cooperative, Northern Region | Madam Amina Yahaya | Female Fdg |  | 0541085466 |
+| Gbib’katimali Cooperative, Northern Region | Mr Fusheini Alhassan | Male Fgd |  | 0248583725 |
+| Dzowulo Vegetable Growers Association, Greater Accra Region | Mr Abdul Karim Salifu | Male Fdg |  | 0546576297 |
+| Dzowulo Vegetable Growers Association, Greater Accra Region | Madam Mary Kuma | Female Fdg |  | 0277249052 |
+| Bissa Farmers Association, Greater Accra Region | Mr Ahmed Mohammed | Male Fdg |  | 02437338161 |
+
+Note: The original page number is preserved as "Page 41 of 42".
+
+
+---
+*Chunk pages 145–145*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=489 (sys=94, user=395), max_out=1024, ctx=8192
+---
+
+# ECOBANK Ghana – ASAP – Gender Assessment – September 2023
+
+## Page 42 of 42
+
+### INSTITUTION NAME AND POSITION EMAIL/CONTACT NUMBER
+
+| Institution Name | Position | Email | Contact Number |
+|------------------|----------|-------|----------------|
+| Bissa Farmers Association, Greater Accra Region | Female Fdg | Mr Ahmed Mohammed | 02437338161 |
+| Biney Chemical Ltd | Factory Manager | Mr Emmanuel Awotwi | e.awotwi68@gmail.com |
+| 0543689291 |  |  |  |
+| Dalutech Alluminuim Systems | Manager | Mr Maxwel Nyarkor | 024422465 |
+| Cole Pharmarcy, Clinic And Laboratory | Business Owner | Mr Cole | 0544043764 |
+| God Is Able Cold Store Enterprise | Madam Obogyan | - | - |
+| Oppong Cold Store | Madam Oppong | - | - |
+| Miller | Madam Nyaba Manikani | 0533233023 |  |
+| Socodem | Madam D. Ngelika | - | - |
+| Best Solar Enterprise | Mr Abdul Wahab | bestsolar81@gmailcom | 024582387 |
+| Oceanic Cold Store | Mr Umar Abdul Salam | oceaniccoldstore30@gmail.com | 0244582387 |
+| Hajia Rash Laundry Services | Madam Rashida Wumpini | 05993813138 |  |
+| Choggu Hill Top | Mr. Mahama Alhassan | mahamalhassan2017@gmail.com |  |
+| Sahanaa Enterprise | Mr Mohammed Yakubu | 0246969162 |  |
+| Mukay Metals | Mr. Emmanuel Tetteh | O247474174 |  |
+| N’yaba Manikani | Madam Rukaya Seidu | 05332333023 |  |
+| Magi Enterprise | Madam Margaret Amponsah Kakam | 02487255270 |  |
+
+---
+
+
+---
+*Chunk pages 146–146*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=172 (sys=94, user=78), max_out=1024, ctx=8192
+---
+
+# Gender Action Plan
+
+## September 2023
+
+---
+
+[Page 1]  
+ACCELERATING SOLAR ACTION PROGRAMME, GHANA (ASAP GHANA)
+
+---
+
+This is a placeholder for the actual content of the Gender Action Plan document. The provided text appears to be a title page or cover page with no substantial content to convert into Markdown.
+
+If you have more pages or content to convert, please provide them so I can generate the full Markdown output.
+
+
+---
+*Chunk pages 147–147*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=425 (sys=94, user=331), max_out=1024, ctx=8192
+---
+
+# Ecobank Ghana – ASAP – Gender Action Plan
+
+## Page 2 of 27
+
+### Contents
+
+#### ACRONYMS
+................................ ................................ ................................ ................................ ............ 3  
+
+#### 1 Introduction
+................................ ................................ ................................ ................................ .... 4  
+
+#### 2 Gender Action Plan matrix
+................................ ................................ ................................ .............. 5  
+
+#### 3 Notes
+................................ ................................ ................................ ................................ ............ 27  
+
+---
+
+## PPF Contract References
+
+- **Contract:** GCF Project Preparation Facility – Technical Assistance  
+- **LTA:** LTA GCF 2020/020 of 29 July 2020  
+- **Project Title:** ACCELERATING SOLAR ACTION PROGRAMME  
+- **Country(ies):** Ghana  
+- **Requested by:** Ecobank Ghana Plc  
+- **SOW date:** September 2022  
+
+---
+
+## Report References
+
+- **Gender Expert:** Dr. Hannah Nyamekye  
+- **AGRER QA:**  
+  - Irene Lobo Moltó  
+  - Elena Ferreras  
+- **AGRER QC:** Giuseppe Daconto  
+- **Report version:** ASAP GAP 2023 09 18 (Final)  
+
+---
+
+## Document control
+
+- **11-09-23:** Final draft submitted to Ecobank  
+- **17-09-23:** Comments received from Ecobank  
+- **18-09-23:** Revised and submitted to Ecobank  
+- **15-11-23:** Received comments from GCF Secretariat  
+- **27-11-23:** Revised and submitted to Ecobank  
+- **25-01-24:** Revised to include reference to inception phase – submitted to Ecobank  
+
+---
+
+
+---
+*Chunk pages 148–148*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=272 (sys=94, user=178), max_out=1024, ctx=8192
+---
+
+# ACRONYMS
+
+- AE: Accredited Entity  
+- ASAP: Accelerating Solar Action Programme in Ghana  
+- EC: Energy Commission  
+- EPA: Environmental Protection Agency  
+- GAP: Gender Action Plan  
+- GBV: Gender Based Violence  
+- GM: Grievance Mechanism  
+- GCF: Green Climate Fund  
+- GHG: Green House Gas  
+- MSME: Micro Small Medium Enterprises  
+- PwD: Persons living with Disability  
+- PV: Photovoltaics  
+- REAG: Renewable Energy Association of Ghana  
+- SEA/SH: Sexual Exploitation and Abuse/Sexual Harassment  
+- SHS: Solar Home Systems  
+- ToR: Terms of Reference  
+- WUA: Water User Association  
+
+[Page 1]
+
+
+---
+*Chunk pages 149–149*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=873 (sys=94, user=779), max_out=1024, ctx=8192
+---
+
+# Ecobank Ghana – ASAP – Gender Action Plan
+
+## Page 4 of 27
+
+### 1 Introduction
+
+This document presents the Gender Action Plan (GAP) for the Accelerating Solar Action Programme (ASAP). The GAP is informed by the Gender assessment study carried out from May to July 2023 to assess the baseline conditions of the sector and intervention.
+
+This gender action plan provides a strategic approach to how gender equality and social inclusion issues identified from the gender assessment will be addressed within ASAP. The action plan presents the targets of the plan; actions to address identified gender inequalities and vulnerabilities; GAP implementation mechanism and monitoring and evaluation aspects of the programme.
+
+The GAP is aligned with the result matrix of the ASAP programme and proposes a set of indicators to monitor the progress towards the enactment of effective gender and inclusion safeguards.
+
+This GAP is focused on women considering their disadvantaged position. In certain elements of the plan, the targets are identified with reference to women, underserved households, female owned MSMEs and female WUA members. Intersectionality categories such as race, class, income, education, age, ability, sexual orientation, ethnicity, indigeneity, and geography were taken into consideration in the development of the GAP.
+
+The figure below summarizes the structure of the GAP and its main expected outcomes.
+
+> Note: Gender portfolio targets shall be determined during the inception phase and included in a revised GAP to be submitted to the Secretariat.
+
+#### GAP Outcome 1: Increase the accessibility of funds to single women-led and underserved households and women and underserved groups-owned or women and underserved groups focused eligible MSMEs in renewable energy businesses
+
+- **Subcomponent 1.1:** Increase accessibility of funds to single women headed households and other underserved households.
+- **Subcomponent 1.2:** Increased accessibility of funds to women led and women focused MSMEs and underserved groups led and focused MSMEs (Including WUAs).
+
+#### Component 1: Deployment of Solar PV Loans
+
+#### GAP Outcome 2: Gender mainstreaming in capacity building for Ecobank officers, EC, EPA, MoFA-GIDA irrigation scheme managers staff to ensure equitable and sustainability of the program.
+
+- **Subcomponent 2.1:** Training of Ecobank loan desk officers assigned to the program to support the full implementation of all components of the program, from program development to program implementation and monitoring. It is important that officers are well versed and knowledgeable about loan origination for Solar Rooftop PV investments (capital budgeting, energy audit, production efficiency evaluation etc.), loan appraisal using credit, gender and climate screens and can provide advisory support to the target borrowers for reducing default risks.
+- **Sub-component 2.2:** Training of solar PV vendors on the ASAP Ghana Program
+- **Sub-component 2.3:** Training for the Energy Commission Officers on ASAP Ghana Program.
+- **Sub-component 2.4:** Capacity assessment and certification of Solar PV Vendors on ASAP Ghana Program
+
+#### Component 2: Development of Institutional Capacity
+
+#### GAP Outcome 3: Increased awareness on access to clean energy and gender.
+
+- **Subcomponent 3.1:** Raising greater awareness concerning ASAP for potential replication and upscaling within Ghana through media communication and events.
+- **Subcomponent 3.2:** Inclusive stakeholders' engagement and advocacy to build support
+
+#### Component 3: Advocacy and Outputs Dissemination
+
+### 4. Crosscutting measures
+
+---
+
+
+---
+*Chunk pages 150–150*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=455 (sys=94, user=361), max_out=1024, ctx=8192
+---
+
+# Page 5 of 27
+
+## 2 Gender Action Plan matrix
+
+Gender transformative actions integrated in the Programme activities under the ASAP components.
+
+### Impact statement (of the program):
+Catalyze the increased share of distributed PV generation in the Ghanaian market, by addressing chronic financial, and technical barriers through concessional loans, access to business services, capacity building, and increased awareness of the benefits of PV systems.
+
+### Outcome statements (of the program):
+
+#### Component 1: Deployment of Solar PV Loans
+Outcome 1: Increased number of loans at attractive rates deployed equitably to households, MSMEs, and irrigation cooperatives (WUAs) to obtain and lower the cost of energy and streamline solar PV.
+
+#### Component 2: Development of Institutional Capacity
+Outcome 2: Institutional capacity framework established to ensure equity in project implementation and sustainability of the program at bank and ASAP implementing institutions, and for MSMEs (including WUAs) and the solar PV value chain.
+
+#### Component 3: Advocacy and Outputs Dissemination
+Outcome 3: Increased awareness of equitable benefits of solar PV projects across target markets.
+
+### Activities Indicators Timelines Responsibilities Cost  
+USD
+
+#### Component 1: Deployment of Solar PV Loans
+
+GAP outcome 1: Increase the accessibility of funds to single women-led and underserved households, women-owned and underserved eligible MSMEs in renewable energy businesses and WUAs.
+
+##### Subcomponent 1.1.: Increase accessibility of funds to single women headed households and other underserved households
+
+
+---
+*Chunk pages 151–151*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=730 (sys=94, user=636), max_out=1024, ctx=8192
+---
+
+# [Page 1]
+
+## Activities Indicators Timelines Responsibilities Cost  
+USD  
+
+### A.1.1.1. Development of wider eligibility criteria and dedicated financial products and services, if and as needed, to serve comprehensively single women-led eligible households and other underserved eligible households (elderly, low income, persons with disabilities, migrants, others)
+
+- *Revised eligibility criteria considering identified inequalities and intersectionality. (E.g. income levels; employment sectors formal & informal; electricity consumption levels, etc.)
+- *Adapted financial packages to different segments of women and underserved groups that meets their needs. (E.g. payment terms, interest rate, types of collateral, repayment duration, etc.).
+
+**1st quarter, 2024**
+
+ASAP staff (including Ecobank officers assigned to the program) + Gender Unit (Gender expert (to lead the UNIT), one representative of Ecobank (gender focal point and/or Ellevate programme desk), plus one representative of women led MSMEs or relevant women association, and others to be determined such as representative Energy Commission & Ghana Standards Authority (gender focal point) and PV vendors), Gender Mainstreaming committee, gender working group representatives, GM focal points etc.
+
+Part of ASAP operational cost.
+
+### A.1.1.2. Identifying single women-led eligible households and other underserved eligible households (elderly, low income, persons with disabilities, migrants, others) for Ecobank to deploy Solar PV Loans
+
+- *At least 50% of beneficiary households are headed by women or underserved groups (elderly, low income, persons with disabilities, migrants, others)
+- *Loan approval rates for women compared to men applicants (Target=30)
+
+**2nd quarter, 2024**
+
+Part of ASAP operational cost.
+
+> **Note:**  
+> 1 Based on recommendation #5 included in the Gender Assessment Draft July 2023: “Considering that there are different categories of PAPs (male and female-headed households, male and female own MSMEs, and WUAs to be engaged by the ASAP, it is important for the programme team to come up with loan packages that would suit each PAP complemented with favourable interest rates and payment terms taking into consideration their differential source of income and earnings and to accept monthly, weekly or six months payment”  
+> 2 In the project proposal (Section D, Footnote 79, page 30) it is mentioned: “In Ghana the largest percentage of households are headed by females. A 50% target is hence considered reasonable”.
+
+
+---
+*Chunk pages 152–152*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=377 (sys=94, user=283), max_out=1024, ctx=8192
+---
+
+# [Page 1]
+
+Page 7 of 27
+
+| Activities | Indicators | Timelines | Responsibilities | Cost |
+|-----------|------------|-----------|------------------|------|
+| *Loan approval rates for applicants from underserved eligible households (elderly, low income, persons with disabilities, migrants, others) | *Average loan amounts approved for Solar PV projects that are led by women | *Average loan amounts for solar PV projects for underserved households | *Loan terms and conditions (interest rates, repayment period, collateral requirements adapted for both male and female borrowers | * Loan terms and conditions (interest rates, repayment periods, collateral requirements) are equitable and adapted for underserved households (including elderly, low income, persons with disabilities, migrants, others) |
+| *Customer satisfaction of male and female borrowers | | | | |
+
+ASAP staff (including Ecobank officers assigned to the program) + Gender Unit & Associations (Residential Association)
+
+ASAP staff (including Ecobank officers assigned to the program + Gender Unit
+
+ASAP staff (including Ecobank officers assigned to the program + Gender Unit
+
+
+---
+*Chunk pages 153–153*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=554 (sys=94, user=460), max_out=1024, ctx=8192
+---
+
+# A.1.1.3. Engage women’s groups and other associations in which women participate for extension efforts, including Residential Associations
+
+*Number of women-headed households participating in ASAP through ASAP engagement with women’s groups and associations (E.g., Residential associations).
+
+**3rd quarter, 2024**
+
+Part of ASAP operational cost.
+
+# A.1.1.4. Training, sensitize and support for women on how to apply for solar PV loans and on solar energy operations
+
+*Number of women-headed households applying and participating in the ASAP programme through sensitization and training.
+
+*Number of women with low level of education supported to apply for the ASAP solar PV loan.
+
+*Number of women participating in the training on how to operate installed solar PV panels and accessories.
+
+**3rd quarter, 2024**
+
+Part of ASAP operational cost.
+
+---
+
+Based on recommendations 10 & 11 included in the Gender Assessment Draft July 2023:
+
+- To reach out to more women PAPs, The bank should collaborate with the residential homeowner's associations to target more female-headed households and to ensure they member pay back their loans.  
+- The ASAP programme should work with existing WUAs that are registered and have both women, men, youth, aged and PLWD members rather than establishing new groups to ensure sustainability. It is further recommended that the programme should engage with registered WUAs working with government and co-owned government and communal irrigation schemes as they tend to have more secured land access by both genders.
+
+[Page 1]
+
+
+---
+*Chunk pages 154–154*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=526 (sys=94, user=432), max_out=1024, ctx=8192
+---
+
+# Page 154
+
+## Activities Indicators Timelines Responsibilities Cost  
+USD  
+
+PV systems and routine maintenance.  
+*Number of women-households receiving maintenance services from solar PV vendors.  
+*Customer satisfaction of male and female participants  
+
+### Subcomponent 1.2. Increased accessibility of funds to women led and women focused MSMEs and underserved groups and focused MSMEs (including WUAs) for solar PV installation.  
+
+#### A.1.2.1. Development of wider eligibility criteria and dedicated financial products and business services, if and as needed, to serve more comprehensively women or underserved groups led or focused women owned MSMEs and farmer cooperatives (WUAs).  
+
+*Adapted eligibility criteria: electricity consumption requirement for women as an eligibility criterion from 800GHS and above to 500GHS and above; formal (cooperatives, associations, etc.) and semi-formal women groups.  
+
+1st quarter, 2024  
+ASAP staff (included Ecobank officers assigned to the program + Gender Unit formed by Gender expert  
+
+Part of ASAP operational cost.  
+
+4 Eligibility criteria could take into account as a reference the Ecobank’s Ellevate program criteria, designed for businesses owned by women, managed by women, businesses with a high percentage of female board members or employees and companies manufacturing products for women, allows companies that have either 51% or more female ownership, are founded by a woman, have 20-30% share of women in senior management or 30% share of women on the board, have 30-50% of women in the workforce, or produce a product or service specifically targeted at women.  
+
+https://www.ecobank.com/gh/commercial-banking/ellevate.
+
+
+---
+*Chunk pages 155–155*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=246 (sys=94, user=152), max_out=1024, ctx=8192
+---
+
+# Page 10 of 27
+
+## Activities Indicators Timelines Responsibilities Cost  
+USD  
+
+*Adapted financial loan packages to different segments of women owned MSMEs and female farmer irrigation cooperatives (WUAs) that meets their needs (E.g., payment terms, interest rate, types of collateral, repayment duration, etc.)  
+
+* Customer satisfaction of women-owned MSMEs and female-led WUAS.  
+
+ASAP staff (including Ecobank officers assigned to the project)
+
+
+---
+*Chunk pages 156–156*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=543 (sys=94, user=449), max_out=1024, ctx=8192
+---
+
+# Page 11 of 27
+
+## Activities Indicators Timelines Responsibilities Cost  
+USD  
+
+### A.1.2.2. Identifying women owned and underserved groups of eligible MSMEs and WUAs for Ecobank to deploy Solar PV Loans  
+
+- *At least, 25% of beneficiary MSMEs are women and underserved groups -led and/or focused MSMEs. Of this 25%, at least 70% are women led or focused MSMEs.*  
+- *Number of irrigation cooperatives (WUAs) with women membership and women in leadership positions identified and enrolled in ASAP.*  
+
+**1st quarter, 2024**  
+
+- Program + Gender Unit (formed by Gender expert  
+- ASAP staff (including Ecobank officers assigned to the program) + Gender Unit  
+- Part of ASAP operational cost  
+
+### A.1.2.3. Training, sensitize and support women-led and women focused MSMEs and underserved groups, MSMEs, Solar PV vendors (including WUAs) to enrol. (Providing adequate Information on the programme, terms, and conditions of the loan; requirements to participate in the programme, interest rate on the loans and payment period; cost of the solar PV panels and accessories, maintenance cost of the system).  
+
+- *Number of women and underserved groups, MSMEs and members of WUAs*  
+- *Number of women- owned and underserved groups MSMEs supported to build their leadership and networking.*  
+- *Number of women and underserved groups (MSMEs and WUAs) with low level of education supported to apply and enrol on the ASAP programme.*  
+- *Number of women beneficiaries (MSMEs*  
+
+**Starting 2nd quarter, 2024**  
+
+- 70,000 USD  
+
+--- 
+
+Note: The text appears to be incomplete or fragmented. Some content may have been cut off during extraction.
+
+
+---
+*Chunk pages 157–157*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=451 (sys=94, user=357), max_out=1024, ctx=8192
+---
+
+# Page 12 of 27
+
+## Activities Indicators Timelines Responsibilities Cost
+
+| Activity | Indicator | Timeline | Responsibility | Cost |
+|---------|-----------|----------|----------------|------|
+| Participating in the training on how to use the installed solar PV and simple maintenance routine | *Number of women beneficiary MSMEs and WUA members reporting: i. reduction in production cost. ii. increased business profit to facilitate repayment of loans. iii. reduced drudgery in operating irrigation pumps (women irrigation farmers). | MSMEs, Solar PV vendors, and WUAs | | |
+| Business advisory services, leadership training and networking to MSMEs for their sustainability, growth and creation of value adapted to each type of MSMEs and WUAs | *Number of women owned MSMEs, members of WUAs provided with Elevate BDS services, Leadership training, and networking opportunities. *Number of women owned MSMEs and female farmer irrigation cooperatives (WUAs) reporting enhanced business skills; businesses growth; increased incomes. | 1st quarter, 2025 | To be determined by Ecobank Elevate Desk | |
+|  |  |  |  |  |
+
+> [!NOTE]  
+> i.e., https://www.ecobank.com/ellevate-bootcamp could be used as a reference.
+
+--- 
+
+*Note: The original page number is preserved.*
+
+
+---
+*Chunk pages 158–158*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=603 (sys=94, user=509), max_out=1024, ctx=8192
+---
+
+# Page 13 of 27
+
+## Activities Indicators Timelines Responsibilities Cost  
+USD  
+
+*Number of women owned MSMEs and women farmers (WUA members) reporting putting in place sustainability measures for their businesses.  
+
+Ecobank Elevate Desk + MSMEs & WUAs.  
+
+## Component 2: Development of Institutional Capacity  
+
+### GAP outcome 2: Gender and inclusion capacity building for Ecobank officers, EC, EPA, MoFA-GIDA staff, to ensure equitable and sustainability of the program.  
+
+#### Subcomponent 2.1. Training of Ecobank loan desk officers assigned to the program and staff of other key implementing ASAP institutions to support the full implementation of all components of the program, from program development to program implementation, monitoring, and evaluation.  
+
+It is important that Ecobank officers are well versed and knowledgeable about loan origination for Solar Rooftop PV investments (capital budgeting, energy audit, production efficiency evaluation etc.), loan appraisal using credit, gender and climate screens and can provide advisory support to the target borrowers for reducing default risks.  
+
+### A.2.1.1. Gender and inclusion integration in the sensitization workshop for Ecobank Loan Officers in Ghana on the ASAP Program: the workshop will reserve a relevant part of the programme to expose the gender approach of the project, in particular the rationale (why and how) for the prioritisation of women-headed households, MSMEs, WUAs and other underserved groups, the targets to be achieved and the gender specific activities included in the GAP.  
+
+*Equitable participation with women (50%) in the workshop (ensuring both women and especially men participate in all the workshop, and men to be involved in the part of the programme dedicated to gender and inclusion)  
+
+*Number of total people trained on gender and inclusion (disaggregated, at least, by gender and age)  
+
+2nd quarter, 2024  
+
+ASAP staff (including Ecobank officers assigned to the program + Gender Unit (formed by Gender expert + ASAP staff + Ecobank officers))  
+
+40,000
+
+
+---
+*Chunk pages 159–159*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=508 (sys=94, user=414), max_out=1024, ctx=8192
+---
+
+# Page 14 of 27
+
+## Activities Indicators Timelines Responsibilities Cost
+
+| Activity | Indicator | Timeline | Responsibility | Cost (USD) |
+|---------|-----------|----------|----------------|------------|
+| A.2.1.2. Production of a training module on the gender aspects covered in the sensitization workshop so that it can be distributed to all new staff or staff who couldn't attend the workshop | *Number of gender and inclusion module reproduced/printed for distribution | 1st Quarter, 2024 | ASAP staff (including Ecobank officers assigned to the program + Gender Unit (formed by Gender expert + ASAP staff + Ecobank officers) | 80,000 |
+| A.2.1.3. Gender and inclusion capacity building for Ecobank Loan Officers | The gender approach will be included in the 5 workshops in a cross-cutting and specific way, so that the following topics will be addressed and data and information will be provided: Basic gender and inclusion concepts; financial exclusion and gender bias | 3rd Quarter, 2024 | ASAP staff (including Ecobank officers assigned to the program) + Gender Unit | 200,000 |
+
+*Number of gender and inclusion manual/module developed and printed for distribution to Ecobank loan staff (soft copies made available online).  
+*Total number of staff trained on ASAP gender and inclusion dis aggregated, at least by gender, age)  
+*Level of satisfaction of training participants dis aggregated by gender, age, etc)  
+
+--- 
+
+[Page 1]
+
+
+---
+*Chunk pages 160–160*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=522 (sys=94, user=428), max_out=1024, ctx=8192
+---
+
+# Page 15 of 27
+
+## Activities Indicators Timelines Responsibilities Cost
+
+### USD in credit access; energy poverty and gender; and addressing women and underserved groups’ specific needs in terms of access to clean energy for households; MSMEs and irrigation agriculture purposes; gender-based violence and all forms of abuse (Sexual, harassment) prevention and remediation.
+
+Finally, the training content will include how to integrate gender and inclusion in the ASAP programme cycle and further provide guidance on the implementation of the ASAP Gender Action Plan.
+
+### *Number of Ecobank loan newly recruited staff supplied with hard or soft copies of the gender and inclusion manual.
+
+### *Number of staff trained disaggregated at least by gender and age
+
+### *Number of Ecobank staff reporting changes in attitude, knowledge and behaviours after participating in the gender and inclusion capacity building through a series of surveys.
+
+### *Number of Ecobank loan staff reporting the utilization of the gender and inclusion knowledge gained for the implementation of the ASAP.
+
+(formed by Gender expert + ASAP staff + Ecobank officers)
+
+### ASAP staff (including Ecobank & selected staff from EPA and MoFA-GIDA.
+
+## A.2.1.4 Gender and inclusion capacity orientation for selected staff of ASAP government key supporting institutions. (EPA, MoFA-GIDA irrigation scheme staff to be engaged in ASAP implementation).
+
+### *Number of selected staff disaggregated at least by sex and age from key implementing institutions trained in gender and inclusion in the context of their role in ASAP implementation.
+
+### 3rd quarter, 2024.
+
+### 30,000
+
+
+---
+*Chunk pages 161–161*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=363 (sys=94, user=269), max_out=1024, ctx=8192
+---
+
+# Page 16 of 27
+
+## Activities Indicators Timelines Responsibilities Cost  
+USD  
+*Number of staff  
+(disaggregated at least by sex  
+and age) from ASAP key  
+implementing institutions  
+using the knowledge gained  
+from the gender orientation in  
+the implementation of the  
+ASAP programme.  
+*Number of staff from ASAP  
+disaggregated at least by sex  
+and age) key implementing  
+institutions reporting changes  
+in behaviour, attitudes and  
+knowledge on gender and  
+inclusion issues.  
+
+## A.2.1.4. Production of a training module on  
+the gender aspects covered in the workshops  
+so that it can be distributed to all new staff or  
+staff who couldn’t attend the workshop. This  
+module is left to do online (for new staff for  
+instance or as a refresher).  
+Number of Training modules  
+distributed. All new staff will  
+receive the gender modules  
+and will be encouraged to  
+undertake it.  
+
+3rd quarter 2024 Ecobank Gender unit 6,000  
+
+## Sub-component 2.2: Training of solar PV vendors on the ASAP Ghana Program
+
+
+---
+*Chunk pages 162–162*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=598 (sys=94, user=504), max_out=1024, ctx=8192
+---
+
+# A.2.2.1. Gender and inclusion capacity building for Solar PV vendors
+
+The 2 workshops will involve training and sensitising vendors on how to integrate gender and social inclusion considerations in the context of the ASAP programme implementation. The training content will encompass gender and inclusion concepts, promoting equity in wages and salaries of staff, gender violence and sexual harassment issues, organizational health issues, etc.
+
+*Number of solar PV vendors (at least 40% women) participating in the training.
+
+**3rd quarter, 2024**
+
+**Activities Indicators Timelines Responsibilities Cost**  
+**USD**
+
+| Activity | Indicator | Timeline | Responsibility | Cost |
+|----------|-----------|----------|----------------|------|
+| A.2.2.1. Gender and inclusion capacity building for Solar PV vendors | *Number of solar PV vendors (at least 40% women) participating in the training* | 3rd quarter, 2024 | ASAP staff (including Ecobank officers assigned to the program) + Gender Unit + REAG Secretariat & selected solar PV vendors | 50,000 |
+
+# A.2.2.2. A leaflet/brochure with all key relevant gender approaches will be produced as part of the information package for the vendors
+
+*Number of printed leaflets/brochures printed and distributed to solar PV vendors.
+
+**2nd quarter, 2024**
+
+| Activity | Indicator | Timeline | Responsibility | Cost |
+|----------|-----------|----------|----------------|------|
+| A.2.2.2. A leaflet/brochure with all key relevant gender approaches will be produced as part of the information package for the vendors | *Number of printed leaflets/brochures printed and distributed to solar PV vendors* | 2nd quarter, 2024 | ASAP staff (including Ecobank officers assigned to the program) + Gender Unit | 20,000 |
+
+# A.2.2.3. Gender mainstreaming in the procurement process of the solar PV training institutions to provide the services that will lead to the training program provided by sub-component 2.2
+
+The tender specifications will include a gender approach, specifically: teams with a high presence of women (including in supervisory and management roles) will be prioritised including gender expertise.
+
+*Gender perspective is fully integrated into the procurement process and tender specifications: teams with a high presence of women (including in supervisory and management roles) are prioritised.
+
+*Number of women who are members of the procurement board/members.
+
+**1st quarter, 2024**
+
+| Activity | Indicator | Timeline | Responsibility | Cost |
+|----------|-----------|----------|----------------|------|
+| A.2.2.3. Gender mainstreaming in the procurement process of the solar PV training institutions to provide the services that will lead to the training program provided by sub-component 2.2 | *Gender perspective is fully integrated into the procurement process and tender specifications: teams with a high presence of women (including in supervisory and management roles) are prioritised* | 1st quarter, 2024 | ASAP staff (including Ecobank officers assigned to the program) + Gender Unit (formed by Gender expert + ASAP staff + Procurement Team. Part of ASAP operational cost.) | 50,000 |
+
+--- 
+
+**Page 17 of 27**
+
+
+---
+*Chunk pages 163–163*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=664 (sys=94, user=570), max_out=1024, ctx=8192
+---
+
+# Page 18 of 27
+
+## Activities Indicators Timelines Responsibilities Cost  
+USD  
+
+### Sub-component 2.3: Training for the Energy Commission Officers on ASAP Ghana Program
+
+#### A.2.3.1. Gender mainstreaming in the Capacity Building Workshop for Energy Commission Engineers
+
+- **Training will include a special focus on how gender and inclusion issues can be integrated in inspection and assessment of solar PV systems address to address the needs of PAPs.**
+  - *Number of female EC engineers (at least 40%) participating in the capacity building workshop.*
+  - *Number of EC engineers disaggreated at least by sex and age reporting changes in attitude, behaviours related to gender and use of knowledge for their work after the training.*
+
+**3rd quarter, 2024**
+
+ASAP staff (including Ecobank officers assigned to the program) + Gender Unit (formed by Gender expert + EC Engineers)
+
+40,000
+
+#### A.2.3.2. Gender mainstreaming in the procurement process of the solar PV training institution to provide the services that will lead to the training program provided by sub-component 2.3.
+
+- **The tender specifications will include a gender approach. Specifically, teams with a high presence of women and gender expertise will be prioritised.**
+  - *A gender perspective is fully integrated into the procurements process and tender specifications: E.g., teams with a high presence of women and gender expertise will be prioritized.*
+  - *Number of women (at least two) as members of the procurement board/team.*
+
+**1st quarter, 2024**
+
+ASAP staff (including Ecobank officers assigned to the program) + Gender Unit + Procurement Unit
+
+Part of ASAP operational cost.
+
+### Sub-component 2.4: Capacity Assessment and Certification of Solar PV Vendors on ASAP Ghana Program
+
+#### A.2.4.1. Gender integration in the workshop for the capacity assessment and certification of Solar PV Vendors in Ghana to carry out installation and maintenance services:
+
+- **Equitable participation in the capacity assessment workshop (40% women participation).**
+
+**3rd quarter, 2024**
+
+ASAP staff (including Ecobank officers assigned to the program) + Gender Unit (formed by Gender expert + Energy Commission & Ghana
+
+Part of ASAP operational cost.
+
+
+---
+*Chunk pages 164–164*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=444 (sys=94, user=350), max_out=1024, ctx=8192
+---
+
+# Page 19 of 27
+
+## Activities Indicators Timelines Responsibilities Cost  
+USD
+
+*Number of women solar PV vendors certified to participate in the ASAP (50% of certified vendors) and signing program implementation agreements.
+
+*Number of solar PV vendors (by sex/gender) providing maintenance services for beneficiaries (50% women)
+
+Standards Authority + solar PV venders (REAG)
+
+ASAP staff (including Ecobank officers assigned to the program) + Gender Unit
+
+## A.2.4.2. The recruitment process of the 4 Consultants who will facilitate the capacity assessment and certification workshop includes a gender and inclusion approach: expertise on gender issues is required; teams with a high presence of women are prioritised.
+
+Eligibility criteria for Certification of Vendors include aspects related to the promotion of gender equality and non-discrimination.
+
+- women-owned and/or women-led enterprises
+- enterprises that promote workplace equity and diversity (in staffing, management, boardroom representation, and along their supply chains);
+
+*At least two of the four consultants are women.
+
+*At least 2 of 4 consultants possess proven expertise and experience on gender approach and mainstreaming to facilitate the activity using gender and inclusion approach.
+
+2nd quarter, 2024. Part of ASAP operational cost.
+
+
+---
+*Chunk pages 165–165*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=500 (sys=94, user=406), max_out=1024, ctx=8192
+---
+
+# Page 165
+
+## Activities Indicators Timelines Responsibilities Cost  
+USD  
+
+- enterprises that offer products or services that substantially improve the lives of women and girls.  
+- enterprises with financial and human resources capacity signifying overall commitment to gender equality.  
+- eligible enterprises should assure workplaces free of all forms of discrimination, violence and harassment and it is advisable that grievance and whistleblowing mechanisms are in place.  
+
+## Component 3: Advocacy and Outputs Dissemination   
+
+### GAP outcome 3: Increased awareness on access to clean energy and gender.  
+
+#### Sub-component 3.1: Raise greater awareness concerning the program initiative for potential replication and upscaling within Ghana  
+
+##### A.3.1.1. Gender integration in the marketing campaigns:  
+
+Communication messages will be developed ensuring accessibility to all community members especially, less visible or unserved (e.g., poor women, men and women migrant farmers and youth, minorities, PLWD). Local dialect and English should be used. Marketing campaigns on TV, radio, print, and social media will maintain a gender and human rights approach.  
+
+*Number of marketing campaigns organized with communication messages presented in understandable user-friendly and inclusive format, available and accessible to less visible and underserved groups (e.g., women, youth, migrant farmers, illiterate people, PLWD etc.)  
+
+2nd quarter, 2024  
+
+ASAP staff (including Ecobank officers assigned to the program) + Gender Unit + ASAP staff + ASAP’s Communication unit  
+
+Part of ASAP operational cost
+
+
+---
+*Chunk pages 166–166*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=550 (sys=94, user=456), max_out=1024, ctx=8192
+---
+
+# Page 166
+
+## Activities Indicators Timelines Responsibilities Cost  
+USD  
+
+Inclusive language and non-stereotyped and diverse representations will be used to avoid expressing or implying ideas that are sexist, racist, ableist or otherwise biased, prejudiced, or discriminating in any way, to any group of people.  
+
+In addition, the gender approach of the program will be addressed in all the slots highlighting issues such as the relationship between gender and energy poverty, financial exclusion, and gender bias in access to credit, etc. as well as the response that the programme will offer (prioritisation of women- owned and/or led households and MSMEs, WUAs and prioritisation of underserved groups, etc.)  
+
+The awareness creation would include information on internship opportunities available for students to work with solar PV installers ASAP will engage.  
+
+*100% of the marketing campaign and events will be gender-friendly  
+* 100% marketing campaigns and event are accessible to underserved groups (PLWD, youth, migrants, illiterate member of the population)  
+
+*Number of marketing campaign slots that sufficiently integrate gender considerations and address gender gaps and inclusion.  
+*Number of female students securing internships with ASAP programme and solar PV vendors.  
+
+A.3.1.2. Highlight the Gender approach of the ASAP program in the marketing events and presentations during the events, i.e., showcasing successful loans disbursement to single women led households or women-owned and/or focus businesses.  
+
+* Number of marketing events organized where ASAP’s gender approach is highlighted with 50% women participating  
+
+ASAP staff (including Ecobank officers assigned to the program) + Gender Unit + ASAP staff + Ecobank officers.  
+Part of ASAP operational cost
+
+
+---
+*Chunk pages 167–167*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=610 (sys=94, user=516), max_out=1024, ctx=8192
+---
+
+# Page 167
+
+## Activities Indicators Timelines Responsibilities Cost  
+USD  
+
+### Sub-component 3.2: Inclusive stakeholders’ engagement and advocacy to build support  
+
+#### A.3.2.1: Inclusive stakeholders’ engagement  
+As part of the SEP, ASAP will pursue a gender sensitive engagement ensuring a gender balance across all tiers of stakeholders.  
+
+- **Number of women among engaged stakeholders** (policy makers, certified suppliers, other value chain actors)  
+  *(Preliminary target: At least 40% are women).*
+
+### Throughout execution  
+
+- ASAP staff (including Ecobank officers assigned to the program) + Gender Unit + ASAP staff + Ecobank officers  
+  *Part of ASAP operational cost*  
+
+## Crosscutting measures  
+
+### A.4.1. Project monitoring and evaluation on gender equality, women empowerment by collecting gender disaggregated data by sex, age and disability (HRBA).  
+Results should be monitored and reported on. Monitoring tools /protocol used will include specific gender and HRBA questions.  
+
+- **Gender disaggregated data is collected for all activities implemented under the ASAP.**  
+  *Starting Ist quarter, 2024 to end of programme implementation.*  
+
+- ASAP staff (including Ecobank officers assigned to the program) + Gender Unit + ASAP staff + Monitoring Unit  
+  *Monitoring and Evaluation ASAP’s unit*  
+  *Part of ASAP operational cost.*
+
+### A.4.2. Equitably involving diverse women and men (ASAP beneficiaries) to provide data for monitoring and evaluation purposes.  
+- **Number of women, PLWD and underserved groups considered as relevant stakeholders and informants for monitoring purposes, etc.**  
+  *4th quarter, 2023*  
+  *Part of ASAP operational cost.*
+
+### A.4.3. Ensure that mid-term and final evaluations are undertaken with a gender perspective and intersectionality analysis applied.  
+- **Gender and inclusion integrated in the mid-term and final evaluations of the ASAP:**  
+  - ***Gender disaggregated data collected and analysed using intersectionality.***  
+  *Part of ASAP operational cost.*
+
+
+---
+*Chunk pages 168–168*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=360 (sys=94, user=266), max_out=1024, ctx=8192
+---
+
+# Page 168
+
+## Activities Indicators Timelines Responsibilities Cost
+
+USD
+
+### **Inclusive language used for reporting**
+
+- **Gender mainstreaming outcomes reported on**
+- **Number of female gender expert included in the evaluation teams**
+- **Number of monitoring and evaluation reports including quantitative and qualitative information on Gender equality achievement, women empowerment and inclusion of HRBA results**
+
+### **Monitoring and Evaluation**
+
+ASAP's unit
+
+### **A.4.4. Yearly monitoring and reporting on the progress made in the implementing of ASAP Gender Action Plan**
+
+This should include documentation of gender achievements and women empowerment, lessons learnt and best practices.
+
+- **Number of annual progress reports on ASAP GAP implementation provided**
+- **Number of ASAP newsletters developed and documenting gender achievements and women empowerment**
+- **Number of ASAP implementation success stories on gender and**
+
+Last month of each year starting from 2024
+
+December of every year starting 2024
+
+50,000
+
+
+---
+*Chunk pages 169–169*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=453 (sys=94, user=359), max_out=1024, ctx=8192
+---
+
+# Activities Indicators Timelines Responsibilities Cost
+
+| Activity | Indicator | Timeline | Responsibility | Cost |
+|---------|-----------|----------|----------------|------|
+| A.4.5. Ensure periodic updates on the GAP based on feedback from the GAP implementation monitoring yearly reports | *Updated GAP document shared with ASAP team | Last month of 2027 | ASAP's unit & ASAP Gender Unit | USD 40,000 |
+| A.4.6. Ensure jobs are created in the solar PV installation, operations, and maintenance | Ensuring the jobs meet ILO labour standards and employ women and men equitably and give opportunity to less visible or underserved groups (internships included) | 3rd quarter, 2023 | ASAP staff (included Ecobank officers assigned to the program + Gender Unit + ASAP staff + ASAP's Human Resources Unit | Part of ASAP project budget |
+
+## Indicator Details
+
+* Number and percentage of full-time equivalent jobs (person-days) generated by the ASAP project for women, by pay rate and type of job: unskilled/technical/management/and supervisory roles (e.g., meter readers, technicians, bill collectors, customer service staff).
+
+* Number of jobs created that meet the ILO labour standards.
+
+* At least 50% of jobs created are held by women and underserved groups.
+
+
+---
+*Chunk pages 170–170*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=610 (sys=94, user=516), max_out=1024, ctx=8192
+---
+
+# Page 170
+
+## A.4.7. Ensuring ASAP’s grievance mechanism (GM) is gender responsive and produces an annual report produced on all cases of GBV, harassment and other gender, diversity and inclusion grievances.
+
+- Grievance Committee established with at least two women as members.
+- Number of grievance cases recorded disaggregated by gender and age.
+- Timeline: 1st quarter, 2024 to end of project.
+- Responsibilities:
+  - ASAP staff (included Ecobank officers assigned to the program + Gender Unit (formed by Gender expert + ASAP staff + GM Committee focal persons).
+  - ASAP staff (including Ecobank officers assigned to the program) + Gender Unit + ASAP staff + GM Committee + GM focal persons.
+  - Part of ASAP project cost.
+
+## A.4.8. Sensitize project staff and target borrowers (beneficiaries) on the GM, GBV standards of conduct, and how to seek redress for grievances to be able to use the GM to report cases.
+
+- The GM is based on a survivor-centric approach i.e., empowering the survivor of GBV by prioritizing their rights, needs and wishes.
+- Number of project staff and target beneficiaries (50%) men participating in the sensitization programme.
+- Timeline: 2nd quarter, 2024.
+- Part of ASAP operational cost.
+
+## A.4.9. Develop an operational manual for GBV and other gender and diversity related grievances within the GM, including the workflow, forms, and codes of conduct to be followed, including mapping of both formal services and informal resources responding to GBV.
+
+- An operational manual developed for GBV, and other gender and diversity related grievances is produced and disseminated.
+- Protocol established with relevant GM Team regarding Gender Based Violence (GBV) and Sexual Exploitation, Abuse and Harassment (SEAH).
+- Timeline: 1st quarter, 2024.
+- Cost: USD 10,000.
+
+
+---
+*Chunk pages 171–171*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=503 (sys=94, user=409), max_out=1024, ctx=8192
+---
+
+# Activities Indicators Timelines Responsibilities Cost
+
+## A.4.10. Provide capacity building and training to focal persons in the GM, including how to process and manage GBV grievances with confidentiality and adequate follow up (survivor-centric approach)6, for AC members and GBV focal points.
+
+- **Number of sensitization sessions for program staff and borrowers (beneficiaries) on GBV and other gender and diversity related grievances within the GM.**
+- **Number of focal persons (50% women) in the GM participating in the capacity building and training sessions on GM and Gender and diversity grievances.**
+
+### Timeline: 2nd quarter, 2024
+
+### Responsibilities:
+- ASAP staff (including Ecobank officers assigned to the program + Gender Unit + Consultants.
+- ASAP staff (including Ecobank officers assigned to the program + Gender Unit
+- (formed by Gender expert + ASAP staff + GM Committee + GM focal persons + Consultants.
+
+### Cost: $17,000
+
+## A.4.11. Elaborate the ASAP’s Code of conduct and ensure it is gender responsive.
+
+- **ASAP’s Code of conduct covers at least the following issues: Equality, diversity and inclusion; sexual Harassment and Sexual Violence.**
+
+### Timeline: 1st quarter, 2024
+
+### Responsibilities:
+- ASAP staff (including Ecobank officers assigned to the program) + Gender Unit + ASAP staff + ASAP Human Resources Unit.
+
+### Cost: Total cost of the GAP $653,000
+
+> 6 https://www.unfpa.org/sites/default/files/resource-pdf/Minimum_Standard_Poster-FINAL.21Oct.pdf
+
+--- 
+
+[Page 1]
+
+
+---
+*Chunk pages 172–172*
+*Model:* `qwen/qwen3-coder-30b`  
+*Token usage:* input=458 (sys=94, user=364), max_out=1024, ctx=8192
+---
+
+# Notes
+
+1. Gender Assessment and Gender Action Plan Report (ASAP Ghana, by Jose M. Cabral).
+2. Gender Assessment Draft July 2023 (ASAP Ghana, by Hannah Nyamekye)
+3. Updated Gender Policy and Action Plan 2020–202. GCF, 2019.
+4. Mainstreaming Gender in Green Climate Fund Projects GCF, 2017.
+5. Recent and similar Gender assessments and GAPs are available from GCF website.  
+Examples:  
+https://www.greenclimate.fund/project/sap024#documents  
+https://www.greenclimate.fund/project/fp102#documents  
+https://www.greenclimate.fund/project/fp081#documents  
+https://www.greenclimate.fund/project/fp138  
+https://www.greenclimate.fund/project/fp114  
+https://www.greenclimate.fund/project/fp137#documents  
+
+6. Other projects: https://www.greenclimate.fund/projects and  
+here https://www.greenclimate.fund/projects/safeguards/gender#documents  
+
+7. Ecobank Ellevate Program: https://www.ecobank.com/commercial-banking/ellevate;   
+https://www.ecobank.com/ellevate-bootcamp;   
+https://www.instagram.com/womeninentrepreneurship_awards/?hl=en  
+
+8. Ecobank Code of Conduct  
+9. Criteria MSMs Government Ghana  
+10. Census 2014 Disabilities. National statistics Ghana.  
+11. Solar PV: A Gender Perspective, IRENA, 2022.  
+__________
