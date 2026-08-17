@@ -79,6 +79,11 @@ CREATE TABLE IF NOT EXISTS feedbacks (
     "value" INTEGER NOT NULL,
     "comment" TEXT
 );
+CREATE TABLE IF NOT EXISTS credentials (
+    "identifier" TEXT PRIMARY KEY,
+    "passwordHash" TEXT NOT NULL,
+    "createdAt" TEXT
+);
 CREATE INDEX IF NOT EXISTS ix_threads_user ON threads("userIdentifier");
 CREATE INDEX IF NOT EXISTS ix_steps_thread ON steps("threadId");
 CREATE INDEX IF NOT EXISTS ix_elements_thread ON elements("threadId");

@@ -123,7 +123,19 @@ def auth(username: str, password: str) -> Optional[cl.User]:
     expected = users.get(username.strip())
     if expected and hmac.compare_digest(password, expected):
         return cl.User(identifier=username.strip())
+    # self-registered accounts (scrypt-hashed, data/app.db)
+    from gcf_qna.app import accounts
+    if accounts.check_login(username, password):
+        return cl.User(identifier=username.strip())
     return None
+
+
+# Self-registration page + API (/register); ALLOW_SIGNUP=0 disables.
+try:
+    from gcf_qna.app.register import mount as _mount_register
+    _mount_register()
+except Exception as _e:   # never let signup wiring break the chat app
+    print(f"signup routes not mounted: {_e}", flush=True)
 
 
 def _history_from_thread(thread: ThreadDict) -> list:
