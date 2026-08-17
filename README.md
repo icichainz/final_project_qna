@@ -58,3 +58,6 @@ Docker: `docker compose up --build` (expects `.env` and a built index in `data/i
 - Extraction throughput/accuracy notes: `docs/` and the VLM module docstring.
   On LM Studio keep `MAX_CONCURRENT=1` — two concurrent multimodal requests
   crash the model process (measured 2026-08-14).
+
+
+This is the link of the artifact that allows for the design of the next features: https://claude.ai/code/artifact/1e8979f9-a26b-4f41-b966-c6e82de8ea50
