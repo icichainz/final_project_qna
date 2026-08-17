@@ -30,7 +30,11 @@ SYSTEM_PROMPT = (
     "The excerpts are a small retrieved sample of a 273-document corpus: never\n"
     "state corpus-wide totals, counts, rankings or superlatives (most, largest,\n"
     "all, only) as fact — explicitly scope such claims to 'among the retrieved\n"
-    "excerpts' and say the full corpus may contain larger/other cases."
+    "excerpts' and say the full corpus may contain larger/other cases.\n"
+    "When the user compares specific documents, report what each document's\n"
+    "excerpts state, item by item — including 'no figure stated in the\n"
+    "excerpts' for a document — never refuse the whole comparison because\n"
+    "some items lack data."
 )
 
 
