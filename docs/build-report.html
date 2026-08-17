@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GCF Q&amp;A Build Report</title>
+<style>
+:root{
+  --bg:#E9EBEF; --surface:#FCFCFD; --surface-2:#F1F3F6; --surface-3:#E3E6EB;
+  --ink:#14181E; --ink-2:#545D69; --ink-3:#75808D;
+  --rule:#D3D8DF; --rule-strong:#B9C1CB;
+  --accent:#965800; --accent-mark:#A4600C; --accent-soft:#F6EADA;
+  --crit:#9C2B22; --crit-soft:#F7E5E3;
+  --good:#1C6440; --good-soft:#E1EFE7;
+  --blue:#1F5F8B;
+  --shadow:0 1px 2px rgba(20,24,30,.06), 0 6px 18px -10px rgba(20,24,30,.22);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#13161B; --surface:#1A1E25; --surface-2:#20252D; --surface-3:#272D36;
+    --ink:#E6E9EE; --ink-2:#98A2AF; --ink-3:#7C8794;
+    --rule:#2B313A; --rule-strong:#3A424D;
+    --accent:#DFA24C; --accent-mark:#DFA24C; --accent-soft:#33291A;
+    --crit:#E88A80; --crit-soft:#33211F;
+    --good:#5FBF8B; --good-soft:#172B22;
+    --blue:#5AA2D0;
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 22px -12px rgba(0,0,0,.7);
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#13161B; --surface:#1A1E25; --surface-2:#20252D; --surface-3:#272D36;
+  --ink:#E6E9EE; --ink-2:#98A2AF; --ink-3:#7C8794;
+  --rule:#2B313A; --rule-strong:#3A424D;
+  --accent:#DFA24C; --accent-mark:#DFA24C; --accent-soft:#33291A;
+  --crit:#E88A80; --crit-soft:#33211F;
+  --good:#5FBF8B; --good-soft:#172B22;
+  --blue:#5AA2D0;
+  --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 22px -12px rgba(0,0,0,.7);
+}
+:root{
+  --serif:"Iowan Old Style","Charter","Bitstream Charter","Palatino Linotype",Palatino,Georgia,serif;
+  --sans:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --mono:ui-monospace,"SF Mono","Cascadia Mono",Menlo,Consolas,monospace;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.62;-webkit-font-smoothing:antialiased}
+.wrap{max-width:60rem;margin:0 auto;padding:0 1.5rem 6rem}
+.eyebrow{font-family:var(--mono);font-size:.7rem;letter-spacing:.13em;text-transform:uppercase;color:var(--ink-3);margin:0}
+h1,h2,h3{font-family:var(--serif);font-weight:600;text-wrap:balance;margin:0}
+p{margin:0}
+code{font-family:var(--mono);font-variant-ligatures:none;font-size:.855em;background:var(--surface-2);border:1px solid var(--rule);border-radius:4px;padding:.08em .34em;overflow-wrap:anywhere}
+a{color:var(--accent);text-underline-offset:2px}
+.masthead{padding:4rem 0 2.5rem;border-bottom:1px solid var(--rule-strong);display:flex;flex-direction:column;gap:1.1rem}
+.masthead h1{font-size:clamp(2.3rem,6vw,3.4rem);line-height:1.03;letter-spacing:-.02em}
+.lede{font-size:1.1rem;color:var(--ink-2);max-width:46rem}
+.byline{display:flex;flex-wrap:wrap;gap:.4rem 1.4rem;font-family:var(--mono);font-size:.72rem;color:var(--ink-3)}
+.byline b{color:var(--ink-2);font-weight:500}
+.metrics{display:grid;gap:1px;background:var(--rule);border:1px solid var(--rule);grid-template-columns:repeat(auto-fit,minmax(10rem,1fr));margin-top:2.5rem;border-radius:6px;overflow:hidden}
+.metric{background:var(--surface);padding:1.05rem 1.1rem;display:flex;flex-direction:column;gap:.26rem}
+.metric .k{font-family:var(--mono);font-size:.64rem;letter-spacing:.11em;text-transform:uppercase;color:var(--ink-3)}
+.metric .v{font-family:var(--mono);font-size:1.45rem;font-variant-numeric:tabular-nums;color:var(--ink);line-height:1.15}
+.metric .v em{font-style:normal;color:var(--ink-3);font-size:.9rem}
+.metric .n{font-size:.77rem;color:var(--ink-2);line-height:1.4}
+section{padding-top:3.6rem}
+.sec-head{display:flex;flex-direction:column;gap:.45rem;margin-bottom:1.4rem}
+.sec-head h2{font-size:1.65rem;letter-spacing:-.015em}
+.sec-head p{color:var(--ink-2);max-width:46rem}
+.prose{display:flex;flex-direction:column;gap:1rem;max-width:46rem}
+.prose p{color:var(--ink-2)}
+.prose strong{color:var(--ink);font-weight:600}
+.card{background:var(--surface);border:1px solid var(--rule);border-radius:6px;box-shadow:var(--shadow);padding:1.4rem 1.5rem}
+figure{margin:1.6rem 0 0}
+figure svg{max-width:100%;height:auto;display:block}
+figcaption{font-size:.82rem;color:var(--ink-3);margin-top:.6rem;line-height:1.5;max-width:46rem}
+.scroll{overflow-x:auto;border:1px solid var(--rule);border-radius:6px;background:var(--surface);margin-top:1.3rem}
+table{border-collapse:collapse;width:100%;font-size:.87rem;min-width:36rem}
+th,td{text-align:left;padding:.6rem .9rem;border-bottom:1px solid var(--rule);vertical-align:top}
+thead th{font-family:var(--mono);font-size:.62rem;letter-spacing:.11em;text-transform:uppercase;color:var(--ink-3);font-weight:500;background:var(--surface-2);white-space:nowrap}
+tbody tr:last-child td{border-bottom:none}
+td.num{font-family:var(--mono);font-variant-numeric:tabular-nums;white-space:nowrap}
+.chip{font-family:var(--mono);font-size:.6rem;letter-spacing:.1em;text-transform:uppercase;padding:.18rem .42rem;border-radius:3px;font-weight:500;white-space:nowrap}
+.chip.fixed{background:var(--good-soft);color:var(--good)}
+.chip.crit{background:var(--crit-soft);color:var(--crit)}
+.chip.feat{background:var(--accent-soft);color:var(--accent)}
+.note{background:var(--surface);border:1px solid var(--rule);border-left:3px solid var(--accent-mark);border-radius:0 6px 6px 0;padding:1rem 1.2rem;margin-top:1.4rem;max-width:46rem}
+.note .n-k{font-family:var(--mono);font-size:.62rem;letter-spacing:.11em;text-transform:uppercase;color:var(--accent);display:block;margin-bottom:.35rem}
+.note p{font-size:.92rem;color:var(--ink-2)}
+.note.crit{border-left-color:var(--crit)}
+.note.crit .n-k{color:var(--crit)}
+footer{margin-top:4.5rem;padding-top:1.5rem;border-top:1px solid var(--rule-strong);font-family:var(--mono);font-size:.72rem;color:var(--ink-3);line-height:1.7}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="masthead">
+  <p class="eyebrow">final_project_qna · engineering report</p>
+  <h1>GCF Q&amp;A Build Report</h1>
+  <p class="lede">How a directory of 46 loose files, six forked apps, and a crashing extraction script became a grounded question-answering system over 41,550 pages of Green Climate Fund proposals — with page-cited answers, highlighted evidence images, and per-document comparative retrieval. Every number in this report was measured, not estimated.</p>
+  <div class="byline">
+    <span><b>Period</b> 14–17 Aug 2026</span>
+    <span><b>Corpus</b> 273 PDFs · 41,550 pages</span>
+    <span><b>Result</b> 30 commits · 6 branches · 1,951 lines of package code</span>
+  </div>
+  <div class="metrics">
+    <div class="metric"><span class="k">Index</span><span class="v">186,802</span><span class="n">page-aware chunks, GPU-embedded in 11 min</span></div>
+    <div class="metric"><span class="k">Page geometry</span><span class="v">41,500</span><span class="n">boxes sidecars — text lines, tables, figures</span></div>
+    <div class="metric"><span class="k">Grounding</span><span class="v">0.96–1.0</span><span class="n">confidence on prose passages, measured live</span></div>
+    <div class="metric"><span class="k">Defects fixed</span><span class="v">13<em>+</em></span><span class="n">incl. 2 that hung runs and 5 leaked API keys</span></div>
+  </div>
+</header>
+
+<!-- ================================================================ -->
+<section>
+  <div class="sec-head">
+    <p class="eyebrow">The system</p>
+    <h2>What exists now</h2>
+    <p>Four pipeline stages communicating through disk, plus a grounding layer that ties every answer back to pixels on a page.</p>
+  </div>
+  <figure class="card">
+    <svg viewBox="0 0 900 240" role="img" aria-label="Pipeline: PDFs are rendered to page images with geometry sidecars, extracted to markdown by a vision model, chunked page-aware into a FAISS index, and served by a Chainlit app whose answers are grounded back to highlighted page regions.">
+      <defs><marker id="pa" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="currentColor"/></marker></defs>
+      <g fill="none" stroke="currentColor" stroke-width="1.3" font-family="ui-monospace,monospace" font-size="11.5">
+        <rect x="14" y="60" width="128" height="56" rx="6"/>
+        <text x="78" y="83" stroke="none" fill="currentColor" text-anchor="middle">data/raw/pdfs</text>
+        <text x="78" y="99" stroke="none" fill="currentColor" text-anchor="middle" opacity=".65">273 PDFs</text>
+        <line x1="142" y1="88" x2="186" y2="88" marker-end="url(#pa)"/>
+        <text x="164" y="80" stroke="none" fill="currentColor" text-anchor="middle" font-size="10">render</text>
+        <rect x="186" y="60" width="150" height="56" rx="6"/>
+        <text x="261" y="83" stroke="none" fill="currentColor" text-anchor="middle">cache/pages</text>
+        <text x="261" y="99" stroke="none" fill="currentColor" text-anchor="middle" opacity=".65">JPEG + boxes.json</text>
+        <line x1="336" y1="88" x2="380" y2="88" marker-end="url(#pa)"/>
+        <text x="358" y="80" stroke="none" fill="currentColor" text-anchor="middle" font-size="10">VLM</text>
+        <rect x="380" y="60" width="150" height="56" rx="6"/>
+        <text x="455" y="83" stroke="none" fill="currentColor" text-anchor="middle">extracted/vlm</text>
+        <text x="455" y="99" stroke="none" fill="currentColor" text-anchor="middle" opacity=".65">markdown + status.json</text>
+        <line x1="530" y1="88" x2="574" y2="88" marker-end="url(#pa)"/>
+        <text x="552" y="80" stroke="none" fill="currentColor" text-anchor="middle" font-size="10">embed</text>
+        <rect x="574" y="60" width="140" height="56" rx="6"/>
+        <text x="644" y="83" stroke="none" fill="currentColor" text-anchor="middle">index/default</text>
+        <text x="644" y="99" stroke="none" fill="currentColor" text-anchor="middle" opacity=".65">FAISS · 186,802</text>
+        <line x1="714" y1="88" x2="758" y2="88" marker-end="url(#pa)"/>
+        <rect x="758" y="60" width="128" height="56" rx="6" stroke-width="2"/>
+        <text x="822" y="83" stroke="none" fill="currentColor" text-anchor="middle">Chainlit app</text>
+        <text x="822" y="99" stroke="none" fill="currentColor" text-anchor="middle" opacity=".65">OpenAI-compatible</text>
+        <!-- grounding return path -->
+        <path d="M 822 116 L 822 170 L 261 170 L 261 116" stroke-dasharray="5 4" marker-end="url(#pa)"/>
+        <text x="540" y="163" stroke="none" fill="currentColor" text-anchor="middle" font-size="10.5">ground_chunk(): answer text → text-line rects → highlighted page image</text>
+        <!-- ledger note -->
+        <text x="455" y="205" stroke="none" fill="currentColor" text-anchor="middle" font-size="10.5" opacity=".7">every stage resumable: page cache · per-page sidecars · per-model status ledger · named indexes</text>
+      </g>
+    </svg>
+    <figcaption>The pipeline. Stages hand off through <code>data/</code> by convention, each independently resumable. The dashed return path is what makes answers <em>grounded</em>: a cited chunk maps back to pixel rectangles on the cached page image it came from.</figcaption>
+  </figure>
+</section>
+
+<!-- ================================================================ -->
+<section>
+  <div class="sec-head">
+    <p class="eyebrow">Act I</p>
+    <h2>Extraction: from crashing script to verified corpus</h2>
+    <p>The inherited extractor rendered pages at 3× the useful resolution, deadlocked on failures, and silently merged incomplete documents. It was rebuilt, measured step by step against the live LM&nbsp;Studio server.</p>
+  </div>
+
+  <div class="card">
+    <p style="font-family:var(--sans);font-size:.94rem;font-weight:600">Per-page round-trip vs render size <span style="font-weight:400;color:var(--ink-2)">— same page, same model, measured on the live server</span></p>
+    <figure style="margin-top:1rem">
+      <svg viewBox="0 0 720 168" role="img" aria-label="Bar chart: 6 megapixel PNG takes 17.9 seconds per page; 2 megapixel JPEG takes 8.1 seconds; 1.1 megapixel takes 7.7 seconds. Body text was identical across all three.">
+        <g font-family="ui-monospace,monospace" font-size="12" fill="currentColor">
+          <text x="120" y="34" text-anchor="end" opacity=".8">6.0 MP PNG</text>
+          <rect x="132" y="20" width="500" height="18" rx="3" fill="var(--crit)" opacity=".85"/>
+          <text x="640" y="34">17.9 s</text>
+          <text x="120" y="82" text-anchor="end" opacity=".8">2.0 MP JPEG</text>
+          <rect x="132" y="68" width="226" height="18" rx="3" fill="var(--accent-mark)"/>
+          <text x="366" y="82">8.1 s · chosen</text>
+          <text x="120" y="130" text-anchor="end" opacity=".8">1.1 MP JPEG</text>
+          <rect x="132" y="116" width="215" height="18" rx="3" fill="var(--accent-mark)" opacity=".55"/>
+          <text x="355" y="130">7.7 s</text>
+          <text x="132" y="160" font-size="10.5" opacity=".65">3,846 → 2,570 prompt tokens · transcribed body text byte-identical · 2.0 MP kept as headroom for dense tables</text>
+        </g>
+      </svg>
+      <figcaption>The single largest throughput win: the inherited 250-DPI render paid 2.2× latency for pixels the model provably didn't use.</figcaption>
+    </figure>
+  </div>
+
+  <div class="scroll">
+    <table>
+      <thead><tr><th></th><th>Finding</th><th>Consequence · fix</th></tr></thead>
+      <tbody>
+        <tr><td><span class="chip crit">crash</span></td><td><strong>Two concurrent multimodal requests kill the LM&nbsp;Studio model process</strong> (exit 0xC0000090). Reproduced twice from a healthy state; serial ran 6/6 clean.</td><td>Concurrency default 1; crash quarantine (one task drives a cooldown, others park); circuit breaker aborts a dead model pass after 20 consecutive failures.</td></tr>
+        <tr><td><span class="chip crit">hang</span></td><td>A page exhausting its retries killed its worker; with all workers dead, <code>queue.join()</code> waited forever.</td><td>Flat task set under one semaphore — nothing can starve the scheduler.</td></tr>
+        <tr><td><span class="chip fixed">loss</span></td><td>Incomplete documents were merged anyway, and the merged file doubled as the resume marker — failed pages became unretryable forever.</td><td>Merge gated on completeness; per-page sidecars make every run resumable to the exact page.</td></tr>
+        <tr><td><span class="chip fixed">loss</span></td><td>Old-pipeline merges could hide silent gaps. Launch-time verification (page markers vs true PDF page count) caught one in the wild: a "done" document with <strong>240/243 pages</strong>.</td><td>Incomplete files quarantined to <code>.stale/</code> and requeued; verification result cached, so the check is one-time.</td></tr>
+        <tr><td><span class="chip feat">ops</span></td><td>No way to know corpus state without scrolling terminal history.</td><td>Per-model <code>status.json</code> ledger: ok / partial / failed / pending per document, pages to retry, attempts, last error — recomputed from disk each run (disk is truth, JSON is history). <code>--status</code> reports without running; CLI takes models as arguments; attempt ceiling stops poisoned documents from taxing every future run.</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ================================================================ -->
+<section>
+  <div class="sec-head">
+    <p class="eyebrow">Act II</p>
+    <h2>Re-architecture: one package, one truth per constant</h2>
+    <p>Every mess in the old tree was the same mess — forking a file instead of parameterizing it. Six near-identical apps existed because config was hardcoded per copy.</p>
+  </div>
+
+  <figure class="card">
+    <svg viewBox="0 0 880 300" role="img" aria-label="Before and after repository layouts. Before: one chat_interface directory with 46 mixed files including six app forks, seven notebook forks and 60 gigabytes of caches beside the code. After: src package, scripts, notebooks, docs, gitignored data directory with a regeneration contract, and archive.">
+      <g fill="none" stroke="currentColor" stroke-width="1.2" font-family="ui-monospace,monospace" font-size="11.5">
+        <text x="20" y="26" stroke="none" fill="var(--crit)" font-weight="700" font-size="12" letter-spacing="1">BEFORE</text>
+        <rect x="20" y="38" width="380" height="238" rx="6" stroke-dasharray="4 4"/>
+        <g stroke="none" fill="currentColor">
+          <text x="36" y="62">final_project_qna/chat_interface/  · 46 entries</text>
+          <text x="36" y="86" opacity=".75">main.py  main2.py  main3.py  main4.py  main4_1.Py</text>
+          <text x="36" y="104" opacity=".75">chatbot.py  async_rag.py   ← 6 forks of one app</text>
+          <text x="36" y="128" opacity=".75">7 × LM_STUDIO_*_AI_ENHANCED.ipynb forks</text>
+          <text x="36" y="152" opacity=".75">9 output dirs · 58 GB .image_cache · pdfs · venv</text>
+          <text x="36" y="176" fill="var(--crit)">5 live API keys hardcoded in source + notebook</text>
+          <text x="36" y="200" opacity=".75">requirements.txt × 3, all different, none complete</text>
+          <text x="36" y="224" opacity=".75">nested git repo, keys in pushed history</text>
+          <text x="36" y="248" opacity=".75">FAISS -1 bug feeding wrong chunk to the LLM ×3 copies</text>
+        </g>
+        <line x1="410" y1="157" x2="462" y2="157" marker-end="url(#pa)" stroke-width="2"/>
+        <text x="480" y="26" stroke="none" fill="var(--good)" font-weight="700" font-size="12" letter-spacing="1">AFTER</text>
+        <rect x="480" y="38" width="380" height="238" rx="6"/>
+        <g stroke="none" fill="currentColor">
+          <text x="496" y="62">src/gcf_qna/ — one importable package</text>
+          <text x="512" y="82" opacity=".75">config.py · extraction/vlm.py · rag/ · app/</text>
+          <text x="496" y="106">scripts/ — thin CLIs · Makefile — one target per op</text>
+          <text x="496" y="130">notebooks/ (+archive of the 7 forks) · docs/</text>
+          <text x="496" y="154">data/ — gitignored, regeneration contract per layer</text>
+          <text x="512" y="174" opacity=".75">raw → cache → extracted/&lt;method&gt; → index/&lt;name&gt;</text>
+          <text x="496" y="198">archive/ — the 6 app forks, kept as record</text>
+          <text x="496" y="222" fill="var(--good)">zero keys in source or history · .env only</text>
+          <text x="496" y="246" opacity=".75">pyproject with [extraction] / [app] extras</text>
+        </g>
+      </g>
+    </svg>
+    <figcaption>The cure was structural: anything once varied by copying a file became a config value, a CLI flag, or an env var. The variants live on in <code>archive/</code> as the cautionary tale.</figcaption>
+  </figure>
+
+  <div class="note crit">
+    <span class="n-k">Two incidents, reported as they happened</span>
+    <p><strong>Leaked credentials.</strong> Five live API keys (Anthropic, Google, HuggingFace, 2× OpenAI) sat hardcoded in source and notebook outputs — and the old git history containing them was pushed to a public GitHub remote. They were scrubbed from all files and both are absent from the new history; revocation of the old keys remains the only real fix and stays on the owner's list. <strong>Git deletion.</strong> During setup, an <code>rm</code> intended for a scratch repo executed in the wrong working directory and deleted the project's local <code>.git</code>. Working files were never touched; the full 11-commit history was later recovered from the GitHub remote and preserved on the <code>legacy-pre-rearchitecture</code> branch. The new history was started fresh by explicit owner decision.</p>
+  </div>
+</section>
+
+<!-- ================================================================ -->
+<section>
+  <div class="sec-head">
+    <p class="eyebrow">Act III</p>
+    <h2>Grounding: answers that point at pixels</h2>
+    <p>Built for three uses: cited-passage highlighting in a viewer, grounding RAG citations to page regions, and table/figure localization — all from the born-digital PDFs' own text layer, zero OCR.</p>
+  </div>
+  <div class="prose">
+    <p><strong>Geometry sidecars.</strong> The render pass (and a one-time backfill over 273 cached PDFs, 63 min) wrote <code>page_NNNN.boxes.json</code> beside every page JPEG: text-line rectangles from <code>get_text("dict")</code>, table regions from <code>find_tables()</code>, figure regions from image rects and clustered vector drawings — all in pixel coordinates of the cached image. <strong>41,500 sidecars, 262 MB, 100% of tracked pages.</strong> Two corpus-specific fixes came from eyeballing real output: span-union line rects with a font-size height cap (dotted ToC leaders inflated boxes), and keeping large drawing clusters inside tables (GCF templates nest charts in page-wide tables — Figure 6 of FP275 was being discarded as table ruling).</p>
+    <p><strong>Page-aware chunks.</strong> Chunking runs within page boundaries, so every index entry carries <code>{doc_id, page, text}</code> and the app cites <code>[doc, p. 17]</code>. Verified: 243/243 pages parse contiguously from a real merged document.</p>
+    <p><strong>Fuzzy alignment.</strong> The chunk text is VLM-written markdown; the boxes text is the PDF text layer — they never match verbatim. <code>ground_chunk()</code> token-matches chunk against lines (≥60% line coverage → highlight rect), routes table-dominant chunks to detected table regions, and degrades to an honest page-level citation below 0.3 confidence. Measured on live retrievals: <strong>prose confidence 0.96–1.00</strong>, with VLM-dropped running headers correctly left unhighlighted.</p>
+    <p><strong>The viewer.</strong> Each chat answer attaches up to three evidence images — the cited page with green line-highlights or a blue table region, rendered server-side with PIL and cached by rect-hash. The proof was visual: real pages with exactly the cited grievance-redress passages boxed, surrounding text clean.</p>
+  </div>
+</section>
+
+<!-- ================================================================ -->
+<section>
+  <div class="sec-head">
+    <p class="eyebrow">Act IV</p>
+    <h2>Index &amp; serving</h2>
+  </div>
+
+  <div class="card">
+    <p style="font-family:var(--sans);font-size:.94rem;font-weight:600">Embedding 186,802 chunks — CPU vs GPU <span style="font-weight:400;color:var(--ink-2)">(all-mpnet-base-v2, same corpus)</span></p>
+    <figure style="margin-top:1rem">
+      <svg viewBox="0 0 720 128" role="img" aria-label="Bar chart: CPU embedding ran 2 hours 6 minutes and was abandoned with unknown remaining time; GPU embedding on the RTX 4080 completed in 11 minutes.">
+        <g font-family="ui-monospace,monospace" font-size="12" fill="currentColor">
+          <text x="120" y="36" text-anchor="end" opacity=".8">CPU · 32 cores</text>
+          <rect x="132" y="22" width="500" height="18" rx="3" fill="var(--crit)" opacity=".85"/>
+          <text x="300" y="36" fill="#fff" font-size="11">2 h 06 m — abandoned, unbounded ETA</text>
+          <text x="120" y="84" text-anchor="end" opacity=".8">RTX 4080</text>
+          <rect x="132" y="70" width="44" height="18" rx="3" fill="var(--accent-mark)"/>
+          <text x="184" y="84">11 min · 206 chunks/s · 93% GPU</text>
+          <text x="132" y="118" font-size="10.5" opacity=".65">root cause of the detour: pip installed a CUDA-13 torch wheel; the WSL driver is CUDA 12.7 → silent CPU fallback. Fixed with the cu126 wheel.</text>
+        </g>
+      </svg>
+      <figcaption>The one avoidable cost of the build: two hours of CPU embedding before switching wheels. The lesson is committed to the repo's memory — future indexes (three more model corpora await) are 11-minute jobs.</figcaption>
+    </figure>
+  </div>
+
+  <div class="prose" style="margin-top:1.4rem">
+    <p><strong>Serving fixes, each measured:</strong> the retriever (730 MB index + embedder) now loads once per process in a background thread at boot and is shared across all chat sessions — previously each session re-read it and the first question paid ~60 s. Cache-first model loading eliminated HuggingFace revalidation (<strong>32 → 0 HTTP requests</strong>, cold load 16.7 s → 7.7 s). The chat backend speaks the OpenAI protocol with <code>OPENAI_BASE_URL</code> override, so the same app runs against api.openai.com or a local LM&nbsp;Studio at zero cost.</p>
+  </div>
+</section>
+
+<!-- ================================================================ -->
+<section>
+  <div class="sec-head">
+    <p class="eyebrow">Act V</p>
+    <h2>Retrieval quality: five iterations, each driven by a live transcript</h2>
+    <p>Every change below was motivated by a real failing conversation, fixed, and re-verified against the live index and API.</p>
+  </div>
+
+  <div class="scroll">
+    <table>
+      <thead><tr><th>Iteration</th><th>Failing observation</th><th>Fix</th><th>Measured result</th></tr></thead>
+      <tbody>
+        <tr><td class="num">1</td><td>Follow-ups retrieved noise — the embedder saw the literal "how does that compare to Belize?"</td><td>History-aware query condensation (one cheap LLM call)</td><td class="num">top hit 0.71@p21 → <strong>0.81@p17</strong> (the actual Belize page)</td></tr>
+        <tr><td class="num">2</td><td>Transversal questions starved on 5 chunks</td><td><code>TOP_K</code> 5 → 10</td><td class="num">gender query: 10/10 distinct docs, 2 table chunks in context</td></tr>
+        <tr><td class="num">3</td><td>"The single project requesting the most financing is…" asserted from a 10-chunk sample, contradicting its own prior turn</td><td>System-prompt rule: corpus-wide superlatives must be scoped to retrieved excerpts</td><td>verified in later transcripts ("Among the retrieved excerpts…")</td></tr>
+        <tr><td class="num">4</td><td>"Which of those has the largest budget?" structurally unanswerable — one query cannot serve N documents</td><td><strong>Query decomposition</strong>: LLM emits per-entity doc-tagged sub-queries; doc-scoped FAISS search with full-scan fallback; per-document quota, merge, cap 15</td><td class="num">sources went 1 doc → 4–5 docs, quota visible in citations</td></tr>
+        <tr><td class="num">5</td><td>Decomposer starved (history truncation ate citation lists) and contaminated (general questions narrowed to prior docs); answer model refused mixed results</td><td>1200-char window + regex-extracted cited-doc line; ordered decision prompt + deterministic single-query tag guard; per-document reporting rule</td><td class="num">final: <strong>€118.08M / $82M / "no figure stated"</strong> per doc, correctly scoped</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <figure class="card" style="margin-top:1.4rem">
+    <svg viewBox="0 0 880 260" role="img" aria-label="Query decomposition mechanism: a comparative follow-up used to become one query competing globally and returning chunks from one dominant document; now it fans out into per-document sub-queries, each searching only its target document's chunks, guaranteeing every candidate is represented.">
+      <g fill="none" stroke="currentColor" stroke-width="1.3" font-family="ui-monospace,monospace" font-size="11.5">
+        <text x="20" y="26" stroke="none" fill="currentColor" font-weight="700" font-size="12" letter-spacing="1" opacity=".7">BEFORE — one query, global contest</text>
+        <rect x="20" y="40" width="180" height="40" rx="6"/>
+        <text x="110" y="64" stroke="none" fill="currentColor" text-anchor="middle">"largest budget of those?"</text>
+        <line x1="200" y1="60" x2="260" y2="60" marker-end="url(#pa)"/>
+        <rect x="260" y="40" width="240" height="40" rx="6"/>
+        <text x="380" y="64" stroke="none" fill="currentColor" text-anchor="middle" opacity=".8">186k chunks · global top-k</text>
+        <line x1="500" y1="60" x2="560" y2="60" marker-end="url(#pa)"/>
+        <rect x="560" y="40" width="300" height="40" rx="6" stroke="var(--crit)"/>
+        <text x="710" y="64" stroke="none" fill="var(--crit)" text-anchor="middle">all chunks from 1 dominant doc → refusal</text>
+
+        <line x1="20" y1="110" x2="860" y2="110" stroke-dasharray="4 5" opacity=".35"/>
+
+        <g stroke="var(--blue)">
+          <text x="20" y="136" stroke="none" fill="var(--blue)" font-weight="700" font-size="12" letter-spacing="1">AFTER — per-document quota</text>
+          <rect x="20" y="150" width="180" height="40" rx="6" stroke="currentColor"/>
+          <text x="110" y="174" stroke="none" fill="currentColor" text-anchor="middle">same follow-up + cited ids</text>
+          <line x1="200" y1="162" x2="258" y2="152" marker-end="url(#pa)"/>
+          <line x1="200" y1="170" x2="258" y2="170" marker-end="url(#pa)"/>
+          <line x1="200" y1="178" x2="258" y2="188" marker-end="url(#pa)"/>
+          <rect x="260" y="140" width="230" height="24" rx="5"/><text x="375" y="156" stroke="none" fill="currentColor" text-anchor="middle" font-size="11">"dedicated budget" · only doc 61 chunks</text>
+          <rect x="260" y="168" width="230" height="24" rx="5"/><text x="375" y="184" stroke="none" fill="currentColor" text-anchor="middle" font-size="11">"dedicated budget" · only doc 133 chunks</text>
+          <rect x="260" y="196" width="230" height="24" rx="5"/><text x="375" y="212" stroke="none" fill="currentColor" text-anchor="middle" font-size="11">… one per cited doc, ≤6</text>
+          <line x1="490" y1="152" x2="548" y2="170" marker-end="url(#pa)"/>
+          <line x1="490" y1="180" x2="548" y2="180" marker-end="url(#pa)"/>
+          <line x1="490" y1="208" x2="548" y2="190" marker-end="url(#pa)"/>
+          <rect x="550" y="158" width="120" height="44" rx="6"/>
+          <text x="610" y="176" stroke="none" fill="currentColor" text-anchor="middle">merge·dedupe</text>
+          <text x="610" y="192" stroke="none" fill="currentColor" text-anchor="middle">cap 15</text>
+          <line x1="670" y1="180" x2="710" y2="180" marker-end="url(#pa)"/>
+          <rect x="710" y="158" width="150" height="44" rx="6" stroke="var(--good)"/>
+          <text x="785" y="176" stroke="none" fill="var(--good)" text-anchor="middle">per-doc breakdown,</text>
+          <text x="785" y="192" stroke="none" fill="var(--good)" text-anchor="middle">honest gaps ✓</text>
+        </g>
+        <text x="440" y="246" stroke="none" fill="currentColor" text-anchor="middle" font-size="10.5" opacity=".7">inside one document, "budget" has no 186k-chunk competition — the annex table that loses globally wins locally</text>
+      </g>
+    </svg>
+    <figcaption>Iterations 4–5 in one picture. The full specification, with acceptance tests, lives in <code>docs/query-decomposition.html</code>; the design aligns with the "Adopt" verdict in the owner's retrieval roadmap (<code>docs/rag-approaches-evaluation.html</code>).</figcaption>
+  </figure>
+</section>
+
+<!-- ================================================================ -->
+<section>
+  <div class="sec-head">
+    <p class="eyebrow">Verification</p>
+    <h2>What "verified" meant here</h2>
+  </div>
+  <div class="prose">
+    <p>Nothing above rests on inspection alone. The resolution trade-off was benchmarked against the live VLM server; the concurrency crash was reproduced twice from a healthy state before being called real; grounding quality was judged by <em>looking at the rendered highlight images</em>, which caught two geometry bugs no unit test would have; the retrieval iterations were each validated by re-running the exact transcript that failed; and the final budget-comparison answer was accepted only when it produced real figures with per-document honesty. Where a claim could not be verified (corpus-wide superlatives from a sample), the system was taught to say so rather than the report pretending otherwise.</p>
+  </div>
+</section>
+
+<!-- ================================================================ -->
+<section>
+  <div class="sec-head">
+    <p class="eyebrow">State &amp; next</p>
+    <h2>Repository state and the road ahead</h2>
+  </div>
+  <div class="scroll">
+    <table>
+      <thead><tr><th>Branch</th><th>Contents</th><th>State</th></tr></thead>
+      <tbody>
+        <tr><td class="num">main</td><td>everything below, merged; 30 commits</td><td>ready to push (force-with-lease replaces the leaked-key history)</td></tr>
+        <tr><td class="num">re-architecture</td><td>package layout, secrets scrub, baseline</td><td>merged</td></tr>
+        <tr><td class="num">feature/citation-grounding</td><td>boxes sidecars, page-aware chunks, ground_chunk</td><td>merged</td></tr>
+        <tr><td class="num">feature/grounded-viewer</td><td>highlight viewer, OpenAI backend, condensation, preload</td><td>merged</td></tr>
+        <tr><td class="num">feature/query-decomposition</td><td>spec + decomposition + doc-scoped retrieval</td><td>merged</td></tr>
+        <tr><td class="num">legacy-pre-rearchitecture</td><td>the recovered original 11-commit history</td><td>preservation branch</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="prose" style="margin-top:1.4rem">
+    <p><strong>Open items, in priority order:</strong> revoke the five leaked keys (the old history is public until then); push all branches (credentials exist only on the owner's side); extract the three remaining model corpora (<code>make extract</code> resumes them; each index is then an 11-minute GPU job); and — per the owner's roadmap — the <strong>metadata registry</strong>, which lets decomposition resolve "the Chad proposal" without prior citation and answers aggregation queries ("which proposals target West Africa") from structured data; then hybrid BM25+dense retrieval with reranking as the next quality floor.</p>
+  </div>
+</section>
+
+<footer>
+  <div>GCF Q&amp;A · 273 PDFs · 41,550 pages · 186,802 chunks · repository: final_project_qna (branch main @ bc855cc)</div>
+  <div>All measurements taken 14–17 Aug 2026 on the build machine (RTX 4080 SUPER, WSL2) against live services. Related reports: docs/query-decomposition.html · docs/rag-approaches-evaluation.html · docs/hybrid-retrieval-plan.html</div>
+</footer>
+
+</div>
+</body>
+</html>
