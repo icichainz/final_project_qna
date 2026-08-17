@@ -1,0 +1,119 @@
+# ---------------------------------------------------------------------------
+# Pimento backend — production Compose stack.
+#
+# Architecture:
+#   Caddy (host/container) -> pimento backend (Uvicorn :18000)
+#
+# The backend has no published host port. caddy-docker-proxy discovers it from
+# the labels and reaches it over the shared external `caddy` network.
+#
+# Create backend/.env before starting the stack. At minimum it must contain:
+#   SECRET_KEY=<long-random-secret>
+# Optional overrides include LOG_LEVEL, CORS_ALLOW_ORIGINS, and storage config.
+# ---------------------------------------------------------------------------
+
+services:
+  backend:
+    container_name: pimento-backend
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: pimento-backend:latest
+    restart: unless-stopped
+
+    env_file:
+      - .env
+
+    environment:
+      PORT: "18000"
+      APP_ENV: production
+      DATABASE_URL: sqlite+aiosqlite:////app/db/pimento.db
+      SESSION_COOKIE_SECURE: "true"
+      SEED_DEMO_DATA: "false"
+      CORS_ALLOW_ORIGINS: ${CORS_ALLOW_ORIGINS:-https://pimento.app}
+      FILE_STORAGE_BACKEND: local
+      LOCAL_STORAGE_ROOT: /app/static/uploads
+      LOCAL_STORAGE_URL_PREFIX: /static/uploads
+
+    # The complete directories are bind-mounted so SQLite's database, WAL, and
+    # SHM files remain together and survive image/container replacement.
+    volumes:
+      - type: bind
+        source: ./db
+        target: /app/db
+      - type: bind
+        source: ./static/uploads
+        target: /app/static/uploads
+
+    command:
+      - uvicorn
+      - main:app
+      - --host
+      - 0.0.0.0
+      - --port
+      - "18000"
+      - --workers
+      - "1"
+      - --proxy-headers
+      - --forwarded-allow-ips=*
+      - --timeout-keep-alive
+      - "5"
+
+    healthcheck:
+      test:
+        - CMD
+        - python
+        - -c
+        - >-
+          import urllib.request,sys;
+          sys.exit(0 if urllib.request.urlopen('http://127.0.0.1:18000/api/health', timeout=3).status == 200 else 1)
+      interval: 30s
+      timeout: 5s
+      start_period: 30s
+      retries: 3
+
+    labels:
+      caddy: pimento.app
+      caddy.reverse_proxy: "{{upstreams 18000}}"
+
+    networks:
+      - caddy
+
+    # Requires Docker Compose 2.22+. Source changes are synced and restart
+    # Uvicorn; dependency/image changes trigger a rebuild.
+    develop:
+      watch:
+        - action: sync+restart
+          path: .
+          target: /app
+          ignore:
+            - .git/
+            - .venv/
+            - venv/
+            - __pycache__/
+            - "*.pyc"
+            - .pytest_cache/
+            - .env
+            - .env.*
+            - db/
+            - static/uploads/
+            - Dockerfile
+            - docker-compose.yaml
+            - docker-entrypoint.sh
+            - requirements.txt
+        - action: rebuild
+          path: requirements.txt
+        - action: rebuild
+          path: Dockerfile
+        - action: rebuild
+          path: docker-entrypoint.sh
+
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "5"
+
+networks:
+  caddy:
+    external: true
