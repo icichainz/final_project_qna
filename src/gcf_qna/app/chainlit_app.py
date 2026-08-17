@@ -65,18 +65,48 @@ async def main(message: cl.Message):
 
     import openai
 
-    hits = await cl.make_async(retriever.search)(message.content, config.TOP_K)
+    client = openai.AsyncOpenAI(base_url=config.OPENAI_BASE_URL or None)
+    history = cl.user_session.get("history") or []
+
+    # Follow-ups carry references the embedder cannot resolve ("how does THAT
+    # compare..."), so retrieval on the raw message fetches noise. Condense the
+    # message against recent history into a standalone query; the original
+    # wording still goes to the answering model unchanged.
+    search_query = message.content
+    if history:
+        try:
+            convo = "\n".join(f"{m['role']}: {m['content'][:500]}" for m in history[-6:])
+            resp = await client.chat.completions.create(
+                model=config.CHAT_MODEL,
+                max_completion_tokens=80,
+                messages=[
+                    {"role": "system", "content":
+                        "Rewrite the user's latest message as ONE standalone search "
+                        "query for a document index, resolving pronouns and references "
+                        "from the conversation. Output only the query text."},
+                    {"role": "user", "content":
+                        f"Conversation:\n{convo}\n\nLatest message: {message.content}"},
+                ],
+            )
+            condensed = (resp.choices[0].message.content or "").strip().strip('"')
+            if condensed:
+                search_query = condensed
+        except Exception:
+            pass    # condensation is best-effort; raw message still retrieves
+
+    if search_query != message.content:
+        async with cl.Step(name="retrieval query") as step:
+            step.output = search_query
+
+    hits = await cl.make_async(retriever.search)(search_query, config.TOP_K)
     context = "\n\n".join(
         f"[{h.doc_id}{f', p. {h.page}' if h.page else ''}] (score {h.score:.2f})\n{h.text}"
         for h in hits)
-
-    history = cl.user_session.get("history") or []
     messages = history + [{
         "role": "user",
         "content": f"Context excerpts:\n{context}\n\nQuestion: {message.content}",
     }]
 
-    client = openai.AsyncOpenAI(base_url=config.OPENAI_BASE_URL or None)
     reply = cl.Message(content="")
     stream = await client.chat.completions.create(
         model=config.CHAT_MODEL,
