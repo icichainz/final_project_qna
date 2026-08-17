@@ -58,8 +58,17 @@ document.getElementById('f').addEventListener('submit', async (e) => {
     headers: {'Content-Type':'application/json'},
     body: JSON.stringify({username: fd.get('username'), password: fd.get('password')})});
   const data = await r.json().catch(() => ({}));
-  if (r.ok) { m.className='msg ok'; m.textContent='Account created — redirecting to sign in…';
-              setTimeout(() => location.href = '/', 1200); }
+  if (r.ok) {
+    m.className='msg ok'; m.textContent='Account created — signing you in…';
+    // auto-login so the user never retypes credentials
+    const body = new URLSearchParams();
+    body.set('username', fd.get('username'));
+    body.set('password', fd.get('password'));
+    const lr = await fetch('/login', {method:'POST', body}).catch(() => null);
+    if (lr && lr.ok) { location.href = '/'; }
+    else { m.textContent = 'Account created — please sign in.';
+           setTimeout(() => location.href = '/', 1200); }
+  }
   else { m.className='msg err'; m.textContent = data.detail || 'Registration failed.'; }
 });
 </script></body></html>"""
