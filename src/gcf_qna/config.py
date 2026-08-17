@@ -23,11 +23,13 @@ INDEX_DIR = DATA_DIR / "index"
 CHUNK_SIZE = int(os.getenv("CHUNK_SIZE", "1000"))
 CHUNK_OVERLAP = int(os.getenv("CHUNK_OVERLAP", "200"))
 EMBEDDING_MODEL = os.getenv("EMBEDDING_MODEL", "sentence-transformers/all-mpnet-base-v2")
-TOP_K = int(os.getenv("TOP_K", "5"))
+TOP_K = int(os.getenv("TOP_K", "10"))
 
-# --- chat ---
-CHAT_MODEL = os.getenv("CHAT_MODEL", "claude-sonnet-5")
+# --- chat (OpenAI-compatible endpoint) ---
+CHAT_MODEL = os.getenv("CHAT_MODEL", "gpt-4o-mini")
 MAX_ANSWER_TOKENS = int(os.getenv("MAX_ANSWER_TOKENS", "1024"))
+# Optional: point the OpenAI client elsewhere (e.g. LM Studio) instead of api.openai.com
+OPENAI_BASE_URL = os.getenv("OPENAI_BASE_URL", "")
 
 # --- local inference endpoint (VLM extraction) ---
 LMSTUDIO_BASE_URL = os.getenv("LMSTUDIO_BASE_URL", "http://192.168.56.1:12345/v1").rstrip("/")
