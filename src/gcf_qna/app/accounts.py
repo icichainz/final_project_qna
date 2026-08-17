@@ -46,6 +46,17 @@ def verify_password(password: str, stored: str) -> bool:
         return False
 
 
+def parse_env_users() -> dict:
+    """APP_USERS='alice:secret,bob:secret2' -> {identifier: password}."""
+    out = {}
+    for pair in os.getenv("APP_USERS", "").split(","):
+        if ":" in pair:
+            name, _, pw = pair.partition(":")
+            if name.strip() and pw:
+                out[name.strip()] = pw
+    return out
+
+
 def create_account(username: str, password: str) -> Optional[str]:
     """Create an account; returns an error message or None on success."""
     username = username.strip()
@@ -53,8 +64,7 @@ def create_account(username: str, password: str) -> Optional[str]:
         return "Username: 3-64 chars, letters/digits/._@- (must start alphanumeric)."
     if len(password) < MIN_PASSWORD_LEN:
         return f"Password must be at least {MIN_PASSWORD_LEN} characters."
-    from gcf_qna.app.chainlit_app import _parse_users  # env accounts are reserved
-    if username in _parse_users():
+    if username in parse_env_users():   # env accounts are reserved names
         return "This username is not available."
     con = _connect()
     try:

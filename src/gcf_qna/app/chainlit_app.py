@@ -106,20 +106,10 @@ def _data_layer():
     return _data_layer_instance
 
 
-def _parse_users() -> dict:
-    """APP_USERS='alice:secret,bob:secret2' -> {identifier: password}."""
-    out = {}
-    for pair in os.getenv("APP_USERS", "").split(","):
-        if ":" in pair:
-            name, _, pw = pair.partition(":")
-            if name.strip() and pw:
-                out[name.strip()] = pw
-    return out
-
-
 @cl.password_auth_callback
 def auth(username: str, password: str) -> Optional[cl.User]:
-    users = _parse_users()
+    from gcf_qna.app import accounts
+    users = accounts.parse_env_users()
     expected = users.get(username.strip())
     if expected and hmac.compare_digest(password, expected):
         return cl.User(identifier=username.strip())

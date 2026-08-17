@@ -16,7 +16,7 @@ OUT     ?= /tmp/ground_demo                            # demo output dir
 _limit  = $(if $(LIMIT),--limit $(LIMIT))
 
 .DEFAULT_GOAL := help
-.PHONY: help venv install init-db extract status retry boxes index ground-demo chat docker-build docker-up
+.PHONY: help venv install init-db extract status retry boxes index ground-demo chat docker-build docker-up push deploy remote-restart remote-logs remote-down remote-shell
 
 help:                ## list available targets
 	@awk 'BEGIN {FS = ":.*##"} /^[a-zA-Z_-]+:.*##/ \
@@ -64,3 +64,58 @@ docker-build:        ## build the app image
 
 docker-up:           ## run the app in Docker (expects .env + a built index in data/)
 	docker compose up
+
+# --- Remote deployment (mirrors the from_server/ workflow) -------------------
+# Override via environment:  REMOTE_HOST=1.2.3.4 make push
+REMOTE_USER ?= root
+REMOTE_HOST ?= 38.242.231.130
+REMOTE_DIR  ?= /workspace/fp_gcf
+COMPOSE_SERVICE ?= fp-gcf
+
+# What ships: code + the data the app reads (index, raw pdfs for fingerprint
+# lookup, page cache with geometry). What NEVER ships: server-side user state
+# (app.db, evidence-image copies, HF cache) and regenerable/heavy leftovers.
+DEPLOY_EXCLUDES := \
+	--exclude '.git' \
+	--exclude '__pycache__' \
+	--exclude '*.pyc' \
+	--exclude 'venv' \
+	--exclude 'from_server' \
+	--exclude '.env' \
+	--exclude 'data/app.db*' \
+	--exclude 'public/app_files' \
+	--exclude 'hf_cache' \
+	--exclude 'data/cache/image_cache_legacy' \
+	--exclude 'data/cache/highlights' \
+	--exclude 'data/extracted' \
+	--exclude 'data/index/legacy' \
+	--exclude 'src/gcf_qna.egg-info' \
+	--exclude '.stale'
+
+.PHONY: push deploy remote-restart remote-logs remote-down remote-shell
+push:                ## rsync code + serving data to the remote (first run syncs ~20 GB of page cache)
+	@test -n "$(REMOTE_HOST)" || { echo "REMOTE_HOST is not set"; exit 1; }
+	rsync -avz --progress $(DEPLOY_EXCLUDES) ./ $(REMOTE_USER)@$(REMOTE_HOST):$(REMOTE_DIR)/
+
+deploy: push         ## push, rebuild the image on the server, start the stack
+	ssh $(REMOTE_USER)@$(REMOTE_HOST) 'cd $(REMOTE_DIR) && \
+	  mkdir -p data public/app_files hf_cache && \
+	  docker compose build $(COMPOSE_SERVICE) && \
+	  docker compose up -d && \
+	  docker compose ps'
+
+remote-restart: push ## push code and restart the service (no rebuild)
+	ssh $(REMOTE_USER)@$(REMOTE_HOST) 'cd $(REMOTE_DIR) && \
+	  docker compose restart $(COMPOSE_SERVICE)'
+
+remote-logs:         ## tail the remote service logs
+	ssh -t $(REMOTE_USER)@$(REMOTE_HOST) 'cd $(REMOTE_DIR) && \
+	  docker compose logs -f --tail=200 $(COMPOSE_SERVICE)'
+
+remote-down:         ## stop the remote stack
+	ssh $(REMOTE_USER)@$(REMOTE_HOST) 'cd $(REMOTE_DIR) && \
+	  docker compose down'
+
+remote-shell:        ## shell into the running remote container
+	ssh -t $(REMOTE_USER)@$(REMOTE_HOST) 'cd $(REMOTE_DIR) && \
+	  docker compose exec $(COMPOSE_SERVICE) sh'

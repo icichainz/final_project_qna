@@ -1,9 +1,82 @@
+# ---------------------------------------------------------------------------
+# GCF Q&A — production Compose stack (fp_gcf).
+#
+# Architecture (mirrors the pimento setup on the same host):
+#   caddy-docker-proxy -> fp-gcf (chainlit :18100)
+#
+# No published host port: caddy discovers the service from its labels over
+# the shared external `caddy` network.
+#
+# Before first start, /workspace/fp_gcf/.env must contain at least:
+#   CHAINLIT_AUTH_SECRET=<openssl rand -hex 32>
+#   OPENAI_API_KEY=<key>
+#   APP_USERS=admin:<password>          (or rely on self-registration)
+#   FP_GCF_DOMAIN=<the public hostname caddy should serve>
+#
+# And the data the app reads must be synced (make push handles this):
+#   data/index/default/      the FAISS index
+#   data/raw/pdfs/           needed to locate page caches (fingerprint)
+#   data/cache/pages/        page JPEGs + geometry for evidence images
+# ---------------------------------------------------------------------------
+
 services:
-  qna:
-    build: .
-    ports:
-      - "8000:8000"
-    env_file: .env
+  fp-gcf:
+    container_name: fp-gcf
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: fp-gcf:latest
+    restart: unless-stopped
+
+    env_file:
+      - .env
+
+    environment:
+      PORT: "18100"
+      INDEX_NAME: ${INDEX_NAME:-default}
+      ALLOW_SIGNUP: ${ALLOW_SIGNUP:-1}
+      PRELOAD: "1"
+
+    # Whole directories bind-mounted so SQLite (db + WAL + SHM), the page
+    # caches, persisted evidence images, and the HF model cache all survive
+    # image and container replacement.
     volumes:
-      # the index is built on the host; the container only reads it
-      - ./data:/app/data
+      - type: bind
+        source: ./data
+        target: /app/data
+      - type: bind
+        source: ./public/app_files
+        target: /app/public/app_files
+      - type: bind
+        source: ./hf_cache
+        target: /app/hf_cache
+
+    healthcheck:
+      test:
+        - CMD
+        - python
+        - -c
+        - >-
+          import urllib.request,sys;
+          sys.exit(0 if urllib.request.urlopen('http://127.0.0.1:18100/auth/config', timeout=5).status == 200 else 1)
+      interval: 30s
+      timeout: 8s
+      start_period: 90s
+      retries: 3
+
+    labels:
+      caddy: ${FP_GCF_DOMAIN:-fp-gcf.localhost}
+      caddy.reverse_proxy: "{{upstreams 18100}}"
+
+    networks:
+      - caddy
+
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "5"
+
+networks:
+  caddy:
+    external: true
