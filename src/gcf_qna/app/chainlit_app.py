@@ -11,7 +11,9 @@ import os
 import chainlit as cl
 
 from gcf_qna import config
+from gcf_qna.app.highlight import annotated_page
 from gcf_qna.rag import Embedder, Retriever, load_index
+from gcf_qna.rag.ground import ground_chunk
 
 SYSTEM_PROMPT = (
     "You answer questions about Green Climate Fund (GCF) funding proposals.\n"
@@ -93,4 +95,25 @@ async def main(message: cl.Message):
     if hits:
         sources = ", ".join(sorted({f"{h.doc_id} p.{h.page}" if h.page else h.doc_id
                                     for h in hits}))
-        await cl.Message(content=f"📎 Sources: {sources}").send()
+        # Ground the citations: annotated page images with the cited passage
+        # highlighted (green lines / blue table region). Dedupe by (doc, page),
+        # cap at 3 pages so answers stay scannable.
+        elements, seen = [], set()
+        for h in hits:
+            if not h.page or (h.doc_id, h.page) in seen:
+                continue
+            seen.add((h.doc_id, h.page))
+            try:
+                g = await cl.make_async(ground_chunk)(
+                    {"doc_id": h.doc_id, "page": h.page, "text": h.text})
+                img = await cl.make_async(annotated_page)(g) if g else None
+            except Exception:
+                g, img = None, None
+            if img is not None:
+                label = f"{h.doc_id} — p. {h.page}"
+                if g and g.kind == "page":
+                    label += " (page-level match)"
+                elements.append(cl.Image(name=label, path=str(img), display="inline"))
+            if len(elements) >= 3:
+                break
+        await cl.Message(content=f"📎 Sources: {sources}", elements=elements).send()
