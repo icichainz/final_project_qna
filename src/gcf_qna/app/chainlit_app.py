@@ -1,8 +1,10 @@
 """Chainlit chat over the indexed GCF corpus.
 
 Run:   chainlit run src/gcf_qna/app/chainlit_app.py
-Needs: pip install -e ".[app]"  and ANTHROPIC_API_KEY in the environment
+Needs: pip install -e ".[app]"  and OPENAI_API_KEY in the environment
        (never hardcoded — the old repo leaked five keys that way).
+       Set OPENAI_BASE_URL to target any OpenAI-compatible server instead
+       (e.g. LM Studio); then the key may be empty.
 """
 from __future__ import annotations
 
@@ -29,10 +31,10 @@ def _index_dir():
 
 @cl.on_chat_start
 async def start():
-    if not os.getenv("ANTHROPIC_API_KEY"):
+    if not os.getenv("OPENAI_API_KEY") and not config.OPENAI_BASE_URL:
         await cl.Message(
-            content="⚠️ `ANTHROPIC_API_KEY` is not set. Copy `.env.example` to `.env`, "
-                    "fill in the key, and restart."
+            content="⚠️ `OPENAI_API_KEY` is not set (and no `OPENAI_BASE_URL` for a "
+                    "local server). Copy `.env.example` to `.env`, fill it in, restart."
         ).send()
         return
     idx_dir = _index_dir()
@@ -61,7 +63,7 @@ async def main(message: cl.Message):
         await cl.Message(content="Session not initialised — fix the startup warning first.").send()
         return
 
-    import anthropic
+    import openai
 
     hits = await cl.make_async(retriever.search)(message.content, config.TOP_K)
     context = "\n\n".join(
@@ -74,16 +76,17 @@ async def main(message: cl.Message):
         "content": f"Context excerpts:\n{context}\n\nQuestion: {message.content}",
     }]
 
-    client = anthropic.AsyncAnthropic()
+    client = openai.AsyncOpenAI(base_url=config.OPENAI_BASE_URL or None)
     reply = cl.Message(content="")
-    async with client.messages.stream(
+    stream = await client.chat.completions.create(
         model=config.CHAT_MODEL,
-        max_tokens=config.MAX_ANSWER_TOKENS,
-        system=SYSTEM_PROMPT,
-        messages=messages,
-    ) as stream:
-        async for token in stream.text_stream:
-            await reply.stream_token(token)
+        max_completion_tokens=config.MAX_ANSWER_TOKENS,
+        messages=[{"role": "system", "content": SYSTEM_PROMPT}] + messages,
+        stream=True,
+    )
+    async for part in stream:
+        if part.choices and part.choices[0].delta.content:
+            await reply.stream_token(part.choices[0].delta.content)
     await reply.send()
 
     history += [

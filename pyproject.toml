@@ -15,7 +15,7 @@ dependencies = [
 
 [project.optional-dependencies]
 extraction = ["aiohttp", "aiofiles", "pymupdf", "pillow", "pypdf"]
-app = ["chainlit", "anthropic"]
+app = ["chainlit", "openai"]
 
 [tool.setuptools.packages.find]
 where = ["src"]

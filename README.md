@@ -2,7 +2,8 @@
 
 Question-answering over Green Climate Fund funding proposals: PDFs are
 extracted to markdown by a local vision-language model, chunked and indexed
-with FAISS, and served through a Chainlit chat UI backed by Claude.
+with FAISS, and served through a Chainlit chat UI backed by an
+OpenAI-compatible LLM endpoint.
 
 ## Pipeline
 
@@ -30,7 +31,7 @@ GCF_FUND_DATA      extract_corpus.py      build_index.py        src/gcf_qna/app/
 
 ```bash
 python -m venv venv && venv/bin/pip install -e ".[extraction,app]"
-cp .env.example .env          # fill in ANTHROPIC_API_KEY etc.
+cp .env.example .env          # fill in OPENAI_API_KEY etc.
 
 # 1. extract (needs LM Studio serving a vision model)
 venv/bin/python scripts/extract_corpus.py
