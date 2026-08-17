@@ -23,7 +23,7 @@ INDEX_DIR = DATA_DIR / "index"
 CHUNK_SIZE = int(os.getenv("CHUNK_SIZE", "1000"))
 CHUNK_OVERLAP = int(os.getenv("CHUNK_OVERLAP", "200"))
 EMBEDDING_MODEL = os.getenv("EMBEDDING_MODEL", "sentence-transformers/all-mpnet-base-v2")
-TOP_K = int(os.getenv("TOP_K", "5"))
+TOP_K = int(os.getenv("TOP_K", "10"))
 
 # --- chat (OpenAI-compatible endpoint) ---
 CHAT_MODEL = os.getenv("CHAT_MODEL", "gpt-4o-mini")
