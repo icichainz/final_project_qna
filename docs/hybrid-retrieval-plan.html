@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hybrid Retrieval Plan — BM25 + dense with RRF</title>
+</head>
+<body>
+<style>
+  :root {
+    --bg: #f7faf8;
+    --surface: #ffffff;
+    --ink: #1c2a22;
+    --ink-soft: #4c5e54;
+    --ink-faint: #71837a;
+    --accent: #176a4b;
+    --accent-soft: #e3efe8;
+    --teal: #22677a;
+    --amber: #a8642a;
+    --amber-soft: #f6ecdf;
+    --line: #d8e3dc;
+    --line-soft: #e6eee9;
+    --code-bg: #edf3ef;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #101713; --surface: #17211b; --ink: #e2ebe5; --ink-soft: #a7b8ae;
+      --ink-faint: #7e9188; --accent: #4fc08d; --accent-soft: #1b2f25;
+      --teal: #5cb6cc; --amber: #d99a5b; --amber-soft: #2c2215;
+      --line: #2a3a31; --line-soft: #223028; --code-bg: #1d2a23;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #101713; --surface: #17211b; --ink: #e2ebe5; --ink-soft: #a7b8ae;
+    --ink-faint: #7e9188; --accent: #4fc08d; --accent-soft: #1b2f25;
+    --teal: #5cb6cc; --amber: #d99a5b; --amber-soft: #2c2215;
+    --line: #2a3a31; --line-soft: #223028; --code-bg: #1d2a23;
+  }
+
+  body {
+    background: var(--bg); color: var(--ink);
+    font-family: Charter, "Bitstream Charter", "Sitka Text", Cambria, Georgia, serif;
+    font-size: 1.0625rem; line-height: 1.62; margin: 0;
+  }
+  .wrap { max-width: 46rem; margin: 0 auto; padding: 3.5rem 1.25rem 5rem; }
+  .wrap-wide { max-width: 62rem; margin: 0 auto; padding: 0 1.25rem; }
+
+  h1, h2, h3, .eyebrow, .step-num, th, .flow, .pill {
+    font-family: "Avenir Next", Seravek, "Segoe UI", "Helvetica Neue", system-ui, sans-serif;
+  }
+  h1 { font-size: 2.3rem; line-height: 1.12; font-weight: 700; letter-spacing: -0.015em; margin: 0.4rem 0 0.9rem; text-wrap: balance; }
+  h2 { font-size: 1.45rem; font-weight: 700; letter-spacing: -0.01em; margin: 3rem 0 0.8rem; text-wrap: balance; }
+  h3 { font-size: 1.08rem; font-weight: 650; margin: 1.9rem 0 0.4rem; }
+  p { margin: 0 0 1rem; }
+  .lede { font-size: 1.18rem; line-height: 1.55; color: var(--ink-soft); margin-bottom: 0; }
+  .eyebrow { text-transform: uppercase; letter-spacing: 0.14em; font-size: 0.72rem; font-weight: 650; color: var(--accent); margin: 0; }
+
+  code {
+    font-family: ui-monospace, "Cascadia Code", "SF Mono", Menlo, Consolas, monospace;
+    font-size: 0.86em; background: var(--code-bg); border-radius: 4px; padding: 0.08em 0.32em;
+  }
+  pre {
+    font-family: ui-monospace, "Cascadia Code", "SF Mono", Menlo, Consolas, monospace;
+    font-size: 0.82rem; line-height: 1.55; background: var(--code-bg);
+    border: 1px solid var(--line-soft); border-radius: 8px;
+    padding: 0.9rem 1.1rem; overflow-x: auto; margin: 1rem 0 1.4rem;
+  }
+  pre code { background: none; padding: 0; font-size: inherit; }
+
+  table { border-collapse: collapse; width: 100%; font-size: 0.92rem; line-height: 1.45; }
+  .table-scroll { overflow-x: auto; margin: 1.3rem 0 1.6rem; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); }
+  th { text-align: left; font-size: 0.73rem; text-transform: uppercase; letter-spacing: 0.09em; color: var(--ink-faint); font-weight: 650; padding: 0.65rem 0.9rem; border-bottom: 1px solid var(--line); white-space: nowrap; }
+  td { padding: 0.6rem 0.9rem; border-bottom: 1px solid var(--line-soft); vertical-align: top; }
+  tr:last-child td { border-bottom: none; }
+
+  .note { background: var(--amber-soft); border-radius: 8px; padding: 0.9rem 1.1rem; font-size: 0.95rem; margin: 1.4rem 0; }
+  .note b { color: var(--amber); }
+  .callout { background: var(--accent-soft); border-radius: 8px; padding: 0.9rem 1.1rem; font-size: 0.95rem; margin: 1.4rem 0; }
+
+  .step { display: flex; gap: 1.1rem; margin: 1.7rem 0; }
+  .step-num { flex: none; width: 2.1rem; height: 2.1rem; border-radius: 50%; background: var(--accent); color: var(--bg); font-weight: 700; font-size: 1rem; display: flex; align-items: center; justify-content: center; margin-top: 0.15rem; }
+  .step h3 { margin: 0 0 0.3rem; }
+  .step > div { min-width: 0; flex: 1; }
+  .step p { margin-bottom: 0.5rem; }
+  .step p:last-child { margin-bottom: 0; }
+
+  .flow { display: flex; flex-wrap: wrap; align-items: center; gap: 0.45rem; margin: 1.4rem 0 1.6rem; font-size: 0.82rem; font-weight: 600; }
+  .flow .box { background: var(--surface); border: 1px solid var(--line); border-radius: 7px; padding: 0.42rem 0.7rem; white-space: nowrap; }
+  .flow .box.hot { border-color: var(--accent); color: var(--accent); }
+  .flow .arrow { color: var(--ink-faint); font-weight: 400; }
+  .flow .split { display: flex; flex-direction: column; gap: 0.35rem; }
+
+  .pill { display: inline-block; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; padding: 0.14rem 0.5rem; border-radius: 99px; border: 1px solid currentColor; color: var(--teal); white-space: nowrap; }
+
+  ul { padding-left: 1.2rem; margin: 0.3rem 0 1rem; }
+  li { margin-bottom: 0.35rem; }
+  .footer { margin-top: 3.5rem; padding-top: 1rem; border-top: 1px solid var(--line); font-size: 0.85rem; color: var(--ink-faint); }
+</style>
+
+<div class="wrap">
+  <p class="eyebrow">Implementation plan · GCF Q&amp;A system · August 2026</p>
+  <h1>Hybrid retrieval: BM25 + dense with rank fusion</h1>
+  <p class="lede">The single highest-impact change identified in the retrieval evaluation: run a lexical BM25 index alongside the existing FAISS dense index and merge the two ranked lists with Reciprocal Rank Fusion. This document explains the mechanism in full, then lays out a step-by-step plan mapped to the actual modules in <code>src/gcf_qna/rag/</code>.</p>
+
+  <div class="flow">
+    <span class="box">User query</span><span class="arrow">→</span>
+    <span class="box">History-aware rewrite</span><span class="arrow">→</span>
+    <span class="split">
+      <span class="box">Dense search (FAISS) · top 30</span>
+      <span class="box">BM25 search · top 30</span>
+    </span>
+    <span class="arrow">→</span>
+    <span class="box hot">RRF fusion</span><span class="arrow">→</span>
+    <span class="box">Top 5–10 chunks</span><span class="arrow">→</span>
+    <span class="box">Claude + grounded citations</span>
+  </div>
+
+  <h2>Part I — Why this is the biggest win</h2>
+
+  <h3>1. The failure mode of dense-only retrieval on this corpus</h3>
+  <p>The current retriever embeds the query with <code>all-mpnet-base-v2</code> and returns the five nearest chunks by cosine similarity. Embeddings encode <i>meaning as a direction in vector space</i> — and that representation has a structural blind spot: <b>rare, exact tokens carry almost no weight</b>.</p>
+  <p>Typical queries against this corpus lean on exactly those tokens: <code>FP274</code>, <code>GCF/B.42/02</code>, an accredited entity's name, a country, a dollar figure. To the embedding model, <code>FP274</code> is a low-frequency alphanumeric string it has essentially never seen in training; it contributes a tiny, noisy nudge to the 768-dimension vector, while the surrounding words — "total financing for" — dominate it.</p>
+  <p>The corpus shape turns this weakness into the dominant failure mode. All ~90 funding-proposal packages follow the same template, so every document contains a near-identical "financing information" section written in the same GCF boilerplate. The query vector for <i>"total financing for FP274"</i> therefore lands in a dense cloud of interchangeable chunks from <i>every</i> proposal, and the top 5 are whichever documents' boilerplate happens to score highest — frequently not FP274's. The one token that uniquely identifies the correct document is precisely the token the embedding ignores.</p>
+  <p>Two consequences make this the most damaging error class in an enterprise setting:</p>
+  <ul>
+    <li><b>Wrong-document answers look right.</b> Another proposal's financing section is fluent, plausible, and confidently cited. A user who doesn't cross-check the source images is misled, not merely unserved.</li>
+    <li><b>No downstream stage can recover.</b> A reranker, a better prompt, a stronger chat model — none of them can surface a chunk that retrieval never returned. Candidate recall is the ceiling on everything else.</li>
+  </ul>
+
+  <h3>2. What BM25 contributes</h3>
+  <p>BM25 is the classic lexical ranking function (the default scorer in Lucene/Elasticsearch). It scores a chunk against a query by exact term overlap, shaped by three factors:</p>
+  <ul>
+    <li><b>Inverse document frequency (IDF).</b> Rare terms score enormously; common terms score near zero. <code>FP274</code> appears in one document's chunks → huge IDF → any chunk containing it rockets to the top of the list. "Financing" appears everywhere → contributes almost nothing. This is <i>exactly the inverse</i> of the embedding's behaviour: BM25 is strongest precisely where dense retrieval is weakest.</li>
+    <li><b>Term-frequency saturation.</b> A chunk mentioning a term three times beats one mentioning it once, but with sharply diminishing returns — so repetitive boilerplate cannot win on volume.</li>
+    <li><b>Length normalisation.</b> Long chunks don't win simply by containing more words.</li>
+  </ul>
+  <p>BM25's own blind spot is the mirror image: it needs the literal words. Ask <i>"how does the project handle drought resilience?"</i> when the document says <i>"adaptation to water scarcity"</i> and BM25 finds nothing — while the embedding handles the paraphrase easily. Neither retriever subsumes the other, which is why the design runs both.</p>
+
+  <h3>3. Reciprocal Rank Fusion</h3>
+  <p>Every query now yields two ranked lists whose raw scores are incomparable — cosine similarity in [0, 1] versus unbounded BM25 scores. RRF sidesteps score calibration entirely by using only <i>ranks</i>:</p>
+  <pre><code>RRF(chunk) = Σ over each list containing the chunk of   1 / (k + rank)     with k ≈ 60</code></pre>
+  <p>The constant <code>k</code> damps the influence of top positions so a single list cannot dominate. A chunk ranked #2 by dense and #5 by BM25 scores <code>1/62 + 1/65 ≈ 0.0315</code>, beating a chunk ranked #1 in one list but absent from the other (<code>1/61 ≈ 0.0164</code>). Three properties fall out:</p>
+  <ul>
+    <li>A chunk that <b>both</b> retrievers like — semantically on-topic <i>and</i> carrying the query's identifiers — is almost guaranteed a top slot. That is usually the correct answer chunk.</li>
+    <li>Each retriever can still surface results the other missed entirely, preserving coverage on purely semantic and purely lexical queries alike.</li>
+    <li>There is nothing to tune or normalise. In the IR literature RRF sits within a hair of far more elaborate fusion methods, which is why it is the standard choice in production systems.</li>
+  </ul>
+
+  <p>A concrete trace for <i>"total GCF financing for FP274"</i>:</p>
+  <div class="wrap-wide"><div class="table-scroll"><table>
+    <tr><th>Retriever</th><th>What its top results look like</th><th>Outcome</th></tr>
+    <tr><td><b>Dense alone</b> (today)</td><td>"Financing information" boilerplate from FP231, FP198, FP305, FP274… — the right document at rank 3–8, or absent</td><td>Wrong-document answer, confidently cited</td></tr>
+    <tr><td><b>BM25 alone</b></td><td>Every chunk mentioning <code>FP274</code> — including its table of contents and cover page</td><td>Right document, possibly wrong section</td></tr>
+    <tr><td><b>RRF fused</b></td><td>FP274's financing-section chunks — the only chunks ranked highly by <i>both</i> lists</td><td>Correct document <i>and</i> correct section</td></tr>
+  </table></div></div>
+
+  <h3>4. Impact-per-effort, summarised</h3>
+  <ul>
+    <li><b>Attacks the dominant failure mode</b> — wrong-document retrieval — rather than polishing ranking quality at the margins.</li>
+    <li><b>Nearly free.</b> Pure-Python lexical index over the exact chunks already in <code>chunks.jsonl</code>. No new services, no GPU, no re-embedding, no API cost. Millisecond query overhead.</li>
+    <li><b>No trade-off to manage.</b> Worst case, BM25 adds noise on a purely semantic query, and RRF's rank damping filters most of it.</li>
+    <li><b>Multiplies later stages.</b> A cross-encoder reranker can only reorder the candidate pool; hybrid fixes the pool (recall), the reranker then fixes the order (precision). This is why hybrid comes first in the roadmap sequencing.</li>
+    <li><b>No grounding backfill required.</b> Chunk text is unchanged, so the chunk→page-region mapping behind the grounded viewer is untouched — unlike the chunking changes, which do force a backfill.</li>
+  </ul>
+
+  <h2>Part II — Implementation plan</h2>
+  <p>Sequenced so each step is independently verifiable. Steps 1–4 are the core; steps 0 and 6 bracket the work with measurement. Nothing here changes chunk content, the index-on-disk contract for existing indexes, or the app's <code>Hit</code> interface — the Chainlit app and the grounding pipeline are untouched consumers.</p>
+
+  <div class="step">
+    <div class="step-num">0</div>
+    <div>
+      <h3>Baseline measurement <span class="pill">½ day</span></h3>
+      <p>Before touching retrieval, freeze a small gold set: 25–40 questions with known answer locations, deliberately weighted toward identifier queries (<i>"…for FP274"</i>, <i>"…in GCF/B.30/02/Add.11"</i>, entity and country names) plus a handful of paraphrase questions where dense should win. Each entry: question → expected <code>doc_id</code> (+ page where easy). A script (<code>scripts/eval_retrieval.py</code>) runs the current retriever and reports <b>recall@5 / recall@10</b> (did any returned chunk come from the right document?) and <b>MRR</b>. This baseline is the before/after evidence for the whole change.</p>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-num">1</div>
+    <div>
+      <h3>Tokenizer for identifier-heavy text <span class="pill">½ day</span></h3>
+      <p>BM25 lives or dies on tokenization here. Requirements:</p>
+      <ul>
+        <li><code>FP274</code> survives as one token (and, ideally, also emits <code>fp</code>+<code>274</code>-joined variants so "FP 274" matches).</li>
+        <li>Board codes like <code>GCF/B.42/02/Add.16</code> split on <code>/</code> but keep meaningful pieces (<code>b.42</code>, <code>add.16</code>) intact.</li>
+        <li>Lowercase everything; strip punctuation except intra-token <code>.</code> and digits; keep numbers (budget figures are searchable signal).</li>
+      </ul>
+      <p>Sketch (new module <code>src/gcf_qna/rag/lexical.py</code>):</p>
+      <pre><code>TOKEN_RE = re.compile(r"[a-z0-9]+(?:\.[a-z0-9]+)*")
+
+def tokenize(text: str) -> list[str]:
+    return TOKEN_RE.findall(text.lower())</code></pre>
+      <p>Also index each chunk's <b>doc_id text</b> alongside its body — filenames like <code>02_gcf-b42-02-add16-funding-proposal-package-fp274</code> carry the proposal number even when the chunk body doesn't. Concatenating <code>doc_id.replace("-", " ")</code> into the indexed text is a one-line, high-yield trick.</p>
+      <p><b>Unit tests:</b> <code>tokenize("FP274")==["fp274"]</code>, codes in real corpus samples round-trip, no empty-token output.</p>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-num">2</div>
+    <div>
+      <h3>Build and persist the BM25 index <span class="pill">½–1 day</span></h3>
+      <p>Two viable backends; recommendation is the first:</p>
+      <div class="table-scroll"><table>
+        <tr><th>Option</th><th>For</th><th>Against</th></tr>
+        <tr><td><b><code>rank-bm25</code></b> (pure Python)</td><td>~20 lines; zero infrastructure; index = pickled token lists or rebuilt from <code>chunks.jsonl</code> at load (seconds at this scale)</td><td>Whole index in memory (fine at ≤ 40k chunks); pickle sidecar is the one non-JSON artifact — or avoid it by re-tokenizing at load</td></tr>
+        <tr><td><b>SQLite FTS5</b></td><td>Persistent, queryable, no pickle; scales further</td><td>FTS5 default tokenizer will split codes — needs a custom tokenizer or pre-tokenized column; more moving parts</td></tr>
+      </table></div>
+      <p>With <code>rank-bm25</code>, prefer <b>rebuilding from <code>chunks.jsonl</code> at load time</b> over persisting a pickle: it keeps the on-disk index format exactly as it is today (JSON + FAISS only, the deliberate no-pickle contract in <code>index.py</code>), costs a few seconds at startup, and guarantees the lexical index can never drift from the chunk metadata. Record <code>"lexical": "bm25-okapi + tokenizer-v1"</code> in <code>config.json</code> so indexes are self-describing.</p>
+      <p><b>Touchpoints:</b> <code>lexical.py</code> (new), <code>index.py</code> (config field), <code>scripts/build_index.py</code> (no structural change — chunks are unchanged).</p>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-num">3</div>
+    <div>
+      <h3>Fusion in the retriever <span class="pill">½ day</span></h3>
+      <p>Extend <code>Retriever.search()</code> to query both indexes deep (top 30 each — fusion needs overlap room), fuse by rank, and return the same <code>Hit</code> list as today so every consumer (context assembly, sources line, grounding) is untouched:</p>
+      <pre><code>def rrf(ranked_lists: list[list[int]], k: int = 60) -> dict[int, float]:
+    scores: dict[int, float] = {}
+    for ranking in ranked_lists:
+        for rank, idx in enumerate(ranking):
+            scores[idx] = scores.get(idx, 0.0) + 1.0 / (k + rank + 1)
+    return scores
+
+def search(self, query: str, top_k: int = 5) -> list[Hit]:
+    dense_ids = self._dense_ranking(query, n=CANDIDATES)     # existing FAISS path
+    lex_ids   = self._lexical_ranking(query, n=CANDIDATES)   # BM25 path
+    fused = sorted(rrf([dense_ids, lex_ids]).items(),
+                   key=lambda kv: kv[1], reverse=True)[:top_k]
+    return [self._hit(idx, score) for idx, score in fused]</code></pre>
+      <p>Keep the existing FAISS <code>-1</code>-padding guard inside <code>_dense_ranking</code>. Report the RRF score in <code>Hit.score</code> (documented as a rank-fusion score, not cosine) — the app only formats it, so nothing breaks; the score-threshold guard (step 4) then operates on ranks/scores consistently.</p>
+      <p><b>Config additions</b> in <code>config.py</code>, all env-overridable per the repo's convention: <code>CANDIDATES_PER_RETRIEVER=30</code>, <code>RRF_K=60</code>, <code>HYBRID=1</code> (kill-switch back to dense-only for A/B).</p>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-num">4</div>
+    <div>
+      <h3>No-answer guard <span class="pill">hours</span></h3>
+      <p>Today the top 5 are injected regardless of quality. Add a floor: if the best fused result's underlying signals are weak (e.g. best cosine below a threshold <i>and</i> no lexical hit contained a rare query term), prepend a note to the context telling the model retrieval confidence is low. The system prompt already instructs "say so plainly instead of guessing" — this gives that instruction the signal it needs to fire.</p>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-num">5</div>
+    <div>
+      <h3>Companion fix: history-aware query rewriting <span class="pill">½ day</span></h3>
+      <p>Hybrid cannot fix follow-ups — <i>"what about its budget?"</i> gives BM25 no identifier to latch onto either, since the pronoun is unresolvable by both retrievers. In <code>chainlit_app.py</code>, before calling <code>retriever.search()</code>, make one small Claude Haiku call: given the last few history turns and the new message, emit a standalone search query (<i>"total budget of funding proposal FP274"</i>). Use the rewritten query for retrieval only; send the user's original message to the main model as before. Skip the call when there is no history.</p>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-num">6</div>
+    <div>
+      <h3>Measure, A/B, adopt <span class="pill">½ day</span></h3>
+      <p>Re-run <code>eval_retrieval.py</code> from step 0 against dense-only (<code>HYBRID=0</code>) and hybrid. <b>Acceptance criteria:</b> recall@5 on identifier questions improves substantially (expectation: from roughly coin-flip to near-ceiling), recall on paraphrase questions does not regress beyond noise, and per-query latency overhead stays under ~50 ms. Then flip the default and record both numbers — they are the headline result for the project report.</p>
+    </div>
+  </div>
+
+  <h3>Testing checklist</h3>
+  <ul>
+    <li>Tokenizer unit tests: codes survive, casing, punctuation, numerals, empty input.</li>
+    <li>RRF unit tests: deterministic ordering, both-lists beats single-list at comparable ranks, ties broken stably.</li>
+    <li>Retriever integration: hybrid returns valid <code>Hit</code>s on the real index; <code>HYBRID=0</code> reproduces current behaviour byte-for-byte; tiny-index edge case (fewer chunks than <code>top_k</code>) still respects the <code>-1</code>-padding guard.</li>
+    <li>End-to-end smoke: the two canonical queries — one identifier-led, one paraphrase-led — through the Chainlit app, confirming sources cite the expected document and grounded page images still render.</li>
+  </ul>
+
+  <h3>Rollout &amp; risk</h3>
+  <ul>
+    <li><b>Zero-risk rollout path:</b> the change is code-side only; existing indexes remain valid. Ship behind <code>HYBRID=1</code>, keep the env kill-switch for one iteration, delete it once the eval numbers are in.</li>
+    <li><b>Known residual gaps</b> (by design, addressed later in the roadmap): follow-up resolution beyond simple rewrites, per-document quotas for comparison queries (stage 2 decomposition), and ranking precision within the right document (reranker).</li>
+    <li><b>Failure mode to watch:</b> BM25 over-rewarding chunks that merely <i>mention</i> a proposal code in cross-references ("as in FP198…"). The reranker planned next in Tier A is the systematic fix; in the interim the fused dense signal keeps these from dominating.</li>
+  </ul>
+
+  <div class="callout">
+    <b>Definition of done.</b> Gold-set recall@5 for identifier queries materially improved and documented; paraphrase recall not regressed; <code>HYBRID</code> default on; follow-up questions retrieve against rewritten standalone queries; grounded viewer unchanged and verified working.
+  </div>
+
+  <div class="note">
+    <b>Effort summary:</b> roughly 3–4 focused days including evaluation, all local, no new services, no API-cost increase beyond one small rewrite call per follow-up turn. No grounding backfill needed — chunk text is untouched.
+  </div>
+
+  <p class="footer">Companion to <code>docs/rag-approaches-evaluation.html</code> (§2, Tier A). Module references: <code>src/gcf_qna/rag/retrieve.py</code> · <code>index.py</code> · <code>chunk.py</code> · <code>src/gcf_qna/app/chainlit_app.py</code>. This document is a plan — no code has been modified.</p>
+</div>
+</body>
+</html>
