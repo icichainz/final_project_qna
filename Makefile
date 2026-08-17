@@ -50,7 +50,13 @@ ground-demo:         ## draw citation highlights on real pages (DOC=<stem> OUT=<
 	$(PY) scripts/demo_grounding.py --doc $(DOC) --out $(OUT)
 
 chat:                ## run the Chainlit app (reads .env; INDEX_NAME picks the index)
-	@if [ -f .env ]; then set -a; . ./.env; set +a; fi; \
+	@touch .env
+	@grep -q '^CHAINLIT_AUTH_SECRET=..*' .env || { \
+	  echo "CHAINLIT_AUTH_SECRET=$$(openssl rand -hex 32)" >> .env; \
+	  echo "🔑 generated CHAINLIT_AUTH_SECRET into .env"; }
+	@grep -q '^APP_USERS=..*' .env || \
+	  echo "⚠️  APP_USERS is not set in .env — nobody will be able to log in. Add e.g.: APP_USERS=demo:choose-a-password"
+	@set -a; . ./.env; set +a; \
 	venv/bin/chainlit run src/gcf_qna/app/chainlit_app.py --headless --host 0.0.0.0 --port 8000
 
 docker-build:        ## build the app image
