@@ -87,13 +87,46 @@ if os.getenv("PRELOAD", "1") == "1":
 _data_layer_instance = None
 
 
+def _make_sqlite_layer():
+    """SQLAlchemyDataLayer with SQLite-shape normalization.
+
+    The layer targets Postgres, whose driver auto-parses JSONB -> dict and
+    BOOLEAN -> bool. aiosqlite returns raw TEXT/int, and chainlit's frontend
+    is written against the Postgres shape — replayed assistant messages
+    render blank when step.metadata arrives as a string. Normalize at the
+    one read path both the sidebar and thread replay flow through.
+    """
+    from chainlit.data.sql_alchemy import SQLAlchemyDataLayer
+
+    class SqliteNormalizedLayer(SQLAlchemyDataLayer):
+        async def get_all_user_threads(self, user_id=None, thread_id=None):
+            threads = await super().get_all_user_threads(user_id, thread_id)
+            for t in threads or []:
+                if isinstance(t.get("metadata"), str):
+                    try:
+                        t["metadata"] = json.loads(t["metadata"] or "{}")
+                    except ValueError:
+                        t["metadata"] = {}
+                for st in t.get("steps") or []:
+                    if isinstance(st.get("metadata"), str):
+                        try:
+                            st["metadata"] = json.loads(st["metadata"] or "{}")
+                        except ValueError:
+                            st["metadata"] = {}
+                    for k in ("streaming", "waitForAnswer", "isError", "defaultOpen"):
+                        if isinstance(st.get(k), int):
+                            st[k] = bool(st[k])
+            return threads
+
+    return SqliteNormalizedLayer
+
+
 @cl.data_layer
 def _data_layer():
     global _data_layer_instance
     if _data_layer_instance is None:
-        from chainlit.data.sql_alchemy import SQLAlchemyDataLayer
-
         from gcf_qna.app.storage_local import LocalStorageClient
+        SQLAlchemyDataLayer = _make_sqlite_layer()
         if not config.APP_DB.exists():
             # first boot: create the schema (idempotent DDL)
             import runpy
