@@ -85,7 +85,7 @@ PAGE_MEGAPIXELS = float(os.getenv("PAGE_MEGAPIXELS", "2.0"))
 JPEG_QUALITY = int(os.getenv("JPEG_QUALITY", "92"))
 TEMPERATURE = float(os.getenv("TEMPERATURE", "0.0"))
 MAX_OUTPUT_TOKENS = int(os.getenv("MAX_OUTPUT_TOKENS", "320000"))
-MAX_CONCURRENT = int(os.getenv("MAX_CONCURRENT", "10"))
+MAX_CONCURRENT = int(os.getenv("MAX_CONCURRENT", "1"))
 USE_TEXT_LAYER = os.getenv("USE_TEXT_LAYER", "1") == "1"
 REQUEST_TIMEOUT = int(os.getenv("REQUEST_TIMEOUT", "9999999999"))
 CRASH_COOLDOWN = float(os.getenv("CRASH_COOLDOWN", "45"))
