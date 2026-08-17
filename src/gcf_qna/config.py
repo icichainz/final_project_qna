@@ -31,6 +31,10 @@ MAX_ANSWER_TOKENS = int(os.getenv("MAX_ANSWER_TOKENS", "1024"))
 # Optional: point the OpenAI client elsewhere (e.g. LM Studio) instead of api.openai.com
 OPENAI_BASE_URL = os.getenv("OPENAI_BASE_URL", "")
 
+# --- app persistence (conversation threads) ---
+APP_DB = Path(os.getenv("APP_DB", str(DATA_DIR / "app.db")))
+PUBLIC_DIR = PROJECT_ROOT / "public"
+
 # --- local inference endpoint (VLM extraction) ---
 LMSTUDIO_BASE_URL = os.getenv("LMSTUDIO_BASE_URL", "http://192.168.56.1:12345/v1").rstrip("/")
 LMSTUDIO_API_KEY = os.getenv("LMSTUDIO_API_KEY", "")

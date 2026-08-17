@@ -8,6 +8,7 @@ Needs: pip install -e ".[app]"  and OPENAI_API_KEY in the environment
 """
 from __future__ import annotations
 
+import hmac
 import json
 import os
 import re
@@ -16,6 +17,7 @@ import time
 from typing import Optional
 
 import chainlit as cl
+from chainlit.types import ThreadDict
 
 from gcf_qna import config
 from gcf_qna.app.highlight import annotated_page
@@ -73,6 +75,82 @@ def get_retriever() -> Optional[Retriever]:
 # question hits a hot retriever. PRELOAD=0 disables (e.g. for quick UI work).
 if os.getenv("PRELOAD", "1") == "1":
     threading.Thread(target=get_retriever, daemon=True).start()
+
+
+# ---------------------------------------------------------------------------
+# Conversation history: SQLite-backed thread persistence + auth.
+# Chainlit's sidebar (threads, resume, feedback) activates when a data layer
+# AND authentication are configured. Threads live in data/app.db; element
+# files (evidence images) are copied under public/app_files/ so resumed
+# threads render across restarts. Schema: scripts/init_appdb.py.
+# ---------------------------------------------------------------------------
+_data_layer_instance = None
+
+
+@cl.data_layer
+def _data_layer():
+    global _data_layer_instance
+    if _data_layer_instance is None:
+        from chainlit.data.sql_alchemy import SQLAlchemyDataLayer
+
+        from gcf_qna.app.storage_local import LocalStorageClient
+        if not config.APP_DB.exists():
+            # first boot: create the schema (idempotent DDL)
+            import runpy
+            runpy.run_path(str(config.PROJECT_ROOT / "scripts" / "init_appdb.py"),
+                           run_name="__main__")
+        _data_layer_instance = SQLAlchemyDataLayer(
+            conninfo=f"sqlite+aiosqlite:///{config.APP_DB}",
+            storage_provider=LocalStorageClient(),
+        )
+    return _data_layer_instance
+
+
+def _parse_users() -> dict:
+    """APP_USERS='alice:secret,bob:secret2' -> {identifier: password}."""
+    out = {}
+    for pair in os.getenv("APP_USERS", "").split(","):
+        if ":" in pair:
+            name, _, pw = pair.partition(":")
+            if name.strip() and pw:
+                out[name.strip()] = pw
+    return out
+
+
+@cl.password_auth_callback
+def auth(username: str, password: str) -> Optional[cl.User]:
+    users = _parse_users()
+    expected = users.get(username.strip())
+    if expected and hmac.compare_digest(password, expected):
+        return cl.User(identifier=username.strip())
+    return None
+
+
+def _history_from_thread(thread: ThreadDict) -> list:
+    """Rebuild the condenser's memory from persisted steps.
+
+    Without this, the first follow-up in a resumed thread regresses to the
+    starved-decomposer bug: pronouns unresolvable, cited doc ids invisible.
+    Sources lines (📎) are UI furniture, not conversation — skipped.
+    """
+    steps = sorted(thread.get("steps") or [], key=lambda s: s.get("createdAt") or "")
+    history = []
+    for st in steps:
+        out = (st.get("output") or "").strip()
+        if not out or out.startswith("📎"):
+            continue
+        if st.get("type") == "user_message":
+            history.append({"role": "user", "content": out})
+        elif st.get("type") == "assistant_message":
+            history.append({"role": "assistant", "content": out})
+    return history[-12:]
+
+
+@cl.on_chat_resume
+async def on_resume(thread: ThreadDict):
+    retriever = await cl.make_async(get_retriever)()
+    cl.user_session.set("retriever", retriever)
+    cl.user_session.set("history", _history_from_thread(thread))
 
 
 @cl.on_chat_start

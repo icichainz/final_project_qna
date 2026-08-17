@@ -20,3 +20,6 @@ data/**
 *.faiss
 *.pkl
 src/gcf_qna.egg-info/
+
+# persisted element files (copies of evidence images; regenerable)
+public/app_files/

@@ -16,11 +16,14 @@ OUT     ?= /tmp/ground_demo                            # demo output dir
 _limit  = $(if $(LIMIT),--limit $(LIMIT))
 
 .DEFAULT_GOAL := help
-.PHONY: help venv install extract status retry boxes index ground-demo chat docker-build docker-up
+.PHONY: help venv install init-db extract status retry boxes index ground-demo chat docker-build docker-up
 
 help:                ## list available targets
 	@awk 'BEGIN {FS = ":.*##"} /^[a-zA-Z_-]+:.*##/ \
 	  {printf "  \033[36m%-14s\033[0m %s\n", $$1, $$2}' $(MAKEFILE_LIST)
+
+init-db:             ## create/upgrade the conversation-history database
+	$(PY) scripts/init_appdb.py
 
 venv:                ## create the virtualenv
 	python3 -m venv venv
