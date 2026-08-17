@@ -1,8 +1,9 @@
 """Load extracted documents (markdown / plain text) for indexing."""
 from __future__ import annotations
 
+import re
 from pathlib import Path
-from typing import Iterator, Tuple
+from typing import Iterator, List, Tuple
 
 TEXT_SUFFIXES = {".md", ".txt"}
 
@@ -26,3 +27,26 @@ def iter_documents(source_dir: Path) -> Iterator[Tuple[str, str]]:
         text = f.read_text(encoding="utf-8", errors="replace").strip()
         if text:
             yield str(rel.with_suffix("")), text
+
+
+# The merge separator the extraction pipeline writes: "**Page N**" fenced by ---
+_PAGE_MARK_RE = re.compile(r"(?:^|\n+)---\n\*\*Page (\d+)\*\*\n---\n+")
+
+
+def split_pages(text: str) -> List[Tuple[int, str]]:
+    """Split merged extraction markdown into (page_no, body) pairs.
+
+    Falls back to a single (0, text) pair when no page markers exist, so
+    documents from other extractors still index (page 0 = unknown).
+    """
+    parts = _PAGE_MARK_RE.split(text)
+    out: List[Tuple[int, str]] = []
+    for i in range(1, len(parts) - 1, 2):
+        body = parts[i + 1].strip()
+        if body:
+            out.append((int(parts[i]), body))
+    if not out:
+        body = text.strip()
+        if body:
+            out.append((0, body))
+    return out

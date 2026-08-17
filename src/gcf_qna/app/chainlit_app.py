@@ -62,7 +62,9 @@ async def main(message: cl.Message):
     import anthropic
 
     hits = await cl.make_async(retriever.search)(message.content, config.TOP_K)
-    context = "\n\n".join(f"[{h.doc_id}] (score {h.score:.2f})\n{h.text}" for h in hits)
+    context = "\n\n".join(
+        f"[{h.doc_id}{f', p. {h.page}' if h.page else ''}] (score {h.score:.2f})\n{h.text}"
+        for h in hits)
 
     history = cl.user_session.get("history") or []
     messages = history + [{
@@ -89,5 +91,6 @@ async def main(message: cl.Message):
     cl.user_session.set("history", history[-12:])  # keep the last 6 exchanges
 
     if hits:
-        sources = ", ".join(sorted({h.doc_id for h in hits}))
+        sources = ", ".join(sorted({f"{h.doc_id} p.{h.page}" if h.page else h.doc_id
+                                    for h in hits}))
         await cl.Message(content=f"📎 Sources: {sources}").send()

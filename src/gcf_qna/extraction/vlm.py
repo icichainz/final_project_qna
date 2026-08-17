@@ -84,10 +84,10 @@ LMSTUDIO_API_KEY = config.LMSTUDIO_API_KEY
 PAGE_MEGAPIXELS = float(os.getenv("PAGE_MEGAPIXELS", "2.0"))
 JPEG_QUALITY = int(os.getenv("JPEG_QUALITY", "92"))
 TEMPERATURE = float(os.getenv("TEMPERATURE", "0.0"))
-MAX_OUTPUT_TOKENS = int(os.getenv("MAX_OUTPUT_TOKENS", "4096"))
-MAX_CONCURRENT = int(os.getenv("MAX_CONCURRENT", "1"))
+MAX_OUTPUT_TOKENS = int(os.getenv("MAX_OUTPUT_TOKENS", "320000"))
+MAX_CONCURRENT = int(os.getenv("MAX_CONCURRENT", "10"))
 USE_TEXT_LAYER = os.getenv("USE_TEXT_LAYER", "1") == "1"
-REQUEST_TIMEOUT = int(os.getenv("REQUEST_TIMEOUT", "1200"))
+REQUEST_TIMEOUT = int(os.getenv("REQUEST_TIMEOUT", "9999999999"))
 CRASH_COOLDOWN = float(os.getenv("CRASH_COOLDOWN", "45"))
 CIRCUIT_TRIP = int(os.getenv("CIRCUIT_TRIP", "20"))
 # Documents still broken after this many full passes are skipped unless
@@ -148,6 +148,80 @@ def _write_atomic_json(path: Path, data: Dict[str, Any]) -> None:
     tmp.replace(path)
 
 
+def _overlap_frac(a: "pymupdf.Rect", b: "pymupdf.Rect") -> float:
+    r = pymupdf.Rect(a)
+    r.intersect(b)
+    return (abs(r) / abs(a)) if abs(a) else 0.0
+
+
+def extract_page_boxes(page, zoom: float, w: int, h: int) -> Dict[str, Any]:
+    """Text lines, tables, and figures for one page, in PIXEL coordinates of
+    the cached JPEG (zoom applied), so viewers can draw rects directly.
+
+    Sources (all from the born-digital PDF, no OCR):
+      lines   -> page.get_text("dict")  block/line hierarchy
+      tables  -> page.find_tables()     ruled-table detector
+      figures -> raster image rects + clustered vector drawings
+    """
+    def px(b) -> List[float]:
+        return [round(b[0] * zoom, 1), round(b[1] * zoom, 1),
+                round(b[2] * zoom, 1), round(b[3] * zoom, 1)]
+
+    lines: List[Dict[str, Any]] = []
+    for blk in page.get_text("dict").get("blocks", []):
+        if blk.get("type") != 0:
+            continue
+        for ln in blk.get("lines", []):
+            spans = [sp for sp in ln.get("spans", []) if sp.get("text", "").strip()]
+            text = " ".join(sp["text"].strip() for sp in spans).strip()
+            if not text:
+                continue
+            # Union of span boxes beats the raw line box: dotted leaders and
+            # link annotations can inflate line bboxes across several rows.
+            x0 = min(sp["bbox"][0] for sp in spans)
+            y0 = min(sp["bbox"][1] for sp in spans)
+            x1 = max(sp["bbox"][2] for sp in spans)
+            y1 = max(sp["bbox"][3] for sp in spans)
+            max_size = max((sp.get("size", 10.0) for sp in spans), default=10.0)
+            y1 = min(y1, y0 + 1.6 * max_size)          # cap runaway heights
+            lines.append({"bbox": px((x0, y0, x1, y1)), "text": text})
+
+    tables: List[Dict[str, Any]] = []
+    table_rects: List[pymupdf.Rect] = []
+    try:
+        for t in page.find_tables().tables:
+            table_rects.append(pymupdf.Rect(t.bbox))
+            tables.append({"bbox": px(t.bbox), "rows": t.row_count, "cols": t.col_count})
+    except Exception:
+        pass
+
+    figures: List[Dict[str, Any]] = []
+    try:
+        for img in page.get_images(full=True):
+            for r in page.get_image_rects(img):
+                if r.width < 20 or r.height < 20:          # icons, bullets, logos
+                    continue
+                figures.append({"bbox": px(tuple(r)), "kind": "image"})
+    except Exception:
+        pass
+    try:
+        page_area = abs(page.rect)
+        for r in page.cluster_drawings():
+            if r.width < 30 or r.height < 30:
+                continue
+            if page_area and abs(r) > 0.9 * page_area:     # page border frames
+                continue
+            if (abs(r) < 0.05 * page_area
+                    and any(_overlap_frac(r, tr) > 0.5 for tr in table_rects)):
+                continue    # small cluster inside a table = ruling, not a figure
+            figures.append({"bbox": px(tuple(r)), "kind": "drawing"})
+    except Exception:
+        pass
+
+    return {"w": w, "h": h, "zoom": round(zoom, 4), "rotation": page.rotation,
+            "lines": lines, "tables": tables, "figures": figures}
+
+
 def render_pdf_worker(pdf_path: str, cache_dir: str) -> Dict[str, Any]:
     """Process-pool worker: render every page to a right-sized JPEG.
 
@@ -179,6 +253,11 @@ def render_pdf_worker(pdf_path: str, cache_dir: str) -> Dict[str, Any]:
                 img.save(tmp_out / name, format="JPEG", quality=JPEG_QUALITY,
                          optimize=True, progressive=False, subsampling=0)
                 entry["img"] = name
+                boxes = extract_page_boxes(page, zoom, pix.width, pix.height)
+                bname = f"page_{i + 1:04d}.boxes.json"
+                (tmp_out / bname).write_text(
+                    json.dumps(boxes, ensure_ascii=False), encoding="utf-8")
+                entry["boxes"] = bname
 
             if USE_TEXT_LAYER:
                 txt = page.get_text("text").strip()

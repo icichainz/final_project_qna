@@ -14,7 +14,8 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 
 from gcf_qna import config
-from gcf_qna.rag import Embedder, build_index, chunk_text, iter_documents, save_index
+from gcf_qna.rag import (Embedder, build_index, chunk_text, iter_documents,
+                         save_index, split_pages)
 
 
 def main():
@@ -31,8 +32,9 @@ def main():
 
     chunks, n_docs = [], 0
     for doc_id, text in iter_documents(a.source):
-        for piece in chunk_text(text, a.chunk_size, a.chunk_overlap):
-            chunks.append({"doc_id": doc_id, "text": piece})
+        for page_no, body in split_pages(text):
+            for piece in chunk_text(body, a.chunk_size, a.chunk_overlap):
+                chunks.append({"doc_id": doc_id, "page": page_no, "text": piece})
         n_docs += 1
         if a.limit and n_docs >= a.limit:
             break
