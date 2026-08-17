@@ -8,6 +8,7 @@ Needs: pip install -e ".[app]"  and OPENAI_API_KEY in the environment
 """
 from __future__ import annotations
 
+import json
 import os
 import threading
 import time
@@ -108,36 +109,67 @@ async def main(message: cl.Message):
     history = cl.user_session.get("history") or []
 
     # Follow-ups carry references the embedder cannot resolve ("how does THAT
-    # compare..."), so retrieval on the raw message fetches noise. Condense the
-    # message against recent history into a standalone query; the original
-    # wording still goes to the answering model unchanged.
-    search_query = message.content
+    # compare..."), so retrieval on the raw message fetches noise. One LLM call
+    # rewrites the message against recent history — into a single standalone
+    # query, or, for comparisons/aggregations over documents named in the
+    # conversation, one doc-scoped sub-query per entity (per-document quota).
+    # See docs/query-decomposition.html. Best-effort: any failure falls back
+    # to the raw message; the original wording still goes to the answer model.
+    search_queries = [{"q": message.content, "doc": None}]
     if history:
         try:
             convo = "\n".join(f"{m['role']}: {m['content'][:500]}" for m in history[-6:])
             resp = await client.chat.completions.create(
                 model=config.CHAT_MODEL,
-                max_completion_tokens=80,
+                max_completion_tokens=300,
+                response_format={"type": "json_object"},
                 messages=[
                     {"role": "system", "content":
-                        "Rewrite the user's latest message as ONE standalone search "
-                        "query for a document index, resolving pronouns and references "
-                        "from the conversation. Output only the query text."},
+                        "Turn the user's latest message into retrieval queries for a "
+                        "document index, resolving pronouns and references from the "
+                        "conversation. Respond with JSON only.\n"
+                        'Normally: {"queries": [{"q": "<one standalone query>"}]}\n'
+                        "If the message compares or aggregates over multiple specific "
+                        "documents/projects cited in the conversation (ids look like "
+                        "'40_gcf-b39-02-add11-...'), emit one query per item, max 6, "
+                        'each with its document id: {"queries": [{"q": "...", '
+                        '"doc": "<id>"}, ...]}\\n'
+                        "Each sub-query must be a short search phrase about ONE "
+                        "item's attribute (e.g. 'indigenous peoples plan dedicated "
+                        "budget'), never a comparative question."},
                     {"role": "user", "content":
                         f"Conversation:\n{convo}\n\nLatest message: {message.content}"},
                 ],
             )
-            condensed = (resp.choices[0].message.content or "").strip().strip('"')
-            if condensed:
-                search_query = condensed
+            data = json.loads(resp.choices[0].message.content or "{}")
+            parsed = []
+            for item in (data.get("queries") or [])[:6]:
+                if isinstance(item, str) and item.strip():
+                    parsed.append({"q": item.strip(), "doc": None})
+                elif isinstance(item, dict) and (item.get("q") or "").strip():
+                    parsed.append({"q": item["q"].strip(), "doc": item.get("doc") or None})
+            if parsed:
+                search_queries = parsed
         except Exception:
-            pass    # condensation is best-effort; raw message still retrieves
+            pass
 
-    if search_query != message.content:
+    decomposed = len(search_queries) > 1
+    if decomposed or search_queries[0]["q"] != message.content:
         async with cl.Step(name="retrieval query") as step:
-            step.output = search_query
+            step.output = "\n".join(
+                f"{sq['q']}" + (f"   [{sq['doc']}]" if sq.get("doc") else "")
+                for sq in search_queries)
 
-    hits = await cl.make_async(retriever.search)(search_query, config.TOP_K)
+    per_query = config.TOP_K if not decomposed else max(3, config.TOP_K // len(search_queries))
+    seen, hits = set(), []
+    for sq in search_queries:
+        got = await cl.make_async(retriever.search)(sq["q"], per_query, sq.get("doc"))
+        for h in got:
+            key = (h.doc_id, h.page, h.text[:120])
+            if key not in seen:
+                seen.add(key)
+                hits.append(h)
+    hits = hits[:15]
     context = "\n\n".join(
         f"[{h.doc_id}{f', p. {h.page}' if h.page else ''}] (score {h.score:.2f})\n{h.text}"
         for h in hits)
