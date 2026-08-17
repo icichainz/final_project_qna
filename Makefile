@@ -48,7 +48,7 @@ ground-demo:         ## draw citation highlights on real pages (DOC=<stem> OUT=<
 
 chat:                ## run the Chainlit app (reads .env; INDEX_NAME picks the index)
 	@if [ -f .env ]; then set -a; . ./.env; set +a; fi; \
-	venv/bin/chainlit run src/gcf_qna/app/chainlit_app.py
+	venv/bin/chainlit run src/gcf_qna/app/chainlit_app.py --headless --host 0.0.0.0 --port 8000
 
 docker-build:        ## build the app image
 	docker compose build

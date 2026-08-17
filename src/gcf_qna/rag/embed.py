@@ -20,7 +20,14 @@ class Embedder:
     def model(self):
         if self._model is None:
             from sentence_transformers import SentenceTransformer
-            self._model = SentenceTransformer(self.model_name, device=self._device)
+            # Cache-first: a locally cached model loads with zero HF Hub
+            # round-trips (~30 HEAD requests otherwise). Falls back to a
+            # normal online load for the first-ever download.
+            try:
+                self._model = SentenceTransformer(
+                    self.model_name, device=self._device, local_files_only=True)
+            except Exception:
+                self._model = SentenceTransformer(self.model_name, device=self._device)
         return self._model
 
     def encode(self, texts: List[str], batch_size: int = 32) -> "np.ndarray":

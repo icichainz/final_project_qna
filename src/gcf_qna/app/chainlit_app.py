@@ -9,6 +9,9 @@ Needs: pip install -e ".[app]"  and OPENAI_API_KEY in the environment
 from __future__ import annotations
 
 import os
+import threading
+import time
+from typing import Optional
 
 import chainlit as cl
 
@@ -29,6 +32,39 @@ def _index_dir():
     return config.INDEX_DIR / os.getenv("INDEX_NAME", "default")
 
 
+# One retriever per process, shared by every chat session: the FAISS index is
+# ~730 MB on disk and the embedder holds GPU state — loading them per session
+# made the first question of every chat pay ~1 min of cold start.
+_retriever: Optional[Retriever] = None
+_retriever_meta: dict = {}
+_retriever_lock = threading.Lock()
+
+
+def get_retriever() -> Optional[Retriever]:
+    global _retriever
+    with _retriever_lock:
+        if _retriever is None:
+            idx_dir = _index_dir()
+            if not (idx_dir / "index.faiss").exists():
+                return None
+            t0 = time.perf_counter()
+            index, chunks, cfg = load_index(idx_dir)
+            embedder = Embedder(cfg.get("embedding_model"))
+            embedder.encode(["warmup"])   # load weights + CUDA context now
+            _retriever = Retriever(index, chunks, embedder)
+            _retriever_meta.update(cfg)
+            print(f"retriever ready: {cfg.get('n_chunks')} chunks, "
+                  f"{cfg.get('embedding_model')} in {time.perf_counter() - t0:.1f}s",
+                  flush=True)
+    return _retriever
+
+
+# Warm up in the background at server start, so even the first session's first
+# question hits a hot retriever. PRELOAD=0 disables (e.g. for quick UI work).
+if os.getenv("PRELOAD", "1") == "1":
+    threading.Thread(target=get_retriever, daemon=True).start()
+
+
 @cl.on_chat_start
 async def start():
     if not os.getenv("OPENAI_API_KEY") and not config.OPENAI_BASE_URL:
@@ -46,13 +82,12 @@ async def start():
         ).send()
         return
 
-    index, chunks, cfg = await cl.make_async(load_index)(idx_dir)
-    retriever = Retriever(index, chunks, Embedder(cfg.get("embedding_model")))
+    retriever = await cl.make_async(get_retriever)()
     cl.user_session.set("retriever", retriever)
     cl.user_session.set("history", [])
     await cl.Message(
-        content=f"Ready — {cfg['n_chunks']} chunks indexed "
-                f"({cfg.get('embedding_model')}). Ask about the GCF proposals."
+        content=f"Ready — {_retriever_meta.get('n_chunks')} chunks indexed "
+                f"({_retriever_meta.get('embedding_model')}). Ask about the GCF proposals."
     ).send()
 
 
