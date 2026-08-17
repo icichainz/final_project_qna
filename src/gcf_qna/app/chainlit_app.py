@@ -10,6 +10,7 @@ from __future__ import annotations
 
 import json
 import os
+import re
 import threading
 import time
 from typing import Optional
@@ -118,7 +119,16 @@ async def main(message: cl.Message):
     search_queries = [{"q": message.content, "doc": None}]
     if history:
         try:
-            convo = "\n".join(f"{m['role']}: {m['content'][:500]}" for m in history[-6:])
+            # 500-char truncation used to cut off the citation lists, leaving
+            # the decomposer blind to most cited docs — extract them explicitly.
+            convo = "\n".join(f"{m['role']}: {m['content'][:1200]}" for m in history[-6:])
+            cited: list = []
+            for m in history:
+                for d in re.findall(r"\[(\d{1,3}_gcf-[\w.\-]+)", m["content"]):
+                    if d not in cited:
+                        cited.append(d)
+            if cited:
+                convo += "\nDocuments cited in conversation: " + ", ".join(cited[-12:])
             resp = await client.chat.completions.create(
                 model=config.CHAT_MODEL,
                 max_completion_tokens=300,
@@ -126,17 +136,19 @@ async def main(message: cl.Message):
                 messages=[
                     {"role": "system", "content":
                         "Turn the user's latest message into retrieval queries for a "
-                        "document index, resolving pronouns and references from the "
-                        "conversation. Respond with JSON only.\n"
-                        'Normally: {"queries": [{"q": "<one standalone query>"}]}\n'
-                        "If the message compares or aggregates over multiple specific "
-                        "documents/projects cited in the conversation (ids look like "
-                        "'40_gcf-b39-02-add11-...'), emit one query per item, max 6, "
-                        'each with its document id: {"queries": [{"q": "...", '
-                        '"doc": "<id>"}, ...]}\\n'
-                        "Each sub-query must be a short search phrase about ONE "
-                        "item's attribute (e.g. 'indigenous peoples plan dedicated "
-                        "budget'), never a comparative question."},
+                        "document index. Respond with JSON only. Decide in this order:\n"
+                        "1. If the message asks about the corpus or 'the proposals' in "
+                        "general and does NOT refer back to specific items from earlier "
+                        "answers, return it UNCHANGED as one query with no doc: "
+                        '{"queries": [{"q": "<message>"}]}\n'
+                        "2. If it refers back to SPECIFIC items from earlier answers "
+                        "('those', 'the ones you mentioned', named projects/ids) and "
+                        "compares or aggregates them, emit one query per item (max 6), "
+                        "each tagged with its document id from the conversation: "
+                        '{"queries": [{"q": "...", "doc": "<id>"}, ...]} — each q a short '
+                        "phrase for ONE item's attribute, never a comparative question.\n"
+                        "3. Otherwise (a follow-up on one topic), return ONE standalone "
+                        "rewritten query with pronouns resolved, no doc tag."},
                     {"role": "user", "content":
                         f"Conversation:\n{convo}\n\nLatest message: {message.content}"},
                 ],
@@ -148,6 +160,16 @@ async def main(message: cl.Message):
                     parsed.append({"q": item.strip(), "doc": None})
                 elif isinstance(item, dict) and (item.get("q") or "").strip():
                     parsed.append({"q": item["q"].strip(), "doc": item.get("doc") or None})
+            # Deterministic guard against rewrite contamination: scoping a
+            # SINGLE query to one document is only legitimate when the user
+            # explicitly named that document — a general question must stay
+            # corpus-wide. Fan-outs (>=2) keep their tags by design.
+            if len(parsed) == 1 and parsed[0].get("doc"):
+                d = str(parsed[0]["doc"]).lower()
+                msg_l = message.content.lower()
+                fp = re.search(r"fp\d{2,3}", d)
+                if d[:20] not in msg_l and not (fp and fp.group(0) in msg_l):
+                    parsed[0]["doc"] = None
             if parsed:
                 search_queries = parsed
         except Exception:
