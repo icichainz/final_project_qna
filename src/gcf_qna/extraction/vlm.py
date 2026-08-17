@@ -619,6 +619,16 @@ def sanitize_model_id(model_id: str) -> str:
 
 UTC_FMT = "%Y-%m-%dT%H:%M:%SZ"
 
+# A merged file's page separators, e.g. "**Page 17**" on its own line.
+_PAGE_MARKER_RE = re.compile(r"(?m)^\*\*Page \d+\*\*$")
+
+
+def _merged_page_count(path: Path) -> int:
+    try:
+        return len(_PAGE_MARKER_RE.findall(path.read_text(encoding="utf-8")))
+    except OSError:
+        return 0
+
 
 def _utcnow() -> str:
     return datetime.now(timezone.utc).strftime(UTC_FMT)
@@ -656,12 +666,34 @@ class StatusBook:
             page_dir = self.out_dir / ".pages" / stem
             sidecars = len(list(page_dir.glob("page_*.md"))) if page_dir.exists() else 0
             if merged.exists() and merged.stat().st_size > 0:
-                if not e.get("pages_total"):
-                    # doc finished by the pre-ledger pipeline: count page markers once
-                    try:
-                        e["pages_total"] = merged.read_text(encoding="utf-8").count("\n**Page ") or None
-                    except OSError:
-                        pass
+                if not e.get("verified"):
+                    # The current pipeline only merges complete documents, but
+                    # files from the pre-ledger pipeline could merge with silent
+                    # gaps. Verify once: page markers vs the PDF's true page
+                    # count; incomplete files are quarantined and requeued.
+                    pdf_pages = e.get("pdf_pages")
+                    if pdf_pages is None:
+                        try:
+                            with pymupdf.open(pdf) as doc:
+                                pdf_pages = doc.page_count
+                        except Exception:
+                            pdf_pages = None
+                        if pdf_pages:
+                            e["pdf_pages"] = pdf_pages
+                    markers = _merged_page_count(merged)
+                    e["pages_total"] = pdf_pages or markers or e.get("pages_total")
+                    if pdf_pages and markers < pdf_pages:
+                        stale_dir = self.out_dir / ".stale"
+                        stale_dir.mkdir(exist_ok=True)
+                        merged.rename(stale_dir / merged.name)
+                        e["status"] = "partial" if sidecars else "pending"
+                        e["pages_done"] = sidecars
+                        e["last_error"] = (f"incomplete merge from old pipeline: "
+                                           f"{markers}/{pdf_pages} pages — requeued")
+                        print(f"   ♻️  {stem}: only {markers}/{pdf_pages} pages in merged file "
+                              f"— requeued (old file kept in .stale/)")
+                        continue
+                    e["verified"] = True
                 e["status"] = "ok"
                 e["pages_done"] = e.get("pages_total") or sidecars or None
                 e["pages_to_retry"] = []
@@ -763,6 +795,7 @@ async def main_async(models: Optional[List[str]] = None,
             # to serve several large VLMs at once, which costs far more than it saves.
             for model_id in roster:
                 out_dir = OUTPUT_ROOT / sanitize_model_id(model_id)
+                print(f"\n{'=' * 70}\n🤖 model: {model_id}\n{'=' * 70}")
                 book = StatusBook(model_id, out_dir)
                 book.reconcile(pdfs)
 
@@ -778,7 +811,6 @@ async def main_async(models: Optional[List[str]] = None,
                         skipped_exhausted += 1
                 book.save()
 
-                print(f"\n{'=' * 70}\n🤖 model: {model_id}\n{'=' * 70}")
                 plan = f"   plan: {len(work)} to process | {skipped_done} already done"
                 if skipped_exhausted:
                     plan += (f" | {skipped_exhausted} exhausted "
@@ -858,11 +890,11 @@ def status_report(models: Optional[List[str]] = None,
     pdfs = get_pdf_files(FOLDER_PATH, limit if limit is not None else PDFS_LIMIT)
     for model_id in roster:
         out_dir = OUTPUT_ROOT / sanitize_model_id(model_id)
+        print(f"\n🤖 {model_id}")
         book = StatusBook(model_id, out_dir)
         book.reconcile(pdfs)
         book.save()
         smry = book.summary()
-        print(f"\n🤖 {model_id}")
         print(f"   ok {smry['ok']} | partial {smry['partial']} | failed {smry['failed']} "
               f"| pending {smry['pending']} | total {smry['total']}   ({book.path})")
         problems = [(k, e) for k, e in sorted(book.docs.items())
