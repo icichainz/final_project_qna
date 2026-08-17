@@ -7,7 +7,7 @@ chunk — the old codebase fed that unrelated passage to the LLM as context.
 from __future__ import annotations
 
 from dataclasses import dataclass
-from typing import Any, Dict, List
+from typing import Any, Dict, List, Optional
 
 from gcf_qna.rag.embed import Embedder
 
@@ -17,6 +17,7 @@ class Hit:
     text: str
     doc_id: str
     score: float
+    page: Optional[int] = None   # 1-based; None/0 = unknown (pre-page-aware index)
 
 
 class Retriever:
@@ -34,5 +35,6 @@ class Retriever:
             if i < 0 or i >= len(self.chunks):
                 continue
             c = self.chunks[i]
-            hits.append(Hit(text=c["text"], doc_id=c.get("doc_id", "?"), score=float(score)))
+            hits.append(Hit(text=c["text"], doc_id=c.get("doc_id", "?"),
+                            score=float(score), page=c.get("page") or None))
         return hits
