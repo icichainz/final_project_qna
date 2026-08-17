@@ -36,6 +36,7 @@ Env:
 
 from __future__ import annotations
 
+import argparse
 import asyncio
 import base64
 import concurrent.futures
@@ -48,6 +49,7 @@ import shutil
 import time
 import zlib
 from dataclasses import dataclass
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Tuple
 
@@ -63,11 +65,18 @@ FOLDER_PATH = os.getenv("FOLDER_PATH", str(config.RAW_PDF_DIR))
 OUTPUT_ROOT = Path(os.getenv("OUTPUT_ROOT", str(config.EXTRACTED_DIR / "vlm")))
 CACHE_ROOT = Path(os.getenv("CACHE_ROOT", str(config.PAGE_CACHE_DIR)))
 
-# comma-separated env override, e.g. VLM_MODELS="qwen/qwen3-vl-8b,pixtral-12b"
-_env_models = [m.strip() for m in os.getenv("VLM_MODELS", "").split(",") if m.strip()]
-MODEL_IDS = _env_models or [
+# Built-in roster for a no-argument run: every listed model is processed
+# sequentially, resuming wherever each left off.
+DEFAULT_MODELS = [
+    "qwen/qwen2.5-vl-7b",
+    "pixtral-12b",
     "qwen/qwen3-vl-8b",
+    "zai-org/glm-4.6v-flash",
 ]
+
+# Precedence: CLI positionals > VLM_MODELS env > DEFAULT_MODELS
+_env_models = [m.strip() for m in os.getenv("VLM_MODELS", "").split(",") if m.strip()]
+MODEL_IDS = _env_models or DEFAULT_MODELS
 
 LMSTUDIO_BASE_URL = config.LMSTUDIO_BASE_URL
 LMSTUDIO_API_KEY = config.LMSTUDIO_API_KEY
@@ -75,12 +84,15 @@ LMSTUDIO_API_KEY = config.LMSTUDIO_API_KEY
 PAGE_MEGAPIXELS = float(os.getenv("PAGE_MEGAPIXELS", "2.0"))
 JPEG_QUALITY = int(os.getenv("JPEG_QUALITY", "92"))
 TEMPERATURE = float(os.getenv("TEMPERATURE", "0.0"))
-MAX_OUTPUT_TOKENS = int(os.getenv("MAX_OUTPUT_TOKENS", "16000"))
-MAX_CONCURRENT = int(os.getenv("MAX_CONCURRENT", "10"))
+MAX_OUTPUT_TOKENS = int(os.getenv("MAX_OUTPUT_TOKENS", "4096"))
+MAX_CONCURRENT = int(os.getenv("MAX_CONCURRENT", "1"))
 USE_TEXT_LAYER = os.getenv("USE_TEXT_LAYER", "1") == "1"
 REQUEST_TIMEOUT = int(os.getenv("REQUEST_TIMEOUT", "1200"))
 CRASH_COOLDOWN = float(os.getenv("CRASH_COOLDOWN", "45"))
 CIRCUIT_TRIP = int(os.getenv("CIRCUIT_TRIP", "20"))
+# Documents still broken after this many full passes are skipped unless
+# --retry-exhausted is given: one poisoned page must not tax every future run.
+ATTEMPT_CEILING = int(os.getenv("ATTEMPT_CEILING", "3"))
 MAX_ATTEMPTS = 6
 RENDER_AHEAD = 2                      # PDFs rendered ahead of the LLM stage
 _limit = os.getenv("PDFS_LIMIT", "")
@@ -474,7 +486,8 @@ class VLMExtractor:
     # -- one pdf -------------------------------------------------------------
 
     async def process_pdf(self, session: aiohttp.ClientSession, pdf_path: Path,
-                          cache_dir: Path, out_dir: Path) -> None:
+                          cache_dir: Path, out_dir: Path) -> Dict[str, Any]:
+        t_doc = time.perf_counter()
         meta = json.loads((cache_dir / "metadata.json").read_text(encoding="utf-8"))
         entries = meta["pages"]
         stem = pdf_path.stem
@@ -484,7 +497,9 @@ class VLMExtractor:
 
         if final_path.exists() and final_path.stat().st_size > 0:
             print(f"   ⏭️  already merged: {final_path.name}")
-            return
+            return {"status": "ok", "pages_total": len(entries),
+                    "pages_done": len(entries), "pages_to_retry": [],
+                    "last_error": None, "duration_s": 0.0}
 
         todo: List[PageJob] = []
         for i, e in enumerate(entries):
@@ -509,10 +524,11 @@ class VLMExtractor:
 
         done = 0
         failures: List[int] = []
+        last_error: Optional[str] = None
         t0 = time.perf_counter()
 
         async def run(job: PageJob) -> None:
-            nonlocal done
+            nonlocal done, last_error
             if self.ep.aborted.is_set():
                 return
             try:
@@ -526,6 +542,7 @@ class VLMExtractor:
                 raise
             except Exception as e:
                 failures.append(job.index)
+                last_error = f"page {job.index + 1}: {str(e)[:200]}"
                 self.stats["failed"] += 1
                 print(f"   ❌ page {job.index + 1}: {str(e)[:160]}")
             done += 1
@@ -542,28 +559,34 @@ class VLMExtractor:
                 raise o
 
         parts = []
-        missing = 0
+        missing_pages: List[int] = []
         for i in range(total):
             sidecar = page_dir / f"page_{i + 1:04d}.md"
             if sidecar.exists():
                 body = sidecar.read_text(encoding="utf-8").strip()
             else:
                 body = "<!-- PAGE MISSING: extraction failed -->"
-                missing += 1
+                missing_pages.append(i + 1)
             parts.append(f"\n\n---\n**Page {i + 1}**\n---\n\n{body}")
 
-        if missing:
+        duration = round(time.perf_counter() - t_doc, 1)
+        if missing_pages:
             # Deliberately leave the merged file unwritten. Its presence is the
             # resume marker, so writing a hole-ridden version here would make the
             # next run skip the PDF and strand those pages forever. The sidecars
             # that did succeed are kept, so a re-run only retries the gaps.
-            print(f"   ⚠️  {final_path.name}: {missing}/{total} page(s) missing — "
+            print(f"   ⚠️  {final_path.name}: {len(missing_pages)}/{total} page(s) missing — "
                   f"not merged; re-run to retry just those pages")
-            return
+            return {"status": "partial", "pages_total": total,
+                    "pages_done": total - len(missing_pages),
+                    "pages_to_retry": missing_pages,
+                    "last_error": last_error, "duration_s": duration}
 
         final_path.parent.mkdir(parents=True, exist_ok=True)
         final_path.write_text("\n".join(parts).strip() + "\n", encoding="utf-8")
         print(f"   ✅ {final_path}")
+        return {"status": "ok", "pages_total": total, "pages_done": total,
+                "pages_to_retry": [], "last_error": None, "duration_s": duration}
 
 
 def _read_b64(path: Path) -> str:
@@ -594,11 +617,120 @@ def sanitize_model_id(model_id: str) -> str:
     return safe
 
 
-async def main_async() -> None:
-    CACHE_ROOT.mkdir(exist_ok=True)
-    pdfs = get_pdf_files(FOLDER_PATH, PDFS_LIMIT)
-    print(f"📚 {len(pdfs)} PDFs | {PAGE_MEGAPIXELS} MP/page | "
-          f"{MAX_CONCURRENT} concurrent requests | text-layer hint: {USE_TEXT_LAYER}")
+UTC_FMT = "%Y-%m-%dT%H:%M:%SZ"
+
+
+def _utcnow() -> str:
+    return datetime.now(timezone.utc).strftime(UTC_FMT)
+
+
+class StatusBook:
+    """Per-model ledger at <out_dir>/status.json.
+
+    Disk is the source of truth for STATUS (merged file => ok, sidecars =>
+    partial); reconcile() recomputes it every run, so deleting the file loses
+    only history, never correctness. The book persists what disk cannot tell
+    you: attempts, last error, failed pages, timings.
+    """
+
+    SCHEMA = 1
+    PAGE_LIST_CAP = 50   # a doc where everything failed needs no 243-entry list
+
+    def __init__(self, model_id: str, out_dir: Path):
+        self.model_id = model_id
+        self.out_dir = Path(out_dir)
+        self.path = self.out_dir / "status.json"
+        self.docs: Dict[str, Dict[str, Any]] = {}
+        try:
+            data = json.loads(self.path.read_text(encoding="utf-8"))
+            self.docs = data.get("documents", {})
+        except (OSError, json.JSONDecodeError):
+            self.docs = {}
+
+    def reconcile(self, pdfs: List[Path]) -> None:
+        """Recompute every document's status from what is actually on disk."""
+        for pdf in pdfs:
+            stem = pdf.stem
+            e = self.docs.setdefault(stem, {})
+            merged = self.out_dir / f"{stem}.md"
+            page_dir = self.out_dir / ".pages" / stem
+            sidecars = len(list(page_dir.glob("page_*.md"))) if page_dir.exists() else 0
+            if merged.exists() and merged.stat().st_size > 0:
+                if not e.get("pages_total"):
+                    # doc finished by the pre-ledger pipeline: count page markers once
+                    try:
+                        e["pages_total"] = merged.read_text(encoding="utf-8").count("\n**Page ") or None
+                    except OSError:
+                        pass
+                e["status"] = "ok"
+                e["pages_done"] = e.get("pages_total") or sidecars or None
+                e["pages_to_retry"] = []
+                e["pages_to_retry_count"] = 0
+                e.pop("last_error", None)
+            elif e.get("status") == "failed":
+                pass   # doc-level failure (e.g. unreadable PDF): disk can't see it
+            elif sidecars:
+                e["status"] = "partial"
+                e["pages_done"] = sidecars
+            else:
+                e["status"] = "pending"
+                e["pages_done"] = 0
+
+    def should_process(self, stem: str, retry_exhausted: bool) -> Tuple[bool, str]:
+        e = self.docs.get(stem, {})
+        if e.get("status") == "ok":
+            return False, "done"
+        if not retry_exhausted and e.get("attempts", 0) >= ATTEMPT_CEILING:
+            return False, "exhausted"
+        return True, e.get("status", "pending")
+
+    def record(self, stem: str, result: Dict[str, Any]) -> None:
+        e = self.docs.setdefault(stem, {})
+        pages = result.get("pages_to_retry") or []
+        e["status"] = result["status"]
+        if result.get("pages_total") is not None:
+            e["pages_total"] = result["pages_total"]
+        if result.get("pages_done") is not None:
+            e["pages_done"] = result["pages_done"]
+        e["pages_to_retry"] = pages[:self.PAGE_LIST_CAP]
+        e["pages_to_retry_count"] = len(pages)
+        if result.get("duration_s") is not None:
+            e["duration_s"] = result["duration_s"]
+        e["finished_at"] = _utcnow()
+        e["attempts"] = e.get("attempts", 0) + 1
+        if result.get("last_error"):
+            e["last_error"] = str(result["last_error"])[:300]
+        elif result["status"] == "ok":
+            e.pop("last_error", None)
+
+    def summary(self) -> Dict[str, int]:
+        out = {"ok": 0, "partial": 0, "failed": 0, "pending": 0}
+        for e in self.docs.values():
+            st = e.get("status", "pending")
+            out[st] = out.get(st, 0) + 1
+        out["total"] = len(self.docs)
+        return out
+
+    def save(self) -> None:
+        self.out_dir.mkdir(parents=True, exist_ok=True)
+        _write_atomic_json(self.path, {
+            "schema_version": self.SCHEMA,
+            "model": self.model_id,
+            "updated_at": _utcnow(),
+            "summary": self.summary(),
+            "documents": dict(sorted(self.docs.items())),
+        })
+
+
+async def main_async(models: Optional[List[str]] = None,
+                     retry_exhausted: bool = False,
+                     limit: Optional[int] = None) -> None:
+    roster = models or MODEL_IDS
+    CACHE_ROOT.mkdir(parents=True, exist_ok=True)
+    pdfs = get_pdf_files(FOLDER_PATH, limit if limit is not None else PDFS_LIMIT)
+    print(f"📚 {len(pdfs)} PDFs | models: {', '.join(roster)}")
+    print(f"   {PAGE_MEGAPIXELS} MP/page | {MAX_CONCURRENT} concurrent | "
+          f"text-layer hint: {USE_TEXT_LAYER} | attempt ceiling: {ATTEMPT_CEILING}")
 
     loop = asyncio.get_running_loop()
     render_pool = concurrent.futures.ProcessPoolExecutor(max_workers=max(1, min(8, (os.cpu_count() or 4) // 2)))
@@ -606,6 +738,7 @@ async def main_async() -> None:
     endpoint = Endpoint(MAX_CONCURRENT)
 
     cache_dirs = {p: CACHE_ROOT / _fingerprint(p) for p in pdfs}
+    render_errors: Dict[Path, str] = {}
 
     async def ensure_cache(pdf: Path) -> Optional[Path]:
         cdir = cache_dirs[pdf]
@@ -615,6 +748,7 @@ async def main_async() -> None:
             await loop.run_in_executor(render_pool, render_pdf_worker, str(pdf), str(cdir))
             return cdir
         except Exception as e:
+            render_errors[pdf] = str(e)[:300]
             print(f"⚠️  render failed for {pdf.name}: {e}")
             return None
 
@@ -627,46 +761,148 @@ async def main_async() -> None:
         async with aiohttp.ClientSession(connector=connector, timeout=timeout) as session:
             # Models run one at a time: LM Studio evicts/reloads weights when asked
             # to serve several large VLMs at once, which costs far more than it saves.
-            for model_id in MODEL_IDS:
+            for model_id in roster:
                 out_dir = OUTPUT_ROOT / sanitize_model_id(model_id)
+                book = StatusBook(model_id, out_dir)
+                book.reconcile(pdfs)
+
+                work: List[Path] = []
+                skipped_done = skipped_exhausted = 0
+                for pdf in pdfs:
+                    go, why = book.should_process(pdf.stem, retry_exhausted)
+                    if go:
+                        work.append(pdf)
+                    elif why == "done":
+                        skipped_done += 1
+                    else:
+                        skipped_exhausted += 1
+                book.save()
+
+                print(f"\n{'=' * 70}\n🤖 model: {model_id}\n{'=' * 70}")
+                plan = f"   plan: {len(work)} to process | {skipped_done} already done"
+                if skipped_exhausted:
+                    plan += (f" | {skipped_exhausted} exhausted "
+                             f"(≥{ATTEMPT_CEILING} attempts; use --retry-exhausted)")
+                print(plan)
+                if not work:
+                    print(f"   ✅ nothing to do — see {book.path}")
+                    continue
+
                 endpoint.reset()
                 app = VLMExtractor(LMSTUDIO_BASE_URL, LMSTUDIO_API_KEY, model_id, endpoint, io_pool)
-                print(f"\n{'=' * 70}\n🤖 model: {model_id}\n{'=' * 70}")
                 t_model = time.perf_counter()
 
                 # Render RENDER_AHEAD PDFs ahead of the LLM stage so CPU rendering
                 # and GPU inference overlap instead of alternating.
                 pending: Dict[Path, asyncio.Task] = {}
-                for pdf in pdfs[:RENDER_AHEAD]:
+                for pdf in work[:RENDER_AHEAD]:
                     pending[pdf] = asyncio.create_task(ensure_cache(pdf))
 
-                for i, pdf in enumerate(pdfs, 1):
+                aborted = False
+                for i, pdf in enumerate(work, 1):
                     nxt = i - 1 + RENDER_AHEAD
-                    if nxt < len(pdfs) and pdfs[nxt] not in pending:
-                        pending[pdfs[nxt]] = asyncio.create_task(ensure_cache(pdfs[nxt]))
-                    print(f"\n🚀 [{i}/{len(pdfs)}] {pdf.name}")
+                    if nxt < len(work) and work[nxt] not in pending:
+                        pending[work[nxt]] = asyncio.create_task(ensure_cache(work[nxt]))
+                    print(f"\n🚀 [{i}/{len(work)}] {pdf.name}")
                     cdir = await pending.pop(pdf)
-                    if cdir is None:
-                        continue
 
-                    try:
-                        await app.process_pdf(session, pdf, cdir, out_dir)
-                    except CircuitOpen as e:
-                        print(f"\n🛑 aborting {model_id}: {e}")
+                    if cdir is None:
+                        book.record(pdf.stem, {
+                            "status": "failed", "pages_to_retry": [],
+                            "last_error": render_errors.get(pdf, "render failed"),
+                            "duration_s": 0.0,
+                        })
+                    else:
+                        try:
+                            result = await app.process_pdf(session, pdf, cdir, out_dir)
+                            book.record(pdf.stem, result)
+                        except CircuitOpen as e:
+                            book.record(pdf.stem, {
+                                "status": "partial", "pages_to_retry": [],
+                                "last_error": f"aborted mid-run: {str(e)[:200]}",
+                            })
+                            book.reconcile([pdf])   # true sidecar count from disk
+                            print(f"\n🛑 aborting {model_id}: {e}")
+                            aborted = True
+                        except Exception as e:
+                            book.record(pdf.stem, {
+                                "status": "failed", "pages_to_retry": [],
+                                "last_error": str(e)[:300],
+                            })
+                            print(f"❌ {pdf.name}: {e}")
+
+                    book.save()   # after every document: a crash loses nothing
+                    if aborted:
                         break
-                    except Exception as e:
-                        print(f"❌ {pdf.name}: {e}")
+
+                for t in pending.values():
+                    t.cancel()
 
                 dt = time.perf_counter() - t_model
-                s = app.stats
-                print(f"\n📊 {model_id}: {s['ok']} pages ok, {s['cached']} cached, "
-                      f"{s['blank']} blank, {s['failed']} failed, {s['truncated']} truncated, "
-                      f"{s['retries']} retries, {s['crashes']} backend crashes "
+                st, bs = app.stats, book.summary()
+                print(f"\n📊 {model_id}: {st['ok']} pages ok, {st['cached']} cached, "
+                      f"{st['blank']} blank, {st['failed']} failed, {st['truncated']} truncated, "
+                      f"{st['retries']} retries, {st['crashes']} backend crashes "
                       f"in {dt / 60:.1f} min")
+                print(f"   docs: {bs['ok']} ok | {bs['partial']} partial | "
+                      f"{bs['failed']} failed | {bs['pending']} pending  → {book.path}")
     finally:
         render_pool.shutdown(wait=True)
         io_pool.shutdown(wait=True)
 
 
+def status_report(models: Optional[List[str]] = None,
+                  limit: Optional[int] = None) -> None:
+    """Print per-model progress from disk + status.json; runs nothing."""
+    roster = models or MODEL_IDS
+    pdfs = get_pdf_files(FOLDER_PATH, limit if limit is not None else PDFS_LIMIT)
+    for model_id in roster:
+        out_dir = OUTPUT_ROOT / sanitize_model_id(model_id)
+        book = StatusBook(model_id, out_dir)
+        book.reconcile(pdfs)
+        book.save()
+        smry = book.summary()
+        print(f"\n🤖 {model_id}")
+        print(f"   ok {smry['ok']} | partial {smry['partial']} | failed {smry['failed']} "
+              f"| pending {smry['pending']} | total {smry['total']}   ({book.path})")
+        problems = [(k, e) for k, e in sorted(book.docs.items())
+                    if e.get("status") in ("partial", "failed")]
+        for k, e in problems[:10]:
+            pages = f"{e.get('pages_done', '?')}/{e.get('pages_total') or '?'} pages"
+            retry = f", {e.get('pages_to_retry_count', 0)} to retry"
+            err = f" | {e['last_error']}" if e.get("last_error") else ""
+            print(f"   • {e['status']:7} {k}  [{e.get('attempts', 0)} attempt(s), {pages}{retry}]{err}")
+        if len(problems) > 10:
+            print(f"   … and {len(problems) - 10} more (see status.json)")
+
+
+def main(argv: Optional[List[str]] = None) -> None:
+    ap = argparse.ArgumentParser(
+        prog="vlm_pdf_to_markdown",
+        description="PDF -> markdown extraction via local vision models, "
+                    "with per-model status.json progress ledgers.",
+        epilog="With no models given, the default roster runs sequentially:\n  "
+               + "\n  ".join(DEFAULT_MODELS)
+               + "\n\nEvery run resumes: finished documents are skipped, partial "
+                 "documents retry\nonly their missing pages.",
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+    )
+    ap.add_argument("models", nargs="*",
+                    help="model ids to run, in order (default: $VLM_MODELS or built-in roster)")
+    ap.add_argument("--status", action="store_true",
+                    help="print per-model progress and exit (runs nothing)")
+    ap.add_argument("--limit", type=int, default=None, metavar="N",
+                    help="process only the first N PDFs (smoke tests)")
+    ap.add_argument("--retry-exhausted", action="store_true",
+                    help=f"also retry documents with ≥{ATTEMPT_CEILING} recorded attempts")
+    args = ap.parse_args(argv)
+
+    models = args.models or None
+    if args.status:
+        status_report(models, args.limit)
+        return
+    asyncio.run(main_async(models, retry_exhausted=args.retry_exhausted, limit=args.limit))
+
+
 if __name__ == "__main__":
-    asyncio.run(main_async())
+    main()
