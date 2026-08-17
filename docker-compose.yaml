@@ -65,7 +65,7 @@ services:
       retries: 3
 
     labels:
-      caddy: ${FP_GCF_DOMAIN:-fp-gcf.localhost}
+      caddy: fp-gcf.ssa.tg
       caddy.reverse_proxy: "{{upstreams 18100}}"
 
     networks:

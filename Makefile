@@ -81,7 +81,6 @@ DEPLOY_EXCLUDES := \
 	--exclude '*.pyc' \
 	--exclude 'venv' \
 	--exclude 'from_server' \
-	--exclude '.env' \
 	--exclude 'data/app.db*' \
 	--exclude 'public/app_files' \
 	--exclude 'hf_cache' \
