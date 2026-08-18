@@ -24,37 +24,8 @@ from gcf_qna.app.highlight import annotated_page
 from gcf_qna.rag import Embedder, Retriever, load_index
 from gcf_qna.rag.ground import ground_chunk
 
-SYSTEM_PROMPT = (
-    "You answer questions about Green Climate Fund (GCF) funding proposals.\n"
-    "Ground every answer in the provided context excerpts and cite document\n"
-    "ids in brackets, e.g. [01_gcf-b42-02-add17]. If the context does not\n"
-    "contain the answer, say so plainly instead of guessing.\n"
-    "The excerpts are a small retrieved sample of a 273-document corpus: never\n"
-    "state corpus-wide totals, counts, rankings or superlatives (most, largest,\n"
-    "all, only) as fact — explicitly scope such claims to 'among the retrieved\n"
-    "excerpts' and say the full corpus may contain larger/other cases.\n"
-    "When the user compares specific documents, report what each document's\n"
-    "excerpts state, item by item — including 'no figure stated in the\n"
-    "excerpts' for a document — never refuse the whole comparison because\n"
-    "some items lack data.\n"
-    "If only part of a question is answerable from the excerpts, answer that\n"
-    "part and state plainly which part the excerpts cannot support — do not\n"
-    "refuse the whole question.\n"
-    "Document ids encode the GCF board meeting: '...-b42-02-...' means B.42.\n"
-    "Board-meeting years (verified from the corpus): B.11=2015; B.13-B.15=2016;\n"
-    "B.16-B.18=2017; B.19-B.21=2018; B.22-B.24=2019; B.25-B.27=2020;\n"
-    "B.28-B.30=2021; B.31-B.34=2022; B.35-B.37=2023; B.38-B.40=2024;\n"
-    "B.41-B.43=2025.\n"
-    "When a question mentions a year: (1) translate the year to its board\n"
-    "range with the table, (2) check each excerpt's document id against that\n"
-    "range, (3) present the excerpts that match (naming their FP numbers and\n"
-    "boards), and say the corpus may hold more documents from that year than\n"
-    "were retrieved. Never claim there is no year information while holding\n"
-    "document ids you can date with the table.\n"
-    "Lines starting with 'Registry —' are corpus-level metadata extracted\n"
-    "from each document's cover pages: treat them as reliable, quote\n"
-    "financing amounts exactly as given, and cite the stated document id."
-)
+from gcf_qna.app.prompts import (CONDUCTOR_PROMPT, SYSTEM_PROMPT, assemble,
+                                 assemble_chat)
 
 
 # Board-meeting years, verified from 271 corpus page-1 dates. Injected into
@@ -298,11 +269,13 @@ async def main(message: cl.Message):
     # See docs/query-decomposition.html. Best-effort: any failure falls back
     # to the raw message; the original wording still goes to the answer model.
     search_queries = [{"q": message.content, "doc": None}]
-    if history:
+    mode = "retrieve"
+    if config.CONDUCTOR:
         try:
-            # 500-char truncation used to cut off the citation lists, leaving
-            # the decomposer blind to most cited docs — extract them explicitly.
-            convo = "\n".join(f"{m['role']}: {m['content'][:1200]}" for m in history[-6:])
+            # citation lists are extracted from FULL history — truncation once
+            # left the conductor blind to most cited docs.
+            convo = ("\n".join(f"{m['role']}: {m['content'][:1200]}" for m in history[-6:])
+                     if history else "((no prior conversation))")
             cited: list = []
             for m in history:
                 for d in re.findall(r"\[(\d{1,3}_gcf-[\w.\-]+)", m["content"]):
@@ -315,26 +288,14 @@ async def main(message: cl.Message):
                 max_completion_tokens=300,
                 response_format={"type": "json_object"},
                 messages=[
-                    {"role": "system", "content":
-                        "Turn the user's latest message into retrieval queries for a "
-                        "document index. Respond with JSON only. Decide in this order:\n"
-                        "1. If the message asks about the corpus or 'the proposals' in "
-                        "general and does NOT refer back to specific items from earlier "
-                        "answers, return it UNCHANGED as one query with no doc: "
-                        '{"queries": [{"q": "<message>"}]}\n'
-                        "2. If it refers back to SPECIFIC items from earlier answers "
-                        "('those', 'the ones you mentioned', named projects/ids) and "
-                        "compares or aggregates them, emit one query per item (max 6), "
-                        "each tagged with its document id from the conversation: "
-                        '{"queries": [{"q": "...", "doc": "<id>"}, ...]} — each q a short '
-                        "phrase for ONE item's attribute, never a comparative question.\n"
-                        "3. Otherwise (a follow-up on one topic), return ONE standalone "
-                        "rewritten query with pronouns resolved, no doc tag."},
+                    {"role": "system", "content": CONDUCTOR_PROMPT},
                     {"role": "user", "content":
                         f"Conversation:\n{convo}\n\nLatest message: {message.content}"},
                 ],
             )
             data = json.loads(resp.choices[0].message.content or "{}")
+            if data.get("mode") == "chat":
+                mode = "chat"
             parsed = []
             for item in (data.get("queries") or [])[:6]:
                 if isinstance(item, str) and item.strip():
@@ -371,6 +332,26 @@ async def main(message: cl.Message):
         except Exception:
             pass
 
+    if mode == "chat":
+        # conversational/meta turn: answer from history, no retrieval,
+        # no sources, no evidence images
+        reply = cl.Message(content="")
+        stream = await client.chat.completions.create(
+            model=config.CHAT_MODEL,
+            max_completion_tokens=config.MAX_ANSWER_TOKENS,
+            messages=[{"role": "system", "content": assemble_chat()}] + history +
+                     [{"role": "user", "content": message.content}],
+            stream=True,
+        )
+        async for part in stream:
+            if part.choices and part.choices[0].delta.content:
+                await reply.stream_token(part.choices[0].delta.content)
+        await reply.send()
+        history += [{"role": "user", "content": message.content},
+                    {"role": "assistant", "content": reply.content}]
+        cl.user_session.set("history", history[-12:])
+        return
+
     decomposed = len(search_queries) > 1
     if decomposed or search_queries[0]["q"] != message.content:
         async with cl.Step(name="retrieval query") as step:
@@ -403,6 +384,7 @@ async def main(message: cl.Message):
                    "excerpts below may not actually be relevant. Do not force an "
                    "answer from marginal matches; say plainly that the corpus "
                    "does not appear to cover this.\n\n") + context
+    reg_note = None
     try:
         from gcf_qna.rag.registry import registry_note
         reg_note = registry_note(message.content)
@@ -410,6 +392,8 @@ async def main(message: cl.Message):
             context = reg_note + "\n\n" + context
     except Exception:
         pass    # the registry is an enhancement, never a blocker
+    system_prompt = assemble(year=bool(year_note), registry=bool(reg_note),
+                             comparison=decomposed)
     messages = history + [{
         "role": "user",
         "content": f"Context excerpts:\n{context}\n\nQuestion: {message.content}",
@@ -419,7 +403,7 @@ async def main(message: cl.Message):
     stream = await client.chat.completions.create(
         model=config.CHAT_MODEL,
         max_completion_tokens=config.MAX_ANSWER_TOKENS,
-        messages=[{"role": "system", "content": SYSTEM_PROMPT}] + messages,
+        messages=[{"role": "system", "content": system_prompt}] + messages,
         stream=True,
     )
     async for part in stream:
