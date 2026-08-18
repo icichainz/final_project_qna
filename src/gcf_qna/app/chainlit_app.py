@@ -8,6 +8,7 @@ Needs: pip install -e ".[app]"  and OPENAI_API_KEY in the environment
 """
 from __future__ import annotations
 
+import hmac
 import json
 import os
 import re
@@ -16,6 +17,7 @@ import time
 from typing import Optional
 
 import chainlit as cl
+from chainlit.types import ThreadDict
 
 from gcf_qna import config
 from gcf_qna.app.highlight import annotated_page
@@ -34,8 +36,69 @@ SYSTEM_PROMPT = (
     "When the user compares specific documents, report what each document's\n"
     "excerpts state, item by item — including 'no figure stated in the\n"
     "excerpts' for a document — never refuse the whole comparison because\n"
-    "some items lack data."
+    "some items lack data.\n"
+    "If only part of a question is answerable from the excerpts, answer that\n"
+    "part and state plainly which part the excerpts cannot support — do not\n"
+    "refuse the whole question.\n"
+    "Document ids encode the GCF board meeting: '...-b42-02-...' means B.42.\n"
+    "Board-meeting years (verified from the corpus): B.11=2015; B.13-B.15=2016;\n"
+    "B.16-B.18=2017; B.19-B.21=2018; B.22-B.24=2019; B.25-B.27=2020;\n"
+    "B.28-B.30=2021; B.31-B.34=2022; B.35-B.37=2023; B.38-B.40=2024;\n"
+    "B.41-B.43=2025.\n"
+    "When a question mentions a year: (1) translate the year to its board\n"
+    "range with the table, (2) check each excerpt's document id against that\n"
+    "range, (3) present the excerpts that match (naming their FP numbers and\n"
+    "boards), and say the corpus may hold more documents from that year than\n"
+    "were retrieved. Never claim there is no year information while holding\n"
+    "document ids you can date with the table."
 )
+
+
+# Board-meeting years, verified from 271 corpus page-1 dates. Injected into
+# every excerpt header so the answer model never has to do table lookups.
+BOARD_YEARS = {11: 2015, 12: 2016, 13: 2016, 14: 2016, 15: 2016, 16: 2017,
+               17: 2017, 18: 2017, 19: 2018, 20: 2018, 21: 2018, 22: 2019,
+               23: 2019, 24: 2019, 25: 2020, 26: 2020, 27: 2020, 28: 2021,
+               29: 2021, 30: 2021, 31: 2022, 32: 2022, 33: 2022, 34: 2022,
+               35: 2023, 36: 2023, 37: 2023, 38: 2024, 39: 2024, 40: 2024,
+               41: 2025, 42: 2025, 43: 2025}
+_BOARD_RE = re.compile(r"-b(\d+)-")
+
+
+def _doc_label(doc_id: str, page) -> str:
+    """Citation header with precomputed board/year: the model reads dates
+    instead of deriving them."""
+    label = doc_id + (f", p. {page}" if page else "")
+    m = _BOARD_RE.search(doc_id)
+    if m and int(m.group(1)) in BOARD_YEARS:
+        b = int(m.group(1))
+        label += f" — B.{b}, {BOARD_YEARS[b]}"
+    return label
+
+
+def _year_assist(question: str, hits: list):
+    """Code-side year matching: if the question names a year, sort matching
+    excerpts first and emit a computed note. Removes the lookup burden the
+    answer model repeatedly failed to carry."""
+    years = {int(y) for y in re.findall(r"\b(20[12]\d)\b", question)}
+    if not years:
+        return hits, None
+    def doc_year(doc_id):
+        m = _BOARD_RE.search(doc_id)
+        return BOARD_YEARS.get(int(m.group(1))) if m else None
+    matched = [h for h in hits if doc_year(h.doc_id) in years]
+    rest = [h for h in hits if h not in matched]
+    ys = ", ".join(str(y) for y in sorted(years))
+    if matched:
+        ids = "; ".join(_doc_label(h.doc_id, h.page) for h in matched)
+        note = (f"Note (computed from document ids): excerpts dated {ys}: {ids}. "
+                f"The corpus may contain more documents from {ys} than were retrieved.")
+    else:
+        boards = ", ".join(f"B.{b}" for b, y in sorted(BOARD_YEARS.items()) if y in years)
+        note = (f"Note (computed from document ids): none of the retrieved excerpts are "
+                f"from {ys} (that year corresponds to boards {boards}). Answer what the "
+                f"excerpts do support and state this limit.")
+    return matched + rest, note
 
 
 def _index_dir():
@@ -73,6 +136,117 @@ def get_retriever() -> Optional[Retriever]:
 # question hits a hot retriever. PRELOAD=0 disables (e.g. for quick UI work).
 if os.getenv("PRELOAD", "1") == "1":
     threading.Thread(target=get_retriever, daemon=True).start()
+
+
+# ---------------------------------------------------------------------------
+# Conversation history: SQLite-backed thread persistence + auth.
+# Chainlit's sidebar (threads, resume, feedback) activates when a data layer
+# AND authentication are configured. Threads live in data/app.db; element
+# files (evidence images) are copied under public/app_files/ so resumed
+# threads render across restarts. Schema: scripts/init_appdb.py.
+# ---------------------------------------------------------------------------
+_data_layer_instance = None
+
+
+def _make_sqlite_layer():
+    """SQLAlchemyDataLayer with SQLite-shape normalization.
+
+    The layer targets Postgres, whose driver auto-parses JSONB -> dict and
+    BOOLEAN -> bool. aiosqlite returns raw TEXT/int, and chainlit's frontend
+    is written against the Postgres shape — replayed assistant messages
+    render blank when step.metadata arrives as a string. Normalize at the
+    one read path both the sidebar and thread replay flow through.
+    """
+    from chainlit.data.sql_alchemy import SQLAlchemyDataLayer
+
+    class SqliteNormalizedLayer(SQLAlchemyDataLayer):
+        async def get_all_user_threads(self, user_id=None, thread_id=None):
+            threads = await super().get_all_user_threads(user_id, thread_id)
+            for t in threads or []:
+                if isinstance(t.get("metadata"), str):
+                    try:
+                        t["metadata"] = json.loads(t["metadata"] or "{}")
+                    except ValueError:
+                        t["metadata"] = {}
+                for st in t.get("steps") or []:
+                    if isinstance(st.get("metadata"), str):
+                        try:
+                            st["metadata"] = json.loads(st["metadata"] or "{}")
+                        except ValueError:
+                            st["metadata"] = {}
+                    for k in ("streaming", "waitForAnswer", "isError", "defaultOpen"):
+                        if isinstance(st.get(k), int):
+                            st[k] = bool(st[k])
+            return threads
+
+    return SqliteNormalizedLayer
+
+
+@cl.data_layer
+def _data_layer():
+    global _data_layer_instance
+    if _data_layer_instance is None:
+        from gcf_qna.app.storage_local import LocalStorageClient
+        SQLAlchemyDataLayer = _make_sqlite_layer()
+        if not config.APP_DB.exists():
+            # first boot: create the schema (idempotent DDL)
+            import runpy
+            runpy.run_path(str(config.PROJECT_ROOT / "scripts" / "init_appdb.py"),
+                           run_name="__main__")
+        _data_layer_instance = SQLAlchemyDataLayer(
+            conninfo=f"sqlite+aiosqlite:///{config.APP_DB}",
+            storage_provider=LocalStorageClient(),
+        )
+    return _data_layer_instance
+
+
+@cl.password_auth_callback
+def auth(username: str, password: str) -> Optional[cl.User]:
+    from gcf_qna.app import accounts
+    users = accounts.parse_env_users()
+    expected = users.get(username.strip())
+    if expected and hmac.compare_digest(password, expected):
+        return cl.User(identifier=username.strip())
+    # self-registered accounts (scrypt-hashed, data/app.db)
+    from gcf_qna.app import accounts
+    if accounts.check_login(username, password):
+        return cl.User(identifier=username.strip())
+    return None
+
+
+# Self-registration page + API (/register); ALLOW_SIGNUP=0 disables.
+try:
+    from gcf_qna.app.register import mount as _mount_register
+    _mount_register()
+except Exception as _e:   # never let signup wiring break the chat app
+    print(f"signup routes not mounted: {_e}", flush=True)
+
+
+def _history_from_thread(thread: ThreadDict) -> list:
+    """Rebuild the condenser's memory from persisted steps.
+
+    Without this, the first follow-up in a resumed thread regresses to the
+    starved-decomposer bug: pronouns unresolvable, cited doc ids invisible.
+    Sources lines (📎) are UI furniture, not conversation — skipped.
+    """
+    steps = sorted(thread.get("steps") or [], key=lambda s: s.get("createdAt") or "")
+    history = []
+    for st in steps:
+        out = (st.get("output") or "").strip()
+        if not out or out.startswith("📎"):
+            continue
+        if st.get("type") == "user_message":
+            history.append({"role": "user", "content": out})
+        elif st.get("type") == "assistant_message":
+            history.append({"role": "assistant", "content": out})
+    return history[-12:]
+
+
+@cl.on_chat_resume
+async def on_resume(thread: ThreadDict):
+    retriever = await cl.make_async(get_retriever)()
+    cl.user_session.set("retriever", retriever)
+    cl.user_session.set("history", _history_from_thread(thread))
 
 
 @cl.on_chat_start
@@ -196,9 +370,12 @@ async def main(message: cl.Message):
                 seen.add(key)
                 hits.append(h)
     hits = hits[:15]
+    hits, year_note = _year_assist(message.content, hits)
     context = "\n\n".join(
-        f"[{h.doc_id}{f', p. {h.page}' if h.page else ''}] (score {h.score:.2f})\n{h.text}"
+        f"[{_doc_label(h.doc_id, h.page)}] (score {h.score:.2f})\n{h.text}"
         for h in hits)
+    if year_note:
+        context = year_note + "\n\n" + context
     messages = history + [{
         "role": "user",
         "content": f"Context excerpts:\n{context}\n\nQuestion: {message.content}",

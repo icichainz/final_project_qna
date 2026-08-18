@@ -40,7 +40,8 @@ venv/bin/python scripts/extract_corpus.py
 venv/bin/python scripts/build_index.py \
     --source data/extracted/vlm/qwen_qwen3-vl-8b --name default
 
-# 3. chat
+# 3. chat (login + persistent conversation threads: set CHAINLIT_AUTH_SECRET
+#    and APP_USERS in .env; the SQLite thread store auto-creates on first boot)
 venv/bin/chainlit run src/gcf_qna/app/chainlit_app.py
 ```
 

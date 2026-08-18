@@ -1,8 +1,17 @@
 .git
 venv/
 data/
+hf_cache/
+public/app_files/
 archive/
 notebooks/
 docs/
+from_server/
 .env
+.env.*
 **/__pycache__/
+*.pyc
+src/gcf_qna.egg-info/
+vlm_pdf_to_markdown.py
+Makefile
+docker-compose.yaml
