@@ -507,6 +507,10 @@ class VLMExtractor:
             try:
                 md, finish = await self._call(session, b64, hint, budget)
                 md = strip_fences(md)
+                if not md:
+                    md = "[blank page]"   # empty completion: the model's way of
+                                          # saying blank. Never write an empty
+                                          # sidecar -- it reads as a lost page.
 
                 if finish == "length" and budget < 8192:
                     # Dense table/page: silently truncated output. Re-ask with room.
