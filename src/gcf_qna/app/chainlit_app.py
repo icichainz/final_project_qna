@@ -50,6 +50,49 @@ def _doc_label(doc_id: str, page) -> str:
     return label
 
 
+_FR_WORDS = {"le", "la", "les", "des", "une", "un", "est", "et", "que", "qui",
+             "quel", "quelle", "quels", "quelles", "pour", "dans", "avec", "sur",
+             "comment", "pourquoi", "combien", "cette", "ce", "aux", "du", "de",
+             "peux", "fais", "fait", "donne", "moi", "tableau", "merci", "bonjour"}
+_EN_WORDS = {"the", "is", "are", "what", "which", "how", "of", "for", "in",
+             "does", "do", "and", "that", "this", "with", "on", "to", "from",
+             "give", "me", "show", "compare", "summary", "thanks", "hello"}
+
+
+def _detect_lang(text: str):
+    """FR/EN heuristic — code-detected so the answer language follows the
+    LATEST message, not conversational momentum."""
+    toks = re.findall(r"[a-zàâçéèêëîïôùûüÿœ']+", text.lower())
+    fr = sum(t in _FR_WORDS for t in toks)
+    en = sum(t in _EN_WORDS for t in toks)
+    if re.search(r"[àâçéèêëîïôùûüÿœ]", text.lower()):
+        fr += 2
+    if fr > en:
+        return "French"
+    if en > fr:
+        return "English"
+    return None
+
+
+def _invalid_citations(answer: str, hits: list):
+    """Pages cited in the answer that were never retrieved (observed: a
+    correct doc cited with an invented 'p. 35'). Returns labels to flag."""
+    by_doc = {}
+    for h in hits:
+        by_doc.setdefault(h.doc_id, set()).add(h.page)
+    bad = []
+    for m in re.finditer(r"\[([0-9]{1,3}_[\w.\-]+)([^\]]*)\]", answer):
+        doc_ref, rest = m.group(1), m.group(2)
+        full = next((d for d in by_doc if d.startswith(doc_ref[:24])
+                     or doc_ref.startswith(d[:24])), None)
+        if not full:
+            continue          # registry/cover-page cites carry no page set
+        for pg in re.findall(r"\bpp?\.?\s*(\d{1,3})", rest):
+            if int(pg) not in by_doc[full]:
+                bad.append(f"{full[:34]}… p.{pg}")
+    return bad
+
+
 def _year_assist(question: str, hits: list):
     """Code-side year matching: if the question names a year, sort matching
     excerpts first and emit a computed note. Removes the lookup burden the
@@ -339,7 +382,8 @@ async def main(message: cl.Message):
         stream = await client.chat.completions.create(
             model=config.CHAT_MODEL,
             max_completion_tokens=config.MAX_ANSWER_TOKENS,
-            messages=[{"role": "system", "content": assemble_chat()}] + history +
+            messages=[{"role": "system",
+                       "content": assemble_chat(_detect_lang(message.content))}] + history +
                      [{"role": "user", "content": message.content}],
             stream=True,
         )
@@ -393,7 +437,8 @@ async def main(message: cl.Message):
     except Exception:
         pass    # the registry is an enhancement, never a blocker
     system_prompt = assemble(year=bool(year_note), registry=bool(reg_note),
-                             comparison=decomposed)
+                             comparison=decomposed,
+                             lang=_detect_lang(message.content))
     messages = history + [{
         "role": "user",
         "content": f"Context excerpts:\n{context}\n\nQuestion: {message.content}",
@@ -420,6 +465,10 @@ async def main(message: cl.Message):
     if hits:
         sources = ", ".join(sorted({f"{h.doc_id} p.{h.page}" if h.page else h.doc_id
                                     for h in hits}))
+        bad_cites = _invalid_citations(reply.content or "", hits)
+        if bad_cites:
+            sources += ("\n⚠️ cited but not among retrieved pages (treat with "
+                        "caution): " + "; ".join(bad_cites[:4]))
         # Ground the citations: annotated page images with the cited passage
         # highlighted (green lines / blue table region). Dedupe by (doc, page),
         # cap at 3 pages so answers stay scannable.

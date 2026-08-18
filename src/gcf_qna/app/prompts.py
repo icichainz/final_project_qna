@@ -19,7 +19,9 @@ CORE = (
     "excerpts' and say the full corpus may contain larger/other cases.\n"
     "If only part of a question is answerable from the excerpts, answer that\n"
     "part and state plainly which part the excerpts cannot support — do not\n"
-    "refuse the whole question."
+    "refuse the whole question.\n"
+    "Cite only document ids and page numbers that appear in the excerpt\n"
+    "headers or notes — never invent a page number."
 )
 
 LANGUAGE = (
@@ -63,8 +65,18 @@ CHAT_CORE = (
 )
 
 
+def _language_block(lang):
+    """Explicit beats implicit: 'answer in the user's language' loses to
+    conversational momentum in small models (observed: English question in
+    a French thread answered in French). A code-detected directive wins."""
+    if lang:
+        return (f"The user's latest message is in {lang}. "
+                f"Answer in {lang}, regardless of the conversation's language.")
+    return LANGUAGE
+
+
 def assemble(year: bool = False, registry: bool = False,
-             comparison: bool = False) -> str:
+             comparison: bool = False, lang: str = None) -> str:
     blocks = [CORE]
     if comparison:
         blocks.append(COMPARISON_BLOCK)
@@ -72,12 +84,12 @@ def assemble(year: bool = False, registry: bool = False,
         blocks.append(YEAR_BLOCK)
     if registry:
         blocks.append(REGISTRY_BLOCK)
-    blocks.append(LANGUAGE)
+    blocks.append(_language_block(lang))
     return "\n".join(blocks)
 
 
-def assemble_chat() -> str:
-    return CHAT_CORE + "\n" + LANGUAGE
+def assemble_chat(lang: str = None) -> str:
+    return CHAT_CORE + "\n" + _language_block(lang)
 
 
 # Full prompt (all blocks) — compatibility export for tests and harnesses.
