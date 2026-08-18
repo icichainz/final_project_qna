@@ -61,17 +61,30 @@ def _fmt(r: dict) -> str:
     return f"{fp}{'; '.join(bits)} [{r['doc_id']}, cover pages]"
 
 
-_BOARD_CODE_RE = re.compile(r"b\.?\s?(\d{2})\s*[/.\-]\s*(?:\d{2}\s*[/.\-]\s*)?add\.?\s?(\d{2})", re.I)
+# groups: board, agenda item (optional), addendum
+_BOARD_CODE_RE = re.compile(
+    r"b\.?\s?(\d{2})\s*[/.\-]\s*(?:(\d{2})\s*[/.\-]\s*)?add\.?\s?(\d{2})", re.I)
 
 
-def resolve_board_code(board: int, add: int) -> Optional[dict]:
-    """Deterministic board-code -> document resolution (GCF/B.42/02/Add.16)."""
+def resolve_board_code(board: int, add: int, item: Optional[int] = None) -> Optional[dict]:
+    """Deterministic board-code -> document resolution (GCF/B.42/02/Add.16).
+
+    The agenda item (the middle '/02/') is part of the identifier: one board
+    carries several series (b30-02-* and b30-03-* both exist), so a stated item
+    MUST match or the code resolves to nothing. Codes without an item part fall
+    back to add-only matching.
+    """
     from gcf_qna.boards import board_of
-    tag = f"add{add:02d}"
+    tag = f"add{add:02d}" if item is None else f"{item:02d}add{add:02d}"
     for k, v in load().items():
         if board_of(k) == board and tag in re.sub(r"[^a-z0-9]", "", k.lower()):
             return {"doc_id": k, **v}
     return None
+
+
+def _board_code_text(b_: str, item_: str, add_: str) -> str:
+    """The code as the user wrote it (zero-padding kept), canonically prefixed."""
+    return f"GCF/B.{b_}/" + (f"{item_}/" if item_ else "") + f"Add.{add_}"
 
 
 def resolve_fps(question: str):
@@ -98,11 +111,15 @@ def registry_note(question: str) -> Optional[str]:
         else:
             notes.append(f"Registry — FP{n}: NOT FOUND in the 273-document corpus "
                          "registry. Do not infer details for it from other documents.")
-    for b_, add_ in dict.fromkeys(_BOARD_CODE_RE.findall(question)):
-        row = resolve_board_code(int(b_), int(add_))
+    for b_, item_, add_ in dict.fromkeys(_BOARD_CODE_RE.findall(question)):
+        row = resolve_board_code(int(b_), int(add_), int(item_) if item_ else None)
+        code = _board_code_text(b_, item_, add_)
         if row:
-            notes.append(f"Registry — GCF/B.{int(b_)}/02/Add.{int(add_)} resolves to: " + _fmt(row))
+            notes.append(f"Registry — {code} resolves to: " + _fmt(row))
             resolved_docs.append(row["doc_id"])
+        else:
+            notes.append(f"Registry — {code}: NOT FOUND in the 273-document corpus "
+                         "registry. Do not infer details for it from other documents.")
     if len(set(resolved_docs)) > 1:
         notes.append("Registry — the identifiers above resolve to DIFFERENT "
                      "documents. Never merge them or treat them as the same proposal.")

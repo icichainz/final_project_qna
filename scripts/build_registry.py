@@ -6,7 +6,8 @@ For each document in the extracted corpus, an LLM reads the first pages
 title, accredited entity, countries, financing (kept as RAW quoted strings —
 the corpus templates contain 'Enter amount' noise, so numbers are stored as
 written, never normalized). Board and year are derived from the doc id, not
-the LLM. Resumable: existing rows are kept unless --force.
+the LLM. Resumable: existing rows are kept unless --force, except rows that only
+recorded an LLM error — those are retried on every run.
 
   python scripts/build_registry.py                # all docs -> data/registry.json
   python scripts/build_registry.py --limit 5      # smoke test
@@ -32,6 +33,9 @@ REGISTRY_PATH = config.DATA_DIR / "registry.json"
 SOURCE_DIR = config.EXTRACTED_DIR / "vlm" / "qwen_qwen2.5-vl-7b"
 MAX_CHARS = 9000
 CONCURRENCY = 8
+# 300 truncated the countries list mid-string on long proposals -> unparseable
+# JSON -> permanent error rows; retries widen the cap further.
+MAX_TOKENS = 700
 
 PROMPT = (
     "You extract metadata from the cover/summary pages of a Green Climate Fund "
@@ -46,36 +50,53 @@ PROMPT = (
 )
 
 
+def needs_extraction(stem: str, registry: dict) -> bool:
+    """Resume filter. A row that only carries an LLM error is NOT registered:
+    it must be retried, otherwise a truncated response is cached forever."""
+    row = registry.get(stem)
+    return row is None or "error" in row
+
+
 async def extract_one(client, doc_id: str, text: str, sem):
-    import openai
+    row, err = {}, None
     async with sem:
         for attempt in range(3):
             try:
                 resp = await client.chat.completions.create(
-                    model=config.CHAT_MODEL, max_completion_tokens=300,
+                    model=config.CHAT_MODEL,
+                    max_completion_tokens=MAX_TOKENS * (attempt + 1),   # widen on retry
                     response_format={"type": "json_object"},
                     messages=[{"role": "system", "content": PROMPT},
                               {"role": "user", "content": text}])
                 row = json.loads(resp.choices[0].message.content or "{}")
+                if not isinstance(row, dict):
+                    raise ValueError("JSON is not an object")
+                err = None
                 break
             except Exception as e:
+                row, err = {}, f"{type(e).__name__}: {e}"[:120]
                 if attempt == 2:
-                    return doc_id, {"error": str(e)[:120]}
+                    break
                 await asyncio.sleep(2 * (attempt + 1))
     fp = row.get("fp_number")
     m = re.search(r"fp(\d{2,3})", doc_id)      # the doc id is authoritative
     if m:
         fp = int(m.group(1))
-    return doc_id, {
+    out = {
         "fp": fp if isinstance(fp, int) else None,
         "title": row.get("title"),
         "accredited_entity": row.get("accredited_entity"),
         "countries": row.get("countries") or [],
         "gcf_financing": row.get("gcf_financing"),
         "total_financing": row.get("total_financing"),
+        # derived from the doc id: written even when the LLM call failed, so a
+        # failed row still resolves by FP/board/year instead of looking absent
         "board": board_of(doc_id),
         "year": year_of(doc_id),
     }
+    if err:
+        out["error"] = err
+    return doc_id, out
 
 
 async def main():
@@ -89,7 +110,7 @@ async def main():
         registry = json.loads(REGISTRY_PATH.read_text(encoding="utf-8")).get("documents", {})
 
     docs = sorted(SOURCE_DIR.glob("*.md"))
-    todo = [d for d in docs if d.stem not in registry][: a.limit]
+    todo = [d for d in docs if needs_extraction(d.stem, registry)][: a.limit]
     print(f"{len(docs)} docs | {len(registry)} already registered | {len(todo)} to extract")
     if todo:
         import openai
@@ -123,7 +144,9 @@ async def main():
     ok = sum(1 for r in registry.values() if r.get("title"))
     ae = sum(1 for r in registry.values() if r.get("accredited_entity"))
     fin = sum(1 for r in registry.values() if r.get("gcf_financing"))
-    print(f"registry: {len(registry)} docs | title {ok} | accredited_entity {ae} | gcf_financing {fin}")
+    bad = sum(1 for r in registry.values() if r.get("error"))
+    print(f"registry: {len(registry)} docs | title {ok} | accredited_entity {ae} "
+          f"| gcf_financing {fin} | errors {bad} (retried next run)")
     print(f"-> {REGISTRY_PATH}")
 
 
