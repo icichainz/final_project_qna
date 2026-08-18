@@ -124,7 +124,7 @@ def get_retriever() -> Optional[Retriever]:
             index, chunks, cfg = load_index(idx_dir)
             embedder = Embedder(cfg.get("embedding_model"))
             embedder.encode(["warmup"])   # load weights + CUDA context now
-            _retriever = Retriever(index, chunks, embedder)
+            _retriever = Retriever(index, chunks, embedder, index_dir=idx_dir)
             _retriever_meta.update(cfg)
             print(f"retriever ready: {cfg.get('n_chunks')} chunks, "
                   f"{cfg.get('embedding_model')} in {time.perf_counter() - t0:.1f}s",

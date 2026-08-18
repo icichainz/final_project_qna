@@ -27,7 +27,8 @@ def main():
 
     gold = [json.loads(l) for l in a.gold.read_text(encoding="utf-8").splitlines() if l]
     index, chunks, cfg = load_index(config.INDEX_DIR / a.index)
-    r = Retriever(index, chunks, Embedder(cfg["embedding_model"]))
+    r = Retriever(index, chunks, Embedder(cfg["embedding_model"]),
+                  index_dir=config.INDEX_DIR / a.index)
     r.search("warmup", top_k=1)
 
     stats = defaultdict(lambda: {"n": 0, "r5": 0, "r10": 0, "mrr": 0.0})

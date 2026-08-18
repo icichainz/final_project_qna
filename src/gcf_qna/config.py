@@ -24,6 +24,10 @@ CHUNK_SIZE = int(os.getenv("CHUNK_SIZE", "1000"))
 CHUNK_OVERLAP = int(os.getenv("CHUNK_OVERLAP", "200"))
 EMBEDDING_MODEL = os.getenv("EMBEDDING_MODEL", "sentence-transformers/all-mpnet-base-v2")
 TOP_K = int(os.getenv("TOP_K", "10"))
+# hybrid retrieval (BM25 + dense fused by reciprocal rank)
+HYBRID = os.getenv("HYBRID", "1") == "1"
+CANDIDATES_PER_RETRIEVER = int(os.getenv("CANDIDATES_PER_RETRIEVER", "30"))
+RRF_K = int(os.getenv("RRF_K", "60"))
 
 # --- chat (OpenAI-compatible endpoint) ---
 CHAT_MODEL = os.getenv("CHAT_MODEL", "gpt-4o-mini")
