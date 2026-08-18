@@ -30,7 +30,11 @@ def iter_documents(source_dir: Path) -> Iterator[Tuple[str, str]]:
 
 
 # The merge separator the extraction pipeline writes: "**Page N**" fenced by ---
-_PAGE_MARK_RE = re.compile(r"(?:^|\n+)---\n\*\*Page (\d+)\*\*\n---\n+")
+# The tail is a single \n, not \n+: a greedy tail swallows the blank line before
+# the *next* marker when a page body is empty, so that marker stops matching and
+# its content gets mis-attributed to the empty page. Bodies are .strip()ed below,
+# so consuming only one newline costs nothing.
+_PAGE_MARK_RE = re.compile(r"(?:^|\n+)---\n\*\*Page (\d+)\*\*\n---\n")
 
 
 def split_pages(text: str) -> List[Tuple[int, str]]:
