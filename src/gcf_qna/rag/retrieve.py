@@ -65,8 +65,9 @@ class Retriever:
     def search_with_confidence(self, query: str, top_k: int = 5,
                                doc_filter: Optional[str] = None):
         """(hits, confidence) — confidence is the best dense cosine for the
-        query, the signal behind the no-answer guard. Identifier-routed
-        queries return 1.0: the document match is exact by construction."""
+        query, the signal behind the no-answer guard. Identifier queries
+        return 1.0 only when every identifier resolves: the document match
+        is then exact by construction."""
         import numpy as np
         qv = np.asarray(self.embedder.encode([query]), dtype="float32")
         scores, _ = self.index.search(qv, 1)
@@ -75,10 +76,11 @@ class Retriever:
         id_toks = sorted({t.replace(".", "") for t in _tok(query)
                           if re.fullmatch(r"fp\d{2,3}|b\.?\d{2}|add\.?\d{2}", t)})
         if id_toks and self.hybrid_enabled:
-            # 1.0 only when the identifier actually RESOLVES in the corpus —
-            # an unknown FP999 must not suppress the weak-signal note
-            # (review finding #2)
-            if self.lexical.search(" ".join(id_toks), 1):
+            # 1.0 only when EVERY identifier resolves in the corpus. FTS5 MATCH
+            # is OR-joined, so a joined query lets one live token vouch for a
+            # dead one ("B.42/02/Add.99": b42 hits, add99 does not) and suppress
+            # the weak-signal note on a nonexistent document (review finding #2)
+            if all(self.lexical.search(t, 1) for t in id_toks):
                 conf = 1.0
         return self.search(query, top_k, doc_filter), conf
 
