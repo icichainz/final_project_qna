@@ -145,4 +145,8 @@ class Retriever:
             # generic queries may not surface the target doc in any global
             # top-200 — scan the whole index; a flat scan is ~100 ms here
             hits = _pass(self.index.ntotal)
+        if not hits:
+            # a filter that matches no document (e.g. a fabricated doc tag)
+            # must degrade to unscoped search, never to an empty context
+            return self.search(query, top_k, doc_filter=None)
         return hits

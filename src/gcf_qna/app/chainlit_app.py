@@ -338,16 +338,31 @@ async def main(message: cl.Message):
                     parsed.append({"q": item.strip(), "doc": None})
                 elif isinstance(item, dict) and (item.get("q") or "").strip():
                     parsed.append({"q": item["q"].strip(), "doc": item.get("doc") or None})
-            # Deterministic guard against rewrite contamination: scoping a
-            # SINGLE query to one document is only legitimate when the user
-            # explicitly named that document — a general question must stay
-            # corpus-wide. Fan-outs (>=2) keep their tags by design.
-            if len(parsed) == 1 and parsed[0].get("doc"):
-                d = str(parsed[0]["doc"]).lower()
-                msg_l = message.content.lower()
-                fp = re.search(r"fp\d{2,3}", d)
-                if d[:20] not in msg_l and not (fp and fp.group(0) in msg_l):
-                    parsed[0]["doc"] = None
+            # Deterministic guards against rewrite contamination:
+            # 1. When the MESSAGE names its own identifiers (FP numbers /
+            #    board codes), every doc tag must match one of them —
+            #    history documents must never override explicit ids
+            #    (observed: 'FP214... FP265?' answered entirely from the
+            #    previous turn's FP274).
+            # 2. A single query may only carry a doc tag if the message
+            #    names that document; fan-outs without message ids keep
+            #    their history-derived tags (the 'compare those' case).
+            msg_l = message.content.lower()
+            msg_ids = set(re.findall(r"fp\s?(\d{2,3})", msg_l))
+            for item in parsed:
+                d = str(item.get("doc") or "").lower()
+                if not d:
+                    continue
+                if msg_ids:
+                    # The message names its own ids: never trust decomposer
+                    # tags at all (observed fabrication: '02_fp214' — history
+                    # prefix mashed onto a message id). Two-stage routing
+                    # resolves the real doc from the sub-query text.
+                    item["doc"] = None
+                elif len(parsed) == 1:
+                    fp = re.search(r"fp(\d{2,3})", d)
+                    if d[:20] not in msg_l and not (fp and "fp" + fp.group(1) in msg_l):
+                        item["doc"] = None
             if parsed:
                 search_queries = parsed
         except Exception:
