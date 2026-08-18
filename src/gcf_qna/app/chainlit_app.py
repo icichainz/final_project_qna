@@ -385,6 +385,26 @@ async def main(message: cl.Message):
         cl.user_session.set("history", history[-12:])
         return
 
+    # Named FPs that resolve nowhere must not fall back to unscoped semantic
+    # retrieval (review: FP999 refusals looked "grounded" in unrelated docs).
+    try:
+        from gcf_qna.rag.registry import load as _reg_load, resolve_fps
+        if _reg_load():
+            _resolved, _missing = resolve_fps(message.content)
+            if _missing and not _resolved:
+                lang = _detect_lang(message.content)
+                miss = ", ".join(f"FP{n}" for n in _missing)
+                text = (f"{miss} n'existe pas dans le corpus (registre de 273 documents)."
+                        if lang == "French" else
+                        f"{miss} does not exist in this corpus (273-document registry).")
+                await cl.Message(content=text).send()
+                history += [{"role": "user", "content": message.content},
+                            {"role": "assistant", "content": text}]
+                cl.user_session.set("history", history[-12:])
+                return
+    except Exception:
+        pass
+
     decomposed = len(search_queries) > 1
     if decomposed or search_queries[0]["q"] != message.content:
         async with cl.Step(name="retrieval query") as step:
@@ -393,14 +413,22 @@ async def main(message: cl.Message):
                 for sq in search_queries)
 
     per_query = config.TOP_K if not decomposed else max(3, config.TOP_K // len(search_queries))
-    seen, hits = set(), []
     weak_signal = True
+    per_lists = []
     for sq in search_queries:
         got, conf = await cl.make_async(retriever.search_with_confidence)(
             sq["q"], per_query, sq.get("doc"))
         if conf >= config.MIN_DENSE_SCORE:
             weak_signal = False
-        for h in got:
+        per_lists.append(got)
+    # round-robin across queries so the global cap cannot starve the later
+    # documents of a multi-doc turn (review cross-cutting #2)
+    from itertools import zip_longest
+    seen, hits = set(), []
+    for tier in zip_longest(*per_lists):
+        for h in tier:
+            if h is None:
+                continue
             key = (h.doc_id, h.page, h.text[:120])
             if key not in seen:
                 seen.add(key)
@@ -452,8 +480,16 @@ async def main(message: cl.Message):
     cl.user_session.set("history", history[-12:])  # keep the last 6 exchanges
 
     if hits:
+        # order sources/evidence by what the answer actually cited (review #6):
+        # cited (doc,page) pairs first, uncited retrieved hits after
+        cited_docs = set(re.findall(r"\[([0-9]{1,3}_[\w.\-]+)", reply.content or ""))
+        def _cited(h):
+            return any(h.doc_id.startswith(c[:24]) or c.startswith(h.doc_id[:24])
+                       for c in cited_docs)
+        hits = sorted(hits, key=lambda h: not _cited(h))
+        shown = [h for h in hits if _cited(h)] or hits
         sources = ", ".join(sorted({f"{h.doc_id} p.{h.page}" if h.page else h.doc_id
-                                    for h in hits}))
+                                    for h in shown}))
         bad_cites = _invalid_citations(reply.content or "", hits)
         if bad_cites:
             sources += ("\n⚠️ cited but not among retrieved pages (treat with "

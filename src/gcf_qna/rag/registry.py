@@ -61,16 +61,51 @@ def _fmt(r: dict) -> str:
     return f"{fp}{'; '.join(bits)} [{r['doc_id']}, cover pages]"
 
 
+_BOARD_CODE_RE = re.compile(r"b\.?\s?(\d{2})\s*[/.\-]\s*(?:\d{2}\s*[/.\-]\s*)?add\.?\s?(\d{2})", re.I)
+
+
+def resolve_board_code(board: int, add: int) -> Optional[dict]:
+    """Deterministic board-code -> document resolution (GCF/B.42/02/Add.16)."""
+    from gcf_qna.boards import board_of
+    tag = f"add{add:02d}"
+    for k, v in load().items():
+        if board_of(k) == board and tag in re.sub(r"[^a-z0-9]", "", k.lower()):
+            return {"doc_id": k, **v}
+    return None
+
+
+def resolve_fps(question: str):
+    """(resolved rows, missing fp numbers) for every FP id in the question."""
+    resolved, missing = [], []
+    for n in dict.fromkeys(re.findall(r"fp\s?(\d{2,3})", question.lower())):
+        row = by_fp(int(n))
+        (resolved if row else missing).append(row or int(n))
+    return resolved, missing
+
+
 def registry_note(question: str) -> Optional[str]:
     """Computed corpus-metadata note for the answer model, or None."""
     if not load():
         return None
     q = question.lower()
     notes: List[str] = []
+    resolved_docs: List[str] = []
     for n in dict.fromkeys(re.findall(r"fp\s?(\d{2,3})", q)):
         row = by_fp(int(n))
         if row:
             notes.append("Registry — " + _fmt(row))
+            resolved_docs.append(row["doc_id"])
+        else:
+            notes.append(f"Registry — FP{n}: NOT FOUND in the 273-document corpus "
+                         "registry. Do not infer details for it from other documents.")
+    for b_, add_ in dict.fromkeys(_BOARD_CODE_RE.findall(question)):
+        row = resolve_board_code(int(b_), int(add_))
+        if row:
+            notes.append(f"Registry — GCF/B.{int(b_)}/02/Add.{int(add_)} resolves to: " + _fmt(row))
+            resolved_docs.append(row["doc_id"])
+    if len(set(resolved_docs)) > 1:
+        notes.append("Registry — the identifiers above resolve to DIFFERENT "
+                     "documents. Never merge them or treat them as the same proposal.")
     for y in dict.fromkeys(re.findall(r"\b(20[12]\d)\b", q)):
         rows = [r for r in by_year(int(y)) if r.get("fp")]
         if rows:

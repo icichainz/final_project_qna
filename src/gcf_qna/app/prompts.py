@@ -21,7 +21,11 @@ CORE = (
     "part and state plainly which part the excerpts cannot support — do not\n"
     "refuse the whole question.\n"
     "Cite only document ids and page numbers that appear in the excerpt\n"
-    "headers or notes — never invent a page number."
+    "headers or notes — never invent a page number.\n"
+    "Never use facts from earlier conversation turns as evidence — only the\n"
+    "current excerpts and notes.\n"
+    "If pages disagree on a value, present both values with their pages —\n"
+    "never silently pick one."
 )
 
 LANGUAGE = (
@@ -32,7 +36,9 @@ COMPARISON_BLOCK = (
     "When the user compares specific documents, report what each document's\n"
     "excerpts state, item by item — including 'no figure stated in the\n"
     "excerpts' for a document — never refuse the whole comparison because\n"
-    "some items lack data."
+    "some items lack data.\n"
+    "Never rank or compare amounts in different currencies: state the\n"
+    "currencies differ and give the amounts as printed."
 )
 
 YEAR_BLOCK = (

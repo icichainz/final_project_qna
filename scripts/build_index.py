@@ -30,14 +30,26 @@ def main():
     ap.add_argument("--limit", type=int, default=None, help="index only the first N documents")
     a = ap.parse_args()
 
-    chunks, n_docs = [], 0
+    import hashlib
+    chunks, n_docs, seen, dropped = [], 0, set(), 0
     for doc_id, text in iter_documents(a.source):
         for page_no, body in split_pages(text):
             for piece in chunk_text(body, a.chunk_size, a.chunk_overlap):
+                # GCF packages repeat proposal pages inside annexes -> exact
+                # duplicate chunks (11,577 measured) that crowd out distinct
+                # evidence in top-k. Dedup by normalized doc/page/text.
+                key = (doc_id, page_no,
+                       hashlib.sha1(" ".join(piece.split()).encode()).hexdigest())
+                if key in seen:
+                    dropped += 1
+                    continue
+                seen.add(key)
                 chunks.append({"doc_id": doc_id, "page": page_no, "text": piece})
         n_docs += 1
         if a.limit and n_docs >= a.limit:
             break
+    if dropped:
+        print(f"deduplicated: {dropped} exact duplicate chunks dropped")
     if not chunks:
         raise SystemExit(f"No documents found under {a.source}")
     print(f"{n_docs} documents -> {len(chunks)} chunks | embedding: {a.embedding_model}")

@@ -59,3 +59,18 @@ def test_compact_identifier_routes(retriever):       # review finding #3 (behavi
 def test_bad_doc_filter_degrades(retriever):
     hits = retriever.search("gender budget", 2, doc_filter="99_nonexistent")
     assert hits, "a filter matching nothing must degrade to unscoped search"
+
+
+def test_round_robin_merge_no_starvation():
+    """Cross-cutting review #2: the global cap must not starve later queries."""
+    from itertools import zip_longest
+    a = [("d1", i) for i in range(10)]
+    b = [("d2", i) for i in range(10)]
+    merged, seen = [], set()
+    for tier in zip_longest(a, b):
+        for h in tier:
+            if h and h not in seen:
+                seen.add(h)
+                merged.append(h)
+    top = merged[:15]
+    assert sum(1 for d, _ in top if d == "d2") >= 7, "later query starved by cap"

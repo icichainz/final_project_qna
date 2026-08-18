@@ -25,3 +25,23 @@ def test_invalid_citations():
     assert bad and "p.35" in bad[0]
     assert _invalid_citations("See [02_gcf-b42-02-add16-funding-proposal-package-fp274, p. 8].", hits) == []
     assert _invalid_citations("AE [57_gcf-x, cover pages].", hits) == []
+
+
+def test_registry_resolution_and_conflict(monkeypatch):
+    from gcf_qna.rag import registry
+    monkeypatch.setattr(registry, "_cache", {
+        "57_gcf-b37-02-add09-funding-proposal-package-fp218":
+            {"fp": 218, "title": "Kigoma", "accredited_entity": "UNEP",
+             "countries": [], "board": 37, "year": 2023,
+             "gcf_financing": None, "total_financing": None},
+        "02_gcf-b42-02-add16-funding-proposal-package-fp274":
+            {"fp": 274, "title": "BRACE", "accredited_entity": "SC Australia",
+             "countries": [], "board": 42, "year": 2025,
+             "gcf_financing": None, "total_financing": None},
+    })
+    n = registry.registry_note("Are FP218 and GCF/B.42/02/Add.16 the same?")
+    assert "DIFFERENT" in n and "BRACE" in n and "Kigoma" in n
+    n999 = registry.registry_note("budget of FP999?")
+    assert "NOT FOUND" in n999
+    resolved, missing = registry.resolve_fps("FP999 and FP218")
+    assert missing == [999] and resolved[0]["fp"] == 218
