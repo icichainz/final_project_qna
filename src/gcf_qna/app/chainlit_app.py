@@ -36,7 +36,16 @@ SYSTEM_PROMPT = (
     "When the user compares specific documents, report what each document's\n"
     "excerpts state, item by item — including 'no figure stated in the\n"
     "excerpts' for a document — never refuse the whole comparison because\n"
-    "some items lack data."
+    "some items lack data.\n"
+    "If only part of a question is answerable from the excerpts, answer that\n"
+    "part and state plainly which part the excerpts cannot support — do not\n"
+    "refuse the whole question.\n"
+    "Document ids encode the GCF board meeting: '...-b42-02-...' means B.42.\n"
+    "Board-meeting years (verified from the corpus): B.11=2015; B.13-B.15=2016;\n"
+    "B.16-B.18=2017; B.19-B.21=2018; B.22-B.24=2019; B.25-B.27=2020;\n"
+    "B.28-B.30=2021; B.31-B.34=2022; B.35-B.37=2023; B.38-B.40=2024;\n"
+    "B.41-B.43=2025. Use this to reason about dates and years from the\n"
+    "document ids in the excerpts and citations."
 )
 
 
