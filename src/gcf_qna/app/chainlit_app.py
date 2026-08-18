@@ -380,8 +380,12 @@ async def main(message: cl.Message):
 
     per_query = config.TOP_K if not decomposed else max(3, config.TOP_K // len(search_queries))
     seen, hits = set(), []
+    weak_signal = True
     for sq in search_queries:
-        got = await cl.make_async(retriever.search)(sq["q"], per_query, sq.get("doc"))
+        got, conf = await cl.make_async(retriever.search_with_confidence)(
+            sq["q"], per_query, sq.get("doc"))
+        if conf >= config.MIN_DENSE_SCORE:
+            weak_signal = False
         for h in got:
             key = (h.doc_id, h.page, h.text[:120])
             if key not in seen:
@@ -394,6 +398,11 @@ async def main(message: cl.Message):
         for h in hits)
     if year_note:
         context = year_note + "\n\n" + context
+    if weak_signal:
+        context = ("Note: retrieval confidence for this question is LOW — the "
+                   "excerpts below may not actually be relevant. Do not force an "
+                   "answer from marginal matches; say plainly that the corpus "
+                   "does not appear to cover this.\n\n") + context
     try:
         from gcf_qna.rag.registry import registry_note
         reg_note = registry_note(message.content)

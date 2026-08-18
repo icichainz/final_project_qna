@@ -64,6 +64,20 @@ class Retriever:
             except Exception as e:   # lexical is an enhancement, never a blocker
                 print(f"lexical index unavailable, dense-only: {e}", flush=True)
 
+    def search_with_confidence(self, query: str, top_k: int = 5,
+                               doc_filter: Optional[str] = None):
+        """(hits, confidence) — confidence is the best dense cosine for the
+        query, the signal behind the no-answer guard. Identifier-routed
+        queries return 1.0: the document match is exact by construction."""
+        import numpy as np
+        qv = np.asarray(self.embedder.encode([query]), dtype="float32")
+        scores, _ = self.index.search(qv, 1)
+        conf = float(scores[0][0]) if scores.size else 0.0
+        from gcf_qna.rag.lexical import tokenize as _tok
+        has_ids = any(re.fullmatch(r"fp\d{2,3}|b\.?\d{2}|add\.?\d{2}", t)
+                      for t in _tok(query))
+        return self.search(query, top_k, doc_filter), (1.0 if has_ids else conf)
+
     def search(self, query: str, top_k: int = 5,
                doc_filter: Optional[str] = None) -> List[Hit]:
         """Top-k chunks for a query; doc_filter restricts hits to one document.
