@@ -1,0 +1,26 @@
+{"q": "What is the total GCF financing requested in FP254?", "expected": ["22_gcf-b40-02-add16-rev01-funding-proposal-package-fp254"], "cls": "identifier"}
+{"q": "Which accredited entity implements FP220?", "expected": ["55_gcf-b37-02-add11-funding-proposal-package-fp220"], "cls": "identifier"}
+{"q": "What are the expected results of FP214?", "expected": ["61_gcf-b37-02-add05-funding-proposal-package-fp214"], "cls": "identifier"}
+{"q": "Summarize the climate rationale of FP261.", "expected": ["15_gcf-b41-02-add09-rev01-funding-proposal-package-fp261"], "cls": "identifier"}
+{"q": "What co-financing does FP231 include?", "expected": ["45_gcf-b38-02-add11-funding-proposal-package-fp231"], "cls": "identifier"}
+{"q": "Which country does FP229 target?", "expected": ["47_gcf-b38-02-add09-funding-proposal-package-fp229"], "cls": "identifier"}
+{"q": "What is the total GCF financing requested in FP228?", "expected": ["48_gcf-b38-02-add08-funding-proposal-package-fp228"], "cls": "identifier"}
+{"q": "Which accredited entity implements FP221?", "expected": ["54_gcf-b37-02-add12-funding-proposal-package-fp221"], "cls": "identifier"}
+{"q": "What are the expected results of FP272?", "expected": ["04_gcf-b42-02-add14-funding-proposal-package-fp272_0"], "cls": "identifier"}
+{"q": "Summarize the climate rationale of FP219.", "expected": ["56_gcf-b37-02-add10-funding-proposal-package-fp219"], "cls": "identifier"}
+{"q": "What co-financing does FP257 include?", "expected": ["19_gcf-b41-02-add05-funding-proposal-package-fp257"], "cls": "identifier"}
+{"q": "Which country does FP267 target?", "expected": ["09_gcf-b42-02-add09-funding-proposal-package-fp267"], "cls": "identifier"}
+{"q": "What is the total GCF financing requested in FP248?", "expected": ["28_gcf-b40-02-add10-rev01-funding-proposal-package-fp248"], "cls": "identifier"}
+{"q": "Which accredited entity implements FP218?", "expected": ["57_gcf-b37-02-add09-funding-proposal-package-fp218"], "cls": "identifier"}
+{"q": "What are the expected results of FP251?", "expected": ["25_gcf-b40-02-add13-funding-proposal-package-fp251"], "cls": "identifier"}
+{"q": "Summarize the climate rationale of FP241.", "expected": ["35_gcf-b39-02-add16-rev01-funding-proposal-package-fp241"], "cls": "identifier"}
+{"q": "What co-financing does FP215 include?", "expected": ["60_gcf-b37-02-add06-funding-proposal-package-fp215"], "cls": "identifier"}
+{"q": "Which country does FP273 target?", "expected": ["03_gcf-b42-02-add15-funding-proposal-package-fp273"], "cls": "identifier"}
+{"q": "What are the projected heat stress and temperature impacts in Barbados?", "expected": ["83_gcf-b34-02-add02_0", "01_gcf-b42-02-add17-funding-proposal-package-fp275"], "cls": "paraphrase"}
+{"q": "How do the projections for Belize compare regarding warming and hot days?", "expected": ["01_gcf-b42-02-add17-funding-proposal-package-fp275"], "cls": "paraphrase"}
+{"q": "What grievance redress mechanisms exist for affected communities?", "expected": ["154_gcf-b24-02-add07", "84_gcf-b34-02-add01", "66_gcf-b36-02-add04"], "cls": "paraphrase"}
+{"q": "Which proposal was withdrawn by the International Finance Corporation?", "expected": ["152_gcf-b24-02-add09-rev01", "196_gcf-b19-22-add21-rev01"], "cls": "paraphrase"}
+{"q": "What does the corpus say about montane forest biodiversity in the Congo-Nile Divide of Rwanda?", "expected": ["58_gcf-b37-02-add08-funding-proposal-package-fp217_0"], "cls": "paraphrase"}
+{"q": "How is gender mainstreaming budgeted in the Thai rice project?", "expected": ["61_gcf-b37-02-add05-funding-proposal-package-fp214"], "cls": "paraphrase"}
+{"q": "How are indigenous peoples consulted during project design?", "expected": ["61_gcf-b37-02-add05-funding-proposal-package-fp214", "133_gcf-b27-02-add02", "11_gcf-b42-02-add07-funding-proposal-package-fp265", "40_gcf-b39-02-add11-funding-proposal-package-fp236", "141_gcf-b26-02-add06", "10_gcf-b42-02-add08-funding-proposal-package-fp266"], "cls": "paraphrase"}
+{"q": "What integrated utility services are planned for Dominica, Grenada and St Vincent?", "expected": ["01_gcf-b42-02-add17-funding-proposal-package-fp275"], "cls": "paraphrase"}

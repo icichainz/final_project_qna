@@ -6,10 +6,33 @@ chunk — the old codebase fed that unrelated passage to the LLM as context.
 """
 from __future__ import annotations
 
+import re
 from dataclasses import dataclass
 from typing import Any, Dict, List, Optional
 
+from gcf_qna import config
 from gcf_qna.rag.embed import Embedder
+from gcf_qna.rag.lexical import LexicalIndex
+
+
+def rrf(ranked_lists: List[List[int]], k: int = 60,
+        weights: Optional[List[float]] = None) -> Dict[int, float]:
+    """Reciprocal Rank Fusion: rank-only merging of incomparable score scales.
+
+    Weights bias whole lists: for identifier queries the dense list is pure
+    noise (embeddings are blind to FP codes), so unweighted fusion interleaves
+    noise into the top-5. Doubling the lexical weight there restores precision.
+    """
+    scores: Dict[int, float] = {}
+    for li, ranking in enumerate(ranked_lists):
+        w = weights[li] if weights else 1.0
+        for rank, idx in enumerate(ranking):
+            scores[idx] = scores.get(idx, 0.0) + w / (k + rank + 1)
+    return scores
+
+
+# Tokens where lexical search is near-authoritative: proposal + board codes.
+_IDENTIFIER_RE = re.compile(r"\b(fp\s?\d{2,3}|b\.\d{2}|add\.\d{2})\b")
 
 
 @dataclass
@@ -27,10 +50,19 @@ def _doc_match(doc_id: str, wanted: str) -> bool:
 
 
 class Retriever:
-    def __init__(self, index, chunks: List[Dict[str, Any]], embedder: Embedder):
+    def __init__(self, index, chunks: List[Dict[str, Any]], embedder: Embedder,
+                 index_dir: Optional[Any] = None):
         self.index = index
         self.chunks = chunks
         self.embedder = embedder
+        self.hybrid_enabled = False
+        if config.HYBRID and index_dir is not None:
+            try:
+                self.lexical = LexicalIndex(index_dir)
+                self.lexical.ensure(chunks)
+                self.hybrid_enabled = True
+            except Exception as e:   # lexical is an enhancement, never a blocker
+                print(f"lexical index unavailable, dense-only: {e}", flush=True)
 
     def search(self, query: str, top_k: int = 5,
                doc_filter: Optional[str] = None) -> List[Hit]:
@@ -59,7 +91,23 @@ class Retriever:
             return out
 
         if doc_filter is None:
-            return _pass(top_k)
+            if not self.hybrid_enabled:
+                return _pass(top_k)
+            # hybrid: fuse dense and lexical rankings by reciprocal rank
+            n = config.CANDIDATES_PER_RETRIEVER
+            dense_scores, dense_ids = self.index.search(q, n)
+            dense_rank = [i for i in dense_ids[0] if 0 <= i < len(self.chunks)]
+            lex_rank = self.lexical.search(query, n)
+            id_query = bool(_IDENTIFIER_RE.search(query.lower()))
+            weights = [1.0, 2.0] if id_query else [1.0, 1.0]
+            fused = sorted(rrf([dense_rank, lex_rank], config.RRF_K, weights).items(),
+                           key=lambda kv: kv[1], reverse=True)[:top_k]
+            hits = []
+            for idx, score in fused:
+                c = self.chunks[idx]
+                hits.append(Hit(text=c["text"], doc_id=c.get("doc_id", "?"),
+                                score=float(score), page=c.get("page") or None))
+            return hits
         hits = _pass(min(max(200, top_k * 40), self.index.ntotal))
         if len(hits) < top_k:
             # generic queries may not surface the target doc in any global
