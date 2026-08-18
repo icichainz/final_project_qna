@@ -16,11 +16,14 @@ OUT     ?= /tmp/ground_demo                            # demo output dir
 _limit  = $(if $(LIMIT),--limit $(LIMIT))
 
 .DEFAULT_GOAL := help
-.PHONY: help venv install init-db extract status retry boxes index ground-demo chat docker-build docker-up push deploy remote-restart remote-logs remote-down remote-shell
+.PHONY: help venv install test init-db extract status retry boxes index ground-demo chat docker-build docker-up push deploy remote-restart remote-logs remote-down remote-shell
 
 help:                ## list available targets
 	@awk 'BEGIN {FS = ":.*##"} /^[a-zA-Z_-]+:.*##/ \
 	  {printf "  \033[36m%-14s\033[0m %s\n", $$1, $$2}' $(MAKEFILE_LIST)
+
+test:                ## run the regression test suite
+	$(PY) -m pytest tests/ -q
 
 init-db:             ## create/upgrade the conversation-history database
 	$(PY) scripts/init_appdb.py

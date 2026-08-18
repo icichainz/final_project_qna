@@ -31,8 +31,6 @@ def rrf(ranked_lists: List[List[int]], k: int = 60,
     return scores
 
 
-# Tokens where lexical search is near-authoritative: proposal + board codes.
-_IDENTIFIER_RE = re.compile(r"\b(fp\s?\d{2,3}|b\.\d{2}|add\.\d{2})\b")
 
 
 @dataclass
@@ -74,9 +72,15 @@ class Retriever:
         scores, _ = self.index.search(qv, 1)
         conf = float(scores[0][0]) if scores.size else 0.0
         from gcf_qna.rag.lexical import tokenize as _tok
-        has_ids = any(re.fullmatch(r"fp\d{2,3}|b\.?\d{2}|add\.?\d{2}", t)
-                      for t in _tok(query))
-        return self.search(query, top_k, doc_filter), (1.0 if has_ids else conf)
+        id_toks = sorted({t.replace(".", "") for t in _tok(query)
+                          if re.fullmatch(r"fp\d{2,3}|b\.?\d{2}|add\.?\d{2}", t)})
+        if id_toks and self.hybrid_enabled:
+            # 1.0 only when the identifier actually RESOLVES in the corpus —
+            # an unknown FP999 must not suppress the weak-signal note
+            # (review finding #2)
+            if self.lexical.search(" ".join(id_toks), 1):
+                conf = 1.0
+        return self.search(query, top_k, doc_filter), conf
 
     def search(self, query: str, top_k: int = 5,
                doc_filter: Optional[str] = None) -> List[Hit]:

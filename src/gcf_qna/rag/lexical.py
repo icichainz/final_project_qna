@@ -10,6 +10,7 @@ upgrade themselves without a rebuild.
 """
 from __future__ import annotations
 
+import hashlib
 import json
 import re
 import sqlite3
@@ -44,18 +45,38 @@ def _doc_tokens(doc_id: str) -> List[str]:
     return tokenize(doc_id.replace("-", " ").replace("_", " "))
 
 
+def _chunks_fingerprint(chunks: List[Dict[str, Any]]) -> str:
+    """Cheap identity of the chunk store: FAISS/chunks.jsonl can be rebuilt
+    in place, and a lexical.db from the previous build would map BM25 rowids
+    to the wrong chunks (review finding #1)."""
+    h = hashlib.sha1(str(len(chunks)).encode())
+    for c in (chunks[0], chunks[-1]) if chunks else ():
+        h.update(c.get("doc_id", "").encode())
+        h.update(c.get("text", "")[:80].encode())
+    return h.hexdigest()
+
+
 class LexicalIndex:
     def __init__(self, index_dir: Path):
         self.path = Path(index_dir) / "lexical.db"
         self._con: Optional[sqlite3.Connection] = None
 
     def ensure(self, chunks: List[Dict[str, Any]]) -> None:
-        """Open the index, building it from the chunk list if absent."""
+        """Open the index, (re)building it when absent OR when the tokenizer
+        version or the chunk-store fingerprint no longer match."""
+        fp = _chunks_fingerprint(chunks)
         build = not self.path.exists()
         self._con = sqlite3.connect(self.path, check_same_thread=False)
         if not build:
             ver = self._con.execute("PRAGMA user_version").fetchone()[0]
-            if ver != TOKENIZER_VERSION:       # stale tokenizer: rebuild
+            stored_fp = None
+            try:
+                stored_fp = self._con.execute(
+                    "SELECT value FROM meta WHERE key='chunks_fp'").fetchone()
+                stored_fp = stored_fp[0] if stored_fp else None
+            except sqlite3.OperationalError:
+                pass
+            if ver != TOKENIZER_VERSION or stored_fp != fp:   # stale: rebuild
                 self._con.close()
                 self.path.unlink()
                 build = True
@@ -67,6 +88,8 @@ class LexicalIndex:
             rows = ((i, " ".join(tokenize(c["text"]) + _doc_tokens(c.get("doc_id", ""))))
                     for i, c in enumerate(chunks))
             con.executemany("INSERT INTO chunks_fts(rowid, toks) VALUES (?, ?)", rows)
+            con.execute("CREATE TABLE meta (key TEXT PRIMARY KEY, value TEXT)")
+            con.execute("INSERT INTO meta VALUES ('chunks_fp', ?)", (fp,))
             con.execute(f"PRAGMA user_version = {TOKENIZER_VERSION}")
             con.commit()
 

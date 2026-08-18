@@ -20,6 +20,7 @@ import chainlit as cl
 from chainlit.types import ThreadDict
 
 from gcf_qna import config
+from gcf_qna.boards import BOARD_YEARS, board_of, year_of
 from gcf_qna.app.highlight import annotated_page
 from gcf_qna.rag import Embedder, Retriever, load_index
 from gcf_qna.rag.ground import ground_chunk
@@ -28,25 +29,14 @@ from gcf_qna.app.prompts import (CONDUCTOR_PROMPT, SYSTEM_PROMPT, assemble,
                                  assemble_chat)
 
 
-# Board-meeting years, verified from 271 corpus page-1 dates. Injected into
-# every excerpt header so the answer model never has to do table lookups.
-BOARD_YEARS = {11: 2015, 12: 2016, 13: 2016, 14: 2016, 15: 2016, 16: 2017,
-               17: 2017, 18: 2017, 19: 2018, 20: 2018, 21: 2018, 22: 2019,
-               23: 2019, 24: 2019, 25: 2020, 26: 2020, 27: 2020, 28: 2021,
-               29: 2021, 30: 2021, 31: 2022, 32: 2022, 33: 2022, 34: 2022,
-               35: 2023, 36: 2023, 37: 2023, 38: 2024, 39: 2024, 40: 2024,
-               41: 2025, 42: 2025, 43: 2025}
-_BOARD_RE = re.compile(r"-b(\d+)-")
-
-
 def _doc_label(doc_id: str, page) -> str:
     """Citation header with precomputed board/year: the model reads dates
-    instead of deriving them."""
+    instead of deriving them. Uses the shared boards parser, which handles
+    every corpus id format incl. '72_GCF_B.35_02_Add.05...' (review #4)."""
     label = doc_id + (f", p. {page}" if page else "")
-    m = _BOARD_RE.search(doc_id)
-    if m and int(m.group(1)) in BOARD_YEARS:
-        b = int(m.group(1))
-        label += f" — B.{b}, {BOARD_YEARS[b]}"
+    b, y = board_of(doc_id), year_of(doc_id)
+    if b and y:
+        label += f" — B.{b}, {y}"
     return label
 
 
@@ -101,8 +91,7 @@ def _year_assist(question: str, hits: list):
     if not years:
         return hits, None
     def doc_year(doc_id):
-        m = _BOARD_RE.search(doc_id)
-        return BOARD_YEARS.get(int(m.group(1))) if m else None
+        return year_of(doc_id)
     matched = [h for h in hits if doc_year(h.doc_id) in years]
     rest = [h for h in hits if h not in matched]
     ys = ", ".join(str(y) for y in sorted(years))

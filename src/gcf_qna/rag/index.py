@@ -23,6 +23,7 @@ def save_index(index, chunks: List[Dict[str, Any]], out_dir: Path, *, embedding_
     import faiss
     out_dir = Path(out_dir)
     out_dir.mkdir(parents=True, exist_ok=True)
+    (out_dir / "lexical.db").unlink(missing_ok=True)   # sidecar must not outlive the chunks
     faiss.write_index(index, str(out_dir / "index.faiss"))
     with (out_dir / "chunks.jsonl").open("w", encoding="utf-8") as f:
         for c in chunks:
