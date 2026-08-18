@@ -28,6 +28,9 @@ TOP_K = int(os.getenv("TOP_K", "10"))
 HYBRID = os.getenv("HYBRID", "1") == "1"
 CANDIDATES_PER_RETRIEVER = int(os.getenv("CANDIDATES_PER_RETRIEVER", "30"))
 RRF_K = int(os.getenv("RRF_K", "60"))
+# below this best dense cosine, retrieval is flagged low-confidence (step 4
+# of the hybrid plan): the answer model gets an explicit weak-signal note
+MIN_DENSE_SCORE = float(os.getenv("MIN_DENSE_SCORE", "0.5"))
 
 # --- chat (OpenAI-compatible endpoint) ---
 CHAT_MODEL = os.getenv("CHAT_MODEL", "gpt-4o-mini")
