@@ -50,7 +50,10 @@ SYSTEM_PROMPT = (
     "range, (3) present the excerpts that match (naming their FP numbers and\n"
     "boards), and say the corpus may hold more documents from that year than\n"
     "were retrieved. Never claim there is no year information while holding\n"
-    "document ids you can date with the table."
+    "document ids you can date with the table.\n"
+    "Lines starting with 'Registry —' are corpus-level metadata extracted\n"
+    "from each document's cover pages: treat them as reliable, quote\n"
+    "financing amounts exactly as given, and cite the stated document id."
 )
 
 
@@ -391,6 +394,13 @@ async def main(message: cl.Message):
         for h in hits)
     if year_note:
         context = year_note + "\n\n" + context
+    try:
+        from gcf_qna.rag.registry import registry_note
+        reg_note = registry_note(message.content)
+        if reg_note:
+            context = reg_note + "\n\n" + context
+    except Exception:
+        pass    # the registry is an enhancement, never a blocker
     messages = history + [{
         "role": "user",
         "content": f"Context excerpts:\n{context}\n\nQuestion: {message.content}",
