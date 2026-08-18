@@ -53,6 +53,7 @@ CREATE TABLE IF NOT EXISTS steps (
     "language" TEXT,
     "indent" INTEGER,
     "defaultOpen" INTEGER,
+    "autoCollapse" INTEGER,
     FOREIGN KEY ("threadId") REFERENCES threads("id") ON DELETE CASCADE
 );
 CREATE TABLE IF NOT EXISTS elements (
@@ -98,6 +99,13 @@ def main() -> None:
     try:
         con.execute("PRAGMA journal_mode=WAL")
         con.executescript(DDL)
+        # additive migrations for pre-existing databases (idempotent)
+        for table, col, typ in [("steps", "autoCollapse", "INTEGER")]:
+            try:
+                con.execute(f'ALTER TABLE {table} ADD COLUMN "{col}" {typ}')
+                print(f"migrated: {table}.{col} added")
+            except sqlite3.OperationalError:
+                pass    # column already exists
         con.commit()
         tables = [r[0] for r in con.execute(
             "SELECT name FROM sqlite_master WHERE type='table' ORDER BY name")]
