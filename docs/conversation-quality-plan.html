@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Conversation Quality Plan</title>
+<style>
+  :root {
+    --bg: #f7faf8; --surface: #ffffff; --ink: #1c2a22; --ink-soft: #4c5e54;
+    --ink-faint: #71837a; --accent: #176a4b; --accent-soft: #e3efe8;
+    --teal: #22677a; --amber: #a8642a; --amber-soft: #f6ecdf;
+    --line: #d8e3dc; --line-soft: #e6eee9; --code-bg: #edf3ef;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #101713; --surface: #17211b; --ink: #e2ebe5; --ink-soft: #a7b8ae;
+      --ink-faint: #7e9188; --accent: #4fc08d; --accent-soft: #1b2f25;
+      --teal: #5cb6cc; --amber: #d99a5b; --amber-soft: #2c2215;
+      --line: #2a3a31; --line-soft: #223028; --code-bg: #1d2a23;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #101713; --surface: #17211b; --ink: #e2ebe5; --ink-soft: #a7b8ae;
+    --ink-faint: #7e9188; --accent: #4fc08d; --accent-soft: #1b2f25;
+    --teal: #5cb6cc; --amber: #d99a5b; --amber-soft: #2c2215;
+    --line: #2a3a31; --line-soft: #223028; --code-bg: #1d2a23;
+  }
+  body { background: var(--bg); color: var(--ink);
+    font-family: Charter, "Bitstream Charter", "Sitka Text", Cambria, Georgia, serif;
+    font-size: 1.0625rem; line-height: 1.62; margin: 0; }
+  .wrap { max-width: 46rem; margin: 0 auto; padding: 3.5rem 1.25rem 5rem; }
+  h1, h2, h3, .eyebrow, .step-num, th, .pill { font-family: "Avenir Next", Seravek, "Segoe UI", system-ui, sans-serif; }
+  h1 { font-size: 2.2rem; line-height: 1.12; font-weight: 700; letter-spacing: -.015em; margin: .4rem 0 .9rem; text-wrap: balance; }
+  h2 { font-size: 1.4rem; font-weight: 700; margin: 2.8rem 0 .8rem; text-wrap: balance; }
+  h3 { font-size: 1.06rem; font-weight: 650; margin: 1.8rem 0 .4rem; }
+  p { margin: 0 0 1rem; }
+  .lede { font-size: 1.16rem; line-height: 1.55; color: var(--ink-soft); }
+  .eyebrow { text-transform: uppercase; letter-spacing: .14em; font-size: .72rem; font-weight: 650; color: var(--accent); margin: 0; }
+  code { font-family: ui-monospace, "Cascadia Code", "SF Mono", Menlo, Consolas, monospace;
+    font-size: .86em; background: var(--code-bg); border-radius: 4px; padding: .08em .32em; }
+  pre { font-family: ui-monospace, Menlo, Consolas, monospace; font-size: .82rem; line-height: 1.55;
+    background: var(--code-bg); border: 1px solid var(--line-soft); border-radius: 8px;
+    padding: .9rem 1.1rem; overflow-x: auto; margin: 1rem 0 1.4rem; }
+  pre code { background: none; padding: 0; }
+  table { border-collapse: collapse; width: 100%; font-size: .92rem; }
+  .table-scroll { overflow-x: auto; margin: 1.2rem 0 1.5rem; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); }
+  th { text-align: left; font-size: .72rem; text-transform: uppercase; letter-spacing: .09em; color: var(--ink-faint);
+    font-weight: 650; padding: .6rem .9rem; border-bottom: 1px solid var(--line); white-space: nowrap; }
+  td { padding: .58rem .9rem; border-bottom: 1px solid var(--line-soft); vertical-align: top; }
+  tr:last-child td { border-bottom: none; }
+  .pill { display: inline-block; font-size: .68rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase;
+    padding: .12rem .5rem; border-radius: 99px; border: 1px solid currentColor; color: var(--teal); white-space: nowrap; }
+  .step { display: flex; gap: 1.1rem; margin: 1.7rem 0; }
+  .step-num { flex: none; width: 2.1rem; height: 2.1rem; border-radius: 50%; background: var(--accent); color: var(--bg);
+    font-weight: 700; font-size: 1rem; display: flex; align-items: center; justify-content: center; margin-top: .15rem; }
+  .step > div { min-width: 0; flex: 1; }
+  .step h3 { margin: 0 0 .3rem; }
+  .step p { margin-bottom: .5rem; }
+  .note { background: var(--amber-soft); border-radius: 8px; padding: .9rem 1.1rem; font-size: .95rem; margin: 1.4rem 0; }
+  .note b { color: var(--amber); }
+  .callout { background: var(--accent-soft); border-radius: 8px; padding: .9rem 1.1rem; font-size: .95rem; margin: 1.4rem 0; }
+  figure { margin: 1.8rem 0; }
+  figure svg { max-width: 100%; height: auto; display: block; background: var(--surface); border: 1px solid var(--line); border-radius: 8px; }
+  figcaption { font-size: .88rem; color: var(--ink-faint); margin-top: .55rem; }
+  ul { padding-left: 1.2rem; margin: .3rem 0 1rem; }
+  li { margin-bottom: .35rem; }
+  .footer { margin-top: 3.5rem; padding-top: 1rem; border-top: 1px solid var(--line); font-size: .85rem; color: var(--ink-faint); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <p class="eyebrow">Implementation plan · for review · branch <code>feature/conversation-quality</code></p>
+  <h1>Conversation quality: one conductor call, four fixes</h1>
+  <p class="lede">Four multi-turn gaps share a single root: the per-turn rewrite call is triggered only sometimes, does only one job, and feeds an English-only embedder from whatever language the user writes. This plan replaces it with one <b>conductor</b> call that runs every turn and decides mode, splits intents, and normalizes language — then slims the system prompt that has accreted around it. Nothing in retrieval, grounding, or persistence changes.</p>
+
+  <figure>
+    <svg viewBox="0 0 860 250" role="img" aria-label="Per-turn flow: every message goes through one conductor call that outputs a mode and English search queries; chat mode answers from history without retrieval; retrieve mode fans queries into the existing hybrid retrieval and routing, then notes are computed and a conditional system prompt is assembled before the answer call.">
+      <defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="currentColor"/></marker></defs>
+      <g fill="none" stroke="currentColor" stroke-width="1.3" font-family="ui-monospace,monospace" font-size="11.5">
+        <rect x="14" y="88" width="120" height="52" rx="6"/>
+        <text x="74" y="110" stroke="none" fill="currentColor" text-anchor="middle">message</text>
+        <text x="74" y="126" stroke="none" fill="currentColor" text-anchor="middle" opacity=".7">any language</text>
+        <line x1="134" y1="114" x2="176" y2="114" marker-end="url(#a)"/>
+        <rect x="176" y="82" width="168" height="64" rx="6" stroke="#3b8bc4" stroke-width="2"/>
+        <text x="260" y="104" stroke="none" fill="currentColor" text-anchor="middle">CONDUCTOR</text>
+        <text x="260" y="120" stroke="none" fill="currentColor" text-anchor="middle" opacity=".75">1 LLM call, every turn</text>
+        <text x="260" y="136" stroke="none" fill="currentColor" text-anchor="middle" opacity=".75">mode + EN queries</text>
+        <line x1="344" y1="98" x2="396" y2="60" marker-end="url(#a)"/>
+        <text x="368" y="66" stroke="none" fill="currentColor" font-size="10.5">mode: chat</text>
+        <rect x="396" y="34" width="190" height="44" rx="6"/>
+        <text x="491" y="52" stroke="none" fill="currentColor" text-anchor="middle">answer from history</text>
+        <text x="491" y="68" stroke="none" fill="currentColor" text-anchor="middle" opacity=".7">no retrieval, no sources</text>
+        <line x1="344" y1="130" x2="396" y2="166" marker-end="url(#a)"/>
+        <text x="356" y="176" stroke="none" fill="currentColor" font-size="10.5">mode: retrieve · N queries (EN)</text>
+        <rect x="396" y="182" width="190" height="44" rx="6"/>
+        <text x="491" y="200" stroke="none" fill="currentColor" text-anchor="middle">hybrid + routing</text>
+        <text x="491" y="216" stroke="none" fill="currentColor" text-anchor="middle" opacity=".7">unchanged</text>
+        <line x1="586" y1="204" x2="628" y2="204" marker-end="url(#a)"/>
+        <rect x="628" y="182" width="100" height="44" rx="6"/>
+        <text x="678" y="200" stroke="none" fill="currentColor" text-anchor="middle">notes</text>
+        <text x="678" y="216" stroke="none" fill="currentColor" text-anchor="middle" opacity=".7">year·registry·weak</text>
+        <line x1="728" y1="204" x2="762" y2="204" marker-end="url(#a)"/>
+        <rect x="762" y="150" width="84" height="76" rx="6" stroke="#3b8bc4"/>
+        <text x="804" y="176" stroke="none" fill="currentColor" text-anchor="middle">prompt</text>
+        <text x="804" y="192" stroke="none" fill="currentColor" text-anchor="middle" opacity=".75">assembled</text>
+        <text x="804" y="208" stroke="none" fill="currentColor" text-anchor="middle" opacity=".75">per turn</text>
+        <text x="430" y="130" stroke="none" fill="currentColor" font-size="10.5" opacity=".7">answers always in the user's language</text>
+      </g>
+    </svg>
+    <figcaption>The upgraded turn. Blue marks the two changed pieces: the conductor (replacing the history-only condensation trigger) and per-turn prompt assembly. Everything between them — hybrid retrieval, two-stage routing, decomposition guards, notes, grounding — is untouched.</figcaption>
+  </figure>
+
+  <h2>The four items</h2>
+
+  <div class="step"><div class="step-num">1</div><div>
+    <h3>English retrieval queries for any input language <span class="pill">highest value</span></h3>
+    <p>Real users write French; <code>all-mpnet-base-v2</code> is an English model, so their queries embed poorly and retrieval silently degrades for exactly the primary audience. The conductor always emits <b>English</b> search queries regardless of input language; a one-line prompt rule makes the answer model respond <b>in the user's language</b>. BM25 is unaffected (identifiers are language-neutral).</p>
+    <p><b>Measured acceptance:</b> translate the 8 paraphrase gold questions to French → recall@5 with and without the conductor. Expectation: French recall approaches the English 100%; English unchanged.</p>
+  </div></div>
+
+  <div class="step"><div class="step-num">2</div><div>
+    <h3>Mode routing: a no-retrieval path <span class="pill">small</span></h3>
+    <p>"Summarize our conversation", "merci !", "what did you just say?" currently trigger retrieval and stuff irrelevant excerpts into context. The conductor returns <code>mode: "chat"</code> for conversational/meta turns → answer directly from history, skip retrieval, sources message, and evidence images entirely.</p>
+    <p><b>Acceptance:</b> meta and courtesy messages produce no sources line; corpus questions still retrieve (spot-check that ambiguous cases fail <i>open</i> — when unsure, retrieve).</p>
+  </div></div>
+
+  <div class="step"><div class="step-num">3</div><div>
+    <h3>Multi-intent splitting, first turn included <span class="pill">small</span></h3>
+    <p>Today decomposition splits only comparisons, and only when history exists — your three-questions-in-one first message diluted per-document retrieval. The conductor runs every turn and may emit up to 6 queries for any multi-question message. All existing guards carry over verbatim: message-named identifiers override tags, fabricated tags are stripped, empty filters degrade unscoped.</p>
+    <p><b>Acceptance:</b> the transcript's 3-part message answers all three parts (FP274 figure, FP218 → UNEP via registry, FP270 results); single questions behave identically to today.</p>
+  </div></div>
+
+  <div class="step"><div class="step-num">4</div><div>
+    <h3>Conditional system-prompt assembly <span class="pill">risk reduction</span></h3>
+    <p>The system prompt has accreted ~9 rule groups; we measured (three iterations of the year rules) that gpt-4o-mini drops procedural rules in long prompts. Split it into blocks assembled per turn: <b>core</b> (identity, grounding, honesty — always) + <b>year block</b> (only when a year note exists) + <b>registry block</b> (only when a Registry line is present) + <b>comparison block</b> (only on multi-query turns) + <b>language rule</b> (always). Typical turns carry roughly half the current prompt; every rule ships only alongside its trigger.</p>
+    <p><b>Acceptance:</b> re-run the four canonical transcript scenarios (budget chain, temporal, superlative probe, comparison) — same or better answers; log the assembled prompt length per scenario.</p>
+  </div></div>
+
+  <h2>The conductor contract</h2>
+  <pre><code>{"mode": "retrieve" | "chat",
+ "queries": [{"q": "&lt;standalone ENGLISH search query&gt;", "doc": "&lt;id or null&gt;"}, ...]}  // ≤6, retrieve mode only</code></pre>
+  <ul>
+    <li>Runs <b>every</b> turn (first turns included — new). Adds one small LLM call (~300–500 ms) to first turns that previously skipped it; follow-up turns already pay it.</li>
+    <li>Failure falls back exactly as today: <code>mode=retrieve</code>, single query = raw message. The conductor can only add capability, never break a turn.</li>
+    <li>Kill-switch: <code>CONDUCTOR=0</code> restores the current history-only behavior for A/B.</li>
+    <li>All post-processing guards (id override, fabrication strip, unscoped degrade) apply unchanged.</li>
+  </ul>
+
+  <h2>Explicitly out of scope</h2>
+  <div class="table-scroll"><table>
+    <tr><th>Deferred item</th><th>Why</th></tr>
+    <tr><td>Rolling conversation summary (beyond the 6-turn window)</td><td>Needs evidence that long threads are common; adds state and cost. Documented as future work.</td></tr>
+    <tr><td>"That excerpt" references (prior contexts in history)</td><td>Deliberate token-economy trade-off; belongs in the report's limitations.</td></tr>
+    <tr><td>Multilingual embedding model (e.g. bge-m3)</td><td>The real fix for multilingual retrieval, but requires re-embedding + re-eval; item 1 captures most of the value for none of the cost. Roadmap Tier A already lists it.</td></tr>
+    <tr><td>Clarifying questions back to the user</td><td>Product decision, not plumbing; the weak-signal note partially covers it.</td></tr>
+  </table></div>
+
+  <h2>Verification battery</h2>
+  <ul>
+    <li><b>French gold mini-set</b> (new, committed): 8 translated paraphrase questions → recall@5 before/after. The headline number for item 1.</li>
+    <li><b>English gold set</b>: must hold 100/100/100 with <code>CONDUCTOR=1</code>.</li>
+    <li><b>Transcript replays</b>: 3-part message, budget-comparison chain, "summarize our conversation", "merci", FP999, superlative probe.</li>
+    <li><b>Guard unit tests</b> re-run unchanged.</li>
+    <li>Deployment: standard push → rebuild → in-container battery, same as every feature so far.</li>
+  </ul>
+
+  <div class="callout"><b>Definition of done.</b> French paraphrase recall measured and materially improved; English gold set unchanged; meta-turns produce no sources; the 3-part first message answers all parts; assembled prompt ≤ ~60% of current length on plain turns; kill-switch verified; deployed with in-container evidence.</div>
+
+  <div class="note"><b>Effort &amp; risk.</b> Roughly one focused day, all inside <code>chainlit_app.py</code> plus a prompt-blocks module and the French mini-set. Main risk is conductor regressions on flows that work today — bounded by the kill-switch, the guards staying in code, and the replay battery. No index, schema, or deployment changes.</div>
+
+  <p class="footer">Companion to docs/hybrid-retrieval-plan.html (complete) and docs/query-decomposition.html (complete). Touches <code>src/gcf_qna/app/chainlit_app.py</code>, new <code>src/gcf_qna/app/prompts.py</code>, <code>scripts/gold_set_fr.jsonl</code>. This document is a plan — no behavior has changed yet.</p>
+</div>
+</body>
+</html>

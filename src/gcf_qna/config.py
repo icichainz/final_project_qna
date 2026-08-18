@@ -31,6 +31,9 @@ RRF_K = int(os.getenv("RRF_K", "60"))
 # below this best dense cosine, retrieval is flagged low-confidence (step 4
 # of the hybrid plan): the answer model gets an explicit weak-signal note
 MIN_DENSE_SCORE = float(os.getenv("MIN_DENSE_SCORE", "0.5"))
+# per-turn conductor call (mode routing + English queries); 0 restores the
+# history-only condensation behavior
+CONDUCTOR = os.getenv("CONDUCTOR", "1") == "1"
 
 # --- chat (OpenAI-compatible endpoint) ---
 CHAT_MODEL = os.getenv("CHAT_MODEL", "gpt-4o-mini")
