@@ -20,3 +20,23 @@
   document.addEventListener("DOMContentLoaded", inject);
   inject();
 })();
+
+// Auto-resume: a page RELOAD at "/" (mid-chat refresh) jumps back into the
+// most recent thread instead of a blank new chat. Fresh navigations and the
+// New Chat button are unaffected; reloads on /thread/<id> already re-render.
+(async function autoResume() {
+  try {
+    var nav = performance.getEntriesByType("navigation")[0];
+    if (!nav || nav.type !== "reload") return;
+    if (location.pathname !== "/") return;
+    var r = await fetch("/project/threads", {
+      method: "POST",
+      headers: {"Content-Type": "application/json"},
+      body: JSON.stringify({pagination: {first: 1}, filter: {}})
+    });
+    if (!r.ok) return;
+    var d = await r.json();
+    var t = d && d.data && d.data[0];
+    if (t && t.id) location.replace("/thread/" + t.id);
+  } catch (e) { /* fall through to the normal new-chat page */ }
+})();
