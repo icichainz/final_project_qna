@@ -37,11 +37,11 @@ def _tokens(text: str) -> List[str]:
 
 def cache_dir_for(pdf_name: str) -> Optional[Path]:
     """Locate a PDF's page-cache directory by content fingerprint."""
-    from gcf_qna.extraction.vlm import _fingerprint   # lazy: vlm pulls aiohttp
+    from gcf_qna.fingerprint import fingerprint
     pdf = config.RAW_PDF_DIR / pdf_name
     if not pdf.exists():
         return None
-    d = Path(config.PAGE_CACHE_DIR) / _fingerprint(pdf)
+    d = Path(config.PAGE_CACHE_DIR) / fingerprint(pdf)
     return d if (d / "metadata.json").exists() else None
 
 

@@ -122,24 +122,7 @@ USER_PROMPT = "Transcribe this page image into clean Markdown, following the rul
 BLANK_STDDEV = 2.0
 
 
-def _fingerprint(path: Path) -> str:
-    """Cheap, collision-safe-enough PDF identity: size + head/tail content."""
-    st = path.stat()
-    h = zlib.crc32(path.name.encode())
-    with path.open("rb") as f:
-        head = f.read(1 << 20)
-        if st.st_size > (1 << 21):
-            f.seek(-(1 << 20), os.SEEK_END)
-            tail = f.read(1 << 20)
-        else:
-            tail = b""
-    import hashlib
-
-    d = hashlib.sha256()
-    d.update(str(st.st_size).encode())
-    d.update(head)
-    d.update(tail)
-    return f"{d.hexdigest()[:32]}_{h:08x}"
+from gcf_qna.fingerprint import fingerprint as _fingerprint  # shared with rag.ground
 
 
 def _write_atomic_json(path: Path, data: Dict[str, Any]) -> None:
