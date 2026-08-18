@@ -97,9 +97,16 @@ class Retriever:
             n = config.CANDIDATES_PER_RETRIEVER
             dense_scores, dense_ids = self.index.search(q, n)
             dense_rank = [i for i in dense_ids[0] if 0 <= i < len(self.chunks)]
-            lex_rank = self.lexical.search(query, n)
-            id_query = bool(_IDENTIFIER_RE.search(query.lower()))
-            weights = [1.0, 2.0] if id_query else [1.0, 1.0]
+            # Identifier queries: restrict the lexical search to the id tokens
+            # alone. With the full query, common words ("accredited entity")
+            # drag topical wrong-doc chunks into BM25's tail, where dual-list
+            # membership out-sums the right doc's lexical-only head.
+            from gcf_qna.rag.lexical import tokenize
+            id_toks = sorted({t.replace(".", "") for t in tokenize(query)
+                              if re.fullmatch(r"fp\d{2,3}|b\.?\d{2}|add\.?\d{2}", t)})
+            lex_query = " ".join(id_toks) if id_toks else query
+            lex_rank = self.lexical.search(lex_query, n)
+            weights = [1.0, 2.0] if id_toks else [1.0, 1.0]
             fused = sorted(rrf([dense_rank, lex_rank], config.RRF_K, weights).items(),
                            key=lambda kv: kv[1], reverse=True)[:top_k]
             hits = []
