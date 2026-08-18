@@ -106,6 +106,31 @@ class Retriever:
                               if re.fullmatch(r"fp\d{2,3}|b\.?\d{2}|add\.?\d{2}", t)})
             lex_query = " ".join(id_toks) if id_toks else query
             lex_rank = self.lexical.search(lex_query, n)
+            if id_toks and lex_rank:
+                # Two-stage for identifier queries: the lexical head IDENTIFIES
+                # the document(s); a doc-scoped dense search then ranks chunks
+                # semantically WITHIN each. Without this, id-tagged chunks tie
+                # in BM25 and the right document's pages are picked ~randomly
+                # (observed: FP274's financing question drew pp. 56-187, missed
+                # the financing section, answered "no figure stated").
+                target_docs: List[str] = []
+                for i in lex_rank[:20]:
+                    d = self.chunks[i].get("doc_id", "")
+                    if d and d not in target_docs:
+                        target_docs.append(d)
+                    if len(target_docs) >= 3:
+                        break
+                per = max(3, top_k // max(1, len(target_docs)))
+                routed: List[Hit] = []
+                seen = set()
+                for d in target_docs:
+                    for h in self.search(query, per, doc_filter=d):
+                        key = (h.doc_id, h.page, h.text[:80])
+                        if key not in seen:
+                            seen.add(key)
+                            routed.append(h)
+                if routed:
+                    return routed[:top_k]
             weights = [1.0, 2.0] if id_toks else [1.0, 1.0]
             fused = sorted(rrf([dense_rank, lex_rank], config.RRF_K, weights).items(),
                            key=lambda kv: kv[1], reverse=True)[:top_k]
