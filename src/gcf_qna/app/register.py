@@ -12,6 +12,7 @@ import os
 
 from fastapi import APIRouter, Request
 from fastapi.responses import HTMLResponse, JSONResponse
+from starlette.concurrency import run_in_threadpool
 
 from gcf_qna.app import accounts
 
@@ -101,7 +102,9 @@ async def register_submit(request: Request):
         username, password = str(body["username"]), str(body["password"])
     except Exception:
         return JSONResponse({"detail": "username and password are required."}, status_code=400)
-    err = accounts.create_account(username, password)
+    # scrypt (~100 ms of CPU by design) + a sqlite INSERT: blocking work that
+    # would otherwise stall every streaming answer in the process
+    err = await run_in_threadpool(accounts.create_account, username, password)
     if err == "This username is not available.":
         return JSONResponse({"detail": err}, status_code=409)
     if err:

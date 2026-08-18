@@ -107,6 +107,127 @@ def _year_assist(question: str, hits: list):
     return matched + rest, note
 
 
+_FP_RE = re.compile(r"fp\s?(\d{2,3})")
+
+
+def _fp_of(text: str):
+    """First FP number in a string ('...package-fp214' -> '214')."""
+    m = _FP_RE.search((text or "").lower())
+    return m.group(1) if m else None
+
+
+def _cited_docs(history: list) -> list:
+    """Document ids cited so far, oldest first.
+
+    The conductor sees each history message truncated to 1200 chars, which
+    cuts most citations loose; this list is appended whole so its doc tags
+    can point at real documents. Uses the same pattern as the other two
+    citation readers — the narrower '\\d+_gcf-' shape silently missed corpus
+    ids like '72_GCF_B.35_02_Add.05_Funding_proposal_package_for_FP203'.
+    """
+    cited: list = []
+    for m in history:
+        for d in re.findall(r"\[([0-9]{1,3}_[\w.\-]+)", m["content"]):
+            if d not in cited:
+                cited.append(d)
+    return cited
+
+
+def _resolve_doc(tag: str, history_docs: list):
+    """The real corpus id a decomposer doc tag stands for, or None.
+
+    Tags are fabricated as often as they are copied — '02_fp214' is a
+    history prefix mashed onto a message id and matches no document at all.
+    Retriever._doc_match compares by equality/prefix/substring, so an
+    invented tag quietly degrades to unscoped search; the ids actually cited
+    in the conversation are what pin a mangled tag back to a document.
+    """
+    t = (tag or "").lower()
+    if len(t) < 6:              # too short to identify anything on its own
+        return None
+    for hd in history_docs:
+        h = hd.lower()
+        if h == t or h.startswith(t) or t in h:
+            return hd
+    fp = _fp_of(t)
+    if fp:
+        same = [hd for hd in history_docs if _fp_of(hd) == fp]
+        if len(same) == 1:
+            return same[0]
+    return None
+
+
+def _with_ids(query: str, fps: list) -> str:
+    """Append the 'FPnnn' tokens a sub-query is missing."""
+    have = set(_FP_RE.findall(query.lower()))
+    add = [f"FP{n}" for n in fps if n not in have][:3]
+    return (query + " " + " ".join(add)).strip() if add else query
+
+
+def _rescope_items(items: list, msg_text: str, history_docs: list) -> list:
+    """Deterministic guards against decomposer rewrite contamination.
+
+    The decomposer tags each sub-query with the document it is about, and
+    gets that wrong two ways: fabricated ids ('02_fp214'), and one
+    document's tag copied onto every sub-query ('FP214 ... FP265?' answered
+    entirely from the previous turn's FP274).
+
+    Nulling every tag as soon as the message names its own FP numbers stops
+    the contamination but destroys correct scoping too: the FP274 half of
+    "how does FP214's financing compare to it?" degrades to the bare phrase
+    "total financing", which carries no identifier for the retriever's
+    two-stage routing to latch onto, so round-robin merges global noise and
+    that half of the comparison is answered from unrelated documents — the
+    starvation the per-document fan-out exists to prevent. So instead:
+
+    * a tag whose FP number the MESSAGE names is kept, rewritten to the
+      plain 'fpNNN' token (or the full cited id when history pins one);
+      both resolve through _doc_match's substring compare;
+    * a tag pinned to a document cited earlier is kept only for the fan-out
+      slots the message's own ids do not account for — that is the "it" of a
+      comparison, never a licence for history to outvote explicit ids;
+    * any other tag is stripped, and the message's identifiers are appended
+      to its sub-query so identifier routing engages on the document the
+      user actually named instead of running an unscoped generic phrase.
+
+    With no ids in the message nothing is stripped from a fan-out (the
+    "compare those two" case arrives here with history-derived tags by
+    design), though fabricated tags are still repaired; a lone query still
+    keeps a tag only if the message names that document.
+    """
+    msg_l = (msg_text or "").lower()
+    msg_ids = set(_FP_RE.findall(msg_l))
+    hist = [d for d in (history_docs or []) if d]
+    # sub-queries the message's own ids cannot account for: those, and only
+    # those, may be filled from the documents cited earlier
+    slack = max(0, len(items) - len(msg_ids))
+    for item in items:
+        tag = str(item.get("doc") or "")
+        if not tag:
+            continue
+        if msg_ids:
+            fp = _fp_of(tag)
+            if fp and fp in msg_ids:
+                item["doc"] = _resolve_doc(tag, hist) or f"fp{fp}"
+                continue
+            pinned = _resolve_doc(tag, hist)
+            if pinned and slack > 0:
+                item["doc"] = pinned
+                slack -= 1
+                continue
+            item["doc"] = None
+            item["q"] = _with_ids(item["q"], sorted(msg_ids))
+        elif len(items) == 1:
+            # a lone query stays doc-scoped only if the message itself names
+            # that document (board code prefix or FP token)
+            fp = _fp_of(tag)
+            if tag.lower()[:20] not in msg_l and not (fp and "fp" + fp in msg_l):
+                item["doc"] = None
+        else:
+            item["doc"] = _resolve_doc(tag, hist) or tag
+    return items
+
+
 def _index_dir():
     return config.INDEX_DIR / os.getenv("INDEX_NAME", "default")
 
@@ -207,15 +328,21 @@ def _data_layer():
 
 
 @cl.password_auth_callback
-def auth(username: str, password: str) -> Optional[cl.User]:
+async def auth(username: str, password: str) -> Optional[cl.User]:
     from gcf_qna.app import accounts
     users = accounts.parse_env_users()
     expected = users.get(username.strip())
     if expected and hmac.compare_digest(password, expected):
         return cl.User(identifier=username.strip())
-    # self-registered accounts (scrypt-hashed, data/app.db)
-    from gcf_qna.app import accounts
-    if accounts.check_login(username, password):
+    # Self-registered accounts (scrypt-hashed, data/app.db). Both halves of
+    # the check block: scrypt is ~100 ms of deliberate CPU and sqlite3 is
+    # synchronous. Run on the event loop they freeze token streaming and
+    # websocket heartbeats for EVERY connected session, so offload to a
+    # worker thread — and throttle, since /login (unlike /register) has no
+    # rate limit of its own to stop a login flood from renting that CPU.
+    if not accounts.login_allowed(username):
+        return None
+    if await cl.make_async(accounts.check_login)(username, password):
         return cl.User(identifier=username.strip())
     return None
 
@@ -308,11 +435,7 @@ async def main(message: cl.Message):
             # left the conductor blind to most cited docs.
             convo = ("\n".join(f"{m['role']}: {m['content'][:1200]}" for m in history[-6:])
                      if history else "((no prior conversation))")
-            cited: list = []
-            for m in history:
-                for d in re.findall(r"\[(\d{1,3}_gcf-[\w.\-]+)", m["content"]):
-                    if d not in cited:
-                        cited.append(d)
+            cited = _cited_docs(history)
             if cited:
                 convo += "\nDocuments cited in conversation: " + ", ".join(cited[-12:])
             resp = await client.chat.completions.create(
@@ -334,31 +457,10 @@ async def main(message: cl.Message):
                     parsed.append({"q": item.strip(), "doc": None})
                 elif isinstance(item, dict) and (item.get("q") or "").strip():
                     parsed.append({"q": item["q"].strip(), "doc": item.get("doc") or None})
-            # Deterministic guards against rewrite contamination:
-            # 1. When the MESSAGE names its own identifiers (FP numbers /
-            #    board codes), every doc tag must match one of them —
-            #    history documents must never override explicit ids
-            #    (observed: 'FP214... FP265?' answered entirely from the
-            #    previous turn's FP274).
-            # 2. A single query may only carry a doc tag if the message
-            #    names that document; fan-outs without message ids keep
-            #    their history-derived tags (the 'compare those' case).
-            msg_l = message.content.lower()
-            msg_ids = set(re.findall(r"fp\s?(\d{2,3})", msg_l))
-            for item in parsed:
-                d = str(item.get("doc") or "").lower()
-                if not d:
-                    continue
-                if msg_ids:
-                    # The message names its own ids: never trust decomposer
-                    # tags at all (observed fabrication: '02_fp214' — history
-                    # prefix mashed onto a message id). Two-stage routing
-                    # resolves the real doc from the sub-query text.
-                    item["doc"] = None
-                elif len(parsed) == 1:
-                    fp = re.search(r"fp(\d{2,3})", d)
-                    if d[:20] not in msg_l and not (fp and "fp" + fp.group(1) in msg_l):
-                        item["doc"] = None
+            # Deterministic guards against rewrite contamination: keep the
+            # scoping that is defensible, re-scope the sub-query when the tag
+            # goes (see _rescope_items).
+            parsed = _rescope_items(parsed, message.content, cited)
             if parsed:
                 search_queries = parsed
         except Exception:

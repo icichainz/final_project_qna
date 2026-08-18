@@ -94,17 +94,30 @@ def check_login(username: str, password: str) -> bool:
     return bool(row) and verify_password(password, row[0])
 
 
-# -- tiny in-memory signup throttle (per remote address) ---------------------
+# -- tiny in-memory throttles ------------------------------------------------
 _attempts: dict = {}
 SIGNUP_LIMIT, SIGNUP_WINDOW_S = 10, 3600
+LOGIN_LIMIT, LOGIN_WINDOW_S = 20, 300
+
+
+def _rate_ok(bucket: str, key: str, limit: int, window_s: int) -> bool:
+    now = time.time()
+    times = [t for t in _attempts.get((bucket, key), []) if now - t < window_s]
+    if len(times) >= limit:
+        _attempts[(bucket, key)] = times
+        return False
+    times.append(now)
+    _attempts[(bucket, key)] = times
+    return True
 
 
 def signup_allowed(remote: str) -> bool:
-    now = time.time()
-    times = [t for t in _attempts.get(remote, []) if now - t < SIGNUP_WINDOW_S]
-    if len(times) >= SIGNUP_LIMIT:
-        _attempts[remote] = times
-        return False
-    times.append(now)
-    _attempts[remote] = times
-    return True
+    """Per remote address (the caller resolves it behind the proxy)."""
+    return _rate_ok("signup", remote, SIGNUP_LIMIT, SIGNUP_WINDOW_S)
+
+
+def login_allowed(username: str) -> bool:
+    """Per username: chainlit's password callback is handed only the
+    credentials, never the request, so no remote address is available there.
+    Guards the scrypt verify — unthrottled, /login is a free CPU burner."""
+    return _rate_ok("login", username.strip().lower(), LOGIN_LIMIT, LOGIN_WINDOW_S)
