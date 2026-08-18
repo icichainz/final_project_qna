@@ -44,9 +44,61 @@ SYSTEM_PROMPT = (
     "Board-meeting years (verified from the corpus): B.11=2015; B.13-B.15=2016;\n"
     "B.16-B.18=2017; B.19-B.21=2018; B.22-B.24=2019; B.25-B.27=2020;\n"
     "B.28-B.30=2021; B.31-B.34=2022; B.35-B.37=2023; B.38-B.40=2024;\n"
-    "B.41-B.43=2025. Use this to reason about dates and years from the\n"
-    "document ids in the excerpts and citations."
+    "B.41-B.43=2025.\n"
+    "When a question mentions a year: (1) translate the year to its board\n"
+    "range with the table, (2) check each excerpt's document id against that\n"
+    "range, (3) present the excerpts that match (naming their FP numbers and\n"
+    "boards), and say the corpus may hold more documents from that year than\n"
+    "were retrieved. Never claim there is no year information while holding\n"
+    "document ids you can date with the table."
 )
+
+
+# Board-meeting years, verified from 271 corpus page-1 dates. Injected into
+# every excerpt header so the answer model never has to do table lookups.
+BOARD_YEARS = {11: 2015, 12: 2016, 13: 2016, 14: 2016, 15: 2016, 16: 2017,
+               17: 2017, 18: 2017, 19: 2018, 20: 2018, 21: 2018, 22: 2019,
+               23: 2019, 24: 2019, 25: 2020, 26: 2020, 27: 2020, 28: 2021,
+               29: 2021, 30: 2021, 31: 2022, 32: 2022, 33: 2022, 34: 2022,
+               35: 2023, 36: 2023, 37: 2023, 38: 2024, 39: 2024, 40: 2024,
+               41: 2025, 42: 2025, 43: 2025}
+_BOARD_RE = re.compile(r"-b(\d+)-")
+
+
+def _doc_label(doc_id: str, page) -> str:
+    """Citation header with precomputed board/year: the model reads dates
+    instead of deriving them."""
+    label = doc_id + (f", p. {page}" if page else "")
+    m = _BOARD_RE.search(doc_id)
+    if m and int(m.group(1)) in BOARD_YEARS:
+        b = int(m.group(1))
+        label += f" — B.{b}, {BOARD_YEARS[b]}"
+    return label
+
+
+def _year_assist(question: str, hits: list):
+    """Code-side year matching: if the question names a year, sort matching
+    excerpts first and emit a computed note. Removes the lookup burden the
+    answer model repeatedly failed to carry."""
+    years = {int(y) for y in re.findall(r"\b(20[12]\d)\b", question)}
+    if not years:
+        return hits, None
+    def doc_year(doc_id):
+        m = _BOARD_RE.search(doc_id)
+        return BOARD_YEARS.get(int(m.group(1))) if m else None
+    matched = [h for h in hits if doc_year(h.doc_id) in years]
+    rest = [h for h in hits if h not in matched]
+    ys = ", ".join(str(y) for y in sorted(years))
+    if matched:
+        ids = "; ".join(_doc_label(h.doc_id, h.page) for h in matched)
+        note = (f"Note (computed from document ids): excerpts dated {ys}: {ids}. "
+                f"The corpus may contain more documents from {ys} than were retrieved.")
+    else:
+        boards = ", ".join(f"B.{b}" for b, y in sorted(BOARD_YEARS.items()) if y in years)
+        note = (f"Note (computed from document ids): none of the retrieved excerpts are "
+                f"from {ys} (that year corresponds to boards {boards}). Answer what the "
+                f"excerpts do support and state this limit.")
+    return matched + rest, note
 
 
 def _index_dir():
@@ -318,9 +370,12 @@ async def main(message: cl.Message):
                 seen.add(key)
                 hits.append(h)
     hits = hits[:15]
+    hits, year_note = _year_assist(message.content, hits)
     context = "\n\n".join(
-        f"[{h.doc_id}{f', p. {h.page}' if h.page else ''}] (score {h.score:.2f})\n{h.text}"
+        f"[{_doc_label(h.doc_id, h.page)}] (score {h.score:.2f})\n{h.text}"
         for h in hits)
+    if year_note:
+        context = year_note + "\n\n" + context
     messages = history + [{
         "role": "user",
         "content": f"Context excerpts:\n{context}\n\nQuestion: {message.content}",
