@@ -36,7 +36,7 @@ ENV PYTHONDONTWRITEBYTECODE=1 \
 
 RUN apt-get update && apt-get install -y --no-install-recommends tini curl && \
     rm -rf /var/lib/apt/lists/* && \
-    groupadd -r gcf && useradd -r -g gcf -d /app gcf
+    groupadd -r -g 999 gcf && useradd -r -u 999 -g gcf -d /app gcf
 
 WORKDIR /app
 

@@ -94,11 +94,12 @@ DEPLOY_EXCLUDES := \
 .PHONY: push deploy remote-restart remote-logs remote-down remote-shell
 push:                ## rsync code + serving data to the remote (first run syncs ~20 GB of page cache)
 	@test -n "$(REMOTE_HOST)" || { echo "REMOTE_HOST is not set"; exit 1; }
-	rsync -avz --progress $(DEPLOY_EXCLUDES) ./ $(REMOTE_USER)@$(REMOTE_HOST):$(REMOTE_DIR)/
+	rsync -avz --progress --chown=999:999 $(DEPLOY_EXCLUDES) ./ $(REMOTE_USER)@$(REMOTE_HOST):$(REMOTE_DIR)/
 
 deploy: push         ## push, rebuild the image on the server, start the stack
 	ssh $(REMOTE_USER)@$(REMOTE_HOST) 'cd $(REMOTE_DIR) && \
 	  mkdir -p data public/app_files hf_cache && \
+	  chown -R 999:999 data public/app_files hf_cache && \
 	  docker compose build $(COMPOSE_SERVICE) && \
 	  docker compose up -d && \
 	  docker compose ps'

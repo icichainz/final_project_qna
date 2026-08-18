@@ -89,7 +89,11 @@ async def register_page():
 async def register_submit(request: Request):
     if not _signup_enabled():
         return JSONResponse({"detail": "Sign-up is disabled."}, status_code=403)
-    remote = request.client.host if request.client else "?"
+    # Behind caddy every request.client is the proxy container; use the
+    # forwarded client IP so the signup throttle is per-visitor, not global.
+    fwd = request.headers.get("x-forwarded-for", "")
+    remote = (fwd.split(",")[0].strip() if fwd
+              else request.client.host if request.client else "?")
     if not accounts.signup_allowed(remote):
         return JSONResponse({"detail": "Too many attempts — try again later."}, status_code=429)
     try:
