@@ -15,7 +15,7 @@ dependencies = [
 
 [project.optional-dependencies]
 extraction = ["aiohttp", "aiofiles", "pymupdf", "pillow", "pypdf"]
-app = ["chainlit", "openai", "SQLAlchemy", "aiosqlite", "greenlet"]
+app = ["chainlit", "openai", "SQLAlchemy", "aiosqlite", "greenlet", "pillow"]
 
 [tool.setuptools.packages.find]
 where = ["src"]
