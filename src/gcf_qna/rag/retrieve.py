@@ -44,7 +44,11 @@ class Hit:
 def _doc_match(doc_id: str, wanted: str) -> bool:
     """Forgiving doc match: the LLM may cite a truncated or partial id."""
     a, b = doc_id.lower(), wanted.lower()
-    return a == b or a.startswith(b) or b in a
+    if a == b or a.startswith(b) or b in a:
+        return True
+    # zero-padding: a plain 'fp86' tag must reach the 'fp086' document
+    m = re.fullmatch(r"fp0*(\d{1,3})", b)
+    return bool(m) and f"fp{int(m.group(1)):03d}" in a
 
 
 class Retriever:
@@ -72,15 +76,17 @@ class Retriever:
         qv = np.asarray(self.embedder.encode([query]), dtype="float32")
         scores, _ = self.index.search(qv, 1)
         conf = float(scores[0][0]) if scores.size else 0.0
-        from gcf_qna.rag.lexical import tokenize as _tok
+        from gcf_qna.rag.lexical import fp_variants, tokenize as _tok
         id_toks = sorted({t.replace(".", "") for t in _tok(query)
                           if re.fullmatch(r"fp\d{2,3}|b\.?\d{2}|add\.?\d{2}", t)})
         if id_toks and self.hybrid_enabled:
             # 1.0 only when EVERY identifier resolves in the corpus. FTS5 MATCH
             # is OR-joined, so a joined query lets one live token vouch for a
             # dead one ("B.42/02/Add.99": b42 hits, add99 does not) and suppress
-            # the weak-signal note on a nonexistent document (review finding #2)
-            if all(self.lexical.search(t, 1) for t in id_toks):
+            # the weak-signal note on a nonexistent document (review finding #2).
+            # An identifier counts as resolved if ANY padding variant does.
+            if all(any(self.lexical.search(v, 1) for v in fp_variants(t))
+                   for t in id_toks):
                 conf = 1.0
         return self.search(query, top_k, doc_filter), conf
 
@@ -121,10 +127,11 @@ class Retriever:
             # alone. With the full query, common words ("accredited entity")
             # drag topical wrong-doc chunks into BM25's tail, where dual-list
             # membership out-sums the right doc's lexical-only head.
-            from gcf_qna.rag.lexical import tokenize
+            from gcf_qna.rag.lexical import fp_variants, tokenize
             id_toks = sorted({t.replace(".", "") for t in tokenize(query)
                               if re.fullmatch(r"fp\d{2,3}|b\.?\d{2}|add\.?\d{2}", t)})
-            lex_query = " ".join(id_toks) if id_toks else query
+            lex_query = (" ".join(v for t in id_toks for v in fp_variants(t))
+                         if id_toks else query)
             lex_rank = self.lexical.search(lex_query, n)
             if id_toks and lex_rank:
                 # Two-stage for identifier queries: the lexical head IDENTIFIES

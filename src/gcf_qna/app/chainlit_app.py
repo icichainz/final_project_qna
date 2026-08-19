@@ -21,6 +21,7 @@ from chainlit.types import ThreadDict
 
 from gcf_qna import config
 from gcf_qna.boards import BOARD_YEARS, board_of, year_of
+from gcf_qna.rag import registry
 from gcf_qna.app.highlight import annotated_page
 from gcf_qna.rag import Embedder, Retriever, load_index
 from gcf_qna.rag.ground import ground_chunk
@@ -51,7 +52,14 @@ _EN_WORDS = {"the", "is", "are", "what", "which", "how", "of", "for", "in",
 
 def _detect_lang(text: str):
     """FR/EN heuristic — code-detected so the answer language follows the
-    LATEST message, not conversational momentum."""
+    LATEST message, not conversational momentum. An explicit in-message
+    request ("présente ta réponse en français" inside an English sentence)
+    beats the statistics, which would otherwise fight the user's ask."""
+    low = text.lower()
+    if re.search(r"\ben fran[cç]ais\b|\bin french\b", low):
+        return "French"
+    if re.search(r"\ben anglais\b|\bin english\b", low):
+        return "English"
     toks = re.findall(r"[a-zàâçéèêëîïôùûüÿœ']+", text.lower())
     fr = sum(t in _FR_WORDS for t in toks)
     en = sum(t in _EN_WORDS for t in toks)
@@ -70,41 +78,93 @@ def _invalid_citations(answer: str, hits: list):
     by_doc = {}
     for h in hits:
         by_doc.setdefault(h.doc_id, set()).add(h.page)
+    def _resolve(ref):
+        return next((d for d in by_doc if d.startswith(ref[:24])
+                     or ref.startswith(d[:24])), None)
     bad = []
-    for m in re.finditer(r"\[([0-9]{1,3}_[\w.\-]+)([^\]]*)\]", answer):
-        doc_ref, rest = m.group(1), m.group(2)
-        full = next((d for d in by_doc if d.startswith(doc_ref[:24])
-                     or doc_ref.startswith(d[:24])), None)
-        if not full:
-            continue          # registry/cover-page cites carry no page set
-        for pg in re.findall(r"\bpp?\.?\s*(\d{1,3})", rest):
-            if int(pg) not in by_doc[full]:
-                bad.append(f"{full[:34]}… p.{pg}")
+    for m in re.finditer(r"\[([0-9]{1,3}_[^\]]+)\]", answer):
+        # a bracket may chain citations ("[docA, p. 5; docB, p. 6]"): each
+        # page belongs to the NEAREST PRECEDING doc id, not the bracket's
+        # first — attributing all pages to the first doc flagged valid
+        # citations as invented (observed live on gpt-5.2 output)
+        cur = None
+        for part in re.finditer(r"([0-9]{1,3}_[\w.\-]+)|\bpp?\.?\s*(\d{1,3})\b",
+                                m.group(1)):
+            if part.group(1):
+                cur = _resolve(part.group(1))
+            elif cur is not None:   # unresolved = registry/cover-page cite
+                pg = int(part.group(2))
+                if pg not in by_doc[cur]:
+                    bad.append(f"{cur[:34]}… p.{pg}")
     return bad
 
 
 def _year_assist(question: str, hits: list):
     """Code-side year matching: if the question names a year, sort matching
-    excerpts first and emit a computed note. Removes the lookup burden the
-    answer model repeatedly failed to carry."""
+    excerpts first and emit a note computed from the REGISTRY, which is
+    complete for the corpus — retrieval never surfaces all of a year's
+    proposals, so excerpt-scoped notes made the model refuse year
+    aggregates ('which proposals were approved in 2020?')."""
     years = {int(y) for y in re.findall(r"\b(20[12]\d)\b", question)}
     if not years:
         return hits, None
-    def doc_year(doc_id):
-        return year_of(doc_id)
-    matched = [h for h in hits if doc_year(h.doc_id) in years]
+    matched = [h for h in hits if year_of(h.doc_id) in years]
     rest = [h for h in hits if h not in matched]
     ys = ", ".join(str(y) for y in sorted(years))
-    if matched:
-        ids = "; ".join(_doc_label(h.doc_id, h.page) for h in matched)
-        note = (f"Note (computed from document ids): excerpts dated {ys}: {ids}. "
-                f"The corpus may contain more documents from {ys} than were retrieved.")
-    else:
-        boards = ", ".join(f"B.{b}" for b, y in sorted(BOARD_YEARS.items()) if y in years)
-        note = (f"Note (computed from document ids): none of the retrieved excerpts are "
-                f"from {ys} (that year corresponds to boards {boards}). Answer what the "
-                f"excerpts do support and state this limit.")
+    try:
+        registry.load()
+    except Exception:
+        # registry unavailable -> the old excerpt-scoped note; never claim
+        # "no proposals that year" on the strength of a missing file
+        boards = ", ".join(f"B.{b}" for b, y in sorted(BOARD_YEARS.items())
+                           if y in years)
+        note = (f"Note (computed from document ids): "
+                + (("excerpts dated " + ys + ": "
+                    + "; ".join(_doc_label(h.doc_id, h.page) for h in matched)
+                    + f". The corpus may contain more documents from {ys}.")
+                   if matched else
+                   f"none of the retrieved excerpts are from {ys} (boards "
+                   f"{boards}). Answer what the excerpts support and state "
+                   f"this limit."))
+        return matched + rest, note
+    lines = []
+    for y in sorted(years):
+        rows = [r for r in registry.by_year(y) if r.get("fp")]
+        if rows:
+            def _money(r):
+                return f" ({r['gcf_financing']} GCF)" if r.get("gcf_financing") else ""
+            fps = "; ".join(f"FP{r['fp']}{_money(r)}" for r in rows)
+            lines.append(f"{y} — {len(rows)} proposals: {fps}.")
+        else:
+            boards = ", ".join(f"B.{b}" for b, yy in sorted(BOARD_YEARS.items())
+                               if yy == y)
+            lines.append(f"{y} — no registered proposals"
+                         + (f" (boards {boards})." if boards else
+                            " (no board meeting that year in this corpus)."))
+    tail = (" Retrieved excerpts dated " + ys + ": "
+            + "; ".join(_doc_label(h.doc_id, h.page) for h in matched) + "."
+            if matched else
+            f" None of the retrieved excerpts are dated {ys}; answer year-level "
+            f"questions from the registry list above and say so.")
+    note = ("Note (computed from the corpus registry, which is complete — "
+            "this list is authoritative, unlike the excerpts): "
+            + " ".join(lines) + tail)
     return matched + rest, note
+
+
+def _board_range_note(question: str):
+    """A board meeting outside the corpus range deserves a definitive 'no',
+    not an excerpt-scoped shrug ('B.44?' has no year token, so _year_assist
+    never fires for it)."""
+    lo, hi = min(BOARD_YEARS), max(BOARD_YEARS)
+    out = sorted({f"B.{int(m.group(1))}" for m in
+                  re.finditer(r"\bb\.?\s?(\d{1,2})\b", question.lower())
+                  if int(m.group(1)) not in BOARD_YEARS})
+    if not out:
+        return None
+    return (f"Note (computed): {', '.join(out)} is not in this corpus, which "
+            f"covers board meetings B.{lo} ({BOARD_YEARS[lo]}) through "
+            f"B.{hi} ({BOARD_YEARS[hi]}) completely. State this definitively.")
 
 
 _FP_RE = re.compile(r"fp\s?(\d{2,3})")
@@ -537,6 +597,9 @@ async def main(message: cl.Message):
                 hits.append(h)
     hits = hits[:15]
     hits, year_note = _year_assist(message.content, hits)
+    board_note = _board_range_note(message.content)
+    if board_note:
+        year_note = f"{year_note} {board_note}" if year_note else board_note
     context = "\n\n".join(
         f"[{_doc_label(h.doc_id, h.page)}] (score {h.score:.2f})\n{h.text}"
         for h in hits)

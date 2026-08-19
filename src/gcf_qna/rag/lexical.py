@@ -40,6 +40,17 @@ def tokenize(text: str) -> List[str]:
     return out
 
 
+def fp_variants(tok: str) -> List[str]:
+    """fp86 <-> fp086: the corpus zero-pads one FP number (fp086), so an
+    unpadded query token must also try the padded spelling and vice versa.
+    Non-FP tokens pass through unchanged."""
+    m = re.fullmatch(r"fp0*(\d{1,3})", tok)
+    if not m:
+        return [tok]
+    n = int(m.group(1))
+    return sorted({tok, f"fp{n}", f"fp{n:03d}"})
+
+
 def _doc_tokens(doc_id: str) -> List[str]:
     """Filenames carry the proposal number even when the chunk body doesn't."""
     return tokenize(doc_id.replace("-", " ").replace("_", " "))
