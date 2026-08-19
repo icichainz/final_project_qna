@@ -36,7 +36,7 @@ MIN_DENSE_SCORE = float(os.getenv("MIN_DENSE_SCORE", "0.5"))
 CONDUCTOR = os.getenv("CONDUCTOR", "1") == "1"
 
 # --- chat (OpenAI-compatible endpoint) ---
-CHAT_MODEL = os.getenv("CHAT_MODEL", "gpt-4o-mini")
+CHAT_MODEL = os.getenv("CHAT_MODEL", "gpt-5.2")
 MAX_ANSWER_TOKENS = int(os.getenv("MAX_ANSWER_TOKENS", "1024"))
 # Optional: point the OpenAI client elsewhere (e.g. LM Studio) instead of api.openai.com
 OPENAI_BASE_URL = os.getenv("OPENAI_BASE_URL", "")
