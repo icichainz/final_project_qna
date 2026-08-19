@@ -278,9 +278,11 @@ def test_planner_on_skips_the_conductor_and_ships_the_matrix(monkeypatch, app_en
 
     # no conductor LLM call at all
     assert client.conductor_calls == []
-    # one authoritative stem per document, the user's own wording as the query
-    assert retriever.calls == [{"q": Q_COMPARE, "doc": FP254},
-                               {"q": Q_COMPARE, "doc": FP228}]
+    # one authoritative stem per document, each with the English query the plan
+    # resolved (the conductor that would have translated was skipped)
+    assert retriever.calls == [
+        {"q": "FP254 total GCF funding requested amount", "doc": FP254},
+        {"q": "FP228 total GCF funding requested amount", "doc": FP228}]
     context = _context_of(client)
     assert "EVIDENCE MATRIX" in context
     assert context.index("EVIDENCE MATRIX") < context.index("Registry —")
@@ -293,6 +295,46 @@ def test_planner_on_skips_the_conductor_and_ships_the_matrix(monkeypatch, app_en
     assert "Address EVERY row of the matrix." in system
     # evidence isolation (plan step 1) is untouched
     assert [m["role"] for m in client.answer_call["messages"]] == ["system", "user"]
+
+
+def test_scoped_queries_are_english_even_for_a_french_question(monkeypatch, app_env):
+    """Review finding 14. The index is English and the planner path skips the
+    conductor's translation, so the raw French message reached the retriever
+    verbatim: measured on 'Comparez le financement de FP151 et FP152' over the
+    real index, 2/10 excerpts carried a financing figure (both incidental
+    tCO2-table numbers) against 4/10 — including both documents' actual
+    financing lines — for the field queries below."""
+    monkeypatch.setattr(config, "PLANNER", True)
+    client = FakeOpenAI()
+    _, retriever = _run_main(
+        monkeypatch, "Comparez le financement du FP254 et du FP228", [], client)
+    fields = "total financing GCF plus co-financing amount total GCF funding requested amount"
+    assert retriever.calls == [{"q": f"FP254 {fields}", "doc": FP254},
+                               {"q": f"FP228 {fields}", "doc": FP228}]
+    for call in retriever.calls:
+        assert "Comparez" not in call["q"] and "financement" not in call["q"]
+    # the user's own wording still reaches the ANSWER model untouched
+    assert "Comparez le financement du FP254 et du FP228" in \
+        client.answer_call["messages"][1]["content"]
+
+
+def test_plan_query_joins_the_planners_own_field_phrasings(fake_registry):
+    """The English map is the planner's, not a second copy in the app."""
+    plan = planner.detect("Compare FP254 and FP228")           # default fields
+    assert plan.default_fields
+    q = app._plan_query(plan, plan.docs[0])
+    assert q.startswith("FP254 ")
+    for field in plan.fields[:4]:
+        assert planner._FIELD_QUERIES[field] in q
+
+
+def test_plan_query_is_bounded_for_a_many_field_question(fake_registry):
+    plan = planner.detect(
+        "Compare the title, countries, accredited entity, instruments, "
+        "ESS category and beneficiaries of FP254 and FP228")
+    assert len(plan.fields) > 4
+    q = app._plan_query(plan, plan.docs[0])
+    assert planner._FIELD_QUERIES[plan.fields[4]] not in q      # capped at four
 
 
 def test_planner_path_skips_the_rewrite_guards(monkeypatch, app_env):

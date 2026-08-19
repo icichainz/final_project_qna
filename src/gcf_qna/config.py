@@ -45,10 +45,13 @@ PLANNER = os.getenv("PLANNER", "0") == "1"
 # Master switch, DEFAULT OFF for this deploy: it adds up to two LLM calls per
 # turn and rewrites answers, so it ships behind the same discipline as PLANNER.
 VERIFY = os.getenv("VERIFY", "0") == "1"
-# The two optional LLM calls inside that pass, consulted ONLY when VERIFY=1:
-# the batched judge over claims the deterministic checks could not confirm,
-# and the repair rewrite. Both off leaves a pure-python audit that reports
-# what it found and never touches the answer text.
+# The two optional LLM calls inside that pass, consulted ONLY when VERIFY=1
+# and INDEPENDENT of each other: the batched judge over claims the
+# deterministic checks could not confirm (VERIFY_LLM), and the constrained
+# repair rewrite (VERIFY_REPAIR). VERIFY_LLM=0 does not disable the repair —
+# it leaves the repair working from deterministic verdicts, which is a
+# supported deployment. VERIFY_REPAIR=0 is what guarantees the answer text is
+# never touched; both off makes the whole pass pure python.
 VERIFY_LLM = os.getenv("VERIFY_LLM", "1") == "1"
 VERIFY_REPAIR = os.getenv("VERIFY_REPAIR", "1") == "1"
 

@@ -614,6 +614,29 @@ def _asks_about_both(text: str) -> bool:
     return False
 
 
+def _plan_query(plan, doc) -> str:
+    """The English retrieval query for one planned document.
+
+    The user's own wording does not survive as a query here, and that is the
+    point. The index is built over the English extracted corpus, and the
+    conductor path translates every sub-query into English before retrieving;
+    the planner path skips the conductor, so a French question used to reach
+    the retriever verbatim — measured on 'Comparez le financement de FP151 et
+    FP152', that returns excerpts with no financing figure at all.
+
+    The plan already knows which fields the question asked for, and the planner
+    publishes the English phrasing it uses for each of them (the same map its
+    own cell retrieval uses), so the translation is a lookup, not a model call.
+    The document's own identifier leads the query: retrieve.py routes on
+    identifiers, and the scope filter degrades to an unscoped search when it
+    matches nothing — in which case the id is the only thing keeping the query
+    on the right document.
+    """
+    parts = [planner._FIELD_QUERIES.get(f, f.replace("_", " "))
+             for f in list(plan.fields)[:4]]      # bounded: a query is a phrase
+    return " ".join([doc.label] + parts)
+
+
 def _planner_intent(text: str, plan) -> bool:
     """Does this >=2-id message actually ask for a document-by-field answer?
 
@@ -651,6 +674,21 @@ def _claim_texts(verdicts: list, limit: int = 3, width: int = 110) -> str:
     return "; ".join(out) + (f" (+{more} more)" if more > 0 else "")
 
 
+def _abstain_banner(res) -> str:
+    """The line an abstained answer is prefixed with.
+
+    'abstain' means every fact-bearing claim failed: there is nothing left in
+    the answer that the cited pages support. A warning appended below the
+    sources reads as a footnote to a confident-looking body, so it LEADS the
+    message instead — and the body it leads is the original answer, never a
+    repair, because a rewrite of an answer whose every claim failed is a
+    rewrite with nothing to stand on.
+    """
+    return ("⚠️ Retrieval did not surface evidence for this — none of these "
+            "claims could be checked against the cited pages, so treat the "
+            "answer below as unverified: " + _claim_texts(res.failures))
+
+
 def _verification_lines(res) -> list:
     """What the user is told about a verification result — nothing when the
     answer verified clean.
@@ -659,7 +697,8 @@ def _verification_lines(res) -> list:
     the sources block, never a separate ceremony. A repair is announced quietly
     (the corrected text is already on screen); everything else names the claims
     it could not stand behind, because an unflagged partial answer reads
-    exactly like a verified one.
+    exactly like a verified one. 'abstain' is absent on purpose: it leads the
+    answer message itself (see _abstain_banner).
     """
     if res is None:
         return []
@@ -667,12 +706,11 @@ def _verification_lines(res) -> list:
     if res.status == "repaired":
         lines.append("✎ answer corrected against the cited pages")
     elif res.status == "partial":
+        # failures, not just `unsupported`: a CONTRADICTED claim is the worse
+        # of the two failure kinds, and printing only the unsupported ones left
+        # an empty list under the warning while a wrong figure sat on screen
         lines.append("⚠️ not supported by the retrieved pages (treat with "
-                     "caution): " + _claim_texts(res.unsupported))
-    elif res.status == "abstain":
-        lines.append("⚠️ retrieval did not surface evidence for this — none of "
-                     "these claims could be checked against the cited pages: "
-                     + _claim_texts(res.failures))
+                     "caution): " + _claim_texts(res.failures))
     elif res.status == "unverified-llm":
         lines.append("⚠️ claims could not be re-checked (no verification model "
                      "available); the deterministic checks flag: "
@@ -682,6 +720,32 @@ def _verification_lines(res) -> list:
             f"{_claim_texts([v], width=70)} [{', '.join(v.flags[:2])}]"
             for v in res.cautions[:3]))
     return lines
+
+
+def _cite_key(label: str):
+    """('doc prefix', page) for a citation label, however it was written.
+
+    The two reporters format the same defect differently — _invalid_citations
+    prints '55_gcf-b37-02-add11-funding-propos… p.41', the verifier's flag
+    carries '55_gcf-b37-02-add11-…-fp220, p.41' — and both truncate the id, so
+    the comparable part is the leading 24 characters: the same prefix width
+    _cited and _resolve_doc already compare on.
+    """
+    s = (label or "").strip()
+    m = re.search(r"[0-9]{1,3}_[\w.\-]+", s)
+    page = re.search(r"\bpp?\.\s*(\d{1,3})\b", s)
+    return ((m.group(0) if m else s).lower()[:24],
+            int(page.group(1)) if page else None)
+
+
+def _verifier_flagged_cites(res) -> set:
+    """Citations the verifier already reported as pointing outside the evidence."""
+    out = set()
+    for v in (res.verdicts if res is not None else []):
+        for f in v.flags:
+            if f.startswith("invalid-citation:"):
+                out.add(_cite_key(f.split(":", 1)[1]))
+    return out
 
 
 async def _verify_reply(reply, evidence: dict):
@@ -703,8 +767,13 @@ async def _verify_reply(reply, evidence: dict):
                  "claims: " + ", ".join(f"{k} {n}" for k, n in res.counts().items())]
                 + [f"- {v.status}: {_claim_texts([v], width=90)} — {v.reason}"
                    for v in res.failures[:6]] + list(res.notes))
-        if res.answer and res.answer != original:
-            reply.content = res.answer
+        # abstain keeps the ORIGINAL body and leads it with the warning;
+        # every other status shows whatever the verifier returned
+        body = original if res.status == "abstain" else (res.answer or original)
+        text = (_abstain_banner(res) + "\n\n" + body
+                if res.status == "abstain" else body)
+        if text != original:
+            reply.content = text
             await reply.update()
         return res
     except Exception as e:                        # noqa: BLE001
@@ -1070,10 +1139,13 @@ async def main(message: cl.Message):
                                             # chat branch is already behind us,
                                             # and retrieving is the safe default
         else:
-            # Authoritative stems, straight from the registry. The rewrite
-            # guards have nothing to repair here — no model wrote these tags —
+            # Authoritative stems, straight from the registry, and an English
+            # query per document built from the fields the plan resolved (see
+            # _plan_query — the raw message is the wrong query here, and the
+            # conductor that would have translated it was skipped). The rewrite
+            # guards have nothing to repair either — no model wrote these tags —
             # so _rescope_items/_resolve_doc_tags are skipped below.
-            scoped = [{"q": message.content, "doc": d.scope}
+            scoped = [{"q": _plan_query(plan, d), "doc": d.scope}
                       for d in plan.docs if not d.missing]
             search_queries = scoped or search_queries
 
@@ -1213,9 +1285,15 @@ async def main(message: cl.Message):
         shown = [h for h in hits if _cited(h)] or hits
         sources = ", ".join(sorted({f"{h.doc_id} p.{h.page}" if h.page else h.doc_id
                                     for h in shown}))
-        # verification reports invented citations itself (as failed claims with
-        # the page they point at), so this stays the VERIFY=0 path
-        bad_cites = _invalid_citations(reply.content or "", hits) if res is None else []
+        # Runs on EVERY path. The verifier only sees text that survives claim
+        # extraction, so a hedge sentence ('the excerpts do not state X [doc,
+        # p. 41]') carries an invented page past it untouched; this check reads
+        # the raw answer. Whatever the verifier already flagged is dropped, so
+        # the same page is never reported twice in two wordings.
+        bad_cites = _invalid_citations(reply.content or "", hits)
+        if res is not None:
+            flagged = _verifier_flagged_cites(res)
+            bad_cites = [b for b in bad_cites if _cite_key(b) not in flagged]
         if bad_cites:
             sources += ("\n⚠️ cited but not among retrieved pages (treat with "
                         "caution): " + "; ".join(bad_cites[:4]))
@@ -1244,8 +1322,13 @@ async def main(message: cl.Message):
                 break
         await cl.Message(content=f"📎 Sources: {sources}", elements=elements).send()
     else:
-        # no excerpts means no sources line to hang the verdict on, and a
-        # note-only answer is exactly the kind that needs one
+        # No excerpts means no sources line to hang the verdict on, and a
+        # note-only answer is exactly the kind that needs one. It goes out in
+        # the sources message's own shape: the leading 📎 is what keeps UI
+        # furniture out of the conversation when a thread is resumed
+        # (_history_from_thread), so a bare cl.Message here would come back as
+        # an assistant turn.
         lines = _verification_lines(res)
         if lines:
-            await cl.Message(content="\n".join(lines)).send()
+            await cl.Message(
+                content="📎 Sources: none retrieved\n" + "\n".join(lines)).send()
