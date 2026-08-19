@@ -275,6 +275,11 @@ def _hits(*pairs):
             for d, p in pairs]
 
 
+def _hits2(doc, page, text):
+    """One hit carrying real passage text — what claim support verifies against."""
+    return [Hit(text=text, doc_id=doc, score=0.9, page=page)]
+
+
 FP151 = "124_gcf-b27-02-add11"
 FP152 = "123_gcf-b27-02-add12"
 
@@ -502,3 +507,396 @@ def test_record_and_compare_round_trip(tmp_path, monkeypatch, capsys):
     out = capsys.readouterr().out
     assert "better" in out and "worse" in out
     assert "better a" in re.sub(r"\s+", " ", out)
+
+
+# ==========================================================================
+# required-field coverage
+# ==========================================================================
+def _v2(monkeypatch, table, fps=None):
+    """Stand in for registry v2: {doc_id: {v2_field: [candidate, ...]}}.
+
+    Stubbed rather than read from data/registry_v2.json so the scorer is
+    tested against a fixed corpus of facts, and so a concurrent rebuild of the
+    registry cannot turn these assertions red.
+    """
+    monkeypatch.setattr(ev.registry, "facts", lambda d: table.get(d, {}))
+    monkeypatch.setattr(
+        ev.registry, "canonical",
+        lambda d, f: next((c for c in table.get(d, {}).get(f, [])
+                           if c.get("status") == "canonical"), None))
+    monkeypatch.setattr(ev, "_doc_fp", lambda d: (fps or {}).get(d))
+
+
+def _cand(raw, **kw):
+    return {"raw": raw, "value": kw.get("value"), "currency": kw.get("currency"),
+            "unit": kw.get("unit"), "page": kw.get("page", 5),
+            "section": kw.get("section", "A.8"),
+            "status": kw.get("status", "canonical")}
+
+
+def _fields_case(docs, fields, **kw):
+    return _case(expect={"behavior": "answer", "docs": docs, "pages": [],
+                         "must_contain": [], "must_not_contain": [],
+                         "fields": fields, "notes": ""}, **kw)
+
+
+def test_field_cell_is_stated_when_the_answer_reprints_the_registry_value(monkeypatch):
+    _v2(monkeypatch, {FP151: {"gcf_funding_requested": [_cand("18.5 M USD")]}})
+    case = _fields_case([FP151], ["gcf_financing"])
+    got = ev.score_fields(case, f"FP151 requests USD 18,500,000 [{FP151}, p. 5].")
+    assert got["cells"][0]["status"] == "stated"
+    assert got["coverage"] == 1.0 and got["n_unscorable"] == 0
+
+
+@pytest.mark.parametrize("answer,want", [
+    ("FP151 requests USD 18.5 million.", "stated"),        # unit word
+    ("FP151 requests 18,500,000 USD.", "stated"),          # fully printed
+    ("Le FP151 demande 18,5 millions USD.", "stated"),     # French comma decimal
+    ("FP151 requests EUR 18.5 million.", "missed"),        # currency is a fact
+    ("FP151 requests USD 21.1 million.", "missed"),        # a different figure
+])
+def test_field_amount_matching_reuses_the_verifier(monkeypatch, answer, want):
+    """The matcher must be verify's, not a second implementation: same
+    separator rules, same unit words, same cross-currency guard."""
+    _v2(monkeypatch, {FP151: {"gcf_funding_requested": [_cand("18.5 M USD")]}})
+    case = _fields_case([FP151], ["gcf_financing"])
+    assert ev.score_fields(case, answer)["cells"][0]["status"] == want
+
+
+def test_field_text_match_accepts_the_acronym_and_the_full_name(monkeypatch):
+    _v2(monkeypatch, {FP151: {"accredited_entity": [
+        _cand("International Union for Conservation of Nature and "
+              "Natural Resources (IUCN)")]}})
+    case = _fields_case([FP151], ["accredited_entity"])
+    for answer in ("The accredited entity is IUCN.",
+                   "Implemented by the International Union for Conservation of "
+                   "Nature and Natural Resources."):
+        assert ev.score_fields(case, answer)["cells"][0]["status"] == "stated"
+    assert ev.score_fields(case, "The accredited entity is IFAD.")[
+        "cells"][0]["status"] == "missed"
+
+
+def test_field_list_candidate_matches_any_of_its_items(monkeypatch):
+    _v2(monkeypatch, {FP151: {"countries": [_cand("Africa: Angola; Benin; Kenya")]}})
+    case = _fields_case([FP151], ["countries"])
+    assert ev.score_fields(case, "It covers Kenya and Benin.")[
+        "cells"][0]["status"] == "stated"
+    assert ev.score_fields(case, "It covers Fiji.")["cells"][0]["status"] == "missed"
+
+
+@pytest.mark.parametrize("answer", [
+    "The GCF amount for FP151 is not stated in the retrieved excerpts.",
+    "The excerpts do not state the GCF funding for FP151.",
+    "FP151: GCF financing — not specified.",
+    "Le montant du financement GCF du FP151 n'est pas précisé dans les extraits.",
+    "Les extraits ne mentionnent pas le financement GCF du FP151.",
+])
+def test_a_field_explicitly_marked_missing_counts_as_covered(monkeypatch, answer):
+    _v2(monkeypatch, {FP151: {"gcf_funding_requested": [_cand("18.5 M USD")]}})
+    case = _fields_case([FP151], ["gcf_financing"])
+    got = ev.score_fields(case, answer)
+    assert got["cells"][0]["status"] == "marked-missing"
+    assert got["coverage"] == 1.0 and got["n_marked_missing"] == 1
+
+
+def test_saying_nothing_about_a_field_is_not_marking_it_missing(monkeypatch):
+    _v2(monkeypatch, {FP151: {"gcf_funding_requested": [_cand("18.5 M USD")]}})
+    case = _fields_case([FP151], ["gcf_financing"])
+    got = ev.score_fields(case, "FP151 is a technical assistance facility.")
+    assert got["cells"][0]["status"] == "missed" and got["coverage"] == 0.0
+
+
+def test_a_field_the_registry_never_recorded_is_unscorable_never_a_pass(monkeypatch):
+    _v2(monkeypatch, {FP151: {"gcf_funding_requested": [_cand("18.5 M USD")]}})
+    case = _fields_case([FP151], ["gcf_financing", "co_financing"])
+    got = ev.score_fields(case, f"FP151 requests 18.5 M USD [{FP151}, p. 5].")
+    cells = {c["field"]: c["status"] for c in got["cells"]}
+    assert cells["co_financing"] == "unscorable"
+    assert got["n_scorable"] == 1 and got["n_covered"] == 1
+    assert got["coverage"] == 1.0, "an unscorable cell must not dilute coverage"
+    assert got["n_unscorable"] == 1
+
+    only = ev.score_fields(_fields_case([FP151], ["co_financing"]), "anything")
+    assert only["coverage"] is None and only["n_scorable"] == 0
+
+
+def test_field_coverage_is_scored_per_document_not_per_answer(monkeypatch):
+    """Both proposals request the same amount here: crediting FP152's cell
+    from the sentence about FP151 is exactly the failure this scoping
+    prevents."""
+    _v2(monkeypatch,
+        {FP151: {"gcf_funding_requested": [_cand("18.5 M USD")]},
+         FP152: {"gcf_funding_requested": [_cand("18.5 M USD")]}},
+        fps={FP151: 151, FP152: 152})
+    case = _fields_case([FP151, FP152], ["gcf_financing"])
+    answer = (f"FP151 requests USD 18.5 million [{FP151}, p. 5].\n\n"
+              f"For FP152 the GCF amount is not stated in the excerpts.")
+    cells = {c["doc"]: c for c in ev.score_fields(case, answer)["cells"]}
+    assert cells[FP151]["status"] == "stated"
+    assert cells[FP152]["status"] == "marked-missing"
+    assert cells[FP151]["scoped"] == cells[FP152]["scoped"] == "document"
+
+
+def test_field_scope_falls_back_to_the_whole_answer_when_unattributable(monkeypatch):
+    _v2(monkeypatch, {FP151: {"gcf_funding_requested": [_cand("18.5 M USD")]}},
+        fps={FP151: 151})
+    case = _fields_case([FP151], ["gcf_financing"])
+    got = ev.score_fields(case, "The requested amount is USD 18.5 million.")
+    assert got["cells"][0]["scoped"] == "answer"
+    assert got["cells"][0]["status"] == "stated"
+
+
+def test_cases_without_a_field_contract_are_not_scored():
+    assert ev.score_fields(_fields_case([FP151], []), "anything") is None
+    assert ev.score_fields(_fields_case([], ["gcf_financing"]), "anything") is None
+
+
+def test_field_label_maps_onto_the_registry_v2_field_name():
+    assert ev.FIELD_TO_V2["gcf_financing"] == "gcf_funding_requested"
+    assert ev.FIELD_TO_V2["accredited_entity"] == "accredited_entity"
+    # borrowed from the verifier, not re-declared: one mapping, one owner
+    assert all(ev.FIELD_TO_V2[k] == v for k, v in ev._V2_FROM_VERIFY.items())
+
+
+# ==========================================================================
+# claim support
+# ==========================================================================
+def _verdict(status, text="a claim", kind="money", reason="because"):
+    return types.SimpleNamespace(
+        status=status, reason=reason,
+        claim=types.SimpleNamespace(text=text, kind=kind))
+
+
+def test_score_claims_wires_extract_build_and_classify(monkeypatch):
+    """The harness must classify against the evidence IT assembled — the same
+    hits and notes it put in the prompt — not against a fresh retrieval."""
+    seen = {}
+
+    class Stub:
+        SUPPORTED, CONTRADICTED, UNSUPPORTED = (
+            "supported", "contradicted", "unsupported")
+
+        @staticmethod
+        def extract_claims(answer):
+            seen["answer"] = answer
+            return ["c1", "c2", "c3", "c4"]
+
+        @staticmethod
+        def build_evidence(hits, notes):
+            seen["evidence_args"] = (hits, notes)
+            return {("d1", 5): "text", ("__notes__", None): "note"}
+
+        @staticmethod
+        def classify_deterministic(claims, evidence):
+            seen["classify_args"] = (claims, evidence)
+            return [_verdict("supported"), _verdict("supported"),
+                    _verdict("contradicted", "bad", reason="p.40 says 40,751,254"),
+                    _verdict("unsupported", "loose")]
+
+    monkeypatch.setattr(ev, "verify", Stub)
+    hits = _hits((FP151, 5))
+    got = ev.score_claims("the answer", hits, ["registry note", None, "year note"])
+
+    assert seen["answer"] == "the answer"
+    assert seen["evidence_args"][0] is hits
+    assert seen["evidence_args"][1] == ["registry note", "year note"], \
+        "empty notes are dropped, the rest are passed through in order"
+    assert seen["classify_args"][0] == ["c1", "c2", "c3", "c4"]
+    assert got["claims"] == 4 and got["supported"] == 2
+    assert got["contradicted"] == 1 and got["unsupported"] == 1
+    assert got["support_rate"] == 0.5
+    assert got["evidence_keys"] == ["d1|5", "__notes__|-"]
+    assert [f["status"] for f in got["failures"]] == ["contradicted", "unsupported"]
+    assert "40,751,254" in got["failures"][0]["reason"]
+
+
+def test_score_claims_on_an_answer_with_no_claims(monkeypatch):
+    class Stub:
+        SUPPORTED, CONTRADICTED, UNSUPPORTED = (
+            "supported", "contradicted", "unsupported")
+        extract_claims = staticmethod(lambda a: [])
+        build_evidence = staticmethod(lambda h, n: {})
+        classify_deterministic = staticmethod(lambda c, e: [])
+
+    monkeypatch.setattr(ev, "verify", Stub)
+    got = ev.score_claims("FP999 does not exist in this corpus.", [], [])
+    assert got["claims"] == 0 and got["support_rate"] is None
+
+
+def test_claim_support_is_not_the_old_page_presence_check():
+    """A fabricated figure attached to a page that WAS retrieved passes the
+    citation check and must still fail claim support."""
+    hits = _hits2(FP151, 5, "A.8 Total GCF funding requested: 18.5 M USD")
+    good = ev.score_claims(f"FP151 requests 18.5 million USD [{FP151}, p. 5].",
+                           hits, [])
+    bad = ev.score_claims(f"FP151 requests 99.9 million USD [{FP151}, p. 5].",
+                          hits, [])
+    case = _case(expect={"behavior": "answer", "docs": [], "pages": [],
+                         "must_contain": [], "must_not_contain": [],
+                         "fields": [], "notes": ""})
+    assert ev.score_answer(case, f"FP151 requests 99.9 million USD [{FP151}, p. 5].",
+                           hits)["citations"] is True
+    assert good["supported"] == 1 and good["support_rate"] == 1.0
+    assert bad["supported"] == 0 and bad["unsupported"] == 1
+
+
+def test_claim_support_sees_the_notes_the_prompt_carried():
+    """A note-level claim verifies against the computed registry note the
+    harness itself prepended — evidence the retrieved passages do not carry.
+    Pass the notes and it is supported; drop them and the same sentence cites
+    something the turn never held."""
+    note = ("Registry — 30 funding-proposal documents from 2020 in the corpus: "
+            "FP151 \"TA Facility\"; FP152 \"Equity\"")
+    answer = ("The corpus holds 30 funding-proposal documents from 2020 "
+              "[registry note in your context].")
+    hits = _hits2(FP151, 5, "unrelated passage text")
+    with_note = ev.score_claims(answer, hits, [note])
+    without = ev.score_claims(answer, hits, [])
+    assert with_note["supported"] == 1
+    assert "__notes__|-" in with_note["evidence_keys"]
+    assert without["supported"] == 0 and without["unsupported"] == 1
+
+
+# ==========================================================================
+# latency / tokens / cost
+# ==========================================================================
+@pytest.mark.parametrize("values,q,want", [
+    ([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 0.5, 5),
+    ([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 0.95, 10),
+    ([3.0], 0.95, 3.0),
+    ([2.0, 1.0], 0.5, 1.0),
+    ([], 0.5, None),
+])
+def test_percentile_is_nearest_rank(values, q, want):
+    assert ev.percentile(values, q) == want
+
+
+def test_usage_totals_aggregates_only_rows_that_called_the_model():
+    rows = [
+        {"usage": {"latency_s": 2.0, "prompt_tokens": 1000,
+                   "completion_tokens": 100, "total_tokens": 1100}},
+        {"usage": {"latency_s": 6.0, "prompt_tokens": 3000,
+                   "completion_tokens": 200}},
+        {"usage": {}},                       # guard short-circuit: no call
+        {"error": "boom"},                   # errored case: no call
+    ]
+    got = ev.usage_totals(rows)
+    assert got["calls"] == 2
+    assert got["p50"] == 2.0 and got["p95"] == 6.0 and got["max"] == 6.0
+    assert got["prompt_tokens"] == 4000 and got["completion_tokens"] == 300
+    assert got["total_tokens"] == 4300
+
+
+def test_cost_comes_from_the_single_rate_constant():
+    rows = [{"usage": {"latency_s": 1.0, "prompt_tokens": 1_000_000,
+                       "completion_tokens": 1_000_000}}]
+    got = ev.usage_totals(rows)
+    want = (1_000_000 * ev.TOKEN_COST_USD["prompt"]
+            + 1_000_000 * ev.TOKEN_COST_USD["completion"])
+    assert got["cost_usd"] == pytest.approx(round(want, 4))
+    assert set(ev.TOKEN_COST_USD) == {"prompt", "completion"}
+
+
+# ==========================================================================
+# release report
+# ==========================================================================
+def _release_row(cid, cls, *, score=1.0, fields=None, claims=None, usage=None,
+                 error=None):
+    if error:
+        return {"id": cid, "class": cls, "lang": "en", "expect": {"behavior": "answer"},
+                "score": 0.0, "error": error, "guard": False}
+    return {
+        "id": cid, "class": cls, "lang": "en", "guard": False, "score": score,
+        "expect": {"behavior": "answer"},
+        "retrieval": {"docs_expected": 1, "r5": True, "r10": True, "cover10": True,
+                      "pages_expected": 0, "page_rate": None, "pages_hit": None,
+                      "rank": 1},
+        "checks": {"behavior": True, "must_contain": {"x": score == 1.0},
+                   "must_not_contain": {}, "language": True, "citations": True,
+                   "bad_citations": [], "score": score, "pass": score == 1.0},
+        "fields": fields, "claims": claims,
+        "usage": usage or {"latency_s": 3.0, "prompt_tokens": 5000,
+                           "completion_tokens": 500, "total_tokens": 5500},
+    }
+
+
+FIELDS_OK = {"cells": [{"doc": FP151, "field": "gcf_financing",
+                        "v2_field": "gcf_funding_requested", "scoped": "document",
+                        "status": "stated"}],
+             "n_cells": 1, "n_scorable": 1, "n_stated": 1, "n_marked_missing": 0,
+             "n_missed": 0, "n_unscorable": 0, "n_covered": 1, "coverage": 1.0}
+FIELDS_BAD = {"cells": [{"doc": FP152, "field": "gcf_financing",
+                         "v2_field": "gcf_funding_requested", "scoped": "answer",
+                         "status": "missed", "expected": ["150 M USD"]},
+                        {"doc": FP152, "field": "title", "v2_field": "title",
+                         "scoped": "answer", "status": "unscorable",
+                         "why": "no candidate"}],
+              "n_cells": 2, "n_scorable": 1, "n_stated": 0, "n_marked_missing": 0,
+              "n_missed": 1, "n_unscorable": 1, "n_covered": 0, "coverage": 0.0}
+CLAIMS_OK = {"claims": 4, "supported": 4, "contradicted": 0, "unsupported": 0,
+             "support_rate": 1.0, "evidence_keys": ["d|5"], "failures": []}
+CLAIMS_BAD = {"claims": 4, "supported": 2, "contradicted": 1, "unsupported": 1,
+              "support_rate": 0.5, "evidence_keys": ["d|5"],
+              "failures": [{"status": "unsupported", "kind": "money",
+                            "text": "t", "reason": "not in the cited evidence"}]}
+
+
+def test_release_table_renders_every_aggregate(capsys):
+    rows = [_release_row("a", "identifier", fields=FIELDS_OK, claims=CLAIMS_OK),
+            _release_row("b", "comparison", score=0.5, fields=FIELDS_BAD,
+                         claims=CLAIMS_BAD),
+            _release_row("c", "abstain", error="RuntimeError: chat call failed")]
+    summary = ev.print_release_table(rows, cases_total=3)
+    out = capsys.readouterr().out
+    assert "RELEASE REPORT" in out and "3 cases" in out and "1 errored" in out
+    for section in ("FIELD COVERAGE", "CLAIM SUPPORT", "LATENCY / COST",
+                    "ERRORED CASES"):
+        assert section in out
+    assert "estimated cost" in out and "ESTIMATED rates" in out
+    assert "RuntimeError: chat call failed" in out
+    assert summary["fields"] == {"cells": 3, "scorable": 2, "stated": 1,
+                                 "marked_missing": 0, "missed": 1, "unscorable": 1}
+    assert summary["claims"]["total"] == 8 and summary["claims"]["supported"] == 6
+    assert summary["claims"]["rate"] == 0.75
+    assert summary["usage"]["calls"] == 2          # the errored case made no call
+    assert summary["errors"] == ["c"]
+
+
+def test_release_table_survives_a_scorer_that_failed(capsys):
+    """A scorer stub ({'error': ...}) must be skipped, not crash the report."""
+    rows = [_release_row("a", "identifier", fields={"error": "boom"},
+                         claims={"error": "boom"}),
+            _release_row("b", "identifier", fields=FIELDS_OK, claims=CLAIMS_OK)]
+    summary = ev.print_release_table(rows)
+    assert summary["fields"]["cells"] == 1 and summary["claims"]["total"] == 4
+    assert "RELEASE REPORT" in capsys.readouterr().out
+
+
+def test_release_records_under_its_own_prefix(tmp_path, monkeypatch):
+    monkeypatch.setattr(ev, "EVAL_DIR", tmp_path)
+    assert ev.record([], "release-1", prefix="release_").name == "release_release-1.jsonl"
+    assert ev.record([], "x").name == "answers_baseline_x.jsonl"
+
+
+def test_compare_tolerates_old_records_missing_the_new_keys(tmp_path, monkeypatch,
+                                                            capsys):
+    monkeypatch.setattr(ev, "EVAL_DIR", tmp_path)
+    old = [{"id": "a", "class": "identifier", "score": 0.5}]     # pre-release
+    new = [_release_row("a", "identifier", fields=FIELDS_OK, claims=CLAIMS_OK)]
+    ev.run_compare(ev.record(old, "old"), ev.record(new, "new"))
+    out = capsys.readouterr().out
+    assert "TOTAL" in out and "better" in out
+    assert "field coverage" not in out, \
+        "a metric only one side carries cannot be diffed"
+
+
+def test_compare_diffs_the_new_metrics_when_both_runs_carry_them(capsys, tmp_path,
+                                                                 monkeypatch):
+    monkeypatch.setattr(ev, "EVAL_DIR", tmp_path)
+    a = [_release_row("a", "identifier", score=0.5, fields=FIELDS_BAD,
+                      claims=CLAIMS_BAD)]
+    b = [_release_row("a", "identifier", fields=FIELDS_OK, claims=CLAIMS_OK)]
+    ev.run_compare(ev.record(a, "a"), ev.record(b, "b"))
+    out = re.sub(r"\s+", " ", capsys.readouterr().out)
+    assert "field coverage 1 cases 0.0% -> 100.0%" in out
+    assert "claim support 1 cases 50.0% -> 100.0%" in out

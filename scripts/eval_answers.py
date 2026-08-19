@@ -8,8 +8,8 @@ evidence pages, plus, with --answers, the generated answer's behavior
 (answer / conflict / abstention), required and forbidden strings, language,
 and citation validity.
 
-Three modes
------------
+Four modes
+----------
   --retrieval-only   (default) deterministic, no API calls. Runs the same
                      retrieval path the app runs — conductor SKIPPED, the
                      question used verbatim — and scores document recall and
@@ -19,7 +19,24 @@ Three modes
                      the prompt exactly as chainlit_app does (registry note,
                      year note, board-range note, weak-signal note, per-turn
                      assemble()), and scores the answer.
+  --release          --answers over the WHOLE suite plus the release report:
+                     required-field coverage against registry v2, claim
+                     support from rag.verify (the plan's >=95% citation-
+                     precision gate), latency p50/p95, tokens and estimated
+                     cost.  Records to data/eval/release_<label>.jsonl.
   --compare A B      diff two recorded runs, per case and per class.
+
+Two scorers beyond the string checks, both deterministic:
+
+* **required-field coverage** — for a case labelled ``expect.fields``, every
+  (document, field) cell must be *addressed*: the answer either prints a value
+  matching one of registry v2's candidates for that document+field, or says
+  plainly that it is not stated.  Cells whose document has no v2 fact for the
+  field cannot be scored either way and are reported apart — they are never a
+  pass.
+* **claim support** — every claim ``rag.verify`` extracts from the answer is
+  classified against the evidence THIS harness assembled for that case (the
+  same hits and notes the prompt carried).  No API calls, no judge model.
 
 The retrieval floor (100% document recall on the 30 retrieval gold questions)
 is re-checked in-process with --gate, so one index load covers both.
@@ -29,6 +46,7 @@ Examples
   python scripts/eval_answers.py --retrieval-only --gate
   python scripts/eval_answers.py --answers --sample 12 --record baseline-sample
   python scripts/eval_answers.py --answers --ids conf-fp274-gcf,abs-fp999
+  python scripts/eval_answers.py --release --record release-1
   python scripts/eval_answers.py --compare data/eval/answers_baseline_a.jsonl \\
                                            data/eval/answers_baseline_b.jsonl
 """
@@ -59,7 +77,7 @@ except Exception:
 
 from gcf_qna import config                                    # noqa: E402
 from gcf_qna.app.prompts import assemble                      # noqa: E402
-from gcf_qna.rag import registry                              # noqa: E402
+from gcf_qna.rag import registry, verify                      # noqa: E402
 
 DEFAULT_CASES = ROOT / "scripts" / "answer_gold.jsonl"
 GOLD_SET = ROOT / "scripts" / "gold_set.jsonl"
@@ -68,6 +86,18 @@ EVAL_DIR = ROOT / "data" / "eval"
 CLASS_ORDER = ["identifier", "compact-id", "board-code", "discovery",
                "comparison", "conflict", "french", "noisy", "abstain",
                "aggregate", "followup"]
+
+# Estimated USD price PER TOKEN for the answer model. THESE ARE ESTIMATES: the
+# API does not report prices, provider list prices move, and a run may be
+# served by a proxy with its own rates. The release report's dollar figure is
+# an order-of-magnitude number, not an invoice. One constant, edited in one
+# place — nothing else in this file hard-codes a price.
+TOKEN_COST_USD = {"prompt": 1.25 / 1_000_000,        # ~$1.25 per 1M input
+                  "completion": 10.00 / 1_000_000}   # ~$10.00 per 1M output
+
+# The plan's citation-precision gate: share of extracted claims the turn's own
+# evidence supports.
+CLAIM_SUPPORT_GATE = 0.95
 
 
 # ---------------------------------------------------------------------------
@@ -323,6 +353,273 @@ def score_answer(case: dict, answer: str, hits: list) -> dict:
 
 
 # ---------------------------------------------------------------------------
+# required-field coverage  (expect.fields x expect.docs, against registry v2)
+# ---------------------------------------------------------------------------
+# The fixture labels fields in the corpus's own vocabulary ('gcf_financing');
+# registry v2 names some of them differently ('gcf_funding_requested'). The
+# money half of that mapping already exists in rag.verify and is BORROWED, not
+# copied, so a field renamed there is renamed here too.
+_V2_FROM_VERIFY = dict(getattr(verify, "_V2_FIELD", None) or {
+    "gcf_financing": "gcf_funding_requested",
+    "total_financing": "total_financing",
+    "co_financing": "co_financing",
+    "duration": "implementation_period",
+    "beneficiaries": "beneficiaries_direct"})
+FIELD_TO_V2 = {"accredited_entity": "accredited_entity",
+               "title": "title",
+               "countries": "countries",
+               "executing_entity": "executing_entity",
+               "project_size": "project_size",
+               **_V2_FROM_VERIFY}
+
+# 'we do not have this' said out loud, EN and FR. A cell the answer explicitly
+# marks not-stated is covered: the answer addressed the field honestly, which
+# is the behavior the prompt asks for when the excerpts are silent. Saying
+# nothing at all about it is not.
+_NOT_STATED_RE = re.compile(
+    r"not (?:explicitly |directly |separately )?(?:stated|specified|given|provided|"
+    r"listed|disclosed|reported|available|mentioned|shown|indicated|present|"
+    r"broken out|found|retrieved)"
+    r"|(?:is|are|was|were) not (?:stated|specified|given|provided|available|shown)"
+    r"|(?:does|do|did) not (?:state|specify|give|provide|mention|list|report|"
+    r"indicate|contain|include|appear)"
+    r"|no (?:figure|amount|value|entity|title|number|country|countries|"
+    r"information|data)s?\b[^.]{0,30}\b(?:stated|given|provided|available|"
+    r"in the excerpts?|retrieved)"
+    r"|unavailable|unknown from the excerpts?|silent on"
+    r"|non (?:pr[ée]cis[ée]|indiqu[ée]|sp[ée]cifi[ée]|mentionn[ée]|disponible)"
+    r"|pas (?:pr[ée]cis[ée]|indiqu[ée]|sp[ée]cifi[ée]|mentionn[ée]|disponible|"
+    r"fourni|[ée]tabli|donn[ée])"
+    r"|n['’]est pas (?:pr[ée]cis[ée]|indiqu[ée]|mentionn[ée]|sp[ée]cifi[ée]|disponible)"
+    r"|ne (?:pr[ée]cise|mentionne|indique|figure|contient|donne)(?:nt)? pas"
+    r"|aucun(?:e)? (?:montant|valeur|information|chiffre|donn[ée]e|mention|"
+    r"entit[ée]|pays)", re.I)
+
+# list separators the registry prints inside one candidate string
+# ('Africa: Angola; Benin; Botswana'). Commas are NOT split on: a title's comma
+# yields fragments generic enough to match any answer.
+_CAND_SPLIT_RE = re.compile(r"\s*[;:\n]\s*")
+
+_entity_variants = getattr(verify, "_entity_variants", lambda s: [s])
+
+
+def field_candidates(doc_id: str, field: str):
+    """(v2 field name, candidates) registry v2 records for a document+field.
+
+    Public API only (facts/canonical), canonical first. An empty list is the
+    'unscorable' signal: the corpus never published this fact for this
+    document, so no answer can be graded against it.
+    """
+    v2f = FIELD_TO_V2.get(field, field)
+    try:
+        cands = list(registry.facts(doc_id).get(v2f) or [])
+    except Exception:
+        return v2f, []
+    cands.sort(key=lambda c: 0 if c.get("status") == "canonical" else 1)
+    return v2f, cands
+
+
+def _doc_fp(doc_id: str):
+    """The FP number a document carries, for attributing answer text to it."""
+    for loader in (getattr(registry, "load_v2", None), getattr(registry, "load", None)):
+        try:
+            row = (loader() or {}).get(doc_id) if loader else None
+        except Exception:
+            row = None
+        if row and row.get("fp"):
+            return int(row["fp"])
+    m = _FP_TOKEN_RE.search(doc_id or "")
+    return int(m.group(1)) if m else None
+
+
+def _answer_units(answer: str):
+    """(text, citations) for every claim-sized unit, reusing verify's splitter
+    so a bullet list and a markdown table are cut the same way here as there."""
+    fn = getattr(verify, "_units", None)
+    if fn:
+        return [(text, cits) for text, _kind, cits, _inh in fn(answer or "")]
+    return [(s, verify.parse_citations(s))
+            for s in verify.split_sentences(answer or "")]
+
+
+def doc_scope(answer: str, doc_id: str, fp=None):
+    """(the answer text that talks about this document, how it was scoped).
+
+    A comparison answer states one value per document; scoring 'did the answer
+    give FP152's GCF amount' against the WHOLE answer would pass on FP151's
+    figure. A unit belongs to a document when it cites it, names its FP id, or
+    prints its stem. When nothing does, the whole answer is used (flagged):
+    the document's own registry values still have to appear, so the fallback
+    is lenient about attribution, never about the value.
+    """
+    keep = []
+    for text, cits in _answer_units(answer):
+        if any(c.doc and doc_eq(c.doc, doc_id) for c in cits):
+            keep.append(text)
+        elif fp is not None and str(int(fp)) in fp_ids(text):
+            keep.append(text)
+        elif doc_id and doc_id.lower()[:24] in (text or "").lower():
+            keep.append(text)
+    if keep:
+        return "\n".join(keep), "document"
+    return (answer or ""), "answer"
+
+
+def _candidate_variants(raw: str) -> list:
+    out = []
+    for part in [raw] + _CAND_SPLIT_RE.split(raw or ""):
+        # parentheses are NOT stripped: '... (IUCN)' is where the acronym
+        # variant comes from, and trimming the ')' loses it
+        part = (part or "").strip(" .,;\t")
+        if not part:
+            continue
+        for v in _entity_variants(part) or []:
+            if len(verify.norm_text(v)) >= 4:
+                out.append(v)
+    return list(dict.fromkeys(out))
+
+
+def candidate_stated(cand: dict, text: str) -> bool:
+    """Does ``text`` print this registry candidate?
+
+    Figures go through verify's own amount matcher — same separator rules,
+    same unit-word handling, same currency guard as the verifier — so
+    '18.5 M USD', '18,500,000 USD' and 'USD 18.5 million' are one value here
+    exactly as they are there. Everything else is a normalized substring test
+    over the candidate's printed forms (acronym, elided title, list items).
+    """
+    raw = str(cand.get("raw") or "")
+    if not raw.strip():
+        return False
+    want = verify.amounts(raw)
+    if want:
+        got = verify.amounts(text or "")
+        if any(verify.amount_matches(w, g) for w in want for g in got):
+            return True
+    hay = verify.norm_text(text or "")
+    return any(verify.norm_text(v) in hay for v in _candidate_variants(raw))
+
+
+def score_fields(case: dict, answer: str):
+    """Per-(document, field) coverage for a case labelled ``expect.fields``.
+
+    None when the case labels no fields (or no documents): not every class
+    carries a field contract, and a missing contract is not a zero.
+    """
+    fields = list(case["expect"].get("fields") or [])
+    docs = list(case["expect"].get("docs") or [])
+    if not fields or not docs:
+        return None
+    cells = []
+    for doc in docs:
+        scope, how = doc_scope(answer, doc, _doc_fp(doc))
+        for field in fields:
+            v2f, cands = field_candidates(doc, field)
+            cell = {"doc": doc, "field": field, "v2_field": v2f, "scoped": how}
+            if not cands:
+                cell["status"] = "unscorable"
+                cell["why"] = "registry v2 records no candidate for this document+field"
+            else:
+                hit = next((c for c in cands if candidate_stated(c, scope)), None)
+                if hit:
+                    cell["status"] = "stated"
+                    cell["matched"] = str(hit.get("raw"))[:120]
+                    cell["page"] = hit.get("page")
+                elif _NOT_STATED_RE.search(scope):
+                    cell["status"] = "marked-missing"
+                else:
+                    cell["status"] = "missed"
+                    cell["expected"] = [str(c.get("raw"))[:80] for c in cands[:3]]
+            cells.append(cell)
+    n = defaultdict(int)
+    for c in cells:
+        n[c["status"]] += 1
+    scorable = len(cells) - n["unscorable"]
+    covered = n["stated"] + n["marked-missing"]
+    return {"cells": cells, "n_cells": len(cells), "n_scorable": scorable,
+            "n_stated": n["stated"], "n_marked_missing": n["marked-missing"],
+            "n_missed": n["missed"], "n_unscorable": n["unscorable"],
+            "n_covered": covered,
+            "coverage": (covered / scorable) if scorable else None}
+
+
+# ---------------------------------------------------------------------------
+# claim support  (the plan's citation-precision gate)
+# ---------------------------------------------------------------------------
+def score_claims(answer: str, hits, notes=None):
+    """Deterministic claim-level verdicts against THIS turn's own evidence.
+
+    The old citation check asked 'does the answer cite a page we retrieved?',
+    which a fabricated figure on a real page passes. This asks whether the
+    cited evidence states the claim: verify.extract_claims over the answer,
+    verify.build_evidence over the very hits and notes the harness put in the
+    prompt, verify.classify_deterministic between them. Pure python — no judge
+    model, no second API call, no repair pass.
+    """
+    blocks = [n for n in (notes or []) if n]
+    evidence = verify.build_evidence(hits or [], blocks)
+    claims = verify.extract_claims(answer or "")
+    verdicts = verify.classify_deterministic(claims, evidence)
+    n = defaultdict(int)
+    failures = []
+    for v in verdicts:
+        n[v.status] += 1
+        if v.status != verify.SUPPORTED:
+            failures.append({"status": v.status, "kind": v.claim.kind,
+                             "text": v.claim.text[:160], "reason": v.reason[:160]})
+    total = len(verdicts)
+    supported = n[verify.SUPPORTED]
+    return {
+        "claims": total,
+        "supported": supported,
+        "contradicted": n[verify.CONTRADICTED],
+        "unsupported": n[verify.UNSUPPORTED],
+        "support_rate": (supported / total) if total else None,
+        "evidence_keys": [f"{d}|{p if p is not None else '-'}" for d, p in evidence],
+        "failures": failures[:6],
+    }
+
+
+# ---------------------------------------------------------------------------
+# latency / token aggregation
+# ---------------------------------------------------------------------------
+def percentile(values, q: float):
+    """Nearest-rank percentile — no interpolation, so p95 of a real run is a
+    latency that actually happened."""
+    xs = sorted(v for v in values if v is not None)
+    if not xs:
+        return None
+    if len(xs) == 1:
+        return xs[0]
+    k = max(0, min(len(xs) - 1, int(-(-len(xs) * q // 1)) - 1))
+    return xs[k]
+
+
+def usage_totals(rows: list) -> dict:
+    """Latency percentiles, token totals and the estimated dollar cost of a
+    run. Rows with no model call (guard short-circuits, errored cases) simply
+    contribute nothing."""
+    lat, prompt, completion, calls = [], 0, 0, 0
+    for r in rows:
+        u = r.get("usage") or {}
+        if not u:
+            continue
+        calls += 1
+        if u.get("latency_s") is not None:
+            lat.append(float(u["latency_s"]))
+        prompt += int(u.get("prompt_tokens") or 0)
+        completion += int(u.get("completion_tokens") or 0)
+    cost = (prompt * TOKEN_COST_USD["prompt"]
+            + completion * TOKEN_COST_USD["completion"])
+    return {"calls": calls, "latency": lat,
+            "p50": percentile(lat, 0.50), "p95": percentile(lat, 0.95),
+            "max": max(lat) if lat else None, "sum": round(sum(lat), 1),
+            "prompt_tokens": prompt, "completion_tokens": completion,
+            "total_tokens": prompt + completion,
+            "cost_usd": round(cost, 4)}
+
+
+# ---------------------------------------------------------------------------
 # the pipeline under test
 # ---------------------------------------------------------------------------
 # Borrowed, never copied: a private duplicate of this pattern went stale the
@@ -413,9 +710,16 @@ class Pipeline:
         app = self.app
         guard = self.fp_guard(question)
         if guard is not None:
+            # the guard answers FROM the registry, so the registry lookup is
+            # the evidence this turn held — recording it lets the claim-support
+            # scorer audit a guard answer against what produced it
+            try:
+                reg = registry.registry_note(question)
+            except Exception:
+                reg = None
             return {"guard": True, "guard_answer": guard, "hits": [],
                     "system": None, "user": None, "weak": False, "plan": [],
-                    "notes": {"registry": None, "year": None, "board": None}}
+                    "notes": {"registry": reg, "year": None, "board": None}}
 
         items = self.plan(question)
         sq = items[0]
@@ -458,19 +762,35 @@ class Pipeline:
         }
 
 
-def ask_model(client, system: str, turns: list, user: str) -> str:
+def ask_model(client, system: str, turns: list, user: str):
+    """(answer text, call metadata).
+
+    The metadata is the release report's raw material: wall-clock latency of
+    the call that succeeded, and the API's OWN token counts — estimating
+    tokens from the prompt string would be a second, wronger measurement of
+    something the response already reports.
+    """
     messages = [{"role": "system", "content": system}]
     messages += [{"role": t["role"], "content": t["content"]} for t in turns]
     messages.append({"role": "user", "content": user})
     last = None
     for attempt in range(3):
+        t0 = time.perf_counter()
         try:
             resp = client.chat.completions.create(
                 model=config.CHAT_MODEL,
                 max_completion_tokens=config.MAX_ANSWER_TOKENS,
                 messages=messages,
             )
-            return resp.choices[0].message.content or ""
+            dt = time.perf_counter() - t0
+            u = getattr(resp, "usage", None)
+            pt = int(getattr(u, "prompt_tokens", 0) or 0)
+            ct = int(getattr(u, "completion_tokens", 0) or 0)
+            meta = {"latency_s": round(dt, 3), "attempts": attempt + 1,
+                    "model": config.CHAT_MODEL, "prompt_tokens": pt,
+                    "completion_tokens": ct,
+                    "total_tokens": int(getattr(u, "total_tokens", 0) or 0) or (pt + ct)}
+            return (resp.choices[0].message.content or ""), meta
         except Exception as e:                       # transient 429/5xx
             last = e
             time.sleep(2 * (attempt + 1))
@@ -555,6 +875,162 @@ def print_answer_table(rows: list):
           f"{tot['score'] / max(1, tot['n']):>6.2f} {_pct(tot['pass'], tot['n']):>5}")
 
 
+def _metrics(rows: list, key: str, need: str) -> list:
+    """The rows' <key> metric blocks, skipping absent ones and the ``{'error':
+    ...}`` stub a failed scorer leaves behind."""
+    out = []
+    for r in rows:
+        m = r.get(key)
+        if isinstance(m, dict) and need in m:
+            out.append(m)
+    return out
+
+
+def print_release_table(rows: list, cases_total: int = None):
+    """The release report: one line per class, then the three aggregates the
+    plan gates on (field coverage, claim support, cost/latency)."""
+    scored = [r for r in rows if not r.get("error") and r.get("checks")]
+    errored = [r for r in rows if r.get("error")]
+    by_cls = defaultdict(list)
+    for r in rows:
+        by_cls[r["class"]].append(r)
+
+    print("\n" + "=" * 78)
+    print(f"RELEASE REPORT — {len(rows)} cases"
+          + (f" of {cases_total}" if cases_total and cases_total != len(rows) else "")
+          + f", model={config.CHAT_MODEL}, {len(errored)} errored")
+    print("=" * 78)
+    hdr = (f"{'class':12} {'n':>3} {'err':>4} {'pass':>6} {'behav':>6} "
+           f"{'contain':>8} {'forbid':>7} {'lang':>6} {'cites':>6} "
+           f"{'field':>6} {'claim':>6} {'p50':>7} {'p95':>7}")
+    print(hdr)
+    print("-" * len(hdr))
+    for cls in sorted(by_cls, key=lambda c: (_class_rank(c), c)):
+        print(_release_line(cls, by_cls[cls]))
+    print("-" * len(hdr))
+    print(_release_line("TOTAL", rows))
+
+    fields = _metrics(scored, "fields", "n_cells")
+    claims = _metrics(scored, "claims", "claims")
+    u = usage_totals(rows)
+
+    print("\nFIELD COVERAGE — (document x required field) cells vs registry v2")
+    cells = sum(f["n_cells"] for f in fields)
+    scorable = sum(f["n_scorable"] for f in fields)
+    stated = sum(f["n_stated"] for f in fields)
+    marked = sum(f["n_marked_missing"] for f in fields)
+    missed = sum(f["n_missed"] for f in fields)
+    unscorable = sum(f["n_unscorable"] for f in fields)
+    print(f"  cases with a field contract : {len(fields)}")
+    print(f"  cells                       : {cells} "
+          f"({scorable} scorable, {unscorable} unscorable)")
+    print(f"  covered                     : {stated + marked}/{scorable} "
+          f"{_pct(stated + marked, scorable).strip()}   "
+          f"[stated {stated}, explicitly marked missing {marked}]")
+    print(f"  missed                      : {missed}")
+    _print_field_breakdown(fields)
+
+    print("\nCLAIM SUPPORT — verify.extract_claims vs the turn's own evidence "
+          "(deterministic)")
+    tot = sum(c["claims"] for c in claims)
+    sup = sum(c["supported"] for c in claims)
+    con = sum(c["contradicted"] for c in claims)
+    uns = sum(c["unsupported"] for c in claims)
+    rate = (sup / tot) if tot else 0.0
+    print(f"  claims                      : {tot} over {len(claims)} answers")
+    print(f"  supported                   : {sup} ({rate:.1%})  "
+          f"gate >= {CLAIM_SUPPORT_GATE:.0%} — "
+          f"{'PASS' if tot and rate >= CLAIM_SUPPORT_GATE else 'FAIL'}")
+    print(f"  contradicted                : {con}")
+    print(f"  unsupported                 : {uns}")
+    _print_claim_breakdown(scored)
+
+    print("\nLATENCY / COST")
+    print(f"  model calls                 : {u['calls']}")
+    print(f"  latency p50 / p95           : "
+          + (f"{u['p50']:.1f}s / {u['p95']:.1f}s" if u["p50"] is not None else "n/a")
+          + (f"   (max {u['max']:.1f}s, {u['sum']:.0f}s of model wall-clock)"
+             if u["max"] is not None else ""))
+    print(f"  tokens                      : prompt {u['prompt_tokens']:,} + "
+          f"completion {u['completion_tokens']:,} = {u['total_tokens']:,}")
+    print(f"  estimated cost              : ${u['cost_usd']:.2f}  "
+          f"(ESTIMATED rates: ${TOKEN_COST_USD['prompt'] * 1e6:.2f}/1M prompt, "
+          f"${TOKEN_COST_USD['completion'] * 1e6:.2f}/1M completion)")
+
+    print("\nERRORED CASES")
+    if not errored:
+        print("  none")
+    else:
+        for r in errored:
+            print(f"  {r['id']:26} {r['error'][:110]}")
+    return {"fields": {"cells": cells, "scorable": scorable, "stated": stated,
+                       "marked_missing": marked, "missed": missed,
+                       "unscorable": unscorable},
+            "claims": {"total": tot, "supported": sup, "contradicted": con,
+                       "unsupported": uns, "rate": rate},
+            "usage": u, "errors": [r["id"] for r in errored]}
+
+
+def _release_line(label: str, rs: list) -> str:
+    scored = [r for r in rs if not r.get("error") and r.get("checks")]
+    err = sum(1 for r in rs if r.get("error"))
+    c = _agg_answer(scored)
+    f = _metrics(scored, "fields", "n_cells")
+    cl = _metrics(scored, "claims", "claims")
+    n = max(1, len(scored))
+    u = usage_totals(rs)
+    fcov = _pct(sum(x["n_covered"] for x in f), sum(x["n_scorable"] for x in f))
+    ccov = _pct(sum(x["supported"] for x in cl), sum(x["claims"] for x in cl))
+    return (f"{label:12} {len(rs):>3} {err:>4} {_pct(c['pass'], n):>6} "
+            f"{_pct(c['behavior'], n):>6} {_pct(c['ct'], c['cn']):>8} "
+            f"{_pct(c['ft'], c['fn']):>7} {_pct(c['language'], n):>6} "
+            f"{_pct(c['citations'], n):>6} {fcov:>6} {ccov:>6} "
+            + (f"{u['p50']:>6.1f}s" if u["p50"] is not None else f"{'n/a':>7}")
+            + (f" {u['p95']:>6.1f}s" if u["p95"] is not None else f" {'n/a':>7}"))
+
+
+def _print_field_breakdown(fields: list):
+    per = defaultdict(lambda: [0, 0, 0])           # field -> covered, scorable, unscorable
+    misses = []
+    for f in fields:
+        for cell in f["cells"]:
+            row = per[cell["field"]]
+            if cell["status"] == "unscorable":
+                row[2] += 1
+                continue
+            row[1] += 1
+            row[0] += cell["status"] in ("stated", "marked-missing")
+            if cell["status"] == "missed":
+                misses.append(cell)
+    for name, (cov, tot, uns) in sorted(per.items()):
+        print(f"    {name:20} {cov:>3}/{tot:<3} {_pct(cov, tot).strip():>4}"
+              + (f"   ({uns} unscorable)" if uns else ""))
+    for cell in misses[:8]:
+        print(f"    MISS {cell['field']:18} {cell['doc'][:44]:44} "
+              f"expected {'; '.join(cell.get('expected', []))[:60]}")
+
+
+def _print_claim_breakdown(rows: list):
+    per = defaultdict(lambda: [0, 0])
+    have = [r for r in rows if _metrics([r], "claims", "claims")]
+    for r in have:
+        c = r["claims"]
+        per[r["class"]][0] += c.get("supported", 0)
+        per[r["class"]][1] += c.get("claims", 0)
+    for cls in sorted(per, key=lambda c: (_class_rank(c), c)):
+        sup, tot = per[cls]
+        print(f"    {cls:20} {sup:>3}/{tot:<3} {_pct(sup, tot).strip():>4}")
+    worst = sorted((r for r in have if r["claims"].get("claims")),
+                   key=lambda r: r["claims"]["support_rate"])[:5]
+    for r in worst:
+        c = r["claims"]
+        if c["support_rate"] >= 1.0:
+            break
+        first = (c["failures"] or [{}])[0]
+        print(f"    LOW  {r['id']:26} {c['supported']}/{c['claims']} "
+              f"{first.get('status', '')}: {first.get('reason', '')[:60]}")
+
+
 def _agg_answer(rs):
     c = defaultdict(float)
     for r in rs:
@@ -625,27 +1101,18 @@ def run_eval(args, cases: list) -> list:
         if case["turns"] and not args.answers:
             skipped.append(case)
             continue
-        out = pipe.run(case["question"])
-        rec = {
-            "id": case["id"], "class": case["class"], "lang": case["lang"],
-            "question": case["question"], "turns": len(case["turns"]),
-            "mode": "answers" if args.answers else "retrieval-only",
-            "guard": out["guard"], "weak_signal": out.get("weak"),
-            "plan": out.get("plan") or [],
-            "retrieval": score_retrieval(case, out["hits"]),
-            "expect": case["expect"],
-        }
-        rec["retrieval_score"] = retrieval_score(rec["retrieval"])
-        if args.answers:
-            answer = out["guard_answer"]
-            if answer is None:
-                answer = ask_model(client, out["system"], case["turns"], out["user"])
-            rec["answer"] = answer
-            rec["checks"] = score_answer(case, answer, out["hits"])
-            rec["score"] = rec["checks"]["score"]
-            rec["model"] = config.CHAT_MODEL
-        else:
-            rec["score"] = rec["retrieval_score"]
+        try:
+            rec = _run_case(pipe, client, args, case)
+        except Exception as e:                  # one bad case never ends a run
+            rec = {"id": case["id"], "class": case["class"], "lang": case["lang"],
+                   "question": case["question"], "turns": len(case["turns"]),
+                   "mode": "answers" if args.answers else "retrieval-only",
+                   "guard": False, "expect": case["expect"], "score": 0.0,
+                   "error": f"{type(e).__name__}: {e}"}
+            print(f"[{i}/{len(cases)}] {case['id']}  ERROR {rec['error'][:90]}",
+                  flush=True)
+            rows.append(rec)
+            continue
         rows.append(rec)
         if args.verbose:
             r = rec["retrieval"]
@@ -653,19 +1120,70 @@ def run_eval(args, cases: list) -> list:
                   f"pages={r['pages_hit']}/{r['pages_expected']} "
                   + (f"score={rec['score']:.2f}" if args.answers else ""))
         elif args.answers:
-            print(f"[{i}/{len(cases)}] {case['id']}", flush=True)
+            u = rec.get("usage") or {}
+            print(f"[{i}/{len(cases)}] {case['id']:26} score={rec['score']:.2f}"
+                  + (f" {u['latency_s']:.1f}s {u['total_tokens']}tok" if u else ""),
+                  flush=True)
 
     dt = time.perf_counter() - t0
     print(f"\n=== {'answer' if args.answers else 'retrieval-only'} baseline — "
           f"{len(rows)} cases in {dt:.0f}s "
           f"(k={pipe.top_k}, hybrid={getattr(pipe.retriever, 'hybrid_enabled', False)}"
           + (f", model={config.CHAT_MODEL}" if args.answers else "") + ") ===")
-    print_retrieval_table(rows, skipped)
+    ok = [r for r in rows if not r.get("error")]
+    print_retrieval_table(ok, skipped)
     if args.answers:
         print()
-        print_answer_table(rows)
-        _print_failures(rows)
+        print_answer_table([r for r in ok if r.get("checks")])
+        _print_failures([r for r in ok if r.get("checks")])
+    if getattr(args, "release", False):
+        print_release_table(rows, cases_total=len(cases))
     return rows
+
+
+def _safe(fn, *a, **kw):
+    """Run a scorer; a scorer that raises must not throw away an answer that
+    cost a model call. The failure is recorded in place of its metrics."""
+    try:
+        return fn(*a, **kw)
+    except Exception as e:
+        return {"error": f"{type(e).__name__}: {e}"}
+
+
+def _run_case(pipe, client, args, case: dict) -> dict:
+    out = pipe.run(case["question"])
+    rec = {
+        "id": case["id"], "class": case["class"], "lang": case["lang"],
+        "question": case["question"], "turns": len(case["turns"]),
+        "mode": "answers" if args.answers else "retrieval-only",
+        "guard": out["guard"], "weak_signal": out.get("weak"),
+        "plan": out.get("plan") or [],
+        "retrieval": score_retrieval(case, out["hits"]),
+        "expect": case["expect"],
+    }
+    rec["retrieval_score"] = retrieval_score(rec["retrieval"])
+    if not args.answers:
+        rec["score"] = rec["retrieval_score"]
+        return rec
+
+    answer, usage = out["guard_answer"], {}
+    if answer is None:
+        answer, usage = ask_model(client, out["system"], case["turns"], out["user"])
+    notes = out.get("notes") or {}
+    rec.update({
+        "answer": answer,
+        "checks": score_answer(case, answer, out["hits"]),
+        "model": config.CHAT_MODEL,
+        "usage": usage,
+        "fields": _safe(score_fields, case, answer),
+        "claims": _safe(score_claims, answer, out["hits"],
+                        [notes.get("registry"), notes.get("year")]),
+        "hits": [{"doc": h.doc_id, "page": _page(h), "score": round(h.score, 4)}
+                 for h in out["hits"]],
+        "notes_used": {k: v for k, v in notes.items() if v},
+    })
+    rec["score"] = rec["checks"]["score"]
+    return rec
 
 
 def _print_failures(rows: list):
@@ -745,11 +1263,46 @@ def run_compare(path_a: Path, path_b: Path):
         print("\nper-case changes:")
         for i, sa, sb, tag in sorted(changed, key=lambda c: (c[3], c[0])):
             print(f"  {tag:6} {i:26} {sa:.2f} -> {sb:.2f}")
+    _compare_extras(a, b, shared)
 
 
-def record(rows: list, label: str) -> Path:
+def _extra_rates(rec: dict):
+    """(field coverage, claim support) of one recorded row, or (None, None).
+
+    Both are post-release keys. A run recorded before they existed simply has
+    neither, and --compare must keep working against it — which is the whole
+    point of reading them with .get and skipping the pair when either side is
+    missing.
+    """
+    f = rec.get("fields")
+    c = rec.get("claims")
+    return ((f or {}).get("coverage") if isinstance(f, dict) else None,
+            (c or {}).get("support_rate") if isinstance(c, dict) else None)
+
+
+def _compare_extras(a: dict, b: dict, shared: list):
+    pairs = {"field coverage": [], "claim support": []}
+    for i in shared:
+        fa, ca = _extra_rates(a[i])
+        fb, cb = _extra_rates(b[i])
+        if fa is not None and fb is not None:
+            pairs["field coverage"].append((fa, fb))
+        if ca is not None and cb is not None:
+            pairs["claim support"].append((ca, cb))
+    lines = [(name, vs) for name, vs in pairs.items() if vs]
+    if not lines:
+        return
+    print("\n(metrics present in both runs)")
+    for name, vs in lines:
+        ma = sum(x for x, _ in vs) / len(vs)
+        mb = sum(y for _, y in vs) / len(vs)
+        print(f"  {name:16} {len(vs):>3} cases  {ma:>6.1%} -> {mb:>6.1%} "
+              f"{mb - ma:>+7.1%}")
+
+
+def record(rows: list, label: str, prefix: str = "answers_baseline_") -> Path:
     EVAL_DIR.mkdir(parents=True, exist_ok=True)
-    out = EVAL_DIR / f"answers_baseline_{label}.jsonl"
+    out = EVAL_DIR / f"{prefix}{label}.jsonl"
     out.write_text("".join(json.dumps(r, ensure_ascii=False) + "\n" for r in rows),
                    encoding="utf-8")
     return out
@@ -763,6 +1316,11 @@ def main(argv=None):
                     help="default mode: no API calls")
     ap.add_argument("--answers", action="store_true",
                     help="also generate and score answers (costs API calls)")
+    ap.add_argument("--release", action="store_true",
+                    help="full-suite release run: --answers over every case "
+                         "plus the release report (field coverage, claim "
+                         "support, latency, tokens, estimated cost); "
+                         "--record writes data/eval/release_<LABEL>.jsonl")
     ap.add_argument("--compare", nargs=2, metavar=("A", "B"), type=Path,
                     help="diff two recorded runs")
     ap.add_argument("--gate", action="store_true",
@@ -789,13 +1347,17 @@ def main(argv=None):
         run_compare(*args.compare)
         return 0
 
+    if args.release:
+        args.answers = True          # a release run IS an answer run, whole suite
+
     cases = select(load_cases(args.cases), ids=args.ids, sample=args.sample,
                    classes=args.classes)
     if not cases:
         raise SystemExit("no cases selected")
     rows = run_eval(args, cases)
     if args.record:
-        print(f"\nrecorded -> {record(rows, args.record)}")
+        prefix = "release_" if args.release else "answers_baseline_"
+        print(f"\nrecorded -> {record(rows, args.record, prefix=prefix)}")
     return 0
 
 
