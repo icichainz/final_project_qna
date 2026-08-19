@@ -17,6 +17,32 @@
 #   data/index/default/      the FAISS index
 #   data/raw/pdfs/           needed to locate page caches (fingerprint)
 #   data/cache/pages/        page JPEGs + geometry for evidence images
+#
+# --- Image tagging and rollback --------------------------------------------
+# The image tag carries the deployed commit, so each deploy leaves its
+# predecessor on disk instead of overwriting the one and only `:latest`.
+# Export the sha once, before any compose command (this is the one line):
+#
+#   export GIT_SHA=$(git rev-parse --short=7 HEAD)
+#
+# Shell environment beats the .env file for compose interpolation, so that
+# export wins even though .env is also loaded here. With GIT_SHA unset the
+# tag falls back to `fp-gcf:latest` and the stack behaves exactly as it did
+# before this change — `docker compose build && docker compose up -d` on a
+# bare shell still works.
+#
+# Roll back (no rebuild — the older image is already on the host):
+#   docker image ls fp-gcf                  # tags still on disk
+#   GIT_SHA=<older-sha> docker compose up -d
+#   docker compose ps                       # confirm fp-gcf came back healthy
+#
+# Which sha was live when, and with which PLANNER/VERIFY switches, is
+# recorded in docs/DEPLOYED.md (appended by the `deploy` target).
+#
+# Caveat: once a deploy has tagged an image by sha, a *bare* `docker compose
+# up -d` with GIT_SHA unset resolves to `fp-gcf:latest`, which may be stale or
+# missing. Always export GIT_SHA on the server, or read the last line of
+# docs/DEPLOYED.md to find the sha you meant.
 # ---------------------------------------------------------------------------
 
 services:
@@ -25,7 +51,9 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    image: fp-gcf:latest
+    # Tagged by commit so previous releases stay on disk and are rollback-able.
+    # Unset GIT_SHA => `fp-gcf:latest`, i.e. the old behaviour. See the header.
+    image: fp-gcf:${GIT_SHA:-latest}
     restart: unless-stopped
 
     env_file:

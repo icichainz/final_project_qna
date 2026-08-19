@@ -16,6 +16,17 @@ data/**
 !data/raw/funding/
 !data/raw/funding/*.csv
 
+# Recorded eval runs are MEASUREMENTS, not regenerable artifacts: re-running
+# --release calls the model 66 more times and produces a DIFFERENT sample, so
+# data/eval/release_release-1.jsonl cannot be rebuilt, only replaced. Under a
+# bare `data/**` it was untracked, i.e. one `git clean -xfd` away from gone.
+# The directory has to be re-included first — git never descends into an
+# excluded directory, so a negation on the files alone would not be reached.
+!data/eval/
+!data/eval/release_*.jsonl
+!data/eval/answers_baseline_*.jsonl
+!data/eval/CHECKSUMS.sha256
+
 # index artifacts wherever they sit
 *.faiss
 *.pkl

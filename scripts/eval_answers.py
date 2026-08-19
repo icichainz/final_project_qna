@@ -1300,9 +1300,36 @@ def _compare_extras(a: dict, b: dict, shared: list):
               f"{mb - ma:>+7.1%}")
 
 
-def record(rows: list, label: str, prefix: str = "answers_baseline_") -> Path:
+def record_path(label: str, prefix: str = "answers_baseline_") -> Path:
+    """Where --record LABEL would write. One place computes this, so the
+    pre-flight check and the write can never disagree about the target."""
+    return EVAL_DIR / f"{prefix}{label}.jsonl"
+
+
+def _overwrite_refusal(out: Path) -> str:
+    return (f"refusing to overwrite {out}\n"
+            f"  It already holds a recorded run, and a recorded run is a "
+            f"MEASUREMENT, not a build artifact: re-running --release calls the "
+            f"model again and produces a different sample, so the file it "
+            f"replaces cannot be reconstructed.\n"
+            f"  Use a new --record LABEL, or pass --force-record to overwrite "
+            f"it deliberately.")
+
+
+def record(rows: list, label: str, prefix: str = "answers_baseline_",
+           force: bool = False) -> Path:
+    """Write a run to data/eval/<prefix><LABEL>.jsonl.
+
+    Refuses an existing path unless ``force``. data/eval/release_release-1.jsonl
+    is the only copy of the 66-answer release run every later --compare is
+    measured against; the unconditional write this replaced meant one mistyped
+    --record label destroyed it in place, silently and unrecoverably. A fresh
+    label is unaffected, so nothing about the normal path changes.
+    """
     EVAL_DIR.mkdir(parents=True, exist_ok=True)
-    out = EVAL_DIR / f"{prefix}{label}.jsonl"
+    out = record_path(label, prefix)
+    if out.exists() and not force:
+        raise SystemExit(_overwrite_refusal(out))
     out.write_text("".join(json.dumps(r, ensure_ascii=False) + "\n" for r in rows),
                    encoding="utf-8")
     return out
@@ -1330,6 +1357,11 @@ def main(argv=None):
     ap.add_argument("--classes", help="comma-separated class filter")
     ap.add_argument("--record", metavar="LABEL",
                     help="write data/eval/answers_baseline_<LABEL>.jsonl")
+    ap.add_argument("--force-record", action="store_true",
+                    help="allow --record to overwrite an existing recording. "
+                         "OFF by default: a recorded run is the only copy of "
+                         "that measurement (a re-run is a different sample), "
+                         "so overwriting one has to be deliberate.")
     ap.add_argument("--k", type=int, default=config.TOP_K, help="hits per query")
     ap.add_argument("--no-comparison-proxy", action="store_true",
                     help="never ship COMPARISON_BLOCK (the app gates it on the "
@@ -1350,14 +1382,23 @@ def main(argv=None):
     if args.release:
         args.answers = True          # a release run IS an answer run, whole suite
 
+    prefix = "release_" if args.release else "answers_baseline_"
+    if args.record:
+        # Pre-flight, before a single model call: record() would refuse anyway,
+        # but only AFTER 66 answers had been generated and paid for — the run
+        # would be lost to the very check meant to protect runs.
+        out = record_path(args.record, prefix)
+        if out.exists() and not args.force_record:
+            raise SystemExit(_overwrite_refusal(out))
+
     cases = select(load_cases(args.cases), ids=args.ids, sample=args.sample,
                    classes=args.classes)
     if not cases:
         raise SystemExit("no cases selected")
     rows = run_eval(args, cases)
     if args.record:
-        prefix = "release_" if args.release else "answers_baseline_"
-        print(f"\nrecorded -> {record(rows, args.record, prefix=prefix)}")
+        print(f"\nrecorded -> "
+              f"{record(rows, args.record, prefix=prefix, force=args.force_record)}")
     return 0
 
 

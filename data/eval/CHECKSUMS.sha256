@@ -1,0 +1,18 @@
+# Recorded eval runs — integrity anchor for the claim-support rollout.
+#
+# release_release-1.jsonl is the 66-answer release run of 2026-08-19 and is the
+# baseline every later --compare is measured against. It cannot be rebuilt: a
+# re-run calls the model 66 more times and is a different sample. Verify before
+# trusting any number derived from these files, and after any git operation
+# that touched data/eval/:
+#
+#     sha256sum -c data/eval/CHECKSUMS.sha256      # run from the repo root
+#
+# Regenerate ONLY when deliberately adding a new recorded run:
+#     sha256sum data/eval/release_*.jsonl data/eval/answers_baseline_*.jsonl
+#
+574a2b0d043a726a7b4e13794d957a5932b4e9d0195843b31c1c64c4bad0ae45  data/eval/release_release-1.jsonl
+da75da447aee66bb441ec975093a94577388f392c38ba1bfb05f17f3f4ac3c0a  data/eval/answers_baseline_baseline-sample-v2.jsonl
+a61f5aabd4675058de22131dad71682ccc082d62f3ff3ecac0ba692b6c01c045  data/eval/answers_baseline_retrieval-all-v2.jsonl
+73a1d6f807b536dc9dc3427f0262cb0a056218426936a36b662f12fe921905a4  data/eval/answers_baseline_retrieval-scoped-ab.jsonl
+ce0463faef872918bd3d85078135ba9ab4d187eea223ffffdeca26435a9b9228  data/eval/answers_baseline_step1-sample.jsonl

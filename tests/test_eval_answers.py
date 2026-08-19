@@ -900,3 +900,99 @@ def test_compare_diffs_the_new_metrics_when_both_runs_carry_them(capsys, tmp_pat
     out = re.sub(r"\s+", " ", capsys.readouterr().out)
     assert "field coverage 1 cases 0.0% -> 100.0%" in out
     assert "claim support 1 cases 50.0% -> 100.0%" in out
+
+
+# ==========================================================================
+# the recording is the measurement — overwrite protection
+#
+# data/eval/release_release-1.jsonl is the only copy of the 66-answer release
+# run every later --compare is measured against. It is not regenerable: a
+# re-run calls the model again and is a different sample. These pin that the
+# harness cannot destroy one by accident, and that nothing about recording a
+# NEW label changed.
+# ==========================================================================
+ANCHOR = [{"id": "a", "class": "identifier", "score": 1.0}]
+LATER = [{"id": "a", "class": "identifier", "score": 0.0}]
+
+
+def test_record_refuses_to_overwrite_an_existing_run(tmp_path, monkeypatch):
+    monkeypatch.setattr(ev, "EVAL_DIR", tmp_path)
+    out = ev.record(ANCHOR, "release-1", prefix="release_")
+    before = out.read_text(encoding="utf-8")
+
+    with pytest.raises(SystemExit) as e:
+        ev.record(LATER, "release-1", prefix="release_")
+
+    assert "refusing to overwrite" in str(e.value)
+    assert str(out) in str(e.value), "the message must name the file it saved"
+    assert "--force-record" in str(e.value), "and how to mean it"
+    assert out.read_text(encoding="utf-8") == before, "the anchor was clobbered"
+
+
+def test_force_record_allows_the_overwrite(tmp_path, monkeypatch):
+    monkeypatch.setattr(ev, "EVAL_DIR", tmp_path)
+    out = ev.record(ANCHOR, "release-1", prefix="release_")
+    again = ev.record(LATER, "release-1", prefix="release_", force=True)
+    assert again == out
+    assert json.loads(out.read_text(encoding="utf-8").splitlines()[0])["score"] == 0.0
+
+
+@pytest.mark.parametrize("prefix, name", [
+    ("answers_baseline_", "answers_baseline_fresh.jsonl"),
+    ("release_", "release_fresh.jsonl"),
+])
+def test_a_fresh_label_still_records_without_the_flag(tmp_path, monkeypatch,
+                                                     prefix, name):
+    """Backward compatibility: the guard only ever fires on an existing path."""
+    monkeypatch.setattr(ev, "EVAL_DIR", tmp_path)
+    out = ev.record(ANCHOR, "fresh", prefix=prefix)
+    assert out.name == name
+    assert json.loads(out.read_text(encoding="utf-8"))["id"] == "a"
+
+
+def test_record_creates_the_eval_dir_when_it_is_missing(tmp_path, monkeypatch):
+    """The existence check must not be what makes a first-ever run fail."""
+    monkeypatch.setattr(ev, "EVAL_DIR", tmp_path / "eval")
+    assert ev.record(ANCHOR, "first").exists()
+
+
+def test_record_path_agrees_with_where_record_writes(tmp_path, monkeypatch):
+    """One target computation, so the pre-flight cannot check a different
+    file from the one the run would later write."""
+    monkeypatch.setattr(ev, "EVAL_DIR", tmp_path)
+    assert ev.record_path("x", "release_") == ev.record(ANCHOR, "x", "release_")
+
+
+def test_cli_refuses_the_clobber_before_spending_the_run(tmp_path, monkeypatch):
+    """The refusal has to land BEFORE the model calls: refusing only at write
+    time would burn 66 answers and then throw them away."""
+    monkeypatch.setattr(ev, "EVAL_DIR", tmp_path)
+    (tmp_path / "release_release-1.jsonl").write_text("anchor\n", encoding="utf-8")
+    ran = []
+    monkeypatch.setattr(ev, "run_eval", lambda *a, **kw: ran.append(1) or [])
+
+    with pytest.raises(SystemExit) as e:
+        ev.main(["--release", "--record", "release-1"])
+
+    assert "refusing to overwrite" in str(e.value)
+    assert not ran, "the run must not start when its recording is doomed"
+    assert (tmp_path / "release_release-1.jsonl").read_text(encoding="utf-8") \
+        == "anchor\n"
+
+
+def test_cli_force_record_overwrites(tmp_path, monkeypatch, capsys):
+    monkeypatch.setattr(ev, "EVAL_DIR", tmp_path)
+    target = tmp_path / "release_release-1.jsonl"
+    target.write_text("anchor\n", encoding="utf-8")
+    monkeypatch.setattr(ev, "run_eval", lambda *a, **kw: list(LATER))
+
+    assert ev.main(["--release", "--record", "release-1", "--force-record"]) == 0
+    assert json.loads(target.read_text(encoding="utf-8"))["score"] == 0.0
+    assert "recorded ->" in capsys.readouterr().out
+
+
+def test_cli_records_a_fresh_label_with_no_flag(tmp_path, monkeypatch):
+    monkeypatch.setattr(ev, "EVAL_DIR", tmp_path)
+    monkeypatch.setattr(ev, "run_eval", lambda *a, **kw: list(ANCHOR))
+    assert ev.main(["--answers", "--record", "brand-new"]) == 0
+    assert (tmp_path / "answers_baseline_brand-new.jsonl").exists()
