@@ -99,15 +99,15 @@ footer{margin-top:4.5rem;padding-top:1.5rem;border-top:1px solid var(--rule-stro
   <h1>GCF Q&amp;A Build Report</h1>
   <p class="lede">How a directory of 46 loose files, six forked apps, and a crashing extraction script became a grounded question-answering system over 41,550 pages of Green Climate Fund proposals — with page-cited answers, highlighted evidence images, and per-document comparative retrieval. Every number in this report was measured, not estimated.</p>
   <div class="byline">
-    <span><b>Period</b> 14–17 Aug 2026</span>
+    <span><b>Period</b> 14–21 Aug 2026</span>
     <span><b>Corpus</b> 273 PDFs · 41,550 pages</span>
-    <span><b>Result</b> 30 commits · 6 branches · 1,951 lines of package code</span>
+    <span><b>Result</b> 83 commits · 498 tests · live at fp-gcf.ssa.tg</span>
   </div>
   <div class="metrics">
-    <div class="metric"><span class="k">Index</span><span class="v">186,802</span><span class="n">page-aware chunks, GPU-embedded in 11 min</span></div>
-    <div class="metric"><span class="k">Page geometry</span><span class="v">41,500</span><span class="n">boxes sidecars — text lines, tables, figures</span></div>
-    <div class="metric"><span class="k">Grounding</span><span class="v">0.96–1.0</span><span class="n">confidence on prose passages, measured live</span></div>
-    <div class="metric"><span class="k">Defects fixed</span><span class="v">13<em>+</em></span><span class="n">incl. 2 that hung runs and 5 leaked API keys</span></div>
+    <div class="metric"><span class="k">Answer recall@5</span><span class="v">96%</span><span class="n">on 62 labelled answer-level cases (was 88%)</span></div>
+    <div class="metric"><span class="k">Evidence-page hit</span><span class="v">94%</span><span class="n">the cited page is a labelled evidence page (was 81%)</span></div>
+    <div class="metric"><span class="k">Gold retrieval</span><span class="v">100%</span><span class="n">recall@5, MRR 1.00 — held through every change</span></div>
+    <div class="metric"><span class="k">Verifier precision</span><span class="v">0 <em>FP</em></span><span class="n">false positives on 24 recorded answers (4/4 real failures caught)</span></div>
   </div>
 </header>
 
@@ -359,6 +359,83 @@ footer{margin-top:4.5rem;padding-top:1.5rem;border-top:1px solid var(--rule-stro
 <!-- ================================================================ -->
 <section>
   <div class="sec-head">
+    <p class="eyebrow">The correctness program</p>
+    <h2>From document recall to verified answers</h2>
+    <p>With retrieval at 100% document recall, the failures moved up a level: right document, wrong page; right figures, wrong units; internally contradictory sources answered with false confidence. A six-step plan (docs/rag-correctness-next-steps.html) rebuilt the answer path — implemented by nine parallel Opus agent workstreams in three waves, each wave adversarially reviewed <em>before</em> it was committed.</p>
+  </div>
+  <figure class="card">
+    <svg viewBox="0 0 900 330" role="img" aria-label="The answer pipeline after the correctness program: a question either builds a deterministic evidence matrix (planner switch) or goes through the LLM conductor; guards resolve document tags through the registry; section-aware hybrid retrieval feeds an answer call that receives no conversation history; a claim verifier checks the answer against the evidence before sources are shown.">
+      <defs><marker id="ca" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="currentColor"/></marker></defs>
+      <g fill="none" stroke="currentColor" stroke-width="1.3" font-family="ui-monospace,monospace" font-size="11.5">
+        <rect x="14" y="120" width="104" height="52" rx="6"/>
+        <text x="66" y="142" stroke="none" fill="currentColor" text-anchor="middle">question</text>
+        <text x="66" y="158" stroke="none" fill="currentColor" text-anchor="middle" opacity=".65">EN / FR</text>
+        <!-- planner branch -->
+        <line x1="118" y1="134" x2="168" y2="86" marker-end="url(#ca)"/>
+        <text x="128" y="98" stroke="none" fill="currentColor" font-size="10">≥2 ids + intent</text>
+        <rect x="168" y="52" width="176" height="56" rx="6"/>
+        <text x="256" y="74" stroke="none" fill="currentColor" text-anchor="middle">planner · PLANNER=1</text>
+        <text x="256" y="91" stroke="none" fill="currentColor" text-anchor="middle" opacity=".65">evidence matrix from registry v2</text>
+        <!-- conductor branch -->
+        <line x1="118" y1="158" x2="168" y2="206" marker-end="url(#ca)"/>
+        <text x="126" y="200" stroke="none" fill="currentColor" font-size="10">otherwise</text>
+        <rect x="168" y="188" width="176" height="56" rx="6"/>
+        <text x="256" y="210" stroke="none" fill="currentColor" text-anchor="middle">conductor (gpt-5.2)</text>
+        <text x="256" y="227" stroke="none" fill="currentColor" text-anchor="middle" opacity=".65">mode + EN sub-queries</text>
+        <!-- guards -->
+        <line x1="344" y1="216" x2="392" y2="216" marker-end="url(#ca)"/>
+        <rect x="392" y="188" width="150" height="56" rx="6"/>
+        <text x="467" y="210" stroke="none" fill="currentColor" text-anchor="middle">tag guards</text>
+        <text x="467" y="227" stroke="none" fill="currentColor" text-anchor="middle" opacity=".65">pre-scope · registry-resolve</text>
+        <!-- retrieval -->
+        <line x1="542" y1="216" x2="590" y2="176" marker-end="url(#ca)"/>
+        <line x1="344" y1="80" x2="590" y2="148" marker-end="url(#ca)"/>
+        <text x="470" y="118" stroke="none" fill="currentColor" font-size="10">scoped EN field queries</text>
+        <rect x="590" y="140" width="160" height="56" rx="6"/>
+        <text x="670" y="162" stroke="none" fill="currentColor" text-anchor="middle">hybrid retrieval</text>
+        <text x="670" y="179" stroke="none" fill="currentColor" text-anchor="middle" opacity=".65">section-aware · 65 ms</text>
+        <!-- answer -->
+        <line x1="670" y1="196" x2="670" y2="234" marker-end="url(#ca)"/>
+        <rect x="590" y="234" width="160" height="56" rx="6"/>
+        <text x="670" y="256" stroke="none" fill="currentColor" text-anchor="middle">answer call</text>
+        <text x="670" y="273" stroke="none" fill="currentColor" text-anchor="middle" opacity=".65">[system, user] — no history</text>
+        <!-- verifier -->
+        <line x1="750" y1="262" x2="788" y2="262" marker-end="url(#ca)"/>
+        <rect x="788" y="234" width="100" height="56" rx="6" stroke-width="2"/>
+        <text x="838" y="256" stroke="none" fill="currentColor" text-anchor="middle">verifier</text>
+        <text x="838" y="273" stroke="none" fill="currentColor" text-anchor="middle" opacity=".65">VERIFY=1</text>
+        <text x="838" y="310" stroke="none" fill="currentColor" text-anchor="middle" font-size="10">claims → verdicts → gated repair</text>
+        <!-- matrix into context -->
+        <text x="452" y="34" stroke="none" fill="currentColor" font-size="10.5" opacity=".7">matrix rows carry raw value · currency · page · stated/conflicting/missing — cross-currency ranking refused</text>
+      </g>
+    </svg>
+    <figcaption>The answer path after plan steps 1–5. Both new layers ship behind independent switches: the planner replaces the conductor only for multi-identifier comparison questions; the verifier re-checks every factual claim against the retrieved evidence after the stream finishes. The factual answer call receives no conversation history — resolved references arrive as a registry-built note, so stale figures from earlier turns can no longer masquerade as evidence.</figcaption>
+  </figure>
+
+  <div class="scroll">
+    <table>
+      <thead><tr><th>Release gate (from the plan)</th><th>Before</th><th>Now</th></tr></thead>
+      <tbody>
+        <tr><td>Document recall@5 (30-question gold set)</td><td class="num">100%</td><td class="num">100% — never regressed</td></tr>
+        <tr><td>Answer-level recall@5 (62 labelled cases)</td><td class="num">88%</td><td class="num"><strong>96%</strong></td></tr>
+        <tr><td>Evidence-page hit</td><td class="num">not measured</td><td class="num"><strong>94%</strong> (baseline froze it at 81%)</td></tr>
+        <tr><td>Identifier conflict detection</td><td class="num">—</td><td class="num">210 real in-document conflicts exposed with pages</td></tr>
+        <tr><td>Citation precision (recorded sample)</td><td class="num">page presence only</td><td class="num"><strong>100%</strong>; verifier: 0 false positives on 24 answers</td></tr>
+        <tr><td>Retrieval latency</td><td class="num">139 ms</td><td class="num"><strong>65 ms</strong> (FAISS ID-selector scoped search)</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="prose" style="margin-top:1.6rem">
+    <p><strong>The registry became provenance-aware.</strong> Every canonical field now carries its raw source text, normalized value, currency, page, and section — 3,785 candidates across 273 documents, parsed deterministically from the template headings in 18 seconds, every raw string verified as a literal substring of its cited page. The corpus turned out to disagree with itself constantly: <strong>120 documents carry at least one genuine internal financing conflict</strong> (FP274 prints three different GCF figures on pages 7, 8 and 40). The system now surfaces these with page citations instead of picking one silently.</p>
+    <p><strong>Each wave was reviewed before it was committed — and every review caught something the tests could not.</strong> Wave 1's reviewer found a stale duplicate of the identifier regex that would have hard-scoped year-like tokens to wrong documents, and year notes claiming contiguous FP ranges that were false for 4 of 11 years. Wave 2's found the pre-scoping guard starving pronoun comparisons. Wave 3's replayed 24 recorded production answers through the new verifier and measured an 18% false-positive rate — driven by citation style, not wrong answers — which would have made the repair pass <em>rewrite correct answers</em>. All fixed and re-measured (0 false positives) before the switch was allowed to exist.</p>
+    <p><strong>What is live today:</strong> everything measured — pre-scoping, history isolation, section-aware retrieval with the mention-magnet fix, the healed registries — plus <code>PLANNER=1</code> (deterministic evidence matrices) and <code>VERIFY=1</code> in observation mode: warnings render, but answer rewrites stay off (<code>VERIFY_REPAIR=0</code>) until a period of live traffic confirms the false-positive rate holds at zero outside the fixture set.</p>
+  </div>
+</section>
+
+<!-- ================================================================ -->
+<section>
+  <div class="sec-head">
     <p class="eyebrow">Verification</p>
     <h2>What "verified" meant here</h2>
   </div>
@@ -377,7 +454,7 @@ footer{margin-top:4.5rem;padding-top:1.5rem;border-top:1px solid var(--rule-stro
     <table>
       <thead><tr><th>Branch</th><th>Contents</th><th>State</th></tr></thead>
       <tbody>
-        <tr><td class="num">main</td><td>everything below, merged; 30 commits</td><td>ready to push (force-with-lease replaces the leaked-key history)</td></tr>
+        <tr><td class="num">main</td><td>everything below plus the correctness program, merged; 83 commits</td><td>ready to push (force-with-lease replaces the leaked-key history)</td></tr>
         <tr><td class="num">re-architecture</td><td>package layout, secrets scrub, baseline</td><td>merged</td></tr>
         <tr><td class="num">feature/citation-grounding</td><td>boxes sidecars, page-aware chunks, ground_chunk</td><td>merged</td></tr>
         <tr><td class="num">feature/grounded-viewer</td><td>highlight viewer, OpenAI backend, condensation, preload</td><td>merged</td></tr>
@@ -387,13 +464,14 @@ footer{margin-top:4.5rem;padding-top:1.5rem;border-top:1px solid var(--rule-stro
     </table>
   </div>
   <div class="prose" style="margin-top:1.4rem">
-    <p><strong>Open items, in priority order:</strong> revoke the five leaked keys (the old history is public until then); push all branches (credentials exist only on the owner's side); extract the three remaining model corpora (<code>make extract</code> resumes them; each index is then an 11-minute GPU job); and — per the owner's roadmap — the <strong>metadata registry</strong>, which lets decomposition resolve "the Chad proposal" without prior citation and answers aggregation queries ("which proposals target West Africa") from structured data; then hybrid BM25+dense retrieval with reranking as the next quality floor.</p>
+    <p><strong>Since the first edition of this report,</strong> the roadmap items shipped: hybrid BM25+dense retrieval (identifier recall 6%→100%), the metadata registry (now provenance-aware, v2), query decomposition with a conductor, conversation threads with self-registration, the gpt-5.2 backend, and the full correctness program above — 53 further commits, all on <code>main</code>.</p>
+    <p><strong>Open items, in priority order:</strong> revoke the five leaked keys (the old history is public until then); push all branches (credentials exist only on the owner's side); flip <code>VERIFY_REPAIR=1</code> after live traffic confirms zero verifier false positives; re-extract line geometry for the 205 rotated pages (the runaway-height guard truncates line <em>length</em> there — positions are correct, boxes are short); A/B the sectioned <code>v2</code> index against a multilingual embedder now that page-level labels exist; and extract the three remaining model corpora (<code>make extract</code> resumes them).</p>
   </div>
 </section>
 
 <footer>
-  <div>GCF Q&amp;A · 273 PDFs · 41,550 pages · 186,802 chunks · repository: final_project_qna (branch main @ bc855cc)</div>
-  <div>All measurements taken 14–17 Aug 2026 on the build machine (RTX 4080 SUPER, WSL2) against live services. Related reports: docs/query-decomposition.html · docs/rag-approaches-evaluation.html · docs/hybrid-retrieval-plan.html</div>
+  <div>GCF Q&amp;A · 273 PDFs · 41,550 pages · 175,225 chunks (deduplicated; sectioned v2 index staged) · repository: final_project_qna (branch main @ db2e250) · live at fp-gcf.ssa.tg</div>
+  <div>All measurements taken 14–21 Aug 2026 on the build machine (RTX 4080 SUPER, WSL2) and the production server, against live services. Related reports: docs/query-decomposition.html · docs/rag-approaches-evaluation.html · docs/hybrid-retrieval-plan.html · docs/rag-correctness-next-steps.html</div>
 </footer>
 
 </div>
