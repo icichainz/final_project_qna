@@ -445,10 +445,11 @@ Q152 = "Which accredited entity implements FP152?"
 
 
 def test_plan_flows_through_the_app_guards_unchanged_by_default():
-    """Production shape: the conductor emits no doc tag for a cold
-    single-topic question, and neither guard may invent one."""
+    """Production shape since step 1: a cold single-FP question is
+    pre-scoped by _rescope_items and resolved to the authoritative stem
+    (B.27 filenames carry no FP number, so the registry does the mapping)."""
     items = ev.Pipeline.plan(_plan_pipe(), Q152)
-    assert items == [{"q": Q152, "doc": None}]
+    assert items == [{"q": Q152, "doc": "123_gcf-b27-02-add12"}]
 
 
 def test_plan_scoped_tag_is_registry_resolved():

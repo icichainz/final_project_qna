@@ -22,10 +22,12 @@ from chainlit.types import ThreadDict
 from gcf_qna import config
 from gcf_qna.boards import BOARD_YEARS, board_of, year_of
 from gcf_qna.rag import registry
-# ONE definition of the FP-token pattern, shared with the registry: a second
-# copy here drifted (it lacked the trailing boundary and the zero-strip) and
-# resolved 'fp2023' to FP202's document.
-from gcf_qna.rag.registry import _FP_RE
+# ONE definition of the identifier patterns, shared with the registry: a second
+# copy of the FP one here drifted (it lacked the trailing boundary and the
+# zero-strip) and resolved 'fp2023' to FP202's document. _FP_RE stays as the
+# module-local name every call site (and test) already uses.
+from gcf_qna.rag.registry import FP_RE as _FP_RE
+from gcf_qna.rag.registry import _BOARD_CODE_RE
 from gcf_qna.app.highlight import annotated_page
 from gcf_qna.rag import Embedder, Retriever, load_index
 from gcf_qna.rag.ground import ground_chunk
@@ -362,6 +364,58 @@ def _with_ids(query: str, fps: list) -> str:
     return (query + " " + " ".join(add)).strip() if add else query
 
 
+def _prescope_single_fp(items: list, msg_text: str) -> list:
+    """Doc-scope a lone sub-query whose message names exactly ONE FP number.
+
+    The conductor emits no doc tag for a cold single-topic question
+    (CONDUCTOR_PROMPT rules 1 and 4), so 'What is FP152's GCF financing?' ran
+    as an unscoped semantic query and drew its evidence pages from
+    neighbouring B.27 documents. The FP number the user typed is a
+    deterministic filter, and every piece of machinery to honour it already
+    exists: _rescope_items keeps a tag the message itself names, and
+    _resolve_doc_tags maps the plain 'fpNNN' token onto the authoritative
+    stem (B.27 filenames carry no FP number). Measured over the 66-case
+    answer set this recovers EVERY retrieval miss the unscoped baseline had —
+    r@5 88% -> 96%, evidence-page hit 81% -> 94%, no regressions
+    (data/eval/answers_baseline_retrieval-scoped-ab.jsonl).
+
+    The conditions are narrow on purpose; each one is a way to scope wrongly:
+
+    * exactly one FP in the message — several means a comparison, which the
+      per-document fan-out already scopes one document at a time;
+    * exactly one search query — a fan-out's other legs are about something
+      else ('typical adaptation projects'), and pinning them to the single FP
+      named would answer them from the wrong document;
+    * no board code in the message — 'Are FP218 and GCF/B.42/02/Add.16 the
+      same?' names two documents, only one of them as an FP token;
+    * the item carries no tag of its own — the conductor's tag, and the
+      guards' verdict on it, always win;
+    * the FP resolves in the registry — an id that exists nowhere (fp999)
+      stays untagged, so the weak-signal path still fires on it instead of a
+      hard filter that matches nothing.
+    """
+    if len(items) != 1 or items[0].get("doc"):
+        return items
+    ids = set(_FP_RE.findall((msg_text or "").lower()))
+    if len(ids) != 1 or _BOARD_CODE_RE.search(msg_text or ""):
+        return items
+    # A rule-4 conductor rewrite may resolve a pronoun into a SECOND id the
+    # message never typed ('compare to it' -> 'FP214 ... compared with FP274').
+    # Hard-scoping that query to the message's lone FP starves the partner
+    # document, so bail whenever the sub-query names ids beyond the message's.
+    q_ids = set(_FP_RE.findall((items[0].get("q") or "").lower()))
+    if not q_ids <= ids:
+        return items
+    try:
+        resolved, missing = registry.resolve_fps(msg_text or "")
+    except Exception:
+        return items                 # registry unavailable: leave it unscoped
+    if missing or len(resolved) != 1:
+        return items
+    items[0]["doc"] = "fp" + next(iter(ids))
+    return items
+
+
 def _rescope_items(items: list, msg_text: str, history_docs: list) -> list:
     """Deterministic guards against decomposer rewrite contamination.
 
@@ -392,7 +446,12 @@ def _rescope_items(items: list, msg_text: str, history_docs: list) -> list:
     "compare those two" case arrives here with history-derived tags by
     design), though fabricated tags are still repaired; a lone query still
     keeps a tag only if the message names that document.
+
+    An untagged lone query whose message names exactly one FP is scoped to it
+    first (_prescope_single_fp); everything below then treats that tag like
+    any other tag the message names.
     """
+    items = _prescope_single_fp(items, msg_text)
     msg_l = (msg_text or "").lower()
     msg_ids = set(_FP_RE.findall(msg_l))
     hist = [d for d in (history_docs or []) if d]
@@ -470,6 +529,74 @@ def _resolve_doc_tags(items: list) -> list:
         if item.get("doc"):
             item["doc"] = _registry_doc(str(item["doc"]))
     return items
+
+
+def _resolved_refs_note(items: list, msg_text: str):
+    """The short 'this question refers to: FP274 = 02_gcf-b42-…' line, or None.
+
+    The factual answer call no longer sees the conversation (see
+    _answer_messages), so a follow-up's referents have to reach it some other
+    way. They reach it as IDENTIFIERS, never as prose: every entry comes from
+    a doc tag that survived the guards (the conductor's resolution of 'it' /
+    'those', already checked against the ids actually cited and the registry)
+    or from an FP number in the user's own message, mapped through the
+    registry. Nothing here is read out of an earlier answer's text — that
+    text, with its figures, is precisely the pseudo-evidence this step
+    removes.
+
+    Deterministic and short by construction: tag order, then message order,
+    capped at four documents.
+    """
+    docs = []
+    for item in items or []:
+        tag = str(item.get("doc") or "")
+        if tag and tag not in docs:
+            docs.append(tag)
+    try:
+        for row in registry.resolve_fps(msg_text or "")[0]:
+            if row["doc_id"] not in docs:
+                docs.append(row["doc_id"])
+    except Exception:
+        pass                    # registry is an enhancement, never a blocker
+    refs = []
+    for doc in docs[:4]:
+        try:
+            fp = (registry.load().get(doc) or {}).get("fp")
+        except Exception:
+            fp = None
+        fp = fp or _fp_of(doc)
+        label = f"FP{fp}" if fp else ""
+        # a bare 'fp152' tag (registry unavailable) is its own label
+        refs.append(f"{label} = {doc}" if label and label.lower() != doc.lower()
+                    else (label or doc))
+    if not refs:
+        return None
+    return ("This question refers to: " + "; ".join(refs)
+            + ". (Identifiers resolved by the system; the excerpts below are "
+              "the only evidence.)")
+
+
+def _answer_messages(system_prompt: str, context: str, question: str,
+                     refs_note: str = None) -> list:
+    """The factual answer call's messages array: system + ONE user turn.
+
+    Prior turns are deliberately absent. They used to be prepended as
+    conversation, and the model read old ANSWERS as evidence — a figure
+    stated three turns ago outranked the excerpts retrieved for the question
+    actually asked, so the same fully specified question was answered
+    differently depending on what preceded it (the plan's FP220-after-
+    FP254/FP248 regression). The conductor still receives the whole
+    conversation, because resolving 'it' / 'those' is its job; what it
+    resolves arrives here as ids in `refs_note`, not as text to quote.
+
+    Chat-mode turns are the exception and keep their history: continuity IS
+    the answer there, and no excerpt is in play.
+    """
+    user = f"Context excerpts:\n{context}\n\nQuestion: {question}"
+    if refs_note:
+        user = f"{refs_note}\n\n{user}"
+    return [{"role": "system", "content": system_prompt},
+            {"role": "user", "content": user}]
 
 
 def _index_dir():
@@ -712,7 +839,10 @@ async def main(message: cl.Message):
 
     if mode == "chat":
         # conversational/meta turn: answer from history, no retrieval,
-        # no sources, no evidence images
+        # no sources, no evidence images. FULL history on purpose — the
+        # evidence isolation below applies to factual turns, where old
+        # answers become pseudo-evidence; here the conversation IS the
+        # subject ('what did you just say?').
         reply = cl.Message(content="")
         stream = await client.chat.completions.create(
             model=config.CHAT_MODEL,
@@ -751,6 +881,11 @@ async def main(message: cl.Message):
     except Exception:
         pass
 
+    # Single-FP pre-scoping, on the unconditional path so it also covers the
+    # conductor-off and conductor-failed fallbacks, where the raw message is
+    # the only query and _rescope_items never ran. Already-tagged items are
+    # untouched, so running it twice on the conductor path is a no-op.
+    search_queries = _prescope_single_fp(search_queries, message.content)
     # Doc tags become retrieval filters here: resolve each one to its
     # authoritative corpus stem first, since B.27-era ids contain no FP
     # number and a bare 'fp152' filter would match nothing (_registry_doc).
@@ -810,16 +945,16 @@ async def main(message: cl.Message):
     system_prompt = assemble(year=bool(year_note), registry=bool(reg_note),
                              comparison=decomposed,
                              lang=_detect_lang(message.content))
-    messages = history + [{
-        "role": "user",
-        "content": f"Context excerpts:\n{context}\n\nQuestion: {message.content}",
-    }]
+    # Evidence isolation (plan step 1): this call gets the question, the
+    # resolved-reference ids and THIS turn's excerpts — never prior answers.
+    messages = _answer_messages(system_prompt, context, message.content,
+                                _resolved_refs_note(search_queries, message.content))
 
     reply = cl.Message(content="")
     stream = await client.chat.completions.create(
         model=config.CHAT_MODEL,
         max_completion_tokens=config.MAX_ANSWER_TOKENS,
-        messages=[{"role": "system", "content": system_prompt}] + messages,
+        messages=messages,
         stream=True,
     )
     async for part in stream:
