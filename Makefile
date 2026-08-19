@@ -108,7 +108,11 @@ IMAGE ?= fp-gcf
 # name. Meaningful only because push refuses a dirty tree: HEAD is the code.
 # --short=7 matches docker-compose.yaml's `image: fp-gcf:${GIT_SHA:-latest}`
 # and the sha column of docs/DEPLOYED.md — keep the three in step.
-GIT_SHA ?= $(shell git rev-parse --short=7 HEAD 2>/dev/null || echo untagged)
+# `:=`, not `?=`: an exported GIT_SHA from the surrounding shell would otherwise
+# name the image production runs and the tag rollback goes back to — the same
+# environment footgun already fixed for NAME above, on the one variable that
+# labels what is live. Override deliberately with `make deploy GIT_SHA=...`.
+GIT_SHA := $(shell git rev-parse --short=7 HEAD 2>/dev/null || echo untagged)
 
 # What ships: code + the data the app reads (index, raw pdfs for fingerprint
 # lookup, page cache with geometry) + .env, which is how the operator flips
@@ -207,7 +211,7 @@ push: _check-clean-tree _check-repair-flag ## rsync code + serving data to the r
 # whichever way the compose file spells its image. That is what leaves rollback
 # something to go back to.
 deploy: push         ## push, rebuild the image on the server, tag it with the git SHA, start the stack
-	ssh $(REMOTE_USER)@$(REMOTE_HOST) 'cd $(REMOTE_DIR) && \
+	ssh $(REMOTE_USER)@$(REMOTE_HOST) 'set -e; cd $(REMOTE_DIR) && \
 	  export GIT_SHA=$(GIT_SHA) && \
 	  mkdir -p data public/app_files hf_cache && \
 	  chown -R 999:999 data public/app_files hf_cache && \
