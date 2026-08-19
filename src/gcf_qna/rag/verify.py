@@ -236,7 +236,12 @@ def amount_matches(a: Amount, b: Amount) -> bool:
         tol = max(a.grain, b.grain) * 0.5 + 1e-6
         return abs(a.value - b.value) <= tol
     # at least one figure's scale is self-contradictory: the mantissa is still
-    # comparable, and '28,654 million' vs '26,654 million' still disagree
+    # comparable only under a compatible printed scale.  Otherwise a rejected
+    # '20 billion' value would alias '20 million' merely because both have the
+    # same mantissa.
+    if a.unit and b.unit and a.unit != b.unit:
+        return False
+    # '28,654 million' vs '26,654 million' still disagree.
     tol = max(granularity(a.raw, 1.0), granularity(b.raw, 1.0)) * 0.5 + 1e-6
     return abs(a.bare - b.bare) <= tol
 
@@ -414,6 +419,10 @@ _EXISTENCE_RE = re.compile(
     r"\b(?:there (?:is|are|were|was)|the corpus (?:contains|holds|has)|"
     r"exists?|does not exist|n'existe pas|le corpus (?:contient|compte)|"
     r"no (?:funding )?proposals?|aucune? proposition)\b", re.I)
+_NEG_EXISTENCE_RE = re.compile(
+    r"\b(?:does not exist|do not exist|is not found|are not found|not found|"
+    r"n'existe pas|n'existent pas|no (?:registered |funding )?proposals?|"
+    r"aucune? proposition)\b", re.I)
 
 _ENT_STOP = {
     "gcf", "green climate fund", "fund", "registry", "registre", "annex",
@@ -502,6 +511,61 @@ def _entity_variants(cand: str) -> List[str]:
     if len(words) > 8:
         out.append(" ".join(words[:8]))
     return [v for v in dict.fromkeys(out) if v]
+
+
+_EXPLICIT_ALIAS_RE = re.compile(
+    r"(?P<long>[A-ZÀ-ÖØ-Þ][^()\n;|]{2,120}?)\s*"
+    r"\((?P<short>[A-Z][A-Z0-9&.\-]{1,9})\)")
+_ALIAS_LEAD_RE = re.compile(
+    r"^(?:the\s+)?(?:accredited|implementing)\s+entity\s*(?:is|:)?\s*", re.I)
+
+
+def _explicit_aliases(text: str) -> List[Tuple[str, str]]:
+    """Alias pairs the source itself prints as ``Full Name (ACRONYM)``.
+
+    Initials are never manufactured from words.  A claimed expansion is an
+    assertion to verify, not an alias authority; callers pass evidence or a
+    registry row here, never the answer text.
+    """
+    out: List[Tuple[str, str]] = []
+    for m in _EXPLICIT_ALIAS_RE.finditer(text or ""):
+        long = _ALIAS_LEAD_RE.sub("", m.group("long").strip(" .,:—-"))
+        pair = (norm_text(long), norm_text(m.group("short")))
+        if len(pair[0].split()) >= 2 and pair[1] and pair not in out:
+            out.append(pair)
+    return out
+
+
+def _claimed_alias(variants: Sequence[str]) -> Optional[Tuple[str, str]]:
+    """The long/short pair asserted by one extracted parenthetical entity."""
+    if not variants:
+        return None
+    m = re.match(r"^(.*?)\s*\(([A-Z][A-Z0-9&.\-]{1,9})\)\s*$",
+                 variants[0].strip())
+    if not m:
+        return None
+    return norm_text(m.group(1)), norm_text(m.group(2))
+
+
+def _contains_norm(hay: str, needle: str) -> bool:
+    return bool(needle) and f" {needle} " in f" {hay} "
+
+
+def _entity_present(variants: Sequence[str], text: str) -> bool:
+    """Whether one entity is printed or has a source-established alias.
+
+    For ``Invented Expansion (IUCN)``, seeing only ``IUCN`` is insufficient.
+    The full pair must be printed in the evidence/registry.  Plain acronym or
+    full-name claims still match their literal occurrence.
+    """
+    hay = norm_text(text)
+    asserted = _claimed_alias(variants)
+    if asserted:
+        whole = norm_text(variants[0])
+        if _contains_norm(hay, whole):
+            return True
+        return asserted in _explicit_aliases(text)
+    return any(_contains_norm(hay, norm_text(v)) for v in variants)
 
 
 def _entity_core(cand: str) -> str:
@@ -752,6 +816,11 @@ def claim_kind(text: str) -> Optional[str]:
         return "money"
     if _COUNT_RE.search(body) or _BIGNUM_RE.search(body):
         return "number"
+    # Closed-world negatives must win over board/year and proper-name
+    # triggers: "GCF/B.42/02/Add.99 does not exist" is an existence claim,
+    # not a claim that the evidence merely mentions board B.42.
+    if _NEG_EXISTENCE_RE.search(body):
+        return "existence"
     if entities(body):
         return "entity"
     if _YEAR_RE.search(body) or _BOARD_RE.search(body):
@@ -985,6 +1054,67 @@ def _money_like(a: Amount) -> bool:
     return bool(a.currency or a.unit or a.clash or (a.value or 0) >= 1e4)
 
 
+def _same_doc(a: str, b: str) -> bool:
+    return a == b or a.startswith(b[:24]) or b.startswith(a[:24])
+
+
+def _citation_context(claim: Claim, doc_id: str) -> str:
+    """Answer text whose nearest citation names ``doc_id``.
+
+    With one cited document, the whole atomic claim is its context.  With
+    several documents, each pre-citation clause belongs only to the document
+    named by that citation.  A chained multi-document bracket is deliberately
+    treated as ambiguous rather than allowing cross-document fact leakage.
+    """
+    direct_docs = list(dict.fromkeys(c.doc for c in claim.citations if c.doc))
+    if not any(_same_doc(d, doc_id) for d in direct_docs):
+        return ""
+    if all(_same_doc(d, doc_id) for d in direct_docs):
+        return _strip_citations(claim.text)
+
+    chunks: List[str] = []
+    previous = 0
+    for bracket in _BRACKET_RE.finditer(claim.text):
+        cited = list(dict.fromkeys(c.doc for c in parse_citations(bracket.group(0))
+                                   if c.doc))
+        if len(cited) == 1 and _same_doc(cited[0], doc_id):
+            chunks.append(claim.text[previous:bracket.start()])
+        previous = bracket.end()
+    return "\n".join(chunks)
+
+
+def _field_context_amounts(text: str, field: str) -> List[Amount]:
+    """Amounts attached to ``field`` when a claim names several fields."""
+    body = _strip_citations(text)
+    labels: List[Tuple[int, int, str]] = []
+    for name, rx in _FIELD_RES:
+        labels += [(m.start(), m.end(), name) for m in rx.finditer(body)]
+    labels.sort()
+    if not labels or all(name == field for _, _, name in labels):
+        return amounts(body)
+
+    selected: List[Amount] = []
+    for i, (start, _, name) in enumerate(labels):
+        if name != field:
+            continue
+        end = labels[i + 1][0] if i + 1 < len(labels) else len(body)
+        selected += amounts(body[start:end])
+    return selected
+
+
+def _claim_for_doc(claim: Claim, doc_id: str) -> Claim:
+    """A claim view limited to the facts locally attributed to one document."""
+    context = _citation_context(claim, doc_id)
+    field = claim_field(claim.text)
+    local_amounts = (_field_context_amounts(context, field) if field else amounts(context))
+    return Claim(text=context, kind=claim.kind,
+                 citations=[c for c in claim.citations
+                            if c.doc and _same_doc(c.doc, doc_id)],
+                 amounts=local_amounts, entities=entities(context),
+                 index=claim.index, unit_kind=claim.unit_kind,
+                 inherited=claim.inherited)
+
+
 def _field_conflict(claim: Claim, text: str) -> Optional[Tuple[Amount, str]]:
     """A figure printed under the claim's own field label that disagrees.
 
@@ -996,17 +1126,37 @@ def _field_conflict(claim: Claim, text: str) -> Optional[Tuple[Amount, str]]:
     field = claim_field(claim.text)
     if not field or not claim.amounts:
         return None
+    stated_amounts = _field_context_amounts(claim.text, field)
+    if not stated_amounts:
+        return None
     rx = dict(_FIELD_RES)[field]
     lines = list(_field_lines(text, rx))
     for line, at in lines:
         for cand in _value_after(line, at)[:2]:
-            if any(amount_matches(cand, a) for a in claim.amounts):
+            if any(amount_matches(cand, a) for a in stated_amounts):
                 return None                       # the field agrees somewhere
     for line, at in lines:
         for cand in _value_after(line, at)[:1]:
             if _money_like(cand) and not any(amount_matches(cand, a)
-                                             for a in claim.amounts):
+                                             for a in stated_amounts):
                 return cand, line.strip()[:200]
+    return None
+
+
+def _scoped_field_conflict(claim: Claim, evidence: Evidence,
+                           keys: Sequence[EvidenceKey]
+                           ) -> Optional[Tuple[Amount, str]]:
+    """Find a disagreement without combining facts from cited documents."""
+    by_doc: Dict[str, List[EvidenceKey]] = {}
+    for key in keys:
+        by_doc.setdefault(key[0], []).append(key)
+    for doc_id, doc_keys in by_doc.items():
+        local = claim if doc_id == NOTES_DOC else _claim_for_doc(claim, doc_id)
+        if not local.amounts:
+            continue
+        conflict = _field_conflict(local, _text_of(evidence, doc_keys))
+        if conflict:
+            return conflict
     return None
 
 
@@ -1100,11 +1250,11 @@ def registry_named(doc_id: str, names: Sequence[Sequence[str]]) -> Optional[str]
     """
     if not names:
         return None
-    hay = norm_text(_registry_blob(doc_id))
-    if not hay:
+    blob = _registry_blob(doc_id)
+    if not blob:
         return None
     for variants in names:
-        if not any(norm_text(v) and norm_text(v) in hay for v in variants):
+        if not _entity_present(variants, blob):
             return None
     return "registry row for this document names " + ", ".join(
         f"'{vs[0]}'" for vs in names)
@@ -1122,6 +1272,13 @@ def registry_backed(doc_id: str, claim: Claim,
     reject.
     """
     if not want:
+        return None
+    local = _claim_for_doc(claim, doc_id)
+    # When one atomic sentence cites several documents, a registry row may
+    # back only figures actually attributed to this document.  Never let a
+    # coincidentally equal figure from another document satisfy the claim.
+    if any(not any(amount_matches(a, held) for held in local.amounts)
+           for a in want):
         return None
     try:
         from gcf_qna.rag import registry
@@ -1151,10 +1308,9 @@ def registry_backed(doc_id: str, claim: Claim,
 
 def _check_entities(claim: Claim, text: str) -> Tuple[bool, List[List[str]]]:
     """(ok, the variant lists that appear nowhere in this text)."""
-    hay = norm_text(text)
     missing = []
     for variants in claim.entities:
-        if not any(norm_text(v) and norm_text(v) in hay for v in variants):
+        if not _entity_present(variants, text):
             missing.append(variants)
     return (not missing), missing
 
@@ -1165,6 +1321,54 @@ def _check_years(claim: Claim, text: str) -> Tuple[bool, List[str]]:
         {m.group(0) for m in _BOARD_RE.finditer(_strip_citations(claim.text))}
     missing = [w for w in sorted(want) if w.replace(" ", "") not in hay.replace(" ", "")]
     return (not missing), missing
+
+
+_BOARD_EXISTENCE_RE = re.compile(
+    r"gcf\s*/\s*b\.?\s*(\d{2})\s*/\s*(?:(\d{2})\s*/\s*)?"
+    r"add\.?\s*(\d{1,3})", re.I)
+_NOT_FOUND_RE = re.compile(r"\bNOT\s+FOUND\b", re.I)
+_YEAR_ABSENT_RE = re.compile(
+    r"\b(?:no (?:board meeting|registered |funding )?proposals?|"
+    r"zero (?:registered |funding )?proposals?|aucune? proposition)\b", re.I)
+
+
+def _existence_targets(text: str) -> List[Tuple[str, str]]:
+    body = _strip_citations(text)
+    out: List[Tuple[str, str]] = []
+    out += [("fp", f"fp{int(n)}")
+            for n in re.findall(r"\bfp[\s\-]?0*(\d{1,3})(?!\d)", body, re.I)]
+    for board, item, add in _BOARD_EXISTENCE_RE.findall(body):
+        out.append(("board", f"gcf/b.{int(board)}/"
+                    + (f"{int(item):02d}/" if item else "")
+                    + f"add.{int(add):02d}"))
+    if not out:
+        out += [("year", y) for y in _YEAR_RE.findall(body)]
+    return list(dict.fromkeys(out))
+
+
+def _line_targets(line: str) -> List[Tuple[str, str]]:
+    return _existence_targets(line)
+
+
+def _check_existence(claim: Claim, text: str) -> Tuple[bool, List[str]]:
+    """Verify closed-world existence claims against the exact registry row."""
+    targets = _existence_targets(claim.text)
+    if not targets:
+        return False, ["the claimed corpus item"]
+    negative = bool(_NEG_EXISTENCE_RE.search(_strip_citations(claim.text)))
+    missing: List[str] = []
+    lines = (text or "").splitlines()
+    for target in targets:
+        matching = [line for line in lines if target in _line_targets(line)]
+        if negative:
+            supported = any((_NOT_FOUND_RE.search(line) if target[0] != "year"
+                             else _YEAR_ABSENT_RE.search(line))
+                            for line in matching)
+        else:
+            supported = any(not _NOT_FOUND_RE.search(line) for line in matching)
+        if not supported:
+            missing.append(target[1])
+    return not missing, missing
 
 
 def _verify_against(claim: Claim, text: str) -> Tuple[bool, str]:
@@ -1179,7 +1383,7 @@ def _verify_against(claim: Claim, text: str) -> Tuple[bool, str]:
         ok, missing = _check_years(claim, text)
         return ok, ", ".join(missing)
     if claim.kind == "existence":
-        ok, missing = _check_years(claim, text)
+        ok, missing = _check_existence(claim, text)
         return ok, ", ".join(missing)
     # a claim whose trigger left nothing normalizable (a bare number with no
     # unit, say): fall back to the entity check, then give it to the judge
@@ -1213,7 +1417,9 @@ def classify_deterministic(claims: Sequence[Claim], evidence: Evidence,
             found, _ = _verify_against(c, all_text)
             out.append(Verdict(c, UNSUPPORTED, "no citation on a factual claim",
                                [], flags=flags + (["value-present-elsewhere"]
-                                                  if found else []),
+                                                  if found else [])
+                               + (["grounded-without-citation"]
+                                  if found else []),
                                plausible=found))
             continue
         if not strict:
@@ -1226,10 +1432,10 @@ def classify_deterministic(claims: Sequence[Claim], evidence: Evidence,
         strict_text = _text_of(evidence, strict)
         ok, missing = _verify_against(c, strict_text)
         if ok:
-            conflict = _field_conflict(c, strict_text)
+            conflict = _scoped_field_conflict(c, evidence, strict)
             if conflict is None and cross_page_conflicts:
                 others = [k for k in wide if k not in strict]
-                conflict = _field_conflict(c, _text_of(evidence, others))
+                conflict = _scoped_field_conflict(c, evidence, others)
                 if conflict:
                     flags.append("conflict-elsewhere-in-document")
             if conflict:
@@ -1242,7 +1448,8 @@ def classify_deterministic(claims: Sequence[Claim], evidence: Evidence,
             known = None
             if registry_conflicts:
                 for d in dict.fromkeys(k[0] for k in strict + wide if k[0] != NOTES_DOC):
-                    known = registry_conflict(d, c)
+                    local = _claim_for_doc(c, d)
+                    known = registry_conflict(d, local) if local.amounts else None
                     if known:
                         break
             if known:
@@ -1255,7 +1462,7 @@ def classify_deterministic(claims: Sequence[Claim], evidence: Evidence,
                                strict, flags=flags))
             continue
 
-        conflict = _field_conflict(c, strict_text)
+        conflict = _scoped_field_conflict(c, evidence, strict)
         if conflict:
             cand, line = conflict
             out.append(Verdict(c, CONTRADICTED,

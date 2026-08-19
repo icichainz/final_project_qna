@@ -757,6 +757,60 @@ def test_claim_support_sees_the_notes_the_prompt_carried():
     assert without["supported"] == 0 and without["unsupported"] == 1
 
 
+def test_uncited_note_backed_claim_is_grounded_but_citation_incomplete():
+    note = ("Registry - 30 funding-proposal documents from 2020 in the corpus: "
+            "FP151 TA Facility")
+    answer = "The corpus holds 30 funding-proposal documents from 2020."
+    got = ev.score_claims(answer, _hits2(FP151, 5, "unrelated passage"), [note])
+    assert got["claims"] == 1
+    assert got["grounded"] == 1 and got["groundedness_rate"] == 1.0
+    assert got["citation_complete"] == 0
+    assert got["citation_completeness_rate"] == 0.0
+    assert got["citation_supported"] == 0
+    assert got["citation_support_rate"] == 0.0
+    assert got["support_rate"] == 0.0, "the compatibility gate must not forgive it"
+
+
+def test_offline_verifier_default_cannot_use_client_or_repair(monkeypatch):
+    seen = {}
+    result = types.SimpleNamespace(answer="A", status="verified", verdicts=[])
+
+    class Stub:
+        @staticmethod
+        def build_evidence(hits, notes):
+            return {("d", 1): "evidence"}
+
+        @staticmethod
+        def verify_answer(answer, evidence, **kwargs):
+            seen.update(kwargs)
+            return result
+
+    monkeypatch.setattr(ev, "verify", Stub)
+    got, evidence = ev.run_offline_verifier("A", [], client=object())
+    assert got is result and evidence == {("d", 1): "evidence"}
+    assert seen == {"client": None, "use_llm": False, "allow_repair": False}
+
+
+def test_offline_production_verifier_can_opt_into_repair(monkeypatch):
+    seen = {}
+    client = object()
+    result = types.SimpleNamespace(answer="fixed", status="repaired", verdicts=[])
+
+    class Stub:
+        build_evidence = staticmethod(lambda hits, notes: {})
+
+        @staticmethod
+        def verify_answer(answer, evidence, **kwargs):
+            seen.update(kwargs)
+            return result
+
+    monkeypatch.setattr(ev, "verify", Stub)
+    got, _ = ev.run_offline_verifier(
+        "wrong", [], client=client, mode="production", allow_repair=True)
+    assert got is result
+    assert seen == {"client": client, "use_llm": True, "allow_repair": True}
+
+
 # ==========================================================================
 # latency / tokens / cost
 # ==========================================================================
@@ -996,3 +1050,112 @@ def test_cli_records_a_fresh_label_with_no_flag(tmp_path, monkeypatch):
     monkeypatch.setattr(ev, "run_eval", lambda *a, **kw: list(ANCHOR))
     assert ev.main(["--answers", "--record", "brand-new"]) == 0
     assert (tmp_path / "answers_baseline_brand-new.jsonl").exists()
+
+# pipeline parity and verifier no-regression records
+# ==========================================================================
+def test_production_planner_path_builds_matrix_and_scoped_queries(monkeypatch):
+    docs = [types.SimpleNamespace(scope="doc-a", missing=False, label="FP1"),
+            types.SimpleNamespace(scope="doc-b", missing=False, label="FP2")]
+    plan = types.SimpleNamespace(docs=docs)
+    matrix = types.SimpleNamespace(cells=[types.SimpleNamespace(status="stated")])
+    searches = []
+
+    class Retriever:
+        def search_with_confidence(self, query, top_k, doc_filter):
+            searches.append((query, top_k, doc_filter))
+            return _hits2(doc_filter, 5, f"evidence for {doc_filter}"), 0.9
+
+    app = types.SimpleNamespace(
+        _planner_intent=lambda question, candidate: True,
+        _plan_query=lambda candidate, doc: f"{doc.label} financing",
+        _year_assist=lambda question, hits: (hits, None),
+        _board_range_note=lambda question: None,
+        _detect_lang=lambda question: "English",
+        _doc_label=lambda doc, page: f"{doc}, p. {page}",
+        _rescope_items=lambda items, question, cited: items,
+        _resolve_doc_tags=lambda items: items,
+    )
+    pipe = object.__new__(ev.Pipeline)
+    pipe.app = app
+    pipe.retriever = Retriever()
+    pipe.top_k = 10
+    pipe.comparison_proxy = True
+    pipe.raw_retrieval = False
+    pipe.scope_single_id = False
+    pipe.production_planner = True
+    pipe.fp_guard = lambda question: None
+
+    monkeypatch.setattr(ev.planner, "detect", lambda question: plan)
+    monkeypatch.setattr(ev.planner, "build_matrix", lambda candidate, retriever: matrix)
+    monkeypatch.setattr(ev.planner, "render", lambda candidate: "EVIDENCE MATRIX")
+    monkeypatch.setattr(ev.registry, "registry_note", lambda question: None)
+    monkeypatch.setattr(ev, "assemble", lambda **kwargs: kwargs)
+
+    out = pipe.run("Compare FP1 and FP2 financing")
+    assert searches == [("FP1 financing", 5, "doc-a"),
+                        ("FP2 financing", 5, "doc-b")]
+    assert "EVIDENCE MATRIX" in out["user"]
+    parity = out["pipeline_parity"]
+    assert parity["level"] == "partial"
+    assert parity["deterministic_planner"]["used"] is True
+    assert parity["deterministic_planner"]["matrix_in_prompt"] is True
+    assert parity["conductor"] == {"available": False, "used": False}
+    assert parity["retrieval_helpers"]["production_single_id_prescope"] is False
+    assert parity["answer_history_isolation"] is False
+
+
+def test_case_record_keeps_original_and_discloses_followup_limitation(monkeypatch):
+    class Pipe:
+        def run(self, question):
+            return {
+                "guard": True, "guard_answer": "Original answer.", "hits": [],
+                "weak": False, "plan": [], "notes": {},
+                "pipeline_parity": {"level": "partial", "limitations": [],
+                                    "conductor": {"available": False, "used": False}},
+            }
+
+    result = types.SimpleNamespace(
+        answer="Returned answer.", status="repaired", verdicts=[], repaired=True,
+        repair_rejected=False)
+    monkeypatch.setattr(ev, "run_offline_verifier",
+                        lambda *a, **kw: (result, {}))
+    args = types.SimpleNamespace(answers=True, verifier_mode="production",
+                                 verifier_repair=True)
+    case = _case(turns=[{"role": "user", "content": "Earlier question"}])
+    rec = ev._run_case(Pipe(), object(), args, case)
+    assert rec["original_answer"] == "Original answer."
+    assert rec["answer"] == "Returned answer."
+    assert rec["verification"]["answer_changed"] is True
+    assert rec["verification"]["comparison"]["no_regression"] is True
+    assert "verifier judge and repair excluded" in rec["verification"]["usage_accounting"]
+    assert rec["pipeline_parity"]["followup"] == {
+        "fixture_has_history": True,
+        "conductor_history_resolution": "unavailable",
+    }
+    assert any("follow-up history" in x
+               for x in rec["pipeline_parity"]["limitations"])
+
+
+def test_verifier_comparison_flags_metric_regressions():
+    before = {"checks": {"pass": True, "score": 1.0},
+              "fields": {"coverage": 1.0},
+              "claims": {"groundedness_rate": 1.0,
+                         "citation_completeness_rate": 1.0,
+                         "citation_support_rate": 1.0}}
+    after = {"checks": {"pass": False, "score": 0.5},
+             "fields": {"coverage": 0.5},
+             "claims": {"groundedness_rate": 0.5,
+                        "citation_completeness_rate": 1.0,
+                        "citation_support_rate": 0.5}}
+    got = ev.compare_verifier_output(before, after)
+    assert got["no_regression"] is False
+    assert set(got["regressions"]) == {
+        "answer_checks_pass_to_fail", "field_coverage_decreased",
+        "groundedness_decreased", "citation_support_decreased",
+    }
+    assert got["deltas"]["answer_score"] == -0.5
+
+
+def test_raw_retrieval_and_production_planner_are_mutually_exclusive():
+    with pytest.raises(SystemExit):
+        ev.main(["--raw-retrieval", "--production-planner"])

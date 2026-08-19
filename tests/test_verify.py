@@ -357,6 +357,76 @@ def test_note_level_citation_resolves_to_the_computed_notes(evidence):
     assert v.scope == [V.NOTES_KEY]
 
 
+def test_registry_not_found_supports_the_exact_negative_existence_claim():
+    note = ("Registry — FP999: NOT FOUND in the 273-document corpus registry. "
+            "Do not infer details for it from other documents.")
+    ev = V.build_evidence([], note)
+    answer = "FP999 does not exist in this corpus [registry note in context]."
+    (v,) = V.classify(V.extract_claims(answer), ev, use_llm=False)
+    assert v.status == V.SUPPORTED
+
+
+def test_registry_not_found_for_another_id_cannot_support_existence_claim():
+    ev = V.build_evidence([], "Registry — FP998: NOT FOUND in the corpus registry.")
+    answer = "FP999 does not exist in this corpus [registry note in context]."
+    (v,) = V.classify(V.extract_claims(answer), ev, use_llm=False)
+    assert v.status == V.UNSUPPORTED
+
+
+def test_uncited_note_backed_claim_is_grounded_but_not_citation_complete():
+    note = "Registry — FP999: NOT FOUND in the 273-document corpus registry."
+    ev = V.build_evidence([], note)
+    (v,) = V.classify(V.extract_claims("FP999 does not exist in this corpus."),
+                      ev, use_llm=False)
+    assert v.status == V.UNSUPPORTED
+    assert "grounded-without-citation" in v.flags
+    assert "no citation" in v.reason
+
+
+def test_unknown_board_code_uses_not_found_semantics_not_board_mentions():
+    note = "Registry — GCF/B.42/02/Add.99: NOT FOUND in the corpus registry."
+    ev = V.build_evidence([], note)
+    answer = ("GCF/B.42/02/Add.99 does not exist in this corpus "
+              "[registry note in context].")
+    (claim,) = V.extract_claims(answer)
+    assert claim.kind == "existence"
+    (v,) = V.classify([claim], ev, use_llm=False)
+    assert v.status == V.SUPPORTED
+
+
+def test_registered_explicit_alias_can_back_a_full_name(monkeypatch):
+    full = "International Union for Conservation of Nature and Natural Resources"
+    monkeypatch.setattr("gcf_qna.rag.registry.load", lambda: {
+        DOC: {"accredited_entity": f"{full} (IUCN)"}})
+    monkeypatch.setattr("gcf_qna.rag.registry.facts", lambda doc: {})
+    ev = {(DOC, 5): "Accredited entity: IUCN"}
+    answer = f"The accredited entity is **{full} (IUCN)** [{DOC}, p. 5]."
+    (v,) = V.classify(V.extract_claims(answer), ev, use_llm=False)
+    assert v.status == V.SUPPORTED
+    assert "registry-backed-page-not-retrieved" in v.flags
+
+
+def test_invented_acronym_expansion_is_not_accepted(monkeypatch):
+    actual = "International Union for Conservation of Nature and Natural Resources"
+    monkeypatch.setattr("gcf_qna.rag.registry.load", lambda: {
+        DOC: {"accredited_entity": f"{actual} (IUCN)"}})
+    monkeypatch.setattr("gcf_qna.rag.registry.facts", lambda doc: {})
+    ev = {(DOC, 5): "Accredited entity: IUCN"}
+    answer = (f"The accredited entity is **Invented Universal Climate Network "
+              f"(IUCN)** [{DOC}, p. 5].")
+    (v,) = V.classify(V.extract_claims(answer), ev, use_llm=False)
+    assert v.status == V.UNSUPPORTED
+
+
+def test_arbitrary_initials_are_not_derived_from_a_full_name(monkeypatch):
+    monkeypatch.setattr("gcf_qna.rag.registry.load", lambda: {DOC: {}})
+    monkeypatch.setattr("gcf_qna.rag.registry.facts", lambda doc: {})
+    ev = {(DOC, 5): "Accredited entity: Imaginary Finance Corporation"}
+    answer = f"The accredited entity is **IFC** [{DOC}, p. 5]."
+    (v,) = V.classify(V.extract_claims(answer), ev, use_llm=False)
+    assert v.status == V.UNSUPPORTED
+
+
 def test_known_document_conflict_is_contradicted_even_when_the_page_is_absent(
         monkeypatch, evidence):
     """FP153's second figure lives on p.48, which retrieval need not surface.
@@ -408,6 +478,66 @@ def test_registry_backed_figure_on_a_page_that_was_not_retrieved(
     assert v.status == V.SUPPORTED
     assert "registry-backed-page-not-retrieved" in v.flags
     assert "p.48" in v.reason
+
+
+def _money_conflict_registry(monkeypatch):
+    facts = {
+        DOC: {"gcf_funding_requested": [
+            {"raw": "USD 10 million", "page": 5, "status": "canonical"},
+            {"raw": "USD 20 million", "page": 48, "status": "conflicting"}]},
+        DOC2: {"gcf_funding_requested": [
+            {"raw": "USD 20 million", "page": 5, "status": "canonical"}]},
+    }
+    monkeypatch.setattr("gcf_qna.rag.registry.facts", lambda doc: facts.get(doc, {}))
+
+
+def test_unrelated_same_document_number_does_not_suppress_conflict(monkeypatch):
+    _money_conflict_registry(monkeypatch)
+    ev = {(DOC, None): ("GCF financing: USD 10 million; "
+                        "total financing: USD 20 million")}
+    answer = (f"GCF funding is **USD 10 million** and total financing is "
+              f"**USD 20 million** [{DOC}, cover pages].")
+    (v,) = V.classify(V.extract_claims(answer), ev, use_llm=False)
+    assert v.status == V.CONTRADICTED
+    assert "known-document-conflict" in v.flags
+
+
+def test_cross_document_number_does_not_suppress_conflict(monkeypatch):
+    _money_conflict_registry(monkeypatch)
+    ev = {
+        (DOC, None): "GCF financing: USD 10 million",
+        (DOC2, None): "GCF financing: USD 20 million",
+    }
+    answer = (f"FP151 requests **USD 10 million** in GCF funding "
+              f"[{DOC}, cover pages], while FP152 requests **USD 20 million** "
+              f"in GCF funding [{DOC2}, cover pages].")
+    (v,) = V.classify(V.extract_claims(answer), ev, use_llm=False)
+    assert v.status == V.CONTRADICTED
+    assert "known-document-conflict" in v.flags
+
+
+@pytest.mark.parametrize("counterpart", ["EUR 20 million", "USD 20 billion"])
+def test_incompatible_counterpart_does_not_suppress_conflict(
+        monkeypatch, counterpart):
+    _money_conflict_registry(monkeypatch)
+    ev = {(DOC, None): f"GCF financing: USD 10 million; note: {counterpart}"}
+    answer = (f"FP151 requests **USD 10 million** in GCF funding; another "
+              f"printed figure is **{counterpart}** [{DOC}, cover pages].")
+    (v,) = V.classify(V.extract_claims(answer), ev, use_llm=False)
+    assert v.status == V.CONTRADICTED
+    assert "known-document-conflict" in v.flags
+
+
+def test_same_document_same_field_compatible_counterpart_suppresses_conflict(
+        monkeypatch):
+    _money_conflict_registry(monkeypatch)
+    ev = {(DOC, None): "GCF financing: USD 10 million"}
+    answer = (f"FP151 requests **USD 10 million** in GCF funding "
+              f"[{DOC}, cover pages], while the same document prints "
+              f"**USD 20 million** [{DOC}, p. 48].")
+    (v,) = V.classify(V.extract_claims(answer), ev, use_llm=False)
+    assert v.status == V.SUPPORTED
+    assert "registry-backed-page-not-retrieved" in v.flags
 
 
 def test_registry_backed_name_on_a_page_that_was_not_retrieved(monkeypatch):
