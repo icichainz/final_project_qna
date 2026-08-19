@@ -322,6 +322,60 @@ def test_ambiguous_scale_still_detects_a_mismatched_mantissa():
     assert [c["status"] for c in got] == ["canonical", "conflicting"]
 
 
+def test_abbreviated_scale_words_need_an_adjacent_currency():
+    """'28 M USD' is 28 million (FP151's real A.7 print); '5 m of pipe' is not
+    money at all, and neither is a bare figure that only shares a row with USD."""
+    assert B.read_amount("28 M USD")["value"] == 28_000_000
+    assert B.read_amount("USD$ 500 M (Choose an item)")["value"] == 500_000_000
+    assert B.read_amount("2.5 MM USD")["value"] == 2_500_000
+    assert B.read_amount("5 m of pipe") is None
+    assert B.read_amount("proposals, 9 out of 17: 190.00 million USD")["value"] \
+        == 190_000_000                      # the '9' is prose, not a $9 amount
+
+
+def test_unbindable_scale_word_suppresses_the_value():
+    """FP151 p45: '| 32,500 plus | million USD ($) |'. The row prints a scale
+    word that cannot bind to the figure, and binding it would contradict it —
+    so no number is published. When only a template PLACEHOLDER separates the
+    two, the currency column is unfilled boilerplate and the figure stands."""
+    assert B.read_amount("32,500 plus | million USD ($)")["value"] is None
+    assert B.read_amount("32,500 plus | million USD ($)")["raw"] == "32,500"
+    assert B.read_amount("40,751,254Enter amount | million USD ($)")["value"] == 40_751_254
+
+
+def test_figure_too_small_for_its_label_keeps_the_print_not_the_number():
+    """'999.9 USD' under 'A.7 Total financing' is a real print with an unstated
+    scale; a $999.90 total would be a fiction. Bare furniture still drops."""
+    got = B.read_amount("999.9 USD")
+    assert got["value"] is None and got["raw"] == "999.9 USD"
+    assert B.read_amount("30") is None
+
+
+def test_prose_hit_is_not_canonical_when_the_template_heading_exists():
+    """FP254-shaped: the A.8 table prints 58,000,000 and page 108 prose says
+    'USD 258 million'. The template section wins; the prose stays a candidate."""
+    text = (page(5, "A.7 Total financing (GCF + co-financiers) | $1,262,000,000 USD |\n\n"
+                    "A.8 Total GCF funding | $58,000,000 USD |")
+            + page(108, "### Project details:\n- Total target financing: USD 1.26 billion;\n"
+                        "- GCF funding requested: USD 258 million (USD 250 million loan)"))
+    f = facts_of(text)
+    c = canon(f, "gcf_funding_requested")
+    assert (c["value"], c["page"], c["section"]) == (58_000_000, 5, "A.8")
+    assert [x["status"] for x in f["gcf_funding_requested"] if x["page"] == 108] \
+        == ["conflicting"]
+
+
+def test_empty_template_section_yields_no_canonical_rather_than_prose():
+    """When the document prints the A.8 heading but nothing parses there, a
+    far-away prose match must not be promoted to the document's stated value."""
+    text = (page(5, "### A.8 Total GCF funding requested\nEnter amount")
+            + page(90, "- GCF funding requested: USD 258 million (USD 250 million loan)"))
+    f = facts_of(text)
+    assert canon(f, "gcf_funding_requested") is None
+    assert [c["status"] for c in f["gcf_funding_requested"]] == ["supporting"]
+    assert f["gcf_funding_requested"][0]["section"] == "rule:A.8"
+
+
 def test_gcf_above_total_is_flagged_not_published_silently():
     text = (page(5, "## A.7 Total financing (GCF + co-finance)\n30,000,000 USD\n\n"
                     "## A.8 Total GCF funding requested\n40,000,000 USD"))

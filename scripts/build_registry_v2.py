@@ -84,7 +84,7 @@ TEXT_FIELD_MAX_PAGE = 25
 # '44,709782' (a decimal the VLM printed with a comma) reads as '44,709'
 _NUM = r"\d{1,3}(?:[,.  ]\d{3})+(?:[.,]\d+)?(?!\d)|\d+(?:[.,]\d+)?"
 
-_UNIT_MULT = {"million": 1e6, "millions": 1e6, "m": 1e6,
+_UNIT_MULT = {"million": 1e6, "millions": 1e6, "m": 1e6, "mm": 1e6,
               "billion": 1e9, "billions": 1e9, "bn": 1e9,
               "thousand": 1e3, "thousands": 1e3, "k": 1e3}
 # a unit word is only applied when the bare number is small enough for it to be
@@ -180,10 +180,17 @@ def granularity(tok: str, mult: float) -> float:
 _AMOUNT_RE = re.compile(
     r"(?P<pre>USD|US\$|EUR|€|\$)?[ \t]{0,2}"
     r"(?P<num>" + _NUM + r")"
-    r"(?P<sep>[ \t|,;:]{0,4})(?P<unit>million[s]?|billion[s]?|thousand[s]?|bn)?"
+    # 'M'/'MM'/'K' only count as scale words when a currency follows them
+    # ('28 M USD'), never in prose ('5 m of pipe', '60 m onths')
+    r"(?P<sep>[ \t|,;:]{0,4})(?P<unit>million[s]?|billion[s]?|thousand[s]?|bn|MM?|K)?"
     r"(?P<sep2>[ \t|(]{0,4})(?P<post>USD|US\$|EUR|euros?|€|\$)?", re.I)
 
 _CUR_NEARBY = re.compile(r"(USD|US\$|EUR|euros?|€|\$)", re.I)
+_CUR_TAIL = re.compile(r"(?:USD|US\$|EUR|euros?|€|\$)[ \t]*$", re.I)
+# a scale word later in the same row, with whatever sits between it and the figure
+_LOOSE_UNIT = re.compile(r"(?P<gap>[^\n]{0,24}?)\b(?P<u>million|billion|thousand)s?\b", re.I)
+_ONLY_PLACEHOLDER = re.compile(r"[\s|(),;:*-]*(?:enter\s+(?:amount|number|years?)|options|n/?a)?"
+                               r"[\s|(),;:*-]*", re.I)
 
 
 def read_amounts(window: str, limit: int = 1,
@@ -234,7 +241,9 @@ def _iter_amounts(window: str):
         # 'USD35 million' glues the currency to the figure: that is a currency
         # marker, not the 'JAH30' word-glue the guard is meant to reject
         head = m.start() if m.group("pre") else m.start("num")
-        before = window[max(0, head - 24):head]
+        # 'USD$ 500 M': the currency may be spelled twice, and the word-glue
+        # guard must not read the 'D' of USD as the glue
+        before = _CUR_TAIL.sub("", window[max(0, head - 24):head])
         after = window[m.end("num"):m.end("num") + 24]
         if _NOISE_BEFORE.search(before) or _GLUED.search(before):
             continue
@@ -245,6 +254,9 @@ def _iter_amounts(window: str):
             continue
         unit_tok = (m.group("unit") or "").lower()
         mult = _UNIT_MULT.get(unit_tok, 1.0)
+        # 'M'/'MM'/'K' are scale words only beside a currency ('28 M USD',
+        # 'USD$ 500 M'); anywhere else 'm' is metres and 'K' is a label
+        abbrev = unit_tok in ("m", "mm", "k")
         # The number and the printed unit word contradict each other: '28,654
         # million USD' / '68.780 | billion USD ($)' — the GCF template prints
         # 'million USD ($)' as a currency-COLUMN label, so the scale is unknown.
@@ -252,6 +264,22 @@ def _iter_amounts(window: str):
         # what the page says (either reading would be an invention).
         clash = mult > 1 and (val >= _UNIT_CEILING.get(mult, 0)
                               or val * mult > _MAX_PLAUSIBLE)
+        if abbrev and not (m.group("pre") or m.group("post")
+                           or _CUR_NEARBY.match(window[m.end():m.end() + 6] or "")):
+            unit_tok, mult = "", 1.0
+        if not clash and mult == 1.0:
+            # a scale word sits further along the same table row but could not
+            # bind to the figure ('| 32,500 plus | million USD ($) |'). Binding
+            # it would contradict the figure, so the row's scale is unknowable:
+            # publish the raw without a value rather than an unscaled number.
+            # Text that is only a template PLACEHOLDER between the two means the
+            # cell was left unfilled ('40,751,254Enter amount | million USD ($)')
+            # — boilerplate, not a scale the author chose.
+            m3 = _LOOSE_UNIT.search(window[m.end("num"):m.end("num") + 34])
+            if m3 and not _ONLY_PLACEHOLDER.fullmatch(m3.group("gap")):
+                loose = _UNIT_MULT.get(m3.group("u").lower(), 1.0)
+                if val >= _UNIT_CEILING.get(loose, 0) or val * loose > _MAX_PLAUSIBLE:
+                    clash, mult = True, loose
         cur_tok = (m.group("pre") or m.group("post") or "").lower()
         if not cur_tok:
             line_tail = window[m.end():].split("\n", 1)[0][:40]
@@ -262,8 +290,17 @@ def _iter_amounts(window: str):
             if not cur_tok and mult == 1.0 and re.fullmatch(r"(19|20)\d{2}", num):
                 continue
             if mult == 1.0 and val < _MONEY_FLOOR:
-                continue      # '$511' under a financing label is a unit cost
+                if not (m.group("pre") or m.group("post")):
+                    # bare '1' / '6' / '30' / the '9' in 'proposals, 9 out of 17':
+                    # table furniture and prose, even when the ROW mentions USD
+                    continue
+                # '999.9 USD' under 'A.7 Total financing' is a real print whose
+                # scale the page does not give (no GCF proposal is under $1M):
+                # publish it with no value instead of a $999.90 total
+                clash, mult = True, 1.0
         raw = window[m.start():m.end()].strip(" \t|,;:(")
+        if raw.count("(") > raw.count(")"):      # 'USD 258 million (USD' -> drop the
+            raw = raw[:raw.rfind("(")].strip()   # half-eaten trailing cell
         yield {"raw": raw or num,
                "value": None if clash else round(val * mult, 2),
                # scale unknown, mantissa known: '28,654 million' vs '26,654
@@ -290,6 +327,9 @@ def read_count(window: str) -> Optional[dict]:
             continue
         unit_tok = (m.group("unit") or "").lower()
         mult = _UNIT_MULT.get(unit_tok, 1.0)
+        # 'M'/'MM'/'K' are scale words only beside a currency ('28 M USD',
+        # 'USD$ 500 M'); anywhere else 'm' is metres and 'K' is a label
+        abbrev = unit_tok in ("m", "mm", "k")
         if mult > 1 and val >= _UNIT_CEILING.get(mult, 0):
             unit_tok, mult = "", 1.0
         raw = window[m.start():m.end("num") + 24].split("\n")[0].strip(" \t|,;:")
@@ -397,7 +437,7 @@ _NOT_GCF_NEGATED = re.compile(
 # when the document does not print the section number itself.
 _TOTAL_FIN_A7 = r"Total financing(?:\s*\((?:GCF|SCF)[^)\n]{0,40}\))?"
 _TOTAL_FIN_B2 = r"Total project financing|Total project cost"
-_GCF_REQ_A8 = (r"Total GCF funding (?:requested|required)|GCF funding requested"
+_GCF_REQ_A8 = (r"Total GCF funding(?:\s+(?:requested|required))?|GCF funding requested"
                r"|Amount of GCF funding requested")
 _GCF_REQ_C1 = r"(?:Requested|Received) GCF funding|Total funding requested"
 _GCF_REQ_B2 = r"Requested GCF amount|GCF fin(?:ancing|ance) to recipient"
@@ -683,8 +723,31 @@ def _truncated_twin(c: dict, others: List[dict]) -> bool:
                and len(_digits(o)) > len(d) and _digits(o).startswith(d) for o in others)
 
 
-def finalize(field: str, cands: List[dict]) -> List[dict]:
-    """Dedupe, elect the canonical candidate, mark conflicts."""
+# the document's OWN template heading for a field: when the page prints this,
+# the field's canonical value has to come from a printed section, never from a
+# rule that happened to match prose 200 pages later
+_TEMPLATE_HEADING = {
+    "total_financing": re.compile(
+        r"(?m)^\W{0,8}A\.?\s?7[.\s):]\s*\**\s*Total\s+financing", re.I),
+    "gcf_funding_requested": re.compile(
+        r"(?m)^\W{0,8}A\.?\s?8[.\s):]\s*\**\s*(?:Total\s+)?GCF\s+funding", re.I),
+}
+
+
+def _printed(c: dict) -> bool:
+    """The page itself printed this section id (not the rule's fallback name)."""
+    return not str(c.get("section", "")).startswith("rule:")
+
+
+def finalize(field: str, cands: List[dict], template_heading: bool = False) -> List[dict]:
+    """Dedupe, elect the canonical candidate, mark conflicts.
+
+    `template_heading` says the document prints this field's A.x heading. Then a
+    prose match elsewhere may NOT be canonical: either a printed section supplies
+    the value or the field has no canonical at all — 'the template section is
+    empty' is a truthful answer, 'USD 32,500 from a C.1(c) row relabelled A.7'
+    is not.
+    """
     seen, uniq = set(), []
     for c in sorted(cands, key=lambda c: (c["page"], c["_rank"], c["section"])):
         # the same printed value on the same page is ONE fact even when two
@@ -696,9 +759,12 @@ def finalize(field: str, cands: List[dict]) -> List[dict]:
         uniq.append(c)
     uniq = [c for c in uniq if not _truncated_twin(c, uniq)]
     numeric = field in NUMERIC_FIELDS
-    # best rule first; within a rule a parsed value beats a value-less print
+    # best rule first; within a rule the page's own section id beats a rule name
     eligible = [c for c in uniq if c["_canon"]]
-    canon = min(eligible, key=lambda c: (c["_rank"], c["page"])) if eligible else None
+    if template_heading and not any(_printed(c) for c in eligible):
+        eligible = []
+    canon = (min(eligible, key=lambda c: (c["_rank"], not _printed(c), c["page"]))
+             if eligible else None)
     for c in uniq:
         c["status"] = "supporting"
     if canon:
@@ -752,7 +818,8 @@ def era_of(text: str) -> str:
 def build_document(doc_id: str, text: str) -> dict:
     pages = split_pages(text)
     raw = extract_candidates(pages)
-    facts = {f: finalize(f, cs) for f, cs in raw.items() if cs}
+    heads = {f: bool(rx.search(text)) for f, rx in _TEMPLATE_HEADING.items()}
+    facts = {f: finalize(f, cs, heads.get(f, False)) for f, cs in raw.items() if cs}
     facts = {f: cs for f, cs in facts.items() if cs}
     board = board_of(doc_id)
     code = None
