@@ -170,6 +170,7 @@ def _board_code_text(b_: str, item_: str, add_: str) -> str:
 _FP_RE = re.compile(r"fp[\s\-]?0*(\d{1,3})(?!\d)", re.I)
 # public alias: the app imports this so the FP pattern has ONE definition
 FP_RE = _FP_RE
+BOARD_CODE_RE = _BOARD_CODE_RE
 
 
 def resolve_fps(question: str):
