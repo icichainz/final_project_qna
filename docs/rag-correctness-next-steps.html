@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GCF RAG Correctness - Next Implementation Steps</title>
+</head>
+<body>
+<style>
+  :root {
+    --bg: #f7faf8;
+    --surface: #ffffff;
+    --ink: #1c2a22;
+    --ink-soft: #4c5e54;
+    --ink-faint: #71837a;
+    --accent: #176a4b;
+    --accent-soft: #e3efe8;
+    --teal: #22677a;
+    --teal-soft: #e2eff2;
+    --amber: #985c24;
+    --amber-soft: #f6ecdf;
+    --line: #d8e3dc;
+    --line-soft: #e6eee9;
+    --code-bg: #edf3ef;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #101713;
+      --surface: #17211b;
+      --ink: #e2ebe5;
+      --ink-soft: #a7b8ae;
+      --ink-faint: #7e9188;
+      --accent: #4fc08d;
+      --accent-soft: #1b2f25;
+      --teal: #5cb6cc;
+      --teal-soft: #172b31;
+      --amber: #d99a5b;
+      --amber-soft: #2c2215;
+      --line: #2a3a31;
+      --line-soft: #223028;
+      --code-bg: #1d2a23;
+    }
+  }
+  body {
+    background: var(--bg); color: var(--ink); margin: 0;
+    font-family: Charter, "Bitstream Charter", "Sitka Text", Cambria, Georgia, serif;
+    font-size: 1.0625rem; line-height: 1.62;
+  }
+  .wrap { max-width: 49rem; margin: 0 auto; padding: 3.5rem 1.25rem 5rem; }
+  .wide { max-width: 68rem; margin-left: 50%; transform: translateX(-50%); width: calc(100vw - 2.5rem); }
+  h1, h2, h3, .eyebrow, .status, th, .step-num, .metric b, .metric span {
+    font-family: "Avenir Next", Seravek, "Segoe UI", "Helvetica Neue", system-ui, sans-serif;
+  }
+  h1 { font-size: 2.3rem; line-height: 1.12; margin: 0.4rem 0 0.9rem; letter-spacing: 0; text-wrap: balance; }
+  h2 { font-size: 1.45rem; margin: 3rem 0 0.8rem; letter-spacing: 0; }
+  h3 { font-size: 1.08rem; margin: 0 0 0.35rem; letter-spacing: 0; }
+  p { margin: 0 0 1rem; }
+  .lede { font-size: 1.18rem; line-height: 1.55; color: var(--ink-soft); }
+  .eyebrow { margin: 0; color: var(--accent); text-transform: uppercase; letter-spacing: 0; font-size: 0.72rem; font-weight: 700; }
+  code, pre {
+    font-family: ui-monospace, "Cascadia Code", "SF Mono", Menlo, Consolas, monospace;
+    background: var(--code-bg);
+  }
+  code { font-size: 0.86em; border-radius: 4px; padding: 0.08em 0.32em; }
+  pre { font-size: 0.82rem; line-height: 1.55; padding: 1rem; overflow-x: auto; border: 1px solid var(--line); border-radius: 6px; }
+  pre code { padding: 0; background: none; font-size: inherit; }
+  a { color: var(--accent); }
+  ul { padding-left: 1.2rem; margin: 0.35rem 0 1rem; }
+  li { margin-bottom: 0.35rem; }
+  .metrics { display: flex; flex-wrap: wrap; gap: 0.8rem 2.3rem; padding: 1rem 0; margin: 2rem 0 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+  .metric b { display: block; font-size: 1.25rem; font-variant-numeric: tabular-nums; }
+  .metric span { display: block; color: var(--ink-faint); text-transform: uppercase; letter-spacing: 0; font-size: 0.7rem; }
+  .callout, .decision { border-radius: 7px; padding: 0.9rem 1.05rem; margin: 1.4rem 0; font-size: 0.95rem; }
+  .callout { background: var(--accent-soft); }
+  .decision { background: var(--amber-soft); }
+  .decision b { color: var(--amber); }
+  .flow { margin: 1.4rem 0; padding: 1rem; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); overflow-x: auto; white-space: nowrap; font-family: "Avenir Next", Seravek, "Segoe UI", system-ui, sans-serif; font-size: 0.82rem; }
+  .flow span { display: inline-block; border: 1px solid var(--line); background: var(--surface); border-radius: 5px; padding: 0.35rem 0.55rem; }
+  .flow i { color: var(--ink-faint); font-style: normal; padding: 0 0.35rem; }
+  .step { display: grid; grid-template-columns: 2.2rem minmax(0, 1fr); gap: 1rem; margin: 1.7rem 0 2.2rem; }
+  .step-num { width: 2.1rem; height: 2.1rem; display: flex; align-items: center; justify-content: center; border-radius: 50%; background: var(--accent); color: var(--bg); font-weight: 700; }
+  .status { display: inline-block; margin-left: 0.35rem; border: 1px solid currentColor; border-radius: 99px; padding: 0.1rem 0.45rem; color: var(--teal); text-transform: uppercase; letter-spacing: 0; font-size: 0.66rem; vertical-align: 0.1rem; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.9rem; line-height: 1.42; }
+  .table-scroll { overflow-x: auto; border: 1px solid var(--line); border-radius: 7px; background: var(--surface); margin: 1.2rem 0 1.6rem; }
+  th { text-align: left; color: var(--ink-faint); text-transform: uppercase; letter-spacing: 0; font-size: 0.7rem; padding: 0.65rem 0.8rem; border-bottom: 1px solid var(--line); white-space: nowrap; }
+  td { padding: 0.62rem 0.8rem; border-bottom: 1px solid var(--line-soft); vertical-align: top; }
+  tr:last-child td { border-bottom: 0; }
+  .footer { margin-top: 3.5rem; padding-top: 1rem; border-top: 1px solid var(--line); color: var(--ink-faint); font-size: 0.84rem; }
+  @media (max-width: 640px) {
+    .wrap { padding-top: 2.2rem; }
+    h1 { font-size: 1.85rem; }
+    .wide { width: 100%; margin-left: 0; transform: none; }
+  }
+</style>
+
+<div class="wrap">
+  <p class="eyebrow">Execution plan · GCF Q&amp;A · August 2026</p>
+  <h1>RAG correctness: next implementation steps</h1>
+  <p class="lede">The retrieval foundation now finds the intended document reliably. This plan moves the system from document recall to evidence-complete, conflict-aware, and verifiable answers.</p>
+
+  <div class="metrics">
+    <div class="metric"><b>100%</b><span>hybrid document recall@5</span></div>
+    <div class="metric"><b>1.00</b><span>hybrid MRR</span></div>
+    <div class="metric"><b>175,225</b><span>deduplicated chunks</span></div>
+    <div class="metric"><b>20</b><span>passing unit tests</span></div>
+  </div>
+
+  <div class="callout">
+    <b>Objective.</b> Every factual answer should be traceable through a stable chain: resolved document, requested field or section, retrieved evidence, generated claim, and exact page citation. Missing or contradictory evidence must remain visible rather than being guessed away.
+  </div>
+
+  <h2>Target architecture</h2>
+  <div class="flow wide">
+    <span>Question</span><i>&rarr;</i><span>Identifier + field planner</span><i>&rarr;</i><span>Registry / hybrid candidates</span><i>&rarr;</i><span>Rerank + section expansion</span><i>&rarr;</i><span>Evidence matrix</span><i>&rarr;</i><span>Answer</span><i>&rarr;</i><span>Claim verifier</span>
+  </div>
+  <p>History is available to the planner for resolving follow-ups, but only current-turn evidence is available to the factual answer and verifier.</p>
+
+  <h2>Scope and decisions</h2>
+  <div class="table-scroll wide"><table>
+    <tr><th>Decision</th><th>Reason</th></tr>
+    <tr><td>Keep hybrid FAISS + FTS5 retrieval</td><td>It already reaches 100% document recall on the current gold set.</td></tr>
+    <tr><td>Do not change embeddings first</td><td>Page-level and answer-level labels are needed to prove that a model migration helps.</td></tr>
+    <tr><td>Do not build GraphRAG now</td><td>The current failures concern canonical fields, page selection, and support verification rather than global graph traversal.</td></tr>
+    <tr><td>Preserve source text separately</td><td>Section prefixes can improve retrieval, but grounding must continue matching the original extracted page text.</td></tr>
+    <tr><td>Use deterministic checks before LLM judges</td><td>Identifiers, currencies, arithmetic, field coverage, and citation presence can be checked exactly and cheaply.</td></tr>
+  </table></div>
+
+  <h2>Implementation sequence</h2>
+
+  <div class="step">
+    <div class="step-num">0</div>
+    <div>
+      <h3>Freeze an answer-level baseline <span class="status">First</span></h3>
+      <p>Turn the complex manual probes into reproducible fixtures before changing answer behavior.</p>
+      <ul>
+        <li>Expand to 50-80 cases covering exact IDs, compact IDs, semantic discovery, comparisons, contradictions, French, noisy input, and nonexistent proposals.</li>
+        <li>Label expected documents, exact evidence pages, required fields, expected calculations, and whether the correct behavior is answer, conflict, or abstention.</li>
+        <li>Record the current answer and retrieval outputs so later improvements are attributable.</li>
+      </ul>
+      <p><b>Touchpoints:</b> <code>scripts/gold_set.jsonl</code>, a new answer fixture file, and a new end-to-end evaluation script.</p>
+      <p><b>Gate:</b> current 100% document recall must remain the retrieval floor.</p>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-num">1</div>
+    <div>
+      <h3>Isolate answer evidence from conversation history <span class="status">Low risk</span></h3>
+      <p>Continue using history in the conductor, but stop passing prior assistant answers into factual generation. The answer call receives the latest question, resolved references, and current retrieved evidence only.</p>
+      <ul>
+        <li>Keep chat-mode behavior unchanged for conversational turns.</li>
+        <li>Represent resolved follow-up entities as a small trusted note instead of replaying old answers.</li>
+        <li>Add a regression where FP220 is asked after unrelated FP254/FP248 turns.</li>
+      </ul>
+      <p><b>Touchpoints:</b> <code>src/gcf_qna/app/chainlit_app.py</code>, <code>src/gcf_qna/app/prompts.py</code>.</p>
+      <p><b>Gate:</b> changing preceding conversation must not change a fully specified factual answer.</p>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-num">2</div>
+    <div>
+      <h3>Upgrade the registry to provenance-aware facts <span class="status">Core</span></h3>
+      <p>Move canonical proposal fields out of probabilistic chunk selection while retaining every source candidate.</p>
+      <pre><code>{
+  "total_financing": [
+    {"raw": "46,737,340 USD", "value": 46737340,
+     "currency": "USD", "page": 7, "section": "A.7",
+     "status": "canonical"},
+    {"raw": "49,751,264", "page": 8, "section": "A.10",
+     "status": "conflicting"}
+  ]
+}</code></pre>
+      <ul>
+        <li>Cover title, phase, countries, accredited entity, A.5-A.11, instruments, direct/indirect beneficiaries, implementation period, and Board code.</li>
+        <li>Parse templated headings deterministically first; use an extraction model only as a fallback.</li>
+        <li>Keep raw text, normalized value, unit, currency, page, section, and status.</li>
+        <li>Calculate or rank only compatible units and currencies.</li>
+      </ul>
+      <p><b>Touchpoints:</b> <code>scripts/build_registry.py</code>, <code>src/gcf_qna/rag/registry.py</code>, <code>data/registry.json</code> schema version 2.</p>
+      <p><b>Gate:</b> FP274 and FP275 canonical fields reproduce labelled pages exactly and expose known conflicts.</p>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-num">3</div>
+    <div>
+      <h3>Add section-aware retrieval and reranking <span class="status">Core</span></h3>
+      <p>Improve precision within an already-correct document without breaking the grounded viewer.</p>
+      <ul>
+        <li>Store <code>source_text</code>, <code>retrieval_text</code>, <code>section_path</code>, page, and table identity separately.</li>
+        <li>Keep markdown tables atomic where practical and attach their heading path to <code>retrieval_text</code>.</li>
+        <li>Hybrid-retrieve a wider candidate pool, deduplicate before quotas, rerank query-passage pairs, then expand selected evidence to its parent section or neighboring page.</li>
+        <li>Ground citations against <code>source_text</code>, never the added retrieval prefix.</li>
+        <li>A/B the existing embedder and a modern multilingual model only after this page-level baseline exists.</li>
+      </ul>
+      <p><b>Touchpoints:</b> <code>src/gcf_qna/rag/chunk.py</code>, <code>src/gcf_qna/rag/index.py</code>, <code>src/gcf_qna/rag/retrieve.py</code>, <code>src/gcf_qna/rag/ground.py</code>, <code>scripts/build_index.py</code>.</p>
+      <p><b>Gate:</b> required evidence-page recall improves without reducing document recall; grounding highlights remain visually correct.</p>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-num">4</div>
+    <div>
+      <h3>Plan comparisons as document by field matrices <span class="status">Coverage</span></h3>
+      <p>Use deterministic planning whenever the question names documents and known fields; reserve the LLM conductor for semantic decomposition.</p>
+      <ul>
+        <li>Resolve every explicit FP and Board code before retrieval.</li>
+        <li>Create one job per requested document and field, with a guaranteed evidence quota.</li>
+        <li>Build an evidence matrix before prose generation and mark each cell as stated, calculated, missing, or contradictory.</li>
+        <li>Require all cells to be addressed before the answer is accepted.</li>
+      </ul>
+      <p><b>Touchpoints:</b> a small planner module under <code>src/gcf_qna/rag/</code>, plus <code>chainlit_app.py</code> and prompt assembly.</p>
+      <p><b>Gate:</b> FP254/FP228/FP248 returns all three rows, refuses cross-currency ranking without a conversion rule, and never starves the last document.</p>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-num">5</div>
+    <div>
+      <h3>Verify claims and repair once <span class="status">Trust</span></h3>
+      <p>Validate the generated answer at atomic-claim level before displaying it.</p>
+      <ul>
+        <li>Extract factual claims and their cited document/page pairs.</li>
+        <li>Classify each as supported, contradicted, or unsupported by the cited evidence.</li>
+        <li>Run one constrained repair pass that may remove, qualify, or replace claims but may not introduce new sources.</li>
+        <li>If required claims remain unsupported, answer partially or abstain.</li>
+        <li>Display only sources actually cited by the final verified answer.</li>
+      </ul>
+      <p><b>Touchpoints:</b> a verifier module under <code>src/gcf_qna/rag/</code>, <code>chainlit_app.py</code>, and claim-level tests.</p>
+      <p><b>Gate:</b> zero unsupported claims in the labelled high-risk set; citation precision at least 95% before broader rollout.</p>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-num">6</div>
+    <div>
+      <h3>Roll out behind independent switches <span class="status">Adopt</span></h3>
+      <p>Measure each layer independently instead of shipping a single opaque pipeline change.</p>
+      <ul>
+        <li>Suggested switches: structured facts, reranking, section expansion, answer verification, and factual-history isolation.</li>
+        <li>Report document recall, page recall, required-field coverage, numerical accuracy, conflict detection, abstention, citation precision, latency, and model cost.</li>
+        <li>Keep the existing hybrid path as the fallback until the new path clears every correctness gate.</li>
+      </ul>
+      <p><b>Gate:</b> no regression in current retrieval classes and material improvement on the complex answer suite.</p>
+    </div>
+  </div>
+
+  <h2>Acceptance dashboard</h2>
+  <div class="table-scroll wide"><table>
+    <tr><th>Metric</th><th>Current</th><th>Release gate</th></tr>
+    <tr><td>Document recall@5</td><td>100% on 30 English questions</td><td>Do not regress</td></tr>
+    <tr><td>Evidence-page recall</td><td>Not measured</td><td>Label first; improve against baseline</td></tr>
+    <tr><td>Required-field coverage</td><td>Not measured</td><td>&ge;95% on labelled comparisons</td></tr>
+    <tr><td>Identifier conflict detection</td><td>Unit-tested</td><td>100% on conflict fixtures</td></tr>
+    <tr><td>Unknown identifier abstention</td><td>Implemented</td><td>100% on closed-world fixtures</td></tr>
+    <tr><td>Numerical/currency correctness</td><td>Not measured</td><td>100% on deterministic fixtures</td></tr>
+    <tr><td>Citation precision</td><td>Page presence only</td><td>&ge;95% claim support</td></tr>
+    <tr><td>Retrieval latency</td><td>139 ms average hybrid</td><td>Track; optimize after correctness</td></tr>
+  </table></div>
+
+  <h2>Deferred options</h2>
+  <p>Vision verification for difficult tables, whole-document long-context reading, agentic search, a modern embedding model, and GraphRAG remain valid experiments. None should enter the default path until the answer-level harness identifies a gap that the core plan cannot close.</p>
+
+  <div class="decision">
+    <b>Definition of done.</b> The ten complex probes and the expanded gold suite return complete, page-grounded answers; contradictions are surfaced; incompatible currencies are not ranked; nonexistent identifiers abstain without unrelated sources; and every displayed factual claim is supported by its cited evidence.
+  </div>
+
+  <p class="footer">Companion to <a href="rag-approaches-evaluation.html">rag-approaches-evaluation.html</a>. This file is an implementation plan; creating it does not change application behavior.</p>
+</div>
+</body>
+</html>

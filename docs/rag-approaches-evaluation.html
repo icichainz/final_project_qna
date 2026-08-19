@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>GCF Retrieval Roadmap — RAG approaches evaluation</title>
+<title>GCF RAG Roadmap — Current state and next stages</title>
 </head>
 <body>
 <style>
@@ -78,14 +78,14 @@
   h1, h2, h3, .eyebrow, .stage-num, th, .chip, .verdict, .stat b, .stat span {
     font-family: "Avenir Next", Seravek, "Segoe UI", "Helvetica Neue", system-ui, sans-serif;
   }
-  h1 { font-size: 2.3rem; line-height: 1.12; font-weight: 700; letter-spacing: -0.015em; margin: 0.4rem 0 0.9rem; text-wrap: balance; }
-  h2 { font-size: 1.45rem; font-weight: 700; letter-spacing: -0.01em; margin: 3rem 0 0.8rem; text-wrap: balance; }
+  h1 { font-size: 2.3rem; line-height: 1.12; font-weight: 700; letter-spacing: 0; margin: 0.4rem 0 0.9rem; text-wrap: balance; }
+  h2 { font-size: 1.45rem; font-weight: 700; letter-spacing: 0; margin: 3rem 0 0.8rem; text-wrap: balance; }
   h3 { font-size: 1.08rem; font-weight: 650; margin: 1.9rem 0 0.4rem; }
   p { margin: 0 0 1rem; }
   .lede { font-size: 1.18rem; line-height: 1.55; color: var(--ink-soft); margin-bottom: 0; }
 
   .eyebrow {
-    text-transform: uppercase; letter-spacing: 0.14em; font-size: 0.72rem; font-weight: 650;
+    text-transform: uppercase; letter-spacing: 0; font-size: 0.72rem; font-weight: 650;
     color: var(--accent); margin: 0;
   }
   code, .mono {
@@ -102,12 +102,12 @@
     padding: 1rem 0; margin: 2.2rem 0 0;
   }
   .stat b { display: block; font-size: 1.3rem; font-weight: 700; font-variant-numeric: tabular-nums; }
-  .stat span { display: block; font-size: 0.74rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--ink-faint); margin-top: 0.1rem; }
+  .stat span { display: block; font-size: 0.74rem; text-transform: uppercase; letter-spacing: 0; color: var(--ink-faint); margin-top: 0.1rem; }
 
   table { border-collapse: collapse; width: 100%; font-size: 0.92rem; line-height: 1.45; }
   .table-scroll { overflow-x: auto; margin: 1.3rem 0 1.6rem; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); }
   th {
-    text-align: left; font-size: 0.73rem; text-transform: uppercase; letter-spacing: 0.09em;
+    text-align: left; font-size: 0.73rem; text-transform: uppercase; letter-spacing: 0;
     color: var(--ink-faint); font-weight: 650; padding: 0.65rem 0.9rem; border-bottom: 1px solid var(--line);
     white-space: nowrap;
   }
@@ -116,7 +116,7 @@
   td.num { font-variant-numeric: tabular-nums; white-space: nowrap; }
 
   .verdict {
-    display: inline-block; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.08em;
+    display: inline-block; font-size: 0.7rem; font-weight: 700; letter-spacing: 0;
     text-transform: uppercase; padding: 0.14rem 0.5rem; border-radius: 99px; white-space: nowrap;
   }
   .v-adopt { color: var(--verdict-adopt); border: 1px solid currentColor; }
@@ -157,107 +157,112 @@
 </style>
 
 <div class="wrap">
-  <p class="eyebrow">Evaluation · GCF Q&amp;A system · August 2026</p>
+  <p class="eyebrow">Living roadmap · GCF Q&amp;A system · Updated August 2026</p>
   <h1>Retrieval architectures for single- and multi-document answers</h1>
-  <p class="lede">The system today runs single-shot dense retrieval: five 1,000-character chunks from a flat FAISS index feed one Claude call. That works for narrow factual lookups inside one document and structurally cannot serve comparison or aggregation queries across the corpus. This report evaluates the candidate approaches and recommends a staged path.</p>
+  <p class="lede">The original dense-only baseline has been replaced by identifier-aware hybrid retrieval, query decomposition, a metadata registry, confidence handling, and grounded citations. Document recall is now strong; the remaining work is evidence precision and answer correctness inside the right document.</p>
 
   <div class="statbar">
-    <div class="stat"><b>~90</b><span>documents</span></div>
-    <div class="stat"><b>~73 MB</b><span>extracted markdown</span></div>
-    <div class="stat"><b>~18 M</b><span>tokens (est.)</span></div>
-    <div class="stat"><b>5 × 1 k chars</b><span>context per answer today</span></div>
-    <div class="stat"><b>2021</b><span>embedding model vintage</span></div>
+    <div class="stat"><b>273</b><span>registered documents</span></div>
+    <div class="stat"><b>175,225</b><span>deduplicated chunks</span></div>
+    <div class="stat"><b>100%</b><span>hybrid document recall@5</span></div>
+    <div class="stat"><b>30%</b><span>dense-only recall@5</span></div>
+    <div class="stat"><b>20/20</b><span>unit tests passing</span></div>
+  </div>
+
+  <div class="callout">
+    <b>Current checkpoint.</b> Hybrid retrieval scores 100% recall@5 and MRR 1.00 on the 30-question English retrieval set across identifier, board-code, and paraphrase classes. Dense-only scores 30% overall. The default index has no exact duplicate rows. These results establish that the dominant failure has moved from <i>wrong document</i> to <i>wrong page, incomplete evidence, or unsupported synthesis</i>.
   </div>
 
   <h2>1 · What the corpus and queries actually demand</h2>
-  <p>The corpus is Green Climate Fund board documents — funding proposal packages averaging roughly 200k tokens each, dense with identifiers (<code>FP274</code>, <code>GCF/B.42/02</code>), budget tables, country and sector names, and near-identical boilerplate sections repeated across every proposal. Two properties dominate the retrieval problem:</p>
+  <p>The corpus is Green Climate Fund board documents, dense with identifiers (<code>FP274</code>, <code>GCF/B.42/02</code>), budget tables, country and sector names, and near-identical boilerplate repeated across proposals. Three properties now dominate the remaining problem:</p>
   <ul>
-    <li><b>Identifier-heavy text.</b> Users ask by proposal number, country, accredited entity, or board meeting. Dense embeddings are weak at exact codes; a 2021-era encoder (<code>all-mpnet-base-v2</code>) especially so.</li>
-    <li><b>Templated structure.</b> Every proposal has the same section skeleton, so semantically similar chunks exist in all 90 documents. A global top-5 search for "expected mitigation impact" returns five near-duplicate paragraphs from whichever documents happen to score highest — not the one the user asked about.</li>
+    <li><b>Templated facts.</b> Fields such as A.7, A.8, and A.11 should be resolved as structured facts with page provenance, not rediscovered probabilistically for every answer.</li>
+    <li><b>Page and section structure.</b> Fixed-size chunks can detach table values from headings, units, baseline/target columns, and neighboring contradictory values.</li>
+    <li><b>Evidence use.</b> Finding the correct document does not ensure that the generator selects the canonical page, covers every requested field, or limits each claim to what its citation entails.</li>
   </ul>
-  <p>An enterprise system has to serve four distinct query classes, and they fail differently today:</p>
+  <p>An enterprise system has to serve four distinct query classes. The hybrid and registry work changed their failure modes, but each still has a distinct remaining risk:</p>
 
   <div class="wrap-wide"><div class="table-scroll"><table>
-    <tr><th>Query class</th><th>Example</th><th>What happens today</th></tr>
+    <tr><th>Query class</th><th>Example</th><th>Current behavior and remaining risk</th></tr>
     <tr>
       <td><b>Single-doc factual</b></td>
       <td>"What is the total GCF financing for FP274?"</td>
-      <td>Works when the embedding lands on the right chunk; misses when the answer lives in a table split mid-row by the fixed-size chunker, or when the code "FP274" doesn't dominate the embedding.</td>
+      <td>Hybrid retrieval and identifier resolution reliably reach the document. Fixed-size chunks can still separate a value from its heading, units, or canonical table, leaving the answer model to choose among incomplete evidence.</td>
     </tr>
     <tr>
       <td><b>Single-doc synthesis</b></td>
       <td>"Summarise the risk assessment of the Chad proposal."</td>
-      <td>Five chunks ≈ 1,250 tokens is far too little context to synthesise a section that spans dozens of pages. Answers are thin or hallucinate structure.</td>
+      <td>The larger context budget improves coverage, but there is no section expansion or reranker. Long sections can still be represented by disconnected passages, producing thin or weakly supported summaries.</td>
     </tr>
     <tr>
       <td><b>Cross-doc comparison</b></td>
       <td>"Compare the adaptation components of FP270 and FP274."</td>
-      <td>Global top-5 usually returns chunks from only one of the two documents (or neither). Nothing guarantees per-document coverage.</td>
+      <td>The conductor decomposes explicit identifiers and round-robin assembly gives each document a quota. Completeness is not yet guaranteed for every requested document × field pair.</td>
     </tr>
     <tr>
       <td><b>Corpus aggregation</b></td>
       <td>"Which proposals target West Africa, and what are their budgets?"</td>
-      <td>Unanswerable by similarity search over chunks. Needs metadata filtering or corpus-level summaries; today it returns five arbitrary passages.</td>
+      <td>The registry handles simple proposal, year, country, and financing lookups. Broader sector or region questions remain limited by missing fields, normalization, provenance, and conflict handling.</td>
     </tr>
   </table></div></div>
 
-  <p>Two implementation-level gaps compound this, independent of architecture choice: <b>follow-up queries are embedded raw</b> ("what about its budget?" retrieves noise because the chat history is sent to Claude but never used to rewrite the retrieval query), and <b>there is no relevance threshold</b> — the top 5 are injected even when all scores are poor, inviting confident answers from irrelevant context.</p>
+  <p>The original implementation-level gaps — raw follow-up retrieval and unconditional context injection — are now addressed by the conductor and confidence guard. New reviews exposed the next gaps: factual answer generation still receives prior assistant history, citation checks validate page presence rather than claim support, and the registry lacks field-level provenance and conflict representation.</p>
 
   <h2>2 · The approaches, evaluated</h2>
 
   <h3 style="margin-top:2.2rem">Tier A — Retrieval quality (fixes every query class at once)</h3>
 
   <div class="approach adopt">
-    <h3>Hybrid retrieval: BM25 + dense, fused with RRF <span class="verdict v-adopt">Adopt</span></h3>
-    <p>Run a lexical index (BM25) alongside the vector index and merge ranked lists with reciprocal rank fusion. For this corpus it is likely the single largest quality win: proposal codes, entity names, and monetary figures are exactly what lexical search nails and dense embeddings blur. Cost is minimal — <code>rank-bm25</code> or a small SQLite FTS5 index over the same chunks, no new services, no re-embedding. Effectively no downside.</p>
+    <h3>Hybrid retrieval: BM25 + dense, fused with RRF <span class="verdict v-adopt">Implemented</span></h3>
+    <p>The current SQLite FTS5 and dense indexes are fused with reciprocal rank fusion. On the 30-question retrieval evaluation, hybrid search reaches 100% recall@5 and 1.00 MRR versus 30% recall@5 and 0.28 MRR for dense-only retrieval. The tradeoff is measurable latency: 139 ms/query versus 32 ms/query in the recorded run, which is acceptable for now and should remain visible in regression tests.</p>
   </div>
 
   <div class="approach adopt">
-    <h3>Structure-aware chunking <span class="verdict v-adopt">Adopt</span></h3>
-    <p>The current splitter cuts blindly every 1,000 characters, severing budget tables mid-row and headings from their bodies. The extracted markdown already carries the structure — split on headings, keep tables atomic, and prepend the section path (<i>"FP274 › B.3 Financing information"</i>) to each chunk before embedding. This is a cheap version of Anthropic's contextual-retrieval result (~49% fewer retrieval failures when chunks carry situating context, ~67% combined with reranking). The full technique — an LLM writes a situating sentence per chunk — is affordable here as a one-off batch job (~18M tokens through Haiku at Batch API pricing is on the order of $10–15), but heading-path prefixes get most of the benefit for free.</p>
-    <p><b>Constraint:</b> the grounded-viewer feature maps chunk text to page regions. Any chunking change requires re-running the grounding backfill, so batch these changes together.</p>
+    <h3>Structure-aware chunking <span class="verdict v-adopt">Next</span></h3>
+    <p>The current splitter cuts every 1,000 characters, which can separate budget-table values from row labels and headings from their bodies. Split on document headings, keep tables atomic where practical, and add the section path to a separate <code>retrieval_text</code> field. Preserve the verbatim passage as <code>source_text</code> for prompts, citations, and the grounded viewer.</p>
+    <p><b>Constraint:</b> any chunking change requires an index rebuild and grounding backfill. Version the chunk schema and run the old and new indexes side by side until answer-level evaluation supports the migration.</p>
   </div>
 
   <div class="approach adopt">
-    <h3>Modern embedding model <span class="verdict v-adopt">Adopt</span></h3>
+    <h3>Modern embedding model <span class="verdict v-later">Measure first</span></h3>
     <p><code>all-mpnet-base-v2</code> (2021, 768-dim, 384-token input) trails current open models by a wide margin on retrieval benchmarks. <code>BAAI/bge-m3</code> or <code>intfloat/multilingual-e5-large</code> run locally on the same sentence-transformers stack and handle longer inputs (8k tokens for bge-m3, which suits table-atomic chunks). A one-line config change (<code>EMBEDDING_MODEL</code> env var) plus a rebuild; the index config already records the model name, so old and new indexes coexist under <code>data/index/&lt;name&gt;</code> for A/B comparison.</p>
   </div>
 
   <div class="approach adopt">
-    <h3>Cross-encoder reranking <span class="verdict v-adopt">Adopt</span></h3>
-    <p>Retrieve top-30/50 with hybrid search, rerank with <code>bge-reranker-v2-m3</code> (local, CPU-tolerable at this scale), keep the top 8–12. Rerankers read query and passage together, so they resolve exactly the ambiguity that kills bi-encoders on templated documents — distinguishing "mitigation impact <i>of FP274</i>" from the same paragraph in 89 other proposals. This also lets you raise the context budget: 10–12 reranked chunks (~4–6k tokens) is still cheap for Claude and materially improves synthesis answers.</p>
+    <h3>Cross-encoder reranking <span class="verdict v-adopt">Next</span></h3>
+    <p>Retrieve a wider hybrid candidate set, rerank with a cross-encoder such as <code>bge-reranker-v2-m3</code>, and keep the best 8–12 passages. Reading the query and passage together should help distinguish a field for FP274 from the same templated field in many other proposals. Benchmark CPU latency and answer quality before enabling it by default.</p>
   </div>
 
   <div class="approach adopt">
-    <h3>History-aware query rewriting <span class="verdict v-adopt">Adopt (bug-level fix)</span></h3>
-    <p>Before retrieval, have the chat model condense the follow-up plus history into a standalone query ("what about its budget?" → "total budget of funding proposal FP274"). One cheap Haiku call, or a prompt-only instruction on the main call in a two-pass design. Without this, every follow-up question retrieves against an unresolvable pronoun.</p>
+    <h3>History-aware query rewriting <span class="verdict v-adopt">Implemented</span></h3>
+    <p>The conductor now condenses follow-ups into standalone retrieval queries and resolves explicit proposal identifiers. The remaining correctness issue is downstream: prior assistant turns are still included in final answer generation, so retrieved evidence and conversational continuity need separate inputs and precedence rules.</p>
   </div>
 
   <h3 style="margin-top:2.6rem">Tier B — Multi-document capability (the enterprise requirement)</h3>
 
   <div class="approach adopt">
-    <h3>Document metadata + filtered retrieval <span class="verdict v-adopt">Adopt</span></h3>
-    <p>Build a small registry per document — proposal number, title, country/region, accredited entity, board meeting, sector, total financing — extracted once with Claude (the cover pages are templated, so this is a reliable batch job). Store it in <code>chunks.jsonl</code> metadata and a <code>docs.json</code> sidecar. This unlocks three things: scoped retrieval ("in FP274 …" filters chunks to that document before search), aggregation queries answered directly from the registry ("which proposals target West Africa" is a metadata lookup, not a retrieval problem), and per-document source labels in the UI. FAISS flat search doesn't filter natively, but at ~20–40k chunks a post-filter or per-doc sub-index is trivial.</p>
+    <h3>Document metadata + filtered retrieval <span class="verdict v-later">Partial</span></h3>
+    <p>The current <code>data/registry.json</code> contains 273 documents and resolves proposal identifiers, titles, accredited entities, countries, years, and some financing fields. The next schema must retain page-level provenance, extraction method and confidence, normalized values, and conflicting candidates. That turns registry answers from convenient shortcuts into auditable evidence.</p>
   </div>
 
   <div class="approach adopt">
-    <h3>Query decomposition + grouped retrieval <span class="verdict v-adopt">Adopt</span></h3>
+    <h3>Query decomposition + grouped retrieval <span class="verdict v-later">Partial</span></h3>
     <p>For comparison queries, one retrieval pass cannot serve two documents fairly. Have the model (or a rule on detected proposal codes) split "compare FP270 and FP274 budgets" into per-document sub-queries, retrieve top-k <i>within each document</i>, and assemble a sectioned context. Guaranteeing per-document quota is the point — it converts cross-doc comparison from "usually fails" to "works by construction". Pairs naturally with the metadata registry for resolving names ("the Chad proposal") to doc ids.</p>
   </div>
 
   <div class="approach adopt">
-    <h3>Two-stage retrieval: route to documents, then chunks <span class="verdict v-adopt">Adopt (stage 2)</span></h3>
-    <p>Embed a one-paragraph summary per document (generated once, batch). Stage 1 ranks documents; stage 2 searches chunks within the winners. With only ~90 documents the summaries even fit in the prompt directly, so document routing can be a single LLM classification instead of a second vector index. This kills the near-duplicate problem at its root — the templated sections of non-selected proposals never compete — and gives aggregation/summarisation queries a corpus-level surface to work from (the RAPTOR idea, at the depth this corpus actually needs).</p>
+    <h3>Two-stage retrieval: route to documents, then chunks <span class="verdict v-later">Partial</span></h3>
+    <p>Explicit proposal identifiers already route retrieval to document-scoped searches. A broader first-stage router based on registry fields or document summaries may help name-based and thematic questions, but it should be added only after the answer-level benchmark shows unresolved document-selection errors.</p>
   </div>
 
   <div class="approach">
     <h3>Long-context reading with prompt caching <span class="verdict v-later">Adopt selectively</span></h3>
-    <p>Current Claude models take 1M tokens of context, and a whole proposal (~200k tokens) fits in one call. For deep single-document work — "walk me through the financial structure of FP274" — stuffing the routed document beats any chunk retrieval on answer quality. Prompt caching makes repeat questions against the same document ~90% cheaper, and the native citations feature (<code>citations: {enabled: true}</code> on a document block) returns passage-level cites that could feed the existing grounded viewer. Cost is the constraint: a cold 200k-token call is ~$0.60 at Sonnet input pricing versus well under a cent for a chunk-based answer, and latency rises accordingly. Use it as an explicit "deep dive" path after document routing, not the default.</p>
+    <p>Some model providers support whole-document contexts, prompt caching, and native citations. This may be useful for deep single-document work, but the current OpenAI-compatible deployment needs its own quality, cost, latency, and citation-grounding benchmark. Keep it as an explicit deep-dive experiment after document routing, not the default path.</p>
   </div>
 
   <div class="approach">
-    <h3>Agentic retrieval (Claude drives a search tool) <span class="verdict v-later">Adopt for hard queries (stage 3)</span></h3>
-    <p>Give Claude a <code>search_corpus(query, doc_filter?)</code> tool (plus <code>list_documents</code> over the registry) and let it iterate: search, read, refine, search again. This is the highest-ceiling option — it handles multi-hop questions no single retrieval pass can ("which proposals share an accredited entity with FP270, and how do their grant terms differ?") and degrades gracefully to one tool call for simple lookups. Costs are 2–6× the latency and tokens of single-shot RAG and the answer pipeline becomes a loop (the SDK tool-runner handles this). The right posture: route to it when decomposition detects a complex query, keep single-shot for the rest.</p>
+    <h3>Agentic retrieval (model-driven search loop) <span class="verdict v-later">Adopt for hard queries (stage 3)</span></h3>
+    <p>Expose <code>search_corpus(query, doc_filter?)</code> and <code>list_documents</code> tools so the answer model can search, inspect evidence, refine, and search again. This can handle multi-hop questions that defeat one retrieval pass, but it increases latency, token use, and evaluation complexity. Consider it only after deterministic field planning and claim verification are reliable.</p>
   </div>
 
   <h3 style="margin-top:2.6rem">Tier C — Heavy machinery</h3>
@@ -269,33 +274,34 @@
 
   <div class="approach skip">
     <h3>ColBERT / late-interaction, fine-tuned embeddings <span class="verdict v-skip">Skip</span></h3>
-    <p>Late-interaction models and domain-fine-tuned embedders chase the same gains hybrid + reranking already capture, with a much heavier serving stack (per-token vectors, custom index) or a training pipeline you'd have to maintain. Not warranted at 90 documents.</p>
+    <p>Late-interaction models and domain-fine-tuned embedders chase many of the gains hybrid search and reranking already capture, with a much heavier serving stack or training pipeline. They are not warranted at the current corpus scale without evidence from the answer-level benchmark.</p>
   </div>
 
   <h2>3 · Side-by-side</h2>
   <div class="wrap-wide"><div class="table-scroll"><table>
-    <tr><th>Approach</th><th>Single-doc factual</th><th>Synthesis</th><th>Cross-doc compare</th><th>Aggregation</th><th>Effort</th><th>Runtime cost</th></tr>
-    <tr><td>Hybrid BM25 + dense</td><td>++</td><td>+</td><td>+</td><td>·</td><td class="num">~1 day</td><td class="num">negligible</td></tr>
-    <tr><td>Structure-aware chunking</td><td>++ (tables)</td><td>+</td><td>+</td><td>·</td><td class="num">1–2 days¹</td><td class="num">none</td></tr>
-    <tr><td>Modern embedder</td><td>+</td><td>+</td><td>+</td><td>·</td><td class="num">hours</td><td class="num">none</td></tr>
-    <tr><td>Reranker</td><td>++</td><td>++</td><td>+</td><td>·</td><td class="num">~1 day</td><td class="num">+100–300 ms</td></tr>
-    <tr><td>Query rewriting</td><td>++ (follow-ups)</td><td>++</td><td>+</td><td>+</td><td class="num">hours</td><td class="num">1 small call</td></tr>
-    <tr><td>Metadata registry + filters</td><td>++</td><td>+</td><td>++</td><td>++</td><td class="num">2–3 days</td><td class="num">negligible</td></tr>
-    <tr><td>Decomposition + per-doc quota</td><td>·</td><td>+</td><td>++</td><td>+</td><td class="num">1–2 days</td><td class="num">1 small call</td></tr>
-    <tr><td>Two-stage doc routing</td><td>+</td><td>++</td><td>++</td><td>++</td><td class="num">2–3 days</td><td class="num">negligible</td></tr>
-    <tr><td>Long-context + caching</td><td>+</td><td>+++</td><td>+</td><td>·</td><td class="num">1–2 days</td><td class="num">$0.1–0.6/query²</td></tr>
-    <tr><td>Agentic retrieval</td><td>+</td><td>++</td><td>+++</td><td>+++</td><td class="num">~1 week</td><td class="num">2–6× tokens/latency</td></tr>
-    <tr><td>GraphRAG</td><td>·</td><td>·</td><td>+</td><td>++</td><td class="num">weeks + upkeep</td><td class="num">high build cost</td></tr>
+    <tr><th>Approach</th><th>Status</th><th>Single-doc factual</th><th>Synthesis</th><th>Cross-doc compare</th><th>Aggregation</th><th>Next decision</th></tr>
+    <tr><td>Hybrid BM25 + dense</td><td>Implemented</td><td>++</td><td>+</td><td>+</td><td>·</td><td>Keep; optimize only if latency matters</td></tr>
+    <tr><td>Structure-aware chunking</td><td>Open</td><td>++ (tables)</td><td>+</td><td>+</td><td>·</td><td>Build with source/retrieval text separation</td></tr>
+    <tr><td>Modern embedder</td><td>Open</td><td>+</td><td>+</td><td>+</td><td>·</td><td>A/B after page-level gold exists</td></tr>
+    <tr><td>Reranker</td><td>Open</td><td>++</td><td>++</td><td>+</td><td>·</td><td>Implement after candidate/page labels</td></tr>
+    <tr><td>Query rewriting</td><td>Implemented</td><td>++ (follow-ups)</td><td>++</td><td>+</td><td>+</td><td>Keep behind <code>CONDUCTOR</code></td></tr>
+    <tr><td>Metadata registry + filters</td><td>Partial</td><td>++</td><td>+</td><td>++</td><td>++</td><td>Add provenance and conflicts</td></tr>
+    <tr><td>Decomposition + per-doc quota</td><td>Partial</td><td>·</td><td>+</td><td>++</td><td>+</td><td>Add deterministic field matrix</td></tr>
+    <tr><td>Two-stage doc routing</td><td>Partial</td><td>+</td><td>++</td><td>++</td><td>++</td><td>Extend beyond explicit identifiers</td></tr>
+    <tr><td>Claim verification</td><td>Open</td><td>++</td><td>++</td><td>++</td><td>+</td><td>Verify support before display</td></tr>
+    <tr><td>Long-context / agentic</td><td>Deferred</td><td>+</td><td>+++</td><td>+++</td><td>+++</td><td>Build only after measured need</td></tr>
+    <tr><td>GraphRAG</td><td>Skipped</td><td>·</td><td>·</td><td>+</td><td>++</td><td>Revisit only for global themes</td></tr>
   </table></div></div>
-  <p style="font-size:0.85rem; color:var(--ink-faint);">¹ plus re-running the grounding backfill, since chunk→page-region mapping depends on chunk text. &nbsp;² cold call at Sonnet-tier input pricing; ~90% cheaper on cache hits.</p>
+  <p style="font-size:0.85rem; color:var(--ink-faint);">Status reflects the repository's <code>main</code> branch at the August 2026 checkpoint. Runtime and model choices must be remeasured against the deployed OpenAI-compatible endpoint.</p>
 
   <h2>4 · How to know it worked: the evaluation harness</h2>
-  <p>"Great answers" needs a measurement, or every change is a guess. Before changing the pipeline, build a small gold set — this is also the deliverable that makes the comparison defensible in the project report:</p>
+  <p>The existing harness proves document retrieval, but it cannot distinguish a correct answer from a hallucination generated from the correct document. Extend it rather than replacing it:</p>
   <ul>
-    <li><b>50–80 questions</b> spread across the four query classes, each with the expected answer and the ground-truth document/pages (the page-aware index makes labelling easy).</li>
-    <li><b>Retrieval metrics</b>, judged without the LLM: recall@k and MRR against the labelled pages. This isolates whether a change helped retrieval before any generation noise enters.</li>
-    <li><b>Answer metrics</b> via LLM-as-judge (a fixed judge model scoring correctness and faithfulness against the gold answer and retrieved context), plus citation accuracy — did the cited doc/page actually contain the claim? The grounding machinery already computes exactly this mapping.</li>
-    <li>Run it as a script over each index/config so <code>default</code> vs <code>hybrid-rerank</code> vs <code>routed</code> becomes one table. The Batch API halves the judging cost.</li>
+    <li><b>50–80 questions</b> across identifier, semantic, comparison, contradiction, multilingual, noisy-input, and unanswerable classes.</li>
+    <li><b>Document and page retrieval metrics:</b> recall@k, MRR, per-document coverage, and evidence-page recall.</li>
+    <li><b>Deterministic answer checks:</b> required-field coverage, arithmetic, currency compatibility, identifier conflicts, and abstention accuracy.</li>
+    <li><b>Claim checks:</b> each atomic claim classified as supported, contradicted, or unsupported by its cited page; track citation precision and completeness separately.</li>
+    <li><b>Conversation checks:</b> rerun the same question after unrelated turns to detect history contamination.</li>
   </ul>
 
   <h2>5 · Recommended path</h2>
@@ -303,34 +309,34 @@
   <div class="stage">
     <div class="stage-num">1</div>
     <div>
-      <h3>Retrieval foundation <span style="font-weight:400; color:var(--ink-faint); font-size:0.9rem;">(~1 week, no architecture change)</span></h3>
-      <p>Eval harness first. Then structure-aware chunking + heading-path context, modern embedder, hybrid BM25+dense with RRF, reranker to top-10, score threshold, and history-aware query rewriting. Re-run the grounding backfill once at the end. This tier alone should transform single-document quality and is prerequisite plumbing for everything else.</p>
+      <h3>Measure answer correctness <span style="font-weight:400; color:var(--ink-faint); font-size:0.9rem;">(next)</span></h3>
+      <p>Promote the complex manual probes into an answer-level regression suite with exact pages, expected fields, conflict outcomes, and abstentions. Freeze current hybrid metrics as the retrieval baseline.</p>
     </div>
   </div>
   <div class="stage">
     <div class="stage-num">2</div>
     <div>
-      <h3>Multi-document capability <span style="font-weight:400; color:var(--ink-faint); font-size:0.9rem;">(~1 week)</span></h3>
-      <p>Metadata registry (batch-extract once), document routing, query decomposition with per-document retrieval quotas, and registry-answered aggregation queries. This is the stage that delivers the stated enterprise requirement — queries spanning one to many documents.</p>
+      <h3>Build an evidence-first answer path <span style="font-weight:400; color:var(--ink-faint); font-size:0.9rem;">(core work)</span></h3>
+      <p>Isolate factual generation from prior assistant answers; add provenance-aware structured facts, section/page expansion, deterministic document × field planning, and cross-encoder reranking. Preserve contradictions rather than normalizing them away.</p>
     </div>
   </div>
   <div class="stage">
     <div class="stage-num">3</div>
     <div>
-      <h3>High-ceiling paths, routed by query type <span class="chip" style="font-weight:400; color:var(--ink-faint); font-size:0.9rem;">(optional, after measuring stage 2)</span></h3>
-      <p>Long-context deep-dive mode for single-document analysis (with prompt caching and native citations feeding the grounded viewer), and an agentic search loop for the multi-hop queries that decomposition flags as complex. Only build what the eval numbers say is still failing.</p>
+      <h3>Verify and selectively escalate <span class="chip" style="font-weight:400; color:var(--ink-faint); font-size:0.9rem;">(after core work)</span></h3>
+      <p>Check each generated claim against its cited evidence and repair or abstain once. Consider a modern embedder, vision verification for difficult tables, long-context reading, or agentic search only where the expanded evaluation still shows a measurable gap.</p>
     </div>
   </div>
 
   <div class="callout">
-    <b>Bottom line.</b> No single "advanced RAG" swap wins here. The corpus (few, huge, templated, identifier-dense documents) rewards a layered design: hybrid + reranked retrieval as the floor, metadata and document routing as the multi-document mechanism, and agentic / long-context modes reserved for the queries that need them. GraphRAG and custom embedding training are not justified at this scale.
+    <b>Bottom line.</b> The hybrid and routing foundation is working. The next milestone is not another broad architecture swap; it is a verifiable evidence contract from document fields and sections through to answer claims. See <a href="rag-correctness-next-steps.html">RAG correctness: next implementation steps</a> for the executable plan.
   </div>
 
   <div class="note">
-    <b>Operational notes.</b> The LM Studio single-concurrency limit only affects VLM extraction, not the answer path (which uses the Anthropic API). All Tier-A components (BM25, embedder, reranker) run locally, so per-query cost stays dominated by the one Claude call. Nothing in this report has been changed in the repository — it is an evaluation only.
+    <b>Operational notes.</b> The answer path currently uses an OpenAI-compatible chat client and <code>gpt-4o-mini</code> by default. Hybrid retrieval averages 139 ms/query in the local harness versus 32 ms for dense-only; optimize that overhead only after correctness gates are in place. Model-specific pricing, context limits, and caching claims in earlier revisions are historical assumptions, not current deployment guarantees.
   </div>
 
-  <p class="footer">Prepared from the current <code>feature/grounded-viewer</code> branch: <code>src/gcf_qna/rag/</code> (chunk · embed · index · retrieve · ground) and <code>src/gcf_qna/app/chainlit_app.py</code>. Corpus figures measured from <code>data/extracted/</code>.</p>
+  <p class="footer">Living roadmap for <code>main</code>. Current measurements: 30-question English retrieval set, 273-document registry, 175,225-chunk default index, and 20 passing unit tests. Detailed implementation sequence: <a href="rag-correctness-next-steps.html">rag-correctness-next-steps.html</a>.</p>
 </div>
 </body>
 </html>
