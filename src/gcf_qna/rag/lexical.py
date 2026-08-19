@@ -96,7 +96,12 @@ class LexicalIndex:
             con = self._con
             con.execute("CREATE VIRTUAL TABLE chunks_fts USING fts5"
                         "(toks, content='', columnsize=1, tokenize=\"unicode61 tokenchars '.'\")")
-            rows = ((i, " ".join(tokenize(c["text"]) + _doc_tokens(c.get("doc_id", ""))))
+            # BM25 sees the same string the embedder saw: retrieval_text, i.e.
+            # the section path plus the page text (schema-1 chunks have no
+            # section path and fall back to the text itself).
+            from gcf_qna.rag.parse import retrieval_text
+            rows = ((i, " ".join(tokenize(retrieval_text(c))
+                                 + _doc_tokens(c.get("doc_id", ""))))
                     for i, c in enumerate(chunks))
             con.executemany("INSERT INTO chunks_fts(rowid, toks) VALUES (?, ?)", rows)
             con.execute("CREATE TABLE meta (key TEXT PRIMARY KEY, value TEXT)")

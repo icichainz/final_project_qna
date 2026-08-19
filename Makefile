@@ -46,8 +46,8 @@ retry:               ## extraction including docs that exhausted their attempt c
 boxes:               ## backfill page-geometry sidecars for cached pages (LIMIT=N dirs)
 	$(PY) scripts/backfill_boxes.py $(_limit)
 
-index:               ## build a FAISS index (SOURCE=<extraction dir> NAME=<index name>)
-	$(PY) scripts/build_index.py --source $(SOURCE) --name $(NAME) $(_limit)
+index:               ## build a FAISS index (SOURCE=<extraction dir> NAME=<index name> FORCE=1 to overwrite)
+	$(PY) scripts/build_index.py --source $(SOURCE) --name $(NAME) $(_limit) $(if $(FORCE),--force)
 
 ground-demo:         ## draw citation highlights on real pages (DOC=<stem> OUT=<dir>)
 	$(PY) scripts/demo_grounding.py --doc $(DOC) --out $(OUT)
