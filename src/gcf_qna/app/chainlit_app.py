@@ -22,6 +22,10 @@ from chainlit.types import ThreadDict
 from gcf_qna import config
 from gcf_qna.boards import BOARD_YEARS, board_of, year_of
 from gcf_qna.rag import registry
+# ONE definition of the FP-token pattern, shared with the registry: a second
+# copy here drifted (it lacked the trailing boundary and the zero-strip) and
+# resolved 'fp2023' to FP202's document.
+from gcf_qna.rag.registry import _FP_RE
 from gcf_qna.app.highlight import annotated_page
 from gcf_qna.rag import Embedder, Retriever, load_index
 from gcf_qna.rag.ground import ground_chunk
@@ -99,25 +103,138 @@ def _invalid_citations(answer: str, hits: list):
     return bad
 
 
+# Corpus span, derived from the board table: the ceiling/floor a half-open
+# range phrasing ("after 2023") expands to.
+_CORPUS_LO, _CORPUS_HI = min(BOARD_YEARS.values()), max(BOARD_YEARS.values())
+
+_YEAR_RE = re.compile(r"\b(20[12]\d)\b")
+# a range word within a short gap of the year ("approved after 2023",
+# "depuis 2023", "after the year 2023"); the gap is bounded so an unrelated
+# "in 2019, after the board met" cannot turn into a range
+_OPEN_RANGE_RE = re.compile(
+    r"\b(after|since|from|before|until|apr[eè]s|depuis|avant|[àa] partir de)\b"
+    r"[^\d]{0,12}?(20[12]\d)\b", re.I)
+# closed range: "from 2019 to 2021", "2019-2021", "de 2019 à 2021". 'and'/'et'
+# are deliberately absent — "2019 and 2021" names two years, not a span.
+_CLOSED_RANGE_RE = re.compile(
+    r"\b(20[12]\d)\s*(?:-|–|—|to|through|jusqu'?[àa]|[àa])\s*(20[12]\d)\b", re.I)
+# 'from 2020' alone reads as "of 2020" in both languages (and is the exact
+# phrasing of the year-aggregate questions this note exists for), so 'from'
+# only opens a range when the message says so explicitly.
+_ONWARD_RE = re.compile(r"\bonwards?\b|\bor later\b|\bto date\b|\bto now\b", re.I)
+
+
+def _scan_years(question: str):
+    """(years asked about, phrases that fall entirely outside the corpus).
+
+    Literal tokens are exact; a range word attached to a year opens the set
+    (corpus span 2015-2025, from BOARD_YEARS):
+
+        after / après Y      -> Y+1 .. 2025     (bound excluded)
+        since / depuis Y     -> Y   .. 2025     (bound included)
+        à partir de Y        -> Y   .. 2025
+        from Y (+ 'onwards') -> Y   .. 2025
+        before / avant Y     -> 2015 .. Y-1     (bound excluded)
+        until Y              -> 2015 .. Y       (bound included)
+        Y to / à / - Y2      -> Y .. Y2         (both bounds included)
+
+    A year consumed as a range bound is not re-added as a literal, which is
+    what keeps 'after 2023' off 2023 itself. Without this, "approved after
+    2023" fired for 2023 only and the note never mentioned FP274 (2025).
+
+    A range that lands outside the corpus ('before 2015') yields NO years —
+    listing 2015's proposals under a pre-2015 question is a wrong answer
+    stated with confidence. It returns a phrase instead, which _year_assist
+    turns into a definitive out-of-range note.
+    """
+    years: set = set()
+    consumed: list = []          # spans of year tokens a range already covers
+    outside: list = []           # phrasings with nothing in the corpus
+
+    for m in _CLOSED_RANGE_RE.finditer(question):
+        a, b = int(m.group(1)), int(m.group(2))
+        if a <= b:
+            got = {y for y in range(a, b + 1) if _CORPUS_LO <= y <= _CORPUS_HI}
+            years |= got
+            consumed += [m.span(1), m.span(2)]
+            if not got:
+                outside.append(f"between {a} and {b}")
+
+    onward = bool(_ONWARD_RE.search(question))
+    for m in _OPEN_RANGE_RE.finditer(question):
+        if any(s <= m.start(2) < e for s, e in consumed):
+            continue                                  # already a closed bound
+        word = re.sub(r"\s+", " ", m.group(1).lower())
+        y = int(m.group(2))
+        if word == "from" and not onward:
+            continue                                  # "proposals from 2020"
+        if word in ("after", "après", "apres"):
+            rng, phrase = range(y + 1, _CORPUS_HI + 1), f"after {y}"
+        elif word in ("before", "avant"):
+            rng, phrase = range(_CORPUS_LO, y), f"before {y}"
+        elif word == "until":
+            rng, phrase = range(_CORPUS_LO, y + 1), f"up to {y}"
+        else:                                         # since / depuis / from / à partir de
+            rng, phrase = range(y, _CORPUS_HI + 1), f"from {y} onwards"
+        got = {yy for yy in rng if _CORPUS_LO <= yy <= _CORPUS_HI}
+        years |= got
+        consumed.append(m.span(2))
+        if not got and phrase not in outside:
+            outside.append(phrase)
+
+    for m in _YEAR_RE.finditer(question):
+        if not any(s <= m.start() < e for s, e in consumed):
+            years.add(int(m.group(1)))
+    return years, outside
+
+
+def _year_scope(question: str) -> set:
+    """The years a question asks about (see _scan_years)."""
+    return _scan_years(question)[0]
+
+
+def _outside_corpus_note(outside: list) -> str:
+    """Definitive 'the corpus has nothing there' for a range with no overlap."""
+    lo, hi = min(BOARD_YEARS), max(BOARD_YEARS)
+    return (f"Note (computed): this corpus covers board meetings B.{lo} "
+            f"({BOARD_YEARS[lo]}) through B.{hi} ({BOARD_YEARS[hi]}) completely "
+            f"and contains no proposals {', '.join(outside)}. State this "
+            f"definitively.")
+
+
+def _span_text(labels: list, prefix: str = "") -> str:
+    """'2015, 2016' but '2015–2025' once a contiguous run gets long."""
+    if len(labels) > 3 and labels[-1] - labels[0] == len(labels) - 1:
+        return f"{prefix}{labels[0]}–{prefix}{labels[-1]}"
+    return ", ".join(f"{prefix}{v}" for v in labels)
+
+
 def _year_assist(question: str, hits: list):
     """Code-side year matching: if the question names a year, sort matching
     excerpts first and emit a note computed from the REGISTRY, which is
     complete for the corpus — retrieval never surfaces all of a year's
     proposals, so excerpt-scoped notes made the model refuse year
-    aggregates ('which proposals were approved in 2020?')."""
-    years = {int(y) for y in re.findall(r"\b(20[12]\d)\b", question)}
+    aggregates ('which proposals were approved in 2020?').
+
+    Range phrasings ('after 2023') expand across the corpus span; past three
+    years the per-FP listing would swamp the context, so wide spans get
+    per-year counts and FP ranges instead. A range with no overlap at all
+    ('before 2015') gets a definitive out-of-range note, never a listing of
+    the nearest year.
+    """
+    years, outside = _scan_years(question)
     if not years:
-        return hits, None
+        return hits, (_outside_corpus_note(outside) if outside else None)
     matched = [h for h in hits if year_of(h.doc_id) in years]
     rest = [h for h in hits if h not in matched]
-    ys = ", ".join(str(y) for y in sorted(years))
+    ys = _span_text(sorted(years))
     try:
         registry.load()
     except Exception:
         # registry unavailable -> the old excerpt-scoped note; never claim
         # "no proposals that year" on the strength of a missing file
-        boards = ", ".join(f"B.{b}" for b, y in sorted(BOARD_YEARS.items())
-                           if y in years)
+        boards = _span_text(sorted(b for b, y in BOARD_YEARS.items() if y in years),
+                            prefix="B.")
         note = (f"Note (computed from document ids): "
                 + (("excerpts dated " + ys + ": "
                     + "; ".join(_doc_label(h.doc_id, h.page) for h in matched)
@@ -126,15 +243,31 @@ def _year_assist(question: str, hits: list):
                    f"none of the retrieved excerpts are from {ys} (boards "
                    f"{boards}). Answer what the excerpts support and state "
                    f"this limit."))
+        if outside:      # e.g. "before 2015 or in 2020": half is out of range
+            note += " " + _outside_corpus_note(outside)
         return matched + rest, note
+    detailed = len(years) <= 3
     lines = []
     for y in sorted(years):
         rows = [r for r in registry.by_year(y) if r.get("fp")]
-        if rows:
+        if rows and detailed:
             def _money(r):
                 return f" ({r['gcf_financing']} GCF)" if r.get("gcf_financing") else ""
             fps = "; ".join(f"FP{r['fp']}{_money(r)}" for r in rows)
             lines.append(f"{y} — {len(rows)} proposals: {fps}.")
+        elif rows:
+            # 'FPa–FPb' claims every number between a and b belongs to this
+            # year, which is false for most years (2023 spans FP86..FP224 with
+            # 110 outsiders) — and this note is labelled authoritative. Emit
+            # the range ONLY when the numbers really are consecutive.
+            fps = sorted(r["fp"] for r in rows)
+            if len(fps) == 1:
+                span = f": FP{fps[0]}"
+            elif fps == list(range(fps[0], fps[-1] + 1)):
+                span = f": FP{fps[0]}–FP{fps[-1]}"
+            else:
+                span = f" (FP{fps[0]} … FP{fps[-1]}, not contiguous)"
+            lines.append(f"{y} — {len(rows)} proposals{span}.")
         else:
             boards = ", ".join(f"B.{b}" for b, yy in sorted(BOARD_YEARS.items())
                                if yy == y)
@@ -149,6 +282,8 @@ def _year_assist(question: str, hits: list):
     note = ("Note (computed from the corpus registry, which is complete — "
             "this list is authoritative, unlike the excerpts): "
             + " ".join(lines) + tail)
+    if outside:          # e.g. "before 2015 or in 2020": half is out of range
+        note += " " + _outside_corpus_note(outside)
     return matched + rest, note
 
 
@@ -167,12 +302,15 @@ def _board_range_note(question: str):
             f"B.{hi} ({BOARD_YEARS[hi]}) completely. State this definitively.")
 
 
-_FP_RE = re.compile(r"fp\s?(\d{2,3})")
-
-
 def _fp_of(text: str):
-    """First FP number in a string ('...package-fp214' -> '214')."""
-    m = _FP_RE.search((text or "").lower())
+    """First FP number in a string ('...package-fp214' -> '214').
+
+    Zero-padding is stripped by the shared pattern ('fp086' -> '86'), and the
+    trailing boundary keeps 'fp2023' from reading as FP202 — a truncated match
+    used to resolve a doc filter to a real but WRONG document, which is worse
+    than no filter at all.
+    """
+    m = _FP_RE.search(text or "")
     return m.group(1) if m else None
 
 
@@ -285,6 +423,52 @@ def _rescope_items(items: list, msg_text: str, history_docs: list) -> list:
                 item["doc"] = None
         else:
             item["doc"] = _resolve_doc(tag, hist) or tag
+    return items
+
+
+def _registry_doc(tag: str):
+    """The authoritative corpus stem a doc tag stands for, or the tag itself.
+
+    B.27-era filenames carry no FP number: FP152's document is
+    '123_gcf-b27-02-add12'. A tag of 'fp152' — whether the conductor wrote it
+    or _rescope_items rewrote it to that plain token — therefore matches no
+    document in Retriever._doc_match, and the scoped search silently degrades
+    to an unscoped generic phrase (observed live: a question about FP152's
+    board conditions answered from FP242 pages). The registry maps FP numbers
+    to stems, so resolve through it.
+
+    A tag that already IS a corpus id is left alone: the guard pinned it to a
+    document cited in the conversation, and swapping that for the FP-numbered
+    package doc would change which document the turn is scoped to. The
+    registry is an enhancement — unavailable, the tag survives untouched.
+    """
+    if not tag:
+        return tag
+    try:
+        docs = registry.load()
+        if tag in docs:
+            return tag
+        low = tag.lower()
+        if any(k.lower() == low for k in docs):
+            return tag
+        fp = _fp_of(tag)
+        row = registry.by_fp(int(fp)) if fp else None
+        return (row.get("doc_id") or tag) if row else tag
+    except Exception:
+        return tag
+
+
+def _resolve_doc_tags(items: list) -> list:
+    """Registry-resolve every surviving doc tag (see _registry_doc).
+
+    Runs AFTER _rescope_items: which tags survive is the guard's decision,
+    this only upgrades what a surviving tag points at. Stripped tags (None)
+    stay stripped — an FP number inside a tag the guard rejected must not
+    bring the scope back.
+    """
+    for item in items:
+        if item.get("doc"):
+            item["doc"] = _registry_doc(str(item["doc"]))
     return items
 
 
@@ -566,6 +750,11 @@ async def main(message: cl.Message):
                 return
     except Exception:
         pass
+
+    # Doc tags become retrieval filters here: resolve each one to its
+    # authoritative corpus stem first, since B.27-era ids contain no FP
+    # number and a bare 'fp152' filter would match nothing (_registry_doc).
+    search_queries = _resolve_doc_tags(search_queries)
 
     decomposed = len(search_queries) > 1
     if decomposed or search_queries[0]["q"] != message.content:
