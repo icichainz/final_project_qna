@@ -5,6 +5,13 @@ section; board/year derived from doc ids). Serves the fact classes that
 chunk retrieval handles worst: 'which entity implements FPnnn',
 'proposals of 2023', financing-at-a-glance. Financing values are RAW
 quoted strings from the documents — never normalized numbers.
+
+Schema 2 (data/registry_v2.json, built by scripts/build_registry_v2.py) adds
+provenance-aware facts on top, reached through facts()/canonical()/conflicts().
+Each fact is a list of candidates carrying raw source text, normalized value,
+currency, unit, page and template section, with one marked canonical and any
+disagreeing figure elsewhere in the document marked conflicting. It is a
+separate file with a separate cache: the v1 lookups above never read it.
 """
 from __future__ import annotations
 
@@ -29,12 +36,80 @@ def load() -> Dict[str, dict]:
     return _cache
 
 
+# --- schema 2: provenance-aware facts (additive; v1 paths never read this) ---
+_cache_v2: Optional[Dict[str, dict]] = None
+
+
+def load_v2() -> Dict[str, dict]:
+    """documents of data/registry_v2.json, or {} when it has not been built.
+
+    Separate cache from load(): every v1 code path keeps reading registry.json
+    even when the v2 file exists.
+    """
+    global _cache_v2
+    with _lock:
+        if _cache_v2 is None:
+            p = config.DATA_DIR / "registry_v2.json"
+            _cache_v2 = (json.loads(p.read_text(encoding="utf-8")).get("documents", {})
+                         if p.exists() else {})
+    return _cache_v2
+
+
+def _row_v2(fp_or_stem) -> Optional[dict]:
+    """Accepts a doc id, an FP number, 'FP274' or '274'."""
+    rows = load_v2()
+    if isinstance(fp_or_stem, str):
+        if fp_or_stem in rows:
+            return {"doc_id": fp_or_stem, **rows[fp_or_stem]}
+        m = _FP_RE.search(fp_or_stem) or re.fullmatch(r"\s*0*(\d{1,3})\s*", fp_or_stem)
+        if not m:
+            return None
+        fp_or_stem = int(m.group(1))
+    hits = [{"doc_id": k, **v} for k, v in rows.items() if v.get("fp") == fp_or_stem]
+    if not hits:
+        return None
+    hits.sort(key=lambda r: (f"fp{fp_or_stem}" not in r["doc_id"].lower(), r["doc_id"]))
+    return hits[0]
+
+
+def facts(fp_or_stem) -> Dict[str, List[dict]]:
+    """{field: [candidate, ...]} for a document, or {} when it has no v2 row.
+
+    Candidates keep their source text and page: {"raw", "value", "currency",
+    "unit", "page", "section", "status"}.
+    """
+    row = _row_v2(fp_or_stem)
+    return (row or {}).get("facts") or {}
+
+
+def canonical(fp_or_stem, field: str) -> Optional[dict]:
+    """The candidate parsed from the template section for `field`, or None.
+
+    None also means "the document states it somewhere but not in a template
+    section" — call facts() to see the other candidates.
+    """
+    return next((c for c in facts(fp_or_stem).get(field, [])
+                 if c.get("status") == "canonical"), None)
+
+
+def conflicts(fp_or_stem) -> Dict[str, List[dict]]:
+    """{field: [conflicting candidate, ...]} — fields whose document prints a
+    figure that disagrees with the canonical one. Empty dict when consistent."""
+    out = {}
+    for field, cands in facts(fp_or_stem).items():
+        bad = [c for c in cands if c.get("status") == "conflicting"]
+        if bad:
+            out[field] = bad
+    return out
+
+
 def by_fp(n: int) -> Optional[dict]:
     rows = [{"doc_id": k, **v} for k, v in load().items() if v.get("fp") == n]
     if not rows:
         return None
     # prefer the package document named after the FP over status/mention docs
-    rows.sort(key=lambda r: (f"fp{n}" not in r["doc_id"], r["doc_id"]))
+    # (case-folded: some stems are '72_GCF_B.35_..._FP203')
+    rows.sort(key=lambda r: (f"fp{n}" not in r["doc_id"].lower(), r["doc_id"]))
     return rows[0]
 
 
@@ -87,10 +162,20 @@ def _board_code_text(b_: str, item_: str, add_: str) -> str:
     return f"GCF/B.{b_}/" + (f"{item_}/" if item_ else "") + f"Add.{add_}"
 
 
+# FP ids as users write them: FP274, FP 274, FP-274, FP0086. Leading zeros are
+# stripped INSIDE the group, otherwise 'FP0086' captures '008' and confidently
+# resolves to FP8 — a different proposal. The trailing (?!\d) stops 'fp2023' (a
+# year) from being read as FP202; \b would also reject the real doc stems that
+# end '...-fp272_0', since '2' and '_' are both word characters.
+_FP_RE = re.compile(r"fp[\s\-]?0*(\d{1,3})(?!\d)", re.I)
+# public alias: the app imports this so the FP pattern has ONE definition
+FP_RE = _FP_RE
+
+
 def resolve_fps(question: str):
     """(resolved rows, missing fp numbers) for every FP id in the question."""
     resolved, missing = [], []
-    for n in dict.fromkeys(re.findall(r"fp\s?(\d{2,3})", question.lower())):
+    for n in dict.fromkeys(_FP_RE.findall(question.lower())):
         row = by_fp(int(n))
         (resolved if row else missing).append(row or int(n))
     return resolved, missing
@@ -103,7 +188,7 @@ def registry_note(question: str) -> Optional[str]:
     q = question.lower()
     notes: List[str] = []
     resolved_docs: List[str] = []
-    for n in dict.fromkeys(re.findall(r"fp\s?(\d{2,3})", q)):
+    for n in dict.fromkeys(_FP_RE.findall(q)):
         row = by_fp(int(n))
         if row:
             notes.append("Registry — " + _fmt(row))
