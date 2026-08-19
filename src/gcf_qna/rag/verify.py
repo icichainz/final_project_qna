@@ -217,6 +217,12 @@ def amounts(text: str, money_only: bool = False) -> List[Amount]:
     return list(iter_amounts(text, money_only))
 
 
+def _money_like_amount(a: Amount) -> bool:
+    """A figure that carries money semantics: a currency, a scale word, a
+    self-contradictory scale, or a magnitude no table index reaches."""
+    return bool(a.currency or a.unit or a.clash or (a.value or 0) >= 1e4)
+
+
 def amount_matches(a: Amount, b: Amount) -> bool:
     """Do two printed figures state the same thing?
 
@@ -341,6 +347,8 @@ def cited_sources(final_answer: str) -> List[Tuple[str, Optional[int]]]:
 # ---------------------------------------------------------------------------
 
 _BULLET_RE = re.compile(r"^\s*(?:[-*•‣]|\d+[.)])\s+")
+# a line carrying citations and nothing else ('[doc, p. 4]' under a bullet list)
+_CITE_ONLY_RE = re.compile(r"^\s*(?:\[[^\]]*\][\s.,;]*)+$")
 _HEADING_RE = re.compile(r"^\s*#{1,6}\s")
 _TABLE_RULE_RE = re.compile(r"^[\s|:\-—+]+$")
 
@@ -352,7 +360,11 @@ _MASK_RE = re.compile(
     r"|\bAdd\.\s*\d+|\bNo\.\s*\d+"
     r"|\be\.g\.|\bi\.e\.|\bcf\.|\bapprox\.|\bvs\.|\betc\.|\bU\.S\."
     r"|\bMr\.|\bMs\.|\bDr\.|\bSt\.|\bp\.ex\.|\bc\.-à-d\."
-    r"|\d[\d.,  ]*\d|\d")
+    r"|\d[\d.,  ]*\d|\d"
+    # an ellipsis inside an elided list ('FP124 … FP153') is not a
+    # sentence end: splitting there left the trailing citation on the
+    # fragment after it, and the fact before it looked uncited
+    r"|\.\.\.|…")
 
 _SENT_SPLIT_RE = re.compile(r"(?<=[.!?…])[\s]+(?=[\"“«\*_A-ZÀ-ÖØ-Þ0-9])")
 
@@ -419,6 +431,18 @@ _ENT_STOP = {
 _ENT_DROP_RE = re.compile(
     r"^(?:FP\s?-?\d{1,3}|B\.?\d{1,2}(?:[./]\d{1,2})*|GCF/[\w./]+|"
     r"[IVXLC]{1,6}|[0-9][\w.\-]*)$", re.I)
+# An identifier anywhere inside a candidate makes the whole candidate a
+# pointer: 'Funding Proposal FP173' is a reference to a document, and
+# demanding that exact string in the page reports a correct answer as
+# unsupported. The identifier is verified by the citation machinery instead.
+_ENT_HAS_ID_RE = re.compile(
+    r"\b(?:FP\s?-?\d{1,3}|B\.\s?\d{1,2}(?:[./]\d{1,2})*|GCF/[\w./]+"
+    r"|\d{1,3}_[\w.\-]{4,})\b", re.I)
+# single capitalized words that are grammar or template furniture, never names
+_ENT_GENERIC = {"unlocking", "valuing", "including", "funding", "financing",
+                "proposal", "proposals", "facility", "programme", "program",
+                "project", "projects", "activity", "equity", "annex",
+                "recommendation", "summary", "however", "therefore", "based"}
 
 
 def _deaccent(s: str) -> str:
@@ -549,11 +573,34 @@ def entities(text: str) -> List[List[str]]:
             key = norm_text(v)
             if not key or key in seen or key in _ENT_STOP:
                 continue
+            if _ENT_HAS_ID_RE.search(v):
+                continue                 # a pointer, not a name
+            if key in _ENT_GENERIC:
+                continue
             if not _entity_core(v) or not _looks_like_name(v, quoted):
                 continue
             seen.add(key)
             out.append(variants)
-    return out
+
+    # 'Angola, Benin and Kenya' yields the three countries AND the run 'Benin
+    # and Kenya' the capitalized-run scan saw. The run is an artifact: the page
+    # prints 'Benin, Kenya', so requiring it verbatim fails a correct answer.
+    names = {norm_text(vs[0]) for vs in out}
+
+    def _joined_artifact(name: str) -> bool:
+        parts = [p for p in re.split(r"\s+(?:and|et)\s+", name) if p]
+        return len(parts) > 1 and all(p in names for p in parts)
+
+    out = [vs for vs in out if not _joined_artifact(norm_text(vs[0]))]
+
+    # A single word already inside a longer surviving candidate adds no check:
+    # 'Unlocking' was cut out of the title it belongs to. Verifying the longer
+    # form covers it, and the fragment is what turns a reflowed title into a
+    # false 'unsupported'.
+    longer = [norm_text(vs[0]) for vs in out if len(vs[0].split()) > 1]
+    return [vs for vs in out
+            if len(vs[0].split()) > 1
+            or not any(norm_text(vs[0]) in ln for ln in longer)]
 
 
 def _is_list(c: str) -> bool:
@@ -578,6 +625,7 @@ class Claim:
     entities: List[List[str]] = dc_field(default_factory=list)
     index: int = 0
     unit_kind: str = "sentence"                 # sentence|bullet|table-row
+    inherited: bool = False                     # citations borrowed from the block
 
     @property
     def required(self) -> bool:
@@ -611,22 +659,74 @@ def split_sentences(text: str) -> List[str]:
                         for p in _SENT_SPLIT_RE.split(masked)) if s]
 
 
-def _units(answer: str) -> List[Tuple[str, str]]:
-    """(text, unit_kind) for every candidate claim unit of an answer."""
-    out: List[Tuple[str, str]] = []
+def _blocks(answer: str) -> List[List[str]]:
+    """Blank-line-separated blocks of non-empty, non-heading lines."""
+    out: List[List[str]] = []
+    cur: List[str] = []
     for raw in (answer or "").splitlines():
         line = raw.strip()
-        if not line or _HEADING_RE.match(line):
+        if not line:
+            if cur:
+                out.append(cur)
+                cur = []
             continue
-        if line.startswith("|"):
-            if not _TABLE_RULE_RE.match(line):
-                out.append((line, "table-row"))
+        if _HEADING_RE.match(line):
             continue
-        if _BULLET_RE.match(line):
-            out.append((_BULLET_RE.sub("", line), "bullet"))
-            continue
-        for s in split_sentences(line):
-            out.append((s, "sentence"))
+        cur.append(line)
+    if cur:
+        out.append(cur)
+    return out
+
+
+def _units(answer: str) -> List[Tuple[str, str, List[Citation], bool]]:
+    """(text, unit_kind, citations, inherited) for every candidate claim unit.
+
+    Citations are inherited within a paragraph. The dominant citation style in
+    these answers puts one bracket at the END of a two- or three-sentence
+    paragraph — under strict per-sentence attribution the sentences before it
+    all read as 'uncited factual claim', which was 4 of the 22 gold-passing
+    recorded answers. A sentence therefore borrows the nearest FOLLOWING
+    bracket of its own paragraph (falling back to the nearest preceding one),
+    and the borrowing is recorded so a verdict can say so.
+
+    Bullets and table rows never borrow: a list is a set of independent
+    statements, and one bullet's citation is not another's.
+    """
+    out: List[Tuple[str, str, List[Citation], bool]] = []
+    for block in _blocks(answer):
+        # A line that is nothing but citations is the whole block's source —
+        # the shape a bulleted list of countries takes, with one bracket under
+        # the last bullet. Every item of the block may borrow it, which is not
+        # the same as one bullet borrowing another bullet's inline citation.
+        block_cits: List[Citation] = []
+        for line in block:
+            if _CITE_ONLY_RE.match(line):
+                block_cits += parse_citations(line)
+        seq: List[Tuple[str, str, List[Citation], bool]] = []
+        for line in block:
+            if line.startswith("|"):
+                if not _TABLE_RULE_RE.match(line):
+                    seq.append((line, "table-row", parse_citations(line), True))
+                continue
+            if _BULLET_RE.match(line):
+                body = _BULLET_RE.sub("", line)
+                seq.append((body, "bullet", parse_citations(body), True))
+                continue
+            for s in split_sentences(line):
+                seq.append((s, "sentence", parse_citations(s), False))
+        for i, (text, kind, cits, isolated) in enumerate(seq):
+            if cits:
+                out.append((text, kind, cits, False))
+                continue
+            if isolated:
+                out.append((text, kind, block_cits, bool(block_cits)))
+                continue
+            after = next((seq[j][2] for j in range(i + 1, len(seq))
+                          if seq[j][2] and not seq[j][3]), None)
+            before = next((seq[j][2] for j in range(i - 1, -1, -1)
+                           if seq[j][2] and not seq[j][3]), None)
+            borrowed = after or before or block_cits or []
+            out.append((text, kind, borrowed, bool(borrowed)))
     return out
 
 
@@ -639,10 +739,16 @@ def claim_kind(text: str) -> Optional[str]:
     body = _strip_citations(text)
     if not re.search(r"[A-Za-zÀ-ÖØ-Þà-öø-þ]", body):
         return None
-    if _GLUE_RE.search(body) or _REFUSAL_RE.search(body):
-        return None
     amts = amounts(body)
-    if any(a.currency or a.unit or a.clash or (a.value or 0) >= 1e4 for a in amts):
+    if _GLUE_RE.search(body) or _REFUSAL_RE.search(body):
+        # ... unless the hedge still states a cited figure. 'In summary, FP151
+        # requests USD 18,500,000 [doc, p.5]' is a checkable claim wearing a
+        # connective; dropping the whole unit dropped the figure with it.
+        cited_figure = any(_money_like_amount(a) for a in amts) and \
+            bool(parse_citations(text))
+        if not cited_figure:
+            return None
+    if any(_money_like_amount(a) for a in amts):
         return "money"
     if _COUNT_RE.search(body) or _BIGNUM_RE.search(body):
         return "number"
@@ -665,15 +771,15 @@ def extract_claims(answer: str) -> List[Claim]:
     exactly what makes it interesting to the classifier.
     """
     claims: List[Claim] = []
-    for text, unit_kind in _units(answer):
+    for text, unit_kind, citations, inherited in _units(answer):
         kind = claim_kind(text)
         if kind is None:
             continue
         body = _strip_citations(text)
         claims.append(Claim(
-            text=text.strip(), kind=kind, citations=parse_citations(text),
+            text=text.strip(), kind=kind, citations=citations,
             amounts=amounts(body), entities=entities(body),
-            index=len(claims), unit_kind=unit_kind))
+            index=len(claims), unit_kind=unit_kind, inherited=inherited))
     return claims
 
 
@@ -812,10 +918,14 @@ def _scopes(claim: Claim, evidence: Evidence
     bad: List[str] = []
     for c in claim.citations:
         if c.doc is None:
-            if NOTES_KEY in evidence:
+            # only a bracket that READS as a pointer at the computed notes
+            # resolves to them. A bare '[p. 5]' names no document at all: it
+            # is a broken citation, and letting it land on the notes made
+            # every page-less page reference verify against a year note.
+            if c.kind == "note" and NOTES_KEY in evidence:
                 strict.append(NOTES_KEY)
             else:
-                bad.append(c.raw.strip())
+                bad.append(c.raw.strip()[:60])
             continue
         d = _resolve_doc(c.doc, docs)
         if d is None:
@@ -939,6 +1049,11 @@ def registry_conflict(doc_id: str, claim: Claim) -> Optional[str]:
                       for x in claim.amounts)]
     if not stated:
         return None                  # the answer states neither side; other checks own it
+    # An answer that already reports BOTH figures is the behaviour the prompt
+    # asks for, not a contradiction to repair.
+    if any((a := _as_amount(c.get("raw", ""))) and
+           any(amount_matches(a, x) for x in claim.amounts) for c in others):
+        return None
     alt = others[0]
     return (f"the corpus registry records a conflicting figure in this document: "
             f"'{stated[0].get('raw')}' (p.{stated[0].get('page')}) vs "
@@ -953,12 +1068,94 @@ def _check_amounts(claim: Claim, text: str) -> Tuple[bool, List[Amount]]:
     return (not missing), missing
 
 
-def _check_entities(claim: Claim, text: str) -> Tuple[bool, List[str]]:
+def _registry_blob(doc_id: str) -> str:
+    """Everything the registry prints for a document, as one searchable text.
+
+    Both schemas: the v1 cover-page row (title, entity, countries) and every
+    v2 candidate's raw source string.
+    """
+    parts: List[str] = []
+    try:
+        from gcf_qna.rag import registry
+        row = registry.load().get(doc_id) or {}
+        for v in row.values():
+            if isinstance(v, str):
+                parts.append(v)
+            elif isinstance(v, list):
+                parts += [str(x) for x in v]
+        for cands in (registry.facts(doc_id) or {}).values():
+            parts += [str(c.get("raw") or "") for c in cands]
+    except Exception:               # the registry is an enhancement, never a blocker
+        return ""
+    return "\n".join(parts)
+
+
+def registry_named(doc_id: str, names: Sequence[Sequence[str]]) -> Optional[str]:
+    """Names the registry records for this document, in any of its fields.
+
+    Same argument as ``registry_backed``, for the text facts: '[doc] mentions
+    REDD+ meetings in Ecuador' cites the Ecuador document, whose registry row
+    says countries: Ecuador — the answer is right even when the ten retrieved
+    passages happen not to print the country name.
+    """
+    if not names:
+        return None
+    hay = norm_text(_registry_blob(doc_id))
+    if not hay:
+        return None
+    for variants in names:
+        if not any(norm_text(v) and norm_text(v) in hay for v in variants):
+            return None
+    return "registry row for this document names " + ", ".join(
+        f"'{vs[0]}'" for vs in names)
+
+
+def registry_backed(doc_id: str, claim: Claim,
+                    want: Sequence[Amount]) -> Optional[str]:
+    """Figures the fact registry records for this document, at any status.
+
+    Retrieval returns ten passages; the registry scanned every page. An answer
+    that correctly reports BOTH sides of a known conflict cites a second page
+    that this turn may not hold — and REPAIR_PROMPT rule 2 asks for exactly
+    that sentence — so without this check no conflict-aware answer could ever
+    verify, and the repair pass could only produce answers it would then
+    reject.
+    """
+    if not want:
+        return None
+    try:
+        from gcf_qna.rag import registry
+        facts = registry.facts(doc_id)
+    except Exception:               # the registry is an enhancement, never a blocker
+        return None
+    if not facts:
+        return None
+    field = _V2_FIELD.get(claim_field(claim.text) or "")
+    fields = [field] if field and field in facts else list(facts)
+    where: List[str] = []
+    for a in want:
+        hit = None
+        for f in fields:
+            for cand in facts.get(f) or []:
+                got = _as_amount(cand.get("raw", ""))
+                if got and amount_matches(got, a):
+                    hit = f"'{cand.get('raw')}' (p.{cand.get('page')})"
+                    break
+            if hit:
+                break
+        if not hit:
+            return None             # every missing figure must be backed
+        where.append(hit)
+    return "; ".join(dict.fromkeys(where))
+
+
+def _check_entities(claim: Claim, text: str) -> Tuple[bool, List[List[str]]]:
+    """(ok, the variant lists that appear nowhere in this text)."""
     hay = norm_text(text)
     missing = []
     for variants in claim.entities:
         if not any(norm_text(v) and norm_text(v) in hay for v in variants):
-            missing.append(variants[0])
+            missing.append(variants)
     return (not missing), missing
 
 
@@ -977,7 +1174,7 @@ def _verify_against(claim: Claim, text: str) -> Tuple[bool, str]:
         return ok, ", ".join(a.raw for a in missing)
     if claim.kind == "entity" and claim.entities:
         ok, missing = _check_entities(claim, text)
-        return ok, ", ".join(missing)
+        return ok, ", ".join(vs[0] for vs in missing)
     if claim.kind == "year":
         ok, missing = _check_years(claim, text)
         return ok, ", ".join(missing)
@@ -987,7 +1184,7 @@ def _verify_against(claim: Claim, text: str) -> Tuple[bool, str]:
     # a claim whose trigger left nothing normalizable (a bare number with no
     # unit, say): fall back to the entity check, then give it to the judge
     ok, missing = _check_entities(claim, text)
-    return ok, ", ".join(missing)
+    return ok, ", ".join(vs[0] for vs in missing)
 
 
 def classify_deterministic(claims: Sequence[Claim], evidence: Evidence,
@@ -1076,6 +1273,25 @@ def classify_deterministic(claims: Sequence[Claim], evidence: Evidence,
                     "value found in the cited document, but not on the cited page",
                     strict + wide_only,
                     flags=flags + ["citation-page-mismatch"]))
+                continue
+
+        if registry_conflicts:
+            held = _text_of(evidence, strict + wide_only)
+            gaps = _check_amounts(c, held)[1] if c.amounts else []
+            gap_names = (_check_entities(c, held)[1]
+                         if c.kind == "entity" and c.entities else [])
+            backed = None
+            for d in dict.fromkeys(k[0] for k in strict + wide if k[0] != NOTES_DOC):
+                backed = (registry_backed(d, c, gaps) if gaps else None) or \
+                    (registry_named(d, gap_names) if gap_names else None)
+                if backed:
+                    break
+            if backed:
+                out.append(Verdict(
+                    c, SUPPORTED,
+                    f"figure recorded by the corpus registry for this document, "
+                    f"on a page this turn did not retrieve: {backed}",
+                    strict, flags=flags + ["registry-backed-page-not-retrieved"]))
                 continue
 
         out.append(Verdict(c, UNSUPPORTED,
@@ -1168,6 +1384,27 @@ def _json_object(raw: str) -> Optional[dict]:
     return None
 
 
+def _where_found(claim: Claim, evidence: Evidence, limit: int = 3
+                 ) -> List[EvidenceKey]:
+    """Evidence keys whose text does state the claim, wherever they are.
+
+    An uncited claim has no scope, and handing the judge '(no evidence held
+    for this citation)' can only get the deterministic verdict rubber-stamped.
+    What the judge needs is the passage that carries the value, so it can rule
+    on whether that passage really says what the sentence says.
+    """
+    out = [k for k, t in evidence.items() if _verify_against(claim, t)[0]]
+    return out[:limit]
+
+
+def _judge_keys(claim: Claim, evidence: Evidence,
+                strict: Sequence[EvidenceKey],
+                wide: Sequence[EvidenceKey]) -> List[EvidenceKey]:
+    """The evidence a claim is adjudicated or repaired against."""
+    return (list(strict) or list(wide[:2]) or _where_found(claim, evidence)
+            or list(evidence)[:3])
+
+
 def _evidence_snippet(evidence: Evidence, keys: Sequence[EvidenceKey],
                       limit: int = 1200) -> str:
     parts = []
@@ -1203,7 +1440,8 @@ def adjudicate(verdicts: Sequence[Verdict], evidence: Evidence,
         payload.append({
             "id": v.claim.index,
             "claim": _strip_citations(v.claim.text).strip()[:400],
-            "cited_evidence": _evidence_snippet(evidence, strict or wide[:2]),
+            "cited_evidence": _evidence_snippet(
+                evidence, _judge_keys(v.claim, evidence, strict, wide)),
         })
     user = "Claims to audit:\n" + "\n\n".join(
         f"--- claim {p['id']} ---\n{p['claim']}\n\nEVIDENCE:\n{p['cited_evidence']}"
@@ -1323,56 +1561,137 @@ def _status_for(verdicts: Sequence[Verdict], llm_available: bool,
     return "partial"
 
 
-def _introduced_sources(answer: str, evidence: Evidence) -> List[str]:
+def _introduced_sources(answer: str, evidence: Evidence,
+                        allowed_docs: Optional[Sequence[str]] = None) -> List[str]:
     """Citations in a repaired answer that the evidence cannot back.
 
     The deterministic guard on rule 4 of REPAIR_PROMPT: a repair that invents
     a document or a page is not a repair, and no amount of prompt wording is
     a substitute for checking.
+
+    Matching here is EXACT, unlike ``_resolve_doc``. The forgiving prefix rule
+    exists because the answer model truncates ids it was shown; a repair that
+    emits an id we were not holding is the case this function exists to catch,
+    and a 24-character prefix match would wave through any suffix appended to
+    the 182 corpus ids that are 24 characters or shorter.
+
+    ``allowed_docs`` narrows it further to the documents the repair prompt
+    actually showed: moving a claim onto another retrieved document's figure
+    verifies cleanly and is still an invented attribution.
     """
     docs = {k[0] for k in evidence if k[0] != NOTES_DOC}
+    permitted = set(allowed_docs) if allowed_docs is not None else docs
     bad = []
     for c in parse_citations(answer):
         if c.doc is None:
             continue
-        d = _resolve_doc(c.doc, docs)
-        if d is None:
+        if c.doc not in docs:
             bad.append(f"{c.doc}" + (f", p.{c.page}" if c.page else ""))
-        elif c.page is not None and (d, c.page) not in evidence:
-            bad.append(f"{d}, p.{c.page}")
+        elif c.doc not in permitted:
+            bad.append(f"{c.doc} (not shown to the repair pass)")
+        elif c.page is not None and (c.doc, c.page) not in evidence:
+            bad.append(f"{c.doc}, p.{c.page}")
     return list(dict.fromkeys(bad))
 
 
+_PREAMBLE_RE = re.compile(
+    r"^\s*(?:sure|certainly|of course|here(?:'s| is| are)|voici|voil[àa]|bien s[ûu]r|"
+    r"repaired answer|corrected answer|r[ée]ponse corrig[ée]e)\b[^\n]{0,120}:?\s*$",
+    re.I)
+
+
+def _strip_preamble(text: str) -> str:
+    """Drop a chat preamble line and any code fence around the answer.
+
+    'Sure! Here is the repaired answer:' is not part of the answer, and
+    shipping it into the chat window is how a verification pass announces
+    itself to the user as a machine.
+    """
+    body = re.sub(r"^\s*```[a-zA-Z]*\n|\n?```\s*$", "", (text or "").strip())
+    lines = body.splitlines()
+    while len(lines) > 1 and (not lines[0].strip() or _PREAMBLE_RE.match(lines[0])):
+        lines = lines[1:]
+    return "\n".join(lines).strip()
+
+
+def _supported_required(verdicts: Sequence[Verdict]) -> int:
+    return sum(1 for v in verdicts
+               if v.status == SUPPORTED and v.claim.required)
+
+
+def _carry_cleared(new_verdicts: List[Verdict],
+                   old_verdicts: Sequence[Verdict]) -> List[Verdict]:
+    """Keep judge rulings across the post-repair recheck.
+
+    The recheck is deterministic-only, so a claim the judge cleared as a
+    paraphrase would come back unsupported and make a good repair look like a
+    failed one. Sentences the repair left untouched are matched by normalized
+    text and keep their verdict.
+    """
+    cleared = {norm_text(v.claim.text): v for v in old_verdicts
+               if v.source == "llm" and v.status == SUPPORTED}
+    if not cleared:
+        return new_verdicts
+    out = []
+    for v in new_verdicts:
+        got = cleared.get(norm_text(v.claim.text))
+        if got is not None and v.failed:
+            out.append(Verdict(v.claim, SUPPORTED, got.reason, v.scope,
+                               source="llm", flags=list(v.flags)))
+        else:
+            out.append(v)
+    return out
+
+
 def repair(answer: str, verdicts: Sequence[Verdict], evidence: Evidence,
-           client: Any = None, use_llm: bool = True,
-           cross_page_conflicts: bool = True,
+           client: Any = None, cross_page_conflicts: bool = True,
            registry_conflicts: bool = True) -> RepairResult:
     """ONE constrained repair pass over the failing claims.
 
     The model may remove, qualify or correct claims; it may not introduce
-    sources. The repaired text is re-verified deterministically against the
-    same evidence, and a repair that introduced a citation we cannot back is
-    dropped in favour of flagging the original answer.
+    sources. Its text is then earned, not assumed: it is re-verified
+    deterministically against the same evidence and adopted only when it is
+    strictly better than what it replaced —
+
+      * no citation we cannot back, and none the repair prompt was not shown
+        (a claim re-attributed to another retrieved document verifies cleanly
+        and is still an invented attribution);
+      * fewer failing claims than before, and none left failing at all —
+        swapping one wrong figure for a different wrong figure is not a
+        repair, and it is what an unguarded pass actually produced;
+      * at least as much substance: if the answer had supported fact-bearing
+        claims, the repaired one must still have one. A rewrite that deletes
+        every supported claim replaces a mostly-correct answer with a
+        refusal, which is a regression the user cannot see.
+
+    Anything else keeps the ORIGINAL answer and flags it — an honest 'partial'
+    beats a confident rewrite.
     """
     verdicts = list(verdicts)
     failed = [v for v in verdicts if v.failed]
     if not failed:
         return RepairResult(answer, "verified", verdicts, answer)
 
-    if client is None and use_llm:
+    if client is None:
         client = _client()
-    if client is None or not use_llm:
+    if client is None:
         return RepairResult(answer, _status_for(verdicts, False, False), verdicts,
                             answer, notes=["no LLM available: deterministic "
                                            "verdicts only, answer left as written"])
 
-    blocks = []
+    blocks, shown_docs = [], []
     for v in failed:
         strict, wide, _ = _scopes(v.claim, evidence)
+        keys = _judge_keys(v.claim, evidence, strict, wide)
+        shown_docs += [k[0] for k in keys if k[0] != NOTES_DOC]
         blocks.append(
             f"--- {v.status.upper()} claim ---\n{v.claim.text}\n"
             f"why: {v.reason}\n"
-            f"EVIDENCE IT MAY USE:\n{_evidence_snippet(evidence, strict or wide[:2])}")
+            f"EVIDENCE IT MAY USE:\n{_evidence_snippet(evidence, keys)}")
+    # what the repair may cite: what it was shown, plus what the answer
+    # already cited and kept
+    allowed = list(dict.fromkeys(
+        shown_docs + [d for d, _ in cited_sources(answer)]))
     user = (f"ANSWER TO REPAIR:\n{answer}\n\n"
             f"FAILED CLAIMS ({len(failed)}):\n" + "\n\n".join(blocks))
     raw = _complete(client, REPAIR_PROMPT, user,
@@ -1380,17 +1699,30 @@ def repair(answer: str, verdicts: Sequence[Verdict], evidence: Evidence,
     if not raw:
         return RepairResult(answer, _status_for(verdicts, True, False), verdicts,
                             answer, notes=["repair call failed; answer left as written"])
+    raw = _strip_preamble(raw)
 
-    introduced = _introduced_sources(raw, evidence)
+    def _keep(note: str) -> RepairResult:
+        return RepairResult(answer, _status_for(verdicts, True, False), verdicts,
+                            answer, repair_rejected=True, notes=[note])
+
+    introduced = _introduced_sources(raw, evidence, allowed)
     if introduced:
-        return RepairResult(
-            answer, _status_for(verdicts, True, False), verdicts, answer,
-            repair_rejected=True,
-            notes=["repair rejected: it introduced sources not in the evidence — "
-                   + "; ".join(introduced[:4])])
+        return _keep("repair rejected: it introduced sources not in the evidence — "
+                     + "; ".join(introduced[:4]))
 
-    new_verdicts = classify_deterministic(extract_claims(raw), evidence,
-                                          cross_page_conflicts, registry_conflicts)
+    new_verdicts = _carry_cleared(
+        classify_deterministic(extract_claims(raw), evidence,
+                               cross_page_conflicts, registry_conflicts),
+        verdicts)
+    new_failed = [v for v in new_verdicts if v.failed]
+    if new_failed:
+        return _keep(
+            f"repair rejected: {len(new_failed)} claim(s) still fail verification "
+            f"(was {len(failed)}) — " + new_failed[0].reason[:120])
+    if _supported_required(verdicts) and not _supported_required(new_verdicts):
+        return _keep("repair rejected: it removed every supported factual claim "
+                     "instead of correcting the failing one")
+
     return RepairResult(raw, _status_for(new_verdicts, True, True), new_verdicts,
                         answer, repaired=True,
                         notes=[f"repaired {len(failed)} failing claim(s)"])
@@ -1401,6 +1733,12 @@ def verify_answer(answer: str, evidence: Evidence, client: Any = None,
                   cross_page_conflicts: bool = True,
                   registry_conflicts: bool = True) -> RepairResult:
     """extract -> classify -> repair, the whole step-5 pass in one call.
+
+    ``use_llm`` and ``allow_repair`` are INDEPENDENT switches (plan step 6:
+    'roll out behind independent switches'). Turning the judge off leaves the
+    repair pass working on deterministic verdicts — which are the verdicts the
+    repair prompt is built from anyway — so a deployment can run
+    deterministic-verify + repair, or judge-only, or both.
 
     At most two LLM calls, both skippable. With no key this is pure python and
     returns 'verified' or 'unverified-llm' with the failing claims attached,
@@ -1413,9 +1751,9 @@ def verify_answer(answer: str, evidence: Evidence, client: Any = None,
     if not any(v.failed for v in verdicts):
         return RepairResult(answer, "verified", verdicts, answer)
     if not allow_repair:
-        llm = client is not None or (use_llm and _client() is not None)
+        llm = client is not None or _client() is not None
         return RepairResult(answer, _status_for(verdicts, llm, False), verdicts,
                             answer, notes=["repair disabled"])
-    return repair(answer, verdicts, evidence, client=client, use_llm=use_llm,
+    return repair(answer, verdicts, evidence, client=client,
                   cross_page_conflicts=cross_page_conflicts,
                   registry_conflicts=registry_conflicts)

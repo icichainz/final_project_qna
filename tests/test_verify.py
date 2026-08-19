@@ -168,6 +168,78 @@ def test_uncited_factual_sentence_is_still_a_claim():
     assert claim.kind == "money" and not claim.cited
 
 
+def test_sentences_inherit_the_citation_of_their_paragraph():
+    """Trailing-citation style: one bracket at the end of a paragraph covers
+    the sentences before it. Attributing per sentence made every lead sentence
+    an 'uncited claim' — 4 of the 22 gold-passing recorded answers."""
+    answer = (f"FP086 is the **Green Cities Facility**. It is implemented by "
+              f"the **European Bank for Reconstruction and Development** "
+              f"[{DOC}, p. 45].")
+    first, second = V.extract_claims(answer)
+    assert [(c.doc, c.page) for c in first.citations] == [(DOC, 45)]
+    assert first.inherited and not second.inherited
+
+
+def test_citations_are_not_inherited_across_paragraphs_or_bullets():
+    answer = (f"FP086 is the **Green Cities Facility**.\n\n"
+              f"FP152 is the **Global Fund** [{DOC}, p. 45].")
+    first, _ = V.extract_claims(answer)
+    assert first.citations == [] and not first.inherited
+
+    bullets = (f"- **FP086:** EUR 87 million [{DOC}, p. 45]\n"
+               f"- **FP220:** USD 50,000,000")
+    _, second = V.extract_claims(bullets)
+    assert second.citations == []          # one bullet's source is not another's
+
+
+def test_a_bulleted_list_borrows_the_citation_line_under_it():
+    """A country list cites once, on its own line under the last bullet. Each
+    bullet may borrow THAT (it is the list's source) — which is not the same
+    as one bullet borrowing another bullet's inline citation."""
+    answer = ("The Board approves the following host countries:\n"
+              "- **Kazakhstan**\n"
+              "- **Moldova**\n"
+              f"[{DOC}, p. 4]")
+    claims = V.extract_claims(answer)
+    assert [cl.entities[0][0] for cl in claims] == ["Kazakhstan", "Moldova"]
+    assert all([(c.doc, c.page) for c in cl.citations] == [(DOC, 4)]
+               for cl in claims)
+    assert all(cl.inherited for cl in claims)
+
+
+def test_ellipsis_inside_a_sentence_does_not_orphan_its_citation():
+    answer = ("The corpus holds **30 funding proposals from 2020** "
+              f"(FP124 … FP153) [{DOC}, cover pages].")
+    (claim,) = V.extract_claims(answer)
+    assert [(c.doc, c.page) for c in claim.citations] == [(DOC, None)]
+    assert not claim.inherited             # its own citation, not a borrowed one
+
+
+def test_hedged_sentence_with_a_cited_figure_is_still_a_claim():
+    """The glue filter must not swallow the figure it wraps."""
+    answer = f"In summary, FP151 requests **USD 18,500,000** [{DOC}, p. 45]."
+    (claim,) = V.extract_claims(answer)
+    assert claim.kind == "money"
+    assert claim.amounts[0].value == pytest.approx(18_500_000)
+
+
+def test_hedges_without_a_cited_figure_are_still_dropped():
+    assert V.extract_claims("In summary, two documents are involved.") == []
+
+
+def test_identifier_dressed_as_a_name_is_not_an_entity():
+    ents = [vs[0] for vs in V.entities("Funding Proposal FP173 sets up the "
+                                       "**Amazon Bioeconomy Fund**")]
+    assert "Amazon Bioeconomy Fund" in ents
+    assert not any("FP173" in e for e in ents)
+
+
+def test_single_word_cut_out_of_a_longer_name_is_dropped():
+    ents = [vs[0] for vs in V.entities(
+        'the **Amazon Bioeconomy Fund: Unlocking private capital** initiative')]
+    assert "Unlocking" not in ents
+
+
 def test_malformed_citation_never_crashes_extraction():
     answer = ("There are **30 funding proposals from 2020** in the corpus "
               "[Registry metadata line in prompt; computed registry note].")
@@ -268,6 +340,15 @@ def test_page_mismatch_is_supported_but_flagged(evidence):
     assert res.cautions == [v]              # shown as a caution, not a failure
 
 
+def test_page_only_citation_is_broken_not_a_note_citation(evidence):
+    """'[p. 5]' names no document. Letting it land on the computed notes made
+    every page-less page reference verify against a year note."""
+    answer = "FP151 requests **USD 18.5 million** in GCF funding [p. 5]."
+    (v,) = V.classify(V.extract_claims(answer), evidence, use_llm=False)
+    assert v.status == V.UNSUPPORTED
+    assert v.scope == [] and any("invalid-citation" in f for f in v.flags)
+
+
 def test_note_level_citation_resolves_to_the_computed_notes(evidence):
     answer = ("There are **30 funding proposals from 2020** in the corpus "
               "[computed registry note in the context].")
@@ -307,6 +388,59 @@ def test_registry_conflict_check_can_be_switched_off(monkeypatch):
     (v,) = V.classify(V.extract_claims(answer), ev, use_llm=False,
                       registry_conflicts=False)
     assert v.status == V.SUPPORTED
+
+
+def test_registry_backed_figure_on_a_page_that_was_not_retrieved(
+        monkeypatch, evidence):
+    """Reporting BOTH sides of a known conflict — what the prompt asks for and
+    what the repair pass produces — cites a page this turn may not hold. That
+    must verify, or no conflict answer could ever pass."""
+    monkeypatch.setattr(
+        "gcf_qna.rag.registry.facts",
+        lambda doc: {"gcf_funding_requested": [
+            {"raw": "28,654 million USD", "page": 5, "status": "canonical"},
+            {"raw": "26,654 million USD", "page": 48, "status": "conflicting"}]})
+    ev = {(DOC, None): "GCF financing (as printed): 28,654 million USD"}
+    answer = (f"FP153's cover page states **28,654 million USD** "
+              f"[{DOC}, cover pages], while p. 48 states **26,654 million USD** "
+              f"[{DOC}, p. 48].")
+    (v,) = V.classify(V.extract_claims(answer), ev, use_llm=False)
+    assert v.status == V.SUPPORTED
+    assert "registry-backed-page-not-retrieved" in v.flags
+    assert "p.48" in v.reason
+
+
+def test_registry_backed_name_on_a_page_that_was_not_retrieved(monkeypatch):
+    """Same rescue for text facts: the cited document IS the Ecuador REDD+
+    proposal, even when the ten passages this turn holds never print the
+    country name."""
+    monkeypatch.setattr("gcf_qna.rag.registry.load",
+                        lambda: {DOC: {"title": "Ecuador REDD+ RBP for results "
+                                                "period 2014",
+                                       "countries": ["Ecuador"]}})
+    monkeypatch.setattr("gcf_qna.rag.registry.facts", lambda doc: {})
+    ev = {(DOC, 12): "The working group met to review the results period."}
+    answer = f"It reports REDD+ working-group meetings in **Ecuador** [{DOC}, p. 12]."
+    (v,) = V.classify(V.extract_claims(answer), ev, use_llm=False)
+    assert v.status == V.SUPPORTED
+    assert "registry-backed-page-not-retrieved" in v.flags
+
+
+def test_a_name_absent_from_evidence_and_registry_stays_unsupported(monkeypatch):
+    monkeypatch.setattr("gcf_qna.rag.registry.load", lambda: {DOC: {}})
+    monkeypatch.setattr("gcf_qna.rag.registry.facts", lambda doc: {})
+    ev = {(DOC, 12): "The working group met to review the results period."}
+    answer = f"It reports meetings in **Uzbekistan** [{DOC}, p. 12]."
+    (v,) = V.classify(V.extract_claims(answer), ev, use_llm=False)
+    assert v.status == V.UNSUPPORTED
+
+
+def test_a_figure_absent_from_evidence_and_registry_stays_unsupported(
+        monkeypatch, evidence):
+    monkeypatch.setattr("gcf_qna.rag.registry.facts", lambda doc: {})
+    answer = f"FP151 requests **USD 61 million** [{DOC}, cover pages]."
+    (v,) = V.classify(V.extract_claims(answer), evidence, use_llm=False)
+    assert v.failed
 
 
 def test_classification_never_raises_on_garbage():
@@ -373,7 +507,9 @@ class FakeClient:
 
 
 def test_adjudication_merges_judge_verdicts_into_the_deterministic_ones(evidence):
-    answer = ("The total GCF funding requested is USD 150 million.\n"
+    # separate paragraphs: the first claim must stay uncited (citations are
+    # inherited within a paragraph, not across one)
+    answer = ("The total GCF funding requested is USD 150 million.\n\n"
               f"FP151 requests **USD 18.5 million** in GCF funding [{DOC}, p. 45].")
     claims = V.extract_claims(answer)
     client = FakeClient(json.dumps({"verdicts": [
@@ -382,6 +518,18 @@ def test_adjudication_merges_judge_verdicts_into_the_deterministic_ones(evidence
     assert len(client.calls) == 1                     # ONE batched call
     assert verdicts[0].status == V.SUPPORTED and verdicts[0].source == "llm"
     assert verdicts[1].status == V.SUPPORTED and verdicts[1].source == "deterministic"
+
+
+def test_judge_receives_the_passage_that_carries_the_value(evidence):
+    """An uncited claim has no scope. Handing the judge '(no evidence held)'
+    can only get the deterministic verdict rubber-stamped, so it is sent the
+    passage where the value actually appears."""
+    answer = "The total GCF funding requested is USD 150 million."
+    client = FakeClient(json.dumps({"verdicts": []}))
+    V.classify(V.extract_claims(answer), evidence, client=client)
+    sent = client.calls[0]["messages"][-1]["content"]
+    assert "Total GCF funding requested: USD 150 million" in sent
+    assert "no evidence held" not in sent
 
 
 def test_adjudication_is_skipped_when_nothing_is_plausible(evidence):
@@ -435,6 +583,90 @@ def test_repair_is_rejected_when_it_invents_a_source(evidence):
     assert any(f"{DOC}, p.512" in n for n in res.notes)
 
 
+def test_repair_that_swaps_one_wrong_figure_for_another_is_rejected(evidence):
+    """The reviewer's repro: 58M is wrong, the model 'fixes' it to 61M, which
+    is equally absent from the evidence. Shipping that is worse than flagging
+    the original, because it looks corrected."""
+    answer = f"FP151 requests **USD 58 million** in GCF funding [{DOC}, cover pages]."
+    client = FakeClient(
+        f"FP151 requests **USD 61 million** in GCF funding [{DOC}, cover pages].")
+    res = V.verify_answer(answer, evidence, client=client)
+    assert res.repair_rejected and not res.repaired
+    assert res.answer == answer                        # the original, flagged
+    assert "still fail verification" in " ".join(res.notes)
+
+
+def test_repair_that_re_attributes_a_claim_to_another_document_is_rejected(evidence):
+    """Moving the claim onto a different retrieved document's figure verifies
+    cleanly — and is an invented attribution, not a repair."""
+    answer = f"FP151 requests **USD 58 million** in GCF funding [{DOC}, p. 45]."
+    client = FakeClient(
+        f"FP151 requests **USD 150 million** in GCF funding [{DOC2}, p. 5].")
+    res = V.verify_answer(answer, evidence, client=client, use_llm=False)
+    assert res.repair_rejected and res.answer == answer
+    assert any("not shown to the repair pass" in n for n in res.notes)
+
+
+def test_repair_that_guts_a_mostly_correct_answer_is_rejected(evidence):
+    """A bare refusal is not a repair of an answer that had supported facts."""
+    answer = (f"FP151 requests **USD 18.5 million** in GCF funding [{DOC}, p. 45].\n\n"
+              f"Its accredited entity is **Pegasus Capital Advisors LP** "
+              f"[{DOC}, cover pages].")
+    client = FakeClient("The retrieved excerpts do not state FP151's funding.")
+    res = V.verify_answer(answer, evidence, client=client, use_llm=False)
+    assert res.repair_rejected and res.answer == answer
+    assert any("removed every supported factual claim" in n for n in res.notes)
+    assert res.status == "partial"
+
+
+def test_introduced_source_check_is_exact_not_prefix(evidence):
+    """182 of the 273 corpus ids are <= 24 characters: a prefix match would
+    wave through any suffix appended to one of them."""
+    answer = f"FP151 requests **USD 58 million** in GCF funding [{DOC}, p. 45]."
+    client = FakeClient(f"FP151 requests **USD 18,500,000** "
+                        f"[{DOC}-annex-volume-2, p. 45].")
+    res = V.verify_answer(answer, evidence, client=client, use_llm=False)
+    assert res.repair_rejected and res.answer == answer
+    assert any(f"{DOC}-annex-volume-2" in n for n in res.notes)
+
+
+def test_repair_output_preamble_is_stripped(evidence):
+    answer = f"FP151 requests **USD 25 million** in GCF funding [{DOC}, cover pages]."
+    fixed = f"FP151 requests **USD 18.5 million** in GCF funding [{DOC}, cover pages]."
+    client = FakeClient("Sure! Here is the repaired answer:\n\n" + fixed)
+    res = V.verify_answer(answer, evidence, client=client)
+    assert res.repaired and res.answer == fixed
+
+
+def test_repair_runs_with_the_judge_switched_off(evidence):
+    """use_llm and allow_repair are independent switches: VERIFY_LLM=0 turns
+    off the judge, not the repair pass."""
+    answer = f"FP151 requests **USD 25 million** in GCF funding [{DOC}, cover pages]."
+    fixed = f"FP151 requests **USD 18.5 million** in GCF funding [{DOC}, cover pages]."
+    client = FakeClient(fixed)
+    res = V.verify_answer(answer, evidence, client=client, use_llm=False)
+    assert len(client.calls) == 1                       # repair only, no judge
+    assert "You repair an answer" in client.calls[0]["messages"][0]["content"]
+    assert res.status == "repaired" and res.answer == fixed
+
+
+def test_judge_verdicts_survive_the_post_repair_recheck(evidence):
+    """The recheck is deterministic-only; without carrying the judge's rulings
+    a cleared paraphrase comes back unsupported and sinks a good repair."""
+    answer = ("The accredited entity is **Pegasus Capital Advisors LP**.\n\n"
+              f"FP151 requests **USD 25 million** in GCF funding [{DOC}, cover pages].")
+    fixed = ("The accredited entity is **Pegasus Capital Advisors LP**.\n\n"
+             f"FP151 requests **USD 18.5 million** in GCF funding [{DOC}, cover pages].")
+    client = FakeClient(
+        json.dumps({"verdicts": [{"id": 0, "status": "supported",
+                                  "reason": "the cited page names it"}]}),
+        fixed)
+    res = V.verify_answer(answer, evidence, client=client)
+    assert res.status == "repaired" and res.answer == fixed
+    carried = [v for v in res.verdicts if v.source == "llm"]
+    assert len(carried) == 1 and carried[0].status == V.SUPPORTED
+
+
 def test_repair_may_delete_the_claim_entirely(evidence):
     """Removing an unsupportable claim is a valid repair: what is left states
     no fact, so nothing is left to contradict the evidence."""
@@ -461,12 +693,13 @@ def test_partial_when_one_of_two_claims_stays_unsupported(evidence):
     client = FakeClient(answer)                        # the model changed nothing
     res = V.verify_answer(answer, evidence, client=client)
     assert res.status == "partial"
+    assert res.repair_rejected                         # no improvement, no adoption
     assert len(res.unsupported) == 1
     assert res.counts()[V.SUPPORTED] == 1
 
 
 def test_at_most_two_llm_calls_per_answer(evidence):
-    answer = ("The total GCF funding requested is USD 150 million.\n"
+    answer = ("The total GCF funding requested is USD 150 million.\n\n"
               f"FP151 requests **USD 25 million** in GCF funding [{DOC}, cover pages].")
     client = FakeClient(json.dumps({"verdicts": [{"id": 0, "status": "unsupported",
                                                  "reason": "not stated"}]}),
