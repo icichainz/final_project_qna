@@ -11,7 +11,16 @@ provenance-aware facts on top, reached through facts()/canonical()/conflicts().
 Each fact is a list of candidates carrying raw source text, normalized value,
 currency, unit, page and template section, with one marked canonical and any
 disagreeing figure elsewhere in the document marked conflicting. It is a
-separate file with a separate cache: the v1 lookups above never read it.
+separate file with a separate cache: the v1 LOOKUPS (load/by_fp/by_year/
+resolve_board_code) never read it.
+
+``registry_note()`` is the one exception, and it is a presentation-layer one:
+the note it writes for the answer model keeps every v1 cover-page field
+(title, entity, countries, board, year — clean in schema 1) and prints the
+MONEY fields from schema 2 instead, with the page and template section the
+figure was read from, plus a warning line per figure the same document
+contradicts elsewhere. When registry_v2.json is absent or unreadable the note
+falls back, field by field, to the exact v1 string it always printed.
 """
 from __future__ import annotations
 
@@ -118,7 +127,105 @@ def by_year(y: int) -> List[dict]:
                   key=lambda r: (r.get("fp") or 0, r["doc_id"]))
 
 
+# --- note enrichment: v1 text fields, v2 money with provenance --------------
+
+# Money fields a note may carry, in the order a conflict warning prefers them:
+# the figures a reader asks about first, and the ones a wrong answer costs most.
+_MONEY_FIELDS = ("gcf_funding_requested", "total_financing", "co_financing")
+# The worst documents print four or five disagreeing figures. A note that lists
+# them all stops being a note; two warnings — one per field, each naming at
+# most two disagreeing prints — say 'this document contradicts itself, here is
+# where' just as well.
+_MAX_CONFLICT_LINES = 2
+_MAX_CONFLICT_ALTS = 2
+
+
+def _v2_facts(doc_id: Optional[str]) -> Dict[str, List[dict]]:
+    """facts() that cannot break a note.
+
+    An absent, half-written or corrupt registry_v2.json must leave the note
+    byte-identical to what schema 1 alone produced — the provenance is an
+    upgrade, never a dependency.
+    """
+    if not doc_id:
+        return {}
+    try:
+        return facts(doc_id) or {}
+    except Exception:
+        return {}
+
+
+def _usable(c: Optional[dict]) -> Optional[dict]:
+    """A candidate is printable only with the two things it is here for: the
+    source text and the page it was read from."""
+    if not c or not c.get("raw") or not isinstance(c.get("page"), int):
+        return None
+    return c
+
+
+def _canon2(f2: Dict[str, List[dict]], field: str) -> Optional[dict]:
+    return _usable(next((c for c in f2.get(field, [])
+                         if c.get("status") == "canonical"), None))
+
+
+def _section(c: dict) -> str:
+    """'rule:B.2(a)' -> 'B.2(a)'. The 'rule:' marker is builder bookkeeping
+    (the page carried the figure but not the heading), not part of a pointer."""
+    return str(c.get("section") or "?").split("rule:")[-1] or "?"
+
+
+def _where(c: dict) -> str:
+    """'(p.5, A.8)' — the shape verify.build_evidence keys a note line's page
+    on, and the shape the answer model is expected to cite back."""
+    return f"(p.{c['page']}, {_section(c)})"
+
+
+def _money_bit(label: str, c: dict) -> str:
+    if c.get("value") is None:
+        # The page prints a scale word its own mantissa contradicts ('28,654
+        # million USD'). The registry publishes no number for it and neither
+        # does the note: the print is quoted and left ambiguous on purpose.
+        return f'{label}: "{c["raw"]}" {_where(c)} (unit as printed is ambiguous)'
+    return f"{label}: {c['raw']} {_where(c)}"
+
+
+def _fig(c: dict) -> str:
+    """'40,511,264 USD (p.7, A.8)' — a printed figure and where it is printed."""
+    return f"{c['raw']} {_where(c)}"
+
+
+def _conflict_lines(r: dict) -> List[str]:
+    """One warning line per money field the document contradicts itself on.
+
+    Each line is its own line, names the document id, and leads with the
+    CANONICAL figure's '(p.N, SECTION)': verify.build_evidence keys a note line
+    on the first such pointer it finds, so the warning becomes page-level
+    evidence at the page an answer actually cites, holding every figure of the
+    field — which is exactly what an answer that 'reports both figures with
+    their pages' has to verify against.
+    """
+    f2 = _v2_facts(r.get("doc_id"))
+    out: List[str] = []
+    for field in _MONEY_FIELDS:
+        if len(out) >= _MAX_CONFLICT_LINES:
+            break
+        alts = [c for c in f2.get(field, [])
+                if c.get("status") == "conflicting" and _usable(c)]
+        if not alts:
+            continue
+        canon = _canon2(f2, field)
+        printed = [_fig(c) for c in ([canon] if canon else [])
+                   + alts[:_MAX_CONFLICT_ALTS]]
+        ask = ("report both figures with their pages." if len(printed) == 2
+               else "report all of them with their pages.")
+        out.append(f"Registry — CONFLICT in this document ({r['doc_id']}): {field} "
+                   f"is printed as {'; also as '.join(printed)} — {ask}")
+    return out
+
+
 def _fmt(r: dict) -> str:
+    f2 = _v2_facts(r.get("doc_id"))
+    gcf, total = _canon2(f2, "gcf_funding_requested"), _canon2(f2, "total_financing")
     bits = []
     if r.get("title"):
         bits.append(f'"{r["title"]}"')
@@ -126,9 +233,13 @@ def _fmt(r: dict) -> str:
         bits.append(f"accredited entity: {r['accredited_entity']}")
     if r.get("countries"):
         bits.append("countries: " + ", ".join(r["countries"][:5]))
-    if r.get("gcf_financing"):
+    if gcf:
+        bits.append(_money_bit("GCF funding requested", gcf))
+    elif r.get("gcf_financing"):
         bits.append(f"GCF financing (as printed): {r['gcf_financing']}")
-    if r.get("total_financing"):
+    if total:
+        bits.append(_money_bit("total financing", total))
+    elif r.get("total_financing"):
         bits.append(f"total financing (as printed): {r['total_financing']}")
     if r.get("board"):
         bits.append(f"board B.{r['board']}, {r.get('year')}")
@@ -193,6 +304,7 @@ def registry_note(question: str) -> Optional[str]:
         row = by_fp(int(n))
         if row:
             notes.append("Registry — " + _fmt(row))
+            notes += _conflict_lines(row)
             resolved_docs.append(row["doc_id"])
         else:
             notes.append(f"Registry — FP{n}: NOT FOUND in the 273-document corpus "
@@ -202,6 +314,7 @@ def registry_note(question: str) -> Optional[str]:
         code = _board_code_text(b_, item_, add_)
         if row:
             notes.append(f"Registry — {code} resolves to: " + _fmt(row))
+            notes += _conflict_lines(row)          # same enrichment, same helper
             resolved_docs.append(row["doc_id"])
         else:
             notes.append(f"Registry — {code}: NOT FOUND in the 273-document corpus "

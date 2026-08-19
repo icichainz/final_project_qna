@@ -79,10 +79,31 @@ def _detect_lang(text: str):
     return None
 
 
-def _invalid_citations(answer: str, hits: list):
+def _note_pages(notes) -> set:
+    """(doc, page) pairs the computed notes publish. Registry notes now carry
+    page-cited figures ('18.5 M USD (p.5, A.8)'), so an answer citing that
+    page is grounded even when retrieval never returned it — the checker must
+    not flag it as invented. A page belongs to every document named on its
+    own line (main lines end '[stem, cover pages]', conflict lines name the
+    stem in parentheses)."""
+    out = set()
+    for n in notes or []:
+        for line in (n or "").splitlines():
+            docs = re.findall(r"[\[(]([0-9]{1,3}_[\w.\-]+)", line)
+            if not docs:
+                continue
+            for pg in re.findall(r"\(p\.(\d{1,3})[,)]", line):
+                for d in docs:
+                    out.add((d, int(pg)))
+    return out
+
+
+def _invalid_citations(answer: str, hits: list, note_pages: set = frozenset()):
     """Pages cited in the answer that were never retrieved (observed: a
     correct doc cited with an invented 'p. 35'). Returns labels to flag."""
     by_doc = {}
+    for d, p in note_pages:
+        by_doc.setdefault(d, set()).add(p)
     for h in hits:
         by_doc.setdefault(h.doc_id, set()).add(h.page)
     def _resolve(ref):
@@ -1290,7 +1311,9 @@ async def main(message: cl.Message):
         # p. 41]') carries an invented page past it untouched; this check reads
         # the raw answer. Whatever the verifier already flagged is dropped, so
         # the same page is never reported twice in two wordings.
-        bad_cites = _invalid_citations(reply.content or "", hits)
+        bad_cites = _invalid_citations(
+            reply.content or "", hits,
+            _note_pages([reg_note, year_note, matrix_block]))
         if res is not None:
             flagged = _verifier_flagged_cites(res)
             bad_cites = [b for b in bad_cites if _cite_key(b) not in flagged]
