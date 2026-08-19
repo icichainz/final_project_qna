@@ -11,19 +11,20 @@ and citation validity.
 Four modes
 ----------
   --retrieval-only   (default) deterministic, no API calls. Runs the same
-                     retrieval path the app runs — conductor SKIPPED, the
-                     question used verbatim — and scores document recall and
-                     evidence-page hit rate.  Multi-turn cases are skipped
-                     (they need history to be resolvable) and counted apart.
+                     retrieval helpers as the app, with the conductor skipped
+                     and the question used verbatim, then scores document
+                     recall and evidence-page hit rate. Multi-turn cases are
+                     skipped (they need history to resolve) and counted apart.
   --answers          additionally calls the chat model per case, assembling
-                     the prompt exactly as chainlit_app does (registry note,
-                     year note, board-range note, weak-signal note, per-turn
-                     assemble()), and scores the answer.
+                     the prompt with chainlit_app's shared helpers (registry,
+                     year, board-range and weak-signal notes) and scores it.
+                     Per-record metadata names the remaining parity gaps.
   --release          --answers over the WHOLE suite plus the release report:
                      required-field coverage against registry v2, claim
-                     support from rag.verify (the plan's >=95% citation-
-                     precision gate), latency p50/p95, tokens and estimated
-                     cost.  Records to data/eval/release_<label>.jsonl.
+                     groundedness and citation support from rag.verify,
+                     latency p50/p95, tokens and estimated cost. Records to
+                     data/eval/release_<label>.jsonl. The verifier defaults to
+                     deterministic/no-repair, so it adds no API calls.
   --compare A B      diff two recorded runs, per case and per class.
 
 Two scorers beyond the string checks, both deterministic:
@@ -47,6 +48,8 @@ Examples
   python scripts/eval_answers.py --answers --sample 12 --record baseline-sample
   python scripts/eval_answers.py --answers --ids conf-fp274-gcf,abs-fp999
   python scripts/eval_answers.py --release --record release-1
+  python scripts/eval_answers.py --release --production-planner \\
+      --verifier-mode production --verifier-repair --record repair-shadow
   python scripts/eval_answers.py --compare data/eval/answers_baseline_a.jsonl \\
                                            data/eval/answers_baseline_b.jsonl
 """
@@ -59,6 +62,7 @@ import re
 import sys
 import time
 from collections import OrderedDict, defaultdict
+from itertools import zip_longest
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -77,7 +81,7 @@ except Exception:
 
 from gcf_qna import config                                    # noqa: E402
 from gcf_qna.app.prompts import assemble                      # noqa: E402
-from gcf_qna.rag import registry, verify                      # noqa: E402
+from gcf_qna.rag import planner, registry, verify             # noqa: E402
 
 DEFAULT_CASES = ROOT / "scripts" / "answer_gold.jsonl"
 GOLD_SET = ROOT / "scripts" / "gold_set.jsonl"
@@ -546,38 +550,83 @@ def score_fields(case: dict, answer: str):
 # ---------------------------------------------------------------------------
 # claim support  (the plan's citation-precision gate)
 # ---------------------------------------------------------------------------
-def score_claims(answer: str, hits, notes=None):
-    """Deterministic claim-level verdicts against THIS turn's own evidence.
+def score_claims(answer: str, hits, notes=None, verdicts=None, evidence=None):
+    """Deterministic claim metrics against THIS turn's own evidence.
 
     The old citation check asked 'does the answer cite a page we retrieved?',
     which a fabricated figure on a real page passes. This asks whether the
     cited evidence states the claim: verify.extract_claims over the answer,
     verify.build_evidence over the very hits and notes the harness put in the
-    prompt, verify.classify_deterministic between them. Pure python — no judge
-    model, no second API call, no repair pass.
+    prompt, verify.classify_deterministic between them. Groundedness and
+    citation completeness are deliberately separate: an uncited claim whose
+    value is present in the held evidence is grounded, but citation-incomplete.
+
+    ``verdicts`` and ``evidence`` let the offline verifier reuse its final
+    verdicts without another classification pass. With neither supplied this
+    remains the original pure-python scorer: no judge model or repair call.
     """
     blocks = [n for n in (notes or []) if n]
-    evidence = verify.build_evidence(hits or [], blocks)
+    evidence = evidence if evidence is not None else verify.build_evidence(hits or [], blocks)
     claims = verify.extract_claims(answer or "")
-    verdicts = verify.classify_deterministic(claims, evidence)
+    verdicts = (list(verdicts) if verdicts is not None
+                else verify.classify_deterministic(claims, evidence))
     n = defaultdict(int)
     failures = []
     for v in verdicts:
         n[v.status] += 1
+        cited = bool(getattr(v.claim, "cited",
+                             getattr(v.claim, "citations", [])))
+        flags = list(getattr(v, "flags", []) or [])
+        grounded = (v.status == verify.SUPPORTED
+                    or "value-present-elsewhere" in flags)
+        n["cited"] += cited
+        n["grounded"] += grounded
+        n["citation_supported"] += cited and v.status == verify.SUPPORTED
         if v.status != verify.SUPPORTED:
             failures.append({"status": v.status, "kind": v.claim.kind,
-                             "text": v.claim.text[:160], "reason": v.reason[:160]})
+                             "text": v.claim.text[:160], "reason": v.reason[:160],
+                             "grounded": grounded, "cited": cited})
     total = len(verdicts)
     supported = n[verify.SUPPORTED]
     return {
         "claims": total,
+        "grounded": n["grounded"],
+        "groundedness_rate": (n["grounded"] / total) if total else None,
+        "citation_complete": n["cited"],
+        "citation_completeness_rate": (n["cited"] / total) if total else None,
+        "citation_supported": n["citation_supported"],
+        "citation_support_rate": (n["citation_supported"] / total) if total else None,
         "supported": supported,
         "contradicted": n[verify.CONTRADICTED],
         "unsupported": n[verify.UNSUPPORTED],
+        # Backward-compatible alias for existing artifacts and --compare.
         "support_rate": (supported / total) if total else None,
         "evidence_keys": [f"{d}|{p if p is not None else '-'}" for d, p in evidence],
         "failures": failures[:6],
     }
+
+
+def run_offline_verifier(answer: str, hits, notes=None, client=None,
+                         mode: str = "deterministic", allow_repair: bool = False):
+    """Run the production verifier entry point with explicit API semantics.
+
+    ``deterministic`` is the default and cannot make an extra API call because
+    both the judge and repair are disabled. ``production`` enables the same
+    LLM adjudication path used by the app; repair remains an independent,
+    opt-in switch. The caller owns the client so tests can remain network-free.
+    """
+    if mode not in ("deterministic", "production"):
+        raise ValueError(f"unknown verifier mode: {mode}")
+    blocks = [n for n in (notes or []) if n]
+    evidence = verify.build_evidence(hits or [], blocks)
+    use_llm = mode == "production"
+    result = verify.verify_answer(
+        answer, evidence,
+        client=client if (use_llm or allow_repair) else None,
+        use_llm=use_llm,
+        allow_repair=bool(allow_repair),
+    )
+    return result, evidence
 
 
 # ---------------------------------------------------------------------------
@@ -649,16 +698,18 @@ def multi_identifier(question: str) -> bool:
 
 
 class Pipeline:
-    """chainlit_app.main() with the conductor removed and no Chainlit I/O."""
+    """Offline app subset with explicit, per-record parity metadata."""
 
     def __init__(self, top_k: int = None, comparison_proxy: bool = True,
-                 raw_retrieval: bool = False, scope_single_id: bool = False):
+                 raw_retrieval: bool = False, scope_single_id: bool = False,
+                 production_planner: bool = False):
         from gcf_qna.app import chainlit_app as app
         self.app = app
         self.top_k = top_k or config.TOP_K
         self.comparison_proxy = comparison_proxy
         self.raw_retrieval = raw_retrieval
         self.scope_single_id = scope_single_id
+        self.production_planner = production_planner
         t0 = time.perf_counter()
         self.retriever = app.get_retriever()
         if self.retriever is None:
@@ -666,6 +717,35 @@ class Pipeline:
                              "(see scripts/build_index.py)")
         self.load_seconds = time.perf_counter() - t0
         self.meta = dict(app._retriever_meta)
+
+    def parity(self, *, planner_applicable=False, planner_used=False,
+               matrix_in_prompt=False, planner_fallback=None) -> dict:
+        """Capabilities that materially affect equivalence with the app."""
+        limitations = [
+            "LLM conductor is not run; semantic rewrites and chat routing are unavailable",
+            "non-planner single-ID retrieval does not run the app's production prescope helper",
+        ]
+        if planner_fallback:
+            limitations.append("deterministic planner failed and raw retrieval was used; "
+                               "the production conductor fallback is unavailable")
+        return {
+            "level": "partial",
+            "retrieval_helpers": {
+                "rescope_and_tag_resolution": not self.raw_retrieval,
+                "production_single_id_prescope": False,
+                "single_id_ab_scope_enabled": self.scope_single_id,
+            },
+            "deterministic_planner": {
+                "enabled": self.production_planner,
+                "applicable": planner_applicable,
+                "used": planner_used,
+                "matrix_in_prompt": matrix_in_prompt,
+                "fallback": planner_fallback,
+            },
+            "conductor": {"available": False, "used": False},
+            "answer_history_isolation": False,
+            "limitations": limitations,
+        }
 
     # -- the registry FP-miss guard, verbatim from the app ------------------
     def fp_guard(self, question: str):
@@ -719,12 +799,56 @@ class Pipeline:
                 reg = None
             return {"guard": True, "guard_answer": guard, "hits": [],
                     "system": None, "user": None, "weak": False, "plan": [],
-                    "notes": {"registry": reg, "year": None, "board": None}}
+                    "notes": {"registry": reg, "year": None, "board": None,
+                              "matrix": None},
+                    "pipeline_parity": self.parity()}
 
-        items = self.plan(question)
-        sq = items[0]
-        hits, conf = self.retriever.search_with_confidence(
-            sq["q"], self.top_k, sq.get("doc"))
+        plan_obj = None
+        planner_applicable = False
+        planner_used = False
+        planner_fallback = None
+        matrix_block = None
+        if self.production_planner:
+            candidate = planner.detect(question)
+            planner_applicable = bool(
+                candidate is not None and app._planner_intent(question, candidate))
+            if planner_applicable:
+                try:
+                    matrix = planner.build_matrix(candidate, self.retriever)
+                    if not any(c.status not in ("missing", "missing-document")
+                               for c in matrix.cells):
+                        raise ValueError("no cell carries evidence")
+                    matrix_block = planner.render(matrix)
+                    plan_obj = candidate
+                    planner_used = True
+                except Exception as e:
+                    planner_fallback = f"{type(e).__name__}: {e}"
+
+        if planner_used:
+            items = [{"q": app._plan_query(plan_obj, d), "doc": d.scope}
+                     for d in plan_obj.docs if not d.missing]
+        else:
+            items = self.plan(question)
+
+        decomposed = len(items) > 1 or planner_used
+        per_query = self.top_k if not decomposed else max(3, self.top_k // len(items))
+        weak = True
+        per_lists = []
+        for sq in items:
+            got, conf = self.retriever.search_with_confidence(
+                sq["q"], per_query, sq.get("doc"))
+            if conf >= config.MIN_DENSE_SCORE:
+                weak = False
+            per_lists.append(got)
+        seen, hits = set(), []
+        for tier in zip_longest(*per_lists):
+            for h in tier:
+                if h is None:
+                    continue
+                key = (h.doc_id, _page(h), (h.text or "")[:120])
+                if key not in seen:
+                    seen.add(key)
+                    hits.append(h)
         hits = hits[:15]
         hits, year_note = app._year_assist(question, hits)
         board_note = app._board_range_note(question)
@@ -736,7 +860,6 @@ class Pipeline:
             for h in hits)
         if year_note:
             context = year_note + "\n\n" + context
-        weak = conf < config.MIN_DENSE_SCORE
         if weak:
             context = ("Note: retrieval confidence for this question is LOW — the "
                        "excerpts below may not actually be relevant. Do not force an "
@@ -750,15 +873,26 @@ class Pipeline:
         except Exception:
             pass
 
+        if matrix_block:
+            context = matrix_block + "\n\n" + context
+
         system = assemble(year=bool(year_note), registry=bool(reg_note),
-                          comparison=self.comparison_proxy and multi_identifier(question),
+                          comparison=(planner_used or
+                                      (self.comparison_proxy and multi_identifier(question))),
+                          matrix=bool(matrix_block),
                           lang=app._detect_lang(question))
         return {
             "guard": False, "guard_answer": None, "hits": hits,
-            "confidence": conf, "weak": weak, "plan": items,
+            "weak": weak, "plan": items,
             "system": system,
             "user": f"Context excerpts:\n{context}\n\nQuestion: {question}",
-            "notes": {"registry": reg_note, "year": year_note, "board": board_note},
+            "notes": {"registry": reg_note, "year": year_note,
+                      "board": board_note, "matrix": matrix_block},
+            "pipeline_parity": self.parity(
+                planner_applicable=planner_applicable,
+                planner_used=planner_used,
+                matrix_in_prompt=bool(matrix_block),
+                planner_fallback=planner_fallback),
         }
 
 
@@ -930,17 +1064,25 @@ def print_release_table(rows: list, cases_total: int = None):
     print(f"  missed                      : {missed}")
     _print_field_breakdown(fields)
 
-    print("\nCLAIM SUPPORT — verify.extract_claims vs the turn's own evidence "
-          "(deterministic)")
+    print("\nCLAIM SUPPORT / QUALITY — factual content and citations scored separately "
+          "(deterministic unless verifier mode says otherwise)")
     tot = sum(c["claims"] for c in claims)
     sup = sum(c["supported"] for c in claims)
+    grounded = sum(c.get("grounded", c["supported"]) for c in claims)
+    complete = sum(c.get("citation_complete", c["supported"]) for c in claims)
+    cite_supported = sum(c.get("citation_supported", c["supported"]) for c in claims)
     con = sum(c["contradicted"] for c in claims)
     uns = sum(c["unsupported"] for c in claims)
-    rate = (sup / tot) if tot else 0.0
+    rate = (cite_supported / tot) if tot else 0.0
     print(f"  claims                      : {tot} over {len(claims)} answers")
-    print(f"  supported                   : {sup} ({rate:.1%})  "
+    print(f"  evidence-grounded           : {grounded}/{tot} "
+          f"{(grounded / tot if tot else 0):.1%}")
+    print(f"  citation-complete           : {complete}/{tot} "
+          f"{(complete / tot if tot else 0):.1%}")
+    print(f"  supported by cited evidence : {cite_supported}/{tot} ({rate:.1%})  "
           f"gate >= {CLAIM_SUPPORT_GATE:.0%} — "
           f"{'PASS' if tot and rate >= CLAIM_SUPPORT_GATE else 'FAIL'}")
+    print(f"  legacy supported verdicts   : {sup}")
     print(f"  contradicted                : {con}")
     print(f"  unsupported                 : {uns}")
     _print_claim_breakdown(scored)
@@ -966,7 +1108,10 @@ def print_release_table(rows: list, cases_total: int = None):
     return {"fields": {"cells": cells, "scorable": scorable, "stated": stated,
                        "marked_missing": marked, "missed": missed,
                        "unscorable": unscorable},
-            "claims": {"total": tot, "supported": sup, "contradicted": con,
+            "claims": {"total": tot, "grounded": grounded,
+                       "citation_complete": complete,
+                       "citation_supported": cite_supported,
+                       "supported": sup, "contradicted": con,
                        "unsupported": uns, "rate": rate},
             "usage": u, "errors": [r["id"] for r in errored]}
 
@@ -980,7 +1125,8 @@ def _release_line(label: str, rs: list) -> str:
     n = max(1, len(scored))
     u = usage_totals(rs)
     fcov = _pct(sum(x["n_covered"] for x in f), sum(x["n_scorable"] for x in f))
-    ccov = _pct(sum(x["supported"] for x in cl), sum(x["claims"] for x in cl))
+    ccov = _pct(sum(x.get("citation_supported", x["supported"]) for x in cl),
+                 sum(x["claims"] for x in cl))
     return (f"{label:12} {len(rs):>3} {err:>4} {_pct(c['pass'], n):>6} "
             f"{_pct(c['behavior'], n):>6} {_pct(c['ct'], c['cn']):>8} "
             f"{_pct(c['ft'], c['fn']):>7} {_pct(c['language'], n):>6} "
@@ -1084,7 +1230,8 @@ def run_gate(pipe: Pipeline, gold_path: Path):
 def run_eval(args, cases: list) -> list:
     pipe = Pipeline(top_k=args.k, comparison_proxy=not args.no_comparison_proxy,
                     raw_retrieval=args.raw_retrieval,
-                    scope_single_id=args.scope_single_id)
+                    scope_single_id=args.scope_single_id,
+                    production_planner=getattr(args, "production_planner", False))
     print(f"retriever ready in {pipe.load_seconds:.1f}s — "
           f"{pipe.meta.get('n_chunks')} chunks, {pipe.meta.get('embedding_model')}")
     if args.gate:
@@ -1104,10 +1251,17 @@ def run_eval(args, cases: list) -> list:
         try:
             rec = _run_case(pipe, client, args, case)
         except Exception as e:                  # one bad case never ends a run
+            parity = pipe.parity()
+            parity["followup"] = {
+                "fixture_has_history": bool(case["turns"]),
+                "conductor_history_resolution": (
+                    "unavailable" if case["turns"] else "not-needed"),
+            }
             rec = {"id": case["id"], "class": case["class"], "lang": case["lang"],
                    "question": case["question"], "turns": len(case["turns"]),
                    "mode": "answers" if args.answers else "retrieval-only",
                    "guard": False, "expect": case["expect"], "score": 0.0,
+                   "pipeline_parity": parity,
                    "error": f"{type(e).__name__}: {e}"}
             print(f"[{i}/{len(cases)}] {case['id']}  ERROR {rec['error'][:90]}",
                   flush=True)
@@ -1150,14 +1304,65 @@ def _safe(fn, *a, **kw):
         return {"error": f"{type(e).__name__}: {e}"}
 
 
+def _metric_rate(metric, key):
+    return metric.get(key) if isinstance(metric, dict) else None
+
+
+def compare_verifier_output(original: dict, returned: dict) -> dict:
+    """Machine-readable no-regression checks for a verifier/repair pass."""
+    checks_a, checks_b = original["checks"], returned["checks"]
+    fields_a, fields_b = original["fields"], returned["fields"]
+    claims_a, claims_b = original["claims"], returned["claims"]
+    regressions = []
+    if checks_a.get("pass") and not checks_b.get("pass"):
+        regressions.append("answer_checks_pass_to_fail")
+    pairs = [
+        ("field_coverage", _metric_rate(fields_a, "coverage"),
+         _metric_rate(fields_b, "coverage")),
+        ("groundedness", _metric_rate(claims_a, "groundedness_rate"),
+         _metric_rate(claims_b, "groundedness_rate")),
+        ("citation_completeness",
+         _metric_rate(claims_a, "citation_completeness_rate"),
+         _metric_rate(claims_b, "citation_completeness_rate")),
+        ("citation_support", _metric_rate(claims_a, "citation_support_rate"),
+         _metric_rate(claims_b, "citation_support_rate")),
+    ]
+    deltas = {"answer_score": checks_b.get("score", 0) - checks_a.get("score", 0)}
+    for name, before, after in pairs:
+        deltas[name] = None if before is None or after is None else after - before
+        if before is not None and after is not None and after < before - 1e-9:
+            regressions.append(name + "_decreased")
+    return {"no_regression": not regressions, "regressions": regressions,
+            "deltas": deltas}
+
+
+def _answer_metrics(case, answer, hits, notes, *, verdicts=None, evidence=None):
+    return {
+        "checks": score_answer(case, answer, hits),
+        "fields": _safe(score_fields, case, answer),
+        "claims": _safe(score_claims, answer, hits, notes,
+                        verdicts=verdicts, evidence=evidence),
+    }
+
+
 def _run_case(pipe, client, args, case: dict) -> dict:
     out = pipe.run(case["question"])
+    parity = dict(out.get("pipeline_parity") or {
+        "level": "unknown", "limitations": ["pipeline did not report capabilities"]})
+    parity["followup"] = {
+        "fixture_has_history": bool(case["turns"]),
+        "conductor_history_resolution": "unavailable" if case["turns"] else "not-needed",
+    }
+    if case["turns"]:
+        parity.setdefault("limitations", []).append(
+            "follow-up history is passed to answer generation but is not resolved by the conductor")
     rec = {
         "id": case["id"], "class": case["class"], "lang": case["lang"],
         "question": case["question"], "turns": len(case["turns"]),
         "mode": "answers" if args.answers else "retrieval-only",
         "guard": out["guard"], "weak_signal": out.get("weak"),
         "plan": out.get("plan") or [],
+        "pipeline_parity": parity,
         "retrieval": score_retrieval(case, out["hits"]),
         "expect": case["expect"],
     }
@@ -1170,14 +1375,53 @@ def _run_case(pipe, client, args, case: dict) -> dict:
     if answer is None:
         answer, usage = ask_model(client, out["system"], case["turns"], out["user"])
     notes = out.get("notes") or {}
+    evidence_notes = [notes.get("registry"), notes.get("year"), notes.get("matrix")]
+    original = _answer_metrics(case, answer, out["hits"], evidence_notes)
+    verifier_mode = getattr(args, "verifier_mode", "deterministic")
+    allow_repair = bool(getattr(args, "verifier_repair", False))
+    final_answer = answer
+    verifier_result = None
+    verifier_error = None
+    evidence = None
+    try:
+        verifier_result, evidence = run_offline_verifier(
+            answer, out["hits"], evidence_notes, client=client,
+            mode=verifier_mode, allow_repair=allow_repair)
+        final_answer = verifier_result.answer
+    except Exception as e:
+        # Production verification is best-effort and never discards an answer.
+        verifier_error = f"{type(e).__name__}: {e}"
+
+    if verifier_result is not None:
+        returned = _answer_metrics(
+            case, final_answer, out["hits"], evidence_notes,
+            verdicts=verifier_result.verdicts, evidence=evidence)
+    else:
+        returned = original
+    comparison = compare_verifier_output(original, returned)
     rec.update({
-        "answer": answer,
-        "checks": score_answer(case, answer, out["hits"]),
+        "answer": final_answer,
+        "original_answer": answer,
+        "checks": returned["checks"],
+        "checks_original": original["checks"],
         "model": config.CHAT_MODEL,
         "usage": usage,
-        "fields": _safe(score_fields, case, answer),
-        "claims": _safe(score_claims, answer, out["hits"],
-                        [notes.get("registry"), notes.get("year")]),
+        "fields": returned["fields"],
+        "fields_original": original["fields"],
+        "claims": returned["claims"],
+        "claims_original": original["claims"],
+        "verification": {
+            "mode": verifier_mode,
+            "use_llm": verifier_mode == "production",
+            "repair_enabled": allow_repair,
+            "status": getattr(verifier_result, "status", None),
+            "answer_changed": final_answer != answer,
+            "repaired": bool(getattr(verifier_result, "repaired", False)),
+            "repair_rejected": bool(getattr(verifier_result, "repair_rejected", False)),
+            "error": verifier_error,
+            "usage_accounting": "answer-generation call only; verifier judge and repair excluded",
+            "comparison": comparison,
+        },
         "hits": [{"doc": h.doc_id, "page": _page(h), "score": round(h.score, 4)}
                  for h in out["hits"]],
         "notes_used": {k: v for k, v in notes.items() if v},
@@ -1340,8 +1584,22 @@ def main(argv=None):
     ap.add_argument("--scope-single-id", action="store_true",
                     help="A/B only, NOT production: doc-scope questions naming "
                          "exactly one FP, to measure what tag resolution buys")
+    ap.add_argument("--production-planner", action="store_true",
+                    help="run the app's deterministic comparison planner, evidence "
+                         "matrix, scoped-query and round-robin retrieval path; the "
+                         "LLM conductor fallback remains unavailable")
+    ap.add_argument("--verifier-mode", choices=("deterministic", "production"),
+                    default="deterministic",
+                    help="offline verify.verify_answer mode: deterministic adds no "
+                         "API calls (default); production enables LLM adjudication")
+    ap.add_argument("--verifier-repair", action="store_true",
+                    help="opt in to the verifier repair pass; this can add an API "
+                         "call independently of --verifier-mode")
     ap.add_argument("--verbose", "-v", action="store_true")
     args = ap.parse_args(argv)
+
+    if args.raw_retrieval and args.production_planner:
+        ap.error("--raw-retrieval and --production-planner are mutually exclusive")
 
     if args.compare:
         run_compare(*args.compare)
