@@ -30,6 +30,7 @@ from gcf_qna.rag.registry import FP_RE as _FP_RE
 from gcf_qna.rag.registry import _BOARD_CODE_RE
 from gcf_qna.app.highlight import annotated_page
 from gcf_qna.rag import Embedder, Retriever, load_index
+from gcf_qna.rag import planner, verify
 from gcf_qna.rag.ground import ground_chunk
 
 from gcf_qna.app.prompts import (CONDUCTOR_PROMPT, SYSTEM_PROMPT, assemble,
@@ -576,6 +577,142 @@ def _resolved_refs_note(items: list, msg_text: str):
               "the only evidence.)")
 
 
+# ---------------------------------------------------------------------------
+# Comparison-planner intent gate (config.PLANNER).
+#
+# planner.detect() fires on ANY message naming >= 2 documents, comparative or
+# not: "FP254 is interesting. Separately, FP248 was approved last year." names
+# two and asks nothing, and a deterministic 2x4 evidence matrix is the wrong
+# answer to it. The planner is deliberately not the place to judge intent — it
+# resolves identifiers and fields, two closed problems — so the gate lives
+# here, in the wiring, where the alternative (the LLM conductor, which reads
+# the conversation) is in scope.
+# ---------------------------------------------------------------------------
+_COMPARE_INTENT_RE = re.compile(
+    r"\bcompare[sd]?\b|\bcomparing\b|\bcomparison\b|\bversus\b|\bvs\b"
+    r"|\bdiffer(?:s|ed|ent|ently|ence|ences)?\b"
+    r"|\bcompar(?:er|ez|ons|aison|atif|ative)\b|\bdiff[ée]rence?s?\b"
+    r"|\blequel\b|\blaquelle\b|\blesquel(?:le)?s\b|\bpar rapport\b", re.I)
+
+
+def _ids_in(text: str) -> set:
+    """The distinct document identifiers in a string: FP tokens and board codes."""
+    return ({("fp", n) for n in _FP_RE.findall(text or "")}
+            | {("board",) + tuple(t) for t in _BOARD_CODE_RE.findall(text or "")})
+
+
+def _asks_about_both(text: str) -> bool:
+    """A question mark and >= 2 identifiers inside ONE sentence.
+
+    "Which of FP254 and FP248 is bigger?" carries no comparison keyword and no
+    field word, yet the two ids share a question. The prose case the gate
+    exists to exclude never puts them in one interrogative sentence.
+    """
+    for sent in re.split(r"(?<=[.!?])\s+|\n+", text or ""):
+        if "?" in sent and len(_ids_in(sent)) >= 2:
+            return True
+    return False
+
+
+def _planner_intent(text: str, plan) -> bool:
+    """Does this >=2-id message actually ask for a document-by-field answer?
+
+    Three independent signals, any of which is enough:
+      * a comparison word (compare / versus / vs / difference / differ,
+        comparer / différence / lequel);
+      * a field keyword — `plan.default_fields` is False exactly when the
+        planner's own field map matched something the question asked for;
+      * both identifiers inside one question sentence.
+    """
+    if _COMPARE_INTENT_RE.search(text or ""):
+        return True
+    if plan is not None and not plan.default_fields:
+        return True
+    return _asks_about_both(text)
+
+
+# ---------------------------------------------------------------------------
+# Answer verification (config.VERIFY, plan step 5 — gcf_qna.rag.verify).
+#
+# The answer model is the one component allowed to WRITE facts, and the one we
+# cannot audit by construction. verify.py audits its output claim by claim
+# against the exact pages this turn retrieved; the app's job is to run it after
+# the stream, show the corrected text when a repair lands, and say plainly what
+# could not be verified. Every failure path here keeps the original answer.
+# ---------------------------------------------------------------------------
+
+def _claim_texts(verdicts: list, limit: int = 3, width: int = 110) -> str:
+    """Claim sentences of some verdicts, trimmed to fit a one-line warning."""
+    out = []
+    for v in verdicts[:limit]:
+        text = re.sub(r"\s+", " ", (v.claim.text or "").strip())
+        out.append(text if len(text) <= width else text[:width].rstrip() + "…")
+    more = len(verdicts) - len(out)
+    return "; ".join(out) + (f" (+{more} more)" if more > 0 else "")
+
+
+def _verification_lines(res) -> list:
+    """What the user is told about a verification result — nothing when the
+    answer verified clean.
+
+    Same shape as the existing invalid-citation warning: ⚠️ lines appended to
+    the sources block, never a separate ceremony. A repair is announced quietly
+    (the corrected text is already on screen); everything else names the claims
+    it could not stand behind, because an unflagged partial answer reads
+    exactly like a verified one.
+    """
+    if res is None:
+        return []
+    lines = []
+    if res.status == "repaired":
+        lines.append("✎ answer corrected against the cited pages")
+    elif res.status == "partial":
+        lines.append("⚠️ not supported by the retrieved pages (treat with "
+                     "caution): " + _claim_texts(res.unsupported))
+    elif res.status == "abstain":
+        lines.append("⚠️ retrieval did not surface evidence for this — none of "
+                     "these claims could be checked against the cited pages: "
+                     + _claim_texts(res.failures))
+    elif res.status == "unverified-llm":
+        lines.append("⚠️ claims could not be re-checked (no verification model "
+                     "available); the deterministic checks flag: "
+                     + _claim_texts(res.failures))
+    if res.cautions:
+        lines.append("⚠️ citation cautions: " + "; ".join(
+            f"{_claim_texts([v], width=70)} [{', '.join(v.flags[:2])}]"
+            for v in res.cautions[:3]))
+    return lines
+
+
+async def _verify_reply(reply, evidence: dict):
+    """Audit a finished answer; returns the RepairResult, or None when the
+    verification could not run.
+
+    Never raises, and never leaves a half-applied repair on screen: a verifier
+    that breaks answering is strictly worse than no verifier, so every failure
+    path ends with the answer exactly as the model wrote it.
+    """
+    original = reply.content
+    try:
+        async with cl.Step(name="verification") as step:
+            res = await cl.make_async(verify.verify_answer)(
+                original, evidence, use_llm=config.VERIFY_LLM,
+                allow_repair=config.VERIFY_REPAIR)
+            step.output = "\n".join(
+                [f"status: {res.status}",
+                 "claims: " + ", ".join(f"{k} {n}" for k, n in res.counts().items())]
+                + [f"- {v.status}: {_claim_texts([v], width=90)} — {v.reason}"
+                   for v in res.failures[:6]] + list(res.notes))
+        if res.answer and res.answer != original:
+            reply.content = res.answer
+            await reply.update()
+        return res
+    except Exception as e:                        # noqa: BLE001
+        reply.content = original
+        print(f"verification skipped: {type(e).__name__}: {e}", flush=True)
+        return None
+
+
 def _answer_messages(system_prompt: str, context: str, question: str,
                      refs_note: str = None) -> list:
     """The factual answer call's messages array: system + ONE user turn.
@@ -791,16 +928,37 @@ async def main(message: cl.Message):
     client = openai.AsyncOpenAI(base_url=config.OPENAI_BASE_URL or None)
     history = cl.user_session.get("history") or []
 
-    # Follow-ups carry references the embedder cannot resolve ("how does THAT
-    # compare..."), so retrieval on the raw message fetches noise. One LLM call
-    # rewrites the message against recent history — into a single standalone
-    # query, or, for comparisons/aggregations over documents named in the
-    # conversation, one doc-scoped sub-query per entity (per-document quota).
-    # See docs/query-decomposition.html. Best-effort: any failure falls back
-    # to the raw message; the original wording still goes to the answer model.
+    # Deterministic comparison planning (plan step 4), behind config.PLANNER.
+    # When the question NAMES its documents and asks about their fields,
+    # nothing about the plan needs a model: the identifiers resolve through the
+    # registry and the fields through a keyword map, so the plan is built
+    # before any retrieval runs and every (document, field) cell is rendered —
+    # including the empty ones a fan-out silently drops. detect() returns None
+    # for follow-ups, single-id and purely semantic questions; _planner_intent
+    # returns non-comparative two-id prose to the conductor, which reads the
+    # conversation and is the better judge of it.
+    plan = planner.detect(message.content) if config.PLANNER else None
+    if plan is not None and not _planner_intent(message.content, plan):
+        plan = None
+
     search_queries = [{"q": message.content, "doc": None}]
     mode = "retrieve"
-    if config.CONDUCTOR:
+
+    async def run_conductor():
+        """Follow-ups carry references the embedder cannot resolve ("how does
+        THAT compare..."), so retrieval on the raw message fetches noise. One
+        LLM call rewrites the message against recent history — into a single
+        standalone query, or, for comparisons/aggregations over documents named
+        in the conversation, one doc-scoped sub-query per entity (per-document
+        quota). See docs/query-decomposition.html. Best-effort: any failure
+        falls back to the raw message; the original wording still goes to the
+        answer model.
+
+        A function, not a straight-line block, because the planner path skips
+        it and may still need it: a matrix that fails to build falls back here,
+        after the point the call would normally have happened.
+        """
+        nonlocal mode, search_queries
         try:
             # citation lists are extracted from FULL history — truncation once
             # left the conductor blind to most cited docs.
@@ -836,6 +994,9 @@ async def main(message: cl.Message):
                 search_queries = parsed
         except Exception:
             pass
+
+    if plan is None and config.CONDUCTOR:
+        await run_conductor()
 
     if mode == "chat":
         # conversational/meta turn: answer from history, no retrieval,
@@ -881,17 +1042,55 @@ async def main(message: cl.Message):
     except Exception:
         pass
 
-    # Single-FP pre-scoping, on the unconditional path so it also covers the
-    # conductor-off and conductor-failed fallbacks, where the raw message is
-    # the only query and _rescope_items never ran. Already-tagged items are
-    # untouched, so running it twice on the conductor path is a no-op.
-    search_queries = _prescope_single_fp(search_queries, message.content)
-    # Doc tags become retrieval filters here: resolve each one to its
-    # authoritative corpus stem first, since B.27-era ids contain no FP
-    # number and a bare 'fp152' filter would match nothing (_registry_doc).
-    search_queries = _resolve_doc_tags(search_queries)
+    # The evidence matrix, built AFTER the abstention above: a message whose
+    # every identifier is unknown is refused per document there, and one that
+    # only partly resolves falls through to here, where the matrix carries a
+    # missing-document row for each id the registry does not have.
+    matrix_block = None
+    if plan is not None:
+        async with cl.Step(name="evidence matrix") as step:
+            try:
+                matrix = await cl.make_async(planner.build_matrix)(plan, retriever)
+                if not any(c.status not in ("missing", "missing-document")
+                           for c in matrix.cells):
+                    raise ValueError("no cell carries evidence")
+                matrix_block = planner.render(matrix)
+                step.output = (f"{plan.trigger}\n"
+                               + ", ".join(f"{k} {v}" for k, v in matrix.counts.items()))
+            except Exception as e:            # noqa: BLE001 — never user-facing
+                step.output = (f"planner skipped for this turn "
+                               f"({type(e).__name__}: {e}); falling back to the "
+                               f"LLM conductor")
+        if matrix_block is None:
+            # Fallback: the conductor call that the planner path skipped
+            # happens now, and this turn proceeds exactly as PLANNER=0 would.
+            plan = None
+            if config.CONDUCTOR:
+                await run_conductor()       # a late mode='chat' is ignored: the
+                                            # chat branch is already behind us,
+                                            # and retrieving is the safe default
+        else:
+            # Authoritative stems, straight from the registry. The rewrite
+            # guards have nothing to repair here — no model wrote these tags —
+            # so _rescope_items/_resolve_doc_tags are skipped below.
+            scoped = [{"q": message.content, "doc": d.scope}
+                      for d in plan.docs if not d.missing]
+            search_queries = scoped or search_queries
 
-    decomposed = len(search_queries) > 1
+    if plan is None:
+        # Single-FP pre-scoping, on the unconditional path so it also covers the
+        # conductor-off and conductor-failed fallbacks, where the raw message is
+        # the only query and _rescope_items never ran. Already-tagged items are
+        # untouched, so running it twice on the conductor path is a no-op.
+        search_queries = _prescope_single_fp(search_queries, message.content)
+        # Doc tags become retrieval filters here: resolve each one to its
+        # authoritative corpus stem first, since B.27-era ids contain no FP
+        # number and a bare 'fp152' filter would match nothing (_registry_doc).
+        search_queries = _resolve_doc_tags(search_queries)
+
+    # A one-document plan (its partner identifier resolves nowhere) still ships
+    # the comparison rules: the answer has to say so, document by document.
+    decomposed = len(search_queries) > 1 or plan is not None
     if decomposed or search_queries[0]["q"] != message.content:
         async with cl.Step(name="retrieval query") as step:
             step.output = "\n".join(
@@ -942,8 +1141,25 @@ async def main(message: cl.Message):
             context = reg_note + "\n\n" + context
     except Exception:
         pass    # the registry is an enhancement, never a blocker
+    if matrix_block:
+        # ABOVE the registry note and the excerpts: the matrix is the complete
+        # half of the evidence (every named document, every asked field, empty
+        # cells included) and has to be read before the retrieved sample.
+        context = matrix_block + "\n\n" + context
+    # What the answer is allowed to have used: this turn's excerpts plus the
+    # computed blocks prepended above (registry line, year/board note, evidence
+    # matrix) — built here, from the same strings the context got, so the audit
+    # cannot drift from what the model actually read.
+    evidence = None
+    if config.VERIFY:
+        try:
+            evidence = verify.build_evidence(
+                hits, [n for n in (reg_note, year_note, matrix_block) if n])
+        except Exception as e:                    # noqa: BLE001
+            evidence = None                       # never blocks the answer
+            print(f"verification evidence unavailable: {e}", flush=True)
     system_prompt = assemble(year=bool(year_note), registry=bool(reg_note),
-                             comparison=decomposed,
+                             comparison=decomposed, matrix=bool(matrix_block),
                              lang=_detect_lang(message.content))
     # Evidence isolation (plan step 1): this call gets the question, the
     # resolved-reference ids and THIS turn's excerpts — never prior answers.
@@ -962,6 +1178,10 @@ async def main(message: cl.Message):
             await reply.stream_token(part.choices[0].delta.content)
     await reply.send()
 
+    # Claim-level audit of what was just written, BEFORE it becomes history: a
+    # repaired answer is the one the next turn's conductor should remember.
+    res = await _verify_reply(reply, evidence) if evidence is not None else None
+
     history += [
         {"role": "user", "content": message.content},
         {"role": "assistant", "content": reply.content},
@@ -970,19 +1190,37 @@ async def main(message: cl.Message):
 
     if hits:
         # order sources/evidence by what the answer actually cited (review #6):
-        # cited (doc,page) pairs first, uncited retrieved hits after
-        cited_docs = set(re.findall(r"\[([0-9]{1,3}_[\w.\-]+)", reply.content or ""))
+        # cited (doc,page) pairs first, uncited retrieved hits after. With
+        # verification on, the citations are re-parsed from the FINAL answer by
+        # verify.cited_sources — page-aware, and correct after a repair moved a
+        # citation; with it off, the same regex over the answer as before.
+        if res is not None:
+            cited_docs = {d for d, _ in res.sources}
+            cited_keys = {(d, p) for d, p in res.sources if p}
+        else:
+            cited_docs = set(re.findall(r"\[([0-9]{1,3}_[\w.\-]+)", reply.content or ""))
+            cited_keys = set()
         def _cited(h):
             return any(h.doc_id.startswith(c[:24]) or c.startswith(h.doc_id[:24])
                        for c in cited_docs)
-        hits = sorted(hits, key=lambda h: not _cited(h))
+        def _cited_page(h):
+            return any(h.page == p and (h.doc_id.startswith(d[:24])
+                                        or d.startswith(h.doc_id[:24]))
+                       for d, p in cited_keys)
+        # the exact cited page leads its document's other pages; with no
+        # page-level citations (VERIFY=0) this is the old doc-level sort
+        hits = sorted(hits, key=lambda h: (not _cited(h), not _cited_page(h)))
         shown = [h for h in hits if _cited(h)] or hits
         sources = ", ".join(sorted({f"{h.doc_id} p.{h.page}" if h.page else h.doc_id
                                     for h in shown}))
-        bad_cites = _invalid_citations(reply.content or "", hits)
+        # verification reports invented citations itself (as failed claims with
+        # the page they point at), so this stays the VERIFY=0 path
+        bad_cites = _invalid_citations(reply.content or "", hits) if res is None else []
         if bad_cites:
             sources += ("\n⚠️ cited but not among retrieved pages (treat with "
                         "caution): " + "; ".join(bad_cites[:4]))
+        for line in _verification_lines(res):
+            sources += "\n" + line
         # Ground the citations: annotated page images with the cited passage
         # highlighted (green lines / blue table region). Dedupe by (doc, page),
         # cap at 3 pages so answers stay scannable.
@@ -1005,3 +1243,9 @@ async def main(message: cl.Message):
             if len(elements) >= 3:
                 break
         await cl.Message(content=f"📎 Sources: {sources}", elements=elements).send()
+    else:
+        # no excerpts means no sources line to hang the verdict on, and a
+        # note-only answer is exactly the kind that needs one
+        lines = _verification_lines(res)
+        if lines:
+            await cl.Message(content="\n".join(lines)).send()

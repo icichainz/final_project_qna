@@ -34,6 +34,23 @@ MIN_DENSE_SCORE = float(os.getenv("MIN_DENSE_SCORE", "0.5"))
 # per-turn conductor call (mode routing + English queries); 0 restores the
 # history-only condensation behavior
 CONDUCTOR = os.getenv("CONDUCTOR", "1") == "1"
+# deterministic comparison planner (plan step 4): a question that names >= 2
+# documents AND asks a comparison/field question builds its evidence matrix
+# from the registry before retrieval, instead of routing through the LLM
+# conductor. Independent switch, DEFAULT OFF for this deploy — the conductor
+# path is the measured one; flip after the eval run.
+PLANNER = os.getenv("PLANNER", "0") == "1"
+# claim-level verification of the finished answer against the pages it cites,
+# plus at most one constrained repair pass (plan step 5, gcf_qna.rag.verify).
+# Master switch, DEFAULT OFF for this deploy: it adds up to two LLM calls per
+# turn and rewrites answers, so it ships behind the same discipline as PLANNER.
+VERIFY = os.getenv("VERIFY", "0") == "1"
+# The two optional LLM calls inside that pass, consulted ONLY when VERIFY=1:
+# the batched judge over claims the deterministic checks could not confirm,
+# and the repair rewrite. Both off leaves a pure-python audit that reports
+# what it found and never touches the answer text.
+VERIFY_LLM = os.getenv("VERIFY_LLM", "1") == "1"
+VERIFY_REPAIR = os.getenv("VERIFY_REPAIR", "1") == "1"
 
 # --- chat (OpenAI-compatible endpoint) ---
 CHAT_MODEL = os.getenv("CHAT_MODEL", "gpt-5.2")

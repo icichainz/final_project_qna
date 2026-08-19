@@ -45,6 +45,24 @@ COMPARISON_BLOCK = (
     "currencies differ and give the amounts as printed."
 )
 
+MATRIX_BLOCK = (
+    "The context opens with an EVIDENCE MATRIX: one line per (document, field)\n"
+    "cell, resolved deterministically before retrieval — it is complete for the\n"
+    "documents and fields the question named, unlike the excerpts.\n"
+    "Address EVERY row of the matrix. A row marked 'missing' means the document\n"
+    "does not state it: say so for that document, never fill the gap from\n"
+    "another document or from an excerpt about something else. A row marked\n"
+    "'missing-document' means the identifier matches no document in the corpus:\n"
+    "state that plainly for that identifier and answer the rest.\n"
+    "A row followed by 'CONFLICT in the same document' means that document\n"
+    "prints two disagreeing figures: give BOTH, each with its page, and do not\n"
+    "choose one silently.\n"
+    "Quote values exactly as the matrix prints them, with their pages. Never\n"
+    "convert between currencies or units, and never rank, sum or subtract\n"
+    "across a field the COMPARABILITY lines mark NOT COMPARABLE — report each\n"
+    "document's own figure and say why they cannot be ranked."
+)
+
 YEAR_BLOCK = (
     "Document ids encode the GCF board meeting: '...-b42-02-...' means B.42.\n"
     "Board-meeting years (verified from the corpus): B.11=2015; B.13-B.15=2016;\n"
@@ -94,10 +112,13 @@ def _language_block(lang):
 
 
 def assemble(year: bool = False, registry: bool = False,
-             comparison: bool = False, lang: str = None) -> str:
+             comparison: bool = False, lang: str = None,
+             matrix: bool = False) -> str:
     blocks = [CORE]
     if comparison:
         blocks.append(COMPARISON_BLOCK)
+    if matrix:
+        blocks.append(MATRIX_BLOCK)
     if year:
         blocks.append(YEAR_BLOCK)
     if registry:
@@ -110,7 +131,9 @@ def assemble_chat(lang: str = None) -> str:
     return CHAT_CORE + "\n" + _language_block(lang)
 
 
-# Full prompt (all blocks) — compatibility export for tests and harnesses.
+# Full prompt — compatibility export for tests and harnesses. MATRIX_BLOCK is
+# deliberately absent: it instructs the model to read an evidence matrix, and a
+# turn that ships no matrix must not be told to address its rows.
 SYSTEM_PROMPT = assemble(year=True, registry=True, comparison=True)
 
 
