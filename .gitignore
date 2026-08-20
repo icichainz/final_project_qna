@@ -27,6 +27,17 @@ data/**
 !data/eval/answers_baseline_*.jsonl
 !data/eval/CHECKSUMS.sha256
 
+# The corpus fact registry is an INPUT to the verifier, not an output of it:
+# rag/verify.py reads it for every conflict, every registry-backed figure and
+# every 'report both figures' suppression. Under a bare `data/**` it was
+# untracked, so a clean checkout ran a measurably DIFFERENT system — the
+# adjudicated gold scored precision 25.0% instead of 34.3%, and a claim the
+# recorded release passed was newly flagged, with nothing anywhere to say the
+# registry was missing. CI could not run the configuration production runs.
+# Same treatment as the eval anchor, and covered by the same CHECKSUMS file.
+!data/registry.json
+!data/registry_v2.json
+
 # index artifacts wherever they sit
 *.faiss
 *.pkl
