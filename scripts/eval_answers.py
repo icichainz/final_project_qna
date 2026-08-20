@@ -21,7 +21,8 @@ Four modes
                      Per-record metadata names the remaining parity gaps.
   --release          --answers over the WHOLE suite plus the release report:
                      required-field coverage against registry v2, claim
-                     groundedness and citation support from rag.verify,
+                     groundedness / citation completeness / citation presence
+                     from rag.verify (see "metric contract" below),
                      latency p50/p95, tokens and estimated cost. Records to
                      data/eval/release_<label>.jsonl. The verifier defaults to
                      deterministic/no-repair, so it adds no API calls.
@@ -99,9 +100,82 @@ CLASS_ORDER = ["identifier", "compact-id", "board-code", "discovery",
 TOKEN_COST_USD = {"prompt": 1.25 / 1_000_000,        # ~$1.25 per 1M input
                   "completion": 10.00 / 1_000_000}   # ~$10.00 per 1M output
 
-# The plan's citation-precision gate: share of extracted claims the turn's own
-# evidence supports.
+# The plan's citation-precision gate: share of extracted claims that BOTH cite
+# evidence and are supported by what they cite (docs/claim-support-execution-
+# plan.md, "Metric contract"). Gated on citation completeness only.
 CLAIM_SUPPORT_GATE = 0.95
+
+# ---------------------------------------------------------------------------
+# metric contract (docs/claim-support-execution-plan.md, "Metric contract")
+# ---------------------------------------------------------------------------
+# Three numbers, two gates:
+#
+#   groundedness          some evidence the answer path HELD entails the claim,
+#                         cited or not          -> gated
+#   citation completeness the claim CITES evidence that entails it: cited AND
+#                         SUPPORTED             -> gated
+#   citation presence     the claim carries any citation, right or wrong
+#                         -> REPORTED, NEVER GATED
+#
+# Citation presence is the one an answer can raise by appending '[anything,
+# p.1]'. It is kept visible precisely so it can never be mistaken for
+# completeness again (verdict finding 4: counting it as completeness reported
+# 141/165 where the contract gives 91/165).
+#
+# `--compare` builds one row per entry. Two entries naming the same underlying
+# record key would double-count a single regression and print two green deltas
+# where one exists (binding decision 4), so the tuple is asserted pairwise
+# distinct at import — see _assert_distinct_metric_keys below.
+#
+#            display name          record block  record key                gated
+COMPARED_METRICS = (
+    ("field_coverage",             "fields", "coverage",                   True),
+    ("groundedness",               "claims", "groundedness_rate",          True),
+    ("citation_completeness",      "claims", "citation_completeness_rate", True),
+    ("citation_presence",          "claims", "citation_presence_rate",     False),
+)
+
+# The verdict flags that mean "held evidence entails this claim even though the
+# claim's own citation does not". Groundedness is defined over ALL held
+# evidence, so it must read the verifier's all-evidence finding rather than
+# re-deriving it from citation state (which is what collapsed groundedness onto
+# citation support, verdict finding 5). Public flag surface only — this file
+# calls no private verify helper.
+GROUNDED_FLAGS = ("value-present-elsewhere",)
+
+
+def n_over_d(num, den) -> str:
+    """A claim metric as `n/d`. Never publish a bare rate: a rate whose
+    denominator moved is not a comparison (metric contract)."""
+    return f"{int(num)}/{int(den)}"
+
+
+def gate_threshold(den, gate: float = CLAIM_SUPPORT_GATE) -> int:
+    """The exact integer numerator a gate needs — ceil(gate * d), computed in
+    integers so no float rounding can hand out a pass (binding decision 5)."""
+    den = int(den)
+    return -((-int(round(gate * 10000)) * den) // 10000)
+
+
+def _assert_distinct_metric_keys(metrics=COMPARED_METRICS):
+    """Startup assertion: no two compared metrics share a name or a record key.
+
+    A plain `assert` would vanish under `python -O`, and this is the check that
+    stops a resurrected duplicate (`citation_support_rate` beside
+    `citation_completeness_rate`) from double-counting one regression.
+    """
+    names = [m[0] for m in metrics]
+    keys = [(m[1], m[2]) for m in metrics]
+    dup_names = sorted({n for n in names if names.count(n) > 1})
+    dup_keys = sorted({f"{b}.{k}" for b, k in keys if keys.count((b, k)) > 1})
+    if dup_names or dup_keys:
+        raise AssertionError(
+            "compared metric keys must be pairwise distinct; duplicates: "
+            + ", ".join(dup_names + dup_keys))
+    return metrics
+
+
+_assert_distinct_metric_keys()
 
 
 # ---------------------------------------------------------------------------
@@ -557,9 +631,18 @@ def score_claims(answer: str, hits, notes=None, verdicts=None, evidence=None):
     which a fabricated figure on a real page passes. This asks whether the
     cited evidence states the claim: verify.extract_claims over the answer,
     verify.build_evidence over the very hits and notes the harness put in the
-    prompt, verify.classify_deterministic between them. Groundedness and
-    citation completeness are deliberately separate: an uncited claim whose
-    value is present in the held evidence is grounded, but citation-incomplete.
+    prompt, verify.classify_deterministic between them.
+
+    Three separate numbers, per the metric contract (COMPARED_METRICS above):
+
+    * groundedness          — some evidence the turn HELD entails the claim,
+                              cited or not.
+    * citation completeness — the claim cites evidence that entails it:
+                              ``cited AND SUPPORTED``. This is the gated one.
+    * citation presence     — the claim carries a bracket, right or wrong.
+                              Reported, never gated: a fabricated citation to a
+                              document that was never retrieved raises presence
+                              and CANNOT raise completeness.
 
     ``verdicts`` and ``evidence`` let the offline verifier reuse its final
     verdicts without another classification pass. With neither supplied this
@@ -577,12 +660,16 @@ def score_claims(answer: str, hits, notes=None, verdicts=None, evidence=None):
         cited = bool(getattr(v.claim, "cited",
                              getattr(v.claim, "citations", [])))
         flags = list(getattr(v, "flags", []) or [])
-        grounded = (v.status == verify.SUPPORTED
-                    or "value-present-elsewhere" in flags)
-        n["cited"] += cited
+        supported_here = v.status == verify.SUPPORTED
+        # Groundedness reads the verifier's all-evidence finding, never the
+        # claim's citation state.
+        grounded = supported_here or any(f in flags for f in GROUNDED_FLAGS)
+        # Citation completeness is 'cited AND supported'. A bracket alone is
+        # citation PRESENCE and is counted under its own name.
+        n["citation_present"] += cited
         n["grounded"] += grounded
-        n["citation_supported"] += cited and v.status == verify.SUPPORTED
-        if v.status != verify.SUPPORTED:
+        n["citation_complete"] += cited and supported_here
+        if not supported_here:
             failures.append({"status": v.status, "kind": v.claim.kind,
                              "text": v.claim.text[:160], "reason": v.reason[:160],
                              "grounded": grounded, "cited": cited})
@@ -592,14 +679,19 @@ def score_claims(answer: str, hits, notes=None, verdicts=None, evidence=None):
         "claims": total,
         "grounded": n["grounded"],
         "groundedness_rate": (n["grounded"] / total) if total else None,
-        "citation_complete": n["cited"],
-        "citation_completeness_rate": (n["cited"] / total) if total else None,
-        "citation_supported": n["citation_supported"],
-        "citation_support_rate": (n["citation_supported"] / total) if total else None,
+        "groundedness": n_over_d(n["grounded"], total),
+        "citation_complete": n["citation_complete"],
+        "citation_completeness_rate": (n["citation_complete"] / total) if total else None,
+        "citation_completeness": n_over_d(n["citation_complete"], total),
+        "citation_present": n["citation_present"],
+        "citation_presence_rate": (n["citation_present"] / total) if total else None,
+        "citation_presence": n_over_d(n["citation_present"], total),
         "supported": supported,
         "contradicted": n[verify.CONTRADICTED],
         "unsupported": n[verify.UNSUPPORTED],
-        # Backward-compatible alias for existing artifacts and --compare.
+        # Legacy verdict tally, kept for pre-split artifacts. NOT a compared
+        # metric key — `--compare` reads citation_completeness_rate, so this
+        # cannot double-count the same regression (binding decision 4).
         "support_rate": (supported / total) if total else None,
         "evidence_keys": [f"{d}|{p if p is not None else '-'}" for d, p in evidence],
         "failures": failures[:6],
@@ -1036,7 +1128,7 @@ def print_release_table(rows: list, cases_total: int = None):
     print("=" * 78)
     hdr = (f"{'class':12} {'n':>3} {'err':>4} {'pass':>6} {'behav':>6} "
            f"{'contain':>8} {'forbid':>7} {'lang':>6} {'cites':>6} "
-           f"{'field':>6} {'claim':>6} {'p50':>7} {'p95':>7}")
+           f"{'field':>6} {'cite-cmpl':>9} {'p50':>7} {'p95':>7}")
     print(hdr)
     print("-" * len(hdr))
     for cls in sorted(by_cls, key=lambda c: (_class_rank(c), c)):
@@ -1068,20 +1160,24 @@ def print_release_table(rows: list, cases_total: int = None):
           "(deterministic unless verifier mode says otherwise)")
     tot = sum(c["claims"] for c in claims)
     sup = sum(c["supported"] for c in claims)
-    grounded = sum(c.get("grounded", c["supported"]) for c in claims)
-    complete = sum(c.get("citation_complete", c["supported"]) for c in claims)
-    cite_supported = sum(c.get("citation_supported", c["supported"]) for c in claims)
+    # No .get(key, c["supported"]) backfill: substituting the verdict tally for
+    # a missing metric prints a fabricated number under the metric's own name
+    # (verdict finding 21 — it asserted 91 == 110 == 141). A record that lacks
+    # the key reports n/a instead.
+    grounded = _sum_claim_metric(claims, "grounded")
+    complete = _sum_claim_metric(claims, "citation_complete")
+    present = _sum_claim_metric(claims, "citation_present")
     con = sum(c["contradicted"] for c in claims)
     uns = sum(c["unsupported"] for c in claims)
-    rate = (cite_supported / tot) if tot else 0.0
+    rate = (complete / tot) if (tot and complete is not None) else None
+    need = gate_threshold(tot)
     print(f"  claims                      : {tot} over {len(claims)} answers")
-    print(f"  evidence-grounded           : {grounded}/{tot} "
-          f"{(grounded / tot if tot else 0):.1%}")
-    print(f"  citation-complete           : {complete}/{tot} "
-          f"{(complete / tot if tot else 0):.1%}")
-    print(f"  supported by cited evidence : {cite_supported}/{tot} ({rate:.1%})  "
-          f"gate >= {CLAIM_SUPPORT_GATE:.0%} — "
-          f"{'PASS' if tot and rate >= CLAIM_SUPPORT_GATE else 'FAIL'}")
+    print(f"  groundedness                : {_metric_line(grounded, tot)}")
+    print(f"  citation completeness       : {_metric_line(complete, tot)}  "
+          f"gate >= {CLAIM_SUPPORT_GATE:.0%} = {need}/{tot} — "
+          f"{'PASS' if tot and complete is not None and complete >= need else 'FAIL'}")
+    print(f"  citation presence           : {_metric_line(present, tot)}  "
+          f"(reported, never gated)")
     print(f"  legacy supported verdicts   : {sup}")
     print(f"  contradicted                : {con}")
     print(f"  unsupported                 : {uns}")
@@ -1110,10 +1206,34 @@ def print_release_table(rows: list, cases_total: int = None):
                        "unscorable": unscorable},
             "claims": {"total": tot, "grounded": grounded,
                        "citation_complete": complete,
-                       "citation_supported": cite_supported,
+                       "citation_present": present,
+                       "groundedness": _n_over_d_or_none(grounded, tot),
+                       "citation_completeness": _n_over_d_or_none(complete, tot),
+                       "citation_presence": _n_over_d_or_none(present, tot),
+                       "gate_threshold": need,
                        "supported": sup, "contradicted": con,
                        "unsupported": uns, "rate": rate},
             "usage": u, "errors": [r["id"] for r in errored]}
+
+
+def _sum_claim_metric(claims: list, key: str):
+    """Pooled numerator for one claim metric, or None if any record predates
+    it. None propagates to `n/a`; it is never silently replaced by another
+    metric's count."""
+    vals = [c.get(key) for c in claims]
+    return None if any(v is None for v in vals) else sum(vals)
+
+
+def _n_over_d_or_none(num, den):
+    return None if num is None else n_over_d(num, den)
+
+
+def _metric_line(num, den) -> str:
+    """`n/d` first, the percentage second and only as a reading aid — the
+    contract forbids publishing a claim metric as a bare rate."""
+    if num is None:
+        return f"n/a ({den} claims; this run predates the metric)"
+    return f"{n_over_d(num, den)}" + (f" {num / den:.1%}" if den else "")
 
 
 def _release_line(label: str, rs: list) -> str:
@@ -1125,12 +1245,14 @@ def _release_line(label: str, rs: list) -> str:
     n = max(1, len(scored))
     u = usage_totals(rs)
     fcov = _pct(sum(x["n_covered"] for x in f), sum(x["n_scorable"] for x in f))
-    ccov = _pct(sum(x.get("citation_supported", x["supported"]) for x in cl),
-                 sum(x["claims"] for x in cl))
+    # The gated claim column is citation completeness, published as n/d.
+    cnum = _sum_claim_metric(cl, "citation_complete")
+    cden = sum(x["claims"] for x in cl)
+    ccov = "n/a" if cnum is None else n_over_d(cnum, cden)
     return (f"{label:12} {len(rs):>3} {err:>4} {_pct(c['pass'], n):>6} "
             f"{_pct(c['behavior'], n):>6} {_pct(c['ct'], c['cn']):>8} "
             f"{_pct(c['ft'], c['fn']):>7} {_pct(c['language'], n):>6} "
-            f"{_pct(c['citations'], n):>6} {fcov:>6} {ccov:>6} "
+            f"{_pct(c['citations'], n):>6} {fcov:>6} {ccov:>9} "
             + (f"{u['p50']:>6.1f}s" if u["p50"] is not None else f"{'n/a':>7}")
             + (f" {u['p95']:>6.1f}s" if u["p95"] is not None else f" {'n/a':>7}"))
 
@@ -1157,23 +1279,38 @@ def _print_field_breakdown(fields: list):
 
 
 def _print_claim_breakdown(rows: list):
-    per = defaultdict(lambda: [0, 0])
+    """Per class, and the five worst cases, on the SAME metric the header
+    gates: citation completeness. Reporting the legacy verdict tally under a
+    citation-completeness header is how the two got conflated."""
+    per = defaultdict(lambda: [0, 0, False])   # complete, claims, any-missing
     have = [r for r in rows if _metrics([r], "claims", "claims")]
     for r in have:
         c = r["claims"]
-        per[r["class"]][0] += c.get("supported", 0)
-        per[r["class"]][1] += c.get("claims", 0)
+        row = per[r["class"]]
+        if c.get("citation_complete") is None:
+            row[2] = True
+        else:
+            row[0] += c["citation_complete"]
+        row[1] += c.get("claims", 0)
     for cls in sorted(per, key=lambda c: (_class_rank(c), c)):
-        sup, tot = per[cls]
-        print(f"    {cls:20} {sup:>3}/{tot:<3} {_pct(sup, tot).strip():>4}")
-    worst = sorted((r for r in have if r["claims"].get("claims")),
-                   key=lambda r: r["claims"]["support_rate"])[:5]
-    for r in worst:
+        cc, tot, missing = per[cls]
+        if missing:                            # never print 0/n for 'unknown'
+            print(f"    {cls:20} {'n/a':>3}/{tot:<3}")
+            continue
+        print(f"    {cls:20} {cc:>3}/{tot:<3} {_pct(cc, tot).strip():>4}")
+
+    # Records that predate the metric have no completeness to be worst at, so
+    # they are excluded rather than sorted to either end.
+    scored = [r for r in have if r["claims"].get("claims")
+              and r["claims"].get("citation_completeness_rate") is not None]
+    worst = sorted(scored, key=lambda r: r["claims"]["citation_completeness_rate"])
+    for r in worst[:5]:
         c = r["claims"]
-        if c["support_rate"] >= 1.0:
+        if c["citation_completeness_rate"] >= 1.0:
             break
         first = (c["failures"] or [{}])[0]
-        print(f"    LOW  {r['id']:26} {c['supported']}/{c['claims']} "
+        print(f"    LOW  {r['id']:26} "
+              f"{n_over_d(c['citation_complete'], c['claims'])} "
               f"{first.get('status', '')}: {first.get('reason', '')[:60]}")
 
 
@@ -1309,27 +1446,29 @@ def _metric_rate(metric, key):
 
 
 def compare_verifier_output(original: dict, returned: dict) -> dict:
-    """Machine-readable no-regression checks for a verifier/repair pass."""
+    """Machine-readable no-regression checks for a verifier/repair pass.
+
+    One row per entry in COMPARED_METRICS, whose keys are asserted pairwise
+    distinct at import: two rows reading the same record key would count one
+    regression twice and print an extra green delta. Citation presence is
+    reported as a delta but never triggers a regression — it is the metric a
+    fabricated bracket can move.
+    """
+    _assert_distinct_metric_keys()
     checks_a, checks_b = original["checks"], returned["checks"]
-    fields_a, fields_b = original["fields"], returned["fields"]
-    claims_a, claims_b = original["claims"], returned["claims"]
+    blocks = {"checks": (checks_a, checks_b),
+              "fields": (original["fields"], returned["fields"]),
+              "claims": (original["claims"], returned["claims"])}
     regressions = []
     if checks_a.get("pass") and not checks_b.get("pass"):
         regressions.append("answer_checks_pass_to_fail")
-    pairs = [
-        ("field_coverage", _metric_rate(fields_a, "coverage"),
-         _metric_rate(fields_b, "coverage")),
-        ("groundedness", _metric_rate(claims_a, "groundedness_rate"),
-         _metric_rate(claims_b, "groundedness_rate")),
-        ("citation_completeness",
-         _metric_rate(claims_a, "citation_completeness_rate"),
-         _metric_rate(claims_b, "citation_completeness_rate")),
-        ("citation_support", _metric_rate(claims_a, "citation_support_rate"),
-         _metric_rate(claims_b, "citation_support_rate")),
-    ]
     deltas = {"answer_score": checks_b.get("score", 0) - checks_a.get("score", 0)}
-    for name, before, after in pairs:
+    for name, block, key, gated in COMPARED_METRICS:
+        a, b = blocks[block]
+        before, after = _metric_rate(a, key), _metric_rate(b, key)
         deltas[name] = None if before is None or after is None else after - before
+        if not gated:
+            continue
         if before is not None and after is not None and after < before - 1e-9:
             regressions.append(name + "_decreased")
     return {"no_regression": not regressions, "regressions": regressions,
@@ -1511,37 +1650,45 @@ def run_compare(path_a: Path, path_b: Path):
 
 
 def _extra_rates(rec: dict):
-    """(field coverage, claim support) of one recorded row, or (None, None).
+    """(field coverage cell counts, citation-completeness counts) of one
+    recorded row, each as (n, d), or None where the row predates the metric.
 
-    Both are post-release keys. A run recorded before they existed simply has
-    neither, and --compare must keep working against it — which is the whole
-    point of reading them with .get and skipping the pair when either side is
-    missing.
+    The claim number here is CITATION COMPLETENESS — cited AND supported. It
+    used to read the legacy `support_rate`, which in production mode absorbs
+    the judge's uncited promotions, and it read it as a bare rate. Counts are
+    returned so the comparison can pool them and publish n/d; a run recorded
+    before the metric existed contributes nothing rather than being back-filled
+    from a different metric.
     """
     f = rec.get("fields")
     c = rec.get("claims")
-    return ((f or {}).get("coverage") if isinstance(f, dict) else None,
-            (c or {}).get("support_rate") if isinstance(c, dict) else None)
+    f = f if isinstance(f, dict) else {}
+    c = c if isinstance(c, dict) else {}
+    cov = (f.get("n_covered"), f.get("n_scorable"))
+    cite = (c.get("citation_complete"), c.get("claims"))
+    return (None if cov[0] is None or not cov[1] else cov,
+            None if cite[0] is None or not cite[1] else cite)
 
 
 def _compare_extras(a: dict, b: dict, shared: list):
-    pairs = {"field coverage": [], "claim support": []}
+    pairs = {"field coverage": [], "citation completeness": []}
     for i in shared:
         fa, ca = _extra_rates(a[i])
         fb, cb = _extra_rates(b[i])
         if fa is not None and fb is not None:
             pairs["field coverage"].append((fa, fb))
         if ca is not None and cb is not None:
-            pairs["claim support"].append((ca, cb))
+            pairs["citation completeness"].append((ca, cb))
     lines = [(name, vs) for name, vs in pairs.items() if vs]
     if not lines:
         return
-    print("\n(metrics present in both runs)")
+    print("\n(metrics present in both runs — pooled n/d, not a mean of rates)")
     for name, vs in lines:
-        ma = sum(x for x, _ in vs) / len(vs)
-        mb = sum(y for _, y in vs) / len(vs)
-        print(f"  {name:16} {len(vs):>3} cases  {ma:>6.1%} -> {mb:>6.1%} "
-              f"{mb - ma:>+7.1%}")
+        na, da = sum(x[0] for x, _ in vs), sum(x[1] for x, _ in vs)
+        nb, db = sum(y[0] for _, y in vs), sum(y[1] for _, y in vs)
+        moved = "" if da == db else f"   DENOMINATOR MOVED {da} -> {db}"
+        print(f"  {name:22} {len(vs):>3} cases  {n_over_d(na, da):>9} -> "
+              f"{n_over_d(nb, db):>9}  {na / da:>6.1%} -> {nb / db:>6.1%}{moved}")
 
 
 def record_path(label: str, prefix: str = "answers_baseline_") -> Path:

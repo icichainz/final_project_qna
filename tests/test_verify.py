@@ -5,6 +5,7 @@ clients, and the degradation tests remove OPENAI_API_KEY outright. The
 fixture evidence set is deliberately tiny — four keys — so every verdict in
 this file can be checked by reading the fixture.
 """
+import inspect
 import json
 
 import pytest
@@ -379,8 +380,12 @@ def test_uncited_note_backed_claim_is_grounded_but_not_citation_complete():
     (v,) = V.classify(V.extract_claims("FP999 does not exist in this corpus."),
                       ev, use_llm=False)
     assert v.status == V.UNSUPPORTED
-    assert "grounded-without-citation" in v.flags
+    assert V.GROUNDED_FLAG in v.flags
     assert "no citation" in v.reason
+    # ONE flag carries groundedness. A second name for the same condition is
+    # a fact with two spellings, and the two drift.
+    assert "grounded-without-citation" not in v.flags
+    assert [f for f in v.flags if "grounded" in f] == []
 
 
 def test_unknown_board_code_uses_not_found_semantics_not_board_mentions():
@@ -880,3 +885,484 @@ def test_sources_of_a_verified_answer_are_what_it_cites(evidence):
     res = V.verify_answer(answer, evidence, use_llm=False)
     assert res.status == "verified"
     assert res.sources == [(DOC, None), (DOC, 45)]
+
+
+# ---------------------------------------------------------------------------
+# Wave 0b rework — the regressions docs/wave0-review-verdict.md §2 reproduced
+#
+# Every test below fails on the held wave (148a7cc) and passes after the fix.
+# Each matcher change is pinned in BOTH directions — an adversarial negative
+# beside the permissive regression — because the held suite pinned only the
+# strict side, which is exactly why three defeated gates survived 575 green
+# tests. Where a fix restores parent behaviour, the parent's own guard is
+# re-asserted beside it so the restoration cannot go one step too far.
+# ---------------------------------------------------------------------------
+
+FP172 = "103_gcf-b30-03-add04"
+
+
+def _no_registry(monkeypatch):
+    """Isolate the evidence path: no registry rescue, no registry conflicts."""
+    monkeypatch.setattr("gcf_qna.rag.registry.load", lambda: {})
+    monkeypatch.setattr("gcf_qna.rag.registry.facts", lambda doc: {})
+
+
+def _facts(monkeypatch, mapping):
+    monkeypatch.setattr("gcf_qna.rag.registry.facts",
+                        lambda doc: mapping.get(doc, {}))
+
+
+# --- verdict §2 #1 — the two-field sentence -------------------------------
+
+@pytest.mark.parametrize("text,field,want", [
+    # the value printed AFTER its label — the shape that always worked
+    ("GCF financing (as printed): 18.5 M USD; total financing: 28 M USD",
+     "gcf_financing", "18.5"),
+    # the value printed BEFORE its label: the window started at the label, so
+    # every figure to its left was dropped and the list came back EMPTY
+    ("FP151 requests USD 28,000,000 as GCF financing, out of a total "
+     "financing of USD 49,000,000.", "gcf_financing", "28,000,000"),
+    ("USD 28,000,000 total financing and USD 18,500,000 GCF financing",
+     "gcf_financing", "18,500,000"),
+    ("USD 28,000,000 total financing and USD 18,500,000 GCF financing",
+     "total_financing", "28,000,000"),
+])
+def test_a_field_window_never_loses_the_figure_its_label_states(text, field, want):
+    got = [a.raw for a in V._field_context_amounts(text, field)]
+    # an empty list reads as 'nothing to check' at every call site
+    assert got, f"{field} of {text!r} produced no stated figure"
+    assert any(want in raw for raw in got), got
+
+
+def test_a_field_window_does_not_swallow_the_field_beside_it():
+    """The permissive half: widening the window must not make every figure on
+    the line the field's own value, or a genuine disagreement is suppressed."""
+    line = "GCF financing (as printed): 18.5 M USD; total financing: 28 M USD"
+    got = [a.raw for a in V._field_context_amounts(line, "gcf_financing")]
+    assert got == ["18.5 M USD"]
+
+
+def test_a_two_field_sentence_still_reports_its_own_field(evidence):
+    """verdict §2 #1: a repair that reports the TOTAL financing figure as the
+    GCF figure. The registry line prints 18.5 M USD for GCF and 28 M USD for
+    total; naming both fields must not disable the check."""
+    answer = (f"FP151 requests **USD 28,000,000** as GCF financing, out of a "
+              f"total financing of USD 28,000,000 [{DOC}, cover pages].")
+    (v,) = V.classify(V.extract_claims(answer), evidence, use_llm=False)
+    assert v.status == V.CONTRADICTED
+    assert "18.5 M USD" in v.reason
+
+
+def test_a_two_field_sentence_that_agrees_with_both_fields_is_supported(evidence):
+    """...and the same sentence with the RIGHT figures still verifies: the
+    fix must fail closed, not fail always."""
+    answer = (f"FP151 requests **USD 18.5 million** as GCF financing, out of a "
+              f"total financing of **USD 28 million** [{DOC}, cover pages].")
+    (v,) = V.classify(V.extract_claims(answer), evidence, use_llm=False)
+    assert v.status == V.SUPPORTED
+
+
+def test_repair_reporting_the_total_as_the_gcf_figure_is_rejected(evidence):
+    """The gate, end to end: the swapped sentence re-verifies and is adopted
+    only if the contradiction test short-circuits."""
+    answer = f"FP151 requests **USD 61 million** as GCF financing [{DOC}, cover pages]."
+    swapped = (f"FP151 requests **USD 28,000,000** as GCF financing, out of a "
+               f"total financing of USD 28,000,000 [{DOC}, cover pages].")
+    res = V.verify_answer(answer, evidence, client=FakeClient(swapped))
+    assert res.repair_rejected and not res.repaired
+    assert res.answer == answer
+    assert "still fail verification" in res.notes[0]
+
+
+def test_repair_correcting_the_gcf_figure_is_still_adopted(evidence):
+    """The permissive half of the same gate: a real correction must land."""
+    answer = f"FP151 requests **USD 61 million** as GCF financing [{DOC}, cover pages]."
+    fixed = (f"FP151 requests **USD 18.5 million** as GCF financing, out of a "
+             f"total financing of **USD 28 million** [{DOC}, cover pages].")
+    res = V.verify_answer(answer, evidence, client=FakeClient(fixed))
+    assert res.repaired and res.answer == fixed
+
+
+def test_a_known_document_conflict_survives_a_two_field_sentence(monkeypatch):
+    """classify_deterministic gated the registry check on the same empty list
+    (verdict §2 #1, second half)."""
+    _facts(monkeypatch, {DOC: {"gcf_funding_requested": [
+        {"raw": "USD 21,128,224", "page": 6, "status": "canonical"},
+        {"raw": "USD 49,151,817", "page": 76, "status": "conflicting"}]}})
+    ev = {(DOC, None): ("GCF funding requested: USD 21,128,224; "
+                        "total financing: USD 49,151,817")}
+    answer = (f"FP172 requests **USD 21,128,224** as GCF financing, out of a "
+              f"total financing of USD 49,151,817 [{DOC}, cover pages].")
+    (v,) = V.classify(V.extract_claims(answer), ev, use_llm=False)
+    assert v.status == V.CONTRADICTED
+    assert "known-document-conflict" in v.flags
+
+
+def test_registry_backing_is_not_lost_on_a_two_field_sentence(monkeypatch):
+    """verdict finding 11 — the same empty local view stripped real registry
+    backing off any sentence naming two fields, a live false positive."""
+    _facts(monkeypatch, {DOC: {"gcf_funding_requested": [
+        {"raw": "USD 26,654,000", "page": 48, "status": "canonical"}]}})
+    ev = {(DOC, None): "total financing (as printed): 28 M USD"}
+    answer = (f"FP151 requests **USD 26,654,000** as GCF financing, out of a "
+              f"total financing of **28 M USD** [{DOC}, cover pages].")
+    (v,) = V.classify(V.extract_claims(answer), ev, use_llm=False)
+    assert v.status == V.SUPPORTED
+    assert "registry-backed-page-not-retrieved" in v.flags
+
+
+def test_registry_backing_stays_scoped_to_the_clause_that_cites_the_document():
+    """The wave's genuine tightening, kept: with one bracket per document a
+    registry row may back only the figures that bracket attributes to it."""
+    answer = (f"FP151 requests **USD 10 million** [{DOC}, cover pages], while "
+              f"FP152 requests **USD 20 million** [{DOC2}, cover pages].")
+    (claim,) = V.extract_claims(answer)
+    assert V.registry_backed(DOC, claim, V.amounts("USD 20 million")) is None
+
+
+# --- verdict §2 #2 — the chained citation bracket -------------------------
+
+def _fp172_conflict(monkeypatch):
+    _facts(monkeypatch, {FP172: {"gcf_funding_requested": [
+        {"raw": "21,128,224 USD", "page": 6, "status": "canonical"},
+        {"raw": "49,151,817 USD", "page": 76, "status": "conflicting"}]}})
+    return {(FP172, 6): "A.8. Total GCF funding requested: 21,128,224 USD",
+            (FP172, 76): "Requested GCF amount: 49,151,817 USD",
+            (DOC, 5): "Accredited entity: IUCN"}
+
+
+@pytest.mark.parametrize("bracket", [
+    f"[{FP172}, p. 6]",                        # as recorded
+    f"[{FP172}, p. 6; {DOC}, p. 5]",           # one document wider
+])
+def test_widening_a_bracket_cannot_turn_a_contradiction_into_support(
+        monkeypatch, bracket):
+    """verdict §2 #2, the recorded FP172 sentence: 21,128,224 on p.6 against
+    49,151,817 on p.76. _citation_context returned '' for EVERY document of a
+    chained bracket, so the conflict test walked past all of them — the same
+    sentence flipped to SUPPORTED with an empty flags list."""
+    ev = _fp172_conflict(monkeypatch)
+    answer = (f"- **USD 21,128,224** — listed in the project summary as "
+              f"“A.8. Total GCF funding requested” (p.6) {bracket}.")
+    (v,) = V.classify(V.extract_claims(answer), ev, use_llm=False)
+    assert v.status == V.CONTRADICTED, f"{bracket}: {v.reason}"
+    assert "49,151,817" in v.reason
+
+
+def test_an_inherited_block_citation_is_checked_against_what_it_names(monkeypatch):
+    """A claim whose citations were inherited prints no bracket of its own, so
+    the clause-carving loop found nothing and returned '' — the same hole,
+    reached without touching a bracket at all."""
+    ev = _fp172_conflict(monkeypatch)
+    answer = (f"- **USD 21,128,224** — the A.8 Total GCF funding requested figure\n"
+              f"[{FP172}, p. 6; {DOC}, p. 5]")
+    (claim,) = V.extract_claims(answer)
+    assert claim.inherited and len(claim.citations) == 2
+    (v,) = V.classify([claim], ev, use_llm=False)
+    assert v.status == V.CONTRADICTED
+
+
+def test_repair_cannot_clear_a_conflict_by_widening_a_bracket(monkeypatch):
+    """End to end, with both documents already cited by the original so the
+    introduced-source gate cannot be what catches it."""
+    ev = _fp172_conflict(monkeypatch)
+    answer = (f"- **USD 99,999,999** — A.8 Total GCF funding requested "
+              f"[{FP172}, p. 6].\n"
+              f"- The accredited entity is IUCN [{DOC}, p. 5].")
+    widened = (f"- **USD 21,128,224** — A.8 Total GCF funding requested "
+               f"[{FP172}, p. 6; {DOC}, p. 5].\n"
+               f"- The accredited entity is IUCN [{DOC}, p. 5].")
+    res = V.repair(answer, V.classify_deterministic(V.extract_claims(answer), ev),
+                   ev, client=FakeClient(widened))
+    assert res.repair_rejected and not res.repaired
+    assert res.answer == answer
+
+
+def test_single_document_brackets_still_scope_their_own_clause():
+    """The permissive half: per-bracket scoping is what stops one document's
+    figure satisfying a claim about another, and it must survive the fix."""
+    answer = (f"FP151 requests **USD 10 million** [{DOC}, cover pages], while "
+              f"FP152 requests **USD 20 million** [{DOC2}, cover pages].")
+    (claim,) = V.extract_claims(answer)
+    first, second = V._citation_context(claim, DOC), V._citation_context(claim, DOC2)
+    assert "10 million" in first and "20 million" not in first
+    assert "20 million" in second and "10 million" not in second
+    # a document the claim never cites is still given nothing
+    assert V._citation_context(claim, "999_never-cited") == ""
+
+
+def test_a_chained_bracket_offers_its_clause_to_every_document_it_names():
+    answer = f"FP151 requests **USD 10 million** [{DOC}, p. 5; {DOC2}, p. 5]."
+    (claim,) = V.extract_claims(answer)
+    assert all("10 million" in V._citation_context(claim, d) for d in (DOC, DOC2))
+    assert V._citation_context(claim, "999_never-cited") == ""
+
+
+# --- verdict §2 #3 — the entity matcher -----------------------------------
+
+# The four variants that flipped supported -> unsupported on the recorded
+# release-1 traffic, each with the registry line the turn actually held.
+RECORDED_ENTITIES = {
+    "id-fp173-entity": (
+        "accredited entity: Inter-American Development Bank; "
+        "countries: Brazil, Colombia, Ecuador",
+        "**Inter-American Development Bank (IDB)**"),
+    "cid-fp0086-padded": (
+        "accredited entity: European Bank for Reconstruction and Development; "
+        "countries: Moldova, Tajikistan",
+        "**European Bank for Reconstruction and Development (EBRD)**"),
+    "bc-b30-03-add04": (
+        "accredited entity: Alternative Energy Promotion Centre, Ministry of "
+        "Energy, Water Resources and Irrigation, Government of Nepal.",
+        "**Alternative Energy Promotion Centre (AEPC)**"),
+    "disc-subnational-pair": (
+        "Funding proposal submitted by International Union for Conservation "
+        "of Nature and Natural Resources (IUCN) for the TA Facility",
+        "**Funding proposal submitted by the International Union for "
+        "Conservation of Nature (IUCN)**"),
+}
+
+
+@pytest.mark.parametrize("case", sorted(RECORDED_ENTITIES))
+def test_recorded_entity_rows_verify_against_the_evidence_they_cite(
+        monkeypatch, case):
+    """The corpus prints an accredited entity's full name and rarely the
+    parenthetical an answer adds. Requiring the printed PAIR took four correct
+    recorded answers to unsupported and id-fp173-entity to ABSTAIN."""
+    _no_registry(monkeypatch)
+    line, named = RECORDED_ENTITIES[case]
+    ev = {(DOC, None): line}
+    (v,) = V.classify(V.extract_claims(f"The entity is {named} [{DOC}, cover pages]."),
+                      ev, use_llm=False)
+    assert v.status == V.SUPPORTED, f"{case}: {v.reason}"
+
+
+def test_the_anti_gutting_gate_can_still_run_on_a_correct_entity_answer(monkeypatch):
+    """_supported_required dropping to 0 is not just a wrong number: it is the
+    precondition of the gate that stops a bare refusal replacing a mostly
+    correct answer, so the gate silently stopped running."""
+    _no_registry(monkeypatch)
+    ev = {(DOC, None): "accredited entity: Inter-American Development Bank"}
+    answer = (f"FP173 is implemented by the **Inter-American Development Bank "
+              f"(IDB)** [{DOC}, cover pages].")
+    verdicts = V.classify(V.extract_claims(answer), ev, use_llm=False)
+    assert V._supported_required(verdicts) == 1
+    assert V._status_for(verdicts, True, False) == "verified"
+
+
+@pytest.mark.parametrize("variants,text,present", [
+    # the long form is printed; the parenthetical is the answer's own shorthand
+    (["Inter-American Development Bank (IDB)", "Inter-American Development Bank",
+      "IDB"], "accredited entity: Inter-American Development Bank", True),
+    # ADVERSARIAL: the acronym alone can never carry an invented expansion
+    (["Invented Universal Climate Network (IUCN)",
+      "Invented Universal Climate Network", "IUCN"],
+     "Accredited entity: IUCN", False),
+    # the acronym alone IS enough when the source itself attests the alias
+    (["Funding proposal submitted by the International Union for Conservation "
+      "of Nature (IUCN)",
+      "Funding proposal submitted by the International Union for Conservation "
+      "of Nature", "IUCN"],
+     "submitted by International Union for Conservation of Nature and Natural "
+     "Resources (IUCN)", True),
+    # ADVERSARIAL: this source says IDB is a DIFFERENT bank. The pairing is
+    # wrong, and the other bank being named on the page does not make it right.
+    (["Inter-American Development Bank (IDB)", "Inter-American Development Bank",
+      "IDB"],
+     "Islamic Development Bank (IDB) is the accredited entity. The "
+     "Inter-American Development Bank co-finances the programme.", False),
+    # ...while the source's OWN pairing still verifies against that same text
+    (["Islamic Development Bank (IDB)", "Islamic Development Bank", "IDB"],
+     "Islamic Development Bank (IDB) is the accredited entity. The "
+     "Inter-American Development Bank co-finances the programme.", True),
+    # ADVERSARIAL: initials are never derived from a full name
+    (["IFC"], "Accredited entity: Imaginary Finance Corporation", False),
+])
+def test_entity_present_pairs(variants, text, present):
+    assert V._entity_present(variants, text) is present
+
+
+@pytest.mark.parametrize("a,b,same", [
+    ("Funding proposal submitted by the International Union for Conservation "
+     "of Nature",
+     "International Union for Conservation of Nature and Natural Resources", True),
+    ("Green Climate Fund", "Green Climate Fund", True),
+    ("Inter-American Development Bank", "Islamic Development Bank", False),
+    ("Invented Universal Climate Network",
+     "International Union for Conservation of Nature and Natural Resources", False),
+    ("World Bank", "Inter-American Development Bank", False),
+    ("", "Inter-American Development Bank", False),
+])
+def test_same_entity_pairs(a, b, same):
+    assert V._same_entity(a, b) is same
+
+
+def test_explicit_aliases_are_read_never_manufactured():
+    """A one-word long form is not an alias authority: 'Profonanpe (PRO)' does
+    not license PRO for anything, and accepting it is the mutation that makes
+    the whole alias rule vacuous."""
+    assert V._explicit_aliases("Profonanpe (PRO) manages the fund") == []
+    assert V._explicit_aliases(
+        "the International Union for Conservation of Nature (IUCN) is the AE"
+    ) == [("international union for conservation of nature", "iucn")]
+
+
+@pytest.mark.parametrize("hay,needle,want", [
+    # ADVERSARIAL: two different ministries
+    ("The Ministry of Environmental Protection", "Ministry of Environment", False),
+    ("the Ministry of Environment of Peru", "Ministry of Environment", True),
+    # the corpus prints acronyms possessively and slash-joined far more often
+    # than bare, and norm_text keeps both marks
+    ("PROFONANPE.", "PROFONANPE", True),
+    ("the PROFONANPE's board met", "PROFONANPE", True),
+    ("an IUCN/GCF joint programme", "IUCN", True),
+    ("an IUCN/GCF joint programme", "GCF", True),
+    ("PROFONANPEX", "PROFONANPE", False),
+    ("XPROFONANPE", "PROFONANPE", False),
+])
+def test_contains_norm_word_boundaries(hay, needle, want):
+    assert V._contains_norm(V.norm_text(hay), V.norm_text(needle)) is want
+
+
+def test_a_longer_ministry_name_does_not_verify_a_shorter_one(monkeypatch):
+    _no_registry(monkeypatch)
+    ev = {(DOC, 5): "The executing entity is the Ministry of Environmental Protection."}
+    answer = f"The executing entity is the **Ministry of Environment** [{DOC}, p. 5]."
+    (v,) = V.classify(V.extract_claims(answer), ev, use_llm=False)
+    assert v.status == V.UNSUPPORTED
+
+
+def test_a_possessive_occurrence_in_the_page_supports_the_name(monkeypatch):
+    _no_registry(monkeypatch)
+    ev = {(DOC, 5): "PROFONANPE's board approved the disbursement."}
+    answer = f"The executing entity is **PROFONANPE** [{DOC}, p. 5]."
+    (v,) = V.classify(V.extract_claims(answer), ev, use_llm=False)
+    assert v.status == V.SUPPORTED
+
+
+# --- verdict §2 #5 — groundedness over all held evidence ------------------
+
+def test_groundedness_is_measured_over_all_held_evidence_not_the_citation(evidence):
+    """The flag was set only on the uncited branch, so for a CITED claim
+    groundedness collapsed onto citation support — precisely the miscitation
+    case the two metrics exist to tell apart. USD 150 million is printed on
+    DOC2 p.5; this claim cites DOC p.45."""
+    answer = f"The total GCF funding requested is **USD 150 million** [{DOC}, p. 45]."
+    (v,) = V.classify(V.extract_claims(answer), evidence, use_llm=False)
+    assert v.status == V.UNSUPPORTED
+    assert V.GROUNDED_FLAG in v.flags
+
+
+def test_deleting_a_citation_cannot_raise_groundedness(evidence):
+    """The metric was non-monotone: the same sentence counted as grounded only
+    once its citation was removed."""
+    cited = f"The total GCF funding requested is **USD 150 million** [{DOC}, p. 45]."
+    uncited = "The total GCF funding requested is **USD 150 million**."
+    (a,) = V.classify(V.extract_claims(cited), evidence, use_llm=False)
+    (b,) = V.classify(V.extract_claims(uncited), evidence, use_llm=False)
+    assert V.GROUNDED_FLAG in b.flags
+    assert V.GROUNDED_FLAG in a.flags
+
+
+def test_a_claim_no_held_evidence_states_is_not_grounded(evidence):
+    """The negative direction: the rescoping changes which evidence a claim is
+    read against, never what counts as a match."""
+    answer = f"FP151 requests **USD 61 million** in GCF funding [{DOC}, p. 45]."
+    (v,) = V.classify(V.extract_claims(answer), evidence, use_llm=False)
+    assert v.failed
+    assert V.GROUNDED_FLAG not in v.flags
+
+
+@pytest.mark.parametrize("answer", [
+    "The total GCF funding requested is **USD 150 million**.",
+    f"The total GCF funding requested is **USD 150 million** [{DOC}, p. 45].",
+])
+def test_the_groundedness_flag_never_changes_a_status(answer, evidence):
+    (v,) = V.classify(V.extract_claims(answer), evidence, use_llm=False)
+    assert V.GROUNDED_FLAG in v.flags
+    assert v.status == V.UNSUPPORTED
+
+
+def test_the_groundedness_flag_is_not_a_user_facing_caution(evidence):
+    """It now rides on nearly every correct claim, and warning the reader
+    about all of them is the same as warning them about none."""
+    ok = f"FP151 requests **USD 18.5 million** in GCF funding [{DOC}, p. 45]."
+    (v,) = V.classify(V.extract_claims(ok), evidence, use_llm=False)
+    assert v.status == V.SUPPORTED and V.GROUNDED_FLAG in v.flags
+    assert V.RepairResult(ok, "verified", [v], ok).cautions == []
+    # a flag that really is a caution still reaches the reader
+    mismatch = f"Total financing is **28 M USD** [{DOC}, p. 45]."
+    (w,) = V.classify(V.extract_claims(mismatch), evidence, use_llm=False)
+    assert "citation-page-mismatch" in w.flags
+    assert V.RepairResult(mismatch, "verified", [w], mismatch).cautions == [w]
+
+
+def test_groundedness_carries_one_name_only():
+    """Two flags under one condition are one fact with two spellings; the
+    moment one is updated they disagree."""
+    assert "grounded-without-citation" not in inspect.getsource(V)
+
+
+# --- verdict finding 7 — the judge promoting an UNCITED claim -------------
+
+def test_a_judge_promotion_of_an_uncited_claim_is_recorded(evidence):
+    """The judge only promotes — it is never asked about a supported claim —
+    so a ruling on a claim citing nothing turns 'the reader was given no
+    pointer' into SUPPORTED, which the legacy support rate then absorbs under
+    the same key as a properly cited claim. It has to be visible on the
+    verdict, not inferable from a mode field two files away."""
+    answer = "The total GCF funding requested is USD 150 million."
+    client = FakeClient(json.dumps({"verdicts": [
+        {"id": 0, "status": "supported", "reason": "p.5 states it"}]}))
+    (v,) = V.classify(V.extract_claims(answer), evidence, client=client)
+    assert v.status == V.SUPPORTED and v.source == "llm"
+    assert v.claim.cited is False
+    assert V.JUDGE_UNCITED_FLAG in v.flags
+
+
+def test_a_judge_promotion_of_a_cited_claim_carries_no_uncited_flag(evidence):
+    answer = f"The accredited entity is **Pegasus Capital Advisors LP** [{DOC}, cover pages]."
+    client = FakeClient(json.dumps({"verdicts": [
+        {"id": 0, "status": "supported", "reason": "the cover line names it"}]}))
+    (v,) = V.classify(V.extract_claims(answer), evidence, client=client)
+    assert v.status == V.SUPPORTED and v.source == "llm"
+    assert v.claim.cited is True
+    assert V.JUDGE_UNCITED_FLAG not in v.flags
+
+
+# --- ordered fix 44 — the gate probe set, in the suite --------------------
+
+def test_no_probe_shape_hides_the_fp172_conflict(monkeypatch):
+    """The gate probe set, as one table: every way of dressing the same
+    disagreeing sentence must still read CONTRADICTED. Zero violations is the
+    precondition for flipping VERIFY_REPAIR.
+
+    The citation-shape rows must land on CONTRADICTED, naming the counter
+    figure. The two-field rows also state 49,151,817, which the cited page
+    does not print, so they fail as UNSUPPORTED instead — a different verdict,
+    the same thing the repair gate reads. Neither may reach SUPPORTED.
+    """
+    ev = _fp172_conflict(monkeypatch)
+    body = "**USD 21,128,224** — A.8 Total GCF funding requested"
+    probes = {
+        "single-document bracket":
+            (f"- {body} [{FP172}, p. 6].", V.CONTRADICTED),
+        "chained bracket":
+            (f"- {body} [{FP172}, p. 6; {DOC}, p. 5].", V.CONTRADICTED),
+        "chained bracket, other order":
+            (f"- {body} [{DOC}, p. 5; {FP172}, p. 6].", V.CONTRADICTED),
+        "inherited block citation":
+            (f"- {body}\n[{FP172}, p. 6; {DOC}, p. 5]", V.CONTRADICTED),
+        "two field labels":
+            (f"- {body}, out of a total financing of USD 49,151,817 "
+             f"[{FP172}, p. 6].", V.UNSUPPORTED),
+        "both at once":
+            (f"- {body}, out of a total financing of USD 49,151,817 "
+             f"[{FP172}, p. 6; {DOC}, p. 5].", V.UNSUPPORTED),
+    }
+    violations = []
+    for name, (answer, want) in probes.items():
+        (v,) = V.classify(V.extract_claims(answer), ev, use_llm=False)
+        if not v.failed or v.status != want:
+            violations.append(f"{name}: {v.status} ({v.reason[:70]})")
+    assert violations == []

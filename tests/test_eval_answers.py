@@ -667,6 +667,40 @@ def _verdict(status, text="a claim", kind="money", reason="because"):
         claim=types.SimpleNamespace(text=text, kind=kind))
 
 
+def _verdict2(status, *, cited, flags=(), text="a claim", kind="money",
+              reason="because"):
+    """A verdict shaped like rag.verify.Verdict: status, flags, and a claim
+    that knows whether it carried a citation. The three claim metrics are
+    functions of exactly these three things."""
+    return types.SimpleNamespace(
+        status=status, reason=reason, flags=list(flags),
+        claim=types.SimpleNamespace(
+            text=text, kind=kind, cited=bool(cited),
+            citations=(["c"] if cited else [])))
+
+
+class _StubVerify:
+    """verify module stand-in returning fixed verdicts — lets a test state the
+    (status, cited, flags) triple directly instead of reverse-engineering an
+    answer that produces it."""
+
+    SUPPORTED, CONTRADICTED, UNSUPPORTED = (
+        "supported", "contradicted", "unsupported")
+
+    def __init__(self, verdicts, evidence=None):
+        self._verdicts = list(verdicts)
+        self._evidence = {("d1", 5): "text"} if evidence is None else evidence
+
+    def extract_claims(self, answer):
+        return [v.claim for v in self._verdicts]
+
+    def build_evidence(self, hits, notes):
+        return self._evidence
+
+    def classify_deterministic(self, claims, evidence):
+        return self._verdicts
+
+
 def test_score_claims_wires_extract_build_and_classify(monkeypatch):
     """The harness must classify against the evidence IT assembled — the same
     hits and notes it put in the prompt — not against a fresh retrieval."""
@@ -758,6 +792,9 @@ def test_claim_support_sees_the_notes_the_prompt_carried():
 
 
 def test_uncited_note_backed_claim_is_grounded_but_citation_incomplete():
+    """Runs through the REAL rag.verify, so it also pins the coupling: this
+    file reads groundedness off ev.GROUNDED_FLAGS, and if the verifier renames
+    or stops emitting that flag the metric would silently read 0 here."""
     note = ("Registry - 30 funding-proposal documents from 2020 in the corpus: "
             "FP151 TA Facility")
     answer = "The corpus holds 30 funding-proposal documents from 2020."
@@ -766,9 +803,171 @@ def test_uncited_note_backed_claim_is_grounded_but_citation_incomplete():
     assert got["grounded"] == 1 and got["groundedness_rate"] == 1.0
     assert got["citation_complete"] == 0
     assert got["citation_completeness_rate"] == 0.0
-    assert got["citation_supported"] == 0
-    assert got["citation_support_rate"] == 0.0
+    assert got["citation_present"] == 0 and got["citation_presence_rate"] == 0.0
     assert got["support_rate"] == 0.0, "the compatibility gate must not forgive it"
+
+
+# --------------------------------------------------------------------------
+# metric contract — citation completeness is 'cited AND supported'
+# (docs/claim-support-execution-plan.md "Metric contract";
+#  docs/wave0-review-verdict.md finding 4)
+# --------------------------------------------------------------------------
+_REAL_PASSAGE = "A.8 Total GCF funding requested: 18.5 M USD"
+_NEVER_RETRIEVED = "999_gcf-b99-99-add99-does-not-exist"
+
+
+def test_fabricated_citation_to_a_never_retrieved_doc_is_not_citation_complete():
+    """Verdict finding 4, the blocker itself. The bracket names a document this
+    turn never held, so the claim cites nothing that entails it. It has
+    citation PRESENCE and neither completeness nor groundedness."""
+    hits = _hits2(FP151, 5, _REAL_PASSAGE)
+    got = ev.score_claims(
+        f"FP151 requests 18.5 million USD [{_NEVER_RETRIEVED}, p. 1].", hits, [])
+    assert got["claims"] == 1
+    assert got["citation_complete"] == 0, \
+        "a citation to a document that was never retrieved cannot complete a claim"
+    assert got["citation_completeness_rate"] == 0.0
+    assert got["supported"] == 0
+    assert got["citation_present"] == 1 and got["citation_presence_rate"] == 1.0
+
+
+def test_appending_a_bracket_cannot_raise_citation_completeness():
+    """The gaming surface: '[anything, p.1]' must move presence and nothing
+    else. Same sentence, same evidence, one appended bracket."""
+    hits = _hits2(FP151, 5, _REAL_PASSAGE)
+    sentence = "FP151 requests 99.9 million USD"
+    bare = ev.score_claims(sentence + ".", hits, [])
+    gamed = ev.score_claims(f"{sentence} [{_NEVER_RETRIEVED}, p. 1].", hits, [])
+    assert bare["claims"] == gamed["claims"] == 1
+    assert gamed["citation_completeness_rate"] <= bare["citation_completeness_rate"]
+    assert gamed["citation_complete"] == bare["citation_complete"] == 0
+    assert gamed["groundedness_rate"] <= bare["groundedness_rate"]
+    assert gamed["citation_present"] == 1 and bare["citation_present"] == 0, \
+        "presence is the only number a fabricated bracket may move"
+
+
+def test_a_real_citation_to_evidence_that_states_the_claim_is_citation_complete():
+    """The permissive direction. Tightening completeness must not make it
+    vacuous: a correctly cited, correctly supported claim still counts, on all
+    three metrics."""
+    hits = _hits2(FP151, 5, _REAL_PASSAGE)
+    got = ev.score_claims(f"FP151 requests 18.5 million USD [{FP151}, p. 5].",
+                          hits, [])
+    assert got["claims"] == 1 and got["supported"] == 1
+    assert got["citation_complete"] == 1 and got["citation_completeness_rate"] == 1.0
+    assert got["citation_present"] == 1 and got["citation_presence_rate"] == 1.0
+    assert got["grounded"] == 1 and got["groundedness_rate"] == 1.0
+
+
+def test_citation_presence_counts_the_bracket_completeness_does_not(monkeypatch):
+    """The production-judge shape, verdict-level: a cited claim the judge left
+    UNSUPPORTED, and an uncited claim it promoted to SUPPORTED. Completeness
+    counts neither; presence counts the first; the legacy tally counts the
+    second. Nothing may collapse the three onto one number."""
+    monkeypatch.setattr(ev, "verify", _StubVerify([
+        _verdict2("unsupported", cited=True),
+        _verdict2("supported", cited=False),
+    ]))
+    got = ev.score_claims("answer", [], [])
+    assert got["claims"] == 2
+    assert got["supported"] == 1, "legacy verdict tally"
+    assert got["citation_present"] == 1 and got["citation_presence"] == "1/2"
+    assert got["citation_complete"] == 0, \
+        "cited-but-unsupported and supported-but-uncited are both incomplete"
+    assert got["citation_completeness"] == "0/2"
+
+
+def test_groundedness_reads_the_all_evidence_flag_not_citation_state(monkeypatch):
+    """Groundedness is 'entailed by ANY held evidence' — it comes off the
+    verifier's public flag surface, so an UNSUPPORTED claim the verifier found
+    elsewhere is grounded, and a claim with no such flag is not."""
+    monkeypatch.setattr(ev, "verify", _StubVerify([
+        _verdict2("unsupported", cited=True, flags=["value-present-elsewhere"]),
+        _verdict2("unsupported", cited=True, flags=["invalid-citation:zzz"]),
+    ]))
+    got = ev.score_claims("answer", [], [])
+    assert got["grounded"] == 1 and got["groundedness"] == "1/2"
+    assert got["groundedness_rate"] == 0.5
+    assert got["citation_complete"] == 0, "grounded is not citation-complete"
+
+
+def test_groundedness_can_be_zero(monkeypatch):
+    monkeypatch.setattr(ev, "verify", _StubVerify([
+        _verdict2("unsupported", cited=True), _verdict2("contradicted", cited=True)]))
+    got = ev.score_claims("answer", [], [])
+    assert got["grounded"] == 0 and got["groundedness_rate"] == 0.0
+    assert got["groundedness"] == "0/2"
+
+
+def test_every_claim_metric_is_published_as_n_over_d(monkeypatch):
+    monkeypatch.setattr(ev, "verify", _StubVerify([
+        _verdict2("supported", cited=True),
+        _verdict2("unsupported", cited=True, flags=["value-present-elsewhere"]),
+        _verdict2("unsupported", cited=False),
+    ]))
+    got = ev.score_claims("answer", [], [])
+    assert got["groundedness"] == "2/3"
+    assert got["citation_completeness"] == "1/3"
+    assert got["citation_presence"] == "2/3"
+    assert ev.n_over_d(91, 165) == "91/165"
+
+
+def test_n_over_d_survives_an_empty_denominator(monkeypatch):
+    monkeypatch.setattr(ev, "verify", _StubVerify([]))
+    got = ev.score_claims("", [], [])
+    assert got["claims"] == 0
+    assert got["groundedness"] == got["citation_completeness"] == "0/0"
+    assert got["citation_presence"] == "0/0"
+    assert got["groundedness_rate"] is None
+    assert got["citation_completeness_rate"] is None
+    assert got["citation_presence_rate"] is None
+
+
+def test_the_duplicate_citation_support_key_is_gone(monkeypatch):
+    """Binding decision 4: `citation_support_rate` was identical to the legacy
+    `support_rate` and gave --compare two rows for one regression."""
+    monkeypatch.setattr(ev, "verify", _StubVerify([_verdict2("supported", cited=True)]))
+    got = ev.score_claims("answer", [], [])
+    assert "citation_support_rate" not in got and "citation_supported" not in got
+    keys = [k for _, block, k, _ in ev.COMPARED_METRICS if block == "claims"]
+    assert "citation_support_rate" not in keys
+
+
+def test_compared_metric_keys_are_pairwise_distinct():
+    """The startup assertion runs at import; this pins that it is not vacuous."""
+    assert ev._assert_distinct_metric_keys() is ev.COMPARED_METRICS
+    names = [m[0] for m in ev.COMPARED_METRICS]
+    keys = [(m[1], m[2]) for m in ev.COMPARED_METRICS]
+    assert len(set(names)) == len(names) == 4
+    assert len(set(keys)) == len(keys)
+
+
+def test_distinctness_assertion_fires_when_two_metrics_share_a_record_key():
+    """Re-adding the deleted duplicate under a new display name must abort at
+    startup, not print two green deltas for one regression."""
+    with pytest.raises(AssertionError) as e:
+        ev._assert_distinct_metric_keys((
+            ("groundedness", "claims", "groundedness_rate", True),
+            ("citation_completeness", "claims", "citation_completeness_rate", True),
+            ("citation_support", "claims", "citation_completeness_rate", True),
+        ))
+    assert "claims.citation_completeness_rate" in str(e.value)
+
+
+def test_distinctness_assertion_fires_when_two_metrics_share_a_name():
+    with pytest.raises(AssertionError) as e:
+        ev._assert_distinct_metric_keys((
+            ("citation_completeness", "claims", "citation_completeness_rate", True),
+            ("citation_completeness", "claims", "citation_presence_rate", False),
+        ))
+    assert "citation_completeness" in str(e.value)
+
+
+def test_gate_threshold_is_the_exact_integer_numerator():
+    assert ev.gate_threshold(165) == 157        # ceil(0.95 * 165) = 156.75 -> 157
+    assert ev.gate_threshold(100) == 95         # exact, no rounding up
+    assert ev.gate_threshold(20) == 19
+    assert ev.gate_threshold(0) == 0
 
 
 def test_offline_verifier_default_cannot_use_client_or_repair(monkeypatch):
@@ -888,11 +1087,26 @@ FIELDS_BAD = {"cells": [{"doc": FP152, "field": "gcf_financing",
               "n_cells": 2, "n_scorable": 1, "n_stated": 0, "n_marked_missing": 0,
               "n_missed": 1, "n_unscorable": 1, "n_covered": 0, "coverage": 0.0}
 CLAIMS_OK = {"claims": 4, "supported": 4, "contradicted": 0, "unsupported": 0,
-             "support_rate": 1.0, "evidence_keys": ["d|5"], "failures": []}
+             "support_rate": 1.0, "evidence_keys": ["d|5"], "failures": [],
+             "grounded": 4, "groundedness_rate": 1.0, "groundedness": "4/4",
+             "citation_complete": 4, "citation_completeness_rate": 1.0,
+             "citation_completeness": "4/4",
+             "citation_present": 4, "citation_presence_rate": 1.0,
+             "citation_presence": "4/4"}
+# 4 claims, every one carrying a bracket (presence 4/4) but only 2 cited AND
+# supported (completeness 2/4) — the gap the old metric hid.
 CLAIMS_BAD = {"claims": 4, "supported": 2, "contradicted": 1, "unsupported": 1,
               "support_rate": 0.5, "evidence_keys": ["d|5"],
+              "grounded": 3, "groundedness_rate": 0.75, "groundedness": "3/4",
+              "citation_complete": 2, "citation_completeness_rate": 0.5,
+              "citation_completeness": "2/4",
+              "citation_present": 4, "citation_presence_rate": 1.0,
+              "citation_presence": "4/4",
               "failures": [{"status": "unsupported", "kind": "money",
                             "text": "t", "reason": "not in the cited evidence"}]}
+# A run recorded before the split: the three metric keys simply are not there.
+CLAIMS_LEGACY = {"claims": 4, "supported": 4, "contradicted": 0, "unsupported": 0,
+                 "support_rate": 1.0, "evidence_keys": ["d|5"], "failures": []}
 
 
 def test_release_table_renders_every_aggregate(capsys):
@@ -911,9 +1125,52 @@ def test_release_table_renders_every_aggregate(capsys):
     assert summary["fields"] == {"cells": 3, "scorable": 2, "stated": 1,
                                  "marked_missing": 0, "missed": 1, "unscorable": 1}
     assert summary["claims"]["total"] == 8 and summary["claims"]["supported"] == 6
+    # The gated number is citation completeness (6/8), NOT presence (8/8).
+    assert summary["claims"]["citation_complete"] == 6
+    assert summary["claims"]["citation_present"] == 8
+    assert summary["claims"]["grounded"] == 7
     assert summary["claims"]["rate"] == 0.75
     assert summary["usage"]["calls"] == 2          # the errored case made no call
     assert summary["errors"] == ["c"]
+
+
+def test_release_report_publishes_all_three_metrics_as_n_over_d(capsys):
+    rows = [_release_row("a", "identifier", fields=FIELDS_OK, claims=CLAIMS_OK),
+            _release_row("b", "comparison", score=0.5, fields=FIELDS_BAD,
+                         claims=CLAIMS_BAD)]
+    summary = ev.print_release_table(rows)
+    out = re.sub(r"[ \t]+", " ", capsys.readouterr().out)
+    assert "groundedness : 7/8" in out
+    assert "citation completeness : 6/8" in out
+    assert "citation presence : 8/8" in out
+    assert "(reported, never gated)" in out
+    # ceil(0.95 * 8) = 8 -> 6/8 FAILs. The gate reads completeness, so the
+    # 8/8 presence number can never carry it.
+    assert "gate >= 95% = 8/8" in out and "FAIL" in out
+    assert summary["claims"]["citation_completeness"] == "6/8"
+    assert summary["claims"]["citation_presence"] == "8/8"
+    assert summary["claims"]["groundedness"] == "7/8"
+    assert summary["claims"]["gate_threshold"] == 8
+
+
+def test_release_report_says_n_a_rather_than_borrowing_another_metric(capsys):
+    """Verdict finding 21: `.get('grounded', c['supported'])` printed the
+    verdict tally under the groundedness header, asserting 91 == 110 == 141.
+    A pre-split record reports n/a."""
+    rows = [_release_row("a", "identifier", fields=FIELDS_OK, claims=CLAIMS_LEGACY)]
+    summary = ev.print_release_table(rows)
+    out = re.sub(r"[ \t]+", " ", capsys.readouterr().out)
+    assert "groundedness : n/a" in out
+    assert "citation completeness : n/a" in out
+    assert "groundedness : 4/4" not in out, \
+        "the supported count must never be printed as groundedness"
+    assert "identifier n/a/4" in out, \
+        "the per-class breakdown says n/a too, never a fabricated 0/4"
+    assert "identifier 0/4" not in out
+    assert summary["claims"]["grounded"] is None
+    assert summary["claims"]["citation_complete"] is None
+    assert summary["claims"]["groundedness"] is None
+    assert summary["claims"]["rate"] is None
 
 
 def test_release_table_survives_a_scorer_that_failed(capsys):
@@ -952,8 +1209,41 @@ def test_compare_diffs_the_new_metrics_when_both_runs_carry_them(capsys, tmp_pat
     b = [_release_row("a", "identifier", fields=FIELDS_OK, claims=CLAIMS_OK)]
     ev.run_compare(ev.record(a, "a"), ev.record(b, "b"))
     out = re.sub(r"\s+", " ", capsys.readouterr().out)
-    assert "field coverage 1 cases 0.0% -> 100.0%" in out
-    assert "claim support 1 cases 50.0% -> 100.0%" in out
+    assert "field coverage 1 cases 0/1 -> 1/1 0.0% -> 100.0%" in out
+    assert "citation completeness 1 cases 2/4 -> 4/4 50.0% -> 100.0%" in out
+    assert "claim support" not in out, \
+        "--compare reads citation completeness, not the legacy verdict tally"
+
+
+def test_compare_pools_counts_and_says_so_when_the_denominator_moves(
+        capsys, tmp_path, monkeypatch):
+    """A rate whose denominator moved is not a comparison: deleting two
+    unsupportable claims takes 2/4 to 2/2 and must not read as a clean win."""
+    monkeypatch.setattr(ev, "EVAL_DIR", tmp_path)
+    shrunk = dict(CLAIMS_OK, claims=2, supported=2, grounded=2,
+                  citation_complete=2, citation_present=2,
+                  groundedness="2/2", citation_completeness="2/2",
+                  citation_presence="2/2")
+    a = [_release_row("a", "identifier", fields=FIELDS_OK, claims=CLAIMS_BAD)]
+    b = [_release_row("a", "identifier", fields=FIELDS_OK, claims=shrunk)]
+    ev.run_compare(ev.record(a, "a"), ev.record(b, "b"))
+    out = re.sub(r"\s+", " ", capsys.readouterr().out)
+    assert "citation completeness 1 cases 2/4 -> 2/2" in out
+    assert "DENOMINATOR MOVED 4 -> 2" in out
+
+
+def test_compare_skips_a_claim_metric_the_old_run_never_recorded(
+        capsys, tmp_path, monkeypatch):
+    """A pre-split record has no citation_complete. It is skipped, never
+    back-filled from `support_rate` — the two are not the same number in
+    production mode."""
+    monkeypatch.setattr(ev, "EVAL_DIR", tmp_path)
+    a = [_release_row("a", "identifier", fields=FIELDS_OK, claims=CLAIMS_LEGACY)]
+    b = [_release_row("a", "identifier", fields=FIELDS_OK, claims=CLAIMS_OK)]
+    ev.run_compare(ev.record(a, "a"), ev.record(b, "b"))
+    out = re.sub(r"\s+", " ", capsys.readouterr().out)
+    assert "citation completeness" not in out
+    assert "field coverage 1 cases 1/1 -> 1/1" in out
 
 
 # ==========================================================================
@@ -1141,19 +1431,58 @@ def test_verifier_comparison_flags_metric_regressions():
               "fields": {"coverage": 1.0},
               "claims": {"groundedness_rate": 1.0,
                          "citation_completeness_rate": 1.0,
-                         "citation_support_rate": 1.0}}
+                         "citation_presence_rate": 1.0}}
     after = {"checks": {"pass": False, "score": 0.5},
              "fields": {"coverage": 0.5},
              "claims": {"groundedness_rate": 0.5,
-                        "citation_completeness_rate": 1.0,
-                        "citation_support_rate": 0.5}}
+                        "citation_completeness_rate": 0.25,
+                        "citation_presence_rate": 1.0}}
     got = ev.compare_verifier_output(before, after)
     assert got["no_regression"] is False
     assert set(got["regressions"]) == {
         "answer_checks_pass_to_fail", "field_coverage_decreased",
-        "groundedness_decreased", "citation_support_decreased",
+        "groundedness_decreased", "citation_completeness_decreased",
     }
     assert got["deltas"]["answer_score"] == -0.5
+    assert got["deltas"]["citation_completeness"] == -0.75
+    assert "citation_support" not in got["deltas"], \
+        "one regression, one row: the duplicate key is deleted"
+
+
+def test_one_regression_produces_exactly_one_row():
+    """Binding decision 4, stated as behaviour: a single dropped claim must
+    count once. With citation_support_rate beside citation_completeness_rate it
+    counted twice and printed four deltas where three exist."""
+    before = {"checks": {"pass": True, "score": 1.0}, "fields": {"coverage": 1.0},
+              "claims": {"groundedness_rate": 1.0,
+                         "citation_completeness_rate": 1.0,
+                         "citation_presence_rate": 1.0}}
+    after = {"checks": {"pass": True, "score": 1.0}, "fields": {"coverage": 1.0},
+             "claims": {"groundedness_rate": 1.0,
+                        "citation_completeness_rate": 0.5,
+                        "citation_presence_rate": 1.0}}
+    got = ev.compare_verifier_output(before, after)
+    assert got["regressions"] == ["citation_completeness_decreased"]
+    assert len(got["deltas"]) == 1 + len(ev.COMPARED_METRICS)   # + answer_score
+
+
+def test_citation_presence_is_reported_but_never_gated():
+    """Presence is the metric a fabricated bracket moves. It is published as a
+    delta and must never, in either direction, be a regression."""
+    before = {"checks": {"pass": True, "score": 1.0}, "fields": {"coverage": 1.0},
+              "claims": {"groundedness_rate": 1.0,
+                         "citation_completeness_rate": 1.0,
+                         "citation_presence_rate": 1.0}}
+    after = {"checks": {"pass": True, "score": 1.0}, "fields": {"coverage": 1.0},
+             "claims": {"groundedness_rate": 1.0,
+                        "citation_completeness_rate": 1.0,
+                        "citation_presence_rate": 0.25}}
+    got = ev.compare_verifier_output(before, after)
+    assert got["deltas"]["citation_presence"] == -0.75
+    assert got["regressions"] == [] and got["no_regression"] is True
+    gated = {name for name, _, _, g in ev.COMPARED_METRICS if g}
+    assert "citation_presence" not in gated
+    assert gated == {"field_coverage", "groundedness", "citation_completeness"}
 
 
 def test_raw_retrieval_and_production_planner_are_mutually_exclusive():
