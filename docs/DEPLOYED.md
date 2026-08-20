@@ -53,3 +53,4 @@ landing after a trailing paragraph would detach from the table.
 
 | deployed (UTC) | sha | switches |
 | --- | --- | --- |
+| 2026-08-20T17:36:34Z | 4a04d32 | PLANNER=1 VERIFY=1 VERIFY_REPAIR=0 |
