@@ -387,13 +387,41 @@ def build_inventory(
     return inventory
 
 
+def visible_evidence_chars(row: dict[str, Any]) -> int:
+    """How many characters of evidence TEXT this row actually shows a reader.
+
+    Evidence keys, hit scores and probe booleans are not evidence: a reviewer
+    separates ``missing_citation`` from ``missing_retrieval_evidence`` from
+    ``verifier_false_positive`` by reading what the page says.  A row that
+    shows zero characters of it is not labellable however many fields it has,
+    so it is counted here and refused at ``export``.
+    """
+    entries = row.get("evidence")
+    if not isinstance(entries, list):
+        return 0
+    return sum(
+        len(entry["excerpt"])
+        for entry in entries
+        if isinstance(entry, dict) and isinstance(entry.get("excerpt"), str)
+    )
+
+
 def evidence_coverage(inventory: Iterable[dict[str, Any]]) -> dict[str, int]:
     rows = list(inventory)
     statuses = Counter(row.get("evidence_status") for row in rows)
+    reconstructed = [
+        row for row in rows if row.get("evidence_status") == EVIDENCE_RECONSTRUCTED
+    ]
     return {
         "total": len(rows),
         "with_evidence": statuses.get(EVIDENCE_RECONSTRUCTED, 0),
         "without_evidence": len(rows) - statuses.get(EVIDENCE_RECONSTRUCTED, 0),
+        "without_evidence_text": sum(
+            1 for row in reconstructed if visible_evidence_chars(row) == 0
+        ),
+        "evidence_text_chars": sum(
+            visible_evidence_chars(row) for row in reconstructed
+        ),
     }
 
 
@@ -694,6 +722,16 @@ def main(argv: list[str] | None = None) -> int:
                     "would export without the evidence their labels are defined "
                     "over; build the sidecar with "
                     "scripts/backfill_release_evidence.py and pass --evidence "
+                    "(or --allow-missing-evidence for a non-labellable dump)"
+                )
+            if coverage["without_evidence_text"] and not args.allow_missing_evidence:
+                raise AdjudicationError(
+                    f"{coverage['without_evidence_text']} of {coverage['total']} "
+                    "claims carry evidence keys but no evidence TEXT; a reviewer "
+                    "cannot separate missing_citation from "
+                    "missing_retrieval_evidence from verifier_false_positive "
+                    "without reading what the page says. Rebuild the sidecar "
+                    "with scripts/backfill_release_evidence.py "
                     "(or --allow-missing-evidence for a non-labellable dump)"
                 )
             write_inventory(args.output, expected, force=args.force)

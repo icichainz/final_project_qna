@@ -11,21 +11,19 @@ and citation validity.
 Four modes
 ----------
   --retrieval-only   (default) deterministic, no API calls. Runs the same
-                     retrieval helpers as the app, with the conductor skipped
-                     and the question used verbatim, then scores document
-                     recall and evidence-page hit rate. Multi-turn cases are
-                     skipped (they need history to resolve) and counted apart.
+                     retrieval path the app runs — conductor SKIPPED, the
+                     question used verbatim — and scores document recall and
+                     evidence-page hit rate.  Multi-turn cases are skipped
+                     (they need history to be resolvable) and counted apart.
   --answers          additionally calls the chat model per case, assembling
-                     the prompt with chainlit_app's shared helpers (registry,
-                     year, board-range and weak-signal notes) and scores it.
-                     Per-record metadata names the remaining parity gaps.
+                     the prompt exactly as chainlit_app does (registry note,
+                     year note, board-range note, weak-signal note, per-turn
+                     assemble()), and scores the answer.
   --release          --answers over the WHOLE suite plus the release report:
                      required-field coverage against registry v2, claim
-                     groundedness / citation completeness / citation presence
-                     from rag.verify (see "metric contract" below),
-                     latency p50/p95, tokens and estimated cost. Records to
-                     data/eval/release_<label>.jsonl. The verifier defaults to
-                     deterministic/no-repair, so it adds no API calls.
+                     support from rag.verify (the plan's >=95% citation-
+                     precision gate), latency p50/p95, tokens and estimated
+                     cost.  Records to data/eval/release_<label>.jsonl.
   --compare A B      diff two recorded runs, per case and per class.
 
 Two scorers beyond the string checks, both deterministic:
@@ -49,8 +47,6 @@ Examples
   python scripts/eval_answers.py --answers --sample 12 --record baseline-sample
   python scripts/eval_answers.py --answers --ids conf-fp274-gcf,abs-fp999
   python scripts/eval_answers.py --release --record release-1
-  python scripts/eval_answers.py --release --production-planner \\
-      --verifier-mode production --verifier-repair --record repair-shadow
   python scripts/eval_answers.py --compare data/eval/answers_baseline_a.jsonl \\
                                            data/eval/answers_baseline_b.jsonl
 """
@@ -63,7 +59,6 @@ import re
 import sys
 import time
 from collections import OrderedDict, defaultdict
-from itertools import zip_longest
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -82,7 +77,7 @@ except Exception:
 
 from gcf_qna import config                                    # noqa: E402
 from gcf_qna.app.prompts import assemble                      # noqa: E402
-from gcf_qna.rag import planner, registry, verify             # noqa: E402
+from gcf_qna.rag import registry, verify                      # noqa: E402
 
 DEFAULT_CASES = ROOT / "scripts" / "answer_gold.jsonl"
 GOLD_SET = ROOT / "scripts" / "gold_set.jsonl"
@@ -100,82 +95,9 @@ CLASS_ORDER = ["identifier", "compact-id", "board-code", "discovery",
 TOKEN_COST_USD = {"prompt": 1.25 / 1_000_000,        # ~$1.25 per 1M input
                   "completion": 10.00 / 1_000_000}   # ~$10.00 per 1M output
 
-# The plan's citation-precision gate: share of extracted claims that BOTH cite
-# evidence and are supported by what they cite (docs/claim-support-execution-
-# plan.md, "Metric contract"). Gated on citation completeness only.
+# The plan's citation-precision gate: share of extracted claims the turn's own
+# evidence supports.
 CLAIM_SUPPORT_GATE = 0.95
-
-# ---------------------------------------------------------------------------
-# metric contract (docs/claim-support-execution-plan.md, "Metric contract")
-# ---------------------------------------------------------------------------
-# Three numbers, two gates:
-#
-#   groundedness          some evidence the answer path HELD entails the claim,
-#                         cited or not          -> gated
-#   citation completeness the claim CITES evidence that entails it: cited AND
-#                         SUPPORTED             -> gated
-#   citation presence     the claim carries any citation, right or wrong
-#                         -> REPORTED, NEVER GATED
-#
-# Citation presence is the one an answer can raise by appending '[anything,
-# p.1]'. It is kept visible precisely so it can never be mistaken for
-# completeness again (verdict finding 4: counting it as completeness reported
-# 141/165 where the contract gives 91/165).
-#
-# `--compare` builds one row per entry. Two entries naming the same underlying
-# record key would double-count a single regression and print two green deltas
-# where one exists (binding decision 4), so the tuple is asserted pairwise
-# distinct at import — see _assert_distinct_metric_keys below.
-#
-#            display name          record block  record key                gated
-COMPARED_METRICS = (
-    ("field_coverage",             "fields", "coverage",                   True),
-    ("groundedness",               "claims", "groundedness_rate",          True),
-    ("citation_completeness",      "claims", "citation_completeness_rate", True),
-    ("citation_presence",          "claims", "citation_presence_rate",     False),
-)
-
-# The verdict flags that mean "held evidence entails this claim even though the
-# claim's own citation does not". Groundedness is defined over ALL held
-# evidence, so it must read the verifier's all-evidence finding rather than
-# re-deriving it from citation state (which is what collapsed groundedness onto
-# citation support, verdict finding 5). Public flag surface only — this file
-# calls no private verify helper.
-GROUNDED_FLAGS = ("value-present-elsewhere",)
-
-
-def n_over_d(num, den) -> str:
-    """A claim metric as `n/d`. Never publish a bare rate: a rate whose
-    denominator moved is not a comparison (metric contract)."""
-    return f"{int(num)}/{int(den)}"
-
-
-def gate_threshold(den, gate: float = CLAIM_SUPPORT_GATE) -> int:
-    """The exact integer numerator a gate needs — ceil(gate * d), computed in
-    integers so no float rounding can hand out a pass (binding decision 5)."""
-    den = int(den)
-    return -((-int(round(gate * 10000)) * den) // 10000)
-
-
-def _assert_distinct_metric_keys(metrics=COMPARED_METRICS):
-    """Startup assertion: no two compared metrics share a name or a record key.
-
-    A plain `assert` would vanish under `python -O`, and this is the check that
-    stops a resurrected duplicate (`citation_support_rate` beside
-    `citation_completeness_rate`) from double-counting one regression.
-    """
-    names = [m[0] for m in metrics]
-    keys = [(m[1], m[2]) for m in metrics]
-    dup_names = sorted({n for n in names if names.count(n) > 1})
-    dup_keys = sorted({f"{b}.{k}" for b, k in keys if keys.count((b, k)) > 1})
-    if dup_names or dup_keys:
-        raise AssertionError(
-            "compared metric keys must be pairwise distinct; duplicates: "
-            + ", ".join(dup_names + dup_keys))
-    return metrics
-
-
-_assert_distinct_metric_keys()
 
 
 # ---------------------------------------------------------------------------
@@ -624,101 +546,38 @@ def score_fields(case: dict, answer: str):
 # ---------------------------------------------------------------------------
 # claim support  (the plan's citation-precision gate)
 # ---------------------------------------------------------------------------
-def score_claims(answer: str, hits, notes=None, verdicts=None, evidence=None):
-    """Deterministic claim metrics against THIS turn's own evidence.
+def score_claims(answer: str, hits, notes=None):
+    """Deterministic claim-level verdicts against THIS turn's own evidence.
 
     The old citation check asked 'does the answer cite a page we retrieved?',
     which a fabricated figure on a real page passes. This asks whether the
     cited evidence states the claim: verify.extract_claims over the answer,
     verify.build_evidence over the very hits and notes the harness put in the
-    prompt, verify.classify_deterministic between them.
-
-    Three separate numbers, per the metric contract (COMPARED_METRICS above):
-
-    * groundedness          — some evidence the turn HELD entails the claim,
-                              cited or not.
-    * citation completeness — the claim cites evidence that entails it:
-                              ``cited AND SUPPORTED``. This is the gated one.
-    * citation presence     — the claim carries a bracket, right or wrong.
-                              Reported, never gated: a fabricated citation to a
-                              document that was never retrieved raises presence
-                              and CANNOT raise completeness.
-
-    ``verdicts`` and ``evidence`` let the offline verifier reuse its final
-    verdicts without another classification pass. With neither supplied this
-    remains the original pure-python scorer: no judge model or repair call.
+    prompt, verify.classify_deterministic between them. Pure python — no judge
+    model, no second API call, no repair pass.
     """
     blocks = [n for n in (notes or []) if n]
-    evidence = evidence if evidence is not None else verify.build_evidence(hits or [], blocks)
+    evidence = verify.build_evidence(hits or [], blocks)
     claims = verify.extract_claims(answer or "")
-    verdicts = (list(verdicts) if verdicts is not None
-                else verify.classify_deterministic(claims, evidence))
+    verdicts = verify.classify_deterministic(claims, evidence)
     n = defaultdict(int)
     failures = []
     for v in verdicts:
         n[v.status] += 1
-        cited = bool(getattr(v.claim, "cited",
-                             getattr(v.claim, "citations", [])))
-        flags = list(getattr(v, "flags", []) or [])
-        supported_here = v.status == verify.SUPPORTED
-        # Groundedness reads the verifier's all-evidence finding, never the
-        # claim's citation state.
-        grounded = supported_here or any(f in flags for f in GROUNDED_FLAGS)
-        # Citation completeness is 'cited AND supported'. A bracket alone is
-        # citation PRESENCE and is counted under its own name.
-        n["citation_present"] += cited
-        n["grounded"] += grounded
-        n["citation_complete"] += cited and supported_here
-        if not supported_here:
+        if v.status != verify.SUPPORTED:
             failures.append({"status": v.status, "kind": v.claim.kind,
-                             "text": v.claim.text[:160], "reason": v.reason[:160],
-                             "grounded": grounded, "cited": cited})
+                             "text": v.claim.text[:160], "reason": v.reason[:160]})
     total = len(verdicts)
     supported = n[verify.SUPPORTED]
     return {
         "claims": total,
-        "grounded": n["grounded"],
-        "groundedness_rate": (n["grounded"] / total) if total else None,
-        "groundedness": n_over_d(n["grounded"], total),
-        "citation_complete": n["citation_complete"],
-        "citation_completeness_rate": (n["citation_complete"] / total) if total else None,
-        "citation_completeness": n_over_d(n["citation_complete"], total),
-        "citation_present": n["citation_present"],
-        "citation_presence_rate": (n["citation_present"] / total) if total else None,
-        "citation_presence": n_over_d(n["citation_present"], total),
         "supported": supported,
         "contradicted": n[verify.CONTRADICTED],
         "unsupported": n[verify.UNSUPPORTED],
-        # Legacy verdict tally, kept for pre-split artifacts. NOT a compared
-        # metric key — `--compare` reads citation_completeness_rate, so this
-        # cannot double-count the same regression (binding decision 4).
         "support_rate": (supported / total) if total else None,
         "evidence_keys": [f"{d}|{p if p is not None else '-'}" for d, p in evidence],
         "failures": failures[:6],
     }
-
-
-def run_offline_verifier(answer: str, hits, notes=None, client=None,
-                         mode: str = "deterministic", allow_repair: bool = False):
-    """Run the production verifier entry point with explicit API semantics.
-
-    ``deterministic`` is the default and cannot make an extra API call because
-    both the judge and repair are disabled. ``production`` enables the same
-    LLM adjudication path used by the app; repair remains an independent,
-    opt-in switch. The caller owns the client so tests can remain network-free.
-    """
-    if mode not in ("deterministic", "production"):
-        raise ValueError(f"unknown verifier mode: {mode}")
-    blocks = [n for n in (notes or []) if n]
-    evidence = verify.build_evidence(hits or [], blocks)
-    use_llm = mode == "production"
-    result = verify.verify_answer(
-        answer, evidence,
-        client=client if (use_llm or allow_repair) else None,
-        use_llm=use_llm,
-        allow_repair=bool(allow_repair),
-    )
-    return result, evidence
 
 
 # ---------------------------------------------------------------------------
@@ -790,18 +649,16 @@ def multi_identifier(question: str) -> bool:
 
 
 class Pipeline:
-    """Offline app subset with explicit, per-record parity metadata."""
+    """chainlit_app.main() with the conductor removed and no Chainlit I/O."""
 
     def __init__(self, top_k: int = None, comparison_proxy: bool = True,
-                 raw_retrieval: bool = False, scope_single_id: bool = False,
-                 production_planner: bool = False):
+                 raw_retrieval: bool = False, scope_single_id: bool = False):
         from gcf_qna.app import chainlit_app as app
         self.app = app
         self.top_k = top_k or config.TOP_K
         self.comparison_proxy = comparison_proxy
         self.raw_retrieval = raw_retrieval
         self.scope_single_id = scope_single_id
-        self.production_planner = production_planner
         t0 = time.perf_counter()
         self.retriever = app.get_retriever()
         if self.retriever is None:
@@ -809,35 +666,6 @@ class Pipeline:
                              "(see scripts/build_index.py)")
         self.load_seconds = time.perf_counter() - t0
         self.meta = dict(app._retriever_meta)
-
-    def parity(self, *, planner_applicable=False, planner_used=False,
-               matrix_in_prompt=False, planner_fallback=None) -> dict:
-        """Capabilities that materially affect equivalence with the app."""
-        limitations = [
-            "LLM conductor is not run; semantic rewrites and chat routing are unavailable",
-            "non-planner single-ID retrieval does not run the app's production prescope helper",
-        ]
-        if planner_fallback:
-            limitations.append("deterministic planner failed and raw retrieval was used; "
-                               "the production conductor fallback is unavailable")
-        return {
-            "level": "partial",
-            "retrieval_helpers": {
-                "rescope_and_tag_resolution": not self.raw_retrieval,
-                "production_single_id_prescope": False,
-                "single_id_ab_scope_enabled": self.scope_single_id,
-            },
-            "deterministic_planner": {
-                "enabled": self.production_planner,
-                "applicable": planner_applicable,
-                "used": planner_used,
-                "matrix_in_prompt": matrix_in_prompt,
-                "fallback": planner_fallback,
-            },
-            "conductor": {"available": False, "used": False},
-            "answer_history_isolation": False,
-            "limitations": limitations,
-        }
 
     # -- the registry FP-miss guard, verbatim from the app ------------------
     def fp_guard(self, question: str):
@@ -891,56 +719,12 @@ class Pipeline:
                 reg = None
             return {"guard": True, "guard_answer": guard, "hits": [],
                     "system": None, "user": None, "weak": False, "plan": [],
-                    "notes": {"registry": reg, "year": None, "board": None,
-                              "matrix": None},
-                    "pipeline_parity": self.parity()}
+                    "notes": {"registry": reg, "year": None, "board": None}}
 
-        plan_obj = None
-        planner_applicable = False
-        planner_used = False
-        planner_fallback = None
-        matrix_block = None
-        if self.production_planner:
-            candidate = planner.detect(question)
-            planner_applicable = bool(
-                candidate is not None and app._planner_intent(question, candidate))
-            if planner_applicable:
-                try:
-                    matrix = planner.build_matrix(candidate, self.retriever)
-                    if not any(c.status not in ("missing", "missing-document")
-                               for c in matrix.cells):
-                        raise ValueError("no cell carries evidence")
-                    matrix_block = planner.render(matrix)
-                    plan_obj = candidate
-                    planner_used = True
-                except Exception as e:
-                    planner_fallback = f"{type(e).__name__}: {e}"
-
-        if planner_used:
-            items = [{"q": app._plan_query(plan_obj, d), "doc": d.scope}
-                     for d in plan_obj.docs if not d.missing]
-        else:
-            items = self.plan(question)
-
-        decomposed = len(items) > 1 or planner_used
-        per_query = self.top_k if not decomposed else max(3, self.top_k // len(items))
-        weak = True
-        per_lists = []
-        for sq in items:
-            got, conf = self.retriever.search_with_confidence(
-                sq["q"], per_query, sq.get("doc"))
-            if conf >= config.MIN_DENSE_SCORE:
-                weak = False
-            per_lists.append(got)
-        seen, hits = set(), []
-        for tier in zip_longest(*per_lists):
-            for h in tier:
-                if h is None:
-                    continue
-                key = (h.doc_id, _page(h), (h.text or "")[:120])
-                if key not in seen:
-                    seen.add(key)
-                    hits.append(h)
+        items = self.plan(question)
+        sq = items[0]
+        hits, conf = self.retriever.search_with_confidence(
+            sq["q"], self.top_k, sq.get("doc"))
         hits = hits[:15]
         hits, year_note = app._year_assist(question, hits)
         board_note = app._board_range_note(question)
@@ -952,6 +736,7 @@ class Pipeline:
             for h in hits)
         if year_note:
             context = year_note + "\n\n" + context
+        weak = conf < config.MIN_DENSE_SCORE
         if weak:
             context = ("Note: retrieval confidence for this question is LOW — the "
                        "excerpts below may not actually be relevant. Do not force an "
@@ -965,26 +750,15 @@ class Pipeline:
         except Exception:
             pass
 
-        if matrix_block:
-            context = matrix_block + "\n\n" + context
-
         system = assemble(year=bool(year_note), registry=bool(reg_note),
-                          comparison=(planner_used or
-                                      (self.comparison_proxy and multi_identifier(question))),
-                          matrix=bool(matrix_block),
+                          comparison=self.comparison_proxy and multi_identifier(question),
                           lang=app._detect_lang(question))
         return {
             "guard": False, "guard_answer": None, "hits": hits,
-            "weak": weak, "plan": items,
+            "confidence": conf, "weak": weak, "plan": items,
             "system": system,
             "user": f"Context excerpts:\n{context}\n\nQuestion: {question}",
-            "notes": {"registry": reg_note, "year": year_note,
-                      "board": board_note, "matrix": matrix_block},
-            "pipeline_parity": self.parity(
-                planner_applicable=planner_applicable,
-                planner_used=planner_used,
-                matrix_in_prompt=bool(matrix_block),
-                planner_fallback=planner_fallback),
+            "notes": {"registry": reg_note, "year": year_note, "board": board_note},
         }
 
 
@@ -1128,7 +902,7 @@ def print_release_table(rows: list, cases_total: int = None):
     print("=" * 78)
     hdr = (f"{'class':12} {'n':>3} {'err':>4} {'pass':>6} {'behav':>6} "
            f"{'contain':>8} {'forbid':>7} {'lang':>6} {'cites':>6} "
-           f"{'field':>6} {'cite-cmpl':>9} {'p50':>7} {'p95':>7}")
+           f"{'field':>6} {'claim':>6} {'p50':>7} {'p95':>7}")
     print(hdr)
     print("-" * len(hdr))
     for cls in sorted(by_cls, key=lambda c: (_class_rank(c), c)):
@@ -1156,29 +930,17 @@ def print_release_table(rows: list, cases_total: int = None):
     print(f"  missed                      : {missed}")
     _print_field_breakdown(fields)
 
-    print("\nCLAIM SUPPORT / QUALITY — factual content and citations scored separately "
-          "(deterministic unless verifier mode says otherwise)")
+    print("\nCLAIM SUPPORT — verify.extract_claims vs the turn's own evidence "
+          "(deterministic)")
     tot = sum(c["claims"] for c in claims)
     sup = sum(c["supported"] for c in claims)
-    # No .get(key, c["supported"]) backfill: substituting the verdict tally for
-    # a missing metric prints a fabricated number under the metric's own name
-    # (verdict finding 21 — it asserted 91 == 110 == 141). A record that lacks
-    # the key reports n/a instead.
-    grounded = _sum_claim_metric(claims, "grounded")
-    complete = _sum_claim_metric(claims, "citation_complete")
-    present = _sum_claim_metric(claims, "citation_present")
     con = sum(c["contradicted"] for c in claims)
     uns = sum(c["unsupported"] for c in claims)
-    rate = (complete / tot) if (tot and complete is not None) else None
-    need = gate_threshold(tot)
+    rate = (sup / tot) if tot else 0.0
     print(f"  claims                      : {tot} over {len(claims)} answers")
-    print(f"  groundedness                : {_metric_line(grounded, tot)}")
-    print(f"  citation completeness       : {_metric_line(complete, tot)}  "
-          f"gate >= {CLAIM_SUPPORT_GATE:.0%} = {need}/{tot} — "
-          f"{'PASS' if tot and complete is not None and complete >= need else 'FAIL'}")
-    print(f"  citation presence           : {_metric_line(present, tot)}  "
-          f"(reported, never gated)")
-    print(f"  legacy supported verdicts   : {sup}")
+    print(f"  supported                   : {sup} ({rate:.1%})  "
+          f"gate >= {CLAIM_SUPPORT_GATE:.0%} — "
+          f"{'PASS' if tot and rate >= CLAIM_SUPPORT_GATE else 'FAIL'}")
     print(f"  contradicted                : {con}")
     print(f"  unsupported                 : {uns}")
     _print_claim_breakdown(scored)
@@ -1204,36 +966,9 @@ def print_release_table(rows: list, cases_total: int = None):
     return {"fields": {"cells": cells, "scorable": scorable, "stated": stated,
                        "marked_missing": marked, "missed": missed,
                        "unscorable": unscorable},
-            "claims": {"total": tot, "grounded": grounded,
-                       "citation_complete": complete,
-                       "citation_present": present,
-                       "groundedness": _n_over_d_or_none(grounded, tot),
-                       "citation_completeness": _n_over_d_or_none(complete, tot),
-                       "citation_presence": _n_over_d_or_none(present, tot),
-                       "gate_threshold": need,
-                       "supported": sup, "contradicted": con,
+            "claims": {"total": tot, "supported": sup, "contradicted": con,
                        "unsupported": uns, "rate": rate},
             "usage": u, "errors": [r["id"] for r in errored]}
-
-
-def _sum_claim_metric(claims: list, key: str):
-    """Pooled numerator for one claim metric, or None if any record predates
-    it. None propagates to `n/a`; it is never silently replaced by another
-    metric's count."""
-    vals = [c.get(key) for c in claims]
-    return None if any(v is None for v in vals) else sum(vals)
-
-
-def _n_over_d_or_none(num, den):
-    return None if num is None else n_over_d(num, den)
-
-
-def _metric_line(num, den) -> str:
-    """`n/d` first, the percentage second and only as a reading aid — the
-    contract forbids publishing a claim metric as a bare rate."""
-    if num is None:
-        return f"n/a ({den} claims; this run predates the metric)"
-    return f"{n_over_d(num, den)}" + (f" {num / den:.1%}" if den else "")
 
 
 def _release_line(label: str, rs: list) -> str:
@@ -1245,14 +980,11 @@ def _release_line(label: str, rs: list) -> str:
     n = max(1, len(scored))
     u = usage_totals(rs)
     fcov = _pct(sum(x["n_covered"] for x in f), sum(x["n_scorable"] for x in f))
-    # The gated claim column is citation completeness, published as n/d.
-    cnum = _sum_claim_metric(cl, "citation_complete")
-    cden = sum(x["claims"] for x in cl)
-    ccov = "n/a" if cnum is None else n_over_d(cnum, cden)
+    ccov = _pct(sum(x["supported"] for x in cl), sum(x["claims"] for x in cl))
     return (f"{label:12} {len(rs):>3} {err:>4} {_pct(c['pass'], n):>6} "
             f"{_pct(c['behavior'], n):>6} {_pct(c['ct'], c['cn']):>8} "
             f"{_pct(c['ft'], c['fn']):>7} {_pct(c['language'], n):>6} "
-            f"{_pct(c['citations'], n):>6} {fcov:>6} {ccov:>9} "
+            f"{_pct(c['citations'], n):>6} {fcov:>6} {ccov:>6} "
             + (f"{u['p50']:>6.1f}s" if u["p50"] is not None else f"{'n/a':>7}")
             + (f" {u['p95']:>6.1f}s" if u["p95"] is not None else f" {'n/a':>7}"))
 
@@ -1279,38 +1011,23 @@ def _print_field_breakdown(fields: list):
 
 
 def _print_claim_breakdown(rows: list):
-    """Per class, and the five worst cases, on the SAME metric the header
-    gates: citation completeness. Reporting the legacy verdict tally under a
-    citation-completeness header is how the two got conflated."""
-    per = defaultdict(lambda: [0, 0, False])   # complete, claims, any-missing
+    per = defaultdict(lambda: [0, 0])
     have = [r for r in rows if _metrics([r], "claims", "claims")]
     for r in have:
         c = r["claims"]
-        row = per[r["class"]]
-        if c.get("citation_complete") is None:
-            row[2] = True
-        else:
-            row[0] += c["citation_complete"]
-        row[1] += c.get("claims", 0)
+        per[r["class"]][0] += c.get("supported", 0)
+        per[r["class"]][1] += c.get("claims", 0)
     for cls in sorted(per, key=lambda c: (_class_rank(c), c)):
-        cc, tot, missing = per[cls]
-        if missing:                            # never print 0/n for 'unknown'
-            print(f"    {cls:20} {'n/a':>3}/{tot:<3}")
-            continue
-        print(f"    {cls:20} {cc:>3}/{tot:<3} {_pct(cc, tot).strip():>4}")
-
-    # Records that predate the metric have no completeness to be worst at, so
-    # they are excluded rather than sorted to either end.
-    scored = [r for r in have if r["claims"].get("claims")
-              and r["claims"].get("citation_completeness_rate") is not None]
-    worst = sorted(scored, key=lambda r: r["claims"]["citation_completeness_rate"])
-    for r in worst[:5]:
+        sup, tot = per[cls]
+        print(f"    {cls:20} {sup:>3}/{tot:<3} {_pct(sup, tot).strip():>4}")
+    worst = sorted((r for r in have if r["claims"].get("claims")),
+                   key=lambda r: r["claims"]["support_rate"])[:5]
+    for r in worst:
         c = r["claims"]
-        if c["citation_completeness_rate"] >= 1.0:
+        if c["support_rate"] >= 1.0:
             break
         first = (c["failures"] or [{}])[0]
-        print(f"    LOW  {r['id']:26} "
-              f"{n_over_d(c['citation_complete'], c['claims'])} "
+        print(f"    LOW  {r['id']:26} {c['supported']}/{c['claims']} "
               f"{first.get('status', '')}: {first.get('reason', '')[:60]}")
 
 
@@ -1367,8 +1084,7 @@ def run_gate(pipe: Pipeline, gold_path: Path):
 def run_eval(args, cases: list) -> list:
     pipe = Pipeline(top_k=args.k, comparison_proxy=not args.no_comparison_proxy,
                     raw_retrieval=args.raw_retrieval,
-                    scope_single_id=args.scope_single_id,
-                    production_planner=getattr(args, "production_planner", False))
+                    scope_single_id=args.scope_single_id)
     print(f"retriever ready in {pipe.load_seconds:.1f}s — "
           f"{pipe.meta.get('n_chunks')} chunks, {pipe.meta.get('embedding_model')}")
     if args.gate:
@@ -1388,17 +1104,10 @@ def run_eval(args, cases: list) -> list:
         try:
             rec = _run_case(pipe, client, args, case)
         except Exception as e:                  # one bad case never ends a run
-            parity = pipe.parity()
-            parity["followup"] = {
-                "fixture_has_history": bool(case["turns"]),
-                "conductor_history_resolution": (
-                    "unavailable" if case["turns"] else "not-needed"),
-            }
             rec = {"id": case["id"], "class": case["class"], "lang": case["lang"],
                    "question": case["question"], "turns": len(case["turns"]),
                    "mode": "answers" if args.answers else "retrieval-only",
                    "guard": False, "expect": case["expect"], "score": 0.0,
-                   "pipeline_parity": parity,
                    "error": f"{type(e).__name__}: {e}"}
             print(f"[{i}/{len(cases)}] {case['id']}  ERROR {rec['error'][:90]}",
                   flush=True)
@@ -1441,67 +1150,14 @@ def _safe(fn, *a, **kw):
         return {"error": f"{type(e).__name__}: {e}"}
 
 
-def _metric_rate(metric, key):
-    return metric.get(key) if isinstance(metric, dict) else None
-
-
-def compare_verifier_output(original: dict, returned: dict) -> dict:
-    """Machine-readable no-regression checks for a verifier/repair pass.
-
-    One row per entry in COMPARED_METRICS, whose keys are asserted pairwise
-    distinct at import: two rows reading the same record key would count one
-    regression twice and print an extra green delta. Citation presence is
-    reported as a delta but never triggers a regression — it is the metric a
-    fabricated bracket can move.
-    """
-    _assert_distinct_metric_keys()
-    checks_a, checks_b = original["checks"], returned["checks"]
-    blocks = {"checks": (checks_a, checks_b),
-              "fields": (original["fields"], returned["fields"]),
-              "claims": (original["claims"], returned["claims"])}
-    regressions = []
-    if checks_a.get("pass") and not checks_b.get("pass"):
-        regressions.append("answer_checks_pass_to_fail")
-    deltas = {"answer_score": checks_b.get("score", 0) - checks_a.get("score", 0)}
-    for name, block, key, gated in COMPARED_METRICS:
-        a, b = blocks[block]
-        before, after = _metric_rate(a, key), _metric_rate(b, key)
-        deltas[name] = None if before is None or after is None else after - before
-        if not gated:
-            continue
-        if before is not None and after is not None and after < before - 1e-9:
-            regressions.append(name + "_decreased")
-    return {"no_regression": not regressions, "regressions": regressions,
-            "deltas": deltas}
-
-
-def _answer_metrics(case, answer, hits, notes, *, verdicts=None, evidence=None):
-    return {
-        "checks": score_answer(case, answer, hits),
-        "fields": _safe(score_fields, case, answer),
-        "claims": _safe(score_claims, answer, hits, notes,
-                        verdicts=verdicts, evidence=evidence),
-    }
-
-
 def _run_case(pipe, client, args, case: dict) -> dict:
     out = pipe.run(case["question"])
-    parity = dict(out.get("pipeline_parity") or {
-        "level": "unknown", "limitations": ["pipeline did not report capabilities"]})
-    parity["followup"] = {
-        "fixture_has_history": bool(case["turns"]),
-        "conductor_history_resolution": "unavailable" if case["turns"] else "not-needed",
-    }
-    if case["turns"]:
-        parity.setdefault("limitations", []).append(
-            "follow-up history is passed to answer generation but is not resolved by the conductor")
     rec = {
         "id": case["id"], "class": case["class"], "lang": case["lang"],
         "question": case["question"], "turns": len(case["turns"]),
         "mode": "answers" if args.answers else "retrieval-only",
         "guard": out["guard"], "weak_signal": out.get("weak"),
         "plan": out.get("plan") or [],
-        "pipeline_parity": parity,
         "retrieval": score_retrieval(case, out["hits"]),
         "expect": case["expect"],
     }
@@ -1514,53 +1170,14 @@ def _run_case(pipe, client, args, case: dict) -> dict:
     if answer is None:
         answer, usage = ask_model(client, out["system"], case["turns"], out["user"])
     notes = out.get("notes") or {}
-    evidence_notes = [notes.get("registry"), notes.get("year"), notes.get("matrix")]
-    original = _answer_metrics(case, answer, out["hits"], evidence_notes)
-    verifier_mode = getattr(args, "verifier_mode", "deterministic")
-    allow_repair = bool(getattr(args, "verifier_repair", False))
-    final_answer = answer
-    verifier_result = None
-    verifier_error = None
-    evidence = None
-    try:
-        verifier_result, evidence = run_offline_verifier(
-            answer, out["hits"], evidence_notes, client=client,
-            mode=verifier_mode, allow_repair=allow_repair)
-        final_answer = verifier_result.answer
-    except Exception as e:
-        # Production verification is best-effort and never discards an answer.
-        verifier_error = f"{type(e).__name__}: {e}"
-
-    if verifier_result is not None:
-        returned = _answer_metrics(
-            case, final_answer, out["hits"], evidence_notes,
-            verdicts=verifier_result.verdicts, evidence=evidence)
-    else:
-        returned = original
-    comparison = compare_verifier_output(original, returned)
     rec.update({
-        "answer": final_answer,
-        "original_answer": answer,
-        "checks": returned["checks"],
-        "checks_original": original["checks"],
+        "answer": answer,
+        "checks": score_answer(case, answer, out["hits"]),
         "model": config.CHAT_MODEL,
         "usage": usage,
-        "fields": returned["fields"],
-        "fields_original": original["fields"],
-        "claims": returned["claims"],
-        "claims_original": original["claims"],
-        "verification": {
-            "mode": verifier_mode,
-            "use_llm": verifier_mode == "production",
-            "repair_enabled": allow_repair,
-            "status": getattr(verifier_result, "status", None),
-            "answer_changed": final_answer != answer,
-            "repaired": bool(getattr(verifier_result, "repaired", False)),
-            "repair_rejected": bool(getattr(verifier_result, "repair_rejected", False)),
-            "error": verifier_error,
-            "usage_accounting": "answer-generation call only; verifier judge and repair excluded",
-            "comparison": comparison,
-        },
+        "fields": _safe(score_fields, case, answer),
+        "claims": _safe(score_claims, answer, out["hits"],
+                        [notes.get("registry"), notes.get("year")]),
         "hits": [{"doc": h.doc_id, "page": _page(h), "score": round(h.score, 4)}
                  for h in out["hits"]],
         "notes_used": {k: v for k, v in notes.items() if v},
@@ -1650,45 +1267,37 @@ def run_compare(path_a: Path, path_b: Path):
 
 
 def _extra_rates(rec: dict):
-    """(field coverage cell counts, citation-completeness counts) of one
-    recorded row, each as (n, d), or None where the row predates the metric.
+    """(field coverage, claim support) of one recorded row, or (None, None).
 
-    The claim number here is CITATION COMPLETENESS — cited AND supported. It
-    used to read the legacy `support_rate`, which in production mode absorbs
-    the judge's uncited promotions, and it read it as a bare rate. Counts are
-    returned so the comparison can pool them and publish n/d; a run recorded
-    before the metric existed contributes nothing rather than being back-filled
-    from a different metric.
+    Both are post-release keys. A run recorded before they existed simply has
+    neither, and --compare must keep working against it — which is the whole
+    point of reading them with .get and skipping the pair when either side is
+    missing.
     """
     f = rec.get("fields")
     c = rec.get("claims")
-    f = f if isinstance(f, dict) else {}
-    c = c if isinstance(c, dict) else {}
-    cov = (f.get("n_covered"), f.get("n_scorable"))
-    cite = (c.get("citation_complete"), c.get("claims"))
-    return (None if cov[0] is None or not cov[1] else cov,
-            None if cite[0] is None or not cite[1] else cite)
+    return ((f or {}).get("coverage") if isinstance(f, dict) else None,
+            (c or {}).get("support_rate") if isinstance(c, dict) else None)
 
 
 def _compare_extras(a: dict, b: dict, shared: list):
-    pairs = {"field coverage": [], "citation completeness": []}
+    pairs = {"field coverage": [], "claim support": []}
     for i in shared:
         fa, ca = _extra_rates(a[i])
         fb, cb = _extra_rates(b[i])
         if fa is not None and fb is not None:
             pairs["field coverage"].append((fa, fb))
         if ca is not None and cb is not None:
-            pairs["citation completeness"].append((ca, cb))
+            pairs["claim support"].append((ca, cb))
     lines = [(name, vs) for name, vs in pairs.items() if vs]
     if not lines:
         return
-    print("\n(metrics present in both runs — pooled n/d, not a mean of rates)")
+    print("\n(metrics present in both runs)")
     for name, vs in lines:
-        na, da = sum(x[0] for x, _ in vs), sum(x[1] for x, _ in vs)
-        nb, db = sum(y[0] for _, y in vs), sum(y[1] for _, y in vs)
-        moved = "" if da == db else f"   DENOMINATOR MOVED {da} -> {db}"
-        print(f"  {name:22} {len(vs):>3} cases  {n_over_d(na, da):>9} -> "
-              f"{n_over_d(nb, db):>9}  {na / da:>6.1%} -> {nb / db:>6.1%}{moved}")
+        ma = sum(x for x, _ in vs) / len(vs)
+        mb = sum(y for _, y in vs) / len(vs)
+        print(f"  {name:16} {len(vs):>3} cases  {ma:>6.1%} -> {mb:>6.1%} "
+              f"{mb - ma:>+7.1%}")
 
 
 def record_path(label: str, prefix: str = "answers_baseline_") -> Path:
@@ -1763,22 +1372,8 @@ def main(argv=None):
     ap.add_argument("--scope-single-id", action="store_true",
                     help="A/B only, NOT production: doc-scope questions naming "
                          "exactly one FP, to measure what tag resolution buys")
-    ap.add_argument("--production-planner", action="store_true",
-                    help="run the app's deterministic comparison planner, evidence "
-                         "matrix, scoped-query and round-robin retrieval path; the "
-                         "LLM conductor fallback remains unavailable")
-    ap.add_argument("--verifier-mode", choices=("deterministic", "production"),
-                    default="deterministic",
-                    help="offline verify.verify_answer mode: deterministic adds no "
-                         "API calls (default); production enables LLM adjudication")
-    ap.add_argument("--verifier-repair", action="store_true",
-                    help="opt in to the verifier repair pass; this can add an API "
-                         "call independently of --verifier-mode")
     ap.add_argument("--verbose", "-v", action="store_true")
     args = ap.parse_args(argv)
-
-    if args.raw_retrieval and args.production_planner:
-        ap.error("--raw-retrieval and --production-planner are mutually exclusive")
 
     if args.compare:
         run_compare(*args.compare)

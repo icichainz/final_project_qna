@@ -27,13 +27,23 @@ What is only approximately recoverable
       held whenever the page has more than one chunk.  Every evidence entry
       carries `fidelity: "exact" | "page-superset"` and `chunks_on_page`, and
       every claim carries `evidence_fidelity`.  A superset can only make
-      evidence look MORE complete than it was: "term absent from the
-      reconstruction" is therefore sound, "term present" is an upper bound.
+      evidence look MORE complete than it was, so "term present" is an upper
+      bound on what the prompt held.
 
-The presence probe is a plain literal / normalized-amount search written out
-in this file.  It calls no model, and it deliberately does not reuse the
-verifier's disputed matchers: it reports WHERE a term occurs, and leaves the
-label to the human.
+The presence probe is a literal / hyphen-tolerant / separator-agnostic search
+written out in this file.  It calls no model, and it deliberately does not
+reuse the verifier's disputed matchers: it reports WHERE a term occurs and
+WHAT SPELLING the page uses, and leaves the label to the human.
+
+The probe's own result is never used to rule a label out.  An earlier version
+excluded `missing_citation` whenever a term was absent, on the (sound)
+superset argument that "absent from the reconstruction" implies "absent at run
+time".  The argument was sound and the probe was not: the corpus prints a
+comma decimal mark ('USD 49,312 million') where the answers print a period, so
+every one of release-1's five absent amounts was a false absence and three
+uncited claims had their correct label struck off.  Exclusions are now
+structural only; probe results are reported, and every held page shows the
+reviewer its text.
 """
 
 from __future__ import annotations
@@ -256,6 +266,92 @@ def normalize(text: str) -> str:
     return display(text).lower()
 
 
+def loose(text: str) -> str:
+    """:func:`normalize` text with hyphens read as spaces.
+
+    'the relevant Board-meeting figures' and 'date of GCF's board meeting' are
+    the same phrase to a reader, and release-1 has a claim whose *only* probed
+    term is absent for exactly that reason.  The substitution is one character
+    for one character, so a match offset found here still indexes the
+    :func:`display` string at the same position — no offset mapping.
+    """
+    return normalize(text).replace("-", " ")
+
+
+#: one printed figure: digit runs joined by '.' or ','  ('49,312', '6,876,446.27').
+#: A space between digits is deliberately NOT a separator: the corpus prints
+#: 'Direct beneficiary sec. 5 155,000 direct beneficiaries' and 'total cost
+#: (USD) - 240.0 80.0 160.0', so reading a space as a grouping mark would fuse
+#: adjacent figures and DELETE them from the index — the same false-absence
+#: failure this probe exists to fix, in the opposite direction.
+_NUMBER_TOKEN_RE = re.compile(r"(?<![\d.,])\d+(?:[.,]\d+)*")
+
+
+def _digits_of(token: str) -> str:
+    return re.sub(r"\D", "", token)
+
+
+def figure_key(token: str) -> str:
+    """A printed figure with its separator characters made interchangeable.
+
+    '49,312' and '49.312' both become '49|312'; the GROUPING survives, only
+    the choice of mark is erased.  '4,931.2' stays '4|931|2' and therefore
+    does not collide, which digits-only comparison ('49312' for all three)
+    would not have caught.
+    """
+    return "|".join(re.split(r"[.,]", token))
+
+
+def number_index(normalized: str) -> dict[str, list[str]]:
+    """``{figure key: [spelling, ...]}`` for every figure in normalized text.
+
+    The spellings are what the page actually prints, so a row can show the
+    reviewer '49,312 million' beside the answer's '49.312 million' instead of
+    asserting one of them is absent.
+    """
+    index: dict[str, list[str]] = defaultdict(list)
+    for match in _NUMBER_TOKEN_RE.finditer(normalized):
+        token = match.group(0)
+        if len(_digits_of(token)) >= 3:
+            key = figure_key(token)
+            if token not in index[key]:
+                index[key].append(token)
+    return dict(index)
+
+
+def separator_agnostic_key(term: str) -> str:
+    """:func:`figure_key` of the first internally-separated figure, else ``''``.
+
+    THE BUG THIS EXISTS FOR: the corpus prints a comma where the answers print
+    a period — 'USD 49,312 million' against the answer's 'USD 49.312 million'.
+    A literal search misses it, and :func:`verify.amounts` misses it twice
+    over: 49,312 parses as a US thousands group whose printed scale word
+    contradicts it, so ``value`` is None and ``bare`` is 49312.0 against the
+    answer's 49312000.0 / 49.312.  Neither ``value`` nor ``mantissa`` nor the
+    literal fallback can see it, and every one of release-1's five "absent"
+    amounts was absent for this reason alone.
+
+    Reading the separators as interchangeable is the only reading true under
+    either convention.  It is deliberately a PRESENCE probe and never a value
+    claim: whether 49,312 and 49.312 are the same magnitude is precisely the
+    question the row now puts in front of the human, spelling included.
+
+    Only figures with an INTERNAL separator qualify.  'FP172', 'B.30' and
+    'p.45' have none, and probing the corpus for a bare '172' would report
+    presence from any page number that happened to be 172.
+    """
+    for match in _NUMBER_TOKEN_RE.finditer(normalize(term)):
+        token = match.group(0)
+        if re.search(r"\d[.,]\d", token) and len(_digits_of(token)) >= 3:
+            return figure_key(token)
+    return ""
+
+
+#: A match strong enough to rule a label out.  ``digits`` is not: it says the
+#: page prints the same digits, not that it prints the same figure.
+STRICT_MATCH_KINDS = frozenset({"literal", "hyphen-variant", "value", "mantissa"})
+
+
 def _amount_signature(amount: Any) -> tuple[Optional[float], float]:
     return (getattr(amount, "value", None), getattr(amount, "bare", 0.0))
 
@@ -267,6 +363,12 @@ def _amounts_agree(a: Any, b: Any) -> str:
     printed grains ('18.5 million' and '18,500,000' agree).  ``mantissa`` is
     the weaker fallback used when a printed scale word contradicts its own
     mantissa and ``value`` is therefore unknown.
+
+    Both sides come from :func:`verify.amounts`, which reads a comma as a
+    thousands separator.  Under the corpus's comma decimal mark that is wrong
+    by a factor of 1000 ('USD 1,066 million' parses as 1.066 billion), so
+    neither branch fires on a separator mismatch — see
+    :func:`separator_agnostic_key`, which is what covers that case.
     """
     av, ab = _amount_signature(a)
     bv, bb = _amount_signature(b)
@@ -386,79 +488,156 @@ def _citation_entries(
     return entries
 
 
+class EvidenceIndex:
+    """The three searchable views of one case's held evidence, built once.
+
+    ``norm`` is the literal-search index, ``loose`` reads hyphens as spaces,
+    and ``numbers`` maps a figure's digits to the spellings the page prints.
+    All three are keyed by evidence key and share :func:`display` offsets.
+    """
+
+    __slots__ = ("norm", "loose", "numbers", "amounts")
+
+    def __init__(self, entries: Iterable[dict[str, Any]]) -> None:
+        self.norm: dict[str, str] = {}
+        self.loose: dict[str, str] = {}
+        self.numbers: dict[str, dict[str, list[str]]] = {}
+        self.amounts: dict[str, list[Any]] = {}
+        for entry in entries:
+            key, text = entry["key"], entry["text"]
+            self.norm[key] = normalize(text)
+            self.loose[key] = loose(text)
+            self.numbers[key] = number_index(self.norm[key])
+            self.amounts[key] = verify.amounts(text)
+
+
+def _find_term(
+    term: str, index: EvidenceIndex
+) -> tuple[dict[str, set[str]], dict[str, list[str]]]:
+    """``({key: {match kind}}, {key: [spelling the page prints]})``."""
+    needle = normalize(term)
+    loose_needle = loose(term)
+    digits = separator_agnostic_key(term)
+    kinds: dict[str, set[str]] = {}
+    spellings: dict[str, list[str]] = {}
+
+    def hit(key: str, kind: str, spelling: str) -> None:
+        kinds.setdefault(key, set()).add(kind)
+        bucket = spellings.setdefault(key, [])
+        if spelling and spelling not in bucket:
+            bucket.append(spelling)
+
+    for key, text in index.norm.items():
+        if needle and needle in text:
+            hit(key, "literal", needle)
+        elif loose_needle and loose_needle in index.loose[key]:
+            at = index.loose[key].find(loose_needle)
+            hit(key, "hyphen-variant", text[at:at + len(loose_needle)])
+        if digits:
+            for spelling in index.numbers[key].get(digits, ()):
+                hit(key, "digits", spelling)
+    return kinds, spellings
+
+
 def _locate(
-    keys: Iterable[str], cited_keys: set[str], exact_keys: set[str]
+    kinds: dict[str, set[str]],
+    spellings: dict[str, list[str]],
+    cited_keys: set[str],
+    exact_keys: set[str],
 ) -> dict[str, Any]:
-    keys = sorted(dict.fromkeys(keys))
+    keys = sorted(kinds)
+    strict = [k for k in keys if kinds[k] & STRICT_MATCH_KINDS]
+    all_kinds = sorted({kind for found in kinds.values() for kind in found})
     return {
         "found_in_keys": keys,
         "found_in_cited_keys": sorted(k for k in keys if k in cited_keys),
         "found_in_exact_keys": sorted(k for k in keys if k in exact_keys),
+        # A strict hit is the term's own spelling, or the same figure by value.
+        # A 'digits'-only hit is the same digits punctuated differently, which
+        # may or may not be the same magnitude — reported, never relied on.
+        "found_in_strict_keys": strict,
+        "found_in_exact_strict_keys": sorted(k for k in strict if k in exact_keys),
+        "match_kinds": all_kinds,
+        "matches_by_key": {
+            key: {"kinds": sorted(kinds[key]), "spellings": spellings.get(key, [])}
+            for key in keys
+        },
         "present_in_held_evidence": bool(keys),
+        "separator_convention_differs": bool(keys) and all_kinds == ["digits"],
         # a page-superset key holds text the prompt may never have carried, so
-        # a hit there is an upper bound; a hit in an exact key is the real thing.
-        "presence_is_upper_bound": bool(keys) and not any(k in exact_keys for k in keys),
+        # a hit there is an upper bound; a STRICT hit in an exact key is the
+        # real thing.
+        "presence_is_upper_bound": bool(keys) and not any(
+            k in exact_keys for k in strict
+        ),
     }
 
 
 def _probe_term(
-    term: str,
-    evidence_norm: dict[str, str],
-    cited_keys: set[str],
-    exact_keys: set[str],
+    term: str, index: EvidenceIndex, cited_keys: set[str], exact_keys: set[str]
 ) -> dict[str, Any]:
-    needle = normalize(term)
-    found = [key for key, text in evidence_norm.items() if needle and needle in text]
-    return {"term": term, **_locate(found, cited_keys, exact_keys)}
+    kinds, spellings = _find_term(term, index)
+    return {"term": term, **_locate(kinds, spellings, cited_keys, exact_keys)}
 
 
 def _probe_amount(
-    amount: Any,
-    evidence_amounts: dict[str, list[Any]],
-    evidence_norm: dict[str, str],
-    cited_keys: set[str],
-    exact_keys: set[str],
+    amount: Any, index: EvidenceIndex, cited_keys: set[str], exact_keys: set[str]
 ) -> dict[str, Any]:
-    found: list[str] = []
-    match_kinds: set[str] = set()
-    for key, held in evidence_amounts.items():
+    kinds, spellings = _find_term(amount.raw, index)
+    for key, held in index.amounts.items():
         for candidate in held:
             agreement = _amounts_agree(amount, candidate)
             if agreement:
-                found.append(key)
-                match_kinds.add(agreement)
+                kinds.setdefault(key, set()).add(agreement)
+                bucket = spellings.setdefault(key, [])
+                spelling = normalize(candidate.raw)
+                if spelling and spelling not in bucket:
+                    bucket.append(spelling)
                 break
-    literal = [
-        key for key, text in evidence_norm.items() if normalize(amount.raw) in text
-    ]
-    keys = list(found) + list(literal)
     return {
         "term": amount.raw,
         "value": amount.value,
         "mantissa": amount.bare,
         "currency": amount.currency,
-        "match_kinds": sorted(match_kinds | ({"literal"} if literal else set())),
-        **_locate(keys, cited_keys, exact_keys),
+        **_locate(kinds, spellings, cited_keys, exact_keys),
     }
 
 
 EXCERPT_WINDOW = 240
 EXCERPT_MAX_WINDOWS = 3
+#: Every held key shows at least this much text, matched or not.  A row that
+#: shows the reviewer no evidence TEXT cannot separate missing_citation from
+#: missing_retrieval_evidence from verifier_false_positive, whatever else it
+#: carries — 70% of entries and 12 whole rows were blank before this.
+HEAD_EXCERPT_CHARS = 480
+#: A page the claim actually cites is the thing under review; show all of it.
+CITED_EXCERPT_CHARS = 6000
+#: A claim with nothing probeable has no matched windows to centre on, so its
+#: held pages get a larger head instead.
+PROBE_FREE_EXCERPT_CHARS = 1200
 
 
 def build_excerpt(
-    text: str, terms: Iterable[str], *, window: int = EXCERPT_WINDOW
+    text: str,
+    terms: Iterable[str],
+    *,
+    window: int = EXCERPT_WINDOW,
+    head: int = HEAD_EXCERPT_CHARS,
+    max_windows: int = EXCERPT_MAX_WINDOWS,
 ) -> str:
     """Match-centred excerpt of one evidence page, for a human to read.
 
-    Windows around the first literal occurrence of each matched term, joined
-    by an ellipsis; the head of the page when nothing matched literally.  The
-    full text stays in the sidecar's ``evidence`` block, digest and all.
+    Windows around the first occurrence of each matched spelling, joined by an
+    ellipsis; the head of the page when nothing matched.  Never empty and
+    never ``None``: a page shorter than ``head`` is returned whole.  The full
+    text stays in the sidecar's ``evidence`` block, digest and all.
     """
     shown = display(text)
+    if len(shown) <= head:
+        return shown
     index = shown.lower()
     if len(index) != len(shown):                 # a length-changing lowercase
-        return shown[: window * 2]
+        return shown[:head] + " …"
     spans: list[tuple[int, int]] = []
     for term in terms:
         needle = normalize(term)
@@ -468,10 +647,10 @@ def build_excerpt(
         if at < 0:
             continue
         spans.append((max(0, at - window), min(len(shown), at + len(needle) + window)))
-        if len(spans) >= EXCERPT_MAX_WINDOWS:
+        if len(spans) >= max_windows:
             break
     if not spans:
-        return shown[: window * 2]
+        return shown[:head] + " …"
     spans.sort()
     merged: list[list[int]] = []
     for start, end in spans:
@@ -495,27 +674,43 @@ _BOLD_ONLY_RE = re.compile(r"^\s*\*\*[^*]+\*\*[\s:.]*$")
 def _decision_inputs(
     claim: Any, terms: list[dict[str, Any]], cited: bool, fidelity: str
 ) -> dict[str, Any]:
-    """The mechanical facts that separate the labels, plus SOUND exclusions.
+    """The mechanical facts that separate the labels — reported, not decided.
 
-    Nothing here asserts a label.  It reports what the reconstructed evidence
-    *rules out*, because exclusion is the only direction that survives the
-    page-superset approximation:
+    Only STRUCTURAL exclusions are taken: facts about the claim and its own
+    brackets, which the reconstruction cannot get wrong.  A probe result never
+    rules a label out on its own any more.
 
-      * an absent term is sound — the reconstruction searched a superset of
-        what the prompt held, so "not there" was also "not there" at run time;
-      * a present term is an upper bound unless it was found in an ``exact``
-        key (a single-chunk page, or a note block recorded verbatim).
+    WHY, in full, because the previous version printed the opposite claim in
+    every row.  It excluded ``missing_citation`` whenever a probed term was
+    absent, arguing that the reconstruction searches a page SUPERSET of what
+    the prompt held, so "absent here" implies "absent at run time".  The
+    superset argument is sound.  The probe was not: the corpus prints
+    'USD 49,312 million' where the answer prints 'USD 49.312 million', and a
+    literal-plus-parsed-value probe cannot see through the separator in either
+    direction.  All five "absent" amounts in release-1 were false absences and
+    three uncited claims had their correct label — ``missing_citation`` —
+    struck off the list a reviewer was told to choose from.
 
-    So ``missing_citation`` is excluded on an absent term, and
-    ``missing_retrieval_evidence`` only on presence in exact evidence.
-    ``verifier_false_positive`` is never mechanically excludable and always
-    stays live.
+    The probe is separator-agnostic and hyphen-tolerant now (see
+    :func:`separator_agnostic_key` and :func:`loose`), but "this probe finds
+    every spelling of every term" is not a property this file can prove.  So
+    absence is REPORTED (``terms_absent_from_held_evidence``) and excludes
+    nothing, and the reviewer reads the excerpts.
+
+    The one surviving evidence-driven exclusion is
+    ``missing_retrieval_evidence``, and only on a STRICT match — the term's own
+    spelling, or the same figure by value or mantissa — inside evidence
+    recovered exactly (a single-chunk page or a verbatim note block).  A
+    ``digits``-only match is not strict: it says the page prints the same
+    digits, not the same figure.  ``verifier_false_positive`` is never
+    mechanically excludable and always stays live.
     """
     checkable = [t for t in terms if t.get("term")]
     present = [t for t in checkable if t["present_in_held_evidence"]]
     absent = [t for t in checkable if not t["present_in_held_evidence"]]
     upper_bound = [t for t in present if t["presence_is_upper_bound"]]
-    exact_present = [t for t in present if t["found_in_exact_keys"]]
+    exact_present = [t for t in present if t["found_in_exact_strict_keys"]]
+    variant_only = [t for t in present if t["separator_convention_differs"]]
     heading = bool(
         _HEADING_RE.match(claim.text) or _BOLD_ONLY_RE.match(claim.text)
     )
@@ -530,12 +725,6 @@ def _decision_inputs(
             "the claim carries its own citation "
             f"({len(claim.citations)} bracket(s))"
         )
-    elif absent:
-        excluded["missing_citation"] = (
-            "no citation could have supported it: "
-            f"{len(absent)} term(s) are absent from every piece of evidence "
-            "the turn held"
-        )
     if not checkable:
         excluded.setdefault(
             "missing_citation",
@@ -546,8 +735,8 @@ def _decision_inputs(
         )
     elif not absent and len(exact_present) == len(checkable):
         excluded["missing_retrieval_evidence"] = (
-            "every term is present in evidence recovered exactly "
-            "(single-chunk pages / verbatim note blocks)"
+            "every term is present, on its own spelling or by value, in "
+            "evidence recovered exactly (single-chunk pages / verbatim notes)"
         )
 
     return {
@@ -562,6 +751,8 @@ def _decision_inputs(
             t["found_in_cited_keys"] for t in checkable
         ),
         "n_terms_present_in_exact_evidence": len(exact_present),
+        "n_terms_matched_only_by_separator_variant": len(variant_only),
+        "terms_matched_only_by_separator_variant": [t["term"] for t in variant_only],
         "presence_is_upper_bound": bool(upper_bound),
         "looks_like_heading": heading,
         "is_lead_in_to_a_list": lead_in,
@@ -571,9 +762,15 @@ def _decision_inputs(
         "labels_excluded_by_evidence": dict(sorted(excluded.items())),
         "labels_remaining": [label for label in LABELS if label not in excluded],
         "note": (
-            "exclusions are sound over the reconstruction; remaining labels are "
-            "for the human to choose between. Presence is an upper bound wherever "
-            "presence_is_upper_bound is true."
+            "Exclusions here are STRUCTURAL (the claim's own bracket; nothing "
+            "citable in the sentence), plus missing_retrieval_evidence on a "
+            "strict match in exactly-recovered evidence. Probe results are "
+            "otherwise REPORTED, never used to rule a label out: an absent "
+            "term is only as good as the probe that looked for it. Presence "
+            "is an upper bound wherever presence_is_upper_bound is true, and "
+            "a term listed in terms_matched_only_by_separator_variant was "
+            "found by its digits alone — read the excerpt and the spelling "
+            "the page prints before treating it as the same figure."
         ),
     }
 
@@ -666,8 +863,7 @@ def reconstruct_case(
         }
         entries.append(entry)
 
-    evidence_norm = {e["key"]: normalize(e["text"]) for e in entries}
-    evidence_amounts = {e["key"]: verify.amounts(e["text"]) for e in entries}
+    search = EvidenceIndex(entries)
     hit_keys = set(hit_meta)
     exact_keys = {e["key"] for e in entries if e["fidelity"] == "exact"}
 
@@ -726,47 +922,66 @@ def reconstruct_case(
 
         terms: list[dict[str, Any]] = []
         for amount in claim.amounts:
-            probe = _probe_amount(
-                amount, evidence_amounts, evidence_norm, cited_keys, exact_keys
-            )
+            probe = _probe_amount(amount, search, cited_keys, exact_keys)
             probe["term_kind"] = "amount"
             terms.append(probe)
         for group in claim.entities:
             variants = [v for v in group if v]
-            found: list[str] = []
+            kinds: dict[str, set[str]] = {}
+            spellings: dict[str, list[str]] = {}
             for variant in variants:
-                found.extend(
-                    _probe_term(variant, evidence_norm, cited_keys, exact_keys)[
-                        "found_in_keys"
-                    ]
-                )
+                found_kinds, found_spellings = _find_term(variant, search)
+                for key, found in found_kinds.items():
+                    kinds.setdefault(key, set()).update(found)
+                for key, found in found_spellings.items():
+                    bucket = spellings.setdefault(key, [])
+                    bucket.extend(s for s in found if s not in bucket)
             terms.append(
                 {
                     "term": variants[0] if variants else "",
                     "term_kind": "entity",
                     "variants": variants,
-                    **_locate(found, cited_keys, exact_keys),
+                    **_locate(kinds, spellings, cited_keys, exact_keys),
                 }
             )
         reason_probe = []
         for target in reason_targets(failure.get("reason") or ""):
-            probe = _probe_term(
-                target["term"], evidence_norm, cited_keys, exact_keys
-            )
+            probe = _probe_term(target["term"], search, cited_keys, exact_keys)
             probe["source"] = target["source"]
             reason_probe.append(probe)
 
         # --- the evidence view a reviewer reads for THIS claim -------------
+        # Both sides of every match: what the CLAIM says, and what the PAGE
+        # prints.  Showing 'USD 49.312 million' matched by '49,312' is the
+        # whole point — the reviewer, not the probe, decides whether those
+        # are the same figure.
         matched_by_key: dict[str, list[str]] = defaultdict(list)
+        spelling_by_key: dict[str, list[str]] = defaultdict(list)
         for probe in terms + reason_probe:
-            for key in probe["found_in_keys"]:
+            for key, match in probe["matches_by_key"].items():
                 if probe["term"] not in matched_by_key[key]:
                     matched_by_key[key].append(probe["term"])
+                bucket = spelling_by_key[key]
+                bucket.extend(s for s in match["spellings"] if s not in bucket)
+        probe_free = not any(t.get("term") for t in terms)
         evidence_view = []
         for entry in entries:
             key = entry["key"]
             matched = matched_by_key.get(key, [])
+            spelled = spelling_by_key.get(key, [])
             is_cited = key in cited_keys
+            head = (
+                CITED_EXCERPT_CHARS if is_cited
+                else PROBE_FREE_EXCERPT_CHARS if probe_free
+                else HEAD_EXCERPT_CHARS
+            )
+            shown = display(entry["text"])
+            excerpt = build_excerpt(
+                entry["text"],
+                spelled + matched,
+                head=head,
+                max_windows=6 if is_cited else EXCERPT_MAX_WINDOWS,
+            )
             evidence_view.append(
                 {
                     "key": key,
@@ -780,11 +995,10 @@ def reconstruct_case(
                     "text_sha256": entry["text_sha256"],
                     "cited_by_claim": is_cited,
                     "matched_terms": matched,
-                    "excerpt": (
-                        build_excerpt(entry["text"], matched)
-                        if (matched or is_cited)
-                        else None
-                    ),
+                    "matched_spellings": spelled,
+                    "excerpt": excerpt,
+                    "excerpt_chars": len(excerpt),
+                    "excerpt_is_full_text": excerpt == shown,
                 }
             )
         evidence_view.sort(
@@ -954,6 +1168,26 @@ def build_sidecar(
         ),
         "claims_with_a_term_absent_from_held_evidence": sum(
             1 for i in inputs if i["n_terms_absent_from_held_evidence"]
+        ),
+        "claims_with_a_separator_variant_match": sum(
+            1 for i in inputs if i["n_terms_matched_only_by_separator_variant"]
+        ),
+        # N14: a row that shows no evidence TEXT cannot be labelled from the
+        # row alone, whatever else it carries. This must stay 0.
+        "claims_with_no_visible_evidence_text": sum(
+            1 for c in done
+            if not any(e["excerpt"] for e in c["evidence_view"])
+            and c["evidence_view"]
+        ),
+        "evidence_view_entries": sum(len(c["evidence_view"]) for c in done),
+        "evidence_view_entries_without_text": sum(
+            1 for c in done for e in c["evidence_view"] if not e["excerpt"]
+        ),
+        "evidence_view_chars_shown": sum(
+            e["excerpt_chars"] for c in done for e in c["evidence_view"]
+        ),
+        "evidence_view_chars_total": sum(
+            e["chars"] for c in done for e in c["evidence_view"]
         ),
         "claims_with_every_term_in_exact_evidence": sum(
             1 for i in inputs

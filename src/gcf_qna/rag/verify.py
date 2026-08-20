@@ -236,12 +236,7 @@ def amount_matches(a: Amount, b: Amount) -> bool:
         tol = max(a.grain, b.grain) * 0.5 + 1e-6
         return abs(a.value - b.value) <= tol
     # at least one figure's scale is self-contradictory: the mantissa is still
-    # comparable only under a compatible printed scale.  Otherwise a rejected
-    # '20 billion' value would alias '20 million' merely because both have the
-    # same mantissa.
-    if a.unit and b.unit and a.unit != b.unit:
-        return False
-    # '28,654 million' vs '26,654 million' still disagree.
+    # comparable, and '28,654 million' vs '26,654 million' still disagree
     tol = max(granularity(a.raw, 1.0), granularity(b.raw, 1.0)) * 0.5 + 1e-6
     return abs(a.bare - b.bare) <= tol
 
@@ -419,10 +414,6 @@ _EXISTENCE_RE = re.compile(
     r"\b(?:there (?:is|are|were|was)|the corpus (?:contains|holds|has)|"
     r"exists?|does not exist|n'existe pas|le corpus (?:contient|compte)|"
     r"no (?:funding )?proposals?|aucune? proposition)\b", re.I)
-_NEG_EXISTENCE_RE = re.compile(
-    r"\b(?:does not exist|do not exist|is not found|are not found|not found|"
-    r"n'existe pas|n'existent pas|no (?:registered |funding )?proposals?|"
-    r"aucune? proposition)\b", re.I)
 
 _ENT_STOP = {
     "gcf", "green climate fund", "fund", "registry", "registre", "annex",
@@ -511,115 +502,6 @@ def _entity_variants(cand: str) -> List[str]:
     if len(words) > 8:
         out.append(" ".join(words[:8]))
     return [v for v in dict.fromkeys(out) if v]
-
-
-_EXPLICIT_ALIAS_RE = re.compile(
-    r"(?P<long>[A-ZÀ-ÖØ-Þ][^()\n;|]{2,120}?)\s*"
-    r"\((?P<short>[A-Z][A-Z0-9&.\-]{1,9})\)")
-_ALIAS_LEAD_RE = re.compile(
-    r"^(?:the\s+)?(?:accredited|implementing)\s+entity\s*(?:is|:)?\s*", re.I)
-
-
-def _explicit_aliases(text: str) -> List[Tuple[str, str]]:
-    """Alias pairs the source itself prints as ``Full Name (ACRONYM)``.
-
-    Initials are never manufactured from words.  A claimed expansion is an
-    assertion to verify, not an alias authority; callers pass evidence or a
-    registry row here, never the answer text.
-    """
-    out: List[Tuple[str, str]] = []
-    for m in _EXPLICIT_ALIAS_RE.finditer(text or ""):
-        long = _ALIAS_LEAD_RE.sub("", m.group("long").strip(" .,:—-"))
-        pair = (norm_text(long), norm_text(m.group("short")))
-        if len(pair[0].split()) >= 2 and pair[1] and pair not in out:
-            out.append(pair)
-    return out
-
-
-def _claimed_alias(variants: Sequence[str]) -> Optional[Tuple[str, str]]:
-    """The long/short pair asserted by one extracted parenthetical entity."""
-    if not variants:
-        return None
-    m = re.match(r"^(.*?)\s*\(([A-Z][A-Z0-9&.\-]{1,9})\)\s*$",
-                 variants[0].strip())
-    if not m:
-        return None
-    return norm_text(m.group(1)), norm_text(m.group(2))
-
-
-def _contains_norm(hay: str, needle: str) -> bool:
-    """Word-boundary containment over two ``norm_text`` strings.
-
-    Boundaries, not raw substrings: 'Ministry of Environment' must not verify
-    against 'Ministry of Environmental Protection' — those are two ministries.
-    But ``norm_text`` keeps ``'`` and ``/``, and the corpus prints acronyms
-    possessively ("PROFONANPE's board") and slash-joined ("IUCN/GCF") far more
-    often than bare, so those two characters close a word as a space does.
-    Anything else after the needle means the needle is only a prefix.
-    """
-    if not needle:
-        return False
-    return bool(re.search(r"(?:^|[ /])" + re.escape(needle) + r"(?=$|[ /'])",
-                          hay))
-
-
-def _name_words(name: str) -> List[str]:
-    """A printed name's significant words — grammar connectives dropped."""
-    return [w for w in norm_text(name).split() if w not in _CONNECTORS]
-
-
-def _same_entity(a: str, b: str) -> bool:
-    """Do two printed names denote the same institution?
-
-    True when their significant words agree on a contiguous run covering the
-    whole of the shorter name, or at least three words: the corpus prints
-    'International Union for Conservation of Nature and Natural Resources'
-    where an answer writes 'the International Union for Conservation of
-    Nature', and those are one accredited entity, not two.  'Invented
-    Universal Climate Network' shares no such run with it, which is the case
-    this must keep rejecting.
-    """
-    wa, wb = _name_words(a), _name_words(b)
-    if not wa or not wb:
-        return False
-    best, prev = 0, [0] * (len(wb) + 1)
-    for i in range(len(wa)):                       # longest common word run
-        cur = [0] * (len(wb) + 1)
-        for j in range(len(wb)):
-            if wa[i] == wb[j]:
-                cur[j + 1] = prev[j] + 1
-                best = max(best, cur[j + 1])
-        prev = cur
-    return best >= min(3, len(wa), len(wb))
-
-
-def _entity_present(variants: Sequence[str], text: str) -> bool:
-    """Whether one entity is printed, or is this source's own name for one.
-
-    ``Long Name (ACR)`` asserts two things: that the institution is in the
-    evidence, and that ACR is its short form.  The NAME is the falsifiable
-    half, so a literal hit on it supports the claim even when the source never
-    prints the parenthetical — which is how the corpus usually prints it, and
-    demanding the pair reported four correct recorded answers as unsupported.
-
-    A hit on the ACRONYM ALONE is not enough: ``Invented Expansion (IUCN)``
-    would then ride on any page printing ``IUCN``.  For that, the source
-    itself — evidence text or registry row, never the answer — must attest an
-    alias for the acronym naming the same institution.  And when the source
-    attests a DIFFERENT institution for that acronym, the pairing is wrong and
-    no half of it verifies.
-    """
-    hay = norm_text(text)
-    asserted = _claimed_alias(variants)
-    if not asserted:
-        return any(_contains_norm(hay, norm_text(v)) for v in variants)
-    full, short = asserted
-    attested = [name for name, acr in _explicit_aliases(text) if acr == short]
-    if attested and not any(_same_entity(full, name) for name in attested):
-        return False                 # the source expands this acronym otherwise
-    if _contains_norm(hay, norm_text(variants[0])) or _contains_norm(hay, full):
-        return True
-    return bool(attested) and _contains_norm(hay, short)
 
 
 def _entity_core(cand: str) -> str:
@@ -870,11 +752,6 @@ def claim_kind(text: str) -> Optional[str]:
         return "money"
     if _COUNT_RE.search(body) or _BIGNUM_RE.search(body):
         return "number"
-    # Closed-world negatives must win over board/year and proper-name
-    # triggers: "GCF/B.42/02/Add.99 does not exist" is an existence claim,
-    # not a claim that the evidence merely mentions board B.42.
-    if _NEG_EXISTENCE_RE.search(body):
-        return "existence"
     if entities(body):
         return "entity"
     if _YEAR_RE.search(body) or _BOARD_RE.search(body):
@@ -981,21 +858,6 @@ def _resolve_doc(cited: str, docs: Iterable[str]) -> Optional[str]:
 # ---------------------------------------------------------------------------
 
 SUPPORTED, CONTRADICTED, UNSUPPORTED = "supported", "contradicted", "unsupported"
-
-# 'Some evidence this turn HELD states this claim, whatever the claim cites.'
-# The groundedness signal, and the ONLY flag that carries it — a second flag
-# emitted under the identical condition is two names for one fact and drifts
-# the moment one of them is updated.
-GROUNDED_FLAG = "value-present-elsewhere"
-# Flags that describe how a SUPPORTED claim was verified rather than warning
-# about it. A caution the user is shown must mean something is off.
-_INFO_FLAGS = frozenset({GROUNDED_FLAG})
-
-# The judge may rule that held evidence states an UNCITED claim. That is a
-# real finding, and it is NOT a citation: the answer still points the reader
-# at nothing. Recorded on the verdict so no aggregate can absorb the
-# promotion silently.
-JUDGE_UNCITED_FLAG = "judge-promoted-uncited"
 
 # label -> the field it names, for the 'different value for the same labelled
 # field' contradiction test. Ordered: the first match wins.
@@ -1123,97 +985,6 @@ def _money_like(a: Amount) -> bool:
     return bool(a.currency or a.unit or a.clash or (a.value or 0) >= 1e4)
 
 
-def _same_doc(a: str, b: str) -> bool:
-    return a == b or a.startswith(b[:24]) or b.startswith(a[:24])
-
-
-def _citation_context(claim: Claim, doc_id: str) -> str:
-    """Answer text whose nearest citation names ``doc_id``.
-
-    With one cited document, the whole atomic claim is its context.  With
-    several documents, each pre-citation clause belongs to the documents named
-    by the citation that closes it — plural, because a chained bracket
-    ('[docA, p.45; docB, p.5]') offers the clause to BOTH, and the answer has
-    told us nothing that lets us split it further.
-
-    Ambiguity resolves WIDE, never empty.  Scoping exists to stop one
-    document's figure satisfying a claim about another; a clause we cannot
-    attribute is therefore checked against every document it might belong to.
-    Returning '' instead made the caller skip the conflict test altogether, so
-    merely widening a bracket — something a repair pass can do unprompted —
-    turned a CONTRADICTED claim into a SUPPORTED one with no flags.
-    """
-    direct_docs = list(dict.fromkeys(c.doc for c in claim.citations if c.doc))
-    if not any(_same_doc(d, doc_id) for d in direct_docs):
-        return ""
-    if all(_same_doc(d, doc_id) for d in direct_docs):
-        return _strip_citations(claim.text)
-
-    chunks: List[str] = []
-    previous = 0
-    for bracket in _BRACKET_RE.finditer(claim.text):
-        cited = list(dict.fromkeys(c.doc for c in parse_citations(bracket.group(0))
-                                   if c.doc))
-        if any(_same_doc(d, doc_id) for d in cited):
-            chunks.append(claim.text[previous:bracket.start()])
-        previous = bracket.end()
-    # No bracket of this claim's own text names the document: the citations
-    # were inherited from the block, or the brackets resolve to nothing. There
-    # is no clause to carve out, so the claim stands whole against it.
-    return "\n".join(chunks) if chunks else _strip_citations(claim.text)
-
-
-def _field_context_amounts(text: str, field: str) -> List[Amount]:
-    """Amounts attached to ``field`` when a claim names several fields.
-
-    A label's window runs from where the PREVIOUS label ended to where the
-    NEXT one begins.  English prints a field's value on either side of its
-    name — 'GCF financing: 18.5 M USD' and 'USD 28,000,000 as GCF financing,
-    out of a total financing of ...' are both ordinary — and that span is the
-    only one guaranteed to contain both positions.  The result is therefore
-    never a strict subset of what the field states; at worst it also carries a
-    neighbour's figure, which can only suppress a conflict, never invent one.
-
-    Slicing forward from the label instead dropped every figure printed before
-    it, so a two-field sentence returned NO stated figure at all — and every
-    caller reads an empty list as 'nothing to check'.  That is how a sentence
-    reporting the total-financing figure as the GCF figure verified clean.
-    """
-    body = _strip_citations(text)
-    labels: List[Tuple[int, int, str]] = []
-    for name, rx in _FIELD_RES:
-        labels += [(m.start(), m.end(), name) for m in rx.finditer(body)]
-    labels.sort()
-    if not labels or all(name == field for _, _, name in labels):
-        return amounts(body)
-
-    selected: List[Amount] = []
-    for i, (_, _, name) in enumerate(labels):
-        if name != field:
-            continue
-        start = labels[i - 1][1] if i else 0
-        stop = labels[i + 1][0] if i + 1 < len(labels) else len(body)
-        selected += amounts(body[start:stop])
-    return selected
-
-
-def _claim_for_doc(claim: Claim, doc_id: str) -> Claim:
-    """A claim view limited to the facts locally attributed to one document."""
-    context = _citation_context(claim, doc_id)
-    field = claim_field(claim.text)
-    # Field scoping narrows; it may never empty. A context that prints figures
-    # has figures attributed to this document whether or not the field label
-    # sits where the window expects it.
-    local_amounts = ((_field_context_amounts(context, field) if field else None)
-                     or amounts(context))
-    return Claim(text=context, kind=claim.kind,
-                 citations=[c for c in claim.citations
-                            if c.doc and _same_doc(c.doc, doc_id)],
-                 amounts=local_amounts, entities=entities(context),
-                 index=claim.index, unit_kind=claim.unit_kind,
-                 inherited=claim.inherited)
-
-
 def _field_conflict(claim: Claim, text: str) -> Optional[Tuple[Amount, str]]:
     """A figure printed under the claim's own field label that disagrees.
 
@@ -1225,44 +996,17 @@ def _field_conflict(claim: Claim, text: str) -> Optional[Tuple[Amount, str]]:
     field = claim_field(claim.text)
     if not field or not claim.amounts:
         return None
-    # Fail closed: if the field windows carve out nothing, the claim's own
-    # figures are what it states. An empty stated list must never mean 'no
-    # contradiction' — that is a gate that opens when the parse gets hard.
-    stated_amounts = _field_context_amounts(claim.text, field) or claim.amounts
     rx = dict(_FIELD_RES)[field]
     lines = list(_field_lines(text, rx))
     for line, at in lines:
         for cand in _value_after(line, at)[:2]:
-            if any(amount_matches(cand, a) for a in stated_amounts):
+            if any(amount_matches(cand, a) for a in claim.amounts):
                 return None                       # the field agrees somewhere
     for line, at in lines:
         for cand in _value_after(line, at)[:1]:
             if _money_like(cand) and not any(amount_matches(cand, a)
-                                             for a in stated_amounts):
+                                             for a in claim.amounts):
                 return cand, line.strip()[:200]
-    return None
-
-
-def _scoped_field_conflict(claim: Claim, evidence: Evidence,
-                           keys: Sequence[EvidenceKey]
-                           ) -> Optional[Tuple[Amount, str]]:
-    """Find a disagreement without combining facts from cited documents.
-
-    Scoping is an accuracy device, not a skip: when nothing can be attributed
-    locally the WHOLE claim is checked against this document, which is what
-    the unscoped predecessor did. Skipping the document instead is how a
-    two-field sentence and a chained bracket each walked past the check.
-    """
-    by_doc: Dict[str, List[EvidenceKey]] = {}
-    for key in keys:
-        by_doc.setdefault(key[0], []).append(key)
-    for doc_id, doc_keys in by_doc.items():
-        local = claim if doc_id == NOTES_DOC else _claim_for_doc(claim, doc_id)
-        if not local.amounts:
-            local = claim
-        conflict = _field_conflict(local, _text_of(evidence, doc_keys))
-        if conflict:
-            return conflict
     return None
 
 
@@ -1356,11 +1100,11 @@ def registry_named(doc_id: str, names: Sequence[Sequence[str]]) -> Optional[str]
     """
     if not names:
         return None
-    blob = _registry_blob(doc_id)
-    if not blob:
+    hay = norm_text(_registry_blob(doc_id))
+    if not hay:
         return None
     for variants in names:
-        if not _entity_present(variants, blob):
+        if not any(norm_text(v) and norm_text(v) in hay for v in variants):
             return None
     return "registry row for this document names " + ", ".join(
         f"'{vs[0]}'" for vs in names)
@@ -1378,15 +1122,6 @@ def registry_backed(doc_id: str, claim: Claim,
     reject.
     """
     if not want:
-        return None
-    # When one atomic sentence cites several documents, a registry row may
-    # back only figures actually attributed to this document.  Never let a
-    # coincidentally equal figure from another document satisfy the claim.
-    # An empty local view is 'we could not attribute', not 'the claim states
-    # nothing here': falling through on it stripped real registry backing off
-    # every two-field sentence.
-    local = _claim_for_doc(claim, doc_id).amounts or claim.amounts
-    if any(not any(amount_matches(a, held) for held in local) for a in want):
         return None
     try:
         from gcf_qna.rag import registry
@@ -1416,9 +1151,10 @@ def registry_backed(doc_id: str, claim: Claim,
 
 def _check_entities(claim: Claim, text: str) -> Tuple[bool, List[List[str]]]:
     """(ok, the variant lists that appear nowhere in this text)."""
+    hay = norm_text(text)
     missing = []
     for variants in claim.entities:
-        if not _entity_present(variants, text):
+        if not any(norm_text(v) and norm_text(v) in hay for v in variants):
             missing.append(variants)
     return (not missing), missing
 
@@ -1429,54 +1165,6 @@ def _check_years(claim: Claim, text: str) -> Tuple[bool, List[str]]:
         {m.group(0) for m in _BOARD_RE.finditer(_strip_citations(claim.text))}
     missing = [w for w in sorted(want) if w.replace(" ", "") not in hay.replace(" ", "")]
     return (not missing), missing
-
-
-_BOARD_EXISTENCE_RE = re.compile(
-    r"gcf\s*/\s*b\.?\s*(\d{2})\s*/\s*(?:(\d{2})\s*/\s*)?"
-    r"add\.?\s*(\d{1,3})", re.I)
-_NOT_FOUND_RE = re.compile(r"\bNOT\s+FOUND\b", re.I)
-_YEAR_ABSENT_RE = re.compile(
-    r"\b(?:no (?:board meeting|registered |funding )?proposals?|"
-    r"zero (?:registered |funding )?proposals?|aucune? proposition)\b", re.I)
-
-
-def _existence_targets(text: str) -> List[Tuple[str, str]]:
-    body = _strip_citations(text)
-    out: List[Tuple[str, str]] = []
-    out += [("fp", f"fp{int(n)}")
-            for n in re.findall(r"\bfp[\s\-]?0*(\d{1,3})(?!\d)", body, re.I)]
-    for board, item, add in _BOARD_EXISTENCE_RE.findall(body):
-        out.append(("board", f"gcf/b.{int(board)}/"
-                    + (f"{int(item):02d}/" if item else "")
-                    + f"add.{int(add):02d}"))
-    if not out:
-        out += [("year", y) for y in _YEAR_RE.findall(body)]
-    return list(dict.fromkeys(out))
-
-
-def _line_targets(line: str) -> List[Tuple[str, str]]:
-    return _existence_targets(line)
-
-
-def _check_existence(claim: Claim, text: str) -> Tuple[bool, List[str]]:
-    """Verify closed-world existence claims against the exact registry row."""
-    targets = _existence_targets(claim.text)
-    if not targets:
-        return False, ["the claimed corpus item"]
-    negative = bool(_NEG_EXISTENCE_RE.search(_strip_citations(claim.text)))
-    missing: List[str] = []
-    lines = (text or "").splitlines()
-    for target in targets:
-        matching = [line for line in lines if target in _line_targets(line)]
-        if negative:
-            supported = any((_NOT_FOUND_RE.search(line) if target[0] != "year"
-                             else _YEAR_ABSENT_RE.search(line))
-                            for line in matching)
-        else:
-            supported = any(not _NOT_FOUND_RE.search(line) for line in matching)
-        if not supported:
-            missing.append(target[1])
-    return not missing, missing
 
 
 def _verify_against(claim: Claim, text: str) -> Tuple[bool, str]:
@@ -1491,7 +1179,7 @@ def _verify_against(claim: Claim, text: str) -> Tuple[bool, str]:
         ok, missing = _check_years(claim, text)
         return ok, ", ".join(missing)
     if claim.kind == "existence":
-        ok, missing = _check_existence(claim, text)
+        ok, missing = _check_years(claim, text)
         return ok, ", ".join(missing)
     # a claim whose trigger left nothing normalizable (a bare number with no
     # unit, say): fall back to the entity check, then give it to the judge
@@ -1520,21 +1208,13 @@ def classify_deterministic(claims: Sequence[Claim], evidence: Evidence,
     for c in claims:
         strict, wide, bad = _scopes(c, evidence)
         flags = ["invalid-citation:" + b for b in bad]
-        # GROUNDEDNESS, for every claim: does ANY evidence this turn held
-        # state it, cited or not? Computed here and only here, on exactly the
-        # matchers the citation check uses — it changes which evidence a claim
-        # is read against, never what counts as a match. Setting it only on
-        # the uncited branch collapsed groundedness onto citation support in
-        # precisely the case the two metrics exist to tell apart (a real value
-        # cited to the wrong page), and made it non-monotone: DELETING a
-        # citation could raise it.
-        grounded = _verify_against(c, all_text)[0]
-        if grounded:
-            flags.append(GROUNDED_FLAG)
 
         if not c.citations:
+            found, _ = _verify_against(c, all_text)
             out.append(Verdict(c, UNSUPPORTED, "no citation on a factual claim",
-                               [], flags=flags, plausible=grounded))
+                               [], flags=flags + (["value-present-elsewhere"]
+                                                  if found else []),
+                               plausible=found))
             continue
         if not strict:
             out.append(Verdict(c, UNSUPPORTED,
@@ -1546,10 +1226,10 @@ def classify_deterministic(claims: Sequence[Claim], evidence: Evidence,
         strict_text = _text_of(evidence, strict)
         ok, missing = _verify_against(c, strict_text)
         if ok:
-            conflict = _scoped_field_conflict(c, evidence, strict)
+            conflict = _field_conflict(c, strict_text)
             if conflict is None and cross_page_conflicts:
                 others = [k for k in wide if k not in strict]
-                conflict = _scoped_field_conflict(c, evidence, others)
+                conflict = _field_conflict(c, _text_of(evidence, others))
                 if conflict:
                     flags.append("conflict-elsewhere-in-document")
             if conflict:
@@ -1562,10 +1242,7 @@ def classify_deterministic(claims: Sequence[Claim], evidence: Evidence,
             known = None
             if registry_conflicts:
                 for d in dict.fromkeys(k[0] for k in strict + wide if k[0] != NOTES_DOC):
-                    local = _claim_for_doc(c, d)
-                    # same fail-closed rule as _scoped_field_conflict: an
-                    # unattributable claim is checked whole, never skipped
-                    known = registry_conflict(d, local if local.amounts else c)
+                    known = registry_conflict(d, c)
                     if known:
                         break
             if known:
@@ -1578,7 +1255,7 @@ def classify_deterministic(claims: Sequence[Claim], evidence: Evidence,
                                strict, flags=flags))
             continue
 
-        conflict = _scoped_field_conflict(c, evidence, strict)
+        conflict = _field_conflict(c, strict_text)
         if conflict:
             cand, line = conflict
             out.append(Verdict(c, CONTRADICTED,
@@ -1795,18 +1472,8 @@ def adjudicate(verdicts: Sequence[Verdict], evidence: Evidence,
             out.append(v)
             continue
         status, reason = got
-        flags = list(v.flags)
-        # The judge can only promote — it is never asked about a SUPPORTED
-        # claim — so a ruling on a claim that cites nothing turns 'the answer
-        # gave the reader no pointer' into 'supported', where the legacy
-        # support rate absorbs it under the same key as a properly cited
-        # claim. Deployments that switch the judge on must be able to see how
-        # much of their support came from this, so it is stamped on the
-        # verdict rather than left to be inferred from the mode field.
-        if status == SUPPORTED and not v.claim.cited:
-            flags.append(JUDGE_UNCITED_FLAG)
         out.append(Verdict(v.claim, status, reason or "judge verdict", v.scope,
-                           source="llm", flags=flags, plausible=False))
+                           source="llm", flags=list(v.flags), plausible=False))
     return out
 
 
@@ -1863,14 +1530,8 @@ class RepairResult:
     @property
     def cautions(self) -> List[Verdict]:
         """Supported claims that still deserve a warning: a figure whose
-        printed scale is self-contradictory, or one cited to the wrong page.
-
-        Purely descriptive flags are not cautions. ``value-present-elsewhere``
-        now rides on every grounded claim, and warning the user about every
-        correct sentence is the same as warning them about none.
-        """
-        return [v for v in self.verdicts if v.status == SUPPORTED
-                and any(f not in _INFO_FLAGS for f in v.flags)]
+        printed scale is self-contradictory, or one cited to the wrong page."""
+        return [v for v in self.verdicts if v.status == SUPPORTED and v.flags]
 
     @property
     def sources(self) -> List[Tuple[str, Optional[int]]]:

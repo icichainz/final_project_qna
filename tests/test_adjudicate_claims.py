@@ -27,8 +27,13 @@ import adjudicate_claims as ac  # noqa: E402
 import backfill_release_evidence as bf  # noqa: E402
 
 RELEASE = ROOT / "data" / "eval" / "release_release-1.jsonl"
-SIDECAR = ROOT / "data" / "eval" / "release_release-1-evidence.jsonl"
 CHUNKS = ROOT / "data" / "index" / "default" / "chunks.jsonl"
+
+#: The release-1 case and claim that established finding N3: the corpus prints
+#: 'USD 49,312 million' where the answer prints 'USD 49.312 million'.
+N3_CASE = "bc-b30-03-add04"
+N3_CLAIM = "claim-ce3be1a81f0ac4568cbbbab4"
+N3_PAGE_KEY = "103_gcf-b30-03-add04|140"
 
 # The release run and the index are large, gitignored-by-default artifacts:
 # a clean checkout has neither, and a test that errors there is finding 26 all
@@ -36,14 +41,26 @@ CHUNKS = ROOT / "data" / "index" / "default" / "chunks.jsonl"
 needs_release = pytest.mark.skipif(
     not RELEASE.exists(), reason="recorded release run not present in this checkout"
 )
-needs_sidecar = pytest.mark.skipif(
-    not (RELEASE.exists() and SIDECAR.exists()),
-    reason="evidence sidecar not built; run scripts/backfill_release_evidence.py",
-)
 needs_index = pytest.mark.skipif(
     not (RELEASE.exists() and CHUNKS.exists()),
     reason="chunk index not present in this checkout",
 )
+
+
+@pytest.fixture(scope="session")
+def real_sidecar(tmp_path_factory):
+    """The sidecar for the real release, REBUILT from the release and the index.
+
+    Deliberately not the committed ``release_release-1-evidence.jsonl``: a
+    checked-in sidecar is a snapshot of whatever the backfill did when someone
+    last ran it, so asserting against it tests the artifact and not the code —
+    exactly the staleness N20 flags on the sidecar's own provenance stamp.
+    """
+    if not (RELEASE.exists() and CHUNKS.exists()):
+        pytest.skip("release run or chunk index not present in this checkout")
+    rows, _ = bf.build_sidecar(RELEASE, CHUNKS)
+    path = tmp_path_factory.mktemp("sidecar") / "evidence.jsonl"
+    return _write_jsonl(path, rows)
 
 
 # ---------------------------------------------------------------------------
@@ -153,10 +170,9 @@ def _complete(inventory):
 # ---------------------------------------------------------------------------
 
 
-@needs_sidecar
-def test_export_carries_hits_evidence_keys_and_registry_notes():
+def test_export_carries_hits_evidence_keys_and_registry_notes(real_sidecar):
     """The three fields finding 6 names as dropped, on every real row."""
-    inventory = ac.build_inventory(RELEASE, SIDECAR)
+    inventory = ac.build_inventory(RELEASE, real_sidecar)
 
     assert len(inventory) == len({row["claim_id"] for row in inventory})
     assert all(row["evidence_keys"] for row in inventory)
@@ -174,9 +190,8 @@ def test_export_carries_hits_evidence_keys_and_registry_notes():
     )
 
 
-@needs_sidecar
-def test_export_row_is_self_sufficient_for_a_human_label():
-    inventory = ac.build_inventory(RELEASE, SIDECAR)
+def test_export_row_is_self_sufficient_for_a_human_label(real_sidecar):
+    inventory = ac.build_inventory(RELEASE, real_sidecar)
 
     for row in inventory:
         assert row["evidence_status"] == "reconstructed"
@@ -193,34 +208,112 @@ def test_export_row_is_self_sufficient_for_a_human_label():
         assert row["source_status"] and row["source_reason"]
 
 
-@needs_sidecar
-def test_no_citation_claims_distinguish_the_three_candidate_labels():
-    """Finding 6's undecidable set is decidable from the row alone.
+# ---------------------------------------------------------------------------
+# N14 — the row must show the reviewer the evidence TEXT, not just its keys
+# ---------------------------------------------------------------------------
 
-    For every uncited claim the reconstruction must rule something out, and
-    across the set all three shapes must occur: 'the evidence held it, the
-    sentence just did not cite it' (missing_retrieval_evidence excluded),
-    'nothing held it' (missing_citation excluded), and 'there is nothing to
-    cite or retrieve' (both excluded, leaving verifier_false_positive).
+
+def test_every_real_row_shows_the_reviewer_evidence_text(real_sidecar):
+    """No row, and no held page inside a row, may be text-free.
+
+    The dimension: a page that matched NOTHING and is cited by nothing. The
+    previous policy emitted an excerpt only when a probe matched or the page
+    was cited, which left 601 of 853 entries and 12 whole rows blank —
+    precisely the rows whose labels turn on what the pages do not say.
     """
-    inventory = ac.build_inventory(RELEASE, SIDECAR)
+    inventory = ac.build_inventory(RELEASE, real_sidecar)
+
+    blank_entries = [
+        (row["claim_id"], entry["key"])
+        for row in inventory
+        for entry in row["evidence"]
+        if not entry["excerpt"]
+    ]
+    assert blank_entries == []
+
+    blank_rows = [
+        row["claim_id"] for row in inventory
+        if not any(entry["excerpt"] for entry in row["evidence"])
+    ]
+    assert blank_rows == []
+    assert all(ac.visible_evidence_chars(row) > 0 for row in inventory)
+
+    # and the unmatched, uncited pages — the ones that used to be null — are
+    # the majority of what is now visible, not a rounding error
+    unmatched = [
+        entry
+        for row in inventory
+        for entry in row["evidence"]
+        if not entry["matched_terms"] and not entry["cited_by_claim"]
+    ]
+    assert len(unmatched) > 300
+    assert all(entry["excerpt_chars"] > 0 for entry in unmatched)
+
+
+def test_no_citation_claims_carry_the_evidence_that_separates_their_labels(
+    real_sidecar,
+):
+    """Finding 6's undecidable set: 24 uncited claims, every one with text.
+
+    The labels turn on what the held pages say, so each such row must show the
+    pages, name which of them the probe matched, and leave
+    ``verifier_false_positive`` live. What it must NOT do is rule a label out
+    on the strength of the probe (N3) — the only exclusions permitted here are
+    structural.
+    """
+    inventory = ac.build_inventory(RELEASE, real_sidecar)
     uncited = [row for row in inventory if row["decision_inputs"]["cited"] is False]
 
     assert len(uncited) >= 20, "the release's uncited failures should dominate"
-    shapes = {
-        frozenset(row["decision_inputs"]["labels_excluded_by_evidence"])
-        for row in uncited
-    }
-    assert frozenset({"missing_retrieval_evidence"}) in shapes
-    assert frozenset({"missing_citation"}) in shapes
-    assert frozenset({"missing_citation", "missing_retrieval_evidence"}) in shapes
-    undecidable = [
-        row for row in uncited
-        if not row["decision_inputs"]["labels_excluded_by_evidence"]
-    ]
-    assert len(undecidable) <= 2, [row["claim_id"] for row in undecidable]
     for row in uncited:
-        assert "verifier_false_positive" in row["decision_inputs"]["labels_remaining"]
+        inputs = row["decision_inputs"]
+        # missing_citation may only be excluded structurally: the claim has
+        # nothing citable in it. Never because a probe failed to find a term.
+        reason = inputs["labels_excluded_by_evidence"].get("missing_citation")
+        if reason is not None:
+            assert inputs["n_terms"] == 0, (row["claim_id"], reason)
+            assert "no citation could have supported" not in reason
+        assert "verifier_false_positive" in inputs["labels_remaining"]
+
+    text_free = [
+        row["claim_id"] for row in uncited
+        if not any(entry["excerpt"] for entry in row["evidence"])
+    ]
+    assert text_free == []
+    assert all(ac.visible_evidence_chars(row) > 0 for row in uncited)
+
+
+@needs_index
+def test_the_recorded_n3_claim_is_labellable_from_its_own_row(real_sidecar):
+    """The row that made a reviewer land on the wrong label.
+
+    ``bc-b30-03-add04`` answers 'USD 49.312 million'; page 140 of the cited
+    document prints 'USD 49,312 million'. Before the fix the probe reported
+    the figure ABSENT, ruled ``missing_citation`` — the correct label — off
+    the list, and showed no excerpt at all, so nothing in the row could
+    contradict it.
+    """
+    inventory = ac.build_inventory(RELEASE, real_sidecar)
+    (row,) = [r for r in inventory if r["claim_id"] == N3_CLAIM]
+    assert row["case_id"] == N3_CASE
+    assert "49.312" in row["claim_text_full"]
+
+    inputs = row["decision_inputs"]
+    (amount,) = [t for t in row["term_probe"] if t["term_kind"] == "amount"]
+    assert amount["present_in_held_evidence"] is True
+    assert amount["match_kinds"] == ["digits"]
+    assert amount["found_in_keys"] == [N3_PAGE_KEY]
+    assert amount["matches_by_key"][N3_PAGE_KEY]["spellings"] == ["49,312"]
+
+    assert inputs["terms_absent_from_held_evidence"] == []
+    assert inputs["terms_matched_only_by_separator_variant"] == [amount["term"]]
+    assert "missing_citation" in inputs["labels_remaining"]
+    assert "missing_citation" not in inputs["labels_excluded_by_evidence"]
+
+    # and the reviewer can see the corpus's own spelling to judge it
+    (page,) = [e for e in row["evidence"] if e["key"] == N3_PAGE_KEY]
+    assert "49,312" in page["excerpt"]
+    assert page["matched_spellings"] == ["49,312"]
 
 
 def test_export_refuses_rows_without_evidence_but_allows_an_explicit_dump(tmp_path):
@@ -634,7 +727,15 @@ def test_a_multi_chunk_page_is_marked_a_superset_and_never_excludes_retrieval(
     )
 
 
-def test_an_absent_term_excludes_missing_citation(tmp_path):
+def test_an_absent_term_is_reported_but_rules_out_nothing(tmp_path):
+    """N3: absence is a signal about the PROBE, not a fact about the evidence.
+
+    The old rule ("a term the probe cannot find could not have been cited, so
+    ``missing_citation`` is impossible") is only as good as the probe, and the
+    probe was wrong about every amount in release-1. Absence must therefore be
+    reported and exclude nothing, in BOTH directions: an absent term leaves
+    every label live, and a present term does too.
+    """
     claim = "The programme is run by Freedonia."
     release = _write_jsonl(
         tmp_path / "release.jsonl", [_release_row("case-a", _failure(claim))]
@@ -647,11 +748,12 @@ def test_an_absent_term_excludes_missing_citation(tmp_path):
     built, _ = bf.build_sidecar(release, chunks)
     inputs = built[0]["claims"][0]["decision_inputs"]
     assert inputs["terms_absent_from_held_evidence"] == ["Freedonia"]
-    assert "missing_citation" in inputs["labels_excluded_by_evidence"]
+    assert inputs["labels_excluded_by_evidence"] == {}
+    assert "missing_citation" in inputs["labels_remaining"]
     assert "missing_retrieval_evidence" in inputs["labels_remaining"]
 
-    # permissive direction: once the evidence holds the term, missing_citation
-    # comes back as a live option.
+    # permissive direction: presence in EXACT evidence still rules the one
+    # thing out that the reconstruction can actually vouch for.
     chunks = _write_jsonl(
         tmp_path / "chunks2.jsonl",
         [{"doc_id": _doc("case-a"), "page": 1, "text": "Implemented by Freedonia."}],
@@ -659,7 +761,190 @@ def test_an_absent_term_excludes_missing_citation(tmp_path):
     built, _ = bf.build_sidecar(release, chunks)
     inputs = built[0]["claims"][0]["decision_inputs"]
     assert inputs["terms_absent_from_held_evidence"] == []
-    assert "missing_citation" not in inputs["labels_excluded_by_evidence"]
+    assert list(inputs["labels_excluded_by_evidence"]) == [
+        "missing_retrieval_evidence"
+    ]
+    assert "missing_citation" in inputs["labels_remaining"]
+
+
+def test_no_exported_row_claims_its_exclusions_are_sound(tmp_path):
+    """The sentence printed in every row must not outrun what the probe knows."""
+    claim = "The programme is run by Freedonia."
+    release = _write_jsonl(
+        tmp_path / "release.jsonl", [_release_row("case-a", _failure(claim))]
+    )
+    chunks = _write_jsonl(
+        tmp_path / "chunks.jsonl",
+        [{"doc_id": _doc("case-a"), "page": 1, "text": "Implemented by Ruritania."}],
+    )
+    built, _ = bf.build_sidecar(release, chunks)
+    note = built[0]["claims"][0]["decision_inputs"]["note"]
+
+    assert "exclusions are sound" not in note
+    assert "REPORTED" in note and "STRUCTURAL" in note
+
+
+# ---------------------------------------------------------------------------
+# N3 — the presence probe, on the one dimension the finding turns on:
+# the SEPARATOR CHARACTER, with the digits held fixed
+# ---------------------------------------------------------------------------
+
+
+def _probe_amount_against(tmp_path, name, answer_figure, page_text):
+    """Probe ``answer_figure`` (as written in an answer) against ``page_text``."""
+    claim = f"The project requests {answer_figure}."
+    release = _write_jsonl(
+        tmp_path / f"release-{name}.jsonl",
+        [_release_row("case-a", _failure(claim, kind="money"))],
+    )
+    chunks = _write_jsonl(
+        tmp_path / f"chunks-{name}.jsonl",
+        [{"doc_id": _doc("case-a"), "page": 1, "text": page_text}],
+    )
+    built, _ = bf.build_sidecar(release, chunks)
+    reconstructed = built[0]["claims"][0]
+    (amount,) = [t for t in reconstructed["term_probe"] if t["term_kind"] == "amount"]
+    return reconstructed, amount
+
+
+@pytest.mark.parametrize("name, page_text, present, kind", [
+    # THE FINDING: the same figure, comma where the answer writes a period.
+    ("comma-decimal", "The total is USD 49,312 million.", True, "digits"),
+    # same spelling as the answer — the case that always worked
+    ("same-spelling", "The total is USD 49.312 million.", True, "literal"),
+    # ADVERSARIAL: one digit different is a different figure, whatever the
+    # separator. A relaxation that matched this would be worthless.
+    ("other-figure", "The total is USD 49,313 million.", False, None),
+    # ADVERSARIAL: the same leading digits inside a longer figure are not it.
+    ("longer-figure", "The total is USD 49,312,817.", False, None),
+    # ADVERSARIAL: the same DIGITS grouped differently are a different figure
+    # 100x away — this is why the probe compares '49|312', not '49312'.
+    ("regrouped", "The total is USD 4,931.2 million.", False, None),
+    # ADVERSARIAL: the digits as a bare run, with no grouping at all.
+    ("ungrouped", "The total is USD 49312 million.", False, None),
+])
+def test_a_comma_decimal_mark_is_found_and_a_different_figure_is_not(
+    tmp_path, name, page_text, present, kind
+):
+    """Vary ONLY the separator character; hold the figure fixed.
+
+    Prior rounds' probes varied the document and the wording but always wrote
+    the figure the same way on both sides, so the corpus's comma decimal mark
+    never appeared in a fixture at all. ``verify.amounts`` reads 'USD 49,312
+    million' as a US thousands group whose scale word contradicts it, giving
+    value=None / bare=49312.0 against the answer's 49312000.0 / 49.312 —
+    neither ``value`` nor ``mantissa`` nor the literal fallback can bridge it,
+    and the probe reported the figure ABSENT from a page that prints it.
+    """
+    _, amount = _probe_amount_against(
+        tmp_path, name, "USD 49.312 million", page_text
+    )
+
+    assert amount["present_in_held_evidence"] is present
+    if kind is None:
+        assert amount["match_kinds"] == []
+    else:
+        assert kind in amount["match_kinds"]
+
+
+def test_adjacent_figures_are_not_fused_into_one(tmp_path):
+    """Why a space is not read as a grouping mark.
+
+    The corpus prints 'Direct beneficiary sec. 5 155,000 direct beneficiaries'.
+    Reading the space as a thousands separator would index that as the single
+    figure 5|155|000 and DELETE 155,000 from the page — a false absence, which
+    is the exact failure this probe exists to fix.
+    """
+    index = bf.number_index(
+        bf.normalize("Direct beneficiary sec. 5 155,000 direct beneficiaries")
+    )
+
+    assert index == {"155|000": ["155,000"]}
+    assert bf.figure_key("5 155,000") != "155|000"
+
+
+def test_a_separator_variant_match_is_reported_but_never_strict(tmp_path):
+    """A digits match must not buy an exclusion a literal match would.
+
+    '49,312' and '49.312' are the same digits; whether they are the same
+    MAGNITUDE depends on a convention the reconstruction cannot read. So the
+    relaxation is allowed to report presence and must not be allowed to rule
+    ``missing_retrieval_evidence`` out — even on a single-chunk page, where a
+    literal hit on the same page does exactly that.
+    """
+    variant, amount = _probe_amount_against(
+        tmp_path, "variant", "USD 49.312 million", "The total is USD 49,312 million."
+    )
+    assert variant["evidence_view"][0]["fidelity"] == "exact"
+    assert amount["found_in_exact_keys"] == [f"{_doc('case-a')}|1"]
+    assert amount["found_in_strict_keys"] == []
+    assert amount["found_in_exact_strict_keys"] == []
+    assert amount["separator_convention_differs"] is True
+    assert amount["presence_is_upper_bound"] is True
+    assert variant["decision_inputs"]["labels_excluded_by_evidence"] == {}
+
+    # permissive direction: the SAME page, the SAME figure, written the answer's
+    # way, is a strict hit and does rule missing_retrieval_evidence out.
+    literal, amount = _probe_amount_against(
+        tmp_path, "literal", "USD 49.312 million", "The total is USD 49.312 million."
+    )
+    assert amount["found_in_strict_keys"] == [f"{_doc('case-a')}|1"]
+    assert amount["separator_convention_differs"] is False
+    assert amount["presence_is_upper_bound"] is False
+    assert list(literal["decision_inputs"]["labels_excluded_by_evidence"]) == [
+        "missing_retrieval_evidence"
+    ]
+
+
+@pytest.mark.parametrize("page_text, present, kinds", [
+    # THE FINDING: a hyphen in the answer, a space on the page.
+    ("Held at the board meeting in Bonn.", True, ["hyphen-variant"]),
+    ("Held at the Board-meeting in Bonn.", True, ["literal"]),
+    # ADVERSARIAL: a hyphen reads as a space, not as nothing and not as a
+    # licence to match a different phrase.
+    ("Held at the boardmeeting in Bonn.", False, []),
+    ("Held at the board of meetings in Bonn.", False, []),
+])
+def test_a_hyphen_is_read_as_a_space_but_nothing_else_is(
+    tmp_path, page_text, present, kinds
+):
+    release = _write_jsonl(
+        tmp_path / "release.jsonl",
+        [_release_row("case-a", _failure("The Board-meeting decided it."))],
+    )
+    chunks = _write_jsonl(
+        tmp_path / "chunks.jsonl",
+        [{"doc_id": _doc("case-a"), "page": 1, "text": page_text}],
+    )
+    built, _ = bf.build_sidecar(release, chunks)
+
+    probe = bf._probe_term(
+        "Board-meeting",
+        bf.EvidenceIndex(built[0]["evidence"]),
+        set(),
+        set(),
+    )
+    assert probe["present_in_held_evidence"] is present
+    assert probe["match_kinds"] == kinds
+
+
+@pytest.mark.parametrize("term, key", [
+    # the two spellings of one figure collapse onto one key ...
+    ("USD 49.312 million", "49|312"),
+    ("USD 49,312 million", "49|312"),
+    ("USD 6,876,446.27", "6|876|446|27"),
+    # ... while a different GROUPING of the same digits does not
+    ("USD 4,931.2 million", "4|931|2"),
+    # no INTERNAL separator: a document code or a page pointer is not a figure,
+    # and probing the corpus for a bare '172' would report presence from any
+    # page number that happened to be 172.
+    ("FP172", ""),
+    ("B.30", ""),
+    ("p.45", ""),
+    ("2021", ""),
+])
+def test_only_internally_separated_figures_get_the_relaxed_probe(term, key):
+    assert bf.separator_agnostic_key(term) == key
 
 
 def test_only_the_note_blocks_that_reached_the_evidence_are_reconstructed(tmp_path):
@@ -795,6 +1080,128 @@ def test_excerpt_is_centred_on_the_match_and_falls_back_to_the_head():
     head = bf.build_excerpt(text, ["nothing here"])
     assert "Amazon Bioeconomy Fund" not in head
     assert head.startswith("filler")
+    assert head, "an unmatched page must still show its head, not nothing"
+
+    # a page shorter than the head budget is shown whole
+    assert bf.build_excerpt("A short page.", []) == "A short page."
+
+
+def test_an_unmatched_uncited_page_still_shows_text_and_a_cited_page_shows_more(
+    tmp_path,
+):
+    """N14, on the dimension it turns on: whether the page matched anything.
+
+    Three pages, one claim: the cited page, a page that matches a probed term,
+    and a page that matches nothing and is cited by nothing. The old policy
+    emitted ``excerpt: null`` for the third, which is the entire signal for
+    ``missing_retrieval_evidence`` — 'the turn held these pages and none of
+    them says it'.
+    """
+    doc = _doc("case-a")
+    claim = f"Claim one is implemented by the Ruritania Agency. [{doc}, p.1]"
+    release = _write_jsonl(
+        tmp_path / "release.jsonl",
+        [
+            _release_row(
+                "case-a",
+                _failure(claim),
+                claims={
+                    "failures": [_failure(claim)],
+                    "evidence_keys": [f"{doc}|1", f"{doc}|2", f"{doc}|3"],
+                },
+                hits=[
+                    {"doc": doc, "page": 1, "score": 0.9},
+                    {"doc": doc, "page": 2, "score": 0.8},
+                    {"doc": doc, "page": 3, "score": 0.7},
+                ],
+            )
+        ],
+    )
+    chunks = _write_jsonl(
+        tmp_path / "chunks.jsonl",
+        [
+            {"doc_id": doc, "page": 1, "text": "Cited page. " + ("body " * 400)},
+            {"doc_id": doc, "page": 2, "text": ("pad " * 300) + "the Ruritania Agency"},
+            {"doc_id": doc, "page": 3, "text": "Wholly unrelated. " + ("x " * 400)},
+        ],
+    )
+    rows, stats = bf.build_sidecar(release, chunks)
+    view = {e["key"]: e for e in rows[0]["claims"][0]["evidence_view"]}
+
+    assert all(entry["excerpt"] for entry in view.values())
+    assert view[f"{doc}|3"]["matched_terms"] == []
+    assert view[f"{doc}|3"]["cited_by_claim"] is False
+    assert view[f"{doc}|3"]["excerpt"].startswith("Wholly unrelated.")
+
+    # the cited page is the thing under review, so it is shown whole
+    assert view[f"{doc}|1"]["cited_by_claim"] is True
+    assert view[f"{doc}|1"]["excerpt_is_full_text"] is True
+    # the matched page is centred on the match, not merely headed
+    assert "Ruritania Agency" in view[f"{doc}|2"]["excerpt"]
+    assert view[f"{doc}|2"]["excerpt_is_full_text"] is False
+
+    assert stats["evidence_view_entries_without_text"] == 0
+    assert stats["claims_with_no_visible_evidence_text"] == 0
+
+
+def test_a_claim_with_nothing_probeable_still_shows_its_pages(tmp_path):
+    """The `n_terms == 0` row: no term to centre on, so a larger head instead.
+
+    These were the rows most likely to be blank — nothing matched, so nothing
+    was shown — and they are exactly the rows where the reviewer has only the
+    evidence text to go on.
+    """
+    doc = _doc("case-a")
+    # the shape release-1 actually has six of: a colon lead-in with no amount,
+    # year or named entity in it (this is bc-b42-02-add16's, de-specified)
+    claim = "There are inconsistent printed figures for the funding requested:"
+    release = _write_jsonl(
+        tmp_path / "release.jsonl", [_release_row("case-a", _failure(claim))]
+    )
+    chunks = _write_jsonl(
+        tmp_path / "chunks.jsonl",
+        [{"doc_id": doc, "page": 1, "text": "Page body. " + ("word " * 500)}],
+    )
+    rows, _ = bf.build_sidecar(release, chunks)
+    (reconstructed,) = rows[0]["claims"]
+
+    assert reconstructed["reconstructed"] is True
+    assert reconstructed["decision_inputs"]["n_terms"] == 0
+    assert reconstructed["decision_inputs"]["is_lead_in_to_a_list"] is True
+    (entry,) = reconstructed["evidence_view"]
+    assert entry["matched_terms"] == []
+    assert entry["excerpt"].startswith("Page body.")
+    assert entry["excerpt_chars"] > bf.HEAD_EXCERPT_CHARS
+
+
+def test_export_refuses_an_evidence_block_with_no_readable_text(tmp_path):
+    """The gate: keys and probes are not evidence, text is."""
+    release, sidecar, expected = _inventory(tmp_path)
+    output = tmp_path / "inventory.jsonl"
+
+    blanked = [json.loads(line) for line in sidecar.read_text().splitlines() if line]
+    for row in blanked:
+        for claim in row["claims"]:
+            for entry in claim.get("evidence_view") or ():
+                entry["excerpt"] = None
+    _write_jsonl(sidecar, blanked)
+
+    assert ac.main([
+        "export", "--release", str(release), "--evidence", str(sidecar),
+        "--output", str(output),
+    ]) == 2
+    assert not output.exists()
+
+    # permissive: the sidecar the backfill actually produces exports cleanly,
+    # and reports how much evidence text a reviewer is getting
+    fresh = _sample_sidecar(tmp_path, release)
+    assert ac.main([
+        "export", "--release", str(release), "--evidence", str(fresh),
+        "--output", str(output),
+    ]) == 0
+    coverage = ac.evidence_coverage(ac.read_inventory(output))
+    assert coverage["without_evidence_text"] == 0
+    assert coverage["evidence_text_chars"] > 0
 
 
 # ---------------------------------------------------------------------------
