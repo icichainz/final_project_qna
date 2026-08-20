@@ -29,3 +29,26 @@ ce0463faef872918bd3d85078135ba9ab4d187eea223ffffdeca26435a9b9228  data/eval/answ
 d7d2c4c4c3631f637e5edd9d963a8130687a4f450cfb706cb67e8767a7dea6dd  data/eval/release_release-1-adjudicated.jsonl
 1a0de743be0fab562f2f905e77b8f23ad33203b7c61523369f3d68bc2d0811b3  data/eval/release_release-1-adjudication.blind.jsonl
 9fde4024bb2a312c2d0117c71de64435478979cc60772d61b81a145f52ed7ea5  data/eval/release_release-1-evidence.jsonl
+#
+# Wave 3 — production-parity release harness. Recorded 2026-08-20 on
+# main @ 515eb39, verify.py untouched throughout
+# (blob 6faf919fd1b8). spread-a..d are four runs of ONE pinned
+# configuration and are the published run-to-run spread; gap1..gap9 are
+# the nine parity gaps, one recorded run each, in the plan's order;
+# parity-baseline is Gate 3A. release_release-1-rescored.jsonl is F12:
+# release-1's frozen answers rescored offline with zero API calls.
+bceef16a71ef3023ed8fd0d590418f7139d013dfb61e9e576aedde23fde06a1f  data/eval/release_spread-a.jsonl
+95d02dddcf3501889167535595c91c943e904b57bce4f0092946a1167b3b2bdd  data/eval/release_spread-b.jsonl
+d8692ca2cac1d0326a0e078199c04857f55681261a115467d0463365d32a9597  data/eval/release_spread-c.jsonl
+5616562794ce8d9300f9f65ff4a9a3d0454d7da331c1cae0486af7418c76f2ed  data/eval/release_spread-d.jsonl
+74d4c42e493aea5964ab969d34a936666cb941298fd41aee267bf14b669671b8  data/eval/release_gap1.jsonl
+67495804fe3ed06b6a6fab7fe6127dc73e9255ff3dfe013fa719afe99c4e0c2c  data/eval/release_g2.jsonl
+578e55228e26bc97b57f406efb0ed8a32616a0481022b6cdb8a4d0466e65aac6  data/eval/release_g3.jsonl
+4eb58a925d5e981c8a33be1659aa78642d0948550a5d5f40aa4d0254f4c7269e  data/eval/release_g4.jsonl
+13fea90495a46f65e18760a4ea83b92f489bb5af735e49de41ad3a94ced87c6a  data/eval/release_g5.jsonl
+f2c6d25f1a559a7cfbcca6e2338cc0ccb4b593d78c9890524089405e49324597  data/eval/release_g6.jsonl
+fa0251b2eadc54b0ab006b0b64cce7048b8014dd0116b983b9778d24b4d45a29  data/eval/release_g7.jsonl
+6db0ff2536bb4354c5b68345e532655e381de06ae4ef45411f86be3aebcdf6c8  data/eval/release_g8.jsonl
+7e677dd9f85d95c05bb1b2e39ba76d664b6111e8b4b13d6db9efb5e317bfc696  data/eval/release_g9.jsonl
+6a8e65d451c42d919d9d97aaf4d7f57f5498ec8ac33e8eccfbc0c8a33f3bcdd8  data/eval/release_parity-baseline.jsonl
+7ae2e7cec19c7676cb53e390fa9602f65fa4ee11e9ef6d9b288acfc0e4864069  data/eval/release_release-1-rescored.jsonl

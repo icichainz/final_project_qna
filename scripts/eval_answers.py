@@ -24,7 +24,41 @@ Four modes
                      support from rag.verify (the plan's >=95% citation-
                      precision gate), latency p50/p95, tokens and estimated
                      cost.  Records to data/eval/release_<label>.jsonl.
-  --compare A B      diff two recorded runs, per case and per class.
+                     PRODUCTION PARITY IS THE DEFAULT HERE (see below): the
+                     planner and the conductor are on unless turned off.
+  --compare A B      diff two recorded runs. --require-metrics turns it into a
+                     gate: a metric missing or None on either side is a hard
+                     failure, and a regression exits 1.
+  --rescore-record   recompute a recorded run's claims metrics offline, zero
+                     API calls (--evidence supplies the passage text for a
+                     record whose hits predate F7).
+
+Production parity (Wave 3)
+--------------------------
+A release number is only a release number if it came off the path production
+runs.  The harness therefore reproduces `chainlit_app.main` turn for turn:
+`planner.detect` behind the app's own intent gate and its evidence matrix
+(--production-planner), the per-turn LLM conductor with the app's prompt and
+rewrite guards (--conductor), the FP-miss guard AFTER the conductor and
+returning BEFORE verification, the app's `decomposed` flag rather than a
+question-shape proxy, `_answer_messages` history isolation with the resolved-
+references note, `verify.verify_answer(use_llm=1, allow_repair=0)`
+(--verifier-mode production), and every model call — conductor, answer, judge,
+repair — booked into the turn's usage.
+
+Every one of those is an explicit CLI switch.  None is read from the ambient
+environment: `.env` is loaded for the API key alone, and a harness that took
+its configuration from the file that ships to production would silently change
+what it measures whenever an operator flipped a switch.
+
+`--verifier-mode deterministic` (the default) stays the cheap, zero-API,
+per-commit instrument; production mode runs at wave boundaries.
+
+Sampling is pinned (temperature 0 and a fixed seed on every call) and each
+record stores the model SNAPSHOT the endpoint served, the `verify.py` blob
+sha, the index and registry hashes, and a `pipeline_parity` block whose
+`level` reads "full" only when every gap is closed AND the deployed
+configuration matches field for field.
 
 Two scorers beyond the string checks, both deterministic:
 
@@ -77,11 +111,30 @@ except Exception:
 
 from gcf_qna import config                                    # noqa: E402
 from gcf_qna.app.prompts import assemble                      # noqa: E402
-from gcf_qna.rag import registry, verify                      # noqa: E402
+from gcf_qna.rag import planner, registry, verify             # noqa: E402
+
+def _sha256_file(path: Path, missing: str = None):
+    """sha256 of a file, or ``missing`` when it is not there."""
+    import hashlib
+    try:
+        h = hashlib.sha256()
+        with open(path, "rb") as fh:
+            for block in iter(lambda: fh.read(1 << 20), b""):
+                h.update(block)
+        return h.hexdigest()
+    except Exception:
+        return missing
+
 
 DEFAULT_CASES = ROOT / "scripts" / "answer_gold.jsonl"
 GOLD_SET = ROOT / "scripts" / "gold_set.jsonl"
 EVAL_DIR = ROOT / "data" / "eval"
+
+# How the harness decides whether to ship COMPARISON_BLOCK.
+#   decomposed  production: the plan fanned out (or the planner built a matrix)
+#   proxy       the retired stand-in: >= 2 identifiers in the question
+#   off         never ship it
+COMPARISON_FLAGS = {"decomposed", "proxy", "off"}
 
 CLASS_ORDER = ["identifier", "compact-id", "board-code", "discovery",
                "comparison", "conflict", "french", "noisy", "abstain",
@@ -546,7 +599,131 @@ def score_fields(case: dict, answer: str):
 # ---------------------------------------------------------------------------
 # claim support  (the plan's citation-precision gate)
 # ---------------------------------------------------------------------------
-def score_claims(answer: str, hits, notes=None):
+# The four keys `--compare` pairs up. They must be DISTINCT: two names for one
+# number would double-count a single regression and show four green deltas
+# where three exist.
+METRIC_KEYS = ("support_rate", "groundedness_rate", "citation_completeness_rate",
+               "citation_presence_rate")
+assert len(set(METRIC_KEYS)) == len(METRIC_KEYS), "compared metric keys collide"
+
+
+def grounded_flags(claims, evidence) -> list:
+    """Per claim: does ANY evidence this turn held entail it?
+
+    The groundedness definition, fixed before any baseline is taken. At
+    verify.py@HEAD `_verify_against` is only ever run over the claim's CITED
+    scope, so a cited-but-wrong-page claim fails groundedness and citation
+    completeness alike and the split carries no independent information. Here
+    the same matcher — verify's own, unmodified — is run over the union of the
+    turn's evidence, so "the answer knew this but pointed at the wrong page"
+    separates from "nothing we retrieved says this".
+
+    Relaxes no matcher and reads no new source: the text is what the prompt
+    carried.
+    """
+    blob = verify._text_of(evidence, list(evidence))
+    out = []
+    for c in claims:
+        try:
+            ok, _missing = verify._verify_against(c, blob)
+        except Exception:                            # noqa: BLE001
+            ok = False
+        out.append(bool(ok))
+    return out
+
+
+def claim_metrics(claims, verdicts, evidence, full_failures: bool = False) -> dict:
+    """The claims block: three n/d, their denominators, and the failure list.
+
+    Split out of score_claims so the production path (verify.verify_answer,
+    whose verdicts carry judge promotions) and the deterministic path report
+    the identical shape.
+    """
+    grounded = grounded_flags(claims, evidence)
+    by_index = {id(v.claim): g for v, g in zip(verdicts, grounded)} \
+        if len(verdicts) == len(claims) else {}
+    n = defaultdict(int)
+    failures = []
+    cited = citation_supported = 0
+    for i, v in enumerate(verdicts):
+        n[v.status] += 1
+        has_cite = bool(v.claim.citations)
+        cited += bool(has_cite)
+        if v.status == verify.SUPPORTED and has_cite:
+            citation_supported += 1
+        if v.status != verify.SUPPORTED:
+            failures.append({"status": v.status, "kind": v.claim.kind,
+                             "text": v.claim.text[:160], "reason": v.reason[:160],
+                             "cited": has_cite,
+                             "grounded": bool(by_index.get(id(v.claim), False)),
+                             "source": getattr(v, "source", "deterministic")})
+    total = len(verdicts)
+    supported = n[verify.SUPPORTED]
+    n_grounded = sum(1 for v in verdicts if by_index.get(id(v.claim), False)) \
+        if by_index else sum(grounded)
+    return {
+        "claims": total,
+        "supported": supported,
+        "contradicted": n[verify.CONTRADICTED],
+        "unsupported": n[verify.UNSUPPORTED],
+        "support_rate": (supported / total) if total else None,
+        "grounded": n_grounded,
+        "groundedness_rate": (n_grounded / total) if total else None,
+        "citation_supported": citation_supported,
+        "citation_completeness_rate": (citation_supported / total) if total else None,
+        "cited": cited,
+        "citation_presence_rate": (cited / total) if total else None,
+        "judge_promotions": sum(1 for v in verdicts
+                                if getattr(v, "source", "") == "llm"
+                                and v.status == verify.SUPPORTED),
+        "evidence_keys": [f"{d}|{p if p is not None else '-'}" for d, p in evidence],
+        # F9: the aggregates count every failure, so a truncated list that the
+        # inventory export reads as complete is a silent undercount. The count
+        # travels WITH the list, and a release run keeps the whole thing.
+        "n_failures": len(failures),
+        "failures": failures if full_failures else failures[:6],
+    }
+
+
+# verify.adjudicate's own default, and therefore production's judge budget.
+# Recorded per case so "the cap bound" can never be an unstated assumption.
+JUDGE_MAX_CLAIMS = 12
+
+
+def verify_production(answer: str, hits, notes=None, client=None,
+                      allow_repair: bool = False, full_failures: bool = False):
+    """production's verification pass over one answer.
+
+    Returns (RepairResult, claims block, judge accounting). `verify_answer` is
+    called as the app calls it — same entry point, same switches — rather than
+    reassembled from its parts, so a change inside it reaches this harness.
+
+    The deterministic pass is repeated here for ONE reason: to count the
+    judge's candidate set (F9). It is pure python and costs no call, and it is
+    the only way to know whether the 12-claim cap bound without reaching into
+    verify.py, which is frozen for this wave.
+    """
+    blocks = [n for n in (notes or []) if n]
+    evidence = verify.build_evidence(hits or [], blocks)
+    claims = verify.extract_claims(answer or "")
+    det = verify.classify_deterministic(claims, evidence)
+    candidates = [v for v in det
+                  if v.status == verify.UNSUPPORTED and v.plausible]
+    res = verify.verify_answer(answer or "", evidence, client=client,
+                               use_llm=True, allow_repair=allow_repair)
+    block = claim_metrics([v.claim for v in res.verdicts], res.verdicts,
+                          evidence, full_failures=full_failures)
+    block["verifier_mode"] = "production"
+    block["verify_status"] = res.status
+    block["repaired"] = bool(res.repaired)
+    block["repair_rejected"] = bool(res.repair_rejected)
+    judge = {"judge_candidates": len(candidates),
+             "judge_max_claims": JUDGE_MAX_CLAIMS,
+             "judge_budget_exhausted": int(len(candidates) > JUDGE_MAX_CLAIMS)}
+    return res, block, judge
+
+
+def score_claims(answer: str, hits, notes=None, full_failures: bool = False):
     """Deterministic claim-level verdicts against THIS turn's own evidence.
 
     The old citation check asked 'does the answer cite a page we retrieved?',
@@ -560,24 +737,106 @@ def score_claims(answer: str, hits, notes=None):
     evidence = verify.build_evidence(hits or [], blocks)
     claims = verify.extract_claims(answer or "")
     verdicts = verify.classify_deterministic(claims, evidence)
-    n = defaultdict(int)
-    failures = []
-    for v in verdicts:
-        n[v.status] += 1
-        if v.status != verify.SUPPORTED:
-            failures.append({"status": v.status, "kind": v.claim.kind,
-                             "text": v.claim.text[:160], "reason": v.reason[:160]})
-    total = len(verdicts)
-    supported = n[verify.SUPPORTED]
-    return {
-        "claims": total,
-        "supported": supported,
-        "contradicted": n[verify.CONTRADICTED],
-        "unsupported": n[verify.UNSUPPORTED],
-        "support_rate": (supported / total) if total else None,
-        "evidence_keys": [f"{d}|{p if p is not None else '-'}" for d, p in evidence],
-        "failures": failures[:6],
-    }
+    out = claim_metrics(claims, verdicts, evidence, full_failures=full_failures)
+    # Scoped identity, deterministic mode only: an uncited claim is
+    # UNSUPPORTED at verify.py@HEAD, so these two cannot differ here. If they
+    # ever do, one of them is measuring something else.
+    assert out["supported"] == out["citation_supported"], (
+        "deterministic scoped identity broken: supported "
+        f"{out['supported']} != citation_supported {out['citation_supported']}")
+    return out
+
+
+# ---------------------------------------------------------------------------
+# usage accounting
+# ---------------------------------------------------------------------------
+def verify_call_role(kwargs: dict) -> str:
+    """judge | repair | other, from the system prompt the call carries."""
+    system = ""
+    for m in kwargs.get("messages") or []:
+        if m.get("role") == "system":
+            system = m.get("content")
+            break
+    if system is verify.ADJUDICATE_PROMPT or system == verify.ADJUDICATE_PROMPT:
+        return "judge"
+    if system is verify.REPAIR_PROMPT or system == verify.REPAIR_PROMPT:
+        return "repair"
+    return "verify-other"
+
+
+class _MeteredCompletions:
+    def __init__(self, inner, sink):
+        self._inner, self._sink = inner, sink
+
+    def create(self, **kwargs):
+        t0 = time.perf_counter()
+        resp = self._inner.create(**kwargs)
+        self._sink.append(call_meta(verify_call_role(kwargs), resp,
+                                    time.perf_counter() - t0))
+        return resp
+
+
+class _MeteredChat:
+    def __init__(self, inner, sink):
+        self.completions = _MeteredCompletions(inner.chat.completions, sink)
+
+
+class MeteredClient:
+    """An OpenAI client that books what verify.py spends.
+
+    Only `chat.completions.create` is proxied because that is the only surface
+    `verify._complete` touches; anything else is delegated, so a future call
+    through another attribute still works and is simply not metered — visibly,
+    since the record's call list would then not add up to the response's own
+    token totals.
+    """
+
+    def __init__(self, inner, sink: list):
+        self._inner = inner
+        self.chat = _MeteredChat(inner, sink)
+
+    def __getattr__(self, name):
+        return getattr(self._inner, name)
+
+
+def call_meta(role: str, resp, dt: float, attempts: int = 1) -> dict:
+    """One model call, priced and attributed.
+
+    `role` is the whole point: a release run that books only the answer call
+    reports a cost and a latency production does not have. Conductor, answer,
+    judge and repair are separate rows under one turn.
+    """
+    u = getattr(resp, "usage", None)
+    pt = int(getattr(u, "prompt_tokens", 0) or 0)
+    ct = int(getattr(u, "completion_tokens", 0) or 0)
+    return {"role": role, "latency_s": round(dt, 3), "attempts": attempts,
+            "model": config.CHAT_MODEL,
+            "snapshot": getattr(resp, "model", None) or config.CHAT_MODEL,
+            "prompt_tokens": pt, "completion_tokens": ct,
+            "total_tokens": int(getattr(u, "total_tokens", 0) or 0) or (pt + ct)}
+
+
+def turn_usage(calls: list) -> dict:
+    """Roll a turn's calls into the per-case `usage` block.
+
+    `latency_s` stays the ANSWER call alone, so a recorded run is still
+    comparable with release-1, which measured nothing else; `turn_latency_s`
+    is what the turn actually took across every call it made, and it is what
+    the report's p50/p95 are computed from.
+    """
+    calls = [c for c in calls if c]
+    if not calls:
+        return {}
+    answer = next((c for c in calls if c["role"] == "answer"), None)
+    return {"calls": calls,
+            "latency_s": (answer or {}).get("latency_s"),
+            "turn_latency_s": round(sum(c.get("latency_s") or 0.0 for c in calls), 3),
+            "model": config.CHAT_MODEL,
+            "snapshot": (answer or calls[0]).get("snapshot"),
+            "prompt_tokens": sum(c["prompt_tokens"] for c in calls),
+            "completion_tokens": sum(c["completion_tokens"] for c in calls),
+            "total_tokens": sum(c["total_tokens"] for c in calls),
+            "roles": sorted({c["role"] for c in calls})}
 
 
 # ---------------------------------------------------------------------------
@@ -599,23 +858,51 @@ def usage_totals(rows: list) -> dict:
     """Latency percentiles, token totals and the estimated dollar cost of a
     run. Rows with no model call (guard short-circuits, errored cases) simply
     contribute nothing."""
-    lat, prompt, completion, calls = [], 0, 0, 0
+    ans_lat, turn_lat, prompt, completion, calls = [], [], 0, 0, 0
+    by_role = defaultdict(lambda: {"calls": 0, "prompt_tokens": 0,
+                                   "completion_tokens": 0, "latency_s": 0.0})
     for r in rows:
         u = r.get("usage") or {}
         if not u:
             continue
-        calls += 1
-        if u.get("latency_s") is not None:
-            lat.append(float(u["latency_s"]))
-        prompt += int(u.get("prompt_tokens") or 0)
-        completion += int(u.get("completion_tokens") or 0)
+        sub_calls = u.get("calls")
+        if sub_calls:
+            for c in sub_calls:
+                role = c.get("role") or "answer"
+                calls += 1
+                by_role[role]["calls"] += 1
+                by_role[role]["prompt_tokens"] += int(c.get("prompt_tokens") or 0)
+                by_role[role]["completion_tokens"] += int(c.get("completion_tokens") or 0)
+                by_role[role]["latency_s"] += float(c.get("latency_s") or 0.0)
+                prompt += int(c.get("prompt_tokens") or 0)
+                completion += int(c.get("completion_tokens") or 0)
+            if u.get("turn_latency_s") is not None:
+                turn_lat.append(float(u["turn_latency_s"]))
+            if u.get("latency_s") is not None:
+                ans_lat.append(float(u["latency_s"]))
+        else:                       # a run recorded before per-call accounting
+            calls += 1
+            by_role["answer"]["calls"] += 1
+            by_role["answer"]["prompt_tokens"] += int(u.get("prompt_tokens") or 0)
+            by_role["answer"]["completion_tokens"] += int(u.get("completion_tokens") or 0)
+            prompt += int(u.get("prompt_tokens") or 0)
+            completion += int(u.get("completion_tokens") or 0)
+            if u.get("latency_s") is not None:
+                by_role["answer"]["latency_s"] += float(u["latency_s"])
+                ans_lat.append(float(u["latency_s"]))
+                turn_lat.append(float(u["latency_s"]))
     cost = (prompt * TOKEN_COST_USD["prompt"]
             + completion * TOKEN_COST_USD["completion"])
-    return {"calls": calls, "latency": lat,
-            "p50": percentile(lat, 0.50), "p95": percentile(lat, 0.95),
-            "max": max(lat) if lat else None, "sum": round(sum(lat), 1),
+    return {"calls": calls, "latency": turn_lat,
+            "p50": percentile(turn_lat, 0.50), "p95": percentile(turn_lat, 0.95),
+            "answer_p50": percentile(ans_lat, 0.50),
+            "answer_p95": percentile(ans_lat, 0.95),
+            "max": max(turn_lat) if turn_lat else None,
+            "sum": round(sum(turn_lat), 1),
             "prompt_tokens": prompt, "completion_tokens": completion,
             "total_tokens": prompt + completion,
+            "by_role": {k: dict(v, latency_s=round(v["latency_s"], 1))
+                        for k, v in sorted(by_role.items())},
             "cost_usd": round(cost, 4)}
 
 
@@ -638,25 +925,87 @@ def fp_ids(text: str) -> set:
 
 
 def multi_identifier(question: str) -> bool:
-    """Stand-in for the app's `decomposed` flag, which the conductor sets.
+    """The RETIRED stand-in for the app's `decomposed` flag.
 
-    The conductor is deliberately skipped here (it is an LLM call and would
-    make the retrieval baseline non-deterministic), but COMPARISON_BLOCK is
-    gated on it in the app.  A question naming two or more identifiers is the
-    deterministic proxy: it is exactly the shape the conductor fans out.
+    It guessed from the question's shape — two or more identifiers — what the
+    app decides from the plan the conductor and planner actually produced.
+    Kept, and still selectable via --comparison-flag proxy, because a
+    zero-API run has no plan to read; it is no longer what --release uses.
     """
     return len(fp_ids(question)) + len(set(_BOARD_CODE_RE.findall(question))) > 1
 
 
-class Pipeline:
-    """chainlit_app.main() with the conductor removed and no Chainlit I/O."""
+# ---------------------------------------------------------------------------
+# parity metadata
+# ---------------------------------------------------------------------------
+# Gap 1 of the Wave-3 table. The claim under audit is "production's single-FP
+# pre-scoping also runs here"; an audit that answers it with a hard-coded
+# True is worth nothing, so the app's own _prescope_single_fp is wrapped in a
+# transparent counter and the record carries what it actually did. The wrapper
+# calls the original and returns its result unchanged — it is a tally, not a
+# behaviour change — and it sits on the app module because that is where
+# _rescope_items looks the name up.
+_PRESCOPE_STATS = {"calls": 0, "tagged": 0, "wrapped": False}
 
-    def __init__(self, top_k: int = None, comparison_proxy: bool = True,
-                 raw_retrieval: bool = False, scope_single_id: bool = False):
+
+def _instrument_prescope(app) -> dict:
+    """Count calls to the app's single-FP prescope. Idempotent."""
+    fn = getattr(app, "_prescope_single_fp", None)
+    if fn is None or getattr(fn, "_eval_counted", False):
+        return _PRESCOPE_STATS
+    def counted(items, msg_text, _orig=fn):
+        before = [bool(i.get("doc")) for i in (items or [])]
+        out = _orig(items, msg_text)
+        _PRESCOPE_STATS["calls"] += 1
+        _PRESCOPE_STATS["tagged"] += sum(
+            1 for was, item in zip(before, out or []) if not was and item.get("doc"))
+        return out
+    counted._eval_counted = True
+    counted.__doc__ = fn.__doc__
+    app._prescope_single_fp = counted
+    _PRESCOPE_STATS["wrapped"] = True
+    return _PRESCOPE_STATS
+
+
+class Pipeline:
+    """chainlit_app.main() without the Chainlit I/O.
+
+    Every production stage is reachable and every one is a switch, so the same
+    object serves the zero-API per-commit run and the production-parity
+    release run. What it is NOT is a re-implementation: the planner, the
+    conductor's prompt and guards, the prescope, the tag resolver, the
+    refs note and the answer-message assembly are all imported from the app.
+    """
+
+    def __init__(self, top_k: int = None, comparison_flag: str = "decomposed",
+                 raw_retrieval: bool = False, scope_single_id: bool = False,
+                 history_mode: str = "isolated",
+                 production_planner: bool = False, conductor: bool = False,
+                 client=None, pins: dict = None,
+                 verifier_mode: str = "deterministic",
+                 verifier_repair: bool = False):
         from gcf_qna.app import chainlit_app as app
         self.app = app
+        _instrument_prescope(app)
         self.top_k = top_k or config.TOP_K
-        self.comparison_proxy = comparison_proxy
+        if comparison_flag not in COMPARISON_FLAGS:
+            raise SystemExit(f"--comparison-flag must be one of {sorted(COMPARISON_FLAGS)}")
+        self.comparison_flag = comparison_flag
+        if history_mode not in ("isolated", "prepend"):
+            raise SystemExit("--history-mode must be isolated|prepend")
+        self.history_mode = history_mode
+        self.production_planner = production_planner
+        self.planner_stats = {"detected": 0, "intent_ok": 0, "matrix_built": 0,
+                              "matrix_failed": 0}
+        self.conductor = conductor
+        self.client = client
+        self.pins = pins if pins is not None else _pinning()
+        self.conductor_stats = {"calls": 0, "fanned_out": 0, "chat": 0,
+                                "failed": 0}
+        if verifier_mode not in ("deterministic", "production"):
+            raise SystemExit("--verifier-mode must be deterministic|production")
+        self.verifier_mode = verifier_mode
+        self.verifier_repair = bool(verifier_repair)
         self.raw_retrieval = raw_retrieval
         self.scope_single_id = scope_single_id
         t0 = time.perf_counter()
@@ -706,8 +1055,187 @@ class Pipeline:
         items = self.app._rescope_items(items, question, [])
         return self.app._resolve_doc_tags(items)
 
-    def run(self, question: str) -> dict:
+    def _decomposed(self, items: list, question: str, plan=None) -> bool:
+        """Did this turn fan out? (the app's `decomposed`)"""
+        if self.comparison_flag == "off":
+            return False
+        if self.comparison_flag == "proxy":
+            return multi_identifier(question)
+        return len(items) > 1 or plan is not None
+
+    # -- the LLM conductor (config.CONDUCTOR in the app) -------------------
+    def conduct(self, question: str, turns=()):
+        """(mode, search queries, call metadata) — the app's run_conductor.
+
+        Best-effort exactly as there: any failure leaves the raw message as
+        the only query, and the original wording still goes to the answer
+        model. The rewrite guards run on the parsed output before it is
+        adopted, because an unguarded conductor tag is the contamination they
+        exist for.
+        """
         app = self.app
+        items = [{"q": question, "doc": None}]
+        if not self.conductor or self.client is None:
+            return "retrieve", items, None
+        mode, meta = "retrieve", None
+        history = [{"role": m["role"], "content": m["content"]}
+                   for m in (turns or [])]
+        try:
+            convo = ("\n".join(f"{m['role']}: {m['content'][:1200]}"
+                                for m in history[-6:])
+                     if history else "((no prior conversation))")
+            cited = app._cited_docs(history)
+            if cited:
+                convo += ("\nDocuments cited in conversation: "
+                          + ", ".join(cited[-12:]))
+            t0 = time.perf_counter()
+            resp = self.client.chat.completions.create(
+                model=config.CHAT_MODEL,
+                max_completion_tokens=300,
+                response_format={"type": "json_object"},
+                messages=[{"role": "system", "content": app.CONDUCTOR_PROMPT},
+                          {"role": "user", "content":
+                           f"Conversation:\n{convo}\n\nLatest message: {question}"}],
+                **(self.pins or {}),
+            )
+            meta = call_meta("conductor", resp, time.perf_counter() - t0)
+            self.conductor_stats["calls"] += 1
+            data = json.loads(resp.choices[0].message.content or "{}")
+            if data.get("mode") == "chat":
+                mode = "chat"
+                self.conductor_stats["chat"] += 1
+            parsed = []
+            for item in (data.get("queries") or [])[:6]:
+                if isinstance(item, str) and item.strip():
+                    parsed.append({"q": item.strip(), "doc": None})
+                elif isinstance(item, dict) and (item.get("q") or "").strip():
+                    parsed.append({"q": item["q"].strip(),
+                                   "doc": item.get("doc") or None})
+            parsed = app._rescope_items(parsed, question, cited)
+            if parsed:
+                items = parsed
+                if len(parsed) > 1:
+                    self.conductor_stats["fanned_out"] += 1
+        except Exception:                            # noqa: BLE001
+            self.conductor_stats["failed"] += 1
+        return mode, items, meta
+
+    # -- the deterministic comparison planner (config.PLANNER in the app) ---
+    def planner_plan(self, question: str):
+        """(plan, matrix_block) for a question, or (None, None).
+
+        `detect` fires on any message naming >= 2 documents, comparative or
+        not, so the app's intent gate runs behind it; a matrix that carries no
+        evidence at all is discarded exactly as `main` discards it, and the
+        caller then proceeds as PLANNER=0 would.
+        """
+        if not self.production_planner:
+            return None, None
+        plan = planner.detect(question)
+        if plan is None:
+            return None, None
+        self.planner_stats["detected"] += 1
+        if not self.app._planner_intent(question, plan):
+            return None, None
+        self.planner_stats["intent_ok"] += 1
+        try:
+            matrix = planner.build_matrix(plan, self.retriever)
+            if not any(c.status not in ("missing", "missing-document")
+                       for c in matrix.cells):
+                raise ValueError("no cell carries evidence")
+            block = planner.render(matrix)
+        except Exception:                            # noqa: BLE001
+            self.planner_stats["matrix_failed"] += 1
+            return None, None
+        self.planner_stats["matrix_built"] += 1
+        return plan, block
+
+    def _retrieve(self, items: list, decomposed: bool):
+        """(hits, best confidence, weak-signal flag) — the app's fan-out.
+
+        Per-query quota and round-robin merge, verbatim from `main`: the global
+        cap must not starve the later documents of a multi-document turn.
+        """
+        from itertools import zip_longest
+        per_query = (self.top_k if not decomposed
+                     else max(3, self.top_k // max(1, len(items))))
+        best, weak, per_lists = None, True, []
+        for sq in items:
+            got, conf = self.retriever.search_with_confidence(
+                sq["q"], per_query, sq.get("doc"))
+            best = conf if best is None else max(best, conf)
+            if conf >= config.MIN_DENSE_SCORE:
+                weak = False
+            per_lists.append(got)
+        seen, hits = set(), []
+        for tier in zip_longest(*per_lists):
+            for h in tier:
+                if h is None:
+                    continue
+                key = (h.doc_id, h.page, h.text[:120])
+                if key not in seen:
+                    seen.add(key)
+                    hits.append(h)
+        return hits[:15], (best if best is not None else 0.0), weak
+
+    # -- what of production's answer path this harness actually ran ---------
+    def parity(self) -> dict:
+        """The `pipeline_parity` block, rebuilt per case from observation.
+
+        Every key is either a switch this run was started with or something
+        the run measured. `level` is graded in _parity_level, which is the
+        only place allowed to say "full".
+        """
+        return {
+            "production_single_id_prescope": bool(_PRESCOPE_STATS["wrapped"]),
+            "prescope_calls": _PRESCOPE_STATS["calls"],
+            "prescope_tagged": _PRESCOPE_STATS["tagged"],
+            "comparison_flag": self.comparison_flag,
+            "answer_history_isolation": self.history_mode == "isolated",
+            "guard_verification_skipped": True,
+            "abstain_keeps_original": True,
+            "conductor": {"enabled": bool(self.conductor),
+                          "used": self.conductor_stats["calls"] > 0,
+                          **self.conductor_stats},
+            "planner": {"enabled": bool(self.production_planner),
+                        "detected": self.planner_stats["intent_ok"],
+                        "matrix_built": self.planner_stats["matrix_built"],
+                        "matrix_failed": self.planner_stats["matrix_failed"]},
+            "verifier_mode": self.verifier_mode,
+            "verifier_repair": bool(self.verifier_repair),
+            "usage_accounts_judge_and_repair": True,
+        }
+
+    def run(self, question: str, turns=()) -> dict:
+        app = self.app
+        calls = []
+
+        # 1. planner, 2. conductor when the planner declined — the app's order.
+        plan, matrix_block = self.planner_plan(question)
+        mode, items, cmeta = "retrieve", [{"q": question, "doc": None}], None
+        if plan is None:
+            mode, items, cmeta = self.conduct(question, turns)
+            if cmeta:
+                calls.append(cmeta)
+
+        if mode == "chat":
+            # conversational turn: answered from history, no retrieval, no
+            # evidence — so nothing here is ever verified (see main()).
+            lang = app._detect_lang(question)
+            system = app.assemble_chat(lang)
+            history = [{"role": m["role"], "content": m["content"]}
+                       for m in (turns or [])]
+            return {"guard": False, "chat": True, "guard_answer": None,
+                    "hits": [], "confidence": None, "weak": False,
+                    "plan": items, "decomposed": False, "system": system,
+                    "context": "", "refs_note": None,
+                    "user": question, "calls": calls,
+                    "messages": [{"role": "system", "content": system}]
+                                + history + [{"role": "user", "content": question}],
+                    "notes": {"registry": None, "year": None, "board": None,
+                              "matrix": None}}
+
+        # 3. the registry FP-miss guard, AFTER the conductor as in main()
         guard = self.fp_guard(question)
         if guard is not None:
             # the guard answers FROM the registry, so the registry lookup is
@@ -717,15 +1245,27 @@ class Pipeline:
                 reg = registry.registry_note(question)
             except Exception:
                 reg = None
-            return {"guard": True, "guard_answer": guard, "hits": [],
-                    "system": None, "user": None, "weak": False, "plan": [],
-                    "notes": {"registry": reg, "year": None, "board": None}}
+            return {"guard": True, "chat": False, "guard_answer": guard,
+                    "hits": [], "system": None, "user": None, "weak": False,
+                    "plan": items, "decomposed": False, "calls": calls,
+                    "notes": {"registry": reg, "year": None, "board": None,
+                              "matrix": None}}
 
-        items = self.plan(question)
-        sq = items[0]
-        hits, conf = self.retriever.search_with_confidence(
-            sq["q"], self.top_k, sq.get("doc"))
-        hits = hits[:15]
+        if plan is not None:
+            # Authoritative stems and an English query per document: the raw
+            # message is the wrong query here, and the conductor that would
+            # have translated it was skipped (see _plan_query).
+            items = [{"q": app._plan_query(plan, d), "doc": d.scope}
+                     for d in plan.docs if not d.missing] or items
+        elif self.conductor:
+            # the app's step 7 over the conductor's own output: pre-scope a
+            # lone untagged query, then registry-resolve every surviving tag
+            items = app._resolve_doc_tags(
+                app._prescope_single_fp(items, question))
+        else:
+            items = self.plan(question)
+        decomposed = self._decomposed(items, question, plan)
+        hits, conf, weak = self._retrieve(items, decomposed)
         hits, year_note = app._year_assist(question, hits)
         board_note = app._board_range_note(question)
         if board_note:
@@ -736,7 +1276,6 @@ class Pipeline:
             for h in hits)
         if year_note:
             context = year_note + "\n\n" + context
-        weak = conf < config.MIN_DENSE_SCORE
         if weak:
             context = ("Note: retrieval confidence for this question is LOW — the "
                        "excerpts below may not actually be relevant. Do not force an "
@@ -749,30 +1288,80 @@ class Pipeline:
                 context = reg_note + "\n\n" + context
         except Exception:
             pass
+        if matrix_block:
+            # ABOVE the registry note and the excerpts, as in the app: the
+            # matrix is the complete half of the evidence.
+            context = matrix_block + "\n\n" + context
 
         system = assemble(year=bool(year_note), registry=bool(reg_note),
-                          comparison=self.comparison_proxy and multi_identifier(question),
+                          comparison=decomposed, matrix=bool(matrix_block),
                           lang=app._detect_lang(question))
+        # The referents a follow-up needs, as ids rather than as prose — the
+        # app's own note, built from the same items the retrieval used.
+        refs_note = app._resolved_refs_note(items, question)
+        user = f"Context excerpts:\n{context}\n\nQuestion: {question}"
+        if refs_note:
+            user = f"{refs_note}\n\n{user}"
         return {
-            "guard": False, "guard_answer": None, "hits": hits,
-            "confidence": conf, "weak": weak, "plan": items,
+            "guard": False, "chat": False, "guard_answer": None, "hits": hits,
+            "confidence": conf, "weak": weak, "plan": items, "calls": calls,
+            "decomposed": decomposed,
             "system": system,
-            "user": f"Context excerpts:\n{context}\n\nQuestion: {question}",
-            "notes": {"registry": reg_note, "year": year_note, "board": board_note},
+            "context": context,
+            "refs_note": refs_note,
+            "user": user,
+            "messages": app._answer_messages(system, context, question, refs_note),
+            "notes": {"registry": reg_note, "year": year_note,
+                      "board": board_note, "matrix": matrix_block},
         }
 
 
-def ask_model(client, system: str, turns: list, user: str):
+# ---------------------------------------------------------------------------
+# run pinning (F10)
+# ---------------------------------------------------------------------------
+# Every --release run used to be an independent sample of the answer
+# distribution: no temperature, no seed, and the ALIAS 'gpt-5.2' recorded in
+# place of the snapshot the endpoint actually served. Two runs of the same
+# tree were therefore not comparable, and a snapshot rotation would have moved
+# every number with nothing in the record to show it. Both are pinned here and
+# the served snapshot is read back off each response.
+PIN_TEMPERATURE = 0.0
+PIN_SEED = 20260819
+
+
+def _pinning(temperature=PIN_TEMPERATURE, seed=PIN_SEED) -> dict:
+    """Sampling parameters sent with EVERY call this harness makes.
+
+    ``None`` for either drops it from the request, which is how a run against
+    an endpoint that rejects the parameter is recorded honestly rather than
+    silently unpinned.
+    """
+    out = {}
+    if temperature is not None:
+        out["temperature"] = temperature
+    if seed is not None:
+        out["seed"] = seed
+    return out
+
+
+def ask_model(client, system: str, turns: list, user: str, pins: dict = None,
+              messages: list = None):
     """(answer text, call metadata).
 
     The metadata is the release report's raw material: wall-clock latency of
-    the call that succeeded, and the API's OWN token counts — estimating
-    tokens from the prompt string would be a second, wronger measurement of
-    something the response already reports.
+    the call that succeeded, the API's OWN token counts — estimating tokens
+    from the prompt string would be a second, wronger measurement of something
+    the response already reports — and the model SNAPSHOT the endpoint served,
+    read off the response rather than copied from the alias we asked for.
+
+    ``messages`` overrides the default assembly. The default still prepends
+    ``turns`` as conversation; production does not (see _answer_messages and
+    the history-isolation gap), so the release path passes its own array.
     """
-    messages = [{"role": "system", "content": system}]
-    messages += [{"role": t["role"], "content": t["content"]} for t in turns]
-    messages.append({"role": "user", "content": user})
+    if messages is None:
+        messages = [{"role": "system", "content": system}]
+        messages += [{"role": t["role"], "content": t["content"]} for t in turns]
+        messages.append({"role": "user", "content": user})
     last = None
     for attempt in range(3):
         t0 = time.perf_counter()
@@ -781,13 +1370,17 @@ def ask_model(client, system: str, turns: list, user: str):
                 model=config.CHAT_MODEL,
                 max_completion_tokens=config.MAX_ANSWER_TOKENS,
                 messages=messages,
+                **(pins if pins is not None else _pinning()),
             )
             dt = time.perf_counter() - t0
             u = getattr(resp, "usage", None)
             pt = int(getattr(u, "prompt_tokens", 0) or 0)
             ct = int(getattr(u, "completion_tokens", 0) or 0)
             meta = {"latency_s": round(dt, 3), "attempts": attempt + 1,
-                    "model": config.CHAT_MODEL, "prompt_tokens": pt,
+                    "model": config.CHAT_MODEL,
+                    "snapshot": getattr(resp, "model", None) or config.CHAT_MODEL,
+                    "system_fingerprint": getattr(resp, "system_fingerprint", None),
+                    "prompt_tokens": pt,
                     "completion_tokens": ct,
                     "total_tokens": int(getattr(u, "total_tokens", 0) or 0) or (pt + ct)}
             return (resp.choices[0].message.content or ""), meta
@@ -795,6 +1388,33 @@ def ask_model(client, system: str, turns: list, user: str):
             last = e
             time.sleep(2 * (attempt + 1))
     raise RuntimeError(f"chat call failed after 3 attempts: {last}")
+
+
+# ---------------------------------------------------------------------------
+# what the user is shown  (chainlit_app._verify_reply)
+# ---------------------------------------------------------------------------
+def final_answer(original: str, res) -> tuple:
+    """(body the app would display, where it came from).
+
+    Mirrors `_verify_reply` exactly:
+
+      * ``abstain`` keeps the ORIGINAL body and leads it with a banner — the
+        answer is not deleted, it is captioned;
+      * every other status shows ``res.answer``, and falls back to the
+        original when the verifier returned nothing. Taking ``res.answer``
+        unconditionally scores an empty string as the answer on any path where
+        the verifier declined to produce one.
+
+    ``res is None`` (verification off, or it raised) is the app's other
+    guarantee: the answer exactly as the model wrote it.
+    """
+    if res is None:
+        return original, "model"
+    status = getattr(res, "status", None)
+    if status == "abstain":
+        return original, "abstain-original"
+    text = getattr(res, "answer", None) or original
+    return text, ("verifier" if text != original else "model")
 
 
 # ---------------------------------------------------------------------------
@@ -930,29 +1550,79 @@ def print_release_table(rows: list, cases_total: int = None):
     print(f"  missed                      : {missed}")
     _print_field_breakdown(fields)
 
-    print("\nCLAIM SUPPORT — verify.extract_claims vs the turn's own evidence "
-          "(deterministic)")
+    print("\nCLAIM SUPPORT — verify.extract_claims vs the turn's own evidence")
     tot = sum(c["claims"] for c in claims)
     sup = sum(c["supported"] for c in claims)
     con = sum(c["contradicted"] for c in claims)
     uns = sum(c["unsupported"] for c in claims)
+    grd = sum(c.get("grounded") or 0 for c in claims)
+    cis = sum(c.get("citation_supported") or 0 for c in claims)
+    cit = sum(c.get("cited") or 0 for c in claims)
     rate = (sup / tot) if tot else 0.0
+    need = -(-int(CLAIM_SUPPORT_GATE * 1000) * tot // 1000)   # ceil(0.95 * d)
     print(f"  claims                      : {tot} over {len(claims)} answers")
-    print(f"  supported                   : {sup} ({rate:.1%})  "
-          f"gate >= {CLAIM_SUPPORT_GATE:.0%} — "
-          f"{'PASS' if tot and rate >= CLAIM_SUPPORT_GATE else 'FAIL'}")
+    print(f"  supported                   : {sup}/{tot} ({rate:.1%})  "
+          f"gate >= {need}/{tot} — "
+          f"{'PASS' if tot and sup >= need else 'FAIL'}")
+    print(f"  groundedness                : {grd}/{tot} "
+          f"({(grd / tot if tot else 0):.1%})   "
+          f"[any held evidence entails the claim]")
+    print(f"  citation completeness       : {cis}/{tot} "
+          f"({(cis / tot if tot else 0):.1%})   [cited AND supported]")
+    print(f"  citation presence           : {cit}/{tot} "
+          f"({(cit / tot if tot else 0):.1%})   [reported, never gated]")
     print(f"  contradicted                : {con}")
     print(f"  unsupported                 : {uns}")
     _print_claim_breakdown(scored)
 
+    skips = [r for r in rows if r.get("claims_skipped")]
+    if skips:
+        removed = sum(s["claims_skipped"]["claims_removed"] for s in skips)
+        sup_removed = sum(s["claims_skipped"]["supported_removed"] for s in skips)
+        print("\nDENOMINATOR — claims REMOVED from the population above")
+        print(f"  unverified-turn skip: {len(skips)} cases, "
+              f"{removed} claims ({sup_removed} of them supported)")
+        for s in skips:
+            print(f"    {s['id']:26} -{s['claims_skipped']['claims_removed']} "
+                  f"claims   {s['claims_skipped']['reason'][:44]}")
+
+    jc = [r for r in rows if r.get("judge_candidates") is not None]
+    if any(r.get("verify_status") for r in rows):
+        exhausted = sum(int(r.get("judge_budget_exhausted") or 0) for r in jc)
+        cand = sum(int(r.get("judge_candidates") or 0) for r in jc)
+        print("\nJUDGE BUDGET (F9)")
+        print(f"  candidates sent            : {cand} over {len(jc)} cases "
+              f"(cap {JUDGE_MAX_CLAIMS}/case)")
+        print(f"  budget exhausted           : {exhausted}/{len(jc)} cases "
+              f"— gate 0 — {'PASS' if exhausted == 0 else 'FAIL'}")
+        st = defaultdict(int)
+        for r in rows:
+            if r.get("verify_status"):
+                st[r["verify_status"]] += 1
+        print("  verifier status            : "
+              + ", ".join(f"{k} {v}" for k, v in sorted(st.items())))
+
     print("\nLATENCY / COST")
     print(f"  model calls                 : {u['calls']}")
-    print(f"  latency p50 / p95           : "
+    print(f"  turn latency p50 / p95      : "
           + (f"{u['p50']:.1f}s / {u['p95']:.1f}s" if u["p50"] is not None else "n/a")
           + (f"   (max {u['max']:.1f}s, {u['sum']:.0f}s of model wall-clock)"
-             if u["max"] is not None else ""))
+             if u["max"] is not None else "")
+          + "   [every call the turn made]")
+    print(f"  answer-call p50 / p95       : "
+          + (f"{u['answer_p50']:.1f}s / {u['answer_p95']:.1f}s"
+             if u.get("answer_p50") is not None else "n/a")
+          + "   [comparable with release-1, which measured only this]")
     print(f"  tokens                      : prompt {u['prompt_tokens']:,} + "
           f"completion {u['completion_tokens']:,} = {u['total_tokens']:,}")
+    if u.get("by_role"):
+        print("  per role                    :")
+        for role, r in u["by_role"].items():
+            rc = (r["prompt_tokens"] * TOKEN_COST_USD["prompt"]
+                  + r["completion_tokens"] * TOKEN_COST_USD["completion"])
+            print(f"    {role:14} {r['calls']:>4} calls  "
+                  f"{r['prompt_tokens']:>8,}p + {r['completion_tokens']:>7,}c  "
+                  f"{r['latency_s']:>7.1f}s  ${rc:.3f}")
     print(f"  estimated cost              : ${u['cost_usd']:.2f}  "
           f"(ESTIMATED rates: ${TOKEN_COST_USD['prompt'] * 1e6:.2f}/1M prompt, "
           f"${TOKEN_COST_USD['completion'] * 1e6:.2f}/1M completion)")
@@ -963,11 +1633,18 @@ def print_release_table(rows: list, cases_total: int = None):
     else:
         for r in errored:
             print(f"  {r['id']:26} {r['error'][:110]}")
-    return {"fields": {"cells": cells, "scorable": scorable, "stated": stated,
+    return {"claims_skipped": {
+                "cases": [r["id"] for r in rows if r.get("claims_skipped")],
+                "claims_removed": sum(r["claims_skipped"]["claims_removed"]
+                                      for r in rows if r.get("claims_skipped")),
+                "supported_removed": sum(r["claims_skipped"]["supported_removed"]
+                                         for r in rows if r.get("claims_skipped"))},
+            "fields": {"cells": cells, "scorable": scorable, "stated": stated,
                        "marked_missing": marked, "missed": missed,
                        "unscorable": unscorable},
             "claims": {"total": tot, "supported": sup, "contradicted": con,
-                       "unsupported": uns, "rate": rate},
+                       "unsupported": uns, "rate": rate, "grounded": grd,
+                       "citation_supported": cis, "cited": cit},
             "usage": u, "errors": [r["id"] for r in errored]}
 
 
@@ -1082,18 +1759,28 @@ def run_gate(pipe: Pipeline, gold_path: Path):
 
 
 def run_eval(args, cases: list) -> list:
-    pipe = Pipeline(top_k=args.k, comparison_proxy=not args.no_comparison_proxy,
-                    raw_retrieval=args.raw_retrieval,
-                    scope_single_id=args.scope_single_id)
-    print(f"retriever ready in {pipe.load_seconds:.1f}s — "
-          f"{pipe.meta.get('n_chunks')} chunks, {pipe.meta.get('embedding_model')}")
-    if args.gate:
-        run_gate(pipe, GOLD_SET)
-
+    flag = "off" if getattr(args, "no_comparison_proxy", False) else \
+        getattr(args, "comparison_flag", "decomposed")
     client = None
     if args.answers:
         import openai
         client = openai.OpenAI(base_url=config.OPENAI_BASE_URL or None)
+    pins = _pinning(getattr(args, "temperature", PIN_TEMPERATURE),
+                    getattr(args, "seed", PIN_SEED))
+    pipe = Pipeline(top_k=args.k, comparison_flag=flag,
+                    raw_retrieval=args.raw_retrieval,
+                    scope_single_id=args.scope_single_id,
+                    history_mode=getattr(args, "history_mode", "isolated"),
+                    production_planner=bool(getattr(args, "production_planner",
+                                                    False)),
+                    conductor=bool(getattr(args, "conductor", False)),
+                    client=client, pins=pins,
+                    verifier_mode=getattr(args, "verifier_mode", "deterministic"),
+                    verifier_repair=bool(getattr(args, "verifier_repair", False)))
+    print(f"retriever ready in {pipe.load_seconds:.1f}s — "
+          f"{pipe.meta.get('n_chunks')} chunks, {pipe.meta.get('embedding_model')}")
+    if args.gate:
+        run_gate(pipe, GOLD_SET)
 
     rows, skipped = [], []
     t0 = time.perf_counter()
@@ -1121,8 +1808,10 @@ def run_eval(args, cases: list) -> list:
                   + (f"score={rec['score']:.2f}" if args.answers else ""))
         elif args.answers:
             u = rec.get("usage") or {}
+            lat = u.get("turn_latency_s")
             print(f"[{i}/{len(cases)}] {case['id']:26} score={rec['score']:.2f}"
-                  + (f" {u['latency_s']:.1f}s {u['total_tokens']}tok" if u else ""),
+                  + (f" {lat:.1f}s {u['total_tokens']}tok"
+                     if lat is not None else ""),
                   flush=True)
 
     dt = time.perf_counter() - t0
@@ -1141,6 +1830,13 @@ def run_eval(args, cases: list) -> list:
     return rows
 
 
+def _verify_client(client, sink: list):
+    """The client the verifier gets: a metered proxy, or None with no client."""
+    if client is None:
+        return None
+    return MeteredClient(client, sink)
+
+
 def _safe(fn, *a, **kw):
     """Run a scorer; a scorer that raises must not throw away an answer that
     cost a model call. The failure is recorded in place of its metrics."""
@@ -1151,37 +1847,96 @@ def _safe(fn, *a, **kw):
 
 
 def _run_case(pipe, client, args, case: dict) -> dict:
-    out = pipe.run(case["question"])
+    out = pipe.run(case["question"], case.get("turns") or ())
     rec = {
         "id": case["id"], "class": case["class"], "lang": case["lang"],
         "question": case["question"], "turns": len(case["turns"]),
         "mode": "answers" if args.answers else "retrieval-only",
-        "guard": out["guard"], "weak_signal": out.get("weak"),
+        "guard": out["guard"], "chat": bool(out.get("chat")),
+        "weak_signal": out.get("weak"),
         "plan": out.get("plan") or [],
+        "decomposed": out.get("decomposed"),
+        "refs_note": out.get("refs_note"),
+        "matrix": bool((out.get("notes") or {}).get("matrix")),
         "retrieval": score_retrieval(case, out["hits"]),
         "expect": case["expect"],
+        "pipeline_parity": pipe.parity(),
     }
     rec["retrieval_score"] = retrieval_score(rec["retrieval"])
     if not args.answers:
         rec["score"] = rec["retrieval_score"]
         return rec
 
-    answer, usage = out["guard_answer"], {}
+    answer, verdict_result = out["guard_answer"], None
+    calls = list(out.get("calls") or [])
+    judge_acct = {"judge_candidates": 0, "judge_max_claims": JUDGE_MAX_CLAIMS,
+                  "judge_budget_exhausted": 0}
+    prod_block = None
     if answer is None:
-        answer, usage = ask_model(client, out["system"], case["turns"], out["user"])
+        isolated = getattr(args, "history_mode", "isolated") == "isolated"
+        answer, ameta = ask_model(
+            client, out["system"], () if isolated else case["turns"],
+            out["user"],
+            pins=_pinning(getattr(args, "temperature", PIN_TEMPERATURE),
+                          getattr(args, "seed", PIN_SEED)),
+            messages=out.get("messages") if isolated else None)
+        ameta["role"] = "answer"
+        calls.append(ameta)
+    usage = turn_usage(calls)
     notes = out.get("notes") or {}
+    if (pipe.verifier_mode == "production" and not out["guard"]
+            and not out.get("chat")):
+        # The app verifies BEFORE the answer becomes history, on the text the
+        # model wrote; what the user is shown is decided from the result.
+        verdict_result, prod_block, judge_acct = verify_production(
+            answer, out["hits"],
+            [notes.get("registry"), notes.get("year"), notes.get("matrix")],
+            client=_verify_client(client, calls),
+            allow_repair=pipe.verifier_repair,
+            full_failures=bool(getattr(args, "release", False)))
+        usage = turn_usage(calls)
+    raw_answer = answer
+    answer, answer_source = final_answer(raw_answer, verdict_result)
     rec.update({
         "answer": answer,
+        "raw_answer": raw_answer,
+        "answer_source": answer_source,
         "checks": score_answer(case, answer, out["hits"]),
         "model": config.CHAT_MODEL,
         "usage": usage,
         "fields": _safe(score_fields, case, answer),
-        "claims": _safe(score_claims, answer, out["hits"],
-                        [notes.get("registry"), notes.get("year")]),
-        "hits": [{"doc": h.doc_id, "page": _page(h), "score": round(h.score, 4)}
+        # F7: the coordinates alone cannot be adjudicated — 'is this claim
+        # entailed by the held evidence?' needs the evidence. Recording the
+        # text is what makes a release run replayable without re-retrieval.
+        "hits": [{"doc": h.doc_id, "page": _page(h), "score": round(h.score, 4),
+                  "text": h.text}
                  for h in out["hits"]],
         "notes_used": {k: v for k, v in notes.items() if v},
     })
+    note_blocks = [notes.get("registry"), notes.get("year"), notes.get("matrix")]
+    full = bool(getattr(args, "release", False))
+    if out["guard"] or out.get("chat"):
+        # Production returns here, before build_evidence: a guard answer has no
+        # verdicts at all. Scoring it anyway is measured and published, never
+        # silently folded into the rate — hence the count on its own key.
+        would = _safe(score_claims, answer, out["hits"], note_blocks,
+                      full_failures=full)
+        rec["claims"] = None
+        rec["claims_skipped"] = {
+            "reason": ("chat-mode turn: production answers from history and "
+                       "builds no evidence" if out.get("chat") else
+                       "guard-answer: production returns before verification"),
+            "claims_removed": int((would or {}).get("claims") or 0),
+            "supported_removed": int((would or {}).get("supported") or 0)}
+    elif prod_block is not None:
+        rec["claims"] = prod_block
+        rec["claims_skipped"] = None
+    else:
+        rec["claims"] = _safe(score_claims, answer, out["hits"], note_blocks,
+                              full_failures=full)
+        rec["claims_skipped"] = None
+    rec.update(judge_acct)
+    rec["verify_status"] = getattr(verdict_result, "status", None)
     rec["score"] = rec["checks"]["score"]
     return rec
 
@@ -1209,7 +1964,7 @@ def _print_failures(rows: list):
         print(f"  {r['id']:26} {r['score']:.2f}  " + " | ".join(why))
 
 
-def run_compare(path_a: Path, path_b: Path):
+def run_compare(path_a: Path, path_b: Path, require_metrics: list = None):
     def _load(p):
         return {json.loads(l)["id"]: json.loads(l)
                 for l in p.read_text(encoding="utf-8").splitlines() if l.strip()}
@@ -1263,7 +2018,7 @@ def run_compare(path_a: Path, path_b: Path):
         print("\nper-case changes:")
         for i, sa, sb, tag in sorted(changed, key=lambda c: (c[3], c[0])):
             print(f"  {tag:6} {i:26} {sa:.2f} -> {sb:.2f}")
-    _compare_extras(a, b, shared)
+    return _compare_extras(a, b, shared, require_metrics)
 
 
 def _extra_rates(rec: dict):
@@ -1276,28 +2031,174 @@ def _extra_rates(rec: dict):
     """
     f = rec.get("fields")
     c = rec.get("claims")
-    return ((f or {}).get("coverage") if isinstance(f, dict) else None,
-            (c or {}).get("support_rate") if isinstance(c, dict) else None)
+    out = {"field coverage": (f or {}).get("coverage") if isinstance(f, dict) else None}
+    for name, key in (("claim support", "support_rate"),
+                      ("groundedness", "groundedness_rate"),
+                      ("citation completeness", "citation_completeness_rate"),
+                      ("citation presence", "citation_presence_rate")):
+        out[name] = (c or {}).get(key) if isinstance(c, dict) else None
+    return out
 
 
-def _compare_extras(a: dict, b: dict, shared: list):
-    pairs = {"field coverage": [], "claim support": []}
+# metric name -> the record key --require-metrics names it by
+_REQUIRABLE = {"support_rate": "claim support",
+               "groundedness_rate": "groundedness",
+               "citation_completeness_rate": "citation completeness",
+               "citation_presence_rate": "citation presence",
+               "field_coverage": "field coverage"}
+
+
+def _compare_extras(a: dict, b: dict, shared: list, require_metrics: list = None):
+    pairs = defaultdict(list)
+    missing = defaultdict(int)
     for i in shared:
-        fa, ca = _extra_rates(a[i])
-        fb, cb = _extra_rates(b[i])
-        if fa is not None and fb is not None:
-            pairs["field coverage"].append((fa, fb))
-        if ca is not None and cb is not None:
-            pairs["claim support"].append((ca, cb))
+        ra, rb = _extra_rates(a[i]), _extra_rates(b[i])
+        for name in ra:
+            if ra[name] is not None and rb[name] is not None:
+                pairs[name].append((ra[name], rb[name]))
+            else:
+                missing[name] += 1
     lines = [(name, vs) for name, vs in pairs.items() if vs]
-    if not lines:
-        return
-    print("\n(metrics present in both runs)")
+    if lines:
+        print("\n(metrics present in both runs)")
     for name, vs in lines:
         ma = sum(x for x, _ in vs) / len(vs)
         mb = sum(y for _, y in vs) / len(vs)
-        print(f"  {name:16} {len(vs):>3} cases  {ma:>6.1%} -> {mb:>6.1%} "
+        print(f"  {name:22} {len(vs):>3} cases  {ma:>6.1%} -> {mb:>6.1%} "
               f"{mb - ma:>+7.1%}")
+    if not require_metrics:
+        return None
+    # A required metric that is absent, or None on either side, is a hard
+    # failure: "no regression" reported over a metric nobody could compute is
+    # the failure mode this flag exists to close.
+    report = {"no_regression": True, "metrics": {}, "missing": [],
+              "cases_compared": len(shared)}
+    for key in require_metrics:
+        name = _REQUIRABLE.get(key)
+        if name is None:
+            report["missing"].append(f"{key}: not a comparable metric")
+            report["no_regression"] = False
+            continue
+        vs = pairs.get(name) or []
+        if not vs or missing.get(name):
+            report["missing"].append(
+                f"{key}: {missing.get(name, len(shared))} of {len(shared)} "
+                f"cases carry no value on one side")
+            report["no_regression"] = False
+            if not vs:
+                report["metrics"][key] = {"a": None, "b": None, "delta": None}
+                continue
+        ma = sum(x for x, _ in vs) / len(vs)
+        mb = sum(y for _, y in vs) / len(vs)
+        report["metrics"][key] = {"a": ma, "b": mb, "delta": mb - ma,
+                                  "cases": len(vs)}
+        if mb < ma - 1e-9:
+            report["no_regression"] = False
+    print("\n" + json.dumps(report, indent=1))
+    return report
+
+
+def _evidence_from_backfill(row: dict) -> dict:
+    """The Evidence dict a backfilled row reconstructs.
+
+    The backfill's own precondition — every recorded (doc,page,score) triple
+    reproduces — is re-checked here rather than trusted: a rescoring built on
+    evidence that does not match what the turn held is a different
+    measurement wearing the same label.
+    """
+    if not row.get("evidence_keys_match", False):
+        raise ValueError(f"{row.get('case_id')}: backfilled evidence keys do "
+                         "not match the recorded ones")
+    out = {}
+    for e in row.get("evidence") or []:
+        out[(e["doc"], e["page"])] = e["text"]
+    return out
+
+
+def _evidence_from_record(row: dict):
+    """The Evidence dict a post-F7 record rebuilds from its own hits."""
+    hits = row.get("hits") or []
+    if not hits or not all("text" in h for h in hits):
+        return None
+    from gcf_qna.rag.retrieve import Hit
+    notes = [v for v in (row.get("notes_used") or {}).values() if v]
+    return verify.build_evidence(
+        [Hit(text=h["text"], doc_id=h["doc"], score=float(h.get("score") or 0.0),
+             page=h.get("page") or None) for h in hits], notes)
+
+
+def run_rescore(record: Path, out: Path, evidence: Path = None,
+                force: bool = False) -> int:
+    """Recompute claims metrics over a recorded run. No model is called.
+
+    The recorded block is kept beside the new one under `claims_recorded`:
+    the point of a rescoring is the DIFFERENCE, and a file that overwrites the
+    old number has destroyed the comparison it exists to make.
+    """
+    rows = [json.loads(l) for l in
+            record.read_text(encoding="utf-8").splitlines() if l.strip()]
+    back = {}
+    if evidence:
+        for line in evidence.read_text(encoding="utf-8").splitlines():
+            if line.strip():
+                r = json.loads(line)
+                back[r.get("case_id") or r.get("id")] = r
+    if out.exists() and not force:
+        raise SystemExit(_overwrite_refusal(out))
+
+    agg = defaultdict(int)
+    done = []
+    for row in rows:
+        answer = row.get("answer")
+        if row.get("error") or not answer:
+            done.append(row)
+            continue
+        src = "record"
+        ev = _evidence_from_record(row)
+        if ev is None:
+            b = back.get(row.get("id"))
+            if b is None:
+                raise SystemExit(
+                    f"{row['id']}: hits carry no text and no backfilled "
+                    f"evidence row was supplied (--evidence)")
+            ev, src = _evidence_from_backfill(b), "backfill"
+            if (b.get("answer") or "") != answer:
+                raise SystemExit(f"{row['id']}: backfill answer differs from "
+                                 "the recorded answer")
+        claims = verify.extract_claims(answer)
+        verdicts = verify.classify_deterministic(claims, ev)
+        new = claim_metrics(claims, verdicts, ev, full_failures=True)
+        old = row.get("claims") if isinstance(row.get("claims"), dict) else {}
+        row["claims_recorded"] = old or None
+        row["claims"] = new
+        row["rescored"] = {"evidence_source": src, "api_calls": 0,
+                           "verify_blob_sha": _sha256_file(VERIFY_PY)}
+        agg["claims"] += new["claims"]
+        agg["supported"] += new["supported"]
+        agg["grounded"] += new["grounded"]
+        agg["citation_supported"] += new["citation_supported"]
+        agg["cited"] += new["cited"]
+        agg["was_claims"] += int(old.get("claims") or 0)
+        agg["was_supported"] += int(old.get("supported") or 0)
+        done.append(row)
+
+    out.parent.mkdir(parents=True, exist_ok=True)
+    out.write_text("".join(json.dumps(r, ensure_ascii=False) + "\n" for r in done),
+                   encoding="utf-8")
+    d, wd = agg["claims"], agg["was_claims"]
+    print(f"rescored {record.name} -> {out}")
+    print(f"  verify.py blob              : {_sha256_file(VERIFY_PY)[:12]}")
+    print(f"  claims                      : {wd} recorded -> {d} rescored "
+          f"({d - wd:+d})")
+    print(f"  supported (as recorded)     : {agg['was_supported']}/{wd}")
+    print(f"  supported (rescored)        : {agg['supported']}/{d}")
+    print(f"  citation completeness       : {agg['citation_supported']}/{d}")
+    print(f"  groundedness                : {agg['grounded']}/{d}")
+    print(f"  citation presence           : {agg['cited']}/{d}")
+    if agg["supported"] != agg["citation_supported"]:
+        print("  NOTE: supported != citation_supported — this file was not "
+              "scored in deterministic mode")
+    return 0
 
 
 def record_path(label: str, prefix: str = "answers_baseline_") -> Path:
@@ -1335,6 +2236,211 @@ def record(rows: list, label: str, prefix: str = "answers_baseline_",
     return out
 
 
+# ---------------------------------------------------------------------------
+# run metadata — what has to be true again for a run to be reproducible
+# ---------------------------------------------------------------------------
+VERIFY_PY = ROOT / "src" / "gcf_qna" / "rag" / "verify.py"
+
+
+def artifact_hashes() -> dict:
+    """The retrieval and registry artifacts a recorded run was scored against.
+
+    Wave 3's gate diffs these against the deployed fingerprint: a run scored
+    on a locally rebuilt index is not a production-parity run however faithful
+    the code path is, and without the hashes in the record there is nothing to
+    catch that after the fact.
+    """
+    idx = config.INDEX_DIR / os.getenv("INDEX_NAME", "default")
+    return {
+        "index_dir": str(idx),
+        "index_config_sha256": _sha256_file(idx / "config.json"),
+        "index_faiss_sha256": _sha256_file(idx / "index.faiss"),
+        "index_chunks_sha256": _sha256_file(idx / "chunks.jsonl"),
+        "registry_sha256": _sha256_file(ROOT / "data" / "registry.json"),
+        "registry_v2_sha256": _sha256_file(ROOT / "data" / "registry_v2.json"),
+    }
+
+
+# Field-for-field, the deployed switches a `level=full` record must match
+# (plan, Wave 3: CONDUCTOR/PLANNER/VERIFY/VERIFY_LLM/VERIFY_REPAIR/INDEX_NAME/
+# CHAT_MODEL plus the app commit sha).
+FINGERPRINT_FILE = ROOT / "docs" / "deployed-env-fingerprint.txt"
+DEPLOYED_LOG = ROOT / "docs" / "DEPLOYED.md"
+
+
+def deployment_fingerprint(path: Path = None) -> dict:
+    """What production is running, from tracked files only.
+
+    Wave −1 step 6 captures `docs/deployed-env-fingerprint.txt` over ssh; that
+    is an owner action and it has not been performed, so this falls back to
+    the two tracked artifacts that do exist — the `docs/DEPLOYED.md` row the
+    deploy printed (sha + the PLANNER/VERIFY/VERIFY_REPAIR lines of the .env
+    that shipped) and the local `.env`, which Wave −1 makes the source of
+    truth for production's switches because it rsyncs by design. The source is
+    recorded so a reader is never left guessing which one answered.
+    """
+    path = path or FINGERPRINT_FILE
+    out = {"source": None, "sha": None, "switches": {},
+           "remote_artifacts_verified": False, "notes": []}
+    if path.exists():
+        try:
+            out["source"] = str(path.relative_to(ROOT))
+        except ValueError:
+            out["source"] = str(path)
+        text = path.read_text(encoding="utf-8", errors="replace")
+        for line in text.splitlines():
+            m = re.match(r"\s*([A-Z_]+)=(\S*)", line)
+            if m:
+                out["switches"][m.group(1)] = m.group(2)
+        m = re.search(r"fp-gcf:([0-9a-f]{7,40})", text)
+        if m:
+            out["sha"] = m.group(1)
+        out["remote_artifacts_verified"] = "local-artifacts" in text
+        return out
+    out["source"] = "docs/DEPLOYED.md + .env (deployed-env-fingerprint.txt absent)"
+    out["notes"].append(
+        "docs/deployed-env-fingerprint.txt is missing (Wave −1 step 6 / owner "
+        "action 6 not performed): the deployed switches come from the tracked "
+        "DEPLOYED.md row and the local .env, and the REMOTE artifact hashes "
+        "were not read — no ssh from this harness.")
+    try:
+        rows = [l for l in DEPLOYED_LOG.read_text(encoding="utf-8").splitlines()
+                if re.match(r"\|\s*\d{4}-\d{2}-\d{2}T", l)]
+        if rows:
+            cells = [c.strip() for c in rows[-1].strip("|").split("|")]
+            out["sha"] = cells[1]
+            for kv in cells[2].split():
+                if "=" in kv:
+                    k, v = kv.split("=", 1)
+                    out["switches"][k] = v
+    except Exception as e:                                   # noqa: BLE001
+        out["notes"].append(f"DEPLOYED.md unreadable: {type(e).__name__}: {e}")
+    for key in ("CONDUCTOR", "PLANNER", "VERIFY", "VERIFY_LLM", "VERIFY_REPAIR",
+                "INDEX_NAME", "CHAT_MODEL"):
+        out["switches"].setdefault(key, _shipped_default(key))
+    return out
+
+
+def _shipped_default(key: str) -> str:
+    """The value production reads when `.env` is silent: the code default."""
+    return {"CONDUCTOR": "1" if config.CONDUCTOR else "0",
+            "PLANNER": "1" if config.PLANNER else "0",
+            "VERIFY": "1" if config.VERIFY else "0",
+            "VERIFY_LLM": "1" if config.VERIFY_LLM else "0",
+            "VERIFY_REPAIR": "1" if config.VERIFY_REPAIR else "0",
+            "INDEX_NAME": os.getenv("INDEX_NAME", "default"),
+            "CHAT_MODEL": config.CHAT_MODEL}.get(key, "")
+
+
+def app_source_matches(deployed_sha: str) -> bool:
+    """Is the app source this harness imports identical to the deployed one?
+
+    The image is built `COPY src/ src/`, so the deployed artifact is a source
+    tree and not a commit: a later commit touching only docs runs the same
+    application. Comparing shas would call that a drift; comparing nothing
+    would miss a real one.
+    """
+    if not deployed_sha:
+        return False
+    import subprocess
+    try:
+        return subprocess.run(
+            ["git", "diff", "--quiet", deployed_sha, "HEAD", "--", "src/"],
+            cwd=str(ROOT), capture_output=True, timeout=30).returncode == 0
+    except Exception:                                # noqa: BLE001
+        return False
+
+
+def _parity_level(parity: dict, deployed: dict, git_sha: str = None) -> tuple:
+    """(level, mismatches) — "full" only when nothing is missing.
+
+    Two independent halves, and BOTH have to hold: every gap in the Wave-3
+    table closed in this harness, and the deployed configuration matching the
+    harness's pinned one field-for-field. A harness that mirrors production
+    perfectly is still not measuring production if production is running
+    something else.
+    """
+    gaps = []
+    if not parity.get("production_single_id_prescope"):
+        gaps.append("gap1-prescope")
+    if parity.get("comparison_flag") != "decomposed":
+        gaps.append("gap2-comparison-flag")
+    if not parity.get("abstain_keeps_original"):
+        gaps.append("gap3-abstain")
+    if not parity.get("guard_verification_skipped"):
+        gaps.append("gap4-guard")
+    if not parity.get("answer_history_isolation"):
+        gaps.append("gap5-history-isolation")
+    if not (parity.get("planner") or {}).get("enabled"):
+        gaps.append("gap6-planner")
+    if not (parity.get("conductor") or {}).get("enabled"):
+        gaps.append("gap7-conductor")
+    if parity.get("verifier_mode") != "production":
+        gaps.append("gap8-verifier-config")
+    if not parity.get("usage_accounts_judge_and_repair"):
+        gaps.append("gap9-usage-accounting")
+    want = {"CONDUCTOR": "1" if (parity.get("conductor") or {}).get("enabled") else "0",
+            "PLANNER": "1" if (parity.get("planner") or {}).get("enabled") else "0",
+            "VERIFY": "1" if parity.get("verifier_mode") == "production" else "0",
+            "VERIFY_LLM": "1" if parity.get("verifier_mode") == "production" else "0",
+            "VERIFY_REPAIR": "1" if parity.get("verifier_repair") else "0",
+            "INDEX_NAME": os.getenv("INDEX_NAME", "default"),
+            "CHAT_MODEL": config.CHAT_MODEL}
+    drift = [f"{k}: deployed {deployed['switches'].get(k)!r} != harness {v!r}"
+             for k, v in want.items() if deployed["switches"].get(k) != v]
+    if deployed.get("sha") and git_sha and not git_sha.startswith(deployed["sha"]):
+        if app_source_matches(deployed["sha"]):
+            note = (f"harness HEAD {git_sha[:7]} is past the deployed "
+                    f"{deployed['sha']}, but src/ is byte-identical — the image "
+                    f"is built COPY src/ src/, so the deployed application is "
+                    f"this source tree")
+            notes = deployed.setdefault("notes", [])
+            if note not in notes:      # one dict, 66 rows: append once
+                notes.append(note)
+        else:
+            drift.append(f"app source: deployed {deployed['sha']} differs from "
+                         f"harness {git_sha[:7]} under src/")
+    if gaps:
+        return "partial: " + ",".join(gaps), drift
+    if not deployed.get("sha"):
+        return "partial: unverified-deployment", drift
+    if drift:
+        return "partial: deployment-drift", drift
+    return "full", drift
+
+
+def run_meta(args) -> dict:
+    """Run-level facts stamped onto EVERY recorded row.
+
+    On every row, not in a header line: `--compare` keys recorded files by
+    case id, so a header row would need special-casing in every consumer, and
+    a run whose rows disagree about which verify.py scored them is a defect
+    worth being able to see.
+    """
+    import subprocess
+    try:
+        git_sha = subprocess.run(["git", "rev-parse", "HEAD"], cwd=str(ROOT),
+                                 capture_output=True, text=True,
+                                 timeout=10).stdout.strip() or None
+    except Exception:
+        git_sha = None
+    return {
+        "verify_blob_sha": _sha256_file(VERIFY_PY),
+        "git_sha": git_sha,
+        "artifacts": artifact_hashes(),
+        "harness": {
+            "model_alias": config.CHAT_MODEL,
+            "temperature": getattr(args, "temperature", PIN_TEMPERATURE),
+            "seed": getattr(args, "seed", PIN_SEED),
+            "top_k": getattr(args, "k", config.TOP_K),
+            "max_answer_tokens": config.MAX_ANSWER_TOKENS,
+        },
+        "ambient_env": {k: os.getenv(k) for k in
+                        ("PLANNER", "CONDUCTOR", "VERIFY", "VERIFY_LLM",
+                         "VERIFY_REPAIR", "INDEX_NAME", "CHAT_MODEL")},
+    }
+
+
 def main(argv=None):
     ap = argparse.ArgumentParser(
         description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
@@ -1350,6 +2456,17 @@ def main(argv=None):
                          "--record writes data/eval/release_<LABEL>.jsonl")
     ap.add_argument("--compare", nargs=2, metavar=("A", "B"), type=Path,
                     help="diff two recorded runs")
+    ap.add_argument("--require-metrics", type=lambda s: [x for x in s.split(",") if x],
+                    help="comma-separated metric keys --compare must find on "
+                         "BOTH sides; prints a no_regression JSON object and "
+                         "exits 1 on a regression, a None or a missing key")
+    ap.add_argument("--rescore-record", type=Path, metavar="REC",
+                    help="recompute a recorded run's claims metrics offline, "
+                         "zero API calls (needs --out)")
+    ap.add_argument("--evidence", type=Path,
+                    help="backfilled evidence for --rescore-record, when the "
+                         "record's own hits carry no text")
+    ap.add_argument("--out", type=Path, help="output path for --rescore-record")
     ap.add_argument("--gate", action="store_true",
                     help="also re-check the gold_set retrieval floor in-process")
     ap.add_argument("--sample", type=int, help="evaluate N class-stratified cases")
@@ -1363,24 +2480,93 @@ def main(argv=None):
                          "that measurement (a re-run is a different sample), "
                          "so overwriting one has to be deliberate.")
     ap.add_argument("--k", type=int, default=config.TOP_K, help="hits per query")
+    ap.add_argument("--verifier-mode", choices=("deterministic", "production"),
+                    default="deterministic",
+                    help="'deterministic' is the cheap zero-API instrument "
+                         "(classify_deterministic only); 'production' runs "
+                         "verify.verify_answer(use_llm=1) exactly as the app "
+                         "does, judge call included")
+    ap.add_argument("--verifier-repair", action="store_true",
+                    help="allow the constrained repair rewrite "
+                         "(verify_answer(allow_repair=1)). OFF by default, as "
+                         "production runs it; NEVER read from the environment")
+    ap.add_argument("--conductor", dest="conductor", action="store_true",
+                    default=None,
+                    help="run the real per-turn LLM conductor (mode routing + "
+                         "English sub-queries), as production does at "
+                         "CONDUCTOR=1. Default ON for --release, OFF otherwise; "
+                         "costs one extra model call per case")
+    ap.add_argument("--no-conductor", dest="conductor", action="store_false",
+                    help="disable the conductor even under --release")
+    ap.add_argument("--production-planner", dest="production_planner",
+                    action="store_true", default=None,
+                    help="run the deterministic comparison planner and its "
+                         "evidence matrix, as production does at PLANNER=1. "
+                         "Default ON for --release, OFF otherwise")
+    ap.add_argument("--no-production-planner", dest="production_planner",
+                    action="store_false",
+                    help="disable the planner even under --release")
+    ap.add_argument("--history-mode", choices=("isolated", "prepend"),
+                    default="isolated",
+                    help="'isolated' is production (_answer_messages: system + "
+                         "one user turn, referents via the resolved-refs note); "
+                         "'prepend' is the retired harness behaviour that fed "
+                         "the fixture's turns to the answer model as history")
+    ap.add_argument("--comparison-flag", choices=sorted(COMPARISON_FLAGS),
+                    default="decomposed",
+                    help="how COMPARISON_BLOCK is gated: 'decomposed' is "
+                         "production's own flag (the plan fanned out); 'proxy' "
+                         "is the retired identifier-count stand-in; 'off' never "
+                         "ships it")
     ap.add_argument("--no-comparison-proxy", action="store_true",
-                    help="never ship COMPARISON_BLOCK (the app gates it on the "
-                         "conductor's fan-out, which this harness skips)")
+                    help="deprecated alias for --comparison-flag off")
     ap.add_argument("--raw-retrieval", action="store_true",
                     help="bypass the app's _rescope_items/_resolve_doc_tags "
                          "guards and search the raw question")
     ap.add_argument("--scope-single-id", action="store_true",
                     help="A/B only, NOT production: doc-scope questions naming "
                          "exactly one FP, to measure what tag resolution buys")
+    ap.add_argument("--seed", type=int, default=PIN_SEED,
+                    help="sampling seed sent with every model call; -1 sends "
+                         "none (records the run as unpinned)")
+    ap.add_argument("--temperature", type=float, default=PIN_TEMPERATURE,
+                    help="sampling temperature sent with every model call; "
+                         "negative sends none")
     ap.add_argument("--verbose", "-v", action="store_true")
     args = ap.parse_args(argv)
+    if args.seed is not None and args.seed < 0:
+        args.seed = None
+    if args.temperature is not None and args.temperature < 0:
+        args.temperature = None
 
     if args.compare:
-        run_compare(*args.compare)
+        report = run_compare(*args.compare,
+                             require_metrics=args.require_metrics)
+        if report is not None and not report.get("no_regression"):
+            return 1
         return 0
+
+    if args.rescore_record:
+        if not args.out:
+            raise SystemExit("--rescore-record needs --out")
+        return run_rescore(args.rescore_record, args.out,
+                           evidence=args.evidence, force=args.force_record)
 
     if args.release:
         args.answers = True          # a release run IS an answer run, whole suite
+    # Production parity is the DEFAULT for a release run (Wave 3, gaps 6-7):
+    # a release number that skipped the planner is not a release number. Both
+    # switches stay explicit, so a run can still opt out and say so.
+    if args.production_planner is None:
+        args.production_planner = bool(args.release)
+    if args.conductor is None:
+        args.conductor = bool(args.release)
+    if args.verifier_mode == "production" and not args.answers:
+        raise SystemExit("--verifier-mode production needs --answers/--release: "
+                         "it calls the judge model")
+    if args.conductor and not args.answers:
+        raise SystemExit("--conductor needs --answers/--release: it is a model "
+                         "call, and a retrieval-only run must stay zero-API")
 
     prefix = "release_" if args.release else "answers_baseline_"
     if args.record:
@@ -1396,6 +2582,17 @@ def main(argv=None):
     if not cases:
         raise SystemExit("no cases selected")
     rows = run_eval(args, cases)
+    meta = run_meta(args)
+    deployed = deployment_fingerprint()
+    for r in rows:
+        r.update(meta)
+        parity = r.get("pipeline_parity")
+        if isinstance(parity, dict):
+            level, drift = _parity_level(parity, deployed, meta.get("git_sha"))
+            parity["level"] = level
+            parity["deployment"] = dict(deployed, drift=drift)
+    if rows and isinstance(rows[0].get("pipeline_parity"), dict):
+        print(f"\npipeline_parity: {rows[0]['pipeline_parity']['level']}")
     if args.record:
         print(f"\nrecorded -> "
               f"{record(rows, args.record, prefix=prefix, force=args.force_record)}")

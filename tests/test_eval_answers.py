@@ -661,10 +661,12 @@ def test_field_label_maps_onto_the_registry_v2_field_name():
 # ==========================================================================
 # claim support
 # ==========================================================================
-def _verdict(status, text="a claim", kind="money", reason="because"):
+def _verdict(status, text="a claim", kind="money", reason="because",
+             citations=None):
     return types.SimpleNamespace(
-        status=status, reason=reason,
-        claim=types.SimpleNamespace(text=text, kind=kind))
+        status=status, reason=reason, source="deterministic",
+        claim=types.SimpleNamespace(text=text, kind=kind,
+                                    citations=list(citations or [])))
 
 
 def test_score_claims_wires_extract_build_and_classify(monkeypatch):
@@ -689,9 +691,21 @@ def test_score_claims_wires_extract_build_and_classify(monkeypatch):
         @staticmethod
         def classify_deterministic(claims, evidence):
             seen["classify_args"] = (claims, evidence)
-            return [_verdict("supported"), _verdict("supported"),
-                    _verdict("contradicted", "bad", reason="p.40 says 40,751,254"),
+            return [_verdict("supported", citations=["c"]),
+                    _verdict("supported", citations=["c"]),
+                    _verdict("contradicted", "bad", reason="p.40 says 40,751,254",
+                             citations=["c"]),
                     _verdict("unsupported", "loose")]
+
+        @staticmethod
+        def _text_of(evidence, keys):
+            seen["text_of_keys"] = list(keys)
+            return "\n".join(evidence[k] for k in keys if k in evidence)
+
+        @staticmethod
+        def _verify_against(claim, text):
+            seen.setdefault("grounded_against", []).append(text)
+            return (claim in ("c1", "c2", "c4"), "")
 
     monkeypatch.setattr(ev, "verify", Stub)
     hits = _hits((FP151, 5))
@@ -708,6 +722,17 @@ def test_score_claims_wires_extract_build_and_classify(monkeypatch):
     assert got["evidence_keys"] == ["d1|5", "__notes__|-"]
     assert [f["status"] for f in got["failures"]] == ["contradicted", "unsupported"]
     assert "40,751,254" in got["failures"][0]["reason"]
+    # groundedness is scored over the UNION of the turn's evidence, not the
+    # claim's cited scope: every claim sees both blocks in one blob
+    assert seen["text_of_keys"] == [("d1", 5), ("__notes__", None)]
+    assert set(seen["grounded_against"]) == {"text\nnote"}
+    assert got["grounded"] == 3 and got["groundedness_rate"] == 0.75
+    # c4 is grounded and still UNSUPPORTED: the evidence carries it, the claim
+    # does not point at it. That separation is the whole reason for the split.
+    assert got["failures"][1]["grounded"] is True
+    assert got["citation_supported"] == 2 and got["citation_completeness_rate"] == 0.5
+    assert got["cited"] == 3 and got["citation_presence_rate"] == 0.75
+    assert got["n_failures"] == 2
 
 
 def test_score_claims_on_an_answer_with_no_claims(monkeypatch):
@@ -717,10 +742,16 @@ def test_score_claims_on_an_answer_with_no_claims(monkeypatch):
         extract_claims = staticmethod(lambda a: [])
         build_evidence = staticmethod(lambda h, n: {})
         classify_deterministic = staticmethod(lambda c, e: [])
+        _text_of = staticmethod(lambda e, k: "")
+        _verify_against = staticmethod(lambda c, t: (False, ""))
 
     monkeypatch.setattr(ev, "verify", Stub)
     got = ev.score_claims("FP999 does not exist in this corpus.", [], [])
     assert got["claims"] == 0 and got["support_rate"] is None
+    assert got["groundedness_rate"] is None
+    assert got["citation_completeness_rate"] is None
+    assert got["citation_presence_rate"] is None
+    assert got["n_failures"] == 0
 
 
 def test_claim_support_is_not_the_old_page_presence_check():
@@ -996,3 +1027,788 @@ def test_cli_records_a_fresh_label_with_no_flag(tmp_path, monkeypatch):
     monkeypatch.setattr(ev, "run_eval", lambda *a, **kw: list(ANCHOR))
     assert ev.main(["--answers", "--record", "brand-new"]) == 0
     assert (tmp_path / "answers_baseline_brand-new.jsonl").exists()
+
+
+# ==========================================================================
+# Wave 3 — production parity
+#
+# Every switch below is pinned in BOTH directions: a flag whose off-path is
+# untested is a flag that can be silently wrong in exactly the configuration
+# the cheap per-commit run uses. Nothing here calls an API — the model client
+# is a fake that records what it was asked for, which is also how the
+# zero-API guarantees are tested rather than asserted.
+# ==========================================================================
+class _Resp:
+    """An OpenAI chat response, only the fields the harness reads."""
+
+    def __init__(self, content, model="gpt-5.2-2025-12-11", pt=11, ct=7):
+        self.choices = [types.SimpleNamespace(
+            message=types.SimpleNamespace(content=content))]
+        self.model = model
+        self.system_fingerprint = "fp_test"
+        self.usage = types.SimpleNamespace(prompt_tokens=pt, completion_tokens=ct,
+                                           total_tokens=pt + ct)
+
+
+class FakeClient:
+    """Records every request; replies from a queue, last reply repeating."""
+
+    def __init__(self, replies=("an answer",)):
+        self.replies = list(replies)
+        self.calls = []
+        self.chat = types.SimpleNamespace(completions=self)
+
+    def create(self, **kw):
+        self.calls.append(kw)
+        reply = self.replies[min(len(self.calls) - 1, len(self.replies) - 1)]
+        if isinstance(reply, Exception):
+            raise reply
+        return _Resp(reply)
+
+
+def _args(**kw):
+    base = dict(answers=True, release=False, history_mode="isolated",
+                temperature=0.0, seed=7, k=10, verifier_mode="deterministic",
+                verifier_repair=False, production_planner=False, conductor=False)
+    base.update(kw)
+    return types.SimpleNamespace(**base)
+
+
+class FakePipe:
+    def __init__(self, out, verifier_mode="deterministic", verifier_repair=False):
+        self.out = out
+        self.verifier_mode = verifier_mode
+        self.verifier_repair = verifier_repair
+
+    def run(self, question, turns=()):
+        self.seen = (question, list(turns))
+        return self.out
+
+    def parity(self):
+        return {"verifier_mode": self.verifier_mode}
+
+
+def _answer_out(**kw):
+    """A non-guard `Pipeline.run` result, ready for _run_case."""
+    system, context, question = "SYSTEM", "Context excerpts:\nx", "q?"
+    out = {"guard": False, "chat": False, "guard_answer": None,
+           "hits": [], "confidence": 0.9, "weak": False,
+           "plan": [{"q": question, "doc": None}], "decomposed": False,
+           "system": system, "context": context, "refs_note": None,
+           "user": f"Context excerpts:\n{context}\n\nQuestion: {question}",
+           "calls": [],
+           "messages": [{"role": "system", "content": system},
+                        {"role": "user", "content": "ONE USER TURN"}],
+           "notes": {"registry": None, "year": None, "board": None,
+                     "matrix": None}}
+    out.update(kw)
+    return out
+
+
+# ------------------------------------------------------- F10: run pinning ---
+def test_every_call_carries_the_pinned_temperature_and_seed():
+    c = FakeClient()
+    ev.ask_model(c, "sys", (), "user", pins=ev._pinning(0.0, 7))
+    assert c.calls[0]["temperature"] == 0.0 and c.calls[0]["seed"] == 7
+
+
+def test_pinning_can_be_dropped_and_then_nothing_is_sent():
+    assert ev._pinning(None, None) == {}
+    c = FakeClient()
+    ev.ask_model(c, "sys", (), "user", pins=ev._pinning(None, None))
+    assert "temperature" not in c.calls[0] and "seed" not in c.calls[0]
+
+
+def test_ask_model_records_the_served_snapshot_not_the_alias():
+    """The record used to carry `gpt-5.2` — the name we ASKED for. A snapshot
+    rotation would then move every number with nothing in the file to show it."""
+    _, meta = ev.ask_model(FakeClient(), "sys", (), "user")
+    assert meta["model"] == ev.config.CHAT_MODEL
+    assert meta["snapshot"] == "gpt-5.2-2025-12-11"
+    assert meta["system_fingerprint"] == "fp_test"
+
+
+def test_ask_model_uses_a_supplied_messages_array_verbatim():
+    c = FakeClient()
+    msgs = [{"role": "system", "content": "S"}, {"role": "user", "content": "U"}]
+    ev.ask_model(c, "ignored", [{"role": "user", "content": "history"}],
+                 "ignored", messages=msgs)
+    assert c.calls[0]["messages"] == msgs
+
+
+# ------------------------------------------------- run metadata / artifacts --
+def test_run_meta_pins_the_verifier_blob_and_the_artifacts(monkeypatch):
+    monkeypatch.setattr(ev, "_sha256_file",
+                        lambda p, missing=None: f"sha:{Path(p).name}")
+    m = ev.run_meta(_args())
+    assert m["verify_blob_sha"] == "sha:verify.py"
+    assert m["artifacts"]["index_faiss_sha256"] == "sha:index.faiss"
+    assert m["artifacts"]["registry_v2_sha256"] == "sha:registry_v2.json"
+    assert m["harness"]["seed"] == 7 and m["harness"]["temperature"] == 0.0
+
+
+def test_sha256_of_a_missing_file_is_the_missing_marker(tmp_path):
+    assert ev._sha256_file(tmp_path / "nope.bin", missing="gone") == "gone"
+    f = tmp_path / "x.bin"
+    f.write_bytes(b"abc")
+    assert ev._sha256_file(f) == (
+        "ba7816bf8f01cfea414140de5dae2223b00361a396177a9cb410ff61f20015ad")
+
+
+# ------------------------------------------- the metric split (definition) ---
+def test_the_four_compared_metric_keys_are_distinct():
+    assert len(set(ev.METRIC_KEYS)) == len(ev.METRIC_KEYS) == 4
+
+
+def test_groundedness_separates_a_miscitation_from_a_fabrication():
+    """The whole reason for the split. Same evidence, same matcher:
+
+    * the figure IS in the turn's evidence but the answer points at the wrong
+      document — grounded, not citation-complete;
+    * the figure is nowhere — neither.
+
+    Scoped to the citation alone (verify.py@HEAD `_verify_against`) the two are
+    indistinguishable, which is what makes the split carry information.
+
+    Across DOCUMENTS, not across pages: verify's `_scopes` already widens a
+    citation to the whole document it names, so a wrong-page citation inside
+    the right document verifies at HEAD and is not a miscitation this metric
+    should separate. The one it must separate is evidence held under a
+    document the answer never cited.
+    """
+    doc_a, doc_b = "999_doc-a", "998_doc-b"
+    hits = [Hit(text="Cover page. Project title and country.",
+                doc_id=doc_a, score=0.9, page=5),
+            Hit(text="A.8 Total funding requested: 18.5 million USD",
+                doc_id=doc_b, score=0.9, page=45)]
+    mis = ev.score_claims(
+        f"The programme requests 18.5 million USD [{doc_a}, p. 5].", hits, [])
+    fab = ev.score_claims(
+        f"The programme requests 99.9 million USD [{doc_a}, p. 5].", hits, [])
+    assert mis["citation_supported"] == 0 and mis["grounded"] == 1
+    assert fab["citation_supported"] == 0 and fab["grounded"] == 0
+    assert mis["cited"] == 1 and mis["citation_presence_rate"] == 1.0
+    assert mis["groundedness_rate"] == 1.0 and mis["citation_completeness_rate"] == 0.0
+
+
+def test_the_deterministic_scoped_identity_is_enforced_not_hoped_for(monkeypatch):
+    """`supported == citation_supported` holds in deterministic mode because an
+    uncited claim is UNSUPPORTED. If a change ever breaks that, the harness
+    must stop rather than print two numbers that no longer mean what they say."""
+    class Stub:
+        SUPPORTED, CONTRADICTED, UNSUPPORTED = (
+            "supported", "contradicted", "unsupported")
+        extract_claims = staticmethod(lambda a: ["c1"])
+        build_evidence = staticmethod(lambda h, n: {})
+        classify_deterministic = staticmethod(
+            lambda c, e: [_verdict("supported")])       # supported, uncited
+        _text_of = staticmethod(lambda e, k: "")
+        _verify_against = staticmethod(lambda c, t: (False, ""))
+
+    monkeypatch.setattr(ev, "verify", Stub)
+    with pytest.raises(AssertionError, match="scoped identity"):
+        ev.score_claims("a", [], [])
+
+
+# ------------------------------------------------ gap 1: prescope metadata ---
+def test_prescope_is_counted_by_observation_not_asserted():
+    """The parity block claims production's single-FP pre-scoping runs here.
+    The claim is worth nothing unless something counted it, so the app's own
+    function is wrapped and the tally is what the record carries."""
+    from gcf_qna.app import chainlit_app as app
+    ev._instrument_prescope(app)
+    before = dict(ev._PRESCOPE_STATS)
+    items = app._rescope_items([{"q": Q152, "doc": None}], Q152, [])
+    assert ev._PRESCOPE_STATS["calls"] == before["calls"] + 1
+    assert ev._PRESCOPE_STATS["tagged"] == before["tagged"] + 1
+    assert items[0]["doc"], "the tag the counter says it added"
+    assert ev._PRESCOPE_STATS["wrapped"] is True
+
+
+def test_instrumenting_prescope_twice_does_not_double_count():
+    from gcf_qna.app import chainlit_app as app
+    ev._instrument_prescope(app)
+    ev._instrument_prescope(app)
+    before = ev._PRESCOPE_STATS["calls"]
+    app._rescope_items([{"q": Q152, "doc": None}], Q152, [])
+    assert ev._PRESCOPE_STATS["calls"] == before + 1
+
+
+_FULL_PARITY = {
+    "production_single_id_prescope": True, "comparison_flag": "decomposed",
+    "abstain_keeps_original": True, "guard_verification_skipped": True,
+    "answer_history_isolation": True, "planner": {"enabled": True},
+    "conductor": {"enabled": True}, "verifier_mode": "production",
+    "verifier_repair": False, "usage_accounts_judge_and_repair": True,
+}
+_DEPLOYED = {"sha": "abc1234", "switches": {
+    "CONDUCTOR": "1", "PLANNER": "1", "VERIFY": "1", "VERIFY_LLM": "1",
+    "VERIFY_REPAIR": "0", "INDEX_NAME": "default"}}
+
+
+def _deployed(**over):
+    d = {"sha": _DEPLOYED["sha"],
+         "switches": dict(_DEPLOYED["switches"], CHAT_MODEL=ev.config.CHAT_MODEL)}
+    d["switches"].update(over.pop("switches", {}))
+    d.update(over)
+    return d
+
+
+def test_parity_level_names_every_gap_still_open():
+    level, _ = ev._parity_level({"planner": {}, "conductor": {}}, _deployed(),
+                                "abc1234deadbeef")
+    assert level.startswith("partial: ")
+    for gap in ("gap1-prescope", "gap2-comparison-flag", "gap3-abstain",
+                "gap4-guard", "gap5-history-isolation", "gap6-planner",
+                "gap7-conductor", "gap8-verifier-config",
+                "gap9-usage-accounting"):
+        assert gap in level
+
+
+def test_parity_level_is_full_only_when_the_deployment_matches():
+    assert ev._parity_level(_FULL_PARITY, _deployed(), "abc1234deadbeef")[0] == "full"
+
+
+def test_a_drifted_switch_blocks_full_and_is_named():
+    level, drift = ev._parity_level(_FULL_PARITY,
+                                    _deployed(switches={"PLANNER": "0"}),
+                                    "abc1234deadbeef")
+    assert level == "partial: deployment-drift"
+    assert any("PLANNER" in d for d in drift)
+
+
+def test_an_unknown_deployment_blocks_full():
+    level, _ = ev._parity_level(_FULL_PARITY, _deployed(sha=None),
+                                "abc1234deadbeef")
+    assert level == "partial: unverified-deployment"
+
+
+def test_a_different_app_source_blocks_full():
+    level, drift = ev._parity_level(_FULL_PARITY, _deployed(), "9999999deadbeef")
+    assert level == "partial: deployment-drift"
+    assert any("app source" in d for d in drift)
+
+
+def test_a_later_commit_that_did_not_touch_src_is_not_a_drift(monkeypatch):
+    """The image is built `COPY src/ src/`. A docs-only commit past the
+    deployed sha runs the same application, and calling that a drift would
+    make `level=full` unreachable for a reason that is not about the code."""
+    monkeypatch.setattr(ev, "app_source_matches", lambda sha: True)
+    deployed = _deployed()
+    level, drift = ev._parity_level(_FULL_PARITY, deployed, "9999999deadbeef")
+    assert level == "full" and drift == []
+    assert any("byte-identical" in n for n in deployed.get("notes", []))
+    # one `deployed` dict is graded once per case; the note must not pile up
+    for _ in range(5):
+        ev._parity_level(_FULL_PARITY, deployed, "9999999deadbeef")
+    assert sum("byte-identical" in n for n in deployed["notes"]) == 1
+
+
+def test_the_real_tree_is_checked_against_the_real_deployed_sha():
+    """Not a mock: the deployed row in docs/DEPLOYED.md names a sha, and this
+    asserts the harness is importing that application's source."""
+    deployed = ev.deployment_fingerprint()
+    assert deployed["sha"], "no deployed sha on record"
+    assert ev.app_source_matches(deployed["sha"]) is True
+    assert ev.app_source_matches("0000000") is False
+
+
+def test_deployment_fingerprint_prefers_the_captured_file(tmp_path):
+    f = tmp_path / "fp.txt"
+    f.write_text("PLANNER=1\nVERIFY=1\nfp-gcf:abc1234\nlocal-artifacts\n",
+                 encoding="utf-8")
+    got = ev.deployment_fingerprint(f)
+    assert got["sha"] == "abc1234" and got["switches"]["PLANNER"] == "1"
+    assert got["remote_artifacts_verified"] is True
+
+
+def test_deployment_fingerprint_falls_back_to_the_tracked_deploy_log(tmp_path):
+    got = ev.deployment_fingerprint(tmp_path / "absent.txt")
+    assert got["remote_artifacts_verified"] is False
+    assert "DEPLOYED.md" in got["source"]
+    assert got["notes"] and "not performed" in got["notes"][0]
+    # the switches the .env does not carry come from the code defaults
+    assert set(got["switches"]) >= {"CONDUCTOR", "PLANNER", "VERIFY",
+                                    "VERIFY_LLM", "VERIFY_REPAIR",
+                                    "INDEX_NAME", "CHAT_MODEL"}
+
+
+# ------------------------------------------------- gap 2: comparison flag ---
+def _flag_pipe(flag):
+    return types.SimpleNamespace(comparison_flag=flag)
+
+
+def test_comparison_block_follows_the_plan_not_the_question():
+    one = [{"q": "x", "doc": None}]
+    two = [{"q": "x", "doc": "a"}, {"q": "y", "doc": "b"}]
+    q = "Compare FP151 and FP152."
+    pipe = _flag_pipe("decomposed")
+    assert ev.Pipeline._decomposed(pipe, one, q) is False
+    assert ev.Pipeline._decomposed(pipe, two, "anything") is True
+    assert ev.Pipeline._decomposed(pipe, one, q, plan=object()) is True
+
+
+def test_the_retired_proxy_is_still_selectable_and_disagrees():
+    one = [{"q": "x", "doc": None}]
+    q = "Compare FP151 and FP152."
+    assert ev.Pipeline._decomposed(_flag_pipe("proxy"), one, q) is True
+    assert ev.Pipeline._decomposed(_flag_pipe("decomposed"), one, q) is False
+    assert ev.Pipeline._decomposed(_flag_pipe("off"),
+                                   [{"q": "a"}, {"q": "b"}], q) is False
+
+
+# --------------------------------------------------------- gap 3: abstain ---
+def test_abstain_keeps_the_original_body():
+    res = types.SimpleNamespace(status="abstain", answer="")
+    assert ev.final_answer("ORIGINAL", res) == ("ORIGINAL", "abstain-original")
+
+
+def test_a_verifier_returning_nothing_falls_back_to_the_original():
+    assert ev.final_answer("ORIGINAL", None) == ("ORIGINAL", "model")
+    empty = types.SimpleNamespace(status="partial", answer="")
+    assert ev.final_answer("ORIGINAL", empty) == ("ORIGINAL", "model")
+    none = types.SimpleNamespace(status="partial", answer=None)
+    assert ev.final_answer("ORIGINAL", none) == ("ORIGINAL", "model")
+
+
+def test_a_repaired_answer_is_adopted_and_labelled():
+    res = types.SimpleNamespace(status="repaired", answer="FIXED")
+    assert ev.final_answer("ORIGINAL", res) == ("FIXED", "verifier")
+
+
+# ---------------------------------------------------- gap 4: guard answers ---
+GUARD_ANSWER = "FP999 does not exist in this corpus (273-document registry)."
+
+
+def test_guard_answers_are_not_verified_and_their_claims_are_published():
+    out = _answer_out(guard=True, guard_answer=GUARD_ANSWER, hits=[],
+                      system=None, user=None, messages=None,
+                      notes={"registry": "Registry — FP999: NOT FOUND",
+                             "year": None, "board": None, "matrix": None})
+    rec = ev._run_case(FakePipe(out), None, _args(),
+                       _case(id="abs-fp999", turns=[]))
+    would = ev.score_claims(GUARD_ANSWER, [], ["Registry — FP999: NOT FOUND"])
+    assert rec["claims"] is None, "a guard answer has no verdicts in production"
+    assert rec["claims_skipped"]["claims_removed"] == would["claims"]
+    assert rec["claims_skipped"]["supported_removed"] == would["supported"]
+    assert "guard-answer" in rec["claims_skipped"]["reason"]
+
+
+def test_a_chat_mode_turn_is_removed_from_the_denominator_too():
+    out = _answer_out(chat=True)
+    rec = ev._run_case(FakePipe(out), FakeClient(["chatty reply"]), _args(),
+                       _case(id="chat", turns=[]))
+    assert rec["claims"] is None and "chat-mode" in rec["claims_skipped"]["reason"]
+
+
+def test_a_normal_turn_keeps_its_claims():
+    rec = ev._run_case(FakePipe(_answer_out()), FakeClient(["plain text"]),
+                       _args(), _case(turns=[]))
+    assert rec["claims_skipped"] is None and isinstance(rec["claims"], dict)
+
+
+# ------------------------------------------------ gap 5: history isolation ---
+_TURNS = [{"role": "user", "content": "EARLIER QUESTION"},
+          {"role": "assistant", "content": "EARLIER ANSWER with 58,000,000"}]
+
+
+def test_history_isolation_sends_system_plus_one_user_turn():
+    c = FakeClient()
+    ev._run_case(FakePipe(_answer_out()), c, _args(history_mode="isolated"),
+                 _case(turns=_TURNS))
+    msgs = c.calls[0]["messages"]
+    assert [m["role"] for m in msgs] == ["system", "user"]
+    assert "EARLIER ANSWER" not in json.dumps(msgs), \
+        "a prior answer must never reach the factual call as evidence"
+
+
+def test_prepend_mode_puts_the_conversation_back():
+    c = FakeClient()
+    ev._run_case(FakePipe(_answer_out()), c, _args(history_mode="prepend"),
+                 _case(turns=_TURNS))
+    msgs = c.calls[0]["messages"]
+    assert [m["role"] for m in msgs] == ["system", "user", "assistant", "user"]
+    assert "EARLIER ANSWER" in json.dumps(msgs)
+
+
+def test_the_resolved_refs_note_is_what_carries_the_referents():
+    from gcf_qna.app import chainlit_app as app
+    note = app._resolved_refs_note([{"q": "x", "doc": "123_gcf-b27-02-add12"}],
+                                   "And that one?")
+    assert note and "FP152" in note
+    out = _answer_out(refs_note=note,
+                      messages=app._answer_messages("S", "ctx", "And that one?",
+                                                    note))
+    c = FakeClient()
+    rec = ev._run_case(FakePipe(out), c, _args(), _case(turns=_TURNS))
+    assert note in c.calls[0]["messages"][1]["content"]
+    assert rec["refs_note"] == note
+
+
+# --------------------------------------------------------- gap 6: planner ---
+def test_the_planner_is_off_unless_it_is_asked_for():
+    pipe = types.SimpleNamespace(production_planner=False)
+    assert ev.Pipeline.planner_plan(
+        pipe, "Compare FP151 and FP152 GCF financing.") == (None, None)
+
+
+def _planner_pipe(retriever=None):
+    from gcf_qna.app import chainlit_app as app
+    return types.SimpleNamespace(
+        production_planner=True, app=app,
+        retriever=retriever if retriever is not None else FakeRetriever({}),
+        planner_stats={"detected": 0, "intent_ok": 0, "matrix_built": 0,
+                       "matrix_failed": 0})
+
+
+def test_the_intent_gate_vetoes_two_ids_that_ask_nothing():
+    """`detect` fires on ANY message naming two documents. Prose that merely
+    mentions two is not a request for a 2xN matrix, and the app's gate — not a
+    copy of it — is what decides."""
+    pipe = _planner_pipe()
+    got = ev.Pipeline.planner_plan(
+        pipe, "FP151 is interesting. Separately, FP152 was approved last year.")
+    assert got == (None, None)
+    assert pipe.planner_stats["detected"] == 1
+    assert pipe.planner_stats["intent_ok"] == 0
+
+
+def test_a_comparison_builds_a_matrix_block():
+    pipe = _planner_pipe()
+    plan, block = ev.Pipeline.planner_plan(
+        pipe, "Compare the GCF financing of FP151 and FP152.")
+    assert pipe.planner_stats["intent_ok"] == 1
+    if plan is None:                      # no cell carried evidence
+        assert pipe.planner_stats["matrix_failed"] == 1
+    else:
+        assert block and pipe.planner_stats["matrix_built"] == 1
+        assert "FP151" in block or "FP152" in block
+
+
+# ------------------------------------------------------- gap 7: conductor ---
+def _cond_pipe(client, conductor=True):
+    from gcf_qna.app import chainlit_app as app
+    return types.SimpleNamespace(
+        app=app, conductor=conductor, client=client, pins={"seed": 7},
+        conductor_stats={"calls": 0, "fanned_out": 0, "chat": 0, "failed": 0})
+
+
+def test_the_conductor_call_is_the_apps_call():
+    from gcf_qna.app import chainlit_app as app
+    reply = json.dumps({"mode": "retrieve", "queries": [
+        {"q": "FP151 GCF financing", "doc": "fp151"},
+        {"q": "FP152 GCF financing", "doc": "fp152"}]})
+    c = FakeClient([reply])
+    pipe = _cond_pipe(c)
+    mode, items, meta = ev.Pipeline.conduct(
+        pipe, "Compare FP151 and FP152.", ())
+    kw = c.calls[0]
+    assert kw["messages"][0]["content"] is app.CONDUCTOR_PROMPT
+    assert kw["response_format"] == {"type": "json_object"}
+    assert kw["max_completion_tokens"] == 300 and kw["seed"] == 7
+    assert mode == "retrieve" and len(items) == 2
+    assert meta["role"] == "conductor" and meta["snapshot"]
+    assert pipe.conductor_stats["calls"] == 1
+    assert pipe.conductor_stats["fanned_out"] == 1
+
+
+def test_the_conductor_sees_the_conversation_the_answer_call_does_not():
+    c = FakeClient([json.dumps({"mode": "retrieve", "queries": []})])
+    ev.Pipeline.conduct(_cond_pipe(c), "And that one?", _TURNS)
+    user = c.calls[0]["messages"][1]["content"]
+    assert "EARLIER ANSWER" in user and "And that one?" in user
+
+
+def test_the_conductor_output_goes_through_the_rewrite_guards():
+    """A fabricated tag for a document the message never names is stripped by
+    `_rescope_items`; the harness must not adopt the raw model output."""
+    reply = json.dumps({"mode": "retrieve",
+                        "queries": [{"q": "total financing", "doc": "02_fp999"}]})
+    c = FakeClient([reply])
+    _, items, _ = ev.Pipeline.conduct(_cond_pipe(c), "What does FP151 request?", ())
+    assert items[0]["doc"] != "02_fp999"
+
+
+def test_chat_mode_is_honoured():
+    c = FakeClient([json.dumps({"mode": "chat", "queries": []})])
+    pipe = _cond_pipe(c)
+    mode, _, _ = ev.Pipeline.conduct(pipe, "what did you just say?", ())
+    assert mode == "chat" and pipe.conductor_stats["chat"] == 1
+
+
+def test_a_broken_conductor_reply_keeps_the_raw_message():
+    c = FakeClient(["not json at all"])
+    pipe = _cond_pipe(c)
+    mode, items, _ = ev.Pipeline.conduct(pipe, "a question", ())
+    assert mode == "retrieve" and items == [{"q": "a question", "doc": None}]
+    assert pipe.conductor_stats["failed"] == 1
+
+
+def test_the_conductor_off_path_makes_no_call_at_all():
+    c = FakeClient()
+    pipe = _cond_pipe(c, conductor=False)
+    mode, items, meta = ev.Pipeline.conduct(pipe, "a question", _TURNS)
+    assert c.calls == [] and meta is None
+    assert (mode, items) == ("retrieve", [{"q": "a question", "doc": None}])
+
+
+# -------------------------------------------------- gap 8: verifier config ---
+def _fake_res(**kw):
+    base = dict(status="verified", answer="an answer", verdicts=[],
+                repaired=False, repair_rejected=False)
+    base.update(kw)
+    return types.SimpleNamespace(**base)
+
+
+def test_production_mode_calls_verify_answer_the_way_the_app_does(monkeypatch):
+    seen = {}
+
+    def fake(answer, evidence, client=None, use_llm=True, allow_repair=True, **kw):
+        seen.update(answer=answer, client=client, use_llm=use_llm,
+                    allow_repair=allow_repair)
+        return _fake_res(answer=answer)
+
+    monkeypatch.setattr(ev.verify, "verify_answer", fake)
+    ev.verify_production("an answer", [], [], client="CLIENT")
+    assert seen["use_llm"] is True and seen["allow_repair"] is False
+    assert seen["client"] == "CLIENT"
+
+
+def test_repair_is_a_flag_and_never_an_environment_read(monkeypatch):
+    seen = {}
+    monkeypatch.setattr(ev.verify, "verify_answer",
+                        lambda a, e, client=None, use_llm=True,
+                        allow_repair=True, **kw:
+                        (seen.update(allow_repair=allow_repair), _fake_res())[1])
+    monkeypatch.setenv("VERIFY_REPAIR", "1")
+    ev.verify_production("a", [], [])
+    assert seen["allow_repair"] is False, "the environment must not turn repair on"
+    monkeypatch.setenv("VERIFY_REPAIR", "0")
+    ev.verify_production("a", [], [], allow_repair=True)
+    assert seen["allow_repair"] is True, "the flag must turn repair on regardless"
+
+
+def test_deterministic_mode_makes_no_verification_call():
+    """The zero-API guarantee, tested rather than asserted: one model call for
+    the answer, and nothing else."""
+    c = FakeClient()
+    ev._run_case(FakePipe(_answer_out(), verifier_mode="deterministic"), c,
+                 _args(), _case(turns=[]))
+    assert len(c.calls) == 1
+
+
+def test_the_judge_budget_is_recorded_per_case(monkeypatch):
+    monkeypatch.setattr(ev.verify, "verify_answer",
+                        lambda a, e, **kw: _fake_res(answer=a))
+    monkeypatch.setattr(ev.verify, "extract_claims", lambda a: ["c"] * 20)
+    monkeypatch.setattr(
+        ev.verify, "classify_deterministic",
+        lambda c, e: [types.SimpleNamespace(status=ev.verify.UNSUPPORTED,
+                                            plausible=True)] * 20)
+    _, _, judge = ev.verify_production("a", [], [])
+    assert judge["judge_candidates"] == 20
+    assert judge["judge_max_claims"] == ev.JUDGE_MAX_CLAIMS
+    assert judge["judge_budget_exhausted"] == 1
+
+
+def test_a_judge_budget_that_does_not_bind_reports_zero(monkeypatch):
+    monkeypatch.setattr(ev.verify, "verify_answer",
+                        lambda a, e, **kw: _fake_res(answer=a))
+    monkeypatch.setattr(ev.verify, "extract_claims", lambda a: [])
+    monkeypatch.setattr(ev.verify, "classify_deterministic", lambda c, e: [])
+    _, _, judge = ev.verify_production("a", [], [])
+    assert judge["judge_budget_exhausted"] == 0 and judge["judge_candidates"] == 0
+
+
+# ------------------------------------------------- gap 9: usage accounting ---
+def test_the_metered_client_books_the_judge_and_the_repair():
+    sink = []
+    inner = FakeClient(["{}", "{}"])
+    m = ev.MeteredClient(inner, sink)
+    m.chat.completions.create(model="m", messages=[
+        {"role": "system", "content": ev.verify.ADJUDICATE_PROMPT},
+        {"role": "user", "content": "claims"}])
+    m.chat.completions.create(model="m", messages=[
+        {"role": "system", "content": ev.verify.REPAIR_PROMPT},
+        {"role": "user", "content": "answer"}])
+    assert [c["role"] for c in sink] == ["judge", "repair"]
+    assert all(c["prompt_tokens"] == 11 for c in sink)
+    assert len(inner.calls) == 2, "the proxy must pass every call through"
+
+
+def test_an_unrecognised_verify_call_is_labelled_rather_than_lost():
+    sink = []
+    ev.MeteredClient(FakeClient(), sink).chat.completions.create(
+        model="m", messages=[{"role": "system", "content": "something else"}])
+    assert sink[0]["role"] == "verify-other"
+
+
+def test_usage_totals_accounts_every_role_and_keeps_the_answer_latency():
+    rows = [{"usage": ev.turn_usage([
+        {"role": "conductor", "latency_s": 0.5, "prompt_tokens": 100,
+         "completion_tokens": 10, "total_tokens": 110},
+        {"role": "answer", "latency_s": 3.0, "prompt_tokens": 2000,
+         "completion_tokens": 200, "total_tokens": 2200},
+        {"role": "judge", "latency_s": 1.5, "prompt_tokens": 800,
+         "completion_tokens": 80, "total_tokens": 880}])}]
+    u = ev.usage_totals(rows)
+    assert u["calls"] == 3
+    assert u["p50"] == 5.0, "the turn cost 5s of model time, not 3"
+    assert u["answer_p50"] == 3.0
+    assert u["prompt_tokens"] == 2900 and u["completion_tokens"] == 290
+    assert u["by_role"]["judge"]["calls"] == 1
+    assert u["by_role"]["conductor"]["prompt_tokens"] == 100
+
+
+def test_usage_totals_still_reads_a_record_from_before_the_accounting():
+    """release-1 and the spread runs carry a flat usage block. A comparison
+    that silently dropped them would compare a run against nothing."""
+    u = ev.usage_totals([{"usage": {"latency_s": 3.4, "prompt_tokens": 100,
+                                    "completion_tokens": 10}}])
+    assert u["calls"] == 1 and u["p50"] == 3.4 and u["answer_p50"] == 3.4
+    assert u["by_role"]["answer"]["calls"] == 1
+
+
+def test_turn_usage_of_a_turn_that_called_nothing_is_empty():
+    assert ev.turn_usage([]) == {} and ev.turn_usage([None]) == {}
+
+
+# --------------------------------------------- F12 rescoring / compare gate --
+def _rec_row(cid, answer, hits, **kw):
+    row = {"id": cid, "class": "identifier", "lang": "en", "question": "q?",
+           "answer": answer, "hits": hits, "notes_used": {}, "score": 1.0,
+           "claims": {"claims": 1, "supported": 1, "support_rate": 1.0}}
+    row.update(kw)
+    return row
+
+
+def test_rescore_recomputes_offline_and_keeps_the_recorded_block(tmp_path):
+    hits = [{"doc": FP151, "page": 45, "score": 0.9,
+             "text": "A.8 Total GCF funding requested: 18.5 M USD"}]
+    src = tmp_path / "rec.jsonl"
+    src.write_text(json.dumps(_rec_row(
+        "a", f"FP151 requests 18.5 million USD [{FP151}, p. 45].", hits)) + "\n",
+        encoding="utf-8")
+    out = tmp_path / "out.jsonl"
+    ev.run_rescore(src, out)
+    got = json.loads(out.read_text(encoding="utf-8").splitlines()[0])
+    assert got["rescored"]["api_calls"] == 0
+    assert got["rescored"]["evidence_source"] == "record"
+    assert got["claims_recorded"]["supported"] == 1
+    assert got["claims"]["groundedness_rate"] is not None
+    assert got["claims"]["citation_completeness_rate"] is not None
+
+
+def test_rescore_needs_evidence_when_the_record_carries_none(tmp_path):
+    src = tmp_path / "rec.jsonl"
+    src.write_text(json.dumps(_rec_row(
+        "a", "FP151 requests 18.5 million USD.",
+        [{"doc": FP151, "page": 45, "score": 0.9}])) + "\n", encoding="utf-8")
+    with pytest.raises(SystemExit, match="no backfilled evidence"):
+        ev.run_rescore(src, tmp_path / "out.jsonl")
+
+
+def test_rescore_refuses_a_backfill_whose_keys_do_not_match(tmp_path):
+    src = tmp_path / "rec.jsonl"
+    src.write_text(json.dumps(_rec_row(
+        "a", "FP151 requests 18.5 million USD.",
+        [{"doc": FP151, "page": 45, "score": 0.9}])) + "\n", encoding="utf-8")
+    ev_file = tmp_path / "ev.jsonl"
+    ev_file.write_text(json.dumps({
+        "case_id": "a", "answer": "FP151 requests 18.5 million USD.",
+        "evidence_keys_match": False, "evidence": []}) + "\n", encoding="utf-8")
+    with pytest.raises(ValueError, match="do not match"):
+        ev.run_rescore(src, tmp_path / "out.jsonl", evidence=ev_file)
+
+
+def _two_runs(tmp_path, a_rate, b_rate, key="groundedness_rate"):
+    a = tmp_path / "a.jsonl"
+    b = tmp_path / "b.jsonl"
+    for path, rate in ((a, a_rate), (b, b_rate)):
+        rows = [{"id": "c1", "class": "identifier", "score": 1.0,
+                 "claims": {"support_rate": 0.9, key: rate} if rate is not None
+                 else {"support_rate": 0.9}}]
+        path.write_text("".join(json.dumps(r) + "\n" for r in rows),
+                        encoding="utf-8")
+    return a, b
+
+
+def test_require_metrics_reports_no_regression_and_the_delta(tmp_path, capsys):
+    a, b = _two_runs(tmp_path, 0.80, 0.90)
+    report = ev.run_compare(a, b, require_metrics=["groundedness_rate"])
+    assert report["no_regression"] is True
+    assert report["metrics"]["groundedness_rate"]["delta"] == pytest.approx(0.10)
+    assert "no_regression" in capsys.readouterr().out
+
+
+def test_require_metrics_fails_on_a_regression(tmp_path):
+    a, b = _two_runs(tmp_path, 0.90, 0.80)
+    assert ev.run_compare(a, b, require_metrics=["groundedness_rate"]
+                          )["no_regression"] is False
+
+
+def test_require_metrics_fails_on_a_metric_neither_run_carries(tmp_path):
+    a, b = _two_runs(tmp_path, None, None)
+    report = ev.run_compare(a, b, require_metrics=["groundedness_rate"])
+    assert report["no_regression"] is False
+    assert report["metrics"]["groundedness_rate"]["a"] is None
+    assert report["missing"]
+
+
+def test_compare_without_require_metrics_still_returns_none(tmp_path):
+    a, b = _two_runs(tmp_path, 0.9, 0.8)
+    assert ev.run_compare(a, b) is None
+
+
+def test_the_cli_exits_1_when_a_required_metric_regresses(tmp_path):
+    a, b = _two_runs(tmp_path, 0.90, 0.80)
+    assert ev.main(["--compare", str(a), str(b),
+                    "--require-metrics", "groundedness_rate"]) == 1
+
+
+def test_the_cli_exits_0_when_it_improves(tmp_path):
+    a, b = _two_runs(tmp_path, 0.80, 0.90)
+    assert ev.main(["--compare", str(a), str(b),
+                    "--require-metrics", "groundedness_rate"]) == 0
+
+
+# ------------------------------------------------------- release defaults ----
+def _capture_args(monkeypatch):
+    """Drive main() far enough to see the resolved flags without hashing a
+    750 MB index or calling anything."""
+    seen = {}
+    monkeypatch.setattr(ev, "run_eval",
+                        lambda args, cases: (seen.update(vars(args)), [])[1])
+    monkeypatch.setattr(ev, "_sha256_file", lambda p, missing=None: "sha")
+    return seen
+
+
+def test_release_turns_the_parity_switches_on_by_default(monkeypatch):
+    seen = _capture_args(monkeypatch)
+    ev.main(["--release", "--ids", "id-fp151-gcf"])
+    assert seen["production_planner"] is True and seen["conductor"] is True
+    assert seen["history_mode"] == "isolated"
+    assert seen["comparison_flag"] == "decomposed"
+    assert seen["verifier_mode"] == "deterministic", \
+        "production verification stays opt-in: it costs a judge call per case"
+
+
+def test_the_parity_switches_can_be_turned_off_under_release(monkeypatch):
+    seen = _capture_args(monkeypatch)
+    ev.main(["--release", "--no-conductor", "--no-production-planner",
+             "--ids", "id-fp151-gcf"])
+    assert seen["production_planner"] is False and seen["conductor"] is False
+
+
+def test_a_non_release_run_leaves_them_off(monkeypatch):
+    seen = _capture_args(monkeypatch)
+    ev.main(["--answers", "--ids", "id-fp151-gcf"])
+    assert seen["production_planner"] is False and seen["conductor"] is False
+
+
+def test_a_zero_api_run_cannot_ask_for_a_model_call():
+    with pytest.raises(SystemExit, match="--conductor needs"):
+        ev.main(["--retrieval-only", "--conductor", "--ids", "id-fp151-gcf"])
+    with pytest.raises(SystemExit, match="verifier-mode production needs"):
+        ev.main(["--retrieval-only", "--verifier-mode", "production",
+                 "--ids", "id-fp151-gcf"])
