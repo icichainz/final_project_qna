@@ -726,13 +726,14 @@ def _decision_inputs(
             f"({len(claim.citations)} bracket(s))"
         )
     if not checkable:
-        excluded.setdefault(
-            "missing_citation",
-            "the claim states no amount, year or named entity to cite",
-        )
-        excluded["missing_retrieval_evidence"] = (
-            "the claim states no amount, year or named entity to retrieve"
-        )
+        # NOTHING is excluded here. The term probe extracts amounts and named
+        # entities; it does not read years or board ids, so "no checkable
+        # term" meant "nothing this probe knows how to look for" and struck
+        # `missing_citation` off 5 of 71 rows whose claim asserts exactly a
+        # year or a board code (Wave 0c finding F1). A probe's blind spot is
+        # not evidence about the world: it is reported as a signal below and
+        # rules out no label.
+        pass
     elif not absent and len(exact_present) == len(checkable):
         excluded["missing_retrieval_evidence"] = (
             "every term is present, on its own spelling or by value, in "

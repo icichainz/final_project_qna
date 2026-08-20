@@ -1255,3 +1255,34 @@ def test_validate_points_at_the_missing_sidecar_instead_of_drowning_in_diffs(
         "validate", "--release", str(release), "--evidence", str(sidecar),
         "--inventory", str(inventory_path),
     ]) == 0
+
+
+# ---------------------------------------------------------------------------
+# Wave 1 prep: blind export, extended taxonomy, no probe-derived exclusions
+# ---------------------------------------------------------------------------
+
+def test_blind_export_withholds_every_verdict_bearing_field():
+    """A reviewer who can read the verifier's verdict is agreeing with it, not
+    labelling the claim — the anchoring the Wave 1 gate exists to avoid."""
+    row = {"claim_id": "c1", "claim_text": "x", "evidence": {"k": "v"},
+           "source_status": "contradicted", "source_reason": "because",
+           "reason_probe": {}, "decision_inputs": {}, "evidence_status": "ok",
+           "term_probe": {}, "label": None}
+    blind = ac.blind_row(row)
+    for f in ac.VERDICT_BEARING_FIELDS:
+        assert f not in blind, f
+    assert blind["claim_id"] == "c1", "claim_id must survive for the rejoin"
+    assert blind["evidence"] == {"k": "v"}, "the evidence is what they label from"
+    assert blind["label"] is None
+
+
+def test_taxonomy_separates_root_cause_from_verifier_correctness():
+    labels = set(ac.LABELS)
+    assert {"wrong_citation", "not_a_claim"} <= labels, "Wave 0c rulings"
+    assert set(ac.VERIFIER_CORRECT_BY_LABEL) == labels
+    # the two labels that authorise a matcher change say the verifier was wrong
+    assert ac.VERIFIER_CORRECT_BY_LABEL["verifier_false_positive"] is False
+    assert ac.VERIFIER_CORRECT_BY_LABEL["not_a_claim"] is False
+    # a cited-but-wrong-page claim is a generation fix, and the verifier was right
+    assert ac.VERIFIER_CORRECT_BY_LABEL["wrong_citation"] is True
+    assert ac.VERIFIER_CORRECT_BY_LABEL["ambiguous_unscorable"] is None

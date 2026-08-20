@@ -39,14 +39,37 @@ from typing import Any, Iterable, Optional
 
 
 SCHEMA_VERSION = 2
+#: Root causes, mutually exclusive. Rulings for the four shapes that made rows
+#: undecidable in the Wave 0c gate exercise are in docs/adjudication-taxonomy.md;
+#: two of them needed their own cause because the fix they imply is not a
+#: matcher fix (`not_a_claim` -> extraction, `wrong_citation` -> generation).
 LABELS = (
     "verifier_false_positive",
     "genuine_answer_error",
     "missing_retrieval_evidence",
     "missing_citation",
+    "wrong_citation",
+    "not_a_claim",
     "registry_conflict",
     "ambiguous_unscorable",
 )
+
+#: Whether the verifier was RIGHT to flag this claim, recorded separately from
+#: the root cause: "should this have been flagged?" and "what caused it?" are
+#: different questions, and precision/recall in Wave 2 is computed from the
+#: former. A `genuine_answer_error` means the verifier was correct; a
+#: `verifier_false_positive` means it was not; `not_a_claim` means it flagged
+#: something that was never a factual assertion.
+VERIFIER_CORRECT_BY_LABEL = {
+    "verifier_false_positive": False,
+    "not_a_claim": False,
+    "genuine_answer_error": True,
+    "missing_retrieval_evidence": True,
+    "missing_citation": True,
+    "wrong_citation": True,
+    "registry_conflict": True,
+    "ambiguous_unscorable": None,
+}
 
 #: Copied verbatim from the release; identity of the claim under review.
 RELEASE_FIELDS = (
@@ -289,6 +312,25 @@ def _evidence_fields(
 # ---------------------------------------------------------------------------
 # inventory
 # ---------------------------------------------------------------------------
+
+
+# Fields that carry the verifier's own judgement. A reviewer who reads them is
+# no longer labelling the claim; they are agreeing or disagreeing with a
+# verdict, which is the anchoring the Wave 1 gate exists to avoid. `--blind`
+# withholds them; the reviewed file rejoins the full record on `claim_id`.
+VERDICT_BEARING_FIELDS = (
+    "source_status",
+    "source_reason",
+    "reason_probe",
+    "decision_inputs",
+    "evidence_status",
+    "term_probe",
+)
+
+
+def blind_row(row: dict[str, Any]) -> dict[str, Any]:
+    """`row` without the verifier-verdict fields, for unanchored labelling."""
+    return {k: v for k, v in row.items() if k not in VERDICT_BEARING_FIELDS}
 
 
 def build_inventory(
@@ -674,6 +716,12 @@ def build_parser() -> argparse.ArgumentParser:
     export_parser.add_argument("--output", type=Path, required=True)
     export_parser.add_argument("--force", action="store_true")
     export_parser.add_argument(
+        "--blind",
+        action="store_true",
+        help="omit the verifier's verdict fields so labels are not "
+             "anchored by them; rejoin on claim_id after review",
+    )
+    export_parser.add_argument(
         "--allow-missing-evidence",
         action="store_true",
         help="export rows a human cannot label; for inspection only",
@@ -734,7 +782,8 @@ def main(argv: list[str] | None = None) -> int:
                     "with scripts/backfill_release_evidence.py "
                     "(or --allow-missing-evidence for a non-labellable dump)"
                 )
-            write_inventory(args.output, expected, force=args.force)
+            rows = [blind_row(r) for r in expected] if args.blind else expected
+            write_inventory(args.output, rows, force=args.force)
             print(
                 f"exported {len(expected)} unreviewed claims to {args.output} "
                 f"({coverage['with_evidence']} with reconstructed evidence, "

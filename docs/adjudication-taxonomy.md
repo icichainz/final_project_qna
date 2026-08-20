@@ -1,0 +1,76 @@
+# Adjudication taxonomy and rulings
+
+Labelling rules for the 71 `release-1` failures. Written before labelling, so
+the rulings are not reverse-engineered from whichever labels the rows happened
+to attract. Wave 0c's gate exercise scored 3 of 8 rows cleanly decidable, and
+**all five undecidable rows failed on label definition, not on missing
+evidence** — these rulings close that gap.
+
+## Two independent questions
+
+Each row records both. Conflating them is what made `verifier_false_positive`
+carry two meanings at once.
+
+1. **`verifier_correct`** — should the verifier have flagged this claim at all?
+   Wave 2's precision and recall are computed from this field alone.
+2. **`root_cause`** (the `label`) — what produced the failure, and therefore
+   which component has to change.
+
+## Root causes
+
+| Label | Meaning | Implied fix |
+|---|---|---|
+| `verifier_false_positive` | The held evidence and the claim's own citation support it; the verifier was wrong | verifier matcher |
+| `genuine_answer_error` | The answer states something incorrect, contradictory, or materially incomplete | generation / repair |
+| `missing_retrieval_evidence` | The evidence needed was never retrieved for that turn | retrieval |
+| `missing_citation` | Supporting evidence was held, but the claim cites nothing | generation |
+| `wrong_citation` | The claim cites *something*, but not the evidence that supports it | generation |
+| `not_a_claim` | The unit is not a factual assertion (lead-in, heading, glue) | claim extraction |
+| `registry_conflict` | The document contradicts itself; the failure exposes a source-level conflict | registry / answer policy |
+| `ambiguous_unscorable` | The record cannot settle it; the ambiguity is written down | none — escalate |
+
+## Rulings for the four contested shapes
+
+**1. Colon lead-in** — `"The financing terms are as follows:"`, `"Key figures:"`.
+Asserts nothing checkable; it introduces the claims that follow.
+**Ruling: `not_a_claim`, `verifier_correct: false`.** The fix is in extraction,
+not in matching — the verifier cannot support a sentence with no proposition,
+and treating these as verifier misses would send the matcher chasing them.
+
+**2. Markdown heading** — `"## Financing"`, `"**Accredited entity**"`.
+Same reasoning. **Ruling: `not_a_claim`, `verifier_correct: false`.**
+
+**3. Closed-world negative** — `"FP999 does not exist in this corpus"`,
+`"the corpus contains no B.44 proposals"`.
+The corpus is closed and the registry is complete for it, so *absence in the
+registry is positive evidence of absence*. **Ruling: when the registry confirms
+the absence, `verifier_false_positive` — the claim is true and supported.**
+Where the assertion is broader than the registry can settle (a negative about
+document *content* rather than existence), it is `ambiguous_unscorable` with the
+reason written down. This is the one ruling that expands what counts as support,
+so it is scoped narrowly: existence, registry-confirmed, nothing else.
+
+**4. Wrong-scope or never-retrieved citation** — the claim carries a bracket,
+but it points at a page the turn never held, or at a page that does not state
+the figure.
+**Ruling: `wrong_citation`, `verifier_correct: true`.** Distinguishing it from
+`missing_citation` matters: the answer *did* cite, so the fix is citation
+accuracy in generation, not citation presence. It is not
+`missing_retrieval_evidence` when the fact was available elsewhere in the held
+evidence — check the row's evidence block before choosing.
+
+## Labelling procedure
+
+1. Export **blind** so the verifier's verdict cannot anchor the label:
+   `python3 scripts/adjudicate_claims.py export --release data/eval/release_release-1.jsonl --evidence data/eval/release_release-1-evidence.jsonl --output <work>.jsonl --blind`
+2. Label from the row alone: claim text, its citations, and the evidence the
+   turn actually held. Each row needs `label`, `verifier_correct`, `reviewer`,
+   and a `notes` line naming the page or stating why it cannot be scored.
+3. Rejoin on `claim_id` and validate:
+   `python3 scripts/adjudicate_claims.py import --release ... --inventory <work>.jsonl --output data/eval/release_release-1-adjudicated.jsonl`
+
+**Owner spot-check (required).** Agent labelling is not self-certifying: the
+same system that builds the matcher must not be the sole judge of which of its
+outputs were wrong. The owner reviews **every** `verifier_false_positive` — the
+label that authorises a matcher change — plus a stratified sample of at least
+one row per other label, and signs the adjudicated file.
