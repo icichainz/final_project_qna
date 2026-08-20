@@ -6,17 +6,16 @@
 
 | | count | share |
 |---|---|---|
-| `verifier_false_positive` | 45 | 63% |
-| `not_a_claim` | 12 | 16% |
+| `verifier_false_positive` | 46 | 65% |
+| `not_a_claim` | 12 | 17% |
 | `missing_citation` | 6 | 8% |
 | `missing_retrieval_evidence` | 5 | 7% |
-| `ambiguous_unscorable` | 0 | 0% |
 | `wrong_citation` | 1 | 1% |
 | `genuine_answer_error` | 1 | 1% |
 
 **Inter-rater agreement: 17/20 (85%)** on both root cause and `verifier_correct`. All three disagreements are the same taxonomy gap (ruling 1), listed below.
 
-**The verifier was wrong on 58 of 71 flagged claims (82%).** The 57% claim-support figure is therefore mostly measurement artifact, not wrong answers — as suspected, now measured.
+**The verifier was wrong on 59 of 71 flagged claims (83%).** The 57% claim-support figure is therefore mostly measurement artifact, not wrong answers — as suspected, now measured.
 
 ## What the 45 false positives authorise (Wave 2 scope)
 

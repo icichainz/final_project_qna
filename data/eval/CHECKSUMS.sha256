@@ -26,3 +26,6 @@ ce0463faef872918bd3d85078135ba9ab4d187eea223ffffdeca26435a9b9228  data/eval/answ
 # to the repo root, same as the lines above.
 559a3318fb6db8360ef6159dc00e29882cf829670925bf91f4659b2a8f665b4f  data/registry.json
 3476e554a31c8dcdc81a71a4a75d0033780b5493f53263b51def6593eaea8b53  data/registry_v2.json
+d7d2c4c4c3631f637e5edd9d963a8130687a4f450cfb706cb67e8767a7dea6dd  data/eval/release_release-1-adjudicated.jsonl
+1a0de743be0fab562f2f905e77b8f23ad33203b7c61523369f3d68bc2d0811b3  data/eval/release_release-1-adjudication.blind.jsonl
+9fde4024bb2a312c2d0117c71de64435478979cc60772d61b81a145f52ed7ea5  data/eval/release_release-1-evidence.jsonl

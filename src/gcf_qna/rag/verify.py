@@ -714,15 +714,12 @@ def entities(text: str) -> List[List[str]]:
 
     out = [vs for vs in out if not _joined_artifact(norm_text(vs[0]))]
 
-    # A candidate already contained in ANOTHER candidate's spelling adds no
-    # check: 'Unlocking' was cut out of the title it belongs to, and
-    # 'SoCF Global' / 'Pegasus Capital Advisors LLP' are the alias and the
-    # entity that 'Funding proposal submitted by Pegasus Capital Advisors LLP
-    # (Peganas)' and 'Global Subnational Climate Fund (SoCF Global)' already
-    # carry as variants (claim-a59cc16e). Verifying the longer form covers the
-    # fragment, and the fragment is what turns one reflowed name into two
-    # independent 'unsupported' verdicts — the standalone alias failed while
-    # the group that owns it matched.
+    # A single-word candidate already contained in a MULTI-WORD candidate adds
+    # no check: 'Unlocking' was cut out of the title it belongs to, and
+    # verifying the longer form covers the fragment. Note the scope: the
+    # `len(vs[0].split()) > 1` guard means only single-word candidates are
+    # ever suppressed — a multi-word alias like 'SoCF Global' stays an
+    # independent group even when a longer name carries it.
     longer = [norm_text(vs[0]) for vs in out if len(vs[0].split()) > 1]
     return [vs for vs in out
             if len(vs[0].split()) > 1
