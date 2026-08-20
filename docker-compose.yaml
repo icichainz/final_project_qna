@@ -37,7 +37,8 @@
 #   docker compose ps                       # confirm fp-gcf came back healthy
 #
 # Which sha was live when, and with which PLANNER/VERIFY switches, is
-# recorded in docs/DEPLOYED.md (appended by the `deploy` target).
+# recorded in docs/DEPLOYED.md (deploy PRINTS the row; the operator pastes it —
+# a self-editing target would trip the dirty-tree guard push just gained).
 #
 # Caveat: once a deploy has tagged an image by sha, a *bare* `docker compose
 # up -d` with GIT_SHA unset resolves to `fp-gcf:latest`, which may be stale or
