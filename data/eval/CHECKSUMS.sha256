@@ -1,0 +1,31 @@
+# Recorded eval runs — integrity anchor for the claim-support rollout.
+#
+# release_release-1.jsonl is the 66-answer release run of 2026-08-19 and is the
+# baseline every later --compare is measured against. It cannot be rebuilt: a
+# re-run calls the model 66 more times and is a different sample. Verify before
+# trusting any number derived from these files, and after any git operation
+# that touched data/eval/:
+#
+#     sha256sum -c data/eval/CHECKSUMS.sha256      # run from the repo root
+#
+# Regenerate ONLY when deliberately adding a new recorded run:
+#     sha256sum data/eval/release_*.jsonl data/eval/answers_baseline_*.jsonl
+#
+574a2b0d043a726a7b4e13794d957a5932b4e9d0195843b31c1c64c4bad0ae45  data/eval/release_release-1.jsonl
+da75da447aee66bb441ec975093a94577388f392c38ba1bfb05f17f3f4ac3c0a  data/eval/answers_baseline_baseline-sample-v2.jsonl
+a61f5aabd4675058de22131dad71682ccc082d62f3ff3ecac0ba692b6c01c045  data/eval/answers_baseline_retrieval-all-v2.jsonl
+73a1d6f807b536dc9dc3427f0262cb0a056218426936a36b662f12fe921905a4  data/eval/answers_baseline_retrieval-scoped-ab.jsonl
+ce0463faef872918bd3d85078135ba9ab4d187eea223ffffdeca26435a9b9228  data/eval/answers_baseline_step1-sample.jsonl
+#
+# The corpus fact registry, added in Wave 2. It is an INPUT to rag/verify.py —
+# every conflict verdict, every registry-backed figure and every 'report both
+# figures' suppression reads it — so an absent or edited registry changes every
+# number derived from the verifier. It was git-ignored under `data/**` until
+# Wave 2 tracked it with a negative pattern; these lines are what makes a
+# silent edit fail instead of re-scoring a different system. Paths are relative
+# to the repo root, same as the lines above.
+559a3318fb6db8360ef6159dc00e29882cf829670925bf91f4659b2a8f665b4f  data/registry.json
+3476e554a31c8dcdc81a71a4a75d0033780b5493f53263b51def6593eaea8b53  data/registry_v2.json
+d7d2c4c4c3631f637e5edd9d963a8130687a4f450cfb706cb67e8767a7dea6dd  data/eval/release_release-1-adjudicated.jsonl
+1a0de743be0fab562f2f905e77b8f23ad33203b7c61523369f3d68bc2d0811b3  data/eval/release_release-1-adjudication.blind.jsonl
+9fde4024bb2a312c2d0117c71de64435478979cc60772d61b81a145f52ed7ea5  data/eval/release_release-1-evidence.jsonl

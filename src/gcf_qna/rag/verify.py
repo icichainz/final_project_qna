@@ -39,12 +39,14 @@ verifier whose whole point is that it also works without them.
 """
 from __future__ import annotations
 
+import dataclasses
 import json
 import os
 import re
 import unicodedata
 from dataclasses import dataclass, field as dc_field
-from typing import Any, Dict, Iterable, List, Optional, Sequence, Tuple
+from typing import (Any, Callable, Dict, Iterable, List, Optional, Sequence,
+                    Tuple)
 
 from gcf_qna import config
 
@@ -154,11 +156,34 @@ def granularity(tok: str, mult: float) -> float:
     return (10.0 ** -dec) * mult
 
 
+def _decimal_comma_reading(tok: str, mult: float) -> Optional[Tuple[float, float]]:
+    """(value, grain) for a clashing token read with a DECIMAL comma.
+
+    The corpus prints European decimal marks — 'USD 28,025 million',
+    'a grant funding of USD 26,958 million' — where an answer writes
+    'USD 28.025 million'. Read US-first, '28,025' is twenty-eight thousand,
+    which with a million unit word is 2.8e10 and therefore implausible; that
+    implausibility is exactly the ``clash`` flag, and it is also the signal
+    that the separator was a decimal point. This reading is offered ONLY for
+    a token the unit ceiling already rejected, so a plainly grouped figure
+    ('40,751,254') is never re-read (claim-c83fbe25).
+    """
+    s = re.sub(r"(?<=\d)[   ](?=\d)", "", (tok or "").strip())
+    m = re.fullmatch(r"(\d{1,3}),(\d{3})", s)
+    if not m:
+        return None
+    return (float(f"{m.group(1)}.{m.group(2)}") * mult, (10.0 ** -3) * mult)
+
+
 @dataclass(frozen=True)
 class Amount:
     """One printed figure, normalized. ``value`` is None when the mantissa and
     the printed unit word cannot both be true ('28,654 million USD'): the
-    scale is then unknown and only ``bare`` (the mantissa) is comparable."""
+    scale is then unknown and only ``bare`` (the mantissa) is comparable.
+
+    ``alt`` is that same token read with a decimal comma instead of a
+    thousands comma — the only other reading the printed characters allow —
+    and is set only when ``value`` is None."""
     raw: str
     value: Optional[float]
     bare: float
@@ -166,6 +191,9 @@ class Amount:
     unit: Optional[str]
     grain: float
     at: int = 0
+    num: str = ""
+    alt: Optional[float] = None
+    alt_grain: float = 0.0
 
     @property
     def clash(self) -> bool:
@@ -203,6 +231,7 @@ def iter_amounts(text: str, money_only: bool = False) -> Iterable[Amount]:
             if money_only and mult == 1.0 and val < 1e4 and not cur_tok:
                 continue
         raw = text[m.start():m.end()].strip(" \t|,;:(")
+        alt = _decimal_comma_reading(num, mult) if clash else None
         yield Amount(
             raw=raw or num,
             value=None if clash else round(val * mult, 2),
@@ -210,11 +239,46 @@ def iter_amounts(text: str, money_only: bool = False) -> Iterable[Amount]:
             currency=_CUR_MAP.get(cur_tok if cur_tok == "us$" else cur_tok.rstrip("s")),
             unit={1e6: "million", 1e9: "billion", 1e3: "thousand"}.get(mult),
             grain=granularity(num, 1.0 if clash else mult),
-            at=m.start("num"))
+            at=m.start("num"),
+            num=num,
+            alt=alt[0] if alt else None,
+            alt_grain=alt[1] if alt else 0.0)
+
+
+_COMMA3_RE = re.compile(r"\d{1,3},\d{3}")
+
+
+def _decimal_comma_convention(got: List[Amount]) -> List[Amount]:
+    """Spread a decimal-comma reading across one text that demonstrates it.
+
+    'Co-financing: USD 28,025 million ... USD 26,958 million from APFC; and
+    ... USD 1,066 million from local government' prints one convention three
+    times. Two of the three are self-evidently decimal commas — 28,025 million
+    would be 2.8e10 — and the third, 1,066 million, is merely implausible
+    rather than impossible, so the unit ceiling lets it through as 1.066
+    BILLION and the answer's 'USD 1.066 million' reads as a thousandfold
+    error (claim-c83fbe25).
+
+    The convention is therefore taken from the text itself: only when a blob
+    already contains a 'd,ddd <unit>' figure whose US reading is impossible do
+    its other 'd,ddd <unit>' figures gain the decimal-comma reading as an
+    ALTERNATIVE. A text that never demonstrates the convention never gets it,
+    and no reading is ever replaced — only added.
+    """
+    if not any(a.clash and a.alt is not None for a in got):
+        return got
+    out: List[Amount] = []
+    for a in got:
+        if a.alt is None and a.unit and _COMMA3_RE.fullmatch(a.num or ""):
+            alt = _decimal_comma_reading(a.num, _UNIT_MULT.get(a.unit, 1.0))
+            if alt:
+                a = dataclasses.replace(a, alt=alt[0], alt_grain=alt[1])
+        out.append(a)
+    return out
 
 
 def amounts(text: str, money_only: bool = False) -> List[Amount]:
-    return list(iter_amounts(text, money_only))
+    return _decimal_comma_convention(list(iter_amounts(text, money_only)))
 
 
 def _money_like_amount(a: Amount) -> bool:
@@ -234,8 +298,19 @@ def amount_matches(a: Amount, b: Amount) -> bool:
         return False
     if a.value is not None and b.value is not None:
         tol = max(a.grain, b.grain) * 0.5 + 1e-6
-        return abs(a.value - b.value) <= tol
-    # at least one figure's scale is self-contradictory: the mantissa is still
+        if abs(a.value - b.value) <= tol:
+            return True
+    # the corpus's decimal comma: 'USD 28,025 million' and 'USD 28.025
+    # million' are one figure printed two ways. Strictly ADDITIVE — the
+    # alternative reading is tried after the printed one, never instead of it
+    for x, y in ((a, b), (b, a)):
+        if x.value is not None and y.alt is not None:
+            tol = max(x.grain, y.alt_grain) * 0.5 + 1e-6
+            if abs(x.value - y.alt) <= tol:
+                return True
+    if a.value is not None and b.value is not None:
+        return False
+    # a scale that is self-contradictory on both sides: the mantissa is still
     # comparable, and '28,654 million' vs '26,654 million' still disagree
     tol = max(granularity(a.raw, 1.0), granularity(b.raw, 1.0)) * 0.5 + 1e-6
     return abs(a.bare - b.bare) <= tol
@@ -442,7 +517,30 @@ _ENT_HAS_ID_RE = re.compile(
 _ENT_GENERIC = {"unlocking", "valuing", "including", "funding", "financing",
                 "proposal", "proposals", "facility", "programme", "program",
                 "project", "projects", "activity", "equity", "annex",
-                "recommendation", "summary", "however", "therefore", "based"}
+                "recommendation", "summary", "however", "therefore", "based",
+                # form-field words. '**Funding proposal ID / name:** FP86'
+                # bolds the LABEL, and demanding the page print the label as
+                # written reported the value beside it as unsupported
+                # (claim-87ad9dbb). Checked over the WHOLE candidate, so a
+                # name containing one of these ('Green Cities Facility')
+                # still stands.
+                "id", "ids", "name", "names", "title", "titles", "label",
+                "section", "field", "amount", "value", "number", "type",
+                "entity", "entities", "date", "dates", "status", "nom",
+                "titre", "montant"}
+
+
+def _all_generic(cand: str) -> bool:
+    """Is every word of this candidate template furniture?
+
+    'Funding proposal ID / name' is a form field's LABEL: each of its words is
+    generic, and no page prints the label as the answer spells it. 'Green
+    Cities Facility' contains one generic word and is still a name, so the
+    test is over the whole candidate, never over its parts.
+    """
+    words = [w for w in re.split(r"[\s/]+", norm_text(cand)) if w]
+    return bool(words) and all(w in _ENT_GENERIC or w in _ENT_STOP
+                               or w in _CONNECTORS for w in words)
 
 
 def _deaccent(s: str) -> str:
@@ -539,6 +637,24 @@ def _looks_like_name(cand: str, quoted: bool = False) -> bool:
     return caps / len(body) >= 0.5
 
 
+
+def _trim_run(cand: str) -> str:
+    """A capitalized run, cut back to its last capitalized word.
+
+    ``_CAPRUN_RE`` lets a connective pull the next word in, so that
+    'International Union for Conservation of Nature' survives whole. The same
+    rule swallows the sentence's grammar after a name: 'one with Pegasus and
+    one with IUCN' yields the candidate 'Pegasus and one', which no page
+    prints and which reported a correct sentence as unsupported
+    (claim-e79ef060). The name ends where the capitals end.
+    """
+    words = cand.split()
+    last = max((i for i, w in enumerate(words)
+                if re.match(r"[\"\u201c\u00ab(]?[A-Z\u00c0-\u00d6\u00d8-\u00de]", w)),
+               default=-1)
+    return " ".join(words[:last + 1]) if last >= 0 else cand
+
+
 def entities(text: str) -> List[List[str]]:
     """Proper-noun assignments a sentence makes, each as a variant list.
 
@@ -554,10 +670,15 @@ def entities(text: str) -> List[List[str]]:
         cands.append((m.group(1), True))
     plain = re.sub(r"[*_`]", "", body)
     # drop the leading word of the sentence: capitalization there is grammar
-    plain = re.sub(r"(^|(?<=[.!?…]\s))\s*([A-ZÀ-ÖØ-Þ])", lambda m: m.group(1) + m.group(2).lower(),
+    # ...including a sentence that opens inside a bracket or a quote:
+    # '(Separately, the excerpts ...' capitalizes an adverb because a sentence
+    # starts there, not because anything is named (claim-e79ef060). Same rule
+    # the line above already applies to an unbracketed opening.
+    plain = re.sub(r"(^|(?<=[.!?…]\s))(\s*[(\[\"“«]?\s*)([A-ZÀ-ÖØ-Þ])",
+                   lambda m: m.group(1) + m.group(2) + m.group(3).lower(),
                    plain)
     for m in _CAPRUN_RE.finditer(plain):
-        cands.append((m.group(1), False))
+        cands.append((_trim_run(m.group(1)), False))
     for m in _ACRONYM_RE.finditer(plain):
         cands.append((m.group(1), False))
 
@@ -575,7 +696,7 @@ def entities(text: str) -> List[List[str]]:
                 continue
             if _ENT_HAS_ID_RE.search(v):
                 continue                 # a pointer, not a name
-            if key in _ENT_GENERIC:
+            if key in _ENT_GENERIC or _all_generic(v):
                 continue
             if not _entity_core(v) or not _looks_like_name(v, quoted):
                 continue
@@ -593,10 +714,12 @@ def entities(text: str) -> List[List[str]]:
 
     out = [vs for vs in out if not _joined_artifact(norm_text(vs[0]))]
 
-    # A single word already inside a longer surviving candidate adds no check:
-    # 'Unlocking' was cut out of the title it belongs to. Verifying the longer
-    # form covers it, and the fragment is what turns a reflowed title into a
-    # false 'unsupported'.
+    # A single-word candidate already contained in a MULTI-WORD candidate adds
+    # no check: 'Unlocking' was cut out of the title it belongs to, and
+    # verifying the longer form covers the fragment. Note the scope: the
+    # `len(vs[0].split()) > 1` guard means only single-word candidates are
+    # ever suppressed — a multi-word alias like 'SoCF Global' stays an
+    # independent group even when a longer name carries it.
     longer = [norm_text(vs[0]) for vs in out if len(vs[0].split()) > 1]
     return [vs for vs in out
             if len(vs[0].split()) > 1
@@ -904,17 +1027,21 @@ class Verdict:
 
 
 def _scopes(claim: Claim, evidence: Evidence
-            ) -> Tuple[List[EvidenceKey], List[EvidenceKey], List[str]]:
-    """(strict scope, same-document fallback scope, unresolvable citations).
+            ) -> Tuple[List[EvidenceKey], List[EvidenceKey], List[str], List[EvidenceKey]]:
+    """(strict scope, same-document fallback, unresolvable citations, ruling-5 scope).
 
     Strict scope is what the claim actually cites. The fallback widens to the
     rest of the cited document: a figure that is real but attached to the
     wrong page is a citation defect, not an invented fact, and the two deserve
-    different verdicts.
+    different verdicts. The ruling-5 scope is every held key of a document
+    cited WITHOUT a page — a coarse bracket, satisfied by any key of the
+    document it names, and reported as a coarse citation rather than a
+    silent one.
     """
     docs = {k[0] for k in evidence if k[0] != NOTES_DOC}
     strict: List[EvidenceKey] = []
     wide: List[EvidenceKey] = []
+    widened: List[EvidenceKey] = []
     bad: List[str] = []
     for c in claim.citations:
         if c.doc is None:
@@ -933,14 +1060,23 @@ def _scopes(claim: Claim, evidence: Evidence
             continue
         wide += [k for k in evidence if k[0] == d]
         if c.page is None:
+            # RULING 5 (docs/adjudication-taxonomy.md): a bracket naming only
+            # the document ('[doc]', '[doc, cover pages]') is satisfied by ANY
+            # held evidence key of that document. That widening is returned
+            # SEPARATELY, as ``widened``, and not folded into ``strict``:
+            # collapsing the two made strict == wide, which silently killed the
+            # intra-document conflict detector for every page-less bracket and
+            # dropped the citation-page-mismatch caution the head emitted.
             here = [k for k in evidence if k[0] == d and k[1] is None]
             strict += here or [k for k in evidence if k[0] == d]
+            widened += [k for k in evidence if k[0] == d]
         elif (d, c.page) in evidence:
             strict.append((d, c.page))
         else:
             bad.append(f"{d}, p.{c.page}")
     ded = lambda xs: list(dict.fromkeys(xs))     # noqa: E731
-    return ded(strict), ded(wide), ded(bad)
+    keep = ded(strict)
+    return keep, ded(wide), ded(bad), [k for k in ded(widened) if k not in keep]
 
 
 def _text_of(evidence: Evidence, keys: Sequence[EvidenceKey]) -> str:
@@ -985,13 +1121,29 @@ def _money_like(a: Amount) -> bool:
     return bool(a.currency or a.unit or a.clash or (a.value or 0) >= 1e4)
 
 
-def _field_conflict(claim: Claim, text: str) -> Optional[Tuple[Amount, str]]:
+def _field_conflict(claim: Claim, text: str,
+                    also_reported: Sequence[Amount] = (),
+                    settled: Optional[Callable[[Amount], bool]] = None
+                    ) -> Optional[Tuple[Amount, str]]:
     """A figure printed under the claim's own field label that disagrees.
 
     Line-scoped and label-anchored: the registry prints 'GCF financing (as
     printed): 28,654 million USD; total financing (as printed): 49,654 million
     USD' on ONE line, so the value of a field is the first amount AFTER its
     label, not the first amount on the line.
+
+    ``also_reported`` are the figures OTHER claims of the same answer state for
+    the same document. A registry conflict note says, verbatim, 'report both
+    figures with their pages'; an answer that obeys it prints one figure per
+    bullet, and reading each bullet alone turns compliance into a
+    contradiction — 14 adjudicated claims (claim-11d3a178, claim-1cdbc791,
+    claim-ca1c1388, claim-d43027b0, claim-4650af24, ...) failed exactly that
+    way. A disagreeing figure the answer ITSELF reports for this document is
+    the instructed behaviour, not a contradiction to repair.
+
+    ``settled`` decides ONE rival print at a time (see ``_key_conflict``); a
+    rival it skips does not end the scan, so a second, unsettled rival printed
+    further down the same page is still reported.
     """
     field = claim_field(claim.text)
     if not field or not claim.amounts:
@@ -1004,9 +1156,15 @@ def _field_conflict(claim: Claim, text: str) -> Optional[Tuple[Amount, str]]:
                 return None                       # the field agrees somewhere
     for line, at in lines:
         for cand in _value_after(line, at)[:1]:
-            if _money_like(cand) and not any(amount_matches(cand, a)
-                                             for a in claim.amounts):
-                return cand, line.strip()[:200]
+            if not _money_like(cand) or any(amount_matches(cand, a)
+                                            for a in claim.amounts):
+                continue
+            if any(amount_matches(cand, a) for a in also_reported):
+                return None                       # the answer reports both
+            if settled is not None and settled(cand):
+                continue          # the registry recorded this print, and not
+                                  # as a conflict — keep looking on this page
+            return cand, line.strip()[:200]
     return None
 
 
@@ -1023,7 +1181,8 @@ def _as_amount(raw: str) -> Optional[Amount]:
     return got[0] if got else None
 
 
-def registry_conflict(doc_id: str, claim: Claim) -> Optional[str]:
+def registry_conflict(doc_id: str, claim: Claim,
+                      also_reported: Sequence[Amount] = ()) -> Optional[str]:
     """A conflict the fact registry already recorded for this document/field.
 
     Retrieval is a sample: the page that disagrees may simply not be in this
@@ -1050,9 +1209,16 @@ def registry_conflict(doc_id: str, claim: Claim) -> Optional[str]:
     if not stated:
         return None                  # the answer states neither side; other checks own it
     # An answer that already reports BOTH figures is the behaviour the prompt
-    # asks for, not a contradiction to repair.
+    # asks for, not a contradiction to repair. The reporting is ANSWER-level,
+    # not sentence-level: the registry note says 'report both figures with
+    # their pages', and an answer that obeys prints one figure per bullet, so
+    # ``also_reported`` carries what the answer's other claims state for this
+    # same document (claim-03d4cab1, claim-0c2cdfab, claim-0ceca63e,
+    # claim-4b104f74, claim-5b351da8, claim-79a9c71a, claim-bdadca96,
+    # claim-e33e0ea0, claim-ea234d3b).
+    reported = list(claim.amounts) + list(also_reported)
     if any((a := _as_amount(c.get("raw", ""))) and
-           any(amount_matches(a, x) for x in claim.amounts) for c in others):
+           any(amount_matches(a, x) for x in reported) for c in others):
         return None
     alt = others[0]
     return (f"the corpus registry records a conflicting figure in this document: "
@@ -1160,6 +1326,15 @@ def _check_entities(claim: Claim, text: str) -> Tuple[bool, List[List[str]]]:
 
 
 def _check_years(claim: Claim, text: str) -> Tuple[bool, List[str]]:
+    """(ok, missing) for the year and board tokens a claim states.
+
+    Wave 2 briefly let a board token be satisfied by the CITED DOCUMENT'S ID
+    ('B.27' inside ``124_gcf-b27-02-add11``). It was reverted: a year/board
+    claim is checked by its token and nothing else, so satisfying the token
+    from the citation left the predicate unverified — 'GCF/B.27/02/Add.11 was
+    withdrawn by the Board' verified against a page about formatting. It also
+    earned zero adjudicated rows once the other changes were in place.
+    """
     hay = text or ""
     want = set(_YEAR_RE.findall(_strip_citations(claim.text))) | \
         {m.group(0) for m in _BOARD_RE.finditer(_strip_citations(claim.text))}
@@ -1175,16 +1350,199 @@ def _verify_against(claim: Claim, text: str) -> Tuple[bool, str]:
     if claim.kind == "entity" and claim.entities:
         ok, missing = _check_entities(claim, text)
         return ok, ", ".join(vs[0] for vs in missing)
-    if claim.kind == "year":
-        ok, missing = _check_years(claim, text)
-        return ok, ", ".join(missing)
-    if claim.kind == "existence":
+    if claim.kind in ("year", "existence"):
         ok, missing = _check_years(claim, text)
         return ok, ", ".join(missing)
     # a claim whose trigger left nothing normalizable (a bare number with no
     # unit, say): fall back to the entity check, then give it to the judge
     ok, missing = _check_entities(claim, text)
     return ok, ", ".join(vs[0] for vs in missing)
+
+
+def registry_records(doc_id: str, field: Optional[str], want: Amount) -> bool:
+    """Does the corpus registry print ``want`` for this document and field?
+
+    The 'report both figures' relaxation exists because a registry CONFLICT
+    note tells the answer to report both. That instruction is the licence, so
+    the licence is checked: a sibling figure the registry does not record for
+    this field is not the conflict's other side, it is just another number in
+    the answer, and letting it suppress the verdict is how 'GCF funding
+    requested: 40,751,254' sat next to a mislabelled 'roughly USD 38,000,000
+    was leveraged from partners' and both verified clean.
+    """
+    v2 = _V2_FIELD.get(field or "")
+    if not v2:
+        return False
+    try:
+        from gcf_qna.rag import registry
+        cands = (registry.facts(doc_id) or {}).get(v2) or []
+    except Exception:           # the registry is an enhancement, never a blocker
+        return False
+    return any((a := _as_amount(c.get("raw", ""))) and amount_matches(a, want)
+               for c in cands)
+
+
+def registry_ruled_compatible(doc_id: str, field: Optional[str],
+                              stated: Sequence[Amount], rival: Amount) -> bool:
+    """Has the registry READ BOTH prints and filed the rival as not-a-conflict?
+
+    ``scripts/build_registry_v2.py`` scans every page of a document, elects one
+    ``canonical`` value per field, and then rules on every other print of that
+    field: ``conflicting`` when it "IS comparable with the canonical one ...
+    and disagrees", ``supporting`` when it "agrees with the canonical one, or
+    is not comparable with it (no parsed value / incompatible currency / text
+    field / a figure far below the canonical total, i.e. a component or a
+    tranche). Never an assertion of conflict." Deferring to that ruling is the
+    only thing that may outrank a page-level disagreement, and it is claimed
+    only when the registry actually read the pair:
+
+    1. **the answer states the CANONICAL value** for this document and field.
+       The registry elected it; the answer is repeating the registry's own
+       reading. Drop this clause and the pair inverts — 'Total financing:
+       **$100,000,000** [p.55]' would suppress FP152's canonical 720 M USD on
+       p.5 and a per-project tranche would verify clean as the programme
+       total.
+    2. **the registry RECORDED the rival print** for the same field. SILENCE
+       IS NOT A RULING: this is the clause whose absence sank the deleted
+       ``registry_settled``, where a document whose registry knows 26,736,295
+       verified clean against a p.99 printing 999,111,222, with no flag at
+       all. An unbuilt registry, an unregistered document and an unmapped
+       field are all silence and all reach the same answer here.
+    3. **every record of the rival is filed ``supporting``.** ``conflicting``
+       is the registry saying these ARE two readings of one field, which is
+       the contradiction, not an excuse for it; ``canonical`` cannot occur
+       under clause 1 but is excluded anyway rather than argued about.
+
+    Only the money/duration fields ``_V2_FIELD`` maps are askable; for every
+    other field the registry has no opinion to defer to.
+    """
+    v2 = _V2_FIELD.get(field or "")
+    if not v2 or not stated:
+        return False
+    try:
+        from gcf_qna.rag import registry
+        cands = (registry.facts(doc_id) or {}).get(v2) or []
+    except Exception:           # the registry is an enhancement, never a blocker
+        return False
+    canon = next((c for c in cands if c.get("status") == "canonical"), None)
+    ca = _as_amount(canon.get("raw", "")) if canon else None
+    if ca is None or not any(amount_matches(ca, s) for s in stated):
+        return False                                        # clause 1
+    recorded = [c for c in cands
+                if (a := _as_amount(c.get("raw", ""))) and amount_matches(a, rival)]
+    if not recorded:
+        return False                                        # clause 2 — SILENCE
+    return all(c.get("status") == "supporting" for c in recorded)   # clause 3
+
+
+def _key_conflict(claim: Claim, evidence: Evidence, keys: Sequence[EvidenceKey],
+                  also: Sequence[Amount] = (), registry_rulings: bool = True
+                  ) -> Tuple[Optional[Tuple[Amount, str]], Optional[EvidenceKey]]:
+    """The first held key that prints a DIFFERENT value under the claim's field.
+
+    One key at a time, deliberately. ``_field_conflict`` stops at the first
+    page that agrees, so handing it several concatenated keys let a document
+    that prints 40,751,254 on p.5 and 38,000,000 on p.48 verify clean against
+    a claim citing the document as a whole.
+
+    A ``registry_settled`` escape once sat here, deferring to the registry
+    whenever it recorded the CLAIM's figure and had not marked the rival
+    'conflicting'. It was deleted: the registry's SILENCE about a figure is
+    not a ruling that the figure is compatible, so a document whose registry
+    knows 26,736,295 while p.99 prints 999,111,222 verified clean with no
+    flag at all. It earned no adjudicated row.
+
+    What is here instead is the narrower condition the review that rejected it
+    specified: defer only when the registry has actually RECORDED THE RIVAL
+    print for this document and field — the print about to be called a
+    contradiction, not just the claim's own figure — and filed it
+    ``supporting`` rather than ``conflicting`` (``registry_ruled_compatible``,
+    which also keeps ``registry_settled``'s requirement that the answer be
+    stating the registry's own canonical reading). Silence still suppresses
+    nothing, so the 26,736,295/999,111,222 probe stays CONTRADICTED.
+
+    The row it exists for is ``id-fp152-financing``. Its document prints
+    'A7. Total financing (SCF + co-finance) 720 M USD' on p.5 and, on p.55,
+    '(a) Total project financing: $100,000,000' inside an E.2.2 cost-per-tonne
+    calculation whose sibling line reads '(b) Expected GCF contribution:
+    $75,000,000' — half the programme's own 150 M USD, which is what makes it
+    a per-project template row and not the programme total. Same words, a
+    different scope. The registry filed it 'supporting' (a figure far below
+    the canonical total is a component or a tranche), so it is settled, while
+    the 210 candidates it filed 'conflicting' corpus-wide are not.
+
+    The predicate is applied PER RIVAL, not per key: a settled print does not
+    excuse the next print on the same page.
+    """
+    field = claim_field(claim.text)
+    for k in keys:
+        settled = None
+        if registry_rulings and k[0] != NOTES_DOC:
+            settled = (lambda rival, d=k[0]:
+                       registry_ruled_compatible(d, field, claim.amounts, rival))
+        got = _field_conflict(claim, evidence.get(k, ""), also, settled)
+        if got:
+            return got, k
+    return None, None
+
+
+def _reported_elsewhere(claims: Sequence[Claim],
+                        scopes: Sequence[Tuple[List[EvidenceKey], ...]]):
+    """``claim -> the figures the answer's OTHER claims state for ITS FIELD``.
+
+    The registry's conflict note is an instruction to the ANSWER ('report both
+    figures with their pages'), and an answer that obeys it prints one figure
+    per bullet. Judging a bullet on its own therefore turns compliance into a
+    contradiction, which is what 22 of the adjudicated false positives are.
+
+    Three things scope it, and each closes a hole the earlier document-only
+    version had:
+
+    * the same DOCUMENT — a figure another claim attributes elsewhere says
+      nothing about this one;
+    * a COMPATIBLE field — a sibling that explicitly claims a DIFFERENT field
+      is not reporting this one's other side, and letting it suppress the
+      conflict made two transposed values license each other ('GCF funding
+      requested: USD 38,000,000' beside 'total co-financing: USD 40,751,254'
+      when the page prints them the other way round). A sibling with no field
+      label is compatible: the bullets that obey the note print a bare figure
+      and a section — '**USD 49,751,264** (p.8, A.10 "Grant")' — and demanding
+      that each repeat the label costs seven adjudicated rows;
+    * an UNAMBIGUOUS attribution — a claim whose chained brackets name several
+      documents attributes its figure to none of them in particular, so it
+      contributes to no pool rather than to all of them.
+
+    The claim's own figures may sit in its pool: they cannot change anything,
+    because ``_field_conflict`` never emits a candidate that matches one of
+    them and ``registry_conflict`` already unions them into what it checks.
+    An explicit self-exclusion was removed rather than tested — a gate whose
+    removal cannot change a verdict is not a gate.
+    """
+    by_doc: Dict[str, List[Tuple[Optional[str], Amount]]] = {}
+    slot: List[Optional[Tuple[str, Optional[str]]]] = []
+    for c, (strict, wide, _bad, r5) in zip(claims, scopes):
+        docs = {k[0] for k in list(strict) + list(wide) + list(r5)
+                if k[0] != NOTES_DOC}
+        field = claim_field(c.text)
+        if len(docs) != 1:
+            slot.append(None)
+            continue
+        doc = next(iter(docs))
+        slot.append((doc, field))
+        by_doc.setdefault(doc, []).extend((field, a) for a in c.amounts)
+
+    index = {id(c): i for i, c in enumerate(claims)}
+
+    def for_claim(claim: Claim) -> Tuple[Optional[str], Optional[str], List[Amount]]:
+        i = index[id(claim)]
+        if slot[i] is None:
+            return None, None, []
+        doc, field = slot[i]
+        return doc, field, [a for f, a in by_doc.get(doc, ())
+                            if f is None or f == field]
+
+    return for_claim
+
 
 
 def classify_deterministic(claims: Sequence[Claim], evidence: Evidence,
@@ -1205,10 +1563,29 @@ def classify_deterministic(claims: Sequence[Claim], evidence: Evidence,
     """
     out: List[Verdict] = []
     all_text = "\n".join(evidence.values())
-    for c in claims:
-        strict, wide, bad = _scopes(c, evidence)
+    scopes = [_scopes(c, evidence) for c in claims]
+    elsewhere = _reported_elsewhere(claims, scopes)
+    for c, (strict, wide, bad, r5) in zip(claims, scopes):
         flags = ["invalid-citation:" + b for b in bad]
-
+        also_doc, also_field, also_all = elsewhere(c)
+        # `also` excuses a field conflict only for a figure the registry
+        # records for this document and field; `registry_conflict` matches
+        # against its own recorded candidates and needs no second filter.
+        also = [a for a in also_all
+                if also_doc and registry_records(also_doc, also_field, a)] \
+            if registry_conflicts else []
+        # Rulings 3 and 7 (closed-world and retrieval-scoped negatives) were
+        # implemented here and BOTH deleted. Ruling 7 excused a name precisely
+        # BECAUSE it was absent from every held key — and absence from the
+        # evidence is the definition of a fabrication, so the condition
+        # selected for the thing it was meant to exclude. Ruling 3 supported
+        # an uncited claim whenever a computed note confirmed the absence and
+        # the rest of the unit appeared ANYWHERE in the held set — any
+        # document, any field — so 'FP999 does not exist, and the total
+        # co-financing is USD 18.5 million' passed against a page printing
+        # 18.5M as GCF funding requested. Attributing that rider needs a
+        # document, and an uncited claim names none, so the gate cannot be
+        # written. Both cost adjudicated rows to remove; both were removed.
         if not c.citations:
             found, _ = _verify_against(c, all_text)
             out.append(Verdict(c, UNSUPPORTED, "no citation on a factual claim",
@@ -1225,11 +1602,38 @@ def classify_deterministic(claims: Sequence[Claim], evidence: Evidence,
 
         strict_text = _text_of(evidence, strict)
         ok, missing = _verify_against(c, strict_text)
+        if not ok and r5:
+            # RULING 5: the bracket named the document and no page, so any held
+            # key of that document may carry the claim. It is a coarse
+            # citation, and it is reported as one — the caution the head
+            # emitted for a wrong page is exactly the right caution here.
+            ok5, _ = _verify_against(c, _text_of(evidence, r5))
+            if ok5:
+                ok = True
+                flags.append("citation-page-mismatch")
+        # NOTE: a registry-confirmed absence supports the ABSENCE, never the
+        # rest of the unit. An earlier revision short-circuited the whole
+        # verdict here, so 'FP999 does not exist in this corpus, and FP151
+        # requests USD 61 million [doc, p.5]' shipped as verified. The four
+        # adjudicated ruling-3 rows are all UNCITED and clear through the
+        # branch above; a CITED claim keeps every other check it had.
         if ok:
-            conflict = _field_conflict(c, strict_text)
+            # Conflicts are tested PER KEY, over the ruling-5 scope as well as
+            # the strict one. Concatenating the keys first let one agreeing
+            # page hide a disagreeing one, and folding ruling 5 into `strict`
+            # emptied the cross-page scope altogether: a document printing two
+            # figures for the same field, cited '[doc]', verified clean.
+            conflict, where = _key_conflict(c, evidence, strict, also,
+                                            registry_conflicts)
+            if conflict is None and r5:
+                conflict, where = _key_conflict(c, evidence, r5, also,
+                                                registry_conflicts)
+                if conflict:
+                    flags.append("conflict-elsewhere-in-document")
             if conflict is None and cross_page_conflicts:
-                others = [k for k in wide if k not in strict]
-                conflict = _field_conflict(c, _text_of(evidence, others))
+                others = [k for k in wide if k not in strict and k not in r5]
+                conflict, where = _key_conflict(c, evidence, others, also,
+                                                registry_conflicts)
                 if conflict:
                     flags.append("conflict-elsewhere-in-document")
             if conflict:
@@ -1242,7 +1646,7 @@ def classify_deterministic(claims: Sequence[Claim], evidence: Evidence,
             known = None
             if registry_conflicts:
                 for d in dict.fromkeys(k[0] for k in strict + wide if k[0] != NOTES_DOC):
-                    known = registry_conflict(d, c)
+                    known = registry_conflict(d, c, also_all)
                     if known:
                         break
             if known:
@@ -1255,7 +1659,8 @@ def classify_deterministic(claims: Sequence[Claim], evidence: Evidence,
                                strict, flags=flags))
             continue
 
-        conflict = _field_conflict(c, strict_text)
+        conflict, _where = _key_conflict(c, evidence, strict, also,
+                                         registry_conflicts)
         if conflict:
             cand, line = conflict
             out.append(Verdict(c, CONTRADICTED,
@@ -1264,7 +1669,7 @@ def classify_deterministic(claims: Sequence[Claim], evidence: Evidence,
                                strict, flags=flags))
             continue
 
-        wide_only = [k for k in wide if k not in strict]
+        wide_only = [k for k in wide if k not in strict and k not in r5]
         if wide_only:
             ok2, _ = _verify_against(c, _text_of(evidence, wide_only))
             if ok2:
@@ -1436,7 +1841,7 @@ def adjudicate(verdicts: Sequence[Verdict], evidence: Evidence,
 
     payload = []
     for v in todo:
-        strict, wide, _ = _scopes(v.claim, evidence)
+        strict, wide, _, _r5 = _scopes(v.claim, evidence)
         payload.append({
             "id": v.claim.index,
             "claim": _strip_citations(v.claim.text).strip()[:400],
@@ -1681,7 +2086,7 @@ def repair(answer: str, verdicts: Sequence[Verdict], evidence: Evidence,
 
     blocks, shown_docs = [], []
     for v in failed:
-        strict, wide, _ = _scopes(v.claim, evidence)
+        strict, wide, _, _r5 = _scopes(v.claim, evidence)
         keys = _judge_keys(v.claim, evidence, strict, wide)
         shown_docs += [k[0] for k in keys if k[0] != NOTES_DOC]
         blocks.append(
