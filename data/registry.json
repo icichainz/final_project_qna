@@ -1,0 +1,3827 @@
+{
+ "schema_version": 1,
+ "source": "qwen_qwen2.5-vl-7b",
+ "documents": {
+  "01_gcf-b42-02-add17-funding-proposal-package-fp275": {
+   "fp": 275,
+   "title": "Scaling up the Deployment of Integrated Utility Services (IUS) to Support Energy Sector Transformation in the Caribbean (Phase II: Scaling up IUS in Dominica, Grenada and St. Vincent & the Grenadines)",
+   "accredited_entity": "Caribbean Development Bank",
+   "countries": [
+    "Barbados",
+    "Belize",
+    "Jamaica"
+   ],
+   "gcf_financing": null,
+   "total_financing": null,
+   "board": 42,
+   "year": 2025
+  },
+  "02_gcf-b42-02-add16-funding-proposal-package-fp274": {
+   "fp": 274,
+   "title": "Building the Climate Resilience of Children and Communities through the Education Sector (BRACE)",
+   "accredited_entity": "Save the Children Australia",
+   "countries": [
+    "Zambia",
+    "South Sudan",
+    "Togo"
+   ],
+   "gcf_financing": null,
+   "total_financing": null,
+   "board": 42,
+   "year": 2025
+  },
+  "03_gcf-b42-02-add15-funding-proposal-package-fp273": {
+   "fp": 273,
+   "title": "Papua New Guinea REDD+ plus RBP for results period 2014-2016",
+   "accredited_entity": "FMO",
+   "countries": [
+    "Papua New Guinea"
+   ],
+   "gcf_financing": null,
+   "total_financing": null,
+   "board": 42,
+   "year": 2025
+  },
+  "04_gcf-b42-02-add14-funding-proposal-package-fp272_0": {
+   "fp": 272,
+   "title": "Protecting livelihoods and assets at risk from Glacial Lake Outburst Floods (GLOFs) and climate change-induced flooding in glacial river basins of Nepal",
+   "accredited_entity": "United Nations Development Programme (UNDP)",
+   "countries": [
+    "Nepal"
+   ],
+   "gcf_financing": "36,158,230 USD",
+   "total_financing": "49,944,000 USD",
+   "board": 42,
+   "year": 2025
+  },
+  "05_gcf-b42-02-add13-funding-proposal-package-fp271": {
+   "fp": 271,
+   "title": "India Green Finance Facility (IGFF)",
+   "accredited_entity": "Asian Development Bank",
+   "countries": [
+    "The Republic of India"
+   ],
+   "gcf_financing": null,
+   "total_financing": null,
+   "board": 42,
+   "year": 2025
+  },
+  "06_gcf-b42-02-add12-funding-proposal-package-fp270": {
+   "fp": 270,
+   "title": "Climate Adaptive Irrigation and Sustainable Agriculture for Resilience (CAISAR) in Cambodia",
+   "accredited_entity": "International Fund for Agriculture Development",
+   "countries": [
+    "Cambodia"
+   ],
+   "gcf_financing": null,
+   "total_financing": null,
+   "board": 42,
+   "year": 2025
+  },
+  "07_gcf-b42-02-add11-funding-proposal-package-fp269": {
+   "fp": 269,
+   "title": "Dairy Interventions for Mitigation and Adaptation (DiMA)",
+   "accredited_entity": "International Fund for Agricultural Development (IFAD)",
+   "countries": [
+    "Kenya",
+    "Rwanda",
+    "United Federation of Tanzania",
+    "Uganda"
+   ],
+   "gcf_financing": "358.26 million USD",
+   "total_financing": "190.00 million USD",
+   "board": 42,
+   "year": 2025
+  },
+  "08_gcf-b42-02-add10-funding-proposal-package-fp268": {
+   "fp": 268,
+   "title": "Scaling-Up Resilience in Africa’s Great Green Wall (SURAGGWA)",
+   "accredited_entity": "Food and Agriculture Organization of the United Nations (FAO)",
+   "countries": [
+    "Burkina Faso",
+    "Chad",
+    "Djibouti",
+    "Mali",
+    "Mauritania",
+    "Niger",
+    "Nigeria",
+    "Senegal"
+   ],
+   "gcf_financing": null,
+   "total_financing": null,
+   "board": 42,
+   "year": 2025
+  },
+  "09_gcf-b42-02-add09-funding-proposal-package-fp267": {
+   "fp": 267,
+   "title": "Scaling up ecosystem-based approaches to managing climate-related and classified disaster risks in vulnerable regions of South Africa (\"Eco-DRR\")",
+   "accredited_entity": "SANBI",
+   "countries": [
+    "South Africa"
+   ],
+   "gcf_financing": "$46.10 million USD",
+   "total_financing": null,
+   "board": 42,
+   "year": 2025
+  },
+  "100_gcf-b30-02-add07": {
+   "fp": 175,
+   "title": "Enhancing community resilience and water security in the Upper Athi River Catchment Area, Kenya",
+   "accredited_entity": "National Environment Management Authority",
+   "countries": [
+    "Kenya"
+   ],
+   "gcf_financing": "9,526,603.26 USD",
+   "total_financing": "9,999,983.26 USD",
+   "board": 30,
+   "year": 2021
+  },
+  "101_gcf-b30-02-add06": {
+   "fp": 174,
+   "title": "Ecosystem-based Adaptation to increase climate resilience in the Central American Dry Corridor and the Arid Zones of the Dominican Republic.",
+   "accredited_entity": "Central American Bank for Economic Integration (CABEI)",
+   "countries": [
+    "Guatemala",
+    "Honduras",
+    "El Salvador",
+    "Nicaragua",
+    "Costa Rica",
+    "Panama",
+    "Dominican Republic"
+   ],
+   "gcf_financing": "USD 174.3 million",
+   "total_financing": "USD 268.4 million",
+   "board": 30,
+   "year": 2021
+  },
+  "102_gcf-b30-02-add05": {
+   "fp": 173,
+   "title": "The Amazon Bioeconomy Fund: Unlocking private capital to finance climate products and services with climate mitigation and adaptation results in the Amazon",
+   "accredited_entity": "Inter-American Development Bank",
+   "countries": [
+    "Brazil",
+    "Colombia",
+    "Ecuador",
+    "Guyana",
+    "Peru",
+    "Suriname"
+   ],
+   "gcf_financing": "$23.6 million USD",
+   "total_financing": "$58.1 million USD",
+   "board": 30,
+   "year": 2021
+  },
+  "103_gcf-b30-03-add04": {
+   "fp": 172,
+   "title": "Mitigating GHG emission through modern, efficient and climate-friendly clean cooking solutions (CCS)",
+   "accredited_entity": "Alternative Energy Promotion Centre, Ministry of Energy, Water Resources and Irrigation, Government of Nepal.",
+   "countries": [
+    "Nepal"
+   ],
+   "gcf_financing": "21,128,224USD",
+   "total_financing": "49,151,817 USD",
+   "board": 30,
+   "year": 2021
+  },
+  "104_gcf-b30-03-add03": {
+   "fp": 171,
+   "title": "Enhancing Early Warning Systems to build greater resilience against meteorological hazards in Timor-Leste",
+   "accredited_entity": "United Nations Environment Programme",
+   "countries": [
+    "Democratic Republic of Timor-Leste"
+   ],
+   "gcf_financing": "$20,980,722 USD",
+   "total_financing": "$21,729,122 USD",
+   "board": 30,
+   "year": 2021
+  },
+  "105_gcf-b30-02-add02": {
+   "fp": 170,
+   "title": "Enhancing climate resilience in Thailand through effective water management and sustainable agriculture",
+   "accredited_entity": "United Nations Development Programme (UNDP)",
+   "countries": [
+    "Thailand"
+   ],
+   "gcf_financing": "17,533,500 USD",
+   "total_financing": "39,911,322 USD",
+   "board": 30,
+   "year": 2021
+  },
+  "106_gcf-b30-02-add01": {
+   "fp": 169,
+   "title": "Climate change adaptation solutions for Local Authorities in the Federated States of Micronesia",
+   "accredited_entity": "Pacific Community (SPC)",
+   "countries": [
+    "Federated States of Micronesia"
+   ],
+   "gcf_financing": "$34,585,556 USD",
+   "total_financing": "$15,716,621 USD",
+   "board": 30,
+   "year": 2021
+  },
+  "107_gcf-b29-02-add04": {
+   "fp": 168,
+   "title": "Leveraging Energy Access Finance (LEAF) Framework",
+   "accredited_entity": "African Development Bank",
+   "countries": [
+    "Nigeria",
+    "Kenya",
+    "Ghana",
+    "Tunisia",
+    "Ethiopia",
+    "Guinea"
+   ],
+   "gcf_financing": "175.9 USD",
+   "total_financing": "999.9 USD",
+   "board": 29,
+   "year": 2021
+  },
+  "108_gcf-b29-02-add03-rev02": {
+   "fp": 167,
+   "title": "Transforming Eastern Province through Adaptation",
+   "accredited_entity": "IUCN",
+   "countries": [
+    "Rwanda"
+   ],
+   "gcf_financing": "33,783,755 USD",
+   "total_financing": "49,622,792 USD",
+   "board": 29,
+   "year": 2021
+  },
+  "109_gcf-b29-02-add02": {
+   "fp": 166,
+   "title": "Light Rail Transit for the Greater Metropolitan Area (GMA)",
+   "accredited_entity": "Central American Bank for Economic Integration (CABEI)",
+   "countries": [
+    "Costa Rica"
+   ],
+   "gcf_financing": "271,300,000 USD",
+   "total_financing": "1,873,300,000 USD",
+   "board": 29,
+   "year": 2021
+  },
+  "10_gcf-b42-02-add08-funding-proposal-package-fp266": {
+   "fp": 266,
+   "title": "Strengthening the resilience of ecosystems and populations in four regional hubs in northern Mauritania",
+   "accredited_entity": "United Nations Environment Programme",
+   "countries": [
+    "Islamic Republic of Mauritania"
+   ],
+   "gcf_financing": "30,002,779 USD",
+   "total_financing": "33,660,345 USD",
+   "board": 42,
+   "year": 2025
+  },
+  "110_gcf-b29-02-add01": {
+   "fp": 165,
+   "title": "Building Climate Resilient Safer Islands in the Maldives",
+   "accredited_entity": "Japan International Cooperation Agency (JICA)",
+   "countries": [
+    "Republic of Maldives"
+   ],
+   "gcf_financing": "25.1 million USD",
+   "total_financing": "68 million USD",
+   "board": 29,
+   "year": 2021
+  },
+  "111_gcf-b28-02-add11": {
+   "fp": 164,
+   "title": "Green Growth Equity Fund",
+   "accredited_entity": "FMO, Netherlands",
+   "countries": [
+    "India"
+   ],
+   "gcf_financing": "132,000,000 USD",
+   "total_financing": "941,000,000 USD",
+   "board": 28,
+   "year": 2021
+  },
+  "112_gcf-b28-02-add10": {
+   "fp": 163,
+   "title": "Sustainable Renewables Risk Mitigation Initiative (SRMI) Facility",
+   "accredited_entity": "World Bank",
+   "countries": [
+    "Botswana",
+    "Central African Republic (CAR)",
+    "Democratic Republic of Congo (DRC)",
+    "Kenya",
+    "Mali",
+    "Namibia",
+    "Uzbekistan"
+   ],
+   "gcf_financing": "USD 290,000,000",
+   "total_financing": "USD 290,000,000",
+   "board": 28,
+   "year": 2021
+  },
+  "113_gcf-b28-02-add09": {
+   "fp": 162,
+   "title": "The Africa Integrated Climate Risk Management Proposal",
+   "accredited_entity": "International Fund for Agricultural Development (IFAD)",
+   "countries": [
+    "Burkina Faso",
+    "Chad",
+    "Mali",
+    "Mauritania",
+    "Niger",
+    "Senegal",
+    "The Gambia"
+   ],
+   "gcf_financing": "82,849 million USD",
+   "total_financing": "143,327 million USD",
+   "board": 28,
+   "year": 2021
+  },
+  "114_gcf-b28-02-add08": {
+   "fp": 161,
+   "title": "Building Regional Resilience through Strengthened Meteorological, Hydrological and Climate Services in the Indian Ocean Commission (IOC) Member Countries",
+   "accredited_entity": "French Development Agency (AFD)",
+   "countries": [
+    "Comoros",
+    "Madagascar",
+    "Mauritius",
+    "Seychelles"
+   ],
+   "gcf_financing": "$26,787,986 USD",
+   "total_financing": "$26,787,986 USD",
+   "board": 28,
+   "year": 2021
+  },
+  "115_gcf-b28-02-add07-rev01": {
+   "fp": 160,
+   "title": "Monrovia Metropolitan Climate Resilience Project",
+   "accredited_entity": "United Nations Development Programme",
+   "countries": [
+    "Liberia"
+   ],
+   "gcf_financing": "17,255,755 USD",
+   "total_financing": "25,638,905 USD",
+   "board": 28,
+   "year": 2021
+  },
+  "116_gcf-b28-02-add06": {
+   "fp": 159,
+   "title": "PREDFOREST CONGO - Project to reduce greenhouse gas emissions in the Democratic Republic of Congo",
+   "accredited_entity": "Food and Agriculture Organization of the United Nations",
+   "countries": [
+    "Republic of Congo"
+   ],
+   "gcf_financing": "28,988,852 USD",
+   "total_financing": "48,567,138",
+   "board": 28,
+   "year": 2021
+  },
+  "117_gcf-b28-02-add05": {
+   "fp": 158,
+   "title": "Ecosystem-Based Adaptation and Mitigation in Botswana’s Communal Rangelands",
+   "accredited_entity": "Conservation International Foundation",
+   "countries": [
+    "Botswana"
+   ],
+   "gcf_financing": null,
+   "total_financing": null,
+   "board": 28,
+   "year": 2021
+  },
+  "118_gcf-b28-02-add04": {
+   "fp": 157,
+   "title": "Catalyzing Resilience to Climate Change in Cuba through Ecosystem-Based Adaptation - \"Mi COSTA!\"",
+   "accredited_entity": "United Nations Development Programme",
+   "countries": [
+    "Republic of Cuba"
+   ],
+   "gcf_financing": "$23,927,294 USD",
+   "total_financing": "$44,299,220 USD",
+   "board": 28,
+   "year": 2021
+  },
+  "119_gcf-b28-02-add03-rev01": {
+   "fp": 156,
+   "title": "ASEAN Catalytic Green Finance Facility (ACGF): Green Recovery Program",
+   "accredited_entity": "Asian Development Bank",
+   "countries": [
+    "Cambodia",
+    "Indonesia",
+    "Laos PDR",
+    "Malaysia",
+    "Philippines"
+   ],
+   "gcf_financing": "300 million USD",
+   "total_financing": "4,835 million USD",
+   "board": 28,
+   "year": 2021
+  },
+  "11_gcf-b42-02-add07-funding-proposal-package-fp265": {
+   "fp": 265,
+   "title": "Climate-resilient landscapes for sustainable livelihoods in northern Ghana",
+   "accredited_entity": "UNEP",
+   "countries": [
+    "Republic of Ghana"
+   ],
+   "gcf_financing": null,
+   "total_financing": null,
+   "board": 42,
+   "year": 2025
+  },
+  "120_gcf-b28-02-add02": {
+   "fp": 155,
+   "title": "Building resilience to cope with climate change in Jordan through improving water use efficiency in the agriculture sector (BRCCJ)",
+   "accredited_entity": "United Nations Food and Agricultural Organisation (FAO)",
+   "countries": [
+    "Hashemite Kingdom of Jordan"
+   ],
+   "gcf_financing": "$25 million USD",
+   "total_financing": "$35 million USD",
+   "board": 28,
+   "year": 2021
+  },
+  "121_gcf-b28-02-add01-rev01": {
+   "fp": 154,
+   "title": "Mongolia: Aimags and Soums Green Regional Development Investment Program (ASDIP)",
+   "accredited_entity": "Asian Development Bank (ADB)",
+   "countries": [
+    "Mongolia"
+   ],
+   "gcf_financing": "$175 million USD",
+   "total_financing": "$175 million USD",
+   "board": 28,
+   "year": 2021
+  },
+  "122_gcf-b27-02-add13": {
+   "fp": 153,
+   "title": "Mongolian Green Finance Corporation",
+   "accredited_entity": "XacBank LLC",
+   "countries": [
+    "Mongolia"
+   ],
+   "gcf_financing": "28,654 million USD",
+   "total_financing": "49,654 million USD",
+   "board": 27,
+   "year": 2020
+  },
+  "123_gcf-b27-02-add12": {
+   "fp": 152,
+   "title": "Global Sub-national Climate Fund (GCF Global) – Equity",
+   "accredited_entity": "Pegasus Capital Advisors LP (Pegasus)",
+   "countries": [
+    "Angola",
+    "Burkina Faso",
+    "Cameroon",
+    "Côte d'Ivoire",
+    "Democratic Republic of the Congo",
+    "Gabon",
+    "Guinea",
+    "Kenya",
+    "Mali",
+    "Mozambique",
+    "Nigeria",
+    "Rwanda",
+    "Senegal",
+    "South Africa",
+    "Togo",
+    "Uganda",
+    "Cambodia",
+    "Fiji",
+    "Indonesia",
+    "Myanmar",
+    "Bahamas",
+    "Brazil",
+    "Chile",
+    "Colombia",
+    "Costa Rica",
+    "Dominican Republic",
+    "Ecuador",
+    "El Salvador",
+    "Guatemala",
+    "Haiti",
+    "Honduras",
+    "Jamaica",
+    "Mexico",
+    "Panama",
+    "Paraguay",
+    "Peru",
+    "Uruguay",
+    "Venezuela",
+    "Albania",
+    "Jordan",
+    "Lebanon",
+    "Mauritania",
+    "Montenegro",
+    "Morocco",
+    "North Macedonia",
+    "Tunisia"
+   ],
+   "gcf_financing": "150 M USD",
+   "total_financing": "720 M USD",
+   "board": 27,
+   "year": 2020
+  },
+  "124_gcf-b27-02-add11": {
+   "fp": 151,
+   "title": "Technical Assistance (TA) Facility for the Global Subnational Climate Fund (SfCfT Global - Equity: submitted separately)",
+   "accredited_entity": "International Union for Conservation of Nature and Natural Resources (IUCN)",
+   "countries": [
+    "Angola",
+    "Benin",
+    "Botswana",
+    "Burkina Faso",
+    "Burundi",
+    "Democratic Republic of the Congo",
+    "Gabon",
+    "Ghana",
+    "Kenya",
+    "Mali",
+    "Mozambique",
+    "Nigeria",
+    "Rwanda",
+    "Senegal",
+    "South Africa",
+    "Togo",
+    "Uganda",
+    "Cambodia",
+    "Fiji",
+    "Indonesia",
+    "Myanmar",
+    "Bahamas",
+    "Brazil",
+    "Chile",
+    "Costa Rica",
+    "Dominican Republic",
+    "Ecuador",
+    "El Salvador",
+    "Guatemala",
+    "Haiti",
+    "Honduras",
+    "Jamaica",
+    "Mexico",
+    "Panama",
+    "Paraguay",
+    "Peru",
+    "Albania",
+    "Jordan",
+    "Lebanon",
+    "Mauritania",
+    "Montenegro",
+    "Morocco",
+    "North Macedonia",
+    "Tunisia"
+   ],
+   "gcf_financing": "18.5 M USD",
+   "total_financing": "28 M USD for Technical Assistance",
+   "board": 27,
+   "year": 2020
+  },
+  "125_gcf-b27-02-add10-rev01": {
+   "fp": 150,
+   "title": "Promoting private sector investment through large-scale adoption of energy saving technologies and equipment for Textile and Readymade Garment (RMG) sectors of Bangladesh",
+   "accredited_entity": "Infrastructure Development Company Limited (IDCOL)",
+   "countries": [
+    "Bangladesh"
+   ],
+   "gcf_financing": "256.48 million USD",
+   "total_financing": "340.50 million USD",
+   "board": 27,
+   "year": 2020
+  },
+  "126_gcf-b27-02-add09": {
+   "fp": 149,
+   "title": "Green Climate Financing Facility for LFs in Latin America",
+   "accredited_entity": "Corporación Andina de Fomento (CAF – Development Bank of Latin America)",
+   "countries": [
+    "Chile",
+    "Ecuador",
+    "Panamá",
+    "Peru"
+   ],
+   "gcf_financing": "USD 100 million",
+   "total_financing": "USD 150 million",
+   "board": 27,
+   "year": 2020
+  },
+  "127_gcf-b27-02-add08": {
+   "fp": 148,
+   "title": "Participation in Energy Access Relief Facility (EARF)",
+   "accredited_entity": "Acumen Fund, Inc.",
+   "countries": [
+    "Uganda",
+    "Kenya",
+    "Democratic Republic of Congo",
+    "Senegal",
+    "Mozambique",
+    "Sierra Leone",
+    "Rwanda",
+    "Zambia"
+   ],
+   "gcf_financing": "30,000,000 USD",
+   "total_financing": "60,000,000 USD",
+   "board": 27,
+   "year": 2020
+  },
+  "128_gcf-b27-02-add07": {
+   "fp": 147,
+   "title": "Enhancing Climate Information and Knowledge Services for Small Island Developing States and countries of the Pacific Ocean",
+   "accredited_entity": "United Nations Environment Programme",
+   "countries": [
+    "Cook Islands",
+    "Niue",
+    "Palau",
+    "Republic of the Marshall Islands",
+    "Tuvalu"
+   ],
+   "gcf_financing": "47,403,174 USD",
+   "total_financing": "49,933,658 USD",
+   "board": 27,
+   "year": 2020
+  },
+  "129_gcf-b27-02-add06-rev01": {
+   "fp": 146,
+   "title": "Bio-CLIMA: Integrated climate action to reduce deforestation and strengthen resilience in BOSAWAS and Rio San Juan Biospheres",
+   "accredited_entity": "Central American Bank for Economic Integration (CABEI)",
+   "countries": [
+    "Nicaragua"
+   ],
+   "gcf_financing": "64,094,029 USD",
+   "total_financing": "115,692,245 USD",
+   "board": 27,
+   "year": 2020
+  },
+  "12_gcf-b43-02-add29-funding-proposal-package-fp264": {
+   "fp": 264,
+   "title": "Prosperate Growth Fund",
+   "accredited_entity": "Prosperate Investment Management Ltd",
+   "countries": [
+    "Bangladesh",
+    "India",
+    "Mauritius"
+   ],
+   "gcf_financing": "USD 50 million",
+   "total_financing": "USD 220 million",
+   "board": 43,
+   "year": 2025
+  },
+  "130_gcf-b27-02-add05": {
+   "fp": 145,
+   "title": "RELIVE – Resilient Livelihoods of vulnerable smallholder farmers in the Mayan landscapes and the Dry Corridor of Guatemala",
+   "accredited_entity": "Food and Agriculture Organization of the United Nations (FAO)",
+   "countries": [
+    "Guatemala"
+   ],
+   "gcf_financing": "29,837,169 USD",
+   "total_financing": "66,677,169 USD",
+   "board": 27,
+   "year": 2020
+  },
+  "131_gcf-b27-02-add04": {
+   "fp": 144,
+   "title": "Costa Rica REDD-plus Results-Based Payments for 2014 and 2015",
+   "accredited_entity": "United Nations Development Program, UNDP",
+   "countries": [
+    "Costa Rica"
+   ],
+   "gcf_financing": null,
+   "total_financing": null,
+   "board": 27,
+   "year": 2020
+  },
+  "132_gcf-b27-02-add03": {
+   "fp": 143,
+   "title": "Planting Climate Resilience in Rural Communities of the Northeast (PCR)",
+   "accredited_entity": "International Fund for Agricultural Development (IFAD)",
+   "countries": [
+    "Brazil"
+   ],
+   "gcf_financing": "99,500,000 USD",
+   "total_financing": "92,500,000 USD",
+   "board": 27,
+   "year": 2020
+  },
+  "133_gcf-b27-02-add02": {
+   "fp": 142,
+   "title": "Argentina REDD-plus RBP for results period 2014-2019",
+   "accredited_entity": "Food and Agriculture Organization of the United Nations (FAO)",
+   "countries": [
+    "Argentina"
+   ],
+   "gcf_financing": "$82,000,000",
+   "total_financing": "804,197,707 tonnes of CO2eq",
+   "board": 27,
+   "year": 2020
+  },
+  "134_gcf-b27-02-add01": {
+   "fp": 141,
+   "title": "Improving Adaptive Capacity and Risk Management of Rural Communities in Mongolia",
+   "accredited_entity": "United Nations Development Programme",
+   "countries": [
+    "Mongolia"
+   ],
+   "gcf_financing": "23,101,276 USD",
+   "total_financing": "79,301,276 USD",
+   "board": 27,
+   "year": 2020
+  },
+  "135_gcf-b26-02-add12": {
+   "fp": 140,
+   "title": "High Impact Programme for the Corporate Sector",
+   "accredited_entity": "European Bank for Reconstruction and Development (EBRD)",
+   "countries": [
+    "Armenia",
+    "Jordan",
+    "Kazakhstan",
+    "Morocco",
+    "Serbia",
+    "Tunisia",
+    "Uzbekistan"
+   ],
+   "gcf_financing": null,
+   "total_financing": null,
+   "board": 26,
+   "year": 2020
+  },
+  "136_gcf-b26-02-add11": {
+   "fp": 139,
+   "title": "Building resilience in the face of climate change within traditional rain fed agricultural and pastoral systems in Sudan",
+   "accredited_entity": "United Nations Development Programme",
+   "countries": [
+    "Sudan"
+   ],
+   "gcf_financing": null,
+   "total_financing": "41,185,114 USD",
+   "board": 26,
+   "year": 2020
+  },
+  "137_gcf-b26-02-add10": {
+   "fp": 138,
+   "title": "ASER Solar Rural Electrification Project",
+   "accredited_entity": "West African Development Bank (BOAD)",
+   "countries": [
+    "Senegal"
+   ],
+   "gcf_financing": "55,415,176 Euros",
+   "total_financing": "198,692,182 Euros",
+   "board": 26,
+   "year": 2020
+  },
+  "138_gcf-b26-02-add09": {
+   "fp": 137,
+   "title": "Ghana Shea Landscape Emission Reductions Project",
+   "accredited_entity": "United Nations Development Programme",
+   "countries": [
+    "Ghana"
+   ],
+   "gcf_financing": "30,100,000 USD",
+   "total_financing": "54,546,775 USD",
+   "board": 26,
+   "year": 2020
+  },
+  "139_gcf-b26-02-add08": {
+   "fp": 136,
+   "title": "Resilient Landscapes and Livelihoods Project",
+   "accredited_entity": "World Bank",
+   "countries": [
+    "Ethiopia"
+   ],
+   "gcf_financing": "165,237,562 USD",
+   "total_financing": "295,237,802 USD",
+   "board": 26,
+   "year": 2020
+  },
+  "13_gcf-b41-02-add11-funding-proposal-package-fp263": {
+   "fp": 263,
+   "title": "Mirova Sustainable Land Fund 2",
+   "accredited_entity": "MIROVA",
+   "countries": [
+    "Costa Rica",
+    "Côte d'Ivoire",
+    "Ghana",
+    "Malaysia",
+    "Morocco",
+    "Peru",
+    "The Philippines"
+   ],
+   "gcf_financing": "75 million Euros",
+   "total_financing": "363 million Euros",
+   "board": 41,
+   "year": 2025
+  },
+  "140_gcf-b26-02-add07": {
+   "fp": 135,
+   "title": "Ecosystem-based Adaptation in the Indian Ocean - EBA II",
+   "accredited_entity": "Agence Française de Développement (AFD)",
+   "countries": [
+    "Comoros",
+    "Madagascar",
+    "Mauritius",
+    "Seychelles"
+   ],
+   "gcf_financing": "38 million USD",
+   "total_financing": "49.2 million USD",
+   "board": 26,
+   "year": 2020
+  },
+  "141_gcf-b26-02-add06": {
+   "fp": 134,
+   "title": "Colombia REDD+ Results-based Payments for results period 2015-2016",
+   "accredited_entity": "Roberto Roldán, Assistant Director-General, Programme Support and Technical Cooperation, Ministry of Environment and Sustainable Development, Cali, Colombia",
+   "countries": [
+    "Colombia"
+   ],
+   "gcf_financing": null,
+   "total_financing": null,
+   "board": 26,
+   "year": 2020
+  },
+  "142_gcf-b26-02-add05": {
+   "fp": 133,
+   "title": "Resilience to hurricanes in the building sector in Antigua and Barbuda",
+   "accredited_entity": "Department of Environment, Antigua and Barbuda",
+   "countries": [
+    "Antigua and Barbuda"
+   ],
+   "gcf_financing": "32.7 million USD",
+   "total_financing": "46.1 million USD",
+   "board": 26,
+   "year": 2020
+  },
+  "143_gcf-b26-02-add04": {
+   "fp": 132,
+   "title": "Enabling Implementation of Forest Sector Reform in Georgia: Strengthening Legal and Institutional Frameworks",
+   "accredited_entity": "Deutsche Gesellschaft für Internationale Zusammenarbeit (GIZ) GmbH",
+   "countries": [
+    "Georgia"
+   ],
+   "gcf_financing": "32.79 million Euros",
+   "total_financing": "32.79 million Euros",
+   "board": 26,
+   "year": 2020
+  },
+  "144_gcf-b26-02-add03": {
+   "fp": 131,
+   "title": "Improving Climate Resilience of Vulnerable Communities and Ecosystems in the Gandaki River Basin, Nepal",
+   "accredited_entity": "International Union for Conservation of Nature (IUCN)",
+   "countries": [
+    "Nepal"
+   ],
+   "gcf_financing": "USD 27.6 million",
+   "total_financing": "USD 32,715 million",
+   "board": 26,
+   "year": 2020
+  },
+  "145_gcf-b26-02-add02": {
+   "fp": 130,
+   "title": "Indonesia REDD-plus RBP for results period 2014-2016",
+   "accredited_entity": "UNDP",
+   "countries": [
+    "Indonesia"
+   ],
+   "gcf_financing": null,
+   "total_financing": null,
+   "board": 26,
+   "year": 2020
+  },
+  "146_gcf-b26-02-add01": {
+   "fp": 129,
+   "title": "Afghanistan Rural Energy Market Transformation Initiative: Strengthening Resilience of Livelihoods Through Sustainable Energy Access",
+   "accredited_entity": "United Nations Development Programme",
+   "countries": [
+    "Afghanistan"
+   ],
+   "gcf_financing": "USD 17,198,843",
+   "total_financing": "USD 23,398,843",
+   "board": 26,
+   "year": 2020
+  },
+  "147_gcf-b25-02-add05": {
+   "fp": 128,
+   "title": "Ardano Fund – Sustainable Forestry Fund",
+   "accredited_entity": "MUFG Bank",
+   "countries": [
+    "Burkina Faso",
+    "Ghana",
+    "Sierra Leone",
+    "Uganda",
+    "Ecuador",
+    "Paraguay",
+    "Peru"
+   ],
+   "gcf_financing": "25 million USD",
+   "total_financing": "Up to 200 million USD",
+   "board": 25,
+   "year": 2020
+  },
+  "148_gcf-b25-02-add04": {
+   "fp": 127,
+   "title": "Building Climate Resilience of Vulnerable Agricultural Livelihoods in Southern Zimbabwe",
+   "accredited_entity": "United Nations Development Programme",
+   "countries": [
+    "Zimbabwe"
+   ],
+   "gcf_financing": null,
+   "total_financing": null,
+   "board": 25,
+   "year": 2020
+  },
+  "149_gcf-b25-02-add03": {
+   "fp": 126,
+   "title": "Increased climate resilience of rural households and communities through sustainable land management and production landscapes in selected localities of the Republic of Cuba (RESC)",
+   "accredited_entity": "Food and Agriculture Organization of the United Nations",
+   "countries": [
+    "Cuba"
+   ],
+   "gcf_financing": "$38,266,790.80 USD",
+   "total_financing": "$139,914,000 USD",
+   "board": 25,
+   "year": 2020
+  },
+  "14_gcf-b41-02-add10-funding-proposal-package-fp262": {
+   "fp": 262,
+   "title": "Green Climate Finance Facility for Fostering Climate-Smart Agriculture in Senegal",
+   "accredited_entity": "La Banque Agricole (LBA)",
+   "countries": [],
+   "gcf_financing": "23,425 million Euros",
+   "total_financing": "48,425 million Euros",
+   "board": 41,
+   "year": 2025
+  },
+  "150_gcf-b25-02-add02": {
+   "fp": 125,
+   "title": "Strengthening the resilience of smallholder agriculture to climate change-induced water insecurity in the Central Highlands and South-Central Coast regions of Vietnam",
+   "accredited_entity": "United Nations Development Programme",
+   "countries": [
+    "Vietnam"
+   ],
+   "gcf_financing": null,
+   "total_financing": "USD 89.59 million loan from the Asian Development Bank, as well as USD 22.06 million in co-financing resources",
+   "board": 25,
+   "year": 2020
+  },
+  "151_gcf-b25-02-add01": {
+   "fp": 124,
+   "title": "Strengthening Climate Resilience of Subsistence Farmers and Agricultural Communities in Sri Lanka, leading in the vulnerable river basins, watershed areas and downstream of the Knuckles Mountain Range Catchment of Sri Lanka",
+   "accredited_entity": "IUCN - International Union for Conservation of Nature and Natural Resources",
+   "countries": [
+    "Sri Lanka"
+   ],
+   "gcf_financing": null,
+   "total_financing": null,
+   "board": 25,
+   "year": 2020
+  },
+  "152_gcf-b24-02-add09-rev01": {
+   "fp": 123,
+   "title": "Climate Bonds for Forests: Scaling up Private Sector Financing for REDD+",
+   "accredited_entity": "International Finance Corporation (IFC)",
+   "countries": [],
+   "gcf_financing": null,
+   "total_financing": null,
+   "board": 24,
+   "year": 2019
+  },
+  "153_gcf-b24-02-add08": {
+   "fp": 122,
+   "title": "Blue Action Fund (BAF): GCF Ecosystem Based Adaptation Programme in the Western Indian Ocean",
+   "accredited_entity": "Kreditanstalt für Wiederaufbau (KfW)",
+   "countries": [
+    "Madagascar",
+    "Mozambique",
+    "Tanzania",
+    "South Africa"
+   ],
+   "gcf_financing": "30 million Euros",
+   "total_financing": "55 million Euros",
+   "board": 24,
+   "year": 2019
+  },
+  "154_gcf-b24-02-add07": {
+   "fp": 121,
+   "title": "REDD+ Results-based payments in Paraguay for the period 2019-2023",
+   "accredited_entity": "United Nations Environment Programme",
+   "countries": [
+    "Paraguay"
+   ],
+   "gcf_financing": null,
+   "total_financing": null,
+   "board": 24,
+   "year": 2019
+  },
+  "155_gcf-b24-02-add06": {
+   "fp": 120,
+   "title": "Chile REDD-plus results-based payments for results period 2019-2023",
+   "accredited_entity": "Food and Agriculture Organization of the United Nations (FAO)",
+   "countries": [
+    "Chile"
+   ],
+   "gcf_financing": null,
+   "total_financing": null,
+   "board": 24,
+   "year": 2019
+  },
+  "156_gcf-b24-02-add05": {
+   "fp": 119,
+   "title": "Water Banking and Adaptation of Agriculture to Climate Change in Northern Gaza",
+   "accredited_entity": "Agence Française de Développement",
+   "countries": [
+    "Palestine"
+   ],
+   "gcf_financing": null,
+   "total_financing": null,
+   "board": 24,
+   "year": 2019
+  },
+  "157_gcf-b24-02-add04": {
+   "fp": 118,
+   "title": "Building a Resilient Churia Region in Nepal (BRCRN)",
+   "accredited_entity": "Food and Agriculture Organization of the United Nations",
+   "countries": [
+    "Nepal"
+   ],
+   "gcf_financing": null,
+   "total_financing": null,
+   "board": 24,
+   "year": 2019
+  },
+  "158_gcf-b24-02-add03": {
+   "fp": 117,
+   "title": "Implementation of the Lao PDR Emission Reductions Program through improved governance and sustainable forest landscape management",
+   "accredited_entity": "Deutsche Gesellschaft für Internationale Zusammenarbeit (GIZ) GmbH",
+   "countries": [
+    "Lao People's Democratic Republic"
+   ],
+   "gcf_financing": "304 million Euros",
+   "total_financing": "652 million Euros",
+   "board": 24,
+   "year": 2019
+  },
+  "159_gcf-b24-02-add02": {
+   "fp": 116,
+   "title": "Carbon Sequestration through Climate Investment in Forests and Rangelands in Kyrgyz Republic (CS-FOR)",
+   "accredited_entity": "Food and Agriculture Organization of the UN",
+   "countries": [
+    "Kyrgyz Republic"
+   ],
+   "gcf_financing": null,
+   "total_financing": null,
+   "board": 24,
+   "year": 2019
+  },
+  "15_gcf-b41-02-add09-rev01-funding-proposal-package-fp261": {
+   "fp": 261,
+   "title": "Improving Climate Resilience by Increasing Water Security in the Amazon Basin",
+   "accredited_entity": "Inter-American Development Bank (IDB)",
+   "countries": [
+    "Bolivia",
+    "Brazil",
+    "Colombia",
+    "Ecuador",
+    "Peru",
+    "Suriname"
+   ],
+   "gcf_financing": "43 million USD",
+   "total_financing": "79,53 million USD",
+   "board": 41,
+   "year": 2025
+  },
+  "160_gcf-b23-02-add09": {
+   "fp": 115,
+   "title": "Espejo de Tarapacá",
+   "accredited_entity": "MUFG Bank, Ltd.",
+   "countries": [
+    "Chile"
+   ],
+   "gcf_financing": null,
+   "total_financing": null,
+   "board": 23,
+   "year": 2019
+  },
+  "161_gcf-b23-02-add08": {
+   "fp": 114,
+   "title": "Program on Affirmative Finance Action for Women in Africa (AFiWA): Financing Climate Resilient Agricultural Practices in Ghana",
+   "accredited_entity": "African Development Bank",
+   "countries": [
+    "Ghana"
+   ],
+   "gcf_financing": null,
+   "total_financing": null,
+   "board": 23,
+   "year": 2019
+  },
+  "162_gcf-b23-02-add07": {
+   "fp": 113,
+   "title": "TWENDI: Towards Ending Drought Emergencies: Ecosystem Based Adaptation in Kenya’s Arid and Semi-Arid Rangelands",
+   "accredited_entity": "IUCN (International Union for Conservation of Nature)",
+   "countries": [
+    "Kenya"
+   ],
+   "gcf_financing": null,
+   "total_financing": null,
+   "board": 23,
+   "year": 2019
+  },
+  "163_gcf-b23-02-add06": {
+   "fp": 112,
+   "title": "Addressing Climate Vulnerability in the Water Sector (ACWA)",
+   "accredited_entity": "UNDP",
+   "countries": [
+    "Republic of Marshall Islands"
+   ],
+   "gcf_financing": null,
+   "total_financing": null,
+   "board": 23,
+   "year": 2019
+  },
+  "164_gcf-b23-02-add05": {
+   "fp": 111,
+   "title": "Promoting climate-resilient forest restoration and silviculture for the sustainability of water-related ecosystem services",
+   "accredited_entity": "Inter-American Development Bank (IDB)",
+   "countries": [
+    "Honduras"
+   ],
+   "gcf_financing": null,
+   "total_financing": null,
+   "board": 23,
+   "year": 2019
+  },
+  "165_gcf-b23-02-add04": {
+   "fp": 110,
+   "title": "Ecuador REDD+ RBP for results period 2014",
+   "accredited_entity": "United Nations Development Programme",
+   "countries": [
+    "Ecuador"
+   ],
+   "gcf_financing": null,
+   "total_financing": null,
+   "board": 23,
+   "year": 2019
+  },
+  "166_gcf-b23-02-add03": {
+   "fp": 109,
+   "title": "Safeguarding rural communities and their physical and economic livelihoods against climate change in Timor-Leste",
+   "accredited_entity": "United Nations Development Programme",
+   "countries": [
+    "Timor-Leste"
+   ],
+   "gcf_financing": "$25.68 Million USD",
+   "total_financing": "$25.68 Million USD",
+   "board": 23,
+   "year": 2019
+  },
+  "167_gcf-b23-02-add02": {
+   "fp": 108,
+   "title": "Transforming the Indus Basin with Climate Resilient Agriculture and Water Management",
+   "accredited_entity": "Food and Agriculture Organization of the United Nations",
+   "countries": [
+    "Pakistan"
+   ],
+   "gcf_financing": null,
+   "total_financing": null,
+   "board": 23,
+   "year": 2019
+  },
+  "168_gcf-b23-02-add01": {
+   "fp": 107,
+   "title": "Supporting Climate Resilience and Transformational Change in the Agriculture Sector in Bhutan",
+   "accredited_entity": "United Nations Development Programme",
+   "countries": [
+    "Kingdom of Bhutan"
+   ],
+   "gcf_financing": null,
+   "total_financing": "410 million USD",
+   "board": 23,
+   "year": 2019
+  },
+  "169_gcf-b22-10-add10-rev01": {
+   "fp": 106,
+   "title": "Embedded Generation Investment Programme (EGIP)",
+   "accredited_entity": "Development Bank of Southern Africa",
+   "countries": [
+    "South Africa"
+   ],
+   "gcf_financing": null,
+   "total_financing": null,
+   "board": 22,
+   "year": 2019
+  },
+  "16_gcf-b41-02-add08-funding-proposal-package-fp260": {
+   "fp": 260,
+   "title": "Enhancing the resilience of Serbian forests to ensure energy security while contributing to the livelihoods and carbon sequestration (FOREST Invest)",
+   "accredited_entity": "FAO",
+   "countries": [
+    "Republic of Serbia"
+   ],
+   "gcf_financing": null,
+   "total_financing": null,
+   "board": 41,
+   "year": 2025
+  },
+  "170_gcf-b22-10-add09": {
+   "fp": 105,
+   "title": "ROAD Climate Finance Facility to Scale-Up Solar Energy Investments in Francophone West Africa (LDC)",
+   "accredited_entity": "West African Development Bank (BOAD)",
+   "countries": [
+    "Benin",
+    "Burkina Faso",
+    "Guinea-Bissau",
+    "Mali",
+    "Niger",
+    "Togo"
+   ],
+   "gcf_financing": null,
+   "total_financing": null,
+   "board": 22,
+   "year": 2019
+  },
+  "171_gcf-b22-10-add08": {
+   "fp": 104,
+   "title": "Nigeria Solar IPP Support Program",
+   "accredited_entity": "Africa Finance Corporation (AFC)",
+   "countries": [
+    "Nigeria"
+   ],
+   "gcf_financing": null,
+   "total_financing": null,
+   "board": 22,
+   "year": 2019
+  },
+  "172_gcf-b22-10-add05": {
+   "fp": 103,
+   "title": "Promotion of Climate-Friendly Cooking: Kenya and Senegal",
+   "accredited_entity": "GIZ",
+   "countries": [
+    "Kenya",
+    "Senegal"
+   ],
+   "gcf_financing": null,
+   "total_financing": null,
+   "board": 22,
+   "year": 2019
+  },
+  "173_gcf-b22-10-add04": {
+   "fp": 102,
+   "title": "Mali solar rural electrification project",
+   "accredited_entity": "Banque Ouest Africaine de Développement (BOAD)",
+   "countries": [
+    "Mali"
+   ],
+   "gcf_financing": null,
+   "total_financing": null,
+   "board": 22,
+   "year": 2019
+  },
+  "174_gcf-b22-10-add03": {
+   "fp": 101,
+   "title": "Resilient Rural Belize (Be Resilient)",
+   "accredited_entity": "International Fund for Agricultural Development - IFAD",
+   "countries": [
+    "Belize"
+   ],
+   "gcf_financing": null,
+   "total_financing": null,
+   "board": 22,
+   "year": 2019
+  },
+  "175_gcf-b22-10-add02": {
+   "fp": 100,
+   "title": "REDD PLUS results-based payments for reducing emissions from deforestation and forest degradation in 2014 and 2015",
+   "accredited_entity": "United Nations Development Program, UNDP",
+   "countries": [
+    "Brazil"
+   ],
+   "gcf_financing": "USD 150 million",
+   "total_financing": null,
+   "board": 22,
+   "year": 2019
+  },
+  "176_gcf-b21-10-add21-rev01": {
+   "fp": 99,
+   "title": "Climate Investor One",
+   "accredited_entity": "Nederlandse Financierings-Maatschappij voor Ontwikkelingslanden N.V. (FMO)",
+   "countries": [
+    "Burundi",
+    "Cameroon",
+    "Djibouti",
+    "Indonesia",
+    "Uganda",
+    "Kenya",
+    "Malawi",
+    "Madagascar",
+    "Mongolia",
+    "Morocco",
+    "Nigeria"
+   ],
+   "gcf_financing": null,
+   "total_financing": null,
+   "board": 21,
+   "year": 2018
+  },
+  "177_gcf-b21-10-add20": {
+   "fp": 98,
+   "title": "DIBSA Climate Finance Facility",
+   "accredited_entity": "Development Bank of Southern Africa",
+   "countries": [
+    "South Africa",
+    "Southern Africa Development Community (SADC) Region"
+   ],
+   "gcf_financing": null,
+   "total_financing": null,
+   "board": 21,
+   "year": 2018
+  },
+  "178_gcf-b21-10-add19": {
+   "fp": 97,
+   "title": "Productive Investment Initiative for Adaptation to Climate Change (CAMBio II)",
+   "accredited_entity": "Central American Bank for Economic Integration (CABEI)",
+   "countries": [
+    "Guatemala",
+    "El Salvador",
+    "Honduras",
+    "Nicaragua",
+    "Costa Rica",
+    "Panama",
+    "Dominican Republic"
+   ],
+   "gcf_financing": "CA$80M",
+   "total_financing": null,
+   "board": 21,
+   "year": 2018
+  },
+  "179_gcf-b21-10-add18": {
+   "fp": 96,
+   "title": "DEEC Green Mini-Grid Program",
+   "accredited_entity": "African Development Bank",
+   "countries": [
+    "Democratic Republic of Congo"
+   ],
+   "gcf_financing": null,
+   "total_financing": null,
+   "board": 21,
+   "year": 2018
+  },
+  "17_gcf-b41-02-add07-funding-proposal-package-fp259": {
+   "fp": 259,
+   "title": "Adapting tuna-dependent Pacific Island communities and economies to climate change",
+   "accredited_entity": "Conservation International Foundation (CI)",
+   "countries": [
+    "Cook Islands",
+    "Federated States of Micronesia",
+    "Marshall Islands",
+    "Nauru",
+    "Palau",
+    "Papua New Guinea",
+    "Samoa",
+    "Solomon Islands",
+    "Tonga",
+    "Tuvalu",
+    "Vanuatu"
+   ],
+   "gcf_financing": "107.4 million USD",
+   "total_financing": "196.8 million USD",
+   "board": 41,
+   "year": 2025
+  },
+  "180_gcf-b21-10-add17": {
+   "fp": 95,
+   "title": "Transforming Financial Systems for Climate",
+   "accredited_entity": "Agence Française de Développement",
+   "countries": [
+    "Benin",
+    "Burkina Faso",
+    "Cameroon",
+    "Chad",
+    "Ecuador",
+    "Egypt",
+    "Kenya",
+    "Madagascar",
+    "Mali",
+    "Morocco",
+    "Rwanda",
+    "Senegal",
+    "South Africa",
+    "Tanzania",
+    "Togo",
+    "Uganda"
+   ],
+   "gcf_financing": null,
+   "total_financing": null,
+   "board": 21,
+   "year": 2018
+  },
+  "181_gcf-b21-10-add13": {
+   "fp": 94,
+   "title": "Ensuring climate resilient water supplies in the Comoros Islands",
+   "accredited_entity": "United Nations Development Programme",
+   "countries": [
+    "Comoros"
+   ],
+   "gcf_financing": null,
+   "total_financing": null,
+   "board": 21,
+   "year": 2018
+  },
+  "182_gcf-b21-10-add12": {
+   "fp": 93,
+   "title": "Yeleen Rural Electrification Project in Burkina Faso",
+   "accredited_entity": "African Development Bank",
+   "countries": [
+    "Burkina Faso"
+   ],
+   "gcf_financing": null,
+   "total_financing": "EUR 50 M",
+   "board": 21,
+   "year": 2018
+  },
+  "183_gcf-b21-10-add11": {
+   "fp": 92,
+   "title": "Programme for Integrated Development and Adaptation to Climate Change in the Niger Basin (PIDACC/NB)",
+   "accredited_entity": "African Development Bank",
+   "countries": [
+    "Benin",
+    "Burkina Faso",
+    "Côte d'Ivoire",
+    "Guinea",
+    "Mali",
+    "Niger",
+    "Nigeria",
+    "Cameroon",
+    "Chad"
+   ],
+   "gcf_financing": null,
+   "total_financing": null,
+   "board": 21,
+   "year": 2018
+  },
+  "184_gcf-b21-10-add10": {
+   "fp": 91,
+   "title": "South Tarawa Water Supply Project",
+   "accredited_entity": "Asian Development Bank",
+   "countries": [
+    "Kiribati"
+   ],
+   "gcf_financing": "28.63 million USD",
+   "total_financing": "58.08 million USD",
+   "board": 21,
+   "year": 2018
+  },
+  "185_gcf-b21-10-add09": {
+   "fp": 90,
+   "title": "Tonga Renewable Energy Project",
+   "accredited_entity": "Asian Development Bank",
+   "countries": [
+    "Kingdom of Tonga"
+   ],
+   "gcf_financing": null,
+   "total_financing": "$120.9 million",
+   "board": 21,
+   "year": 2018
+  },
+  "186_gcf-b20-10-add08": {
+   "fp": 89,
+   "title": "Transforming Financial Systems for Climate",
+   "accredited_entity": "Agence Française de Développement (AFD)",
+   "countries": [
+    "Benin",
+    "Burkina Faso",
+    "Cameroon",
+    "Chad",
+    "Ecuador",
+    "Egypt",
+    "Kenya",
+    "Madagascar",
+    "Mali",
+    "Morocco",
+    "Rwanda",
+    "Senegal",
+    "Nigeria",
+    "Namibia",
+    "South Africa",
+    "Tanzania",
+    "Togo",
+    "Uganda"
+   ],
+   "gcf_financing": null,
+   "total_financing": null,
+   "board": 20,
+   "year": 2018
+  },
+  "187_gcf-b20-10-add07": {
+   "fp": 88,
+   "title": "Biomass Energy Programme in the South Pacific",
+   "accredited_entity": "Korea Development Bank (KDB)",
+   "countries": [
+    "Fiji",
+    "Papua New Guinea (PNG)"
+   ],
+   "gcf_financing": null,
+   "total_financing": null,
+   "board": 20,
+   "year": 2018
+  },
+  "188_gcf-b21-10-add06": {
+   "fp": 87,
+   "title": "Building livelihood resilience to climate change in the upper basin of Guatemala's highlands",
+   "accredited_entity": "International Union for Conservation of Nature IUCN",
+   "countries": [
+    "Guatemala"
+   ],
+   "gcf_financing": "US$25M",
+   "total_financing": "US$4.5M",
+   "board": 21,
+   "year": 2018
+  },
+  "189_12-status-approved-fps-adding-host-countries-respect-fp086-gcf-b37-07": {
+   "fp": 86,
+   "title": "Green Cities Facility",
+   "accredited_entity": "European Bank for Reconstruction and Development",
+   "countries": [
+    "Bosnia and Herzegovina",
+    "Kazakhstan",
+    "Kyrgyzstan",
+    "Moldova",
+    "Tajikistan",
+    "Turkmenistan",
+    "Ukraine",
+    "Republic of Serbia"
+   ],
+   "gcf_financing": "EUR 87 million",
+   "total_financing": "EUR 100 million",
+   "board": 37,
+   "year": 2023
+  },
+  "18_gcf-b41-02-add06-funding-proposal-package-fp258": {
+   "fp": 258,
+   "title": "Multi-country Project Advancing Early Warnings for All (EWA4)",
+   "accredited_entity": "United Nations Development Programme (UNDP)",
+   "countries": [
+    "Antigua and Barbuda",
+    "Chad",
+    "Cambodia",
+    "Ecuador",
+    "Ethiopia",
+    "Fiji",
+    "Somalia"
+   ],
+   "gcf_financing": "$103.25 million USD",
+   "total_financing": "$114,586,309 USD",
+   "board": 41,
+   "year": 2025
+  },
+  "190_gcf-b20-10-add04": {
+   "fp": 85,
+   "title": "Enhancing Climate Resilience of India's Coastal Communities",
+   "accredited_entity": "United Nations Development Programme",
+   "countries": [
+    "India"
+   ],
+   "gcf_financing": null,
+   "total_financing": null,
+   "board": 20,
+   "year": 2018
+  },
+  "191_gcf-b20-10-add03": {
+   "fp": 84,
+   "title": "South Tarawa Water Supply Project",
+   "accredited_entity": "Asian Development Bank",
+   "countries": [
+    "Kiribati"
+   ],
+   "gcf_financing": "28.63 million USD",
+   "total_financing": "58.08 million USD",
+   "board": 20,
+   "year": 2018
+  },
+  "192_gcf-b21-10-add02-rev01": {
+   "fp": 83,
+   "title": "Indonesia Geothermal Resource Risk Mitigation Project",
+   "accredited_entity": "The World Bank",
+   "countries": [
+    "Indonesia"
+   ],
+   "gcf_financing": "US$25 million soft loan",
+   "total_financing": "US$150 million reimbursable grant, and US$18.10 million grant",
+   "board": 21,
+   "year": 2018
+  },
+  "193_gcf-b22-10-add01-rev01": {
+   "fp": 82,
+   "title": null,
+   "accredited_entity": null,
+   "countries": [],
+   "gcf_financing": null,
+   "total_financing": null,
+   "board": 22,
+   "year": 2019
+  },
+  "194_gcf-b19-22-add23": {
+   "fp": 81,
+   "title": "Line of credit for solar rooftop segment for commercial, industrial and residential housing sectors",
+   "accredited_entity": "National Bank for Agriculture and Rural Development (NABARD)",
+   "countries": [
+    "India"
+   ],
+   "gcf_financing": null,
+   "total_financing": "USD 250 million",
+   "board": 19,
+   "year": 2018
+  },
+  "195_gcf-b19-22-add22": {
+   "fp": 80,
+   "title": "Zambia Renewable Energy Financing Framework",
+   "accredited_entity": "African Development Bank",
+   "countries": [
+    "Zambia"
+   ],
+   "gcf_financing": null,
+   "total_financing": null,
+   "board": 19,
+   "year": 2018
+  },
+  "196_gcf-b19-22-add21-rev01": {
+   "fp": 79,
+   "title": null,
+   "accredited_entity": null,
+   "countries": [],
+   "gcf_financing": null,
+   "total_financing": null,
+   "board": 19,
+   "year": 2018
+  },
+  "197_gcf-b19-22-add20": {
+   "fp": 78,
+   "title": "Acumes Resilient Agriculture Fund (ARAF)",
+   "accredited_entity": "Acumen Fund, LLC.",
+   "countries": [
+    "Uganda",
+    "Kenya",
+    "Nigeria"
+   ],
+   "gcf_financing": null,
+   "total_financing": null,
+   "board": 19,
+   "year": 2018
+  },
+  "198_gcf-b19-22-add19": {
+   "fp": 77,
+   "title": "Ulaanbaatar Green Affordable Housing and Resilient Urban Renewal Project (AHURUP)",
+   "accredited_entity": "Asian Development Bank",
+   "countries": [
+    "Mongolia"
+   ],
+   "gcf_financing": null,
+   "total_financing": null,
+   "board": 19,
+   "year": 2018
+  },
+  "199_gcf-b19-22-add18": {
+   "fp": 76,
+   "title": "Climate-friendly Agribusiness Value Chains Sector Project",
+   "accredited_entity": "Asian Development Bank (ADB)",
+   "countries": [
+    "Cambodia"
+   ],
+   "gcf_financing": null,
+   "total_financing": null,
+   "board": 19,
+   "year": 2018
+  },
+  "19_gcf-b41-02-add05-funding-proposal-package-fp257": {
+   "fp": 257,
+   "title": "RE-GAIN: Scaling solutions for food loss in Africa",
+   "accredited_entity": "AGRA",
+   "countries": [
+    "Burkina Faso",
+    "Ethiopia",
+    "Kenya",
+    "Malawi",
+    "Tanzania",
+    "Uganda",
+    "Zambia"
+   ],
+   "gcf_financing": "75.62 million USD",
+   "total_financing": "105 million USD",
+   "board": 41,
+   "year": 2025
+  },
+  "200_gcf-b19-22-add17": {
+   "fp": 75,
+   "title": "Institutional Development of the State Agency for Hydrometeorology of Tajikistan",
+   "accredited_entity": "Asian Development Bank",
+   "countries": [
+    "Tajikistan"
+   ],
+   "gcf_financing": null,
+   "total_financing": null,
+   "board": 19,
+   "year": 2018
+  },
+  "201_gcf-b19-22-add16-rev01": {
+   "fp": 74,
+   "title": "Africa Hydromet Program - Strengthening Climate Resilience in Sub-Saharan Africa: Burkina Faso Case Study",
+   "accredited_entity": "The World Bank",
+   "countries": [
+    "Burkina Faso"
+   ],
+   "gcf_financing": "$15.8 million",
+   "total_financing": "$27 million",
+   "board": 19,
+   "year": 2018
+  },
+  "202_gcf-b19-22-add15": {
+   "fp": 73,
+   "title": "Strengthening climate resilience of rural communities in Northern Rwanda",
+   "accredited_entity": "Ministry of Environment (MOE)",
+   "countries": [
+    "Rwanda"
+   ],
+   "gcf_financing": "USD 32,754,442",
+   "total_financing": null,
+   "board": 19,
+   "year": 2018
+  },
+  "203_gcf-b19-22-add14": {
+   "fp": 72,
+   "title": "Strengthening climate resilience of agricultural livelihoods in Agro-Ecological Regions I and II in Zambia",
+   "accredited_entity": "United Nations Development Programme (UNDP)",
+   "countries": [
+    "Zambia"
+   ],
+   "gcf_financing": null,
+   "total_financing": null,
+   "board": 19,
+   "year": 2018
+  },
+  "204_gcf-b19-22-add13": {
+   "fp": 71,
+   "title": "Scaling Up Energy Efficiency for Industrial Enterprises in Vietnam",
+   "accredited_entity": "The World Bank",
+   "countries": [
+    "Vietnam"
+   ],
+   "gcf_financing": null,
+   "total_financing": null,
+   "board": 19,
+   "year": 2018
+  },
+  "205_gcf-b19-22-add12-rev01": {
+   "fp": 70,
+   "title": "Global Clean Cooking Program - Bangladesh",
+   "accredited_entity": "The World Bank",
+   "countries": [
+    "Bangladesh"
+   ],
+   "gcf_financing": null,
+   "total_financing": null,
+   "board": 19,
+   "year": 2018
+  },
+  "206_gcf-b19-22-add11": {
+   "fp": 69,
+   "title": "Enhancing adaptive capacities of coastal communities, especially women, to cope with climate change-induced salinity",
+   "accredited_entity": "United Nations Development Programme",
+   "countries": [
+    "Bangladesh"
+   ],
+   "gcf_financing": null,
+   "total_financing": null,
+   "board": 19,
+   "year": 2018
+  },
+  "207_gcf-b19-22-add10": {
+   "fp": 68,
+   "title": "Scaling-up Multi-Hazard Early Warning System and the Use of Climate Information in Georgia",
+   "accredited_entity": "United Nations Development Programme",
+   "countries": [
+    "Georgia"
+   ],
+   "gcf_financing": null,
+   "total_financing": null,
+   "board": 19,
+   "year": 2018
+  },
+  "208_gcf-b19-22-add09": {
+   "fp": 67,
+   "title": "Building climate resilience of vulnerable and food insecure communities through capacity strengthening and livelihood diversification in mountainous regions of Tajikistan",
+   "accredited_entity": "United Nations World Food Programme",
+   "countries": [
+    "Republic of Tajikistan"
+   ],
+   "gcf_financing": "2,123,451 USD",
+   "total_financing": "23,810,929 USD",
+   "board": 19,
+   "year": 2018
+  },
+  "209_gcf-b19-22-add08-rev01_0": {
+   "fp": 66,
+   "title": "Pacific Resilience Project Phase II for RMI",
+   "accredited_entity": "International Reconstruction and Development and International Development Association (World Bank)",
+   "countries": [
+    "Republic of the Marshall Islands"
+   ],
+   "gcf_financing": null,
+   "total_financing": null,
+   "board": 19,
+   "year": 2018
+  },
+  "20_gcf-b41-02-add04-funding-proposal-package-fp256": {
+   "fp": 256,
+   "title": "Intensification of Agriculture and Agroforestry Techniques (IAAT) for Climate Resilient Food and Nutrition Security: Tombuctou, Gao, Mopti, Koulikoro and Segou regions of Mali",
+   "accredited_entity": "Save the Children Australia",
+   "countries": [
+    "Mali"
+   ],
+   "gcf_financing": null,
+   "total_financing": null,
+   "board": 41,
+   "year": 2025
+  },
+  "210_gcf-b19-22-add07": {
+   "fp": 65,
+   "title": "Financial Instruments for Brazil Energy Efficient Cities (FinLEcEC)",
+   "accredited_entity": "The World Bank",
+   "countries": [
+    "Brazil"
+   ],
+   "gcf_financing": "$195 million",
+   "total_financing": "$405 million",
+   "board": 19,
+   "year": 2018
+  },
+  "211_gcf-b19-22-add06": {
+   "fp": 64,
+   "title": "Promoting risk mitigation instruments and finance for renewable energy and energy efficiency investments",
+   "accredited_entity": "Inter-American Development Bank (IDB)",
+   "countries": [
+    "Argentina"
+   ],
+   "gcf_financing": null,
+   "total_financing": "USD 600,000",
+   "board": 19,
+   "year": 2018
+  },
+  "212_gcf-b19-22-add05": {
+   "fp": 63,
+   "title": "Promoting private sector investments in energy efficiency in the industrial sector in Paraguay",
+   "accredited_entity": "Inter-American Development Bank (IDB)",
+   "countries": [
+    "Paraguay"
+   ],
+   "gcf_financing": null,
+   "total_financing": null,
+   "board": 19,
+   "year": 2018
+  },
+  "213_gcf-b19-22-add04": {
+   "fp": 62,
+   "title": "Poverty, Reforestation, Energy and Climate Change Project (PREZEA Project)",
+   "accredited_entity": "FAO",
+   "countries": [
+    "Paraguay"
+   ],
+   "gcf_financing": null,
+   "total_financing": null,
+   "board": 19,
+   "year": 2018
+  },
+  "214_gcf-b19-22-add03": {
+   "fp": 61,
+   "title": "Integrated physical adaptation and community resilience through an enhanced direct access pilot in the public, private, and civil society sectors of three Eastern Caribbean small island developing states.",
+   "accredited_entity": "Department of Environment, Antigua and Barbuda",
+   "countries": [
+    "Antigua and Barbuda",
+    "Dominica",
+    "Grenada"
+   ],
+   "gcf_financing": null,
+   "total_financing": null,
+   "board": 19,
+   "year": 2018
+  },
+  "215_gcf-b19-22-add02": {
+   "fp": 60,
+   "title": "Water Sector Resilience Nexus for Sustainability in Barbados (WSRN S-Barbados)",
+   "accredited_entity": "Caribbean Community Climate Change Centre",
+   "countries": [
+    "Barbados"
+   ],
+   "gcf_financing": null,
+   "total_financing": null,
+   "board": 19,
+   "year": 2018
+  },
+  "216_gcf-b19-22-add01": {
+   "fp": 59,
+   "title": "Climate-Resilient Water Sector in Grenada (G-CREWS)",
+   "accredited_entity": "Deutsche Gesellschaft für Internationale Zusammenarbeit (GIZ) GmbH",
+   "countries": [
+    "Grenada"
+   ],
+   "gcf_financing": null,
+   "total_financing": null,
+   "board": 19,
+   "year": 2018
+  },
+  "217_gcf-b18-04-add13": {
+   "fp": 58,
+   "title": "Responding to the increasing risk of drought: building gender-responsive resilience of the most vulnerable communities",
+   "accredited_entity": "Ministry of Finance and Economic Cooperation (MOFEC)",
+   "countries": [
+    "Ethiopia"
+   ],
+   "gcf_financing": null,
+   "total_financing": null,
+   "board": 18,
+   "year": 2017
+  },
+  "218_gcf-b18-04-add12": {
+   "fp": 57,
+   "title": "Climate action for rural development: community-based adaptation and mitigation in Argentina",
+   "accredited_entity": "UCAR- Unit for Rural Change of Argentina",
+   "countries": [
+    "Argentina"
+   ],
+   "gcf_financing": null,
+   "total_financing": null,
+   "board": 18,
+   "year": 2017
+  },
+  "219_gcf-b18-04-add11": {
+   "fp": 56,
+   "title": "Scaling up climate resilient water management practices for vulnerable communities in La Mojana",
+   "accredited_entity": "UNDP",
+   "countries": [
+    "Colombia"
+   ],
+   "gcf_financing": null,
+   "total_financing": null,
+   "board": 18,
+   "year": 2017
+  },
+  "21_gcf-b41-02-add03-funding-proposal-package-fp255": {
+   "fp": 255,
+   "title": "Transforming Livelihoods through Climate Resilient, Low Carbon Sustainable Agricultural Value Chains in the Lake Region Economic Bloc, Kenya",
+   "accredited_entity": "FAO",
+   "countries": [
+    "Kenya"
+   ],
+   "gcf_financing": "23,519,309 USD",
+   "total_financing": "49,692,236 USD",
+   "board": 41,
+   "year": 2025
+  },
+  "220_gcf-b18-04-add10-rev01": {
+   "fp": 55,
+   "title": "Poverty, Reforestation, Energy and Climate Change in PROZEA Project",
+   "accredited_entity": "FAO",
+   "countries": [
+    "Paraguay"
+   ],
+   "gcf_financing": null,
+   "total_financing": null,
+   "board": 18,
+   "year": 2017
+  },
+  "221_gcf-b18-04-add09": {
+   "fp": 54,
+   "title": "Implementation Project of the Integral Management Plan of the Lujain River Basin",
+   "accredited_entity": "CAF – banco de desarrollo de América Latina",
+   "countries": [
+    "Argentina"
+   ],
+   "gcf_financing": "USD $315.3 MM",
+   "total_financing": null,
+   "board": 18,
+   "year": 2017
+  },
+  "222_gcf-b18-04-add08": {
+   "fp": 53,
+   "title": "Enhancing climate change adaptation in the North coast and Nile Delta Regions in Egypt",
+   "accredited_entity": "United Nations Development Programme",
+   "countries": [
+    "Egypt"
+   ],
+   "gcf_financing": null,
+   "total_financing": null,
+   "board": 18,
+   "year": 2017
+  },
+  "223_gcf-b18-04-add07": {
+   "fp": 52,
+   "title": "Sustainable and Climate Resilient Connectivity for Nauru",
+   "accredited_entity": "Asian Development Bank",
+   "countries": [
+    "Nauru"
+   ],
+   "gcf_financing": "US$105 million",
+   "total_financing": null,
+   "board": 18,
+   "year": 2017
+  },
+  "224_gcf-b18-04-add06": {
+   "fp": 51,
+   "title": "Scaling-up Investment in Low-Carbon Public Buildings",
+   "accredited_entity": "United Nations Development Programme",
+   "countries": [
+    "Bosnia and Herzegovina"
+   ],
+   "gcf_financing": "US$ 1346 million",
+   "total_financing": "US$ 105.218 million",
+   "board": 18,
+   "year": 2017
+  },
+  "225_gcf-b18-04-add05": {
+   "fp": 50,
+   "title": "Bhutan for Life",
+   "accredited_entity": "WWF",
+   "countries": [
+    "Bhutan"
+   ],
+   "gcf_financing": null,
+   "total_financing": null,
+   "board": 18,
+   "year": 2017
+  },
+  "226_gcf-b18-04-add04": {
+   "fp": 49,
+   "title": "Building the climate resilience of food insecure smallholder farmers through integrated management of climate risk (RM)",
+   "accredited_entity": "United Nations World Food Programme (WFP)",
+   "countries": [
+    "Senegal"
+   ],
+   "gcf_financing": null,
+   "total_financing": null,
+   "board": 18,
+   "year": 2017
+  },
+  "227_gcf-b18-04-add03": {
+   "fp": 48,
+   "title": "Climate-Smart Agriculture (CSA) Risk Sharing Facility for MSMEs",
+   "accredited_entity": "Inter-American Development Bank",
+   "countries": [
+    "Guatemala",
+    "Mexico"
+   ],
+   "gcf_financing": null,
+   "total_financing": null,
+   "board": 18,
+   "year": 2017
+  },
+  "228_gcf-b18-04-add02": {
+   "fp": 47,
+   "title": "GCF-EBRD Kazakhstan Renewables Framework",
+   "accredited_entity": "European Bank for Reconstruction and Development (EBRD)",
+   "countries": [
+    "Kazakhstan"
+   ],
+   "gcf_financing": "USD 110 million",
+   "total_financing": "USD 550 million",
+   "board": 18,
+   "year": 2017
+  },
+  "229_gcf-b18-04-add01": {
+   "fp": 46,
+   "title": "Renewable Energy Program #1 - Solar",
+   "accredited_entity": "XacBank LLC",
+   "countries": [
+    "Mongolia"
+   ],
+   "gcf_financing": null,
+   "total_financing": null,
+   "board": 18,
+   "year": 2017
+  },
+  "22_gcf-b40-02-add16-rev01-funding-proposal-package-fp254": {
+   "fp": 254,
+   "title": "GCF-SPC: Scaling Resilient Water Infrastructure (RWI)",
+   "accredited_entity": "International Finance Corporation (IFC)",
+   "countries": [
+    "Cote d'Ivoire",
+    "Egypt",
+    "Gabon",
+    "Morocco",
+    "Tunisia",
+    "India",
+    "Indonesia",
+    "Pakistan",
+    "Uzbekistan",
+    "Colombia",
+    "Azerbaijan"
+   ],
+   "gcf_financing": "$58,000,000 USD",
+   "total_financing": "$1,262,000,000 USD",
+   "board": 40,
+   "year": 2024
+  },
+  "230_gcf-b16-07-add08": {
+   "fp": 45,
+   "title": "Ground water recharge and solar micro irrigation to ensure food security and enhance resilience in vulnerable tribal areas of Odisha",
+   "accredited_entity": "National Bank for Agriculture and Rural Development (NABARD)",
+   "countries": [
+    "India"
+   ],
+   "gcf_financing": null,
+   "total_financing": null,
+   "board": 16,
+   "year": 2017
+  },
+  "231_gcf-b16-07-add07": {
+   "fp": 44,
+   "title": "Tina River Hydropower Development Project",
+   "accredited_entity": "The World Bank",
+   "countries": [
+    "Solomon Islands"
+   ],
+   "gcf_financing": null,
+   "total_financing": null,
+   "board": 16,
+   "year": 2017
+  },
+  "232_gcf-b16-07-add06": {
+   "fp": 43,
+   "title": "Saini Water Conservation Project",
+   "accredited_entity": "European Bank for Reconstruction and Development",
+   "countries": [
+    "Morocco"
+   ],
+   "gcf_financing": null,
+   "total_financing": null,
+   "board": 16,
+   "year": 2017
+  },
+  "233_gcf-b16-07-add05": {
+   "fp": 42,
+   "title": "Irrigation development and adaptation of irrigated agriculture to climate change in semi-arid Morocco",
+   "accredited_entity": "Agence Française de Développement (AFD)",
+   "countries": [
+    "Morocco"
+   ],
+   "gcf_financing": "45 MEUR",
+   "total_financing": "76 MEUR",
+   "board": 16,
+   "year": 2017
+  },
+  "234_gcf-b16-07-add04": {
+   "fp": 41,
+   "title": "Simavi Climate Resilience Project",
+   "accredited_entity": "KIW",
+   "countries": [
+    "Tanzania"
+   ],
+   "gcf_financing": null,
+   "total_financing": null,
+   "board": 16,
+   "year": 2017
+  },
+  "235_gcf-b16-07-add03": {
+   "fp": 40,
+   "title": "Tajikistan: Scaling Up Hydropower Sector Climate Resilience",
+   "accredited_entity": "EBRD",
+   "countries": [
+    "Tajikistan"
+   ],
+   "gcf_financing": null,
+   "total_financing": null,
+   "board": 16,
+   "year": 2017
+  },
+  "236_gcf-b16-07-add02": {
+   "fp": 39,
+   "title": "GCF - EBRD Egypt Renewable Energy Financing Framework",
+   "accredited_entity": "European Bank for Reconstruction and Development (EBRD)",
+   "countries": [
+    "Egypt"
+   ],
+   "gcf_financing": null,
+   "total_financing": "Medium (50-250 million USD)",
+   "board": 16,
+   "year": 2017
+  },
+  "237_gcf-b16-07-add01-rev01": {
+   "fp": 38,
+   "title": "GEREFP NoX",
+   "accredited_entity": "European Investment Bank",
+   "countries": [
+    "Global emerging markets programme (focused on the GCF eligible countries)"
+   ],
+   "gcf_financing": null,
+   "total_financing": null,
+   "board": 16,
+   "year": 2017
+  },
+  "238_gcf-b15-13-add10": {
+   "fp": 37,
+   "title": "Integrated Flood Management to Enhance Climate Resilience of the Vaisigano River Catchment in Samoa",
+   "accredited_entity": "UNDP",
+   "countries": [
+    "Samoa"
+   ],
+   "gcf_financing": null,
+   "total_financing": "approximately US$320m",
+   "board": 15,
+   "year": 2016
+  },
+  "239_gcf-b15-13-add09-corr01": {
+   "fp": 36,
+   "title": "Pacific Islands Renewable Energy Investment Program",
+   "accredited_entity": "Asian Development Bank",
+   "countries": [
+    "Cook Islands"
+   ],
+   "gcf_financing": null,
+   "total_financing": null,
+   "board": 15,
+   "year": 2016
+  },
+  "23_gcf-b40-02-add15-funding-proposal-pacakge-fp253": {
+   "fp": 253,
+   "title": "Greening Financial Systems: Delivering Climate Finance for All",
+   "accredited_entity": "European Bank for Reconstruction and Development",
+   "countries": [
+    "Armenia",
+    "Egypt",
+    "Jordan",
+    "Georgia",
+    "Kazakhstan",
+    "Kyrgyz Republic",
+    "Moldova",
+    "Mongolia",
+    "Morocco",
+    "North Macedonia",
+    "Serbia",
+    "Tajikistan",
+    "Uzbekistan"
+   ],
+   "gcf_financing": "$200,000,000 USD",
+   "total_financing": "$69,000,000 USD",
+   "board": 40,
+   "year": 2024
+  },
+  "240_gcf-b15-13-add08": {
+   "fp": 35,
+   "title": "Climate Information Services for Resilient Development in Vanuatu",
+   "accredited_entity": "SPREP",
+   "countries": [
+    "Vanuatu"
+   ],
+   "gcf_financing": null,
+   "total_financing": null,
+   "board": 15,
+   "year": 2016
+  },
+  "241_gcf-b15-13-add07": {
+   "fp": 34,
+   "title": "Building Resilient Communities and Ecosystems through Restoration of Watershed Catchments in Uganda",
+   "accredited_entity": "United Nations Development Programme (UNDP)",
+   "countries": [
+    "UGANDA"
+   ],
+   "gcf_financing": null,
+   "total_financing": null,
+   "board": 15,
+   "year": 2016
+  },
+  "242_gcf-b15-13-add06": {
+   "fp": 33,
+   "title": "Accelerating the Transformational Shift to a Low-Carbon Economy in the Republic of Mauritius",
+   "accredited_entity": "United Nations Development Programme",
+   "countries": [
+    "Republic of Mauritius"
+   ],
+   "gcf_financing": "US$ 28.21 million",
+   "total_financing": null,
+   "board": 15,
+   "year": 2016
+  },
+  "243_gcf-b15-13-add05": {
+   "fp": 32,
+   "title": "Enhancing Women and Girls' Adaptive Capacity to Climate Change in Bangladesh",
+   "accredited_entity": "United Nations Development Programme (UNDP)",
+   "countries": [
+    "Bangladesh"
+   ],
+   "gcf_financing": null,
+   "total_financing": null,
+   "board": 15,
+   "year": 2016
+  },
+  "244_gcf-b15-13-add03": {
+   "fp": 30,
+   "title": "Catalyzing private investment in sustainable energy in Argentina",
+   "accredited_entity": "Inter-American Development Bank",
+   "countries": [
+    "Argentina"
+   ],
+   "gcf_financing": null,
+   "total_financing": null,
+   "board": 15,
+   "year": 2016
+  },
+  "245_gcf-b15-13-add02-rev01": {
+   "fp": 29,
+   "title": "SCF Capital Solutions",
+   "accredited_entity": "Development Bank of Southern Africa",
+   "countries": [
+    "South Africa"
+   ],
+   "gcf_financing": "US$21.2 million",
+   "total_financing": "US$34.15 million",
+   "board": 15,
+   "year": 2016
+  },
+  "246_gcf-b15-13-add01": {
+   "fp": 28,
+   "title": "Business Loan Program for GHG Emission Reduction",
+   "accredited_entity": "XacBank",
+   "countries": [
+    "Mongolia"
+   ],
+   "gcf_financing": "$60 million",
+   "total_financing": null,
+   "board": 15,
+   "year": 2016
+  },
+  "247_gcf-b14-07-add10": {
+   "fp": 27,
+   "title": "Universal Green Energy Access Programme",
+   "accredited_entity": "Deutsche Bank AG",
+   "countries": [
+    "Benin",
+    "Kenya",
+    "Nigeria",
+    "Namibia",
+    "Tanzania"
+   ],
+   "gcf_financing": null,
+   "total_financing": null,
+   "board": 14,
+   "year": 2016
+  },
+  "248_gcf-b14-07-add09": {
+   "fp": 26,
+   "title": "Sustainable landscapes in Eastern Madagascar",
+   "accredited_entity": "Conservation International and the European Investment Bank",
+   "countries": [
+    "Madagascar"
+   ],
+   "gcf_financing": null,
+   "total_financing": null,
+   "board": 14,
+   "year": 2016
+  },
+  "249_gcf-b14-07-add08-rev01": {
+   "fp": 25,
+   "title": "Sustainable Energy Financing Facilities",
+   "accredited_entity": "European Bank for Reconstruction and Development",
+   "countries": [
+    "Kyrgyz Republic",
+    "Tajikistan",
+    "Turkmenistan",
+    "Albania",
+    "Bulgaria",
+    "Montenegro",
+    "Serbia",
+    "Bosnia and Herzegovina",
+    "Kosovo",
+    "Turkey",
+    "Armenia",
+    "Georgia",
+    "Egypt",
+    "Morocco",
+    "Tunisia"
+   ],
+   "gcf_financing": null,
+   "total_financing": null,
+   "board": 14,
+   "year": 2016
+  },
+  "24_gcf-b40-02-add14-rev01-funding-proposal-package-fp252": {
+   "fp": 252,
+   "title": "Acumen Resilient Agriculture Fund II",
+   "accredited_entity": "Acumen Fund Inc",
+   "countries": [
+    "Uganda",
+    "Ghana",
+    "Nigeria",
+    "Cote d'Ivoire",
+    "Egypt",
+    "Morocco"
+   ],
+   "gcf_financing": "USD 34MM",
+   "total_financing": "USD 132MM",
+   "board": 40,
+   "year": 2024
+  },
+  "250_gcf-b14-07-add07": {
+   "fp": 24,
+   "title": "Empower to Adapt: Creating Climate-Change Resilient Livelihoods through Community-Based Natural Resource Management in Namibia",
+   "accredited_entity": "Environment Investment Fund of Namibia",
+   "countries": [
+    "Namibia"
+   ],
+   "gcf_financing": null,
+   "total_financing": null,
+   "board": 14,
+   "year": 2016
+  },
+  "251_gcf-b14-07-add06": {
+   "fp": 23,
+   "title": "Climate Resilient Agriculture in three of the Vulnerable Extreme Heat and Drought Growing regions (CRAVE)",
+   "accredited_entity": "Environment Investment Fund of Namibia",
+   "countries": [
+    "Namibia"
+   ],
+   "gcf_financing": null,
+   "total_financing": null,
+   "board": 14,
+   "year": 2016
+  },
+  "252_gcf-b14-07-add05": {
+   "fp": 22,
+   "title": "Development of Argan orchards in Degraded Environment - DARED",
+   "accredited_entity": "Agency for Agricultural Development - ADA",
+   "countries": [
+    "Morocco"
+   ],
+   "gcf_financing": "9.6 MUSD",
+   "total_financing": null,
+   "board": 14,
+   "year": 2016
+  },
+  "253_gcf-b14-07-add04": {
+   "fp": 21,
+   "title": "Senegal Integrated Urban Flood Management Project",
+   "accredited_entity": "Agence Française de Développement",
+   "countries": [
+    "Republic of Senegal"
+   ],
+   "gcf_financing": null,
+   "total_financing": "2 billion dollars",
+   "board": 14,
+   "year": 2016
+  },
+  "254_gcf-b14-07-add03": {
+   "fp": 20,
+   "title": "Sustainable Energy Facility for the Eastern Caribbean",
+   "accredited_entity": "Inter-American Development Bank (IDB)",
+   "countries": [
+    "Saint Kitts and Nevis",
+    "Saint Lucia",
+    "Dominica",
+    "Grenada",
+    "Saint Vincent and The Grenadines"
+   ],
+   "gcf_financing": null,
+   "total_financing": "$10M",
+   "board": 14,
+   "year": 2016
+  },
+  "255_gcf-b14-07-add02": {
+   "fp": 19,
+   "title": "Pricing Financial and Land-Use Planning Instruments to Reduce Emissions from Deforestation",
+   "accredited_entity": "United Nations Development Programme",
+   "countries": [
+    "Ecuador"
+   ],
+   "gcf_financing": null,
+   "total_financing": null,
+   "board": 14,
+   "year": 2016
+  },
+  "256_gcf-b14-07-add01": {
+   "fp": 18,
+   "title": "Scaling up of Glacial Lake Outburst Flood (GLOF) risk reduction in Northern Pakistan",
+   "accredited_entity": "United Nations Development Programme",
+   "countries": [
+    "Pakistan"
+   ],
+   "gcf_financing": "100%",
+   "total_financing": null,
+   "board": 14,
+   "year": 2016
+  },
+  "257_gcf-b13-16-add09": {
+   "fp": 17,
+   "title": "Climate Action and Solar Energy Development Programme in the Tarapacá Region in Chile",
+   "accredited_entity": "CAF - Banco de Desarrollo de América Latina",
+   "countries": [
+    "Chile"
+   ],
+   "gcf_financing": null,
+   "total_financing": null,
+   "board": 13,
+   "year": 2016
+  },
+  "258_gcf-b13-16-add08": {
+   "fp": 16,
+   "title": "Strengthening the resilience of smallholder farmers in the Dry Zone to climate variability and extreme events through an integrated approach to water management",
+   "accredited_entity": "United Nations Development Programme",
+   "countries": [
+    "Sri Lanka"
+   ],
+   "gcf_financing": "30 MUSD",
+   "total_financing": null,
+   "board": 13,
+   "year": 2016
+  },
+  "259_gcf-b13-16-add07": {
+   "fp": 15,
+   "title": "Tuvalu Coastal Adaptation Project",
+   "accredited_entity": "United Nations Development Programme",
+   "countries": [
+    "Tuvalu"
+   ],
+   "gcf_financing": "US$18 million",
+   "total_financing": null,
+   "board": 13,
+   "year": 2016
+  },
+  "25_gcf-b40-02-add13-funding-proposal-package-fp251": {
+   "fp": 251,
+   "title": "Barbados Climate Resilient South Coast Water Reclamation Project (BCSWRP)",
+   "accredited_entity": "Inter-American Development Bank (IDB)",
+   "countries": [
+    "Barbados"
+   ],
+   "gcf_financing": "USD 70 million",
+   "total_financing": "USD 110 million",
+   "board": 40,
+   "year": 2024
+  },
+  "260_gcf-b13-16-add06": {
+   "fp": 14,
+   "title": "GCF support to Climate Adaptation and Mitigation Program for the Korean Bank (KMBP)",
+   "accredited_entity": "World Bank Group",
+   "countries": [
+    "Uzbekistan",
+    "Tajikistan"
+   ],
+   "gcf_financing": null,
+   "total_financing": null,
+   "board": 13,
+   "year": 2016
+  },
+  "261_gcf-b13-16-add05": {
+   "fp": 13,
+   "title": "Improving the resilience of vulnerable coastal communities to climate change related impacts in Viet Nam",
+   "accredited_entity": "United Nations Development Programme (UNDP)",
+   "countries": [
+    "Viet Nam"
+   ],
+   "gcf_financing": null,
+   "total_financing": null,
+   "board": 13,
+   "year": 2016
+  },
+  "262_gcf-b13-16-add04": {
+   "fp": 12,
+   "title": "Africa Hydromet Program: Phase 1 - Mali Country Project",
+   "accredited_entity": "The World Bank",
+   "countries": [
+    "Mali"
+   ],
+   "gcf_financing": null,
+   "total_financing": null,
+   "board": 13,
+   "year": 2016
+  },
+  "263_gcf-b13-16-add03": {
+   "fp": 11,
+   "title": "Large-scale Ecosystem-based Adaptation in The Gambia: Developing a Climate Resilient and Nature-based Economy",
+   "accredited_entity": "United Nations Environment Programme (UNEP)",
+   "countries": [
+    "The Gambia"
+   ],
+   "gcf_financing": null,
+   "total_financing": null,
+   "board": 13,
+   "year": 2016
+  },
+  "264_gcf-b13-16-add02": {
+   "fp": 10,
+   "title": "De-risking and Scaling-up Investment in Energy Efficient Building Retrofits",
+   "accredited_entity": "United Nations Development Programme",
+   "countries": [
+    "Armenia"
+   ],
+   "gcf_financing": null,
+   "total_financing": "approximately US$100 million",
+   "board": 13,
+   "year": 2016
+  },
+  "265_gcf-b13-16-add01": {
+   "fp": 9,
+   "title": "Energy Savings Insurance for private energy efficiency investments by Small and Medium-Sized Enterprises",
+   "accredited_entity": "Inter-American Development Bank",
+   "countries": [
+    "El Salvador"
+   ],
+   "gcf_financing": null,
+   "total_financing": null,
+   "board": 13,
+   "year": 2016
+  },
+  "266_gcf-b11-04-add08": {
+   "fp": 8,
+   "title": "Urban Water Supply and Wastewater Management Project in Fiji",
+   "accredited_entity": "Asian Development Bank",
+   "countries": [
+    "Republic of Fiji"
+   ],
+   "gcf_financing": null,
+   "total_financing": null,
+   "board": 11,
+   "year": 2015
+  },
+  "267_gcf-b11-04-add07": {
+   "fp": 7,
+   "title": "Supporting Vulnerable Communities in Maldives to Manage Climate-Induced Water Shortages",
+   "accredited_entity": "United Nations Development Programme (UNDP)",
+   "countries": [
+    "Maldives"
+   ],
+   "gcf_financing": null,
+   "total_financing": null,
+   "board": 11,
+   "year": 2015
+  },
+  "268_gcf-b11-04-add06": {
+   "fp": 6,
+   "title": "Energy Efficiency Green Bond in Latin America and the Caribbean",
+   "accredited_entity": "Inter-American Development Bank",
+   "countries": [
+    "Mexico",
+    "Brazil",
+    "India",
+    "China",
+    "South Africa",
+    "Indonesia",
+    "Nigeria",
+    "Kenya",
+    "Ethiopia",
+    "Morocco"
+   ],
+   "gcf_financing": null,
+   "total_financing": null,
+   "board": 11,
+   "year": 2015
+  },
+  "269_gcf-b11-04-add05-rev01": {
+   "fp": 5,
+   "title": "KawChafi Ventures Fund",
+   "accredited_entity": "Acumen",
+   "countries": [
+    "Rwanda",
+    "Kenya"
+   ],
+   "gcf_financing": "$20M",
+   "total_financing": "$103M",
+   "board": 11,
+   "year": 2015
+  },
+  "26_gcf-b40-02-add12-funding-proposal-package-fp250": {
+   "fp": 250,
+   "title": "Achieving emission reduction in the Central Highlands and South Central Coast of Viet Nam to support National REDD+ Action Programme goals (RECAF)",
+   "accredited_entity": "International Fund for Agricultural Development (IFAD)",
+   "countries": [
+    "Viet Nam"
+   ],
+   "gcf_financing": "35,000,000 USD",
+   "total_financing": "96,076,000 USD",
+   "board": 40,
+   "year": 2024
+  },
+  "270_gcf-b11-04-add04": {
+   "fp": 4,
+   "title": "Climate Resilient Infrastructure Mainstreaming (CRIM)",
+   "accredited_entity": "KfW",
+   "countries": [
+    "Bangladesh"
+   ],
+   "gcf_financing": null,
+   "total_financing": null,
+   "board": 11,
+   "year": 2015
+  },
+  "271_gcf-b11-04-add03": {
+   "fp": 3,
+   "title": "Restoring the Resilience of Ecosystems and Communities through the Restoration of the Productive Uses of Saltmined Lands in Senegal",
+   "accredited_entity": "Centre de Suivi Ecologique",
+   "countries": [
+    "Senegal"
+   ],
+   "gcf_financing": null,
+   "total_financing": null,
+   "board": 11,
+   "year": 2015
+  },
+  "272_gcf-b11-04-add02": {
+   "fp": 2,
+   "title": "Scaling Up the Use of Modernized Climate Information and Early Warning Systems in Malawi",
+   "accredited_entity": "United Nations Development Programme (UNDP)",
+   "countries": [
+    "Malawi"
+   ],
+   "gcf_financing": null,
+   "total_financing": "USD2.7M",
+   "board": 11,
+   "year": 2015
+  },
+  "273_gcf-b11-04-add01": {
+   "fp": 1,
+   "title": "Building the Resilience of Wetlands in the Province of Datem del Marañón",
+   "accredited_entity": "Profrances",
+   "countries": [
+    "Peru"
+   ],
+   "gcf_financing": null,
+   "total_financing": null,
+   "board": 11,
+   "year": 2015
+  },
+  "27_gcf-b40-02-add11-funding-proposal-package-fp249": {
+   "fp": 249,
+   "title": "Strengthening climate Resilience of Vulnerable Agricultural Communities",
+   "accredited_entity": "Food and Agriculture Organization of the United Nations",
+   "countries": [
+    "Republic of Iraq"
+   ],
+   "gcf_financing": "USD 25 million",
+   "total_financing": "USD 29 million (USD 8.70 million GCF + USD 20.3 million co-finance)",
+   "board": 40,
+   "year": 2024
+  },
+  "28_gcf-b40-02-add10-rev01-funding-proposal-package-fp248": {
+   "fp": 248,
+   "title": "Land-based Mitigation and Adaptation through a Jurisdictional Approach in West Kalimantan",
+   "accredited_entity": "Deutsche Gesellschaft für Internationale Zusammenarbeit (GIZ) GmbH",
+   "countries": [
+    "Indonesia"
+   ],
+   "gcf_financing": "59,484,751 Euros",
+   "total_financing": "100,194,751 Euros",
+   "board": 40,
+   "year": 2024
+  },
+  "29_gcf-b40-02-add09-funding-proposal-package-fp247": {
+   "fp": 247,
+   "title": "Local Climate Adaptive Living Facility Plan (LoCAL+) - West Africa Sub-region (Benin, Ivory Coast, Mali and Niger)",
+   "accredited_entity": "BOAD",
+   "countries": [
+    "Benin",
+    "Ghana",
+    "Ivory Coast",
+    "Mali",
+    "Niger"
+   ],
+   "gcf_financing": "44 383 307 Euros",
+   "total_financing": "52 819 497 Euros",
+   "board": 40,
+   "year": 2024
+  },
+  "30_gcf-b40-02-add08-funding-proposal-package-fp246": {
+   "fp": 246,
+   "title": "Climate Resilient Agriculture in Somalia (Ugbaad)",
+   "accredited_entity": "FAO",
+   "countries": [
+    "Somalia"
+   ],
+   "gcf_financing": "78,707,268 USD",
+   "total_financing": "94,901,497 USD",
+   "board": 40,
+   "year": 2024
+  },
+  "31_gcf-b40-02-add07-rev01-funding-proposal-package-fp245": {
+   "fp": 245,
+   "title": "Green City Kigali: a new model for urban development in Rwanda",
+   "accredited_entity": "Ministry of Environment",
+   "countries": [
+    "Rwanda"
+   ],
+   "gcf_financing": "35,107,775 USD",
+   "total_financing": null,
+   "board": 40,
+   "year": 2024
+  },
+  "32_gcf-b40-02-add06-funding-proposal-package-fp244": {
+   "fp": 244,
+   "title": "Climate Resilient Health and Well-Being for Rural Communities in Northern Malawi (CRHWBM)",
+   "accredited_entity": "Save the Children Australia",
+   "countries": [
+    "Malawi"
+   ],
+   "gcf_financing": null,
+   "total_financing": null,
+   "board": 40,
+   "year": 2024
+  },
+  "33_gcf-b40-02-add05-funding-proposal-package-fp243_0": {
+   "fp": 243,
+   "title": "Climate-resilient community access to safe water powered by renewable energy in drought-vulnerable regions of Ethiopia",
+   "accredited_entity": "Ministry of Finance (MOF)",
+   "countries": [
+    "Ethiopia"
+   ],
+   "gcf_financing": null,
+   "total_financing": null,
+   "board": 40,
+   "year": 2024
+  },
+  "34_b39-02-add17-funding-proposal-package-fp242": {
+   "fp": 242,
+   "title": "Caribbean Net-Zero and Resilient Private Sector",
+   "accredited_entity": "Inter-American Investment Corporation (IDB Invest)",
+   "countries": [
+    "Bahamas",
+    "Barbados",
+    "Belize",
+    "Dominican Republic",
+    "Guyana",
+    "Jamaica",
+    "Suriname",
+    "Trinidad and Tobago"
+   ],
+   "gcf_financing": "118.076 million USD",
+   "total_financing": "527.176 million USD",
+   "board": 39,
+   "year": 2024
+  },
+  "35_gcf-b39-02-add16-rev01-funding-proposal-package-fp241": {
+   "fp": 241,
+   "title": "Financing Mitigation and Adaptation Projects (FMAP) in Indian MSMEs",
+   "accredited_entity": "Small Industries Development Bank of India",
+   "countries": [
+    "India"
+   ],
+   "gcf_financing": "2149 million USD",
+   "total_financing": "3762 million USD",
+   "board": 39,
+   "year": 2024
+  },
+  "36_gcf-b39-02-add15-rev01-funding-proposal-package-fp240": {
+   "fp": 240,
+   "title": "Collaborative R&D/IO Programme for Promoting the Innovation of Climate Techentrepreneurship",
+   "accredited_entity": "Korea Development Bank (KDB)",
+   "countries": [
+    "Cambodia",
+    "Indonesia",
+    "Laos",
+    "Philippines",
+    "Vietnam"
+   ],
+   "gcf_financing": "$214,219 million USD",
+   "total_financing": "$221,219 million USD",
+   "board": 39,
+   "year": 2024
+  },
+  "37_gcf-b39-02-add14-funding-proposal-package-fp239": {
+   "fp": 239,
+   "title": "Building Climate Resilience for Food and Livelihoods in the Horn of Africa (BRIEFCA)",
+   "accredited_entity": "The African Development Bank (AfDB)",
+   "countries": [
+    "Djibouti",
+    "Ethiopia",
+    "Kenya",
+    "Somalia",
+    "South Sudan"
+   ],
+   "gcf_financing": null,
+   "total_financing": null,
+   "board": 39,
+   "year": 2024
+  },
+  "38_gcf-b39-02-add13-funding-proposal-package-fp238": {
+   "fp": 238,
+   "title": "Ecosystems-based Adaptation for resilient Watersheds and Communities in Malawi (ESAM)",
+   "accredited_entity": "Food and Agriculture Organisation of the United Nations (FAO)",
+   "countries": [
+    "Republic of Malawi"
+   ],
+   "gcf_financing": "42.8 million USD",
+   "total_financing": "53.22 million USD",
+   "board": 39,
+   "year": 2024
+  },
+  "39_gcf-b39-02-add12-rev01-funding-proposal-package-fp237": {
+   "fp": 237,
+   "title": "E-Motion: E-Mobility and Low Carbon Transportation",
+   "accredited_entity": "French Development Agency (AFD)",
+   "countries": [
+    "Argentina",
+    "Brazil",
+    "Colombia",
+    "Costa Rica",
+    "Dominican Republic",
+    "Mexico",
+    "Peru"
+   ],
+   "gcf_financing": null,
+   "total_financing": null,
+   "board": 39,
+   "year": 2024
+  },
+  "40_gcf-b39-02-add11-funding-proposal-package-fp236": {
+   "fp": 236,
+   "title": "Basin Approach for Livelihood Sustainability through Adaptation Strategies (BALASAS)",
+   "accredited_entity": "International Fund for Agricultural Development (IFAD)",
+   "countries": [
+    "Mexico"
+   ],
+   "gcf_financing": "39.5 million USD",
+   "total_financing": "96 953 million USD",
+   "board": 39,
+   "year": 2024
+  },
+  "41_gcf-b39-02-add10-funding-proposal-package-fp235": {
+   "fp": 235,
+   "title": "Mangroves for climate: Public, Private and Community Partnerships for Mitigation and Adaptation in Ecuador",
+   "accredited_entity": "Conservation International Foundation",
+   "countries": [
+    "Ecuador"
+   ],
+   "gcf_financing": null,
+   "total_financing": null,
+   "board": 39,
+   "year": 2024
+  },
+  "42_gcf-b39-02-add09-rev01-funding-proposal-package-fp234": {
+   "fp": 234,
+   "title": "Tonga Coastal Resilience",
+   "accredited_entity": "United Nations Development Programme (UNDP)",
+   "countries": [
+    "Tonga"
+   ],
+   "gcf_financing": "22,566,409 USD",
+   "total_financing": "23,919,409 USD",
+   "board": 39,
+   "year": 2024
+  },
+  "43_gcf-b39-02-add08-funding-proposal-package-fp233": {
+   "fp": 233,
+   "title": "Community-based Agriculture Support Programme",
+   "accredited_entity": "International Fund for Agricultural Development (IFAD)",
+   "countries": [
+    "Tajikistan"
+   ],
+   "gcf_financing": "39,000,000 USD",
+   "total_financing": "69,830,370 USD",
+   "board": 39,
+   "year": 2024
+  },
+  "44_gcf-b39-02-add07-funding-proposal-package-fp232": {
+   "fp": 232,
+   "title": "Jordan Integrated Landscape Management Initiative (ILMI)",
+   "accredited_entity": "UNEP",
+   "countries": [
+    "Jordan"
+   ],
+   "gcf_financing": "60,509,351 USD",
+   "total_financing": "60,509,951 million USD",
+   "board": 39,
+   "year": 2024
+  },
+  "45_gcf-b38-02-add11-funding-proposal-package-fp231": {
+   "fp": 231,
+   "title": "Accelerating Solar Action Program (ASAP)",
+   "accredited_entity": "Ecobank Ghana Limited",
+   "countries": [
+    "Ghana"
+   ],
+   "gcf_financing": "USD 16.19 Million",
+   "total_financing": "USD 31.57 Million",
+   "board": 38,
+   "year": 2024
+  },
+  "46_gcf-b38-02-add10-funding-proposal-package-fp230": {
+   "fp": 230,
+   "title": "Kuwait Fund-GCF",
+   "accredited_entity": "COPDES",
+   "countries": [
+    "Regional - Latin America and the Caribbean"
+   ],
+   "gcf_financing": "32.8 million Euros",
+   "total_financing": "120.2 million Euros",
+   "board": 38,
+   "year": 2024
+  },
+  "47_gcf-b38-02-add09-funding-proposal-package-fp229": {
+   "fp": 229,
+   "title": "Acumen Climate Action Pakistan Fund",
+   "accredited_entity": "Acumen Fund, Inc.",
+   "countries": [
+    "Pakistan"
+   ],
+   "gcf_financing": "USD 28M",
+   "total_financing": "USD 90M",
+   "board": 38,
+   "year": 2024
+  },
+  "48_gcf-b38-02-add08-funding-proposal-package-fp228": {
+   "fp": 228,
+   "title": "Cambodian Climate Financing Facility",
+   "accredited_entity": "Korea Development Bank",
+   "countries": [
+    "Cambodia"
+   ],
+   "gcf_financing": null,
+   "total_financing": null,
+   "board": 38,
+   "year": 2024
+  },
+  "49_gcf-b38-02-add07-funding-proposal-package-fp227_0": {
+   "fp": 227,
+   "title": "Increase Resilience to Climate Change of Smallholders Beneficiaries in Services of the Inclusive Agricultural Value Chains Programme (DEIFS v1)",
+   "accredited_entity": "International Fund for Agricultural Development (IFAD)",
+   "countries": [
+    "Madagascar"
+   ],
+   "gcf_financing": "53,861,003 USD",
+   "total_financing": "150,847,444 USD",
+   "board": 38,
+   "year": 2024
+  },
+  "50_gcf-b38-02-add06-funding-proposal-package-fp226": {
+   "fp": 226,
+   "title": "Resilient Puna: Ecosystem based Adaptation for sustainable livelihoods and climate resilient communities in Peru",
+   "accredited_entity": "Deutsche Gesellschaft für Internationale Zusammenarbeit (GIZ)",
+   "countries": [
+    "Peru"
+   ],
+   "gcf_financing": "78.32 million Euros",
+   "total_financing": "40.79 million Euros",
+   "board": 38,
+   "year": 2024
+  },
+  "51_gcf-b37-02-add15-funding-proposal-package-fp224": {
+   "fp": 224,
+   "title": "Renewable Barbados Project",
+   "accredited_entity": "International Finance Corporation",
+   "countries": [
+    "Barbados"
+   ],
+   "gcf_financing": "41 million USD",
+   "total_financing": "169 million USD",
+   "board": 37,
+   "year": 2023
+  },
+  "52_gcf-b37-02-add14-funding-proposal-package-fp223": {
+   "fp": 223,
+   "title": "Project GAIA (GAIA)",
+   "accredited_entity": "MUFG Bank, Ltd.",
+   "countries": [
+    "Benin",
+    "Côte d'Ivoire",
+    "Ghana",
+    "Kenya",
+    "Mauritius",
+    "Morocco",
+    "Tanzania",
+    "Togo",
+    "Bangladesh",
+    "Mongolia",
+    "Philippines",
+    "Barbados",
+    "Costa Rica",
+    "Dominican Republic",
+    "Guatemala",
+    "Jamaica",
+    "Panama",
+    "Peru"
+   ],
+   "gcf_financing": "152,500,000 USD",
+   "total_financing": "1,482,500,000 USD",
+   "board": 37,
+   "year": 2023
+  },
+  "53_gcf-b37-02-add13-funding-proposal-package-fp222": {
+   "fp": 222,
+   "title": "Renewable Energy Performance Platform (REPP 2)",
+   "accredited_entity": "Camco Management Limited",
+   "countries": [
+    "Cameroon",
+    "Democratic Republic of Congo (DRC)",
+    "Lesotho",
+    "Madagascar",
+    "Malawi",
+    "Niger",
+    "Nigeria",
+    "Sierra Leone",
+    "Zambia"
+   ],
+   "gcf_financing": "50 million USD",
+   "total_financing": "250 million USD",
+   "board": 37,
+   "year": 2023
+  },
+  "54_gcf-b37-02-add12-funding-proposal-package-fp221": {
+   "fp": 221,
+   "title": "Rwanda Green Investment Facility (RGIF)",
+   "accredited_entity": "African Development Bank",
+   "countries": [
+    "Rwanda"
+   ],
+   "gcf_financing": "$2,793,000 USD",
+   "total_financing": "$153,939 USD",
+   "board": 37,
+   "year": 2023
+  },
+  "55_gcf-b37-02-add11-funding-proposal-package-fp220": {
+   "fp": 220,
+   "title": "Africa Rural Climate Adaptation Finance Mechanism (ARCAFIM)",
+   "accredited_entity": "IFAD",
+   "countries": [
+    "Kenya",
+    "Uganda",
+    "Tanzania",
+    "Rwanda"
+   ],
+   "gcf_financing": "50,000,000 USD",
+   "total_financing": "200,000,000 USD",
+   "board": 37,
+   "year": 2023
+  },
+  "56_gcf-b37-02-add10-funding-proposal-package-fp219": {
+   "fp": 219,
+   "title": "Staple Crops Processing Zone (SCPF): Promoting Sustainable Agroforestry in Ethiopia",
+   "accredited_entity": "African Development Bank",
+   "countries": [
+    "Togo",
+    "Senegal",
+    "Guinea"
+   ],
+   "gcf_financing": "$162,791 million",
+   "total_financing": "$162,791,525.01",
+   "board": 37,
+   "year": 2023
+  },
+  "57_gcf-b37-02-add09-funding-proposal-package-fp218": {
+   "fp": 218,
+   "title": "Building climate resilience in the landscapes of Kigoma region",
+   "accredited_entity": "United Nations Environment Programme (UNEP)",
+   "countries": [
+    "Tanzania"
+   ],
+   "gcf_financing": "13,097,553 USD",
+   "total_financing": "23,618,846 USD",
+   "board": 37,
+   "year": 2023
+  },
+  "58_gcf-b37-02-add08-funding-proposal-package-fp217_0": {
+   "fp": 217,
+   "title": "Building Resilience of Vulnerable Communities to Climate Variability in Rwanda's Congo Nile Divide through Forest and Landscape Restoration",
+   "accredited_entity": "Ministry of Environment",
+   "countries": [
+    "Rwanda"
+   ],
+   "gcf_financing": "39,056,421 USD",
+   "total_financing": "50,000,000 USD",
+   "board": 37,
+   "year": 2023
+  },
+  "59_gcf-b37-02-add07-funding-proposal-package-fp216": {
+   "fp": 216,
+   "title": "Scaling up climate resilient flood risk management in Bosnia and Herzegovina",
+   "accredited_entity": "United Nations Development Programme",
+   "countries": [
+    "Bosnia and Herzegovina"
+   ],
+   "gcf_financing": "14.4 Million USD",
+   "total_financing": "72.89 Million USD",
+   "board": 37,
+   "year": 2023
+  },
+  "60_gcf-b37-02-add06-funding-proposal-package-fp215": {
+   "fp": 215,
+   "title": "Community Resilience Partnership Program",
+   "accredited_entity": "Asian Development Bank",
+   "countries": [
+    "Asia and Pacific Region"
+   ],
+   "gcf_financing": "120 million USD",
+   "total_financing": "750 million USD",
+   "board": 37,
+   "year": 2023
+  },
+  "61_gcf-b37-02-add05-funding-proposal-package-fp214": {
+   "fp": 214,
+   "title": "Thai Rice: Strengthening Climate-Smart Rice Farming",
+   "accredited_entity": "Deutsche Gesellschaft für Internationale Zusammenarbeit (GIZ) GmbH",
+   "countries": [
+    "Thailand"
+   ],
+   "gcf_financing": null,
+   "total_financing": null,
+   "board": 37,
+   "year": 2023
+  },
+  "62_gcf-b36-02-add08": {
+   "fp": 213,
+   "title": "The Blue Green Bank (BGB)",
+   "accredited_entity": "Pegasus Capital Advisors",
+   "countries": [
+    "Barbados"
+   ],
+   "gcf_financing": "15,000,000 USD",
+   "total_financing": "30,500,000 USD",
+   "board": 36,
+   "year": 2023
+  },
+  "63_gcf-b36-02-add07": {
+   "fp": 212,
+   "title": "Green Fund: Investing in Inclusive Agriculture and Protecting Forests",
+   "accredited_entity": "N.V. (FMO)",
+   "countries": [
+    "Brazil",
+    "Cameroon",
+    "Colombia",
+    "Côte d'Ivoire",
+    "Democratic Republic of Congo",
+    "Ecuador",
+    "Gabon",
+    "Indonesia",
+    "Lao PDR",
+    "Liberia",
+    "Zambia"
+   ],
+   "gcf_financing": "193,550,000 USD",
+   "total_financing": "981,260,000 USD",
+   "board": 36,
+   "year": 2023
+  },
+  "64_gcf-b36-02-add06": {
+   "fp": 211,
+   "title": "Hardest-to-Reach",
+   "accredited_entity": "Acumen Fund",
+   "countries": [
+    "Benin",
+    "Burkina Faso",
+    "Burundi",
+    "Chad",
+    "DRC",
+    "Guinea",
+    "Guinea Bissau",
+    "Ethiopia",
+    "Malawi",
+    "Mozambique",
+    "Niger",
+    "Sierra Leone",
+    "Somalia",
+    "Togo",
+    "Uganda",
+    "Zambia"
+   ],
+   "gcf_financing": "54,331,312",
+   "total_financing": null,
+   "board": 36,
+   "year": 2023
+  },
+  "65_gcf-b36-02-add05": {
+   "fp": 210,
+   "title": "KawCall II",
+   "accredited_entity": "Acumen Fund",
+   "countries": [
+    "Cote d'Ivoire",
+    "DR Congo",
+    "Kenya",
+    "Nigeria",
+    "Rwanda",
+    "Uganda",
+    "Zambia"
+   ],
+   "gcf_financing": "USD 52.5 million",
+   "total_financing": "USD 210 million",
+   "board": 36,
+   "year": 2023
+  },
+  "66_gcf-b36-02-add04": {
+   "fp": 209,
+   "title": "Climate Change Resilience through South Africa's Water Resources Management",
+   "accredited_entity": "Development Bank of Southern Africa",
+   "countries": [
+    "South Africa"
+   ],
+   "gcf_financing": null,
+   "total_financing": null,
+   "board": 36,
+   "year": 2023
+  },
+  "67_gcf-b36-02-add03": {
+   "fp": 208,
+   "title": "Enhanced climate resilience in the Trois-Rivières region of Haiti through Integrated Flood Management",
+   "accredited_entity": "United Nations Development Programme, UNDP",
+   "countries": [
+    "Haiti"
+   ],
+   "gcf_financing": "62,427,206.48 USD",
+   "total_financing": "31,290,561.48 USD",
+   "board": 36,
+   "year": 2023
+  },
+  "68_gcf-b36-02-add02-rev01": {
+   "fp": 207,
+   "title": "Recharge Pakistan: Building Pakistan's resilience to climate change through Ecosystem-based Adaptation (EbA) and Green Infrastructure for integrated flood risk management",
+   "accredited_entity": "World Wildlife Fund, Inc. (WWF)",
+   "countries": [
+    "Pakistan"
+   ],
+   "gcf_financing": "66,000.00$",
+   "total_financing": "77,948.391",
+   "board": 36,
+   "year": 2023
+  },
+  "69_gcf-b36-02-add01": {
+   "fp": 206,
+   "title": "Resilient Homestead and Livelihood support to the vulnerable communities in Bangladesh",
+   "accredited_entity": "Pelli Karma Sahayak Foundation (PKSF)",
+   "countries": [
+    "Bangladesh"
+   ],
+   "gcf_financing": "62,201,200/USD",
+   "total_financing": "49,989,200/USD",
+   "board": 36,
+   "year": 2023
+  },
+  "70_gcf-b35-02-add07-rev01_0": {
+   "fp": 205,
+   "title": "Infrastructure Climate Resilient Fund (ICRF)",
+   "accredited_entity": "African Export-Import Bank (AEIB)",
+   "countries": [
+    "Benin",
+    "Cameroon",
+    "Chad",
+    "Côte d'Ivoire",
+    "Democratic Republic of Congo",
+    "Ethiopia",
+    "Ghana",
+    "Kenya",
+    "Mali",
+    "Mauritania",
+    "Namibia",
+    "Nigeria",
+    "Rwanda",
+    "Sierra Leone",
+    "Togo",
+    "Zambia"
+   ],
+   "gcf_financing": "Over USD 250 million",
+   "total_financing": "765.075 million USD",
+   "board": 35,
+   "year": 2023
+  },
+  "71_gcf-b35-02-add06": {
+   "fp": 204,
+   "title": "Sustainable Renewables Risk Mitigation Initiative (SRMI)",
+   "accredited_entity": "World Bank",
+   "countries": [
+    "Ethiopia",
+    "Guinea Bissau",
+    "Indonesia",
+    "Kyrgyzstan",
+    "Mongolia",
+    "Seychelles",
+    "Somalia",
+    "Tajikistan",
+    "Tunisia"
+   ],
+   "gcf_financing": "USD 160,000,000",
+   "total_financing": "USD 1,119,000,000",
+   "board": 35,
+   "year": 2023
+  },
+  "72_GCF_B.35_02_Add.05_Funding_proposal_package_for_FP203": {
+   "fp": 203,
+   "title": "Heritage Colombia (HECO): Maximizing the Contribution of Sustainably Managed Landscapes in Colombia for Achievement of Climate Goals",
+   "accredited_entity": "World Wildlife Fund, Inc. (WWF)",
+   "countries": [
+    "Colombia"
+   ],
+   "gcf_financing": "53 million USD",
+   "total_financing": "145.2 million USD",
+   "board": 35,
+   "year": 2023
+  },
+  "73_gcf-b35-02-add04": {
+   "fp": 202,
+   "title": "Upscaling Ecosystem Based Climate Resilience of Vulnerable Rural Communities in the Valley Macro-region of the Plurinational State of Bolivia (CE-CEM Valley)",
+   "accredited_entity": "Food and Agriculture Organization of the United Nations (FAO)",
+   "countries": [
+    "Plurinational State of Bolivia"
+   ],
+   "gcf_financing": "$33.30 million USD ($)",
+   "total_financing": "$63.30 million USD ($)",
+   "board": 35,
+   "year": 2023
+  },
+  "74_gcf-b35-02-add03-rev01_0": {
+   "fp": 201,
+   "title": "Adapting Philippine Agriculture to Climate Change (APAC)",
+   "accredited_entity": "Food and Agriculture Organization of the United Nations (FAO)",
+   "countries": [
+    "Philippines"
+   ],
+   "gcf_financing": "20,273,510 USD",
+   "total_financing": "39,254,450 USD",
+   "board": 35,
+   "year": 2023
+  },
+  "75_gcf-b35-02-add02-rev01": {
+   "fp": 200,
+   "title": "Scaling up the implementation of the Lao PDR Emission Reductions Programme through improved governance and sustainable forest landscape management (Project 2)",
+   "accredited_entity": "Deutsche Gesellschaft für Internationale Zusammenarbeit (GIZ) GmbH",
+   "countries": [
+    "Lao PDR"
+   ],
+   "gcf_financing": null,
+   "total_financing": null,
+   "board": 35,
+   "year": 2023
+  },
+  "76_gcf-b35-02-add01-rev01": {
+   "fp": 199,
+   "title": "Public-Social-Private Partnerships for Ecologically Sustainable Development in the Upper and Lower Tonto Tap Basins (PTLB)",
+   "accredited_entity": "Food and Agriculture Organization of the United Nations",
+   "countries": [
+    "Cambodia"
+   ],
+   "gcf_financing": "26,231,981 USD",
+   "total_financing": "26,830,251 USD",
+   "board": 35,
+   "year": 2023
+  },
+  "77_gcf-b34-02-add08": {
+   "fp": 198,
+   "title": "C4LLEST Initiative: Concerned Action to Accelerate Local Clean Technologies - Latin America and West Africa",
+   "accredited_entity": "Deutsche Gesellschaft fuer Internationale Zusammenarbeit (GIZ) GmbH",
+   "countries": [
+    "Argentina",
+    "Costa Rica",
+    "Dominican Republic",
+    "Honduras",
+    "Mexico",
+    "Benin",
+    "Burkina Faso",
+    "Côte d'Ivoire",
+    "Guinea",
+    "Mauritania",
+    "Niger",
+    "Senegal",
+    "Togo"
+   ],
+   "gcf_financing": "26.5 million Euros",
+   "total_financing": "36.5 million Euros",
+   "board": 34,
+   "year": 2022
+  },
+  "78_gcf-b34-02-add07-rev01": {
+   "fp": 197,
+   "title": "Green Guarantee Company (\"GGC\")",
+   "accredited_entity": "MUFG Bank, Ltd.",
+   "countries": [
+    "Gabon",
+    "Rwanda",
+    "Bangladesh",
+    "Laos",
+    "Philippines",
+    "Brazil",
+    "Trinidad & Tobago"
+   ],
+   "gcf_financing": null,
+   "total_financing": "405 million USD",
+   "board": 34,
+   "year": 2022
+  },
+  "79_gcf-b34-02-add06": {
+   "fp": 196,
+   "title": "Supporting Innovative Mechanisms for Industrial Energy Efficiency Financing in Indonesia with Lessons for Replication in other ASEAN Member States",
+   "accredited_entity": "The Korea Development Bank",
+   "countries": [
+    "Indonesia"
+   ],
+   "gcf_financing": null,
+   "total_financing": null,
+   "board": 34,
+   "year": 2022
+  },
+  "80_gcf-b34-02-add05": {
+   "fp": 195,
+   "title": "E-Motion: E-Mobility and Low Carbon Transportation",
+   "accredited_entity": "Corporación Andina de Fomento (CAF)",
+   "countries": [
+    "Panama",
+    "Paraguay",
+    "Uruguay"
+   ],
+   "gcf_financing": "76.6 million USD ($)",
+   "total_financing": "231 million USD ($)",
+   "board": 34,
+   "year": 2022
+  },
+  "81_gcf-b34-02-add04": {
+   "fp": 194,
+   "title": "Programme for Energy Efficiency in Buildings (PEEB) Cool",
+   "accredited_entity": "Agence Française de Développement (AFD)",
+   "countries": [
+    "Albania",
+    "Argentina",
+    "Costa Rica",
+    "Djibouti",
+    "Indonesia",
+    "Mexico",
+    "Mozambique",
+    "North Macedonia",
+    "Sri Lanka",
+    "Tunisia"
+   ],
+   "gcf_financing": "175,000,000 Euros\n55,000,000 USD",
+   "total_financing": "1,012,500,000 Euros\n326,000,000 USD",
+   "board": 34,
+   "year": 2022
+  },
+  "82_gcf-b34-02-add03": {
+   "fp": 193,
+   "title": "Peruvian Amazon Eco Bio Business Facility (Amazon EBBF)",
+   "accredited_entity": "Peruvian Trust Fund for National Parks and Protected Areas (PROFONANIFE)",
+   "countries": [
+    "Peru"
+   ],
+   "gcf_financing": "8,972,400 USD",
+   "total_financing": "10,000 USD",
+   "board": 34,
+   "year": 2022
+  },
+  "83_gcf-b34-02-add02_0": {
+   "fp": 192,
+   "title": "The R's (Reduce, Reuse and Recycle) for Climate Resilience Wastewater Systems in Barbados (3R-CReWS)",
+   "accredited_entity": "Caribbean Community Climate Change Centre (CCCCC)",
+   "countries": [
+    "Barbados"
+   ],
+   "gcf_financing": null,
+   "total_financing": null,
+   "board": 34,
+   "year": 2022
+  },
+  "84_gcf-b34-02-add01": {
+   "fp": 191,
+   "title": "Enhancing Adaptation and Community Resilience by Improving Water Security in Vanuatu",
+   "accredited_entity": "The Pacific Community (SPC)",
+   "countries": [
+    "Vanuatu"
+   ],
+   "gcf_financing": "$23,325,003 USD",
+   "total_financing": "$28,290,014 USD",
+   "board": 34,
+   "year": 2022
+  },
+  "85_gcf-b33-02-add04_0": {
+   "fp": 190,
+   "title": "Climate Investor Two",
+   "accredited_entity": "FMO – Dutch Development Bank",
+   "countries": [
+    "Bangladesh",
+    "Botswana",
+    "Brazil",
+    "Colombia",
+    "Côte d'Ivoire",
+    "Djibouti",
+    "Ecuador",
+    "India",
+    "Indonesia",
+    "Kenya",
+    "Madagascar",
+    "Maldives",
+    "Morocco",
+    "Namibia",
+    "Nigeria",
+    "Philippines",
+    "Rwanda",
+    "Senegal",
+    "South Africa",
+    "Tanzania",
+    "Uganda",
+    "Vietnam"
+   ],
+   "gcf_financing": "880,000,000 USD",
+   "total_financing": "1.000.000.000",
+   "board": 33,
+   "year": 2022
+  },
+  "86_gcf-b33-02-add03": {
+   "fp": 189,
+   "title": "E-Mobility Program for Sustainable Cities in Latin America and the Caribbean",
+   "accredited_entity": "Inter-American Development Bank (IDB)",
+   "countries": [
+    "Barbados",
+    "Chile",
+    "Colombia",
+    "Costa Rica",
+    "Dominican Republic",
+    "Jamaica",
+    "Panama",
+    "Paraguay",
+    "Uruguay"
+   ],
+   "gcf_financing": "200,000,000 USD",
+   "total_financing": "450,000,000 USD",
+   "board": 33,
+   "year": 2022
+  },
+  "87_gcf-b33-02-add02": {
+   "fp": 188,
+   "title": "Climate Resilient Fishery Initiative for Livelihood Improvement in South Asia",
+   "accredited_entity": "Food and Agriculture Organization of the United Nations (FAO)",
+   "countries": [
+    "Republic of the Gambia"
+   ],
+   "gcf_financing": "17,200,000 USD/USD",
+   "total_financing": "25,000,000 USD/USD",
+   "board": 33,
+   "year": 2022
+  },
+  "88_gcf-b33-02-add01": {
+   "fp": 187,
+   "title": "Ouémé Basin Climate-Resilience Initiative (OCRI) Benin",
+   "accredited_entity": "FAO",
+   "countries": [
+    "Benin"
+   ],
+   "gcf_financing": "USD $18,453,795",
+   "total_financing": "USD $35,314,576",
+   "board": 33,
+   "year": 2022
+  },
+  "89_gcf-b32-02-add03_0": {
+   "fp": 186,
+   "title": "India E-Mobility Financing Program",
+   "accredited_entity": "Mahindra Alternate Assets Management Limited (MAAML)",
+   "countries": [
+    "India"
+   ],
+   "gcf_financing": "200 million USD",
+   "total_financing": "1,497 million USD",
+   "board": 32,
+   "year": 2022
+  },
+  "90_gcf-b32-02-add02": {
+   "fp": 185,
+   "title": "Climate Change: The New Evolutionary Challenge for the Galápagos Islands",
+   "accredited_entity": "Corporación Andina de Fomento (CAF)",
+   "countries": [
+    "Ecuador"
+   ],
+   "gcf_financing": null,
+   "total_financing": null,
+   "board": 32,
+   "year": 2022
+  },
+  "91_gcf-b32-02-add01": {
+   "fp": 184,
+   "title": "Vanuatu community-based climate resilience project (VCCRP)",
+   "accredited_entity": "Save the Children Australia",
+   "countries": [
+    "Vanuatu"
+   ],
+   "gcf_financing": "26,182,878 USD",
+   "total_financing": "32,650,440 USD",
+   "board": 32,
+   "year": 2022
+  },
+  "92_gcf-b31-02-add02": {
+   "fp": 183,
+   "title": "Inclusive Green Financing Initiative (IGFGREEN II): Green Climate Fund (GCF)-Supported Projects in Bangladesh, India, Nepal, and Bhutan, Low Emission Smallholder Agriculture in the Great Green Wall (GGW) Countries - Phase I",
+   "accredited_entity": "International Fund for Agricultural Development (IFAD)",
+   "countries": [
+    "Bangladesh",
+    "India",
+    "Nepal",
+    "Bhutan",
+    "Burkina Faso",
+    "Côte d'Ivoire",
+    "Ethiopia",
+    "Eritrea",
+    "Mali",
+    "Mauritania",
+    "Niger",
+    "Nigeria",
+    "Senegal",
+    "Sudan"
+   ],
+   "gcf_financing": "104,415,189 Euros",
+   "total_financing": "177,481,678 Euros",
+   "board": 31,
+   "year": 2022
+  },
+  "93_gcf-b31-02-add01": {
+   "fp": 182,
+   "title": "Climate-smart initiatives for climate change adaptation and sustainability in prioritized agricultural production systems in Colombia (CSCAP)",
+   "accredited_entity": "Corporación Andina de Fomento (CAF)",
+   "countries": [
+    "Colombia"
+   ],
+   "gcf_financing": "$73,283,000 USD",
+   "total_financing": "$99,910,201 USD",
+   "board": 31,
+   "year": 2022
+  },
+  "94_gcf-b30-02-add13": {
+   "fp": 181,
+   "title": "CRAFT - Catalytic Capital for First Private Investment Fund for Adaptation Technologies in Developing Countries",
+   "accredited_entity": "Pegasus Capital Advisors",
+   "countries": [
+    "Bahamas",
+    "Brazil",
+    "Mexico",
+    "Rwanda",
+    "South Africa",
+    "Trinidad & Tobago"
+   ],
+   "gcf_financing": "100 million USD",
+   "total_financing": "400 million USD",
+   "board": 30,
+   "year": 2021
+  },
+  "95_gcf-b30-02-add12-rev01": {
+   "fp": 180,
+   "title": "Global Fund for Coral Reefs Investment Window",
+   "accredited_entity": "Pegasus Capital Advisors LP (Pegasus)",
+   "countries": [
+    "Comoros",
+    "Mozambique",
+    "Seychelles",
+    "Fiji",
+    "Indonesia",
+    "Philippines",
+    "Sri Lanka",
+    "Bahamas",
+    "Belize",
+    "Brazil",
+    "Colombia",
+    "Ecuador",
+    "Guatemala",
+    "Jamaica",
+    "Mexico",
+    "Panama",
+    "Jordan"
+   ],
+   "gcf_financing": "USD$ 125 M",
+   "total_financing": "USD$ 500 M",
+   "board": 30,
+   "year": 2021
+  },
+  "96_gcf-b30-02-add11": {
+   "fp": 179,
+   "title": "Tanzania Agriculture Climate Adaptation Technology Development Programme (TACATDP)",
+   "accredited_entity": "CRDB Bank Plc",
+   "countries": [
+    "Tanzania"
+   ],
+   "gcf_financing": "200,000,000 USD",
+   "total_financing": "200,000,000 USD",
+   "board": 30,
+   "year": 2021
+  },
+  "97_gcf-b30-02-add10": {
+   "fp": 178,
+   "title": "Desert to Power GS Sahel Facility",
+   "accredited_entity": "African Development Bank (AfDB)",
+   "countries": [
+    "Burkina Faso",
+    "Chad",
+    "Mali",
+    "Mauritania",
+    "Niger"
+   ],
+   "gcf_financing": "130,000,000 USD",
+   "total_financing": "956,716,000 USD",
+   "board": 30,
+   "year": 2021
+  },
+  "98_gcf-b30-02-add09": {
+   "fp": 177,
+   "title": "Cooling Facility",
+   "accredited_entity": "The World Bank",
+   "countries": [
+    "Bangladesh",
+    "El Salvador",
+    "Kenya",
+    "Malawi",
+    "North Macedonia",
+    "Panama",
+    "Sao Tome and Principe",
+    "Somalia",
+    "Sri Lanka"
+   ],
+   "gcf_financing": null,
+   "total_financing": null,
+   "board": 30,
+   "year": 2021
+  },
+  "99_gcf-b30-02-add08": {
+   "fp": 176,
+   "title": "Hydro-agricultural development with smart agriculture practices in Ethiopia",
+   "accredited_entity": "Banque Ouest Africaine de Développement (BOAD)",
+   "countries": [
+    "Niger"
+   ],
+   "gcf_financing": "€30,138,772 Euros",
+   "total_financing": "€45,542,415 Euros",
+   "board": 30,
+   "year": 2021
+  }
+ }
+}
