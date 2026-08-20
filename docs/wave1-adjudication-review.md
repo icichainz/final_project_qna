@@ -17,7 +17,7 @@
 
 **The verifier was wrong on 59 of 71 flagged claims (83%).** The 57% claim-support figure is therefore mostly measurement artifact, not wrong answers — as suspected, now measured.
 
-## What the 45 false positives authorise (Wave 2 scope)
+## What the 46 false positives authorise (Wave 2 scope)
 
 | mechanism | rows |
 |---|---|
