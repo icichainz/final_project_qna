@@ -74,3 +74,33 @@ same system that builds the matcher must not be the sole judge of which of its
 outputs were wrong. The owner reviews **every** `verifier_false_positive` — the
 label that authorises a matcher change — plus a stratified sample of at least
 one row per other label, and signs the adjudicated file.
+
+## Rulings 5-7 (added after Wave 1 labelling, owner-approved)
+
+All three reviewers hit the same three gaps independently. The rulings below
+close them; rows already labelled under them were re-resolved, and the counts
+in `docs/wave1-adjudication-review.md` reflect the amended taxonomy.
+
+**5. Doc-level and cover-page citations.** A bracket naming only the document
+(`[doc]`, `[doc, cover pages]`) is **satisfied by any held evidence key of that
+document** that entails the claim. It is a coarse citation, not a wrong one.
+Rationale: treating it as a verifier hit would push generation toward citing a
+specific page it never held, which is the worse failure — an invented page
+reads as precision. Citation *precision* is reported separately and never
+folded into support. This ruling governs ~14 rows and is the one that most
+moves the false-positive count, so it is stated rather than left to taste.
+
+**6. Shape wins for headings and lead-ins.** When a unit has the *form* of a
+heading, bold label, or colon lead-in, it is `not_a_claim` **even if it carries
+a checkable proposition** — the predicate is completed by the unit below it.
+Rationale: the fix is claim extraction, and fixing extraction deletes the row
+entirely; teaching the matcher to support half-sentences would be the wrong
+component changing. This resolves the three inter-rater disagreements.
+
+**7. Negatives scoped to the retrieved set.** A negative that explicitly scopes
+itself to retrieval ("none of the retrieved excerpts mention X", "based on what
+retrieval surfaced") is **supported when the row's own evidence enumeration
+settles it** — the claim asserts something about the held set, and the held set
+is in the row. Unhedged negatives about corpus *content* remain
+`ambiguous_unscorable` per ruling 3; only the explicitly scoped form is covered
+here.

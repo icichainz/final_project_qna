@@ -10,7 +10,7 @@
 | `not_a_claim` | 12 | 16% |
 | `missing_citation` | 6 | 8% |
 | `missing_retrieval_evidence` | 5 | 7% |
-| `ambiguous_unscorable` | 1 | 1% |
+| `ambiguous_unscorable` | 0 | 0% |
 | `wrong_citation` | 1 | 1% |
 | `genuine_answer_error` | 1 | 1% |
 
