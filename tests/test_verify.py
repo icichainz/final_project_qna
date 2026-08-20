@@ -995,6 +995,187 @@ def test_gate_registry_records_the_other_side(no_registry):
     assert any(v.failed for v in verdicts), [(v.status, v.reason) for v in verdicts]
 
 
+# ---------------------------------------------------------------------------
+# gate 3f — per-key conflict: what the registry filed about the RIVAL print
+#
+# ONE DIMENSION, three values. Everything else is byte-identical across the
+# three tests: same document, same two pages, same evidence text, same answer,
+# same canonical registry row. Only the status the registry gives the p.99
+# print moves — supporting / conflicting / not recorded at all — because that
+# is the only thing `registry_ruled_compatible` reads.
+#
+# The numbers are the Wave-0b Blocker-2 probe verbatim: a document whose
+# registry knows 26,736,295 while p.99 prints 999,111,222 went CONTRADICTED ->
+# SUPPORTED with empty flags under the deleted `registry_settled`, because it
+# asked only about the CLAIM's figure and took the registry's SILENCE about
+# the rival for a ruling. Row 3 below is that probe and it must stay red.
+# ---------------------------------------------------------------------------
+
+GATE_3F_EV = {(DOC, 8): "A7. Total financing: 26,736,295 USD",
+              (DOC, 99): "A7. Total financing: 999,111,222 USD"}
+#: the registry's elected reading, identical in every row below
+_CANON = {"raw": "26,736,295 USD", "page": 8, "status": "canonical"}
+_RIVAL = {"raw": "999,111,222 USD", "page": 99}
+
+
+def _gate_3f(monkeypatch, rival_status, cite_page=8, ev=None,
+             figure="USD 26,736,295"):
+    """The same turn, with the registry filing the rival print as asked.
+
+    ``cite_page`` selects the BRANCH of `classify_deterministic` that reaches
+    `_key_conflict`: p.8 is the page that prints the claim's own figure, so the
+    claim verifies and the conflict is looked for elsewhere; p.99 does not, so
+    the claim takes the not-found branch, which runs its own conflict check and
+    never consults `registry_conflict`. Both branches must be pinned — the
+    first version of these tests covered only the first, and widening the gate
+    to defer on a `conflicting` rival then failed nothing at all, because
+    `registry_conflict` re-raised the same verdict behind its back.
+    """
+    cands = [dict(_CANON)] + ([dict(_RIVAL, status=rival_status)]
+                              if rival_status else [])
+    monkeypatch.setattr("gcf_qna.rag.registry.facts",
+                        lambda doc: {"total_financing": cands})
+    answer = f"The **total financing** is **{figure}** [{DOC}, p. {cite_page}]."
+    (v,) = V.classify(V.extract_claims(answer), ev or GATE_3F_EV, use_llm=False)
+    return v
+
+
+def test_gate_3f_a_rival_the_registry_filed_supporting_is_settled(monkeypatch):
+    """VALUE 1 — `supporting`. The registry read both prints and ruled that the
+    rival is not a second reading of this field (its own build rule: a figure
+    far below the canonical total is a component or a tranche, and supporting
+    is "never an assertion of conflict"). That ruling, and only that ruling,
+    outranks the page-level disagreement."""
+    v = _gate_3f(monkeypatch, "supporting")
+    assert v.status == V.SUPPORTED, (v.status, v.reason)
+    assert "conflict-elsewhere-in-document" not in v.flags
+
+
+def test_gate_3f_a_rival_the_registry_filed_conflicting_still_contradicts(
+        monkeypatch):
+    """VALUE 2 — `conflicting`. Same registry, same lookup, opposite ruling:
+    the registry says these ARE two readings of one field. The flag is
+    asserted, not just the status: widen the gate to defer on a `conflicting`
+    rival and the row stays CONTRADICTED — `registry_conflict` re-raises it
+    from behind the gate — but as `known-document-conflict`, losing the page
+    that prints the other figure. Status alone cannot see that, which is why
+    the first version of this test pinned nothing."""
+    v = _gate_3f(monkeypatch, "conflicting")
+    assert v.status == V.CONTRADICTED, (v.status, v.reason)
+    assert v.flags == ["conflict-elsewhere-in-document"], v.flags
+    assert "999,111,222" in v.reason
+
+
+def test_gate_3f_registry_silence_about_the_rival_never_suppresses(monkeypatch):
+    """VALUE 3 — not recorded. THE BLOCKER-2 PROBE. The registry knows the
+    claim's figure and knows nothing whatever about p.99's. Silence is not a
+    ruling that the two are compatible; the verdict must stay CONTRADICTED and
+    must still carry the flag that says where the other print is."""
+    v = _gate_3f(monkeypatch, None)
+    assert v.status == V.CONTRADICTED, (v.status, v.reason)
+    assert "999,111,222" in v.reason
+    assert "conflict-elsewhere-in-document" in v.flags
+
+
+def test_gate_3f_supporting_settles_the_not_found_branch_too(monkeypatch):
+    """VALUE 1, other branch: the answer cites p.99, which does not print its
+    figure, so the claim reaches the not-found branch. The rival is settled, so
+    the page is simply the wrong page — reported as such."""
+    v = _gate_3f(monkeypatch, "supporting", cite_page=99)
+    assert v.status == V.SUPPORTED, (v.status, v.reason)
+    assert "citation-page-mismatch" in v.flags
+
+
+def test_gate_3f_conflicting_contradicts_where_the_registry_path_never_runs(
+        monkeypatch):
+    """VALUE 2, other branch — THE ONE THAT MAKES CLAUSE 3 LOAD-BEARING.
+
+    `registry_conflict` is only consulted after a claim verifies, so on the
+    not-found branch nothing re-raises the conflict behind the gate. Widen the
+    gate to defer on a `conflicting` rival and this row goes CONTRADICTED ->
+    SUPPORTED with `citation-page-mismatch`. It must stay red, and for the
+    per-key reason rather than the registry's."""
+    v = _gate_3f(monkeypatch, "conflicting", cite_page=99)
+    assert v.status == V.CONTRADICTED, (v.status, v.reason)
+    assert "known-document-conflict" not in v.flags
+    assert "999,111,222" in v.reason
+
+
+def test_gate_3f_silence_contradicts_on_the_not_found_branch_too(monkeypatch):
+    """VALUE 3, other branch. Silence suppresses nothing here either."""
+    v = _gate_3f(monkeypatch, None, cite_page=99)
+    assert v.status == V.CONTRADICTED, (v.status, v.reason)
+
+
+def test_gate_3f_the_answer_must_be_stating_the_registrys_own_reading(
+        monkeypatch):
+    """THE CLAUSE THAT KEEPS THE PAIR FROM INVERTING.
+
+    The rival is the `supporting` p.99 print, exactly as in value 1 — but the
+    answer states a figure the registry records nowhere. The registry elected
+    26,736,295 and never blessed 555,777,999, so it has no ruling to defer to
+    and the disagreement stands. Drop the canonical clause and this row goes
+    SUPPORTED: any figure at all would inherit a tranche's licence."""
+    ev = {(DOC, 42): "A7. Total financing: 555,777,999 USD",
+          (DOC, 99): "A7. Total financing: 999,111,222 USD"}
+    v = _gate_3f(monkeypatch, "supporting", cite_page=42, ev=ev,
+                 figure="USD 555,777,999")
+    assert v.status == V.CONTRADICTED, (v.status, v.reason)
+    assert "999,111,222" in v.reason
+
+
+def test_gate_3f_a_settled_print_does_not_excuse_the_next_one_on_its_page(
+        monkeypatch):
+    """The deference is per RIVAL, not per page. p.99 prints the settled
+    999,111,222 and then an unrecorded 777,777,777 under the same label; the
+    second is nobody's ruling and must still be reported. Turn the skip into
+    an early return and this row goes SUPPORTED."""
+    ev = {(DOC, 8): "A7. Total financing: 26,736,295 USD",
+          (DOC, 99): "A7. Total financing: 999,111,222 USD\n"
+                     "A7. Total financing: 777,777,777 USD"}
+    v = _gate_3f(monkeypatch, "supporting", ev=ev)
+    assert v.status == V.CONTRADICTED, (v.status, v.reason)
+    assert "777,777,777" in v.reason
+
+
+def test_gate_3f_is_off_when_registry_conflicts_is_off(monkeypatch):
+    """`registry_conflicts=False` means 'decide from held evidence alone'. A
+    registry-derived SUPPRESSION is registry influence exactly as a
+    registry-derived contradiction is, so it must be off in that mode too —
+    otherwise the flag stops meaning what it says and a caller that opted out
+    of the registry silently keeps one of its rulings."""
+    monkeypatch.setattr("gcf_qna.rag.registry.facts", lambda doc: {
+        "total_financing": [dict(_CANON), dict(_RIVAL, status="supporting")]})
+    claims = V.extract_claims(
+        f"The **total financing** is **USD 26,736,295** [{DOC}, p. 8].")
+    (on,) = V.classify_deterministic(claims, GATE_3F_EV)
+    (off,) = V.classify_deterministic(claims, GATE_3F_EV, registry_conflicts=False)
+    assert (on.status, off.status) == (V.SUPPORTED, V.CONTRADICTED)
+
+
+def test_the_real_fp152_row_is_not_contradicted_by_its_own_annex():
+    """The live regression, against the REAL registry and the REAL corpus text
+    — no monkeypatch, so this row fails if `data/registry_v2.json` stops
+    filing the p.55 print `supporting`.
+
+    FP152 prints 'A7. Total financing (SCF + co-finance) 720 M USD' on p.5 and
+    '(a) Total project financing: $100,000,000' on p.55, inside an E.2.2
+    cost-per-tonne calculation whose next line reads '(b) Expected GCF
+    contribution: $75,000,000' — half the programme's own 150 M USD, which is
+    what makes the block a per-project template row rather than the programme
+    total. Same words, different scope."""
+    ev = {(DOC2, 5): "## A7. Total financing (SCF + co-finance) 720 M USD\n"
+                     "## A8. Total GCF funding requested 150 M USD",
+          (DOC2, 55): "### E.2.2. Estimated cost per t CO2-eq, defined as total "
+                      "investment required to achieve the mitigation\n"
+                      "(a) Total project financing: $100,000,000\n"
+                      "(b) Expected GCF contribution: $75,000,000"}
+    answer = (f"- **Total financing (SCF + co-finance):** **720 M USD** "
+              f"[{DOC2}, p.5 (A7)]")
+    (v,) = V.classify(V.extract_claims(answer), ev, use_llm=False)
+    assert v.status == V.SUPPORTED, (v.status, v.reason)
+
+
 def test_a_figure_no_evidence_prints_is_unsupported_even_when_both_are_reported(
         monkeypatch):
     """Two bullets cannot license each other. Suppression removes the
@@ -1440,27 +1621,168 @@ def test_no_claim_the_recorded_release_passed_becomes_a_failure():
 def test_fabricated_claims_are_seeded_and_are_still_caught():
     """The arm the adjudicated gold structurally cannot contain, and the one
     that is permissiveness-HOSTILE: every row is a claim the release passed,
-    mutated until it is FALSE about the evidence its own turn held."""
+    mutated until it is FALSE about the evidence its own turn held.
+
+    The bound moved 37 -> 41 when `_ABSENCE_SHAPE` was widened. That is not a
+    regression in the verifier: the old pattern matched NOTHING in this corpus,
+    so the `rider-and` / `rider-semicolon` shapes the module docstring
+    advertised were never once seeded. Widening it seeded four of them and the
+    verifier misses all four — a pre-existing hole the arm could not see, now
+    counted. `test_the_rider_shapes_are_actually_seeded` pins that they exist.
+    """
     _sv, res, _p = _scored()
     fab = res["arms"]["fabricated"]
     assert res["arm_sizes"]["fabricated"] >= 40
     assert fab["counts"]["fp"] == 0
-    assert fab["counts"]["fn"] <= 37, fab["false_negatives"]
+    assert fab["counts"]["fn"] <= 41, fab["false_negatives"]
+
+
+def test_the_rider_shapes_are_actually_seeded():
+    """COUNTED, NOT ASSERTED. `fabricate`'s docstring has always described a
+    rider bolted onto a true negative; for the whole life of the scorer it
+    produced zero of them, and nobody noticed because nothing counted them."""
+    _sv, res, _p = _scored()
+    shapes = res["fabrication_kinds"]
+    assert shapes.get("rider-and", 0) >= 1 and shapes.get("rider-semicolon", 0) >= 1
+    assert res["absence_shaped"]["fabricated"] >= 2
+
+
+#: Repaired rows this tree still flags — an EXACT set, for the same reason
+#: KNOWN_UNCLEARED is one: it fails when a row starts being cleared as well as
+#: when one stops, so neither a regression nor an unlogged widening passes.
+#:
+#: * the two `abs-antarctica` rows are the ABSENCE region. Rulings 3 and 7 were
+#:   deliberately deleted (see `classify_deterministic`), so a closed-world
+#:   negative has no supporting branch left. These two rows are the measured
+#:   price of that decision and the only place in the whole instrument where it
+#:   is visible.
+#: * `agg-corpus-boards` and `fr-disc-thai-rice` carry a name `verify.entities`
+#:   extracts and the seed builder's `_marked_names` does not ('RSF corpus',
+#:   'CSA, Thailande'). The mutation may not use `verify.entities` — it is
+#:   under test — so the repair moved a citation without seeing that term.
+#:   Instrument limitation, named rather than hidden.
+#: * `cmp-fp172-fp173-rank` is repaired to a figure its cited scope really
+#:   prints, and the REGISTRY records a conflicting figure for that document
+#:   and field. The document contradicts itself; flagging it is correct.
+REPAIRED_STILL_FLAGGED = {
+    "rep-absence-abs-antarctica-096905d75a",
+    "rep-absence-abs-antarctica-b67fa5942a",
+    "rep-citation-agg-corpus-boards-90d9520d7b",
+    "rep-citation-fr-disc-thai-rice-3aec1712f7",
+    "rep-figure-cmp-fp172-fp173-rank-fa227d25b3",
+}
+
+
+def test_repaired_claims_are_seeded_and_are_cleared_or_named():
+    """The fourth arm: claims the release FLAGGED, made TRUE about their own
+    turn's evidence. It is permissiveness-FRIENDLY like held-correct, but
+    unlike held-correct it covers the population where over-strictness lives —
+    the rows that were flagged in the first place."""
+    _sv, res, _p = _scored()
+    assert res["arm_sizes"]["repaired"] >= 20, res["arm_sizes"]
+    still = {r["row_id"] for r in res["rows"]
+             if r["arm"] == "repaired" and r["flagged"]}
+    assert still == REPAIRED_STILL_FLAGGED
+
+
+def test_the_repaired_arm_reaches_the_absence_region():
+    """The region the reviewer showed was in NO arm. Counted from the rows, not
+    claimed in a docstring: the previous seed set contained zero absence-shaped
+    rows while asserting it contained some."""
+    sv, res, _p = _scored()
+    assert res["absence_shaped"]["repaired"] >= 2, res["absence_shaped"]
+    flagged, _trunc = sv.release_failures(
+        sv.read_jsonl(GOLD / "release_release-1.jsonl"))
+    census = sv.absence_census(
+        sv.read_jsonl(GOLD / "release_release-1-evidence.jsonl"), flagged)
+    assert census["flagged"] == 71, census
+    assert census["candidates"] >= 8, census
+
+
+def test_every_repaired_row_carries_a_structural_validity_statement():
+    """`should_flag = False` is a claim about the world, so the row has to say
+    what makes it true — and the statement is checked from the evidence text,
+    never from a verdict."""
+    _sv, res, _p = _scored()
+    for r in res["rows"]:
+        if r["arm"] == "repaired":
+            assert r["should_flag"] is False
+            assert r["validity"] and len(r["validity"]) > 20, r
 
 
 def test_the_seed_set_does_not_depend_on_the_verifier_it_scores():
     """A seed set drawn from 'whatever the current code supports' hands a
-    permissive verifier a smaller and easier test."""
+    permissive verifier a smaller and easier test. Source-level half: neither
+    mutation may name a verdict at all."""
     sv, res, _p = _scored()
     src = SCORER.read_text()
-    body = src[src.index("def fabricate("):src.index("# ---", src.index("def fabricate("))]
-    code = "\n".join(ln for ln in body.splitlines()
-                     if ln.strip() and not ln.lstrip().startswith("#"))
-    code = re.sub(r'"""[\s\S]*?"""', "", code)
-    assert "classify" not in code and "verdict" not in code and ".status" not in code
+    for fn in ("def fabricate(", "def repair("):
+        body = src[src.index(fn):src.index("# ---", src.index(fn))]
+        code = "\n".join(ln for ln in body.splitlines()
+                         if ln.strip() and not ln.lstrip().startswith("#"))
+        code = re.sub(r'"""[\s\S]*?"""', "", code)
+        assert "classify" not in code and "verdict" not in code \
+            and ".status" not in code, fn
     for row in res["rows"]:
         if row["arm"] == "fabricated":
             assert row["should_flag"] is True
+
+
+def test_the_seed_set_is_bit_identical_under_a_forced_verdict(monkeypatch):
+    """The behavioural half, and the stronger one: run the whole seed
+    construction with `classify_deterministic` replaced by a function that
+    returns all-SUPPORTED, and again by one that returns all-CONTRADICTED, and
+    the seed set must be bit-identical to the real tree's — AND the replacement
+    must never be called at all.
+
+    A source scan can be defeated by an indirection; this cannot. It is what
+    makes `--baseline` meaningful across two trees, and it is the property the
+    printed `seed set sha256` claims."""
+    for name in ("release_release-1-adjudicated.jsonl",
+                 "release_release-1-evidence.jsonl", "release_release-1.jsonl"):
+        if not (GOLD / name).exists():
+            pytest.skip(f"{name} not present")
+    sv = _scorer()
+    args = (sv.read_jsonl(GOLD / "release_release-1-adjudicated.jsonl"),
+            sv.read_jsonl(GOLD / "release_release-1-evidence.jsonl"),
+            sv.read_jsonl(GOLD / "release_release-1.jsonl"))
+    base = sv.seed_digest(sv.build_rows(*args)[0])
+    assert len(base) == 64
+    for forced in (V.SUPPORTED, V.CONTRADICTED):
+        calls = []
+
+        def fake(claims, evidence, *a, _s=forced, _c=calls, **k):
+            _c.append(1)
+            return [V.Verdict(c, _s, "forced", [], flags=[]) for c in claims]
+
+        monkeypatch.setattr(V, "classify_deterministic", fake)
+        assert sv.seed_digest(sv.build_rows(*args)[0]) == base, forced
+        assert calls == [], f"seed construction consulted the verifier ({forced})"
+        monkeypatch.undo()
+
+
+def test_the_judge_bound_counters_are_pinned():
+    """`flagged` collapses CONTRADICTED and UNSUPPORTED; the production path
+    does not. An UNSUPPORTED-and-plausible verdict is exactly the residue
+    `adjudicate` is handed, so with `VERIFY_LLM=1` a clearing judge ships it,
+    while a CONTRADICTED one is never shown to the judge at all.
+
+    This is not theoretical. Forcing the registry deference to True moved two
+    fabricated rows CONTRADICTED -> UNSUPPORTED and NOTHING else in the whole
+    instrument: TP/FP/FN/TN flat on all four arms, zero flag flips, zero answer
+    statuses changed under any judge bound. `fn_clearing_judge` 104 -> 106 is
+    the only number that sees that relaxation, so it is pinned like a gate."""
+    _sv, res, _p = _scored()
+    fab = res["arms"]["fabricated"]["counts"]
+    assert fab["fn_clearing_judge"] <= 104, \
+        res["arms"]["fabricated"]["escapes_clearing_judge"]
+    assert fab["fp_contradicted"] == 0
+    assert res["arms"]["held-correct"]["counts"]["fn_clearing_judge"] == 0
+    assert res["arms"]["held-correct"]["counts"]["fp_contradicted"] == 0
+    # a repaired row the verifier CONTRADICTS cannot be rescued by any judge;
+    # exactly one exists and it is named in REPAIRED_STILL_FLAGGED
+    assert res["arms"]["repaired"]["counts"]["fp_contradicted"] <= 1, \
+        res["arms"]["repaired"]["contradicted_but_should_not_be"]
 
 
 def test_every_scored_row_joins_exactly_one_extracted_claim():

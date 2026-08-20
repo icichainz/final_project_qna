@@ -45,7 +45,8 @@ import os
 import re
 import unicodedata
 from dataclasses import dataclass, field as dc_field
-from typing import Any, Dict, Iterable, List, Optional, Sequence, Tuple
+from typing import (Any, Callable, Dict, Iterable, List, Optional, Sequence,
+                    Tuple)
 
 from gcf_qna import config
 
@@ -1124,7 +1125,9 @@ def _money_like(a: Amount) -> bool:
 
 
 def _field_conflict(claim: Claim, text: str,
-                    also_reported: Sequence[Amount] = ()) -> Optional[Tuple[Amount, str]]:
+                    also_reported: Sequence[Amount] = (),
+                    settled: Optional[Callable[[Amount], bool]] = None
+                    ) -> Optional[Tuple[Amount, str]]:
     """A figure printed under the claim's own field label that disagrees.
 
     Line-scoped and label-anchored: the registry prints 'GCF financing (as
@@ -1140,6 +1143,10 @@ def _field_conflict(claim: Claim, text: str,
     claim-ca1c1388, claim-d43027b0, claim-4650af24, ...) failed exactly that
     way. A disagreeing figure the answer ITSELF reports for this document is
     the instructed behaviour, not a contradiction to repair.
+
+    ``settled`` decides ONE rival print at a time (see ``_key_conflict``); a
+    rival it skips does not end the scan, so a second, unsettled rival printed
+    further down the same page is still reported.
     """
     field = claim_field(claim.text)
     if not field or not claim.amounts:
@@ -1157,6 +1164,9 @@ def _field_conflict(claim: Claim, text: str,
                 continue
             if any(amount_matches(cand, a) for a in also_reported):
                 return None                       # the answer reports both
+            if settled is not None and settled(cand):
+                continue          # the registry recorded this print, and not
+                                  # as a conflict — keep looking on this page
             return cand, line.strip()[:200]
     return None
 
@@ -1375,8 +1385,61 @@ def registry_records(doc_id: str, field: Optional[str], want: Amount) -> bool:
                for c in cands)
 
 
+def registry_ruled_compatible(doc_id: str, field: Optional[str],
+                              stated: Sequence[Amount], rival: Amount) -> bool:
+    """Has the registry READ BOTH prints and filed the rival as not-a-conflict?
+
+    ``scripts/build_registry_v2.py`` scans every page of a document, elects one
+    ``canonical`` value per field, and then rules on every other print of that
+    field: ``conflicting`` when it "IS comparable with the canonical one ...
+    and disagrees", ``supporting`` when it "agrees with the canonical one, or
+    is not comparable with it (no parsed value / incompatible currency / text
+    field / a figure far below the canonical total, i.e. a component or a
+    tranche). Never an assertion of conflict." Deferring to that ruling is the
+    only thing that may outrank a page-level disagreement, and it is claimed
+    only when the registry actually read the pair:
+
+    1. **the answer states the CANONICAL value** for this document and field.
+       The registry elected it; the answer is repeating the registry's own
+       reading. Drop this clause and the pair inverts — 'Total financing:
+       **$100,000,000** [p.55]' would suppress FP152's canonical 720 M USD on
+       p.5 and a per-project tranche would verify clean as the programme
+       total.
+    2. **the registry RECORDED the rival print** for the same field. SILENCE
+       IS NOT A RULING: this is the clause whose absence sank the deleted
+       ``registry_settled``, where a document whose registry knows 26,736,295
+       verified clean against a p.99 printing 999,111,222, with no flag at
+       all. An unbuilt registry, an unregistered document and an unmapped
+       field are all silence and all reach the same answer here.
+    3. **every record of the rival is filed ``supporting``.** ``conflicting``
+       is the registry saying these ARE two readings of one field, which is
+       the contradiction, not an excuse for it; ``canonical`` cannot occur
+       under clause 1 but is excluded anyway rather than argued about.
+
+    Only the money/duration fields ``_V2_FIELD`` maps are askable; for every
+    other field the registry has no opinion to defer to.
+    """
+    v2 = _V2_FIELD.get(field or "")
+    if not v2 or not stated:
+        return False
+    try:
+        from gcf_qna.rag import registry
+        cands = (registry.facts(doc_id) or {}).get(v2) or []
+    except Exception:           # the registry is an enhancement, never a blocker
+        return False
+    canon = next((c for c in cands if c.get("status") == "canonical"), None)
+    ca = _as_amount(canon.get("raw", "")) if canon else None
+    if ca is None or not any(amount_matches(ca, s) for s in stated):
+        return False                                        # clause 1
+    recorded = [c for c in cands
+                if (a := _as_amount(c.get("raw", ""))) and amount_matches(a, rival)]
+    if not recorded:
+        return False                                        # clause 2 — SILENCE
+    return all(c.get("status") == "supporting" for c in recorded)   # clause 3
+
+
 def _key_conflict(claim: Claim, evidence: Evidence, keys: Sequence[EvidenceKey],
-                  also: Sequence[Amount] = ()
+                  also: Sequence[Amount] = (), registry_rulings: bool = True
                   ) -> Tuple[Optional[Tuple[Amount, str]], Optional[EvidenceKey]]:
     """The first held key that prints a DIFFERENT value under the claim's field.
 
@@ -1386,14 +1449,41 @@ def _key_conflict(claim: Claim, evidence: Evidence, keys: Sequence[EvidenceKey],
     a claim citing the document as a whole.
 
     A ``registry_settled`` escape once sat here, deferring to the registry
-    whenever it recorded the claim's figure and had not marked the rival
+    whenever it recorded the CLAIM's figure and had not marked the rival
     'conflicting'. It was deleted: the registry's SILENCE about a figure is
     not a ruling that the figure is compatible, so a document whose registry
     knows 26,736,295 while p.99 prints 999,111,222 verified clean with no
     flag at all. It earned no adjudicated row.
+
+    What is here instead is the narrower condition the review that rejected it
+    specified: defer only when the registry has actually RECORDED THE RIVAL
+    print for this document and field — the print about to be called a
+    contradiction, not just the claim's own figure — and filed it
+    ``supporting`` rather than ``conflicting`` (``registry_ruled_compatible``,
+    which also keeps ``registry_settled``'s requirement that the answer be
+    stating the registry's own canonical reading). Silence still suppresses
+    nothing, so the 26,736,295/999,111,222 probe stays CONTRADICTED.
+
+    The row it exists for is ``id-fp152-financing``. Its document prints
+    'A7. Total financing (SCF + co-finance) 720 M USD' on p.5 and, on p.55,
+    '(a) Total project financing: $100,000,000' inside an E.2.2 cost-per-tonne
+    calculation whose sibling line reads '(b) Expected GCF contribution:
+    $75,000,000' — half the programme's own 150 M USD, which is what makes it
+    a per-project template row and not the programme total. Same words, a
+    different scope. The registry filed it 'supporting' (a figure far below
+    the canonical total is a component or a tranche), so it is settled, while
+    the 210 candidates it filed 'conflicting' corpus-wide are not.
+
+    The predicate is applied PER RIVAL, not per key: a settled print does not
+    excuse the next print on the same page.
     """
+    field = claim_field(claim.text)
     for k in keys:
-        got = _field_conflict(claim, evidence.get(k, ""), also)
+        settled = None
+        if registry_rulings and k[0] != NOTES_DOC:
+            settled = (lambda rival, d=k[0]:
+                       registry_ruled_compatible(d, field, claim.amounts, rival))
+        got = _field_conflict(claim, evidence.get(k, ""), also, settled)
         if got:
             return got, k
     return None, None
@@ -1536,14 +1626,17 @@ def classify_deterministic(claims: Sequence[Claim], evidence: Evidence,
             # page hide a disagreeing one, and folding ruling 5 into `strict`
             # emptied the cross-page scope altogether: a document printing two
             # figures for the same field, cited '[doc]', verified clean.
-            conflict, where = _key_conflict(c, evidence, strict, also)
+            conflict, where = _key_conflict(c, evidence, strict, also,
+                                            registry_conflicts)
             if conflict is None and r5:
-                conflict, where = _key_conflict(c, evidence, r5, also)
+                conflict, where = _key_conflict(c, evidence, r5, also,
+                                                registry_conflicts)
                 if conflict:
                     flags.append("conflict-elsewhere-in-document")
             if conflict is None and cross_page_conflicts:
                 others = [k for k in wide if k not in strict and k not in r5]
-                conflict, where = _key_conflict(c, evidence, others, also)
+                conflict, where = _key_conflict(c, evidence, others, also,
+                                                registry_conflicts)
                 if conflict:
                     flags.append("conflict-elsewhere-in-document")
             if conflict:
@@ -1569,7 +1662,8 @@ def classify_deterministic(claims: Sequence[Claim], evidence: Evidence,
                                strict, flags=flags))
             continue
 
-        conflict, _where = _key_conflict(c, evidence, strict, also)
+        conflict, _where = _key_conflict(c, evidence, strict, also,
+                                         registry_conflicts)
         if conflict:
             cand, line = conflict
             out.append(Verdict(c, CONTRADICTED,
