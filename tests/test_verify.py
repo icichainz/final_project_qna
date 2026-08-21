@@ -653,21 +653,13 @@ def test_repair_runs_with_the_judge_switched_off(evidence):
     assert res.status == "repaired" and res.answer == fixed
 
 
-def test_judge_verdicts_survive_the_post_repair_recheck(evidence):
-    """The recheck is deterministic-only; without carrying the judge's rulings
-    a cleared paraphrase comes back unsupported and sinks a good repair."""
-    answer = ("The accredited entity is **Pegasus Capital Advisors LP**.\n\n"
-              f"FP151 requests **USD 25 million** in GCF funding [{DOC}, cover pages].")
-    fixed = ("The accredited entity is **Pegasus Capital Advisors LP**.\n\n"
-             f"FP151 requests **USD 18.5 million** in GCF funding [{DOC}, cover pages].")
-    client = FakeClient(
-        json.dumps({"verdicts": [{"id": 0, "status": "supported",
-                                  "reason": "the cited page names it"}]}),
-        fixed)
-    res = V.verify_answer(answer, evidence, client=client)
-    assert res.status == "repaired" and res.answer == fixed
-    carried = [v for v in res.verdicts if v.source == "llm"]
-    assert len(carried) == 1 and carried[0].status == V.SUPPORTED
+# NOTE: `test_judge_verdicts_survive_the_post_repair_recheck` lived here and
+# pinned the CARRY-ON rule ("the recheck is deterministic-only, so carry the
+# judge's rulings across it"). Wave 4 measured what that rule does — it adopts
+# rewrites the honest recheck rejects, always in that direction — and the
+# shipped path is now carry-off. The same fixture, asserting the opposite
+# outcome, is `test_a_repair_certified_by_a_carried_judge_ruling_is_rejected`
+# at the end of this file, next to the rest of the carry-off decision.
 
 
 def test_repair_may_delete_the_claim_entirely(evidence):
@@ -2437,3 +2429,745 @@ def test_an_exotic_apostrophe_inside_a_name_still_matches(no_registry, mark):
     answer = f"The programme covers **Côte d{mark}Ivoire** [{DOC}, cover pages]."
     (v,) = V.classify(V.extract_claims(answer), ev, use_llm=False)
     assert v.status == V.SUPPORTED, (mark, v.status, v.reason)
+
+
+# ===========================================================================
+# Wave 4's three blocking prerequisites, and the carry-off decision.
+#
+# Every gate below is pinned in BOTH directions and the negatives vary the
+# dimension the gate turns on — the parameter that travels with the request,
+# the pair of detected languages, the size of the rewrite — not a neighbouring
+# one. `docs/wave0c-review-verdict.md` closes on why: three rounds of this
+# file were rejected for tests that "pin the surviving hole open" by varying
+# the dimension the last bug report happened to exhibit.
+# ===========================================================================
+
+# ---------------------------------------------------------------------------
+# (a) the judge and repair calls are pinned samples
+# ---------------------------------------------------------------------------
+
+@pytest.fixture(autouse=True)
+def _forget_endpoint_capabilities():
+    """`_SAMPLING_UNSUPPORTED` is remembered for the PROCESS, so one test that
+    exercises the degradation path could unpin every later one. Reset around
+    each test in this module."""
+    V._reset_sampling_support()
+    yield
+    V._reset_sampling_support()
+
+
+class RejectingClient(FakeClient):
+    """A client that refuses named parameters the way a real endpoint does.
+
+    `shape` picks HOW the refusal is expressed, because that is the only thing
+    a caller can key on and the three shapes are all real:
+      'sdk'     openai-python's BadRequestError, which carries `.param` and
+                `.status_code` (measured on this deployment: param='seed',
+                code='invalid_type')
+      'message' a 4xx whose body only mentions the parameter in prose, which
+                is what a self-hosted OpenAI-compatible server returns
+      'typeerror' a client whose `create()` does not accept the keyword at all
+    """
+
+    def __init__(self, *replies, refuses=(), shape="sdk"):
+        super().__init__(*replies)
+        self.refuses, self.shape = set(refuses), shape
+        outer, inner = self, self.chat.completions
+
+        class _Completions:
+            def create(self, **kw):
+                bad = sorted(p for p in outer.refuses if p in kw)
+                if bad:
+                    outer.calls.append(kw)
+                    raise outer._refusal(bad[0])
+                return inner.create(**kw)
+
+        self.chat = type("Chat", (), {"completions": _Completions()})()
+
+    def _refusal(self, param):
+        if self.shape == "typeerror":
+            return TypeError(
+                f"Completions.create() got an unexpected keyword argument "
+                f"'{param}'")
+        msg = (f"Error code: 400 - {{'error': {{'message': \"Unsupported "
+               f"parameter: '{param}' is not supported with this model.\", "
+               f"'type': 'invalid_request_error', 'param': '{param}', "
+               f"'code': 'unsupported_parameter'}}}}")
+        exc = RuntimeError(msg)
+        if self.shape == "sdk":
+            exc.status_code, exc.param, exc.code = 400, param, "unsupported_parameter"
+        return exc
+
+
+def _pinned_calls(client):
+    """The requests that carried a system prompt this module owns."""
+    owns = (V.ADJUDICATE_PROMPT, V.REPAIR_PROMPT)
+    return [c for c in client.calls
+            if any(m.get("content") in owns for m in c["messages"])]
+
+
+@pytest.mark.parametrize("param,want", [("temperature", 0),
+                                        ("seed", V.SAMPLING_SEED)])
+def test_every_call_this_module_makes_carries_the_pin(evidence, param, want):
+    """DIMENSION: the individual pinned parameter. Wave 4's finding is not
+    'repair is random', it is that NEITHER parameter was sent — so the test
+    varies the parameter, and dropping just one of the two still fails."""
+    answer = ("The total GCF funding requested is USD 150 million.\n\n"
+              f"FP151 requests **USD 25 million** in GCF funding [{DOC}, cover pages].")
+    client = FakeClient(json.dumps({"verdicts": [{"id": 0, "status": "unsupported",
+                                                  "reason": "not stated"}]}),
+                        f"FP151 requests **USD 18.5 million** in GCF funding "
+                        f"[{DOC}, cover pages].")
+    V.verify_answer(answer, evidence, client=client)
+    roles = [c["messages"][0]["content"] for c in client.calls]
+    assert V.ADJUDICATE_PROMPT in roles and V.REPAIR_PROMPT in roles, roles
+    for call in client.calls:
+        assert call.get(param) == want, (call.get(param), call["messages"][0])
+
+
+def test_two_repairs_of_the_same_inputs_send_byte_identical_requests(evidence):
+    """The property the pin buys, at the layer a test can see without a
+    network: same answer + same verdicts -> same request. Whether the SERVER
+    then returns the same text is an endpoint property and is measured
+    separately; what this file can guarantee is that we stopped asking it a
+    different question every time."""
+    answer = f"FP151 requests **USD 25 million** in GCF funding [{DOC}, cover pages]."
+    verdicts = V.classify(V.extract_claims(answer), evidence, use_llm=False)
+    fixed = f"FP151 requests **USD 18.5 million** in GCF funding [{DOC}, cover pages]."
+    payloads = []
+    for _ in range(2):
+        c = FakeClient(fixed)
+        V.repair(answer, verdicts, evidence, client=c)
+        payloads.append(json.dumps(c.calls[0], sort_keys=True))
+    assert payloads[0] == payloads[1]
+    assert '"seed": %d' % V.SAMPLING_SEED in payloads[0]
+    assert '"temperature": 0' in payloads[0]
+
+
+@pytest.mark.parametrize("shape", ["sdk", "message", "typeerror"])
+@pytest.mark.parametrize("refused,kept", [("seed", "temperature"),
+                                          ("temperature", "seed")])
+def test_a_rejected_parameter_degrades_the_call_and_keeps_the_other_pin(
+        evidence, shape, refused, kept):
+    """DIMENSION: which parameter the endpoint refuses, crossed with how it
+    says so. Some OpenAI-compatible servers 400 on `seed`; some reasoning
+    models 400 on `temperature`. Either must cost the parameter, never the
+    turn and never the OTHER parameter."""
+    answer = f"FP151 requests **USD 25 million** in GCF funding [{DOC}, cover pages]."
+    fixed = f"FP151 requests **USD 18.5 million** in GCF funding [{DOC}, cover pages]."
+    client = RejectingClient(fixed, refuses=(refused,), shape=shape)
+    res = V.repair(answer, V.classify(V.extract_claims(answer), evidence,
+                                      use_llm=False), evidence, client=client)
+    assert res.repaired and res.answer == fixed          # the turn survived
+    assert refused in V._SAMPLING_UNSUPPORTED
+    assert kept not in V._SAMPLING_UNSUPPORTED
+    assert client.calls[-1].get(kept) is not None        # the other pin held
+    assert refused not in client.calls[-1]
+
+
+@pytest.mark.parametrize("boom", [
+    RuntimeError("502 Bad Gateway"),
+    RuntimeError("Error code: 429 - rate limit reached for gpt-5.2"),
+    TimeoutError("read timed out"),
+    RuntimeError("Error code: 400 - {'error': {'message': \"Invalid "
+                 "'messages': too many items\", 'param': 'messages'}}"),
+])
+def test_an_ordinary_failure_may_not_unpin_the_module(evidence, boom):
+    """THE WIDENING DIRECTION, and the one that matters. A retry that fires on
+    any exception would silently drop the pin on the first flaky call and
+    never restore it — the module would go back to unpinned sampling with
+    nothing in the record saying when. Only a failure that NAMES a parameter
+    we sent is allowed to drop it."""
+    answer = f"FP151 requests **USD 25 million** in GCF funding [{DOC}, cover pages]."
+    client = FakeClient(boom)
+    res = V.repair(answer, V.classify(V.extract_claims(answer), evidence,
+                                      use_llm=False), evidence, client=client)
+    assert V._SAMPLING_UNSUPPORTED == set()
+    assert len(client.calls) == 1                        # no retry was taken
+    assert not res.repaired and res.answer == answer
+    assert any("repair call failed" in n for n in res.notes)
+
+
+def test_an_endpoint_that_refuses_everything_still_terminates(evidence):
+    """The retry is bounded by the number of pinned parameters, so a server
+    that refuses both cannot turn one repair into an unbounded call loop."""
+    answer = f"FP151 requests **USD 25 million** in GCF funding [{DOC}, cover pages]."
+    fixed = f"FP151 requests **USD 18.5 million** in GCF funding [{DOC}, cover pages]."
+    client = RejectingClient(fixed, refuses=("seed", "temperature"))
+    res = V.repair(answer, V.classify(V.extract_claims(answer), evidence,
+                                      use_llm=False), evidence, client=client)
+    assert len(client.calls) == len(V._PINNED_SAMPLING) + 1 == 3
+    assert res.repaired and res.answer == fixed
+    assert V._SAMPLING_UNSUPPORTED == {"seed", "temperature"}
+
+
+def test_a_refusal_is_remembered_so_it_is_paid_for_once(evidence):
+    """A server that does not support `seed` does not start supporting it
+    mid-process; re-probing it every turn is latency and cost with no
+    information."""
+    answer = f"FP151 requests **USD 25 million** in GCF funding [{DOC}, cover pages]."
+    fixed = f"FP151 requests **USD 18.5 million** in GCF funding [{DOC}, cover pages]."
+    verdicts = V.classify(V.extract_claims(answer), evidence, use_llm=False)
+    first = RejectingClient(fixed, refuses=("seed",))
+    V.repair(answer, verdicts, evidence, client=first)
+    second = RejectingClient(fixed, refuses=("seed",))
+    V.repair(answer, verdicts, evidence, client=second)
+    assert len(first.calls) == 2 and len(second.calls) == 1
+    assert "seed" not in second.calls[0]
+    assert second.calls[0]["temperature"] == V.SAMPLING_TEMPERATURE
+
+
+def test_verify_only_ever_calls_the_judge_and_the_repair_pass(evidence):
+    """The answer-generation call is not this module's and is not pinned by
+    this change. Pinned here as a structural fact rather than a promise: every
+    request verify.py issues carries one of its own two system prompts."""
+    answer = ("The total GCF funding requested is USD 150 million.\n\n"
+              f"FP151 requests **USD 25 million** in GCF funding [{DOC}, cover pages].")
+    client = FakeClient(json.dumps({"verdicts": []}),
+                        f"FP151 requests **USD 18.5 million** [{DOC}, cover pages].")
+    V.verify_answer(answer, evidence, client=client)
+    assert client.calls and _pinned_calls(client) == client.calls
+
+
+# ---------------------------------------------------------------------------
+# (b) the language gate on the adoption path
+# ---------------------------------------------------------------------------
+
+EN_ANSWER = (f"FP151 requests **USD 25 million** in GCF funding [{DOC}, cover "
+             f"pages]. That is the figure the cover page of the package gives "
+             f"for this proposal, and it is what the answer above reports.")
+EN_FIXED = (f"FP151 requests **USD 18.5 million** in GCF funding [{DOC}, cover "
+            f"pages]. That is the figure the cover page of the package gives "
+            f"for this proposal, and it is what the answer above reports.")
+FR_ANSWER = (f"FP151 demande **25 millions USD** de financement du GCF "
+             f"[{DOC}, cover pages]. C'est le montant que la page de "
+             f"couverture du dossier indique pour cette proposition.")
+FR_FIXED = (f"FP151 demande **18,5 millions USD** de financement du GCF "
+            f"[{DOC}, cover pages]. C'est le montant que la page de "
+            f"couverture du dossier indique pour cette proposition.")
+
+
+@pytest.mark.parametrize("original,rewrite,frm,to", [
+    (EN_ANSWER, FR_FIXED, "English", "French"),
+    (FR_ANSWER, EN_FIXED, "French", "English"),
+])
+def test_a_repair_that_flips_the_language_is_rejected(evidence, original,
+                                                      rewrite, frm, to):
+    """DIMENSION: the (before, after) language PAIR, both directions.
+
+    Wave 4: an English answer came back French in 2 of 3 samples and was
+    ADOPTED both times — every claim verified and every citation resolved,
+    because nothing in the pass reads language. A one-sided gate would be the
+    same defect with a French user; the rewrite here is otherwise a PERFECT
+    repair, so nothing but the language can be doing the rejecting."""
+    res = V.verify_answer(original, evidence, client=FakeClient(rewrite),
+                          use_llm=False)
+    assert res.repair_rejected and not res.repaired
+    assert res.answer == original
+    note = " ".join(res.notes)
+    assert frm in note and to in note, note
+
+
+@pytest.mark.parametrize("original,rewrite", [
+    (EN_ANSWER, EN_FIXED),
+    (FR_ANSWER, FR_FIXED),
+])
+def test_a_repair_that_keeps_the_language_is_still_adopted(evidence, original,
+                                                           rewrite):
+    """The permissive side, in both languages: the gate must cost nothing to a
+    repair that obeys rule 5. A gate that only ever rejects is indistinguishable
+    from turning repair off."""
+    res = V.verify_answer(original, evidence, client=FakeClient(rewrite),
+                          use_llm=False)
+    assert res.repaired and res.answer == rewrite, res.notes
+
+
+@pytest.mark.parametrize("a,b", [
+    ("The total GCF funding requested is USD 150 million for the programme.",
+     "Le financement total demande par le programme est de 150 millions USD."),
+    ("Le financement total demande par le programme est de 150 millions USD.",
+     "The total GCF funding requested is USD 150 million for the programme."),
+])
+def test_the_flip_test_is_symmetric(a, b):
+    """Stated as a property, not as two examples: swapping the arguments
+    swaps the reported direction and never changes whether it fires."""
+    fwd, back = V._language_flip(a, b), V._language_flip(b, a)
+    assert fwd is not None and back is not None
+    assert fwd == (back[1], back[0])
+
+
+@pytest.mark.parametrize("text", ["None.", "18,500,000", "", "FP151 [124_x]"])
+def test_an_undetectable_side_is_not_a_flip(text):
+    """The documented semantics, pinned so it cannot drift into either a
+    silent hole or a silent over-rejection: 'unknown' is not evidence that the
+    language changed. What covers a rewrite this small is the substance floor
+    below, and that is where the coverage is tested."""
+    assert V.detect_language(text) is None
+    assert V._language_flip(EN_ANSWER, text) is None
+    assert V._language_flip(text, EN_ANSWER) is None
+
+
+LANG_PARITY_SAMPLES = [
+    "Quel est le financement total ?", "Which entity implements FP218?",
+    "je veux un tableau par rapport a ca", "FP274?",
+    EN_ANSWER, FR_ANSWER, "None.", "",
+    "Réponds en anglais s'il te plaît, quel est le budget ?",
+    "Now back to the first one — which country is it in, en français ?",
+    "The total GCF funding requested is USD 150 million.",
+    "Le financement total demandé est de 150 millions USD.",
+]
+
+
+def test_the_local_language_detector_agrees_with_the_apps():
+    """`detect_language` is a COPY (importing `chainlit_app` from here is an
+    import cycle and drags in chainlit + faiss). A copy that drifts is worse
+    than an import, so the two are pinned to agree — including on the inputs
+    `tests/test_app_helpers.py` pins the app's own copy against."""
+    pytest.importorskip("chainlit")
+    from gcf_qna.app.chainlit_app import _detect_lang
+    for s in LANG_PARITY_SAMPLES:
+        assert V.detect_language(s) == _detect_lang(s), s
+
+
+#: One English framing sentence around a quotation that carries most of the
+#: characters — the shape the guard is about. The quoted sentence is what
+#: changes language; the answer's own voice does not.
+_QUOTED = ("The document records the objective as follows: {o}{q}{c} "
+           "That is the text on the page.")
+_Q_FR = ("Le programme vise \u00e0 renforcer la r\u00e9silience des communaut\u00e9s "
+         "rurales face aux al\u00e9as climatiques et \u00e0 mobiliser des financements "
+         "pour les collectivit\u00e9s.")
+_Q_EN = ("The programme aims to strengthen the resilience of rural communities "
+         "to climate hazards and to mobilise finance for local authorities.")
+QUOTED_EN = _QUOTED.replace("{q}", _Q_FR)
+QUOTED_FR = _QUOTED.replace("{q}", _Q_EN)
+
+
+@pytest.mark.parametrize("marks", [('"', '"'), ("\u201c", "\u201d"),
+                                   ("\u00ab", "\u00bb")])
+@pytest.mark.parametrize("a,b", [(QUOTED_EN, QUOTED_FR), (QUOTED_FR, QUOTED_EN)])
+def test_a_language_change_inside_a_quotation_only_is_not_a_flip(marks, a, b):
+    """THE GUARD, i.e. the over-strict direction. The rule is about the
+    language the ANSWER is written in; a quotation is the corpus's words. Here
+    the answer's own prose is English on both sides and only the quoted
+    sentence changes language — a repair correcting a misquotation does
+    exactly this. A whole-text detector reads the quotation (most of the
+    characters) as the answer's own voice and fires.
+
+    Run over both directions of the quoted content and over all three quote
+    pairs the corpus and the answer model print, because the mark that was
+    typed must not decide it."""
+    o, c = marks
+    before, after = a.format(o=o, c=c), b.format(o=o, c=c)
+    assert V.detect_language(before) != V.detect_language(after)   # the premise
+    assert V._language_flip(before, after) is None
+
+
+def test_quoting_the_whole_rewrite_does_not_evade_the_language_gate(evidence):
+    """The adversarial half of the same edit. Excluding quoted spans without a
+    fallback would make "wrap the entire French rewrite in quotation marks" a
+    one-line evasion, so when a side has nothing detectable left OUTSIDE its
+    quotes the comparison is retaken over the full text."""
+    wrapped = '"' + FR_FIXED + '"'
+    assert V._unquoted(wrapped).strip() in ("", '"')
+    assert V._language_flip(EN_ANSWER, wrapped) == ("English", "French")
+    res = V.verify_answer(EN_ANSWER, evidence, client=FakeClient(wrapped),
+                          use_llm=False)
+    assert res.repair_rejected and res.answer == EN_ANSWER
+    assert "French" in " ".join(res.notes)
+
+
+def test_excluding_quotes_does_not_weaken_the_whole_answer_flip():
+    """The pair the gate exists for must still fail closed after the quote
+    edit: neither of these carries a quotation at all, so stripping them is a
+    no-op and both directions still fire."""
+    assert V._language_flip(EN_ANSWER, FR_FIXED) == ("English", "French")
+    assert V._language_flip(FR_ANSWER, EN_FIXED) == ("French", "English")
+    for t in (EN_ANSWER, FR_ANSWER, EN_FIXED, FR_FIXED):
+        assert V._unquoted(t) == t
+
+
+# ---------------------------------------------------------------------------
+# (c) the minimum-substance floor
+# ---------------------------------------------------------------------------
+
+#: The Wave-4 shape: a registry-backed abstention, 300+ characters, whose only
+#: fact-bearing claim FAILS — so `_supported_required` is 0 before repair and
+#: the anti-gutting guard's precondition is false. This is the population the
+#: repair pass is invoked on, which is why a guard conditioned on pre-repair
+#: support cannot protect it.
+ABSTENTION = (
+    "The retrieved excerpts do not record a board meeting in 2014, and the "
+    "corpus registry lists no registered proposals for that year, so there "
+    "is nothing to list for 2014. For the nearest year the registry does "
+    f"cover, it records **31 proposals** in 2020 [{DOC}, p. 99]. Nothing "
+    "else in the retrieved pages speaks to 2014 at all.")
+
+
+def test_the_anti_gutting_guards_precondition_really_is_false_here():
+    """The premise of every test below, asserted instead of assumed: if this
+    answer ever grows a supported required claim, the floor tests stop testing
+    the hole they were written for and say so."""
+    verdicts = V.classify(V.extract_claims(ABSTENTION), _abst_ev(),
+                          use_llm=False)
+    assert any(v.failed for v in verdicts)               # repair is invoked
+    assert V._supported_required(verdicts) == 0          # the guard cannot fire
+
+
+def _abst_ev():
+    return {(DOC, None): REGISTRY_LINE, (DOC, 45): "| (vi) Grants | 18,500,000 |",
+            V.NOTES_KEY: YEAR_NOTE}
+
+
+def test_the_wave4_shape_is_rejected_although_the_guard_cannot_fire():
+    """Wave 4's actual case: `abs-2014`'s 351-character registry-backed
+    abstention came back as the single word "None." and was ADOPTED, because
+    the only guard that could have caught it asks whether SUPPORTED claims
+    were lost and this answer had none to lose.
+
+    Everything that could reject this rewrite for another reason is asserted
+    inert first: it cites nothing, states nothing, and the pre-repair support
+    count is zero. What is left is the floor."""
+    ev = _abst_ev()
+    pre = V.classify(V.extract_claims(ABSTENTION), ev, use_llm=False)
+    assert V._supported_required(pre) == 0 and any(v.failed for v in pre)
+    assert V.extract_claims("None.") == []
+    res = V.verify_answer(ABSTENTION, ev, client=FakeClient("None."),
+                          use_llm=False)
+    assert res.repair_rejected and res.answer == ABSTENTION
+    assert "collapsed the answer to 1 word(s)" in " ".join(res.notes), res.notes
+
+
+@pytest.mark.parametrize("rewrite,words,adopted", [
+    ("None.", 1, False),
+    ("Not stated.", 2, False),
+    ("Nothing at all.", 3, False),
+    ("The excerpts do not.", 4, False),
+    ("The excerpts do not say.", 5, True),
+    ("Not stated in the retrieved excerpts.", 6, True),
+])
+def test_the_absolute_leg_fires_on_the_word_count_and_nothing_else(
+        evidence, rewrite, words, adopted):
+    """DIMENSION: the number of words the rewrite leaves standing.
+
+    The original is SHORT on purpose, so the proportional leg cannot be doing
+    the work and the absolute leg has to stand on its own; every row asserts
+    the two neighbouring gates inert (no claim left to fail, no supported
+    claim to lose) so the only variable between adopted and rejected is the
+    word count. The last two rows are the permissive pins — a floor that
+    rejected everything at zero pre-repair support would be repair switched
+    off, not a floor."""
+    answer = f"FP151 requests **USD 25 million** [{DOC}, cover pages]."
+    assert len(V._prose(answer)) < V.SUBSTANTIAL_ANSWER_CHARS   # leg 2 inert
+    assert len(V._prose(rewrite).split()) == words
+    assert V.extract_claims(rewrite) == []                      # nothing to fail
+    pre = V.classify(V.extract_claims(answer), evidence, use_llm=False)
+    assert V._supported_required(pre) == 0                      # guard inert
+    res = V.verify_answer(answer, evidence, client=FakeClient(rewrite),
+                          use_llm=False)
+    assert res.repaired is adopted, (res.status, res.notes)
+    if not adopted:
+        assert res.answer == answer
+        assert "collapsed the answer" in " ".join(res.notes), res.notes
+
+
+#: The discriminating pair a blind attack suite built to defeat any
+#: size-based floor. GUT is 65% of the original's characters and 31 words and
+#: must be REJECTED; FIX is 47% and one sentence and must be ADOPTED. The one
+#: that must die is LONGER than the one that must live, so `MIN_REPAIR_WORDS`
+#: and a character ratio cannot separate them at any threshold. What separates
+#: them is that GUT states nothing and FIX states a fact the evidence prints.
+C2_GUT = ("**None.** Beyond that, the retrieved excerpts do not state anything "
+          "further about the matter, and no additional value is available "
+          "from the context provided here [Note (computed from the corpus "
+          "registry)].")
+C3_FIX = f"FP151 requests **USD 18,500,000** in GCF funding [{DOC}, p. 45]."
+
+
+@pytest.mark.parametrize("rewrite,adopted", [(C2_GUT, False), (C3_FIX, True)])
+def test_padding_does_not_buy_a_gutting_past_the_floor(rewrite, adopted):
+    """DIMENSION: whether the rewrite still STATES something — held against a
+    pair whose sizes point the wrong way.
+
+    An earlier version of this floor had a second leg reading "a substantial
+    answer may not come back as a quarter of itself". `C2_GUT` walks through
+    it: 31 words of filler and a bracket around the word "None", at 65% of the
+    original's characters, while the honest correction `C3_FIX` is 47%. Any
+    threshold that rejects the first accepts the second and vice versa.
+
+    Padding is free and stating a supported fact is not, so the leg was
+    REPLACED rather than tightened: a substantial answer may not be replaced
+    by a rewrite carrying no fact-bearing claim. The only way past it is to
+    say something, and anything said is then classified — so it has to be
+    something the evidence supports or the zero-remaining-failures gate takes
+    it instead."""
+    ev = _abst_ev()
+    assert len(V._prose(C2_GUT)) > len(V._prose(C3_FIX))         # sizes invert
+    assert len(V._prose(C2_GUT).split()) > V.MIN_REPAIR_WORDS    # leg 1 inert
+    assert V._supported_required(
+        V.classify(V.extract_claims(ABSTENTION), ev, use_llm=False)) == 0
+    res = V.verify_answer(ABSTENTION, ev, client=FakeClient(rewrite),
+                          use_llm=False)
+    assert res.repaired is adopted, (res.status, res.notes)
+    if not adopted:
+        assert res.answer == ABSTENTION
+        assert "state no fact at all" in " ".join(res.notes), res.notes
+
+
+def test_the_claim_survival_leg_spares_an_answer_that_had_nothing_to_lose(evidence):
+    """The permissive side of the same leg, and the reason it is conditioned on
+    the ORIGINAL's size rather than on the pre-repair verdicts: deleting the
+    last claim of a one-line answer whose only claim failed is a VALID repair,
+    and an honest refusal is the right output there. `_supported_required` is
+    0 in both cases, so it cannot be what tells them apart — the size of the
+    text being REPLACED is."""
+    short = f"FP151 requests **USD 25 million** [{DOC}, p. 99]."
+    assert len(V._prose(short)) < V.SUBSTANTIAL_ANSWER_CHARS
+    refusal = "The retrieved excerpts do not state FP151's GCF funding."
+    assert V.extract_claims(refusal) == []
+    assert V._substance_floor(short, refusal) is None
+    assert V._substance_floor(ABSTENTION, refusal)               # the same words,
+    res = V.verify_answer(short, evidence, client=FakeClient(refusal),
+                          use_llm=False)                         # replacing more
+    assert res.repaired and res.answer == refusal, res.notes
+
+
+def test_the_floor_is_computed_from_the_two_texts_and_nothing_else():
+    """`_substance_floor` takes no verdicts, by signature. The whole finding
+    is that a gate reading the pre-repair verdicts cannot protect an answer
+    whose pre-repair verdicts are all failures."""
+    import inspect
+    assert list(inspect.signature(V._substance_floor).parameters) == \
+        ["original", "repaired"]
+    assert V._substance_floor("a" * 400, "None.")
+    assert V._substance_floor("short one", "None.")
+    assert V._substance_floor("a" * 400, C3_FIX) is None
+
+
+def test_a_citation_is_not_substance(evidence):
+    """A rewrite cannot buy its way over the floor with brackets: citations are
+    stripped before the words are counted, so `[124_gcf-b27-02-add11, p. 45]`
+    is worth nothing."""
+    answer = f"FP151 requests **USD 25 million** [{DOC}, cover pages]."
+    res = V.verify_answer(answer, evidence, use_llm=False, client=FakeClient(
+        f"None. [{DOC}, p. 45] [{DOC}, cover pages] [{DOC}, p. 45]"))
+    assert res.repair_rejected and "collapsed the answer" in " ".join(res.notes)
+
+
+# ---------------------------------------------------------------------------
+# (d) carry-off: the post-repair recheck classifies the repaired text from
+#     scratch, and no pre-repair judge ruling is carried onto it
+# ---------------------------------------------------------------------------
+
+def test_a_repair_certified_by_a_carried_judge_ruling_is_rejected(evidence):
+    """The self-certification the plan's standing rule 1 forbids, in the shape
+    `audit_repair.py` measured on release-2 (`agg-2021-boards`,
+    `abs-antarctica`): the judge clears a claim the deterministic matcher
+    fails, the repair fixes its task list and leaves that sentence alone, and
+    `_carry_cleared` then re-clears it AFTER the rewrite. The 817abdb gate
+    reads 'no claim left failing at all'; with the carry in place it read 'none
+    except one the judge cleared before the rewrite existed'.
+
+    The rewrite here is otherwise a correct repair, and it is rejected — that
+    is the price, and it is a false negative: the original ships with its
+    cautions."""
+    answer = ("The accredited entity is **Pegasus Capital Advisors LP**.\n\n"
+              f"FP151 requests **USD 25 million** in GCF funding [{DOC}, cover pages].")
+    fixed = ("The accredited entity is **Pegasus Capital Advisors LP**.\n\n"
+             f"FP151 requests **USD 18.5 million** in GCF funding [{DOC}, cover pages].")
+    client = FakeClient(
+        json.dumps({"verdicts": [{"id": 0, "status": "supported",
+                                  "reason": "the cited page names it"}]}),
+        fixed)
+    res = V.verify_answer(answer, evidence, client=client)
+    assert res.repair_rejected and res.answer == answer
+    assert res.status == "partial"
+    assert "still fail verification" in " ".join(res.notes)
+
+
+def test_a_repair_that_stands_on_its_own_is_still_adopted(evidence):
+    """The permissive side. Carry-off is not 'reject repairs when the judge
+    spoke': the judge cleared a claim here too, and the rewrite is adopted
+    because the repaired text passes the deterministic recheck by itself."""
+    answer = ("The total GCF funding requested is USD 150 million.\n\n"
+              f"FP151 requests **USD 25 million** in GCF funding [{DOC}, cover pages].")
+    fixed = f"FP151 requests **USD 18.5 million** in GCF funding [{DOC}, cover pages]."
+    client = FakeClient(
+        json.dumps({"verdicts": [{"id": 0, "status": "supported",
+                                  "reason": "page 5 states it"}]}),
+        fixed)
+    res = V.verify_answer(answer, evidence, client=client)
+    assert res.repaired and res.answer == fixed, res.notes
+    assert not res.failures
+
+
+def test_the_shipped_path_does_not_consult_the_carry_at_all(evidence, monkeypatch):
+    """Stronger than 'the outcome changed': the production path must not even
+    reach `_carry_cleared`. Poisoning it is a no-op, and a future edit that
+    re-introduces the carry turns this red immediately."""
+    def _poison(*a, **k):
+        raise AssertionError("the shipped repair path consulted _carry_cleared")
+    monkeypatch.setattr(V, "_carry_cleared", _poison)
+    answer = f"FP151 requests **USD 25 million** in GCF funding [{DOC}, cover pages]."
+    fixed = f"FP151 requests **USD 18.5 million** in GCF funding [{DOC}, cover pages]."
+    res = V.verify_answer(answer, evidence, client=FakeClient(fixed), use_llm=False)
+    assert res.repaired and res.answer == fixed
+
+
+def test_carry_cleared_is_kept_as_the_auditors_carry_on_arm(evidence):
+    """`scripts/audit_repair.py` patches this binding to score carry-on against
+    carry-off. It must keep existing and keep working, even though nothing in
+    `verify.py` calls it any more."""
+    claim = V.extract_claims(f"FP151 requests **USD 25 million** [{DOC}, p. 99].")
+    old = [V.Verdict(claim[0], V.SUPPORTED, "judge cleared it", [], source="llm")]
+    new = [V.Verdict(claim[0], V.UNSUPPORTED, "not found", [])]
+    (carried,) = V._carry_cleared(new, old)
+    assert carried.status == V.SUPPORTED and carried.source == "llm"
+    assert V._carry_cleared(new, []) == new
+
+
+# ---------------------------------------------------------------------------
+# reproducibility BELOW the model layer: the deterministic classifier must not
+# depend on the process's string hash seed
+# ---------------------------------------------------------------------------
+
+_HASHSEED_PROBE = '''
+import json, sys
+sys.path.insert(0, sys.argv[1])
+from gcf_qna.rag import verify as V
+from gcf_qna.rag import registry as R
+R.load = lambda: {}
+R.facts = lambda d: {}
+A, B = "124_gcf-b27-02-add11", "124_gcf-b27-02-add12"
+ev = {(A, 5): "Total GCF funding requested: USD 18.5 million",
+      (B, 5): "Total GCF funding requested: USD 150 million"}
+ans = "FP151 requests **USD 18.5 million** in GCF funding [124_gcf-b27-02-add1, p. 5]."
+(v,) = V.classify_deterministic(V.extract_claims(ans), ev)
+print(json.dumps({"status": v.status, "scope": [list(k) for k in v.scope]}))
+'''
+
+
+def test_the_deterministic_layer_is_the_same_under_every_hash_seed():
+    """DIMENSION: PYTHONHASHSEED — the only thing that varies between these
+    eight processes.
+
+    Wave 4 attributed the 18-27% adoption flip to unpinned sampling. Part of
+    it was never in the model at all: both callers of `_resolve_doc` build
+    their candidate pool as a SET comprehension over the evidence keys, a
+    truncated document id is routinely a prefix of two held documents
+    (`...add11` / `...add12`, everywhere in this corpus), and "the first
+    prefix match" out of a set is whatever the hash seed makes it. Measured on
+    HEAD with the LLM removed entirely and byte-identical inputs:
+
+        seeds 0,1,2 -> supported     seeds 3..7 -> contradicted
+
+    Same answer, same evidence, opposite adoption decision. Pinning the model
+    calls does not touch this, and a canary sampling it would be sampling the
+    interpreter."""
+    import os
+    import subprocess
+    import sys
+    src = str(pathlib.Path(__file__).resolve().parents[1] / "src")
+    seen = {}
+    for seed in [str(i) for i in range(8)]:
+        env = dict(os.environ, PYTHONHASHSEED=seed, PRELOAD="0")
+        r = subprocess.run([sys.executable, "-c", _HASHSEED_PROBE, src],
+                           capture_output=True, text=True, env=env, timeout=120)
+        assert r.returncode == 0, (seed, r.stderr[-800:])
+        seen.setdefault(r.stdout.strip(), []).append(seed)
+    assert len(seen) == 1, seen
+
+
+@pytest.mark.parametrize("container", ["list", "reversed", "set", "frozenset",
+                                       "tuple", "generator"])
+def test_resolve_doc_depends_on_the_contents_and_not_the_container(container):
+    """The property, not an example: the same candidates in any order — and in
+    any container, since both call sites pass a set comprehension — give the
+    same resolution. Written over the container dimension because that is what
+    the defect turns on; a test that varied the document ids instead would
+    have passed on every revision of this file."""
+    docs = [DOC2, DOC, "199_gcf-b40-02-add09"]
+    made = {"list": docs, "reversed": list(reversed(docs)), "set": set(docs),
+            "frozenset": frozenset(docs), "tuple": tuple(docs),
+            "generator": (d for d in reversed(docs))}[container]
+    assert V._resolve_doc("124_gcf-b27-02-add1", made) == DOC
+    assert V._resolve_doc(DOC2, list(docs)) == DOC2        # exact still wins
+
+
+# ---------------------------------------------------------------------------
+# an unpinned call is disclosed in the turn's own record, not only in a log
+# ---------------------------------------------------------------------------
+
+@pytest.mark.parametrize("refused", ["seed", "temperature"])
+def test_a_rewrite_that_could_not_be_pinned_says_so_in_its_notes(evidence,
+                                                                 refused):
+    """Silence is the bug. A rewrite the endpoint would not let us pin is a
+    different object from one it did: it cannot be re-derived, so an operator
+    reviewing it and a canary measuring it are both looking at a sample. The
+    note travels with the turn on BOTH the adopted and the rejected path."""
+    answer = f"FP151 requests **USD 25 million** in GCF funding [{DOC}, cover pages]."
+    fixed = f"FP151 requests **USD 18.5 million** in GCF funding [{DOC}, cover pages]."
+    verdicts = V.classify(V.extract_claims(answer), evidence, use_llm=False)
+
+    ok = V.repair(answer, verdicts, evidence,
+                  client=RejectingClient(fixed, refuses=(refused,)))
+    assert ok.repaired
+    assert any("NOT reproducible" in n and refused in n for n in ok.notes), ok.notes
+
+    V._reset_sampling_support()
+    bad = V.repair(answer, verdicts, evidence, client=RejectingClient(
+        f"FP151 requests **USD 61 million** [{DOC}, cover pages].",
+        refuses=(refused,)))
+    assert bad.repair_rejected
+    assert any("NOT reproducible" in n and refused in n for n in bad.notes), bad.notes
+
+
+def test_a_pinned_rewrite_carries_no_such_warning(evidence):
+    """The permissive side: the note must mean something. An endpoint that
+    accepts both pins produces a record with no reproducibility caveat in it —
+    otherwise the warning is decoration and a reader learns to skip it."""
+    answer = f"FP151 requests **USD 25 million** in GCF funding [{DOC}, cover pages]."
+    fixed = f"FP151 requests **USD 18.5 million** in GCF funding [{DOC}, cover pages]."
+    res = V.repair(answer, V.classify(V.extract_claims(answer), evidence,
+                                      use_llm=False), evidence,
+                   client=FakeClient(fixed))
+    assert res.repaired
+    assert not any("reproducible" in n for n in res.notes), res.notes
+
+
+# ---------------------------------------------------------------------------
+# a KNOWN-OPEN hole, recorded here as an executable statement rather than a
+# comment. It is not closed by this wave and this test is expected to fail.
+# ---------------------------------------------------------------------------
+
+@pytest.mark.xfail(reason="OPEN: wave0b N2 / wave0c findings 2 and 7. The "
+                          "`citation-page-mismatch` promotion runs no conflict "
+                          "test, so a page-only re-point of a wrong figure is "
+                          "adopted. Closing it means re-scoping "
+                          "`_scoped_field_conflict`, which "
+                          "docs/wave0c-review-verdict.md requires be done as "
+                          "one deliberate design pass — three reviewers asked "
+                          "for three incompatible edits to that call site — "
+                          "and not as a patch inside a wave that owns three "
+                          "other gates.")
+def test_a_page_only_repoint_of_a_wrong_figure_should_not_be_a_repair(no_registry):
+    """FP151's cover line prints 18.5 M USD as the GCF financing and 28 M USD
+    as the TOTAL. An answer that says the GCF figure is 28 million, cited to
+    the cover pages, is correctly CONTRADICTED. Moving the SAME wrong figure's
+    bracket to p. 45 — a page that prints 18,500,000 and never prints 28
+    million — makes it SUPPORTED with a `citation-page-mismatch` caution, and
+    the repair pass adopts it as `repaired`: zero factual change, a strictly
+    worse citation, and a warning replaced by a green status.
+
+    Reproduced on this fixture at 52152af and unchanged by this wave's gates —
+    none of them look at what the rewrite did to a claim's SCOPE."""
+    ev = {(DOC, None): ('Registry — FP151: GCF financing (as printed): 18.5 M '
+                        'USD; total financing (as printed): 28 M USD'),
+          (DOC, 45): ("### (a) Requested GCF funding (Total amount)\n"
+                      "| (vi) Grants | 18,500,000 | 7 | |")}
+    wrong = f"FP151 requests **USD 28 million** in GCF funding [{DOC}, cover pages]."
+    moved = f"FP151 requests **USD 28 million** in GCF funding [{DOC}, p. 45]."
+    assert V.classify_deterministic(V.extract_claims(wrong), ev)[0].status == \
+        V.CONTRADICTED                                     # the premise
+    res = V.verify_answer(wrong, ev, client=FakeClient(moved), use_llm=False)
+    assert res.repair_rejected, (res.status, res.answer, res.notes)

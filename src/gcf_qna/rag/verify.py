@@ -1196,8 +1196,35 @@ def build_evidence(hits: Sequence[Any] = (), notes: Any = None) -> Evidence:
 
 
 def _resolve_doc(cited: str, docs: Iterable[str]) -> Optional[str]:
-    """Forgiving document match — the answer may print a truncated id."""
-    docs = list(docs)
+    """Forgiving document match — the answer may print a truncated id.
+
+    SORTED, and that is the whole point. Both callers build their candidate
+    pool as a set comprehension over the evidence keys
+    (``{k[0] for k in evidence ...}``), and a truncated id is routinely a
+    prefix of more than one held document — ``...add11`` and ``...add12`` sit
+    side by side all over this corpus. Picking "the first prefix match" out of
+    a set made the resolution depend on the process's string hash seed, so the
+    DETERMINISTIC layer returned different verdicts in different processes
+    from byte-identical inputs:
+
+        PYTHONHASHSEED 0,1,2  ->  supported     (resolved to ...add11)
+        PYTHONHASHSEED 3..7   ->  contradicted  (resolved to ...add12)
+
+    — same answer, same evidence, opposite adoption decision, with the LLM
+    layer removed entirely. Pinning temperature and seed on the model calls
+    does not touch this; a canary sampling this would be sampling the hash
+    seed. Sorting is done HERE rather than at the two call sites so that a
+    future caller cannot reintroduce it by passing another set.
+
+    The tie-break is now the contents of ``docs`` and nothing else. It is
+    still a tie-break, not a resolution: an id that truly names two documents
+    is ambiguous, and choosing the lexicographically first is a stable answer
+    to an ambiguous question, not a right one. Whether such a citation should
+    resolve at all is a scoping question for the `_scoped_field_conflict`
+    design pass `docs/wave0c-review-verdict.md` asks for; making it
+    reproducible is a prerequisite for measuring it either way.
+    """
+    docs = sorted(set(docs))
     if cited in docs:
         return cited
     return next((d for d in docs
@@ -2049,19 +2076,160 @@ def _client() -> Optional[Any]:
         return None
 
 
-def _complete(client: Any, system: str, user: str, max_tokens: int) -> Optional[str]:
-    try:
-        resp = client.chat.completions.create(
-            model=config.CHAT_MODEL,
-            max_completion_tokens=max_tokens,
-            messages=[{"role": "system", "content": system},
-                      {"role": "user", "content": user}],
-        )
-        return (resp.choices[0].message.content or "").strip()
-    except Exception as e:              # a failed audit must not fail the answer
-        print(f"verify: LLM call failed, keeping deterministic verdicts: {e}",
-              flush=True)
+#: The sampling this module pins on EVERY call it makes — the batched judge
+#: and the constrained repair rewrite.
+#:
+#: Wave 4 measured what an unpinned rewrite costs. From identical answers and
+#: an identical verdict object, repair's adoption decision flipped on 18-27%
+#: of cases and two full replays disagreed on whether the pass corrected 5
+#: claims or deleted 7. Both numbers are properties of the sampler, not of the
+#: repair prompt: ``_complete`` sent neither temperature nor seed, so every
+#: rewrite of user-visible text was a fresh draw. An operator cannot audit a
+#: rewrite that the same inputs do not reproduce, and a canary cannot measure
+#: a treatment that is not a fixed quantity.
+#:
+#: These are CONSTANTS, deliberately not environment-overridable: a seed the
+#: deployment can change is not a pin, and `config.py` already carries the
+#: switches an operator is meant to turn.
+#:
+#: The ANSWER-GENERATION call is not made here and is not touched: this module
+#: only ever calls the judge and the repair pass.
+#:
+#: WHAT THE PIN DOES AND DOES NOT BUY — MEASURED, NOT ASSUMED. Against the
+#: configured endpoint (api.openai.com, `CHAT_MODEL=gpt-5.2`) both parameters
+#: are ACCEPTED, and pinning them still does not make the completion
+#: reproducible. Eight repair calls on one recorded turn (`id-fp269-gcf`,
+#: identical answer, identical verdicts, deterministic verdicts only so the
+#: judge sample is out of the experiment):
+#:
+#:     unpinned (HEAD)                 2 distinct completions / 8
+#:     temperature=0 + seed pinned     2 distinct completions / 8
+#:
+#: and the responses carry NO `system_fingerprint` at all, which is OpenAI's
+#: own signal for "this backend can be reasoned about deterministically". So
+#: `seed` here is best-effort and is not honoured to the byte. The pin is kept
+#: because it is free, because it removes the two degrees of freedom that ARE
+#: under our control, and because an endpoint that honours seed then reproduces
+#: exactly — but nothing in this module may be read as a claim that a repaired
+#: answer can be re-derived on this deployment. Auditing a rewrite here means
+#: RECORDING it (`audit_repair.py` hashes the repair text), not re-running it.
+SAMPLING_TEMPERATURE = 0
+SAMPLING_SEED = 20260821
+
+#: Dropped one at a time, most-optional FIRST. ``seed`` is the newer of the
+#: two and the one OpenAI-compatible servers most often refuse; ``temperature``
+#: is the pin that matters more, so it is the last thing given up.
+_PINNED_SAMPLING: Tuple[str, ...] = ("seed", "temperature")
+
+#: Parameters THIS endpoint has refused, remembered for the process so a
+#: server that does not support one is not paid for a rejected first attempt
+#: on every subsequent turn. Only a failure that NAMES the parameter lands
+#: here, so a 502 or a rate limit can never silently unpin the module.
+_SAMPLING_UNSUPPORTED: set = set()
+
+
+def _reset_sampling_support() -> None:
+    """Forget which parameters the endpoint refused (tests; process restart)."""
+    _SAMPLING_UNSUPPORTED.clear()
+
+
+def _unpinned_note() -> List[str]:
+    """A note naming the pins this endpoint refused, or nothing.
+
+    Silence is the bug. A repair whose sampling could not be pinned is a
+    DIFFERENT object from one that could: it is not reproducible, so an
+    operator reviewing the rewrite cannot re-derive it and a canary measuring
+    it is measuring a distribution. That belongs in the turn's own record,
+    not only in a log line the reviewer never sees.
+    """
+    if not _SAMPLING_UNSUPPORTED:
+        return []
+    return [f"this rewrite is NOT reproducible: the endpoint rejected "
+            f"{', '.join(sorted(_SAMPLING_UNSUPPORTED))}, so the repair call "
+            f"was an unpinned sample"]
+
+
+def _sampling_kwargs() -> Dict[str, Any]:
+    """The pinned sampling parameters still believed to be accepted."""
+    out: Dict[str, Any] = {}
+    if "temperature" not in _SAMPLING_UNSUPPORTED:
+        out["temperature"] = SAMPLING_TEMPERATURE
+    if "seed" not in _SAMPLING_UNSUPPORTED:
+        out["seed"] = SAMPLING_SEED
+    return out
+
+
+def _blames_sampling_param(exc: BaseException, sent: Dict[str, Any]
+                           ) -> Optional[str]:
+    """Which pinned parameter this failure blames — or None for every other
+    failure.
+
+    The degradation this exists for is narrow and must stay narrow: an
+    endpoint that rejects ``seed`` outright must not cost the turn, and an
+    endpoint that is merely down must not cost the PIN. So a retry is only
+    taken when the error names one of the parameters we actually sent:
+
+      * the OpenAI SDK reports it structurally (``BadRequestError.param``),
+        measured on this deployment as ``param='seed'`` / ``code='invalid_type'``;
+      * other OpenAI-compatible servers only put it in the message text, so a
+        4xx whose text names the parameter counts too;
+      * a client whose ``create()`` does not accept the keyword at all raises
+        ``TypeError`` before any request is made.
+
+    A 500, a timeout, a rate limit or a 400 about ``messages`` returns None and
+    takes the existing keep-the-deterministic-verdicts path.
+    """
+    if not sent:
         return None
+    named = getattr(exc, "param", None)
+    if isinstance(named, str) and named.split(".")[-1] in sent:
+        return named.split(".")[-1]
+    text = str(exc)
+    status = getattr(exc, "status_code", None)
+    client_side = isinstance(exc, TypeError)
+    if not (client_side or status in (400, 422)
+            or re.search(r"\b(?:400|422)\b", text)):
+        return None
+    for p in _PINNED_SAMPLING:
+        if p in sent and re.search(rf"\b{p}\b", text, re.I):
+            return p
+    if client_side:                     # named nothing; give up the most optional
+        return next((p for p in _PINNED_SAMPLING if p in sent), None)
+    return None
+
+
+def _complete(client: Any, system: str, user: str, max_tokens: int) -> Optional[str]:
+    """One pinned chat completion, or None.
+
+    Pinned means ``temperature`` and ``seed`` travel with the request (see
+    ``SAMPLING_TEMPERATURE``). An endpoint that refuses one of them gets ONE
+    retry per refused parameter and keeps the other, so the turn degrades to a
+    less reproducible sample instead of failing — and says so, once, in the
+    log, because a rewrite that is no longer pinned is a different object from
+    one that is.
+    """
+    messages = [{"role": "system", "content": system},
+                {"role": "user", "content": user}]
+    for _ in range(len(_PINNED_SAMPLING) + 1):
+        pinned = _sampling_kwargs()
+        try:
+            resp = client.chat.completions.create(
+                model=config.CHAT_MODEL,
+                max_completion_tokens=max_tokens,
+                messages=messages,
+                **pinned,
+            )
+            return (resp.choices[0].message.content or "").strip()
+        except Exception as e:          # a failed audit must not fail the answer
+            dropped = _blames_sampling_param(e, pinned)
+            if dropped is None:
+                print(f"verify: LLM call failed, keeping deterministic "
+                      f"verdicts: {e}", flush=True)
+                return None
+            _SAMPLING_UNSUPPORTED.add(dropped)
+            print(f"verify: endpoint rejected {dropped!r}; retrying without it "
+                  f"— this call is no longer fully pinned: {e}", flush=True)
+    return None
 
 
 def _json_object(raw: str) -> Optional[dict]:
@@ -2314,14 +2482,223 @@ def _supported_required(verdicts: Sequence[Verdict]) -> int:
                if v.status == SUPPORTED and v.claim.required)
 
 
+# ---------------------------------------------------------------------------
+# repair adoption gates that do not depend on the pre-repair verdicts
+#
+# The two gates below are stated in ABSOLUTE terms on purpose. The anti-gutting
+# guard reads `_supported_required(verdicts) > 0` — true of a mostly-correct
+# answer and FALSE of exactly the population repair is invoked on. Wave 4 rode
+# through that hole: `abs-2014`'s 351-character registry-backed abstention was
+# rewritten to the single word "None." and adopted, because an answer with no
+# supported claim to lose cannot trip a guard about losing supported claims.
+# A gate conditioned on pre-repair support cannot protect an answer that has
+# none, so neither of these reads the pre-repair verdicts at all.
+# ---------------------------------------------------------------------------
+
+#: Local copy of `gcf_qna.app.chainlit_app._detect_lang`'s tables and rule.
+#: NOT an import: `chainlit_app` imports `gcf_qna.rag.verify` at module scope
+#: (`from gcf_qna.rag import planner, verify`), so importing it back here is a
+#: cycle, and it would additionally drag `chainlit`, `faiss` and the index
+#: loader into a module whose deterministic layer must stay importable with
+#: nothing installed. The heuristic is reproduced verbatim instead, and
+#: `test_verify.py` pins the two implementations to agree so the copy cannot
+#: drift silently.
+_FR_WORDS = {"le", "la", "les", "des", "une", "un", "est", "et", "que", "qui",
+             "quel", "quelle", "quels", "quelles", "pour", "dans", "avec", "sur",
+             "comment", "pourquoi", "combien", "cette", "ce", "aux", "du", "de",
+             "peux", "fais", "fait", "donne", "moi", "tableau", "merci", "bonjour"}
+_EN_WORDS = {"the", "is", "are", "what", "which", "how", "of", "for", "in",
+             "does", "do", "and", "that", "this", "with", "on", "to", "from",
+             "give", "me", "show", "compare", "summary", "thanks", "hello"}
+
+
+def detect_language(text: str) -> Optional[str]:
+    """'French', 'English', or None when the text does not say.
+
+    Same heuristic, same tables and the same tie rule as the app's
+    `_detect_lang`, so the verifier and the eval harness cannot disagree about
+    what language an answer is in.
+    """
+    low = (text or "").lower()
+    if re.search(r"\ben fran[cç]ais\b|\bin french\b", low):
+        return "French"
+    if re.search(r"\ben anglais\b|\bin english\b", low):
+        return "English"
+    toks = re.findall(r"[a-zàâçéèêëîïôùûüÿœ']+", low)
+    fr = sum(t in _FR_WORDS for t in toks)
+    en = sum(t in _EN_WORDS for t in toks)
+    if re.search(r"[àâçéèêëîïôùûüÿœ]", low):
+        fr += 2
+    if fr > en:
+        return "French"
+    if en > fr:
+        return "English"
+    return None
+
+
+#: Quotation spans, in the three pairs the corpus and the answer model print.
+#: Deliberately NOT `_QUOTE_RE`: that one exists to CAPTURE a quoted entity
+#: name and is capped at 120 characters for it, and a cap is exactly what an
+#: evasion would step over here.
+_QUOTED_SPAN_RE = re.compile(r"[\u201c][^\u201d\n]*[\u201d]|"
+                             r"[\u00ab][^\u00bb\n]*[\u00bb]|"
+                             r'"[^"\n]*"')
+
+
+def _unquoted(text: str) -> str:
+    """The text with quoted spans removed — the answer's own words."""
+    return _QUOTED_SPAN_RE.sub(" ", text or "")
+
+
+def _language_flip(before: str, after: str) -> Optional[Tuple[str, str]]:
+    """(from, to) when a rewrite changed the answer's language, else None.
+
+    Rule 5 of `REPAIR_PROMPT` says the answer keeps its language. Nothing
+    enforced it, and Wave 4 measured the result: an ENGLISH answer was
+    rewritten into FRENCH in 2 of 3 samples and ADOPTED both times — every
+    claim verified, every citation resolved, and the user got an answer in a
+    language they did not ask a question in.
+
+    The gate is SYMMETRIC by construction: it compares two detections and
+    fires on any difference, so French -> English costs exactly what
+    English -> French costs. There is no list of "the bad direction" to get
+    one-sided.
+
+    An undetectable side is NOT a flip. `detect_language` returns None on a
+    tie or on text with no function words in either table, and "unknown" is
+    not evidence that the language changed; the substance floor below is what
+    covers a rewrite too small to have a detectable language.
+
+    QUOTED SPANS ARE EXCLUDED from the comparison. The rule being enforced is
+    about the language the ANSWER is written in, and a quotation is the
+    corpus's words, not the answer's: a French answer quoting an English
+    document title has not changed language, and a repair that corrects a
+    misquotation is changing what is inside the quotes on purpose. A
+    whole-text detector reads a long quotation as the answer's own prose and
+    fires on it — over-rejection, which is the safe direction but is a
+    misfire, and a gate that misfires on quoted source text gets argued away.
+
+    With the FALLBACK, which is the half that keeps it a gate: if either side
+    has nothing detectable left outside its quotes, the comparison is retaken
+    over the full text. Otherwise "quote the entire rewritten answer" would
+    be a one-line evasion.
+    """
+    a, b = detect_language(_unquoted(before)), detect_language(_unquoted(after))
+    if a is None or b is None:
+        a, b = detect_language(before), detect_language(after)
+    return (a, b) if a and b and a != b else None
+
+
+#: Words of prose — outside citations — below which a rewrite is not an answer
+#: and not a refusal either, whatever the pre-repair verdicts said. "None." is
+#: one word; "The retrieved excerpts do not state FP151's GCF funding." is
+#: nine, and deleting an unsupportable claim down to that IS a valid repair
+#: (`test_repair_may_delete_the_claim_entirely`). The floor sits between them
+#: and is deliberately low: over-rejection keeps the ORIGINAL answer with its
+#: cautions, which is this module's stated safe failure.
+MIN_REPAIR_WORDS = 5
+
+#: An answer this long counts as substantial: enough was said that replacing
+#: it with something that says nothing is a deletion, not a repair.
+SUBSTANTIAL_ANSWER_CHARS = 200
+
+
+def _prose(text: str) -> str:
+    """The answer's words with citations, markdown and punctuation removed.
+
+    Citations are stripped FIRST: `[124_gcf-b27-02-add11, p. 45]` is four
+    "words" of pure typography, and a floor a rewrite can clear by keeping a
+    bracket is not a floor.
+    """
+    return norm_text(_strip_citations(text or ""))
+
+
+def _substance_floor(original: str, repaired: str) -> Optional[str]:
+    """Why this rewrite collapsed the answer, or None.
+
+    THE AXIS IS CLAIM SURVIVAL, NOT SIZE. An earlier version of this floor
+    had a second leg reading "a substantial answer may not come back as a
+    quarter of itself", and a blind attack suite written from the spec broke
+    it with one line of padding: a gutting that says nothing but says it at
+    length is 65% of the original's characters, while an honest correction
+    down to a single sentence is 47% — the one that must die is LONGER than
+    the one that must live, so no rule keyed on the rewrite's size can
+    separate them. Padding is free; stating a fact the evidence supports is
+    not. So the leg was replaced, not tightened.
+
+    Two legs, neither reading a verdict:
+
+      * a rewrite shorter than a sentence has deleted the answer rather than
+        repaired it. This one IS a size rule, and it is safe as one because
+        it sits below the level any of the shapes above live at: it separates
+        "None." from prose, not prose from prose.
+
+      * a SUBSTANTIAL answer may not be replaced by a rewrite that carries no
+        fact-bearing claim at all. Padding cannot clear this leg, because the
+        only way past it is to state something — and anything stated is then
+        classified, so it must be something the evidence actually supports or
+        the zero-remaining-failures gate takes it instead.
+
+    Why the second leg is conditioned on the ORIGINAL's size and not on the
+    pre-repair verdicts: deleting the last claim of a one-line answer whose
+    only claim failed is a VALID repair (`test_repair_may_delete_the_claim_
+    entirely`), and an honest refusal is the right output there. What is not
+    valid is doing it to an answer that had something to lose. That condition
+    is a property of the text being replaced, so it is still true when
+    `_supported_required` is 0 — which is the population this pass runs on and
+    the whole reason the anti-gutting guard could not protect `abs-2014`.
+
+    WHAT THIS FLOOR NO LONGER CLAIMS. A substantial answer cut to a fraction
+    of itself while keeping one supported claim is not caught here any more.
+    That shape is a LOST-SUPPORTED-CLAIM problem, it is Wave 4's own separate
+    finding, and a character ratio was a proxy for it that (a) never fired on
+    any of the 19 recorded rewrites and (b) is now known to be the wrong axis.
+    It belongs to that gate, not to this one.
+    """
+    new, old = _prose(repaired), _prose(original)
+    words = len(new.split())
+    if words < MIN_REPAIR_WORDS:
+        return (f"it collapsed the answer to {words} word(s) of text "
+                f"(floor {MIN_REPAIR_WORDS})")
+    if len(old) >= SUBSTANTIAL_ANSWER_CHARS and not extract_claims(repaired):
+        return (f"it replaced a {len(old)}-character answer with "
+                f"{len(new)} characters that state no fact at all")
+    return None
+
+
 def _carry_cleared(new_verdicts: List[Verdict],
                    old_verdicts: Sequence[Verdict]) -> List[Verdict]:
-    """Keep judge rulings across the post-repair recheck.
+    """Keep judge rulings across the post-repair recheck — the CARRY-ON rule,
+    no longer on the shipped adoption path.
 
-    The recheck is deterministic-only, so a claim the judge cleared as a
-    paraphrase would come back unsupported and make a good repair look like a
-    failed one. Sentences the repair left untouched are matched by normalized
-    text and keep their verdict.
+    What it was for: the recheck is deterministic-only, so a claim the judge
+    cleared as a paraphrase comes back unsupported and makes a good repair
+    look like a failed one. Sentences the repair left untouched are matched by
+    normalized text and keep their verdict.
+
+    Why `repair()` stopped using it (Wave 4, carry-off decision). It answers
+    part of the question the adoption gate is asking. The 817abdb gate reads
+    "no claim left failing at all"; with the carry in place it reads "no claim
+    left failing EXCEPT one the judge cleared before the rewrite existed" —
+    an opinion formed on the pre-rewrite text, certifying the rewrite. That is
+    the self-certification the plan's standing rule 1 forbids, and it is not
+    hypothetical: on `release-2` the two scorings disagreed on
+    `agg-2021-boards` (carried past "no citation on a factual claim", which
+    the judge is not competent to overrule at all) and on `abs-antarctica`
+    (carried past "not found in the cited evidence: Antarctica"), both times
+    with carry-on ADOPTING what the honest recheck rejected — never the other
+    way round. A tolerance over a one-directional bias is a licence for the
+    failures it is meant to bound.
+
+    The cost of turning it off is a repair rejected when the model fixed its
+    task list but left a judge-cleared sentence standing. That is a false
+    NEGATIVE: the original answer ships with its cautions, which is this
+    module's stated preference ("an honest 'partial' beats a confident
+    rewrite") and the safe direction every review of this file has asked for.
+
+    Kept as a function because `scripts/audit_repair.py` patches this binding
+    to score the carry-on arm against the carry-off one; it is dead code on
+    the production path and `test_verify.py` pins that it is.
     """
     cleared = {norm_text(v.claim.text): v for v in old_verdicts
                if v.source == "llm" and v.status == SUPPORTED}
@@ -2354,10 +2731,20 @@ def repair(answer: str, verdicts: Sequence[Verdict], evidence: Evidence,
       * fewer failing claims than before, and none left failing at all —
         swapping one wrong figure for a different wrong figure is not a
         repair, and it is what an unguarded pass actually produced;
+      * the same language it was written in — rule 5 of the prompt, enforced
+        symmetrically in python (`_language_flip`);
+      * at least a sentence of text, and not a quarter of a substantial
+        answer (`_substance_floor`). This floor does NOT consult the
+        pre-repair verdicts, because the guard below cannot fire for an
+        answer that had no supported claim to lose — which is exactly the
+        population this pass is invoked on;
       * at least as much substance: if the answer had supported fact-bearing
         claims, the repaired one must still have one. A rewrite that deletes
         every supported claim replaces a mostly-correct answer with a
         refusal, which is a regression the user cannot see.
+
+    The recheck is CARRY-OFF: the repaired text is classified from scratch and
+    no pre-repair judge ruling is carried onto it (`_carry_cleared`).
 
     Anything else keeps the ORIGINAL answer and flags it — an honest 'partial'
     beats a confident rewrite.
@@ -2396,19 +2783,33 @@ def repair(answer: str, verdicts: Sequence[Verdict], evidence: Evidence,
                             answer, notes=["repair call failed; answer left as written"])
     raw = _strip_preamble(raw)
 
+    unpinned = _unpinned_note()
+
     def _keep(note: str) -> RepairResult:
         return RepairResult(answer, _status_for(verdicts, True, False), verdicts,
-                            answer, repair_rejected=True, notes=[note])
+                            answer, repair_rejected=True,
+                            notes=[note] + unpinned)
 
     introduced = _introduced_sources(raw, evidence, allowed)
     if introduced:
         return _keep("repair rejected: it introduced sources not in the evidence — "
                      + "; ".join(introduced[:4]))
 
-    new_verdicts = _carry_cleared(
-        classify_deterministic(extract_claims(raw), evidence,
-                               cross_page_conflicts, registry_conflicts),
-        verdicts)
+    flip = _language_flip(answer, raw)
+    if flip:
+        return _keep(f"repair rejected: it rewrote the answer from {flip[0]} "
+                     f"into {flip[1]} — rule 5 of the repair prompt says the "
+                     f"answer keeps its language")
+
+    collapsed = _substance_floor(answer, raw)
+    if collapsed:
+        return _keep(f"repair rejected: {collapsed}")
+
+    # CARRY-OFF. The recheck classifies the REPAIRED text from scratch and
+    # nothing is carried across the rewrite; see `_carry_cleared`.
+    new_verdicts = classify_deterministic(extract_claims(raw), evidence,
+                                          cross_page_conflicts,
+                                          registry_conflicts)
     new_failed = [v for v in new_verdicts if v.failed]
     if new_failed:
         return _keep(
@@ -2420,7 +2821,7 @@ def repair(answer: str, verdicts: Sequence[Verdict], evidence: Evidence,
 
     return RepairResult(raw, _status_for(new_verdicts, True, True), new_verdicts,
                         answer, repaired=True,
-                        notes=[f"repaired {len(failed)} failing claim(s)"])
+                        notes=[f"repaired {len(failed)} failing claim(s)"] + unpinned)
 
 
 def verify_answer(answer: str, evidence: Evidence, client: Any = None,

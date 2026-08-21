@@ -108,3 +108,27 @@ f2d5c02590e729c0d3bfde6c76c0f8b3ef7f6ec0ef774bd6810ae7c9f932b532  data/eval/repl
 d7d50a1950f8055be430cdb60200f95ec33d94ea48c28757c982c6b2cbc93cad  data/eval/replay_release-2b_repair-calls.jsonl
 4408790f0d7fda42db904743500824ac33c74f285f7e98fe2a34c43468c636c3  data/eval/audit_repair_release-2.json
 e1661aef36a13aecf8675e8e74251cf40a880c4336f5d38c63909c6fac83e9e6  data/eval/audit_repair_release-2b.json
+#
+# Wave 5 instrument: the SPREAD-AWARE re-audit of the two Wave 4 replays, made
+# from the recorded arms with zero API calls. These are the PRE-FIX
+# reproducibility baseline — the numbers a post-pinning run is diffed against:
+#
+#   release-2   identical repair completions 1/11, adoption agreement 8/11
+#               (72.7%); sample-to-sample metric spread over 63 resolvable
+#               cases: groundedness 0.05 pp, citation completeness 1.74 pp,
+#               supported 2 claims.
+#   release-2b  no second sample was recorded in that replay, so it carries
+#               the replicate spread only.
+#
+# Both were produced against verify.py @ 52152af (`inputs.audit_verify_blob_sha`
+# inside each file records which). Regenerate with:
+#
+#   venv/bin/python scripts/audit_repair.py \
+#     --off data/eval/replay_release-2_repair-off.jsonl \
+#     --on  data/eval/replay_release-2_repair-on-carryoff.jsonl \
+#     --carry-on data/eval/replay_release-2_repair-on.jsonl \
+#     --spread-audit data/eval/audit_repair_release-2b.json \
+#     --require-metrics groundedness_rate,citation_completeness_rate \
+#     --json data/eval/audit_repair_release-2-spread.json
+1516a316206ae6ab95e97ed18c6faa9d8b03f2dd353314899f521a12d8d2e313  data/eval/audit_repair_release-2-spread.json
+6d1040f0a964805a528d85777a0cabec1f0474af1b3f741f9719ae2397efa5db  data/eval/audit_repair_release-2b-spread.json

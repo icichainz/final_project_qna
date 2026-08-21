@@ -89,6 +89,66 @@ and the claim-level movement:
                     sentence is SUPPORTED was corrected; one with no successor
                     was deleted; deletion of a GROUNDED claim is called out
                     separately, because the evidence permitted a correction
+
+REPRODUCIBILITY IS A MEASURED, GATED PROPERTY
+---------------------------------------------
+Wave 4's finding was not a number in the table: it was that the table moves.
+From the same answers and the SAME verdict objects, the adoption decision
+flipped on 3 of 11 sampled cases and only 1 of 11 rewrites came back
+byte-identical. A treatment that is not a fixed quantity cannot be gated by
+one measurement of it, and an instrument that cannot see that is an
+instrument that reports luck.
+
+    # measure it: N repair samples per failing case, each fully scored
+    venv/bin/python scripts/audit_repair.py replay \
+        --release data/eval/release_release-2.jsonl \
+        --out-prefix data/eval/replay --repair-samples 3
+
+    # gate on it, zero API calls, from the recorded arms
+    venv/bin/python scripts/audit_repair.py \
+        --off data/eval/replay_repair-off.jsonl \
+        --on  data/eval/replay_repair-on-carryoff.jsonl \
+        --carry-on data/eval/replay_repair-on.jsonl \
+        --max-adoption-disagreement 0 \
+        --require-metrics groundedness_rate,citation_completeness_rate
+
+``reproducibility`` reports (i) the identical-completion rate, (ii) the
+adoption-decision agreement rate, (iii) every disagreeing case with both
+decisions and both rejection notes, and — through ``sample_worlds`` — (iv)
+what the disagreements do to every gated metric: world k is the run this
+would have been had each case used its k-th sample, scored by the same
+comparison code, so 'groundedness in world 2' and 'groundedness' are the same
+measurement.
+
+``--max-adoption-disagreement R`` gates on (ii). It defaults to 0 (see
+``DEFAULT_MAX_ADOPTION_DISAGREEMENT``), and asking for it when nothing was
+sampled twice FAILS: a gate that passes vacuously is not a gate.
+
+SPREAD-AWARE VERDICTS
+---------------------
+The plan's rule — *any gate whose margin is narrower than the measured spread
+is reported indeterminate, not passed* — is enforced here rather than left to
+the reviewer's prose. Every gate carries its margin, the measured spread of
+that same quantity, and PASS / FAIL / INDETERMINATE. The spread comes from
+the sample worlds above and/or from ``--spread-audit``, another recorded
+audit of the same source record; the wider of the two is used. An
+INDETERMINATE gate is not a pass and the process exits non-zero.
+
+Count gates and rate gates are treated differently on purpose. An invented
+citation observed in this run is a FAIL whatever the spread says — it
+happened. A clean count is NOT a pass when a sibling sample was dirty:
+'zero this time' is then a draw, not a property.
+
+MISSING BY CONSTRUCTION IS NOT MISSING BY FAILURE
+-------------------------------------------------
+``--require-metrics`` gates on the claim rates being present and not
+regressed, and it distinguishes a value that no run can ever produce from one
+that went missing. See ``MISSING_BY_CONSTRUCTION``: guard turns and chat
+turns are never verified in production, and an abstention with 0 claims has
+no denominator. Counting those as failures is what makes
+``eval_answers.py --compare --require-metrics`` exit 1 on every
+production-mode record — 4 of 66 on this suite — and a gate that cannot pass
+teaches an operator to ignore the exit code.
 """
 from __future__ import annotations
 
@@ -162,6 +222,33 @@ NOTE_ORDER = ("registry", "year", "matrix")
 TOKEN_COST_USD = {"prompt": 1.25 / 1_000_000, "completion": 10.00 / 1_000_000}
 
 ARMS = ("off", "on", "on-carryoff")
+
+#: The reproducibility gate's default tolerance: ZERO adoption disagreements
+#: over the sampled cases.
+#:
+#: WHY ZERO AND NOT A BUDGET. The gate's job is to prove that pinning holds,
+#: and adoption is what decides whether the user reads the model's words or
+#: the repair pass's. One flip is not a noisy estimate of a small rate — it is
+#: an existence proof that the same input produced two different user-visible
+#: answers, which is the property the pinning is supposed to remove. A budget
+#: of one flip in twenty would also be unmeasurable at this sample size: 11
+#: sampled cases cannot distinguish 5% from 0%, so a non-zero threshold would
+#: be a number nobody could hold the run to. The pre-fix baseline (adoption
+#: agreement 8/11 = 72.7% on the recorded run) is far from 100%, so the
+#: threshold separates fixed from unfixed without needing to be delicate.
+#:
+#: IDENTICAL COMPLETION IS REPORTED, NOT GATED. Byte-identical text is a
+#: stronger property than the adoption decision and it is the one a seed is
+#: meant to deliver, but provider-side determinism is best-effort even at
+#: temperature 0 with a fixed seed, so a gate on it would fail for reasons
+#: outside this repository. It is reported next to the gated number, and a
+#: run where adoption agrees while the text does not is a run where the
+#: instrument is still telling the operator something.
+DEFAULT_MAX_ADOPTION_DISAGREEMENT = 0.0
+
+#: Reported always; gated only when named in --require-metrics. These are the
+#: two the plan's Gate 4 line requires.
+DEFAULT_COVERAGE_METRICS = ("groundedness_rate", "citation_completeness_rate")
 
 #: 'this is not supported by the retrieved evidence', EN and FR — REPAIR_PROMPT
 #: rule 3's second option. A successor sentence that says this is a
@@ -560,10 +647,72 @@ def _skipped_row(record: dict, arm: str, reason: str) -> dict:
     return row
 
 
+#: The claim-level numbers a sample carries at a glance. The full block is
+#: stored too when the sample's text differs, but a reader — and a legacy
+#: record's reconstruction — needs these five without parsing claim rows.
+SAMPLE_METRIC_KEYS = ("claims", "supported", "grounded", "citation_supported",
+                      "cited", "contradicted", "unsupported")
+
+
+def _sample_entry(index: int, text: Optional[str], first_text: Optional[str],
+                  res, record: dict, evidence, calls: Sequence[dict],
+                  case_id: str) -> dict:
+    """One repair sample, scored exactly the way an arm row is scored.
+
+    WHAT IS STORED AND WHY. ``metrics`` is always present: it is the sample's
+    contribution to every gated claim metric, and Wave 4's record carried
+    none of it — which is why that wave could report that adoption flipped
+    but not what the flip did to groundedness.
+
+    ``text``, ``claims``, ``checks`` and ``claim_rows`` are stored ONLY for a
+    sample whose completion differs from sample 1's. Repair is deterministic
+    downstream of the completion (``_introduced_sources``, a fresh
+    ``classify_deterministic``, the substance floor), so an identical
+    completion has an identical outcome and re-storing it would triple a
+    recorded arm to say nothing. A DIFFERENT completion is the whole finding,
+    and the audit needs its text to re-derive invented sources per sample
+    rather than trusting the numbers it was handed.
+    """
+    raw = record.get("raw_answer") or record.get("answer") or ""
+    answer, source = final_answer(raw, res)
+    checks, _fields = _rescore_answer(record, answer)
+    block = _claims_block(res.verdicts, evidence)
+    identical = (text or "") == (first_text or "")
+    entry = {
+        "sample": index,
+        "identical_text": bool(identical),
+        "text_sha256": _sha256_text(text or "") if text is not None else None,
+        "adopted": bool(res.repaired),
+        "rejected": bool(res.repair_rejected),
+        "status": res.status,
+        "notes": list(res.notes or []),
+        "answer_sha256": _sha256_text(answer),
+        "answer_source": source,
+        "carry_cleared": True,
+        "metrics": dict({k: block.get(k) for k in SAMPLE_METRIC_KEYS},
+                        checks_pass=(bool(checks.get("pass"))
+                                     if isinstance(checks, dict)
+                                     and "pass" in checks else None)),
+        "calls": list(calls),
+    }
+    if index > 1 and not identical:
+        entry.update({"text": text, "claims": block, "checks": checks,
+                      "claim_rows": claim_rows(res.verdicts, evidence, case_id)})
+    return entry
+
+
 def replay(release: Path, out_prefix: Path, force: bool = False,
            client: Any = None, repair_samples: int = 1,
            limit: Optional[int] = None, verbose: bool = False) -> dict:
     """Replay one recorded run through the verifier twice, three scorings.
+
+    ``repair_samples`` is the reproducibility instrument: N repair calls per
+    failing case on IDENTICAL input (same answer, same verdict OBJECTS, same
+    evidence), each one fully scored and recorded. N=1 is the plain A/B; N>1
+    is what lets ``audit`` report the identical-completion rate, the
+    adoption-decision agreement rate and the spread those flips put on every
+    gated metric. It costs one extra repair call per failing case per extra
+    sample and nothing else — the judge pass is not re-run.
 
     Returns the run summary; writes ``<prefix>_repair-off.jsonl``,
     ``<prefix>_repair-on.jsonl``, ``<prefix>_repair-on-carryoff.jsonl`` and
@@ -631,19 +780,26 @@ def replay(release: Path, out_prefix: Path, force: bool = False,
             f"carry-on made {len(repair_calls)} — the two scorings did not "
             f"score the same rewrite")
 
-        # --- optional: a SECOND repair sample, to size repair-call spread ---
-        second = None
-        if repair_samples > 1 and failed:
-            m2 = MeteredClient(client, model)
-            r2 = verify.repair(raw, verdicts, ev, client=m2)
-            t2 = m2.repair_texts[0] if m2.repair_texts else None
-            second = {"identical_text": (t2 or "") == (repair_text or ""),
-                      "text_sha256": _sha256_text(t2 or ""),
-                      "adopted": bool(r2.repaired),
-                      "status": r2.status,
-                      "notes": list(r2.notes or []),
-                      "calls": m2.calls}
-            call_rows += [dict(c, case=cid, sample=2) for c in m2.calls]
+        # --- reproducibility: N samples of repair on IDENTICAL input -------
+        # Sample 1 IS the ON arm's call: the same answer, the same verdict
+        # OBJECTS, the same evidence, the same prompt. Samples 2..N ask the
+        # same question again, so the only thing that varies across them is
+        # the model's own sampling. Each sample is scored the way an arm row
+        # is scored, because 'the adoption decision flipped' and 'the gated
+        # metric moved' are two different questions and a record that carries
+        # only the first cannot answer the second.
+        samples = []
+        if failed:
+            samples.append(_sample_entry(1, repair_text, repair_text, on_res,
+                                         rec, ev, metered.calls, cid))
+            for k in range(2, max(1, int(repair_samples or 1)) + 1):
+                mk = MeteredClient(client, model)
+                rk = verify.repair(raw, verdicts, ev, client=mk)
+                tk = mk.repair_texts[0] if mk.repair_texts else None
+                samples.append(_sample_entry(k, tk, repair_text, rk, rec, ev,
+                                             mk.calls, cid))
+                call_rows += [dict(c, case=cid, sample=k) for c in mk.calls]
+        second = samples[1] if len(samples) > 1 else None
 
         call_rows += [dict(c, case=cid, sample=1) for c in metered.calls]
         pre_gate = _pre_gate(raw, repair_text, verdicts, failed, ev, allowed, cid)
@@ -655,6 +811,12 @@ def replay(release: Path, out_prefix: Path, force: bool = False,
             "repair_text_sha256": _sha256_text(repair_text or "")
                                   if repair_text is not None else None,
             "repair_allowed_docs": allowed,
+            "repair_samples": samples or None,
+            # Every sample is drawn with `_carry_cleared` LIVE, because sample
+            # 1 is the ON arm's own call. The audit compares like with like
+            # only if it takes its sample-1 baseline from the carry-ON arm —
+            # recorded here so it cannot be guessed wrong.
+            "repair_samples_carry": "on" if samples else None,
             "repair_second_sample": second,
             "repair_pre_gate": pre_gate,
         }
@@ -682,6 +844,12 @@ def replay(release: Path, out_prefix: Path, force: bool = False,
         summary["rejected_carryoff"] += bool(co_res.repair_rejected)
         if bool(on_res.repaired) != bool(co_res.repaired):
             summary["carry_disagreements"] += 1
+        if len(samples) > 1:
+            summary["cases_sampled"] += 1
+            summary["identical_completions"] += all(
+                s["identical_text"] for s in samples[1:])
+            summary["adoption_agreements"] += len(
+                {s["adopted"] for s in samples}) == 1
         if verbose:
             print(f"[{i}/{len(rows)}] {cid:26} failed={len(failed):2d} "
                   f"repair={'adopted' if on_res.repaired else ('rejected' if on_res.repair_rejected else 'n/a')}"
@@ -1017,7 +1185,18 @@ def _nd(num: int, den: int) -> dict:
 
 
 def audit(off_path: Path, on_path: Path, carry_on_path: Path = None,
-          justifications: Path = None) -> dict:
+          justifications: Path = None,
+          spread_audits: Sequence[Path] = (),
+          require_metrics: Sequence[str] = (),
+          max_adoption_disagreement: Optional[float] = None,
+          require_spread: bool = False) -> dict:
+    """Compare two replayed arms, and say how much of the answer is sampling.
+
+    The comparison itself is ``_compare_arms``. Everything this wrapper adds
+    is about the RELIABILITY of that comparison: how far the same measurement
+    moves between samples of repair on identical input, and which gate
+    margins are inside that movement.
+    """
     off = {r["id"]: r for r in read_jsonl(off_path)}
     on = {r["id"]: r for r in read_jsonl(on_path)}
     carry = {r["id"]: r for r in read_jsonl(carry_on_path)} if carry_on_path else {}
@@ -1026,6 +1205,68 @@ def audit(off_path: Path, on_path: Path, carry_on_path: Path = None,
         for r in read_jsonl(justifications):
             justified[r.get("key") or r.get("claim_key")] = r.get("justification")
 
+    report = _compare_arms(off, on, justified, carry=carry,
+                           off_label=str(off_path), on_label=str(on_path))
+    shared = [i for i in off if i in on]
+
+    # Provenance. A recorded audit is a measurement of ONE verify.py over ONE
+    # pair of arms; re-running it after either changes is a different number,
+    # and a saved report that cannot say which is a number without a subject.
+    report["inputs"] = {
+        "off_sha256": _sha256_file(Path(off_path)),
+        "on_sha256": _sha256_file(Path(on_path)),
+        "carry_on_sha256": _sha256_file(Path(carry_on_path)) if carry_on_path else None,
+        "audit_verify_blob_sha": _sha256_file(VERIFY_PY) if VERIFY_PY.exists() else None,
+    }
+
+    # --- reproducibility, and the spread it implies -----------------------
+    base, base_arm, mismatch = _sample_base(on, carry)
+    report["reproducibility"] = repro = _reproducibility(off, base, shared,
+                                                         base_arm, mismatch)
+    report["sample_worlds"] = worlds = _sample_worlds(off, base, shared, justified)
+    replicates = []
+    for p in spread_audits or ():
+        other = json.loads(Path(p).read_text(encoding="utf-8"))
+        replicates.append({"source": str(p), "quantities": _gate_quantities(other),
+                           "cases_compared": other.get("cases_compared")})
+    report["spread_replicates"] = [{"source": r["source"],
+                                    "cases_compared": r["cases_compared"]}
+                                   for r in replicates]
+    report["spreads"] = spreads = _spreads(
+        _gate_quantities(report),
+        [w["quantities"] for w in worlds.get("worlds") or []],
+        [r["quantities"] for r in replicates])
+
+    # --- metric coverage: missing-by-construction vs missing-by-failure ---
+    report["metric_coverage"] = _metric_coverage(
+        off, on, shared, list(require_metrics) or list(DEFAULT_COVERAGE_METRICS))
+    report["require_metrics"] = list(require_metrics or ())
+
+    # --- gates, spread-aware ---------------------------------------------
+    report["gates"] = gates = _gate_verdicts(
+        report, spreads, require_metrics=require_metrics,
+        max_adoption_disagreement=max_adoption_disagreement,
+        require_spread=require_spread, repro=repro)
+    report["breaches"] = [g["breach"] for g in gates
+                          if g["verdict"] == "FAIL" and g["breach"]]
+    report["indeterminate"] = [
+        f"{g['name']}: {g['why']}" for g in gates if g["verdict"] == "INDETERMINATE"]
+    report["gate_verdict"] = ("FAIL" if report["breaches"] else
+                              "INDETERMINATE" if report["indeterminate"] else "PASS")
+    report["gate_pass"] = report["gate_verdict"] == "PASS"
+    return report
+
+
+def _compare_arms(off: dict, on: dict, justified: dict, carry: dict = None,
+                  extras: bool = True, off_label: str = "off-arm",
+                  on_label: str = "on-arm") -> dict:
+    """The file comparison itself — no spreads, no gates but its own.
+
+    Split out of ``audit`` so a SAMPLE WORLD (the run this would have been had
+    repair sampled differently) is scored by exactly this code and not by a
+    second, simplified summariser.
+    """
+    carry = carry or {}
     shared = [i for i in off if i in on]
     only = sorted(set(off) ^ set(on))
 
@@ -1101,7 +1342,7 @@ def audit(off_path: Path, on_path: Path, carry_on_path: Path = None,
     fields_after = _field_cells(on, shared)
 
     report = {
-        "off": str(off_path), "on": str(on_path),
+        "off": off_label, "on": on_label,
         "cases_compared": len(shared),
         "cases_only_on_one_side": only,
         "answers_rewritten": rewritten,
@@ -1153,9 +1394,10 @@ def audit(off_path: Path, on_path: Path, carry_on_path: Path = None,
     }
     if carry:
         report["carry_on_vs_carry_off"] = _carry_gap(carry, on, shared)
-    report["cost"] = _replay_cost(on)
-    report["repair_call_spread"] = _repair_spread(on)
-    report["pre_gate_probe"] = _pre_gate_probe(off, carry or on, shared)
+    if extras:
+        report["cost"] = _replay_cost(on)
+        report["repair_call_spread"] = _repair_spread(carry or on)
+        report["pre_gate_probe"] = _pre_gate_probe(off, carry or on, shared)
     report["breaches"] = _breaches(report)
     report["gate_pass"] = not report["breaches"]
     return report
@@ -1254,12 +1496,16 @@ def _pre_gate_probe(off: dict, on: dict, shared: Sequence[str]) -> dict:
 
 
 def _repair_spread(rows: dict) -> dict:
-    """The repair pass's OWN run-to-run spread, when a second sample was taken.
+    """Wave 4's two-sample summary, kept for the records that carry it.
 
-    `verify._complete` sends no temperature and no seed, so the repair call is
-    an unpinned sample. This is the spread that actually applies to this A/B —
-    the answers are fixed and the judge pass is shared, so the only sampling
-    left in the comparison is the repair call itself.
+    SUPERSEDED by `_reproducibility`, which reports the same two counts as
+    rates over an explicit denominator, names the disagreeing cases, and
+    carries the metric spread the flips produce. Two things this one gets
+    wrong and that one fixes: `rows` must be the CARRY-ON arm (every sample is
+    drawn with the carry live, so comparing a sample against the carry-off
+    arm's decision folds the carry difference into the sampling number — the
+    published 2/11 is 3/11 like-for-like), and a case the pass never reached
+    is not in the denominator.
     """
     n = ident = flip = 0
     flips = []
@@ -1279,29 +1525,589 @@ def _repair_spread(rows: dict) -> dict:
             "adoption_flipped": flip, "flips": flips}
 
 
-def _breaches(rep: dict) -> List[str]:
-    out = []
-    if rep["invented_docs"]:
-        out.append(f"{len(rep['invented_docs'])} invented document citation(s)")
-    if rep["invented_pages"]:
-        out.append(f"{len(rep['invented_pages'])} invented page citation(s)")
-    if rep["sources_not_shown_to_repair"]:
-        out.append(f"{len(rep['sources_not_shown_to_repair'])} citation(s) on a "
-                   "document the repair pass was never shown")
-    if rep["invented_figures_matcher_cannot_place"]:
-        out.append(f"{len(rep['invented_figures_matcher_cannot_place'])} "
-                   "invented figure(s)")
-    if rep["lost_supported_undocumented"]:
-        out.append(f"{rep['lost_supported_undocumented']} supported claim(s) lost "
-                   "with no documented necessity")
-    if rep["answer_checks_pass_to_fail"]:
-        out.append(f"{rep['answer_checks_pass_to_fail']} answer(s) pass -> fail")
-    if rep["language_regressions"]:
-        out.append(f"{len(rep['language_regressions'])} language regression(s)")
-    if rep["supported_after"] < rep["supported_before"]:
-        out.append(f"supported fell {rep['supported_before']} -> "
-                   f"{rep['supported_after']}")
+# ---------------------------------------------------------------------------
+# metric coverage: missing BY CONSTRUCTION vs missing BY FAILURE
+# ---------------------------------------------------------------------------
+#: What a per-case claim rate's absence means, and which of the two kinds it
+#: is. This distinction is the whole fix for the gate line the plan asks for:
+#:
+#:     eval_answers.py --compare A B --require-metrics groundedness_rate,...
+#:
+#: exits 1 on any production-mode record, because it counts EVERY absent value
+#: as a failure. On the 66-case suite four cases can never carry one:
+#:
+#:   guard answer   production returns before the verifier runs
+#:                  (chainlit_app.py:1116-1133), so the turn has no claims —
+#:                  Wave 3 gap 4 made the harness match, deliberately;
+#:   chat turn      answered from history, never verified;
+#:   0 claims       a correct abstention: the denominator is zero, so the rate
+#:                  is undefined. `None` here is the arithmetic being honest,
+#:                  not a measurement that went missing.
+#:
+#: Those are BY CONSTRUCTION: no run of any pipeline will ever produce a value
+#: for them, so a gate that counts them is unpassable by construction too, and
+#: an unpassable gate teaches an operator to ignore the exit code. What is
+#: left is BY FAILURE and still gates: a harness error, a verified turn whose
+#: claims block never got written, a turn that carries claims but no rate.
+MISSING_BY_CONSTRUCTION = "by-construction"
+MISSING_BY_FAILURE = "by-failure"
+
+#: --require-metrics names -> the key inside a record's `claims` block.
+#: eval_answers._REQUIRABLE restated, so this tool's flag is spelled the same
+#: as the one in the plan's gate line.
+REQUIRABLE = {"support_rate": "support_rate",
+              "groundedness_rate": "groundedness_rate",
+              "citation_completeness_rate": "citation_completeness_rate",
+              "citation_presence_rate": "citation_presence_rate"}
+
+
+def _metric_presence(row: dict, key: str) -> Tuple[Optional[float], str, str]:
+    """(value, kind, reason) for one metric of one recorded case."""
+    claims = row.get("claims") if isinstance(row.get("claims"), dict) else None
+    value = (claims or {}).get(REQUIRABLE.get(key, key))
+    if value is not None:
+        return float(value), "present", ""
+    if row.get("error"):
+        return None, MISSING_BY_FAILURE, \
+            f"harness error, no answer to verify: {str(row.get('error'))[:80]}"
+    if row.get("guard"):
+        return None, MISSING_BY_CONSTRUCTION, \
+            "guard answer: production returns before verification " \
+            "(chainlit_app.py:1116-1133), so the turn has no claims"
+    if row.get("chat"):
+        return None, MISSING_BY_CONSTRUCTION, \
+            "chat turn: production answers from history without verification"
+    if claims is None:
+        return None, MISSING_BY_FAILURE, \
+            "no claims block on a turn production would have verified"
+    if not int(claims.get("claims") or 0):
+        return None, MISSING_BY_CONSTRUCTION, \
+            "0 claims: the rate's denominator is zero — an abstention with " \
+            "nothing to verify has no rate to compare"
+    return None, MISSING_BY_FAILURE, \
+        f"{key} absent from a record carrying {claims.get('claims')} claim(s)"
+
+
+def _metric_coverage(off: dict, on: dict, shared: Sequence[str],
+                     metrics: Sequence[str]) -> dict:
+    """Per required metric: the paired comparison, and every absence named.
+
+    The mean is the per-case (macro) mean, which is what ``--compare`` prints
+    and therefore what the plan's gate line means. The report's own
+    ``groundedness_after`` is the pooled n/d and is the number the >= 95%
+    gates use; the two are different statistics on purpose and both are
+    printed.
+    """
+    out = {}
+    for key in metrics:
+        paired, by_c, by_f = [], [], []
+        for cid in shared:
+            va, ka, wa = _metric_presence(off[cid], key)
+            vb, kb, wb = _metric_presence(on[cid], key)
+            if ka == "present" and kb == "present":
+                paired.append((va, vb))
+                continue
+            for side, kind, why in (("off", ka, wa), ("on", kb, wb)):
+                if kind == "present":
+                    continue
+                (by_c if kind == MISSING_BY_CONSTRUCTION else by_f).append(
+                    {"case": cid, "side": side, "kind": kind, "reason": why})
+        a = sum(x for x, _ in paired) / len(paired) if paired else None
+        b = sum(y for _, y in paired) / len(paired) if paired else None
+        out[key] = {
+            "cases_compared": len(shared),
+            "paired": len(paired),
+            "a": a, "b": b,
+            "delta": None if a is None else b - a,
+            "no_regression": bool(paired) and b >= a - 1e-9 and not by_f,
+            "missing_by_construction": by_c,
+            "missing_by_failure": by_f,
+            "excluded_by_construction": sorted({r["case"] for r in by_c}),
+        }
     return out
+
+
+# ---------------------------------------------------------------------------
+# reproducibility: N samples of repair on IDENTICAL input
+# ---------------------------------------------------------------------------
+def _samples_of(row: dict) -> List[dict]:
+    """This case's repair samples, newest record shape or Wave 4's.
+
+    Wave 4 recorded a single extra sample as ``repair_second_sample`` with no
+    metrics and no text. It is read here as a two-entry list so the old
+    records still answer the two questions they CAN answer — was the
+    completion identical, did the adoption decision agree — and are honestly
+    unable to answer the third (what it did to the gated metrics), rather
+    than being silently counted as 'no movement'.
+    """
+    rr = row.get("repair_replay") or {}
+    got = rr.get("repair_samples")
+    if got:
+        return list(got)
+    legacy = rr.get("repair_second_sample")
+    if not legacy:
+        return []
+    first = {"sample": 1, "identical_text": True,
+             "text_sha256": rr.get("repair_text_sha256"),
+             "adopted": bool(row.get("repaired")),
+             "rejected": bool(row.get("repair_rejected")),
+             "status": row.get("verify_status"),
+             "notes": list(row.get("repair_notes") or []),
+             "metrics": None, "legacy": True}
+    return [first, dict(legacy, sample=2, legacy=True)]
+
+
+def _sample_base(on: dict, carry: dict) -> Tuple[dict, str, bool]:
+    """(rows, arm, mismatch) — which arm the samples must be compared against.
+
+    Every sample is drawn with ``_carry_cleared`` LIVE (sample 1 IS the ON
+    arm's call), so the sample-1 baseline has to be the carry-ON arm. Wave 4
+    ran the audit with ``--on`` pointing at the carry-OFF arm, so its
+    published 'adoption flipped 2/11' compared a carry-ON sample against a
+    carry-OFF decision and folded the carry difference into the sampling
+    number. Like-for-like on the same record is 3/11.
+    """
+    for rows, label in ((carry or {}, "carry-on"), (on or {}, "--on")):
+        if not rows:
+            continue
+        arms = {(r.get("repair_replay") or {}).get("arm") for r in rows.values()}
+        if "on" in arms:
+            return rows, label, False
+    arms = {(r.get("repair_replay") or {}).get("arm") for r in (on or {}).values()}
+    named = sorted(a for a in arms if a)
+    return on, "--on", bool(named) and "on" not in named
+
+
+def _reproducibility(off: dict, base: dict, shared: Sequence[str],
+                     base_arm: str, mismatch: bool) -> dict:
+    """Repair's run-to-run spread on IDENTICAL input, as a first-class metric.
+
+    (i) identical-completion rate, (ii) adoption-decision agreement rate,
+    (iii) the per-case disagreements, (iv) — via ``_sample_worlds`` — what
+    those disagreements do to every gated metric.
+
+    The denominator is cases the pass was actually SAMPLED on, not all 66:
+    a case with no failing claim never reaches the repair model and would
+    count as perfect agreement for free.
+    """
+    with_repair = sampled = identical = agree = 0
+    unsampled, disagreements, per_case = [], [], []
+    for cid in shared:
+        row = base.get(cid) or {}
+        rr = row.get("repair_replay") or {}
+        attempted = bool(rr.get("repair_calls"))
+        with_repair += attempted
+        samples = _samples_of(row)
+        if len(samples) < 2:
+            if attempted:
+                unsampled.append(cid)
+            continue
+        sampled += 1
+        same_text = all(bool(s.get("identical_text")) for s in samples[1:])
+        identical += bool(same_text)
+        decisions = [bool(s.get("adopted")) for s in samples]
+        agreed = len(set(decisions)) == 1
+        agree += bool(agreed)
+        entry = {"case": cid, "samples": len(samples),
+                 "identical_text": bool(same_text),
+                 "adoption": decisions,
+                 "statuses": [s.get("status") for s in samples],
+                 "text_sha256": [s.get("text_sha256") for s in samples],
+                 "notes": [s.get("notes") for s in samples]}
+        per_case.append(entry)
+        if not agreed:
+            disagreements.append(entry)
+    return {
+        "cases_with_repair": with_repair,
+        "cases_sampled": sampled,
+        "cases_attempted_but_sampled_once": unsampled,
+        "baseline_arm": base_arm,
+        "carry_mismatch": bool(mismatch),
+        "identical_completion": _nd(identical, sampled),
+        "adoption_agreement": _nd(agree, sampled),
+        "adoption_disagreement_rate": ((sampled - agree) / sampled) if sampled else None,
+        "disagreements": disagreements,
+        "per_case": per_case,
+    }
+
+
+def _world_row(off_row: dict, base_row: dict, sample: dict) -> Optional[dict]:
+    """The arm row this case would have contributed had THIS sample been the
+    one the pass produced — or None when the record cannot say.
+
+    Three resolvable shapes and one unresolvable one:
+
+      sample 1 / identical completion  the base row, unchanged
+      rewrite NOT adopted              the turn ships the original answer, and
+                                       that row already exists: the off arm's
+      rewrite adopted, text recorded   the base row with this sample's text,
+                                       claims, checks and claim rows
+      rewrite adopted, text NOT        unresolvable — Wave 4's record kept the
+      recorded                         sha256 of the rewrite and nothing else
+    """
+    if sample is None or off_row is None or base_row is None:
+        return None
+    if sample.get("sample") == 1 or sample.get("identical_text"):
+        return base_row
+    if not sample.get("adopted"):
+        row = dict(off_row)
+        row.update({"repaired": False,
+                    "repair_rejected": bool(sample.get("rejected")),
+                    "repair_notes": list(sample.get("notes") or []),
+                    "verify_status": sample.get("status") or row.get("verify_status")})
+        return row
+    if not sample.get("text") or not sample.get("claim_rows"):
+        return None
+    row = dict(base_row)
+    row.update({"answer": sample["text"], "claim_rows": sample["claim_rows"],
+                "claims": sample.get("claims") or row.get("claims"),
+                "checks": sample.get("checks") or row.get("checks"),
+                "repaired": True, "repair_rejected": False,
+                "repair_notes": list(sample.get("notes") or []),
+                "verify_status": sample.get("status") or row.get("verify_status")})
+    return row
+
+
+def _sample_worlds(off: dict, base: dict, shared: Sequence[str],
+                   justified: dict) -> dict:
+    """One full audit per sample index — the spread on every gated metric.
+
+    World k is the run this would have been had every case used its k-th
+    repair sample. Each world is scored by ``_compare_arms``, the SAME code
+    that scores the real comparison, so a world's groundedness and the
+    report's groundedness are the same measurement.
+
+    Every world is restricted to the cases resolvable in ALL of them, so the
+    worlds are comparable to each other; the excluded cases are named, and a
+    spread computed over 65 of 66 cases says so rather than pretending.
+    """
+    per_case = {cid: _samples_of(base.get(cid) or {}) for cid in shared}
+    depth = max([len(v) for v in per_case.values()] or [0])
+    if depth < 2:
+        return {"worlds": [], "depth": depth, "cases": 0, "unresolvable": [],
+                "reason": "no case carries a second repair sample"}
+    rows = {k: {} for k in range(1, depth + 1)}
+    unresolvable = []
+    for cid in shared:
+        samples = per_case[cid]
+        if not samples:                    # repair never ran: identical in every world
+            for k in rows:
+                rows[k][cid] = base[cid]
+            continue
+        if len(samples) < depth:
+            unresolvable.append({"case": cid,
+                                 "why": f"sampled {len(samples)} time(s), not {depth}"})
+            continue
+        built = {}
+        for k in range(1, depth + 1):
+            r = _world_row(off.get(cid), base.get(cid), samples[k - 1])
+            if r is None:
+                break
+            built[k] = r
+        if len(built) != depth:
+            unresolvable.append(
+                {"case": cid, "why": "an adopted rewrite's text was not recorded — "
+                                     "pre-spread record, sha256 only"})
+            continue
+        for k, r in built.items():
+            rows[k][cid] = r
+    cases = sorted(rows[1])
+    off_sub = {cid: off[cid] for cid in cases}
+    worlds = []
+    for k in range(1, depth + 1):
+        rep = _compare_arms(off_sub, {cid: rows[k][cid] for cid in cases},
+                            justified, extras=False)
+        worlds.append({"world": k, "cases": len(cases),
+                       "quantities": _gate_quantities(rep),
+                       "breaches": rep["breaches"]})
+    return {"worlds": worlds, "depth": depth, "cases": len(cases),
+            "unresolvable": unresolvable,
+            "excluded_cases": [u["case"] for u in unresolvable]}
+
+
+# ---------------------------------------------------------------------------
+# gates, and the spread that decides whether a verdict is worth anything
+# ---------------------------------------------------------------------------
+#: gate id -> how the quantity is read out of a report. One place, so a
+#: sample world, a replicate audit and this report are all read identically.
+def _gate_quantities(rep: dict) -> Dict[str, Any]:
+    def n(key):
+        v = rep.get(key)
+        return len(v) if isinstance(v, list) else int(v or 0)
+    sup_b, sup_a = int(rep.get("supported_before") or 0), int(rep.get("supported_after") or 0)
+    return {
+        "invented_docs": n("invented_docs"),
+        "invented_pages": n("invented_pages"),
+        "sources_not_shown_to_repair": n("sources_not_shown_to_repair"),
+        "invented_figures": n("invented_figures_matcher_cannot_place"),
+        "lost_supported_undocumented": n("lost_supported_undocumented"),
+        "answer_checks_pass_to_fail": n("answer_checks_pass_to_fail"),
+        "language_regressions": n("language_regressions"),
+        "supported_non_decreasing": sup_a - sup_b,
+        "groundedness": (rep.get("groundedness_after") or {}).get("rate"),
+        "citation_completeness": (rep.get("citation_completeness_after") or {}).get("rate"),
+    }
+
+
+def _range(values: Sequence[Any]) -> Optional[float]:
+    xs = [v for v in values if v is not None]
+    return (max(xs) - min(xs)) if len(xs) > 1 else None
+
+
+def _spreads(mine: dict, worlds: Sequence[dict],
+             replicates: Sequence[dict]) -> dict:
+    """Per gate quantity: how far it moved between measurements of the same
+    thing. Two independent sources, reported separately and then combined by
+    taking the WIDER — a gate certified against the narrower of two known
+    spreads is certified against the more flattering one.
+
+      samples     N repair samples on identical input, within one replay.
+                  This is the sampling the A/B cannot cancel: the answers are
+                  fixed and the judge pass is shared, so the repair call is
+                  the only draw left.
+      replicates  whole recorded audits of the same source record, supplied
+                  with --spread-audit. Wider by construction: a second replay
+                  redraws the judge too.
+    """
+    out = {}
+    for key in mine:
+        s_samples = _range([w.get(key) for w in worlds])
+        s_repl = _range([mine.get(key)] + [r.get(key) for r in replicates]) \
+            if replicates else None
+        best = max([s for s in (s_samples, s_repl) if s is not None], default=None)
+        source = None
+        if best is not None:
+            source = "samples" if best == s_samples else "replicates"
+            if s_samples is not None and s_repl is not None and s_samples == s_repl:
+                source = "samples+replicates"
+        out[key] = {"value": best, "from_samples": s_samples,
+                    "from_replicates": s_repl, "source": source,
+                    "n_samples": len(worlds), "n_replicates": len(replicates) + 1}
+    return out
+
+
+def _gate_specs(rep: dict) -> List[dict]:
+    """The gate table: what Wave 4 reported in prose, as data.
+
+    ``kind`` decides how a spread applies to the verdict:
+
+      event   a thing that either happened or did not — an invented citation,
+              a supported claim lost, an answer that went pass -> fail. An
+              observed breach is DETERMINATE: the rewrite really did name a
+              document the evidence does not hold, and another sample not
+              doing it does not un-invent it. A clean run is NOT determinate
+              when a sibling sample was dirty, because 'zero this time' is
+              then a draw, not a property.
+      margin  a signed distance from a threshold (a rate against 95%, the
+              supported delta against 0). Symmetric: if the distance is
+              inside the spread, neither PASS nor FAIL is supportable.
+    """
+    q = _gate_quantities(rep)
+    specs = []
+
+    def event(gid, name, breach):
+        v = q[gid]
+        specs.append({"id": gid, "name": name, "kind": "event", "value": v,
+                      "threshold": 0, "margin": v, "unit": "count",
+                      "failed": v > 0, "breach": breach(v) if v else None,
+                      "blocking": True})
+
+    event("invented_docs", "no document citation invented",
+          lambda n: f"{n} invented document citation(s)")
+    event("invented_pages", "no page citation invented",
+          lambda n: f"{n} invented page citation(s)")
+    event("sources_not_shown_to_repair", "no citation on an unshown document",
+          lambda n: f"{n} citation(s) on a document the repair pass was never shown")
+    event("invented_figures", "no figure invented",
+          lambda n: f"{n} invented figure(s)")
+    event("lost_supported_undocumented", "no supported claim lost undocumented",
+          lambda n: f"{n} supported claim(s) lost with no documented necessity")
+    event("answer_checks_pass_to_fail", "no correct answer becomes incorrect",
+          lambda n: f"{n} answer(s) pass -> fail")
+    event("language_regressions", "no language regression",
+          lambda n: f"{n} language regression(s)")
+
+    delta = q["supported_non_decreasing"]
+    specs.append({
+        "id": "supported_non_decreasing", "name": "supported non-decreasing",
+        "kind": "margin", "value": delta, "threshold": 0, "margin": delta,
+        "unit": "claims", "failed": delta < 0, "blocking": True,
+        "breach": (f"supported fell {rep.get('supported_before')} -> "
+                   f"{rep.get('supported_after')}") if delta < 0 else None})
+
+    for gid, name, key in (
+            ("groundedness", "groundedness >= 95%", "groundedness_after"),
+            ("citation_completeness", "citation completeness >= 95%",
+             "citation_completeness_after")):
+        nd = rep.get(key) or {}
+        rate = nd.get("rate")
+        specs.append({
+            "id": gid, "name": name, "kind": "margin",
+            "value": rate, "threshold": 0.95,
+            "margin": None if rate is None else rate - 0.95, "unit": "rate",
+            "failed": bool(rate is not None and rate < 0.95), "blocking": True,
+            "detail": f"{nd.get('n')}/{nd.get('d')}"
+                      + (f" (>= {nd['threshold_95']}/{nd['d']})"
+                         if nd.get("threshold_95") else ""),
+            "breach": (f"{name.split(' >=')[0]} {nd.get('n')}/{nd.get('d')} "
+                       f"({rate:.1%}) below the >= {nd.get('threshold_95')}/"
+                       f"{nd.get('d')} gate") if rate is not None and rate < 0.95
+                      else None})
+    return specs
+
+
+def _breaches(rep: dict) -> List[str]:
+    """The spread-BLIND breach list, kept because a sample world and a
+    replicate report are scored without one."""
+    return [g["breach"] for g in _gate_specs(rep) if g["failed"] and g["breach"]]
+
+
+def _gate_verdicts(rep: dict, spreads: dict, require_metrics: Sequence[str] = (),
+                   max_adoption_disagreement: Optional[float] = None,
+                   require_spread: bool = False,
+                   repro: dict = None) -> List[dict]:
+    """Every gate with PASS / FAIL / INDETERMINATE / n-a and the reason.
+
+    The plan's rule, enforced instead of narrated: *any gate whose margin is
+    narrower than the measured spread is reported indeterminate, not passed*.
+    """
+    out = []
+    for spec in _gate_specs(rep):
+        sp = (spreads or {}).get(spec["id"]) or {}
+        spread = sp.get("value")
+        g = dict(spec, spread=spread, spread_source=sp.get("source"), why="")
+        if spec["value"] is None:
+            g["verdict"] = "n/a"
+            g["why"] = "the metric has no denominator on this record"
+        elif spec["failed"]:
+            if spec["kind"] == "margin" and spread is not None \
+                    and abs(spec["margin"]) < spread:
+                g["verdict"] = "INDETERMINATE"
+                g["why"] = (f"margin {_fmt_margin(spec)} is inside the measured "
+                            f"spread {_fmt_spread(spec, spread)}")
+            else:
+                g["verdict"] = "FAIL"
+                g["why"] = spec["breach"] or "breach"
+        elif spec["kind"] == "event" and spread:
+            g["verdict"] = "INDETERMINATE"
+            g["why"] = (f"clean here, but the same count moved "
+                        f"{_fmt_spread(spec, spread)} between measurements of "
+                        f"the same input")
+        elif spec["kind"] == "margin" and spread is not None \
+                and abs(spec["margin"]) < spread:
+            g["verdict"] = "INDETERMINATE"
+            g["why"] = (f"margin {_fmt_margin(spec)} is inside the measured "
+                        f"spread {_fmt_spread(spec, spread)}")
+        elif spread is None and require_spread:
+            g["verdict"] = "INDETERMINATE"
+            g["why"] = ("no replicate measurement: the spread is unknown and "
+                        "--require-spread was asked for")
+        else:
+            g["verdict"] = "PASS"
+            g["why"] = ("clean, and the spread is measured at "
+                        f"{_fmt_spread(spec, spread)}" if spread is not None
+                        else "clean")
+        out.append(g)
+
+    # --- metric coverage (the gate that could not pass) -------------------
+    cov = rep.get("metric_coverage") or {}
+    wanted = list(require_metrics or ())
+    if cov:
+        failures = [r for k in (wanted or cov) for r in
+                    (cov.get(k) or {}).get("missing_by_failure") or []]
+        regressed = [k for k in (wanted or ()) if not (cov.get(k) or {}).get("no_regression")]
+        bad = bool(failures or regressed)
+        out.append({
+            "id": "metric_coverage", "name": "required metrics present and not regressed",
+            "kind": "event", "value": len(failures) + len(regressed),
+            "threshold": 0, "margin": len(failures) + len(regressed),
+            "unit": "count", "failed": bad and bool(wanted),
+            "blocking": bool(wanted), "spread": None, "spread_source": None,
+            "verdict": ("FAIL" if (bad and wanted) else
+                        "PASS" if wanted else "reported"),
+            "detail": _coverage_detail(cov, wanted or list(cov)),
+            "why": ("; ".join([f["reason"] for f in failures[:3]]
+                              + [f"{k}: regression" for k in regressed])
+                    if bad else "every absent value is absent by construction"),
+            "breach": (f"{len(failures)} metric value(s) missing by failure, "
+                       f"{len(regressed)} regressed") if (bad and wanted) else None})
+
+    # --- reproducibility --------------------------------------------------
+    repro = repro or rep.get("reproducibility") or {}
+    tol = (DEFAULT_MAX_ADOPTION_DISAGREEMENT if max_adoption_disagreement is None
+           else float(max_adoption_disagreement))
+    asked = max_adoption_disagreement is not None
+    rate = repro.get("adoption_disagreement_rate")
+    sampled = int(repro.get("cases_sampled") or 0)
+    if sampled:
+        failed = rate > tol + 1e-9
+        n = repro["adoption_agreement"]["n"]
+        out.append({
+            "id": "adoption_reproducibility",
+            "name": f"adoption decision reproducible (<= {tol:.0%} disagreement)",
+            "kind": "event", "value": rate, "threshold": tol, "margin": rate,
+            "unit": "rate", "failed": failed, "blocking": True,
+            "spread": None, "spread_source": None,
+            "verdict": "FAIL" if failed else "PASS",
+            "detail": f"agreement {n}/{sampled}, identical completions "
+                      f"{repro['identical_completion']['n']}/{sampled}",
+            "why": (f"{sampled - n} of {sampled} sampled case(s) changed the "
+                    f"adoption decision on identical input" if failed
+                    else f"{n}/{sampled} sampled case(s) agreed"),
+            "breach": (f"repair is not reproducible: adoption disagreed on "
+                       f"{sampled - n}/{sampled} sampled case(s) "
+                       f"({rate:.1%} > {tol:.1%})") if failed else None})
+    elif not asked:
+        # Named but not measured, so a reader of the table sees that the
+        # property exists and this run says nothing about it.
+        out.append({
+            "id": "adoption_reproducibility",
+            "name": f"adoption decision reproducible (<= {tol:.0%} disagreement)",
+            "kind": "event", "value": None, "threshold": tol, "margin": None,
+            "unit": "rate", "failed": False, "blocking": False,
+            "spread": None, "spread_source": None, "verdict": "not-measured",
+            "detail": f"{repro.get('cases_with_repair', 0)} case(s) reached the "
+                      f"repair model, none sampled more than once",
+            "why": "replay with --repair-samples N to measure it",
+            "breach": None})
+    else:
+        # A gate with no evidence must not pass. This is the mirror of the
+        # unpassable-gate bug: a gate that passes vacuously is not a gate
+        # either, and --repair-samples 1 would otherwise 'prove' pinning.
+        out.append({
+            "id": "adoption_reproducibility",
+            "name": f"adoption decision reproducible (<= {tol:.0%} disagreement)",
+            "kind": "event", "value": None, "threshold": tol, "margin": None,
+            "unit": "rate", "failed": True, "blocking": True,
+            "spread": None, "spread_source": None, "verdict": "FAIL",
+            "detail": "0 cases sampled more than once",
+            "why": "the gate was requested and nothing was sampled twice",
+            "breach": "reproducibility gate requested but no case carries a "
+                      "second repair sample (replay with --repair-samples N)"})
+    return out
+
+
+def _fmt_margin(spec: dict) -> str:
+    if spec["unit"] == "rate":
+        return f"{spec['margin'] * 100:+.1f} pp"
+    return f"{spec['margin']:+d}" if isinstance(spec["margin"], int) \
+        else f"{spec['margin']}"
+
+
+def _fmt_spread(spec: dict, spread) -> str:
+    return f"{spread * 100:.1f} pp" if spec["unit"] == "rate" else f"{spread}"
+
+
+def _coverage_detail(cov: dict, keys: Sequence[str]) -> str:
+    bits = []
+    for k in keys:
+        c = cov.get(k) or {}
+        by_c = {r["case"] for r in c.get("missing_by_construction") or []}
+        by_f = {r["case"] for r in c.get("missing_by_failure") or []}
+        bits.append(f"{k} {c.get('paired')}/{c.get('cases_compared')} paired, "
+                    f"{len(by_c)} case(s) missing by construction, "
+                    f"{len(by_f)} by failure")
+    return "; ".join(bits)
 
 
 # ---------------------------------------------------------------------------
@@ -1410,15 +2216,8 @@ def print_report(rep: dict, verbose: bool = False) -> None:
                   f"{r['audit_invented_docs']}/{r['audit_invented_pages']}/"
                   f"{r['audit_invented_figures']}/{r['audit_not_shown']}")
         print()
-    sp = rep.get("repair_call_spread") or {}
-    if sp.get("cases_sampled_twice"):
-        print(f"REPAIR-CALL SPREAD (the only sampling left in this A/B)")
-        print(f"  cases sampled twice {sp['cases_sampled_twice']}   identical text "
-              f"{sp['identical_repair_text']}   adoption flipped "
-              f"{sp['adoption_flipped']}")
-        for f in sp.get("flips") or []:
-            print(f"    {f}")
-        print()
+    _print_reproducibility(rep)
+    _print_coverage(rep)
     print("COST / LATENCY of the replayed calls")
     for role, c in sorted((rep.get("cost") or {}).items()):
         print(f"  {role:<14} {c['calls']:>3} calls  {c['prompt_tokens']:>7}p + "
@@ -1426,12 +2225,104 @@ def print_report(rep: dict, verbose: bool = False) -> None:
               f"p95 {c['latency_p95_s']}s  total {c['latency_total_s']}s  "
               f"${c['cost_usd']:.4f}")
     print()
-    if rep["breaches"]:
-        print("GATE: FAIL")
-        for b in rep["breaches"]:
-            print(f"  - {b}")
-    else:
-        print("GATE: no breach of the audit's own checks")
+    _print_gates(rep)
+
+
+def _print_reproducibility(rep: dict) -> None:
+    r = rep.get("reproducibility") or {}
+    if not r.get("cases_sampled"):
+        if r.get("cases_with_repair"):
+            print(f"REPRODUCIBILITY   not measured: {r['cases_with_repair']} case(s) "
+                  f"reached the repair model, none sampled twice")
+            print("  replay with --repair-samples N to measure it")
+            print()
+        return
+    n = r["cases_sampled"]
+    print(f"REPRODUCIBILITY — {n} case(s) sampled, repair re-run on IDENTICAL "
+          f"answers and IDENTICAL verdict objects")
+    print(f"  baseline arm                {r['baseline_arm']}"
+          + ("   *** samples are carry-ON; this arm is not — the numbers below "
+             "mix carry with sampling ***" if r.get("carry_mismatch") else ""))
+    print(f"  identical completion        {_fmt_nd(r['identical_completion'])}")
+    print(f"  adoption-decision agreement {_fmt_nd(r['adoption_agreement'])}"
+          f"   disagreement {r['adoption_disagreement_rate']:.1%}")
+    for d in r.get("disagreements") or []:
+        print(f"    {d['case']:28} adopted={d['adoption']} "
+              f"statuses={d['statuses']}")
+        for note in d.get("notes") or []:
+            print(f"        {note}")
+    if r.get("cases_attempted_but_sampled_once"):
+        print(f"  sampled once only: {', '.join(r['cases_attempted_but_sampled_once'])}")
+    w = rep.get("sample_worlds") or {}
+    if w.get("worlds"):
+        print(f"  SPREAD ON THE GATED METRICS across {len(w['worlds'])} sample "
+              f"world(s), {w['cases']} case(s) each")
+        head = f"    {'quantity':32}" + "".join(
+            f"{'world ' + str(x['world']):>12}" for x in w["worlds"]) + f"{'spread':>10}"
+        print(head)
+        for key in _gate_quantities(rep):
+            vals = [x["quantities"].get(key) for x in w["worlds"]]
+            sp = (rep.get("spreads") or {}).get(key) or {}
+            print(f"    {key:32}"
+                  + "".join(f"{_fmt_q(v):>12}" for v in vals)
+                  + f"{_fmt_q(sp.get('from_samples')):>10}")
+        for u in w.get("unresolvable") or []:
+            print(f"    excluded: {u['case']:26} {u['why']}")
+    elif w.get("reason"):
+        print(f"  metric spread: {w['reason']}")
+    for r_ in rep.get("spread_replicates") or []:
+        print(f"  replicate audit: {r_['source']} ({r_['cases_compared']} cases)")
+    print()
+
+
+def _fmt_q(v) -> str:
+    if v is None:
+        return "-"
+    if isinstance(v, float):
+        return f"{v:.4f}"
+    return f"{v:+d}" if isinstance(v, int) and v < 0 else str(v)
+
+
+def _print_coverage(rep: dict) -> None:
+    cov = rep.get("metric_coverage") or {}
+    if not cov:
+        return
+    want = rep.get("require_metrics") or []
+    print("METRIC COVERAGE   (per-case means, the statistic --compare uses)")
+    for key, c in cov.items():
+        gated = " [gated]" if key in want else ""
+        delta = f"{c['delta']:+.1%}" if c["delta"] is not None else "n/a"
+        print(f"  {key:28}{gated:8} {c['paired']}/{c['cases_compared']} paired  "
+              f"{(c['a'] or 0):.1%} -> {(c['b'] or 0):.1%}  {delta}")
+        for r in c["missing_by_construction"]:
+            print(f"      by-construction  {r['case']:22} ({r['side']}) {r['reason'][:70]}")
+        for r in c["missing_by_failure"]:
+            print(f"      BY-FAILURE       {r['case']:22} ({r['side']}) {r['reason'][:70]}")
+    print()
+
+
+def _print_gates(rep: dict) -> None:
+    print(f"{'GATES':52} {'value':>7} {'verdict':>14}  spread")
+    print("-" * 92)
+    for g in rep.get("gates") or []:
+        val = g.get("value")
+        shown = (f"{val:.1%}" if g.get("unit") == "rate" and val is not None
+                 else "-" if val is None else str(val))
+        sp = g.get("spread")
+        sp_s = ("-" if sp is None else
+                f"{sp * 100:.1f} pp" if g.get("unit") == "rate" else str(sp))
+        src = f" ({g['spread_source']})" if g.get("spread_source") else ""
+        print(f"  {g['name']:50} {shown:>7} {g['verdict']:>14}  {sp_s}{src}")
+        if g.get("detail"):
+            print(f"      {g['detail']}")
+        if g.get("why"):
+            print(f"      {g['why']}")
+    print()
+    print(f"GATE: {rep.get('gate_verdict')}")
+    for b in rep.get("breaches") or []:
+        print(f"  - FAIL          {b}")
+    for b in rep.get("indeterminate") or []:
+        print(f"  - INDETERMINATE {b}")
 
 
 # ---------------------------------------------------------------------------
@@ -1445,8 +2336,11 @@ def _replay_parser():
     ap.add_argument("--out-prefix", type=Path, required=True)
     ap.add_argument("--force", action="store_true")
     ap.add_argument("--repair-samples", type=int, default=1,
-                    help="repair calls per failing case; >1 measures the "
-                         "repair pass's own run-to-run spread")
+                    help="repair calls per failing case on IDENTICAL input. "
+                         ">1 measures reproducibility: identical-completion "
+                         "rate, adoption agreement, and the spread the flips "
+                         "put on every gated metric. Costs one extra repair "
+                         "call per failing case per extra sample.")
     ap.add_argument("--limit", type=int)
     ap.add_argument("--verbose", "-v", action="store_true")
     return ap
@@ -1459,10 +2353,36 @@ def _audit_parser():
     ap.add_argument("--off", type=Path, required=True)
     ap.add_argument("--on", type=Path, required=True)
     ap.add_argument("--carry-on", type=Path,
-                    help="the carry-ON arm, reported beside the gated carry-OFF one")
+                    help="the carry-ON arm: reported beside the gated "
+                         "carry-OFF one, AND the baseline the repair samples "
+                         "are compared against (they are drawn with the carry "
+                         "live, so without this the reproducibility numbers "
+                         "mix the carry difference into the sampling one)")
     ap.add_argument("--justifications", type=Path,
                     help="jsonl of {key, justification} documenting a "
                          "necessary supported-claim loss")
+    ap.add_argument("--spread-audit", type=Path, action="append", default=[],
+                    metavar="AUDIT.json",
+                    help="another recorded audit of the same source record; "
+                         "its gated quantities widen the measured spread. "
+                         "Repeatable.")
+    ap.add_argument("--require-metrics",
+                    type=lambda s: [x for x in s.split(",") if x], default=[],
+                    metavar="A,B",
+                    help="gate on these claim rates being present and not "
+                         "regressed. A value missing BY CONSTRUCTION (guard "
+                         "turn, chat turn, 0-claim abstention) is not a "
+                         "failure; one missing by failure is.")
+    ap.add_argument("--max-adoption-disagreement", type=float, default=None,
+                    metavar="R",
+                    help="exit non-zero when repair's adoption decision "
+                         f"disagrees on more than R of the sampled cases "
+                         f"(default {DEFAULT_MAX_ADOPTION_DISAGREEMENT:g}). "
+                         "Passing it when nothing was sampled twice is a "
+                         "failure, not a free pass.")
+    ap.add_argument("--require-spread", action="store_true",
+                    help="a gate with no replicate measurement behind it "
+                         "reads INDETERMINATE rather than PASS")
     ap.add_argument("--json", type=Path, help="also write the report here")
     ap.add_argument("--quiet", action="store_true", help="JSON only")
     ap.add_argument("--verbose", "-v", action="store_true")
@@ -1480,11 +2400,15 @@ def main(argv=None) -> int:
         return 0
     args = _audit_parser().parse_args(argv)
     rep = audit(args.off, args.on, carry_on_path=args.carry_on,
-                justifications=args.justifications)
+                justifications=args.justifications,
+                spread_audits=args.spread_audit,
+                require_metrics=args.require_metrics,
+                max_adoption_disagreement=args.max_adoption_disagreement,
+                require_spread=args.require_spread)
     if not args.quiet:
         print_report(rep, verbose=args.verbose)
         print()
-    print(json.dumps({k: rep[k] for k in (
+    payload = {k: rep[k] for k in (
         "cases_compared", "answers_rewritten", "claims_before", "claims_after",
         "supported_before", "supported_after", "groundedness_after",
         "citation_completeness_after", "invented_docs", "invented_pages",
@@ -1492,7 +2416,13 @@ def main(argv=None) -> int:
         "invented_entities", "sources_not_shown_to_repair",
         "lost_claims", "lost_supported_claims", "lost_supported_undocumented",
         "answer_checks_pass_to_fail", "corrected", "deleted", "qualified",
-        "breaches", "gate_pass")}, indent=1, ensure_ascii=False))
+        "spreads", "metric_coverage", "gates",
+        "breaches", "indeterminate", "gate_verdict", "gate_pass")}
+    # the per-case sample table is in --json; the contract line carries the
+    # rates, the disagreements and nothing that scrolls a terminal off screen
+    payload["reproducibility"] = {k: v for k, v in rep["reproducibility"].items()
+                                  if k != "per_case"}
+    print(json.dumps(payload, indent=1, ensure_ascii=False))
     if args.json:
         Path(args.json).write_text(json.dumps(rep, indent=1, ensure_ascii=False),
                                    encoding="utf-8")

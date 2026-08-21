@@ -1,0 +1,1488 @@
+{
+ "off": "data/eval/replay_release-2b_repair-off.jsonl",
+ "on": "data/eval/replay_release-2b_repair-on-carryoff.jsonl",
+ "cases_compared": 66,
+ "cases_only_on_one_side": [],
+ "answers_rewritten": 4,
+ "claims_before": 173,
+ "claims_after": 167,
+ "supported_before": 150,
+ "supported_after": 150,
+ "groundedness_before": {
+  "n": 154,
+  "d": 173,
+  "rate": 0.8901734104046243,
+  "threshold_95": 165
+ },
+ "groundedness_after": {
+  "n": 150,
+  "d": 167,
+  "rate": 0.8982035928143712,
+  "threshold_95": 159
+ },
+ "citation_completeness_before": {
+  "n": 143,
+  "d": 173,
+  "rate": 0.8265895953757225,
+  "threshold_95": 165
+ },
+ "citation_completeness_after": {
+  "n": 143,
+  "d": 167,
+  "rate": 0.8562874251497006,
+  "threshold_95": 159
+ },
+ "citation_presence_before": {
+  "n": 154,
+  "d": 173,
+  "rate": 0.8901734104046243,
+  "threshold_95": 165
+ },
+ "citation_presence_after": {
+  "n": 153,
+  "d": 167,
+  "rate": 0.9161676646706587,
+  "threshold_95": 159
+ },
+ "contradicted_before": 1,
+ "contradicted_after": 0,
+ "unsupported_before": 22,
+ "unsupported_after": 17,
+ "lost_claims": [
+  {
+   "case": "bc-b30-02-add03-trap",
+   "key": "bc-b30-02-add03-trap:85e59696ea01",
+   "text": "What *is* available in the retrieved excerpts are nearby but different documents (e.g., **GCF/B.30/02/Add.02** and **GCF/B.30/03/Add.03**) that contain funding proposal template/disclosure/confidentiality language and financial/risk sections, but those do **not** establish the contents of **GCF/B.30/02/Add.03**. [105_gcf-b30-02-add02] [104_gcf-b30-03-add03]",
+   "kind": "year",
+   "required": false,
+   "status_before": "unsupported",
+   "grounded_before": true,
+   "source_before": "llm",
+   "reason_before": "Evidence excerpts don't mention GCF/B.30/02/Add.03 contents.",
+   "fate": "deleted",
+   "successor_text": null,
+   "successor_status": null,
+   "successor_grounded": null,
+   "successor_similarity": 0.203,
+   "deleted_though_grounded": true
+  },
+  {
+   "case": "noisy-lower-symbols",
+   "key": "noisy-lower-symbols:284c426de89a",
+   "text": "For FP173 (“The Amazon Bioeconomy Fund”), the retrieved excerpts show **conflicting figures for the amount of GCF funding** in the same document:",
+   "kind": "entity",
+   "required": true,
+   "status_before": "unsupported",
+   "grounded_before": true,
+   "source_before": "llm",
+   "reason_before": "Provided excerpts don’t show any GCF funding figures.",
+   "fate": "deleted",
+   "successor_text": null,
+   "successor_status": null,
+   "successor_grounded": null,
+   "successor_similarity": 0.137,
+   "deleted_though_grounded": true
+  },
+  {
+   "case": "noisy-lower-symbols",
+   "key": "noisy-lower-symbols:19c5ba3989a6",
+   "text": "**US$23.6 million** — shown as “Total GCF funding requested” in section **A.8** on **p.5** [102_gcf-b30-02-add05, p.5; cover pages].",
+   "kind": "money",
+   "required": true,
+   "status_before": "supported",
+   "grounded_before": true,
+   "source_before": "deterministic",
+   "reason_before": "value found in the cited evidence",
+   "fate": "deleted",
+   "successor_text": null,
+   "successor_status": null,
+   "successor_grounded": null,
+   "successor_similarity": 0.105,
+   "deleted_though_grounded": true
+  },
+  {
+   "case": "noisy-lower-symbols",
+   "key": "noisy-lower-symbols:57a10996b2b1",
+   "text": "**US$279,000,000** — shown in section **B.2(b)** on **p.63** (flagged in the registry note as a conflict) [102_gcf-b30-02-add05, cover pages].",
+   "kind": "money",
+   "required": true,
+   "status_before": "supported",
+   "grounded_before": true,
+   "source_before": "deterministic",
+   "reason_before": "value found in the cited evidence",
+   "fate": "deleted",
+   "successor_text": null,
+   "successor_status": null,
+   "successor_grounded": null,
+   "successor_similarity": 0.103,
+   "deleted_though_grounded": true
+  },
+  {
+   "case": "noisy-lower-symbols",
+   "key": "noisy-lower-symbols:0301ee96252a",
+   "text": "A narrative section also states **“IUSD 279 million … from GCF”** and “total cost … IUSD 597 million including IUSD 279 million … from GCF” on **p.129** [102_gcf-b30-02-add05, p.129].",
+   "kind": "number",
+   "required": true,
+   "status_before": "supported",
+   "grounded_before": false,
+   "source_before": "llm",
+   "reason_before": "p.129 explicitly states IUSD 279m from GCF; total cost IUSD 597m.",
+   "fate": "deleted",
+   "successor_text": null,
+   "successor_status": null,
+   "successor_grounded": null,
+   "successor_similarity": 0.107,
+   "deleted_though_grounded": false
+  },
+  {
+   "case": "abs-2014",
+   "key": "abs-2014:73ece9cb342a",
+   "text": "The authoritative registry note states that **2014 has no registered proposals** (and also notes there was **no board meeting that year in this corpus**), and none of the retrieved excerpts are dated 2014.",
+   "kind": "year",
+   "required": false,
+   "status_before": "contradicted",
+   "grounded_before": true,
+   "source_before": "llm",
+   "reason_before": "Excerpt references document code with 2014 in title.",
+   "fate": "corrected",
+   "successor_text": "The authoritative registry note states that **2014 has no registered proposals** (and also notes there was **no board meeting that year in this corpus**) (computed notes), but one retrieved excerpt includes a document code with “2014” in its title (GCF/B.15/2014/Corr.09) [239_gcf-b15-13-add09-corr01, p.1].",
+   "successor_status": "supported",
+   "successor_grounded": true,
+   "successor_similarity": 0.451,
+   "deleted_though_grounded": false
+  },
+  {
+   "case": "abs-2014",
+   "key": "abs-2014:61db0d8b60d4",
+   "text": "Therefore, **no GCF funding proposals were approved in 2014** based on the registry.",
+   "kind": "year",
+   "required": false,
+   "status_before": "unsupported",
+   "grounded_before": true,
+   "source_before": "llm",
+   "reason_before": "Evidence doesn’t state no GCF proposals approved in 2014.",
+   "fate": "qualified",
+   "successor_text": "Therefore, it is **not supported by the retrieved evidence** that **no GCF funding proposals were approved in 2014** based on the registry.",
+   "successor_status": "supported",
+   "successor_grounded": true,
+   "successor_similarity": 0.619,
+   "deleted_though_grounded": false
+  },
+  {
+   "case": "agg-2020-range",
+   "key": "agg-2020-range:06301a42444b",
+   "text": "Approved in **2020** (i.e., funding-proposal packages at **B.25–B.27, 2020**) are the following FP numbers, per the registry note:",
+   "kind": "year",
+   "required": false,
+   "status_before": "unsupported",
+   "grounded_before": false,
+   "source_before": "deterministic",
+   "reason_before": "no citation on a factual claim",
+   "fate": "deleted",
+   "successor_text": null,
+   "successor_status": null,
+   "successor_grounded": null,
+   "successor_similarity": 0.059,
+   "deleted_though_grounded": false
+  },
+  {
+   "case": "agg-2020-range",
+   "key": "agg-2020-range:0bcfd3e8c1e8",
+   "text": "The retrieved page excerpts shown (e.g., from B.26/B.27 documents) do not list the full set of 2020 approvals themselves; the authoritative support in the surfaced context is the registry note.",
+   "kind": "number",
+   "required": true,
+   "status_before": "unsupported",
+   "grounded_before": true,
+   "source_before": "llm",
+   "reason_before": "Evidence shows excerpts, but no registry note or 2020 approvals list.",
+   "fate": "deleted",
+   "successor_text": null,
+   "successor_status": null,
+   "successor_grounded": null,
+   "successor_similarity": 0.05,
+   "deleted_though_grounded": true
+  }
+ ],
+ "lost_supported_claims": 3,
+ "lost_supported_undocumented": 3,
+ "added_claims": [
+  {
+   "case": "noisy-lower-symbols",
+   "key": "noisy-lower-symbols:f23c671f39c9",
+   "text": "Pour FP173 (« The Amazon Bioeconomy Fund »), les extraits récupérés **ne montrent pas de chiffres de financement du GCF** et ne permettent donc pas d’étayer l’affirmation selon laquelle le document contient des **chiffres contradictoires** sur le montant du financement du GCF [102_gcf-b30-02-add05, p.87; 102_gcf-b30-02-add05, p.89].",
+   "kind": "entity",
+   "status_after": "supported",
+   "grounded_after": true,
+   "cited": true
+  },
+  {
+   "case": "abs-2014",
+   "key": "abs-2014:de5fe23e7e45",
+   "text": "The authoritative registry note states that **2014 has no registered proposals** (and also notes there was **no board meeting that year in this corpus**) (computed notes), but one retrieved excerpt includes a document code with “2014” in its title (GCF/B.15/2014/Corr.09) [239_gcf-b15-13-add09-corr01, p.1].",
+   "kind": "entity",
+   "status_after": "supported",
+   "grounded_after": true,
+   "cited": true
+  },
+  {
+   "case": "abs-2014",
+   "key": "abs-2014:2f819fd0537c",
+   "text": "Therefore, it is **not supported by the retrieved evidence** that **no GCF funding proposals were approved in 2014** based on the registry.",
+   "kind": "year",
+   "status_after": "supported",
+   "grounded_after": true,
+   "cited": true
+  }
+ ],
+ "status_moved": [],
+ "fates": {
+  "deleted": 7,
+  "corrected": 1,
+  "qualified": 1
+ },
+ "corrected": 1,
+ "deleted": 7,
+ "qualified": 1,
+ "deleted_though_grounded": [
+  {
+   "case": "bc-b30-02-add03-trap",
+   "key": "bc-b30-02-add03-trap:85e59696ea01",
+   "text": "What *is* available in the retrieved excerpts are nearby but different documents (e.g., **GCF/B.30/02/Add.02** and **GCF/B.30/03/Add.03**) that contain funding proposal template/disclosure/confidentiality language and financial/risk sections, but those do **not** establish the contents of **GCF/B.30/02/Add.03**. [105_gcf-b30-02-add02] [104_gcf-b30-03-add03]",
+   "kind": "year",
+   "required": false,
+   "status_before": "unsupported",
+   "grounded_before": true,
+   "source_before": "llm",
+   "reason_before": "Evidence excerpts don't mention GCF/B.30/02/Add.03 contents.",
+   "fate": "deleted",
+   "successor_text": null,
+   "successor_status": null,
+   "successor_grounded": null,
+   "successor_similarity": 0.203,
+   "deleted_though_grounded": true
+  },
+  {
+   "case": "noisy-lower-symbols",
+   "key": "noisy-lower-symbols:284c426de89a",
+   "text": "For FP173 (“The Amazon Bioeconomy Fund”), the retrieved excerpts show **conflicting figures for the amount of GCF funding** in the same document:",
+   "kind": "entity",
+   "required": true,
+   "status_before": "unsupported",
+   "grounded_before": true,
+   "source_before": "llm",
+   "reason_before": "Provided excerpts don’t show any GCF funding figures.",
+   "fate": "deleted",
+   "successor_text": null,
+   "successor_status": null,
+   "successor_grounded": null,
+   "successor_similarity": 0.137,
+   "deleted_though_grounded": true
+  },
+  {
+   "case": "noisy-lower-symbols",
+   "key": "noisy-lower-symbols:19c5ba3989a6",
+   "text": "**US$23.6 million** — shown as “Total GCF funding requested” in section **A.8** on **p.5** [102_gcf-b30-02-add05, p.5; cover pages].",
+   "kind": "money",
+   "required": true,
+   "status_before": "supported",
+   "grounded_before": true,
+   "source_before": "deterministic",
+   "reason_before": "value found in the cited evidence",
+   "fate": "deleted",
+   "successor_text": null,
+   "successor_status": null,
+   "successor_grounded": null,
+   "successor_similarity": 0.105,
+   "deleted_though_grounded": true
+  },
+  {
+   "case": "noisy-lower-symbols",
+   "key": "noisy-lower-symbols:57a10996b2b1",
+   "text": "**US$279,000,000** — shown in section **B.2(b)** on **p.63** (flagged in the registry note as a conflict) [102_gcf-b30-02-add05, cover pages].",
+   "kind": "money",
+   "required": true,
+   "status_before": "supported",
+   "grounded_before": true,
+   "source_before": "deterministic",
+   "reason_before": "value found in the cited evidence",
+   "fate": "deleted",
+   "successor_text": null,
+   "successor_status": null,
+   "successor_grounded": null,
+   "successor_similarity": 0.103,
+   "deleted_though_grounded": true
+  },
+  {
+   "case": "agg-2020-range",
+   "key": "agg-2020-range:0bcfd3e8c1e8",
+   "text": "The retrieved page excerpts shown (e.g., from B.26/B.27 documents) do not list the full set of 2020 approvals themselves; the authoritative support in the surfaced context is the registry note.",
+   "kind": "number",
+   "required": true,
+   "status_before": "unsupported",
+   "grounded_before": true,
+   "source_before": "llm",
+   "reason_before": "Evidence shows excerpts, but no registry note or 2020 approvals list.",
+   "fate": "deleted",
+   "successor_text": null,
+   "successor_status": null,
+   "successor_grounded": null,
+   "successor_similarity": 0.05,
+   "deleted_though_grounded": true
+  }
+ ],
+ "invented_docs": [],
+ "invented_pages": [],
+ "invented_figures": [],
+ "invented_figures_matcher_cannot_place": [],
+ "invented_entities": [],
+ "sources_not_shown_to_repair": [],
+ "newly_cited_pages": [
+  {
+   "doc": "102_gcf-b30-02-add05",
+   "page": 87,
+   "case": "noisy-lower-symbols"
+  },
+  {
+   "doc": "102_gcf-b30-02-add05",
+   "page": 89,
+   "case": "noisy-lower-symbols"
+  },
+  {
+   "doc": "239_gcf-b15-13-add09-corr01",
+   "page": 1,
+   "case": "abs-2014"
+  }
+ ],
+ "novel_sentences": [
+  {
+   "text": "Do not infer details for it from other documents.”** So, based on what retrieval surfaced, I **cannot determine what is in GCF/B.30/02/Add.03**. [Registry — GCF/B.30/02/Add.03: NOT FOUND]",
+   "is_claim": false,
+   "status": null,
+   "grounded": null,
+   "hedge": true,
+   "case": "bc-b30-02-add03-trap"
+  },
+  {
+   "text": "Pour FP173 (« The Amazon Bioeconomy Fund »), les extraits récupérés **ne montrent pas de chiffres de financement du GCF** et ne permettent donc pas d’étayer l’affirmation selon laquelle le document contient des **chiffres contradictoires** sur le montant du financement du GCF [102_gcf-b30-02-add05, ",
+   "is_claim": true,
+   "status": "supported",
+   "grounded": true,
+   "hedge": false,
+   "case": "noisy-lower-symbols"
+  },
+  {
+   "text": "The authoritative registry note states that **2014 has no registered proposals** (and also notes there was **no board meeting that year in this corpus**) (computed notes), but one retrieved excerpt includes a document code with “2014” in its title (GCF/B.15/2014/Corr.09) [239_gcf-b15-13-add09-corr01",
+   "is_claim": true,
+   "status": "supported",
+   "grounded": true,
+   "hedge": false,
+   "case": "abs-2014"
+  },
+  {
+   "text": "Therefore, it is **not supported by the retrieved evidence** that **no GCF funding proposals were approved in 2014** based on the registry.",
+   "is_claim": true,
+   "status": "supported",
+   "grounded": true,
+   "hedge": true,
+   "case": "abs-2014"
+  },
+  {
+   "text": "**FP124, FP125, FP126, FP127, FP128, FP129, FP130, FP131, FP132, FP133, FP134, FP135, FP136, FP137, FP138, FP139, FP140, FP141, FP142, FP143, FP144, FP145, FP146, FP147, FP148, FP149, FP150, FP151, FP152, FP153**. [Registry note in prompt]",
+   "is_claim": false,
+   "status": null,
+   "grounded": null,
+   "hedge": false,
+   "case": "agg-2020-range"
+  }
+ ],
+ "answer_checks_pass_before": 54,
+ "answer_checks_pass_after": 54,
+ "answer_checks_pass_to_fail": 1,
+ "answer_checks_pass_to_fail_cases": [
+  "noisy-lower-symbols"
+ ],
+ "answer_checks_fail_to_pass_cases": [
+  "bc-b30-02-add03-trap"
+ ],
+ "check_regressions": [
+  {
+   "case": "noisy-lower-symbols",
+   "check": "language",
+   "before": true,
+   "after": false
+  },
+  {
+   "case": "noisy-lower-symbols",
+   "check": "must_contain:re:23[.,]6",
+   "before": true,
+   "after": false
+  },
+  {
+   "case": "noisy-lower-symbols",
+   "check": "pass",
+   "before": true,
+   "after": false
+  }
+ ],
+ "language_regressions": [
+  {
+   "case": "noisy-lower-symbols",
+   "lang": "en",
+   "language_before": true,
+   "language_after": false
+  }
+ ],
+ "language_per_case": [
+  {
+   "case": "bc-b30-02-add03-trap",
+   "lang": "en",
+   "language_before": true,
+   "language_after": true
+  },
+  {
+   "case": "noisy-lower-symbols",
+   "lang": "en",
+   "language_before": true,
+   "language_after": false
+  },
+  {
+   "case": "abs-2014",
+   "lang": "en",
+   "language_before": true,
+   "language_after": true
+  },
+  {
+   "case": "agg-2020-range",
+   "lang": "en",
+   "language_before": true,
+   "language_after": true
+  }
+ ],
+ "behaviour_per_case": [
+  {
+   "case": "bc-b30-02-add03-trap",
+   "expected": "abstain",
+   "before": true,
+   "after": true
+  },
+  {
+   "case": "noisy-lower-symbols",
+   "expected": "answer",
+   "before": true,
+   "after": true
+  },
+  {
+   "case": "abs-2014",
+   "expected": "abstain",
+   "before": true,
+   "after": true
+  },
+  {
+   "case": "agg-2020-range",
+   "expected": "answer",
+   "before": true,
+   "after": true
+  }
+ ],
+ "field_coverage_before": {
+  "n": 53,
+  "d": 56,
+  "rate": 0.9464285714285714
+ },
+ "field_coverage_after": {
+  "n": 52,
+  "d": 56,
+  "rate": 0.9285714285714286
+ },
+ "per_case": [
+  {
+   "case": "bc-b30-02-add03-trap",
+   "class": "board-code",
+   "lang": "en",
+   "status_before": "partial",
+   "status_after": "repaired",
+   "claims": [
+    2,
+    1
+   ],
+   "supported": [
+    1,
+    1
+   ],
+   "grounded": [
+    2,
+    1
+   ],
+   "citation_supported": [
+    1,
+    1
+   ],
+   "score": [
+    0.8333333333333334,
+    1.0
+   ],
+   "chars": [
+    679,
+    318
+   ],
+   "lost": 1,
+   "added": 0,
+   "fates": {
+    "deleted": 1
+   },
+   "repair_notes": [
+    "repaired 1 failing claim(s)"
+   ]
+  },
+  {
+   "case": "noisy-lower-symbols",
+   "class": "noisy",
+   "lang": "en",
+   "status_before": "partial",
+   "status_after": "repaired",
+   "claims": [
+    4,
+    1
+   ],
+   "supported": [
+    3,
+    1
+   ],
+   "grounded": [
+    3,
+    1
+   ],
+   "citation_supported": [
+    3,
+    1
+   ],
+   "score": [
+    1.0,
+    0.5
+   ],
+   "chars": [
+    782,
+    334
+   ],
+   "lost": 4,
+   "added": 1,
+   "fates": {
+    "deleted": 4
+   },
+   "repair_notes": [
+    "repaired 1 failing claim(s)"
+   ]
+  },
+  {
+   "case": "abs-2014",
+   "class": "abstain",
+   "lang": "en",
+   "status_before": "partial",
+   "status_after": "repaired",
+   "claims": [
+    2,
+    2
+   ],
+   "supported": [
+    0,
+    2
+   ],
+   "grounded": [
+    2,
+    2
+   ],
+   "citation_supported": [
+    0,
+    2
+   ],
+   "score": [
+    1.0,
+    1.0
+   ],
+   "chars": [
+    296,
+    453
+   ],
+   "lost": 2,
+   "added": 2,
+   "fates": {
+    "corrected": 1,
+    "qualified": 1
+   },
+   "repair_notes": [
+    "repaired 2 failing claim(s)"
+   ]
+  },
+  {
+   "case": "agg-2020-range",
+   "class": "aggregate",
+   "lang": "en",
+   "status_before": "abstain",
+   "status_after": "repaired",
+   "claims": [
+    2,
+    0
+   ],
+   "supported": [
+    0,
+    0
+   ],
+   "grounded": [
+    1,
+    0
+   ],
+   "citation_supported": [
+    0,
+    0
+   ],
+   "score": [
+    1.0,
+    1.0
+   ],
+   "chars": [
+    566,
+    239
+   ],
+   "lost": 2,
+   "added": 0,
+   "fates": {
+    "deleted": 2
+   },
+   "repair_notes": [
+    "repaired 2 failing claim(s)"
+   ]
+  }
+ ],
+ "carry_on_vs_carry_off": {
+  "answers_that_differ": [
+   {
+    "case": "abs-antarctica",
+    "carry_on_repaired": true,
+    "carry_off_repaired": false,
+    "carry_on_notes": [
+     "repaired 1 failing claim(s)"
+    ],
+    "carry_off_notes": [
+     "repair rejected: 1 claim(s) still fail verification (was 1) — not found in the cited evidence: Antarctica"
+    ]
+   },
+   {
+    "case": "agg-2021-boards",
+    "carry_on_repaired": true,
+    "carry_off_repaired": false,
+    "carry_on_notes": [
+     "repaired 1 failing claim(s)"
+    ],
+    "carry_off_notes": [
+     "repair rejected: 1 claim(s) still fail verification (was 1) — no citation on a factual claim"
+    ]
+   }
+  ],
+  "totals": {
+   "claims_carry_on": 165,
+   "claims_carry_off": 167,
+   "supported_carry_on": 150,
+   "supported_carry_off": 150,
+   "grounded_carry_on": 149,
+   "grounded_carry_off": 150,
+   "citation_supported_carry_on": 143,
+   "citation_supported_carry_off": 143
+  }
+ },
+ "cost": {
+  "judge": {
+   "calls": 21,
+   "prompt_tokens": 19094,
+   "completion_tokens": 1402,
+   "latency_total_s": 40.43,
+   "latency_p50_s": 1.73,
+   "latency_p95_s": 2.469,
+   "cost_usd": 0.0379
+  },
+  "repair": {
+   "calls": 12,
+   "prompt_tokens": 16306,
+   "completion_tokens": 3090,
+   "latency_total_s": 48.39,
+   "latency_p50_s": 3.604,
+   "latency_p95_s": 7.856,
+   "cost_usd": 0.0513
+  }
+ },
+ "repair_call_spread": {
+  "cases_sampled_twice": 0,
+  "identical_repair_text": 0,
+  "adoption_flipped": 0,
+  "flips": []
+ },
+ "pre_gate_probe": {
+  "proposals": 12,
+  "verify_gate_caught_introduced_sources": [],
+  "audit_found": {
+   "invented_docs": 0,
+   "invented_pages": 0,
+   "sources_not_shown_to_repair": 0,
+   "invented_figures": 1,
+   "invented_entities": 1,
+   "newly_cited_pages": 7
+  },
+  "detail": {
+   "invented_docs": [],
+   "invented_pages": [],
+   "sources_not_shown_to_repair": [],
+   "invented_figures": [
+    {
+     "digits": "1503",
+     "matcher_places_it": true,
+     "case": "cmp-fp254-fp248-currency"
+    }
+   ],
+   "invented_entities": [
+    {
+     "name": "Peganas/Pegasus Capital Advisors",
+     "claim": "**“Global Sub-national Climate Fund (SoCF Global) – Equity”** (submitted by **Peganas/Pegasus Capital Advisors**) [123_g",
+     "case": "disc-subnational-pair"
+    }
+   ],
+   "newly_cited_pages": [
+    {
+     "doc": "123_gcf-b27-02-add12",
+     "page": 145,
+     "case": "disc-subnational-pair"
+    },
+    {
+     "doc": "124_gcf-b27-02-add11",
+     "page": 153,
+     "case": "disc-subnational-pair"
+    },
+    {
+     "doc": "123_gcf-b27-02-add12",
+     "page": 145,
+     "case": "disc-subnational-pair"
+    },
+    {
+     "doc": "124_gcf-b27-02-add11",
+     "page": 153,
+     "case": "disc-subnational-pair"
+    },
+    {
+     "doc": "102_gcf-b30-02-add05",
+     "page": 87,
+     "case": "noisy-lower-symbols"
+    },
+    {
+     "doc": "102_gcf-b30-02-add05",
+     "page": 89,
+     "case": "noisy-lower-symbols"
+    },
+    {
+     "doc": "239_gcf-b15-13-add09-corr01",
+     "page": 1,
+     "case": "abs-2014"
+    }
+   ]
+  },
+  "per_case": [
+   {
+    "case": "cid-fp0086-padded",
+    "failures": [
+     1,
+     1
+    ],
+    "supported_required": [
+     6,
+     6
+    ],
+    "would_adopt": false,
+    "verify_introduced_sources": [],
+    "audit_invented_docs": 0,
+    "audit_invented_pages": 0,
+    "audit_not_shown": 0,
+    "audit_invented_figures": 0
+   },
+   {
+    "case": "bc-b30-02-add03-trap",
+    "failures": [
+     1,
+     0
+    ],
+    "supported_required": [
+     1,
+     1
+    ],
+    "would_adopt": true,
+    "verify_introduced_sources": [],
+    "audit_invented_docs": 0,
+    "audit_invented_pages": 0,
+    "audit_not_shown": 0,
+    "audit_invented_figures": 0
+   },
+   {
+    "case": "disc-subnational-pair",
+    "failures": [
+     1,
+     2
+    ],
+    "supported_required": [
+     3,
+     2
+    ],
+    "would_adopt": false,
+    "verify_introduced_sources": [],
+    "audit_invented_docs": 0,
+    "audit_invented_pages": 0,
+    "audit_not_shown": 0,
+    "audit_invented_figures": 0
+   },
+   {
+    "case": "cmp-fp086-fp220-currency",
+    "failures": [
+     1,
+     1
+    ],
+    "supported_required": [
+     3,
+     3
+    ],
+    "would_adopt": false,
+    "verify_introduced_sources": [],
+    "audit_invented_docs": 0,
+    "audit_invented_pages": 0,
+    "audit_not_shown": 0,
+    "audit_invented_figures": 0
+   },
+   {
+    "case": "cmp-fp254-fp248-currency",
+    "failures": [
+     1,
+     2
+    ],
+    "supported_required": [
+     4,
+     3
+    ],
+    "would_adopt": false,
+    "verify_introduced_sources": [],
+    "audit_invented_docs": 0,
+    "audit_invented_pages": 0,
+    "audit_not_shown": 0,
+    "audit_invented_figures": 0
+   },
+   {
+    "case": "conf-fp153-gcf",
+    "failures": [
+     2,
+     2
+    ],
+    "supported_required": [
+     2,
+     2
+    ],
+    "would_adopt": false,
+    "verify_introduced_sources": [],
+    "audit_invented_docs": 0,
+    "audit_invented_pages": 0,
+    "audit_not_shown": 0,
+    "audit_invented_figures": 0
+   },
+   {
+    "case": "noisy-lower-symbols",
+    "failures": [
+     1,
+     0
+    ],
+    "supported_required": [
+     3,
+     1
+    ],
+    "would_adopt": true,
+    "verify_introduced_sources": [],
+    "audit_invented_docs": 0,
+    "audit_invented_pages": 0,
+    "audit_not_shown": 0,
+    "audit_invented_figures": 0
+   },
+   {
+    "case": "abs-2014",
+    "failures": [
+     2,
+     0
+    ],
+    "supported_required": [
+     0,
+     1
+    ],
+    "would_adopt": true,
+    "verify_introduced_sources": [],
+    "audit_invented_docs": 0,
+    "audit_invented_pages": 0,
+    "audit_not_shown": 0,
+    "audit_invented_figures": 0
+   },
+   {
+    "case": "abs-antarctica",
+    "failures": [
+     1,
+     1
+    ],
+    "supported_required": [
+     1,
+     0
+    ],
+    "would_adopt": false,
+    "verify_introduced_sources": [],
+    "audit_invented_docs": 0,
+    "audit_invented_pages": 0,
+    "audit_not_shown": 0,
+    "audit_invented_figures": 0
+   },
+   {
+    "case": "agg-2020-range",
+    "failures": [
+     2,
+     0
+    ],
+    "supported_required": [
+     0,
+     0
+    ],
+    "would_adopt": true,
+    "verify_introduced_sources": [],
+    "audit_invented_docs": 0,
+    "audit_invented_pages": 0,
+    "audit_not_shown": 0,
+    "audit_invented_figures": 0
+   },
+   {
+    "case": "agg-corpus-boards",
+    "failures": [
+     9,
+     4
+    ],
+    "supported_required": [
+     0,
+     4
+    ],
+    "would_adopt": false,
+    "verify_introduced_sources": [],
+    "audit_invented_docs": 0,
+    "audit_invented_pages": 0,
+    "audit_not_shown": 0,
+    "audit_invented_figures": 0
+   },
+   {
+    "case": "agg-2021-boards",
+    "failures": [
+     1,
+     1
+    ],
+    "supported_required": [
+     3,
+     3
+    ],
+    "would_adopt": false,
+    "verify_introduced_sources": [],
+    "audit_invented_docs": 0,
+    "audit_invented_pages": 0,
+    "audit_not_shown": 0,
+    "audit_invented_figures": 0
+   }
+  ]
+ },
+ "breaches": [
+  "3 supported claim(s) lost with no documented necessity",
+  "1 answer(s) pass -> fail",
+  "1 language regression(s)",
+  "groundedness 150/167 (89.8%) below the >= 159/167 gate",
+  "citation completeness 143/167 (85.6%) below the >= 159/167 gate"
+ ],
+ "gate_pass": false,
+ "inputs": {
+  "off_sha256": "5368efab5f2401fe241485472d524217de458ac09b7042aec0b337e8bfb292e7",
+  "on_sha256": "85a3f790bb9ee7e233b9abe07fb36e7f592b146b230bdd74f40a6c39c6a87045",
+  "carry_on_sha256": "f2d5c02590e729c0d3bfde6c76c0f8b3ef7f6ec0ef774bd6810ae7c9f932b532",
+  "audit_verify_blob_sha": "bbdcfddc2d1183d196628e9d809a3680ec52c41fef85fce3c6247ebfc3ab6623"
+ },
+ "reproducibility": {
+  "cases_with_repair": 12,
+  "cases_sampled": 0,
+  "cases_attempted_but_sampled_once": [
+   "cid-fp0086-padded",
+   "bc-b30-02-add03-trap",
+   "disc-subnational-pair",
+   "cmp-fp086-fp220-currency",
+   "cmp-fp254-fp248-currency",
+   "conf-fp153-gcf",
+   "noisy-lower-symbols",
+   "abs-2014",
+   "abs-antarctica",
+   "agg-2020-range",
+   "agg-corpus-boards",
+   "agg-2021-boards"
+  ],
+  "baseline_arm": "carry-on",
+  "carry_mismatch": false,
+  "identical_completion": {
+   "n": 0,
+   "d": 0,
+   "rate": null,
+   "threshold_95": null
+  },
+  "adoption_agreement": {
+   "n": 0,
+   "d": 0,
+   "rate": null,
+   "threshold_95": null
+  },
+  "adoption_disagreement_rate": null,
+  "disagreements": [],
+  "per_case": []
+ },
+ "sample_worlds": {
+  "worlds": [],
+  "depth": 0,
+  "cases": 0,
+  "unresolvable": [],
+  "reason": "no case carries a second repair sample"
+ },
+ "spread_replicates": [
+  {
+   "source": "data/eval/audit_repair_release-2.json",
+   "cases_compared": 66
+  }
+ ],
+ "spreads": {
+  "invented_docs": {
+   "value": 0,
+   "from_samples": null,
+   "from_replicates": 0,
+   "source": "replicates",
+   "n_samples": 0,
+   "n_replicates": 2
+  },
+  "invented_pages": {
+   "value": 0,
+   "from_samples": null,
+   "from_replicates": 0,
+   "source": "replicates",
+   "n_samples": 0,
+   "n_replicates": 2
+  },
+  "sources_not_shown_to_repair": {
+   "value": 0,
+   "from_samples": null,
+   "from_replicates": 0,
+   "source": "replicates",
+   "n_samples": 0,
+   "n_replicates": 2
+  },
+  "invented_figures": {
+   "value": 0,
+   "from_samples": null,
+   "from_replicates": 0,
+   "source": "replicates",
+   "n_samples": 0,
+   "n_replicates": 2
+  },
+  "lost_supported_undocumented": {
+   "value": 1,
+   "from_samples": null,
+   "from_replicates": 1,
+   "source": "replicates",
+   "n_samples": 0,
+   "n_replicates": 2
+  },
+  "answer_checks_pass_to_fail": {
+   "value": 1,
+   "from_samples": null,
+   "from_replicates": 1,
+   "source": "replicates",
+   "n_samples": 0,
+   "n_replicates": 2
+  },
+  "language_regressions": {
+   "value": 1,
+   "from_samples": null,
+   "from_replicates": 1,
+   "source": "replicates",
+   "n_samples": 0,
+   "n_replicates": 2
+  },
+  "supported_non_decreasing": {
+   "value": 4,
+   "from_samples": null,
+   "from_replicates": 4,
+   "source": "replicates",
+   "n_samples": 0,
+   "n_replicates": 2
+  },
+  "groundedness": {
+   "value": 0.01356111306798169,
+   "from_samples": null,
+   "from_replicates": 0.01356111306798169,
+   "source": "replicates",
+   "n_samples": 0,
+   "n_replicates": 2
+  },
+  "citation_completeness": {
+   "value": 0.002536104262064076,
+   "from_samples": null,
+   "from_replicates": 0.002536104262064076,
+   "source": "replicates",
+   "n_samples": 0,
+   "n_replicates": 2
+  }
+ },
+ "metric_coverage": {
+  "groundedness_rate": {
+   "cases_compared": 66,
+   "paired": 61,
+   "a": 0.8975409836065574,
+   "b": 0.9016393442622951,
+   "delta": 0.004098360655737654,
+   "no_regression": true,
+   "missing_by_construction": [
+    {
+     "case": "fr-fp999-abstain",
+     "side": "off",
+     "kind": "by-construction",
+     "reason": "guard answer: production returns before verification (chainlit_app.py:1116-1133), so the turn has no claims"
+    },
+    {
+     "case": "fr-fp999-abstain",
+     "side": "on",
+     "kind": "by-construction",
+     "reason": "guard answer: production returns before verification (chainlit_app.py:1116-1133), so the turn has no claims"
+    },
+    {
+     "case": "abs-fp999",
+     "side": "off",
+     "kind": "by-construction",
+     "reason": "guard answer: production returns before verification (chainlit_app.py:1116-1133), so the turn has no claims"
+    },
+    {
+     "case": "abs-fp999",
+     "side": "on",
+     "kind": "by-construction",
+     "reason": "guard answer: production returns before verification (chainlit_app.py:1116-1133), so the turn has no claims"
+    },
+    {
+     "case": "abs-b44",
+     "side": "off",
+     "kind": "by-construction",
+     "reason": "0 claims: the rate's denominator is zero — an abstention with nothing to verify has no rate to compare"
+    },
+    {
+     "case": "abs-b44",
+     "side": "on",
+     "kind": "by-construction",
+     "reason": "0 claims: the rate's denominator is zero — an abstention with nothing to verify has no rate to compare"
+    },
+    {
+     "case": "abs-offtopic",
+     "side": "off",
+     "kind": "by-construction",
+     "reason": "chat turn: production answers from history without verification"
+    },
+    {
+     "case": "abs-offtopic",
+     "side": "on",
+     "kind": "by-construction",
+     "reason": "chat turn: production answers from history without verification"
+    },
+    {
+     "case": "agg-2020-range",
+     "side": "on",
+     "kind": "by-construction",
+     "reason": "0 claims: the rate's denominator is zero — an abstention with nothing to verify has no rate to compare"
+    }
+   ],
+   "missing_by_failure": [],
+   "excluded_by_construction": [
+    "abs-b44",
+    "abs-fp999",
+    "abs-offtopic",
+    "agg-2020-range",
+    "fr-fp999-abstain"
+   ]
+  },
+  "citation_completeness_rate": {
+   "cases_compared": 66,
+   "paired": 61,
+   "a": 0.8831967213114753,
+   "b": 0.9118852459016392,
+   "delta": 0.02868852459016391,
+   "no_regression": true,
+   "missing_by_construction": [
+    {
+     "case": "fr-fp999-abstain",
+     "side": "off",
+     "kind": "by-construction",
+     "reason": "guard answer: production returns before verification (chainlit_app.py:1116-1133), so the turn has no claims"
+    },
+    {
+     "case": "fr-fp999-abstain",
+     "side": "on",
+     "kind": "by-construction",
+     "reason": "guard answer: production returns before verification (chainlit_app.py:1116-1133), so the turn has no claims"
+    },
+    {
+     "case": "abs-fp999",
+     "side": "off",
+     "kind": "by-construction",
+     "reason": "guard answer: production returns before verification (chainlit_app.py:1116-1133), so the turn has no claims"
+    },
+    {
+     "case": "abs-fp999",
+     "side": "on",
+     "kind": "by-construction",
+     "reason": "guard answer: production returns before verification (chainlit_app.py:1116-1133), so the turn has no claims"
+    },
+    {
+     "case": "abs-b44",
+     "side": "off",
+     "kind": "by-construction",
+     "reason": "0 claims: the rate's denominator is zero — an abstention with nothing to verify has no rate to compare"
+    },
+    {
+     "case": "abs-b44",
+     "side": "on",
+     "kind": "by-construction",
+     "reason": "0 claims: the rate's denominator is zero — an abstention with nothing to verify has no rate to compare"
+    },
+    {
+     "case": "abs-offtopic",
+     "side": "off",
+     "kind": "by-construction",
+     "reason": "chat turn: production answers from history without verification"
+    },
+    {
+     "case": "abs-offtopic",
+     "side": "on",
+     "kind": "by-construction",
+     "reason": "chat turn: production answers from history without verification"
+    },
+    {
+     "case": "agg-2020-range",
+     "side": "on",
+     "kind": "by-construction",
+     "reason": "0 claims: the rate's denominator is zero — an abstention with nothing to verify has no rate to compare"
+    }
+   ],
+   "missing_by_failure": [],
+   "excluded_by_construction": [
+    "abs-b44",
+    "abs-fp999",
+    "abs-offtopic",
+    "agg-2020-range",
+    "fr-fp999-abstain"
+   ]
+  }
+ },
+ "require_metrics": [
+  "groundedness_rate",
+  "citation_completeness_rate"
+ ],
+ "gates": [
+  {
+   "id": "invented_docs",
+   "name": "no document citation invented",
+   "kind": "event",
+   "value": 0,
+   "threshold": 0,
+   "margin": 0,
+   "unit": "count",
+   "failed": false,
+   "breach": null,
+   "blocking": true,
+   "spread": 0,
+   "spread_source": "replicates",
+   "why": "clean, and the spread is measured at 0",
+   "verdict": "PASS"
+  },
+  {
+   "id": "invented_pages",
+   "name": "no page citation invented",
+   "kind": "event",
+   "value": 0,
+   "threshold": 0,
+   "margin": 0,
+   "unit": "count",
+   "failed": false,
+   "breach": null,
+   "blocking": true,
+   "spread": 0,
+   "spread_source": "replicates",
+   "why": "clean, and the spread is measured at 0",
+   "verdict": "PASS"
+  },
+  {
+   "id": "sources_not_shown_to_repair",
+   "name": "no citation on an unshown document",
+   "kind": "event",
+   "value": 0,
+   "threshold": 0,
+   "margin": 0,
+   "unit": "count",
+   "failed": false,
+   "breach": null,
+   "blocking": true,
+   "spread": 0,
+   "spread_source": "replicates",
+   "why": "clean, and the spread is measured at 0",
+   "verdict": "PASS"
+  },
+  {
+   "id": "invented_figures",
+   "name": "no figure invented",
+   "kind": "event",
+   "value": 0,
+   "threshold": 0,
+   "margin": 0,
+   "unit": "count",
+   "failed": false,
+   "breach": null,
+   "blocking": true,
+   "spread": 0,
+   "spread_source": "replicates",
+   "why": "clean, and the spread is measured at 0",
+   "verdict": "PASS"
+  },
+  {
+   "id": "lost_supported_undocumented",
+   "name": "no supported claim lost undocumented",
+   "kind": "event",
+   "value": 3,
+   "threshold": 0,
+   "margin": 3,
+   "unit": "count",
+   "failed": true,
+   "breach": "3 supported claim(s) lost with no documented necessity",
+   "blocking": true,
+   "spread": 1,
+   "spread_source": "replicates",
+   "why": "3 supported claim(s) lost with no documented necessity",
+   "verdict": "FAIL"
+  },
+  {
+   "id": "answer_checks_pass_to_fail",
+   "name": "no correct answer becomes incorrect",
+   "kind": "event",
+   "value": 1,
+   "threshold": 0,
+   "margin": 1,
+   "unit": "count",
+   "failed": true,
+   "breach": "1 answer(s) pass -> fail",
+   "blocking": true,
+   "spread": 1,
+   "spread_source": "replicates",
+   "why": "1 answer(s) pass -> fail",
+   "verdict": "FAIL"
+  },
+  {
+   "id": "language_regressions",
+   "name": "no language regression",
+   "kind": "event",
+   "value": 1,
+   "threshold": 0,
+   "margin": 1,
+   "unit": "count",
+   "failed": true,
+   "breach": "1 language regression(s)",
+   "blocking": true,
+   "spread": 1,
+   "spread_source": "replicates",
+   "why": "1 language regression(s)",
+   "verdict": "FAIL"
+  },
+  {
+   "id": "supported_non_decreasing",
+   "name": "supported non-decreasing",
+   "kind": "margin",
+   "value": 0,
+   "threshold": 0,
+   "margin": 0,
+   "unit": "claims",
+   "failed": false,
+   "blocking": true,
+   "breach": null,
+   "spread": 4,
+   "spread_source": "replicates",
+   "why": "margin +0 is inside the measured spread 4",
+   "verdict": "INDETERMINATE"
+  },
+  {
+   "id": "groundedness",
+   "name": "groundedness >= 95%",
+   "kind": "margin",
+   "value": 0.8982035928143712,
+   "threshold": 0.95,
+   "margin": -0.05179640718562872,
+   "unit": "rate",
+   "failed": true,
+   "blocking": true,
+   "detail": "150/167 (>= 159/167)",
+   "breach": "groundedness 150/167 (89.8%) below the >= 159/167 gate",
+   "spread": 0.01356111306798169,
+   "spread_source": "replicates",
+   "why": "groundedness 150/167 (89.8%) below the >= 159/167 gate",
+   "verdict": "FAIL"
+  },
+  {
+   "id": "citation_completeness",
+   "name": "citation completeness >= 95%",
+   "kind": "margin",
+   "value": 0.8562874251497006,
+   "threshold": 0.95,
+   "margin": -0.09371257485029938,
+   "unit": "rate",
+   "failed": true,
+   "blocking": true,
+   "detail": "143/167 (>= 159/167)",
+   "breach": "citation completeness 143/167 (85.6%) below the >= 159/167 gate",
+   "spread": 0.002536104262064076,
+   "spread_source": "replicates",
+   "why": "citation completeness 143/167 (85.6%) below the >= 159/167 gate",
+   "verdict": "FAIL"
+  },
+  {
+   "id": "metric_coverage",
+   "name": "required metrics present and not regressed",
+   "kind": "event",
+   "value": 0,
+   "threshold": 0,
+   "margin": 0,
+   "unit": "count",
+   "failed": false,
+   "blocking": true,
+   "spread": null,
+   "spread_source": null,
+   "verdict": "PASS",
+   "detail": "groundedness_rate 61/66 paired, 5 case(s) missing by construction, 0 by failure; citation_completeness_rate 61/66 paired, 5 case(s) missing by construction, 0 by failure",
+   "why": "every absent value is absent by construction",
+   "breach": null
+  },
+  {
+   "id": "adoption_reproducibility",
+   "name": "adoption decision reproducible (<= 0% disagreement)",
+   "kind": "event",
+   "value": null,
+   "threshold": 0.0,
+   "margin": null,
+   "unit": "rate",
+   "failed": false,
+   "blocking": false,
+   "spread": null,
+   "spread_source": null,
+   "verdict": "not-measured",
+   "detail": "12 case(s) reached the repair model, none sampled more than once",
+   "why": "replay with --repair-samples N to measure it",
+   "breach": null
+  }
+ ],
+ "indeterminate": [
+  "supported non-decreasing: margin +0 is inside the measured spread 4"
+ ],
+ "gate_verdict": "FAIL"
+}

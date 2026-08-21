@@ -19,7 +19,9 @@ The properties pinned, in the order the plan asks for them:
   * a lost supported claim gates, and a documented one does not;
   * corrected / deleted / qualified are three outcomes, not one.
 """
+import inspect
 import json
+import re
 import sys
 from pathlib import Path
 
@@ -264,6 +266,14 @@ def test_carry_off_can_reject_what_carry_on_adopts(tmp_path):
     after the rewrite (carry-on adopts); with the carry disabled the recheck
     still fails and the repair is rejected (carry-off keeps the original).
     """
+    if not re.search(r"_carry_cleared\s*\(", inspect.getsource(verify.repair)):
+        pytest.skip(
+            "verify.repair no longer carries pre-repair judge rulings across "
+            "the recheck, so the carry-on and carry-off scorings are the same "
+            "scoring by construction and this separation has nothing left to "
+            "separate. The replay keeps three arms so a recorded run stays "
+            "readable; restore the carry in verify.repair and this test wakes "
+            "up.")
     bad = f"The programme covers **12 countries** [{DOC}, p. {PAGE}]."
     answer = (f"FP151 requests **USD 18.5 million** [{DOC}, p. {PAGE}]. {bad} "
               f"The total project cost is **USD 99,900,000** [{DOC}, p. {PAGE}].")
@@ -694,3 +704,440 @@ def test_pre_gate_probe_sees_a_rewrite_the_gate_threw_away(tmp_path):
     assert probe["audit_found"]["invented_figures"] >= 1
     # the ADOPTED tables stay clean: the rewrite never reached the user
     assert rep["invented_docs"] == [] and rep["answers_rewritten"] == 0
+
+
+# ---------------------------------------------------------------------------
+# reproducibility: N samples of repair on IDENTICAL input
+#
+# The Wave-4 finding was that the table moves. These pin the instrument that
+# measures the movement: the recording (replay), the metric (audit), the gate
+# on it, and the rule that a gate margin inside the measured spread is
+# INDETERMINATE rather than a verdict.
+# ---------------------------------------------------------------------------
+class SamplingStubClient:
+    """A DIFFERENT repair completion per call — the shape of an unpinned model.
+
+    `repairs` is consumed in order and the last entry repeats, so a test can
+    stage 'adopted, rejected, adopted-again-with-the-same-words' without
+    knowing how many calls the replay will make.
+    """
+
+    def __init__(self, judge=None, repairs=()):
+        self.chat = _Chat(self)
+        self.roles = []
+        self._judge = judge
+        self._repairs = list(repairs)
+        self.repair_calls = 0
+
+    def _create(self, **kwargs):
+        role = ar._call_role(kwargs)
+        self.roles.append(role)
+        if role == "judge":
+            return _Resp(json.dumps(self._judge or {"verdicts": []}))
+        if role == "repair":
+            if not self._repairs:
+                raise AssertionError("repair called but no repair reply staged")
+            i = min(self.repair_calls, len(self._repairs) - 1)
+            self.repair_calls += 1
+            return _Resp(self._repairs[i])
+        raise AssertionError(f"unexpected call role {role}")
+
+
+KEEP = f"GCF funding is **USD 18.5 million** [{DOC}, p. {PAGE}]."
+BAD = f"The programme covers **12 countries** [{DOC}, p. {PAGE}]."
+FIXED = f"The programme covers **9 countries** [{DOC}, p. {PAGE}]."
+
+
+def flipping_replay(tmp_path, samples=3):
+    """One case, three repair samples: adopted / rejected / adopted again.
+
+    Sample 2 hands back the answer unchanged, so the recheck still fails and
+    the rewrite is thrown away — an adoption FLIP on identical input, which is
+    the property Wave 4 found and could not gate.
+    """
+    answer = KEEP + " " + BAD
+    client = SamplingStubClient(judge={"verdicts": []},
+                                repairs=[KEEP + " " + FIXED, answer,
+                                         KEEP + " " + FIXED])
+    got, arms = replay_to(tmp_path, [record(answer)], client,
+                          repair_samples=samples)
+    return got, arms, client
+
+
+def test_replay_records_every_sample_with_its_metrics(tmp_path):
+    """The record must carry what the metric needs. Wave 4's carried the
+    adoption bit and a sha256, which is why that wave could say the decision
+    flipped and not what the flip did to groundedness."""
+    got, arms, client = flipping_replay(tmp_path)
+    assert client.repair_calls == 3, client.roles
+    assert client.roles.count("judge") <= 1
+    s = arms["on"]["t-case"]["repair_replay"]["repair_samples"]
+    assert [x["sample"] for x in s] == [1, 2, 3]
+    assert [x["adopted"] for x in s] == [True, False, True]
+    assert [x["identical_text"] for x in s] == [True, False, True]
+    for x in s:
+        assert x["metrics"]["claims"] is not None
+        assert x["metrics"]["checks_pass"] in (True, False)
+    # the rewrite that DIFFERS is stored in full; the identical one is not
+    assert s[1]["text"] and s[1]["claim_rows"] and s[1]["checks"]
+    assert "text" not in s[2] and "text" not in s[0]
+    assert arms["on"]["t-case"]["repair_replay"]["repair_samples_carry"] == "on"
+    assert got["summary"]["cases_sampled"] == 1
+    assert got["summary"]["identical_completions"] == 0
+    assert got["summary"]["adoption_agreements"] == 0
+
+
+def test_reproducibility_reports_the_four_things_the_plan_asks_for(tmp_path):
+    got, arms, _client = flipping_replay(tmp_path)
+    rep = ar.audit(Path(got["paths"]["off"]), Path(got["paths"]["on-carryoff"]),
+                   carry_on_path=Path(got["paths"]["on"]))
+    r = rep["reproducibility"]
+    # (i) identical completions, (ii) adoption agreement
+    assert r["cases_sampled"] == 1
+    assert r["identical_completion"] == {"n": 0, "d": 1, "rate": 0.0,
+                                         "threshold_95": 1}
+    assert r["adoption_agreement"]["n"] == 0
+    assert r["adoption_disagreement_rate"] == 1.0
+    # (iii) the per-case disagreement list, with both decisions
+    assert [d["case"] for d in r["disagreements"]] == ["t-case"]
+    assert r["disagreements"][0]["adoption"] == [True, False, True]
+    # (iv) the spread on every gated metric
+    worlds = rep["sample_worlds"]
+    assert worlds["depth"] == 3 and worlds["cases"] == 1
+    q = [w["quantities"] for w in worlds["worlds"]]
+    assert q[0]["supported_non_decreasing"] == q[2]["supported_non_decreasing"]
+    assert q[1]["supported_non_decreasing"] != q[0]["supported_non_decreasing"]
+    assert rep["spreads"]["supported_non_decreasing"]["from_samples"] > 0
+    assert rep["spreads"]["groundedness"]["from_samples"] is not None
+
+
+def test_the_baseline_arm_is_the_carry_on_one(tmp_path):
+    """Every sample is drawn with the carry LIVE. Comparing it against the
+    carry-OFF arm's decision folds the carry difference into the sampling
+    number — the mistake behind Wave 4's published 2/11."""
+    got, _arms, _c = flipping_replay(tmp_path)
+    with_carry = ar.audit(Path(got["paths"]["off"]),
+                          Path(got["paths"]["on-carryoff"]),
+                          carry_on_path=Path(got["paths"]["on"]))
+    assert with_carry["reproducibility"]["baseline_arm"] == "carry-on"
+    assert with_carry["reproducibility"]["carry_mismatch"] is False
+    without = ar.audit(Path(got["paths"]["off"]),
+                       Path(got["paths"]["on-carryoff"]))
+    assert without["reproducibility"]["carry_mismatch"] is True
+
+
+def test_a_case_repair_never_reached_is_not_in_the_denominator(tmp_path):
+    """A clean answer never calls the repair model, and counting it as
+    'agreed' would buy reproducibility for free."""
+    clean = record(KEEP, case_id="clean")
+    dirty = record(KEEP + " " + BAD, case_id="dirty")
+    client = SamplingStubClient(judge={"verdicts": []},
+                                repairs=[KEEP + " " + FIXED, KEEP + " " + BAD])
+    got, _arms = replay_to(tmp_path, [clean, dirty], client, repair_samples=2)
+    rep = ar.audit(Path(got["paths"]["off"]), Path(got["paths"]["on-carryoff"]),
+                   carry_on_path=Path(got["paths"]["on"]))
+    r = rep["reproducibility"]
+    assert r["cases_with_repair"] == 1 and r["cases_sampled"] == 1
+    assert r["adoption_agreement"]["d"] == 1
+
+
+def test_wave4_record_shape_still_measures(tmp_path):
+    """The legacy `repair_second_sample` is read as two samples: the two
+    questions it CAN answer are answered, and the metric spread it cannot
+    support is named as unresolvable rather than reported as zero."""
+    off = arm_row(KEEP + " " + BAD, [(KEEP, SUP, True), (BAD, UNS, False)])
+    on = arm_row(KEEP + " " + FIXED, [(KEEP, SUP, True), (FIXED, SUP, True)],
+                 arm="on")
+    on["repaired"] = True
+    on["repair_replay"].update({
+        "repair_calls": 1, "repair_text_sha256": "abc",
+        "repair_second_sample": {"identical_text": False, "text_sha256": "def",
+                                 "adopted": True, "status": "repaired",
+                                 "notes": ["repaired 1 failing claim(s)"]}})
+    rep = run_audit(tmp_path, [off], [on])
+    r = rep["reproducibility"]
+    assert r["cases_sampled"] == 1
+    assert r["identical_completion"]["n"] == 0
+    assert r["adoption_agreement"]["n"] == 1        # both adopted: agreed
+    assert rep["sample_worlds"]["cases"] == 0
+    assert rep["sample_worlds"]["excluded_cases"] == ["t-case"]
+    assert rep["spreads"]["groundedness"]["from_samples"] is None
+
+
+# ---------------------------------------------------------------------------
+# the gate
+# ---------------------------------------------------------------------------
+def _gate(rep, gid):
+    return [g for g in rep["gates"] if g["id"] == gid][0]
+
+
+def test_adoption_disagreement_gates_at_zero_by_default(tmp_path):
+    got, _arms, _c = flipping_replay(tmp_path)
+    args = ["--off", got["paths"]["off"], "--on", got["paths"]["on-carryoff"],
+            "--carry-on", got["paths"]["on"], "--quiet"]
+    assert ar.main(args) == 1
+    rep = ar.audit(Path(got["paths"]["off"]), Path(got["paths"]["on-carryoff"]),
+                   carry_on_path=Path(got["paths"]["on"]))
+    g = _gate(rep, "adoption_reproducibility")
+    assert g["verdict"] == "FAIL" and g["value"] == 1.0
+    assert any("not reproducible" in b for b in rep["breaches"])
+    # ... and the flag is what moves it: a tolerance wide enough to admit the
+    # flip clears this gate (the run still fails on the spread it exposes)
+    loose = ar.audit(Path(got["paths"]["off"]), Path(got["paths"]["on-carryoff"]),
+                     carry_on_path=Path(got["paths"]["on"]),
+                     max_adoption_disagreement=1.0)
+    assert _gate(loose, "adoption_reproducibility")["verdict"] == "PASS"
+    assert not [b for b in loose["breaches"] if "reproducible" in b]
+
+
+def test_a_reproducible_run_passes_the_gate(tmp_path):
+    """Same completion every time: agreement 1/1, identical text 1/1."""
+    answer = KEEP + " " + BAD
+    client = SamplingStubClient(judge={"verdicts": []},
+                                repairs=[KEEP + " " + FIXED])
+    got, _arms = replay_to(tmp_path, [record(answer)], client, repair_samples=3)
+    rep = ar.audit(Path(got["paths"]["off"]), Path(got["paths"]["on-carryoff"]),
+                   carry_on_path=Path(got["paths"]["on"]))
+    r = rep["reproducibility"]
+    assert r["identical_completion"]["rate"] == 1.0
+    assert r["adoption_agreement"]["rate"] == 1.0
+    assert _gate(rep, "adoption_reproducibility")["verdict"] == "PASS"
+    assert not [b for b in rep["breaches"] if "reproducible" in b]
+    # every sample world is the same world, so no gate is made indeterminate
+    assert rep["spreads"]["groundedness"]["from_samples"] == 0
+
+
+def test_asking_for_the_gate_with_nothing_sampled_is_a_failure(tmp_path):
+    """The mirror of the unpassable gate: a gate that passes vacuously is not
+    a gate either. --repair-samples 1 must not 'prove' pinning."""
+    a = KEEP
+    off = tmp_path / "off.jsonl"
+    on = tmp_path / "on.jsonl"
+    off.write_text(json.dumps(arm_row(a, [(a, SUP, True)])) + "\n", encoding="utf-8")
+    on.write_text(json.dumps(arm_row(a, [(a, SUP, True)], arm="on")) + "\n",
+                  encoding="utf-8")
+    assert ar.main(["--off", str(off), "--on", str(on), "--quiet"]) == 0
+    assert ar.main(["--off", str(off), "--on", str(on), "--quiet",
+                    "--max-adoption-disagreement", "0"]) == 1
+    # unasked, the gate is still NAMED in the table, as not-measured: a
+    # property nobody measured must not read as a property nobody breached
+    quiet = run_audit(tmp_path, [arm_row(a, [(a, SUP, True)])],
+                      [arm_row(a, [(a, SUP, True)], arm="on")])
+    g = _gate(quiet, "adoption_reproducibility")
+    assert g["verdict"] == "not-measured" and g["blocking"] is False
+    assert quiet["gate_pass"] is True
+
+
+# ---------------------------------------------------------------------------
+# spread-aware verdicts
+# ---------------------------------------------------------------------------
+def rate_rows(tmp_path, n=100, grounded=94, cited=94):
+    """One case whose claims block is written by hand, so a rate gate can be
+    exercised at a chosen distance from 95% without inventing 100 claims."""
+    a = KEEP
+    off = arm_row(a, [(a, SUP, True)])
+    on = arm_row(a, [(a, SUP, True)], arm="on")
+    block = {"claims": n, "supported": grounded, "grounded": grounded,
+             "citation_supported": cited, "cited": n, "contradicted": 0,
+             "unsupported": n - grounded}
+    off["claims"] = dict(block)
+    on["claims"] = dict(block)
+    return off, on
+
+
+def replicate(tmp_path, name, **quantities):
+    """A minimal recorded audit, for --spread-audit."""
+    p = tmp_path / name
+    p.write_text(json.dumps(quantities), encoding="utf-8")
+    return p
+
+
+def test_a_gate_margin_inside_the_measured_spread_is_indeterminate(tmp_path):
+    off, on = rate_rows(tmp_path, grounded=94, cited=100)    # 1 pp short
+    other = replicate(tmp_path, "b.json",
+                      groundedness_after={"n": 80, "d": 100, "rate": 0.80})
+    rep = run_audit(tmp_path, [off], [on], spread_audits=[other])
+    g = _gate(rep, "groundedness")
+    assert g["verdict"] == "INDETERMINATE"
+    assert "inside the measured spread" in g["why"]
+    assert rep["gate_verdict"] == "INDETERMINATE"
+    assert rep["gate_pass"] is False              # indeterminate is not a pass
+    assert not [b for b in rep["breaches"] if "groundedness" in b]
+
+
+def test_a_margin_far_outside_the_spread_stays_a_determinate_fail(tmp_path):
+    """Wave 4's citation completeness: ~9 pp short in both samples, far
+    outside every measured spread. A spread must not launder that."""
+    off, on = rate_rows(tmp_path, grounded=94, cited=86)
+    other = replicate(tmp_path, "b.json",
+                      citation_completeness_after={"n": 86, "d": 100, "rate": 0.861})
+    rep = run_audit(tmp_path, [off], [on], spread_audits=[other])
+    g = _gate(rep, "citation_completeness")
+    assert g["verdict"] == "FAIL"
+    assert g["spread"] is not None and abs(g["margin"]) > g["spread"]
+    assert any("citation completeness" in b for b in rep["breaches"])
+
+
+def test_an_observed_invention_is_never_softened_by_a_spread(tmp_path):
+    """An invented citation happened. Another sample not doing it does not
+    un-invent it, so the FAIL is determinate whatever the spread says."""
+    before = f"GCF funding is **USD 18.5 million** [{DOC}, p. {PAGE}]."
+    after = f"GCF funding is **USD 18.5 million** [999_not-a-doc, p. 3]."
+    other = replicate(tmp_path, "b.json", invented_docs=[])
+    rep = run_audit(tmp_path, [arm_row(before, [(before, UNS, True)])],
+                    [arm_row(after, [(after, SUP, True)], arm="on")],
+                    spread_audits=[other])
+    g = _gate(rep, "invented_docs")
+    assert g["verdict"] == "FAIL" and g["spread"] == 1
+    assert rep["gate_verdict"] == "FAIL"
+
+
+def test_a_clean_count_is_indeterminate_when_a_sibling_run_was_dirty(tmp_path):
+    """'zero this time' is a draw, not a property."""
+    a = KEEP
+    other = replicate(tmp_path, "b.json",
+                      invented_docs=[{"doc": "999_not-a-doc", "page": 3}])
+    rep = run_audit(tmp_path, [arm_row(a, [(a, SUP, True)])],
+                    [arm_row(a, [(a, SUP, True)], arm="on")],
+                    spread_audits=[other])
+    g = _gate(rep, "invented_docs")
+    assert g["verdict"] == "INDETERMINATE" and g["value"] == 0
+    assert rep["breaches"] == []
+    assert rep["gate_verdict"] == "INDETERMINATE" and rep["gate_pass"] is False
+
+
+def test_require_spread_refuses_to_certify_from_one_measurement(tmp_path):
+    a = KEEP
+    rows = ([arm_row(a, [(a, SUP, True)])], [arm_row(a, [(a, SUP, True)], arm="on")])
+    assert run_audit(tmp_path, *rows)["gate_pass"] is True
+    strict = run_audit(tmp_path, *rows, require_spread=True)
+    assert strict["gate_verdict"] == "INDETERMINATE"
+    assert all(g["verdict"] in ("INDETERMINATE", "n/a", "PASS", "reported",
+                                "not-measured") for g in strict["gates"])
+    assert _gate(strict, "invented_docs")["verdict"] == "INDETERMINATE"
+
+
+def test_the_sample_spread_and_the_replicate_spread_are_both_reported(tmp_path):
+    got, _arms, _c = flipping_replay(tmp_path)
+    other = replicate(tmp_path, "b.json",
+                      groundedness_after={"n": 1, "d": 2, "rate": 0.5})
+    rep = ar.audit(Path(got["paths"]["off"]), Path(got["paths"]["on-carryoff"]),
+                   carry_on_path=Path(got["paths"]["on"]),
+                   spread_audits=[other])
+    sp = rep["spreads"]["groundedness"]
+    assert sp["from_samples"] is not None and sp["from_replicates"] is not None
+    assert sp["value"] == max(sp["from_samples"], sp["from_replicates"])
+    assert sp["source"] in ("samples", "replicates", "samples+replicates")
+
+
+# ---------------------------------------------------------------------------
+# missing BY CONSTRUCTION vs missing BY FAILURE
+# ---------------------------------------------------------------------------
+def rated_row(case_id, rate=0.9, arm="off", **extra):
+    a = KEEP
+    row = arm_row(a, [(a, SUP, True)], case_id=case_id, arm=arm)
+    row["claims"].update({"groundedness_rate": rate,
+                          "citation_completeness_rate": rate})
+    row.update(extra)
+    return row
+
+
+def test_the_four_shapes_that_carry_no_rate_are_classified(tmp_path):
+    """The 4 of 66 that make `--compare --require-metrics` unpassable."""
+    off, on = [], []
+    for cid, extra in (("guarded", {"guard": True}),
+                       ("chatty", {"chat": True}),
+                       ("abstained", {}),
+                       ("healthy", {})):
+        a = rated_row(cid, **extra)
+        b = rated_row(cid, arm="on", **extra)
+        if cid in ("guarded", "chatty"):
+            a["claims"] = b["claims"] = None
+        if cid == "abstained":
+            a["claims"] = b["claims"] = {"claims": 0, "supported": 0,
+                                         "grounded": 0, "citation_supported": 0,
+                                         "cited": 0, "contradicted": 0,
+                                         "unsupported": 0,
+                                         "groundedness_rate": None,
+                                         "citation_completeness_rate": None}
+        off.append(a)
+        on.append(b)
+    rep = run_audit(tmp_path, off, on,
+                    require_metrics=["groundedness_rate"])
+    cov = rep["metric_coverage"]["groundedness_rate"]
+    assert cov["paired"] == 1 and cov["cases_compared"] == 4
+    why = {r["case"]: r["reason"] for r in cov["missing_by_construction"]}
+    assert set(why) == {"guarded", "chatty", "abstained"}
+    assert "guard answer" in why["guarded"]
+    assert "chat turn" in why["chatty"]
+    assert "denominator is zero" in why["abstained"]
+    assert cov["missing_by_failure"] == []
+    # THE FIX: the gate the plan asks for now passes on a production record
+    assert _gate(rep, "metric_coverage")["verdict"] == "PASS"
+    assert rep["gate_pass"] is True
+
+
+def test_a_metric_missing_by_failure_still_gates(tmp_path):
+    off = [rated_row("healthy"), rated_row("broken")]
+    on = [rated_row("healthy", arm="on"), rated_row("broken", arm="on")]
+    on[1]["claims"].pop("groundedness_rate")          # 2 claims, no rate
+    rep = run_audit(tmp_path, off, on, require_metrics=["groundedness_rate"])
+    cov = rep["metric_coverage"]["groundedness_rate"]
+    assert [r["case"] for r in cov["missing_by_failure"]] == ["broken"]
+    assert cov["missing_by_construction"] == []
+    assert _gate(rep, "metric_coverage")["verdict"] == "FAIL"
+    assert rep["gate_pass"] is False
+
+
+def test_an_errored_turn_is_a_failure_not_a_construction(tmp_path):
+    off = [rated_row("boom", claims=None, error="boom")]
+    on = [rated_row("boom", arm="on", claims=None, error="boom")]
+    rep = run_audit(tmp_path, off, on, require_metrics=["groundedness_rate"])
+    cov = rep["metric_coverage"]["groundedness_rate"]
+    assert [r["kind"] for r in cov["missing_by_failure"]][0] == ar.MISSING_BY_FAILURE
+    assert cov["missing_by_construction"] == []
+
+
+def test_a_regression_on_a_required_metric_gates(tmp_path):
+    off = [rated_row("a", rate=0.9)]
+    on = [rated_row("a", rate=0.5, arm="on")]
+    rep = run_audit(tmp_path, off, on, require_metrics=["groundedness_rate"])
+    assert rep["metric_coverage"]["groundedness_rate"]["no_regression"] is False
+    assert _gate(rep, "metric_coverage")["verdict"] == "FAIL"
+    # and it is reported, not gated, when the metric was not required
+    assert _gate(run_audit(tmp_path, off, on), "metric_coverage")["verdict"] \
+        == "reported"
+
+
+def test_coverage_is_reported_even_when_nothing_is_required(tmp_path):
+    off = [rated_row("a")]
+    rep = run_audit(tmp_path, off, [rated_row("a", arm="on")])
+    assert set(rep["metric_coverage"]) == set(ar.DEFAULT_COVERAGE_METRICS)
+    assert rep["gate_pass"] is True
+
+
+# ---------------------------------------------------------------------------
+# still zero API, on every new path
+# ---------------------------------------------------------------------------
+def test_zero_api_on_the_new_paths(tmp_path, monkeypatch):
+    def boom():                                                  # pragma: no cover
+        raise AssertionError("verify._client() was called")
+    monkeypatch.setattr(verify, "_client", boom)
+    off = arm_row(KEEP + " " + BAD, [(KEEP, SUP, True), (BAD, UNS, False)])
+    on = arm_row(KEEP + " " + FIXED, [(KEEP, SUP, True), (FIXED, SUP, True)],
+                 arm="on")
+    on["repaired"] = True
+    on["repair_replay"].update({
+        "repair_calls": 1,
+        "repair_samples": [
+            {"sample": 1, "identical_text": True, "adopted": True,
+             "status": "repaired", "notes": [], "metrics": {"claims": 2}},
+            {"sample": 2, "identical_text": False, "adopted": False,
+             "status": "partial", "notes": ["rejected"],
+             "metrics": {"claims": 2}}]})
+    other = replicate(tmp_path, "b.json", invented_docs=[])
+    rep = run_audit(tmp_path, [off], [on], spread_audits=[other],
+                    require_metrics=["groundedness_rate"],
+                    max_adoption_disagreement=0.0)
+    assert rep["reproducibility"]["adoption_disagreement_rate"] == 1.0
+    assert _gate(rep, "adoption_reproducibility")["verdict"] == "FAIL"
