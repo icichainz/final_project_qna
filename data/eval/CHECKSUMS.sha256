@@ -52,3 +52,17 @@ fa0251b2eadc54b0ab006b0b64cce7048b8014dd0116b983b9778d24b4d45a29  data/eval/rele
 7e677dd9f85d95c05bb1b2e39ba76d664b6111e8b4b13d6db9efb5e317bfc696  data/eval/release_g9.jsonl
 6a8e65d451c42d919d9d97aaf4d7f57f5498ec8ac33e8eccfbc0c8a33f3bcdd8  data/eval/release_parity-baseline.jsonl
 7ae2e7cec19c7676cb53e390fa9602f65fa4ee11e9ef6d9b288acfc0e4864069  data/eval/release_release-1-rescored.jsonl
+#
+# Wave 4 — the LLM-judge audit (scripts/judge_audit.py) over the Wave 3
+# production-parity run. All three are DERIVED from
+# release_parity-baseline.jsonl by pure replay (no model call), so they can be
+# rebuilt exactly; they are anchored because the switch decision on VERIFY_LLM
+# is argued from them. The adjudication file is the only hand-written one: it
+# carries a human reading of each machine FABRICATION-PASS and cannot be
+# regenerated.
+#     venv/bin/python scripts/judge_audit.py data/eval/release_parity-baseline.jsonl \
+#       --adjudications data/eval/judge_audit_adjudication_parity-baseline.jsonl \
+#       --jsonl data/eval/judge_audit_parity-baseline.jsonl --quiet
+4a092e5ba7b737a1625c8b4ba0a66d6652f7a3b93fefd054c95984aafde9b026  data/eval/judge_audit_parity-baseline.jsonl
+8e30f9f1da7d3295ac21a6ab2304a2cecb781908937bfe245d4e8a926219072c  data/eval/judge_audit_claims_parity-baseline.jsonl
+48e3d2db00e106f094665303952801f7bb64a1154693e9855acb07df613d9b9a  data/eval/judge_audit_adjudication_parity-baseline.jsonl
