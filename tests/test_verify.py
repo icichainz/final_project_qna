@@ -1788,3 +1788,298 @@ def test_the_judge_bound_counters_are_pinned():
 def test_every_scored_row_joins_exactly_one_extracted_claim():
     _sv, res, problems = _scored()
     assert res["unmatched"] == [] and problems == []
+
+
+# ===========================================================================
+# ENTITY-MATCHER ARTIFACTS — the five classes the judge audit isolated
+#
+# Source: `data/eval/judge_audit_parity-baseline.jsonl` (28 promotions) and
+# `data/eval/judge_audit_adjudication_parity-baseline.jsonl` (11 human
+# adjudications). Every relaxation below names the row id it exists for, and
+# every one carries an adversarial twin that varies THE DIMENSION THE
+# RELAXATION TURNS ON — not a neighbouring one. Six previous reviews were
+# defeated by a test that varied something else, so the dimension is named in
+# each docstring and the mutation that must break it is stated with it.
+#
+#   class 1  acronym <- printed expansion      cid-fp0086-padded
+#   class 2  possessive / orthography          id-fp203-objective
+#   class 3  composite gluing (extraction)     disc-subnational-pair
+#   class 4  denied term (extraction)          abs-antarctica
+#   class 5  cross-lingual exonym              fr-disc-thai-rice (2 rows)
+# ===========================================================================
+
+ESMP_PAGE = ("Updated supporting documents for restructuring paper:\n"
+             "- Environmental and Social Impact Assessment (ESIA) or "
+             "Environmental and Social Management Plan (if applicable)\n"
+             "- Appraisal Report or Due Diligence")
+
+
+# ------------------------------------------------------- class 1: acronyms --
+def test_an_acronym_is_satisfied_by_the_expansion_the_page_prints(no_registry):
+    """CLASS 1, row `cid-fp0086-padded`. The answer compresses a phrase the
+    cited page prints IN FULL. The initialism is a function OF the evidence:
+    to satisfy it the page has to print all four words, in order, adjacent."""
+    ev = {(DOC, 39): ESMP_PAGE}
+    answer = f"The list includes **ESIA/ESMP (if applicable)** [{DOC}, p. 39]."
+    (v,) = V.classify(V.extract_claims(answer), ev, use_llm=False)
+    assert v.status == V.SUPPORTED, (v.status, v.reason)
+
+
+def test_an_acronym_whose_letters_are_reordered_is_not_an_expansion(no_registry):
+    """DIMENSION: the letter sequence. Same page, same words, one transposition
+    — 'ESPM'. Mutating the rule to compare letter SETS passes this."""
+    ev = {(DOC, 39): ESMP_PAGE}
+    answer = f"The list includes **ESIA/ESPM (if applicable)** [{DOC}, p. 39]."
+    (v,) = V.classify(V.extract_claims(answer), ev, use_llm=False)
+    assert v.failed and "ESPM" in v.reason, (v.status, v.reason)
+
+
+def test_an_expansion_may_not_have_extra_words_between_its_initials(no_registry):
+    """DIMENSION: adjacency. The page prints E...S...M...P in order, but with
+    two content words wedged in, so it is not the expansion of ESMP — it is a
+    different phrase that happens to contain those initials. Mutating the gap
+    from 'connectives only' to 'any words' passes this."""
+    ev = {(DOC, 39): "- Environmental Impact Assessment and Social "
+                     "Management Plan (if applicable)"}
+    answer = f"The list includes **ESMP (if applicable)** [{DOC}, p. 39]."
+    (v,) = V.classify(V.extract_claims(answer), ev, use_llm=False)
+    assert v.failed and "ESMP" in v.reason, (v.status, v.reason)
+
+
+def test_a_two_letter_initialism_is_not_resolved_by_a_capitalised_pair(no_registry):
+    """DIMENSION: how many letters must agree. Two-letter forms ('AE', 'EE')
+    are the corpus's commonest abbreviations AND collide with any capitalised
+    pair; 'Andean Ecosystems' does not say 'accredited entity'. Mutating the
+    minimum length from 3 to 2 passes this."""
+    ev = {(DOC, 5): "The Andean Ecosystems programme, page 5."}
+    answer = f"The **AE** manages the programme [{DOC}, p. 5]."
+    (v,) = V.classify(V.extract_claims(answer), ev, use_llm=False)
+    assert v.failed and "AE" in v.reason, (v.status, v.reason)
+
+
+@pytest.mark.parametrize("expansion", [
+    "International Fund for Agricultural Development",   # the true gloss
+    "International Federation of Arctic Drillers",       # score_verifier's
+])
+def test_the_expansion_direction_stays_shut(no_registry, expansion):
+    """DIMENSION: the direction. Row `id-fp220-entity` is this shape and is
+    DELIBERATELY NOT FIXED. A page printing 'IFAD' does not say what IFAD
+    stands for, and the matcher cannot tell the true gloss from the fabricated
+    one — only that neither is on the page. This is the direction
+    `score_verifier.FAKE_EXPANSIONS` mutates; making the rule two-way to close
+    `id-fp220-entity` passes the first row here and the second with it."""
+    ev = {(DOC, None): "Registry — FP220: accredited entity: IFAD"}
+    answer = f"FP220 is implemented by **IFAD ({expansion})** [{DOC}, cover pages]."
+    (v,) = V.classify(V.extract_claims(answer), ev, use_llm=False)
+    assert v.failed, (v.status, v.reason)
+
+
+# ---------------------------------------------------- class 2: possessives --
+def test_a_possessive_is_the_same_name(no_registry):
+    """CLASS 2, row `id-fp203-objective`. The extractor lifted `Colombia’s`
+    (U+2019) out of 'to support Colombia’s climate goals'; the cited cover page
+    prints `Colombia`."""
+    ev = {(DOC, None): "Registry — FP203: Heritage Colombia (HECO); "
+                       "countries: Colombia"}
+    answer = (f"It is a proposal focused on **sustainably managed landscapes** "
+              f"to support Colombia’s climate goals [{DOC}, cover pages].")
+    (v,) = V.classify(V.extract_claims(answer), ev, use_llm=False)
+    assert v.status == V.SUPPORTED, (v.status, v.reason)
+
+
+@pytest.mark.parametrize("apostrophe", ["'", "’", "‘", "ʼ"])
+def test_the_apostrophe_shape_does_not_decide_the_verdict(no_registry, apostrophe):
+    """CLASS 2, orthography half. Which of the apostrophe codepoints the model
+    happened to emit must not change a verdict."""
+    ev = {(DOC, None): "Registry — FP203: countries: Colombia"}
+    answer = (f"The proposal supports Colombia{apostrophe}s climate goals "
+              f"[{DOC}, cover pages].")
+    (v,) = V.classify(V.extract_claims(answer), ev, use_llm=False)
+    assert v.status == V.SUPPORTED, (apostrophe, v.status, v.reason)
+
+
+def test_a_bare_trailing_s_is_not_a_possessive(no_registry):
+    """DIMENSION: the apostrophe. 'Andes' ends in s and is not a possessive;
+    de-inflecting it to 'Ande' would then match 'Andean' under the substring
+    test. Mutating the rule to strip a bare trailing 's' passes this."""
+    ev = {(DOC, 50): "Financed through the Andean Development Corporation."}
+    answer = f"The programme covers the **Andes** [{DOC}, p. 50]."
+    (v,) = V.classify(V.extract_claims(answer), ev, use_llm=False)
+    assert v.failed and "Andes" in v.reason, (v.status, v.reason)
+
+
+# ------------------------------------------------------ class 3: composites --
+GLUE_PAGE = ("Pegasus Capital Advisors LP is the accredited entity. "
+             "The Global Subnational Climate Fund (SoFC Global) is the "
+             "vehicle.")
+
+
+def test_a_glued_pair_of_attested_names_is_not_a_third_name(no_registry):
+    """CLASS 3, row `disc-subnational-pair`. `_CAPRUN_RE` ran two bolded names
+    together across 'for the' and invented `Pegasus Capital Advisors for the
+    Global Subnational Climate Fund`, which no page prints."""
+    ev = {(DOC, 76): GLUE_PAGE}
+    answer = (f"A funding proposal submitted by **Pegasus Capital Advisors** "
+              f"for the **Global Subnational Climate Fund (SoFC Global)** "
+              f"[{DOC}, p. 76].")
+    (v,) = V.classify(V.extract_claims(answer), ev, use_llm=False)
+    assert v.status == V.SUPPORTED, (v.status, v.reason)
+
+
+def test_a_glued_pair_needs_both_halves_attested(no_registry):
+    """DIMENSION: how many halves must stand on their own. Here the right half
+    is not bolded, so it is not a candidate of its own and the glued run is the
+    ONLY thing carrying those words — dropping it would delete the check
+    outright. Mutating the rule to require only the left half passes this."""
+    ev = {(DOC, 76): GLUE_PAGE}
+    answer = (f"A funding proposal submitted by **Pegasus Capital Advisors** "
+              f"for the Wakanda Development Bank [{DOC}, p. 76].")
+    (v,) = V.classify(V.extract_claims(answer), ev, use_llm=False)
+    assert v.failed and "Wakanda" in v.reason, (v.status, v.reason)
+
+
+def test_dropping_a_glued_pair_deletes_no_check(no_registry):
+    """DIMENSION: what survives the drop. This is the whole safety argument
+    for class 3 stated as a test — the composite goes only because both halves
+    remain candidates in their own right, so a fabricated half is still
+    reported by name. Mutating `_drop_glued` to remove the halves too, or to
+    match a half by containment in a longer name, passes this."""
+    ev = {(DOC, 76): GLUE_PAGE}
+    answer = (f"A funding proposal submitted by **Pegasus Capital Advisors** "
+              f"for the **Wakanda Development Bank** [{DOC}, p. 76].")
+    (v,) = V.classify(V.extract_claims(answer), ev, use_llm=False)
+    assert v.failed and "Wakanda Development Bank" in v.reason, (v.status, v.reason)
+
+
+# --------------------------------------------------- class 4: denied terms --
+def test_a_bound_negative_prefix_is_not_an_assertion(no_registry):
+    """CLASS 4, row `abs-antarctica`. 'other non-Antarctica infrastructure
+    activities' DENIES Antarctica; the extractor was reading the denial as an
+    assertion, and Antarctica's absence from the corpus is the case's point.
+
+    Note where this operates: EXTRACTION. It removes a term the answer does
+    not assert; it never excuses a term the evidence does not contain."""
+    ev = {(DOC, 50): "Electric bus replacement in Argentina and Costa Rica."}
+    answer = (f"The excerpts discuss electric buses in **Argentina** "
+              f"[{DOC}, p. 50], and other non-Antarctica infrastructure "
+              f"activities.")
+    (v,) = V.classify(V.extract_claims(answer), ev, use_llm=False)
+    assert v.status == V.SUPPORTED, (v.status, v.reason)
+
+
+def test_a_bound_negative_prefix_does_not_excuse_its_neighbours(no_registry):
+    """DIMENSION: scope. The two rejected rounds excused terms by PROXIMITY —
+    a character window and a clause split — so a fabricated name standing
+    beside a negator shipped verified. A bound prefix attaches to one word and
+    to nothing else. Mutating the rule to a window, a clause or a sentence
+    passes this."""
+    ev = {(DOC, 50): "Electric bus replacement in Argentina and Costa Rica."}
+    answer = (f"The excerpts discuss other non-Antarctica activities run by "
+              f"the **Wakanda Development Bank** [{DOC}, p. 50].")
+    (v,) = V.classify(V.extract_claims(answer), ev, use_llm=False)
+    assert v.failed and "Wakanda" in v.reason, (v.status, v.reason)
+
+
+def test_a_positive_printing_defeats_the_negative_prefix(no_registry):
+    """DIMENSION: every printing, not the nearest one. The unit asserts
+    Antarctica outright and denies it in a rider; the assertion stands and is
+    checked. Mutating the rule to drop a term as soon as ONE printing is bound
+    passes this."""
+    ev = {(DOC, 50): "Electric bus replacement in Argentina and Costa Rica."}
+    answer = (f"**Antarctica** is covered [{DOC}, p. 50], alongside other "
+              f"non-Antarctica work.")
+    (v,) = V.classify(V.extract_claims(answer), ev, use_llm=False)
+    assert v.failed and "Antarctica" in v.reason, (v.status, v.reason)
+
+
+# ---------------------------------------------------- class 5: exonyms ------
+THAI_PAGE = ("No objection letter issued by the national designated "
+             "authority(ies) or focal point(s) of Thailand, for the project "
+             "Thai Rice.")
+
+
+def test_a_corpus_exonym_is_the_same_country(no_registry):
+    """CLASS 5, rows `fr-disc-thai-rice` (both). A French answer over English
+    pages: `Thaïlande` and `Autorité` are printed forms of `Thailand` and
+    `authority`, and the matcher is a literal substring test."""
+    ev = {(DOC, 202): THAI_PAGE}
+    answer = (f"La lettre de non-objection de l’**Autorité** nationale "
+              f"désignée de la **Thaïlande** [{DOC}, p. 202].")
+    (v,) = V.classify(V.extract_claims(answer), ev, use_llm=False)
+    assert v.status == V.SUPPORTED, (v.status, v.reason)
+
+
+def test_a_cross_lingual_variant_is_an_exact_table_hit(no_registry):
+    """DIMENSION: exact key. The table is a closed list of printed forms, not
+    a similarity. 'Taïwan' deaccents to something close to 'Thailand' and is a
+    DIFFERENT place. Mutating the lookup to a prefix, a fuzzy or an
+    edit-distance match passes this."""
+    ev = {(DOC, 202): THAI_PAGE}
+    answer = f"Le projet soutient la riziculture à **Taïwan** [{DOC}, p. 202]."
+    (v,) = V.classify(V.extract_claims(answer), ev, use_llm=False)
+    assert v.failed and "Ta" in v.reason, (v.status, v.reason)
+
+
+def test_a_french_word_inside_a_longer_name_is_not_translated(no_registry):
+    """DIMENSION: whole candidate vs its words. Written as a word-for-word
+    substitution first, this cleared adjudicated defect
+    `claim-6c4788ddf1da438d7049706e` (`missing_retrieval_evidence`, case
+    fr-disc-thai-rice): rewriting the French words inside 'Ministry of
+    Agriculture and Cooperatives (MOAC) – Thaïlande' produced a string the
+    cited page prints, and an answer that names the WRONG proposal verified.
+    Translating a whole name is a spelling change; translating a fragment of a
+    longer assertion rebuilds the assertion."""
+    ev = {(DOC, 6): "Ministry of Agriculture and Cooperatives (MOAC), "
+                    "Thailand, is the executing entity."}
+    answer = (f"Le projet est porté par le **Ministry of Agriculture and "
+              f"Cooperatives (MOAC) – Thaïlande** [{DOC}, p. 6].")
+    (v,) = V.classify(V.extract_claims(answer), ev, use_llm=False)
+    assert v.failed, (v.status, v.reason)
+
+
+def test_the_exonym_table_names_only_countries_this_corpus_records():
+    """The table's admission rule, as a test. Every English value is either a
+    country the corpus registry records or the one institutional cognate an
+    audited row needs, so the table cannot introduce a referent the corpus
+    never had."""
+    from gcf_qna.rag import registry
+    known = set()
+    for row in (registry.load() or {}).values():
+        got = row.get("countries") or row.get("country") or []
+        if isinstance(got, str):
+            got = got.split(",")
+        for c in got:
+            known.add(V.norm_text(str(c)))
+    if not known:
+        pytest.skip("registry not present in this checkout")
+    unknown = sorted(v for v in set(V._FR_EN_NAMES.values()) - {"authority"}
+                     if not any(v in k or k in v for k in known))
+    assert unknown == [], unknown
+
+
+def test_a_glued_half_is_not_covered_by_containment(no_registry):
+    """DIMENSION: whole name vs substring. The right half here is 'Global
+    Subnational Climate Fund OF WAKANDA' — a longer string than the attested
+    name it contains. Accepting a half because some shorter extracted name
+    sits inside it drops the composite AND the only candidate carrying
+    'Wakanda', so the fabricated tail is never checked by anything. Mutating
+    the membership test from equality to containment passes this."""
+    ev = {(DOC, 76): GLUE_PAGE}
+    answer = (f"The **Global Subnational Climate Fund (SoFC Global)** received "
+              f"a proposal from **Pegasus Capital Advisors** for the Global "
+              f"Subnational Climate Fund of Wakanda [{DOC}, p. 76].")
+    (v,) = V.classify(V.extract_claims(answer), ev, use_llm=False)
+    assert v.failed and "Wakanda" in v.reason, (v.status, v.reason)
+
+
+@pytest.mark.parametrize("mark", ["'", "’", "ʼ", "ʹ", "‛", "′"])
+def test_an_exotic_apostrophe_inside_a_name_still_matches(no_registry, mark):
+    """CLASS 2, the orthography half, pinned where it actually bites: an
+    apostrophe INSIDE a name, where no possessive rule can rescue it.
+    'Côte d’Ivoire' is a corpus country and the answer model emits the mark
+    from whichever font it was trained on. Deleting the fold in ``norm_text``
+    passes none of these."""
+    ev = {(DOC, None): "Registry — FP: countries: Côte d'Ivoire, Ghana"}
+    answer = f"The programme covers **Côte d{mark}Ivoire** [{DOC}, cover pages]."
+    (v,) = V.classify(V.extract_claims(answer), ev, use_llm=False)
+    assert v.status == V.SUPPORTED, (mark, v.status, v.reason)

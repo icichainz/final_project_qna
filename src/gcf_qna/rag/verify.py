@@ -40,6 +40,7 @@ verifier whose whole point is that it also works without them.
 from __future__ import annotations
 
 import dataclasses
+import functools
 import json
 import os
 import re
@@ -548,11 +549,19 @@ def _deaccent(s: str) -> str:
                    if not unicodedata.combining(c))
 
 
+#: Every apostrophe- and quote-shaped codepoint the corpus and the answer
+#: model print, folded onto the ASCII pair. Row `id-fp203-objective` failed on
+#: `Colombia’s` (U+2019) against a page printing `Colombia`; the possessive
+#: is stripped elsewhere (``_depossess``), and this table exists so that WHICH
+#: apostrophe was typed can never decide a verdict on its own.
+_QUOTE_FOLD = {ord(c): "'" for c in "‘’‚‛′ʼʹ"}
+_QUOTE_FOLD.update({ord(c): '"' for c in "“”„‟"})
+
+
 def norm_text(s: str) -> str:
     """Fold case, accents, markdown emphasis and punctuation runs, so that a
     substring test compares words rather than typography."""
-    s = _deaccent((s or "").lower())
-    s = s.replace("’", "'").replace("“", '"').replace("”", '"')
+    s = _deaccent((s or "").lower()).translate(_QUOTE_FOLD)
     s = re.sub(r"[*_`]", "", s)
     s = re.sub(r"[^\w'&/]+", " ", s)
     return re.sub(r"\s+", " ", s).strip()
@@ -574,6 +583,119 @@ _CAPRUN_RE = re.compile(
 _CONNECTORS = {"of", "and", "for", "the", "in", "on", "to", "a", "an", "by",
                "de", "du", "des", "la", "le", "les", "et", "pour", "dans", "au",
                "aux", "d'", "l'"}
+
+
+# ---------------------------------------------------------------------------
+# CLASS 2 — possessives.  Row `id-fp203-objective`: the extractor produced the
+# candidate `Colombia’s` from "to support Colombia’s climate goals", and the
+# cited cover-page evidence prints `Colombia`. An English possessive is an
+# INFLECTION of the name, not part of it, so it is offered as an extra spelling
+# of the same candidate — never as a replacement, and never anywhere but the
+# end of the candidate.
+#
+# The gate is the APOSTROPHE. A bare trailing 's' is a plural or simply the
+# last letter of the name ('Andes', 'Barbados', 'Comoros'), and stripping it
+# would let a name match a shorter unrelated one under the substring test that
+# follows. Pinned by ``test_a_bare_trailing_s_is_not_a_possessive``.
+# ---------------------------------------------------------------------------
+_POSSESSIVE_RE = re.compile(r"(?:['’‘‚‛′ʼʹ]s|s['’‘‚‛′ʼʹ])$", re.I)
+
+
+def _depossess(cand: str) -> Optional[str]:
+    """``Colombia’s`` -> ``Colombia``; ``Andes`` -> None.
+
+    Only the LAST word of the candidate is de-inflected, and only when it
+    carries an apostrophe: 'Colombia’s climate goals' is not a name, and a
+    candidate whose interior words were also stripped would stop being the
+    string the answer actually asserted.
+    """
+    words = (cand or "").split()
+    if not words:
+        return None
+    tail = _POSSESSIVE_RE.sub("", words[-1])
+    if tail == words[-1] or not tail:
+        return None
+    out = " ".join(words[:-1] + [tail]).strip()
+    return out or None
+
+
+# ---------------------------------------------------------------------------
+# CLASS 5 — cross-lingual proper nouns.  Rows `fr-disc-thai-rice` (both
+# claims): a French answer over English pages, where the only unmatched
+# elements were the exonym `Thaïlande` and the cognate `Autorité` while the
+# cited page prints `Thailand` and `national designated authority`.
+#
+# This is a CLOSED TABLE, not a translator: every key is one French printed
+# form and every value is the one English printed form of the SAME referent.
+# The country half is the corpus's own country list (``registry.load()``),
+# restricted to the names whose French form still differs after accents are
+# folded — 'Sénégal', 'Bénin' and 'Côte d’Ivoire' need no entry because
+# ``norm_text`` already deaccents them onto the English spelling. A key is
+# admitted only when its English side is a country this corpus actually
+# records, so the table cannot introduce a referent the corpus never had.
+#
+# Nothing here is fuzzy and nothing here is compositional: the lookup is over
+# the WHOLE candidate and the key must match it exactly. 'Taïwan' does not
+# become 'Thailand' because it is not a key.
+#
+# WORD-FOR-WORD SUBSTITUTION WAS BUILT HERE AND THEN REMOVED. Rewriting the
+# French words INSIDE a longer candidate turned
+# 'Ministry of Agriculture and Cooperatives (MOAC) – Thaïlande' into a string
+# the cited page prints, and that cleared adjudicated defect
+# `claim-6c4788ddf1da438d7049706e` (label `missing_retrieval_evidence`: the
+# answer names the wrong proposal). Translating a whole name the corpus has an
+# English spelling for is a spelling change; translating a fragment of a longer
+# assertion rebuilds the assertion. Pinned by
+# ``test_a_cross_lingual_variant_is_an_exact_table_hit`` and
+# ``test_a_french_word_inside_a_longer_name_is_not_translated``.
+# ---------------------------------------------------------------------------
+_FR_EN_NAMES = {
+    # countries recorded in this corpus whose French exonym survives deaccenting
+    "thailande": "thailand",            # fr-disc-thai-rice (both rows)
+    "ethiopie": "ethiopia", "egypte": "egypt", "maroc": "morocco",
+    "cambodge": "cambodia", "ouganda": "uganda", "colombie": "colombia",
+    "bresil": "brazil", "perou": "peru", "mexique": "mexico",
+    "inde": "india", "indonesie": "indonesia", "tanzanie": "tanzania",
+    "zambie": "zambia", "mongolie": "mongolia", "barbade": "barbados",
+    "mauritanie": "mauritania", "tunisie": "tunisia", "cameroun": "cameroon",
+    "argentine": "argentina", "tadjikistan": "tajikistan",
+    "jamaique": "jamaica", "namibie": "namibia", "chili": "chile",
+    "ouzbekistan": "uzbekistan", "fidji": "fiji", "comores": "comoros",
+    "albanie": "albania", "armenie": "armenia", "georgie": "georgia",
+    "serbie": "serbia", "grenade": "grenada", "gambie": "gambia",
+    "malaisie": "malaysia", "liban": "lebanon", "palaos": "palau",
+    "soudan": "sudan", "kirghizistan": "kyrgyzstan", "moldavie": "moldova",
+    "dominique": "dominica", "bhoutan": "bhutan", "chine": "china",
+    "turquie": "turkey", "bulgarie": "bulgaria", "bolivie": "bolivia",
+    "erythree": "eritrea", "jordanie": "jordan", "somalie": "somalia",
+    "tchad": "chad", "guinee": "guinea", "equateur": "ecuador",
+    "haiti": "haiti", "birmanie": "myanmar",
+    # multi-word exonyms, matched on the whole candidate
+    "afrique du sud": "south africa",
+    "republique dominicaine": "dominican republic",
+    "macedoine du nord": "north macedonia",
+    "bosnie herzegovine": "bosnia and herzegovina",
+    "papouasie nouvelle guinee": "papua new guinea",
+    "iles salomon": "solomon islands",
+    "iles marshall": "marshall islands",
+    "iles cook": "cook islands",
+    "antigua et barbuda": "antigua and barbuda",
+    "trinite et tobago": "trinidad and tobago",
+    "guinee bissau": "guinea bissau",
+    "sainte lucie": "saint lucia",
+    "republique democratique du congo": "democratic republic of congo",
+    # the one institutional cognate an audited row needs
+    "autorite": "authority",            # fr-disc-thai-rice:109b8222296e
+}
+
+
+def _crosslingual(cand: str) -> Optional[str]:
+    """The English printed form of a French candidate, or None.
+
+    The WHOLE candidate must be a key ('thailande', 'afrique du sud'). A
+    candidate the table does not name is checked exactly as it was written.
+    """
+    return _FR_EN_NAMES.get(norm_text(cand))
 
 
 def _entity_variants(cand: str) -> List[str]:
@@ -599,6 +721,12 @@ def _entity_variants(cand: str) -> List[str]:
         out += [m.group(1).strip(), m.group(2).strip()]
     if len(words) > 8:
         out.append(" ".join(words[:8]))
+    # CLASS 2 / CLASS 5: two more SPELLINGS of the same candidate. Both are
+    # appended, never substituted — a claim keeps every form it already had,
+    # so neither can remove a check, only add a way of satisfying one.
+    for extra in (_depossess(cand), _crosslingual(cand)):
+        if extra:
+            out.append(extra)
     return [v for v in dict.fromkeys(out) if v]
 
 
@@ -655,6 +783,97 @@ def _trim_run(cand: str) -> str:
     return " ".join(words[:last + 1]) if last >= 0 else cand
 
 
+# ---------------------------------------------------------------------------
+# CLASS 4 — a DENIED term is not an asserted one.  Row `abs-antarctica`: the
+# answer's rider reads "and other non-Antarctica infrastructure/sector
+# activities", and the extractor lifted `Antarctica` out of it as a name the
+# answer asserts. It asserts the opposite, and the case exists precisely
+# because Antarctica is absent from the corpus.
+#
+# TWO EARLIER ROUNDS DIED HERE AND THIS IS NOT WHAT THEY DID. A character
+# window and a clause split both operated at MATCH time — they excused a term
+# the evidence did not contain because a negator stood near it, which is how
+# 'None of the excerpts mention Antarctica; it is a Wakanda Development Bank
+# project' shipped verified. This operates at EXTRACTION time and turns on
+# MORPHOLOGY, not distance: only a term carrying a BOUND negative prefix
+# ('non-Antarctica') is dropped, only that term, and only when EVERY printing
+# of it in the unit is bound the same way. A second name in the same sentence,
+# clause or window is untouched, and a term the answer also asserts positively
+# somewhere in the unit is untouched. Pinned by the two adversarial tests
+# ``test_a_bound_negative_prefix_does_not_excuse_its_neighbours`` and
+# ``test_a_positive_printing_defeats_the_negative_prefix``.
+# ---------------------------------------------------------------------------
+_NEG_BOUND_RE = re.compile(r"\bnon[-\u2010\u2011\u2012\u2013\u2014]"
+                           r"([A-Za-zÀ-ÖØ-Þà-öø-þ][\w’'\-]*)")
+
+
+def _denied_terms(body: str) -> set:
+    """Terms this text prints ONLY under a bound negative prefix."""
+    hay = norm_text(body)
+    out = set()
+    for m in _NEG_BOUND_RE.finditer(body or ""):
+        term = norm_text(m.group(1))
+        if not term:
+            continue
+        total = len(re.findall(r"(?<![\w'])" + re.escape(term) + r"(?![\w'])", hay))
+        bound = sum(1 for x in _NEG_BOUND_RE.finditer(body or "")
+                    if norm_text(x.group(1)) == term)
+        if total and total == bound:
+            out.add(term)
+    return out
+
+
+# ---------------------------------------------------------------------------
+# CLASS 3 — composite gluing.  Row `disc-subnational-pair`: "A funding proposal
+# submitted by **Pegasus Capital Advisors** for the **Global Subnational
+# Climate Fund (SoFC Global)**" made ``_CAPRUN_RE`` run one name into the other
+# across 'for the', inventing the entity `Pegasus Capital Advisors for the
+# Global Subnational Climate Fund`, which no page prints and which the matcher
+# then reported as unsupported.
+#
+# WHY THIS LOSES NO CHECK — the whole argument. The composite is dropped ONLY
+# when BOTH halves survive as independent candidate groups of their own, so
+# every word of it is still checked, just as the two names it really was. The
+# halves must be whole extracted names, not substrings of one, and both are
+# required: a composite whose second half nothing else attests ('… for the
+# Wakanda Development Bank') keeps the glued form and is still checked.
+# Pinned by ``test_a_glued_pair_needs_both_halves_attested``,
+# ``test_a_glued_half_is_not_covered_by_containment`` and
+# ``test_dropping_a_glued_pair_deletes_no_check``.
+# ---------------------------------------------------------------------------
+_ENT_GLUE_RE = re.compile(
+    r"\s+(?:and|et|for|pour|with|avec|by|par|in|dans|on|at|to)\s+"
+    r"(?:(?:the|a|an|le|la|les|un|une|des|du)\s+)*")
+
+
+def _glue_splits(name: str):
+    """Every binary split of a normalised candidate at ONE connective."""
+    for m in _ENT_GLUE_RE.finditer(name):
+        left, right = name[:m.start()].strip(), name[m.end():].strip()
+        if left and right:
+            yield left, right
+
+
+def _drop_glued(groups: List[List[str]]) -> List[List[str]]:
+    """Remove candidates that are two attested names run together.
+
+    Iterated to a fixed point, and re-checked after each removal against the
+    names that ACTUALLY SURVIVE: a half covered only by a group that is itself
+    dropped is not covered, and the composite stays.
+    """
+    keep = list(groups)
+    while True:
+        for vs in keep:
+            others = {norm_text(v) for g in keep if g is not vs for v in g}
+            others.discard("")
+            if any(left in others and right in others
+                   for left, right in _glue_splits(norm_text(vs[0]))):
+                keep = [g for g in keep if g is not vs]
+                break
+        else:
+            return keep
+
+
 def entities(text: str) -> List[List[str]]:
     """Proper-noun assignments a sentence makes, each as a variant list.
 
@@ -663,6 +882,7 @@ def entities(text: str) -> List[List[str]]:
     anything else: a document id is a pointer, never an entity claim.
     """
     body = _strip_citations(text)
+    denied = _denied_terms(body)                 # CLASS 4
     cands: List[Tuple[str, bool]] = []           # (candidate, came from quotes)
     for m in _BOLD_RE.finditer(body):
         cands.append((m.group(1) or m.group(2) or "", False))
@@ -694,6 +914,8 @@ def entities(text: str) -> List[List[str]]:
             key = norm_text(v)
             if not key or key in seen or key in _ENT_STOP:
                 continue
+            if key in denied:
+                continue                 # CLASS 4: the unit denies this term
             if _ENT_HAS_ID_RE.search(v):
                 continue                 # a pointer, not a name
             if key in _ENT_GENERIC or _all_generic(v):
@@ -713,6 +935,12 @@ def entities(text: str) -> List[List[str]]:
         return len(parts) > 1 and all(p in names for p in parts)
 
     out = [vs for vs in out if not _joined_artifact(norm_text(vs[0]))]
+
+    # CLASS 3: the same argument one connective wider — 'X for the Y' where X
+    # and Y are both extracted names of their own. Applied after the 'and'
+    # rule above and never before it, so the pool it reads is already free of
+    # the list artifacts that rule removes.
+    out = _drop_glued(out)
 
     # A single-word candidate already contained in a MULTI-WORD candidate adds
     # no check: 'Unlocking' was cut out of the title it belongs to, and
@@ -1315,13 +1543,75 @@ def registry_backed(doc_id: str, claim: Claim,
     return "; ".join(dict.fromkeys(where))
 
 
+# ---------------------------------------------------------------------------
+# CLASS 1 — acronym vs expansion.  Row `cid-fp0086-padded`: the answer writes
+# "ESIA/ESMP (if applicable)" and cited page 39 prints "Environmental and
+# Social Impact Assessment (ESIA) or Environmental and Social Management Plan
+# (if applicable)". `ESIA` matches; `ESMP` is the answer's own compression of a
+# phrase the page prints IN FULL.
+#
+# ONE DIRECTION ONLY, AND THE ASYMMETRY IS THE POINT.
+#
+#   acronym claimed, expansion PRINTED  -> accepted here. The initialism is a
+#       lossy FUNCTION of a string the evidence actually contains: to satisfy
+#       it, the evidence has to print all four words, in order, adjacent.
+#       Nothing is invented — the claim says strictly less than the page.
+#
+#   expansion claimed, acronym printed  -> REFUSED, and stays refused. A page
+#       printing 'IFAD' does not say what IFAD stands for, so accepting
+#       'International Fund for Agricultural Development' would be reading five
+#       words out of four letters. That is the direction 'ADB (Asian
+#       Development Bank of Wakanda)' rode in on, it is the direction the
+#       fabricated arm mutates (``score_verifier.FAKE_EXPANSIONS``), and it is
+#       pinned shut by ``test_an_acronym_never_vouches_for_a_spelled_out_name``.
+#       Row `id-fp220-entity` is that direction and is deliberately NOT fixed.
+#       Where the corpus itself records the pairing, ``registry_named`` already
+#       supplies it, from the registry rather than from initials.
+#
+# The gates, each with an adversarial test that varies it and nothing else:
+#   * >= 3 letters — two-letter initialisms ('AE', 'EE') collide with ordinary
+#     capitalised pairs, and the corpus is full of both.
+#   * exact letter sequence, one word per letter, in order.
+#   * ADJACENT words: only a connective ('of', 'and', 'for', 'the', ...) may
+#     stand between two of them. A phrase that merely CONTAINS the letters in
+#     order is not an expansion of the acronym.
+#   * each expansion word is capitalised where the evidence prints it.
+# ---------------------------------------------------------------------------
+_BARE_ACRONYM_RE = re.compile(r"^[A-Z][A-Z0-9]{2,7}$")
+#: what may sit between two words of an expansion: connectives, nothing else
+_ACR_GAP = (r"(?:\s+(?i:of|and|for|the|in|on|to|a|an|by|de|du|des|d’|d'|"
+            r"la|le|les|et|pour|sur|aux|au))*[\s\u00a0]+")
+
+
+@functools.lru_cache(maxsize=512)
+def _expansion_re(acr: str):
+    """A pattern matching the spelled-out form of ``acr``, and only that."""
+    return re.compile(r"(?<![A-Za-z])"
+                      + _ACR_GAP.join(letter + r"[\w’'\-]*" for letter in acr))
+
+
+def _spelled_out_in(variants: Sequence[str], text: str) -> Optional[str]:
+    """The phrase this evidence prints in full that ``variants`` abbreviates."""
+    for v in variants:
+        acr = (v or "").strip()
+        if not _BARE_ACRONYM_RE.match(acr):
+            continue
+        m = _expansion_re(acr).search(text or "")
+        if m:
+            return m.group(0)
+    return None
+
+
 def _check_entities(claim: Claim, text: str) -> Tuple[bool, List[List[str]]]:
     """(ok, the variant lists that appear nowhere in this text)."""
     hay = norm_text(text)
     missing = []
     for variants in claim.entities:
-        if not any(norm_text(v) and norm_text(v) in hay for v in variants):
-            missing.append(variants)
+        if any(norm_text(v) and norm_text(v) in hay for v in variants):
+            continue
+        if _spelled_out_in(variants, text):
+            continue                    # CLASS 1: the page prints it in full
+        missing.append(variants)
     return (not missing), missing
 
 
