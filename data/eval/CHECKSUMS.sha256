@@ -66,3 +66,45 @@ fa0251b2eadc54b0ab006b0b64cce7048b8014dd0116b983b9778d24b4d45a29  data/eval/rele
 4a092e5ba7b737a1625c8b4ba0a66d6652f7a3b93fefd054c95984aafde9b026  data/eval/judge_audit_parity-baseline.jsonl
 8e30f9f1da7d3295ac21a6ab2304a2cecb781908937bfe245d4e8a926219072c  data/eval/judge_audit_claims_parity-baseline.jsonl
 48e3d2db00e106f094665303952801f7bb64a1154693e9855acb07df613d9b9a  data/eval/judge_audit_adjudication_parity-baseline.jsonl
+#
+# Wave 4 — the offline repair A/B (scripts/audit_repair.py). Recorded
+# 2026-08-21 on main @ 924eb22, verify.py blob bbdcfddc2d11, index and
+# registry hashes unchanged from Wave 3.
+#
+#   release_release-2.jsonl   the RAW answer set: one --release run at
+#       --production-planner --conductor --verifier-mode production with
+#       repair OFF. Its `raw_answer` per case is the A/B input; it cannot be
+#       rebuilt (a re-run is a different sample — 11 of 66 raw answers
+#       reproduced between two runs of this pinned config).
+#   replay_release-2_*        arm A: those exact answers replayed through
+#       verify with ONE shared judge pass and ONE repair call, scored three
+#       ways (repair-off / repair-on / repair-on with _carry_cleared
+#       disabled). `_repair-calls.jsonl` is every replayed model call.
+#   replay_release-2b_*       arm A again, second sample. Same command, same
+#       inputs, same code: it exists because the two disagree, and the
+#       disagreement is the finding.
+#   release_repair-fresh.jsonl  arm C: a genuinely fresh --release run with
+#       --verifier-repair. It carries GENERATION variance and is never
+#       compared claim-for-claim with release-2.
+#   audit_repair_release-2*.json  the audit reports over arms A and A'.
+#
+#     venv/bin/python scripts/audit_repair.py replay \
+#       --release data/eval/release_release-2.jsonl \
+#       --out-prefix data/eval/replay_release-2 --repair-samples 2
+#     venv/bin/python scripts/audit_repair.py \
+#       --off data/eval/replay_release-2_repair-off.jsonl \
+#       --on  data/eval/replay_release-2_repair-on-carryoff.jsonl \
+#       --carry-on data/eval/replay_release-2_repair-on.jsonl \
+#       --json data/eval/audit_repair_release-2.json
+9bceedef003584355b88245d6b318115e3c3e7239b8964da1c30848dbf300d3c  data/eval/release_release-2.jsonl
+7703492efb43644ab38e444c7701502bf742615ebb7bc6fa26484d9f98563da2  data/eval/release_repair-fresh.jsonl
+f10ee3e8cb90d4415902015b4f70226c244039cdf44d95940d5a4a9fd28427a5  data/eval/replay_release-2_repair-off.jsonl
+77e6af5f7a1b93165215f9096c569c5978dd1aa3814510319c900d733095fad5  data/eval/replay_release-2_repair-on.jsonl
+766bbd1e317195424ba3e62477c154e6a870a9161e5d156a8146eb449054210c  data/eval/replay_release-2_repair-on-carryoff.jsonl
+b17f68d7f64eba887963f4ad722a2a49a32a13c39460f86573e115c40fae2c44  data/eval/replay_release-2_repair-calls.jsonl
+5368efab5f2401fe241485472d524217de458ac09b7042aec0b337e8bfb292e7  data/eval/replay_release-2b_repair-off.jsonl
+f2d5c02590e729c0d3bfde6c76c0f8b3ef7f6ec0ef774bd6810ae7c9f932b532  data/eval/replay_release-2b_repair-on.jsonl
+85a3f790bb9ee7e233b9abe07fb36e7f592b146b230bdd74f40a6c39c6a87045  data/eval/replay_release-2b_repair-on-carryoff.jsonl
+d7d50a1950f8055be430cdb60200f95ec33d94ea48c28757c982c6b2cbc93cad  data/eval/replay_release-2b_repair-calls.jsonl
+4408790f0d7fda42db904743500824ac33c74f285f7e98fe2a34c43468c636c3  data/eval/audit_repair_release-2.json
+e1661aef36a13aecf8675e8e74251cf40a880c4336f5d38c63909c6fac83e9e6  data/eval/audit_repair_release-2b.json

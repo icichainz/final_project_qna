@@ -1,0 +1,919 @@
+{
+ "off": "data/eval/replay_release-2_repair-off.jsonl",
+ "on": "data/eval/replay_release-2_repair-on-carryoff.jsonl",
+ "cases_compared": 66,
+ "cases_only_on_one_side": [],
+ "answers_rewritten": 4,
+ "claims_before": 173,
+ "claims_after": 170,
+ "supported_before": 149,
+ "supported_after": 153,
+ "groundedness_before": {
+  "n": 154,
+  "d": 173,
+  "rate": 0.8901734104046243,
+  "threshold_95": 165
+ },
+ "groundedness_after": {
+  "n": 155,
+  "d": 170,
+  "rate": 0.9117647058823529,
+  "threshold_95": 162
+ },
+ "citation_completeness_before": {
+  "n": 142,
+  "d": 173,
+  "rate": 0.8208092485549133,
+  "threshold_95": 165
+ },
+ "citation_completeness_after": {
+  "n": 146,
+  "d": 170,
+  "rate": 0.8588235294117647,
+  "threshold_95": 162
+ },
+ "citation_presence_before": {
+  "n": 154,
+  "d": 173,
+  "rate": 0.8901734104046243,
+  "threshold_95": 165
+ },
+ "citation_presence_after": {
+  "n": 155,
+  "d": 170,
+  "rate": 0.9117647058823529,
+  "threshold_95": 162
+ },
+ "contradicted_before": 1,
+ "contradicted_after": 0,
+ "unsupported_before": 23,
+ "unsupported_after": 17,
+ "lost_claims": [
+  {
+   "case": "disc-subnational-pair",
+   "key": "disc-subnational-pair:012b5c1aea48",
+   "text": "Among the retrieved excerpts, the **programme** referred to as the **Global Subnational Climate Fund (SoCF/SoC/SCiF Global)** is described as being **formed by two GCF funding proposals**:",
+   "kind": "entity",
+   "required": true,
+   "status_before": "unsupported",
+   "grounded_before": true,
+   "source_before": "llm",
+   "reason_before": "Evidence lists proposals but not explicitly ‘programme formed by’.",
+   "fate": "corrected",
+   "successor_text": "Among the retrieved excerpts, the **programme** referred to as the **Global Subnational Climate Fund (SoCF/SoC/SCiF Global)** is described as being **formed by two GCF funding proposals** [123_gcf-b27-02-add12, p. 76; 124_gcf-b27-02-add11, p. 84]:",
+   "successor_status": "supported",
+   "successor_grounded": true,
+   "successor_similarity": 0.727,
+   "deleted_though_grounded": false
+  },
+  {
+   "case": "disc-subnational-pair",
+   "key": "disc-subnational-pair:86d1de9f3a6c",
+   "text": "**“Global Sub-national Climate Fund (SoCF Global) – Equity”** (submitted by **Peganas/Pegasus Capital Advisors**) [123_gcf-b27-02-add12, p. 76; 124_gcf-b27-02-add11, p. 84]",
+   "kind": "entity",
+   "required": true,
+   "status_before": "unsupported",
+   "grounded_before": false,
+   "source_before": "llm",
+   "reason_before": "Evidence mentions Pegasus Capital Advisors, not ‘submitted by Peganas’.",
+   "fate": "corrected",
+   "successor_text": "**“Global Sub-national Climate Fund (SoCF Global) – Equity”** (submitted by **Pegasus Capital Advisors**) [123_gcf-b27-02-add12, p. 76; 124_gcf-b27-02-add11, p. 84]",
+   "successor_status": "supported",
+   "successor_grounded": true,
+   "successor_similarity": 0.955,
+   "deleted_though_grounded": false
+  },
+  {
+   "case": "noisy-lower-symbols",
+   "key": "noisy-lower-symbols:284c426de89a",
+   "text": "For FP173 (“The Amazon Bioeconomy Fund”), the retrieved excerpts show **conflicting figures for the amount of GCF funding** in the same document:",
+   "kind": "entity",
+   "required": true,
+   "status_before": "unsupported",
+   "grounded_before": true,
+   "source_before": "llm",
+   "reason_before": "Evidence shown includes notes, not conflicting GCF funding figures.",
+   "fate": "deleted",
+   "successor_text": null,
+   "successor_status": null,
+   "successor_grounded": null,
+   "successor_similarity": 0.277,
+   "deleted_though_grounded": true
+  },
+  {
+   "case": "noisy-lower-symbols",
+   "key": "noisy-lower-symbols:19c5ba3989a6",
+   "text": "**US$23.6 million** — shown as “Total GCF funding requested” in section **A.8** on **p.5** [102_gcf-b30-02-add05, p.5; cover pages].",
+   "kind": "money",
+   "required": true,
+   "status_before": "supported",
+   "grounded_before": true,
+   "source_before": "deterministic",
+   "reason_before": "value found in the cited evidence",
+   "fate": "corrected",
+   "successor_text": "**US$23.6 million** — shown as “Total GCF funding requested” in section **A.8** on **p.5** [102_gcf-b30-02-add05, cover pages].",
+   "successor_status": "supported",
+   "successor_grounded": true,
+   "successor_similarity": 1.0,
+   "deleted_though_grounded": false
+  },
+  {
+   "case": "noisy-lower-symbols",
+   "key": "noisy-lower-symbols:0301ee96252a",
+   "text": "A narrative section also states **“IUSD 279 million … from GCF”** and “total cost … IUSD 597 million including IUSD 279 million … from GCF” on **p.129** [102_gcf-b30-02-add05, p.129].",
+   "kind": "number",
+   "required": true,
+   "status_before": "supported",
+   "grounded_before": false,
+   "source_before": "llm",
+   "reason_before": "Page 129 states IUSD 279 million from GCF, total IUSD 597 million.",
+   "fate": "deleted",
+   "successor_text": null,
+   "successor_status": null,
+   "successor_grounded": null,
+   "successor_similarity": 0.324,
+   "deleted_though_grounded": false
+  },
+  {
+   "case": "abs-2014",
+   "key": "abs-2014:73ece9cb342a",
+   "text": "The authoritative registry note states that **2014 has no registered proposals** (and also notes there was **no board meeting that year in this corpus**), and none of the retrieved excerpts are dated 2014.",
+   "kind": "year",
+   "required": false,
+   "status_before": "contradicted",
+   "grounded_before": true,
+   "source_before": "llm",
+   "reason_before": "Excerpt references document code “GCF/B.15/2014/Corr.09”.",
+   "fate": "corrected",
+   "successor_text": "The authoritative registry note states that **2014 has no registered proposals** (and also notes there was **no board meeting that year in this corpus**), but one retrieved excerpt references the document code “GCF/B.15/2014/Corr.09” ([239_gcf-b15-13-add09-corr01, p.1]).",
+   "successor_status": "supported",
+   "successor_grounded": true,
+   "successor_similarity": 0.5,
+   "deleted_though_grounded": false
+  },
+  {
+   "case": "abs-2014",
+   "key": "abs-2014:61db0d8b60d4",
+   "text": "Therefore, **no GCF funding proposals were approved in 2014** based on the registry.",
+   "kind": "year",
+   "required": false,
+   "status_before": "unsupported",
+   "grounded_before": true,
+   "source_before": "llm",
+   "reason_before": "Evidence does not state no GCF proposals approved in 2014.",
+   "fate": "qualified",
+   "successor_text": "Therefore, it is **not supported by the retrieved evidence** that **no GCF funding proposals were approved in 2014** based on the registry.",
+   "successor_status": "supported",
+   "successor_grounded": true,
+   "successor_similarity": 0.619,
+   "deleted_though_grounded": false
+  },
+  {
+   "case": "abs-antarctica",
+   "key": "abs-antarctica:79961a068a47",
+   "text": "None of the retrieved excerpts mention any GCF funding proposal that funds a metro system in Antarctica.",
+   "kind": "entity",
+   "required": true,
+   "status_before": "unsupported",
+   "grounded_before": false,
+   "source_before": "llm",
+   "reason_before": "Evidence doesn’t mention Antarctica or metro funding proposals there.",
+   "fate": "qualified",
+   "successor_text": "The retrieved excerpts do not mention Antarctica or any GCF funding proposal for a metro system there, so this cannot be confirmed from the provided evidence.",
+   "successor_status": null,
+   "successor_grounded": null,
+   "successor_similarity": 0.4,
+   "deleted_though_grounded": false
+  },
+  {
+   "case": "abs-antarctica",
+   "key": "abs-antarctica:89909ccc9cee",
+   "text": "Retrieval surfaced metro-related content only in the context of the Dominican Republic (modal integration with an existing metro line in Santo Domingo) and a replication example referencing the Delhi metro in India—not Antarctica [39_gcf-b39-02-add12-rev01-funding-proposal-package-fp237, p.50; 86_gcf-b33-02-add03, p.70].",
+   "kind": "entity",
+   "required": true,
+   "status_before": "unsupported",
+   "grounded_before": false,
+   "source_before": "llm",
+   "reason_before": "Evidence shows two metro mentions, but not “only” those.",
+   "fate": "corrected",
+   "successor_text": "Retrieval surfaced metro-related content in (1) the Dominican Republic (modal integration with the metro line in Santo Domingo) and (2) a replicability example referencing the Delhi metro in India [39_gcf-b39-02-add12-rev01-funding-proposal-package-fp237, p.50; 86_gcf-b33-02-add03, p.70].",
+   "successor_status": "supported",
+   "successor_grounded": true,
+   "successor_similarity": 0.766,
+   "deleted_though_grounded": false
+  }
+ ],
+ "lost_supported_claims": 2,
+ "lost_supported_undocumented": 2,
+ "added_claims": [
+  {
+   "case": "disc-subnational-pair",
+   "key": "disc-subnational-pair:04008f3bbb4b",
+   "text": "Among the retrieved excerpts, the **programme** referred to as the **Global Subnational Climate Fund (SoCF/SoC/SCiF Global)** is described as being **formed by two GCF funding proposals** [123_gcf-b27-02-add12, p. 76; 124_gcf-b27-02-add11, p. 84]:",
+   "kind": "entity",
+   "status_after": "supported",
+   "grounded_after": true,
+   "cited": true
+  },
+  {
+   "case": "disc-subnational-pair",
+   "key": "disc-subnational-pair:c96812655b22",
+   "text": "**“Global Sub-national Climate Fund (SoCF Global) – Equity”** (submitted by **Pegasus Capital Advisors**) [123_gcf-b27-02-add12, p. 76; 124_gcf-b27-02-add11, p. 84]",
+   "kind": "entity",
+   "status_after": "supported",
+   "grounded_after": true,
+   "cited": true
+  },
+  {
+   "case": "noisy-lower-symbols",
+   "key": "noisy-lower-symbols:ef1053d162fc",
+   "text": "**US$23.6 million** — shown as “Total GCF funding requested” in section **A.8** on **p.5** [102_gcf-b30-02-add05, cover pages].",
+   "kind": "money",
+   "status_after": "supported",
+   "grounded_after": true,
+   "cited": true
+  },
+  {
+   "case": "abs-2014",
+   "key": "abs-2014:59afdae3a68c",
+   "text": "The authoritative registry note states that **2014 has no registered proposals** (and also notes there was **no board meeting that year in this corpus**), but one retrieved excerpt references the document code “GCF/B.15/2014/Corr.09” ([239_gcf-b15-13-add09-corr01, p.1]).",
+   "kind": "entity",
+   "status_after": "supported",
+   "grounded_after": true,
+   "cited": true
+  },
+  {
+   "case": "abs-2014",
+   "key": "abs-2014:2f819fd0537c",
+   "text": "Therefore, it is **not supported by the retrieved evidence** that **no GCF funding proposals were approved in 2014** based on the registry.",
+   "kind": "year",
+   "status_after": "supported",
+   "grounded_after": true,
+   "cited": true
+  },
+  {
+   "case": "abs-antarctica",
+   "key": "abs-antarctica:373b3e190810",
+   "text": "Retrieval surfaced metro-related content in (1) the Dominican Republic (modal integration with the metro line in Santo Domingo) and (2) a replicability example referencing the Delhi metro in India [39_gcf-b39-02-add12-rev01-funding-proposal-package-fp237, p.50; 86_gcf-b33-02-add03, p.70].",
+   "kind": "entity",
+   "status_after": "supported",
+   "grounded_after": true,
+   "cited": true
+  }
+ ],
+ "status_moved": [],
+ "fates": {
+  "corrected": 5,
+  "deleted": 2,
+  "qualified": 2
+ },
+ "corrected": 5,
+ "deleted": 2,
+ "qualified": 2,
+ "deleted_though_grounded": [
+  {
+   "case": "noisy-lower-symbols",
+   "key": "noisy-lower-symbols:284c426de89a",
+   "text": "For FP173 (“The Amazon Bioeconomy Fund”), the retrieved excerpts show **conflicting figures for the amount of GCF funding** in the same document:",
+   "kind": "entity",
+   "required": true,
+   "status_before": "unsupported",
+   "grounded_before": true,
+   "source_before": "llm",
+   "reason_before": "Evidence shown includes notes, not conflicting GCF funding figures.",
+   "fate": "deleted",
+   "successor_text": null,
+   "successor_status": null,
+   "successor_grounded": null,
+   "successor_similarity": 0.277,
+   "deleted_though_grounded": true
+  }
+ ],
+ "invented_docs": [],
+ "invented_pages": [],
+ "invented_figures": [],
+ "invented_figures_matcher_cannot_place": [],
+ "invented_entities": [],
+ "sources_not_shown_to_repair": [],
+ "newly_cited_pages": [
+  {
+   "doc": "239_gcf-b15-13-add09-corr01",
+   "page": 1,
+   "case": "abs-2014"
+  }
+ ],
+ "novel_sentences": [
+  {
+   "text": "Among the retrieved excerpts, the **programme** referred to as the **Global Subnational Climate Fund (SoCF/SoC/SCiF Global)** is described as being **formed by two GCF funding proposals** [123_gcf-b27-02-add12, p. 76; 124_gcf-b27-02-add11, p. 84]:\n\n1.",
+   "is_claim": false,
+   "status": null,
+   "grounded": null,
+   "hedge": false,
+   "case": "disc-subnational-pair"
+  },
+  {
+   "text": "**“Global Sub-national Climate Fund (SoCF Global) – Equity”** (submitted by **Pegasus Capital Advisors**) [123_gcf-b27-02-add12, p. 76; 124_gcf-b27-02-add11, p. 84]  \n2.",
+   "is_claim": false,
+   "status": null,
+   "grounded": null,
+   "hedge": false,
+   "case": "disc-subnational-pair"
+  },
+  {
+   "text": "For FP173 (“The Amazon Bioeconomy Fund”), the retrieved excerpts **do not support** the claim that they show conflicting figures for the amount of GCF funding in the same document, because the provided evidence includes registry/computed notes but does not include the underlying document excerpts sh",
+   "is_claim": false,
+   "status": null,
+   "grounded": null,
+   "hedge": false,
+   "case": "noisy-lower-symbols"
+  },
+  {
+   "text": "The authoritative registry note states that **2014 has no registered proposals** (and also notes there was **no board meeting that year in this corpus**), but one retrieved excerpt references the document code “GCF/B.15/2014/Corr.09” ([239_gcf-b15-13-add09-corr01, p.1]).",
+   "is_claim": true,
+   "status": "supported",
+   "grounded": true,
+   "hedge": false,
+   "case": "abs-2014"
+  },
+  {
+   "text": "Therefore, it is **not supported by the retrieved evidence** that **no GCF funding proposals were approved in 2014** based on the registry.",
+   "is_claim": true,
+   "status": "supported",
+   "grounded": true,
+   "hedge": true,
+   "case": "abs-2014"
+  },
+  {
+   "text": "The retrieved excerpts do not mention Antarctica or any GCF funding proposal for a metro system there, so this cannot be confirmed from the provided evidence.",
+   "is_claim": false,
+   "status": null,
+   "grounded": null,
+   "hedge": true,
+   "case": "abs-antarctica"
+  },
+  {
+   "text": "Retrieval surfaced metro-related content in (1) the Dominican Republic (modal integration with the metro line in Santo Domingo) and (2) a replicability example referencing the Delhi metro in India [39_gcf-b39-02-add12-rev01-funding-proposal-package-fp237, p.50; 86_gcf-b33-02-add03, p.70].",
+   "is_claim": true,
+   "status": "supported",
+   "grounded": true,
+   "hedge": false,
+   "case": "abs-antarctica"
+  }
+ ],
+ "answer_checks_pass_before": 54,
+ "answer_checks_pass_after": 54,
+ "answer_checks_pass_to_fail": 0,
+ "answer_checks_pass_to_fail_cases": [],
+ "answer_checks_fail_to_pass_cases": [],
+ "check_regressions": [],
+ "language_regressions": [],
+ "language_per_case": [
+  {
+   "case": "disc-subnational-pair",
+   "lang": "en",
+   "language_before": true,
+   "language_after": true
+  },
+  {
+   "case": "noisy-lower-symbols",
+   "lang": "en",
+   "language_before": true,
+   "language_after": true
+  },
+  {
+   "case": "abs-2014",
+   "lang": "en",
+   "language_before": true,
+   "language_after": true
+  },
+  {
+   "case": "abs-antarctica",
+   "lang": "en",
+   "language_before": true,
+   "language_after": true
+  }
+ ],
+ "behaviour_per_case": [
+  {
+   "case": "disc-subnational-pair",
+   "expected": "answer",
+   "before": true,
+   "after": true
+  },
+  {
+   "case": "noisy-lower-symbols",
+   "expected": "answer",
+   "before": true,
+   "after": true
+  },
+  {
+   "case": "abs-2014",
+   "expected": "abstain",
+   "before": true,
+   "after": true
+  },
+  {
+   "case": "abs-antarctica",
+   "expected": "abstain",
+   "before": false,
+   "after": false
+  }
+ ],
+ "field_coverage_before": {
+  "n": 53,
+  "d": 56,
+  "rate": 0.9464285714285714
+ },
+ "field_coverage_after": {
+  "n": 53,
+  "d": 56,
+  "rate": 0.9464285714285714
+ },
+ "per_case": [
+  {
+   "case": "disc-subnational-pair",
+   "class": "discovery",
+   "lang": "en",
+   "status_before": "partial",
+   "status_after": "repaired",
+   "claims": [
+    4,
+    4
+   ],
+   "supported": [
+    2,
+    4
+   ],
+   "grounded": [
+    3,
+    4
+   ],
+   "citation_supported": [
+    2,
+    4
+   ],
+   "score": [
+    0.6,
+    0.6
+   ],
+   "chars": [
+    736,
+    787
+   ],
+   "lost": 2,
+   "added": 2,
+   "fates": {
+    "corrected": 2
+   },
+   "repair_notes": [
+    "repaired 2 failing claim(s)"
+   ]
+  },
+  {
+   "case": "noisy-lower-symbols",
+   "class": "noisy",
+   "lang": "en",
+   "status_before": "partial",
+   "status_after": "repaired",
+   "claims": [
+    4,
+    2
+   ],
+   "supported": [
+    3,
+    2
+   ],
+   "grounded": [
+    3,
+    2
+   ],
+   "citation_supported": [
+    3,
+    2
+   ],
+   "score": [
+    1.0,
+    1.0
+   ],
+   "chars": [
+    782,
+    767
+   ],
+   "lost": 3,
+   "added": 1,
+   "fates": {
+    "deleted": 2,
+    "corrected": 1
+   },
+   "repair_notes": [
+    "repaired 1 failing claim(s)"
+   ]
+  },
+  {
+   "case": "abs-2014",
+   "class": "abstain",
+   "lang": "en",
+   "status_before": "partial",
+   "status_after": "repaired",
+   "claims": [
+    2,
+    2
+   ],
+   "supported": [
+    0,
+    2
+   ],
+   "grounded": [
+    2,
+    2
+   ],
+   "citation_supported": [
+    0,
+    2
+   ],
+   "score": [
+    1.0,
+    1.0
+   ],
+   "chars": [
+    296,
+    417
+   ],
+   "lost": 2,
+   "added": 2,
+   "fates": {
+    "corrected": 1,
+    "qualified": 1
+   },
+   "repair_notes": [
+    "repaired 2 failing claim(s)"
+   ]
+  },
+  {
+   "case": "abs-antarctica",
+   "class": "abstain",
+   "lang": "en",
+   "status_before": "abstain",
+   "status_after": "repaired",
+   "claims": [
+    2,
+    1
+   ],
+   "supported": [
+    0,
+    1
+   ],
+   "grounded": [
+    0,
+    1
+   ],
+   "citation_supported": [
+    0,
+    1
+   ],
+   "score": [
+    0.5,
+    0.5
+   ],
+   "chars": [
+    427,
+    449
+   ],
+   "lost": 2,
+   "added": 1,
+   "fates": {
+    "qualified": 1,
+    "corrected": 1
+   },
+   "repair_notes": [
+    "repaired 2 failing claim(s)"
+   ]
+  }
+ ],
+ "carry_on_vs_carry_off": {
+  "answers_that_differ": [
+   {
+    "case": "agg-2021-boards",
+    "carry_on_repaired": true,
+    "carry_off_repaired": false,
+    "carry_on_notes": [
+     "repaired 1 failing claim(s)"
+    ],
+    "carry_off_notes": [
+     "repair rejected: 1 claim(s) still fail verification (was 1) — no citation on a factual claim"
+    ]
+   }
+  ],
+  "totals": {
+   "claims_carry_on": 169,
+   "claims_carry_off": 170,
+   "supported_carry_on": 153,
+   "supported_carry_off": 153,
+   "grounded_carry_on": 154,
+   "grounded_carry_off": 155,
+   "citation_supported_carry_on": 146,
+   "citation_supported_carry_off": 146
+  }
+ },
+ "cost": {
+  "judge": {
+   "calls": 21,
+   "prompt_tokens": 19094,
+   "completion_tokens": 1456,
+   "latency_total_s": 45.68,
+   "latency_p50_s": 1.947,
+   "latency_p95_s": 2.968,
+   "cost_usd": 0.0384
+  },
+  "repair": {
+   "calls": 11,
+   "prompt_tokens": 14983,
+   "completion_tokens": 3068,
+   "latency_total_s": 44.73,
+   "latency_p50_s": 3.356,
+   "latency_p95_s": 7.432,
+   "cost_usd": 0.0494
+  }
+ },
+ "repair_call_spread": {
+  "cases_sampled_twice": 11,
+  "identical_repair_text": 1,
+  "adoption_flipped": 2,
+  "flips": [
+   {
+    "case": "abs-2014",
+    "sample_1_adopted": true,
+    "sample_2_adopted": false,
+    "sample_2_status": "partial",
+    "sample_2_notes": [
+     "repair rejected: 2 claim(s) still fail verification (was 2) — no citation on a factual claim"
+    ]
+   },
+   {
+    "case": "agg-2020-range",
+    "sample_1_adopted": false,
+    "sample_2_adopted": true,
+    "sample_2_status": "repaired",
+    "sample_2_notes": [
+     "repaired 2 failing claim(s)"
+    ]
+   }
+  ]
+ },
+ "pre_gate_probe": {
+  "proposals": 11,
+  "verify_gate_caught_introduced_sources": [],
+  "audit_found": {
+   "invented_docs": 0,
+   "invented_pages": 0,
+   "sources_not_shown_to_repair": 0,
+   "invented_figures": 1,
+   "invented_entities": 2,
+   "newly_cited_pages": 5
+  },
+  "detail": {
+   "invented_docs": [],
+   "invented_pages": [],
+   "sources_not_shown_to_repair": [],
+   "invented_figures": [
+    {
+     "digits": "1503",
+     "matcher_places_it": true,
+     "case": "cmp-fp254-fp248-currency"
+    }
+   ],
+   "invented_entities": [
+    {
+     "name": "date de réunion du Conseil du GCF",
+     "claim": "une **date de réunion du Conseil du GCF** indiquée comme **Tuesday, June 23, 2020** ([145_gcf-b26-02-add02, p.91]).",
+     "case": "agg-2020-range"
+    },
+    {
+     "name": "Conseil du GCF",
+     "claim": "une **date de réunion du Conseil du GCF** indiquée comme **Tuesday, June 23, 2020** ([145_gcf-b26-02-add02, p.91]).",
+     "case": "agg-2020-range"
+    }
+   ],
+   "newly_cited_pages": [
+    {
+     "doc": "189_12-status-approved-fps-adding-host-countries-respect-fp086-gcf-b37-07",
+     "page": 24,
+     "case": "cid-fp0086-padded"
+    },
+    {
+     "doc": "239_gcf-b15-13-add09-corr01",
+     "page": 1,
+     "case": "abs-2014"
+    },
+    {
+     "doc": "135_gcf-b26-02-add12",
+     "page": 26,
+     "case": "agg-2020-range"
+    },
+    {
+     "doc": "127_gcf-b27-02-add08",
+     "page": 9,
+     "case": "agg-2020-range"
+    },
+    {
+     "doc": "145_gcf-b26-02-add02",
+     "page": 91,
+     "case": "agg-2020-range"
+    }
+   ]
+  },
+  "per_case": [
+   {
+    "case": "id-fp269-gcf",
+    "failures": [
+     1,
+     1
+    ],
+    "supported_required": [
+     3,
+     3
+    ],
+    "would_adopt": false,
+    "verify_introduced_sources": [],
+    "audit_invented_docs": 0,
+    "audit_invented_pages": 0,
+    "audit_not_shown": 0,
+    "audit_invented_figures": 0
+   },
+   {
+    "case": "cid-fp0086-padded",
+    "failures": [
+     1,
+     1
+    ],
+    "supported_required": [
+     6,
+     6
+    ],
+    "would_adopt": false,
+    "verify_introduced_sources": [],
+    "audit_invented_docs": 0,
+    "audit_invented_pages": 0,
+    "audit_not_shown": 0,
+    "audit_invented_figures": 0
+   },
+   {
+    "case": "disc-subnational-pair",
+    "failures": [
+     2,
+     0
+    ],
+    "supported_required": [
+     2,
+     4
+    ],
+    "would_adopt": true,
+    "verify_introduced_sources": [],
+    "audit_invented_docs": 0,
+    "audit_invented_pages": 0,
+    "audit_not_shown": 0,
+    "audit_invented_figures": 0
+   },
+   {
+    "case": "cmp-fp254-fp248-currency",
+    "failures": [
+     1,
+     3
+    ],
+    "supported_required": [
+     4,
+     3
+    ],
+    "would_adopt": false,
+    "verify_introduced_sources": [],
+    "audit_invented_docs": 0,
+    "audit_invented_pages": 0,
+    "audit_not_shown": 0,
+    "audit_invented_figures": 0
+   },
+   {
+    "case": "conf-fp153-gcf",
+    "failures": [
+     2,
+     1
+    ],
+    "supported_required": [
+     2,
+     2
+    ],
+    "would_adopt": false,
+    "verify_introduced_sources": [],
+    "audit_invented_docs": 0,
+    "audit_invented_pages": 0,
+    "audit_not_shown": 0,
+    "audit_invented_figures": 0
+   },
+   {
+    "case": "noisy-lower-symbols",
+    "failures": [
+     1,
+     0
+    ],
+    "supported_required": [
+     3,
+     2
+    ],
+    "would_adopt": true,
+    "verify_introduced_sources": [],
+    "audit_invented_docs": 0,
+    "audit_invented_pages": 0,
+    "audit_not_shown": 0,
+    "audit_invented_figures": 0
+   },
+   {
+    "case": "abs-2014",
+    "failures": [
+     2,
+     0
+    ],
+    "supported_required": [
+     0,
+     1
+    ],
+    "would_adopt": true,
+    "verify_introduced_sources": [],
+    "audit_invented_docs": 0,
+    "audit_invented_pages": 0,
+    "audit_not_shown": 0,
+    "audit_invented_figures": 0
+   },
+   {
+    "case": "abs-antarctica",
+    "failures": [
+     2,
+     0
+    ],
+    "supported_required": [
+     0,
+     1
+    ],
+    "would_adopt": true,
+    "verify_introduced_sources": [],
+    "audit_invented_docs": 0,
+    "audit_invented_pages": 0,
+    "audit_not_shown": 0,
+    "audit_invented_figures": 0
+   },
+   {
+    "case": "agg-2020-range",
+    "failures": [
+     2,
+     2
+    ],
+    "supported_required": [
+     0,
+     1
+    ],
+    "would_adopt": false,
+    "verify_introduced_sources": [],
+    "audit_invented_docs": 0,
+    "audit_invented_pages": 0,
+    "audit_not_shown": 0,
+    "audit_invented_figures": 0
+   },
+   {
+    "case": "agg-corpus-boards",
+    "failures": [
+     9,
+     6
+    ],
+    "supported_required": [
+     0,
+     3
+    ],
+    "would_adopt": false,
+    "verify_introduced_sources": [],
+    "audit_invented_docs": 0,
+    "audit_invented_pages": 0,
+    "audit_not_shown": 0,
+    "audit_invented_figures": 0
+   },
+   {
+    "case": "agg-2021-boards",
+    "failures": [
+     1,
+     1
+    ],
+    "supported_required": [
+     3,
+     3
+    ],
+    "would_adopt": false,
+    "verify_introduced_sources": [],
+    "audit_invented_docs": 0,
+    "audit_invented_pages": 0,
+    "audit_not_shown": 0,
+    "audit_invented_figures": 0
+   }
+  ]
+ },
+ "breaches": [
+  "2 supported claim(s) lost with no documented necessity"
+ ],
+ "gate_pass": false
+}
