@@ -1716,7 +1716,7 @@ def test_the_seed_set_does_not_depend_on_the_verifier_it_scores():
     mutation may name a verdict at all."""
     sv, res, _p = _scored()
     src = SCORER.read_text()
-    for fn in ("def fabricate(", "def repair("):
+    for fn in ("def fabricate(", "def repair(", "def contradict("):
         body = src[src.index(fn):src.index("# ---", src.index(fn))]
         code = "\n".join(ln for ln in body.splitlines()
                          if ln.strip() and not ln.lstrip().startswith("#"))
@@ -1788,6 +1788,360 @@ def test_the_judge_bound_counters_are_pinned():
 def test_every_scored_row_joins_exactly_one_extracted_claim():
     _sv, res, problems = _scored()
     assert res["unmatched"] == [] and problems == []
+
+
+# ---------------------------------------------------------------------------
+# the contradiction arm, and the instrument hole it closes
+#
+# FINDING F1.  The merge review of 4a04d32 replaced `verify._field_conflict`
+# with `return None` — deleting every evidence-text contradiction the verifier
+# can emit — re-ran `scripts/score_verifier.py`, and every printed digit was
+# identical: gold 30.8%, overall 73.1%, recall 68.0%, four matrices flat to the
+# count, caution census flat.  The unit suite caught it; the instrument that
+# will certify Wave 4's repair A/B did not.  Two causes, and a test for each:
+#
+#   (a) `Replay.cautions()` counted flags on SUPPORTED claims only, and two of
+#       the verifier's flags are emitted ONLY on a CONTRADICTED verdict.
+#   (b) no arm held a claim that MUST come back CONTRADICTED, and the matrices
+#       count `flagged`, which a lost contradiction usually does not change.
+# ---------------------------------------------------------------------------
+
+#: The one contradiction-arm row this tree does NOT get right — an EXACT set,
+#: for the same reason KNOWN_UNCLEARED and REPAIRED_STILL_FLAGGED are exact:
+#: it fails when a row starts passing as well as when one stops.
+#:
+#: `123_gcf-b27-02-add12` p.5 prints, verbatim, '## A8. Total GCF funding
+#: requested\n150 M USD', and the row states 150 M USD for total_financing
+#: while the same document's registry line prints '720 M USD' for that field.
+#: Two things have to be true for it to come back SUPPORTED, and both are:
+#: `verify.amounts` does not yield '150 M USD' from that page (the page also
+#: carries '- Equity: 150 MUSD', and what it yields is `('150', 150.0, 'USD',
+#: None)`), so the claim misses its strict scope; and the same-document
+#: fallback branch that then supports it — 'value found in the cited document,
+#: but not on the cited page' — runs NO conflict check at all before returning
+#: SUPPORTED.  That second half is a hole in the contradiction path itself, and
+#: naming it here is the point of the row: it is the instrument reporting a gap
+#: in the code under test, not the arm being wrong.
+CONTRADICTION_ARM_MISSES = {"con-elsewhere-id-fp152-financing-b580f69e0a"}
+
+#: Every shape the arm must actually reach.  COUNTED, NOT ASSERTED — the same
+#: discipline `test_the_rider_shapes_are_actually_seeded` exists for, after a
+#: docstring advertised absence shapes the seed set never once produced.
+CONTRADICTION_SHAPES = {"same-key", "transposed", "wrong-page", "elsewhere"}
+
+
+def test_the_contradiction_arm_is_seeded_and_reaches_every_shape():
+    """The arm the other four structurally cannot contain: a claim whose CITED
+    key prints a different value under the claim's OWN field label."""
+    _sv, res, _p = _scored()
+    assert res["arm_sizes"].get("contradicted", 0) >= 30, res["arm_sizes"]
+    shapes = res["contradicted_by_shape"]
+    assert set(shapes) == CONTRADICTION_SHAPES, sorted(shapes)
+    for shape in CONTRADICTION_SHAPES:
+        assert shapes[shape]["rows"] >= 1, (shape, shapes)
+    # the two shapes whose loss PROMOTES rather than degrades: the claim's own
+    # figure verifies against the page it cites, so the field conflict is the
+    # only thing standing between it and SUPPORTED
+    assert shapes["transposed"]["rows"] + shapes["elsewhere"]["rows"] >= 15, shapes
+
+
+def test_every_contradiction_row_must_contradict_and_says_why():
+    _sv, res, _p = _scored()
+    rows = [r for r in res["rows"] if r["arm"] == "contradicted"]
+    for r in rows:
+        assert r["should_flag"] is True and r["must_contradict"] is True, r
+        assert r["validity"] and len(r["validity"]) > 30, r
+        assert r["field"] in ("gcf_financing", "total_financing", "co_financing"), r
+
+
+def test_the_contradiction_arm_is_structurally_valid():
+    """RE-DERIVED FROM THE EVIDENCE TEXT, not trusted from the row.
+
+    For every row: the rival really is printed under that field's own label on
+    a key of the cited document, the claim does not state the rival itself, and
+    the claim's field is the one the row says it is. Nothing here reads a
+    verdict — it is the same certification the row was built under, run again
+    from the recorded evidence.
+    """
+    sv, res, _p = _scored()
+    rows, _problems = sv.build_rows(
+        sv.read_jsonl(GOLD / "release_release-1-adjudicated.jsonl"),
+        sv.read_jsonl(GOLD / "release_release-1-evidence.jsonl"),
+        sv.read_jsonl(GOLD / "release_release-1.jsonl"))
+    con = [r for r in rows if r["arm"] == "contradicted"]
+    assert len(con) >= 30
+    for row in con:
+        field, rival = row["field"], row["rival"]
+        cited = (row["cited"][0], row["cited"][1])
+        assert sv._seed_field_of(row["claim_text"]) == field, row["row_id"]
+        # the rival is really PRINTED, under that field's own label, on a key
+        # of the cited document — the same key for every shape but `elsewhere`,
+        # where it is another key of the same document by construction
+        printed = {k: got[field][0] for k, t in row["evidence"].items()
+                   if field in (got := sv._seed_printed_fields(t))}
+        assert printed, f"{row['row_id']}: no key prints {field}"
+        assert any(k[0] == cited[0] and sv._digits(v) == sv._digits(rival)
+                   for k, v in printed.items()), (row["row_id"], rival, printed)
+        if row["why"] != "elsewhere":
+            assert sv._digits(printed.get(cited, "")) == sv._digits(rival), row
+        else:
+            assert field not in sv._seed_printed_fields(
+                row["evidence"].get(cited, "")), row["row_id"]
+        # and the claim itself does not state the rival its cited scope gives:
+        # a claim that reports both sides is the instructed behaviour, not a
+        # contradiction, and the verifier is right not to flag it
+        mine = {sv._digits(s) for s in
+                sv._seed_runs(V._strip_citations(row["claim_text"]))}
+        assert sv._digits(rival) not in mine, (row["row_id"], rival)
+        # nor does any sibling claim of the same answer that names that document
+        others = [c for c in V.extract_claims(row["answer"])
+                  if c.text != row["claim_text"]]
+        assert sv._digits(rival) not in sv._sibling_digits(
+            V.extract_claims(row["answer"]),
+            next(c for c in V.extract_claims(row["answer"])
+                 if c.text == row["claim_text"]), cited[0]), row["row_id"]
+        assert others is not None
+
+
+def test_the_contradiction_counters_are_pinned():
+    """The digits the reviewer's experiment has to move, pinned like gates."""
+    _sv, res, _p = _scored()
+    con = res["arms"]["contradicted"]["counts"]
+    assert con["must_contradict"] == res["arm_sizes"]["contradicted"]
+    assert con["tp_contradicted"] >= 33, res["arms"]["contradicted"]
+    assert con["fp"] == 0 and con["fp_contradicted"] == 0
+    lost = {r["row_id"] for r in res["rows"]
+            if r.get("must_contradict") and r["status"] != V.CONTRADICTED}
+    assert lost == CONTRADICTION_ARM_MISSES, lost
+
+
+def _rescore_with(monkeypatch, name, replacement):
+    """Rebuild AND rescore the whole seed set with one verifier symbol
+    replaced.  The seed set must not move — that is what makes the two scores
+    comparable — so the digest is asserted first."""
+    sv = _scorer()
+    args = (sv.read_jsonl(GOLD / "release_release-1-adjudicated.jsonl"),
+            sv.read_jsonl(GOLD / "release_release-1-evidence.jsonl"),
+            sv.read_jsonl(GOLD / "release_release-1.jsonl"))
+    before_rows = sv.build_rows(*args)[0]
+    before = sv.score(before_rows)
+    digest = sv.seed_digest(before_rows)
+    monkeypatch.setattr(V, name, replacement)
+    after_rows = sv.build_rows(*args)[0]
+    assert sv.seed_digest(after_rows) == digest, name
+    return sv, before, sv.score(after_rows)
+
+
+def test_deleting_the_field_conflict_path_is_now_DETECTED(monkeypatch):
+    """FINDING F1, RUN AS A TEST.  This is the reviewer's exact experiment —
+    `_field_conflict` replaced by `return None` — and the assertion is that the
+    SCORER now sees it.  Before the contradiction arm existed, every one of
+    these numbers was identical across the two trees.
+
+    Measured on this tree: the contradicted arm goes TP 33 -> 12, FN 1 -> 22,
+    recall 97.1% -> 35.3%, TP|contra 33 -> 0, and 22 rows are PROMOTED to a
+    passing verdict — a false negative in the region a repair pass fires on.
+    """
+    sv, before, after = _rescore_with(
+        monkeypatch, "_field_conflict", lambda *a, **k: None)
+    b = before["arms"]["contradicted"]["counts"]
+    a = after["arms"]["contradicted"]["counts"]
+    assert b["tp_contradicted"] >= 33 and a["tp_contradicted"] == 0
+    assert a["fn"] >= 20 and a["fn"] > b["fn"]
+    assert after["arms"]["contradicted"]["recall"] < 0.5 <= \
+        before["arms"]["contradicted"]["recall"]
+    assert a["contradiction_promoted"] >= 20
+    # and the overall table moves too, which is what a reviewer reads first
+    assert after["overall"]["recall"] < before["overall"]["recall"] - 0.10
+
+
+def test_a_contradiction_that_only_DEGRADES_is_also_detected(monkeypatch):
+    """The subtler half.  Collapsing CONTRADICTED onto UNSUPPORTED leaves every
+    cell of every matrix exactly where it was — `flagged` is true either way —
+    so nothing that counts `flagged` can see it.  It is not cosmetic: with
+    `VERIFY_LLM=1` an UNSUPPORTED-and-plausible claim is the residue the judge
+    is handed and may clear, while a CONTRADICTED one is never shown to it.
+    The status counters and the flag census are what see this."""
+    real = V.classify_deterministic
+
+    def no_contradictions(claims, evidence, *a, **k):
+        """The code stops EMITTING contradictions; the constants are untouched.
+        Patching `verify.CONTRADICTED` itself would prove nothing — the scorer
+        reads the same symbol, so the two sides would move together."""
+        return [V.Verdict(v.claim, V.UNSUPPORTED, v.reason, v.scope,
+                          source=v.source, flags=list(v.flags),
+                          plausible=v.plausible)
+                if v.status == V.CONTRADICTED else v
+                for v in real(claims, evidence, *a, **k)]
+
+    sv, before, after = _rescore_with(
+        monkeypatch, "classify_deterministic", no_contradictions)
+    for arm in sv.ARMS:
+        b = before["arms"][arm]["counts"]
+        a = after["arms"][arm]["counts"]
+        assert (b["tp"], b["fp"], b["fn"], b["tn"]) == \
+            (a["tp"], a["fp"], a["fn"], a["tn"]), arm      # nothing moves here
+    assert before["overall"]["counts"]["tp_contradicted"] >= 33
+    assert after["arms"]["contradicted"]["counts"]["tp_contradicted"] == 0
+    moved = {k for k in set(before["flag_census"]) | set(after["flag_census"])
+             if before["flag_census"].get(k) != after["flag_census"].get(k)}
+    assert any(k.startswith("contradicted:") for k in moved), moved
+
+
+def test_the_caution_census_no_longer_counts_supported_claims_only():
+    """CAUSE (a) OF FINDING F1.  `conflict-elsewhere-in-document` and
+    `known-document-conflict` are appended only on branches that return
+    CONTRADICTED, so a census filtered to SUPPORTED could never count them,
+    never see them appear and never see them go.  It is now taken over every
+    verdict and tagged with the status it sits on."""
+    sv, res, _p = _scored()
+    census = res["flag_census"]
+    assert census.get("contradicted:conflict-elsewhere-in-document", 0) >= 10, census
+    assert census.get("contradicted:known-document-conflict", 0) >= 1, census
+    # the same status tagging on the live-path census
+    ev = sv.read_jsonl(GOLD / "release_release-1-evidence.jsonl")
+    rep = sv.Replay(ev[0].get("answer") or "", sv.evidence_of(ev[0]))
+    assert all(":" in c for c in rep.cautions())
+    assert all(":" not in c for c in rep.user_cautions())
+
+
+def test_the_recorded_answers_alone_cannot_witness_the_contradiction_path():
+    """A MEASURED LIMIT, recorded rather than assumed away.  The 66 recorded
+    answers produce no CONTRADICTED verdict at all, so the live-path block of
+    the report — statuses and cautions over those answers — is structurally
+    incapable of witnessing this path however it is filtered.  That is why the
+    flag census is also taken over the SEEDED rows."""
+    sv, _res, _p = _scored()
+    ev = sv.read_jsonl(GOLD / "release_release-1-evidence.jsonl")
+    states = sv.answer_state(ev)
+    assert len(states) == 66
+    assert sum(s["statuses"].get(V.CONTRADICTED, 0) for s in states.values()) == 0
+    assert not any(c.startswith("contradicted:")
+                   for s in states.values() for c in s["cautions"])
+
+
+@pytest.mark.parametrize("what,patch", [
+    # the registry deference, forced to defer to every rival print
+    ("registry-defers-always",
+     ("registry_ruled_compatible", lambda *a, **k: True)),
+    # conflict detection stops knowing what field a claim is about
+    ("conflict-ignores-field", ("_FIELD_RES", [])),
+    # the per-key rival scan is gutted while _field_conflict itself is intact
+    ("key-conflict-no-rivals",
+     ("_key_conflict", lambda *a, **k: (None, None))),
+])
+def test_three_more_contradiction_path_ablations_are_detected(monkeypatch,
+                                                              what, patch):
+    """Three relaxations of my own devising, each on a different symbol of the
+    path.  All three were invisible to the four-arm scorer; all three now
+    collapse the contradicted arm.  `field-label-anywhere` (the OVER-strict
+    direction) is covered by its own test below."""
+    sv, before, after = _rescore_with(monkeypatch, patch[0], patch[1])
+    b = before["arms"]["contradicted"]["counts"]
+    a = after["arms"]["contradicted"]["counts"]
+    assert b["tp_contradicted"] >= 33, what
+    assert a["tp_contradicted"] == 0, what
+    assert a["contradiction_lost"] == a["must_contradict"], what
+    assert a["contradiction_promoted"] >= 20, what
+
+
+def test_the_cross_page_branch_has_its_own_detector(monkeypatch):
+    """`cross_page_conflicts` guards ONE of the three `_key_conflict` calls, so
+    a change that only turns it off must move less than deleting the path —
+    and it must still move.  The `elsewhere` shape is the only rows that reach
+    it, and its `conflict-elsewhere-in-document` census entry empties."""
+    sv = _scorer()
+    args = (sv.read_jsonl(GOLD / "release_release-1-adjudicated.jsonl"),
+            sv.read_jsonl(GOLD / "release_release-1-evidence.jsonl"),
+            sv.read_jsonl(GOLD / "release_release-1.jsonl"))
+    rows = sv.build_rows(*args)[0]
+    before = sv.score(rows)
+    real = V.classify_deterministic
+    monkeypatch.setattr(V, "classify_deterministic",
+                        lambda c, e, cross_page_conflicts=True, **k:
+                        real(c, e, cross_page_conflicts=False, **k))
+    after = sv.score(sv.build_rows(*args)[0])
+    b = before["arms"]["contradicted"]["counts"]
+    a = after["arms"]["contradicted"]["counts"]
+    assert 0 < a["contradiction_lost"] < a["must_contradict"], (b, a)
+    assert a["tp_contradicted"] < b["tp_contradicted"]
+    assert before["flag_census"].get(
+        "contradicted:conflict-elsewhere-in-document", 0) >= 10
+    assert after["flag_census"].get(
+        "contradicted:conflict-elsewhere-in-document", 0) == 0
+
+
+def test_over_strictness_in_the_conflict_path_is_detected_too(monkeypatch):
+    """The arm must not only catch DELETIONS.  Opening `_FIELD_PREFIX_OK` so a
+    field label buried in prose counts as the field being stated turns prose
+    into contradictions: measured 32 -> 41 false positives overall, and the
+    `FP|contradicted` counter — a claim no judge can rescue — 1 -> 10."""
+    import re as _re
+    sv, before, after = _rescore_with(
+        monkeypatch, "_FIELD_PREFIX_OK", _re.compile(r"^[\s\S]*$"))
+    assert after["overall"]["counts"]["fp"] > before["overall"]["counts"]["fp"]
+    assert after["overall"]["counts"]["fp_contradicted"] >= \
+        before["overall"]["counts"]["fp_contradicted"] + 5
+    assert after["arms"]["held-correct"]["counts"]["fp"] > 0
+
+
+#: Contradiction-path changes the instrument STILL cannot see, measured and
+#: named rather than left to be discovered by the next review.
+#:
+#: * `first-value-only` — `_field_conflict` reads the first TWO amounts after a
+#:   label when deciding 'the field agrees somewhere'; narrowing that to one
+#:   moves nothing anywhere, because no row in any arm has a field label whose
+#:   SECOND printed amount is the one its claim states.
+#: * `also-reported-unfiltered` — dropping the `registry_records` filter from
+#:   the 'report both figures' licence.  To move a row, an answer would need a
+#:   sibling claim stating the rival AND that rival to be absent from the
+#:   registry for that document and field.  Measured over the whole recorded
+#:   corpus: 48 (claim, key) candidate pairs, of which 47 have a registry-
+#:   recorded rival and the one that does not has no sibling stating it.  The
+#:   shape has ZERO instances to seed, so this is a corpus limit, not a
+#:   generator one, and no amount of arm-building closes it.
+INSTRUMENT_STILL_BLIND = ("first-value-only", "also-reported-unfiltered")
+
+
+def test_the_arm_records_which_evidence_text_it_cannot_reach():
+    """A MEASURED LIMIT, pinned so it cannot quietly persist.
+
+    Every rival this arm contradicts a claim with is printed on a DOCUMENT-LEVEL
+    evidence key (the registry line `build_evidence` attaches to `(doc, None)`),
+    never on a numbered page.  That is a property of the recorded evidence, not
+    of the generator: across all 66 turns only six numbered pages print a field
+    label heading its own segment with a money value at all, and none of the
+    six pairs with a claim that names that field (four are `co_financing`,
+    which no recorded claim names, one is FP152 p.55 whose rival the registry
+    ruled compatible, one is a case with no matching claim).
+
+    Which key the rival sits on does not change which branch of the verifier
+    runs — the conflict scan reads the evidence dict identically — but the arm
+    may not claim coverage it does not have.  If a future evidence set makes a
+    page-level rival seedable, this test fails and the claim gets updated."""
+    _sv, res, _p = _scored()
+    assert res["rival_key_kinds"] == {
+        "document-level key": res["arm_sizes"]["contradicted"]}, \
+        res["rival_key_kinds"]
+
+
+def test_the_first_value_narrowing_is_still_invisible(monkeypatch):
+    """Named, not buried. This asserts the KNOWN blindness so that a future
+    change which happens to make it visible fails here and gets recorded,
+    instead of the blind spot quietly persisting in a comment."""
+    sv = _scorer()
+    args = (sv.read_jsonl(GOLD / "release_release-1-adjudicated.jsonl"),
+            sv.read_jsonl(GOLD / "release_release-1-evidence.jsonl"),
+            sv.read_jsonl(GOLD / "release_release-1.jsonl"))
+    before = sv.score(sv.build_rows(*args)[0])
+    real = V._value_after
+    monkeypatch.setattr(V, "_value_after",
+                        lambda line, at, window=80: real(line, at, window)[:1])
+    after = sv.score(sv.build_rows(*args)[0])
+    same = all(before["arms"][arm]["counts"] == after["arms"][arm]["counts"]
+               for arm in sv.ARMS)
+    assert same, "the first-value narrowing became visible — update " \
+                 "INSTRUMENT_STILL_BLIND and this test"
 
 
 # ===========================================================================
