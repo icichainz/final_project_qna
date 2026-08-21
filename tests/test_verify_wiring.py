@@ -98,7 +98,8 @@ class FakeRetriever:
         self.hits = hits
         self.calls = []
 
-    def search_with_confidence(self, query, top_k=10, doc_filter=None):
+    def search_with_confidence(self, query, top_k=10, doc_filter=None,
+                               original=None):
         self.calls.append({"q": query, "doc": doc_filter})
         return list(self.hits), 0.9
 

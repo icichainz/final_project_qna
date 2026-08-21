@@ -14,6 +14,12 @@ Pipeline for one query (plan step 3):
         -> expand into neighbouring same-section chunks, SECTION_EXPAND=1
         -> top_k
 
+Documents are chosen before pages, and by a different text: once a document
+is settled — by a doc_filter, or by the identifier router's lexical head —
+the caller's `original` message gets a second dense vote on WHICH OF ITS
+CHUNKS come first (_probes / _scoped_probes). Nothing there can change the
+document set, so it moves page precision without touching document recall.
+
 Every stage ranks on retrieval_text — whatever the build embedded — while
 every Hit carries source_text, so a retrieval-side prefix can never reach the
 answer model or ground.py. Chunks written before the schema existed have
@@ -59,6 +65,9 @@ from gcf_qna.rag.parse import retrieval_text, source_text
 #   RERANK / RERANK_MODEL / RERANK_DEVICE / RERANK_MAX_PAIRS / RERANK_MIN_POOL
 #   SECTION_EXPAND / EXPAND_KEEP / EXPAND_TOKENS
 #   PAGE_DIVERSITY
+#   ORIGINAL_PROBE  give the caller's `original` text a second dense vote in
+#     the doc-scoped stages (on). Ignored unless a caller passes `original`,
+#     so every caller that does not is unaffected either way. See _probes.
 DEFAULT_RERANK_MODEL = "cross-encoder/ms-marco-MiniLM-L-6-v2"
 
 
@@ -282,6 +291,74 @@ class Retriever:
             got = _pass(self.index.ntotal)
         return got
 
+    def _probes(self, query: str, original: Optional[str]) -> List[str]:
+        """The texts allowed to rank chunks INSIDE an already-chosen document.
+
+        The app rewrites the message before retrieving — French into English,
+        noise into clean prose, "it" into "FP220". That rewrite is what finds
+        the DOCUMENT: it carries the identifier and the vocabulary the corpus
+        is actually written in, and turning it on is what moved document
+        recall from 47/52 to 51/52. It is not what finds the PAGE. Rewriting
+        spends the surface forms that pin one page — the user's own numerals,
+        their misspelling of the product name, the wording they chose — on
+        canonical phrasing that fits the whole document about equally well.
+        Measured, same document scope, labelled evidence page in brackets:
+
+          [p.6]  "Quel est le financement GCF du FP172 au Nepal ?"   rank 9
+                 "GCF funding amount for project FP172 in Nepal"     absent
+          [p.5]  "fp 173 amazon bioecconomy fund -- how much gcf $$$ ?"  rank 6
+                 "FP173 Amazon Bioeconomy Fund proposal: how much
+                  GCF funding (USD) is requested/approved?"          absent
+          [p.40] "wat is teh gcf finacing for fp274?"                rank 2
+                 "What is the Green Climate Fund financing for FP274?"  absent
+
+        So both texts vote, and only where the document is already settled:
+        the doc_filter path and the identifier-routed path, never the open
+        hybrid fusion that CHOOSES documents. The document set cannot move,
+        so neither can document recall — the split buys page precision out of
+        the ranking stage alone.
+
+        Whether a message IS one document's message is the caller's call, not
+        this module's: a turn that fanned out over several documents must
+        pass `original=None`, because its message names all of them and would
+        probe each document for the others' figures. chainlit_app applies
+        that rule at the one call site.
+        """
+        probes = [query]
+        if (original and _env_on("ORIGINAL_PROBE")
+                and " ".join(original.split()) != " ".join(query.split())):
+            probes.append(original)
+        return probes
+
+    def _scoped_probes(self, qvs: Sequence[Any], doc_filter: str, want: int
+                       ) -> List[Tuple[int, float]]:
+        """Doc-scoped dense candidates from one probe per vector, fused by rank.
+
+        The same identify-then-rank split the identifier router already runs,
+        one level down: _scoped is called once per probe over the SAME
+        document, so the probes only argue about which of its chunks come
+        first. Reciprocal rank rather than a score blend — a chunk both
+        probes place near the top is what a page hit looks like, and neither
+        cosine is calibrated against the other's question. Each hit keeps the
+        best cosine any probe gave it, since that score is what the answer
+        prompt prints beside the excerpt.
+
+        One probe is the plain _scoped call, unchanged, so a caller that
+        passes no `original` gets exactly the ranking it got before.
+        """
+        if len(qvs) == 1:
+            return self._scoped(qvs[0], doc_filter, want)
+        lists: List[List[int]] = []
+        best: Dict[int, float] = {}
+        for qv in qvs:
+            got = self._scoped(qv, doc_filter, want)
+            lists.append([i for i, _ in got])
+            for i, s in got:
+                best[i] = max(best.get(i, s), s)
+        fused = sorted(rrf(lists, config.RRF_K).items(),
+                       key=lambda kv: kv[1], reverse=True)[:want]
+        return [(i, best[i]) for i, _ in fused]
+
     def _docs_of(self, indices: Sequence[int]) -> List[str]:
         """Distinct doc ids behind a ranked chunk list, order preserved."""
         out: List[str] = []
@@ -489,11 +566,17 @@ class Retriever:
 
     # -- public API ----------------------------------------------------------
     def search_with_confidence(self, query: str, top_k: int = 5,
-                               doc_filter: Optional[str] = None):
+                               doc_filter: Optional[str] = None,
+                               original: Optional[str] = None):
         """(hits, confidence) — confidence is the best dense cosine for the
         query, the signal behind the no-answer guard. Identifier queries
         return 1.0 only when every identifier resolves: the document match
-        is then exact by construction."""
+        is then exact by construction.
+
+        Confidence is read off `query` alone even when `original` is given:
+        the rewrite is the text that identifies the document, and the
+        weak-signal guard is a statement about the document match, not about
+        which of its pages ranked first."""
         import numpy as np
         qv = np.asarray(self.embedder.encode([query]), dtype="float32")
         scores, _ = self.index.search(qv, 1)
@@ -508,22 +591,30 @@ class Retriever:
             if all(any(self.lexical.search(v, 1) for v in fp_variants(t))
                    for t in id_toks):
                 conf = 1.0
-        return self.search(query, top_k, doc_filter), conf
+        return self.search(query, top_k, doc_filter, original), conf
 
     def search(self, query: str, top_k: int = 5,
-               doc_filter: Optional[str] = None) -> List[Hit]:
-        """Top-k chunks for a query; doc_filter restricts hits to one document."""
+               doc_filter: Optional[str] = None,
+               original: Optional[str] = None) -> List[Hit]:
+        """Top-k chunks for a query; doc_filter restricts hits to one document.
+
+        `original` is the user's own message when `query` is a rewrite of it.
+        It never selects documents — only ranks chunks inside the ones the
+        query already chose. See _probes.
+        """
         import numpy as np
-        qv = np.asarray(self.embedder.encode([query]), dtype="float32")
+        probes = self._probes(query, original)
+        arr = np.asarray(self.embedder.encode(probes), dtype="float32")
+        qv, qvs = arr[:1], [arr[i:i + 1] for i in range(len(probes))]
         mult = _env_int("CANDIDATE_POOL_MULT", 3)
         pool = max(top_k * mult, top_k)
 
         if doc_filter is not None:
-            cands = self._scoped(qv, doc_filter, pool)
+            cands = self._scoped_probes(qvs, doc_filter, pool)
             if not cands:
                 # a filter that matches no document (e.g. a fabricated doc tag)
                 # must degrade to unscoped search, never to an empty context
-                return self.search(query, top_k, doc_filter=None)
+                return self.search(query, top_k, None, original)
             return self._finalize(query, cands, top_k)
 
         if not self.hybrid_enabled:
@@ -552,7 +643,7 @@ class Retriever:
             per = max(3, top_k // max(1, len(targets)))
             routed: List[Tuple[int, float]] = []
             for d in targets:
-                routed += self._scoped(qv, d, per * mult)
+                routed += self._scoped_probes(qvs, d, per * mult)
             if routed:
                 return self._finalize(query, routed, top_k, doc_order=targets)
         weights = [1.0, 2.0] if id_toks else [1.0, 1.0]

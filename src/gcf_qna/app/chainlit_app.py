@@ -1193,9 +1193,19 @@ async def main(message: cl.Message):
     per_query = config.TOP_K if not decomposed else max(3, config.TOP_K // len(search_queries))
     weak_signal = True
     per_lists = []
+    # The raw message rides along as `original`: whenever sq["q"] is a rewrite
+    # of it (conductor translation, noise cleanup, pronoun resolution, or a
+    # planner field query), the retriever lets the user's own wording help rank
+    # pages INSIDE the document the rewrite chose. It never chooses documents —
+    # see Retriever._probes. Only a turn that stayed on ONE query sends it: a
+    # message that fanned out names every document it compares, so inside any
+    # one of them it is a probe for the OTHERS' names and figures (measured:
+    # it cost the three-way and two-way comparisons the registry-cited page
+    # they had, and bought them nothing).
+    original = message.content if len(search_queries) == 1 else None
     for sq in search_queries:
         got, conf = await cl.make_async(retriever.search_with_confidence)(
-            sq["q"], per_query, sq.get("doc"))
+            sq["q"], per_query, sq.get("doc"), original)
         if conf >= config.MIN_DENSE_SCORE:
             weak_signal = False
         per_lists.append(got)

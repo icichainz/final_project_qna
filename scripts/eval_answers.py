@@ -1150,7 +1150,7 @@ class Pipeline:
         self.planner_stats["matrix_built"] += 1
         return plan, block
 
-    def _retrieve(self, items: list, decomposed: bool):
+    def _retrieve(self, items: list, decomposed: bool, original: str = None):
         """(hits, best confidence, weak-signal flag) — the app's fan-out.
 
         Per-query quota and round-robin merge, verbatim from `main`: the global
@@ -1161,8 +1161,14 @@ class Pipeline:
                      else max(3, self.top_k // max(1, len(items))))
         best, weak, per_lists = None, True, []
         for sq in items:
+            # Mirror the app: on a single-query turn the user's own words get a
+            # second dense vote on WHICH PAGES of the settled document rank
+            # first. Without this the harness measures a retriever production
+            # does not run (chainlit_app.py passes `original` at its one call
+            # site); the document set cannot move either way.
             got, conf = self.retriever.search_with_confidence(
-                sq["q"], per_query, sq.get("doc"))
+                sq["q"], per_query, sq.get("doc"),
+                original=original if len(items) == 1 else None)
             best = conf if best is None else max(best, conf)
             if conf >= config.MIN_DENSE_SCORE:
                 weak = False
@@ -1265,7 +1271,7 @@ class Pipeline:
         else:
             items = self.plan(question)
         decomposed = self._decomposed(items, question, plan)
-        hits, conf, weak = self._retrieve(items, decomposed)
+        hits, conf, weak = self._retrieve(items, decomposed, original=question)
         hits, year_note = app._year_assist(question, hits)
         board_note = app._board_range_note(question)
         if board_note:

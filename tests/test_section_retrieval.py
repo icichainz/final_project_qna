@@ -1,6 +1,6 @@
 """Section-aware chunking and the step-3 retrieval pipeline.
 
-Three properties are load-bearing here and each has a test that fails loudly
+Four properties are load-bearing here and each has a test that fails loudly
 if it stops holding:
 
   * the section path is a RETRIEVAL artefact — it is embedded and lexically
@@ -8,7 +8,10 @@ if it stops holding:
   * a markdown table small enough to keep is never split, because half a table
     has no header row and answers nothing;
   * a document that IS an identifier outranks a document that merely mentions
-    it when the two-stage router picks target documents.
+    it when the two-stage router picks target documents;
+  * documents are chosen by the query and pages by the query AND the caller's
+    `original` — so a rewrite can improve document recall without spending the
+    evidence page, and the second probe can never move the document set.
 """
 import hashlib
 
@@ -374,3 +377,158 @@ def test_each_identifier_nominates_its_own_document(tmp_path):
                             "72_GCF_B.35_02_Add.05_package_for_FP203"}
     hits = r.search("Compare FP220 and FP203 rankings", top_k=6)
     assert len({h.doc_id for h in hits}) == 2, "both proposals must be served"
+
+
+# ------------------------------------- the original text as a page probe -----
+DOC = "103_gcf-b30-03-add04"
+EVIDENCE_PAGE = 6
+
+
+class ScriptedEmbedder:
+    """Cosines dictated per (query, chunk), so a ranking is a test fixture.
+
+    One basis dimension per chunk: a chunk embeds to its own unit axis, and a
+    query embeds to the vector of scores it is scripted to give them. The
+    FakeEmbedder above cannot express "this query ranks the evidence page 6th
+    and that one ranks it 1st", which is the whole property under test.
+    """
+
+    def __init__(self, chunk_texts, scripts):
+        self.axis = {t: i for i, t in enumerate(chunk_texts)}
+        self.scripts = scripts
+
+    def encode(self, texts, **kw):
+        out = []
+        for t in texts:
+            v = np.zeros(len(self.axis), dtype="float32")
+            if t in self.axis:
+                v[self.axis[t]] = 1.0
+            else:
+                v[:] = self.scripts[t]
+                v /= np.linalg.norm(v)
+            out.append(v)
+        return np.stack(out)
+
+
+REWRITE = "GCF funding amount for project FP172 in Nepal"
+ORIGINAL = "Quel est le financement GCF du FP172 au Nepal ?"
+
+
+def _SCRIPTS(rewrite, original):
+    """The measured shape, in nine chunks: the two probes agree about the
+    evidence page and about nothing else.
+
+    The rewrite likes the first four annexes and puts the evidence page fifth,
+    just under a top-3 cut; the user's own words put it first and like the
+    OTHER four annexes. Reciprocal rank then promotes the one chunk both
+    probes ranked well over the ones only one of them did — which is the whole
+    argument for fusing rather than replacing (production, FP172: the rewrite's
+    top-10 and the original's top-10 shared six pages, and p.6 was ninth on the
+    original's list and absent from the rewrite's).
+    """
+    #        evidence  a0    a1    a2    a3    a4    a5    a6    a7
+    return {rewrite:  [0.50, 0.95, 0.94, 0.93, 0.92, 0.49, 0.48, 0.47, 0.46],
+            original: [0.99, 0.30, 0.29, 0.28, 0.27, 0.95, 0.94, 0.93, 0.92]}
+
+
+def _probe_index(tmp_path):
+    """One document; the rewrite ranks the evidence page below the cut, the
+    user's own words rank it first — the FP172 case, in miniature."""
+    chunks = [{"doc_id": DOC, "page": EVIDENCE_PAGE, "text": "A.8 evidence page"}]
+    chunks += [{"doc_id": DOC, "page": 100 + i, "text": f"annex page {i}"}
+               for i in range(8)]
+    texts = [c["text"] for c in chunks]
+    emb = ScriptedEmbedder(texts, _SCRIPTS(REWRITE, ORIGINAL))
+    index = faiss.IndexFlatIP(len(texts))
+    index.add(emb.encode(texts))
+    return Retriever(index, chunks, emb, index_dir=tmp_path), chunks
+
+
+def _pages(hits):
+    return [h.page for h in hits]
+
+
+def test_the_rewrite_alone_ranks_the_evidence_page_out(tmp_path):
+    """The premise: this is what the conductor's rewrite does on its own."""
+    r, _ = _probe_index(tmp_path)
+    assert EVIDENCE_PAGE not in _pages(r.search(REWRITE, top_k=3, doc_filter=DOC))
+    assert _pages(r.search(ORIGINAL, top_k=3, doc_filter=DOC))[0] == EVIDENCE_PAGE
+
+
+def test_original_probe_recovers_the_page_inside_the_chosen_document(tmp_path):
+    """The fix: the rewrite still picks the document, both texts rank its pages."""
+    r, _ = _probe_index(tmp_path)
+    hits = r.search(REWRITE, top_k=3, doc_filter=DOC, original=ORIGINAL)
+    assert EVIDENCE_PAGE in _pages(hits)
+    assert {h.doc_id for h in hits} == {DOC}, "the document scope is untouched"
+
+
+def test_original_probe_reaches_the_identifier_routed_path(tmp_path):
+    """No doc_filter: the lexical head still chooses the document alone, and
+    the original only ranks pages inside what it chose (the FP220 follow-up,
+    where the conductor's rewrite carries the id and the user's words do not)."""
+    chunks = [{"doc_id": DOC, "page": EVIDENCE_PAGE,
+               "text": "FP172 A.8 evidence page"}]
+    chunks += [{"doc_id": DOC, "page": 100 + i, "text": f"FP172 annex page {i}"}
+               for i in range(8)]
+    texts = [c["text"] for c in chunks]
+    rewrite, original = "FP172 requested GCF funding amount", "how much does it request?"
+    emb = ScriptedEmbedder(texts, _SCRIPTS(rewrite, original))
+    index = faiss.IndexFlatIP(len(texts))
+    index.add(emb.encode(texts))
+    r = Retriever(index, chunks, emb, index_dir=tmp_path)
+    assert r.hybrid_enabled, "premise: the identifier route needs the lexical head"
+    assert EVIDENCE_PAGE not in _pages(r.search(rewrite, top_k=3))
+    hits = r.search(rewrite, top_k=3, original=original)
+    assert EVIDENCE_PAGE in _pages(hits)
+
+
+def test_original_probe_cannot_move_the_document_set(tmp_path):
+    """Documents are chosen by the query, never by the original: the open
+    hybrid fusion and the router's target list never see the second probe."""
+    loud = [{"doc_id": "55_gcf-b37-02-add11-package-fp220", "page": p,
+             "text": f"FP220 activity {p}"} for p in range(1, 41)]
+    quiet = [{"doc_id": "72_GCF_B.35_02_Add.05_package_for_FP203", "page": p,
+              "text": f"FP203 page {p} ranking"} for p in range(1, 41)]
+    r = build(loud + quiet, tmp_path)
+    q = "Compare FP220 and FP203 rankings"
+    plain = r.search(q, top_k=8)
+    # an original that names neither document, as a pronoun follow-up would
+    probed = r.search(q, top_k=8, original="how do those two compare?")
+    assert ([h.doc_id for h in plain][:8] and
+            {h.doc_id for h in probed} == {h.doc_id for h in plain})
+
+
+# --------------------------------------------------- the off path is today ---
+def _fingerprint(hits):
+    return [(h.doc_id, h.page, round(h.score, 6), h.text) for h in hits]
+
+
+def test_no_original_is_byte_identical(tmp_path):
+    r, _ = _probe_index(tmp_path)
+    assert (_fingerprint(r.search(REWRITE, top_k=5, doc_filter=DOC))
+            == _fingerprint(r.search(REWRITE, top_k=5, doc_filter=DOC, original=None)))
+
+
+def test_original_probe_switch_off_is_byte_identical(tmp_path, monkeypatch):
+    r, _ = _probe_index(tmp_path)
+    base = _fingerprint(r.search(REWRITE, top_k=5, doc_filter=DOC))
+    monkeypatch.setenv("ORIGINAL_PROBE", "0")
+    assert _fingerprint(r.search(REWRITE, top_k=5, doc_filter=DOC,
+                                 original=ORIGINAL)) == base
+    monkeypatch.setenv("ORIGINAL_PROBE", "1")
+    assert _fingerprint(r.search(REWRITE, top_k=5, doc_filter=DOC,
+                                 original=ORIGINAL)) != base, "premise"
+
+
+def test_an_original_that_is_the_query_is_not_a_second_probe(tmp_path):
+    """The conductor-off path passes the message as BOTH, and must not pay for
+    a second dense pass or fuse a list with itself. Whitespace-only
+    differences are the same text."""
+    r, _ = _probe_index(tmp_path)
+    base = _fingerprint(r.search(REWRITE, top_k=5, doc_filter=DOC))
+    assert _fingerprint(r.search(REWRITE, top_k=5, doc_filter=DOC,
+                                 original=REWRITE)) == base
+    assert _fingerprint(r.search(REWRITE, top_k=5, doc_filter=DOC,
+                                 original=f"  {REWRITE}\n")) == base
+    assert r._probes(REWRITE, f" {REWRITE} ") == [REWRITE]

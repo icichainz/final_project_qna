@@ -74,3 +74,37 @@ def test_round_robin_merge_no_starvation():
                 merged.append(h)
     top = merged[:15]
     assert sum(1 for d, _ in top if d == "d2") >= 7, "later query starved by cap"
+
+
+def test_confidence_is_read_off_the_query_not_the_original(retriever):
+    """The weak-signal guard is a statement about the DOCUMENT match, and the
+    rewrite is the text that carries the identifier. A vague original must not
+    be able to talk a resolved identifier down (or an unresolved one up)."""
+    _, with_original = retriever.search_with_confidence(
+        "budget of FP274", 2, None, "how much was it again?")
+    _, alone = retriever.search_with_confidence("budget of FP274", 2)
+    assert with_original == alone == 1.0
+    _, unknown = retriever.search_with_confidence(
+        "budget of FP999", 2, None, "budget of FP274")
+    assert unknown < 1.0, "the original must not vouch for an unresolved id"
+
+
+def test_a_single_probe_is_the_plain_scoped_call(retriever):
+    """_scoped_probes is the two-stage split's second stage. With one probe it
+    must BE _scoped — that identity is what makes every caller who passes no
+    original byte-identical to before."""
+    import numpy as np
+    qv = np.asarray(retriever.embedder.encode(["total financing"]),
+                    dtype="float32")
+    doc = "02_gcf-b42-02-add16-funding-proposal-package-fp274"
+    assert retriever._scoped_probes([qv], doc, 5) == retriever._scoped(qv, doc, 5)
+
+
+def test_the_original_never_reaches_an_unrouted_hybrid_query(retriever):
+    """No doc_filter and no identifier: nothing has chosen a document yet, so
+    the second probe has no document to rank inside and must not vote."""
+    plain = retriever.search("gender action plan budget", 2)
+    probed = retriever.search("gender action plan budget", 2,
+                              original="total financing information")
+    assert [(h.doc_id, h.page, h.score) for h in plain] == \
+           [(h.doc_id, h.page, h.score) for h in probed]
