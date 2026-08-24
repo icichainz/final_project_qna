@@ -132,3 +132,42 @@ e1661aef36a13aecf8675e8e74251cf40a880c4336f5d38c63909c6fac83e9e6  data/eval/audi
 #     --json data/eval/audit_repair_release-2-spread.json
 1516a316206ae6ab95e97ed18c6faa9d8b03f2dd353314899f521a12d8d2e313  data/eval/audit_repair_release-2-spread.json
 6d1040f0a964805a528d85777a0cabec1f0474af1b3f741f9719ae2397efa5db  data/eval/audit_repair_release-2b-spread.json
+#
+# Wave 5 re-run of the repair A/B, under the gates of e639915 (sampling pin,
+# language flip, substance floor, carry-off) and the conflict gate of 22f558b.
+# Same frozen input as Wave 4 — release_release-2.jsonl, NOT re-recorded, so the
+# answers being repaired are identical and the comparison to Wave 4 holds. Two
+# independent full replays, each with --repair-samples 2, so reproducibility is
+# measured inside each replay and across the pair. Produced against verify.py
+# @ 3ae4b8f (blob bea18751beb07962ac71388741f593d0ccfa74a3719677653ec1b2812ace4468).
+#
+#   release-2c  0 of 11 rewrites adopted; identical completions 1/11; adoption
+#               agreement 11/11 (all agreed on REJECT); gated-metric spread 0.
+#   release-2d  0 of 11 adopted at sample 1; identical completions 2/11;
+#               adoption agreement 10/11 — cmp-fp086-fp220-currency flipped to
+#               ADOPT on sample 2, and that world loses 2 supported claims and
+#               drops the FP220 figure conflict. Both replays FAIL the gate.
+#
+# Regenerate the audits (zero API calls) with:
+#
+#   venv/bin/python scripts/audit_repair.py \
+#     --off data/eval/replay_release-2c_repair-off.jsonl \
+#     --on  data/eval/replay_release-2c_repair-on-carryoff.jsonl \
+#     --carry-on data/eval/replay_release-2c_repair-on.jsonl \
+#     --spread-audit data/eval/audit_repair_release-2d.json \
+#     --require-metrics groundedness_rate,citation_completeness_rate \
+#     --max-adoption-disagreement 0 \
+#     --json data/eval/audit_repair_release-2c-spread.json
+#
+93cc2f85e627c84bf7576f01b1480117980d786a960e847595da37e3b109b2d5  data/eval/replay_release-2c_repair-off.jsonl
+d6c445bb1cebf945bbbd1cc3253259408020f6414962fcc3b9867f42e598cb5c  data/eval/replay_release-2c_repair-on.jsonl
+58de272551bc50ab57cf6674a8b9bae01e45991835cf6f61aebfbe811a002549  data/eval/replay_release-2c_repair-on-carryoff.jsonl
+81b50ed0e31f1c84f27744b3d50deeace11810817c714307f838903b67687277  data/eval/replay_release-2c_repair-calls.jsonl
+b6a83b760eca135c98e6589012889149cb93b8866ccfc340d64c82e7f2f831ae  data/eval/replay_release-2d_repair-off.jsonl
+290b4b6688f4754cf9a0afb589e2ba6eaffffec934b134f0a2dca7521c2e35ff  data/eval/replay_release-2d_repair-on.jsonl
+e2f0df67c9d46c6dbfe051c0f3546fb9519f8e5e08f03fe849f2d2b8b8c21919  data/eval/replay_release-2d_repair-on-carryoff.jsonl
+c713b983c65d6e00a6da63c8d5132bf32910cf2c7f023fed935d32f1e5401490  data/eval/replay_release-2d_repair-calls.jsonl
+bee0b311d46a6335bb5249239e702d4c9ce995796c72a364cc58e55b5fddb851  data/eval/audit_repair_release-2c.json
+2350458bf56501f931b821fe8235fe08f9fc193077a07ca2634d7639570f1790  data/eval/audit_repair_release-2d.json
+d3e388fb83c749710a5bb1871c99c4188ec0f7f84a88393fa526d6664678c20a  data/eval/audit_repair_release-2c-spread.json
+ff05bf1f46c9c6da200f93f20e5b23e2c0aa780875c75ff97c790d2c733df738  data/eval/audit_repair_release-2d-spread.json

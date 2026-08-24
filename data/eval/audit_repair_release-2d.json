@@ -1,0 +1,1161 @@
+{
+ "off": "data/eval/replay_release-2d_repair-off.jsonl",
+ "on": "data/eval/replay_release-2d_repair-on-carryoff.jsonl",
+ "cases_compared": 66,
+ "cases_only_on_one_side": [],
+ "answers_rewritten": 0,
+ "claims_before": 173,
+ "claims_after": 173,
+ "supported_before": 150,
+ "supported_after": 150,
+ "groundedness_before": {
+  "n": 154,
+  "d": 173,
+  "rate": 0.8901734104046243,
+  "threshold_95": 165
+ },
+ "groundedness_after": {
+  "n": 154,
+  "d": 173,
+  "rate": 0.8901734104046243,
+  "threshold_95": 165
+ },
+ "citation_completeness_before": {
+  "n": 144,
+  "d": 173,
+  "rate": 0.8323699421965318,
+  "threshold_95": 165
+ },
+ "citation_completeness_after": {
+  "n": 144,
+  "d": 173,
+  "rate": 0.8323699421965318,
+  "threshold_95": 165
+ },
+ "citation_presence_before": {
+  "n": 154,
+  "d": 173,
+  "rate": 0.8901734104046243,
+  "threshold_95": 165
+ },
+ "citation_presence_after": {
+  "n": 154,
+  "d": 173,
+  "rate": 0.8901734104046243,
+  "threshold_95": 165
+ },
+ "contradicted_before": 1,
+ "contradicted_after": 1,
+ "unsupported_before": 22,
+ "unsupported_after": 22,
+ "lost_claims": [],
+ "lost_supported_claims": 0,
+ "lost_supported_undocumented": 0,
+ "added_claims": [],
+ "status_moved": [],
+ "fates": {},
+ "corrected": 0,
+ "deleted": 0,
+ "qualified": 0,
+ "deleted_though_grounded": [],
+ "invented_docs": [],
+ "invented_pages": [],
+ "invented_figures": [],
+ "invented_figures_matcher_cannot_place": [],
+ "invented_entities": [],
+ "sources_not_shown_to_repair": [],
+ "newly_cited_pages": [],
+ "novel_sentences": [],
+ "answer_checks_pass_before": 54,
+ "answer_checks_pass_after": 54,
+ "answer_checks_pass_to_fail": 0,
+ "answer_checks_pass_to_fail_cases": [],
+ "answer_checks_fail_to_pass_cases": [],
+ "check_regressions": [],
+ "language_regressions": [],
+ "language_per_case": [],
+ "behaviour_per_case": [],
+ "field_coverage_before": {
+  "n": 53,
+  "d": 56,
+  "rate": 0.9464285714285714
+ },
+ "field_coverage_after": {
+  "n": 53,
+  "d": 56,
+  "rate": 0.9464285714285714
+ },
+ "per_case": [],
+ "carry_on_vs_carry_off": {
+  "answers_that_differ": [],
+  "totals": {
+   "claims_carry_on": 173,
+   "claims_carry_off": 173,
+   "supported_carry_on": 150,
+   "supported_carry_off": 150,
+   "grounded_carry_on": 154,
+   "grounded_carry_off": 154,
+   "citation_supported_carry_on": 144,
+   "citation_supported_carry_off": 144
+  }
+ },
+ "cost": {
+  "judge": {
+   "calls": 21,
+   "prompt_tokens": 19094,
+   "completion_tokens": 1466,
+   "latency_total_s": 40.26,
+   "latency_p50_s": 1.687,
+   "latency_p95_s": 2.575,
+   "cost_usd": 0.0385
+  },
+  "repair": {
+   "calls": 11,
+   "prompt_tokens": 14991,
+   "completion_tokens": 3412,
+   "latency_total_s": 47.86,
+   "latency_p50_s": 3.546,
+   "latency_p95_s": 7.586,
+   "cost_usd": 0.0529
+  }
+ },
+ "repair_call_spread": {
+  "cases_sampled_twice": 11,
+  "identical_repair_text": 2,
+  "adoption_flipped": 1,
+  "flips": [
+   {
+    "case": "cmp-fp086-fp220-currency",
+    "sample_1_adopted": false,
+    "sample_2_adopted": true,
+    "sample_2_status": "repaired",
+    "sample_2_notes": [
+     "repaired 1 failing claim(s)"
+    ]
+   }
+  ]
+ },
+ "pre_gate_probe": {
+  "proposals": 11,
+  "verify_gate_caught_introduced_sources": [],
+  "audit_found": {
+   "invented_docs": 0,
+   "invented_pages": 0,
+   "sources_not_shown_to_repair": 0,
+   "invented_figures": 1,
+   "invented_entities": 0,
+   "newly_cited_pages": 0
+  },
+  "detail": {
+   "invented_docs": [],
+   "invented_pages": [],
+   "sources_not_shown_to_repair": [],
+   "invented_figures": [
+    {
+     "digits": "1503",
+     "matcher_places_it": true,
+     "case": "cmp-fp254-fp248-currency"
+    }
+   ],
+   "invented_entities": [],
+   "newly_cited_pages": []
+  },
+  "per_case": [
+   {
+    "case": "id-fp269-gcf",
+    "failures": [
+     1,
+     1
+    ],
+    "supported_required": [
+     3,
+     3
+    ],
+    "would_adopt": false,
+    "verify_introduced_sources": [],
+    "audit_invented_docs": 0,
+    "audit_invented_pages": 0,
+    "audit_not_shown": 0,
+    "audit_invented_figures": 0
+   },
+   {
+    "case": "cid-fp0086-padded",
+    "failures": [
+     1,
+     1
+    ],
+    "supported_required": [
+     6,
+     6
+    ],
+    "would_adopt": false,
+    "verify_introduced_sources": [],
+    "audit_invented_docs": 0,
+    "audit_invented_pages": 0,
+    "audit_not_shown": 0,
+    "audit_invented_figures": 0
+   },
+   {
+    "case": "disc-subnational-pair",
+    "failures": [
+     2,
+     1
+    ],
+    "supported_required": [
+     2,
+     3
+    ],
+    "would_adopt": false,
+    "verify_introduced_sources": [],
+    "audit_invented_docs": 0,
+    "audit_invented_pages": 0,
+    "audit_not_shown": 0,
+    "audit_invented_figures": 0
+   },
+   {
+    "case": "cmp-fp086-fp220-currency",
+    "failures": [
+     1,
+     1
+    ],
+    "supported_required": [
+     3,
+     3
+    ],
+    "would_adopt": false,
+    "verify_introduced_sources": [],
+    "audit_invented_docs": 0,
+    "audit_invented_pages": 0,
+    "audit_not_shown": 0,
+    "audit_invented_figures": 0
+   },
+   {
+    "case": "cmp-fp254-fp248-currency",
+    "failures": [
+     1,
+     3
+    ],
+    "supported_required": [
+     4,
+     3
+    ],
+    "would_adopt": false,
+    "verify_introduced_sources": [],
+    "audit_invented_docs": 0,
+    "audit_invented_pages": 0,
+    "audit_not_shown": 0,
+    "audit_invented_figures": 0
+   },
+   {
+    "case": "conf-fp153-gcf",
+    "failures": [
+     2,
+     2
+    ],
+    "supported_required": [
+     2,
+     2
+    ],
+    "would_adopt": false,
+    "verify_introduced_sources": [],
+    "audit_invented_docs": 0,
+    "audit_invented_pages": 0,
+    "audit_not_shown": 0,
+    "audit_invented_figures": 0
+   },
+   {
+    "case": "noisy-lower-symbols",
+    "failures": [
+     1,
+     2
+    ],
+    "supported_required": [
+     3,
+     2
+    ],
+    "would_adopt": false,
+    "verify_introduced_sources": [],
+    "audit_invented_docs": 0,
+    "audit_invented_pages": 0,
+    "audit_not_shown": 0,
+    "audit_invented_figures": 0
+   },
+   {
+    "case": "abs-2014",
+    "failures": [
+     2,
+     2
+    ],
+    "supported_required": [
+     0,
+     0
+    ],
+    "would_adopt": false,
+    "verify_introduced_sources": [],
+    "audit_invented_docs": 0,
+    "audit_invented_pages": 0,
+    "audit_not_shown": 0,
+    "audit_invented_figures": 0
+   },
+   {
+    "case": "agg-2020-range",
+    "failures": [
+     2,
+     2
+    ],
+    "supported_required": [
+     0,
+     0
+    ],
+    "would_adopt": false,
+    "verify_introduced_sources": [],
+    "audit_invented_docs": 0,
+    "audit_invented_pages": 0,
+    "audit_not_shown": 0,
+    "audit_invented_figures": 0
+   },
+   {
+    "case": "agg-corpus-boards",
+    "failures": [
+     9,
+     4
+    ],
+    "supported_required": [
+     0,
+     5
+    ],
+    "would_adopt": false,
+    "verify_introduced_sources": [],
+    "audit_invented_docs": 0,
+    "audit_invented_pages": 0,
+    "audit_not_shown": 0,
+    "audit_invented_figures": 0
+   },
+   {
+    "case": "agg-2021-boards",
+    "failures": [
+     1,
+     2
+    ],
+    "supported_required": [
+     3,
+     3
+    ],
+    "would_adopt": false,
+    "verify_introduced_sources": [],
+    "audit_invented_docs": 0,
+    "audit_invented_pages": 0,
+    "audit_not_shown": 0,
+    "audit_invented_figures": 0
+   }
+  ]
+ },
+ "breaches": [
+  "groundedness 154/173 (89.0%) below the >= 165/173 gate",
+  "citation completeness 144/173 (83.2%) below the >= 165/173 gate",
+  "repair is not reproducible: adoption disagreed on 1/11 sampled case(s) (9.1% > 0.0%)"
+ ],
+ "gate_pass": false,
+ "inputs": {
+  "off_sha256": "b6a83b760eca135c98e6589012889149cb93b8866ccfc340d64c82e7f2f831ae",
+  "on_sha256": "e2f0df67c9d46c6dbfe051c0f3546fb9519f8e5e08f03fe849f2d2b8b8c21919",
+  "carry_on_sha256": "290b4b6688f4754cf9a0afb589e2ba6eaffffec934b134f0a2dca7521c2e35ff",
+  "audit_verify_blob_sha": "bea18751beb07962ac71388741f593d0ccfa74a3719677653ec1b2812ace4468"
+ },
+ "reproducibility": {
+  "cases_with_repair": 11,
+  "cases_sampled": 11,
+  "cases_attempted_but_sampled_once": [],
+  "baseline_arm": "carry-on",
+  "carry_mismatch": false,
+  "identical_completion": {
+   "n": 2,
+   "d": 11,
+   "rate": 0.18181818181818182,
+   "threshold_95": 11
+  },
+  "adoption_agreement": {
+   "n": 10,
+   "d": 11,
+   "rate": 0.9090909090909091,
+   "threshold_95": 11
+  },
+  "adoption_disagreement_rate": 0.09090909090909091,
+  "disagreements": [
+   {
+    "case": "cmp-fp086-fp220-currency",
+    "samples": 2,
+    "identical_text": false,
+    "adoption": [
+     false,
+     true
+    ],
+    "statuses": [
+     "partial",
+     "repaired"
+    ],
+    "text_sha256": [
+     "cb5f17bb9315049ed2d7a08da6028cd964daff3a15b6e56497ec9e1919e9d6ca",
+     "a85b3d0f501f76b3b5322b9fc222cecf036c408486b5381f5d74d8e93426980c"
+    ],
+    "notes": [
+     [
+      "repair rejected: 1 claim(s) still fail verification (was 1) — no citation on a factual claim"
+     ],
+     [
+      "repaired 1 failing claim(s)"
+     ]
+    ]
+   }
+  ],
+  "per_case": [
+   {
+    "case": "id-fp269-gcf",
+    "samples": 2,
+    "identical_text": false,
+    "adoption": [
+     false,
+     false
+    ],
+    "statuses": [
+     "partial",
+     "partial"
+    ],
+    "text_sha256": [
+     "ebef6337de6a9fc7d0a90439151bd71de7fcb73fa41dd927c58c084cd9d21e6d",
+     "eb9daa7cf9acf170f8b2d6f26ef68e286550a397c034e1efa0e3283d639126db"
+    ],
+    "notes": [
+     [
+      "repair rejected: 1 claim(s) still fail verification (was 1) — no citation on a factual claim"
+     ],
+     [
+      "repair rejected: 1 claim(s) still fail verification (was 1) — no citation on a factual claim"
+     ]
+    ]
+   },
+   {
+    "case": "cid-fp0086-padded",
+    "samples": 2,
+    "identical_text": false,
+    "adoption": [
+     false,
+     false
+    ],
+    "statuses": [
+     "partial",
+     "partial"
+    ],
+    "text_sha256": [
+     "ebc149e88dbb4b0ccd5909ef8df27577b3223e070534e27acf15f4b331bde0d0",
+     "bb7a8d3a82ed539e9b38aaa0551a3acef3b0c6bc0176d1eef6566c10099ac058"
+    ],
+    "notes": [
+     [
+      "repair rejected: 1 claim(s) still fail verification (was 1) — no citation on a factual claim"
+     ],
+     [
+      "repair rejected: 1 claim(s) still fail verification (was 1) — no citation on a factual claim"
+     ]
+    ]
+   },
+   {
+    "case": "disc-subnational-pair",
+    "samples": 2,
+    "identical_text": false,
+    "adoption": [
+     false,
+     false
+    ],
+    "statuses": [
+     "partial",
+     "partial"
+    ],
+    "text_sha256": [
+     "f3a241d99036bea7552badb488b6a116fcffe4e1eeb2941809d407736cbfed16",
+     "d3bfa0ff6cdcaeeb1e445150a78e5485c6943c751b8d590e810cf100b6403bce"
+    ],
+    "notes": [
+     [
+      "repair rejected: 1 claim(s) still fail verification (was 2) — no citation on a factual claim"
+     ],
+     [
+      "repair rejected: 1 claim(s) still fail verification (was 2) — no citation on a factual claim"
+     ]
+    ]
+   },
+   {
+    "case": "cmp-fp086-fp220-currency",
+    "samples": 2,
+    "identical_text": false,
+    "adoption": [
+     false,
+     true
+    ],
+    "statuses": [
+     "partial",
+     "repaired"
+    ],
+    "text_sha256": [
+     "cb5f17bb9315049ed2d7a08da6028cd964daff3a15b6e56497ec9e1919e9d6ca",
+     "a85b3d0f501f76b3b5322b9fc222cecf036c408486b5381f5d74d8e93426980c"
+    ],
+    "notes": [
+     [
+      "repair rejected: 1 claim(s) still fail verification (was 1) — no citation on a factual claim"
+     ],
+     [
+      "repaired 1 failing claim(s)"
+     ]
+    ]
+   },
+   {
+    "case": "cmp-fp254-fp248-currency",
+    "samples": 2,
+    "identical_text": false,
+    "adoption": [
+     false,
+     false
+    ],
+    "statuses": [
+     "partial",
+     "partial"
+    ],
+    "text_sha256": [
+     "ab7af3226e226cb3185825a954973d2527490cfe5a0ecc584e39fd85ff035384",
+     "7de6430ee3479598682ec182bf75b3536c0636d09dbe341b1409c39248fafd61"
+    ],
+    "notes": [
+     [
+      "repair rejected: 3 claim(s) still fail verification (was 1) — no citation on a factual claim"
+     ],
+     [
+      "repair rejected: 3 claim(s) still fail verification (was 1) — no citation on a factual claim"
+     ]
+    ]
+   },
+   {
+    "case": "conf-fp153-gcf",
+    "samples": 2,
+    "identical_text": false,
+    "adoption": [
+     false,
+     false
+    ],
+    "statuses": [
+     "partial",
+     "partial"
+    ],
+    "text_sha256": [
+     "a0c65e3a741401b71ffd79f6671690edd7e292bb18efc3e203429ebed0567c14",
+     "2e2caad03bdf3fd9427bac78ad866a9f4ea97085e4ea980118b2754b30c61258"
+    ],
+    "notes": [
+     [
+      "repair rejected: 2 claim(s) still fail verification (was 2) — no citation on a factual claim"
+     ],
+     [
+      "repair rejected: 2 claim(s) still fail verification (was 2) — no citation on a factual claim"
+     ]
+    ]
+   },
+   {
+    "case": "noisy-lower-symbols",
+    "samples": 2,
+    "identical_text": true,
+    "adoption": [
+     false,
+     false
+    ],
+    "statuses": [
+     "partial",
+     "partial"
+    ],
+    "text_sha256": [
+     "8a0d5112e7e95e5a58039c569afde2fa11125f0a573328da698ff0519dd79515",
+     "8a0d5112e7e95e5a58039c569afde2fa11125f0a573328da698ff0519dd79515"
+    ],
+    "notes": [
+     [
+      "repair rejected: 2 claim(s) still fail verification (was 1) — no citation on a factual claim"
+     ],
+     [
+      "repair rejected: 2 claim(s) still fail verification (was 1) — no citation on a factual claim"
+     ]
+    ]
+   },
+   {
+    "case": "abs-2014",
+    "samples": 2,
+    "identical_text": false,
+    "adoption": [
+     false,
+     false
+    ],
+    "statuses": [
+     "partial",
+     "partial"
+    ],
+    "text_sha256": [
+     "dc32c2a9dbf520283dd57973aa1d0247039bb409be3e0cc1d79979a3ec797f83",
+     "c4160c28fb715b24d2ab84880caba9d5c6cc33dd0016677a04f8f5aa78b36020"
+    ],
+    "notes": [
+     [
+      "repair rejected: 2 claim(s) still fail verification (was 2) — no citation on a factual claim"
+     ],
+     [
+      "repair rejected: 2 claim(s) still fail verification (was 2) — no citation on a factual claim"
+     ]
+    ]
+   },
+   {
+    "case": "agg-2020-range",
+    "samples": 2,
+    "identical_text": false,
+    "adoption": [
+     false,
+     false
+    ],
+    "statuses": [
+     "abstain",
+     "abstain"
+    ],
+    "text_sha256": [
+     "06fbda08d651eef6e85dd007c5f7f9d7d9fead567cf95e346ca24091b2526e35",
+     "2c42a9d747c8a0b5b24c0808bffdfe5587de4f4671c4400b1d57665daaac741d"
+    ],
+    "notes": [
+     [
+      "repair rejected: 2 claim(s) still fail verification (was 2) — no citation on a factual claim"
+     ],
+     [
+      "repair rejected: 1 claim(s) still fail verification (was 2) — no citation on a factual claim"
+     ]
+    ]
+   },
+   {
+    "case": "agg-corpus-boards",
+    "samples": 2,
+    "identical_text": false,
+    "adoption": [
+     false,
+     false
+    ],
+    "statuses": [
+     "partial",
+     "partial"
+    ],
+    "text_sha256": [
+     "0acd9a2c8ccb8348a30fae665e570c07d81615353c4efb795b095c80cf80b976",
+     "1bea0eb266c302fe0c573442ac6cb82b7434ea0e4ffbb284ff39dd35569e07be"
+    ],
+    "notes": [
+     [
+      "repair rejected: 4 claim(s) still fail verification (was 9) — not found in the cited evidence: 2016, B.15"
+     ],
+     [
+      "repair rejected: it replaced a 448-character answer with 358 characters that state no fact at all"
+     ]
+    ]
+   },
+   {
+    "case": "agg-2021-boards",
+    "samples": 2,
+    "identical_text": true,
+    "adoption": [
+     false,
+     false
+    ],
+    "statuses": [
+     "partial",
+     "partial"
+    ],
+    "text_sha256": [
+     "49d66bfb7723722af4bd745b377758533643095aab8b7fd0ae9b5f4a00687f2b",
+     "49d66bfb7723722af4bd745b377758533643095aab8b7fd0ae9b5f4a00687f2b"
+    ],
+    "notes": [
+     [
+      "repair rejected: 2 claim(s) still fail verification (was 1) — no citation on a factual claim"
+     ],
+     [
+      "repair rejected: 2 claim(s) still fail verification (was 1) — no citation on a factual claim"
+     ]
+    ]
+   }
+  ]
+ },
+ "sample_worlds": {
+  "worlds": [
+   {
+    "world": 1,
+    "cases": 66,
+    "quantities": {
+     "invented_docs": 0,
+     "invented_pages": 0,
+     "sources_not_shown_to_repair": 0,
+     "invented_figures": 0,
+     "lost_supported_undocumented": 0,
+     "answer_checks_pass_to_fail": 0,
+     "language_regressions": 0,
+     "supported_non_decreasing": 0,
+     "groundedness": 0.8901734104046243,
+     "citation_completeness": 0.8323699421965318
+    },
+    "breaches": [
+     "groundedness 154/173 (89.0%) below the >= 165/173 gate",
+     "citation completeness 144/173 (83.2%) below the >= 165/173 gate"
+    ]
+   },
+   {
+    "world": 2,
+    "cases": 66,
+    "quantities": {
+     "invented_docs": 0,
+     "invented_pages": 0,
+     "sources_not_shown_to_repair": 0,
+     "invented_figures": 0,
+     "lost_supported_undocumented": 2,
+     "answer_checks_pass_to_fail": 0,
+     "language_regressions": 0,
+     "supported_non_decreasing": -1,
+     "groundedness": 0.8888888888888888,
+     "citation_completeness": 0.8362573099415205
+    },
+    "breaches": [
+     "2 supported claim(s) lost with no documented necessity",
+     "supported fell 150 -> 149",
+     "groundedness 152/171 (88.9%) below the >= 163/171 gate",
+     "citation completeness 143/171 (83.6%) below the >= 163/171 gate"
+    ]
+   }
+  ],
+  "depth": 2,
+  "cases": 66,
+  "unresolvable": [],
+  "excluded_cases": []
+ },
+ "spread_replicates": [],
+ "spreads": {
+  "invented_docs": {
+   "value": 0,
+   "from_samples": 0,
+   "from_replicates": null,
+   "source": "samples",
+   "n_samples": 2,
+   "n_replicates": 1
+  },
+  "invented_pages": {
+   "value": 0,
+   "from_samples": 0,
+   "from_replicates": null,
+   "source": "samples",
+   "n_samples": 2,
+   "n_replicates": 1
+  },
+  "sources_not_shown_to_repair": {
+   "value": 0,
+   "from_samples": 0,
+   "from_replicates": null,
+   "source": "samples",
+   "n_samples": 2,
+   "n_replicates": 1
+  },
+  "invented_figures": {
+   "value": 0,
+   "from_samples": 0,
+   "from_replicates": null,
+   "source": "samples",
+   "n_samples": 2,
+   "n_replicates": 1
+  },
+  "lost_supported_undocumented": {
+   "value": 2,
+   "from_samples": 2,
+   "from_replicates": null,
+   "source": "samples",
+   "n_samples": 2,
+   "n_replicates": 1
+  },
+  "answer_checks_pass_to_fail": {
+   "value": 0,
+   "from_samples": 0,
+   "from_replicates": null,
+   "source": "samples",
+   "n_samples": 2,
+   "n_replicates": 1
+  },
+  "language_regressions": {
+   "value": 0,
+   "from_samples": 0,
+   "from_replicates": null,
+   "source": "samples",
+   "n_samples": 2,
+   "n_replicates": 1
+  },
+  "supported_non_decreasing": {
+   "value": 1,
+   "from_samples": 1,
+   "from_replicates": null,
+   "source": "samples",
+   "n_samples": 2,
+   "n_replicates": 1
+  },
+  "groundedness": {
+   "value": 0.0012845215157354373,
+   "from_samples": 0.0012845215157354373,
+   "from_replicates": null,
+   "source": "samples",
+   "n_samples": 2,
+   "n_replicates": 1
+  },
+  "citation_completeness": {
+   "value": 0.0038873677449886568,
+   "from_samples": 0.0038873677449886568,
+   "from_replicates": null,
+   "source": "samples",
+   "n_samples": 2,
+   "n_replicates": 1
+  }
+ },
+ "metric_coverage": {
+  "groundedness_rate": {
+   "cases_compared": 66,
+   "paired": 62,
+   "a": 0.8911290322580645,
+   "b": 0.8911290322580645,
+   "delta": 0.0,
+   "no_regression": true,
+   "missing_by_construction": [
+    {
+     "case": "fr-fp999-abstain",
+     "side": "off",
+     "kind": "by-construction",
+     "reason": "guard answer: production returns before verification (chainlit_app.py:1116-1133), so the turn has no claims"
+    },
+    {
+     "case": "fr-fp999-abstain",
+     "side": "on",
+     "kind": "by-construction",
+     "reason": "guard answer: production returns before verification (chainlit_app.py:1116-1133), so the turn has no claims"
+    },
+    {
+     "case": "abs-fp999",
+     "side": "off",
+     "kind": "by-construction",
+     "reason": "guard answer: production returns before verification (chainlit_app.py:1116-1133), so the turn has no claims"
+    },
+    {
+     "case": "abs-fp999",
+     "side": "on",
+     "kind": "by-construction",
+     "reason": "guard answer: production returns before verification (chainlit_app.py:1116-1133), so the turn has no claims"
+    },
+    {
+     "case": "abs-b44",
+     "side": "off",
+     "kind": "by-construction",
+     "reason": "0 claims: the rate's denominator is zero — an abstention with nothing to verify has no rate to compare"
+    },
+    {
+     "case": "abs-b44",
+     "side": "on",
+     "kind": "by-construction",
+     "reason": "0 claims: the rate's denominator is zero — an abstention with nothing to verify has no rate to compare"
+    },
+    {
+     "case": "abs-offtopic",
+     "side": "off",
+     "kind": "by-construction",
+     "reason": "chat turn: production answers from history without verification"
+    },
+    {
+     "case": "abs-offtopic",
+     "side": "on",
+     "kind": "by-construction",
+     "reason": "chat turn: production answers from history without verification"
+    }
+   ],
+   "missing_by_failure": [],
+   "excluded_by_construction": [
+    "abs-b44",
+    "abs-fp999",
+    "abs-offtopic",
+    "fr-fp999-abstain"
+   ]
+  },
+  "citation_completeness_rate": {
+   "cases_compared": 66,
+   "paired": 62,
+   "a": 0.8810483870967741,
+   "b": 0.8810483870967741,
+   "delta": 0.0,
+   "no_regression": true,
+   "missing_by_construction": [
+    {
+     "case": "fr-fp999-abstain",
+     "side": "off",
+     "kind": "by-construction",
+     "reason": "guard answer: production returns before verification (chainlit_app.py:1116-1133), so the turn has no claims"
+    },
+    {
+     "case": "fr-fp999-abstain",
+     "side": "on",
+     "kind": "by-construction",
+     "reason": "guard answer: production returns before verification (chainlit_app.py:1116-1133), so the turn has no claims"
+    },
+    {
+     "case": "abs-fp999",
+     "side": "off",
+     "kind": "by-construction",
+     "reason": "guard answer: production returns before verification (chainlit_app.py:1116-1133), so the turn has no claims"
+    },
+    {
+     "case": "abs-fp999",
+     "side": "on",
+     "kind": "by-construction",
+     "reason": "guard answer: production returns before verification (chainlit_app.py:1116-1133), so the turn has no claims"
+    },
+    {
+     "case": "abs-b44",
+     "side": "off",
+     "kind": "by-construction",
+     "reason": "0 claims: the rate's denominator is zero — an abstention with nothing to verify has no rate to compare"
+    },
+    {
+     "case": "abs-b44",
+     "side": "on",
+     "kind": "by-construction",
+     "reason": "0 claims: the rate's denominator is zero — an abstention with nothing to verify has no rate to compare"
+    },
+    {
+     "case": "abs-offtopic",
+     "side": "off",
+     "kind": "by-construction",
+     "reason": "chat turn: production answers from history without verification"
+    },
+    {
+     "case": "abs-offtopic",
+     "side": "on",
+     "kind": "by-construction",
+     "reason": "chat turn: production answers from history without verification"
+    }
+   ],
+   "missing_by_failure": [],
+   "excluded_by_construction": [
+    "abs-b44",
+    "abs-fp999",
+    "abs-offtopic",
+    "fr-fp999-abstain"
+   ]
+  }
+ },
+ "require_metrics": [
+  "groundedness_rate",
+  "citation_completeness_rate"
+ ],
+ "gates": [
+  {
+   "id": "invented_docs",
+   "name": "no document citation invented",
+   "kind": "event",
+   "value": 0,
+   "threshold": 0,
+   "margin": 0,
+   "unit": "count",
+   "failed": false,
+   "breach": null,
+   "blocking": true,
+   "spread": 0,
+   "spread_source": "samples",
+   "why": "clean, and the spread is measured at 0",
+   "verdict": "PASS"
+  },
+  {
+   "id": "invented_pages",
+   "name": "no page citation invented",
+   "kind": "event",
+   "value": 0,
+   "threshold": 0,
+   "margin": 0,
+   "unit": "count",
+   "failed": false,
+   "breach": null,
+   "blocking": true,
+   "spread": 0,
+   "spread_source": "samples",
+   "why": "clean, and the spread is measured at 0",
+   "verdict": "PASS"
+  },
+  {
+   "id": "sources_not_shown_to_repair",
+   "name": "no citation on an unshown document",
+   "kind": "event",
+   "value": 0,
+   "threshold": 0,
+   "margin": 0,
+   "unit": "count",
+   "failed": false,
+   "breach": null,
+   "blocking": true,
+   "spread": 0,
+   "spread_source": "samples",
+   "why": "clean, and the spread is measured at 0",
+   "verdict": "PASS"
+  },
+  {
+   "id": "invented_figures",
+   "name": "no figure invented",
+   "kind": "event",
+   "value": 0,
+   "threshold": 0,
+   "margin": 0,
+   "unit": "count",
+   "failed": false,
+   "breach": null,
+   "blocking": true,
+   "spread": 0,
+   "spread_source": "samples",
+   "why": "clean, and the spread is measured at 0",
+   "verdict": "PASS"
+  },
+  {
+   "id": "lost_supported_undocumented",
+   "name": "no supported claim lost undocumented",
+   "kind": "event",
+   "value": 0,
+   "threshold": 0,
+   "margin": 0,
+   "unit": "count",
+   "failed": false,
+   "breach": null,
+   "blocking": true,
+   "spread": 2,
+   "spread_source": "samples",
+   "why": "clean here, but the same count moved 2 between measurements of the same input",
+   "verdict": "INDETERMINATE"
+  },
+  {
+   "id": "answer_checks_pass_to_fail",
+   "name": "no correct answer becomes incorrect",
+   "kind": "event",
+   "value": 0,
+   "threshold": 0,
+   "margin": 0,
+   "unit": "count",
+   "failed": false,
+   "breach": null,
+   "blocking": true,
+   "spread": 0,
+   "spread_source": "samples",
+   "why": "clean, and the spread is measured at 0",
+   "verdict": "PASS"
+  },
+  {
+   "id": "language_regressions",
+   "name": "no language regression",
+   "kind": "event",
+   "value": 0,
+   "threshold": 0,
+   "margin": 0,
+   "unit": "count",
+   "failed": false,
+   "breach": null,
+   "blocking": true,
+   "spread": 0,
+   "spread_source": "samples",
+   "why": "clean, and the spread is measured at 0",
+   "verdict": "PASS"
+  },
+  {
+   "id": "supported_non_decreasing",
+   "name": "supported non-decreasing",
+   "kind": "margin",
+   "value": 0,
+   "threshold": 0,
+   "margin": 0,
+   "unit": "claims",
+   "failed": false,
+   "blocking": true,
+   "breach": null,
+   "spread": 1,
+   "spread_source": "samples",
+   "why": "margin +0 is inside the measured spread 1",
+   "verdict": "INDETERMINATE"
+  },
+  {
+   "id": "groundedness",
+   "name": "groundedness >= 95%",
+   "kind": "margin",
+   "value": 0.8901734104046243,
+   "threshold": 0.95,
+   "margin": -0.05982658959537568,
+   "unit": "rate",
+   "failed": true,
+   "blocking": true,
+   "detail": "154/173 (>= 165/173)",
+   "breach": "groundedness 154/173 (89.0%) below the >= 165/173 gate",
+   "spread": 0.0012845215157354373,
+   "spread_source": "samples",
+   "why": "groundedness 154/173 (89.0%) below the >= 165/173 gate",
+   "verdict": "FAIL"
+  },
+  {
+   "id": "citation_completeness",
+   "name": "citation completeness >= 95%",
+   "kind": "margin",
+   "value": 0.8323699421965318,
+   "threshold": 0.95,
+   "margin": -0.11763005780346814,
+   "unit": "rate",
+   "failed": true,
+   "blocking": true,
+   "detail": "144/173 (>= 165/173)",
+   "breach": "citation completeness 144/173 (83.2%) below the >= 165/173 gate",
+   "spread": 0.0038873677449886568,
+   "spread_source": "samples",
+   "why": "citation completeness 144/173 (83.2%) below the >= 165/173 gate",
+   "verdict": "FAIL"
+  },
+  {
+   "id": "metric_coverage",
+   "name": "required metrics present and not regressed",
+   "kind": "event",
+   "value": 0,
+   "threshold": 0,
+   "margin": 0,
+   "unit": "count",
+   "failed": false,
+   "blocking": true,
+   "spread": null,
+   "spread_source": null,
+   "verdict": "PASS",
+   "detail": "groundedness_rate 62/66 paired, 4 case(s) missing by construction, 0 by failure; citation_completeness_rate 62/66 paired, 4 case(s) missing by construction, 0 by failure",
+   "why": "every absent value is absent by construction",
+   "breach": null
+  },
+  {
+   "id": "adoption_reproducibility",
+   "name": "adoption decision reproducible (<= 0% disagreement)",
+   "kind": "event",
+   "value": 0.09090909090909091,
+   "threshold": 0.0,
+   "margin": 0.09090909090909091,
+   "unit": "rate",
+   "failed": true,
+   "blocking": true,
+   "spread": null,
+   "spread_source": null,
+   "verdict": "FAIL",
+   "detail": "agreement 10/11, identical completions 2/11",
+   "why": "1 of 11 sampled case(s) changed the adoption decision on identical input",
+   "breach": "repair is not reproducible: adoption disagreed on 1/11 sampled case(s) (9.1% > 0.0%)"
+  }
+ ],
+ "indeterminate": [
+  "no supported claim lost undocumented: clean here, but the same count moved 2 between measurements of the same input",
+  "supported non-decreasing: margin +0 is inside the measured spread 1"
+ ],
+ "gate_verdict": "FAIL"
+}
