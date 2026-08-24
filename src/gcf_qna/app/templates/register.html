@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Create account · SSA CHATBOT</title>
+    <link rel="icon" href="/favicon">
+    <link rel="stylesheet" href="/public/register.css">
+    <script src="/public/register.js" defer></script>
+  </head>
+  <body>
+    <main class="auth-layout">
+      <section class="auth-panel" aria-labelledby="register-title">
+        <header class="brand-header">
+          <a href="/" aria-label="SSA CHATBOT sign in">
+            <picture>
+              <source media="(prefers-color-scheme: dark)" srcset="/public/logo_dark.png">
+              <img
+                class="brand-logo"
+                src="/public/logo_light.png"
+                alt="SSA CHATBOT — GCF Proposal Knowledge Assistant"
+                width="150"
+              >
+            </picture>
+          </a>
+        </header>
+
+        <div class="form-stage">
+          <div class="form-shell">
+            <form id="registration-form" novalidate>
+              <div class="form-heading">
+                <h1 id="register-title">Create an account</h1>
+              </div>
+
+              <div id="form-alert" class="alert" role="alert" aria-live="assertive" hidden></div>
+
+              <div class="fields">
+                <div class="field">
+                  <label for="username">Username</label>
+                  <input
+                    id="username"
+                    name="username"
+                    type="text"
+                    autocomplete="username"
+                    autocapitalize="none"
+                    spellcheck="false"
+                    maxlength="64"
+                    aria-describedby="username-hint username-error"
+                    autofocus
+                    required
+                  >
+                  <p id="username-hint" class="hint">3–64 characters; letters, numbers, and <code>._@-</code>.</p>
+                  <p id="username-error" class="field-error" aria-live="polite"></p>
+                </div>
+
+                <div class="field">
+                  <label for="password">Password</label>
+                  <div class="password-field">
+                    <input
+                      id="password"
+                      name="password"
+                      type="password"
+                      autocomplete="new-password"
+                      minlength="8"
+                      aria-describedby="password-hint password-error"
+                      required
+                    >
+                    <button
+                      class="password-toggle"
+                      type="button"
+                      data-password-toggle="password"
+                      aria-label="Show password"
+                      aria-pressed="false"
+                    >
+                      <svg class="eye-open" viewBox="0 0 24 24" aria-hidden="true"><path d="M2.1 12s3.6-6 9.9-6 9.9 6 9.9 6-3.6 6-9.9 6-9.9-6-9.9-6Z"></path><circle cx="12" cy="12" r="2.75"></circle></svg>
+                      <svg class="eye-closed" viewBox="0 0 24 24" aria-hidden="true"><path d="m3 3 18 18M10.6 10.7a2 2 0 0 0 2.7 2.7M9.9 5.2A10.8 10.8 0 0 1 12 5c6.3 0 9.9 7 9.9 7a17 17 0 0 1-2.2 3M6.2 6.2C3.5 8.2 2.1 12 2.1 12s3.6 7 9.9 7c1.5 0 2.8-.4 4-1"></path></svg>
+                    </button>
+                  </div>
+                  <p id="password-hint" class="hint">Use at least 8 characters.</p>
+                  <p id="password-error" class="field-error" aria-live="polite"></p>
+                </div>
+
+                <div class="field">
+                  <label for="confirm-password">Confirm password</label>
+                  <div class="password-field">
+                    <input
+                      id="confirm-password"
+                      name="confirm-password"
+                      type="password"
+                      autocomplete="new-password"
+                      aria-describedby="confirm-password-error"
+                      required
+                    >
+                    <button
+                      class="password-toggle"
+                      type="button"
+                      data-password-toggle="confirm-password"
+                      aria-label="Show confirmed password"
+                      aria-pressed="false"
+                    >
+                      <svg class="eye-open" viewBox="0 0 24 24" aria-hidden="true"><path d="M2.1 12s3.6-6 9.9-6 9.9 6 9.9 6-3.6 6-9.9 6-9.9-6-9.9-6Z"></path><circle cx="12" cy="12" r="2.75"></circle></svg>
+                      <svg class="eye-closed" viewBox="0 0 24 24" aria-hidden="true"><path d="m3 3 18 18M10.6 10.7a2 2 0 0 0 2.7 2.7M9.9 5.2A10.8 10.8 0 0 1 12 5c6.3 0 9.9 7 9.9 7a17 17 0 0 1-2.2 3M6.2 6.2C3.5 8.2 2.1 12 2.1 12s3.6 7 9.9 7c1.5 0 2.8-.4 4-1"></path></svg>
+                    </button>
+                  </div>
+                  <p id="confirm-password-error" class="field-error" aria-live="polite"></p>
+                </div>
+              </div>
+
+              <button id="submit-button" class="primary-button" type="submit">
+                <span class="spinner" aria-hidden="true"></span>
+                <span class="button-label">Create account</span>
+              </button>
+
+              <p class="signin-copy">Already have an account? <a href="/">Sign in</a></p>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <aside class="artwork" aria-hidden="true">
+        <img src="/public/brand/ssa-chatbot-login-background.jpg" alt="">
+      </aside>
+    </main>
+  </body>
+</html>

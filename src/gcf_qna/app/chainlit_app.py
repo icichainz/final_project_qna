@@ -1107,9 +1107,9 @@ async def start():
     cl.user_session.set("retriever", retriever)
     cl.user_session.set("history", [])
     await cl.Message(
-        content=f"**SSA CHATBOT is ready.** {_retriever_meta.get('n_chunks')} chunks are indexed "
-                f"with `{_retriever_meta.get('embedding_model')}`. Ask about the GCF proposals, "
-                "and use the cited sources to verify important claims."
+        content="👋 **Welcome to SSA CHATBOT.** Ask questions, compare projects, and explore "
+                "insights across Green Climate Fund proposals. Every answer is grounded in the "
+                "source documents, with citations you can review and verify."
     ).send()
 
 
