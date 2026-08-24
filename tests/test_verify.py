@@ -2017,6 +2017,38 @@ NOT_JUDGE_REACHABLE = {
 }
 
 
+#: THE ONE ADJUDICATED TRUE FAILURE THE NOTE-PAGE SCOPE OVERTURNS, named
+#: rather than counted, and the only row in this file that costs a Wave-1
+#: `verifier_correct: true` its flag. IT NEEDS AN OWNER'S SIGNATURE, because a
+#: test cannot decide that a human adjudication is superseded.
+#:
+#:   claim-e0be9178189ce5084dfc7164, case `fr-cmp-currency`, label
+#:   `wrong_citation`, verifier_correct true.
+#:
+#: The claim carries FOUR brackets. Three were exact; the fourth cites
+#: '02_…fp274, p.7' for 40,511,264 USD, and p.7 was never retrieved. The
+#: reviewer's own note ends: "The 40,511,264 figure was available in the held
+#: cover-pages registry entry, so ruling 4 applies: cited page never held
+#: while the fact sat elsewhere in held evidence. NOTE THE GENERATION COPIED
+#: '(p.7, A.8)' STRAIGHT OUT OF THE REGISTRY NOTE."
+#:
+#: That last sentence is this change's whole subject. The registry note prints
+#: 'GCF funding requested: 40,511,264 USD (p.7, A.8)'; the answer prompt at
+#: HEAD instructs the model to cite the page a registry row prints; the app's
+#: `_invalid_citations` and the harness's `score_answer` both count that page
+#: as a legal target. Under the note-page scope the citation is COMPLIANCE,
+#: and it is structurally identical to release-3's conf-fp153-gcf ('(p.48,
+#: B.2(b))') and fr-fp172-nepal ('(p.76, B.2(b))'), which this change exists
+#: to stop failing. There is no predicate that keeps this row flagged and lets
+#: those two pass: the label was applied under ruling 4 as it stood in Wave 1,
+#: before the rule that governs it existed.
+#:
+#: It is an EXACT set for the same reason `KNOWN_UNCLEARED` is: it fails when
+#: a second adjudicated true failure stops being flagged just as loudly as it
+#: fails when this one starts again.
+SUPERSEDED_BY_NOTE_PAGE_SCOPE = {"claim-e0be9178189ce5084dfc7164"}
+
+
 def test_no_adjudicated_true_failure_stops_being_flagged():
     """The regression gate. Twelve rows were adjudicated 'the verifier was
     right'; if calibration silences one of them, the calibration is wrong.
@@ -2027,11 +2059,16 @@ def test_no_adjudicated_true_failure_stops_being_flagged():
     `test_the_two_rows_the_gold_still_calls_genuine_defects_are_named`, and
     their content is still verified through the claim below them. This test
     reads the rows that DO join; that test reads the ones that do not, so the
-    pair still covers all twelve."""
+    pair still covers all twelve.
+
+    ONE of the ten is no longer flagged, and it is not silenced either: it is
+    `SUPERSEDED_BY_NOTE_PAGE_SCOPE`, written out above with the reviewer's own
+    note, because the citation it was labelled `wrong_citation` for is the
+    exact shape the note-page scope makes legal."""
     _sv, res, _p = _scored()
-    missed = [r["row_id"] for r in res["rows"]
-              if r["arm"] == "gold" and r["should_flag"] and not r["flagged"]]
-    assert missed == []
+    missed = {r["row_id"] for r in res["rows"]
+              if r["arm"] == "gold" and r["should_flag"] and not r["flagged"]}
+    assert missed == SUPERSEDED_BY_NOTE_PAGE_SCOPE
     scored_true = sum(1 for r in res["rows"]
                       if r["arm"] == "gold" and r["should_flag"])
     resolved_true = sum(1 for r in res["resolved_by_extraction"]
@@ -3376,3 +3413,419 @@ def test_a_page_only_repoint_of_a_wrong_figure_is_still_contradicted(no_registry
     res = V.verify_answer(moved, ev, client=client, use_llm=False)
     assert res.status == "abstain" and res.answer == moved
     assert client.calls == []
+
+
+# ---------------------------------------------------------------------------
+# NOTE-PAGE SCOPE
+#
+# The computed notes print their own provenance — 'GCF funding requested:
+# 21,128,224USD (p.6, A.8)', '; also as 49,151,817 USD (p.76, B.2(b))' — and
+# the answer prompt tells the model to cite the page a row prints.  TWO of the
+# three instruments already agreed that such a page is a legal citation
+# target: `chainlit_app._note_pages` feeds `_invalid_citations`, and
+# `eval_answers.score_answer` passes the same set.  THE VERIFIER DID NOT.
+# `build_evidence` keyed a main registry line at `(doc, None)` only (the
+# '[stem, cover pages]' branch returns before the page branch is reached) and
+# a conflict line at its FIRST pointer only (`_MATRIX_PAGE_RE.search`), so a
+# claim citing the page the note itself had printed resolved to nothing and
+# came back UNSUPPORTED, 'cited evidence was never retrieved'.
+#
+# It cost release-3 two rows, both of them the SECOND HALF of a conflict
+# report the registry note had ORDERED the answer to write:
+#
+#   conf-fp153-gcf   '[122_gcf-b27-02-add13, p. 48]'  <- '; also as 26,654
+#                    million USD (p.48, B.2(b))'
+#   fr-fp172-nepal   '[103_gcf-b30-03-add04, p. 76]'  <- '; also as
+#                    49,151,817 USD (p.76, B.2(b))'
+#
+# The fixtures below are those two rows' own note blocks, byte for byte.
+#
+# WHAT THE RULE IS, exactly, because the widening is the dangerous part: a
+# cited (doc, page) additionally resolves to a NOTE LINE iff that line names
+# that document AND prints '(p.<page>,' or '(p.<page>)' — the same per-line
+# attribution `_note_pages` uses.  It is then read by the same matchers at the
+# same strictness as any other scope.  A page no note line printed for that
+# document keeps failing exactly as before, and the tests that pin THAT are
+# the ones to be afraid of losing.
+# ---------------------------------------------------------------------------
+
+NOTE_DOC = "103_gcf-b30-03-add04"        # FP172 package, release-3 fr-fp172-nepal
+NOTE_DOC2 = "122_gcf-b27-02-add13"       # FP153 package, release-3 conf-fp153-gcf
+
+#: fr-fp172-nepal's registry note, verbatim. The main line prints p.6 twice;
+#: the conflict line prints p.6 AND p.76.
+FP172_NOTE = (
+    'Registry — FP172: "Mitigating GHG emission through modern, efficient and '
+    'climate-friendly clean cooking solutions (CCS)"; accredited entity: '
+    'Alternative Energy Promotion Centre, Ministry of Energy, Water Resources '
+    'and Irrigation, Government of Nepal.; countries: Nepal; GCF funding '
+    'requested: 21,128,224USD (p.6, A.8); total financing: 49,151,817 USD '
+    f'(p.6, A.7); board B.30, 2021 [{NOTE_DOC}, cover pages]\n'
+    f'Registry — CONFLICT in this document ({NOTE_DOC}): gcf_funding_requested '
+    'is printed as 21,128,224USD (p.6, A.8); also as 49,151,817 USD '
+    '(p.76, B.2(b)) — report both figures with their pages.')
+
+#: conf-fp153-gcf's registry note, verbatim.
+FP153_NOTE = (
+    'Registry — FP153: "Mongolian Green Finance Corporation"; accredited '
+    'entity: XacBank LLC; countries: Mongolia; GCF funding requested: '
+    '"28,654 million USD" (p.5, A.8) (unit as printed is ambiguous); total '
+    'financing: "49,654 million USD" (p.5, A.7) (unit as printed is '
+    f'ambiguous); board B.27, 2020 [{NOTE_DOC2}, cover pages]\n'
+    f'Registry — CONFLICT in this document ({NOTE_DOC2}): '
+    'gcf_funding_requested is printed as 28,654 million USD (p.5, A.8); also '
+    'as 26,654 million USD (p.48, B.2(b)) — report both figures with their '
+    'pages.')
+
+#: cmp-fp151-fp152-gcf's registry note: TWO documents in ONE block, which is
+#: the only fixture that can tell 'per line' from 'per block'. 124_… prints
+#: p.5 and p.60; 123_… prints p.5 and nothing else.
+TWO_DOC_NOTE = (
+    'Registry — FP151: "Technical Assistance (TA) Facility for the Global '
+    'Subnational Climate Fund (SfCfT Global - Equity: submitted separately)"; '
+    'accredited entity: International Union for Conservation of Nature and '
+    'Natural Resources (IUCN); countries: Angola, Benin, Botswana, Burkina '
+    'Faso, Burundi; GCF funding requested: 18.5 M USD (p.5, A.8); total '
+    f'financing: 28 M USD (p.5, A.7); board B.27, 2020 [{DOC}, cover pages]\n'
+    f'Registry — CONFLICT in this document ({DOC}): total_financing is '
+    'printed as 28 M USD (p.5, A.7); also as $720000000 (p.60, B.2(a)) — '
+    'report both figures with their pages.\n'
+    'Registry — FP152: "Global Sub-national Climate Fund (GCF Global) – '
+    'Equity"; accredited entity: Pegasus Capital Advisors LP (Pegasus); '
+    'countries: Angola, Burkina Faso, Cameroon, Côte d\'Ivoire, Democratic '
+    'Republic of the Congo; GCF funding requested: 150 M USD (p.5, A8); total '
+    f'financing: 720 M USD (p.5, A7); board B.27, 2020 [{DOC2}, cover pages]\n'
+    'Registry — the identifiers above resolve to DIFFERENT documents. Never '
+    'merge them or treat them as the same proposal.')
+
+
+# --- the keys ---------------------------------------------------------------
+
+def test_a_note_line_publishes_every_page_it_prints_for_its_own_document():
+    """Both halves of the measured gap, in one fixture.
+
+    p.6 comes from a MAIN registry line, which the '[stem, cover pages]'
+    branch used to consume before any page was read; p.76 is a conflict line's
+    SECOND pointer, which `_MATRIX_PAGE_RE.search` used to stop short of. The
+    keys are namespaced, and that is asserted rather than assumed: filing them
+    at `(doc, page)` would hand every document-wide scan a key it never had.
+    """
+    ev = V.build_evidence([], [FP172_NOTE])
+    scopes = V.note_scopes(ev)
+    assert (V.note_scope_doc(NOTE_DOC), 6) in scopes
+    assert (V.note_scope_doc(NOTE_DOC), 76) in scopes
+    assert "49,151,817" in scopes[(V.note_scope_doc(NOTE_DOC), 76)]
+    # the pages are NOT filed as the document's own keys …
+    assert (NOTE_DOC, 76) not in ev
+    # … and no key at all was added: `claims.evidence_keys` is a recorded
+    # artifact and the release backfill asserts it reconstructs exactly
+    assert set(ev) == set(V.build_evidence([], [FP172_NOTE]))
+    assert not any(V.is_notes_doc(k[0]) and k[1] is not None for k in ev)
+    # … and everything the old keying produced is still produced
+    assert (NOTE_DOC, None) in ev and "21,128,224USD" in ev[(NOTE_DOC, None)]
+    assert (NOTE_DOC, 6) in ev          # the conflict line's first pointer
+    assert V.NOTES_KEY in ev
+
+
+def test_a_note_page_is_attributed_per_line_not_per_block():
+    """The rule `_note_pages` applies, and the one an easier reading gets
+    wrong: p.60 is printed on 124_…'s conflict line, and 123_… sits in the
+    same block three lines down. Per BLOCK it would inherit p.60."""
+    scopes = V.note_scopes(V.build_evidence([], [TWO_DOC_NOTE]))
+    assert (V.note_scope_doc(DOC), 60) in scopes
+    assert (V.note_scope_doc(DOC2), 60) not in scopes
+    assert (V.note_scope_doc(DOC2), 5) in scopes
+
+
+# --- the targeted effect ----------------------------------------------------
+
+def test_the_page_a_note_printed_is_a_scope_the_claim_may_cite():
+    """conf-fp153-gcf, the recorded answer verbatim.
+
+    The second claim reports the note's OWN second figure at the note's OWN
+    page — compliance with the instruction the same note carries ('report both
+    figures with their pages') — and the release scored it UNSUPPORTED, 'cited
+    evidence was never retrieved: 122_gcf-b27-02-add13, p.48'.
+
+    The registry is REAL here (no `no_registry`), because the row is: the two
+    claims report two figures for one field, so the conflict gate fires on the
+    second and is answered by the licence, which the corpus registry is what
+    grants. The note scope decides only whether the claim can be READ.
+    """
+    ev = V.build_evidence([], [FP153_NOTE])
+    answer = ('The registry metadata for FP153 (“Mongolian Green Finance '
+              'Corporation”) shows **a GCF funding request of “28,654 million '
+              f'USD”** (unit as printed is ambiguous). [{NOTE_DOC2}, p. 5]\n\n'
+              'However, the same document also prints **“26,654 million USD”** '
+              'as the GCF funding requested, creating an internal '
+              f'inconsistency. [{NOTE_DOC2}, p. 48]')
+    first, second = V.classify_deterministic(V.extract_claims(answer), ev)
+    assert first.status == V.SUPPORTED, (first.status, first.reason)
+    assert second.status == V.SUPPORTED, (second.status, second.reason)
+    assert second.scope == [(V.note_scope_doc(NOTE_DOC2), 48)]
+    # and it is not smuggled in as a coarse citation: no page-mismatch caution
+    assert "citation-page-mismatch" not in second.flags
+
+
+def test_the_french_half_of_a_conflict_report_verifies_on_its_printed_page():
+    """fr-fp172-nepal, the recorded answer verbatim — narrow no-break spaces,
+    French prose, and an English note line. BOTH claims must pass: the first
+    on a retrieved page, the second on the page only the note printed.
+
+    NO `no_registry` HERE, and that is the row's own shape rather than a
+    convenience: the second claim reports the document's OTHER figure for the
+    field its first claim already reported, so the conflict gate fires on it
+    and is answered by the 'report both figures with their pages' licence —
+    which needs the corpus registry to confirm that BOTH prints are recorded
+    for this document and field. Take the registry away and this row is
+    CONTRADICTED, which is `test_a_note_scoped_support_is_still_conflict_tested`
+    one screen down. The note scope is what makes the claim readable at all;
+    every gate behind it still runs.
+    """
+    hits = [_Hit(NOTE_DOC, 6, "A.8 Financement du FVC demandé 21,128,224 USD")]
+    ev = V.build_evidence(hits, [FP172_NOTE])
+    answer = (
+        "Le FP172 (« Mitigating GHG emission through modern, efficient and "
+        "climate-friendly clean cooking solutions (CCS) ») indique un "
+        "**financement GCF demandé de 21 128 224 USD** à la section "
+        f"A.8. [{NOTE_DOC}, p. 6]  \n\nCependant, le même document présente "
+        "aussi **49 151 817 USD** comme « GCF funding "
+        "requested » à la section B.2(b), ce qui est signalé comme un "
+        f"conflit dans le registre. [{NOTE_DOC}, p. 76]")
+    first, second = V.classify_deterministic(V.extract_claims(answer), ev)
+    assert first.status == V.SUPPORTED, (first.status, first.reason)
+    assert first.scope == [(NOTE_DOC, 6)], "a retrieved page keeps its own key"
+    assert second.status == V.SUPPORTED, (second.status, second.reason)
+    assert second.scope == [(V.note_scope_doc(NOTE_DOC), 76)]
+
+
+@pytest.mark.parametrize("claim,cite,want", [
+    # the note line prints '18,5 M USD'; the answer may spell it either way
+    ("**18,5 millions USD**", 5, V.SUPPORTED),
+    ("**18.5 million USD**", 5, V.SUPPORTED),
+    ("**USD 18,500,000**", 5, V.SUPPORTED),
+    # … and a decimal-comma reading of a different number is still a different
+    # number, on the note scope exactly as on a page
+    ("**19,5 millions USD**", 5, V.UNSUPPORTED),
+])
+def test_a_decimal_comma_note_line_is_matched_by_the_same_number_reader(
+        no_registry, claim, cite, want):
+    """French answers print '18,5 millions USD' for the corpus's '18.5 M USD'
+    and the harness records French rows against English note lines. The note
+    scope must go through `amounts`/`amount_matches` like everything else —
+    'same matchers, same strictness' has to be true in both directions."""
+    note = ("Registry — FP151: financement du FVC demandé : 18,5 M USD "
+            f"(p.5, A.8); board B.27, 2020 [{DOC}, cover pages]")
+    ev = V.build_evidence([], [note])
+    answer = f"FP151 demande {claim} de financement du FVC [{DOC}, p. 5]."
+    (v,) = V.classify_deterministic(V.extract_claims(answer), ev)
+    assert v.status == want, (v.status, v.reason, v.flags)
+
+
+def test_a_claim_the_note_line_does_not_state_still_fails_on_its_own_page(
+        no_registry):
+    """SCOPE RESOLUTION ONLY. The citation now resolves; the CONTENT check is
+    untouched, so a claim the line does not print fails as it always did — and
+    it fails as 'not found in the cited evidence', never as 'never retrieved',
+    because the evidence was found and read."""
+    ev = V.build_evidence([], [FP172_NOTE])
+    answer = (f"The document also prints **USD 88,000,000** as the GCF funding "
+              f"requested. [{NOTE_DOC}, p. 76]")
+    (v,) = V.classify_deterministic(V.extract_claims(answer), ev)
+    assert v.status == V.UNSUPPORTED, (v.status, v.reason)
+    assert "never retrieved" not in v.reason
+    assert "88,000,000" in v.reason
+
+
+# --- the attacks ------------------------------------------------------------
+
+@pytest.mark.parametrize("page", [75, 77, 7, 760, 6_1])
+def test_a_page_no_note_line_printed_is_still_never_retrieved(
+        no_registry, page):
+    """THE ATTACK THE WIDENING INVITES: p.76 is printed, so try p.75.
+
+    An invented page that reads as precision is the failure ruling 5 exists to
+    avoid pushing generation toward, and it is the one the fabricated arm
+    watches. The verdict text matters as much as the verdict: 'never
+    retrieved' is what the harness and the app both key off.
+    """
+    ev = V.build_evidence([], [FP172_NOTE])
+    answer = (f"The document also prints **49,151,817 USD** as the GCF funding "
+              f"requested. [{NOTE_DOC}, p. {page}]")
+    (v,) = V.classify_deterministic(V.extract_claims(answer), ev)
+    assert v.status == V.UNSUPPORTED, (page, v.status, v.reason)
+    assert "cited evidence was never retrieved" in v.reason
+    assert f"invalid-citation:{NOTE_DOC}, p.{page}" in v.flags
+
+
+def test_a_page_printed_for_one_document_cannot_be_cited_for_its_neighbour(
+        no_registry):
+    """THE ATTACK ACROSS THE BLOCK. 124_… prints p.60 and 123_… does not, and
+    both lines sit in one note. The figure is real, the document is real, the
+    pairing is invented — and 'the note block printed p.60 somewhere' must not
+    be enough."""
+    ev = V.build_evidence([], [TWO_DOC_NOTE])
+    answer = f"FP152's total financing is **$720000000** [{DOC2}, p. 60]."
+    (v,) = V.classify_deterministic(V.extract_claims(answer), ev)
+    assert v.status == V.UNSUPPORTED, (v.status, v.reason)
+    assert "cited evidence was never retrieved" in v.reason
+    # the same sentence pointed at the document whose line prints p.60 resolves
+    ok = f"FP151's total financing is also printed as **$720000000** [{DOC}, p. 60]."
+    (w,) = V.classify_deterministic(V.extract_claims(ok), ev)
+    assert w.scope == [(V.note_scope_doc(DOC), 60)]
+
+
+@pytest.mark.parametrize("value", ["49,151,818", "50,000,000", "4,915,181",
+                                   "49.151.817"])
+def test_a_value_that_contradicts_the_note_line_is_never_supported(
+        no_registry, value):
+    """THE ATTACK ON THE CONTENT SIDE: ride the new scope in with a figure the
+    line refutes — one digit off, an order of magnitude off, a re-punctuated
+    reading. CONTRADICTED or UNSUPPORTED, never SUPPORTED."""
+    ev = V.build_evidence([], [FP172_NOTE])
+    answer = (f"The **GCF funding requested** is also printed as **{value} "
+              f"USD**. [{NOTE_DOC}, p. 76]")
+    (v,) = V.classify_deterministic(V.extract_claims(answer), ev)
+    assert v.status != V.SUPPORTED, (value, v.status, v.reason)
+    assert v.failed
+
+
+def test_a_note_scoped_support_is_still_conflict_tested(no_registry):
+    """THE GATE, on the new scope. `_conflict_before_support` is the ONE gate
+    between a verified claim and SUPPORTED, and a fourth way to become
+    SUPPORTED is exactly the shape that historically walked around it: the
+    note line carries the figure, and the document's own p.48 prints a
+    different one under the claim's own field label."""
+    hits = [_Hit(NOTE_DOC, 48, "GCF funding requested: 38,000,000 USD")]
+    ev = V.build_evidence(hits, [FP172_NOTE])
+    answer = (f"The **GCF funding requested** is **USD 49,151,817** "
+              f"[{NOTE_DOC}, p. 76].")
+    (v,) = V.classify_deterministic(V.extract_claims(answer), ev)
+    assert v.status == V.CONTRADICTED, (v.status, v.reason, v.flags)
+    assert "38,000,000" in v.reason
+    assert "conflict-elsewhere-in-document" in v.flags
+    # and the switch that names cross-page scans still names this one
+    (off,) = V.classify_deterministic(V.extract_claims(answer), ev,
+                                      cross_page_conflicts=False)
+    assert off.status == V.SUPPORTED
+
+
+def test_a_note_scoped_verdict_never_claims_a_scope_it_did_not_test(
+        no_registry):
+    """The structural invariant of
+    `test_a_widened_verdict_never_claims_a_scope_it_did_not_test`, re-asserted
+    over the scope this change adds."""
+    hits = [_Hit(NOTE_DOC, 6, "A.8 GCF funding requested 21,128,224 USD")]
+    ev = V.build_evidence(hits, [FP172_NOTE])
+    for answer in (f"The GCF funding requested is **21,128,224 USD** [{NOTE_DOC}, p. 6].",
+                   f"It is also printed as **49,151,817 USD** [{NOTE_DOC}, p. 76].",
+                   f"It is printed as **49,151,817 USD** [{NOTE_DOC}, cover pages]."):
+        for v in V.classify(V.extract_claims(answer), ev, use_llm=False):
+            if v.status != V.SUPPORTED:
+                continue
+            assert V._conflict_before_support(
+                v.claim, ev, v.scope, v.scope, []) is None, (answer, v.reason)
+
+
+def test_every_supported_exit_of_the_deterministic_pass_runs_the_gate_first():
+    """THE PIN, structurally: not 'these fixtures pass the gate' but 'no
+    SUPPORTED verdict can be constructed in `classify_deterministic` before
+    `_conflict_before_support` has run in its own block chain'.
+
+    A fifth support branch added for a fifth kind of scope fails here on the
+    day it is written, which is the only version of this test that survives
+    the next widening.
+    """
+    import ast
+    import inspect
+    fn = next(n for n in ast.walk(ast.parse(inspect.getsource(V)))
+              if isinstance(n, ast.FunctionDef)
+              and n.name == "classify_deterministic")
+
+    def gate_call(node):
+        return any(isinstance(n, ast.Call)
+                   and getattr(n.func, "id", "") == "_conflict_before_support"
+                   for n in ast.walk(node))
+
+    def supported(node):
+        return [n for n in ast.walk(node)
+                if isinstance(n, ast.Call)
+                and getattr(n.func, "id", "") == "Verdict"
+                and len(n.args) >= 2 and getattr(n.args[1], "id", "") == "SUPPORTED"]
+
+    seen, ungated = [], []
+
+    def walk(body, gated):
+        for stmt in body:
+            subs = [b for name in ("body", "orelse", "finalbody")
+                    for b in [getattr(stmt, name, None)] if isinstance(b, list)]
+            nested = {id(n) for sub in subs for s in sub for n in supported(s)}
+            own = [n for n in supported(stmt) if id(n) not in nested]
+            for n in own:
+                seen.append(n.lineno)
+                if not gated:
+                    ungated.append(n.lineno)
+            for sub in subs:
+                walk(sub, gated)
+            if gate_call(stmt):
+                gated = True
+
+    walk(fn.body, False)
+    assert seen, "found no SUPPORTED verdict at all — the pin has gone blind"
+    assert len(seen) >= 2, f"only {len(seen)} SUPPORTED exits found; expected 2"
+    assert not ungated, (
+        f"SUPPORTED constructed at line(s) {ungated} of verify.py without "
+        f"`_conflict_before_support` having run first")
+
+
+# --- the things that must NOT have moved ------------------------------------
+
+def test_a_retrieved_page_is_never_given_the_notes_text(no_registry):
+    """NARROWNESS. The lookup fires only when the cited (doc, page) is held by
+    nothing else, so a page that WAS retrieved is judged on its own text —
+    the note line does not join it. Otherwise this stops being a scope fix and
+    becomes a content widening on every page a registry line happens to name.
+    """
+    main_line = FP172_NOTE.splitlines()[0]      # no conflict line: p.6 is
+    hits = [_Hit(NOTE_DOC, 6, "A.8 — the requested amount table is on p.7.")]
+    ev = V.build_evidence(hits, [main_line])    # published by the note only
+    assert (V.note_scope_doc(NOTE_DOC), 6) in V.note_scopes(ev), \
+        "fixture: p.6 is note-printed"
+    answer = (f"The GCF funding requested is **21,128,224 USD** "
+              f"[{NOTE_DOC}, p. 6].")
+    (v,) = V.classify_deterministic(V.extract_claims(answer), ev)
+    assert v.scope[0] == (NOTE_DOC, 6), "the cited page is the retrieved one"
+    assert not any(V.is_notes_doc(k[0]) for k in v.scope), v.scope
+    # the value is in the note line and therefore in the document's COVER
+    # scope, so this is the page-mismatch verdict the widened branch already
+    # emitted before this change — NOT 'value found in the cited evidence',
+    # which is what a note line joined onto p.6's own text would have produced
+    assert "not on the cited page" in v.reason, (v.status, v.reason)
+    assert "citation-page-mismatch" in v.flags
+
+
+def test_a_note_scope_is_not_a_document(no_registry):
+    """The pseudo-document must stay invisible to everything that asks 'which
+    document is this claim about?'. If a note scope counted as a second
+    document, `_reported_elsewhere` would stop attributing the claim (it needs
+    EXACTLY one) and the 'report both figures' licence — 23 adjudicated rows —
+    would die on every note-scoped claim."""
+    assert V.is_notes_doc(V.NOTES_DOC)
+    assert V.is_notes_doc(V.note_scope_doc(NOTE_DOC))
+    assert not V.is_notes_doc(NOTE_DOC)
+    ev = V.build_evidence([], [FP172_NOTE])
+    # ruling 5's coarse scope is the document's OWN keys and gains nothing
+    claim = V.extract_claims(f"It prints **49,151,817 USD** [{NOTE_DOC}].")[0]
+    strict, wide, bad, r5 = V._scopes(claim, ev)
+    assert not any(V.is_notes_doc(k[0]) for k in strict + wide + r5), \
+        (strict, wide, r5)
+
+
+def test_the_judge_is_shown_a_note_scope_by_name(no_registry):
+    """The snippet the adjudication prompt carries has to say WHERE the text
+    came from; '__notes__:103_…' would be the pseudo-document leaking into a
+    model prompt."""
+    ev = V.build_evidence([], [FP172_NOTE])
+    snippet = V._evidence_snippet(ev, [(V.note_scope_doc(NOTE_DOC), 76)])
+    assert "__notes__" not in snippet
+    assert f"computed notes for {NOTE_DOC}, p.76" in snippet

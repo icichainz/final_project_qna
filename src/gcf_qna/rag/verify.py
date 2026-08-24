@@ -75,6 +75,45 @@ NOTES_DOC = "__notes__"
 NOTES_KEY: EvidenceKey = (NOTES_DOC, None)
 
 
+def note_scope_doc(doc: str) -> str:
+    """The pseudo-document a note line's OWN printed pages are held under.
+
+    A computed note prints its provenance — 'GCF funding requested:
+    21,128,224 USD (p.6, A.8)', 'also as 49,151,817 USD (p.76, B.2(b))' — and
+    the answer model is told to cite the page a row prints. The app
+    (``chainlit_app._note_pages``) and the harness (``eval_answers``) both
+    treat those printed pages as legal citation targets; this namespace is how
+    the verifier holds the same fact without disturbing anything else.
+
+    Namespaced, and DERIVED rather than stored (``note_scopes``). Two things
+    it must not do, and the namespace is what stops both:
+
+    * filing the line at ``(doc, page)`` would merge note text into a
+      RETRIEVED page's evidence and hand every document-wide scan (``wide``,
+      ruling 5's ``widened``, the per-key conflict scans,
+      ``_reported_elsewhere``) a key it never had — a content widening riding
+      along with a scope fix;
+    * adding ANY key would change ``claims.evidence_keys``, which recorded
+      runs carry and the release backfill asserts it can reproduce exactly.
+
+    Under this pseudo-document the line is reachable only from a citation that
+    names exactly that document and exactly that page, which is the whole of
+    the rule.
+    """
+    return f"{NOTES_DOC}:{doc}"
+
+
+def is_notes_doc(name: str) -> bool:
+    """True for the notes pseudo-document and every per-document note scope.
+
+    Everywhere the verifier asks 'is this evidence key a real corpus
+    document?' — registry lookups, the ``_reported_elsewhere`` attribution
+    pool, the snippet label — it must answer NO for both, or a note scope
+    would be read as a document id.
+    """
+    return name == NOTES_DOC or name.startswith(NOTES_DOC + ":")
+
+
 # ---------------------------------------------------------------------------
 # numbers  (ported from scripts/build_registry_v2.py — see module docstring)
 # ---------------------------------------------------------------------------
@@ -1416,6 +1455,66 @@ _MATRIX_DOC_RE = re.compile(r"^(?P<label>[^|\n]{1,40}?)\s*->\s*(?P<doc>" + _DOC_
 _MATRIX_PAGE_RE = re.compile(r"\(p\.\s*(\d{1,3})")
 _REG_DOC_RE = re.compile(r"\[(" + _DOC_RE + r"),\s*cover pages?\]", re.I)
 
+# NOTE-PAGE SCOPE — the two regexes are ``chainlit_app._note_pages``'s, byte
+# for byte, and that is the point: the app decides which cited pages are legal
+# with these, so the verifier deciding it with anything else is how three
+# instruments end up disagreeing about one citation. A document is named on a
+# line when it appears in a bracket or a parenthesis (main registry lines end
+# '[stem, cover pages]', conflict lines name the stem in parentheses); a page
+# is printed when the line prints '(p.<n>,' or '(p.<n>)'; and a page belongs
+# to every document named on ITS OWN line — never to a document named on the
+# line above or below, which is what keeps two documents' notes in one block
+# from lending each other pages.
+_NOTE_DOC_RE = re.compile(r"[\[(](" + _DOC_RE + r")")
+_NOTE_PAGE_RE = re.compile(r"\(p\.(\d{1,3})[,)]")
+
+
+def note_page_scopes(line: str) -> List[EvidenceKey]:
+    """The note-scope keys ONE note line publishes: [(notes:doc, page), ...].
+
+    Deliberately NOT ``_MATRIX_PAGE_RE.search`` — that reads the first pointer
+    only, which is exactly why 'is printed as 21,128,224 USD (p.6, A.8); also
+    as 49,151,817 USD (p.76, B.2(b))' published p.6 and swallowed p.76, and
+    why release-3's fr-fp172-nepal lost the second half of a conflict report
+    it had been instructed to write.
+    """
+    docs = list(dict.fromkeys(_NOTE_DOC_RE.findall(line)))
+    if not docs:
+        return []
+    return [(note_scope_doc(d), int(p))
+            for p in dict.fromkeys(_NOTE_PAGE_RE.findall(line)) for d in docs]
+
+
+@functools.lru_cache(maxsize=64)
+def _note_scopes_of(text: str) -> Dict[EvidenceKey, str]:
+    """``{(notes:doc, page): the line(s) that printed it}`` for one note blob.
+
+    Cached on the blob's own text and never mutated by its callers: the
+    verifier is asked for the same turn's scopes once per claim and once per
+    conflict scan, and re-splitting the registry note each time is the kind of
+    cost that turns a deterministic pass into a slow one.
+    """
+    out: Dict[EvidenceKey, str] = {}
+    for line in (text or "").splitlines():
+        line = line.strip()
+        for key in note_page_scopes(line):
+            prev = out.get(key)
+            out[key] = f"{prev}\n{line}" if prev and line not in prev else \
+                (prev or line)
+    return out
+
+
+def note_scopes(evidence: Evidence) -> Dict[EvidenceKey, str]:
+    """The note-page scopes THIS turn publishes, derived not stored.
+
+    Read off the whole note blob at ``NOTES_KEY`` — which ``build_evidence``
+    always holds when a note reached the prompt — so nothing has to be added
+    to the evidence dict for a citation to reach a note line, and an evidence
+    set assembled by hand (the scorer's frozen snapshots, this suite's
+    fixtures) gets the same scopes from the same bytes.
+    """
+    return _note_scopes_of(evidence.get(NOTES_KEY, ""))
+
 
 def build_evidence(hits: Sequence[Any] = (), notes: Any = None) -> Evidence:
     """{(doc_id, page): text} for one turn — the only thing claims may cite.
@@ -1426,6 +1525,14 @@ def build_evidence(hits: Sequence[Any] = (), notes: Any = None) -> Evidence:
     document-level otherwise, which is the 'cover pages' scope an answer cites
     — and, whole, under the notes pseudo-document, so a note-level citation
     still resolves to something we hold.
+
+    THE KEY SET IS FROZEN. Note-page scopes (``note_scopes``) are derived
+    from the block held at ``NOTES_KEY`` when a citation asks for one; they
+    are deliberately NOT added here. Recorded runs carry this dict's keys as
+    ``claims.evidence_keys`` and the release backfill re-runs this function
+    and asserts the reconstruction reproduces them exactly, so a new key is a
+    change to a frozen artifact's contents — and a citation that resolves to a
+    line of the notes needs no key of its own to be read.
     """
     ev: Evidence = {}
 
@@ -1566,8 +1673,26 @@ def _scopes(claim: Claim, evidence: Evidence
     cited WITHOUT a page — a coarse bracket, satisfied by any key of the
     document it names, and reported as a coarse citation rather than a
     silent one.
+
+    NOTE-PAGE SCOPE. A cited (doc, page) that no held key carries resolves,
+    additionally, to the NOTE LINE that printed that page for that document —
+    and to nothing else. The computed notes publish their provenance, the
+    prompt tells the model to cite the page a row prints, and both other
+    instruments (``chainlit_app._invalid_citations``,
+    ``eval_answers.score_answer``) already count such a page as a legal
+    target; this verifier called it 'cited evidence was never retrieved' and
+    scored UNSUPPORTED, which cost release-3 the second half of two conflict
+    reports the registry note had ORDERED the answer to write
+    (conf-fp153-gcf, fr-fp172-nepal).
+
+    It is a SCOPE fix and nothing more. The note line is then read by the same
+    matchers at the same strictness as any other scope: a claim whose value
+    the line does not print still fails, and a page no note line printed for
+    that document still lands in ``bad`` exactly as before. The lookup is
+    reached only when ``(d, page)`` is absent, so a page that WAS retrieved
+    keeps being judged on the page's own text with no note text mixed in.
     """
-    docs = {k[0] for k in evidence if k[0] != NOTES_DOC}
+    docs = {k[0] for k in evidence if not is_notes_doc(k[0])}
     strict: List[EvidenceKey] = []
     wide: List[EvidenceKey] = []
     widened: List[EvidenceKey] = []
@@ -1601,6 +1726,13 @@ def _scopes(claim: Claim, evidence: Evidence
             widened += [k for k in evidence if k[0] == d]
         elif (d, c.page) in evidence:
             strict.append((d, c.page))
+        elif (note_scope_doc(d), c.page) in note_scopes(evidence):
+            # the page a computed note printed for THIS document, on a line
+            # that named THIS document. Not added to `wide`: the note's text
+            # is already inside the cited document's own doc-level key, so
+            # widening the doc-wide pool here would only duplicate it under a
+            # second name and change which key a conflict is reported on.
+            strict.append((note_scope_doc(d), c.page))
         else:
             bad.append(f"{d}, p.{c.page}")
     ded = lambda xs: list(dict.fromkeys(xs))     # noqa: E731
@@ -1608,8 +1740,23 @@ def _scopes(claim: Claim, evidence: Evidence
     return keep, ded(wide), ded(bad), [k for k in ded(widened) if k not in keep]
 
 
+def _text_at(evidence: Evidence, key: EvidenceKey) -> str:
+    """The text ONE scope key carries: a held key, or a derived note scope.
+
+    Every read of a scope goes through here. ``evidence.get(k, "")`` scattered
+    across the conflict scans is how a scope that resolves would come back
+    EMPTY on one path and populated on another — verified against a note line
+    and conflict-tested against nothing.
+    """
+    if key in evidence:
+        return evidence[key]
+    if is_notes_doc(key[0]) and key[1] is not None:
+        return note_scopes(evidence).get(key, "")
+    return ""
+
+
 def _text_of(evidence: Evidence, keys: Sequence[EvidenceKey]) -> str:
-    return "\n".join(evidence[k] for k in keys if k in evidence)
+    return "\n".join(t for t in (_text_at(evidence, k) for k in keys) if t)
 
 
 # A field label only states that field when it heads its line: template
@@ -2116,10 +2263,10 @@ def _key_conflict(claim: Claim, evidence: Evidence, keys: Sequence[EvidenceKey],
     field = claim_field(claim.text)
     for k in keys:
         settled = None
-        if registry_rulings and k[0] != NOTES_DOC:
+        if registry_rulings and not is_notes_doc(k[0]):
             settled = (lambda rival, d=k[0]:
                        registry_ruled_compatible(d, field, claim.amounts, rival))
-        got = _field_conflict(claim, evidence.get(k, ""), also, settled)
+        got = _field_conflict(claim, _text_at(evidence, k), also, settled)
         if got:
             return got, k
     return None, None
@@ -2161,7 +2308,7 @@ def _reported_elsewhere(claims: Sequence[Claim],
     slot: List[Optional[Tuple[str, Optional[str]]]] = []
     for c, (strict, wide, _bad, r5) in zip(claims, scopes):
         docs = {k[0] for k in list(strict) + list(wide) + list(r5)
-                if k[0] != NOTES_DOC}
+                if not is_notes_doc(k[0])}
         field = claim_field(c.text)
         if len(docs) != 1:
             slot.append(None)
@@ -2249,7 +2396,7 @@ def _conflict_before_support(claim: Claim, evidence: Evidence,
                     f"({line})"), tag
     if registry_conflicts:
         for d in dict.fromkeys(k[0] for k in list(strict) + list(wide)
-                               if k[0] != NOTES_DOC):
+                               if not is_notes_doc(k[0])):
             known = registry_conflict(d, claim, also_all)
             if known:
                 return known, "known-document-conflict"
@@ -2402,7 +2549,8 @@ def classify_deterministic(claims: Sequence[Claim], evidence: Evidence,
             gap_names = (_check_entities(c, held)[1]
                          if c.kind == "entity" and c.entities else [])
             backed = None
-            for d in dict.fromkeys(k[0] for k in strict + wide if k[0] != NOTES_DOC):
+            for d in dict.fromkeys(k[0] for k in strict + wide
+                                   if not is_notes_doc(k[0])):
                 backed = (registry_backed(d, c, gaps) if gaps else None) or \
                     (registry_named(d, gap_names) if gap_names else None)
                 if backed:
@@ -2667,11 +2815,15 @@ def _evidence_snippet(evidence: Evidence, keys: Sequence[EvidenceKey],
                       limit: int = 1200) -> str:
     parts = []
     for k in keys:
-        if k not in evidence:
+        text = _text_at(evidence, k)
+        if not text:
             continue
-        label = "computed notes" if k[0] == NOTES_DOC else (
-            f"{k[0]}, p.{k[1]}" if k[1] else f"{k[0]}, cover pages / registry")
-        parts.append(f"[{label}]\n{evidence[k][:limit]}")
+        label = ("computed notes" if k[0] == NOTES_DOC else
+                 f"computed notes for {k[0].split(':', 1)[1]}, p.{k[1]}"
+                 if is_notes_doc(k[0]) else
+                 f"{k[0]}, p.{k[1]}" if k[1] else
+                 f"{k[0]}, cover pages / registry")
+        parts.append(f"[{label}]\n{text[:limit]}")
     return "\n\n".join(parts) or "(no evidence held for this citation)"
 
 

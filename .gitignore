@@ -25,6 +25,7 @@ data/**
 !data/eval/
 !data/eval/release_*.jsonl
 !data/eval/answers_baseline_*.jsonl
+!data/eval/rescore_*.jsonl
 !data/eval/CHECKSUMS.sha256
 
 # The corpus fact registry is an INPUT to the verifier, not an output of it:

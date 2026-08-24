@@ -210,3 +210,12 @@ bedc943aec5c74616ae317fe7289a0635908c2d1cdb07c339637786b965b873e  data/eval/audi
 fd81ea03965d4ff22af60dfffdb33f63848e066d17ba68699a45e528adf25446  data/eval/audit_repair_release-2e-spread.json
 85d4db342e7deec5e500da464f35c204a998717f0e73e9f1e8189d07d3cb0fbb  data/eval/audit_repair_release-2f-spread.json
 171a91d867e928ecf75f5e6d0278dd970e6899977e83d70cdbc4ac73d5a6b0fb  data/eval/release_release-3.jsonl
+#
+# NOTE-PAGE SCOPE rescores: release-2 and release-3 recomputed OFFLINE (zero
+# API calls) with the verifier that resolves a cited page a computed note
+# printed. Deterministic mode, so `claims` here is not comparable to the
+# recorded production block beside it (`claims_recorded`, judge on); the
+# comparison these files exist for is against the same rescore taken on the
+# tree before the change. The frozen release files are untouched.
+951210e69cea419e507d099694d51c488d16008b440ad219506ff95469c12817  data/eval/rescore_note-scopes_release-2.jsonl
+5ed79aac15e3b64b1865518a6eeab99616295371fb6043fb5b8d5123f7c96211  data/eval/rescore_note-scopes_release-3.jsonl
