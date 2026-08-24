@@ -36,7 +36,7 @@ an unreviewed auto-commit.
 | --- | --- |
 | `deployed (UTC)` | `date -u +%Y-%m-%dT%H:%M:%SZ` at the moment the deploy finished |
 | `sha` | `git rev-parse --short=7 HEAD` — also the image tag (`fp-gcf:<sha>`) |
-| `switches` | the `PLANNER` / `VERIFY` / `VERIFY_LLM` lines of the `.env` that shipped with this deploy |
+| `switches` | the `PLANNER` / `VERIFY` / `VERIFY_LLM` / `RERANK` lines of the `.env` that shipped with this deploy |
 
 A row is a fact about the past. Never edit or reorder existing rows; a bad
 deploy is corrected by adding the row for the rollback, not by deleting the

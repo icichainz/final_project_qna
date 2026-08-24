@@ -211,7 +211,7 @@ deploy: push         ## push, rebuild the image on the server, tag it with the g
 	@echo "paste this row into docs/DEPLOYED.md (deploy does not write it: push"
 	@echo "refuses a dirty tree, so a self-editing target would trip its own guard):"
 	@printf '| %s | %s | %s |\n' "$$(date -u +%Y-%m-%dT%H:%M:%SZ)" "$(GIT_SHA)" \
-	  "$$(grep -E '^(PLANNER|VERIFY|VERIFY_LLM)=' .env 2>/dev/null | tr '\n' ' ' | sed 's/ $$//')"
+	  "$$(grep -E '^(PLANNER|VERIFY|VERIFY_LLM|RERANK)=' .env 2>/dev/null | tr '\n' ' ' | sed 's/ $$//')"
 
 rollback:            ## put an earlier image back on the remote, no rebuild (SHA=<image tag>, required)
 	@test -n "$(SHA)" || { \

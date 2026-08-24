@@ -1288,7 +1288,7 @@ _FULL_PARITY = {
 }
 _DEPLOYED = {"sha": "abc1234", "switches": {
     "CONDUCTOR": "1", "PLANNER": "1", "VERIFY": "1", "VERIFY_LLM": "1",
-    "INDEX_NAME": "default"}}
+    "RERANK": "0", "INDEX_NAME": "default"}}
 
 
 def _deployed(**over):
@@ -1385,7 +1385,7 @@ def test_deployment_fingerprint_falls_back_to_the_tracked_deploy_log(tmp_path):
     assert got["notes"] and "not performed" in got["notes"][0]
     # the switches the .env does not carry come from the code defaults
     assert set(got["switches"]) >= {"CONDUCTOR", "PLANNER", "VERIFY",
-                                    "VERIFY_LLM",
+                                    "VERIFY_LLM", "RERANK",
                                     "INDEX_NAME", "CHAT_MODEL"}
 
 

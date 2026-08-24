@@ -2360,7 +2360,7 @@ def deployment_fingerprint(path: Path = None) -> dict:
     except Exception as e:                                   # noqa: BLE001
         out["notes"].append(f"DEPLOYED.md unreadable: {type(e).__name__}: {e}")
     for key in ("CONDUCTOR", "PLANNER", "VERIFY", "VERIFY_LLM",
-                "INDEX_NAME", "CHAT_MODEL"):
+                "RERANK", "INDEX_NAME", "CHAT_MODEL"):
         out["switches"].setdefault(key, _shipped_default(key))
     return out
 
@@ -2371,6 +2371,9 @@ def _shipped_default(key: str) -> str:
             "PLANNER": "1" if config.PLANNER else "0",
             "VERIFY": "1" if config.VERIFY else "0",
             "VERIFY_LLM": "1" if config.VERIFY_LLM else "0",
+            # Read at call time by retrieve.py, not a config.py switch; the
+            # code default is OFF (measured: page-hit 94% -> 88% with it on).
+            "RERANK": os.getenv("RERANK", "0"),
             "INDEX_NAME": os.getenv("INDEX_NAME", "default"),
             "CHAT_MODEL": config.CHAT_MODEL}.get(key, "")
 
@@ -2426,6 +2429,7 @@ def _parity_level(parity: dict, deployed: dict, git_sha: str = None) -> tuple:
             "PLANNER": "1" if (parity.get("planner") or {}).get("enabled") else "0",
             "VERIFY": "1" if parity.get("verifier_mode") == "production" else "0",
             "VERIFY_LLM": "1" if parity.get("verifier_mode") == "production" else "0",
+            "RERANK": os.getenv("RERANK", "0"),
             "INDEX_NAME": os.getenv("INDEX_NAME", "default"),
             "CHAT_MODEL": config.CHAT_MODEL}
     drift = [f"{k}: deployed {deployed['switches'].get(k)!r} != harness {v!r}"
@@ -2479,7 +2483,7 @@ def run_meta(args) -> dict:
         },
         "ambient_env": {k: os.getenv(k) for k in
                         ("PLANNER", "CONDUCTOR", "VERIFY", "VERIFY_LLM",
-                         "INDEX_NAME", "CHAT_MODEL")},
+                         "RERANK", "INDEX_NAME", "CHAT_MODEL")},
     }
 
 
