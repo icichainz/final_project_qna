@@ -1,17 +1,56 @@
 #!/usr/bin/env python3
-"""What the constrained repair pass does to a recorded run — A/B over IDENTICAL
-answers, so the only thing that differs between the arms is repair itself.
+"""What the constrained repair pass did to a recorded run — A/B over IDENTICAL
+answers, so the only thing that differed between the arms was repair itself.
 
-    # 1. replay: one judge pass, one repair call, three scorings
-    venv/bin/python scripts/audit_repair.py replay \
-        --release data/eval/release_release-2.jsonl \
-        --out-prefix data/eval/replay
+HALF OF THIS INSTRUMENT IS RETIRED (eac4c94)
+--------------------------------------------
+eac4c94 abandoned automatic repair adoption and deleted ``verify.repair``.
+This file had two halves and they part company there:
 
-    # 2. audit: pure file comparison, zero API calls
+  RECORDING  (``replay``)  made LIVE repair calls. It cannot run: there is no
+                           repair pass to call. The subcommand still exists and
+                           still parses its arguments, so an old invocation is
+                           answered with the reason rather than a NameError,
+                           and then it refuses.
+
+  READING    (``audit``)   opens recorded arm files and compares them. It reads
+                           JSONL and asks ``verify`` only for its DETECTOR
+                           (``extract_claims``, ``parse_citations``, ``amounts``,
+                           ``norm_text``, ``split_sentences``, ``_check_entities``,
+                           ``_strip_citations``, ``amount_matches``, ``SUPPORTED``),
+                           all of which eac4c94 kept. It works unchanged, and it
+                           is why this file is still here: the recorded replay
+                           and audit artifacts under ``data/eval`` are permanent
+                           measurement history, their checksums are pinned, and
+                           an instrument that can no longer READ them would make
+                           that history unreadable rather than merely finished.
+
+Everything the recording half needed and nothing else uses — the canned and
+metered clients, the call-role router, the ``no_carry_cleared`` context manager,
+``repair_allowed_docs`` and ``_pre_gate`` — is deleted rather than left to fail
+at its first call. The ROW CONSTRUCTORS below (``claim_rows``, ``_claims_block``,
+``_grounded_flags``, ``_arm_row``, ``_skipped_row``, ``_sample_entry``,
+``final_answer``, ``_rescore_answer``) are deliberately KEPT with nothing
+calling them: they are the written schema of the arm files ``audit`` reads, two
+of them are pinned against ``eval_answers``'s own scorers by
+``tests/test_audit_repair.py``, and a recorded artifact whose format exists only
+in the artifact is not a record. Read them as documentation, not as a pathway.
+
+The recording half's code is at eac4c94 and before; ``git show eac4c94:scripts/
+audit_repair.py`` is the last version that could produce a new arm file.
+
+    # audit: pure file comparison, zero API calls — WORKS
     venv/bin/python scripts/audit_repair.py \
         --off data/eval/replay_repair-off.jsonl \
         --on  data/eval/replay_repair-on-carryoff.jsonl \
         --carry-on data/eval/replay_repair-on.jsonl
+
+    # replay: RETIRED — refuses with a message naming eac4c94
+    venv/bin/python scripts/audit_repair.py replay --release ... --out-prefix ...
+
+WHAT FOLLOWS DESCRIBES THE RECORDED RUNS IN THE PAST TENSE. It is the design of
+the measurement the artifacts hold, kept because reading them requires knowing
+how they were made.
 
 WHY THE ARMS ARE REPLAYED AND NOT REGENERATED
 ---------------------------------------------
@@ -158,7 +197,6 @@ import json
 import os
 import re
 import sys
-import time
 from collections import Counter, defaultdict
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Sequence, Tuple
@@ -167,46 +205,19 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
 sys.path.insert(0, str(ROOT / "scripts"))
 
-# Pinned BEFORE the package is imported. The replay must not depend on the
-# operator's .env: repair is a FLAG here and is never read from the
-# environment, and the index is never loaded (the record carries hit text).
+# Pinned BEFORE the package is imported. The audit must not depend on the
+# operator's .env, and the index is never loaded (the record carries hit text).
 os.environ["PRELOAD"] = "0"
 os.environ.setdefault("INDEX_NAME", "default")
 
 
-def _load_api_key() -> Optional[str]:
-    """Take the API key from an env file — and NOTHING else from it.
+# RETIRED AT eac4c94: `_load_api_key`. It took OPENAI_API_KEY / OPENAI_BASE_URL
+# out of an env file — and nothing else from it — so `replay` could make judge
+# and repair calls without inheriting production's switches. The audit half
+# makes zero API calls (tests/test_audit_repair.py::test_zero_api and
+# ::test_zero_api_on_the_new_paths test that rather than asserting it), so this
+# file no longer reads .env at import at all.
 
-    F11's rule, applied: an eval must not inherit production's switches from
-    the file that rsyncs to the server, and the natural way to get a repair-ON
-    run must not be 'edit .env'. Repair is a FLAG here (the arms are named on
-    the command line); only the credentials are shared. ``GCF_QNA_ENV``
-    overrides the path, ``data/eval/eval.env`` is preferred when present, and
-    ``.env`` is the last resort — with every key but the two below ignored.
-    """
-    shared = ("OPENAI_API_KEY", "OPENAI_BASE_URL")
-    if os.getenv("OPENAI_API_KEY"):
-        return os.environ["OPENAI_API_KEY"]
-    candidates = [Path(os.environ["GCF_QNA_ENV"])] if os.getenv("GCF_QNA_ENV") \
-        else [ROOT / "data" / "eval" / "eval.env", ROOT / ".env"]
-    for path in candidates:
-        if not path.exists():
-            continue
-        for line in path.read_text(encoding="utf-8").splitlines():
-            line = line.strip()
-            if not line or line.startswith("#") or "=" not in line:
-                continue
-            key, _, value = line.partition("=")
-            if key.strip() in shared and not os.getenv(key.strip()):
-                os.environ[key.strip()] = value.strip().strip("'\"")
-        if os.getenv("OPENAI_API_KEY"):
-            return os.environ["OPENAI_API_KEY"]
-    return None
-
-
-_load_api_key()
-
-from gcf_qna import config                                      # noqa: E402
 from gcf_qna.rag import verify                                  # noqa: E402
 from gcf_qna.rag.retrieve import Hit                            # noqa: E402
 
@@ -344,142 +355,48 @@ def verifiable(record: dict) -> bool:
 
 
 # ---------------------------------------------------------------------------
-# clients: metering, capture, canned replay
+# RETIRED AT eac4c94 — the recording half
+#
+# Deleted here, in full, rather than left to fail at their first call:
+#
+#   _Msg _Choice _CannedResponse   the OpenAI response shape verify._complete
+#                                  needed from a canned reply
+#   CannedClient                   replayed the captured repair completion into
+#                                  the carry-off scoring, so both scorings
+#                                  scored the SAME rewrite
+#   MeteredClient                  priced every call and captured the repair text
+#   _call_role                     routed a request to judge|repair by its system
+#                                  prompt — and verify.REPAIR_PROMPT is gone
+#   no_carry_cleared               patched verify._carry_cleared to the identity
+#                                  for the carry-off pass — and it is gone
+#   repair_allowed_docs            rebuilt the `allowed` set repair() showed the
+#                                  model, so the audit could tell a citation
+#                                  moved onto an unshown document from an
+#                                  invented one
+#   _pre_gate                      re-ran repair's own adoption gates
+#                                  (_strip_preamble, _introduced_sources,
+#                                  _supported_required) on the PROPOSED rewrite,
+#                                  so a rewrite thrown away for one reason still
+#                                  reported the inventions it also carried
+#
+# `_pre_gate_probe` — which READS the `repair_pre_gate` block those calls wrote
+# into the recorded arms — is NOT retired and lives with the rest of the audit.
+# Producer and reader look alike and are not alike: one needed repair to exist,
+# the other needs only the file.
+#
+# git show eac4c94:scripts/audit_repair.py
 # ---------------------------------------------------------------------------
-class _Msg:
-    def __init__(self, content):
-        self.content = content
-
-
-class _Choice:
-    def __init__(self, content):
-        self.message = _Msg(content)
-
-
-class _CannedResponse:
-    """The minimum an OpenAI response needs to satisfy verify._complete."""
-
-    def __init__(self, content, model="canned-replay"):
-        self.choices = [_Choice(content)]
-        self.usage = None
-        self.model = model
-
-
-class CannedClient:
-    """Returns a fixed completion. Zero network. Counts its calls.
-
-    Used for the carry-off scoring: the repaired TEXT must be the one the
-    model actually produced on the carry-on pass, or the two scorings are
-    scoring two different rewrites and the comparison means nothing.
-    """
-
-    def __init__(self, content: Optional[str]):
-        self._content = content
-        self.calls = 0
-        self.chat = self
-
-    @property
-    def completions(self):
-        return self
-
-    def create(self, **kwargs):
-        self.calls += 1
-        if self._content is None:
-            raise AssertionError(
-                "canned client called with nothing recorded to replay — the "
-                "carry-off pass took a branch the carry-on pass did not")
-        return _CannedResponse(self._content)
-
-
-class MeteredClient:
-    """Wraps a real client; prices every call and captures the repair text."""
-
-    def __init__(self, inner, model: str):
-        self._inner = inner
-        self._model = model
-        self.calls: List[dict] = []
-        self.repair_texts: List[str] = []
-        self.chat = self
-
-    @property
-    def completions(self):
-        return self
-
-    def __getattr__(self, name):                       # pragma: no cover
-        return getattr(self._inner, name)
-
-    def create(self, **kwargs):
-        role = _call_role(kwargs)
-        t0 = time.perf_counter()
-        resp = self._inner.chat.completions.create(**kwargs)
-        dt = time.perf_counter() - t0
-        u = getattr(resp, "usage", None)
-        pt = int(getattr(u, "prompt_tokens", 0) or 0)
-        ct = int(getattr(u, "completion_tokens", 0) or 0)
-        self.calls.append({
-            "role": role, "latency_s": round(dt, 3), "model": self._model,
-            "snapshot": getattr(resp, "model", None) or self._model,
-            "prompt_tokens": pt, "completion_tokens": ct,
-            "total_tokens": int(getattr(u, "total_tokens", 0) or 0) or (pt + ct)})
-        if role == "repair":
-            try:
-                self.repair_texts.append(resp.choices[0].message.content or "")
-            except Exception:                          # pragma: no cover
-                self.repair_texts.append("")
-        return resp
-
-
-def _call_role(kwargs: dict) -> str:
-    """judge | repair | other, from the system prompt the call carries."""
-    system = ""
-    for m in kwargs.get("messages") or []:
-        if m.get("role") == "system":
-            system = m.get("content") or ""
-            break
-    if system == verify.ADJUDICATE_PROMPT:
-        return "judge"
-    if system == verify.REPAIR_PROMPT:
-        return "repair"
-    return "verify-other"
-
-
-class no_carry_cleared:
-    """Run ``verify.repair`` with the judge-carry disabled, in-process only.
-
-    ``_carry_cleared`` is replaced by the identity for the duration and
-    restored — and asserted restored — on exit. Nothing under ``src/`` is
-    written; the plan gates on the number this produces precisely because a
-    component may not certify itself with its own earlier opinion.
-    """
-
-    def __enter__(self):
-        self._saved = verify._carry_cleared
-        verify._carry_cleared = lambda new_verdicts, old_verdicts: list(new_verdicts)
-        return self
-
-    def __exit__(self, *exc):
-        verify._carry_cleared = self._saved
-        assert verify._carry_cleared is self._saved
-        return False
 
 
 # ---------------------------------------------------------------------------
-# replay
+# the recorded arm-file schema
+#
+# Nothing calls these now that `replay` is retired (eac4c94). They stay because
+# they ARE the format: each one names, in code, a field the audit half below
+# reads back out of the recorded arms, and `_grounded_flags` / `_claims_block`
+# are pinned against `eval_answers`'s own scorers by tests/test_audit_repair.py
+# so the instrument and the release harness cannot drift apart in the record.
 # ---------------------------------------------------------------------------
-def repair_allowed_docs(raw_answer: str, failed, evidence) -> List[str]:
-    """The ``allowed`` set ``verify.repair`` builds, recomputed identically.
-
-    It is local to ``repair()``, and the audit needs it: a citation moved onto
-    a document the repair pass was never SHOWN passes ``_introduced_sources``'s
-    first two tests and is still an invented attribution.
-    """
-    shown: List[str] = []
-    for v in failed:
-        strict, wide, _, _r5 = verify._scopes(v.claim, evidence)
-        keys = verify._judge_keys(v.claim, evidence, strict, wide)
-        shown += [k[0] for k in keys if k[0] != verify.NOTES_DOC]
-    return list(dict.fromkeys(
-        shown + [d for d, _ in verify.cited_sources(raw_answer)]))
 
 
 def claim_rows(verdicts, evidence, case_id: str) -> List[dict]:
@@ -704,201 +621,30 @@ def _sample_entry(index: int, text: Optional[str], first_text: Optional[str],
 def replay(release: Path, out_prefix: Path, force: bool = False,
            client: Any = None, repair_samples: int = 1,
            limit: Optional[int] = None, verbose: bool = False) -> dict:
-    """Replay one recorded run through the verifier twice, three scorings.
+    """RETIRED AT eac4c94. Recording a new arm file needs a repair pass.
 
-    ``repair_samples`` is the reproducibility instrument: N repair calls per
-    failing case on IDENTICAL input (same answer, same verdict OBJECTS, same
-    evidence), each one fully scored and recorded. N=1 is the plain A/B; N>1
-    is what lets ``audit`` report the identical-completion rate, the
-    adoption-decision agreement rate and the spread those flips put on every
-    gated metric. It costs one extra repair call per failing case per extra
-    sample and nothing else — the judge pass is not re-run.
+    This drove the whole A/B: it rebuilt each recorded turn's evidence, ran ONE
+    judge pass shared by every arm, made ``repair_samples`` LIVE repair calls on
+    byte-identical input, and scored the result three ways (off / carry-on /
+    carry-off) into ``{out_prefix}_repair-{arm}.jsonl``. Every one of those
+    steps ran through ``verify.repair``, which eac4c94 deleted, so there is no
+    subset of this that still measures anything.
 
-    Returns the run summary; writes ``<prefix>_repair-off.jsonl``,
-    ``<prefix>_repair-on.jsonl``, ``<prefix>_repair-on-carryoff.jsonl`` and
-    ``<prefix>_repair-calls.jsonl``.
+    It refuses instead of being deleted because a stale invocation — a Makefile
+    target, a shell history line, a note in a wave document — should be answered
+    with the decision rather than with an AttributeError from three frames down.
+
+    The RECORDS it wrote are permanent: 12+ replay and audit artifacts under
+    ``data/eval`` with pinned checksums, readable by ``audit`` below, which is
+    the half of this file that still runs.
     """
-    rows = read_jsonl(release)
-    if limit:
-        rows = rows[:limit]
-    blob = _sha256_file(VERIFY_PY)
-    src_sha = _sha256_file(Path(release))
-    if client is None:
-        client = verify._client()
-    if client is None:
-        raise SystemExit(
-            "no OPENAI_API_KEY: the production arm calls the judge and the "
-            "repair pass. Pass a client in-process for tests.")
-    model = getattr(config, "CHAT_MODEL", "?")
-
-    out = {a: [] for a in ARMS}
-    call_rows: List[dict] = []
-    summary = defaultdict(int)
-    for i, rec in enumerate(rows, 1):
-        cid = rec.get("id")
-        if not verifiable(rec):
-            why = ("errored" if rec.get("error") else
-                   "chat-mode turn: production answers from history"
-                   if rec.get("chat") else
-                   "guard-answer: production returns before verification")
-            for a in ARMS:
-                out[a].append(_skipped_row(rec, a, why))
-            summary["skipped"] += 1
-            continue
-
-        raw = rec.get("raw_answer") or rec.get("answer") or ""
-        ev = evidence_for(rec)
-        metered = MeteredClient(client, model)
-
-        # --- the shared pass: extract, deterministic, ONE judge call --------
-        claims = verify.extract_claims(raw)
-        det = verify.classify_deterministic(claims, ev)
-        verdicts = verify.adjudicate(det, ev, client=metered)
-        judge_calls = list(metered.calls)
-        failed = [v for v in verdicts if v.failed]
-
-        # --- arm OFF: exactly verify_answer(..., allow_repair=False) --------
-        if not failed:
-            off_res = verify.RepairResult(raw, "verified", verdicts, raw)
-        else:
-            off_res = verify.RepairResult(
-                raw, verify._status_for(verdicts, True, False), verdicts, raw,
-                notes=["repair disabled"])
-
-        # --- arm ON: exactly verify_answer(..., allow_repair=True) ----------
-        allowed = repair_allowed_docs(raw, failed, ev) if failed else []
-        on_res = verify.repair(raw, verdicts, ev, client=metered)
-        repair_calls = [c for c in metered.calls if c["role"] == "repair"]
-        repair_text = metered.repair_texts[0] if metered.repair_texts else None
-
-        # --- arm ON, carry-off: same TEXT, no judge carry -------------------
-        canned = CannedClient(repair_text)
-        with no_carry_cleared():
-            co_res = verify.repair(raw, verdicts, ev, client=canned)
-        assert canned.calls == len(repair_calls), (
-            f"{cid}: carry-off pass made {canned.calls} repair call(s), "
-            f"carry-on made {len(repair_calls)} — the two scorings did not "
-            f"score the same rewrite")
-
-        # --- reproducibility: N samples of repair on IDENTICAL input -------
-        # Sample 1 IS the ON arm's call: the same answer, the same verdict
-        # OBJECTS, the same evidence, the same prompt. Samples 2..N ask the
-        # same question again, so the only thing that varies across them is
-        # the model's own sampling. Each sample is scored the way an arm row
-        # is scored, because 'the adoption decision flipped' and 'the gated
-        # metric moved' are two different questions and a record that carries
-        # only the first cannot answer the second.
-        samples = []
-        if failed:
-            samples.append(_sample_entry(1, repair_text, repair_text, on_res,
-                                         rec, ev, metered.calls, cid))
-            for k in range(2, max(1, int(repair_samples or 1)) + 1):
-                mk = MeteredClient(client, model)
-                rk = verify.repair(raw, verdicts, ev, client=mk)
-                tk = mk.repair_texts[0] if mk.repair_texts else None
-                samples.append(_sample_entry(k, tk, repair_text, rk, rec, ev,
-                                             mk.calls, cid))
-                call_rows += [dict(c, case=cid, sample=k) for c in mk.calls]
-        second = samples[1] if len(samples) > 1 else None
-
-        call_rows += [dict(c, case=cid, sample=1) for c in metered.calls]
-        pre_gate = _pre_gate(raw, repair_text, verdicts, failed, ev, allowed, cid)
-        base_replay = {
-            "replayed": True, "source_record": str(release),
-            "source_sha256": src_sha, "verify_blob_sha": blob,
-            "record_verify_blob_sha": rec.get("verify_blob_sha"),
-            "judge_calls": len(judge_calls), "repair_calls": len(repair_calls),
-            "repair_text_sha256": _sha256_text(repair_text or "")
-                                  if repair_text is not None else None,
-            "repair_allowed_docs": allowed,
-            "repair_samples": samples or None,
-            # Every sample is drawn with `_carry_cleared` LIVE, because sample
-            # 1 is the ON arm's own call. The audit compares like with like
-            # only if it takes its sample-1 baseline from the carry-ON arm —
-            # recorded here so it cannot be guessed wrong.
-            "repair_samples_carry": "on" if samples else None,
-            "repair_second_sample": second,
-            "repair_pre_gate": pre_gate,
-        }
-        metas = {
-            "off": {"usage": _usage(judge_calls),
-                    "replay": dict(base_replay, arm="off", carry_cleared=None,
-                                   api_calls=len(judge_calls))},
-            "on": {"usage": _usage(judge_calls + repair_calls),
-                   "replay": dict(base_replay, arm="on", carry_cleared=True,
-                                  api_calls=len(judge_calls) + len(repair_calls))},
-            "on-carryoff": {"usage": _usage(judge_calls + repair_calls),
-                            "replay": dict(base_replay, arm="on-carryoff",
-                                           carry_cleared=False,
-                                           api_calls=len(judge_calls) + len(repair_calls))},
-        }
-        for arm, res in (("off", off_res), ("on", on_res), ("on-carryoff", co_res)):
-            out[arm].append(_arm_row(rec, arm, res, ev, metas[arm]))
-
-        summary["cases"] += 1
-        summary["with_failures"] += bool(failed)
-        summary["repair_attempted"] += bool(repair_calls)
-        summary["adopted_on"] += bool(on_res.repaired)
-        summary["adopted_carryoff"] += bool(co_res.repaired)
-        summary["rejected_on"] += bool(on_res.repair_rejected)
-        summary["rejected_carryoff"] += bool(co_res.repair_rejected)
-        if bool(on_res.repaired) != bool(co_res.repaired):
-            summary["carry_disagreements"] += 1
-        if len(samples) > 1:
-            summary["cases_sampled"] += 1
-            summary["identical_completions"] += all(
-                s["identical_text"] for s in samples[1:])
-            summary["adoption_agreements"] += len(
-                {s["adopted"] for s in samples}) == 1
-        if verbose:
-            print(f"[{i}/{len(rows)}] {cid:26} failed={len(failed):2d} "
-                  f"repair={'adopted' if on_res.repaired else ('rejected' if on_res.repair_rejected else 'n/a')}"
-                  f" carryoff={'adopted' if co_res.repaired else ('rejected' if co_res.repair_rejected else 'n/a')}",
-                  flush=True)
-
-    paths = {}
-    for arm in ARMS:
-        paths[arm] = str(write_jsonl(Path(f"{out_prefix}_repair-{arm}.jsonl"),
-                                     out[arm], force=force))
-    paths["calls"] = str(write_jsonl(Path(f"{out_prefix}_repair-calls.jsonl"),
-                                     call_rows, force=force))
-    return {"summary": dict(summary), "paths": paths,
-            "verify_blob_sha": blob, "source_sha256": src_sha,
-            "cost": _cost(call_rows)}
-
-
-def _pre_gate(raw_answer: str, repair_text: Optional[str], verdicts,
-              failed, evidence, allowed: Sequence[str], case_id: str):
-    """What the repair model PROPOSED, before any adoption gate ran.
-
-    The plan says to probe the invented-source gate adversarially rather than
-    trusting its own post-check. The only way to do that offline is to keep
-    the model's proposal even when it was thrown away: a rewrite rejected for
-    'one claim still fails' may ALSO have invented a citation, and counting
-    only the adopted rewrites would report zero inventions from a pass that
-    proposed several.
-    """
-    if not repair_text:
-        return None
-    text = verify._strip_preamble(repair_text)
-    introduced = verify._introduced_sources(text, evidence, allowed)
-    new_verdicts = verify.classify_deterministic(verify.extract_claims(text),
-                                                 evidence)
-    new_failed = [v for v in new_verdicts if v.failed]
-    would_adopt = (not introduced and not new_failed
-                   and not (verify._supported_required(verdicts)
-                            and not verify._supported_required(new_verdicts)))
-    return {
-        "text": text,
-        "introduced_sources": introduced,
-        "failures_before": len(failed),
-        "failures_after": len(new_failed),
-        "failure_reasons_after": [v.reason[:120] for v in new_failed[:6]],
-        "supported_required_before": verify._supported_required(verdicts),
-        "supported_required_after": verify._supported_required(new_verdicts),
-        "would_adopt_without_carry": bool(would_adopt),
-        "claim_rows": claim_rows(new_verdicts, evidence, case_id),
-    }
+    raise SystemExit(
+        "audit_repair.py replay is RETIRED (eac4c94: the repair pass was "
+        "removed; verify is a pure detector and verify.repair no longer "
+        "exists, so there is nothing left to A/B).\n"
+        "  Recorded arms remain readable:  audit_repair.py --off ... --on ...\n"
+        "  The recording code is at eac4c94: "
+        "git show eac4c94:scripts/audit_repair.py")
 
 
 def _usage(calls: Sequence[dict]) -> dict:
@@ -2329,9 +2075,17 @@ def _print_gates(rep: dict) -> None:
 # CLI
 # ---------------------------------------------------------------------------
 def _replay_parser():
+    """RETIRED AT eac4c94 — kept so a stale invocation is parsed and answered.
+
+    The arguments are unchanged on purpose: an old command line still parses,
+    and `replay` then refuses with the decision instead of an argparse error
+    that reads like a typo.
+    """
     ap = argparse.ArgumentParser(prog="audit_repair.py replay",
-                                 description="replay a recorded run through "
-                                             "the verifier with and without repair")
+                                 description="RETIRED (eac4c94): replayed a "
+                                             "recorded run through the verifier "
+                                             "with and without repair. There is "
+                                             "no repair pass to run.")
     ap.add_argument("--release", type=Path, required=True)
     ap.add_argument("--out-prefix", type=Path, required=True)
     ap.add_argument("--force", action="store_true")

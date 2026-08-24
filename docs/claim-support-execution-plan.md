@@ -395,6 +395,34 @@ Required, on the **carry-off** numbers: groundedness `n/d >= 95%` **AND** citati
 > SUGGESTION surfaced beside the answer (never substituting; the one genuine
 > correction found would have reached a human), or delete the adoption path
 > and keep verify as the pure detector three waves of work have made good.
+>
+> **IMPLEMENTED (eac4c94, `Repair verdict: abandon automatic adoption, kill the
+> Wave 5 canary`).** The second option was taken: the adoption path is deleted,
+> not merely switched off. `verify.repair` and its gates —
+> `_carry_cleared`, `_substance_floor`, `_language_flip`, `_introduced_sources`,
+> `REPAIR_PROMPT` — are gone; `verify_answer` has no `allow_repair`, its
+> `.answer` is always the answer it was given, `.repaired` is always False, and
+> no status is ever `repaired`. The detector is untouched: extraction,
+> deterministic classification, the judge, the conflict gate, cautions and
+> sources all stand, and the scorer's five arms are unchanged. `VERIFY_REPAIR=0`
+> is no longer a flag holding a pathway shut — there is no pathway.
+>
+> Repair's code lives at eac4c94 and before (`git show eac4c94:src/gcf_qna/rag/
+> verify.py`), and its MEASUREMENT is permanent and unchanged: the recorded
+> replay and audit artifacts for runs 2–2f stay in `data/eval` with their
+> checksums, and `audit_repair.py`'s reading half still reads them — only its
+> recording half, which needed a live repair pass, is retired. The blind attack
+> suite that tested the adoption gates (`tests/test_repair_gate_attacks.py`,
+> 36 tests at e639915) keeps the sixteen that exercise the detector and retires
+> the twenty that could only exercise an adoption decision; each retirement is
+> named in that file's header with the commit the full suite runs green at.
+>
+> The SUGGESTION-MODE alternative is not implemented and is not closed: a repair
+> proposed BESIDE the answer, never substituted for it, puts the one genuine
+> correction 2e/2f found in front of a human without giving a gate the authority
+> to delete cited content. It stays documented future work, and it would be a
+> new design pass rather than a flag flip — nothing in this tree is waiting to
+> be re-enabled.
 
 
 `VERIFY_REPAIR` is a process-wide env flag (`config.py:56`, consumed `chainlit_app.py:785`), so "owner-controlled sessions" requires a second deployment. **It cannot be a second service in the production compose project:** `docker-compose.yaml` hardcodes `container_name: fp-gcf`, `image: fp-gcf:latest` and `labels: caddy: fp-gcf.ssa.tg`, publishes no host ports (caddy routes by label, so "separate port" is meaningless), and bringing a sibling up recreates `fp-gcf` — "production untouched" would be false — while both would bind-mount the same `./data`, so canary turns would write into the production `app.db` and `public/app_files`.

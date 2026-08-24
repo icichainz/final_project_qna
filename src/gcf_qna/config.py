@@ -40,20 +40,24 @@ CONDUCTOR = os.getenv("CONDUCTOR", "1") == "1"
 # conductor. Independent switch, DEFAULT OFF for this deploy — the conductor
 # path is the measured one; flip after the eval run.
 PLANNER = os.getenv("PLANNER", "0") == "1"
-# claim-level verification of the finished answer against the pages it cites,
-# plus at most one constrained repair pass (plan step 5, gcf_qna.rag.verify).
-# Master switch, DEFAULT OFF for this deploy: it adds up to two LLM calls per
-# turn and rewrites answers, so it ships behind the same discipline as PLANNER.
+# claim-level verification of the finished answer against the pages it cites
+# (plan step 5, gcf_qna.rag.verify). Master switch, DEFAULT OFF for this
+# deploy: it adds an LLM call per turn, so it ships behind the same discipline
+# as PLANNER. The pass DETECTS only — it reports what the cited pages do not
+# support and never edits the answer.
 VERIFY = os.getenv("VERIFY", "0") == "1"
-# The two optional LLM calls inside that pass, consulted ONLY when VERIFY=1
-# and INDEPENDENT of each other: the batched judge over claims the
-# deterministic checks could not confirm (VERIFY_LLM), and the constrained
-# repair rewrite (VERIFY_REPAIR). VERIFY_LLM=0 does not disable the repair —
-# it leaves the repair working from deterministic verdicts, which is a
-# supported deployment. VERIFY_REPAIR=0 is what guarantees the answer text is
-# never touched; both off makes the whole pass pure python.
+# The one optional LLM call inside that pass, consulted ONLY when VERIFY=1: the
+# batched judge over claims the deterministic checks could not confirm.
+# VERIFY_LLM=0 leaves the pass pure python — fewer claims are adjudicated, none
+# of the reporting changes.
 VERIFY_LLM = os.getenv("VERIFY_LLM", "1") == "1"
-VERIFY_REPAIR = os.getenv("VERIFY_REPAIR", "1") == "1"
+# There is deliberately no VERIFY_REPAIR here. The repair pass — rewrite the
+# answer, adopt the rewrite if it re-verifies clean — was removed in eac4c94:
+# adopting a rewrite deletes the evidence of what the model got wrong, and the
+# measured reproducibility of the adopt decision never justified that (see
+# docs/claim-support-rollout-plan.md). A switch that can only ever be 0 is a
+# trap: it reads as a live capability one env edit away, and the code behind it
+# is gone. VERIFY_REPAIR left in an .env is inert — nothing reads it.
 
 # --- chat (OpenAI-compatible endpoint) ---
 CHAT_MODEL = os.getenv("CHAT_MODEL", "gpt-5.2")

@@ -36,11 +36,17 @@ an unreviewed auto-commit.
 | --- | --- |
 | `deployed (UTC)` | `date -u +%Y-%m-%dT%H:%M:%SZ` at the moment the deploy finished |
 | `sha` | `git rev-parse --short=7 HEAD` — also the image tag (`fp-gcf:<sha>`) |
-| `switches` | the `PLANNER` / `VERIFY` / `VERIFY_LLM` / `VERIFY_REPAIR` lines of the `.env` that shipped with this deploy |
+| `switches` | the `PLANNER` / `VERIFY` / `VERIFY_LLM` lines of the `.env` that shipped with this deploy |
 
 A row is a fact about the past. Never edit or reorder existing rows; a bad
 deploy is corrected by adding the row for the rollback, not by deleting the
 row for the release that broke.
+
+From the next deploy on, the switches column no longer carries `VERIFY_REPAIR`:
+`eac4c94` removed the repair code path, so nothing reads that variable and a
+`VERIFY_REPAIR=0` still sitting in a deployed `.env` records a switch that no
+longer exists — the rows above keep it because it was true when they were
+written.
 
 ## Log
 

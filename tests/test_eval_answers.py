@@ -1069,16 +1069,15 @@ class FakeClient:
 def _args(**kw):
     base = dict(answers=True, release=False, history_mode="isolated",
                 temperature=0.0, seed=7, k=10, verifier_mode="deterministic",
-                verifier_repair=False, production_planner=False, conductor=False)
+                production_planner=False, conductor=False)
     base.update(kw)
     return types.SimpleNamespace(**base)
 
 
 class FakePipe:
-    def __init__(self, out, verifier_mode="deterministic", verifier_repair=False):
+    def __init__(self, out, verifier_mode="deterministic"):
         self.out = out
         self.verifier_mode = verifier_mode
-        self.verifier_repair = verifier_repair
 
     def run(self, question, turns=()):
         self.seen = (question, list(turns))
@@ -1239,11 +1238,11 @@ _FULL_PARITY = {
     "abstain_keeps_original": True, "guard_verification_skipped": True,
     "answer_history_isolation": True, "planner": {"enabled": True},
     "conductor": {"enabled": True}, "verifier_mode": "production",
-    "verifier_repair": False, "usage_accounts_judge_and_repair": True,
+    "usage_accounts_judge_and_repair": True,
 }
 _DEPLOYED = {"sha": "abc1234", "switches": {
     "CONDUCTOR": "1", "PLANNER": "1", "VERIFY": "1", "VERIFY_LLM": "1",
-    "VERIFY_REPAIR": "0", "INDEX_NAME": "default"}}
+    "INDEX_NAME": "default"}}
 
 
 def _deployed(**over):
@@ -1340,7 +1339,7 @@ def test_deployment_fingerprint_falls_back_to_the_tracked_deploy_log(tmp_path):
     assert got["notes"] and "not performed" in got["notes"][0]
     # the switches the .env does not carry come from the code defaults
     assert set(got["switches"]) >= {"CONDUCTOR", "PLANNER", "VERIFY",
-                                    "VERIFY_LLM", "VERIFY_REPAIR",
+                                    "VERIFY_LLM",
                                     "INDEX_NAME", "CHAT_MODEL"}
 
 
@@ -1380,11 +1379,16 @@ def test_a_verifier_returning_nothing_falls_back_to_the_original():
     assert ev.final_answer("ORIGINAL", empty) == ("ORIGINAL", "model")
     none = types.SimpleNamespace(status="partial", answer=None)
     assert ev.final_answer("ORIGINAL", none) == ("ORIGINAL", "model")
+    no_answer_attr = types.SimpleNamespace(status="partial")
+    assert ev.final_answer("ORIGINAL", no_answer_attr) == ("ORIGINAL", "model")
 
 
-def test_a_repaired_answer_is_adopted_and_labelled():
-    res = types.SimpleNamespace(status="repaired", answer="FIXED")
-    assert ev.final_answer("ORIGINAL", res) == ("FIXED", "verifier")
+def test_a_verifier_result_can_never_replace_the_answer():
+    """The repair pathway is gone: even a result carrying a different answer
+    text must not reach the display (pure detector)."""
+    for status in ("verified", "partial", "unverified-llm"):
+        res = types.SimpleNamespace(status=status, answer="FIXED")
+        assert ev.final_answer("ORIGINAL", res) == ("ORIGINAL", "model")
 
 
 # ---------------------------------------------------- gap 4: guard answers ---
@@ -1574,29 +1578,34 @@ def _fake_res(**kw):
 def test_production_mode_calls_verify_answer_the_way_the_app_does(monkeypatch):
     seen = {}
 
-    def fake(answer, evidence, client=None, use_llm=True, allow_repair=True, **kw):
-        seen.update(answer=answer, client=client, use_llm=use_llm,
-                    allow_repair=allow_repair)
+    def fake(answer, evidence, client=None, use_llm=True, **kw):
+        seen.update(answer=answer, client=client, use_llm=use_llm, kw=kw)
         return _fake_res(answer=answer)
 
     monkeypatch.setattr(ev.verify, "verify_answer", fake)
     ev.verify_production("an answer", [], [], client="CLIENT")
-    assert seen["use_llm"] is True and seen["allow_repair"] is False
+    assert seen["use_llm"] is True
+    assert "allow_repair" not in seen["kw"], \
+        "the repair pathway was removed; nothing may ask for it"
     assert seen["client"] == "CLIENT"
 
 
-def test_repair_is_a_flag_and_never_an_environment_read(monkeypatch):
+def test_there_is_no_repair_parameter_left(monkeypatch):
+    """verify_production cannot ask for a rewrite: it forwards no repair
+    argument whatever the ambient environment says, and the parameter itself
+    is gone rather than ignored."""
     seen = {}
-    monkeypatch.setattr(ev.verify, "verify_answer",
-                        lambda a, e, client=None, use_llm=True,
-                        allow_repair=True, **kw:
-                        (seen.update(allow_repair=allow_repair), _fake_res())[1])
+
+    def fake(answer, evidence, client=None, use_llm=True, **kw):
+        seen.update(kw=kw)
+        return _fake_res()
+
+    monkeypatch.setattr(ev.verify, "verify_answer", fake)
     monkeypatch.setenv("VERIFY_REPAIR", "1")
     ev.verify_production("a", [], [])
-    assert seen["allow_repair"] is False, "the environment must not turn repair on"
-    monkeypatch.setenv("VERIFY_REPAIR", "0")
-    ev.verify_production("a", [], [], allow_repair=True)
-    assert seen["allow_repair"] is True, "the flag must turn repair on regardless"
+    assert "allow_repair" not in seen["kw"]
+    with pytest.raises(TypeError):
+        ev.verify_production("a", [], [], allow_repair=True)
 
 
 def test_deterministic_mode_makes_no_verification_call():
@@ -1632,19 +1641,19 @@ def test_a_judge_budget_that_does_not_bind_reports_zero(monkeypatch):
 
 
 # ------------------------------------------------- gap 9: usage accounting ---
-def test_the_metered_client_books_the_judge_and_the_repair():
+def test_the_metered_client_books_the_judge():
+    """The judge is the detector's only model call; a repair prompt cannot be
+    booked because the prompt itself no longer exists."""
     sink = []
-    inner = FakeClient(["{}", "{}"])
+    inner = FakeClient(["{}"])
     m = ev.MeteredClient(inner, sink)
     m.chat.completions.create(model="m", messages=[
         {"role": "system", "content": ev.verify.ADJUDICATE_PROMPT},
         {"role": "user", "content": "claims"}])
-    m.chat.completions.create(model="m", messages=[
-        {"role": "system", "content": ev.verify.REPAIR_PROMPT},
-        {"role": "user", "content": "answer"}])
-    assert [c["role"] for c in sink] == ["judge", "repair"]
+    assert [c["role"] for c in sink] == ["judge"]
     assert all(c["prompt_tokens"] == 11 for c in sink)
-    assert len(inner.calls) == 2, "the proxy must pass every call through"
+    assert len(inner.calls) == 1, "the proxy must pass every call through"
+    assert not hasattr(ev.verify, "REPAIR_PROMPT")
 
 
 def test_an_unrecognised_verify_call_is_labelled_rather_than_lost():

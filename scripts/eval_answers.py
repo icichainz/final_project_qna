@@ -42,9 +42,9 @@ runs.  The harness therefore reproduces `chainlit_app.main` turn for turn:
 rewrite guards (--conductor), the FP-miss guard AFTER the conductor and
 returning BEFORE verification, the app's `decomposed` flag rather than a
 question-shape proxy, `_answer_messages` history isolation with the resolved-
-references note, `verify.verify_answer(use_llm=1, allow_repair=0)`
-(--verifier-mode production), and every model call — conductor, answer, judge,
-repair — booked into the turn's usage.
+references note, `verify.verify_answer(use_llm=1)`
+(--verifier-mode production), and every model call — conductor, answer,
+judge — booked into the turn's usage.
 
 Every one of those is an explicit CLI switch.  None is read from the ambient
 environment: `.env` is loaded for the API key alone, and a harness that took
@@ -691,7 +691,7 @@ JUDGE_MAX_CLAIMS = 12
 
 
 def verify_production(answer: str, hits, notes=None, client=None,
-                      allow_repair: bool = False, full_failures: bool = False):
+                      full_failures: bool = False):
     """production's verification pass over one answer.
 
     Returns (RepairResult, claims block, judge accounting). `verify_answer` is
@@ -710,13 +710,15 @@ def verify_production(answer: str, hits, notes=None, client=None,
     candidates = [v for v in det
                   if v.status == verify.UNSUPPORTED and v.plausible]
     res = verify.verify_answer(answer or "", evidence, client=client,
-                               use_llm=True, allow_repair=allow_repair)
+                               use_llm=True)
     block = claim_metrics([v.claim for v in res.verdicts], res.verdicts,
                           evidence, full_failures=full_failures)
     block["verifier_mode"] = "production"
     block["verify_status"] = res.status
-    block["repaired"] = bool(res.repaired)
-    block["repair_rejected"] = bool(res.repair_rejected)
+    # Always False now that the repair pathway is removed (pure detector);
+    # the keys stay because every frozen release record carries them.
+    block["repaired"] = bool(getattr(res, "repaired", False))
+    block["repair_rejected"] = bool(getattr(res, "repair_rejected", False))
     judge = {"judge_candidates": len(candidates),
              "judge_max_claims": JUDGE_MAX_CLAIMS,
              "judge_budget_exhausted": int(len(candidates) > JUDGE_MAX_CLAIMS)}
@@ -751,7 +753,12 @@ def score_claims(answer: str, hits, notes=None, full_failures: bool = False):
 # usage accounting
 # ---------------------------------------------------------------------------
 def verify_call_role(kwargs: dict) -> str:
-    """judge | repair | other, from the system prompt the call carries."""
+    """judge | other, from the system prompt the call carries.
+
+    The judge is the pure detector's only model call; "repair" stopped being
+    a possible label when that pathway was removed. "verify-other" survives so
+    a call this harness does not recognise is booked loudly, not lost.
+    """
     system = ""
     for m in kwargs.get("messages") or []:
         if m.get("role") == "system":
@@ -759,8 +766,6 @@ def verify_call_role(kwargs: dict) -> str:
             break
     if system is verify.ADJUDICATE_PROMPT or system == verify.ADJUDICATE_PROMPT:
         return "judge"
-    if system is verify.REPAIR_PROMPT or system == verify.REPAIR_PROMPT:
-        return "repair"
     return "verify-other"
 
 
@@ -982,8 +987,7 @@ class Pipeline:
                  history_mode: str = "isolated",
                  production_planner: bool = False, conductor: bool = False,
                  client=None, pins: dict = None,
-                 verifier_mode: str = "deterministic",
-                 verifier_repair: bool = False):
+                 verifier_mode: str = "deterministic"):
         from gcf_qna.app import chainlit_app as app
         self.app = app
         _instrument_prescope(app)
@@ -1005,7 +1009,6 @@ class Pipeline:
         if verifier_mode not in ("deterministic", "production"):
             raise SystemExit("--verifier-mode must be deterministic|production")
         self.verifier_mode = verifier_mode
-        self.verifier_repair = bool(verifier_repair)
         self.raw_retrieval = raw_retrieval
         self.scope_single_id = scope_single_id
         t0 = time.perf_counter()
@@ -1208,7 +1211,6 @@ class Pipeline:
                         "matrix_built": self.planner_stats["matrix_built"],
                         "matrix_failed": self.planner_stats["matrix_failed"]},
             "verifier_mode": self.verifier_mode,
-            "verifier_repair": bool(self.verifier_repair),
             "usage_accounts_judge_and_repair": True,
         }
 
@@ -1402,25 +1404,18 @@ def ask_model(client, system: str, turns: list, user: str, pins: dict = None,
 def final_answer(original: str, res) -> tuple:
     """(body the app would display, where it came from).
 
-    Mirrors `_verify_reply` exactly:
+    Mirrors `_verify_reply` exactly: the verifier is a pure detector, so the
+    body is ALWAYS the answer as the model wrote it. ``abstain`` keeps that
+    body too, led by a banner — the answer is not deleted, it is captioned.
+    ``res is None`` (verification off, or it raised) is the same guarantee by
+    another route.
 
-      * ``abstain`` keeps the ORIGINAL body and leads it with a banner — the
-        answer is not deleted, it is captioned;
-      * every other status shows ``res.answer``, and falls back to the
-        original when the verifier returned nothing. Taking ``res.answer``
-        unconditionally scores an empty string as the answer on any path where
-        the verifier declined to produce one.
-
-    ``res is None`` (verification off, or it raised) is the app's other
-    guarantee: the answer exactly as the model wrote it.
+    ``res.answer`` is deliberately not read: nothing the verifier returns can
+    reach the display, because the repair pathway was removed.
     """
-    if res is None:
-        return original, "model"
-    status = getattr(res, "status", None)
-    if status == "abstain":
+    if res is not None and getattr(res, "status", None) == "abstain":
         return original, "abstain-original"
-    text = getattr(res, "answer", None) or original
-    return text, ("verifier" if text != original else "model")
+    return original, "model"
 
 
 # ---------------------------------------------------------------------------
@@ -1781,8 +1776,7 @@ def run_eval(args, cases: list) -> list:
                                                     False)),
                     conductor=bool(getattr(args, "conductor", False)),
                     client=client, pins=pins,
-                    verifier_mode=getattr(args, "verifier_mode", "deterministic"),
-                    verifier_repair=bool(getattr(args, "verifier_repair", False)))
+                    verifier_mode=getattr(args, "verifier_mode", "deterministic"))
     print(f"retriever ready in {pipe.load_seconds:.1f}s — "
           f"{pipe.meta.get('n_chunks')} chunks, {pipe.meta.get('embedding_model')}")
     if args.gate:
@@ -1898,7 +1892,6 @@ def _run_case(pipe, client, args, case: dict) -> dict:
             answer, out["hits"],
             [notes.get("registry"), notes.get("year"), notes.get("matrix")],
             client=_verify_client(client, calls),
-            allow_repair=pipe.verifier_repair,
             full_failures=bool(getattr(args, "release", False)))
         usage = turn_usage(calls)
     raw_answer = answer
@@ -2268,7 +2261,7 @@ def artifact_hashes() -> dict:
 
 
 # Field-for-field, the deployed switches a `level=full` record must match
-# (plan, Wave 3: CONDUCTOR/PLANNER/VERIFY/VERIFY_LLM/VERIFY_REPAIR/INDEX_NAME/
+# (plan, Wave 3: CONDUCTOR/PLANNER/VERIFY/VERIFY_LLM/INDEX_NAME/
 # CHAT_MODEL plus the app commit sha).
 FINGERPRINT_FILE = ROOT / "docs" / "deployed-env-fingerprint.txt"
 DEPLOYED_LOG = ROOT / "docs" / "DEPLOYED.md"
@@ -2280,7 +2273,7 @@ def deployment_fingerprint(path: Path = None) -> dict:
     Wave −1 step 6 captures `docs/deployed-env-fingerprint.txt` over ssh; that
     is an owner action and it has not been performed, so this falls back to
     the two tracked artifacts that do exist — the `docs/DEPLOYED.md` row the
-    deploy printed (sha + the PLANNER/VERIFY/VERIFY_REPAIR lines of the .env
+    deploy printed (sha + the PLANNER/VERIFY/VERIFY_LLM lines of the .env
     that shipped) and the local `.env`, which Wave −1 makes the source of
     truth for production's switches because it rsyncs by design. The source is
     recorded so a reader is never left guessing which one answered.
@@ -2321,7 +2314,7 @@ def deployment_fingerprint(path: Path = None) -> dict:
                     out["switches"][k] = v
     except Exception as e:                                   # noqa: BLE001
         out["notes"].append(f"DEPLOYED.md unreadable: {type(e).__name__}: {e}")
-    for key in ("CONDUCTOR", "PLANNER", "VERIFY", "VERIFY_LLM", "VERIFY_REPAIR",
+    for key in ("CONDUCTOR", "PLANNER", "VERIFY", "VERIFY_LLM",
                 "INDEX_NAME", "CHAT_MODEL"):
         out["switches"].setdefault(key, _shipped_default(key))
     return out
@@ -2333,7 +2326,6 @@ def _shipped_default(key: str) -> str:
             "PLANNER": "1" if config.PLANNER else "0",
             "VERIFY": "1" if config.VERIFY else "0",
             "VERIFY_LLM": "1" if config.VERIFY_LLM else "0",
-            "VERIFY_REPAIR": "1" if config.VERIFY_REPAIR else "0",
             "INDEX_NAME": os.getenv("INDEX_NAME", "default"),
             "CHAT_MODEL": config.CHAT_MODEL}.get(key, "")
 
@@ -2389,7 +2381,6 @@ def _parity_level(parity: dict, deployed: dict, git_sha: str = None) -> tuple:
             "PLANNER": "1" if (parity.get("planner") or {}).get("enabled") else "0",
             "VERIFY": "1" if parity.get("verifier_mode") == "production" else "0",
             "VERIFY_LLM": "1" if parity.get("verifier_mode") == "production" else "0",
-            "VERIFY_REPAIR": "1" if parity.get("verifier_repair") else "0",
             "INDEX_NAME": os.getenv("INDEX_NAME", "default"),
             "CHAT_MODEL": config.CHAT_MODEL}
     drift = [f"{k}: deployed {deployed['switches'].get(k)!r} != harness {v!r}"
@@ -2443,7 +2434,7 @@ def run_meta(args) -> dict:
         },
         "ambient_env": {k: os.getenv(k) for k in
                         ("PLANNER", "CONDUCTOR", "VERIFY", "VERIFY_LLM",
-                         "VERIFY_REPAIR", "INDEX_NAME", "CHAT_MODEL")},
+                         "INDEX_NAME", "CHAT_MODEL")},
     }
 
 
@@ -2492,10 +2483,6 @@ def main(argv=None):
                          "(classify_deterministic only); 'production' runs "
                          "verify.verify_answer(use_llm=1) exactly as the app "
                          "does, judge call included")
-    ap.add_argument("--verifier-repair", action="store_true",
-                    help="allow the constrained repair rewrite "
-                         "(verify_answer(allow_repair=1)). OFF by default, as "
-                         "production runs it; NEVER read from the environment")
     ap.add_argument("--conductor", dest="conductor", action="store_true",
                     default=None,
                     help="run the real per-turn LLM conductor (mode routing + "

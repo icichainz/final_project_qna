@@ -1,13 +1,28 @@
-"""Claim-level answer verification and one constrained repair pass (plan step 5).
+"""Claim-level answer verification (plan step 5). A PURE DETECTOR.
 
 The answer model is the only component in the pipeline that is allowed to
 *write* facts, and it is the one component we cannot audit by construction.
-This module audits its output after the fact:
+This module audits its output after the fact — and only audits it:
 
     claims   = extract_claims(answer)                    # pure python
     evidence = build_evidence(hits, notes)               # what the turn held
     verdicts = classify(claims, evidence)                # deterministic first
-    result   = repair(answer, verdicts, evidence)        # at most one LLM pass
+    result   = verify_answer(answer, evidence)           # verdicts, never a rewrite
+
+NOTHING HERE REWRITES ANSWER TEXT, and that is a decision, not an omission.
+A constrained repair pass lived in this module through four waves of
+calibration and was deleted at eac4c94. When it was finally allowed to act,
+3 of the 5 rewrites it adopted had deleted verified evidence; the harm was
+the most reproducible thing about it; and the cause was structural rather
+than a matter of prompt wording or of one more gate — an adopt-if-clean rule
+makes DELETING a claim the cheapest way to be clean, so every gate added to
+stop deletion was a gate the next rewrite was selected to slip past. So the
+pass is gone, ``verify_answer(...).answer`` is always the text it was given,
+and the app has one fewer way to put words in front of a user.
+
+What that leaves is what three waves of calibration made good, all of it
+kept: extraction, deterministic classification, the conflict gate, the LLM
+judge over the residue, cautions and sources.
 
 Design rules, in the order they matter:
 
@@ -17,15 +32,13 @@ Design rules, in the order they matter:
    checks could not confirm *but whose cited evidence we actually hold*. A
    claim citing a page that was never retrieved needs no judge — that verdict
    is already certain.
-2. **At most two LLM calls per answer**, both skippable: one batched
-   adjudication for the plausible residue, one repair. With no
-   ``OPENAI_API_KEY`` the module still returns deterministic verdicts and
-   simply refuses to rewrite anything (``status='unverified-llm'``).
-3. **Repair may not introduce sources.** The repaired answer's citations are
-   re-parsed and must be a subset of the evidence we hold; a repair that
-   invents a document or a page is dropped, and the original answer is flagged
-   instead. A verifier that can be talked into new citations is worse than no
-   verifier.
+2. **At most ONE LLM call per answer**, and it is skippable: one batched
+   adjudication for the plausible residue. With no ``OPENAI_API_KEY`` the
+   module still returns deterministic verdicts (``status='unverified-llm'``).
+3. **The answer text is never touched.** Every caller gets back the string it
+   passed in. A detector that can be talked into editing the answer is worse
+   than no detector, and the only rule that cannot be talked out of is the one
+   that has no code behind it to talk to.
 4. **Never crash on model output.** A malformed citation ('[registry note in
    your context]') is a claim with an unresolvable pointer, not an exception.
 
@@ -1140,7 +1153,9 @@ def claim_kind(text: str) -> Optional[str]:
 # rows are that shape; the re-A/B at 9925a2c measured ~7 of 22 repair
 # rejections blocking on exactly these, with the judge answering "no claim
 # text provided" — a lead-in is INHERITED failure that no rewrite keeping the
-# document's structure can clear.
+# document's structure can clear. (The repair pass is gone as of eac4c94. The
+# extraction defect it made visible is not, and this ruling stands on the 12
+# adjudicated rows, not on the rejection count.)
 #
 # THE DEFINITION IS TIGHT ON PURPOSE, in three ways:
 #
@@ -1653,7 +1668,7 @@ def _field_conflict(claim: Claim, text: str,
     contradiction — 14 adjudicated claims (claim-11d3a178, claim-1cdbc791,
     claim-ca1c1388, claim-d43027b0, claim-4650af24, ...) failed exactly that
     way. A disagreeing figure the answer ITSELF reports for this document is
-    the instructed behaviour, not a contradiction to repair.
+    the instructed behaviour, not a contradiction to flag.
 
     ``settled`` decides ONE rival print at a time (see ``_key_conflict``); a
     rival it skips does not end the scan, so a second, unsettled rival printed
@@ -1723,7 +1738,7 @@ def registry_conflict(doc_id: str, claim: Claim,
     if not stated:
         return None                  # the answer states neither side; other checks own it
     # An answer that already reports BOTH figures is the behaviour the prompt
-    # asks for, not a contradiction to repair. The reporting is ANSWER-level,
+    # asks for, not a contradiction to flag. The reporting is ANSWER-level,
     # not sentence-level: the registry note says 'report both figures with
     # their pages', and an answer that obeys prints one figure per bullet, so
     # ``also_reported`` carries what the answer's other claims state for this
@@ -1796,10 +1811,9 @@ def registry_backed(doc_id: str, claim: Claim,
 
     Retrieval returns ten passages; the registry scanned every page. An answer
     that correctly reports BOTH sides of a known conflict cites a second page
-    that this turn may not hold — and REPAIR_PROMPT rule 2 asks for exactly
-    that sentence — so without this check no conflict-aware answer could ever
-    verify, and the repair pass could only produce answers it would then
-    reject.
+    that this turn may not hold — so without this check no conflict-aware
+    answer could ever verify, and the detector would be punishing exactly the
+    honesty it exists to encourage.
     """
     if not want:
         return None
@@ -2192,8 +2206,11 @@ def _conflict_before_support(claim: Claim, evidence: Evidence,
     re-pointed to p.45 — a page that prints 18,500,000 and never prints 28
     million — came back SUPPORTED with a citation-page-mismatch caution and
     nothing else. Same figure, same document, a strictly WORSE citation, a
-    passing verdict; and with ``VERIFY_REPAIR=1`` a rewrite whose only diff is
-    the page number was adopted as ``repaired``. The registry-backed branch
+    passing verdict; and, while the repair pass still existed, a rewrite whose
+    only diff was the page number was adopted as a correction — zero factual
+    change, a strictly worse citation, a green status. THIS IS A VERIFICATION
+    DEFECT and it was fixed here, which is why deleting repair costs nothing
+    against it. The registry-backed branch
     answered SUPPORTED from the registry with only the cited page tested, the
     same shape one branch over. One gate, called from all three, is the only
     arrangement in which a fourth support branch cannot reopen this.
@@ -2442,22 +2459,6 @@ ADJUDICATE_PROMPT = (
     '"status": "supported|contradicted|unsupported", "reason": "<12 words>"}]}'
 )
 
-REPAIR_PROMPT = (
-    "You repair an answer that failed evidence verification, for a Green\n"
-    "Climate Fund document Q&A system.\n"
-    "Rules, in order:\n"
-    "1. Keep every supported sentence exactly as it is.\n"
-    "2. For a CONTRADICTED claim, replace the value with the value the\n"
-    "   evidence prints, keeping its citation; when the evidence prints two\n"
-    "   disagreeing figures, give BOTH with their pages.\n"
-    "3. For an UNSUPPORTED claim, either delete the sentence or qualify it as\n"
-    "   not supported by the retrieved evidence. Never keep it as a fact.\n"
-    "4. NEVER introduce a document id, a page number or a figure that is not\n"
-    "   in the evidence below. Do not add new citations.\n"
-    "5. Keep the answer's language (French answer stays French) and format.\n"
-    "Reply with the repaired answer text only — no preamble, no commentary."
-)
-
 
 def _client() -> Optional[Any]:
     """An OpenAI-compatible client, or None when no key is configured.
@@ -2479,8 +2480,10 @@ def _client() -> Optional[Any]:
         return None
 
 
-#: The sampling this module pins on EVERY call it makes — the batched judge
-#: and the constrained repair rewrite.
+#: The sampling this module pins on the ONE call it makes — the batched judge.
+#: (It applied to the constrained repair rewrite too, until eac4c94 deleted
+#: it; the measurements below were taken on that call and are kept because
+#: what they establish about the ENDPOINT is what still governs the judge.)
 #:
 #: Wave 4 measured what an unpinned rewrite costs. From identical answers and
 #: an identical verdict object, repair's adoption decision flipped on 18-27%
@@ -2496,7 +2499,7 @@ def _client() -> Optional[Any]:
 #: switches an operator is meant to turn.
 #:
 #: The ANSWER-GENERATION call is not made here and is not touched: this module
-#: only ever calls the judge and the repair pass.
+#: only ever calls the judge.
 #:
 #: WHAT THE PIN DOES AND DOES NOT BUY — MEASURED, NOT ASSUMED. Against the
 #: configured endpoint (api.openai.com, `CHAT_MODEL=gpt-5.2`) both parameters
@@ -2513,9 +2516,14 @@ def _client() -> Optional[Any]:
 #: `seed` here is best-effort and is not honoured to the byte. The pin is kept
 #: because it is free, because it removes the two degrees of freedom that ARE
 #: under our control, and because an endpoint that honours seed then reproduces
-#: exactly — but nothing in this module may be read as a claim that a repaired
-#: answer can be re-derived on this deployment. Auditing a rewrite here means
-#: RECORDING it (`audit_repair.py` hashes the repair text), not re-running it.
+#: exactly — but nothing in this module may be read as a claim that a
+#: completion can be re-derived on this deployment.
+#:
+#: This is also the shortest statement of why repair is gone. A rewrite that
+#: the same inputs do not reproduce cannot be audited by re-running it, only
+#: by recording it; a detector's output is re-derivable from the answer and
+#: the evidence by pure python, judge or no judge, and that is the difference
+#: between a component an operator can check and one they can only trust.
 SAMPLING_TEMPERATURE = 0
 SAMPLING_SEED = 20260821
 
@@ -2534,22 +2542,6 @@ _SAMPLING_UNSUPPORTED: set = set()
 def _reset_sampling_support() -> None:
     """Forget which parameters the endpoint refused (tests; process restart)."""
     _SAMPLING_UNSUPPORTED.clear()
-
-
-def _unpinned_note() -> List[str]:
-    """A note naming the pins this endpoint refused, or nothing.
-
-    Silence is the bug. A repair whose sampling could not be pinned is a
-    DIFFERENT object from one that could: it is not reproducible, so an
-    operator reviewing the rewrite cannot re-derive it and a canary measuring
-    it is measuring a distribution. That belongs in the turn's own record,
-    not only in a log line the reviewer never sees.
-    """
-    if not _SAMPLING_UNSUPPORTED:
-        return []
-    return [f"this rewrite is NOT reproducible: the endpoint rejected "
-            f"{', '.join(sorted(_SAMPLING_UNSUPPORTED))}, so the repair call "
-            f"was an unpinned sample"]
 
 
 def _sampling_kwargs() -> Dict[str, Any]:
@@ -2666,7 +2658,7 @@ def _where_found(claim: Claim, evidence: Evidence, limit: int = 3
 def _judge_keys(claim: Claim, evidence: Evidence,
                 strict: Sequence[EvidenceKey],
                 wide: Sequence[EvidenceKey]) -> List[EvidenceKey]:
-    """The evidence a claim is adjudicated or repaired against."""
+    """The evidence a claim is adjudicated against."""
     return (list(strict) or list(wide[:2]) or _where_found(claim, evidence)
             or list(evidence)[:3])
 
@@ -2759,25 +2751,47 @@ def classify(claims: Sequence[Claim], evidence: Evidence, client: Any = None,
 
 
 # ---------------------------------------------------------------------------
-# repair
+# the result object
 # ---------------------------------------------------------------------------
 
 @dataclass
 class RepairResult:
     """The verified answer, its verdicts, and what the app must show.
 
-    ``status``:
+    THE NAME IS HISTORICAL and is kept deliberately. It was the return type of
+    the repair pass, every consumer already imports and constructs it, and
+    renaming a type to announce that a feature was deleted buys a churned
+    diff across four files and no behaviour. What changed is the CONTENT of
+    the contract:
+
+      * ``answer`` is ALWAYS the text that was passed in. This class no longer
+        carries a rewrite, because nothing produces one.
+      * ``original_answer`` is therefore the same string. Kept because the
+        recorded eval rows carry both and a reader comparing them is entitled
+        to see them agree.
+      * ``repaired`` is ALWAYS False, and ``repair_rejected`` is ALWAYS False.
+        Kept as fields, not deleted, for record compatibility:
+        ``scripts/eval_answers.py`` writes both into every claims block of
+        every release run, and the 66-answer baselines this tree is scored
+        against have them. A field that disappears makes an old record and a
+        new record incomparable at exactly the moment someone is trying to
+        prove nothing changed.
+
+    ``status``, and all four values are reachable:
       verified        every claim is supported by the evidence it cites
-      repaired        the repair pass fixed every failing claim
       partial         some fact-bearing claims remain unsupported
       abstain         every fact-bearing claim failed — nothing left to show
-      unverified-llm  claims failed but no judge/repair was available (no key)
+      unverified-llm  claims failed but no judge was available (no key)
+
+    'repaired' is NOT among them any more, and no code path can produce it.
     """
     answer: str
     status: str
     verdicts: List[Verdict] = dc_field(default_factory=list)
     original_answer: str = ""
+    #: vestigial, always False — see the class docstring
     repaired: bool = False
+    #: vestigial, always False — see the class docstring
     repair_rejected: bool = False
     notes: List[str] = dc_field(default_factory=list)
 
@@ -2805,7 +2819,7 @@ class RepairResult:
 
     @property
     def ok(self) -> bool:
-        return self.status in ("verified", "repaired")
+        return self.status == "verified"
 
     def counts(self) -> Dict[str, int]:
         out = {SUPPORTED: 0, CONTRADICTED: 0, UNSUPPORTED: 0}
@@ -2815,11 +2829,22 @@ class RepairResult:
 
 
 def _status_for(verdicts: Sequence[Verdict], llm_available: bool,
-                repaired: bool) -> str:
+                _repaired: bool = False) -> str:
+    """Which of the four statuses these verdicts carry.
+
+    ``_repaired`` is vestigial and IGNORED — there is no repaired status for
+    it to select. It is still in the signature, with a default, for exactly
+    one reason: ``scripts/score_verifier.py`` calls this helper positionally
+    with a third argument (always ``False``) to compute the status census the
+    five arms are scored against, and that instrument is not this module's to
+    edit. Taking the parameter and ignoring it keeps the scorer's numbers
+    identical across this change, which is the property that had to be
+    proved. Delete it when the scorer stops passing it.
+    """
     failed = [v for v in verdicts if v.failed]
     if not failed:
-        return "repaired" if repaired else "verified"
-    if not llm_available and not repaired:
+        return "verified"
+    if not llm_available:
         return "unverified-llm"
     required = [v for v in verdicts if v.claim.required]
     if required and all(v.failed for v in required):
@@ -2827,421 +2852,21 @@ def _status_for(verdicts: Sequence[Verdict], llm_available: bool,
     return "partial"
 
 
-def _introduced_sources(answer: str, evidence: Evidence,
-                        allowed_docs: Optional[Sequence[str]] = None) -> List[str]:
-    """Citations in a repaired answer that the evidence cannot back.
-
-    The deterministic guard on rule 4 of REPAIR_PROMPT: a repair that invents
-    a document or a page is not a repair, and no amount of prompt wording is
-    a substitute for checking.
-
-    Matching here is EXACT, unlike ``_resolve_doc``. The forgiving prefix rule
-    exists because the answer model truncates ids it was shown; a repair that
-    emits an id we were not holding is the case this function exists to catch,
-    and a 24-character prefix match would wave through any suffix appended to
-    the 182 corpus ids that are 24 characters or shorter.
-
-    ``allowed_docs`` narrows it further to the documents the repair prompt
-    actually showed: moving a claim onto another retrieved document's figure
-    verifies cleanly and is still an invented attribution.
-    """
-    docs = {k[0] for k in evidence if k[0] != NOTES_DOC}
-    permitted = set(allowed_docs) if allowed_docs is not None else docs
-    bad = []
-    for c in parse_citations(answer):
-        if c.doc is None:
-            continue
-        if c.doc not in docs:
-            bad.append(f"{c.doc}" + (f", p.{c.page}" if c.page else ""))
-        elif c.doc not in permitted:
-            bad.append(f"{c.doc} (not shown to the repair pass)")
-        elif c.page is not None and (c.doc, c.page) not in evidence:
-            bad.append(f"{c.doc}, p.{c.page}")
-    return list(dict.fromkeys(bad))
-
-
-_PREAMBLE_RE = re.compile(
-    r"^\s*(?:sure|certainly|of course|here(?:'s| is| are)|voici|voil[àa]|bien s[ûu]r|"
-    r"repaired answer|corrected answer|r[ée]ponse corrig[ée]e)\b[^\n]{0,120}:?\s*$",
-    re.I)
-
-
-def _strip_preamble(text: str) -> str:
-    """Drop a chat preamble line and any code fence around the answer.
-
-    'Sure! Here is the repaired answer:' is not part of the answer, and
-    shipping it into the chat window is how a verification pass announces
-    itself to the user as a machine.
-    """
-    body = re.sub(r"^\s*```[a-zA-Z]*\n|\n?```\s*$", "", (text or "").strip())
-    lines = body.splitlines()
-    while len(lines) > 1 and (not lines[0].strip() or _PREAMBLE_RE.match(lines[0])):
-        lines = lines[1:]
-    return "\n".join(lines).strip()
-
-
-def _supported_required(verdicts: Sequence[Verdict]) -> int:
-    return sum(1 for v in verdicts
-               if v.status == SUPPORTED and v.claim.required)
-
-
-# ---------------------------------------------------------------------------
-# repair adoption gates that do not depend on the pre-repair verdicts
-#
-# The two gates below are stated in ABSOLUTE terms on purpose. The anti-gutting
-# guard reads `_supported_required(verdicts) > 0` — true of a mostly-correct
-# answer and FALSE of exactly the population repair is invoked on. Wave 4 rode
-# through that hole: `abs-2014`'s 351-character registry-backed abstention was
-# rewritten to the single word "None." and adopted, because an answer with no
-# supported claim to lose cannot trip a guard about losing supported claims.
-# A gate conditioned on pre-repair support cannot protect an answer that has
-# none, so neither of these reads the pre-repair verdicts at all.
-# ---------------------------------------------------------------------------
-
-#: Local copy of `gcf_qna.app.chainlit_app._detect_lang`'s tables and rule.
-#: NOT an import: `chainlit_app` imports `gcf_qna.rag.verify` at module scope
-#: (`from gcf_qna.rag import planner, verify`), so importing it back here is a
-#: cycle, and it would additionally drag `chainlit`, `faiss` and the index
-#: loader into a module whose deterministic layer must stay importable with
-#: nothing installed. The heuristic is reproduced verbatim instead, and
-#: `test_verify.py` pins the two implementations to agree so the copy cannot
-#: drift silently.
-_FR_WORDS = {"le", "la", "les", "des", "une", "un", "est", "et", "que", "qui",
-             "quel", "quelle", "quels", "quelles", "pour", "dans", "avec", "sur",
-             "comment", "pourquoi", "combien", "cette", "ce", "aux", "du", "de",
-             "peux", "fais", "fait", "donne", "moi", "tableau", "merci", "bonjour"}
-_EN_WORDS = {"the", "is", "are", "what", "which", "how", "of", "for", "in",
-             "does", "do", "and", "that", "this", "with", "on", "to", "from",
-             "give", "me", "show", "compare", "summary", "thanks", "hello"}
-
-
-def detect_language(text: str) -> Optional[str]:
-    """'French', 'English', or None when the text does not say.
-
-    Same heuristic, same tables and the same tie rule as the app's
-    `_detect_lang`, so the verifier and the eval harness cannot disagree about
-    what language an answer is in.
-    """
-    low = (text or "").lower()
-    if re.search(r"\ben fran[cç]ais\b|\bin french\b", low):
-        return "French"
-    if re.search(r"\ben anglais\b|\bin english\b", low):
-        return "English"
-    toks = re.findall(r"[a-zàâçéèêëîïôùûüÿœ']+", low)
-    fr = sum(t in _FR_WORDS for t in toks)
-    en = sum(t in _EN_WORDS for t in toks)
-    if re.search(r"[àâçéèêëîïôùûüÿœ]", low):
-        fr += 2
-    if fr > en:
-        return "French"
-    if en > fr:
-        return "English"
-    return None
-
-
-#: Quotation spans, in the three pairs the corpus and the answer model print.
-#: Deliberately NOT `_QUOTE_RE`: that one exists to CAPTURE a quoted entity
-#: name and is capped at 120 characters for it, and a cap is exactly what an
-#: evasion would step over here.
-_QUOTED_SPAN_RE = re.compile(r"[\u201c][^\u201d\n]*[\u201d]|"
-                             r"[\u00ab][^\u00bb\n]*[\u00bb]|"
-                             r'"[^"\n]*"')
-
-
-def _unquoted(text: str) -> str:
-    """The text with quoted spans removed — the answer's own words."""
-    return _QUOTED_SPAN_RE.sub(" ", text or "")
-
-
-def _language_flip(before: str, after: str) -> Optional[Tuple[str, str]]:
-    """(from, to) when a rewrite changed the answer's language, else None.
-
-    Rule 5 of `REPAIR_PROMPT` says the answer keeps its language. Nothing
-    enforced it, and Wave 4 measured the result: an ENGLISH answer was
-    rewritten into FRENCH in 2 of 3 samples and ADOPTED both times — every
-    claim verified, every citation resolved, and the user got an answer in a
-    language they did not ask a question in.
-
-    The gate is SYMMETRIC by construction: it compares two detections and
-    fires on any difference, so French -> English costs exactly what
-    English -> French costs. There is no list of "the bad direction" to get
-    one-sided.
-
-    An undetectable side is NOT a flip. `detect_language` returns None on a
-    tie or on text with no function words in either table, and "unknown" is
-    not evidence that the language changed; the substance floor below is what
-    covers a rewrite too small to have a detectable language.
-
-    QUOTED SPANS ARE EXCLUDED from the comparison. The rule being enforced is
-    about the language the ANSWER is written in, and a quotation is the
-    corpus's words, not the answer's: a French answer quoting an English
-    document title has not changed language, and a repair that corrects a
-    misquotation is changing what is inside the quotes on purpose. A
-    whole-text detector reads a long quotation as the answer's own prose and
-    fires on it — over-rejection, which is the safe direction but is a
-    misfire, and a gate that misfires on quoted source text gets argued away.
-
-    With the FALLBACK, which is the half that keeps it a gate: if either side
-    has nothing detectable left outside its quotes, the comparison is retaken
-    over the full text. Otherwise "quote the entire rewritten answer" would
-    be a one-line evasion.
-    """
-    a, b = detect_language(_unquoted(before)), detect_language(_unquoted(after))
-    if a is None or b is None:
-        a, b = detect_language(before), detect_language(after)
-    return (a, b) if a and b and a != b else None
-
-
-#: Words of prose — outside citations — below which a rewrite is not an answer
-#: and not a refusal either, whatever the pre-repair verdicts said. "None." is
-#: one word; "The retrieved excerpts do not state FP151's GCF funding." is
-#: nine, and deleting an unsupportable claim down to that IS a valid repair
-#: (`test_repair_may_delete_the_claim_entirely`). The floor sits between them
-#: and is deliberately low: over-rejection keeps the ORIGINAL answer with its
-#: cautions, which is this module's stated safe failure.
-MIN_REPAIR_WORDS = 5
-
-#: An answer this long counts as substantial: enough was said that replacing
-#: it with something that says nothing is a deletion, not a repair.
-SUBSTANTIAL_ANSWER_CHARS = 200
-
-
-def _prose(text: str) -> str:
-    """The answer's words with citations, markdown and punctuation removed.
-
-    Citations are stripped FIRST: `[124_gcf-b27-02-add11, p. 45]` is four
-    "words" of pure typography, and a floor a rewrite can clear by keeping a
-    bracket is not a floor.
-    """
-    return norm_text(_strip_citations(text or ""))
-
-
-def _substance_floor(original: str, repaired: str) -> Optional[str]:
-    """Why this rewrite collapsed the answer, or None.
-
-    THE AXIS IS CLAIM SURVIVAL, NOT SIZE. An earlier version of this floor
-    had a second leg reading "a substantial answer may not come back as a
-    quarter of itself", and a blind attack suite written from the spec broke
-    it with one line of padding: a gutting that says nothing but says it at
-    length is 65% of the original's characters, while an honest correction
-    down to a single sentence is 47% — the one that must die is LONGER than
-    the one that must live, so no rule keyed on the rewrite's size can
-    separate them. Padding is free; stating a fact the evidence supports is
-    not. So the leg was replaced, not tightened.
-
-    Two legs, neither reading a verdict:
-
-      * a rewrite shorter than a sentence has deleted the answer rather than
-        repaired it. This one IS a size rule, and it is safe as one because
-        it sits below the level any of the shapes above live at: it separates
-        "None." from prose, not prose from prose.
-
-      * a SUBSTANTIAL answer may not be replaced by a rewrite that carries no
-        fact-bearing claim at all. Padding cannot clear this leg, because the
-        only way past it is to state something — and anything stated is then
-        classified, so it must be something the evidence actually supports or
-        the zero-remaining-failures gate takes it instead.
-
-    Why the second leg is conditioned on the ORIGINAL's size and not on the
-    pre-repair verdicts: deleting the last claim of a one-line answer whose
-    only claim failed is a VALID repair (`test_repair_may_delete_the_claim_
-    entirely`), and an honest refusal is the right output there. What is not
-    valid is doing it to an answer that had something to lose. That condition
-    is a property of the text being replaced, so it is still true when
-    `_supported_required` is 0 — which is the population this pass runs on and
-    the whole reason the anti-gutting guard could not protect `abs-2014`.
-
-    WHAT THIS FLOOR NO LONGER CLAIMS. A substantial answer cut to a fraction
-    of itself while keeping one supported claim is not caught here any more.
-    That shape is a LOST-SUPPORTED-CLAIM problem, it is Wave 4's own separate
-    finding, and a character ratio was a proxy for it that (a) never fired on
-    any of the 19 recorded rewrites and (b) is now known to be the wrong axis.
-    It belongs to that gate, not to this one.
-    """
-    new, old = _prose(repaired), _prose(original)
-    words = len(new.split())
-    if words < MIN_REPAIR_WORDS:
-        return (f"it collapsed the answer to {words} word(s) of text "
-                f"(floor {MIN_REPAIR_WORDS})")
-    if len(old) >= SUBSTANTIAL_ANSWER_CHARS and not extract_claims(repaired):
-        return (f"it replaced a {len(old)}-character answer with "
-                f"{len(new)} characters that state no fact at all")
-    return None
-
-
-def _carry_cleared(new_verdicts: List[Verdict],
-                   old_verdicts: Sequence[Verdict]) -> List[Verdict]:
-    """Keep judge rulings across the post-repair recheck — the CARRY-ON rule,
-    no longer on the shipped adoption path.
-
-    What it was for: the recheck is deterministic-only, so a claim the judge
-    cleared as a paraphrase comes back unsupported and makes a good repair
-    look like a failed one. Sentences the repair left untouched are matched by
-    normalized text and keep their verdict.
-
-    Why `repair()` stopped using it (Wave 4, carry-off decision). It answers
-    part of the question the adoption gate is asking. The 817abdb gate reads
-    "no claim left failing at all"; with the carry in place it reads "no claim
-    left failing EXCEPT one the judge cleared before the rewrite existed" —
-    an opinion formed on the pre-rewrite text, certifying the rewrite. That is
-    the self-certification the plan's standing rule 1 forbids, and it is not
-    hypothetical: on `release-2` the two scorings disagreed on
-    `agg-2021-boards` (carried past "no citation on a factual claim", which
-    the judge is not competent to overrule at all) and on `abs-antarctica`
-    (carried past "not found in the cited evidence: Antarctica"), both times
-    with carry-on ADOPTING what the honest recheck rejected — never the other
-    way round. A tolerance over a one-directional bias is a licence for the
-    failures it is meant to bound.
-
-    The cost of turning it off is a repair rejected when the model fixed its
-    task list but left a judge-cleared sentence standing. That is a false
-    NEGATIVE: the original answer ships with its cautions, which is this
-    module's stated preference ("an honest 'partial' beats a confident
-    rewrite") and the safe direction every review of this file has asked for.
-
-    Kept as a function because `scripts/audit_repair.py` patches this binding
-    to score the carry-on arm against the carry-off one; it is dead code on
-    the production path and `test_verify.py` pins that it is.
-    """
-    cleared = {norm_text(v.claim.text): v for v in old_verdicts
-               if v.source == "llm" and v.status == SUPPORTED}
-    if not cleared:
-        return new_verdicts
-    out = []
-    for v in new_verdicts:
-        got = cleared.get(norm_text(v.claim.text))
-        if got is not None and v.failed:
-            out.append(Verdict(v.claim, SUPPORTED, got.reason, v.scope,
-                               source="llm", flags=list(v.flags)))
-        else:
-            out.append(v)
-    return out
-
-
-def repair(answer: str, verdicts: Sequence[Verdict], evidence: Evidence,
-           client: Any = None, cross_page_conflicts: bool = True,
-           registry_conflicts: bool = True) -> RepairResult:
-    """ONE constrained repair pass over the failing claims.
-
-    The model may remove, qualify or correct claims; it may not introduce
-    sources. Its text is then earned, not assumed: it is re-verified
-    deterministically against the same evidence and adopted only when it is
-    strictly better than what it replaced —
-
-      * no citation we cannot back, and none the repair prompt was not shown
-        (a claim re-attributed to another retrieved document verifies cleanly
-        and is still an invented attribution);
-      * fewer failing claims than before, and none left failing at all —
-        swapping one wrong figure for a different wrong figure is not a
-        repair, and it is what an unguarded pass actually produced;
-      * the same language it was written in — rule 5 of the prompt, enforced
-        symmetrically in python (`_language_flip`);
-      * at least a sentence of text, and not a quarter of a substantial
-        answer (`_substance_floor`). This floor does NOT consult the
-        pre-repair verdicts, because the guard below cannot fire for an
-        answer that had no supported claim to lose — which is exactly the
-        population this pass is invoked on;
-      * at least as much substance: if the answer had supported fact-bearing
-        claims, the repaired one must still have one. A rewrite that deletes
-        every supported claim replaces a mostly-correct answer with a
-        refusal, which is a regression the user cannot see.
-
-    The recheck is CARRY-OFF: the repaired text is classified from scratch and
-    no pre-repair judge ruling is carried onto it (`_carry_cleared`).
-
-    Anything else keeps the ORIGINAL answer and flags it — an honest 'partial'
-    beats a confident rewrite.
-    """
-    verdicts = list(verdicts)
-    failed = [v for v in verdicts if v.failed]
-    if not failed:
-        return RepairResult(answer, "verified", verdicts, answer)
-
-    if client is None:
-        client = _client()
-    if client is None:
-        return RepairResult(answer, _status_for(verdicts, False, False), verdicts,
-                            answer, notes=["no LLM available: deterministic "
-                                           "verdicts only, answer left as written"])
-
-    blocks, shown_docs = [], []
-    for v in failed:
-        strict, wide, _, _r5 = _scopes(v.claim, evidence)
-        keys = _judge_keys(v.claim, evidence, strict, wide)
-        shown_docs += [k[0] for k in keys if k[0] != NOTES_DOC]
-        blocks.append(
-            f"--- {v.status.upper()} claim ---\n{v.claim.text}\n"
-            f"why: {v.reason}\n"
-            f"EVIDENCE IT MAY USE:\n{_evidence_snippet(evidence, keys)}")
-    # what the repair may cite: what it was shown, plus what the answer
-    # already cited and kept
-    allowed = list(dict.fromkeys(
-        shown_docs + [d for d, _ in cited_sources(answer)]))
-    user = (f"ANSWER TO REPAIR:\n{answer}\n\n"
-            f"FAILED CLAIMS ({len(failed)}):\n" + "\n\n".join(blocks))
-    raw = _complete(client, REPAIR_PROMPT, user,
-                    max_tokens=min(6000, 900 + len(answer) // 2))
-    if not raw:
-        return RepairResult(answer, _status_for(verdicts, True, False), verdicts,
-                            answer, notes=["repair call failed; answer left as written"])
-    raw = _strip_preamble(raw)
-
-    unpinned = _unpinned_note()
-
-    def _keep(note: str) -> RepairResult:
-        return RepairResult(answer, _status_for(verdicts, True, False), verdicts,
-                            answer, repair_rejected=True,
-                            notes=[note] + unpinned)
-
-    introduced = _introduced_sources(raw, evidence, allowed)
-    if introduced:
-        return _keep("repair rejected: it introduced sources not in the evidence — "
-                     + "; ".join(introduced[:4]))
-
-    flip = _language_flip(answer, raw)
-    if flip:
-        return _keep(f"repair rejected: it rewrote the answer from {flip[0]} "
-                     f"into {flip[1]} — rule 5 of the repair prompt says the "
-                     f"answer keeps its language")
-
-    collapsed = _substance_floor(answer, raw)
-    if collapsed:
-        return _keep(f"repair rejected: {collapsed}")
-
-    # CARRY-OFF. The recheck classifies the REPAIRED text from scratch and
-    # nothing is carried across the rewrite; see `_carry_cleared`.
-    new_verdicts = classify_deterministic(extract_claims(raw), evidence,
-                                          cross_page_conflicts,
-                                          registry_conflicts)
-    new_failed = [v for v in new_verdicts if v.failed]
-    if new_failed:
-        return _keep(
-            f"repair rejected: {len(new_failed)} claim(s) still fail verification "
-            f"(was {len(failed)}) — " + new_failed[0].reason[:120])
-    if _supported_required(verdicts) and not _supported_required(new_verdicts):
-        return _keep("repair rejected: it removed every supported factual claim "
-                     "instead of correcting the failing one")
-
-    return RepairResult(raw, _status_for(new_verdicts, True, True), new_verdicts,
-                        answer, repaired=True,
-                        notes=[f"repaired {len(failed)} failing claim(s)"] + unpinned)
-
-
 def verify_answer(answer: str, evidence: Evidence, client: Any = None,
-                  use_llm: bool = True, allow_repair: bool = True,
+                  use_llm: bool = True,
                   cross_page_conflicts: bool = True,
                   registry_conflicts: bool = True) -> RepairResult:
-    """extract -> classify -> repair, the whole step-5 pass in one call.
+    """extract -> classify -> report. The whole step-5 pass in one call.
 
-    ``use_llm`` and ``allow_repair`` are INDEPENDENT switches (plan step 6:
-    'roll out behind independent switches'). Turning the judge off leaves the
-    repair pass working on deterministic verdicts — which are the verdicts the
-    repair prompt is built from anyway — so a deployment can run
-    deterministic-verify + repair, or judge-only, or both.
+    ``result.answer is answer``: this function detects, it does not write. The
+    ``allow_repair`` switch it used to take is gone with the pass it gated —
+    production ran ``VERIFY_REPAIR=0``, so its only reachable value was False
+    and removing it changes nothing that ever ran.
 
-    At most two LLM calls, both skippable. With no key this is pure python and
-    returns 'verified' or 'unverified-llm' with the failing claims attached,
-    so the app can display honestly instead of silently.
+    ``use_llm`` is the one switch left. Turning it off (``VERIFY_LLM=0``, or
+    no API key) makes this pure python and network-free; the verdicts are then
+    the deterministic ones and the status says so ('unverified-llm') instead
+    of pretending the residue was adjudicated.
     """
     claims = extract_claims(answer)
     verdicts = classify(claims, evidence, client=client, use_llm=use_llm,
@@ -3249,10 +2874,14 @@ def verify_answer(answer: str, evidence: Evidence, client: Any = None,
                         registry_conflicts=registry_conflicts)
     if not any(v.failed for v in verdicts):
         return RepairResult(answer, "verified", verdicts, answer)
-    if not allow_repair:
-        llm = client is not None or _client() is not None
-        return RepairResult(answer, _status_for(verdicts, llm, False), verdicts,
-                            answer, notes=["repair disabled"])
-    return repair(answer, verdicts, evidence, client=client,
-                  cross_page_conflicts=cross_page_conflicts,
-                  registry_conflicts=registry_conflicts)
+    llm = client is not None or _client() is not None
+    # THE NOTE STRING IS FROZEN, and the reason is the gate this change had to
+    # pass: deleting a pass that production never ran must change NOTHING an
+    # operator can observe, and `notes` travels into the app's verification
+    # step and into what an A/B over the recorded runs compares. 62 of the 132
+    # recorded answers carry exactly this string today. Rewording it to
+    # something truer of a detector ("the answer is never rewritten") would be
+    # the one observable difference in an otherwise byte-identical change — so
+    # it is left alone here, to be changed on purpose or not at all.
+    return RepairResult(answer, _status_for(verdicts, llm), verdicts,
+                        answer, notes=["repair disabled"])

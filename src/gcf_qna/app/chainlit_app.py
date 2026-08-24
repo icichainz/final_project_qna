@@ -681,8 +681,11 @@ def _planner_intent(text: str, plan) -> bool:
 # The answer model is the one component allowed to WRITE facts, and the one we
 # cannot audit by construction. verify.py audits its output claim by claim
 # against the exact pages this turn retrieved; the app's job is to run it after
-# the stream, show the corrected text when a repair lands, and say plainly what
-# could not be verified. Every failure path here keeps the original answer.
+# the stream and say plainly what could not be verified. Every failure path here
+# keeps the original answer — and so does every SUCCESS path: the verifier is a
+# DETECTOR, not an editor (eac4c94 deleted the adopt-if-clean repair, whose
+# rewrite destroyed the evidence of what had been wrong). The only thing it may
+# add to the message body is the abstain banner above the model's own text.
 # ---------------------------------------------------------------------------
 
 def _claim_texts(verdicts: list, limit: int = 3, width: int = 110) -> str:
@@ -701,9 +704,10 @@ def _abstain_banner(res) -> str:
     'abstain' means every fact-bearing claim failed: there is nothing left in
     the answer that the cited pages support. A warning appended below the
     sources reads as a footnote to a confident-looking body, so it LEADS the
-    message instead — and the body it leads is the original answer, never a
-    repair, because a rewrite of an answer whose every claim failed is a
-    rewrite with nothing to stand on.
+    message instead. The body it leads is the answer the model wrote: the
+    verifier never rewrites it (see the block comment above), and an answer
+    whose every claim failed is in any case the last one a rewrite could stand
+    on.
     """
     return ("⚠️ Retrieval did not surface evidence for this — none of these "
             "claims could be checked against the cited pages, so treat the "
@@ -715,18 +719,18 @@ def _verification_lines(res) -> list:
     answer verified clean.
 
     Same shape as the existing invalid-citation warning: ⚠️ lines appended to
-    the sources block, never a separate ceremony. A repair is announced quietly
-    (the corrected text is already on screen); everything else names the claims
-    it could not stand behind, because an unflagged partial answer reads
-    exactly like a verified one. 'abstain' is absent on purpose: it leads the
-    answer message itself (see _abstain_banner).
+    the sources block, never a separate ceremony. Each line names the claims
+    the verifier could not stand behind, because an unflagged partial answer
+    reads exactly like a verified one. 'abstain' is absent on purpose: it leads
+    the answer message itself (see _abstain_banner). There is no '✎ corrected'
+    line any more — 'repaired' became unreachable when verification turned into
+    a pure detector (eac4c94), and a line announcing a correction that never
+    happened would misdescribe the text on screen.
     """
     if res is None:
         return []
     lines = []
-    if res.status == "repaired":
-        lines.append("✎ answer corrected against the cited pages")
-    elif res.status == "partial":
+    if res.status == "partial":
         # failures, not just `unsupported`: a CONTRADICTED claim is the worse
         # of the two failure kinds, and printing only the unsupported ones left
         # an empty list under the warning while a wrong figure sat on screen
@@ -770,31 +774,30 @@ def _verifier_flagged_cites(res) -> set:
 
 
 async def _verify_reply(reply, evidence: dict):
-    """Audit a finished answer; returns the RepairResult, or None when the
-    verification could not run.
+    """Audit a finished answer; returns the verification result, or None when
+    the verification could not run.
 
-    Never raises, and never leaves a half-applied repair on screen: a verifier
-    that breaks answering is strictly worse than no verifier, so every failure
-    path ends with the answer exactly as the model wrote it.
+    The audit does not edit the answer: verify_answer hands back the text it was
+    given (eac4c94), so the only thing this can add to the message is the
+    abstain banner. It never raises either — a verifier that breaks answering is
+    strictly worse than no verifier, so every failure path ends with the answer
+    exactly as the model wrote it.
     """
     original = reply.content
     try:
         async with cl.Step(name="verification") as step:
             res = await cl.make_async(verify.verify_answer)(
-                original, evidence, use_llm=config.VERIFY_LLM,
-                allow_repair=config.VERIFY_REPAIR)
+                original, evidence, use_llm=config.VERIFY_LLM)
             step.output = "\n".join(
                 [f"status: {res.status}",
                  "claims: " + ", ".join(f"{k} {n}" for k, n in res.counts().items())]
                 + [f"- {v.status}: {_claim_texts([v], width=90)} — {v.reason}"
                    for v in res.failures[:6]] + list(res.notes))
-        # abstain keeps the ORIGINAL body and leads it with the warning;
-        # every other status shows whatever the verifier returned
-        body = original if res.status == "abstain" else (res.answer or original)
-        text = (_abstain_banner(res) + "\n\n" + body
-                if res.status == "abstain" else body)
-        if text != original:
-            reply.content = text
+        # 'abstain' — every fact-bearing claim failed — is the one status that
+        # touches the message at all, and it PREFIXES the model's own body
+        # rather than replacing any part of it.
+        if res.status == "abstain":
+            reply.content = _abstain_banner(res) + "\n\n" + original
             await reply.update()
         return res
     except Exception as e:                        # noqa: BLE001
@@ -1281,8 +1284,9 @@ async def main(message: cl.Message):
             await reply.stream_token(part.choices[0].delta.content)
     await reply.send()
 
-    # Claim-level audit of what was just written, BEFORE it becomes history: a
-    # repaired answer is the one the next turn's conductor should remember.
+    # Claim-level audit of what was just written, BEFORE it becomes history: an
+    # abstained answer enters history banner and all, so the next turn's
+    # conductor remembers the caveat rather than a bare unverified claim.
     res = await _verify_reply(reply, evidence) if evidence is not None else None
 
     history += [
@@ -1294,9 +1298,9 @@ async def main(message: cl.Message):
     if hits:
         # order sources/evidence by what the answer actually cited (review #6):
         # cited (doc,page) pairs first, uncited retrieved hits after. With
-        # verification on, the citations are re-parsed from the FINAL answer by
-        # verify.cited_sources — page-aware, and correct after a repair moved a
-        # citation; with it off, the same regex over the answer as before.
+        # verification on, the citations are re-parsed from the answer by
+        # verify.cited_sources, which is page-aware; with it off, the same
+        # regex over the answer as before.
         if res is not None:
             cited_docs = {d for d, _ in res.sources}
             cited_keys = {(d, p) for d, p in res.sources if p}

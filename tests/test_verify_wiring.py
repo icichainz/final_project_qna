@@ -1,20 +1,31 @@
 """Plan step 6 — the step-5 claim verifier, wired into the app behind its own
 switch (config.VERIFY, default OFF).
 
+Since eac4c94 the verifier is a PURE DETECTOR: verify_answer takes no repair
+flag, hands back the answer it was given, and never reports status 'repaired'.
+The wiring's whole job is therefore to run it and to REPORT — the text the user
+reads is the model's own, with exactly one exception (the abstain banner, which
+is prefixed above that text, never a substitute for it).
+
 verify.py is tested in test_verify.py; what is tested here is the WIRING,
 driven through the real main() with Chainlit I/O and the OpenAI client faked
 out (the harness of test_step1_isolation.py / test_planner_wiring.py):
 
 A. the switch. VERIFY=0 must not call the verifier at all — not even to build
-   evidence — and must leave the turn byte-identical to today's.
+   evidence — and must leave the turn byte-identical to today's. A stray
+   VERIFY_REPAIR in the environment is inert: nothing reads it.
 B. the pass. Evidence is built from THIS turn's hits and the same computed
-   note blocks the context received; a repair replaces the message content and
-   the history entry; a clean answer shows nothing extra.
+   note blocks the context received; the answer text and the history entry are
+   the model's own whatever the verdicts say; a clean answer shows nothing extra.
 C. degradation. A verifier that raises leaves the original answer on screen.
 D. the UI, one status at a time, plus the sources/grounding ordering, which
-   follows the FINAL answer's citations (res.sources) once verification ran.
+   follows the answer's citations as verify.cited_sources parses them (page
+   aware) once verification ran.
+E. the live path, at the production config (VERIFY=1, VERIFY_LLM=1): the exact
+   message stream, pinned byte for byte.
 """
 import asyncio
+import importlib
 import json
 import sys
 import types
@@ -183,10 +194,12 @@ def _verdict(text, status=verify.UNSUPPORTED, reason="not in the cited page",
     return verify.Verdict(_claim(text, kind), status, reason, flags=list(flags))
 
 
-def _result(answer, status, verdicts=(), original=None, notes=()):
-    return verify.RepairResult(answer, status, list(verdicts),
-                               original if original is not None else answer,
-                               repaired=(status == "repaired"), notes=list(notes))
+def _result(answer, status, verdicts=()):
+    """A verification result under the post-eac4c94 contract: `.answer` is the
+    text that went IN, `.repaired` is False, and 'repaired' is not a status any
+    more. Built from the three fields the detector still fills, so it keeps
+    working if verify.py drops the repair-era ones it no longer sets."""
+    return verify.RepairResult(answer, status, list(verdicts))
 
 
 def _stub_verify(monkeypatch, result, record=None):
@@ -203,7 +216,26 @@ def _stub_verify(monkeypatch, result, record=None):
 # ---------------------------------------------------------------------------
 def test_verify_is_off_by_default():
     assert config.VERIFY is False
-    assert config.VERIFY_LLM is True and config.VERIFY_REPAIR is True
+    assert config.VERIFY_LLM is True
+
+
+def test_there_is_no_repair_switch_left(monkeypatch):
+    """The inertness proof for a stray VERIFY_REPAIR=1.
+
+    The .env that ships to production still carries a VERIFY_REPAIR line, and
+    an operator may well write =1 into one. It cannot do anything: config
+    exposes no such attribute, so no code path can consult it, and re-importing
+    config with the variable set changes not one value.
+    """
+    assert not hasattr(config, "VERIFY_REPAIR")
+    monkeypatch.setenv("VERIFY_REPAIR", "1")
+    try:
+        fresh = importlib.reload(config)
+        assert not hasattr(fresh, "VERIFY_REPAIR")
+        assert fresh.VERIFY is False and fresh.VERIFY_LLM is True
+    finally:
+        monkeypatch.delenv("VERIFY_REPAIR", raising=False)
+        importlib.reload(config)
 
 
 def test_verify_off_never_touches_the_verifier(monkeypatch, app_env):
@@ -272,43 +304,45 @@ def test_evidence_is_built_from_the_hits_and_the_context_notes(monkeypatch, app_
     assert all(isinstance(n, str) and n for n in notes)
 
 
-def test_the_verifier_receives_the_switches(monkeypatch, app_env):
+def test_the_verifier_receives_the_judge_switch_and_nothing_about_repair(
+        monkeypatch, app_env):
+    """use_llm is the only switch the app forwards. `allow_repair` is not
+    passed at all — the parameter is gone from verify_answer, and passing a
+    dead kwarg is how a deleted feature comes back as a TypeError."""
     monkeypatch.setattr(config, "VERIFY", True)
     monkeypatch.setattr(config, "VERIFY_LLM", False)
-    monkeypatch.setattr(config, "VERIFY_REPAIR", False)
+    monkeypatch.setenv("VERIFY_REPAIR", "1")          # inert, and proven so here
     record = []
     _stub_verify(monkeypatch, _result(GOOD_ANSWER, "verified"), record)
     _run_main(monkeypatch, Q220, [],
               FakeOpenAI(conductor_json=CONDUCTOR_ONE, answer=GOOD_ANSWER))
-    assert record[0]["use_llm"] is False and record[0]["allow_repair"] is False
+    assert record[0]["use_llm"] is False
+    assert "allow_repair" not in record[0]
     assert record[0]["answer"] == GOOD_ANSWER
     assert (FP220, 5) in record[0]["evidence"]        # the retrieved page itself
 
 
-def test_a_repair_replaces_the_message_and_the_history_entry(monkeypatch, app_env):
-    """The plan's point: what the user reads and what the next turn remembers
-    are both the CORRECTED text, never the figure the model first wrote."""
+@pytest.mark.parametrize("status,verdicts", [
+    ("verified", ()),
+    ("partial", (_verdict("FP220 requests USD 58,000,000."),)),
+    ("unverified-llm", (_verdict("FP220 requests USD 58,000,000."),)),
+])
+def test_a_failed_claim_never_edits_the_answer_or_the_history(
+        monkeypatch, app_env, status, verdicts):
+    """The post-eac4c94 point, and the inverse of the test that used to stand
+    here: a wrong figure is REPORTED, never overwritten. Whatever the verdicts
+    are, the user reads the sentence the model wrote and the next turn
+    remembers that same sentence — no message update happens at all."""
     monkeypatch.setattr(config, "VERIFY", True)
     wrong = f"FP220 requests USD 58,000,000 from the GCF [{FP220}, p. 5]."
-    fixed = f"FP220 requests USD 50,000,000 from the GCF [{FP220}, p. 5]."
-    _stub_verify(monkeypatch, _result(fixed, "repaired", original=wrong))
-    client = FakeOpenAI(conductor_json=CONDUCTOR_ONE, answer=wrong)
-    session, _ = _run_main(monkeypatch, Q220, [], client)
-
-    assert FakeMessage.updated == [fixed]                 # the message was updated
-    assert session.get("history")[-1] == {"role": "assistant", "content": fixed}
-    assert "58,000,000" not in session.get("history")[-1]["content"]
-    assert "✎ answer corrected against the cited pages" in _sources_line()
-
-
-def test_history_keeps_the_original_when_nothing_was_repaired(monkeypatch, app_env):
-    monkeypatch.setattr(config, "VERIFY", True)
-    _stub_verify(monkeypatch, _result(GOOD_ANSWER, "partial",
-                                      [_verdict("FP220 covers 12 countries.")]))
+    _stub_verify(monkeypatch, _result(wrong, status, verdicts))
     session, _ = _run_main(monkeypatch, Q220, [],
-                           FakeOpenAI(conductor_json=CONDUCTOR_ONE, answer=GOOD_ANSWER))
-    assert FakeMessage.updated == []
-    assert session.get("history")[-1]["content"] == GOOD_ANSWER
+                           FakeOpenAI(conductor_json=CONDUCTOR_ONE, answer=wrong))
+
+    assert FakeMessage.updated == []                      # nothing was rewritten
+    assert FakeMessage.sent[0] == wrong
+    assert session.get("history")[-1] == {"role": "assistant", "content": wrong}
+    assert "✎" not in _sources_line()
 
 
 # ---------------------------------------------------------------------------
@@ -344,11 +378,12 @@ def test_a_raising_build_evidence_skips_verification(monkeypatch, app_env):
 
 
 def test_a_failing_message_update_still_leaves_the_original(monkeypatch, app_env):
-    """The repair landed but the UI update threw: the user must not be left
-    with a half-applied answer."""
+    """The abstain banner is the only thing that updates the message at all,
+    and the update threw: the user must not be left with a half-applied
+    message, and history must match what is on screen."""
     monkeypatch.setattr(config, "VERIFY", True)
-    fixed = f"FP220 requests USD 50,000,000 [{FP220}, p. 5]."
-    _stub_verify(monkeypatch, _result(fixed, "repaired", original=GOOD_ANSWER))
+    _stub_verify(monkeypatch, _result(GOOD_ANSWER, "abstain",
+                                      [_verdict("FP220 covers 12 countries.")]))
 
     async def _bad_update(self):
         raise IOError("websocket closed")
@@ -357,27 +392,28 @@ def test_a_failing_message_update_still_leaves_the_original(monkeypatch, app_env
     session, _ = _run_main(monkeypatch, Q220, [],
                            FakeOpenAI(conductor_json=CONDUCTOR_ONE, answer=GOOD_ANSWER))
     assert session.get("history")[-1]["content"] == GOOD_ANSWER
-    assert "✎" not in (_sources_line() or "")
+    assert "⚠️ Retrieval did not surface evidence" not in (_sources_line() or "")
 
 
 # ---------------------------------------------------------------------------
 # D. the UI, one status at a time
 # ---------------------------------------------------------------------------
-@pytest.mark.parametrize("status,verdicts,expect,absent", [
-    ("verified", (), None, "⚠️"),
-    ("repaired", (), "✎ answer corrected against the cited pages", "⚠️"),
+# 'repaired' is deliberately not in this table: the status is unreachable now
+# (verify_answer never returns it), and the ✎ line it used to render is gone —
+# the app must never claim a correction it cannot make.
+@pytest.mark.parametrize("status,verdicts,expect", [
+    ("verified", (), None),
     ("partial", (_verdict("FP220 covers 12 countries."),),
      "⚠️ not supported by the retrieved pages (treat with caution): "
-     "FP220 covers 12 countries.", "✎"),
+     "FP220 covers 12 countries."),
     ("unverified-llm", (_verdict("FP220 covers 12 countries."),),
      "⚠️ claims could not be re-checked (no verification model available); "
-     "the deterministic checks flag: FP220 covers 12 countries.", "✎"),
+     "the deterministic checks flag: FP220 covers 12 countries."),
 ])
 def test_each_status_renders_its_own_line(monkeypatch, app_env, status, verdicts,
-                                          expect, absent):
+                                          expect):
     monkeypatch.setattr(config, "VERIFY", True)
-    answer = GOOD_ANSWER if status != "repaired" else GOOD_ANSWER + " (corrected)"
-    _stub_verify(monkeypatch, _result(answer, status, verdicts, original=GOOD_ANSWER))
+    _stub_verify(monkeypatch, _result(GOOD_ANSWER, status, verdicts))
     _run_main(monkeypatch, Q220, [],
               FakeOpenAI(conductor_json=CONDUCTOR_ONE, answer=GOOD_ANSWER))
     line = _sources_line()
@@ -385,7 +421,7 @@ def test_each_status_renders_its_own_line(monkeypatch, app_env, status, verdicts
         assert line == f"📎 Sources: {FP220} p.5"
     else:
         assert expect in line
-    assert absent not in line
+    assert "✎" not in line
 
 
 def test_a_contradicted_only_partial_still_names_its_claims(monkeypatch, app_env):
@@ -404,24 +440,25 @@ def test_a_contradicted_only_partial_still_names_its_claims(monkeypatch, app_env
             "FP220 requests USD 58,000,000." in _sources_line())
 
 
-def test_abstain_leads_the_answer_and_keeps_the_original_body(monkeypatch, app_env):
-    """Review finding 2. Every fact-bearing claim failed, so: the body stays
-    the model's own text (a repair of an all-failed answer stands on nothing),
-    and the warning goes ABOVE it instead of below the sources, where it read
-    as a footnote to a confident-looking answer."""
+def test_abstain_leads_the_answer_and_keeps_the_model_s_body(monkeypatch, app_env):
+    """Review finding 2, and the one place the verifier touches the message.
+    Every fact-bearing claim failed, so the warning goes ABOVE the answer
+    instead of below the sources, where it read as a footnote to a
+    confident-looking body. What it leads is the model's own text — the banner
+    is a PREFIX, and nothing inside the answer is altered."""
     monkeypatch.setattr(config, "VERIFY", True)
-    rewritten = f"FP220 requests USD 99,000,000 [{FP220}, p. 5]."
     _stub_verify(monkeypatch, _result(
-        rewritten, "abstain", [_verdict("FP220 requests USD 99,000,000.")],
-        original=GOOD_ANSWER))
+        GOOD_ANSWER, "abstain", [_verdict("FP220 requests USD 99,000,000.")]))
     session, _ = _run_main(monkeypatch, Q220, [],
                            FakeOpenAI(conductor_json=CONDUCTOR_ONE, answer=GOOD_ANSWER))
 
     shown = FakeMessage.updated[-1]
     assert shown.startswith("⚠️ Retrieval did not surface evidence for this")
     assert "FP220 requests USD 99,000,000." in shown.splitlines()[0]   # the claim
-    assert shown.endswith("\n\n" + GOOD_ANSWER)          # the ORIGINAL body
-    assert "99,000,000 [" not in shown                   # never the rewrite
+    assert shown.endswith("\n\n" + GOOD_ANSWER)          # the model's own body
+    assert shown == app._abstain_banner(
+        _result(GOOD_ANSWER, "abstain",
+                [_verdict("FP220 requests USD 99,000,000.")])) + "\n\n" + GOOD_ANSWER
     assert session.get("history")[-1]["content"] == shown
     # and it is not repeated as a footnote under the sources
     assert "⚠️" not in _sources_line()
@@ -526,7 +563,7 @@ def test_cite_key_matches_the_two_reporters_spellings():
 
 
 # ---------------------------------------------------------------------------
-# E. the REAL repair path, with only the OpenAI client mocked
+# E. the REAL verification pass, with only the OpenAI client mocked
 # ---------------------------------------------------------------------------
 class FakeVerifierClient:
     """The stand-in test_verify.py uses: replies in order, records calls."""
@@ -552,91 +589,38 @@ JUDGE_SAYS_UNSUPPORTED = json.dumps(
     {"verdicts": [{"id": 0, "status": "unsupported", "reason": "page states 50,000,000"}]})
 
 
-def test_a_real_repair_that_lands_shows_the_corrected_text(monkeypatch, app_env):
-    """End to end through verify.py itself: extract -> classify -> adjudicate
-    -> repair -> re-verify, with only the OpenAI client faked."""
+def test_a_real_wrong_answer_is_flagged_and_left_exactly_as_written(
+        monkeypatch, app_env):
+    """End to end through verify.py itself — extract -> classify -> adjudicate
+    -> report — with only the OpenAI client faked.
+
+    This is where the repair used to run: the old wiring swapped a rewrite onto
+    the screen and announced '✎ corrected'. None of that happens now. The wrong
+    figure stays on screen, in history and in the warning under the sources —
+    which is the only thing about the turn that verification changes.
+
+    How many model calls the pass itself makes is verify.py's contract and is
+    pinned in test_verify.py; what is pinned HERE is that no result the pass can
+    return reaches the answer text, because the wiring never reads res.answer.
+    """
     monkeypatch.setattr(config, "VERIFY", True)
-    fixed = (f"FP220 requests USD 50,000,000 from the GCF [{FP220}, p. 5].\n"
-             f"The accredited entity is IFAD [{FP220}, p. 5].")
-    client = FakeVerifierClient(JUDGE_SAYS_UNSUPPORTED, fixed)
-    monkeypatch.setattr(verify, "_client", lambda: client)
-    session, _ = _run_main(monkeypatch, Q220, [],
-                           FakeOpenAI(conductor_json=CONDUCTOR_ONE, answer=WRONG_ANSWER))
-
-    assert len(client.calls) == 2                       # adjudicate + repair
-    assert FakeMessage.updated == [fixed]
-    assert session.get("history")[-1]["content"] == fixed
-    assert "58,000,000" not in session.get("history")[-1]["content"]
-    assert "✎ answer corrected against the cited pages" in _sources_line()
-
-
-def test_a_real_repair_that_stays_wrong_ends_partial_and_flagged(monkeypatch, app_env):
-    """Review finding 20, through the real repair pass: the rewrite still fails
-    verification. verify.py's repair gate decides whether that rewrite is kept;
-    whatever it returns as res.answer is what the app shows, and the warning
-    names res.failures. Pinned here on the integration as it stands — the
-    rewrite is rejected, so the model's own text is what the user reads."""
-    monkeypatch.setattr(config, "VERIFY", True)
-    still_wrong = (f"FP220 requests USD 61,000,000 from the GCF [{FP220}, p. 5].\n"
-                   f"The accredited entity is IFAD [{FP220}, p. 5].")
-    client = FakeVerifierClient(JUDGE_SAYS_UNSUPPORTED, still_wrong)
-    monkeypatch.setattr(verify, "_client", lambda: client)
-    session, _ = _run_main(monkeypatch, Q220, [],
-                           FakeOpenAI(conductor_json=CONDUCTOR_ONE, answer=WRONG_ANSWER))
-
-    assert len(client.calls) == 2                       # adjudicate + repair
-    step = next(s for s in FakeStep.steps if s.name == "verification")
-    assert step.output.startswith("status: partial")
-    shown = (FakeMessage.updated or [WRONG_ANSWER])[-1]
-    assert shown == session.get("history")[-1]["content"]      # screen == memory
-    line = _sources_line()
-    assert "⚠️ not supported by the retrieved pages (treat with caution): " in line
-    assert "USD 58,000,000" in line                     # the surviving claim
-    assert "✎" not in line                              # nothing was corrected
-
-
-def test_a_rewritten_partial_is_shown_and_still_flagged(monkeypatch, app_env):
-    """The other half of finding 20, at the wiring level: a RepairResult whose
-    status is 'partial' AND whose answer differs from the original. The public
-    API permits it (repair() returns its rewrite with the re-verified status),
-    so the wiring must both DISPLAY the rewrite and warn about what still
-    fails — in the rewrite's own wording, never the original's."""
-    monkeypatch.setattr(config, "VERIFY", True)
-    rewritten = (f"FP220 requests USD 61,000,000 from the GCF [{FP220}, p. 5].\n"
-                 f"The accredited entity is IFAD [{FP220}, p. 5].")
-    _stub_verify(monkeypatch, _result(
-        rewritten, "partial",
-        [_verdict("FP220 requests USD 61,000,000 from the GCF.")],
-        original=WRONG_ANSWER))
-    session, _ = _run_main(monkeypatch, Q220, [],
-                           FakeOpenAI(conductor_json=CONDUCTOR_ONE, answer=WRONG_ANSWER))
-
-    assert FakeMessage.updated == [rewritten]           # the rewrite is on screen
-    assert session.get("history")[-1]["content"] == rewritten
-    line = _sources_line()
-    assert "USD 61,000,000" in line                     # the REWRITE's figure
-    assert "58,000,000" not in line                     # not the original's
-    assert "✎" not in line
-
-
-def test_a_real_repair_that_invents_a_source_is_rejected(monkeypatch, app_env):
-    """verify.py drops a repair that introduces a citation; the app must then
-    show the ORIGINAL answer, flagged — not the invented one."""
-    monkeypatch.setattr(config, "VERIFY", True)
-    invented = f"FP220 requests USD 50,000,000 [{FP220}, p. 404]."
-    client = FakeVerifierClient(JUDGE_SAYS_UNSUPPORTED, invented)
+    client = FakeVerifierClient(JUDGE_SAYS_UNSUPPORTED)
     monkeypatch.setattr(verify, "_client", lambda: client)
     session, _ = _run_main(monkeypatch, Q220, [],
                            FakeOpenAI(conductor_json=CONDUCTOR_ONE, answer=WRONG_ANSWER))
 
     assert FakeMessage.updated == []
+    assert FakeMessage.sent[0] == WRONG_ANSWER
     assert session.get("history")[-1]["content"] == WRONG_ANSWER
-    assert "p. 404" not in "".join(FakeMessage.sent)
-    assert "⚠️" in _sources_line()
+    step = next(s for s in FakeStep.steps if s.name == "verification")
+    assert not step.output.startswith("status: repaired")
+    line = _sources_line()
+    assert "⚠️" in line and "58,000,000" in line   # the claim, named as failing
+    assert "✎" not in line                        # nothing was corrected
 
 
 # ---------------------------------------------------------------------------
-# D. sources + grounding follow the FINAL answer's citations
+# D (cont.). sources + grounding follow the answer's own citations
 # ---------------------------------------------------------------------------
 MIXED_HITS = [
     Hit(text="FP254 background prose.", doc_id=FP254, score=0.9, page=3),
@@ -646,27 +630,23 @@ MIXED_HITS = [
 
 
 def test_sources_ordering_follows_res_sources(monkeypatch, app_env):
-    """The answer TEXT cites FP254; the verified result cites FP248 p.5 (this
-    is what a repair does). res.sources wins — that is the plan's 'display only
-    sources actually cited by the final verified answer'."""
+    """res.sources — verify.cited_sources over the answer — is what orders and
+    filters the sources line once verification ran: 'display only sources
+    actually cited by the final verified answer'. The retrieved FP254 page the
+    answer never cites is dropped, and the cited page is grounded first."""
     monkeypatch.setattr(config, "VERIFY", True)
     order = []
     monkeypatch.setattr(app, "ground_chunk",
                         lambda payload: order.append((payload["doc_id"], payload["page"]))
                         or None)
-    repaired = f"FP248 requests 59,484,751 Eur [{FP248}, p. 5]."
-    _stub_verify(monkeypatch, _result(repaired, "repaired",
-                                      original=f"FP254 is bigger [{FP254}, p. 3]."))
+    answer = f"FP248 requests 59,484,751 Eur [{FP248}, p. 5]."
+    _stub_verify(monkeypatch, _result(answer, "verified"))
     _run_main(monkeypatch, "Compare FP254 and FP248", [],
-              FakeOpenAI(conductor_json=CONDUCTOR_ONE,
-                         answer=f"FP254 is bigger [{FP254}, p. 3]."),
+              FakeOpenAI(conductor_json=CONDUCTOR_ONE, answer=answer),
               FakeRetriever(MIXED_HITS))
 
     line = _sources_line()
-    # the FP254 hit the ORIGINAL answer cited is gone; the repaired answer's
-    # document leads, and its cited page is grounded first
-    assert line == (f"📎 Sources: {FP248} p.5, {FP248} p.9"
-                    "\n✎ answer corrected against the cited pages")
+    assert line == f"📎 Sources: {FP248} p.5, {FP248} p.9"
     assert FP254 not in line
     assert order[0] == (FP248, 5)
 
@@ -698,3 +678,46 @@ def test_verify_off_ordering_is_the_old_regex_over_the_answer(monkeypatch, app_e
               FakeRetriever(MIXED_HITS))
     assert order[0] == (FP248, 5)
     assert _sources_line() == f"📎 Sources: {FP248} p.5, {FP248} p.9"
+
+
+# ---------------------------------------------------------------------------
+# F. the live path, pinned byte for byte
+#
+# Production runs VERIFY=1 with VERIFY_LLM at its shipped default of 1
+# (fp-gcf:22f558b). Deleting the repair pathway must not move a single byte of
+# what such a turn puts on screen, so these two pin the whole message stream
+# literally — and they run with a stray VERIFY_REPAIR=1 in the environment,
+# because that is what a production .env may still carry.
+# ---------------------------------------------------------------------------
+def _production_turn(monkeypatch, status, verdicts=()):
+    monkeypatch.setattr(config, "VERIFY", True)
+    assert config.VERIFY_LLM is True            # production leaves the judge on
+    monkeypatch.setenv("VERIFY_REPAIR", "1")    # inert: nothing reads it
+    _stub_verify(monkeypatch, _result(GOOD_ANSWER, status, verdicts))
+    return _run_main(monkeypatch, Q220, [],
+                     FakeOpenAI(conductor_json=CONDUCTOR_ONE, answer=GOOD_ANSWER))
+
+
+def test_the_live_path_of_a_verified_turn_is_unchanged(monkeypatch, app_env):
+    session, _ = _production_turn(monkeypatch, "verified")
+    assert FakeMessage.sent == [
+        f"FP220 requests USD 50,000,000 from the GCF [{FP220}, p. 5].",
+        f"📎 Sources: {FP220} p.5",
+    ]
+    assert FakeMessage.updated == []
+    assert session.get("history")[-1] == {"role": "assistant",
+                                          "content": GOOD_ANSWER}
+
+
+def test_the_live_path_of_a_partial_turn_is_unchanged(monkeypatch, app_env):
+    session, _ = _production_turn(
+        monkeypatch, "partial", (_verdict("FP220 covers 12 countries."),))
+    assert FakeMessage.sent == [
+        f"FP220 requests USD 50,000,000 from the GCF [{FP220}, p. 5].",
+        f"📎 Sources: {FP220} p.5"
+        "\n⚠️ not supported by the retrieved pages (treat with caution): "
+        "FP220 covers 12 countries.",
+    ]
+    assert FakeMessage.updated == []
+    assert session.get("history")[-1] == {"role": "assistant",
+                                          "content": GOOD_ANSWER}

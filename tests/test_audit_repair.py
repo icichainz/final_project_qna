@@ -1,27 +1,61 @@
 """Fixture tests for scripts/audit_repair.py — the Wave 4 repair A/B.
 
-NO TEST HERE MAKES AN API CALL. Every judge and repair completion is served
-by a stub client whose text is written in the test, and ``test_zero_api``
-proves it: ``verify._client`` is replaced by a function that raises, so any
-path that reached for a real client would fail the suite rather than bill it.
+HALF OF THE INSTRUMENT IS RETIRED (eac4c94), AND SO IS HALF OF THIS FILE.
+eac4c94 abandoned automatic repair adoption and deleted ``verify.repair``.
+``audit_repair.replay`` — which made LIVE repair calls to RECORD an arm file —
+went with it; ``audit_repair.audit`` — which READS recorded arm files — did not,
+because the recorded artifacts under ``data/eval`` are permanent measurement
+history with pinned checksums and an instrument that cannot read them makes that
+history unreadable.
+
+RETIRED HERE (the recorder, and the stubs that fed it)
+
+  test_off_arm_is_byte_identical_to_verify_answer_with_repair_off
+      standing rule 3 applied to an A/B: prove the OFF arm equals
+      ``verify_answer(allow_repair=0)``. There is one arm now, and it is that
+      one; ``allow_repair`` is not a parameter.
+  test_one_judge_call_and_one_repair_call_shared
+  test_no_failures_means_no_repair_call
+  test_guard_and_error_rows_are_carried_through_every_arm
+      the replay's call discipline: one judge sample shared by every arm, no
+      repair call on a clean answer, guard/chat/error rows carried untouched so
+      they cancel instead of moving a rate. All three describe calls that are
+      no longer made.
+  test_carry_off_context_manager_restores_the_binding
+  test_carry_off_can_reject_what_carry_on_adopts
+      ``no_carry_cleared`` patched ``verify._carry_cleared`` for the carry-off
+      scoring. Both the binding and the second scoring are gone. (The second of
+      these already carried a self-disabling skip keyed on
+      ``inspect.getsource(verify.repair)`` — the skip's own premise is now
+      permanent.)
+  test_replay_records_every_sample_with_its_metrics
+      pinned what the RECORDER wrote into ``repair_samples``. The shape it
+      pinned is still pinned — by ``sampled_arms`` below, which builds it by
+      hand — but nothing produces it any more, so the producer's test goes.
+
+RE-EXPRESSED, NOT RETIRED. The reproducibility, sample-world, spread and gate
+tests used ``replay`` only as a fixture GENERATOR: their subject was always the
+audit's reading of the record. They now build the recorded rows directly
+(``sampled_arms``), which is a better test of a file format than generating it
+with the code under test, and it is why those paths are still covered.
+
+NO TEST HERE MAKES AN API CALL — and after eac4c94 no test here has a client at
+all. ``test_zero_api`` and ``test_zero_api_on_the_new_paths`` still prove it
+rather than asserting it: ``verify._client`` is replaced by a function that
+raises, so any path that reached for a real client would fail the suite.
 
 The properties pinned, in the order the plan asks for them:
 
-  * the OFF arm is byte-identical to ``verify.verify_answer(allow_repair=0)``
-    on a fixed fixture (standing rule 3: fallback proofs, not assertions);
-  * one judge call and one repair call per case, shared between the arms —
-    the whole methodological point;
-  * the carry-off scoring re-uses the SAME repaired text, and can disagree
-    with carry-on about adoption (an instrument that cannot see the
-    difference is the Wave-2 blind-spot failure repeated);
   * every invented-source shape is DETECTED, one test per shape, and the
     negative case (a figure that really is in the evidence) is not;
   * a lost supported claim gates, and a documented one does not;
-  * corrected / deleted / qualified are three outcomes, not one.
+  * corrected / deleted / qualified are three outcomes, not one;
+  * the recorded arm format is read the same way the release harness scores it
+    (``_grounded_flags`` and ``_claims_block`` against ``eval_answers``);
+  * repair's run-to-run spread, its sample worlds, and the rule that a gate
+    margin inside the measured spread is INDETERMINATE — all read off records.
 """
-import inspect
 import json
-import re
 import sys
 from pathlib import Path
 
@@ -35,66 +69,16 @@ from gcf_qna.rag import verify                                   # noqa: E402
 
 
 # ---------------------------------------------------------------------------
-# stub client
+# RETIRED AT eac4c94: the stub clients
+#
+# `_Usage` `_Resp` `_Completions` `_Chat` `StubClient` `ExplodingClient` and
+# `replay_to` existed to serve canned judge and repair completions to
+# `audit_repair.replay`. There is no repair pass to serve and no replay to feed.
+# What replaced them is `sampled_arms` further down: the arm rows written as
+# data, which is what the audit reads anyway.
+#
+# git show eac4c94:tests/test_audit_repair.py
 # ---------------------------------------------------------------------------
-class _Usage:
-    prompt_tokens = 100
-    completion_tokens = 20
-    total_tokens = 120
-
-
-class _Resp:
-    model = "stub-snapshot"
-
-    def __init__(self, content):
-        self.choices = [ar._Choice(content)]
-        self.usage = _Usage()
-
-
-class _Completions:
-    def __init__(self, owner):
-        self._owner = owner
-
-    def create(self, **kwargs):
-        return self._owner._create(**kwargs)
-
-
-class _Chat:
-    def __init__(self, owner):
-        self.completions = _Completions(owner)
-
-
-class StubClient:
-    """Serves canned judge/repair completions and counts what was asked."""
-
-    def __init__(self, judge=None, repair=None):
-        self.chat = _Chat(self)
-        self.roles = []
-        self._judge = judge
-        self._repair = repair
-
-    def _create(self, **kwargs):
-        role = ar._call_role(kwargs)
-        self.roles.append(role)
-        if role == "judge":
-            if self._judge is None:
-                raise AssertionError("judge called but no judge reply staged")
-            return _Resp(json.dumps(self._judge))
-        if role == "repair":
-            if self._repair is None:
-                raise AssertionError("repair called but no repair reply staged")
-            return _Resp(self._repair)
-        raise AssertionError(f"unexpected call role {role}")
-
-
-class ExplodingClient:
-    """Any call at all is a test failure."""
-
-    def __init__(self):
-        self.chat = _Chat(self)
-
-    def _create(self, **kwargs):                                 # pragma: no cover
-        raise AssertionError("an API call was attempted")
 
 
 # ---------------------------------------------------------------------------
@@ -186,117 +170,6 @@ def test_nd_threshold_is_the_exact_integer():
     assert ar._nd(0, 0)["rate"] is None
 
 
-# ---------------------------------------------------------------------------
-# the replay: what differs between the arms, and what does not
-# ---------------------------------------------------------------------------
-def test_off_arm_is_byte_identical_to_verify_answer_with_repair_off(tmp_path):
-    """Standing rule 3: prove the off-path equals the pre-change path."""
-    answer = (f"FP151 requests **USD 18.5 million** in GCF funding "
-              f"[{DOC}, p. {PAGE}]. The total project cost is "
-              f"**USD 99,900,000** [{DOC}, p. {PAGE}].")
-    rec = record(answer)
-    ev_ = evidence_of(rec)
-    direct = verify.verify_answer(answer, ev_, client=StubClient(
-        judge={"verdicts": []}), use_llm=True, allow_repair=False)
-
-    _got, arms = replay_to(tmp_path, [rec],
-                           StubClient(judge={"verdicts": []}, repair=answer))
-    row = arms["off"]["t-case"]
-    assert row["answer"] == direct.answer == answer
-    assert row["verify_status"] == direct.status
-    assert [c["status"] for c in row["claim_rows"]] == [v.status for v in direct.verdicts]
-    assert row["repaired"] is False and row["repair_rejected"] is False
-
-
-def test_one_judge_call_and_one_repair_call_shared(tmp_path):
-    """The judge sample is COMMON to both arms; only repair differs."""
-    answer = (f"FP151 requests **USD 18.5 million** [{DOC}, p. {PAGE}]. "
-              f"The total project cost is **USD 99,900,000** [{DOC}, p. {PAGE}].")
-    fixed = f"FP151 requests **USD 18.5 million** [{DOC}, p. {PAGE}]."
-    client = StubClient(judge={"verdicts": []}, repair=fixed)
-    got, arms = replay_to(tmp_path, [record(answer)], client)
-    assert client.roles.count("repair") == 1, client.roles
-    assert client.roles.count("judge") <= 1, client.roles
-    on = arms["on"]["t-case"]["repair_replay"]
-    co = arms["on-carryoff"]["t-case"]["repair_replay"]
-    # the carry-off scoring made NO extra call and scored the SAME text
-    assert on["repair_text_sha256"] == co["repair_text_sha256"]
-    assert on["repair_calls"] == co["repair_calls"] == 1
-    assert got["summary"]["cases"] == 1
-
-
-def test_no_failures_means_no_repair_call(tmp_path):
-    """A clean answer must not reach the repair model at all."""
-    answer = f"FP151 requests **USD 18.5 million** in GCF funding [{DOC}, p. {PAGE}]."
-    client = StubClient(judge={"verdicts": []})       # no repair reply staged
-    _got, arms = replay_to(tmp_path, [record(answer)], client)
-    assert "repair" not in client.roles
-    for arm in ar.ARMS:
-        assert arms[arm]["t-case"]["answer"] == answer
-        assert arms[arm]["t-case"]["verify_status"] == "verified"
-
-
-def test_guard_and_error_rows_are_carried_through_every_arm(tmp_path):
-    """Production returns before verification on a guard turn; so must the
-    replay, in all three arms, so the rows cancel instead of moving a rate."""
-    rows = [record("guarded", case_id="g", guard=True),
-            record("chatty", case_id="c", chat=True),
-            dict(record("x", case_id="e"), error="boom")]
-    _got, arms = replay_to(tmp_path, rows, ExplodingClient())
-    for arm in ar.ARMS:
-        for cid in ("g", "c", "e"):
-            assert arms[arm][cid]["repair_replay"]["replayed"] is False
-            assert arms[arm][cid]["claim_rows"] == []
-
-
-def test_carry_off_context_manager_restores_the_binding():
-    saved = verify._carry_cleared
-    with ar.no_carry_cleared():
-        assert verify._carry_cleared is not saved
-        assert verify._carry_cleared([1, 2], ["ignored"]) == [1, 2]
-    assert verify._carry_cleared is saved
-
-
-def test_carry_off_can_reject_what_carry_on_adopts(tmp_path):
-    """The number the plan GATES on must be able to differ from the one
-    production ships. A scoring that cannot disagree is not a second opinion.
-
-    Setup: the judge clears a claim the deterministic matcher fails, and the
-    repair leaves that sentence untouched. `_carry_cleared` then re-clears it
-    after the rewrite (carry-on adopts); with the carry disabled the recheck
-    still fails and the repair is rejected (carry-off keeps the original).
-    """
-    if not re.search(r"_carry_cleared\s*\(", inspect.getsource(verify.repair)):
-        pytest.skip(
-            "verify.repair no longer carries pre-repair judge rulings across "
-            "the recheck, so the carry-on and carry-off scorings are the same "
-            "scoring by construction and this separation has nothing left to "
-            "separate. The replay keeps three arms so a recorded run stays "
-            "readable; restore the carry in verify.repair and this test wakes "
-            "up.")
-    bad = f"The programme covers **12 countries** [{DOC}, p. {PAGE}]."
-    answer = (f"FP151 requests **USD 18.5 million** [{DOC}, p. {PAGE}]. {bad} "
-              f"The total project cost is **USD 99,900,000** [{DOC}, p. {PAGE}].")
-    # the repair drops only the 99.9m sentence and keeps the judge-cleared one
-    repaired = f"FP151 requests **USD 18.5 million** [{DOC}, p. {PAGE}]. {bad}"
-
-    ev_ = evidence_of(record(answer))
-    det = verify.classify_deterministic(verify.extract_claims(answer), ev_)
-    plausible = [v for v in det if v.status == verify.UNSUPPORTED and v.plausible]
-    judge = {"verdicts": [{"id": v.claim.index, "status": "supported",
-                           "reason": "paraphrase"} for v in plausible
-                          if "countries" in v.claim.text]}
-    if not judge["verdicts"]:
-        pytest.skip("fixture no longer produces a judge-clearable claim")
-
-    _got, arms = replay_to(tmp_path, [record(answer)],
-                           StubClient(judge=judge, repair=repaired))
-    on, co = arms["on"]["t-case"], arms["on-carryoff"]["t-case"]
-    assert on["repair_replay"]["repair_text_sha256"] == \
-        co["repair_replay"]["repair_text_sha256"]
-    assert on["repaired"] != co["repaired"] or on["answer"] != co["answer"], (
-        "carry-on and carry-off produced the identical outcome on a fixture "
-        "built to separate them — the carry-off arm is not a second opinion")
 
 
 # ---------------------------------------------------------------------------
@@ -604,11 +477,13 @@ def test_zero_api(tmp_path, monkeypatch):
     rep = run_audit(tmp_path, [arm_row(a, [(a, SUP, True)])],
                     [arm_row(a, [(a, SUP, True)], arm="on")])
     assert rep["gate_pass"] is True
-    # the replay refuses rather than silently skipping the judge
+    # the recorder used to refuse rather than silently skip the judge; it now
+    # refuses outright, and names the decision that retired it
     src = tmp_path / "rel.jsonl"
     src.write_text(json.dumps(record(a)) + "\n", encoding="utf-8")
-    with pytest.raises(AssertionError):
+    with pytest.raises(SystemExit) as e:
         ar.replay(src, tmp_path / "rp")
+    assert "eac4c94" in str(e.value) and "RETIRED" in str(e.value)
 
 
 def test_write_refuses_to_overwrite_a_recorded_arm(tmp_path):
@@ -677,26 +552,44 @@ def test_cost_excludes_the_generation_calls_of_a_skipped_row(tmp_path):
 
 
 def test_pre_gate_probe_sees_a_rewrite_the_gate_threw_away(tmp_path):
-    """The adversarial probe. A repair that invents a citation AND leaves a
-    claim failing is rejected for the second reason; counting only ADOPTED
-    rewrites would report zero inventions from a pass that proposed one."""
+    """The adversarial probe, read off the record. A repair that invented a
+    citation AND left a claim failing was rejected for the second reason;
+    counting only ADOPTED rewrites would report zero inventions from a pass
+    that proposed one.
+
+    The `repair_pre_gate` block was written by the recorder (`_pre_gate`,
+    retired at eac4c94) and is present in the permanent arm files under
+    data/eval. `_pre_gate_probe`, which READS it, is not retired: it re-derives
+    the inventions from the recorded PROPOSAL with the audit's own code rather
+    than trusting the gate's post-check, and that is the whole point of the
+    probe. Built here as data, which is how it arrives from a recorded run."""
     answer = (f"FP151 requests **USD 18.5 million** [{DOC}, p. {PAGE}]. "
               f"The total project cost is **USD 99,900,000** [{DOC}, p. {PAGE}].")
     proposed = (f"FP151 requests **USD 18.5 million** [{DOC}, p. {PAGE}]. "
                 f"The total project cost is **USD 77,700,000** [999_invented, p. 3].")
-    client = StubClient(judge={"verdicts": []}, repair=proposed)
-    _got, arms = replay_to(tmp_path, [record(answer)], client)
-    on = arms["on"]["t-case"]
-    assert on["repaired"] is False and on["repair_rejected"] is True
-    pg = on["repair_replay"]["repair_pre_gate"]
-    assert pg["introduced_sources"], "verify's own gate saw nothing"
-    assert pg["would_adopt_without_carry"] is False
+    kept = f"FP151 requests **USD 18.5 million** [{DOC}, p. {PAGE}]."
+    lost = f"The total project cost is **USD 99,900,000** [{DOC}, p. {PAGE}]."
+    novel = f"The total project cost is **USD 77,700,000** [999_invented, p. 3]."
 
-    a = tmp_path / "off.jsonl"
-    b = tmp_path / "on.jsonl"
-    a.write_text(json.dumps(arms["off"]["t-case"]) + "\n", encoding="utf-8")
-    b.write_text(json.dumps(on) + "\n", encoding="utf-8")
-    rep = ar.audit(a, b)
+    off = arm_row(answer, [(kept, SUP, True), (lost, UNS, False)])
+    # the rewrite was REJECTED: the on arm ships the original answer untouched
+    on = arm_row(answer, [(kept, SUP, True), (lost, UNS, False)], arm="on")
+    on["repaired"] = False
+    on["repair_rejected"] = True
+    on["repair_replay"].update({
+        "arm": "on", "repair_calls": 1,
+        "repair_pre_gate": {
+            "text": proposed,
+            "introduced_sources": ["999_invented"],
+            "failures_before": 1, "failures_after": 1,
+            "failure_reasons_after": ["cited evidence was never retrieved"],
+            "supported_required_before": 1, "supported_required_after": 1,
+            "would_adopt_without_carry": False,
+            "claim_rows": arm_row(proposed, [(kept, SUP, True),
+                                             (novel, UNS, False)])["claim_rows"],
+        }})
+
+    rep = run_audit(tmp_path, [off], [on])
     probe = rep["pre_gate_probe"]
     assert probe["proposals"] == 1
     assert probe["verify_gate_caught_introduced_sources"]
@@ -710,87 +603,97 @@ def test_pre_gate_probe_sees_a_rewrite_the_gate_threw_away(tmp_path):
 # reproducibility: N samples of repair on IDENTICAL input
 #
 # The Wave-4 finding was that the table moves. These pin the instrument that
-# measures the movement: the recording (replay), the metric (audit), the gate
-# on it, and the rule that a gate margin inside the measured spread is
-# INDETERMINATE rather than a verdict.
+# measures the movement: the metric (audit), the gate on it, and the rule that a
+# gate margin inside the measured spread is INDETERMINATE rather than a verdict.
+#
+# The RECORDING half is retired (eac4c94), so the records are written here as
+# data instead of being generated by `replay`. Nothing is lost by that and one
+# thing is gained: these now test the audit against the recorded FORMAT, which
+# is the only thing the 12+ permanent artifacts under data/eval can offer it.
 # ---------------------------------------------------------------------------
-class SamplingStubClient:
-    """A DIFFERENT repair completion per call — the shape of an unpinned model.
-
-    `repairs` is consumed in order and the last entry repeats, so a test can
-    stage 'adopted, rejected, adopted-again-with-the-same-words' without
-    knowing how many calls the replay will make.
-    """
-
-    def __init__(self, judge=None, repairs=()):
-        self.chat = _Chat(self)
-        self.roles = []
-        self._judge = judge
-        self._repairs = list(repairs)
-        self.repair_calls = 0
-
-    def _create(self, **kwargs):
-        role = ar._call_role(kwargs)
-        self.roles.append(role)
-        if role == "judge":
-            return _Resp(json.dumps(self._judge or {"verdicts": []}))
-        if role == "repair":
-            if not self._repairs:
-                raise AssertionError("repair called but no repair reply staged")
-            i = min(self.repair_calls, len(self._repairs) - 1)
-            self.repair_calls += 1
-            return _Resp(self._repairs[i])
-        raise AssertionError(f"unexpected call role {role}")
-
-
 KEEP = f"GCF funding is **USD 18.5 million** [{DOC}, p. {PAGE}]."
 BAD = f"The programme covers **12 countries** [{DOC}, p. {PAGE}]."
 FIXED = f"The programme covers **9 countries** [{DOC}, p. {PAGE}]."
 
 
-def flipping_replay(tmp_path, samples=3):
-    """One case, three repair samples: adopted / rejected / adopted again.
+def _sample(index, adopted, identical, sha, off_answer=None, on_row=None):
+    """One entry of `repair_replay.repair_samples`, in the recorded shape.
 
-    Sample 2 hands back the answer unchanged, so the recheck still fails and
-    the rewrite is thrown away — an adoption FLIP on identical input, which is
-    the property Wave 4 found and could not gate.
+    Mirrors `audit_repair._sample_entry`: `text`/`claims`/`checks`/`claim_rows`
+    are stored ONLY for a sample past the first whose completion DIFFERS from
+    sample 1's, because repair was deterministic downstream of the completion
+    and re-storing an identical one would triple a recorded arm to say nothing.
     """
-    answer = KEEP + " " + BAD
-    client = SamplingStubClient(judge={"verdicts": []},
-                                repairs=[KEEP + " " + FIXED, answer,
-                                         KEEP + " " + FIXED])
-    got, arms = replay_to(tmp_path, [record(answer)], client,
-                          repair_samples=samples)
-    return got, arms, client
+    entry = {"sample": index, "identical_text": bool(identical),
+             "text_sha256": sha, "adopted": bool(adopted),
+             "rejected": not adopted, "carry_cleared": True,
+             "status": "repaired" if adopted else "partial",
+             "notes": [] if adopted else ["the rewrite still fails"],
+             "metrics": {"claims": 2, "supported": 2 if adopted else 1,
+                         "grounded": 2 if adopted else 1,
+                         "citation_supported": 2 if adopted else 1,
+                         "cited": 2, "contradicted": 0,
+                         "unsupported": 0 if adopted else 1,
+                         "checks_pass": True},
+             "calls": []}
+    if index > 1 and not identical and adopted and on_row is not None:
+        entry.update({"text": on_row["answer"], "claims": on_row["claims"],
+                      "checks": on_row["checks"],
+                      "claim_rows": on_row["claim_rows"]})
+    return entry
 
 
-def test_replay_records_every_sample_with_its_metrics(tmp_path):
-    """The record must carry what the metric needs. Wave 4's carried the
-    adoption bit and a sha256, which is why that wave could say the decision
-    flipped and not what the flip did to groundedness."""
-    got, arms, client = flipping_replay(tmp_path)
-    assert client.repair_calls == 3, client.roles
-    assert client.roles.count("judge") <= 1
-    s = arms["on"]["t-case"]["repair_replay"]["repair_samples"]
-    assert [x["sample"] for x in s] == [1, 2, 3]
-    assert [x["adopted"] for x in s] == [True, False, True]
-    assert [x["identical_text"] for x in s] == [True, False, True]
-    for x in s:
-        assert x["metrics"]["claims"] is not None
-        assert x["metrics"]["checks_pass"] in (True, False)
-    # the rewrite that DIFFERS is stored in full; the identical one is not
-    assert s[1]["text"] and s[1]["claim_rows"] and s[1]["checks"]
-    assert "text" not in s[2] and "text" not in s[0]
-    assert arms["on"]["t-case"]["repair_replay"]["repair_samples_carry"] == "on"
-    assert got["summary"]["cases_sampled"] == 1
-    assert got["summary"]["identical_completions"] == 0
-    assert got["summary"]["adoption_agreements"] == 0
+def sampled_arms(case_id="t-case", adoptions=(True, False, True)):
+    """(off, carry-off, carry-on) rows for one case sampled len(adoptions) times.
+
+    The default is Wave 4's finding in miniature: identical input, and the
+    adoption decision flips on the second sample. A sample that was NOT adopted
+    ships the ORIGINAL answer, so `_world_row` resolves it from the off row and
+    needs no recorded text — which is why only `adoptions` has to be given.
+    """
+    answer, fixed = KEEP + " " + BAD, KEEP + " " + FIXED
+    off = arm_row(answer, [(KEEP, SUP, True), (BAD, UNS, False)], case_id=case_id)
+    off["repair_replay"]["arm"] = "off"
+
+    def _on(arm):
+        row = arm_row(fixed, [(KEEP, SUP, True), (FIXED, SUP, True)],
+                      case_id=case_id, arm="on")
+        row["repaired"] = True
+        row["verify_status"] = "repaired"
+        row["repair_replay"].update({"arm": arm, "repair_calls": len(adoptions),
+                                     "repair_text_sha256": "sha-fixed"})
+        return row
+
+    carryon = _on("on")
+    carryoff = _on("on-carryoff")
+    carryon["repair_replay"]["repair_samples"] = [
+        _sample(i + 1, adopted, sha="sha-fixed" if adopted else "sha-unchanged",
+                identical=(i == 0 or adopted), on_row=carryon)
+        for i, adopted in enumerate(adoptions)]
+    carryon["repair_replay"]["repair_samples_carry"] = "on"
+    return off, carryoff, carryon
+
+
+def write_arms(tmp_path, off_rows, carryoff_rows, carryon_rows):
+    """The three arm files, on disk, exactly as a recorded replay left them."""
+    paths = {}
+    for name, rows in (("off", off_rows), ("on-carryoff", carryoff_rows),
+                       ("on", carryon_rows)):
+        p = tmp_path / f"replay_repair-{name}.jsonl"
+        p.write_text("".join(json.dumps(r) + "\n" for r in rows), encoding="utf-8")
+        paths[name] = p
+    return paths
+
+
+def flipping_arms(tmp_path, adoptions=(True, False, True)):
+    off, co, on = sampled_arms(adoptions=adoptions)
+    return write_arms(tmp_path, [off], [co], [on])
 
 
 def test_reproducibility_reports_the_four_things_the_plan_asks_for(tmp_path):
-    got, arms, _client = flipping_replay(tmp_path)
-    rep = ar.audit(Path(got["paths"]["off"]), Path(got["paths"]["on-carryoff"]),
-                   carry_on_path=Path(got["paths"]["on"]))
+    paths = flipping_arms(tmp_path)
+    rep = ar.audit(paths["off"], paths["on-carryoff"],
+                   carry_on_path=paths["on"])
     r = rep["reproducibility"]
     # (i) identical completions, (ii) adoption agreement
     assert r["cases_sampled"] == 1
@@ -812,35 +715,34 @@ def test_reproducibility_reports_the_four_things_the_plan_asks_for(tmp_path):
 
 
 def test_the_baseline_arm_is_the_carry_on_one(tmp_path):
-    """Every sample is drawn with the carry LIVE. Comparing it against the
+    """Every sample was drawn with the carry LIVE. Comparing it against the
     carry-OFF arm's decision folds the carry difference into the sampling
-    number — the mistake behind Wave 4's published 2/11."""
-    got, _arms, _c = flipping_replay(tmp_path)
-    with_carry = ar.audit(Path(got["paths"]["off"]),
-                          Path(got["paths"]["on-carryoff"]),
-                          carry_on_path=Path(got["paths"]["on"]))
+    number — the mistake behind Wave 4's published 2/11. The arm a recorded
+    sample belongs to is written in the record, so the audit can still tell."""
+    paths = flipping_arms(tmp_path)
+    with_carry = ar.audit(paths["off"], paths["on-carryoff"],
+                          carry_on_path=paths["on"])
     assert with_carry["reproducibility"]["baseline_arm"] == "carry-on"
     assert with_carry["reproducibility"]["carry_mismatch"] is False
-    without = ar.audit(Path(got["paths"]["off"]),
-                       Path(got["paths"]["on-carryoff"]))
+    without = ar.audit(paths["off"], paths["on-carryoff"])
     assert without["reproducibility"]["carry_mismatch"] is True
 
 
 def test_a_case_repair_never_reached_is_not_in_the_denominator(tmp_path):
-    """A clean answer never calls the repair model, and counting it as
+    """A clean answer never called the repair model, and counting it as
     'agreed' would buy reproducibility for free."""
-    clean = record(KEEP, case_id="clean")
-    dirty = record(KEEP + " " + BAD, case_id="dirty")
-    client = SamplingStubClient(judge={"verdicts": []},
-                                repairs=[KEEP + " " + FIXED, KEEP + " " + BAD])
-    got, _arms = replay_to(tmp_path, [clean, dirty], client, repair_samples=2)
-    rep = ar.audit(Path(got["paths"]["off"]), Path(got["paths"]["on-carryoff"]),
-                   carry_on_path=Path(got["paths"]["on"]))
+    off_d, co_d, on_d = sampled_arms(case_id="dirty", adoptions=(True, False))
+    clean_off = arm_row(KEEP, [(KEEP, SUP, True)], case_id="clean")
+    clean_on = arm_row(KEEP, [(KEEP, SUP, True)], case_id="clean", arm="on")
+    clean_on["repaired"] = False
+    for row, arm in ((clean_off, "off"), (clean_on, "on")):
+        row["repair_replay"].update({"arm": arm, "repair_calls": 0})
+    paths = write_arms(tmp_path, [clean_off, off_d], [dict(clean_on), co_d],
+                       [clean_on, on_d])
+    rep = ar.audit(paths["off"], paths["on-carryoff"], carry_on_path=paths["on"])
     r = rep["reproducibility"]
     assert r["cases_with_repair"] == 1 and r["cases_sampled"] == 1
     assert r["adoption_agreement"]["d"] == 1
-
-
 def test_wave4_record_shape_still_measures(tmp_path):
     """The legacy `repair_second_sample` is read as two samples: the two
     questions it CAN answer are answered, and the metric spread it cannot
@@ -872,19 +774,19 @@ def _gate(rep, gid):
 
 
 def test_adoption_disagreement_gates_at_zero_by_default(tmp_path):
-    got, _arms, _c = flipping_replay(tmp_path)
-    args = ["--off", got["paths"]["off"], "--on", got["paths"]["on-carryoff"],
-            "--carry-on", got["paths"]["on"], "--quiet"]
+    paths = flipping_arms(tmp_path)
+    args = ["--off", str(paths["off"]), "--on", str(paths["on-carryoff"]),
+            "--carry-on", str(paths["on"]), "--quiet"]
     assert ar.main(args) == 1
-    rep = ar.audit(Path(got["paths"]["off"]), Path(got["paths"]["on-carryoff"]),
-                   carry_on_path=Path(got["paths"]["on"]))
+    rep = ar.audit(paths["off"], paths["on-carryoff"],
+                   carry_on_path=paths["on"])
     g = _gate(rep, "adoption_reproducibility")
     assert g["verdict"] == "FAIL" and g["value"] == 1.0
     assert any("not reproducible" in b for b in rep["breaches"])
     # ... and the flag is what moves it: a tolerance wide enough to admit the
     # flip clears this gate (the run still fails on the spread it exposes)
-    loose = ar.audit(Path(got["paths"]["off"]), Path(got["paths"]["on-carryoff"]),
-                     carry_on_path=Path(got["paths"]["on"]),
+    loose = ar.audit(paths["off"], paths["on-carryoff"],
+                     carry_on_path=paths["on"],
                      max_adoption_disagreement=1.0)
     assert _gate(loose, "adoption_reproducibility")["verdict"] == "PASS"
     assert not [b for b in loose["breaches"] if "reproducible" in b]
@@ -892,12 +794,9 @@ def test_adoption_disagreement_gates_at_zero_by_default(tmp_path):
 
 def test_a_reproducible_run_passes_the_gate(tmp_path):
     """Same completion every time: agreement 1/1, identical text 1/1."""
-    answer = KEEP + " " + BAD
-    client = SamplingStubClient(judge={"verdicts": []},
-                                repairs=[KEEP + " " + FIXED])
-    got, _arms = replay_to(tmp_path, [record(answer)], client, repair_samples=3)
-    rep = ar.audit(Path(got["paths"]["off"]), Path(got["paths"]["on-carryoff"]),
-                   carry_on_path=Path(got["paths"]["on"]))
+    paths = flipping_arms(tmp_path, adoptions=(True, True, True))
+    rep = ar.audit(paths["off"], paths["on-carryoff"],
+                   carry_on_path=paths["on"])
     r = rep["reproducibility"]
     assert r["identical_completion"]["rate"] == 1.0
     assert r["adoption_agreement"]["rate"] == 1.0
@@ -1018,12 +917,11 @@ def test_require_spread_refuses_to_certify_from_one_measurement(tmp_path):
 
 
 def test_the_sample_spread_and_the_replicate_spread_are_both_reported(tmp_path):
-    got, _arms, _c = flipping_replay(tmp_path)
+    paths = flipping_arms(tmp_path)
     other = replicate(tmp_path, "b.json",
                       groundedness_after={"n": 1, "d": 2, "rate": 0.5})
-    rep = ar.audit(Path(got["paths"]["off"]), Path(got["paths"]["on-carryoff"]),
-                   carry_on_path=Path(got["paths"]["on"]),
-                   spread_audits=[other])
+    rep = ar.audit(paths["off"], paths["on-carryoff"],
+                   carry_on_path=paths["on"], spread_audits=[other])
     sp = rep["spreads"]["groundedness"]
     assert sp["from_samples"] is not None and sp["from_replicates"] is not None
     assert sp["value"] == max(sp["from_samples"], sp["from_replicates"])

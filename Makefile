@@ -3,7 +3,7 @@
 #   make help                      list everything
 #   make extract MODELS="pixtral-12b" LIMIT=3
 #   make index SOURCE=data/extracted/vlm/qwen_qwen3-vl-8b NAME=qwen3
-#   make preflight                 run the deploy interlocks, touch nothing
+#   make preflight                 run the deploy interlock, touch nothing
 #   make deployed-sha              what image production is actually running
 #   make rollback SHA=<image tag>  put an earlier image back
 #
@@ -38,7 +38,7 @@ _limit  = $(if $(LIMIT),--limit $(LIMIT))
 .DEFAULT_GOAL := help
 .PHONY: help venv install test init-db extract status retry boxes index ground-demo chat docker-build docker-up \
         preflight push deploy rollback deployed-sha remote-images remote-restart remote-logs remote-down remote-shell \
-        _check-clean-tree _check-repair-flag
+        _check-clean-tree
 
 help:                ## list available targets
 	@awk 'BEGIN {FS = ":.*##"} /^[a-zA-Z_-]+:.*##/ \
@@ -116,7 +116,7 @@ GIT_SHA := $(shell git rev-parse --short=7 HEAD 2>/dev/null || echo untagged)
 
 # What ships: code + the data the app reads (index, raw pdfs for fingerprint
 # lookup, page cache with geometry) + .env, which is how the operator flips
-# PLANNER/VERIFY/VERIFY_REPAIR on production — .env MUST keep syncing.
+# PLANNER/VERIFY/VERIFY_LLM on production — .env MUST keep syncing.
 # What NEVER ships: server-side user state (app.db, evidence-image copies, HF
 # cache), regenerable/heavy leftovers, offline measurement output, and the
 # half-written scratch that atomic writers leave behind mid-run.
@@ -148,17 +148,23 @@ DEPLOY_EXCLUDES := \
 	--exclude '*.tmp_*' \
 	--exclude '*.partial'
 
-# --- Deploy interlocks ------------------------------------------------------
+# --- Deploy interlock -------------------------------------------------------
 # push rsyncs the WORKING TREE — not HEAD, not a build artifact. Whatever sits
-# on disk at that moment is what production runs, so two speed bumps guard it.
-# Both are overridable on purpose: they exist to make a risky push deliberate,
-# not to make it impossible.
+# on disk at that moment is what production runs, so a speed bump guards it.
+# It is overridable on purpose: it exists to make a risky push deliberate, not
+# to make it impossible.
 #
 #   ALLOW_DIRTY=1   ship an uncommitted working tree anyway
-#   FLIP=1          ship an .env that turns the answer-rewriting repair on
+#
+# There was a second interlock here (FLIP=1), which refused to push an .env
+# carrying VERIFY_REPAIR=1 because that flag let production rewrite answer
+# text. eac4c94 removed the repair pathway and config.py no longer reads the
+# variable, so the flag can no longer do anything: a guard over an .env line
+# nothing reads teaches the operator that the line still matters. Removed with
+# the code it guarded.
 
-# Interlock 1 — unreviewed code. `git diff` + `git diff --cached` is the exact
-# dirty test; untracked files ship too, so they are reported as a note.
+# Unreviewed code. `git diff` + `git diff --cached` is the exact dirty test;
+# untracked files ship too, so they are reported as a note.
 _check-clean-tree:
 	@u=$$(git ls-files --others --exclude-standard | head -20); \
 	  test -z "$$u" || { \
@@ -176,32 +182,10 @@ _check-clean-tree:
 	    exit 1; \
 	  fi; }
 
-# Interlock 2 — the repair switch. .env keeps syncing (that is the deploy
-# mechanism for PLANNER/VERIFY/VERIFY_REPAIR); this only makes the one flag
-# that rewrites user-visible answer text a conscious act.
-_check-repair-flag:
-	@test -f .env || exit 0; \
-	if grep -Eq "^[[:space:]]*(export[[:space:]]+)?VERIFY_REPAIR[[:space:]]*=[[:space:]]*['\"]?1" .env; then \
-	  if [ "$(FLIP)" = "1" ]; then \
-	    echo "WARNING: .env carries VERIFY_REPAIR=1 and FLIP=1 — production may rewrite answer text."; \
-	  else \
-	    echo "REFUSING TO PUSH: .env carries an uncommented VERIFY_REPAIR=1:"; \
-	    grep -nE "^[[:space:]]*(export[[:space:]]+)?VERIFY_REPAIR[[:space:]]*=" .env | sed 's/^/      .env:/'; \
-	    echo "  That is the one flag that rewrites the answer text users read"; \
-	    echo "  (src/gcf_qna/config.py:56, active only when VERIFY=1)."; \
-	    echo "  .env still syncs by design — re-run with FLIP=1 once you mean it."; \
-	    exit 1; \
-	  fi; \
-	fi
-	@if grep -Eq "^[[:space:]]*(export[[:space:]]+)?VERIFY[[:space:]]*=[[:space:]]*['\"]?1" .env 2>/dev/null && \
-	    ! grep -Eq "^[[:space:]]*(export[[:space:]]+)?VERIFY_REPAIR[[:space:]]*=" .env 2>/dev/null; then \
-	  echo "WARNING: .env sets VERIFY=1 but never sets VERIFY_REPAIR — config.py:56 defaults it to 1 (repair ON)."; \
-	fi
-
-preflight: _check-clean-tree _check-repair-flag ## run the push interlocks locally; contacts nothing
+preflight: _check-clean-tree ## run the push interlock locally; contacts nothing
 	@echo "preflight OK — 'make push' would ship HEAD $(GIT_SHA) to $(REMOTE_HOST):$(REMOTE_DIR)"
 
-push: _check-clean-tree _check-repair-flag ## rsync code + serving data to the remote (ALLOW_DIRTY=1 / FLIP=1 override the interlocks)
+push: _check-clean-tree ## rsync code + serving data to the remote (ALLOW_DIRTY=1 overrides the interlock)
 	@test -n "$(REMOTE_HOST)" || { echo "REMOTE_HOST is not set"; exit 1; }
 	rsync -avz --progress --chown=999:999 $(DEPLOY_EXCLUDES) ./ $(REMOTE_USER)@$(REMOTE_HOST):$(REMOTE_DIR)/
 
@@ -227,7 +211,7 @@ deploy: push         ## push, rebuild the image on the server, tag it with the g
 	@echo "paste this row into docs/DEPLOYED.md (deploy does not write it: push"
 	@echo "refuses a dirty tree, so a self-editing target would trip its own guard):"
 	@printf '| %s | %s | %s |\n' "$$(date -u +%Y-%m-%dT%H:%M:%SZ)" "$(GIT_SHA)" \
-	  "$$(grep -E '^(PLANNER|VERIFY|VERIFY_LLM|VERIFY_REPAIR)=' .env 2>/dev/null | tr '\n' ' ' | sed 's/ $$//')"
+	  "$$(grep -E '^(PLANNER|VERIFY|VERIFY_LLM)=' .env 2>/dev/null | tr '\n' ' ' | sed 's/ $$//')"
 
 rollback:            ## put an earlier image back on the remote, no rebuild (SHA=<image tag>, required)
 	@test -n "$(SHA)" || { \

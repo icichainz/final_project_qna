@@ -1,9 +1,30 @@
-"""Claim verification and repair (plan step 5).
+"""Claim verification (plan step 5). The verifier is a PURE DETECTOR.
 
-No test here touches the network: the LLM layer is exercised through fake
-clients, and the degradation tests remove OPENAI_API_KEY outright. The
-fixture evidence set is deliberately tiny — four keys — so every verdict in
-this file can be checked by reading the fixture.
+No test here touches the network: the LLM layer — one batched judge call, and
+only that — is exercised through fake clients, and the degradation tests
+remove OPENAI_API_KEY outright. The fixture evidence set is deliberately tiny
+— four keys — so every verdict in this file can be checked by reading the
+fixture.
+
+WHAT IS NOT TESTED HERE ANY MORE, and why the file is shorter than its
+history. `verify.repair` and its adoption gates (the 817abdb probes, the
+substance floor, the language gate, carry-off, the sampling pin ON THE
+REWRITE) were deleted at eac4c94 together with the pass they guarded: when
+repair was finally allowed to act, 3 of 5 adopted rewrites had deleted
+verified evidence, and the cause was structural rather than a missing gate.
+Every one of those tests went with its code. Where such a test ALSO pinned
+something the detector still does, that half was kept and is marked at the
+place it now lives:
+
+  * the sampling pin, the degradation ladder and the call budget now ride on
+    the JUDGE call, which is the only call this module makes;
+  * `test_a_block_made_only_of_lead_ins_states_nothing` keeps the extraction
+    property; `test_the_report_both_licence_is_not_a_licence_to_invent` keeps
+    the report-both calibration; `test_a_page_only_repoint_of_a_wrong_figure_
+    is_still_contradicted` keeps the `_conflict_before_support` finding.
+
+A test that can only fail if a rewrite exists is not evidence about a
+detector, so none was kept as a monument.
 """
 import importlib.util
 import json
@@ -433,7 +454,7 @@ def test_a_trailing_contentless_lead_in_adds_no_failure(no_registry):
     answer = (f"- **USD 18,500,000** in GCF funding [{DOC}, p. 45]\n\n"
               f"**Notes:**")
     assert len(V.extract_claims(answer)) == 1
-    res = V.verify_answer(answer, LEAD_EV, use_llm=False, allow_repair=False)
+    res = V.verify_answer(answer, LEAD_EV, use_llm=False)
     assert res.status == "verified", (res.status, [v.reason for v in res.verdicts])
 
 
@@ -533,37 +554,22 @@ def test_lead_ins_and_extract_claims_cannot_disagree():
         assert li.claim is not None and li.claim.text == li.text
 
 
-# ------------------------------------------- the repair-gate consequence ---
-def test_a_rewrite_made_only_of_lead_ins_is_not_substance():
-    """A CONSEQUENCE OF THIS CHANGE ON THE 817abdb ADOPTION GATE, pinned
-    deliberately rather than discovered later. The substance floor's second
-    leg reads `not extract_claims(repaired)`; before ruling 6 a rewrite made
-    of headings returned claims and cleared it, and now it returns none and
-    is rejected. That is correct — a page of headings says nothing — but it
-    is a gate behaviour falling out of an extraction change."""
-    original = ("FP151 requests **USD 18,500,000** in GCF funding "
-                f"[{DOC}, p. 45]. The accredited entity is the International "
-                f"Union for Conservation of Nature and the total financing "
-                f"as printed on the cover page is **USD 28 million**, with "
-                f"the board meeting recorded as B.27 in 2020 "
-                f"[{DOC}, cover pages].")
-    assert len(V._prose(original)) >= V.SUBSTANTIAL_ANSWER_CHARS
-    rewrite = ("The figures are as follows:\n\nDetails below:\n\n"
-               "Summary of the above:")
-    assert V.extract_claims(rewrite) == []
-    why = V._substance_floor(original, rewrite)
-    assert why and "state no fact" in why
+# ------------------------------------- a block of nothing but lead-ins -----
+def test_a_block_made_only_of_lead_ins_states_nothing():
+    """THE DETECTOR HALF of what was `test_a_rewrite_made_only_of_lead_ins_is
+    _not_substance`. That test asked what the deleted substance floor did with
+    a page of headings; the property underneath it is ruling 6's and survives
+    the floor: three colon lead-ins in a row are three lead-ins and zero
+    claims, however many checkable-looking words they contain.
 
-
-def test_the_substance_floor_still_adopts_an_honest_one_sentence_repair():
-    original = ("FP151 requests **USD 18,500,000** in GCF funding "
-                f"[{DOC}, p. 45]. The accredited entity is the International "
-                f"Union for Conservation of Nature and the total financing "
-                f"as printed on the cover page is **USD 28 million**, with "
-                f"the board meeting recorded as B.27 in 2020 "
-                f"[{DOC}, cover pages].")
-    honest = f"FP151 requests **USD 18,500,000** in GCF funding [{DOC}, p. 45]."
-    assert V._substance_floor(original, honest) is None
+    Kept because it is the one place a MULTI-unit block of pure form is
+    checked — the neighbouring tests each pin a single lead-in — and because
+    an extraction that started minting claims here would put a fact-shaped
+    verdict on text that states nothing."""
+    block = ("The figures are as follows:\n\nDetails below:\n\n"
+             "Summary of the above:")
+    assert V.extract_claims(block) == []
+    assert [li.shape for li in V.lead_ins(block)] == ["colon-lead-in"] * 3
 
 
 # ---------------------------------------------------------------------------
@@ -721,9 +727,9 @@ def test_registry_conflict_check_can_be_switched_off(monkeypatch):
 
 def test_registry_backed_figure_on_a_page_that_was_not_retrieved(
         monkeypatch, evidence):
-    """Reporting BOTH sides of a known conflict — what the prompt asks for and
-    what the repair pass produces — cites a page this turn may not hold. That
-    must verify, or no conflict answer could ever pass."""
+    """Reporting BOTH sides of a known conflict — what the answer prompt asks
+    for — cites a page this turn may not hold. That must verify, or no
+    conflict-aware answer could ever pass."""
     monkeypatch.setattr(
         "gcf_qna.rag.registry.facts",
         lambda doc: {"gcf_funding_requested": [
@@ -884,157 +890,73 @@ def test_judge_call_failure_is_not_an_answer_failure(evidence):
 
 
 # ---------------------------------------------------------------------------
-# repair
+# the statuses a detector can return
+#
+# `verified` / `partial` / `abstain` / `unverified-llm`, and nothing else:
+# `repaired` was the fifth and it went with the pass that produced it. Each
+# test below passes a client, so `_status_for` sees an LLM as available and
+# the distinction being made is about the VERDICTS, not about the key.
 # ---------------------------------------------------------------------------
 
-def test_repair_fixes_a_contradicted_value_and_reverifies(evidence):
-    answer = f"FP151 requests **USD 25 million** in GCF funding [{DOC}, cover pages]."
-    fixed = f"FP151 requests **USD 18.5 million** in GCF funding [{DOC}, cover pages]."
-    client = FakeClient(fixed)
-    res = V.verify_answer(answer, evidence, client=client)
-    assert res.status == "repaired" and res.repaired
-    assert res.answer == fixed
-    assert not res.failures
 
-
-def test_repair_is_rejected_when_it_invents_a_source(evidence):
-    """Rule 4 of the repair prompt is enforced in python, not by asking nicely."""
-    answer = f"FP151 requests **USD 25 million** in GCF funding [{DOC}, cover pages]."
-    invented = (f"FP151 requests **USD 18.5 million** in GCF funding "
-                f"[{DOC}, p. 512; 999_gcf-b99-99-add99, p. 3].")
-    client = FakeClient(invented)
-    res = V.verify_answer(answer, evidence, client=client)
-    assert res.repair_rejected and not res.repaired
-    assert res.answer == answer                        # the original, flagged
-    assert res.status == "abstain"                     # its only claim failed
-    assert any("999_gcf-b99-99-add99" in n for n in res.notes)
-    # the invented PAGE of a real document is caught by the same check
-    assert any(f"{DOC}, p.512" in n for n in res.notes)
-
-
-def test_repair_that_swaps_one_wrong_figure_for_another_is_rejected(evidence):
-    """The reviewer's repro: 58M is wrong, the model 'fixes' it to 61M, which
-    is equally absent from the evidence. Shipping that is worse than flagging
-    the original, because it looks corrected."""
-    answer = f"FP151 requests **USD 58 million** in GCF funding [{DOC}, cover pages]."
-    client = FakeClient(
-        f"FP151 requests **USD 61 million** in GCF funding [{DOC}, cover pages].")
-    res = V.verify_answer(answer, evidence, client=client)
-    assert res.repair_rejected and not res.repaired
-    assert res.answer == answer                        # the original, flagged
-    assert "still fail verification" in " ".join(res.notes)
-
-
-def test_repair_that_re_attributes_a_claim_to_another_document_is_rejected(evidence):
-    """Moving the claim onto a different retrieved document's figure verifies
-    cleanly — and is an invented attribution, not a repair."""
-    answer = f"FP151 requests **USD 58 million** in GCF funding [{DOC}, p. 45]."
-    client = FakeClient(
-        f"FP151 requests **USD 150 million** in GCF funding [{DOC2}, p. 5].")
-    res = V.verify_answer(answer, evidence, client=client, use_llm=False)
-    assert res.repair_rejected and res.answer == answer
-    assert any("not shown to the repair pass" in n for n in res.notes)
-
-
-def test_repair_that_guts_a_mostly_correct_answer_is_rejected(evidence):
-    """A bare refusal is not a repair of an answer that had supported facts."""
-    answer = (f"FP151 requests **USD 18.5 million** in GCF funding [{DOC}, p. 45].\n\n"
-              f"Its accredited entity is **Pegasus Capital Advisors LP** "
-              f"[{DOC}, cover pages].")
-    client = FakeClient("The retrieved excerpts do not state FP151's funding.")
-    res = V.verify_answer(answer, evidence, client=client, use_llm=False)
-    assert res.repair_rejected and res.answer == answer
-    assert any("removed every supported factual claim" in n for n in res.notes)
-    assert res.status == "partial"
-
-
-def test_introduced_source_check_is_exact_not_prefix(evidence):
-    """182 of the 273 corpus ids are <= 24 characters: a prefix match would
-    wave through any suffix appended to one of them."""
-    answer = f"FP151 requests **USD 58 million** in GCF funding [{DOC}, p. 45]."
-    client = FakeClient(f"FP151 requests **USD 18,500,000** "
-                        f"[{DOC}-annex-volume-2, p. 45].")
-    res = V.verify_answer(answer, evidence, client=client, use_llm=False)
-    assert res.repair_rejected and res.answer == answer
-    assert any(f"{DOC}-annex-volume-2" in n for n in res.notes)
-
-
-def test_repair_output_preamble_is_stripped(evidence):
-    answer = f"FP151 requests **USD 25 million** in GCF funding [{DOC}, cover pages]."
-    fixed = f"FP151 requests **USD 18.5 million** in GCF funding [{DOC}, cover pages]."
-    client = FakeClient("Sure! Here is the repaired answer:\n\n" + fixed)
-    res = V.verify_answer(answer, evidence, client=client)
-    assert res.repaired and res.answer == fixed
-
-
-def test_repair_runs_with_the_judge_switched_off(evidence):
-    """use_llm and allow_repair are independent switches: VERIFY_LLM=0 turns
-    off the judge, not the repair pass."""
-    answer = f"FP151 requests **USD 25 million** in GCF funding [{DOC}, cover pages]."
-    fixed = f"FP151 requests **USD 18.5 million** in GCF funding [{DOC}, cover pages]."
-    client = FakeClient(fixed)
-    res = V.verify_answer(answer, evidence, client=client, use_llm=False)
-    assert len(client.calls) == 1                       # repair only, no judge
-    assert "You repair an answer" in client.calls[0]["messages"][0]["content"]
-    assert res.status == "repaired" and res.answer == fixed
-
-
-# NOTE: `test_judge_verdicts_survive_the_post_repair_recheck` lived here and
-# pinned the CARRY-ON rule ("the recheck is deterministic-only, so carry the
-# judge's rulings across it"). Wave 4 measured what that rule does — it adopts
-# rewrites the honest recheck rejects, always in that direction — and the
-# shipped path is now carry-off. The same fixture, asserting the opposite
-# outcome, is `test_a_repair_certified_by_a_carried_judge_ruling_is_rejected`
-# at the end of this file, next to the rest of the carry-off decision.
-
-
-def test_repair_may_delete_the_claim_entirely(evidence):
-    """Removing an unsupportable claim is a valid repair: what is left states
-    no fact, so nothing is left to contradict the evidence."""
-    answer = f"FP151 requests **USD 25 million** in GCF funding [{DOC}, p. 99]."
-    client = FakeClient("The retrieved excerpts do not state FP151's GCF funding.")
-    res = V.verify_answer(answer, evidence, client=client)
-    assert res.status == "repaired" and res.answer.startswith("The retrieved")
-    assert V.extract_claims(res.answer) == []
+# NOTE: nine repair tests lived here (adoption, invented sources, the
+# figure-swap, re-attribution, gutting, the preamble strip, the independent
+# switches, deletion-as-repair) and one carry-on test before them. They tested
+# `verify.repair`, which no longer exists. None of them asserted anything
+# about extraction, classification or the judge that the tests around them do
+# not already assert, so nothing was salvaged from them.
 
 
 def test_abstain_when_every_fact_bearing_claim_failed(evidence):
     answer = (f"FP151 requests **USD 25 million** in GCF funding [{DOC}, p. 99].\n"
               f"Its accredited entity is **Pegasus Capital Advisors LP** "
               f"[{DOC}, cover pages].")
-    client = FakeClient(answer)                        # the model changed nothing
+    client = FakeClient(json.dumps({"verdicts": []}))   # the judge moves nothing
     res = V.verify_answer(answer, evidence, client=client)
     assert res.status == "abstain"
     assert len(res.failures) == 2
+    assert res.answer == answer and not res.repaired   # abstain shows the text
 
 
 def test_partial_when_one_of_two_claims_stays_unsupported(evidence):
     answer = (f"FP151 requests **USD 18.5 million** in GCF funding [{DOC}, p. 45].\n"
               f"FP151 also received **USD 40 million** in co-financing [{DOC}, p. 99].")
-    client = FakeClient(answer)                        # the model changed nothing
+    client = FakeClient(json.dumps({"verdicts": []}))  # the judge moves nothing
     res = V.verify_answer(answer, evidence, client=client)
     assert res.status == "partial"
-    assert res.repair_rejected                         # no improvement, no adoption
+    assert res.answer == answer and not res.repaired   # partial ships as written
     assert len(res.unsupported) == 1
     assert res.counts()[V.SUPPORTED] == 1
 
 
-def test_at_most_two_llm_calls_per_answer(evidence):
+def test_at_most_one_llm_call_per_answer(evidence):
+    """Was `test_at_most_two_llm_calls_per_answer` (1 adjudicate + 1 repair).
+    The budget is now ONE, and the test is kept because the budget is the
+    thing worth pinning: a second call appearing here would mean something in
+    this module started talking to a model behind the operator's back."""
     answer = ("The total GCF funding requested is USD 150 million.\n\n"
               f"FP151 requests **USD 25 million** in GCF funding [{DOC}, cover pages].")
     client = FakeClient(json.dumps({"verdicts": [{"id": 0, "status": "unsupported",
                                                  "reason": "not stated"}]}),
-                        f"FP151 requests **USD 18.5 million** [{DOC}, cover pages].")
-    V.verify_answer(answer, evidence, client=client)
-    assert len(client.calls) == 2                      # 1 adjudicate + 1 repair
+                        "a second reply that must never be asked for")
+    res = V.verify_answer(answer, evidence, client=client)
+    assert len(client.calls) == 1                      # the judge, and nothing else
+    assert res.answer == answer
 
 
-def test_repair_token_budget_is_sized_to_the_answer(evidence):
-    answer = f"FP151 requests **USD 25 million** in GCF funding [{DOC}, cover pages]."
-    client = FakeClient(answer)
-    V.repair(answer, V.classify(V.extract_claims(answer), evidence, use_llm=False),
-             evidence, client=client)
-    assert client.calls[0]["max_completion_tokens"] >= 900
+def test_the_judge_token_budget_is_sized_to_the_batch(evidence):
+    """THE DETECTOR HALF of `test_repair_token_budget_is_sized_to_the_answer`.
+    The sizing rule and the 'the model id comes from config, not a literal'
+    pin were about the calls this module makes; one call is left, so they ride
+    on it."""
+    answer = ("The total GCF funding requested is USD 150 million.\n\n"
+              "The accredited entity is Pegasus Capital Advisors LP.")
+    client = FakeClient(json.dumps({"verdicts": []}))
+    verdicts = V.classify_deterministic(V.extract_claims(answer), evidence)
+    todo = [v for v in verdicts if v.status == V.UNSUPPORTED and v.plausible]
+    assert len(todo) == 2, [(v.claim.text, v.status, v.plausible) for v in verdicts]
+    V.adjudicate(verdicts, evidence, client=client)
+    assert client.calls[0]["max_completion_tokens"] == 400 * len(todo) + 800
     assert client.calls[0]["model"]                     # config.CHAT_MODEL, not hardcoded
 
 
@@ -1042,7 +964,8 @@ def test_repair_token_budget_is_sized_to_the_answer(evidence):
 # degradation
 # ---------------------------------------------------------------------------
 
-def test_no_api_key_means_deterministic_verdicts_and_no_repair(monkeypatch, evidence):
+def test_no_api_key_means_deterministic_verdicts_and_the_answer_as_written(
+        monkeypatch, evidence):
     monkeypatch.delenv("OPENAI_API_KEY", raising=False)
     answer = f"FP151 requests **USD 25 million** in GCF funding [{DOC}, cover pages]."
     res = V.verify_answer(answer, evidence)
@@ -1209,10 +1132,12 @@ def test_doc_level_widening_does_not_reach_a_document_never_cited(no_registry):
 #          page', one caution and nothing else — on a page that prints
 #          18,500,000 and never prints 28 million.
 #
-# Same figure, same document, a strictly WORSE citation, a passing verdict;
-# with VERIFY_REPAIR=1 a rewrite whose only diff was the page number was
-# adopted as `repaired`.  It is a VERIFICATION defect, live under VERIFY=1
-# with repair off, not a repair one.
+# Same figure, same document, a strictly WORSE citation, a passing verdict.
+# While the repair pass existed, a rewrite whose only diff was the page number
+# was adopted as a correction — but that was the consequence, not the defect.
+# The defect is in VERIFICATION, it was live under VERIFY=1 with repair off,
+# and deleting repair does not touch it: the tests below are the fix and they
+# run on the detector alone.
 #
 # The tests below fix the direction (a repoint may only make a verdict worse,
 # never better) and then pin, one dimension each, everything the gate must NOT
@@ -1952,52 +1877,37 @@ def test_two_independent_names_are_both_checked(no_registry):
 
 
 # ---------------------------------------------------------------------------
-# the repair gates of 817abdb, re-proved against the calibrated matcher
+# the report-both licence, at the three answers that separate it
+#
+# THE DETECTOR HALF of `test_repair_gates_hold_against_the_report_both_
+# relaxation` (817abdb). That test drove the three answers below through the
+# repair pass and asked which rewrite was adopted; the calibration it was
+# really pinning is a CLASSIFICATION one — an answer that reports both sides
+# of a registry-known conflict verifies, one that reports a single side is
+# contradicted, and one that reports a second figure no evidence prints is not
+# rescued by looking like the first. Stated directly, it needs no rewrite.
 # ---------------------------------------------------------------------------
 
-def test_repair_gates_hold_against_the_report_both_relaxation(monkeypatch):
-    """A repair that reports both sides of a known conflict is adopted; one
-    that reports a figure no evidence prints is not — even though the answer
-    'reports both'."""
+def test_the_report_both_licence_is_not_a_licence_to_invent(monkeypatch):
+    """Three answers, one evidence set, one registry row. The only thing that
+    varies is what the answer says, which is the point: the licence is granted
+    by the FIGURES being the ones the corpus prints, never by the shape of an
+    answer that lists two of them."""
     monkeypatch.setattr("gcf_qna.rag.registry.facts", lambda doc: CONFLICT_FACTS)
-    answer = (f"FP274's **GCF funding requested** is **USD 40,511,264** "
-              f"[{DOC}, cover pages].")
-    assert V.verify_answer(answer, CONFLICT_EV, use_llm=False,
-                           allow_repair=False).failures        # the premise
 
-    good = V.verify_answer(answer, CONFLICT_EV,
-                           client=FakeClient(_both_sides()), use_llm=False)
-    assert good.repaired and not good.failures
+    one_side = (f"FP274's **GCF funding requested** is **USD 40,511,264** "
+                f"[{DOC}, cover pages].")
+    assert V.verify_answer(one_side, CONFLICT_EV, use_llm=False).failures
 
-    bad = V.verify_answer(answer, CONFLICT_EV, client=FakeClient(
+    both = V.verify_answer(_both_sides(), CONFLICT_EV, use_llm=False)
+    assert both.status == "verified" and not both.failures, both.verdicts
+
+    invented = V.verify_answer(
         f"- **USD 40,511,264** [{DOC}, cover pages].\n"
-        f"- **USD 77,777,777** [{DOC}, p. 8]."), use_llm=False)
-    assert bad.repair_rejected and bad.answer == answer
-    assert "still fail verification" in " ".join(bad.notes)
-
-
-def test_repair_may_not_introduce_a_source_via_a_doc_level_bracket(no_registry):
-    """Ruling 5 widened what a doc-level bracket RESOLVES to; it did not widen
-    what a repair may cite."""
-    ev = {(DOC, None): "Registry — FP151: GCF funding requested: 18.5 M USD",
-          (DOC, 45): "| (vi) Grants | 18,500,000 |"}
-    answer = f"FP151 requests **USD 58 million** [{DOC}, cover pages]."
-    res = V.verify_answer(answer, ev, client=FakeClient(
-        "FP151 requests **USD 18.5 million** [999_gcf-b99-99-add99]."),
-        use_llm=False)
-    assert res.repair_rejected and res.answer == answer
-    assert any("999_gcf-b99-99-add99" in n for n in res.notes)
-
-
-def test_repair_anti_gutting_still_holds(no_registry):
-    ev = {(DOC, None): "Registry — FP151: GCF funding requested: 18.5 M USD",
-          (DOC, 45): "| (vi) Grants | 18,500,000 |"}
-    answer = (f"FP151 requests **USD 18.5 million** [{DOC}, p. 45].\n\n"
-              f"FP151 also lists **USD 61 million** somewhere [{DOC}, p. 45].")
-    res = V.verify_answer(answer, ev, client=FakeClient(
-        "The retrieved excerpts do not state FP151's funding."), use_llm=False)
-    assert res.repair_rejected and res.answer == answer
-    assert any("removed every supported factual claim" in n for n in res.notes)
+        f"- **USD 77,777,777** [{DOC}, p. 8].", CONFLICT_EV, use_llm=False)
+    assert invented.failures, "an invented second figure bought the licence"
+    assert any("77,777,777" in v.reason for v in invented.failures), \
+        [v.reason for v in invented.failures]
 
 
 # ---------------------------------------------------------------------------
@@ -3102,19 +3012,21 @@ def test_an_exotic_apostrophe_inside_a_name_still_matches(no_registry, mark):
 
 
 # ===========================================================================
-# Wave 4's three blocking prerequisites, and the carry-off decision.
+# Wave 4's first blocking prerequisite: the model call this module makes is a
+# PINNED sample, and an endpoint that will not be pinned costs the parameter
+# and never the turn.
 #
-# Every gate below is pinned in BOTH directions and the negatives vary the
-# dimension the gate turns on — the parameter that travels with the request,
-# the pair of detected languages, the size of the rewrite — not a neighbouring
-# one. `docs/wave0c-review-verdict.md` closes on why: three rounds of this
-# file were rejected for tests that "pin the surviving hole open" by varying
-# the dimension the last bug report happened to exhibit.
+# Wave 4 had three prerequisites and a carry-off decision; the other three
+# were properties of the repair rewrite (its language, its size, whether a
+# pre-repair judge ruling could certify it) and went with it at eac4c94. This
+# one is not: the JUDGE is still an LLM call, it still decides verdicts a user
+# sees, and an unpinned judge is still a verdict nobody can re-derive. Every
+# test below was written against `verify.repair` as the vehicle — repair was
+# the second call and the one with a rewrite to compare — and each is kept
+# with the judge in its place. The DIMENSION each varies is unchanged: the
+# individual parameter, which parameter is refused, how the refusal is
+# expressed, whether the failure names a parameter at all.
 # ===========================================================================
-
-# ---------------------------------------------------------------------------
-# (a) the judge and repair calls are pinned samples
-# ---------------------------------------------------------------------------
 
 @pytest.fixture(autouse=True)
 def _forget_endpoint_capabilities():
@@ -3171,43 +3083,57 @@ class RejectingClient(FakeClient):
 
 def _pinned_calls(client):
     """The requests that carried a system prompt this module owns."""
-    owns = (V.ADJUDICATE_PROMPT, V.REPAIR_PROMPT)
+    owns = (V.ADJUDICATE_PROMPT,)
     return [c for c in client.calls
             if any(m.get("content") in owns for m in c["messages"])]
+
+
+#: An answer whose FIRST claim is uncited-but-plausible, so the judge is
+#: actually called. Every test in this section needs a real judge call and
+#: nothing else, so they all use this one and vary only the endpoint.
+JUDGED_ANSWER = ("The total GCF funding requested is USD 150 million.\n\n"
+                 f"FP151 requests **USD 18.5 million** in GCF funding "
+                 f"[{DOC}, p. 45].")
+JUDGE_REPLY = json.dumps({"verdicts": [{"id": 0, "status": "supported",
+                                        "reason": "p.5 states it"}]})
+
+
+def _judged(client, evidence):
+    """Run the judge over `JUDGED_ANSWER` and hand back its verdicts."""
+    return V.adjudicate(
+        V.classify_deterministic(V.extract_claims(JUDGED_ANSWER), evidence),
+        evidence, client=client)
 
 
 @pytest.mark.parametrize("param,want", [("temperature", 0),
                                         ("seed", V.SAMPLING_SEED)])
 def test_every_call_this_module_makes_carries_the_pin(evidence, param, want):
     """DIMENSION: the individual pinned parameter. Wave 4's finding is not
-    'repair is random', it is that NEITHER parameter was sent — so the test
-    varies the parameter, and dropping just one of the two still fails."""
-    answer = ("The total GCF funding requested is USD 150 million.\n\n"
-              f"FP151 requests **USD 25 million** in GCF funding [{DOC}, cover pages].")
-    client = FakeClient(json.dumps({"verdicts": [{"id": 0, "status": "unsupported",
-                                                  "reason": "not stated"}]}),
-                        f"FP151 requests **USD 18.5 million** in GCF funding "
-                        f"[{DOC}, cover pages].")
-    V.verify_answer(answer, evidence, client=client)
+    'the rewrite is random', it is that NEITHER parameter was sent on ANY call
+    this module made — so the test varies the parameter, and dropping just one
+    of the two still fails."""
+    client = FakeClient(JUDGE_REPLY)
+    V.verify_answer(JUDGED_ANSWER, evidence, client=client)
     roles = [c["messages"][0]["content"] for c in client.calls]
-    assert V.ADJUDICATE_PROMPT in roles and V.REPAIR_PROMPT in roles, roles
+    assert roles == [V.ADJUDICATE_PROMPT], roles
     for call in client.calls:
         assert call.get(param) == want, (call.get(param), call["messages"][0])
 
 
-def test_two_repairs_of_the_same_inputs_send_byte_identical_requests(evidence):
+def test_two_judgements_of_the_same_inputs_send_byte_identical_requests(evidence):
     """The property the pin buys, at the layer a test can see without a
-    network: same answer + same verdicts -> same request. Whether the SERVER
-    then returns the same text is an endpoint property and is measured
+    network: same answer + same evidence -> same request. Whether the SERVER
+    then returns the same verdicts is an endpoint property and is measured
     separately; what this file can guarantee is that we stopped asking it a
-    different question every time."""
-    answer = f"FP151 requests **USD 25 million** in GCF funding [{DOC}, cover pages]."
-    verdicts = V.classify(V.extract_claims(answer), evidence, use_llm=False)
-    fixed = f"FP151 requests **USD 18.5 million** in GCF funding [{DOC}, cover pages]."
+    different question every time.
+
+    Was `test_two_repairs_of_the_same_inputs_send_byte_identical_requests`.
+    The rewrite it compared is gone; the request-level property is the half
+    that was ever testable here, and it is the judge's now."""
     payloads = []
     for _ in range(2):
-        c = FakeClient(fixed)
-        V.repair(answer, verdicts, evidence, client=c)
+        c = FakeClient(JUDGE_REPLY)
+        _judged(c, evidence)
         payloads.append(json.dumps(c.calls[0], sort_keys=True))
     assert payloads[0] == payloads[1]
     assert '"seed": %d' % V.SAMPLING_SEED in payloads[0]
@@ -3223,12 +3149,9 @@ def test_a_rejected_parameter_degrades_the_call_and_keeps_the_other_pin(
     says so. Some OpenAI-compatible servers 400 on `seed`; some reasoning
     models 400 on `temperature`. Either must cost the parameter, never the
     turn and never the OTHER parameter."""
-    answer = f"FP151 requests **USD 25 million** in GCF funding [{DOC}, cover pages]."
-    fixed = f"FP151 requests **USD 18.5 million** in GCF funding [{DOC}, cover pages]."
-    client = RejectingClient(fixed, refuses=(refused,), shape=shape)
-    res = V.repair(answer, V.classify(V.extract_claims(answer), evidence,
-                                      use_llm=False), evidence, client=client)
-    assert res.repaired and res.answer == fixed          # the turn survived
+    client = RejectingClient(JUDGE_REPLY, refuses=(refused,), shape=shape)
+    verdicts = _judged(client, evidence)
+    assert verdicts[0].status == V.SUPPORTED and verdicts[0].source == "llm"
     assert refused in V._SAMPLING_UNSUPPORTED
     assert kept not in V._SAMPLING_UNSUPPORTED
     assert client.calls[-1].get(kept) is not None        # the other pin held
@@ -3248,26 +3171,23 @@ def test_an_ordinary_failure_may_not_unpin_the_module(evidence, boom):
     never restore it — the module would go back to unpinned sampling with
     nothing in the record saying when. Only a failure that NAMES a parameter
     we sent is allowed to drop it."""
-    answer = f"FP151 requests **USD 25 million** in GCF funding [{DOC}, cover pages]."
     client = FakeClient(boom)
-    res = V.repair(answer, V.classify(V.extract_claims(answer), evidence,
-                                      use_llm=False), evidence, client=client)
+    verdicts = _judged(client, evidence)
     assert V._SAMPLING_UNSUPPORTED == set()
     assert len(client.calls) == 1                        # no retry was taken
-    assert not res.repaired and res.answer == answer
-    assert any("repair call failed" in n for n in res.notes)
+    # the turn survived: the deterministic verdicts stand, unmoved
+    assert [v.source for v in verdicts] == ["deterministic"] * len(verdicts)
+    assert verdicts[0].status == V.UNSUPPORTED
 
 
 def test_an_endpoint_that_refuses_everything_still_terminates(evidence):
     """The retry is bounded by the number of pinned parameters, so a server
-    that refuses both cannot turn one repair into an unbounded call loop."""
-    answer = f"FP151 requests **USD 25 million** in GCF funding [{DOC}, cover pages]."
-    fixed = f"FP151 requests **USD 18.5 million** in GCF funding [{DOC}, cover pages]."
-    client = RejectingClient(fixed, refuses=("seed", "temperature"))
-    res = V.repair(answer, V.classify(V.extract_claims(answer), evidence,
-                                      use_llm=False), evidence, client=client)
+    that refuses both cannot turn one judge call into an unbounded call
+    loop."""
+    client = RejectingClient(JUDGE_REPLY, refuses=("seed", "temperature"))
+    verdicts = _judged(client, evidence)
     assert len(client.calls) == len(V._PINNED_SAMPLING) + 1 == 3
-    assert res.repaired and res.answer == fixed
+    assert verdicts[0].status == V.SUPPORTED and verdicts[0].source == "llm"
     assert V._SAMPLING_UNSUPPORTED == {"seed", "temperature"}
 
 
@@ -3275,425 +3195,46 @@ def test_a_refusal_is_remembered_so_it_is_paid_for_once(evidence):
     """A server that does not support `seed` does not start supporting it
     mid-process; re-probing it every turn is latency and cost with no
     information."""
-    answer = f"FP151 requests **USD 25 million** in GCF funding [{DOC}, cover pages]."
-    fixed = f"FP151 requests **USD 18.5 million** in GCF funding [{DOC}, cover pages]."
-    verdicts = V.classify(V.extract_claims(answer), evidence, use_llm=False)
-    first = RejectingClient(fixed, refuses=("seed",))
-    V.repair(answer, verdicts, evidence, client=first)
-    second = RejectingClient(fixed, refuses=("seed",))
-    V.repair(answer, verdicts, evidence, client=second)
+    first = RejectingClient(JUDGE_REPLY, refuses=("seed",))
+    _judged(first, evidence)
+    second = RejectingClient(JUDGE_REPLY, refuses=("seed",))
+    _judged(second, evidence)
     assert len(first.calls) == 2 and len(second.calls) == 1
     assert "seed" not in second.calls[0]
     assert second.calls[0]["temperature"] == V.SAMPLING_TEMPERATURE
 
 
-def test_verify_only_ever_calls_the_judge_and_the_repair_pass(evidence):
+def test_verify_only_ever_calls_the_judge(evidence):
     """The answer-generation call is not this module's and is not pinned by
     this change. Pinned here as a structural fact rather than a promise: every
-    request verify.py issues carries one of its own two system prompts."""
-    answer = ("The total GCF funding requested is USD 150 million.\n\n"
-              f"FP151 requests **USD 25 million** in GCF funding [{DOC}, cover pages].")
+    request verify.py issues carries its own single system prompt — and, since
+    eac4c94, there is only one prompt left for it to carry.
+
+    A second reply is loaded into the client on purpose. If any path in this
+    module ever grows a second call, it gets that reply and this goes red."""
     client = FakeClient(json.dumps({"verdicts": []}),
-                        f"FP151 requests **USD 18.5 million** [{DOC}, cover pages].")
-    V.verify_answer(answer, evidence, client=client)
-    assert client.calls and _pinned_calls(client) == client.calls
+                        "a second reply that must never be asked for")
+    V.verify_answer(JUDGED_ANSWER, evidence, client=client)
+    assert len(client.calls) == 1
+    assert _pinned_calls(client) == client.calls
 
 
 # ---------------------------------------------------------------------------
 # (b) the language gate on the adoption path
 # ---------------------------------------------------------------------------
 
-EN_ANSWER = (f"FP151 requests **USD 25 million** in GCF funding [{DOC}, cover "
-             f"pages]. That is the figure the cover page of the package gives "
-             f"for this proposal, and it is what the answer above reports.")
-EN_FIXED = (f"FP151 requests **USD 18.5 million** in GCF funding [{DOC}, cover "
-            f"pages]. That is the figure the cover page of the package gives "
-            f"for this proposal, and it is what the answer above reports.")
-FR_ANSWER = (f"FP151 demande **25 millions USD** de financement du GCF "
-             f"[{DOC}, cover pages]. C'est le montant que la page de "
-             f"couverture du dossier indique pour cette proposition.")
-FR_FIXED = (f"FP151 demande **18,5 millions USD** de financement du GCF "
-            f"[{DOC}, cover pages]. C'est le montant que la page de "
-            f"couverture du dossier indique pour cette proposition.")
-
-
-@pytest.mark.parametrize("original,rewrite,frm,to", [
-    (EN_ANSWER, FR_FIXED, "English", "French"),
-    (FR_ANSWER, EN_FIXED, "French", "English"),
-])
-def test_a_repair_that_flips_the_language_is_rejected(evidence, original,
-                                                      rewrite, frm, to):
-    """DIMENSION: the (before, after) language PAIR, both directions.
-
-    Wave 4: an English answer came back French in 2 of 3 samples and was
-    ADOPTED both times — every claim verified and every citation resolved,
-    because nothing in the pass reads language. A one-sided gate would be the
-    same defect with a French user; the rewrite here is otherwise a PERFECT
-    repair, so nothing but the language can be doing the rejecting."""
-    res = V.verify_answer(original, evidence, client=FakeClient(rewrite),
-                          use_llm=False)
-    assert res.repair_rejected and not res.repaired
-    assert res.answer == original
-    note = " ".join(res.notes)
-    assert frm in note and to in note, note
-
-
-@pytest.mark.parametrize("original,rewrite", [
-    (EN_ANSWER, EN_FIXED),
-    (FR_ANSWER, FR_FIXED),
-])
-def test_a_repair_that_keeps_the_language_is_still_adopted(evidence, original,
-                                                           rewrite):
-    """The permissive side, in both languages: the gate must cost nothing to a
-    repair that obeys rule 5. A gate that only ever rejects is indistinguishable
-    from turning repair off."""
-    res = V.verify_answer(original, evidence, client=FakeClient(rewrite),
-                          use_llm=False)
-    assert res.repaired and res.answer == rewrite, res.notes
-
-
-@pytest.mark.parametrize("a,b", [
-    ("The total GCF funding requested is USD 150 million for the programme.",
-     "Le financement total demande par le programme est de 150 millions USD."),
-    ("Le financement total demande par le programme est de 150 millions USD.",
-     "The total GCF funding requested is USD 150 million for the programme."),
-])
-def test_the_flip_test_is_symmetric(a, b):
-    """Stated as a property, not as two examples: swapping the arguments
-    swaps the reported direction and never changes whether it fires."""
-    fwd, back = V._language_flip(a, b), V._language_flip(b, a)
-    assert fwd is not None and back is not None
-    assert fwd == (back[1], back[0])
-
-
-@pytest.mark.parametrize("text", ["None.", "18,500,000", "", "FP151 [124_x]"])
-def test_an_undetectable_side_is_not_a_flip(text):
-    """The documented semantics, pinned so it cannot drift into either a
-    silent hole or a silent over-rejection: 'unknown' is not evidence that the
-    language changed. What covers a rewrite this small is the substance floor
-    below, and that is where the coverage is tested."""
-    assert V.detect_language(text) is None
-    assert V._language_flip(EN_ANSWER, text) is None
-    assert V._language_flip(text, EN_ANSWER) is None
-
-
-LANG_PARITY_SAMPLES = [
-    "Quel est le financement total ?", "Which entity implements FP218?",
-    "je veux un tableau par rapport a ca", "FP274?",
-    EN_ANSWER, FR_ANSWER, "None.", "",
-    "Réponds en anglais s'il te plaît, quel est le budget ?",
-    "Now back to the first one — which country is it in, en français ?",
-    "The total GCF funding requested is USD 150 million.",
-    "Le financement total demandé est de 150 millions USD.",
-]
-
-
-def test_the_local_language_detector_agrees_with_the_apps():
-    """`detect_language` is a COPY (importing `chainlit_app` from here is an
-    import cycle and drags in chainlit + faiss). A copy that drifts is worse
-    than an import, so the two are pinned to agree — including on the inputs
-    `tests/test_app_helpers.py` pins the app's own copy against."""
-    pytest.importorskip("chainlit")
-    from gcf_qna.app.chainlit_app import _detect_lang
-    for s in LANG_PARITY_SAMPLES:
-        assert V.detect_language(s) == _detect_lang(s), s
-
-
-#: One English framing sentence around a quotation that carries most of the
-#: characters — the shape the guard is about. The quoted sentence is what
-#: changes language; the answer's own voice does not.
-_QUOTED = ("The document records the objective as follows: {o}{q}{c} "
-           "That is the text on the page.")
-_Q_FR = ("Le programme vise \u00e0 renforcer la r\u00e9silience des communaut\u00e9s "
-         "rurales face aux al\u00e9as climatiques et \u00e0 mobiliser des financements "
-         "pour les collectivit\u00e9s.")
-_Q_EN = ("The programme aims to strengthen the resilience of rural communities "
-         "to climate hazards and to mobilise finance for local authorities.")
-QUOTED_EN = _QUOTED.replace("{q}", _Q_FR)
-QUOTED_FR = _QUOTED.replace("{q}", _Q_EN)
-
-
-@pytest.mark.parametrize("marks", [('"', '"'), ("\u201c", "\u201d"),
-                                   ("\u00ab", "\u00bb")])
-@pytest.mark.parametrize("a,b", [(QUOTED_EN, QUOTED_FR), (QUOTED_FR, QUOTED_EN)])
-def test_a_language_change_inside_a_quotation_only_is_not_a_flip(marks, a, b):
-    """THE GUARD, i.e. the over-strict direction. The rule is about the
-    language the ANSWER is written in; a quotation is the corpus's words. Here
-    the answer's own prose is English on both sides and only the quoted
-    sentence changes language — a repair correcting a misquotation does
-    exactly this. A whole-text detector reads the quotation (most of the
-    characters) as the answer's own voice and fires.
-
-    Run over both directions of the quoted content and over all three quote
-    pairs the corpus and the answer model print, because the mark that was
-    typed must not decide it."""
-    o, c = marks
-    before, after = a.format(o=o, c=c), b.format(o=o, c=c)
-    assert V.detect_language(before) != V.detect_language(after)   # the premise
-    assert V._language_flip(before, after) is None
-
-
-def test_quoting_the_whole_rewrite_does_not_evade_the_language_gate(evidence):
-    """The adversarial half of the same edit. Excluding quoted spans without a
-    fallback would make "wrap the entire French rewrite in quotation marks" a
-    one-line evasion, so when a side has nothing detectable left OUTSIDE its
-    quotes the comparison is retaken over the full text."""
-    wrapped = '"' + FR_FIXED + '"'
-    assert V._unquoted(wrapped).strip() in ("", '"')
-    assert V._language_flip(EN_ANSWER, wrapped) == ("English", "French")
-    res = V.verify_answer(EN_ANSWER, evidence, client=FakeClient(wrapped),
-                          use_llm=False)
-    assert res.repair_rejected and res.answer == EN_ANSWER
-    assert "French" in " ".join(res.notes)
-
-
-def test_excluding_quotes_does_not_weaken_the_whole_answer_flip():
-    """The pair the gate exists for must still fail closed after the quote
-    edit: neither of these carries a quotation at all, so stripping them is a
-    no-op and both directions still fire."""
-    assert V._language_flip(EN_ANSWER, FR_FIXED) == ("English", "French")
-    assert V._language_flip(FR_ANSWER, EN_FIXED) == ("French", "English")
-    for t in (EN_ANSWER, FR_ANSWER, EN_FIXED, FR_FIXED):
-        assert V._unquoted(t) == t
-
 
 # ---------------------------------------------------------------------------
 # (c) the minimum-substance floor
 # ---------------------------------------------------------------------------
 
-#: The Wave-4 shape: a registry-backed abstention, 300+ characters, whose only
-#: fact-bearing claim FAILS — so `_supported_required` is 0 before repair and
-#: the anti-gutting guard's precondition is false. This is the population the
-#: repair pass is invoked on, which is why a guard conditioned on pre-repair
-#: support cannot protect it.
-ABSTENTION = (
-    "The retrieved excerpts do not record a board meeting in 2014, and the "
-    "corpus registry lists no registered proposals for that year, so there "
-    "is nothing to list for 2014. For the nearest year the registry does "
-    f"cover, it records **31 proposals** in 2020 [{DOC}, p. 99]. Nothing "
-    "else in the retrieved pages speaks to 2014 at all.")
 
-
-def test_the_anti_gutting_guards_precondition_really_is_false_here():
-    """The premise of every test below, asserted instead of assumed: if this
-    answer ever grows a supported required claim, the floor tests stop testing
-    the hole they were written for and say so."""
-    verdicts = V.classify(V.extract_claims(ABSTENTION), _abst_ev(),
-                          use_llm=False)
-    assert any(v.failed for v in verdicts)               # repair is invoked
-    assert V._supported_required(verdicts) == 0          # the guard cannot fire
-
-
-def _abst_ev():
-    return {(DOC, None): REGISTRY_LINE, (DOC, 45): "| (vi) Grants | 18,500,000 |",
-            V.NOTES_KEY: YEAR_NOTE}
-
-
-def test_the_wave4_shape_is_rejected_although_the_guard_cannot_fire():
-    """Wave 4's actual case: `abs-2014`'s 351-character registry-backed
-    abstention came back as the single word "None." and was ADOPTED, because
-    the only guard that could have caught it asks whether SUPPORTED claims
-    were lost and this answer had none to lose.
-
-    Everything that could reject this rewrite for another reason is asserted
-    inert first: it cites nothing, states nothing, and the pre-repair support
-    count is zero. What is left is the floor."""
-    ev = _abst_ev()
-    pre = V.classify(V.extract_claims(ABSTENTION), ev, use_llm=False)
-    assert V._supported_required(pre) == 0 and any(v.failed for v in pre)
-    assert V.extract_claims("None.") == []
-    res = V.verify_answer(ABSTENTION, ev, client=FakeClient("None."),
-                          use_llm=False)
-    assert res.repair_rejected and res.answer == ABSTENTION
-    assert "collapsed the answer to 1 word(s)" in " ".join(res.notes), res.notes
-
-
-@pytest.mark.parametrize("rewrite,words,adopted", [
-    ("None.", 1, False),
-    ("Not stated.", 2, False),
-    ("Nothing at all.", 3, False),
-    ("The excerpts do not.", 4, False),
-    ("The excerpts do not say.", 5, True),
-    ("Not stated in the retrieved excerpts.", 6, True),
-])
-def test_the_absolute_leg_fires_on_the_word_count_and_nothing_else(
-        evidence, rewrite, words, adopted):
-    """DIMENSION: the number of words the rewrite leaves standing.
-
-    The original is SHORT on purpose, so the proportional leg cannot be doing
-    the work and the absolute leg has to stand on its own; every row asserts
-    the two neighbouring gates inert (no claim left to fail, no supported
-    claim to lose) so the only variable between adopted and rejected is the
-    word count. The last two rows are the permissive pins — a floor that
-    rejected everything at zero pre-repair support would be repair switched
-    off, not a floor."""
-    answer = f"FP151 requests **USD 25 million** [{DOC}, cover pages]."
-    assert len(V._prose(answer)) < V.SUBSTANTIAL_ANSWER_CHARS   # leg 2 inert
-    assert len(V._prose(rewrite).split()) == words
-    assert V.extract_claims(rewrite) == []                      # nothing to fail
-    pre = V.classify(V.extract_claims(answer), evidence, use_llm=False)
-    assert V._supported_required(pre) == 0                      # guard inert
-    res = V.verify_answer(answer, evidence, client=FakeClient(rewrite),
-                          use_llm=False)
-    assert res.repaired is adopted, (res.status, res.notes)
-    if not adopted:
-        assert res.answer == answer
-        assert "collapsed the answer" in " ".join(res.notes), res.notes
-
-
-#: The discriminating pair a blind attack suite built to defeat any
-#: size-based floor. GUT is 65% of the original's characters and 31 words and
-#: must be REJECTED; FIX is 47% and one sentence and must be ADOPTED. The one
-#: that must die is LONGER than the one that must live, so `MIN_REPAIR_WORDS`
-#: and a character ratio cannot separate them at any threshold. What separates
-#: them is that GUT states nothing and FIX states a fact the evidence prints.
-C2_GUT = ("**None.** Beyond that, the retrieved excerpts do not state anything "
-          "further about the matter, and no additional value is available "
-          "from the context provided here [Note (computed from the corpus "
-          "registry)].")
-C3_FIX = f"FP151 requests **USD 18,500,000** in GCF funding [{DOC}, p. 45]."
-
-
-@pytest.mark.parametrize("rewrite,adopted", [(C2_GUT, False), (C3_FIX, True)])
-def test_padding_does_not_buy_a_gutting_past_the_floor(rewrite, adopted):
-    """DIMENSION: whether the rewrite still STATES something — held against a
-    pair whose sizes point the wrong way.
-
-    An earlier version of this floor had a second leg reading "a substantial
-    answer may not come back as a quarter of itself". `C2_GUT` walks through
-    it: 31 words of filler and a bracket around the word "None", at 65% of the
-    original's characters, while the honest correction `C3_FIX` is 47%. Any
-    threshold that rejects the first accepts the second and vice versa.
-
-    Padding is free and stating a supported fact is not, so the leg was
-    REPLACED rather than tightened: a substantial answer may not be replaced
-    by a rewrite carrying no fact-bearing claim. The only way past it is to
-    say something, and anything said is then classified — so it has to be
-    something the evidence supports or the zero-remaining-failures gate takes
-    it instead."""
-    ev = _abst_ev()
-    assert len(V._prose(C2_GUT)) > len(V._prose(C3_FIX))         # sizes invert
-    assert len(V._prose(C2_GUT).split()) > V.MIN_REPAIR_WORDS    # leg 1 inert
-    assert V._supported_required(
-        V.classify(V.extract_claims(ABSTENTION), ev, use_llm=False)) == 0
-    res = V.verify_answer(ABSTENTION, ev, client=FakeClient(rewrite),
-                          use_llm=False)
-    assert res.repaired is adopted, (res.status, res.notes)
-    if not adopted:
-        assert res.answer == ABSTENTION
-        assert "state no fact at all" in " ".join(res.notes), res.notes
-
-
-def test_the_claim_survival_leg_spares_an_answer_that_had_nothing_to_lose(evidence):
-    """The permissive side of the same leg, and the reason it is conditioned on
-    the ORIGINAL's size rather than on the pre-repair verdicts: deleting the
-    last claim of a one-line answer whose only claim failed is a VALID repair,
-    and an honest refusal is the right output there. `_supported_required` is
-    0 in both cases, so it cannot be what tells them apart — the size of the
-    text being REPLACED is."""
-    short = f"FP151 requests **USD 25 million** [{DOC}, p. 99]."
-    assert len(V._prose(short)) < V.SUBSTANTIAL_ANSWER_CHARS
-    refusal = "The retrieved excerpts do not state FP151's GCF funding."
-    assert V.extract_claims(refusal) == []
-    assert V._substance_floor(short, refusal) is None
-    assert V._substance_floor(ABSTENTION, refusal)               # the same words,
-    res = V.verify_answer(short, evidence, client=FakeClient(refusal),
-                          use_llm=False)                         # replacing more
-    assert res.repaired and res.answer == refusal, res.notes
-
-
-def test_the_floor_is_computed_from_the_two_texts_and_nothing_else():
-    """`_substance_floor` takes no verdicts, by signature. The whole finding
-    is that a gate reading the pre-repair verdicts cannot protect an answer
-    whose pre-repair verdicts are all failures."""
-    import inspect
-    assert list(inspect.signature(V._substance_floor).parameters) == \
-        ["original", "repaired"]
-    assert V._substance_floor("a" * 400, "None.")
-    assert V._substance_floor("short one", "None.")
-    assert V._substance_floor("a" * 400, C3_FIX) is None
-
-
-def test_a_citation_is_not_substance(evidence):
-    """A rewrite cannot buy its way over the floor with brackets: citations are
-    stripped before the words are counted, so `[124_gcf-b27-02-add11, p. 45]`
-    is worth nothing."""
-    answer = f"FP151 requests **USD 25 million** [{DOC}, cover pages]."
-    res = V.verify_answer(answer, evidence, use_llm=False, client=FakeClient(
-        f"None. [{DOC}, p. 45] [{DOC}, cover pages] [{DOC}, p. 45]"))
-    assert res.repair_rejected and "collapsed the answer" in " ".join(res.notes)
-
-
-# ---------------------------------------------------------------------------
-# (d) carry-off: the post-repair recheck classifies the repaired text from
-#     scratch, and no pre-repair judge ruling is carried onto it
-# ---------------------------------------------------------------------------
-
-def test_a_repair_certified_by_a_carried_judge_ruling_is_rejected(evidence):
-    """The self-certification the plan's standing rule 1 forbids, in the shape
-    `audit_repair.py` measured on release-2 (`agg-2021-boards`,
-    `abs-antarctica`): the judge clears a claim the deterministic matcher
-    fails, the repair fixes its task list and leaves that sentence alone, and
-    `_carry_cleared` then re-clears it AFTER the rewrite. The 817abdb gate
-    reads 'no claim left failing at all'; with the carry in place it read 'none
-    except one the judge cleared before the rewrite existed'.
-
-    The rewrite here is otherwise a correct repair, and it is rejected — that
-    is the price, and it is a false negative: the original ships with its
-    cautions."""
-    answer = ("The accredited entity is **Pegasus Capital Advisors LP**.\n\n"
-              f"FP151 requests **USD 25 million** in GCF funding [{DOC}, cover pages].")
-    fixed = ("The accredited entity is **Pegasus Capital Advisors LP**.\n\n"
-             f"FP151 requests **USD 18.5 million** in GCF funding [{DOC}, cover pages].")
-    client = FakeClient(
-        json.dumps({"verdicts": [{"id": 0, "status": "supported",
-                                  "reason": "the cited page names it"}]}),
-        fixed)
-    res = V.verify_answer(answer, evidence, client=client)
-    assert res.repair_rejected and res.answer == answer
-    assert res.status == "partial"
-    assert "still fail verification" in " ".join(res.notes)
-
-
-def test_a_repair_that_stands_on_its_own_is_still_adopted(evidence):
-    """The permissive side. Carry-off is not 'reject repairs when the judge
-    spoke': the judge cleared a claim here too, and the rewrite is adopted
-    because the repaired text passes the deterministic recheck by itself."""
-    answer = ("The total GCF funding requested is USD 150 million.\n\n"
-              f"FP151 requests **USD 25 million** in GCF funding [{DOC}, cover pages].")
-    fixed = f"FP151 requests **USD 18.5 million** in GCF funding [{DOC}, cover pages]."
-    client = FakeClient(
-        json.dumps({"verdicts": [{"id": 0, "status": "supported",
-                                  "reason": "page 5 states it"}]}),
-        fixed)
-    res = V.verify_answer(answer, evidence, client=client)
-    assert res.repaired and res.answer == fixed, res.notes
-    assert not res.failures
-
-
-def test_the_shipped_path_does_not_consult_the_carry_at_all(evidence, monkeypatch):
-    """Stronger than 'the outcome changed': the production path must not even
-    reach `_carry_cleared`. Poisoning it is a no-op, and a future edit that
-    re-introduces the carry turns this red immediately."""
-    def _poison(*a, **k):
-        raise AssertionError("the shipped repair path consulted _carry_cleared")
-    monkeypatch.setattr(V, "_carry_cleared", _poison)
-    answer = f"FP151 requests **USD 25 million** in GCF funding [{DOC}, cover pages]."
-    fixed = f"FP151 requests **USD 18.5 million** in GCF funding [{DOC}, cover pages]."
-    res = V.verify_answer(answer, evidence, client=FakeClient(fixed), use_llm=False)
-    assert res.repaired and res.answer == fixed
-
-
-def test_carry_cleared_is_kept_as_the_auditors_carry_on_arm(evidence):
-    """`scripts/audit_repair.py` patches this binding to score carry-on against
-    carry-off. It must keep existing and keep working, even though nothing in
-    `verify.py` calls it any more."""
-    claim = V.extract_claims(f"FP151 requests **USD 25 million** [{DOC}, p. 99].")
-    old = [V.Verdict(claim[0], V.SUPPORTED, "judge cleared it", [], source="llm")]
-    new = [V.Verdict(claim[0], V.UNSUPPORTED, "not found", [])]
-    (carried,) = V._carry_cleared(new, old)
-    assert carried.status == V.SUPPORTED and carried.source == "llm"
-    assert V._carry_cleared(new, []) == new
+# NOTE: three sections stood here — (b) the language gate, (c) the minimum
+# substance floor, (d) carry-off — 18 tests over the gates that decided
+# whether a REWRITE could be adopted. There is no rewrite and no adoption
+# decision, so there is nothing left for them to be about. The finding they
+# encode is in the module docstring of `verify.py`, which is where a reader
+# asking "why is there no repair here?" will look.
 
 
 # ---------------------------------------------------------------------------
@@ -3764,45 +3305,21 @@ def test_resolve_doc_depends_on_the_contents_and_not_the_container(container):
     assert V._resolve_doc(DOC2, list(docs)) == DOC2        # exact still wins
 
 
+# NOTE: two tests stood here over `_unpinned_note` — "a rewrite the endpoint
+# would not let us pin says so in its notes", and its permissive twin. The
+# helper existed for REWRITES and only `repair()` ever called it, so it went
+# with them.
+#
+# A GAP IS BEING RECORDED HERE, NOT CLOSED. Nothing now puts a pin refusal
+# into a turn's record: an endpoint that 400s on `seed` still costs the JUDGE
+# call its pin, `_complete` still degrades and still prints one line, and the
+# turn's notes stay empty. That was already true before eac4c94 on the shipped
+# path (production ran VERIFY_REPAIR=0, so `_unpinned_note` was never reached
+# in production), which is exactly why closing it here was not allowed: adding
+# a judge-side note would be a NEW observable, and this change had to be
+# byte-identical on the live path over both recorded runs. Disclosing an
+# unpinned judge sample is a real improvement and it is a SEPARATE one.
 # ---------------------------------------------------------------------------
-# an unpinned call is disclosed in the turn's own record, not only in a log
-# ---------------------------------------------------------------------------
-
-@pytest.mark.parametrize("refused", ["seed", "temperature"])
-def test_a_rewrite_that_could_not_be_pinned_says_so_in_its_notes(evidence,
-                                                                 refused):
-    """Silence is the bug. A rewrite the endpoint would not let us pin is a
-    different object from one it did: it cannot be re-derived, so an operator
-    reviewing it and a canary measuring it are both looking at a sample. The
-    note travels with the turn on BOTH the adopted and the rejected path."""
-    answer = f"FP151 requests **USD 25 million** in GCF funding [{DOC}, cover pages]."
-    fixed = f"FP151 requests **USD 18.5 million** in GCF funding [{DOC}, cover pages]."
-    verdicts = V.classify(V.extract_claims(answer), evidence, use_llm=False)
-
-    ok = V.repair(answer, verdicts, evidence,
-                  client=RejectingClient(fixed, refuses=(refused,)))
-    assert ok.repaired
-    assert any("NOT reproducible" in n and refused in n for n in ok.notes), ok.notes
-
-    V._reset_sampling_support()
-    bad = V.repair(answer, verdicts, evidence, client=RejectingClient(
-        f"FP151 requests **USD 61 million** [{DOC}, cover pages].",
-        refuses=(refused,)))
-    assert bad.repair_rejected
-    assert any("NOT reproducible" in n and refused in n for n in bad.notes), bad.notes
-
-
-def test_a_pinned_rewrite_carries_no_such_warning(evidence):
-    """The permissive side: the note must mean something. An endpoint that
-    accepts both pins produces a record with no reproducibility caveat in it —
-    otherwise the warning is decoration and a reader learns to skip it."""
-    answer = f"FP151 requests **USD 25 million** in GCF funding [{DOC}, cover pages]."
-    fixed = f"FP151 requests **USD 18.5 million** in GCF funding [{DOC}, cover pages]."
-    res = V.repair(answer, V.classify(V.extract_claims(answer), evidence,
-                                      use_llm=False), evidence,
-                   client=FakeClient(fixed))
-    assert res.repaired
-    assert not any("reproducible" in n for n in res.notes), res.notes
 
 
 # ---------------------------------------------------------------------------
@@ -3814,22 +3331,25 @@ def test_a_pinned_rewrite_carries_no_such_warning(evidence):
 # known defect. An xfail that has started passing is a test nobody is reading.
 # ---------------------------------------------------------------------------
 
-def test_a_page_only_repoint_of_a_wrong_figure_is_not_a_repair(no_registry):
+def test_a_page_only_repoint_of_a_wrong_figure_is_still_contradicted(no_registry):
     """FP151's cover line prints 18.5 M USD as the GCF financing and 28 M USD
     as the TOTAL. An answer that says the GCF figure is 28 million, cited to
     the cover pages, is correctly CONTRADICTED. Moving the SAME wrong figure's
     bracket to p. 45 — a page that prints 18,500,000 and never prints 28
     million — USED TO make it SUPPORTED with a `citation-page-mismatch`
-    caution, and the repair pass adopted it as `repaired`: zero factual
-    change, a strictly worse citation, and a warning replaced by a green
-    status.
+    caution: zero factual change, a strictly worse citation, and a warning
+    replaced by a green status.
 
-    Reproduced on this fixture at 52152af and unchanged by the three wave-4
-    repair gates — none of them look at what the rewrite did to a claim's
-    SCOPE, which is why it had to be fixed in VERIFICATION. It is now
-    CONTRADICTED at both citations (`_conflict_before_support`), so the
-    rewrite leaves a failing claim and the 817abdb 'none left failing' gate
-    rejects it."""
+    Reproduced on this fixture at 52152af and untouched by any of the wave-4
+    repair gates — none of them looked at what a rewrite did to a claim's
+    SCOPE, which is why it had to be fixed in VERIFICATION and why it is still
+    fixed now that there are no gates and no rewrite. Both citations are
+    CONTRADICTED (`_conflict_before_support`); the repoint buys nothing.
+
+    THE ASSERTION CHANGED WITH THE MODULE. It used to end on
+    `res.repair_rejected` — the rewrite being refused. What that was standing
+    in for is asserted directly here: the repointed sentence is contradicted
+    on its own."""
     ev = {(DOC, None): ('Registry — FP151: "Technical Assistance (TA) '
                         'Facility"; GCF financing (as printed): 18.5 M USD; '
                         'total financing (as printed): 28 M USD; board B.27, '
@@ -3848,5 +3368,11 @@ def test_a_page_only_repoint_of_a_wrong_figure_is_not_a_repair(no_registry):
     # you nothing about the hole.
     assert V.classify_deterministic(V.extract_claims(wrong), ev)[0].status == \
         V.CONTRADICTED, "fixture no longer reproduces the conflict"
-    res = V.verify_answer(wrong, ev, client=FakeClient(moved), use_llm=False)
-    assert res.repair_rejected, (res.status, res.answer, res.notes)
+    (v,) = V.classify_deterministic(V.extract_claims(moved), ev)
+    assert v.status == V.CONTRADICTED, (v.status, v.reason, v.flags)
+    # a client is passed, and never called (use_llm=False): `_status_for`
+    # reads it only to tell 'abstain' from 'no judge was available'
+    client = FakeClient()
+    res = V.verify_answer(moved, ev, client=client, use_llm=False)
+    assert res.status == "abstain" and res.answer == moved
+    assert client.calls == []
