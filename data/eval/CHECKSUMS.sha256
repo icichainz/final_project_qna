@@ -219,3 +219,5 @@ fd81ea03965d4ff22af60dfffdb33f63848e066d17ba68699a45e528adf25446  data/eval/audi
 # tree before the change. The frozen release files are untouched.
 951210e69cea419e507d099694d51c488d16008b440ad219506ff95469c12817  data/eval/rescore_note-scopes_release-2.jsonl
 5ed79aac15e3b64b1865518a6eeab99616295371fb6043fb5b8d5123f7c96211  data/eval/rescore_note-scopes_release-3.jsonl
+d398b45b61c039669a1b3624daa595f0a4245c0800e76886b2fefefb858e4529  data/eval/release_release-4.jsonl
+05b504a8c15718f4bc9b4cc2c4cb52ba0bb0a1d943f955cdb62b3c76ae96537d  data/eval/release_release-4-off.jsonl
