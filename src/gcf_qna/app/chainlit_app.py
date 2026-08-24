@@ -598,6 +598,109 @@ def _resolved_refs_note(items: list, msg_text: str):
               "the only evidence.)")
 
 
+# A registry line is a paragraph of metadata per document; a fan-out that
+# resolved six of them would bury the excerpts under cover-page facts. Four is
+# the cap _resolved_refs_note already applies to the same list, for the same
+# reason.
+_MAX_TURN_NOTE_DOCS = 4
+
+# The stem a main registry line ends with ('… [102_gcf-b30-02-add05, cover
+# pages]') — i.e. which documents a note already speaks for. registry._fmt
+# writes that trailer, so this reads what was actually emitted rather than
+# recomputing it from the question.
+_NOTE_DOC_RE = re.compile(r"\[([0-9]{1,3}_[\w.\-]+), cover pages\]")
+
+
+def _turn_doc_ids(items: list) -> list:
+    """Corpus stems THIS TURN's resolved search items are about.
+
+    Two sources, both of them the turn's own resolved plan — never the
+    conversation, and never an earlier answer's prose:
+
+    * a doc tag that survived the rewrite guards (a conductor tag the message
+      itself names, a pre-scope tag, a planner scope), mapped to the
+      authoritative stem by the same _registry_doc call retrieval filters on;
+    * an FP id or board code inside a resolved sub-query. That is where a
+      follow-up's referent ends up: the conductor rewrites "Et quelle entité
+      accréditée le met en œuvre ?" into "FP173 Amazon Bioeconomy Fund
+      accredited entity", and that rewrite is already what routes retrieval —
+      a document good enough to retrieve from is good enough to state the
+      registry's line for.
+
+    An identifier that resolves nowhere is dropped rather than reported: this
+    list is not the user's claim that a document exists (registry_note answers
+    that, for the question's own words, with a NOT FOUND line). A machine
+    rewrite is not a claim, and "FP999 does not exist" is not something the
+    turn asked.
+    """
+    docs = []
+    try:
+        rows = registry.load()
+        if not rows:
+            return docs
+
+        def _add(doc_id):
+            if doc_id and doc_id in rows and doc_id not in docs:
+                docs.append(doc_id)
+
+        for item in items or []:
+            tag = str(item.get("doc") or "")
+            if tag:
+                _add(_registry_doc(tag))
+            q = str(item.get("q") or "")
+            for n in dict.fromkeys(_FP_RE.findall(q.lower())):
+                row = registry.by_fp(int(n))
+                if row:
+                    _add(row["doc_id"])
+            for b_, item_, add_ in dict.fromkeys(_BOARD_CODE_RE.findall(q)):
+                row = registry.resolve_board_code(
+                    int(b_), int(add_), int(item_) if item_ else None)
+                if row:
+                    _add(row["doc_id"])
+    except Exception:
+        pass            # the registry is an enhancement, never a blocker
+    return docs
+
+
+def _extend_registry_note(note, items):
+    """`note`, plus a registry line for each document the turn RESOLVED to.
+
+    registry_note() keys off identifiers in the question TEXT, and a follow-up
+    has none: release-3's fu-lang-switch asked "Et quelle entité accréditée le
+    met en œuvre ?" of a thread about FP173. The conductor resolved it, the
+    query it produced named FP173, retrieval returned FP173's package — and
+    the answer model, correctly obeying cite-or-hedge, said the excerpts do
+    not state the accredited entity. The registry states it (Inter-American
+    Development Bank); nothing had put it in front of the model, because the
+    French sentence spells no identifier.
+
+    So the trigger widens from "the question names the document" to "this turn
+    resolved to the document". Same emitter and same format — registry._fmt
+    and registry._conflict_lines are the functions registry_note itself calls,
+    so the two can never drift — and a document the question already named
+    keeps exactly ONE line (`have`, seeded from the note's own trailers).
+    """
+    lines, added = [], 0
+    try:
+        have = set(_NOTE_DOC_RE.findall(note or ""))
+        rows = registry.load()
+        for doc in _turn_doc_ids(items):
+            if doc in have:
+                continue
+            if added >= _MAX_TURN_NOTE_DOCS:
+                break
+            row = {"doc_id": doc, **(rows.get(doc) or {})}
+            lines.append("Registry — " + registry._fmt(row))
+            lines += registry._conflict_lines(row)
+            have.add(doc)
+            added += 1
+    except Exception:
+        return note     # an enhancement of an enhancement: never a blocker
+    if not lines:
+        return note
+    return "\n".join(([note] if note else []) + lines)
+
+
 # ---------------------------------------------------------------------------
 # Comparison-planner intent gate (config.PLANNER).
 #
@@ -1243,6 +1346,10 @@ async def main(message: cl.Message):
     try:
         from gcf_qna.rag.registry import registry_note
         reg_note = registry_note(message.content)
+        # …and a line for whatever else THIS turn resolved to. The question's
+        # own words are not the only evidence of which document a turn is
+        # about: a follow-up names none, and its resolved query names one.
+        reg_note = _extend_registry_note(reg_note, search_queries)
         if reg_note:
             context = reg_note + "\n\n" + context
     except Exception:

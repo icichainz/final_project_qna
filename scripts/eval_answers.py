@@ -1330,6 +1330,11 @@ class Pipeline:
         reg_note = None
         try:
             reg_note = registry.registry_note(question)
+            # The app's second trigger, on the app's own function: the
+            # question's words are not the only evidence of which document the
+            # turn is about — a follow-up spells no identifier and its resolved
+            # query spells one. Same items retrieval just ran on.
+            reg_note = app._extend_registry_note(reg_note, items)
             if reg_note:
                 context = reg_note + "\n\n" + context
         except Exception:

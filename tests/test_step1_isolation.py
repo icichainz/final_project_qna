@@ -307,11 +307,19 @@ def test_history_is_still_recorded_for_the_next_turn(monkeypatch, app_env):
 
 def test_followup_referents_reach_the_answer_call_as_ids(monkeypatch, app_env):
     """'their' resolves through the conductor's doc tags; the answer call sees
-    the ids, not the earlier answer that named them."""
+    the ids, not the earlier answer that named them.
+
+    The sentinels are the earlier answer's OWN WORDING — the long entity names
+    and the sentence that carried them — never the bare 'IUCN'/'Pegasus' the
+    registry itself records for these documents. A doc tag now also earns its
+    registry line (_extend_registry_note), so those short strings can reach the
+    body legitimately, computed from the corpus registry rather than copied out
+    of a previous turn; what must never reach it is the prose."""
     history = [
         {"role": "user", "content": "What are FP151 and FP152?"},
         {"role": "assistant",
-         "content": f"FP151 is implemented by IUCN [{FP151}, p. 5]. FP152 is "
+         "content": f"FP151 is implemented by the International Union for "
+                    f"Conservation of Nature [{FP151}, p. 5]. FP152 is "
                     f"implemented by Pegasus Capital Advisors LP [{FP152}, p. 5]."},
     ]
     client = FakeOpenAI(conductor_json={"mode": "retrieve", "queries": [
@@ -320,7 +328,7 @@ def test_followup_referents_reach_the_answer_call_as_ids(monkeypatch, app_env):
     _run_main(monkeypatch, "Compare their GCF funding.", history, client)
     body = client.answer_call["messages"][1]["content"]
     assert f"FP151 = {FP151}" in body and f"FP152 = {FP152}" in body
-    assert "Pegasus" not in body and "IUCN" not in body
+    assert "International Union" not in body and "Capital Advisors" not in body
 
 
 # ---------------------------------------------------------------------------
