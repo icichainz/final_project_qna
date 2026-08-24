@@ -328,12 +328,23 @@ def test_unsupported_entity_names_the_missing_name(evidence):
     assert "Pegasus" in v.reason
 
 
-def test_page_mismatch_is_supported_but_flagged(evidence):
+def test_page_mismatch_is_supported_but_flagged(evidence, no_registry):
     """A real figure attached to the wrong page of the right document is a
     citation defect, not an invention — and must not read the same.
 
     'total financing 28 M USD' is printed on the registry cover line, not on
     the cited p.45.
+
+    `no_registry` was added when the promotion branch started running the
+    conflict gate, and it is not a workaround: the corpus registry files a
+    real CONFLICT for this document's total_financing (28 M USD p.5 vs
+    $720,000,000 p.60), so with the registry live this sentence states one
+    side of a known conflict and is CONTRADICTED — as the SAME sentence citing
+    '[doc, cover pages]' already was on every earlier revision. That
+    asymmetry was the defect, and it is pinned in
+    `test_a_page_repoint_cannot_escape_a_registry_recorded_conflict` below.
+    What this test owns is the other half: with nothing else disagreeing, the
+    wrong page is a caution and not a failure.
     """
     answer = f"Total financing is **28 M USD** [{DOC}, p. 45]."
     (v,) = V.classify(V.extract_claims(answer), evidence, use_llm=False)
@@ -863,6 +874,218 @@ def test_doc_level_widening_does_not_reach_a_document_never_cited(no_registry):
     answer = f"FP151 requests **USD 150 million** in GCF funding [{DOC}]."
     (v,) = V.classify(V.extract_claims(answer), ev, use_llm=False)
     assert v.failed
+
+
+# ---------------------------------------------------------------------------
+# the citation-repointing escape, and the one gate that closes it
+#
+# THE INVARIANT: a verdict may not answer SUPPORTED on a scope it has not
+# conflict-tested.  Support is decided in three places — the strictly cited
+# keys, the rest of a page-less bracket's document (ruling 5), and, when
+# neither holds the figure, the rest of a PAGED bracket's document (or the
+# registry) — and the conflict test used to run in the first place only, plus
+# ruling 5.  So the SAME false sentence changed verdict with its citation:
+#
+#   'FP151 requests USD 28 million in GCF funding [doc, cover pages]'
+#       -> CONTRADICTED (the cover line prints 18.5 M USD for GCF financing
+#          and 28 M USD for TOTAL financing: the answer transposed the fields)
+#   'FP151 requests USD 28 million in GCF funding [doc, p. 45]'
+#       -> SUPPORTED, 'value found in the cited document, but not on the cited
+#          page', one caution and nothing else — on a page that prints
+#          18,500,000 and never prints 28 million.
+#
+# Same figure, same document, a strictly WORSE citation, a passing verdict;
+# with VERIFY_REPAIR=1 a rewrite whose only diff was the page number was
+# adopted as `repaired`.  It is a VERIFICATION defect, live under VERIFY=1
+# with repair off, not a repair one.
+#
+# The tests below fix the direction (a repoint may only make a verdict worse,
+# never better) and then pin, one dimension each, everything the gate must NOT
+# do — because the cheapest way to close this is to over-close it.
+# ---------------------------------------------------------------------------
+
+#: the cover line prints BOTH of FP151's figures, under their own labels —
+#: each one heading its own `;`-separated segment, which is the only way
+#: `_field_lines` reads a label as the field being stated rather than as prose
+_REPOINT_EV = {
+    (DOC, None): ('Registry — FP151: "TA Facility"; '
+                  "GCF financing (as printed): 18.5 M USD; "
+                  "total financing (as printed): 28 M USD"),
+    (DOC, 45): ("### (a) Requested GCF funding (Total amount)\n"
+                "| (vi) Grants | 18,500,000 | 7 | |"),
+    (DOC, 60): "B.2 (a) programme cost table — no financing total is stated here",
+}
+
+
+@pytest.mark.parametrize("cite", ["cover pages", "p. 45", "p. 60", None])
+def test_no_citation_of_this_document_makes_the_transposed_figure_pass(
+        no_registry, cite):
+    """DIMENSION: the CITATION, with the figure held constant — the axis a
+    figure-level check cannot see.
+
+    The claim states the document's TOTAL-financing figure under the
+    GCF-financing label.  Every way of pointing at the document that holds
+    both figures must fail: the page that prints the rival, a page that prints
+    neither, and the whole document.  p.45 is the recorded escape.
+    """
+    bracket = f"[{DOC}, {cite}]" if cite else f"[{DOC}]"
+    answer = f"FP151 requests **USD 28 million** in GCF funding {bracket}."
+    (v,) = V.classify(V.extract_claims(answer), _REPOINT_EV, use_llm=False)
+    assert v.status == V.CONTRADICTED, (cite, v.status, v.reason, v.flags)
+    assert "18.5 M USD" in v.reason
+
+
+def test_the_widened_branch_is_scanned_per_key_not_as_one_blob(no_registry):
+    """DIMENSION: how the widened keys are handed to the detector — the exact
+    shape the previous attempt at this call site died on.
+
+    `_scoped_field_conflict(c, evidence, strict + wide_only)` passed the UNION,
+    and `_field_conflict` stops at the first page that AGREES, so the agreeing
+    page inside the merged blob suppressed the disagreeing one: the reported
+    row closed and the vector stayed open.  Here p.5 agrees with the claim and
+    p.48 does not, and the claim cites a page that holds neither.
+    """
+    ev = {(DOC, 5): "GCF funding requested: 40,751,254 USD",
+          (DOC, 48): "GCF funding requested: 38,000,000 USD",
+          (DOC, 9): "C.1 — see the financing tables in section B."}
+    answer = f"The **GCF funding requested** is **USD 40,751,254** [{DOC}, p. 9]."
+    (v,) = V.classify(V.extract_claims(answer), ev, use_llm=False)
+    assert v.status == V.CONTRADICTED, (v.status, v.reason)
+    assert "38,000,000" in v.reason
+    assert "conflict-elsewhere-in-document" in v.flags
+
+
+def test_the_widened_branch_still_reports_a_wrong_page_as_a_wrong_page(
+        no_registry):
+    """FALSE-POSITIVE SIDE.  A coarse or wrong-page citation to a document
+    that agrees with itself is a citation defect and must stay one: SUPPORTED,
+    cautioned, not CONTRADICTED.  The gate may only fire on the claim's OWN
+    field label."""
+    ev = {(DOC, 5): "GCF funding requested: 40,751,254 USD",
+          (DOC, 48): "Co-financing: 38,000,000 USD",
+          (DOC, 9): "C.1 — see the financing tables in section B."}
+    answer = f"The **GCF funding requested** is **USD 40,751,254** [{DOC}, p. 9]."
+    (v,) = V.classify(V.extract_claims(answer), ev, use_llm=False)
+    assert v.status == V.SUPPORTED, (v.status, v.reason)
+    assert v.flags == ["citation-page-mismatch"]
+
+
+def test_a_page_repoint_cannot_escape_a_registry_recorded_conflict(monkeypatch):
+    """DIMENSION: the source of the conflict — held page text above, the fact
+    registry here.  `registry_conflict` is part of the same gate, so it too
+    used to be skipped by the widened branch: the identical sentence was
+    CONTRADICTED at '[doc, cover pages]' and SUPPORTED at '[doc, p. 8]'."""
+    monkeypatch.setattr("gcf_qna.rag.registry.facts", lambda doc: CONFLICT_FACTS)
+    ev = dict(CONFLICT_EV)
+    ev[(DOC, 3)] = "A.1 — this page states no financing figure at all."
+    for cite in ("cover pages", "p. 3"):
+        answer = (f"- **USD 40,511,264** is the GCF funding requested "
+                  f"[{DOC}, {cite}].")
+        (v,) = V.classify(V.extract_claims(answer), ev, use_llm=False)
+        assert v.status == V.CONTRADICTED, (cite, v.status, v.reason)
+        assert "known-document-conflict" in v.flags
+
+
+def test_the_report_both_licence_survives_the_widened_branch(monkeypatch):
+    """FALSE-POSITIVE SIDE, and the largest one: 23 adjudicated rows.
+
+    The registry note says 'report both figures with their pages', an answer
+    that obeys prints one figure per bullet, and a bullet may perfectly well
+    reach the widened branch — its figure is on a page the bracket does not
+    name.  The licence is ANSWER-scoped (`_reported_elsewhere` -> `also`), so
+    it has to survive the gate on every branch, not only on the strict one.
+    """
+    monkeypatch.setattr("gcf_qna.rag.registry.facts", lambda doc: CONFLICT_FACTS)
+    ev = dict(CONFLICT_EV)
+    ev[(DOC, 3)] = "A.1 — this page states no financing figure at all."
+    answer = (f"- **USD 40,511,264** is the GCF funding requested (p.7, A.8) "
+              f"[{DOC}, p. 3].\n"
+              f"- **USD 49,751,264** (p.8, A.10 “Grant”) [{DOC}, p. 8].")
+    verdicts = V.classify(V.extract_claims(answer), ev, use_llm=False)
+    assert len(verdicts) == 2
+    assert all(v.status == V.SUPPORTED for v in verdicts), \
+        [(v.status, v.reason) for v in verdicts]
+    assert "citation-page-mismatch" in verdicts[0].flags
+
+
+def test_a_registry_settled_rival_is_still_deferred_to_on_the_widened_branch(
+        monkeypatch):
+    """FALSE-POSITIVE SIDE.  `registry_ruled_compatible` is the one thing that
+    may outrank a page-level disagreement — the registry read both prints and
+    filed the rival 'supporting' (row `id-fp152-financing`: a per-project
+    tranche far below the programme total).  It is applied per rival inside
+    `_key_conflict`, so widening the scope must not widen past it."""
+    facts = {"total_financing": [
+        {"raw": "720 M USD", "page": 5, "status": "canonical"},
+        {"raw": "$100,000,000", "page": 55, "status": "supporting"}]}
+    monkeypatch.setattr("gcf_qna.rag.registry.facts", lambda doc: facts)
+    ev = {(DOC, 5): "A7. Total financing (SCF + co-finance) 720 M USD",
+          (DOC, 55): "(a) Total project financing: $100,000,000",
+          (DOC, 3): "A.1 — this page states no financing figure at all."}
+    answer = f"**Total financing** is **720 M USD** [{DOC}, p. 3]."
+    (v,) = V.classify(V.extract_claims(answer), ev, use_llm=False)
+    assert v.status == V.SUPPORTED, (v.status, v.reason)
+    assert "citation-page-mismatch" in v.flags
+
+
+def test_the_registry_backed_branch_runs_the_same_gate(monkeypatch):
+    """THE SIBLING BRANCH.  `registry-backed-page-not-retrieved` answers
+    SUPPORTED from the registry for a figure no held key prints, and it used
+    to be reached with only the cited page tested — the same hole one branch
+    over.  Closing one and leaving the other is a relocation, not a fix."""
+    facts = {"gcf_funding_requested": [
+        {"raw": "26,736,295 USD", "page": 61, "status": "canonical"}]}
+    monkeypatch.setattr("gcf_qna.rag.registry.facts", lambda doc: facts)
+    ev = {(DOC, 3): "A.1 — this page states no financing figure at all.",
+          (DOC, 48): "GCF funding requested: 38,000,000 USD"}
+    answer = (f"The **GCF funding requested** is **USD 26,736,295** "
+              f"[{DOC}, p. 3].")
+    (v,) = V.classify(V.extract_claims(answer), ev, use_llm=False)
+    assert v.status == V.CONTRADICTED, (v.status, v.reason, v.flags)
+    assert "38,000,000" in v.reason
+    # the branch that ALMOST supported it is still named on the verdict
+    assert "registry-backed-page-not-retrieved" in v.flags
+    # and with nothing disagreeing it is still SUPPORTED, as it must be
+    (ok,) = V.classify(V.extract_claims(answer),
+                       {(DOC, 3): ev[(DOC, 3)]}, use_llm=False)
+    assert ok.status == V.SUPPORTED
+    assert "registry-backed-page-not-retrieved" in ok.flags
+
+
+def test_the_widened_conflict_scan_is_the_scan_cross_page_conflicts_names(
+        no_registry):
+    """The new scan is a CROSS-PAGE scan and is gated by the switch that
+    exists to name cross-page scans — otherwise `cross_page_conflicts=False`
+    would mean two different things on two branches, and the ablation that
+    measures that switch would under-report."""
+    ev = {(DOC, 5): "GCF funding requested: 40,751,254 USD",
+          (DOC, 48): "GCF funding requested: 38,000,000 USD",
+          (DOC, 9): "C.1 — see the financing tables in section B."}
+    answer = f"The **GCF funding requested** is **USD 40,751,254** [{DOC}, p. 9]."
+    claims = V.extract_claims(answer)
+    (on,) = V.classify_deterministic(claims, ev)
+    (off,) = V.classify_deterministic(claims, ev, cross_page_conflicts=False)
+    assert on.status == V.CONTRADICTED and off.status == V.SUPPORTED
+
+
+def test_a_widened_verdict_never_claims_a_scope_it_did_not_test(no_registry):
+    """The invariant itself, asserted structurally rather than by example: for
+    every SUPPORTED verdict, `_conflict_before_support` re-run over the keys
+    the verdict published as its own scope must still find nothing.  A branch
+    that widened its scope without widening its test fails here whatever
+    fixture it was added for."""
+    ev = {(DOC, None): "Registry — FP151: GCF financing (as printed): 18.5 M USD",
+          (DOC, 45): "| (vi) Grants | 18,500,000 | 7 | |",
+          (DOC, 48): "GCF funding requested: 38,000,000 USD",
+          (DOC2, 5): "Total GCF funding requested: USD 150 million"}
+    for answer in (f"FP151 requests **USD 18.5 million** in GCF funding [{DOC}, p. 45].",
+                   f"FP151 requests **USD 18.5 million** in GCF funding [{DOC}, p. 47].",
+                   f"FP152 requests **USD 150 million** in GCF funding [{DOC2}]."):
+        for v in V.classify(V.extract_claims(answer), ev, use_llm=False):
+            if v.status != V.SUPPORTED:
+                continue
+            assert V._conflict_before_support(
+                v.claim, ev, v.scope, v.scope, []) is None, (answer, v.reason)
 
 
 # ---------------------------------------------------------------------------
@@ -1798,23 +2021,27 @@ def test_every_scored_row_joins_exactly_one_extracted_claim():
 #       count `flagged`, which a lost contradiction usually does not change.
 # ---------------------------------------------------------------------------
 
-#: The one contradiction-arm row this tree does NOT get right — an EXACT set,
+#: The contradiction-arm rows this tree does NOT get right — an EXACT set,
 #: for the same reason KNOWN_UNCLEARED and REPAIRED_STILL_FLAGGED are exact:
-#: it fails when a row starts passing as well as when one stops.
+#: it fails when a row starts passing as well as when one stops.  It is now
+#: EMPTY, and the row it used to hold is why the set is kept rather than
+#: deleted with its last member.
 #:
-#: `123_gcf-b27-02-add12` p.5 prints, verbatim, '## A8. Total GCF funding
-#: requested\n150 M USD', and the row states 150 M USD for total_financing
-#: while the same document's registry line prints '720 M USD' for that field.
-#: Two things have to be true for it to come back SUPPORTED, and both are:
-#: `verify.amounts` does not yield '150 M USD' from that page (the page also
-#: carries '- Equity: 150 MUSD', and what it yields is `('150', 150.0, 'USD',
-#: None)`), so the claim misses its strict scope; and the same-document
-#: fallback branch that then supports it — 'value found in the cited document,
-#: but not on the cited page' — runs NO conflict check at all before returning
-#: SUPPORTED.  That second half is a hole in the contradiction path itself, and
-#: naming it here is the point of the row: it is the instrument reporting a gap
-#: in the code under test, not the arm being wrong.
-CONTRADICTION_ARM_MISSES = {"con-elsewhere-id-fp152-financing-b580f69e0a"}
+#: `con-elsewhere-id-fp152-financing-b580f69e0a`: `123_gcf-b27-02-add12` p.5
+#: prints, verbatim, '## A8. Total GCF funding requested\n150 M USD', and the
+#: row states 150 M USD for total_financing while the same document's registry
+#: line prints '720 M USD' for that field.  Two things had to be true for it to
+#: come back SUPPORTED, and both were: `verify.amounts` does not yield
+#: '150 M USD' from that page (the page also carries '- Equity: 150 MUSD', and
+#: what it yields is `('150', 150.0, 'USD', None)`), so the claim missed its
+#: strict scope; and the same-document fallback branch that then supported it —
+#: 'value found in the cited document, but not on the cited page' — ran NO
+#: conflict check at all before returning SUPPORTED.  The instrument found that
+#: second half independently of the attack suite, and named it here as a gap in
+#: the code under test rather than as the arm being wrong.  The gap is closed:
+#: every SUPPORTED exit now goes through `_conflict_before_support`, the row
+#: comes back CONTRADICTED on the cross-page scan, and the arm is 34/34.
+CONTRADICTION_ARM_MISSES: set = set()
 
 #: Every shape the arm must actually reach.  COUNTED, NOT ASSERTED — the same
 #: discipline `test_the_rider_shapes_are_actually_seeded` exists for, after a
@@ -3136,38 +3363,47 @@ def test_a_pinned_rewrite_carries_no_such_warning(evidence):
 
 
 # ---------------------------------------------------------------------------
-# a KNOWN-OPEN hole, recorded here as an executable statement rather than a
-# comment. It is not closed by this wave and this test is expected to fail.
+# the hole this wave closed, kept as the executable statement it was written
+# as. It carried `xfail(reason="OPEN: wave0b N2 / wave0c findings 2 and 7 ...
+# retire the marker when it lands")` from 52152af until the
+# `_conflict_before_support` design pass; the marker is retired here because
+# the pass landed, and the row is now a live pin rather than a record of a
+# known defect. An xfail that has started passing is a test nobody is reading.
 # ---------------------------------------------------------------------------
 
-@pytest.mark.xfail(reason="OPEN: wave0b N2 / wave0c findings 2 and 7. The "
-                          "`citation-page-mismatch` promotion runs no conflict "
-                          "test, so a page-only re-point of a wrong figure is "
-                          "adopted. Closing it means re-scoping "
-                          "`_scoped_field_conflict`, which "
-                          "docs/wave0c-review-verdict.md requires be done as "
-                          "one deliberate design pass — three reviewers asked "
-                          "for three incompatible edits to that call site — "
-                          "and not as a patch inside a wave that owns three "
-                          "other gates.")
-def test_a_page_only_repoint_of_a_wrong_figure_should_not_be_a_repair(no_registry):
+def test_a_page_only_repoint_of_a_wrong_figure_is_not_a_repair(no_registry):
     """FP151's cover line prints 18.5 M USD as the GCF financing and 28 M USD
     as the TOTAL. An answer that says the GCF figure is 28 million, cited to
     the cover pages, is correctly CONTRADICTED. Moving the SAME wrong figure's
     bracket to p. 45 — a page that prints 18,500,000 and never prints 28
-    million — makes it SUPPORTED with a `citation-page-mismatch` caution, and
-    the repair pass adopts it as `repaired`: zero factual change, a strictly
-    worse citation, and a warning replaced by a green status.
+    million — USED TO make it SUPPORTED with a `citation-page-mismatch`
+    caution, and the repair pass adopted it as `repaired`: zero factual
+    change, a strictly worse citation, and a warning replaced by a green
+    status.
 
-    Reproduced on this fixture at 52152af and unchanged by this wave's gates —
-    none of them look at what the rewrite did to a claim's SCOPE."""
-    ev = {(DOC, None): ('Registry — FP151: GCF financing (as printed): 18.5 M '
-                        'USD; total financing (as printed): 28 M USD'),
+    Reproduced on this fixture at 52152af and unchanged by the three wave-4
+    repair gates — none of them look at what the rewrite did to a claim's
+    SCOPE, which is why it had to be fixed in VERIFICATION. It is now
+    CONTRADICTED at both citations (`_conflict_before_support`), so the
+    rewrite leaves a failing claim and the 817abdb 'none left failing' gate
+    rejects it."""
+    ev = {(DOC, None): ('Registry — FP151: "Technical Assistance (TA) '
+                        'Facility"; GCF financing (as printed): 18.5 M USD; '
+                        'total financing (as printed): 28 M USD; board B.27, '
+                        f'2020 [{DOC}, cover pages]'),
           (DOC, 45): ("### (a) Requested GCF funding (Total amount)\n"
                       "| (vi) Grants | 18,500,000 | 7 | |")}
     wrong = f"FP151 requests **USD 28 million** in GCF funding [{DOC}, cover pages]."
     moved = f"FP151 requests **USD 28 million** in GCF funding [{DOC}, p. 45]."
+    # THE PREMISE IS LOAD-BEARING, and it is asserted first for a reason: an
+    # xfail passes on ANY exception, so a fixture that never reaches the
+    # subject assertion produces a green run that documents nothing. An
+    # earlier version of this test carried a shortened registry line on which
+    # the cover-pages citation already verified SUPPORTED — the premise failed,
+    # the hole below was never exercised, and the marker hid it. If this line
+    # ever goes red the fixture has stopped reproducing and the row is telling
+    # you nothing about the hole.
     assert V.classify_deterministic(V.extract_claims(wrong), ev)[0].status == \
-        V.CONTRADICTED                                     # the premise
+        V.CONTRADICTED, "fixture no longer reproduces the conflict"
     res = V.verify_answer(wrong, ev, client=FakeClient(moved), use_llm=False)
     assert res.repair_rejected, (res.status, res.answer, res.notes)

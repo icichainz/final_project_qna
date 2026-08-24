@@ -1862,6 +1862,75 @@ def _reported_elsewhere(claims: Sequence[Claim],
 
 
 
+def _conflict_before_support(claim: Claim, evidence: Evidence,
+                             strict: Sequence[EvidenceKey],
+                             wide: Sequence[EvidenceKey],
+                             r5: Sequence[EvidenceKey],
+                             also: Sequence[Amount] = (),
+                             also_all: Sequence[Amount] = (),
+                             registry_conflicts: bool = True,
+                             cross_page_conflicts: bool = True
+                             ) -> Optional[Tuple[str, Optional[str]]]:
+    """The ONE gate between a verified claim and SUPPORTED: ``(reason, flag)``.
+
+    THE INVARIANT: a verdict may not answer SUPPORTED on a scope it has not
+    conflict-tested. Support was decided in three places — the strictly cited
+    keys, the rest of a page-less bracket's document (ruling 5), and, when
+    neither held the figure, the rest of a PAGED bracket's document — while
+    the conflict test ran in the first two only. So a false figure escaped by
+    moving its own citation: 'FP151 requests USD 28 million [doc, cover
+    pages]' is CONTRADICTED (the cover line prints 18.5 M USD for GCF
+    financing and 28 M USD for TOTAL financing), and the identical sentence
+    re-pointed to p.45 — a page that prints 18,500,000 and never prints 28
+    million — came back SUPPORTED with a citation-page-mismatch caution and
+    nothing else. Same figure, same document, a strictly WORSE citation, a
+    passing verdict; and with ``VERIFY_REPAIR=1`` a rewrite whose only diff is
+    the page number was adopted as ``repaired``. The registry-backed branch
+    answered SUPPORTED from the registry with only the cited page tested, the
+    same shape one branch over. One gate, called from all three, is the only
+    arrangement in which a fourth support branch cannot reopen this.
+
+    PER KEY, NEVER CONCATENATED — this is where the previous attempt died.
+    ``_field_conflict`` stops at the first page that AGREES, so handing it a
+    merged blob (``strict + wide_only``, wave-0c finding 2) lets the agreeing
+    page hide the disagreeing one: it closed the reported row and left the
+    vector open. ``_key_conflict`` takes one key at a time and keeps every
+    escape the strict branch has, so widening the scope cannot widen the
+    verdict: the answer's own 'report both figures with their pages'
+    compliance (``also``), and a rival the registry itself read and filed
+    'supporting' rather than 'conflicting' (``registry_ruled_compatible``,
+    decided per rival, inside ``_key_conflict``).
+
+    Scope, in the order a caution would name it: the strictly cited keys, then
+    the rest of a page-less bracket's document, then the rest of every cited
+    document — that last scan gated by ``cross_page_conflicts``, which is the
+    switch that exists to name it. Nothing here is scoped to the branch that
+    called it: the three callers differ in what made them SUPPORTED, not in
+    which evidence may contradict them.
+    """
+    others = [k for k in wide if k not in strict and k not in r5]
+    scans: List[Tuple[Sequence[EvidenceKey], Optional[str]]] = [
+        (strict, None), (r5, "conflict-elsewhere-in-document")]
+    if cross_page_conflicts:
+        scans.append((others, "conflict-elsewhere-in-document"))
+    for keys, tag in scans:
+        if not keys:
+            continue
+        conflict, _key = _key_conflict(claim, evidence, keys, also,
+                                       registry_conflicts)
+        if conflict:
+            cand, line = conflict
+            return (f"the cited document also prints '{cand.raw}' for this field "
+                    f"({line})"), tag
+    if registry_conflicts:
+        for d in dict.fromkeys(k[0] for k in list(strict) + list(wide)
+                               if k[0] != NOTES_DOC):
+            known = registry_conflict(d, claim, also_all)
+            if known:
+                return known, "known-document-conflict"
+    return None
+
+
 def classify_deterministic(claims: Sequence[Claim], evidence: Evidence,
                            cross_page_conflicts: bool = True,
                            registry_conflicts: bool = True) -> List[Verdict]:
@@ -1934,41 +2003,20 @@ def classify_deterministic(claims: Sequence[Claim], evidence: Evidence,
         # requests USD 61 million [doc, p.5]' shipped as verified. The four
         # adjudicated ruling-3 rows are all UNCITED and clear through the
         # branch above; a CITED claim keeps every other check it had.
+        # Every SUPPORTED exit below goes through `_conflict_before_support`,
+        # and none of them may be given a scope it did not test. The three of
+        # them differ in what made the claim verify — the cited page, a
+        # page-less bracket's document, the rest of a paged bracket's document
+        # or the registry — never in which evidence is allowed to contradict
+        # it. Two of the three used to skip the test entirely.
         if ok:
-            # Conflicts are tested PER KEY, over the ruling-5 scope as well as
-            # the strict one. Concatenating the keys first let one agreeing
-            # page hide a disagreeing one, and folding ruling 5 into `strict`
-            # emptied the cross-page scope altogether: a document printing two
-            # figures for the same field, cited '[doc]', verified clean.
-            conflict, where = _key_conflict(c, evidence, strict, also,
-                                            registry_conflicts)
-            if conflict is None and r5:
-                conflict, where = _key_conflict(c, evidence, r5, also,
-                                                registry_conflicts)
-                if conflict:
-                    flags.append("conflict-elsewhere-in-document")
-            if conflict is None and cross_page_conflicts:
-                others = [k for k in wide if k not in strict and k not in r5]
-                conflict, where = _key_conflict(c, evidence, others, also,
-                                                registry_conflicts)
-                if conflict:
-                    flags.append("conflict-elsewhere-in-document")
-            if conflict:
-                cand, line = conflict
-                out.append(Verdict(
-                    c, CONTRADICTED,
-                    f"the cited document also prints '{cand.raw}' for this field "
-                    f"({line})", strict, flags=flags))
-                continue
-            known = None
-            if registry_conflicts:
-                for d in dict.fromkeys(k[0] for k in strict + wide if k[0] != NOTES_DOC):
-                    known = registry_conflict(d, c, also_all)
-                    if known:
-                        break
-            if known:
-                out.append(Verdict(c, CONTRADICTED, known, strict,
-                                   flags=flags + ["known-document-conflict"]))
+            hit = _conflict_before_support(c, evidence, strict, wide, r5, also,
+                                           also_all, registry_conflicts,
+                                           cross_page_conflicts)
+            if hit:
+                reason, tag = hit
+                out.append(Verdict(c, CONTRADICTED, reason, strict,
+                                   flags=flags + ([tag] if tag else [])))
                 continue
             if any(a.clash for a in c.amounts):
                 flags.append("unit-scale-clash")
@@ -1976,6 +2024,10 @@ def classify_deterministic(claims: Sequence[Claim], evidence: Evidence,
                                strict, flags=flags))
             continue
 
+        # The strictly cited keys disagree AND do not hold the value: this is
+        # the one conflict whose reason names what the answer stated, so it is
+        # reported before any widening is even attempted — a claim the cited
+        # page itself refutes must never be described as a page-number defect.
         conflict, _where = _key_conflict(c, evidence, strict, also,
                                          registry_conflicts)
         if conflict:
@@ -1986,18 +2038,18 @@ def classify_deterministic(claims: Sequence[Claim], evidence: Evidence,
                                strict, flags=flags))
             continue
 
+        # Two widenings, tried in order, each a candidate SUPPORTED verdict —
+        # collected rather than emitted, because the gate is what decides.
         wide_only = [k for k in wide if k not in strict and k not in r5]
+        promoted: Optional[Tuple[str, List[EvidenceKey], str]] = None
         if wide_only:
             ok2, _ = _verify_against(c, _text_of(evidence, wide_only))
             if ok2:
-                out.append(Verdict(
-                    c, SUPPORTED,
+                promoted = (
                     "value found in the cited document, but not on the cited page",
-                    strict + wide_only,
-                    flags=flags + ["citation-page-mismatch"]))
-                continue
+                    strict + wide_only, "citation-page-mismatch")
 
-        if registry_conflicts:
+        if promoted is None and registry_conflicts:
             held = _text_of(evidence, strict + wide_only)
             gaps = _check_amounts(c, held)[1] if c.amounts else []
             gap_names = (_check_entities(c, held)[1]
@@ -2009,12 +2061,29 @@ def classify_deterministic(claims: Sequence[Claim], evidence: Evidence,
                 if backed:
                     break
             if backed:
-                out.append(Verdict(
-                    c, SUPPORTED,
+                promoted = (
                     f"figure recorded by the corpus registry for this document, "
                     f"on a page this turn did not retrieve: {backed}",
-                    strict, flags=flags + ["registry-backed-page-not-retrieved"]))
+                    list(strict), "registry-backed-page-not-retrieved")
+
+        if promoted is not None:
+            reason, scope, promo = promoted
+            hit = _conflict_before_support(c, evidence, strict, wide, r5, also,
+                                           also_all, registry_conflicts,
+                                           cross_page_conflicts)
+            if hit:
+                # The promotion flag is kept on the CONTRADICTED verdict: it is
+                # still true (the cited page does not carry the figure) and it
+                # is what names the escape that was attempted. Flags do not
+                # caution here — `RepairResult.cautions` reads SUPPORTED
+                # verdicts only — so this costs no user-facing text.
+                creason, tag = hit
+                out.append(Verdict(c, CONTRADICTED, creason, strict,
+                                   flags=flags + [promo] + ([tag] if tag else [])))
                 continue
+            out.append(Verdict(c, SUPPORTED, reason, scope,
+                               flags=flags + [promo]))
+            continue
 
         out.append(Verdict(c, UNSUPPORTED,
                            f"not found in the cited evidence: {missing or 'the claim'}",
