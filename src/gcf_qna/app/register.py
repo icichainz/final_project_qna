@@ -9,9 +9,10 @@ custom.js adds a "Create an account" link there.
 from __future__ import annotations
 
 import os
+from pathlib import Path
 
 from fastapi import APIRouter, Request
-from fastapi.responses import HTMLResponse, JSONResponse
+from fastapi.responses import FileResponse, HTMLResponse, JSONResponse
 from starlette.concurrency import run_in_threadpool
 
 from gcf_qna.app import accounts
@@ -21,27 +22,34 @@ router = APIRouter()
 _PAGE = """<!doctype html>
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Create account</title>
+<title>Create account · SSA CHATBOT</title>
+<link rel="icon" href="/favicon">
 <style>
   :root { color-scheme: light dark; }
   body { margin:0; min-height:100vh; display:flex; align-items:center; justify-content:center;
          font-family: ui-sans-serif, system-ui, sans-serif;
-         background:#f4f4f5; color:#18181b; }
-  @media (prefers-color-scheme: dark){ body { background:#18181b; color:#e4e4e7; } }
+         background:#f8f3e9; color:#24302b; }
+  @media (prefers-color-scheme: dark){ body { background:#15201b; color:#f8f3e9; } }
   form { display:flex; flex-direction:column; gap:.8rem; width:min(20rem, 90vw);
          padding:2rem; border-radius:12px; background:rgba(128,128,128,.08);
          border:1px solid rgba(128,128,128,.25); }
   h1 { font-size:1.25rem; margin:0 0 .4rem; }
   input { padding:.6rem .7rem; border-radius:8px; border:1px solid rgba(128,128,128,.4);
           background:transparent; color:inherit; font-size:1rem; }
-  button { padding:.65rem; border-radius:8px; border:none; background:#4f46e5; color:#fff;
+  button { padding:.65rem; border-radius:8px; border:none; background:#006a00; color:#fff;
            font-size:1rem; cursor:pointer; }
+  button:hover { background:#004d00; }
+  .brand { display:block; width:100%; height:auto; margin:0 0 .4rem; }
   .msg { min-height:1.2rem; font-size:.85rem; }
   .msg.err { color:#dc2626; } .msg.ok { color:#16a34a; }
   a { color:inherit; font-size:.85rem; }
 </style></head><body>
 <form id="f">
-  <h1>Create an account</h1>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="/public/logo_dark.png">
+    <img class="brand" src="/public/logo_light.png" alt="SSA CHATBOT — GCF Proposal Knowledge Assistant">
+  </picture>
+  <h1>Create your account</h1>
   <input name="username" placeholder="Username" autocomplete="username" required>
   <input name="password" type="password" placeholder="Password (min 8 chars)"
          autocomplete="new-password" minlength="8" required>
@@ -77,6 +85,17 @@ document.getElementById('f').addEventListener('submit', async (e) => {
 
 def _signup_enabled() -> bool:
     return os.getenv("ALLOW_SIGNUP", "1") == "1"
+
+
+@router.get("/ssa-sw.js", include_in_schema=False)
+async def service_worker():
+    """Serve the service worker at the root so it can control the full app."""
+    path = Path(__file__).resolve().parents[3] / "public" / "ssa-sw.js"
+    return FileResponse(
+        path,
+        media_type="application/javascript",
+        headers={"Service-Worker-Allowed": "/", "Cache-Control": "no-cache"},
+    )
 
 
 @router.get("/register", response_class=HTMLResponse)

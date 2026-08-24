@@ -40,3 +40,34 @@
     if (t && t.id) location.replace("/thread/" + t.id);
   } catch (e) { /* fall through to the normal new-chat page */ }
 })();
+
+// Install the project-owned PWA metadata without replacing Chainlit's build.
+(function installSsaAppMetadata() {
+  function link(rel, href, extra) {
+    if (document.head.querySelector('link[rel="' + rel + '"]')) return;
+    var el = document.createElement("link");
+    el.rel = rel;
+    el.href = href;
+    if (extra) Object.keys(extra).forEach(function (key) { el.setAttribute(key, extra[key]); });
+    document.head.appendChild(el);
+  }
+
+  link("manifest", "/public/manifest.webmanifest");
+  link("apple-touch-icon", "/public/brand/icons/apple-touch-icon-180.png", {sizes: "180x180"});
+
+  var theme = document.head.querySelector('meta[name="theme-color"]');
+  if (!theme) {
+    theme = document.createElement("meta");
+    theme.name = "theme-color";
+    document.head.appendChild(theme);
+  }
+  theme.content = "#006A00";
+
+  if ("serviceWorker" in navigator) {
+    window.addEventListener("load", function () {
+      navigator.serviceWorker.register("/ssa-sw.js", {scope: "/"}).catch(function () {
+        // Branding remains functional when service workers are unavailable.
+      });
+    });
+  }
+})();
