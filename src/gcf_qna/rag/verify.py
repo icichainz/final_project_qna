@@ -451,7 +451,13 @@ _SENT_SPLIT_RE = re.compile(r"(?<=[.!?…])[\s]+(?=[\"“«\*_A-ZÀ-ÖØ-Þ0-9])
 _GLUE_RE = re.compile(
     r"\b(?:in summary|in short|to summari[sz]e|overall|in conclusion|"
     r"en r[ée]sum[ée]|pour r[ée]sumer|en bref|"
-    r"if you want|let me know|i can (?:compare|provide|list|run)|"
+    # 'i can answer' is the alternation this list was short of: the
+    # adjudicated row `claim-2bca31faa865e0d00c91c737` is the conversational
+    # offer 'tell me which one and I can answer precisely to the extent the
+    # excerpts include the relevant Board-meeting field', labelled
+    # `not_a_claim` (glue) — and it is glue, not a lead-in, so the form test
+    # is the wrong place to fix it and the verb list is the right one.
+    r"if you want|let me know|i can (?:answer|compare|provide|list|run)|"
     r"happy to|feel free)\b"
     # meta-commentary about what the evidence does or does not carry: the
     # sentence is about the retrieval, not about the corpus
@@ -977,6 +983,18 @@ class Claim:
     index: int = 0
     unit_kind: str = "sentence"                 # sentence|bullet|table-row
     inherited: bool = False                     # citations borrowed from the block
+    #: Heading-form units this claim COMPLETES (adjudication ruling 6). The
+    #: lead-in is not a claim of its own; whatever it stated that this claim
+    #: does not restate is checked here, against this claim's own scope.
+    lead_ins: List[str] = dc_field(default_factory=list)
+    lead_in_amounts: List[Amount] = dc_field(default_factory=list)
+    lead_in_entities: List[List[str]] = dc_field(default_factory=list)
+    lead_in_years: List[str] = dc_field(default_factory=list)
+
+    @property
+    def carries_lead_in(self) -> bool:
+        return bool(self.lead_in_amounts or self.lead_in_entities
+                    or self.lead_in_years)
 
     @property
     def required(self) -> bool:
@@ -1112,6 +1130,136 @@ def claim_kind(text: str) -> Optional[str]:
     return None
 
 
+# ---------------------------------------------------------------------------
+# HEADING FORM — adjudication rulings 1, 2 and 6.
+#
+# Ruling 6 is binding and is stated as a SHAPE rule: "when a unit has the form
+# of a heading, bold label, or colon lead-in, it is `not_a_claim` EVEN IF it
+# carries a checkable proposition — the predicate is completed by the unit
+# below it", and "the fix is claim extraction". Twelve of the 71 adjudicated
+# rows are that shape; the re-A/B at 9925a2c measured ~7 of 22 repair
+# rejections blocking on exactly these, with the judge answering "no claim
+# text provided" — a lead-in is INHERITED failure that no rewrite keeping the
+# document's structure can clear.
+#
+# THE DEFINITION IS TIGHT ON PURPOSE, in three ways:
+#
+#   * SENTENCE UNITS ONLY. `_units` already treats bullets and table rows as
+#     independent statements that never borrow another item's citation; a list
+#     item is a statement, not a heading. Without this, the bullet
+#     `- **USD 50,000,000** [doc, p.5]` reads as a bold-only label the moment
+#     its citation is stripped, and the figure would stop being checked.
+#   * COLON AT THE END, never a colon inside. 'The cover page states: "Total
+#     financing 720 M USD" [doc, p.5].' is an ordinary sentence that happens
+#     to introduce a quotation, and it keeps every check it had.
+#   * A BOLD LABEL IS THE WHOLE UNIT. '**FP220 (ARCAFIM) — Kenya/Uganda**' is
+#     a label; 'the accredited entity is **Save the Children Australia**' is
+#     bold emphasis inside prose and is untouched, because the emphasis does
+#     not span the unit.
+#
+# Markdown headings are named here for completeness of the shape, but the
+# line never reaches `_units`: `_blocks` drops `#`-prefixed lines whole, and
+# this wave does not change that. What a `#` heading states is therefore still
+# invisible to verification — 18 heading lines across the two recorded release
+# corpora, none carrying a money-like amount. Pre-existing, measured, and
+# deliberately not bundled into this change.
+# ---------------------------------------------------------------------------
+
+#: A unit whose entire text is one bold (or underscored) span, with an
+#: optional trailing colon. The inner span may not itself contain a marker,
+#: so '**A** and **B**' is prose with two emphases, not one label.
+_BOLD_LABEL_RE = re.compile(r"^(?:\*\*[^*]+\*\*|__[^_]+__)\s*[:：]?\s*$")
+#: Colon-terminated, tolerating the French thin/no-break space before the mark.
+_COLON_END_RE = re.compile(r"[:：]$")
+
+HEADING_SHAPES = ("markdown-heading", "bold-label", "colon-lead-in")
+
+
+@dataclass
+class LeadIn:
+    """A heading-form unit ruling 6 keeps out of the claim list.
+
+    It is recorded rather than merely skipped: a release recorded BEFORE this
+    rule existed lists these units among its failures, and every tool that
+    joins a recording to a fresh extraction has to be able to say 'this row is
+    resolved by extraction' instead of 'this row vanished'.
+    """
+    text: str
+    shape: str                                   # one of HEADING_SHAPES
+    unit_index: int
+    kind: Optional[str] = None                   # the kind it would have had
+    carried_to: Optional[int] = None             # claim index that took its content
+    #: the Claim this unit WOULD have been. Never returned by
+    #: ``extract_claims`` and never classified; it exists so a reconciling
+    #: tool can still show a reviewer the unit's text, citations and terms.
+    claim: Optional["Claim"] = None
+
+
+def heading_form(text: str, unit_kind: str = "sentence") -> Optional[str]:
+    """Which heading shape this unit has, or None — rulings 1, 2 and 6.
+
+    Citations are stripped first: a lead-in may carry the block's bracket
+    ('What the excerpts show [doc, p.5]:'), and a bracket is typography, not
+    a predicate.
+    """
+    if unit_kind != "sentence":
+        return None
+    t = _strip_citations(text or "").strip()
+    if not t:
+        return None
+    if _HEADING_RE.match(t):
+        return "markdown-heading"
+    if _BOLD_LABEL_RE.match(t):
+        return "bold-label"
+    if _COLON_END_RE.search(t):
+        return "colon-lead-in"
+    return None
+
+
+def _year_tokens(body: str) -> List[str]:
+    """Year and board tokens, the shape ``_check_years`` verifies."""
+    return sorted(set(_YEAR_RE.findall(body))
+                  | {m.group(0) for m in _BOARD_RE.finditer(body)})
+
+
+def _lead_in_content(text: str) -> Tuple[List[Amount], List[List[str]], List[str]]:
+    """(money-like amounts, entities, year tokens) a heading-form unit states.
+
+    MONEY-LIKE AMOUNTS ONLY, and the reason is measured: the bold label
+    '**FP172 (103_gcf-b30-03-add04)**' yields the bare 'amounts' 103 and 03
+    out of a DOCUMENT ID. Carrying those onto the figure bullet below would
+    demand the evidence print '103', which is a fabricated check, not a
+    preserved one. ``_money_like_amount`` is the same filter ``claim_kind``
+    uses to call a unit a money claim, so what is carried is exactly what
+    would have been checked had the unit stayed a claim.
+    """
+    body = _strip_citations(text or "")
+    return ([a for a in amounts(body) if _money_like_amount(a)],
+            entities(body), _year_tokens(body))
+
+
+def _carry_onto(text: str, amts: Sequence[Amount], ents: Sequence[Sequence[str]],
+                years: Sequence[str]
+                ) -> Tuple[List[Amount], List[List[str]], List[str]]:
+    """The lead-in content this unit does NOT already state itself.
+
+    Ruling 6's own rationale — 'the predicate is completed by the unit below
+    it' — is the whole rule here: content the unit below restates is already
+    checked as that unit's own, and carrying it twice would only widen what a
+    single scope has to print at once.
+    """
+    body = _strip_citations(text or "")
+    own_amounts = amounts(body)
+    hay = norm_text(body)
+    keep_a = [a for a in amts
+              if not any(amount_matches(a, o) for o in own_amounts)]
+    keep_e = [list(vs) for vs in ents
+              if not any(norm_text(v) and norm_text(v) in hay for v in vs)]
+    keep_y = [y for y in years
+              if y.replace(" ", "") not in body.replace(" ", "")]
+    return keep_a, keep_e, keep_y
+
+
 def extract_claims(answer: str) -> List[Claim]:
     """Split an answer into atomic factual claims carrying their citations.
 
@@ -1120,18 +1268,129 @@ def extract_claims(answer: str) -> List[Claim]:
     existence fact. Prose glue, hedges and refusals are dropped; an uncited
     factual sentence is still a claim — with no evidence pointer, which is
     exactly what makes it interesting to the classifier.
+
+    HEADING-FORM UNITS ARE NOT CLAIMS (ruling 6, ``heading_form``), and the
+    rule has exactly one escape clause, stated as an invariant:
+
+        a heading-form unit stops being a claim only when its checkable
+        content is either empty or CARRIED onto the claim it introduces.
+        Checkable content is never silently dropped.
+
+    So '**Accredited entity:**' disappears, while
+    '**FP151 (total financing: USD 999 million)**:' disappears as a claim and
+    hands 'USD 999 million' to the first claim below it, which then has to
+    find it in the evidence THAT claim cites. A heading-form unit that states
+    a figure or a name and has no claim under it to hand them to stays a claim
+    itself, because nothing else would ever check it.
+
+    The one thing the invariant does not cover is a bare year/board token: it
+    is carried when there is somewhere to carry it, but it does not by itself
+    keep a lead-in alive. Two adjudicated rows are year-only lead-ins
+    ('...the Board meeting dates shown for **2021** are:') and blocking on the
+    token would leave ruling 6 unimplemented for them. Measured residue on the
+    record: one answer (`agg-2020-range`) whose lead-in names 2020 and whose
+    following unit yields no claim, so that token stops being checked.
     """
-    claims: List[Claim] = []
+    return _walk_units(answer)[0]
+
+
+def lead_ins(answer: str) -> List[LeadIn]:
+    """Every heading-form unit extraction DROPS, in document order.
+
+    Produced by the same walk as ``extract_claims`` — never by a second
+    reading of the answer — so the two can never disagree about which units
+    ruling 6 removed. A recorded release lists these units among its failures;
+    a tool reconciling a recording against the current extractor needs them by
+    name, and 'the claim vanished' is not a name.
+    """
+    return _walk_units(answer)[1]
+
+
+def unminted_units(answer: str) -> List[Claim]:
+    """Every unit of this answer that ``extract_claims`` does NOT return.
+
+    Ruling-6 lead-ins are most of them; a unit the hedge list drops is the
+    rest. A release recorded before either rule lists such units among its
+    failures, so a tool joining a recording to a fresh extraction needs to
+    show them — with their text, citations and terms — rather than report the
+    row as unrecoverable. Built from the same walk as the claims, so what is
+    'not minted' can never drift from what was.
+
+    These Claim objects are a VIEW for reconciliation. Nothing classifies
+    them; ``extract_claims`` remains the only source of claims.
+    """
+    claims, _dropped = _walk_units(answer)
+    minted = {c.text for c in claims}
+    out: List[Claim] = []
     for text, unit_kind, citations, inherited in _units(answer):
-        kind = claim_kind(text)
+        if text.strip() in minted:
+            continue
+        out.append(_as_claim(text, unit_kind, citations, inherited,
+                             claim_kind(text), len(out)))
+    return out
+
+
+def _as_claim(text: str, unit_kind: str, citations: List[Citation],
+              inherited: bool, kind: Optional[str], index: int) -> Claim:
+    body = _strip_citations(text)
+    return Claim(text=text.strip(), kind=kind or "", citations=citations,
+                 amounts=amounts(body), entities=entities(body),
+                 index=index, unit_kind=unit_kind, inherited=inherited)
+
+
+def _walk_units(answer: str) -> Tuple[List[Claim], List[LeadIn]]:
+    """(claims, dropped lead-ins) — the single pass both entry points share."""
+    units = _units(answer)
+    kinds = [claim_kind(text) for text, _k, _c, _i in units]
+    later_claim = [False] * len(units)
+    seen = False
+    for i in range(len(units) - 1, -1, -1):
+        later_claim[i] = seen
+        seen = seen or kinds[i] is not None
+
+    claims: List[Claim] = []
+    dropped: List[LeadIn] = []
+    pending: List[LeadIn] = []
+    pend_texts: List[str] = []
+    pend_a: List[Amount] = []
+    pend_e: List[List[str]] = []
+    pend_y: List[str] = []
+    for i, (text, unit_kind, citations, inherited) in enumerate(units):
+        shape = heading_form(text, unit_kind)
+        if shape:
+            amts, ents, years = _lead_in_content(text)
+            # THE INVARIANT: demote only when nothing checkable is lost — the
+            # unit says nothing checkable, or there is a claim below it to
+            # hand what it does say to. A TRAILING lead-in with content is
+            # therefore verified where it stands (nothing below completes it),
+            # and a trailing contentless one simply disappears.
+            if not (amts or ents) or later_claim[i]:
+                li = LeadIn(text=text.strip(), shape=shape, unit_index=i,
+                            kind=kinds[i], carried_to=None,
+                            claim=_as_claim(text, unit_kind, citations,
+                                            inherited, kinds[i], i))
+                dropped.append(li)
+                pending.append(li)
+                pend_texts.append(text.strip())
+                pend_a += amts
+                pend_e += ents
+                pend_y += years
+                continue
+        kind = kinds[i]
         if kind is None:
             continue
         body = _strip_citations(text)
+        keep_a, keep_e, keep_y = _carry_onto(text, pend_a, pend_e, pend_y)
+        for li in pending:
+            li.carried_to = len(claims)
         claims.append(Claim(
             text=text.strip(), kind=kind, citations=citations,
             amounts=amounts(body), entities=entities(body),
-            index=len(claims), unit_kind=unit_kind, inherited=inherited))
-    return claims
+            index=len(claims), unit_kind=unit_kind, inherited=inherited,
+            lead_ins=list(pend_texts), lead_in_amounts=keep_a,
+            lead_in_entities=keep_e, lead_in_years=keep_y))
+        pending, pend_texts, pend_a, pend_e, pend_y = [], [], [], [], []
+    return claims, dropped
 
 
 # ---------------------------------------------------------------------------
@@ -1659,8 +1918,57 @@ def _check_years(claim: Claim, text: str) -> Tuple[bool, List[str]]:
     return (not missing), missing
 
 
+def _check_lead_in(claim: Claim, text: str) -> Tuple[bool, str]:
+    """(ok, what is missing) for the content a dropped lead-in handed over.
+
+    THE OTHER HALF OF RULING 6. Extraction stops minting heading-form units as
+    claims; if that were all, '**FP151 (total financing: USD 999 million)**:'
+    would delete a fabricated figure from verification altogether. The figure
+    is carried onto the claim the lead-in introduces and checked here.
+
+    THE SCOPE IS THE CITED DOCUMENT, not the cited page, and that is measured
+    rather than chosen for comfort. A lead-in cites nothing — it names what the
+    block below is about — so the honest question is whether the DOCUMENT the
+    block cites prints it. Checking it against the page instead cost a
+    contradiction: 'For FP274 ("Building the Climate Resilience ... (BRACE)"),
+    the excerpts show conflicting figures:' hands the title to a bullet citing
+    p.40, p.40 does not print the title, and the bullet came back UNSUPPORTED
+    on the title instead of CONTRADICTED on its figure — the arm went 34/34 to
+    33/34. The caller therefore hands this the strict, ruling-5 and widened
+    keys together, and the result gates SUPPORT only.
+
+    It can only ever make a claim fail, and it never preempts the conflict
+    path. Carried content is deliberately not given to the conflict detector
+    either: which field a claim is about is read from the claim's own text, and
+    attributing a heading's figure to the field of the line below it would
+    invent an attribution nobody wrote.
+    """
+    if not claim.carries_lead_in:
+        return True, ""
+    ev = amounts(text)
+    hay = norm_text(text)
+    missing: List[str] = []
+    missing += [a.raw for a in claim.lead_in_amounts
+                if not any(amount_matches(a, e) for e in ev)]
+    for variants in claim.lead_in_entities:
+        if any(norm_text(v) and norm_text(v) in hay for v in variants):
+            continue
+        if _spelled_out_in(variants, text):
+            continue
+        missing.append(variants[0])
+    missing += [y for y in claim.lead_in_years
+                if y.replace(" ", "") not in (text or "").replace(" ", "")]
+    return (not missing), ", ".join(missing)
+
+
 def _verify_against(claim: Claim, text: str) -> Tuple[bool, str]:
-    """(ok, what is missing) for one claim against one blob of evidence."""
+    """(ok, what is missing) for one claim against one blob of evidence.
+
+    The claim's OWN asserted content only. Content a heading-form lead-in
+    handed it is checked separately and on a different scope
+    (``_check_lead_in``), so this stays exactly the per-scope question every
+    branch of ``classify_deterministic`` already asks it.
+    """
     if claim.kind in ("money", "number") and claim.amounts:
         ok, missing = _check_amounts(claim, text)
         return ok, ", ".join(a.raw for a in missing)
@@ -1986,6 +2294,24 @@ def classify_deterministic(claims: Sequence[Claim], evidence: Evidence,
                                [], flags=flags, plausible=False))
             continue
 
+        # RULING 6, the carried half. A heading-form lead-in is no longer a
+        # claim; whatever it stated that this claim does not restate is checked
+        # over the whole cited DOCUMENT (see `_check_lead_in`) and gates
+        # SUPPORT — never the conflict path, which reads the claim's own text.
+        lead_gap = ""
+        if c.carries_lead_in:
+            _lok, lead_gap = _check_lead_in(
+                c, _text_of(evidence, list(dict.fromkeys(
+                    list(strict) + list(r5) + list(wide)))))
+
+        def _lead_in_blocked(scope: List[EvidenceKey]) -> Optional[Verdict]:
+            if not lead_gap:
+                return None
+            return Verdict(c, UNSUPPORTED,
+                           f"the lead-in this claim completes states "
+                           f"{lead_gap}, which the cited document does not "
+                           f"print", scope, flags=flags, plausible=True)
+
         strict_text = _text_of(evidence, strict)
         ok, missing = _verify_against(c, strict_text)
         if not ok and r5:
@@ -2017,6 +2343,10 @@ def classify_deterministic(claims: Sequence[Claim], evidence: Evidence,
                 reason, tag = hit
                 out.append(Verdict(c, CONTRADICTED, reason, strict,
                                    flags=flags + ([tag] if tag else [])))
+                continue
+            blocked = _lead_in_blocked(strict)
+            if blocked is not None:
+                out.append(blocked)
                 continue
             if any(a.clash for a in c.amounts):
                 flags.append("unit-scale-clash")
@@ -2080,6 +2410,10 @@ def classify_deterministic(claims: Sequence[Claim], evidence: Evidence,
                 creason, tag = hit
                 out.append(Verdict(c, CONTRADICTED, creason, strict,
                                    flags=flags + [promo] + ([tag] if tag else [])))
+                continue
+            blocked = _lead_in_blocked(scope)
+            if blocked is not None:
+                out.append(blocked)
                 continue
             out.append(Verdict(c, SUPPORTED, reason, scope,
                                flags=flags + [promo]))

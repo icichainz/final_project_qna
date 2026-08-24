@@ -800,10 +800,28 @@ def reconstruct_case(
     # same claims the release recorded, so check the count the release wrote
     # down rather than assuming the module never moves.
     extracted = verify.extract_claims(answer)
+    # A RECONCILIATION, NOT A TOLERANCE. Extraction no longer mints
+    # heading-form lead-ins (adjudication ruling 6) or the conversational
+    # offer the hedge list now catches, so a release recorded before those
+    # rules lists units the extractor will never return.
+    # `verify.unminted_units` names them — from the same walk that produced
+    # the claims, so the two cannot disagree — and each is recovered below
+    # with its own text, marked `resolved_by_extraction`. A unit counts
+    # towards the recorded total only when it really was a claim: either it
+    # still triggers a kind (the lead-ins), or the release itself listed it as
+    # a failure. Ordinary prose the extractor never minted is not excused, so
+    # any OTHER drift in the count still fails this check.
+    failure_texts = {(f.get("text") or "")
+                     for f in (claims_block.get("failures") or ())
+                     if isinstance(f, dict)}
+    resolved_units = [c for c in verify.unminted_units(answer)
+                      if c.kind or c.text[:160] in failure_texts]
     recorded_claims = claims_block.get("claims")
-    if isinstance(recorded_claims, int) and recorded_claims != len(extracted):
+    if isinstance(recorded_claims, int) and \
+            recorded_claims != len(extracted) + len(resolved_units):
         incomplete.append(
-            f"verify.extract_claims now yields {len(extracted)} claims where the "
+            f"verify.extract_claims now yields {len(extracted)} claims (plus "
+            f"{len(resolved_units)} units extraction no longer mints) where the "
             f"release recorded {recorded_claims}; claim recovery is not faithful"
         )
 
@@ -872,6 +890,13 @@ def reconstruct_case(
     by_prefix: dict[str, list[Any]] = defaultdict(list)
     for claim in extracted:
         by_prefix[claim.text[:160]].append(claim)
+    # the dropped lead-ins join the lookup so their rows keep their text,
+    # citations and evidence view; `resolved_by_extraction` on the row is what
+    # tells a reader the unit is no longer a claim at all.
+    resolved_texts = set()
+    for unit in resolved_units:
+        by_prefix[unit.text[:160]].append(unit)
+        resolved_texts.add(unit.text[:160])
 
     claim_rows: list[dict[str, Any]] = []
     for index, failure in enumerate(claims_block.get("failures") or ()):
@@ -1012,6 +1037,7 @@ def reconstruct_case(
                 "claim_id": claim_id,
                 "failure_index": index,
                 "reconstructed": True,
+                "resolved_by_extraction": claim.text[:160] in resolved_texts,
                 "source_status": failure.get("status"),
                 "source_kind": failure.get("kind"),
                 "source_reason": failure.get("reason"),

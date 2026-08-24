@@ -1264,18 +1264,110 @@ def absence_census(cases: List[dict], flagged: Dict[str, set]) -> Dict[str, int]
     return seen
 
 
+def _same_unit(a: str, b: str) -> bool:
+    """Two spellings of the same unit — the release truncates its failure text
+    at 160 characters, so neither side can be assumed whole."""
+    a, b = (a or "").strip(), (b or "").strip()
+    return bool(a) and bool(b) and (a == b or a.startswith(b[:160])
+                                    or b.startswith(a[:160]))
+
+
+def _resolved_by_extraction(answer: str, claim_text: str) -> Optional[dict]:
+    """Why this gold row's UNIT no longer yields a claim, or None.
+
+    THE GOLD JOIN, after ruling 6. Thirteen of the 71 adjudicated rows are
+    heading-form units and one more is a conversational offer; extraction no
+    longer mints any of them, so they join no claim. Reporting them as
+    unmatched noise would bury the change; dropping them silently would delete
+    the record that the verifier's *correct* flags are still accounted for.
+
+    THE TEST IS ON THE UNIT, NOT ON THE CLAIM LIST. The row resolves only when
+    the answer still contains its unit and that unit produces nothing — which
+    is what 'fixing extraction deletes the row entirely' means. A row whose
+    text no longer appears as a unit at all has moved for some other reason
+    and is still reported as unmatched, which is the regression case.
+    """
+    if not claim_text:
+        return None
+    for li in verify.lead_ins(answer or ""):
+        if _same_unit(li.text, claim_text):
+            return {"mechanism": f"heading form ({li.shape})",
+                    "shape": li.shape,
+                    "kind_it_would_have_had": li.kind,
+                    "carried_to_claim": li.carried_to,
+                    "unit_text": li.text}
+    for text, unit_kind, _cits, _inh in verify._units(answer or ""):
+        if not _same_unit(text, claim_text):
+            continue
+        if verify.claim_kind(text) is None:
+            return {"mechanism": "not a factual assertion (glue / hedge / refusal)",
+                    "shape": None, "kind_it_would_have_had": None,
+                    "carried_to_claim": None, "unit_text": text.strip()}
+        return None            # the unit is still a claim; this is not a resolve
+    return None
+
+
+def _content_ledger(answer: str, li: dict) -> Tuple[List[str], List[str]]:
+    """(what the claim below now checks, what nothing checks any more).
+
+    Read out of the resulting claim, never out of the lead-in: the question
+    the ledger answers is what the CURRENT tree verifies, and asking the
+    dropped unit what it used to say would answer a different one.
+    """
+    body = verify._strip_citations(li.get("unit_text") or "")
+    stated = [a.raw for a in verify.amounts(body) if verify._money_like_amount(a)] \
+        + [vs[0] for vs in verify.entities(body)]
+    idx = li.get("carried_to_claim")
+    claims = verify.extract_claims(answer or "")
+    carried: List[str] = []
+    if idx is not None and idx < len(claims):
+        c = claims[idx]
+        carried = [a.raw for a in c.lead_in_amounts] + \
+            [vs[0] for vs in c.lead_in_entities]
+    # a term the claim below states in its OWN text is checked as that claim's
+    # own content, so it is neither carried nor lost
+    own = verify.norm_text(verify._strip_citations(
+        claims[idx].text if idx is not None and idx < len(claims) else ""))
+    lost = [s for s in stated if s not in carried
+            and verify.norm_text(s) not in own]
+    return carried, lost
+
+
 def build_rows(gold: List[dict], cases: List[dict], release: List[dict]
-               ) -> Tuple[List[dict], List[dict]]:
-    """(rows, problems) across the three arms."""
+               ) -> Tuple[List[dict], List[dict], List[dict]]:
+    """(rows, problems, resolved-by-extraction) across the five arms."""
     by_case = {c["case_id"]: c for c in cases}
     rows: List[dict] = []
     problems: List[dict] = []
 
+    resolved: List[dict] = []
     for g in sorted(gold, key=lambda g: g["claim_id"]):
         case = by_case.get(g.get("case_id"))
         if case is None:
             problems.append({"row_id": g["claim_id"],
                              "why": f"no evidence row for case {g.get('case_id')!r}"})
+            continue
+        text = g.get("claim_text_full") or g.get("claim_text") or ""
+        answer = case.get("answer") or ""
+        li = _resolved_by_extraction(answer, text)
+        if li is not None:
+            # RESOLVED BY EXTRACTION, not unmatched and not silently dropped.
+            # The row's unit no longer yields a claim, and per ruling 6 that
+            # absence IS the resolution of the failure. What the unit stated
+            # is recorded with the row: `content_carried` is what the claim
+            # below now has to find, `content_lost` is what nothing checks any
+            # more — the honest ledger the join has to publish.
+            carried, lost = _content_ledger(answer, li)
+            resolved.append({
+                "row_id": g["claim_id"], "case_id": g["case_id"],
+                "label": g.get("label"),
+                "was_flagged_by_the_release": True,
+                "should_flag": bool(g.get("verifier_correct")),
+                "mechanism": li["mechanism"], "shape": li["shape"],
+                "kind_it_would_have_had": li["kind_it_would_have_had"],
+                "carried_to_claim": li["carried_to_claim"],
+                "content_carried": carried, "content_lost": lost,
+                "claim_text": text[:200]})
             continue
         rows.append({"row_id": g["claim_id"], "arm": "gold",
                      "case_id": g["case_id"], "answer": case.get("answer") or "",
@@ -1318,7 +1410,7 @@ def build_rows(gold: List[dict], cases: List[dict], release: List[dict]
     # and bought nothing — both populations are recorded facts, identical in
     # every tree.
     rows += contradict(cases)
-    return rows, problems
+    return rows, problems, resolved
 
 
 def seed_digest(rows: List[dict]) -> str:
@@ -1556,6 +1648,33 @@ def report(res: dict, states: dict, baseline: Optional[dict] = None,
     print(f"rows scored {len(res['rows'])}   unmatched {len(res['unmatched'])}")
     for u in res["unmatched"][:12]:
         print(f"  ! UNMATCHED [{u['arm']}] {u['row_id']}: {u['why']}")
+    resolved = res.get("resolved_by_extraction") or []
+    print(f"resolved-by-extraction {len(resolved)}   (gold rows whose UNIT is "
+          f"still in the answer and no longer yields a claim — ruling 6's "
+          f"heading forms and the taxonomy's glue; per ruling 6 the absence IS "
+          f"the resolution, so they are neither scored nor lost)")
+    for r in sorted(resolved, key=lambda r: r["row_id"]):
+        print(f"  ~ RESOLVED {r['row_id']:<32} [{(r['label'] or '(unlabelled)'):<22}] "
+              f"should_flag={str(r['should_flag']):<5} {r['mechanism']:<42} "
+              f"would-have-been {str(r['kind_it_would_have_had']):<10} "
+              f"content->claim {str(r['carried_to_claim']):<5} {r['case_id']}")
+        print(f"              {r['claim_text'][:108]}")
+        print(f"              content carried and still verified: "
+              f"{r['content_carried'] or '(none)'}"
+              + (f"   CONTENT NO LONGER CHECKED: {r['content_lost']}"
+                 if r["content_lost"] else ""))
+    dropped_content = [r for r in resolved if r["content_lost"]]
+    print(f"  content-loss ledger: {len(dropped_content)} of {len(resolved)} "
+          f"resolved rows lose a checkable term")
+    off_ruling = [r for r in resolved if r["label"] != "not_a_claim"]
+    if off_ruling:
+        print(f"  !! {len(off_ruling)} resolved row(s) are NOT labelled "
+              f"`not_a_claim` in the gold — the shape is ruling 6's and the "
+              f"label is ruling 1's, which ruling 6 supersedes. Named, never "
+              f"silent:")
+        for r in sorted(off_ruling, key=lambda r: r["row_id"]):
+            print(f"     {r['row_id']} [{r['label']}] should_flag="
+                  f"{r['should_flag']} — {r['case_id']}")
     print()
     for a in ARMS:
         print(_matrix_line(a, res["arms"][a], res["arm_sizes"].get(a, 0)))
@@ -1752,10 +1871,11 @@ def main(argv: Optional[List[str]] = None) -> int:
                         "in tests/test_verify.py:CONTRADICTION_ARM_MISSES)")
     args = p.parse_args(argv)
 
-    rows, problems = build_rows(read_jsonl(args.gold), read_jsonl(args.evidence),
-                                read_jsonl(args.release))
+    rows, problems, resolved = build_rows(
+        read_jsonl(args.gold), read_jsonl(args.evidence), read_jsonl(args.release))
     res = score(rows)
     res["unmatched"] += problems
+    res["resolved_by_extraction"] = resolved
     res["seed_sha256"] = seed_digest(rows)
     _failed, _trunc = release_failures(read_jsonl(args.release))
     res["absence_census"] = absence_census(read_jsonl(args.evidence), _failed)

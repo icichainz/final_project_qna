@@ -60,6 +60,17 @@ Ruling 3 covers registry-confirmed *existence* negatives. Two rows assert a true
 
 ## The 12 genuine defects (verifier was right)
 
+> **Post-hoc note (ruling 6 applied to extraction):** two of these rows —
+> `claim-66bc581a` and `claim-e7bb6639` — are colon lead-ins textually
+> identical in form to `claim-8b23b13e`, which WAS re-resolved to
+> `not_a_claim` when the inter-rater disagreements were settled; these two
+> were never sampled, so the frozen gold keeps the stale label. Since the
+> extractor change their units are no longer minted as standalone claims and
+> their checkable content is verified through the block below
+> (`resolved-by-extraction`). Scored defects: **10 + 2 resolved**. The gold
+> file itself is left frozen; re-resolution awaits an owner spot-check.
+
+
 These are the real work for generation/retrieval, and they are what remains of the 57%:
 
 | label | claim |

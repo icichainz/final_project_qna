@@ -252,6 +252,321 @@ def test_malformed_citation_never_crashes_extraction():
 
 
 # ---------------------------------------------------------------------------
+# HEADING FORM — adjudication ruling 6, and the escape closing it
+#
+# THE DEFECT: `extract_claims` minted markdown colon lead-ins and heading-form
+# units as required fact-bearing claims. Twelve of the 71 adjudicated rows are
+# that shape, they are most of the gold arm's remaining false positives, they
+# inflate the claim-gate denominators, and the re-A/B at 9925a2c measured ~7
+# of 22 repair rejections blocking on them with the judge answering "no claim
+# text provided" — inherited failures no rewrite can clear.
+#
+# THE HARD SIDE IS THE FALSE-NEGATIVE ONE. Ruling 6 says the shape wins even
+# when the unit carries a checkable proposition, so a rule that simply deletes
+# the unit hands an attacker a place to hide a figure. Every test below pins
+# ONE dimension, and the pairs vary the dimension rather than the example:
+# same content with and without the form, same form with and without content.
+# ---------------------------------------------------------------------------
+
+LEAD_EV = {
+    (DOC, None): REGISTRY_LINE,
+    (DOC, 45): ("### (a) Requested GCF funding (Total amount)\n"
+                "| (vi) Grants | 18,500,000 | 7 | |"),
+}
+
+
+def _one(answer):
+    claims = V.extract_claims(answer)
+    assert len(claims) == 1, [c.text for c in claims]
+    return claims[0]
+
+
+# ------------------------------------------------- the form test itself ----
+@pytest.mark.parametrize("text,shape", [
+    ("**Accredited entity**", "bold-label"),
+    ("**Accredited entity:**", "bold-label"),
+    ("__Financing__", "bold-label"),
+    ("## Financing", "markdown-heading"),
+    ("###### Financing", "markdown-heading"),
+    ("The financing terms are as follows:", "colon-lead-in"),
+    ("Key figures:", "colon-lead-in"),
+    ("Les valeurs sont les suivantes :", "colon-lead-in"),
+    (f"What the excerpts show [{DOC}, p. 45]:", "colon-lead-in"),
+])
+def test_the_shapes_rulings_1_2_and_6_name_are_recognised(text, shape):
+    assert V.heading_form(text) == shape
+
+
+@pytest.mark.parametrize("text", [
+    # bold emphasis INSIDE prose is not a label
+    "The accredited entity is **Pegasus Capital Advisors LP**.",
+    "**IUCN** and **Pegasus** are both accredited.",
+    # TWO SPANS, and the unit ends on the second one's marker. A label is ONE
+    # span; a greedy `**.+**` swallows the prose between them and reads this
+    # whole line as a label, which would delete both names from verification.
+    "**IUCN** and **Pegasus Capital Advisors LP**",
+    "**Angola**, **Benin** and **Kenya**",
+    # a colon INSIDE a sentence, before a quotation, is not a lead-in
+    'The cover page states: "total financing (as printed): 28 M USD".',
+    # a bold span with a trailing comma is a value in a list, not a label
+    "**GCF grant: USD 21.127 million**,",
+    "",
+    "   ",
+])
+def test_ordinary_prose_is_not_heading_form(text):
+    assert V.heading_form(text) is None
+
+
+def test_a_line_of_two_bold_spans_is_prose_and_keeps_its_names(no_registry):
+    """The behavioural half of the two-span case: both names stay checked."""
+    answer = ("**IUCN** and **Wakanda Development Bank**\n\n"
+              f"- **USD 18,500,000** in GCF funding [{DOC}, p. 45]\n")
+    claims = V.extract_claims(answer)
+    assert len(claims) == 2, [c.text for c in claims]
+    assert claims[0].text == "**IUCN** and **Wakanda Development Bank**"
+    assert V.lead_ins(answer) == []
+
+
+def test_a_bullet_or_table_row_is_never_a_lead_in():
+    """DIMENSION: the unit kind, with the text held constant.
+
+    `- **USD 50,000,000** [doc, p. 5]` is a bold-only span the moment its
+    citation is stripped. `_units` already treats a list item as an
+    independent statement, and reading one as a heading would delete the
+    figure it states — the single most expensive thing this change could do.
+    """
+    line = "**USD 50,000,000**"
+    assert V.heading_form(line, "sentence") == "bold-label"
+    assert V.heading_form(line, "bullet") is None
+    assert V.heading_form(line, "table-row") is None
+    (claim,) = V.extract_claims(
+        f"Figures:\n\n- **USD 18,500,000** [{DOC}, p. 45]\n")
+    assert claim.kind == "money" and claim.unit_kind == "bullet"
+
+
+# ------------------------------------------------ direction 1: it drops ----
+def test_a_contentless_lead_in_produces_no_claim():
+    answer = (f"The financing terms are as follows:\n\n"
+              f"- **USD 18,500,000** in GCF funding [{DOC}, p. 45]\n")
+    claims = V.extract_claims(answer)
+    assert [c.text for c in claims] == [f"**USD 18,500,000** in GCF funding [{DOC}, p. 45]"]
+    (li,) = V.lead_ins(answer)
+    assert li.shape == "colon-lead-in" and li.carried_to == 0
+
+
+def test_a_bold_label_over_a_block_produces_no_claim():
+    answer = (f"**Accredited entity**\n"
+              f"- **USD 18,500,000** in GCF funding [{DOC}, p. 45]\n")
+    assert [c.text for c in V.extract_claims(answer)] == \
+        [f"**USD 18,500,000** in GCF funding [{DOC}, p. 45]"]
+
+
+def test_the_same_sentence_without_the_colon_is_still_a_claim(no_registry):
+    """DIMENSION: the FORM, with the content held constant. The colon is the
+    only difference between these two answers."""
+    body = "FP151 was submitted by **Pegasus Capital Advisors LP**"
+    dropped = V.extract_claims(f"{body}:\n\n- **USD 18,500,000** [{DOC}, p. 45]\n")
+    kept = V.extract_claims(f"{body}.\n\n- **USD 18,500,000** [{DOC}, p. 45]\n")
+    assert len(dropped) == 1 and len(kept) == 2
+    assert kept[0].text.startswith("FP151 was submitted")
+
+
+# --------------------------------- direction 2: its content is verified ----
+def test_a_figure_hidden_in_a_lead_in_is_still_checked(no_registry):
+    """THE ESCAPE, closed. A fabricated figure inside heading form must not
+    walk out of verification with the heading."""
+    answer = (f"**FP151 (total financing: USD 999 million)**:\n\n"
+              f"- **USD 18,500,000** in GCF funding [{DOC}, p. 45]\n")
+    claim = _one(answer)
+    assert any(a.raw.startswith("999") or "999" in a.raw
+               for a in claim.lead_in_amounts), claim.lead_in_amounts
+    (v,) = V.classify(V.extract_claims(answer), LEAD_EV, use_llm=False)
+    assert v.status == V.UNSUPPORTED, (v.status, v.reason)
+    assert "999" in v.reason
+
+
+def test_the_same_block_without_the_fabrication_verifies(no_registry):
+    """The positive control for the test above: the gate is not vacuous and
+    it is not always-on."""
+    answer = (f"**FP151 (total financing: USD 28 million)**:\n\n"
+              f"- **USD 18,500,000** in GCF funding [{DOC}, p. 45]\n")
+    (v,) = V.classify(V.extract_claims(answer), LEAD_EV, use_llm=False)
+    assert v.status == V.SUPPORTED, (v.status, v.reason)
+
+
+def test_a_name_hidden_in_a_lead_in_is_still_checked(no_registry):
+    """BOTH DIMENSIONS, not one. A single-dimension merge that carried only
+    figures would let a fabricated NAME ride a heading over a figures-only
+    block straight past the verifier."""
+    answer = (f"**FP151 — Wakanda Development Bank**\n\n"
+              f"- **USD 18,500,000** in GCF funding [{DOC}, p. 45]\n")
+    claim = _one(answer)
+    assert [vs[0] for vs in claim.lead_in_entities] == ["Wakanda Development Bank"]
+    (v,) = V.classify(V.extract_claims(answer), LEAD_EV, use_llm=False)
+    assert v.status == V.UNSUPPORTED and "Wakanda" in v.reason
+
+
+def test_a_lead_in_naming_something_the_document_prints_still_verifies(no_registry):
+    answer = (f"**FP151 — International Union for Conservation of Nature**\n\n"
+              f"- **USD 18,500,000** in GCF funding [{DOC}, p. 45]\n")
+    (v,) = V.classify(V.extract_claims(answer), LEAD_EV, use_llm=False)
+    assert v.status == V.SUPPORTED, (v.status, v.reason)
+
+
+def test_a_trailing_lead_in_with_content_is_verified_where_it_stands(no_registry):
+    """Nothing follows it, so nothing completes its predicate and nothing can
+    take its content: ruling 6's rationale does not reach it and it stays a
+    claim rather than becoming a hiding place."""
+    answer = (f"- **USD 18,500,000** in GCF funding [{DOC}, p. 45]\n\n"
+              f"**FP151 — Wakanda Development Bank**")
+    claims = V.extract_claims(answer)
+    assert len(claims) == 2, [c.text for c in claims]
+    assert V.lead_ins(answer) == []
+    assert claims[1].text == "**FP151 — Wakanda Development Bank**"
+    verdicts = V.classify(claims, LEAD_EV, use_llm=False)
+    assert verdicts[1].status == V.UNSUPPORTED, verdicts[1].reason
+
+
+def test_a_trailing_contentless_lead_in_adds_no_failure(no_registry):
+    """The other half of the invariant: with nothing checkable to lose, a
+    trailing lead-in simply disappears rather than becoming a failure."""
+    answer = (f"- **USD 18,500,000** in GCF funding [{DOC}, p. 45]\n\n"
+              f"**Notes:**")
+    assert len(V.extract_claims(answer)) == 1
+    res = V.verify_answer(answer, LEAD_EV, use_llm=False, allow_repair=False)
+    assert res.status == "verified", (res.status, [v.reason for v in res.verdicts])
+
+
+# ------------------------------------------------- what is NOT carried -----
+def test_a_document_id_inside_a_label_is_not_carried_as_a_figure(no_registry):
+    """MEASURED, not guessed: `**FP172 (103_gcf-b30-03-add04)**` yields the
+    bare 'amounts' 103 and 03 out of a document identifier, and demanding the
+    evidence print '103' would be a fabricated check, not a preserved one.
+    Only money-like figures cross."""
+    answer = (f"**FP151 ({DOC})**\n\n"
+              f"- **USD 18,500,000** in GCF funding [{DOC}, p. 45]\n")
+    claim = _one(answer)
+    assert claim.lead_in_amounts == []
+    (v,) = V.classify(V.extract_claims(answer), LEAD_EV, use_llm=False)
+    assert v.status == V.SUPPORTED, (v.status, v.reason)
+
+
+def test_content_the_unit_below_restates_is_not_carried_twice(no_registry):
+    """Ruling 6's own rationale — the predicate is completed by the unit below
+    it — so a term that unit already states is checked as its own."""
+    answer = (f"**Total GCF funding: USD 18,500,000**\n\n"
+              f"- **USD 18,500,000** in GCF funding [{DOC}, p. 45]\n")
+    claim = _one(answer)
+    assert claim.lead_in_amounts == []
+    assert claim.lead_ins and claim.lead_ins[0].startswith("**Total GCF")
+
+
+def test_a_lead_in_never_preempts_a_contradiction(no_registry):
+    """PLACEMENT, pinned as its own dimension. The carried check gates SUPPORT
+    and nothing else. Checking it earlier cost the contradicted arm a row
+    (34/34 -> 33/34): the claim stopped reaching the conflict scan and came
+    back UNSUPPORTED on the heading's name instead of CONTRADICTED on its own
+    figure."""
+    ev = {(DOC, 5): "GCF funding requested: 40,751,254 USD",
+          (DOC, 48): "GCF funding requested: 38,000,000 USD",
+          (DOC, 9): "C.1 — see the financing tables in section B."}
+    answer = (f"**FP274 — Wakanda Development Bank**\n\n"
+              f"- The **GCF funding requested** is **USD 40,751,254** [{DOC}, p. 9].\n")
+    claim = _one(answer)
+    assert claim.lead_in_entities
+    (v,) = V.classify(V.extract_claims(answer), ev, use_llm=False)
+    assert v.status == V.CONTRADICTED, (v.status, v.reason)
+    assert "38,000,000" in v.reason
+
+
+def test_the_carried_scope_is_the_document_not_the_page(no_registry):
+    """MEASURED. Checking the carried content against the CITED PAGE newly
+    flagged two claims the recorded release passed — a lead-in names what the
+    block is about, and the honest question is whether the DOCUMENT prints it.
+    Here the registry cover key names IUCN and the cited page does not."""
+    answer = (f"**FP151 — International Union for Conservation of Nature**\n\n"
+              f"- **USD 18,500,000** in GCF funding [{DOC}, p. 45]\n")
+    claim = _one(answer)
+    assert "iucn" not in V.norm_text(LEAD_EV[(DOC, 45)])
+    ok_page, _ = V._check_lead_in(claim, LEAD_EV[(DOC, 45)])
+    ok_doc, _ = V._check_lead_in(claim, "\n".join(LEAD_EV.values()))
+    assert ok_page is False and ok_doc is True
+
+
+# ------------------------------------------------------- glue, not form ----
+def test_the_conversational_offer_is_glue_and_not_a_claim():
+    """`claim-2bca31faa865e0d00c91c737`, adjudicated `not_a_claim`. It ends in
+    a full stop and asserts nothing; the form test is the wrong place for it
+    and the hedge list is the right one."""
+    offer = ("If you meant a specific corpus among these (e.g., “RSF corpus” "
+             "vs “Offshore Fund corpus”), tell me which one and I can answer "
+             "precisely to the extent the excerpts include the relevant "
+             "Board-meeting field.")
+    assert V.heading_form(offer) is None
+    assert V.extract_claims(offer) == []
+
+
+def test_the_hedge_list_still_lets_a_cited_figure_through(no_registry):
+    """The escape clause `claim_kind` already had, re-pinned against the new
+    alternation: a hedge that still states a cited figure stays a claim."""
+    answer = (f"I can answer that FP151 requests **USD 18,500,000** "
+              f"[{DOC}, p. 45].")
+    (claim,) = V.extract_claims(answer)
+    assert claim.kind == "money"
+
+
+# --------------------------------------------- one walk, two entry points --
+def test_lead_ins_and_extract_claims_cannot_disagree():
+    """They are produced by the same pass. A second reading of the answer
+    would be a second opinion about which units ruling 6 removed, and a tool
+    reconciling a recording against the tree would then be told two stories."""
+    answer = ("**FP151 — the package**\n\n"
+              f"- **USD 18,500,000** [{DOC}, p. 45]\n\n"
+              "Key figures:\n\n"
+              f"- **USD 28 million** total [{DOC}, cover pages]\n")
+    claims = V.extract_claims(answer)
+    lis = V.lead_ins(answer)
+    assert [li.shape for li in lis] == ["bold-label", "colon-lead-in"]
+    for li in lis:
+        assert li.carried_to is not None
+        assert li.text in claims[li.carried_to].lead_ins
+        assert li.claim is not None and li.claim.text == li.text
+
+
+# ------------------------------------------- the repair-gate consequence ---
+def test_a_rewrite_made_only_of_lead_ins_is_not_substance():
+    """A CONSEQUENCE OF THIS CHANGE ON THE 817abdb ADOPTION GATE, pinned
+    deliberately rather than discovered later. The substance floor's second
+    leg reads `not extract_claims(repaired)`; before ruling 6 a rewrite made
+    of headings returned claims and cleared it, and now it returns none and
+    is rejected. That is correct — a page of headings says nothing — but it
+    is a gate behaviour falling out of an extraction change."""
+    original = ("FP151 requests **USD 18,500,000** in GCF funding "
+                f"[{DOC}, p. 45]. The accredited entity is the International "
+                f"Union for Conservation of Nature and the total financing "
+                f"as printed on the cover page is **USD 28 million**, with "
+                f"the board meeting recorded as B.27 in 2020 "
+                f"[{DOC}, cover pages].")
+    assert len(V._prose(original)) >= V.SUBSTANTIAL_ANSWER_CHARS
+    rewrite = ("The figures are as follows:\n\nDetails below:\n\n"
+               "Summary of the above:")
+    assert V.extract_claims(rewrite) == []
+    why = V._substance_floor(original, rewrite)
+    assert why and "state no fact" in why
+
+
+def test_the_substance_floor_still_adopts_an_honest_one_sentence_repair():
+    original = ("FP151 requests **USD 18,500,000** in GCF funding "
+                f"[{DOC}, p. 45]. The accredited entity is the International "
+                f"Union for Conservation of Nature and the total financing "
+                f"as printed on the cover page is **USD 28 million**, with "
+                f"the board meeting recorded as B.27 in 2020 "
+                f"[{DOC}, cover pages].")
+    honest = f"FP151 requests **USD 18,500,000** in GCF funding [{DOC}, p. 45]."
+    assert V._substance_floor(original, honest) is None
+
+
+# ---------------------------------------------------------------------------
 # evidence assembly
 # ---------------------------------------------------------------------------
 
@@ -1752,11 +2067,13 @@ def _scored():
         if not (GOLD / name).exists():
             pytest.skip(f"{name} not present")
     sv = _scorer()
-    rows, problems = sv.build_rows(
+    rows, problems, resolved = sv.build_rows(
         sv.read_jsonl(GOLD / "release_release-1-adjudicated.jsonl"),
         sv.read_jsonl(GOLD / "release_release-1-evidence.jsonl"),
         sv.read_jsonl(GOLD / "release_release-1.jsonl"))
-    return sv, sv.score(rows), problems
+    res = sv.score(rows)
+    res["resolved_by_extraction"] = resolved
+    return sv, res, problems
 
 
 #: The 14 adjudicated false positives Wave 2 deliberately does NOT clear.
@@ -1792,11 +2109,24 @@ NOT_JUDGE_REACHABLE = {
 
 def test_no_adjudicated_true_failure_stops_being_flagged():
     """The regression gate. Twelve rows were adjudicated 'the verifier was
-    right'; if calibration silences one of them, the calibration is wrong."""
+    right'; if calibration silences one of them, the calibration is wrong.
+
+    TEN of the twelve are still scored here. The other two left the join with
+    the lead-in wave and are NOT silenced — they are named row by row in
+    `RESOLVED_BY_EXTRACTION`, asserted by
+    `test_the_two_rows_the_gold_still_calls_genuine_defects_are_named`, and
+    their content is still verified through the claim below them. This test
+    reads the rows that DO join; that test reads the ones that do not, so the
+    pair still covers all twelve."""
     _sv, res, _p = _scored()
     missed = [r["row_id"] for r in res["rows"]
               if r["arm"] == "gold" and r["should_flag"] and not r["flagged"]]
     assert missed == []
+    scored_true = sum(1 for r in res["rows"]
+                      if r["arm"] == "gold" and r["should_flag"])
+    resolved_true = sum(1 for r in res["resolved_by_extraction"]
+                        if r["should_flag"])
+    assert scored_true == 10 and resolved_true == 2, (scored_true, resolved_true)
 
 
 def test_the_adjudicated_false_positives_are_cleared_or_named():
@@ -1879,10 +2209,17 @@ def test_the_rider_shapes_are_actually_seeded():
 #: * `cmp-fp172-fp173-rank` is repaired to a figure its cited scope really
 #:   prints, and the REGISTRY records a conflicting figure for that document
 #:   and field. The document contradicts itself; flagging it is correct.
+#:
+#: `rep-citation-agg-corpus-boards-90d9520d7b` LEFT THE ARM with the lead-in
+#: wave: it was built from the conversational offer 'tell me which one and I
+#: can answer precisely', which `_GLUE_RE` now drops (adjudicated
+#: `claim-2bca31faa865e0d00c91c737`, label `not_a_claim`). The arm is drawn
+#: from the claims the release FLAGGED, so a unit that stops being a claim
+#: stops being repairable — a population change, not a verdict change, and
+#: the four rows that remain are the four it always had.
 REPAIRED_STILL_FLAGGED = {
     "rep-absence-abs-antarctica-096905d75a",
     "rep-absence-abs-antarctica-b67fa5942a",
-    "rep-citation-agg-corpus-boards-90d9520d7b",
     "rep-citation-fr-disc-thai-rice-3aec1712f7",
     "rep-figure-cmp-fp172-fp173-rank-fa227d25b3",
 }
@@ -1894,7 +2231,15 @@ def test_repaired_claims_are_seeded_and_are_cleared_or_named():
     unlike held-correct it covers the population where over-strictness lives —
     the rows that were flagged in the first place."""
     _sv, res, _p = _scored()
-    assert res["arm_sizes"]["repaired"] >= 20, res["arm_sizes"]
+    # THE BOUND MOVED 20 -> 12 WITH THE LEAD-IN WAVE, and it is a population
+    # change with a name. The arm repairs claims the release FLAGGED; 14 of
+    # those 71 units no longer produce a claim at all (ruling 6 heading forms
+    # plus one glue offer), so the 14 `rep-citation-*` rows built by pointing
+    # a bracket at an uncited lead-in have no claim left to repair. Every row
+    # that leaves is listed by `resolved-by-extraction`, and the rows that
+    # stay are scored exactly as before — `REPAIRED_STILL_FLAGGED` is an
+    # exact set and it lost only the member whose carrier unit was dropped.
+    assert res["arm_sizes"]["repaired"] >= 12, res["arm_sizes"]
     still = {r["row_id"] for r in res["rows"]
              if r["arm"] == "repaired" and r["flagged"]}
     assert still == REPAIRED_STILL_FLAGGED
@@ -1910,7 +2255,12 @@ def test_the_repaired_arm_reaches_the_absence_region():
         sv.read_jsonl(GOLD / "release_release-1.jsonl"))
     census = sv.absence_census(
         sv.read_jsonl(GOLD / "release_release-1-evidence.jsonl"), flagged)
-    assert census["flagged"] == 71, census
+    # 71 -> 57: `absence_census` counts the release's flagged claims that
+    # extraction STILL mints, and 14 of the 71 units are now dropped
+    # (`resolved-by-extraction`). The number is pinned exactly, not loosened
+    # to an inequality, so a further drift in extraction still fails here.
+    assert census["flagged"] == 57, census
+    assert len(res["resolved_by_extraction"]) == 71 - 57, res["resolved_by_extraction"]
     assert census["candidates"] >= 8, census
 
 
@@ -2000,9 +2350,102 @@ def test_the_judge_bound_counters_are_pinned():
         res["arms"]["repaired"]["contradicted_but_should_not_be"]
 
 
+#: THE GOLD JOIN AFTER RULING 6, as an EXACT set for the same reason
+#: `KNOWN_UNCLEARED` is one: it fails when a row stops joining as well as when
+#: one starts. Fourteen of the 71 adjudicated units no longer yield a claim.
+#: Twelve are the taxonomy's own `not_a_claim` rows. TWO ARE NOT, and they are
+#: the whole reason this set is written out row by row rather than counted:
+#:
+#:   claim-66bc581a  'FP153 ("Mongolian Green Finance Corporation") has
+#:                   **inconsistent figures** in the retrieved document:'
+#:   claim-e7bb6639  'Among the retrieved excerpts, the Global Subnational
+#:                   Climate Fund (...) is described as being formed by **two
+#:                   funding proposals** submitted by two accredited entities:'
+#:
+#: Both are labelled `missing_citation`, `verifier_correct: true`, and both
+#: reviewer notes give the SAME reason: 'it ends in a colon but does assert
+#: something checkable, so the "asserts nothing checkable" test fails'. That
+#: is ruling 1's test, and ruling 6 — added after Wave 1 labelling and
+#: owner-approved — reverses it in exactly these words: a colon lead-in is
+#: `not_a_claim` EVEN IF it carries a checkable proposition. `claim-8b23b13e`
+#: ('FP267 ("Eco-DRR") shows **conflicting figures** ... :') is the identical
+#: shape, was one of the three sampled inter-rater disagreements, and WAS
+#: re-resolved to `not_a_claim`. These two were not sampled, so the frozen
+#: gold still carries the pre-ruling-6 label. The file may not be edited here;
+#: the discrepancy is recorded instead, and their content is not lost — the
+#: scorer's `content_carried` shows both units' names still verified through
+#: the claim below them.
+RESOLVED_BY_EXTRACTION = {
+    "claim-2bca31faa865e0d00c91c737",     # glue: 'I can answer precisely'
+    "claim-2c56455366f7137b7b551677",     # colon lead-in
+    "claim-39c728e38ac9ebd7ba9693b2",
+    "claim-66bc581a6917e396a5ece535",     # label missing_citation — ruling 6
+    "claim-8b23b13e6e1697cdf60d6223",
+    "claim-8d4ecc0eaebb42248dc60dd3",     # bold label
+    "claim-9e6f9809aa4a7bff02717747",
+    "claim-a5f28680f4a78ad61acc7a84",     # bold label
+    "claim-a72ac18e5f06bed1b1b6dbc2",
+    "claim-c4a42b13ce733ad3a8d996ba",
+    "claim-cea13d50e7d89d041051d4f9",
+    "claim-cf409d05679be27dc480f80f",     # bold label
+    "claim-e6d195710f1b15b70b3e96f7",
+    "claim-e7bb663933e0226ecc371617",     # label missing_citation — ruling 6
+}
+
+
 def test_every_scored_row_joins_exactly_one_extracted_claim():
     _sv, res, problems = _scored()
     assert res["unmatched"] == [] and problems == []
+
+
+def test_the_rows_that_stop_joining_are_exactly_the_resolved_ones():
+    """No gold row may leave the join without being named.
+
+    `unmatched` is the regression channel and it is empty; this is the other
+    half — the rows that legitimately left, as an exact set. A row that stops
+    joining for any reason other than 'its unit produced no claim' lands in
+    `unmatched` above, and one that leaves for that reason has to be listed
+    here or this fails."""
+    _sv, res, _p = _scored()
+    got = {r["row_id"] for r in res["resolved_by_extraction"]}
+    assert got == RESOLVED_BY_EXTRACTION, (got - RESOLVED_BY_EXTRACTION,
+                                           RESOLVED_BY_EXTRACTION - got)
+
+
+def test_the_two_rows_the_gold_still_calls_genuine_defects_are_named():
+    """The −2 side of ruling 6's ledger, asserted rather than narrated.
+
+    Twelve rows were adjudicated 'the verifier was right'. Two of them are
+    colon lead-ins whose label predates ruling 6, so implementing that ruling
+    removes them from the join. The trade is only acceptable because it is
+    visible and because their content is still checked — both are asserted
+    here."""
+    _sv, res, _p = _scored()
+    off = {r["row_id"]: r for r in res["resolved_by_extraction"]
+           if r["label"] != "not_a_claim"}
+    assert set(off) == {"claim-66bc581a6917e396a5ece535",
+                        "claim-e7bb663933e0226ecc371617"}, sorted(off)
+    for r in off.values():
+        assert r["should_flag"] is True, r
+        assert r["shape"] == "colon-lead-in", r
+        # the unit's names did not stop being verified: they ride on the claim
+        # below and are checked against the scope THAT claim cites
+        assert r["content_carried"], r
+        assert r["content_lost"] == [], r
+
+
+def test_no_gold_true_content_is_lost_by_the_resolution():
+    """The content ledger, over every resolved row.
+
+    A row may resolve only when nothing the verifier was RIGHT about stops
+    being checked. Exactly one row loses terms — `claim-2bca31fa`, the
+    conversational offer, `verifier_correct: false` — so what it stops
+    checking is content the adjudication already ruled was never a claim."""
+    _sv, res, _p = _scored()
+    lost = [r for r in res["resolved_by_extraction"] if r["content_lost"]]
+    assert [r["row_id"] for r in lost] == ["claim-2bca31faa865e0d00c91c737"], lost
+    for r in lost:
+        assert r["should_flag"] is False, r
 
 
 # ---------------------------------------------------------------------------
@@ -2083,7 +2526,7 @@ def test_the_contradiction_arm_is_structurally_valid():
     from the recorded evidence.
     """
     sv, res, _p = _scored()
-    rows, _problems = sv.build_rows(
+    rows, _problems, _resolved = sv.build_rows(
         sv.read_jsonl(GOLD / "release_release-1-adjudicated.jsonl"),
         sv.read_jsonl(GOLD / "release_release-1-evidence.jsonl"),
         sv.read_jsonl(GOLD / "release_release-1.jsonl"))
