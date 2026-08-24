@@ -97,17 +97,17 @@ footer{margin-top:4.5rem;padding-top:1.5rem;border-top:1px solid var(--rule-stro
 <header class="masthead">
   <p class="eyebrow">final_project_qna · engineering report</p>
   <h1>GCF Q&amp;A Build Report</h1>
-  <p class="lede">How a directory of 46 loose files, six forked apps, and a crashing extraction script became a grounded question-answering system over 41,550 pages of Green Climate Fund proposals — with page-cited answers, highlighted evidence images, and per-document comparative retrieval. Every number in this report was measured, not estimated.</p>
+  <p class="lede">How a directory of 46 loose files, six forked apps, and a crashing extraction script became a grounded question-answering system over 41,550 pages of Green Climate Fund proposals — with page-cited answers, highlighted evidence images, per-document comparative retrieval, and a claim verifier calibrated against blind human adjudication. Every number in this report was measured, not estimated, and every rate is printed with its denominator.</p>
   <div class="byline">
-    <span><b>Period</b> 14–21 Aug 2026</span>
+    <span><b>Period</b> 14–24 Aug 2026</span>
     <span><b>Corpus</b> 273 PDFs · 41,550 pages</span>
-    <span><b>Result</b> 83 commits · 498 tests · live at fp-gcf.ssa.tg</span>
+    <span><b>Result</b> 123 commits · 1,001 tests · live at fp-gcf.ssa.tg</span>
   </div>
   <div class="metrics">
-    <div class="metric"><span class="k">Answer recall@5</span><span class="v">96%</span><span class="n">on 62 labelled answer-level cases (was 88%)</span></div>
-    <div class="metric"><span class="k">Evidence-page hit</span><span class="v">94%</span><span class="n">the cited page is a labelled evidence page (was 81%)</span></div>
-    <div class="metric"><span class="k">Gold retrieval</span><span class="v">100%</span><span class="n">recall@5, MRR 1.00 — held through every change</span></div>
-    <div class="metric"><span class="k">Verifier precision</span><span class="v">0 <em>FP</em></span><span class="n">false positives on 24 recorded answers (4/4 real failures caught)</span></div>
+    <div class="metric"><span class="k">Citation completeness</span><span class="v">120/126</span><span class="n">95.2% at release-3 vs a ≥95% gate — PASS (was 144/165 = 87.3%)</span></div>
+    <div class="metric"><span class="k">Gold retrieval</span><span class="v">30/30</span><span class="n">recall@5, MRR 1.00 — held through every change</span></div>
+    <div class="metric"><span class="k">Verifier vs blind gold</span><span class="v">59 → 15</span><span class="n">false flags on the adjudicated gold, before → after calibration</span></div>
+    <div class="metric"><span class="k">Answer repair</span><span class="v">killed</span><span class="n">passed every metric; 3 of 5 adopted rewrites deleted verified evidence</span></div>
   </div>
 </header>
 
@@ -116,7 +116,7 @@ footer{margin-top:4.5rem;padding-top:1.5rem;border-top:1px solid var(--rule-stro
   <div class="sec-head">
     <p class="eyebrow">The system</p>
     <h2>What exists now</h2>
-    <p>Four pipeline stages communicating through disk, plus a grounding layer that ties every answer back to pixels on a page.</p>
+    <p>Four ingest stages communicating through disk, a grounding layer that ties every answer back to pixels on a page, and — after the correctness campaign — an answer path of its own: conductor, deterministic planner, provenance-aware registry, and a claim verifier that grades the answer before its sources are shown.</p>
   </div>
   <figure class="card">
     <svg viewBox="0 0 900 240" role="img" aria-label="Pipeline: PDFs are rendered to page images with geometry sidecars, extracted to markdown by a vision model, chunked page-aware into a FAISS index, and served by a Chainlit app whose answers are grounded back to highlighted page regions.">
@@ -149,10 +149,15 @@ footer{margin-top:4.5rem;padding-top:1.5rem;border-top:1px solid var(--rule-stro
         <text x="540" y="163" stroke="none" fill="currentColor" text-anchor="middle" font-size="10.5">ground_chunk(): answer text → text-line rects → highlighted page image</text>
         <!-- ledger note -->
         <text x="455" y="205" stroke="none" fill="currentColor" text-anchor="middle" font-size="10.5" opacity=".7">every stage resumable: page cache · per-page sidecars · per-model status ledger · named indexes</text>
+        <text x="455" y="226" stroke="none" fill="currentColor" text-anchor="middle" font-size="10.5" opacity=".7">inside the app: conductor / planner → registry v2 (raw · value · currency · page · section) → hybrid retrieval → answer → claim verifier</text>
       </g>
     </svg>
-    <figcaption>The pipeline. Stages hand off through <code>data/</code> by convention, each independently resumable. The dashed return path is what makes answers <em>grounded</em>: a cited chunk maps back to pixel rectangles on the cached page image it came from.</figcaption>
+    <figcaption>The ingest pipeline. Stages hand off through <code>data/</code> by convention, each independently resumable. The dashed return path is what makes answers <em>grounded</em>: a cited chunk maps back to pixel rectangles on the cached page image it came from. The app box hides a second pipeline of its own, drawn in full further down.</figcaption>
   </figure>
+
+  <div class="prose" style="margin-top:1.6rem">
+    <p><strong>The answer path, in one sentence.</strong> A question either builds a deterministic evidence matrix from the registry (the planner, when it names two or more identifiers and a known field) or goes through an LLM conductor that emits a mode and English sub-queries; tag guards resolve document references through the registry; section-aware hybrid retrieval returns evidence in 65 ms; the factual answer call receives a system prompt and one user turn and <em>no conversation history</em>, with resolved references arriving as a registry-built note; and a claim verifier re-checks every factual claim against the evidence the turn actually held before any source is displayed. Each layer sits behind its own switch, so each was measured on its own rather than as one opaque pipeline change.</p>
+  </div>
 </section>
 
 <!-- ================================================================ -->
@@ -359,9 +364,9 @@ footer{margin-top:4.5rem;padding-top:1.5rem;border-top:1px solid var(--rule-stro
 <!-- ================================================================ -->
 <section>
   <div class="sec-head">
-    <p class="eyebrow">The correctness program</p>
+    <p class="eyebrow">Act VI · the rebuild</p>
     <h2>From document recall to verified answers</h2>
-    <p>With retrieval at 100% document recall, the failures moved up a level: right document, wrong page; right figures, wrong units; internally contradictory sources answered with false confidence. A six-step plan (docs/rag-correctness-next-steps.html) rebuilt the answer path — implemented by nine parallel Opus agent workstreams in three waves, each wave adversarially reviewed <em>before</em> it was committed.</p>
+    <p>With retrieval at 100% document recall, the failures moved up a level: right document, wrong page; right figures, wrong units; internally contradictory sources answered with false confidence. A seven-step plan, steps 0–6 (<code>docs/rag-correctness-next-steps.html</code>), rebuilt the answer path — implemented by nine parallel Opus agent workstreams in three waves, each wave adversarially reviewed <em>before</em> it was committed. Everything from Act VII on is the second, longer half: proving the rebuilt path was actually right.</p>
   </div>
   <figure class="card">
     <svg viewBox="0 0 900 330" role="img" aria-label="The answer pipeline after the correctness program: a question either builds a deterministic evidence matrix (planner switch) or goes through the LLM conductor; guards resolve document tags through the registry; section-aware hybrid retrieval feeds an answer call that receives no conversation history; a claim verifier checks the answer against the evidence before sources are shown.">
@@ -404,23 +409,24 @@ footer{margin-top:4.5rem;padding-top:1.5rem;border-top:1px solid var(--rule-stro
         <rect x="788" y="234" width="100" height="56" rx="6" stroke-width="2"/>
         <text x="838" y="256" stroke="none" fill="currentColor" text-anchor="middle">verifier</text>
         <text x="838" y="273" stroke="none" fill="currentColor" text-anchor="middle" opacity=".65">VERIFY=1</text>
-        <text x="838" y="310" stroke="none" fill="currentColor" text-anchor="middle" font-size="10">claims → verdicts → gated repair</text>
+        <text x="838" y="310" stroke="none" fill="currentColor" text-anchor="middle" font-size="10">claims → verdicts → cautions · sources</text>
         <!-- matrix into context -->
         <text x="452" y="34" stroke="none" fill="currentColor" font-size="10.5" opacity=".7">matrix rows carry raw value · currency · page · stated/conflicting/missing — cross-currency ranking refused</text>
       </g>
     </svg>
-    <figcaption>The answer path after plan steps 1–5. Both new layers ship behind independent switches: the planner replaces the conductor only for multi-identifier comparison questions; the verifier re-checks every factual claim against the retrieved evidence after the stream finishes. The factual answer call receives no conversation history — resolved references arrive as a registry-built note, so stale figures from earlier turns can no longer masquerade as evidence.</figcaption>
+    <figcaption>The answer path after plan steps 1–5, and the architecture as it stands today. Both new layers ship behind independent switches: the planner replaces the conductor only for multi-identifier comparison questions; the verifier re-checks every factual claim against the retrieved evidence after the stream finishes, and — since the repair refutation of Act X — only ever detects, never rewrites. The factual answer call receives no conversation history: resolved references arrive as a registry-built note, so stale figures from earlier turns can no longer masquerade as evidence.</figcaption>
   </figure>
 
   <div class="scroll">
     <table>
       <thead><tr><th>Release gate (from the plan)</th><th>Before</th><th>Now</th></tr></thead>
       <tbody>
-        <tr><td>Document recall@5 (30-question gold set)</td><td class="num">100%</td><td class="num">100% — never regressed</td></tr>
-        <tr><td>Answer-level recall@5 (62 labelled cases)</td><td class="num">88%</td><td class="num"><strong>96%</strong></td></tr>
-        <tr><td>Evidence-page hit</td><td class="num">not measured</td><td class="num"><strong>94%</strong> (baseline froze it at 81%)</td></tr>
-        <tr><td>Identifier conflict detection</td><td class="num">—</td><td class="num">210 real in-document conflicts exposed with pages</td></tr>
-        <tr><td>Citation precision (recorded sample)</td><td class="num">page presence only</td><td class="num"><strong>100%</strong>; verifier: 0 false positives on 24 answers</td></tr>
+        <tr><td>Document recall@5 (30-question gold set)</td><td class="num">30/30</td><td class="num">30/30, MRR 1.00 — never regressed</td></tr>
+        <tr><td>Answer-level recall@5, retrieval-only baseline (62 labelled cases, 48 scored)</td><td class="num">88%</td><td class="num"><strong>96%</strong></td></tr>
+        <tr><td>Document recall@5 on the 66-case answer suite (52 scorable)</td><td class="num">47/52</td><td class="num"><strong>51/52</strong> — the conductor's contribution</td></tr>
+        <tr><td>Evidence-page hit (release record)</td><td class="num">20/24</td><td class="num"><strong>21/24</strong> (retrieval-only baseline: 94%)</td></tr>
+        <tr><td>Identifier conflict detection</td><td class="num">—</td><td class="num">210 real in-document conflicts, in 120 of 273 documents, exposed with pages</td></tr>
+        <tr><td>Citation completeness (claim cites evidence that entails it)</td><td class="num">page presence only</td><td class="num"><strong>120/126</strong> = 95.2%, gate PASS</td></tr>
         <tr><td>Retrieval latency</td><td class="num">139 ms</td><td class="num"><strong>65 ms</strong> (FAISS ID-selector scoped search)</td></tr>
       </tbody>
     </table>
@@ -428,8 +434,273 @@ footer{margin-top:4.5rem;padding-top:1.5rem;border-top:1px solid var(--rule-stro
 
   <div class="prose" style="margin-top:1.6rem">
     <p><strong>The registry became provenance-aware.</strong> Every canonical field now carries its raw source text, normalized value, currency, page, and section — 3,785 candidates across 273 documents, parsed deterministically from the template headings in 18 seconds, every raw string verified as a literal substring of its cited page. The corpus turned out to disagree with itself constantly: <strong>120 documents carry at least one genuine internal financing conflict</strong> (FP274 prints three different GCF figures on pages 7, 8 and 40). The system now surfaces these with page citations instead of picking one silently.</p>
-    <p><strong>Each wave was reviewed before it was committed — and every review caught something the tests could not.</strong> Wave 1's reviewer found a stale duplicate of the identifier regex that would have hard-scoped year-like tokens to wrong documents, and year notes claiming contiguous FP ranges that were false for 4 of 11 years. Wave 2's found the pre-scoping guard starving pronoun comparisons. Wave 3's replayed 24 recorded production answers through the new verifier and measured an 18% false-positive rate — driven by citation style, not wrong answers — which would have made the repair pass <em>rewrite correct answers</em>. All fixed and re-measured (0 false positives) before the switch was allowed to exist.</p>
-    <p><strong>What is live today:</strong> everything measured — pre-scoping, history isolation, section-aware retrieval with the mention-magnet fix, the healed registries — plus <code>PLANNER=1</code> (deterministic evidence matrices) and <code>VERIFY=1</code> in observation mode: warnings render, but answer rewrites stay off (<code>VERIFY_REPAIR=0</code>) until a period of live traffic confirms the false-positive rate holds at zero outside the fixture set.</p>
+    <p><strong>Each wave was reviewed before it was committed — and every review caught something the tests could not.</strong> Wave 1's reviewer found a stale duplicate of the identifier regex that would have hard-scoped year-like tokens to wrong documents, and year notes claiming contiguous FP ranges that were false for 4 of 11 years. Wave 2's found the pre-scoping guard starving pronoun comparisons. Wave 3's replayed 24 recorded production answers through the new verifier and measured an 18% false-positive rate — driven by citation style, not wrong answers — which would have made a repair pass <em>rewrite correct answers</em>. That sample was fixed and re-measured at zero false positives, and it is cited here as history only: the artifact was never checked in and cannot be re-run, so the campaign that follows replaced it with a reproducible measurement over all 165 recorded claims against human-adjudicated gold. The honest answer, when it arrived, was far worse than 18%.</p>
+    <p><strong>What was live at the end of this chapter:</strong> everything measured — pre-scoping, history isolation, section-aware retrieval with the mention-magnet fix, the healed registries — plus <code>PLANNER=1</code> (deterministic evidence matrices) and <code>VERIFY=1</code> in observation mode: warnings render, answer rewrites stay off. Whether those rewrites should ever have been switched on is the subject of Act X; the answer turned out to be no, and the pathway was deleted rather than left behind a flag.</p>
+  </div>
+</section>
+
+<!-- ================================================================ -->
+<section>
+  <div class="sec-head">
+    <p class="eyebrow">Act VII · the campaign</p>
+    <h2>Answer correctness as its own program</h2>
+    <p>Retrieval was finished: 30/30 document recall@5 on the gold set, MRR 1.00. So the first full deterministic measurement of the <em>answers</em> was allowed to be as bad as it turned out to be — and it was.</p>
+  </div>
+
+  <div class="prose">
+    <p><strong>The number that started it.</strong> <code>release-1</code> (66 cases, 19 Aug, recorded and checksummed) scored <strong>94 supported / 165 claims = 57.0%</strong> deterministic claim support against a ≥95% release gate, with 71 failures (23 contradicted + 48 unsupported; by kind: money 34, entity 29, year 5, existence 2, number 1), required-field coverage 54/56, p50 3.4 s / p95 8.3 s, ≈$0.33 per run. Groundedness was not measured at all — the record's <code>hits</code> carried <code>{doc, page, score}</code> with no text, so no groundedness figure existed and none could be derived by hand. The plan says so in those words rather than quoting a number it could not reconstruct.</p>
+    <p><strong>The plan the campaign executed</strong> (<code>docs/rag-correctness-next-steps.html</code>) is seven ordered steps, each with its own gate: <em>0</em> freeze an answer-level baseline before changing answer behaviour; <em>1</em> isolate answer evidence from conversation history; <em>2</em> upgrade the registry to provenance-aware facts; <em>3</em> add section-aware retrieval and reranking; <em>4</em> plan comparisons as document×field matrices; <em>5</em> verify claims at atomic-claim level; <em>6</em> roll out behind independent switches. Steps 0–4 are the pipeline above. Steps 5–6 are everything that follows.</p>
+    <p><strong>The execution plan</strong> (<code>docs/claim-support-execution-plan.md</code>, 554 lines) sequenced the work into waves −1 through 5 under one rule: <em>nothing lands unreviewed, no matcher change is justified by inference, no measurement change is booked as an improvement, and no eval activity can reach production by accident.</em> It opened by finding that it could not safely start: a 1,008-line uncommitted, unreviewed agent wave sat in the working tree, and <code>make push</code> / <code>make deploy</code> rsync the <em>working tree</em>, not a commit. Those 235 unreviewed <code>verify.py</code> lines were deployable that day, on the live <code>VERIFY=1</code> path. Wave −1 exists to close that before any other work starts.</p>
+  </div>
+
+  <div class="scroll">
+    <table>
+      <thead><tr><th>Wave</th><th>What it was for</th><th>Outcome</th></tr></thead>
+      <tbody>
+        <tr><td class="num">−1</td><td>Production interlocks before any measurement: deploy excludes, dirty-tree guard, SHA-tagged images with a rehearsed rollback, protection for the measurement anchor, key rotation order</td><td>Landed after review — two blockers found in six lines of the deploy recipe (a <code>;</code> that let a failed build tag stale code with the new SHA)</td></tr>
+        <tr><td class="num">0</td><td>Adversarial review of the held agent wave, split into four commits with four different fates</td><td><span class="chip crit">rework</span> 6 confirmed blockers; the calibration commit moved to <code>hold/verifier-calibration</code>, never onto the feature branch</td></tr>
+        <tr><td class="num">0b</td><td>Rework of the held branch</td><td>4 of 9 blockers verified fixed; commit-after-fixes, still not mergeable</td></tr>
+        <tr><td class="num">0c</td><td>Second rework attempt</td><td><span class="chip crit">reject</span> 4 of 17 items fixed, 3 new regressions, two of which made the live verifier worse than head. The surgery was rejected and the adjudication tooling kept</td></tr>
+        <tr><td class="num">1</td><td>Blind adjudication of all 71 recorded failures against human gold</td><td>The verifier was wrong on 59 of 71</td></tr>
+        <tr><td class="num">2</td><td>Verifier calibration, hunk by hunk, each mapped to an adjudicated anchor</td><td>Gold-arm precision 16.9% → 30.8%; six relaxations deleted rather than patched</td></tr>
+        <tr><td class="num">3</td><td>Production-parity release harness (planner, conductor, history isolation, guard skipping, judge)</td><td>Parity <code>full</code>; run-to-run spread published <em>first</em>, so most per-gap movements were reported indeterminate rather than passed</td></tr>
+        <tr><td class="num">4</td><td>Offline repair A/B over identical recorded answers</td><td><span class="chip crit">fail</span> repair is not a fixed quantity — see Act IX</td></tr>
+        <tr><td class="num">5</td><td>Live canary, then the flip</td><td><span class="chip crit">cancelled</span> the adoption path was deleted instead of enabled</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="note">
+    <span class="n-k">The metric contract, stated before any number was collected</span>
+    <p>Every claim metric is published as <code>n/d</code>, never as a bare rate — in gate output, in the dashboard, and in this report. A rate whose denominator moved is not a comparison. Gates are integer counts, not rounded percentages: the ≥95% gates print <code>n/d</code> plus the exact threshold <code>ceil(0.95 × d)</code>. And because <code>extract_claims</code> decides the claim population while a repair pass could rewrite answers, every gate additionally requires the absolute supported count to be non-decreasing and <strong>every claim present before and absent after listed with its status and a written justification</strong> — not only the supported ones. Deleting 63 unsupportable sentences and fixing 63 produce the same headline; only the denominator discipline tells them apart.</p>
+  </div>
+</section>
+
+<!-- ================================================================ -->
+<section>
+  <div class="sec-head">
+    <p class="eyebrow">Act VIII · the instrument</p>
+    <h2>Measuring the measurer</h2>
+    <p>A verifier that grades answers is itself an instrument, and an uncalibrated instrument produces confident nonsense. Most of the campaign was spent proving what this one could and could not see.</p>
+  </div>
+
+  <div class="prose">
+    <p><strong>What it is.</strong> The verifier is a pure detector: it splits an answer into atomic claims with their cited document/page pairs, classifies each against the evidence the turn actually held using deterministic matchers (money with unit and currency guards, entities with alias rules, years, existence, numbers), and refers only the residue — unsupported <em>and</em> plausible — to an LLM judge. Verdicts are <code>supported</code>, <code>contradicted</code> or <code>unsupported</code>; they drive the caution banner and the source list. It never writes. Since <code>e38a75d</code> that is structural rather than configured: <code>verify_answer</code> has no repair parameter, its <code>.answer</code> is always the text it was given, and no status is ever <code>repaired</code>.</p>
+    <p><strong>The judge, audited rather than trusted.</strong> Wave 3 reported supported (140) exceeding grounded (139) at the parity baseline, which reads as the judge accepting claims nothing supports. Audited claim by claim against the evidence each turn held: <strong>zero of the 28 promotions is a fabrication</strong>. All 11 the matcher had flagged were its own brittleness — 7 surface-form (a coined acronym, a possessive with a curly apostrophe, a composite entity the extractor glued together), 2 cross-lingual, 1 a negated term counted as asserted, 1 an outside-knowledge gloss. The judge is discriminating: a 68% accept rate, 13 reasoned rejections of which 12 were grounded elsewhere but not in the cited scope, and it produced the run's only contradicted verdict by demoting a claim the matcher had missed. Turning it off would mislabel 21 of 66 answers and put an abstain banner on 9 correct ones. Recorded against it in the same commit, plainly: one promotion used a full name appearing nowhere in held evidence — harmless in that run, but a live mechanism. The recommendation was to keep the judge and fix the matcher, which the next commit did: five artifact classes, each traceable to audited row ids, each pinned by a widen harness (18 mutations, 0 unpinned); the judge's residue shrank 41 → 34 candidates.</p>
+    <p><strong>Five arms, because four were blind.</strong> The adjudicated gold holds only claims the release <em>flagged</em>, so recall over it is pinned at 100% by construction — it measures the instrument, not the code, and a change that only ever stops flagging things cannot fail there. Three further arms were added and two reviews then showed them still blind exactly where relaxations live. The scorer therefore carries five arms, reported separately and combined, none of which ever consults a verdict:</p>
+  </div>
+
+  <div class="scroll">
+    <table>
+      <thead><tr><th>Arm</th><th>Rows</th><th>What it pins</th><th>At HEAD</th></tr></thead>
+      <tbody>
+        <tr><td><code>gold</code></td><td class="num">57</td><td>The adjudicated rows. <code>verifier_correct</code> is the authority</td><td class="num">TP 10 · <strong>FP 15</strong> · recall 100% · P 40.0%</td></tr>
+        <tr><td><code>held-correct</code></td><td class="num">94</td><td>No calibration change may start flagging a claim the recorded release passed</td><td class="num">FP <strong>0</strong></td></tr>
+        <tr><td><code>fabricated</code></td><td class="num">116</td><td>Claims mutated until false against the held evidence — the false-negative region</td><td class="num">TP 75 · FP 0 · recall 64.7%</td></tr>
+        <tr><td><code>repaired</code></td><td class="num">14</td><td>Flagged claims mutated until <em>true</em> — where over-strictness has to show up</td><td class="num">FP 4</td></tr>
+        <tr><td><code>contradicted</code></td><td class="num">34</td><td>Claims whose cited key prints a rival value under the claim's own field label</td><td class="num">34/34 · must-contradict 0 lost</td></tr>
+        <tr><td><strong>overall</strong></td><td class="num">315</td><td></td><td class="num">P <strong>86.2%</strong> · R <strong>74.4%</strong> · F1 79.9%</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="note crit">
+    <span class="n-k">The blind spot that justified the fifth arm</span>
+    <p>The merge review of the calibrated verifier replaced <code>_field_conflict</code> with <code>return None</code> — deleting <strong>every</strong> evidence-text contradiction the verifier can emit — and the four-arm report did not move: gold 30.8%, overall 73.1%, all four matrices identical to the count, the caution census identical. Two independent causes: the census counted flags on supported claims only, while the conflict flags are emitted solely on contradicted branches; and the 66 recorded answers contain <em>zero</em> contradicted verdicts, so on their own they can never witness that path however they are filtered. The fifth arm is 34 seeded rows over 12 cases and 8 documents in four shapes, 21 of which <em>promote</em> to supported when the path is broken rather than merely degrading — which is what finally moves a cell. Ten ablations: 8 detected, 2 named as still invisible and pinned by tests that fail if they ever become visible.</p>
+  </div>
+
+  <div class="prose" style="margin-top:1.4rem">
+    <p><strong>The calibration itself.</strong> Five review rounds rejected the calibration diff; each time the pattern was a relaxation that closed its reported case and opened a wider one. The round that landed kept only what survived adversarial attack and <em>deleted</em> the rest — with its cost stated: <code>registry_settled</code> (read registry silence as a ruling, earned 0 rows), acronym pairing (its two-way substring defeated 51/51 indexed acronyms, 2 rows), <code>scoped_absences</code> (excused a name <em>because</em> it was absent — the condition selects for fabrications, 4 rows), <code>registry_absence</code> (4 rows), containment dedup (1 row), board-token widening (3 rows). Fourteen adjudicated false positives therefore stay flagged: a deliberate trade, recorded as one. Gold-arm precision 16.9% → 30.8%; after the extractor fix that retired heading-form units, 40.0%, with the gold arm's false flags falling <strong>59 → 27 → 15</strong>.</p>
+  </div>
+</section>
+
+<!-- ================================================================ -->
+<section>
+  <div class="sec-head">
+    <p class="eyebrow">Act IX · adjudication</p>
+    <h2>Blind labelling, and what it cost the verifier</h2>
+    <p>The methodological centre of the campaign. A verifier cannot be calibrated against its own opinions, and an agent that builds a matcher must not be the sole judge of which of its outputs were wrong.</p>
+  </div>
+
+  <div class="prose">
+    <p><strong>The instrument is blinded.</strong> Handing a labeller the verifier's own <code>status</code> and <code>reason</code> — "not found in the cited evidence: X" — and then asking whether the verifier was wrong builds the verifier's priors into the reference standard. The anchoring suppresses <code>verifier_false_positive</code> rows from ever being <em>proposed</em>, which no amount of owner spot-checking on the FP rows can repair. So the export carries only the question, the full answer, the claim text, its citations, and the text of the evidence the turn actually held; <code>status</code>, <code>reason</code> and <code>kind</code> are stripped. The labeller answers "is this claim entailed by the held evidence — yes / no / ambiguous?" plus a cause, knowing nothing of what the verifier concluded. Verdicts are joined back afterwards to derive true and false positives.</p>
+    <p><strong>The taxonomy was written before labelling</strong>, so the rulings are not reverse-engineered from whichever labels the rows happened to attract. Each row records two independent fields — <code>verifier_correct</code> (should this have been flagged at all?) and <code>root_cause</code> (which component has to change?) — because conflating them is precisely what made "false positive" carry two meanings at once. Eight labels, and four rulings on the contested shapes: colon lead-ins and markdown headings are <code>not_a_claim</code> (the fix belongs in extraction, and teaching the matcher to support half-sentences would be the wrong component changing); closed-world negatives are supported <em>where the registry confirms the absence</em>, scoped narrowly to existence and nothing else; a bracket pointing at a page the turn never held is <code>wrong_citation</code>, not <code>missing_citation</code>, because the answer <em>did</em> cite.</p>
+    <p><strong>The gold set contains negatives.</strong> Adjudicating only the 71 flagged claims would make the calibration gate's "recall == 1.000" mean "do not un-flag failures you already caught" and say nothing about false negatives — supported claims that are actually wrong. Every calibration hunk is a relaxation, and relaxations produce false negatives. So a seeded stratified sample of ≥40 of the 94 supported claims was labelled through the same blinded instrument, interleaved, with no indication of which rows had been flagged.</p>
+    <p><strong>Owner adoption is a signed commit, not a string field.</strong> The anti-circularity mechanism cannot be a free-text <code>reviewer</code> value inside a file that both the labelling agent and the tooling agent can write. The owner reviews 100% of <code>verifier_false_positive</code> rows (the only label that authorises a code change), 100% of <code>ambiguous_unscorable</code> rows, and a seeded stratified 20% of every other bucket, then commits the sign-off GPG-signed, touching nothing else. Agents cannot produce a signed commit. Downstream, every calibration hunk carries an <code>Adjudicated-anchors:</code> git trailer and a checker refuses any commit touching <code>verify.py</code> whose trailer names a key that is absent or not labelled a false positive. A held-out slice was sealed <em>before</em> any hunk was written, because gating on the same anchors a fix was mapped to is a fit statistic dressed as a validation statistic.</p>
+  </div>
+
+  <div class="metrics" style="margin-top:1.8rem">
+    <div class="metric"><span class="k">Rows adjudicated</span><span class="v">71/71</span><span class="n">every recorded failure, blind, by three independent labellers on disjoint blocks</span></div>
+    <div class="metric"><span class="k">Inter-rater agreement</span><span class="v">17/20</span><span class="n">a fourth labeller re-labelled 20 rows: 85% on both root cause and verifier_correct</span></div>
+    <div class="metric"><span class="k">Verifier wrong</span><span class="v">59/71</span><span class="n">83% of the flags were the instrument, not the answer</span></div>
+    <div class="metric"><span class="k">Genuine defects</span><span class="v">12</span><span class="n">what remained of the 57% — the real work for generation and retrieval</span></div>
+  </div>
+
+  <div class="scroll">
+    <table>
+      <thead><tr><th>Root cause</th><th>Rows</th><th>Share</th><th>Implied fix</th></tr></thead>
+      <tbody>
+        <tr><td><code>verifier_false_positive</code></td><td class="num">46</td><td class="num">65%</td><td>verifier matcher</td></tr>
+        <tr><td><code>not_a_claim</code></td><td class="num">12</td><td class="num">17%</td><td>claim extraction</td></tr>
+        <tr><td><code>missing_citation</code></td><td class="num">6</td><td class="num">8%</td><td>generation</td></tr>
+        <tr><td><code>missing_retrieval_evidence</code></td><td class="num">5</td><td class="num">7%</td><td>retrieval</td></tr>
+        <tr><td><code>wrong_citation</code></td><td class="num">1</td><td class="num">1%</td><td>generation</td></tr>
+        <tr><td><code>genuine_answer_error</code></td><td class="num">1</td><td class="num">1%</td><td>generation</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="prose" style="margin-top:1.4rem">
+    <p><strong>What the false positives authorised</strong>, by mechanism: 14 registry-conflict figures the system's own note prints (the answer obeyed "report both figures with their pages" and was penalised for it), 14 doc-level or cover-page citations, 7 exact-value matches on held evidence, 7 registry-confirmed closed-world negatives, 3 acronym / full-name pairs. All three labellers independently hit the same three taxonomy gaps, which became owner-approved rulings 5–7. The largest, <strong>ruling 5</strong>, governs ~14 rows: a bracket naming only the document is satisfied by any held evidence key of that document that entails the claim — a coarse citation, not a wrong one. The stricter reading was available and was rejected for a stated reason: treating coarse-but-correct citation as a verifier hit pushes generation toward citing a specific page it never held, and an invented page reads as precision. Citation precision is reported separately and never folded into support.</p>
+  </div>
+
+  <div class="note">
+    <span class="n-k">The residue the protocol left visible rather than tidied</span>
+    <p>Two of the 12 genuine defects are colon lead-ins textually identical in form to a row that <em>was</em> re-resolved to <code>not_a_claim</code> when the inter-rater disagreements were settled. They were never sampled, so the frozen gold keeps the stale label. Since the extractor change their units are no longer minted as standalone claims and their checkable content is verified through the blocks they ride on. Scored defects are therefore <strong>10 + 2 resolved</strong>, the gold file is left frozen, and re-resolution awaits an owner spot-check. The alternative — quietly editing the anchor everything downstream is measured against — was not available.</p>
+  </div>
+</section>
+
+<!-- ================================================================ -->
+<section>
+  <div class="sec-head">
+    <p class="eyebrow">Act X · the refutation</p>
+    <h2>The feature that passed every metric and was killed</h2>
+    <p>Step 5 of the plan called for "one constrained repair pass" that may remove, qualify or replace claims. It was built, gated, attacked, re-measured, and then deleted — because the measurement said so.</p>
+  </div>
+
+  <div class="prose">
+    <p><strong>The A/B was designed so only repair could differ.</strong> Two fresh generations of the same pinned config share just 11 of 66 answers — ≈83% resampling — so a generated A/B confounds the repair effect with generation variance. The wave therefore replayed one recorded answer set through the verifier twice, with the repair pass on and off, and scored it twice more: once with the carry of pre-repair judge rulings disabled and a fresh classification over the rewritten text, once as production would have shipped it. The gate is the carry-off number; the carry-on number is reported as the production-behaviour figure. Certifying a rewrite with a judge opinion formed on the pre-rewrite text is the self-certification pattern the plan forbids elsewhere.</p>
+  </div>
+
+  <div class="scroll">
+    <table>
+      <thead><tr><th></th><th>Wave-4 gate</th><th>Result</th></tr></thead>
+      <tbody>
+        <tr><td><span class="chip fixed">pass</span></td><td>No citation or source invented</td><td>0 invented docs / pages / figures across 23 proposed rewrites, in both adopted arms and the fresh arm — checked independently of the verifier's own gate and over <em>pre-gate</em> text, so a rewrite rejected for another reason could not hide one. The strongest result in the wave.</td></tr>
+        <tr><td><span class="chip crit">fail</span></td><td>Repaired groundedness ≥95%</td><td class="num">91.2% / 89.8%</td></tr>
+        <tr><td><span class="chip crit">fail</span></td><td>Repaired citation completeness ≥95%</td><td class="num">85.9% / 85.6% — ≈9 pp short in both samples, far outside every measured spread</td></tr>
+        <tr><td><span class="chip crit">fail</span></td><td>No correct answer becomes incorrect</td><td class="num">3 of 13 adopted repairs</td></tr>
+        <tr><td><span class="chip crit">fail</span></td><td>No supported claim lost undocumented</td><td class="num">2 and 3, none documented</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="prose" style="margin-top:1.4rem">
+    <p><strong>But the finding that decided it was not a threshold.</strong> Repair is not a fixed quantity. From the same answers and the same verdict objects, the adoption decision flipped on <strong>18–27% of cases</strong>, and two full replays disagreed on whether repair had corrected 5 claims or deleted 7 — because the rewrite call sent no temperature and no seed, so every rewrite of user-visible text was an unpinned sample. Concretely: a 351-character registry-backed abstention became the single word "None." (the anti-gutting guard cannot fire when the count of supported required claims is already zero, which is exactly the population repair is invoked on); an English answer was rewritten into French in 2 of 3 samples and adopted both times; and the pass systematically attacked conflict-reporting answers — the ones most valuable to a reviewer — by prefixing a denial while keeping the contradicted content, which scores 1.0 on every check in the suite.</p>
+    <p><strong>The engineering answer was a suite written blind to the implementation.</strong> Three blocking prerequisites were implemented, and then tested by an agent that wrote its tests from the <em>specification</em> — commit <code>52152af</code>'s findings — before and independently of the code, so they could not inherit the implementer's blind spots. Thirty-six tests over four gates. It scored 35/36, and the one failure was a pre-existing hole deliberately left open and recorded as an executable <code>xfail</code> rather than a comment. What the blind suite bought, in its own terms:</p>
+  </div>
+
+  <div class="scroll">
+    <table>
+      <thead><tr><th>Gate</th><th>What the blind suite established</th></tr></thead>
+      <tbody>
+        <tr><td>Sampling pinned</td><td>It measured a second cause of the adoption flip that pinning would never have touched: <code>_resolve_doc</code> picked the first prefix match while iterating a <strong>set</strong>, so two documents sharing a 24-character prefix — the <code>…add11</code>/<code>…add12</code> shape this corpus is full of — resolved differently per process. With sampling entirely removed, <code>PYTHONHASHSEED</code> 0–2 gave "verified" and 3–7 gave "abstain" on identical bytes. Fixed with <code>sorted()</code>, proven across eight seeds. The pin itself is honest about what it does not buy: the model accepts temperature and seed but does not honour them to the byte — 2 distinct completions in 8, no fingerprint — recorded in the constant's docstring rather than dressed up as a fix.</td></tr>
+        <tr><td>Language flips rejected</td><td>Symmetric, comparing prose outside quoted spans so re-rendering a quotation is not mistaken for answering in another language, with a fallback when a side has nothing quotable left — otherwise "quote the whole rewrite" is a one-line evasion.</td></tr>
+        <tr><td>Substance floor</td><td>Keyed on <strong>claim survival, not size</strong>. The blind suite built a pair no length rule can pass: the rewrite that must be rejected keeps 65% of the characters, the one that must be adopted keeps 47%. The character-ratio proxy was removed rather than tightened — it was demonstrably the wrong axis and had never fired on any of the 19 recorded rewrites.</td></tr>
+        <tr><td>Reproducibility as an instrument</td><td>Identical-completion rate, adoption agreement, per-case disagreements and the resulting spread on every gated metric, with a zero-tolerance default (one flip is an existence proof, and 11 sampled cases cannot distinguish 5% from 0%). Pre-fix baseline: 72.7% agreement. Gates whose margin sits inside the measured spread now report <strong>indeterminate</strong>, which still exits non-zero.</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="prose" style="margin-top:1.4rem">
+    <p><strong>Then the last verification hole was closed as a design pass</strong> rather than the patch three reviewers had proposed three incompatible versions of. The invariant was stated before the code was written: <em>a verdict may not answer supported on a scope it has not conflict-tested.</em> Every branch that mints a supported verdict now passes one shared per-key, field-anchored gate, and an AST check pins the shape so a new support branch cannot appear without either calling the gate or breaking that equality visibly. The blind attack suite went 36/36 — its page-repoint attack, written by an agent that never saw this code, flipped from <code>xfail</code> to pass — the contradicted arm went 33/34 → 34/34, exactly one of 343 scored rows changed status, and 0 of 132 live answers moved.</p>
+    <p><strong>With the gates in place and an extractor veto removed, repair finally acted — and the verdict became decisive rather than another deferral.</strong> Adoption rose from 0/11 to 3/7 and 1/6 on the same frozen input. <strong>Three of the five adopted rewrites deleted verified, cited, grounded content:</strong> the $55.0M figure documenting FP220's disagreement with the registry, carrying its own caution flag, and "Friday, October 29, 2021" — one of the three board dates the user had asked for — twice, from different completions. One adoption was a genuine, reproducible correction. And the conflict-flattening rewrite was the <em>only</em> completion that reproduced byte-identically across both replays: <strong>the most reproducible thing repair does is the harm.</strong></p>
+  </div>
+
+  <div class="note crit">
+    <span class="n-k">Why every guard passed it, and why that is the point</span>
+    <p>Zero-remaining-failures (the survivor verifies), anti-gutting (3→2 claims, not →0: the guard fires only when <em>every</em> supported required claim vanishes), the substance floor, the language gate, the invented-source scan — all pass; the answer's own checks read <code>pass: true</code> before and after. Only the offline audit's lost-supported gate saw it. And the gated metrics <strong>reward</strong> the deletion: support rate, groundedness and citation completeness all <em>rise</em> on that answer. A canary optimising those numbers reads the harm as improvement. The root cause is structural, not sampling: under an adopt-if-clean gate, the cheapest way to satisfy "no claim left failing" is to delete the failing claim and, collaterally, whatever contradicts it — and the answers with the most deletable material are exactly the conflict-reporting ones. Adding the obvious per-claim gate would reject the harms <em>and</em> take adoption back to ~one case per 66 answers, a value indistinguishable from the no-op a wave was spent escaping.</p>
+  </div>
+
+  <div class="prose" style="margin-top:1.4rem">
+    <p><strong>The decision, and its proof.</strong> Wave 5 was cancelled and the adoption path deleted rather than switched off — a flag holding a pathway shut is still a pathway. The gate this deletion had to pass, and did: production ran the switch at 0, so removing the pass may change <em>nothing</em> observable. All 66 recorded answers of two release runs replay through the old and new code byte-identically — 396 answer-runs, same output SHA, compared down to every verdict field, source, caution and model-call signature — the five-arm report is byte-identical including its seeded repaired arm, and the app's message stream for a production-config turn is unchanged under a golden test. The one string that would have differed, the recorded "repair disabled" note, is frozen verbatim with the reason written next to it. Tests moved with the code rather than around it: 33 repair-only tests deleted, 15 dual-purpose ones keeping their detector half, and the blind attack suite retriaged 36 → 17 with every retirement named in its header alongside the commit the full suite runs green at. The A/B history stays auditable: the recorded replay and audit artifacts for every run remain in <code>data/eval</code> with their checksums, and the auditor's reading half still reads them.</p>
+    <p><strong>What is left open, and said so:</strong> a repair surfaced as a <em>suggestion</em> beside the answer, never substituted for it, would have put that one genuine correction in front of a human without giving a gate the authority to delete cited content. It is documented future work and a new design pass, not a flag flip — nothing in this tree is waiting to be re-enabled. Recorded, not fixed: with the adoption gate gone, a truncated document id is now indistinguishable from an invented one at the detector; the attack suite pins that fact and an owner ruling on rebuilding the check detector-side is the open item.</p>
+  </div>
+</section>
+
+<!-- ================================================================ -->
+<section>
+  <div class="sec-head">
+    <p class="eyebrow">Act XI · release</p>
+    <h2>Citations at the sentence, and the final numbers</h2>
+    <p>With the verifier calibrated and frozen, one acceptance gate was still red — and three independent audits agreed the defect was in how answers were written, not in how they were graded.</p>
+  </div>
+
+  <div class="prose">
+    <p><strong>The diagnosis.</strong> On the re-scored release-2 answers, citation completeness stood at <strong>144/165 = 87.3%</strong> against the ≥95% gate, with groundedness 89.1%. The dominant failure was a factual sentence carrying no bracket at all. Since the instrument was calibrated against human gold and deliberately frozen, the fix belonged where the defect was: in generation. The change is prompts only.</p>
+    <p><strong>The rules were written against what the verifier actually measures, not against taste.</strong> Sentences inherit a trailing paragraph bracket but bullets and table rows never inherit a sibling's — the exact shape of the adjudicated <code>missing_citation</code> rows — so every list item now carries its own citation. A paragraph's single bracket mis-scopes when its sentences read from different pages, so: cite at the sentence. A hedge is glue to the extractor and honestly leaves the claim denominator, so cite-or-hedge is worded in the phrasings the refusal regex recognises, in both languages. Registry and matrix facts carry the page their own line prints. And when a page is uncertain the document id survives and the page is dropped, never the reverse — an invented page reads as precision. Forty-five tests pin the dimensions, including a 5,000-character prompt budget that turns the module's measured rule-dropping into a tripwire: a new rule either displaces an old one or ships behind its own trigger.</p>
+  </div>
+
+  <div class="metrics" style="margin-top:1.8rem">
+    <div class="metric"><span class="k">Citation completeness</span><span class="v">120/126</span><span class="n">95.2% vs a ≥95% gate whose integer threshold is exactly 120 — PASS</span></div>
+    <div class="metric"><span class="k">Citation presence</span><span class="v">126/126</span><span class="n">every extracted claim carries a bracket (was 90.1% on the comparable subset)</span></div>
+    <div class="metric"><span class="k">Groundedness</span><span class="v">120/126</span><span class="n">some held evidence entails the claim, cited or not</span></div>
+    <div class="metric"><span class="k">Field coverage</span><span class="v">55/56</span><span class="n">every requested document×field cell addressed or marked missing</span></div>
+  </div>
+
+  <div class="prose" style="margin-top:1.6rem">
+    <p><strong>release-3</strong> — 66 cases, full production parity, pinned sampling, frozen verifier — records 120 supported / 126 claims, 1 contradicted, 5 unsupported; document recall@5 51/52 on the scorable cases; evidence-page hit 21/24; judge budget exhausted 0/66; p50 3.93 s, p95 8.64 s; 212,585 prompt + 13,468 completion tokens, ≈$0.40 for the run. On the 62-case subset comparable with release-2: completeness 86.1% → 94.4%, presence 90.1% → 100.0%, groundedness 89.1% → 92.7%, claim support 89.4% → 94.4%, field coverage 95.0% → 98.8%. Behaviour score 0.95 → 0.96, on 5 better / 4 worse / 57 same.</p>
+    <p><strong>The scorer had to be corrected before those numbers could be believed.</strong> The first scoring showed 13 regressions; <strong>9 of them were the instrument, not the answers.</strong> The scorer never passed its computed registry notes to the invalid-citation check, so an answer citing the very page a note itself prints — <code>18.5 M USD (p.5, A.8)</code> — was flagged as inventing it, in eight cases the app would have displayed unflagged. And the conflict detector knew two conflict shapes, both defeated by the new per-sentence style: each figure now sits on its own bullet with its own bracket, so no sentence holds two values and the page marks drift past the detector's window — a <em>clearer</em> conflict report scored as none. A third shape was added, swept against all 132 recorded answers: exactly 6 verdicts flip, every one a hand-checked true conflict report, zero collateral. release-2 stays frozen as recorded, and the comparison table is credited honestly — under the fixed scorer one of release-3's "better" rows is really the scorer's.</p>
+  </div>
+
+  <div class="scroll">
+    <table>
+      <thead><tr><th>Acceptance dashboard (from the original plan)</th><th>At the plan</th><th>Release gate</th><th>Final</th><th></th></tr></thead>
+      <tbody>
+        <tr><td>Document recall@5</td><td class="num">100% / 30 questions</td><td>do not regress</td><td class="num">30/30, MRR 1.00</td><td><span class="chip fixed">pass</span></td></tr>
+        <tr><td>Evidence-page recall</td><td class="num">not measured</td><td>label first; improve against baseline</td><td class="num">21/24 (release-1 recorded 20/24)</td><td><span class="chip fixed">pass</span></td></tr>
+        <tr><td>Required-field coverage</td><td class="num">not measured</td><td>≥95% on labelled comparisons</td><td class="num">55/56 = 98.2%</td><td><span class="chip fixed">pass</span></td></tr>
+        <tr><td>Identifier conflict detection</td><td class="num">unit-tested</td><td>100% on conflict fixtures</td><td class="num">4/4 fixtures; 210 conflicting entries in 120 documents surfaced with pages</td><td><span class="chip fixed">pass</span></td></tr>
+        <tr><td>Unknown identifier abstention</td><td class="num">implemented</td><td>100% on closed-world fixtures</td><td class="num">4/4 identifier fixtures (FP999, B.42/add99, B.44, year 2014)</td><td><span class="chip fixed">pass</span></td></tr>
+        <tr><td>Numerical / currency correctness</td><td class="num">not measured</td><td>100% on deterministic fixtures</td><td class="num">2/2 cross-currency comparisons refuse to rank</td><td><span class="chip fixed">pass</span></td></tr>
+        <tr><td>Citation precision</td><td class="num">page presence only</td><td>≥95% claim support</td><td class="num">120/126 = 95.2% (threshold 120)</td><td><span class="chip fixed">pass</span></td></tr>
+        <tr><td>Retrieval latency</td><td class="num">139 ms average hybrid</td><td>track; optimize after correctness</td><td class="num">65 ms scoped hybrid; end-to-end p50 3.93 s / p95 8.64 s</td><td><span class="chip fixed">pass</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="prose" style="margin-top:1.4rem">
+    <p>The execution plan added gates of its own, all met: groundedness <strong>120/126</strong>; adjudication coverage 71/71 with ≥40 gold negatives, 0 unreviewed rows, and the false-positive set equal to the signed set; judge budget exhausted <strong>0/66</strong> on every release run; repair answers degraded and invented sources <strong>0 / 0</strong>; harness parity level <code>full</code> at Wave 3; run cost ≈$0.40 against a ≤$0.50 envelope; test suite <strong>1,001 tests</strong> (998 passed, 3 skipped, each skip a self-declaring staleness guard) against a 575-test floor. The canary row reads <em>cancelled</em>, for the reason in Act X.</p>
+  </div>
+
+  <div class="note crit">
+    <span class="n-k">The residue, named — 4 cases of 66, all understood</span>
+    <p><strong>Two page-guesses.</strong> <code>cmp-fp086-fp220-currency</code> and <code>cmp-fp151-fp152-entity</code> state facts whose evidence prints no page and cite an invented one — the cite-the-id-alone rule not being followed for non-money facts. <strong>One terser answer.</strong> <code>bc-b27-02-add12</code> dropped an entity the fixture expects ("Pegasus") while remaining correct in what it does say. <strong>One honest hedge.</strong> <code>fu-lang-switch</code>, a doc-tagged follow-up turn, receives no registry note and therefore hedges; the previous run asserted the entity with no in-turn evidence, which the system's own rules forbid — the notes gap is the real fix for that case, not un-hedging. Separately and unchanged since release-2: two abstention fixtures about <em>document content</em> rather than document existence (<code>abs-antarctica</code>, <code>abs-offtopic</code>) do not produce the refusal phrasing their fixture requires; the adjudication taxonomy places unhedged negatives about content outside what the record can settle, and they are tracked rather than papered over.</p>
+  </div>
+</section>
+
+<!-- ================================================================ -->
+<section>
+  <div class="sec-head">
+    <p class="eyebrow">Act XII · operations</p>
+    <h2>What is running, and how it can be undone</h2>
+    <p>A measurement campaign is only worth its artifacts if the artifacts survive, and a release is only worth its gates if the thing deployed is the thing measured.</p>
+  </div>
+
+  <div class="prose">
+    <p><strong>SHA-tagged images and a real rollback target.</strong> The compose file pins <code>image: fp-gcf:${GIT_SHA:-latest}</code>, so every deploy builds a <em>new</em> tag rather than overwriting one. The previous release stays on disk and restarts without a rebuild. Before this change every deploy overwrote <code>:latest</code> with no retained predecessor — the ledger's log therefore starts empty by design, because releases that predate it left no rollback target on the host. The ledger itself answers exactly two questions during an incident, without SSH: which commit is live, and which commit to roll back to. A row is a fact about the past; a bad deploy is corrected by adding the row for the rollback, never by editing the row for the release that broke.</p>
+  </div>
+
+  <div class="scroll">
+    <table>
+      <thead><tr><th>Deployed (UTC)</th><th>SHA</th><th>Switches</th><th>What went live</th></tr></thead>
+      <tbody>
+        <tr><td class="num">2026-08-20T17:36:34Z</td><td class="num">4a04d32</td><td class="num">PLANNER=1 VERIFY=1 VERIFY_REPAIR=0</td><td>the verifier calibrated against human-adjudicated gold</td></tr>
+        <tr><td class="num">2026-08-21T19:35:53Z</td><td class="num">e639915</td><td class="num">PLANNER=1 VERIFY=1 VERIFY_REPAIR=0</td><td>repair safety gates and the blind attack suite (rollback target 4a04d32 retained)</td></tr>
+        <tr><td class="num">2026-08-24T11:45:46Z</td><td class="num">22f558b</td><td class="num">PLANNER=1 VERIFY=1 VERIFY_REPAIR=0</td><td>the conflict gate: no supported verdict on an untested scope</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="prose" style="margin-top:1.4rem">
+    <p>Those three rows keep <code>VERIFY_REPAIR=0</code> in their switch column because it was true when they were written. From the next deploy on the column drops it: the commit that removed the repair pathway also removed the variable, and a flag nothing reads is a switch that no longer exists. The rows are not edited to match the present — that is the whole point of an append-only ledger.</p>
+    <p><strong>Interlocks, each written against a demonstrated footgun.</strong> <code>push</code> refuses a dirty tree and refuses a HEAD that is not a deploy tag; it greps the remote environment for the keys the stack needs and aborts if any is missing. Evaluation data, canary logs and scratch files are excluded from the rsync, while <code>.env</code> is <em>never</em> excluded — it is how switches reach production, and an exclusion would silently strand every future flip. The index and registry are not excluded either, because production loads them; the index footgun is handled by a loud warning and a refusal to overwrite without an explicit force. The measurement anchor is protected in both directions: the recorded release files are force-added to git despite the data directory being ignored, their checksums are tracked in the same commit, and the recorder refuses to overwrite an existing path. <strong>Sixty-seven recorded eval artifacts</strong> are checksummed in <code>data/eval/CHECKSUMS.sha256</code>, with the reason written at the top of the file: the baseline run cannot be rebuilt, because re-running it calls the model 66 more times and is a different sample.</p>
+    <p><strong>The deploy row is pasted by hand, on purpose.</strong> <code>make deploy</code> prints the row after the remote <code>docker compose up -d</code> returns; the operator commits it with the next change. Writing it automatically would have the target edit a tracked file mid-deploy, which then trips its own dirty-tree interlock on the following run or forces an unreviewed auto-commit.</p>
+  </div>
+
+  <div class="note">
+    <span class="n-k">Stated honestly: the parity level of the final run</span>
+    <p><code>release-3</code> records its own pipeline parity as <code>partial: deployment-drift</code>, not <code>full</code>. Two reasons, both in the record: the deployment fingerprint file was never captured (an owner action that was not performed), so the deployed switches are read from the tracked ledger row and the local environment rather than from the host, and the remote artifact hashes were not read; and the harness tree (<code>85a9ff7</code>) is ahead of the deployed commit (<code>22f558b</code>) under <code>src/</code>. The number is what it is — the run is production-<em>configured</em> and not production-<em>verified</em>, and the record says which.</p>
   </div>
 </section>
 
@@ -441,6 +712,12 @@ footer{margin-top:4.5rem;padding-top:1.5rem;border-top:1px solid var(--rule-stro
   </div>
   <div class="prose">
     <p>Nothing above rests on inspection alone. The resolution trade-off was benchmarked against the live VLM server; the concurrency crash was reproduced twice from a healthy state before being called real; grounding quality was judged by <em>looking at the rendered highlight images</em>, which caught two geometry bugs no unit test would have; the retrieval iterations were each validated by re-running the exact transcript that failed; and the final budget-comparison answer was accepted only when it produced real figures with per-document honesty. Where a claim could not be verified (corpus-wide superlatives from a sample), the system was taught to say so rather than the report pretending otherwise.</p>
+    <p>The correctness campaign made those instincts into rules, and the rules are why its numbers can be read as evidence rather than as claims:</p>
+    <p><strong>No self-certification.</strong> No agent certifies its own output and no component certifies itself — the verifier is scored against human gold it never saw, the repair gates were attacked by a suite written from the specification by an agent that never read the implementation, and the headline repair number is the one computed <em>without</em> carrying forward the judge's rulings on the unrepaired text.</p>
+    <p><strong>Tests pin fixed behaviour in both directions.</strong> Every relaxation gets an adversarial negative <em>and</em> a regression pin on the permissive side. This rule exists because twelve held tests pinned only the strict direction, which is exactly how two live regressions survived them.</p>
+    <p><strong>A gate line whose expectation lives in a comment is not a gate.</strong> Each wave's gate block runs verbatim under <code>set -euo pipefail</code>; a non-zero exit or an out-of-tolerance number blocks the commit, and there is no narrative override. Where a change ships behind a switch, the off-path output is proven byte-identical to the pre-change path on a fixed fixture rather than asserted.</p>
+    <p><strong>Spread before significance.</strong> Run-to-run variation was measured and published <em>before</em> the improvement runs — claim-support varies 8.9 pp deterministic and 4.6 pp production on its own — so most per-gap movements were reported <em>indeterminate</em> rather than passed. Two measurement changes that looked like improvements were labelled as measurement: a definition change worth +26 claims, and a parity gap that bought +1.74 pp purely by removing three claims from the denominator, none of them supported.</p>
+    <p><strong>And the reference standard is blind.</strong> The one thing a system cannot do is grade itself; so the 71 recorded failures were labelled with the verifier's own verdict withheld, by labellers who did not know which rows it had flagged, against a taxonomy written before the labelling started, and adopted by a signature no agent can forge.</p>
   </div>
 </section>
 
@@ -454,7 +731,10 @@ footer{margin-top:4.5rem;padding-top:1.5rem;border-top:1px solid var(--rule-stro
     <table>
       <thead><tr><th>Branch</th><th>Contents</th><th>State</th></tr></thead>
       <tbody>
-        <tr><td class="num">main</td><td>everything below plus the correctness program, merged; 83 commits</td><td>ready to push (force-with-lease replaces the leaked-key history)</td></tr>
+        <tr><td class="num">main</td><td>everything below plus both correctness programs, merged; 123 commits, tip <code>6f91410</code></td><td>ready to push (force-with-lease replaces the leaked-key history)</td></tr>
+        <tr><td class="num">feat/claim-support-rollout</td><td>waves −1 → 5: interlocks, adjudication, calibration, parity harness, repair A/B</td><td>merged</td></tr>
+        <tr><td class="num">hold/verifier-calibration</td><td>the 1,008-line unreviewed agent wave, quarantined off the working tree and never deployed</td><td>quarantine branch, kept as record</td></tr>
+        <tr><td class="num">feat/verifier-calibration</td><td>the 0b/0c rework attempts; 0c was rejected outright</td><td>rejected, kept as record</td></tr>
         <tr><td class="num">re-architecture</td><td>package layout, secrets scrub, baseline</td><td>merged</td></tr>
         <tr><td class="num">feature/citation-grounding</td><td>boxes sidecars, page-aware chunks, ground_chunk</td><td>merged</td></tr>
         <tr><td class="num">feature/grounded-viewer</td><td>highlight viewer, OpenAI backend, condensation, preload</td><td>merged</td></tr>
@@ -464,14 +744,16 @@ footer{margin-top:4.5rem;padding-top:1.5rem;border-top:1px solid var(--rule-stro
     </table>
   </div>
   <div class="prose" style="margin-top:1.4rem">
-    <p><strong>Since the first edition of this report,</strong> the roadmap items shipped: hybrid BM25+dense retrieval (identifier recall 6%→100%), the metadata registry (now provenance-aware, v2), query decomposition with a conductor, conversation threads with self-registration, the gpt-5.2 backend, and the full correctness program above — 53 further commits, all on <code>main</code>.</p>
-    <p><strong>Open items, in priority order:</strong> revoke the five leaked keys (the old history is public until then); push all branches (credentials exist only on the owner's side); flip <code>VERIFY_REPAIR=1</code> after live traffic confirms zero verifier false positives; re-extract line geometry for the 205 rotated pages (the runaway-height guard truncates line <em>length</em> there — positions are correct, boxes are short); A/B the sectioned <code>v2</code> index against a multilingual embedder now that page-level labels exist; and extract the three remaining model corpora (<code>make extract</code> resumes them).</p>
+    <p><strong>Since the first edition of this report,</strong> the roadmap items shipped: hybrid BM25+dense retrieval (identifier recall 6%→100%), the metadata registry (now provenance-aware, v2), query decomposition with a conductor, conversation threads with self-registration, the gpt-5.2 backend, the correctness program, and the claim-support campaign of Acts VII–XII — 93 further commits, all on <code>main</code>.</p>
+    <p><strong>Open items, in priority order.</strong> <em>Owner actions:</em> revoke the five leaked keys (the old history is public until then); push all branches (credentials exist only on the owner's side); deploy the four commits between the live SHA <code>22f558b</code> and the tip <code>6f91410</code> — the citation pass measured by release-3 is not yet on the host; capture the deployment fingerprint, which is the only thing standing between release-3's <code>partial: deployment-drift</code> and a verified <code>full</code>; and spot-check the gold's two stale labels so the frozen anchor can be re-resolved.</p>
+    <p><em>Product and engineering:</em> decide whether answer repair returns as a <em>suggestion</em> beside the answer — never substituted for it, with a claim-level diff and no authority to delete cited content — or stays deleted; rule on rebuilding the truncated-versus-invented document-id check detector-side, now that the adoption gate it lived in is gone; close the notes gap that makes a doc-tagged follow-up turn hedge for want of a registry note; re-extract line geometry for the 205 rotated pages (the runaway-height guard truncates line <em>length</em> there — positions are correct, boxes are short); A/B the sectioned <code>v2</code> index against a multilingual embedder now that page-level labels exist; and extract the three remaining model corpora (<code>make extract</code> resumes them).</p>
+    <p><strong>Explicitly not next, and not because they are hard.</strong> GraphRAG, agentic search, whole-document long-context prompting, and vision verification of cited pages all remain valid experiments — but no measured gap points at any of them. Document recall is 30/30, evidence-page hit 21/24, field coverage 55/56; the failures that remain are citation and notes failures. Each is revisited when, and only when, a measurement names it.</p>
   </div>
 </section>
 
 <footer>
-  <div>GCF Q&amp;A · 273 PDFs · 41,550 pages · 175,225 chunks (deduplicated; sectioned v2 index staged) · repository: final_project_qna (branch main @ db2e250) · live at fp-gcf.ssa.tg</div>
-  <div>All measurements taken 14–21 Aug 2026 on the build machine (RTX 4080 SUPER, WSL2) and the production server, against live services. Related reports: docs/query-decomposition.html · docs/rag-approaches-evaluation.html · docs/hybrid-retrieval-plan.html · docs/rag-correctness-next-steps.html</div>
+  <div>GCF Q&amp;A · 273 PDFs · 41,550 pages · 175,225 chunks (deduplicated; sectioned v2 index staged) · repository: final_project_qna (branch main @ 6f91410; live at fp-gcf.ssa.tg on 22f558b)</div>
+  <div>Third edition, 24 Aug 2026. All measurements taken 14–24 Aug 2026 on the build machine (RTX 4080 SUPER, WSL2) and the production server, against live services; every claim-level figure is reproducible from the 67 checksummed records in <code>data/eval/</code>. Source record for Acts VII–XII: docs/rag-correctness-next-steps.html · docs/claim-support-execution-plan.md · docs/adjudication-taxonomy.md · docs/wave0-review-verdict.md · docs/wave0b-review-verdict.md · docs/wave0c-review-verdict.md · docs/wave1-adjudication-review.md · docs/DEPLOYED.md. Earlier reports: docs/query-decomposition.html · docs/rag-approaches-evaluation.html · docs/hybrid-retrieval-plan.html</div>
 </footer>
 
 </div>
