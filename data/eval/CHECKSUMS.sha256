@@ -171,3 +171,41 @@ bee0b311d46a6335bb5249239e702d4c9ce995796c72a364cc58e55b5fddb851  data/eval/audi
 2350458bf56501f931b821fe8235fe08f9fc193077a07ca2634d7639570f1790  data/eval/audit_repair_release-2d.json
 d3e388fb83c749710a5bb1871c99c4188ec0f7f84a88393fa526d6664678c20a  data/eval/audit_repair_release-2c-spread.json
 ff05bf1f46c9c6da200f93f20e5b23e2c0aa780875c75ff97c790d2c733df738  data/eval/audit_repair_release-2d-spread.json
+#
+# Wave 5b: the repair A/B re-run after the extractor fix (fb379d0), which
+# stopped minting heading-form units as standalone claims and so removed the
+# inherited heading-veto that made the 2c/2d A/B a near-total no-op. Same
+# frozen input release_release-2.jsonl (NOT re-recorded), two independent
+# replays, --repair-samples 2, carry-off. verify.py blob
+# bd3b177201bb6d50077bd394851024f1a5721bcd687fe78ee27e6a69ecba1226.
+#
+# Definition change on the OFF arm, labeled: claims 173 -> 165 (-8 lead-in
+# units), grounded 154 -> 147, citation-supported 144 unchanged. So
+# groundedness 89.02% -> 89.09% (flat) and citation completeness
+# 83.24% -> 87.27% (+4.03 pp BY DENOMINATOR ONLY).
+#
+#   release-2e  7 cases reach repair, 3 ADOPTED; identical completions 4/7;
+#               adoption agreement 7/7. FAILS: 4 supported claims lost
+#               undocumented, supported 149 -> 148, and both rate gates.
+#   release-2f  6 cases reach repair, 1 ADOPTED; identical completions 1/6;
+#               adoption agreement 4/6 (33.3% disagreement) -> reproducibility
+#               gate FAILS. 2 supported claims lost undocumented.
+#
+# The adoption that reproduces byte-identically across BOTH replays is
+# cmp-fp086-fp220-currency, and it deletes the FP220 $55.0 million
+# "Required GCF funding" (p.40) figure that disagrees with the registry's
+# 50,000,000 USD -- the conflict-flattening harm class, adopted, with
+# answer_checks_pass_to_fail blind to it.
+#
+9e7122e0b3c435f715d26ec9588ec9d52e78870166f507dfd6e93bc6a6d3bfda  data/eval/replay_release-2e_repair-off.jsonl
+e550d99a66c978b4fd3c1e8473bc94a3dc88253271327f588782673477d89912  data/eval/replay_release-2e_repair-on.jsonl
+cd395b0577cc298e06a90ef2b0697bb8141d6f326b2845a31f25c1783104ae44  data/eval/replay_release-2e_repair-on-carryoff.jsonl
+0421737ed208f62b41cf43ccdf47d32c457374d50428f1865924a1cd91ecd0c1  data/eval/replay_release-2e_repair-calls.jsonl
+c9df8314806bf3bd2e1ce431bffacc2a877a0353fd413e4147e2d5b078ca6b3e  data/eval/replay_release-2f_repair-off.jsonl
+d89684ad91062e05be4d56b79d1c7e6bf52916d7c927a26c8ed8d9b85763975f  data/eval/replay_release-2f_repair-on.jsonl
+1f27c17ffb5211c775cf4bc914e23d0ead1d0020fbc920d1b4e797183b5af22f  data/eval/replay_release-2f_repair-on-carryoff.jsonl
+f235fee24f11b6d795125e17bbf7df7fd5e93f2212fc4c2432e54302f3ff6fcb  data/eval/replay_release-2f_repair-calls.jsonl
+bedc943aec5c74616ae317fe7289a0635908c2d1cdb07c339637786b965b873e  data/eval/audit_repair_release-2e.json
+33b83ce6ee4f89c56b32f22b8b41ed2dfaf458aed4a2928872368405ea81e143  data/eval/audit_repair_release-2f.json
+fd81ea03965d4ff22af60dfffdb33f63848e066d17ba68699a45e528adf25446  data/eval/audit_repair_release-2e-spread.json
+85d4db342e7deec5e500da464f35c204a998717f0e73e9f1e8189d07d3cb0fbb  data/eval/audit_repair_release-2f-spread.json

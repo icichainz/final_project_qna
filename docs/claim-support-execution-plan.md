@@ -380,6 +380,23 @@ Required, on the **carry-off** numbers: groundedness `n/d >= 95%` **AND** citati
 
 ## Wave 5 — Live canary, then the flip
 
+> **DECISION (2026-08-24, recorded runs 2e/2f): the canary is KILLED and the
+> automatic-adoption repair path is abandoned.** With the extractor veto gone,
+> repair finally acted — and 3 of 5 adopted rewrites deleted verified, cited,
+> grounded content. The conflict-flattening rewrite (deleting the $55.0M figure
+> that documented FP220's disagreement with the registry) was the single
+> completion that reproduced byte-identically across independent replays: the
+> most reproducible thing repair does is the harm. Every production-path guard
+> passed it; only the offline audit saw it. Root cause is structural, not
+> sampling: an adopt-if-clean gate makes deletion the cheapest path to "clean",
+> and conflict-reporting answers — the most valuable to a reviewer — carry the
+> most deletable material. VERIFY_REPAIR stays 0 permanently under this
+> design. The residual options, one product decision: re-scope repair to a
+> SUGGESTION surfaced beside the answer (never substituting; the one genuine
+> correction found would have reached a human), or delete the adoption path
+> and keep verify as the pure detector three waves of work have made good.
+
+
 `VERIFY_REPAIR` is a process-wide env flag (`config.py:56`, consumed `chainlit_app.py:785`), so "owner-controlled sessions" requires a second deployment. **It cannot be a second service in the production compose project:** `docker-compose.yaml` hardcodes `container_name: fp-gcf`, `image: fp-gcf:latest` and `labels: caddy: fp-gcf.ssa.tg`, publishes no host ports (caddy routes by label, so "separate port" is meaningless), and bringing a sibling up recreates `fp-gcf` — "production untouched" would be false — while both would bind-mount the same `./data`, so canary turns would write into the production `app.db` and `public/app_files`.
 
 **Canary = a separate compose project in a separate remote directory:** `/workspace/fp_gcf_canary`, `COMPOSE_PROJECT_NAME=fp-gcf-canary`, `container_name: fp-gcf-canary`, its own caddy label on a canary hostname (DNS created in advance), its own `.env` with `VERIFY_REPAIR=1`, its own `APP_DB` and `public/app_files`. `data/index`, `data/raw`, `data/cache` bind-mounted **read-only** from the production dir. Up with `docker compose -p fp-gcf-canary up -d`; **never run production's `make deploy` while the canary is live**. Rollback: `docker compose -p fp-gcf-canary down` — production never touched.

@@ -1,0 +1,1318 @@
+{
+ "off": "data/eval/replay_release-2e_repair-off.jsonl",
+ "on": "data/eval/replay_release-2e_repair-on-carryoff.jsonl",
+ "cases_compared": 66,
+ "cases_only_on_one_side": [],
+ "answers_rewritten": 3,
+ "claims_before": 165,
+ "claims_after": 161,
+ "supported_before": 149,
+ "supported_after": 148,
+ "groundedness_before": {
+  "n": 147,
+  "d": 165,
+  "rate": 0.8909090909090909,
+  "threshold_95": 157
+ },
+ "groundedness_after": {
+  "n": 144,
+  "d": 161,
+  "rate": 0.8944099378881988,
+  "threshold_95": 153
+ },
+ "citation_completeness_before": {
+  "n": 144,
+  "d": 165,
+  "rate": 0.8727272727272727,
+  "threshold_95": 157
+ },
+ "citation_completeness_after": {
+  "n": 143,
+  "d": 161,
+  "rate": 0.8881987577639752,
+  "threshold_95": 153
+ },
+ "citation_presence_before": {
+  "n": 154,
+  "d": 165,
+  "rate": 0.9333333333333333,
+  "threshold_95": 157
+ },
+ "citation_presence_after": {
+  "n": 152,
+  "d": 161,
+  "rate": 0.9440993788819876,
+  "threshold_95": 153
+ },
+ "contradicted_before": 1,
+ "contradicted_after": 1,
+ "unsupported_before": 15,
+ "unsupported_after": 12,
+ "lost_claims": [
+  {
+   "case": "disc-subnational-pair",
+   "key": "disc-subnational-pair:86d1de9f3a6c",
+   "text": "**“Global Sub-national Climate Fund (SoCF Global) – Equity”** (submitted by **Peganas/Pegasus Capital Advisors**) [123_gcf-b27-02-add12, p. 76; 124_gcf-b27-02-add11, p. 84]",
+   "kind": "entity",
+   "required": true,
+   "status_before": "unsupported",
+   "grounded_before": false,
+   "source_before": "llm",
+   "reason_before": "Evidence mentions programme, not “– Equity” or “Peganas”.",
+   "fate": "corrected",
+   "successor_text": "**“Global Subnational Climate Fund (SoFC Global)”** (submitted by **Pegasus Capital Advisors**) [123_gcf-b27-02-add12, p. 76; 124_gcf-b27-02-add11, p. 84]",
+   "successor_status": "supported",
+   "successor_grounded": true,
+   "successor_similarity": 0.708,
+   "deleted_though_grounded": false
+  },
+  {
+   "case": "cmp-fp086-fp220-currency",
+   "key": "cmp-fp086-fp220-currency:e4220c8809cc",
+   "text": "**FP220 (ARCAFIM)**:",
+   "kind": "entity",
+   "required": true,
+   "status_before": "unsupported",
+   "grounded_before": true,
+   "source_before": "llm",
+   "reason_before": "Claim text missing; evidence only describes loan tranches.",
+   "fate": "deleted",
+   "successor_text": null,
+   "successor_status": null,
+   "successor_grounded": null,
+   "successor_similarity": 0.091,
+   "deleted_though_grounded": true
+  },
+  {
+   "case": "cmp-fp086-fp220-currency",
+   "key": "cmp-fp086-fp220-currency:f784b8226d17",
+   "text": "**USD 50,000,000** “GCF funding requested” (p.5, A.8; also in registry line) [55_gcf-b37-02-add11-funding-proposal-package-fp220].",
+   "kind": "money",
+   "required": true,
+   "status_before": "supported",
+   "grounded_before": true,
+   "source_before": "deterministic",
+   "reason_before": "value found in the cited evidence",
+   "fate": "corrected",
+   "successor_text": "**FP220 (ARCAFIM)**: **USD 50,000,000** “GCF funding requested” (p.5, A.8; also in registry line) [55_gcf-b37-02-add11-funding-proposal-package-fp220].",
+   "successor_status": "supported",
+   "successor_grounded": true,
+   "successor_similarity": 0.955,
+   "deleted_though_grounded": false
+  },
+  {
+   "case": "cmp-fp086-fp220-currency",
+   "key": "cmp-fp086-fp220-currency:f0e4086c6bc9",
+   "text": "**$55.0 million** “Required GCF funding” (p.40) [55_gcf-b37-02-add11-funding-proposal-package-fp220].",
+   "kind": "money",
+   "required": true,
+   "status_before": "supported",
+   "grounded_before": true,
+   "source_before": "deterministic",
+   "reason_before": "value found in the cited evidence",
+   "fate": "corrected",
+   "successor_text": "**FP220 (ARCAFIM)**: **USD 50,000,000** “GCF funding requested” (p.5, A.8; also in registry line) [55_gcf-b37-02-add11-funding-proposal-package-fp220].",
+   "successor_status": "supported",
+   "successor_grounded": true,
+   "successor_similarity": 0.37,
+   "deleted_though_grounded": false
+  },
+  {
+   "case": "agg-2021-boards",
+   "key": "agg-2021-boards:27a069f612f6",
+   "text": "**Friday, October 29, 2021** (as “Date of Board meeting in which the FP is intended to be considered”) [96_gcf-b30-02-add11, p.85]",
+   "kind": "entity",
+   "required": true,
+   "status_before": "supported",
+   "grounded_before": true,
+   "source_before": "deterministic",
+   "reason_before": "value found in the cited evidence",
+   "fate": "corrected",
+   "successor_text": "**Wednesday, December 15, 2021** (as “Date of Board meeting in which the FP is intended to be considered”) [102_gcf-b30-02-add05, p.99]",
+   "successor_status": "supported",
+   "successor_grounded": true,
+   "successor_similarity": 0.6,
+   "deleted_though_grounded": false
+  },
+  {
+   "case": "agg-2021-boards",
+   "key": "agg-2021-boards:928766bbc119",
+   "text": "**Wednesday, December 15, 2021** (same field) [102_gcf-b30-02-add05, p.99]",
+   "kind": "entity",
+   "required": true,
+   "status_before": "supported",
+   "grounded_before": true,
+   "source_before": "deterministic",
+   "reason_before": "value found in the cited evidence",
+   "fate": "corrected",
+   "successor_text": "**Wednesday, December 15, 2021** (as “Date of Board meeting in which the FP is intended to be considered”) [102_gcf-b30-02-add05, p.99]",
+   "successor_status": "supported",
+   "successor_grounded": true,
+   "successor_similarity": 0.385,
+   "deleted_though_grounded": false
+  },
+  {
+   "case": "agg-2021-boards",
+   "key": "agg-2021-boards:89df64c428d4",
+   "text": "However, the retrieved excerpts do **not** provide a complete list of *all* Board meetings that took place in 2021 (e.g., all Board numbers and their dates).",
+   "kind": "year",
+   "required": false,
+   "status_before": "unsupported",
+   "grounded_before": true,
+   "source_before": "llm",
+   "reason_before": "Evidence lists some 2021 meeting dates, not completeness.",
+   "fate": "rewritten-into-a-non-claim",
+   "successor_text": "The excerpts also mention specific **2021 Board meeting dates** (without always stating the Board number), including:\n- **Wednesday, December 15, 2021** (as “Date of Board meeting in which the FP is intended to be considered”) [102_gcf-b30-02-add05, p.99]\n- **Monday, October 4, 2021** (as “Date of GCF’s Board meeting”) [105_gcf-b30-02-add02, p.73; 95_gcf-b30-02-add12-rev01, p.92]\n\nHowever, the retrieved excerpts do **not** support a claim that they provide (or do not provide) a complete list of *all* Board meetings that took place in 2021 (e.g., all Board numbers and their dates).",
+   "successor_status": null,
+   "successor_grounded": null,
+   "successor_similarity": 0.368,
+   "deleted_though_grounded": false
+  }
+ ],
+ "lost_supported_claims": 4,
+ "lost_supported_undocumented": 4,
+ "added_claims": [
+  {
+   "case": "disc-subnational-pair",
+   "key": "disc-subnational-pair:fa286177c0d0",
+   "text": "**“Global Subnational Climate Fund (SoFC Global)”** (submitted by **Pegasus Capital Advisors**) [123_gcf-b27-02-add12, p. 76; 124_gcf-b27-02-add11, p. 84]",
+   "kind": "entity",
+   "status_after": "supported",
+   "grounded_after": true,
+   "cited": true
+  },
+  {
+   "case": "cmp-fp086-fp220-currency",
+   "key": "cmp-fp086-fp220-currency:11f3de2b3fdd",
+   "text": "**FP220 (ARCAFIM)**: **USD 50,000,000** “GCF funding requested” (p.5, A.8; also in registry line) [55_gcf-b37-02-add11-funding-proposal-package-fp220].",
+   "kind": "money",
+   "status_after": "supported",
+   "grounded_after": true,
+   "cited": true
+  },
+  {
+   "case": "agg-2021-boards",
+   "key": "agg-2021-boards:bfb2b54a2d48",
+   "text": "**Wednesday, December 15, 2021** (as “Date of Board meeting in which the FP is intended to be considered”) [102_gcf-b30-02-add05, p.99]",
+   "kind": "entity",
+   "status_after": "supported",
+   "grounded_after": true,
+   "cited": true
+  }
+ ],
+ "status_moved": [],
+ "fates": {
+  "corrected": 5,
+  "deleted": 1,
+  "rewritten-into-a-non-claim": 1
+ },
+ "corrected": 5,
+ "deleted": 1,
+ "qualified": 0,
+ "deleted_though_grounded": [
+  {
+   "case": "cmp-fp086-fp220-currency",
+   "key": "cmp-fp086-fp220-currency:e4220c8809cc",
+   "text": "**FP220 (ARCAFIM)**:",
+   "kind": "entity",
+   "required": true,
+   "status_before": "unsupported",
+   "grounded_before": true,
+   "source_before": "llm",
+   "reason_before": "Claim text missing; evidence only describes loan tranches.",
+   "fate": "deleted",
+   "successor_text": null,
+   "successor_status": null,
+   "successor_grounded": null,
+   "successor_similarity": 0.091,
+   "deleted_though_grounded": true
+  }
+ ],
+ "invented_docs": [],
+ "invented_pages": [],
+ "invented_figures": [],
+ "invented_figures_matcher_cannot_place": [],
+ "invented_entities": [],
+ "sources_not_shown_to_repair": [],
+ "newly_cited_pages": [],
+ "novel_sentences": [
+  {
+   "text": "**“Global Subnational Climate Fund (SoFC Global)”** (submitted by **Pegasus Capital Advisors**) [123_gcf-b27-02-add12, p. 76; 124_gcf-b27-02-add11, p. 84]  \n2.",
+   "is_claim": false,
+   "status": null,
+   "grounded": null,
+   "hedge": false,
+   "case": "disc-subnational-pair"
+  },
+  {
+   "text": "The two proposals state their **GCF funding requested/contribution in different currencies (EUR vs USD)**, so the excerpts do **not** support a definitive “larger” determination.\n\n- **FP086 (Green Cities Facility)**: **EUR 87 million** GCF financing / funding requested (cover pages; also shown as “E",
+   "is_claim": false,
+   "status": null,
+   "grounded": null,
+   "hedge": false,
+   "case": "cmp-fp086-fp220-currency"
+  },
+  {
+   "text": "Because **EUR 87 million** (FP086) is **not directly comparable** to **USD 50 million** (FP220) without a conversion rule, the retrieved excerpts cannot establish which has the larger GCF contribution.",
+   "is_claim": false,
+   "status": null,
+   "grounded": null,
+   "hedge": false,
+   "case": "cmp-fp086-fp220-currency"
+  },
+  {
+   "text": "The excerpts also mention specific **2021 Board meeting dates** (without always stating the Board number), including:\n- **Wednesday, December 15, 2021** (as “Date of Board meeting in which the FP is intended to be considered”) [102_gcf-b30-02-add05, p.99]\n- **Monday, October 4, 2021** (as “Date of G",
+   "is_claim": false,
+   "status": null,
+   "grounded": null,
+   "hedge": false,
+   "case": "agg-2021-boards"
+  }
+ ],
+ "answer_checks_pass_before": 54,
+ "answer_checks_pass_after": 54,
+ "answer_checks_pass_to_fail": 0,
+ "answer_checks_pass_to_fail_cases": [],
+ "answer_checks_fail_to_pass_cases": [],
+ "check_regressions": [],
+ "language_regressions": [],
+ "language_per_case": [
+  {
+   "case": "disc-subnational-pair",
+   "lang": "en",
+   "language_before": true,
+   "language_after": true
+  },
+  {
+   "case": "cmp-fp086-fp220-currency",
+   "lang": "en",
+   "language_before": true,
+   "language_after": true
+  },
+  {
+   "case": "agg-2021-boards",
+   "lang": "en",
+   "language_before": true,
+   "language_after": true
+  }
+ ],
+ "behaviour_per_case": [
+  {
+   "case": "disc-subnational-pair",
+   "expected": "answer",
+   "before": true,
+   "after": true
+  },
+  {
+   "case": "cmp-fp086-fp220-currency",
+   "expected": "answer",
+   "before": true,
+   "after": true
+  },
+  {
+   "case": "agg-2021-boards",
+   "expected": "answer",
+   "before": true,
+   "after": true
+  }
+ ],
+ "field_coverage_before": {
+  "n": 53,
+  "d": 56,
+  "rate": 0.9464285714285714
+ },
+ "field_coverage_after": {
+  "n": 53,
+  "d": 56,
+  "rate": 0.9464285714285714
+ },
+ "per_case": [
+  {
+   "case": "disc-subnational-pair",
+   "class": "discovery",
+   "lang": "en",
+   "status_before": "partial",
+   "status_after": "repaired",
+   "claims": [
+    3,
+    3
+   ],
+   "supported": [
+    2,
+    3
+   ],
+   "grounded": [
+    2,
+    3
+   ],
+   "citation_supported": [
+    2,
+    3
+   ],
+   "score": [
+    0.6,
+    0.6
+   ],
+   "chars": [
+    736,
+    718
+   ],
+   "lost": 1,
+   "added": 1,
+   "fates": {
+    "corrected": 1
+   },
+   "repair_notes": [
+    "repaired 1 failing claim(s)"
+   ]
+  },
+  {
+   "case": "cmp-fp086-fp220-currency",
+   "class": "comparison",
+   "lang": "en",
+   "status_before": "partial",
+   "status_after": "repaired",
+   "claims": [
+    4,
+    2
+   ],
+   "supported": [
+    3,
+    2
+   ],
+   "grounded": [
+    4,
+    2
+   ],
+   "citation_supported": [
+    3,
+    2
+   ],
+   "score": [
+    1.0,
+    1.0
+   ],
+   "chars": [
+    1013,
+    758
+   ],
+   "lost": 3,
+   "added": 1,
+   "fates": {
+    "deleted": 1,
+    "corrected": 2
+   },
+   "repair_notes": [
+    "repaired 1 failing claim(s)"
+   ]
+  },
+  {
+   "case": "agg-2021-boards",
+   "class": "aggregate",
+   "lang": "en",
+   "status_before": "partial",
+   "status_after": "repaired",
+   "claims": [
+    5,
+    3
+   ],
+   "supported": [
+    4,
+    3
+   ],
+   "grounded": [
+    5,
+    3
+   ],
+   "citation_supported": [
+    4,
+    3
+   ],
+   "score": [
+    0.6666666666666666,
+    0.6666666666666666
+   ],
+   "chars": [
+    1024,
+    839
+   ],
+   "lost": 3,
+   "added": 1,
+   "fates": {
+    "corrected": 2,
+    "rewritten-into-a-non-claim": 1
+   },
+   "repair_notes": [
+    "repaired 1 failing claim(s)"
+   ]
+  }
+ ],
+ "carry_on_vs_carry_off": {
+  "answers_that_differ": [],
+  "totals": {
+   "claims_carry_on": 161,
+   "claims_carry_off": 161,
+   "supported_carry_on": 148,
+   "supported_carry_off": 148,
+   "grounded_carry_on": 144,
+   "grounded_carry_off": 144,
+   "citation_supported_carry_on": 143,
+   "citation_supported_carry_off": 143
+  }
+ },
+ "cost": {
+  "judge": {
+   "calls": 18,
+   "prompt_tokens": 14771,
+   "completion_tokens": 1250,
+   "latency_total_s": 37.25,
+   "latency_p50_s": 1.624,
+   "latency_p95_s": 5.481,
+   "cost_usd": 0.031
+  },
+  "repair": {
+   "calls": 7,
+   "prompt_tokens": 8960,
+   "completion_tokens": 1403,
+   "latency_total_s": 23.29,
+   "latency_p50_s": 3.023,
+   "latency_p95_s": 6.478,
+   "cost_usd": 0.0252
+  }
+ },
+ "repair_call_spread": {
+  "cases_sampled_twice": 7,
+  "identical_repair_text": 4,
+  "adoption_flipped": 0,
+  "flips": []
+ },
+ "pre_gate_probe": {
+  "proposals": 7,
+  "verify_gate_caught_introduced_sources": [],
+  "audit_found": {
+   "invented_docs": 0,
+   "invented_pages": 0,
+   "sources_not_shown_to_repair": 0,
+   "invented_figures": 1,
+   "invented_entities": 0,
+   "newly_cited_pages": 0
+  },
+  "detail": {
+   "invented_docs": [],
+   "invented_pages": [],
+   "sources_not_shown_to_repair": [],
+   "invented_figures": [
+    {
+     "digits": "1503",
+     "matcher_places_it": true,
+     "case": "cmp-fp254-fp248-currency"
+    }
+   ],
+   "invented_entities": [],
+   "newly_cited_pages": []
+  },
+  "per_case": [
+   {
+    "case": "disc-subnational-pair",
+    "failures": [
+     1,
+     0
+    ],
+    "supported_required": [
+     2,
+     3
+    ],
+    "would_adopt": true,
+    "verify_introduced_sources": [],
+    "audit_invented_docs": 0,
+    "audit_invented_pages": 0,
+    "audit_not_shown": 0,
+    "audit_invented_figures": 0
+   },
+   {
+    "case": "cmp-fp086-fp220-currency",
+    "failures": [
+     1,
+     0
+    ],
+    "supported_required": [
+     3,
+     2
+    ],
+    "would_adopt": true,
+    "verify_introduced_sources": [],
+    "audit_invented_docs": 0,
+    "audit_invented_pages": 0,
+    "audit_not_shown": 0,
+    "audit_invented_figures": 0
+   },
+   {
+    "case": "cmp-fp254-fp248-currency",
+    "failures": [
+     1,
+     3
+    ],
+    "supported_required": [
+     4,
+     3
+    ],
+    "would_adopt": false,
+    "verify_introduced_sources": [],
+    "audit_invented_docs": 0,
+    "audit_invented_pages": 0,
+    "audit_not_shown": 0,
+    "audit_invented_figures": 0
+   },
+   {
+    "case": "abs-2014",
+    "failures": [
+     2,
+     2
+    ],
+    "supported_required": [
+     0,
+     0
+    ],
+    "would_adopt": false,
+    "verify_introduced_sources": [],
+    "audit_invented_docs": 0,
+    "audit_invented_pages": 0,
+    "audit_not_shown": 0,
+    "audit_invented_figures": 0
+   },
+   {
+    "case": "agg-2020-range",
+    "failures": [
+     1,
+     0
+    ],
+    "supported_required": [
+     0,
+     0
+    ],
+    "would_adopt": true,
+    "verify_introduced_sources": [],
+    "audit_invented_docs": 0,
+    "audit_invented_pages": 0,
+    "audit_not_shown": 0,
+    "audit_invented_figures": 0
+   },
+   {
+    "case": "agg-corpus-boards",
+    "failures": [
+     9,
+     0
+    ],
+    "supported_required": [
+     0,
+     0
+    ],
+    "would_adopt": true,
+    "verify_introduced_sources": [],
+    "audit_invented_docs": 0,
+    "audit_invented_pages": 0,
+    "audit_not_shown": 0,
+    "audit_invented_figures": 0
+   },
+   {
+    "case": "agg-2021-boards",
+    "failures": [
+     1,
+     0
+    ],
+    "supported_required": [
+     3,
+     2
+    ],
+    "would_adopt": true,
+    "verify_introduced_sources": [],
+    "audit_invented_docs": 0,
+    "audit_invented_pages": 0,
+    "audit_not_shown": 0,
+    "audit_invented_figures": 0
+   }
+  ]
+ },
+ "breaches": [
+  "4 supported claim(s) lost with no documented necessity",
+  "supported fell 149 -> 148",
+  "groundedness 144/161 (89.4%) below the >= 153/161 gate",
+  "citation completeness 143/161 (88.8%) below the >= 153/161 gate"
+ ],
+ "gate_pass": false,
+ "inputs": {
+  "off_sha256": "9e7122e0b3c435f715d26ec9588ec9d52e78870166f507dfd6e93bc6a6d3bfda",
+  "on_sha256": "cd395b0577cc298e06a90ef2b0697bb8141d6f326b2845a31f25c1783104ae44",
+  "carry_on_sha256": "e550d99a66c978b4fd3c1e8473bc94a3dc88253271327f588782673477d89912",
+  "audit_verify_blob_sha": "bd3b177201bb6d50077bd394851024f1a5721bcd687fe78ee27e6a69ecba1226"
+ },
+ "reproducibility": {
+  "cases_with_repair": 7,
+  "cases_sampled": 7,
+  "cases_attempted_but_sampled_once": [],
+  "baseline_arm": "carry-on",
+  "carry_mismatch": false,
+  "identical_completion": {
+   "n": 4,
+   "d": 7,
+   "rate": 0.5714285714285714,
+   "threshold_95": 7
+  },
+  "adoption_agreement": {
+   "n": 7,
+   "d": 7,
+   "rate": 1.0,
+   "threshold_95": 7
+  },
+  "adoption_disagreement_rate": 0.0,
+  "disagreements": [],
+  "per_case": [
+   {
+    "case": "disc-subnational-pair",
+    "samples": 2,
+    "identical_text": true,
+    "adoption": [
+     true,
+     true
+    ],
+    "statuses": [
+     "repaired",
+     "repaired"
+    ],
+    "text_sha256": [
+     "c71557454129558fd66ccab132ba4eaa34e9c0f65f526ad801a4022235adf651",
+     "c71557454129558fd66ccab132ba4eaa34e9c0f65f526ad801a4022235adf651"
+    ],
+    "notes": [
+     [
+      "repaired 1 failing claim(s)"
+     ],
+     [
+      "repaired 1 failing claim(s)"
+     ]
+    ]
+   },
+   {
+    "case": "cmp-fp086-fp220-currency",
+    "samples": 2,
+    "identical_text": true,
+    "adoption": [
+     true,
+     true
+    ],
+    "statuses": [
+     "repaired",
+     "repaired"
+    ],
+    "text_sha256": [
+     "128c3c86644102874432981787321c417dc2ecf5d99589f7dbd583cc69d745b4",
+     "128c3c86644102874432981787321c417dc2ecf5d99589f7dbd583cc69d745b4"
+    ],
+    "notes": [
+     [
+      "repaired 1 failing claim(s)"
+     ],
+     [
+      "repaired 1 failing claim(s)"
+     ]
+    ]
+   },
+   {
+    "case": "cmp-fp254-fp248-currency",
+    "samples": 2,
+    "identical_text": false,
+    "adoption": [
+     false,
+     false
+    ],
+    "statuses": [
+     "partial",
+     "partial"
+    ],
+    "text_sha256": [
+     "7de6430ee3479598682ec182bf75b3536c0636d09dbe341b1409c39248fafd61",
+     "3ef81395757b25031285dfdeb7a3a27b8253fadcfc3f813fd85f9edaa4466d62"
+    ],
+    "notes": [
+     [
+      "repair rejected: 3 claim(s) still fail verification (was 1) — no citation on a factual claim"
+     ],
+     [
+      "repair rejected: 3 claim(s) still fail verification (was 1) — no citation on a factual claim"
+     ]
+    ]
+   },
+   {
+    "case": "abs-2014",
+    "samples": 2,
+    "identical_text": false,
+    "adoption": [
+     false,
+     false
+    ],
+    "statuses": [
+     "partial",
+     "partial"
+    ],
+    "text_sha256": [
+     "1d8a362729bc6bda3bc4cd52b1a2daa38453e9c53815c8bc5e7f4dc6471f834f",
+     "af534c2d6dd294e7a64b64b46cd3c4b69ba82b3900ea95e87074f4331300635e"
+    ],
+    "notes": [
+     [
+      "repair rejected: 2 claim(s) still fail verification (was 2) — no citation on a factual claim"
+     ],
+     [
+      "repair rejected: 2 claim(s) still fail verification (was 2) — no citation on a factual claim"
+     ]
+    ]
+   },
+   {
+    "case": "agg-2020-range",
+    "samples": 2,
+    "identical_text": true,
+    "adoption": [
+     false,
+     false
+    ],
+    "statuses": [
+     "abstain",
+     "abstain"
+    ],
+    "text_sha256": [
+     "2c42a9d747c8a0b5b24c0808bffdfe5587de4f4671c4400b1d57665daaac741d",
+     "2c42a9d747c8a0b5b24c0808bffdfe5587de4f4671c4400b1d57665daaac741d"
+    ],
+    "notes": [
+     [
+      "repair rejected: it replaced a 483-character answer with 295 characters that state no fact at all"
+     ],
+     [
+      "repair rejected: it replaced a 483-character answer with 295 characters that state no fact at all"
+     ]
+    ]
+   },
+   {
+    "case": "agg-corpus-boards",
+    "samples": 2,
+    "identical_text": true,
+    "adoption": [
+     false,
+     false
+    ],
+    "statuses": [
+     "partial",
+     "partial"
+    ],
+    "text_sha256": [
+     "3120f341e46d426530a036c1b6ce322c8cc4b65f4abeb1c159fca33512139d5b",
+     "3120f341e46d426530a036c1b6ce322c8cc4b65f4abeb1c159fca33512139d5b"
+    ],
+    "notes": [
+     [
+      "repair rejected: it replaced a 448-character answer with 228 characters that state no fact at all"
+     ],
+     [
+      "repair rejected: it replaced a 448-character answer with 228 characters that state no fact at all"
+     ]
+    ]
+   },
+   {
+    "case": "agg-2021-boards",
+    "samples": 2,
+    "identical_text": false,
+    "adoption": [
+     true,
+     true
+    ],
+    "statuses": [
+     "repaired",
+     "repaired"
+    ],
+    "text_sha256": [
+     "6fb11bf5abd164d6997e85740639e4bba35321ba761716078ffe60479de3fff2",
+     "9f6f45955e017a7842d3310d219d1013707c2f3246d1a5afc4529070f0f0416f"
+    ],
+    "notes": [
+     [
+      "repaired 1 failing claim(s)"
+     ],
+     [
+      "repaired 1 failing claim(s)"
+     ]
+    ]
+   }
+  ]
+ },
+ "sample_worlds": {
+  "worlds": [
+   {
+    "world": 1,
+    "cases": 66,
+    "quantities": {
+     "invented_docs": 0,
+     "invented_pages": 0,
+     "sources_not_shown_to_repair": 0,
+     "invented_figures": 0,
+     "lost_supported_undocumented": 4,
+     "answer_checks_pass_to_fail": 0,
+     "language_regressions": 0,
+     "supported_non_decreasing": -1,
+     "groundedness": 0.8944099378881988,
+     "citation_completeness": 0.8881987577639752
+    },
+    "breaches": [
+     "4 supported claim(s) lost with no documented necessity",
+     "supported fell 149 -> 148",
+     "groundedness 144/161 (89.4%) below the >= 153/161 gate",
+     "citation completeness 143/161 (88.8%) below the >= 153/161 gate"
+    ]
+   },
+   {
+    "world": 2,
+    "cases": 66,
+    "quantities": {
+     "invented_docs": 0,
+     "invented_pages": 0,
+     "sources_not_shown_to_repair": 0,
+     "invented_figures": 0,
+     "lost_supported_undocumented": 4,
+     "answer_checks_pass_to_fail": 0,
+     "language_regressions": 0,
+     "supported_non_decreasing": -1,
+     "groundedness": 0.8944099378881988,
+     "citation_completeness": 0.8881987577639752
+    },
+    "breaches": [
+     "4 supported claim(s) lost with no documented necessity",
+     "supported fell 149 -> 148",
+     "groundedness 144/161 (89.4%) below the >= 153/161 gate",
+     "citation completeness 143/161 (88.8%) below the >= 153/161 gate"
+    ]
+   }
+  ],
+  "depth": 2,
+  "cases": 66,
+  "unresolvable": [],
+  "excluded_cases": []
+ },
+ "spread_replicates": [],
+ "spreads": {
+  "invented_docs": {
+   "value": 0,
+   "from_samples": 0,
+   "from_replicates": null,
+   "source": "samples",
+   "n_samples": 2,
+   "n_replicates": 1
+  },
+  "invented_pages": {
+   "value": 0,
+   "from_samples": 0,
+   "from_replicates": null,
+   "source": "samples",
+   "n_samples": 2,
+   "n_replicates": 1
+  },
+  "sources_not_shown_to_repair": {
+   "value": 0,
+   "from_samples": 0,
+   "from_replicates": null,
+   "source": "samples",
+   "n_samples": 2,
+   "n_replicates": 1
+  },
+  "invented_figures": {
+   "value": 0,
+   "from_samples": 0,
+   "from_replicates": null,
+   "source": "samples",
+   "n_samples": 2,
+   "n_replicates": 1
+  },
+  "lost_supported_undocumented": {
+   "value": 0,
+   "from_samples": 0,
+   "from_replicates": null,
+   "source": "samples",
+   "n_samples": 2,
+   "n_replicates": 1
+  },
+  "answer_checks_pass_to_fail": {
+   "value": 0,
+   "from_samples": 0,
+   "from_replicates": null,
+   "source": "samples",
+   "n_samples": 2,
+   "n_replicates": 1
+  },
+  "language_regressions": {
+   "value": 0,
+   "from_samples": 0,
+   "from_replicates": null,
+   "source": "samples",
+   "n_samples": 2,
+   "n_replicates": 1
+  },
+  "supported_non_decreasing": {
+   "value": 0,
+   "from_samples": 0,
+   "from_replicates": null,
+   "source": "samples",
+   "n_samples": 2,
+   "n_replicates": 1
+  },
+  "groundedness": {
+   "value": 0.0,
+   "from_samples": 0.0,
+   "from_replicates": null,
+   "source": "samples",
+   "n_samples": 2,
+   "n_replicates": 1
+  },
+  "citation_completeness": {
+   "value": 0.0,
+   "from_samples": 0.0,
+   "from_replicates": null,
+   "source": "samples",
+   "n_samples": 2,
+   "n_replicates": 1
+  }
+ },
+ "metric_coverage": {
+  "groundedness_rate": {
+   "cases_compared": 66,
+   "paired": 62,
+   "a": 0.8965053763440861,
+   "b": 0.9018817204301075,
+   "delta": 0.00537634408602139,
+   "no_regression": true,
+   "missing_by_construction": [
+    {
+     "case": "fr-fp999-abstain",
+     "side": "off",
+     "kind": "by-construction",
+     "reason": "guard answer: production returns before verification (chainlit_app.py:1116-1133), so the turn has no claims"
+    },
+    {
+     "case": "fr-fp999-abstain",
+     "side": "on",
+     "kind": "by-construction",
+     "reason": "guard answer: production returns before verification (chainlit_app.py:1116-1133), so the turn has no claims"
+    },
+    {
+     "case": "abs-fp999",
+     "side": "off",
+     "kind": "by-construction",
+     "reason": "guard answer: production returns before verification (chainlit_app.py:1116-1133), so the turn has no claims"
+    },
+    {
+     "case": "abs-fp999",
+     "side": "on",
+     "kind": "by-construction",
+     "reason": "guard answer: production returns before verification (chainlit_app.py:1116-1133), so the turn has no claims"
+    },
+    {
+     "case": "abs-b44",
+     "side": "off",
+     "kind": "by-construction",
+     "reason": "0 claims: the rate's denominator is zero — an abstention with nothing to verify has no rate to compare"
+    },
+    {
+     "case": "abs-b44",
+     "side": "on",
+     "kind": "by-construction",
+     "reason": "0 claims: the rate's denominator is zero — an abstention with nothing to verify has no rate to compare"
+    },
+    {
+     "case": "abs-offtopic",
+     "side": "off",
+     "kind": "by-construction",
+     "reason": "chat turn: production answers from history without verification"
+    },
+    {
+     "case": "abs-offtopic",
+     "side": "on",
+     "kind": "by-construction",
+     "reason": "chat turn: production answers from history without verification"
+    }
+   ],
+   "missing_by_failure": [],
+   "excluded_by_construction": [
+    "abs-b44",
+    "abs-fp999",
+    "abs-offtopic",
+    "fr-fp999-abstain"
+   ]
+  },
+  "citation_completeness_rate": {
+   "cases_compared": 66,
+   "paired": 62,
+   "a": 0.904032258064516,
+   "b": 0.9166666666666666,
+   "delta": 0.012634408602150593,
+   "no_regression": true,
+   "missing_by_construction": [
+    {
+     "case": "fr-fp999-abstain",
+     "side": "off",
+     "kind": "by-construction",
+     "reason": "guard answer: production returns before verification (chainlit_app.py:1116-1133), so the turn has no claims"
+    },
+    {
+     "case": "fr-fp999-abstain",
+     "side": "on",
+     "kind": "by-construction",
+     "reason": "guard answer: production returns before verification (chainlit_app.py:1116-1133), so the turn has no claims"
+    },
+    {
+     "case": "abs-fp999",
+     "side": "off",
+     "kind": "by-construction",
+     "reason": "guard answer: production returns before verification (chainlit_app.py:1116-1133), so the turn has no claims"
+    },
+    {
+     "case": "abs-fp999",
+     "side": "on",
+     "kind": "by-construction",
+     "reason": "guard answer: production returns before verification (chainlit_app.py:1116-1133), so the turn has no claims"
+    },
+    {
+     "case": "abs-b44",
+     "side": "off",
+     "kind": "by-construction",
+     "reason": "0 claims: the rate's denominator is zero — an abstention with nothing to verify has no rate to compare"
+    },
+    {
+     "case": "abs-b44",
+     "side": "on",
+     "kind": "by-construction",
+     "reason": "0 claims: the rate's denominator is zero — an abstention with nothing to verify has no rate to compare"
+    },
+    {
+     "case": "abs-offtopic",
+     "side": "off",
+     "kind": "by-construction",
+     "reason": "chat turn: production answers from history without verification"
+    },
+    {
+     "case": "abs-offtopic",
+     "side": "on",
+     "kind": "by-construction",
+     "reason": "chat turn: production answers from history without verification"
+    }
+   ],
+   "missing_by_failure": [],
+   "excluded_by_construction": [
+    "abs-b44",
+    "abs-fp999",
+    "abs-offtopic",
+    "fr-fp999-abstain"
+   ]
+  }
+ },
+ "require_metrics": [
+  "groundedness_rate",
+  "citation_completeness_rate"
+ ],
+ "gates": [
+  {
+   "id": "invented_docs",
+   "name": "no document citation invented",
+   "kind": "event",
+   "value": 0,
+   "threshold": 0,
+   "margin": 0,
+   "unit": "count",
+   "failed": false,
+   "breach": null,
+   "blocking": true,
+   "spread": 0,
+   "spread_source": "samples",
+   "why": "clean, and the spread is measured at 0",
+   "verdict": "PASS"
+  },
+  {
+   "id": "invented_pages",
+   "name": "no page citation invented",
+   "kind": "event",
+   "value": 0,
+   "threshold": 0,
+   "margin": 0,
+   "unit": "count",
+   "failed": false,
+   "breach": null,
+   "blocking": true,
+   "spread": 0,
+   "spread_source": "samples",
+   "why": "clean, and the spread is measured at 0",
+   "verdict": "PASS"
+  },
+  {
+   "id": "sources_not_shown_to_repair",
+   "name": "no citation on an unshown document",
+   "kind": "event",
+   "value": 0,
+   "threshold": 0,
+   "margin": 0,
+   "unit": "count",
+   "failed": false,
+   "breach": null,
+   "blocking": true,
+   "spread": 0,
+   "spread_source": "samples",
+   "why": "clean, and the spread is measured at 0",
+   "verdict": "PASS"
+  },
+  {
+   "id": "invented_figures",
+   "name": "no figure invented",
+   "kind": "event",
+   "value": 0,
+   "threshold": 0,
+   "margin": 0,
+   "unit": "count",
+   "failed": false,
+   "breach": null,
+   "blocking": true,
+   "spread": 0,
+   "spread_source": "samples",
+   "why": "clean, and the spread is measured at 0",
+   "verdict": "PASS"
+  },
+  {
+   "id": "lost_supported_undocumented",
+   "name": "no supported claim lost undocumented",
+   "kind": "event",
+   "value": 4,
+   "threshold": 0,
+   "margin": 4,
+   "unit": "count",
+   "failed": true,
+   "breach": "4 supported claim(s) lost with no documented necessity",
+   "blocking": true,
+   "spread": 0,
+   "spread_source": "samples",
+   "why": "4 supported claim(s) lost with no documented necessity",
+   "verdict": "FAIL"
+  },
+  {
+   "id": "answer_checks_pass_to_fail",
+   "name": "no correct answer becomes incorrect",
+   "kind": "event",
+   "value": 0,
+   "threshold": 0,
+   "margin": 0,
+   "unit": "count",
+   "failed": false,
+   "breach": null,
+   "blocking": true,
+   "spread": 0,
+   "spread_source": "samples",
+   "why": "clean, and the spread is measured at 0",
+   "verdict": "PASS"
+  },
+  {
+   "id": "language_regressions",
+   "name": "no language regression",
+   "kind": "event",
+   "value": 0,
+   "threshold": 0,
+   "margin": 0,
+   "unit": "count",
+   "failed": false,
+   "breach": null,
+   "blocking": true,
+   "spread": 0,
+   "spread_source": "samples",
+   "why": "clean, and the spread is measured at 0",
+   "verdict": "PASS"
+  },
+  {
+   "id": "supported_non_decreasing",
+   "name": "supported non-decreasing",
+   "kind": "margin",
+   "value": -1,
+   "threshold": 0,
+   "margin": -1,
+   "unit": "claims",
+   "failed": true,
+   "blocking": true,
+   "breach": "supported fell 149 -> 148",
+   "spread": 0,
+   "spread_source": "samples",
+   "why": "supported fell 149 -> 148",
+   "verdict": "FAIL"
+  },
+  {
+   "id": "groundedness",
+   "name": "groundedness >= 95%",
+   "kind": "margin",
+   "value": 0.8944099378881988,
+   "threshold": 0.95,
+   "margin": -0.055590062111801175,
+   "unit": "rate",
+   "failed": true,
+   "blocking": true,
+   "detail": "144/161 (>= 153/161)",
+   "breach": "groundedness 144/161 (89.4%) below the >= 153/161 gate",
+   "spread": 0.0,
+   "spread_source": "samples",
+   "why": "groundedness 144/161 (89.4%) below the >= 153/161 gate",
+   "verdict": "FAIL"
+  },
+  {
+   "id": "citation_completeness",
+   "name": "citation completeness >= 95%",
+   "kind": "margin",
+   "value": 0.8881987577639752,
+   "threshold": 0.95,
+   "margin": -0.06180124223602479,
+   "unit": "rate",
+   "failed": true,
+   "blocking": true,
+   "detail": "143/161 (>= 153/161)",
+   "breach": "citation completeness 143/161 (88.8%) below the >= 153/161 gate",
+   "spread": 0.0,
+   "spread_source": "samples",
+   "why": "citation completeness 143/161 (88.8%) below the >= 153/161 gate",
+   "verdict": "FAIL"
+  },
+  {
+   "id": "metric_coverage",
+   "name": "required metrics present and not regressed",
+   "kind": "event",
+   "value": 0,
+   "threshold": 0,
+   "margin": 0,
+   "unit": "count",
+   "failed": false,
+   "blocking": true,
+   "spread": null,
+   "spread_source": null,
+   "verdict": "PASS",
+   "detail": "groundedness_rate 62/66 paired, 4 case(s) missing by construction, 0 by failure; citation_completeness_rate 62/66 paired, 4 case(s) missing by construction, 0 by failure",
+   "why": "every absent value is absent by construction",
+   "breach": null
+  },
+  {
+   "id": "adoption_reproducibility",
+   "name": "adoption decision reproducible (<= 0% disagreement)",
+   "kind": "event",
+   "value": 0.0,
+   "threshold": 0.0,
+   "margin": 0.0,
+   "unit": "rate",
+   "failed": false,
+   "blocking": true,
+   "spread": null,
+   "spread_source": null,
+   "verdict": "PASS",
+   "detail": "agreement 7/7, identical completions 4/7",
+   "why": "7/7 sampled case(s) agreed",
+   "breach": null
+  }
+ ],
+ "indeterminate": [],
+ "gate_verdict": "FAIL"
+}
