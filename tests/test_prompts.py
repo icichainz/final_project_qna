@@ -1,0 +1,250 @@
+"""The generation-side citation pass, pinned by dimension rather than wording.
+
+The red acceptance gate is citation completeness (SUPPORTED *and* carrying a
+bracket) at 144/165 = 87.3% against >= 95%, with groundedness at 89.1%: the
+evidence supports the sentence, the sentence carries no bracket. The three
+audits agree on the dominant shape ('no citation on a factual claim') and on a
+secondary one (a claim asserted where retrieval never surfaced the evidence,
+4 adjudicated `missing_retrieval_evidence` rows).
+
+The prompt rules added for that are pinned here as PRESENCE OF DIMENSION —
+"this variant carries a per-sentence citation rule", not "the prompt equals
+this string". String equality would freeze the wording and make every future
+sharpening a test edit, which is how a prompt suite stops catching anything.
+
+The verifier is the frozen instrument and is imported READ-ONLY below, to
+document what the rules are aimed at: `verify._units` inherits a paragraph's
+trailing bracket backwards over that paragraph's sentences, but a bullet NEVER
+borrows another bullet's bracket. That asymmetry is why the list rule is its
+own sentence in CORE.
+"""
+import pytest
+
+from gcf_qna.app import prompts
+from gcf_qna.app.prompts import (CHAT_CORE, COMPARISON_BLOCK, CORE,
+                                 MATRIX_BLOCK, REGISTRY_BLOCK, SYSTEM_PROMPT,
+                                 assemble, assemble_chat)
+from gcf_qna.rag import verify
+
+#: Every (kwargs) shape `chainlit_app` and `scripts/eval_answers.py` can build.
+VARIANTS = [
+    {},
+    {"year": True},
+    {"registry": True},
+    {"comparison": True},
+    {"matrix": True},
+    {"lang": "French"},
+    {"year": True, "registry": True, "comparison": True},
+    {"year": True, "registry": True, "comparison": True, "matrix": True,
+     "lang": "French"},
+]
+
+
+def _all_variants():
+    return [assemble(**kw) for kw in VARIANTS]
+
+
+# --- the rules ship in every answer variant ---------------------------------
+
+@pytest.mark.parametrize("kw", VARIANTS)
+def test_every_answer_variant_carries_the_per_sentence_citation_rule(kw):
+    """`verify._units` lets a sentence borrow its paragraph's trailing bracket,
+    so the marginal loss is a paragraph with NO bracket and a paragraph whose
+    one bracket mis-scopes across documents. The rule names both."""
+    p = assemble(**kw)
+    assert "CITE AT THE" in p and "SENTENCE" in p
+    assert "every sentence stating a document fact" in p
+    assert "put the bracket on the sentence that states the fact" in p
+
+
+@pytest.mark.parametrize("kw", VARIANTS)
+def test_every_answer_variant_carries_the_list_item_rule(kw):
+    """Bullets and table rows never inherit a sibling's citation in
+    `verify._units`; one trailing bracket under a multi-document list leaves
+    every other item uncited. Two adjudicated `missing_citation` rows are
+    exactly that shape ('**GCF grant: USD 21.127 million**,')."""
+    p = assemble(**kw)
+    assert "Every bullet, list item and table row carries its own bracket" in p
+    assert "never covers a multi-document list" in p
+
+
+@pytest.mark.parametrize("kw", VARIANTS)
+def test_every_answer_variant_carries_cite_or_hedge(kw):
+    """The 4 `missing_retrieval_evidence` rows cannot be fixed by finding
+    evidence. An explicit 'the retrieved excerpts do not state X' is glue under
+    `verify.claim_kind`, so hedging removes the claim from the denominator
+    instead of failing inside it."""
+    p = assemble(**kw)
+    assert "Cite or hedge" in p
+    assert "the retrieved excerpts do not state it" in p
+
+
+@pytest.mark.parametrize("kw", VARIANTS)
+def test_every_answer_variant_keeps_the_page_prohibitions(kw):
+    """The pre-existing prohibitions are load-bearing and stay: pushing for a
+    page number without them trades uncited claims for invented ones, which
+    `verify._scopes` reports as 'cited evidence was never retrieved'."""
+    p = assemble(**kw)
+    assert "never invent a page number" in p
+    assert "cite the document id alone rather than guess one" in p
+    # corpus-scope hedging and the conflict rule, kept verbatim
+    assert "among the retrieved" in p
+    assert "present both values with their pages" in p
+
+
+def test_the_bracket_format_is_language_independent():
+    """The same rules in French; only the prose language changes."""
+    fr = assemble(lang="French")
+    assert "The bracket format is identical in every language" in fr
+    assert "French" in fr
+    assert "Cite or hedge" in fr
+
+
+def test_the_rules_name_the_header_format_the_model_actually_reads():
+    """`chainlit_app._doc_label` prints '[doc_id, p. N — B.x, year]'. A rule
+    that names a format the model never sees is a rule it cannot follow."""
+    assert "[doc_id, p. N — B.x, year]" in CORE
+
+
+# --- triggered blocks stay triggered ----------------------------------------
+
+def test_registry_citation_rule_ships_only_with_the_registry_note():
+    """`registry._fmt` ends its line '[stem, cover pages]' and prints each
+    figure's own '(p.5, A.8)'. The note carries its provenance; the answer has
+    to carry it through."""
+    assert "cite the document id it states plus the page printed beside" \
+        in REGISTRY_BLOCK
+    assert "[12_doc, cover pages]" in REGISTRY_BLOCK
+    p = assemble(registry=True)
+    assert REGISTRY_BLOCK in p
+    for kw in ({}, {"year": True}, {"matrix": True}, {"comparison": True}):
+        assert "cover pages]" not in assemble(**kw)
+
+
+def test_matrix_citation_rule_ships_only_with_the_matrix():
+    """`planner.render` labels rows 'FP220 | field | value (p.7, A.8)' and maps
+    the label to its doc id on the block's header line — the answer cites the
+    id, not the label."""
+    assert "Cite each value you report at the document id" in MATRIX_BLOCK
+    assert "the page its own row" in MATRIX_BLOCK
+    assert MATRIX_BLOCK in assemble(matrix=True)
+    assert "its own row" not in assemble(year=True, registry=True,
+                                         comparison=True)
+
+
+def test_comparison_block_asks_for_a_citation_per_item():
+    """The fan-out is where multi-document lists are produced; the adjudicated
+    'FP220 (USD 50.0m) > FP173 (USD 23.6m) > FP172 ...' row is one line stating
+    three documents' figures under no bracket at all."""
+    assert "each item citing its own document and" in COMPARISON_BLOCK
+    assert COMPARISON_BLOCK in assemble(comparison=True)
+    assert "each item citing its own document" not in assemble()
+
+
+# --- what must NOT change ---------------------------------------------------
+
+def test_chat_prompt_carries_no_citation_rules():
+    """A chat turn ships no excerpts, so there is nothing to cite and a
+    citation rule can only invite an invented bracket."""
+    for lang in (None, "French", "English"):
+        chat = assemble_chat(lang)
+        for token in ("Cite or hedge", "CITE AT THE", "p. N", "bracket",
+                      "cover pages"):
+            assert token not in chat, token
+    assert "not supplied by the user" in CHAT_CORE     # unchanged
+
+
+def test_compatibility_export_still_assembles():
+    """`chainlit_app` imports SYSTEM_PROMPT; MATRIX_BLOCK stays out of it."""
+    assert SYSTEM_PROMPT == assemble(year=True, registry=True, comparison=True)
+    assert MATRIX_BLOCK not in SYSTEM_PROMPT
+    assert "CITE AT THE" in SYSTEM_PROMPT
+
+
+def test_conductor_prompt_is_untouched_by_the_citation_pass():
+    """The conductor emits JSON queries and never writes an answer."""
+    for token in ("Cite or hedge", "CITE AT THE", "bracket"):
+        assert token not in prompts.CONDUCTOR_PROMPT
+
+
+# --- the length budget ------------------------------------------------------
+
+#: The fully-assembled prompt is 4816 characters at this commit (CORE +
+#: comparison + matrix + year + registry + an explicit language directive).
+#:
+#: WHY A BUDGET AT ALL: this module's own docstring records the measurement
+#: that the answer model DROPS PROCEDURAL RULES IN LONG PROMPTS — three times,
+#: which is why blocks are assembled per trigger instead of shipped whole. A
+#: citation rule the model has stopped reading scores worse than no rule,
+#: because it costs attention the rules above it were getting. The margin here
+#: is ~4% (roughly two lines of prose): a wording sharpening passes, a tenth
+#: rule group does not. Tripping this is not a failure to route around by
+#: raising the number — it is the point at which the next rule has to earn its
+#: place by displacing one, or by shipping behind its own trigger.
+MAX_PROMPT_CHARS = 5000
+
+
+def test_the_fully_assembled_prompt_stays_within_budget():
+    biggest = max(_all_variants(), key=len)
+    assert len(biggest) <= MAX_PROMPT_CHARS, (
+        f"assembled prompt is {len(biggest)} chars, over the "
+        f"{MAX_PROMPT_CHARS} budget — see the comment above MAX_PROMPT_CHARS: "
+        f"displace a rule or put the new one behind a trigger")
+
+
+def test_each_block_is_shorter_than_the_core_it_supplements():
+    """No single triggered block may outgrow CORE: the per-turn assembly only
+    protects attention while the conditional half stays the smaller half."""
+    for name, block in (("comparison", COMPARISON_BLOCK),
+                        ("matrix", MATRIX_BLOCK),
+                        ("registry", REGISTRY_BLOCK),
+                        ("year", prompts.YEAR_BLOCK)):
+        assert len(block) < len(CORE), name
+
+
+# --- the instrument these rules are aimed at (read-only) --------------------
+
+def test_the_list_rule_is_what_the_verifier_actually_requires():
+    """Not a prompt assertion — a demonstration, against the frozen verifier,
+    that the CORE list rule targets a real scoring rule rather than a stylistic
+    preference. One trailing bracket under a three-item list leaves two items
+    with no citation at all; the same list cited per item leaves none."""
+    trailing = ("- FP220 requests USD 50,000,000\n"
+                "- FP173 requests USD 23,600,000\n"
+                "- FP172 requests USD 21,128,000 [21_doc-c, p. 7]\n")
+    per_item = ("- FP220 requests USD 50,000,000 [19_doc-a, p. 5]\n"
+                "- FP173 requests USD 23,600,000 [20_doc-b, p. 6]\n"
+                "- FP172 requests USD 21,128,000 [21_doc-c, p. 7]\n")
+    uncited = [c for c in verify.extract_claims(trailing) if not c.cited]
+    assert len(uncited) == 2, [c.text for c in uncited]
+    assert not [c for c in verify.extract_claims(per_item) if not c.cited]
+
+
+def test_the_hedge_wording_the_prompt_asks_for_is_glue_not_a_claim():
+    """The cite-or-hedge rule only helps if the hedge it dictates leaves the
+    denominator: `verify.claim_kind` must read it as glue. Pinned for both
+    languages, since the same rules ship in French answers."""
+    for hedge in ("The retrieved excerpts do not state FP151's co-financing.",
+                  "Les extraits ne mentionnent pas le cofinancement du FP151.",
+                  "Retrieval did not surface a figure for FP151."):
+        assert verify.claim_kind(hedge) is None, hedge
+
+
+def test_every_bracket_form_the_prompt_dictates_parses_to_a_pointer():
+    """Each example the rules print must survive `verify.parse_citations` as a
+    document-bearing pointer. A page with no id ('[p. 5]') parses 'malformed'
+    and `verify._scopes` reports it as never-retrieved, so no rule may ever
+    teach the page-only form — which is why the page-uncertain fallback in
+    CORE drops the PAGE and keeps the id, never the other way round."""
+    forms = ["[01_gcf-b42-02-add17, p. 5]",       # CORE, the sentence form
+             "[12_doc, p. 5]",                    # REGISTRY, page from a note
+             "[12_doc, cover pages]",             # REGISTRY, page-less (ruling 5)
+             "[19_a, p. 5; 20_b, p. 6]"]          # a chained two-document bracket
+    for form in forms:
+        cits = verify.parse_citations(form)
+        assert cits, form
+        for c in cits:
+            assert c.doc, (form, c)
+            assert c.kind in ("page", "cover", "doc"), (form, c.kind)
+    assert [c.page for c in verify.parse_citations(forms[-1])] == [5, 6], \
+        "a page belongs to the nearest preceding id, not the bracket's first"
