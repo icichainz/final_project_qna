@@ -21,6 +21,7 @@ own sentence in CORE.
 import pytest
 
 from gcf_qna.app import prompts
+from gcf_qna.app.chainlit_app import _invalid_citations, _note_pages
 from gcf_qna.app.prompts import (CHAT_CORE, COMPARISON_BLOCK, CORE,
                                  MATRIX_BLOCK, REGISTRY_BLOCK, SYSTEM_PROMPT,
                                  assemble, assemble_chat)
@@ -92,6 +93,22 @@ def test_every_answer_variant_keeps_the_page_prohibitions(kw):
     assert "present both values with their pages" in p
 
 
+@pytest.mark.parametrize("kw", VARIANTS)
+def test_never_guess_a_page_outranks_the_cite_at_the_sentence_rule(kw):
+    """Release-3 measured the two rules colliding and the weaker one winning:
+    'every sentence carries its page' is stated once per answer and pushed on
+    every line, while 'cite the id alone when the page is not certain' was a
+    subordinate clause. Two comparison turns cited pages that the harness gate
+    had never retrieved ('[124_gcf-b27-02-add11, p. 3]'). The fix is a
+    PRECEDENCE, not another prohibition, so the precedence is what is pinned —
+    and it must be fact-general: the earlier wording read as money-only."""
+    p = assemble(**kw)
+    assert "OUTRANKS" in p
+    assert "cite-at-the-sentence rule" in p
+    assert "for ANY fact" in p              # not just figures
+    assert "cite the document id alone rather than guess one" in p
+
+
 def test_the_bracket_format_is_language_independent():
     """The same rules in French; only the prose language changes."""
     fr = assemble(lang="French")
@@ -119,6 +136,37 @@ def test_registry_citation_rule_ships_only_with_the_registry_note():
     assert REGISTRY_BLOCK in p
     for kw in ({}, {"year": True}, {"matrix": True}, {"comparison": True}):
         assert "cover pages]" not in assemble(**kw)
+
+
+def test_the_registry_fallback_covers_facts_that_are_not_money():
+    """`registry._fmt` prints a page beside FIGURES only ('18.5 M USD (p.5,
+    A.8)'); entity, countries and title arrive page-less on the same line. The
+    old fallback said 'with no page beside the FIGURE' and the model read the
+    scope literally: asked which accredited entity two proposals use, it
+    invented p.3 for both rather than fall back to the line's own label.
+    The fallback is pinned as covering EVERY fact the line states."""
+    assert "provenance for EVERY fact" in REGISTRY_BLOCK
+    assert "entity, countries, title, figures alike" in REGISTRY_BLOCK
+    # the page-less arm, and the fact kinds that actually reach it
+    assert "a fact with NO page beside it" in REGISTRY_BLOCK
+    assert "country and title normally have none" in REGISTRY_BLOCK
+    assert "[12_doc, cover pages]" in REGISTRY_BLOCK
+    # and the money-only scope is gone, not merely supplemented
+    assert "beside the figure" not in REGISTRY_BLOCK
+
+
+def test_the_registry_line_outranks_another_notes_page():
+    """Both notes print provenance for the same cell, and they disagree: the
+    evidence matrix prints the accredited entity at '(p.3, rule A.1.5)' while
+    the registry line prints it page-less under '[124_..., cover pages]'.
+    `chainlit_app._note_pages` only credits a page whose line also names its
+    document, which no matrix row does — so the matrix page is uncitable and
+    the rules have to say which note wins, at BOTH sites."""
+    assert "outranks any" in REGISTRY_BLOCK
+    assert "page another note prints for it" in REGISTRY_BLOCK
+    assert "a Registry line for that fact wins" in MATRIX_BLOCK
+    # the deference is inert on a turn that ships no registry note
+    assert "outranks any" not in assemble(matrix=True)
 
 
 def test_matrix_citation_rule_ships_only_with_the_matrix():
@@ -169,8 +217,11 @@ def test_conductor_prompt_is_untouched_by_the_citation_pass():
 
 # --- the length budget ------------------------------------------------------
 
-#: The fully-assembled prompt is 4816 characters at this commit (CORE +
+#: The fully-assembled prompt is 4932 characters at this commit (CORE +
 #: comparison + matrix + year + registry + an explicit language directive).
+#: It was 4816 before the page-fallback pass; that pass added 338 characters
+#: of new rule and paid 222 of them back by tightening eleven existing
+#: sentences, which is the trade this budget exists to force.
 #:
 #: WHY A BUDGET AT ALL: this module's own docstring records the measurement
 #: that the answer model DROPS PROCEDURAL RULES IN LONG PROMPTS — three times,
@@ -218,6 +269,46 @@ def test_the_list_rule_is_what_the_verifier_actually_requires():
     uncited = [c for c in verify.extract_claims(trailing) if not c.cited]
     assert len(uncited) == 2, [c.text for c in uncited]
     assert not [c for c in verify.extract_claims(per_item) if not c.cited]
+
+
+#: The FP151/FP152 registry note as `registry._fmt` prints it: the money
+#: carries '(p.5, A.8)', the accredited entity carries nothing.
+_REG151 = ('Registry — FP151: "TA Facility for the Global Subnational Climate '
+           'Fund"; accredited entity: International Union for Conservation of '
+           'Nature and Natural Resources (IUCN); GCF funding requested: 18.5 M '
+           'USD (p.5, A.8) [124_gcf-b27-02-add11, cover pages]')
+
+
+class _Hit:
+    def __init__(self, doc, page):
+        self.doc_id, self.page = doc, page
+
+
+def test_the_page_less_fallback_is_what_the_harness_gate_requires():
+    """Not a prompt assertion — a demonstration, against the frozen gate, that
+    the fallback the rules dictate is the form that survives it. The evidence
+    is the shape release-3 actually shipped for `cmp-fp151-fp152-entity`: the
+    registry line states the entity with no page, and retrieval returned pages
+    2, 4, 5, 143, 150 of that document — never 3. `_invalid_citations` flags
+    the page the answer invented and passes the '[doc, cover pages]' form the
+    fallback dictates, which `verify.parse_citations` also reads as a
+    document-bearing pointer ('cover'), not as a malformed page-only bracket."""
+    doc = "124_gcf-b27-02-add11"
+    hits = [_Hit(doc, p) for p in (2, 4, 5, 143, 150)]
+    pages = _note_pages([_REG151])
+    assert (doc, 5) in pages and (doc, 3) not in pages   # only the money page
+
+    invented = f"The accredited entity is IUCN. [{doc}, p. 3]"
+    assert _invalid_citations(invented, hits, pages) == [f"{doc}… p.3"]
+
+    dictated = f"The accredited entity is IUCN. [{doc}, cover pages]"
+    assert _invalid_citations(dictated, hits, pages) == []
+    (c,) = verify.parse_citations(dictated)
+    assert c.doc.startswith(doc) and c.kind == "cover" and c.page is None
+
+    # the money arm of the same line still cites its printed page, and passes
+    money = f"FP151 requests **USD 18.5 million** [{doc}, p. 5]"
+    assert _invalid_citations(money, hits, pages) == []
 
 
 def test_the_hedge_wording_the_prompt_asks_for_is_glue_not_a_claim():
