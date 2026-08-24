@@ -192,6 +192,22 @@ def test_behavior_ok(expected, answer, want):
     ("The figures disagree between p. 8 and p. 40.", True),
     # a value pair with no keyword is not a conflict claim either
     ("FP274 requests 49,751,264 USD of 100,194,751 USD total financing.", False),
+    # keyword + the per-sentence-citation shape: the SAME document cited with
+    # two different pages on adjacent bullets (release-3's conflict style)
+    ("The figures are inconsistent within the document.\n"
+     "- **49,751,264** under A.10. [02_gcf-b42-02-add16-funding-proposal, p. 8]\n"
+     "- **40,751,254** in C.1(a). [02_gcf-b42-02-add16-funding-proposal, p. 40]",
+     True),
+    # the same bulleted style across TWO documents is an ordinary comparison,
+    # keyword or not
+    ("The proposals differ in what they request.\n"
+     "- FP151 requests one amount. [124_gcf-b27-02-add11, p. 5]\n"
+     "- FP152 requests another. [123_gcf-b27-02-add12, p. 6]", False),
+    # French counts and adjectives: 'trois valeurs différentes' is a conflict
+    # keyword (measured: fr-fp274-conflict reported three figures and failed)
+    ("Le montant apparaît avec trois valeurs différentes.\n"
+     "- 40,511,264 USD. [02_gcf-b42-02-add16, p. 7]\n"
+     "- 49,751,264 USD. [02_gcf-b42-02-add16, p. 8]", True),
 ])
 def test_conflict_needs_keyword_and_shape(answer, want):
     assert ev.looks_conflicted(answer) is want
@@ -205,6 +221,36 @@ def test_conflict_shape_helpers():
         "the same page twice is not a page-vs-page contradiction"
     far = "p. 8 " + "x" * 200 + " p. 40"
     assert not ev._two_pages_close_together(far)
+
+
+def test_same_doc_two_pages_needs_same_doc_different_pages_nearby():
+    a, b = "12_doc-one", "34_doc-two"
+    two = f"[{a}, p. 8]\n[{a}, p. 40]"
+    assert ev._same_doc_two_pages_nearby(two)
+    assert not ev._same_doc_two_pages_nearby(f"[{a}, p. 8]\n[{a}, p. 8]"), \
+        "the same page twice is not a contradiction"
+    assert not ev._same_doc_two_pages_nearby(f"[{a}, p. 8]\n[{b}, p. 40]"), \
+        "two documents on different pages is a comparison"
+    apart = f"[{a}, p. 8]" + "\n" * (ev._SAME_DOC_LINES + 1) + f"[{a}, p. 40]"
+    assert not ev._same_doc_two_pages_nearby(apart)
+
+
+def test_score_answer_accepts_pages_a_note_prints(monkeypatch):
+    """The registry note prints its provenance ('(p.7, A.8)'); an answer
+    citing that page is grounded even when retrieval never returned p.7 —
+    scoring must mirror the app's checker, notes included."""
+    case = {"expect": {"behavior": "answer", "must_contain": [],
+                       "must_not_contain": []}, "lang": "en"}
+    doc = "02_gcf-b42-02-add16-funding-proposal"
+    answer = f"The registry states 40,511,264 USD. [{doc}, p. 7]"
+    hits = [Hit(doc_id=doc, page=8, text="x", score=1.0)]
+    note = (f"Registry — FP274: GCF funding requested: 40,511,264 USD "
+            f"(p.7, A.8) [{doc}, cover pages]")
+    with_note = ev.score_answer(case, answer, hits, [note])
+    assert with_note["citations"] and not with_note["bad_citations"]
+    without = ev.score_answer(case, answer, hits)
+    assert not without["citations"], \
+        "without the note the page is unheld and must still be flagged"
 
 
 def test_language_ok_uses_the_app_heuristic():

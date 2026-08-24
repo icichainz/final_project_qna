@@ -264,7 +264,8 @@ _ABSTAIN_RE = re.compile(
 _CONFLICT_RE = re.compile(
     r"conflict|discrepan|inconsisten|contradict|mismatch|diverg|"
     r"differ(?:s|ent)?\b|two different|whereas|while (?:page|p\.)|does not match|"
-    r"disagree|contradictoire|incohéren|diffère|deux (?:montants|chiffres|valeurs)",
+    r"disagree|contradictoire|incohéren|diffère|différent|"
+    r"(?:deux|trois|plusieurs) (?:montants|chiffres|valeurs|figures)",
     re.I)
 
 # A conflict claim has a shape, not just a keyword: two different values in one
@@ -274,6 +275,7 @@ _CONFLICT_RE = re.compile(
 _VALUE_RE = re.compile(r"\d{1,3}(?:[.,\s]\d{3})+|\d+[.,]\d+|\d{4,}")
 _PAGE_RE = re.compile(r"\bpp?\.?\s*(\d{1,3})\b", re.I)
 _PAGE_WINDOW = 80
+_SAME_DOC_LINES = 4
 
 
 def _two_values_in_a_sentence(answer: str) -> bool:
@@ -284,11 +286,39 @@ def _two_values_in_a_sentence(answer: str) -> bool:
     return False
 
 
+def _same_doc_two_pages_nearby(answer: str) -> bool:
+    """Third conflict shape, for the per-sentence citation style: the SAME
+    document cited with two DIFFERENT pages within a few adjacent lines.
+    The cite-at-the-sentence prompt puts each conflicting figure on its own
+    bullet with its own bracket, so the two values no longer share a sentence
+    and the ~46-char doc ids push the page marks past _PAGE_WINDOW — the old
+    two shapes read a clearer conflict report as no report at all (measured:
+    release-3's five conflict answers all report both figures, all failed).
+    Requiring the same document keeps an ordinary two-document comparison
+    from matching."""
+    marks = []
+    for i, line in enumerate((answer or "").splitlines()):
+        for m in re.finditer(
+                r"([0-9]{1,3}_[\w.\-]+)[^\][]*?\bpp?\.?\s*(\d{1,3})\b", line):
+            marks.append((i, m.group(1), int(m.group(2))))
+    for i, (l1, d1, p1) in enumerate(marks):
+        for l2, d2, p2 in marks[i + 1:]:
+            if l2 - l1 > _SAME_DOC_LINES:
+                continue
+            if d1 == d2 and p1 != p2:
+                return True
+    return False
+
+
 def _two_pages_close_together(answer: str) -> bool:
-    """Two DIFFERENT page numbers within _PAGE_WINDOW characters. Requiring
-    them to differ keeps an ordinary two-document citation ('… p. 5] and …
-    p. 5]') from reading as a page-vs-page contradiction."""
-    marks = [(m.start(), m.group(1)) for m in _PAGE_RE.finditer(answer or "")]
+    """Two DIFFERENT page numbers within _PAGE_WINDOW characters, in PROSE.
+    Requiring them to differ keeps an ordinary two-document citation
+    ('… p. 5] and … p. 5]') from reading as a page-vs-page contradiction —
+    and pages inside doc-id brackets are excluded entirely: they belong to
+    citations, whose meaning `_same_doc_two_pages_nearby` judges (a compact
+    cross-document citation pair is a comparison, not a conflict)."""
+    prose = re.sub(r"\[[0-9]{1,3}_[^\]]*\]", " ", answer or "")
+    marks = [(m.start(), m.group(1)) for m in _PAGE_RE.finditer(prose)]
     for i, (pos, page) in enumerate(marks):
         for pos2, page2 in marks[i + 1:]:
             if pos2 - pos > _PAGE_WINDOW:
@@ -305,7 +335,9 @@ def looks_abstained(answer: str) -> bool:
 def looks_conflicted(answer: str) -> bool:
     if not _CONFLICT_RE.search(answer or ""):
         return False
-    return _two_values_in_a_sentence(answer) or _two_pages_close_together(answer)
+    return (_two_values_in_a_sentence(answer)
+            or _two_pages_close_together(answer)
+            or _same_doc_two_pages_nearby(answer))
 
 
 def behavior_ok(expected: str, answer: str) -> bool:
@@ -384,12 +416,18 @@ def retrieval_score(r: dict) -> float:
 # ---------------------------------------------------------------------------
 # answer scoring
 # ---------------------------------------------------------------------------
-def score_answer(case: dict, answer: str, hits: list) -> dict:
+def score_answer(case: dict, answer: str, hits: list, notes=None) -> dict:
     from gcf_qna.app import chainlit_app as app
     e = case["expect"]
     contains = {p: matches(p, answer) for p in e["must_contain"]}
     forbidden = {p: (not matches(p, answer)) for p in e["must_not_contain"]}
-    bad_cites = app._invalid_citations(answer or "", hits) if hits else []
+    # The app passes _note_pages(notes) so a page a computed note prints
+    # ('18.5 M USD (p.5, A.8)') is a legal citation even when retrieval never
+    # returned that page. Scoring without it flagged answers for citing the
+    # registry's own provenance (measured: 8 of release-3's 13 regressions).
+    note_pages = app._note_pages(notes) if notes else frozenset()
+    bad_cites = (app._invalid_citations(answer or "", hits, note_pages)
+                 if hits else [])
     checks = {
         "behavior": behavior_ok(e["behavior"], answer),
         "must_contain": contains,
@@ -1900,7 +1938,9 @@ def _run_case(pipe, client, args, case: dict) -> dict:
         "answer": answer,
         "raw_answer": raw_answer,
         "answer_source": answer_source,
-        "checks": score_answer(case, answer, out["hits"]),
+        "checks": score_answer(case, answer, out["hits"],
+                               [notes.get("registry"), notes.get("year"),
+                                notes.get("matrix")]),
         "model": config.CHAT_MODEL,
         "usage": usage,
         "fields": _safe(score_fields, case, answer),
