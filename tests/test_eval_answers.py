@@ -45,7 +45,11 @@ def _case(**kw):
 
 # ------------------------------------------------------------ fixture file --
 def test_fixture_parses_and_is_well_formed(cases):
-    assert 50 <= len(cases) <= 80, "the plan calls for 50-80 answer cases"
+    # The plan's original 50-80 band was outgrown deliberately on
+    # 2026-08-25: +12 registry-backed and +8 text-derived cases (new
+    # conflict docs, merge traps, follow-up note wiring, corpus
+    # aggregates), every expectation derived and recorded in its notes.
+    assert 50 <= len(cases) <= 120, "the answer gold set: 50-120 cases"
     assert len({c["id"] for c in cases}) == len(cases)
     for c in cases:
         assert c["expect"]["behavior"] in {"answer", "conflict", "abstain"}
