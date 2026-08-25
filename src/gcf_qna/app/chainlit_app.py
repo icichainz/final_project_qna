@@ -326,6 +326,45 @@ def _board_range_note(question: str):
             f"B.{hi} ({BOARD_YEARS[hi]}) completely. State this definitively.")
 
 
+_COVERAGE_ASK_RE = re.compile(
+    r"which board meetings|what board meetings|which years|what years|"
+    r"how many (?:[\w-]+ ){0,2}(?:proposals|documents)|"
+    r"combien de (?:[\w-]+ ){0,2}(?:propositions|documents)|"
+    r"quelles (?:r[ée]unions|ann[ée]es)", re.I)
+_CORPUS_TOKEN_RE = re.compile(r"corpus|collection|dataset|base documentaire",
+                              re.I)
+
+
+def _corpus_coverage_note(question: str):
+    """Corpus-coverage questions name no year and no board code, so neither
+    _year_assist nor _board_range_note fires — and the excerpts rightly
+    cannot answer a corpus-wide question (the prompt forbids stating
+    corpus-wide facts from a retrieved sample). The registry can: it is
+    complete. Fires only when the question asks about the corpus's OWN
+    coverage or size; a year in the question hands off to the year note and
+    a board code to the board paths, so no turn gets two authorities.
+    (Measured: release-4 agg-corpus-boards answered with portfolio-company
+    'board meetings' found in excerpts, 0.43, because no note fired.)"""
+    q = question or ""
+    if not (_CORPUS_TOKEN_RE.search(q) and _COVERAGE_ASK_RE.search(q)):
+        return None
+    if re.search(r"\b(?:19|20)\d\d\b", q):
+        return None
+    if re.search(r"\bb\.?\s?\d{1,2}\b", q, re.I):
+        return None
+    lo, hi = min(BOARD_YEARS), max(BOARD_YEARS)
+    counts = {y: len([r for r in registry.by_year(y) if r.get("fp")])
+              for y in sorted(set(BOARD_YEARS.values()))}
+    total = sum(counts.values())
+    per_year = "; ".join(f"{y}: {n}" for y, n in sorted(counts.items()))
+    return ("Note (computed from the corpus registry, which is complete — "
+            "authoritative, unlike the excerpts): this corpus covers Green "
+            f"Climate Fund board meetings B.{lo} ({BOARD_YEARS[lo]}) through "
+            f"B.{hi} ({BOARD_YEARS[hi]}) completely — {total} funding-proposal "
+            f"documents, one per proposal. Proposals per year: {per_year}. "
+            "Answer corpus-coverage questions from this note.")
+
+
 def _fp_of(text: str):
     """First FP number in a string ('...package-fp214' -> '214').
 
@@ -1333,6 +1372,10 @@ async def main(message: cl.Message):
     board_note = _board_range_note(message.content)
     if board_note:
         year_note = f"{year_note} {board_note}" if year_note else board_note
+    coverage_note = _corpus_coverage_note(message.content)
+    if coverage_note:
+        year_note = (f"{year_note} {coverage_note}" if year_note
+                     else coverage_note)
     context = "\n\n".join(
         f"[{_doc_label(h.doc_id, h.page)}] (score {h.score:.2f})\n{h.text}"
         for h in hits)

@@ -1317,6 +1317,11 @@ class Pipeline:
         if board_note:
             year_note = f"{year_note} {board_note}" if year_note else board_note
 
+        coverage_note = app._corpus_coverage_note(question)
+        if coverage_note:
+            year_note = (f"{year_note} {coverage_note}" if year_note
+                         else coverage_note)
+
         context = "\n\n".join(
             f"[{app._doc_label(h.doc_id, h.page)}] (score {h.score:.2f})\n{h.text}"
             for h in hits)
