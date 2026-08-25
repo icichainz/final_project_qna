@@ -97,17 +97,19 @@ footer{margin-top:4.5rem;padding-top:1.5rem;border-top:1px solid var(--rule-stro
 <header class="masthead">
   <p class="eyebrow">final_project_qna · engineering report</p>
   <h1>GCF Q&amp;A Build Report</h1>
-  <p class="lede">How a directory of 46 loose files, six forked apps, and a crashing extraction script became a grounded question-answering system over 41,550 pages of Green Climate Fund proposals — with page-cited answers, highlighted evidence images, per-document comparative retrieval, and a claim verifier calibrated against blind human adjudication. Every number in this report was measured, not estimated, and every rate is printed with its denominator.</p>
+  <p class="lede">How a directory of 46 loose files, six forked apps, and a crashing extraction script became a grounded question-answering system over 41,550 pages of Green Climate Fund proposals — with page-cited answers, highlighted evidence images, per-document comparative retrieval, a claim verifier calibrated against blind human adjudication, and an 89-case gold set the system was never allowed to see before it was measured against it. Every number in this report was measured, not estimated, and every rate is printed with its denominator.</p>
   <div class="byline">
-    <span><b>Period</b> 14–24 Aug 2026</span>
+    <span><b>Period</b> 14–25 Aug 2026</span>
     <span><b>Corpus</b> 273 PDFs · 41,550 pages</span>
-    <span><b>Result</b> 123 commits · 1,001 tests · live at fp-gcf.ssa.tg</span>
+    <span><b>Result</b> 137 commits · 1,073 passing tests · live at fp-gcf.ssa.tg</span>
   </div>
   <div class="metrics">
-    <div class="metric"><span class="k">Citation completeness</span><span class="v">120/126</span><span class="n">95.2% at release-3 vs a ≥95% gate — PASS (was 144/165 = 87.3%)</span></div>
-    <div class="metric"><span class="k">Gold retrieval</span><span class="v">30/30</span><span class="n">recall@5, MRR 1.00 — held through every change</span></div>
-    <div class="metric"><span class="k">Verifier vs blind gold</span><span class="v">59 → 15</span><span class="n">false flags on the adjudicated gold, before → after calibration</span></div>
-    <div class="metric"><span class="k">Answer repair</span><span class="v">killed</span><span class="n">passed every metric; 3 of 5 adopted rewrites deleted verified evidence</span></div>
+    <div class="metric"><span class="k">Claim support</span><span class="v">165/169</span><span class="n">97.6% at release-6 over 89 cases vs a ≥95% gate whose integer threshold is 161 — PASS. release-1 was 94/165 = 57.0%</span></div>
+    <div class="metric"><span class="k">Citation completeness</span><span class="v">165/169</span><span class="n">the claim cites evidence that entails it — same population, same denominator</span></div>
+    <div class="metric"><span class="k">Citation presence</span><span class="v">169/169</span><span class="n">100% — every extracted claim carries a bracket</span></div>
+    <div class="metric"><span class="k">Groundedness</span><span class="v">159/169</span><span class="n">94.1% — some held evidence entails the claim, cited or not</span></div>
+    <div class="metric"><span class="k">Behaviour score</span><span class="v">0.975</span><span class="n">over 89 gold cases; field coverage 71/71; document recall@5 still 30/30 on gold-30</span></div>
+    <div class="metric"><span class="k">Conflict class</span><span class="v">1.00</span><span class="n">7 cases over 6 documents, three of them never tested before release-6</span></div>
   </div>
 </header>
 
@@ -398,7 +400,7 @@ footer{margin-top:4.5rem;padding-top:1.5rem;border-top:1px solid var(--rule-stro
         <text x="470" y="118" stroke="none" fill="currentColor" font-size="10">scoped EN field queries</text>
         <rect x="590" y="140" width="160" height="56" rx="6"/>
         <text x="670" y="162" stroke="none" fill="currentColor" text-anchor="middle">hybrid retrieval</text>
-        <text x="670" y="179" stroke="none" fill="currentColor" text-anchor="middle" opacity=".65">section-aware · 65 ms</text>
+        <text x="670" y="179" stroke="none" fill="currentColor" text-anchor="middle" opacity=".65">section-aware · 65 ms · RERANK</text>
         <!-- answer -->
         <line x1="670" y1="196" x2="670" y2="234" marker-end="url(#ca)"/>
         <rect x="590" y="234" width="160" height="56" rx="6"/>
@@ -423,10 +425,10 @@ footer{margin-top:4.5rem;padding-top:1.5rem;border-top:1px solid var(--rule-stro
       <tbody>
         <tr><td>Document recall@5 (30-question gold set)</td><td class="num">30/30</td><td class="num">30/30, MRR 1.00 — never regressed</td></tr>
         <tr><td>Answer-level recall@5, retrieval-only baseline (62 labelled cases, 48 scored)</td><td class="num">88%</td><td class="num"><strong>96%</strong></td></tr>
-        <tr><td>Document recall@5 on the 66-case answer suite (52 scorable)</td><td class="num">47/52</td><td class="num"><strong>51/52</strong> — the conductor's contribution</td></tr>
-        <tr><td>Evidence-page hit (release record)</td><td class="num">20/24</td><td class="num"><strong>21/24</strong> (retrieval-only baseline: 94%)</td></tr>
+        <tr><td>Document recall@5 on the answer suite (scorable cases)</td><td class="num">47/52</td><td class="num"><strong>51/52</strong> at release-3 — the conductor's contribution; <strong>66/67</strong> on the 89-case suite</td></tr>
+        <tr><td>Evidence-page hit (release record)</td><td class="num">20/24</td><td class="num"><strong>21/24</strong> at release-3; <strong>24/36</strong> at release-6, which added 12 harder page targets — see Act XIV</td></tr>
         <tr><td>Identifier conflict detection</td><td class="num">—</td><td class="num">210 real in-document conflicts, in 120 of 273 documents, exposed with pages</td></tr>
-        <tr><td>Citation completeness (claim cites evidence that entails it)</td><td class="num">page presence only</td><td class="num"><strong>120/126</strong> = 95.2%, gate PASS</td></tr>
+        <tr><td>Citation completeness (claim cites evidence that entails it)</td><td class="num">page presence only</td><td class="num"><strong>165/169</strong> = 97.6% at release-6, gate PASS (120/126 = 95.2% at release-3)</td></tr>
         <tr><td>Retrieval latency</td><td class="num">139 ms</td><td class="num"><strong>65 ms</strong> (FAISS ID-selector scoped search)</td></tr>
       </tbody>
     </table>
@@ -464,7 +466,7 @@ footer{margin-top:4.5rem;padding-top:1.5rem;border-top:1px solid var(--rule-stro
         <tr><td class="num">1</td><td>Blind adjudication of all 71 recorded failures against human gold</td><td>The verifier was wrong on 59 of 71</td></tr>
         <tr><td class="num">2</td><td>Verifier calibration, hunk by hunk, each mapped to an adjudicated anchor</td><td>Gold-arm precision 16.9% → 30.8%; six relaxations deleted rather than patched</td></tr>
         <tr><td class="num">3</td><td>Production-parity release harness (planner, conductor, history isolation, guard skipping, judge)</td><td>Parity <code>full</code>; run-to-run spread published <em>first</em>, so most per-gap movements were reported indeterminate rather than passed</td></tr>
-        <tr><td class="num">4</td><td>Offline repair A/B over identical recorded answers</td><td><span class="chip crit">fail</span> repair is not a fixed quantity — see Act IX</td></tr>
+        <tr><td class="num">4</td><td>Offline repair A/B over identical recorded answers</td><td><span class="chip crit">fail</span> repair is not a fixed quantity — see Act X</td></tr>
         <tr><td class="num">5</td><td>Live canary, then the flip</td><td><span class="chip crit">cancelled</span> the adoption path was deleted instead of enabled</td></tr>
       </tbody>
     </table>
@@ -494,7 +496,7 @@ footer{margin-top:4.5rem;padding-top:1.5rem;border-top:1px solid var(--rule-stro
     <table>
       <thead><tr><th>Arm</th><th>Rows</th><th>What it pins</th><th>At HEAD</th></tr></thead>
       <tbody>
-        <tr><td><code>gold</code></td><td class="num">57</td><td>The adjudicated rows. <code>verifier_correct</code> is the authority</td><td class="num">TP 10 · <strong>FP 15</strong> · recall 100% · P 40.0%</td></tr>
+        <tr><td><code>gold</code></td><td class="num">57</td><td>The adjudicated rows. <code>verifier_correct</code> is the authority</td><td class="num">TP <strong>9</strong> + 1 ratified supersession · <strong>FP 15</strong> · P 37.5%<br><span style="opacity:.7">was TP 10 · P 40.0% before ruling 8 (Act XI)</span></td></tr>
         <tr><td><code>held-correct</code></td><td class="num">94</td><td>No calibration change may start flagging a claim the recorded release passed</td><td class="num">FP <strong>0</strong></td></tr>
         <tr><td><code>fabricated</code></td><td class="num">116</td><td>Claims mutated until false against the held evidence — the false-negative region</td><td class="num">TP 75 · FP 0 · recall 64.7%</td></tr>
         <tr><td><code>repaired</code></td><td class="num">14</td><td>Flagged claims mutated until <em>true</em> — where over-strictness has to show up</td><td class="num">FP 4</td></tr>
@@ -621,9 +623,9 @@ footer{margin-top:4.5rem;padding-top:1.5rem;border-top:1px solid var(--rule-stro
 <!-- ================================================================ -->
 <section>
   <div class="sec-head">
-    <p class="eyebrow">Act XI · release</p>
-    <h2>Citations at the sentence, and the final numbers</h2>
-    <p>With the verifier calibrated and frozen, one acceptance gate was still red — and three independent audits agreed the defect was in how answers were written, not in how they were graded.</p>
+    <p class="eyebrow">Act XI · the mid-point</p>
+    <h2>Citations at the sentence — and what the green gate was hiding</h2>
+    <p>With the verifier calibrated and frozen, one acceptance gate was still red, and three independent audits agreed the defect was in how answers were written, not in how they were graded. <code>release-3</code> turned it green. That reads like an ending; it was the middle. Five commits followed, two of them written against defects the green gate had concealed, and one of them settling a question no test was allowed to settle.</p>
   </div>
 
   <div class="prose">
@@ -632,7 +634,7 @@ footer{margin-top:4.5rem;padding-top:1.5rem;border-top:1px solid var(--rule-stro
   </div>
 
   <div class="metrics" style="margin-top:1.8rem">
-    <div class="metric"><span class="k">Citation completeness</span><span class="v">120/126</span><span class="n">95.2% vs a ≥95% gate whose integer threshold is exactly 120 — PASS</span></div>
+    <div class="metric"><span class="k">Citation completeness</span><span class="v">120/126</span><span class="n">95.2% at <strong>release-3</strong> vs a ≥95% gate whose integer threshold is exactly 120 — PASS. Every figure in this strip is release-3's; the campaign's final numbers are in the masthead and Act XIV</span></div>
     <div class="metric"><span class="k">Citation presence</span><span class="v">126/126</span><span class="n">every extracted claim carries a bracket (was 90.1% on the comparable subset)</span></div>
     <div class="metric"><span class="k">Groundedness</span><span class="v">120/126</span><span class="n">some held evidence entails the claim, cited or not</span></div>
     <div class="metric"><span class="k">Field coverage</span><span class="v">55/56</span><span class="n">every requested document×field cell addressed or marked missing</span></div>
@@ -645,34 +647,308 @@ footer{margin-top:4.5rem;padding-top:1.5rem;border-top:1px solid var(--rule-stro
 
   <div class="scroll">
     <table>
-      <thead><tr><th>Acceptance dashboard (from the original plan)</th><th>At the plan</th><th>Release gate</th><th>Final</th><th></th></tr></thead>
+      <thead><tr><th>Acceptance dashboard (from the original plan)</th><th>At the plan</th><th>Release gate</th><th>At release-3</th><th>At release-6 (Act XIV)</th><th></th></tr></thead>
       <tbody>
-        <tr><td>Document recall@5</td><td class="num">100% / 30 questions</td><td>do not regress</td><td class="num">30/30, MRR 1.00</td><td><span class="chip fixed">pass</span></td></tr>
-        <tr><td>Evidence-page recall</td><td class="num">not measured</td><td>label first; improve against baseline</td><td class="num">21/24 (release-1 recorded 20/24)</td><td><span class="chip fixed">pass</span></td></tr>
-        <tr><td>Required-field coverage</td><td class="num">not measured</td><td>≥95% on labelled comparisons</td><td class="num">55/56 = 98.2%</td><td><span class="chip fixed">pass</span></td></tr>
-        <tr><td>Identifier conflict detection</td><td class="num">unit-tested</td><td>100% on conflict fixtures</td><td class="num">4/4 fixtures; 210 conflicting entries in 120 documents surfaced with pages</td><td><span class="chip fixed">pass</span></td></tr>
-        <tr><td>Unknown identifier abstention</td><td class="num">implemented</td><td>100% on closed-world fixtures</td><td class="num">4/4 identifier fixtures (FP999, B.42/add99, B.44, year 2014)</td><td><span class="chip fixed">pass</span></td></tr>
-        <tr><td>Numerical / currency correctness</td><td class="num">not measured</td><td>100% on deterministic fixtures</td><td class="num">2/2 cross-currency comparisons refuse to rank</td><td><span class="chip fixed">pass</span></td></tr>
-        <tr><td>Citation precision</td><td class="num">page presence only</td><td>≥95% claim support</td><td class="num">120/126 = 95.2% (threshold 120)</td><td><span class="chip fixed">pass</span></td></tr>
-        <tr><td>Retrieval latency</td><td class="num">139 ms average hybrid</td><td>track; optimize after correctness</td><td class="num">65 ms scoped hybrid; end-to-end p50 3.93 s / p95 8.64 s</td><td><span class="chip fixed">pass</span></td></tr>
+        <tr><td>Document recall@5</td><td class="num">100% / 30 questions</td><td>do not regress</td><td class="num">30/30, MRR 1.00</td><td class="num">30/30 on gold-30; 66/67 scorable on the 89-case suite</td><td><span class="chip fixed">pass</span></td></tr>
+        <tr><td>Evidence-page recall</td><td class="num">not measured</td><td>label first; improve against baseline</td><td class="num">21/24 (release-1 recorded 20/24)</td><td class="num">24/36 — 20/24 on the inherited targets, <strong>4/12</strong> on the twelve the new conflict cases added</td><td><span class="chip feat">open</span></td></tr>
+        <tr><td>Required-field coverage</td><td class="num">not measured</td><td>≥95% on labelled comparisons</td><td class="num">55/56 = 98.2%</td><td class="num">71/71 = 100%</td><td><span class="chip fixed">pass</span></td></tr>
+        <tr><td>Identifier conflict detection</td><td class="num">unit-tested</td><td>100% on conflict fixtures</td><td class="num">4/4 fixtures; 210 conflicting entries in 120 documents surfaced with pages</td><td class="num">7/7 live cases = 1.00, over 6 documents, 3 of them never tested before</td><td><span class="chip fixed">pass</span></td></tr>
+        <tr><td>Unknown identifier abstention</td><td class="num">implemented</td><td>100% on closed-world fixtures</td><td class="num">4/4 identifier fixtures (FP999, B.42/add99, B.44, year 2014)</td><td class="num">6/6 — B.45 and year 2026 added, both 1.00</td><td><span class="chip fixed">pass</span></td></tr>
+        <tr><td>Numerical / currency correctness</td><td class="num">not measured</td><td>100% on deterministic fixtures</td><td class="num">2/2 cross-currency comparisons refuse to rank</td><td class="num">2/2 — unchanged</td><td><span class="chip fixed">pass</span></td></tr>
+        <tr><td>Citation precision</td><td class="num">page presence only</td><td>≥95% claim support</td><td class="num">120/126 = 95.2% (threshold 120)</td><td class="num">165/169 = 97.6% (threshold 161)</td><td><span class="chip fixed">pass</span></td></tr>
+        <tr><td>Retrieval latency</td><td class="num">139 ms average hybrid</td><td>track; optimize after correctness</td><td class="num">65 ms scoped hybrid; end-to-end p50 3.93 s / p95 8.64 s</td><td class="num">65 ms scoped hybrid + ≈200 ms reranker; end-to-end p50 4.05 s / p95 7.96 s</td><td><span class="chip fixed">pass</span></td></tr>
       </tbody>
     </table>
   </div>
 
   <div class="prose" style="margin-top:1.4rem">
-    <p>The execution plan added gates of its own, all met: groundedness <strong>120/126</strong>; adjudication coverage 71/71 with ≥40 gold negatives, 0 unreviewed rows, and the false-positive set equal to the signed set; judge budget exhausted <strong>0/66</strong> on every release run; repair answers degraded and invented sources <strong>0 / 0</strong>; harness parity level <code>full</code> at Wave 3; run cost ≈$0.40 against a ≤$0.50 envelope; test suite <strong>1,001 tests</strong> (998 passed, 3 skipped, each skip a self-declaring staleness guard) against a 575-test floor. The canary row reads <em>cancelled</em>, for the reason in Act X.</p>
+    <p>The execution plan added gates of its own, all met at release-3: groundedness <strong>120/126</strong>; adjudication coverage 71/71 with ≥40 gold negatives, 0 unreviewed rows, and the false-positive set equal to the signed set; judge budget exhausted <strong>0/66</strong> on every release run; repair answers degraded and invented sources <strong>0 / 0</strong>; harness parity level <code>full</code> at Wave 3; run cost ≈$0.40 against a ≤$0.50 envelope; test suite <strong>1,001 tests</strong> (998 passed, 3 skipped, each skip a self-declaring staleness guard) against a 575-test floor. The canary row reads <em>cancelled</em>, for the reason in Act X.</p>
+    <p>The same gates at <code>release-6</code>, three chapters later: groundedness <strong>159/169</strong>; judge budget exhausted <strong>0/89</strong>; suite <strong>1,073 passed / 3 skipped</strong> (the last total the record states, at the gold-set merge; the two commits after it add tests without restating one); and a run cost of <strong>$0.54</strong> — over the ≤$0.50 line for the first time in the campaign. It is named as an excursion rather than smoothed: the run is 89 cases where the envelope was written for 66, and the per-case cost is unchanged at ≈$0.006 (release-3: $0.4004 over 66; release-6: $0.5361 over 89). A per-run budget that a larger gold set outgrew is a budget to restate, not a regression to hide.</p>
   </div>
 
   <div class="note crit">
-    <span class="n-k">The residue, named — 4 cases of 66, all understood</span>
-    <p><strong>Two page-guesses.</strong> <code>cmp-fp086-fp220-currency</code> and <code>cmp-fp151-fp152-entity</code> state facts whose evidence prints no page and cite an invented one — the cite-the-id-alone rule not being followed for non-money facts. <strong>One terser answer.</strong> <code>bc-b27-02-add12</code> dropped an entity the fixture expects ("Pegasus") while remaining correct in what it does say. <strong>One honest hedge.</strong> <code>fu-lang-switch</code>, a doc-tagged follow-up turn, receives no registry note and therefore hedges; the previous run asserted the entity with no in-turn evidence, which the system's own rules forbid — the notes gap is the real fix for that case, not un-hedging. Separately and unchanged since release-2: two abstention fixtures about <em>document content</em> rather than document existence (<code>abs-antarctica</code>, <code>abs-offtopic</code>) do not produce the refusal phrasing their fixture requires; the adjudication taxonomy places unhedged negatives about content outside what the record can settle, and they are tracked rather than papered over.</p>
+    <span class="n-k">The residue at release-3, named — 4 cases of 66 — and what each turned out to be</span>
+    <p><strong>Two page-guesses.</strong> <code>cmp-fp086-fp220-currency</code> and <code>cmp-fp151-fp152-entity</code> state facts whose evidence prints no page and cite an invented one — the cite-the-id-alone rule not being followed for non-money facts. <em>Neither was a guess.</em> <code>d18829e</code> found the model had obeyed the matrix block, which prints the page the gate cannot credit; <code>e371308</code> found half of the second case was a fixture regex that forbade the correct answer. <strong>One terser answer.</strong> <code>bc-b27-02-add12</code> dropped an entity the fixture expects ("Pegasus") while remaining correct in what it does say — it reads 1.00 in both release-4 arms and 0.80 in release-3, 5 and 6, so it is a sampling flapper, tracked as one. <strong>One honest hedge.</strong> <code>fu-lang-switch</code>, a doc-tagged follow-up turn, receives no registry note and therefore hedges; the previous run asserted the entity with no in-turn evidence, which the system's own rules forbid — the notes gap is the real fix for that case, not un-hedging. <code>8203913</code> closed it: 0.75 → <strong>1.00</strong>, held in all three later runs. Separately and unchanged since release-2: two abstention fixtures about <em>document content</em> rather than document existence (<code>abs-antarctica</code>, <code>abs-offtopic</code>) do not produce the refusal phrasing their fixture requires; the adjudication taxonomy places unhedged negatives about content outside what the record can settle, and they are tracked rather than papered over.</p>
+  </div>
+
+  <div class="prose" style="margin-top:2.2rem">
+    <p><strong>The wave that read a green gate as a diagnosis.</strong> Five commits followed release-3, and they are worth reading as one argument. The gate had passed at 95.2% with six failing claims and four imperfect cases, all of which had been filed once under "generation taste". Read again with the citation rules in hand, most of them were the instrument disagreeing with itself — an answer that had followed one specified rule into a gate structurally incapable of recognising it. Two commits changed prompts, one changed a fixture, one changed the verifier's notion of scope, and one changed no code at all.</p>
+  </div>
+
+  <div class="scroll">
+    <table>
+      <thead><tr><th>Commit</th><th>The defect, restated</th><th>What it did, and what pins it</th><th>Measured</th></tr></thead>
+      <tbody>
+        <tr>
+          <td class="num"><code>8203913</code></td>
+          <td>A French follow-up asked for FP173's accredited entity. The conductor resolved the reference, but the registry note keys off identifiers in the <em>question text</em> and a French follow-up names none — <code>notes_used</code> came back empty, and the model, correctly refusing to assert what it could not cite, hedged on a fact the registry states plainly.</td>
+          <td><code>_extend_registry_note</code> appends registry lines for the documents this turn's <em>resolved</em> items are about: surviving doc tags plus identifiers in the resolved sub-queries. It reuses <code>registry_note</code>'s own formatters so the format cannot drift, dedups on the resolved stem, caps at 4 documents, and never emits a NOT FOUND line for a machine rewrite. App and harness both call it, and parity is tested by byte-equality. The fix is delivery, not un-hedging. 17 new tests; the history-isolation sentinels were sharpened because IUCN and Pegasus now legitimately appear as computed metadata.</td>
+          <td class="num"><code>fu-lang-switch</code> 0.75 → <strong>1.00</strong><br><code>fu-compare-those</code> 0.80 → <strong>1.00</strong><br>both held in every later run</td>
+        </tr>
+        <tr>
+          <td class="num"><code>d18829e</code></td>
+          <td>Release-3's two bad-citation cases were not guesses. The evidence matrix prints those pages and <code>MATRIX_BLOCK</code> told the model to cite them — but <code>_note_pages</code> structurally cannot credit a matrix row's page, because the document id sits on the block header and never on the row line. The model followed one rule into a gate that cannot recognise it.</td>
+          <td>Three wording changes, paid for inside the 5,000-character prompt budget by tightening eleven existing sentences (+338 new / −222 reclaimed; biggest variant 4,816 → 4,932 characters): never-invent-a-page becomes an explicit <em>precedence</em> over cite-at-the-sentence for any fact whose evidence prints no page; the registry fallback covers every fact on the line — entity, countries, title, not only figures — citing <code>[doc, cover pages]</code> when no page sits beside it; and the matrix block defers to a registry line for the same fact. 11 new dimension tests; no pinned wording elsewhere was edited.</td>
+          <td class="num">both failing turns, rewritten to the rules and replayed through the real gate offline, score <strong>clean</strong></td>
+        </tr>
+        <tr>
+          <td class="num"><code>e371308</code></td>
+          <td><code>cmp-fp151-fp152-entity</code> forbade <code>/(?:the )?same accredited entity/</code> — which matches the correct <em>negated</em> answer, "do NOT have the same accredited entity". The case penalised exactly the answer it exists to demand.</td>
+          <td>Replaced with an affirmative-opening forbid and a share-the-same forbid, validated both ways against the recorded release-3 answer: the correct negation passes, a merged "Yes, both…" answer is still flagged. The must-contain half already required both distinct entities.</td>
+          <td class="num">0.667 → <strong>0.857</strong><br>(the remaining deduction is the page-guess, traced in Act XIV)</td>
+        </tr>
+        <tr>
+          <td class="num"><code>26d1b7e</code></td>
+          <td>Computed notes print their own provenance — "also as 49,151,817 USD (p.76, B.2(b))". The app and the harness both accept an answer citing that page; <code>verify._scopes</code> resolved it to "cited evidence was never retrieved". Release-3 lost 2 claims to exactly this.</td>
+          <td>A cited (doc, page) now additionally resolves to the note evidence <em>iff</em> the note prints <code>(p.&lt;page&gt;)</code> on a line naming that document — the same per-line attribution <code>_note_pages</code> uses, mirrored regex for regex. Scope resolution only: content matching is unweakened, and the scopes are <em>derived</em> from the notes blob rather than stored, so <code>build_evidence</code>'s key set is byte-identical and no recorded artifact's <code>evidence_keys</code> move. Proofs: 25 targeted tests built from the release-3 note blocks verbatim; adversarial near-miss pages (p.75 / 77 / 7 / 760 / 61 against a printed p.76) all still fail, mutation-checked — a ±1 tolerance turns 3 of them red; cross-document rides fail per-line attribution, mutation-checked; contradicting values are never SUPPORTED; the conflict gate holds under a new AST pin that every supported exit is dominated by <code>_conflict_before_support</code>.</td>
+          <td class="num">five arms before/after on a clean worktree: fabricated <strong>unmoved</strong> (75 TP / 41 FN), contradicted 34/34, held-correct 0 FP<br>zero-API rescore, 0 evidence mismatches: release-2 unchanged in every number; release-3 deterministic citation completeness 115/126 → <strong>117/126</strong></td>
+        </tr>
+        <tr>
+          <td class="num"><code>3230640</code></td>
+          <td>The note-page scope stopped flagging one adjudicated gold row. A human had labelled that row a true verifier hit; machine code had just decided otherwise.</td>
+          <td>No code. An owner ruling, written into <code>docs/wave1-adjudication-review.md</code> as ruling 8 and committed as such — see below.</td>
+          <td class="num">gold arm TP 10 → <strong>9 + 1 ratified supersession</strong></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="note">
+    <span class="n-k">Two numbers for release-3, because they measure two things</span>
+    <p><code>26d1b7e</code>'s zero-API rescore reports release-3 citation completeness moving <strong>115/126 → 117/126</strong>, and this report's headline for the same run is <strong>120/126</strong>. Both are correct. The rescore is deterministic-only — it reconstructs the evidence from the recorded <code>evidence_keys</code> (verified, 0 mismatches) and calls no model, so the judge's promotions cannot be re-made. The 120 is the run as it was recorded, judge included. They are printed as two numbers with their methods attached rather than reconciled into one, because a rate whose method moved is not a comparison either.</p>
+  </div>
+
+  <div class="note">
+    <span class="n-k">Ruling 8 — machine code may not overrule human gold</span>
+    <p>The note-page scope stopped flagging <code>claim-e0be9178189ce5084dfc7164</code> (case <code>fr-cmp-currency</code>, label <code>wrong_citation</code>, <code>verifier_correct: true</code>). Its own reviewer note, written at labelling time and before this rule existed, records that the generation copied "(p.7, A.8)" straight out of the registry note — structurally identical to the two release-3 rows the change exists for, and <em>no predicate separates the three</em>. The engineering conclusion was obvious, and it was still not allowed to be sufficient. <strong>The commit shipped the row as an exact named set</strong>, <code>SUPERSEDED_BY_NOTE_PAGE_SCOPE</code>, with the reviewer's own words quoted beside it, marked <strong>PENDING OWNER RATIFICATION</strong> and carrying its own withdrawal condition: if the owner rejected the supersession, that set and the whole change had to be reverted together. It sat pending. <strong>Ruling 8</strong> (25 Aug, owner-ratified) closed it with a stated rationale rather than a shrug: in the shipped application, citing the page a registry line prints is the prompt-mandated behaviour, so a gold label punishing it would make the instrument contradict the specification it measures. The label stands as history; the rule it was judged under was deliberately superseded. The exact-set assertion still fails loudly if a second gold row is ever lost the same way, and that row would need its own ratification. The gold arm's count is therefore printed as <strong>9 true positives + 1 ratified supersession</strong>, never as a tidier 9.</p>
+  </div>
+
+  <div class="prose" style="margin-top:1.4rem">
+    <p>Two commits in this stretch are not measurement at all: <code>46c3478</code> and <code>0d7ab96</code> are the operator's SSA branding pass and a matching registration page, committed as found — cosmetics only, with auth, retrieval and verification untouched and the full suite green over them.</p>
   </div>
 </section>
 
 <!-- ================================================================ -->
 <section>
   <div class="sec-head">
-    <p class="eyebrow">Act XII · operations</p>
+    <p class="eyebrow">Act XII · the switch</p>
+    <h2>A flag found flipped, and the A/B that cleared it</h2>
+    <p>Two hours after <code>release-3</code> was recorded, a dotfile gained a line that changed what retrieval does and that no artifact described. Finding it was luck. What was done with it was not.</p>
+  </div>
+
+  <div class="prose">
+    <p><strong>The find, proven rather than assumed.</strong> <code>RERANK</code> is read from the environment <em>at call time</em> by <code>retrieve.py</code> — not captured at import, not written into any run's metadata, not part of the deployment fingerprint. <code>.env</code> gained <code>RERANK=1</code> two hours after release-3 was recorded. That claim is replay-proven, not inferred from a timestamp: release-3's recorded hit lists reproduce exactly under <code>RERANK=0</code>, and diverge at rank 0–1 under <code>RERANK=1</code>. So release-3 measured the cross-encoder off, while the tree that would produce the next release had it on. Neither configuration is wrong. What was wrong is that the difference was invisible to every artifact that claims to describe a run — and a flag that silently redefines the baseline is more dangerous than a wrong one, because a wrong setting eventually shows up in a number while a moved baseline never does.</p>
+    <p><strong>The fix was bookkeeping, not behaviour</strong> (<code>a8efbd7</code>). The deployment fingerprint, the parity drift check, every run's <code>ambient_env</code> block and the printed <code>DEPLOYED.md</code> ledger row now all carry <code>RERANK</code>, with the code default — <code>0</code>, the value release-3 actually measured — as the shipped default. A free retrieval-level A/B at HEAD found the class table identical both ways (96/96/96/94): the original-probe and page-diversity work had already absorbed the document-level differences the old fixture could see. But the orderings still differed, so retrieval could not settle the question. Only an answer-level experiment could.</p>
+  </div>
+
+  <figure class="card">
+    <svg viewBox="0 0 880 250" role="img" aria-label="Two bands. The drift: release-3 is recorded with RERANK at the code default of zero; two hours later the environment file gains RERANK=1 with no run, ledger or gate recording it, so the next run would have printed the same label over a different system. The isolation: commit a8efbd7 makes the switch part of the record, then two release runs at that one commit, one with RERANK off and one with it on, produce the verdict that the reranker is answer-level neutral.">
+      <defs><marker id="rka" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="currentColor"/></marker></defs>
+      <g fill="none" stroke="currentColor" stroke-width="1.3" font-family="ui-monospace,monospace" font-size="11.5">
+        <text x="20" y="22" stroke="none" fill="var(--crit)" font-weight="700" font-size="12" letter-spacing="1">THE DRIFT</text>
+        <rect x="20" y="34" width="196" height="46" rx="6"/>
+        <text x="118" y="53" stroke="none" fill="currentColor" text-anchor="middle">release-3 recorded</text>
+        <text x="118" y="69" stroke="none" fill="currentColor" text-anchor="middle" opacity=".65">RERANK=0 (code default)</text>
+        <line x1="216" y1="57" x2="278" y2="57" marker-end="url(#rka)"/>
+        <text x="247" y="48" stroke="none" fill="currentColor" text-anchor="middle" font-size="10">+2 h</text>
+        <rect x="278" y="34" width="232" height="46" rx="6" stroke="var(--crit)"/>
+        <text x="394" y="53" stroke="none" fill="var(--crit)" text-anchor="middle">.env gains RERANK=1</text>
+        <text x="394" y="69" stroke="none" fill="var(--crit)" text-anchor="middle" opacity=".8">no run, ledger or gate records it</text>
+        <line x1="510" y1="57" x2="572" y2="57" marker-end="url(#rka)"/>
+        <rect x="572" y="34" width="288" height="46" rx="6" stroke-dasharray="4 4"/>
+        <text x="716" y="53" stroke="none" fill="currentColor" text-anchor="middle">the next run prints the same label</text>
+        <text x="716" y="69" stroke="none" fill="currentColor" text-anchor="middle" opacity=".65">over a different system</text>
+
+        <line x1="20" y1="104" x2="860" y2="104" stroke-dasharray="4 5" opacity=".35"/>
+
+        <g stroke="var(--blue)">
+          <text x="20" y="130" stroke="none" fill="var(--blue)" font-weight="700" font-size="12" letter-spacing="1">THE ISOLATION</text>
+          <rect x="20" y="144" width="196" height="60" rx="6" stroke="currentColor"/>
+          <text x="118" y="166" stroke="none" fill="currentColor" text-anchor="middle">a8efbd7</text>
+          <text x="118" y="182" stroke="none" fill="currentColor" text-anchor="middle" opacity=".65">fingerprint · parity check</text>
+          <text x="118" y="196" stroke="none" fill="currentColor" text-anchor="middle" opacity=".65">ambient_env · deploy ledger</text>
+          <line x1="216" y1="164" x2="276" y2="152" marker-end="url(#rka)"/>
+          <line x1="216" y1="184" x2="276" y2="196" marker-end="url(#rka)"/>
+          <rect x="278" y="132" width="232" height="34" rx="5"/>
+          <text x="394" y="153" stroke="none" fill="currentColor" text-anchor="middle" font-size="11">release-4-off · RERANK=0</text>
+          <rect x="278" y="180" width="232" height="34" rx="5"/>
+          <text x="394" y="201" stroke="none" fill="currentColor" text-anchor="middle" font-size="11">release-4 · RERANK=1</text>
+          <line x1="510" y1="149" x2="570" y2="164" marker-end="url(#rka)"/>
+          <line x1="510" y1="197" x2="570" y2="184" marker-end="url(#rka)"/>
+          <rect x="572" y="140" width="288" height="66" rx="6" stroke="var(--good)"/>
+          <text x="716" y="162" stroke="none" fill="var(--good)" text-anchor="middle">answer-level neutral</text>
+          <text x="716" y="180" stroke="none" fill="var(--good)" text-anchor="middle" opacity=".85" font-size="11">support +1.3 pp · groundedness −1.0 pp</text>
+          <text x="716" y="196" stroke="none" fill="var(--good)" text-anchor="middle" opacity=".85" font-size="11">behaviour 1 better / 1 worse / 64 same</text>
+        </g>
+        <text x="440" y="238" stroke="none" fill="currentColor" text-anchor="middle" font-size="10.5" opacity=".7">one commit · one fixture · one seed · one variable — the only design under which "the reranker did it" is a testable sentence</text>
+      </g>
+    </svg>
+    <figcaption>Two recorded release runs at the same commit, differing only in <code>RERANK</code>, with release-3 kept as the pre-wave baseline. The bookkeeping commit is what makes the lower band possible: before it, "which arm was this?" had no answer inside the artifact.</figcaption>
+  </figure>
+
+  <div class="scroll">
+    <table>
+      <thead><tr><th>Reranker effect, same commit <code>a8efbd7</code></th><th>RERANK=0 <em>(release-4-off)</em></th><th>RERANK=1 <em>(release-4)</em></th><th>Δ</th></tr></thead>
+      <tbody>
+        <tr><td>Claim support = citation completeness</td><td class="num">97.0%</td><td class="num">98.4%</td><td class="num">+1.3 pp</td></tr>
+        <tr><td>Groundedness</td><td class="num">94.0%</td><td class="num">93.0%</td><td class="num">−1.0 pp</td></tr>
+        <tr><td>Citation presence</td><td class="num">100.0%</td><td class="num">99.2%</td><td class="num">−0.8 pp</td></tr>
+        <tr><td>Field coverage <span style="opacity:.7">(40 cases carry one)</span></td><td class="num">98.8%</td><td class="num">100.0%</td><td class="num">+1.2 pp</td></tr>
+        <tr><td>Behaviour score, 66 cases</td><td class="num">0.9657</td><td class="num">0.9653</td><td class="num">1 better / 1 worse / 64 same</td></tr>
+        <tr><td>Claim support on each run's own population</td><td class="num">114/120 = 95.0%</td><td class="num">123/125 = 98.4%</td><td class="num">denominators moved — see below</td></tr>
+        <tr><td>Retrieval latency added</td><td class="num">—</td><td class="num">≈200 ms / query</td><td class="num">the price of the wash</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="note">
+    <span class="n-k">Why two claim-support numbers appear for the same run</span>
+    <p>The first four rows are the harness's own <code>--compare</code> statistic: the <em>mean of per-case rates</em> over the 61 cases that carry a claim population on both sides. The sixth row is the raw <code>n/d</code> over every claim in each run — 120 claims in the off arm, 125 in the on arm, because the two arms extracted different numbers of claims from differently-worded answers. They disagree by design and both are printed, because the campaign's metric contract forbids quoting a rate whose denominator moved as though it were a comparison. The comparison statistic is the one that holds the population fixed; the own-population statistic is the one the release gate reads.</p>
+  </div>
+
+  <div class="prose" style="margin-top:1.6rem">
+    <p><strong>The verdict was a wash, and the wash was the useful result.</strong> +1.3 pp of claim support against −1.0 pp of groundedness, one case better and one worse out of 66, for ≈200 ms of extra latency per query: nothing measured blocks a live <code>RERANK=1</code> trial, and nothing measured demands one. The decision that mattered is that the switch is now recorded in runs and in the deploy ledger, so turning it off again is a <em>visible</em> change rather than a silent one.</p>
+    <p><strong>The wave's own gains were real, measured with the reranker held off in both arms.</strong> Comparing release-3 with release-4-off — both <code>RERANK=0</code>, so the five-commit wave of Act XI is the only difference — claim support and citation completeness move 95.9% → 97.0% and groundedness 92.6% → 94.0%, and the two follow-up cases the registry-note wiring targeted, <code>fu-compare-those</code> and <code>fu-lang-switch</code>, both reach 1.00 live. Had the flag not been found, that entire improvement would have been measured across a hidden configuration change and would have meant nothing.</p>
+    <p><strong>And a regression provisionally blamed on the cross-encoder was cleared by the off arm.</strong> <code>agg-corpus-boards</code> dropped from 0.71 at release-3 to <strong>0.43</strong> at release-4 — precisely the shape of damage a reranker that reorders evidence would do. It reads <strong>0.43 in the RERANK=0 arm too</strong>. The reranker did not cause it; the wave or the sampling did. The case was recorded as an open item with its symptom written down — the model answers "board meetings" literally instead of deriving B.11–B.43 from the year table — and that open item is the whole of the next act.</p>
+  </div>
+
+  <div class="note crit">
+    <span class="n-k">The methodological point, stated plainly</span>
+    <p><strong>An ambient flag is a measurement variable, not configuration.</strong> A switch read from the environment at call time is an uncontrolled input to every number a harness prints, and its effect is indistinguishable from the effect of the work being evaluated. This one cost nothing, because the runs were replayable and the artifacts were checksummed — the discipline that lets you say "release-3's hit lists reproduce under <code>RERANK=0</code>" is what turned a stray line in a dotfile into a two-arm experiment instead of a quietly different baseline. Never let an ambient flag change what an evaluation measures. If it can, make it part of the record first and measure it second.</p>
+  </div>
+</section>
+
+<!-- ================================================================ -->
+<section>
+  <div class="sec-head">
+    <p class="eyebrow">Act XIII · coverage</p>
+    <h2>The question the registry could answer and the model would not</h2>
+    <p>One open case from the A/B, followed to its root, turned out not to be a bug at all: it was a whole class of question the system had never been built to serve — and the class has a name in the literature.</p>
+  </div>
+
+  <div class="prose">
+    <p><strong>The failure, and why it was correct behaviour.</strong> "Which board meetings does this corpus cover?" names no year and no board code, so neither the year note nor <code>_board_range_note</code> fired. With no authoritative note in the turn, the model fell back on what it had: retrieved excerpts. It is <em>forbidden</em> — by the corpus-scope rule of Act V, iteration 3 — from stating corpus-wide facts from a sample, so it did the only thing left and described the portfolio-company "board meetings" it could actually see in the excerpts. Both RERANK arms scored it 0.43. Nothing in the answer path was broken; the turn simply had no evidence for the question it was asked, and the honest answer to a question you cannot evidence is not a good answer.</p>
+    <p><strong>The registry is complete, and could have answered all along</strong> (<code>bd74abf</code>). A deterministic corpus-coverage note now says so: board meetings <strong>B.11 (2015) through B.43 (2025)</strong>, <strong>273</strong> funding-proposal documents, one per proposal, with per-year counts — 2015: 8; 2016: 28; 2017: 21; 2018: 39; 2019: 25; 2020: 30; 2021: 28; 2022: 17; 2023: 27; 2024: 29; 2025: 21 — computed from <code>BOARD_YEARS</code> and <code>registry.by_year</code> at call time rather than stored, with a test that recomputes every figure independently. It carries the year note's authority framing, so the corpus-scope rule does not block the one note that legitimately outranks it.</p>
+    <p><strong>The trigger is narrow on purpose.</strong> It requires a corpus token <em>and</em> a coverage or size ask, in English and French. A year in the question hands off to the year note; a board code hands off to the board paths; <em>no turn ever gets two authorities</em>. "Board of directors" questions and country-coverage questions do not fire it. It is wired identically in the app and in the harness, with parity pinned by test rather than by convention. Three gold cases were appended — corpus years, corpus total (273, with its derivation recorded), French boards coverage — each proven answerable from the note alone, and the recorded release-4 failing turn replays with all four of its <code>must_contain</code> regexes satisfiable. Gold set 66 → 69; suite 1,073 passed / 3 skipped.</p>
+  </div>
+
+  <div class="metrics" style="margin-top:1.8rem">
+    <div class="metric"><span class="k">agg-corpus-boards</span><span class="v">0.43 → 1.00</span><span class="n">the case that survived a reranker A/B unchanged, closed by a note instead</span></div>
+    <div class="metric"><span class="k">Coverage targets</span><span class="v">4/4</span><span class="n">boards, years, total, and the French twin — all 1.00 with the note fired</span></div>
+    <div class="metric"><span class="k">Aggregate class</span><span class="v">0.90 → 1.00</span><span class="n">behaviour 0.9653 → 0.9765 on the shared 66; 3 better / 1 worse</span></div>
+    <div class="metric"><span class="k">release-5 claim support</span><span class="v">132/137</span><span class="n">96.4%, gate threshold 131 — PASS; groundedness 129/137, presence 136/137, contradicted 0</span></div>
+  </div>
+
+  <div class="prose" style="margin-top:1.6rem">
+    <p><strong>The dip that had to be reported as sampling, not as damage.</strong> On the subset shared with release-4, claim support reads 98.4% → 95.6%. It would have been easy to book that against the coverage note. It is not: the five unsupported rows are all known extractor-edge shapes — conflict-reporting meta-sentences and cited hedges — none of them introduced by the note, and release-3, release-4 and release-5 span 95.2–98.4% on <em>identical</em> code paths. The one behaviour case that got worse is <code>bc-b27-02-add12</code>, the flapper named in Act XI. Spread before significance, again: a movement inside the measured spread is a sample, not a result. Checksums 72/72.</p>
+  </div>
+
+  <div class="prose" style="margin-top:1.6rem">
+    <p><strong>What the note actually closed, in the literature's terms.</strong> Zhao et al. classify data-augmented LLM applications not by technique but by <em>what the query demands of the data</em>, in four levels of increasing difficulty. Read against that taxonomy, the corpus-coverage note is not a feature: it is the last piece of level two.</p>
+  </div>
+
+  <div class="scroll">
+    <table>
+      <thead><tr><th>Query level (Zhao et al., 2024)</th><th>What it demands</th><th>What this system brings to it</th><th></th></tr></thead>
+      <tbody>
+        <tr>
+          <td><strong>L1 · explicit facts</strong></td>
+          <td>The answer is stated verbatim in some retrievable passage; the work is finding it and not misquoting it.</td>
+          <td>Hybrid BM25 + dense retrieval over 186,802 page-aware chunks; multimodal (VLM) extraction of a corpus whose figures live in tables and images; geometry sidecars aligning every citation back to pixels on the page; and per-claim verification against the evidence the turn actually held.</td>
+          <td><span class="chip fixed">covered</span></td>
+        </tr>
+        <tr>
+          <td><strong>L2 · implicit facts</strong></td>
+          <td>The answer exists in the data but nowhere as a sentence: it must be assembled across documents, or computed over the collection.</td>
+          <td>Conductor decomposition into per-document sub-queries with per-document quotas; the deterministic document × field evidence matrix, which refuses cross-currency rankings rather than inventing one; registry v2 as a provenance-carrying structured store beside the vector index; and — this act — corpus-level aggregates computed from the registry instead of sampled from excerpts.</td>
+          <td><span class="chip fixed">covered</span></td>
+        </tr>
+        <tr>
+          <td><strong>L3 · interpretable rationales</strong></td>
+          <td>The answer requires applying a documented procedure, guideline or decision rule to the retrieved facts.</td>
+          <td>The corpus is funding proposals, not procedure manuals. GCF policy text is retrievable where a proposal quotes it, but no gold case asks the system to <em>execute</em> a procedure, and none should: inventing an evaluation for a capability the corpus does not exercise is how benchmarks come to measure nothing.</td>
+          <td><span class="chip feat">out of scope</span></td>
+        </tr>
+        <tr>
+          <td><strong>L4 · hidden rationales</strong></td>
+          <td>The answer requires domain reasoning that is written down nowhere and must be inferred from experience.</td>
+          <td>Consciously not attempted. The paper's own argument is that technique should be matched to query type; a proposals corpus behind a verification gate that refuses unevidenced assertions is the wrong instrument for synthesising unwritten expertise, and bolting one on would put the system's single strongest property — never asserting what it cannot cite — directly at risk.</td>
+          <td><span class="chip feat">out of scope</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="note">
+    <span class="n-k">The verifier calibration was Guideline Learning, moved to build time</span>
+    <p>The paper's L3 toolkit centres on <em>Guideline Learning</em>: derive explicit rules from labelled cases, then apply those rules at inference. The calibration of Acts VIII–IX is the same loop with the closure point moved. Seventy-one blind-adjudicated failures produced eight labels and, eventually, eight rulings; every ruling that authorised a code change was mapped hunk-to-anchor through an <code>Adjudicated-anchors:</code> git trailer that a checker refuses to let past unless the named row exists and is labelled a false positive; and the resulting rules were frozen into the matcher rather than re-derived per query. The advantages are the ones build-time buys: the rules are reviewable, adversarially attackable, and pinned in both directions by tests. The cost is equally real and is stated as a cost — a genuinely new failure shape needs a fresh adjudication round and a human signature, not an in-context example. That is the trade this project made deliberately, and Act XIV is what it looks like when the shapes turn out to be new.</p>
+  </div>
+
+  <div class="prose" style="margin-top:1.4rem">
+    <p style="font-size:.9rem">S. Zhao, Y. Yang, Z. Wang, Z. He, L. K. Qiu and L. Qiu, “Retrieval Augmented Generation (RAG) and Beyond: A Comprehensive Survey on How to Make Your LLMs Use External Data More Wisely”, arXiv:2409.14924 [cs.CL], 2024. <a href="https://arxiv.org/abs/2409.14924">arxiv.org/abs/2409.14924</a></p>
+  </div>
+</section>
+
+<!-- ================================================================ -->
+<section>
+  <div class="sec-head">
+    <p class="eyebrow">Act XIV · the instrument, stressed</p>
+    <h2>Twenty cases written blind, and three imperfections worth more than the seventeen passes</h2>
+    <p>A 97%-class number over a gold set the system has already been tuned against is a statement about the gold set. So the gold set was grown by 29%, blind, and the run was repeated.</p>
+  </div>
+
+  <div class="prose">
+    <p><strong>The authoring rule was derivation-or-drop</strong> (<code>b5093c2</code>). Every expectation had to be <em>derived from the corpus record</em>, with the derivation written into the case's own notes — nothing invented, nothing recalled, nothing assumed to be true because it sounded right. Twenty cases were authored under it: twelve registry-backed, eight text-derived. The discipline shows most clearly in what it threw away. <strong>FP221 was rejected outright</strong> as a likely extraction artifact rather than a real in-document conflict, and <strong>FP218 was recorded as a verified spare</strong> in its place. <strong>FP235 and FP083 were rejected as follow-up targets</strong> because their registry conflict lines would have made the expected behaviour ambiguous — a case whose correct answer is arguable is a case that measures the arguer. A gold set grows by refusing cases as much as by adding them.</p>
+    <p><strong>The twelve registry-backed cases.</strong> Three conflict cases on documents the suite had <em>never touched</em> — FP265 (transposed digits), FP251 (70-versus-40M), FP201 (template-versus-two-prints) — each carrying a proof of both-values satisfiability and of single-figure impossibility, and each with a disjointness proof on its conflict regexes so the case cannot be satisfied by an answer that reports only one side. Two fresh identifiers. A <strong>B.45 / 2026 abstain pair</strong>, chosen because <code>BOARD_YEARS</code> 11–43 has no interior gap: a middle-board abstain <em>cannot exist</em> in this corpus, so the only honest closed-world abstains are at the edges. Two aggregates (2022 counts, most-proposals year), French twins, and a noisy identifier.</p>
+    <p><strong>The eight text-derived cases.</strong> Three discovery questions — mangrove, early-warning, geothermal — each verified retrievable at rank 1 before being written as a case. Two new <strong>merge traps</strong>: E-Motion (two documents with the same title, AFD against CAF, with the twin's entity explicitly forbidden) and Africa Hydromet (same programme and same entity, only the country separating them). Two follow-ups exercising the <code>_extend_registry_note</code> wiring from Act XI, one of them in French. And a noisy discovery with no FP token to anchor on. The eval fixture's 50–80 case band was outgrown deliberately and widened to 50–120, with the rationale written into the test rather than into a commit message.</p>
+    <p><strong>What the merged set saw immediately.</strong> Retrieval over 89 cases held document recall at 97%; the new conflict cases at once recorded a real page-level shortfall — <strong>64%</strong> in the retrieval fixture — that the old 69-case set was structurally incapable of seeing. In release-6 itself the conflict class holds 8 of its 14 target pages, with FP251 and FP201 at 0/2. The cases still score 1.00, because the answers are right and cite the document; the pages they should have retrieved are a retrieval gap the new cases exposed on contact.</p>
+  </div>
+
+  <div class="metrics" style="margin-top:1.8rem">
+    <div class="metric"><span class="k">Gold set</span><span class="v">69 → 89</span><span class="n">twenty cases authored blind under derivation-or-drop; three candidates rejected</span></div>
+    <div class="metric"><span class="k">Perfect on first contact</span><span class="v">17/20</span><span class="n">18/20 after the abstain-shape fix; the remaining two lose only the page-guess deduction</span></div>
+    <div class="metric"><span class="k">Claim support</span><span class="v">165/169</span><span class="n">97.6% over 169 claims from 89 cases, gate threshold 161 — PASS</span></div>
+    <div class="metric"><span class="k">New system defects</span><span class="v">0</span><span class="n">all three imperfections traced — two to a known deduction, one to an instrument limitation nobody had named before</span></div>
+  </div>
+
+  <div class="prose" style="margin-top:1.6rem">
+    <p><strong><code>release-6</code>, at the deploy configuration</strong> (<code>PLANNER=1 VERIFY=1 VERIFY_LLM=1 RERANK=1</code>, <code>gpt-5.2</code>, temperature 0, seed 20260819): 89 cases, <strong>165 supported / 169 claims = 97.6%</strong> for both claim support and citation completeness, groundedness 159/169 = 94.1%, citation presence 169/169 = 100%, 1 contradicted, 3 unsupported; field coverage 71/71; document recall@5 66/67 on scorable cases; judge budget exhausted 0/89; p50 4.05 s, p95 7.96 s; 294,749 prompt + 16,763 completion tokens, ≈$0.54. Behaviour 0.975 across all 89 cases. Checksums 73/73. The journey line, printed with both denominators because that is the only way it means anything: <strong>94/165 = 57.0% at release-1 → 165/169 = 97.6% at release-6</strong>.</p>
+    <p><strong>Seventeen of the twenty new cases were perfect on first contact.</strong> The three that were not are the reason the exercise was worth doing, and none of them is a new system defect.</p>
+  </div>
+
+  <div class="scroll">
+    <table>
+      <thead><tr><th>The three imperfections</th><th>What actually happened</th><th>Disposition</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><code>txt-cmp-fp237-fp195-entity</code><br><code>txt-cmp-fp012-fp074-country</code><br><span style="opacity:.7">both merge traps · 0.83</span></td>
+          <td>Both traps were <strong>answered correctly</strong> — the twins were not merged, the distinct entities and countries were named. Each lost only the known page-guess deduction: the model cited <code>p. 3</code> for registry entity facts. That is the <em>right</em> page. It is simply not a page the turn's evidence held, because the registry line that supplies the fact prints no page beside it, and the rule from <code>d18829e</code> says to cite the document alone when no page is printed.</td>
+          <td>Not a defect in the answer and not a fixture bug. The durable fix is <strong>entity page provenance in the registry</strong>, so an entity or country fact carries the page its own line came from and the model can cite what it is reading. Recorded as future work.</td>
+        </tr>
+        <tr>
+          <td><code>abs-2026</code><br><span style="opacity:.7">closed-world abstain · 0.80</span></td>
+          <td>The refusal was <em>ideal</em>: "no registered funding proposals… no GCF Board meeting". It missed the abstain shape by exactly one qualifying word.</td>
+          <td>The shape now allows up to two qualifying words. Because a scoring change is a measurement change, it was swept across <strong>all six recorded releases</strong> before being accepted, with <strong>zero unintended flips</strong>, and release-6 was rescored in place: 0.80 → <strong>1.00</strong>. Eighteen of the twenty new cases now stand at 1.00.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="note crit">
+    <span class="n-k">The new limitation, named rather than absorbed — correct arithmetic reads as contradiction</span>
+    <p>In <code>fu-compare-those</code>, the answer says: <em>"So, <strong>FP152 requests 131.5 M USD more GCF funding than FP151</strong> (150.0 − 18.5 = 131.5)"</em>, and cites both operands to the pages that print them. Both operands are correct. The subtraction is correct. The citation is correct. The verifier marks the claim <strong>contradicted</strong>, with the reason recorded verbatim in the artifact: <em>"cited evidence states '150 M USD' for this field, the answer states '131.5 M USD'"</em>. It is behaving exactly as designed — a money claim is checked against the figures its cited evidence prints, and a <em>computed difference</em> matches no printed figure anywhere. One row, in one case, and it is the only contradicted verdict in release-6. It is written here rather than filed away because it is the honest shape of the limitation: the instrument cannot currently tell a derived quantity from a wrong one, and the safe failure it chose is the one that penalises a correct answer rather than passing a false one. Teaching the claim extractor to recognise derived-arithmetic claims — operands, operator, result, all cited — is named as future verifier work, and until it lands, this is a known cost of the design.</p>
+  </div>
+
+  <div class="note">
+    <span class="n-k">The residue after release-6 — six items, every one measured</span>
+    <p><strong>Entity page provenance</strong> (2 cases): registry entity and country facts print no page, so an answer citing the right page cites one the turn did not hold. <strong>Derived arithmetic</strong> (1 claim): correct computed differences read as contradictions, as above. <strong>Conflict-class evidence-page retrieval</strong>: the merged retrieval fixture records 64% page-level coverage on the new conflict cases, and release-6 holds 8 of 14 conflict target pages (FP251 and FP201 at 0/2) — the answers are right, the evidence pages are not being retrieved. <strong>Two sampling flappers</strong>: <code>bc-b30-02-add03-trap</code> read 0.83 in four consecutive releases and 0.50 in release-6, where the sample answered from the neighbouring 03-series document instead of refusing; <code>bc-b27-02-add12</code> reads 1.00 in both release-4 arms and 0.80 in three others. Neither has a code change attached, and neither is called fixed. <strong>A two-document discovery answered with none of its identifiers</strong>: <code>disc-subnational-pair</code> has scored 0.60 in every run this edition re-aggregated — release-3 through release-6 — naming the Global Subnational Climate Fund but neither FP151 nor FP152. And unchanged since release-2, the <strong>two content-abstention fixtures</strong> (<code>abs-antarctica</code>, <code>abs-offtopic</code>), which the adjudication taxonomy places outside what the record can settle. Six items, no unexplained failures, and nothing on this list was discovered by reading the code.</p>
+  </div>
+</section>
+
+<!-- ================================================================ -->
+<section>
+  <div class="sec-head">
+    <p class="eyebrow">Act XV · operations</p>
     <h2>What is running, and how it can be undone</h2>
     <p>A measurement campaign is only worth its artifacts if the artifacts survive, and a release is only worth its gates if the thing deployed is the thing measured.</p>
   </div>
@@ -693,14 +969,14 @@ footer{margin-top:4.5rem;padding-top:1.5rem;border-top:1px solid var(--rule-stro
   </div>
 
   <div class="prose" style="margin-top:1.4rem">
-    <p>Those three rows keep <code>VERIFY_REPAIR=0</code> in their switch column because it was true when they were written. From the next deploy on the column drops it: the commit that removed the repair pathway also removed the variable, and a flag nothing reads is a switch that no longer exists. The rows are not edited to match the present — that is the whole point of an append-only ledger.</p>
-    <p><strong>Interlocks, each written against a demonstrated footgun.</strong> <code>push</code> refuses a dirty tree and refuses a HEAD that is not a deploy tag; it greps the remote environment for the keys the stack needs and aborts if any is missing. Evaluation data, canary logs and scratch files are excluded from the rsync, while <code>.env</code> is <em>never</em> excluded — it is how switches reach production, and an exclusion would silently strand every future flip. The index and registry are not excluded either, because production loads them; the index footgun is handled by a loud warning and a refusal to overwrite without an explicit force. The measurement anchor is protected in both directions: the recorded release files are force-added to git despite the data directory being ignored, their checksums are tracked in the same commit, and the recorder refuses to overwrite an existing path. <strong>Sixty-seven recorded eval artifacts</strong> are checksummed in <code>data/eval/CHECKSUMS.sha256</code>, with the reason written at the top of the file: the baseline run cannot be rebuilt, because re-running it calls the model 66 more times and is a different sample.</p>
+    <p>Those three rows keep <code>VERIFY_REPAIR=0</code> in their switch column because it was true when they were written. From the next deploy on the column drops it and gains <code>RERANK</code>: the commit that removed the repair pathway also removed that variable, and <code>a8efbd7</code> made the reranker part of the deployment fingerprint (Act XII), so the ledger now records the switch that decides what retrieval does. The rows are not edited to match the present — that is the whole point of an append-only ledger. <strong>The ledger still ends at <code>22f558b</code>.</strong> Everything from Act XI on is measured on <code>main</code> and is <em>not yet deployed</em>; this report describes the repository, not the host.</p>
+    <p><strong>Interlocks, each written against a demonstrated footgun.</strong> <code>push</code> refuses a dirty tree and refuses a HEAD that is not a deploy tag; it greps the remote environment for the keys the stack needs and aborts if any is missing. Evaluation data, canary logs and scratch files are excluded from the rsync, while <code>.env</code> is <em>never</em> excluded — it is how switches reach production, and an exclusion would silently strand every future flip. The index and registry are not excluded either, because production loads them; the index footgun is handled by a loud warning and a refusal to overwrite without an explicit force. The measurement anchor is protected in both directions: the recorded release files are force-added to git despite the data directory being ignored, their checksums are tracked in the same commit, and the recorder refuses to overwrite an existing path. <strong>Seventy-three recorded eval artifacts</strong> are checksummed in <code>data/eval/CHECKSUMS.sha256</code>, with the reason written at the top of the file: the baseline run cannot be rebuilt, because re-running it calls the model 66 more times and is a different sample.</p>
     <p><strong>The deploy row is pasted by hand, on purpose.</strong> <code>make deploy</code> prints the row after the remote <code>docker compose up -d</code> returns; the operator commits it with the next change. Writing it automatically would have the target edit a tracked file mid-deploy, which then trips its own dirty-tree interlock on the following run or forces an unreviewed auto-commit.</p>
   </div>
 
   <div class="note">
-    <span class="n-k">Stated honestly: the parity level of the final run</span>
-    <p><code>release-3</code> records its own pipeline parity as <code>partial: deployment-drift</code>, not <code>full</code>. Two reasons, both in the record: the deployment fingerprint file was never captured (an owner action that was not performed), so the deployed switches are read from the tracked ledger row and the local environment rather than from the host, and the remote artifact hashes were not read; and the harness tree (<code>85a9ff7</code>) is ahead of the deployed commit (<code>22f558b</code>) under <code>src/</code>. The number is what it is — the run is production-<em>configured</em> and not production-<em>verified</em>, and the record says which.</p>
+    <span class="n-k">Stated honestly: the parity level of every release run</span>
+    <p>Every run from <code>release-3</code> to <code>release-6</code> records its own pipeline parity as <code>partial: deployment-drift</code>, not <code>full</code>. Two reasons, both in the record: the deployment fingerprint file was never captured (an owner action that was not performed), so the deployed switches are read from the tracked ledger row and the local environment rather than from the host, and the remote artifact hashes were not read; and the harness tree is ahead of the deployed commit (<code>22f558b</code>) under <code>src/</code> — <code>85a9ff7</code> at release-3, <code>b5093c2</code> at release-6, a gap that has grown to 21 commits. The number is what it is — the runs are production-<em>configured</em> and not production-<em>verified</em>, and the record says which. The index and registry hashes, by contrast, <em>are</em> recorded in every run and are identical across all six.</p>
   </div>
 </section>
 
@@ -717,6 +993,7 @@ footer{margin-top:4.5rem;padding-top:1.5rem;border-top:1px solid var(--rule-stro
     <p><strong>Tests pin fixed behaviour in both directions.</strong> Every relaxation gets an adversarial negative <em>and</em> a regression pin on the permissive side. This rule exists because twelve held tests pinned only the strict direction, which is exactly how two live regressions survived them.</p>
     <p><strong>A gate line whose expectation lives in a comment is not a gate.</strong> Each wave's gate block runs verbatim under <code>set -euo pipefail</code>; a non-zero exit or an out-of-tolerance number blocks the commit, and there is no narrative override. Where a change ships behind a switch, the off-path output is proven byte-identical to the pre-change path on a fixed fixture rather than asserted.</p>
     <p><strong>Spread before significance.</strong> Run-to-run variation was measured and published <em>before</em> the improvement runs — claim-support varies 8.9 pp deterministic and 4.6 pp production on its own — so most per-gap movements were reported <em>indeterminate</em> rather than passed. Two measurement changes that looked like improvements were labelled as measurement: a definition change worth +26 claims, and a parity gap that bought +1.74 pp purely by removing three claims from the denominator, none of them supported.</p>
+    <p><strong>An ambient switch is a measurement variable.</strong> A flag read from the environment at call time is an uncontrolled input to every number a harness prints, and its effect cannot be told apart from the effect of the work under evaluation. When <code>RERANK=1</code> was found in <code>.env</code> two hours after a release had been recorded, it was not corrected and moved past: it was proven by replay, written into the deployment fingerprint, the parity check, every run's metadata and the deploy ledger, and only then measured, as two arms of one experiment at one commit. The rule this leaves behind is Act XII's, and it generalises past this flag: make the switch part of the record first, measure it second.</p>
     <p><strong>And the reference standard is blind.</strong> The one thing a system cannot do is grade itself; so the 71 recorded failures were labelled with the verifier's own verdict withheld, by labellers who did not know which rows it had flagged, against a taxonomy written before the labelling started, and adopted by a signature no agent can forge.</p>
   </div>
 </section>
@@ -731,7 +1008,7 @@ footer{margin-top:4.5rem;padding-top:1.5rem;border-top:1px solid var(--rule-stro
     <table>
       <thead><tr><th>Branch</th><th>Contents</th><th>State</th></tr></thead>
       <tbody>
-        <tr><td class="num">main</td><td>everything below plus both correctness programs, merged; 123 commits, tip <code>6f91410</code></td><td>ready to push (force-with-lease replaces the leaked-key history)</td></tr>
+        <tr><td class="num">main</td><td>everything below plus both correctness programs, merged; 137 commits, tip <code>3230640</code></td><td>ready to push (force-with-lease replaces the leaked-key history); 21 commits ahead of the deployed <code>22f558b</code></td></tr>
         <tr><td class="num">feat/claim-support-rollout</td><td>waves −1 → 5: interlocks, adjudication, calibration, parity harness, repair A/B</td><td>merged</td></tr>
         <tr><td class="num">hold/verifier-calibration</td><td>the 1,008-line unreviewed agent wave, quarantined off the working tree and never deployed</td><td>quarantine branch, kept as record</td></tr>
         <tr><td class="num">feat/verifier-calibration</td><td>the 0b/0c rework attempts; 0c was rejected outright</td><td>rejected, kept as record</td></tr>
@@ -744,16 +1021,17 @@ footer{margin-top:4.5rem;padding-top:1.5rem;border-top:1px solid var(--rule-stro
     </table>
   </div>
   <div class="prose" style="margin-top:1.4rem">
-    <p><strong>Since the first edition of this report,</strong> the roadmap items shipped: hybrid BM25+dense retrieval (identifier recall 6%→100%), the metadata registry (now provenance-aware, v2), query decomposition with a conductor, conversation threads with self-registration, the gpt-5.2 backend, the correctness program, and the claim-support campaign of Acts VII–XII — 93 further commits, all on <code>main</code>.</p>
-    <p><strong>Open items, in priority order.</strong> <em>Owner actions:</em> revoke the five leaked keys (the old history is public until then); push all branches (credentials exist only on the owner's side); deploy the four commits between the live SHA <code>22f558b</code> and the tip <code>6f91410</code> — the citation pass measured by release-3 is not yet on the host; capture the deployment fingerprint, which is the only thing standing between release-3's <code>partial: deployment-drift</code> and a verified <code>full</code>; and spot-check the gold's two stale labels so the frozen anchor can be re-resolved.</p>
-    <p><em>Product and engineering:</em> decide whether answer repair returns as a <em>suggestion</em> beside the answer — never substituted for it, with a claim-level diff and no authority to delete cited content — or stays deleted; rule on rebuilding the truncated-versus-invented document-id check detector-side, now that the adoption gate it lived in is gone; close the notes gap that makes a doc-tagged follow-up turn hedge for want of a registry note; re-extract line geometry for the 205 rotated pages (the runaway-height guard truncates line <em>length</em> there — positions are correct, boxes are short); A/B the sectioned <code>v2</code> index against a multilingual embedder now that page-level labels exist; and extract the three remaining model corpora (<code>make extract</code> resumes them).</p>
-    <p><strong>Explicitly not next, and not because they are hard.</strong> GraphRAG, agentic search, whole-document long-context prompting, and vision verification of cited pages all remain valid experiments — but no measured gap points at any of them. Document recall is 30/30, evidence-page hit 21/24, field coverage 55/56; the failures that remain are citation and notes failures. Each is revisited when, and only when, a measurement names it.</p>
+    <p><strong>Since the first edition of this report,</strong> the roadmap items shipped: hybrid BM25+dense retrieval (identifier recall 6%→100%), the metadata registry (now provenance-aware, v2), query decomposition with a conductor, conversation threads with self-registration, the gpt-5.2 backend, the correctness program, the claim-support campaign of Acts VII–XI, and the three chapters that followed its release gate (Acts XII–XIV) — 107 further commits, all on <code>main</code>.</p>
+    <p><strong>Open items, in priority order.</strong> <em>Owner actions:</em> revoke the five leaked keys (the old history is public until then); push all branches (credentials exist only on the owner's side); deploy the <strong>21 commits</strong> between the live SHA <code>22f558b</code> and the tip <code>3230640</code> — the citation pass, the registry-note wiring, the note-page scope, the recorded <code>RERANK</code> switch and the corpus-coverage note are all measured and none of them is on the host; capture the deployment fingerprint, which is the only thing standing between every release run's <code>partial: deployment-drift</code> and a verified <code>full</code>; and spot-check the gold's two stale labels so the frozen anchor can be re-resolved. Ruling 8 leaves this list — it was signed on 25 Aug.</p>
+    <p><em>Product and engineering, each one named by a measurement:</em> put <strong>entity page provenance</strong> into the registry, so an entity or country fact carries the page its own line prints and the model stops paying a page-guess deduction for citing the right page (2 cases, Act XIV); teach the claim extractor to recognise <strong>derived arithmetic</strong>, so a correct subtraction with both operands cited stops being read as a rival figure (1 case, Act XIV); raise <strong>conflict-class evidence-page retrieval</strong>, where the new conflict documents hold only 8 of 14 target pages and the merged retrieval fixture records 64%; settle the <strong>two sampling flappers</strong> (<code>bc-b30-02-add03-trap</code>, <code>bc-b27-02-add12</code>) by deciding whether the fixtures or the sampling are at fault; make a discovery question whose true answer is two documents (<code>disc-subnational-pair</code>) name both identifiers, which no recorded release has done; decide whether answer repair returns as a <em>suggestion</em> beside the answer — never substituted for it, with a claim-level diff and no authority to delete cited content — or stays deleted; rule on rebuilding the truncated-versus-invented document-id check detector-side, now that the adoption gate it lived in is gone; re-extract line geometry for the 205 rotated pages (the runaway-height guard truncates line <em>length</em> there — positions are correct, boxes are short); A/B the sectioned <code>v2</code> index against a multilingual embedder now that page-level labels exist; and extract the three remaining model corpora (<code>make extract</code> resumes them).</p>
+    <p><strong>Explicitly not next, and not because they are hard.</strong> GraphRAG, agentic search, whole-document long-context prompting, and vision verification of cited pages all remain valid experiments — but no measured gap points at any of them. Document recall is 30/30 on gold-30 and 66/67 on the 89-case suite, field coverage 71/71, and the L1/L2 query levels of the Zhao taxonomy are covered (Act XIII). The failures that remain are page-provenance failures, one extractor gap, and two sampling flappers — the one newly measured retrieval gap is page-level, not topology-level, and a graph would not close it. Each is revisited when, and only when, a measurement names it.</p>
   </div>
 </section>
 
 <footer>
-  <div>GCF Q&amp;A · 273 PDFs · 41,550 pages · 175,225 chunks (deduplicated; sectioned v2 index staged) · repository: final_project_qna (branch main @ 6f91410; live at fp-gcf.ssa.tg on 22f558b)</div>
-  <div>Third edition, 24 Aug 2026. All measurements taken 14–24 Aug 2026 on the build machine (RTX 4080 SUPER, WSL2) and the production server, against live services; every claim-level figure is reproducible from the 67 checksummed records in <code>data/eval/</code>. Source record for Acts VII–XII: docs/rag-correctness-next-steps.html · docs/claim-support-execution-plan.md · docs/adjudication-taxonomy.md · docs/wave0-review-verdict.md · docs/wave0b-review-verdict.md · docs/wave0c-review-verdict.md · docs/wave1-adjudication-review.md · docs/DEPLOYED.md. Earlier reports: docs/query-decomposition.html · docs/rag-approaches-evaluation.html · docs/hybrid-retrieval-plan.html</div>
+  <div>GCF Q&amp;A · 273 PDFs · 41,550 pages · 175,225 chunks (deduplicated; sectioned v2 index staged) · repository: final_project_qna (branch main @ <code>3230640</code>; <strong>production still on <code>22f558b</code></strong> — 21 commits behind, deploy pending)</div>
+  <div>Fourth edition, 25 Aug 2026. All measurements taken 14–25 Aug 2026 on the build machine (RTX 4080 SUPER, WSL2) and the production server, against live services; every claim-level figure is reproducible from the 73 checksummed records in <code>data/eval/</code>, and every figure in Acts XI–XIV was re-aggregated from <code>release_release-{3,4,4-off,5,6}.jsonl</code> for this edition rather than copied from a commit message. Source record for Acts VII–XV: docs/rag-correctness-next-steps.html · docs/claim-support-execution-plan.md · docs/adjudication-taxonomy.md · docs/wave0-review-verdict.md · docs/wave0b-review-verdict.md · docs/wave0c-review-verdict.md · docs/wave1-adjudication-review.md (rulings 1–8) · docs/DEPLOYED.md. Earlier reports: docs/query-decomposition.html · docs/rag-approaches-evaluation.html · docs/hybrid-retrieval-plan.html</div>
+  <div>Related work cited in Act XIII: S. Zhao, Y. Yang, Z. Wang, Z. He, L. K. Qiu and L. Qiu, “Retrieval Augmented Generation (RAG) and Beyond: A Comprehensive Survey on How to Make Your LLMs Use External Data More Wisely”, arXiv:2409.14924 [cs.CL], 2024. <a href="https://arxiv.org/abs/2409.14924">arxiv.org/abs/2409.14924</a></div>
 </footer>
 
 </div>
