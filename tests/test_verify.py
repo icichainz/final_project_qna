@@ -4374,3 +4374,120 @@ def test_no_adjudicated_gold_row_states_a_derived_arithmetic(no_registry):
                      for c in V.extract_claims(r.get("claim_text")
                                                or r.get("text") or ""))]
     assert stated == [], stated
+
+
+# ---------------------------------------------------------------------------
+# PHASE 1 — the three field labels that follow the three newly served fields
+#
+# `registry._served_bits` prints `executing_entity`,
+# `national_designated_authority` and `financial_instruments` on the one
+# registry line, each heading its own ';'-separated segment. A served field is
+# only as checkable as the vocabulary that can find its label, so the labels
+# are added here — APPENDED, so that `claim_field`'s first-match-wins order
+# leaves every sentence that already resolved to a field resolving to the same
+# one. What is pinned: the three new labels name their field, the existing
+# labels keep theirs, and a value served under a new label is read as that
+# field's value by the segment reader the registry line is written for.
+# ---------------------------------------------------------------------------
+
+@pytest.mark.parametrize("text,field", [
+    ("The **executing entity** is the Ministry of Water", "executing_entity"),
+    ("L'**entité d'exécution** est le Ministère de l'Eau", "executing_entity"),
+    ("The executing agency is FAO", "executing_entity"),
+    ("The **national designated authority** is the Office of Climate Change",
+     "national_designated_authority"),
+    ("The NDA is the Ministry of Finance", "national_designated_authority"),
+    ("The **financial instruments** are a grant and a loan",
+     "financial_instruments"),
+    ("Les **instruments financiers** sont un don et un prêt",
+     "financial_instruments"),
+])
+def test_the_three_added_labels_name_their_field(text, field):
+    assert V.claim_field(text) == field
+
+
+@pytest.mark.parametrize("text,field", [
+    ("The **GCF funding requested** is x", "gcf_financing"),
+    ("The **total financing** is x", "total_financing"),
+    ("The **cofinancement** is x", "co_financing"),
+    ("The **accredited entity** is x", "accredited_entity"),
+    ("The **implementing entity** is x", "accredited_entity"),
+    ("The **countries** are x", "countries"),
+    ("The **title** is x", "title"),
+    ("The **implementation period** is x", "duration"),
+    ("The **beneficiaries** are x", "beneficiaries"),
+    # first-match-wins, unchanged: a sentence naming two fields keeps the one
+    # it resolved to before the additions
+    ("The accredited entity is X and the executing entity is Y",
+     "accredited_entity"),
+])
+def test_the_existing_labels_keep_the_field_they_already_named(text, field):
+    assert V.claim_field(text) == field
+
+
+def test_a_word_that_merely_contains_a_new_label_is_not_that_field():
+    assert V.claim_field("The project operates in Rwanda") != \
+        "national_designated_authority"
+    assert V.claim_field("The proposal is financed by a grant") != \
+        "financial_instruments"
+
+
+#: the line `registry._served_bits` writes for a document whose A.10 prices
+#: two instruments — every value under its own copy of the label, which is
+#: what lets the segment reader see all of them
+SERVED_LINE = (f'Registry — FP151: "Title"; accredited entity: IUCN (p.3); '
+               f"GCF funding requested: 18,500,000 USD (p.5, A.8); "
+               f"financial instruments: $5 million USD (p.8, A.10 Grant); "
+               f"financial instruments: $46 million USD (p.8, A.10 Loan) "
+               f"[{DOC}, cover pages]")
+
+
+def test_a_served_field_is_read_off_the_registry_line_as_that_field(no_registry):
+    """The shape the label exists for: a whole document on ONE line, every
+    field heading its own segment, and the value of a field being the first
+    amount AFTER its label rather than the first amount on the line."""
+    claim = V.extract_claims(
+        f"- The **financial instruments** include **USD 46 million** as a loan "
+        f"[{DOC}, p. 8].")[0]
+    assert V.claim_field(claim.text) == "financial_instruments"
+    assert V._field_conflict(claim, SERVED_LINE) is None    # the field agrees
+    wrong = V.extract_claims(
+        f"- The **financial instruments** total **USD 99,000,000** "
+        f"[{DOC}, p. 8].")[0]
+    got = V._field_conflict(wrong, SERVED_LINE)
+    assert got is not None and got[0].value == 5_000_000
+
+
+def test_the_served_line_keeps_its_money_segments_readable(no_registry):
+    """The whole-line property the served fields must not cost: an instruction
+    phrase anywhere on a line takes the WHOLE line off `_field_lines`, so
+    `registry._instructional` refuses to serve one — and the money segment of
+    the same line stays checkable."""
+    gcf = V.extract_claims(
+        f"- The **GCF funding requested** is **USD 99,000,000** "
+        f"[{DOC}, p. 5].")[0]
+    got = V._field_conflict(gcf, SERVED_LINE)
+    assert got is not None and got[0].value == 18_500_000
+
+
+def test_the_new_labels_are_appended_after_every_existing_one():
+    """Order is the contract: `claim_field` returns the FIRST match, so an
+    insertion higher up the list would re-field claims that already resolve."""
+    names = [f for f, _ in V._FIELD_LABELS]
+    assert names[-3:] == ["executing_entity", "national_designated_authority",
+                          "financial_instruments"]
+    assert names[:-3] == ["gcf_financing", "total_financing", "co_financing",
+                          "accredited_entity", "countries", "title", "duration",
+                          "beneficiaries"]
+
+
+def test_the_registry_has_no_ruling_to_defer_to_for_the_new_fields():
+    """`_V2_FIELD` is deliberately NOT extended. Its three consumers all reason
+    over parsed AMOUNTS and over 'supporting' meaning a re-print of one fact;
+    in A.10 a 'supporting' candidate is a DIFFERENT instrument, and for the two
+    text fields there is no amount to reason with at all. Silence is the
+    documented behaviour for an unmapped field, and it stays the behaviour."""
+    for field in ("executing_entity", "national_designated_authority",
+                  "financial_instruments"):
+        assert field not in V._V2_FIELD
+        assert V.registry_records(DOC, field, V.amounts("USD 5,000,000")[0]) is False

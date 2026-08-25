@@ -31,6 +31,13 @@ No registry.json at all: identifiers stay unresolved but are NOT called
 missing — the closed-world claim needs the closed world to be loaded — and the
 literal id is used as the retrieval scope instead.
 
+`fields_for` is the question->field detection of this module, and it has one
+caller outside it: `registry._served_bits`, which serves the SAME fields off
+the SAME v2 candidates on a single-identifier turn, where `detect()` returns
+None and there is no matrix to serve them. One detector for both arities is
+the point — a field word that opens a column here opens a segment there, and
+neither arity can quietly know a field the other does not.
+
     plan = detect(question)                  # None => not our job
     matrix = build_matrix(plan, retriever)   # retriever optional
     block = render(matrix)                   # context for the answer model
@@ -60,13 +67,27 @@ MONEY_FIELDS = frozenset({"total_financing", "gcf_funding_requested", "co_financ
 NUMERIC_FIELDS = MONEY_FIELDS | frozenset({
     "beneficiaries_direct", "beneficiaries_indirect", "mitigation_outcome",
     "adaptation_outcome", "implementation_period", "lifespan"})
-# one v2 candidate per instrument: the cell is the list, not the first entry
-LIST_FIELDS = frozenset({"instruments"})
+# one v2 candidate per instrument: the cell is the list, not the first entry.
+# `financial_instruments` is the same A.10 table read down its amount column —
+# one candidate per instrument, each carrying the instrument in its own section
+# ('A.10 Grant', 'A.10 Loan') — so the cell is that list too, and the section
+# is what says which amount belongs to which instrument. It is deliberately
+# NOT in NUMERIC_FIELDS: a per-instrument breakdown is not one figure, and
+# ranking two documents by 'their financial instruments' would be ranking two
+# lists whose rows are not even the same instruments.
+LIST_FIELDS = frozenset({"instruments", "financial_instruments"})
 
 # Question order for the columns of the matrix; also the order render() prints.
+# The three additions of Phase 1 sit beside the field they belong with — the
+# two entity/authority fields after the accredited entity, the per-instrument
+# amounts after the instruments they price. Insertion, never reordering: two
+# questions asking for the same fields must still produce byte-identical
+# matrices, and `fields_for` reads its output order off this tuple.
 FIELD_ORDER: Tuple[str, ...] = (
-    "title", "countries", "accredited_entity", "project_size",
+    "title", "countries", "accredited_entity", "executing_entity",
+    "national_designated_authority", "project_size",
     "total_financing", "gcf_funding_requested", "co_financing", "instruments",
+    "financial_instruments",
     "implementation_period", "lifespan", "ess_category",
     "mitigation_outcome", "adaptation_outcome",
     "beneficiaries_direct", "beneficiaries_indirect",
@@ -91,7 +112,28 @@ _FIELD_RULES: Tuple[Tuple[str, Tuple[str, ...]], ...] = (
      ("gcf_funding_requested",)),
     (r"accredited entit|entite accredit|entite de mise en oeuvre|\bae\b",
      ("accredited_entity",)),
+    # The entity that RUNS the project is not the entity accredited to the
+    # Fund, and the corpus prints both (193 documents state one, section A.20
+    # or A.1.6). Kept clear of the accredited-entity rule's own words: nothing
+    # here matches 'accredited entity' or 'entite de mise en oeuvre'.
+    (r"executing entit|executing agenc|entites? d'?execution"
+     r"|agence d'?execution|entites? chargees? de l'?execution",
+     ("executing_entity",)),
+    # The country's own authority for the Fund (A.1.4), stated by 101
+    # documents and, before this, reachable by nothing.
+    (r"national designated authorit|designated authorit|\bnda\b"
+     r"|autorite nationale designee|autorite designee",
+     ("national_designated_authority",)),
     (r"countr(?:y|ies)|\bpays\b|\bnations?\b|geograph", ("countries",)),
+    # A.10 read down its AMOUNT column: 'financial instrument' is the
+    # template's own label for the table that prices each instrument, so the
+    # phrase asks for the amounts as well as the names. The bare-noun rule
+    # below stays names-only on purpose - 'a grant' in a title is not a
+    # request for a breakdown, and it is a title word in this corpus.
+    (r"financial instrument|instruments? financiers?"
+     r"|(?:amount|montant)s? (?:per|by|par) instrument"
+     r"|instrument breakdown|repartition par instrument",
+     ("instruments", "financial_instruments")),
     (r"instrument|\bgrants?\b|\bloans?\b|\bequity\b|\bpret\b|\bdon\b|\bgarantie\b",
      ("instruments",)),
     (r"beneficiar|beneficiaire|people reached|personnes touchees",
@@ -127,11 +169,14 @@ _FIELD_QUERIES: Dict[str, str] = {
     "title": "project or programme title",
     "countries": "country or countries of operation",
     "accredited_entity": "accredited entity",
+    "executing_entity": "executing entity implementation arrangements",
+    "national_designated_authority": "national designated authority NDA",
     "project_size": "project size category micro small medium large",
     "total_financing": "total financing GCF plus co-financing amount",
     "gcf_funding_requested": "total GCF funding requested amount",
     "co_financing": "total co-financing amount",
     "instruments": "financial instruments requested grant loan equity guarantee",
+    "financial_instruments": "amount requested per financial instrument grant loan equity",
     "implementation_period": "implementation period years months",
     "lifespan": "total project lifespan years",
     "ess_category": "environmental and social safeguards ESS category",

@@ -619,8 +619,8 @@ def test_needs_extraction_retries_error_rows():
 # (chainlit_app imports it as `_FP_RE`, planner reads it through
 # `registry.FP_RE`, eval_answers picks it up as `_FP_TOKEN_RE`), so these forms
 # reach every consumer of that object at once. One RUNTIME consumer keeps its
-# own pattern — `retrieve.identifier_tokens`, which matches 'fp\d{2,3}' against
-# lexical tokens — and it is recorded, not edited, in the sweep test below;
+# own pattern — `retrieve.identifier_tokens` — which the P2.5 track has since
+# widened to read registry.FP_RE (the sweep test below now pins the FIX);
 # `scripts/generate_rag_questions.py` keeps a third copy, offline, for building
 # question sets, and nothing a user types reaches it.
 
@@ -743,16 +743,17 @@ def test_the_consumer_that_keeps_its_own_pattern():
     `retrieve.identifier_tokens` does not read registry.FP_RE: it matches
     'fp\\d{2,3}' against LEXICAL TOKENS, so it routes the forms whose
     punctuation the tokenizer glues back together ('FP#220', 'FP.220') and
-    misses every form that puts a space or a word between 'FP' and the number.
-    So under this change 'FP no. 220' and 'proposal 220' get the registry note,
-    the guard and the doc resolution, but no per-document BM25 head. Recorded
-    rather than fixed: retrieve.py is not this pass's file.
+    missed every form that puts a space or a word between 'FP' and the number.
+    FLIPPED 2026-08-26: the coverage-campaign P2.5 track widened
+    identifier_tokens to read registry.FP_RE (measured: 159/200 query forms
+    improved, 0 regressed), so the recorded miss is now the recorded FIX —
+    every FP_RE form gets the per-document BM25 head too.
     """
     from gcf_qna.rag import retrieve
     assert retrieve.identifier_tokens("What is FP220 about?") == ["fp220"]
     assert retrieve.identifier_tokens("What is FP#220 about?") == ["fp220"]
     assert retrieve.identifier_tokens("What is FP.220 about?") == ["fp220"]
-    for missed in ["What is FP no. 220 about?", "Tell me about proposal 220.",
-                   "funding proposal number 220", "proposition 220"]:
-        assert retrieve.identifier_tokens(missed) == [], missed
-        assert registry.FP_RE.findall(missed) == ["220"], missed
+    for fixed in ["What is FP no. 220 about?", "Tell me about proposal 220.",
+                  "funding proposal number 220", "proposition 220"]:
+        assert retrieve.identifier_tokens(fixed) == ["fp220"], fixed
+        assert registry.FP_RE.findall(fixed) == ["220"], fixed

@@ -24,6 +24,15 @@ Every stage ranks on retrieval_text — whatever the build embedded — while
 every Hit carries source_text, so a retrieval-side prefix can never reach the
 answer model or ground.py. Chunks written before the schema existed have
 neither field and fall back to chunk["text"] throughout.
+
+Beside that pipeline sits one query the pipeline cannot ask. `probe_pages`
+fetches named pages (or, where the build stored them, named sections) of ONE
+named document, and ranks nothing globally: the caller already knows where
+the evidence is — the registry's conflict candidates each carry a page — and
+the measured failure is not that the page is unindexed but that it loses the
+similarity contest to a cover page phrased in the question's own words. It is
+a supplement, never a fallback: it selects nothing, degrades to nothing, and
+fires only when a caller asks.
 """
 from __future__ import annotations
 
@@ -36,7 +45,7 @@ from typing import Any, Dict, List, Optional, Sequence, Tuple
 from gcf_qna import config
 from gcf_qna.rag.embed import Embedder
 from gcf_qna.rag.lexical import LexicalIndex, _doc_tokens, fp_variants, tokenize
-from gcf_qna.rag.parse import retrieval_text, source_text
+from gcf_qna.rag.parse import retrieval_text, section_id, source_text
 
 # --- tunables -------------------------------------------------------------
 # Read at call time from the environment rather than at import: config.py is
@@ -125,10 +134,52 @@ def _doc_match(doc_id: str, wanted: str) -> bool:
     return bool(m) and f"fp{int(m.group(1)):03d}" in a
 
 
+def _registry_fp_numbers(query: str) -> List[int]:
+    """FP numbers the registry's own pattern binds in `query` (read-only).
+
+    Read rather than copied: `registry.FP_RE` is the single definition of what
+    an FP identifier looks like — chainlit_app, planner and the eval harness
+    all bind through that one object — and a second spelling of it here is how
+    the two halves of H10 drifted apart in the first place. Registry-as-an-
+    enhancement holds: an import failure leaves the token scan alone.
+    """
+    try:
+        from gcf_qna.rag import registry
+        return [int(n) for n in registry.FP_RE.findall(query)]
+    except Exception:            # registry is an enhancement, never a blocker
+        return []
+
+
 def identifier_tokens(query: str) -> List[str]:
-    """The FP / board / addendum codes a query names, dotless and sorted."""
-    return sorted({t.replace(".", "") for t in tokenize(query)
-                   if re.fullmatch(r"fp\d{2,3}|b\.?\d{2}|add\.?\d{2}", t)})
+    """The FP / board / addendum codes a query names, dotless and sorted.
+
+    Two readers of the same query, because one is not enough. The lexical
+    tokenizer sees every form whose punctuation it glues back together —
+    'FP220', 'FP#220', 'FP.220', 'FP-220', 'FP 220' — and nothing else:
+    'fp\\d{2,3}' is matched against TOKENS, so a word between the marker and
+    the number ('FP no. 220', 'proposal 220', 'proposition n° 220') leaves no
+    token to match, and an over-padded 'FP 0086' joins into a four-digit
+    'fp0086' the pattern rejects outright. Those are exactly the forms H10
+    widened `registry.FP_RE` for, and
+    `test_registry_resolver.test_the_consumer_that_keeps_its_own_pattern`
+    recorded this function as the one runtime consumer left behind: the
+    registry note, the FP-miss guard and doc resolution bound them, the
+    per-document BM25 head did not.
+
+    A number the token scan already found is never re-emitted. 'FP086' has to
+    stay ONE identifier: two tokens for one document would widen
+    `_target_docs`' routing limit and make `search_with_confidence` demand two
+    lexical resolutions where the corpus can only offer one spelling.
+
+    Board and addendum codes are the tokenizer's alone — `registry.FP_RE` is
+    an FP pattern, and 'Add.220' is deliberately not an FP number.
+    """
+    toks = {t.replace(".", "") for t in tokenize(query)
+            if re.fullmatch(r"fp\d{2,3}|b\.?\d{2}|add\.?\d{2}", t)}
+    bound = {int(m.group(1)) for t in toks
+             if (m := re.fullmatch(r"fp0*(\d{1,3})", t))}
+    toks |= {f"fp{n}" for n in _registry_fp_numbers(query) if n not in bound}
+    return sorted(toks)
 
 
 def doc_is_identifier(doc_id: str, id_toks: Sequence[str]) -> bool:
@@ -140,6 +191,40 @@ def doc_is_identifier(doc_id: str, id_toks: Sequence[str]) -> bool:
     """
     toks = set(_doc_tokens(doc_id))
     return any(v in toks for t in id_toks for v in fp_variants(t))
+
+
+def _page_no(page: Any) -> Optional[int]:
+    """A page hint as an int, or None. Hints arrive from the registry
+    ('page': 48), from a note line, and from a caller's literal — all three
+    spellings of the same number have to select the same chunks."""
+    try:
+        return int(str(page).strip())
+    except (TypeError, ValueError):
+        return None
+
+
+def _section_hit(path: Optional[str], wanted: Sequence[str]) -> bool:
+    """Does a chunk's section path contain one of the asked-for sections?
+
+    The stored path is a trail ('C PROJECT DETAILS > C.2 Financing by
+    component'); a hint is the printed id ('C.2'). Each component is reduced
+    to its id by the same parser the build used, so the comparison is between
+    ids and not between two spellings of a heading: 'C.2' matches the C.2
+    heading and any 'C.2.1' beneath it, 'C' matches every C.n, and 'C.2'
+    never matches 'C.20'.
+
+    On an index built without section paths this is False for every chunk —
+    which is the point of measuring the sectioned index before adopting it.
+    """
+    if not path or not wanted:
+        return False
+    ids = [(section_id(part.strip()) or "").upper() for part in str(path).split(">")]
+    ids = [i for i in ids if i]
+    for w in wanted:
+        w = str(w).strip().upper()
+        if w and any(i == w or i.startswith(w + ".") for i in ids):
+            return True
+    return False
 
 
 def _registry_docs(id_toks: Sequence[str]) -> List[str]:
@@ -247,6 +332,29 @@ class Retriever:
             self._by_doc = by_doc
         return self._by_doc
 
+    def _dense_over(self, qv, ids: Sequence[int], want: int
+                    ) -> Optional[List[Tuple[int, float]]]:
+        """Dense scores over a chosen subset of chunk ids, or None.
+
+        FAISS scans only the listed vectors, which is both exact and cheap —
+        no global pass to filter afterwards. `params=` needs a FAISS new
+        enough to accept it, so this returns None rather than raising and
+        every caller keeps its own fallback for the old library.
+        """
+        if len(ids) == 0:
+            return []
+        try:
+            import faiss
+            import numpy as np
+            arr = np.asarray(sorted(ids), dtype="int64")
+            sel = faiss.IDSelectorArray(arr)   # holds a POINTER: arr and sel must
+            params = faiss.SearchParameters()  # both stay alive across the search
+            params.sel = sel
+            scores, found = self.index.search(qv, min(want, len(arr)), params=params)
+            return [(int(i), float(s)) for s, i in zip(scores[0], found[0]) if i >= 0]
+        except Exception:
+            return None
+
     def _scoped(self, qv, doc_filter: str, want: int) -> List[Tuple[int, float]]:
         """Dense candidates restricted to one document.
 
@@ -261,19 +369,10 @@ class Retriever:
                if _doc_match(d, doc_filter) for i in group]
         if not ids:
             return []
-        try:
-            import faiss
-            import numpy as np
-            arr = np.asarray(sorted(ids), dtype="int64")
-            sel = faiss.IDSelectorArray(arr)   # holds a POINTER: arr and sel must
-            params = faiss.SearchParameters()  # both stay alive across the search
-            params.sel = sel
-            scores, found = self.index.search(qv, min(want, len(arr)), params=params)
-            picked = [(int(i), float(s)) for s, i in zip(scores[0], found[0]) if i >= 0]
-            if picked:
-                return picked
-        except Exception:
-            pass                              # older FAISS: fall back to filtering
+        picked = self._dense_over(qv, ids, want)
+        if picked:
+            return picked
+        # older FAISS (None) or an empty result: fall back to filtering
 
         def _pass(k: int) -> List[Tuple[int, float]]:
             out: List[Tuple[int, float]] = []
@@ -650,3 +749,90 @@ class Retriever:
         fused = sorted(rrf([dense_rank, lex_rank], config.RRF_K, weights).items(),
                        key=lambda kv: kv[1], reverse=True)[:pool]
         return self._finalize(query, fused, top_k)
+
+    # -- the supplementary probe ---------------------------------------------
+    def _probe_ids(self, doc_id: str, pages: Sequence[Any],
+                   sections: Sequence[str]) -> List[int]:
+        """One document's chunk ids on the asked-for pages or sections."""
+        want_pages = {p for p in (_page_no(p) for p in pages) if p is not None}
+        want_secs = [s for s in sections if str(s).strip()]
+        if not want_pages and not want_secs:
+            return []
+        out: List[int] = []
+        for d, group in self._doc_index().items():
+            if not _doc_match(d, doc_id):
+                continue
+            for i in group:
+                c = self.chunks[i]
+                if (_page_no(c.get("page")) in want_pages
+                        or _section_hit(c.get("section_path"), want_secs)):
+                    out.append(i)
+        return sorted(out)
+
+    def probe_pages(self, doc_id: str, pages: Sequence[Any] = (), k: int = 4,
+                    query: Optional[str] = None,
+                    sections: Sequence[str] = ()) -> List[Hit]:
+        """One document's chunks on named pages/sections: the second ask.
+
+        `search` answers "which passages best match this question". This
+        answers "show me THAT page of THAT document" — a different question,
+        and the one a conflict turn has to ask. The registry already knows
+        where the disagreeing figure is printed (`registry.conflicts()` gives
+        every candidate a `page` and a `section`, and `_conflict_lines`
+        prints them as '(p.N, SECTION)'), and the measured shortfall is not
+        that the page is missing: all fourteen conflict-class evidence pages
+        are indexed in both builds. It is that a second printing of a figure,
+        deep in a component table, loses the similarity contest to the cover
+        page that says the same thing in the question's own words. No amount
+        of reranking the wrong candidate pool fixes that; asking for the page
+        by name does.
+
+        The caller decides when to ask, and this module never wires itself in
+        — a supplementary query that fires on its own would spend top-k slots
+        on every turn that merely mentions a document.
+
+        Three refusals hold it honest:
+
+        * **The document is the caller's.** Matched with `_doc_match`, and an
+          empty result stays empty. `search`'s `doc_filter` degrades to an
+          unscoped search when nothing matches, which is right for a primary
+          query and wrong for a supplement: pages fetched from some other
+          document would be cited as this one's.
+        * **A page that is not indexed is not invented.** Ask for four pages,
+          get back the ones that exist — the caller can see which by the
+          pages the hits carry.
+        * **`query` orders, it never selects.** With a query the chunks the
+          page filter selected are scored by dense cosine against it; without
+          one they come back in document reading order, scored 0.0, because a
+          caller who asked for pages did not ask for a ranking.
+
+        Slots go one per page before any page takes a second — the rule
+        `_diversify` applies to search results, written out again here rather
+        than reused because for a page probe the spread IS the request:
+        `PAGE_DIVERSITY=0` must not be able to spend all four slots on one
+        page of a two-page conflict.
+
+        `sections` takes printed section ids ('C.2') and is inert on an index
+        whose chunks carry no `section_path` — which is every chunk of
+        `data/index/default`. Pages work on both builds.
+        """
+        ids = self._probe_ids(doc_id, pages, sections)
+        if not ids:
+            return []
+        scored: List[Tuple[int, float]] = []
+        if query:
+            import numpy as np
+            qv = np.asarray(self.embedder.encode([query]), dtype="float32")
+            scored = self._dense_over(qv, ids, len(ids)) or []
+        if not scored:
+            scored = [(i, 0.0) for i in ids]
+        scored = self._dedup(scored)
+        seen: Dict[Any, int] = {}
+        keyed: List[Tuple[int, int, Tuple[int, float]]] = []
+        for rank, (i, s) in enumerate(scored):
+            page = self.chunks[i].get("page")
+            nth = seen.get(page, 0)
+            seen[page] = nth + 1
+            keyed.append((nth, rank, (i, s)))
+        ordered = [t[2] for t in sorted(keyed, key=lambda t: (t[0], t[1]))]
+        return [self._hit(i, s) for i, s in ordered[:max(0, int(k))]]

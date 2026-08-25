@@ -458,6 +458,85 @@ def test_registry_v2_present_but_empty_for_one_document(reg):
 
 
 # --------------------------------------------------------------------------
+# the three fields Phase 1 added, and the invariants that keep the map whole
+# --------------------------------------------------------------------------
+
+@pytest.mark.parametrize("question,want", [
+    ("Who is the executing entity of FP254 and FP248?", "executing_entity"),
+    ("Quelle est l'entité d'exécution de FP254 et FP248 ?", "executing_entity"),
+    ("Which executing agency runs FP254 versus FP248?", "executing_entity"),
+    ("What is the national designated authority for FP254 and FP248?",
+     "national_designated_authority"),
+    ("Compare the NDA of FP254 and FP248", "national_designated_authority"),
+    ("Quelle est l'autorité nationale désignée de FP254 et FP248 ?",
+     "national_designated_authority"),
+    ("Compare the financial instruments of FP254 and FP248",
+     "financial_instruments"),
+    ("Quels instruments financiers pour FP254 et FP248 ?", "financial_instruments"),
+])
+def test_the_three_added_fields_are_detected(question, want):
+    """193 / 101 / 70 documents state them, and nothing could ask for them."""
+    fields, used_default = fields_for(question)
+    assert want in fields and not used_default
+
+
+def test_the_bare_instrument_word_still_asks_only_for_the_names():
+    """'a grant' is a title word in this corpus, not a request for the A.10
+    amount column — which is exactly why the amounts get their own rule."""
+    fields, _ = fields_for("Which instruments does the equity proposal use?")
+    assert fields == ["instruments"]
+    # ('financial' also carries the generic money word 'financ', which has
+    # always pulled in the two money fields — that arm is untouched here.)
+    fields, _ = fields_for("What financial instruments are requested?")
+    assert fields[-2:] == ["instruments", "financial_instruments"]
+
+
+def test_every_field_of_every_rule_is_orderable_and_answerable():
+    """Three maps, one vocabulary: a field that a rule can ask for must have a
+    column position and a doc-scoped query, or a matrix cell it fills has no
+    place to print and no way to fall back to retrieval."""
+    ruled = {f for _, fs in planner._FIELD_RULES for f in fs}
+    assert ruled <= set(planner.FIELD_ORDER)
+    assert set(planner.FIELD_ORDER) == set(planner._FIELD_QUERIES)
+    assert set(planner.DEFAULT_FIELDS) <= set(planner.FIELD_ORDER)
+    assert planner.LIST_FIELDS <= set(planner.FIELD_ORDER)
+
+
+def test_the_added_fields_were_inserted_not_reordered():
+    """`fields_for` reads its output order off FIELD_ORDER, so a question
+    asking for the same fields must still produce a byte-identical matrix."""
+    before = ("title", "countries", "accredited_entity", "project_size",
+              "total_financing", "gcf_funding_requested", "co_financing",
+              "instruments", "implementation_period", "lifespan", "ess_category",
+              "mitigation_outcome", "adaptation_outcome",
+              "beneficiaries_direct", "beneficiaries_indirect")
+    assert tuple(f for f in planner.FIELD_ORDER if f in before) == before
+
+
+def test_the_amount_column_of_a10_is_a_list_cell_with_the_instrument_in_its_section(
+        reg, monkeypatch):
+    patched = dict(REG2)
+    patched["48_gcf-b38-02-add08-funding-proposal-package-fp228"] = {
+        "fp": 228, "facts": dict(
+            REG2["48_gcf-b38-02-add08-funding-proposal-package-fp228"]["facts"],
+            financial_instruments=[
+                _money("$5 million USD", 5e6, "USD", 9, "A.10 Grant", "canonical",
+                       "million"),
+                _money("$46 million USD", 4.6e7, "USD", 9, "A.10 Loan",
+                       "supporting", "million")])}
+    monkeypatch.setattr(registry, "_cache_v2", patched)
+    m = build_matrix(detect("financial instruments of FP228 and FP254"))
+    cell = m.cell("FP228", "financial_instruments")
+    assert cell.status == "stated" and cell.raw == "$5 million USD"
+    assert [x["section"] for x in cell.extras] == ["A.10 Loan"]
+    out = render(m)
+    assert "$5 million USD, $46 million USD" in out
+    assert 'also: "$46 million USD" (p.9, A.10 Loan)' not in out   # same page
+    # a list of amounts is not one figure: no ranking is even offered
+    assert "financial_instruments: COMPARABLE" not in out
+
+
+# --------------------------------------------------------------------------
 # GATE (real data files)
 # --------------------------------------------------------------------------
 

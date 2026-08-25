@@ -14,6 +14,7 @@ import os
 import re
 import threading
 import time
+import unicodedata
 from typing import Optional
 
 import chainlit as cl
@@ -289,6 +290,25 @@ _NO_SUM_RULE = (
     "this note does not print is a total the answer does not have.")
 
 
+# The comparative the totals were built for (P4 asked "2020 or 2021?" and got
+# the direction backwards). _NO_SUM_RULE licenses QUOTING a computed total and
+# forbids arithmetic on it; it never says whether two totals may be RANKED.
+# release-10's l2x-xyear got the direction right on a single sample by reading
+# "do NOT add, subtract, extend or convert" as not covering "which is larger"
+# — a correct inference, not an instruction, and one run is not a measurement.
+# This sentence states the licence and leaves the prohibition exactly where it
+# was: two printed totals may be compared, while their difference, ratio and
+# sum are figures the note does not print. It ships ONLY when the note really
+# prints two totals, so one-year notes and the coverage note keep their text
+# byte for byte.
+_COMPARE_RULE = (
+    "This note prints a 'Computed total' for two years: those two totals MAY "
+    "be compared as printed — say which year is larger and quote both totals "
+    "with the coverage each states — but their difference, their ratio and "
+    "their sum are figures this note does not print, so the answer does not "
+    "have them either.")
+
+
 def _v2_money(row: dict):
     """The v2 canonical `gcf_funding_requested` candidate for a registry row.
 
@@ -332,6 +352,23 @@ def _span_text(labels: list, prefix: str = "") -> str:
     if len(labels) > 3 and labels[-1] - labels[0] == len(labels) - 1:
         return f"{prefix}{labels[0]}–{prefix}{labels[-1]}"
     return ", ".join(f"{prefix}{v}" for v in labels)
+
+
+def _boards_in(year: int) -> str:
+    """'B.28, B.29, B.30' — every board meeting BOARD_YEARS puts in `year`.
+
+    RULING 10 (2026-08-26): board→year facts are evidence, not prompt
+    knowledge, so the note prints them and the verifier can read them.
+
+    EVERY board, spelled out, and NOT `_span_text`: the ruling's own example
+    writes 'boards B.28–B.30', and a dash prints B.28 and B.30 while hiding
+    B.29 — which is one of the two claims this ruling exists to make
+    verifiable (`verify._check_years` matches board TOKENS against the
+    evidence text and nothing else). Four boards is the corpus maximum for a
+    year, so the full list costs ~24 characters.
+    """
+    return ", ".join(f"B.{b}" for b, yy in sorted(BOARD_YEARS.items())
+                     if yy == year)
 
 
 # --- the one total the corpus can defend (P4/F11) --------------------------
@@ -474,16 +511,36 @@ def _year_assist(question: str, hits: list):
             note += " " + _outside_corpus_note(outside)
         return matched + rest, note
     detailed = len(years) <= 3
-    lines = []
+    lines, totals = [], 0
     for y in sorted(years):
         rows = [r for r in registry.by_year(y) if r.get("fp")]
+        # RULING 10: the boards of the year this line lists, printed on the
+        # line that lists it. The empty arm below has always done this; the
+        # populated arms did not, so 'B.28 (2021)' was derivable from the
+        # prompt's board table and printed by no evidence.
+        #
+        # AT THE END OF THE LINE, not in the ruling's illustrative
+        # '28 proposals (boards B.28–B.30):' slot, and both halves of that are
+        # measured. The dash form prints B.28 and B.30 and hides B.29, which is
+        # one of the two claims this ruling exists to verify. And inserting ~26
+        # characters between the year and the line's first money figure flips
+        # a recorded verdict that has nothing to do with boards:
+        # `verify.iter_amounts` un-skips a bare 4-digit year when a currency
+        # token sits within 40 characters after it, so 'l2x-xyear's cited
+        # '**2020**' stopped matching the note's own '2020' the moment the
+        # first 'US$' moved out of that window. The fact the ruling asks for is
+        # on the line either way; the placement that leaves every other
+        # recorded verdict untouched is the one to ship.
+        boards = _boards_in(y)
+        at = f" Boards in {y}: {boards}." if boards else ""
         if rows and detailed:
             fps = "; ".join(f"FP{r['fp']}{_money(r)}" for r in rows)
-            lines.append(f"{y} — {len(rows)} proposals: {fps}.")
+            lines.append(f"{y} — {len(rows)} proposals: {fps}.{at}")
             if len(years) <= _TOTAL_YEARS_MAX:
                 total_line = _year_total_line(y, rows)
                 if total_line:
                     lines.append(total_line)
+                    totals += 1
         elif rows:
             # 'FPa–FPb' claims every number between a and b belongs to this
             # year, which is false for most years (2023 spans FP86..FP224 with
@@ -496,21 +553,33 @@ def _year_assist(question: str, hits: list):
                 span = f": FP{fps[0]}–FP{fps[-1]}"
             else:
                 span = f" (FP{fps[0]} … FP{fps[-1]}, not contiguous)"
-            lines.append(f"{y} — {len(rows)} proposals{span}.")
+            lines.append(f"{y} — {len(rows)} proposals{span}.{at}")
         else:
-            boards = ", ".join(f"B.{b}" for b, yy in sorted(BOARD_YEARS.items())
-                               if yy == y)
             lines.append(f"{y} — no registered proposals"
                          + (f" (boards {boards})." if boards else
                             " (no board meeting that year in this corpus)."))
-    tail = (" Retrieved excerpts dated " + ys + ": "
-            + "; ".join(_doc_label(h.doc_id, h.page) for h in matched) + "."
-            if matched else
-            f" None of the retrieved excerpts are dated {ys}; answer year-level "
-            f"questions from the registry list above and say so.")
+    # ONE LINE PER RETRIEVED EXCERPT, and that is the half of ruling 10 the
+    # verifier actually reads. `verify.build_evidence` walks a note block LINE
+    # BY LINE and files each line under the FIRST document id it names; as one
+    # long line, this tail filed the whole 2021 note — 28 proposals, a computed
+    # total and every board token — under whichever document happened to be
+    # matched first, and under no other. That is why release-7's 'B.30 (2021)'
+    # verified (its document was first) while 'B.28 (2021)' and 'B.29 (2021)',
+    # citing pages of documents named later in the same sentence, came back
+    # unsupported. Split, each label lands under its own document, so the board
+    # and year of the document a claim cites are held as evidence for THAT
+    # document — and the accidental attribution of the whole note to one
+    # document is gone with it.
+    if matched:
+        tail = ([f"Retrieved excerpts dated {ys}:"]
+                + [_doc_label(h.doc_id, h.page) for h in matched])
+    else:
+        tail = [f"None of the retrieved excerpts are dated {ys}; answer "
+                f"year-level questions from the registry list above and say so."]
+    rules = [_NO_SUM_RULE] + ([_COMPARE_RULE] if totals >= 2 else [])
     note = ("Note (computed from the corpus registry, which is complete — "
-            "this list is authoritative, unlike the excerpts): "
-            + " ".join(lines) + tail + " " + _NO_SUM_RULE)
+            "this list is authoritative, unlike the excerpts):\n"
+            + "\n".join(lines + tail + rules))
     if outside:          # e.g. "before 2015 or in 2020": half is out of range
         note += " " + _outside_corpus_note(outside)
     return matched + rest, note
@@ -593,6 +662,74 @@ _COVERAGE_ASK_RE = re.compile(
 _CORPUS_TOKEN_RE = re.compile(r"corpus|collection|dataset|base documentaire",
                               re.I)
 
+# THE THEMATIC FENCE (H12, probe P7). `_COVERAGE_ASK_RE` matches "how many
+# <up to two words> proposals", which is exactly the shape of "how many
+# AGRICULTURE proposals are in the corpus?" — and of "how many proposals in
+# the corpus CONCERN AGRICULTURE?", where the restriction sits after the noun
+# instead of before it. Both got a note that holds per-year counts and ends
+# "Answer corpus-coverage questions from this note", handed to a question the
+# registry has no field for. P7 measured the model coping (it said it has no
+# theme field and refused the count), so this is hygiene — but a note labelled
+# authoritative in front of a question it cannot answer is the one failure
+# shape this system is built not to have.
+#
+# The fence is an ALLOWLIST, in the house style, and it is deliberately
+# asymmetric: the vocabulary below is the meta-language of the corpus itself —
+# counting words, the corpus's own nouns, the copulas and articles that join
+# them, in both languages. Any other content word means the question restricts
+# the count to a subset (a theme, an entity, a country, a status), and the note
+# does not know that subset. Over-fencing costs a definitive phrasing and
+# leaves the excerpt-scoped answer that predates the note; under-fencing puts
+# a false authority in front of the model. That is why an unrecognised word
+# silences the note rather than being ignored.
+_COVERAGE_VOCAB = frozenset("""
+how many much what which whats does do did is are was were be been there
+this that these those the an and or of in on at to for with by from within
+inside across per each its it their they all total totals in-total overall
+altogether exactly currently now today please tell me us give show list
+corpus collection dataset database base documentaire jeu donnees data
+document documents doc docs proposal proposals proposition propositions
+funding financement finance financing fund funds gcf green climate gsf
+board boards meeting meetings session sessions conseil reunion reunions
+year years annee annees calendar
+cover covers covered coverage contain contains contained contents include
+includes included hold holds held have has spans span comprise comprises
+comprised consist consists made up size number count counted counts
+represented present available indexed stored listed sampled range scope
+whole entire full still only about combien quel quelle quels quelles
+most least fewest fewer more less largest smallest biggest highest lowest
+top earliest latest first second third last plus moins plupart grand grande
+hi hello hey good morning afternoon evening thanks thank you your yours
+could would can may might want wanted wondering need needed like know tell
+say question questions bonjour salut merci svp sil plait je jai voudrais
+aimerais savoir pouvez peux dire dis dites vous nous rapide quick just
+simply also again actually roughly approximately around exact au juste
+petit petite premier premiere dernier derniere haut bas eleve eleves
+ce cet cette ces le la les de du des au aux en dans sur par pour et
+contient contiennent couvre couvrent compte comptent comprend comprennent
+contenus contenues comporte comportent figure figurent sont est ete etre
+il elle ils elles on ny na dont total totale totaux totales nombre
+""".split())
+
+
+def _deaccent(text: str) -> str:
+    """'réunions' -> 'reunions' — one folding, shared by the fence's vocabulary
+    and the question it reads, so an accent never decides whether a note
+    fires."""
+    return "".join(c for c in unicodedata.normalize("NFKD", text or "")
+                   if not unicodedata.combining(c))
+
+
+def _off_vocabulary(question: str) -> list:
+    """Words a coverage question carries that are not the corpus's own.
+
+    Single characters are dropped before the comparison: they are French
+    elisions and hyphen glue ("l'agriculture", "couvre-t-il"), never the
+    content word that restricts a count.
+    """
+    words = re.findall(r"[^\W\d_]{2,}", _deaccent(question or "").lower())
+    return [w for w in words if w not in _COVERAGE_VOCAB]
+
 
 def _corpus_coverage_note(question: str):
     """Corpus-coverage questions name no year and no board code, so neither
@@ -611,11 +748,18 @@ def _corpus_coverage_note(question: str):
         return None
     if re.search(r"\bb\.?\s?\d{1,2}\b", q, re.I):
         return None
+    off = _off_vocabulary(q)
+    if off:
+        return None      # a restricted count: see _COVERAGE_VOCAB (H12/P7)
     lo, hi = min(BOARD_YEARS), max(BOARD_YEARS)
     counts = {y: len([r for r in registry.by_year(y) if r.get("fp")])
               for y in sorted(set(BOARD_YEARS.values()))}
     total = sum(counts.values())
-    per_year = "; ".join(f"{y}: {n}" for y, n in sorted(counts.items()))
+    # RULING 10 again: the boards of every year this note counts, on the line
+    # that counts it — the same fact the year note now prints, for the note
+    # that fires when no year is named at all.
+    per_year = "; ".join(f"{y}: {n} ({_boards_in(y)})"
+                         for y, n in sorted(counts.items()))
     return ("Note (computed from the corpus registry, which is complete — "
             "authoritative, unlike the excerpts): this corpus covers Green "
             f"Climate Fund board meetings B.{lo} ({BOARD_YEARS[lo]}) through "
@@ -1174,7 +1318,7 @@ def _verifier_flagged_cites(res) -> set:
     return out
 
 
-async def _verify_reply(reply, evidence: dict):
+async def _verify_reply(reply, evidence: dict, truncated: bool = False):
     """Audit a finished answer; returns the verification result, or None when
     the verification could not run.
 
@@ -1193,7 +1337,8 @@ async def _verify_reply(reply, evidence: dict):
                 [f"status: {res.status}",
                  "claims: " + ", ".join(f"{k} {n}" for k, n in res.counts().items())]
                 + [f"- {v.status}: {_claim_texts([v], width=90)} — {v.reason}"
-                   for v in res.failures[:6]] + list(res.notes))
+                   for v in res.failures[:6]] + list(res.notes)
+                + ([_TRUNCATION_STEP_NOTE] if truncated else []))
         # 'abstain' — every fact-bearing claim failed — is the one status that
         # touches the message at all, and it PREFIXES the model's own body
         # rather than replacing any part of it.
@@ -1236,6 +1381,42 @@ def _answer_cap() -> dict:
     an explicit null that OpenAI-compatible servers may reject."""
     return ({"max_completion_tokens": config.MAX_ANSWER_TOKENS}
             if config.MAX_ANSWER_TOKENS else {})
+
+
+def _finish_reason(part) -> Optional[str]:
+    """The finish_reason of a streamed chunk, or None.
+
+    Every access is defensive on purpose: only the LAST chunk of a stream
+    carries the field at all, some OpenAI-compatible servers omit it entirely,
+    and a stream reader that raises turns a cap into a lost answer — which is
+    strictly worse than an unmarked truncation.
+    """
+    choices = getattr(part, "choices", None) or []
+    return getattr(choices[0], "finish_reason", None) if choices else None
+
+
+#: What the reader is told when the model stopped because it ran out of budget
+#: rather than because it had finished. MAX_ANSWER_TOKENS is unset by default
+#: (d30da86) precisely because a cap silently truncated answers — agg-inv-undp
+#: named 34 of 41 proposals and read as a complete list. This fires only when
+#: an operator re-imposes a budget, and then it says so in the answer's own
+#: language: a list that stops early must never look like a list that ended.
+def _truncation_marker(lang: str = None) -> str:
+    return ("\n\n… [réponse tronquée : le budget de jetons configuré a été "
+            "atteint ; la suite n'a pas été rédigée]"
+            if lang == "French" else
+            "\n\n… [answer truncated at the configured token budget; the rest "
+            "was never written]")
+
+
+#: The same fact, for the verification step: the verdicts below it cover the
+#: text that was written, and the claims the answer never got to are neither
+#: supported nor unsupported — they are absent, and a status of 'verified' on
+#: a truncated answer must not be read as 'complete'.
+_TRUNCATION_STEP_NOTE = ("answer truncated: the model stopped at the "
+                         "configured token budget (finish_reason='length'), "
+                         "so these verdicts cover only the text that was "
+                         "written")
 
 
 def _index_dir():
@@ -1508,17 +1689,26 @@ async def main(message: cl.Message):
         # answers become pseudo-evidence; here the conversation IS the
         # subject ('what did you just say?').
         reply = cl.Message(content="")
+        lang = _detect_lang(message.content)
         stream = await client.chat.completions.create(
             model=config.CHAT_MODEL,
             **_answer_cap(),
             messages=[{"role": "system",
-                       "content": assemble_chat(_detect_lang(message.content))}] + history +
+                       "content": assemble_chat(lang)}] + history +
                      [{"role": "user", "content": message.content}],
             stream=True,
         )
+        truncated = False
         async for part in stream:
             if part.choices and part.choices[0].delta.content:
                 await reply.stream_token(part.choices[0].delta.content)
+            if _finish_reason(part) == "length":
+                truncated = True
+        # No verification step on this path to carry the note, so the marker
+        # is the whole report — streamed in, so what the user sees and what
+        # enters history are the same string.
+        if truncated:
+            await reply.stream_token(_truncation_marker(lang))
         await reply.send()
         history += [{"role": "user", "content": message.content},
                     {"role": "assistant", "content": reply.content}]
@@ -1697,15 +1887,27 @@ async def main(message: cl.Message):
         messages=messages,
         stream=True,
     )
+    truncated = False
     async for part in stream:
         if part.choices and part.choices[0].delta.content:
             await reply.stream_token(part.choices[0].delta.content)
+        if _finish_reason(part) == "length":
+            truncated = True
     await reply.send()
 
     # Claim-level audit of what was just written, BEFORE it becomes history: an
     # abstained answer enters history banner and all, so the next turn's
     # conductor remembers the caveat rather than a bare unverified claim.
-    res = await _verify_reply(reply, evidence) if evidence is not None else None
+    res = await _verify_reply(reply, evidence, truncated) \
+        if evidence is not None else None
+    # The marker goes on AFTER the audit, and that is deliberate: it is the
+    # system's own line, not the model's, and claim extraction must never see
+    # it. It still lands in `reply.content` before history is written, so the
+    # next turn's conductor knows the answer was cut short.
+    if truncated:
+        reply.content = (reply.content or "").rstrip() + _truncation_marker(
+            _detect_lang(message.content))
+        await reply.update()
 
     history += [
         {"role": "user", "content": message.content},

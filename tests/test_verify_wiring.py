@@ -119,9 +119,16 @@ class FakeRetriever:
 
 
 class FakeOpenAI:
-    def __init__(self, conductor_json=None, answer="ANSWER", **kw):
+    def __init__(self, conductor_json=None, answer="ANSWER",
+                 finish_reason="stop", **kw):
         self.conductor_json = conductor_json
         self.answer = answer
+        # Why the fake stream ends the way a real one does: only the LAST
+        # chunk carries finish_reason, and 'length' is the server's one signal
+        # that the answer stopped at the cap instead of finishing. Default
+        # 'stop', so every other test in this file streams the normal ending
+        # and proves the marker never fires on it.
+        self.finish_reason = finish_reason
         self.calls = []
         self.chat = types.SimpleNamespace(completions=types.SimpleNamespace(
             create=self._create))
@@ -137,6 +144,12 @@ class FakeOpenAI:
     async def _stream(self):
         yield types.SimpleNamespace(choices=[types.SimpleNamespace(
             delta=types.SimpleNamespace(content=self.answer))])
+        # the real last chunk: no content, and the reason the model stopped.
+        # The content chunk above carries no finish_reason attribute at all,
+        # which is also what the app's reader has to survive.
+        yield types.SimpleNamespace(choices=[types.SimpleNamespace(
+            delta=types.SimpleNamespace(content=None),
+            finish_reason=self.finish_reason)])
 
     @property
     def answer_call(self):
@@ -721,3 +734,132 @@ def test_the_live_path_of_a_partial_turn_is_unchanged(monkeypatch, app_env):
     assert FakeMessage.updated == []
     assert session.get("history")[-1] == {"role": "assistant",
                                           "content": GOOD_ANSWER}
+
+
+# ---------------------------------------------------------------------------
+# F. the truncation marker — the cap's one remaining honesty gap
+# ---------------------------------------------------------------------------
+#
+# MAX_ANSWER_TOKENS is unset by default since d30da86, because a cap silently
+# truncated answers: agg-inv-undp named 34 of 41 proposals and read as a
+# finished list. Removing the default does not remove the failure — it moves
+# it to whoever re-imposes a budget. The stream already knows: the last chunk's
+# finish_reason is 'length' rather than 'stop'. So the turn says so, in the
+# answer and in the verification step, and says nothing at all otherwise.
+
+def _capped(monkeypatch, tokens=40):
+    monkeypatch.setattr(config, "MAX_ANSWER_TOKENS", tokens)
+
+
+def test_an_answer_that_finished_is_never_marked(monkeypatch, app_env):
+    """The default configuration: no cap, finish_reason 'stop'. Byte for byte
+    the turn that ships today."""
+    monkeypatch.setattr(config, "VERIFY", True)
+    monkeypatch.setattr(config, "VERIFY_LLM", False)
+    assert config.MAX_ANSWER_TOKENS is None
+    client = FakeOpenAI(conductor_json=CONDUCTOR_ONE, answer=GOOD_ANSWER)
+    session, _ = _run_main(monkeypatch, Q220, [], client)
+    assert "max_completion_tokens" not in client.answer_call
+    assert FakeMessage.sent == [GOOD_ANSWER, f"📎 Sources: {FP220} p.5"]
+    assert FakeMessage.updated == []
+    assert session.get("history")[-1]["content"] == GOOD_ANSWER
+    step = next(s for s in FakeStep.steps if s.name == "verification")
+    assert app._TRUNCATION_STEP_NOTE not in step.output
+
+
+def test_a_capped_answer_that_stopped_at_the_budget_says_so(monkeypatch, app_env):
+    """The cap IS set and the model ran out of it: the reader is told, in the
+    message and in the audit, and the next turn's conductor inherits the fact
+    through history."""
+    monkeypatch.setattr(config, "VERIFY", True)
+    monkeypatch.setattr(config, "VERIFY_LLM", False)
+    _capped(monkeypatch)
+    client = FakeOpenAI(conductor_json=CONDUCTOR_ONE, answer=GOOD_ANSWER,
+                        finish_reason="length")
+    session, _ = _run_main(monkeypatch, Q220, [], client)
+    marker = app._truncation_marker("English")
+    assert client.answer_call["max_completion_tokens"] == 40
+    assert FakeMessage.sent[0] == GOOD_ANSWER          # streamed as written
+    assert FakeMessage.updated == [GOOD_ANSWER + marker]
+    assert session.get("history")[-1]["content"] == GOOD_ANSWER + marker
+    assert "truncated at the configured token budget" in marker
+    step = next(s for s in FakeStep.steps if s.name == "verification")
+    assert app._TRUNCATION_STEP_NOTE in step.output
+    assert "finish_reason='length'" in step.output
+
+
+def test_the_marker_is_the_systems_line_and_never_a_claim(monkeypatch, app_env):
+    """It goes on AFTER the audit: claim extraction must never see a sentence
+    the model did not write. Checked from both ends — the verifier is handed
+    the model's own text, and the marker mints no claim of its own."""
+    monkeypatch.setattr(config, "VERIFY", True)
+    _capped(monkeypatch)
+    seen = []
+    _stub_verify(monkeypatch, _result(GOOD_ANSWER, "verified"), record=seen)
+    client = FakeOpenAI(conductor_json=CONDUCTOR_ONE, answer=GOOD_ANSWER,
+                        finish_reason="length")
+    _run_main(monkeypatch, Q220, [], client)
+    assert seen[0]["answer"] == GOOD_ANSWER
+    for lang in (None, "English", "French"):
+        marker = app._truncation_marker(lang)
+        assert verify.extract_claims(marker) == []
+        assert verify.parse_citations(marker) == []
+
+
+def test_the_marker_speaks_the_answers_language(monkeypatch, app_env):
+    """A French answer ending in an English system line is the same defect the
+    language check exists for."""
+    monkeypatch.setattr(config, "VERIFY", False)
+    _capped(monkeypatch)
+    fr = "FP220 demande 50 000 000 USD au GCF."
+    client = FakeOpenAI(conductor_json=CONDUCTOR_ONE, answer=fr,
+                        finish_reason="length")
+    session, _ = _run_main(
+        monkeypatch, "Quelle entité accréditée met en œuvre le FP220 ?", [],
+        client)
+    assert session.get("history")[-1]["content"].endswith(
+        app._truncation_marker("French"))
+    assert "réponse tronquée" in session.get("history")[-1]["content"]
+
+
+def test_the_chat_turn_marks_its_own_truncation(monkeypatch, app_env):
+    """Both answer loops, not one. The chat branch has no verification step to
+    carry the note, so the marker is streamed into the reply itself — what the
+    user reads and what enters history are the same string."""
+    monkeypatch.setattr(config, "VERIFY", True)
+    _capped(monkeypatch)
+    client = FakeOpenAI(conductor_json={"mode": "chat", "queries": []},
+                        answer="Voici un résumé de notre échange.",
+                        finish_reason="length")
+    session, _ = _run_main(monkeypatch, "Résume ce que tu viens de dire.", [],
+                           client)
+    marker = app._truncation_marker("French")
+    assert FakeMessage.sent == ["Voici un résumé de notre échange." + marker]
+    assert FakeMessage.updated == []
+    assert session.get("history")[-1]["content"].endswith(marker)
+    assert not any(s.name == "verification" for s in FakeStep.steps)
+
+
+def test_a_capped_answer_that_finished_early_is_not_marked(monkeypatch, app_env):
+    """The cap alone is not the signal — a capped answer that finished on its
+    own stops at 'stop', and marking it would be a false warning."""
+    monkeypatch.setattr(config, "VERIFY", False)
+    _capped(monkeypatch)
+    client = FakeOpenAI(conductor_json=CONDUCTOR_ONE, answer=GOOD_ANSWER,
+                        finish_reason="stop")
+    session, _ = _run_main(monkeypatch, Q220, [], client)
+    assert session.get("history")[-1]["content"] == GOOD_ANSWER
+    assert FakeMessage.updated == []
+
+
+def test_a_stream_that_reports_nothing_is_survivable(monkeypatch, app_env):
+    """Not every OpenAI-compatible server sends finish_reason. A reader that
+    raises on its absence turns a cap into a lost answer, which is strictly
+    worse than an unmarked truncation."""
+    assert app._finish_reason(types.SimpleNamespace(choices=[])) is None
+    assert app._finish_reason(types.SimpleNamespace(choices=None)) is None
+    assert app._finish_reason(types.SimpleNamespace()) is None
+    assert app._finish_reason(types.SimpleNamespace(choices=[
+        types.SimpleNamespace(delta=types.SimpleNamespace(content="x"))])) is None
+    assert app._finish_reason(types.SimpleNamespace(choices=[
+        types.SimpleNamespace(finish_reason="length")])) == "length"

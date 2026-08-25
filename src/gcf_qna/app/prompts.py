@@ -82,7 +82,7 @@ MATRIX_BLOCK = (
 
 YEAR_BLOCK = (
     "Document ids encode the GCF board meeting: '...-b42-02-...' means B.42.\n"
-    "Board-meeting years (from the corpus): B.11=2015; B.13-B.15=2016;\n"
+    "Board-meeting years (from the corpus): B.11=2015; B.12-B.15=2016;\n"
     "B.16-B.18=2017; B.19-B.21=2018; B.22-B.24=2019; B.25-B.27=2020;\n"
     "B.28-B.30=2021; B.31-B.34=2022; B.35-B.37=2023; B.38-B.40=2024;\n"
     "B.41-B.43=2025.\n"

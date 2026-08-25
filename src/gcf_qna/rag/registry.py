@@ -25,6 +25,24 @@ When registry_v2.json is absent or unreadable — or simply predates either
 addition — the note falls back, field by field, to the exact v1 string it
 always printed.
 
+On a SINGLE-identifier turn that line also SERVES the fields the question asks
+for (``_served_bits``). ``planner.detect`` builds its evidence matrix only when
+a question names two documents, so at arity one every field beyond the five
+this line prints was reachable through retrieval alone: the matrix served
+eighteen fields, the line served five, and the same fact came back page-cited
+or not depending on how many documents the question happened to name. The
+fields come from ``planner.fields_for`` — one detector for both arities — the
+values and pointers from schema 2's own candidates, and three guards keep the
+line a note rather than a dump: only the fields the question asks for, nothing
+at all for a field the store does not hold (a confirmed absence is data the
+registry does not yet have, and inventing one here would be the exact failure
+this file exists to prevent), and nothing for a field the document contradicts
+itself on — that one belongs to the conflict warning, which now covers every
+field rather than only the money ones. A document whose extraction the builder
+itself flagged (``suspect``, ``llm_fallback``) says so on its own line, in a
+marker that publishes no page and no document, the way a cut list says it was
+cut.
+
 Three lookups run in the OTHER direction: ``by_country``, ``by_entity`` and
 ``by_board``, the inverse index H1/H2/H16 of docs/l1-l2-coverage-review.md
 found missing, each with a ``registry_note`` trigger that fires only on a
@@ -189,6 +207,64 @@ _MONEY_FIELDS = ("gcf_funding_requested", "total_financing", "co_financing")
 # where' just as well.
 _MAX_CONFLICT_LINES = 2
 _MAX_CONFLICT_ALTS = 2
+
+# --- fields the line SERVES at arity one ------------------------------------
+# H7 / campaign Phase 1. A single-identifier turn gets no evidence matrix —
+# `planner.detect` needs two identifiers — so every field registry v2 holds
+# beyond the five this line already prints was reachable only through
+# retrieval, at arity one, for the whole corpus: the matrix serves 18 fields,
+# the line printed 5. The fields the QUESTION asks for are appended to the line
+# below, read off the SAME v2 candidates the matrix cell would quote and
+# carrying the SAME '(p.N, SECTION)' pointer, so a fact answered at both
+# arities is answered with one value and one citation.
+#
+# Three guards, and each one is a defect this pass is not allowed to create:
+#   * only the asked fields (`_asked_fields`), never every field the store
+#     holds — a kitchen-sink line is not evidence, it is noise the model must
+#     sift, and this line is what the prompt calls authoritative;
+#   * an absent field appends NOTHING. Silence here is not an answer to the
+#     ask; recording a CONFIRMED absence is Phase 3's data work, and a note
+#     that invented 'not stated' from an empty candidate list would be
+#     asserting a fact the registry does not hold;
+#   * a field the document CONTRADICTS itself on is left to `_conflict_lines`,
+#     which prints every disagreeing figure with its page. Printing the
+#     canonical figure here as well would be the silent choice between two
+#     figures that the conflict machinery exists to refuse.
+#: Fields `_fmt` already prints; serving them again would double-print a fact.
+_LINE_FIELDS = frozenset({
+    "title", "countries", "accredited_entity",
+    "gcf_funding_requested", "total_financing"})
+#: field -> the label that HEADS its segment. Not decoration: `verify.
+#: _field_lines` reads the value of a field off this one-line note by finding
+#: the label at the head of its semicolon-separated part, and `verify.
+#: _FIELD_LABELS` is the vocabulary that anchors it — so the label a field is
+#: served under here is the label the verifier looks for there.
+_SERVED_LABELS = {
+    "executing_entity": "executing entity",
+    "national_designated_authority": "national designated authority",
+    "project_size": "project size",
+    "co_financing": "co-financing",
+    "instruments": "instruments",
+    "financial_instruments": "financial instruments",
+    "implementation_period": "implementation period",
+    "lifespan": "lifespan",
+    "ess_category": "ESS category",
+    "mitigation_outcome": "mitigation outcome",
+    "adaptation_outcome": "adaptation outcome",
+    "beneficiaries_direct": "direct beneficiaries",
+    "beneficiaries_indirect": "indirect beneficiaries",
+}
+#: Characters of one served value, and of one disagreeing print of a text
+#: field. The money fields print short figures; `executing_entity` prints
+#: whole paragraphs of A.20 (the longest in the corpus runs past 300
+#: characters), and a note is one line per document. Cut values carry the
+#: marker `_clip` puts on them.
+_MAX_FIELD_CHARS = 120
+#: Values a served LIST field prints before it truncates. Set ABOVE the
+#: largest list the corpus actually holds (four instruments, FP176) on the same
+#: reasoning as `_MAX_INVERSE_ROWS`: it is a backstop against a future corpus,
+#: not a working cap — and when it does bite it says so.
+_MAX_FIELD_VALUES = 6
 
 # ---------------------------------------------------------------------------
 # lists a note prints: a cut one must SAY it is cut, and carry the true count
@@ -380,8 +456,243 @@ def _amount(c: dict) -> str:
     return f"{raw} {cur}"
 
 
+def _planner():
+    """The planner module, imported at CALL time.
+
+    `planner` imports this module at import time — the board-code pattern and
+    the resolver live here — so the reuse this file needs in the other
+    direction (`fields_for`, `FIELD_ORDER`, `LIST_FIELDS`) can only be a
+    deferred import. It is also the never-break contract every other v2
+    reader here honours: a planner that failed to import must leave the note
+    exactly as schema 1 alone produced it, not raise inside a note.
+    """
+    try:
+        from gcf_qna.rag import planner
+        return planner
+    except Exception:                                          # noqa: BLE001
+        return None
+
+
+# A descriptive apposition after an identifier NAMES the document; it does not
+# ask for a field. Measured on the 126-case gold set, where two questions ask
+# for exactly one field each and mention a second field's word inside the
+# phrase that names the document: 'FP152, the Global Subnational Climate Fund
+# equity proposal' (asks: accredited entity) and 'FP259, the Pacific tuna
+# adaptation programme' (asks: total financing). `fields_for` is calibrated for
+# a MATRIX, where a spare column costs one line of a block that is already a
+# block; on the one registry line the prompt calls authoritative, a spare
+# segment is a fact asserted about a document nobody asked about. So the span
+# is dropped from the question text before the fields are read off it.
+#
+# Narrowly: only a span that FOLLOWS an identifier, only up to the first
+# sentence break, and only in this module — `fields_for`'s own rules and every
+# matrix the planner builds are untouched by it.
+_APPOSITION_RE = re.compile(
+    r",\s*(?:the|a|an|le|la|les|un|une)\s+[^,?.;!]{0,80}", re.I)
+def _drop_document_apposition(question: str) -> str:
+    """'FP259, the Pacific tuna adaptation programme?' -> 'FP259?'"""
+    out: List[str] = []
+    pos = 0
+    for m in _APPOSITION_RE.finditer(question or ""):
+        if m.start() < pos or not _ENDS_WITH_ID_RE.search(question[:m.start()]):
+            continue
+        out.append(question[pos:m.start()])
+        pos = m.end()
+    out.append((question or "")[pos:])
+    return "".join(out)
+
+
+def _asked_fields(question: str) -> List[str]:
+    """The fields THIS question asks for that the line does not already print.
+
+    `planner.fields_for` is the detector, unchanged and unduplicated: the same
+    keyword map, the same EN+FR rules, the same FIELD_ORDER output order that
+    makes two spellings of one ask produce one answer. Its default set is
+    refused here — 'tell me about FP254' names no field, and the four defaults
+    are the four this line already prints — so a question with no field word
+    appends nothing.
+    """
+    p = _planner()
+    if p is None or not (question or "").strip():
+        return []
+    try:
+        fields, used_default = p.fields_for(_drop_document_apposition(question))
+    except Exception:                                          # noqa: BLE001
+        return []
+    if used_default:
+        return []
+    return [f for f in fields if f not in _LINE_FIELDS]
+
+
+def _text_fig(c: dict) -> str:
+    """`_fig` for a field whose value is text: the print, clipped with the
+    marker a cut string carries, and where it is printed."""
+    return f"{_clip(c['raw'], _MAX_FIELD_CHARS)} {_where(c)}"
+
+
+def _instructional(raw: Optional[str]) -> bool:
+    """Is this print the TEMPLATE talking rather than the document answering?
+
+    'Indicate the number of years and months the project is expected to...',
+    'If not the Accredited Entity, please indicate the full legal name of...'
+    — 14 candidates over 11 documents where the builder captured the prompt
+    instead of the answer. Two reasons not to serve one, and the second is the
+    load-bearing one:
+
+    * it is not a value. A note line the prompt calls authoritative would be
+      stating the template's question as the document's answer.
+    * `verify._field_lines` skips a WHOLE LINE that carries an instruction
+      phrase — those phrases were the source of every false contradiction
+      measured on the recorded answers — and a registry line is one line per
+      document. Serving one would take that document's money segments off the
+      checker with it: the field service would be buying one field by blinding
+      the verifier on the rest of the line.
+
+    ONE definition of the phrase, imported from the reader that acts on it, so
+    the two cannot drift; and never a blocker, like every other cross-module
+    read in this file.
+    """
+    try:
+        from gcf_qna.rag import verify
+        return bool(verify._INSTRUCTION_RE.search(raw or ""))
+    except Exception:                                          # noqa: BLE001
+        return False
+
+
+def _served_value(label: str, field: str, c: dict) -> str:
+    """One served value: '<label>: <as printed> (p.N, SECTION)'.
+
+    Money formatting for a money print — `_money_bit`, which quotes a figure
+    whose scale word its own mantissa contradicts and says so — and plain,
+    clipped text for everything else. A print is money here when the field is
+    one of the money fields or when schema 2 recorded a currency for it, which
+    is what makes a number an amount; `mitigation_outcome`'s '37.6 million
+    CO2e' is a figure and not an amount, and does not get an amount's wording.
+    A print too long for the cap always takes the text form: `_money_bit` does
+    not clip, and no money print in this corpus is that long.
+    """
+    raw = str(c.get("raw") or "")
+    short = _clip(raw, _MAX_FIELD_CHARS)
+    if (field in _MONEY_FIELDS or c.get("currency")) and short == raw:
+        return _money_bit(label, c)
+    return f"{label}: {short} {_where(c)}"
+
+
+def _served_bits(doc_id: Optional[str], question: str) -> List[str]:
+    """One segment per asked-for field this document states, or []."""
+    fields = _asked_fields(question)
+    if not fields:
+        return []
+    f2 = _v2_facts(doc_id)
+    p = _planner()
+    lists = getattr(p, "LIST_FIELDS", frozenset()) if p else frozenset()
+    bits: List[str] = []
+    for field in fields:
+        usable = [c for c in (f2.get(field) or []) if _usable(c)]
+        if not usable:
+            continue                  # absent: the note says nothing about it
+        if any(c.get("status") == "conflicting" for c in usable):
+            continue                  # _conflict_lines already prints them all
+        cands = [c for c in usable if not _instructional(c.get("raw"))]
+        if not cands:
+            continue                  # every print of it is the template's own
+        label = _SERVED_LABELS.get(field, field.replace("_", " "))
+        if field in lists:
+            # ONE SEGMENT PER VALUE, and deliberately not `_list_bit`'s
+            # count-first shape. `verify._field_lines` reads the value of a
+            # field as the first amount AFTER its label, so
+            # 'financial instruments (2): $5 million USD ...' publishes the
+            # COUNT as the field's value — measured: a claim correctly stating
+            # the loan's $46 million came back as a contradiction of '2'. The
+            # count-first shape is safe for a list of names (`countries`) and
+            # unsafe for a list of figures, so a served list repeats its label
+            # instead, which also puts every value under a label the reader can
+            # find rather than only the first. One candidate per instrument,
+            # and the SECTION ('A.10 Loan') is what says which instrument a
+            # value belongs to.
+            seen, vals = set(), []
+            for c in cands:
+                key = (c.get("raw") or "").strip().casefold()
+                if key and key not in seen:
+                    seen.add(key)
+                    vals.append(c)
+            bits += [_served_value(label, field, c)
+                     for c in vals[:_MAX_FIELD_VALUES]]
+            if len(vals) > _MAX_FIELD_VALUES:
+                bits.append(f"{label}: not every value is listed — "
+                            f"{_MAX_FIELD_VALUES} of {len(vals)} shown above, "
+                            "list truncated")
+            continue
+        # canonical first, then the earliest page that states it — the same
+        # order `planner._registry_cell` fills a matrix cell in, so the two
+        # arities cannot quote different prints of one fact
+        canon = _canon2(f2, field)
+        bits.append(_served_value(
+            label, field,
+            canon if canon in cands else min(cands, key=lambda c: c["page"])))
+    return bits
+
+
+# --- extraction honesty -----------------------------------------------------
+# 16 documents are flagged `suspect` by the v2 builder's own consistency check
+# and 19 were read by its LLM fallback rather than by the template rules, and
+# until now the line printed their values exactly as confidently as any other.
+# The fix is the one `_list_bit` already established for a cut list: the line
+# says so itself. Adjudicating the 35 is Phase 3's work; saying which 35 they
+# are is this line's.
+#
+# The marker must publish NO page and NO document. `chainlit_app._note_pages`
+# and `verify.note_page_scopes` read a line's pointers with
+# `[\[(](\d{1,3}_[\w.\-]+)` and `\(p\.(\d{1,3})[,)]`, so a parenthesis
+# opening on a letter is inert to both, and an inert marker cannot become the
+# invented citation this file spends `_meta_page` preventing.
+_EXTRACTION_FLAGS = {
+    "gcf>total": "the GCF figure on this line is larger than the total",
+}
+
+
+def _extraction_flags(doc_id: Optional[str]) -> List[str]:
+    """The 'this extraction is flagged' segments for a document, or []."""
+    try:
+        cov = (_row_v2(doc_id) or {}).get("coverage")
+    except Exception:                                          # noqa: BLE001
+        return []
+    if not isinstance(cov, dict):
+        return []
+    bits: List[str] = []
+    if cov.get("llm_fallback"):
+        bits.append("extraction flagged (llm_fallback): the values on this line "
+                    "were read by model fallback, not by the template rules — "
+                    "verify each against the page it cites")
+    reason = cov.get("suspect")
+    if reason:
+        why = _EXTRACTION_FLAGS.get(str(reason))
+        bits.append(f"extraction flagged ({reason}): "
+                    + (f"{why} — " if why else "")
+                    + "verify against the pages this line cites")
+    return bits
+
+
+def _conflict_field_order(f2: Dict[str, List[dict]]) -> List[str]:
+    """Every field of a document that a conflict warning may cover, in order.
+
+    Money first, in the order the warnings have always preferred them, then
+    every other field the document holds in the planner's own column order,
+    then anything neither list knows, alphabetically. Derived rather than
+    listed so that a field the extractor grows tomorrow warns without an edit
+    here — the defect being closed is precisely a field whose conflicts no
+    mechanism looked at.
+    """
+    p = _planner()
+    known = list(_MONEY_FIELDS) + [
+        f for f in (getattr(p, "FIELD_ORDER", ()) if p else ())
+        if f not in _MONEY_FIELDS]
+    return ([f for f in known if f in f2]
+            + sorted(f for f in f2 if f not in known))
+
+
 def _conflict_lines(r: dict) -> List[str]:
-    """One warning line per money field the document contradicts itself on.
+    """One warning line per field the document contradicts itself on.
 
     Each line is its own line, names the document id, and leads with the
     CANONICAL figure's '(p.N, SECTION)': verify.build_evidence keys a note line
@@ -389,11 +700,28 @@ def _conflict_lines(r: dict) -> List[str]:
     evidence at the page an answer actually cites, holding every figure of the
     field — which is exactly what an answer that 'reports both figures with
     their pages' has to verify against.
+
+    EVERY field, not only the money ones. The money restriction was a scope
+    decision taken when only money conflicts had been measured; the corpus
+    holds four more, in three documents, and every one of them is now askable
+    at arity one (`_served_bits`): FP139's implementation period (5 years vs
+    25, both on p.5 under A.11), FP240's mitigation and adaptation outcomes,
+    FP202's direct beneficiaries (81,551 under A.6 vs 1,251,769 under A.7).
+    Serving those fields on the line while the only machinery that knows they
+    are contradicted looked at money alone would have printed one of two
+    disagreeing figures as though it were the fact.
+
+    Money keeps money's formatting — `_fig`, the whole print, no clipping —
+    and a text field takes `_text_fig`, which clips a paragraph-length print
+    with the marker a cut string carries. The caps are unchanged and still
+    announced: at most `_MAX_CONFLICT_LINES` lines, at most
+    `_MAX_CONFLICT_ALTS` disagreeing prints each, and a final line naming
+    every field held back.
     """
     f2 = _v2_facts(r.get("doc_id"))
     out: List[str] = []
     held: List[str] = []
-    for field in _MONEY_FIELDS:
+    for field in _conflict_field_order(f2):
         alts = [c for c in f2.get(field, [])
                 if c.get("status") == "conflicting" and _usable(c)]
         if not alts:
@@ -401,27 +729,34 @@ def _conflict_lines(r: dict) -> List[str]:
         if len(out) >= _MAX_CONFLICT_LINES:
             held.append(field)               # the cap, said out loud below
             continue
+        money = field in _MONEY_FIELDS
+        show = _fig if money else _text_fig
         canon = _canon2(f2, field)
-        printed = [_fig(c) for c in ([canon] if canon else [])
+        printed = [show(c) for c in ([canon] if canon else [])
                    + alts[:_MAX_CONFLICT_ALTS]]
         cut = len(alts) - _MAX_CONFLICT_ALTS
         more = (f" (+{cut} more disagreeing print{'s' if cut > 1 else ''} of "
                 f"this field in the document, not listed — list truncated)"
                 if cut > 0 else "")
-        ask = ("report both figures with their pages." if len(printed) == 2
+        # 'figures' is what a money conflict prints; a contradicted text field
+        # prints values, and calling '5 years, 0 months' a figure would be the
+        # note describing its own evidence wrongly
+        ask = (f"report both {'figures' if money else 'values'} with their "
+               "pages." if len(printed) == 2
                else "report all of them with their pages.")
         out.append(f"Registry — CONFLICT in this document ({r['doc_id']}): {field} "
                    f"is printed as {'; also as '.join(printed)}{more} — {ask}")
     if held:
+        kind = "figures" if all(f in _MONEY_FIELDS for f in held) else "prints"
         out.append(f"Registry — CONFLICT in this document ({r['doc_id']}): "
                    f"{len(held)} further field"
                    f"{'s' if len(held) > 1 else ''} ({', '.join(held)}) also "
-                   f"print{'' if len(held) > 1 else 's'} disagreeing figures, "
+                   f"print{'' if len(held) > 1 else 's'} disagreeing {kind}, "
                    f"not listed above — list truncated.")
     return out
 
 
-def _fmt(r: dict) -> str:
+def _fmt(r: dict, question: Optional[str] = None) -> str:
     """The one registry line for a document — every emitter goes through here.
 
     ``registry_note`` prints it for an FP id and, prefixed '<CODE> resolves
@@ -437,6 +772,19 @@ def _fmt(r: dict) -> str:
     provenance — so a field is printed page-less unless v2 states a page for
     it, which is also what happens for every document built before the
     provenance pass.
+
+    `question` is the arity-one field service (`_served_bits`): pass the turn's
+    question and the fields it asks for are appended, from v2's own candidates
+    and with v2's own pointers. It is optional and defaults to OFF, so the
+    caller that has no question — `chainlit_app._extend_registry_note`, which
+    fires on a document this TURN resolved to rather than one the question
+    named — keeps the line it has always printed. The extraction flags do NOT
+    depend on it: a flagged extraction is flagged on every line it appears on,
+    asked about or not.
+
+    Everything new is APPENDED. The existing bits keep their order and their
+    bytes, so today's line is a prefix of tomorrow's and a diff of the two is
+    exactly what was added.
     """
     f2 = _v2_facts(r.get("doc_id"))
     mp = _v2_meta(r.get("doc_id"))
@@ -460,6 +808,9 @@ def _fmt(r: dict) -> str:
         bits.append(f"total financing (as printed): {r['total_financing']}")
     if r.get("board"):
         bits.append(f"board B.{r['board']}, {r.get('year')}")
+    if question:
+        bits += _served_bits(r.get("doc_id"), question)
+    bits += _extraction_flags(r.get("doc_id"))
     fp = f"FP{r['fp']}: " if r.get("fp") else ""
     return f"{fp}{'; '.join(bits)} [{r['doc_id']}, cover pages]"
 
@@ -530,6 +881,15 @@ _FP_RE = re.compile(
 # public alias: the app imports this so the FP pattern has ONE definition
 FP_RE = _FP_RE
 BOARD_CODE_RE = _BOARD_CODE_RE
+
+#: either identifier pattern, anchored at the END of a span — the test
+#: `_drop_document_apposition` runs to decide whether a ', the ...' phrase
+#: follows an identifier (and so names the document) or opens the ask itself.
+#: Built from the two patterns above rather than beside its caller, because
+#: they are defined below it: one definition of what an identifier is, here as
+#: everywhere else in this file.
+_ENDS_WITH_ID_RE = re.compile(
+    r"(?:" + _FP_RE.pattern + r"|" + _BOARD_CODE_RE.pattern + r")\s*$", re.I)
 
 
 def resolve_fps(question: str):
@@ -1486,6 +1846,25 @@ def _extrema_note(question: str) -> List[str]:
     return lines
 
 
+def _single_document(question: str) -> bool:
+    """Does this question name exactly ONE document?
+
+    The planner's own count, not a second one: `planner.detect` builds a matrix
+    at two identifiers and returns None at one, and `_identifiers` is what it
+    counts — including its collapse of two names for one document ('FP274 and
+    GCF/B.42/02/Add.16' is one document, one row, one arity). Asking it here is
+    what makes the field service the exact complement of the matrix: every turn
+    is served by one mechanism or the other, and never by both.
+    """
+    p = _planner()
+    if p is None:
+        return False
+    try:
+        return len(p._identifiers(question)) == 1
+    except Exception:                                          # noqa: BLE001
+        return False
+
+
 def registry_note(question: str) -> Optional[str]:
     """Computed corpus-metadata note for the answer model, or None."""
     if not load():
@@ -1493,10 +1872,16 @@ def registry_note(question: str) -> Optional[str]:
     q = question.lower()
     notes: List[str] = []
     resolved_docs: List[str] = []
+    # The asked-for fields are served on the ONE document this turn names, and
+    # on its first line only: a question that names the same document twice
+    # (an FP id and its board code) prints two lines for it, and the fact
+    # belongs on one of them, not on both.
+    ask: Optional[str] = question if _single_document(question) else None
     for n in dict.fromkeys(_FP_RE.findall(q)):
         row = by_fp(int(n))
         if row:
-            notes.append("Registry — " + _fmt(row))
+            notes.append("Registry — " + _fmt(row, ask))
+            ask = None
             notes += _conflict_lines(row)
             resolved_docs.append(row["doc_id"])
         else:
@@ -1506,7 +1891,8 @@ def registry_note(question: str) -> Optional[str]:
         row = resolve_board_code(int(b_), int(add_), int(item_) if item_ else None)
         code = _board_code_text(b_, item_, add_)
         if row:
-            notes.append(f"Registry — {code} resolves to: " + _fmt(row))
+            notes.append(f"Registry — {code} resolves to: " + _fmt(row, ask))
+            ask = None
             notes += _conflict_lines(row)          # same enrichment, same helper
             resolved_docs.append(row["doc_id"])
         else:

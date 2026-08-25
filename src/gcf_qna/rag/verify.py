@@ -1635,6 +1635,30 @@ _FIELD_LABELS: List[Tuple[str, str]] = [
     ("title", r"\btitle\b|\btitre\b|project\s+name"),
     ("duration", r"duration|dur[ée]e|implementation\s+period|lifespan"),
     ("beneficiaries", r"beneficiaries|b[ée]n[ée]ficiaires"),
+    # --- Phase 1 additions, and they are additions in the strict sense -------
+    # Three fields the registry holds for 193 / 101 / 70 documents and that
+    # nothing could reach until `planner.FIELD_ORDER` and `registry.
+    # _served_bits` began serving them. A served field is only as checkable as
+    # the vocabulary that can find its label, so the label a value is printed
+    # under there is the label read for it here, and the two lists are edited
+    # together or not at all.
+    #
+    # APPENDED, never inserted, and none of the three patterns matches a
+    # phrase an existing arm already claims. `claim_field` is first-match-wins,
+    # so a sentence naming two fields keeps the field it resolves to today:
+    # 'the accredited entity is X and the executing entity is Y' stays
+    # `accredited_entity`, exactly as before. ('executing entity' has never
+    # matched the accredited arm — that arm reads 'accredited entity',
+    # 'entité accréditée' and 'implementing entity' — so the new arm claims
+    # only sentences that named this field and no other.)
+    ("executing_entity",
+     r"executing\s+entit|executing\s+agenc|entit[ée]s?\s+d.ex[ée]cution"
+     r"|agence\s+d.ex[ée]cution"),
+    ("national_designated_authority",
+     r"national\s+designated\s+authorit|designated\s+authorit|\bNDA\b"
+     r"|autorit[ée]\s+nationale\s+d[ée]sign[ée]e"),
+    ("financial_instruments",
+     r"financial\s+instrument|instruments?\s+financiers?"),
 ]
 _FIELD_RES = [(f, re.compile(r, re.I)) for f, r in _FIELD_LABELS]
 

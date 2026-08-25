@@ -401,3 +401,32 @@ def test_every_bracket_form_the_prompt_dictates_parses_to_a_pointer():
             assert c.kind in ("page", "cover", "doc"), (form, c.kind)
     assert [c.page for c in verify.parse_citations(forms[-1])] == [5, 6], \
         "a page belongs to the nearest preceding id, not the bracket's first"
+
+
+# --- the board table is derived, not remembered ------------------------------
+
+def test_the_year_blocks_board_table_agrees_with_boards_py():
+    """YEAR_BLOCK prints the board→year mapping the model uses when NO note
+    fires, and it was hand-written: it said 'B.13-B.15=2016' while
+    `BOARD_YEARS` puts B.12 in 2016, so a document whose id encodes B.12 had
+    no year in the prompt at all. Recomputed here from the same table the
+    notes are computed from, in the same span form the block prints, so the
+    two can never drift again silently.
+
+    (Ruling 10 moved the board→year fact into the notes as citable evidence;
+    this block is what remains for the turns that ship no note, which is
+    exactly why it has to be right.)
+    """
+    import re
+
+    from gcf_qna.boards import BOARD_YEARS
+    by_year = {}
+    for board, year in sorted(BOARD_YEARS.items()):
+        by_year.setdefault(year, []).append(board)
+    want = "; ".join(
+        (f"B.{bs[0]}={y}" if len(bs) == 1 else f"B.{bs[0]}-B.{bs[-1]}={y}")
+        for y, bs in sorted(by_year.items()))
+    for y, bs in sorted(by_year.items()):
+        assert bs == list(range(bs[0], bs[-1] + 1)), \
+            f"{y}: a non-contiguous year cannot be printed as a span"
+    assert want in re.sub(r"\s+", " ", prompts.YEAR_BLOCK)

@@ -127,3 +127,85 @@ def test_the_new_gold_cases_load_and_their_expectations_hold():
         for pat in cases[cid]["expect"]["must_contain"]:
             assert re.search(pat[3:], note), \
                 f"{cid}: {pat} not answerable from the note"
+
+
+# --------------------------------------------- the thematic fence (H12/P7) ---
+#
+# `_COVERAGE_ASK_RE` matches "how many <up to two words> proposals", which is
+# also the shape of "how many AGRICULTURE proposals are in the corpus?" — and
+# of "how many proposals in the corpus CONCERN AGRICULTURE?", where the
+# restriction follows the noun instead of preceding it. Both fired a note that
+# holds per-year counts and ends "Answer corpus-coverage questions from this
+# note", in front of a question the registry has no field for. Probe P7
+# measured the model coping (it said it has no theme field and refused the
+# count), which is why this is hygiene — and why the fix must not cost the
+# cases that DO belong to the note.
+
+@pytest.mark.parametrize("q,restriction", [
+    ("How many proposals in the corpus concern agriculture?", "agriculture"),
+    ("How many agriculture proposals are in the corpus?", "agriculture"),
+    ("How many adaptation proposals does this corpus contain?", "adaptation"),
+    ("Combien de propositions du corpus concernent l'agriculture ?",
+     "agriculture"),
+    ("How many proposals in the corpus are implemented by UNDP?", "undp"),
+    ("Which years does the corpus cover for Kenya?", "kenya"),
+    ("How many mitigation and adaptation proposals are in this dataset?",
+     "mitigation"),
+])
+def test_a_restricted_count_gets_no_coverage_note(q, restriction):
+    assert app._corpus_coverage_note(q) is None, q
+    assert restriction in app._off_vocabulary(q)
+
+
+@pytest.mark.parametrize("q", [
+    "Which board meetings does this corpus cover?",
+    "What years does the corpus cover?",
+    "How many funding proposals are in the corpus?",
+    "How many documents does this corpus contain in total?",
+    "Combien de propositions de financement ce corpus contient-il ?",
+    "Quelles réunions du Conseil du GCF ce corpus couvre-t-il ?",
+    "Which years have the most funding proposals in this corpus?",
+    "Hi, could you tell me how many funding proposals are in the corpus?",
+    "Bonjour, pouvez-vous me dire combien de propositions ce corpus contient ?",
+    "Quick question: what years does this corpus cover?",
+])
+def test_the_corpus_own_vocabulary_still_fires(q):
+    """The fence is an allowlist, so every word of a real coverage question
+    has to be in it — including the ranking words of `agg-year-most`, which
+    rank the note's OWN dimension and restrict nothing."""
+    assert app._off_vocabulary(q) == []
+    assert app._corpus_coverage_note(q) is not None
+
+
+def test_every_gold_coverage_case_still_fires():
+    """The allowlist is exact, and an exact fence is one edit away from
+    silencing a case it was never aimed at. Every gold case that recorded a
+    coverage note in release-10 is pinned here by its own question."""
+    import eval_answers as ev
+    cases = {c["id"]: c for c in ev.load_cases(ev.DEFAULT_CASES)}
+    for cid in ("agg-corpus-boards", "agg-corpus-years", "agg-corpus-total",
+                "fr-agg-corpus-boards", "agg-year-most"):
+        q = cases[cid]["question"]
+        assert app._corpus_coverage_note(q) is not None, \
+            f"{cid}: {app._off_vocabulary(q)}"
+
+
+def test_the_fence_folds_accents_and_ignores_elisions():
+    """'réunions' and 'reunions' decide the same way, and the single letters
+    French elision and hyphen glue leave behind ("l'agriculture",
+    "couvre-t-il") are never the word that restricts a count."""
+    assert app._deaccent("Quelles réunions") == "Quelles reunions"
+    assert app._off_vocabulary("Quelles reunions ce corpus couvre-t-il ?") == []
+    assert app._off_vocabulary("l'agriculture") == ["agriculture"]
+
+
+# ----------------------------------------------------- ruling 10, here too ---
+def test_the_coverage_note_names_the_boards_of_every_year_it_counts():
+    """The same fact the year note now prints, for the note that fires when
+    the question names no year at all — computed from BOARD_YEARS."""
+    note = app._corpus_coverage_note("What years does the corpus cover?")
+    for y in sorted(set(BOARD_YEARS.values())):
+        boards = ", ".join(f"B.{b}" for b, yy in sorted(BOARD_YEARS.items())
+                           if yy == y)
+        n = len([r for r in registry.by_year(y) if r.get("fp")])
+        assert f"{y}: {n} ({boards})" in note

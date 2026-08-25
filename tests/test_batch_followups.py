@@ -667,3 +667,148 @@ def test_explicit_language_request_wins():
     assert _detect_lang("Réponds en anglais s'il te plaît, quel est le budget ?") == "English"
     assert _detect_lang("Which country is FP172 in?") == "English"
     assert _detect_lang("Quel est le financement total ?") == "French"
+
+
+# --- E: ruling 10 — board→year facts become citable evidence ----------------
+#
+# `agg-2021-boards` answered "B.28 (2021)" from the prompt's YEAR_BLOCK board
+# table and cited excerpts that print no such string: unsupported BY
+# CONSTRUCTION, 2 rows in release-7. The owner ruled (2026-08-26) for putting
+# the mapping into evidence rather than for hedged phrasing, so the year note
+# now prints the boards of every year it lists — deterministically, from
+# BOARD_YEARS — and prints each retrieved excerpt's own board/year on its own
+# line, which is the half `verify.build_evidence` can attribute per document.
+
+def _year_note(question, hits=()):
+    from gcf_qna.app.chainlit_app import _year_assist
+    return _year_assist(question, list(hits))[1]
+
+
+@pytest.mark.parametrize("question,year", [
+    ("Which proposals were approved in 2021?", 2021),   # detailed arm
+    ("Which proposals were approved in 2022?", 2022),   # detailed arm
+    ("Which proposals were approved since 2018?", 2022),  # wide-span arm
+])
+def test_every_populated_year_line_names_its_own_boards(question, year):
+    """Derived, never hardcoded: the expectation is recomputed from
+    BOARD_YEARS, so a board table edit moves the note and this test together."""
+    from gcf_qna.boards import BOARD_YEARS
+    boards = ", ".join(f"B.{b}" for b, y in sorted(BOARD_YEARS.items())
+                       if y == year)
+    note = _year_note(question)
+    line = next(l for l in note.split("\n") if l.startswith(f"{year} — "))
+    assert line.endswith(f" Boards in {year}: {boards}.")
+
+
+def test_the_boards_are_spelled_out_never_spanned():
+    """The ruling's illustration writes 'boards B.28–B.30'. A dash prints the
+    two ends and hides everything between them, and `verify._check_years`
+    matches board TOKENS: for 2022 (B.31-B.34) the span form would leave a
+    'B.32 (2022)' claim exactly as unverifiable as before the ruling."""
+    note = _year_note("Which proposals were approved in 2022?")
+    for board in ("B.31", "B.32", "B.33", "B.34"):
+        assert board in note, board
+    assert "–" not in note.split("Boards in 2022:")[1].split("\n")[0]
+
+
+def test_each_retrieved_excerpt_carries_its_board_on_its_own_line():
+    """The line split is not cosmetic. `verify.build_evidence` walks a note
+    block line by line and files each line under the FIRST document id it
+    names; one long 'Retrieved excerpts dated 2021: a; b; c' sentence filed
+    the whole note under `a` and nothing under `b` or `c`."""
+    from gcf_qna.app import chainlit_app as app
+    from gcf_qna.rag import verify
+    dated = [Hit(text="x", doc_id="111_gcf-b28-02-add11", score=1.0, page=82),
+             Hit(text="y", doc_id="110_gcf-b29-02-add01", score=1.0, page=97)]
+    note = _year_note("Which board meetings took place in 2021?", dated)
+    assert "\n111_gcf-b28-02-add11, p. 82 — FP164, B.28, 2021\n" in note
+    ev = verify.build_evidence(dated, [note])
+    for doc, board in (("111_gcf-b28-02-add11", "B.28"),
+                       ("110_gcf-b29-02-add01", "B.29")):
+        assert board in ev[(doc, None)] and "2021" in ev[(doc, None)]
+    # and the excerpt's own page still holds the PAGE's text, unmixed with the
+    # note line: a computed fact must not be readable as something the page
+    # printed (the label carries no '(p.N' pointer, so it keys doc-level)
+    assert ev[("111_gcf-b28-02-add11", 82)] == "x"
+    assert app._note_pages([note]) == set()
+
+
+def test_the_recorded_agg_2021_boards_turn_now_verifies():
+    """Replay of the release-7 turn the ruling names, offline: the recorded
+    plan, the recorded answer, the recorded hits — and the two board→year
+    claims that were unsupported by construction.
+
+    BEFORE is the note release-7 actually shipped, so the premise is measured
+    rather than asserted; AFTER is the note this module builds today."""
+    from gcf_qna.app.chainlit_app import _year_assist
+    from gcf_qna.rag import verify
+    rec = None
+    for line in (ROOT / "data" / "eval" / "release_release-7.jsonl").open():
+        r = json.loads(line)
+        if r["id"] == "agg-2021-boards":
+            rec = r
+            break
+    assert rec is not None
+    hits = [Hit(text=h["text"], doc_id=h["doc"], score=h.get("score", 0.0),
+                page=h.get("page")) for h in rec["hits"]]
+    claims = verify.extract_claims(rec["answer"])
+    boards = [c for c in claims if re.match(r"^\*\*B\.\d\d \(2021\)", c.text)]
+    assert len(boards) == 3
+
+    def statuses(note):
+        ev = verify.build_evidence(hits, [rec["notes_used"]["registry"], note])
+        by_text = {v.claim.text: v.status
+                   for v in verify.classify_deterministic(claims, ev)}
+        return [by_text[c.text] for c in boards]
+
+    before = statuses(rec["notes_used"]["year"])
+    assert before.count(verify.UNSUPPORTED) == 2, before
+    after = statuses(_year_assist(rec["question"], hits)[1])
+    assert after == [verify.SUPPORTED] * 3, after
+
+
+# --- F: the comparative licence over the computed year totals ---------------
+
+def test_the_comparative_licence_ships_only_when_two_totals_print():
+    """Phase 2's open item. The licence is carried by the note, so it costs
+    nothing on the turns it does not apply to — and a rule about 'two totals'
+    on a note that prints one would be a rule with no referent."""
+    from gcf_qna.app import chainlit_app as app
+    two = _year_note("Did 2021 request more GCF funding in total than 2020?")
+    assert two.count("Computed total for") == 2
+    assert app._COMPARE_RULE in two
+    one = _year_note("Which proposals were approved in 2021?")
+    assert one.count("Computed total for") == 1
+    assert app._COMPARE_RULE not in one
+    assert app._COMPARE_RULE not in _year_note("proposals approved since 2018")
+    assert app._COMPARE_RULE not in app._corpus_coverage_note(
+        "How many funding proposals are in the corpus?")
+
+
+def test_the_comparative_licence_grants_the_ranking_and_nothing_else():
+    """_NO_SUM_RULE licenses QUOTING a computed total and forbids arithmetic on
+    it; it never said whether two totals may be RANKED, and release-10's
+    l2x-xyear got the direction right by inference on a single sample. The
+    licence is now stated — and the three figures the note does not print
+    (difference, ratio, sum) are refused in the same sentence, the way
+    _NO_SUM_RULE keeps its own exception and prohibition together."""
+    from gcf_qna.app.chainlit_app import _COMPARE_RULE
+    assert "say which year is larger" in _COMPARE_RULE
+    assert "quote both totals with the coverage each states" in _COMPARE_RULE
+    assert ("their difference, their ratio and their sum are figures this "
+            "note does not print") in _COMPARE_RULE
+    assert _COMPARE_RULE.count(". ") == 0, "one sentence, no gap in the middle"
+
+
+def test_the_two_year_note_still_answers_the_comparative_gold_case():
+    """l2x-xyear-2021-vs-2020-total: every regex it scores on stays
+    answerable from the note the licence now rides on."""
+    import eval_answers as ev
+
+    case = {c["id"]: c for c in ev.load_cases(ev.DEFAULT_CASES)}[
+        "l2x-xyear-2021-vs-2020-total"]
+    note = _year_note(case["question"])
+    for pat in case["expect"]["must_contain"]:
+        if pat.startswith("re:") and "yes" in pat:
+            continue          # the direction is the ANSWER's, not the note's
+        assert re.search(pat[3:], note), f"{pat} not answerable from the note"
