@@ -451,7 +451,8 @@ def test_an_incidental_world_bank_never_fires_the_inverse_note(real):
 # notes; the fence becomes an exact allowlist so any OTHER question firing
 # still fails loudly.
 _INVERSE_GOLD = {"agg-inv-undp", "fr-inv-banque-mondiale",
-                 "agg-inv-kenya", "fr-inv-senegal"}
+                 "agg-inv-kenya", "fr-inv-senegal",
+                 "l2x-inv-iucn-count"}  # 2026-08-26 L2 fill-in wave
 _NEW_NOTE_GOLD = _INVERSE_GOLD | {"agg-inv-b35", "agg-corpus-largest",
                                   "agg-2020-least"}
 

@@ -49,7 +49,10 @@ def test_fixture_parses_and_is_well_formed(cases):
     # 2026-08-25: +12 registry-backed and +8 text-derived cases (new
     # conflict docs, merge traps, follow-up note wiring, corpus
     # aggregates), every expectation derived and recorded in its notes.
-    assert 50 <= len(cases) <= 120, "the answer gold set: 50-120 cases"
+    # 120 -> 150 on 2026-08-26: +25 cases filling the audit's named gaps
+    # (untested years/fields, section lookups, total_financing conflicts,
+    # year ranges, arity pair) and the first L3 "procedure" class.
+    assert 50 <= len(cases) <= 150, "the answer gold set: 50-150 cases"
     assert len({c["id"] for c in cases}) == len(cases)
     for c in cases:
         assert c["expect"]["behavior"] in {"answer", "conflict", "abstain"}

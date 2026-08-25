@@ -138,7 +138,7 @@ COMPARISON_FLAGS = {"decomposed", "proxy", "off"}
 
 CLASS_ORDER = ["identifier", "compact-id", "board-code", "discovery",
                "comparison", "conflict", "french", "noisy", "abstain",
-               "aggregate", "followup"]
+               "aggregate", "followup", "procedure"]
 
 # Estimated USD price PER TOKEN for the answer model. THESE ARE ESTIMATES: the
 # API does not report prices, provider list prices move, and a run may be
