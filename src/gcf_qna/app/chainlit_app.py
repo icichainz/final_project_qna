@@ -1230,6 +1230,14 @@ def _answer_messages(system_prompt: str, context: str, question: str,
             {"role": "user", "content": user}]
 
 
+def _answer_cap() -> dict:
+    """kwargs for the answer calls' output cap — empty when MAX_ANSWER_TOKENS
+    is unset (the default), so the request carries no cap at all rather than
+    an explicit null that OpenAI-compatible servers may reject."""
+    return ({"max_completion_tokens": config.MAX_ANSWER_TOKENS}
+            if config.MAX_ANSWER_TOKENS else {})
+
+
 def _index_dir():
     return config.INDEX_DIR / os.getenv("INDEX_NAME", "default")
 
@@ -1502,7 +1510,7 @@ async def main(message: cl.Message):
         reply = cl.Message(content="")
         stream = await client.chat.completions.create(
             model=config.CHAT_MODEL,
-            max_completion_tokens=config.MAX_ANSWER_TOKENS,
+            **_answer_cap(),
             messages=[{"role": "system",
                        "content": assemble_chat(_detect_lang(message.content))}] + history +
                      [{"role": "user", "content": message.content}],
@@ -1685,7 +1693,7 @@ async def main(message: cl.Message):
     reply = cl.Message(content="")
     stream = await client.chat.completions.create(
         model=config.CHAT_MODEL,
-        max_completion_tokens=config.MAX_ANSWER_TOKENS,
+        **_answer_cap(),
         messages=messages,
         stream=True,
     )

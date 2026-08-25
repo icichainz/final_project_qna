@@ -61,7 +61,12 @@ VERIFY_LLM = os.getenv("VERIFY_LLM", "1") == "1"
 
 # --- chat (OpenAI-compatible endpoint) ---
 CHAT_MODEL = os.getenv("CHAT_MODEL", "gpt-5.2")
-MAX_ANSWER_TOKENS = int(os.getenv("MAX_ANSWER_TOKENS", "1024"))
+# None (the default) means the answer calls send no output cap at all. The old
+# 1024 budget silently truncated long multi-section answers mid-sentence: the
+# API stops at the cap, the stream loop never sees a finish_reason, and on a
+# reasoning model the cap covers reasoning tokens too, so the visible budget
+# was smaller still. Set a positive number to re-impose a budget.
+MAX_ANSWER_TOKENS = int(os.getenv("MAX_ANSWER_TOKENS", "0")) or None
 # Optional: point the OpenAI client elsewhere (e.g. LM Studio) instead of api.openai.com
 OPENAI_BASE_URL = os.getenv("OPENAI_BASE_URL", "")
 
