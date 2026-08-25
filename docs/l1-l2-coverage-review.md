@@ -571,3 +571,35 @@ unprompted, a flatly wrong direction. There is no summation mechanism and no ref
 
 H16 (board-inverse in-range), H17 (year ranges end-to-end), the H7 arity pair, and H10 (`FP#220`
 formats) were not covered by the fifteen probes and remain open.
+
+
+## 8. The same-configuration pair (release-8 / release-8-repeat) — variance measured at last
+
+§2.3 found that no two releases shared a configuration, so every "sampling flapper" claim was
+an assertion. Closed at `fb095f0`: two release runs, back to back, identical commit / flags /
+model / pins (`RERANK=1`, temperature 0, seed 20260819). Everything that differs is sampling.
+
+| | release-8 | release-8-repeat |
+|---|---|---|
+| claims extracted | 188 | 170 |
+| claim support (own population) | 184/188 = 97.9% | 164/170 = 96.5% |
+| citation completeness | 97.9% | 95.9% |
+| groundedness | 93.6% | 92.9% (shared-subset delta −4.0 pp) |
+| contradicted | 0 | 3 |
+| behaviour (89 cases) | 0.98 | 0.98 — 3 better / 1 worse / 85 same |
+
+**The honest noise floor, from one resample:** the claim denominator moves ±10% (188 → 170);
+support and completeness wobble 1–2 pp; groundedness up to 4 pp on the shared subset; ~4 of 89
+cases flip; contradicted verdicts appear and vanish. Consequences: (a) every cross-release
+delta this review or the build report quotes below ~2–3 pp is **within noise** — including the
+wave-effect gains of Act XII (+1.1 pp) — and the durable statements are the ones that survive
+both arms: gates PASS in both, behaviour 0.98 in both, conflict/aggregate/followup classes 1.00
+in both; (b) the four cases that flipped here (`abs-2014`, `bc-b30-02-add03-trap`,
+`cmp-fp254-fp248-currency`, `fr-agg-2018`) are now *measured* flappers, not asserted ones;
+(c) a single-run point estimate should never again be quoted without this band. One resample
+gives a coarse band; more repeats would tighten it at $0.55 each.
+
+The five coverage-review fixes (`fb095f0`) rode along: no gold regression in either arm
+(aggregate and conflict classes 1.00 in both; the year-note money change and truncation markers
+disturbed nothing the gold measures — their real test is the probe shapes, which the gold set
+does not yet cover; the review's §6(b) gold-case list remains the follow-up).
