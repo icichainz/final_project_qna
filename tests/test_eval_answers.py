@@ -145,6 +145,11 @@ def test_regex_spans_newlines():
 def test_abstention_is_detected_in_the_head_only():
     assert ev.looks_abstained("FP999 does not exist in this corpus.")
     assert ev.looks_abstained("FP999 n'existe pas dans le corpus.")
+    # one or two qualifying words between 'no' and the noun still abstain
+    # (measured: release-6 abs-2026 answered "no registered funding proposals
+    # approved in 2026 ... no GCF Board meeting" and the shape missed it)
+    assert ev.looks_abstained("There were no registered funding proposals in 2026.")
+    assert ev.looks_abstained("There was no GCF Board meeting that year.")
     tail = ("FP220 requests 50,000,000 USD from the GCF [55_gcf-b37, p. 5]. " * 6
             + "The excerpts do not contain the disbursement schedule.")
     assert not ev.looks_abstained(tail), "a late caveat is not an abstention"
