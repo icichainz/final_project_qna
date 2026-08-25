@@ -2046,6 +2046,14 @@ NOT_JUDGE_REACHABLE = {
 #: It is an EXACT set for the same reason `KNOWN_UNCLEARED` is: it fails when
 #: a second adjudicated true failure stops being flagged just as loudly as it
 #: fails when this one starts again.
+#:
+#: RATIFIED by the owner, 2026-08-25 (ruling 8 in
+#: docs/wave1-adjudication-review.md): in the application as shipped, citing
+#: the page a registry line prints is the prompt-mandated behaviour, so a
+#: gold label that punishes it would make the instrument contradict the spec
+#: it measures. The label stands as history; the rule it was judged under
+#: has been deliberately superseded. Any second row still requires its own
+#: ratification.
 SUPERSEDED_BY_NOTE_PAGE_SCOPE = {"claim-e0be9178189ce5084dfc7164"}
 
 

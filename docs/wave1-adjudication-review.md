@@ -92,3 +92,25 @@ These are the real work for generation/retrieval, and they are what remains of t
 
 Every `verifier_false_positive` is listed in `data/eval/release_release-1-adjudicated.jsonl` with the reviewer's note naming the page that settles it. Sign off by confirming the three decisions above and spot-checking any rows you wish; the file records `label`, `verifier_correct`, `notes`, `confidence`, and the second opinion where one exists.
 
+
+
+## Ruling 8 (2026-08-25, owner-ratified): note-page scope supersedes one ruling-4 label
+
+`claim-e0be9178189ce5084dfc7164` (case `fr-cmp-currency`, label
+`wrong_citation`, verifier_correct true) is **superseded**, not erased. The
+reviewer's note recorded at labelling time that the generation copied
+"(p.7, A.8)" straight out of the registry note. Since then, three deliberate
+changes made that citation the *specified correct behaviour*: the answer
+prompt instructs the model to cite the page a registry line prints
+(`85a9ff7`), the app checker and harness scorer both count note-printed
+pages as legal targets (`6f91410`), and the verifier's note-page scope
+(`26d1b7e`, adversarially tested: near-miss pages still fail, fabricated
+arm unmoved) verifies them. No predicate separates this row from
+release-3's `conf-fp153-gcf` (p.48) and `fr-fp172-nepal` (p.76), which the
+rule exists to stop failing.
+
+The label was correct under ruling 4 as it stood in Wave 1; the rule it was
+judged under evolved. The row is carried in
+`tests/test_verify.py::SUPERSEDED_BY_NOTE_PAGE_SCOPE` as an exact set with
+the reviewer's words quoted; a second gold row lost the same way fails the
+suite loudly and requires its own ratification.
