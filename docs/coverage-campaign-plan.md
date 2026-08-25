@@ -36,7 +36,7 @@ verifier's ground truth.
 Exit gate (amended): the original gate ("agg-inv-undp reaches 1.00") is
 already met by release-10; what remains gated is the owner session.
 
-## Phase 1 — L1 mechanisms: every stored fact answerable at arity one  ·  OPEN
+## Phase 1 — L1 mechanisms: every stored fact answerable at arity one  ·  **CLOSED** (`8c0bedc`, gated by release-11)
 
 Source finding: 736 of 3,785 candidate records servable by nothing; most
 documents hold at least one field their single-document ask cannot reach.
@@ -60,7 +60,7 @@ Exit gate: the arity pair returns the same field, same citation, both
 arities; zero of the 126 gold questions change behaviour except where a case
 pins the new field service.
 
-## Phase 2 — L2 mechanisms off the happy path  ·  OPEN
+## Phase 2 — L2 mechanisms off the happy path  ·  **mechanism half CLOSED** (`8c0bedc`: probe_pages 18/18; app wiring = next wave)
 
 - Conflict-fallback probe: on conflict-shaped turns (or when a fired CONFLICT
   note's pages didn't land), issue a doc-scoped query for the disagreeing
@@ -74,7 +74,7 @@ pins the new field service.
 Exit gate: conflict-class evidence pages move off 8/14 for the first time; a
 4-doc matrix renders with no starved row.
 
-## Phase 2½ (AMENDMENT 1, promoted to its own track) — the sectioned index  ·  OPEN
+## Phase 2½ (AMENDMENT 1, promoted to its own track) — the sectioned index  ·  **DECIDED against ranked adoption** (release-11 vs 11-v2)
 
 The live retriever loads `data/index/default`, where `section_path` is
 `None` on every hit; the section-aware v2 index (125,414 sectioned chunks)
@@ -198,3 +198,28 @@ Exit gate: a release where every sub-1.00 score is a true behaviour defect.
 6. **Phase 6** slots into any release preparation.
 
 Every phase closure updates this file and quotes its gate run.
+
+
+---
+
+## Wave 1 closure record (2026-08-26, `8c0bedc` + release-11 pair)
+
+- **Phase 1 closed**: 1,195 (doc, field) pairs servable at arity one; three
+  new fields mapped; non-money conflicts warn; extraction honesty flags on.
+  Scorer byte-identical; release-10 → release-11 within the noise band
+  (−0.8 pp support / +1.0 pp groundedness). Gate note: release-11 passed at
+  exactly its integer threshold (384/404) — zero margin, recorded.
+- **Phase 2 mechanism half closed**: `Retriever.probe_pages` recovers 18/18
+  conflict-class target pages on demand; app wiring is the next wave's item,
+  together with the year-note boards evidence (ruling 10, shipped) and the
+  truncation marker (shipped).
+- **Phase 2½ decided**: the sectioned index is REFUSED for ranked retrieval —
+  answer-level A/B (release-11 vs release-11-v2): 1 better / 6 worse, the
+  losses concentrated in the section/procedure cases v2 was meant to serve
+  (its chunk boundaries aid addressing, hurt generation context; shared
+  subset −2.3 pp support / −4.1 pp groundedness). The binary capability
+  stands (named-section addressing 0/136 default vs 136/136 v2) and the
+  Phase 5c path is now: extract v2's section map as a small
+  {doc → section → pages} artifact and serve those pages FROM THE DEFAULT
+  index via probe_pages — page numbering is identical across builds
+  (41,550 pairs verified), so no second index is needed at runtime.
