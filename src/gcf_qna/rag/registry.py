@@ -19,8 +19,11 @@ the note it writes for the answer model keeps every v1 cover-page field
 (title, entity, countries, board, year — clean in schema 1) and prints the
 MONEY fields from schema 2 instead, with the page and template section the
 figure was read from, plus a warning line per figure the same document
-contradicts elsewhere. When registry_v2.json is absent or unreadable the note
-falls back, field by field, to the exact v1 string it always printed.
+contradicts elsewhere. Schema 2's optional ``meta_provenance`` adds the page
+for the text fields too, printed as a section-less '(p.N)' beside the value.
+When registry_v2.json is absent or unreadable — or simply predates either
+addition — the note falls back, field by field, to the exact v1 string it
+always printed.
 """
 from __future__ import annotations
 
@@ -155,6 +158,55 @@ def _v2_facts(doc_id: Optional[str]) -> Dict[str, List[dict]]:
         return {}
 
 
+def _v2_meta(doc_id: Optional[str]) -> Dict[str, dict]:
+    """``meta_provenance`` for a document, or ``{}`` — same never-break contract
+    as ``_v2_facts``.
+
+    The key is ADDITIVE and OPTIONAL: a registry_v2.json built before the
+    cover-page provenance pass carries no ``meta_provenance`` at all, and an
+    entry carries only the fields the builder actually found. Absent, partial,
+    or the wrong type, the note must come out byte-identical to the one
+    schema 1 alone produced — the provenance is an upgrade, never a
+    dependency.
+    """
+    if not doc_id:
+        return {}
+    try:
+        mp = (_row_v2(doc_id) or {}).get("meta_provenance")
+        return mp if isinstance(mp, dict) else {}
+    except Exception:
+        return {}
+
+
+def _meta_page(meta: Dict[str, dict], field: str) -> str:
+    r"""``' (p.3)'`` for a cover-page fact the builder sourced, else ``''``.
+
+    EXACTLY '(p.N)', with no section part, because that is the shape the two
+    consumers credit. ``chainlit_app._note_pages`` and
+    ``verify.note_page_scopes`` read a note line's pages with the SAME regex,
+    byte for byte — ``r"\(p\.(\d{1,3})[,)]"`` — whose ``[,)]`` arm exists so a
+    pointer can end at the closing paren instead of a ', SECTION' tail. So
+    'accredited entity: X (p.3)' publishes (doc, 3) exactly as
+    'GCF funding requested: 18.5 M USD (p.5, A.8)' publishes (doc, 5), and the
+    model told to cite the page printed beside THAT fact cites a page the
+    checker holds instead of guessing one (release-6 guessed p.3 on both merge
+    traps: right page, invented citation, flagged everywhere).
+
+    A page outside 1..999 prints nothing: those regexes cap at three digits,
+    so a four-digit page would publish no scope and the printed pointer would
+    invite exactly the flagged citation this is here to prevent. ``bool`` is
+    rejected too — ``isinstance(True, int)`` is True, and 'p.True' is not a
+    page.
+    """
+    hit = meta.get(field)
+    if not isinstance(hit, dict):
+        return ""
+    page = hit.get("page")
+    if not isinstance(page, int) or isinstance(page, bool) or not 1 <= page <= 999:
+        return ""
+    return f" (p.{page})"
+
+
 def _usable(c: Optional[dict]) -> Optional[dict]:
     """A candidate is printable only with the two things it is here for: the
     source text and the page it was read from."""
@@ -224,15 +276,34 @@ def _conflict_lines(r: dict) -> List[str]:
 
 
 def _fmt(r: dict) -> str:
+    """The one registry line for a document — every emitter goes through here.
+
+    ``registry_note`` prints it for an FP id and, prefixed '<CODE> resolves
+    to:', for a board code; ``chainlit_app._extend_registry_note`` prints it
+    for a document only this TURN resolved to. One formatter, so the three can
+    never drift, and so the cover-page pages below reach all three at once.
+
+    The v1 text fields (title, entity, countries) now carry the page schema 2
+    read them on, when it recorded one: same '(p.N)' pointer the money fields
+    have always carried, minus the template section a cover-page fact has no
+    equivalent of. Value and page come from DIFFERENT files by design —
+    registry.json is the clean source for the text, registry_v2.json for the
+    provenance — so a field is printed page-less unless v2 states a page for
+    it, which is also what happens for every document built before the
+    provenance pass.
+    """
     f2 = _v2_facts(r.get("doc_id"))
+    mp = _v2_meta(r.get("doc_id"))
     gcf, total = _canon2(f2, "gcf_funding_requested"), _canon2(f2, "total_financing")
     bits = []
     if r.get("title"):
-        bits.append(f'"{r["title"]}"')
+        bits.append(f'"{r["title"]}"' + _meta_page(mp, "title"))
     if r.get("accredited_entity"):
-        bits.append(f"accredited entity: {r['accredited_entity']}")
+        bits.append(f"accredited entity: {r['accredited_entity']}"
+                    + _meta_page(mp, "accredited_entity"))
     if r.get("countries"):
-        bits.append("countries: " + ", ".join(r["countries"][:5]))
+        bits.append("countries: " + ", ".join(r["countries"][:5])
+                    + _meta_page(mp, "countries"))
     if gcf:
         bits.append(_money_bit("GCF funding requested", gcf))
     elif r.get("gcf_financing"):
@@ -322,6 +393,11 @@ def registry_note(question: str) -> Optional[str]:
     if len(set(resolved_docs)) > 1:
         notes.append("Registry — the identifiers above resolve to DIFFERENT "
                      "documents. Never merge them or treat them as the same proposal.")
+    # The year listing stays page-less on purpose: it names FP numbers, never
+    # document stems, so _note_pages/note_page_scopes (which credit a page only
+    # to a document named on the SAME line) would publish no scope for a page
+    # printed here — and an uncreditable pointer is precisely the invented
+    # citation the provenance exists to stop.
     for y in dict.fromkeys(re.findall(r"\b(20[12]\d)\b", q)):
         rows = [r for r in by_year(int(y)) if r.get("fp")]
         if rows:

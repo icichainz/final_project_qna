@@ -139,20 +139,29 @@ def test_registry_citation_rule_ships_only_with_the_registry_note():
 
 
 def test_the_registry_fallback_covers_facts_that_are_not_money():
-    """`registry._fmt` prints a page beside FIGURES only ('18.5 M USD (p.5,
-    A.8)'); entity, countries and title arrive page-less on the same line. The
-    old fallback said 'with no page beside the FIGURE' and the model read the
-    scope literally: asked which accredited entity two proposals use, it
-    invented p.3 for both rather than fall back to the line's own label.
-    The fallback is pinned as covering EVERY fact the line states."""
+    """The old fallback said 'with no page beside the FIGURE' and the model
+    read the scope literally: asked which accredited entity two proposals use,
+    it invented p.3 for both rather than fall back to the line's own label. So
+    the block states the scope twice — the line is the provenance for EVERY
+    fact on it, and the page-less arm is keyed to the FACT, not to the kind of
+    fact.
+
+    That second half is why the arm no longer names which fact kinds reach it.
+    It used to read '... — as entity, country and title normally have none —',
+    which `registry._fmt` has made false: schema 2's `meta_provenance` now
+    prints '(p.3)' beside the entity, the countries and the title whenever the
+    builder recorded a page for them. Naming those three as the page-less kinds
+    would teach the model to ignore the very pointer this pass added. The RULE
+    is unchanged and still pinned: no page beside the fact -> cite the document
+    and 'cover pages'."""
     assert "provenance for EVERY fact" in REGISTRY_BLOCK
     assert "entity, countries, title, figures alike" in REGISTRY_BLOCK
-    # the page-less arm, and the fact kinds that actually reach it
+    # the page-less arm, keyed to the fact rather than to its kind
     assert "a fact with NO page beside it" in REGISTRY_BLOCK
-    assert "country and title normally have none" in REGISTRY_BLOCK
     assert "[12_doc, cover pages]" in REGISTRY_BLOCK
-    # and the money-only scope is gone, not merely supplemented
+    # and neither the money-only scope nor the now-false kind list survives
     assert "beside the figure" not in REGISTRY_BLOCK
+    assert "normally have none" not in REGISTRY_BLOCK
 
 
 def test_the_registry_line_outranks_another_notes_page():
@@ -217,11 +226,15 @@ def test_conductor_prompt_is_untouched_by_the_citation_pass():
 
 # --- the length budget ------------------------------------------------------
 
-#: The fully-assembled prompt is 4932 characters at this commit (CORE +
+#: The fully-assembled prompt is 4880 characters at this commit (CORE +
 #: comparison + matrix + year + registry + an explicit language directive).
 #: It was 4816 before the page-fallback pass; that pass added 338 characters
 #: of new rule and paid 222 of them back by tightening eleven existing
-#: sentences, which is the trade this budget exists to force.
+#: sentences, which is the trade this budget exists to force. The cover-page
+#: provenance pass then gave 52 back for nothing: `registry._fmt` prints the
+#: entity's own page, so the clause claiming entity/country/title 'normally
+#: have none' was deleted rather than reworded, and the generic rule above it
+#: ('the page printed beside THAT fact') already covers the new '(p.3)' form.
 #:
 #: WHY A BUDGET AT ALL: this module's own docstring records the measurement
 #: that the answer model DROPS PROCEDURAL RULES IN LONG PROMPTS — three times,
@@ -271,8 +284,11 @@ def test_the_list_rule_is_what_the_verifier_actually_requires():
     assert not [c for c in verify.extract_claims(per_item) if not c.cited]
 
 
-#: The FP151/FP152 registry note as `registry._fmt` prints it: the money
-#: carries '(p.5, A.8)', the accredited entity carries nothing.
+#: The FP151/FP152 registry note as `registry._fmt` prints it for a document
+#: schema 2 recorded no cover-page provenance for: the money carries
+#: '(p.5, A.8)', the accredited entity carries nothing. Still a live shape —
+#: `meta_provenance` is optional and per-field — and the shape release-3
+#: actually shipped, which is what the demonstration below is replaying.
 _REG151 = ('Registry — FP151: "TA Facility for the Global Subnational Climate '
            'Fund"; accredited entity: International Union for Conservation of '
            'Nature and Natural Resources (IUCN); GCF funding requested: 18.5 M '
@@ -309,6 +325,40 @@ def test_the_page_less_fallback_is_what_the_harness_gate_requires():
     # the money arm of the same line still cites its printed page, and passes
     money = f"FP151 requests **USD 18.5 million** [{doc}, p. 5]"
     assert _invalid_citations(money, hits, pages) == []
+
+
+#: The same FP151 line once `registry._fmt` has the cover-page provenance to
+#: print: the entity now carries its own section-less '(p.3)'.
+_REG151_PROV = _REG151.replace(
+    "Nature and Natural Resources (IUCN);",
+    "Nature and Natural Resources (IUCN) (p.3);")
+
+
+def test_the_printed_entity_page_is_what_the_harness_gate_now_accepts():
+    """The other half of the demonstration above, and the reason the emitter
+    change exists. release-6 shipped '[124_gcf-b27-02-add11, p. 3]' for the
+    accredited entity on both merge traps: the RIGHT page, guessed, since
+    retrieval returned pages 2, 4, 5, 143 and 150 and nothing printed p.3. The
+    fallback the rules dictate is still correct for a page-less line, but the
+    better outcome is a line that prints the page — and then the sentence rule
+    ('cite the page printed beside THAT fact') sends the model to a bracket the
+    frozen gate accepts, with no new rule and no raised budget."""
+    doc = "124_gcf-b27-02-add11"
+    hits = [_Hit(doc, p) for p in (2, 4, 5, 143, 150)]
+    pages = _note_pages([_REG151_PROV])
+    assert (doc, 3) in pages and (doc, 5) in pages
+
+    cited = f"The accredited entity is IUCN. [{doc}, p. 3]"
+    assert _invalid_citations(cited, hits, pages) == []
+    # ... and it is the note that legalises it, not retrieval
+    assert _invalid_citations(cited, hits, _note_pages([_REG151])) == \
+        [f"{doc}… p.3"]
+    # the page-less fallback the rules still dictate keeps passing either way
+    dictated = f"The accredited entity is IUCN. [{doc}, cover pages]"
+    assert _invalid_citations(dictated, hits, pages) == []
+    # the verifier scopes the same line to the same page, from the same regex
+    assert (verify.note_scope_doc(doc), 3) in \
+        verify.note_page_scopes(_REG151_PROV)
 
 
 def test_the_hedge_wording_the_prompt_asks_for_is_glue_not_a_claim():

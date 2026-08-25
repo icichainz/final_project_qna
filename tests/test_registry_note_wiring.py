@@ -26,7 +26,10 @@ C. isolation. The line comes from THIS turn's resolved items — never from the
 D. degradation, and the four-document cap.
 E. parity: chainlit_app.main() and the eval harness's Pipeline emit the same
    note for the same turn.
-F. the recorded case itself, replayed offline from release-3's own plan.
+F. inheritance: the line this path builds comes from registry._fmt, so schema
+   2's cover-page provenance reaches a follow-up turn with no wiring of its
+   own — and the page it prints is one the app's citation gate credits.
+G. the recorded case itself, replayed offline from release-3's own plan.
 """
 import asyncio
 import json
@@ -42,6 +45,7 @@ sys.path.insert(0, str(ROOT / "scripts"))
 import eval_answers as ev  # noqa: E402
 from gcf_qna.app import chainlit_app as app  # noqa: E402
 from gcf_qna.rag import registry  # noqa: E402
+from gcf_qna.rag import verify  # noqa: E402
 from gcf_qna.rag.retrieve import Hit  # noqa: E402
 
 FP151 = "124_gcf-b27-02-add11"
@@ -406,7 +410,76 @@ def test_the_harness_leaves_an_untagged_turn_alone(monkeypatch, app_env):
 
 
 # ---------------------------------------------------------------------------
-# F. the recorded case, against the real registry
+# F. the widened trigger inherits the cover-page provenance
+# ---------------------------------------------------------------------------
+# `_extend_registry_note` calls `registry._fmt` — the emitter, not a copy of
+# its output — so schema 2's optional `meta_provenance` reaches the follow-up
+# path with no wiring of its own. What is pinned is that the inherited pointer
+# is CREDITABLE: the line this path builds is the only registry line a
+# follow-up turn gets, and release-6's flagged '[doc, p. 3]' was written for
+# exactly this kind of turn.
+FP173_PROV = {FP173: {"fp": 173, "meta_provenance": {
+    "title": {"page": 1, "quote": "The Amazon Bioeconomy Fund"},
+    "accredited_entity": {"page": 3,
+                          "quote": "Inter-American Development Bank"}}}}
+
+
+def test_the_extended_note_inherits_pages_and_they_are_page_creditable(
+        monkeypatch, fake_registry):
+    """The whole point of the change, on the path that has no note at all until
+    the turn's own plan builds one: the entity now arrives with the page it was
+    read on, and the app's own citation gate accepts a bracket citing it."""
+    monkeypatch.setattr(registry, "_cache_v2", FP173_PROV)
+    before = registry.registry_note(FU_QUESTION)
+    after = app._extend_registry_note(before, FU_PLAN)
+    assert before is None, "the French question spells no identifier"
+    (line,) = after.splitlines()
+    assert "accredited entity: Inter-American Development Bank (p.3)" in line
+    assert '"The Amazon Bioeconomy Fund" (p.1)' in line
+    assert line.endswith(f"[{FP173}, cover pages]")
+    # the two readers that decide whether a cited page is legal
+    assert app._note_pages([after]) == {(FP173, 1), (FP173, 3)}
+    assert (verify.note_scope_doc(FP173), 3) in verify.note_page_scopes(line)
+    # release-6 wrote this bracket from a GUESS and was flagged; retrieval
+    # still never returned page 3, and now it passes because the note prints it
+    hits = [Hit(text="x", doc_id=FP173, score=0.8, page=p) for p in (1, 2, 4, 5)]
+    cited = f"The accredited entity is the IDB. [{FP173}, p. 3]"
+    assert app._invalid_citations(cited, hits, app._note_pages([after])) == []
+    assert app._invalid_citations(cited, hits, frozenset()) == [f"{FP173[:34]}… p.3"]
+
+
+def test_the_extended_note_without_provenance_is_byte_identical(monkeypatch,
+                                                                fake_registry):
+    """The absent arm on the same path — their file may land after ours, and a
+    document whose provenance the builder never found stays page-less forever.
+    Byte for byte the line this suite already pinned."""
+    monkeypatch.setattr(registry, "_cache_v2", {})
+    plain = app._extend_registry_note(None, FU_PLAN)
+    assert plain == (
+        'Registry — FP173: "The Amazon Bioeconomy Fund"; accredited entity: '
+        f"Inter-American Development Bank; board B.30, 2021 "
+        f"[{FP173}, cover pages]")
+    assert "(p." not in plain
+    monkeypatch.setattr(registry, "_cache_v2", FP173_PROV)
+    assert app._extend_registry_note(None, FU_PLAN) == plain.replace(
+        'Fund";', 'Fund" (p.1);').replace(
+        "Development Bank;", "Development Bank (p.3);")
+
+
+def test_a_v2_row_whose_provenance_is_junk_leaves_the_extended_note_alone(
+        monkeypatch, fake_registry):
+    """`_extend_registry_note` swallows any exception and returns the note
+    unchanged, so a broken row must not cost the turn its registry line at
+    all — the degradation is the pointer, never the fact."""
+    monkeypatch.setattr(registry, "_cache_v2",
+                        {FP173: {"fp": 173, "meta_provenance": "p.3"}})
+    out = app._extend_registry_note(None, FU_PLAN)
+    assert out and "accredited entity: Inter-American Development Bank;" in out
+    assert "(p." not in out
+
+
+# ---------------------------------------------------------------------------
+# G. the recorded case, against the real registry
 # ---------------------------------------------------------------------------
 def test_the_recorded_release_3_turn_now_carries_its_registry_line():
     """fu-lang-switch replayed offline from its own recorded plan, on the

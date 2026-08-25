@@ -147,6 +147,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: Caribbean Development Bank"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Countries(s): Barbados, Belize, Jamaica"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme title: Scaling up the Deployment of Integrated Utility Services (IUS)"
+    }
    }
   },
   "02_gcf-b42-02-add16-funding-proposal-package-fp274": {
@@ -380,6 +394,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: Save the Children Australia"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country(ies): Zambia, South Sudan, Togo"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme title: Building the Climate Resilience of Children and Communities through the Education Sector (BRACE)"
+    }
    }
   },
   "03_gcf-b42-02-add15-funding-proposal-package-fp273": {
@@ -491,6 +519,20 @@
      "gcf_funding_requested"
     ],
     "llm_fallback": true
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: FMO"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country: Papua New Guinea Results period in this proposal: 2014 - 2016 National Designated Authority: Office of Climate Change and Development REDD-plus entity/fiscal point: Ms. Gwen Slesius, Director"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Programme Title: Papua New Guinea REDD+ RBP for results period 2014-2016"
+    }
    }
   },
   "04_gcf-b42-02-add14-funding-proposal-package-fp272_0": {
@@ -711,6 +753,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: United Nations Development Programme (UNDP)"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country(ies): Nepal"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme title: Protecting livelihoods and assets at risk from Glacial Lake Outburst Floods (GLOFs) and climate change-induced flooding in glacial river basins of Nepal"
+    }
    }
   },
   "05_gcf-b42-02-add13-funding-proposal-package-fp271": {
@@ -923,6 +979,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: Asian Development Bank"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country: The Republic of India"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme title: India Green Finance Facility (IGFF)"
+    }
    }
   },
   "06_gcf-b42-02-add12-funding-proposal-package-fp270": {
@@ -1141,6 +1211,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: International Fund for Agriculture Development"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country: Cambodia"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme title: Climate Adaptive Irrigation and Sustainable Agriculture for Resilience (CASAR) in Cambodia"
+    }
    }
   },
   "07_gcf-b42-02-add11-funding-proposal-package-fp269": {
@@ -1311,6 +1395,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: International Fund for Agricultural Development (IFAD)"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Countries(ies): Kenya, Rwanda, United Federation of Tanzania and Uganda"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme title: Dairy Interventions for Mitigation and Adaptation (DiMA)"
+    }
    }
   },
   "08_gcf-b42-02-add10-funding-proposal-package-fp268": {
@@ -1455,6 +1553,20 @@
      "gcf_funding_requested"
     ],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entities: Food and Agriculture Organization of the United Nations (FAO)"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Countries: Burkina Faso, Chad, Djibouti, Mali, Mauritania, Niger, Nigeria, Senegal"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Programme title: Scaling-Up Resilience in Africa’s Great Green Wall (SURAGGWA)"
+    }
    }
   },
   "09_gcf-b42-02-add09-funding-proposal-package-fp267": {
@@ -1660,6 +1772,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: SANBI"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Countries(ies): South Africa (\"SA\")"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme title: Scaling up ecosystem-based approaches to managing climate-interrelated disaster risks in vulnerable regions of South Africa (\"Eco-DRR\")"
+    }
    }
   },
   "100_gcf-b30-02-add07": {
@@ -1859,6 +1985,16 @@
      "title"
     ],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: National Environment Management Authority,"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country(ies): Kenya"
+    }
    }
   },
   "101_gcf-b30-02-add06": {
@@ -2010,6 +2146,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: Central American Bank for Economic Integration (CABEI)"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country(ies): Guatemala, Honduras, El Salvador, Nicaragua, Costa Rica, Panama, Dominican Republic"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme title: Ecosystem-based Adaptation to increase climate resilience in the Central American Dry Corridor and the And Zones of the Dominican Republic"
+    }
    }
   },
   "102_gcf-b30-02-add05": {
@@ -2238,6 +2388,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: Inter-American Development Bank"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country(ies): Brazil, Colombia, Ecuador, Guyana, Peru and Suriname"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme title: The Amazon Bioeconomy Fund: Unlocking private capital by valuing bioeconomy products and services with climate mitigation and adaptation results in the Amazon."
+    }
    }
   },
   "103_gcf-b30-03-add04": {
@@ -2443,6 +2607,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: Alternative Energy Promotion Centre, Ministry of Energy, Water Resources and Irrigation, Government of Nepal. [2020/13/05]"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country(ies): Nepal"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme title: Mitigating GHG emission through modern, efficient and climate friendly clean cooking solutions (CCS)"
+    }
    }
   },
   "104_gcf-b30-03-add03": {
@@ -2623,6 +2801,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: United Nations Environment Programme"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country: Democratic Republic of Timor-Leste"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme title: Enhancing Early Warning Systems to build greater resilience to hydro-meteorological hazards in Timor-Leste"
+    }
    }
   },
   "105_gcf-b30-02-add02": {
@@ -2839,6 +3031,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: United Nations Development Programme (UNDP)"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country(ies): Thailand"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme title: Enhancing climate resilience in Thailand through effective water management and sustainable agriculture"
+    }
    }
   },
   "106_gcf-b30-02-add01": {
@@ -3058,6 +3264,20 @@
     "core_missing": [],
     "llm_fallback": false,
     "suspect": "gcf>total"
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: Pacific Community (SPC)"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country: Federated States of Micronesia"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme title: Climate change adaptation solutions for Local Authorities in the Federated States of Micronesia"
+    }
    }
   },
   "107_gcf-b29-02-add04": {
@@ -3297,6 +3517,16 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: ** African Development Bank"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country(ies): ** Nigeria, Kenya, Ghana, Tunisia, Ethiopia, Guinea"
+    }
    }
   },
   "108_gcf-b29-02-add03-rev02": {
@@ -3477,6 +3707,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: IUCN"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country: Rwanda"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme title: Transforming Eastern Province through Adaptation."
+    }
    }
   },
   "109_gcf-b29-02-add02": {
@@ -3662,6 +3906,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: Central American Bank for Economic Integration (CABEI)"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country(ies): Costa Rica"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme title: Light Rail Transit for the Greater Metropolitan Area (GAM)"
+    }
    }
   },
   "10_gcf-b42-02-add08-funding-proposal-package-fp266": {
@@ -3816,6 +4074,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: United Nations Environment Programme"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Countries(ies): Islamic Republic of Mauritania"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme title: Strengthening the resilience of ecosystems and populations in four regional hubs in northern Mauritania"
+    }
    }
   },
   "110_gcf-b29-02-add01": {
@@ -3985,6 +4257,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: Japan International Cooperation Agency (JICA)"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country(ies): Republic of Maldives"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme title: Building Climate Resilient Safer Islands in the Maldives"
+    }
    }
   },
   "111_gcf-b28-02-add11": {
@@ -4228,6 +4514,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: FMO, Netherlands"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country(ies): India"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme title: Green Growth Equity Fund"
+    }
    }
   },
   "112_gcf-b28-02-add10": {
@@ -4476,6 +4776,16 @@
     "core_missing": [],
     "llm_fallback": false,
     "suspect": "gcf>total"
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: World Bank"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Programme title: Sustainable Renewables Risk Mitigation Initiative (SRMI) Facility"
+    }
    }
   },
   "113_gcf-b28-02-add09": {
@@ -4654,6 +4964,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: International Fund for Agricultural Development (IFAD)"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country(ies): Multi-Country LDCs-Africa: Burkina Faso, Chad, Mali, Mauritania, Niger, Senegal, The Gambia"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme Title: The Africa Integrated Climate Risk Management Programme: Building the resilience of smallholder farmers to climate change impacts in the transboundary areas of the Great Lakes"
+    }
    }
   },
   "114_gcf-b28-02-add08": {
@@ -4855,6 +5179,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: French Development Agency (AFD)"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country(ies): Comoros, Madagascar, Mauritius and Seychelles"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme title: Building Regional Resilience through Strengthened Meteorological, Hydrological and Climate Services in the Indian Ocean Commission (IOC) Member Countries"
+    }
    }
   },
   "115_gcf-b28-02-add07-rev01": {
@@ -5033,6 +5371,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: United Nations Development Programme"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country(ies): Liberia"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme title: Monrovia Metropolitan Climate Resilience Project"
+    }
    }
   },
   "116_gcf-b28-02-add06": {
@@ -5242,6 +5594,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: Food and Agriculture Organization of the United Nations"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country(ies): Republic of Congo"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme title: **PREFOREST CONGO - Project to reduce greenhouse gas emissions from forests in five departments in the Republic of Congo**"
+    }
    }
   },
   "117_gcf-b28-02-add05": {
@@ -5460,6 +5826,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: Conservation International Foundation"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country: Botswana"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project title: Ecosystem-Based Adaptation and Mitigation in Botswana’s Communal Rangelands"
+    }
    }
   },
   "118_gcf-b28-02-add04": {
@@ -5598,6 +5978,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: United Nations Development Programme"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country(ies): Republic of Cuba"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme title: Catalyzing Resilience to Climate Change in Cuba through Ecosystem-Based Adaptation - \"Mi COSTA!\""
+    }
    }
   },
   "119_gcf-b28-02-add03-rev01": {
@@ -5805,6 +6199,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: Asian Development Bank"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country(ies): Cambodia, Indonesia, Laos PDR, Malaysia, Philippines"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme title: ASEAN Catalytic Green Finance Facility (ACGF): Green Recovery Program"
+    }
    }
   },
   "11_gcf-b42-02-add07-funding-proposal-package-fp265": {
@@ -6039,6 +6447,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: UNEP"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country(ies): Republic of Ghana"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme title: Climate-resilient landscapes for sustainable livelihoods in northern Ghana"
+    }
    }
   },
   "120_gcf-b28-02-add02": {
@@ -6199,6 +6621,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: United Nations Food and Agricultural Organisation (FAO)"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country: Hashemite Kingdom of Jordan"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme title: Building resilience to cope with climate change in Jordan through improving water use efficiency in the agriculture sector (BRCCJ)"
+    }
    }
   },
   "121_gcf-b28-02-add01-rev01": {
@@ -6388,6 +6824,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: Asian Development Bank (ADB)"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country(ies): Mongolia"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme title: Mongolia: Aimags and Soums Green Regional Development Investment Program (ASDIP)"
+    }
    }
   },
   "122_gcf-b27-02-add13": {
@@ -6593,6 +7043,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: XacBank LLC"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Countries(ies): Mongolia"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme title: Mongolia Green Finance Corporation"
+    }
    }
   },
   "123_gcf-b27-02-add12": {
@@ -6838,6 +7302,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: Pegasus Capital Advisors LP (Pegasus)"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country(ies): - Africa: Angola; Burkina Faso; Cameroon; Côte d'Ivoire; Democratic Republic of the Congo; Gabon; Guinea; Kenya; Mali; Mozambique; Nigeria; Rwanda; Senegal; South Africa; Togo; Uganda -"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme Title: Global Sub-national Climate Fund (GCF Global) – Equity"
+    }
    }
   },
   "124_gcf-b27-02-add11": {
@@ -7059,6 +7537,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: International Union for Conservation of Nature and Natural Resources (IUCN)"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country(ies): Africa: Angola; Benin; Botswana; Burkina Faso; Burundi; Democratic Republic of the Congo; Gabon; Ghana; Kenya; Mali; Mozambique; Nigeria; Rwanda; Senegal; South Africa; Togo; Uganda; Asi"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme Title: Technical Assistance (TA) Facility for the Global Subnational Climate Fund (SfCfT Global - Equity: submitted separately)"
+    }
    }
   },
   "125_gcf-b27-02-add10-rev01": {
@@ -7207,6 +7699,20 @@
      "gcf_funding_requested"
     ],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: Industrial Development Company Limited (IDCOL)"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Countries: Bangladesh"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme Title: Promoting private sector investment through large scale adoption of energy saving technologies and equipment for Textile and Readymade Garment (RMG) sectors of Bangladesh"
+    }
    }
   },
   "126_gcf-b27-02-add09": {
@@ -7449,6 +7955,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: Corporación Andina de Fomento (CAF – Development Bank of Latin America)"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country(ies): Latin America: Chile, Ecuador, Panamá and Peru."
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme title: Green Climate Financing Facility for LFs in Latin America"
+    }
    }
   },
   "127_gcf-b27-02-add08": {
@@ -7650,6 +8170,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: Acumen Fund, Inc."
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country(ies): Uganda, Kenya, Democratic Republic of Congo, Kenya, Senegal, Mozambique, Sierra Leone, Rwanda, Zambia."
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme title: Participation in Energy Access Relief Facility (\"EARF\")"
+    }
    }
   },
   "128_gcf-b27-02-add07": {
@@ -7839,6 +8373,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: United Nations Environment Programme"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Countries: - Cook Islands - Niue - Palau - Republic of the Marshall Islands - Tuvalu"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Programme title: Enhancing Climate Information and Knowledge Services for resilience in S Island countries of the Pacific Ocean"
+    }
    }
   },
   "129_gcf-b27-02-add06-rev01": {
@@ -8013,6 +8561,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: Central American Bank for Economic Integration (CABEI)"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country(ies): Nicaragua"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme title: Bio-CLIMA: Integrated climate action to reduce deforestation and strengthen resilience in Bosawás and Rio San Juan Biospheres Nicaragua"
+    }
    }
   },
   "12_gcf-b43-02-add29-funding-proposal-package-fp264": {
@@ -8193,6 +8755,12 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "countries": {
+     "page": 3,
+     "quote": "Country(ies): Bangladesh, India, Mauritius"
+    }
    }
   },
   "130_gcf-b27-02-add05": {
@@ -8393,6 +8961,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: Food and Agriculture Organization of the United Nations (FAO)"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Countries: Guatemala"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme title: RELIVE – Resilient Livelihoods of vulnerable smallholder farmers in the Mayan landscapes and the Dry Corridor of Guatemala"
+    }
    }
   },
   "131_gcf-b27-02-add04": {
@@ -8486,6 +9068,16 @@
      "gcf_funding_requested"
     ],
     "llm_fallback": true
+   },
+   "meta_provenance": {
+    "countries": {
+     "page": 3,
+     "quote": "Country: Costa Rica Results period in this proposal: - Andrea Mesa Murillo - Jorge Mario Rodriguez Zúñiga National Designated Authority: - Minister of Environment and Energy Phone: (506) 2371 9318 Ema"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Program Title: Costa Rica REDD-plus Results-Based Payments for 2014 and 2015"
+    }
    }
   },
   "132_gcf-b27-02-add03": {
@@ -8723,6 +9315,20 @@
     "core_missing": [],
     "llm_fallback": false,
     "suspect": "gcf>total"
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: International Fund for Agricultural Development (IFAD)"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country: Brazil"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project title: Planting Climate Resilience in Rural Communities of the Northeast (PCR)"
+    }
    }
   },
   "133_gcf-b27-02-add02": {
@@ -8834,6 +9440,20 @@
      "gcf_funding_requested"
     ],
     "llm_fallback": true
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: ** Food and Agriculture Organization of the United Nations (FAO)"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country: ** Argentina **Results period in this proposal:** 2014 – 2016 **National Designated Authority:** Under-Secretariat of International Financial Relations Development, Secretariat of Strategic A"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Programme Title: ** Argentina REDD-plus RBP for results period 2014-2016"
+    }
    }
   },
   "134_gcf-b27-02-add01": {
@@ -9061,6 +9681,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: United Nations Development Programme"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country(ies): Mongolia"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme title: Improving Adaptive Capacity and Risk Management of Rural Communities in Mongolia"
+    }
    }
   },
   "135_gcf-b26-02-add12": {
@@ -9292,6 +9926,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: European Bank for Reconstruction and Development (EBRD)"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country(ies): Armenia, Jordan, Kazakhstan, Morocco, Serbia, Tunisia, Uzbekistan"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme title: High Impact Programme for the Corporate Sector"
+    }
    }
   },
   "136_gcf-b26-02-add11": {
@@ -9476,6 +10124,20 @@
      "gcf_funding_requested"
     ],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: United Nations Development Programme"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country: Sudan"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme title: Building resilience in the face of climate change within traditional rain fed agricultural and pastoral systems in Sudan"
+    }
    }
   },
   "137_gcf-b26-02-add10": {
@@ -9721,6 +10383,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: West African Development Bank (BOAD)"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country(ies): Senegal"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme title: ASER Solar Rural Electrification Project"
+    }
    }
   },
   "138_gcf-b26-02-add09": {
@@ -9926,6 +10602,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: United Nations Development Programme"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country(ies): Ghana"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme title: Ghana Shea Landscape Emission Reductions Project."
+    }
    }
   },
   "139_gcf-b26-02-add08": {
@@ -10133,6 +10823,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: World Bank"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country(ies): Ethiopia"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme title: Resilient Landscapes and Livelihoods Project"
+    }
    }
   },
   "13_gcf-b41-02-add11-funding-proposal-package-fp263": {
@@ -10366,6 +11070,16 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "countries": {
+     "page": 3,
+     "quote": "Country(ies): Costa Rica; Côte d'Ivoire; Ghana; Malaysia; Morocco; Peru; The Philippines"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Programme title: Mirava Sustainable Land Fund 2 (MSLF2)"
+    }
    }
   },
   "140_gcf-b26-02-add07": {
@@ -10545,6 +11259,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: Agence Française de Développement (AFD)"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Countries: Comoros, Madagascar, Mauritius and Seychelles"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Programme title: Ecosystem-based Adaptation in the Indian Ocean - EBA IO"
+    }
    }
   },
   "141_gcf-b26-02-add06": {
@@ -10656,6 +11384,20 @@
      "gcf_funding_requested"
     ],
     "llm_fallback": true
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: Roberto Roldán, Assistant Director-General, Programme Support and Technical Cooperation, Ministry of Environment and Sustainable Development, Cali, Colombia Phone +57 0637 0551 46 T"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country: Colombia"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Programme Title: Colombia REDD+ Results-based Payments for results period 2015-2016"
+    }
    }
   },
   "142_gcf-b26-02-add05": {
@@ -10872,6 +11614,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: Department of Environment, Antigua and Barbuda"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Countries: Antigua and Barbuda"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme title: Resilience to hurricanes in the building sector in Antigua and Barbuda"
+    }
    }
   },
   "143_gcf-b26-02-add04": {
@@ -11086,6 +11842,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: Deutsche Gesellschaft für Internationale Zusammenarbeit (GIZ) GmbH"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country: Georgia"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project Title: Enabling implementation of Forest Sector Reform in Georgia to Reduce GHG Emissions from Forest Degradation"
+    }
    }
   },
   "144_gcf-b26-02-add03": {
@@ -11265,6 +12035,16 @@
      "accredited_entity"
     ],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "countries": {
+     "page": 3,
+     "quote": "Country(ies): Nepal"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme title: Improving Climate Resilience of Vulnerable Communities and Ecosystems in the Gandaki River Basin, Nepal"
+    }
    }
   },
   "145_gcf-b26-02-add02": {
@@ -11376,6 +12156,20 @@
      "gcf_funding_requested"
     ],
     "llm_fallback": true
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: ** UNDP"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country: ** Indonesia **Results period in this proposal:** 2014 - 2016 **National Designated Authority:** Fiscal Policy Agency, Ministry of Finance **REDD-plus entity/focal point:** Directorate Genera"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Programme Title: ** Indonesia REDD-plus RBP for results period 2014-2016"
+    }
    }
   },
   "146_gcf-b26-02-add01": {
@@ -11592,6 +12386,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: United Nations Development Programme"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country(ies): Afghanistan"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme title: Afghanistan Rural Energy Market Transformation Initiative – Strengthening Resilience of Livelihoods Through Sustainable Energy Access"
+    }
    }
   },
   "147_gcf-b25-02-add05": {
@@ -11785,6 +12593,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: MUFG Bank"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country(ies): Sub-Saharan African and Latin American countries as Burkina Faso, Ghana, Sierra Leone, Uganda, Ecuador, Paraguay, Peru"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme title: Ardano Fund – Sustainable Forestry Fund"
+    }
    }
   },
   "148_gcf-b25-02-add04": {
@@ -11967,6 +12789,20 @@
      "gcf_funding_requested"
     ],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: United Nations Development Programme"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country/Region: Zimbabwe"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme Title: Building Climate Resilience of Vulnerable Agricultural Livelihoods in Southern Zimbabwe"
+    }
    }
   },
   "149_gcf-b25-02-add03": {
@@ -12156,6 +12992,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: Food and Agriculture Organization of the United Nations"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country: Cuba"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme title: Increased climate resilience of rural households and communities through the rehabilitation of production landscapes in selected localities of the Republic of Cuba (IRES)"
+    }
    }
   },
   "14_gcf-b41-02-add10-funding-proposal-package-fp262": {
@@ -12372,6 +13222,16 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: La Banque Agricole (LBA)"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme title: Green Climate Finance Facility for Fostering Climate-Smart Agriculture in Senegal"
+    }
    }
   },
   "150_gcf-b25-02-add02": {
@@ -12563,6 +13423,20 @@
      "gcf_funding_requested"
     ],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: ** United Nations Development Programme"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country: ** Vietnam"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project Title: Strengthening the resilience of smallholder agriculture to climate change-induced water insecurity in the Central Highlands and South-Central Coast regions of Vietnam"
+    }
    }
   },
   "151_gcf-b25-02-add01": {
@@ -12744,6 +13618,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: IUCN"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country/Region: Sri Lanka"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme Title: Strengthening Climate Resilience of Subsistence Farmers and Agricultural Communities in Sri Lanka, leading in the vulnerable river basins, watershed areas and downstream of th"
+    }
    }
   },
   "152_gcf-b24-02-add09-rev01": {
@@ -12971,6 +13859,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: Kreditanstalt für Wiederaufbau (KfW)"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country(ies): Countries in the Western Indian Ocean (Madagascar, Mozambique, Tanzania, South Africa)"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme title: Blue Action Fund (BAF): GCF Ecosystem Based Adaptation Programme in the Western Indian Ocean"
+    }
    }
   },
   "154_gcf-b24-02-add07": {
@@ -13082,6 +13984,20 @@
      "gcf_funding_requested"
     ],
     "llm_fallback": true
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: ** United Nations Environment Programme"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country: ** Paraguay **Results period in this proposal:** 2015 - 2017 **National Designated Authority:** Technical Secretariat for Economic and Social Development Planning (STP) **REDD-plus entity/foc"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Programme Title: ** REDD+ Results-based payments in Paraguay for the period 2015-2017"
+    }
    }
   },
   "155_gcf-b24-02-add06": {
@@ -13193,6 +14109,20 @@
      "gcf_funding_requested"
     ],
     "llm_fallback": true
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: Food and Agriculture Organization of the United Nations (FAO)"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country: Chile"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Programme Title: Chile REDD-plus results-based payments for results period 2014–2016"
+    }
    }
   },
   "156_gcf-b24-02-add05": {
@@ -13346,6 +14276,20 @@
      "gcf_funding_requested"
     ],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: Agence Française de Développement (AFD)"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country/Region: PALESTINE"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme Title: Water Banking and Adaptation of Agriculture to Climate Change in Northern Gaza"
+    }
    }
   },
   "157_gcf-b24-02-add04": {
@@ -13498,6 +14442,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: Food and Agriculture Organization of the United Nations"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country/Region: Nepal"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme Title: Building a Resilient Churia Region in Nepal (BRCRN)"
+    }
    }
   },
   "158_gcf-b24-02-add03": {
@@ -13694,6 +14652,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: Deutsche Gesellschaft für Internationale Zusammenarbeit (GIZ) GmbH"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country: Lao People's Democratic Republic"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project Title: Implementation of the Lao PDR Emission Reductions Programme through improved governance and sustainable forest landscape management"
+    }
    }
   },
   "159_gcf-b24-02-add02": {
@@ -13848,6 +14820,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: Food and Agriculture Organization of the UN"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country/Region: Kyrgyz Republic"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme Title: Carbon Sequestration through Climate Investment in Forests and Rangelands in Kyrgyz Republic (CS-FOR)"
+    }
    }
   },
   "15_gcf-b41-02-add09-rev01-funding-proposal-package-fp261": {
@@ -14002,6 +14988,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: ** Inter-American Development Bank (IDB)"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Countries: ** - Bolivia - Brazil - Colombia - Ecuador - Peru and Suriname"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Programme title: ** Improving Climate Resilience by Increasing Water Security in the Amazon Basin"
+    }
    }
   },
   "160_gcf-b23-02-add09": {
@@ -14185,6 +15185,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: MUFG Bank, Ltd."
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country/Region: Chile"
+    },
+    "title": {
+     "page": 5,
+     "quote": "A1.1. Project / programme title: Espejo de Tarapacá"
+    }
    }
   },
   "161_gcf-b23-02-add08": {
@@ -14350,6 +15364,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: ** African Development Bank"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country/Region: ** Ghana/Africa"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme Title: Program on Affirmative Finance Action for Women in Africa"
+    }
    }
   },
   "162_gcf-b23-02-add07": {
@@ -14515,6 +15543,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: IUCN (International Union for Conservation of Nature)"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country/Region: Kenya"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme Title: TWENDI: Towards Ending Drought Emergencies: Ecosystem Based Adaptation in Kenya’s Arid and Semi-Arid Rangelands"
+    }
    }
   },
   "163_gcf-b23-02-add06": {
@@ -14686,6 +15728,20 @@
      "gcf_funding_requested"
     ],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: UNDP"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country/Region: Republic of Marshall Islands"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme Title: Addressing Climate Vulnerability in the Water Sector (ACWA) in the Marshall Islands"
+    }
    }
   },
   "164_gcf-b23-02-add05": {
@@ -14878,6 +15934,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: Inter-American Development Bank (IDB)"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country/Region: Honduras"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme Title: \"Promoting climate-resilient forest restoration and silviculture for the sustainability of water-related ecosystem services\""
+    }
    }
   },
   "165_gcf-b23-02-add04": {
@@ -14980,6 +16050,20 @@
      "gcf_funding_requested"
     ],
     "llm_fallback": true
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: United Nations Development Programme"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country: Ecuador"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Program Title: Ecuador REDD-plus RFP for results period 2014"
+    }
    }
   },
   "166_gcf-b23-02-add03": {
@@ -15152,6 +16236,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: United Nations Development Programme"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country/Region: Timor Leste"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme Title: Safeguarding rural communities and their physical and economic assets from climate induced disasters in Timor-Leste"
+    }
    }
   },
   "167_gcf-b23-02-add02": {
@@ -15305,6 +16403,20 @@
      "gcf_funding_requested"
     ],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: Food and Agriculture Organization of the United Nations"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country/Region: Pakistan"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme Title: Transforming the Indus Basin with Climate Resilient Agriculture and Water Management"
+    }
    }
   },
   "168_gcf-b23-02-add01": {
@@ -15479,6 +16591,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: United Nations Development Programme"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country/Region: Kingdom of Bhutan"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme Title: Supporting Climate Resilience and Transformational Change in the Agriculture Sector in Bhutan"
+    }
    }
   },
   "169_gcf-b22-10-add10-rev01": {
@@ -15642,6 +16768,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: Development Bank of Southern Africa (“DBSA”)"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country/Region: South Africa"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme Title: Embedded Generation Investment Programme (\"EGIP\")"
+    }
    }
   },
   "16_gcf-b41-02-add08-funding-proposal-package-fp260": {
@@ -15791,6 +16931,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: FAO"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country(ies): Republic of Serbia"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme title: Enhancing the resilience of Serbian forests to ensure energy security of the most vulnerable while contributing to their livelihoods and carbon sequestration (FOREST Invest)"
+    }
    }
   },
   "170_gcf-b22-10-add09": {
@@ -16041,6 +17195,20 @@
     "core_missing": [],
     "llm_fallback": false,
     "suspect": "gcf>total"
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: West African Development Bank (BOAD)"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country/Region: Benin, Burkina Faso, Guinea-Bissau, Mali, Niger and Togo"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme Title: BOAD Climate Finance Facility to Scale Up Solar Energy Investments in Francophone West Africa LDCs"
+    }
    }
   },
   "171_gcf-b22-10-add08": {
@@ -16204,6 +17372,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: Africa Finance Corporation (AFC)"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country/Region: Nigeria"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Program Title: Nigeria Solar IPP Support Program"
+    }
    }
   },
   "172_gcf-b22-10-add05": {
@@ -16368,6 +17550,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: ** GIZ"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country/Region: ** Global; Kenya and Senegal"
+    },
+    "title": {
+     "page": 3,
+     "quote": "V10 Project/Programme Title: Promotion of Climate-Friendly Cooking: Kenya and Senegal"
+    }
    }
   },
   "173_gcf-b22-10-add04": {
@@ -16558,6 +17754,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: Banque Ouest Africaine de Développement (BOAD)"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country/Region: Mali (West Africa)"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme Title: Mali solar rural electrification project"
+    }
    }
   },
   "174_gcf-b22-10-add03": {
@@ -16718,6 +17928,20 @@
      "gcf_funding_requested"
     ],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: International Fund for Agricultural Development - IFAD"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country/Region: Belize"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme Title: Resident Rural Belize (Be-Resilient)"
+    }
    }
   },
   "175_gcf-b22-10-add02": {
@@ -16820,6 +18044,20 @@
      "gcf_funding_requested"
     ],
     "llm_fallback": true
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: United Nations Development Program, UNDP"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country: Brazil"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Program Title: REDD+ results-based payments for results achieved by Brazil in the Amazon biome in 2014 and 2015"
+    }
    }
   },
   "176_gcf-b21-10-add21-rev01": {
@@ -17038,6 +18276,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: FMO"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country/Region: - Burundi - Cameroon - Djibouti - Indonesia - Uganda - Kenya - Malawi - Madagascar - Mongolia - Morocco"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme Title: Climate Investor One"
+    }
    }
   },
   "177_gcf-b21-10-add20": {
@@ -17231,6 +18483,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: Development Bank of Southern Africa"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country/Region: South Africa & Southern Africa Development Community (SADC) Region"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme Title: DBSA Climate Finance Facility"
+    }
    }
   },
   "178_gcf-b21-10-add19": {
@@ -17410,6 +18676,20 @@
      "gcf_funding_requested"
     ],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: Central American Bank for Economic Integration (CABEI)"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country/Region: Guatemala, El Salvador, Honduras, Nicaragua, Costa Rica, Panama and the Dominican Republic"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme Title: Productive Investment Initiative for Adaptation to Climate Change (CA$80M II)"
+    }
    }
   },
   "179_gcf-b21-10-add18": {
@@ -17602,6 +18882,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: African Development Bank"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country/Region: Democratic Republic of Congo"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme Title: Democratic Republic of Congo (DRC) Green Mini-Grid Program"
+    }
    }
   },
   "17_gcf-b41-02-add07-funding-proposal-package-fp259": {
@@ -17797,6 +19091,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: Conservation International Foundation (CI)"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Countries: - Cook Islands (Climate Change, Cook Islands Division of the Office of the Prime Minister) - Federated States of Micronesia (Department of Finance and Administration; Fiji Ministry of Comme"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Programme title: Adapting tuna-dependent Pacific Island communities and economies to climate change"
+    }
    }
   },
   "180_gcf-b21-10-add17": {
@@ -17995,6 +19303,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: Agence Française de Développement (AFD)"
+    },
+    "countries": {
+     "page": 6,
+     "quote": "A.1.3. Country(ies) / region: - Benin - Burkina Faso - Cameroon - Chad - Ecuador - Egypt - Kenya - Madagascar - Mali - Morocco"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Programme Title: Transforming Financial Systems for Climate (The 'TFSC programme')"
+    }
    }
   },
   "181_gcf-b21-10-add13": {
@@ -18160,6 +19482,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 2,
+     "quote": "Accredited Entity: United Nations Development Programme"
+    },
+    "countries": {
+     "page": 2,
+     "quote": "Country/Region: Comoros"
+    },
+    "title": {
+     "page": 2,
+     "quote": "Project/Programme Title: Ensuring climate-resilient water supplies in the Comoros Islands"
+    }
    }
   },
   "182_gcf-b21-10-add12": {
@@ -18315,6 +19651,20 @@
      "gcf_funding_requested"
     ],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 2,
+     "quote": "Accredited Entity: African Development Bank"
+    },
+    "countries": {
+     "page": 2,
+     "quote": "Country/Region: Burkina Faso"
+    },
+    "title": {
+     "page": 2,
+     "quote": "Project Title: Yeleen Rural Electrification Project in Burkina Faso"
+    }
    }
   },
   "183_gcf-b21-10-add11": {
@@ -18467,6 +19817,20 @@
      "gcf_funding_requested"
     ],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: African Development Bank"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country/Region: West Africa (Benin, Burkina Faso, Côte d'Ivoire, Guinea, Mali, Niger, and Nigeria), Central Africa (Cameroon and Chad)."
+    },
+    "title": {
+     "page": 5,
+     "quote": "A.1.1 Project / programme title: Programme for Integrated Development and Adaptation to Climate Change in the Niger Basin (PIDACC-NB)"
+    }
    }
   },
   "184_gcf-b21-10-add10": {
@@ -18628,6 +19992,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 2,
+     "quote": "Accredited Entity: Asian Development Bank"
+    },
+    "countries": {
+     "page": 2,
+     "quote": "Country/Region: Kiribati"
+    },
+    "title": {
+     "page": 2,
+     "quote": "Project/Programme Title: South Tarawa Water Supply Project"
+    }
    }
   },
   "185_gcf-b21-10-add09": {
@@ -18762,6 +20140,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 2,
+     "quote": "Accredited Entity: Asian Development Bank"
+    },
+    "countries": {
+     "page": 2,
+     "quote": "Country/Region: Kingdom of Tonga"
+    },
+    "title": {
+     "page": 2,
+     "quote": "Project/Programme Title: Tonga Renewable Energy Project (under the Pacific Islands Renewable Energy Investment Program)"
+    }
    }
   },
   "186_gcf-b20-10-add08": {
@@ -18964,6 +20356,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: Agence Française de Développement (AFD)"
+    },
+    "countries": {
+     "page": 5,
+     "quote": "A.1.3. Country(ies) / region: - Benin - Burkina Faso - Cameroon - Chad - Ecuador - Egypt - Kenya - Madagascar - Mali - Morocco"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Programme Title: Transforming Financial Systems for Climate (The 'TFSC programme')"
+    }
    }
   },
   "187_gcf-b20-10-add07": {
@@ -19157,6 +20563,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: Korea Development Bank (KDB)"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country/Region: Fiji, Papua New Guinea (PNG)"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme Title: Biomass Energy Programme in the South Pacific"
+    }
    }
   },
   "188_gcf-b21-10-add06": {
@@ -19308,6 +20728,20 @@
      "gcf_funding_requested"
     ],
     "llm_fallback": true
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 2,
+     "quote": "Accredited Entity: International Union for Conservation of Nature IUCN"
+    },
+    "countries": {
+     "page": 2,
+     "quote": "Country/Region: Guatemala"
+    },
+    "title": {
+     "page": 2,
+     "quote": "Project/Programme Title: Building livelihood resilience to climate change in the upper basin of Guatemala's highlands"
+    }
    }
   },
   "189_12-status-approved-fps-adding-host-countries-respect-fp086-gcf-b37-07": {
@@ -19593,6 +21027,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: United Nations Development Programme (UNDP)"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Countries: Antigua and Barbuda | Chad | Cambodia | Ecuador | Ethiopia | Fiji | Somalia"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme title: Multi-country Project Advancing Early Warnings for All (EWA4)"
+    }
    }
   },
   "190_gcf-b20-10-add04": {
@@ -19746,6 +21194,20 @@
      "gcf_funding_requested"
     ],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 2,
+     "quote": "Accredited Entity: United Nations Development Programme"
+    },
+    "countries": {
+     "page": 2,
+     "quote": "Country/Region: India"
+    },
+    "title": {
+     "page": 2,
+     "quote": "Project/Programme Title: Enhancing Climate Resilience of India's Coastal Communities"
+    }
    }
   },
   "191_gcf-b20-10-add03": {
@@ -19889,6 +21351,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 2,
+     "quote": "Accredited Entity: Asian Development Bank"
+    },
+    "countries": {
+     "page": 2,
+     "quote": "Country/Region: Kiribati"
+    },
+    "title": {
+     "page": 2,
+     "quote": "Project/Programme Title: South Tarawa Water Supply Project"
+    }
    }
   },
   "192_gcf-b21-10-add02-rev01": {
@@ -20081,6 +21557,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 2,
+     "quote": "Accredited Entity: The World Bank"
+    },
+    "countries": {
+     "page": 2,
+     "quote": "Country/Region: Indonesia/East Asia and the Pacific"
+    },
+    "title": {
+     "page": 2,
+     "quote": "Project/Programme Title: Indonesia Geothermal Resource Risk Mitigation Project"
+    }
    }
   },
   "193_gcf-b22-10-add01-rev01": {
@@ -20292,6 +21782,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: National Bank for Agriculture and Rural Development (NABARD)"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country/Region: India"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme Title: Line of Credit for Solar rooftop segment for commercial, industrial and residential housing sectors"
+    }
    }
   },
   "195_gcf-b19-22-add22": {
@@ -20455,6 +21959,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: African Development Bank"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country/Region: Zambia"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme Title: Zambia Renewable Energy Financing Framework"
+    }
    }
   },
   "196_gcf-b19-22-add21-rev01": {
@@ -20647,6 +22165,16 @@
      "gcf_funding_requested"
     ],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 5,
+     "quote": "A.1.5. Accredited entity: Acumen Fund, LLC."
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme Title: Acaunm Resilient Agriculture Fund (ARAF)"
+    }
    }
   },
   "198_gcf-b19-22-add19": {
@@ -20828,6 +22356,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 2,
+     "quote": "Accredited Entity: Asian Development Bank"
+    },
+    "countries": {
+     "page": 2,
+     "quote": "Country/Region: Mongolia"
+    },
+    "title": {
+     "page": 2,
+     "quote": "Project/Programme Title: Ulaanbaatar Green Affordable Housing and Resilient Urban Renewal Project (AHRUP)"
+    }
    }
   },
   "199_gcf-b19-22-add18": {
@@ -21003,6 +22545,20 @@
     "core_missing": [],
     "llm_fallback": false,
     "suspect": "gcf>total"
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 2,
+     "quote": "Accredited Entity: Asian Development Bank (ADB)"
+    },
+    "countries": {
+     "page": 2,
+     "quote": "Country/Region: Cambodia"
+    },
+    "title": {
+     "page": 2,
+     "quote": "Project/Programme Title: Climate-friendly Agribusiness Value Chains Sector Project"
+    }
    }
   },
   "19_gcf-b41-02-add05-funding-proposal-package-fp257": {
@@ -21135,6 +22691,20 @@
      "gcf_funding_requested"
     ],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: AGRA"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Countries: - Burkina Faso - Ethiopia - Kenya - Malawi - Tanzania - Uganda - Zambia"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme title: RE-GAIN: Scaling solutions for food loss in Africa"
+    }
    }
   },
   "200_gcf-b19-22-add17": {
@@ -21278,6 +22848,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 2,
+     "quote": "Accredited Entity: Asian Development Bank"
+    },
+    "countries": {
+     "page": 2,
+     "quote": "Country/Region: Tajikistan"
+    },
+    "title": {
+     "page": 2,
+     "quote": "Project/Programme Title: Institutional Development of the State Agency for Hydrometeorology of Tajikistan"
+    }
    }
   },
   "201_gcf-b19-22-add16-rev01": {
@@ -21451,6 +23035,20 @@
      "gcf_funding_requested"
     ],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 2,
+     "quote": "Accredited Entity: The World Bank"
+    },
+    "countries": {
+     "page": 2,
+     "quote": "Country/Region: Burkina Faso (Sub-Saharan Africa)"
+    },
+    "title": {
+     "page": 2,
+     "quote": "Project/Programme Title: Africa Hydromet Program – Strengthening Climate Resilience in Sub-Saharan Africa: Burkina Faso Country Project"
+    }
    }
   },
   "202_gcf-b19-22-add15": {
@@ -21595,6 +23193,20 @@
     "core_missing": [],
     "llm_fallback": false,
     "suspect": "gcf>total"
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 2,
+     "quote": "Accredited Entity: MOE"
+    },
+    "countries": {
+     "page": 2,
+     "quote": "Country/Region: Rwanda, East Africa"
+    },
+    "title": {
+     "page": 2,
+     "quote": "Project Title: Strengthening climate resilience of rural communities in Northern Rwanda"
+    }
    }
   },
   "203_gcf-b19-22-add14": {
@@ -21748,6 +23360,20 @@
      "gcf_funding_requested"
     ],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 2,
+     "quote": "Accredited Entity: United Nations Development Programme (UNDP)"
+    },
+    "countries": {
+     "page": 2,
+     "quote": "Country/Region: Zambia"
+    },
+    "title": {
+     "page": 2,
+     "quote": "Project/Programme Title: Strengthening climate resilience of agricultural livelihoods in Agro-Ecological Regions I and II in Zambia"
+    }
    }
   },
   "204_gcf-b19-22-add13": {
@@ -21940,6 +23566,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: The World Bank"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country/Region: Vietnam / East Asia and Pacific (EAP)"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project Programme Title: Scaling Up Energy Efficiency for Industrial Enterprises in Vietnam"
+    }
    }
   },
   "205_gcf-b19-22-add12-rev01": {
@@ -22128,6 +23768,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 2,
+     "quote": "Accredited Entity: The World Bank"
+    },
+    "countries": {
+     "page": 2,
+     "quote": "Country/Region: Bangladesh"
+    },
+    "title": {
+     "page": 2,
+     "quote": "Project/Programme Title: Global Clean Cooking Program – Bangladesh"
+    }
    }
   },
   "206_gcf-b19-22-add11": {
@@ -22272,6 +23926,20 @@
      "gcf_funding_requested"
     ],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 2,
+     "quote": "Accredited Entity: United Nations Development Programme"
+    },
+    "countries": {
+     "page": 2,
+     "quote": "Country/Region: Bangladesh/ Asia and the Pacific"
+    },
+    "title": {
+     "page": 2,
+     "quote": "Project Programme Title: Enhancing adaptive capacities of coastal communities, especially women, to cope with climate change-induced salinity"
+    }
    }
   },
   "207_gcf-b19-22-add10": {
@@ -22444,6 +24112,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 2,
+     "quote": "Accredited Entity: United Nations Development Programme"
+    },
+    "countries": {
+     "page": 2,
+     "quote": "Country/Region: Georgia"
+    },
+    "title": {
+     "page": 2,
+     "quote": "Project/Programme Title: Scaling-up Multi-Hazard Early Warning System and the Use of Climate Information in Georgia"
+    }
    }
   },
   "208_gcf-b19-22-add09": {
@@ -22617,6 +24299,20 @@
      "gcf_funding_requested"
     ],
     "llm_fallback": true
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 2,
+     "quote": "Accredited Entity: United Nations World Food Programme"
+    },
+    "countries": {
+     "page": 2,
+     "quote": "Country/Region: Republic of Tajikistan"
+    },
+    "title": {
+     "page": 2,
+     "quote": "Project/Programme Title: Building climate resilience of vulnerable and food insecure communities through capacity strengthening and livelihood diversification in mountainous regions of Tajikistan"
+    }
    }
   },
   "209_gcf-b19-22-add08-rev01_0": {
@@ -22771,6 +24467,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 4,
+     "quote": "A.1.5 Accredited entity: International Reconstruction and Development and International Development Association (World Bank)"
+    },
+    "countries": {
+     "page": 2,
+     "quote": "Country/Region: Republic of the Marshall Islands"
+    },
+    "title": {
+     "page": 2,
+     "quote": "Project/Programme Title: Pacific Resilience Project Phase II for RMI"
+    }
    }
   },
   "20_gcf-b41-02-add04-funding-proposal-package-fp256": {
@@ -22971,6 +24681,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: Save the Children Australia"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Countries: Mali"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme title: Intensification of Agriculture and Agroforestry Techniques (IAAT) for climate resilient food and nutrition security: Tombouctou, Gao, Mopti, Koulikoro and Segou regions of Mal"
+    }
    }
   },
   "210_gcf-b19-22-add07": {
@@ -23161,6 +24885,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 2,
+     "quote": "Accredited Entity: The World Bank"
+    },
+    "countries": {
+     "page": 2,
+     "quote": "Country/Region: Brazil"
+    },
+    "title": {
+     "page": 2,
+     "quote": "Project/Programme Title: Financial Instruments for Brazil Energy Efficient Cities (FinBrAIZEC)"
+    }
    }
   },
   "211_gcf-b19-22-add06": {
@@ -23358,6 +25096,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 2,
+     "quote": "Accredited Entity: Inter-American Development Bank (IDB)"
+    },
+    "countries": {
+     "page": 2,
+     "quote": "Country/Region: Argentina"
+    },
+    "title": {
+     "page": 2,
+     "quote": "Project/Programme Title: Promoting risk mitigation instruments and finance for renewable energy and energy efficiency investments"
+    }
    }
   },
   "212_gcf-b19-22-add05": {
@@ -23558,6 +25310,20 @@
     "core_missing": [],
     "llm_fallback": false,
     "suspect": "gcf>total"
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 2,
+     "quote": "Accredited Entity: Inter-American Development Bank (IDB)"
+    },
+    "countries": {
+     "page": 2,
+     "quote": "Country/Region: Paraguay"
+    },
+    "title": {
+     "page": 2,
+     "quote": "Project/Programme Title: Promoting private sector investments in energy efficiency in the industrial sector in Paraguay"
+    }
    }
   },
   "213_gcf-b19-22-add04": {
@@ -23721,6 +25487,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 2,
+     "quote": "Accredited Entity: FAO"
+    },
+    "countries": {
+     "page": 2,
+     "quote": "Country/Region: Paraguay"
+    },
+    "title": {
+     "page": 2,
+     "quote": "Project/Programme Title: Poverty, Reforestation, Energy and Climate Change PRODEZA Project"
+    }
    }
   },
   "214_gcf-b19-22-add03": {
@@ -23897,6 +25677,16 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 2,
+     "quote": "Accredited Entity: Department of Environment, Antigua and Barbuda"
+    },
+    "title": {
+     "page": 2,
+     "quote": "Project/Programme Title: Integrated physical adaptation and community resilience through an enhanced direct access pilot in the public, private, and civil society sectors of three Eastern Caribbean sm"
+    }
    }
   },
   "215_gcf-b19-22-add02": {
@@ -24078,6 +25868,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 2,
+     "quote": "Accredited Entity: Caribbean Community Climate Change Centre"
+    },
+    "countries": {
+     "page": 2,
+     "quote": "Country/Region: Barbados/Caribbean"
+    },
+    "title": {
+     "page": 2,
+     "quote": "Project/Programme Title: Water Sector Resilience Nexus for Sustainability in Barbados (WSRN S-Barbados)"
+    }
    }
   },
   "216_gcf-b19-22-add01": {
@@ -24328,6 +26132,20 @@
      "gcf_funding_requested"
     ],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 2,
+     "quote": "Accredited Entity: Deutsche Gesellschaft für Internationale Zusammenarbeit (GIZ) GmbH"
+    },
+    "countries": {
+     "page": 2,
+     "quote": "Country/Region: Grenada/Caribbean"
+    },
+    "title": {
+     "page": 2,
+     "quote": "Project/Programme Title: Climate-Resilient Water Sector in Grenada (G-CREWS)"
+    }
    }
   },
   "217_gcf-b18-04-add13": {
@@ -24491,6 +26309,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 2,
+     "quote": "Accredited Entity: Ministry of Finance and Economic Cooperation (MOFEC)"
+    },
+    "countries": {
+     "page": 2,
+     "quote": "Country/Region: Ethiopia"
+    },
+    "title": {
+     "page": 2,
+     "quote": "Project/Programme Title: Responding to the increasing risk of drought: building gender-responsive resilience of the most vulnerable communities"
+    }
    }
   },
   "218_gcf-b18-04-add12": {
@@ -24635,6 +26467,16 @@
     "core_missing": [],
     "llm_fallback": false,
     "suspect": "gcf>total"
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 4,
+     "quote": "A.1.5. Accredited entity: UCAR- Unit for Rural Change of Argentina"
+    },
+    "countries": {
+     "page": 4,
+     "quote": "A.1.3. Country (ies) / region: Argentina"
+    }
    }
   },
   "219_gcf-b18-04-add11": {
@@ -24797,6 +26639,20 @@
      "gcf_funding_requested"
     ],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 2,
+     "quote": "Accredited Entity: UNDP"
+    },
+    "countries": {
+     "page": 2,
+     "quote": "Country/Region: Colombia"
+    },
+    "title": {
+     "page": 2,
+     "quote": "Project/Programme Title: Scaling up climate resilient water management practices for vulnerable communities in La Mojana"
+    }
    }
   },
   "21_gcf-b41-02-add03-funding-proposal-package-fp255": {
@@ -24946,6 +26802,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: FAO"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country (ies): Kenya"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme title: Transforming Livelihoods through Climate Resilient, Low Carbon, Sustainable Agricultural Value Chains in the Lake Region Economic Bloc, Kenya"
+    }
    }
   },
   "220_gcf-b18-04-add10-rev01": {
@@ -25111,6 +26981,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 2,
+     "quote": "Accredited Entity: FAO"
+    },
+    "countries": {
+     "page": 2,
+     "quote": "Country/Region: Paraguay"
+    },
+    "title": {
+     "page": 2,
+     "quote": "Project/Programme Title: Poverty, Reforestation, Energy and Climate Change PRODEZA Project"
+    }
    }
   },
   "221_gcf-b18-04-add09": {
@@ -25282,6 +27166,20 @@
      "gcf_funding_requested"
     ],
     "llm_fallback": true
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 2,
+     "quote": "Accredited Entity: CAF – banco de desarrollo de América Latina"
+    },
+    "countries": {
+     "page": 2,
+     "quote": "Country/Region: Argentina - Latin America"
+    },
+    "title": {
+     "page": 2,
+     "quote": "Project/Programme Title: Implementation Project for the Management Plan of the Luján River Basin"
+    }
    }
   },
   "222_gcf-b18-04-add08": {
@@ -25454,6 +27352,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 2,
+     "quote": "Accredited Entity: United Nations Development Programme"
+    },
+    "countries": {
+     "page": 2,
+     "quote": "Country: Egypt"
+    },
+    "title": {
+     "page": 2,
+     "quote": "Project Title: Enhancing Climate Change Adaptation in the North Coast and Nile Delta Regions in Egypt"
+    }
    }
   },
   "223_gcf-b18-04-add07": {
@@ -25606,6 +27518,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 2,
+     "quote": "Accredited Entity: Asian Development Bank"
+    },
+    "countries": {
+     "page": 2,
+     "quote": "Country Region: Nauru"
+    },
+    "title": {
+     "page": 2,
+     "quote": "Project/Programme Title: Sustainable and Climate Resilient Connectivity for Nauru"
+    }
    }
   },
   "224_gcf-b18-04-add06": {
@@ -25767,6 +27693,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 2,
+     "quote": "Accredited Entity: United Nations Development Programme"
+    },
+    "countries": {
+     "page": 2,
+     "quote": "Country/Region: Bosnia and Herzegovina"
+    },
+    "title": {
+     "page": 2,
+     "quote": "Project Title: Scaling up Investment in Low-Carbon Public Buildings"
+    }
    }
   },
   "225_gcf-b18-04-add05": {
@@ -25929,6 +27869,20 @@
      "gcf_funding_requested"
     ],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 2,
+     "quote": "Accredited Entity: WWF"
+    },
+    "countries": {
+     "page": 2,
+     "quote": "Country/Region: Bhutan"
+    },
+    "title": {
+     "page": 2,
+     "quote": "Project/Programme Title: BHUTAN FOR LIFE (BFL)"
+    }
    }
   },
   "226_gcf-b18-04-add04": {
@@ -26082,6 +28036,20 @@
      "gcf_funding_requested"
     ],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 2,
+     "quote": "Accredited Entity: United Nations World Food Programme (WFP)"
+    },
+    "countries": {
+     "page": 2,
+     "quote": "Country/Region: Senegal, West Africa"
+    },
+    "title": {
+     "page": 2,
+     "quote": "Project/Programme Title: Building the climate resilience of food insecure smallholder farmers through integrated management of climate risk (RiK)"
+    }
    }
   },
   "227_gcf-b18-04-add03": {
@@ -26244,6 +28212,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: Inter-American Development Bank"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country/Region: Guatemala and Mexico."
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme Title: Climate-Smart Agriculture (CSA) Risk Sharing Facility for MSMEs"
+    }
    }
   },
   "228_gcf-b18-04-add02": {
@@ -26397,6 +28379,20 @@
     "core_missing": [],
     "llm_fallback": false,
     "suspect": "gcf>total"
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: European Bank for Reconstruction and Development (EBRD)"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country/Region: Kazakhstan / ECA"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme Title: GCF-EBRD Kazakhstan Renewables Framework"
+    }
    }
   },
   "229_gcf-b18-04-add01": {
@@ -26556,6 +28552,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: XacBank LLC"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country/Region: Mongolia"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme Title: Renewable Energy Program #1"
+    }
    }
   },
   "22_gcf-b40-02-add16-rev01-funding-proposal-package-fp254": {
@@ -26749,6 +28759,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: International Finance Corporation (IFC)"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Countries/ies: Africa: Cote d'Ivoire, Egypt, Gabon, Morocco, Tunisia Asia: India, Indonesia, Pakistan, Uzbekistan LAC: Colombia Europe: Azerbaijan"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme title: GCF-IFC Scaling Resilient Water Infrastructure (RWI) Facility"
+    }
    }
   },
   "230_gcf-b16-07-add08": {
@@ -26941,6 +28965,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: National Bank for Agriculture and Rural Development (NABARD)"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country/Region: India/Odisha"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme Title: Ground water recharge and solar micro irrigation to ensure"
+    }
    }
   },
   "231_gcf-b16-07-add07": {
@@ -27131,6 +29169,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: The World Bank"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country/Region: Solomon Islands"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme Title: Tira River Hydropower Development Project"
+    }
    }
   },
   "232_gcf-b16-07-add06": {
@@ -27285,6 +29337,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: European Bank for Reconstruction and Development (EBRD)"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country/Region: Morocco"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme Title: Saliis Water Conservation Project"
+    }
    }
   },
   "233_gcf-b16-07-add05": {
@@ -27411,6 +29477,16 @@
      "countries"
     ],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 5,
+     "quote": "A.1.4. Accredited entity: - Agence Française de Développement (AFD)"
+    },
+    "title": {
+     "page": 5,
+     "quote": "A.1.1. Project / programme title: - Irrigation development and adaptation of irrigated agriculture to climate change in semi-arid Morocco Project"
+    }
    }
   },
   "234_gcf-b16-07-add04": {
@@ -27555,6 +29631,20 @@
      "gcf_funding_requested"
     ],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: KIW"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country/Region: Tanzania"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project Title: Simuvi Climate Resilience Project"
+    }
    }
   },
   "235_gcf-b16-07-add03": {
@@ -27700,6 +29790,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: EBRD"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country/Region: Tajikistan"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme Title: Tajikistan: Scaling Up Hydropower Sector Climate Resilience"
+    }
    }
   },
   "236_gcf-b16-07-add02": {
@@ -27853,6 +29957,20 @@
     "core_missing": [],
     "llm_fallback": false,
     "suspect": "gcf>total"
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: European Bank for Reconstruction and Development (EBRD)"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country/Region: Egypt"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme Title: GCF-EBRD Egypt Renewable Energy Financing Framework"
+    }
    }
   },
   "237_gcf-b16-07-add01-rev01": {
@@ -28016,6 +30134,16 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: European Investment Bank"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country/Region: Global emerging markets programme (focused on the GCF eligible countries)"
+    }
    }
   },
   "238_gcf-b15-13-add10": {
@@ -28180,6 +30308,20 @@
      "gcf_funding_requested"
     ],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: UNDP"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country/Region: Samoa"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme Title: Integrated Flood Management to Enhance Climate Resilience"
+    }
    }
   },
   "239_gcf-b15-13-add09-corr01": {
@@ -28472,6 +30614,20 @@
     "core_missing": [],
     "llm_fallback": false,
     "suspect": "gcf>total"
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: European Bank for Reconstruction and Development (EBRD)"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country(ies): Armenia, Egypt, Jordan, Georgia, Kazakhstan, Kyrgyz Republic, Moldova, Mongolia, Morocco, North Macedonia, Serbia, Tajikistan, Uzbekistan"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme title: Greening Financial Systems: Delivering Climate Finance for All"
+    }
    }
   },
   "240_gcf-b15-13-add08": {
@@ -28637,6 +30793,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: SPREP"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country/Region: Vanuatu/Pacific SIDS"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme Title: Climate Information Services for Resilient Development in Vanuatu (Van CIS RDP)"
+    }
    }
   },
   "241_gcf-b15-13-add07": {
@@ -28763,6 +30933,20 @@
      "gcf_funding_requested"
     ],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 5,
+     "quote": "A.1.5 Accredited entity: United Nations Development Programme (UNDP)"
+    },
+    "countries": {
+     "page": 5,
+     "quote": "A.1.3 Country (ies) / region: UGANDA"
+    },
+    "title": {
+     "page": 5,
+     "quote": "A.1.1 Project / programme title: Building Resilient Communities, Wetland Ecosystems and Associated Catchments in Uganda"
+    }
    }
   },
   "242_gcf-b15-13-add06": {
@@ -28897,6 +31081,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 5,
+     "quote": "A.1.5. Accredited entity: United Nations Development Programme"
+    },
+    "countries": {
+     "page": 5,
+     "quote": "A.1.3. Country (ies) / region: Republic of Mauritius"
+    },
+    "title": {
+     "page": 5,
+     "quote": "A.1.1. Project / programme title: Accelerating the transformational shift to a low-carbon economy in the Republic of Mauritius"
+    }
    }
   },
   "243_gcf-b15-13-add05": {
@@ -29059,6 +31257,20 @@
      "gcf_funding_requested"
     ],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: United Nations Development Programme (UNDP)"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country/Region: Bangladesh"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme Title: Enhancing Women and Girls' Adaptive Capacity to Climate Change in Bangladesh"
+    }
    }
   },
   "244_gcf-b15-13-add03": {
@@ -29229,6 +31441,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: Inter-American Development Bank"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country/Region: Argentina"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme Title: Catalyzing private investment in sustainable energy in Argentina – Part 1"
+    }
    }
   },
   "245_gcf-b15-13-add02-rev01": {
@@ -29399,6 +31625,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: Development Bank of Southern Africa"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country/Region: South Africa"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme Title: SCF Capital Solutions"
+    }
    }
   },
   "246_gcf-b15-13-add01": {
@@ -29543,6 +31783,20 @@
      "title"
     ],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: XacBank LLC"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country/Region: Mongolia"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Program Title: MSME Business Loan Program for GHG Emission Reduction"
+    }
    }
   },
   "247_gcf-b14-07-add10": {
@@ -29680,6 +31934,20 @@
      "gcf_funding_requested"
     ],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 6,
+     "quote": "A.1.5. Accredited entity: Deutsche Bank AG"
+    },
+    "countries": {
+     "page": 6,
+     "quote": "A.1.3. Country (ies) / region: Sub-Saharan Africa with first projects located in Benin, Kenya, Nigeria, Namibia and Tanzania"
+    },
+    "title": {
+     "page": 6,
+     "quote": "A.1.1. Project / program title: Universal Green Energy Access Program (\"UGEAP\")"
+    }
    }
   },
   "248_gcf-b14-07-add09": {
@@ -29854,6 +32122,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: Conservation International and the European Investment Bank"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country/Region: Madagascar"
+    },
+    "title": {
+     "page": 5,
+     "quote": "A.1.1. Project / programme title: Sustainable Landscapes in Eastern Madagascar"
+    }
    }
   },
   "249_gcf-b14-07-add08-rev01": {
@@ -30021,6 +32303,16 @@
      "total_financing"
     ],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: European Bank for Reconstruction and Development (EBRD)"
+    },
+    "countries": {
+     "page": 6,
+     "quote": "A1.3. Country(ies) / region: 12 countries in the Middle East and North Africa, Western and Central Asia, southern and eastern Europe: - Central Asia: Kyrgyz Republic, Tajikistan and Turkmenistan - Sou"
+    }
    }
   },
   "24_gcf-b40-02-add14-rev01-funding-proposal-package-fp252": {
@@ -30169,6 +32461,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: Acumen Fund Inc"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Countries: Uganda, Ghana, Nigeria, Cote d'Ivoire, Egypt and Morocco"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme title: Acumen Resilient Agriculture Fund II"
+    }
    }
   },
   "250_gcf-b14-07-add07": {
@@ -30323,6 +32629,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: Environmental Investment Fund of Namibia"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country/Region: Namibia, Southern Africa"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme Title: Creating Climate-Change Resilient Livelihoods through Community-Based Natural Resource Management in Namibia"
+    }
    }
   },
   "251_gcf-b14-07-add06": {
@@ -30449,6 +32769,20 @@
      "total_financing"
     ],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 5,
+     "quote": "A.1.5 Accredited entity: Environment Investment Fund of Namibia (EIF)"
+    },
+    "countries": {
+     "page": 5,
+     "quote": "A.1.3 Country(ies)/region: Namibia"
+    },
+    "title": {
+     "page": 5,
+     "quote": "A.1.1 Project/programme title: Climate Resilient Agriculture in three of the Vulnerable Extreme northern crop-growing regions (CRAVE)"
+    }
    }
   },
   "252_gcf-b14-07-add05": {
@@ -30621,6 +32955,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: ** Agency for Agricultural Development"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country/Region: ** Morocco"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme Title: ** Development of Argan orchards in Degraded Environment - DARED"
+    }
    }
   },
   "253_gcf-b14-07-add04": {
@@ -30745,6 +33093,20 @@
      "gcf_funding_requested"
     ],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 5,
+     "quote": "A.1.5. Accredited entity: Agence Française de Développement"
+    },
+    "countries": {
+     "page": 5,
+     "quote": "A.1.3. Countries / region: Republic of Senegal"
+    },
+    "title": {
+     "page": 5,
+     "quote": "A.1.1. Project title: Senegal Integrated Urban Flood Management Project"
+    }
    }
   },
   "254_gcf-b14-07-add03": {
@@ -30903,6 +33265,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 6,
+     "quote": "A1.5 Accredited entity: Inter-American Development Bank (IDB)"
+    },
+    "countries": {
+     "page": 6,
+     "quote": "A1.3 Country (ies) / region: Saint Kitts and Nevis, Saint Lucia, Dominica, Grenada, Saint Kitts and Nevis, Saint Lucia and Saint Vincent and The Grenadines"
+    },
+    "title": {
+     "page": 6,
+     "quote": "A1.1 Project / programme title: Sustainable Energy Facility for the Eastern Caribbean"
+    }
    }
   },
   "255_gcf-b14-07-add02": {
@@ -31077,6 +33453,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: United Nations Development Programme"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country/Region: Ecuador"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project Title: Priming Financial and Land-Use Planning Instruments to Reduce Emissions from Deforestation"
+    }
    }
   },
   "256_gcf-b14-07-add01": {
@@ -31240,6 +33630,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: United Nations Development Programme"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country/Region: Pakistan"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme Title: Scaling up Glacial Lake Outburst Flood (GLOF) risk reduction in Northern Pakistan"
+    }
    }
   },
   "257_gcf-b13-16-add09": {
@@ -31403,6 +33807,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: CAF - Banco de Desarrollo de América Latina"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country/Region: Chile"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme Title: Climate Action and Solar Energy Development Programme in the Tarapacá Region in Chile"
+    }
    }
   },
   "258_gcf-b13-16-add08": {
@@ -31567,6 +33985,20 @@
      "gcf_funding_requested"
     ],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: UNDP"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country/Region: Sri Lanka"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme Title: Strengthening the resilience of smallholder farmers in the Dry Zone to climate variability and extreme events through an integrated approach to water management"
+    }
    }
   },
   "259_gcf-b13-16-add07": {
@@ -31731,6 +34163,20 @@
      "gcf_funding_requested"
     ],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: United Nations Development Programme"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country/Region: Tuvalu"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme Title: Tuvalu Coastal Adaptation Project"
+    }
    }
   },
   "25_gcf-b40-02-add13-funding-proposal-package-fp251": {
@@ -31951,6 +34397,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: Inter-American Development Bank (IDB)"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country(ies): Barbados"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme title: Barbados Climate Resilient South Coast Water Reclamation Project (BCSWRP)"
+    }
    }
   },
   "260_gcf-b13-16-add06": {
@@ -32068,6 +34528,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 5,
+     "quote": "A.1.5. Accredited entity: The World Bank Group"
+    },
+    "countries": {
+     "page": 5,
+     "quote": "A.1.3. Country (ies) / region: Uzbekistan (The two Central Asian countries participating in the first project in the CAMPASB Program's series of projects) Tajikistan"
+    },
+    "title": {
+     "page": 5,
+     "quote": "A.1.1. Project / programme title: Project to support the World Bank's Climate Adaptation and Mitigation Program for the Aral Sea Basin (CAMPASB), in Tajikistan and Uzbekistan."
+    }
    }
   },
   "261_gcf-b13-16-add05": {
@@ -32249,6 +34723,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: United Nations Development Programme (UNDP)"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country/Region: Viet Nam"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme Title: Improving the resilience of vulnerable coastal communities to climate change-related impacts in Viet Nam"
+    }
    }
   },
   "262_gcf-b13-16-add04": {
@@ -32393,6 +34881,20 @@
      "gcf_funding_requested"
     ],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: The World Bank"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country/Region: Mali (Sub-Saharan Africa)"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme Title: Africa Hydromet Program - Strengthening Climate Resilience in Sub-Saharan Africa: Mali Country Project"
+    }
    }
   },
   "263_gcf-b13-16-add03": {
@@ -32548,6 +35050,20 @@
      "total_financing"
     ],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: United Nations Environment Programme (UNEP)"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country/Region: The Gambia"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project Title: Large-scale Ecosystem-based Adaptation in The Gambia: developing a climate-resilient, natural resource-based economy."
+    }
    }
   },
   "264_gcf-b13-16-add02": {
@@ -32704,6 +35220,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 5,
+     "quote": "A.5. Accredited entity: United Nations Development Programme"
+    },
+    "countries": {
+     "page": 5,
+     "quote": "A.3. Country (ies) / region: Armenia"
+    },
+    "title": {
+     "page": 5,
+     "quote": "A.1. Project / programme title: De-risking and Scaling-up Investment in Energy Efficient Building Retrofits"
+    }
    }
   },
   "265_gcf-b13-16-add01": {
@@ -32905,6 +35435,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: Inter-American Development Bank"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country/Region: El Salvador, Central America"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme Title: Energy Savings Insurance (ESI) for private energy efficiency investments by Small and Medium-Sized Enterprises (SMEs)"
+    }
    }
   },
   "266_gcf-b11-04-add08": {
@@ -33069,6 +35613,16 @@
      "gcf_funding_requested"
     ],
     "llm_fallback": true
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 5,
+     "quote": "A.1.5 Accredited entity: Asian Development Bank"
+    },
+    "title": {
+     "page": 5,
+     "quote": "A.1.1 Project / programme title: Fiji Urban Water Supply and Wastewater Management Project"
+    }
    }
   },
   "267_gcf-b11-04-add07": {
@@ -33185,6 +35739,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 5,
+     "quote": "A1.5. Accredited entity: United Nations Development Programme (UNDP)"
+    },
+    "countries": {
+     "page": 5,
+     "quote": "A1.3. Country (ies) / region: Maldives"
+    },
+    "title": {
+     "page": 5,
+     "quote": "A1.1. Project / programme title: Supporting vulnerable communities in Maldives to manage climate change-induced water shortages"
+    }
    }
   },
   "268_gcf-b11-04-add06": {
@@ -33477,6 +36045,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: International Fund for Agricultural Development (IFAD)"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Countries(ies): Viet Nam"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme title: Achieving emission reduction in the Central Highlands and South Central Coast of Viet Nam to support National REDD+ Action Programme goals (RECAF)."
+    }
    }
   },
   "270_gcf-b11-04-add04": {
@@ -33603,6 +36185,20 @@
      "gcf_funding_requested"
     ],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 5,
+     "quote": "A.1.5 Accredited entity: KfW"
+    },
+    "countries": {
+     "page": 5,
+     "quote": "A.1.3 Country: Bangladesh"
+    },
+    "title": {
+     "page": 5,
+     "quote": "A.1.1 Project / programme title: Climate Resilient Infrastructure Mainstreaming (CRIM)"
+    }
    }
   },
   "271_gcf-b11-04-add03": {
@@ -33738,6 +36334,20 @@
      "title"
     ],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 5,
+     "quote": "A3.5 Accredited entity: Centre de Suivi Ecologique (CSE)"
+    },
+    "countries": {
+     "page": 5,
+     "quote": "A3.3 Country (ies) / region: Senegal"
+    },
+    "title": {
+     "page": 5,
+     "quote": "A3.1 Project (programme) title: Increasing the resilience of ecosystems and communities through the restoration of the productive bases of salinized lands"
+    }
    }
   },
   "272_gcf-b11-04-add02": {
@@ -33874,6 +36484,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 5,
+     "quote": "A.1.5 Accredited entity: United Nations Development Programme (UNDP)"
+    },
+    "countries": {
+     "page": 5,
+     "quote": "A.1.3 Country (ies) / region: Malawi"
+    },
+    "title": {
+     "page": 5,
+     "quote": "A.1.1 Project / programme title: Scaling Up the Use of Modernized Climate Information and Early Warning Systems in Malawi"
+    }
    }
   },
   "273_gcf-b11-04-add01": {
@@ -34010,6 +36634,16 @@
     ],
     "llm_fallback": false,
     "suspect": "gcf>total"
+   },
+   "meta_provenance": {
+    "countries": {
+     "page": 5,
+     "quote": "A.1.3 Country (ies) / region: Peru"
+    },
+    "title": {
+     "page": 5,
+     "quote": "A.1.1 Project / programme title: Building the Resilience of Wetlands in the Province of Datem del Marañón, Peru"
+    }
    }
   },
   "27_gcf-b40-02-add11-funding-proposal-package-fp249": {
@@ -34124,6 +36758,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: Food and Agriculture Organization of the United Nations Date of first submission: December 13, 2021 Date of current submission: June 18, 2024 Version number: Version 0.5"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country: Republic of Iraq"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme title: Strengthening climate Resilience of Vulnerable Agriculture Livelihoods in Iraq (SRVALU)"
+    }
    }
   },
   "28_gcf-b40-02-add10-rev01-funding-proposal-package-fp248": {
@@ -34329,6 +36977,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: Deutsche Gesellschaft für Internationale Zusammenarbeit (GIZ) GmbH"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country(ies): Indonesia"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project Programme Title: Land-based Mitigation and Adaptation through a Jurisdictional Approach in West Kalimantan"
+    }
    }
   },
   "29_gcf-b40-02-add09-funding-proposal-package-fp247": {
@@ -34489,6 +37151,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: BOAD"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country(ies): Benin, Ghana, Ivory Coast, Mali, Niger"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme title: Local Climate Adaptive Living Facility Plus (LoCAL+1) – West Africa (Burkina Faso, Ivory Coast, Mali and Niger)"
+    }
    }
   },
   "30_gcf-b40-02-add08-funding-proposal-package-fp246": {
@@ -34667,6 +37343,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: FAO"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country(ies): Somalia"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme title: Climate Resilient Agriculture in Somalia (Ugbaad)"
+    }
    }
   },
   "31_gcf-b40-02-add07-rev01-funding-proposal-package-fp245": {
@@ -34869,6 +37559,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: Ministry of Environment"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country(ies): Rwanda"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme title: Green City Kisali: a new model for urban development in Rwanda"
+    }
    }
   },
   "32_gcf-b40-02-add06-funding-proposal-package-fp244": {
@@ -35041,6 +37745,16 @@
      "title"
     ],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: ** Save the Children Australia"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country(ies): ** Malawi"
+    }
    }
   },
   "33_gcf-b40-02-add05-funding-proposal-package-fp243_0": {
@@ -35243,6 +37957,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: Ministry of Finance (MOF)"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Countries: Ethiopia"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme title: Climate-resilient community access to safe water powered by renewable energy in drought-vulnerable regions of Ethiopia"
+    }
    }
   },
   "34_b39-02-add17-funding-proposal-package-fp242": {
@@ -35480,6 +38208,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: Inter-American Investment Corporation (IDB Invest)"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Countries: Bahamas, Barbados, Belize, Dominican Republic, Guyana, Jamaica, Suriname and Trinidad and Tobago."
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme title: Caribbean Net-Zero and Resilient Private Sector"
+    }
    }
   },
   "35_gcf-b39-02-add16-rev01-funding-proposal-package-fp241": {
@@ -35685,6 +38427,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: Small Industries Development Bank of India"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country(ies): India"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme title: Financing Mitigation and Adaptation Projects (FMAP) in Indian MSMEs"
+    }
    }
   },
   "36_gcf-b39-02-add15-rev01-funding-proposal-package-fp240": {
@@ -35883,6 +38639,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: The Korea Development Bank (KDB)"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country(ies): Cambodia, Indonesia, Laos, Philippines, and Vietnam"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme Title: Collaborative R&D Programme for Promoting the Innovation of Climate Technologies"
+    }
    }
   },
   "37_gcf-b39-02-add14-funding-proposal-package-fp239": {
@@ -36045,6 +38815,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: The African Development Bank (AfDB)"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country(ies): Djibouti, Ethiopia, Kenya, Somalia, and South Sudan"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme title: Building Climate Resilience for Food and Livelihoods in the Horn of Africa (BRIEFCA)"
+    }
    }
   },
   "38_gcf-b39-02-add13-funding-proposal-package-fp238": {
@@ -36245,6 +39029,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: Food and Agriculture Organisation of the United Nations (FAO)"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country(ies): Republic of Malawi"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme Title: Ecosystems-based Adaptation for resilient Watersheds and Communities in Malawi (ESAM)"
+    }
    }
   },
   "39_gcf-b39-02-add12-rev01-funding-proposal-package-fp237": {
@@ -36514,6 +39312,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: French Development Agency (AFD)"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country(ies): Argentina, Brazil, Colombia, Costa Rica, Dominican Republic, Mexico, Peru"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme title: E-Motion : E-Mobility and Low Carbon Transportation"
+    }
    }
   },
   "40_gcf-b39-02-add11-funding-proposal-package-fp236": {
@@ -36712,6 +39524,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: International Fund for Agricultural Development (IFAD)"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country(ies): Mexico"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme title: Basin Approach for Livelihood Sustainability through Adaptation Strategies (BALASAS)"
+    }
    }
   },
   "41_gcf-b39-02-add10-funding-proposal-package-fp235": {
@@ -36901,6 +39727,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: Conservation International Foundation"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country(ies): Ecuador"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme title: Mangroves for climate: Public, Private and Community Partnerships for Mitigation and Adaptation in Ecuador"
+    }
    }
   },
   "42_gcf-b39-02-add09-rev01-funding-proposal-package-fp234": {
@@ -37028,6 +39868,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: United Nations Development Programme (UNDP)"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country(ies): Tonga"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme title: Tonga Coastal Resilience"
+    }
    }
   },
   "43_gcf-b39-02-add08-funding-proposal-package-fp233": {
@@ -37196,6 +40050,16 @@
      "total_financing"
     ],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: International Fund for Agricultural Development (IFAD)"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme title: Community-based Agriculture Support Programme 'Idukki' (CASP)"
+    }
    }
   },
   "44_gcf-b39-02-add07-funding-proposal-package-fp232": {
@@ -37370,6 +40234,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: UNEP"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country(ies): Jordan"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme title: Jordan Integrated Landscape Management Initiative (JILM)"
+    }
    }
   },
   "45_gcf-b38-02-add11-funding-proposal-package-fp231": {
@@ -37555,6 +40433,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: Ecobank Ghana Limited"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country(ies): Ghana"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme title: Accelerating Solar Action Program (ASAP)"
+    }
    }
   },
   "46_gcf-b38-02-add10-funding-proposal-package-fp230": {
@@ -37681,6 +40573,20 @@
      "gcf_funding_requested"
     ],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: COPDES"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country(ies): Regional - Latin America and the Caribbean"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme title: Kuwait Fund-GCF"
+    }
    }
   },
   "47_gcf-b38-02-add09-funding-proposal-package-fp229": {
@@ -37879,6 +40785,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: Acumen Fund, Inc."
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country(ies): Pakistan"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme title: Acumen Climate Action Pakistan Fund"
+    }
    }
   },
   "48_gcf-b38-02-add08-funding-proposal-package-fp228": {
@@ -38075,6 +40995,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: The Korea Development Bank"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country(ies): Cambodia"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme title: Cambodian Climate Financing Facility"
+    }
    }
   },
   "49_gcf-b38-02-add07-funding-proposal-package-fp227_0": {
@@ -38278,6 +41212,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: International Fund for Agricultural Development (IFAD)"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country(ies): Madagascar"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme title: Increase Resilience to Climate Change of Smallholders Receiving the Services of the Inclusive Agriculture Value Chains Programme (DEFIS+)"
+    }
    }
   },
   "50_gcf-b38-02-add06-funding-proposal-package-fp226": {
@@ -38400,6 +41348,20 @@
      "gcf_funding_requested"
     ],
     "llm_fallback": true
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: Deutsche Gesellschaft für Internationale Zusammenarbeit (GIZ)"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country(ies): Peru"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme title: Resilient Puna: Ecosystem based Adaptation for sustainable High Andean communities and ecosystems in Peru"
+    }
    }
   },
   "51_gcf-b37-02-add15-funding-proposal-package-fp224": {
@@ -38627,6 +41589,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: International Finance Corporation"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country(ies): Barbados"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme title: Renewable Barbados Project"
+    }
    }
   },
   "52_gcf-b37-02-add14-funding-proposal-package-fp223": {
@@ -38800,6 +41776,16 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: MUFG Bank, Ltd. (MUFG)"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme title: Project GAIA (\"GAIA\")"
+    }
    }
   },
   "53_gcf-b37-02-add13-funding-proposal-package-fp222": {
@@ -38975,6 +41961,16 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "countries": {
+     "page": 3,
+     "quote": "Country(ies): Cameroon, Democratic Republic of Congo (DRC), Lesotho, Madagascar, Malawi, Niger, Nigeria, Sierra Leone, and Zambia"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme title: Renewable Energy Performance Platform (REPP 2)"
+    }
    }
   },
   "54_gcf-b37-02-add12-funding-proposal-package-fp221": {
@@ -39194,6 +42190,20 @@
     "core_missing": [],
     "llm_fallback": false,
     "suspect": "gcf>total"
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: African Development Bank"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country(ies): Rwanda"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme title: Rwanda Green Investment Facility (RGIF)"
+    }
    }
   },
   "55_gcf-b37-02-add11-funding-proposal-package-fp220": {
@@ -39355,6 +42365,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: IFAD"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country(ies): Kenya, Uganda, Tanzania, Rwanda"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme title: Africa Rural Climate Adaptation Finance Mechanism (ARCAFIM)"
+    }
    }
   },
   "56_gcf-b37-02-add10-funding-proposal-package-fp219": {
@@ -39542,6 +42566,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: African Development Bank"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Countries: Togo, Senegal and Guinea"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Programme title: Staple Crops Processing Zone (SCPZ): Promoting Sustainable Agricultural Value Chains"
+    }
    }
   },
   "57_gcf-b37-02-add09-funding-proposal-package-fp218": {
@@ -39744,6 +42782,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: United Nations Environment Programme (UNEP)"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country(ies): Tanzania"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme title: Building climate resilience in the landscapes of Kigoma Region, Tanzania"
+    }
    }
   },
   "58_gcf-b37-02-add08-funding-proposal-package-fp217_0": {
@@ -40066,6 +43118,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: Ministry of Environment"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Countries(ies): Rwanda"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project title: Building Resilience of Vulnerable Communities to Climate Variability in Rwanda’s Congo Nile Divide through Forest and Landscape Restoration"
+    }
    }
   },
   "59_gcf-b37-02-add07-funding-proposal-package-fp216": {
@@ -40244,6 +43310,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: United Nations Development Programme"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country(ies): Bosnia and Herzegovina (BiH)"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme title: Scaling up climate resilient flood risk management in Bosnia and Herzegovina"
+    }
    }
   },
   "60_gcf-b37-02-add06-funding-proposal-package-fp215": {
@@ -40438,6 +43518,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: Asian Development Bank"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country(ies): Multiple Countries: Asia and Pacific Region"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme title: Community Resilience Partnership Program"
+    }
    }
   },
   "61_gcf-b37-02-add05-funding-proposal-package-fp214": {
@@ -40614,6 +43708,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: Deutsche Gesellschaft für Internationale Zusammenarbeit (GIZ) GmbH"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country(ies): Thailand"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme title: Thai Rice: Strengthening Climate-Smart Rice Farming"
+    }
    }
   },
   "62_gcf-b36-02-add08": {
@@ -40772,6 +43880,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: Pegasus Capital Advisors"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country(ies): Barbados"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme title: The Blue Green Bank (BGB), Barbados"
+    }
    }
   },
   "63_gcf-b36-02-add07": {
@@ -40965,6 +44087,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: N.V. (FMO)"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country(ies): Brazil; Cameroon; Colombia; Côte d'Ivoire; Democratic Republic of Congo; Ecuador; Gabon; Indonesia; Lao PDR; Liberia; Zambia"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme title: &Green Fund: Investing in Inclusive Agriculture and Protecting Forests"
+    }
    }
   },
   "64_gcf-b36-02-add06": {
@@ -41136,6 +44272,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: Acumen Fund"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country(ies): 16 sub-Saharan African countries: Benin, Burkina Faso, Burundi, Chad, DRC, Guinea, Guinea Bissau, Ethiopia, Malawi, Mozambique, Niger, Sierra Leone, Somalia, Togo, Uganda, Zambia"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme title: Hardest-to-Reach"
+    }
    }
   },
   "65_gcf-b36-02-add05": {
@@ -41349,6 +44499,16 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: ** Acumen Fund"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Countries(ies): ** Cote d'Ivoire, DR Congo, Kenya, Nigeria, Rwanda, Uganda, Zambia,"
+    }
    }
   },
   "66_gcf-b36-02-add04": {
@@ -41527,6 +44687,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: Development Bank of Southern Africa"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country(ies): South Africa (\"SA\")"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme title: Climate Change Resilience through South Africa’s Water Reuse Programme (“WRP”)"
+    }
    }
   },
   "67_gcf-b36-02-add03": {
@@ -41664,6 +44838,20 @@
     "core_missing": [],
     "llm_fallback": false,
     "suspect": "gcf>total"
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: United Nations Development Programme, UNDP"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country(ies): Haiti"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme title: Enhanced climate resilience in the Trois-Rivières region of Haiti through Integrated Flood Management"
+    }
    }
   },
   "68_gcf-b36-02-add02-rev01": {
@@ -41803,6 +44991,16 @@
      "countries"
     ],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: World Wildlife Fund, Inc. (WWF)"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme title: Recharge Pakistan: Building Pakistan’s resilience to climate change through Ecosystem-based Adaptation (EbA) and Green Infrastructure for integrated flood risk management"
+    }
    }
   },
   "69_gcf-b36-02-add01": {
@@ -41991,6 +45189,20 @@
     "core_missing": [],
     "llm_fallback": false,
     "suspect": "gcf>total"
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: Pelli Karma Sahayak Foundation (PKSF)"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country(ies): Bangladesh"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme title: Resilient Homestead and Livelihood support to the vulnerable coastal people of Bangladesh (RHL)"
+    }
    }
   },
   "70_gcf-b35-02-add07-rev01_0": {
@@ -42150,6 +45362,20 @@
      "title"
     ],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: African Export-Import Bank (AEIB)"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country(ies): Benin, Cameroon, Chad, Côte d'Ivoire, Democratic Republic of Congo, Ethiopia, Ghana, Kenya, Mali, Mauritania, Namibia, Nigeria, Rwanda, Sierra Leone, Togo, Zambia"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Program title: Infrastructure Climate Resilient Fund (ICRF)"
+    }
    }
   },
   "71_gcf-b35-02-add06": {
@@ -42350,6 +45576,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: World Bank"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country(ies): Ethiopia, Guinea Bissau, Indonesia, Kyrgyzstan, Mongolia, Seychelles, Somalia, Tajikistan and Tunisia"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme title: Sustainable Renewables Risk Mitigation Initiative (SRMI)"
+    }
    }
   },
   "72_GCF_B.35_02_Add.05_Funding_proposal_package_for_FP203": {
@@ -42515,6 +45755,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: World Wildlife Fund, Inc. (WWF)"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country(ies): Colombia"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme title: Heritage Colombia (HECO): Maximizing the Contributions of Sustainably Managed Landscapes in Colombia for Achievement of Climate Goals"
+    }
    }
   },
   "73_gcf-b35-02-add04": {
@@ -42715,6 +45969,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: Food and Agriculture Organization of the United Nations (FAO)"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country(ies): Plurinational State of Bolivia"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme title: Upscaling Ecosystem Based Climate Resilience of Vulnerable Rural Communities in the Valley Macro-region of the Plurinational State of Bolivia (CE-CEM Valley)"
+    }
    }
   },
   "74_gcf-b35-02-add03-rev01_0": {
@@ -42915,6 +46183,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: Food and Agriculture Organization of the United Nations (FAO)"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country(ies): Philippines"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme title: Adapting Philippine Agriculture to Climate Change (APA)"
+    }
    }
   },
   "75_gcf-b35-02-add02-rev01": {
@@ -43117,6 +46399,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: Deutsche Gesellschaft für Internationale Zusammenarbeit (GIZ) GmbH"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country(ies): Lao PDR"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme title: Scaling up the implementation of the Lao PDR Emission Reductions Programme through improved governance and sustainable forest landscape management (Project 2)"
+    }
    }
   },
   "76_gcf-b35-02-add01-rev01": {
@@ -43313,6 +46609,16 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: Food and Agriculture Organization of the United Nations"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country(ies): Cambodia"
+    }
    }
   },
   "77_gcf-b34-02-add08": {
@@ -43495,6 +46801,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: Deutsche Gesellschaft fuer Internationale Zusammenarbeit (GIZ) GmbH"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Countries: - Latin America: Argentina, Costa Rica, Dominican Republic, Honduras, Mexico - West Africa: Benin, Burkina Faso, Côte d'Ivoire, Guinea, Mauritania, Niger, Senegal, Togo"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Programme Title: CATALI5/T Initiative: Concerted Action To Accelerate Local I.S Technologies – Latin America and West Africa"
+    }
    }
   },
   "78_gcf-b34-02-add07-rev01": {
@@ -43654,6 +46974,20 @@
      "gcf_funding_requested"
     ],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: MUFG Bank, Ltd. (\"MUFG\")"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country(ies): Africa: Gabon, Rwanda Asia: Bangladesh, Laos, Philippines Latin America and the Caribbean: Brazil, Trinidad & Tobago"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme title: Green Guarantee Company (\"GGC\")"
+    }
    }
   },
   "79_gcf-b34-02-add06": {
@@ -43850,6 +47184,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: The Korea Development Bank"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country(ies): Indonesia"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme title: Supporting Innovative Mechanisms for Industrial Energy Efficiency Financing in Indonesia with Lessons for Replication in other ASEAN Member States"
+    }
    }
   },
   "80_gcf-b34-02-add05": {
@@ -44048,6 +47396,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: Corporación Andina de Fomento (CAF)"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country(ies): Panama, Paraguay and Uruguay"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme title: E-Motion: E-Mobility and Low Carbon Transportation"
+    }
    }
   },
   "81_gcf-b34-02-add04": {
@@ -44286,6 +47648,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: Agence Française de Développement (AFD)"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country(ies): Albania, Argentina, Costa Rica, Djibouti, Indonesia, Mexico, Mozambique, North Macedonia, Sri Lanka, Tunisia"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Programme title: Programme for Energy Efficiency in Buildings (PEEB) Cool"
+    }
    }
   },
   "82_gcf-b34-02-add03": {
@@ -44481,6 +47857,20 @@
     "core_missing": [],
     "llm_fallback": false,
     "suspect": "gcf>total"
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: Peruvian Trust Fund for National Parks and Protected Areas (PROFONANIFE)"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country(ies): Peru"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme title: Peruvian Amazon Eco Bio Business Facility (Amazon EBBF)"
+    }
    }
   },
   "83_gcf-b34-02-add02_0": {
@@ -44701,6 +48091,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: Caribbean Community Climate Change Centre (CCCCC)"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country(ies): Barbados"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project Programme title: The R’s (Reduce, Reuse and Recycle) for Climate Resilience Wastewater Systems in Barbados (3R-CReWS)"
+    }
    }
   },
   "84_gcf-b34-02-add01": {
@@ -44826,6 +48230,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: The Pacific Community (SPC)"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country(ies): Vanuatu"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme title: Enhancing Adaptation and Community Resilience by Improving Water Security in Vanuatu"
+    }
    }
   },
   "85_gcf-b33-02-add04_0": {
@@ -45003,6 +48421,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: FMO – Dutch Development Bank"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country(ies): Bangladesh, Botswana, Brazil, Colombia, Côte d'Ivoire, Djibouti, Ecuador, India, Indonesia, Kenya, Madagascar, Maldives, Morocco, Namibia, Nigeria, Philippines, Rwanda, Senegal, South Af"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme title: Climate Investor Two"
+    }
    }
   },
   "86_gcf-b33-02-add03": {
@@ -45207,6 +48639,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: Inter-American Development Bank (IDB)"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country(ies): Barbados, Chile, Colombia, Costa Rica, Dominican Republic, Jamaica, Panama, Paraguay, Uruguay"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme title: E-Mobility Program for Sustainable Cities in Latin America and the Caribbean"
+    }
    }
   },
   "87_gcf-b33-02-add02": {
@@ -45376,6 +48822,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: Food and Agriculture Organization of the United Nations (FAO)."
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country(ies): Republic of the Gambia."
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme title: Climate-Resilient Fisher Initiative for Livelihood Improvement in the Gambia (PROFISH Gambia)."
+    }
    }
   },
   "88_gcf-b33-02-add01": {
@@ -45552,6 +49012,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: FAO"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country(ies): Benin,"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme title: Ouémé Basin Climate-Resilience Initiative (OCRI) Benin"
+    }
    }
   },
   "89_gcf-b32-02-add03_0": {
@@ -45706,6 +49180,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: Macquarie Alternative Assets Management Limited (MAAML)"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country(ies): India"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme title: India E-mobility Financing Program"
+    }
    }
   },
   "90_gcf-b32-02-add02": {
@@ -45906,6 +49394,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: Corporación Andina de Fomento (CAF)"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country(ies): Ecuador"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme title: Climate Change: The New Evolutionary Challenge for the Galápagos Islands"
+    }
    }
   },
   "91_gcf-b32-02-add01": {
@@ -46064,6 +49566,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: Save the Children Australia"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country(ies): Vanuatu"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme title: Vanuatu community-based climate resilience project (VCCRP)"
+    }
    }
   },
   "92_gcf-b31-02-add02": {
@@ -46338,6 +49854,16 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: International Fund for Agricultural Development (IFAD)"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Countries(ies): GCF GGWP Regional Support Programme [Component 3]: Burkina Faso, Côte d'Ivoire, Ethiopia, Eritrea, Mali, Mauritania, Niger, Nigeria, Senegal and Sudan"
+    }
    }
   },
   "93_gcf-b31-02-add01": {
@@ -46574,6 +50100,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: Corporación Andina de Fomento (CAF)"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country(ies): Colombia"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme title: Climate-smart initiatives for climate change adaptation and sustainability in prioritized agricultural production systems in Colombia (CSICAP)"
+    }
    }
   },
   "94_gcf-b30-02-add13": {
@@ -46755,6 +50295,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: Pegasus Capital Advisors"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country(ies): Bahamas, Brazil, Mexico, Rwanda, South Africa, Trinidad & Tobago"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme title: CRAFT – Catalytic Capital for First Private Investment Fund for Adaptation Technologies in Developing Countries"
+    }
    }
   },
   "95_gcf-b30-02-add12-rev01": {
@@ -46943,6 +50497,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: Pegasus Capital Advisors LP (Pegasus)"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Countries: - Africa: Comoros, Mozambique, Seychelles - Asia-Pacific: Fiji, Indonesia, Philippines, Sri Lanka - Latin America and the Caribbean: Bahamas, Belize, Brazil, Colombia, Ecuador, Guatemala, J"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme title: Global Fund for Coral Reefs Investment Window"
+    }
    }
   },
   "96_gcf-b30-02-add11": {
@@ -47179,6 +50747,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: CRDB Bank Plc"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country(ies): Tanzania"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme title: Tanzania Agriculture Climate Adaptation Technology Development Programme (TACATDP)"
+    }
    }
   },
   "97_gcf-b30-02-add10": {
@@ -47419,6 +51001,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: The African Development Bank (AfDB)"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country(ies): Burkina Faso, Chad, Mali, Mauritania, and Niger"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme title: Desert to Power GS Sahel Facility"
+    }
    }
   },
   "98_gcf-b30-02-add09": {
@@ -47643,6 +51239,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: The World Bank"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country(ies): Bangladesh, El Salvador, Kenya, Malawi, North Macedonia, Panama, Sao Tome and Principe, Somalia, Sri Lanka"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme title: Cooling Facility"
+    }
    }
   },
   "99_gcf-b30-02-add08": {
@@ -47841,6 +51451,20 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta_provenance": {
+    "accredited_entity": {
+     "page": 3,
+     "quote": "Accredited Entity: Banque Ouest Africaine de Développement (BOAD)"
+    },
+    "countries": {
+     "page": 3,
+     "quote": "Country: Niger"
+    },
+    "title": {
+     "page": 3,
+     "quote": "Project/Programme title: Hydro-agricultural development with smart agriculture practices resilient to climate change in Niger"
+    }
    }
   }
  }

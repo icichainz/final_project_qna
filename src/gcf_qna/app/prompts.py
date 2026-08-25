@@ -103,8 +103,8 @@ REGISTRY_BLOCK = (
     "page another note prints for it. For each fact:\n"
     "cite the document id it states plus the page printed beside THAT\n"
     "fact: '18.5 M USD (p.5, A.8)' on a line ending '[12_doc, cover pages]'\n"
-    "is cited [12_doc, p. 5]; a fact with NO page beside it — as entity,\n"
-    "country and title normally have none — is cited [12_doc, cover pages]."
+    "is cited [12_doc, p. 5]; a fact with NO page beside it is cited\n"
+    "[12_doc, cover pages]."
 )
 
 CHAT_CORE = (
