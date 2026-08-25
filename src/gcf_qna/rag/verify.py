@@ -1647,6 +1647,347 @@ def claim_field(text: str) -> Optional[str]:
     return None
 
 
+# ---------------------------------------------------------------------------
+# DERIVED ARITHMETIC — a computed difference is not a printed figure
+#
+# THE LIMITATION THIS CLOSES (docs/l1-l2-coverage-review.md §7.1,
+# docs/build-report.html Act XIV, row `fu-compare-those`). The answer writes
+#
+#     FP152 requests 131.5 M USD more GCF funding than FP151
+#     (150.0 - 18.5 = 131.5).  [124_..., p. 5] [123_..., p. 5]
+#
+# cites both operands to the pages that print them, and every matcher in this
+# module answers the only question it knows how to ask — 'is 131.5 M USD
+# printed in the cited evidence?' — with NO. The cited note prints
+# '150 M USD' under the claim's own field label, so `_key_conflict` fires and
+# the verdict is CONTRADICTED: the strongest thing this module can say, said
+# about a computation that is exactly right. It was the only contradicted
+# verdict in release-6 and the shape recurs in release-7.
+#
+# WHAT QUALIFIES, and every clause of it is a gate:
+#
+#   1. THE TEXT CARRIES THE WHOLE DERIVATION — both operands AND the result,
+#      joined by an operator or by a comparative that names one. A claim that
+#      states only the result ('131.5 M USD more than FP151') derives nothing
+#      this module can check and keeps today's verdict.
+#   2. ONE CURRENCY AND ONE SCALE. Cross-currency arithmetic is the act
+#      `prompts.CORE` spends a paragraph forbidding, and a verifier that
+#      blessed 'EUR 87 million - USD 18.5 million' would be certifying the
+#      forbidden act. Mixed scale words are refused for the same reason the
+#      `clash` machinery exists: this corpus prints '28,654 million USD' and
+#      means 28.654 million, so a derivation spanning two printed scales is
+#      not one this module may resolve. Both refusals are silent: the claim
+#      simply does not qualify and today's outcome stands.
+#   3. EVERY OPERAND VERIFIES AGAINST THE CLAIM'S OWN CITED SCOPES, under the
+#      matchers and at the strictness every other claim gets — the held keys
+#      the citations resolve to, and nothing else. The registry-backed
+#      promotion is deliberately NOT part of qualification: an operand no key
+#      of this turn prints is not an operand this turn may compute with.
+#   4. THE CLAIM AS WRITTEN MUST NOT ALREADY VERIFY. This is the narrowest
+#      and most important gate, and it is enforced by the CALLER (the branch
+#      is reached only when the ordinary matchers have already failed).
+#      Release-7's `txt-fu-fp171-total-fr` writes '(a)+(b) = 21 929 123,33
+#      USD, composee de 20 986 732,33 USD ... et 748 460,00 USD' — an
+#      equation QUOTED off the document's own C.1 table, whose three printed
+#      figures do not add up. It verifies today, because every figure in it
+#      is printed. Re-routing it through this path would call the document's
+#      own arithmetic a contradiction of the answer, which it is not: the
+#      answer reported what the page prints. Quoting is not deriving, and the
+#      existing matcher owns quoting.
+#
+# THEN, and only then, the computation decides: right -> SUPPORTED carrying
+# `derived-arithmetic`; wrong -> CONTRADICTED, because a wrong computation
+# over operands the evidence really prints is the one thing this module can
+# say with certainty about a figure no page contains.
+#
+# TOLERANCE. `amount_matches`'s, reused rather than invented: two figures
+# agree when they differ by less than half the coarser of the two PRINTED
+# precisions (`granularity`). So 150.0 - 18.5 = 131.5 is exact and needs no
+# tolerance at all; '(150 - 18.5 = 132)' is accepted, because a result
+# printed to whole millions cannot distinguish 131.5 from 132; and 131.6,
+# printed to a tenth, is refused, because a result printed to tenths can.
+# 'Correct arithmetic' and 'the same printed figure' therefore mean the same
+# thing here as everywhere else in this module.
+#
+# WHAT IS OUT OF SCOPE, deliberately, and each keeps today's behaviour:
+# ratios and percentages (the result of a division carries no currency, so
+# clause 2 has nothing to check and the rounding of '8.1x' is not the
+# rounding `granularity` models — release-7's '150 / 18.5' claim stays on the
+# judge's path exactly as it is); dimensionless counts (a bare operand
+# matches any digit run a page prints, which is the loosest the matchers get
+# and no place to add a new way to become SUPPORTED); and French comparative
+# phrasing (an under-firing rule keeps today's verdict, which is the safe
+# direction to be incomplete in).
+# ---------------------------------------------------------------------------
+
+#: The caution-class flag a SUPPORTED verdict carries when the figure the
+#: answer states was COMPUTED rather than read off a page. It rides the
+#: verdict exactly as `citation-page-mismatch` and `unit-scale-clash` do, so
+#: `RepairResult.cautions` — and the app's caution line, which formats
+#: whatever flags it is given — shows it with no change on either side.
+DERIVED_ARITHMETIC = "derived-arithmetic"
+
+#: `iter_amounts(money_only=True)`'s floor, reused: below it a bare figure
+#: with no scale word is table furniture, not an amount of money.
+_ARITH_MONEY_FLOOR = 1e4
+
+_ARITH_SCALE = r"(?:millions?|billions?|thousands?|milliards?|bn|m|k)"
+_ARITH_CUR = r"(?:USD|US\$|EUR|euros?|€|\$)"
+#: The gap BETWEEN two printed mantissas, which is the only place an operator
+#: is allowed to be. Anchored at both ends (`^...$`), so anything else in the
+#: gap — a word, a second bracket, a comma — means these two figures are not
+#: the two sides of one operator.
+_ARITH_OP_GAP = re.compile(
+    r"^\s*(?:" + _ARITH_SCALE + r"\b)?\s*(?:" + _ARITH_CUR + r")?\s*"
+    r"(?P<op>[-+−–—])\s*(?:" + _ARITH_CUR + r")?\s*$", re.I)
+_ARITH_EQ_GAP = re.compile(
+    r"^\s*(?:" + _ARITH_SCALE + r"\b)?\s*(?:" + _ARITH_CUR + r")?\s*"
+    r"=\s*(?:" + _ARITH_CUR + r")?\s*$", re.I)
+#: 'X is <result> HIGHER THAN Y'. The cue must be followed by `than` with no
+#: figure in between, which is what makes the comparative a two-place one and
+#: fixes which side of it each operand is on.
+_ARITH_MORE = {"more", "higher", "greater", "larger"}
+_ARITH_CMP = re.compile(
+    r"^[^0-9=]{0,40}?\b(?P<cue>more|higher|greater|larger|less|lower|smaller)"
+    r"\b[^0-9=]{0,40}?\bthan\b", re.I)
+#: 'DIFFERENCE OF / BETWEEN' WAS BUILT HERE AND THEN REMOVED, and the reason
+#: is that the phrase does not say which figure is the result. 'A difference
+#: of 131.5 M USD between 150 M USD and 18.5 M USD' puts the result right
+#: after the preposition; 'the difference between 150 M USD and 18.5 M USD'
+#: puts an OPERAND in the same place, and 'the difference of X and Y' — a
+#: real if formal construction — puts one there too. Reading the first figure
+#: after the phrase as the result therefore turns a correct sentence into
+#: |18.5 - 131.5| = 150 and reports a contradiction the answer never made.
+#: The two forms below are two-place and positional, so each of them says
+#: which figure is which; this one does not, and no such claim exists in
+#: releases 6-8. Pinned by `test_a_difference_phrase_does_not_qualify`.
+
+
+@dataclass(frozen=True)
+class Derivation:
+    """One arithmetic derivation a claim states about its own figures."""
+    form: str                       # equation | comparative | difference
+    op: str                         # + | -
+    left: Amount
+    right: Amount
+    result: Amount
+    currency: Optional[str]
+    unit: Optional[str]
+    mult: float
+    computed: float
+    stated: float
+    tolerance: float
+    directed: bool = True
+
+    @property
+    def correct(self) -> bool:
+        a, b = (self.computed, self.stated) if self.directed \
+            else (abs(self.computed), abs(self.stated))
+        return abs(a - b) <= self.tolerance
+
+    def _fmt(self, value: float) -> str:
+        v = value / (self.mult or 1.0)
+        s = f"{v:.4f}".rstrip("0").rstrip(".")
+        return f"{s} {self.unit} {self.currency}".replace(" None", "").strip()
+
+    @property
+    def shown(self) -> str:
+        return f"{self.left.raw} {self.op} {self.right.raw} = {self.result.raw}"
+
+    @property
+    def support_reason(self) -> str:
+        return ("the answer's own operands are printed in the cited evidence "
+                f"and its arithmetic holds ({self.shown})")
+
+    @property
+    def failure_reason(self) -> str:
+        return (f"the answer's own arithmetic does not hold: {self.left.raw} "
+                f"{self.op} {self.right.raw} is {self._fmt(self.computed)}, "
+                f"the answer states '{self.result.raw}'")
+
+
+def _same_span(a: Amount, b: Amount) -> bool:
+    """One printed figure, identified by WHERE it stands in the claim.
+
+    Not object identity: `derived_probe` re-reads the claim's text, so the
+    Amount it holds for a figure is a different object from the one the
+    derivation was read off. Not equality either: two identical printings of
+    the same number in one sentence are two figures, and the operand is the
+    one at the operator.
+    """
+    return a.at == b.at and a.num == b.num
+
+
+def _term_mult(a: Amount, d: "Derivation") -> float:
+    """The scale one figure of a derived claim is stated at.
+
+    Its own scale word when it prints one; the derivation's when it prints no
+    mark at all and therefore inherits; and 1 when it prints a currency and no
+    scale word, which is a figure written out in full.
+    """
+    if a.unit:
+        return _UNIT_MULT.get(a.unit, 1.0)
+    return 1.0 if a.currency else d.mult
+
+
+def _same_mantissa(a: Amount, b: Amount) -> bool:
+    """The same printed number, scale words ignored — '131.5 M USD' and the
+    '131.5' of the equation beside it are one figure written twice."""
+    tol = max(granularity(a.num, 1.0), granularity(b.num, 1.0)) * 0.5 + 1e-6
+    return abs(a.bare - b.bare) <= tol
+
+
+def _arith_context(triple: Sequence[Amount], local: Sequence[Amount]
+                   ) -> Optional[Tuple[Optional[str], Optional[str]]]:
+    """The ONE (currency, scale) the whole derivation is stated in, or None.
+
+    Marks are read off the three terms AND off any other printing of one of
+    their mantissas in the same claim: '(150.0 - 18.5 = 131.5)' writes three
+    bare numbers, and the sentence around it writes '131.5 M USD'. That is
+    where the unit comes from, and the link is the mantissa — never proximity,
+    never the claim's other figures.
+
+    Two disagreeing currencies, or two disagreeing scale words, return None:
+    the claim does not qualify and keeps the verdict it has today. A term that
+    prints a mark must print the resolved one exactly; a term that prints none
+    inherits. A derivation with no mark anywhere is dimensionless and is
+    refused here — that is the money scope, stated once.
+    """
+    curs = {a.currency for a in triple if a.currency}
+    units = {a.unit for a in triple if a.unit}
+    for a in local:
+        if any(a is t for t in triple) or a.value is None:
+            continue
+        if not (a.currency or a.unit):
+            continue
+        if not any(_same_mantissa(a, t) for t in triple):
+            continue
+        if a.currency:
+            curs.add(a.currency)
+        if a.unit:
+            units.add(a.unit)
+    if len(curs) > 1 or len(units) > 1:
+        return None                     # cross-currency, or two printed scales
+    if not curs and not units:
+        return None                     # dimensionless: not this rule's scope
+    cur = next(iter(curs), None)
+    unit = next(iter(units), None)
+    if unit is None and any(a.bare < _ARITH_MONEY_FLOOR for a in triple):
+        # A CURRENCY IS NOT ALWAYS A MARK. `iter_amounts` attaches one from up
+        # to 40 characters further along the same line, so 'FP152 covers 7
+        # more provinces than FP151 (12 - 5 = 7), out of a 28 M USD request'
+        # hands 'USD' to a province count and the money scope would let it in.
+        # With no scale word to pin them, the terms have to clear the
+        # registry's own money floor — the same 1e4 `iter_amounts(money_only)`
+        # applies to 'a bare 30 next to a financing label'. Pinned by
+        # `test_a_scale_word_may_not_be_borrowed_from_an_unrelated_figure`.
+        return None
+    for a in triple:
+        if not (a.currency or a.unit):
+            continue                    # bare: inherits both
+        if (a.currency and a.currency != cur) or a.unit != unit:
+            return None                 # a term printed in another scale/currency
+    return cur, unit
+
+
+def _arith_shapes(body: str, local: Sequence[Amount]):
+    """(form, op, left, right, result) for every derivation shape in a claim.
+
+    Position-anchored throughout: an operand is a figure standing in a
+    specific place relative to the operator or the comparative, never 'some
+    figure in the sentence that happens to make the sum work'. Searching for
+    a triple that adds up is how a rule like this starts certifying
+    coincidences.
+    """
+    usable = sorted((a for a in local if a.value is not None),
+                    key=lambda a: a.at)
+
+    def gap(a: Amount, b: Amount) -> str:
+        return body[a.at + len(a.num):b.at]
+
+    # FORM A — the written equation 'x <op> y = z'. Three CONSECUTIVE printed
+    # figures with nothing but the operator and the equals sign between them.
+    for i in range(len(usable) - 2):
+        x, y, z = usable[i], usable[i + 1], usable[i + 2]
+        m = _ARITH_OP_GAP.match(gap(x, y))
+        if m and _ARITH_EQ_GAP.match(gap(y, z)):
+            yield "equation", ("+" if m.group("op") == "+" else "-"), x, y, z
+
+    # FORMS B — prose. Every term must carry its own currency or scale word:
+    # prose states no operator, so the marks are the only thing that pins the
+    # three figures to one quantity, and the equation form's inheritance would
+    # be resolving an ambiguity the text never wrote down.
+    marked = [a for a in usable if a.currency or a.unit]
+    for k, z in enumerate(marked):
+        before, after = marked[:k], marked[k + 1:]
+        m = _ARITH_CMP.match(body[z.at + len(z.num):])
+        # 'A ... is z <cue> than B' — the operands STRADDLE the result, which
+        # is the grammar of the comparative and is what says which of them is
+        # the minuend. Both on one side is a sentence whose direction cannot
+        # be read off the text, so it does not qualify.
+        if m and len(before) == 1 and len(after) == 1:
+            hi, lo = (before[0], after[0]) \
+                if m.group("cue").lower() in _ARITH_MORE else (after[0], before[0])
+            yield "comparative", "-", hi, lo, z
+
+
+def derived_arithmetic(claim: Claim) -> Optional[Derivation]:
+    """The derivation this claim states, or None when it states none.
+
+    PURE READING. It decides nothing about evidence and nothing about a
+    verdict — it says what the answer's own words compute, so the caller can
+    check the operands against the evidence and the arithmetic against
+    itself.
+    """
+    body = _strip_citations(claim.text)
+    local = amounts(body)
+    for form, op, x, y, z in _arith_shapes(body, local):
+        ctx = _arith_context((x, y, z), local)
+        if ctx is None:
+            continue
+        cur, unit = ctx
+        mult = _UNIT_MULT.get(unit or "", 1.0)
+        val = [a.bare * mult for a in (x, y, z)]
+        grains = [granularity(a.num, mult) for a in (x, y, z)]
+        return Derivation(
+            form=form, op=op, left=x, right=y, result=z,
+            currency=cur, unit=unit, mult=mult,
+            computed=(val[0] + val[1]) if op == "+" else (val[0] - val[1]),
+            stated=val[2], tolerance=max(grains) * 0.5 + 1e-6,
+            directed=(form != "difference"))
+    return None
+
+
+def derived_probe(claim: Claim, d: Derivation) -> Claim:
+    """The claim this module actually checks once a derivation is read off it.
+
+    The same claim with its arithmetic accounted for: the two operands
+    resolved into the derivation's own currency and scale so the ordinary
+    matchers can look for them, and the DERIVED figure — every printing of
+    it — dropped, because no page is expected to print it. Nothing else about
+    the claim moves: same text, same field, same entities, same lead-in. Every
+    later check in `classify_deterministic` then runs unchanged, on this.
+    """
+    def resolved(a: Amount) -> Amount:
+        return dataclasses.replace(
+            a, value=round(a.bare * d.mult, 2), currency=a.currency or d.currency,
+            unit=a.unit or d.unit, grain=granularity(a.num, d.mult),
+            alt=None, alt_grain=0.0)
+
+    keep: List[Amount] = []
+    for a in amounts(_strip_citations(claim.text)):
+        if _same_span(a, d.left) or _same_span(a, d.right):
+            keep.append(resolved(a))
+            continue
+        mult = _term_mult(a, d)
+        tol = max(granularity(a.num, mult),
+                  granularity(d.result.num, d.mult)) * 0.5 + 1e-6
+        if a.value is not None and abs(a.bare * mult - d.stated) <= tol:
+            continue                    # another printing of the derived figure
+        keep.append(a)
+    return dataclasses.replace(claim, amounts=keep)
+
+
 @dataclass
 class Verdict:
     claim: Claim
@@ -2487,6 +2828,49 @@ def classify_deterministic(claims: Sequence[Claim], evidence: Evidence,
             if ok5:
                 ok = True
                 flags.append("citation-page-mismatch")
+
+        # DERIVED ARITHMETIC (see `derived_arithmetic`). Reached only when the
+        # matchers have already failed on the claim AS WRITTEN, which is the
+        # gate that keeps a QUOTED equation — release-7's
+        # '(a)+(b) = 21 929 123,33 USD', whose three figures are all printed
+        # and do not add up — on the path that already verifies it.
+        #
+        # `probe` is the claim with its arithmetic accounted for, and it is
+        # what every check below runs on. When no derivation is read off the
+        # claim, `probe is c` and this module behaves exactly as it did: the
+        # substitution below is the whole of the change, and it is a no-op on
+        # every claim that states no arithmetic.
+        probe, deriv = c, None
+        if not ok:
+            deriv = derived_arithmetic(c)
+        if deriv is not None:
+            cand = derived_probe(c, deriv)
+            # QUALIFICATION, clause 3: the operands, against the evidence this
+            # claim CITES — the strictly cited keys, a page-less bracket's
+            # document, the rest of a cited document — under the same matcher
+            # every other claim gets. Not the registry: a figure no key of
+            # this turn prints is not an operand this turn may compute with.
+            cited = _text_of(evidence, list(dict.fromkeys(
+                list(strict) + list(r5) + list(wide))))
+            if not _verify_against(cand, cited)[0]:
+                deriv = None            # operands unverified: today's verdict
+            elif not deriv.correct:
+                # A wrong computation over operands the evidence really prints
+                # is not a missing figure — it is the answer contradicting
+                # itself about evidence we hold, and CONTRADICTED is the only
+                # verdict that says so.
+                out.append(Verdict(c, CONTRADICTED, deriv.failure_reason,
+                                   strict, flags=flags))
+                continue
+            else:
+                probe = cand
+                flags.append(DERIVED_ARITHMETIC)
+                ok, missing = _verify_against(probe, strict_text)
+                if not ok and r5:
+                    ok5, _ = _verify_against(probe, _text_of(evidence, r5))
+                    if ok5:
+                        ok = True
+                        flags.append("citation-page-mismatch")
         # NOTE: a registry-confirmed absence supports the ABSENCE, never the
         # rest of the unit. An earlier revision short-circuited the whole
         # verdict here, so 'FP999 does not exist in this corpus, and FP151
@@ -2500,8 +2884,8 @@ def classify_deterministic(claims: Sequence[Claim], evidence: Evidence,
         # or the registry — never in which evidence is allowed to contradict
         # it. Two of the three used to skip the test entirely.
         if ok:
-            hit = _conflict_before_support(c, evidence, strict, wide, r5, also,
-                                           also_all, registry_conflicts,
+            hit = _conflict_before_support(probe, evidence, strict, wide, r5,
+                                           also, also_all, registry_conflicts,
                                            cross_page_conflicts)
             if hit:
                 reason, tag = hit
@@ -2512,9 +2896,11 @@ def classify_deterministic(claims: Sequence[Claim], evidence: Evidence,
             if blocked is not None:
                 out.append(blocked)
                 continue
-            if any(a.clash for a in c.amounts):
+            if any(a.clash for a in probe.amounts):
                 flags.append("unit-scale-clash")
-            out.append(Verdict(c, SUPPORTED, "value found in the cited evidence",
+            out.append(Verdict(c, SUPPORTED,
+                               deriv.support_reason if deriv is not None
+                               else "value found in the cited evidence",
                                strict, flags=flags))
             continue
 
@@ -2522,7 +2908,7 @@ def classify_deterministic(claims: Sequence[Claim], evidence: Evidence,
         # the one conflict whose reason names what the answer stated, so it is
         # reported before any widening is even attempted — a claim the cited
         # page itself refutes must never be described as a page-number defect.
-        conflict, _where = _key_conflict(c, evidence, strict, also,
+        conflict, _where = _key_conflict(probe, evidence, strict, also,
                                          registry_conflicts)
         if conflict:
             cand, line = conflict
@@ -2537,7 +2923,7 @@ def classify_deterministic(claims: Sequence[Claim], evidence: Evidence,
         wide_only = [k for k in wide if k not in strict and k not in r5]
         promoted: Optional[Tuple[str, List[EvidenceKey], str]] = None
         if wide_only:
-            ok2, _ = _verify_against(c, _text_of(evidence, wide_only))
+            ok2, _ = _verify_against(probe, _text_of(evidence, wide_only))
             if ok2:
                 promoted = (
                     "value found in the cited document, but not on the cited page",
@@ -2545,13 +2931,13 @@ def classify_deterministic(claims: Sequence[Claim], evidence: Evidence,
 
         if promoted is None and registry_conflicts:
             held = _text_of(evidence, strict + wide_only)
-            gaps = _check_amounts(c, held)[1] if c.amounts else []
-            gap_names = (_check_entities(c, held)[1]
-                         if c.kind == "entity" and c.entities else [])
+            gaps = _check_amounts(probe, held)[1] if probe.amounts else []
+            gap_names = (_check_entities(probe, held)[1]
+                         if probe.kind == "entity" and probe.entities else [])
             backed = None
             for d in dict.fromkeys(k[0] for k in strict + wide
                                    if not is_notes_doc(k[0])):
-                backed = (registry_backed(d, c, gaps) if gaps else None) or \
+                backed = (registry_backed(d, probe, gaps) if gaps else None) or \
                     (registry_named(d, gap_names) if gap_names else None)
                 if backed:
                     break
@@ -2563,8 +2949,10 @@ def classify_deterministic(claims: Sequence[Claim], evidence: Evidence,
 
         if promoted is not None:
             reason, scope, promo = promoted
-            hit = _conflict_before_support(c, evidence, strict, wide, r5, also,
-                                           also_all, registry_conflicts,
+            if deriv is not None:
+                reason = f"{deriv.support_reason}; {reason}"
+            hit = _conflict_before_support(probe, evidence, strict, wide, r5,
+                                           also, also_all, registry_conflicts,
                                            cross_page_conflicts)
             if hit:
                 # The promotion flag is kept on the CONTRADICTED verdict: it is

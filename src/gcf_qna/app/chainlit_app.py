@@ -37,14 +37,50 @@ from gcf_qna.app.prompts import (CONDUCTOR_PROMPT, SYSTEM_PROMPT, assemble,
                                  assemble_chat)
 
 
+def _registry_fp(doc_id: str):
+    """The corpus registry's FP number for a stem, or None.
+
+    An exact dict lookup on the id, never a parse of it: 'FP151' is
+    '124_gcf-b27-02-add11' and no amount of reading that filename yields 151
+    (the B.27-era stems carry no FP number at all — the same fact
+    `_registry_doc` exists for, from the other direction).
+    """
+    try:
+        return (registry.load().get(doc_id) or {}).get("fp")
+    except Exception:
+        return None      # the registry is an enhancement, never a blocker
+
+
 def _doc_label(doc_id: str, page) -> str:
-    """Citation header with precomputed board/year: the model reads dates
-    instead of deriving them. Uses the shared boards parser, which handles
-    every corpus id format incl. '72_GCF_B.35_02_Add.05...' (review #4)."""
+    """Citation header with precomputed FP number and board/year: the model
+    reads identifiers and dates instead of deriving them. Uses the shared
+    boards parser, which handles every corpus id format incl.
+    '72_GCF_B.35_02_Add.05...' (review #4).
+
+    The FP number is here because of `disc-subnational-pair`, 0.60 in six
+    consecutive releases: retrieval put BOTH of the Global Subnational Climate
+    Fund's proposals at rank 1 and 2, the model named both, cited both stems —
+    and never wrote FP151 or FP152, because no note fired for that turn
+    (`notes_used == {}`) and the retrieved page is a no-objection letter that
+    names the two accredited entities and no identifier. Nothing in the whole
+    context held the FP numbers, so the only way to that answer was a guess.
+    The board/year precedent settles where the fix belongs: a per-document
+    fact the model would otherwise have to invent goes in the header, computed
+    once, exactly, from the registry.
+
+    The CITATION is still the stem and the page — CORE says so explicitly,
+    because an identifier in the header is an invitation to cite it.
+    """
     label = doc_id + (f", p. {page}" if page else "")
+    bits = []
+    fp = _registry_fp(doc_id)
+    if fp:
+        bits.append(f"FP{fp}")
     b, y = board_of(doc_id), year_of(doc_id)
     if b and y:
-        label += f" — B.{b}, {y}"
+        bits.append(f"B.{b}, {y}")
+    if bits:
+        label += " — " + ", ".join(bits)
     return label
 
 
@@ -232,11 +268,25 @@ def _outside_corpus_note(outside: list) -> str:
 # near $1.36B (21x), and an unprompted 2020-vs-2021 comparison came out
 # backwards — the note prints one figure per proposal, in whatever currency
 # and unit that proposal printed, and nothing behind it can add them up.
+#
+# The refusal is still the right answer for the PRINTED strings. It was the
+# wrong answer for the QUESTION: "did 2020 or 2021 get more?" has a direction,
+# the corpus knows it, and a flat refusal leaves the user with the 21x guess
+# they came in with. So the note now computes the one total that is defensible
+# — same currency, unambiguous prints only — and this rule licenses THAT
+# figure and nothing else. The licence and the prohibition share a sentence on
+# purpose: the F11 protection is that the model never does the arithmetic, and
+# a rule that grants an exception in one breath and forbids self-summation two
+# sentences later is a rule with a gap in the middle of it.
 _NO_SUM_RULE = (
     "Amounts are quoted exactly as each proposal prints them, in mixed "
     "currencies and sometimes ambiguous units, so they MUST NOT be summed, "
     "totalled or averaged: answer a request for a year-wide or corpus-wide "
-    "total by refusing the sum and giving the per-proposal figures instead.")
+    "total by refusing the sum and giving the per-proposal figures instead. "
+    "The single exception is a 'Computed total' sentence in this note: quote "
+    "that total with the coverage and the exclusions it states, and even then "
+    "do NOT add, subtract, extend or convert any figure yourself — a total "
+    "this note does not print is a total the answer does not have.")
 
 
 def _v2_money(row: dict):
@@ -284,6 +334,103 @@ def _span_text(labels: list, prefix: str = "") -> str:
     return ", ".join(f"{prefix}{v}" for v in labels)
 
 
+# --- the one total the corpus can defend (P4/F11) --------------------------
+#
+# P4 asked which of 2020 and 2021 requested more and got the direction WRONG;
+# F11 asked for the sums outright and got 21x/35x. Both failed on the same
+# missing piece: the year note prints v1/v2 raw strings and no layer behind it
+# holds a number. registry v2 does — `canonical()['value']` is a float parsed
+# from the template section, and it is None exactly when the print cannot be
+# trusted ("28,654 million USD"). So a total is computable here, from the
+# floats, never from the strings — but only over prints that are in ONE
+# currency and unambiguous. Everything left out is NAMED: a total whose
+# coverage is invisible is the same defect as the truncated country list of
+# §7.1, which said "five" and meant "five of 44".
+#
+# Two years is the cap. The shape this answers is "year A vs year B"; a third
+# year's listing plus a third exclusion list stops being a note and starts
+# being a report, and wide spans already drop to per-year counts (no money at
+# all), so there is nothing there to total.
+_TOTAL_YEARS_MAX = 2
+
+
+def _usd_amount(value: float) -> str:
+    """'USD 1,157,208,843.80': grouped, no '.00' tail on a whole figure."""
+    text = f"{value:,.2f}"
+    return "USD " + (text[:-3] if text.endswith(".00") else text)
+
+
+def _fp_list(fps) -> str:
+    return ", ".join(f"FP{n}" for n in sorted(fps))
+
+
+def _usd_total(rows: list):
+    """(total, [fp included], {reason: [fp excluded]}) over the v2 floats.
+
+    A row enters the sum only with a v2 CANONICAL fact that parsed to a float
+    in USD. The four ways out are kept apart because they mean different
+    things to a reader: another currency is a real figure this total cannot
+    hold, an ambiguous print is a figure nothing can trust, an unnormalised
+    one is printed in the listing above but never re-read, and 'no figure' is
+    a silence. Never the printed string, in any branch.
+    """
+    total, included = 0.0, []
+    excluded = {"currency": [], "ambiguous": [], "unnormalised": [],
+                "silent": []}
+    for row in rows:
+        fp = row.get("fp")
+        cand = _v2_money(row)
+        if not cand:
+            # `_money` still prints the v1 string for these, so say which
+            excluded["unnormalised" if row.get("gcf_financing")
+                     else "silent"].append(fp)
+        elif cand.get("value") is None:
+            excluded["ambiguous"].append(fp)
+        elif (cand.get("currency") or "").upper() != "USD":
+            currency = (cand.get("currency") or "").upper()
+            excluded["currency"].append((fp, currency or "currency not stated"))
+        else:
+            total += float(cand["value"])
+            included.append(fp)
+    return total, included, excluded
+
+
+def _year_total_line(year: int, rows: list):
+    """'Computed total for 2020 …', or None when nothing is summable.
+
+    Carries no document id and no '(p.N' pointer BY CONSTRUCTION: it names
+    proposals as FP numbers, exactly as the listing above it does, so the
+    sentence publishes no note-page scope for the verifier to credit a
+    citation against (mirrors the _NO_SUM_RULE safety test).
+    """
+    total, included, excluded = _usd_total(rows)
+    if not included:
+        return None
+    bits = []
+    by_currency: dict = {}
+    for fp, cur in excluded["currency"]:
+        by_currency.setdefault(cur, []).append(fp)
+    for cur, fps in sorted(by_currency.items()):
+        bits.append(f"{_fp_list(fps)} ({cur})")
+    if excluded["ambiguous"]:
+        bits.append(f"{_fp_list(excluded['ambiguous'])} "
+                    f"(unit as printed is ambiguous)")
+    if excluded["unnormalised"]:
+        bits.append(f"{_fp_list(excluded['unnormalised'])} "
+                    f"(figure printed above but not normalised)")
+    if excluded["silent"]:
+        n = len(excluded["silent"])
+        bits.append(f"{n} proposal{'s' if n != 1 else ''} stating no figure")
+    tail = ("; excluded from this total: " + ", ".join(bits)
+            + " — the figures listed above for them stand as printed."
+            if bits else ".")
+    return (f"Computed total for {year} (computed by the system from the "
+            f"registry's normalised values, NOT by adding the strings above): "
+            f"{len(included)} of the {len(rows)} proposals state their GCF "
+            f"request as an unambiguous USD figure, and those {len(included)} "
+            f"total {_usd_amount(total)}{tail}")
+
+
 def _year_assist(question: str, hits: list):
     """Code-side year matching: if the question names a year, sort matching
     excerpts first and emit a note computed from the REGISTRY, which is
@@ -296,6 +443,11 @@ def _year_assist(question: str, hits: list):
     per-year counts and FP ranges instead. A range with no overlap at all
     ('before 2015') gets a definitive out-of-range note, never a listing of
     the nearest year.
+
+    One or two years also get a COMPUTED same-currency total per year (see
+    _year_total_line): the printed figures still may not be summed by the
+    model, but the question "2020 or 2021?" has an answer and the registry
+    holds the floats to compute it.
     """
     years, outside = _scan_years(question)
     if not years:
@@ -328,6 +480,10 @@ def _year_assist(question: str, hits: list):
         if rows and detailed:
             fps = "; ".join(f"FP{r['fp']}{_money(r)}" for r in rows)
             lines.append(f"{y} — {len(rows)} proposals: {fps}.")
+            if len(years) <= _TOTAL_YEARS_MAX:
+                total_line = _year_total_line(y, rows)
+                if total_line:
+                    lines.append(total_line)
         elif rows:
             # 'FPa–FPb' claims every number between a and b belongs to this
             # year, which is false for most years (2023 spans FP86..FP224 with

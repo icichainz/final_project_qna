@@ -3837,3 +3837,540 @@ def test_the_judge_is_shown_a_note_scope_by_name(no_registry):
     snippet = V._evidence_snippet(ev, [(V.note_scope_doc(NOTE_DOC), 76)])
     assert "__notes__" not in snippet
     assert f"computed notes for {NOTE_DOC}, p.76" in snippet
+
+
+# ===========================================================================
+# DERIVED ARITHMETIC — a computed difference is not a printed figure
+#
+# Source row: `fu-compare-those` in `data/eval/release_release-6.jsonl`, the
+# ONE contradicted verdict of that release and the limitation named in
+# `docs/l1-l2-coverage-review.md` §7.1 / `docs/build-report.html` Act XIV. The
+# answer states a difference, cites both operands to the pages that print
+# them, and the verifier answers CONTRADICTED because 131.5 M USD is printed
+# nowhere. The shape recurs in release-7 in its prose form.
+#
+# THE RULE HAS FOUR CLAUSES and each has its own adversarial twin below,
+# varying THE DIMENSION THAT CLAUSE TURNS ON:
+#
+#   1. the text carries the whole derivation   -> `_ARITH_OP_GAP` / `_ARITH_CMP`
+#   2. one currency and one scale              -> `_arith_context`
+#   3. every operand verifies against the       -> the qualification check in
+#      claim's own cited scopes                    `classify_deterministic`
+#   4. the claim as written must NOT verify    -> the `if not ok` precondition
+#
+# Clause 4 is the one that keeps QUOTING out of this path, and release-7's
+# `txt-fu-fp171-total-fr` is the row that proves it has to exist: it quotes
+# the document's own C.1 total, '(a)+(b) = 21 929 123,33 USD', beside the two
+# components — three printed figures that do not add up. It verifies today
+# and must keep verifying, unflagged.
+# ===========================================================================
+
+RELEASE_6 = pathlib.Path(__file__).resolve().parents[1] / "data" / "eval" / \
+    "release_release-6.jsonl"
+
+#: The A.8 cover-page rows, one per document, exactly the shape the corpus
+#: prints them in. Both operands are printed; the DIFFERENCE is not, which is
+#: the whole of the case.
+#: On ONE line each, the way the corpus's cover rows and the registry note
+#: print a field: `iter_amounts` treats a figure standing at the head of a
+#: line as glued to the word above it, which is a property of the frozen
+#: matcher and not this rule's to change.
+PAIR_EV = {
+    (DOC, 5): "GCF funding requested: 18.5 M USD (p.5, A.8)",
+    (DOC2, 5): "GCF funding requested: 150 M USD (p.5, A.8)",
+}
+CITES = f"[{DOC}, p. 5] [{DOC2}, p. 5]"
+
+#: `fu-compare-those`, release-6, verbatim.
+DERIVED_CLAIM = ("So, **FP152 requests 131.5 M USD more GCF funding than "
+                 f"FP151** (150.0 − 18.5 = 131.5). {CITES}")
+
+
+def _verdict(answer, evidence, **kw):
+    (v,) = V.classify_deterministic(V.extract_claims(answer), evidence, **kw)
+    return v
+
+
+# ------------------------------------------------------------- targeted --
+def test_the_release_6_row_verbatim_is_supported_and_flagged(no_registry):
+    """THE ROW. Its own answer, its own hits, its own notes, reassembled by
+    `build_evidence` from the record — not a fixture that resembles them."""
+    if not RELEASE_6.exists():
+        pytest.skip("release-6 record not present")
+    row = next((json.loads(l) for l in RELEASE_6.read_text("utf-8").splitlines()
+                if l.strip() and json.loads(l).get("id") == "fu-compare-those"),
+               None)
+    assert row is not None
+    from gcf_qna.rag.retrieve import Hit
+    ev = V.build_evidence(
+        [Hit(text=h["text"], doc_id=h["doc"], score=float(h.get("score") or 0.0),
+             page=h.get("page") or None) for h in row["hits"]],
+        [n for n in (row.get("notes_used") or {}).values() if n])
+    # the recording's own key set, reproduced — otherwise this is a different
+    # measurement wearing the row's name
+    assert [f"{d}|{p if p is not None else '-'}" for d, p in ev] == \
+        row["claims"]["evidence_keys"]
+    verdicts = V.classify_deterministic(V.extract_claims(row["answer"]), ev)
+    derived = [v for v in verdicts if V.DERIVED_ARITHMETIC in v.flags]
+    assert len(derived) == 1, [v.claim.text for v in verdicts]
+    assert derived[0].status == V.SUPPORTED, (derived[0].status,
+                                              derived[0].reason)
+    assert "131.5" in derived[0].claim.text
+    # and the release's one contradicted verdict is gone with it
+    assert [v.status for v in verdicts].count(V.CONTRADICTED) == 0
+
+
+def test_a_stated_subtraction_over_printed_operands_is_supported(no_registry):
+    """The same claim against the two A.8 rows, on the pages it cites."""
+    v = _verdict(DERIVED_CLAIM, PAIR_EV)
+    assert v.status == V.SUPPORTED, (v.status, v.reason)
+    assert v.flags == [V.DERIVED_ARITHMETIC], v.flags
+    assert "arithmetic holds" in v.reason
+
+
+def test_a_stated_addition_over_printed_operands_is_supported(no_registry):
+    """Addition, same rule: the operands are printed, the total is not."""
+    v = _verdict("Together they request **168.5 M USD** of GCF funding "
+             f"(150.0 + 18.5 = 168.5). {CITES}", PAIR_EV)
+    assert v.status == V.SUPPORTED, (v.status, v.reason)
+    assert V.DERIVED_ARITHMETIC in v.flags
+
+
+def test_a_comparative_carries_the_derivation_without_an_equation(no_registry):
+    """`fu-compare-those` in RELEASE-7: no equation at all, the same act. The
+    operands STRADDLE the result, which is the grammar of 'A is z more than
+    B' and is what says which of them is the minuend."""
+    v = _verdict("FP152’s requested GCF funding (**150 M USD**) is "
+             "**131.5 M USD higher** than FP151’s (**18.5 M USD**). "
+             + CITES, PAIR_EV)
+    assert v.status == V.SUPPORTED, (v.status, v.reason)
+    assert V.DERIVED_ARITHMETIC in v.flags
+
+
+def test_the_comparative_reads_less_in_the_other_direction(no_registry):
+    """DIMENSION: which side of the comparative is the minuend. 'lower than'
+    subtracts the other way, and a rule that ignored the cue word would need
+    |a - b| — which is what the swap test below makes fail."""
+    v = _verdict("FP151’s GCF funding (**18.5 M USD**) is **131.5 M USD "
+             "lower** than FP152’s (**150 M USD**). " + CITES, PAIR_EV)
+    assert v.status == V.SUPPORTED, (v.status, v.reason)
+    assert V.DERIVED_ARITHMETIC in v.flags
+
+
+def test_a_result_rounded_to_its_own_printed_precision_holds(no_registry):
+    """THE TOLERANCE, stated: half the coarsest printed precision of the three
+    terms — `amount_matches`'s rule, reused. '132' is printed to whole
+    millions and cannot distinguish 131.5 from 132, so it holds."""
+    v = _verdict("FP152 requests **132 M USD** more GCF funding than FP151 "
+             f"(150.0 − 18.5 = 132). {CITES}", PAIR_EV)
+    assert v.status == V.SUPPORTED, (v.status, v.reason)
+    assert V.DERIVED_ARITHMETIC in v.flags
+
+
+def test_the_flag_is_a_caution_the_app_can_show(no_registry):
+    """The flag rides the verdict the way `citation-page-mismatch` does, so
+    `RepairResult.cautions` — which is what the app formats — carries it with
+    no change on either side."""
+    res = V.verify_answer(DERIVED_CLAIM, PAIR_EV, use_llm=False)
+    assert res.status == "verified"
+    assert [f for v in res.cautions for f in v.flags] == [V.DERIVED_ARITHMETIC]
+
+
+# ------------------------------------------- adversarial: the arithmetic --
+@pytest.mark.parametrize("stated", ["131.6", "13.15", "1315"])
+def test_a_wrong_result_is_contradicted(no_registry, stated):
+    """DIMENSION: the computation. Operands the evidence really prints, a
+    result that does not follow from them. One tenth off, an order of
+    magnitude down, an order of magnitude up — CONTRADICTED every time,
+    because this is the one figure the verifier can be certain about."""
+    v = _verdict(f"FP152 requests **{stated} M USD** more GCF funding than FP151 "
+             f"(150.0 − 18.5 = {stated}). {CITES}", PAIR_EV)
+    assert v.status == V.CONTRADICTED, (v.status, v.reason)
+    assert "arithmetic does not hold" in v.reason
+    assert V.DERIVED_ARITHMETIC not in v.flags
+
+
+def test_the_written_operands_may_not_be_swapped(no_registry):
+    """DIMENSION: the ORDER the equation is written in. Both figures are
+    printed and both are cited; 18.5 - 150.0 is -131.5, not 131.5. A rule
+    comparing |x - y| passes this."""
+    v = _verdict("FP152 requests **131.5 M USD** more GCF funding than FP151 "
+             f"(18.5 − 150.0 = 131.5). {CITES}", PAIR_EV)
+    assert v.status == V.CONTRADICTED, (v.status, v.reason)
+    assert "arithmetic does not hold" in v.reason
+
+
+def test_the_comparative_direction_may_not_be_swapped(no_registry):
+    """The same swap in the prose form: FP151 is the SMALLER of the two, so
+    'FP151 ... more than FP152' computes 18.5 - 150.0."""
+    v = _verdict("FP151’s GCF funding (**18.5 M USD**) is **131.5 M USD "
+             "higher** than FP152’s (**150 M USD**). " + CITES, PAIR_EV)
+    assert v.status == V.CONTRADICTED, (v.status, v.reason)
+
+
+def test_a_result_one_printed_tick_off_is_outside_the_tolerance(no_registry):
+    """DIMENSION: the width of the tolerance. '131.6' is printed to tenths,
+    so tenths are what it can distinguish; widening the tolerance to a fixed
+    absolute slack passes this while still failing 13.15."""
+    ok = _verdict("FP152 requests **131.5 M USD** more (150.0 − 18.5 = "
+              f"131.5). {CITES}", PAIR_EV)
+    bad = _verdict("FP152 requests **131.6 M USD** more (150.0 − 18.5 = "
+               f"131.6). {CITES}", PAIR_EV)
+    assert ok.status == V.SUPPORTED and bad.status == V.CONTRADICTED
+
+
+# ---------------------------------------- adversarial: what does not qualify --
+def _unchanged(answer, evidence, **kw):
+    """A claim that does not qualify keeps TODAY'S verdict — which for this
+    shape is the contradiction the release recorded. The assertion is that no
+    derived verdict, reason or flag appears anywhere on it."""
+    v = _verdict(answer, evidence, **kw)
+    assert V.DERIVED_ARITHMETIC not in v.flags, (v.status, v.reason, v.flags)
+    assert "arithmetic" not in v.reason, (v.status, v.reason)
+    return v
+
+
+def test_an_operand_the_cited_evidence_never_prints_does_not_qualify(
+        no_registry):
+    """CLAUSE 3. FP151's 18.5 M USD is nowhere in the evidence, so the answer
+    is not deriving from anything this turn holds — it is asserting. Today's
+    verdict stands, unchanged and unflagged."""
+    ev = {(DOC, 5): "implementation period: 7 years (p.5, A.11)",
+          (DOC2, 5): "GCF funding requested: 150 M USD (p.5, A.8)"}
+    v = _unchanged(DERIVED_CLAIM, ev)
+    assert v.status == V.CONTRADICTED and "150 M USD" in v.reason
+
+
+def test_an_operand_only_the_registry_knows_does_not_qualify():
+    """CLAUSE 3, narrowly. The registry-backed promotion is deliberately NOT
+    part of qualification: a figure no key of this turn prints is not an
+    operand this turn may compute with, however well the corpus knows it."""
+    ev = {(DOC2, 5): "GCF funding requested: 150 M USD (p.5, A.8)"}
+    v = _unchanged(f"FP152 requests **131.5 M USD** more GCF funding than "
+                   f"FP151 (150.0 − 18.5 = 131.5). [{DOC2}, p. 5]", ev)
+    assert v.failed, (v.status, v.reason)
+
+
+def test_cross_currency_operands_do_not_qualify(no_registry):
+    """CLAUSE 2, THE DIMENSION IT EXISTS FOR. Subtracting a EUR figure from a
+    USD one is the act `prompts.CORE` spends a paragraph forbidding; a
+    verifier that certified it would be blessing the forbidden act. Dropping
+    the currency comparison from `_arith_context` passes this."""
+    ev = {(DOC, 5): "GCF funding requested: EUR 18.5 million (p.5, A.8)",
+          (DOC2, 5): "GCF funding requested: USD 150 million (p.5, A.8)"}
+    v = _unchanged("FP152 requests **131.5 million USD** more GCF funding "
+                   "than FP151 (USD 150 million − EUR 18.5 million = "
+                   f"131.5 million). {CITES}", ev)
+    assert v.status != V.SUPPORTED, (v.status, v.reason)
+
+
+def test_two_printed_scales_in_one_derivation_do_not_qualify(no_registry):
+    """CLAUSE 2, the other half. This corpus prints '28,654 million USD' and
+    means 28.654 million; a derivation spanning two printed scales is not one
+    this module may resolve, so it does not resolve it."""
+    ev = {(DOC, 5): "GCF funding requested: 18.5 thousand USD (p.5, A.8)",
+          (DOC2, 5): "GCF funding requested: 150 million USD (p.5, A.8)"}
+    _unchanged("FP152 requests **149.9815 million USD** more GCF funding than "
+               "FP151 (150 million − 18.5 thousand = 149.9815 million). "
+               + CITES, ev)
+
+
+def test_a_dimensionless_derivation_does_not_qualify(no_registry):
+    """SCOPE, stated as a gate. A bare operand matches any digit run a page
+    prints — the loosest the matchers get — so counts are no place to add a
+    new way to become SUPPORTED. `_arith_context` refuses a derivation with
+    no currency and no scale word anywhere."""
+    ev = {(DOC, 5): "The programme covers 12 countries.",
+          (DOC2, 5): "The programme covers 5 countries."}
+    _unchanged("FP152 covers **7 fewer countries** than FP151 (12 − 5 = "
+               f"7). {CITES}", ev)
+
+
+def test_a_ratio_is_not_a_derivation_this_rule_reads(no_registry):
+    """SCOPE. Division's result carries no currency, so clause 2 would have
+    nothing to check, and 'about 8.1x' rounds in a way `granularity` does not
+    model. Release-7's own ratio claim stays exactly where it is."""
+    claim = V.extract_claims(
+        "FP152 requests **8.1 M USD** times the GCF funding of FP151 "
+        f"(150.0 / 18.5 = 8.1). {CITES}")[0]
+    assert V.derived_arithmetic(claim) is None
+
+
+def test_a_quoted_equation_the_evidence_prints_is_not_re_routed(no_registry):
+    """CLAUSE 4, AND THE ROW IT EXISTS FOR (`txt-fu-fp171-total-fr`,
+    release-7). The answer quotes the document's OWN C.1 total beside its own
+    two components; the three printed figures do not add up, because the page
+    does not. Every figure verifies, so the ordinary matcher owns the claim
+    and this path is never reached. Removing the `if not ok` precondition
+    turns a faithful quotation into a contradiction."""
+    page = ("## C.1 Total amount\n(a)+(b) = 21 929 123,33 USD\n"
+            "(a) GCF grant 20 986 732,33 USD\n(b) co-financing 748 460,00 USD")
+    ev = {(DOC, 67): page}
+    v = _unchanged("In section C.1 the document prints **(a)+(b) = "
+                   "21 929 123,33 USD**, made up of **20 986 732,33 USD** of "
+                   "GCF grant and **748 460,00 USD** of co-financing. "
+                   f"[{DOC}, p. 67]", ev)
+    assert v.status == V.SUPPORTED, (v.status, v.reason)
+
+
+def test_a_result_the_page_prints_is_not_a_derived_figure(no_registry):
+    """CLAUSE 4 in its pure form, on a sentence this rule CAN parse: the same
+    equation with all three terms written out in full, and a page that prints
+    all three. The derivation reads cleanly — and is never consulted, because
+    the ordinary matcher already verified the claim. Removing the `if not ok`
+    precondition flags a claim that derived nothing.
+
+    An equation whose operands are written BARE keeps its flag even when the
+    page happens to print the difference too, and that is right: the answer
+    still computed it, and 'the page also says so' is not the same fact as
+    'the answer read it off the page'."""
+    ev = dict(PAIR_EV)
+    ev[(DOC2, 5)] += "; the gap to FP151 is 131.5 M USD"
+    answer = ("FP152 requests **131.5 M USD** more GCF funding than FP151 "
+              f"(150 M USD − 18.5 M USD = 131.5 M USD). {CITES}")
+    assert V.derived_arithmetic(V.extract_claims(answer)[0]) is not None
+    v = _unchanged(answer, ev)
+    assert v.status == V.SUPPORTED and v.flags == [], (v.reason, v.flags)
+
+
+def test_a_difference_phrase_does_not_qualify(no_registry):
+    """SCOPE, argued. 'A difference of X between A and B' puts the RESULT
+    after the preposition and 'the difference between A and B' puts an
+    OPERAND there — the same three characters, two different roles. A rule
+    that cannot tell which figure is which from the text would report
+    |18.5 - 131.5| = 150 as a contradiction of a correct sentence. No claim
+    in releases 6-8 has the shape; both forms stay on today's path."""
+    for answer in (
+            "The two differ by a difference of **131.5 M USD** between "
+            "**150 M USD** and **18.5 M USD**. " + CITES,
+            "The difference between **150 M USD** and **18.5 M USD** is "
+            "**131.5 M USD**. " + CITES):
+        assert V.derived_arithmetic(V.extract_claims(answer)[0]) is None
+
+
+def test_a_comparative_whose_operands_share_one_side_does_not_qualify(
+        no_registry):
+    """DIMENSION: the straddle. 'Compared with FP151's 18.5 M USD, FP152's
+    150 M USD is 131.5 M USD higher' puts both operands BEFORE the result, so
+    the text no longer says which is the minuend. Reading them in text order
+    instead would compute 18.5 - 150 and contradict a correct sentence."""
+    answer = ("Compared with FP151’s **18.5 M USD**, FP152’s "
+              "**150 M USD** is **131.5 M USD higher** than that. " + CITES)
+    assert V.derived_arithmetic(V.extract_claims(answer)[0]) is None
+
+
+def test_the_operator_must_be_all_that_stands_between_the_operands(
+        no_registry):
+    """DIMENSION: clause 1's anchoring. `_ARITH_OP_GAP` is anchored at both
+    ends, so a word between the two figures means they are not the two sides
+    of one operator. Relaxing it to an unanchored search passes this."""
+    for answer in (
+            "FP152 requests **131.5 M USD** more GCF funding (150.0 minus "
+            f"18.5 = 131.5). {CITES}",
+            "FP152 requests **131.5 M USD** more GCF funding (150.0 for "
+            f"FP152 − 18.5 = 131.5). {CITES}"):
+        assert V.derived_arithmetic(V.extract_claims(answer)[0]) is None
+
+
+def test_an_equation_without_an_equals_sign_does_not_qualify(no_registry):
+    """DIMENSION: clause 1 again. Three figures and an operator are not a
+    derivation until the text says what they equal."""
+    answer = ("FP152 requests **131.5 M USD** more GCF funding than FP151 "
+              f"(150.0 − 18.5, so 131.5). {CITES}")
+    # all three figures really are extracted — otherwise this would pass for
+    # the wrong reason and the equals sign would be pinned by nothing
+    assert len(V.extract_claims(answer)[0].amounts) == 4
+    assert V.derived_arithmetic(V.extract_claims(answer)[0]) is None
+
+
+def test_a_scale_word_may_not_be_borrowed_from_an_unrelated_figure(
+        no_registry):
+    """DIMENSION: how a BARE equation gets its unit. The link is the MANTISSA
+    — '131.5 M USD' in the prose and the '131.5' of the equation are one
+    figure written twice — never proximity. Here the only marked figure in
+    the sentence shares its mantissa with nothing in the equation, so it
+    contributes no unit and the derivation stays dimensionless and refused.
+
+    Dropping the mantissa filter reads a count as money: 12 and 5 become
+    12 M USD and 5 M USD, which a financing page really does print, and a
+    provinces count 'verifies' against a funding table."""
+    answer = ("FP152 covers **7** more provinces than FP151 (12 − 5 = 7), out "
+              f"of a **28 M USD** GCF request. {CITES}")
+    assert V.derived_arithmetic(V.extract_claims(answer)[0]) is None
+
+
+def test_a_large_bare_equation_with_no_mark_anywhere_does_not_qualify(
+        no_registry):
+    """CLAUSE 2's floor case, isolated from the money floor: figures far above
+    it, and not one currency or scale word in the sentence. Nothing says these
+    are amounts of money rather than beneficiaries, hectares or tonnes, so
+    this rule does not read them."""
+    answer = ("The two components come to **21 180 663** in all "
+              f"(21 929 123 − 748 460 = 21 180 663). {CITES}")
+    assert V.derived_arithmetic(V.extract_claims(answer)[0]) is None
+
+
+def test_a_far_off_marked_figure_does_not_lend_its_scale(no_registry):
+    """DIMENSION: the mantissa link, isolated. The same unmarked equation with
+    ONE marked figure in the sentence, sharing its mantissa with none of the
+    three and standing far enough away that `iter_amounts` does not hand its
+    currency to them. Lending its 'M USD' across would read 21 929 123 as
+    twenty-one TRILLION and then call the subtraction correct."""
+    answer = ("The two components come to **21 180 663** in all "
+              "(21 929 123 − 748 460 = 21 180 663), a figure the annex reports "
+              "separately from the programme's headline GCF request of "
+              f"**28 M USD**. {CITES}")
+    assert V.derived_arithmetic(V.extract_claims(answer)[0]) is None
+
+
+def test_two_currencies_named_only_in_the_prose_refuse_the_derivation(
+        no_registry):
+    """CLAUSE 2 where the per-term check cannot reach: the equation is bare,
+    so every mark comes from the prose around it, and the prose names two
+    currencies for the two mantissas. The set of collected marks is the only
+    thing that can see this."""
+    answer = ("The gap is **131.5 million EUR** against a **150 million USD** "
+              f"request (150.0 − 18.5 = 131.5). {CITES}")
+    assert V.derived_arithmetic(V.extract_claims(answer)[0]) is None
+
+
+def test_two_scales_named_only_in_the_prose_refuse_the_derivation(
+        no_registry):
+    """The same, for scale. 'thousand' and 'million' for the two mantissas of
+    one bare equation is not a derivation this module resolves."""
+    answer = ("The gap is **131.5 million USD** against a **150 thousand USD** "
+              f"request (150.0 − 18.5 = 131.5). {CITES}")
+    assert V.derived_arithmetic(V.extract_claims(answer)[0]) is None
+
+
+def test_a_term_printed_without_the_derivations_scale_does_not_qualify(
+        no_registry):
+    """CLAUSE 2, the per-term half, isolated: ONE currency and ONE scale word
+    in the whole sentence, and a middle term that prints the currency and NOT
+    the scale. Every term is evaluated at the derivation's scale, so without
+    this check 'USD 18.5' is silently read as 18.5 million and an arithmetic
+    the text never stated comes out right."""
+    answer = ("FP152 requests **131.5 million USD** more GCF funding than "
+              f"FP151 (USD 150 million − USD 18.5 = USD 131.5 million). {CITES}")
+    claim = V.extract_claims(answer)[0]
+    assert len(claim.amounts) == 4              # the shape really is parsed
+    assert V.derived_arithmetic(claim) is None
+
+
+def test_an_operand_printed_only_in_an_uncited_document_does_not_qualify(
+        no_registry):
+    """CLAUSE 3 is scoped to the evidence this claim CITES, not to everything
+    the turn retrieved. FP151's figure is held — under a document this claim
+    never names — and an operand the claim does not point at is not one it
+    may compute with."""
+    ev = {(DOC2, 5): "GCF funding requested: 150 M USD (p.5, A.8)",
+          (DOC, 5): "GCF funding requested: 18.5 M USD (p.5, A.8)"}
+    v = _unchanged("FP152 requests **131.5 M USD** more GCF funding than "
+                   f"FP151 (150.0 − 18.5 = 131.5). [{DOC2}, p. 5]", ev)
+    assert v.failed, (v.status, v.reason)
+
+
+# --------------------------------------------------- the standing invariants --
+def test_a_derived_support_is_still_conflict_tested(no_registry):
+    """THE GATE. `_conflict_before_support` is the ONE gate between a verified
+    claim and SUPPORTED, and this is a new way to become SUPPORTED — exactly
+    the shape that historically walked around it. The operands are printed
+    and the arithmetic holds, and the cited document prints a DIFFERENT
+    figure under the claim's own field label."""
+    ev = dict(PAIR_EV)
+    ev[(DOC2, 60)] = "GCF funding requested: 175 M USD (p.60, A.8)"
+    v = _verdict(DERIVED_CLAIM, ev)
+    assert v.status == V.CONTRADICTED, (v.status, v.reason, v.flags)
+    assert "175 M USD" in v.reason
+    assert "conflict-elsewhere-in-document" in v.flags
+    # and the switch that names cross-page scans still names this one
+    off = _verdict(DERIVED_CLAIM, ev, cross_page_conflicts=False)
+    assert off.status == V.SUPPORTED and V.DERIVED_ARITHMETIC in off.flags
+
+
+def test_a_derived_verdict_never_claims_a_scope_it_did_not_test(no_registry):
+    """The structural invariant of the note-scope and widening tests,
+    re-asserted over the scope this change adds."""
+    ev = dict(PAIR_EV)
+    for v in V.classify(V.extract_claims(DERIVED_CLAIM), ev, use_llm=False):
+        if v.status != V.SUPPORTED:
+            continue
+        assert V._conflict_before_support(
+            V.derived_probe(v.claim, V.derived_arithmetic(v.claim)),
+            ev, v.scope, v.scope, []) is None, v.reason
+
+
+def test_which_document_holds_which_operand_is_a_MEASURED_LIMIT(no_registry):
+    """A LIMIT, MEASURED AND NAMED rather than left for the next review, and
+    it is the one place this rule is WEAKER than the path it replaces.
+
+    A derived claim states BOTH figures — they are its operands — so the
+    per-key conflict scan finds the field 'agrees somewhere' on each cited
+    key and reports nothing. The single-figure claim beside it does not have
+    that shelter: it states one figure, the other document prints a different
+    one under the same label, and it is CONTRADICTED. So an answer that gets
+    the arithmetic right and the ATTRIBUTION backwards — 'FP151 requests
+    131.5 M USD more than FP152', when FP151 is the smaller of the two —
+    comes back supported, with a caution.
+
+    Closing it needs a binding from 'FP151' in the prose to a document, which
+    this module does not have and which is not a thing to invent inside a
+    calibration change: `_reported_elsewhere` already refuses to attribute a
+    multi-document claim to either of them ('len(docs) != 1'), and this is
+    the same gap seen from the other side. What this rule does NOT do is
+    widen it any further: the operands still have to be printed in the cited
+    evidence, and the arithmetic still has to hold, so the two directional
+    swaps the text CAN express — a reversed equation and a reversed
+    comparative — are both CONTRADICTED (see the two tests above).
+
+    If a text-to-document binding ever arrives, this test fails and the claim
+    gets updated."""
+    swapped = ("So, **FP151 requests 131.5 M USD more GCF funding than "
+               f"FP152** (150.0 − 18.5 = 131.5). {CITES}")
+    v = _verdict(swapped, PAIR_EV)
+    assert v.status == V.SUPPORTED and V.DERIVED_ARITHMETIC in v.flags
+    # the single-figure form, where the per-key scan still bites
+    plain = f"**FP151** requests **150 M USD** of GCF funding. {CITES}"
+    assert _verdict(plain, PAIR_EV).status == V.CONTRADICTED
+
+
+def test_the_probe_is_the_claim_itself_when_no_arithmetic_is_stated():
+    """THE NO-OP PROPERTY, over the whole recorded corpus rather than a
+    fixture: `classify_deterministic` runs every check on `probe`, and
+    `probe is c` for any claim that states no derivation. If some ordinary
+    claim reads as one, every verdict in this module is in scope for review —
+    so the population is measured here, not assumed."""
+    seen = 0
+    for name in ("release_release-1.jsonl", "release_release-6.jsonl",
+                 "release_release-7.jsonl", "release_release-8.jsonl"):
+        path = RELEASE_6.parent / name
+        if not path.exists():
+            continue
+        for line in path.read_text("utf-8").splitlines():
+            if not line.strip():
+                continue
+            row = json.loads(line)
+            for c in V.extract_claims(row.get("answer") or ""):
+                seen += 1
+                if V.derived_arithmetic(c) is None:
+                    continue
+                assert row["id"] == "fu-compare-those", (row["id"], c.text)
+    assert seen > 500, seen
+
+
+def test_no_adjudicated_gold_row_states_a_derived_arithmetic(no_registry):
+    """VERIFIED, NOT ASSUMED. The five-arm scorer cannot move on this change
+    unless one of its rows states arithmetic; none does, which is why the
+    arms are the wrong instrument for it and the rows above are the right
+    one."""
+    path = RELEASE_6.parent / "release_release-1-adjudicated.jsonl"
+    if not path.exists():
+        pytest.skip("adjudicated gold not present")
+    rows = [json.loads(l) for l in path.read_text("utf-8").splitlines()
+            if l.strip()]
+    assert rows
+    stated = [r for r in rows
+              if any(V.derived_arithmetic(c) is not None
+                     for c in V.extract_claims(r.get("claim_text")
+                                               or r.get("text") or ""))]
+    assert stated == [], stated

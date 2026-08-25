@@ -224,6 +224,26 @@ d398b45b61c039669a1b3624daa595f0a4245c0800e76886b2fefefb858e4529  data/eval/rele
 6ed0e7b718efb17e0154a855dc78d5aba604ccc2d9cfa167588a8d07f2c9a0fc  data/eval/release_release-5.jsonl
 1ebee34e5dc63695c66b3e03902dcf25b03fbbe13efe22c74c95301bd70ec2e9  data/eval/release_release-6.jsonl
 d750354fbcbde8a8b6997159260467c78e8649b501496c7eb8aeb2239dcfea38  data/eval/release_release-7.jsonl
-730d80dca307f0943d9c7442c9b4c24ab3176f3c173d7d3ffe0a9360b8b4055c  scripts/answer_gold.jsonl
+c5985de2ba9b6fffb02f88460a5cb7acbed5eeb9789f6d43eab8fa00722ef882  scripts/answer_gold.jsonl
 65f6e39544fd577460ba787933759428c2a59da08c7062eba7f2eef0f7f3e19e  data/eval/release_release-8.jsonl
 619b23fa1b7e19d8febf368aacc3182554bfb66a574847ed4325e640979e26e8  data/eval/release_release-8-repeat.jsonl
+#
+# DERIVED-ARITHMETIC rescores: releases 6, 7 and 8 recomputed OFFLINE (zero API
+# calls) with the verifier that reads a claim's own stated arithmetic. Evidence
+# was rebuilt by verify.build_evidence over each row's recorded hits and notes
+# and the reconstruction was checked against the recorded claims.evidence_keys
+# first: 86 of 86 reproduce exactly, 0 mismatches, in all three releases.
+# 86 not 89: `abs-fp999`, `fr-fp999-abstain` and `abs-offtopic` are guard
+# answers that hold no hits and no claims block at all — production's guard
+# path returns before build_evidence — so there is nothing in them to rescore
+# and scoring them would mint claims the run never verified.
+# Deterministic mode, so `claims` here is not comparable to the recorded
+# production block beside it (`claims_recorded`, judge on); the comparison
+# these files exist for is against the same rescore taken on the tree before
+# the change. Measured that way: release-6 supported 154/169 -> 155/169,
+# release-7 158/173 -> 159/173, release-8 173/188 unchanged, and the two rows
+# that move are both `fu-compare-those`'s derived difference and nothing else.
+# The frozen release files are untouched.
+1430ee935e22cab5754ab5e64988577f5e14b60f12c4eae1a244822d9e6283fd  data/eval/rescore_derived-arith_release-6.jsonl
+10c2ac6956ccad0e533a08ae7ae98b9000ab3d15ace66c39f0dacfba82419060  data/eval/rescore_derived-arith_release-7.jsonl
+816a22348aca3800906a4036d3569d0f8c576f5364c20ac27c9dcae94638ea53  data/eval/rescore_derived-arith_release-8.jsonl

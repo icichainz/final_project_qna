@@ -604,3 +604,155 @@ def test_needs_extraction_retries_error_rows():
     assert needs_extraction("absent_doc", reg) is True
     assert needs_extraction("ok_doc", reg) is False
     assert needs_extraction("healed_doc", reg) is False  # LLM nulls are a real result
+
+
+# ==========================================================================
+# H10 — the id forms the strict pattern missed
+# ==========================================================================
+# docs/l1-l2-coverage-review.md §4.2: 'FP-220' and 'FP 0086' resolved, but
+# 'FP#220', 'FP.220', 'FP no. 220' and 'proposal 220' resolved to nothing, and
+# a miss here is SILENT — no registry note, no identifier routing, no guard,
+# just open retrieval with no signal that an identifier was lost. The noisy
+# gold class (6 cases) only ever tested forms that already matched.
+#
+# The pattern is widened WHERE IT BINDS: `registry.FP_RE` is the one definition
+# (chainlit_app imports it as `_FP_RE`, planner reads it through
+# `registry.FP_RE`, eval_answers picks it up as `_FP_TOKEN_RE`), so these forms
+# reach every consumer of that object at once. One RUNTIME consumer keeps its
+# own pattern — `retrieve.identifier_tokens`, which matches 'fp\d{2,3}' against
+# lexical tokens — and it is recorded, not edited, in the sweep test below;
+# `scripts/generate_rag_questions.py` keeps a third copy, offline, for building
+# question sets, and nothing a user types reaches it.
+
+FP_MARKER_FORMS = ["FP#220", "FP.220", "FP no. 220", "FP no 220",
+                   "FP number 220", "FP nos. 220", "FP-220", "FP 220", "FP220"]
+FP_PROSE_FORMS = ["proposal 220", "proposal #220", "proposal no. 220",
+                  "funding proposal 220", "funding proposal number 220",
+                  "proposition 220", "proposition n° 220",
+                  "proposition numéro 220"]
+
+
+@pytest.mark.parametrize("form", FP_MARKER_FORMS + FP_PROSE_FORMS)
+def test_every_h10_id_form_binds_to_the_same_number(form):
+    assert registry.FP_RE.findall(f"What is {form} about?") == ["220"]
+
+
+@pytest.mark.parametrize("q,why", [
+    ("What happened to proposal 2020?", "a year, not an id"),
+    ("How many proposals from 2020?", "a year behind a plural noun"),
+    ("Does it cover 220 countries?", "a count in front of a noun"),
+    ("What is 220?", "a bare number identifies nothing"),
+    ("What does Add.220 contain?", "an addendum number is not an FP number"),
+    ("proposals from fp2023", "the four-digit trap _FP_RE was written for"),
+    ("Look at proposal 2 in the list above", "an enumeration, not an id"),
+    ("Compare FPs 12 and 74", "'FPs' is the plural ask; binding one of two "
+                              "would hard-scope retrieval to the wrong half"),
+    ("Compare proposals 220 and 203", "same, in prose"),
+])
+def test_the_forms_that_must_never_bind_still_do_not(q, why):
+    assert registry.FP_RE.findall(q) == [], why
+
+
+def test_the_prose_arm_is_singular_on_purpose():
+    """A plural noun before a number is a list or a count, and binding the
+    first member of a list is worse than binding nothing: chainlit's
+    `_prescope_single_fp` hard-scopes a lone id and starves the other
+    document."""
+    assert registry.FP_RE.findall("proposal 220") == ["220"]
+    assert registry.FP_RE.findall("proposals 220") == []
+    assert registry.FP_RE.findall("proposition 220") == ["220"]
+    assert registry.FP_RE.findall("propositions 220") == []
+
+
+def test_the_prose_arm_needs_two_digits_or_a_number_word():
+    """'proposal 2' is an enumeration far more often than an identifier, and
+    FP1-FP9 stay reachable by every other spelling."""
+    assert registry.FP_RE.findall("proposal 2") == []
+    assert registry.FP_RE.findall("proposal no. 2") == ["2"]
+    assert registry.FP_RE.findall("FP2") == ["2"]
+    assert registry.FP_RE.findall("FP 2") == ["2"]
+    assert registry.FP_RE.findall("proposal 86") == ["86"]
+
+
+def test_the_widened_pattern_keeps_one_capturing_group():
+    """Every consumer reads `findall` as a list of NUMBERS — registry_note,
+    resolve_fps, chainlit_app's four call sites, planner.detect and
+    eval_answers' _FP_TOKEN_RE. A second group would hand all of them
+    tuples."""
+    assert registry.FP_RE.groups == 1
+    assert registry.FP_RE.findall("FP#220 and proposal 203") == ["220", "203"]
+    assert registry.FP_RE is registry._FP_RE
+
+
+def test_the_document_stems_still_read_the_same(reg):
+    """The pattern runs over doc ids and conductor tags as well as questions
+    (`chainlit_app._fp_of`, `registry._row_v2`). A stem's own 'proposal' words
+    are never followed by digits, so the prose arm cannot claim one — the FP
+    the stem really names still wins."""
+    for stem, fp in [
+            ("04_gcf-b42-02-add14-funding-proposal-package-fp272_0", "272"),
+            ("72_GCF_B.35_02_Add.05_Funding_proposal_package_for_FP203", "203"),
+            ("02_gcf-b42-02-add16-funding-proposal-package-fp274", "274"),
+            ("02_fp214", "214")]:
+        assert registry.FP_RE.search(stem).group(1) == fp
+        assert registry.FP_RE.findall(stem)[0] == fp
+
+
+def test_the_new_forms_reach_the_registry_note_and_the_resolver(reg):
+    for form in ["FP#274", "FP.274", "FP no. 274", "funding proposal number 274",
+                 "proposition 274"]:
+        q = f"Tell me about {form}."
+        assert [r["fp"] for r in reg.resolve_fps(q)[0]] == [274], form
+        assert "BRACE" in reg.registry_note(q), form
+
+
+def test_an_unknown_number_in_the_new_forms_is_still_reported_missing(reg):
+    """The point of binding a form is the SIGNAL, not the hit: 'proposal 999'
+    now produces the NOT FOUND note instead of silently degrading to open
+    retrieval."""
+    note = reg.registry_note("What does funding proposal number 999 finance?")
+    assert "FP999: NOT FOUND" in note
+    assert reg.resolve_fps("What does funding proposal number 999 finance?")[1] \
+        == [999]
+
+
+def test_the_widening_changes_no_gold_question():
+    """The fence: over all 89 recorded cases the widened pattern binds EXACTLY
+    what the pre-H10 pattern bound, so no gold turn can gain (or lose) a
+    registry note through this change."""
+    import json
+    import re as _re
+    from pathlib import Path
+    before = _re.compile(r"fp[\s\-]?0*(\d{1,3})(?!\d)", _re.I)
+    gold = Path(__file__).resolve().parents[1] / "scripts" / "answer_gold.jsonl"
+    for ln in gold.read_text().splitlines():
+        if not ln.strip():
+            continue
+        case = json.loads(ln)
+        # the two 2026-08-26 wave cases exist to exercise the widened forms
+        if case["id"] in ("noisy-hash-fp246", "noisy-proposal-number-fp234"):
+            continue
+        q = case["question"].lower()
+        assert sorted(set(before.findall(q))) == \
+            sorted(set(registry.FP_RE.findall(q))), case["id"]
+
+
+def test_the_consumer_that_keeps_its_own_pattern():
+    """The sweep, as a test — and the half of H10 this file cannot close.
+
+    `retrieve.identifier_tokens` does not read registry.FP_RE: it matches
+    'fp\\d{2,3}' against LEXICAL TOKENS, so it routes the forms whose
+    punctuation the tokenizer glues back together ('FP#220', 'FP.220') and
+    misses every form that puts a space or a word between 'FP' and the number.
+    So under this change 'FP no. 220' and 'proposal 220' get the registry note,
+    the guard and the doc resolution, but no per-document BM25 head. Recorded
+    rather than fixed: retrieve.py is not this pass's file.
+    """
+    from gcf_qna.rag import retrieve
+    assert retrieve.identifier_tokens("What is FP220 about?") == ["fp220"]
+    assert retrieve.identifier_tokens("What is FP#220 about?") == ["fp220"]
+    assert retrieve.identifier_tokens("What is FP.220 about?") == ["fp220"]
+    for missed in ["What is FP no. 220 about?", "Tell me about proposal 220.",
+                   "funding proposal number 220", "proposition 220"]:
+        assert retrieve.identifier_tokens(missed) == [], missed
+        assert registry.FP_RE.findall(missed) == ["220"], missed

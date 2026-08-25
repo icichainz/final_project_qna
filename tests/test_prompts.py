@@ -118,9 +118,21 @@ def test_the_bracket_format_is_language_independent():
 
 
 def test_the_rules_name_the_header_format_the_model_actually_reads():
-    """`chainlit_app._doc_label` prints '[doc_id, p. N — B.x, year]'. A rule
-    that names a format the model never sees is a rule it cannot follow."""
-    assert "[doc_id, p. N — B.x, year]" in CORE
+    """A rule that names a format the model never sees is a rule it cannot
+    follow — so the shape is checked against what `_doc_label` really emits,
+    not just against a string retyped in both places.
+
+    The FP number joined that header for `disc-subnational-pair` (0.60 x 6
+    releases): the two proposals' numbers were in no excerpt and no note, so
+    an answer naming them was a guess. Putting an identifier in the header is
+    also an invitation to CITE it, which would break every citation check in
+    the stack — hence the second half of the rule.
+    """
+    from gcf_qna.app.chainlit_app import _doc_label
+    assert "[doc_id, p. N — FP<n>, B.x, year]" in CORE
+    assert _doc_label("124_gcf-b27-02-add11", 84) == \
+        "124_gcf-b27-02-add11, p. 84 — FP151, B.27, 2020"
+    assert "name a proposal by its FP<n>, cite it by" in CORE
 
 
 # --- triggered blocks stay triggered ----------------------------------------

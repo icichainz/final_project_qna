@@ -25,12 +25,25 @@ When registry_v2.json is absent or unreadable — or simply predates either
 addition — the note falls back, field by field, to the exact v1 string it
 always printed.
 
-Two lookups run in the OTHER direction: ``by_country`` and ``by_entity``, the
-inverse index H1/H2 of docs/l1-l2-coverage-review.md found missing, each with
-a ``registry_note`` trigger that fires only on a question asking for a SET of
-proposals. The entity side normalises at lookup time — 126 stored spellings,
-69 organisations — and never edits data/: the rows come back exactly as the
-documents print them.
+Three lookups run in the OTHER direction: ``by_country``, ``by_entity`` and
+``by_board``, the inverse index H1/H2/H16 of docs/l1-l2-coverage-review.md
+found missing, each with a ``registry_note`` trigger that fires only on a
+question asking for a SET of proposals. The entity side normalises at lookup
+time — 126 stored spellings, 70 organisations, three of the clusters ruled on
+by the corpus owner — and never edits data/: the rows come back exactly as the
+documents print them. The board side is the one the review calls an
+ASYMMETRY rather than a gap: an out-of-range meeting was answered definitively
+by the app while an in-range one, whose documents this registry holds, was
+answered not at all.
+
+``_extrema_note`` is the only note here that COMPUTES over the corpus rather
+than listing it (H3/H3b): the smallest or largest figure of one money field,
+ranked over schema 2's normalised values, refusing every figure whose currency
+the document does not state — 'do not assume it is USD' is ``planner``'s own
+comparability law — counting what it excluded and naming the excluded figures
+that fall beyond its answer. It is also the only note here that prints a page
+and a document stem, because an extremum is ONE figure in ONE document and
+that is the shape the note-page readers can credit.
 
 Every list any of these notes prints carries its true length, and a list cut
 by a cap says it was cut (``_list_bit``, ``_listing``, ``_conflict_lines``).
@@ -142,6 +155,26 @@ def by_fp(n: int) -> Optional[dict]:
 
 def by_year(y: int) -> List[dict]:
     return sorted(({"doc_id": k, **v} for k, v in load().items() if v.get("year") == y),
+                  key=lambda r: (r.get("fp") or 0, r["doc_id"]))
+
+
+def by_board(n: int) -> List[dict]:
+    """Every registry row whose document belongs to board meeting B.``n``.
+
+    by_year's twin — the board is on every row — and the lookup H16 of
+    docs/l1-l2-coverage-review.md calls an ASYMMETRY rather than a gap:
+    'Which funding proposals were approved at B.44?' already gets a definitive
+    answer, because 44 is outside the corpus and
+    ``chainlit_app._board_range_note`` says so in as many words, while the same
+    question about B.35 — seven documents this registry holds — got nothing at
+    all. The out-of-range arm is left exactly where it is; this is the arm that
+    was missing.
+
+    The isinstance guard is ``_collect``'s: an error row holds no 'board', and
+    a row can be null outright.
+    """
+    return sorted(({"doc_id": k, **v} for k, v in load().items()
+                   if isinstance(v, dict) and v.get("board") == n),
                   key=lambda r: (r.get("fp") or 0, r["doc_id"]))
 
 
@@ -327,6 +360,26 @@ def _fig(c: dict) -> str:
     return f"{c['raw']} {_where(c)}"
 
 
+def _amount(c: dict) -> str:
+    """The source text of a figure, with the currency schema 2 recorded for it
+    when the text itself carries none ('22,953' -> '22,953 USD').
+
+    Only the extrema lines use this. Everywhere else a figure is quoted beside
+    the field it answers, and the field says what the money is; a figure quoted
+    inside a RANKING has to carry the currency it was ranked under, or the one
+    line that must never be read as unit-free is exactly the one that is. The
+    currency is schema 2's record, not a re-reading of the page — and a
+    candidate whose currency schema 2 did NOT record prints bare, which is the
+    ``NOT RANKED`` line's whole point.
+    """
+    raw = str(c.get("raw") or "")
+    cur = c.get("currency")
+    if (not cur or cur.casefold() in _fold(raw)
+            or any(sym in raw for sym in "$\u20ac\u00a3")):
+        return raw
+    return f"{raw} {cur}"
+
+
 def _conflict_lines(r: dict) -> List[str]:
     """One warning line per money field the document contradicts itself on.
 
@@ -442,7 +495,38 @@ def _board_code_text(b_: str, item_: str, add_: str) -> str:
 # resolves to FP8 — a different proposal. The trailing (?!\d) stops 'fp2023' (a
 # year) from being read as FP202; \b would also reject the real doc stems that
 # end '...-fp272_0', since '2' and '_' are both word characters.
-_FP_RE = re.compile(r"fp[\s\-]?0*(\d{1,3})(?!\d)", re.I)
+#
+# H10 of docs/l1-l2-coverage-review.md measured what the strict shape misses:
+# 'FP#220', 'FP.220', 'FP no. 220', 'proposal 220' and 'funding proposal number
+# 220' all resolved to NOTHING, and a miss here is silent — no registry note,
+# no identifier routing, no guard, just open retrieval with no signal that an
+# identifier was lost. Two arms are added, and the boundaries they keep are the
+# point of the pattern, not decoration:
+#
+#   * the FP arm accepts the punctuation and the number word ('#', '.', 'no.',
+#     'n°', 'number') between 'FP' and the digits;
+#   * the PROSE arm accepts a SINGULAR 'proposal'/'proposition' (with an
+#     optional 'funding') and needs either a number word or TWO digits.
+#
+# Both refusals are deliberate. **Singular only**: 'proposals 220 and 203'
+# would bind 220 and lose 203, and a lone id is worse than none — chainlit's
+# _prescope_single_fp hard-scopes retrieval to it and starves the partner
+# document ('FPs 12 and 74' binds nothing today for the same reason).
+# **Two digits without a number word**: 'proposal 2' is an enumeration far more
+# often than an id, and FP1-FP9 are still reachable as 'FP2' or 'proposal no.
+# 2'. The (?!\d) tail keeps 'proposal 2020' (a year) out, and no arm has a head
+# for a bare '220' or for 'Add.220', so '220 countries' binds nothing.
+#
+# ONE capturing group, in a shared prefix rather than per-arm: every consumer
+# reads `findall` as a list of numbers (registry_note, resolve_fps,
+# chainlit_app's four call sites, planner.detect, eval_answers' _FP_TOKEN_RE),
+# and a second group would hand all of them tuples.
+_FP_RE = re.compile(
+    r"(?:"
+    r"fp[\s\-.#]{0,2}(?:n[o\u00b0\u00ba]s?\.?|num(?:ber|ero|\u00e9ro)?\.?)?[\s.#]{0,2}"
+    r"|(?:funding[\s\-]?)?(?:proposal|proposition)[\s\-]?"
+    r"(?:(?:n[o\u00b0\u00ba]s?\.?|num(?:ber|ero|\u00e9ro)?\.?)[\s.#]{0,2}|#\s?|(?=\d\d))"
+    r")0*(\d{1,3})(?!\d)", re.I)
 # public alias: the app imports this so the FP pattern has ONE definition
 FP_RE = _FP_RE
 BOARD_CODE_RE = _BOARD_CODE_RE
@@ -748,10 +832,47 @@ def _build_country_index(docs: Dict[str, dict]) -> _Index:
 
 #: Organisational tails that do not make a different organisation OF A NAME
 #: THE CORPUS ALREADY RECORDS: 'World Bank Group' is merged into 'World Bank'
-#: and 'Acumen Fund' into 'Acumen' only because the shorter name is itself a
-#: stored value. A tail whose remainder is not a stored value is left alone,
-#: so 'World Wildlife Fund' never becomes 'World Wildlife'.
+#: only because the shorter name is itself a stored value. A tail whose
+#: remainder is not a stored value is left alone, so 'World Wildlife Fund'
+#: never becomes 'World Wildlife'.
 _ORG_TAIL = frozenset("group fund foundation".split())
+
+# ---------------------------------------------------------------------------
+# owner rulings on three clusters (decided 2026-08-26, recorded here)
+# ---------------------------------------------------------------------------
+# The tail rule above is a GUESS about the world made from two strings, and
+# entity_clusters() exists so a human can read those guesses back. Three were
+# put to the corpus owner, who ruled:
+#
+#   (a) 'World Bank Group' = 'The World Bank' — MERGED, ruling upheld. The
+#       corpus records 'The World Bank' (8), 'World Bank' (3) and 'World Bank
+#       Group' (1) plus one parenthetical gloss; one organisation, 13
+#       documents, and probe P10 asked for 'Banque mondiale' and was answered
+#       out of 13. Pinned by test_the_world_bank_group_stays_merged.
+#
+#   (b) 'Ministry of Environment' / 'Ministry of Environment (MOE)' — MERGED,
+#       ruling upheld. Three documents, two spellings of one national body;
+#       the merge is _norm_key's parenthetical rule, not the tail rule.
+#       (The ruling covers THESE spellings only: 'Ministry of Environment and
+#       Sustainable Development, Cali, Colombia' is a different string and a
+#       different key, and stays where it is.) Pinned by
+#       test_ministry_of_environment_stays_merged.
+#
+#   (c) 'Acumen' vs 'Acumen Fund' — SPLIT, merge DECLINED. The tail rule had
+#       pulled the single 'Acumen' row into the six-document 'Acumen Fund'
+#       family; the owner ruled they are distinct canonical entities, so the
+#       alias index must keep them apart. Pinned by
+#       test_acumen_and_acumen_fund_stay_split.
+#
+# A declined merge is data the clustering cannot derive, so it is written down
+# rather than inferred — the same shape as the non-merge the corpus produces on
+# its own for 'Inter-American Investment Corporation (IDB Invest)', which stays
+# distinct from 'Inter-American Development Bank (IDB)' because 'IDB Invest' is
+# two tokens and _is_acronym refuses it. That one is a happy accident of the
+# rules; this one is a decision, and it is enforced explicitly.
+#:
+#: (head key, full key) pairs ``_ORG_TAIL`` must NOT merge, by owner ruling.
+_OWNER_KEEP_DISTINCT = frozenset({("acumen", "acumen fund")})
 
 
 def _build_entity_index(docs: Dict[str, dict]) -> _Index:
@@ -777,7 +898,8 @@ def _build_entity_index(docs: Dict[str, dict]) -> _Index:
                 if gloss and gloss != key and gloss in by_value:
                     g.union(gloss, key)
         head = " ".join(key.split()[:-1])
-        if key.split()[-1:] and key.split()[-1] in _ORG_TAIL and head in by_value:
+        if (key.split()[-1:] and key.split()[-1] in _ORG_TAIL and head in by_value
+                and (head, key) not in _OWNER_KEEP_DISTINCT):
             g.union(head, key)
     keys = {k: k for k in by_value}
     for acr, key in first_of.items():
@@ -918,12 +1040,17 @@ def _detect(index: _Index, question: str) -> Optional[str]:
     return None
 
 
-def _inverse_note(rows: List[dict], lead: str, scope: str = "") -> Optional[str]:
+def _inverse_note(rows: List[dict], lead: str, scope: str = "",
+                  tail: str = "") -> Optional[str]:
     """One authoritative listing line for an inverse lookup, or None.
 
     The year listing's shape, above: the count first, FP ids and shortened
     titles after, no document stems and no page pointers — so
     ``_note_pages``/``note_page_scopes`` publish nothing uncreditable from it.
+
+    ``tail`` is a sentence the listing itself needs and the count cannot say
+    (the board listing uses it to state that the registry records no approval
+    DECISION); it carries no pointer, for the reason above.
 
     Whether the listing is COMPLETE is stated either way. That is the half
     probe P2 was missing — it named 6 of Kenya's 25 and never said the list
@@ -941,7 +1068,7 @@ def _inverse_note(rows: List[dict], lead: str, scope: str = "") -> Optional[str]
     state = (f"{_MAX_INVERSE_ROWS} of {n} listed — LIST TRUNCATED, but the "
              f"count {n} is complete" if more else
              f"complete listing over the {len(load())} corpus documents{scope}")
-    return f"Registry — {n} {lead} ({state}): {listing}{more}"
+    return f"Registry — {n} {lead} ({state}): {listing}{more}{tail}"
 
 
 def _country_note(question: str) -> Optional[str]:
@@ -995,6 +1122,370 @@ def _entity_note(question: str) -> Optional[str]:
                          f"{idx.display[root]} as the accredited entity", scope)
 
 
+
+# ---------------------------------------------------------------------------
+# the board inverse (H16): the asymmetry, not the gap
+# ---------------------------------------------------------------------------
+# 'Which funding proposals were approved at B.44?' is answered definitively
+# today — 44 is outside the corpus and chainlit_app._board_range_note says so —
+# while the same question about B.35, seven documents this registry holds,
+# received nothing at all. §4.3 counts that pair among the THREE false-
+# authority misfires in the review, because the system is most confident
+# exactly where it knows least.
+#
+# Out of range stays where it is. _board_range_note owns B.1-B.10 and B.44+,
+# including the template-heading ambiguity it was rewritten around (H5/P6), and
+# nothing here duplicates it: this note fires only for a board IN
+# BOARD_YEARS, which is the one case that regex deliberately skips.
+
+#: A board written in prose: 'at B.35', 'board B.35', 'B35'. Two digits, so a
+#: template heading ('section B.3', 'B.2(a)') can never reach this pattern at
+#: all — the corpus boards are B.11-B.43 and the proposal template numbers its
+#: own headings B.1-B.10. Named apart from ``chainlit_app._BOARD_TOKEN_RE`` on
+#: purpose: that one is deliberately WIDER (\d{1,2} plus a paragraph-letter
+#: group) because it has to judge the ambiguous low numbers this one never
+#: sees, and two patterns with one name would read as one pattern.
+_PROSE_BOARD_RE = re.compile(r"\bb\.?\s?(\d{2})\b", re.I)
+
+#: 'What was approved at B.35?' — the bare form, with no set noun in it.
+#:
+#: JUDGEMENT CALL, and the answer is YES, this is a set ask. A board approves a
+#: BATCH of funding proposals, so 'what was approved' names a set the way
+#: 'list EVERY proposal' does: _SET_NOUN already accepts a singular noun that a
+#: quantifier makes plural, and here the verb carries the quantifier instead of
+#: a word. The decisive argument is the asymmetry itself — the out-of-range arm
+#: answers THIS EXACT PHRASING definitively ('What was approved at B.44?' ->
+#: 'B.44 is not in this corpus ... State this definitively'), so refusing it in
+#: range would leave H16's misfire standing in the very wording that produced
+#: it. The risk is bounded three ways: the question must also name an in-range
+#: board, the note is a COMPLETE counted listing rather than a sample, and the
+#: note says outright that the registry records no approval decision. Both
+#: readings are pinned in the suite (test_a_bare_what_was_approved_is_a_set_ask
+#: and its NEGATIVE twin, which fixes what must NOT fire alongside it).
+_APPROVAL_ASK_RE = re.compile(
+    r"\b(?:what|which)\b[^?!.]{0,40}?\b(?:was|were)\s+approved\b"
+    r"|\bwhat\s+did\s+the\s+board\s+approve\b"
+    r"|\bqu['\s]?est[-\s]ce\s+qui\s+a\s+ete\s+approuve"
+    r"|\bqu['\s]?a[-\s]t[-\s]il\s+approuve")
+
+
+def _board_years() -> Dict[int, int]:
+    """{board: year}, imported at CALL time like ``resolve_board_code``'s
+    ``board_of`` — the module graph stays registry -> config only."""
+    from gcf_qna.boards import BOARD_YEARS
+    return BOARD_YEARS
+
+
+def _prose_boards(question: str) -> List[int]:
+    """The board numbers a question names OUTSIDE a full board code.
+
+    'GCF/B.35/02/Add.05' names ONE document, which ``registry_note`` already
+    resolves and prints; answering it with the whole of B.35 would be a
+    different question. So a token inside a code span is dropped, and
+    'bc-b35-02-add05' — a gold case — keeps the single-document note it has
+    always had.
+    """
+    spans = [m.span() for m in _BOARD_CODE_RE.finditer(question)]
+    out: List[int] = []
+    for m in _PROSE_BOARD_RE.finditer(question):
+        if not any(lo <= m.start() < hi for lo, hi in spans):
+            out.append(int(m.group(1)))
+    return list(dict.fromkeys(out))
+
+
+def _board_note(question: str) -> List[str]:
+    """The in-range board listings (H16), one line per board, or []."""
+    q = _fold(question)
+    if not (_SET_ASK_RE.search(q) or _APPROVAL_ASK_RE.search(q)):
+        return []
+    years = _board_years()
+    out: List[str] = []
+    for n in _prose_boards(question):
+        if n not in years:
+            continue                    # out of range: _board_range_note owns it
+        note = _inverse_note(
+            by_board(n),
+            f"funding-proposal documents in the corpus are from board meeting "
+            f"B.{n} ({years[n]})",
+            tail=" — the board is read from each document's own identifier; "
+                 "the registry records no approval DECISION, so do not report "
+                 "this listing as what the board approved")
+        if note:
+            out.append(note)
+    return out
+
+
+# ---------------------------------------------------------------------------
+# corpus extrema (H3/H3b, probes P3 and F15): the money question the registry
+# can settle, and the comparison it must refuse
+# ---------------------------------------------------------------------------
+# P3 asked for the smallest GCF funding request in the corpus and was refused —
+# honestly, but the corpus knows. F15 asked the year-scoped form and got a
+# WRONG value out of a note that printed the right one: the model compared
+# '18.5 M USD' against '17,198,843 USD' by mantissa, which is what an
+# unnormalised list of thirty raw strings invites. Schema 2 holds the
+# normalised value, the currency, the unit and the page for every figure it
+# read, so the ranking is a computation, not a judgement — and the refusals
+# around it are computations too:
+#
+#   * only the CANONICAL candidate of a field is ranked (the template cell, not
+#     every print in the document);
+#   * only figures whose currency the document actually states as USD, because
+#     'currency not printed for X - do not assume it is USD/EUR' is the
+#     planner's own comparability law (planner.Comparability), and a note that
+#     assumed it would be the same false authority in a new place;
+#   * a figure whose unit the document's own mantissa contradicts ('28,654
+#     million USD') has no value at all in schema 2 and cannot be ranked;
+#   * every excluded document is COUNTED in the note, and an excluded figure
+#     that falls beyond the answer is NAMED there, with the reason it is not
+#     ranked. That is the F13 discipline applied to a comparison: a ranking
+#     over a subset must say what the subset left out.
+
+#: (field, label, the phrasings that name it). Total financing is tested first:
+#: 'the largest total financing' also contains 'financing'.
+_EXTREMA_FIELDS = (
+    ("total_financing", "total financing", re.compile(
+        r"\btotal\s+(?:financing|finance|cost|budget|project\s+(?:cost|value|"
+        r"size))\b|\bfinancement\s+total\b|\bcout\s+total\b")),
+    ("gcf_funding_requested", "GCF funding requested", re.compile(
+        r"\bgcf\s+(?:funding|financing|grant|contribution|request\w*)\b"
+        r"|\bfunding\s+request(?:ed|s)?\b|\brequests?\b|\brequested\b"
+        r"|\bamount\s+(?:of\s+)?(?:gcf\s+)?(?:funding|financing)\b"
+        r"|\bdemande\w*\s+de\s+financement\b"
+        r"|\bfinancement\s+(?:du|de\s+la)\s+gcf\b"
+        r"|\bmontant\s+(?:demande|du\s+financement|de\s+la\s+demande)\b")),
+)
+#: 'at least' is not a superlative, and it is the commonest 'least' in English.
+_MIN_ASK_RE = re.compile(
+    r"\b(?:smallest|lowest|minimum|min|cheapest)\b|(?<!at\s)\bleast\b"
+    r"|\bplus\s+(?:petite?s?|faibles?|basse?s?)\b|\bmoindre\b")
+_MAX_ASK_RE = re.compile(
+    r"\b(?:largest|biggest|highest|greatest|maximum|max|most)\b"
+    r"|\bplus\s+(?:grande?s?|eleve\w*|important\w*|haute?s?)\b")
+#: The licence for a corpus-wide answer: the question has to ASK for one. Same
+#: discipline as _SET_ASK_RE and as chainlit_app._CORPUS_TOKEN_RE, and the
+#: reason 'which proposal requested the most?' — which could as easily mean
+#: 'of the two above' — gets no authoritative ranking from here.
+_CORPUS_SCOPE_RE = re.compile(
+    r"\bcorpus\b|\bcollection\b|\bdataset\b|\bbase\s+documentaire\b"
+    r"|\bever\b|\bof\s+all\b|\boverall\b|\bacross\s+all\b"
+    r"|\ball\s+(?:the\s+)?(?:proposals|projects|documents)\b"
+    r"|\bjamais\b|\bde\s+tous\b|\bde\s+toutes\b|\btout\s+le\s+corpus\b")
+#: A superlative whose SUBJECT is not a proposal. 'Which country received the
+#: most GCF funding in the corpus?' is a SUM across documents, and summing is
+#: the failure F11 measured (totals 21-35x too high) and the one operation
+#: `planner` refuses outright ("there is deliberately no 'calculated'
+#: status"). The largest figure any single document states is not an answer to
+#: it — it is P10's category error with a number attached — so the note stays
+#: out and CORE's refusal stands.
+_OTHER_SUBJECT_RE = re.compile(
+    r"\b(?:countr(?:y|ies)|entit(?:y|ies|e|es)|organi[sz]ations?|agenc(?:y|ies)|"
+    r"regions?|sectors?|themes?|years?|boards?|pays|annees?|secteurs?)\b")
+_MIN, _MAX = "smallest", "largest"
+#: Excluded figures NAMED beside the answer (each on its own line, so no line
+#: ever pairs one document's stem with another document's page).
+_MAX_NAMED_EXCLUSIONS = 2
+
+
+def _asked_year(q: str) -> Optional[int]:
+    """The one corpus year a question names, or None (two years are a range,
+    and a range is _scan_years' question, not this one)."""
+    years = {int(y) for y in re.findall(r"\b(20[12]\d)\b", q)}
+    years &= set(_board_years().values())
+    return next(iter(years)) if len(years) == 1 else None
+
+
+def _extrema_ask(question: str):
+    """(field, label, direction, year) for an extremum ask, or None.
+
+    The guards, in order:
+
+      * an FP id or a full board code -> the question names its documents, and
+        a ranking over named documents is ``planner``'s, with its own
+        comparability verdict and its own refusal text. This note never
+        competes with it.
+      * both a min word and a max word, or neither -> not a clean ask.
+      * no money field named -> 'which years have the MOST funding proposals in
+        this corpus?' is a count of documents, not of money (and is a gold
+        case, `agg-year-most`).
+      * a subject that is not a proposal -> 'which COUNTRY received the most
+        GCF funding?' asks for a sum this corpus never computes.
+      * no corpus word -> a YEAR-scoped superlative only fires for the MINIMUM.
+        The reason is measured, not stylistic: the max arm of that shape is
+        `agg-2020-largest`, which chainlit's _year_assist already answers at
+        1.00 in every recorded run, and covering a passing case with a second
+        authoritative note buys nothing and risks it. The min arm is F15, which
+        is measured WRONG — the ranking is where the model actually fails,
+        because a maximum can be eyeballed out of raw strings and a minimum
+        cannot ('18.5 M USD' looks bigger than '17,198,843 USD'). A year-scoped
+        MAXIMUM is available here the moment the question says 'in the corpus'.
+    """
+    q = _fold(question)
+    if _FP_RE.search(question) or _BOARD_CODE_RE.search(question):
+        return None
+    lo, hi = bool(_MIN_ASK_RE.search(q)), bool(_MAX_ASK_RE.search(q))
+    if lo == hi or _OTHER_SUBJECT_RE.search(q):
+        return None
+    hit = next(((f, label) for f, label, rx in _EXTREMA_FIELDS if rx.search(q)),
+               None)
+    if hit is None:
+        return None
+    year = _asked_year(q)
+    if not _CORPUS_SCOPE_RE.search(q) and (year is None or not lo):
+        return None
+    return (*hit, _MIN if lo else _MAX, year)
+
+
+def _money_figures(field: str, year: Optional[int]):
+    """([the USD figures a ranking may use], {reason: [excluded item, ...]}).
+
+    An item is {doc_id, fp, title, cand, why}: ``cand`` is the canonical schema
+    2 candidate (``_canon2``, so it carries a source string and an integer
+    page) and ``why`` is the sentence the note prints if that figure has to be
+    named beside the answer.
+    """
+    ranked: List[dict] = []
+    excluded: Dict[str, List[dict]] = {}
+    for doc_id, row in load().items():
+        if not isinstance(row, dict) or not row.get("fp"):
+            continue
+        if year is not None and row.get("year") != year:
+            continue
+        c = _canon2(_v2_facts(doc_id), field)
+        item = {"doc_id": doc_id, "fp": row["fp"], "title": row.get("title"),
+                "cand": c, "why": ""}
+        if c is None:
+            reason = "state no figure this registry could read for the field"
+        elif c.get("value") is None:
+            reason = ("print a figure whose unit the document's own mantissa "
+                      "contradicts")
+            item["why"] = "the unit as printed is ambiguous, so it has no value"
+        elif not c.get("currency"):
+            reason = "print no currency at all"
+            item["why"] = ("the document states NO currency for this figure — "
+                           "do not assume USD")
+        elif c["currency"] != "USD":
+            reason = f"state {c['currency']}"
+            item["why"] = (f"the figure is stated in {c['currency']}, and this "
+                           f"corpus carries no conversion rule")
+        else:
+            ranked.append(item)
+            continue
+        excluded.setdefault(reason, []).append(item)
+    ranked.sort(key=lambda i: (i["cand"]["value"], i["fp"]))
+    return ranked, excluded
+
+
+def _beyond(excluded: Dict[str, List[dict]], direction: str, edge: float):
+    """Excluded figures that fall past the answer, most extreme first.
+
+    The ones that would have CHANGED the answer if the corpus had printed a
+    currency for them. Naming them is not a cross-currency ranking: no
+    conversion is claimed, the nominal relation is stated as nominal, and each
+    line says why the figure is not comparable. The whole list is returned; the
+    caller names the most extreme few and says how many there were, because a
+    cut list that does not say it was cut is F13 all over again.
+    """
+    out = [i for v in excluded.values() for i in v
+           if i["cand"] and i["cand"].get("value") is not None
+           and ((i["cand"]["value"] < edge) if direction == _MIN
+                else (i["cand"]["value"] > edge))]
+    out.sort(key=lambda i: (i["cand"]["value"], i["fp"]),
+             reverse=direction == _MAX)
+    return out
+
+
+def _extrema_note(question: str) -> List[str]:
+    """The corpus/year extremum lines (H3/H3b), or [].
+
+    The sentences avoid ever putting a FIELD LABEL at the head of a segment:
+    ``verify._field_lines`` reads the value of a field as the first amount
+    after its label when the label heads a ';'- or '. '-separated segment, and
+    an instruction that ended '...the smallest GCF funding requested in the
+    corpus.' put one there. It carried no amount and so could not manufacture a
+    conflict, but a note line is read by three parsers and none of them should
+    have to be lucky.
+
+    These lines DO carry provenance — '(p.10, B.2(b)) [240_gcf-b15-13-add08]' —
+    unlike every listing note in this module, and the choice is deliberate: a
+    listing has no one page to point at, an extremum names exactly ONE figure
+    in exactly ONE document, and that is the shape ``_note_pages`` and
+    ``verify.note_page_scopes`` turn into a citable scope. So the model is told
+    a page it may cite and the checker holds the same page. Each such line
+    names ONE document, because those readers pair every page on a line with
+    every stem on it.
+    """
+    ask = _extrema_ask(question)
+    if ask is None:
+        return []
+    field, label, direction, year = ask
+    ranked, excluded = _money_figures(field, year)
+    total = len(ranked) + sum(len(v) for v in excluded.values())
+    if not total:
+        return []
+    scope = f"the {year} funding proposals" if year else "the corpus"
+    if not ranked:
+        return [f"Registry — no document in {scope} states a {label} figure in "
+                f"USD that this registry could read ({total} checked), so the "
+                f"registry supports NO {direction}-figure answer here. Say so; "
+                f"do not rank the figures the documents state in other "
+                f"currencies against one another."]
+    edge = (ranked[0] if direction == _MIN else ranked[-1])["cand"]["value"]
+    tied = [i for i in ranked if i["cand"]["value"] == edge]
+    best = tied[0]
+    c = best["cand"]
+    tie = ("" if len(tied) == 1 else
+           " (TIED at this figure with "
+           + ", ".join(f"FP{i['fp']}" for i in tied[1:]) + ")")
+    # A canonical read from a 'rule:' section is a figure the builder found on
+    # the page WITHOUT the template heading above it — the weaker provenance of
+    # the two, and the corpus minimum for GCF funding requested is one of them
+    # (22,953 on a p.10 financing table). Saying so is the difference between a
+    # citable figure and a manufactured superlative.
+    caution = ("" if not str(c.get("section") or "").startswith("rule:") else
+               f" CAUTION: this figure was read from p.{c['page']} without a "
+               f"labelled template heading above it (the section is inferred), "
+               f"so check the page before repeating it as the {direction} "
+               f"figure in {scope}.")
+    lines = [f"Registry — {direction.upper()} {label} in {scope}: FP{best['fp']} "
+             f'"{_clip(best.get("title"))}" — {_amount(c)} {_where(c)} '
+             f"[{best['doc_id']}]{tie}. Ranked over the {len(ranked)} of {total} "
+             f"documents in {scope} whose registry figure is an unambiguous USD "
+             f"amount.{caution}"]
+    beyond = _beyond(excluded, direction, edge)
+    named = beyond[:_MAX_NAMED_EXCLUSIONS]
+    word = "smaller" if direction == _MIN else "larger"
+    if not beyond:
+        reach = (f" None of the excluded figures is nominally {word} than the "
+                 f"ranked answer.")
+    elif len(beyond) == len(named):
+        reach = (f" {len(beyond)} of the excluded figures "
+                 f"{'is' if len(beyond) == 1 else 'are'} nominally {word} than "
+                 f"the ranked answer, named below.")
+    else:
+        reach = (f" {len(beyond)} of the excluded figures are nominally {word} "
+                 f"than the ranked answer; the {len(named)} most extreme are "
+                 f"named below — LIST TRUNCATED.")
+    if excluded:
+        parts = "; ".join(
+            f"{len(v)} {reason}" for reason, v in
+            sorted(excluded.items(), key=lambda kv: (-len(kv[1]), kv[0])))
+        lines.append(
+            f"Registry — excluded from that comparison: {total - len(ranked)} "
+            f"of {total} documents in {scope} — {parts}. Figures in different "
+            f"currencies are never ranked against one another, and a figure "
+            f"printed without a currency is not assumed to be USD.{reach}")
+    for i in named:
+        d = i["cand"]
+        lines.append(
+            f"Registry — NOT RANKED, though nominally "
+            f"{'smaller' if direction == _MIN else 'larger'} than the figure "
+            f"above: FP{i['fp']} prints {_amount(d)} {_where(d)} "
+            f"[{i['doc_id']}] — {i['why']}. Report it only with that caveat, "
+            f"and never as the {direction} figure in {scope}.")
+    return lines
+
+
 def registry_note(question: str) -> Optional[str]:
     """Computed corpus-metadata note for the answer model, or None."""
     if not load():
@@ -1041,4 +1532,9 @@ def registry_note(question: str) -> Optional[str]:
     for inverse in (_country_note(question), _entity_note(question)):
         if inverse:
             notes.append(inverse)
+    # The board listing (H16) is one of those, on the same page-less terms.
+    notes += _board_note(question)
+    # The extrema lines are NOT: an extremum is one figure in one document, so
+    # each of those lines carries the page and the stem the readers can credit.
+    notes += _extrema_note(question)
     return "\n".join(notes) or None

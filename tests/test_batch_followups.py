@@ -7,14 +7,21 @@ C. Citation-bracket parsing (pages belong to the nearest preceding doc id) and
    explicit in-message language requests beating wordlist statistics.
 """
 import hashlib
+import json
+import re
+import sys
+from pathlib import Path
 
 import faiss
 import numpy as np
 import pytest
 
-from gcf_qna.rag import registry
-from gcf_qna.rag.lexical import fp_variants
-from gcf_qna.rag.retrieve import Hit, Retriever, _doc_match
+ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / "scripts"))
+
+from gcf_qna.rag import registry  # noqa: E402
+from gcf_qna.rag.lexical import fp_variants  # noqa: E402
+from gcf_qna.rag.retrieve import Hit, Retriever, _doc_match  # noqa: E402
 
 
 # --- B: fp zero-padding ----------------------------------------------------
@@ -167,8 +174,11 @@ def test_year_note_money_is_the_v2_canonical_print(year_money):
     assert "FP151 (18,500,000 USD GCF)" in note      # v2 print, not v1's text
     assert "18.5 M USD" not in note
     assert "FP150 (256.48 million USD GCF)" in note  # v2 fills a v1 gap
-    # printed as printed: no float reformat, no computed number anywhere
+    # printed as printed: the per-proposal figure is never a reformatted float
+    # (the note's one computed number is the 'Computed total' sentence below,
+    # which is labelled as computed and never quotes a proposal's figure)
     assert "18500000" not in note and "1.85e" not in note
+    assert "FP151 (18,500,000.00" not in note
 
 
 def test_a_print_v2_could_not_parse_is_quoted_and_flagged(year_money):
@@ -227,6 +237,353 @@ def test_the_no_sum_rule_publishes_no_page_and_no_document():
     assert verify.note_page_scopes(app._NO_SUM_RULE) == []
     assert not re.search(r"[\[(][0-9]{1,3}_", app._NO_SUM_RULE)
     assert not re.search(r"\(p\.\d", app._NO_SUM_RULE)
+
+
+# --- A2b: the one total the note is allowed to state (P4/F11) --------------
+#
+# The A2 refusal above is right about the printed strings and wrong about the
+# question. P4 asked which of 2020 and 2021 requested more GCF funding and got
+# the direction BACKWARDS; F11 asked for the sums and got 21x/35x. Neither
+# failure is fixable by refusing harder: the direction exists, the corpus knows
+# it, and registry v2 holds a normalised float for every print it could parse.
+# So the note computes the total itself — same currency, unambiguous prints
+# only, everything left out named — and _NO_SUM_RULE licenses THAT figure while
+# still forbidding the model's own arithmetic.
+
+#: P4's shape: two years, one comparison, no arithmetic the model may do.
+P4_QUESTION = "Which year received more GCF funding in total, 2020 or 2021?"
+
+
+def _independent_usd_total(year: int):
+    """(total, n) re-summed here from the SAME public accessor the note uses.
+
+    Deliberately a second implementation rather than a call into the app's:
+    a test that imports the summer it is checking proves the note prints what
+    _usd_total returned, not that either of them is the corpus's total.
+    """
+    total, n = 0.0, 0
+    for row in registry.by_year(year):
+        if not row.get("fp"):
+            continue
+        cand = registry.canonical(row["doc_id"], "gcf_funding_requested")
+        if (cand and cand.get("value") is not None
+                and (cand.get("currency") or "").upper() == "USD"):
+            total += float(cand["value"])
+            n += 1
+    return total, n
+
+
+def _year_rows(year: int):
+    return [r for r in registry.by_year(year) if r.get("fp")]
+
+
+def test_the_year_note_computes_a_same_currency_total(year_money):
+    """Computed from the v2 FLOATS: 18,500,000 + 256,480,000. FP153's
+    '28,654 million USD' — the whole of the 21x error — is excluded and said
+    to be excluded, not silently dropped."""
+    from gcf_qna.app.chainlit_app import _year_assist
+    _, note = _year_assist("Which proposals were approved in 2020?", [])
+    assert "Computed total for 2020" in note
+    assert "2 of the 3 proposals state their GCF request as an unambiguous " \
+           "USD figure, and those 2 total USD 274,980,000" in note
+    assert "excluded from this total: FP153 (unit as printed is ambiguous)" in note
+    # 28,654 million USD would have added ~28.65bn had the strings been parsed
+    assert "28,654,000,000" not in note and "28,928,980,000" not in note
+
+
+def test_a_year_with_nothing_summable_gets_no_total_at_all(fake_registry):
+    """The fixture's v2 is empty, so every figure is a v1 string: no float,
+    no total. Silence beats a total over two rows and a shrug."""
+    from gcf_qna.app.chainlit_app import _year_assist
+    _, note = _year_assist("Which proposals were approved in 2020?", [])
+    assert "Computed total for" not in note
+    assert "FP151 (18.5 M USD GCF)" in note          # the listing is untouched
+
+
+def test_p4s_question_now_carries_its_own_answer():
+    """P4 answered '2020'. The truth is 2021, by roughly 2x — and after this
+    change the note states both totals, so the direction is READ, not guessed.
+
+    The two figures are re-derived here from registry.canonical()['value'],
+    never from the printed strings the note also carries.
+    """
+    from gcf_qna.app.chainlit_app import _year_assist, _usd_amount
+    _, note = _year_assist(P4_QUESTION, [])
+    totals = {}
+    for year in (2020, 2021):
+        total, n = _independent_usd_total(year)
+        rows = _year_rows(year)
+        assert (f"Computed total for {year} (computed by the system from the "
+                f"registry's normalised values, NOT by adding the strings "
+                f"above): {n} of the {len(rows)} proposals state their GCF "
+                f"request as an unambiguous USD figure, and those {n} total "
+                f"{_usd_amount(total)}") in note, year
+        totals[year] = total
+    # the direction P4 inverted, now derivable from the note alone
+    assert totals[2021] > totals[2020]
+    assert totals[2021] / totals[2020] > 2
+    # and the figures themselves, pinned against the checksummed registry
+    assert "those 19 total USD 1,157,208,843.80" in note
+    assert "those 25 total USD 2,395,398,247.26" in note
+
+
+@pytest.mark.parametrize("year", [2020, 2021])
+def test_the_exclusion_list_is_part_of_the_total(year):
+    """A total whose coverage is invisible is §7.1's truncated country list
+    again ('five', meaning five of 44). Every proposal the sum could not take
+    is named with the reason, or counted when the reason is silence."""
+    from gcf_qna.app.chainlit_app import _year_total_line
+    rows = _year_rows(year)
+    line = _year_total_line(year, rows)
+    clause = line.split("excluded from this total:")[1]
+    silent = 0
+    for row in rows:
+        cand = registry.canonical(row["doc_id"], "gcf_funding_requested")
+        named = bool(re.search(rf"FP{row['fp']}\b", clause))
+        if (cand and cand.get("value") is not None
+                and (cand.get("currency") or "").upper() == "USD"):
+            assert not named, f"FP{row['fp']} is in the total AND excluded"
+        elif not (cand and cand.get("raw")) and not row.get("gcf_financing"):
+            silent += 1                       # counted, not named: it says so
+            assert not named
+        else:
+            assert named, f"FP{row['fp']} left the total unannounced"
+    assert (f"{silent} proposals stating no figure" in clause) or silent == 0
+
+
+def test_the_recorded_exclusion_lists():
+    """The deliverable, spelled out: what the two totals leave behind."""
+    from gcf_qna.app.chainlit_app import _year_total_line
+    line20 = _year_total_line(2020, _year_rows(2020))
+    assert ("excluded from this total: FP132, FP138 (EUR), FP153 (unit as "
+            "printed is ambiguous), FP142, FP150 (figure printed above but "
+            "not normalised), 6 proposals stating no figure — the figures "
+            "listed above for them stand as printed.") in line20
+    line21 = _year_total_line(2021, _year_rows(2021))
+    assert ("excluded from this total: FP176 (EUR), FP162, FP168 (unit as "
+            "printed is ambiguous) — the figures listed above for them "
+            "stand as printed.") in line21
+
+
+def test_the_total_stops_at_two_years(monkeypatch):
+    """_TOTAL_YEARS_MAX: 'A vs B' is the shape this answers. A third year's
+    listing plus a third exclusion list stops being a note and starts being a
+    report — and the per-proposal listing above it is unaffected either way."""
+    from gcf_qna.app.chainlit_app import _year_assist
+    rows, v2 = {}, {}
+    for i, year in enumerate((2020, 2021, 2022)):
+        doc = f"9{i}_gcf-b{25 + i * 3}-02-add01"
+        rows[doc] = {"fp": 200 + i, "year": year, "board": 25 + i * 3}
+        v2[doc] = {"fp": 200 + i, "facts": {"gcf_funding_requested":
+                                            [_cand("1,000,000 USD", 1e6)]}}
+    monkeypatch.setattr(registry, "_cache", rows)
+    monkeypatch.setattr(registry, "_cache_v2", v2)
+    _, two = _year_assist("Which was bigger, 2020 or 2021?", [])
+    assert two.count("Computed total for") == 2
+    _, three = _year_assist("Compare 2020, 2021 or 2022.", [])
+    assert "2022 — 1 proposals: FP202" in three          # listing unaffected
+    assert "Computed total for" not in three
+
+
+def test_the_no_sum_rule_licenses_the_notes_total_in_the_sentence_that_forbids_the_models():
+    """The licence and the prohibition share one sentence ON PURPOSE. A rule
+    that grants the exception here and re-forbids self-summation two sentences
+    later is a rule with a gap in the middle of it, and F11's $29.0B is what
+    falls through that gap."""
+    from gcf_qna.app.chainlit_app import _NO_SUM_RULE
+    licensing = [s for s in _NO_SUM_RULE.split(". ") if "Computed total" in s]
+    assert len(licensing) == 1, "the exception must not be its own paragraph"
+    sentence = licensing[0]
+    assert "quote that total with the coverage and the exclusions it states" \
+        in sentence
+    assert "do NOT add, subtract, extend or convert any figure yourself" \
+        in sentence
+    assert "a total this note does not print is a total the answer does not " \
+           "have" in sentence
+    # …and the original refusal is intact, not softened into the exception
+    assert "MUST NOT be summed, totalled or averaged" in _NO_SUM_RULE
+    assert "refusing the sum" in _NO_SUM_RULE
+
+
+def test_the_computed_total_publishes_no_page_and_no_document():
+    """Mirrors the _NO_SUM_RULE safety test: the note-page readers credit a
+    cited page to a document named on the SAME line, and the year note is one
+    line — a computed sentence that parsed as a doc id or a '(p.N' pointer
+    would hand the model a page it never saw, attached to a number no
+    document prints."""
+    from gcf_qna.app import chainlit_app as app
+    from gcf_qna.rag import verify
+    line = app._year_total_line(2020, _year_rows(2020))
+    assert app._note_pages([line]) == set()
+    assert verify.note_page_scopes(line) == []
+    assert not re.search(r"[\[(][0-9]{1,3}_", line)
+    assert not re.search(r"\(p\.\d", line)
+    # and the whole extended note still publishes nothing either — including
+    # its 'Retrieved excerpts dated …' tail, which is built from _doc_label
+    # and now carries an FP number and a page next to every stem
+    dated = [Hit(text="", doc_id="124_gcf-b27-02-add11", score=1.0, page=84),
+             Hit(text="", doc_id="123_gcf-b27-02-add12", score=1.0, page=76)]
+    _, note = app._year_assist(P4_QUESTION, dated)
+    assert "124_gcf-b27-02-add11, p. 84 — FP151, B.27, 2020" in note
+    assert app._note_pages([note]) == set()
+    assert verify.note_page_scopes(note) == []
+    # the same header inside a citation bracket parses as the stem and the
+    # page it always did — the identifier is not a page and not a document
+    assert [(c.doc, c.page) for c in
+            verify.parse_citations("[124_gcf-b27-02-add11, p. 84 — FP151, "
+                                   "B.27, 2020]")] == \
+        [("124_gcf-b27-02-add11", 84)]
+
+
+@pytest.mark.parametrize("cid", ["agg-2020-count", "agg-2020-range",
+                                 "agg-2020-largest", "fr-agg-2020",
+                                 "fr-agg-2018"])
+def test_the_extended_note_still_answers_the_year_gold_cases(cid):
+    """The gold regexes these cases score on must still be satisfiable from
+    the note — including agg-2020-largest, whose FP150 is EXCLUDED from the
+    computed total and whose printed 256.48 million therefore has to survive
+    the exclusion clause that names it."""
+    import eval_answers as ev
+
+    from gcf_qna.app.chainlit_app import _year_assist
+    case = {c["id"]: c for c in ev.load_cases(ev.DEFAULT_CASES)}[cid]
+    _, note = _year_assist(case["question"], [])
+    assert note is not None
+    for pat in case["expect"]["must_contain"]:
+        assert re.search(pat[3:], note), f"{cid}: {pat} not answerable"
+
+
+# --- D: the identifier a discovery answer is scored on (disc-subnational-pair)
+#
+# 0.60 in six consecutive releases, and the record says why. Retrieval was
+# PERFECT: rank 1, both documents inside the top 10, retrieval_score 1.0. No
+# note fired (`notes_used == {}`) — the question names no year, no board code
+# and no FP id, so nothing in registry_note/_year_assist/_extend_registry_note
+# had a trigger, and the top-ranked pages are Brazilian no-objection letters
+# naming the two ACCREDITED ENTITIES and no identifier. Of the two numbers the
+# case is scored on, FP152 is in no excerpt at all and FP151 is in exactly one
+# — the last-ranked of ten, in a heading over a block that lists BOTH
+# proposals' names, so it cannot even say which document it belongs to. The
+# model named both proposals, cited both stems and wrote neither number,
+# because writing them would have been a guess. That is an evidence defect,
+# not a generation defect, and _doc_label is where a per-document fact the
+# model would otherwise have to invent already lives (board and year are
+# there for exactly that reason).
+
+def _recorded(case_id: str, release: str = "release-8"):
+    for line in (ROOT / "data" / "eval" / f"release_{release}.jsonl").open():
+        row = json.loads(line)
+        if row["id"] == case_id:
+            return row
+    raise AssertionError(f"{case_id} not recorded in {release}")
+
+
+def _context(rec) -> str:
+    """The excerpt block, built exactly as chainlit_app and the harness build
+    it (`[{_doc_label(...)}] (score …)` + text)."""
+    from gcf_qna.app.chainlit_app import _doc_label
+    return "\n\n".join(
+        f"[{_doc_label(h['doc'], h['page'])}] (score {h['score']:.2f})\n{h['text']}"
+        for h in rec["hits"])
+
+
+@pytest.mark.parametrize("release", ["release-6", "release-7", "release-8"])
+def test_the_subnational_defect_reproduces_from_the_record(release):
+    """Before: the failing shape, from three recorded releases."""
+    rec = _recorded("disc-subnational-pair", release)
+    assert rec["checks"]["score"] == 0.6
+    assert rec["retrieval"]["rank"] == 1 and rec["retrieval"]["cover10"]
+    assert rec["retrieval_score"] == 1.0            # retrieval did its job
+    assert (rec.get("notes_used") or {}) == {}      # nothing computed fired
+    assert rec["plan"] == [{"q": rec["plan"][0]["q"], "doc": None}]
+    # no doc tag and no FP id in the resolved plan -> _extend_registry_note
+    # has nothing to resolve, which is why no registry line was emitted
+    from gcf_qna.app.chainlit_app import _turn_doc_ids
+    assert _turn_doc_ids(rec["plan"]) == []
+    # Neither identifier is available to the answer. FP152 is in no excerpt
+    # at all. FP151 is in exactly ONE — the LAST-ranked of ten, an ITAP-reply
+    # heading on a page that lists BOTH proposals' names under one
+    # 'Proposal name' block, so it does not even establish which document is
+    # which. The answer names both proposals, cites both stems, and states
+    # neither number: the evidence it was given contained one of the two, in
+    # the one place least able to attribute it.
+    with_151 = [i for i, h in enumerate(rec["hits"])
+                if re.search(r"FP\s?151", h["text"])]
+    assert with_151 == [len(rec["hits"]) - 1]
+    assert "Proposal name" in rec["hits"][with_151[0]]["text"]
+    assert not any(re.search(r"FP\s?152", h["text"]) for h in rec["hits"])
+    assert not re.search(r"FP\s?15[12]", rec["answer"])
+
+
+def test_the_subnational_case_is_now_answerable_from_the_context():
+    """After: every must_contain regex of the failing case is satisfiable
+    from the excerpt block the app builds for the recorded hits.
+
+    Same proof shape as the coverage note's recorded-turn replay: the model
+    is not asserted to be right, it is given the thing it was missing.
+    """
+    rec = _recorded("disc-subnational-pair")
+    context = _context(rec)
+    for pat in rec["expect"]["must_contain"]:
+        assert re.search(pat[3:], context), f"{pat} still not in the context"
+    assert "124_gcf-b27-02-add11, p. 84 — FP151, B.27, 2020" in context
+    assert "123_gcf-b27-02-add12, p. 76 — FP152, B.27, 2020" in context
+
+
+def test_the_header_identifier_is_the_registrys_and_never_a_parse():
+    """'124_gcf-b27-02-add11' contains no 151 and never will: the B.27 stems
+    carry no FP number, so this has to be a lookup. An id the registry does
+    not know gets no FP and no em dash it did not already earn."""
+    from gcf_qna.app.chainlit_app import _doc_label, _registry_fp
+    assert _registry_fp("124_gcf-b27-02-add11") == 151
+    assert "151" not in "124_gcf-b27-02-add11"
+    assert _registry_fp("no-such-document") is None
+    assert _doc_label("no-such-document", 2) == "no-such-document, p. 2"
+
+
+def test_the_identifier_survives_an_unreadable_registry(monkeypatch):
+    """The header is the citation: a broken registry may cost it the FP
+    number, never the label."""
+    from gcf_qna.app.chainlit_app import _doc_label
+    monkeypatch.setattr(registry, "load",
+                        lambda: (_ for _ in ()).throw(FileNotFoundError()))
+    assert _doc_label("124_gcf-b27-02-add11", 84) == \
+        "124_gcf-b27-02-add11, p. 84 — B.27, 2020"
+
+
+def test_the_other_discovery_cases_see_no_behaviour_change():
+    """The other eight discovery cases score 1.00 and must keep doing so.
+    Their questions still fire NO note (nothing about the note triggers
+    changed), and their headers gain the registry's own FP number and
+    nothing else — the same number `registry._fmt` already prints for them.
+    """
+    from gcf_qna.app import chainlit_app as app
+    from gcf_qna.boards import board_of, year_of
+    rows = [json.loads(line) for line in
+            (ROOT / "data" / "eval" / "release_release-8.jsonl").open()]
+    others = [r for r in rows if r.get("class") == "discovery"
+              and r["id"] != "disc-subnational-pair"]
+    assert len(others) == 8
+    for rec in others:
+        q = rec["question"]
+        assert rec["checks"]["score"] == 1.0, rec["id"]        # premise
+        # zero behaviour change on every note path this turn can reach
+        assert app._year_assist(q, [])[1] is None, rec["id"]
+        assert app._board_range_note(q) is None, rec["id"]
+        assert app._corpus_coverage_note(q) is None, rec["id"]
+        for hit in rec["hits"]:
+            label = app._doc_label(hit["doc"], hit["page"])
+            # everything the header carried before is still there…
+            assert label.startswith(f"{hit['doc']}, p. {hit['page']}")
+            board, year = board_of(hit["doc"]), year_of(hit["doc"])
+            if board and year:
+                assert f"B.{board}, {year}" in label
+            # …plus the registry's FP for this stem, exactly, or nothing
+            fp = (registry.load().get(hit["doc"]) or {}).get("fp")
+            if fp:
+                assert re.search(rf"— FP{fp}\b", label), label
+            else:
+                assert "FP" not in label, label
 
 
 # --- A3: 'B.<n>' is a board code OR a template heading (H5/P6) -------------

@@ -1,4 +1,4 @@
-"""The two halves of the registry's answer to docs/l1-l2-coverage-review.md §7.
+"""The registry's answer to docs/l1-l2-coverage-review.md §4.2 and §7.
 
 **Truncation markers (F13/P5).** `_fmt` printed `', '.join(countries[:5])` with
 no count and no ellipsis inside a note the prompt calls authoritative. Asked
@@ -19,6 +19,24 @@ category error. The lookups are here, with the entity normalisation the
 review's H1 says is a data prerequisite (126 stored strings, far fewer
 organisations), and both are wired to a note that fires ONLY on a set ask —
 'What does FP123 do in Kenya?' must never produce a corpus-wide listing.
+
+**Owner rulings (§7).** Three clusters the normalisation had guessed at were
+read back to the corpus owner and ruled on (2026-08-26): 'World Bank Group'
+and 'Ministry of Environment' stay MERGED, 'Acumen' and 'Acumen Fund' are
+SPLIT. A ruling that lives only in a comment is one the next refactor loses,
+so each is pinned.
+
+**The board inverse (§8, H16).** 'Which proposals were approved at B.44?' has
+always been answered definitively — 44 is outside the corpus — while B.35, a
+meeting whose seven documents the registry holds, was answered not at all.
+§4.3 counts that pair among the review's three false-authority misfires.
+
+**Corpus extrema (§9, H3/H3b).** P3 asked for the smallest GCF request in the
+corpus and was refused; F15 asked the year-scoped form and named the wrong
+proposal out of a note that printed the right figure. The ranking is computed
+from schema 2's normalised values — and every refusal around it is computed
+too: no cross-currency comparison, no assumed currency, no unrankable unit,
+and a stated count for everything the ranking left out.
 """
 import pytest
 
@@ -331,7 +349,10 @@ def test_the_real_corpus_clusters_the_review_counted(real):
     stored = {r["accredited_entity"] for r in real.load().values()
               if isinstance(r, dict) and r.get("accredited_entity")}
     assert len(stored) == 126
-    assert len(real.entity_clusters()) == 69
+    # 70, not the 69 of the first pass: the owner ruled 'Acumen' and 'Acumen
+    # Fund' are two entities, and the alias index now keeps them apart
+    # (test_acumen_and_acumen_fund_stay_split).
+    assert len(real.entity_clusters()) == 70
     assert len(real.by_entity("UNDP")) == 41           # P1's own denominator
     assert len(real.by_entity("United Nations Development Programme")) == 41
     assert len(real.by_entity("The World Bank")) == 13  # P10's denominator
@@ -426,16 +447,25 @@ def test_an_incidental_world_bank_never_fires_the_inverse_note(real):
                              "Bank?") is not None
 
 
+# The 2026-08-26 wave added twelve gold cases WRITTEN TO exercise the new
+# notes; the fence becomes an exact allowlist so any OTHER question firing
+# still fails loudly.
+_INVERSE_GOLD = {"agg-inv-undp", "fr-inv-banque-mondiale",
+                 "agg-inv-kenya", "fr-inv-senegal"}
+_NEW_NOTE_GOLD = _INVERSE_GOLD | {"agg-inv-b35", "agg-corpus-largest",
+                                  "agg-2020-least"}
+
+
 def test_no_gold_case_question_fires_an_inverse_note(real):
-    """The 89 recorded cases are the regression fence: none of them asks for
-    an inverse listing, so none of them may receive one."""
+    """The pre-wave cases are the regression fence: exactly the four
+    inverse-authored cases fire, and nothing else may."""
     import json
     from pathlib import Path
     gold = Path(__file__).resolve().parents[1] / "scripts" / "answer_gold.jsonl"
     fired = [json.loads(ln)["id"] for ln in gold.read_text().splitlines()
              if ln.strip() and (real._country_note(json.loads(ln)["question"])
                                 or real._entity_note(json.loads(ln)["question"]))]
-    assert fired == []
+    assert sorted(fired) == sorted(_INVERSE_GOLD)
 
 
 # ==========================================================================
@@ -636,3 +666,534 @@ def test_the_french_ligature_survives_the_folding(real):
     note = real._country_note("Quelles propositions ciblent la Côte d'Ivoire ?")
     assert note.startswith("Registry — 13 funding proposals in the corpus name "
                            "Côte d'Ivoire")
+
+
+# ==========================================================================
+# 7. owner rulings on three clusters (decided 2026-08-26)
+# ==========================================================================
+# entity_clusters() exists so a human can read the normalisation's guesses
+# back. Three were read back and ruled on; all three are pinned here, because
+# a ruling that lives only in a comment is a ruling the next refactor loses.
+
+def test_the_world_bank_group_stays_merged(real):
+    """Ruling (a): 'World Bank Group' = 'The World Bank' — MERGED, upheld.
+
+    P10's denominator, and the merge that made a French question answerable:
+    one organisation, 13 documents, four spellings.
+    """
+    rows = real.by_entity("The World Bank")
+    assert len(rows) == 13
+    assert real.by_entity("World Bank Group") == rows
+    assert real.by_entity("World Bank") == rows
+    assert real.by_entity("Banque mondiale") == rows
+    assert "World Bank Group" in [v for v in real.entity_clusters()["The World Bank"]]
+
+
+def test_ministry_of_environment_stays_merged(real):
+    """Ruling (b): 'Ministry of Environment' (3 documents) — MERGED, upheld.
+
+    Two spellings of one body, merged by _norm_key's parenthetical rule rather
+    than by the org-tail rule. The ruling covers THESE spellings: the long
+    Colombian string is a different name and stays where it is.
+    """
+    rows = real.by_entity("Ministry of Environment")
+    assert len(rows) == 3
+    assert real.by_entity("Ministry of Environment (MOE)") == rows
+    assert {r["accredited_entity"] for r in rows} == \
+        {"Ministry of Environment", "Ministry of Environment (MOE)"}
+    assert real.by_entity("Ministry of Finance") != rows
+
+
+def test_acumen_and_acumen_fund_stay_split(real):
+    """Ruling (c): 'Acumen' != 'Acumen Fund' — SPLIT, the merge was DECLINED.
+
+    The org-tail rule had pulled the single 'Acumen' row into the six-document
+    'Acumen Fund' family on the strength of one word. The owner ruled they are
+    distinct canonical entities, so `_OWNER_KEEP_DISTINCT` stops that one
+    union — and only that one: the same rule still merges 'World Bank Group'
+    above.
+    """
+    acumen = real.by_entity("Acumen")
+    fund = real.by_entity("Acumen Fund")
+    assert len(acumen) == 1 and len(fund) == 6
+    assert not ({r["doc_id"] for r in acumen} & {r["doc_id"] for r in fund})
+    assert [r["accredited_entity"] for r in acumen] == ["Acumen"]
+    assert {r["accredited_entity"] for r in fund} == {
+        "Acumen Fund", "Acumen Fund Inc", "Acumen Fund, Inc.", "Acumen Fund, LLC."}
+    # the corporate-suffix and parenthetical rules keep working INSIDE the
+    # family the split created
+    assert real.by_entity("Acumen Fund, Inc.") == fund
+    assert ("acumen", "acumen fund") in registry._OWNER_KEEP_DISTINCT
+
+
+def test_the_split_is_an_exception_not_a_new_rule(real):
+    """Every other org-tail merge the corpus makes is untouched by the
+    exception list — and the non-merge the RULES already produce on their own
+    still stands beside the one the owner had to decide.
+
+    'Inter-American Investment Corporation (IDB Invest)' is distinct from
+    'Inter-American Development Bank (IDB)' for free: 'IDB Invest' is two
+    tokens, so `_is_acronym` refuses it and no acronym union ever fires. That
+    is the shape `_OWNER_KEEP_DISTINCT` mirrors — with the difference that a
+    declined merge cannot be derived from the strings and has to be written
+    down.
+    """
+    assert len(real.by_entity("World Bank Group")) == 13      # 'group' tail
+    assert len(registry._OWNER_KEEP_DISTINCT) == 1
+    assert not registry._is_acronym("IDB Invest")
+    idb_invest = real.by_entity("Inter-American Investment Corporation")
+    assert len(idb_invest) == 1 and len(real.by_entity("IDB")) == 12
+    assert idb_invest[0]["doc_id"] not in {r["doc_id"] for r in real.by_entity("IDB")}
+
+
+# ==========================================================================
+# 8. the board inverse (H16) — the asymmetry, closed on the in-range side
+# ==========================================================================
+
+def test_by_board_returns_the_rows_of_that_meeting(syn):
+    assert [r["fp"] for r in syn.by_board(13)] == [1, 2]
+    # the lookup returns every ROW of the meeting, FP-less ones included (the
+    # note is what drops them, exactly as it does for a year listing)
+    assert [r["doc_id"] for r in syn.by_board(19)] == ["14_a-status", "13_a-fp13"]
+    assert syn.by_board(99) == []
+
+
+def test_by_board_survives_the_rows_a_registry_can_hold(monkeypatch):
+    monkeypatch.setattr(registry, "_cache", {
+        "1_ok": {"fp": 1, "title": "T", "board": 35},
+        "2_err": {"error": "Unterminated string ..."},
+        "3_junk": None,
+    })
+    monkeypatch.setattr(registry, "_cache_v2", {})
+    assert [r["doc_id"] for r in registry.by_board(35)] == ["1_ok"]
+
+
+BOARD_POSITIVE = [
+    "Which funding proposals were approved at B.35?",
+    "Which proposals were approved at B.35?",
+    "List the proposals from B.35.",
+    "How many proposals were approved at B.35?",
+    "Quelles propositions ont été approuvées à la B.35 ?",
+]
+
+
+@pytest.mark.parametrize("q", BOARD_POSITIVE)
+def test_the_board_note_fires_on_a_set_ask(real, q):
+    note = real._board_note(q)
+    assert len(note) == 1
+    assert note[0].startswith(
+        "Registry — 7 funding-proposal documents in the corpus are from board "
+        "meeting B.35 (2023) (complete listing over the 273 corpus documents): "
+        'FP199 "')
+    assert 'FP205 "Infrastructure Climate Resilient Fund (ICRF)"' in note[0]
+
+
+def test_a_bare_what_was_approved_is_a_set_ask(real):
+    """The judgement call H16's guard question asks for, decided YES.
+
+    'What was approved at B.42?' carries no set noun at all, and it is still a
+    set ask: a board approves a BATCH, so the verb carries the quantifier the
+    way 'list EVERY proposal' carries it in a word. The decisive argument is
+    the asymmetry — chainlit's out-of-range arm answers this EXACT phrasing
+    definitively, so refusing it in range would leave the misfire standing in
+    the wording that produced it.
+    """
+    note = real._board_note("What was approved at B.42?")
+    assert len(note) == 1 and note[0].startswith(
+        "Registry — 11 funding-proposal documents in the corpus are from board "
+        "meeting B.42 (2025)")
+    assert real._board_note("What was approved at B.35?")
+    assert real._board_note("What did the board approve at B.35?")
+
+
+def test_the_bare_form_still_needs_the_board_and_the_ask(real):
+    """The other half of that call: what the widened trigger must NOT take."""
+    for q in ["What was approved yesterday?",              # no board
+              "B.35 approved a lot of money.",             # a statement
+              "What was approved at B.44?",                # out of range
+              "What does section B.3 of FP151 say?",       # a template heading
+              "How much was approved at B.35?"]:           # money, not a set
+        assert real._board_note(q) == [], q
+
+
+def test_an_out_of_range_board_still_belongs_to_the_app_note(real):
+    """The two arms never both fire, and the definitive one is untouched."""
+    q = "Which funding proposals were approved at B.44?"
+    assert real._board_note(q) == []
+    assert "B.44 is not in this corpus" in app._board_range_note(q)
+    inrange = "Which funding proposals were approved at B.35?"
+    assert app._board_range_note(inrange) is None
+    assert real._board_note(inrange)
+
+
+def test_a_full_board_code_never_answers_with_the_whole_meeting(real):
+    """'GCF/B.35/02/Add.05' names ONE document, and registry_note already
+    resolves it. Both gold cases that spell a code keep the note they had."""
+    for q in ["What proposal does GCF/B.35/02/Add.05 carry?",
+              "Which funding proposals are in GCF/B.35/02/Add.05?",
+              "What is in GCF/B.30/02/Add.03?"]:
+        assert real._board_note(q) == [], q
+    note = real.registry_note("What proposal does GCF/B.35/02/Add.05 carry?")
+    assert "GCF/B.35/02/Add.05 resolves to" in note
+    assert "are from board meeting" not in note
+
+
+def test_the_board_note_says_the_registry_records_no_approval(real):
+    """The listing answers 'which documents', not 'what was approved', and it
+    says so: the board is read off each document's identifier."""
+    note = real._board_note("What was approved at B.35?")[0]
+    assert note.endswith(
+        "— the board is read from each document's own identifier; the registry "
+        "records no approval DECISION, so do not report this listing as what "
+        "the board approved")
+
+
+def test_two_boards_get_two_lines(real):
+    notes = real._board_note("Which proposals were approved at B.35 and B.36?")
+    assert len(notes) == 2
+    assert "B.35 (2023)" in notes[0] and "B.36 (2023)" in notes[1]
+
+
+def test_the_board_listing_publishes_no_page_and_no_stem(real):
+    """Same discipline as the year and inverse listings: FP numbers only."""
+    note = real._board_note("Which proposals were approved at B.35?")[0]
+    assert app._note_pages([note]) == set()
+    assert V.note_page_scopes(note) == []
+    assert "(p." not in note and "cover pages]" not in note
+
+
+def test_the_board_note_reaches_registry_note(real):
+    lines = real.registry_note("Which proposals were approved at B.35?").splitlines()
+    assert any(ln.startswith("Registry — 7 funding-proposal documents in the "
+                             "corpus are from board meeting B.35") for ln in lines)
+
+
+def test_the_board_listing_states_its_own_completeness(syn):
+    note = syn._board_note("Which proposals were approved at B.19?")[0]
+    assert note.startswith(
+        "Registry — 1 funding-proposal documents in the corpus are from board "
+        "meeting B.19 (2018) (complete listing over the 15 corpus documents): "
+        'FP13 "Regional Facility"')          # the FP-less status row is not listed
+
+
+# ==========================================================================
+# 9. corpus extrema (H3/H3b, probes P3 and F15)
+# ==========================================================================
+
+def test_the_corpus_minimum_answers_p3(real):
+    """P3 asked for the smallest GCF request in the corpus and was refused.
+
+    The note now answers it — over the population it can rank, with the
+    denominator, and with the figure that is SMALLER still named rather than
+    silently dropped or silently called USD.
+    """
+    lines = real._extrema_note("What is the smallest GCF funding request in "
+                               "the corpus?")
+    assert lines[0].startswith(
+        'Registry — SMALLEST GCF funding requested in the corpus: FP35 '
+        '"Climate Information Services for Resilient De…" — 22,953 USD '
+        "(p.10, B.2(b)) [240_gcf-b15-13-add08]. Ranked over the 172 of 273 "
+        "documents in the corpus whose registry figure is an unambiguous USD "
+        "amount.")
+    assert lines[1] == (
+        "Registry — excluded from that comparison: 101 of 273 documents in the "
+        "corpus — 61 state no figure this registry could read for the field; "
+        "19 print a figure whose unit the document's own mantissa contradicts; "
+        "18 state EUR; 3 print no currency at all. Figures in different "
+        "currencies are never ranked against one another, and a figure printed "
+        "without a currency is not assumed to be USD. 1 of the excluded "
+        "figures is nominally smaller than the ranked answer, named below.")
+    assert lines[2] == (
+        "Registry — NOT RANKED, though nominally smaller than the figure "
+        "above: FP2 prints 16,265 (p.8, B.2(b)) [272_gcf-b11-04-add02] — the "
+        "document states NO currency for this figure — do not assume USD. "
+        "Report it only with that caveat, and never as the smallest figure in "
+        "the corpus.")
+    assert len(lines) == 3
+
+
+def test_the_review_s_own_truth_value_is_the_one_the_note_publishes(real):
+    """§7's P3 row records the truth as 'FP2 = 16,265'. It is in the note —
+    and it is NOT the ranked answer, because the page that prints it prints no
+    currency and 'do not assume it is USD' is planner.Comparability's own law.
+    Naming it beside the answer is the honest half of that refusal: the reader
+    sees the number, the reason, and the page."""
+    note = "\n".join(real._extrema_note("smallest GCF request in the corpus?"))
+    assert "FP2 prints 16,265 (p.8, B.2(b))" in note
+    assert "USD 16,265" not in note
+
+
+def test_the_corpus_maximum(real):
+    lines = real._extrema_note("What is the largest GCF funding request ever?")
+    assert lines[0].startswith(
+        'Registry — LARGEST GCF funding requested in the corpus: FP241 ')
+    assert "— 2149 million USD (p.5, A.8) " \
+           "[35_gcf-b39-02-add16-rev01-funding-proposal-package-fp241]" in lines[0]
+    assert "CAUTION" not in lines[0]         # read from a labelled A.8 cell
+    assert len(lines) == 2                   # nothing excluded ranks above it
+
+
+def test_a_figure_read_without_a_template_heading_says_so(real):
+    """The corpus minimum comes from a 'rule:' section — a figure the builder
+    found on the page without the heading above it. An authoritative
+    superlative built on the weaker provenance has to disclose it, or the note
+    manufactures the very kind of certainty F13 was about."""
+    line = real._extrema_note("smallest GCF funding request in the corpus?")[0]
+    assert ("CAUTION: this figure was read from p.10 without a labelled "
+            "template heading above it") in line
+
+
+def test_the_extrema_lines_publish_one_creditable_scope_each(real):
+    """The one note family in this module that DOES carry provenance: an
+    extremum is one figure in one document, which is exactly what
+    `_note_pages` and `note_page_scopes` can credit. One document per line, so
+    no line pairs one document's stem with another's page."""
+    lines = real._extrema_note("What is the smallest GCF funding request in "
+                               "the corpus?")
+    assert app._note_pages(lines) == {("240_gcf-b15-13-add08", 10),
+                                      ("272_gcf-b11-04-add02", 8)}
+    assert V.note_page_scopes(lines[0]) == [
+        (V.note_scope_doc("240_gcf-b15-13-add08"), 10)]
+    assert V.note_page_scopes(lines[1]) == []
+    assert V.note_page_scopes(lines[2]) == [
+        (V.note_scope_doc("272_gcf-b11-04-add02"), 8)]
+
+
+def test_the_extremum_claim_verifies_against_its_own_note(real):
+    """The point of carrying the pointer: an answer that cites the page the
+    note prints is grounded, not flagged."""
+    note = real.registry_note("What is the smallest GCF funding request in "
+                              "the corpus?")
+    ev = V.build_evidence([], note)
+    claims = V.extract_claims(
+        "The smallest GCF funding requested the registry can rank is "
+        "22,953 USD, for FP35. [240_gcf-b15-13-add08, p. 10]")
+    verdicts = V.classify_deterministic(claims, ev)
+    assert verdicts and all(v.status != V.CONTRADICTED for v in verdicts)
+
+
+EXTREMA_NEGATIVE = [
+    ("Which of FP012 and FP074 requested the largest GCF funding?",
+     "a named comparison is planner's, with its own comparability verdict"),
+    ("Compare the GCF funding requested by FP151 and FP152 — which is larger?",
+     "same, in the shape S8 actually tests"),
+    ("Which 2020 proposal requested the largest GCF funding?",
+     "agg-2020-largest: a year-scoped MAXIMUM already answered at 1.00"),
+    ("Which proposal requested the most GCF funding?",
+     "no scope word: 'the most' could mean 'of the two above'"),
+    ("Which years have the most funding proposals in this corpus?",
+     "agg-year-most: a count of documents, not of money"),
+    ("How many proposals in the corpus request GCF funding?",
+     "no superlative at all"),
+    ("Does the corpus hold at least one proposal over 100 million USD?",
+     "'at least' is not a superlative"),
+    ("What is the largest and smallest GCF request in the corpus?",
+     "both directions at once is not a clean ask"),
+    ("What is the smallest country in the corpus?",
+     "no money field named"),
+    ("Which country received the most GCF funding in the corpus?",
+     "a sum across documents — the operation F11 got 21-35x wrong and the one "
+     "planner refuses outright; the biggest single figure is not an answer"),
+    ("Which entity has the largest GCF funding request in the corpus?",
+     "same: an entity total is a sum, and this registry computes none"),
+    ("Quel pays a reçu le plus de financement du GCF dans le corpus ?",
+     "the French twin of the same category error (P10's shape, with a number)"),
+]
+
+
+@pytest.mark.parametrize("q,why", EXTREMA_NEGATIVE)
+def test_the_extrema_note_does_not_fire_on_anything_else(real, q, why):
+    assert real._extrema_note(q) == [], why
+
+
+def test_the_year_arm_fires_only_for_the_minimum(real):
+    """F15 asked the year-scoped MINIMUM and got a wrong value out of a note
+    that printed the right one — the model compared '18.5 M USD' with
+    '17,198,843 USD' by mantissa. That arm is computed here. The MAXIMUM arm
+    of the same shape is `agg-2020-largest`, answered at 1.00 in every recorded
+    run by chainlit's year note, and a second authoritative note over a passing
+    case buys nothing; it is available the moment the question says 'corpus'.
+    """
+    lines = real._extrema_note("Which 2020 proposal requested the least?")
+    assert lines[0].startswith(
+        "Registry — SMALLEST GCF funding requested in the 2020 funding "
+        'proposals: FP129 "Afghanistan Rural Energy Market Transformatio…" — '
+        "USD 17,198,843 (p.5, A8) [146_gcf-b26-02-add01]. Ranked over the 19 "
+        "of 30 documents in the 2020 funding proposals whose registry figure "
+        "is an unambiguous USD amount.")
+    assert lines[1].startswith("Registry — excluded from that comparison: 11 "
+                               "of 30 documents in the 2020 funding proposals")
+    assert real._extrema_note("Which 2020 proposal requested the largest GCF "
+                              "funding?") == []
+    assert real._extrema_note("Which 2020 proposal in the corpus requested the "
+                              "largest GCF funding?")[0].startswith(
+        "Registry — LARGEST GCF funding requested in the 2020 funding proposals")
+
+
+def test_a_second_year_makes_it_a_range_and_a_range_is_not_this_question(real):
+    assert real._extrema_note("smallest GCF request between 2019 and 2021?") == []
+
+
+def test_total_financing_is_a_different_field(real):
+    line = real._extrema_note("What is the largest total financing in the "
+                              "corpus?")[0]
+    assert line.startswith("Registry — LARGEST total financing in the corpus: "
+                           "FP241 ")
+    assert "3762 million USD (p.5, A.7)" in line
+
+
+def test_the_french_form_answers_the_same_question(real):
+    en = real._extrema_note("What is the smallest GCF funding request in the "
+                            "corpus?")
+    fr = real._extrema_note("Quelle est la plus petite demande de financement "
+                            "du GCF dans le corpus ?")
+    assert fr == en
+
+
+def test_a_corpus_with_no_readable_figure_refuses_out_loud(syn):
+    """The SYN corpus has no schema-2 facts at all: there is nothing to rank,
+    and the note says so rather than falling silent — a silent note is what
+    lets a model invent the superlative itself."""
+    lines = syn._extrema_note("What is the smallest GCF funding request in the "
+                              "corpus?")
+    # 14, not 15: the FP-less status row is not a funding proposal and is no
+    # more countable here than it is listable in an inverse note.
+    assert lines == [
+        "Registry — no document in the corpus states a GCF funding requested "
+        "figure in USD that this registry could read (14 checked), so the "
+        "registry supports NO smallest-figure answer here. Say so; do not rank "
+        "the figures the documents state in other currencies against one "
+        "another."]
+
+
+MONEY = {
+    "a1": {"fp": 1, "title": "Alpha", "board": 35, "year": 2023},
+    "a2": {"fp": 2, "title": "Beta", "board": 35, "year": 2023},
+    "a3": {"fp": 3, "title": "Gamma", "board": 35, "year": 2023},
+    "a4": {"fp": 4, "title": "Delta", "board": 35, "year": 2023},
+}
+
+
+def _cand(raw, value, currency, page, section="A.8"):
+    return {"raw": raw, "value": value, "currency": currency, "unit": None,
+            "page": page, "section": section, "status": "canonical"}
+
+
+MONEY_V2 = {
+    "a1": {"fp": 1, "facts": {"gcf_funding_requested": [
+        _cand("1,000,000 USD", 1000000.0, "USD", 5)]}},
+    "a2": {"fp": 2, "facts": {"gcf_funding_requested": [
+        _cand("1,000,000 USD", 1000000.0, "USD", 6)]}},
+    "a3": {"fp": 3, "facts": {"gcf_funding_requested": [
+        _cand("900,000 Eur", 900000.0, "EUR", 7)]}},
+    "a4": {"fp": 4, "facts": {"gcf_funding_requested": [
+        _cand("28,654 million USD", None, "USD", 8)]}},
+}
+
+
+@pytest.fixture
+def money(monkeypatch):
+    monkeypatch.setattr(registry, "_cache", MONEY)
+    monkeypatch.setattr(registry, "_cache_v2", MONEY_V2)
+    return registry
+
+
+def test_a_tie_is_stated_not_broken_silently(money):
+    lines = money._extrema_note("smallest GCF request in the corpus?")
+    assert lines[0].startswith(
+        'Registry — SMALLEST GCF funding requested in the corpus: FP1 "Alpha" '
+        "— 1,000,000 USD (p.5, A.8) [a1] (TIED at this figure with FP2). "
+        "Ranked over the 2 of 4 documents")
+
+
+def test_a_cheaper_euro_figure_is_named_and_never_ranked(money):
+    """The planner's law, in the one place a note could quietly break it: 900k
+    EUR is nominally below the USD minimum and is NOT the answer."""
+    lines = money._extrema_note("smallest GCF request in the corpus?")
+    assert lines[1] == (
+        "Registry — excluded from that comparison: 2 of 4 documents in the "
+        "corpus — 1 print a figure whose unit the document's own mantissa "
+        "contradicts; 1 state EUR. Figures in different currencies are never "
+        "ranked against one another, and a figure printed without a currency "
+        "is not assumed to be USD. 1 of the excluded figures is nominally "
+        "smaller than the ranked answer, named below.")
+    assert lines[2] == (
+        "Registry — NOT RANKED, though nominally smaller than the figure "
+        "above: FP3 prints 900,000 Eur (p.7, A.8) [a3] — the figure is stated "
+        "in EUR, and this corpus carries no conversion rule. Report it only "
+        "with that caveat, and never as the smallest figure in the corpus.")
+
+
+def test_the_maximum_states_that_nothing_excluded_reaches_it(money):
+    """The count is printed in BOTH directions, like every other list this
+    module emits: 'None of the excluded figures is nominally larger' is a
+    fact about the exclusions, and its absence would leave a reader guessing
+    whether any had been dropped."""
+    lines = money._extrema_note("largest GCF request in the corpus?")
+    assert lines[1].endswith("None of the excluded figures is nominally larger "
+                             "than the ranked answer.")
+    assert len(lines) == 2
+
+
+def test_more_named_exclusions_than_the_cap_say_they_were_cut(monkeypatch):
+    """A cut list that does not say it was cut is F13 in a new place."""
+    rows = {"u1": {"fp": 1, "title": "Ranked", "year": 2023, "board": 35}}
+    facts = {"u1": {"fp": 1, "facts": {"gcf_funding_requested": [
+        _cand("9,000,000 USD", 9000000.0, "USD", 5)]}}}
+    for i in range(2, 6):                     # four EUR figures, all smaller
+        rows[f"e{i}"] = {"fp": i, "title": f"Euro {i}", "year": 2023, "board": 35}
+        facts[f"e{i}"] = {"fp": i, "facts": {"gcf_funding_requested": [
+            _cand(f"{i} million Eur", i * 1000000.0, "EUR", 5)]}}
+    monkeypatch.setattr(registry, "_cache", rows)
+    monkeypatch.setattr(registry, "_cache_v2", facts)
+    lines = registry._extrema_note("smallest GCF request in the corpus?")
+    assert lines[1].endswith(
+        "4 of the excluded figures are nominally smaller than the ranked "
+        "answer; the 2 most extreme are named below — LIST TRUNCATED.")
+    assert len(lines) == 4                    # answer + exclusions + the 2 named
+    assert "FP2 prints 2 million Eur" in lines[2]      # most extreme first
+    assert "FP3 prints 3 million Eur" in lines[3]
+
+
+def test_an_unrankable_unit_is_counted_and_never_named_as_a_rival(money):
+    """'28,654 million USD' has no value in schema 2 — it cannot be smaller or
+    larger than anything, so it is counted among the exclusions and never
+    appears on a NOT RANKED line."""
+    note = "\n".join(money._extrema_note("largest GCF request in the corpus?"))
+    assert "1 print a figure whose unit the document's own mantissa contradicts" \
+        in note
+    assert "FP4" not in note
+
+
+def test_the_extrema_notes_reach_registry_note_itself(real):
+    note = real.registry_note("What is the smallest GCF funding request in the "
+                              "corpus?")
+    assert note.count("\n") == 2
+    assert note.startswith("Registry — SMALLEST GCF funding requested")
+
+
+def test_an_empty_registry_produces_none_of_the_new_notes(monkeypatch):
+    monkeypatch.setattr(registry, "_cache", {})
+    monkeypatch.setattr(registry, "_cache_v2", {})
+    assert registry.registry_note("What was approved at B.35?") is None
+    assert registry.registry_note("smallest GCF request in the corpus?") is None
+    assert registry.by_board(35) == []
+
+
+def test_no_gold_case_question_fires_any_new_note(real):
+    """The fence, extended to the two notes this pass adds. The 89 recorded
+    cases measure the system's behaviour; a case that silently gained an
+    authoritative note would be a behaviour change no run had measured."""
+    import json
+    from pathlib import Path
+    gold = Path(__file__).resolve().parents[1] / "scripts" / "answer_gold.jsonl"
+    fired = []
+    for ln in gold.read_text().splitlines():
+        if not ln.strip():
+            continue
+        case = json.loads(ln)
+        q = case["question"]
+        if (real._country_note(q) or real._entity_note(q) or real._board_note(q)
+                or real._extrema_note(q)):
+            fired.append(case["id"])
+    assert sorted(fired) == sorted(_NEW_NOTE_GOLD)
