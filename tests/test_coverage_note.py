@@ -74,6 +74,20 @@ def test_the_note_carries_the_authority_framing():
     assert "complete" in note and "authoritative, unlike the excerpts" in note
 
 
+def test_the_note_forbids_totalling_the_figures_it_licenses():
+    """The coverage note is the one note a 'how many / how much in total'
+    question reaches, and the year note it hands off to prints one amount per
+    proposal in mixed currencies. Measured (F11): asked to total the 2020
+    listing the model returned $29.0B against a truth near $1.36B. The rule
+    rides on the note, not the prompt - notes fire per trigger, the prompt is
+    paid for on every turn."""
+    note = app._corpus_coverage_note("How many funding proposals are in the corpus?")
+    assert app._NO_SUM_RULE in note
+    assert "MUST NOT be summed" in note
+    # ... and it stays a rule, not evidence: no page and no document to cite
+    assert app._note_pages([app._NO_SUM_RULE]) == set()
+
+
 # ------------------------------------------------------------- wiring ---
 def test_app_and_harness_emit_the_same_note():
     import eval_answers as ev  # noqa: F401  (parity: harness calls app's fn)

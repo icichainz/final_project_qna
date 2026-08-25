@@ -143,7 +143,7 @@ REGV2 = {
 # The note FP151 got before schema 2 existed, byte for byte.
 V1_NOTE_151 = (
     'Registry — FP151: "TA Facility"; accredited entity: IUCN; '
-    'countries: Angola, Benin; GCF financing (as printed): 18.5 M USD; '
+    'countries (2): Angola, Benin; GCF financing (as printed): 18.5 M USD; '
     'total financing (as printed): 28 M USD for Technical Assistance; '
     'board B.27, 2020 [124_gcf-b27-02-add11, cover pages]')
 
@@ -163,7 +163,7 @@ def test_v2_money_replaces_the_v1_fragment_and_keeps_the_v1_text(regv2):
     assert "for Technical Assistance" not in line          # ... and its unsourced tail
     # title/entity/countries/board stay v1: schema 1 is the clean source there
     assert '"TA Facility"' in line and "accredited entity: IUCN" in line
-    assert "countries: Angola, Benin" in line and "board B.27, 2020" in line
+    assert "countries (2): Angola, Benin" in line and "board B.27, 2020" in line
     assert line.endswith(f"[{DOC151}, cover pages]")
 
 
@@ -187,19 +187,26 @@ def test_v1_raw_survives_when_v2_has_no_canonical(monkeypatch):
 
 
 def test_conflict_warning_is_appended_capped_and_page_bearing(regv2):
+    """Both caps still hold — and both now SAY they held (F13's rule applied to
+    the other truncated list in this module: what is dropped is announced, with
+    the number dropped, so a note can never read as the whole story)."""
     n = regv2.registry_note("What is FP274's GCF financing?")
     conf = [ln for ln in n.splitlines() if "CONFLICT" in ln]
-    assert len(conf) == 2                      # one line per field, two fields
+    assert len(conf) == 3                      # two field lines + the cap line
     assert conf[0] == (
         f"Registry — CONFLICT in this document ({DOC274}): gcf_funding_requested "
         "is printed as 40,511,264 USD (p.7, A.8); also as 49,751,264 (p.8, "
-        "A.10 Grant); also as 40,751,254 (p.40, C.1(a)) — report all of them "
-        "with their pages.")
-    assert "40,000,000" not in n                # a third print is over the cap
+        "A.10 Grant); also as 40,751,254 (p.40, C.1(a)) (+1 more disagreeing "
+        "print of this field in the document, not listed — list truncated) — "
+        "report all of them with their pages.")
+    assert "40,000,000 " not in n               # a fourth print is over the cap
     assert conf[1].startswith(
         f"Registry — CONFLICT in this document ({DOC274}): total_financing")
-    assert "co_financing" not in n              # ... and so is a third field
-    assert "9,000,000" not in n
+    assert conf[2] == (
+        f"Registry — CONFLICT in this document ({DOC274}): 1 further field "
+        "(co_financing) also prints disagreeing figures, not listed above — "
+        "list truncated.")
+    assert "9,000,000" not in n                 # named, not printed
 
 
 def test_conflict_line_leads_with_the_canonical_and_strips_the_rule_marker(regv2):
@@ -248,7 +255,7 @@ def test_board_code_note_gets_the_same_enrichment(regv2):
     n = regv2.registry_note("Summarize GCF/B.42/02/Add.16")
     assert n.splitlines()[0].startswith("Registry — GCF/B.42/02/Add.16 resolves to: ")
     assert "GCF funding requested: 40,511,264 USD (p.7, A.8)" in n
-    assert len([ln for ln in n.splitlines() if "CONFLICT" in ln]) == 2
+    assert len([ln for ln in n.splitlines() if "CONFLICT" in ln]) == 3
 
 
 def test_missing_v2_registry_leaves_the_v1_note_byte_identical(monkeypatch):
@@ -354,7 +361,7 @@ def regprov(monkeypatch):
 #: cover-page fact has no equivalent of.
 PROV_NOTE_151 = (
     'Registry — FP151: "TA Facility" (p.1); accredited entity: IUCN (p.3); '
-    'countries: Angola, Benin (p.2); GCF funding requested: 18.5 M USD '
+    'countries (2): Angola, Benin (p.2); GCF funding requested: 18.5 M USD '
     '(p.5, A.8); total financing: 28 M USD (p.5, A.7); board B.27, 2020 '
     '[124_gcf-b27-02-add11, cover pages]')
 
@@ -364,7 +371,7 @@ def test_entity_title_and_countries_print_the_page_v2_read_them_on(regprov):
     assert line == PROV_NOTE_151
     assert "accredited entity: IUCN (p.3)" in line
     assert '"TA Facility" (p.1)' in line
-    assert "countries: Angola, Benin (p.2)" in line
+    assert "countries (2): Angola, Benin (p.2)" in line
     # the money fragment is untouched: it already had a pointer, with a section
     assert "GCF funding requested: 18.5 M USD (p.5, A.8)" in line
 
@@ -417,7 +424,7 @@ def test_only_the_fields_v2_actually_sourced_get_a_page(regprov):
     line = regprov.registry_note("What is FP274's GCF financing?").splitlines()[0]
     assert "accredited entity: SC Australia (p.3)" in line
     assert '"BRACE";' in line                       # title: no page, no pointer
-    assert "countries: Zambia;" in line             # countries: likewise
+    assert "countries (1): Zambia;" in line          # countries: likewise
 
 
 def test_a_row_with_no_meta_provenance_is_byte_identical(monkeypatch):
@@ -428,7 +435,7 @@ def test_a_row_with_no_meta_provenance_is_byte_identical(monkeypatch):
     n = registry.registry_note("What is FP151's GCF financing?")
     assert n.splitlines()[0] == (
         'Registry — FP151: "TA Facility"; accredited entity: IUCN; '
-        'countries: Angola, Benin; GCF funding requested: 18.5 M USD (p.5, A.8); '
+        'countries (2): Angola, Benin; GCF funding requested: 18.5 M USD (p.5, A.8); '
         'total financing: 28 M USD (p.5, A.7); board B.27, 2020 '
         '[124_gcf-b27-02-add11, cover pages]')
     assert "(p.3)" not in n and "(p.1)" not in n
@@ -486,12 +493,13 @@ def test_conflict_lines_are_untouched_by_cover_page_provenance(regprov):
     lines it printed before, byte for byte."""
     n = regprov.registry_note("What is FP274's GCF financing?")
     conf = [ln for ln in n.splitlines() if "CONFLICT" in ln]
-    assert len(conf) == 2
+    assert len(conf) == 3
     assert conf[0] == (
         f"Registry — CONFLICT in this document ({DOC274}): gcf_funding_requested "
         "is printed as 40,511,264 USD (p.7, A.8); also as 49,751,264 (p.8, "
-        "A.10 Grant); also as 40,751,254 (p.40, C.1(a)) — report all of them "
-        "with their pages.")
+        "A.10 Grant); also as 40,751,254 (p.40, C.1(a)) (+1 more disagreeing "
+        "print of this field in the document, not listed — list truncated) — "
+        "report all of them with their pages.")
     assert conf[1].startswith(
         f"Registry — CONFLICT in this document ({DOC274}): total_financing")
     assert "(p.3)" not in "\n".join(conf)
@@ -527,7 +535,7 @@ def test_accented_values_survive_the_formatting(monkeypatch):
     assert line == (
         'Registry — FP180: "Résilience des systèmes agroalimentaires au Sahel" '
         '(p.1); accredited entity: Agence Française de Développement (AFD) '
-        "(p.3); countries: Côte d'Ivoire, Bénin, Sénégal (p.2); "
+        "(p.3); countries (3): Côte d'Ivoire, Bénin, Sénégal (p.2); "
         f"board B.30, 2021 [{doc}, cover pages]")
     # the parenthesised '(AFD)' inside the value does not shadow the pointer
     assert {p for d, p in app._note_pages([line]) if d == doc} == {1, 2, 3}
@@ -557,7 +565,7 @@ def test_a_v2_row_with_provenance_but_no_money_keeps_the_v1_fragments(monkeypatc
     line = registry.registry_note("What is FP151's GCF financing?").splitlines()[0]
     assert line == (
         'Registry — FP151: "TA Facility" (p.1); accredited entity: IUCN (p.3); '
-        'countries: Angola, Benin (p.2); GCF financing (as printed): 18.5 M USD; '
+        'countries (2): Angola, Benin (p.2); GCF financing (as printed): 18.5 M USD; '
         'total financing (as printed): 28 M USD for Technical Assistance; '
         'board B.27, 2020 [124_gcf-b27-02-add11, cover pages]')
 

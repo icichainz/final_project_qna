@@ -226,6 +226,57 @@ def _outside_corpus_note(outside: list) -> str:
             f"definitively.")
 
 
+# One instruction, carried by the NOTE rather than the prompt: a note fires
+# per trigger, the system prompt is paid for on every turn. Measured (F11/P4):
+# asked to total the 2020 year note the model returned $29.0B against a truth
+# near $1.36B (21x), and an unprompted 2020-vs-2021 comparison came out
+# backwards — the note prints one figure per proposal, in whatever currency
+# and unit that proposal printed, and nothing behind it can add them up.
+_NO_SUM_RULE = (
+    "Amounts are quoted exactly as each proposal prints them, in mixed "
+    "currencies and sometimes ambiguous units, so they MUST NOT be summed, "
+    "totalled or averaged: answer a request for a year-wide or corpus-wide "
+    "total by refusing the sum and giving the per-proposal figures instead.")
+
+
+def _v2_money(row: dict):
+    """The v2 canonical `gcf_funding_requested` candidate for a registry row.
+
+    v1's `gcf_financing` is the string the cover page was OCR'd into and
+    nothing re-read it. v2 parses the same field out of the template section,
+    and publishes `value=None` for a print whose mantissa and scale word
+    cannot both be true ("28,654 million USD" — FP153, the single print that
+    made a summed 2020 note 21x too high). Preferring v2 is what puts that
+    mark in front of the model; the v1 text stays as the fallback for the
+    rows v2 has no canonical figure for (FP150, FP142).
+
+    Looked up by document id, which is exact — the FP number is a fallback
+    for a row without one. Never raises: an unreadable v2 file means the note
+    falls back to v1, not that the year note disappears.
+    """
+    try:
+        c = registry.canonical(row.get("doc_id") or row.get("fp"),
+                               "gcf_funding_requested")
+    except Exception:
+        return None
+    return c if c and c.get("raw") else None
+
+
+def _money(row: dict) -> str:
+    """' (18.5 M USD GCF)' — the GCF request as the document prints it.
+
+    The raw string is printed as printed, never a reformatted float: the
+    print is what the answer has to be able to cite back. A print v2 could
+    not parse is quoted and flagged, in the same words `registry._money_bit`
+    uses for it, so an unusable figure reads as unusable here too.
+    """
+    c = _v2_money(row)
+    if c:
+        return (f" ({c['raw']} GCF)" if c.get("value") is not None else
+                f' ("{c["raw"]}" GCF, unit as printed is ambiguous)')
+    return f" ({row['gcf_financing']} GCF)" if row.get("gcf_financing") else ""
+
+
 def _span_text(labels: list, prefix: str = "") -> str:
     """'2015, 2016' but '2015–2025' once a contiguous run gets long."""
     if len(labels) > 3 and labels[-1] - labels[0] == len(labels) - 1:
@@ -275,8 +326,6 @@ def _year_assist(question: str, hits: list):
     for y in sorted(years):
         rows = [r for r in registry.by_year(y) if r.get("fp")]
         if rows and detailed:
-            def _money(r):
-                return f" ({r['gcf_financing']} GCF)" if r.get("gcf_financing") else ""
             fps = "; ".join(f"FP{r['fp']}{_money(r)}" for r in rows)
             lines.append(f"{y} — {len(rows)} proposals: {fps}.")
         elif rows:
@@ -305,23 +354,77 @@ def _year_assist(question: str, hits: list):
             f"questions from the registry list above and say so.")
     note = ("Note (computed from the corpus registry, which is complete — "
             "this list is authoritative, unlike the excerpts): "
-            + " ".join(lines) + tail)
+            + " ".join(lines) + tail + " " + _NO_SUM_RULE)
     if outside:          # e.g. "before 2015 or in 2020": half is out of range
         note += " " + _outside_corpus_note(outside)
     return matched + rest, note
 
 
+# 'B.<n>' is written for two different things in this corpus. Board meetings
+# are B.11-B.43 (BOARD_YEARS); the funding-proposal TEMPLATE numbers its own
+# headings in the same shape, and those run low — every B-section registry v2
+# ever reads a figure out of is B.2(a) or B.2(b), alongside A.x and C.1(x).
+# So a number at or below _TEMPLATE_SECTION_MAX is ambiguous, and 'What does
+# section B.3 of FP172 say?' was answered with 'B.3 is not in this corpus …
+# State this definitively.' — a false authoritative note about a real section
+# of a real document (H5/P6). Above 10 nothing is ambiguous: the template has
+# no such heading, so the token is a board code and an out-of-range one is
+# still told definitively (B.44, B.45).
+_TEMPLATE_SECTION_MAX = 10
+_SECTION_WORD_RE = re.compile(r"§|\bsections?\b|\brubriques?\b", re.I)
+# An explicit board frame: the words that make a low 'B.<n>' a claim about a
+# meeting rather than a heading ('approved at B.3', 'GCF board B.3',
+# 'réunion B.3'). 'approv'/'approuv' covers the 'B.x approval' phrasing.
+_BOARD_WORD_RE = re.compile(
+    r"\bboards?\b|\bmeetings?\b|\bsessions?\b|\bconseil\b|"
+    r"\br[ée]unions?\b|\bapprov|\bapprouv", re.I)
+# group(2) catches the paragraph letter a template heading carries and a
+# board code never does: 'B.2(a)'.
+_BOARD_TOKEN_RE = re.compile(r"\bb\.?\s?(\d{1,2})\b(\s*\([a-z]\))?", re.I)
+
+
 def _board_range_note(question: str):
     """A board meeting outside the corpus range deserves a definitive 'no',
     not an excerpt-scoped shrug ('B.44?' has no year token, so _year_assist
-    never fires for it)."""
+    never fires for it).
+
+    The rule, in order, for each 'B.<n>' the question prints:
+
+      * n in BOARD_YEARS            -> in range, no note (unchanged).
+      * n > 10                      -> a board code; out of range, so the
+                                       definitive note fires (unchanged).
+      * n <= 10 and the question says 'section'/'§'/'rubrique', or the token
+        itself carries a paragraph letter ('B.2(a)')
+                                    -> a template heading. NEVER a board.
+      * n <= 10 with an explicit board frame ('board', 'meeting', 'session',
+        'conseil', 'réunion', 'approv*')
+                                    -> a claimed board meeting, and B.1-B.10
+                                       genuinely are outside this corpus, so
+                                       the definitive note is correct: 'What
+                                       was approved at B.3?' still gets it.
+      * n <= 10 unframed            -> ambiguous, and the cost is asymmetric.
+                                       A missing note loses a definitive
+                                       phrasing; a wrong note tells the model
+                                       to deny a section it can see. No note.
+    """
     lo, hi = min(BOARD_YEARS), max(BOARD_YEARS)
-    out = sorted({f"B.{int(m.group(1))}" for m in
-                  re.finditer(r"\bb\.?\s?(\d{1,2})\b", question.lower())
-                  if int(m.group(1)) not in BOARD_YEARS})
-    if not out:
+    q = question or ""
+    section_ctx = bool(_SECTION_WORD_RE.search(q))
+    board_ctx = bool(_BOARD_WORD_RE.search(q))
+    codes = set()
+    for m in _BOARD_TOKEN_RE.finditer(q):
+        n = int(m.group(1))
+        if n in BOARD_YEARS:
+            continue                       # in range: the corpus has it
+        if n <= _TEMPLATE_SECTION_MAX and (section_ctx or m.group(2)
+                                           or not board_ctx):
+            continue                       # a heading, or too ambiguous to deny
+        codes.add(n)
+    if not codes:
         return None
-    return (f"Note (computed): {', '.join(out)} is not in this corpus, which "
+    out = ", ".join(f"B.{n}" for n in sorted(codes))
+    return (f"Note (computed): {out} "
+            f"{'is' if len(codes) == 1 else 'are'} not in this corpus, which "
             f"covers board meetings B.{lo} ({BOARD_YEARS[lo]}) through "
             f"B.{hi} ({BOARD_YEARS[hi]}) completely. State this definitively.")
 
@@ -362,7 +465,7 @@ def _corpus_coverage_note(question: str):
             f"Climate Fund board meetings B.{lo} ({BOARD_YEARS[lo]}) through "
             f"B.{hi} ({BOARD_YEARS[hi]}) completely — {total} funding-proposal "
             f"documents, one per proposal. Proposals per year: {per_year}. "
-            "Answer corpus-coverage questions from this note.")
+            "Answer corpus-coverage questions from this note. " + _NO_SUM_RULE)
 
 
 def _fp_of(text: str):

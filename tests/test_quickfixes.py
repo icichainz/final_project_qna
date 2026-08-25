@@ -39,6 +39,12 @@ FAKE_REGISTRY = {
 @pytest.fixture
 def fake_registry(monkeypatch):
     monkeypatch.setattr(registry, "_cache", FAKE_REGISTRY)
+    # ... and an EMPTY v2: the year note now prefers the v2 canonical figure,
+    # so a v1-only fixture that left _cache_v2 alone would quietly read the
+    # real data/registry_v2.json and print the corpus's money for these
+    # stems. Empty means "v2 knows nothing here" -> the v1 fallback, which is
+    # what these cases are pinning.
+    monkeypatch.setattr(registry, "_cache_v2", {})
     yield
 
 
