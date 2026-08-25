@@ -114,3 +114,22 @@ judged under evolved. The row is carried in
 `tests/test_verify.py::SUPERSEDED_BY_NOTE_PAGE_SCOPE` as an exact set with
 the reviewer's words quoted; a second gold row lost the same way fails the
 suite loudly and requires its own ratification.
+
+
+## Ruling 9 (2026-08-26, owner): the conflict rule is universal — extrema answers included
+
+`agg-2020-least` scored 1.00 on behaviour while its money claim was
+deterministically CONTRADICTED: FP129's document prints $17,198,843
+(canonical, p.5) and $17,196,843 (p.44), the registry records the conflict,
+and the answer reported one figure. The owner ruled for the verifier: no
+extrema exception — both figures, both pages, as since release-2. The gold
+case now expects the second print; the verifier stands unchanged.
+
+## Ruling 10 (2026-08-26, owner): board→year facts become citable evidence
+
+`agg-2021-boards` answers derive "B.28 (2021)" from the prompt's board table
+and cite excerpts that do not print it — unsupported by construction. The
+owner ruled to put the mapping into evidence rather than expect hedged
+phrasing: the year/coverage notes carry the boards for the years they list
+(deterministic, from BOARD_YEARS), so the claims verify honestly.
+Implementation assigned to the coverage-campaign Phase 2 track.

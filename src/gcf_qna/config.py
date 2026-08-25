@@ -39,7 +39,10 @@ CONDUCTOR = os.getenv("CONDUCTOR", "1") == "1"
 # from the registry before retrieval, instead of routing through the LLM
 # conductor. Independent switch, DEFAULT OFF for this deploy — the conductor
 # path is the measured one; flip after the eval run.
-PLANNER = os.getenv("PLANNER", "0") == "1"
+# Default 1 since 2026-08-26 (owner decision, coverage-campaign plan Phase 0):
+# every release measured PLANNER=1 and production deploys it; a lost .env line
+# must not silently un-planner the system.
+PLANNER = os.getenv("PLANNER", "1") == "1"
 # claim-level verification of the finished answer against the pages it cites
 # (plan step 5, gcf_qna.rag.verify). Master switch, DEFAULT OFF for this
 # deploy: it adds an LLM call per turn, so it ships behind the same discipline

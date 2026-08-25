@@ -271,3 +271,19 @@ def test_core_says_the_context_is_not_user_supplied():
     assert "never ask the user to paste or share pages" in p
     assert "retrieval did not surface it" in p
     assert "not supplied by the user" in assemble_chat("French")
+
+
+def test_planner_defaults_on(monkeypatch):
+    """Owner decision 2026-08-26 (coverage-campaign Phase 0): the measured
+    configuration is the code default - every release ran PLANNER=1 and
+    production deploys it, so a lost .env line must not silently un-planner
+    the system."""
+    import importlib
+    from gcf_qna import config as cfg
+    monkeypatch.delenv("PLANNER", raising=False)
+    importlib.reload(cfg)
+    try:
+        assert cfg.PLANNER is True
+    finally:
+        monkeypatch.setenv("PLANNER", "0")
+        importlib.reload(cfg)
