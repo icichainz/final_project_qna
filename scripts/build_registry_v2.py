@@ -25,6 +25,48 @@ How it works
    date). What they change is recorded per document under `meta`; a document
    named by neither file is byte-identical to a build without them. Pass
    --no-decisions to build the pre-ratification baseline.
+4. Cross-extractor verification (2026-08-26, serving-wave session). A standing
+   arm, not a one-off audit: every CANONICAL money fact the build publishes has
+   its figure re-read out of an INDEPENDENT text extraction of the same PDF
+   (data/extracted/pymupdf/, produced by a different tool from the qwen VLM
+   markdown this builder parses). Offline, deterministic, no model call. A
+   figure the independent extraction does not print is FLAGGED, never silently
+   trusted: the candidate gains a `cross_check` verdict, the document gains
+   `meta.cross_check`, and the corpus census is published under
+   `meta.cross_check` at the top level. A flag is a QUESTION for the next
+   adjudication, never an automatic correction -- the build never overwrites a
+   ratified figure with something an extractor thinks it saw. Pass
+   --no-cross-check to build without the arm.
+
+   Why it exists: phase 3 proved every registry raw is literally printed on its
+   cited MARKDOWN page. The serving wave then found eight pages where the
+   markdown itself prints what the PDF does not -- digit misreads, invented
+   table cells, an invented entity name -- which a literal pass over that same
+   markdown can never see. Two extractors disagreeing about a figure is the
+   cheapest signal there is that one of them made it up.
+
+Serving precedence (OWNER RATIFICATION 2026-08-26, serving-wave session)
+------------------------------------------------------------------------
+A note voices exactly ONE of these per field, in this order:
+
+    fact-canonical  >  top-level-as-printed  >  confirmed-absence
+
+the template-section value first ("GCF funding requested"), then the flat
+registry field the corrections settled ("GCF financing (as printed)"), and a
+confirmed absence LAST -- an absence is voiceable only when the build holds no
+print of the field anywhere. `absence_meta()` already enforces exactly this and
+needed no change for the ratification: it withholds publication of an absence
+over any print the fact layer holds, canonical or supporting, and records why.
+
+The FP100/FP142 shape is what the rule is for. Both are REDD+ RBP pilots whose
+cover genuinely prints no financing field -- so the absence row is TRUE about
+the template -- while the payment figure IS printed under labels deeper in
+(FP100 p.103, Table 19 "GCF RBP : 96,452,228"; FP142 p.90 "Total Budget |
+$82,000,000"), which is what the ratified top-level correction serves. Recording
+those prints as fact-layer SUPPORTING candidates (the add-candidate action)
+makes the two claims stop contradicting each other mechanically: the print
+outranks the absence, the absence row stays on the record, and no code changed
+to make it so.
 
 Nothing is ever invented: a candidate always carries the exact source text
 (`raw`). If that text does not parse into a number — or if the page contradicts
@@ -1237,7 +1279,18 @@ def era_of(text: str) -> str:
 #       names the document, the field, the layer, the value AS SHIPPED, the
 #       corrected value with the page that prints it, and the quoted print.
 #       An `add-candidate` row adds a print the store was not carrying rather
-#       than overwriting one, and carries no wrong value.
+#       than overwriting one, and carries no wrong value. A `drop-candidate`
+#       row removes a print the PDF does not contain, and carries no corrected
+#       value: its `dropped` block records the independent extractions that
+#       were searched and found nothing. A `reextracted` block on any row says
+#       'this row's page went for VLM re-extraction': if the fresh page reads
+#       the ratified figure the row is recorded as resolved by the
+#       re-extraction instead of shouted about as unapplied — and if it does
+#       NOT, the row is still reported unapplied, loudly.
+#       Ratified later, in the serving-wave session of the same day: ten more
+#       money-fact rows (four correct-to, two value-fix, four drop-candidate)
+#       and the two RBP add-candidate rows that stop an absence and a top-level
+#       print from both being live at once.
 #   data/registry_absences.json     51 (document, field) pairs read and found
 #       ABSENT, plus the corpus-level finding that no document prints its own
 #       GCF Board approval date.
@@ -1258,6 +1311,21 @@ def era_of(text: str) -> str:
 CORRECTIONS_FILE = config.DATA_DIR / "registry_corrections.json"
 ABSENCES_FILE = config.DATA_DIR / "registry_absences.json"
 RATIFIED = "owner, 2026-08-26"
+# the same owner, later the same day: the serving-wave rows (ten money-fact
+# corrections, the two RBP add-candidates) and the cross-extractor arm
+RATIFIED_SERVING = "owner, 2026-08-26 (serving-wave session)"
+
+# the two grounds on which a ratified row may DELETE a print outright. Both have
+# to be PROVED in the row, because a drop is the one action that leaves the
+# store holding less than the extraction found and offers nothing in its place.
+DROP_GROUNDS = {
+    # an independent text extraction of the whole PDF prints nothing like it:
+    # the candidate is not a reading of the document, it is a VLM invention
+    "printed-nowhere": "the figure is printed on no page of the PDF",
+    # the figure IS printed — under a DIFFERENT field's label, and the field it
+    # belongs to already holds it, so dropping it loses nothing
+    "label-bleed": "the figure belongs to another field, which already holds it",
+}
 
 # a top-level (registry.json) field and the schema-2 fact it is the flat view of
 _TOP_TO_FACT = {"gcf_financing": "gcf_funding_requested",
@@ -1325,8 +1393,10 @@ def _record(entry: dict, before, after) -> dict:
     """The meta row: what moved, what it came from, and the print that decides it."""
     return {"id": entry["id"], "field": entry["field"], "layer": entry["layer"],
             "action": entry["action"], "from": before, "to": after,
-            "page_of_quote": (entry.get("corrected") or entry.get("add") or {}).get("page"),
-            "quote": (entry.get("corrected") or entry.get("add") or {}).get("quote"),
+            "page_of_quote": (entry.get("corrected") or entry.get("add")
+                              or entry.get("dropped") or {}).get("page"),
+            "quote": (entry.get("corrected") or entry.get("add")
+                      or entry.get("dropped") or {}).get("quote"),
             "adjudication_note": entry.get("adjudication_note"),
             "row_ref": entry.get("row_ref"), "ratified": entry.get("ratified", RATIFIED),
             **({"pending_reextraction": True} if entry.get("pending_reextraction") else {}),
@@ -1411,6 +1481,41 @@ def remark_conflicts(field: str, cands: List[dict]) -> None:
                        else "conflicting")
 
 
+def reextraction_settled(entry: dict, facts: Dict[str, List[dict]]) -> Optional[str]:
+    """Did the page re-extraction make this ratified row unnecessary?
+
+    A correction and a page re-extraction are two ways of fixing the same
+    defect, and the adjudication pairs them on purpose ("correct-to 79,690,370;
+    re-extract p5"). When the fresh page reads the figure correctly, the row's
+    target no longer exists — and the build must be able to tell THAT apart
+    from a target that went missing for some other reason, which is an alarm.
+
+    So the row has to have said, in advance, that its page was going for
+    re-extraction (`reextracted`), and the OUTCOME is checked against the same
+    ratified figure the row carries. Never a blanket amnesty for a row that did
+    not land: if the fresh page does not read the ratified figure, this returns
+    None and the row is reported NOT APPLIED exactly as before.
+    """
+    if not entry.get("reextracted"):
+        return None
+    field, action = entry["field"], entry["action"]
+    if action == "drop-candidate":
+        # the row exists to delete a print the PDF does not contain. The target
+        # being gone IS the outcome it asked for.
+        return (f"the re-extraction of p.{entry['wrong'].get('page')} removed the "
+                f"print this row was ratified to drop")
+    want = (entry.get("corrected") or {}).get("value")
+    if want is None:
+        return None
+    canon = _canon_of(facts, field)
+    if canon is None or canon.get("value") is None:
+        return None
+    if not _agree(canon["value"], want):
+        return None
+    return (f"the re-extracted page reads the ratified figure: {field} is now "
+            f"{canon['raw']!r} (p.{canon['page']}), value {canon['value']}")
+
+
 def apply_fact_corrections(doc_id: str, facts: Dict[str, List[dict]],
                            dec: "Decisions", entries: Optional[List[dict]] = None,
                            defer: bool = False) -> List[dict]:
@@ -1453,6 +1558,11 @@ def apply_fact_corrections(doc_id: str, facts: Dict[str, List[dict]],
         target = _pick(cands, entry["wrong"]["raw"], entry["wrong"].get("page"),
                        entry["wrong"].get("status"))
         if target is None:
+            settled = reextraction_settled(entry, facts)
+            if settled:
+                records.append({**_record(entry, None, None),
+                                "resolved_by_reextraction": settled})
+                continue
             if defer:
                 dec.deferred.setdefault(doc_id, []).append(entry)
             else:
@@ -1523,6 +1633,43 @@ def apply_fact_corrections(doc_id: str, facts: Dict[str, List[dict]],
             if not cands:
                 facts.pop(field, None)
             records.append(_record(entry, before, None))
+            continue
+        elif action == "drop-candidate":
+            # a candidate proven printed NOWHERE in the PDF: an independent text
+            # extraction of the same pages prints nothing like it, so it is not a
+            # reading of the document at all and there is nothing to correct it
+            # TO. It is removed and the search that proved it is recorded.
+            #
+            # Not the same thing as the `drop` rider on a correct-to row: that
+            # one clears a candidate a NEW ratified figure supersedes. This is a
+            # decision in its own right, and it is the only action that removes a
+            # print without either replacing it or confirming the field absent —
+            # so it may never be used on a candidate the document does print.
+            dropped = entry.get("dropped") or {}
+            ground = dropped.get("ground")
+            if ground not in DROP_GROUNDS:
+                dec.miss(entry, f"a drop needs a ratified ground and this row "
+                                f"carries {ground!r}; known grounds are "
+                                f"{sorted(DROP_GROUNDS)}")
+                continue
+            if ground == "label-bleed":
+                # 'it belongs to another field' is only a reason to delete when
+                # that other field DOES hold the print. Otherwise the drop would
+                # lose the only copy the store has.
+                holder = dropped.get("belongs_to")
+                if not _pick(facts.get(holder) or [], dropped.get("belongs_to_raw"),
+                             dropped.get("page")):
+                    dec.miss(entry, f"label-bleed drop: {holder!r} does not hold "
+                                    f"{dropped.get('belongs_to_raw')!r}, so the print "
+                                    f"would be lost, not moved")
+                    continue
+            cands.remove(target)
+            if not cands:
+                facts.pop(field, None)
+            records.append({**_record(entry, before, None),
+                            "ground": ground, "why": DROP_GROUNDS[ground],
+                            "searched": dropped.get("searched"),
+                            "evidence": dropped.get("evidence")})
             continue
         elif action == "re-extract":
             # adjudicated WRONG with no defensible replacement: the print stays,
@@ -1688,6 +1835,181 @@ def mapped_label_meta(pages: List[Tuple[int, str]],
 
 
 # ---------------------------------------------------------------------------
+# the cross-extractor verification arm (OWNER RATIFICATION 2026-08-26,
+# serving-wave session: adopted as a STANDING arm, not a one-off audit)
+# ---------------------------------------------------------------------------
+# Everything above this line reads ONE rendering of the corpus: the qwen2.5-vl-7b
+# markdown. Phase 3 proved every registry raw is literally printed on the
+# markdown page it cites — and that proof is silent about the markdown being
+# wrong, because it checks the markdown against itself. The serving wave found
+# eight pages where the markdown prints a figure the PDF does not.
+#
+# So: read the figure again out of a DIFFERENT extraction of the same PDF.
+# data/extracted/pymupdf/ is produced by a text-layer extractor with no model in
+# it, page-marked the same way, and already on disk — the check costs a file
+# read and no network. Two extractors that disagree about a figure is the
+# cheapest evidence there is that one of them invented it.
+#
+# What the arm does NOT do: correct anything. A flag says "these two readings of
+# the same page disagree, an owner must look", and that is all it says. The
+# independent extractor is not a better witness than the VLM by fiat — it drops
+# table structure, it merges cells, it misses scanned pages — so a disagreement
+# is a question, never a verdict on which side is right.
+INDEPENDENT_DIR = config.EXTRACTED_DIR / "pymupdf"
+INDEPENDENT_NAME = "pymupdf"
+# the fields the ratification scopes the arm to: money, where a wrong digit is
+# an answer that looks authoritative and is false
+MONEY_FIELDS = ("total_financing", "gcf_funding_requested", "co_financing",
+                "financial_instruments")
+CROSS_CHECK_STATUSES = ("canonical",)
+CROSS_CHECK_FLAGS = ("not-in-document", "not-on-cited-page")
+
+_INDEP_PAGE = re.compile(r"(?m)^=== PAGE (\d+) ===$")
+# a figure as one token. The spaced variant exists only for the page side: PDF
+# text layers print '1 234 567' and break numbers over lines, and joining those
+# must never be allowed to invent a figure on the CANDIDATE side.
+_FIGURE = re.compile(r"\d[\d.,]*\d|\d")
+_FIGURE_SPACED = re.compile(r"\d[\d.,\s]*\d")
+# below this a page carries no readable text layer (scan, or a page the
+# extractor dropped): unknown, not absent
+_MIN_INDEP_CHARS = 80
+
+
+def independent_pages(doc_id: str, root: Optional[Path] = None) -> Optional[Dict[int, str]]:
+    """The independent extraction of one document, {page: text}, or None."""
+    path = Path(root or INDEPENDENT_DIR) / f"{doc_id}.txt"
+    if not path.exists():
+        return None
+    parts = _INDEP_PAGE.split(path.read_text(encoding="utf-8", errors="replace"))
+    return {int(parts[i]): parts[i + 1] for i in range(1, len(parts), 2)}
+
+
+def _figure_key(tok: str) -> Optional[str]:
+    """A figure's digits, separators and leading zeros removed.
+
+    '49,944,050' / '49944050' / '49.944.050' all key to the same thing, so the
+    two extractors' different ideas of a thousands separator never read as a
+    disagreement. Single digits are dropped: '$5 million' cannot be told apart
+    from a bullet number and would confirm itself against anything.
+    """
+    d = re.sub(r"\D", "", tok)
+    return (d.lstrip("0") or "0") if len(d) >= 2 else None
+
+
+def figure_keys(text: str, spaced: bool = False) -> set:
+    out = {_figure_key(m.group(0)) for m in _FIGURE.finditer(text)}
+    if spaced:
+        out |= {_figure_key(m.group(0)) for m in _FIGURE_SPACED.finditer(text)}
+    out.discard(None)
+    return out
+
+
+def _prints_the_value(cand: dict, body: str) -> bool:
+    """The page prints the same AMOUNT in another notation ('$ 40 million' for
+    a raw of 'USD 40,000,000').
+
+    Read with the builder's own amount reader and compared with the builder's
+    own precision rule, so 'agrees' means here exactly what it means everywhere
+    else in this file.
+    """
+    if cand.get("value") is None:
+        return False
+    grain = _grain_of(cand)
+    for got in _iter_amounts(body):
+        if got["value"] is None:
+            continue
+        if abs(got["value"] - cand["value"]) <= max(grain + got.get("_grain", 0.0)
+                                                    + 1e-6, 0.5):
+            return True
+    return False
+
+
+def _nearest_figures(key: str, page_keys: set, limit: int = 3) -> List[str]:
+    """The page's own figures closest to the one the store claims — the first
+    thing a human wants to see beside a flag ('79690370' beside '69830370')."""
+    def dist(other: str) -> int:
+        if abs(len(other) - len(key)) > 1:
+            return 99
+        prev = list(range(len(other) + 1))
+        for i, a in enumerate(key, 1):
+            cur = [i]
+            for j, b in enumerate(other, 1):
+                cur.append(min(prev[j] + 1, cur[j - 1] + 1, prev[j - 1] + (a != b)))
+            prev = cur
+        return prev[-1]
+    # a TOTAL order: page_keys is a set, and ties broken by iteration order
+    # would make the same build produce different bytes on different runs
+    scored = sorted(((dist(k), len(k), k) for k in page_keys))
+    return [k for d, _, k in scored[:limit] if d < 99]
+
+
+def cross_check_candidate(cand: dict, pages: Dict[int, str],
+                          doc_keys: Optional[set] = None) -> Tuple[str, dict]:
+    """One candidate against the independent extraction. Returns (verdict, detail)."""
+    keys = figure_keys(cand.get("raw", "").split("\n")[0])
+    if not keys:
+        return "no-figure", {}
+    body = pages.get(cand.get("page"))
+    if body is None or len(body.strip()) < _MIN_INDEP_CHARS:
+        return "no-independent-page", {}
+    page_keys = figure_keys(body, spaced=True)
+    if keys & page_keys:
+        return "confirmed-print", {}
+    if _prints_the_value(cand, body):
+        return "confirmed-value", {}
+    figure = max(keys, key=len)
+    detail = {"figure": figure,
+              "independent_page_prints": _nearest_figures(figure, page_keys)}
+    if doc_keys is not None and (keys & doc_keys):
+        return "not-on-cited-page", detail
+    return "not-in-document", detail
+
+
+def cross_check_meta(doc_id: str, facts: Dict[str, List[dict]],
+                     root: Optional[Path] = None,
+                     statuses: Tuple[str, ...] = CROSS_CHECK_STATUSES
+                     ) -> Tuple[Optional[dict], Dict[str, int]]:
+    """Re-read every canonical money figure out of the independent extraction.
+
+    Returns (meta block or None, verdict counts). Mutates the flagged candidates
+    — they gain `cross_check` — and nothing else: a document whose figures all
+    check out is left byte-identical to a build without the arm, so the census
+    comes back in the counts rather than in the document. The arm writes into
+    the store only where it disagrees.
+    """
+    pages = independent_pages(doc_id, root)
+    if pages is None:
+        return None, {"no-independent-extraction": 1}
+    doc_keys = None
+    checked, verdicts, flagged = 0, {}, []
+    for field in MONEY_FIELDS:
+        for cand in facts.get(field) or []:
+            if cand.get("status") not in statuses:
+                continue
+            if doc_keys is None:
+                doc_keys = figure_keys("\n".join(pages.values()), spaced=True)
+            checked += 1
+            verdict, detail = cross_check_candidate(cand, pages, doc_keys)
+            verdicts[verdict] = verdicts.get(verdict, 0) + 1
+            if verdict not in CROSS_CHECK_FLAGS:
+                cand.pop("cross_check", None)
+                continue
+            cand["cross_check"] = verdict
+            flagged.append({"field": field, "raw": cand["raw"], "page": cand["page"],
+                            "status": cand["status"], "value": cand.get("value"),
+                            "verdict": verdict, **detail,
+                            **({"corrected": True} if cand.get("corrected") else {})})
+    if not flagged:
+        return None, verdicts
+    return {"independent": INDEPENDENT_NAME, "checked": checked,
+            "verdicts": dict(sorted(verdicts.items())), "flagged": flagged,
+            "meaning": "the figure the store publishes is not printed by an "
+                       "independent text extraction of the same PDF page. A "
+                       "question for the next adjudication, not a correction.",
+            "ratified": RATIFIED_SERVING}, verdicts
+
+
+# ---------------------------------------------------------------------------
 # build
 # ---------------------------------------------------------------------------
 
@@ -1777,6 +2099,23 @@ LLM_PROMPT = (
 )
 
 
+def uncorrected(cand: dict) -> dict:
+    """A carried-forward llm candidate as the fallback pass first produced it.
+
+    The reuse path exists to avoid re-spending the model budget, NOT to carry a
+    ratified correction forward: corrections are applied fresh on every build,
+    out of the data file. A candidate carried forward with its correction
+    already baked in is a candidate no correction row can find any more — so
+    reusing the SHIPPED registry would make its own ratified rows stop landing,
+    quietly, one rebuild at a time. Restoring `corrected_from` makes the reuse
+    idempotent: the row finds the same target it found the first time and
+    produces the same result.
+    """
+    if not cand.get("corrected"):
+        return dict(cand)
+    return dict(cand.get("corrected_from") or cand)
+
+
 def llm_fallback(paths: List[Path], docs: Dict[str, dict], max_calls: int) -> Tuple[int, int]:
     """Second pass for documents where the deterministic pass found nothing."""
     if not paths:
@@ -1848,6 +2187,12 @@ def main() -> None:
                     help="ignore data/registry_corrections.json and "
                          "data/registry_absences.json — the pre-ratification baseline, "
                          "for the before/after diff")
+    ap.add_argument("--no-cross-check", action="store_true",
+                    help="skip the cross-extractor verification arm — the "
+                         "pre-arm baseline, for the additive-discipline diff")
+    ap.add_argument("--independent", default=str(INDEPENDENT_DIR),
+                    help="the independent extraction the arm reads (default: "
+                         "data/extracted/pymupdf)")
     ap.add_argument("--corrections", default=str(CORRECTIONS_FILE))
     ap.add_argument("--absences", default=str(ABSENCES_FILE))
     a = ap.parse_args()
@@ -1915,14 +2260,19 @@ def main() -> None:
         # must not be deleted as a side effect (b21-10-add06, b19-22-add09).
         todo = []
         for p in paths:
+            # a correction MOVES the section ('llm' -> 'corrected'), so a
+            # carried-forward candidate is recognised by where it came from as
+            # well as by where it is now
             old = [(f, c) for f, cs in (previous.get(p.stem, {}).get("facts") or {}).items()
-                   for c in cs if c.get("section") == "llm"]
+                   for c in cs
+                   if c.get("section") == "llm"
+                   or (c.get("corrected_from") or {}).get("section") == "llm"]
             if not old:
                 if p in empty and p.stem not in previous:
                     todo.append(p)
                 continue
             for f, c in old:
-                docs[p.stem]["facts"].setdefault(f, []).append(c)
+                docs[p.stem]["facts"].setdefault(f, []).append(uncorrected(c))
             docs[p.stem]["coverage"]["llm_fallback"] = True
             docs[p.stem]["coverage"]["fields"] = len(docs[p.stem]["facts"])
             reused += 1
@@ -1958,6 +2308,36 @@ def main() -> None:
                 else:
                     m.pop("confirmed_absence", None)
 
+    # the cross-extractor verification arm: runs LAST, over the finished facts,
+    # so it checks what the build actually publishes — corrections applied, llm
+    # candidates merged, deferred rows landed
+    census: Dict[str, object] = {}
+    if not a.no_cross_check:
+        counts: Dict[str, int] = {}
+        flagged_docs, no_independent = [], []
+        for stem, row in docs.items():
+            block, got = cross_check_meta(stem, row["facts"], root=Path(a.independent))
+            if got.pop("no-independent-extraction", None):
+                no_independent.append(stem)
+            for k, n in got.items():
+                counts[k] = counts.get(k, 0) + n
+            if block is not None:
+                flagged_docs.append(stem)
+                row.setdefault("meta", {"ratified": RATIFIED})["cross_check"] = block
+        census = {"independent": INDEPENDENT_NAME,
+                  "source": Path(a.independent).name,
+                  "scope": f"canonical candidates of {', '.join(MONEY_FIELDS)}",
+                  "checked": sum(counts.values()),
+                  "confirmed": sum(n for k, n in counts.items()
+                                   if k.startswith("confirmed")),
+                  "flagged": sum(counts.get(k, 0) for k in CROSS_CHECK_FLAGS),
+                  "verdicts": dict(sorted(counts.items())),
+                  "documents_flagged": len(flagged_docs),
+                  "documents_without_an_independent_extraction": sorted(no_independent),
+                  "meaning": "a flag is a question for the next adjudication, "
+                             "never an automatic correction",
+                  "ratified": RATIFIED_SERVING}
+
     payload = {"schema_version": 2, "source": SOURCE_DIR.name}
     if dec is not None:
         payload["meta"] = {
@@ -1969,6 +2349,8 @@ def main() -> None:
                 "absences_not_published": dec.absences_skipped,
                 "alarms": dec.alarms,
             }}
+    if census:
+        payload.setdefault("meta", {})["cross_check"] = census
     payload["documents"] = dict(sorted(docs.items()))
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(json.dumps(payload, ensure_ascii=False, indent=1), encoding="utf-8")
@@ -1992,8 +2374,29 @@ def main() -> None:
               f"(not published {len(dec.absences_skipped)})")
         for msg in dec.alarms:
             print(f"  !! {msg}")
+        stale = [u for u in dec.unapplied
+                 if (next((e for e in dec.by_doc.get(u["doc_id"], [])
+                           if e["id"] == u["id"]), {}).get("wrong") or {}
+                     ).get("section") == "llm"]
+        if stale:
+            print(f"  !! {len(stale)} of the unapplied rows correct a VERIFIED "
+                  f"LLM-FALLBACK candidate ({', '.join(u['id'] for u in stale)}). "
+                  f"The reuse source ({a.reuse_llm_from}) is a build those rows had "
+                  f"already been applied to, and a row whose target was DELETED "
+                  f"(confirm-absence) cannot be restored from it. Rebuild with "
+                  f"--reuse-llm-from <a --no-decisions build> or --force-llm.")
         if not dec.alarms:
             print("  every ratified decision landed on the candidate it names")
+    if census:
+        print(f"\ncross-extractor arm ({census['source']}) | checked "
+              f"{census['checked']} canonical money facts | confirmed "
+              f"{census['confirmed']} | FLAGGED {census['flagged']} across "
+              f"{census['documents_flagged']} documents")
+        for k, n in census["verdicts"].items():
+            print(f"  {k:<22}{n:>6}")
+        if census["documents_without_an_independent_extraction"]:
+            print("  no independent extraction: "
+                  f"{len(census['documents_without_an_independent_extraction'])} documents")
     print(f"-> {out}")
 
 

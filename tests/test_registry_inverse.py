@@ -423,11 +423,12 @@ ENTITY_NEGATIVE = [
 @pytest.mark.parametrize("q", ENTITY_POSITIVE)
 def test_the_entity_note_fires_on_a_set_ask(real, q):
     note = real._entity_note(q)
-    assert note and note.startswith(
+    assert note and note.splitlines()[0] == (
         "Registry — 41 funding proposals in the corpus record United Nations "
         "Development Programme as the accredited entity (complete listing over "
         "the 273 corpus documents, covering the 5 spellings of that name the "
-        "registry holds): ")
+        "registry holds); one line per proposal below, each ending with the "
+        "document to cite for it:")
 
 
 @pytest.mark.parametrize("q", ENTITY_NEGATIVE)
@@ -475,10 +476,14 @@ def test_no_gold_case_question_fires_an_inverse_note(real):
 
 def test_the_country_note_lists_every_match_with_the_count(syn):
     note = syn._country_note("Which proposals are in Kenya?")
-    assert note == (
+    assert note.splitlines() == [
         "Registry — 2 funding proposals in the corpus name Kenya in their "
-        "countries field (complete listing over the 15 corpus documents): "
-        'FP13 "Regional Facility"; FP15 "Global Markets"')
+        "countries field (complete listing over the 15 corpus documents); one "
+        "line per proposal below, each ending with the document to cite for "
+        "it:",
+        'FP13 "Regional Facility" [13_a-fp13, cover pages]',
+        'FP15 "Global Markets" [15_a-fp15, cover pages]',
+    ]
 
 
 def test_a_row_without_an_fp_number_is_counted_by_neither_side(syn):
@@ -493,20 +498,27 @@ def test_a_row_without_an_fp_number_is_counted_by_neither_side(syn):
 
 def test_the_entity_note_names_the_spellings_it_merged(syn):
     note = syn._entity_note("Which proposals does UNDP implement?")
-    assert note.startswith(
+    assert note.splitlines()[0] == (
         "Registry — 4 funding proposals in the corpus record United Nations "
         "Development Programme (UNDP) as the accredited entity (complete "
         "listing over the 15 corpus documents, covering the 4 spellings of "
-        "that name the registry holds): ")
-    assert 'FP1 "Mali Hydromet"; FP2 "Malawi Resilience"; FP3 "Niger Solar"; ' \
-           'FP4 "Nigeria Grid"' in note
+        "that name the registry holds); one line per proposal below, each "
+        "ending with the document to cite for it:")
+    assert note.splitlines()[1:] == [
+        'FP1 "Mali Hydromet" [01_a-fp1, cover pages]',
+        'FP2 "Malawi Resilience" [02_a-fp2, cover pages]',
+        'FP3 "Niger Solar" [03_a-fp3, cover pages]',
+        'FP4 "Nigeria Grid" [04_a-fp4, cover pages]',
+    ]
 
 
 def test_a_single_spelling_says_nothing_about_spellings(syn):
     note = syn._entity_note("Which proposals are implemented by IFC?")
     assert "spellings" not in note
-    assert note.endswith("(complete listing over the 15 corpus documents): "
-                         'FP8 "Serbia Forests"')
+    assert note.splitlines()[0].endswith(
+        "(complete listing over the 15 corpus documents); one line per "
+        "proposal below, each ending with the document to cite for it:")
+    assert note.splitlines()[1:] == ['FP8 "Serbia Forests" [08_a-fp8, cover pages]']
 
 
 def test_an_inverse_listing_over_the_cap_says_so_and_keeps_the_true_count(
@@ -518,11 +530,16 @@ def test_an_inverse_listing_over_the_cap_says_so_and_keeps_the_true_count(
     monkeypatch.setattr(registry, "_cache", big)
     monkeypatch.setattr(registry, "_cache_v2", {})
     note = registry._country_note("Which proposals are in Kenya?")
-    assert note.startswith("Registry — 55 funding proposals in the corpus name "
+    head, *items = note.splitlines()
+    assert head.startswith("Registry — 55 funding proposals in the corpus name "
                            "Kenya in their countries field (50 of 55 listed — "
                            "LIST TRUNCATED, but the count 55 is complete)")
-    assert note.endswith("(+5 more)")
-    assert 'FP50 "Project 50"' in note and 'FP51 "Project 51"' not in note
+    # the truncation is stated twice over: the header's own state, and the
+    # count of rows NOT printed below it
+    assert head.endswith("each ending with the document to cite for it (+5 more):")
+    assert len(items) == 50
+    assert items[-1] == 'FP50 "Project 50" [050_x-fp50, cover pages]'
+    assert 'FP51 "Project 51"' not in note
 
 
 def test_the_largest_real_group_is_listed_whole(real):
@@ -530,18 +547,33 @@ def test_the_largest_real_group_is_listed_whole(real):
     and probe P1 named three of them. It arrives complete, or the note is back
     to the defect it was written to fix."""
     note = real._entity_note("Which proposals does UNDP implement?")
+    head, *items = note.splitlines()
     assert "LIST TRUNCATED" not in note and "more)" not in note
-    assert note.count('; FP') == 40 and note.startswith("Registry — 41 ")
+    assert head.startswith("Registry — 41 ") and len(items) == 41
+    assert all(ln.startswith("FP") and ln.endswith(", cover pages]")
+               for ln in items)
 
 
-def test_the_inverse_note_publishes_no_page_and_no_document_stem(real):
-    """Same discipline as the year listing: FP numbers only. A stem plus a page
-    on one line is what `_note_pages` and `note_page_scopes` turn into a
-    citable scope, and a listing has no page to give."""
+def test_the_inverse_listing_publishes_stems_and_no_pages(real):
+    """The half of the discipline that changed, and the half that did not.
+
+    STEMS, now: the listing exists to be enumerated, and an enumerated item
+    with nothing to cite is release-12-repeat's `agg-inv-undp` — 31 claims
+    'no citation on a factual claim' beside a behaviour score of 1.00.
+    NO PAGES, still: `_note_pages` and `note_page_scopes` pair every page on a
+    line with every document named on it, and a listing row is registry
+    metadata, not a reading of a page. One stem per item line and none on the
+    header, which states a corpus-wide COUNT and belongs to no document.
+    """
     note = real._country_note("Which proposals are in Kenya?")
+    head, *items = note.splitlines()
     assert app._note_pages([note]) == set()
     assert V.note_page_scopes(note) == []
-    assert "cover pages]" not in note and "(p." not in note
+    assert "(p." not in note
+    assert "cover pages]" not in head and "_" not in head
+    assert len(items) == 25
+    for ln in items:
+        assert len(V._REG_DOC_RE.findall(ln)) == 1
 
 
 def test_the_inverse_notes_reach_registry_note_itself(real):
@@ -549,6 +581,130 @@ def test_the_inverse_notes_reach_registry_note_itself(real):
     lines = note.splitlines()
     assert any(ln.startswith("Registry — 25 funding proposals") for ln in lines)
     assert any(ln.startswith("Registry — 41 funding proposals") for ln in lines)
+
+
+# ==========================================================================
+# 5b. CITABILITY — the release-12-repeat finding
+# ==========================================================================
+# `agg-inv-undp` scored 1.00 on behaviour with 31 of its 43 claims UNSUPPORTED,
+# every one of them "no citation on a factual claim". The answer was right and
+# the model had done what the prompt asks — it put a bracket on every list item
+# — but the only thing the note gave it to put there was the note line itself,
+# 2,455 characters of it, and `verify._BRACKET_RE` reads at most 400. So the
+# brackets parsed as nothing, and the two instruments disagreed BY
+# CONSTRUCTION: the behaviour scorer read a correct enumeration and the claim
+# checker read 31 uncited assertions. A listing meant to be enumerated has to
+# hand each item something to cite.
+
+
+def _enumerated(note):
+    """The answer the prompt's own list rule asks for, built from a listing:
+    one bullet per item, each carrying its own bracket."""
+    import re as _re
+    out = []
+    for ln in note.splitlines():
+        m = _re.match(r'FP(\d+) "(.*)" \[(.+?), cover pages\]$', ln)
+        if m:
+            out.append(f'- **FP{m.group(1)}** “{m.group(2)}” '
+                       f'[{m.group(3)}, cover pages]')
+    return "\n".join(out)
+
+
+def test_each_listing_line_files_under_its_own_stem_at_document_scope(real):
+    """`build_evidence` walks a note block line by line and files a line whose
+    `_REG_DOC_RE` matches under (stem, None). One key per item, and the header
+    — which states a corpus-wide COUNT — files under nothing, because a line
+    filed under a stem is read as evidence ABOUT that document."""
+    note = real._entity_note("Which proposals does UNDP implement?")
+    head, *items = note.splitlines()
+    ev = V.build_evidence([], note)
+    docs = {k[0] for k in ev if not V.is_notes_doc(k[0])}
+    assert len(docs) == len(items) == 41
+    assert all(k[1] is None for k in ev if not V.is_notes_doc(k[0]))
+    for ln in items:
+        stem = V._REG_DOC_RE.search(ln).group(1)
+        assert ev[(stem, None)] == ln
+    assert head not in ev.values() or V.NOTES_KEY in ev   # only via the blob
+    assert not any(head == v for k, v in ev.items() if not V.is_notes_doc(k[0]))
+
+
+def test_an_enumerated_inverse_answer_verifies_item_by_item(real):
+    """The proof the defect is closed, on the biggest listing the corpus has:
+    41 items, 41 claims, 41 SUPPORTED, each on its OWN document's scope."""
+    note = real._entity_note("Which proposals does UNDP implement?")
+    ev = V.build_evidence([], note)
+    verdicts = V.classify_deterministic(V.extract_claims(_enumerated(note)), ev)
+    assert len(verdicts) == 41
+    assert [v.status for v in verdicts] == [V.SUPPORTED] * 41
+    scopes = [v.scope for v in verdicts]
+    assert all(len(s) == 1 and s[0][1] is None for s in scopes)
+    assert len({s[0][0] for s in scopes}) == 41      # never one shared scope
+
+
+def test_an_enumerated_board_answer_verifies_the_same_way(real):
+    """The board listing had the same disease and takes the same cure."""
+    note = real._board_note("Which proposals were approved at B.35?")[0]
+    ev = V.build_evidence([], note)
+    verdicts = V.classify_deterministic(V.extract_claims(_enumerated(note)), ev)
+    assert len(verdicts) == 7
+    assert [v.status for v in verdicts] == [V.SUPPORTED] * 7
+
+
+def test_a_listing_item_fits_the_bracket_the_answer_has_to_write(real):
+    """The mechanism, pinned as a number. `verify._BRACKET_RE` caps a citation
+    bracket at 400 characters; the old one-line listing was 2,455 and could
+    not be cited by copying, which is what the model actually did. Every item
+    line — the whole line, not just its bracket — is now well inside the cap,
+    so even an answer that pastes the line it read from parses as a citation
+    naming that document."""
+    note = real._entity_note("Which proposals does UNDP implement?")
+    head, *items = note.splitlines()
+    assert len(note) > 400 and len(head) < 400
+    for ln in items:
+        assert len(ln) < 400
+        cites = V.parse_citations(f"FP claim [{ln}]")
+        assert cites and cites[0].doc == V._REG_DOC_RE.search(ln).group(1)
+
+
+def test_every_listing_the_corpus_can_produce_obeys_the_two_rules(real):
+    """The consumer sweep, over every listing this corpus can emit rather than
+    the handful the gold cases ask for: one stem per item line and never one on
+    the header, no page anywhere, and every item line inside the bracket cap."""
+    from gcf_qna.boards import BOARD_YEARS
+    countries, entities = real._indexes()
+    notes = [real._inverse_note(real.by_country(k), "x") for k in countries.keys]
+    notes += [real._inverse_note(real.by_entity(k), "x") for k in entities.keys]
+    notes += [real._inverse_note(real.by_board(b), "x") for b in BOARD_YEARS]
+    notes = [n for n in notes if n]
+    assert len(notes) > 300
+    items = 0
+    for note in notes:
+        head, *rows = note.splitlines()
+        assert app._note_pages([note]) == set()
+        assert V.note_page_scopes(note) == []
+        assert not V._NOTE_DOC_RE.search(head)
+        for ln in rows:
+            items += 1
+            assert len(V._REG_DOC_RE.findall(ln)) == 1 and len(ln) < 400
+    assert items > 2000
+
+
+def test_the_listing_never_lends_one_proposal_evidence_from_another(real):
+    """The failure the per-line split exists to prevent, stated as its
+    negative: FP2's key holds FP2's line and nothing else, so a claim about
+    FP7 cannot verify by citing FP2."""
+    note = real._entity_note("Which proposals does UNDP implement?")
+    ev = V.build_evidence([], note)
+    items = {V._REG_DOC_RE.search(ln).group(1): ln
+             for ln in note.splitlines() if ln.startswith("FP")}
+    first, second = list(items)[:2]
+    assert items[second] not in ev[(first, None)]
+    right = _enumerated(items[second])
+    crossed = right.replace(f"[{second}, cover pages]", f"[{first}, cover pages]")
+    assert [v.status for v in
+            V.classify_deterministic(V.extract_claims(right), ev)] == [V.SUPPORTED]
+    assert [v.status for v in
+            V.classify_deterministic(V.extract_claims(crossed), ev)] == [V.UNSUPPORTED]
 
 
 def test_an_empty_registry_still_produces_no_note(monkeypatch):
@@ -782,11 +938,13 @@ BOARD_POSITIVE = [
 def test_the_board_note_fires_on_a_set_ask(real, q):
     note = real._board_note(q)
     assert len(note) == 1
-    assert note[0].startswith(
+    head, *items = note[0].splitlines()
+    assert head.startswith(
         "Registry — 7 funding-proposal documents in the corpus are from board "
-        "meeting B.35 (2023) (complete listing over the 273 corpus documents): "
-        'FP199 "')
-    assert 'FP205 "Infrastructure Climate Resilient Fund (ICRF)"' in note[0]
+        "meeting B.35 (2023) (complete listing over the 273 corpus documents)")
+    assert len(items) == 7 and items[0].startswith('FP199 "')
+    assert ('FP205 "Infrastructure Climate Resilient Fund (ICRF)" '
+            "[70_gcf-b35-02-add07-rev01_0, cover pages]") in items
 
 
 def test_a_bare_what_was_approved_is_a_set_ask(real):
@@ -841,12 +999,21 @@ def test_a_full_board_code_never_answers_with_the_whole_meeting(real):
 
 def test_the_board_note_says_the_registry_records_no_approval(real):
     """The listing answers 'which documents', not 'what was approved', and it
-    says so: the board is read off each document's identifier."""
-    note = real._board_note("What was approved at B.35?")[0]
-    assert note.endswith(
+    says so: the board is read off each document's identifier.
+
+    ON THE HEADER, and that placement is the point. `verify.build_evidence`
+    files a note line under the stem it names, so this sentence riding after
+    the LAST item would become evidence about that one document — 'the
+    registry records no approval decision' filed under FP211. It is a fact
+    about the listing; it lives on the line that owns the listing.
+    """
+    head, *items = real._board_note("What was approved at B.35?")[0].splitlines()
+    assert head.endswith(
         "— the board is read from each document's own identifier; the registry "
         "records no approval DECISION, so do not report this listing as what "
-        "the board approved")
+        "the board approved; one line per proposal below, each ending with the "
+        "document to cite for it:")
+    assert not any("approval DECISION" in ln for ln in items)
 
 
 def test_two_boards_get_two_lines(real):
@@ -855,12 +1022,18 @@ def test_two_boards_get_two_lines(real):
     assert "B.35 (2023)" in notes[0] and "B.36 (2023)" in notes[1]
 
 
-def test_the_board_listing_publishes_no_page_and_no_stem(real):
-    """Same discipline as the year and inverse listings: FP numbers only."""
+def test_the_board_listing_publishes_stems_and_no_pages(real):
+    """The board listing had the same disease and takes the same cure: one
+    line per proposal, each naming the document to cite, and no page anywhere.
+    """
     note = real._board_note("Which proposals were approved at B.35?")[0]
+    head, *items = note.splitlines()
     assert app._note_pages([note]) == set()
     assert V.note_page_scopes(note) == []
-    assert "(p." not in note and "cover pages]" not in note
+    assert "(p." not in note
+    assert "cover pages]" not in head
+    assert len(items) == 7
+    assert all(len(V._REG_DOC_RE.findall(ln)) == 1 for ln in items)
 
 
 def test_the_board_note_reaches_registry_note(real):
@@ -870,11 +1043,13 @@ def test_the_board_note_reaches_registry_note(real):
 
 
 def test_the_board_listing_states_its_own_completeness(syn):
-    note = syn._board_note("Which proposals were approved at B.19?")[0]
-    assert note.startswith(
+    head, *items = syn._board_note(
+        "Which proposals were approved at B.19?")[0].splitlines()
+    assert head.startswith(
         "Registry — 1 funding-proposal documents in the corpus are from board "
-        "meeting B.19 (2018) (complete listing over the 15 corpus documents): "
-        'FP13 "Regional Facility"')          # the FP-less status row is not listed
+        "meeting B.19 (2018) (complete listing over the 15 corpus documents)")
+    # the FP-less status row is in the registry and in no listing
+    assert items == ['FP13 "Regional Facility" [13_a-fp13, cover pages]']
 
 
 # ==========================================================================

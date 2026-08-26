@@ -491,3 +491,24 @@ def test_the_recorded_release_3_turn_now_carries_its_registry_line():
     assert after and after.splitlines()[0].startswith("Registry — FP173:")
     assert "accredited entity: Inter-American Development Bank" in after
     assert f"[{FP173}, cover pages]" in after
+
+
+def test_a_listing_item_does_not_rob_a_resolved_document_of_its_line():
+    """Serving-wave interaction (S1's finding #2): inverse/board listing items
+    each end '[stem, cover pages]'. Seeding the dedup from every bracketed
+    stem made a turn that fires a listing AND resolves to a document inside
+    it skip that document's full registry line. `have` now seeds from full
+    'Registry — FP…' lines only."""
+    import sys
+    from pathlib import Path as _P
+    sys.path.insert(0, str(_P(__file__).resolve().parents[1] / "src"))
+    from gcf_qna.rag import registry
+    from gcf_qna.app import chainlit_app as app
+    note = registry.registry_note(
+        "Which proposals are implemented by the World Bank?")
+    assert note and "[262_gcf-b13-16-add04, cover pages]" in note, \
+        "premise: FP12 appears as a listing item"
+    extended = app._extend_registry_note(
+        note, [{"q": "FP12 accredited entity", "doc": "262_gcf-b13-16-add04"}])
+    assert "Registry — FP12:" in extended, \
+        "the resolved document must still get its full _fmt line"

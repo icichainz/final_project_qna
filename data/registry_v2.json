@@ -6,7 +6,7 @@
    "corrections": {
     "file": "registry_corrections.json",
     "present": true,
-    "count": 62,
+    "count": 74,
     "ratified": "owner, 2026-08-26"
    },
    "absences": {
@@ -46,10 +46,48 @@
      }
     ]
    },
-   "applied": 62,
+   "applied": 74,
    "unapplied": [],
-   "absences_published": 48,
+   "absences_published": 46,
    "absences_not_published": [
+    {
+     "doc_id": "133_gcf-b27-02-add02",
+     "field": "gcf_funding_requested",
+     "era": "REDD+ RBP block (RBP pilot template v1.0)",
+     "pages_checked": [
+      1,
+      16
+     ],
+     "evidence": "same: the RBP payment amount appears only in narrative and in the section D/E budget, never under a template label",
+     "group": "REDD+ RBP financing",
+     "row_ref": {
+      "file": "scratchpad/phase3_worklist.json",
+      "pointer": "bucket_2_the_68_core_missing_documents",
+      "verdict": "b_confirmed_absence_candidate"
+     },
+     "status": "ratified",
+     "ratified": "owner, 2026-08-26",
+     "why": "the build holds a non-canonical print of this field ('Total Budget | $82,000,000', p.90) — absence not published over a print"
+    },
+    {
+     "doc_id": "175_gcf-b22-10-add02",
+     "field": "gcf_funding_requested",
+     "era": "REDD+ RBP block (RBP pilot template v1.0)",
+     "pages_checked": [
+      1,
+      16
+     ],
+     "evidence": "same: the RBP payment amount appears only in narrative and in the section D/E budget, never under a template label",
+     "group": "REDD+ RBP financing",
+     "row_ref": {
+      "file": "scratchpad/phase3_worklist.json",
+      "pointer": "bucket_2_the_68_core_missing_documents",
+      "verdict": "b_confirmed_absence_candidate"
+     },
+     "status": "ratified",
+     "ratified": "owner, 2026-08-26",
+     "why": "the build holds a non-canonical print of this field ('GCF RBP: 96,452,228', p.103) — absence not published over a print"
+    },
     {
      "doc_id": "273_gcf-b11-04-add01",
      "field": "accredited_entity",
@@ -116,6 +154,25 @@
    "alarms": [
     "C54 136_gcf-b26-02-add11: gcf_funding_requested already carried '25,645,114 | million USD' (p.32) — same figure, so the ratified print takes canonical and that one becomes supporting"
    ]
+  },
+  "cross_check": {
+   "independent": "pymupdf",
+   "source": "pymupdf",
+   "scope": "canonical candidates of total_financing, gcf_funding_requested, co_financing, financial_instruments",
+   "checked": 622,
+   "confirmed": 488,
+   "flagged": 129,
+   "verdicts": {
+    "confirmed-print": 478,
+    "confirmed-value": 10,
+    "no-figure": 5,
+    "not-in-document": 108,
+    "not-on-cited-page": 21
+   },
+   "documents_flagged": 99,
+   "documents_without_an_independent_extraction": [],
+   "meaning": "a flag is a question for the next adjudication, never an automatic correction",
+   "ratified": "owner, 2026-08-26 (serving-wave session)"
   }
  },
  "documents": {
@@ -399,7 +456,8 @@
       "unit": null,
       "page": 7,
       "section": "A.8",
-      "status": "canonical"
+      "status": "canonical",
+      "cross_check": "not-in-document"
      },
      {
       "raw": "49,751,264",
@@ -439,7 +497,8 @@
       "unit": null,
       "page": 8,
       "section": "A.10 Grant",
-      "status": "canonical"
+      "status": "canonical",
+      "cross_check": "not-in-document"
      }
     ],
     "instruments": [
@@ -553,6 +612,47 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta": {
+    "ratified": "owner, 2026-08-26",
+    "cross_check": {
+     "independent": "pymupdf",
+     "checked": 4,
+     "verdicts": {
+      "confirmed-print": 2,
+      "not-in-document": 2
+     },
+     "flagged": [
+      {
+       "field": "gcf_funding_requested",
+       "raw": "40,511,264 USD",
+       "page": 7,
+       "status": "canonical",
+       "value": 40511264.0,
+       "verdict": "not-in-document",
+       "figure": "40511264",
+       "independent_page_prints": [
+        "40751264",
+        "8640844",
+        "46737340"
+       ]
+      },
+      {
+       "field": "financial_instruments",
+       "raw": "49,751,264",
+       "page": 8,
+       "status": "canonical",
+       "value": 49751264.0,
+       "verdict": "not-in-document",
+       "figure": "49751264",
+       "independent_page_prints": [
+        "40751264"
+       ]
+      }
+     ],
+     "meaning": "the figure the store publishes is not printed by an independent text extraction of the same PDF page. A question for the next adjudication, not a correction.",
+     "ratified": "owner, 2026-08-26 (serving-wave session)"
+    }
    },
    "meta_provenance": {
     "accredited_entity": {
@@ -1352,7 +1452,8 @@
       "unit": null,
       "page": 7,
       "section": "A.8",
-      "status": "canonical"
+      "status": "canonical",
+      "cross_check": "not-on-cited-page"
      },
      {
       "raw": "80.0 million USD",
@@ -1484,6 +1585,36 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta": {
+    "ratified": "owner, 2026-08-26",
+    "cross_check": {
+     "independent": "pymupdf",
+     "checked": 3,
+     "verdicts": {
+      "confirmed-print": 1,
+      "no-figure": 1,
+      "not-on-cited-page": 1
+     },
+     "flagged": [
+      {
+       "field": "gcf_funding_requested",
+       "raw": "50 USD",
+       "page": 7,
+       "status": "canonical",
+       "value": null,
+       "verdict": "not-on-cited-page",
+       "figure": "50",
+       "independent_page_prints": [
+        "20",
+        "30",
+        "80"
+       ]
+      }
+     ],
+     "meaning": "the figure the store publishes is not printed by an independent text extraction of the same PDF page. A question for the next adjudication, not a correction.",
+     "ratified": "owner, 2026-08-26 (serving-wave session)"
+    }
    },
    "meta_provenance": {
     "accredited_entity": {
@@ -1795,7 +1926,8 @@
       "unit": "million",
       "page": 7,
       "section": "A.7",
-      "status": "canonical"
+      "status": "canonical",
+      "cross_check": "not-in-document"
      }
     ],
     "project_size": [
@@ -1839,7 +1971,8 @@
       "unit": "million",
       "page": 8,
       "section": "rule:A.8",
-      "status": "canonical"
+      "status": "canonical",
+      "cross_check": "not-on-cited-page"
      }
     ],
     "date_of_submission": [
@@ -1887,6 +2020,49 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta": {
+    "ratified": "owner, 2026-08-26",
+    "cross_check": {
+     "independent": "pymupdf",
+     "checked": 2,
+     "verdicts": {
+      "not-in-document": 1,
+      "not-on-cited-page": 1
+     },
+     "flagged": [
+      {
+       "field": "total_financing",
+       "raw": "USD 350 million",
+       "page": 7,
+       "status": "canonical",
+       "value": 350000000.0,
+       "verdict": "not-in-document",
+       "figure": "350",
+       "independent_page_prints": [
+        "35",
+        "250",
+        "40"
+       ]
+      },
+      {
+       "field": "gcf_funding_requested",
+       "raw": "USD 180 million USD",
+       "page": 8,
+       "status": "canonical",
+       "value": 180000000.0,
+       "verdict": "not-on-cited-page",
+       "figure": "180",
+       "independent_page_prints": [
+        "10",
+        "18",
+        "150"
+       ]
+      }
+     ],
+     "meaning": "the figure the store publishes is not printed by an independent text extraction of the same PDF page. A question for the next adjudication, not a correction.",
+     "ratified": "owner, 2026-08-26 (serving-wave session)"
+    }
    },
    "meta_provenance": {
     "accredited_entity": {
@@ -1985,7 +2161,8 @@
       "unit": "million",
       "page": 6,
       "section": "A.8",
-      "status": "canonical"
+      "status": "canonical",
+      "cross_check": "not-in-document"
      },
      {
       "raw": "$51.1 million USD",
@@ -2045,7 +2222,8 @@
       "unit": "million",
       "page": 7,
       "section": "A.10 Grant",
-      "status": "canonical"
+      "status": "canonical",
+      "cross_check": "not-in-document"
      }
     ],
     "instruments": [
@@ -2126,6 +2304,49 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta": {
+    "ratified": "owner, 2026-08-26",
+    "cross_check": {
+     "independent": "pymupdf",
+     "checked": 3,
+     "verdicts": {
+      "confirmed-print": 1,
+      "not-in-document": 2
+     },
+     "flagged": [
+      {
+       "field": "gcf_funding_requested",
+       "raw": "40.15 million USD",
+       "page": 6,
+       "status": "canonical",
+       "value": 40150000.0,
+       "verdict": "not-in-document",
+       "figure": "4015",
+       "independent_page_prints": [
+        "4010",
+        "100",
+        "171"
+       ]
+      },
+      {
+       "field": "financial_instruments",
+       "raw": "$51.1 million USD",
+       "page": 7,
+       "status": "canonical",
+       "value": 51100000.0,
+       "verdict": "not-in-document",
+       "figure": "511",
+       "independent_page_prints": [
+        "11",
+        "10",
+        "12"
+       ]
+      }
+     ],
+     "meaning": "the figure the store publishes is not printed by an independent text extraction of the same PDF page. A question for the next adjudication, not a correction.",
+     "ratified": "owner, 2026-08-26 (serving-wave session)"
+    }
    },
    "meta_provenance": {
     "accredited_entity": {
@@ -2693,7 +2914,8 @@
       "unit": "million",
       "page": 5,
       "section": "A.7",
-      "status": "canonical"
+      "status": "canonical",
+      "cross_check": "not-on-cited-page"
      },
      {
       "raw": "$593.1 million",
@@ -2722,7 +2944,8 @@
       "unit": "million",
       "page": 5,
       "section": "A.8",
-      "status": "canonical"
+      "status": "canonical",
+      "cross_check": "not-in-document"
      },
      {
       "raw": "$279,000,000 USD",
@@ -2812,6 +3035,49 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta": {
+    "ratified": "owner, 2026-08-26",
+    "cross_check": {
+     "independent": "pymupdf",
+     "checked": 2,
+     "verdicts": {
+      "not-in-document": 1,
+      "not-on-cited-page": 1
+     },
+     "flagged": [
+      {
+       "field": "total_financing",
+       "raw": "$58.1 million USD",
+       "page": 5,
+       "status": "canonical",
+       "value": 58100000.0,
+       "verdict": "not-on-cited-page",
+       "figure": "581",
+       "independent_page_prints": [
+        "5981",
+        "21",
+        "50"
+       ]
+      },
+      {
+       "field": "gcf_funding_requested",
+       "raw": "$23.6 million USD",
+       "page": 5,
+       "status": "canonical",
+       "value": 23600000.0,
+       "verdict": "not-in-document",
+       "figure": "236",
+       "independent_page_prints": [
+        "21",
+        "25",
+        "30"
+       ]
+      }
+     ],
+     "meaning": "the figure the store publishes is not printed by an independent text extraction of the same PDF page. A question for the next adjudication, not a correction.",
+     "ratified": "owner, 2026-08-26 (serving-wave session)"
+    }
    },
    "meta_provenance": {
     "accredited_entity": {
@@ -3345,7 +3611,8 @@
       "unit": null,
       "page": 5,
       "section": "A.7",
-      "status": "canonical"
+      "status": "canonical",
+      "cross_check": "not-in-document"
      },
      {
       "raw": "33.911 million USD",
@@ -3538,6 +3805,35 @@
     "core_missing": [],
     "llm_fallback": false
    },
+   "meta": {
+    "ratified": "owner, 2026-08-26",
+    "cross_check": {
+     "independent": "pymupdf",
+     "checked": 3,
+     "verdicts": {
+      "confirmed-print": 2,
+      "not-in-document": 1
+     },
+     "flagged": [
+      {
+       "field": "total_financing",
+       "raw": "39,911,322 USD",
+       "page": 5,
+       "status": "canonical",
+       "value": 39911322.0,
+       "verdict": "not-in-document",
+       "figure": "39911322",
+       "independent_page_prints": [
+        "33911323",
+        "17533500",
+        "25000000"
+       ]
+      }
+     ],
+     "meaning": "the figure the store publishes is not printed by an independent text extraction of the same PDF page. A question for the next adjudication, not a correction.",
+     "ratified": "owner, 2026-08-26 (serving-wave session)"
+    }
+   },
    "meta_provenance": {
     "accredited_entity": {
      "page": 3,
@@ -3688,7 +3984,8 @@
        "page": 5,
        "section": "A.8",
        "status": "canonical"
-      }
+      },
+      "cross_check": "not-in-document"
      }
     ],
     "project_size": [
@@ -3710,7 +4007,8 @@
       "unit": null,
       "page": 5,
       "section": "A.10 Grant",
-      "status": "canonical"
+      "status": "canonical",
+      "cross_check": "not-in-document"
      },
      {
       "raw": "$27,000,000",
@@ -3883,7 +4181,47 @@
       "ratified": "owner, 2026-08-26"
      }
     ],
-    "ratified": "owner, 2026-08-26"
+    "ratified": "owner, 2026-08-26",
+    "cross_check": {
+     "independent": "pymupdf",
+     "checked": 3,
+     "verdicts": {
+      "confirmed-print": 1,
+      "not-in-document": 2
+     },
+     "flagged": [
+      {
+       "field": "gcf_funding_requested",
+       "raw": "18,591,556 USD",
+       "page": 46,
+       "status": "canonical",
+       "value": 18591556.0,
+       "verdict": "not-in-document",
+       "figure": "18591556",
+       "independent_page_prints": [
+        "16591556",
+        "2916571",
+        "1232364"
+       ],
+       "corrected": true
+      },
+      {
+       "field": "financial_instruments",
+       "raw": "$18,591,556",
+       "page": 5,
+       "status": "canonical",
+       "value": 18591556.0,
+       "verdict": "not-in-document",
+       "figure": "18591556",
+       "independent_page_prints": [
+        "16591556",
+        "19710637"
+       ]
+      }
+     ],
+     "meaning": "the figure the store publishes is not printed by an independent text extraction of the same PDF page. A question for the next adjudication, not a correction.",
+     "ratified": "owner, 2026-08-26 (serving-wave session)"
+    }
    },
    "meta_provenance": {
     "accredited_entity": {
@@ -3969,7 +4307,8 @@
       "unit": null,
       "page": 5,
       "section": "A.7",
-      "status": "canonical"
+      "status": "canonical",
+      "cross_check": "not-on-cited-page"
      },
      {
       "raw": "959.9 | million USD",
@@ -3998,7 +4337,8 @@
       "unit": null,
       "page": 5,
       "section": "A.8",
-      "status": "canonical"
+      "status": "canonical",
+      "cross_check": "not-in-document"
      },
      {
       "raw": "80 million USD",
@@ -4169,6 +4509,50 @@
     "core_missing": [],
     "llm_fallback": false
    },
+   "meta": {
+    "ratified": "owner, 2026-08-26",
+    "cross_check": {
+     "independent": "pymupdf",
+     "checked": 3,
+     "verdicts": {
+      "confirmed-print": 1,
+      "not-in-document": 1,
+      "not-on-cited-page": 1
+     },
+     "flagged": [
+      {
+       "field": "total_financing",
+       "raw": "999.9 USD",
+       "page": 5,
+       "status": "canonical",
+       "value": null,
+       "verdict": "not-on-cited-page",
+       "figure": "9999",
+       "independent_page_prints": [
+        "9599",
+        "109",
+        "1709"
+       ]
+      },
+      {
+       "field": "gcf_funding_requested",
+       "raw": "175.9 USD",
+       "page": 5,
+       "status": "canonical",
+       "value": null,
+       "verdict": "not-in-document",
+       "figure": "1759",
+       "independent_page_prints": [
+        "1709",
+        "109",
+        "100"
+       ]
+      }
+     ],
+     "meaning": "the figure the store publishes is not printed by an independent text extraction of the same PDF page. A question for the next adjudication, not a correction.",
+     "ratified": "owner, 2026-08-26 (serving-wave session)"
+    }
+   },
    "meta_provenance": {
     "accredited_entity": {
      "page": 3,
@@ -4266,7 +4650,8 @@
       "unit": null,
       "page": 5,
       "section": "A.7",
-      "status": "canonical"
+      "status": "canonical",
+      "cross_check": "not-in-document"
      },
      {
       "raw": "49,822,757 | million USD",
@@ -4378,6 +4763,35 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta": {
+    "ratified": "owner, 2026-08-26",
+    "cross_check": {
+     "independent": "pymupdf",
+     "checked": 2,
+     "verdicts": {
+      "confirmed-print": 1,
+      "not-in-document": 1
+     },
+     "flagged": [
+      {
+       "field": "total_financing",
+       "raw": "49,622,792 USD",
+       "page": 5,
+       "status": "canonical",
+       "value": 49622792.0,
+       "verdict": "not-in-document",
+       "figure": "49622792",
+       "independent_page_prints": [
+        "49622797",
+        "9662441",
+        "1364185"
+       ]
+      }
+     ],
+     "meaning": "the figure the store publishes is not printed by an independent text extraction of the same PDF page. A question for the next adjudication, not a correction.",
+     "ratified": "owner, 2026-08-26 (serving-wave session)"
+    }
    },
    "meta_provenance": {
     "accredited_entity": {
@@ -4677,7 +5091,8 @@
       "unit": null,
       "page": 5,
       "section": "A.7",
-      "status": "canonical"
+      "status": "canonical",
+      "cross_check": "not-in-document"
      },
      {
       "raw": "33,560,345 million USD",
@@ -4706,7 +5121,8 @@
       "unit": null,
       "page": 5,
       "section": "A.8",
-      "status": "canonical"
+      "status": "canonical",
+      "cross_check": "not-in-document"
      },
      {
       "raw": "30,902,775 million USD",
@@ -4787,6 +5203,46 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta": {
+    "ratified": "owner, 2026-08-26",
+    "cross_check": {
+     "independent": "pymupdf",
+     "checked": 2,
+     "verdicts": {
+      "not-in-document": 2
+     },
+     "flagged": [
+      {
+       "field": "total_financing",
+       "raw": "33,660,345 USD",
+       "page": 5,
+       "status": "canonical",
+       "value": 33660345.0,
+       "verdict": "not-in-document",
+       "figure": "33660345",
+       "independent_page_prints": [
+        "33560345",
+        "30902775"
+       ]
+      },
+      {
+       "field": "gcf_funding_requested",
+       "raw": "30,002,779 USD",
+       "page": 5,
+       "status": "canonical",
+       "value": 30002779.0,
+       "verdict": "not-in-document",
+       "figure": "30002779",
+       "independent_page_prints": [
+        "30902775",
+        "33560345"
+       ]
+      }
+     ],
+     "meaning": "the figure the store publishes is not printed by an independent text extraction of the same PDF page. A question for the next adjudication, not a correction.",
+     "ratified": "owner, 2026-08-26 (serving-wave session)"
+    }
    },
    "meta_provenance": {
     "accredited_entity": {
@@ -4878,7 +5334,8 @@
       "unit": "million",
       "page": 5,
       "section": "A.7",
-      "status": "canonical"
+      "status": "canonical",
+      "cross_check": "not-on-cited-page"
      },
      {
       "raw": "60.0 | million USD",
@@ -4991,6 +5448,35 @@
     "core_missing": [],
     "llm_fallback": false
    },
+   "meta": {
+    "ratified": "owner, 2026-08-26",
+    "cross_check": {
+     "independent": "pymupdf",
+     "checked": 2,
+     "verdicts": {
+      "confirmed-print": 1,
+      "not-on-cited-page": 1
+     },
+     "flagged": [
+      {
+       "field": "total_financing",
+       "raw": "68 million USD",
+       "page": 5,
+       "status": "canonical",
+       "value": 68000000.0,
+       "verdict": "not-on-cited-page",
+       "figure": "68",
+       "independent_page_prints": [
+        "60",
+        "10",
+        "11"
+       ]
+      }
+     ],
+     "meaning": "the figure the store publishes is not printed by an independent text extraction of the same PDF page. A question for the next adjudication, not a correction.",
+     "ratified": "owner, 2026-08-26 (serving-wave session)"
+    }
+   },
    "meta_provenance": {
     "accredited_entity": {
      "page": 3,
@@ -5070,7 +5556,8 @@
       "unit": null,
       "page": 5,
       "section": "A.7",
-      "status": "canonical"
+      "status": "canonical",
+      "cross_check": "not-in-document"
      },
      {
       "raw": "844.5 million USD",
@@ -5099,7 +5586,8 @@
       "unit": null,
       "page": 5,
       "section": "A.8",
-      "status": "canonical"
+      "status": "canonical",
+      "cross_check": "not-in-document"
      },
      {
       "raw": "USD 250 million",
@@ -5267,6 +5755,47 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta": {
+    "ratified": "owner, 2026-08-26",
+    "cross_check": {
+     "independent": "pymupdf",
+     "checked": 3,
+     "verdicts": {
+      "confirmed-print": 1,
+      "not-in-document": 2
+     },
+     "flagged": [
+      {
+       "field": "total_financing",
+       "raw": "941,000,000 USD",
+       "page": 5,
+       "status": "canonical",
+       "value": 941000000.0,
+       "verdict": "not-in-document",
+       "figure": "941000000",
+       "independent_page_prints": [
+        "944500000",
+        "137000000"
+       ]
+      },
+      {
+       "field": "gcf_funding_requested",
+       "raw": "132,000,000 USD",
+       "page": 5,
+       "status": "canonical",
+       "value": 132000000.0,
+       "verdict": "not-in-document",
+       "figure": "132000000",
+       "independent_page_prints": [
+        "137000000",
+        "944500000"
+       ]
+      }
+     ],
+     "meaning": "the figure the store publishes is not printed by an independent text extraction of the same PDF page. A question for the next adjudication, not a correction.",
+     "ratified": "owner, 2026-08-26 (serving-wave session)"
+    }
    },
    "meta_provenance": {
     "accredited_entity": {
@@ -5749,15 +6278,25 @@
     "total_financing": [
      {
       "raw": "143,327 million USD",
-      "value": null,
+      "value": 143327000.0,
       "currency": "USD",
       "unit": null,
       "page": 5,
       "section": "A.7.1",
-      "status": "canonical"
+      "status": "canonical",
+      "corrected": true,
+      "corrected_from": {
+       "raw": "143,327 million USD",
+       "value": null,
+       "currency": "USD",
+       "unit": null,
+       "page": 5,
+       "section": "A.7.1",
+       "status": "canonical"
+      }
      },
      {
-      "raw": "$143.4 million USD",
+      "raw": "143,4 | Million USD",
       "value": 143400000.0,
       "currency": "USD",
       "unit": "million",
@@ -5766,32 +6305,52 @@
       "status": "supporting"
      },
      {
-      "raw": "143,507 million",
+      "raw": "143,327 million USD",
       "value": null,
-      "currency": null,
+      "currency": "USD",
       "unit": null,
       "page": 73,
       "section": "rule:B.2(a)",
-      "status": "conflicting"
+      "status": "supporting"
      }
     ],
     "gcf_funding_requested": [
      {
       "raw": "82,849 million USD",
-      "value": null,
+      "value": 82849900.0,
       "currency": "USD",
       "unit": null,
       "page": 5,
       "section": "A.8.1",
-      "status": "canonical"
+      "status": "canonical",
+      "corrected": true,
+      "corrected_from": {
+       "raw": "82,849 million USD",
+       "value": null,
+       "currency": "USD",
+       "unit": null,
+       "page": 5,
+       "section": "A.8.1",
+       "status": "canonical"
+      },
+      "cross_check": "not-in-document"
      },
      {
-      "raw": "$423 million USD",
-      "value": 423000000.0,
+      "raw": "82,849.900 | million USD",
+      "value": null,
       "currency": "USD",
-      "unit": "million",
+      "unit": null,
       "page": 64,
       "section": "rule:C.1(a)",
+      "status": "supporting"
+     },
+     {
+      "raw": "82,850 million USD",
+      "value": null,
+      "currency": "USD",
+      "unit": null,
+      "page": 73,
+      "section": "rule:B.2(b)",
       "status": "supporting"
      }
     ],
@@ -5853,6 +6412,148 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta": {
+    "corrections": [
+     {
+      "id": "C67",
+      "field": "total_financing",
+      "layer": "fact-canonical",
+      "action": "value-fix",
+      "from": {
+       "raw": "143,327 million USD",
+       "value": null,
+       "currency": "USD",
+       "unit": null,
+       "page": 5,
+       "section": "A.7.1",
+       "status": "canonical"
+      },
+      "to": {
+       "raw": "143,327 million USD",
+       "value": 143327000.0,
+       "currency": "USD",
+       "unit": null,
+       "page": 5,
+       "section": "A.7.1",
+       "status": "canonical"
+      },
+      "page_of_quote": 5,
+      "quote": "p5: \"**A.7.1 Total financing (GCF + co-finance):** 143,327 million USD\" — decimal-comma form, i.e. USD 143.327 million",
+      "adjudication_note": "the print is CORRECT and stays; only the parsed value was missing. '143,327million USD' is the cover's decimal-comma form of USD 143.327 million, so the figure could not be ranked in any extremum question while it carried no value",
+      "row_ref": {
+       "file": "scratchpad/serving_wave_adjudication.json",
+       "pointer": "rows[9]",
+       "md_table": "Q1",
+       "verdict": "CORRECT print, unparsed value",
+       "proposed_action": "value-fix"
+      },
+      "ratified": "owner, 2026-08-26 (serving-wave session)"
+     },
+     {
+      "id": "C68",
+      "field": "gcf_funding_requested",
+      "layer": "fact-canonical",
+      "action": "value-fix",
+      "from": {
+       "raw": "82,849 million USD",
+       "value": null,
+       "currency": "USD",
+       "unit": null,
+       "page": 5,
+       "section": "A.8.1",
+       "status": "canonical"
+      },
+      "to": {
+       "raw": "82,849 million USD",
+       "value": 82849900.0,
+       "currency": "USD",
+       "unit": null,
+       "page": 5,
+       "section": "A.8.1",
+       "status": "canonical"
+      },
+      "page_of_quote": 5,
+      "quote": "pymupdf p5: \"A.8. Total GCF funding requested — 82, 849.900 million USD\"; qwen p65 prints \"82,849,900\"",
+      "adjudication_note": "the mapping is CORRECT and the print stays; qwen truncated the '.900' the cover prints, and the value was never parsed",
+      "row_ref": {
+       "file": "scratchpad/serving_wave_adjudication.json",
+       "pointer": "rows[10]",
+       "md_table": "Q1",
+       "verdict": "CORRECT mapping, unparsed value (qwen truncated .900)",
+       "proposed_action": "value-fix"
+      },
+      "ratified": "owner, 2026-08-26 (serving-wave session)"
+     },
+     {
+      "id": "C69",
+      "field": "gcf_funding_requested",
+      "layer": "fact-supporting",
+      "action": "drop-candidate",
+      "from": null,
+      "to": null,
+      "page_of_quote": 64,
+      "quote": "p64 (independent): \"(a) Requested GCF funding | 82,849.900 | million USD ($)\"",
+      "adjudication_note": "fabricated by the VLM: the true C.1(a) row prints 82,849.900 million USD. Re-extract p64",
+      "row_ref": {
+       "file": "scratchpad/serving_wave_adjudication.json",
+       "pointer": "rows[11]",
+       "md_table": "Q1",
+       "verdict": "WRONG (fabricated by the VLM)",
+       "proposed_action": "drop + re-extract p64"
+      },
+      "ratified": "owner, 2026-08-26 (serving-wave session)",
+      "resolved_by_reextraction": "the re-extraction of p.64 removed the print this row was ratified to drop"
+     },
+     {
+      "id": "C70",
+      "field": "total_financing",
+      "layer": "fact-conflicting",
+      "action": "drop-candidate",
+      "from": null,
+      "to": null,
+      "page_of_quote": 73,
+      "quote": "p73 (independent): the E.2.2 table prints no such row",
+      "adjudication_note": "fabricated by the VLM out of the E.2.2 table; this row is the whole of FP162's total-financing 'conflict', which dissolves with it. Re-extract p73",
+      "row_ref": {
+       "file": "scratchpad/serving_wave_adjudication.json",
+       "pointer": "rows[13]",
+       "md_table": "Q1",
+       "verdict": "WRONG (fabricated)",
+       "proposed_action": "drop + re-extract p73"
+      },
+      "ratified": "owner, 2026-08-26 (serving-wave session)",
+      "resolved_by_reextraction": "the re-extraction of p.73 removed the print this row was ratified to drop"
+     }
+    ],
+    "ratified": "owner, 2026-08-26",
+    "cross_check": {
+     "independent": "pymupdf",
+     "checked": 2,
+     "verdicts": {
+      "confirmed-print": 1,
+      "not-in-document": 1
+     },
+     "flagged": [
+      {
+       "field": "gcf_funding_requested",
+       "raw": "82,849 million USD",
+       "page": 5,
+       "status": "canonical",
+       "value": 82849900.0,
+       "verdict": "not-in-document",
+       "figure": "82849",
+       "independent_page_prints": [
+        "2020",
+        "2021",
+        "99287"
+       ],
+       "corrected": true
+      }
+     ],
+     "meaning": "the figure the store publishes is not printed by an independent text extraction of the same PDF page. A question for the next adjudication, not a correction.",
+     "ratified": "owner, 2026-08-26 (serving-wave session)"
+    }
    },
    "meta_provenance": {
     "accredited_entity": {
@@ -5954,7 +6655,8 @@
       "unit": null,
       "page": 5,
       "section": "A.7",
-      "status": "canonical"
+      "status": "canonical",
+      "cross_check": "not-in-document"
      },
      {
       "raw": "$11,386,086 million USD",
@@ -5974,7 +6676,8 @@
       "unit": null,
       "page": 5,
       "section": "A.8",
-      "status": "canonical"
+      "status": "canonical",
+      "cross_check": "not-in-document"
      }
     ],
     "financial_instruments": [
@@ -5985,7 +6688,8 @@
       "unit": null,
       "page": 5,
       "section": "A.10 Grant",
-      "status": "canonical"
+      "status": "canonical",
+      "cross_check": "not-in-document"
      }
     ],
     "instruments": [
@@ -6088,6 +6792,62 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta": {
+    "ratified": "owner, 2026-08-26",
+    "cross_check": {
+     "independent": "pymupdf",
+     "checked": 3,
+     "verdicts": {
+      "not-in-document": 3
+     },
+     "flagged": [
+      {
+       "field": "total_financing",
+       "raw": "$26,787,986 USD",
+       "page": 5,
+       "status": "canonical",
+       "value": 26787986.0,
+       "verdict": "not-in-document",
+       "figure": "26787986",
+       "independent_page_prints": [
+        "52767986",
+        "71386086",
+        "9788191"
+       ]
+      },
+      {
+       "field": "gcf_funding_requested",
+       "raw": "$26,787,986 USD",
+       "page": 5,
+       "status": "canonical",
+       "value": 26787986.0,
+       "verdict": "not-in-document",
+       "figure": "26787986",
+       "independent_page_prints": [
+        "52767986",
+        "71386086",
+        "9788191"
+       ]
+      },
+      {
+       "field": "financial_instruments",
+       "raw": "$26,787,986 USD",
+       "page": 5,
+       "status": "canonical",
+       "value": 26787986.0,
+       "verdict": "not-in-document",
+       "figure": "26787986",
+       "independent_page_prints": [
+        "52767986",
+        "71386086",
+        "9788191"
+       ]
+      }
+     ],
+     "meaning": "the figure the store publishes is not printed by an independent text extraction of the same PDF page. A question for the next adjudication, not a correction.",
+     "ratified": "owner, 2026-08-26 (serving-wave session)"
+    }
    },
    "meta_provenance": {
     "accredited_entity": {
@@ -6391,7 +7151,8 @@
       "unit": null,
       "page": 5,
       "section": "A.7",
-      "status": "canonical"
+      "status": "canonical",
+      "cross_check": "not-in-document"
      },
      {
       "raw": "USD 46,587,138",
@@ -6566,6 +7327,34 @@
     "core_missing": [],
     "llm_fallback": false
    },
+   "meta": {
+    "ratified": "owner, 2026-08-26",
+    "cross_check": {
+     "independent": "pymupdf",
+     "checked": 3,
+     "verdicts": {
+      "confirmed-print": 2,
+      "not-in-document": 1
+     },
+     "flagged": [
+      {
+       "field": "total_financing",
+       "raw": "48,567,138",
+       "page": 5,
+       "status": "canonical",
+       "value": 48567138.0,
+       "verdict": "not-in-document",
+       "figure": "48567138",
+       "independent_page_prints": [
+        "46567138",
+        "28988852"
+       ]
+      }
+     ],
+     "meaning": "the figure the store publishes is not printed by an independent text extraction of the same PDF page. A question for the next adjudication, not a correction.",
+     "ratified": "owner, 2026-08-26 (serving-wave session)"
+    }
+   },
    "meta_provenance": {
     "accredited_entity": {
      "page": 3,
@@ -6696,7 +7485,8 @@
       "unit": "million",
       "page": 7,
       "section": "A.8",
-      "status": "canonical"
+      "status": "canonical",
+      "cross_check": "not-in-document"
      },
      {
       "raw": "$30",
@@ -6829,6 +7619,35 @@
     "core_missing": [],
     "llm_fallback": false
    },
+   "meta": {
+    "ratified": "owner, 2026-08-26",
+    "cross_check": {
+     "independent": "pymupdf",
+     "checked": 3,
+     "verdicts": {
+      "confirmed-print": 2,
+      "not-in-document": 1
+     },
+     "flagged": [
+      {
+       "field": "gcf_funding_requested",
+       "raw": "$35.6 MILLION USD",
+       "page": 7,
+       "status": "canonical",
+       "value": 35600000.0,
+       "verdict": "not-in-document",
+       "figure": "356",
+       "independent_page_prints": [
+        "15",
+        "16",
+        "30"
+       ]
+      }
+     ],
+     "meaning": "the figure the store publishes is not printed by an independent text extraction of the same PDF page. A question for the next adjudication, not a correction.",
+     "ratified": "owner, 2026-08-26 (serving-wave session)"
+    }
+   },
    "meta_provenance": {
     "accredited_entity": {
      "page": 3,
@@ -6908,7 +7727,8 @@
       "unit": null,
       "page": 5,
       "section": "A.7",
-      "status": "canonical"
+      "status": "canonical",
+      "cross_check": "not-in-document"
      }
     ],
     "gcf_funding_requested": [
@@ -7000,6 +7820,34 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta": {
+    "ratified": "owner, 2026-08-26",
+    "cross_check": {
+     "independent": "pymupdf",
+     "checked": 2,
+     "verdicts": {
+      "confirmed-print": 1,
+      "not-in-document": 1
+     },
+     "flagged": [
+      {
+       "field": "total_financing",
+       "raw": "$44,299,220 USD",
+       "page": 5,
+       "status": "canonical",
+       "value": 44299220.0,
+       "verdict": "not-in-document",
+       "figure": "44299220",
+       "independent_page_prints": [
+        "44299229",
+        "23927294"
+       ]
+      }
+     ],
+     "meaning": "the figure the store publishes is not printed by an independent text extraction of the same PDF page. A question for the next adjudication, not a correction.",
+     "ratified": "owner, 2026-08-26 (serving-wave session)"
+    }
    },
    "meta_provenance": {
     "accredited_entity": {
@@ -7428,7 +8276,8 @@
       "unit": null,
       "page": 8,
       "section": "A.10 Grant",
-      "status": "canonical"
+      "status": "canonical",
+      "cross_check": "not-in-document"
      }
     ],
     "instruments": [
@@ -7521,6 +8370,33 @@
     "core_missing": [],
     "llm_fallback": false
    },
+   "meta": {
+    "ratified": "owner, 2026-08-26",
+    "cross_check": {
+     "independent": "pymupdf",
+     "checked": 3,
+     "verdicts": {
+      "confirmed-print": 2,
+      "not-in-document": 1
+     },
+     "flagged": [
+      {
+       "field": "financial_instruments",
+       "raw": "$63,211,411 USD",
+       "page": 8,
+       "status": "canonical",
+       "value": 63211411.0,
+       "verdict": "not-in-document",
+       "figure": "63211411",
+       "independent_page_prints": [
+        "63211141"
+       ]
+      }
+     ],
+     "meaning": "the figure the store publishes is not printed by an independent text extraction of the same PDF page. A question for the next adjudication, not a correction.",
+     "ratified": "owner, 2026-08-26 (serving-wave session)"
+    }
+   },
    "meta_provenance": {
     "accredited_entity": {
      "page": 3,
@@ -7600,7 +8476,8 @@
       "unit": "million",
       "page": 8,
       "section": "A.7",
-      "status": "canonical"
+      "status": "canonical",
+      "cross_check": "not-on-cited-page"
      }
     ],
     "gcf_funding_requested": [
@@ -7705,6 +8582,35 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta": {
+    "ratified": "owner, 2026-08-26",
+    "cross_check": {
+     "independent": "pymupdf",
+     "checked": 2,
+     "verdicts": {
+      "confirmed-print": 1,
+      "not-on-cited-page": 1
+     },
+     "flagged": [
+      {
+       "field": "total_financing",
+       "raw": "$35 million USD",
+       "page": 8,
+       "status": "canonical",
+       "value": 35000000.0,
+       "verdict": "not-on-cited-page",
+       "figure": "35",
+       "independent_page_prints": [
+        "15",
+        "25",
+        "30"
+       ]
+      }
+     ],
+     "meaning": "the figure the store publishes is not printed by an independent text extraction of the same PDF page. A question for the next adjudication, not a correction.",
+     "ratified": "owner, 2026-08-26 (serving-wave session)"
+    }
    },
    "meta_provenance": {
     "accredited_entity": {
@@ -7880,7 +8786,8 @@
       "unit": "million",
       "page": 105,
       "section": "rule:B.2(b)",
-      "status": "canonical"
+      "status": "canonical",
+      "cross_check": "not-on-cited-page"
      }
     ],
     "date_of_submission": [
@@ -7939,6 +8846,35 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta": {
+    "ratified": "owner, 2026-08-26",
+    "cross_check": {
+     "independent": "pymupdf",
+     "checked": 3,
+     "verdicts": {
+      "confirmed-print": 2,
+      "not-on-cited-page": 1
+     },
+     "flagged": [
+      {
+       "field": "gcf_funding_requested",
+       "raw": "172 million USD",
+       "page": 105,
+       "status": "canonical",
+       "value": 172000000.0,
+       "verdict": "not-on-cited-page",
+       "figure": "172",
+       "independent_page_prints": [
+        "17",
+        "142",
+        "175"
+       ]
+      }
+     ],
+     "meaning": "the figure the store publishes is not printed by an independent text extraction of the same PDF page. A question for the next adjudication, not a correction.",
+     "ratified": "owner, 2026-08-26 (serving-wave session)"
+    }
    },
    "meta_provenance": {
     "accredited_entity": {
@@ -8037,7 +8973,8 @@
       "unit": null,
       "page": 5,
       "section": "A.8",
-      "status": "canonical"
+      "status": "canonical",
+      "cross_check": "not-in-document"
      },
      {
       "raw": "26,654 million USD",
@@ -8179,6 +9116,35 @@
     "core_missing": [],
     "llm_fallback": false
    },
+   "meta": {
+    "ratified": "owner, 2026-08-26",
+    "cross_check": {
+     "independent": "pymupdf",
+     "checked": 3,
+     "verdicts": {
+      "confirmed-print": 2,
+      "not-in-document": 1
+     },
+     "flagged": [
+      {
+       "field": "gcf_funding_requested",
+       "raw": "28,654 million USD",
+       "page": 5,
+       "status": "canonical",
+       "value": null,
+       "verdict": "not-in-document",
+       "figure": "28654",
+       "independent_page_prints": [
+        "26654",
+        "4654",
+        "49654"
+       ]
+      }
+     ],
+     "meaning": "the figure the store publishes is not printed by an independent text extraction of the same PDF page. A question for the next adjudication, not a correction.",
+     "ratified": "owner, 2026-08-26 (serving-wave session)"
+    }
+   },
    "meta_provenance": {
     "accredited_entity": {
      "page": 3,
@@ -8314,7 +9280,8 @@
       "unit": "million",
       "page": 5,
       "section": "A7",
-      "status": "canonical"
+      "status": "canonical",
+      "cross_check": "not-in-document"
      },
      {
       "raw": "$100,000,000",
@@ -8457,6 +9424,35 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta": {
+    "ratified": "owner, 2026-08-26",
+    "cross_check": {
+     "independent": "pymupdf",
+     "checked": 3,
+     "verdicts": {
+      "confirmed-print": 2,
+      "not-in-document": 1
+     },
+     "flagged": [
+      {
+       "field": "total_financing",
+       "raw": "720 M USD",
+       "page": 5,
+       "status": "canonical",
+       "value": 720000000.0,
+       "verdict": "not-in-document",
+       "figure": "720",
+       "independent_page_prints": [
+        "20",
+        "72",
+        "750"
+       ]
+      }
+     ],
+     "meaning": "the figure the store publishes is not printed by an independent text extraction of the same PDF page. A question for the next adjudication, not a correction.",
+     "ratified": "owner, 2026-08-26 (serving-wave session)"
+    }
    },
    "meta_provenance": {
     "accredited_entity": {
@@ -10958,56 +11954,65 @@
       "section": "doc_id",
       "status": "canonical"
      }
+    ],
+    "gcf_funding_requested": [
+     {
+      "raw": "Total Budget | $82,000,000",
+      "value": 82000000.0,
+      "currency": "USD",
+      "unit": null,
+      "page": 90,
+      "section": "Table 25 (project budget)",
+      "status": "supporting",
+      "added": true
+     }
     ]
    },
    "coverage": {
     "era": "REDD+ RBP block (RBP pilot template v1.0)",
     "pages": 261,
-    "fields": 6,
+    "fields": 7,
     "core_found": [
      "title",
      "countries",
-     "accredited_entity"
+     "accredited_entity",
+     "gcf_funding_requested"
     ],
     "core_missing": [
-     "total_financing",
-     "gcf_funding_requested"
+     "total_financing"
     ],
     "llm_fallback": true
    },
    "meta": {
-    "confirmed_absence": {
-     "total_financing": {
-      "pages_checked": [
-       1,
-       16
-      ],
-      "evidence": "REDD+ RBP pilot template: the cover (p3) prints Programme Title / Country / Results period / NDA / REDD-plus entity / Accredited Entity and no financing field; sections A-E are carbon accounting; no A.7/A.8/B.2/C.1 block exists anywhere in the document",
-      "group": "REDD+ RBP financing",
-      "row_ref": {
-       "file": "scratchpad/phase3_worklist.json",
-       "pointer": "bucket_2_the_68_core_missing_documents",
-       "verdict": "b_confirmed_absence_candidate"
-      },
-      "ratified": "owner, 2026-08-26"
-     },
-     "gcf_funding_requested": {
-      "pages_checked": [
-       1,
-       16
-      ],
-      "evidence": "same: the RBP payment amount appears only in narrative and in the section D/E budget, never under a template label",
-      "group": "REDD+ RBP financing",
-      "row_ref": {
-       "file": "scratchpad/phase3_worklist.json",
-       "pointer": "bucket_2_the_68_core_missing_documents",
-       "verdict": "b_confirmed_absence_candidate"
-      },
-      "ratified": "owner, 2026-08-26"
-     }
-    },
-    "ratified": "owner, 2026-08-26",
     "corrections": [
+     {
+      "id": "C74",
+      "field": "gcf_funding_requested",
+      "layer": "fact-supporting",
+      "action": "add-candidate",
+      "from": null,
+      "to": {
+       "raw": "Total Budget | $82,000,000",
+       "value": 82000000.0,
+       "currency": "USD",
+       "unit": null,
+       "page": 90,
+       "section": "Table 25 (project budget)",
+       "status": "supporting"
+      },
+      "page_of_quote": 90,
+      "quote": "p90: \"## Total Budget | $82,000,000 |\" (pymupdf p90: \"$ 82,000,000\")",
+      "adjudication_note": "the FP142 rider named in the same disposition: identical shape to FP100 — ratified absence pair plus a confirmed top-level figure (C26/C27, p90) — so it takes the identical treatment, and the RBP family stays consistent",
+      "row_ref": {
+       "file": "scratchpad/serving_wave_adjudication.json",
+       "pointer": "rows[24]",
+       "md_table": "Q2",
+       "verdict": "absence RIGHT at the cover-field layer; evidence sentence 'never under a template label' contradicted by Table 19",
+       "proposed_action": "add-candidate (supporting) gcf_funding_requested p103 'GCF RBP: 96,452,228' sec 'AE-fee budget (Table 19)' -> the builder's existing 'absence never published over a print' rule stops publication; absence ROW stays"
+      },
+      "ratified": "owner, 2026-08-26 (serving-wave session)",
+      "declared_status": "supporting"
+     },
      {
       "id": "C25",
       "field": "title",
@@ -11046,7 +12051,24 @@
       },
       "ratified": "owner, 2026-08-26"
      }
-    ]
+    ],
+    "confirmed_absence": {
+     "total_financing": {
+      "pages_checked": [
+       1,
+       16
+      ],
+      "evidence": "REDD+ RBP pilot template: the cover (p3) prints Programme Title / Country / Results period / NDA / REDD-plus entity / Accredited Entity and no financing field; sections A-E are carbon accounting; no A.7/A.8/B.2/C.1 block exists anywhere in the document",
+      "group": "REDD+ RBP financing",
+      "row_ref": {
+       "file": "scratchpad/phase3_worklist.json",
+       "pointer": "bucket_2_the_68_core_missing_documents",
+       "verdict": "b_confirmed_absence_candidate"
+      },
+      "ratified": "owner, 2026-08-26"
+     }
+    },
+    "ratified": "owner, 2026-08-26"
    },
    "meta_provenance": {
     "accredited_entity": {
@@ -11394,7 +12416,8 @@
       "unit": null,
       "page": 7,
       "section": "A.7",
-      "status": "canonical"
+      "status": "canonical",
+      "cross_check": "not-in-document"
      },
      {
       "raw": "$1,016,850 | million USD",
@@ -11414,7 +12437,8 @@
       "unit": null,
       "page": 7,
       "section": "A.6",
-      "status": "canonical"
+      "status": "canonical",
+      "cross_check": "not-in-document"
      },
      {
       "raw": "USD 354,030,000 USD",
@@ -11584,6 +12608,49 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta": {
+    "ratified": "owner, 2026-08-26",
+    "cross_check": {
+     "independent": "pymupdf",
+     "checked": 3,
+     "verdicts": {
+      "confirmed-print": 1,
+      "not-in-document": 2
+     },
+     "flagged": [
+      {
+       "field": "total_financing",
+       "raw": "USD 250,920,000 USD",
+       "page": 7,
+       "status": "canonical",
+       "value": 250920000.0,
+       "verdict": "not-in-document",
+       "figure": "250920000",
+       "independent_page_prints": [
+        "252500000",
+        "258030000",
+        "1016890000"
+       ]
+      },
+      {
+       "field": "gcf_funding_requested",
+       "raw": "USD 180,890,000 USD",
+       "page": 7,
+       "status": "canonical",
+       "value": 180890000.0,
+       "verdict": "not-in-document",
+       "figure": "180890000",
+       "independent_page_prints": [
+        "1016890000",
+        "258030000",
+        "252500000"
+       ]
+      }
+     ],
+     "meaning": "the figure the store publishes is not printed by an independent text extraction of the same PDF page. A question for the next adjudication, not a correction.",
+     "ratified": "owner, 2026-08-26 (serving-wave session)"
+    }
    },
    "meta_provenance": {
     "accredited_entity": {
@@ -12024,7 +13091,8 @@
       "unit": null,
       "page": 6,
       "section": "A.8",
-      "status": "canonical"
+      "status": "canonical",
+      "cross_check": "not-in-document"
      },
      {
       "raw": "EUR 75,443,076",
@@ -12064,7 +13132,8 @@
       "unit": null,
       "page": 6,
       "section": "A.10 Grant",
-      "status": "canonical"
+      "status": "canonical",
+      "cross_check": "not-in-document"
      },
      {
       "raw": "EUR 73,623,231",
@@ -12174,6 +13243,49 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta": {
+    "ratified": "owner, 2026-08-26",
+    "cross_check": {
+     "independent": "pymupdf",
+     "checked": 3,
+     "verdicts": {
+      "confirmed-print": 1,
+      "not-in-document": 2
+     },
+     "flagged": [
+      {
+       "field": "gcf_funding_requested",
+       "raw": "55,415,176 Eur",
+       "page": 6,
+       "status": "canonical",
+       "value": 55415176.0,
+       "verdict": "not-in-document",
+       "figure": "55415176",
+       "independent_page_prints": [
+        "75445176",
+        "1127447",
+        "1821945"
+       ]
+      },
+      {
+       "field": "financial_instruments",
+       "raw": "EUR 1,621,945",
+       "page": 6,
+       "status": "canonical",
+       "value": 1621945.0,
+       "verdict": "not-in-document",
+       "figure": "1621945",
+       "independent_page_prints": [
+        "1821945",
+        "1127447",
+        "73623231"
+       ]
+      }
+     ],
+     "meaning": "the figure the store publishes is not printed by an independent text extraction of the same PDF page. A question for the next adjudication, not a correction.",
+     "ratified": "owner, 2026-08-26 (serving-wave session)"
+    }
    },
    "meta_provenance": {
     "accredited_entity": {
@@ -12504,7 +13616,8 @@
       "unit": null,
       "page": 5,
       "section": "A.7",
-      "status": "canonical"
+      "status": "canonical",
+      "cross_check": "not-in-document"
      },
      {
       "raw": "286.24 | million USD",
@@ -12533,7 +13646,8 @@
       "unit": null,
       "page": 5,
       "section": "A.8",
-      "status": "canonical"
+      "status": "canonical",
+      "cross_check": "not-in-document"
      }
     ],
     "financial_instruments": [
@@ -12544,7 +13658,8 @@
       "unit": null,
       "page": 5,
       "section": "A.10 Equity",
-      "status": "canonical"
+      "status": "canonical",
+      "cross_check": "not-in-document"
      },
      {
       "raw": "58,063,337 USD",
@@ -12665,6 +13780,62 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta": {
+    "ratified": "owner, 2026-08-26",
+    "cross_check": {
+     "independent": "pymupdf",
+     "checked": 3,
+     "verdicts": {
+      "not-in-document": 3
+     },
+     "flagged": [
+      {
+       "field": "total_financing",
+       "raw": "295,237,802 USD",
+       "page": 5,
+       "status": "canonical",
+       "value": 295237802.0,
+       "verdict": "not-in-document",
+       "figure": "295237802",
+       "independent_page_prints": [
+        "296237602",
+        "165237592",
+        "26200000"
+       ]
+      },
+      {
+       "field": "gcf_funding_requested",
+       "raw": "165,237,562 USD",
+       "page": 5,
+       "status": "canonical",
+       "value": 165237562.0,
+       "verdict": "not-in-document",
+       "figure": "165237562",
+       "independent_page_prints": [
+        "165237592",
+        "296237602",
+        "26200000"
+       ]
+      },
+      {
+       "field": "financial_instruments",
+       "raw": "187,174,225 USD",
+       "page": 5,
+       "status": "canonical",
+       "value": 187174225.0,
+       "verdict": "not-in-document",
+       "figure": "187174225",
+       "independent_page_prints": [
+        "107174255",
+        "165237592",
+        "58063337"
+       ]
+      }
+     ],
+     "meaning": "the figure the store publishes is not printed by an independent text extraction of the same PDF page. A question for the next adjudication, not a correction.",
+     "ratified": "owner, 2026-08-26 (serving-wave session)"
+    }
    },
    "meta_provenance": {
     "accredited_entity": {
@@ -14365,7 +15536,8 @@
       "unit": null,
       "page": 5,
       "section": "A7",
-      "status": "canonical"
+      "status": "canonical",
+      "cross_check": "not-in-document"
      },
      {
       "raw": "$21,398,843",
@@ -14524,6 +15696,34 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta": {
+    "ratified": "owner, 2026-08-26",
+    "cross_check": {
+     "independent": "pymupdf",
+     "checked": 2,
+     "verdicts": {
+      "confirmed-print": 1,
+      "not-in-document": 1
+     },
+     "flagged": [
+      {
+       "field": "total_financing",
+       "raw": "USD 23,398,843",
+       "page": 5,
+       "status": "canonical",
+       "value": 23398843.0,
+       "verdict": "not-in-document",
+       "figure": "23398843",
+       "independent_page_prints": [
+        "21398843",
+        "17198843"
+       ]
+      }
+     ],
+     "meaning": "the figure the store publishes is not printed by an independent text extraction of the same PDF page. A question for the next adjudication, not a correction.",
+     "ratified": "owner, 2026-08-26 (serving-wave session)"
+    }
    },
    "meta_provenance": {
     "accredited_entity": {
@@ -15079,7 +16279,8 @@
       "unit": null,
       "page": 6,
       "section": "A.7",
-      "status": "canonical"
+      "status": "canonical",
+      "cross_check": "not-in-document"
      },
      {
       "raw": "119,914 million USD",
@@ -15108,7 +16309,8 @@
       "unit": null,
       "page": 6,
       "section": "A.8",
-      "status": "canonical"
+      "status": "canonical",
+      "cross_check": "not-in-document"
      }
     ],
     "project_size": [
@@ -15200,6 +16402,48 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta": {
+    "ratified": "owner, 2026-08-26",
+    "cross_check": {
+     "independent": "pymupdf",
+     "checked": 2,
+     "verdicts": {
+      "not-in-document": 2
+     },
+     "flagged": [
+      {
+       "field": "total_financing",
+       "raw": "$139,914,000 USD",
+       "page": 6,
+       "status": "canonical",
+       "value": 139914000.0,
+       "verdict": "not-in-document",
+       "figure": "139914000",
+       "independent_page_prints": [
+        "119914000",
+        "3820679080",
+        "5171323788"
+       ]
+      },
+      {
+       "field": "gcf_funding_requested",
+       "raw": "$38,266,790.80 USD",
+       "page": 6,
+       "status": "canonical",
+       "value": 38266790.8,
+       "verdict": "not-in-document",
+       "figure": "3826679080",
+       "independent_page_prints": [
+        "3820679080",
+        "119914000",
+        "5171323788"
+       ]
+      }
+     ],
+     "meaning": "the figure the store publishes is not printed by an independent text extraction of the same PDF page. A question for the next adjudication, not a correction.",
+     "ratified": "owner, 2026-08-26 (serving-wave session)"
+    }
    },
    "meta_provenance": {
     "accredited_entity": {
@@ -15351,7 +16595,8 @@
       "unit": "million",
       "page": 6,
       "section": "A.10 Grant",
-      "status": "canonical"
+      "status": "canonical",
+      "cross_check": "not-in-document"
      },
      {
       "raw": "€8.7 million",
@@ -15461,6 +16706,35 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta": {
+    "ratified": "owner, 2026-08-26",
+    "cross_check": {
+     "independent": "pymupdf",
+     "checked": 3,
+     "verdicts": {
+      "confirmed-print": 2,
+      "not-in-document": 1
+     },
+     "flagged": [
+      {
+       "field": "financial_instruments",
+       "raw": "€7.25 million",
+       "page": 6,
+       "status": "canonical",
+       "value": 7250000.0,
+       "verdict": "not-in-document",
+       "figure": "725",
+       "independent_page_prints": [
+        "4725",
+        "12",
+        "15"
+       ]
+      }
+     ],
+     "meaning": "the figure the store publishes is not printed by an independent text extraction of the same PDF page. A question for the next adjudication, not a correction.",
+     "ratified": "owner, 2026-08-26 (serving-wave session)"
+    }
    },
    "meta_provenance": {
     "accredited_entity": {
@@ -15841,7 +17115,8 @@
       "unit": null,
       "page": 13,
       "section": "rule:C.1(b)",
-      "status": "canonical"
+      "status": "canonical",
+      "cross_check": "not-in-document"
      }
     ],
     "gcf_funding_requested": [
@@ -15909,6 +17184,35 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta": {
+    "ratified": "owner, 2026-08-26",
+    "cross_check": {
+     "independent": "pymupdf",
+     "checked": 3,
+     "verdicts": {
+      "confirmed-print": 2,
+      "not-in-document": 1
+     },
+     "flagged": [
+      {
+       "field": "co_financing",
+       "raw": "12,200,000 | USD",
+       "page": 13,
+       "status": "canonical",
+       "value": 12200000.0,
+       "verdict": "not-in-document",
+       "figure": "12200000",
+       "independent_page_prints": [
+        "9200000",
+        "39775000",
+        "48975000"
+       ]
+      }
+     ],
+     "meaning": "the figure the store publishes is not printed by an independent text extraction of the same PDF page. A question for the next adjudication, not a correction.",
+     "ratified": "owner, 2026-08-26 (serving-wave session)"
+    }
    },
    "meta_provenance": {
     "accredited_entity": {
@@ -16971,7 +18275,8 @@
       "unit": "million",
       "page": 70,
       "section": "rule:B.2(a)",
-      "status": "canonical"
+      "status": "canonical",
+      "cross_check": "not-in-document"
      }
     ],
     "date_of_submission": [
@@ -17028,6 +18333,35 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta": {
+    "ratified": "owner, 2026-08-26",
+    "cross_check": {
+     "independent": "pymupdf",
+     "checked": 2,
+     "verdicts": {
+      "confirmed-print": 1,
+      "not-in-document": 1
+     },
+     "flagged": [
+      {
+       "field": "total_financing",
+       "raw": "US$ 47.24 million",
+       "page": 70,
+       "status": "canonical",
+       "value": 47240000.0,
+       "verdict": "not-in-document",
+       "figure": "4724",
+       "independent_page_prints": [
+        "4734",
+        "413",
+        "804"
+       ]
+      }
+     ],
+     "meaning": "the figure the store publishes is not printed by an independent text extraction of the same PDF page. A question for the next adjudication, not a correction.",
+     "ratified": "owner, 2026-08-26 (serving-wave session)"
+    }
    },
    "meta_provenance": {
     "accredited_entity": {
@@ -17159,7 +18493,8 @@
       "unit": "million",
       "page": 5,
       "section": "A8",
-      "status": "canonical"
+      "status": "canonical",
+      "cross_check": "not-in-document"
      },
      {
       "raw": "USD 250 million",
@@ -17269,6 +18604,35 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta": {
+    "ratified": "owner, 2026-08-26",
+    "cross_check": {
+     "independent": "pymupdf",
+     "checked": 2,
+     "verdicts": {
+      "confirmed-print": 1,
+      "not-in-document": 1
+     },
+     "flagged": [
+      {
+       "field": "gcf_funding_requested",
+       "raw": "304 million Eur",
+       "page": 5,
+       "status": "canonical",
+       "value": 304000000.0,
+       "verdict": "not-in-document",
+       "figure": "304",
+       "independent_page_prints": [
+        "20",
+        "100",
+        "56"
+       ]
+      }
+     ],
+     "meaning": "the figure the store publishes is not printed by an independent text extraction of the same PDF page. A question for the next adjudication, not a correction.",
+     "ratified": "owner, 2026-08-26 (serving-wave session)"
+    }
    },
    "meta_provenance": {
     "accredited_entity": {
@@ -17523,6 +18887,50 @@
       "status": "canonical"
      }
     ],
+    "mitigation_outcome": [
+     {
+      "raw": "1: GHG emissions reduced",
+      "value": 1.0,
+      "currency": null,
+      "unit": null,
+      "page": 5,
+      "section": "A.5",
+      "status": "canonical"
+     }
+    ],
+    "adaptation_outcome": [
+     {
+      "raw": "1,522,249 inhabitants",
+      "value": 1522249.0,
+      "currency": null,
+      "unit": null,
+      "page": 5,
+      "section": "A.6",
+      "status": "canonical"
+     }
+    ],
+    "total_financing": [
+     {
+      "raw": "391.43 million USD",
+      "value": 391430000.0,
+      "currency": "USD",
+      "unit": "million",
+      "page": 5,
+      "section": "A.7",
+      "status": "canonical"
+     }
+    ],
+    "gcf_funding_requested": [
+     {
+      "raw": "162.15 million USD",
+      "value": 162150000.0,
+      "currency": "USD",
+      "unit": "million",
+      "page": 5,
+      "section": "A.8",
+      "status": "canonical"
+     }
+    ],
     "project_size": [
      {
       "raw": "Large (Over USD 250 million)",
@@ -17534,6 +18942,46 @@
       "status": "canonical"
      }
     ],
+    "financial_instruments": [
+     {
+      "raw": "75.28 million USD",
+      "value": 75280000.0,
+      "currency": "USD",
+      "unit": "million",
+      "page": 5,
+      "section": "A.10 Grant",
+      "status": "canonical"
+     },
+     {
+      "raw": "86.88 million USD",
+      "value": 86880000.0,
+      "currency": "USD",
+      "unit": "million",
+      "page": 5,
+      "section": "A.10 Loan",
+      "status": "supporting"
+     }
+    ],
+    "instruments": [
+     {
+      "raw": "Grant",
+      "value": null,
+      "currency": null,
+      "unit": null,
+      "page": 5,
+      "section": "A.10 Grant",
+      "status": "canonical"
+     },
+     {
+      "raw": "Loan",
+      "value": null,
+      "currency": null,
+      "unit": null,
+      "page": 5,
+      "section": "A.10 Loan",
+      "status": "supporting"
+     }
+    ],
     "implementation_period": [
      {
       "raw": "7 years",
@@ -17541,7 +18989,7 @@
       "currency": null,
       "unit": "years",
       "page": 5,
-      "section": "A.10",
+      "section": "A.11",
       "status": "canonical"
      }
     ],
@@ -17552,7 +19000,7 @@
       "currency": null,
       "unit": "years",
       "page": 5,
-      "section": "A.11",
+      "section": "A.12",
       "status": "canonical"
      }
     ],
@@ -17575,28 +19023,6 @@
       "unit": null,
       "page": 6,
       "section": "A.14",
-      "status": "canonical"
-     }
-    ],
-    "total_financing": [
-     {
-      "raw": "$381.43 million USD",
-      "value": 381430000.0,
-      "currency": "USD",
-      "unit": "million",
-      "page": 32,
-      "section": "rule:A.7",
-      "status": "canonical"
-     }
-    ],
-    "gcf_funding_requested": [
-     {
-      "raw": "$162.15 million USD",
-      "value": 162150000.0,
-      "currency": "USD",
-      "unit": "million",
-      "page": 32,
-      "section": "rule:C.1(a)",
       "status": "canonical"
      }
     ],
@@ -17633,9 +19059,9 @@
     ]
    },
    "coverage": {
-    "era": "A5-A14 block (FP template v2/v3, variant numbering)",
+    "era": "A5-A14 block (FP template v2/v3)",
     "pages": 184,
-    "fields": 12,
+    "fields": 16,
     "core_found": [
      "title",
      "countries",
@@ -17645,6 +19071,31 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta": {
+    "corrections": [
+     {
+      "id": "C65",
+      "field": "total_financing",
+      "layer": "fact-canonical",
+      "action": "correct-to",
+      "from": null,
+      "to": null,
+      "page_of_quote": 129,
+      "quote": "p129: \"| **Total** | ... | **162.15** | ... | **229.28** | **391.43** |\"; 162.15 + 229.28 = 391.43 exactly",
+      "adjudication_note": "VLM digit misread 391 -> 381 on p32. Re-extract p5 and p32: the cover A-block is garbled ('43 million USD') and the C.1(c) row carries the misread",
+      "row_ref": {
+       "file": "scratchpad/serving_wave_adjudication.json",
+       "pointer": "rows[4]",
+       "md_table": "Q1",
+       "verdict": "WRONG (VLM digit misread 391->381)",
+       "proposed_action": "correct-to"
+      },
+      "ratified": "owner, 2026-08-26 (serving-wave session)",
+      "resolved_by_reextraction": "the re-extracted page reads the ratified figure: total_financing is now '391.43 million USD' (p.5), value 391430000.0"
+     }
+    ],
+    "ratified": "owner, 2026-08-26"
    },
    "meta_provenance": {
     "accredited_entity": {
@@ -18336,7 +19787,8 @@
       "unit": "million",
       "page": 11,
       "section": "rule:C.1(b)",
-      "status": "canonical"
+      "status": "canonical",
+      "cross_check": "not-in-document"
      }
     ],
     "ae_board_approval_date": [
@@ -18375,6 +19827,31 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta": {
+    "ratified": "owner, 2026-08-26",
+    "cross_check": {
+     "independent": "pymupdf",
+     "checked": 3,
+     "verdicts": {
+      "confirmed-print": 2,
+      "not-in-document": 1
+     },
+     "flagged": [
+      {
+       "field": "co_financing",
+       "raw": "3,600 million USD",
+       "page": 11,
+       "status": "canonical",
+       "value": 3600000000.0,
+       "verdict": "not-in-document",
+       "figure": "3600",
+       "independent_page_prints": []
+      }
+     ],
+     "meaning": "the figure the store publishes is not printed by an independent text extraction of the same PDF page. A question for the next adjudication, not a correction.",
+     "ratified": "owner, 2026-08-26 (serving-wave session)"
+    }
    },
    "meta_provenance": {
     "accredited_entity": {
@@ -18739,7 +20216,8 @@
       "unit": "million",
       "page": 12,
       "section": "rule:B.2(a)",
-      "status": "canonical"
+      "status": "canonical",
+      "cross_check": "not-on-cited-page"
      },
      {
       "raw": "USD79 million",
@@ -18787,6 +20265,35 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta": {
+    "ratified": "owner, 2026-08-26",
+    "cross_check": {
+     "independent": "pymupdf",
+     "checked": 3,
+     "verdicts": {
+      "confirmed-print": 2,
+      "not-on-cited-page": 1
+     },
+     "flagged": [
+      {
+       "field": "total_financing",
+       "raw": "79.0 | million USD",
+       "page": 12,
+       "status": "canonical",
+       "value": 79000000.0,
+       "verdict": "not-on-cited-page",
+       "figure": "790",
+       "independent_page_prints": [
+        "7900",
+        "10",
+        "30"
+       ]
+      }
+     ],
+     "meaning": "the figure the store publishes is not printed by an independent text extraction of the same PDF page. A question for the next adjudication, not a correction.",
+     "ratified": "owner, 2026-08-26 (serving-wave session)"
+    }
    },
    "meta_provenance": {
     "accredited_entity": {
@@ -19497,7 +21004,8 @@
       "unit": null,
       "page": 10,
       "section": "rule:B.2(a)",
-      "status": "canonical"
+      "status": "canonical",
+      "cross_check": "not-in-document"
      }
     ],
     "co_financing": [
@@ -19556,6 +21064,35 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta": {
+    "ratified": "owner, 2026-08-26",
+    "cross_check": {
+     "independent": "pymupdf",
+     "checked": 3,
+     "verdicts": {
+      "confirmed-print": 2,
+      "not-in-document": 1
+     },
+     "flagged": [
+      {
+       "field": "total_financing",
+       "raw": "$25,547,194 | $",
+       "page": 10,
+       "status": "canonical",
+       "value": 25547194.0,
+       "verdict": "not-in-document",
+       "figure": "25547194",
+       "independent_page_prints": [
+        "25347194",
+        "25141374",
+        "2500924"
+       ]
+      }
+     ],
+     "meaning": "the figure the store publishes is not printed by an independent text extraction of the same PDF page. A question for the next adjudication, not a correction.",
+     "ratified": "owner, 2026-08-26 (serving-wave session)"
+    }
    },
    "meta_provenance": {
     "accredited_entity": {
@@ -19715,7 +21252,8 @@
        "page": 14,
        "section": "rule:C.1(b)",
        "status": "canonical"
-      }
+      },
+      "cross_check": "not-in-document"
      }
     ],
     "date_of_submission": [
@@ -19802,7 +21340,34 @@
       "ratified": "owner, 2026-08-26"
      }
     ],
-    "ratified": "owner, 2026-08-26"
+    "ratified": "owner, 2026-08-26",
+    "cross_check": {
+     "independent": "pymupdf",
+     "checked": 3,
+     "verdicts": {
+      "confirmed-print": 2,
+      "not-in-document": 1
+     },
+     "flagged": [
+      {
+       "field": "co_financing",
+       "raw": "USD 437 million",
+       "page": 14,
+       "status": "canonical",
+       "value": 437000000.0,
+       "verdict": "not-in-document",
+       "figure": "437",
+       "independent_page_prints": [
+        "537",
+        "42",
+        "77"
+       ],
+       "corrected": true
+      }
+     ],
+     "meaning": "the figure the store publishes is not printed by an independent text extraction of the same PDF page. A question for the next adjudication, not a correction.",
+     "ratified": "owner, 2026-08-26 (serving-wave session)"
+    }
    },
    "meta_provenance": {
     "accredited_entity": {
@@ -19884,6 +21449,15 @@
       "page": 7,
       "section": "A.7",
       "status": "canonical"
+     },
+     {
+      "raw": "25,000,000 | USD",
+      "value": 25000000.0,
+      "currency": "USD",
+      "unit": null,
+      "page": 31,
+      "section": "rule:C.1(a)",
+      "status": "supporting"
      }
     ],
     "project_size": [
@@ -19932,13 +21506,32 @@
     ],
     "total_financing": [
      {
-      "raw": "25,000,000 USD",
-      "value": 25000000.0,
+      "raw": "83,811,581 USD",
+      "value": 83811581.0,
       "currency": "USD",
       "unit": null,
-      "page": 31,
+      "page": 7,
+      "section": "corrected",
+      "status": "canonical",
+      "corrected": true,
+      "corrected_from": {
+       "raw": "25,000,000 | USD",
+       "value": 25000000.0,
+       "currency": "USD",
+       "unit": null,
+       "page": 31,
+       "section": "C.1",
+       "status": "canonical"
+      }
+     },
+     {
+      "raw": "$83,811,581",
+      "value": 83811581.0,
+      "currency": "USD",
+      "unit": null,
+      "page": 32,
       "section": "rule:A.7",
-      "status": "canonical"
+      "status": "supporting"
      }
     ],
     "date_of_submission": [
@@ -19997,6 +21590,46 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta": {
+    "corrections": [
+     {
+      "id": "C63",
+      "field": "total_financing",
+      "layer": "fact-canonical",
+      "action": "correct-to",
+      "from": {
+       "raw": "25,000,000 | USD",
+       "value": 25000000.0,
+       "currency": "USD",
+       "unit": null,
+       "page": 31,
+       "section": "C.1",
+       "status": "canonical"
+      },
+      "to": {
+       "raw": "83,811,581 USD",
+       "value": 83811581.0,
+       "currency": "USD",
+       "unit": null,
+       "page": 7,
+       "section": "corrected",
+       "status": "canonical"
+      },
+      "page_of_quote": 7,
+      "quote": "p7: \"83,811,581 USD\" under \"Total financing GCF + co-financing requested\"; the arithmetic closes exactly: 25,000,000 + 58,811,581 = 83,811,581",
+      "adjudication_note": "the C.1 '(a) Requested GCF funding' sub-label is missing from the qwen p31 rendering, so the total-financing rule captured the GCF row under the 'C.1 Total financing' header. Re-extract p31-32: the (b) and (c) rows are absent from the markdown entirely — RE-POINTED after the 2026-08-26 re-extraction: the candidate moved, the ratification did not",
+      "row_ref": {
+       "file": "scratchpad/serving_wave_adjudication.json",
+       "pointer": "rows[0]",
+       "md_table": "Q1",
+       "verdict": "MISFILED",
+       "proposed_action": "correct-to"
+      },
+      "ratified": "owner, 2026-08-26 (serving-wave session)"
+     }
+    ],
+    "ratified": "owner, 2026-08-26"
    },
    "meta_provenance": {
     "accredited_entity": {
@@ -21278,56 +22911,65 @@
       "section": "doc_id",
       "status": "canonical"
      }
+    ],
+    "gcf_funding_requested": [
+     {
+      "raw": "GCF RBP: 96,452,228",
+      "value": 96452228.0,
+      "currency": "USD",
+      "unit": null,
+      "page": 103,
+      "section": "AE-fee budget (Table 19)",
+      "status": "supporting",
+      "added": true
+     }
     ]
    },
    "coverage": {
     "era": "REDD+ RBP block (RBP pilot template v1.0)",
     "pages": 200,
-    "fields": 6,
+    "fields": 7,
     "core_found": [
      "title",
      "countries",
-     "accredited_entity"
+     "accredited_entity",
+     "gcf_funding_requested"
     ],
     "core_missing": [
-     "total_financing",
-     "gcf_funding_requested"
+     "total_financing"
     ],
     "llm_fallback": true
    },
    "meta": {
-    "confirmed_absence": {
-     "total_financing": {
-      "pages_checked": [
-       1,
-       16
-      ],
-      "evidence": "REDD+ RBP pilot template: the cover (p3) prints Programme Title / Country / Results period / NDA / REDD-plus entity / Accredited Entity and no financing field; sections A-E are carbon accounting; no A.7/A.8/B.2/C.1 block exists anywhere in the document",
-      "group": "REDD+ RBP financing",
-      "row_ref": {
-       "file": "scratchpad/phase3_worklist.json",
-       "pointer": "bucket_2_the_68_core_missing_documents",
-       "verdict": "b_confirmed_absence_candidate"
-      },
-      "ratified": "owner, 2026-08-26"
-     },
-     "gcf_funding_requested": {
-      "pages_checked": [
-       1,
-       16
-      ],
-      "evidence": "same: the RBP payment amount appears only in narrative and in the section D/E budget, never under a template label",
-      "group": "REDD+ RBP financing",
-      "row_ref": {
-       "file": "scratchpad/phase3_worklist.json",
-       "pointer": "bucket_2_the_68_core_missing_documents",
-       "verdict": "b_confirmed_absence_candidate"
-      },
-      "ratified": "owner, 2026-08-26"
-     }
-    },
-    "ratified": "owner, 2026-08-26",
     "corrections": [
+     {
+      "id": "C73",
+      "field": "gcf_funding_requested",
+      "layer": "fact-supporting",
+      "action": "add-candidate",
+      "from": null,
+      "to": {
+       "raw": "GCF RBP: 96,452,228",
+       "value": 96452228.0,
+       "currency": "USD",
+       "unit": null,
+       "page": 103,
+       "section": "AE-fee budget (Table 19)",
+       "status": "supporting"
+      },
+      "page_of_quote": 103,
+      "quote": "pymupdf p103: \"GCF RBP :        96,452,228\" (the qwen rendering of the same cell reads \"- **GCF RFP:** 96,452,228\" — an F-for-B letter slip in the LABEL; both extractions print the same figure)",
+      "adjudication_note": "the ratified absence is TRUE about the RBP pilot COVER, which prints no financing field — and over-broad as a claim about the document, which prints the figure under Table 19's own labels. Recording the p103 print as a supporting candidate makes the builder's existing rule ('an absence is never published over a print the build holds') withhold the absence with zero code change. NOT canonical: canonical is for template-section values, and a canonical here would fire ABSENCE CONTRADICTED against a ratified row and split the 9-document RBP family",
+      "row_ref": {
+       "file": "scratchpad/serving_wave_adjudication.json",
+       "pointer": "rows[24]",
+       "md_table": "Q2",
+       "verdict": "absence RIGHT at the cover-field layer; evidence sentence 'never under a template label' contradicted by Table 19",
+       "proposed_action": "add-candidate (supporting) gcf_funding_requested p103 'GCF RBP: 96,452,228' sec 'AE-fee budget (Table 19)' -> the builder's existing 'absence never published over a print' rule stops publication; absence ROW stays"
+      },
+      "ratified": "owner, 2026-08-26 (serving-wave session)",
+      "declared_status": "supporting"
+     },
      {
       "id": "C30",
       "field": "gcf_financing",
@@ -21366,7 +23008,24 @@
       },
       "ratified": "owner, 2026-08-26"
      }
-    ]
+    ],
+    "confirmed_absence": {
+     "total_financing": {
+      "pages_checked": [
+       1,
+       16
+      ],
+      "evidence": "REDD+ RBP pilot template: the cover (p3) prints Programme Title / Country / Results period / NDA / REDD-plus entity / Accredited Entity and no financing field; sections A-E are carbon accounting; no A.7/A.8/B.2/C.1 block exists anywhere in the document",
+      "group": "REDD+ RBP financing",
+      "row_ref": {
+       "file": "scratchpad/phase3_worklist.json",
+       "pointer": "bucket_2_the_68_core_missing_documents",
+       "verdict": "b_confirmed_absence_candidate"
+      },
+      "ratified": "owner, 2026-08-26"
+     }
+    },
+    "ratified": "owner, 2026-08-26"
    },
    "meta_provenance": {
     "accredited_entity": {
@@ -21829,7 +23488,8 @@
        "page": 9,
        "section": "rule:C.1(b)",
        "status": "canonical"
-      }
+      },
+      "cross_check": "not-on-cited-page"
      }
     ],
     "date_of_submission": [
@@ -21951,7 +23611,34 @@
       "ratified": "owner, 2026-08-26"
      }
     ],
-    "ratified": "owner, 2026-08-26"
+    "ratified": "owner, 2026-08-26",
+    "cross_check": {
+     "independent": "pymupdf",
+     "checked": 3,
+     "verdicts": {
+      "confirmed-print": 2,
+      "not-on-cited-page": 1
+     },
+     "flagged": [
+      {
+       "field": "co_financing",
+       "raw": "USD 114.61 million",
+       "page": 9,
+       "status": "canonical",
+       "value": 114610000.0,
+       "verdict": "not-on-cited-page",
+       "figure": "11461",
+       "independent_page_prints": [
+        "1145",
+        "5561",
+        "17055"
+       ],
+       "corrected": true
+      }
+     ],
+     "meaning": "the figure the store publishes is not printed by an independent text extraction of the same PDF page. A question for the next adjudication, not a correction.",
+     "ratified": "owner, 2026-08-26 (serving-wave session)"
+    }
    },
    "meta_provenance": {
     "accredited_entity": {
@@ -22295,7 +23982,8 @@
       "unit": "million",
       "page": 12,
       "section": "rule:B.2(a)",
-      "status": "canonical"
+      "status": "canonical",
+      "cross_check": "not-on-cited-page"
      },
      {
       "raw": "89 | million USD",
@@ -22372,6 +24060,35 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta": {
+    "ratified": "owner, 2026-08-26",
+    "cross_check": {
+     "independent": "pymupdf",
+     "checked": 3,
+     "verdicts": {
+      "confirmed-print": 2,
+      "not-on-cited-page": 1
+     },
+     "flagged": [
+      {
+       "field": "total_financing",
+       "raw": "98 million USD",
+       "page": 12,
+       "status": "canonical",
+       "value": 98000000.0,
+       "verdict": "not-on-cited-page",
+       "figure": "98",
+       "independent_page_prints": [
+        "8",
+        "5",
+        "12"
+       ]
+      }
+     ],
+     "meaning": "the figure the store publishes is not printed by an independent text extraction of the same PDF page. A question for the next adjudication, not a correction.",
+     "ratified": "owner, 2026-08-26 (serving-wave session)"
+    }
    },
    "meta_provenance": {
     "accredited_entity": {
@@ -22480,7 +24197,8 @@
       "unit": "million",
       "page": 5,
       "section": "A.7",
-      "status": "canonical"
+      "status": "canonical",
+      "cross_check": "not-in-document"
      },
      {
       "raw": "$156.7 million USD",
@@ -22601,6 +24319,35 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta": {
+    "ratified": "owner, 2026-08-26",
+    "cross_check": {
+     "independent": "pymupdf",
+     "checked": 2,
+     "verdicts": {
+      "confirmed-print": 1,
+      "not-in-document": 1
+     },
+     "flagged": [
+      {
+       "field": "total_financing",
+       "raw": "196.8 million USD",
+       "page": 5,
+       "status": "canonical",
+       "value": 196800000.0,
+       "verdict": "not-in-document",
+       "figure": "1968",
+       "independent_page_prints": [
+        "1568",
+        "100",
+        "183"
+       ]
+      }
+     ],
+     "meaning": "the figure the store publishes is not printed by an independent text extraction of the same PDF page. A question for the next adjudication, not a correction.",
+     "ratified": "owner, 2026-08-26 (serving-wave session)"
+    }
    },
    "meta_provenance": {
     "accredited_entity": {
@@ -23379,7 +25126,8 @@
       "unit": null,
       "page": 8,
       "section": "rule:B.2(b)",
-      "status": "canonical"
+      "status": "canonical",
+      "cross_check": "not-in-document"
      },
      {
       "raw": "$16,196 million USD",
@@ -23427,6 +25175,35 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta": {
+    "ratified": "owner, 2026-08-26",
+    "cross_check": {
+     "independent": "pymupdf",
+     "checked": 3,
+     "verdicts": {
+      "confirmed-print": 2,
+      "not-in-document": 1
+     },
+     "flagged": [
+      {
+       "field": "gcf_funding_requested",
+       "raw": "$7.774",
+       "page": 8,
+       "status": "canonical",
+       "value": null,
+       "verdict": "not-in-document",
+       "figure": "7774",
+       "independent_page_prints": [
+        "57774",
+        "67774",
+        "7786"
+       ]
+      }
+     ],
+     "meaning": "the figure the store publishes is not printed by an independent text extraction of the same PDF page. A question for the next adjudication, not a correction.",
+     "ratified": "owner, 2026-08-26 (serving-wave session)"
+    }
    },
    "meta_provenance": {
     "accredited_entity": {
@@ -23742,7 +25519,8 @@
       "unit": "million",
       "page": 57,
       "section": "rule:B.2(a)",
-      "status": "canonical"
+      "status": "canonical",
+      "cross_check": "not-in-document"
      }
     ],
     "date_of_submission": [
@@ -23790,6 +25568,35 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta": {
+    "ratified": "owner, 2026-08-26",
+    "cross_check": {
+     "independent": "pymupdf",
+     "checked": 2,
+     "verdicts": {
+      "confirmed-print": 1,
+      "not-in-document": 1
+     },
+     "flagged": [
+      {
+       "field": "total_financing",
+       "raw": "$33.20 million",
+       "page": 57,
+       "status": "canonical",
+       "value": 33200000.0,
+       "verdict": "not-in-document",
+       "figure": "3320",
+       "independent_page_prints": [
+        "5320",
+        "382",
+        "724"
+       ]
+      }
+     ],
+     "meaning": "the figure the store publishes is not printed by an independent text extraction of the same PDF page. A question for the next adjudication, not a correction.",
+     "ratified": "owner, 2026-08-26 (serving-wave session)"
+    }
    },
    "meta_provenance": {
     "accredited_entity": {
@@ -23947,7 +25754,8 @@
       "unit": null,
       "page": 12,
       "section": "rule:B.2(a)",
-      "status": "canonical"
+      "status": "canonical",
+      "cross_check": "not-on-cited-page"
      },
      {
       "raw": "US$ 1,747,000,000",
@@ -24026,6 +25834,35 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta": {
+    "ratified": "owner, 2026-08-26",
+    "cross_check": {
+     "independent": "pymupdf",
+     "checked": 3,
+     "verdicts": {
+      "confirmed-print": 2,
+      "not-on-cited-page": 1
+     },
+     "flagged": [
+      {
+       "field": "total_financing",
+       "raw": "862 | EUR",
+       "page": 12,
+       "status": "canonical",
+       "value": null,
+       "verdict": "not-on-cited-page",
+       "figure": "862",
+       "independent_page_prints": [
+        "882",
+        "56",
+        "60"
+       ]
+      }
+     ],
+     "meaning": "the figure the store publishes is not printed by an independent text extraction of the same PDF page. A question for the next adjudication, not a correction.",
+     "ratified": "owner, 2026-08-26 (serving-wave session)"
+    }
    },
    "meta_provenance": {
     "accredited_entity": {
@@ -24756,7 +26593,8 @@
       "unit": null,
       "page": 6,
       "section": "A.10 Grant",
-      "status": "canonical"
+      "status": "canonical",
+      "cross_check": "not-in-document"
      }
     ],
     "instruments": [
@@ -24881,6 +26719,35 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta": {
+    "ratified": "owner, 2026-08-26",
+    "cross_check": {
+     "independent": "pymupdf",
+     "checked": 2,
+     "verdicts": {
+      "confirmed-print": 1,
+      "not-in-document": 1
+     },
+     "flagged": [
+      {
+       "field": "financial_instruments",
+       "raw": "$103,468,722",
+       "page": 6,
+       "status": "canonical",
+       "value": 103468722.0,
+       "verdict": "not-in-document",
+       "figure": "103468722",
+       "independent_page_prints": [
+        "103246722",
+        "114586309",
+        "14000000"
+       ]
+      }
+     ],
+     "meaning": "the figure the store publishes is not printed by an independent text extraction of the same PDF page. A question for the next adjudication, not a correction.",
+     "ratified": "owner, 2026-08-26 (serving-wave session)"
+    }
    },
    "meta_provenance": {
     "accredited_entity": {
@@ -26432,7 +28299,8 @@
       "unit": null,
       "page": 10,
       "section": "rule:A.8",
-      "status": "canonical"
+      "status": "canonical",
+      "cross_check": "not-in-document"
      },
      {
       "raw": "95.0 | Millions USD",
@@ -26452,7 +28320,8 @@
       "unit": null,
       "page": 10,
       "section": "rule:B.2(a)",
-      "status": "canonical"
+      "status": "canonical",
+      "cross_check": "not-in-document"
      },
      {
       "raw": "544.0 | Millions USD",
@@ -26520,6 +28389,48 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta": {
+    "ratified": "owner, 2026-08-26",
+    "cross_check": {
+     "independent": "pymupdf",
+     "checked": 2,
+     "verdicts": {
+      "not-in-document": 2
+     },
+     "flagged": [
+      {
+       "field": "total_financing",
+       "raw": "$48,644,000",
+       "page": 10,
+       "status": "canonical",
+       "value": 48644000.0,
+       "verdict": "not-in-document",
+       "figure": "48644000",
+       "independent_page_prints": [
+        "4888400",
+        "1480000",
+        "1610000"
+       ]
+      },
+      {
+       "field": "gcf_funding_requested",
+       "raw": "$145,048 | $",
+       "page": 10,
+       "status": "canonical",
+       "value": 145048.0,
+       "verdict": "not-in-document",
+       "figure": "145048",
+       "independent_page_prints": [
+        "149149",
+        "1480000",
+        "20002"
+       ]
+      }
+     ],
+     "meaning": "the figure the store publishes is not printed by an independent text extraction of the same PDF page. A question for the next adjudication, not a correction.",
+     "ratified": "owner, 2026-08-26 (serving-wave session)"
+    }
    },
    "meta_provenance": {
     "accredited_entity": {
@@ -27537,7 +29448,8 @@
        "page": 73,
        "section": "rule:B.2(b)",
        "status": "canonical"
-      }
+      },
+      "cross_check": "not-in-document"
      }
     ],
     "total_financing": [
@@ -27558,7 +29470,8 @@
        "page": 73,
        "section": "rule:B.2(a)",
        "status": "canonical"
-      }
+      },
+      "cross_check": "not-in-document"
      }
     ],
     "date_of_submission": [
@@ -27671,7 +29584,48 @@
       "ratified": "owner, 2026-08-26"
      }
     ],
-    "ratified": "owner, 2026-08-26"
+    "ratified": "owner, 2026-08-26",
+    "cross_check": {
+     "independent": "pymupdf",
+     "checked": 2,
+     "verdicts": {
+      "not-in-document": 2
+     },
+     "flagged": [
+      {
+       "field": "total_financing",
+       "raw": "USD 32,754,442",
+       "page": 6,
+       "status": "canonical",
+       "value": 32754442.0,
+       "verdict": "not-in-document",
+       "figure": "32754442",
+       "independent_page_prints": [
+        "32794442",
+        "1779496",
+        "2443221"
+       ],
+       "corrected": true
+      },
+      {
+       "field": "gcf_funding_requested",
+       "raw": "USD 32,754,442",
+       "page": 6,
+       "status": "canonical",
+       "value": 32754442.0,
+       "verdict": "not-in-document",
+       "figure": "32754442",
+       "independent_page_prints": [
+        "32794442",
+        "1779496",
+        "2443221"
+       ],
+       "corrected": true
+      }
+     ],
+     "meaning": "the figure the store publishes is not printed by an independent text extraction of the same PDF page. A question for the next adjudication, not a correction.",
+     "ratified": "owner, 2026-08-26 (serving-wave session)"
+    }
    },
    "meta_provenance": {
     "accredited_entity": {
@@ -28654,7 +30608,8 @@
       "unit": null,
       "page": 10,
       "section": "rule:B.2(a)",
-      "status": "canonical"
+      "status": "canonical",
+      "cross_check": "not-in-document"
      },
      {
       "raw": "70 293 | million USD",
@@ -28674,7 +30629,8 @@
       "unit": null,
       "page": 11,
       "section": "rule:B.2(b)",
-      "status": "canonical"
+      "status": "canonical",
+      "cross_check": "not-on-cited-page"
      }
     ],
     "date_of_submission": [
@@ -28722,6 +30678,49 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta": {
+    "ratified": "owner, 2026-08-26",
+    "cross_check": {
+     "independent": "pymupdf",
+     "checked": 2,
+     "verdicts": {
+      "not-in-document": 1,
+      "not-on-cited-page": 1
+     },
+     "flagged": [
+      {
+       "field": "total_financing",
+       "raw": "27,694",
+       "page": 10,
+       "status": "canonical",
+       "value": 27694.0,
+       "verdict": "not-in-document",
+       "figure": "27694",
+       "independent_page_prints": [
+        "27054",
+        "2191",
+        "2261"
+       ]
+      },
+      {
+       "field": "gcf_funding_requested",
+       "raw": "27 054 | million USD",
+       "page": 11,
+       "status": "canonical",
+       "value": null,
+       "verdict": "not-on-cited-page",
+       "figure": "54",
+       "independent_page_prints": [
+        "51",
+        "10",
+        "73"
+       ]
+      }
+     ],
+     "meaning": "the figure the store publishes is not printed by an independent text extraction of the same PDF page. A question for the next adjudication, not a correction.",
+     "ratified": "owner, 2026-08-26 (serving-wave session)"
+    }
    },
    "meta_provenance": {
     "accredited_entity": {
@@ -29504,7 +31503,8 @@
       "unit": "million",
       "page": 14,
       "section": "rule:B.2(b)",
-      "status": "canonical"
+      "status": "canonical",
+      "cross_check": "not-in-document"
      },
      {
       "raw": "USD 186M",
@@ -29553,7 +31553,8 @@
       "unit": "million",
       "page": 14,
       "section": "rule:C.1(b)",
-      "status": "canonical"
+      "status": "canonical",
+      "cross_check": "not-in-document"
      },
      {
       "raw": "US$ 1,109 million",
@@ -29610,6 +31611,49 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta": {
+    "ratified": "owner, 2026-08-26",
+    "cross_check": {
+     "independent": "pymupdf",
+     "checked": 3,
+     "verdicts": {
+      "confirmed-print": 1,
+      "not-in-document": 2
+     },
+     "flagged": [
+      {
+       "field": "gcf_funding_requested",
+       "raw": "$86.0 million USD",
+       "page": 14,
+       "status": "canonical",
+       "value": 86000000.0,
+       "verdict": "not-in-document",
+       "figure": "860",
+       "independent_page_prints": [
+        "1860",
+        "10",
+        "20"
+       ]
+      },
+      {
+       "field": "co_financing",
+       "raw": "$580.0 million USD",
+       "page": 14,
+       "status": "canonical",
+       "value": 580000000.0,
+       "verdict": "not-in-document",
+       "figure": "5800",
+       "independent_page_prints": [
+        "1860",
+        "1950",
+        "13060"
+       ]
+      }
+     ],
+     "meaning": "the figure the store publishes is not printed by an independent text extraction of the same PDF page. A question for the next adjudication, not a correction.",
+     "ratified": "owner, 2026-08-26 (serving-wave session)"
+    }
    },
    "meta_provenance": {
     "accredited_entity": {
@@ -30483,7 +32527,8 @@
       "unit": "million",
       "page": 92,
       "section": "rule:C.1(b)",
-      "status": "canonical"
+      "status": "canonical",
+      "cross_check": "not-in-document"
      }
     ],
     "date_of_submission": [
@@ -30531,6 +32576,35 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta": {
+    "ratified": "owner, 2026-08-26",
+    "cross_check": {
+     "independent": "pymupdf",
+     "checked": 3,
+     "verdicts": {
+      "confirmed-print": 2,
+      "not-in-document": 1
+     },
+     "flagged": [
+      {
+       "field": "co_financing",
+       "raw": "US$16.5 million",
+       "page": 92,
+       "status": "canonical",
+       "value": 16500000.0,
+       "verdict": "not-in-document",
+       "figure": "165",
+       "independent_page_prints": [
+        "15",
+        "185",
+        "10"
+       ]
+      }
+     ],
+     "meaning": "the figure the store publishes is not printed by an independent text extraction of the same PDF page. A question for the next adjudication, not a correction.",
+     "ratified": "owner, 2026-08-26 (serving-wave session)"
+    }
    },
    "meta_provenance": {
     "accredited_entity": {
@@ -30656,7 +32730,8 @@
       "unit": null,
       "page": 9,
       "section": "rule:B.2(a)",
-      "status": "canonical"
+      "status": "canonical",
+      "cross_check": "not-in-document"
      },
      {
       "raw": "45.20 | million USD",
@@ -30733,6 +32808,35 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta": {
+    "ratified": "owner, 2026-08-26",
+    "cross_check": {
+     "independent": "pymupdf",
+     "checked": 2,
+     "verdicts": {
+      "confirmed-print": 1,
+      "not-in-document": 1
+     },
+     "flagged": [
+      {
+       "field": "total_financing",
+       "raw": "36,605,010",
+       "page": 9,
+       "status": "canonical",
+       "value": 36605010.0,
+       "verdict": "not-in-document",
+       "figure": "36605010",
+       "independent_page_prints": [
+        "27605010",
+        "6925010",
+        "45205010"
+       ]
+      }
+     ],
+     "meaning": "the figure the store publishes is not printed by an independent text extraction of the same PDF page. A question for the next adjudication, not a correction.",
+     "ratified": "owner, 2026-08-26 (serving-wave session)"
+    }
    },
    "meta_provenance": {
     "accredited_entity": {
@@ -31708,7 +33812,8 @@
       "unit": null,
       "page": 5,
       "section": "A.8",
-      "status": "canonical"
+      "status": "canonical",
+      "cross_check": "not-in-document"
      }
     ],
     "project_size": [
@@ -31789,6 +33894,35 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta": {
+    "ratified": "owner, 2026-08-26",
+    "cross_check": {
+     "independent": "pymupdf",
+     "checked": 2,
+     "verdicts": {
+      "confirmed-value": 1,
+      "not-in-document": 1
+     },
+     "flagged": [
+      {
+       "field": "gcf_funding_requested",
+       "raw": "23,519,309 USD",
+       "page": 5,
+       "status": "canonical",
+       "value": 23519309.0,
+       "verdict": "not-in-document",
+       "figure": "23519309",
+       "independent_page_prints": [
+        "29215309",
+        "2098140",
+        "2670140"
+       ]
+      }
+     ],
+     "meaning": "the figure the store publishes is not printed by an independent text extraction of the same PDF page. A question for the next adjudication, not a correction.",
+     "ratified": "owner, 2026-08-26 (serving-wave session)"
+    }
    },
    "meta_provenance": {
     "accredited_entity": {
@@ -31950,7 +34084,8 @@
        "page": 9,
        "section": "rule:C.1(b)",
        "status": "canonical"
-      }
+      },
+      "cross_check": "not-on-cited-page"
      }
     ],
     "date_of_submission": [
@@ -32037,7 +34172,34 @@
       "ratified": "owner, 2026-08-26"
      }
     ],
-    "ratified": "owner, 2026-08-26"
+    "ratified": "owner, 2026-08-26",
+    "cross_check": {
+     "independent": "pymupdf",
+     "checked": 3,
+     "verdicts": {
+      "confirmed-print": 2,
+      "not-on-cited-page": 1
+     },
+     "flagged": [
+      {
+       "field": "co_financing",
+       "raw": "USD 74.1 million",
+       "page": 9,
+       "status": "canonical",
+       "value": 74100000.0,
+       "verdict": "not-on-cited-page",
+       "figure": "741",
+       "independent_page_prints": [
+        "248",
+        "445",
+        "12"
+       ],
+       "corrected": true
+      }
+     ],
+     "meaning": "the figure the store publishes is not printed by an independent text extraction of the same PDF page. A question for the next adjudication, not a correction.",
+     "ratified": "owner, 2026-08-26 (serving-wave session)"
+    }
    },
    "meta_provenance": {
     "accredited_entity": {
@@ -32607,7 +34769,8 @@
       "unit": null,
       "page": 48,
       "section": "rule:B.2(a)",
-      "status": "canonical"
+      "status": "canonical",
+      "cross_check": "not-in-document"
      }
     ],
     "date_of_submission": [
@@ -32655,6 +34818,35 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta": {
+    "ratified": "owner, 2026-08-26",
+    "cross_check": {
+     "independent": "pymupdf",
+     "checked": 2,
+     "verdicts": {
+      "confirmed-print": 1,
+      "not-in-document": 1
+     },
+     "flagged": [
+      {
+       "field": "total_financing",
+       "raw": "$65.26",
+       "page": 48,
+       "status": "canonical",
+       "value": null,
+       "verdict": "not-in-document",
+       "figure": "6526",
+       "independent_page_prints": [
+        "652",
+        "6521",
+        "627"
+       ]
+      }
+     ],
+     "meaning": "the figure the store publishes is not printed by an independent text extraction of the same PDF page. A question for the next adjudication, not a correction.",
+     "ratified": "owner, 2026-08-26 (serving-wave session)"
+    }
    },
    "meta_provenance": {
     "accredited_entity": {
@@ -33399,7 +35591,8 @@
       "unit": "million",
       "page": 11,
       "section": "rule:B.2(a)",
-      "status": "canonical"
+      "status": "canonical",
+      "cross_check": "not-in-document"
      },
      {
       "raw": "(a) Total programme financing (millions) | US$158",
@@ -33536,7 +35729,33 @@
       "declared_status": "conflicting"
      }
     ],
-    "ratified": "owner, 2026-08-26"
+    "ratified": "owner, 2026-08-26",
+    "cross_check": {
+     "independent": "pymupdf",
+     "checked": 3,
+     "verdicts": {
+      "confirmed-print": 2,
+      "not-in-document": 1
+     },
+     "flagged": [
+      {
+       "field": "total_financing",
+       "raw": "$150 million USD",
+       "page": 11,
+       "status": "canonical",
+       "value": 150000000.0,
+       "verdict": "not-in-document",
+       "figure": "150",
+       "independent_page_prints": [
+        "10",
+        "15",
+        "158"
+       ]
+      }
+     ],
+     "meaning": "the figure the store publishes is not printed by an independent text extraction of the same PDF page. A question for the next adjudication, not a correction.",
+     "ratified": "owner, 2026-08-26 (serving-wave session)"
+    }
    },
    "meta_provenance": {
     "accredited_entity": {
@@ -33695,7 +35914,8 @@
        "page": 32,
        "section": "rule:B.2(b)",
        "status": "canonical"
-      }
+      },
+      "cross_check": "not-in-document"
      }
     ],
     "date_of_submission": [
@@ -33828,7 +36048,32 @@
       "ratified": "owner, 2026-08-26"
      }
     ],
-    "ratified": "owner, 2026-08-26"
+    "ratified": "owner, 2026-08-26",
+    "cross_check": {
+     "independent": "pymupdf",
+     "checked": 2,
+     "verdicts": {
+      "confirmed-value": 1,
+      "not-in-document": 1
+     },
+     "flagged": [
+      {
+       "field": "gcf_funding_requested",
+       "raw": "USD 110,000,000",
+       "page": 9,
+       "status": "canonical",
+       "value": 110000000.0,
+       "verdict": "not-in-document",
+       "figure": "110000000",
+       "independent_page_prints": [
+        "2142931373"
+       ],
+       "corrected": true
+      }
+     ],
+     "meaning": "the figure the store publishes is not printed by an independent text extraction of the same PDF page. A question for the next adjudication, not a correction.",
+     "ratified": "owner, 2026-08-26 (serving-wave session)"
+    }
    },
    "meta_provenance": {
     "accredited_entity": {
@@ -34103,7 +36348,8 @@
       "unit": null,
       "page": 5,
       "section": "A.8",
-      "status": "canonical"
+      "status": "canonical",
+      "cross_check": "not-in-document"
      },
      {
       "raw": "USD 258 million",
@@ -34240,6 +36486,33 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta": {
+    "ratified": "owner, 2026-08-26",
+    "cross_check": {
+     "independent": "pymupdf",
+     "checked": 2,
+     "verdicts": {
+      "confirmed-print": 1,
+      "not-in-document": 1
+     },
+     "flagged": [
+      {
+       "field": "gcf_funding_requested",
+       "raw": "$58,000,000 USD",
+       "page": 5,
+       "status": "canonical",
+       "value": 58000000.0,
+       "verdict": "not-in-document",
+       "figure": "58000000",
+       "independent_page_prints": [
+        "258000000"
+       ]
+      }
+     ],
+     "meaning": "the figure the store publishes is not printed by an independent text extraction of the same PDF page. A question for the next adjudication, not a correction.",
+     "ratified": "owner, 2026-08-26 (serving-wave session)"
+    }
    },
    "meta_provenance": {
     "accredited_entity": {
@@ -34418,7 +36691,8 @@
       "unit": null,
       "page": 11,
       "section": "rule:C.1(b)",
-      "status": "canonical"
+      "status": "canonical",
+      "cross_check": "not-in-document"
      }
     ],
     "date_of_submission": [
@@ -34457,6 +36731,35 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta": {
+    "ratified": "owner, 2026-08-26",
+    "cross_check": {
+     "independent": "pymupdf",
+     "checked": 3,
+     "verdicts": {
+      "confirmed-print": 2,
+      "not-in-document": 1
+     },
+     "flagged": [
+      {
+       "field": "co_financing",
+       "raw": "7,064.1 | million USD",
+       "page": 11,
+       "status": "canonical",
+       "value": null,
+       "verdict": "not-in-document",
+       "figure": "70641",
+       "independent_page_prints": [
+        "7064",
+        "70642",
+        "2017"
+       ]
+      }
+     ],
+     "meaning": "the figure the store publishes is not printed by an independent text extraction of the same PDF page. A question for the next adjudication, not a correction.",
+     "ratified": "owner, 2026-08-26 (serving-wave session)"
+    }
    },
    "meta_provenance": {
     "accredited_entity": {
@@ -34613,7 +36916,8 @@
       "unit": "million",
       "page": 12,
       "section": "rule:B.2(b)",
-      "status": "canonical"
+      "status": "canonical",
+      "cross_check": "not-in-document"
      },
      {
       "raw": "$86 million",
@@ -34681,6 +36985,35 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta": {
+    "ratified": "owner, 2026-08-26",
+    "cross_check": {
+     "independent": "pymupdf",
+     "checked": 3,
+     "verdicts": {
+      "confirmed-print": 2,
+      "not-in-document": 1
+     },
+     "flagged": [
+      {
+       "field": "gcf_funding_requested",
+       "raw": "25.39 | million USD",
+       "page": 12,
+       "status": "canonical",
+       "value": 25390000.0,
+       "verdict": "not-in-document",
+       "figure": "2539",
+       "independent_page_prints": [
+        "2529",
+        "2019",
+        "4529"
+       ]
+      }
+     ],
+     "meaning": "the figure the store publishes is not printed by an independent text extraction of the same PDF page. A question for the next adjudication, not a correction.",
+     "ratified": "owner, 2026-08-26 (serving-wave session)"
+    }
    },
    "meta_provenance": {
     "accredited_entity": {
@@ -36421,7 +38754,8 @@
       "unit": null,
       "page": 6,
       "section": "A.10 Grant",
-      "status": "canonical"
+      "status": "canonical",
+      "cross_check": "not-in-document"
      }
     ],
     "instruments": [
@@ -36563,7 +38897,33 @@
       "ratified": "owner, 2026-08-26"
      }
     ],
-    "ratified": "owner, 2026-08-26"
+    "ratified": "owner, 2026-08-26",
+    "cross_check": {
+     "independent": "pymupdf",
+     "checked": 3,
+     "verdicts": {
+      "confirmed-print": 2,
+      "not-in-document": 1
+     },
+     "flagged": [
+      {
+       "field": "financial_instruments",
+       "raw": "$45,000,000",
+       "page": 6,
+       "status": "canonical",
+       "value": 45000000.0,
+       "verdict": "not-in-document",
+       "figure": "45000000",
+       "independent_page_prints": [
+        "14000000",
+        "186000000",
+        "200000000"
+       ]
+      }
+     ],
+     "meaning": "the figure the store publishes is not printed by an independent text extraction of the same PDF page. A question for the next adjudication, not a correction.",
+     "ratified": "owner, 2026-08-26 (serving-wave session)"
+    }
    },
    "meta_provenance": {
     "accredited_entity": {
@@ -38139,7 +40499,8 @@
       "unit": "million",
       "page": 8,
       "section": "rule:B.2(a)",
-      "status": "canonical"
+      "status": "canonical",
+      "cross_check": "not-in-document"
      },
      {
       "raw": "35.0 million USD",
@@ -38238,6 +40599,35 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta": {
+    "ratified": "owner, 2026-08-26",
+    "cross_check": {
+     "independent": "pymupdf",
+     "checked": 3,
+     "verdicts": {
+      "confirmed-print": 2,
+      "not-in-document": 1
+     },
+     "flagged": [
+      {
+       "field": "total_financing",
+       "raw": "59.9 million USD",
+       "page": 8,
+       "status": "canonical",
+       "value": 59900000.0,
+       "verdict": "not-in-document",
+       "figure": "599",
+       "independent_page_prints": [
+        "50",
+        "69",
+        "90"
+       ]
+      }
+     ],
+     "meaning": "the figure the store publishes is not printed by an independent text extraction of the same PDF page. A question for the next adjudication, not a correction.",
+     "ratified": "owner, 2026-08-26 (serving-wave session)"
+    }
    },
    "meta_provenance": {
     "accredited_entity": {
@@ -39136,7 +41526,8 @@
       "unit": "million",
       "page": 9,
       "section": "rule:B.2(b)",
-      "status": "canonical"
+      "status": "canonical",
+      "cross_check": "not-in-document"
      },
      {
       "raw": "US$ 39.2",
@@ -39206,6 +41597,35 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta": {
+    "ratified": "owner, 2026-08-26",
+    "cross_check": {
+     "independent": "pymupdf",
+     "checked": 2,
+     "verdicts": {
+      "confirmed-print": 1,
+      "not-in-document": 1
+     },
+     "flagged": [
+      {
+       "field": "gcf_funding_requested",
+       "raw": "38.3 | million USD",
+       "page": 9,
+       "status": "canonical",
+       "value": 38300000.0,
+       "verdict": "not-in-document",
+       "figure": "383",
+       "independent_page_prints": [
+        "393",
+        "32",
+        "35"
+       ]
+      }
+     ],
+     "meaning": "the figure the store publishes is not printed by an independent text extraction of the same PDF page. A question for the next adjudication, not a correction.",
+     "ratified": "owner, 2026-08-26 (serving-wave session)"
+    }
    },
    "meta_provenance": {
     "accredited_entity": {
@@ -39677,7 +42097,8 @@
       "unit": null,
       "page": 9,
       "section": "rule:A.8",
-      "status": "canonical"
+      "status": "canonical",
+      "cross_check": "not-in-document"
      }
     ],
     "total_financing": [
@@ -39688,7 +42109,8 @@
       "unit": null,
       "page": 9,
       "section": "rule:B.2(a)",
-      "status": "canonical"
+      "status": "canonical",
+      "cross_check": "not-in-document"
      },
      {
       "raw": "84.01 | USD",
@@ -39708,7 +42130,8 @@
       "unit": null,
       "page": 9,
       "section": "rule:C.1(b)",
-      "status": "canonical"
+      "status": "canonical",
+      "cross_check": "not-in-document"
      }
     ],
     "date_of_submission": [
@@ -39756,6 +42179,62 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta": {
+    "ratified": "owner, 2026-08-26",
+    "cross_check": {
+     "independent": "pymupdf",
+     "checked": 3,
+     "verdicts": {
+      "not-in-document": 3
+     },
+     "flagged": [
+      {
+       "field": "total_financing",
+       "raw": "$48,067,202 | $",
+       "page": 9,
+       "status": "canonical",
+       "value": 48067202.0,
+       "verdict": "not-in-document",
+       "figure": "48067202",
+       "independent_page_prints": [
+        "84007202",
+        "1067726",
+        "5061492"
+       ]
+      },
+      {
+       "field": "gcf_funding_requested",
+       "raw": "$48,067,202",
+       "page": 9,
+       "status": "canonical",
+       "value": 48067202.0,
+       "verdict": "not-in-document",
+       "figure": "48067202",
+       "independent_page_prints": [
+        "84007202",
+        "1067726",
+        "5061492"
+       ]
+      },
+      {
+       "field": "co_financing",
+       "raw": "$5,928,263",
+       "page": 9,
+       "status": "canonical",
+       "value": 5928263.0,
+       "verdict": "not-in-document",
+       "figure": "5928263",
+       "independent_page_prints": [
+        "5928203",
+        "2720926",
+        "28584213"
+       ]
+      }
+     ],
+     "meaning": "the figure the store publishes is not printed by an independent text extraction of the same PDF page. A question for the next adjudication, not a correction.",
+     "ratified": "owner, 2026-08-26 (serving-wave session)"
+    }
    },
    "meta_provenance": {
     "accredited_entity": {
@@ -40093,7 +42572,8 @@
       "unit": "million",
       "page": 41,
       "section": "rule:B.2(a)",
-      "status": "canonical"
+      "status": "canonical",
+      "cross_check": "not-on-cited-page"
      }
     ],
     "board_code": [
@@ -40121,6 +42601,35 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta": {
+    "ratified": "owner, 2026-08-26",
+    "cross_check": {
+     "independent": "pymupdf",
+     "checked": 2,
+     "verdicts": {
+      "confirmed-print": 1,
+      "not-on-cited-page": 1
+     },
+     "flagged": [
+      {
+       "field": "total_financing",
+       "raw": "US$ 205 million",
+       "page": 41,
+       "status": "canonical",
+       "value": 205000000.0,
+       "verdict": "not-on-cited-page",
+       "figure": "205",
+       "independent_page_prints": [
+        "20",
+        "265",
+        "2015"
+       ]
+      }
+     ],
+     "meaning": "the figure the store publishes is not printed by an independent text extraction of the same PDF page. A question for the next adjudication, not a correction.",
+     "ratified": "owner, 2026-08-26 (serving-wave session)"
+    }
    },
    "meta_provenance": {
     "accredited_entity": {
@@ -41654,7 +44163,8 @@
       "unit": null,
       "page": 55,
       "section": "rule:C.1(b)",
-      "status": "canonical"
+      "status": "canonical",
+      "cross_check": "not-in-document"
      }
     ],
     "date_of_submission": [
@@ -41704,6 +44214,35 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta": {
+    "ratified": "owner, 2026-08-26",
+    "cross_check": {
+     "independent": "pymupdf",
+     "checked": 3,
+     "verdicts": {
+      "confirmed-print": 2,
+      "not-in-document": 1
+     },
+     "flagged": [
+      {
+       "field": "co_financing",
+       "raw": "9,250,000.00",
+       "page": 55,
+       "status": "canonical",
+       "value": 9250000.0,
+       "verdict": "not-in-document",
+       "figure": "925000000",
+       "independent_page_prints": [
+        "20000000",
+        "93000000",
+        "86250000"
+       ]
+      }
+     ],
+     "meaning": "the figure the store publishes is not printed by an independent text extraction of the same PDF page. A question for the next adjudication, not a correction.",
+     "ratified": "owner, 2026-08-26 (serving-wave session)"
+    }
    },
    "meta_provenance": {
     "accredited_entity": {
@@ -42451,7 +44990,8 @@
       "unit": null,
       "page": 35,
       "section": "rule:B.2(a)",
-      "status": "canonical"
+      "status": "canonical",
+      "cross_check": "not-in-document"
      }
     ],
     "board_code": [
@@ -42540,7 +45080,31 @@
       "ratified": "owner, 2026-08-26"
      }
     },
-    "ratified": "owner, 2026-08-26"
+    "ratified": "owner, 2026-08-26",
+    "cross_check": {
+     "independent": "pymupdf",
+     "checked": 1,
+     "verdicts": {
+      "not-in-document": 1
+     },
+     "flagged": [
+      {
+       "field": "total_financing",
+       "raw": "$190,000,000",
+       "page": 35,
+       "status": "canonical",
+       "value": 190000000.0,
+       "verdict": "not-in-document",
+       "figure": "190000000",
+       "independent_page_prints": [
+        "100000000",
+        "20000000"
+       ]
+      }
+     ],
+     "meaning": "the figure the store publishes is not printed by an independent text extraction of the same PDF page. A question for the next adjudication, not a correction.",
+     "ratified": "owner, 2026-08-26 (serving-wave session)"
+    }
    }
   },
   "26_gcf-b40-02-add12-funding-proposal-package-fp250": {
@@ -43002,7 +45566,8 @@
       "unit": null,
       "page": 9,
       "section": "rule:B.2(b)",
-      "status": "canonical"
+      "status": "canonical",
+      "cross_check": "not-in-document"
      }
     ],
     "total_financing": [
@@ -43083,6 +45648,35 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta": {
+    "ratified": "owner, 2026-08-26",
+    "cross_check": {
+     "independent": "pymupdf",
+     "checked": 2,
+     "verdicts": {
+      "confirmed-print": 1,
+      "not-in-document": 1
+     },
+     "flagged": [
+      {
+       "field": "gcf_funding_requested",
+       "raw": "7,614,280 | million USD",
+       "page": 9,
+       "status": "canonical",
+       "value": null,
+       "verdict": "not-in-document",
+       "figure": "7614280",
+       "independent_page_prints": [
+        "7614260",
+        "614260",
+        "8160260"
+       ]
+      }
+     ],
+     "meaning": "the figure the store publishes is not printed by an independent text extraction of the same PDF page. A question for the next adjudication, not a correction.",
+     "ratified": "owner, 2026-08-26 (serving-wave session)"
+    }
    },
    "meta_provenance": {
     "accredited_entity": {
@@ -43572,7 +46166,8 @@
       "unit": "million",
       "page": 6,
       "section": "A.8",
-      "status": "canonical"
+      "status": "canonical",
+      "cross_check": "not-on-cited-page"
      }
     ],
     "implementation_period": [
@@ -43631,6 +46226,35 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta": {
+    "ratified": "owner, 2026-08-26",
+    "cross_check": {
+     "independent": "pymupdf",
+     "checked": 2,
+     "verdicts": {
+      "confirmed-value": 1,
+      "not-on-cited-page": 1
+     },
+     "flagged": [
+      {
+       "field": "gcf_funding_requested",
+       "raw": "USD 25 million",
+       "page": 6,
+       "status": "canonical",
+       "value": 25000000.0,
+       "verdict": "not-on-cited-page",
+       "figure": "25",
+       "independent_page_prints": [
+        "15",
+        "20",
+        "23"
+       ]
+      }
+     ],
+     "meaning": "the figure the store publishes is not printed by an independent text extraction of the same PDF page. A question for the next adjudication, not a correction.",
+     "ratified": "owner, 2026-08-26 (serving-wave session)"
+    }
    },
    "meta_provenance": {
     "accredited_entity": {
@@ -44173,7 +46797,8 @@
       "unit": null,
       "page": 5,
       "section": "A.8",
-      "status": "canonical"
+      "status": "canonical",
+      "cross_check": "not-in-document"
      }
     ],
     "project_size": [
@@ -44288,6 +46913,35 @@
     "core_missing": [],
     "llm_fallback": false
    },
+   "meta": {
+    "ratified": "owner, 2026-08-26",
+    "cross_check": {
+     "independent": "pymupdf",
+     "checked": 2,
+     "verdicts": {
+      "confirmed-print": 1,
+      "not-in-document": 1
+     },
+     "flagged": [
+      {
+       "field": "gcf_funding_requested",
+       "raw": "78,707,268 USD",
+       "page": 5,
+       "status": "canonical",
+       "value": 78707268.0,
+       "verdict": "not-in-document",
+       "figure": "78707268",
+       "independent_page_prints": [
+        "79707268",
+        "94901497",
+        "1152142"
+       ]
+      }
+     ],
+     "meaning": "the figure the store publishes is not printed by an independent text extraction of the same PDF page. A question for the next adjudication, not a correction.",
+     "ratified": "owner, 2026-08-26 (serving-wave session)"
+    }
+   },
    "meta_provenance": {
     "accredited_entity": {
      "page": 3,
@@ -44389,7 +47043,8 @@
       "unit": null,
       "page": 6,
       "section": "A.10 Grant",
-      "status": "canonical"
+      "status": "canonical",
+      "cross_check": "not-in-document"
      }
     ],
     "instruments": [
@@ -44636,7 +47291,31 @@
       "ratified": "owner, 2026-08-26"
      }
     ],
-    "ratified": "owner, 2026-08-26"
+    "ratified": "owner, 2026-08-26",
+    "cross_check": {
+     "independent": "pymupdf",
+     "checked": 3,
+     "verdicts": {
+      "confirmed-print": 2,
+      "not-in-document": 1
+     },
+     "flagged": [
+      {
+       "field": "financial_instruments",
+       "raw": "$27,955,786 USD",
+       "page": 6,
+       "status": "canonical",
+       "value": 27955786.0,
+       "verdict": "not-in-document",
+       "figure": "27955786",
+       "independent_page_prints": [
+        "27995786"
+       ]
+      }
+     ],
+     "meaning": "the figure the store publishes is not printed by an independent text extraction of the same PDF page. A question for the next adjudication, not a correction.",
+     "ratified": "owner, 2026-08-26 (serving-wave session)"
+    }
    },
    "meta_provenance": {
     "accredited_entity": {
@@ -44728,7 +47407,8 @@
       "unit": null,
       "page": 7,
       "section": "A.7",
-      "status": "canonical"
+      "status": "canonical",
+      "cross_check": "not-in-document"
      }
     ],
     "gcf_funding_requested": [
@@ -44854,6 +47534,35 @@
      "title"
     ],
     "llm_fallback": false
+   },
+   "meta": {
+    "ratified": "owner, 2026-08-26",
+    "cross_check": {
+     "independent": "pymupdf",
+     "checked": 2,
+     "verdicts": {
+      "confirmed-print": 1,
+      "not-in-document": 1
+     },
+     "flagged": [
+      {
+       "field": "total_financing",
+       "raw": "37,068,200 USD",
+       "page": 7,
+       "status": "canonical",
+       "value": 37068200.0,
+       "verdict": "not-in-document",
+       "figure": "37068200",
+       "independent_page_prints": [
+        "37068208",
+        "33000000",
+        "1798878"
+       ]
+      }
+     ],
+     "meaning": "the figure the store publishes is not printed by an independent text extraction of the same PDF page. A question for the next adjudication, not a correction.",
+     "ratified": "owner, 2026-08-26 (serving-wave session)"
+    }
    },
    "meta_provenance": {
     "accredited_entity": {
@@ -45233,7 +47942,8 @@
       "unit": "million",
       "page": 5,
       "section": "A8",
-      "status": "canonical"
+      "status": "canonical",
+      "cross_check": "not-in-document"
      }
     ],
     "project_size": [
@@ -45360,6 +48070,35 @@
     "core_missing": [],
     "llm_fallback": false
    },
+   "meta": {
+    "ratified": "owner, 2026-08-26",
+    "cross_check": {
+     "independent": "pymupdf",
+     "checked": 3,
+     "verdicts": {
+      "confirmed-print": 2,
+      "not-in-document": 1
+     },
+     "flagged": [
+      {
+       "field": "gcf_funding_requested",
+       "raw": "118.076 million USD",
+       "page": 5,
+       "status": "canonical",
+       "value": 118076000.0,
+       "verdict": "not-in-document",
+       "figure": "118076",
+       "independent_page_prints": [
+        "118976",
+        "527176",
+        "22833"
+       ]
+      }
+     ],
+     "meaning": "the figure the store publishes is not printed by an independent text extraction of the same PDF page. A question for the next adjudication, not a correction.",
+     "ratified": "owner, 2026-08-26 (serving-wave session)"
+    }
+   },
    "meta_provenance": {
     "accredited_entity": {
      "page": 3,
@@ -45439,7 +48178,8 @@
       "unit": "million",
       "page": 5,
       "section": "A.7",
-      "status": "canonical"
+      "status": "canonical",
+      "cross_check": "not-in-document"
      },
      {
       "raw": "800 | million USD",
@@ -45477,7 +48217,8 @@
       "unit": "million",
       "page": 5,
       "section": "A.8",
-      "status": "canonical"
+      "status": "canonical",
+      "cross_check": "not-in-document"
      }
     ],
     "project_size": [
@@ -45598,6 +48339,49 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta": {
+    "ratified": "owner, 2026-08-26",
+    "cross_check": {
+     "independent": "pymupdf",
+     "checked": 3,
+     "verdicts": {
+      "confirmed-print": 1,
+      "not-in-document": 2
+     },
+     "flagged": [
+      {
+       "field": "total_financing",
+       "raw": "3762 million USD",
+       "page": 5,
+       "status": "canonical",
+       "value": 3762000000.0,
+       "verdict": "not-in-document",
+       "figure": "3762",
+       "independent_page_prints": [
+        "37926",
+        "3534",
+        "100"
+       ]
+      },
+      {
+       "field": "gcf_funding_requested",
+       "raw": "2149 million USD",
+       "page": 5,
+       "status": "canonical",
+       "value": 2149000000.0,
+       "verdict": "not-in-document",
+       "figure": "2149",
+       "independent_page_prints": [
+        "2156",
+        "100",
+        "120"
+       ]
+      }
+     ],
+     "meaning": "the figure the store publishes is not printed by an independent text extraction of the same PDF page. A question for the next adjudication, not a correction.",
+     "ratified": "owner, 2026-08-26 (serving-wave session)"
+    }
    },
    "meta_provenance": {
     "accredited_entity": {
@@ -45732,7 +48516,8 @@
        "page": 5,
        "section": "A.7",
        "status": "canonical"
-      }
+      },
+      "cross_check": "not-in-document"
      }
     ],
     "project_size": [
@@ -45988,7 +48773,34 @@
       "ratified": "owner, 2026-08-26"
      }
     ],
-    "ratified": "owner, 2026-08-26"
+    "ratified": "owner, 2026-08-26",
+    "cross_check": {
+     "independent": "pymupdf",
+     "checked": 2,
+     "verdicts": {
+      "confirmed-print": 1,
+      "not-in-document": 1
+     },
+     "flagged": [
+      {
+       "field": "total_financing",
+       "raw": "$221,219 million USD",
+       "page": 5,
+       "status": "canonical",
+       "value": 221219000.0,
+       "verdict": "not-in-document",
+       "figure": "221219",
+       "independent_page_prints": [
+        "2212149",
+        "104471",
+        "1132408"
+       ],
+       "corrected": true
+      }
+     ],
+     "meaning": "the figure the store publishes is not printed by an independent text extraction of the same PDF page. A question for the next adjudication, not a correction.",
+     "ratified": "owner, 2026-08-26 (serving-wave session)"
+    }
    },
    "meta_provenance": {
     "accredited_entity": {
@@ -46536,7 +49348,8 @@
       "unit": null,
       "page": 7,
       "section": "A.7",
-      "status": "canonical"
+      "status": "canonical",
+      "cross_check": "not-in-document"
      },
      {
       "raw": "78,353412 million eur",
@@ -46596,7 +49409,8 @@
       "unit": null,
       "page": 9,
       "section": "A.10 Grant",
-      "status": "canonical"
+      "status": "canonical",
+      "cross_check": "not-in-document"
      },
      {
       "raw": "€40,264,000 USD",
@@ -46756,6 +49570,49 @@
     "core_missing": [],
     "llm_fallback": false
    },
+   "meta": {
+    "ratified": "owner, 2026-08-26",
+    "cross_check": {
+     "independent": "pymupdf",
+     "checked": 3,
+     "verdicts": {
+      "confirmed-print": 1,
+      "not-in-document": 2
+     },
+     "flagged": [
+      {
+       "field": "total_financing",
+       "raw": "219,981,104 Eur",
+       "page": 7,
+       "status": "canonical",
+       "value": 219981104.0,
+       "verdict": "not-in-document",
+       "figure": "219981104",
+       "independent_page_prints": [
+        "210981104",
+        "3210981104",
+        "103895500"
+       ]
+      },
+      {
+       "field": "financial_instruments",
+       "raw": "€22,335,415 Eur",
+       "page": 9,
+       "status": "canonical",
+       "value": 22335415.0,
+       "verdict": "not-in-document",
+       "figure": "22335415",
+       "independent_page_prints": [
+        "22333415",
+        "40264000",
+        "56000000"
+       ]
+      }
+     ],
+     "meaning": "the figure the store publishes is not printed by an independent text extraction of the same PDF page. A question for the next adjudication, not a correction.",
+     "ratified": "owner, 2026-08-26 (serving-wave session)"
+    }
+   },
    "meta_provenance": {
     "accredited_entity": {
      "page": 3,
@@ -46846,7 +49703,8 @@
       "unit": null,
       "page": 5,
       "section": "A.7",
-      "status": "canonical"
+      "status": "canonical",
+      "cross_check": "not-on-cited-page"
      },
      {
       "raw": "46.913 | Million USD",
@@ -46967,6 +49825,35 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta": {
+    "ratified": "owner, 2026-08-26",
+    "cross_check": {
+     "independent": "pymupdf",
+     "checked": 3,
+     "verdicts": {
+      "confirmed-print": 2,
+      "not-on-cited-page": 1
+     },
+     "flagged": [
+      {
+       "field": "total_financing",
+       "raw": "96 953 million USD",
+       "page": 5,
+       "status": "canonical",
+       "value": null,
+       "verdict": "not-on-cited-page",
+       "figure": "953",
+       "independent_page_prints": [
+        "23",
+        "35",
+        "54"
+       ]
+      }
+     ],
+     "meaning": "the figure the store publishes is not printed by an independent text extraction of the same PDF page. A question for the next adjudication, not a correction.",
+     "ratified": "owner, 2026-08-26 (serving-wave session)"
+    }
    },
    "meta_provenance": {
     "accredited_entity": {
@@ -47281,7 +50168,8 @@
       "unit": null,
       "page": 5,
       "section": "A.8",
-      "status": "canonical"
+      "status": "canonical",
+      "cross_check": "not-in-document"
      }
     ],
     "project_size": [
@@ -47363,6 +50251,34 @@
     "core_missing": [],
     "llm_fallback": false
    },
+   "meta": {
+    "ratified": "owner, 2026-08-26",
+    "cross_check": {
+     "independent": "pymupdf",
+     "checked": 2,
+     "verdicts": {
+      "confirmed-print": 1,
+      "not-in-document": 1
+     },
+     "flagged": [
+      {
+       "field": "gcf_funding_requested",
+       "raw": "22,566,409 USD",
+       "page": 5,
+       "status": "canonical",
+       "value": 22566409.0,
+       "verdict": "not-in-document",
+       "figure": "22566409",
+       "independent_page_prints": [
+        "22656409",
+        "23919409"
+       ]
+      }
+     ],
+     "meaning": "the figure the store publishes is not printed by an independent text extraction of the same PDF page. A question for the next adjudication, not a correction.",
+     "ratified": "owner, 2026-08-26 (serving-wave session)"
+    }
+   },
    "meta_provenance": {
     "accredited_entity": {
      "page": 3,
@@ -47414,23 +50330,45 @@
     ],
     "mitigation_outcome": [
      {
-      "raw": "6,654,832 tonnes of CO2e",
-      "value": 6654832.0,
+      "raw": "6,854,822 tonnes of CO2e (27 year",
+      "value": 6854822.0,
       "currency": null,
       "unit": null,
       "page": 5,
-      "section": "A5",
+      "section": "A.5",
       "status": "canonical"
      }
     ],
-    "adaptation_outcome": [
+    "beneficiaries_direct": [
      {
-      "raw": "850,000 individuals (31.9% wome",
-      "value": 850000.0,
+      "raw": "Direct beneficiaries: 650,000",
+      "value": 650000.0,
       "currency": null,
       "unit": null,
       "page": 5,
-      "section": "A6",
+      "section": "A.6",
+      "status": "canonical"
+     }
+    ],
+    "beneficiaries_indirect": [
+     {
+      "raw": "Indirect beneficiaries: 2,268,426",
+      "value": 2268426.0,
+      "currency": null,
+      "unit": null,
+      "page": 5,
+      "section": "A.6",
+      "status": "canonical"
+     }
+    ],
+    "total_financing": [
+     {
+      "raw": "79,690,370 USD",
+      "value": 79690370.0,
+      "currency": "USD",
+      "unit": null,
+      "page": 5,
+      "section": "A.7",
       "status": "canonical"
      }
     ],
@@ -47441,38 +50379,38 @@
       "currency": "USD",
       "unit": null,
       "page": 5,
-      "section": "rule:A.8",
+      "section": "A.8",
       "status": "canonical"
      }
     ],
     "project_size": [
      {
-      "raw": "Medium (50p USD to 250 million)",
+      "raw": "Medium (Upto USD 250 million)",
       "value": null,
       "currency": null,
       "unit": null,
       "page": 5,
-      "section": "A9",
+      "section": "A.9",
       "status": "canonical"
      }
     ],
     "financial_instruments": [
      {
-      "raw": "30,000,000 USD",
+      "raw": "30,000,000",
       "value": 30000000.0,
-      "currency": "USD",
+      "currency": null,
       "unit": null,
       "page": 5,
-      "section": "A8 Grant",
+      "section": "A.10 Grant",
       "status": "canonical"
      },
      {
-      "raw": "9,000,000 USD",
+      "raw": "9,000,000",
       "value": 9000000.0,
-      "currency": "USD",
+      "currency": null,
       "unit": null,
       "page": 5,
-      "section": "A8 Loan",
+      "section": "A.10 Loan",
       "status": "supporting"
      }
     ],
@@ -47483,7 +50421,7 @@
       "currency": null,
       "unit": null,
       "page": 5,
-      "section": "A8 Grant",
+      "section": "A.10 Grant",
       "status": "canonical"
      },
      {
@@ -47492,8 +50430,30 @@
       "currency": null,
       "unit": null,
       "page": 5,
-      "section": "A8 Loan",
+      "section": "A.10 Loan",
       "status": "supporting"
+     }
+    ],
+    "implementation_period": [
+     {
+      "raw": "7 years",
+      "value": 7.0,
+      "currency": null,
+      "unit": "years",
+      "page": 5,
+      "section": "A.11",
+      "status": "canonical"
+     }
+    ],
+    "lifespan": [
+     {
+      "raw": "20 years",
+      "value": 20.0,
+      "currency": null,
+      "unit": "years",
+      "page": 5,
+      "section": "A.12",
+      "status": "canonical"
      }
     ],
     "ess_category": [
@@ -47503,7 +50463,7 @@
       "currency": null,
       "unit": null,
       "page": 5,
-      "section": "A14",
+      "section": "A.14",
       "status": "canonical"
      }
     ],
@@ -47526,17 +50486,6 @@
       "unit": null,
       "page": 3,
       "section": "rule:A.1.3",
-      "status": "canonical"
-     }
-    ],
-    "total_financing": [
-     {
-      "raw": "69,830,370 USD",
-      "value": 69830370.0,
-      "currency": "USD",
-      "unit": null,
-      "page": 5,
-      "section": "A7",
       "status": "canonical"
      }
     ],
@@ -47573,9 +50522,9 @@
     ]
    },
    "coverage": {
-    "era": "A5-A14 block (FP template v2/v3, variant numbering)",
+    "era": "A5-A14 block (FP template v2/v3)",
     "pages": 176,
-    "fields": 14,
+    "fields": 17,
     "core_found": [
      "title",
      "countries",
@@ -47585,6 +50534,31 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta": {
+    "corrections": [
+     {
+      "id": "C66",
+      "field": "total_financing",
+      "layer": "fact-canonical",
+      "action": "correct-to",
+      "from": null,
+      "to": null,
+      "page_of_quote": 94,
+      "quote": "p94: \"Financing for the project amounts to USD 79,690,370 (of which USD 39,000,000 will be from GCF)\"; 39,000,000 + 40,690,370 = 79,690,370 exactly",
+      "adjudication_note": "VLM digit misread on the cover; 69,830,370 is printed on no page of the PDF. Re-extract p5",
+      "row_ref": {
+       "file": "scratchpad/serving_wave_adjudication.json",
+       "pointer": "rows[6]",
+       "md_table": "Q1",
+       "verdict": "WRONG (VLM digit misread)",
+       "proposed_action": "correct-to"
+      },
+      "ratified": "owner, 2026-08-26 (serving-wave session)",
+      "resolved_by_reextraction": "the re-extracted page reads the ratified figure: total_financing is now '79,690,370 USD' (p.5), value 79690370.0"
+     }
+    ],
+    "ratified": "owner, 2026-08-26"
    },
    "meta_provenance": {
     "accredited_entity": {
@@ -48110,7 +51084,8 @@
       "unit": "million",
       "page": 5,
       "section": "A.7",
-      "status": "canonical"
+      "status": "canonical",
+      "cross_check": "not-in-document"
      },
      {
       "raw": "32.8 | million eur",
@@ -48189,6 +51164,35 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta": {
+    "ratified": "owner, 2026-08-26",
+    "cross_check": {
+     "independent": "pymupdf",
+     "checked": 2,
+     "verdicts": {
+      "confirmed-print": 1,
+      "not-in-document": 1
+     },
+     "flagged": [
+      {
+       "field": "total_financing",
+       "raw": "120.2 million Eur",
+       "page": 5,
+       "status": "canonical",
+       "value": 120200000.0,
+       "verdict": "not-in-document",
+       "figure": "1202",
+       "independent_page_prints": [
+        "1282",
+        "100",
+        "250"
+       ]
+      }
+     ],
+     "meaning": "the figure the store publishes is not printed by an independent text extraction of the same PDF page. A question for the next adjudication, not a correction.",
+     "ratified": "owner, 2026-08-26 (serving-wave session)"
+    }
    },
    "meta_provenance": {
     "accredited_entity": {
@@ -49365,7 +52369,8 @@
       "unit": null,
       "page": 6,
       "section": "A.10 Grant",
-      "status": "canonical"
+      "status": "canonical",
+      "cross_check": "not-in-document"
      },
      {
       "raw": "$400,000 USD",
@@ -49487,6 +52492,34 @@
     "core_missing": [],
     "llm_fallback": false
    },
+   "meta": {
+    "ratified": "owner, 2026-08-26",
+    "cross_check": {
+     "independent": "pymupdf",
+     "checked": 3,
+     "verdicts": {
+      "confirmed-print": 2,
+      "not-in-document": 1
+     },
+     "flagged": [
+      {
+       "field": "financial_instruments",
+       "raw": "$300,000 USD",
+       "page": 6,
+       "status": "canonical",
+       "value": 300000.0,
+       "verdict": "not-in-document",
+       "figure": "300000",
+       "independent_page_prints": [
+        "1000000",
+        "43324"
+       ]
+      }
+     ],
+     "meaning": "the figure the store publishes is not printed by an independent text extraction of the same PDF page. A question for the next adjudication, not a correction.",
+     "ratified": "owner, 2026-08-26 (serving-wave session)"
+    }
+   },
    "meta_provenance": {
     "accredited_entity": {
      "page": 3,
@@ -49605,7 +52638,8 @@
       "unit": null,
       "page": 5,
       "section": "A.8",
-      "status": "canonical"
+      "status": "canonical",
+      "cross_check": "not-on-cited-page"
      }
     ],
     "project_size": [
@@ -49704,6 +52738,34 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta": {
+    "ratified": "owner, 2026-08-26",
+    "cross_check": {
+     "independent": "pymupdf",
+     "checked": 2,
+     "verdicts": {
+      "confirmed-print": 1,
+      "not-on-cited-page": 1
+     },
+     "flagged": [
+      {
+       "field": "gcf_funding_requested",
+       "raw": "152,500,000 USD",
+       "page": 5,
+       "status": "canonical",
+       "value": 152500000.0,
+       "verdict": "not-on-cited-page",
+       "figure": "152500000",
+       "independent_page_prints": [
+        "4152500000",
+        "1482500000"
+       ]
+      }
+     ],
+     "meaning": "the figure the store publishes is not printed by an independent text extraction of the same PDF page. A question for the next adjudication, not a correction.",
+     "ratified": "owner, 2026-08-26 (serving-wave session)"
+    }
    },
    "meta_provenance": {
     "accredited_entity": {
@@ -50017,7 +53079,8 @@
        "page": 6,
        "section": "A.7",
        "status": "canonical"
-      }
+      },
+      "cross_check": "not-in-document"
      },
      {
       "raw": "$141,935,858",
@@ -50265,7 +53328,34 @@
       "ratified": "owner, 2026-08-26"
      }
     ],
-    "ratified": "owner, 2026-08-26"
+    "ratified": "owner, 2026-08-26",
+    "cross_check": {
+     "independent": "pymupdf",
+     "checked": 2,
+     "verdicts": {
+      "confirmed-print": 1,
+      "not-in-document": 1
+     },
+     "flagged": [
+      {
+       "field": "total_financing",
+       "raw": "$141,935,858",
+       "page": 62,
+       "status": "canonical",
+       "value": 141935858.0,
+       "verdict": "not-in-document",
+       "figure": "141935858",
+       "independent_page_prints": [
+        "141955898",
+        "99162898",
+        "42793000"
+       ],
+       "corrected": true
+      }
+     ],
+     "meaning": "the figure the store publishes is not printed by an independent text extraction of the same PDF page. A question for the next adjudication, not a correction.",
+     "ratified": "owner, 2026-08-26 (serving-wave session)"
+    }
    },
    "meta_provenance": {
     "accredited_entity": {
@@ -50369,7 +53459,8 @@
       "unit": null,
       "page": 5,
       "section": "A.8",
-      "status": "canonical"
+      "status": "canonical",
+      "cross_check": "not-in-document"
      }
     ],
     "project_size": [
@@ -50472,6 +53563,35 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta": {
+    "ratified": "owner, 2026-08-26",
+    "cross_check": {
+     "independent": "pymupdf",
+     "checked": 2,
+     "verdicts": {
+      "confirmed-print": 1,
+      "not-in-document": 1
+     },
+     "flagged": [
+      {
+       "field": "gcf_funding_requested",
+       "raw": "50,000,000 USD",
+       "page": 5,
+       "status": "canonical",
+       "value": 50000000.0,
+       "verdict": "not-in-document",
+       "figure": "50000000",
+       "independent_page_prints": [
+        "10000000",
+        "55000000",
+        "45000000"
+       ]
+      }
+     ],
+     "meaning": "the figure the store publishes is not printed by an independent text extraction of the same PDF page. A question for the next adjudication, not a correction.",
+     "ratified": "owner, 2026-08-26 (serving-wave session)"
+    }
    },
    "meta_provenance": {
     "accredited_entity": {
@@ -50605,7 +53725,8 @@
       "unit": "million",
       "page": 9,
       "section": "A.10 Grant",
-      "status": "canonical"
+      "status": "canonical",
+      "cross_check": "not-in-document"
      },
      {
       "raw": "$6.99 Million USD",
@@ -50693,6 +53814,35 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta": {
+    "ratified": "owner, 2026-08-26",
+    "cross_check": {
+     "independent": "pymupdf",
+     "checked": 2,
+     "verdicts": {
+      "confirmed-print": 1,
+      "not-in-document": 1
+     },
+     "flagged": [
+      {
+       "field": "financial_instruments",
+       "raw": "$5.79 Million USD",
+       "page": 9,
+       "status": "canonical",
+       "value": 5790000.0,
+       "verdict": "not-in-document",
+       "figure": "579",
+       "independent_page_prints": [
+        "7579",
+        "17",
+        "19"
+       ]
+      }
+     ],
+     "meaning": "the figure the store publishes is not printed by an independent text extraction of the same PDF page. A question for the next adjudication, not a correction.",
+     "ratified": "owner, 2026-08-26 (serving-wave session)"
+    }
    },
    "meta_provenance": {
     "accredited_entity": {
@@ -50784,7 +53934,8 @@
       "unit": null,
       "page": 5,
       "section": "A.7",
-      "status": "canonical"
+      "status": "canonical",
+      "cross_check": "not-in-document"
      }
     ],
     "gcf_funding_requested": [
@@ -50795,7 +53946,8 @@
       "unit": null,
       "page": 5,
       "section": "A.8",
-      "status": "canonical"
+      "status": "canonical",
+      "cross_check": "not-in-document"
      },
      {
       "raw": "$19,077,353",
@@ -50837,7 +53989,8 @@
       "unit": null,
       "page": 6,
       "section": "A.10 Grant",
-      "status": "canonical"
+      "status": "canonical",
+      "cross_check": "not-in-document"
      }
     ],
     "instruments": [
@@ -50940,6 +54093,60 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta": {
+    "ratified": "owner, 2026-08-26",
+    "cross_check": {
+     "independent": "pymupdf",
+     "checked": 3,
+     "verdicts": {
+      "not-in-document": 3
+     },
+     "flagged": [
+      {
+       "field": "total_financing",
+       "raw": "23,618,846 USD",
+       "page": 5,
+       "status": "canonical",
+       "value": 23618846.0,
+       "verdict": "not-in-document",
+       "figure": "23618846",
+       "independent_page_prints": [
+        "23618646",
+        "1281857",
+        "19007353"
+       ]
+      },
+      {
+       "field": "gcf_funding_requested",
+       "raw": "13,097,553 USD",
+       "page": 5,
+       "status": "canonical",
+       "value": 13097553.0,
+       "verdict": "not-in-document",
+       "figure": "13097553",
+       "independent_page_prints": [
+        "19007353",
+        "1281857",
+        "23618646"
+       ]
+      },
+      {
+       "field": "financial_instruments",
+       "raw": "$19,077,353",
+       "page": 6,
+       "status": "canonical",
+       "value": 19077353.0,
+       "verdict": "not-in-document",
+       "figure": "19077353",
+       "independent_page_prints": [
+        "19007353"
+       ]
+      }
+     ],
+     "meaning": "the figure the store publishes is not printed by an independent text extraction of the same PDF page. A question for the next adjudication, not a correction.",
+     "ratified": "owner, 2026-08-26 (serving-wave session)"
+    }
    },
    "meta_provenance": {
     "accredited_entity": {
@@ -51376,7 +54583,8 @@
       "unit": "million",
       "page": 5,
       "section": "A.7",
-      "status": "canonical"
+      "status": "canonical",
+      "cross_check": "not-in-document"
      },
      {
       "raw": "14.4 million USD",
@@ -51519,6 +54727,35 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta": {
+    "ratified": "owner, 2026-08-26",
+    "cross_check": {
+     "independent": "pymupdf",
+     "checked": 2,
+     "verdicts": {
+      "confirmed-print": 1,
+      "not-in-document": 1
+     },
+     "flagged": [
+      {
+       "field": "total_financing",
+       "raw": "72.89 Million USD",
+       "page": 5,
+       "status": "canonical",
+       "value": 72890000.0,
+       "verdict": "not-in-document",
+       "figure": "7289",
+       "independent_page_prints": [
+        "7269",
+        "126",
+        "243"
+       ]
+      }
+     ],
+     "meaning": "the figure the store publishes is not printed by an independent text extraction of the same PDF page. A question for the next adjudication, not a correction.",
+     "ratified": "owner, 2026-08-26 (serving-wave session)"
+    }
    },
    "meta_provenance": {
     "accredited_entity": {
@@ -51890,15 +55127,6 @@
       "page": 114,
       "section": "rule:A.7",
       "status": "canonical"
-     },
-     {
-      "raw": "EUR 80.59 million",
-      "value": 80590000.0,
-      "currency": "EUR",
-      "unit": "million",
-      "page": 137,
-      "section": "rule:B.2(a)",
-      "status": "conflicting"
      }
     ],
     "gcf_funding_requested": [
@@ -51968,6 +55196,31 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta": {
+    "corrections": [
+     {
+      "id": "C71",
+      "field": "total_financing",
+      "layer": "fact-conflicting",
+      "action": "drop-candidate",
+      "from": null,
+      "to": null,
+      "page_of_quote": 137,
+      "quote": "p137 (independent), Table 24: \"GCF resources EUR 38.17 million / Total project co-financing EUR 79.90 million / Total project size EUR 118.08 million\"",
+      "adjudication_note": "qwen fabricated Table 24 wholesale (36.17 / 80.59 / 11.58 for the true 38.17 / 79.90 / 118.08); this row is the whole of FP214's total-financing 'conflict'. Re-extract p137",
+      "row_ref": {
+       "file": "scratchpad/serving_wave_adjudication.json",
+       "pointer": "rows[16]",
+       "md_table": "Q1",
+       "verdict": "WRONG (fabricated table)",
+       "proposed_action": "drop + re-extract p137"
+      },
+      "ratified": "owner, 2026-08-26 (serving-wave session)",
+      "resolved_by_reextraction": "the re-extraction of p.137 removed the print this row was ratified to drop"
+     }
+    ],
+    "ratified": "owner, 2026-08-26"
    },
    "meta_provenance": {
     "accredited_entity": {
@@ -52068,7 +55321,8 @@
       "unit": null,
       "page": 5,
       "section": "A.8",
-      "status": "canonical"
+      "status": "canonical",
+      "cross_check": "not-in-document"
      }
     ],
     "project_size": [
@@ -52161,6 +55415,35 @@
     "core_missing": [],
     "llm_fallback": false
    },
+   "meta": {
+    "ratified": "owner, 2026-08-26",
+    "cross_check": {
+     "independent": "pymupdf",
+     "checked": 2,
+     "verdicts": {
+      "confirmed-print": 1,
+      "not-in-document": 1
+     },
+     "flagged": [
+      {
+       "field": "gcf_funding_requested",
+       "raw": "15,000,000 USD",
+       "page": 5,
+       "status": "canonical",
+       "value": 15000000.0,
+       "verdict": "not-in-document",
+       "figure": "15000000",
+       "independent_page_prints": [
+        "15500000",
+        "30500000",
+        "22600050"
+       ]
+      }
+     ],
+     "meaning": "the figure the store publishes is not printed by an independent text extraction of the same PDF page. A question for the next adjudication, not a correction.",
+     "ratified": "owner, 2026-08-26 (serving-wave session)"
+    }
+   },
    "meta_provenance": {
     "accredited_entity": {
      "page": 3,
@@ -52239,7 +55522,8 @@
       "unit": null,
       "page": 5,
       "section": "A.7",
-      "status": "canonical"
+      "status": "canonical",
+      "cross_check": "not-in-document"
      },
      {
       "raw": "981,620,000 | million USD",
@@ -52277,7 +55561,8 @@
       "unit": null,
       "page": 5,
       "section": "A.8",
-      "status": "canonical"
+      "status": "canonical",
+      "cross_check": "not-in-document"
      }
     ],
     "project_size": [
@@ -52387,6 +55672,49 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta": {
+    "ratified": "owner, 2026-08-26",
+    "cross_check": {
+     "independent": "pymupdf",
+     "checked": 3,
+     "verdicts": {
+      "confirmed-value": 1,
+      "not-in-document": 2
+     },
+     "flagged": [
+      {
+       "field": "total_financing",
+       "raw": "981,260,000 USD",
+       "page": 5,
+       "status": "canonical",
+       "value": 981260000.0,
+       "verdict": "not-in-document",
+       "figure": "981260000",
+       "independent_page_prints": [
+        "981620000",
+        "189350000",
+        "339150000"
+       ]
+      },
+      {
+       "field": "gcf_funding_requested",
+       "raw": "193,550,000 USD",
+       "page": 5,
+       "status": "canonical",
+       "value": 193550000.0,
+       "verdict": "not-in-document",
+       "figure": "193550000",
+       "independent_page_prints": [
+        "189350000",
+        "339150000",
+        "981620000"
+       ]
+      }
+     ],
+     "meaning": "the figure the store publishes is not printed by an independent text extraction of the same PDF page. A question for the next adjudication, not a correction.",
+     "ratified": "owner, 2026-08-26 (serving-wave session)"
+    }
    },
    "meta_provenance": {
     "accredited_entity": {
@@ -52946,7 +56274,8 @@
       "unit": "million",
       "page": 9,
       "section": "A.8",
-      "status": "canonical"
+      "status": "canonical",
+      "cross_check": "not-on-cited-page"
      },
      {
       "raw": "$295 | million USD",
@@ -53059,6 +56388,35 @@
     "core_missing": [],
     "llm_fallback": false
    },
+   "meta": {
+    "ratified": "owner, 2026-08-26",
+    "cross_check": {
+     "independent": "pymupdf",
+     "checked": 2,
+     "verdicts": {
+      "confirmed-print": 1,
+      "not-on-cited-page": 1
+     },
+     "flagged": [
+      {
+       "field": "gcf_funding_requested",
+       "raw": "226 million USD",
+       "page": 9,
+       "status": "canonical",
+       "value": 226000000.0,
+       "verdict": "not-on-cited-page",
+       "figure": "226",
+       "independent_page_prints": [
+        "20",
+        "235",
+        "250"
+       ]
+      }
+     ],
+     "meaning": "the figure the store publishes is not printed by an independent text extraction of the same PDF page. A question for the next adjudication, not a correction.",
+     "ratified": "owner, 2026-08-26 (serving-wave session)"
+    }
+   },
    "meta_provenance": {
     "accredited_entity": {
      "page": 3,
@@ -53157,7 +56515,8 @@
        "page": 5,
        "section": "A.8",
        "status": "canonical"
-      }
+      },
+      "cross_check": "not-in-document"
      }
     ],
     "project_size": [
@@ -53288,7 +56647,34 @@
       "ratified": "owner, 2026-08-26"
      }
     ],
-    "ratified": "owner, 2026-08-26"
+    "ratified": "owner, 2026-08-26",
+    "cross_check": {
+     "independent": "pymupdf",
+     "checked": 2,
+     "verdicts": {
+      "confirmed-print": 1,
+      "not-in-document": 1
+     },
+     "flagged": [
+      {
+       "field": "gcf_funding_requested",
+       "raw": "22,427,437.98 USD",
+       "page": 49,
+       "status": "canonical",
+       "value": 22427437.98,
+       "verdict": "not-in-document",
+       "figure": "2242743798",
+       "independent_page_prints": [
+        "2242720648",
+        "131408744",
+        "312905614"
+       ],
+       "corrected": true
+      }
+     ],
+     "meaning": "the figure the store publishes is not printed by an independent text extraction of the same PDF page. A question for the next adjudication, not a correction.",
+     "ratified": "owner, 2026-08-26 (serving-wave session)"
+    }
    },
    "meta_provenance": {
     "accredited_entity": {
@@ -54124,13 +57510,23 @@
     ],
     "total_financing": [
      {
-      "raw": "160 | million USD",
-      "value": 160000000.0,
+      "raw": "USD 1,119,000,000",
+      "value": 1119000000.0,
       "currency": "USD",
-      "unit": "million",
-      "page": 162,
-      "section": "rule:A.7",
-      "status": "canonical"
+      "unit": null,
+      "page": 5,
+      "section": "corrected",
+      "status": "canonical",
+      "corrected": true,
+      "corrected_from": {
+       "raw": "160 | million USD",
+       "value": 160000000.0,
+       "currency": "USD",
+       "unit": "million",
+       "page": 162,
+       "section": "rule:A.7",
+       "status": "canonical"
+      }
      },
      {
       "raw": "USD 1,119 million",
@@ -54139,7 +57535,7 @@
       "unit": "million",
       "page": 176,
       "section": "rule:B.2(a)",
-      "status": "conflicting"
+      "status": "supporting"
      }
     ],
     "date_of_submission": [
@@ -54187,6 +57583,46 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta": {
+    "corrections": [
+     {
+      "id": "C64",
+      "field": "total_financing",
+      "layer": "fact-canonical",
+      "action": "correct-to",
+      "from": {
+       "raw": "160 | million USD",
+       "value": 160000000.0,
+       "currency": "USD",
+       "unit": "million",
+       "page": 162,
+       "section": "rule:A.7",
+       "status": "canonical"
+      },
+      "to": {
+       "raw": "USD 1,119,000,000",
+       "value": 1119000000.0,
+       "currency": "USD",
+       "unit": null,
+       "page": 5,
+       "section": "corrected",
+       "status": "canonical"
+      },
+      "page_of_quote": 5,
+      "quote": "p5: \"- USD 1,119,000,000 (GCF + co-financiers)\"; 160 + 959 = 1,119 million exactly (p161)",
+      "adjudication_note": "same mechanism as FP260: the C.1 '(a) Requested GCF funding' label is dropped and the GCF row is captured as the total. The p176 'USD 1,119 million' candidate was marked conflicting AGAINST the refuted figure and re-marks to supporting on its own once the canonical is right — no row is needed to flip it",
+      "row_ref": {
+       "file": "scratchpad/serving_wave_adjudication.json",
+       "pointer": "rows[2]",
+       "md_table": "Q1",
+       "verdict": "MISFILED",
+       "proposed_action": "correct-to"
+      },
+      "ratified": "owner, 2026-08-26 (serving-wave session)"
+     }
+    ],
+    "ratified": "owner, 2026-08-26"
    },
    "meta_provenance": {
     "accredited_entity": {
@@ -54287,7 +57723,8 @@
       "unit": "million",
       "page": 5,
       "section": "A.8",
-      "status": "canonical"
+      "status": "canonical",
+      "cross_check": "not-on-cited-page"
      },
      {
       "raw": "USD 43 million",
@@ -54397,6 +57834,35 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta": {
+    "ratified": "owner, 2026-08-26",
+    "cross_check": {
+     "independent": "pymupdf",
+     "checked": 3,
+     "verdicts": {
+      "confirmed-print": 2,
+      "not-on-cited-page": 1
+     },
+     "flagged": [
+      {
+       "field": "gcf_funding_requested",
+       "raw": "53 million USD",
+       "page": 5,
+       "status": "canonical",
+       "value": 53000000.0,
+       "verdict": "not-on-cited-page",
+       "figure": "53",
+       "independent_page_prints": [
+        "33",
+        "43",
+        "51"
+       ]
+      }
+     ],
+     "meaning": "the figure the store publishes is not printed by an independent text extraction of the same PDF page. A question for the next adjudication, not a correction.",
+     "ratified": "owner, 2026-08-26 (serving-wave session)"
+    }
    },
    "meta_provenance": {
     "accredited_entity": {
@@ -54733,7 +58199,8 @@
       "unit": null,
       "page": 5,
       "section": "A.8",
-      "status": "canonical"
+      "status": "canonical",
+      "cross_check": "not-in-document"
      },
      {
       "raw": "26,273,510",
@@ -54876,6 +58343,34 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta": {
+    "ratified": "owner, 2026-08-26",
+    "cross_check": {
+     "independent": "pymupdf",
+     "checked": 3,
+     "verdicts": {
+      "confirmed-print": 2,
+      "not-in-document": 1
+     },
+     "flagged": [
+      {
+       "field": "gcf_funding_requested",
+       "raw": "20,273,510 USD",
+       "page": 5,
+       "status": "canonical",
+       "value": 20273510.0,
+       "verdict": "not-in-document",
+       "figure": "20273510",
+       "independent_page_prints": [
+        "26273510",
+        "39254450"
+       ]
+      }
+     ],
+     "meaning": "the figure the store publishes is not printed by an independent text extraction of the same PDF page. A question for the next adjudication, not a correction.",
+     "ratified": "owner, 2026-08-26 (serving-wave session)"
+    }
    },
    "meta_provenance": {
     "accredited_entity": {
@@ -55230,7 +58725,8 @@
       "unit": null,
       "page": 5,
       "section": "A.7",
-      "status": "canonical"
+      "status": "canonical",
+      "cross_check": "not-in-document"
      },
      {
       "raw": "$42,930.21 million USD",
@@ -55353,6 +58849,34 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta": {
+    "ratified": "owner, 2026-08-26",
+    "cross_check": {
+     "independent": "pymupdf",
+     "checked": 2,
+     "verdicts": {
+      "confirmed-print": 1,
+      "not-in-document": 1
+     },
+     "flagged": [
+      {
+       "field": "total_financing",
+       "raw": "26,830,251 USD",
+       "page": 5,
+       "status": "canonical",
+       "value": 26830251.0,
+       "verdict": "not-in-document",
+       "figure": "26830251",
+       "independent_page_prints": [
+        "42850231",
+        "36231981"
+       ]
+      }
+     ],
+     "meaning": "the figure the store publishes is not printed by an independent text extraction of the same PDF page. A question for the next adjudication, not a correction.",
+     "ratified": "owner, 2026-08-26 (serving-wave session)"
+    }
    },
    "meta_provenance": {
     "accredited_entity": {
@@ -55495,7 +59019,8 @@
       "unit": "million",
       "page": 5,
       "section": "A.8",
-      "status": "canonical"
+      "status": "canonical",
+      "cross_check": "not-on-cited-page"
      }
     ],
     "implementation_period": [
@@ -55576,6 +59101,35 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta": {
+    "ratified": "owner, 2026-08-26",
+    "cross_check": {
+     "independent": "pymupdf",
+     "checked": 2,
+     "verdicts": {
+      "confirmed-print": 1,
+      "not-on-cited-page": 1
+     },
+     "flagged": [
+      {
+       "field": "gcf_funding_requested",
+       "raw": "26.5 million Eur",
+       "page": 5,
+       "status": "canonical",
+       "value": 26500000.0,
+       "verdict": "not-on-cited-page",
+       "figure": "265",
+       "independent_page_prints": [
+        "25",
+        "268",
+        "365"
+       ]
+      }
+     ],
+     "meaning": "the figure the store publishes is not printed by an independent text extraction of the same PDF page. A question for the next adjudication, not a correction.",
+     "ratified": "owner, 2026-08-26 (serving-wave session)"
+    }
    },
    "meta_provenance": {
     "accredited_entity": {
@@ -56469,7 +60023,8 @@
       "unit": null,
       "page": 71,
       "section": "rule:C.1(b)",
-      "status": "canonical"
+      "status": "canonical",
+      "cross_check": "not-in-document"
      },
      {
       "raw": "EUR 1,118,500,000",
@@ -56537,6 +60092,35 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta": {
+    "ratified": "owner, 2026-08-26",
+    "cross_check": {
+     "independent": "pymupdf",
+     "checked": 3,
+     "verdicts": {
+      "confirmed-print": 2,
+      "not-in-document": 1
+     },
+     "flagged": [
+      {
+       "field": "co_financing",
+       "raw": "€83,500,000 EUR",
+       "page": 71,
+       "status": "canonical",
+       "value": 83500000.0,
+       "verdict": "not-in-document",
+       "figure": "83500000",
+       "independent_page_prints": [
+        "837500000",
+        "45000000",
+        "175000000"
+       ]
+      }
+     ],
+     "meaning": "the figure the store publishes is not printed by an independent text extraction of the same PDF page. A question for the next adjudication, not a correction.",
+     "ratified": "owner, 2026-08-26 (serving-wave session)"
+    }
    },
    "meta_provenance": {
     "accredited_entity": {
@@ -56716,7 +60300,8 @@
       "unit": null,
       "page": 6,
       "section": "A.10 Grant",
-      "status": "canonical"
+      "status": "canonical",
+      "cross_check": "not-in-document"
      }
     ],
     "instruments": [
@@ -56825,7 +60410,31 @@
       "ratified": "owner, 2026-08-26"
      }
     ],
-    "ratified": "owner, 2026-08-26"
+    "ratified": "owner, 2026-08-26",
+    "cross_check": {
+     "independent": "pymupdf",
+     "checked": 3,
+     "verdicts": {
+      "confirmed-print": 2,
+      "not-in-document": 1
+     },
+     "flagged": [
+      {
+       "field": "financial_instruments",
+       "raw": "$872,400",
+       "page": 6,
+       "status": "canonical",
+       "value": 872400.0,
+       "verdict": "not-in-document",
+       "figure": "872400",
+       "independent_page_prints": [
+        "8972400"
+       ]
+      }
+     ],
+     "meaning": "the figure the store publishes is not printed by an independent text extraction of the same PDF page. A question for the next adjudication, not a correction.",
+     "ratified": "owner, 2026-08-26 (serving-wave session)"
+    }
    },
    "meta_provenance": {
     "accredited_entity": {
@@ -56988,7 +60597,8 @@
       "unit": "million",
       "page": 8,
       "section": "A.10 Grant",
-      "status": "canonical"
+      "status": "canonical",
+      "cross_check": "not-in-document"
      }
     ],
     "instruments": [
@@ -57092,6 +60702,35 @@
     "core_missing": [],
     "llm_fallback": false
    },
+   "meta": {
+    "ratified": "owner, 2026-08-26",
+    "cross_check": {
+     "independent": "pymupdf",
+     "checked": 3,
+     "verdicts": {
+      "confirmed-print": 2,
+      "not-in-document": 1
+     },
+     "flagged": [
+      {
+       "field": "financial_instruments",
+       "raw": "$94.6 MILLION USD",
+       "page": 8,
+       "status": "canonical",
+       "value": 94600000.0,
+       "verdict": "not-in-document",
+       "figure": "946",
+       "independent_page_prints": [
+        "14",
+        "16",
+        "394"
+       ]
+      }
+     ],
+     "meaning": "the figure the store publishes is not printed by an independent text extraction of the same PDF page. A question for the next adjudication, not a correction.",
+     "ratified": "owner, 2026-08-26 (serving-wave session)"
+    }
+   },
    "meta_provenance": {
     "accredited_entity": {
      "page": 3,
@@ -57180,7 +60819,8 @@
       "unit": null,
       "page": 5,
       "section": "A.8",
-      "status": "canonical"
+      "status": "canonical",
+      "cross_check": "not-in-document"
      }
     ],
     "executing_entity": [
@@ -57250,6 +60890,34 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta": {
+    "ratified": "owner, 2026-08-26",
+    "cross_check": {
+     "independent": "pymupdf",
+     "checked": 2,
+     "verdicts": {
+      "confirmed-print": 1,
+      "not-in-document": 1
+     },
+     "flagged": [
+      {
+       "field": "gcf_funding_requested",
+       "raw": "$23,325,003 USD",
+       "page": 5,
+       "status": "canonical",
+       "value": 23325003.0,
+       "verdict": "not-in-document",
+       "figure": "23325003",
+       "independent_page_prints": [
+        "23325033",
+        "28290014"
+       ]
+      }
+     ],
+     "meaning": "the figure the store publishes is not printed by an independent text extraction of the same PDF page. A question for the next adjudication, not a correction.",
+     "ratified": "owner, 2026-08-26 (serving-wave session)"
+    }
    },
    "meta_provenance": {
     "accredited_entity": {
@@ -57340,7 +61008,8 @@
       "unit": null,
       "page": 5,
       "section": "A.7",
-      "status": "canonical"
+      "status": "canonical",
+      "cross_check": "not-on-cited-page"
      },
      {
       "raw": "USD 108 million",
@@ -57413,7 +61082,8 @@
       "unit": "million",
       "page": 32,
       "section": "rule:C.1(b)",
-      "status": "canonical"
+      "status": "canonical",
+      "cross_check": "not-in-document"
      }
     ],
     "date_of_submission": [
@@ -57461,6 +61131,49 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta": {
+    "ratified": "owner, 2026-08-26",
+    "cross_check": {
+     "independent": "pymupdf",
+     "checked": 3,
+     "verdicts": {
+      "confirmed-print": 1,
+      "not-in-document": 1,
+      "not-on-cited-page": 1
+     },
+     "flagged": [
+      {
+       "field": "total_financing",
+       "raw": "880,000,000 USD",
+       "page": 5,
+       "status": "canonical",
+       "value": 880000000.0,
+       "verdict": "not-on-cited-page",
+       "figure": "880000000",
+       "independent_page_prints": [
+        "8800000007",
+        "145000000"
+       ]
+      },
+      {
+       "field": "co_financing",
+       "raw": "890 | million USD",
+       "page": 32,
+       "status": "canonical",
+       "value": 890000000.0,
+       "verdict": "not-in-document",
+       "figure": "890",
+       "independent_page_prints": [
+        "880",
+        "29",
+        "50"
+       ]
+      }
+     ],
+     "meaning": "the figure the store publishes is not printed by an independent text extraction of the same PDF page. A question for the next adjudication, not a correction.",
+     "ratified": "owner, 2026-08-26 (serving-wave session)"
+    }
    },
    "meta_provenance": {
     "accredited_entity": {
@@ -58413,7 +62126,8 @@
       "unit": null,
       "page": 8,
       "section": "A.7",
-      "status": "canonical"
+      "status": "canonical",
+      "cross_check": "not-in-document"
      }
     ],
     "gcf_funding_requested": [
@@ -58424,7 +62138,8 @@
       "unit": null,
       "page": 8,
       "section": "A.8",
-      "status": "canonical"
+      "status": "canonical",
+      "cross_check": "not-in-document"
      }
     ],
     "project_size": [
@@ -58556,6 +62271,47 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta": {
+    "ratified": "owner, 2026-08-26",
+    "cross_check": {
+     "independent": "pymupdf",
+     "checked": 3,
+     "verdicts": {
+      "confirmed-print": 1,
+      "not-in-document": 2
+     },
+     "flagged": [
+      {
+       "field": "total_financing",
+       "raw": "117,585,568.20 USD",
+       "page": 8,
+       "status": "canonical",
+       "value": 117585568.2,
+       "verdict": "not-in-document",
+       "figure": "11758556820",
+       "independent_page_prints": [
+        "11759555820",
+        "6527129894"
+       ]
+      },
+      {
+       "field": "gcf_funding_requested",
+       "raw": "55,271,298.34 USD",
+       "page": 8,
+       "status": "canonical",
+       "value": 55271298.34,
+       "verdict": "not-in-document",
+       "figure": "5527129834",
+       "independent_page_prints": [
+        "6527129894",
+        "11759555820"
+       ]
+      }
+     ],
+     "meaning": "the figure the store publishes is not printed by an independent text extraction of the same PDF page. A question for the next adjudication, not a correction.",
+     "ratified": "owner, 2026-08-26 (serving-wave session)"
+    }
    },
    "meta_provenance": {
     "accredited_entity": {
@@ -58986,7 +62742,8 @@
       "unit": null,
       "page": 5,
       "section": "A.9 Loan",
-      "status": "canonical"
+      "status": "canonical",
+      "cross_check": "not-in-document"
      }
     ],
     "instruments": [
@@ -59067,6 +62824,35 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta": {
+    "ratified": "owner, 2026-08-26",
+    "cross_check": {
+     "independent": "pymupdf",
+     "checked": 3,
+     "verdicts": {
+      "confirmed-print": 2,
+      "not-in-document": 1
+     },
+     "flagged": [
+      {
+       "field": "financial_instruments",
+       "raw": "32,444,180 EUR",
+       "page": 5,
+       "status": "canonical",
+       "value": 32444180.0,
+       "verdict": "not-in-document",
+       "figure": "32444180",
+       "independent_page_prints": [
+        "30444189",
+        "2494000",
+        "104415189"
+       ]
+      }
+     ],
+     "meaning": "the figure the store publishes is not printed by an independent text extraction of the same PDF page. A question for the next adjudication, not a correction.",
+     "ratified": "owner, 2026-08-26 (serving-wave session)"
+    }
    },
    "meta_provenance": {
     "accredited_entity": {
@@ -59174,7 +62960,8 @@
       "unit": null,
       "page": 5,
       "section": "A.8",
-      "status": "canonical"
+      "status": "canonical",
+      "cross_check": "not-in-document"
      },
      {
       "raw": "$25.00",
@@ -59203,7 +62990,8 @@
       "unit": null,
       "page": 5,
       "section": "A.10 Grant",
-      "status": "canonical"
+      "status": "canonical",
+      "cross_check": "not-in-document"
      },
      {
       "raw": "$25,000,000",
@@ -59333,6 +63121,49 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta": {
+    "ratified": "owner, 2026-08-26",
+    "cross_check": {
+     "independent": "pymupdf",
+     "checked": 3,
+     "verdicts": {
+      "confirmed-print": 1,
+      "not-in-document": 2
+     },
+     "flagged": [
+      {
+       "field": "gcf_funding_requested",
+       "raw": "$73,283,000 USD",
+       "page": 5,
+       "status": "canonical",
+       "value": 73283000.0,
+       "verdict": "not-in-document",
+       "figure": "73283000",
+       "independent_page_prints": [
+        "73283080",
+        "48283080",
+        "25000000"
+       ]
+      },
+      {
+       "field": "financial_instruments",
+       "raw": "$45,263,000",
+       "page": 5,
+       "status": "canonical",
+       "value": 45263000.0,
+       "verdict": "not-in-document",
+       "figure": "45263000",
+       "independent_page_prints": [
+        "48283080",
+        "25000000",
+        "73283080"
+       ]
+      }
+     ],
+     "meaning": "the figure the store publishes is not printed by an independent text extraction of the same PDF page. A question for the next adjudication, not a correction.",
+     "ratified": "owner, 2026-08-26 (serving-wave session)"
+    }
    },
    "meta_provenance": {
     "accredited_entity": {
@@ -60144,7 +63975,8 @@
       "unit": null,
       "page": 5,
       "section": "A.7",
-      "status": "canonical"
+      "status": "canonical",
+      "cross_check": "not-in-document"
      },
      {
       "raw": "US$ 966.7 million",
@@ -60173,7 +64005,8 @@
       "unit": null,
       "page": 5,
       "section": "A.8",
-      "status": "canonical"
+      "status": "canonical",
+      "cross_check": "not-in-document"
      },
      {
       "raw": "150,000,000 USD",
@@ -60325,6 +64158,49 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta": {
+    "ratified": "owner, 2026-08-26",
+    "cross_check": {
+     "independent": "pymupdf",
+     "checked": 3,
+     "verdicts": {
+      "confirmed-print": 1,
+      "not-in-document": 2
+     },
+     "flagged": [
+      {
+       "field": "total_financing",
+       "raw": "956,716,000 USD",
+       "page": 5,
+       "status": "canonical",
+       "value": 956716000.0,
+       "verdict": "not-in-document",
+       "figure": "956716000",
+       "independent_page_prints": [
+        "966716400",
+        "150000000",
+        "20000000"
+       ]
+      },
+      {
+       "field": "gcf_funding_requested",
+       "raw": "130,000,000 USD",
+       "page": 5,
+       "status": "canonical",
+       "value": 130000000.0,
+       "verdict": "not-in-document",
+       "figure": "130000000",
+       "independent_page_prints": [
+        "150000000",
+        "20000000",
+        "40000000"
+       ]
+      }
+     ],
+     "meaning": "the figure the store publishes is not printed by an independent text extraction of the same PDF page. A question for the next adjudication, not a correction.",
+     "ratified": "owner, 2026-08-26 (serving-wave session)"
+    }
    },
    "meta_provenance": {
     "accredited_entity": {
@@ -60704,15 +64580,6 @@
       "page": 5,
       "section": "rule:A.8",
       "status": "canonical"
-     },
-     {
-      "raw": "USD 250 Million",
-      "value": 250000000.0,
-      "currency": "USD",
-      "unit": "million",
-      "page": 5,
-      "section": "rule:A.8",
-      "status": "supporting"
      }
     ],
     "project_size": [
@@ -60795,6 +64662,45 @@
     ],
     "core_missing": [],
     "llm_fallback": false
+   },
+   "meta": {
+    "corrections": [
+     {
+      "id": "C72",
+      "field": "gcf_funding_requested",
+      "layer": "fact-supporting",
+      "action": "drop-candidate",
+      "from": {
+       "raw": "USD 250 Million",
+       "value": 250000000.0,
+       "currency": "USD",
+       "unit": "million",
+       "page": 5,
+       "section": "rule:A.8",
+       "status": "supporting"
+      },
+      "to": null,
+      "page_of_quote": 5,
+      "quote": "p5: \"A.9. Project size | Medium (Up to USD 250 Million)\"",
+      "adjudication_note": "A.9 label bleed: the figure is the project-size BOUND, not a GCF request. project_size already carries the whole print, so nothing is lost by dropping it here",
+      "row_ref": {
+       "file": "scratchpad/serving_wave_adjudication.json",
+       "pointer": "rows[23]",
+       "md_table": "Q1",
+       "verdict": "WRONG (A.9 bleed)",
+       "proposed_action": "drop"
+      },
+      "ratified": "owner, 2026-08-26 (serving-wave session)",
+      "ground": "label-bleed",
+      "why": "the figure belongs to another field, which already holds it",
+      "searched": [
+       "pymupdf",
+       "pdfplumber"
+      ],
+      "evidence": "the figure IS printed on p5 — under A.9 Project size, whose own canonical candidate carries the full print 'Medium (Up to USD 250 Million)'. Dropping the A.8 copy moves nothing and loses nothing"
+     }
+    ],
+    "ratified": "owner, 2026-08-26"
    },
    "meta_provenance": {
     "accredited_entity": {

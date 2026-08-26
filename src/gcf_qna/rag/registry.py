@@ -34,14 +34,27 @@ or not depending on how many documents the question happened to name. The
 fields come from ``planner.fields_for`` — one detector for both arities — the
 values and pointers from schema 2's own candidates, and three guards keep the
 line a note rather than a dump: only the fields the question asks for, nothing
-at all for a field the store does not hold (a confirmed absence is data the
-registry does not yet have, and inventing one here would be the exact failure
-this file exists to prevent), and nothing for a field the document contradicts
-itself on — that one belongs to the conflict warning, which now covers every
-field rather than only the money ones. A document whose extraction the builder
-itself flagged (``suspect``, ``llm_fallback``) says so on its own line, in a
-marker that publishes no page and no document, the way a cut list says it was
-cut.
+at all for a field the store does not hold, and nothing for a field the
+document contradicts itself on — that one belongs to the conflict warning,
+which now covers every field rather than only the money ones. A document whose
+extraction the builder itself flagged (``suspect``, ``llm_fallback``) says so
+on its own line, in a marker that publishes no page and no document, the way a
+cut list says it was cut.
+
+An ABSENCE the registry has read and ratified is served on that same line
+(``_absence_bits``). 'The store does not hold it' and 'the document does not
+print it' are different facts, and Phase 3 turned the second into data:
+data/registry_absences.json ratifies 51 absences and the build publishes 48 of
+them as ``documents[doc].meta.confirmed_absence``, with the pages that were
+read. Nothing in src/ had ever opened the key, so a turn asking FP273 for its
+GCF funding got silence — indistinguishable, to a model told to cite or hedge,
+from a gap in retrieval. The segment is printed only for a field this line
+prints no value for (the two layers disagree on a handful of documents, and a
+ratified correction always wins), it prints the span that was read as 'pages
+1-16' rather than as a citable '(p.N)', and it is worded so that the negative
+an answer writes from it VERIFIES: no phrase ``verify._INSTRUCTION_RE`` would
+blind the line on, and no digit inside the window ``verify._value_after``
+reads as the field's own value.
 
 Three lookups run in the OTHER direction: ``by_country``, ``by_entity`` and
 ``by_board``, the inverse index H1/H2/H16 of docs/l1-l2-coverage-review.md
@@ -53,6 +66,17 @@ documents print them. The board side is the one the review calls an
 ASYMMETRY rather than a gap: an out-of-range meeting was answered definitively
 by the app while an in-range one, whose documents this registry holds, was
 answered not at all.
+
+All three listings are CITABLE: a header line carrying the count and the
+completeness statement, then ONE LINE PER PROPOSAL, each ending with the
+'[stem, cover pages]' bracket ``verify.build_evidence`` files a note line
+under. As one page-less, stem-less line they were not — release-12-repeat's
+`agg-inv-undp` enumerated the 41 UNDP proposals, put a bracket on every item
+exactly as the prompt tells it to, and had nothing to put in one but the note
+line itself, 2,455 characters against a 400-character bracket parser: 31
+claims 'no citation on a factual claim' beside a behaviour score of 1.00. The
+year listing is deliberately NOT converted; ``registry_note`` says why, with
+the release sweep that decided it.
 
 ``_extrema_note`` is the only note here that COMPUTES over the corpus rather
 than listing it (H3/H3b): the smallest or largest figure of one money field,
@@ -76,7 +100,7 @@ import re
 import threading
 import unicodedata
 from dataclasses import dataclass
-from typing import Dict, List, Optional, Sequence, Tuple
+from typing import Dict, List, Optional, Sequence, Set, Tuple
 
 from gcf_qna import config
 
@@ -280,12 +304,14 @@ _MAX_FIELD_VALUES = 6
 # says it is cut.
 #: Values a `_fmt` list field prints before it truncates.
 _MAX_LIST_VALUES = 5
-#: Rows the year listing prints (unchanged), and rows an inverse listing does.
-#: The inverse cap is set ABOVE the largest group the corpus actually holds
-#: (UNDP, 41 documents) on purpose: an inverse note exists to answer 'which
-#: proposals', and a listing that stopped one row short of complete would be
-#: the very defect this pass is fixing. It is a backstop against a future
-#: corpus, not a working cap — and when it does bite it says so.
+#: Rows the year listing prints inline, and rows an inverse or board listing
+#: prints ONE PER LINE (`_listing_lines`). The inverse cap is set ABOVE the
+#: largest group the corpus actually holds (UNDP, 41 documents) on purpose: an
+#: inverse note exists to answer 'which proposals', and a listing that stopped
+#: one row short of complete would be the very defect it was written to fix. It
+#: is a backstop against a future corpus, not a working cap — and when it does
+#: bite it says so, twice: in the header's own completeness state and in the
+#: count of rows not printed below it.
 _MAX_YEAR_ROWS = 12
 _MAX_INVERSE_ROWS = 50
 #: Characters of a title a listing keeps.
@@ -323,14 +349,65 @@ def _list_bit(label: str, values: Sequence[str],
 def _listing(rows: Sequence[dict], cap: int) -> Tuple[str, str]:
     """(the 'FPn "title"; ...' listing, the '(+N more)' tail).
 
-    One formatter for every listing a note prints — the year one and both
-    inverse ones — so a cap can never be added to one and forgotten in
-    another. The tail carries the number NOT printed; the caller carries the
-    total, so the two together state the truth exactly once each.
+    The INLINE formatter, and after the citability pass it has exactly one
+    caller left: the year listing (`registry_note`). All three listings that
+    go through `_inverse_note` — country, entity and board — moved to
+    `_listing_lines`; why they moved is written out there, and why this one
+    did not is written out at its caller.
+
+    The tail carries the number NOT printed; the caller carries the total, so
+    the two together state the truth exactly once each.
     """
     shown = rows[:cap]
     listing = "; ".join(f'FP{r["fp"]} "{_clip(r.get("title"))}"' for r in shown)
     return listing, (f" (+{len(rows) - cap} more)" if len(rows) > cap else "")
+
+
+def _listing_lines(rows: Sequence[dict], cap: int) -> Tuple[List[str], str]:
+    """(one line per proposal, the '(+N more)' tail) — the CITABLE listing.
+
+    ONE LINE PER PROPOSAL, each ending in the trailing bracket `_fmt` has
+    always used — '[<stem>, cover pages]'. That bracket is not decoration: it
+    is the shape `verify.build_evidence` reads. That function walks a note
+    block LINE BY LINE and, for a line whose `_REG_DOC_RE`
+    (``\\[(<doc>),\\s*cover pages?\\]``) matches, files the WHOLE line under
+    ``(stem, None)`` — document scope, the scope a '[stem, cover pages]'
+    citation resolves to. So an answer that enumerates this listing and cites
+    each item's own stem is citing evidence the checker holds for THAT item,
+    and `verify.classify_deterministic` reads the item's own line and nothing
+    else.
+
+    THE DEFECT THIS CLOSES (release-12-repeat, `agg-inv-undp`). The listing
+    used to be ONE line — 2,455 characters of it — carrying FP numbers and
+    titles and no stem at all. Asked which proposals UNDP implements, the
+    model enumerated the 41 items and pasted the note line into each item's
+    bracket. `verify._BRACKET_RE` caps a bracket at 400 characters, so not one
+    of those brackets parsed as a citation: 43 claims, 31 UNSUPPORTED, every
+    one of them 'no citation on a factual claim', citation_presence_rate 0.00
+    — while behaviour scored 1.00, because the answer was correct. The two
+    instruments disagreed BY CONSTRUCTION: the note gave an enumerating answer
+    nothing it could cite.
+
+    WHY THE HEADER STAYS INLINE and only the items move: the count and the
+    completeness statement (F13/P2 discipline) are about the LISTING, not
+    about any one document, and a line filed under a stem is read as evidence
+    ABOUT that document. '41 funding proposals ... record UNDP as the
+    accredited entity' filed under FP2's stem would be a corpus-wide count
+    offered as a fact about FP2. The header therefore names no stem and is
+    filed nowhere, exactly as the whole listing was before.
+
+    NO PAGE, still. The items publish a stem, deliberately; they publish no
+    page, equally deliberately. `chainlit_app._note_pages` and
+    `verify.note_page_scopes` pair EVERY page on a line with EVERY document
+    named on it, and a listing row has no page of its own to give — the row is
+    the registry's own metadata, not a reading of a page. `_clip` caps a title
+    at 45 characters and no corpus title carries a '(p.N' pointer, so these
+    lines publish stems and nothing else.
+    """
+    shown = rows[:cap]
+    lines = [f'FP{r["fp"]} "{_clip(r.get("title"))}" [{r["doc_id"]}, cover pages]'
+             for r in shown]
+    return lines, (f" (+{len(rows) - cap} more)" if len(rows) > cap else "")
 
 
 def _v2_facts(doc_id: Optional[str]) -> Dict[str, List[dict]]:
@@ -683,6 +760,160 @@ def _served_bits(doc_id: Optional[str], question: str) -> List[str]:
     return bits
 
 
+# --- confirmed absences: the fact that a document does NOT print a field -----
+# `_served_bits`' second guard says "an absent field appends NOTHING ...
+# recording a CONFIRMED absence is Phase 3's data work". Phase 3 did that work:
+# `data/registry_absences.json` ratifies 51 absences ("owner, 2026-08-26"), 48
+# of which the build publishes as `documents[doc].meta.confirmed_absence`, each
+# with the pages that were read and the evidence for the reading. Nothing in
+# `src/` had ever opened the key — only the builder wrote it and only
+# `tests/test_registry_v2.py` read it — so a turn asking FP273 for its GCF
+# funding got SILENCE from the line, and silence is not an answer to an ask.
+#
+# THE ABSENCE IS A FACT, AND IT IS PUBLISHED AS ONE. Three rules make it safe:
+#
+#   1. NEVER OVER A PRINT. An absence segment is emitted only for a field this
+#      line prints no value for. The two layers really do disagree on some
+#      documents — `175_gcf-b22-10-add02` (FP100) records gcf_funding_requested
+#      as a fact-layer absence while its TOP level carries the ratified
+#      correction 'USD 96,452,228' read off a p.103 budget table, and
+#      `data/registry_absences.json` says so in as many words ("an absence is
+#      never published over a print the build holds"). The gold case
+#      `w2a-rbp-fp100-gcf` asserts the corrected figure and forbids the stale
+#      one; publishing the absence beside it would put the note on both sides
+#      of the same question. `printed` is collected by `_fmt` as it builds the
+#      line — the printer decides, not a second copy of its conditions — and a
+#      field with ANY usable schema-2 candidate is skipped here too, because
+#      that candidate reaches the line through `_served_bits` or, if it
+#      conflicts, through `_conflict_lines`.
+#   2. ONE DOCUMENT, ONE ASK. It rides on `_fmt`'s `question` argument, which
+#      `registry_note` passes only for a turn naming exactly ONE document
+#      (`_single_document`) and only on that document's first line. An absence
+#      is a statement about a specific document; a two-document turn is the
+#      matrix's, with its own 'missing' vocabulary.
+#   3. NO POINTER. The pages that were read are printed as 'pages 1-16', never
+#      as '(p.1)': `chainlit_app._note_pages` and `verify.note_page_scopes`
+#      would turn the latter into a citable scope on a line that ends
+#      '[stem, cover pages]', and a page that was READ AND FOUND EMPTY is the
+#      last page an answer should be invited to cite.
+#
+# THE WORDING IS SHAPED TO VERIFY, not merely to print. Ruling 3 — support an
+# uncited claim because a computed note confirmed the absence — was
+# implemented and DELETED (`verify.classify_deterministic` says why: the rider
+# 'and the total co-financing is USD 18.5 million' rode through on it). So a
+# negative verifies here the way every other claim does: the answer cites the
+# document, the citation resolves to this line at document scope, and the
+# matchers read the line. Two consequences shape the text:
+#
+#   * the label HEADS its segment and no digit follows it for 80 characters,
+#     which is `verify._value_after`'s window — a page number sitting under a
+#     money label is a value the field-conflict scan would read as the field's
+#     own, and '1' is a very cheap contradiction to manufacture. The pages
+#     that were read therefore live in a LATER sentence of the segment;
+#   * no phrase from `verify._INSTRUCTION_RE` ('specify', 'indicate',
+#     'please', 'for each', 'if applicable', ...) appears anywhere in it. That
+#     regex makes `_field_lines` skip a WHOLE LINE, and this line is one
+#     document's whole registry entry: an instruction word here would take
+#     that document's other fields off the checker along with this one.
+#: field -> the label an absence segment heads. The money labels are `_fmt`'s
+#: own and `verify._FIELD_LABELS`' anchors; `title` gets one because `_fmt`
+#: prints a title as a bare quoted string, and an absence has no string to
+#: quote.
+_ABSENCE_LABELS = {
+    "title": "title",
+    "countries": "countries",
+    "accredited_entity": "accredited entity",
+    "gcf_funding_requested": "GCF funding requested",
+    "total_financing": "total financing",
+}
+
+
+def _absences(doc_id: Optional[str]) -> Dict[str, dict]:
+    """``meta.confirmed_absence`` for a document, or ``{}``.
+
+    Same never-break contract as ``_v2_facts`` and ``_v2_meta``: the key is
+    ADDITIVE and OPTIONAL, a registry_v2.json built before Phase 3 carries
+    none at all, and absent, partial or the wrong type must leave the line
+    byte-identical to the one the store alone produced.
+    """
+    if not doc_id:
+        return {}
+    try:
+        meta = (_row_v2(doc_id) or {}).get("meta")
+        found = meta.get("confirmed_absence") if isinstance(meta, dict) else None
+        return found if isinstance(found, dict) else {}
+    except Exception:                                          # noqa: BLE001
+        return {}
+
+
+def _pages_checked(entry: dict) -> str:
+    """``' The registry read pages 1-16 of this document.'`` for a ratified
+    absence, or ''.
+
+    NOT '(p.1)'. See rule 3 above: this is the span that was READ, not a page
+    that prints anything, and the two note-page readers cannot tell the
+    difference — they would publish it as a citable scope for a line that
+    names this document.
+    """
+    pages = entry.get("pages_checked")
+    if not isinstance(pages, (list, tuple)):
+        return ""
+    nums = [p for p in pages
+            if isinstance(p, int) and not isinstance(p, bool) and 1 <= p <= 999]
+    if not nums:
+        return ""
+    lo, hi = min(nums), max(nums)
+    span = f"page {lo}" if lo == hi else f"pages {lo}-{hi}"
+    return f" The registry read {span} of this document."
+
+
+def _absence_fields(question: str) -> List[str]:
+    """The fields this question asks for, INCLUDING the ones the line prints.
+
+    Deliberately not ``_asked_fields``, which drops `_LINE_FIELDS` because the
+    line already prints them. ALL FIVE fields the store ever ratifies an
+    absence for (title, countries, accredited entity, and the two money
+    fields) are in that set, and the whole point here is the document where
+    the line prints NOTHING for one of them: filtering them out is how this
+    store would have stayed unread. `printed` is the guard instead, and it is
+    the exact one — what the line actually put on the page.
+    """
+    p = _planner()
+    if p is None or not (question or "").strip():
+        return []
+    try:
+        fields, used_default = p.fields_for(_drop_document_apposition(question))
+    except Exception:                                          # noqa: BLE001
+        return []
+    return [] if used_default else list(fields)
+
+
+def _absence_bits(doc_id: Optional[str], question: str,
+                  printed: Set[str]) -> List[str]:
+    """One segment per asked-for field this document is RATIFIED as not
+    printing, or []."""
+    absent = _absences(doc_id)
+    if not absent:
+        return []
+    f2 = _v2_facts(doc_id)
+    bits: List[str] = []
+    for field in _absence_fields(question):
+        entry = absent.get(field)
+        if field in printed or not isinstance(entry, dict):
+            continue
+        if any(_usable(c) for c in (f2.get(field) or [])):
+            continue          # the store holds a print after all: never both
+        label = _ABSENCE_LABELS.get(
+            field, _SERVED_LABELS.get(field, field.replace("_", " ")))
+        bits.append(
+            f"{label}: NOT PRINTED ANYWHERE IN THIS DOCUMENT — a CONFIRMED "
+            f"ABSENCE the registry has ratified, not a gap in retrieval."
+            f"{_pages_checked(entry)} State that the {label} is not printed "
+            f"anywhere in this document, and never carry one over from "
+            f"another document")
+    return bits
+
+
 # --- extraction honesty -----------------------------------------------------
 # 16 documents are flagged `suspect` by the v2 builder's own consistency check
 # and 19 were read by its LLM fallback rather than by the template rules, and
@@ -858,29 +1089,42 @@ def _fmt(r: dict, question: Optional[str] = None) -> str:
     mp = _v2_meta(r.get("doc_id"))
     gcf, total = _canon2(f2, "gcf_funding_requested"), _canon2(f2, "total_financing")
     bits = []
+    #: The fields this line PRINTS A VALUE FOR — collected as the line is
+    #: built, because `_absence_bits` may never contradict one. Tracked here
+    #: rather than recomputed there: a second copy of these conditions is a
+    #: second thing to keep in step with this function.
+    printed: Set[str] = set()
     title, title_at = _served_flat(r, mp, "title")
     if title:
         bits.append(f'"{title}"' + title_at)
+        printed.add("title")
     entity, entity_at = _served_flat(r, mp, "accredited_entity")
     if entity:
         bits.append(f"accredited entity: {entity}" + entity_at)
+        printed.add("accredited_entity")
     countries, countries_at = _served_flat(r, mp, "countries")
     if countries:
         bits.append(_list_bit("countries", countries) + countries_at)
+        printed.add("countries")
     flat_gcf, _ = _served_flat(r, mp, "gcf_financing")
     flat_total, _ = _served_flat(r, mp, "total_financing")
     if gcf:
         bits.append(_money_bit("GCF funding requested", gcf))
+        printed.add("gcf_funding_requested")
     elif flat_gcf:
         bits.append(f"GCF financing (as printed): {flat_gcf}")
+        printed.add("gcf_funding_requested")
     if total:
         bits.append(_money_bit("total financing", total))
+        printed.add("total_financing")
     elif flat_total:
         bits.append(f"total financing (as printed): {flat_total}")
+        printed.add("total_financing")
     if r.get("board"):
         bits.append(f"board B.{r['board']}, {r.get('year')}")
     if question:
         bits += _served_bits(r.get("doc_id"), question)
+        bits += _absence_bits(r.get("doc_id"), question, printed)
     bits += _extraction_flags(r.get("doc_id"))
     fp = f"FP{r['fp']}: " if r.get("fp") else ""
     return f"{fp}{'; '.join(bits)} [{r['doc_id']}, cover pages]"
@@ -1473,15 +1717,23 @@ def _detect(index: _Index, question: str) -> Optional[str]:
 
 def _inverse_note(rows: List[dict], lead: str, scope: str = "",
                   tail: str = "") -> Optional[str]:
-    """One authoritative listing line for an inverse lookup, or None.
+    """The authoritative listing for an inverse lookup, or None.
 
-    The year listing's shape, above: the count first, FP ids and shortened
-    titles after, no document stems and no page pointers — so
-    ``_note_pages``/``note_page_scopes`` publish nothing uncreditable from it.
+    A HEADER LINE AND ONE LINE PER PROPOSAL (`_listing_lines`). The header
+    states the count and whether the listing is complete and names no
+    document; each item names its own document in the trailing-bracket style
+    `verify.build_evidence` files per line, so an answer that enumerates the
+    listing has, for every item, a stem to cite that the checker holds at
+    document scope. Before this pass the whole listing was one page-less,
+    stem-less line and an enumerating answer had NOTHING to cite; the
+    measurement is in `_listing_lines`.
 
     ``tail`` is a sentence the listing itself needs and the count cannot say
     (the board listing uses it to state that the registry records no approval
-    DECISION); it carries no pointer, for the reason above.
+    DECISION). It rides on the HEADER, never after the last item: a sentence
+    trailing the final item line would be filed under that one document's
+    stem, and 'the registry records no approval decision' is a fact about the
+    listing, not about the last proposal in it.
 
     Whether the listing is COMPLETE is stated either way. That is the half
     probe P2 was missing — it named 6 of Kenya's 25 and never said the list
@@ -1489,17 +1741,21 @@ def _inverse_note(rows: List[dict], lead: str, scope: str = "",
     complete over the SPELLINGS the normalisation merged, not over every
     string in the corpus that might mean the same organisation, and an
     authoritative note that overstated that would be the same defect wearing
-    the opposite sign.
+    the opposite sign. The truncation discipline is unchanged and now says so
+    twice over: the header's own state carries 'LIST TRUNCATED' with the true
+    count, and ``more`` carries the number of rows not printed below.
     """
     rows = [r for r in rows if r.get("fp")]
     if not rows:
         return None
-    listing, more = _listing(rows, _MAX_INVERSE_ROWS)
+    lines, more = _listing_lines(rows, _MAX_INVERSE_ROWS)
     n = len(rows)
     state = (f"{_MAX_INVERSE_ROWS} of {n} listed — LIST TRUNCATED, but the "
              f"count {n} is complete" if more else
              f"complete listing over the {len(load())} corpus documents{scope}")
-    return f"Registry — {n} {lead} ({state}): {listing}{more}{tail}"
+    head = (f"Registry — {n} {lead} ({state}){tail}; one line per proposal "
+            f"below, each ending with the document to cite for it{more}:")
+    return "\n".join([head] + lines)
 
 
 def _country_note(question: str) -> Optional[str]:
@@ -1972,24 +2228,43 @@ def registry_note(question: str) -> Optional[str]:
     if len(set(resolved_docs)) > 1:
         notes.append("Registry — the identifiers above resolve to DIFFERENT "
                      "documents. Never merge them or treat them as the same proposal.")
-    # The year listing stays page-less on purpose: it names FP numbers, never
-    # document stems, so _note_pages/note_page_scopes (which credit a page only
-    # to a document named on the SAME line) would publish no scope for a page
-    # printed here — and an uncreditable pointer is precisely the invented
-    # citation the provenance exists to stop.
+    # The year listing stays page-less AND stem-less, and it is now the only
+    # listing that does. Both halves are deliberate:
+    #
+    #   * PAGE-LESS, for the reason it always was — _note_pages and
+    #     note_page_scopes credit a page only to a document named on the SAME
+    #     line, so a page printed on a listing line no stem accompanies would
+    #     publish no scope at all, and an uncreditable pointer is exactly the
+    #     invented citation the provenance exists to stop;
+    #   * STEM-LESS, unlike the inverse and board listings, because the defect
+    #     that moved them has never been measured here. Release records were
+    #     swept for it: the 14 gold questions that reach this listing have 393
+    #     recorded runs between them, 133 recorded claim failures, and NOT ONE
+    #     failure is an enumeration of a listing item (0 of 133). The nine runs
+    #     whose answers do enumerate a year listing are enumerating chainlit's
+    #     `_year_assist` note, not this one (this listing caps at
+    #     _MAX_YEAR_ROWS = 12; those answers list 30), they cite it with a note
+    #     bracket ('[Registry note ...]'), and they score 1.00 with zero
+    #     unsupported claims. There is nothing here to fix, and rewriting this
+    #     listing would change the note text of 14 gold questions to buy it.
     for y in dict.fromkeys(re.findall(r"\b(20[12]\d)\b", q)):
         rows = [r for r in by_year(int(y)) if r.get("fp")]
         if rows:
             listing, more = _listing(rows, _MAX_YEAR_ROWS)
             notes.append(f"Registry — {len(rows)} funding-proposal documents from {y} "
                          f"in the corpus: {listing}{more}")
-    # The inverse lookups (H1/H2), on the same page-less terms as the year
-    # listing: FP numbers and titles, never a document stem, so no page a
-    # reader could not credit is ever published from one of these lines.
+    # The inverse lookups (H1/H2). Page-less like the year listing, and NOT
+    # stem-less: each is a header line plus one line per proposal, and every
+    # proposal line ends with its own '[stem, cover pages]' so an answer that
+    # enumerates the listing has, per item, a document to cite that
+    # build_evidence holds at document scope (`_listing_lines`). Each of these
+    # entries is a multi-line block, which the join below flattens like any
+    # other — one note line per output line, which is the unit every reader of
+    # this blob works in.
     for inverse in (_country_note(question), _entity_note(question)):
         if inverse:
             notes.append(inverse)
-    # The board listing (H16) is one of those, on the same page-less terms.
+    # The board listing (H16) is one of those, on exactly the same terms.
     notes += _board_note(question)
     # The extrema lines are NOT: an extremum is one figure in one document, so
     # each of those lines carries the page and the stem the readers can credit.

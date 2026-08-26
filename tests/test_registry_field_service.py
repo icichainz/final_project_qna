@@ -212,12 +212,19 @@ def test_a_question_with_no_field_word_serves_nothing(reg):
 
 
 def test_an_absent_field_appends_nothing_rather_than_asserting_absence(reg):
-    """Recording a CONFIRMED absence is Phase 3's data work. A note that wrote
-    'not stated' from an empty candidate list would be asserting a fact the
-    registry does not hold."""
+    """A note that wrote 'not stated' from an EMPTY CANDIDATE LIST would be
+    asserting a fact the registry does not hold — nobody read FP302 for its
+    ESS category and found nothing; the extractor simply has no candidate.
+
+    STILL TRUE, and now it is the negative twin of section G rather than the
+    whole rule. Section G serves the absence where the registry holds it AS
+    DATA — a ratified `meta.confirmed_absence` with the pages that were read.
+    The two are one rule stated once: the line says only what the store knows,
+    and 'not printed' is something a store can know."""
     note = registry.registry_note("What is the ESS category of FP302?")
     assert "ESS category" not in note
     assert "not stated" not in note
+    assert not registry._absences(FP302)
 
 
 def test_a_contradicted_field_is_left_to_the_conflict_line(reg):
@@ -585,3 +592,295 @@ def test_the_flagged_documents_are_the_ones_the_registry_flags(real):
     said = {s for s in real.load() if real._extraction_flags(s)}
     assert said == flagged
     assert len(flagged) == 20            # 1 suspect + 19 llm_fallback, disjoint
+
+
+# --------------------------------------------------------------------------
+# G. confirmed absences: the fact that a document does NOT print a field
+# --------------------------------------------------------------------------
+# Section B's second guard ("an absent field appends NOTHING ... recording a
+# CONFIRMED absence is Phase 3's data work") has been half-superseded. Phase 3
+# did the work: `data/registry_absences.json` ratifies 51 absences, 48 of them
+# published as `documents[doc].meta.confirmed_absence`, each with the pages
+# that were read. Nothing in `src/` had ever opened the key — asked how much
+# GCF funding FP273 requests, the line printed title, entity, countries, board
+# and a fallback marker and said NOTHING about financing. Silence is not an
+# answer to an ask, and it is indistinguishable from a gap in retrieval.
+#
+# The guard survives where it belongs: silence is still the answer when the
+# store records NO ratified absence (`test_an_absent_field_appends_nothing...`
+# above is that test, and it is unchanged). What changes is the case where the
+# registry holds the absence AS DATA.
+
+FP310 = "310_gcf-b41-02-add01"      # ratified absence, nothing printed for it
+FP311 = "311_gcf-b41-02-add02"      # ratified absence AND a print: the tension
+
+ABS_REG1 = {
+    FP310: {"fp": 310, "title": "Results-Based Payment Programme",
+            "accredited_entity": "FMO", "countries": ["Papua New Guinea"],
+            "board": 41, "year": 2025},
+    FP311: {"fp": 311, "title": "Corrected Document", "accredited_entity": "UNDP",
+            "countries": ["Brazil"], "gcf_financing": "USD 96,452,228",
+            "board": 41, "year": 2025},
+}
+_ABS = {"pages_checked": [1, 16], "evidence": "no A.7/A.8/B.2 block exists",
+        "group": "REDD+ RBP financing", "ratified": "owner, 2026-08-26"}
+ABS_REG2 = {
+    FP310: {"fp": 310, "facts": {}, "coverage": {"llm_fallback": False},
+            "meta": {"confirmed_absence": {"gcf_funding_requested": dict(_ABS),
+                                           "total_financing": dict(_ABS)}}},
+    FP311: {"fp": 311, "facts": {}, "coverage": {"llm_fallback": False},
+            "meta": {"confirmed_absence": {"gcf_funding_requested": dict(_ABS)}}},
+}
+
+
+@pytest.fixture
+def absent(monkeypatch):
+    monkeypatch.setattr(registry, "_cache", ABS_REG1)
+    monkeypatch.setattr(registry, "_cache_v2", ABS_REG2)
+    return registry
+
+
+def test_a_ratified_absence_is_served_as_a_fact(absent):
+    note = absent.registry_note("How much GCF funding does FP310 request?")
+    assert _seg(note, "GCF funding requested") == (
+        "GCF funding requested: NOT PRINTED ANYWHERE IN THIS DOCUMENT — a "
+        "CONFIRMED ABSENCE the registry has ratified, not a gap in retrieval. "
+        "The registry read pages 1-16 of this document. State that the GCF "
+        "funding requested is not printed anywhere in this document, and never "
+        "carry one over from another document")
+
+
+def test_only_the_asked_absence_is_served(absent):
+    """FP310 is ratified absent on BOTH money fields; the ask names one. Same
+    discipline as the field service: a kitchen-sink line is noise, not
+    evidence, and this line is what the prompt calls authoritative."""
+    note = absent.registry_note("How much GCF funding does FP310 request?")
+    assert note.count("NOT PRINTED ANYWHERE IN THIS DOCUMENT") == 1
+    assert _seg(note, "total financing") is None
+    both = absent.registry_note(
+        "What are the GCF funding requested and total financing of FP310?")
+    assert both.count("NOT PRINTED ANYWHERE IN THIS DOCUMENT") == 2
+
+
+def test_a_question_naming_no_field_serves_no_absence(absent):
+    assert "CONFIRMED ABSENCE" not in absent.registry_note("What is FP310?")
+
+
+def test_an_absence_is_never_published_over_a_print(absent):
+    """THE TENSION, and the ruling this pass takes on it. `175_gcf-b22-10-add02`
+    (FP100) records gcf_funding_requested as a fact-layer absence while its top
+    level carries the ratified correction 'USD 96,452,228'. Both statements are
+    true of different layers; a note that made both would be on both sides of
+    the question the turn actually asked. `data/registry_absences.json` says an
+    absence is never published over a print the build holds, and the gold case
+    `w2a-rbp-fp100-gcf` asserts the corrected figure — so the print wins and
+    the absence stays silent."""
+    note = absent.registry_note("How much GCF financing does FP311 request?")
+    assert "GCF financing (as printed): USD 96,452,228" in note
+    assert "CONFIRMED ABSENCE" not in note
+
+
+def test_two_identifiers_serve_no_absence_because_the_matrix_does(absent):
+    """Same arity rule as the field service: an absence is a statement about
+    one document, and a two-document turn is the matrix's, with its own
+    'missing' vocabulary."""
+    note = absent.registry_note(
+        "Compare the GCF funding requested of FP310 and FP311.")
+    assert "CONFIRMED ABSENCE" not in note
+
+
+def test_the_absence_publishes_no_page_and_no_value(absent):
+    """Two readers, two hazards.
+
+    `_note_pages` / `note_page_scopes` would turn a '(p.N)' here into a citable
+    scope on a line that ends '[stem, cover pages]' — and a page that was READ
+    AND FOUND EMPTY is the last page an answer should be invited to cite. So
+    the span that was read prints as 'pages 1-16'.
+
+    `verify._field_conflict` reads the first amount after a field label as that
+    field's value; a page number sitting there is a contradiction waiting to be
+    manufactured out of '1'. So no digit follows the label inside
+    `_value_after`'s 80-character window.
+    """
+    from gcf_qna.app import chainlit_app as app
+    note = absent.registry_note("How much GCF funding does FP310 request?")
+    assert app._note_pages([note]) == set()
+    assert V.note_page_scopes(note) == []
+    assert not V._INSTRUCTION_RE.search(note)
+    rx = dict(V._FIELD_RES)["gcf_financing"]
+    segs = list(V._field_lines(note, rx))
+    assert segs and all(V._value_after(seg, at) == [] for seg, at in segs)
+
+
+def test_a_malformed_or_missing_absence_record_leaves_the_line_alone(absent,
+                                                                    monkeypatch):
+    """Same never-break contract as `_v2_facts` and `_v2_meta`: the key is
+    additive and optional, and absent, partial or the wrong type must leave the
+    line byte-identical to the one the store alone produced."""
+    good = absent.registry_note("How much GCF funding does FP310 request?")
+    for broken in ({"meta": None}, {"meta": {"confirmed_absence": []}},
+                   {"meta": {"confirmed_absence": {"gcf_funding_requested": 7}}},
+                   {}):
+        monkeypatch.setattr(registry, "_cache_v2",
+                            {**ABS_REG2, FP310: {"fp": 310, "facts": {},
+                                                 "coverage": {}, **broken}})
+        note = absent.registry_note("How much GCF funding does FP310 request?")
+        assert "CONFIRMED ABSENCE" not in note
+        assert note.startswith('Registry — FP310: "Results-Based Payment')
+    monkeypatch.setattr(registry, "_cache_v2", ABS_REG2)
+    assert absent.registry_note(
+        "How much GCF funding does FP310 request?") == good
+
+
+def test_a_pages_checked_the_readers_could_not_credit_prints_nothing(absent,
+                                                                     monkeypatch):
+    """`_meta_page`'s discipline, applied to the span: a page outside 1..999,
+    a bool, or a non-list prints no span at all rather than a nonsense one."""
+    for bad in ([], [0], [1000], True, "1-16", [None, "x"]):
+        monkeypatch.setattr(registry, "_cache_v2", {**ABS_REG2, FP310: {
+            "fp": 310, "facts": {}, "coverage": {},
+            "meta": {"confirmed_absence": {
+                "gcf_funding_requested": {**_ABS, "pages_checked": bad}}}}})
+        note = absent.registry_note("How much GCF funding does FP310 request?")
+        assert "CONFIRMED ABSENCE" in note and "The registry read" not in note
+
+
+def test_one_page_checked_reads_as_one_page(absent, monkeypatch):
+    monkeypatch.setattr(registry, "_cache_v2", {**ABS_REG2, FP310: {
+        "fp": 310, "facts": {}, "coverage": {},
+        "meta": {"confirmed_absence": {
+            "gcf_funding_requested": {**_ABS, "pages_checked": [4]}}}}})
+    assert "The registry read page 4 of this document." in \
+        absent.registry_note("How much GCF funding does FP310 request?")
+
+
+def test_the_served_absence_is_a_negative_the_verifier_supports(absent):
+    """THE POINT, and the reason the wording is what it is.
+
+    Ruling 3 — support an uncited claim because a computed note confirmed the
+    absence — was implemented and DELETED: it passed the rider 'and the total
+    co-financing is USD 18.5 million' on the strength of a negative beside it.
+    So a negative verifies here the way every other claim does: it cites the
+    document, the citation resolves to this line at document scope, and the
+    matchers read the line. Both halves are pinned — the cited absence-as-fact
+    verifies, the uncited one with a figure attached does not.
+    """
+    note = absent.registry_note("How much GCF funding does FP310 request?")
+    ev = V.build_evidence([], note)
+    cited = (f"The GCF funding requested is not printed anywhere in this "
+             f"document — the registry has ratified this as a confirmed "
+             f"absence for **FP310** “Results-Based Payment Programme”, whose "
+             f"accredited entity is FMO. [{FP310}, cover pages]")
+    verdicts = V.classify_deterministic(V.extract_claims(cited), ev)
+    assert verdicts and [v.status for v in verdicts] == \
+        [V.SUPPORTED] * len(verdicts)
+    assert all(v.claim.citations for v in verdicts)
+
+    rider = ("The GCF funding requested is not printed anywhere in this "
+             "document, and the total co-financing is USD 18.5 million.")
+    assert [v.status for v in
+            V.classify_deterministic(V.extract_claims(rider), ev)] == \
+        [V.UNSUPPORTED]
+
+
+def test_a_figure_invented_for_the_absent_field_still_fails(absent):
+    """The failure the note exists to stop, and the note does not excuse it:
+    the line says the figure is not printed, so a figure cited to the line is
+    not in the evidence."""
+    note = absent.registry_note("How much GCF funding does FP310 request?")
+    ev = V.build_evidence([], note)
+    guess = (f"**FP310** requests USD 18,500,000 of GCF financing. "
+             f"[{FP310}, cover pages]")
+    assert [v.status for v in
+            V.classify_deterministic(V.extract_claims(guess), ev)] == \
+        [V.UNSUPPORTED]
+
+
+# --- the real corpus: 51 ratified absences, 48 published, one reader --------
+
+FP273 = "03_gcf-b42-02-add15-funding-proposal-package-fp273"
+
+
+def test_the_reader_reaches_every_published_absence(real):
+    """`_absences` is the ONLY reader in `src/`; before this pass there was
+    none, and only `scripts/build_registry_v2.py` wrote the key. What it reads
+    is what the build published, document for document and field for field."""
+    v2 = json.loads((ROOT / "data" / "registry_v2.json").read_text())["documents"]
+    published = {s: set((r.get("meta") or {}).get("confirmed_absence") or {})
+                 for s, r in v2.items()
+                 if (r.get("meta") or {}).get("confirmed_absence")}
+    assert {s: set(real._absences(s)) for s in published} == published
+    assert len(published) == 16 and sum(len(v) for v in published.values()) == 48
+    assert set().union(*published.values()) == {
+        "title", "countries", "accredited_entity",
+        "gcf_funding_requested", "total_financing"}
+
+
+def test_the_ratification_file_and_the_build_agree_on_the_count(real):
+    """51 ratified, 48 published. The gap is the file's own arithmetic — one
+    row superseded by the FP273 'Implementing entity' ruling, and absences the
+    build refuses to publish over a print it holds — and it is recorded, not
+    inferred."""
+    doc = json.loads((ROOT / "data" / "registry_absences.json").read_text())
+    assert doc["count"] == 51 and doc["superseded"] == 1
+    assert doc["ratified"].startswith("owner, ")
+
+
+def test_gold_case_w2a_rbp_fp273_absence_is_now_served(real):
+    """The case that named the gap. Its notes said the runtime 'does not' serve
+    the absence — verified at authoring time by calling `registry_note` and
+    getting silence about financing — and that the case must keep passing when
+    the runtime is wired to it. Both halves, here."""
+    note = real.registry_note("How much GCF funding does FP273 request?")
+    seg = _seg(note, "GCF funding requested")
+    assert seg is not None and seg.startswith(
+        "GCF funding requested: NOT PRINTED ANYWHERE IN THIS DOCUMENT")
+    assert "The registry read pages 1-16 of this document." in seg
+    assert note.rstrip().endswith(f"[{FP273}, cover pages]")
+
+
+def test_the_fp273_absence_answer_still_scores_the_gold_case(real):
+    """The honest-scoping answer the case expects today, and the stronger
+    absence-as-fact answer the served note makes available: both satisfy the
+    same scope alternation, and the second one VERIFIES claim by claim."""
+    gold = ROOT / "scripts" / "answer_gold.jsonl"
+    case = next(c for c in (json.loads(ln) for ln in
+                            gold.read_text().splitlines() if ln.strip())
+                if c["id"] == "w2a-rbp-fp273-absence")
+    import sys
+    sys.path.insert(0, str(ROOT / "scripts"))
+    from eval_answers import score_answer
+
+    note = real.registry_note(case["question"])
+    ev = V.build_evidence([], note)
+    scoped = (f"The funding proposal package for **FP273** does not state a "
+              f"GCF funding figure: no GCF financing amount is printed in this "
+              f"document. [{FP273}, cover pages]")
+    served = (f"**FP273** — “Papua New Guinea REDD+ RBP for results period "
+              f"2014-2016” (FMO, Papua New Guinea). There is no GCF funding "
+              f"requested figure: it is not printed anywhere in this document, "
+              f"which the registry records as a confirmed absence. "
+              f"[{FP273}, cover pages]")
+    for answer in (scoped, served):
+        assert score_answer(case, answer, [], [note])["pass"], answer[:60]
+    verdicts = V.classify_deterministic(V.extract_claims(served), ev)
+    assert verdicts and [v.status for v in verdicts] == [V.SUPPORTED] * len(verdicts)
+
+
+def test_no_other_gold_question_gains_or_loses_a_note_line(real):
+    """The sweep, as a test. Every gold question's note is recomputed with the
+    absence reader disabled and with it on; exactly one differs, and it differs
+    only by the segment this pass added."""
+    gold = ROOT / "scripts" / "answer_gold.jsonl"
+    cases = [json.loads(ln) for ln in gold.read_text().splitlines() if ln.strip()]
+    served = {c["id"]: real.registry_note(c["question"]) or "" for c in cases}
+    real._absence_bits, keep = (lambda d, q, p: []), real._absence_bits
+    try:
+        silent = {c["id"]: real.registry_note(c["question"]) or "" for c in cases}
+    finally:
+        real._absence_bits = keep
+    changed = [i for i in served if served[i] != silent[i]]
+    assert changed == ["w2a-rbp-fp273-absence"]
+    assert served[changed[0]].replace(
+        _seg(served[changed[0]], "GCF funding requested") + "; ", "") == \
+        silent[changed[0]]

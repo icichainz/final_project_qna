@@ -135,6 +135,146 @@ def _note_pages(notes) -> set:
     return out
 
 
+# ---------------------------------------------------------------------------
+# the conflict probe (campaign Phase 2)
+# ---------------------------------------------------------------------------
+# `registry._conflict_lines` prints WHERE a document contradicts itself —
+# 'gcf_funding_requested is printed as 28,654 million USD (p.5, A.8); also as
+# 26,654 million USD (p.48, B.2(b)) — report both figures with their pages' —
+# and the answer is instructed to report both. Retrieval does not always bring
+# those pages back: the second printing sits deep in a component table and
+# loses the similarity contest to the cover page that says the same thing in
+# the question's own words. Measured at 8/14 conflict-class evidence pages for
+# five consecutive releases, three cases at 0/2, unchanged by reranking.
+#
+# `Retriever.probe_pages` asks the other question — "show me THAT page of THAT
+# document" — and recovers 18/18 of those pages on demand. It never wires
+# itself in (a supplementary query that fired on its own would spend top-k
+# slots on every turn that merely mentions a document), so this is the caller
+# that decides when to ask: only when a CONFLICT line named pages this turn's
+# retrieval did not return.
+#: Distinct pages one turn may fetch by name. `_conflict_lines` prints at most
+#: `_MAX_CONFLICT_LINES` lines naming at most `_MAX_CONFLICT_ALTS` + 1 prints
+#: each, so six is the ceiling a note can name; no recorded turn asks for more
+#: than three. Four is a backstop, and a turn that hits it keeps the pages the
+#: note printed FIRST — the canonical figure's page leads every conflict line.
+_MAX_PROBE_PAGES = 4
+#: Excerpts one turn may append. Spent on chunks as well as pages: a page is
+#: 1–5 chunks and the print the note names is not always in the first — FP153's
+#: second printing is the fifth chunk of page 48 — and `probe_pages` gives
+#: every asked page a slot before any page takes a second, so a leftover slot
+#: buys a second chunk of a page rather than a page nobody asked for.
+_MAX_PROBE_HITS = 4
+#: The two patterns `_note_pages` reads a note line with, compiled for the
+#: probe: a document is named on a line when it appears in a bracket or a
+#: parenthesis, a page when the line prints '(p.<n>,' or '(p.<n>)'.
+#: `_note_pages` keeps its inline copy — `tests/test_registry_resolver.py`
+#: pins the app's SOURCE TEXT against `verify._NOTE_PAGE_RE`, so that copy is
+#: not ours to move — and `tests/test_conflict_probe_wiring.py` pins these two
+#: against both of the others. Three spellings of one rule, none free to
+#: drift: the probe must be unable to ask for a page the citation gate would
+#: then call invented.
+_CONFLICT_DOC_RE = re.compile(r"[\[(]([0-9]{1,3}_[\w.\-]+)")
+_CONFLICT_PAGE_RE = re.compile(r"\(p\.(\d{1,3})[,)]")
+
+
+def _conflict_probe_asks(note, hits) -> list:
+    """[(doc_id, [page, ...]), ...] a CONFLICT line names and this turn lacks.
+
+    Read off the note's own text with the same two regexes that decide which
+    cited pages are legal, so the probe can only ever ask for a page the model
+    was already told about. Everything else is a refusal:
+
+    * only lines that ARE conflict warnings — a main registry line prints the
+      cover pages, which retrieval has no obligation to hold;
+    * only pages missing from THIS turn's hits — the common case is that
+      retrieval already found them (5 of release-12's 9 conflict turns), and
+      re-fetching one would print the same excerpt twice;
+    * at most `_MAX_PROBE_PAGES`, in the order the note printed them.
+    """
+    have = {(h.doc_id, h.page) for h in (hits or [])}
+    asks: dict = {}
+    n = 0
+    for line in (note or "").splitlines():
+        if "CONFLICT in this document" not in line:
+            continue
+        docs = list(dict.fromkeys(_CONFLICT_DOC_RE.findall(line)))
+        pages = [int(p) for p in dict.fromkeys(_CONFLICT_PAGE_RE.findall(line))]
+        for d in docs:
+            for p in pages:
+                if (d, p) in have or p in asks.get(d, []):
+                    continue
+                if n >= _MAX_PROBE_PAGES:
+                    return list(asks.items())
+                asks.setdefault(d, []).append(p)
+                n += 1
+    return list(asks.items())
+
+
+def _conflict_probe(retriever, note, hits, query=None) -> list:
+    """Excerpts for the conflict pages the note named and retrieval missed.
+
+    `query` orders, it never selects (see `probe_pages`): the user's own words
+    decide WHICH chunk of an asked-for page comes first, and nothing about
+    them can add a page or a document. That is what puts FP153's second
+    printing — page 48's fifth chunk — in front of the model; in document
+    reading order the same budget returns the section heading instead.
+
+    The budget is spent document by document with every still-queued page
+    holding a slot, so the second document of a two-document conflict turn
+    cannot be starved by the first one's extra chunks.
+
+    Returns [] on any failure — a retriever too old to have `probe_pages`, an
+    index that cannot serve the page, a raise inside it. The supplement is
+    never allowed to cost a turn the answer it would have given today.
+    """
+    try:
+        asks = _conflict_probe_asks(note, hits)
+        if not asks or retriever is None:
+            return []
+        have = {(h.doc_id, h.page) for h in (hits or [])}
+        queued = sum(len(p) for _, p in asks)
+        out, budget = [], _MAX_PROBE_HITS
+        for doc, pages in asks:
+            queued -= len(pages)
+            k = budget - queued          # every queued page keeps its slot
+            if k <= 0:
+                break
+            got = [h for h in retriever.probe_pages(doc, pages, k=k, query=query)
+                   if (h.doc_id, h.page) not in have][:budget]
+            out += got
+            budget -= len(got)
+            if budget <= 0:
+                break
+        return out
+    except Exception as e:                     # noqa: BLE001 — never a blocker
+        print(f"conflict probe unavailable: {e}", flush=True)
+        return []
+
+
+def _context_block(hits, probe=()) -> str:
+    """The excerpt half of the context — one definition, two callers.
+
+    `scripts/eval_answers.py` builds the same block for the release run, and a
+    second copy of this f-string there is how a recorded context and a live one
+    would come to differ in a byte nobody looked at.
+
+    A probe excerpt is LABELLED rather than scored. It was fetched by page
+    because a registry CONFLICT line named that page, so it has no rank in the
+    similarity order the other excerpts are printed in, and a '(score 0.44)'
+    at the head of a ranked list invites exactly the comparison that number
+    cannot support — the cosine `probe_pages` returns ranks chunks WITHIN the
+    asked-for pages and nothing else.
+    """
+    marked = {id(h) for h in (probe or ())}
+    return "\n\n".join(
+        f"[{_doc_label(h.doc_id, h.page)}] "
+        + ("(registry conflict page — fetched by page, not ranked)"
+           if id(h) in marked else f"(score {h.score:.2f})")
+        + f"\n{h.text}"
+        for h in hits)
+
+
 def _invalid_citations(answer: str, hits: list, note_pages: set = frozenset()):
     """Pages cited in the answer that were never retrieved (observed: a
     correct doc cited with an invented 'p. 35'). Returns labels to flag."""
@@ -1131,7 +1271,15 @@ def _extend_registry_note(note, items):
     """
     lines, added = [], 0
     try:
-        have = set(_NOTE_DOC_RE.findall(note or ""))
+        # Seed `have` from FULL registry lines only ('Registry — FP…'), not
+        # from every bracketed stem: since the serving wave, inverse/board
+        # LISTING items each end '[stem, cover pages]', and counting those as
+        # "already covered" would rob a resolved document of its full _fmt
+        # line on any turn that both fires a listing and resolves into it.
+        have = set()
+        for ln in (note or "").splitlines():
+            if ln.startswith("Registry — FP") or ln.startswith("Registry — CONFLICT"):
+                have |= set(_NOTE_DOC_RE.findall(ln))
         rows = registry.load()
         for doc in _turn_doc_ids(items):
             if doc in have:
@@ -1840,16 +1988,10 @@ async def main(message: cl.Message):
     if coverage_note:
         year_note = (f"{year_note} {coverage_note}" if year_note
                      else coverage_note)
-    context = "\n\n".join(
-        f"[{_doc_label(h.doc_id, h.page)}] (score {h.score:.2f})\n{h.text}"
-        for h in hits)
-    if year_note:
-        context = year_note + "\n\n" + context
-    if weak_signal:
-        context = ("Note: retrieval confidence for this question is LOW — the "
-                   "excerpts below may not actually be relevant. Do not force an "
-                   "answer from marginal matches; say plainly that the corpus "
-                   "does not appear to cover this.\n\n") + context
+    # The registry note is computed BEFORE the context is assembled, because
+    # its CONFLICT lines decide whether this turn still has to fetch a page by
+    # name. Where it is PRINTED has not moved: it is prepended below, in the
+    # same order it always was — matrix, registry, weak-signal, year, excerpts.
     reg_note = None
     try:
         from gcf_qna.rag.registry import registry_note
@@ -1858,10 +2000,30 @@ async def main(message: cl.Message):
         # own words are not the only evidence of which document a turn is
         # about: a follow-up names none, and its resolved query names one.
         reg_note = _extend_registry_note(reg_note, search_queries)
-        if reg_note:
-            context = reg_note + "\n\n" + context
     except Exception:
         pass    # the registry is an enhancement, never a blocker
+    # The conflict probe SUPPLEMENTS this turn's excerpts and never edits
+    # them: the pages it fetches go in front of the ranked list and the cap
+    # above is extended by their count, so no hit that earned a slot loses one.
+    # In front, because the registry note directly above the excerpts is what
+    # named these pages — the evidence for 'report both figures with their
+    # pages' should be the first thing under the instruction to do so — and
+    # because a supplement appended to the tail of a fifteen-excerpt context
+    # is the least likely thing in it to be read.
+    probe_hits = await cl.make_async(_conflict_probe)(
+        retriever, reg_note, hits, message.content)
+    if probe_hits:
+        hits = probe_hits + hits
+    context = _context_block(hits, probe_hits)
+    if year_note:
+        context = year_note + "\n\n" + context
+    if weak_signal:
+        context = ("Note: retrieval confidence for this question is LOW — the "
+                   "excerpts below may not actually be relevant. Do not force an "
+                   "answer from marginal matches; say plainly that the corpus "
+                   "does not appear to cover this.\n\n") + context
+    if reg_note:
+        context = reg_note + "\n\n" + context
     if matrix_block:
         # ABOVE the registry note and the excerpts: the matrix is the complete
         # half of the evidence (every named document, every asked field, empty

@@ -674,12 +674,23 @@ def test_the_strict_pass_output_is_untouched_by_the_fallback_pass(stem):
     ("125_gcf-b27-02-add10-rev01", "gcf_funding_requested", 5, 256_480_000.0, "256.48"),
     ("19_gcf-b41-02-add05-funding-proposal-package-fp257",
      "gcf_funding_requested", 5, 75_623_754.0, "75,623,754"),
-    # total_financing: 'Total project finance' (no -ing), the emphasis-split
-    # figure, and 'Total funding required (GCF + co-financing)'.
+    # total_financing: 'Total project finance' (no -ing) and the emphasis-split
+    # figure.
     ("249_gcf-b14-07-add08-rev01", "total_financing", 11, 1_538_500_000.0, "1538.5"),
     ("188_gcf-b21-10-add06", "total_financing", 8, 37_600_000.0, "37.6 million"),
+    # PIN RE-TAKEN 2026-08-26 (serving-wave session). This row used to read
+    # 69,830,370 under 'A7 Total funding required (GCF + co-financing)' and was
+    # the FALLBACK_RULES entry's only witness in the corpus. The cross-extractor
+    # check proved 69,830,370 is printed on no page of the PDF, and the page
+    # re-extraction brought back a standard cover: 'A.7. Total financing (GCF +
+    # co-finance) 79,690,370 USD'. So the "template variant" that rule was
+    # written for was an extraction artifact, not a spelling any GCF cover uses
+    # — no document in the corpus prints 'Total funding required' any more. The
+    # rule is left in place (it is consulted only for a field the strict pass
+    # leaves empty, so it can cost nothing) and this pin now records the
+    # STRICT A.7 reading the document really has.
     ("43_gcf-b39-02-add08-funding-proposal-package-fp233",
-     "total_financing", 5, 69_830_370.0, "69,830,370"),
+     "total_financing", 5, 79_690_370.0, "79,690,370"),
 ])
 def test_variant_recognizer_reads_the_document_it_was_written_for(
         stem, field, page_no, value, raw_bit):
@@ -1285,11 +1296,15 @@ def test_a_superseded_absence_is_kept_in_the_file_and_not_published():
 def test_the_ratified_files_say_what_they_are():
     corr = json.loads(CORRECTIONS.read_text(encoding="utf-8"))
     absc = json.loads(ABSENCES.read_text(encoding="utf-8"))
-    assert corr["count"] == len(corr["corrections"]) == 62      # 58 wrong + 4 riders
+    # 58 wrong + 4 phase-3 riders + the 12 serving-wave rows
+    assert corr["count"] == len(corr["corrections"]) == 74
     riders = [e for e in corr["corrections"] if "rider" in e["row_ref"]]
     assert len(riders) == 4
     assert {e["ratified"] for e in riders} == {"owner, 2026-08-26 (rider session)"}
     assert {e["row_ref"]["verdict"] for e in riders} == {"CONFIRMED"}
+    # each session names the adjudication it came from, and nothing else does
+    assert [s["session"] for s in corr["sources"]] == [
+        "owner, 2026-08-26", "owner, 2026-08-26 (serving-wave session)"]
     assert absc["count"] == len(absc["absences"]) == 51
     assert absc["superseded"] == 1                     # see the test above
     assert len(absc["corpus_level"]) == 1
@@ -1304,10 +1319,23 @@ def test_the_ratified_files_say_what_they_are():
 def test_every_correction_carries_its_adjudication_row_and_its_quote():
     for e in json.loads(CORRECTIONS.read_text(encoding="utf-8"))["corrections"]:
         assert e["row_ref"]["pointer"].startswith("rows[")
-        assert e["row_ref"]["file"].endswith("phase3_adjudication.json")
+        assert e["row_ref"]["file"].endswith(("phase3_adjudication.json",
+                                              "serving_wave_adjudication.json"))
         assert e["action"] in {"correct-to", "value-fix", "reclassify", "promote",
-                               "confirm-absence", "re-extract", "add-candidate"}
-        if e["action"] == "add-candidate":
+                               "confirm-absence", "re-extract", "add-candidate",
+                               "drop-candidate"}
+        if e["action"] == "drop-candidate":
+            # the one action that deletes a print and puts nothing in its place:
+            # it has to carry the ground it was ratified on and the proof
+            assert e["wrong"]["raw"] is not None, e["id"]
+            assert e["corrected"] is None, e["id"]
+            assert e["dropped"]["ground"] in B.DROP_GROUNDS, e["id"]
+            assert e["dropped"]["evidence"] and e["dropped"]["quote"], e["id"]
+            assert e["dropped"]["searched"], e["id"]
+            if e["dropped"]["ground"] == "label-bleed":
+                assert e["dropped"]["belongs_to"], e["id"]
+                assert e["dropped"]["belongs_to_raw"], e["id"]
+        elif e["action"] == "add-candidate":
             # nothing is wrong on an add row: it carries a print, not a fix
             assert e["wrong"] is None, e["id"]
             assert e["corrected"] is None, e["id"]
@@ -1352,7 +1380,8 @@ def test_the_candidate_schema_is_stable_and_the_extra_keys_are_opt_in():
     """The correction markers ride on corrected candidates only; every other
     candidate keeps exactly the seven published keys."""
     keys = {"raw", "value", "currency", "unit", "page", "section", "status"}
-    extra = {"corrected", "corrected_from", "reclassified_from", "disputed", "dispute"}
+    extra = {"corrected", "corrected_from", "reclassified_from", "disputed", "dispute",
+             "added", "derived", "derived_from", "cross_check"}
     facts = {"total_financing": [_cand("1,000 USD", 1000.0), _cand("9 USD", 9.0,
                                                                    status="supporting")]}
     B.apply_fact_corrections("D", facts, B.Decisions([_entry(doc_id="D")]))
@@ -1605,3 +1634,530 @@ def test_a_registry_without_the_meta_block_serves_exactly_what_it_always_did(ser
 def test_a_malformed_meta_block_never_breaks_the_line(served, meta):
     note = served(_v1_row(gcf_financing="35,107,775 USD"), _v2_row(meta=meta))
     assert "GCF financing (as printed): 35,107,775 USD" in note
+
+
+# --------------------------------------------------------------------------
+# drop-candidate: the action that DELETES a print
+#
+# Ratified 2026-08-26 (serving-wave session) for four rows the wave proved the
+# PDF does not support. It is the only action that leaves the store holding
+# less than the extraction found and offers nothing in its place, so the row
+# has to prove its ground before the builder will run it.
+# --------------------------------------------------------------------------
+
+def _drop_entry(wrong=None, **dropped):
+    base = {"page": 73, "ground": "printed-nowhere",
+            "searched": ["pymupdf", "pdfplumber"],
+            "evidence": "zero hits for 143,507 on any page in either extraction",
+            "quote": "p73 (independent): the E.2.2 table prints no such row"}
+    base.update(dropped)
+    return _entry(action="drop-candidate", doc_id="D", layer="fact-conflicting",
+                  wrong=wrong or {"raw": "143,507 million", "page": 73},
+                  corrected=None, dropped=base)
+
+
+def test_a_fabricated_print_is_dropped_and_the_search_that_proved_it_recorded():
+    """FP162's page-73 row. No extraction of the PDF prints 143,507, so there is
+    no figure to correct it TO — the candidate is not a reading of the document
+    at all."""
+    facts = {"total_financing": [_cand("143,327 million USD", 143_327_000.0),
+                                 _cand("143,507 million", None, page=73,
+                                       section="rule:B.2(a)", status="conflicting")]}
+    dec = B.Decisions([_drop_entry()])
+    recs = B.apply_fact_corrections("D", facts, dec)
+    assert [c["raw"] for c in facts["total_financing"]] == ["143,327 million USD"]
+    assert recs[0]["to"] is None and recs[0]["ground"] == "printed-nowhere"
+    assert recs[0]["searched"] == ["pymupdf", "pdfplumber"]
+    assert "zero hits" in recs[0]["evidence"]
+    assert recs[0]["quote"].startswith("p73")
+    assert not dec.alarms
+
+
+def test_dropping_the_only_rival_reading_dissolves_the_conflict():
+    """The point of the four drops: two documents were published as
+    contradicting themselves on the strength of a row the PDF never printed."""
+    facts = {"total_financing": [_cand("118.08 | million eur", 118_080_000.0, page=114),
+                                 _cand("EUR 80.59 million", 80_590_000.0, page=137,
+                                       status="conflicting")]}
+    dec = B.Decisions([_drop_entry(
+        wrong={"raw": "EUR 80.59 million", "page": 137}, page=137,
+        evidence="80.59 appears on no page of the PDF",
+        quote="p137 (independent), Table 24: 118.08")])
+    B.apply_fact_corrections("D", facts, dec)
+    assert [c["status"] for c in facts["total_financing"]] == ["canonical"]
+    assert not dec.alarms
+
+
+def test_a_drop_that_empties_a_field_removes_the_field():
+    facts = {"total_financing": [_cand("143,507 million", None, page=73,
+                                       status="conflicting")]}
+    B.apply_fact_corrections("D", facts, B.Decisions([_drop_entry()]))
+    assert "total_financing" not in facts
+
+
+def test_a_drop_with_no_ratified_ground_is_refused_and_shouted_about():
+    """A drop is destructive, so 'the adjudication said so' is not enough: the
+    row names WHY, out of a closed vocabulary, or it does not run."""
+    facts = {"total_financing": [_cand("143,507 million", None, page=73,
+                                       status="conflicting")]}
+    dec = B.Decisions([_drop_entry(ground="looks wrong")])
+    B.apply_fact_corrections("D", facts, dec)
+    assert len(facts["total_financing"]) == 1
+    assert dec.unapplied and "ratified ground" in dec.unapplied[0]["why"]
+    assert any("NOT APPLIED" in a for a in dec.alarms)
+
+
+def test_a_label_bleed_drop_needs_the_field_that_owns_the_print_to_hold_it():
+    """FP176's A.9 bleed: 'USD 250 Million' is the project-size CEILING read as
+    a GCF request. Dropping it is safe only because project_size carries the
+    whole print — so the builder checks that before deleting anything."""
+    bleed = {"page": 5, "ground": "label-bleed", "belongs_to": "project_size",
+             "belongs_to_raw": "Medium (Up to USD 250 Million)",
+             "searched": ["pymupdf"], "evidence": "the 250 is the size band's ceiling",
+             "quote": 'p5: "A.9. Project size | Medium (Up to USD 250 Million)"'}
+    entry = _entry(action="drop-candidate", doc_id="D", field="gcf_funding_requested",
+                   layer="fact-supporting", corrected=None,
+                   wrong={"raw": "USD 250 Million", "page": 5}, dropped=bleed)
+    gcf = [_cand("€30,138,772 Eur", 30_138_772.0),
+           _cand("USD 250 Million", 250_000_000.0, status="supporting")]
+    size = [_cand("Medium (Up to USD 250 Million)", None, section="rule:A.9")]
+
+    held = {"gcf_funding_requested": list(gcf), "project_size": size}
+    B.apply_fact_corrections("D", held, B.Decisions([entry]))
+    assert [c["raw"] for c in held["gcf_funding_requested"]] == ["€30,138,772 Eur"]
+
+    # ... and with nothing holding the print, the drop would lose it: refused
+    orphan = {"gcf_funding_requested": list(gcf)}
+    dec = B.Decisions([entry])
+    B.apply_fact_corrections("D", orphan, dec)
+    assert len(orphan["gcf_funding_requested"]) == 2
+    assert dec.unapplied and "would be lost, not moved" in dec.unapplied[0]["why"]
+
+
+@needs_decisions
+def test_the_twelve_serving_wave_rows_are_the_ones_the_owner_ratified():
+    corr = json.loads(CORRECTIONS.read_text(encoding="utf-8"))["corrections"]
+    wave = [e for e in corr
+            if e["ratified"] == "owner, 2026-08-26 (serving-wave session)"]
+    assert {(e["fp"], e["field"], e["action"]) for e in wave} == {
+        # the four misfiled / misread canonical totals
+        ("FP260", "total_financing", "correct-to"),          # -> 83,811,581
+        ("FP204", "total_financing", "correct-to"),          # -> 1,119,000,000
+        ("FP261", "total_financing", "correct-to"),          # -> 391.43 million
+        ("FP233", "total_financing", "correct-to"),          # -> 79,690,370
+        # FP162's two unparsed covers
+        ("FP162", "total_financing", "value-fix"),           # -> 143,327,000
+        ("FP162", "gcf_funding_requested", "value-fix"),     # -> 82,849,900
+        # the four drops
+        ("FP162", "gcf_funding_requested", "drop-candidate"),   # fabricated $423M
+        ("FP162", "total_financing", "drop-candidate"),         # fabricated 143,507M
+        ("FP214", "total_financing", "drop-candidate"),         # fabricated 80.59M
+        ("FP176", "gcf_funding_requested", "drop-candidate"),   # A.9 bleed
+        # the two RBP prints that stop an absence and a top-level from both
+        # being live at once
+        ("FP100", "gcf_funding_requested", "add-candidate"),
+        ("FP142", "gcf_funding_requested", "add-candidate"),
+    }
+    assert len(wave) == 12
+    assert {e["row_ref"]["file"] for e in wave} == {
+        "scratchpad/serving_wave_adjudication.json"}
+
+
+@needs_decisions
+def test_the_two_rbp_add_candidates_are_for_documents_the_absence_file_names():
+    """The add-candidate rows only do their job because an absence row exists
+    for the same (document, field): the print is what withholds it."""
+    corr = json.loads(CORRECTIONS.read_text(encoding="utf-8"))["corrections"]
+    absc = json.loads(ABSENCES.read_text(encoding="utf-8"))
+    pairs = {(a["doc_id"], a["field"]) for a in absc["absences"]}
+    adds = [(e["doc_id"], e["field"]) for e in corr
+            if e["action"] == "add-candidate"
+            and e["ratified"].endswith("(serving-wave session)")]
+    assert len(adds) == 2 and set(adds) <= pairs
+    # and the ratified precedence is written down where a reader of an absence
+    # will look for it
+    prec = absc["serving_precedence"]
+    assert prec["order"] == ["fact-canonical", "top-level-as-printed",
+                             "confirmed-absence"]
+    assert prec["ratified"] == "owner, 2026-08-26 (serving-wave session)"
+
+
+def test_a_supporting_print_withholds_an_absence_quietly_and_says_why():
+    """The FP100/FP142 shape. A CANONICAL print against a ratified absence is a
+    flat contradiction and gets shouted about; a SUPPORTING one means the
+    absence was true about the template and the document prints the figure
+    somewhere else — withheld, with the reason, and no alarm."""
+    dec = B.Decisions(absences=[{"doc_id": "D", "field": "gcf_funding_requested",
+                                 "pages_checked": [1, 16], "evidence": "no cover field",
+                                 "status": "ratified"}])
+    facts = {"gcf_funding_requested": [_cand("GCF RBP: 96,452,228", 96_452_228.0,
+                                             page=103, section="AE-fee budget (Table 19)",
+                                             status="supporting")]}
+    assert B.absence_meta("D", facts, dec) == {}
+    assert not dec.alarms                       # nothing contradicts anything
+    why = dec.absences_skipped[0]["why"]
+    assert "absence not published over a print" in why and "p.103" in why
+
+
+# ==========================================================================
+# the cross-extractor verification arm
+#
+# OWNER RATIFICATION 2026-08-26 (serving-wave session): adopted as a STANDING
+# arm of the build. Everything else in this file reads one rendering of the
+# corpus — the qwen2.5-vl-7b markdown — and phase 3's literal pass proved every
+# registry raw is printed on the markdown page it cites. That proof is silent
+# about the MARKDOWN being wrong, because it checks the markdown against
+# itself. This arm reads the figure again out of a text extraction made by a
+# different tool and says so when the two disagree.
+#
+# The fixtures below are the eight pages the serving wave proved fabricated.
+# ==========================================================================
+
+INDEPENDENT = Path(__file__).resolve().parents[1] / "data" / "extracted" / "pymupdf"
+
+needs_independent = pytest.mark.skipif(
+    not INDEPENDENT.is_dir(), reason="independent extraction absent")
+
+
+def indep(pages: dict) -> Path:
+    """An in-memory stand-in for data/extracted/pymupdf/<doc>.txt."""
+    return "".join(f"=== PAGE {n} ===\n{b}\n" for n, b in sorted(pages.items()))
+
+
+@pytest.fixture
+def indep_dir(tmp_path):
+    def _write(doc_id: str, pages: dict):
+        (tmp_path / f"{doc_id}.txt").write_text(indep(pages), encoding="utf-8")
+        return tmp_path
+    return _write
+
+
+@pytest.mark.parametrize("tok,key", [
+    ("49,944,050", "49944050"),        # US grouping
+    ("49.944.050", "49944050"),        # European grouping — the same figure
+    ("49944050", "49944050"),          # no grouping at all
+    ("0049", "49"),                    # leading zeros are not a disagreement
+    ("391.43", "39143"),
+    ("5", None),                       # a lone digit confirms itself against
+    ("7", None),                       # anything, so it is never a key
+])
+def test_a_figure_keys_to_its_digits_whatever_the_separators(tok, key):
+    assert B._figure_key(tok) == key
+
+
+def test_the_page_side_joins_space_separated_thousands_and_the_raw_side_never_does():
+    """PDF text layers print '1 234 567' and break numbers over line ends. The
+    page may be read both ways so a real print is not called missing; the
+    CANDIDATE may not, or joining could invent the figure it is meant to check."""
+    assert "1234567" in B.figure_keys("total 1 234 567 USD", spaced=True)
+    assert "1234567" not in B.figure_keys("total 1 234 567 USD")
+
+
+def _pages(body, page=5):
+    return {page: body + "\n" + "filler text " * 20}
+
+
+def test_a_figure_the_independent_extraction_prints_is_confirmed(indep_dir):
+    root = indep_dir("D", _pages("A.7. Total financing 49,944,050 USD"))
+    facts = {"total_financing": [_cand("49,944,050 USD", 49_944_050.0)]}
+    block, counts = B.cross_check_meta("D", facts, root=root)
+    assert block is None                       # nothing to say
+    assert counts == {"confirmed-print": 1}
+    assert "cross_check" not in facts["total_financing"][0]
+
+
+def test_the_same_amount_in_another_notation_is_not_a_disagreement(indep_dir):
+    """The store normalizes 'USD 40,000,000' where the PDF prints '$ 40
+    million'. Same figure, different notation — read with the builder's own
+    amount reader rather than called a fabrication."""
+    root = indep_dir("D", _pages("(b) Requested GCF amount $ 40 million", page=58))
+    facts = {"gcf_funding_requested": [_cand("USD 40,000,000", 40_000_000.0, page=58)]}
+    block, counts = B.cross_check_meta("D", facts, root=root)
+    assert block is None and counts == {"confirmed-value": 1}
+
+
+def test_a_digit_misread_is_flagged_with_the_figure_the_pdf_actually_prints(indep_dir):
+    """FP233's cover in miniature: the markdown prints 69,830,370 and the PDF
+    prints 79,690,370. Nothing is corrected — the flag says the two readings
+    disagree and names the figure the other extractor saw."""
+    root = indep_dir("D", _pages("A.7. Total financing 79,690,370 USD"))
+    facts = {"total_financing": [_cand("69,830,370 USD", 69_830_370.0)]}
+    block, counts = B.cross_check_meta("D", facts, root=root)
+    assert counts == {"not-in-document": 1}
+    assert facts["total_financing"][0]["cross_check"] == "not-in-document"
+    assert facts["total_financing"][0]["value"] == 69_830_370.0   # NOT corrected
+    flag = block["flagged"][0]
+    assert flag["figure"] == "69830370"
+    assert "79690370" in flag["independent_page_prints"]
+    assert block["ratified"] == "owner, 2026-08-26 (serving-wave session)"
+
+
+def test_a_figure_printed_elsewhere_in_the_document_is_a_weaker_flag(indep_dir):
+    """Not the same finding: the figure exists, the page attribution does not."""
+    root = indep_dir("D", {5: "A.7. Total financing 12,345,678 USD " + "x " * 40,
+                           9: "the programme's 99,999,999 USD envelope " + "x " * 40})
+    facts = {"total_financing": [_cand("99,999,999 USD", 99_999_999.0, page=5)]}
+    block, counts = B.cross_check_meta("D", facts, root=root)
+    assert counts == {"not-on-cited-page": 1}
+    assert block["flagged"][0]["verdict"] == "not-on-cited-page"
+
+
+def test_a_page_with_no_readable_text_layer_is_unknown_not_absent(indep_dir):
+    """A scanned page extracts to nothing. 'The other tool saw nothing at all'
+    is not evidence that the VLM invented the figure."""
+    root = indep_dir("D", {5: "  "})
+    facts = {"total_financing": [_cand("49,944,050 USD", 49_944_050.0)]}
+    block, counts = B.cross_check_meta("D", facts, root=root)
+    assert block is None and counts == {"no-independent-page": 1}
+
+
+def test_a_document_with_no_independent_extraction_is_counted_not_guessed_at(tmp_path):
+    facts = {"total_financing": [_cand("49,944,050 USD", 49_944_050.0)]}
+    block, counts = B.cross_check_meta("D", facts, root=tmp_path)
+    assert block is None and counts == {"no-independent-extraction": 1}
+    assert "cross_check" not in facts["total_financing"][0]
+
+
+def test_only_canonical_money_facts_are_in_scope(indep_dir):
+    """The ratification scopes the arm to canonical money: a supporting print
+    the parser found on some narrative page is not the store's answer to
+    anything, and flagging it would bury the flags that matter."""
+    root = indep_dir("D", _pages("A.7. Total financing 49,944,050 USD"))
+    facts = {"total_financing": [_cand("49,944,050 USD", 49_944_050.0),
+                                 _cand("11,111,111 USD", 11_111_111.0,
+                                       status="supporting")],
+             "title": [_cand("A title with 12,345,678 in it", None,
+                             status="canonical")]}
+    block, counts = B.cross_check_meta("D", facts, root=root)
+    assert block is None and counts == {"confirmed-print": 1}
+
+
+def test_a_flag_is_withdrawn_when_a_rebuild_confirms_the_figure(indep_dir):
+    """The arm runs on every build, so a candidate that was flagged and has
+    since been corrected must not keep a stale marker."""
+    facts = {"total_financing": [_cand("69,830,370 USD", 69_830_370.0,
+                                       cross_check="not-in-document")]}
+    root = indep_dir("D", _pages("A.7. Total financing 69,830,370 USD"))
+    block, counts = B.cross_check_meta("D", facts, root=root)
+    assert block is None and counts == {"confirmed-print": 1}
+    assert "cross_check" not in facts["total_financing"][0]
+
+
+def test_a_raw_with_no_multi_digit_figure_is_reported_as_uncheckable(indep_dir):
+    root = indep_dir("D", _pages("A.10 Grant $5 million"))
+    facts = {"financial_instruments": [_cand("$5 million USD", None)]}
+    block, counts = B.cross_check_meta("D", facts, root=root)
+    assert block is None and counts == {"no-figure": 1}
+
+
+# --- the eight fabricated pages, against the real corpus -------------------
+
+@needs_corpus
+@needs_independent
+@pytest.mark.parametrize("stem,field,raw,page,value", [
+    # the five the serving wave proved fabricated AND that a money fact cites
+    ("15_gcf-b41-02-add09-rev01-funding-proposal-package-fp261",
+     "total_financing", "$381.43 million USD", 32, 381_430_000.0),   # 391.43 misread
+    ("43_gcf-b39-02-add08-funding-proposal-package-fp233",
+     "total_financing", "69,830,370 USD", 5, 69_830_370.0),          # 79,690,370 misread
+    ("113_gcf-b28-02-add09",
+     "gcf_funding_requested", "$423 million USD", 64, 423_000_000.0),  # invented cell
+    ("113_gcf-b28-02-add09",
+     "total_financing", "143,507 million", 73, None),                # invented row
+    ("61_gcf-b37-02-add05-funding-proposal-package-fp214",
+     "total_financing", "EUR 80.59 million", 137, 80_590_000.0),     # invented table
+])
+def test_the_arm_flags_the_pages_the_wave_proved_fabricated(stem, field, raw, page, value):
+    """These five rows are exactly what the arm exists to catch, and it catches
+    them from the corpus as it stands — no adjudication, no model call."""
+    pages = B.independent_pages(stem)
+    assert pages, stem
+    cand = {"raw": raw, "value": value, "currency": None, "unit": None,
+            "page": page, "section": "x", "status": "canonical"}
+    verdict, detail = B.cross_check_candidate(cand, pages, B.figure_keys(
+        "\n".join(pages.values()), spaced=True))
+    assert verdict in B.CROSS_CHECK_FLAGS, (stem, verdict, detail)
+
+
+@needs_corpus
+@needs_independent
+@pytest.mark.parametrize("stem,field,raw,page,value", [
+    # FP260's p31 and FP204's p162: the GCF row filed as the total. The FIGURE
+    # is printed exactly there — the defect is which label it sits under
+    ("16_gcf-b41-02-add08-funding-proposal-package-fp260",
+     "total_financing", "25,000,000 USD", 31, 25_000_000.0),
+    ("71_gcf-b35-02-add06",
+     "total_financing", "160 | million USD", 162, 160_000_000.0),
+    # FP176's A.9 bleed: 'USD 250 Million' is printed on p5, as a size band
+    ("99_gcf-b30-02-add08",
+     "gcf_funding_requested", "USD 250 Million", 5, 250_000_000.0),
+])
+def test_the_arm_does_not_flag_a_misfiling_because_the_figure_is_printed(
+        stem, field, raw, page, value):
+    """The arm answers one question — 'does the other extractor print this
+    figure on this page?' — and the four misfiled rows of the same wave answer
+    it YES. A wrong FIELD is a different defect and needs a different check;
+    reporting these would only make the fabrication flags harder to find."""
+    pages = B.independent_pages(stem)
+    assert pages, stem
+    cand = {"raw": raw, "value": value, "currency": None, "unit": None,
+            "page": page, "section": "x", "status": "canonical"}
+    verdict, _ = B.cross_check_candidate(cand, pages, None)
+    assert verdict.startswith("confirmed"), (stem, verdict)
+
+
+@needs_corpus
+@needs_independent
+def test_every_document_in_the_corpus_has_an_independent_extraction_to_check():
+    """The arm is only a standing guarantee while both renderings cover the
+    whole corpus. If a document loses its independent extraction the census
+    says so out loud rather than reporting it clean."""
+    vlm = {p.stem for p in EXTRACTED.glob("*.md")}
+    independent = {p.stem for p in INDEPENDENT.glob("*.txt")}
+    assert not (vlm - independent - {"status"}), sorted(vlm - independent)[:5]
+
+
+# --------------------------------------------------------------------------
+# a ratified row and a page re-extraction fixing the same defect
+#
+# The serving-wave adjudication pairs them on purpose ("correct-to 79,690,370;
+# re-extract p5"), and the re-extraction ran the same day. Five of its six
+# affected rows found their target gone because the fresh page reads the figure
+# correctly — which must not look like a ratified decision that failed.
+# --------------------------------------------------------------------------
+
+def _reex(**kw):
+    base = {"ran": "2026-08-26 (serving-wave session)",
+            "model": "qwen/qwen2.5-vl-7b", "pages": [5]}
+    base.update(kw)
+    return base
+
+
+def test_a_reextracted_page_that_now_reads_the_ratified_figure_is_not_an_alarm():
+    """FP233: the row said 'correct 69,830,370 to 79,690,370 and re-extract p5'.
+    The fresh p5 prints 79,690,370, so the wrong candidate is gone and the right
+    one is canonical — the outcome the row asked for, reached the other way."""
+    facts = {"total_financing": [_cand("79,690,370 USD", 79_690_370.0)]}
+    dec = B.Decisions([_entry(doc_id="D", reextracted=_reex(),
+                              wrong={"raw": "69,830,370 USD", "page": 5},
+                              corrected={"raw": "USD 79,690,370", "value": 79_690_370.0,
+                                         "currency": "USD", "unit": None, "page": 94,
+                                         "section": None, "quote": "p94"})])
+    recs = B.apply_fact_corrections("D", facts, dec)
+    assert not dec.unapplied and not dec.alarms
+    assert dec.applied == ["T01"]
+    assert "79,690,370" in recs[0]["resolved_by_reextraction"]
+    # and nothing was touched: the fresh page's own print stands as it was read
+    assert facts["total_financing"][0] == _cand("79,690,370 USD", 79_690_370.0)
+
+
+def test_a_drop_row_is_settled_when_the_reextraction_removed_the_fabrication():
+    """FP162's p73 and FP214's p137. The row exists to delete a print the PDF
+    does not contain; the fresh page not printing it is exactly that outcome."""
+    facts = {"total_financing": [_cand("143,327 million USD", 143_327_000.0)]}
+    dec = B.Decisions([_drop_entry() | {"reextracted": _reex(pages=[73])}])
+    recs = B.apply_fact_corrections("D", facts, dec)
+    assert not dec.unapplied and not dec.alarms
+    assert "ratified to drop" in recs[0]["resolved_by_reextraction"]
+
+
+def test_a_reextracted_page_that_still_reads_wrong_is_still_reported_unapplied():
+    """FP260's shape, and the reason this is not a blanket amnesty: the fresh
+    p31 came back honest (the C.1 '(a)' label restored) and the parser STILL
+    elected the GCF row as the total. The ratified figure has not landed, so
+    the row must still be shouted about."""
+    facts = {"total_financing": [_cand("25,000,000 | USD", 25_000_000.0, page=31,
+                                       section="C.1")]}
+    dec = B.Decisions([_entry(doc_id="D", reextracted=_reex(pages=[31, 32]),
+                              wrong={"raw": "25,000,000 USD", "page": 31},
+                              corrected={"raw": "83,811,581 USD", "value": 83_811_581.0,
+                                         "currency": "USD", "unit": None, "page": 7,
+                                         "section": None, "quote": "p7"})])
+    B.apply_fact_corrections("D", facts, dec)
+    assert dec.unapplied and dec.unapplied[0]["id"] == "T01"
+    assert any("NOT APPLIED" in a for a in dec.alarms)
+
+
+def test_a_row_that_never_declared_a_reextraction_gets_no_benefit_of_the_doubt():
+    """The row has to have said in advance that its page was going for
+    re-extraction. A target that vanished for any other reason is an alarm."""
+    facts = {"total_financing": [_cand("79,690,370 USD", 79_690_370.0)]}
+    dec = B.Decisions([_entry(doc_id="D",
+                              wrong={"raw": "69,830,370 USD", "page": 5},
+                              corrected={"raw": "USD 79,690,370", "value": 79_690_370.0,
+                                         "currency": "USD", "unit": None, "page": 94,
+                                         "section": None, "quote": "p94"})])
+    B.apply_fact_corrections("D", facts, dec)
+    assert dec.unapplied and "re-extraction may have moved it" in dec.unapplied[0]["why"]
+
+
+def test_a_reextracted_row_is_not_settled_by_a_field_with_no_canonical():
+    """'The wrong one is gone' is not 'the right one is there'."""
+    facts = {"total_financing": [_cand("79,690,370 USD", 79_690_370.0,
+                                       status="supporting")]}
+    dec = B.Decisions([_entry(doc_id="D", reextracted=_reex(),
+                              wrong={"raw": "69,830,370 USD", "page": 5},
+                              corrected={"raw": "USD 79,690,370", "value": 79_690_370.0,
+                                         "currency": "USD", "unit": None, "page": 94,
+                                         "section": None, "quote": "p94"})])
+    B.apply_fact_corrections("D", facts, dec)
+    assert dec.unapplied and dec.unapplied[0]["id"] == "T01"
+
+
+@needs_decisions
+def test_the_reextracted_rows_name_the_run_that_produced_them():
+    """Every row that claims a re-extraction has to say which pages went, with
+    what, and what came back — the same standard the corrections themselves are
+    held to."""
+    corr = json.loads(CORRECTIONS.read_text(encoding="utf-8"))["corrections"]
+    reex = [e for e in corr if e.get("reextracted")]
+    assert {e["id"] for e in reex} == {"C63", "C65", "C66", "C69", "C70", "C71"}
+    for e in reex:
+        r = e["reextracted"]
+        assert r["model"] == "qwen/qwen2.5-vl-7b", e["id"]
+        assert r["pages"] and r["backups"], e["id"]
+        assert r["ran"].startswith("2026-08-26"), e["id"]
+        # what came back is recorded per page, and no page came back garbled
+        for page, got in r["outcome"].items():
+            assert got["garble_present"] == [], (e["id"], page)
+    # the one row the re-extraction MOVED rather than settled keeps the target
+    # it was ratified against, beside the one it now points at
+    moved = next(e for e in corr if e["id"] == "C63")
+    assert moved["wrong_before_reextraction"]["raw"] == "25,000,000 USD"
+    assert moved["wrong"]["raw"] != moved["wrong_before_reextraction"]["raw"]
+    assert "re_pointed" in moved["reextracted"]
+
+
+# --------------------------------------------------------------------------
+# reproducibility, and the reuse path that must not swallow a ratified row
+# --------------------------------------------------------------------------
+
+def test_the_arm_reports_the_same_nearest_figures_every_run():
+    """The nearest-figure list is chosen out of a SET, so ties broken by
+    iteration order would make the same corpus build to different bytes on
+    different runs. The build is a data product; it has to be reproducible."""
+    keys = {"79690370", "69830371", "69830379", "40690370", "39000000"}
+    first = B._nearest_figures("69830370", keys)
+    assert first == B._nearest_figures("69830370", set(reversed(sorted(keys))))
+    assert first == B._nearest_figures("69830370", keys)
+    assert first[0] in ("69830371", "69830379")     # both one edit away
+    assert first == sorted(first[:2]) + first[2:]   # ... and the tie is ordered
+
+
+def test_a_carried_forward_llm_candidate_comes_back_uncorrected():
+    """The reuse path saves model calls; it must not carry a ratified
+    correction forward. A candidate reused WITH its correction baked in is one
+    no correction row can find, so reusing the shipped registry would make its
+    own ratified rows stop landing, quietly, one rebuild at a time."""
+    shipped = {"raw": "19,710,637 USD", "value": 19_710_637.0, "currency": "USD",
+               "unit": None, "page": 46, "section": "corrected", "status": "supporting",
+               "corrected": True,
+               "corrected_from": {"raw": "**Total:** $222,000", "value": 222_000.0,
+                                  "currency": "USD", "unit": None, "page": 8,
+                                  "section": "llm", "status": "supporting"}}
+    back = B.uncorrected(shipped)
+    assert back == shipped["corrected_from"]
+    assert "corrected" not in back and back["section"] == "llm"
+    # an untouched candidate is carried through unchanged, and copied not aliased
+    plain = {"raw": "x", "section": "llm", "status": "supporting"}
+    assert B.uncorrected(plain) == plain and B.uncorrected(plain) is not plain

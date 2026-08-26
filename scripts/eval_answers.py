@@ -1273,7 +1273,8 @@ class Pipeline:
             history = [{"role": m["role"], "content": m["content"]}
                        for m in (turns or [])]
             return {"guard": False, "chat": True, "guard_answer": None,
-                    "hits": [], "confidence": None, "weak": False,
+                    "hits": [], "probe_hits": [], "confidence": None,
+                    "weak": False,
                     "plan": items, "decomposed": False, "system": system,
                     "context": "", "refs_note": None,
                     "user": question, "calls": calls,
@@ -1293,7 +1294,8 @@ class Pipeline:
             except Exception:
                 reg = None
             return {"guard": True, "chat": False, "guard_answer": guard,
-                    "hits": [], "system": None, "user": None, "weak": False,
+                    "hits": [], "probe_hits": [], "system": None, "user": None,
+                    "weak": False,
                     "plan": items, "decomposed": False, "calls": calls,
                     "notes": {"registry": reg, "year": None, "board": None,
                               "matrix": None}}
@@ -1323,16 +1325,9 @@ class Pipeline:
             year_note = (f"{year_note} {coverage_note}" if year_note
                          else coverage_note)
 
-        context = "\n\n".join(
-            f"[{app._doc_label(h.doc_id, h.page)}] (score {h.score:.2f})\n{h.text}"
-            for h in hits)
-        if year_note:
-            context = year_note + "\n\n" + context
-        if weak:
-            context = ("Note: retrieval confidence for this question is LOW — the "
-                       "excerpts below may not actually be relevant. Do not force an "
-                       "answer from marginal matches; say plainly that the corpus "
-                       "does not appear to cover this.\n\n") + context
+        # The note is computed before the context, as in main(): its CONFLICT
+        # lines decide whether the turn fetches a page by name. Where it is
+        # PRINTED is unchanged — prepended below, in the app's own order.
         reg_note = None
         try:
             reg_note = registry.registry_note(question)
@@ -1341,10 +1336,27 @@ class Pipeline:
             # turn is about — a follow-up spells no identifier and its resolved
             # query spells one. Same items retrieval just ran on.
             reg_note = app._extend_registry_note(reg_note, items)
-            if reg_note:
-                context = reg_note + "\n\n" + context
         except Exception:
             pass
+        # The conflict probe, on the app's own function at the app's own point
+        # in the turn — so a release record's excerpts are the excerpts
+        # production would have shipped, marker included. `getattr` because a
+        # duck-typed pipe (the wiring suites') carries no retriever, and a
+        # turn with no retriever is exactly the degradation case: no probe.
+        probe_hits = app._conflict_probe(
+            getattr(self, "retriever", None), reg_note, hits, question)
+        if probe_hits:
+            hits = probe_hits + hits
+        context = app._context_block(hits, probe_hits)
+        if year_note:
+            context = year_note + "\n\n" + context
+        if weak:
+            context = ("Note: retrieval confidence for this question is LOW — the "
+                       "excerpts below may not actually be relevant. Do not force an "
+                       "answer from marginal matches; say plainly that the corpus "
+                       "does not appear to cover this.\n\n") + context
+        if reg_note:
+            context = reg_note + "\n\n" + context
         if matrix_block:
             # ABOVE the registry note and the excerpts, as in the app: the
             # matrix is the complete half of the evidence.
@@ -1362,6 +1374,10 @@ class Pipeline:
         return {
             "guard": False, "chat": False, "guard_answer": None, "hits": hits,
             "confidence": conf, "weak": weak, "plan": items, "calls": calls,
+            # what the probe added, separately from the ranked hits it rides
+            # with: the caller can see WHICH excerpts were fetched by page
+            # without re-deriving it from the note.
+            "probe_hits": probe_hits,
             "decomposed": decomposed,
             "system": system,
             "context": context,
