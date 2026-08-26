@@ -323,10 +323,30 @@ def test_p4s_question_now_carries_its_own_answer():
     assert totals[2021] > totals[2020]
     # Re-pinned 2026-08-26 after the Phase 3 rebuild: corrected FP169/FP163
     # move 2021 down, recovered/corrected rows move 2020 up - ratio 1.65.
+    # Re-pinned again 2026-08-26 (cross-check round) - ratio 1.79. Both totals
+    # rise, and every mover is a ratified row; the two deltas reconcile to the
+    # cent, which is why they are worth listing rather than just re-typing:
+    #   2020  21 -> 22 rows, +USD 103,734,030.00
+    #     C115 FP153 [122_gcf-b27-02-add13]  unreadable -> 26,654,000  (joins)
+    #     C116 FP140 [135_gcf-b26-02-add12]  180,890,000 -> 258,030,000
+    #     C118 FP136 [139_gcf-b26-02-add08]  165,237,562 -> 165,237,592
+    #     C119 FP126 [149_gcf-b25-02-add03]  38,266,790.80 -> 38,206,790.80
+    #     (C117 moves FP138 too, but it is EUR and stays excluded either way)
+    #   2021  25 -> 26 rows, +USD 391,429,900.00
+    #     C107 FP173 [102_gcf-b30-02-add05]  23,600,000 -> 279,000,000
+    #     C108 FP169 [106_gcf-b30-02-add01]  18,591,556 -> 16,591,556
+    #     C111 FP164 [111_gcf-b28-02-add11]  132,000,000 -> 137,000,000
+    #     C68  FP162 [113_gcf-b28-02-add09]  unreadable -> 82,849,900  (joins)
+    #     C112 FP161 [114_gcf-b28-02-add08]  26,787,986 -> 52,767,986
+    #     C113 FP158 [117_gcf-b28-02-add05]  35,600,000 -> 36,800,000
+    #     C114 FP154 [121_gcf-b28-02-add01-rev01] 172,000,000 -> 175,000,000
+    #     C146 FP178 [97_gcf-b30-02-add10]   130,000,000 -> 150,000,000
+    #     (C109 moves FP168, but it is unreadable before and after)
+    # The DIRECTION P4 inverted is unchanged: 2021 is still the larger year.
     assert 1.5 < totals[2021] / totals[2020] < 2
     # and the figures themselves, pinned against the checksummed registry
-    assert "those 21 total USD 1,439,333,957.80" in note
-    assert "those 25 total USD 2,369,404,247.26" in note
+    assert "those 22 total USD 1,543,067,987.80" in note
+    assert "those 26 total USD 2,760,834,147.26" in note
 
 
 @pytest.mark.parametrize("year", [2020, 2021])
@@ -359,13 +379,25 @@ def test_the_recorded_exclusion_lists():
     line20 = _year_total_line(2020, _year_rows(2020))
     # Re-pinned 2026-08-26 (Phase 3 rebuild): FP150 normalised, FP125/FP127
     # gained the honest currency-not-stated reason, 3 figures recovered.
+    # Re-pinned 2026-08-26 (cross-check round): FP153 leaves the list. C115
+    # corrects [122_gcf-b27-02-add13] from '28,654 million USD' — a mantissa
+    # and a scale word that cannot both be true, which is what put it here — to
+    # '26.654 million USD', so it parses and joins the total. Nothing else on
+    # the 2020 list moves: FP132/FP138 are still EUR, FP125/FP127 still print
+    # no currency, FP142 is still an un-normalised print, and the three silent
+    # proposals are still silent.
     assert ("excluded from this total: FP132, FP138 (EUR), FP125, FP127 "
-            "(currency not stated), FP153 (unit as printed is ambiguous), "
+            "(currency not stated), "
             "FP142 (figure printed above but not normalised), 3 proposals "
             "stating no figure — the figures "
             "listed above for them stand as printed.") in line20
     line21 = _year_total_line(2021, _year_rows(2021))
-    assert ("excluded from this total: FP176 (EUR), FP162, FP168 (unit as "
+    # Re-pinned 2026-08-26 (cross-check round): FP162 leaves the list for the
+    # same reason FP153 leaves the 2020 one — C68 (serving wave, value-fix)
+    # keeps the print '82,849 million USD' and repairs only the parsed scale,
+    # so [113_gcf-b28-02-add09] normalises to 82,849,900 and joins the total.
+    # FP176 (EUR) and FP168 (still unreadable, C109) stay.
+    assert ("excluded from this total: FP176 (EUR), FP168 (unit as "
             "printed is ambiguous) — the figures listed above for them "
             "stand as printed.") in line21
 

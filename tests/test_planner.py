@@ -573,5 +573,16 @@ def test_gate_fp214_vs_fp274_currency_and_conflicts():
     assert {x["page"] for x in b.conflicts} == {8, 40}
     out = render(m)
     assert "EUR 38.17 million (p.114, rule C.1(a))" in out
-    assert "USD 40,511,264 (p.7, A.8)" in out
+    # Re-pinned 2026-08-26 (cross-check round): C103 corrects FP274's canonical
+    # GCF request on p.7 from '40,511,264 USD' to '40,751,264 USD' — the
+    # independent pymupdf extraction of the cited page prints
+    # 'A.8 / B.2(b) — "40,751,264 _____ USD"' and the qwen markdown the store
+    # cited misread it. The section prints 'corrected' rather than 'A.8'
+    # because the ratified row carries no section of its own.
+    # Everything the ROW is about is unchanged and still asserted above: the
+    # cell is still USD/p.7/contradictory, and the two conflicting pages are
+    # still {8, 40}. C83 corrects the p.8 figure too, but in
+    # `financial_instruments`, so the gcf_funding_requested conflict candidate
+    # on that page still reads 49,751,264 and the conflict does not dissolve.
+    assert "USD 40,751,264 (p.7, corrected)" in out
     assert not m.comparable("gcf_funding_requested").ok

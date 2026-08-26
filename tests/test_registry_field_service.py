@@ -584,14 +584,64 @@ def test_a_field_the_corpus_contradicts_is_not_also_served(real):
     assert "indirect beneficiaries: 147,039" in note
 
 
+#: The two documents whose ``llm_fallback`` flag the builder's reuse path
+#: dropped, and which the SHIPPED registry therefore publishes with no
+#: extraction caveat on them. Both are two-page board notices: the
+#: deterministic parser finds no financing fact, the model is called, and
+#: nothing it returns survives verification, so the previous build flagged
+#: them with zero llm candidates to carry — and the reuse path used to set the
+#: flag only in the branch that had a candidate.
+#:
+#: The defect is FIXED in ``scripts/build_registry_v2.carry_forward_llm``
+#: (the flag is now carried from the reuse seed independent of candidate
+#: survival, pinned by
+#: ``test_registry_v2.py::test_the_reuse_path_keeps_the_flag_of_a_call_that_returned_nothing``),
+#: and a rebuild on the fixed builder restores both: measured on a scratch
+#: build seeded from the pre-loss registry, llm_fallback 17 -> 19, nothing
+#: else moved. The shipped ``data/registry_v2.json`` is a build product and is
+#: not hand-edited, so the restoration lands with the next registry rebuild
+#: and this pin moves 19 -> 21 THEN, loudly, in one traced step.
+FLAG_PENDING_A_REBUILD = ("193_gcf-b22-10-add01-rev01", "196_gcf-b19-22-add21-rev01")
+
+
 def test_the_flagged_documents_are_the_ones_the_registry_flags(real):
+    """THE CENSUS, TRACED. Every count here has a reason on the record:
+
+      2  suspect (`gcf>total`), disjoint from the fallback set —
+         `201_gcf-b19-22-add16-rev01` (22.50 million USD requested against
+         $2 million total, the long-standing one) and
+         `27_gcf-b40-02-add11-funding-proposal-package-fp249`, which is NEW
+         and is the system working: ratified correction C129 reads FP249's
+         A.8 as 'USD 29.25 million' where the store had a single-digit
+         misread, and 29.25 > the document's own A.7 total of USD 29 million.
+         The detector is reporting a real anomaly the correction surfaced; it
+         is not a regression in the detector.
+
+     17  llm_fallback, i.e. documents whose values came from the fallback
+         extraction and which say so on their line. NINETEEN calls were made;
+         two of the nineteen are `FLAG_PENDING_A_REBUILD` above, whose flag
+         the reuse defect dropped out of the shipped file and whose
+         restoration is a rebuild away.
+
+     19  flagged in total, and `registry._extraction_flags` publishes exactly
+         that set — which is the property this test exists for: the caveat a
+         reader sees on a line is the caveat the store recorded, with no
+         second opinion in between.
+    """
     v2 = json.loads((ROOT / "data" / "registry_v2.json").read_text())["documents"]
-    flagged = {s for s, r in v2.items()
-               if (r.get("coverage") or {}).get("suspect")
-               or (r.get("coverage") or {}).get("llm_fallback")}
+    suspect = {s for s, r in v2.items() if (r.get("coverage") or {}).get("suspect")}
+    fallback = {s for s, r in v2.items()
+                if (r.get("coverage") or {}).get("llm_fallback")}
+    flagged = suspect | fallback
     said = {s for s in real.load() if real._extraction_flags(s)}
     assert said == flagged
-    assert len(flagged) == 20            # 1 suspect + 19 llm_fallback, disjoint
+    assert not suspect & fallback, sorted(suspect & fallback)
+    assert len(suspect) == 2, sorted(suspect)
+    assert len(fallback) == 17, sorted(fallback)
+    assert len(flagged) == 19
+    # named, not counted: the two the reuse defect unflagged are still
+    # unflagged in the shipped build, and nothing else is missing from it
+    assert set(FLAG_PENDING_A_REBUILD).isdisjoint(flagged)
 
 
 # --------------------------------------------------------------------------
@@ -810,7 +860,17 @@ def test_the_reader_reaches_every_published_absence(real):
                  for s, r in v2.items()
                  if (r.get("meta") or {}).get("confirmed_absence")}
     assert {s: set(real._absences(s)) for s in published} == published
-    assert len(published) == 16 and sum(len(v) for v in published.values()) == 48
+    # Re-pinned 2026-08-26: 48 -> 46 field-absences over the same 16 documents.
+    # Both losses are the serving wave's two RBP add-candidate rows doing
+    # exactly what they were ratified to do — "stop a ratified absence and a
+    # ratified top-level print from both being live at once":
+    #   * C73 FP100 [175_gcf-b22-10-add02] adds 'GCF RBP: 96,452,228', so
+    #     gcf_funding_requested is no longer a confirmed absence there;
+    #   * C74 FP142 [133_gcf-b27-02-add02] adds 'Total Budget | $82,000,000',
+    #     same field, same effect.
+    # The DOCUMENT count is unchanged at 16 — each of the two keeps its
+    # total_financing absence — and the field vocabulary below is unchanged.
+    assert len(published) == 16 and sum(len(v) for v in published.values()) == 46
     assert set().union(*published.values()) == {
         "title", "countries", "accredited_entity",
         "gcf_funding_requested", "total_financing"}

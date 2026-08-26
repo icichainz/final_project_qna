@@ -121,7 +121,7 @@ import re
 import sys
 import time
 from pathlib import Path
-from typing import Dict, List, Optional, Tuple
+from typing import Dict, List, Optional, Sequence, Tuple
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 
@@ -1873,6 +1873,17 @@ _FIGURE_SPACED = re.compile(r"\d[\d.,\s]*\d")
 # below this a page carries no readable text layer (scan, or a page the
 # extractor dropped): unknown, not absent
 _MIN_INDEP_CHARS = 80
+# a superscript footnote marker the text layer glued to a figure is 1-2 digits
+# and is never 0 or 0-led: '7', '10', '39' — never '0' or '00', because
+# stripping a trailing zero is a change of MAGNITUDE ('49,944,050' against
+# '4,994,405'), which is exactly the class of error the arm exists to catch
+_GLUE_MARKER = re.compile(r"[1-9]\d?$")
+# and never chew a key down to something too short to mean anything
+_MIN_GLUE_KEY = 3
+# a number whose thousands are grouped with spaces, and unmistakably that: a
+# 1-3 digit head, 3-digit groups after it, and no digit or separator touching
+# either end. '27 054' / '55 000 000' match; '1,234 5,678' does not
+_SPACED_THOUSANDS = re.compile(r"(?<![\d.,])\d{1,3}(?:[  ]\d{3})+(?:[.,]\d+)?(?![\d.,])")
 
 
 def independent_pages(doc_id: str, root: Optional[Path] = None) -> Optional[Dict[int, str]]:
@@ -1902,6 +1913,53 @@ def figure_keys(text: str, spaced: bool = False) -> set:
         out |= {_figure_key(m.group(0)) for m in _FIGURE_SPACED.finditer(text)}
     out.discard(None)
     return out
+
+
+def unsplit_thousands(text: str) -> str:
+    """Close the space inside a space-GROUPED number, and nothing else.
+
+    A store raw prints a figure the way the markdown did, and the markdown
+    prints what the form's cell held: '27 054 | million USD' is one number with
+    a space inside it. Keyed strictly it becomes the fragments '27' and '54',
+    and comparing a fragment is worse than not comparing at all — FP68 was
+    flagged against its own correct figure, because '54' is not on its page and
+    27054 is.
+
+    The page side may join any run of digits and spaces (`_FIGURE_SPACED`)
+    because a text layer breaks numbers anywhere. The candidate side may not:
+    joining '1,234 5,678' into 12345678 would invent a figure and could confirm
+    the store against a page that prints no such thing. So only a WELL-FORMED
+    thousands grouping closes here — a 1-3 digit head, then 3-digit groups, not
+    touching a digit or separator at either end. '27 054' and '55 000 000'
+    qualify; '1,234 5,678' does not, and stays two figures.
+    """
+    return _SPACED_THOUSANDS.sub(lambda m: re.sub(r"[  ]", "", m.group(0)), text)
+
+
+def glued_footnote_key(keys: set, page_keys: set) -> Optional[str]:
+    """The page key that IS one of `keys` with a footnote marker glued to it.
+
+    A PDF text layer renders a superscript beside a figure as more digits:
+    '880,000,000' + marker 7 comes out '880,000,0007'; marker 4 + '152,500,000'
+    comes out '4152,500,000'; '580.0' + marker 10 comes out '580.010'. Three of
+    the eight false positives the cross-check census turned up are this and
+    nothing else.
+
+    Deliberately narrow: strip 1-2 digits off ONE end, require what remains to
+    equal a candidate key EXACTLY, and require the stripped digits to look like
+    a marker (1-99, never 0-led). No substring test and no edit distance, so
+    two genuinely different figures can never meet here.
+    """
+    for pk in sorted(page_keys):                 # sorted: a total order, so the
+        for n in (1, 2):                         # same build reports the same key
+            if len(pk) - n < _MIN_GLUE_KEY:
+                continue
+            for marker, rest in ((pk[:n], pk[n:]), (pk[-n:], pk[:-n])):
+                if not _GLUE_MARKER.fullmatch(marker):
+                    continue
+                if (rest.lstrip("0") or "0") in keys:
+                    return pk
+    return None
 
 
 def _prints_the_value(cand: dict, body: str) -> bool:
@@ -1946,7 +2004,10 @@ def _nearest_figures(key: str, page_keys: set, limit: int = 3) -> List[str]:
 def cross_check_candidate(cand: dict, pages: Dict[int, str],
                           doc_keys: Optional[set] = None) -> Tuple[str, dict]:
     """One candidate against the independent extraction. Returns (verdict, detail)."""
-    keys = figure_keys(cand.get("raw", "").split("\n")[0])
+    # the raw's own space-grouped thousands are closed first, so the candidate
+    # is checked on the figure it prints rather than on a fragment of it
+    line = unsplit_thousands(cand.get("raw", "").split("\n")[0])
+    keys = figure_keys(line)
     if not keys:
         return "no-figure", {}
     body = pages.get(cand.get("page"))
@@ -1955,6 +2016,8 @@ def cross_check_candidate(cand: dict, pages: Dict[int, str],
     page_keys = figure_keys(body, spaced=True)
     if keys & page_keys:
         return "confirmed-print", {}
+    if glued_footnote_key(keys, page_keys):
+        return "confirmed-footnote-glue", {}
     if _prints_the_value(cand, body):
         return "confirmed-value", {}
     figure = max(keys, key=len)
@@ -2116,6 +2179,68 @@ def uncorrected(cand: dict) -> dict:
     return dict(cand.get("corrected_from") or cand)
 
 
+def carry_forward_llm(paths: List[Path], docs: Dict[str, dict],
+                      previous: Dict[str, dict],
+                      empty: Sequence[Path]) -> Tuple[List[Path], int]:
+    """Merge a previous build's fallback pass into this one: ``(todo, reused)``.
+
+    Carry forward EVERY verified fallback candidate the previous build
+    published, not only those of documents that are still empty: when a parser
+    improvement gives a document its first deterministic financing fact, the
+    title/countries/entity the model had already verified for it must not be
+    deleted as a side effect (b21-10-add06, b19-22-add09).
+
+    THE FLAG IS A CALL RECORD, NOT A CANDIDATE COUNT — and that is the defect
+    this function was extracted to close. On a fresh build ``llm_fallback()``
+    sets ``coverage.llm_fallback = True`` for every document it SENDS to the
+    model, before it knows whether anything came back: a call that returns
+    nothing verifiable (every candidate dropped by the ``raw not in page``
+    check) still flags the document, because what the flag tells a reader is
+    "the deterministic parser found nothing here and the model was asked",
+    which is exactly the caveat ``registry._extraction_flags`` publishes on
+    the line.
+
+    The reuse path used to set the flag only inside the branch that had
+    candidates to carry, so a document whose call produced NOTHING lost its
+    flag on the next rebuild — silently, and permanently, since a stem present
+    in ``previous`` is also never re-queued in ``todo``. Two documents lost it
+    that way: ``193_gcf-b22-10-add01-rev01`` and
+    ``196_gcf-b19-22-add21-rev01``, both two-page board notices with no
+    template block, both flagged at HEAD and both unflagged after a reuse
+    rebuild. The registry then published their lines with no caveat at all.
+
+    So the flag is now carried from the reuse seed FIRST, independent of
+    whether any candidate survived, and the candidate merge only ever adds to
+    it. The seed row's own ``coverage.llm_fallback`` is the ledger of the call
+    — it is what the fresh build wrote down at call time — so reuse is
+    faithful to the fresh build by construction rather than by coincidence.
+    """
+    todo: List[Path] = []
+    reused = 0
+    empty_paths = set(empty)
+    for path in paths:
+        seed = previous.get(path.stem) or {}
+        if ((seed.get("coverage") or {}).get("llm_fallback")):
+            docs[path.stem]["coverage"]["llm_fallback"] = True
+        # a correction MOVES the section ('llm' -> 'corrected'), so a
+        # carried-forward candidate is recognised by where it came from as
+        # well as by where it is now
+        old = [(f, c) for f, cs in (seed.get("facts") or {}).items()
+               for c in cs
+               if c.get("section") == "llm"
+               or (c.get("corrected_from") or {}).get("section") == "llm"]
+        if not old:
+            if path in empty_paths and path.stem not in previous:
+                todo.append(path)
+            continue
+        for f, c in old:
+            docs[path.stem]["facts"].setdefault(f, []).append(uncorrected(c))
+        docs[path.stem]["coverage"]["llm_fallback"] = True
+        docs[path.stem]["coverage"]["fields"] = len(docs[path.stem]["facts"])
+        reused += 1
+    return todo, reused
+
+
 def llm_fallback(paths: List[Path], docs: Dict[str, dict], max_calls: int) -> Tuple[int, int]:
     """Second pass for documents where the deterministic pass found nothing."""
     if not paths:
@@ -2253,29 +2378,7 @@ def main() -> None:
         prev_path = Path(a.reuse_llm_from)
         if prev_path.exists() and not a.force_llm:
             previous = json.loads(prev_path.read_text(encoding="utf-8")).get("documents", {})
-        # Carry forward EVERY verified fallback candidate the previous build
-        # published, not only those of documents that are still empty: when a
-        # parser improvement gives a document its first deterministic financing
-        # fact, the title/countries/entity the model had already verified for it
-        # must not be deleted as a side effect (b21-10-add06, b19-22-add09).
-        todo = []
-        for p in paths:
-            # a correction MOVES the section ('llm' -> 'corrected'), so a
-            # carried-forward candidate is recognised by where it came from as
-            # well as by where it is now
-            old = [(f, c) for f, cs in (previous.get(p.stem, {}).get("facts") or {}).items()
-                   for c in cs
-                   if c.get("section") == "llm"
-                   or (c.get("corrected_from") or {}).get("section") == "llm"]
-            if not old:
-                if p in empty and p.stem not in previous:
-                    todo.append(p)
-                continue
-            for f, c in old:
-                docs[p.stem]["facts"].setdefault(f, []).append(uncorrected(c))
-            docs[p.stem]["coverage"]["llm_fallback"] = True
-            docs[p.stem]["coverage"]["fields"] = len(docs[p.stem]["facts"])
-            reused += 1
+        todo, reused = carry_forward_llm(paths, docs, previous, empty)
         print(f"llm fallback: {len(empty)} documents with no deterministic financing fact "
               f"| {reused} reused from the previous build | {len(todo)} to call "
               f"(cap {MAX_LLM_CALLS})")

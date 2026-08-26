@@ -7,6 +7,7 @@ registry._cache_v2, the parallel of the v1 registry._cache pattern.
 """
 import importlib.util
 import json
+from collections import Counter
 from pathlib import Path
 
 import pytest
@@ -1297,14 +1298,27 @@ def test_the_ratified_files_say_what_they_are():
     corr = json.loads(CORRECTIONS.read_text(encoding="utf-8"))
     absc = json.loads(ABSENCES.read_text(encoding="utf-8"))
     # 58 wrong + 4 phase-3 riders + the 12 serving-wave rows
-    assert corr["count"] == len(corr["corrections"]) == 74
+    # + the 117 cross-check-session rows (the 114 STORE-WRONG rows of the
+    # cross-extractor census, two further add-candidate rows where the ratified
+    # action names a second printed row, and the one AMBIGUOUS row adjudicated
+    # wrong either way with no ratified replacement)
+    assert corr["count"] == len(corr["corrections"]) == 191
+    xc = [e for e in corr["corrections"]
+          if e["ratified"] == "owner, 2026-08-26 (cross-check session)"]
+    assert len(xc) == 117
+    assert Counter(e["action"] for e in xc) == {
+        "correct-to": 112, "add-candidate": 3, "drop-candidate": 1, "re-extract": 1}
+    # the eight STORE-RIGHT rows of that census were ARM false positives and get
+    # no correction at all — the arm's two defects were fixed instead
+    assert not [e for e in xc if e["row_ref"]["verdict"] == "STORE-RIGHT"]
     riders = [e for e in corr["corrections"] if "rider" in e["row_ref"]]
     assert len(riders) == 4
     assert {e["ratified"] for e in riders} == {"owner, 2026-08-26 (rider session)"}
     assert {e["row_ref"]["verdict"] for e in riders} == {"CONFIRMED"}
     # each session names the adjudication it came from, and nothing else does
     assert [s["session"] for s in corr["sources"]] == [
-        "owner, 2026-08-26", "owner, 2026-08-26 (serving-wave session)"]
+        "owner, 2026-08-26", "owner, 2026-08-26 (serving-wave session)",
+        "owner, 2026-08-26 (cross-check session)"]
     assert absc["count"] == len(absc["absences"]) == 51
     assert absc["superseded"] == 1                     # see the test above
     assert len(absc["corpus_level"]) == 1
@@ -1320,7 +1334,8 @@ def test_every_correction_carries_its_adjudication_row_and_its_quote():
     for e in json.loads(CORRECTIONS.read_text(encoding="utf-8"))["corrections"]:
         assert e["row_ref"]["pointer"].startswith("rows[")
         assert e["row_ref"]["file"].endswith(("phase3_adjudication.json",
-                                              "serving_wave_adjudication.json"))
+                                              "serving_wave_adjudication.json",
+                                              "cross_check_adjudication.json"))
         assert e["action"] in {"correct-to", "value-fix", "reclassify", "promote",
                                "confirm-absence", "re-extract", "add-candidate",
                                "drop-candidate"}
@@ -2006,6 +2021,116 @@ def test_the_arm_does_not_flag_a_misfiling_because_the_figure_is_printed(
     assert verdict.startswith("confirmed"), (stem, verdict)
 
 
+# --- the two arm defects the cross-check census found, and their eight
+# --- named false positives ------------------------------------------------
+
+@pytest.mark.parametrize("text,closed", [
+    ("27 054 | million USD", "27054 | million USD"),   # FP68's own raw
+    ("55 000 000 USD", "55000000 USD"),
+    ("96 953 million USD", "96953 million USD"),
+    ("1,234 5,678", "1,234 5,678"),        # two figures, NOT one: never joined
+    ("49,944,050 USD", "49,944,050 USD"),  # nothing to close
+    ("page 5 of 99", "page 5 of 99"),
+])
+def test_a_candidates_space_grouped_thousands_close_and_nothing_else_does(text, closed):
+    """Defect (a). The page side may join any run of digits and spaces because
+    a text layer breaks numbers anywhere; the candidate side may only close a
+    well-formed thousands grouping, or joining could invent the very figure the
+    check is meant to test."""
+    assert B.unsplit_thousands(text) == closed
+
+
+@pytest.mark.parametrize("cand_key,page_key,hit", [
+    ("152500000", "4152500000", True),    # FP223: marker 4 glued in front
+    ("880000000", "8800000007", True),    # FP190: marker 7 glued behind
+    ("5800", "580010", True),             # FP65:  marker 10 glued behind
+    ("790", "7900", False),               # a TRAILING ZERO is a magnitude, not
+    ("4994405", "49944050", False),       # a marker: 79.0/79.00, 4,994,405/49,944,050
+    ("12345", "123456789", False),        # more than a marker's worth of digits
+    ("49", "4917", False),                # never chew a key below three digits
+])
+def test_only_a_footnote_marker_sized_glue_is_forgiven_on_the_page_side(
+        cand_key, page_key, hit):
+    """Defect (b). Strip 1-2 digits off ONE end, require the remainder to equal
+    the candidate's key EXACTLY, and require the stripped digits to look like a
+    superscript (1-99, never 0-led). No substring test, no edit distance."""
+    assert bool(B.glued_footnote_key({cand_key}, {page_key})) is hit
+
+
+# The eight canonical money facts the 2026-08-26 cross-check census adjudicated
+# STORE-RIGHT: the store is right and the ARM was the misreader. Four are the
+# two ratified defects and must not flag again. Four are not: the census names
+# them as classes the arm cannot see at all, and they are pinned here as they
+# stand so that fixing them is a visible decision rather than a drift.
+_FALSE_POSITIVES = [
+    # (stem, field, raw, page, value, still_flags, why)
+    ("207_gcf-b19-22-add10", "gcf_funding_requested", "27 054 | million USD", 11,
+     None, False, "defect (a): the raw's own '27 054' keyed as the fragment '54'"),
+    ("52_gcf-b37-02-add14-funding-proposal-package-fp223", "gcf_funding_requested",
+     "152,500,000 USD", 5, 152_500_000.0, False,
+     "defect (b): the text layer prints '4152,500,000' — marker 4 glued in front"),
+    ("85_gcf-b33-02-add04_0", "total_financing", "880,000,000 USD", 5,
+     880_000_000.0, False,
+     "defect (b): the text layer prints '880,000,0007' — marker 7 glued behind"),
+    ("210_gcf-b19-22-add07", "co_financing", "$580.0 million USD", 14,
+     580_000_000.0, False,
+     "defect (b): the text layer prints '580.010' — marker 10 glued behind"),
+    ("169_gcf-b22-10-add10-rev01", "co_financing", "USD 437 million", 14,
+     437_000_000.0, True,
+     "NOT a defect: 437 is the SUM of the page's four co-financing rows "
+     "(260+58+77+42) and is printed nowhere as one token. An arm keyed on "
+     "figures cannot see a derived figure"),
+    ("220_gcf-b18-04-add10-rev01", "co_financing", "USD 74.1 million", 9,
+     74_100_000.0, True,
+     "NOT a defect: 74.1 is derived too — (a) 118.6 - (b) 44.5"),
+    ("228_gcf-b18-04-add02", "gcf_funding_requested", "USD 110,000,000", 9,
+     110_000_000.0, True,
+     "NOT a defect: the page prints '110' with 'million USD ($)' on the NEXT "
+     "line, so the value check cannot bind the scale word to the figure"),
+    ("164_gcf-b23-02-add05", "total_financing", "79.0 | million USD", 12,
+     79_000_000.0, True,
+     "NOT a defect: '79.0' against the page's '79.00'. Keys carry no decimal "
+     "point, so forgiving this would forgive 4,994,405 against 49,944,050"),
+]
+
+
+@needs_corpus
+@needs_independent
+@pytest.mark.parametrize(
+    "stem,field,raw,page,value,still_flags,why",
+    _FALSE_POSITIVES, ids=[f"{r[0].split('_')[0]}-{r[1][:4]}" for r in _FALSE_POSITIVES])
+def test_the_census_false_positives_land_where_the_adjudication_put_them(
+        stem, field, raw, page, value, still_flags, why):
+    pages = B.independent_pages(stem)
+    assert pages, stem
+    cand = {"raw": raw, "value": value, "currency": None, "unit": None,
+            "page": page, "section": "x", "status": "canonical"}
+    verdict, _ = B.cross_check_candidate(
+        cand, pages, B.figure_keys("\n".join(pages.values()), spaced=True))
+    if still_flags:
+        assert verdict in B.CROSS_CHECK_FLAGS, (stem, verdict, why)
+    else:
+        assert verdict.startswith("confirmed"), (stem, verdict, why)
+
+
+@needs_corpus
+@needs_independent
+def test_the_defect_fixes_did_not_blind_the_arm_to_a_real_misread():
+    """The split-number fix must make the arm read the candidate's figure, not
+    stop checking it: FP236's '96 953 million USD' closes to 96953, which the
+    page still does not print — it prints 90.953. Sensitivity, not amnesty."""
+    stem = "40_gcf-b39-02-add11-funding-proposal-package-fp236"
+    pages = B.independent_pages(stem)
+    if not pages:                                   # pragma: no cover
+        pytest.skip(f"{stem} has no independent extraction")
+    cand = {"raw": "96 953 million USD", "value": None, "currency": "USD",
+            "unit": None, "page": 5, "section": "x", "status": "canonical"}
+    verdict, detail = B.cross_check_candidate(
+        cand, pages, B.figure_keys("\n".join(pages.values()), spaced=True))
+    assert verdict in B.CROSS_CHECK_FLAGS, (verdict, detail)
+    assert detail["figure"] == "96953"               # the figure, not '96' or '953'
+
+
 @needs_corpus
 @needs_independent
 def test_every_document_in_the_corpus_has_an_independent_extraction_to_check():
@@ -2111,7 +2236,11 @@ def test_the_reextracted_rows_name_the_run_that_produced_them():
     held to."""
     corr = json.loads(CORRECTIONS.read_text(encoding="utf-8"))["corrections"]
     reex = [e for e in corr if e.get("reextracted")]
-    assert {e["id"] for e in reex} == {"C63", "C65", "C66", "C69", "C70", "C71"}
+    # C47/C48/C77 are the cross-check session's own p9 re-extraction of
+    # 177_gcf-b21-10-add20: two rows of the FIRST session whose targets that page
+    # carried, and the row that supersedes one of them
+    assert {e["id"] for e in reex} == {"C63", "C65", "C66", "C69", "C70", "C71",
+                                       "C47", "C48", "C77"}
     for e in reex:
         r = e["reextracted"]
         assert r["model"] == "qwen/qwen2.5-vl-7b", e["id"]
@@ -2161,3 +2290,76 @@ def test_a_carried_forward_llm_candidate_comes_back_uncorrected():
     # an untouched candidate is carried through unchanged, and copied not aliased
     plain = {"raw": "x", "section": "llm", "status": "supporting"}
     assert B.uncorrected(plain) == plain and B.uncorrected(plain) is not plain
+
+
+#: The two documents whose ``llm_fallback`` flag the reuse path used to drop.
+#: Both are two-page board notices with no A.x/B.2/C.1 template block: the
+#: deterministic parser finds nothing, the model is called, and the model
+#: returns nothing that survives the ``raw not in page`` verification. A fresh
+#: build flags them (the call happened); the reuse path only set the flag
+#: inside the branch that had a candidate to carry, so the flag disappeared on
+#: the first rebuild and could never come back — a stem already present in the
+#: seed is never re-queued for a call either. The registry then published both
+#: lines with no extraction caveat on them at all.
+CALLED_AND_EMPTY = ("193_gcf-b22-10-add01-rev01", "196_gcf-b19-22-add21-rev01")
+
+
+def _seed_row(**coverage):
+    return {"facts": {}, "coverage": {"era": "board notice (not a proposal "
+                                      "template)", "pages": 2, "fields": 1,
+                                      **coverage}}
+
+
+def test_the_reuse_path_keeps_the_flag_of_a_call_that_returned_nothing():
+    """THE FLAG IS A CALL RECORD, NOT A CANDIDATE COUNT.
+
+    ``llm_fallback()`` sets it on every document it SENDS to the model, before
+    it knows whether anything verifiable comes back; ``registry.
+    _extraction_flags`` publishes it as 'the values on this line came from a
+    fallback extraction'. A reuse rebuild that conditions the flag on a
+    surviving candidate therefore un-says something the build said, for
+    exactly the documents where the caveat matters most: the ones the model
+    could not read either.
+
+    Both real documents are named, and both directions are pinned — the flag
+    survives with no candidates, and a document the previous build never
+    called does not acquire one.
+    """
+    paths = [Path(f"{stem}.md") for stem in CALLED_AND_EMPTY]
+    paths.append(Path("never_called.md"))
+    docs = {p.stem: {"facts": {}, "coverage": {"llm_fallback": False}}
+            for p in paths}
+    previous = {stem: _seed_row(llm_fallback=True) for stem in CALLED_AND_EMPTY}
+    previous["never_called"] = _seed_row(llm_fallback=False)
+
+    todo, reused = B.carry_forward_llm(paths, docs, previous, empty=paths)
+
+    for stem in CALLED_AND_EMPTY:
+        assert docs[stem]["coverage"]["llm_fallback"] is True, stem
+    assert docs["never_called"]["coverage"]["llm_fallback"] is False
+    # no candidate was carried, so nothing counts as reused ...
+    assert reused == 0
+    # ... and no call is re-spent: every stem is already in the seed
+    assert todo == []
+
+
+def test_the_reuse_path_still_carries_candidates_and_still_queues_new_work():
+    """The other two arms of the same function, so the flag fix cannot be
+    mistaken for a relaxation of either: a seed candidate is merged (and the
+    flag comes with it), and a document that is empty and unknown to the seed
+    is queued for a call."""
+    carried = Path("188_gcf-b21-10-add06.md")
+    fresh = Path("999_new-and-empty.md")
+    docs = {p.stem: {"facts": {}, "coverage": {"llm_fallback": False}}
+            for p in (carried, fresh)}
+    previous = {carried.stem: {"coverage": {"llm_fallback": True}, "facts": {
+        "title": [{"raw": "A Title", "section": "llm", "status": "supporting"}]}}}
+
+    todo, reused = B.carry_forward_llm([carried, fresh], docs, previous,
+                                       empty=[carried, fresh])
+
+    assert reused == 1
+    assert docs[carried.stem]["coverage"]["llm_fallback"] is True
+    assert docs[carried.stem]["facts"]["title"][0]["raw"] == "A Title"
+    assert docs[carried.stem]["coverage"]["fields"] == 1
+    assert todo == [fresh]

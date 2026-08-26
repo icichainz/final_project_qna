@@ -1613,19 +1613,28 @@ def test_the_real_fp152_row_is_not_contradicted_by_its_own_annex():
     — no monkeypatch, so this row fails if `data/registry_v2.json` stops
     filing the p.55 print `supporting`.
 
-    FP152 prints 'A7. Total financing (SCF + co-finance) 720 M USD' on p.5 and
+    FP152 prints 'A7. Total financing (SCF + co-finance) 750 M USD' on p.5 and
     '(a) Total project financing: $100,000,000' on p.55, inside an E.2.2
     cost-per-tonne calculation whose next line reads '(b) Expected GCF
     contribution: $75,000,000' — half the programme's own 150 M USD, which is
     what makes the block a per-project template row rather than the programme
-    total. Same words, different scope."""
-    ev = {(DOC2, 5): "## A7. Total financing (SCF + co-finance) 720 M USD\n"
+    total. Same words, different scope.
+
+    Re-pinned 2026-08-26 (cross-check round): the A7 figure is 750 M, not 720 M
+    — C159 corrects [123_gcf-b27-02-add12] p.5 on the independent extraction of
+    that page, the qwen markdown the store cited having misread a single digit.
+    THE PREMISE IS UNCHANGED and is still what this row tests: the store still
+    files the p.55 '$100,000,000' print `supporting`, not `conflicting`, so the
+    annex row does not contradict the programme total. Only the exemplar's
+    number moves with the store — the A8 request is still 150 M USD, so the
+    'half the programme's own 150 M' reading of the p.55 block still holds."""
+    ev = {(DOC2, 5): "## A7. Total financing (SCF + co-finance) 750 M USD\n"
                      "## A8. Total GCF funding requested 150 M USD",
           (DOC2, 55): "### E.2.2. Estimated cost per t CO2-eq, defined as total "
                       "investment required to achieve the mitigation\n"
                       "(a) Total project financing: $100,000,000\n"
                       "(b) Expected GCF contribution: $75,000,000"}
-    answer = (f"- **Total financing (SCF + co-finance):** **720 M USD** "
+    answer = (f"- **Total financing (SCF + co-finance):** **750 M USD** "
               f"[{DOC2}, p.5 (A7)]")
     (v,) = V.classify(V.extract_claims(answer), ev, use_llm=False)
     assert v.status == V.SUPPORTED, (v.status, v.reason)
@@ -2057,6 +2066,173 @@ NOT_JUDGE_REACHABLE = {
 SUPERSEDED_BY_NOTE_PAGE_SCOPE = {"claim-e0be9178189ce5084dfc7164"}
 
 
+#: THE ONE ADJUDICATED FALSE POSITIVE THE RATIFIED REGISTRY CORRECTIONS
+#: OVERTURN — named rather than counted, for the same reason the set above is:
+#: a test cannot decide that a human adjudication is superseded, and a SECOND
+#: row lost the same way has to fail loudly rather than join a total.
+#:
+#:   claim-11d3a17832e9de2e7374d675, case `conf-fp274-consistency`, label
+#:   `verifier_false_positive`, i.e. Wave 1 ruled the verifier WRONG to flag:
+#:
+#:     "**USD 49,751,264** is listed under **A.10 (a) requested for the GCF
+#:      funding – Grant** (**p.8**) [02_gcf-b42-02-add16-funding-proposal-
+#:      package-fp274, p.8]."
+#:
+#: The label was sound on the evidence available in Wave 1: the corpus
+#: markdown for p.8 really does print '- Grant: 49,751,264', the release-1
+#: registry note printed the same digits, and an answer reporting them was
+#: reporting its evidence.
+#:
+#: Correction C83 (`data/registry_corrections.json`, cross-check session,
+#: ratified by the owner 2026-08-26) establishes that the digits are a
+#: single-digit misread of the page itself, edit distance 1:
+#:
+#:     doc 02_gcf-b42-02-add16-funding-proposal-package-fp274, field
+#:     financial_instruments, p.8 A.10 Grant
+#:       wrong (store):  49,751,264
+#:       page_prints:    independent (pymupdf p.8): "A.10 [x] Grant:
+#:                       \"40,751,264\"" | qwen markdown the store cites
+#:                       (p.8): "- Grant: 49,751,264"
+#:       resolution:     "the digits the store publishes are not the digits
+#:                        the PDF prints on the page the store cites; the
+#:                        correction adopts the print and leaves the citation
+#:                        where it is"
+#:
+#: So the figure the answer reports is printed on no page of that document,
+#: and the verifier's flag was RIGHT. OWNER RULING 11 (2026-08-26, signed):
+#: the release-1 adjudicated row is SUPERSEDED. The label stands as history;
+#: the reading it was judged against has been corrected out from under it.
+#:
+#: This is the sibling of `SUPERSEDED_BY_NOTE_PAGE_SCOPE` and carries the same
+#: contract: it is an EXACT set, it is unioned into the pin below rather than
+#: relaxing it, and any further adjudicated row that moves for the same reason
+#: requires its own ratification before it may be written down here.
+SUPERSEDED_BY_RULING_11 = {"claim-11d3a17832e9de2e7374d675"}
+
+
+# ===========================================================================
+# OWNER RULING 12 (2026-08-26, signed) — the ratified corrections supersede a
+# BLOCK of Wave-1 adjudications, not a row.
+# ===========================================================================
+# Ruling 11 superseded one row after correction C83. Re-rendering the frozen
+# scorer baseline's registry-derived notes against the corrected store
+# (`scripts/refresh_release_evidence_notes.py`, 2026-08-26 — hit text frozen,
+# 47 of 66 cases' note blocks re-rendered, checksum re-anchored) showed the
+# same mechanism reaching twenty-one more rows, and the owner ruled on them
+# together:
+#
+#   the corrections proved the SERVED PAGES WERE MISREADINGS, so the Wave-1
+#   labels judged answers against text that was itself wrong. Every row below
+#   is an answer that faithfully repeated a figure the corpus markdown printed
+#   and the ratified re-extraction refuted. The label stands as history; the
+#   reading it was judged against does not.
+#
+# WHY THIS IS TRANSITIONAL AND NOT A NEW STEADY STATE. The corrections were
+# adjudicated against an INDEPENDENT pymupdf extraction, and the qwen markdown
+# in `data/index/` still prints the old digits — p.7 of FP274's package still
+# reads '40,511,264', the registry now reads 40,751,264. The corpus cure
+# (re-extracting every flagged page and refreshing the index) is QUEUED for
+# the next LM Studio window. Until it lands, the store and the served text
+# disagree on these documents by design, and these pins measure that gap. When
+# the cure lands they are expected to move again — loudly, in one traced step,
+# exactly as they moved here.
+#
+# Each set below is EXACT for the reason KNOWN_UNCLEARED is: a row leaving is
+# as loud as a row arriving, and a row moving that is in NO set fails the
+# suite. Traces are correction ids in `data/registry_corrections.json`.
+#
+#   C33   FP86  total_financing  'EUR 100 million' DROPPED (confirm-absence):
+#         a GCF commitment ceiling, not programme financing
+#   C103  FP274 gcf_funding_requested  p.7 A.8   40,511,264 -> 40,751,264
+#   C106  FP267 gcf_funding_requested  p.6 A.8   40.15 M    -> 40,10 M
+#   C107  FP173 gcf_funding_requested  p.5 A.8   $23.6 M    -> USD 279 M
+#   C115  FP153 gcf_funding_requested  p.5 A.8   28,654 M   -> 26.654 M
+#         (and with it the document's whole in-document conflict)
+#   C126  FP254 gcf_funding_requested  p.5 A.8   $58,000,000 -> $258,000,000
+#   C134  FP220 gcf_funding_requested  p.5 A.8   50,000,000 -> 55 000 000
+#   C140  FP203 gcf_funding_requested  p.5 A.8   53 M USD   -> USD 43 M
+#   C148  FP173 total_financing        p.5 A.7   $58.1 M    -> USD 598.1 M
+#   C159  FP152 total_financing        p.5 A.7   720 M USD  -> 750 M USD
+
+#: The eighteen adjudicated `verifier_false_positive` rows the corrections
+#: overturn: each states a figure the corrected store says its cited page does
+#: not print, so each is now flagged and each flag is RIGHT.
+SUPERSEDED_BY_RULING_12 = {
+    # FP274's package, C103 (p.7 A.8 reads 40,751,264, not 40,511,264) — the
+    # answers state 40,511,264 as printed, or 40,751,254 which is neither
+    "claim-03d4cab1e6acdc6d5eb3267d",      # noisy-typo-fp274
+    "claim-0ceca63ebb669df21e09b055",      # bc-b42-02-add16
+    "claim-1cdbc79166490ca77d8dbf7a",      # conf-fp274-consistency
+    "claim-4650af248a3a43c0c32df54e",      # fr-fp274-conflict
+    "claim-4b104f747c029cf2999fa191",      # conf-fp274-consistency
+    "claim-ca1c1388250e487992a2284a",      # noisy-typo-fp274
+    "claim-d43027b005c3f0a49fc919c2",      # bc-b42-02-add16
+    "claim-d9a64d9b390e5e0331243eed",      # conf-fp274-gcf
+    "claim-db773f2eca66ba0e2475aafd",      # cmp-fp214-fp274-currency
+    # FP267, C106 (40.15 million -> 40,10 million)
+    "claim-2bdc51a571dc2778c6d7d438",      # conf-fp267-gcf
+    "claim-bdadca9680a8cb144bfb455b",      # conf-fp267-gcf
+    "claim-ea234d3b901a272ab3c73d4d",      # conf-fp267-gcf
+    # FP173, C107 ($23.6 million -> USD 279 million)
+    "claim-e33e0ea0751d1be83bc6129f",      # id-fp173-gcf
+    "claim-fd05177c0463ccbc86dea3bc",      # cmp-fp172-fp173-rank
+    # FP153, C115 (28,654 -> 26.654, and the conflict itself dissolved)
+    "claim-0c2cdfab274931943374260e",      # conf-fp153-gcf
+    "claim-c502764f9cc499640484fa25",      # conf-fp153-gcf
+    # FP203 / FP220, C140 + C134 (53 -> 43 million; 50 -> 55 million)
+    "claim-2270588f98dcd5f8dcd0aa2c",      # cmp-fp220-fp203-rank
+    "claim-b854edf722048e13b46679cd",      # cmp-fp220-fp203-rank
+}
+
+#: The gold row that moved the OTHER way, and needs no supersession: ruling 8
+#: had excused `claim-e0be9178189ce5084dfc7164` (verifier_correct TRUE) because
+#: the page it cited was one the registry note itself printed. C103 changed the
+#: figure that note prints at p.7, so the claim's '40,511,264 USD' is no longer
+#: what the cited scope gives — and the row returns to being flagged, which is
+#: what its own Wave-1 label always said. Ruling 8's rule is untouched (citing
+#: a note-printed page is still legal); the row simply stopped needing it.
+RULING_12_REFLAGGED = {"claim-e0be9178189ce5084dfc7164"}
+
+#: The held-correct rows ruling 12 covers. THIRTEEN, not the three the traced
+#: report named: the report listed only `fp_contradicted`, and ten more rows
+#: are flagged UNSUPPORTED by the same mechanism — the figure the recorded
+#: answer repeated is one the corrected store no longer prints anywhere. They
+#: are named here individually rather than folded into a count.
+#:
+#: This arm's property is 'no calibration change may start flagging a claim the
+#: recorded release passed'. NO CALIBRATION CHANGED. What changed is the data
+#: the claim is read against, which is why the rows are superseded rather than
+#: treated as a regression — and why the set is exact: a fourteenth row would
+#: mean a calibration change hiding behind the corrections.
+HELD_CORRECT_SUPERSEDED_BY_RULING_12 = {
+    "held-bc-b42-02-add16-5",              # C103  'USD 40,511,264' now absent
+    "held-conf-fp274-gcf-0",               # C103  'USD 40,511,264' now absent
+    "held-fr-fp274-conflict-0",            # C103  '40,511,264 USD' now absent
+    "held-cid-fp0086-padded-4",            # C33   'EUR 100 million' dropped
+    "held-cmp-fp172-fp173-rank-2",         # C107  '23.6m' now absent
+    "held-cmp-three-way-2",                # C107  'USD 23.6 million' now absent
+    "held-noisy-lower-symbols-0",          # C107  'USD 23.6 million' now absent
+    "held-cmp-fp254-fp248-currency-0",     # C126  'USD 58,000,000' now absent
+    "held-cmp-three-way-4",                # C134  'USD 50,000,000' now absent
+    "held-cmp-fp220-fp203-rank-2",         # C134+C140  'USD 53m, 50m' absent
+    # the three CONTRADICTED ones — the gate the re-pin below reads
+    "held-cmp-fp086-fp220-currency-1",     # C134  answer 50,000,000 vs store 55 000 000
+    "held-cmp-fp220-fp203-rank-0",         # C134  same rival, same document
+    # ... and the one with a DISTINCT MECHANISM, named as such by the ruling.
+    # This row is NOT note-driven: its rival print is FROZEN HIT TEXT —
+    # `123_gcf-b27-02-add12|55` carries E.2.2's cost-per-tonne block, '(a)
+    # Total project financing: $100,000,000'. What C159 changed is the
+    # DEFERENCE: the registry used to record 720 M USD as this document's
+    # total_financing, so an answer stating 720 was stating the registry's own
+    # canonical reading and `verify.registry_ruled_compatible` excused the
+    # rival; the corrected canonical is 750 M USD, the answer's 720 is no
+    # longer it, and the excuse is withdrawn. No note refresh can reach this
+    # row, and the corpus cure will not either — only a re-adjudication of the
+    # E.2.2 print or of the A.7 figure would.
+    "held-id-fp152-financing-0",           # C159  deference withdrawn
+}
+
+
 def test_no_adjudicated_true_failure_stops_being_flagged():
     """The regression gate. Twelve rows were adjudicated 'the verifier was
     right'; if calibration silences one of them, the calibration is wrong.
@@ -2076,7 +2252,14 @@ def test_no_adjudicated_true_failure_stops_being_flagged():
     _sv, res, _p = _scored()
     missed = {r["row_id"] for r in res["rows"]
               if r["arm"] == "gold" and r["should_flag"] and not r["flagged"]}
-    assert missed == SUPERSEDED_BY_NOTE_PAGE_SCOPE
+    # RE-TAKEN 2026-08-26 (ruling 12, trace C103). The set is now EMPTY, and
+    # written as the subtraction so both rulings stay legible in the
+    # expression: ruling 8's exception is spent, because the row it excused is
+    # flagged again on the corrected figure rather than on the citation shape
+    # it was labelled for. If that row ever stops being flagged again, `missed`
+    # regrows and this fails; if a SECOND true failure goes quiet, it fails
+    # too, which is the whole point of the assertion.
+    assert missed == SUPERSEDED_BY_NOTE_PAGE_SCOPE - RULING_12_REFLAGGED
     scored_true = sum(1 for r in res["rows"]
                       if r["arm"] == "gold" and r["should_flag"])
     resolved_true = sum(1 for r in res["resolved_by_extraction"]
@@ -2093,7 +2276,10 @@ def test_the_adjudicated_false_positives_are_cleared_or_named():
     still = {r["row_id"] for r in res["rows"]
              if r["arm"] == "gold" and r["label"] == "verifier_false_positive"
              and r["flagged"]}
-    assert still == KNOWN_UNCLEARED
+    # RE-TAKEN 2026-08-26 from the note-refreshed baseline: 14 traded in
+    # Wave 2 + 1 ruling 11 + 18 ruling 12 = 33, every one of them named.
+    assert still == (KNOWN_UNCLEARED | SUPERSEDED_BY_RULING_11
+                     | SUPERSEDED_BY_RULING_12)
 
 
 def test_the_uncleared_rows_still_reach_the_judge():
@@ -2113,9 +2299,17 @@ def test_no_claim_the_recorded_release_passed_becomes_a_failure():
     more permissive verifier passes it more easily — so it is never read
     alone; the fabricated arm below is its adversary."""
     _sv, res, _p = _scored()
-    noise = [(r["row_id"], r["reason"]) for r in res["rows"]
-             if r["arm"] == "held-correct" and r["flagged"]]
-    assert len(noise) <= 1, noise
+    noise = {r["row_id"] for r in res["rows"]
+             if r["arm"] == "held-correct" and r["flagged"]}
+    # RE-TAKEN 2026-08-26 (ruling 12). This was `len(noise) <= 1`, a budget;
+    # it is now an EXACT SET, which is strictly stronger — a budget would let
+    # a genuinely new false positive replace a superseded one and stay silent.
+    assert noise == HELD_CORRECT_SUPERSEDED_BY_RULING_12, {
+        "unexpected": sorted(noise - HELD_CORRECT_SUPERSEDED_BY_RULING_12),
+        "recovered": sorted(HELD_CORRECT_SUPERSEDED_BY_RULING_12 - noise),
+        "reasons": [(r["row_id"], r["reason"]) for r in res["rows"]
+                    if r["arm"] == "held-correct" and r["flagged"]
+                    and r["row_id"] not in HELD_CORRECT_SUPERSEDED_BY_RULING_12]}
 
 
 def test_fabricated_claims_are_seeded_and_are_still_caught():
@@ -2172,11 +2366,43 @@ def test_the_rider_shapes_are_actually_seeded():
 #: from the claims the release FLAGGED, so a unit that stops being a claim
 #: stops being repairable — a population change, not a verdict change, and
 #: the four rows that remain are the four it always had.
+#: RE-TAKEN 2026-08-26 (ruling 12), 4 -> 12. Three of the four above stay and
+#: keep their reasons; `rep-figure-cmp-fp172-fp173-rank-fa227d25b3` LEAVES,
+#: because the registry conflict that made flagging it correct is the one C115
+#: dissolved. Nine rows arrive, and every one of them is the corrections
+#: reaching a repaired claim: the arm repairs a claim to a figure ITS CITED
+#: SCOPE PRINTS, and on these documents the printed figure is exactly what the
+#: ratified re-extraction refuted — so a repair that was true about the served
+#: page is false about the store. Expect these to leave again when the corpus
+#: cure re-extracts the pages (see the ruling 12 block).
+#:
+#: NOTE the row ids of six of them changed with the refresh (e.g.
+#: `rep-figure-noisy-lower-symbols-4cf3eee9f2` -> `...-1e25d07f9b`): the seed
+#: tag hashes the MUTATED claim text, and the repair now targets the corrected
+#: figure. Same carrier claim, same shape, new value, new id.
 REPAIRED_STILL_FLAGGED = {
-    "rep-absence-abs-antarctica-096905d75a",
-    "rep-absence-abs-antarctica-b67fa5942a",
-    "rep-citation-fr-disc-thai-rice-3aec1712f7",
-    "rep-figure-cmp-fp172-fp173-rank-fa227d25b3",
+    # --- unchanged: the arm's own limits, documented above -----------------
+    "rep-absence-abs-antarctica-096905d75a",     # absence region, rulings 3/7
+    "rep-absence-abs-antarctica-b67fa5942a",     # absence region, rulings 3/7
+    "rep-citation-fr-disc-thai-rice-3aec1712f7", # 'CSA' not in _marked_names
+    # --- ruling 12: contradicted against the corrected store ---------------
+    "rep-figure-bc-b42-02-add16-022fb47868",           # C103
+    "rep-figure-conf-fp274-consistency-945a6c08c1",    # C103
+    "rep-entity-conf-fp274-gcf-d0fceb42a7",            # C103
+    "rep-figure-fr-fp274-conflict-eb65bf8d4d",         # C103
+    "rep-figure-noisy-typo-fp274-66097ce03c",          # C103
+    "rep-figure-conf-fp267-gcf-75998469d7",            # C106
+    "rep-figure-noisy-lower-symbols-1e25d07f9b",       # C107
+    # --- ruling 12: the repair's own target went out from under it ---------
+    # 'not found in the cited evidence: USD 23.6 million' — the repaired claim
+    # still reports FP173's two sides, and C107 removed one of them from the
+    # store, so the note no longer prints it anywhere
+    "rep-citation-noisy-lower-symbols-932d051c99",     # C107
+    # 'no citation on a factual claim' — the ranking claim was repaired by
+    # pointing at the note-derived key that carried FP173's conflict line, and
+    # C107 dissolved that line, so the key the repair aimed at no longer
+    # exists and the mutation lands with no citation at all
+    "rep-figure-cmp-three-way-a955bd06ab",             # C107
 }
 
 
@@ -2294,14 +2520,40 @@ def test_the_judge_bound_counters_are_pinned():
     the only number that sees that relaxation, so it is pinned like a gate."""
     _sv, res, _p = _scored()
     fab = res["arms"]["fabricated"]["counts"]
-    assert fab["fn_clearing_judge"] <= 104, \
+    # RE-TAKEN 2026-08-26 (ruling 12), 104 -> 105. The bound is a gate on
+    # RELAXATION, so it moves only with a reason: one fabricated row on a
+    # corrected document comes back UNSUPPORTED-and-plausible where it used to
+    # come back CONTRADICTED, because the rival it was contradicted against is
+    # a figure the corrections removed from the store. The escapes are named
+    # individually in the failure message, so a second, unexplained escape is
+    # visible the moment it happens.
+    assert fab["fn_clearing_judge"] <= 105, \
         res["arms"]["fabricated"]["escapes_clearing_judge"]
     assert fab["fp_contradicted"] == 0
     assert res["arms"]["held-correct"]["counts"]["fn_clearing_judge"] == 0
-    assert res["arms"]["held-correct"]["counts"]["fp_contradicted"] == 0
+    # THE GATE THE RULING-12 REVIEW TURNED ON. It was `== 0`; it is now an
+    # exact set, because zero is no longer the honest number and a count would
+    # let a genuinely new contradiction hide among the superseded ones. Three
+    # held-correct rows come back CONTRADICTED, all three named by ruling 12:
+    # two are C134 (the answer states FP220's 50,000,000, the corrected store
+    # says 55 000 000) and one is C159's withdrawn deference. A FOURTH would
+    # be a calibration change and fails here.
+    contradicted = {r["row_id"] for r in res["rows"]
+                    if r["arm"] == "held-correct" and r["status"] == V.CONTRADICTED}
+    assert contradicted == {"held-cmp-fp086-fp220-currency-1",
+                            "held-cmp-fp220-fp203-rank-0",
+                            "held-id-fp152-financing-0"}, sorted(contradicted)
+    assert contradicted <= HELD_CORRECT_SUPERSEDED_BY_RULING_12
+    assert res["arms"]["held-correct"]["counts"]["fp_contradicted"] == 3
     # a repaired row the verifier CONTRADICTS cannot be rescued by any judge;
     # exactly one exists and it is named in REPAIRED_STILL_FLAGGED
-    assert res["arms"]["repaired"]["counts"]["fp_contradicted"] <= 1, \
+    # RE-TAKEN 2026-08-26 (ruling 12), 1 -> 7. Seven repaired rows come back
+    # CONTRADICTED, and all seven are named in `REPAIRED_STILL_FLAGGED` with a
+    # correction id: the arm repairs a claim to a figure ITS CITED SCOPE
+    # PRINTS, and on FP274/FP267/FP173 the served print is precisely what the
+    # ratified re-extraction refuted. Expect this to fall back towards 1 when
+    # the corpus cure re-extracts those pages.
+    assert res["arms"]["repaired"]["counts"]["fp_contradicted"] <= 7, \
         res["arms"]["repaired"]["contradicted_but_should_not_be"]
 
 
@@ -2439,12 +2691,67 @@ def test_no_gold_true_content_is_lost_by_the_resolution():
 #: the code under test rather than as the arm being wrong.  The gap is closed:
 #: every SUPPORTED exit now goes through `_conflict_before_support`, the row
 #: comes back CONTRADICTED on the cross-page scan, and the arm is 34/34.
-CONTRADICTION_ARM_MISSES: set = set()
+#: RE-TAKEN 2026-08-26 (ruling 12), EMPTY -> 10, and this is the one re-pin
+#: that records a genuine LOSS of instrument sensitivity rather than a moved
+#: label. Every row sits on one of three documents the corrections rewrote —
+#: FP254 (C126), FP267 (C106), FP173 (C107 + C148) — and the arm certifies its
+#: rows from the EVIDENCE TEXT while the verifier now answers from the STORE.
+#: The two disagree on exactly these documents until the corpus cure lands.
+#:
+#: FIVE are still flagged and only the STATUS is wrong (UNSUPPORTED where
+#: CONTRADICTED is owed): the mutated figure is no longer printed by any held
+#: key, so the claim fails for absence before the field conflict is reached.
+#: No matrix cell moves; the judge bound does (an UNSUPPORTED-and-plausible
+#: claim is the residue `adjudicate` may clear, a CONTRADICTED one is never
+#: shown to it), which is why they are counted here and not waved through:
+#:     con-same-key-cmp-fp254-fp248-currency-93d0bc48ae     EUR 483,633,084
+#:     con-transposed-cmp-fp254-fp248-currency-09ce567999   EUR 1,262,000,000
+#:     con-elsewhere-conf-fp267-gcf-66c7d22a82              $46,10
+#:     con-same-key-id-fp173-gcf-860993c8b8                 US$56.9 million
+#:     con-same-key-noisy-lower-symbols-d8c910c1fe          USD 56.9 million
+#:
+#: FIVE are PROMOTED to SUPPORTED, which is a false negative the matrix counts
+#: (`contradiction_promoted` 0 -> 5, contradicted-arm fn 0 -> 5). Four of the
+#: five state FP173's total_financing figures under the GCF label — C148 made
+#: 'USD 598.1 million' that document's CANONICAL total, so a claim stating it
+#: is stating the registry's own reading and clause 1 of
+#: `verify.registry_ruled_compatible` excuses the conflict; the fifth is the
+#: same shape on FP254 after C126. The seeds were certified against the
+#: evidence before the deference was consulted, so the arm and the verifier
+#: are answering from two different data versions:
+#:     con-elsewhere-cmp-fp254-fp248-currency-864ea8658c    $8,000,000
+#:     con-transposed-id-fp173-gcf-de80d6cf88               US$598.1 million
+#:     con-elsewhere-id-fp173-gcf-3b1af4611b                $58.1 million USD
+#:     con-transposed-noisy-lower-symbols-3c3ac5c038        USD 598.1 million
+#:     con-elsewhere-noisy-lower-symbols-f396e1ac31         $58.1 million USD
+#:
+#: This set is the honest measure of the transitional gap. It must SHRINK when
+#: the corpus cure re-extracts these pages; if it grows without a correction
+#: id to point at, something in the contradiction path has been relaxed.
+CONTRADICTION_ARM_MISSES: set = {
+    "con-same-key-cmp-fp254-fp248-currency-93d0bc48ae",
+    "con-transposed-cmp-fp254-fp248-currency-09ce567999",
+    "con-elsewhere-cmp-fp254-fp248-currency-864ea8658c",
+    "con-elsewhere-conf-fp267-gcf-66c7d22a82",
+    "con-same-key-id-fp173-gcf-860993c8b8",
+    "con-transposed-id-fp173-gcf-de80d6cf88",
+    "con-elsewhere-id-fp173-gcf-3b1af4611b",
+    "con-same-key-noisy-lower-symbols-d8c910c1fe",
+    "con-transposed-noisy-lower-symbols-3c3ac5c038",
+    "con-elsewhere-noisy-lower-symbols-f396e1ac31",
+}
 
 #: Every shape the arm must actually reach.  COUNTED, NOT ASSERTED — the same
 #: discipline `test_the_rider_shapes_are_actually_seeded` exists for, after a
 #: docstring advertised absence shapes the seed set never once produced.
-CONTRADICTION_SHAPES = {"same-key", "transposed", "wrong-page", "elsewhere"}
+#: `registry-only` was ADDED 2026-08-26 with the census witness re-seed: the
+#: branch where the registry records the conflict and no held key shows it
+#: (`verify.registry_conflict` -> `known-document-conflict`). It is the one
+#: shape no recorded turn can supply — a turn that shows the rival reaches the
+#: evidence-text scan first — so `score_verifier.registry_conflict_witness`
+#: builds it, from FP172's surviving conflict.
+CONTRADICTION_SHAPES = {"same-key", "transposed", "wrong-page", "elsewhere",
+                        "registry-only"}
 
 
 def test_the_contradiction_arm_is_seeded_and_reaches_every_shape():
@@ -2491,6 +2798,26 @@ def test_the_contradiction_arm_is_structurally_valid():
         field, rival = row["field"], row["rival"]
         cited = (row["cited"][0], row["cited"][1])
         assert sv._seed_field_of(row["claim_text"]) == field, row["row_id"]
+        if row["why"] == "registry-only":
+            # THE ONE SHAPE THIS CERTIFICATION CANNOT RUN ON, and not because
+            # it is weaker: its rival is printed in no held key by definition,
+            # so it is certified from the STORE instead, re-derived here the
+            # same way — the document must really record a `conflicting`
+            # candidate for the field, and the claim must state a
+            # non-conflicting one. That is exactly the precondition
+            # `verify.registry_conflict` fires on.
+            from gcf_qna.rag import registry as _reg
+            cands = _reg.facts(cited[0]).get("gcf_funding_requested") or []
+            rivals = [c for c in cands if c.get("status") == "conflicting"]
+            assert rivals, (row["row_id"], "the store records no conflict")
+            assert any(sv._digits(c.get("raw", "")) == sv._digits(rival)
+                       for c in rivals), (row["row_id"], rival, rivals)
+            assert any(c.get("status") != "conflicting"
+                       and sv._digits(c.get("raw", "")) in
+                       {sv._digits(s) for s in sv._seed_runs(
+                           V._strip_citations(row["claim_text"]))}
+                       for c in cands), row["row_id"]
+            continue
         # the rival is really PRINTED, under that field's own label, on a key
         # of the cited document — the same key for every shape but `elsewhere`,
         # where it is another key of the same document by construction
@@ -2563,7 +2890,13 @@ def test_deleting_the_field_conflict_path_is_now_DETECTED(monkeypatch):
         monkeypatch, "_field_conflict", lambda *a, **k: None)
     b = before["arms"]["contradicted"]["counts"]
     a = after["arms"]["contradicted"]["counts"]
-    assert b["tp_contradicted"] >= 33 and a["tp_contradicted"] == 0
+    # RE-TAKEN 2026-08-26: 0 -> 1. The survivor is the `registry-only`
+    # witness, and it survives BY CONSTRUCTION — `known-document-conflict` is
+    # emitted from `_conflict_before_support` via `verify.registry_conflict`,
+    # not from `_field_conflict`, so deleting the evidence-text scan cannot
+    # reach it. That the two branches separate under this ablation is the
+    # point of seeding the fifth shape.
+    assert b["tp_contradicted"] >= 33 and a["tp_contradicted"] == 1
     assert a["fn"] >= 20 and a["fn"] > b["fn"]
     assert after["arms"]["contradicted"]["recall"] < 0.5 <= \
         before["arms"]["contradicted"]["recall"]
@@ -2614,6 +2947,17 @@ def test_the_caution_census_no_longer_counts_supported_claims_only():
     sv, res, _p = _scored()
     census = res["flag_census"]
     assert census.get("contradicted:conflict-elsewhere-in-document", 0) >= 10, census
+    # WITNESS RE-SEEDED 2026-08-26 (ruling 12, trace C115). This assertion was
+    # carried by conf-fp153-gcf, whose in-document conflict the correction
+    # DISSOLVED — the count went to 0 with no code change, which is exactly the
+    # blindness a tagged census exists to prevent. The branch is alive and is
+    # now witnessed by `score_verifier.registry_conflict_witness`, built on
+    # FP172's conflict (103_gcf-b30-03-add04: '21,128,224USD' p.6 A.8 canonical
+    # vs '49,151,817 USD' p.76 B.2(b) conflicting), one of the 102 documents
+    # whose conflict the corrections left standing. A recorded turn CANNOT
+    # witness this branch: `_field_conflict` tries the evidence-text scan
+    # first, and a registry note that prints both figures puts the rival on the
+    # very key the claim cites.
     assert census.get("contradicted:known-document-conflict", 0) >= 1, census
     # the same status tagging on the live-path census
     ev = sv.read_jsonl(GOLD / "release_release-1-evidence.jsonl")
@@ -2623,42 +2967,83 @@ def test_the_caution_census_no_longer_counts_supported_claims_only():
 
 
 def test_the_recorded_answers_alone_cannot_witness_the_contradiction_path():
-    """A MEASURED LIMIT, recorded rather than assumed away.  The 66 recorded
-    answers produce no CONTRADICTED verdict at all, so the live-path block of
-    the report — statuses and cautions over those answers — is structurally
-    incapable of witnessing this path however it is filtered.  That is why the
-    flag census is also taken over the SEEDED rows."""
+    """A MEASURED LIMIT, RE-MEASURED — and it has changed sign.
+
+    The original measurement was that the 66 recorded answers produce no
+    CONTRADICTED verdict at all, so the live-path block of the report was
+    structurally incapable of witnessing this path however it was filtered.
+    That is why the flag census is also taken over the SEEDED rows, and that
+    reason still holds for the branch the census now seeds explicitly
+    (`known-document-conflict`, which no recorded turn can reach).
+
+    RE-TAKEN 2026-08-26 (ruling 12). Against the note-refreshed baseline the
+    recorded answers now produce SIXTEEN contradicted verdicts across TEN
+    cases, and not one of them is a calibration change: each is an answer
+    repeating a served figure the ratified corrections refuted (C103 on FP274,
+    C106 on FP267, C126/C134/C140 on FP254/FP220/FP203, C159's withdrawn
+    deference on FP152). The live-path block can witness the path now — it is
+    witnessing the transitional store-vs-served gap. The set of cases is
+    pinned rather than the count alone, so an ELEVENTH case appearing, or one
+    of these quietly going away when the corpus cure lands, is loud."""
     sv, _res, _p = _scored()
     ev = sv.read_jsonl(GOLD / "release_release-1-evidence.jsonl")
     states = sv.answer_state(ev)
     assert len(states) == 66
-    assert sum(s["statuses"].get(V.CONTRADICTED, 0) for s in states.values()) == 0
-    assert not any(c.startswith("contradicted:")
+    contradicted = {cid: s["statuses"][V.CONTRADICTED] for cid, s in states.items()
+                    if s["statuses"].get(V.CONTRADICTED)}
+    assert contradicted == {
+        "bc-b42-02-add16": 2,               # C103
+        "cmp-fp086-fp220-currency": 1,      # C134
+        "cmp-fp214-fp274-currency": 1,      # C103
+        "cmp-fp220-fp203-rank": 1,          # C134 + C140
+        "conf-fp267-gcf": 3,                # C106
+        "conf-fp274-consistency": 3,        # C103
+        "conf-fp274-gcf": 1,                # C103
+        "fr-fp274-conflict": 1,             # C103
+        "id-fp152-financing": 1,            # C159, frozen hit text
+        "noisy-typo-fp274": 2,              # C103
+    }, contradicted
+    assert sum(contradicted.values()) == 16
+    # the branch the census seeds is STILL unwitnessed by the recorded answers,
+    # which is the part of the original limit that has not moved
+    assert not any(c == f"{V.CONTRADICTED}:known-document-conflict"
                    for s in states.values() for c in s["cautions"])
 
 
-@pytest.mark.parametrize("what,patch", [
-    # the registry deference, forced to defer to every rival print
+#: THE SURVIVOR COLUMN, added 2026-08-26 with the `registry-only` witness.
+#: Each ablation is now scored against how many rows it is EXPECTED to leave
+#: standing, which is a sharper instrument than "everything collapses": it
+#: separates the two branches of the contradiction path by which symbol each
+#: one actually depends on.
+@pytest.mark.parametrize("what,patch,survivors", [
+    # the registry deference, forced to defer to every rival print. The
+    # registry-only witness is untouched: `verify.registry_conflict` never
+    # consults the deference, it reads the store's own `conflicting` candidate.
     ("registry-defers-always",
-     ("registry_ruled_compatible", lambda *a, **k: True)),
-    # conflict detection stops knowing what field a claim is about
-    ("conflict-ignores-field", ("_FIELD_RES", [])),
-    # the per-key rival scan is gutted while _field_conflict itself is intact
+     ("registry_ruled_compatible", lambda *a, **k: True), 1),
+    # conflict detection stops knowing what field a claim is about. This one
+    # DOES reach the witness — `registry_conflict` opens with
+    # `_V2_FIELD.get(claim_field(claim.text))`, so a verifier that cannot name
+    # the field cannot look the conflict up either. Nothing survives.
+    ("conflict-ignores-field", ("_FIELD_RES", []), 0),
+    # the per-key rival scan is gutted while _field_conflict itself is intact.
+    # The witness has no per-key rival to find, so it is unaffected.
     ("key-conflict-no-rivals",
-     ("_key_conflict", lambda *a, **k: (None, None))),
+     ("_key_conflict", lambda *a, **k: (None, None)), 1),
 ])
 def test_three_more_contradiction_path_ablations_are_detected(monkeypatch,
-                                                              what, patch):
+                                                              what, patch,
+                                                              survivors):
     """Three relaxations of my own devising, each on a different symbol of the
-    path.  All three were invisible to the four-arm scorer; all three now
+    path.  All three were invisible to the four-arm scorer; all three still
     collapse the contradicted arm.  `field-label-anywhere` (the OVER-strict
     direction) is covered by its own test below."""
     sv, before, after = _rescore_with(monkeypatch, patch[0], patch[1])
     b = before["arms"]["contradicted"]["counts"]
     a = after["arms"]["contradicted"]["counts"]
     assert b["tp_contradicted"] >= 33, what
-    assert a["tp_contradicted"] == 0, what
-    assert a["contradiction_lost"] == a["must_contradict"], what
+    assert a["tp_contradicted"] == survivors, what
+    assert a["contradiction_lost"] == a["must_contradict"] - survivors, what
     assert a["contradiction_promoted"] >= 20, what
 
 
@@ -2735,11 +3120,18 @@ def test_the_arm_records_which_evidence_text_it_cannot_reach():
     Which key the rival sits on does not change which branch of the verifier
     runs — the conflict scan reads the evidence dict identically — but the arm
     may not claim coverage it does not have.  If a future evidence set makes a
-    page-level rival seedable, this test fails and the claim gets updated."""
+    page-level rival seedable, this test fails and the claim gets updated.
+
+    RE-TAKEN 2026-08-26: the limit is unchanged for the four evidence-text
+    shapes, and the fifth shape (`registry-only`, the re-seeded
+    known-document-conflict witness) is counted apart — its rival is printed
+    in NO held key, which is the whole reason it exists, so folding it into
+    either bucket would be the arm claiming coverage it does not have in the
+    other direction."""
     _sv, res, _p = _scored()
     assert res["rival_key_kinds"] == {
-        "document-level key": res["arm_sizes"]["contradicted"]}, \
-        res["rival_key_kinds"]
+        "document-level key": res["arm_sizes"]["contradicted"] - 1,
+        "registry, in no held key": 1}, res["rival_key_kinds"]
 
 
 def test_the_first_value_narrowing_is_still_invisible(monkeypatch):
@@ -3473,7 +3865,20 @@ FP172_NOTE = (
     'is printed as 21,128,224USD (p.6, A.8); also as 49,151,817 USD '
     '(p.76, B.2(b)) — report both figures with their pages.')
 
-#: conf-fp153-gcf's registry note, verbatim.
+#: conf-fp153-gcf's registry note, verbatim — RETIRED AS A FIXTURE,
+#: 2026-08-26, and kept only so that it is not innocently picked up again.
+#:
+#: Ratified correction C115 reads FP153's A.8 as '26.654 million USD' and
+#: files the '28,654 million USD' print below as the same misread figure, so
+#: 122_gcf-b27-02-add13 no longer records a 'conflicting' candidate for
+#: gcf_funding_requested. The note text below therefore describes a
+#: disagreement the corpus registry no longer holds: build evidence from it
+#: and the 'report both figures' licence is not granted, because there is
+#: nothing left to report both sides of.
+#:
+#: The tests that need an in-document conflict now use `FP172_NOTE`, whose
+#: conflict survives the corrections (see
+#: `test_the_page_a_note_printed_is_a_scope_the_claim_may_cite`).
 FP153_NOTE = (
     'Registry — FP153: "Mongolian Green Finance Corporation"; accredited '
     'entity: XacBank LLC; countries: Mongolia; GCF funding requested: '
@@ -3548,29 +3953,44 @@ def test_a_note_page_is_attributed_per_line_not_per_block():
 # --- the targeted effect ----------------------------------------------------
 
 def test_the_page_a_note_printed_is_a_scope_the_claim_may_cite():
-    """conf-fp153-gcf, the recorded answer verbatim.
+    """The two claims report two figures for ONE field, each at the page the
+    note prints it on — compliance with the instruction the same note carries
+    ('report both figures with their pages') — and the release scored the
+    second UNSUPPORTED, 'cited evidence was never retrieved'. The conflict
+    gate fires on the second claim and is answered by the licence, which the
+    corpus registry is what grants; the note scope decides only whether the
+    claim can be READ.
 
-    The second claim reports the note's OWN second figure at the note's OWN
-    page — compliance with the instruction the same note carries ('report both
-    figures with their pages') — and the release scored it UNSUPPORTED, 'cited
-    evidence was never retrieved: 122_gcf-b27-02-add13, p.48'.
+    WITNESS RE-SEEDED, 2026-08-26 — from conf-fp153-gcf to fr-fp172-nepal.
+    This test was written on FP153's recorded answer (122_gcf-b27-02-add13:
+    '28,654 million USD' p.5 against '26,654 million USD' p.48). Ratified
+    correction C115 DISSOLVED that conflict: the p.5 print is a misread of
+    26.654, so the document now records one figure for the field and no
+    'conflicting' candidate at all. With no registry conflict there is no
+    'report both' licence, and the fixture stopped exercising the path it was
+    written for — it asserted SUPPORTED and got CONTRADICTED, which was the
+    correct verdict for a note that no longer describes a disagreement.
 
-    The registry is REAL here (no `no_registry`), because the row is: the two
-    claims report two figures for one field, so the conflict gate fires on the
-    second and is answered by the licence, which the corpus registry is what
-    grants. The note scope decides only whether the claim can be READ.
+    The witness is now a REAL surviving in-document conflict, taken from the
+    corrected store rather than from the recording: FP172
+    (103_gcf-b30-03-add04) still records gcf_funding_requested as
+    '21,128,224USD' (p.6, A.8) canonical WITH '49,151,817 USD' (p.76, B.2(b))
+    marked conflicting — one of 102 documents that still hold one. Same shape,
+    same licence, same note-page scope, and the answer below is fr-fp172-nepal's
+    English twin, cited at the two pages the note itself prints.
     """
-    ev = V.build_evidence([], [FP153_NOTE])
-    answer = ('The registry metadata for FP153 (“Mongolian Green Finance '
-              'Corporation”) shows **a GCF funding request of “28,654 million '
-              f'USD”** (unit as printed is ambiguous). [{NOTE_DOC2}, p. 5]\n\n'
-              'However, the same document also prints **“26,654 million USD”** '
+    ev = V.build_evidence([], [FP172_NOTE])
+    answer = ('The registry metadata for FP172 (“Mitigating GHG emission through '
+              'modern, efficient and climate-friendly clean cooking solutions '
+              '(CCS)”) shows **a GCF funding request of 21,128,224 USD**. '
+              f'[{NOTE_DOC}, p. 6]\n\n'
+              'However, the same document also prints **49,151,817 USD** '
               'as the GCF funding requested, creating an internal '
-              f'inconsistency. [{NOTE_DOC2}, p. 48]')
+              f'inconsistency. [{NOTE_DOC}, p. 76]')
     first, second = V.classify_deterministic(V.extract_claims(answer), ev)
     assert first.status == V.SUPPORTED, (first.status, first.reason)
     assert second.status == V.SUPPORTED, (second.status, second.reason)
-    assert second.scope == [(V.note_scope_doc(NOTE_DOC2), 48)]
+    assert second.scope == [(V.note_scope_doc(NOTE_DOC), 76)]
     # and it is not smuggled in as a coarse citation: no page-mismatch caution
     assert "citation-page-mismatch" not in second.flags
 

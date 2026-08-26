@@ -25,10 +25,10 @@ ce0463faef872918bd3d85078135ba9ab4d187eea223ffffdeca26435a9b9228  data/eval/answ
 # silent edit fail instead of re-scoring a different system. Paths are relative
 # to the repo root, same as the lines above.
 559a3318fb6db8360ef6159dc00e29882cf829670925bf91f4659b2a8f665b4f  data/registry.json
-469d8af0bba09080dd3edc8fb56b1aa0fce0d4cb1bb6c110c4f8e82bef9c4bec  data/registry_v2.json
+35cef2e76e37f8ee618ae77e8aa1c9bce11c739ed5c7b1704834e5c9780bbb97  data/registry_v2.json
 d7d2c4c4c3631f637e5edd9d963a8130687a4f450cfb706cb67e8767a7dea6dd  data/eval/release_release-1-adjudicated.jsonl
 1a0de743be0fab562f2f905e77b8f23ad33203b7c61523369f3d68bc2d0811b3  data/eval/release_release-1-adjudication.blind.jsonl
-9fde4024bb2a312c2d0117c71de64435478979cc60772d61b81a145f52ed7ea5  data/eval/release_release-1-evidence.jsonl
+925f3b2d74a8064120595b890e45774864f9c9ea8adc3fd920171bb350a0940c  data/eval/release_release-1-evidence.jsonl
 #
 # Wave 3 — production-parity release harness. Recorded 2026-08-20 on
 # main @ 515eb39, verify.py untouched throughout
@@ -224,7 +224,7 @@ d398b45b61c039669a1b3624daa595f0a4245c0800e76886b2fefefb858e4529  data/eval/rele
 6ed0e7b718efb17e0154a855dc78d5aba604ccc2d9cfa167588a8d07f2c9a0fc  data/eval/release_release-5.jsonl
 1ebee34e5dc63695c66b3e03902dcf25b03fbbe13efe22c74c95301bd70ec2e9  data/eval/release_release-6.jsonl
 d750354fbcbde8a8b6997159260467c78e8649b501496c7eb8aeb2239dcfea38  data/eval/release_release-7.jsonl
-8bc776f76aabf9684ed732e45194b58fb59cd9202674af53aab174d3453c6699  scripts/answer_gold.jsonl
+bcdde9a59dbf1724a83e69ee1bd13291a893c9c052763ea740f1e06390b0dce1  scripts/answer_gold.jsonl
 65f6e39544fd577460ba787933759428c2a59da08c7062eba7f2eef0f7f3e19e  data/eval/release_release-8.jsonl
 619b23fa1b7e19d8febf368aacc3182554bfb66a574847ed4325e640979e26e8  data/eval/release_release-8-repeat.jsonl
 #
@@ -251,7 +251,7 @@ d750354fbcbde8a8b6997159260467c78e8649b501496c7eb8aeb2239dcfea38  data/eval/rele
 e3517e471060cf54750edefa6da81a4bbe5fbe29357cef9edae2d0969ea7498a  data/eval/release_release-10.jsonl
 c954e36fe97cda0d09a53c4255a0155faeb830ba56e3e2cdf88151ecb8514476  data/eval/release_release-11.jsonl
 6a801fb699ec31e2bd56f53a78cc86304444f59393936ea9cd972cb3e324c4cf  data/eval/release_release-11-v2.jsonl
-8196e1e3912f5191e174e964178bfdf2633ef98631a2eafa74ab7f0eca3707bc  data/registry_corrections.json
+7227301929b3e84ff405f1cab57a4e74a01075afe11848ffb8a25c66697f278b  data/registry_corrections.json
 2700e03bda34a3e72609da0c3deb713e1a9b7da7851e3abb5dad71250a52e6d8  data/registry_absences.json
 c6bbc422d8b36f9a31466dbe6a337f8f576d46a0ad4c01a5031d786b40599570  data/eval/release_release-12.jsonl
 92ed92e972bf4631a5ffa75f021f33f7ac300daf04c5434163f6ed80761f8d38  data/eval/release_release-12-repeat.jsonl

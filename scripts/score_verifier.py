@@ -1333,6 +1333,71 @@ def _content_ledger(answer: str, li: dict) -> Tuple[List[str], List[str]]:
     return carried, lost
 
 
+#: The document/field the ``registry-only`` witness is built on, and the
+#: canonical print it holds.  FP172's package records
+#: ``gcf_funding_requested`` as '21,128,224USD' (p.6, A.8) CANONICAL with
+#: '49,151,817 USD' (p.76, B.2(b)) marked CONFLICTING — one of the 102
+#: documents whose in-document conflict survives the ratified corrections of
+#: 2026-08-26.
+WITNESS_DOC = "103_gcf-b30-03-add04"
+WITNESS_PAGE = 6
+WITNESS_TEXT = ("# FINANCING INFORMATION\n\n## A.8. Total GCF funding requested"
+                "\n\n21,128,224USD\n")
+WITNESS_CLAIM = ("FP172 requests **21,128,224 USD** as its total GCF funding "
+                 f"requested. [{WITNESS_DOC}, p. {WITNESS_PAGE}]")
+WITNESS_RIVAL = "49,151,817 USD"
+
+
+def registry_conflict_witness() -> List[dict]:
+    """One row for the FIFTH branch of the contradiction path: the conflict the
+    REGISTRY records and the held evidence does not show.
+
+    WHY IT IS BUILT RATHER THAN MUTATED.  The other four shapes are cut from a
+    recorded case, because the rival they need is printed in that case's own
+    evidence.  This branch is the opposite by definition:
+    ``verify.registry_conflict`` fires only when NO held key carries the rival
+    — retrieval is a sample, the registry is not — so a turn that shows the
+    rival cannot reach it.  ``verify._field_conflict`` tries the evidence-text
+    scan first, and a registry note that prints both figures routes the rival
+    onto the very key the claim cites, which is why every recorded case that
+    might have witnessed this branch witnesses ``conflict-elsewhere-in-
+    document`` instead.
+
+    WITNESS RE-SEEDED, 2026-08-26.  The census's only witness used to be
+    conf-fp153-gcf, and ratified correction C115 DISSOLVED that conflict:
+    122_gcf-b27-02-add13's '28,654 million USD' is a misread of 26.654, so the
+    document now records one figure for the field and no 'conflicting'
+    candidate at all.  The branch kept working and the census lost its ability
+    to see it — ``contradicted:known-document-conflict`` went to 0 with no
+    code change, which is precisely the blindness the tagged census exists to
+    prevent.  The witness is therefore re-seeded from a conflict the
+    corrections LEFT STANDING (``WITNESS_DOC`` above), and the row is a
+    two-line evidence set rather than a recorded turn so that nothing but the
+    registry can supply the rival.
+
+    Deterministic and verdict-free like every other seed: the text, the claim
+    and the citation are written out above, so ``seed_digest`` is identical in
+    any tree, and nothing here reads a status, a reason or a flag.
+    """
+    evidence = {(WITNESS_DOC, WITNESS_PAGE): WITNESS_TEXT}
+    return [{
+        "row_id": "con-registry-only-fp172-" + hashlib.sha256(
+            f"{WITNESS_DOC}|{WITNESS_PAGE}|{WITNESS_CLAIM}".encode("utf-8")
+        ).hexdigest()[:10],
+        "arm": "contradicted", "case_id": "seed-registry-conflict-fp172",
+        "why": "registry-only", "answer": WITNESS_CLAIM, "evidence": evidence,
+        "claim_text": WITNESS_CLAIM, "should_flag": True, "must_contradict": True,
+        "field": "gcf_financing",
+        "validity": (
+            f"the corpus fact registry records {WITNESS_DOC}'s "
+            f"gcf_funding_requested as '21,128,224USD' (p.6, A.8) canonical AND "
+            f"'{WITNESS_RIVAL}' (p.76, B.2(b)) conflicting; the claim states one "
+            f"side as THE figure and the held evidence carries no trace of the "
+            f"other, so only the registry can catch it"),
+        "cited": [WITNESS_DOC, WITNESS_PAGE], "rival": WITNESS_RIVAL,
+    }]
+
+
 def build_rows(gold: List[dict], cases: List[dict], release: List[dict]
                ) -> Tuple[List[dict], List[dict], List[dict]]:
     """(rows, problems, resolved-by-extraction) across the five arms."""
@@ -1410,6 +1475,8 @@ def build_rows(gold: List[dict], cases: List[dict], release: List[dict]
     # and bought nothing — both populations are recorded facts, identical in
     # every tree.
     rows += contradict(cases)
+    # ... and its fifth shape, which no recorded turn can supply (see above)
+    rows += registry_conflict_witness()
     return rows, problems, resolved
 
 
@@ -1540,7 +1607,9 @@ def score(rows: List[dict]) -> dict:
             "same-key": "conflict on the strictly-cited key",
             "transposed": "value verifies on the page; the FIELD disagrees",
             "wrong-page": "the document's own other figure for the field",
-            "elsewhere": "cross-page scan (conflict-elsewhere-in-document)"}
+            "elsewhere": "cross-page scan (conflict-elsewhere-in-document)",
+            "registry-only": "the registry records the conflict, the evidence "
+                             "does not show it (known-document-conflict)"}
         out = {}
         for r in scored:
             if r["arm"] != "contradicted":
@@ -1580,6 +1649,12 @@ def score(rows: List[dict]) -> dict:
     rival_kinds: Counter = Counter()
     for r in scored:
         if r["arm"] != "contradicted" or not r.get("cited"):
+            continue
+        if r["why"] == "registry-only":
+            # the fifth shape's rival is printed in NO held key — that is what
+            # makes it the fifth shape — so it belongs in neither bucket and
+            # gets its own rather than silently inflating "numbered page"
+            rival_kinds["registry, in no held key"] += 1
             continue
         rival_kinds["document-level key" if r["cited"][1] is None
                     or r["why"] == "elsewhere" else "numbered page"] += 1

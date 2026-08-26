@@ -1065,16 +1065,28 @@ def test_the_corpus_minimum_answers_p3(real):
     """
     lines = real._extrema_note("What is the smallest GCF funding request in "
                                "the corpus?")
+    # Re-pinned 2026-08-26 (cross-check round). The ANSWER is unmoved — FP35 at
+    # 22,953 USD is still the corpus minimum — only the denominators moved, and
+    # every one of the four documents that changed bucket is ratified:
+    #   * FP162 [113_gcf-b28-02-add09] C68 (value-fix) — '82,849 million USD'
+    #     parsed at last, so it left the mantissa bucket and is ranked;
+    #   * FP270 [06_…-fp270] C104 and FP153 [122_gcf-b27-02-add13] C115
+    #     (correct-to) — same move, this round;
+    #   * FP3 [271_gcf-b11-04-add03] and FP22 [252_gcf-b14-07-add05] — the
+    #     ratified five-page VLM re-extract worklist of the cross-check session:
+    #     FP3's malformed '7 614260' now reads, FP22's dot-leader '38.3' no
+    #     longer does, so they cross in opposite directions.
+    # Net: ranked 188 -> 191, excluded 85 -> 82, mantissa bucket 28 -> 25.
     assert lines[0].startswith(
         'Registry — SMALLEST GCF funding requested in the corpus: FP35 '
         '"Climate Information Services for Resilient De…" — 22,953 USD '
-        "(p.10, B.2(b)) [240_gcf-b15-13-add08]. Ranked over the 188 of 273 "
+        "(p.10, B.2(b)) [240_gcf-b15-13-add08]. Ranked over the 191 of 273 "
         "documents in the corpus whose registry figure is an unambiguous USD "
         "amount.")
     assert lines[1] == (
-        "Registry — excluded from that comparison: 85 of 273 documents in the "
+        "Registry — excluded from that comparison: 82 of 273 documents in the "
         "corpus — 29 state no figure this registry could read for the field; "
-        "28 print a figure whose unit the document's own mantissa contradicts; "
+        "25 print a figure whose unit the document's own mantissa contradicts; "
         "23 state EUR; 5 print no currency at all. Figures in different "
         "currencies are never ranked against one another, and a figure printed "
         "without a currency is not assumed to be USD. 1 of the excluded "
@@ -1100,12 +1112,29 @@ def test_the_review_s_own_truth_value_is_the_one_the_note_publishes(real):
 
 
 def test_the_corpus_maximum(real):
+    """Re-pinned 2026-08-26 (cross-check round), and the exemplar changed hands.
+
+    C132 corrects FP241's GCF request from '2149 million USD' to '215.6 million
+    USD' — the cited page's independent extraction prints the latter, and the
+    qwen markdown the store cited misread it. 2149 M was the corpus maximum by
+    a factor of five; at 215.6 M FP241 is not in the top three, so the maximum
+    passes to the figure that was already second, FP25's 382.5 M — a value no
+    correction row touches. Mechanical consequence of C132, not a new reading.
+
+    The CAUTION flips with it, and that is the honest reading rather than a
+    weakened one: FP241's 2149 M sat in a labelled A.8 cell, FP25's 382.5 M is
+    a 'rule:B.2(b)' figure — found on p.11 without the template heading above
+    it — so the note must now disclose the weaker provenance of the superlative
+    it publishes. The no-CAUTION half of that contrast is kept alive on the
+    total-financing maximum, which still reads from a non-inferred section.
+    """
     lines = real._extrema_note("What is the largest GCF funding request ever?")
     assert lines[0].startswith(
-        'Registry — LARGEST GCF funding requested in the corpus: FP241 ')
-    assert "— 2149 million USD (p.5, A.8) " \
-           "[35_gcf-b39-02-add16-rev01-funding-proposal-package-fp241]" in lines[0]
-    assert "CAUTION" not in lines[0]         # read from a labelled A.8 cell
+        'Registry — LARGEST GCF funding requested in the corpus: FP25 ')
+    assert "— 382.5 million USD (p.11, B.2(b)) " \
+           "[249_gcf-b14-07-add08-rev01]" in lines[0]
+    assert ("CAUTION: this figure was read from p.11 without a labelled "
+            "template heading above it") in lines[0]
     assert len(lines) == 2                   # nothing excluded ranks above it
 
 
@@ -1194,10 +1223,16 @@ def test_the_year_arm_fires_only_for_the_minimum(real):
     assert lines[0].startswith(
         "Registry — SMALLEST GCF funding requested in the 2020 funding "
         'proposals: FP129 "Afghanistan Rural Energy Market Transformatio…" — '
-        "USD 17,198,843 (p.5, A8) [146_gcf-b26-02-add01]. Ranked over the 21 "
+        "USD 17,198,843 (p.5, A8) [146_gcf-b26-02-add01]. Ranked over the 22 "
         "of 30 documents in the 2020 funding proposals whose registry figure "
         "is an unambiguous USD amount.")
-    assert lines[1].startswith("Registry — excluded from that comparison: 9 "
+    # Re-pinned 2026-08-26 (cross-check round): the answer FP129/17,198,843 is
+    # unmoved. C115 corrects FP153 [122_gcf-b27-02-add13] from the unreadable
+    # '28,654 million USD' to '26.654 million USD', and FP153 is a 2020 row, so
+    # it leaves the year arm's mantissa bucket — which held exactly one member,
+    # so that reason disappears from the sentence entirely. 21 -> 22 ranked,
+    # 9 -> 8 excluded.
+    assert lines[1].startswith("Registry — excluded from that comparison: 8 "
                                "of 30 documents in the 2020 funding proposals")
     assert real._extrema_note("Which 2020 proposal requested the largest GCF "
                               "funding?") == []
@@ -1215,7 +1250,18 @@ def test_total_financing_is_a_different_field(real):
                               "corpus?")[0]
     assert line.startswith("Registry — LARGEST total financing in the corpus: "
                            "FP241 ")
-    assert "3762 million USD (p.5, A.7)" in line
+    # Re-pinned 2026-08-26 (cross-check round): C180 corrects FP241's total
+    # financing from '3762 million USD' to '3792.6 million USD' — the same p.5
+    # misreading C132 caught on the GCF-request line of the same document. The
+    # value moves, the holder does not: FP241 is still the corpus maximum by a
+    # factor of two over FP166, and the section prints 'corrected' because the
+    # ratified row carries no section of its own.
+    assert "3792.6 million USD (p.5, corrected)" in line
+    # ...and, unlike the GCF-request maximum since C132, this figure is NOT read
+    # from an inferred 'rule:' section, so the note publishes it without the
+    # provenance caveat. The pair of assertions is the caution contrast that
+    # used to live entirely in `test_the_corpus_maximum`.
+    assert "CAUTION" not in line
 
 
 def test_the_french_form_answers_the_same_question(real):
