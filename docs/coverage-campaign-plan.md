@@ -251,3 +251,38 @@ Every phase closure updates this file and quotes its gate run.
 Phase 5a (owner provides policy PDFs) · Phase 6 (two instrument items) ·
 the 129-flag adjudication (owner session) · the 30% coverage topper ·
 deferred: registry_named acronym gap, Track D conflict-page ranking.
+
+
+## Cross-check round closure (2026-08-26, release-14 pair) — a red gate, fully named
+
+The round: 129 flags adjudicated three-source, 117 corrections applied,
+rulings 11-12 signed, the scorer baseline refreshed (640/640 hit texts
+frozen), the llm_fallback decay fixed, suite 1766/4/0. The release-14
+pair then reads **94.6% / 94.3% — gate FAIL in both arms**, consistent
+(not noise), and the failure census decomposes completely:
+
+1. **~4 failures = the transitional store-vs-served divergence, live**
+   (answers quoting served pages' old digits, contradicted by the
+   corrected store). Fix: the queued corpus cure (re-extract all
+   flagged pages + index refresh, next LM Studio window ~3h). The
+   ruling-12 pins are written to shrink when it lands.
+2. **~6-8 failures = a new named gap: the inverse-listing HEADER
+   count claim** ("41 proposals record UNDP") files under no evidence
+   key because the header deliberately names no stem — the items
+   verify, the count cannot. Fix queued: give the count a verifiable
+   scope (design owed to the next serving touch).
+3. The remainder: the long-known cited-hedge / meta-sentence shapes
+   at a claim population that has doubled since release-10.
+
+The honest state: the store is MORE correct than ever (cross-checked
+against the PDFs' own text), and the gate honestly reports that the
+served corpus and one note shape have not caught up. Red for fully
+named reasons, each with a queued fix, beats green by silence.
+
+## Open items after the round
+
+1. Corpus cure (owner's LM Studio window, ~3h serial + index refresh + release pair — expected to clear cause 1 and shrink the ruling-12 pins)
+2. Inverse-header count scope (next serving touch — cause 2)
+3. Phase 5a policy PDFs (owner)
+4. Phase 6 instruments (unchanged)
+5. Deploy + SSH key + leaked keys (the standing trio)
