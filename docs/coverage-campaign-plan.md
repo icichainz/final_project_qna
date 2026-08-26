@@ -286,3 +286,28 @@ named reasons, each with a queued fix, beats green by silence.
 3. Phase 5a policy PDFs (owner)
 4. Phase 6 instruments (unchanged)
 5. Deploy + SSH key + leaked keys (the standing trio)
+
+
+## The corpus cure closure (2026-08-26, release-15 pair) — GREEN
+
+Part 1: 95 pages re-extracted against ratified known answers (87 CURED,
+104/109 rows now printed in the served corpus, from 8). Part 2: registry
+and index rebuilt over the cured corpus (the rebuilt live index carries
+section paths on 125,430 chunks — Phase 2½'s capability, delivered
+incidentally); baseline notes re-refreshed; two builder defects killed
+en route (settlement-by-declaration, the 0.5% tolerance); the
+currency-then-scale reader gap closed; every pin moved as its own
+comments promised.
+
+**Release-15 pair: PASS in both arms — 375/394 = 95.2% and 465/486 =
+95.7% — with contradicted verdicts collapsed 9-11 → 4-5.** The PDFs'
+text layer, the served corpus, the store, the gold set and the scorer
+baseline now describe one corpus. The campaign's engineering is
+complete.
+
+## Final open items
+
+1. Inverse-listing header count scope (next serving touch)
+2. Phase 5a policy PDFs (owner)
+3. Phase 6 instrument items (unchanged)
+4. Deploy · SSH key · leaked keys (the standing trio)
