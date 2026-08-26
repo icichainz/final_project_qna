@@ -570,7 +570,20 @@ def test_gate_fp214_vs_fp274_currency_and_conflicts():
     b = m.cell("FP274", "gcf_funding_requested")
     assert (a.currency, a.page) == ("EUR", 114) and a.status == "stated"
     assert (b.currency, b.page) == ("USD", 7) and b.status == "contradictory"
-    assert {x["page"] for x in b.conflicts} == {8, 40}
+    # RE-PINNED 2026-08-26 (corpus cure), {8, 40} -> {40}. The note below says
+    # "C83 corrects the p.8 figure too, but in `financial_instruments`, so the
+    # gcf_funding_requested conflict candidate on that page still reads
+    # 49,751,264 and the conflict does not dissolve". That was true while the
+    # correction was the only thing that knew: the CORPUS page still printed
+    # the misread, so the parser still minted a rival from it. The cure
+    # re-extracted p.8 and it now prints '- [x] Grant: 40,751,264' — the
+    # ratified figure C83 named, which the independent pymupdf extraction of
+    # that page prints too. With no rival digits on p.8 there is no candidate
+    # to conflict, and one of the document's two internal disagreements is
+    # genuinely gone rather than hidden. p.40 still disagrees (40,751,254
+    # against the canonical 40,751,264), so the cell stays `contradictory` and
+    # the field stays non-comparable — both still asserted here.
+    assert {x["page"] for x in b.conflicts} == {40}
     out = render(m)
     assert "EUR 38.17 million (p.114, rule C.1(a))" in out
     # Re-pinned 2026-08-26 (cross-check round): C103 corrects FP274's canonical

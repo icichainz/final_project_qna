@@ -243,6 +243,9 @@ def granularity(tok: str, mult: float) -> float:
     return (10.0 ** -dec) * mult
 
 
+_CUR_THEN_SCALE = re.compile(
+    r"\s*(?:US\$|USD|EUR|euros?|\$)\s*(?P<u>millions?|billions?|thousands?)\b",
+    re.I)
 _AMOUNT_RE = re.compile(
     r"(?P<pre>USD|US\$|EUR|€|\$)?[ \t]{0,2}"
     r"(?P<num>" + _NUM + r")"
@@ -355,6 +358,19 @@ def _iter_amounts(window: str, loose: bool = False):
         if abbrev and not (m.group("pre") or m.group("post")
                            or _CUR_NEARBY.match(window[m.end():m.end() + 6] or "")):
             unit_tok, mult = "", 1.0
+        if mult == 1.0 and not unit_tok:
+            # '25 USD million' (FP155 p.8, cross-check stop #3): the template
+            # sometimes prints the currency BETWEEN the figure and its scale
+            # word, so <unit> never binds adjacently. Bind it only when
+            # nothing but a currency token separates them, and only when the
+            # bound value stays plausible - otherwise fall through to the
+            # clash path, which publishes the raw without a value.
+            m4 = _CUR_THEN_SCALE.match(window[m.end("num"):m.end("num") + 30])
+            if m4:
+                cand = _UNIT_MULT.get(m4.group("u").lower(), 1.0)
+                if cand > 1 and not (val >= _UNIT_CEILING.get(cand, 0)
+                                     or val * cand > _MAX_PLAUSIBLE):
+                    unit_tok, mult = m4.group("u").lower(), cand
         if not clash and mult == 1.0:
             # a scale word sits further along the same table row but could not
             # bind to the figure ('| 32,500 plus | million USD ($) |'). Binding
@@ -1327,6 +1343,11 @@ DROP_GROUNDS = {
     "label-bleed": "the figure belongs to another field, which already holds it",
 }
 
+# the candidate status a fact-layer row asks for, used when a ratified figure has
+# to be installed rather than written onto a candidate the fresh parse still has
+_LAYER_STATUS = {"fact-canonical": "canonical", "fact-supporting": "supporting",
+                 "fact-conflicting": "conflicting"}
+
 # a top-level (registry.json) field and the schema-2 fact it is the flat view of
 _TOP_TO_FACT = {"gcf_financing": "gcf_funding_requested",
                 "total_financing": "total_financing",
@@ -1353,6 +1374,7 @@ class Decisions:
         self.applied: List[str] = []
         self.deferred: Dict[str, List[dict]] = {}
         self.unapplied: List[dict] = []
+        self.carried: List[dict] = []
         self.alarms: List[str] = []
         self.absences_published: set = set()
         self.absences_skipped: List[dict] = []
@@ -1384,6 +1406,23 @@ class Decisions:
                                "why": why})
         self.alarm(f"NOT APPLIED {entry['id']} {entry['doc_id']} {entry['field']} "
                    f"[{entry['layer']}]: {why}")
+
+    def carry(self, entry: dict, why: str) -> None:
+        """A third outcome, and it needs its own name.
+
+        The row did not land on the candidate it names — so it is not APPLIED —
+        but its ratified figure is in the store all the same, so it is not
+        UNAPPLIED either. Calling it one of the two would either hide a
+        disagreement between the owner and the parser or claim a figure was
+        lost that was not. It is alarmed like a miss, because a build where the
+        fresh parse and a ratified row disagree is a build somebody has to look
+        at.
+        """
+        self.carried.append({"id": entry["id"], "doc_id": entry["doc_id"],
+                             "field": entry["field"], "layer": entry["layer"],
+                             "why": why})
+        self.alarm(f"CARRIED FORWARD {entry['id']} {entry['doc_id']} "
+                   f"{entry['field']} [{entry['layer']}]: {why}")
 
     def for_doc(self, doc_id: str, layers) -> List[dict]:
         return [e for e in self.by_doc.get(doc_id, []) if e["layer"] in layers]
@@ -1481,6 +1520,19 @@ def remark_conflicts(field: str, cands: List[dict]) -> None:
                        else "conflicting")
 
 
+#: How close a fresh parse has to be before it may SUPERSEDE a ratified figure.
+#: Not `_agree`'s 0.5%: that tolerance exists to let two prints of the same
+#: reading ('40.15 million' / '40,150,000') recognise each other, and it is far
+#: too wide to certify that a re-extracted page came back with the ratified
+#: DIGITS. FP274 is the row that proved it — the cure left p.40's '40,751,254'
+#: standing against a ratified 40,751,264, a single-digit misread the
+#: cross-extractor arm independently flags `not-in-document`, and 10 is well
+#: inside 0.5% of 40 million. A supersession claim is a claim about digits, so
+#: it is tested on digits.
+def _same_figure(a: Optional[float], b: Optional[float]) -> bool:
+    return a is not None and b is not None and abs(a - b) < 0.5
+
+
 def reextraction_settled(entry: dict, facts: Dict[str, List[dict]]) -> Optional[str]:
     """Did the page re-extraction make this ratified row unnecessary?
 
@@ -1488,20 +1540,30 @@ def reextraction_settled(entry: dict, facts: Dict[str, List[dict]]) -> Optional[
     defect, and the adjudication pairs them on purpose ("correct-to 79,690,370;
     re-extract p5"). When the fresh page reads the figure correctly, the row's
     target no longer exists — and the build must be able to tell THAT apart
-    from a target that went missing for some other reason, which is an alarm.
+    from a target that went missing for some other reason.
 
-    So the row has to have said, in advance, that its page was going for
-    re-extraction (`reextracted`), and the OUTCOME is checked against the same
-    ratified figure the row carries. Never a blanket amnesty for a row that did
-    not land: if the fresh page does not read the ratified figure, this returns
-    None and the row is reported NOT APPLIED exactly as before.
+    WHAT SETTLES A ROW IS THE OUTCOME, NOT A DECLARATION. This used to demand
+    that the row had said in advance (`reextracted`) that its page was going
+    for re-extraction. The corpus cure of 2026-08-26 re-extracted 95 pages
+    across a hundred-odd ratified rows and annotated none of them, so every one
+    of those rows arrived here undeclared, was reported NOT APPLIED, and had
+    its ratified figure dropped on the floor — the cure leaving 25 fields worse
+    off than the corrections alone had left them. A declaration was never the
+    evidence; the fresh page reading the ratified figure is.
+
+    So: settled iff the field's CANONICAL candidate — the one the store
+    publishes — carries the ratified figure exactly (`_same_figure`). A field
+    whose canonical reads something else, or which has no canonical at all, has
+    not settled anything, and `carry_forward_correction` takes it from here.
     """
-    if not entry.get("reextracted"):
-        return None
     field, action = entry["field"], entry["action"]
     if action == "drop-candidate":
         # the row exists to delete a print the PDF does not contain. The target
-        # being gone IS the outcome it asked for.
+        # being gone IS the outcome it asked for — but 'gone' is only evidence
+        # of a re-extraction when the row said one was coming, because a
+        # drop row has no figure to check an outcome against.
+        if not entry.get("reextracted"):
+            return None
         return (f"the re-extraction of p.{entry['wrong'].get('page')} removed the "
                 f"print this row was ratified to drop")
     want = (entry.get("corrected") or {}).get("value")
@@ -1510,10 +1572,100 @@ def reextraction_settled(entry: dict, facts: Dict[str, List[dict]]) -> Optional[
     canon = _canon_of(facts, field)
     if canon is None or canon.get("value") is None:
         return None
-    if not _agree(canon["value"], want):
+    if not _same_figure(canon["value"], want):
         return None
     return (f"the re-extracted page reads the ratified figure: {field} is now "
             f"{canon['raw']!r} (p.{canon['page']}), value {canon['value']}")
+
+
+def _superseded_link(entry: dict, dec: "Decisions") -> bool:
+    """Does a LATER ratified row correct this row's own output?
+
+    The corrections are a ledger, not a set: a doc/field the owner touched in
+    two sessions carries two rows, and the second one's `wrong` block is the
+    first one's `corrected` block. Only the last link is a live statement about
+    the document.
+    """
+    mine = (entry.get("corrected") or {}).get("value")
+    if mine is None:
+        return False
+    for other in dec.by_doc.get(entry["doc_id"], ()):
+        if other is entry or other["field"] != entry["field"]:
+            continue
+        if other["layer"] != entry["layer"]:
+            continue
+        if _same_figure((other.get("wrong") or {}).get("value"), mine):
+            return True
+    return False
+
+
+def carry_forward_correction(doc_id: str, entry: dict, facts: Dict[str, List[dict]],
+                             dec: "Decisions") -> Optional[dict]:
+    """The ratified figure survives a re-extraction that did not deliver it.
+
+    Reached only when the row's named target is gone AND the fresh parse did
+    not settle it. Two shapes, one rule — a ratified correction is superseded
+    only by a parse that actually YIELDS the ratified figure:
+
+    * THE FIGURE IS THERE BUT UNELECTED. Some candidate carries it and the
+      store publishes another. Nothing needs inventing: that candidate is
+      promoted, and the demotion is said out loud.
+    * THE FIGURE IS NOT THERE AT ALL. Either the field came back empty (the
+      parser's field-mapping gap — 106_gcf-b30-02-add01's cured p.5 plainly
+      prints '- [x] Grant: 16,591,556' and `financial_instruments` still came
+      back with nothing) or the fresh parse elected a different reading. The
+      ratified candidate is installed from the row itself, carrying
+      `carried_forward` so no reader mistakes it for a page print the parser
+      found, and the reading it displaced is named in the alarm.
+
+    The row's `wrong` block is NEVER applied to a candidate it does not name —
+    that safety property is untouched. What changes is that a ratified figure
+    is no longer silently lost when its target moves.
+    """
+    if entry["action"] not in ("correct-to", "value-fix"):
+        return None
+    to = entry.get("corrected") or {}
+    want = to.get("value")
+    if want is None:
+        return None
+    field = entry["field"]
+    cands = facts.setdefault(field, [])
+    incumbent = _canon_of(facts, field)
+
+    held = next((c for c in cands if _same_figure(c.get("value"), want)), None)
+    if held is not None:
+        if held is incumbent:                    # pragma: no cover - settled above
+            return None
+        was = _shape(held)
+        if incumbent is not None:
+            incumbent["status"] = "supporting"
+        held["status"] = "canonical"
+        dec.carry(entry, f"the fresh parse holds the ratified figure "
+                         f"({held['raw']!r} p.{held['page']}) but published "
+                         f"{incumbent['raw']!r} (p.{incumbent['page']}) instead"
+                         if incumbent is not None else
+                         f"the fresh parse holds the ratified figure "
+                         f"({held['raw']!r} p.{held['page']}) and elected no "
+                         f"canonical for the field")
+        return {**_record(entry, was, _shape(held)), "carried_forward": "promoted"}
+
+    c = {"raw": to["raw"], "value": want, "currency": to.get("currency"),
+         "unit": to.get("unit"), "page": to.get("page"),
+         "section": to.get("section") or "corrected",
+         "status": _LAYER_STATUS.get(entry["layer"], "supporting"),
+         "corrected": True, "corrected_from": None, "carried_forward": True}
+    displaced = None
+    if c["status"] == "canonical" and incumbent is not None:
+        displaced = _shape(incumbent)
+        incumbent["status"] = "supporting"
+    cands.append(c)
+    dec.carry(entry, (f"the fresh parse reads {displaced['raw']!r} "
+                      f"(p.{displaced['page']}) where the ratified figure is "
+                      f"{to['raw']!r}" if displaced is not None else
+                      f"the fresh parse yields nothing for {field}; the ratified "
+                      f"figure {to['raw']!r} would have been lost"))
+    return {**_record(entry, displaced, _shape(c)), "carried_forward":
+            "displaced" if displaced is not None else "restored"}
 
 
 def apply_fact_corrections(doc_id: str, facts: Dict[str, List[dict]],
@@ -1565,11 +1717,33 @@ def apply_fact_corrections(doc_id: str, facts: Dict[str, List[dict]],
                 continue
             if defer:
                 dec.deferred.setdefault(doc_id, []).append(entry)
-            else:
-                dec.miss(entry, f"the candidate it corrects is not in this build "
-                                f"({entry['wrong']['raw']!r} "
-                                f"p.{entry['wrong'].get('page')}) — re-extraction may "
-                                f"have moved it")
+                continue
+            if _superseded_link(entry, dec):
+                # A LINK IN A CHAIN, NOT A LIVE ROW. Four doc/field pairs were
+                # corrected twice: phase 3 moved 106_gcf-b30-02-add01's request
+                # to 18,591,556, the cross-check round then read the PDF itself
+                # and moved it again to 16,591,556 — its `wrong` block quotes
+                # the earlier row's output verbatim, section 'corrected' and
+                # all. While both targets existed the chain resolved itself in
+                # order. Once a cured page reads the FINAL figure directly BOTH
+                # targets are gone, and carrying the intermediate row forward
+                # would reinstate a reading the owner has since superseded over
+                # the one they ratified last. The later row speaks for this
+                # doc/field; this one is history, and history is not an alarm.
+                records.append({**_record(entry, None, None),
+                                "superseded_by_a_later_row":
+                                    f"a later ratified row corrects this row's own "
+                                    f"figure ({(entry.get('corrected') or {}).get('raw')!r}); "
+                                    f"it speaks for {field} instead"})
+                continue
+            carried = carry_forward_correction(doc_id, entry, facts, dec)
+            if carried is not None:
+                records.append(carried)
+                continue
+            dec.miss(entry, f"the candidate it corrects is not in this build "
+                            f"({entry['wrong']['raw']!r} "
+                            f"p.{entry['wrong'].get('page')}) — re-extraction may "
+                            f"have moved it")
             continue
         before = _shape(target)
         if action in ("correct-to", "value-fix"):
@@ -1685,7 +1859,8 @@ def apply_fact_corrections(doc_id: str, facts: Dict[str, List[dict]],
             continue
         records.append(_record(entry, before, _shape(target)))
     for r in records:
-        dec.applied.append(r["id"])
+        if not r.get("carried_forward"):
+            dec.applied.append(r["id"])
         for f in (r["field"], r.get("to_field")):
             if f and f in facts:
                 remark_conflicts(f, facts[f])
@@ -2447,6 +2622,7 @@ def main() -> None:
             "data_decisions": {
                 **dec.meta,
                 "applied": len(dec.applied),
+                "carried_forward": dec.carried,
                 "unapplied": dec.unapplied,
                 "absences_published": len(dec.absences_published),
                 "absences_not_published": dec.absences_skipped,
@@ -2472,7 +2648,8 @@ def main() -> None:
               f"{sum(1 for c in cs if c['status'] == 'conflicting'):>10}")
     if dec is not None:
         print(f"\ndata decisions | corrections applied {len(dec.applied)}/"
-              f"{dec.meta['corrections']['count']} | absences published "
+              f"{dec.meta['corrections']['count']} | carried forward "
+              f"{len(dec.carried)} | absences published "
               f"{len(dec.absences_published)}/{dec.meta['absences']['count']} "
               f"(not published {len(dec.absences_skipped)})")
         for msg in dec.alarms:

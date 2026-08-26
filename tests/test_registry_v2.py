@@ -668,8 +668,22 @@ def test_the_strict_pass_output_is_untouched_by_the_fallback_pass(stem):
     ("156_gcf-b24-02-add05", "gcf_funding_requested", 13, 23_709_782.0, "23,709782"),
     ("188_gcf-b21-10-add06", "gcf_funding_requested", 8, 22_000_000.0, "22 million"),
     # A.8 behind a mangled enumerator / behind the 'e.g.' guard / renamed
+    # PIN RE-TAKEN 2026-08-26 (corpus cure), and this row has changed KIND, so
+    # it is written out rather than edited in place. It used to read '180
+    # million' behind a mangled 'A8' enumerator on p.8 — the only witness in
+    # the corpus for that spelling. Ratified correction C105 had already shown
+    # the digits were a misread (independent p.8: 'A.8 / B.2(b) — "150,000,000
+    # USD"'), and the cure re-extracted the page: it now prints a clean
+    # '## A.8. Total GCF funding requested / 150,000,000 USD'. So BOTH halves
+    # of what this row witnessed were extraction artifacts — the digits and the
+    # mangled enumerator — and the STRICT pass now reads the field (verified:
+    # `build_document(..., fallback=False)` returns the same candidate). The
+    # row is kept because the pin is still the corpus's own reading of a real
+    # page, but it no longer witnesses the variant recognizer, and the ratified
+    # canonical it now agrees with is unchanged at 150,000,000. Exactly the
+    # precedent of the FP233 row at the bottom of this list.
     ("08_gcf-b42-02-add10-funding-proposal-package-fp268",
-     "gcf_funding_requested", 8, 180_000_000.0, "180 million"),
+     "gcf_funding_requested", 8, 150_000_000.0, "150,000,000"),
     ("46_gcf-b38-02-add10-funding-proposal-package-fp230",
      "gcf_funding_requested", 5, 32_800_000.0, "32.8 million"),
     ("125_gcf-b27-02-add10-rev01", "gcf_funding_requested", 5, 256_480_000.0, "256.48"),
@@ -840,8 +854,15 @@ def test_era_families_are_only_ever_a_split_of_unrecognized():
     ("264_gcf-b13-16-add02", "A.1.x block (FP template v1, variant numbering)"),
     ("193_gcf-b22-10-add01-rev01", "board notice (not a proposal template)"),
     ("268_gcf-b11-04-add06", "funding proposal summary (pre-template, B.11 era)"),
+    # FP274: qwen deterministically renders the cover WITHOUT the A.n
+    # prefixes and the A.8 row (byte-identical across the original
+    # extraction, the corpus cure, and a retry), while the independent
+    # pymupdf extraction proves the PDF prints 'A.7. ... A.8. ...'.
+    # A model-rendering limitation, not corpus damage: the era honestly
+    # reads variant-numbering for the corpus AS SERVED, and the ratified
+    # corrections protect every canonical regardless (C83 carried).
     ("02_gcf-b42-02-add16-funding-proposal-package-fp274",
-     "A5-A14 block (FP template v2/v3)"),
+     "A5-A14 block (FP template v2/v3, variant numbering)"),
     ("266_gcf-b11-04-add08", "A.1.x block (FP template v1)"),
 ])
 def test_era_family_of_a_real_document(stem, era):
@@ -1192,15 +1213,34 @@ def test_a_row_with_no_defensible_replacement_loses_canonical_rather_than_lying(
 
 def test_a_correction_whose_target_has_moved_is_not_applied_and_is_shouted_about():
     """The corpus is re-extracted underneath the build. A ratified correction
-    that no longer matches any candidate must never be applied to whatever is
-    there instead."""
+    that no longer matches any candidate must never be WRITTEN ONTO whatever is
+    there instead.
+
+    RE-TAKEN 2026-08-26 (corpus-cure round). The safety property above is
+    unchanged and still asserted: the candidate the row does not name keeps its
+    own print and never acquires `corrected`. What changed is the row's other
+    half. Reporting the row NOT APPLIED used to mean DISCARDING the ratified
+    figure, and after the cure that cost 27 ratified figures across 25 fields —
+    the cure leaving the store worse off than the corrections alone had. The
+    figure is now carried forward as its own candidate, marked `carried_forward`
+    so no reader mistakes it for a print the parser found, and the disagreement
+    is alarmed as loudly as the miss it replaces."""
     facts = {"total_financing": [_cand("2,000 USD", 2000.0)]}
     dec = B.Decisions([_entry(doc_id="D")])
     B.apply_fact_corrections("D", facts, dec)
+    # the candidate the row does NOT name is untouched — the whole safety property
     assert facts["total_financing"][0]["raw"] == "2,000 USD"
     assert "corrected" not in facts["total_financing"][0]
-    assert dec.unapplied and dec.unapplied[0]["id"] == "T01"
-    assert any("NOT APPLIED" in a for a in dec.alarms)
+    # ... and it is no longer what the store publishes, because the ratified
+    # figure it disagrees with is now here beside it
+    assert facts["total_financing"][0]["status"] == "supporting"
+    carried = facts["total_financing"][1]
+    assert carried["value"] == 1_000_000.0 and carried["status"] == "canonical"
+    assert carried["carried_forward"] is True and carried["corrected_from"] is None
+    # not applied, not lost: its own ledger, and still an alarm
+    assert not dec.applied and not dec.unapplied
+    assert [c["id"] for c in dec.carried] == ["T01"]
+    assert any("CARRIED FORWARD" in a and "2,000 USD" in a for a in dec.alarms)
 
 
 def test_a_top_level_correction_rewrites_the_flat_field():
@@ -2186,11 +2226,16 @@ def test_a_drop_row_is_settled_when_the_reextraction_removed_the_fabrication():
     assert "ratified to drop" in recs[0]["resolved_by_reextraction"]
 
 
-def test_a_reextracted_page_that_still_reads_wrong_is_still_reported_unapplied():
+def test_a_reextracted_page_that_still_reads_wrong_does_not_settle_the_row():
     """FP260's shape, and the reason this is not a blanket amnesty: the fresh
     p31 came back honest (the C.1 '(a)' label restored) and the parser STILL
     elected the GCF row as the total. The ratified figure has not landed, so
-    the row must still be shouted about."""
+    the row is NOT settled and the disagreement is shouted about.
+
+    RE-TAKEN 2026-08-26 (corpus-cure round): the shout is now CARRIED FORWARD
+    rather than NOT APPLIED, and the ratified figure takes the canonical it was
+    ratified to hold instead of being dropped. A re-extraction that disagrees
+    with the owner does not get to overrule the owner in silence."""
     facts = {"total_financing": [_cand("25,000,000 | USD", 25_000_000.0, page=31,
                                        section="C.1")]}
     dec = B.Decisions([_entry(doc_id="D", reextracted=_reex(pages=[31, 32]),
@@ -2198,26 +2243,79 @@ def test_a_reextracted_page_that_still_reads_wrong_is_still_reported_unapplied()
                               corrected={"raw": "83,811,581 USD", "value": 83_811_581.0,
                                          "currency": "USD", "unit": None, "page": 7,
                                          "section": None, "quote": "p7"})])
+    entry = dec.by_doc["D"][0]
     B.apply_fact_corrections("D", facts, dec)
-    assert dec.unapplied and dec.unapplied[0]["id"] == "T01"
-    assert any("NOT APPLIED" in a for a in dec.alarms)
+    # NOT settled — the fresh canonical is not the ratified figure — and the
+    # row is therefore carried rather than dropped
+    assert B.reextraction_settled(entry, {"total_financing": [
+        _cand("25,000,000 | USD", 25_000_000.0, page=31, section="C.1")]}) is None
+    assert not dec.unapplied
+    assert [c["id"] for c in dec.carried] == ["T01"]
+    assert any("CARRIED FORWARD" in a and "25,000,000" in a for a in dec.alarms)
+    assert B._canon_of(facts, "total_financing")["value"] == 83_811_581.0
 
 
-def test_a_row_that_never_declared_a_reextraction_gets_no_benefit_of_the_doubt():
-    """The row has to have said in advance that its page was going for
-    re-extraction. A target that vanished for any other reason is an alarm."""
+def test_an_undeclared_reextraction_settles_a_row_on_its_outcome():
+    """RE-TAKEN 2026-08-26 (corpus-cure round), and this one REVERSES.
+
+    It used to read `..._gets_no_benefit_of_the_doubt`: a row had to have said
+    in advance (`reextracted`) that its page was going for re-extraction, and a
+    target that vanished for any other reason was an alarm. The corpus cure
+    re-extracted 95 pages across a hundred-odd ratified rows and annotated none
+    of them, so every one of those rows arrived undeclared — 80 of them landing
+    exactly the ratified figure and being shouted about anyway, which buried the
+    25 rows that had genuinely lost theirs under 111 identical alarms.
+
+    A declaration was never the evidence. The fresh page reading the ratified
+    figure is, and that is what is checked now."""
     facts = {"total_financing": [_cand("79,690,370 USD", 79_690_370.0)]}
     dec = B.Decisions([_entry(doc_id="D",
                               wrong={"raw": "69,830,370 USD", "page": 5},
                               corrected={"raw": "USD 79,690,370", "value": 79_690_370.0,
                                          "currency": "USD", "unit": None, "page": 94,
                                          "section": None, "quote": "p94"})])
+    recs = B.apply_fact_corrections("D", facts, dec)
+    assert not dec.unapplied and not dec.carried and not dec.alarms
+    assert "79,690,370" in recs[0]["resolved_by_reextraction"]
+    # and nothing was touched: the fresh page's own print stands as it was read
+    assert facts["total_financing"] == [_cand("79,690,370 USD", 79_690_370.0)]
+
+
+def test_a_near_miss_never_counts_as_the_ratified_figure():
+    """THE ROW FP274 COST. Settlement used to be tested with `_agree`, whose
+    0.5% band exists so two prints of one reading ('40.15 million' /
+    '40,150,000') recognise each other. Ten dollars either side of forty
+    million is inside that band — so the cure leaving p.40's '40,751,254'
+    standing against a ratified 40,751,264 read as 'the re-extracted page reads
+    the ratified figure', and a single-digit misread the cross-extractor arm
+    independently flags `not-in-document` would have superseded the owner.
+
+    A supersession claim is a claim about digits, so it is tested on digits."""
+    facts = {"gcf_funding_requested": [_cand("40,751,254", 40_751_254.0, page=40)]}
+    entry = _entry(doc_id="D", field="gcf_funding_requested",
+                   wrong={"raw": "40,511,264 USD", "page": 7},
+                   corrected={"raw": "40,751,264 USD", "value": 40_751_264.0,
+                              "currency": "USD", "unit": None, "page": 7,
+                              "section": None, "quote": "p7 A.8"})
+    assert B.reextraction_settled(entry, facts) is None
+    assert B._agree(40_751_254.0, 40_751_264.0)          # the old test said yes
+    assert not B._same_figure(40_751_254.0, 40_751_264.0)
+    dec = B.Decisions([entry])
     B.apply_fact_corrections("D", facts, dec)
-    assert dec.unapplied and "re-extraction may have moved it" in dec.unapplied[0]["why"]
+    assert [c["id"] for c in dec.carried] == ["T01"]
+    assert B._canon_of(facts, "gcf_funding_requested")["value"] == 40_751_264.0
 
 
-def test_a_reextracted_row_is_not_settled_by_a_field_with_no_canonical():
-    """'The wrong one is gone' is not 'the right one is there'."""
+def test_a_ratified_figure_the_parse_holds_but_does_not_publish_is_promoted():
+    """'The wrong one is gone' is still not 'the right one is published'.
+
+    RE-TAKEN 2026-08-26 (corpus-cure round). The row is still NOT settled — a
+    field whose canonical is not the ratified figure has settled nothing — but
+    the outcome is no longer to drop the figure and shout. The parse already
+    holds it; what it got wrong is which candidate to elect, so the candidate is
+    promoted and the election is what gets said out loud. Three real rows have
+    this shape (C104/FP270, C124, C127), each with the ratified print sitting
+    unelected behind a worse one."""
     facts = {"total_financing": [_cand("79,690,370 USD", 79_690_370.0,
                                        status="supporting")]}
     dec = B.Decisions([_entry(doc_id="D", reextracted=_reex(),
@@ -2225,8 +2323,43 @@ def test_a_reextracted_row_is_not_settled_by_a_field_with_no_canonical():
                               corrected={"raw": "USD 79,690,370", "value": 79_690_370.0,
                                          "currency": "USD", "unit": None, "page": 94,
                                          "section": None, "quote": "p94"})])
-    B.apply_fact_corrections("D", facts, dec)
-    assert dec.unapplied and dec.unapplied[0]["id"] == "T01"
+    recs = B.apply_fact_corrections("D", facts, dec)
+    assert not dec.unapplied
+    assert [c["id"] for c in dec.carried] == ["T01"]
+    assert recs[0]["carried_forward"] == "promoted"
+    # promoted in place: the page print it was read from is what stands
+    assert facts["total_financing"] == [_cand("79,690,370 USD", 79_690_370.0)]
+
+
+def test_a_superseded_link_in_a_correction_chain_is_never_carried_forward():
+    """106_gcf-b30-02-add01's request was corrected TWICE: phase 3 moved it to
+    18,591,556, and the cross-check round then read the PDF itself and moved it
+    again to 16,591,556 — the later row's `wrong` block quoting the earlier
+    row's output verbatim, section 'corrected' and all.
+
+    While both targets existed the chain resolved itself in order. Once the
+    cured page reads the FINAL figure directly, BOTH targets are gone, and
+    carrying the intermediate row forward would reinstate a reading the owner
+    has since superseded over the one they ratified last. Four doc/field pairs
+    in the ledger have this shape."""
+    facts = {"gcf": [_cand("16,591,556 USD", 16_591_556.0)]}
+    first = _entry(id="C02", field="gcf",
+                   wrong={"raw": "$34,585,556 USD", "page": 5},
+                   corrected={"raw": "18,591,556 USD", "value": 18_591_556.0,
+                              "currency": "USD", "unit": None, "page": 46,
+                              "section": None, "quote": "p46"})
+    later = _entry(id="C108", field="gcf",
+                   wrong={"raw": "18,591,556 USD", "value": 18_591_556.0, "page": 46},
+                   corrected={"raw": "16,591,556 USD", "value": 16_591_556.0,
+                              "currency": "USD", "unit": None, "page": 46,
+                              "section": None, "quote": "independent p46"})
+    dec = B.Decisions([first, later])
+    recs = B.apply_fact_corrections("D", facts, dec)
+    assert B._superseded_link(first, dec) and not B._superseded_link(later, dec)
+    # the store keeps the figure ratified LAST, and the dead link says nothing
+    assert [c["raw"] for c in facts["gcf"]] == ["16,591,556 USD"]
+    assert not dec.carried and not dec.unapplied and not dec.alarms
+    assert "18,591,556" in recs[0]["superseded_by_a_later_row"]
 
 
 @needs_decisions
@@ -2363,3 +2496,16 @@ def test_the_reuse_path_still_carries_candidates_and_still_queues_new_work():
     assert docs[carried.stem]["facts"]["title"][0]["raw"] == "A Title"
     assert docs[carried.stem]["coverage"]["fields"] == 1
     assert todo == [fresh]
+
+
+def test_a_currency_between_figure_and_scale_binds_the_scale():
+    """FP155 p.8 prints '25 USD million' (cross-check stop #3): the currency
+    sits between the figure and its scale word, so the adjacent <unit> group
+    never binds and the canonical went unvalued - polluting the 2021 totals.
+    The binder is narrow: only a currency token may separate them, and the
+    clash guard still wins ('28,654 USD million' stays raw-without-value)."""
+    import build_registry_v2 as b
+    assert b.read_amount("25 USD million")["value"] == 25_000_000
+    assert b.read_amount("25 USD")["value"] is None
+    assert b.read_amount("28,654 USD million")["value"] is None
+    assert b.read_amount("25 million USD")["value"] == 25_000_000

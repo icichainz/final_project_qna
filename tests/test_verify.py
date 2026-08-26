@@ -2380,6 +2380,18 @@ def test_the_rider_shapes_are_actually_seeded():
 #: `rep-figure-noisy-lower-symbols-4cf3eee9f2` -> `...-1e25d07f9b`): the seed
 #: tag hashes the MUTATED claim text, and the repair now targets the corrected
 #: figure. Same carrier claim, same shape, new value, new id.
+#:
+#: RE-TAKEN 2026-08-26 (post-cure). The SET IS THE SAME TWELVE ROWS and every
+#: reason above still holds; two more ids moved for the reason the paragraph
+#: above already gives, and nothing else about the arm changed:
+#:     rep-figure-conf-fp267-gcf-75998469d7  -> ...-c6345569b6   (C106)
+#:     rep-figure-cmp-three-way-a955bd06ab   -> ...-dcb84c6dec   (C107)
+#: Both keep their carrier case, their shape and their reason verbatim —
+#: `c6345569b6` is still CONTRADICTED on FP267's '40,10 million USD', and
+#: `dcb84c6dec` is still 'no citation on a factual claim' with C107's
+#: dissolved conflict line the reason there is no key left to aim at. What
+#: moved is the registry-derived note text the mutation quotes, re-rendered
+#: over the rebuilt store.
 REPAIRED_STILL_FLAGGED = {
     # --- unchanged: the arm's own limits, documented above -----------------
     "rep-absence-abs-antarctica-096905d75a",     # absence region, rulings 3/7
@@ -2391,7 +2403,7 @@ REPAIRED_STILL_FLAGGED = {
     "rep-entity-conf-fp274-gcf-d0fceb42a7",            # C103
     "rep-figure-fr-fp274-conflict-eb65bf8d4d",         # C103
     "rep-figure-noisy-typo-fp274-66097ce03c",          # C103
-    "rep-figure-conf-fp267-gcf-75998469d7",            # C106
+    "rep-figure-conf-fp267-gcf-c6345569b6",            # C106
     "rep-figure-noisy-lower-symbols-1e25d07f9b",       # C107
     # --- ruling 12: the repair's own target went out from under it ---------
     # 'not found in the cited evidence: USD 23.6 million' — the repaired claim
@@ -2402,7 +2414,7 @@ REPAIRED_STILL_FLAGGED = {
     # pointing at the note-derived key that carried FP173's conflict line, and
     # C107 dissolved that line, so the key the repair aimed at no longer
     # exists and the mutation lands with no citation at all
-    "rep-figure-cmp-three-way-a955bd06ab",             # C107
+    "rep-figure-cmp-three-way-dcb84c6dec",             # C107
 }
 
 
@@ -2698,28 +2710,24 @@ def test_no_gold_true_content_is_lost_by_the_resolution():
 #: rows from the EVIDENCE TEXT while the verifier now answers from the STORE.
 #: The two disagree on exactly these documents until the corpus cure lands.
 #:
-#: FIVE are still flagged and only the STATUS is wrong (UNSUPPORTED where
+#: THREE are still flagged and only the STATUS is wrong (UNSUPPORTED where
 #: CONTRADICTED is owed): the mutated figure is no longer printed by any held
 #: key, so the claim fails for absence before the field conflict is reached.
 #: No matrix cell moves; the judge bound does (an UNSUPPORTED-and-plausible
 #: claim is the residue `adjudicate` may clear, a CONTRADICTED one is never
 #: shown to it), which is why they are counted here and not waved through:
-#:     con-same-key-cmp-fp254-fp248-currency-93d0bc48ae     EUR 483,633,084
-#:     con-transposed-cmp-fp254-fp248-currency-09ce567999   EUR 1,262,000,000
 #:     con-elsewhere-conf-fp267-gcf-66c7d22a82              $46,10
 #:     con-same-key-id-fp173-gcf-860993c8b8                 US$56.9 million
 #:     con-same-key-noisy-lower-symbols-d8c910c1fe          USD 56.9 million
 #:
-#: FIVE are PROMOTED to SUPPORTED, which is a false negative the matrix counts
-#: (`contradiction_promoted` 0 -> 5, contradicted-arm fn 0 -> 5). Four of the
-#: five state FP173's total_financing figures under the GCF label — C148 made
+#: FOUR are PROMOTED to SUPPORTED, which is a false negative the matrix counts
+#: (`contradiction_promoted` 0 -> 4, contradicted-arm fn 0 -> 4). All four
+#: state FP173's total_financing figures under the GCF label — C148 made
 #: 'USD 598.1 million' that document's CANONICAL total, so a claim stating it
 #: is stating the registry's own reading and clause 1 of
-#: `verify.registry_ruled_compatible` excuses the conflict; the fifth is the
-#: same shape on FP254 after C126. The seeds were certified against the
-#: evidence before the deference was consulted, so the arm and the verifier
-#: are answering from two different data versions:
-#:     con-elsewhere-cmp-fp254-fp248-currency-864ea8658c    $8,000,000
+#: `verify.registry_ruled_compatible` excuses the conflict. The seeds were
+#: certified against the evidence before the deference was consulted, so the
+#: arm and the verifier are answering from two different data versions:
 #:     con-transposed-id-fp173-gcf-de80d6cf88               US$598.1 million
 #:     con-elsewhere-id-fp173-gcf-3b1af4611b                $58.1 million USD
 #:     con-transposed-noisy-lower-symbols-3c3ac5c038        USD 598.1 million
@@ -2728,10 +2736,29 @@ def test_no_gold_true_content_is_lost_by_the_resolution():
 #: This set is the honest measure of the transitional gap. It must SHRINK when
 #: the corpus cure re-extracts these pages; if it grows without a correction
 #: id to point at, something in the contradiction path has been relaxed.
+#:
+#: RE-TAKEN 2026-08-26 (post-cure), 10 -> 7, AND IT SHRANK EXACTLY WHERE THE
+#: PARAGRAPH ABOVE SAID IT WOULD. All three departures are FP254 / C126, the
+#: one document of the five whose pages the cure actually delivered: p.5 of
+#: 22_gcf-b40-02-add16-rev01 now prints 'I. Total GCF funding requested
+#: 258,000,000 USD' — the ratified figure, agreeing with the p.108 print the
+#: store elects — so the arm and the verifier are reading the same data version
+#: on that document for the first time and the disagreement they were measuring
+#: is gone. Two of the three come back CONTRADICTED under new ids (the seed tag
+#: hashes the mutated claim text, and the note the mutation quotes now cites
+#: p.108 rather than the corrected p.5):
+#:     con-transposed-...-09ce567999 -> ...-028512697d   now CONTRADICTED
+#:     con-elsewhere-...-864ea8658c  -> ...-3edbdef237   now CONTRADICTED
+#: and the third, `con-same-key-cmp-fp254-fp248-currency-93d0bc48ae`, LEAVES
+#: THE ARM ALTOGETHER: the same-key shape needs the rival printed on the key
+#: the claim cites, and with the note citing p.108 no held key of that document
+#: carries a rival under the field's own label any more. A seed that cannot be
+#: certified is not seeded — a population change, not a verdict change.
+#:
+#: The seven that remain are the three documents the cure did NOT deliver:
+#: FP267 (C106) and FP173 (C107 + C148), whose served pages still print the
+#: refuted digits in frozen hit text no re-extraction can reach.
 CONTRADICTION_ARM_MISSES: set = {
-    "con-same-key-cmp-fp254-fp248-currency-93d0bc48ae",
-    "con-transposed-cmp-fp254-fp248-currency-09ce567999",
-    "con-elsewhere-cmp-fp254-fp248-currency-864ea8658c",
     "con-elsewhere-conf-fp267-gcf-66c7d22a82",
     "con-same-key-id-fp173-gcf-860993c8b8",
     "con-transposed-id-fp173-gcf-de80d6cf88",

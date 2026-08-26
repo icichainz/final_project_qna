@@ -1076,18 +1076,19 @@ def test_the_corpus_minimum_answers_p3(real):
     #     ratified five-page VLM re-extract worklist of the cross-check session:
     #     FP3's malformed '7 614260' now reads, FP22's dot-leader '38.3' no
     #     longer does, so they cross in opposite directions.
-    # Net: ranked 188 -> 191, excluded 85 -> 82, mantissa bucket 28 -> 25.
+    # Net: ranked 188 -> 191 (cure) -> 193 (the currency-then-scale reader
+        # fix binds two more '25 USD million'-form canonicals; FP155-class).
     assert lines[0].startswith(
         'Registry — SMALLEST GCF funding requested in the corpus: FP35 '
         '"Climate Information Services for Resilient De…" — 22,953 USD '
-        "(p.10, B.2(b)) [240_gcf-b15-13-add08]. Ranked over the 191 of 273 "
+        "(p.10, B.2(b)) [240_gcf-b15-13-add08]. Ranked over the 193 of 273 "
         "documents in the corpus whose registry figure is an unambiguous USD "
         "amount.")
     assert lines[1] == (
-        "Registry — excluded from that comparison: 82 of 273 documents in the "
-        "corpus — 29 state no figure this registry could read for the field; "
-        "25 print a figure whose unit the document's own mantissa contradicts; "
-        "23 state EUR; 5 print no currency at all. Figures in different "
+        "Registry — excluded from that comparison: 80 of 273 documents in the "
+        "corpus — 28 state no figure this registry could read for the field; "
+        "25 state EUR; 22 print a figure whose unit the document's own "
+        "mantissa contradicts; 5 print no currency at all. Figures in different "
         "currencies are never ranked against one another, and a figure printed "
         "without a currency is not assumed to be USD. 1 of the excluded "
         "figures is nominally smaller than the ranked answer, named below.")
@@ -1220,10 +1221,17 @@ def test_the_year_arm_fires_only_for_the_minimum(real):
     case buys nothing; it is available the moment the question says 'corpus'.
     """
     lines = real._extrema_note("Which 2020 proposal requested the least?")
+    # RE-PINNED 2026-08-26 (corpus cure): the ANSWER and the DENOMINATOR are
+    # both unmoved — FP129 at 17,198,843 USD, ranked over 22 of 30 — and only
+    # the way the page prints it moved. The cured p.5 of 146_gcf-b26-02-add01
+    # now reads '| A.8. Total GCF funding requested | 17,198,843 USD |', so the
+    # store records the amount-then-currency form and a properly stopped 'A.8'
+    # where the old extraction gave 'USD 17,198,843' under a mangled 'A8'.
+    # Same figure, same page, same document, better print.
     assert lines[0].startswith(
         "Registry — SMALLEST GCF funding requested in the 2020 funding "
         'proposals: FP129 "Afghanistan Rural Energy Market Transformatio…" — '
-        "USD 17,198,843 (p.5, A8) [146_gcf-b26-02-add01]. Ranked over the 22 "
+        "17,198,843 USD (p.5, A.8) [146_gcf-b26-02-add01]. Ranked over the 22 "
         "of 30 documents in the 2020 funding proposals whose registry figure "
         "is an unambiguous USD amount.")
     # Re-pinned 2026-08-26 (cross-check round): the answer FP129/17,198,843 is
@@ -1256,7 +1264,16 @@ def test_total_financing_is_a_different_field(real):
     # value moves, the holder does not: FP241 is still the corpus maximum by a
     # factor of two over FP166, and the section prints 'corrected' because the
     # ratified row carries no section of its own.
-    assert "3792.6 million USD (p.5, corrected)" in line
+    #
+    # RE-PINNED AGAIN 2026-08-26 (corpus cure): 'corrected' -> 'A.7', and this
+    # is the correction going away because it WON. The cured p.5 now prints
+    # '## A.7. Total financing (GCF + co-finance3) / 3792.6 million USD', so
+    # the figure is read straight off the page under its own labelled heading;
+    # C180 has no misread left to correct and the candidate is an ordinary A.7
+    # reading rather than a ratified overwrite. Value, page, holder and the
+    # caution contrast below are all unchanged — the store simply no longer
+    # needs a decision to say what the document says.
+    assert "3792.6 million USD (p.5, A.7)" in line
     # ...and, unlike the GCF-request maximum since C132, this figure is NOT read
     # from an inferred 'rule:' section, so the note publishes it without the
     # provenance caveat. The pair of assertions is the caution contrast that
