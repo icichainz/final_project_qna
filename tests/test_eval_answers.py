@@ -52,7 +52,9 @@ def test_fixture_parses_and_is_well_formed(cases):
     # 120 -> 150 on 2026-08-26: +25 cases filling the audit's named gaps
     # (untested years/fields, section lookups, total_financing conflicts,
     # year ranges, arity pair) and the first L3 "procedure" class.
-    assert 50 <= len(cases) <= 150, "the answer gold set: 50-150 cases"
+    # 150 -> 200 on 2026-08-26 (Wave 2): +31 cases raising direct document
+    # coverage to 70/273 and asserting all 11 served-but-untested fields.
+    assert 50 <= len(cases) <= 200, "the answer gold set: 50-200 cases"
     assert len({c["id"] for c in cases}) == len(cases)
     for c in cases:
         assert c["expect"]["behavior"] in {"answer", "conflict", "abstain"}
