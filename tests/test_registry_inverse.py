@@ -893,14 +893,14 @@ def test_the_corpus_minimum_answers_p3(real):
     assert lines[0].startswith(
         'Registry — SMALLEST GCF funding requested in the corpus: FP35 '
         '"Climate Information Services for Resilient De…" — 22,953 USD '
-        "(p.10, B.2(b)) [240_gcf-b15-13-add08]. Ranked over the 172 of 273 "
+        "(p.10, B.2(b)) [240_gcf-b15-13-add08]. Ranked over the 188 of 273 "
         "documents in the corpus whose registry figure is an unambiguous USD "
         "amount.")
     assert lines[1] == (
-        "Registry — excluded from that comparison: 101 of 273 documents in the "
-        "corpus — 61 state no figure this registry could read for the field; "
-        "19 print a figure whose unit the document's own mantissa contradicts; "
-        "18 state EUR; 3 print no currency at all. Figures in different "
+        "Registry — excluded from that comparison: 85 of 273 documents in the "
+        "corpus — 29 state no figure this registry could read for the field; "
+        "28 print a figure whose unit the document's own mantissa contradicts; "
+        "23 state EUR; 5 print no currency at all. Figures in different "
         "currencies are never ranked against one another, and a figure printed "
         "without a currency is not assumed to be USD. 1 of the excluded "
         "figures is nominally smaller than the ranked answer, named below.")
@@ -1019,10 +1019,10 @@ def test_the_year_arm_fires_only_for_the_minimum(real):
     assert lines[0].startswith(
         "Registry — SMALLEST GCF funding requested in the 2020 funding "
         'proposals: FP129 "Afghanistan Rural Energy Market Transformatio…" — '
-        "USD 17,198,843 (p.5, A8) [146_gcf-b26-02-add01]. Ranked over the 19 "
+        "USD 17,198,843 (p.5, A8) [146_gcf-b26-02-add01]. Ranked over the 21 "
         "of 30 documents in the 2020 funding proposals whose registry figure "
         "is an unambiguous USD amount.")
-    assert lines[1].startswith("Registry — excluded from that comparison: 11 "
+    assert lines[1].startswith("Registry — excluded from that comparison: 9 "
                                "of 30 documents in the 2020 funding proposals")
     assert real._extrema_note("Which 2020 proposal requested the largest GCF "
                               "funding?") == []

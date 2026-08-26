@@ -15,6 +15,16 @@ How it works
    pass found nothing at all. Every LLM-proposed raw string is verified to be a
    literal substring of the page it claims, or it is dropped. LLM candidates are
    never marked canonical.
+3. Ratified data decisions (2026-08-26). Two files under data/, read here so
+   that data/registry_v2.json is a BUILD PRODUCT and is never hand-edited:
+   `registry_corrections.json` (58 adjudicated-wrong values plus four ratified
+   riders, each with the corrected figure, the page that prints it and the
+   quoted print) and
+   `registry_absences.json` (51 confirmed (document, field) absences plus the
+   corpus-level finding that no document prints its own GCF Board approval
+   date). What they change is recorded per document under `meta`; a document
+   named by neither file is byte-identical to a build without them. Pass
+   --no-decisions to build the pre-ratification baseline.
 
 Nothing is ever invented: a candidate always carries the exact source text
 (`raw`). If that text does not parse into a number — or if the page contradicts
@@ -27,11 +37,25 @@ coverage.suspect instead of being shipped as a clean fact.
   python scripts/build_registry_v2.py --limit 5       # smoke test
   python scripts/build_registry_v2.py --no-llm        # deterministic pass only
   python scripts/build_registry_v2.py --only fp274    # substring filter on doc id
+  python scripts/build_registry_v2.py --dry-run --out /tmp/reg.json   # nothing written
+                                                     # under data/, no model call
+  python scripts/build_registry_v2.py --dry-run --no-fallback --out /tmp/base.json
+                                                     # the strict-rules baseline
+  python scripts/build_registry_v2.py --dry-run --no-decisions --out /tmp/pre.json
+                                                     # before the ratified corrections
+  python scripts/build_registry_v2.py --dry-run --no-decisions --no-extra-rules \
+      --out /tmp/A.json                              # ... and before the new fields
 
 Candidate schema (one entry per source location):
   {"raw": "<exact source text>", "value": <number|null>, "currency": "USD"|"EUR"|null,
    "unit": "million"|"thousand"|"billion"|"years"|"months"|null,
    "page": <int>, "section": "A.8", "status": "canonical"|"supporting"|"conflicting"}
+
+A candidate corrected by a ratified decision carries two more keys:
+  "corrected": true, "corrected_from": {<the candidate as it was shipped>}
+and on such a candidate `raw` is the RATIFIED figure rather than a literal
+page string — the page's own print is quoted in meta.corrections[].quote.
+Everywhere else `raw` keeps its usual contract of being copied from the page.
 
 status semantics
   canonical    the template-section value (A.7/A.8/... , or the best available
@@ -193,8 +217,26 @@ _ONLY_PLACEHOLDER = re.compile(r"[\s|(),;:*-]*(?:enter\s+(?:amount|number|years?
                                r"[\s|(),;:*-]*", re.I)
 
 
+# The 'e.g.' arm of _NOISE_BEFORE is dot-optional, so 'e' + optional space +
+# 'g' fires on ordinary words: 'by the GCF\n\n32.8 million Euros' reads as an
+# example and A.8's value is dropped (FP230). This arm demands a real dot. It
+# is used ONLY by the fallback pass, so no shipped reading moves.
+_NOISE_BEFORE_STRICT = re.compile(
+    r"(?:enter\s+(?:number|amount)|e\.\s?g\.?|eg\.|example|page|version|v\.)[^\d]{0,6}$", re.I)
+# markdown emphasis between a figure and the unit word that scales it
+# ('| **37.6** million USD ($) |'). Emphasis is markup, not print, so the
+# fallback pass reads the window with it removed; `raw` then carries the
+# printed text without the markdown, exactly as read_text already does.
+_EMPH = re.compile(r"\*\*|__")
+# 'US$ 1,358.0/tonne' under 'Total Programme financing' is a unit cost, not the
+# programme's financing. Fallback-only, alongside the tightened noise guard.
+_PER_UNIT = re.compile(r"^\s{0,2}(?:/|per\s)\s?(?:t\b|ton|tonne|tco2|ha\b|capita|"
+                       r"year|yr\b|person|household|beneficiar)", re.I)
+
+
 def read_amounts(window: str, limit: int = 1,
-                 skip_lines: Optional[re.Pattern] = None) -> List[dict]:
+                 skip_lines: Optional[re.Pattern] = None,
+                 loose: bool = False) -> List[dict]:
     """Up to `limit` money amounts from distinct lines of a value window.
 
     A template block often prints several figures under one label ('Total GCF
@@ -208,7 +250,7 @@ def read_amounts(window: str, limit: int = 1,
     starts = [0]
     for ln in window.split("\n"):
         starts.append(starts[-1] + len(ln) + 1)
-    for p in _iter_amounts(window):
+    for p in _iter_amounts(window, loose):
         at = p.pop("_at")
         line = window.count("\n", 0, at)
         if line in lines_used:
@@ -230,12 +272,14 @@ def read_amount(window: str) -> Optional[dict]:
     return got[0] if got else None
 
 
-def _iter_amounts(window: str):
+def _iter_amounts(window: str, loose: bool = False):
     """Every real money amount in a window, in order.
 
     Skips template placeholders ('Enter amount'), percentages, durations and
     bare years. `raw` is the exact source substring that was read.
+    `loose` swaps in the dot-requiring 'e.g.' guard (fallback pass only).
     """
+    noise = _NOISE_BEFORE_STRICT if loose else _NOISE_BEFORE
     for m in _AMOUNT_RE.finditer(window):
         num = m.group("num")
         # 'USD35 million' glues the currency to the figure: that is a currency
@@ -245,9 +289,11 @@ def _iter_amounts(window: str):
         # guard must not read the 'D' of USD as the glue
         before = _CUR_TAIL.sub("", window[max(0, head - 24):head])
         after = window[m.end("num"):m.end("num") + 24]
-        if _NOISE_BEFORE.search(before) or _GLUED.search(before):
+        if noise.search(before) or _GLUED.search(before):
             continue
         if _NOT_MONEY_AFTER.match(after):
+            continue
+        if loose and _PER_UNIT.match(after):
             continue
         val = to_number(num)
         if val is None or val == 0:
@@ -372,6 +418,67 @@ def read_ess(window: str) -> Optional[dict]:
     return None
 
 
+# A printed date, in the forms the corpus prints them. Taken verbatim from the
+# H9 cover-page probe that measured the two date fields below (69 / 42
+# documents), so the rules read exactly what the diagnosis counted.
+_DATE = (r"(?:\d{1,2}[ /.-]\d{1,2}[ /.-]\d{2,4}|\d{4}[/-]\d{1,2}[/-]\d{1,2}"
+         r"|\d{1,2}\s+(?:January|February|March|April|May|June|July|August|September|"
+         r"October|November|December)\s+\d{4}"
+         r"|(?:January|February|March|April|May|June|July|August|September|October|"
+         r"November|December)\s+\d{1,2},?\s+\d{4})")
+_DATE_RE = re.compile(_DATE, re.I)
+# 'N/A' under a date label is the template saying the field does not apply — it
+# is not a date, and recording it as one would be inventing a fact
+_DATE_NOT_A_DATE = re.compile(r"^\W{0,4}(?:n\.?/?a\.?|tbd|tbc|not applicable|none|-+)\W{0,4}$",
+                              re.I)
+
+
+# the cover table's OTHER labelled rows. A date label whose own cell is empty
+# ('Expected approval from accredited entity\'s Board (if applicable) | TBD')
+# must not read the next row's date ('Estimated implementation start and end
+# date | Start: 01/12/2020') — that would publish a start date as an approval
+# date. Used as the extra window terminator of the EXTRA pass only.
+_STOP_DATE = re.compile(
+    r"[\s|\-–*>#]{0,8}(?:Estimated\s+implementation|Expected\s+financial\s+close"
+    r"|Expected\s+lifetime|Project\s*/?\s*programme?\s+lifespan|Total\s+lifespan"
+    r"|Project\s+contact|Contact\s+person|ES[SG]\s+category|Project\s+size"
+    r"|Financial\s+instrument|Implementation\s+period|Total\s+financing|Total\s+GCF"
+    r"|Results?\s+area|Sector\b|Modality|Accredited\s+[Ee]ntit|Countr(?:y|ies)\b"
+    r"|Date\s+of\s+\w{0,9}\s?submission|Expected\s+approval|(?:Expected|Estimated)\s+date"
+    r"|Environmental\s+and\s+social)", re.I)
+
+
+def read_date(window: str, skip_lines: Optional[re.Pattern] = None) -> Optional[dict]:
+    """The first printed date in the window, kept exactly as printed.
+
+    `value` stays null: a date is not a number, and the corpus prints forms that
+    cannot be disambiguated without inventing something ('[2020/13/05]',
+    '25 June 2018; V2 28 May 2019'). The raw print is the fact; parsing it into
+    an ISO date is a decision for whoever serves the field, not for the store.
+    """
+    for line in window.split("\n")[:4]:
+        v = line.strip().strip("|").strip()
+        v = re.sub(r"^[\s#>*\-–:.]+", "", v)
+        v = re.sub(r"\s*\|\s*", " | ", v).strip(" |")
+        v = re.sub(r"\*\*|__", "", v).strip()
+        if not v or _DATE_NOT_A_DATE.match(v) or _PLACEHOLDER.search(v):
+            continue
+        if skip_lines and skip_lines.search(v):
+            continue                      # a date about somebody ELSE's approval
+        m = _DATE_RE.search(v)
+        if not m:
+            continue
+        # the template also prints an explanatory sentence under the label and
+        # ends it with the date ('This is the date that the Accredited Entity
+        # ... (if applicable): 6/15/2020'). Clipping that line at 120 characters
+        # would publish a fact whose own raw does not contain the date, so a
+        # date printed far into a long line is quoted on its own.
+        raw = v[:120] if m.start() < 60 and len(v) <= 120 else m.group(0)
+        return {"raw": raw, "value": None, "currency": None, "unit": None,
+                "_grain": 0.0}
+    return None
+
+
 def read_text(window: str) -> Optional[dict]:
     """First non-empty, non-placeholder text value in the window."""
     for line in window.split("\n"):
@@ -402,23 +509,46 @@ _PREFIX = r"(?:^|\n)[ \t#>*|\-–]{0,24}(?:\([^)\n]{1,14}\)[ \t]{0,4}){0,2}[ \t*
 _SEC = r"(?:(?P<sec>[A-H][.\s]?\s?\d{1,2}(?:\s?[.]\s?\d{1,2}){0,2})\s*[.):\-–]?\s*\**[ \t]*)?"
 
 
-def _mk(label: str, terminated: bool) -> re.Pattern:
+# A fallback label often sits behind an enumerator the strict prefix does not
+# model — 'a) A funding proposal titled', '(b) Requested GCF amount' — or
+# behind one the extraction mangled: 'A.B. Total GCF funding requested'
+# (FP268), '* B. GCF financing to recipient' (b20-10-add04). Only the fallback
+# pass uses this prefix, and only for a field the document has NO candidate
+# for, so a looser prefix can never re-read a document the strict rules read.
+_ENUM = r"(?:\([^)\n]{1,14}\)[ \t]{0,4}|\(?[A-Za-z0-9]{1,3}[.)][ \t]{0,4}){0,3}"
+_PREFIX_LOOSE = r"(?:^|\n)[ \t#>*|\-–]{0,24}" + _ENUM + r"[ \t*]{0,4}"
+
+
+def _mk(label: str, terminated: bool, loose: bool = False) -> re.Pattern:
     """Label regex. `terminated` (text fields) demands that the label is followed
     by ':' , '|' or the end of the line — 'Programme Title: X' and '| Title | X |'
     are field labels, 'the Accredited Entity shall ...' is prose."""
     tail = r"[ \t]*\**" + (r"(?=[ \t]*(?:[:|]|$|\n))" if terminated else "") + r"[ \t]*[:|.\-–]?"
-    return re.compile(_PREFIX + _SEC + r"\**[ \t]*(?:" + label + r")" + tail, re.I)
+    prefix = _PREFIX_LOOSE if loose else _PREFIX
+    return re.compile(prefix + _SEC + r"\**[ \t]*(?:" + label + r")" + tail, re.I)
 
 
 class Rule:
-    """One labelled source of one field."""
+    """One labelled source of one field.
+
+    `fallback` rules are consulted in a second pass, and only for a field the
+    strict pass left with no candidate at all. That is what keeps the parser
+    additive: a document the shipped rules already read cannot change.
+    """
 
     def __init__(self, field, label, section, kind, rank=0, max_page=None, window=(6, 400),
-                 amounts=1, skip_lines=None):
+                 amounts=1, skip_lines=None, fallback=False, era=None,
+                 only_if_missing=False, label_note=None):
         self.field, self.section, self.kind, self.rank = field, section, kind, rank
         self.max_page, self.window, self.amounts = max_page, window, amounts
+        self.fallback = fallback
+        # EXTRA_RULES only: the template family the rule is written for, whether
+        # it may fire at all when the field already has a candidate, and the
+        # label AS PRINTED when it differs from the field's name (kept in the
+        # candidate's section, the way an instrument row keeps 'A.10 Grant')
+        self.era, self.only_if_missing, self.label_note = era, only_if_missing, label_note
         self.skip_lines = re.compile(skip_lines, re.I) if skip_lines else None
-        self.re = _mk(label, terminated=(kind == "text"))
+        self.re = _mk(label, terminated=(kind in ("text", "date")), loose=fallback)
 
 
 # lines inside a value window that belong to a DIFFERENT field: their figure may
@@ -441,6 +571,11 @@ _GCF_REQ_A8 = (r"Total GCF funding(?:\s+(?:requested|required))?|GCF funding req
                r"|Amount of GCF funding requested")
 _GCF_REQ_C1 = r"(?:Requested|Received) GCF funding|Total funding requested"
 _GCF_REQ_B2 = r"Requested GCF amount|GCF fin(?:ancing|ance) to recipient"
+# lines inside a TOTAL-financing window that state the GCF part instead: FP233
+# prints 'A7 Total funding required (GCF + co-financing)' over two rows, the
+# request and the total, and the request is not a second reading of the total.
+_NOT_TOTAL_LINE = (r"GCF funding requ|Total GCF funding|requested GCF|co[\s\-]?financ"
+                   r"|co[\s\-]?funding|counterpart|in[\s\-]?kind")
 
 RULES: List[Rule] = [
     # --- cover / section A.1 identity -------------------------------------
@@ -493,6 +628,133 @@ RULES: List[Rule] = [
          rank=0),
 ]
 
+# ---------------------------------------------------------------------------
+# fallback rules: template VARIANTS, consulted only for a field the strict pass
+# left empty
+# ---------------------------------------------------------------------------
+# Every entry below was written against a document the strict rules leave with
+# no candidate for that field, and each names the corpus evidence it was
+# written for. Because the fallback pass runs per field and only when that
+# field is empty, adding one can never move a value the strict rules found.
+FALLBACK_RULES: List[Rule] = [
+    # 'Program title' (one m) is the REDD+ RBP cover's spelling and the v1
+    # template's 'A.1.1 Project / program title'; 'Projects/Programme title'
+    # and 'Project (programme) title' are extraction spellings of the same
+    # label.  b27-02-add04, b23-02-add04, b22-10-add02, b30-02-add07,
+    # b15-13-add01, b14-07-add10, b11-04-add03, b35-02-add07.
+    Rule("title", r"(?:Projects?\s*[/&(]{0,2}\s*)?(?:or\s+)?[Pp]rogramm?e?\)?\s*title"
+                  r"|Project\s*title",
+         "A.1.1", "text", rank=0, max_page=TEXT_FIELD_MAX_PAGE, fallback=True),
+    # the addendum cover line, in the forms the strict rank-1 rule misses:
+    # 'a) A funding proposal SUMMARY titled', 'THE funding proposal titled'.
+    Rule("title", r"(?:[a-z]\s*[.)]\s*)?(?:An?|The|This)\s+funding proposal"
+                  r"(?:\s+(?:summary|package))?\s+(?:titled|entitled)",
+         "cover", "text", rank=1, max_page=4, fallback=True),
+    # 'Country/cities' and 'Country/countries' are extraction spellings of
+    # 'Country(ies)'; 'A.1.2 Country location' is the v1 label. b39-02-add08,
+    # b36-02-add02, b16-07-add05.
+    Rule("countries", r"Countr(?:y|ies)\s*[/&]\s*(?:cities|countries|regions?|areas?)"
+                      r"|Country location|Country of implementation",
+         "A.1.3", "text", rank=0, max_page=TEXT_FIELD_MAX_PAGE, fallback=True),
+    # 'Accredited Entities' (plural cover, b42-02-add10) and 'Accrediting
+    # Entity' (b26-02-add03).
+    Rule("accredited_entity", r"Accredit(?:ed|ing)\s+[Ee]ntit(?:y|ies)(?:\s*\(\s?i?e?s?\s?\))?",
+         "A.1.5", "text", rank=0, max_page=TEXT_FIELD_MAX_PAGE, fallback=True),
+
+    # A.7 / A.8 behind a mangled enumerator ('A.B. Total GCF funding
+    # requested', b42-02-add10) or behind the 'e.g.' guard ('by the GCF' ahead
+    # of the figure, b38-02-add10).
+    Rule("total_financing", _TOTAL_FIN_A7 + r"|Total funding requi?red(?:\s*\([^)\n]{0,40}\))?"
+                                            r"|Total funding\s*\((?:GCF|SCF)[^)\n]{0,40}\)",
+         "A.7", "amount", rank=0, amounts=3, skip_lines=_NOT_TOTAL_LINE, fallback=True),
+    Rule("gcf_funding_requested",
+         _GCF_REQ_A8 + r"|GCF\s+total\s+(?:\w+\s+){0,2}funding\s+requested",
+         "A.8", "amount", rank=0, amounts=3, skip_lines=_NOT_GCF_LINE, fallback=True),
+    # 'Total project finance' without the -ing (b14-07-add08) and the
+    # emphasis-split '| **37.6** million USD ($) |' (b21-10-add06).
+    Rule("total_financing", r"Total (?:project|programme|program)\s+financ(?:ing|e)"
+                            r"|Total (?:project|programme|program)\s+cost",
+         "B.2(a)", "amount", rank=1, window=(8, 500), fallback=True),
+    # the v1 B.2(b) block's own total row. The strict B.2(b) rule opens on
+    # 'Requested GCF amount' but its 8-line window closes before this row,
+    # which is what the block actually sums to.
+    Rule("gcf_funding_requested",
+         r"Total requested(?:\s+financing)?(?:\s*\([^)\n]{0,60}\))?",
+         "B.2(b)", "amount", rank=2, window=(12, 700), skip_lines=_NOT_GCF_LINE,
+         fallback=True),
+    # B.2(b) label spellings the strict rule does not carry.
+    Rule("gcf_funding_requested",
+         r"(?:Requested|Required|Disaggregated)\s+GCF\s+amount"
+         r"|(?:Total\s+)?GCF\s+funds\s+requested"
+         r"|GCF fin(?:ancing|ance) to recipient",
+         "B.2(b)", "amount", rank=2, window=(12, 700), skip_lines=_NOT_GCF_LINE,
+         fallback=True),
+]
+
+# ---------------------------------------------------------------------------
+# EXTRA rules: the owner-ratified data decisions of 2026-08-26, run in a THIRD
+# pass with its own pre-filter
+# ---------------------------------------------------------------------------
+# Why a third pass rather than more entries in the two above: adding a label to
+# `_ANY_LABEL` / `_ANY_LABEL_FB` widens which PAGES those passes scan, and a
+# page they did not scan before can hand an existing field a new candidate. A
+# separate pass with its own pre-filter cannot: the strict and fallback passes
+# see exactly the pages they saw before, and this one may only write a field it
+# is named for.
+#
+# Two of the three rules add NEW fields. They are honestly named after the
+# labels they read and they are NOT approval dates: the H9 sweep found that no
+# document in the corpus prints its own GCF Board approval date (0 true
+# positives in 273), because the approval is created by the Board decision
+# document, which is not in this corpus. Nothing here may be reached by an
+# approval-shaped question — that mapping does not exist and must not be added
+# without the field being renamed first.
+_A1X_ERAS = ("A.1.x block (FP template v1)",
+             "A.1.x block (FP template v1, variant numbering)")
+
+EXTRA_RULES: List[Rule] = [
+    # 'Date of first submission' / 'Date of current submission' / 'A.1.9 Date of
+    # submission' — a date printed beside the label in 69 of 273 documents. The
+    # '/ version number' tail is part of the label in the v2/v3 cover, and
+    # binding it is what keeps 'Date of first submission/version number:
+    # 2020-03-11[v.1' out of the accredited-entity slot it bled into (FP144).
+    Rule("date_of_submission",
+         r"Date of (?:first|current|second|third|initial)?\s*submission"
+         r"(?:\s*/\s*version\s*number)?",
+         "A.1.9", "date", rank=0, max_page=15, window=(4, 200)),
+    # 'A.13 Expected date of AE internal approval' / 'Expected approval from
+    # accredited entity's Board' — the ACCREDITED ENTITY's own internal board,
+    # dated in 42 of 273 documents. Not the GCF Board, and not an approval that
+    # has happened: the label itself says 'expected'.
+    Rule("ae_board_approval_date",
+         r"(?:Expected\s+)?approval\s+from\s+accredited\s+entity'?s?\s+Board"
+         r"(?:\s+of\s+Directors)?(?:\s*\([^)\n]{0,30}\))?"
+         r"|(?:Expected|Estimated)\s+date\s+of\s+AE\s*(?:internal)?\s*approval",
+         "A.13", "date", rank=0, max_page=15, window=(4, 200),
+         # the template's own explanatory sentence sometimes carries the date,
+         # and sometimes carries a sentence about the GCF Board's decision
+         # instead ('IDB approval ... will follow GCF board approval on
+         # 15/03/2022'). That date is not this field, and H9 says the corpus
+         # never prints this proposal's GCF approval date at all.
+         skip_lines=r"GCF\s*board|Board of the Green Climate Fund|GCF\s+Board's"),
+    # OWNER RATIFICATION 2026-08-26 (3): in the earliest template the slot that
+    # later reads 'Accredited entity' is printed 'A.1.5 Implementing entity'
+    # (273_gcf-b11-04-add01, the only document in the corpus that turns on it).
+    # Mapping the two is a decision about what the field MEANS, which is why the
+    # diagnosis left it to the owner. Era-gated to the v1 families and consulted
+    # only when the document has no accredited_entity at all, so it can neither
+    # rename a modern AE nor displace one the other passes read. The printed
+    # label rides along in the section.
+    Rule("accredited_entity", r"Implementing\s+[Ee]ntit(?:y|ies)", "A.1.5", "text",
+         rank=3, max_page=TEXT_FIELD_MAX_PAGE, era=_A1X_ERAS, only_if_missing=True,
+         label_note="Implementing entity"),
+]
+
+_ANY_LABEL_EXTRA = re.compile(
+    r"Date of \w{0,8}\s?submission|date of AE|approval from accredited entity"
+    r"|Implementing\s+[Ee]ntit", re.I)
+
+
 # every label word at once: one cheap pre-filter search per page, so pages that
 # cannot carry a template field never run the full rule set
 _ANY_LABEL = re.compile(
@@ -502,6 +764,16 @@ _ANY_LABEL = re.compile(
     r"|Expected (?:mitigation|adaptation)|Accredited\s+[Ee]ntity|Countr(?:y|ies)"
     r"|programme?\s*title|Project title|Executing [Ee]ntity|National designated authority"
     r"|funding proposal (?:titled|entitled)|Project size", re.I)
+
+# the same pre-filter for the fallback pass: its labels are variants the strict
+# one does not carry, so a page that only prints 'Total requested' or
+# 'Program title' must still be scanned.
+_ANY_LABEL_FB = re.compile(
+    r"Total requested|Requested GCF amount|Required GCF amount|Disaggregated GCF amount"
+    r"|GCF funds requested|GCF fin\w+ to recipient|Total GCF funding"
+    r"|Total (?:project|programme|program) (?:financ\w+|cost)|Total financing"
+    r"|Program\w*\s*title|Project\s*[/(]|Countr(?:y|ies)\s*[/&]|Country location"
+    r"|Accredit\w+\s+[Ee]ntit|funding proposal", re.I)
 
 # a value window ends at the next labelled field. The bullet/pipe prefix matters:
 # '- **A.8.1 Total GCF funding requested:**' is the next field even though it is
@@ -522,12 +794,23 @@ _DIRECT_RE = re.compile(r"(?P<num>" + _NUM + r")[ \t]{0,3}(?P<kind>direct|indire
                         re.I)
 
 
-def _window(body: str, start: int, max_lines: int, max_chars: int) -> str:
+# fallback-only window terminator. In the v1 template only the CO-FINANCING and
+# the GCF-to-AE tables carry a 'Name of Institution' column and a 'Lead
+# financing institution' line: a (b)-block window that reaches one of those has
+# left the GCF request behind, and the first amount past it belongs to a
+# co-financier ('Total requested (a)+(b)+(c)... | Senior Loans | 99,596,000 |
+# ADB' is the ADB loan, not the request). Strict rules never see this.
+_STOP_FB = re.compile(r"[^\n]{0,200}?\b(?:Name of Institutions?|Lead financing institution)\b",
+                      re.I)
+
+
+def _window(body: str, start: int, max_lines: int, max_chars: int,
+            stop_extra: Optional[re.Pattern] = None) -> str:
     seg = body[start:start + max_chars * 3]
     lines = seg.split("\n")
     out = [lines[0]]
     for ln in lines[1:max_lines]:
-        if _STOP.match(ln):
+        if _STOP.match(ln) or (stop_extra and stop_extra.match(ln)):
             break
         out.append(ln)
     return "\n".join(out)[:max_chars]
@@ -549,6 +832,10 @@ def _sec_key(c: dict) -> str:
 
 
 def _cand(rule: Rule, page: int, sec: Optional[str], parsed: dict, suffix: str = "") -> dict:
+    # a rule that reads a field out of a DIFFERENTLY LABELLED template slot keeps
+    # the printed label in the section, so the provenance says which words the
+    # page actually used ('A.1.5 Implementing entity')
+    suffix = suffix or (" " + rule.label_note if rule.label_note else "")
     return {"raw": parsed["raw"], "value": parsed.get("value"),
             "currency": parsed.get("currency"), "unit": parsed.get("unit"),
             "page": page, "section": _norm_sec(sec, rule.section) + suffix,
@@ -560,20 +847,64 @@ def _cand(rule: Rule, page: int, sec: Optional[str], parsed: dict, suffix: str =
                                                        "beneficiaries", "ess", "text")}
 
 
-def extract_candidates(pages: List[Tuple[int, str]]) -> Dict[str, List[dict]]:
-    """Deterministic pass over one document's pages -> {field: [candidate, ...]}."""
+def extract_candidates(pages: List[Tuple[int, str]],
+                       fallback: bool = True, era: Optional[str] = None,
+                       extra_rules: bool = True) -> Dict[str, List[dict]]:
+    """Deterministic pass over one document's pages -> {field: [candidate, ...]}.
+
+    Three passes. The strict pass is RULES, unchanged. The fallback pass is
+    FALLBACK_RULES and is restricted to the fields the strict pass left with no
+    candidate at all — the template VARIANTS, read with the relaxed number
+    guards. A document whose fields the strict pass read is therefore
+    bit-for-bit unaffected by anything in the second pass.
+
+    The third pass is EXTRA_RULES (the ratified data decisions of 2026-08-26):
+    its own pre-filter, its own labels, and it may only write a field it is
+    named for — two new date fields, plus the era-gated 'Implementing entity'
+    reading of accredited_entity. `era` gates that last one; passing None means
+    'no era known', and an era-gated rule then does not fire.
+    """
+    out = _scan(pages, RULES, _ANY_LABEL)
+    if fallback:
+        missing = {r.field for r in FALLBACK_RULES} - set(out)
+        if missing:
+            got = _scan(pages, [r for r in FALLBACK_RULES if r.field in missing],
+                        _ANY_LABEL_FB, loose=True)
+            for f, cs in got.items():
+                if f in missing and cs:         # never touch a field already read
+                    out[f] = cs
+    if not extra_rules:
+        return out
+    rules = [r for r in EXTRA_RULES
+             if (not r.era or (era in r.era))
+             and not (r.only_if_missing and r.field in out)]
+    if not rules:
+        return out
+    got = _scan(pages, rules, _ANY_LABEL_EXTRA)
+    for f, cs in got.items():
+        if f not in out and cs:                 # never touch a field already read
+            out[f] = cs
+    return out
+
+
+def _scan(pages: List[Tuple[int, str]], rules: List["Rule"], prefilter: re.Pattern,
+          loose: bool = False) -> Dict[str, List[dict]]:
     out: Dict[str, List[dict]] = {}
     for page, body in pages:
-        if not _ANY_LABEL.search(body):
+        if not prefilter.search(body):
             continue
-        for rule in RULES:
+        for rule in rules:
             if rule.max_page and page > rule.max_page:
                 continue
             for m in rule.re.finditer(body):
-                win = _window(body, m.end(), *rule.window)
+                win = _window(body, m.end(), *rule.window,
+                              stop_extra=(_STOP_FB if loose else
+                                          _STOP_DATE if rule.kind == "date" else None))
+                if loose:
+                    win = _EMPH.sub("", win)
                 sec = m.groupdict().get("sec")
                 if rule.kind == "amount":
-                    for p in read_amounts(win, rule.amounts, rule.skip_lines):
+                    for p in read_amounts(win, rule.amounts, rule.skip_lines, loose):
                         out.setdefault(rule.field, []).append(_cand(rule, page, sec, p))
                 elif rule.kind == "count":
                     p = read_count(win)
@@ -589,6 +920,11 @@ def extract_candidates(pages: List[Tuple[int, str]]) -> Dict[str, List[dict]]:
                         c = _cand(rule, page, sec, p)
                         c["raw"] = p["_text"]
                         out.setdefault(rule.field, []).append(c)
+                elif rule.kind == "date":
+                    p = read_date(win, rule.skip_lines)
+                    if p:
+                        out.setdefault(rule.field, []).append(
+                            _cand(rule, page, sec, p, suffix=_label_text(m, sec)))
                 elif rule.kind == "text":
                     p = read_text(win)
                     if p:
@@ -598,6 +934,19 @@ def extract_candidates(pages: List[Tuple[int, str]]) -> Dict[str, List[dict]]:
                 elif rule.kind == "instruments":
                     _read_instruments(out, rule, page, sec, win)
     return out
+
+
+def _label_text(m: re.Match, sec: Optional[str]) -> str:
+    """The label AS PRINTED, for the section of a candidate whose field name is
+    not the label ('rule:A.1.9 Date of current submission'). Two submission
+    dates are printed under two different labels; without this the store would
+    hold two dates and no way to say which is which."""
+    lab = m.group(0)
+    if sec:
+        lab = lab.replace(sec, " ", 1)
+    lab = re.sub(r"\([^)]*\)", " ", lab)             # '(if applicable)' is not the label
+    lab = re.sub(r"[*#>|\-–:.\s]+", " ", lab).strip()
+    return " " + lab if lab and len(lab) <= 48 else ""
 
 
 def _read_beneficiaries(out, rule, page, sec, win):
@@ -799,25 +1148,555 @@ _ERA_MODERN = re.compile(r"A[.\s]?\s?7[.\s)]{0,3}\s*\**\s*Total (?:project )?fin
                          r"|A[.\s]?\s?8[.\s)]{0,3}\s*\**\s*Total GCF funding", re.I)
 _ERA_OLD = re.compile(r"A[.\s]?1[.\s]\s?[15][.\s)]{0,3}\s*\**\s*(?:Project\s*/|Accredited)", re.I)
 
+# --- template families the two rules above do not name -----------------------
+# The REDD+ results-based-payment pilot (Decision B.18/07) is its OWN funding
+# proposal template: a cover of Programme Title / Country / Results period /
+# NDA / REDD-plus entity / Accredited Entity, then sections A-E about carbon
+# results. It has no A.7 and no A.8, so it can never look 'modern', and calling
+# it 'unrecognized' hid the fact that its financing fields do not exist.
+_ERA_RBP = re.compile(
+    r"(?m)^\W{0,10}REDD[\s\-+]*(?:plus)?[\s\-]+results[\s\-]?based[\s\-]?payments?\b"
+    # ... or the RBP cover's own field, which no other template has, for the
+    # extractions that lost the heading (b24-02-add06)
+    r"|REDD[\s\-+]*(?:plus)?\s+entity\s*[/\s]\s*(?:focal|local|fiscal)\s*point", re.I)
+# The v2/v3 cover, identified by its A.9-A.21 labels rather than by A.7/A.8:
+# an extraction that drops or garbles the two financing headings (FP226's page
+# 5, FP268's 'A.B.') is still that template. Three distinct labels, so a stray
+# 'A.14' in prose cannot carry the vote.
+# Counted by LABEL, not by number: FP214's extraction renumbered the whole
+# block ('A.0. Financial instruments', 'A.1. Implementation period', 'A.2.
+# Total lifespan') and FP226's dropped A.7/A.8 altogether, yet both are plainly
+# this template. Three distinct labels, so one stray heading cannot decide it.
+_MODERN_TAG = re.compile(
+    r"(?m)^\W{0,10}A[.\s]?\s?\d{1,2}[.\s):]?\s*\**\s*"
+    r"(?P<t>Project size|Financial instruments?|Financial benefits"
+    r"|Implementation period|Total lifespan|ESS? category"
+    r"|Environmental and social(?: risk)? category|Executing [Ee]ntity information"
+    r"|Expected date of AE|Estimated date of AE|Has this FP|Is this FP"
+    r"|Complementarity and coherence|Executive summary|Result areas?)", re.I)
+# ... and the v1 cover by its A.1.x / A3.x identity block, whatever wording
+# follows the number ('A.1.2 Project or programme title', 'A3.5a Accredited
+# entity', 'A.5. Accredited entity').
+_OLD_TAG = re.compile(
+    r"(?m)^\W{0,10}A\.?\s?\d{1,2}(?:\.\s?\d{1,2}[a-z]?)?[.\s):]\s*\**\s*"
+    r"(?P<t>Project\W{0,4}(?:or\s+)?(?:programm?e?)?\W{0,2}title|Project or programme"
+    r"|Accredited entity|Approved entity|Implementing entity|Executing entity"
+    r"|Countr(?:y|ies)|National designated authority|Project size category"
+    r"|Access modality|Mitigation\s*/\s*adaptation focus)", re.I)
+# the B.11-era 'funding proposal SUMMARY': a free-form summary the Board
+# considered before the A/B template existed. Not a defect and not out of
+# scope — a document class with no template block to parse.
+_ERA_SUMMARY = re.compile(
+    r"(?m)^#{1,4}\s*Funding Proposal Summary\b"
+    r"|A funding proposal summary (?:titled|entitled)", re.I)
+# Board notices that are not proposals at all: withdrawals, corrigenda, status
+# papers. Consulted last, so a proposal that merely mentions a withdrawal in
+# prose is already classified by then.
+_ERA_NOTICE = re.compile(
+    r"has been withdrawn (?:from|by|at)|been withdrawn from consideration"
+    r"|(?m:^#{1,3}\s*Status of approved funding proposals)"
+    r"|(?m:^#{1,3}[^\n]{0,80}Corrigendum\s*$)", re.I)
+
 CORE_FIELDS = ["title", "countries", "accredited_entity",
                "total_financing", "gcf_funding_requested"]
 
 
 def era_of(text: str) -> str:
+    """The template family the document belongs to.
+
+    The first two branches are the shipped ones and are consulted first, so no
+    document they already name can be renamed here. Everything after them only
+    ever splits what used to be called 'unrecognized template'.
+    """
     if _ERA_MODERN.search(text):
         return "A5-A14 block (FP template v2/v3)"
     if _ERA_OLD.search(text):
         return "A.1.x block (FP template v1)"
+    if _ERA_RBP.search(text[:120000]):
+        return "REDD+ RBP block (RBP pilot template v1.0)"
+    if len({m.group("t").lower() for m in _MODERN_TAG.finditer(text)}) >= 3:
+        return "A5-A14 block (FP template v2/v3, variant numbering)"
+    if len({m.group("t").lower() for m in _OLD_TAG.finditer(text)}) >= 3:
+        return "A.1.x block (FP template v1, variant numbering)"
+    if _ERA_NOTICE.search(text):
+        return "board notice (not a proposal template)"
+    if _ERA_SUMMARY.search(text[:20000]):
+        return "funding proposal summary (pre-template, B.11 era)"
     return "unrecognized template"
+
+
+# ---------------------------------------------------------------------------
+# ratified data decisions: corrections and confirmed absences
+# ---------------------------------------------------------------------------
+# Two data files, both ratified by the owner on 2026-08-26, both consumed here
+# so that data/registry_v2.json is never hand-edited:
+#
+#   data/registry_corrections.json  62 ratified rows: the 58 the adjudication
+#       proved WRONG, plus the four RIDERS carried inside CONFIRMED rows
+#       ("keep, but also ..."), ratified in their own session. Each
+#       names the document, the field, the layer, the value AS SHIPPED, the
+#       corrected value with the page that prints it, and the quoted print.
+#       An `add-candidate` row adds a print the store was not carrying rather
+#       than overwriting one, and carries no wrong value.
+#   data/registry_absences.json     51 (document, field) pairs read and found
+#       ABSENT, plus the corpus-level finding that no document prints its own
+#       GCF Board approval date.
+#
+# The schema addition is additive and lives in `meta`: no existing key moves, no
+# candidate list changes shape, and a document with neither a correction nor an
+# absence serializes byte-identically to before.
+#
+#   documents[doc].meta.corrections       what was changed here and why
+#   documents[doc].meta.confirmed_absence {field: evidence} — absence-as-fact
+#   documents[doc].meta.mapped_labels     a field read from a differently
+#                                         labelled template slot
+#
+# A corrected candidate carries `corrected: true` and `corrected_from`. On such
+# a candidate `raw` is the RATIFIED figure rather than a literal page string —
+# the page's own print is quoted in meta.corrections[].quote. Everywhere else
+# `raw` keeps its usual contract.
+CORRECTIONS_FILE = config.DATA_DIR / "registry_corrections.json"
+ABSENCES_FILE = config.DATA_DIR / "registry_absences.json"
+RATIFIED = "owner, 2026-08-26"
+
+# a top-level (registry.json) field and the schema-2 fact it is the flat view of
+_TOP_TO_FACT = {"gcf_financing": "gcf_funding_requested",
+                "total_financing": "total_financing",
+                "title": "title", "accredited_entity": "accredited_entity",
+                "countries": "countries"}
+
+
+class Decisions:
+    """The ratified corrections and absences, plus the report of what happened.
+
+    Nothing here fails a build: a correction whose target has moved (the corpus
+    is being re-extracted underneath us) is NOT applied and IS shouted about, so
+    a rebuild says out loud that a ratified decision did not land.
+    """
+
+    def __init__(self, corrections=None, absences=None, meta=None):
+        self.by_doc: Dict[str, List[dict]] = {}
+        for e in corrections or []:
+            self.by_doc.setdefault(e["doc_id"], []).append(e)
+        self.absent: Dict[str, List[dict]] = {}
+        for a in absences or []:
+            self.absent.setdefault(a["doc_id"], []).append(a)
+        self.meta = meta or {}
+        self.applied: List[str] = []
+        self.deferred: Dict[str, List[dict]] = {}
+        self.unapplied: List[dict] = []
+        self.alarms: List[str] = []
+        self.absences_published: set = set()
+        self.absences_skipped: List[dict] = []
+
+    @classmethod
+    def load(cls, corrections_path: Path = None, absences_path: Path = None) -> "Decisions":
+        cp = Path(corrections_path or CORRECTIONS_FILE)
+        ap = Path(absences_path or ABSENCES_FILE)
+        corr = json.loads(cp.read_text(encoding="utf-8")) if cp.exists() else {}
+        absc = json.loads(ap.read_text(encoding="utf-8")) if ap.exists() else {}
+        return cls(corr.get("corrections"), absc.get("absences"),
+                   meta={"corrections": {"file": str(cp.name),
+                                         "present": cp.exists(),
+                                         "count": len(corr.get("corrections") or []),
+                                         "ratified": corr.get("ratified")},
+                         "absences": {"file": str(ap.name),
+                                      "present": ap.exists(),
+                                      "count": len(absc.get("absences") or []),
+                                      "ratified": absc.get("ratified"),
+                                      "corpus_level": absc.get("corpus_level") or []}})
+
+    # -- reporting ---------------------------------------------------------
+    def alarm(self, msg: str) -> None:
+        self.alarms.append(msg)
+
+    def miss(self, entry: dict, why: str) -> None:
+        self.unapplied.append({"id": entry["id"], "doc_id": entry["doc_id"],
+                               "field": entry["field"], "layer": entry["layer"],
+                               "why": why})
+        self.alarm(f"NOT APPLIED {entry['id']} {entry['doc_id']} {entry['field']} "
+                   f"[{entry['layer']}]: {why}")
+
+    def for_doc(self, doc_id: str, layers) -> List[dict]:
+        return [e for e in self.by_doc.get(doc_id, []) if e["layer"] in layers]
+
+
+def _record(entry: dict, before, after) -> dict:
+    """The meta row: what moved, what it came from, and the print that decides it."""
+    return {"id": entry["id"], "field": entry["field"], "layer": entry["layer"],
+            "action": entry["action"], "from": before, "to": after,
+            "page_of_quote": (entry.get("corrected") or entry.get("add") or {}).get("page"),
+            "quote": (entry.get("corrected") or entry.get("add") or {}).get("quote"),
+            "adjudication_note": entry.get("adjudication_note"),
+            "row_ref": entry.get("row_ref"), "ratified": entry.get("ratified", RATIFIED),
+            **({"pending_reextraction": True} if entry.get("pending_reextraction") else {}),
+            **({"riders_not_applied": entry["riders_not_applied"]}
+               if entry.get("riders_not_applied") else {})}
+
+
+def _shape(c: dict) -> dict:
+    return {k: c.get(k) for k in ("raw", "value", "currency", "unit", "page",
+                                  "section", "status")}
+
+
+def _pick(cands: List[dict], raw, page=None, status=None) -> Optional[dict]:
+    hits = [c for c in cands if c["raw"] == raw]
+    if status:
+        hits = [c for c in hits if c["status"] == status] or hits
+    if page is not None and len(hits) > 1:
+        hits = [c for c in hits if c["page"] == page] or hits
+    return hits[0] if len(hits) == 1 else None
+
+
+def _corrected_candidate(target: dict, entry: dict) -> dict:
+    """Overwrite one candidate in place, keeping where it came from. Returns the
+    candidate as it was, which is also what `corrected_from` records."""
+    to = entry["corrected"]
+    before = _shape(target)
+    target["raw"] = to["raw"]
+    target["value"] = to["value"]
+    target["currency"] = to["currency"]
+    target["unit"] = to["unit"]
+    target["page"] = to["page"]
+    # a corrected candidate does not claim a section the page may not print: it
+    # says 'corrected' and points at the quote, unless the correction kept the
+    # original print (a scale fix), which keeps its own section id
+    target["section"] = to.get("section") or "corrected"
+    target["corrected"] = True
+    target["corrected_from"] = before
+    return before
+
+
+def _grain_of(c: dict) -> float:
+    """The precision the candidate's own print implies, recomputed from `raw`.
+
+    finalize() carries it in a private key and drops it before publishing; a
+    correction arrives after that, so the comparison it re-runs recomputes the
+    number from the same reader that produced it.
+    """
+    p = read_amount(c.get("raw") or "")
+    return float(p.get("_grain", 0.0)) if p else 0.0
+
+
+def remark_conflicts(field: str, cands: List[dict]) -> None:
+    """Re-run the status half of finalize() for a field a correction moved.
+
+    A candidate was marked 'conflicting' because it disagreed with the value the
+    adjudication has since refuted. Left alone it warns the reader of a conflict
+    with a figure the store no longer holds — FP169's page-46 print, which the
+    correction ADOPTED, would have been published as disagreeing with itself.
+
+    Conservative by construction: when the corrected field has no canonical, or
+    its canonical carries no parsed value, nothing is re-marked — the build does
+    not invent a comparison it cannot make.
+    """
+    if field not in NUMERIC_FIELDS or field in NO_CONFLICT_FIELDS:
+        return
+    canon = next((c for c in cands if c["status"] == "canonical"), None)
+    if canon is None or canon.get("value") is None:
+        return
+    kg = _grain_of(canon)
+    for c in cands:
+        if c is canon:
+            continue
+        if c.get("value") is None or not _compatible(c, canon):
+            c["status"] = "supporting"
+            continue
+        same_source = _sec_key(c) == _sec_key(canon) and c["page"] != canon["page"]
+        if c["value"] < 0.5 * canon["value"] and not same_source:
+            c["status"] = "supporting"          # a component, not a rival reading
+            continue
+        tol = max(kg + _grain_of(c) + 1e-6, 0.5)
+        c["status"] = ("supporting" if abs(c["value"] - canon["value"]) <= tol
+                       else "conflicting")
+
+
+def apply_fact_corrections(doc_id: str, facts: Dict[str, List[dict]],
+                           dec: "Decisions", entries: Optional[List[dict]] = None,
+                           defer: bool = False) -> List[dict]:
+    """The fact-layer half of the corrections. Runs BEFORE coverage is computed,
+    so core_found / core_missing / suspect describe the corrected document.
+
+    `defer`: a correction whose target is not among the deterministic candidates
+    is not an error yet — the verified llm-fallback candidates are merged one
+    step later, and four of the 58 rows correct one of those. Deferred rows are
+    retried there, and only then can they be reported as not applied.
+    """
+    records: List[dict] = []
+    for entry in (entries if entries is not None
+                  else dec.for_doc(doc_id, ("fact-canonical", "fact-supporting",
+                                            "fact-conflicting"))):
+        field, action = entry["field"], entry["action"]
+        cands = facts.get(field) or []
+        if action == "add-candidate":
+            # a print the document holds and the store was not carrying. There is
+            # no wrong value here: nothing is overwritten, one candidate appears,
+            # and the conflict machinery treats it like any other print.
+            add = entry["add"]
+            if _pick(cands, add["raw"], add.get("page")) is not None:
+                dec.miss(entry, f"the candidate it adds is already in this build "
+                                f"({add['raw'][:40]!r} p.{add.get('page')})")
+                continue
+            c = {"raw": add["raw"], "value": add.get("value"),
+                 "currency": add.get("currency"), "unit": add.get("unit"),
+                 "page": add["page"], "section": add.get("section") or "added",
+                 "status": add.get("status", "supporting"), "added": True}
+            if add.get("derived"):
+                # the value the printed operands IMPLY, never a figure the page
+                # prints: the raw quotes the operands and names the sum as a sum
+                c["derived"] = True
+                c["derived_from"] = add["derived_from"]
+            facts.setdefault(field, []).append(c)
+            records.append({**_record(entry, None, _shape(c)),
+                            "declared_status": c["status"]})
+            continue
+        target = _pick(cands, entry["wrong"]["raw"], entry["wrong"].get("page"),
+                       entry["wrong"].get("status"))
+        if target is None:
+            if defer:
+                dec.deferred.setdefault(doc_id, []).append(entry)
+            else:
+                dec.miss(entry, f"the candidate it corrects is not in this build "
+                                f"({entry['wrong']['raw']!r} "
+                                f"p.{entry['wrong'].get('page')}) — re-extraction may "
+                                f"have moved it")
+            continue
+        before = _shape(target)
+        if action in ("correct-to", "value-fix"):
+            _corrected_candidate(target, entry)
+            for d in entry.get("drop") or []:
+                gone = _pick(cands, d["raw"], d.get("page"))
+                if gone is None:
+                    dec.miss(entry, f"the candidate it drops is not in this build "
+                                    f"({d['raw']!r})")
+                else:
+                    cands.remove(gone)
+                    records.append({"id": entry["id"], "field": field,
+                                    "action": "drop", "from": _shape(gone), "to": None,
+                                    "quote": entry.get("adjudication_note"),
+                                    "ratified": entry.get("ratified", RATIFIED)})
+        elif action == "promote":
+            rise = _pick(cands, entry["promote"]["raw"], entry["promote"].get("page"))
+            if rise is None:
+                dec.miss(entry, f"the candidate it promotes is not in this build "
+                                f"({entry['promote']['raw']!r})")
+                continue
+            rose = _shape(rise)
+            rise["status"] = "canonical"
+            rise["corrected"] = True
+            rise["corrected_from"] = rose
+            cands.remove(target)                     # the wrong print is dropped
+            records.append(_record(entry, before, _shape(rise)))
+            continue
+        elif action == "reclassify":
+            to_field = entry["to_field"]
+            cands.remove(target)
+            moved = dict(target)
+            _corrected_candidate(moved, entry)
+            moved["status"] = entry.get("to_status", "supporting")
+            sitting = next((c for c in facts.get(to_field, [])
+                            if c["status"] == "canonical"), None)
+            if moved["status"] == "canonical" and sitting is not None:
+                # the ratified print outranks an extracted one that reads the SAME
+                # figure (here the same page-32 digits behind an unbindable scale
+                # word); it never silently displaces a different reading
+                if _digits(sitting) and _digits(sitting) == _digits(moved):
+                    sitting["status"] = "supporting"
+                    dec.alarm(f"{entry['id']} {doc_id}: {to_field} already carried "
+                              f"{sitting['raw']!r} (p.{sitting['page']}) — same figure, "
+                              f"so the ratified print takes canonical and that one "
+                              f"becomes supporting")
+                else:
+                    moved["status"] = "supporting"
+                    dec.alarm(f"{entry['id']} {doc_id}: {to_field} already has a "
+                              f"canonical candidate reading {sitting['raw']!r} — the "
+                              f"reclassified print was filed as supporting instead")
+            moved["reclassified_from"] = field
+            facts.setdefault(to_field, []).append(moved)
+            records.append({**_record(entry, before, _shape(moved)),
+                            "to_field": to_field})
+            if not cands:
+                facts.pop(field, None)
+            continue
+        elif action == "confirm-absence":
+            cands.remove(target)
+            if not cands:
+                facts.pop(field, None)
+            records.append(_record(entry, before, None))
+            continue
+        elif action == "re-extract":
+            # adjudicated WRONG with no defensible replacement: the print stays,
+            # the claim does not. Nothing canonical is asserted for the field.
+            if target["status"] == "canonical":
+                target["status"] = "supporting"
+            target["disputed"] = True
+            target["dispute"] = entry.get("adjudication_note") or entry["action"]
+            records.append(_record(entry, before, _shape(target)))
+            continue
+        else:                                        # pragma: no cover - guarded above
+            dec.miss(entry, f"unknown action {action!r}")
+            continue
+        records.append(_record(entry, before, _shape(target)))
+    for r in records:
+        dec.applied.append(r["id"])
+        for f in (r["field"], r.get("to_field")):
+            if f and f in facts:
+                remark_conflicts(f, facts[f])
+    # a ratified status the conflict rules then disagree with is a disagreement
+    # between the owner and the parser, and it gets said out loud rather than
+    # silently resolved either way
+    for r in records:
+        want = r.get("declared_status")
+        if not want:
+            continue
+        now = _pick(facts.get(r["field"]) or [], r["to"]["raw"], r["to"]["page"])
+        if now is not None and now["status"] != want:
+            r["status_after_remark"] = now["status"]
+            dec.alarm(f"{r['id']} {doc_id} {r['field']}: the row asks for status "
+                      f"{want!r} and the conflict rules make it {now['status']!r} "
+                      f"against the canonical figure")
+    return records
+
+
+def _agree(a: Optional[float], b: Optional[float]) -> bool:
+    if a is None or b is None:
+        return False
+    return abs(a - b) <= max(1.0, 0.005 * abs(b))
+
+
+def apply_top_level_corrections(doc_id: str, row: dict, dec: "Decisions") -> List[dict]:
+    """The flat registry.json fields carried on the v2 row (title, entity,
+    countries, total_financing, gcf_financing)."""
+    records: List[dict] = []
+    for entry in dec.for_doc(doc_id, ("top-level",)):
+        field = entry["field"]
+        before = row.get(field)
+        if before != entry["wrong"]["raw"]:
+            dec.miss(entry, f"the shipped top-level value has moved "
+                            f"({before!r} != {entry['wrong']['raw']!r})")
+            continue
+        if entry["action"] == "confirm-absence":
+            row[field] = None
+            records.append(_record(entry, before, None))
+            continue
+        to = entry["corrected"]
+        rec_extra = {}
+        if entry.get("pending_reextraction"):
+            fresh = _canon_of(row.get("facts") or {}, _TOP_TO_FACT.get(field, field))
+            if fresh is not None and fresh.get("value") is not None:
+                if _agree(fresh["value"], to["value"]):
+                    # the re-extracted page agrees: publish the PAGE, not the table
+                    row[field] = fresh["raw"]
+                    records.append({**_record(entry, before, fresh["raw"]),
+                                    "resolved_by": "re-extraction agrees with the "
+                                                   "correction; the fresh page parse is "
+                                                   "published",
+                                    "fresh": _shape(fresh)})
+                    dec.applied.append(entry["id"])
+                    continue
+                dec.alarm(
+                    "*** PENDING RE-EXTRACTION DISAGREES *** "
+                    f"{entry['id']} {doc_id} {field}: the ratified correction says "
+                    f"{to['raw']!r} ({to['value']}) but the re-extracted page parses "
+                    f"{fresh['raw']!r} ({fresh['value']}) at p.{fresh['page']}. The "
+                    "correction was applied; an owner must settle which is right.")
+                rec_extra = {"reextraction_disagreement": _shape(fresh)}
+            else:
+                rec_extra = {"reextraction": "no parsed canonical yet — correction applied"}
+        row[field] = to["raw"]
+        records.append({**_record(entry, before, to["raw"]), **rec_extra})
+        dec.applied.append(entry["id"])
+    return records
+
+
+def absence_meta(doc_id: str, facts: Dict[str, List[dict]],
+                 dec: "Decisions") -> Dict[str, dict]:
+    """confirmed_absence per (document, field): the runtime may say 'this
+    document does not print it', with the pages that were read to find out."""
+    out: Dict[str, dict] = {}
+    # recomputed from scratch for this document: the llm-fallback merge can give
+    # a field its first print AFTER the first pass ran, and a published absence
+    # has to be withdrawn when that happens
+    dec.absences_published = {k for k in dec.absences_published if k[0] != doc_id}
+    dec.absences_skipped = [x for x in dec.absences_skipped if x["doc_id"] != doc_id]
+    for a in dec.absent.get(doc_id, []):
+        field = a["field"]
+        if a.get("status") == "superseded":
+            if not any(x["doc_id"] == doc_id and x["field"] == field
+                       for x in dec.absences_skipped):
+                dec.absences_skipped.append({**a, "why": "superseded by a ratified "
+                                                         "decision (see superseded_by)"})
+            continue
+        held = facts.get(field) or []
+        if held:
+            # absence-as-fact is a claim about the DOCUMENT: it may never be
+            # published over a print the build is holding. A canonical one means
+            # the ratified row and the parser flatly disagree and somebody has to
+            # look; a supporting one (239's title, named in prose on p.1 but under
+            # no template label) means the absence was about the template field
+            # and the store has the print anyway.
+            if _canon_of(facts, field) is not None:
+                dec.alarm(f"ABSENCE CONTRADICTED {doc_id} {field}: a canonical "
+                          f"candidate exists, so the ratified absence was NOT published")
+                why = "a canonical candidate exists"
+            else:
+                why = (f"the build holds a non-canonical print of this field "
+                       f"({held[0]['raw'][:60]!r}, p.{held[0]['page']}) — absence not "
+                       f"published over a print")
+            if not any(x["doc_id"] == doc_id and x["field"] == field
+                       for x in dec.absences_skipped):
+                dec.absences_skipped.append({**a, "why": why})
+            continue
+        out[field] = {"pages_checked": a.get("pages_checked"),
+                      "evidence": a.get("evidence"),
+                      "group": a.get("group"),
+                      "row_ref": a.get("row_ref"),
+                      "ratified": a.get("ratified", RATIFIED)}
+        dec.absences_published.add((doc_id, field))
+    return out
+
+
+def mapped_label_meta(pages: List[Tuple[int, str]],
+                      facts: Dict[str, List[dict]]) -> List[dict]:
+    """A field read out of a differently labelled template slot, with the label
+    as the page prints it (OWNER RATIFICATION 2026-08-26: A.1.5 'Implementing
+    entity' is the accredited-entity slot in the earliest template)."""
+    notes = {r.label_note for r in EXTRA_RULES if r.label_note}
+    by_page = dict(pages)
+    out = []
+    for field, cands in facts.items():
+        for c in cands:
+            label = next((n for n in notes if str(c.get("section", "")).endswith(n)), None)
+            if not label:
+                continue
+            quote = ""
+            for line in by_page.get(c["page"], "").split("\n"):
+                if label.lower() in line.lower():
+                    quote = line.strip()
+                    if c["raw"][:24] not in line:
+                        quote += " ⏎ " + next(
+                            (l.strip() for l in by_page.get(c["page"], "").split("\n")
+                             if c["raw"][:24] in l), "")
+                    break
+            out.append({"field": field, "printed_label": label, "page": c["page"],
+                        "section": c["section"], "value": c["raw"], "quote": quote,
+                        "decision": "OWNER RATIFICATION 2026-08-26: the A.1.x-era "
+                                    "'Implementing entity' slot IS the accredited-entity "
+                                    "slot; the printed label is kept in the section",
+                        "ratified": RATIFIED})
+    return out
 
 
 # ---------------------------------------------------------------------------
 # build
 # ---------------------------------------------------------------------------
 
-def build_document(doc_id: str, text: str) -> dict:
+def build_document(doc_id: str, text: str, fallback: bool = True,
+                   decisions: Optional["Decisions"] = None,
+                   extra_rules: bool = True) -> dict:
     pages = split_pages(text)
-    raw = extract_candidates(pages)
+    era = era_of(text)
+    raw = extract_candidates(pages, fallback=fallback, era=era, extra_rules=extra_rules)
     heads = {f: bool(rx.search(text)) for f, rx in _TEMPLATE_HEADING.items()}
     facts = {f: finalize(f, cs, heads.get(f, False)) for f, cs in raw.items() if cs}
     facts = {f: cs for f, cs in facts.items() if cs}
@@ -835,9 +1714,20 @@ def build_document(doc_id: str, text: str) -> dict:
             facts.setdefault("board_code", []).append(
                 {"raw": m.group(0), "value": None, "currency": None, "unit": None,
                  "page": page, "section": "cover", "status": "supporting"})
+    meta: Dict[str, object] = {}
+    if decisions is not None:
+        recs = apply_fact_corrections(doc_id, facts, decisions, defer=True)
+        if recs:
+            meta["corrections"] = recs
+        absent = absence_meta(doc_id, facts, decisions)
+        if absent:
+            meta["confirmed_absence"] = absent
+    labels = mapped_label_meta(pages, facts)
+    if labels:
+        meta["mapped_labels"] = labels
     found = [f for f in CORE_FIELDS if f in facts]
     coverage = {
-        "era": era_of(text),
+        "era": era,
         "pages": len(pages),
         "fields": len(facts),
         "core_found": found,
@@ -847,7 +1737,11 @@ def build_document(doc_id: str, text: str) -> dict:
     flags = suspect_flags(facts)
     if flags:
         coverage["suspect"] = ";".join(flags)
-    return {"facts": facts, "coverage": coverage, "_board": board}
+    out = {"facts": facts, "coverage": coverage, "_board": board}
+    if meta:
+        meta["ratified"] = RATIFIED
+        out["meta"] = meta
+    return out
 
 
 def _canon_of(facts: Dict[str, List[dict]], field: str) -> Optional[dict]:
@@ -937,7 +1831,30 @@ def main() -> None:
     ap.add_argument("--force-llm", action="store_true",
                     help="re-call the model instead of reusing the previous build's candidates")
     ap.add_argument("--out", default=str(REGISTRY_V2))
+    ap.add_argument("--reuse-llm-from", default=str(REGISTRY_V2),
+                    help="build whose verified llm candidates are reused (default: the "
+                         "shipped registry). Decoupled from --out so a rebuild into a "
+                         "scratch path costs no model calls.")
+    ap.add_argument("--dry-run", action="store_true",
+                    help="never write data/registry_v2.json and never call the model: "
+                         "the mode Phase 3 diagnosis runs in")
+    ap.add_argument("--no-fallback", action="store_true",
+                    help="strict rules only — the pre-fallback baseline, for the "
+                         "additive-discipline diff")
+    ap.add_argument("--no-extra-rules", action="store_true",
+                    help="skip the third (EXTRA_RULES) pass — no date fields and no "
+                         "'Implementing entity' mapping; the pre-decision baseline")
+    ap.add_argument("--no-decisions", action="store_true",
+                    help="ignore data/registry_corrections.json and "
+                         "data/registry_absences.json — the pre-ratification baseline, "
+                         "for the before/after diff")
+    ap.add_argument("--corrections", default=str(CORRECTIONS_FILE))
+    ap.add_argument("--absences", default=str(ABSENCES_FILE))
     a = ap.parse_args()
+
+    out = Path(a.out)
+    if a.dry_run and out.resolve() == REGISTRY_V2.resolve():
+        ap.error("--dry-run must not write the shipped registry; pass --out <scratch path>")
 
     v1 = {}
     if REGISTRY_V1.exists():
@@ -948,10 +1865,19 @@ def main() -> None:
         paths = [p for p in paths if a.only.lower() in p.stem.lower()]
     paths = paths[: a.limit]
 
+    dec = None if a.no_decisions else Decisions.load(a.corrections, a.absences)
+    if dec is not None and not (dec.meta["corrections"]["present"]
+                                and dec.meta["absences"]["present"]):
+        print("WARNING: a ratified decisions file is missing — "
+              f"corrections={dec.meta['corrections']['present']} "
+              f"absences={dec.meta['absences']['present']}")
+
     t0 = time.time()
     docs: Dict[str, dict] = {}
     for p in paths:
-        built = build_document(p.stem, p.read_text(encoding="utf-8", errors="replace"))
+        built = build_document(p.stem, p.read_text(encoding="utf-8", errors="replace"),
+                               fallback=not a.no_fallback, decisions=dec,
+                               extra_rules=not a.no_extra_rules)
         base = dict(v1.get(p.stem) or {})
         base.pop("error", None)
         base.setdefault("fp", int(m.group(1)) if (m := re.search(r"fp(\d{2,3})", p.stem)) else None)
@@ -959,6 +1885,13 @@ def main() -> None:
         built.pop("_board", None)
         base.setdefault("year", year_of(p.stem))
         docs[p.stem] = {**base, "facts": built["facts"], "coverage": built["coverage"]}
+        if built.get("meta"):
+            docs[p.stem]["meta"] = built["meta"]
+        if dec is not None:
+            top = apply_top_level_corrections(p.stem, docs[p.stem], dec)
+            if top:
+                m = docs[p.stem].setdefault("meta", {"ratified": RATIFIED})
+                m["corrections"] = list(m.get("corrections") or []) + top
     det_secs = time.time() - t0
 
     # "deterministic parsing found nothing": no financing fact at all. These are
@@ -966,37 +1899,79 @@ def main() -> None:
     # carry no A.x / B.2 / C.1 template block for a regex to lock onto.
     empty = [p for p in paths
              if not (set(docs[p.stem]["facts"]) & {"total_financing", "gcf_funding_requested"})]
-    out = Path(a.out)
     calls = fixed = reused = 0
     if empty and not a.no_llm:
         # a rebuild after a parser change must not re-spend the call budget:
         # verified fallback candidates from the previous build are reused unless
         # --force-llm is given
         previous = {}
-        if out.exists() and not a.force_llm:
-            previous = json.loads(out.read_text(encoding="utf-8")).get("documents", {})
+        prev_path = Path(a.reuse_llm_from)
+        if prev_path.exists() and not a.force_llm:
+            previous = json.loads(prev_path.read_text(encoding="utf-8")).get("documents", {})
+        # Carry forward EVERY verified fallback candidate the previous build
+        # published, not only those of documents that are still empty: when a
+        # parser improvement gives a document its first deterministic financing
+        # fact, the title/countries/entity the model had already verified for it
+        # must not be deleted as a side effect (b21-10-add06, b19-22-add09).
         todo = []
-        for p in empty:
+        for p in paths:
             old = [(f, c) for f, cs in (previous.get(p.stem, {}).get("facts") or {}).items()
                    for c in cs if c.get("section") == "llm"]
-            if not old and p.stem not in previous:
-                todo.append(p)
+            if not old:
+                if p in empty and p.stem not in previous:
+                    todo.append(p)
                 continue
             for f, c in old:
                 docs[p.stem]["facts"].setdefault(f, []).append(c)
-            docs[p.stem]["coverage"]["llm_fallback"] = bool(old)
+            docs[p.stem]["coverage"]["llm_fallback"] = True
             docs[p.stem]["coverage"]["fields"] = len(docs[p.stem]["facts"])
-            reused += bool(old)
+            reused += 1
         print(f"llm fallback: {len(empty)} documents with no deterministic financing fact "
               f"| {reused} reused from the previous build | {len(todo)} to call "
               f"(cap {MAX_LLM_CALLS})")
+        if a.dry_run and todo:
+            print(f"  dry run: {len(todo)} documents would be sent to the model — not called")
+            todo = []
         calls, fixed = llm_fallback(todo, docs, MAX_LLM_CALLS)
 
+    # four of the 58 ratified rows correct a verified llm-fallback candidate,
+    # which only exists once the merge above has run
+    if dec is not None and dec.deferred:
+        for stem, entries in list(dec.deferred.items()):
+            dec.deferred[stem] = []
+            row = docs[stem]
+            recs = apply_fact_corrections(stem, row["facts"], dec, entries=entries)
+            if recs:
+                m = row.setdefault("meta", {"ratified": RATIFIED})
+                m["corrections"] = list(m.get("corrections") or []) + recs
+                row["coverage"]["fields"] = len(row["facts"])
+                row["coverage"]["core_found"] = [f for f in CORE_FIELDS if f in row["facts"]]
+                row["coverage"]["core_missing"] = [f for f in CORE_FIELDS
+                                                   if f not in row["facts"]]
+                flags = suspect_flags(row["facts"])
+                row["coverage"].pop("suspect", None)
+                if flags:
+                    row["coverage"]["suspect"] = ";".join(flags)
+                absent = absence_meta(stem, row["facts"], dec)
+                if absent:
+                    m["confirmed_absence"] = absent
+                else:
+                    m.pop("confirmed_absence", None)
+
+    payload = {"schema_version": 2, "source": SOURCE_DIR.name}
+    if dec is not None:
+        payload["meta"] = {
+            "data_decisions": {
+                **dec.meta,
+                "applied": len(dec.applied),
+                "unapplied": dec.unapplied,
+                "absences_published": len(dec.absences_published),
+                "absences_not_published": dec.absences_skipped,
+                "alarms": dec.alarms,
+            }}
+    payload["documents"] = dict(sorted(docs.items()))
     out.parent.mkdir(parents=True, exist_ok=True)
-    out.write_text(json.dumps(
-        {"schema_version": 2, "source": SOURCE_DIR.name,
-         "documents": dict(sorted(docs.items()))}, ensure_ascii=False, indent=1),
-        encoding="utf-8")
+    out.write_text(json.dumps(payload, ensure_ascii=False, indent=1), encoding="utf-8")
 
     fields = sorted({f for r in docs.values() for f in r["facts"]})
     print(f"\n{len(docs)} documents | deterministic pass {det_secs:.1f}s "
@@ -1010,6 +1985,15 @@ def main() -> None:
         print(f"{f:<28}{nd:>6}{len(cs):>7}"
               f"{sum(1 for c in cs if c['status'] == 'canonical'):>7}"
               f"{sum(1 for c in cs if c['status'] == 'conflicting'):>10}")
+    if dec is not None:
+        print(f"\ndata decisions | corrections applied {len(dec.applied)}/"
+              f"{dec.meta['corrections']['count']} | absences published "
+              f"{len(dec.absences_published)}/{dec.meta['absences']['count']} "
+              f"(not published {len(dec.absences_skipped)})")
+        for msg in dec.alarms:
+            print(f"  !! {msg}")
+        if not dec.alarms:
+            print("  every ratified decision landed on the candidate it names")
     print(f"-> {out}")
 
 

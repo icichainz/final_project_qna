@@ -545,14 +545,22 @@ def test_the_real_arity_pair_agrees(real):
 
 
 @pytest.mark.parametrize("fp,field,label", [
-    (139, "implementation_period", "implementation period"),
-    (240, "mitigation_outcome", "mitigation outcome"),
-    (240, "adaptation_outcome", "adaptation outcome"),
     (202, "beneficiaries_direct", "direct beneficiaries"),
 ])
-def test_the_four_non_money_conflicts_the_corpus_holds_now_warn(real, fp, field, label):
-    """Enumerated from data/registry_v2.json: four conflicting non-money
-    candidates, in three documents, that no mechanism looked at."""
+def test_the_non_money_conflicts_the_corpus_holds_now_warn(real, fp, field, label):
+    """Enumerated from data/registry_v2.json: conflicting non-money candidates
+    that no mechanism looked at until `_conflict_lines` widened past money.
+
+    The census was four, in three documents. Phase 3's adjudication (ratified
+    by the owner 2026-08-26) refuted three of them as extraction artifacts and
+    the builder corrects them from data/registry_corrections.json: FP139's
+    '25 years' is the A.12 lifespan under a shifted label, and FP240's two
+    'outcomes' were financing figures bled in under A.5/A.6 (money against
+    tonnes, not two readings of one outcome). FP202's stands — 81,551 direct
+    beneficiaries under A.6 against 1,251,769 under A.7, both on page 6 — so
+    it is the case that keeps the mechanism honest here, and it is stable
+    across the rebuild that lands the corrections.
+    """
     row = real.by_fp(fp)
     lines = real._conflict_lines(row)
     assert any(f"{field} is printed as" in l and l.endswith(
@@ -560,9 +568,13 @@ def test_the_four_non_money_conflicts_the_corpus_holds_now_warn(real, fp, field,
 
 
 def test_a_field_the_corpus_contradicts_is_not_also_served(real):
-    note = real.registry_note("What is the implementation period of FP139?")
-    assert "implementation period: 5 years" not in note
-    assert "implementation_period is printed as" in note
+    """The served line must not pick one of two disagreeing prints. FP202 asks
+    for direct beneficiaries: the conflict warns and the value is withheld,
+    while the field's uncontradicted twin is served as usual."""
+    note = real.registry_note("How many direct beneficiaries does FP202 have?")
+    assert "direct beneficiaries: 81,551" not in note
+    assert "beneficiaries_direct is printed as" in note
+    assert "indirect beneficiaries: 147,039" in note
 
 
 def test_the_flagged_documents_are_the_ones_the_registry_flags(real):
@@ -572,4 +584,4 @@ def test_the_flagged_documents_are_the_ones_the_registry_flags(real):
                or (r.get("coverage") or {}).get("llm_fallback")}
     said = {s for s in real.load() if real._extraction_flags(s)}
     assert said == flagged
-    assert len(flagged) == 35            # 16 suspect + 19 llm_fallback, disjoint
+    assert len(flagged) == 20            # 1 suspect + 19 llm_fallback, disjoint

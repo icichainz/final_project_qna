@@ -344,6 +344,13 @@ def _money(row: dict) -> str:
     if c:
         return (f" ({c['raw']} GCF)" if c.get("value") is not None else
                 f' ("{c["raw"]}" GCF, unit as printed is ambiguous)')
+    # Before the v1 fallback, consult the ratified corrections: five documents
+    # have no v2 canonical AND an adjudicated-wrong v1 string (FP100, FP067,
+    # FP054, FP245, FP240) — a refuted figure must not ride into a note.
+    rec = registry._ratified_top(row.get("doc_id"), "gcf_financing")
+    if rec is not None:
+        to = rec.get("to")
+        return f" ({to} GCF)" if to else ""
     return f" ({row['gcf_financing']} GCF)" if row.get("gcf_financing") else ""
 
 

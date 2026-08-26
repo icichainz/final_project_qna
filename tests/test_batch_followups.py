@@ -321,10 +321,12 @@ def test_p4s_question_now_carries_its_own_answer():
         totals[year] = total
     # the direction P4 inverted, now derivable from the note alone
     assert totals[2021] > totals[2020]
-    assert totals[2021] / totals[2020] > 2
+    # Re-pinned 2026-08-26 after the Phase 3 rebuild: corrected FP169/FP163
+    # move 2021 down, recovered/corrected rows move 2020 up - ratio 1.65.
+    assert 1.5 < totals[2021] / totals[2020] < 2
     # and the figures themselves, pinned against the checksummed registry
-    assert "those 19 total USD 1,157,208,843.80" in note
-    assert "those 25 total USD 2,395,398,247.26" in note
+    assert "those 21 total USD 1,439,333,957.80" in note
+    assert "those 25 total USD 2,369,404,247.26" in note
 
 
 @pytest.mark.parametrize("year", [2020, 2021])
@@ -355,9 +357,12 @@ def test_the_recorded_exclusion_lists():
     """The deliverable, spelled out: what the two totals leave behind."""
     from gcf_qna.app.chainlit_app import _year_total_line
     line20 = _year_total_line(2020, _year_rows(2020))
-    assert ("excluded from this total: FP132, FP138 (EUR), FP153 (unit as "
-            "printed is ambiguous), FP142, FP150 (figure printed above but "
-            "not normalised), 6 proposals stating no figure — the figures "
+    # Re-pinned 2026-08-26 (Phase 3 rebuild): FP150 normalised, FP125/FP127
+    # gained the honest currency-not-stated reason, 3 figures recovered.
+    assert ("excluded from this total: FP132, FP138 (EUR), FP125, FP127 "
+            "(currency not stated), FP153 (unit as printed is ambiguous), "
+            "FP142 (figure printed above but not normalised), 3 proposals "
+            "stating no figure — the figures "
             "listed above for them stand as printed.") in line20
     line21 = _year_total_line(2021, _year_rows(2021))
     assert ("excluded from this total: FP176 (EUR), FP162, FP168 (unit as "

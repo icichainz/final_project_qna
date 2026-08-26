@@ -397,6 +397,56 @@ def _meta_page(meta: Dict[str, dict], field: str) -> str:
     return f" (p.{page})"
 
 
+def _ratified_top(doc_id: Optional[str], field: str) -> Optional[dict]:
+    """The ``meta.corrections`` record that moved one FLAT field of a document.
+
+    The flat fields on a note line — title, entity, countries, and the two
+    money fallbacks — are read from registry.json, the v1 file. Phase 3's
+    adjudication corrected fifteen of them, and those corrections are applied
+    by the BUILDER into registry_v2.json; the v1 file is not rewritten. Without
+    this lookup the note would keep serving a figure the owner has ratified as
+    refuted — FP245's GCF request printed as the A.7 total, FP086's programme
+    ceiling printed as its total financing — which is the one outcome the whole
+    correction pass exists to prevent.
+
+    Narrow on purpose: it consults a correction the owner ratified for exactly
+    this (document, field), not v2's copy of the flat fields in general. Where
+    the two files merely differ, v1 still wins, exactly as before.
+
+    Same never-break contract as ``_v2_meta``: any shape but the expected one
+    means 'no correction', and the line comes out as it always did.
+    """
+    if not doc_id:
+        return None
+    try:
+        meta = (_row_v2(doc_id) or {}).get("meta")
+        recs = meta.get("corrections") if isinstance(meta, dict) else None
+        for rec in recs or []:
+            if (isinstance(rec, dict) and rec.get("layer") == "top-level"
+                    and rec.get("field") == field):
+                return rec
+    except Exception:                                            # noqa: BLE001
+        return None
+    return None
+
+
+def _served_flat(r: dict, mp: Dict[str, dict], field: str) -> Tuple[object, str]:
+    """``(value, ' (p.N)')`` for one flat field: the ratified correction's value
+    and the page that prints it when one moved the field, else the v1 value and
+    the cover-page provenance.
+
+    The page comes from the correction too, because ``meta_provenance`` matched
+    its quote against the value registry.json holds — the refuted one — so
+    keeping that pointer beside a corrected value would cite a page whose quote
+    says something else. A correction that ratified an ABSENCE returns None and
+    the bit disappears from the line, which is the point of confirming it.
+    """
+    rec = _ratified_top(r.get("doc_id"), field)
+    if rec is None:
+        return r.get(field), _meta_page(mp, field)
+    return rec.get("to"), _meta_page({field: {"page": rec.get("page_of_quote")}}, field)
+
+
 def _usable(c: Optional[dict]) -> Optional[dict]:
     """A candidate is printable only with the two things it is here for: the
     source text and the page it was read from."""
@@ -702,14 +752,32 @@ def _conflict_lines(r: dict) -> List[str]:
     their pages' has to verify against.
 
     EVERY field, not only the money ones. The money restriction was a scope
-    decision taken when only money conflicts had been measured; the corpus
-    holds four more, in three documents, and every one of them is now askable
-    at arity one (`_served_bits`): FP139's implementation period (5 years vs
-    25, both on p.5 under A.11), FP240's mitigation and adaptation outcomes,
-    FP202's direct beneficiaries (81,551 under A.6 vs 1,251,769 under A.7).
-    Serving those fields on the line while the only machinery that knows they
-    are contradicted looked at money alone would have printed one of two
-    disagreeing figures as though it were the fact.
+    decision taken when only money conflicts had been measured, and the corpus
+    holds non-money ones too — every one of them askable at arity one
+    (`_served_bits`). Serving such a field on the line while the only machinery
+    that knows it is contradicted looked at money alone would have printed one
+    of two disagreeing figures as though it were the fact.
+
+    The census this argument was first written from named four, in three
+    documents. Phase 3's adjudication (blind, ratified by the owner
+    2026-08-26, `data/registry_corrections.json`) REFUTED three of them as
+    extraction artifacts rather than disagreements, and the builder now
+    corrects them at build time:
+
+      * FP139's implementation period was NOT 5 years against 25. Page 5 holds
+        a second, label-shifted A-block: its 'A.11 | 25 years' is the A.12
+        total lifespan, and its 'A.7' is the A.8 GCF request. Reclassified, the
+        document keeps '5 years, 0 months' with nothing contradicting it — and
+        gains the GCF figure (25,645,114 USD) it was missing.
+      * FP240's mitigation and adaptation 'outcomes' were financing figures
+        bled into A.5/A.6 by the template ($214,219 / $104,471 in thousand
+        form); the real outcomes are 1,639,681 tCO2e (p.61) and 1,132,496
+        direct beneficiaries (p.77). Money against tonnes was never two
+        readings of one outcome.
+
+    What remains is FP202's direct beneficiaries — 81,551 under A.6 against
+    1,251,769 under A.7, both printed on page 6, neither refuted — which is
+    the case `tests/test_registry_field_service.py` now exercises.
 
     Money keeps money's formatting — `_fig`, the whole print, no clipping —
     and a text field takes `_text_fig`, which clips a paragraph-length print
@@ -790,22 +858,25 @@ def _fmt(r: dict, question: Optional[str] = None) -> str:
     mp = _v2_meta(r.get("doc_id"))
     gcf, total = _canon2(f2, "gcf_funding_requested"), _canon2(f2, "total_financing")
     bits = []
-    if r.get("title"):
-        bits.append(f'"{r["title"]}"' + _meta_page(mp, "title"))
-    if r.get("accredited_entity"):
-        bits.append(f"accredited entity: {r['accredited_entity']}"
-                    + _meta_page(mp, "accredited_entity"))
-    if r.get("countries"):
-        bits.append(_list_bit("countries", r["countries"])
-                    + _meta_page(mp, "countries"))
+    title, title_at = _served_flat(r, mp, "title")
+    if title:
+        bits.append(f'"{title}"' + title_at)
+    entity, entity_at = _served_flat(r, mp, "accredited_entity")
+    if entity:
+        bits.append(f"accredited entity: {entity}" + entity_at)
+    countries, countries_at = _served_flat(r, mp, "countries")
+    if countries:
+        bits.append(_list_bit("countries", countries) + countries_at)
+    flat_gcf, _ = _served_flat(r, mp, "gcf_financing")
+    flat_total, _ = _served_flat(r, mp, "total_financing")
     if gcf:
         bits.append(_money_bit("GCF funding requested", gcf))
-    elif r.get("gcf_financing"):
-        bits.append(f"GCF financing (as printed): {r['gcf_financing']}")
+    elif flat_gcf:
+        bits.append(f"GCF financing (as printed): {flat_gcf}")
     if total:
         bits.append(_money_bit("total financing", total))
-    elif r.get("total_financing"):
-        bits.append(f"total financing (as printed): {r['total_financing']}")
+    elif flat_total:
+        bits.append(f"total financing (as printed): {flat_total}")
     if r.get("board"):
         bits.append(f"board B.{r['board']}, {r.get('year')}")
     if question:
