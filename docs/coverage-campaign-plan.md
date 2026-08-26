@@ -223,3 +223,31 @@ Every phase closure updates this file and quotes its gate run.
   {doc → section → pages} artifact and serve those pages FROM THE DEFAULT
   index via probe_pages — page numbering is identical across builds
   (41,550 pairs verified), so no second index is needed at runtime.
+
+
+## Serving wave + Wave 2 closure record (2026-08-26, `0f86897` + release-13 pair)
+
+- **Phase 4 Wave 2 closed**: 126 → 157 cases; direct document coverage
+  53 → 70 of 273 (25.6%); all 11 served-but-unasserted fields asserted;
+  all four Phase-3 recognizer families first-tested; the first
+  ratified-absence gold case. The 30% target remains declared, ~12
+  documents short — a topper rides any future wave under the
+  coordinator ruling (aggregate-derivation FP mentions are not "used").
+- **The serving wave closed**: enumerations citable (release-13:
+  citation presence 100.0% in BOTH arms, 469/469 and 462/462 — the
+  release-12-repeat failure shape extinct); confirmed absences served
+  (31 of 48 pairs); conflict pages probe-delivered (8/14 → 14/14 after
+  five stuck releases); the cross-extractor verification arm standing.
+- **Release-13 pair verdict**: support 94.9%/95.0% — exactly ON the 95%
+  integer gate, one claim either side across arms; within-pair deltas
+  −0.8/+1.0pp, inside the band; failure census entirely known shapes,
+  zero attributable to the new mechanisms.
+- **The next data round, sized**: the cross-extractor census flags 129
+  of 622 canonical money facts (99 documents, 79 digit-misread
+  signatures) — adjudication-ready at scratchpad/s4/cross_check_flags.json.
+
+## Remaining open
+
+Phase 5a (owner provides policy PDFs) · Phase 6 (two instrument items) ·
+the 129-flag adjudication (owner session) · the 30% coverage topper ·
+deferred: registry_named acronym gap, Track D conflict-page ranking.
