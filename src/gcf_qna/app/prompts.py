@@ -108,6 +108,18 @@ REGISTRY_BLOCK = (
     "[12_doc, cover pages]."
 )
 
+CONTEXT_BLOCK = (
+    "Answer the asked fact first, then add two or three sentences of the\n"
+    "most relevant context the note or excerpts state — the proposal's\n"
+    "title, purpose, accredited entity or related figures — in your own\n"
+    "words, each sentence carrying its own bracket; never paste a note\n"
+    "line as a citation. Never volunteer as added context a figure the\n"
+    "notes mark CONFLICT: state such a figure only with both conflicting\n"
+    "values and their pages. Skip this added context when the answer is\n"
+    "already a list or enumeration, or when the user asks for the value\n"
+    "alone."
+)
+
 CHAT_CORE = (
     "You are the assistant of a Green Climate Fund document Q&A system, and\n"
     "ONLY that. This turn is conversational (no corpus excerpts were\n"
@@ -146,6 +158,13 @@ def assemble(year: bool = False, registry: bool = False,
         blocks.append(YEAR_BLOCK)
     if registry:
         blocks.append(REGISTRY_BLOCK)
+        # Elaboration is note-driven and single-document: comparison and
+        # matrix turns keep their per-item format, and a turn with no
+        # registry note has nothing verified to elaborate from. Shipping
+        # behind this trigger leaves the biggest assembled variant — the
+        # one the length budget measures — unchanged.
+        if not (comparison or matrix):
+            blocks.append(CONTEXT_BLOCK)
     blocks.append(_language_block(lang))
     return "\n".join(blocks)
 

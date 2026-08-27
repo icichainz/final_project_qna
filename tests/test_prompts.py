@@ -201,6 +201,56 @@ def test_matrix_citation_rule_ships_only_with_the_matrix():
                                          comparison=True)
 
 
+def test_the_context_block_ships_only_on_single_document_registry_turns():
+    """The answer-length fix (operator report, post-release-15: live answers
+    read bare). The direct answer stays first; two or three sentences of
+    cited context follow, drawn from the registry note — the material with
+    ratified, cross-checked provenance, so the claims it adds to the
+    verifier's denominator are the ones best equipped to survive it.
+    Comparison and matrix turns keep their per-item format, and a turn
+    with no registry note has nothing verified to elaborate from — the
+    rule ships strictly behind its trigger, which is what leaves the
+    budget's biggest variant unchanged."""
+    for kw in ({"registry": True}, {"registry": True, "year": True},
+               {"registry": True, "lang": "French"}):
+        p = assemble(**kw)
+        assert "Answer the asked fact first" in p, kw
+        assert "carrying its own bracket" in p, kw
+    for kw in ({}, {"year": True}, {"comparison": True}, {"matrix": True},
+               {"registry": True, "comparison": True},
+               {"registry": True, "matrix": True},
+               {"year": True, "registry": True, "comparison": True,
+                "matrix": True, "lang": "French"}):
+        assert "Answer the asked fact first" not in assemble(**kw), kw
+
+
+def test_the_context_block_carries_its_own_proportionality_valve():
+    """Elaboration must not undo the enumeration format or override an
+    explicit ask for brevity — the skip clause is the half of the rule
+    that keeps Option A from becoming mini-briefs-everywhere."""
+    assert "Skip this added context" in prompts.CONTEXT_BLOCK
+    assert "list or enumeration" in prompts.CONTEXT_BLOCK
+
+
+def test_the_context_block_refuses_one_sided_conflict_figures():
+    """Measured, release-16 arm 1: all five new CONTRADICTED claims were
+    elaboration sentences volunteering total financing on documents whose
+    registry records an intra-document conflict (FP173 598.1M vs 1,235.4M;
+    FP151 28M vs 720M; FP251 110M vs 30M; FP29 12.222M vs 0.22M), naming
+    one value with a vague 'conflicting figures elsewhere'. The detector's
+    conflict rule wants both values with pages, so the block must either
+    keep such figures out of the added context or dictate the two-value
+    form. The same arm also recorded fr-agg-2020 pasting whole English
+    note lines as brackets into a French answer — hence the
+    own-words/never-paste clause."""
+    assert "notes mark CONFLICT" in prompts.CONTEXT_BLOCK
+    assert "both conflicting\nvalues and their pages" in prompts.CONTEXT_BLOCK
+    assert "never paste a note\nline as a citation" in prompts.CONTEXT_BLOCK
+    assert "Answer the asked fact first" not in SYSTEM_PROMPT
+    for lang in (None, "French"):
+        assert "Answer the asked fact first" not in assemble_chat(lang)
+
+
 def test_comparison_block_asks_for_a_citation_per_item():
     """The fan-out is where multi-document lists are produced; the adjudicated
     'FP220 (USD 50.0m) > FP173 (USD 23.6m) > FP172 ...' row is one line stating
@@ -257,6 +307,11 @@ def test_conductor_prompt_is_untouched_by_the_citation_pass():
 #: rule group does not. Tripping this is not a failure to route around by
 #: raising the number — it is the point at which the next rule has to earn its
 #: place by displacing one, or by shipping behind its own trigger.
+#:
+#: CONTEXT_BLOCK (the answer-length fix) took the trigger route: it ships only
+#: on single-document registry turns, which comparison and matrix flags
+#: exclude, so the biggest variant — the all-flags one this budget measures —
+#: does not contain it and its ~370 characters cost the budget nothing.
 MAX_PROMPT_CHARS = 5000
 
 
@@ -274,7 +329,8 @@ def test_each_block_is_shorter_than_the_core_it_supplements():
     for name, block in (("comparison", COMPARISON_BLOCK),
                         ("matrix", MATRIX_BLOCK),
                         ("registry", REGISTRY_BLOCK),
-                        ("year", prompts.YEAR_BLOCK)):
+                        ("year", prompts.YEAR_BLOCK),
+                        ("context", prompts.CONTEXT_BLOCK)):
         assert len(block) < len(CORE), name
 
 
