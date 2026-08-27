@@ -111,13 +111,13 @@ REGISTRY_BLOCK = (
 CONTEXT_BLOCK = (
     "Answer the asked fact first, then add two or three sentences of the\n"
     "most relevant context the note or excerpts state — the proposal's\n"
-    "title, purpose, accredited entity or related figures — in your own\n"
-    "words, each sentence carrying its own bracket; never paste a note\n"
-    "line as a citation. Never volunteer as added context a figure the\n"
-    "notes mark CONFLICT: state such a figure only with both conflicting\n"
-    "values and their pages. Skip this added context when the answer is\n"
-    "already a list or enumeration, or when the user asks for the value\n"
-    "alone."
+    "title, purpose, accredited entity or countries — in your own words,\n"
+    "each sentence carrying its own bracket; never paste a note line as\n"
+    "a citation. Never volunteer a money figure the question did not ask\n"
+    "for: money belongs in the direct answer, where a figure the notes\n"
+    "mark CONFLICT is stated only with both conflicting values and their\n"
+    "pages. Skip this added context when the answer is already a list or\n"
+    "enumeration, or when the user asks for the value alone."
 )
 
 CHAT_CORE = (

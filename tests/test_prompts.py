@@ -232,20 +232,29 @@ def test_the_context_block_carries_its_own_proportionality_valve():
     assert "list or enumeration" in prompts.CONTEXT_BLOCK
 
 
-def test_the_context_block_refuses_one_sided_conflict_figures():
-    """Measured, release-16 arm 1: all five new CONTRADICTED claims were
+def test_the_context_block_keeps_unasked_money_out_of_the_context():
+    """Measured twice. Release-16: all five new CONTRADICTED claims were
     elaboration sentences volunteering total financing on documents whose
     registry records an intra-document conflict (FP173 598.1M vs 1,235.4M;
     FP151 28M vs 720M; FP251 110M vs 30M; FP29 12.222M vs 0.22M), naming
-    one value with a vague 'conflicting figures elsewhere'. The detector's
-    conflict rule wants both values with pages, so the block must either
-    keep such figures out of the added context or dictate the two-value
-    form. The same arm also recorded fr-agg-2020 pasting whole English
-    note lines as brackets into a French answer — hence the
-    own-words/never-paste clause."""
-    assert "notes mark CONFLICT" in prompts.CONTEXT_BLOCK
-    assert "both conflicting\nvalues and their pages" in prompts.CONTEXT_BLOCK
-    assert "never paste a note\nline as a citation" in prompts.CONTEXT_BLOCK
+    one value with a vague 'conflicting figures elsewhere'. Release-17,
+    with a conflict-only clause: the four cured, but the model kept the
+    acknowledge-without-enumerating habit on other conflict-bearing money
+    (fr-fp251-conflict again) and volunteered a table figure whose
+    rounding disagrees with the canonical one (w2b-fu-fp259-cover, 156.7M
+    vs 156.8M). Every excess contradicted claim in both arms was money;
+    title/purpose/entity/country context contradicted nothing. So the
+    block now excludes unasked money from the added context wholesale —
+    money stays in the direct answer under the conflict rule's two-value
+    form. Release-16 also recorded fr-agg-2020 pasting whole English note
+    lines as brackets into a French answer — hence the own-words/
+    never-paste clause."""
+    flat = " ".join(prompts.CONTEXT_BLOCK.split())
+    assert "Never volunteer a money figure the question did not ask" in flat
+    assert "notes mark CONFLICT" in flat
+    assert "both conflicting values and their pages" in flat
+    assert "never paste a note line as a citation" in flat
+    assert "related figures" not in flat
     assert "Answer the asked fact first" not in SYSTEM_PROMPT
     for lang in (None, "French"):
         assert "Answer the asked fact first" not in assemble_chat(lang)
