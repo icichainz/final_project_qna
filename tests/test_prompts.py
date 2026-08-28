@@ -228,8 +228,9 @@ def test_the_context_block_carries_its_own_proportionality_valve():
     """Elaboration must not undo the enumeration format or override an
     explicit ask for brevity — the skip clause is the half of the rule
     that keeps Option A from becoming mini-briefs-everywhere."""
-    assert "Skip this added context" in prompts.CONTEXT_BLOCK
-    assert "list or enumeration" in prompts.CONTEXT_BLOCK
+    flat = " ".join(prompts.CONTEXT_BLOCK.split())
+    assert "Skip this added context" in flat
+    assert "list or enumeration" in flat
 
 
 def test_the_context_block_keeps_unasked_money_out_of_the_context():

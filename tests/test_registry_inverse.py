@@ -1080,7 +1080,7 @@ def test_the_corpus_minimum_answers_p3(real):
         # fix binds two more '25 USD million'-form canonicals; FP155-class).
     assert lines[0].startswith(
         'Registry — SMALLEST GCF funding requested in the corpus: FP35 '
-        '"Climate Information Services for Resilient De…" — 22,953 USD '
+        '"Climate Information Services for Resilient…" — 22,953 USD '
         "(p.10, B.2(b)) [240_gcf-b15-13-add08]. Ranked over the 193 of 273 "
         "documents in the corpus whose registry figure is an unambiguous USD "
         "amount.")
@@ -1230,7 +1230,7 @@ def test_the_year_arm_fires_only_for_the_minimum(real):
     # Same figure, same page, same document, better print.
     assert lines[0].startswith(
         "Registry — SMALLEST GCF funding requested in the 2020 funding "
-        'proposals: FP129 "Afghanistan Rural Energy Market Transformatio…" — '
+        'proposals: FP129 "Afghanistan Rural Energy Market…" — '
         "17,198,843 USD (p.5, A.8) [146_gcf-b26-02-add01]. Ranked over the 22 "
         "of 30 documents in the 2020 funding proposals whose registry figure "
         "is an unambiguous USD amount.")

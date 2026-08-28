@@ -321,9 +321,22 @@ _MAX_NAME_TOKENS = 8
 
 
 def _clip(text: Optional[str], limit: int = _MAX_TITLE_CHARS) -> str:
-    """A title shortened for a listing, with '…' when it really was cut."""
+    """A title shortened for a listing, with '…' when it really was cut.
+
+    The cut lands on a word boundary. Measured (release-18-repeat,
+    fr-inv-banque-mondiale, 15 unsupported claims in one case): a mid-word
+    cut like 'Mali Count…' invites the model to tidy the fragment away —
+    it wrote 'Mali …' — and the tidied quote is no longer a substring of
+    the note, so every listing line failed verification. A cut that ends
+    on a whole word leaves nothing to tidy; a single unbroken token longer
+    than the limit still takes the hard cut."""
     text = str(text or "?")
-    return text if len(text) <= limit else text[:limit] + "…"
+    if len(text) <= limit:
+        return text
+    cut = text[:limit]
+    if " " in cut:
+        cut = cut.rsplit(" ", 1)[0].rstrip()
+    return cut + "…"
 
 
 def _list_bit(label: str, values: Sequence[str],

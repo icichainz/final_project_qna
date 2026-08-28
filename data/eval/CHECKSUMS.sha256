@@ -28,7 +28,7 @@ ce0463faef872918bd3d85078135ba9ab4d187eea223ffffdeca26435a9b9228  data/eval/answ
 638377401568e3ce0e78858c879721874bf2bc25a84c8b8bcc9cbb5e359a5205  data/registry_v2.json
 d7d2c4c4c3631f637e5edd9d963a8130687a4f450cfb706cb67e8767a7dea6dd  data/eval/release_release-1-adjudicated.jsonl
 1a0de743be0fab562f2f905e77b8f23ad33203b7c61523369f3d68bc2d0811b3  data/eval/release_release-1-adjudication.blind.jsonl
-b15c6ab4b8abc6b9c6c36b76ee6d2730e05a1315c6a74a7c4a3636d2737e7122  data/eval/release_release-1-evidence.jsonl
+cac84ebd5a2ab7eb02ed7014cdaaf4d6bea0fec41b264791cdf2d0640fe4ee43  data/eval/release_release-1-evidence.jsonl
 #
 # Wave 3 — production-parity release harness. Recorded 2026-08-20 on
 # main @ 515eb39, verify.py untouched throughout
@@ -264,3 +264,4 @@ de13de999bd5f06ef0305c5cd18881283119f8c49feb3f9ebe25601d5f040ab0  data/eval/rele
 046ec448b3ccfcca7257c28630a13ac267a97376e2eda96470277e37860ad921  data/eval/release_release-16.jsonl
 c4ae3f58b6b9c5b53a56175bd841f9eef37632e8f889c6f8778c3c540875381c  data/eval/release_release-17.jsonl
 372c12d45487769f8840b94e34213d8a9dc53845dcfd439bc932b5b42c533563  data/eval/release_release-18.jsonl
+13ea88d8b066ffbef03e86d22168bebdfb668f7f60392c57eaa5ccaadf0cd405  data/eval/release_release-18-repeat.jsonl
