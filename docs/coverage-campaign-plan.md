@@ -360,3 +360,19 @@ removal command awaits the owner, then the next deploy ships clean.
    defeats the article-noun pattern) — scorer edit, owner ratifies
 4. Phase 5a policy PDFs (owner) · Phase 6 instruments
 5. SSH key · leaked keys · stale theme files (owner)
+
+## The answer-length pass closes (2026-08-28, release-19 pair) — GREEN
+
+After the credit top-up, release-18-repeat came back red for one named
+reason: the inverse note's mid-word title clips invited quote-tidying
+(fr-inv-banque-mondiale, 15 of the arm's 31 unsupported claims). _clip
+now cuts at word boundaries; baseline re-rendered (640 hit chunks
+proven unchanged) and re-anchored.
+
+**Release-19 pair: PASS both arms — 534/548 = 97.4% and 552/572 =
+96.5% — contradicted 5 in BOTH arms with identical case lists, the
+World Bank case 14/14 and 14/15, identifier median 545/566 chars
+(was 221).** Deployed as fp-gcf:7ad53d2. Remaining open items are the
+owner trio (SSH key, leaked keys, stale theme files), the gold regex
+near-miss awaiting ratification, the inverse-header count scope, and
+Phases 5a/6.
