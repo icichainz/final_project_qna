@@ -311,3 +311,52 @@ complete.
 2. Phase 5a policy PDFs (owner)
 3. Phase 6 instrument items (unchanged)
 4. Deploy · SSH key · leaked keys (the standing trio)
+
+## The answer-length pass (2026-08-27/28, releases 16-18) — arm 1 GREEN, pair pending credits
+
+Operator report after the release-15 deploy: live answers read bare.
+Root-caused to no cap at all — the campaign's own citation discipline
+(cite-or-hedge, corpus scope, apposition guard) taught the model to
+state the asked fact and stop. The cure is CONTEXT_BLOCK: answer first,
+then two or three cited sentences of registry-note context, shipped
+behind the registry trigger (comparison/matrix turns keep their
+per-item format), so the prompt budget's biggest variant is unchanged.
+
+Two discovery arms sharpened the rule, each on a measured defect:
+
+- **Release-16** (96.5%, contradicted 9): five elaboration sentences
+  volunteered one side of a registry-recorded total-financing conflict
+  (FP173, FP151, FP251, FP29) → conflict figures only in two-value
+  form; note lines never pasted as citations (fr-agg-2020's language
+  flunk).
+- **Release-17** (96.5%, contradicted 10): the four cured, but the
+  acknowledge-without-enumerating habit migrated, and a table figure's
+  rounding fought the canonical cover value (156.7M vs 156.8M). Every
+  excess contradicted claim in both arms was money; descriptive
+  context contradicted nothing → unasked money excluded from the
+  added context wholesale.
+
+**Release-18 arm 1, the strongest arm recorded: 575/592 = 97.1%
+supported, contradicted 5 (all baseline shapes, none from the
+elaboration), presence 88.2%, identifier median 555 chars (was 221).**
+The repeat arm aborted on API credit exhaustion (429, ~40 cases in);
+its truncated record is void and unanchored. The pair closes with one
+re-run (`--record release-18-repeat --force-record`) once the account
+is topped up — production shares the key and is equally starved.
+
+Also this window: main fast-forwarded to the campaign tip and deployed
+(fp-gcf:94cea40, the release-17 block; the release-18 block redeploys
+on pair closure). The GitHub push is still blocked on the SSH key, and
+the extracted green theme survives on the server as two stale files
+rsync never deletes (`public/custom.css`, `public/theme.json`) — the
+removal command awaits the owner, then the next deploy ships clean.
+
+## Final open items (unchanged otherwise)
+
+1. Top up API credits → re-run release-18-repeat → redeploy certified block
+2. Inverse-listing header count scope (next serving touch — deliberately
+   NOT folded into this pass, to keep release-18's arm 1 valid)
+3. Gold regex near-miss `w2a-rbp-fp273-absence` ("the FP273 document"
+   defeats the article-noun pattern) — scorer edit, owner ratifies
+4. Phase 5a policy PDFs (owner) · Phase 6 instruments
+5. SSH key · leaked keys · stale theme files (owner)
