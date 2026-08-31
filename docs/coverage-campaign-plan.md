@@ -376,3 +376,27 @@ World Bank case 14/14 and 14/15, identifier median 545/566 chars
 owner trio (SSH key, leaked keys, stale theme files), the gold regex
 near-miss awaiting ratification, the inverse-header count scope, and
 Phases 5a/6.
+
+## The section probe closes (2026-08-31, release-22 pair) — GREEN
+
+Two serving touches, each earned by a named residue:
+
+1. **The section probe** (releases 20-21): `probe_pages(sections=...)`
+   finally got its ask — 'section C.2' + exactly one document fetches
+   the section by printed id, two-stage (the id finds the pages, the
+   pages are fetched whole, because FP126's table body files under a
+   VLM-promoted table-header heading). l1x-sec-c2-fp126: page_rate
+   0.0 → 1.0 and full pass in every arm since.
+2. **The copy rule** (release-21-repeat red, cured in 22): the French
+   listing case produced its second paraphrase habit (per-line entity
+   translation after release-18's ellipsis tidying), so `_COPY_RULE`
+   now rides on every inverse listing — copy lines EXACTLY as printed,
+   translate nothing, state the shared name once in the registry's own
+   spelling. A rule line, not evidence; the _NO_SUM_RULE pattern.
+
+**Release-22 pair: PASS both arms — 593/608 = 97.5% and 594/620 =
+95.8%; banque-mondiale 14/15 and 13/13; the section case green in both
+arms.** Deployed as fp-gcf:4fde815. Standing note: if the French
+listing case produces a THIRD paraphrase habit, the byte-substring
+standard for listing lines becomes a verifier-protocol question for
+the owner, not another serving patch.
