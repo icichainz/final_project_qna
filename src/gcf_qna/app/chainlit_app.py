@@ -305,6 +305,16 @@ def _section_probe(retriever, question, hits, query=None) -> list:
     selects nothing, and any failure — no retriever, an index without
     section paths, a raise — returns [], because the supplement is never
     allowed to cost a turn the answer it would have given without it.
+
+    Two stages, because a section id only reaches the chunks whose path
+    carries it. Measured (release-20, both arms, l1x-sec-c2-fp126): FP126's
+    C.2 path sits on a 163-character heading chunk, while the financing
+    table's body is a sibling chunk whose path is the table's own header row
+    — the VLM markdown promoted it to a heading — so an id-only probe served
+    the header and none of the rows. The id resolves the section to its
+    PAGES (stage 1, reading order, query-blind); the pages are then fetched
+    whole (stage 2), which carries every chunk printed on them regardless of
+    what the tracker filed it under.
     """
     try:
         asks = _section_probe_asks(question)
@@ -312,9 +322,16 @@ def _section_probe(retriever, question, hits, query=None) -> list:
             return []
         have = {(h.doc_id, h.page) for h in (hits or [])}
         doc, codes = asks[0]
-        got = [h for h in retriever.probe_pages(doc, sections=codes,
-                                                k=_MAX_PROBE_HITS, query=query)
-               if (h.doc_id, h.page) not in have]
+        found = retriever.probe_pages(doc, sections=codes, k=_MAX_PROBE_HITS)
+        pages = []
+        for h in found:
+            if h.page is not None and h.page not in pages:
+                pages.append(h.page)
+        pages = sorted(pages)[:_MAX_PROBE_PAGES]
+        if pages:
+            found = retriever.probe_pages(doc, pages=pages, sections=codes,
+                                          k=_MAX_PROBE_HITS, query=query)
+        got = [h for h in found if (h.doc_id, h.page) not in have]
         return got[:_MAX_PROBE_HITS]
     except Exception as e:                     # noqa: BLE001 — never a blocker
         print(f"section probe unavailable: {e}", flush=True)

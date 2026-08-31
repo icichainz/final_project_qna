@@ -82,13 +82,24 @@ class _FakeRetriever:
         return self.hits[:k]
 
 
-def test_the_probe_passes_the_codes_and_only_the_codes():
+def test_the_probe_resolves_the_id_to_pages_then_fetches_the_pages_whole():
+    """Stage 1 asks by id alone (the fence's codes, no pages, no query);
+    stage 2 re-asks by the pages stage 1 found, so chunks the tracker filed
+    under a promoted table-header heading — the release-20 residue — ride
+    along with the section they are printed in."""
     r = _FakeRetriever([_Hit(GOLD_DOC, 40)])
     got = app._section_probe(r, GOLD_Q, [], GOLD_Q)
     assert [h.page for h in got] == [40]
-    (call,) = r.calls
-    assert call["doc"] == GOLD_DOC and call["sections"] == ["C.2"]
-    assert call["pages"] == [], "a section ask names no pages of its own"
+    first, second = r.calls
+    assert first["sections"] == ["C.2"] and first["pages"] == []
+    assert first["query"] is None, "page discovery is reading-order, not cosine"
+    assert second["pages"] == [40] and second["query"] == GOLD_Q
+
+
+def test_a_sectionless_index_yields_no_second_ask_and_no_probe():
+    r = _FakeRetriever([])
+    assert app._section_probe(r, GOLD_Q, [], GOLD_Q) == []
+    assert len(r.calls) == 1, "no pages found -> nothing to fetch whole"
 
 
 def test_pages_this_turn_already_holds_are_not_fetched_twice():
