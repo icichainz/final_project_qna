@@ -376,6 +376,24 @@ def _listing(rows: Sequence[dict], cap: int) -> Tuple[str, str]:
     return listing, (f" (+{len(rows) - cap} more)" if len(rows) > cap else "")
 
 
+#: A rule line, not evidence — the `_NO_SUM_RULE` pattern: it names no stem
+#: and no page, so `_note_pages`/`note_page_scopes` file it nowhere, and it
+#: rides only on listing notes, so only listing turns pay for it. Measured
+#: twice on fr-inv-banque-mondiale (15 unsupported claims per red arm):
+#: release-18-repeat tidied the mid-word title clips away ('Mali Count…' ->
+#: 'Mali …'), release-21-repeat restated the entity on every line as its
+#: French translation ('Banque mondiale comme entité accréditée') — and
+#: neither rewritten form is a substring of the note that must support it.
+#: The green arms' shape — the shared name stated once in the registry's own
+#: spelling, lines copied bare — is what this line dictates. It cannot ride
+#: inside the header: the board header plus any useful wording passes 400
+#: characters, and `verify._BRACKET_RE` stops parsing a pasted line as a
+#: citation there.
+_COPY_RULE = ("Copy each line below EXACTLY as printed — translate nothing "
+              "in it, add nothing to it but its citation; state the shared "
+              "name once, in the spelling the registry prints.")
+
+
 def _listing_lines(rows: Sequence[dict], cap: int) -> Tuple[List[str], str]:
     """(one line per proposal, the '(+N more)' tail) — the CITABLE listing.
 
@@ -1768,7 +1786,7 @@ def _inverse_note(rows: List[dict], lead: str, scope: str = "",
              f"complete listing over the {len(load())} corpus documents{scope}")
     head = (f"Registry — {n} {lead} ({state}){tail}; one line per proposal "
             f"below, each ending with the document to cite for it{more}:")
-    return "\n".join([head] + lines)
+    return "\n".join([head, _COPY_RULE] + lines)
 
 
 def _country_note(question: str) -> Optional[str]:

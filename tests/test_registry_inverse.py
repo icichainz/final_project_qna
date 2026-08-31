@@ -481,6 +481,7 @@ def test_the_country_note_lists_every_match_with_the_count(syn):
         "countries field (complete listing over the 15 corpus documents); one "
         "line per proposal below, each ending with the document to cite for "
         "it:",
+        syn._COPY_RULE,
         'FP13 "Regional Facility" [13_a-fp13, cover pages]',
         'FP15 "Global Markets" [15_a-fp15, cover pages]',
     ]
@@ -504,7 +505,7 @@ def test_the_entity_note_names_the_spellings_it_merged(syn):
         "listing over the 15 corpus documents, covering the 4 spellings of "
         "that name the registry holds); one line per proposal below, each "
         "ending with the document to cite for it:")
-    assert note.splitlines()[1:] == [
+    assert note.splitlines()[2:] == [
         'FP1 "Mali Hydromet" [01_a-fp1, cover pages]',
         'FP2 "Malawi Resilience" [02_a-fp2, cover pages]',
         'FP3 "Niger Solar" [03_a-fp3, cover pages]',
@@ -518,7 +519,7 @@ def test_a_single_spelling_says_nothing_about_spellings(syn):
     assert note.splitlines()[0].endswith(
         "(complete listing over the 15 corpus documents); one line per "
         "proposal below, each ending with the document to cite for it:")
-    assert note.splitlines()[1:] == ['FP8 "Serbia Forests" [08_a-fp8, cover pages]']
+    assert note.splitlines()[2:] == ['FP8 "Serbia Forests" [08_a-fp8, cover pages]']
 
 
 def test_an_inverse_listing_over_the_cap_says_so_and_keeps_the_true_count(
@@ -530,7 +531,7 @@ def test_an_inverse_listing_over_the_cap_says_so_and_keeps_the_true_count(
     monkeypatch.setattr(registry, "_cache", big)
     monkeypatch.setattr(registry, "_cache_v2", {})
     note = registry._country_note("Which proposals are in Kenya?")
-    head, *items = note.splitlines()
+    head, rule, *items = note.splitlines()
     assert head.startswith("Registry — 55 funding proposals in the corpus name "
                            "Kenya in their countries field (50 of 55 listed — "
                            "LIST TRUNCATED, but the count 55 is complete)")
@@ -547,7 +548,7 @@ def test_the_largest_real_group_is_listed_whole(real):
     and probe P1 named three of them. It arrives complete, or the note is back
     to the defect it was written to fix."""
     note = real._entity_note("Which proposals does UNDP implement?")
-    head, *items = note.splitlines()
+    head, rule, *items = note.splitlines()
     assert "LIST TRUNCATED" not in note and "more)" not in note
     assert head.startswith("Registry — 41 ") and len(items) == 41
     assert all(ln.startswith("FP") and ln.endswith(", cover pages]")
@@ -566,7 +567,7 @@ def test_the_inverse_listing_publishes_stems_and_no_pages(real):
     header, which states a corpus-wide COUNT and belongs to no document.
     """
     note = real._country_note("Which proposals are in Kenya?")
-    head, *items = note.splitlines()
+    head, rule, *items = note.splitlines()
     assert app._note_pages([note]) == set()
     assert V.note_page_scopes(note) == []
     assert "(p." not in note
@@ -616,7 +617,7 @@ def test_each_listing_line_files_under_its_own_stem_at_document_scope(real):
     — which states a corpus-wide COUNT — files under nothing, because a line
     filed under a stem is read as evidence ABOUT that document."""
     note = real._entity_note("Which proposals does UNDP implement?")
-    head, *items = note.splitlines()
+    head, rule, *items = note.splitlines()
     ev = V.build_evidence([], note)
     docs = {k[0] for k in ev if not V.is_notes_doc(k[0])}
     assert len(docs) == len(items) == 41
@@ -658,7 +659,7 @@ def test_a_listing_item_fits_the_bracket_the_answer_has_to_write(real):
     so even an answer that pastes the line it read from parses as a citation
     naming that document."""
     note = real._entity_note("Which proposals does UNDP implement?")
-    head, *items = note.splitlines()
+    head, rule, *items = note.splitlines()
     assert len(note) > 400 and len(head) < 400
     for ln in items:
         assert len(ln) < 400
@@ -679,7 +680,8 @@ def test_every_listing_the_corpus_can_produce_obeys_the_two_rules(real):
     assert len(notes) > 300
     items = 0
     for note in notes:
-        head, *rows = note.splitlines()
+        head, rule, *rows = note.splitlines()
+        assert rule == real._COPY_RULE       # the rule rides on EVERY listing
         assert app._note_pages([note]) == set()
         assert V.note_page_scopes(note) == []
         assert not V._NOTE_DOC_RE.search(head)
@@ -938,7 +940,7 @@ BOARD_POSITIVE = [
 def test_the_board_note_fires_on_a_set_ask(real, q):
     note = real._board_note(q)
     assert len(note) == 1
-    head, *items = note[0].splitlines()
+    head, rule, *items = note[0].splitlines()
     assert head.startswith(
         "Registry — 7 funding-proposal documents in the corpus are from board "
         "meeting B.35 (2023) (complete listing over the 273 corpus documents)")
@@ -1007,7 +1009,7 @@ def test_the_board_note_says_the_registry_records_no_approval(real):
     registry records no approval decision' filed under FP211. It is a fact
     about the listing; it lives on the line that owns the listing.
     """
-    head, *items = real._board_note("What was approved at B.35?")[0].splitlines()
+    head, rule, *items = real._board_note("What was approved at B.35?")[0].splitlines()
     assert head.endswith(
         "— the board is read from each document's own identifier; the registry "
         "records no approval DECISION, so do not report this listing as what "
@@ -1027,7 +1029,7 @@ def test_the_board_listing_publishes_stems_and_no_pages(real):
     line per proposal, each naming the document to cite, and no page anywhere.
     """
     note = real._board_note("Which proposals were approved at B.35?")[0]
-    head, *items = note.splitlines()
+    head, rule, *items = note.splitlines()
     assert app._note_pages([note]) == set()
     assert V.note_page_scopes(note) == []
     assert "(p." not in note
@@ -1043,7 +1045,7 @@ def test_the_board_note_reaches_registry_note(real):
 
 
 def test_the_board_listing_states_its_own_completeness(syn):
-    head, *items = syn._board_note(
+    head, rule, *items = syn._board_note(
         "Which proposals were approved at B.19?")[0].splitlines()
     assert head.startswith(
         "Registry — 1 funding-proposal documents in the corpus are from board "
@@ -1436,3 +1438,25 @@ def test_no_gold_case_question_fires_any_new_note(real):
                 or real._extrema_note(q)):
             fired.append(case["id"])
     assert sorted(fired) == sorted(_NEW_NOTE_GOLD)
+
+
+def test_the_copy_rule_rides_on_listings_and_is_a_rule_not_evidence(syn, real):
+    """Measured twice on fr-inv-banque-mondiale, 15 unsupported claims per
+    red arm: release-18-repeat tidied the mid-word title clips away
+    ('Mali Count…' -> 'Mali …'), release-21-repeat restated the entity on
+    every line as its French translation ('Banque mondiale comme entité
+    accréditée') — neither rewritten form is a substring of the note that
+    must support it. The green arms' shape — the shared name stated once in
+    the registry's own spelling, lines copied bare — is what the rule line
+    dictates. The `_NO_SUM_RULE` pattern: it rides on the note so only
+    listing turns pay for it, it stays under the 400-character bracket cap,
+    and it files nowhere as evidence."""
+    for note in (syn._entity_note("Which proposals does UNDP implement?"),
+                 syn._country_note("Which proposals are in Kenya?"),
+                 real._board_note("What was approved at B.35?")[0]):
+        assert note.splitlines()[1] == syn._COPY_RULE
+    assert "EXACTLY as printed" in syn._COPY_RULE
+    assert "translate nothing" in syn._COPY_RULE
+    assert "state the shared name once" in syn._COPY_RULE
+    assert len(syn._COPY_RULE) < 400
+    assert app._note_pages([syn._COPY_RULE]) == set()
