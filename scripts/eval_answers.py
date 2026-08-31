@@ -1347,7 +1347,11 @@ class Pipeline:
             getattr(self, "retriever", None), reg_note, hits, question)
         if probe_hits:
             hits = probe_hits + hits
-        context = app._context_block(hits, probe_hits)
+        section_hits = app._section_probe(
+            getattr(self, "retriever", None), question, hits, question)
+        if section_hits:
+            hits = section_hits + hits
+        context = app._context_block(hits, probe_hits, section_hits)
         if year_note:
             context = year_note + "\n\n" + context
         if weak:

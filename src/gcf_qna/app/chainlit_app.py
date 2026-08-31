@@ -252,7 +252,76 @@ def _conflict_probe(retriever, note, hits, query=None) -> list:
         return []
 
 
-def _context_block(hits, probe=()) -> str:
+#: The ask side of `probe_pages(sections=...)`, which sat dormant until the
+#: rebuilt default index gained `section_path` on its chunks. The measured
+#: shape (release-19 arm 1, l1x-sec-c2-fp126, page_rate 0.0): 'What does
+#: section C.2 of FP126 say?' names a section whose heading text shares
+#: almost no vocabulary with the question, so similarity search returns
+#: cover-page chunks and the C.2 table on p. 40 never surfaces. Asking for
+#: the section by its printed id is the cure, with the same honesty rules
+#: the conflict probe follows: the fence decides WHEN, `probe_pages`
+#: decides WHAT, and a failure returns [] rather than costing the turn.
+_SECTION_ASK_RE = re.compile(
+    r"\bsections?\s+([A-Ha-h])\s*\.?\s*(\d{1,2}(?:\.\d{1,2})?)(?!\d)")
+
+
+def _section_probe_asks(question) -> list:
+    """[(doc_id, [code, ...])] for a question naming a section AND one document.
+
+    Three refusals keep it a supplement:
+
+    * the word 'section' (the same word in French) must introduce the code —
+      a bare 'C.2' or a board code ('approved at B.42') never fires;
+    * the question must resolve to exactly ONE registry document: zero means
+      there is no document to scope to, two or more is the comparison path's
+      territory;
+    * at most two codes, in question order — an ask that names a section of
+      a document the corpus lacks yields an empty probe, never a search.
+    """
+    codes = []
+    for letter, num in _SECTION_ASK_RE.findall(question or ""):
+        code = f"{letter.upper()}.{num}"
+        if code not in codes:
+            codes.append(code)
+    if not codes:
+        return []
+    try:
+        rows = registry.resolve_fps(question or "")[0]
+        docs = list(dict.fromkeys(r["doc_id"] for r in rows))
+    except Exception:
+        return []
+    if len(docs) != 1:
+        return []
+    return [(docs[0], codes[:2])]
+
+
+def _section_probe(retriever, question, hits, query=None) -> list:
+    """Excerpts for the section the question names, in the document it names.
+
+    `probe_pages(sections=...)` reduces each stored path component to its
+    printed id, so 'C.2' matches the 'C.2. Financing by Component' heading
+    and anything beneath it, and never 'C.20'. Pages this turn already holds
+    are not fetched twice, `query` orders chunks within the section and
+    selects nothing, and any failure — no retriever, an index without
+    section paths, a raise — returns [], because the supplement is never
+    allowed to cost a turn the answer it would have given without it.
+    """
+    try:
+        asks = _section_probe_asks(question)
+        if not asks or retriever is None:
+            return []
+        have = {(h.doc_id, h.page) for h in (hits or [])}
+        doc, codes = asks[0]
+        got = [h for h in retriever.probe_pages(doc, sections=codes,
+                                                k=_MAX_PROBE_HITS, query=query)
+               if (h.doc_id, h.page) not in have]
+        return got[:_MAX_PROBE_HITS]
+    except Exception as e:                     # noqa: BLE001 — never a blocker
+        print(f"section probe unavailable: {e}", flush=True)
+        return []
+
+
+def _context_block(hits, probe=(), section_probe=()) -> str:
     """The excerpt half of the context — one definition, two callers.
 
     `scripts/eval_answers.py` builds the same block for the release run, and a
@@ -260,18 +329,23 @@ def _context_block(hits, probe=()) -> str:
     would come to differ in a byte nobody looked at.
 
     A probe excerpt is LABELLED rather than scored. It was fetched by page
-    because a registry CONFLICT line named that page, so it has no rank in the
-    similarity order the other excerpts are printed in, and a '(score 0.44)'
-    at the head of a ranked list invites exactly the comparison that number
-    cannot support — the cosine `probe_pages` returns ranks chunks WITHIN the
+    because a registry CONFLICT line named that page (or by section id because
+    the question asked for that section), so it has no rank in the similarity
+    order the other excerpts are printed in, and a '(score 0.44)' at the head
+    of a ranked list invites exactly the comparison that number cannot
+    support — the cosine `probe_pages` returns ranks chunks WITHIN the
     asked-for pages and nothing else.
     """
     marked = {id(h) for h in (probe or ())}
+    sec = {id(h) for h in (section_probe or ())}
+    def _tag(h):
+        if id(h) in marked:
+            return "(registry conflict page — fetched by page, not ranked)"
+        if id(h) in sec:
+            return "(the asked-for section — fetched by section id, not ranked)"
+        return f"(score {h.score:.2f})"
     return "\n\n".join(
-        f"[{_doc_label(h.doc_id, h.page)}] "
-        + ("(registry conflict page — fetched by page, not ranked)"
-           if id(h) in marked else f"(score {h.score:.2f})")
-        + f"\n{h.text}"
+        f"[{_doc_label(h.doc_id, h.page)}] " + _tag(h) + f"\n{h.text}"
         for h in hits)
 
 
@@ -2014,7 +2088,14 @@ async def main(message: cl.Message):
         retriever, reg_note, hits, message.content)
     if probe_hits:
         hits = probe_hits + hits
-    context = _context_block(hits, probe_hits)
+    # The section probe goes in front even of the conflict pages: its pages
+    # are the question's own direct object, and the dedup inside it already
+    # saw the conflict supplement in `hits`.
+    section_hits = await cl.make_async(_section_probe)(
+        retriever, message.content, hits, message.content)
+    if section_hits:
+        hits = section_hits + hits
+    context = _context_block(hits, probe_hits, section_hits)
     if year_note:
         context = year_note + "\n\n" + context
     if weak_signal:
