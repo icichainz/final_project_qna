@@ -400,3 +400,18 @@ arms.** Deployed as fp-gcf:4fde815. Standing note: if the French
 listing case produces a THIRD paraphrase habit, the byte-substring
 standard for listing lines becomes a verifier-protocol question for
 the owner, not another serving patch.
+
+## The L2 closer lands (2026-09-04, release-23 pair) — GREEN
+
+The inverse-header count scope, open since release-14, was an
+instruction gap, not missing machinery: `[Note]` (a document-less
+bracket) already resolves to NOTES_KEY where the header lives — the
+form the corpus-coverage cases use — and the copy rule now dictates it
+for the count and anything else only the header states. Demonstrated
+against the frozen verifier; certified by the release-23 pair (97.0%
+and 97.8%; the aggregate class 91.5% -> 95.2% across the pair).
+Deployed as fp-gcf:29d55ce.
+
+Four-levels status after this close: L1 done, L2 done, L3 done within
+the proposals corpus (widening awaits the owner's Phase 5a policy
+PDFs), L4 awaits the owner's decision on the labeled-analysis mode.
