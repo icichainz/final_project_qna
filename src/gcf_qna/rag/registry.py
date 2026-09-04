@@ -389,9 +389,18 @@ def _listing(rows: Sequence[dict], cap: int) -> Tuple[str, str]:
 #: inside the header: the board header plus any useful wording passes 400
 #: characters, and `verify._BRACKET_RE` stops parsing a pasted line as a
 #: citation there.
+#: The count clause is the L2 closer (open since release-14): the header's
+#: count lives on no document — it is a fact about the LISTING — so a count
+#: sentence cited to any stem fails ('not found in the cited evidence: 6',
+#: l2x-inv-iucn-count, release-22-repeat). `verify.parse_citations` reads a
+#: document-less '[Note]' bracket as kind 'note', which resolves to the whole
+#: note blob at NOTES_KEY where the header text lives — the exact form the
+#: green corpus-coverage cases already use ('273 documents in total. [Note]').
 _COPY_RULE = ("Copy each line below EXACTLY as printed — translate nothing "
               "in it, add nothing to it but its citation; state the shared "
-              "name once, in the spelling the registry prints.")
+              "name once, in the spelling the registry prints; cite the "
+              "count, and anything else only the header states, as [Note] — "
+              "never as one document's line.")
 
 
 def _listing_lines(rows: Sequence[dict], cap: int) -> Tuple[List[str], str]:

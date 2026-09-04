@@ -1460,3 +1460,30 @@ def test_the_copy_rule_rides_on_listings_and_is_a_rule_not_evidence(syn, real):
     assert "state the shared name once" in syn._COPY_RULE
     assert len(syn._COPY_RULE) < 400
     assert app._note_pages([syn._COPY_RULE]) == set()
+
+
+def test_the_header_count_cited_as_note_is_what_the_frozen_gate_accepts(syn):
+    """Not a rule assertion — a demonstration against the frozen verifier
+    that the [Note] form the copy rule now dictates is the one that passes,
+    and the stem form the model actually wrote (l2x-inv-iucn-count,
+    release-22-repeat, 'not found in the cited evidence: 6') is the one
+    that fails. The header's count is a fact about the LISTING: it lives on
+    no document, so `build_evidence` files it only at NOTES_KEY, which is
+    exactly what a document-less '[Note]' bracket resolves to."""
+    note = syn._entity_note("Which proposals does UNDP implement?")
+    ev = V.build_evidence([], note)
+    n = note.splitlines()[0].split(" ")[2]      # the header's own count
+    good = (f"The registry records {n} funding proposals with United Nations "
+            f"Development Programme as the accredited entity. [Note]")
+    (c,) = V.extract_claims(good)
+    (v,) = V.classify_deterministic([c], ev)
+    assert c.cited and v.status == V.SUPPORTED
+
+    stem = V._REG_DOC_RE.search(note.splitlines()[2]).group(1)
+    bad = good.replace("[Note]", f"[{stem}, cover pages]")
+    (c2,) = V.extract_claims(bad)
+    (v2,) = V.classify_deterministic([c2], ev)
+    assert v2.status != V.SUPPORTED
+
+    assert "cite the count" in syn._COPY_RULE and "[Note]" in syn._COPY_RULE
+    assert len(syn._COPY_RULE) < 400
