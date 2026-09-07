@@ -382,21 +382,22 @@ def test_the_pointer_is_exactly_the_shape_both_consumers_credit():
     pattern byte for byte:
 
         verify._NOTE_PAGE_RE  = re.compile(r"\(p\.(\d{1,3})[,)]")
-        chainlit_app._note_pages: re.findall(r"\(p\.(\d{1,3})[,)]", line)
+        pipeline._note_pages:   re.findall(r"\(p\.(\d{1,3})[,)]", line)
 
     The ')' arm of that character class is what lets a pointer end at the
     closing paren instead of a ', SECTION' tail, so '(p.3)' is creditable and
     'p.3' or '(page 3)' or '(p. 3)' would not be. Pinned against the pattern
-    ITSELF (and against the app's own source, which holds the second copy
-    inline) so a future edit to either regex fails here rather than silently
-    making every entity page uncitable.
+    ITSELF (and against the source that holds the second copy inline —
+    `_note_pages` moved out of chainlit_app into gcf_qna/pipeline.py with
+    the rest of the turn) so a future edit to either regex fails here
+    rather than silently making every entity page uncitable.
     """
     from gcf_qna.rag import verify
     pattern = r"\(p\.(\d{1,3})[,)]"
     assert verify._NOTE_PAGE_RE.pattern == pattern
-    app_src = (Path(__file__).resolve().parents[1] / "src" / "gcf_qna" / "app"
-               / "chainlit_app.py").read_text(encoding="utf-8")
-    assert f're.findall(r"{pattern}", line)' in app_src
+    pipeline_src = (Path(__file__).resolve().parents[1] / "src" / "gcf_qna"
+                    / "pipeline.py").read_text(encoding="utf-8")
+    assert f're.findall(r"{pattern}", line)' in pipeline_src
     import re as _re
     assert _re.findall(pattern, "accredited entity: IUCN (p.3);") == ["3"]
     for rejected in ("p.3", "(page 3)", "(p. 3)", "(p.3 A.8)"):

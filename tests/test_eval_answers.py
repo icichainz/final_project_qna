@@ -15,7 +15,8 @@ import pytest
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 
-import eval_answers as ev  # noqa: E402
+import eval_answers as ev
+from gcf_qna import pipeline  # noqa: E402
 from gcf_qna.rag import registry  # noqa: E402
 from gcf_qna.rag.retrieve import Hit  # noqa: E402
 
@@ -1272,25 +1273,36 @@ def test_the_deterministic_scoped_identity_is_enforced_not_hoped_for(monkeypatch
 # ------------------------------------------------ gap 1: prescope metadata ---
 def test_prescope_is_counted_by_observation_not_asserted():
     """The parity block claims production's single-FP pre-scoping runs here.
-    The claim is worth nothing unless something counted it, so the app's own
-    function is wrapped and the tally is what the record carries."""
-    from gcf_qna.app import chainlit_app as app
-    ev._instrument_prescope(app)
-    before = dict(ev._PRESCOPE_STATS)
-    items = app._rescope_items([{"q": Q152, "doc": None}], Q152, [])
-    assert ev._PRESCOPE_STATS["calls"] == before["calls"] + 1
-    assert ev._PRESCOPE_STATS["tagged"] == before["tagged"] + 1
+
+    The claim is worth nothing unless something counted it. It is no longer
+    counted by wrapping the app's function from outside: `gcf_qna.pipeline`
+    tallies its own guards into the turn's `TurnPlan.guards`, so the counter
+    is part of the thing being measured and the tally is what the record
+    carries."""
+    guards = {}
+    items = pipeline._apply_rescope([{"q": Q152, "doc": None}], Q152, [],
+                                    guards)
+    assert guards["prescope_calls"] == 1
+    assert guards["prescope_tagged"] == 1
     assert items[0]["doc"], "the tag the counter says it added"
-    assert ev._PRESCOPE_STATS["wrapped"] is True
 
 
-def test_instrumenting_prescope_twice_does_not_double_count():
-    from gcf_qna.app import chainlit_app as app
-    ev._instrument_prescope(app)
-    ev._instrument_prescope(app)
-    before = ev._PRESCOPE_STATS["calls"]
-    app._rescope_items([{"q": Q152, "doc": None}], Q152, [])
-    assert ev._PRESCOPE_STATS["calls"] == before + 1
+def test_the_run_accumulates_the_guard_tally_the_parity_block_publishes():
+    """Per turn into `TurnPlan.guards`, per run into `Pipeline.guard_stats`,
+    and from there into the record — never a hard-coded True."""
+    pipe = types.SimpleNamespace(
+        guard_stats={"prescope_calls": 0, "prescope_tagged": 0},
+        comparison_flag="decomposed", history_mode="isolated",
+        conductor=False, production_planner=False,
+        verifier_mode="deterministic",
+        conductor_stats={"calls": 0, "fanned_out": 0, "chat": 0, "failed": 0},
+        planner_stats={"detected": 0, "intent_ok": 0, "matrix_built": 0,
+                       "matrix_failed": 0})
+    assert ev.Pipeline.parity(pipe)["production_single_id_prescope"] is False
+    ev._record_guards(pipe, {"prescope_calls": 1, "prescope_tagged": 1})
+    block = ev.Pipeline.parity(pipe)
+    assert block["production_single_id_prescope"] is True
+    assert block["prescope_calls"] == 1 and block["prescope_tagged"] == 1
 
 
 _FULL_PARITY = {

@@ -62,6 +62,13 @@ VERIFY_LLM = os.getenv("VERIFY_LLM", "1") == "1"
 # trap: it reads as a live capability one env edit away, and the code behind it
 # is gone. VERIFY_REPAIR left in an .env is inert — nothing reads it.
 
+# --- observability ---
+# Root log level for the process, applied once by chainlit_app (basicConfig is
+# a no-op once handlers exist, so an operator's own logging setup wins). The
+# per-turn INFO line in gcf_qna.pipeline is the instrument this exists for:
+# WARNING silences it and keeps the failure paths, DEBUG adds nothing extra.
+LOG_LEVEL = os.getenv("LOG_LEVEL", "INFO")
+
 # --- chat (OpenAI-compatible endpoint) ---
 CHAT_MODEL = os.getenv("CHAT_MODEL", "gpt-5.2")
 # None (the default) means the answer calls send no output cap at all. The old

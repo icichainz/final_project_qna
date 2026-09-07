@@ -147,16 +147,25 @@ def test_the_conflict_label_is_untouched():
 
 # ------------------------------------------------------------- the wiring ---
 def test_app_and_harness_wire_the_same_probe_at_the_same_point():
-    """Parity by source: both callers run the app's own `_section_probe`
-    after the conflict probe and hand BOTH supplements to `_context_block`,
-    so a release record's excerpts are the excerpts production ships."""
+    """Parity by construction: there is now exactly ONE call site.
+
+    The claim has not changed — a release record's excerpts must be the
+    excerpts production ships — but the two source copies it used to compare
+    became one when the turn moved into `gcf_qna.pipeline.build_context`,
+    which both `chainlit_app.main` and the eval harness's `Pipeline.run`
+    call. What is pinned is that the shared site still runs the section probe
+    after the conflict probe and hands BOTH supplements to `_context_block`,
+    and that neither caller has grown a second copy."""
+    pipe_src = (ROOT / "src" / "gcf_qna" / "pipeline.py").read_text()
     app_src = (ROOT / "src" / "gcf_qna" / "app" / "chainlit_app.py").read_text()
     ev_src = (ROOT / "scripts" / "eval_answers.py").read_text()
-    assert "_section_probe)(\n        retriever, message.content, hits" \
-        in app_src
-    assert "app._section_probe(" in ev_src
+    assert "_section_probe(retriever, question, hits, question)" in pipe_src
+    assert pipe_src.index("_conflict_probe(retriever") \
+        < pipe_src.index("_section_probe(retriever")
+    assert "_context_block(hits, probe_hits, section_hits)" in pipe_src
     for src in (app_src, ev_src):
-        assert "_context_block(hits, probe_hits, section_hits)" in src
+        assert "_section_probe(" not in src
+        assert "_context_block(" not in src
 
 
 # -------------------------------------------- the recorded failing shape ---

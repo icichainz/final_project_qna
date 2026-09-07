@@ -43,6 +43,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 
 import eval_answers as ev  # noqa: E402
+from gcf_qna import pipeline  # noqa: E402
 from gcf_qna.app import chainlit_app as app  # noqa: E402
 from gcf_qna.rag import registry  # noqa: E402
 from gcf_qna.rag import verify  # noqa: E402
@@ -567,10 +568,12 @@ def test_the_app_and_the_harness_build_the_same_context(monkeypatch, app_env):
         (FP153, 5), (FP153, 48), (FP153, 5), (FP153, 48)]
 
 
-def test_the_harness_probes_through_the_apps_own_function(monkeypatch):
-    """Not a second implementation: the harness calls `_conflict_probe`."""
+def test_the_harness_probes_through_the_shared_function(monkeypatch):
+    """Not a second implementation: the harness reaches `_conflict_probe`
+    through `pipeline.build_context` — the app's own call site, now the
+    only one."""
     seen = []
-    monkeypatch.setattr(app, "_conflict_probe",
+    monkeypatch.setattr(pipeline, "_conflict_probe",
                         lambda *a, **kw: seen.append(a) or [])
     ev.Pipeline.run(_harness_pipe([{"q": QUESTION, "doc": None}]), QUESTION)
     assert len(seen) == 1 and seen[0][3] == QUESTION
@@ -588,11 +591,14 @@ def test_a_harness_pipe_with_no_retriever_degrades_like_the_app(monkeypatch,
 # ---------------------------------------------------------------------------
 def test_the_probe_reads_a_note_line_with_the_patterns_the_gate_reads_it_with():
     r"""Three copies of two patterns now exist — `verify._NOTE_*_RE`,
-    `chainlit_app._note_pages`'s inline pair (pinned as source text by
+    `pipeline._note_pages`'s inline pair (pinned as source text by
     tests/test_registry_resolver.py, so it cannot be hoisted), and the probe's
     compiled pair. If they drift, the probe fetches a page the citation gate
-    then calls invented, or refuses one the note published."""
-    src = (ROOT / "src" / "gcf_qna" / "app" / "chainlit_app.py").read_text(
+    then calls invented, or refuses one the note published.
+
+    All three live in gcf_qna/pipeline.py since the turn moved out of the
+    app; the app re-exports them."""
+    src = (ROOT / "src" / "gcf_qna" / "pipeline.py").read_text(
         encoding="utf-8")
     assert app._CONFLICT_PAGE_RE.pattern == verify._NOTE_PAGE_RE.pattern
     assert app._CONFLICT_DOC_RE.pattern == verify._NOTE_DOC_RE.pattern

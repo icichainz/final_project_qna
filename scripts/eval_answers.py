@@ -33,18 +33,26 @@ Four modes
                      API calls (--evidence supplies the passage text for a
                      record whose hits predate F7).
 
-Production parity (Wave 3)
---------------------------
+Production parity (Wave 3, closed by the pipeline extraction)
+------------------------------------------------------------
 A release number is only a release number if it came off the path production
-runs.  The harness therefore reproduces `chainlit_app.main` turn for turn:
-`planner.detect` behind the app's own intent gate and its evidence matrix
-(--production-planner), the per-turn LLM conductor with the app's prompt and
-rewrite guards (--conductor), the FP-miss guard AFTER the conductor and
-returning BEFORE verification, the app's `decomposed` flag rather than a
-question-shape proxy, `_answer_messages` history isolation with the resolved-
-references note, `verify.verify_answer(use_llm=1)`
-(--verifier-mode production), and every model call — conductor, answer,
-judge — booked into the turn's usage.
+runs.  This harness used to reproduce `chainlit_app.main` turn for turn, which
+meant two spellings of one turn and a standing risk that a recorded context and
+a live one differed in a byte nobody looked at.  There is now ONE spelling:
+`gcf_qna.pipeline` holds the turn — the planner gate and its evidence matrix,
+the conductor's prompt and rewrite guards, the FP-miss guard, the retrieval
+fan-out, the computed notes, both probes, the context assembly, the
+resolved-references note and `_answer_messages` — and `Pipeline` below drives
+exactly that module, as `chainlit_app.main` does.
+
+What is left here is what a caller SWITCHES: the planner (--production-planner)
+and the conductor (--conductor) on or off, `--comparison-flag` as a
+harness-only override of the app's `decomposed`, `--raw-retrieval` and
+`--scope-single-id` as A/B arms production has no equivalent of,
+`verify.verify_answer(use_llm=1)` (--verifier-mode production), and the answer
+call itself, which is a metered non-streaming call with retries where the app
+streams — plus every model call, conductor, answer and judge, booked into the
+turn's usage.
 
 Every one of those is an explicit CLI switch.  None is read from the ambient
 environment: `.env` is loaded for the API key alone, and a harness that took
@@ -88,6 +96,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import logging
 import os
 import re
 import sys
@@ -98,9 +107,11 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
 
-# Import the app module for its helpers without paying the 730 MB index load
-# at import time (same trick as tests/conftest.py); the retriever is then
-# fetched explicitly, once, via app.get_retriever().
+# `gcf_qna.pipeline` (the turn) imports no chainlit and loads no index, so it
+# is imported at module scope. The app module is imported inside Pipeline for
+# ONE thing — the retriever singleton — and this keeps its import-time warm-up
+# off, so nothing pays the 730 MB index load until app.get_retriever() is
+# called explicitly (same trick as tests/conftest.py).
 os.environ["PRELOAD"] = "0"
 
 try:                                    # keys live in .env, never in source
@@ -110,8 +121,8 @@ except Exception:
     pass
 
 from gcf_qna import config                                    # noqa: E402
-from gcf_qna.app.prompts import assemble                      # noqa: E402
-from gcf_qna.rag import planner, registry, verify             # noqa: E402
+from gcf_qna import pipeline                                  # noqa: E402
+from gcf_qna.rag import registry, verify                      # noqa: E402
 
 def _sha256_file(path: Path, missing: str = None):
     """sha256 of a file, or ``missing`` when it is not there."""
@@ -350,10 +361,9 @@ def behavior_ok(expected: str, answer: str) -> bool:
 
 
 def language_ok(lang: str, answer: str) -> bool:
-    """Reuses the app's own FR/EN heuristic, so the metric moves with the
+    """Reuses the pipeline's own FR/EN heuristic, so the metric moves with the
     behavior it measures."""
-    from gcf_qna.app import chainlit_app as app
-    got = app._detect_lang(answer or "")
+    got = pipeline._detect_lang(answer or "")
     if lang == "fr":
         return got == "French"
     return got != "French"
@@ -418,7 +428,6 @@ def retrieval_score(r: dict) -> float:
 # answer scoring
 # ---------------------------------------------------------------------------
 def score_answer(case: dict, answer: str, hits: list, notes=None) -> dict:
-    from gcf_qna.app import chainlit_app as app
     e = case["expect"]
     contains = {p: matches(p, answer) for p in e["must_contain"]}
     forbidden = {p: (not matches(p, answer)) for p in e["must_not_contain"]}
@@ -426,8 +435,8 @@ def score_answer(case: dict, answer: str, hits: list, notes=None) -> dict:
     # ('18.5 M USD (p.5, A.8)') is a legal citation even when retrieval never
     # returned that page. Scoring without it flagged answers for citing the
     # registry's own provenance (measured: 8 of release-3's 13 regressions).
-    note_pages = app._note_pages(notes) if notes else frozenset()
-    bad_cites = (app._invalid_citations(answer or "", hits, note_pages)
+    note_pages = pipeline._note_pages(notes) if notes else frozenset()
+    bad_cites = (pipeline._invalid_citations(answer or "", hits, note_pages)
                  if hits else [])
     checks = {
         "behavior": behavior_ok(e["behavior"], answer),
@@ -983,32 +992,41 @@ def multi_identifier(question: str) -> bool:
 # parity metadata
 # ---------------------------------------------------------------------------
 # Gap 1 of the Wave-3 table. The claim under audit is "production's single-FP
-# pre-scoping also runs here"; an audit that answers it with a hard-coded
-# True is worth nothing, so the app's own _prescope_single_fp is wrapped in a
-# transparent counter and the record carries what it actually did. The wrapper
-# calls the original and returns its result unchanged — it is a tally, not a
-# behaviour change — and it sits on the app module because that is where
-# _rescope_items looks the name up.
-_PRESCOPE_STATS = {"calls": 0, "tagged": 0, "wrapped": False}
+# pre-scoping also runs here"; an audit that answers it with a hard-coded True
+# is worth nothing. It is not answered by a hard-coded True and it is no longer
+# answered by monkeypatching either: `gcf_qna.pipeline` counts its own guards
+# into `TurnPlan.guards` — the same dict the app's per-turn log line reads —
+# and this harness accumulates that per run. The instrumentation is now part of
+# the thing being measured, which is the only place it cannot drift from it.
+_GUARD_KEYS = ("prescope_calls", "prescope_tagged")
 
 
-def _instrument_prescope(app) -> dict:
-    """Count calls to the app's single-FP prescope. Idempotent."""
-    fn = getattr(app, "_prescope_single_fp", None)
-    if fn is None or getattr(fn, "_eval_counted", False):
-        return _PRESCOPE_STATS
-    def counted(items, msg_text, _orig=fn):
-        before = [bool(i.get("doc")) for i in (items or [])]
-        out = _orig(items, msg_text)
-        _PRESCOPE_STATS["calls"] += 1
-        _PRESCOPE_STATS["tagged"] += sum(
-            1 for was, item in zip(before, out or []) if not was and item.get("doc"))
-        return out
-    counted._eval_counted = True
-    counted.__doc__ = fn.__doc__
-    app._prescope_single_fp = counted
-    _PRESCOPE_STATS["wrapped"] = True
-    return _PRESCOPE_STATS
+def _pipe_settings(pipe) -> "pipeline.TurnSettings":
+    """A pipe's TurnSettings.
+
+    A module function and not a method on purpose: the wiring suites drive
+    `Pipeline.run` and the stage methods on `types.SimpleNamespace` stand-ins
+    that carry only the fields the stage under test reads, and a pipe that
+    carries no settings gets one built from what it does carry.
+    """
+    settings = getattr(pipe, "settings", None)
+    if settings is not None:
+        return settings
+    return pipeline.TurnSettings.from_config(
+        conductor=bool(getattr(pipe, "conductor", False)),
+        planner=bool(getattr(pipe, "production_planner", False)),
+        verify=False,
+        top_k=getattr(pipe, "top_k", None) or config.TOP_K,
+        call_kwargs=dict(getattr(pipe, "pins", None) or {}))
+
+
+def _record_guards(pipe, guards: dict) -> None:
+    """Accumulate one turn's guard tallies onto the run's."""
+    stats = getattr(pipe, "guard_stats", None)
+    if stats is None:
+        return
+    for key in _GUARD_KEYS:
+        stats[key] = stats.get(key, 0) + int(guards.get(key, 0) or 0)
 
 
 class Pipeline:
@@ -1016,9 +1034,17 @@ class Pipeline:
 
     Every production stage is reachable and every one is a switch, so the same
     object serves the zero-API per-commit run and the production-parity
-    release run. What it is NOT is a re-implementation: the planner, the
-    conductor's prompt and guards, the prescope, the tag resolver, the
-    refs note and the answer-message assembly are all imported from the app.
+    release run. What it is NOT is a re-implementation: since the pipeline
+    extraction, the planner gate and its matrix, the conductor's prompt and
+    guards, the prescope, the tag resolver, the retrieval fan-out, the computed
+    notes, both probes, the context assembly, the refs note and the answer
+    messages are all `gcf_qna.pipeline` — the module `chainlit_app` runs.
+
+    The stage methods survive as thin seams over it because they are what a
+    caller SWITCHES: `--comparison-flag` is a harness-only override of the
+    app's `decomposed`, `--raw-retrieval` and `--scope-single-id` are A/B
+    arms production has no equivalent of, and the wiring suites drive
+    `Pipeline.run` with these stubbed to isolate the stage under test.
     """
 
     def __init__(self, top_k: int = None, comparison_flag: str = "decomposed",
@@ -1029,7 +1055,6 @@ class Pipeline:
                  verifier_mode: str = "deterministic"):
         from gcf_qna.app import chainlit_app as app
         self.app = app
-        _instrument_prescope(app)
         self.top_k = top_k or config.TOP_K
         if comparison_flag not in COMPARISON_FLAGS:
             raise SystemExit(f"--comparison-flag must be one of {sorted(COMPARISON_FLAGS)}")
@@ -1050,6 +1075,19 @@ class Pipeline:
         self.verifier_mode = verifier_mode
         self.raw_retrieval = raw_retrieval
         self.scope_single_id = scope_single_id
+        # What the rewrite guards actually did, accumulated over the run.
+        self.guard_stats = {k: 0 for k in _GUARD_KEYS}
+        # Every switch explicit: the harness reads no ambient environment, so
+        # a flag flipped in a deployed .env cannot change what it measures.
+        # `verify=False` because this harness runs its own audit afterwards
+        # (verify_production / score_claims), on its own evidence.
+        self.settings = pipeline.TurnSettings(
+            conductor=bool(conductor), planner=bool(production_planner),
+            verify=False, verify_llm=(verifier_mode == "production"),
+            top_k=self.top_k, chat_model=config.CHAT_MODEL,
+            max_answer_tokens=config.MAX_ANSWER_TOKENS,
+            min_dense_score=config.MIN_DENSE_SCORE,
+            call_kwargs=dict(self.pins or {}))
         t0 = time.perf_counter()
         self.retriever = app.get_retriever()
         if self.retriever is None:
@@ -1058,23 +1096,12 @@ class Pipeline:
         self.load_seconds = time.perf_counter() - t0
         self.meta = dict(app._retriever_meta)
 
-    # -- the registry FP-miss guard, verbatim from the app ------------------
+    # -- the registry FP-miss guard, the app's own function -----------------
     def fp_guard(self, question: str):
-        try:
-            if registry.load():
-                resolved, missing = registry.resolve_fps(question)
-                if missing and not resolved:
-                    lang = self.app._detect_lang(question)
-                    miss = ", ".join(f"FP{n}" for n in missing)
-                    return (f"{miss} n'existe pas dans le corpus (registre de 273 documents)."
-                            if lang == "French" else
-                            f"{miss} does not exist in this corpus (273-document registry).")
-        except Exception:
-            pass
-        return None
+        return pipeline.fp_miss_guard(question)
 
     # -- the query plan, through the app's own tag machinery ----------------
-    def plan(self, question: str) -> list:
+    def plan(self, question: str, guards: dict = None) -> list:
         """The app's `search_queries`, minus the conductor.
 
         chainlit_app builds `[{"q": message, "doc": None}]`, lets the
@@ -1084,6 +1111,7 @@ class Pipeline:
         through it too. Both guards run here so a regression in either shows
         up in the recorded plan.
         """
+        guards = {} if guards is None else guards
         items = [{"q": question, "doc": None}]
         if self.scope_single_id:
             # NOT production behavior: the conductor emits no doc tag for a
@@ -1094,8 +1122,8 @@ class Pipeline:
                 items[0]["doc"] = f"fp{next(iter(ids))}"
         if self.raw_retrieval:
             return items
-        items = self.app._rescope_items(items, question, [])
-        return self.app._resolve_doc_tags(items)
+        items = pipeline._apply_rescope(items, question, [], guards)
+        return pipeline._apply_resolve_tags(items, guards)
 
     def _decomposed(self, items: list, question: str, plan=None) -> bool:
         """Did this turn fan out? (the app's `decomposed`)"""
@@ -1106,61 +1134,50 @@ class Pipeline:
         return len(items) > 1 or plan is not None
 
     # -- the LLM conductor (config.CONDUCTOR in the app) -------------------
-    def conduct(self, question: str, turns=()):
-        """(mode, search queries, call metadata) — the app's run_conductor.
+    def conduct(self, question: str, turns=(), guards: dict = None):
+        """(mode, search queries, call metadata) — the app's conductor stage.
 
-        Best-effort exactly as there: any failure leaves the raw message as
-        the only query, and the original wording still goes to the answer
-        model. The rewrite guards run on the parsed output before it is
-        adopted, because an unguarded conductor tag is the contamination they
-        exist for.
+        The prompt is built by `pipeline.conductor_request` and the reply is
+        adopted by `pipeline.conductor_adopt`, which runs the rewrite guards:
+        an unguarded conductor tag is the contamination they exist for. Only
+        the CALL itself is here, because this client is synchronous and
+        metered where the app's is an awaited stream.
+
+        Best-effort exactly as in the app: any failure leaves the raw message
+        as the only query, and the original wording still goes to the answer
+        model.
         """
-        app = self.app
         items = [{"q": question, "doc": None}]
         if not self.conductor or self.client is None:
             return "retrieve", items, None
-        mode, meta = "retrieve", None
+        turn = pipeline.TurnPlan(search_queries=items)
+        guards = turn.guards if guards is None else guards
+        turn.guards = guards
+        meta = None
         history = [{"role": m["role"], "content": m["content"]}
                    for m in (turns or [])]
+        # The app feeds the conductor its thread's ConversationMemory; a
+        # fixture's `turns` are all this harness has of a thread, so the
+        # memory is rebuilt from them by the same function the app's resume
+        # path uses. Same line, same doc ids for the rewrite guards.
+        memory = pipeline.ConversationMemory.from_history(history)
         try:
-            convo = ("\n".join(f"{m['role']}: {m['content'][:1200]}"
-                                for m in history[-6:])
-                     if history else "((no prior conversation))")
-            cited = app._cited_docs(history)
-            if cited:
-                convo += ("\nDocuments cited in conversation: "
-                          + ", ".join(cited[-12:]))
+            kwargs, history_docs = pipeline.conductor_request(
+                question, history, _pipe_settings(self), memory=memory)
             t0 = time.perf_counter()
-            resp = self.client.chat.completions.create(
-                model=config.CHAT_MODEL,
-                max_completion_tokens=300,
-                response_format={"type": "json_object"},
-                messages=[{"role": "system", "content": app.CONDUCTOR_PROMPT},
-                          {"role": "user", "content":
-                           f"Conversation:\n{convo}\n\nLatest message: {question}"}],
-                **(self.pins or {}),
-            )
+            resp = self.client.chat.completions.create(**kwargs)
             meta = call_meta("conductor", resp, time.perf_counter() - t0)
             self.conductor_stats["calls"] += 1
-            data = json.loads(resp.choices[0].message.content or "{}")
-            if data.get("mode") == "chat":
-                mode = "chat"
+            pipeline.conductor_adopt(resp.choices[0].message.content or "{}",
+                                     question, history_docs, turn)
+            if turn.conductor_chat:
                 self.conductor_stats["chat"] += 1
-            parsed = []
-            for item in (data.get("queries") or [])[:6]:
-                if isinstance(item, str) and item.strip():
-                    parsed.append({"q": item.strip(), "doc": None})
-                elif isinstance(item, dict) and (item.get("q") or "").strip():
-                    parsed.append({"q": item["q"].strip(),
-                                   "doc": item.get("doc") or None})
-            parsed = app._rescope_items(parsed, question, cited)
-            if parsed:
-                items = parsed
-                if len(parsed) > 1:
-                    self.conductor_stats["fanned_out"] += 1
+            if turn.conductor_fanned_out:
+                self.conductor_stats["fanned_out"] += 1
         except Exception:                            # noqa: BLE001
             self.conductor_stats["failed"] += 1
-        return mode, items, meta
+        _record_guards(self, guards)
+        return turn.mode, turn.search_queries, meta
 
     # -- the deterministic comparison planner (config.PLANNER in the app) ---
     def planner_plan(self, question: str):
@@ -1173,20 +1190,15 @@ class Pipeline:
         """
         if not self.production_planner:
             return None, None
-        plan = planner.detect(question)
+        turn = pipeline.TurnPlan()
+        plan = pipeline.planner_detect(question, _pipe_settings(self), turn)
+        if turn.planner_detected:
+            self.planner_stats["detected"] += 1
         if plan is None:
             return None, None
-        self.planner_stats["detected"] += 1
-        if not self.app._planner_intent(question, plan):
-            return None, None
         self.planner_stats["intent_ok"] += 1
-        try:
-            matrix = planner.build_matrix(plan, self.retriever)
-            if not any(c.status not in ("missing", "missing-document")
-                       for c in matrix.cells):
-                raise ValueError("no cell carries evidence")
-            block = planner.render(matrix)
-        except Exception:                            # noqa: BLE001
+        block, _step = pipeline.planner_matrix(plan, self.retriever, turn)
+        if block is None:
             self.planner_stats["matrix_failed"] += 1
             return None, None
         self.planner_stats["matrix_built"] += 1
@@ -1195,36 +1207,14 @@ class Pipeline:
     def _retrieve(self, items: list, decomposed: bool, original: str = None):
         """(hits, best confidence, weak-signal flag) — the app's fan-out.
 
-        Per-query quota and round-robin merge, verbatim from `main`: the global
-        cap must not starve the later documents of a multi-document turn.
+        Per-query quota and round-robin merge, in `pipeline.retrieve_stage`:
+        the global cap must not starve the later documents of a multi-document
+        turn, and `original` — the user's own words — rides along only on a
+        single-query turn, where it ranks pages inside the settled document
+        and chooses none.
         """
-        from itertools import zip_longest
-        per_query = (self.top_k if not decomposed
-                     else max(3, self.top_k // max(1, len(items))))
-        best, weak, per_lists = None, True, []
-        for sq in items:
-            # Mirror the app: on a single-query turn the user's own words get a
-            # second dense vote on WHICH PAGES of the settled document rank
-            # first. Without this the harness measures a retriever production
-            # does not run (chainlit_app.py passes `original` at its one call
-            # site); the document set cannot move either way.
-            got, conf = self.retriever.search_with_confidence(
-                sq["q"], per_query, sq.get("doc"),
-                original=original if len(items) == 1 else None)
-            best = conf if best is None else max(best, conf)
-            if conf >= config.MIN_DENSE_SCORE:
-                weak = False
-            per_lists.append(got)
-        seen, hits = set(), []
-        for tier in zip_longest(*per_lists):
-            for h in tier:
-                if h is None:
-                    continue
-                key = (h.doc_id, h.page, h.text[:120])
-                if key not in seen:
-                    seen.add(key)
-                    hits.append(h)
-        return hits[:15], (best if best is not None else 0.0), weak
+        return pipeline.retrieve_stage(self.retriever, items, decomposed,
+                                       _pipe_settings(self), original)
 
     # -- what of production's answer path this harness actually ran ---------
     def parity(self) -> dict:
@@ -1234,10 +1224,13 @@ class Pipeline:
         the run measured. `level` is graded in _parity_level, which is the
         only place allowed to say "full".
         """
+        guards = getattr(self, "guard_stats", None) or {}
         return {
-            "production_single_id_prescope": bool(_PRESCOPE_STATS["wrapped"]),
-            "prescope_calls": _PRESCOPE_STATS["calls"],
-            "prescope_tagged": _PRESCOPE_STATS["tagged"],
+            # observed, never asserted: the shared pipeline counted its own
+            # pre-scope calls into this turn's TurnPlan.guards
+            "production_single_id_prescope": guards.get("prescope_calls", 0) > 0,
+            "prescope_calls": guards.get("prescope_calls", 0),
+            "prescope_tagged": guards.get("prescope_tagged", 0),
             "comparison_flag": self.comparison_flag,
             "answer_history_isolation": self.history_mode == "isolated",
             "guard_verification_skipped": True,
@@ -1254,8 +1247,20 @@ class Pipeline:
         }
 
     def run(self, question: str, turns=()) -> dict:
-        app = self.app
+        """One turn's assembled prompt, through `gcf_qna.pipeline`.
+
+        The stage ORDER is the harness's own and differs from the app's in one
+        unobservable way: `planner_plan` builds the matrix before the FP-miss
+        guard is checked, where `main()` checks the guard first. Building a
+        matrix has no side effect, and a message whose every identifier is
+        missing yields no cell that carries evidence, so both orders reach the
+        same turn — but the guard's early return still happens before any
+        conductor call either way.
+        """
         calls = []
+        turn = pipeline.TurnPlan(search_queries=[{"q": question, "doc": None}],
+                                 lang=pipeline._detect_lang(question))
+        settings = _pipe_settings(self)
 
         # 1. planner, 2. conductor when the planner declined — the app's order.
         plan, matrix_block = self.planner_plan(question)
@@ -1268,18 +1273,17 @@ class Pipeline:
         if mode == "chat":
             # conversational turn: answered from history, no retrieval, no
             # evidence — so nothing here is ever verified (see main()).
-            lang = app._detect_lang(question)
-            system = app.assemble_chat(lang)
             history = [{"role": m["role"], "content": m["content"]}
                        for m in (turns or [])]
+            ctx = pipeline.chat_context(question, history, settings)
             return {"guard": False, "chat": True, "guard_answer": None,
-                    "hits": [], "probe_hits": [], "confidence": None,
-                    "weak": False,
-                    "plan": items, "decomposed": False, "system": system,
+                    "hits": [], "probe_hits": [], "section_hits": [],
+                    "confidence": None, "weak": False,
+                    "plan": items, "decomposed": False,
+                    "system": ctx.system_prompt,
                     "context": "", "refs_note": None,
                     "user": question, "calls": calls,
-                    "messages": [{"role": "system", "content": system}]
-                                + history + [{"role": "user", "content": question}],
+                    "messages": ctx.messages,
                     "notes": {"registry": None, "year": None, "board": None,
                               "matrix": None}}
 
@@ -1294,8 +1298,8 @@ class Pipeline:
             except Exception:
                 reg = None
             return {"guard": True, "chat": False, "guard_answer": guard,
-                    "hits": [], "probe_hits": [], "system": None, "user": None,
-                    "weak": False,
+                    "hits": [], "probe_hits": [], "section_hits": [],
+                    "system": None, "user": None, "weak": False,
                     "plan": items, "decomposed": False, "calls": calls,
                     "notes": {"registry": reg, "year": None, "board": None,
                               "matrix": None}}
@@ -1304,92 +1308,45 @@ class Pipeline:
             # Authoritative stems and an English query per document: the raw
             # message is the wrong query here, and the conductor that would
             # have translated it was skipped (see _plan_query).
-            items = [{"q": app._plan_query(plan, d), "doc": d.scope}
+            items = [{"q": pipeline._plan_query(plan, d), "doc": d.scope}
                      for d in plan.docs if not d.missing] or items
         elif self.conductor:
             # the app's step 7 over the conductor's own output: pre-scope a
             # lone untagged query, then registry-resolve every surviving tag
-            items = app._resolve_doc_tags(
-                app._prescope_single_fp(items, question))
+            items = pipeline._apply_resolve_tags(
+                pipeline._apply_prescope(items, question, turn.guards),
+                turn.guards)
         else:
-            items = self.plan(question)
-        decomposed = self._decomposed(items, question, plan)
-        hits, conf, weak = self._retrieve(items, decomposed, original=question)
-        hits, year_note = app._year_assist(question, hits)
-        board_note = app._board_range_note(question)
-        if board_note:
-            year_note = f"{year_note} {board_note}" if year_note else board_note
+            items = self.plan(question, turn.guards)
+        _record_guards(self, turn.guards)
 
-        coverage_note = app._corpus_coverage_note(question)
-        if coverage_note:
-            year_note = (f"{year_note} {coverage_note}" if year_note
-                         else coverage_note)
-
-        # The note is computed before the context, as in main(): its CONFLICT
-        # lines decide whether the turn fetches a page by name. Where it is
-        # PRINTED is unchanged — prepended below, in the app's own order.
-        reg_note = None
-        try:
-            reg_note = registry.registry_note(question)
-            # The app's second trigger, on the app's own function: the
-            # question's words are not the only evidence of which document the
-            # turn is about — a follow-up spells no identifier and its resolved
-            # query spells one. Same items retrieval just ran on.
-            reg_note = app._extend_registry_note(reg_note, items)
-        except Exception:
-            pass
-        # The conflict probe, on the app's own function at the app's own point
-        # in the turn — so a release record's excerpts are the excerpts
-        # production would have shipped, marker included. `getattr` because a
-        # duck-typed pipe (the wiring suites') carries no retriever, and a
-        # turn with no retriever is exactly the degradation case: no probe.
-        probe_hits = app._conflict_probe(
-            getattr(self, "retriever", None), reg_note, hits, question)
-        if probe_hits:
-            hits = probe_hits + hits
-        section_hits = app._section_probe(
-            getattr(self, "retriever", None), question, hits, question)
-        if section_hits:
-            hits = section_hits + hits
-        context = app._context_block(hits, probe_hits, section_hits)
-        if year_note:
-            context = year_note + "\n\n" + context
-        if weak:
-            context = ("Note: retrieval confidence for this question is LOW — the "
-                       "excerpts below may not actually be relevant. Do not force an "
-                       "answer from marginal matches; say plainly that the corpus "
-                       "does not appear to cover this.\n\n") + context
-        if reg_note:
-            context = reg_note + "\n\n" + context
-        if matrix_block:
-            # ABOVE the registry note and the excerpts, as in the app: the
-            # matrix is the complete half of the evidence.
-            context = matrix_block + "\n\n" + context
-
-        system = assemble(year=bool(year_note), registry=bool(reg_note),
-                          comparison=decomposed, matrix=bool(matrix_block),
-                          lang=app._detect_lang(question))
-        # The referents a follow-up needs, as ids rather than as prose — the
-        # app's own note, built from the same items the retrieval used.
-        refs_note = app._resolved_refs_note(items, question)
-        user = f"Context excerpts:\n{context}\n\nQuestion: {question}"
-        if refs_note:
-            user = f"{refs_note}\n\n{user}"
+        turn.plan = plan
+        turn.matrix_block = matrix_block
+        turn.search_queries = items
+        turn.decomposed = self._decomposed(items, question, plan)
+        # `getattr` because a duck-typed pipe (the wiring suites') carries no
+        # retriever, and a turn with no retriever is exactly the degradation
+        # case: no probe.
+        ctx = pipeline.build_context(question, turn,
+                                     getattr(self, "retriever", None), settings,
+                                     retrieve=self._retrieve)
         return {
-            "guard": False, "chat": False, "guard_answer": None, "hits": hits,
-            "confidence": conf, "weak": weak, "plan": items, "calls": calls,
-            # what the probe added, separately from the ranked hits it rides
+            "guard": False, "chat": False, "guard_answer": None,
+            "hits": ctx.hits, "confidence": ctx.confidence,
+            "weak": ctx.weak_signal, "plan": items, "calls": calls,
+            # what the probes added, separately from the ranked hits they ride
             # with: the caller can see WHICH excerpts were fetched by page
             # without re-deriving it from the note.
-            "probe_hits": probe_hits,
-            "decomposed": decomposed,
-            "system": system,
-            "context": context,
-            "refs_note": refs_note,
-            "user": user,
-            "messages": app._answer_messages(system, context, question, refs_note),
-            "notes": {"registry": reg_note, "year": year_note,
-                      "board": board_note, "matrix": matrix_block},
+            "probe_hits": ctx.probe_hits,
+            "section_hits": ctx.section_hits,
+            "decomposed": turn.decomposed,
+            "system": ctx.system_prompt,
+            "context": ctx.context,
+            "refs_note": ctx.refs_note,
+            "user": ctx.user,
+            "messages": ctx.messages,
+            "notes": {"registry": ctx.reg_note, "year": ctx.year_note,
+                      "board": ctx.board_note, "matrix": ctx.matrix_block},
         }
 
 
@@ -1846,6 +1803,12 @@ def run_eval(args, cases: list) -> list:
                     conductor=bool(getattr(args, "conductor", False)),
                     client=client, pins=pins,
                     verifier_mode=getattr(args, "verifier_mode", "deterministic"))
+    # `chainlit_app` configures logging when Pipeline imports it, so that the
+    # deployed app publishes its one structured line per turn. This harness
+    # prints its own per-case progress and RECORDS everything it measures, so
+    # that line is noise here unless it was asked for: -v turns it on.
+    logging.getLogger("gcf_qna").setLevel(
+        logging.INFO if getattr(args, "verbose", False) else logging.WARNING)
     print(f"retriever ready in {pipe.load_seconds:.1f}s — "
           f"{pipe.meta.get('n_chunks')} chunks, {pipe.meta.get('embedding_model')}")
     if args.gate:

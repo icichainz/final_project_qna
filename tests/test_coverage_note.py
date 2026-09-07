@@ -90,11 +90,14 @@ def test_the_note_forbids_totalling_the_figures_it_licenses():
 
 # ------------------------------------------------------------- wiring ---
 def test_app_and_harness_emit_the_same_note():
-    import eval_answers as ev  # noqa: F401  (parity: harness calls app's fn)
-    src = (ROOT / "scripts" / "eval_answers.py").read_text()
-    assert "app._corpus_coverage_note(question)" in src
-    app_src = (ROOT / "src" / "gcf_qna" / "app" / "chainlit_app.py").read_text()
-    assert "_corpus_coverage_note(message.content)" in app_src
+    """One emitter, one call site: `pipeline.build_context`, which the app
+    and the harness both run. Neither caller may hold a second copy."""
+    import eval_answers as ev  # noqa: F401  (parity: harness runs the pipeline)
+    pipe_src = (ROOT / "src" / "gcf_qna" / "pipeline.py").read_text()
+    assert "_corpus_coverage_note(question)" in pipe_src
+    for other in ("scripts/eval_answers.py",
+                  "src/gcf_qna/app/chainlit_app.py"):
+        assert "_corpus_coverage_note(" not in (ROOT / other).read_text()
 
 
 # ----------------------------------------------- the recorded failing turn ---
